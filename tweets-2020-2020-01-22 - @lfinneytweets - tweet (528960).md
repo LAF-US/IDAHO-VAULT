@@ -16,10 +16,9 @@ related:
   - lfinneytweets
 ---
 
-@IdahoPubRadio <https://t.co/wzg7IYcsmj>
+@IdahoPubRadio https://t.co/wzg7IYcsmj
 
 ## Media
-
 - ![](https://pbs.twimg.com/media/EO6FKghUEAAPP0l.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

@@ -4,7 +4,7 @@ author:
 published:
 created: 2026-04-17
 ---
-## Meine Wahl, meine Fragen
+## Meine Wahl, meine Fragen.
 
 Bitte nehmen Sie sich die kurze Zeit, die folgenden Ausführungen zu lesen, um unser Tool und seine [Funktionsweise](#Funktion) zu verstehen.
 

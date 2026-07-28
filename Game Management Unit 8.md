@@ -4,4 +4,4 @@ related:
 - Nez Perce County
 authority: LOGAN
 ---
-western Latah County and northern Nez Perce County
+western Latah County and northern Nez Perce County 

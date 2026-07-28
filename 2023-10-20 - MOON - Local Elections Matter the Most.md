@@ -50,3 +50,5 @@ These local elected officials are also the most accessible. They are your neighb
 Ideology matters here too. A candidate’s principles show through in every situation, from managing a city budget to how they interact with the public.
 
 It is so important that you plan to vote in the upcoming election on November 7th. Whether you vote early (early voting begins this Monday!), vote by mail, or vote in person on Election Day, what is important is that you vote. Make your voice heard. Take an active role in shaping the future of your community. I cannot emphasize enough how important that is.
+
+

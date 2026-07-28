@@ -39,9 +39,9 @@ related:
 - voting
 authority: LOGAN
 ---
-<https://www.loganfinney.com/idaho-legislature-2020/4/3/veto-review>
+https://www.loganfinney.com/idaho-legislature-2020/4/3/veto-review
 
-Logan Finney McClure Center
+Logan Finney McClure Center 
 
 _Six bills rejected this year, no chance for veto override_
 

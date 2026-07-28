@@ -17,7 +17,7 @@ date: 1937-09-27
 
 ---
 
-*[[Franklin Roosevelt|FDR]] and First Lady [[Eleanor Roosevelt|Roosevelt]] on the train*
+*[[Franklin Roosevelt|FDR]] and First Lady [[Eleanor Roosevelt|Roosevelt]] on the train* 
 
 ![[tumblr_owx4eg6HZq1wc45zao1_1280.png]]
 
@@ -25,6 +25,6 @@ date: 1937-09-27
 
 [^1] "[Franklin Roosevelt Visits Boise 1937](https://fdrboise1937.tumblr.com/)." Online at *fdrboise1937.tumblr.com* by David Klinger and Andy Brunelle. September 27, 1937.
 
----
+--- 
 
-- [[1937 FDR - Boise Speech]]
+- [[1937 FDR - Boise Speech]] 

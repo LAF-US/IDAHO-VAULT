@@ -15,7 +15,6 @@ Skills for converting Struts interceptors and validation logic.
 **Steps:**
 
 1. **Remove imports:**
-
 ```java
 // DELETE
 import com.opensymphony.xwork2.interceptor.Interceptor;
@@ -23,8 +22,7 @@ import com.opensymphony.xwork2.interceptor.AbstractInterceptor;
 import com.opensymphony.xwork2.ActionInvocation;
 ```
 
-1. **Add imports:**
-
+2. **Add imports:**
 ```java
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
@@ -33,8 +31,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 ```
 
-1. **Transform class:**
-
+3. **Transform class:**
 ```java
 // FROM
 public class MyInterceptor extends AbstractInterceptor {
@@ -75,8 +72,7 @@ public class MyInterceptor implements HandlerInterceptor {
 }
 ```
 
-1. **Register interceptor in WebMvcConfigurer:**
-
+4. **Register interceptor in WebMvcConfigurer:**
 ```java
 @Configuration
 public class WebConfig implements WebMvcConfigurer {
@@ -105,7 +101,6 @@ public class WebConfig implements WebMvcConfigurer {
 **Steps:**
 
 1. **Add imports:**
-
 ```java
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.NotBlank;
@@ -118,8 +113,7 @@ import jakarta.validation.Valid;
 import org.springframework.validation.BindingResult;
 ```
 
-1. **Transform validate() to annotations:**
-
+2. **Transform validate() to annotations:**
 ```java
 // FROM (Struts)
 public void validate() {
@@ -141,8 +135,7 @@ public class UserForm {
 }
 ```
 
-1. **Controller method with validation:**
-
+3. **Controller method with validation:**
 ```java
 @PostMapping("/submit")
 public String submit(@Valid @ModelAttribute UserForm form,
@@ -159,7 +152,7 @@ public String submit(@Valid @ModelAttribute UserForm form,
 **Validation Mapping Table:**
 
 | Struts Validator | Jakarta Annotation |
-| ------------------ | ------------------- |
+|------------------|-------------------|
 | `requiredstring` | `@NotBlank` |
 | `stringlength` | `@Size(min=, max=)` |
 | `email` | `@Email` |

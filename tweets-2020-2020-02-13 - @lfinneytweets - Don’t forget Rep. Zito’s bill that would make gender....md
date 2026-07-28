@@ -16,13 +16,12 @@ related:
   - idpol
 ---
 
-Don’t forget Rep. Zito’s bill that would make gender transition a felony!
+Don’t forget Rep. Zito’s bill that would make gender transition a felony! 
 
-<https://t.co/0QyqkPiwIU> #idpol <https://t.co/oM1YUCPkLL>
+https://t.co/0QyqkPiwIU #idpol https://t.co/oM1YUCPkLL
 
 ## Links
-
-- <https://legislature.idaho.gov/sessioninfo/2020/legislation/H0465/>
-- <https://x.com/madisonhardy05/status/1227998214537670657>
+- https://legislature.idaho.gov/sessioninfo/2020/legislation/H0465/
+- https://x.com/madisonhardy05/status/1227998214537670657
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1227999659215294467)

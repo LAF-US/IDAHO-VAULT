@@ -6,4 +6,4 @@ related:
 - libraries
 authority: LOGAN
 ---
-drag performers reading books to children, usually at libraries
+drag performers reading books to children, usually at libraries 

@@ -5,4 +5,4 @@ related:
 - Kootenai County Republican Central Committee
 authority: LOGAN
 ---
-Kootenai County Republican Central Committee
+Kootenai County Republican Central Committee 

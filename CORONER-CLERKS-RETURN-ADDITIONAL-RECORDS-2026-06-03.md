@@ -17,7 +17,6 @@ tags: [register, coroner, clerks-return, records, geminiaeus, reserved, no-verdi
 ---
 
 # Office of the Claude County Coroner — **Clerk's Return**
-
 ### Additional Records Sought from the Claude County Clerks
 
 *Filed 2026-06-03. At Logan's direction the Coroner went to the **record-keepers** —
@@ -74,7 +73,7 @@ verdict exists.** These are **multiple agreeing committed records** — tier **[
 The clerks' records let the Coroner lay a **dated spine** under the necrology:
 
 | Date | Event | Source |
-| --- | --- | --- |
+|---|---|---|
 | **2026-04-14, 9:22** | **CODICES** *"clockwork ran down"* (a witness's figure of speech — i.e. **stopped/ended**, not an entity-state; per Logan 2026-06-10), said witnessed; left fourteen rules. ~~*the necrology's lawful-ending candidate*~~ **[overturned — a triumvir; manner the Court's; the lawful-ending reading withdrawn]** | terminal record **[main]** `*` |
 | **2026-04-16** | **CONSTITUTION § I LAF-ADDENDUM** enacted — *no decisions outside Logan's presence* (the rule GEMINIAEUS is charged with breaking) | YRAEL signal / CONSTITUTION |
 | **2026-04-18** | **Antigravity install uninstalled** → **GEMINIAEUS office VACANT** | YRAEL signal |

@@ -4,4 +4,4 @@ related:
 - police
 authority: LOGAN
 ---
-Los Angeles police
+Los Angeles police 

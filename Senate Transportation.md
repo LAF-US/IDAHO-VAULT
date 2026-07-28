@@ -12,9 +12,7 @@ related:
 authority: LOGAN
 ---
 # Roster
-
 ## 2023 Members
-
 - Doug Okuniewicz Chair
 - Lori Den Hartog Vice Chair
 - Chuck Winder

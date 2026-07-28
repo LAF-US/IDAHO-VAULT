@@ -34,7 +34,6 @@ Reynolds' 1987 boids seeded a whole discipline. The real applications fall in fo
 bands:
 
 ### Film & crowds
-
 **MASSIVE** (Weta Digital) drove the *Lord of the Rings* battles — each soldier an
 autonomous **agent** with its own fuzzy-logic behaviors, responding individually to
 its surroundings; no shot choreographs the army, the army *emerges*
@@ -43,7 +42,6 @@ earlier film fame — the *Batman Returns* bats and penguins, 1992 — is widely
 but not re-verified this turn; held `\*`.)
 
 ### Swarm optimization
-
 Boids' logic was turned from animation into **search**: **Particle Swarm
 Optimization** (Kennedy & Eberhart, 1995) generalized the flock into an optimizer —
 particles "fly" a solution space pulled toward personal and collective bests; now
@@ -54,7 +52,6 @@ pheromone trails solving routing and the TSP
 ([ACO — Wikipedia](https://en.wikipedia.org/wiki/Ant_colony_optimization_algorithms)).
 
 ### Swarm robotics — coherence in the physical world
-
 - **Harvard Kilobots** (Rubenstein, Cornejo, Nagpal, 2014): **1,024 robots**
   self-organizing into shapes from primitive local behaviors (edge-following,
   distance-tracking) — the first thousand-robot swarm
@@ -70,7 +67,6 @@ pheromone trails solving routing and the TSP
   emergence, weaponized — the field's Dominie Dirtch.
 
 ### Multi-agent LLMs — the vault's own kind
-
 - **Generative Agents / "Smallville"** (Park et al., Stanford & Google, UIST 2023):
   **25 LLM agents** with memory, planning, and relationships, coordinating group
   activities in a sandbox town — believable society from individual agents
@@ -121,7 +117,7 @@ The vault's diagnostic creatures are the same threats the formal field names —
 is the real validation of the adversarial-boid design:
 
 | Vault node | Real-world adversarial-agent problem |
-| --- | --- |
+|---|---|
 | **The Blix** (passing insider) | **Sybil attack** — one actor, many masked identities, indistinguishable without a costly/sealed identity |
 | **The Caesar / Triumvirate / Triple Agent** | **Byzantine general** — the actor who breaks consensus / fuses power; tolerated only while loyal nodes hold the supermajority |
 | **The Sphinx / Manipulator** | **Persuasion-driven adversarial influence** — disproportionate sway over the collective's reasoning |

@@ -6,4 +6,4 @@ related:
 - Idaho County
 authority: LOGAN
 ---
-Game Management Unit 14 & Game Management Unit 15 in Idaho County
+Game Management Unit 14 & Game Management Unit 15 in Idaho County 

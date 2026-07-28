@@ -51,7 +51,7 @@ KHQ asked if the new Republican Party was a result of a Kootenai County Republic
 
 "Most of us knew who they were going to endorse in the election. They weren't going to endorse people that don't follow their scrip," she said. "They only support candidates who are obedient to the cause and the mission that they are engaged in."
 
-While that was an underhanded play, the final straw was the takeover of the North Idaho College Board of Trustees.
+While that was an underhanded play, the final straw was the takeover of the North Idaho College Board of Trustees. 
 
 As KHQ has reported, infighting among the trustees has put the college's accreditation in jeopardy. Those watching on the sidelines, say enough is enough: "The damage and hopefully not irreparable damage being done even now at NIC, probably is the thing that said enough is enough. Now it's time," Riggs said.
 
@@ -65,7 +65,7 @@ Brent Regan, a Kootenai County Republican Central Committee chairman, wrote in 
 
 _"It is exactly as expected. This is the same tired old group of Republicans In Name Only that have either lost elections or did not get the recommendation of the KCRCC. Their members that were former elected officials that lost their elections because they supported big government, higher taxes, and more regulation._
 
-_If you do a little research you will see the same members as part of NIPAC (North Idaho Political Action Committee) (<https://northidahopac.org>), CEQUC (<https://www.electqualifiedcandidates.com>) and others._
+_If you do a little research you will see the same members as part of NIPAC (North Idaho Political Action Committee) (https://northidahopac.org), CEQUC (https://www.electqualifiedcandidates.com) and others._
 
 _Their website claims that our extensive, comprehensive and transparent Rating and Vetting process is somehow "illegitimate" but they fail to say how. They claim we only "endorse their pre-selected candidates" which is demonstratively false as sunshine records will show that I donated the maximum allowed ($5,000) to one candidate in the SOS race and to another candidate in the AG race and neither made the list of recommended candidates._
 

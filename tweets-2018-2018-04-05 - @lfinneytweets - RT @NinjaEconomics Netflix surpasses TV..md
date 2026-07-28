@@ -15,10 +15,9 @@ related:
   - lfinneytweets
 ---
 
-RT @NinjaEconomics: Netflix surpasses TV. <https://t.co/xaANM4H7T8>
+RT @NinjaEconomics: Netflix surpasses TV. https://t.co/xaANM4H7T8
 
 ## Media
-
 - ![](https://pbs.twimg.com/media/DQqiWSLVwAAPN-O.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/981946357559607296)

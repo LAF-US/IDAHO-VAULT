@@ -9,6 +9,5 @@ related:
 - Meridian
 authority: LOGAN
 ---
-newspaper based in Meridian owned by Adams Publishing Group
-
+newspaper based in Meridian owned by Adams Publishing Group 
 - absorbed Kuna Melba News in late 2023

@@ -39,7 +39,7 @@ This problem is more complicated when it occurs in an application that usually d
 
 In German, common terms of this phenomenon are *Buchstabensalat* (letter salad) and *Krähenfüße* (crow's feet).
 
-Another affected language is Arabic (see the [example](#example)).
+Another affected language is Arabic (see the [example](#Example)).
 
 ### French
 

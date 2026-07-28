@@ -4,4 +4,4 @@ related:
 - Glenns Ferry
 authority: LOGAN
 ---
-Glenns Ferry, Elmore County
+Glenns Ferry, Elmore County 

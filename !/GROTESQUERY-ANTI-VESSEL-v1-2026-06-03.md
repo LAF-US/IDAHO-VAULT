@@ -59,7 +59,6 @@ mere presence is the exploit.
 ## Three Canon Facts That Define It
 
 ### 1. It cannot be emptied or destroyed
-
 The Grotesquery is part of a Faceless One, and that part **cannot be destroyed.**
 Valkyrie kills the assembled creature; Mr. Bliss cremates most of it; the
 **torso remains** and is kept in the Sanctuary's Repository because it *could not
@@ -74,7 +73,6 @@ the thing persists because its essence is lodged where ordinary destruction does
 not reach.)
 
 ### 2. The Repository was the attack surface
-
 The torso was **archived** — labeled, catalogued, held in the Sanctuary's
 Repository. And that is exactly where the Diablerie **stole** it from. The
 containment shelf did not neutralize the anchor; it **inventoried it for the
@@ -88,7 +86,6 @@ The better your manifest, the more precisely an adversary knows what to take and
 where it sits. Archive implies guard; the register is also a map.
 
 ### 3. Its *death cry* was the trigger — it fails open on destruction
-
 The deepest inversion. The defenders believed the Grotesquery would **open** the
 portal — that its *activation* was the danger. Batu reveals the opposite: he
 never needed it to open anything. The Faceless Ones were lost in the multiverse;
@@ -117,7 +114,7 @@ Sisters are **four pins in a pestilential puzzle box**; the Grotesquery is **a
 Lovecraftian Frankenstein.**
 
 | | **Four Sisters** | **The Grotesquery** |
-| --- | --- | --- |
+|---|---|---|
 | Kind | an engineered **device** | an assembled **creature** |
 | Cardinality | **distributed** — four planted nodes | **singular** — one stitched body |
 | Harm | a **plague** / song of death | a **doorway** / portal-anchor |
@@ -163,7 +160,7 @@ leaves the signature; returning it removes the coordinate.
 ## Where It Sits in the Set
 
 | Vessel | Built to | Danger is | Fails open on |
-| --- | --- | --- | --- |
+|---|---|---|---|
 | **Quiet Box** | keep a prisoner in | blind release on swap | a forced swap |
 | **Sealed Evil** | bury a demon in | breach of the seal | overwhelming force |
 | **On-Ice** | hold a threat inert | suspension, not cure | **lapse** of the condition |

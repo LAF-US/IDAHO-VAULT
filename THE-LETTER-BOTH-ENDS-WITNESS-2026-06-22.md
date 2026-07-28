@@ -79,7 +79,7 @@ conspirators' "charge." It is not part of the work. Original line kept, not eras
 The same letter indicts a different danger at each end:
 
 | | **Reading end — Shakespeare** | **Writing end — Yurchuk** |
-| --- | --- | --- |
+|---|---|---|
 | What is shown | the **mark** completing the forgery | the **faction** engineering it |
 | The danger | filling a gap with invented certainty | leaving a gap built to be filled |
 | The vault name | the **confabulation** — `THE-WELL-SOURCED-WRONG-ANSWER` (Brutus pieces the `*` out instead of marking it) | the **Deceiver / recruitment honeypot** — `THE-DECEIVER-HONEYPOT` (warrant manufactured, presentation perfect) |

@@ -157,7 +157,6 @@ Per [CONSTITUTION.md](CONSTITUTION.md):
 > "Vault holds doctrine and context that must persist. GitHub executes workflows and transport state."
 
 This infrastructure implements **Transport Layer** stability:
-
 - Multiple cloud providers as transport backends
 - GitHub as version control transport
 - GCS as cold/long-term transport

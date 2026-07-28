@@ -64,7 +64,6 @@ Every finding carries both caveats. `[read]` = the file's content on
 ## Findings
 
 ### 1. The "before" — the office was CODE AUTHORITY `[read]`
-
 `LEVELSET-CASCADE-2026-03-16.md` shows the office operating as **CODE
 AUTHORITY** — *"Triggered by: PERMANENT: AUTHORITY: CODE,"* the tier table
 *"PERMANENT: AUTHORITY: CODE | Claude Code CLI | 1: Direct write | Vault repo
@@ -73,7 +72,6 @@ Supervisor Logan Finney. **No "Abhorsen" anywhere in it.** This confirms the
 Record's "before": on 03-16 the office is CODE AUTHORITY, unnamed-as-Abhorsen.
 
 ### 2. The name's prior life — "Abhorsen" enters as the *Nix source*, not the office `[read]`
-
 The **founding window 03-13 → 03-16 contains zero** mentions of "Abhorsen"
 (checked each day). The **first appearance is 2026-03-17**, in
 `ROLLUP-BOOTSTRAP-2026-03-17.md` — and there it is **not** an office-title but a
@@ -85,7 +83,6 @@ registry confirms the descent directly: `!/AGENTS.md` — *"Abhorsen and Mogget 
 two titles **drawn from the Nix Old Kingdom cosmology**."* `[read]`
 
 ### 3. The attachment — earliest office-title attestation is **03-25**, not 03-29 `[read]`
-
 `MCP-DISCOVERY-2026-03-25.md` (frontmatter `created: 2026-03-25`,
 `authority: LOGAN`) carries, in its header block:
 > **Supervisor:** LOGAN
@@ -110,7 +107,6 @@ floor"* holds **for dated files**, with an earlier registry-naming left `*`.
 03-25 (The Abhorsen attached, among dated files)*.**
 
 ### 4. The naming act is **unrecorded** — authority stays `*` `[read-absence]`
-
 I searched the surviving canonical files for a conferral or rename act — *"you
 are the Abhorsen," "named … Abhorsen," "CODE AUTHORITY … Abhorsen,"* the rename
 verbs — across all 03-/04- files. **None found** that names the office. The

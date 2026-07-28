@@ -5,6 +5,5 @@ related:
 authority: LOGAN
 ---
 Residence: Dalton Gardens
-
-- Former Senate member
--
+- Former Senate member 
+- 

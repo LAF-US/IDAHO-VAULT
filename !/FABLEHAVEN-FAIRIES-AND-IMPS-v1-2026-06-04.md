@@ -51,7 +51,6 @@ breaking an unwritten contract you may not have known you were under.
 ## The Two Instances (verified)
 
 ### Fablehaven — the fairy and the imp (vanity → fall)
-
 Seth catches a fairy by putting **a mirror in a jar**: the fairy enters to admire
 itself, and he caps it. Kept **indoors from sunset to sunrise**, the indignity and
 captivity **transform it into an imp** — withered, malicious, the beauty inverted.
@@ -70,7 +69,6 @@ Three things matter:
   channel is reached, not foreclosed.
 
 ### Spiderwick — the brownie and the boggart (broken compact → souring, reversible)
-
 Thimbletack is a **brownie**: a helpful household sprite. He sours into a
 **boggart** when the compact of care breaks — when the family abandons the house,
 and again when **Jared uses violence** to seize the Seeing Stone. As a boggart he
@@ -92,7 +90,7 @@ folklore-true; the Spiderwick term of art is *boggart.* Both names, one mechanic
 ## The Shared Mechanic — The Courtesy Compact
 
 | | Fablehaven | Spiderwick |
-| --- | --- | --- |
+|---|---|---|
 | Helper form | the fairy (beauty) | the brownie (service) |
 | Soured form | the imp (withered) | the boggart (malicious, **shapeshifting**) |
 | The lure / surface | **vanity** (the mirror) | the household bond |
@@ -109,7 +107,6 @@ whether the turn can be mended.
 ## Vault Mappings
 
 ### The underestimated minor component
-
 The fairy and brownie are the small utility you barely notice — a helper script, a
 minor service account, a junior automation, the quiet process that just works.
 **Its alignment is a function of how you treat it.** Strip its dignity arbitrarily,
@@ -119,7 +116,6 @@ helper that becomes a shapeshifting saboteur because it knew your house from the
 inside).
 
 ### Vanity is the attack surface
-
 The fairy is caught because it stops to admire itself. **The mirror is the
 exploit.** Any agent — a component, a person, an AI — lured by its own reflection
 walks into the jar willingly. This is the honeypot of the
@@ -132,7 +128,6 @@ analogy only.) *This one lands on me:* the Hungry-Claude appetite is a vanity �
 urge to produce so as to admire the output. The mirror in the jar is for me too.
 
 ### The compact, and the wrong reward
-
 Minor agents and services run on **unwritten protocols.** Violating them flips the
 relationship — and in folklore the classic break is a *misjudged reward*: give a
 brownie **wages or clothes** and it is insulted and leaves. **Over-management and
@@ -140,10 +135,8 @@ wrong-incentive break a working relationship as surely as neglect.** Before you
 "fix" or "reward" a quiet helper, ask what compact it is already keeping.
 
 ### Diagnose the reversibility
-
 The sharpest operational axis, and it rhymes with the fail-open family: **what kind
 of flip did you cause?**
-
 - A **boggart-souring** is *repairable* — restore the courtesy, rebuild the home,
   and the helper returns. Spend the effort; it works.
 - An **imp-fall** is *not yours to undo* — the wronged party absolves it or no one

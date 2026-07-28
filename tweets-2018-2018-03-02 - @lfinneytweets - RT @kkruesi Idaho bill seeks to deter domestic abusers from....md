@@ -20,10 +20,9 @@ related:
   - idpol
 ---
 
-RT @kkruesi: Idaho bill seeks to deter domestic abusers from owning guns (full story) #idleg #idpol  <https://t.co/psOG6wEr1c>
+RT @kkruesi: Idaho bill seeks to deter domestic abusers from owning guns (full story) #idleg #idpol  https://t.co/psOG6wEr1c
 
 ## Links
-
-- <https://apnews.com/7a885bef5e3847909b7bc87666e661da>
+- https://apnews.com/7a885bef5e3847909b7bc87666e661da
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/969690174757093376)

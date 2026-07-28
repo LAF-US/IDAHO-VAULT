@@ -18,9 +18,7 @@ related:
 # PROTOCOL — REPORT
 
 ## Status: Draft
-
 ## Version: 0.1
-
 ## Authority: Loganic Swarm
 
 ---
@@ -46,7 +44,7 @@ ORIENT ◄──── LEVELSET ───────► REPORT
 ```
 
 | Transition | Protocol |
-| ------------ | ---------- |
+|------------|----------|
 | Session Start | AWAKEN |
 | Session Briefing | LEVELSET |
 | New External Agent | ORIENT |
@@ -81,7 +79,7 @@ REPORT executes:
 ## Integration Points
 
 | Document | Relationship |
-| --- | --- |
+|---|---|
 | `REPORT.md` (this file) | Protocol definition — what REPORT is and does |
 | `REPORT-v1.0-2026-04-27.md` | Full approved protocol — complete specification |
 | `RISE.md` | Completion protocol — REPORT follows RISE |
@@ -97,7 +95,6 @@ REPORT executes:
 ### Step 1: Call to Report
 
 Declare intent to present findings:
-
 - Identify the work being reported
 - Name the original task/role
 - Declare readiness
@@ -105,7 +102,6 @@ Declare intent to present findings:
 ### Step 2: Reading of Findings
 
 Present the core content:
-
 - **Summary**: What was done
 - **LEVELSET**: Current state of the world
 - **Findings**: What was discovered or produced
@@ -114,7 +110,6 @@ Present the core content:
 ### Step 3: Recommendations
 
 If applicable, provide guidance:
-
 - Next steps
 - Open items requiring attention
 - Risks or FLAGs to surface
@@ -122,21 +117,18 @@ If applicable, provide guidance:
 ### Step 4: Motion to Report
 
 Formally declare the report complete:
-
 - Request receipt acknowledgment
 - Confirm routing destination
 
 ### Step 5: Receipt Acknowledgment
 
 Confirm the report was received:
-
 - Receiver (Logan, another agent, or the vault itself) acknowledges
 - Report is committed to the appropriate location
 
 ### Step 6: Routing
 
 Ensure the report goes where it belongs:
-
 - `DECISIONS.md` — if decisions were made
 - `DOCKET` — if items remain open
 - `!/!/` — as a handoff package
@@ -147,7 +139,7 @@ Ensure the report goes where it belongs:
 ## Core Principles
 
 | Principle | Meaning |
-| --- | --- |
+|---|---|
 | LEVELSET Required | Every report embeds current state |
 | Findings Over Summary | Report what was found, not just what was done |
 | Receipt Before Close | Report must be acknowledged before routing |
@@ -158,7 +150,7 @@ Ensure the report goes where it belongs:
 ## Outputs
 
 | Output | Location | Purpose |
-| --- | --- | --- |
+|---|---|---|
 | Report document | `!/!/` or appropriate domain | Durable presentation |
 | Receipt | acknowledgment signal | Confirms delivery |
 | Routing | DECISIONS.md / DOCKET / archive | Ensures proper placement |
@@ -179,7 +171,6 @@ Ensure the report goes where it belongs:
 This document is a **stub** under development. Full specification exists in `REPORT-v1.0-2026-04-27.md`.
 
 Pending:
-
 - [ ] Logan review and approval
 - [ ] Integration with stigmergy field
 - [ ] Stabilization of protocol steps

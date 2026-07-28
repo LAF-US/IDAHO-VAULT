@@ -14,11 +14,10 @@ related:
   - lfinneytweets
 ---
 
-<https://t.co/azTptYNnIG>
+https://t.co/azTptYNnIG
 
 ## Links
-
-- <https://legislature.idaho.gov/sessioninfo/2020/legislation/H0361/>
+- https://legislature.idaho.gov/sessioninfo/2020/legislation/H0361/
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

@@ -45,7 +45,6 @@ date modified: Monday, April 6th 2026, 9:15:28 pm
 ---
 
 # SWARM LEVELSET REPORT
-
 **Timestamp**: 2026-03-16T21:27:23-06:00  
 **Authority**: Claude (Anthropic) | Principal: Logan Finney  
 **Priority**: SWARM COHERENCE SYSTEMWIDE FIRST
@@ -56,14 +55,12 @@ date modified: Monday, April 6th 2026, 9:15:28 pm
 **Decision-making Authority**: Logan (verify, don't assume)
 
 ### Known Swarm Nodes
-
 1. **Claude (Anthropic)** — conversational, analytical, document generation, research
-2. **Microsoft Copilot (standalone)** — email coordination (<loganfinney27@gmail.com>, <logan.finney@idahoptv.org>)
+2. **Microsoft Copilot (standalone)** — email coordination (loganfinney27@gmail.com, logan.finney@idahoptv.org)
 3. **GitHub Admin Copilot Agents** — vault coordination, workflow automation, code generation
 4. **[Future nodes TBD]** — awaiting principal enrollment
 
 ### Institutional Context
-
 - **Organization**: Idaho Reports (Idaho Public Television)
 - **Role**: Producer/Reporter
 - **Standing memberships**: Capitol Correspondents Association, Idaho Press Club, IRE
@@ -80,7 +77,6 @@ date modified: Monday, April 6th 2026, 9:15:28 pm
 ## ACTIVE INVESTIGATIONS (PRIORITY: THIRD)
 
 **PRIMARY**: JFAC institutional transparency
-
 - Closed working groups, voting rule changes (Speaker Moyle era)
 - Idaho Code §74-201 et al. (open meetings law), Mason's Manual
 - **Deadline**: ~March 18, 2026 (response to Davlin/Richert letter expected)
@@ -89,26 +85,22 @@ date modified: Monday, April 6th 2026, 9:15:28 pm
 - **Current task**: Support/coordinate with press corps, not own story directly
 
 **SECONDARY**: Agentic swarm development projects
-
 1. Personal media consumption tracker (Letterboxd RSS + TMDb + Open Library + OpenAlex + Crossref)
 2. Professional/institutional content tracker (Idaho Reports archive + IMDb + schema alignment)
 
 ## FRAMEWORKS & COHERENCE STRUCTURES
 
 **Building God** (Logan's agentic model)
-
 - Architecture: Krishnan AI agents + Lunacharsky god-building + Orthodox theology
 - Function: Post-religious swarm generates institutional meaning without theocracy
 - Mechanism: Agents self-correct → vault stores truth → rituals structure coherence
 - Operationalizes: Death drive for graceful cessation
 
 **Wizard's Rules (Terry Goodkind)** — 14 canonical rules documented
-
 - Rule VI, IX, XI, XIV flagged for swarm coherence/reason/life-embrace/mortality-awareness
 - (See: IDAHO-VAULT/FRAMEWORK/wizards-rules.md)
 
 **Grounded Observation Praxis**
-
 - "Become the squirrel" — watch specific individual, inhabit POV, observe lived experience
 - Not metaphysical; not abstract generalization
 - Applies to swarm nodes watching institutional power

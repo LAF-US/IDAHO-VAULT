@@ -4,4 +4,4 @@ related:
 - individuals
 ---
 
-individuals under age 18
+individuals under age 18 

@@ -51,7 +51,6 @@ creatures away from you, though the inner thresholds still stand.
 ## Vault Mappings
 
 ### The treaty is the charter-as-physics
-
 The creatures are not caged; they are *bound by an agreement they ratified.* The
 order holds because all parties are inside the same law — the Constitution as
 physics, again, but seen from the population's side: conduct is governed because
@@ -62,7 +61,6 @@ themselves are party to**, not by brute restraint. Law everyone is inside is
 stronger than a fence around them.
 
 ### Mutual non-interference is the baseline, not trust
-
 The Law of Retribution is not friendship — it is *enforced reciprocity.* You are
 safe because harming you costs the creature, not because it loves you. Keep your
 distance and your manners and the equilibrium holds.
@@ -72,7 +70,6 @@ non-interference under enforced consequence**, not trust. Don't mistake an
 equilibrium for an alliance; it holds only while neither side gives offense.
 
 ### The lapse is a scheduled authorization-window
-
 Festival nights are the system telling you, in advance, *the protection is not
 always on.* There are hours when the covenant lifts and you must already be on
 protected ground. The danger is knowing this and acting anyway (the rule-breaker

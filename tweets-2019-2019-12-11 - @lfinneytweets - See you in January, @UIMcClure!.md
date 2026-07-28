@@ -15,10 +15,9 @@ related:
   - lfinneytweets
 ---
 
-See you in January, @UIMcClure! <https://t.co/2C3GiKABxp>
+See you in January, @UIMcClure! https://t.co/2C3GiKABxp
 
 ## Media
-
 - ![](https://pbs.twimg.com/media/ELe7yHmUcAAzTPL.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1204637909149601792)

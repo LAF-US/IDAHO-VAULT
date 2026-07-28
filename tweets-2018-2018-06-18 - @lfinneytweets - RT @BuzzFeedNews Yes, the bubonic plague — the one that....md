@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-RT @BuzzFeedNews: Yes, the bubonic plague — the one that wiped out half of Europe's population in the 14th century — is still around.
+RT @BuzzFeedNews: Yes, the bubonic plague — the one that wiped out half of Europe's population in the 14th century — is still around. 
 
 The…
 

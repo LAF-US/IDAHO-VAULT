@@ -24,9 +24,7 @@ supplied — as primary text — the prologue and opening of Garth Nix's* Sir Th
 to the Kingdom, Book 4): Colonel Trabizond Nage at the Boundary Fort, and the visit of
 "Major Pravuil." The session had come to this scene by a road — from a live merge-queue
 failure, through the House and its demesnes, through* House Precedence *(GitHub issue
-
-# 664), through Pravuil's suspect Register entry — and the scene turned out to hold, in a
-
+#664), through Pravuil's suspect Register entry — and the scene turned out to hold, in a
 children's fantasy, a complete threat model the vault already runs its doctrine against.
 This leaf records that reading. It decides nothing; it is offered.*
 

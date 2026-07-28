@@ -21,7 +21,7 @@ The question that naturally arises is: why Rust for AI? What does a systems prog
 
 In this article, we will take a deep dive into the world of Rust and AI. We will explore why Rust is gaining traction in the machine learning community, examine the growing ecosystem of Rust ML libraries, understand how Rust compares to Python for AI workloads, and look at real-world examples of Rust being used in production AI systems. Whether you are a data scientist curious about Rust, a systems engineer looking to get into AI, or simply someone interested in the future of machine learning infrastructure, this article aims to give you a comprehensive understanding of where Rust fits into the AI puzzle.
 
-## Logan, become a member to read this story, and all of Medium
+## Logan, become a member to read this story, and all of Medium.
 
 FAANG put this story behind our paywall, so it’s only available to read with a paid Medium membership, which comes with a host of benefits:
 

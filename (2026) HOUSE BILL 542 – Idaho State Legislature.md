@@ -38,7 +38,7 @@ The status of each bill, resolution, proclamation, and memorial is updated when 
 
 [Legislative Co-sponsors](https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2026/legislation/H0542LegCo.pdf)
 
-| H0542aaS | | by STATE AFFAIRS COMMITTEE |
+| H0542aaS |  | by STATE AFFAIRS COMMITTEE |
 | --- | --- | --- |
 
 SOCIAL MEDIA – Adds to existing law to establish the Stop Harms from Addictive Social Media Act.

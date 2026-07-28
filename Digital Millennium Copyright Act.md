@@ -4,4 +4,4 @@ related:
 - copyright laws
 authority: LOGAN
 ---
-United States copyright laws
+United States copyright laws 

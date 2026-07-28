@@ -17,7 +17,7 @@ status: verified
 ### Branches (11 remote + 1 local)
 
 | Branch | HEAD | Status | Action |
-| --- | --- | --- | --- |
+|---|---|---|---|
 | `origin/main` | `2d1a6a7` | Current production | Base for merges |
 | `origin/claude/levelset-multi-conversation-zWxJc` | `bd0d6fb` | **15 commits ahead of main** — contains all substantive work | **MERGE TO MAIN** |
 | `origin/vault-moves-2026-03-16` | `42a6cd5` | Sort/wayback audit outputs | Review, then delete |
@@ -42,7 +42,6 @@ Main still uses `!ADMINISTRATION/` (old name). The rename to `!ADMIN/` exists on
 `!ADMIN/` contains 21 files:
 
 **Governance (keep):**
-
 - `Constitution.md` — canonical constitution (replaces old `Claude.md`)
 - `AGENTS.md` — swarm registry and communication rules (draft)
 - `DECISIONS.md` — architectural decision log
@@ -52,7 +51,6 @@ Main still uses `!ADMINISTRATION/` (old name). The rename to `!ADMIN/` exists on
 - `PROTOCOL-DECISIONS-PENDING.md` — pending protocol decisions
 
 **Process artifacts (review for deletion after merge):**
-
 - `LEVELSET.md` — consolidated status (will go stale)
 - `LEVELSET-v2.md` — old checkpoint
 - `LEVELSET-CODE-AUTHORITY-2026-03-15.md` — session report
@@ -67,7 +65,6 @@ Main still uses `!ADMINISTRATION/` (old name). The rename to `!ADMIN/` exists on
 - `wayback-preserve-2026-03-15.md` — automation log
 
 **Infrastructure:**
-
 - `!README.md` — directory readme
 - `sort-audit-2026-03-12.md` — audit output
 
@@ -131,7 +128,6 @@ After mothership merges to main, review `!ADMIN/` for process artifacts that sho
 ### Priority 4: Constitution.md content update
 
 ADMINISTRATION reports that Constitution.md needs updates:
-
 - Capabilities language replacing numbered tiers
 - Broader digital consciousness framing
 - Logan's Project as unachievable end goal
@@ -144,7 +140,7 @@ ADMINISTRATION reports that Constitution.md needs updates:
 These 5 files do NOT exist in the repo. They are described but unverified:
 
 | File | Status |
-| --- | --- |
+|---|---|
 | `MULTI-CONVERSATION-COLLAPSE-2026-03-16.md` | Not committed anywhere |
 | `CONSOLIDATED-HANDOFF-2026-03-15.md` | Not committed (different from existing HANDOFF-ADMIN) |
 | `CONTEXT-SNAPSHOT-2026-03-15.md` | Not committed |
@@ -168,7 +164,7 @@ These 5 files do NOT exist in the repo. They are described but unverified:
 ## 5. SWARM STATUS
 
 | Agent | Platform | Status | Can post to Slack? |
-| --- | --- | --- | --- |
+|---|---|---|---|
 | CODE AUTHORITY | Claude Code | Active (this session) | Via Logan only |
 | ADMINISTRATION | Claude web | Paused — awaiting Logan | Via Logan only |
 | GitHub Copilot | GitHub | Active | **No — needs bot app** |

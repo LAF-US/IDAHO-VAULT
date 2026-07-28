@@ -15,15 +15,13 @@ Skills for converting test classes and exception handling.
 **Steps:**
 
 1. **Remove imports:**
-
 ```java
 // DELETE
 import org.apache.struts2.StrutsTestCase;
 import org.apache.struts2.StrutsSpringTestCase;
 ```
 
-1. **Add imports:**
-
+2. **Add imports:**
 ```java
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,8 +32,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 ```
 
-1. **Transform test class:**
-
+3. **Transform test class:**
 ```java
 // FROM (Struts)
 public class HelloActionTest extends StrutsTestCase {
@@ -67,7 +64,6 @@ public class HelloControllerTest {
 ```
 
 **Test annotation selection:**
-
 - `@WebMvcTest` - Controller layer only (faster)
 - `@SpringBootTest` - Full application context
 - `@SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)` - Integration test
@@ -127,7 +123,6 @@ public class GlobalExceptionHandler {
 ```
 
 **struts.xml mapping conversion:**
-
 ```xml
 <!-- FROM -->
 <global-exception-mappings>

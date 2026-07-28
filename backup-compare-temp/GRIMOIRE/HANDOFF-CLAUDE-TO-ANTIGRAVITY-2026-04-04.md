@@ -53,7 +53,7 @@ JFAC Crew built, wired, tested — awaiting API credits to run.
 ## What's Blocked
 
 | Item | Blocker | Who Unblocks |
-| ------ | --------- | -------------- |
+|------|---------|--------------|
 | JFAC Crew E2E run | Anthropic API credits at console.anthropic.com | **Logan** |
 | 21 zombie branch deletions | Awaiting Logan's confirmation | **Logan** |
 | Phase 2 repo size rewrite | Branch protection disable needed | **Logan** |
@@ -73,7 +73,6 @@ JFAC Crew built, wired, tested — awaiting API credits to run.
 ### The Crawler Crew
 
 Stubbed at `.crewai/crews/crawler_crew.py`. Three planned agents:
-
 - **Cartographer** (candidate: Bartimaeus) — crawls vault, builds content graph
 - **Linker** — proposes connections from content similarity
 - **Archivist** — writes structured output to `!/CREWAI/`
@@ -83,7 +82,6 @@ This crew reads the surviving `!` layer wikilinks as anchor points and discovers
 ### The Address Space
 
 The 19,533 empty stubs are now a content-addressable memory system:
-
 - **Numbers (0-999):** Crew state neurons. 100-109 are lit.
 - **Letters (A-ZZZ):** Entity nodes for the Crawler Crew to discover.
 - **Voyager Records:** 7929.gif (triangle) and 7930.gif (Sierpinski fractal) — the vault's first contact artifacts.
@@ -91,7 +89,7 @@ The 19,533 empty stubs are now a content-addressable memory system:
 ### Key Files
 
 | File | What |
-| ------ | ------ |
+|------|------|
 | `.crewai/manifest.json` | Machine-readable crew registry |
 | `.crewai/run_jfac.py` | JFAC Crew entrypoint |
 | `.crewai/address_poc.py` | Address space initialization script |

@@ -2,4 +2,4 @@
 tags:
   - geography/water/river
 ---
-[[rivers|river]] in [[Oneida County]]
+[[rivers|river]] in [[Oneida County]] 

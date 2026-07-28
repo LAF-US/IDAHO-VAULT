@@ -5,4 +5,4 @@ related:
 - Payette County
 authority: LOGAN
 ---
-New Plymouth, Payette County
+New Plymouth, Payette County 

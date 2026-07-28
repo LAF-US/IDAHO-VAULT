@@ -5,4 +5,4 @@ related:
 - Kootenai County
 authority: LOGAN
 ---
-Coeur d'Alene, Kootenai County
+Coeur d'Alene, Kootenai County 

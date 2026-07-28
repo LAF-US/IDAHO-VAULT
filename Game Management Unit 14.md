@@ -7,4 +7,4 @@ authority: LOGAN
 ---
 northwestern Idaho County
 
-chronic wasting disease
+chronic wasting disease 

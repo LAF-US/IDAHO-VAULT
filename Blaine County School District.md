@@ -6,4 +6,4 @@ related:
 - Ketchum
 authority: LOGAN
 ---
-Hailey/Ketchum/Bellevue, Blaine County
+Hailey/Ketchum/Bellevue, Blaine County 

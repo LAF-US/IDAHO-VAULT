@@ -4,4 +4,4 @@ related:
 - University of Idaho
 authority: LOGAN
 ---
-University of Idaho president
+University of Idaho president 

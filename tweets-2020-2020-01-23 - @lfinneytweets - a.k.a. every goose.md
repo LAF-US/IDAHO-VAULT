@@ -13,10 +13,9 @@ related:
   - lfinneytweets
 ---
 
-a.k.a. every goose <https://t.co/0k7EmktaDP>
+a.k.a. every goose https://t.co/0k7EmktaDP
 
 ## Links
-
-- <https://x.com/NateBrownNews/status/1220121655197880320>
+- https://x.com/NateBrownNews/status/1220121655197880320
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1220410979856633863)

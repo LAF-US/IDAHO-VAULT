@@ -100,8 +100,9 @@ Cleans up veteran definition started many years ago. Currently define veteran in
 
 Scott Syme—move to introduce RS. Unanimous pass by voice.
 
+
 **Service Members, Veterans (RS)** – Rep. Bill Goesling (not on this committee)
 
 Modernization of language. Title 65 – changes “Soldiers and Sailors” to “Service Members, Veterans, Spouses and Dependents”
 
-Gayann DeMordaunt moves to introduce. Unanimous pass by voice.
+Gayann DeMordaunt moves to introduce. Unanimous pass by voice. 

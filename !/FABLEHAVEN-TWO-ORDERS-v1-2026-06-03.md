@@ -38,7 +38,6 @@ subversive one does; the dawn is named for the night it answers.
 ## Vault Mappings
 
 ### The protective order is defined by its counter-order
-
 The Knights are not a standalone good; they are a **response.** Their shape, their
 secrecy, their methods are all dictated by the Society they were made to oppose.
 
@@ -47,7 +46,6 @@ structure was built *against* — and beware the day the threat changes shape wh
 the defense keeps fighting the last one.
 
 ### Infiltration is the network's defining vulnerability
-
 The Society's signature move is not assault but **infiltration** — to be inside
 the protective order, vouched for, trusted. In this world the deepest wounds came
 exactly there: a Knight of the Dawn who was secretly Society (the narcoblix,
@@ -63,7 +61,6 @@ that the higher the trusted seat, the larger the breach if it is turned. (See th
 Manipulator-at-the-top pattern; see `!/FABLEHAVEN-SPHINX-v1-2026-06-04.md`.)
 
 ### The orders cross the preserves — local keeping is not enough
-
 The caretaker keeps one preserve; the orders move through all of them. A
 perfectly-kept single ground can still be compromised by a network-wide actor who
 arrives with credentials from the order itself.
@@ -74,7 +71,6 @@ them requires the protective order, not the lone caretaker. Know which layer you
 threat lives at.
 
 ### A mask of the legitimate order is the worst mask
-
 The Society's infiltrators do not wear a self-built disguise; they wear a **real,
 legitimate office** (a true Knighthood) over a concealed allegiance. Per the
 PERSONAE doctrine, that is graver than the self-constructed mask — it is a *stolen

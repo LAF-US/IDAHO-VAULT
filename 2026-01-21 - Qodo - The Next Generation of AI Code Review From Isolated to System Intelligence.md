@@ -188,4 +188,4 @@ Technology
 
 Code Reviews Learn
 
-4 min](<https://www.qodo.ai/blog/already-fixed-too-late-what-90-open-source-repos-tell-us-about-code-review-blind-spots/?utm_source=email&utm_medium=email&utm_campaign=331946206-2026-02-Onboarding+Emails>)
+4 min](https://www.qodo.ai/blog/already-fixed-too-late-what-90-open-source-repos-tell-us-about-code-review-blind-spots/?utm_source=email&utm_medium=email&utm_campaign=331946206-2026-02-Onboarding+Emails)

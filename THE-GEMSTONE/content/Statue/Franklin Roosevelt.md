@@ -9,6 +9,6 @@ aliases:
 
 # FDR
 
-Democratic President of the United States
+Democratic President of the United States 
 
 ---

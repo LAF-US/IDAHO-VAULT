@@ -44,7 +44,7 @@ All other connectors remain read-first unless Logan explicitly promotes them lat
 ### Canonical roles
 
 | Connector | Category | Write Mode | Canonical Role | Authoritative For |
-| --- | --- | --- | --- | --- |
+|---|---|---|---|---|
 | GitHub | `core` | `gated-write` | Issues, PRs, workflows, automation, execution transport, coordination state | everything — single source of truth |
 | Linear | `auxiliary` | `mirrored` | Mirrored from GitHub for human visibility | nothing authoritative |
 | Slack | `auxiliary` | `notification-only` | Tertiary paging, breadcrumbs | nothing durable |

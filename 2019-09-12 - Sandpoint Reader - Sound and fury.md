@@ -48,7 +48,7 @@ Despite the sound and fury surrounding the Festival at Sandpoint’s policy bann
 
 “There have been a lot of headlines saying that we are being sued and people saying we have been sued, but we have not been served with a lawsuit,” she said. “Nothing but a demand letter, which is not the same as a lawsuit. I don’t know if they don’t know the difference.”
 
-Nonetheless, Bonner County’s “declaratory action” against the city, which challenges its authority to allow the Festival to ban guns on publicly-owned property, isn’t the only potential legal action to come out of the controversy.
+Nonetheless, Bonner County’s “declaratory action” against the city, which challenges its authority to allow the Festival to ban guns on publicly-owned property, isn’t the only potential legal action to come out of the controversy. 
 
 The Idaho Second Amendment Alliance, based in Boise, made it known in a handful of videos posted to the organization’s Facebook page between Sept. 3 and Sept. 9 that it was raising the $10,000 necessary to retain lawyer and gun rights advocate Alexandria Kincaid. What’s more, ISAA President Greg Pruett said in the videos that his group stands ready to sue Sandpoint if it doesn’t “back down” from its position that the Festival, as a lessee, has the power to establish its own rules about who can and can’t enter the venue.
 

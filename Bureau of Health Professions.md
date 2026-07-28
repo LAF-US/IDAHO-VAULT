@@ -8,8 +8,7 @@ related:
 - Nicki Chopski
 authority: LOGAN
 ---
-### **Bureau of Health Professions** - Nicki Chopski
-
+### **Bureau of Health Professions** - Nicki Chopski 
 Nicki Chopski
 • Board of Medicine
 • Board of Nursing

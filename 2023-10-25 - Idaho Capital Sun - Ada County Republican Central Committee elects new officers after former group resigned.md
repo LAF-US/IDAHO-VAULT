@@ -47,22 +47,21 @@ The six new officers each ran unopposed for their positions, according to a pres
 - Treasurer: Sue Hoffer
 - State Committeewoman: Cheryl Hurd
 
-According to the press release, Butterworth’s goal is for the new officials to become more involved, complete a financial review of the Ada County Republican Central Committee following last month’s resignations and focus on the upcoming Nov. 7 local elections.
+According to the press release, Butterworth’s goal is for the new officials to become more involved, complete a financial review of the Ada County Republican Central Committee following last month’s resignations and focus on the upcoming Nov. 7 local elections. 
 
-The leadership vacancies were created on Oct. 5, when six former Ada County Republican Central Committee officers resigned en masse after alleging Idaho Republican Party leaders were dividing the party and resorting to bullying tactics, the Sun previously reported.
+The leadership vacancies were created on Oct. 5, when six former Ada County Republican Central Committee officers resigned en masse after alleging Idaho Republican Party leaders were dividing the party and resorting to bullying tactics, the Sun previously reported. 
 
-Several of the new officers have run for office before or been involved with political issues.
+Several of the new officers have run for office before or been involved with political issues. 
 
-Spoon served on former Lt. Gov. Janice McGeachin’s hand-picked 2021 education indoctrination task force, which was charged with rooting out “indoctrination” in public schools.
+Spoon served on former Lt. Gov. Janice McGeachin’s hand-picked 2021 education indoctrination task force, which was charged with rooting out “indoctrination” in public schools. 
 
 Spoon and Butterworth ran unsuccessfully as part of a slate Republicans running for seats on the nonpartisan College of Western Idaho board of trustees in 2022, where they pledged to cut spending and cut taxes if elected, Idaho Education News reported.
 
-In 2022, Cleveland ran unsuccessfully for the U.S. Senate as an independent candidate, where he lost to incumbent Republican U.S. Sen. Mike Crapo.
+In 2022, Cleveland ran unsuccessfully for the U.S. Senate as an independent candidate, where he lost to incumbent Republican U.S. Sen. Mike Crapo. 
 
 The six new Ada County Republican officers replace former Chairman Victor Miller, former First Vice Chair Megan Reichle, former Second Vice Chair Travis Clyde, former Third Vice Chair Barrett Tetlow, former Treasurer Dave Lister and former State Committeewoman Kim Wickstrum, who all resigned Oct. 5.
 
 -###-
-
 ## Ada County Republicans on Facebook
 
 While our friends in Washington D.C. are still struggling to elect a leader, we have far better results here in Ada County. The Ada County Republicans elected new officers tonight, all by acclamation!

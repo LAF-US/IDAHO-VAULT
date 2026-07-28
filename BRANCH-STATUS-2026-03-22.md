@@ -30,7 +30,7 @@ authority: LOGAN
 **Status:** 15 active feature branches; 4 are merge-ready (ahead of main); 9 are stale (behind main).
 
 | Category | Count | Action |
-| ---------- | ------- | -------- |
+|----------|-------|--------|
 | **Merge-Ready** | 4 | Prioritize for PR review |
 | **Blocked/Stale** | 9 | Rebase or close per Logan direction |
 | **Collision Risk** | 1 | `levelset-current-synthesis-zWxJc` conflicts with merged `levelset-multi-conversation-zWxJc` |
@@ -40,7 +40,6 @@ authority: LOGAN
 ## MERGE-READY BRANCHES (Ahead of Main)
 
 ### 1. `claude/levelset-current-synthesis-zWxJc`
-
 - **Status:** ⚠️ COLLISION — branch ancestor merged as PR #15; this branch has 3 new commits
 - **Ahead:** 3 commits
 - **Latest commit:** `1d63124` — "Append 7 approved decisions to DECISIONS.md, hold #8 pending taxonomy"
@@ -53,7 +52,6 @@ authority: LOGAN
 - **Recommendation:** ⏸️ HOLD — Rebase onto main, migrate to `!ADMIN/` structure, or cherry-pick DECISIONS.md commits.
 
 ### 2. `claude/context-persistence-system-gVP3x`
-
 - **Status:** ✅ Clean merge candidate
 - **Ahead:** 2 commits
 - **Latest commit:** `bda1a16` — "Merge origin/main — resolve swarm/ conflicts with populated main versions"
@@ -61,7 +59,6 @@ authority: LOGAN
 - **Recommendation:** ✅ MERGE — Ready for PR review.
 
 ### 3. `claude/levelset-multi-conversation-zWxJc`
-
 - **Status:** ⚠️ MOSTLY MERGED — PR #15 merged ancestor; branch is 1 commit ahead
 - **Ahead:** 1 commit
 - **Latest commit:** `3fb4daf` — "Align all agent instruction files to post-flatten vault structure"
@@ -69,7 +66,6 @@ authority: LOGAN
 - **Recommendation:** ✅ MERGE — Fast-forward should apply cleanly.
 
 ### 4. `claude/public-conversation-setup-zl2oe`
-
 - **Status:** ✅ Independent work
 - **Ahead:** 4 commits
 - **Latest commit:** `fc4fd9d` — "Loosen auto-merge threshold so Logan reviews fewer PRs"
@@ -77,7 +73,6 @@ authority: LOGAN
 - **Recommendation:** ✅ MERGE — No structural conflicts visible; review for content.
 
 ### Copilot Branches
-
 - `copilot/check-public-repo` — 2 commits ahead
 - `copilot/collaboration-context-unification` — 4 commits ahead
 - `copilot/deploy-dependabot-configurations` — 3 commits ahead
@@ -91,7 +86,7 @@ All appear independent; recommend review before merge.
 These branches are 15+ commits behind main and likely need rebasing or closure:
 
 | Branch | Behind | Latest Commit | Action |
-| -------- | -------- | --------------- | -------- |
+|--------|--------|---------------|--------|
 | `claude/fix-swarm-alert-DIIQq` | 131 | 447c38c (swarm consolidation flag) | Rebase or close |
 | `claude/github-agent-setup-1N07i` | 133 (self) | 2f51dc3 (idaho-scraper LEVELSET v3.2.6) | N/A — current branch |
 | `claude/idaho-legislature-scraper-RI6Ku` | 133 | 2f51dc3 (same as above) | Archive — scraper terminated |
@@ -107,7 +102,6 @@ These branches are 15+ commits behind main and likely need rebasing or closure:
 ## COLLISION RISKS
 
 ### Primary: `levelset-current-synthesis-zWxJc`
-
 - **Problem:** Branch was created to synthesize LEVELSET-CURRENT.md but uses obsolete `!ADMINISTRATION/` folder name.
 - **Solution:** Either:
   - Option A: Rebase onto main, migrate files to `!ADMIN/`, merge
@@ -129,18 +123,15 @@ These branches are 15+ commits behind main and likely need rebasing or closure:
 ## RECOMMENDED MERGE SEQUENCE
 
 ### Immediate (This Week)
-
 1. ✅ `claude/levelset-multi-conversation-zWxJc` — Fast-forward merge (1 commit)
 2. ✅ `claude/context-persistence-system-gVP3x` — Clean merge candidate (2 commits)
 3. ✅ `claude/public-conversation-setup-zl2oe` — Review + merge (4 commits)
 
 ### Pending Logan Decision
-
 - ⏸️ `claude/levelset-current-synthesis-zWxJc` — Rebase + refactor OR cherry-pick OR close
 - 📋 Copilot branches (4) — Prioritize which are needed; rebase/review/merge accordingly
 
 ### Archive/Close
-
 - 🗑️ `claude/github-agent-setup-1N07i` (current, stale — rebased onto main)
 - 🗑️ `claude/idaho-legislature-scraper-RI6Ku` (scraper terminated)
 - 🗑️ Stale copilot branches (9) — Consolidate or close per Logan

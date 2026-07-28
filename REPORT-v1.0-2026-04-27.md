@@ -24,7 +24,6 @@ REPORT is the protocol by which an agent formally presents findings, summaries, 
 Like a legislative committee presenting a report to the full body, REPORT synthesizes work product into structured, actionable output. It requires formal presentation, acknowledgment of receipt, and routing.
 
 **Analogues in legislative procedure:**
-
 - Committee Report (Findings + Recommendations)
 - Testimony Summary
 - Roll Call / Recording
@@ -47,7 +46,6 @@ Like a legislative committee presenting a report to the full body, REPORT synthe
 ### Step 1: Call to Report
 
 Agent formally announces intent to report:
-
 - Identifies subject matter
 - States time and context
 - Acknowledges LEVELSET foundation
@@ -61,7 +59,6 @@ One-paragraph overview of what was done and what it means.
 
 **B. LEVELSET (Required)**
 Six-part standard report:
-
 1. WHO — Agent identity and authority
 2. WHAT YOU KNOW — Context and scope
 3. WHAT YOU'VE DONE — Work product (files, decisions, content)
@@ -78,7 +75,6 @@ Options for Logan consideration, numbered for reference.
 ### Step 3: Testimony / Appendices
 
 Optional supporting material:
-
 - Raw data
 - File paths
 - Citations
@@ -97,7 +93,6 @@ Logan or receiving agent formally accepts:
 ### Step 6: Routing
 
 Distribution:
-
 - DECISIONS.md if actionable
 - LEVELSET-CURRENT.md if state-affecting
 - DOCKET if attention needed
@@ -166,7 +161,7 @@ RECEIPT: [Name] | [Date] | [Disposition]
 ## INTEGRATION
 
 | Action | Stigmergy Field |
-| -------- | ---------------- |
+|--------|----------------|
 | On submission | `emit` report pheromone |
 | On receipt | Logan acknowledges |
 | On filing | Entry to DECISIONS.md |

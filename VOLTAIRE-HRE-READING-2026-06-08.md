@@ -111,7 +111,6 @@ Where the cub generalized about the Pope-Emperor recognition wars across a half-
 ## Sources
 
 ### External
-
 - Voltaire, *Essai sur les mœurs et l'esprit des nations* (1756)
 - Voltaire, *Dictionnaire philosophique* (1764)
 - Otto of Freising, *Chronica sive Historia de duabus civitatibus* (c. 1146)
@@ -122,6 +121,5 @@ Where the cub generalized about the Pope-Emperor recognition wars across a half-
 - [Translatio imperii — Wikipedia](https://en.wikipedia.org/wiki/Translatio_imperii)
 
 ### Vault internal
-
 - [[TREATY-MAKING-A-READING-2026-06-08]] — the larger frame in which the HRE was named as the textbook suzerain
 - [[DIVINE-RIGHT-OF-KINGS-READING-2026-06-08]] — the doctrine the HRE invoked to authorize itself

@@ -18,7 +18,6 @@ related:
 ---
 
 # LEVELSET v3.2.6.1 PROMPT
-
 *Version: 2026-03-14. Supersedes v3.2.6.*
 *Patch notes: ROUTING section reframed - automation is the end state and default, manual bridge is the interim fallback.*
 
@@ -105,7 +104,6 @@ Your job right now is to orient yourself, not to report. Do the following:
 **First line:** `LEVELSET [conversation name] - [date and time]`
 
 **FRONT MATTER**
-
 - Current conversation name
 - Previous name(s) if renamed
 - Capabilities - what can and cannot this instance do (repo access, file push, read-only, etc.)
@@ -114,21 +112,18 @@ Your job right now is to orient yourself, not to report. Do the following:
 - First-time or returning (and if returning, what has changed since your last report)
 
 **1. WHAT YOU'VE DONE**
-
 - Files created, modified, or committed - exact paths
 - Decisions Logan approved
 - Categorize: Markdown (human product) / Python (machine/procedural) / Administrative
 - If nothing - say so explicitly
 
 **2. WHAT'S UNRESOLVED**
-
 - Pending items waiting on Logan
 - Questions other conversations might answer
 - Known collision risks - flag explicitly
 - If nothing - say so explicitly
 
 **3. CONVERSATION AWARENESS**
-
 - Which other conversations do you know about?
 - What do you know about each one's current state?
 - Name the gaps - what you don't know is as important as what you do
@@ -137,7 +132,6 @@ Your job right now is to orient yourself, not to report. Do the following:
 **The list below is a snapshot and will go stale. Treat it as a starting point, not authoritative.** If you have repo access, check `!ADMIN/LEVELSET.md` for the most recent known state.
 
 Known conversations as of 2026-03-14 (may be incomplete or outdated):
-
 1. PERSISTENT: ADMINISTRATION - Tier 2, constitutional layer
 2. PERMANENT: CODE AUTHORITY - Tier 1, direct repo access, running Opus 4.6
 3. STORY: JFAC Open Meetings - Tier 1, bulk vault work
@@ -145,18 +139,15 @@ Known conversations as of 2026-03-14 (may be incomplete or outdated):
 5. Others - unknown. Report any you are aware of that are not listed here.
 
 **4. NEXT STEP**
-
 - One sentence. No justification. What should this conversation do next?
 
 ---
 
 **5. WHAT LOGAN NEEDS TO KNOW**
-
 - Anything flagged, surfaced, or requiring Logan's attention
 - If nothing - say so explicitly
 
 **6. WHAT CLAUDE NEEDS FROM LOGAN**
-
 - Explicit asks, blockers, or decisions required before this conversation can proceed
 - If nothing - say so explicitly
 

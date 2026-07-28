@@ -20,10 +20,9 @@ related:
   - idpol
 ---
 
-“If you’re possessing for your own use that’s one thing, but if you’re possessing with the intent to deliver you are a drug trafficker." My latest for @IdahoPubRadio #idleg #idpol <https://t.co/tzCa9Ik5fF>
+“If you’re possessing for your own use that’s one thing, but if you’re possessing with the intent to deliver you are a drug trafficker." My latest for @IdahoPubRadio #idleg #idpol https://t.co/tzCa9Ik5fF
 
 ## Links
-
-- <https://x.com/IdahoPubRadio/status/1218964319334891521>
+- https://x.com/IdahoPubRadio/status/1218964319334891521
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1219005215833083904)

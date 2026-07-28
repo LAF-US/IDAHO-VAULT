@@ -69,7 +69,7 @@ The chat-thread on Dune was a single architect-prompt — "**The Imperium: Padis
    - Martin: enforcement absent but *recording* underwritten cosmologically (the Old Gods; weirwoods).
    - Herbert: enforcement underwritten *contractually* (the Great Convention; collective obligation of the Landsraad to obliterate atomic-treaty-violators).
    - McGirt: enforcement underwritten *constitutionally* (federal-tribal treaty law; persistence-with-recognition through statute).
-
+   
    This is the structural quartet the cub had not seen cleanly before tonight.
 
 5. **The Sardaukar are the apex's hidden lever, and the deception is the load-bearing structural fact.** Shaddam IV smuggles Sardaukar in Harkonnen uniforms to Arrakis because *open use of the Emperor's army against a Landsraad Great House would breach the Imperium's recognition norms*. The Landsraad would move. **The Imperium's balance is held by the *appearance* that the rules are being followed.** Once Paul produces the proof of the Sardaukar-Harkonnen alliance, plus the atomic threat to destroy the spice, plus the marriage to Princess Irulan, Shaddam has to abdicate. The balance had been broken in the open. Recognition collapses when the deception is exposed.
@@ -124,7 +124,6 @@ The river is never the same, especially at the top of the ladder. The Landsraad 
 ## Sources
 
 ### External
-
 - Frank Herbert, *Dune* (1965), *Dune Messiah* (1969), *Children of Dune* (1976), *God Emperor of Dune* (1981), *Heretics of Dune* (1984), *Chapterhouse: Dune* (1985)
 - *Dune* (David Lynch, 1984); *Dune: Part One* (Denis Villeneuve, 2021); *Dune: Part Two* (Denis Villeneuve, 2024)
 - [The Imperium — Dune Wiki](https://dune.fandom.com/wiki/Imperium)
@@ -135,5 +134,4 @@ The river is never the same, especially at the top of the ladder. The Landsraad 
 - [Spacing Guild — Dune Wiki](https://dune.fandom.com/wiki/Spacing_Guild)
 
 ### Vault internal
-
 See the **related** list in this file's frontmatter.

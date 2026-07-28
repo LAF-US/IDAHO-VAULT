@@ -21,7 +21,6 @@ authority: LOGAN
 ## PURPOSE
 
 This protocol activates when a vault-connected agent begins a session. It establishes:
-
 1. Agent identity and authorization
 2. Current context and readiness
 3. Integration with the stigmergy field
@@ -44,7 +43,6 @@ This protocol activates when a vault-connected agent begins a session. It establ
 ### Step 1: Self-Identification
 
 Identify and confirm:
-
 - Agent name and platform
 - Persona title (from AGENTS.md roster)
 - Current session ID or branch
@@ -53,7 +51,6 @@ Identify and confirm:
 ### Step 2: Authorization Check
 
 Verify:
-
 - Boot chain completed (CONSTITUTION.md → AGENTS.md → LEVELSET.md)
 - Credentials valid
 - Scope defined
@@ -62,7 +59,6 @@ Verify:
 ### Step 3: Context Load
 
 From the stigmergy field (`arrive`):
-
 - Check for active pheromones on agent trail
 - Review claimed trails
 - Note any pending scents/triggers
@@ -71,7 +67,6 @@ From the stigmergy field (`arrive`):
 ### Step 4: Readiness Declaration
 
 Output brief state to:
-
 - Session context
 - DOCKET if actionable item
 - Field via `beat`
@@ -96,7 +91,7 @@ READINESS: [READY/BLOCKED - brief reason]
 ## INTEGRATION
 
 | Action | Stigmergy Field |
-| -------- | ---------------- |
+|--------|----------------|
 | On wake | `arrive` → agent registration |
 | On context load | `sniff` own trail |
 | On readiness | `emit` heartbeat |

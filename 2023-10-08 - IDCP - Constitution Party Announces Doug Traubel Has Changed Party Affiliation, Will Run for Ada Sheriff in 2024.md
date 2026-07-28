@@ -41,13 +41,13 @@ Ullrich asked Traubel why he is running again and why the change to CP.
 Here is what he had to say:
 
 > “We are in a Maoist Cultural Revolution with consequences to our liberties and safety. I believe I am the right man to be Sheriff. Just as before, I am running under the banner of Constitutional Sheriff. What that means is that I understand what the oath of office looks like — in action. I am not the generic pusillanimous candidate. When it comes to speaking and acting on uncomfortable truths, I am bold. When it comes to defending people’s constitutionally protected rights, I am intrepid.
->
+> 
 > During the last primary season Victor Miller, Chairman of the Ada County Republican Central Committee, denied me a debate with Clifford when I asked him for one in a text. In my opinion there is strong evidence for me to believe there were high jinks by Victor Miller and Rod Beck that favored Clifford during the appointment process and the subsequent primary election. I could elaborate, but it is not productive. Running on the CP ticket allows me to sidestep the shenanigans and put my focus in front of me, not behind.
->
+> 
 > The Constitution Party embraces my oath-centered passion. Without a Sheriff who will put the oath in action, the Constitution has no teeth and the government is unrestrained. The citizen shrinks when government is not put in check. We saw this when churches were closed among other rights stepped on.
->
+> 
 > I am proud to stand with the Constitution Party; it suits me and I am glad to give them a spotlight. I have changed parties, but I have not changed. I have a lot of support from registered republicans and there are many independent voters in Ada County. My top ranking in 2021 by the Ada County GOP Central Committee proves there is support for a Constitutional Sheriff and those same people will now have the option to vote principle over party in the General Election November 5, 2024.
->
+> 
 > The Ada County GOP is divided ideologically and many republican voters were misled about me by the negative press. The 34.4% that voted for me can do so again in what will likely be a three-way race. In addition, Ada County’s independent voters will have a viable alternative in the General Election. This is a highly winnable scenario.”
 
 Ullrich asked Traubel if he expects his writings to be a continued source of attack during the 2024 campaign cycle. His answer:

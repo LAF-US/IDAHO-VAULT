@@ -39,7 +39,7 @@ related:
 
 **OpenAI Swarm** (`openai/swarm` on GitHub) is a lightweight, experimental Python framework for multi-agent orchestration built on top of the OpenAI Chat Completions API. It was published as an educational reference implementation, not a production product.
 
-- **Repo:** <https://github.com/openai/swarm>
+- **Repo:** https://github.com/openai/swarm
 - **Install:** `pip install git+https://github.com/openai/swarm.git` (Python 3.10+)
 - **Status:** Experimental / educational. OpenAI's production recommendation is the **Agents SDK**.
 - **Model support:** Any OpenAI model available through Chat Completions (default in the README: `gpt-4o`)
@@ -109,7 +109,7 @@ A shared `dict` passed across the conversation that agents can read and modify. 
 ## 3. Strengths
 
 | Strength | Notes |
-| --- | --- |
+|---|---|
 | **Minimal API surface** | Two classes (`Swarm`, `Agent`), one main method (`run`). Easy to read and test. |
 | **Handoff pattern** | Elegant model for role-based escalation without a hardcoded router. Maps cleanly to Observer -> Secretary -> Executor pipelines. |
 | **Stateless by design** | Each `run()` is independent. No built-in cross-run memory. |
@@ -122,7 +122,7 @@ A shared `dict` passed across the conversation that agents can read and modify. 
 ## 4. Limitations
 
 | Limitation | Impact on IDAHO-VAULT |
-| --- | --- |
+|---|---|
 | **No persistent memory** | Context variables reset each run. CHECKPOINT records and DOCKET state must be stored externally. |
 | **OpenAI-only by default** | Using Claude, Gemini, or other agents requires wrapping or a separate orchestration layer. |
 | **Not production-ready** | OpenAI explicitly recommends the Agents SDK for production use. |
@@ -135,7 +135,7 @@ A shared `dict` passed across the conversation that agents can read and modify. 
 ## 5. Comparison to UNIFIED SWARM (IDAHO-VAULT)
 
 | Dimension | OpenAI Swarm | IDAHO-VAULT UNIFIED SWARM |
-| --- | --- | --- |
+|---|---|---|
 | **Coordination layer** | In-memory `context_variables` | Linear, vault files, GitHub PRs |
 | **Agent communication** | Handoff via return values | Logan relays; vault is shared state |
 | **Persistence** | None between runs | Linear issues plus vault markdown files |
@@ -189,7 +189,7 @@ For IDAHO-VAULT, the second pattern is usually the better fit. Logan remains the
 Key differences:
 
 | Feature | OpenAI Swarm | Agents SDK |
-| --- | --- | --- |
+|---|---|---|
 | Production status | Experimental | Supported / actively maintained |
 | Memory / storage | None | Session memory and thread management available |
 | Tracing | None | Built-in tracing and observability |
@@ -203,7 +203,7 @@ For IDAHO-VAULT, the Agents SDK still does not replace the repo's broader multi-
 ## 8. Recommendation
 
 | Scenario | Recommendation |
-| --- | --- |
+|---|---|
 | **Gateway orchestration for multi-step Linear sequences** | If OpenAI-only reasoning is acceptable, prefer Agents SDK over old Swarm |
 | **Primary swarm coordination layer** | Do not adopt - neither Swarm nor Agents SDK replaces Linear, vault files, or the multi-model agent roster |
 | **Production webhook routing** | Do not adopt - use `linear-webhook.yml` GitHub Action instead |
@@ -223,10 +223,10 @@ For IDAHO-VAULT, the Agents SDK still does not replace the repo's broader multi-
 
 ## 10. Known Sources
 
-- OpenAI Swarm README: <https://github.com/openai/swarm/blob/main/README.md>
-- OpenAI cookbook, "Orchestrating Agents: Routines and Handoffs": <https://developers.openai.com/cookbook/examples/orchestrating_agents/>
-- OpenAI cookbook, "Multi-Agent Portfolio Collaboration with OpenAI Agents SDK": <https://developers.openai.com/cookbook/examples/agents_sdk/multi-agent-portfolio-collaboration/multi_agent_portfolio_collaboration/>
-- OpenAI Agents SDK docs home: <https://openai.github.io/openai-agents-python/>
-- OpenAI Agents SDK docs, multi-agent patterns: <https://openai.github.io/openai-agents-python/multi_agent/>
-- OpenAI Agents SDK docs, handoffs: <https://openai.github.io/openai-agents-python/handoffs/>
-- OpenAI Agents SDK docs, tools: <https://openai.github.io/openai-agents-python/tools/>
+- OpenAI Swarm README: https://github.com/openai/swarm/blob/main/README.md
+- OpenAI cookbook, "Orchestrating Agents: Routines and Handoffs": https://developers.openai.com/cookbook/examples/orchestrating_agents/
+- OpenAI cookbook, "Multi-Agent Portfolio Collaboration with OpenAI Agents SDK": https://developers.openai.com/cookbook/examples/agents_sdk/multi-agent-portfolio-collaboration/multi_agent_portfolio_collaboration/
+- OpenAI Agents SDK docs home: https://openai.github.io/openai-agents-python/
+- OpenAI Agents SDK docs, multi-agent patterns: https://openai.github.io/openai-agents-python/multi_agent/
+- OpenAI Agents SDK docs, handoffs: https://openai.github.io/openai-agents-python/handoffs/
+- OpenAI Agents SDK docs, tools: https://openai.github.io/openai-agents-python/tools/

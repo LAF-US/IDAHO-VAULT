@@ -35,6 +35,8 @@ Our Sponsors
 
 Owen Keith, 16, carries the processional cross leaving Coeur d’ Alene St. Thomas the Apostle Catholic Church in the first ever youth-led Catholic Eucharistic Procession in North Idaho last May. Over 300 area Catholics, including 60 youth, joined him in this historic faith walk (Sentimental Impression Photography-Jeremy Williams) Contributed.
 
+  
+
 **By Lisa Ormond | FāVS News Reporter**
 
 In the State of Idaho, Catholic priests are a precious commodity especially when the number of converts is steadily rising but the supply of priests in the pipeline ready to meet this growing demand is lagging.

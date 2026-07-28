@@ -504,7 +504,7 @@ _Generated 2026-03-12 02:18 UTC by GitHub Actions_
 ## Summary
 
 | Check | Count |
-| --- | --- |
+|---|---|
 | Likely misplaced files | 48 |
 | Files in parent folders with subfolders (potential orphans) | 373 |
 | Naming convention issues | 1 |
@@ -516,7 +516,7 @@ _Generated 2026-03-12 02:18 UTC by GitHub Actions_
 These files match naming patterns suggesting they belong elsewhere.
 
 | File | Current Folder | Suggested Folder | Reason |
-| --- | --- | --- | --- |
+|---|---|---|---|
 | `PLACES/OTHER/COUNTIES/Malheur County.md` | `PLACES/OTHER/COUNTIES` | `PLACES/COUNTIES` | looks like an Idaho county |
 | `PLACES/OTHER/COUNTIES/Multnomah County.md` | `PLACES/OTHER/COUNTIES` | `PLACES/COUNTIES` | looks like an Idaho county |
 | `PLACES/OTHER/COUNTIES/Orange County.md` | `PLACES/OTHER/COUNTIES` | `PLACES/COUNTIES` | looks like an Idaho county |
@@ -573,7 +573,7 @@ These files match naming patterns suggesting they belong elsewhere.
 These files sit directly in a folder that also has subfolders. They may belong in one of the subfolders listed.
 
 | File | Folder | Available Subfolders |
-| --- | --- | --- |
+|---|---|---|
 | `GOVERNMENTS/Board of Professional Counselors and Marriage and Family Therapists.md` | `GOVERNMENTS` | `IDAHO - EXECUTIVE`, `IDAHO - JUDICIAL`, `IDAHO - LEGISLATIVE`, `USA - FEDERAL`, `USA - TRIBES` |
 | `GOVERNMENTS/Idaho Code.md` | `GOVERNMENTS` | `IDAHO - EXECUTIVE`, `IDAHO - JUDICIAL`, `IDAHO - LEGISLATIVE`, `USA - FEDERAL`, `USA - TRIBES` |
 | `GOVERNMENTS/Idaho Constitution.md` | `GOVERNMENTS` | `IDAHO - EXECUTIVE`, `IDAHO - JUDICIAL`, `IDAHO - LEGISLATIVE`, `USA - FEDERAL`, `USA - TRIBES` |

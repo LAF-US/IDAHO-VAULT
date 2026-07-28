@@ -4,4 +4,4 @@ related:
 - State of Idaho
 authority: LOGAN
 ---
-State of Idaho parks
+State of Idaho parks 

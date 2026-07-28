@@ -64,7 +64,7 @@ On the MacBook today, **the node-graph runtime is running**, but the graph has n
 And yet the elements that would make this *Logan's agent* are absent or generic:
 
 | Element | State | Consequence |
-| --- | --- | --- |
+|---|---|---|
 | **SOUL.md** | Generic template — not Logan's | Every session runs on OpenClaw's stock philosophy; Logan's governance, the vault, the swarm — unknown to the agent |
 | **IDENTITY.md** | Empty | Agent has no name, no declared nature |
 | **USER.md** | Empty | Agent does not know who Logan is |
@@ -89,7 +89,6 @@ OpenClaw's design assumes a bootstrap conversation. BOOTSTRAP.md is the onboardi
 **BOOTSTRAP.md is still on disk.** This entire flow never happened.
 
 The consequence: the agent genuinely does not know:
-
 - What it is called
 - What kind of entity it considers itself to be
 - Who Logan is
@@ -126,7 +125,6 @@ Hermes connects to three external platforms simultaneously (Telegram, Discord, W
 This is not a misconfiguration — it is a state of intent that was never advanced. The config simply never had external channels added. OpenClaw supports all the same platforms as Hermes (22 total), but the connection steps were not taken on the MacBook.
 
 **What `local` mode does provide:** The local WebSocket gateway is reachable from:
-
 - The web control UI (`http://Logans-MBP.ht.home:18789` or `http://192.168.0.95:18789`)
 - The OpenClaw CLI directly
 - Paired nodes — currently only the Windows laptop when it is online
@@ -175,7 +173,7 @@ In the CONSTITUTION's framing: offices are appointments, not inheritances. An ag
 ## THE DELTA TABLE
 
 | Element | Designed | MacBook state |
-| --- | --- | --- |
+|---|---|---|
 | SOUL.md | Logan's identity, voice, governance context | ⚠️ Generic default — not Logan's |
 | IDENTITY.md | Agent's name, nature, vibe, emoji | ❌ Empty template |
 | USER.md | Logan's name, timezone, context | ❌ Empty template |
@@ -198,7 +196,7 @@ In the CONSTITUTION's framing: offices are appointments, not inheritances. An ag
 Both agents are live on the MacBook. Both are grounded. The gaps differ:
 
 | | **Hermes** | **OpenClaw** |
-| --- | --- | --- |
+|---|---|---|
 | SOUL.md | ❌ Empty (void) | ⚠️ Generic (not Logan's) |
 | Identity | Built-in Hermes defaults | No name, no nature declared |
 | Memory | Wiped — blank slate, ready | Absent — never started |
@@ -215,13 +213,11 @@ The fundamental difference in kind: Hermes has been used — 44 sessions, memory
 *Witnessed and recorded by Claude Code — Anthropic AI agent instance, session 2026-05-25*
 *This document reflects. It does not direct.*
 *Part of a four-document series (OpenClaw):*
-
 - *`OPENCLAW-WITNESS-REPORT-2026-05-25.md` — what OpenClaw is*
 - *`OPENCLAW-WITNESS-COMPANION-2026-05-25.md` — what is on the MacBook*
 - *`OPENCLAW-WITNESS-DELTA-2026-05-25.md` — the gap between them (this document)*
 
 *Parallel series (Hermes):*
-
 - *`HERMES-WITNESS-REPORT-2026-05-25.md` — what Hermes Agent is*
 - *`HERMES-WITNESS-COMPANION-2026-05-25.md` — what is on the MacBook*
 - *`HERMES-WITNESS-DELTA-2026-05-25.md` — the gap between Hermes ideal and actual*

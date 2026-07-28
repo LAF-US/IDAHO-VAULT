@@ -13,10 +13,9 @@ related:
   - lfinneytweets
 ---
 
-Rest in peace, you funky little robot. <https://t.co/ZaGj397BlE>
+Rest in peace, you funky little robot. https://t.co/ZaGj397BlE
 
 ## Links
-
-- <https://x.com/verge/status/1095762829280464896>
+- https://x.com/verge/status/1095762829280464896
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1095800417491927040)

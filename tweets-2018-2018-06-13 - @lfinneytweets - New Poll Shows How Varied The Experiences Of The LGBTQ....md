@@ -20,10 +20,9 @@ related:
   - Queer
 ---
 
-"New Poll Shows How Varied The Experiences Of The LGBTQ “Community” Are" via @BuzzFeedNews #Pride #Queer <https://t.co/4ABBJOgQC3>
+"New Poll Shows How Varied The Experiences Of The LGBTQ “Community” Are" via @BuzzFeedNews #Pride #Queer https://t.co/4ABBJOgQC3
 
 ## Links
-
-- <https://x.com/i/events/1006960449127047168>
+- https://x.com/i/events/1006960449127047168
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1007027266973388801)

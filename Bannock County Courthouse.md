@@ -5,4 +5,4 @@ related:
 - magistrate court
 ---
 
-magistrate court Bannock County courthouse
+magistrate court Bannock County courthouse 

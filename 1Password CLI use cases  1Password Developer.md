@@ -59,7 +59,7 @@ For example, this script will loop through each vault the person who runs the sc
 
 vault\_details.sh
 
-# !/usr/bin/env bash
+#!/usr/bin/env bash
 
 for vault in $(op vault list --format=json | jq --raw-output '.\[\].id')
 

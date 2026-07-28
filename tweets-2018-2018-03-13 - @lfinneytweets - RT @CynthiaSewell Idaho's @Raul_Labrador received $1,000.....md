@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @CynthiaSewell: Idaho's @Raul_Labrador received $1,000.
+RT @CynthiaSewell: Idaho's @Raul_Labrador received $1,000. 
 CNN: Dormant campaign of top White House official paid out $50,000 last year #I…
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/973697703451361281)

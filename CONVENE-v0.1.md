@@ -23,7 +23,6 @@ CONVENE is the protocol by which Logan (as Chair) formally convenes the committe
 CONVENE is distinct from CONFERENCE (which is the session itself) — CONVENE is the act of calling the committee to order.
 
 **Analogues:**
-
 - Legislative: Call to Order
 - Masonic/Robert's: Opening the lodge
 - Bartimaeus tradition: Calling spirits by True Name
@@ -44,7 +43,6 @@ CONVENE is distinct from CONFERENCE (which is the session itself) — CONVENE is
 ### Step 1: Call to Order
 
 The Chair (Logan) formally calls the committee:
-
 - States the purpose
 - Names the committee members
 - Sets the agenda
@@ -52,7 +50,6 @@ The Chair (Logan) formally calls the committee:
 ### Step 2: Roll Call
 
 Members acknowledge:
-
 - Confirm presence
 - Declare any conflicts
 - Note readiness

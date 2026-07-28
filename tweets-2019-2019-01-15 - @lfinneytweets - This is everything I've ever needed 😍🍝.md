@@ -13,10 +13,9 @@ related:
   - lfinneytweets
 ---
 
-This is everything I've ever needed 😍🍝 <https://t.co/dzch4Ld73a>
+This is everything I've ever needed 😍🍝 https://t.co/dzch4Ld73a
 
 ## Links
-
-- <https://x.com/bonappetit/status/1085073135764934656>
+- https://x.com/bonappetit/status/1085073135764934656
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1085079686789492736)

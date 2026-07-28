@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-RT @ZachStafford: Trump’s Attorney General is saying he’s not guilty? Shocking. Truly.
+RT @ZachStafford: Trump’s Attorney General is saying he’s not guilty? Shocking. Truly. 
 
 *stirs brunch martini*
 

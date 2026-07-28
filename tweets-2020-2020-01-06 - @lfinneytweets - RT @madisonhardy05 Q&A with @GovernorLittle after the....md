@@ -21,10 +21,9 @@ related:
   - idpol
 ---
 
-RT @madisonhardy05: Q&A with @GovernorLittle after the S.O.T.S address in the Lincoln Auditorium. #idleg #idpol <https://t.co/zJdMjOLePA>
+RT @madisonhardy05: Q&A with @GovernorLittle after the S.O.T.S address in the Lincoln Auditorium. #idleg #idpol https://t.co/zJdMjOLePA
 
 ## Media
-
 - ![](https://pbs.twimg.com/media/ENoKXtGU4AENdoL.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1214294593451151360)

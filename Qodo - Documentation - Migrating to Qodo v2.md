@@ -76,7 +76,6 @@ During testing, both old and new review commands may run in parallel for compari
 ```
 
 This enables you to:
-
 - Validate the new review output on real pull requests
 - Compare results with existing review behavior
 - Test without changing repository configuration
@@ -86,7 +85,6 @@ Manual invocation is intended for testing and validation.
 ### Step 2: Enable on a pilot repository
 
 Before rolling out the new code review experience across your organization, we recommend enabling it on a pilot repository. This helps you:
-
 - Evaluate signal quality and noise levels
 - Confirm the new review behavior meets expectations
 - Adjust configuration if needed
@@ -104,7 +102,6 @@ Once you enable the new commands broadly, remove older review commands from any 
 ## What you’ll notice in your PRs
 
 After rollout, review output will be consolidated and more structured:
-
 - Compliance and Code Suggestions will no longer appear as separate outputs (they are incorporated into the new review experience)
 - Issues are grouped by priority (for example, Action Required vs Remediation Recommended)
 - Findings include clearer explanations and direct references to relevant code

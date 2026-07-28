@@ -38,9 +38,7 @@ A complete CSV export system for the Idaho Legislature scraper that generates da
 ## Files Modified/Created
 
 ### 1. `.github/scripts/idaho_leg_scraper.py` (Modified)
-
 **Changes:**
-
 - Added `csv` module import
 - New `expo***REMOVED***bills_to_csv()` function (lines 1273-1330)
   - Accepts bill list from `get_bill_list()`
@@ -52,7 +50,6 @@ A complete CSV export system for the Idaho Legislature scraper that generates da
 - CSV export bypasses markdown file generation for efficiency
 
 **CSV Columns:**
-
 1. `bill_id` - Idaho Legislature identifier (H0001, S1001, HCR001, etc.)
 2. `bill_type` - Type abbreviation (HB, SB, HCR, SCR, etc.)
 3. `number` - Bill number without leading zeros
@@ -66,17 +63,14 @@ A complete CSV export system for the Idaho Legislature scraper that generates da
 11. `exported_at` - Export timestamp in UTC
 
 ### 2. `.github/workflows/budget-tracker-csv-export.yml` (New)
-
 **Purpose:** Daily automation for CSV generation and email delivery
 
 **Schedule:**
-
 - Daily at 6:30 AM Mountain Time (13:30 UTC)
 - Runs 30 minutes after the main bill scraper to ensure fresh data
 - Also triggerable manually from GitHub Actions UI
 
 **Workflow Steps:**
-
 1. Checkout repository
 2. Set up Python 3.11 with pip cache
 3. Install scraper dependencies
@@ -88,11 +82,9 @@ A complete CSV export system for the Idaho Legislature scraper that generates da
 **Email Action:** Uses `dawidd6/action-send-mail@v3` for SMTP delivery
 
 ### 3. `.github/scripts/README-CSV-EXPORT.md` (New)
-
 **Purpose:** Complete documentation for CSV export feature
 
 **Sections:**
-
 - Overview
 - Manual usage instructions
 - Automated daily export details
@@ -109,9 +101,9 @@ A complete CSV export system for the Idaho Legislature scraper that generates da
 For email delivery to work, Logan needs to configure these repository secrets:
 
 | Secret | Purpose | How to Get |
-| --- | --- | --- |
+|---|---|---|
 | `MAIL_USERNAME` | Gmail address for sending | Your Idaho Reports email |
-| `MAIL_PASSWORD` | Gmail App Password (NOT regular password) | Generate at <https://myaccount.google.com/apppasswords> |
+| `MAIL_PASSWORD` | Gmail App Password (NOT regular password) | Generate at https://myaccount.google.com/apppasswords |
 | `MAIL_TO` | Recipient email address | Where you want the CSV delivered daily |
 
 **Important:** Must use Gmail App Password, not regular account password. Steps in README.
@@ -129,23 +121,19 @@ For email delivery to work, Logan needs to configure these repository secrets:
 ## Usage Examples
 
 ### Manual CSV Export
-
 ```bash
 # Export current 2026 session bills to CSV
 python3 .github/scripts/idaho_leg_scraper.py --year 2026 --csv-export minidata.csv
 ```
 
 ### Manual Workflow Trigger
-
 1. Go to GitHub → Actions → "Budget Tracker CSV Export"
 2. Click "Run workflow"
 3. Optionally change session year
 4. Click "Run workflow" button
 
 ### Expected Output
-
 CSV file with format:
-
 ```csv
 bill_id,bill_type,number,alias,title,sponsor,committee,last_action,url,year,exported_at
 H0001,HB,1,HB 1,Property Tax Relief...,Rep. John Smith,House Revenue...,Introduced in House...,https://...,2026,2026-03-23 06:54 UTC
@@ -155,7 +143,6 @@ S1001,SB,1001,SB 1001,Education Funding...,Sen. Jane Doe,Senate Education...,Sig
 ## Integration with Flourish
 
 The CSV file is designed for direct import into Flourish:
-
 1. Columns match typical budget tracker requirements
 2. Each row = one bill
 3. URLs enable linking back to source
@@ -164,8 +151,7 @@ The CSV file is designed for direct import into Flourish:
 
 ## Next Steps
 
-### Required by Logan
-
+### Required by Logan:
 1. **Configure GitHub Secrets** (see README for detailed steps)
    - Set up Gmail App Password
    - Add three secrets to repository
@@ -179,8 +165,7 @@ The CSV file is designed for direct import into Flourish:
    - Import first CSV to verify column mapping
    - Adjust visualization as needed
 
-### Optional Enhancements (future)
-
+### Optional Enhancements (future):
 - Add filters for bill type or committee
 - Include vote counts if available
 - Add fiscal note information

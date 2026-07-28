@@ -62,7 +62,6 @@ After Little ceremoniously signed the policy bill increasing insurance funding i
 If they don’t switch to the state’s plan, rural districts can face added challenges. Districts like Melba, which only employs around 100 people, have considerably less bargaining power with insurance companies, Ann Adams said, but she hopes having the state plan as an option will help in negotiations.
 
 ## Making the switch
-
 Districts also cite another reason for hesitating to switch on to the state plan: the $75.5 million of one-time money is not enough to cover the upfront costs.
 
 To join the state plan, enrollees have to pay into a “high risk claims pool,” a shared pot that helps the state pay for expensive and unexpected medical procedures and bills.
@@ -84,7 +83,6 @@ From the outset, advocates of the policy switch have never said all districts wi
 “The governor’s goal is to provide better health insurance coverage to school employees; in some cases that may mean joining the state plan, in other cases that will mean providing coverage through other carriers, but in all cases, the governor’s goal is to lower the premiums or deductibles school employees face,” Alex Adams told EdNews by email in early February.
 
 ## ‘A good tradeoff’
-
 While cutting a $17.9 million leadership premium for experienced teachers will still leave schools with a net funding boost, some are disappointed with the cut. Especially if teachers can’t get on the state’s plan in return.
 
 “For that to just be gone for nothing makes it seem like some kind of big scam to just get rid of the leadership premium money,” said Nampa Education Association President Brian Coffey.

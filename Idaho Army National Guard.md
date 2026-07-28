@@ -6,4 +6,4 @@ related:
 - State of Idaho
 ---
 
-State of Idaho military, with Governor as commander-in-chief
+State of Idaho military, with Governor as commander-in-chief 

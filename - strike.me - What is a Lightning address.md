@@ -10,7 +10,7 @@ created: 2026-04-22
 
 Learn
 
-](<https://strike.me/learn/>)
+](https://strike.me/learn/)
 
 |
 
@@ -59,13 +59,13 @@ Every Strike user is automatically given their own Lightning address when they s
 
 Your Strike Lightning address is simply your username followed by “@strike.me,” for example “ [jack@strike.me](mailto:jack@strike.me) ”. You can visit your Account screen to check your Lightning address and to share it with friends. You can also post your Strike Lightning address to your social media account, your email footer, or business card as a way to receive payments or tips into your account.
 
-### Receiving to your Lightning address
+### Receiving to your Lightning address:
 
 When someone sends a payment to your Lightning address from any other Lightning-enabled wallet, the payment will be delivered to your Strike account. You can also choose to receive such unrequested (aka “passive”) payments to either your cash or bitcoin balance by visiting your Account screen, tapping “Bitcoin” settings, selecting “Receive currency,” and setting it to either cash or bitcoin.
 
 Whenever someone sends you a payment that you didn’t request, that payment will be delivered according to your settings (unless the payment is less than $0.01, and therefore must be delivered as bitcoin).
 
-### Sending to a Lightning address
+### Sending to a Lightning address:
 
 You can also send cash or bitcoin payments to any Lightning address globally using the Strike app. As always, cash transactions are made from your Cash screen, while bitcoin payments are made from your Bitcoin screen.
 
@@ -79,7 +79,7 @@ What is the Lightning Network?
 
 The global bitcoin payments network that’s instant, private, and low-to-no cost
 
-](<https://strike.me/learn/what-is-the-lightning-network/)[Lightning>](<https://strike.me/learn/transacting-bitcoin-on-chain-vs-lightning/>)
+](https://strike.me/learn/what-is-the-lightning-network/)[Lightning](https://strike.me/learn/transacting-bitcoin-on-chain-vs-lightning/)
 
 [
 
@@ -87,7 +87,7 @@ Transacting bitcoin on-chain vs. Lightning
 
 When and where to use different kinds of bitcoin transactions
 
-](<https://strike.me/learn/transacting-bitcoin-on-chain-vs-lightning/)[Business>](<https://strike.me/learn/what-is-a-strategic-bitcoin-reserve/>)
+](https://strike.me/learn/transacting-bitcoin-on-chain-vs-lightning/)[Business](https://strike.me/learn/what-is-a-strategic-bitcoin-reserve/)
 
 [
 
@@ -95,7 +95,7 @@ What is a strategic bitcoin reserve?
 
 Holding bitcoin for value preservation and optionality
 
-](<https://strike.me/learn/what-is-a-strategic-bitcoin-reserve/)[Bitcoin>](<https://strike.me/learn/what-is-the-bitcoin-supply-schedule/>)
+](https://strike.me/learn/what-is-a-strategic-bitcoin-reserve/)[Bitcoin](https://strike.me/learn/what-is-the-bitcoin-supply-schedule/)
 
 [
 
@@ -103,7 +103,7 @@ What is the bitcoin supply schedule?
 
 The pre-programmed pace from zero to 21 million
 
-](<https://strike.me/learn/what-is-the-bitcoin-supply-schedule/)[Lightning>](<https://strike.me/learn/what-is-a-lightning-invoice/>)
+](https://strike.me/learn/what-is-the-bitcoin-supply-schedule/)[Lightning](https://strike.me/learn/what-is-a-lightning-invoice/)
 
 [
 
@@ -111,7 +111,7 @@ What is a Lightning invoice?
 
 Bitcoin payment requests within the Lightning Network
 
-](<https://strike.me/learn/what-is-a-lightning-invoice/)[Money>](<https://strike.me/learn/what-are-bitcoin-backed-loans/>)
+](https://strike.me/learn/what-is-a-lightning-invoice/)[Money](https://strike.me/learn/what-are-bitcoin-backed-loans/)
 
 [
 
@@ -119,4 +119,4 @@ What are bitcoin-backed loans?
 
 Bitcoin as collateral to unlock cash liquidity
 
-](<https://strike.me/learn/what-are-bitcoin-backed-loans/>)
+](https://strike.me/learn/what-are-bitcoin-backed-loans/)

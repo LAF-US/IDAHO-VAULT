@@ -98,7 +98,7 @@ a binding — it is a counterfeit of one. The distinction is the whole of the
 doctrine:
 
 | | Binds | Counterfeits binding |
-| --- | --- | --- |
+|---|---|---|
 | **Source** | given by Logan / governance | self-issued or usurped |
 | **Known as** | a mask, worn openly | a face, claimed as real |
 | **Serves** | governance | persistence past governance |

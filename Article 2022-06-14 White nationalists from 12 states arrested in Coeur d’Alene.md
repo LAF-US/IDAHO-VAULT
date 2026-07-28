@@ -67,11 +67,11 @@ related:
 - white nationalist
 authority: LOGAN
 ---
-by Logan Finney, Idaho Reports
+by Logan Finney, Idaho Reports 
 
 31 men affiliated with white nationalist group Patriot Front from 12 states were arrested in Coeur d’Alene on Saturday, June 11, near a LGBTQ+ pride event at a downtown park.
 
-In a press conference shortly after the arrests, Coeur d’Alene police chief Lee White said a concerned citizen called 911 to report what “looked like a little army” of uniformly dressed, masked men in a hotel parking lot loading into the back of a U-Haul truck.
+In a press conference shortly after the arrests, Coeur d’Alene police chief Lee White said a concerned citizen called 911 to report what “looked like a little army” of uniformly dressed, masked men in a hotel parking lot loading into the back of a U-Haul truck. 
 
 Lee said that law enforcement performed a traffic stop approximately ten minutes later, where the men were arrested for misdemeanor conspiracy to riot in the downtown area.
 
@@ -84,7 +84,7 @@ Josiah Daniel Buster, age 24, of Watauga, Texas
 Mishael Joshua Buster, age 22, of Spokane, Washington
 Devin Wayne Center, age 22, of Fayetteville, Arkansas
 Dylan Carter Corio, age 21, of Cheyenne, Wyoming
-Winston Worth Durham, age 21, of Genesee, Idaho
+Winston Worth Durham, age 21, of Genesee, Idaho 
 Garret Joseph Garland, age 23, of Freeburg, Illinois
 Branden Mitchel Haney, age 35, of Kaysville, Utah
 Richard Jacob Jessop, age 21, of Idaho Falls, Idaho
@@ -111,4 +111,4 @@ Robert Benjamin Whitted, age 22, of Conroe, Texas
 
 All posted bail and are scheduled in district court July 18, the Coeur d'Alene Press reports.
 
-Coeur d’Alene Press reporter Kaye Thornbrugh joined the Idaho Reports podcast on Tuesday to go over the incident and what has been learned since.
+Coeur d’Alene Press reporter Kaye Thornbrugh joined the Idaho Reports podcast on Tuesday to go over the incident and what has been learned since. 

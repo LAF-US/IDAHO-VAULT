@@ -4,4 +4,4 @@ related:
 - broadband
 authority: LOGAN
 ---
-Internet broadband provider companies
+Internet broadband provider companies 

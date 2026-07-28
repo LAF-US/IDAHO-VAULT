@@ -14,12 +14,11 @@ related:
   - lfinneytweets
 ---
 
-She’s holding up the form again. Can confirm (from like 10 feet away) it’s this one.
-<https://t.co/LhClgaVq0H>
+She’s holding up the form again. Can confirm (from like 10 feet away) it’s this one. 
+https://t.co/LhClgaVq0H
 
 ## Links
-
-- <https://x.com/lfinneytweets/status/1239687112942743552>
+- https://x.com/lfinneytweets/status/1239687112942743552
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

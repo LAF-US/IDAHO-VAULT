@@ -10,10 +10,10 @@ related:
 - STARBASE
 authority: LOGAN
 ---
-state military department headquartered at Gowen Field
+state military department headquartered at Gowen Field 
 
 - Idaho Army National Guard
-- Idaho Air National Guard
+- Idaho Air National Guard 
 - Office of Emergency Management
 - Public Safety Communications
 - Idaho Military History Museum

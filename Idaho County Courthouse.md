@@ -6,4 +6,4 @@ related:
 - magistrate court
 ---
 
-magistrate court Idaho County courthouse
+magistrate court Idaho County courthouse 

@@ -68,7 +68,7 @@ Cities say this cap will impact their ability to maintain city services because 
 
 ![Nampa Mayor Debbie Kling is concerned about the ramifications of House Bill 389, a new property tax law.](https://www.idahostatesman.com/public/latest-news/tj4vj3/picture251565103/alternates/FREE_1140/BOI_0523propertytaxlaw13)
 
-Nampa Mayor Debbie Kling is concerned about the ramifications of House Bill 389, a new property tax law. Sarah A. Miller <smiller@idahostatesman.com>
+Nampa Mayor Debbie Kling is concerned about the ramifications of House Bill 389, a new property tax law. Sarah A. Miller smiller@idahostatesman.com
 
 Legislators said the 90% cap on new construction, combined with the 8% cap on overall property tax revenue, will slow the growth of taxes on existing taxpayers. The city still collects the full property tax amount from new construction, so some of that money could reduce the amount needed from existing taxpayers.
 
@@ -90,7 +90,7 @@ City budget increases related to growth do not alone cause an increase in proper
 
 ![A vehicle enters the roundabout at Victory Rd. and Happy Valley Road. In areas of growth in Nampa, roundabouts are replacing congested intersections.](https://www.idahostatesman.com/public/latest-news/vrk19h/picture251579058/alternates/FREE_1140/BOI_0523propertytaxlaw31)
 
-A vehicle enters the roundabout at Victory Rd. and Happy Valley Road. In areas of growth in Nampa, roundabouts are replacing congested intersections. Sarah A. Miller <smiller@idahostatesman.com>
+A vehicle enters the roundabout at Victory Rd. and Happy Valley Road. In areas of growth in Nampa, roundabouts are replacing congested intersections. Sarah A. Miller smiller@idahostatesman.com
 
 To determine what the new construction property tax revenue is in a city’s budget, the city previously multiplied the taxable value of a construction project by the prior year’s levy rate. That formula has a small impact on existing taxpayers when overall property taxes are rising, said Eric Bilimoria, budget manager for Boise.
 
@@ -118,7 +118,7 @@ Nampa is going to focus more on its fiscal impact study when it comes to approvi
 
 ![New houses are under construction by Hubble Homes in a new Nampa subdivision called Franklin Village, seen here on May 19, 2021. Franklin Village was built on former farm land, and it is an example of area growth and the need for new housing in the Treasure Valley.](https://www.idahostatesman.com/public/latest-news/4p0t73/picture251565128/alternates/FREE_1140/BOI_0523propertytaxlaw01)
 
-New houses are under construction by Hubble Homes in a new Nampa subdivision called Franklin Village, seen here on May 19, 2021. Franklin Village was built on former farm land, and it is an example of area growth and the need for new housing in the Treasure Valley. Sarah A. Miller <smiller@idahostatesman.com>
+New houses are under construction by Hubble Homes in a new Nampa subdivision called Franklin Village, seen here on May 19, 2021. Franklin Village was built on former farm land, and it is an example of area growth and the need for new housing in the Treasure Valley. Sarah A. Miller smiller@idahostatesman.com
 
 Meridian Mayor Robert Simison voiced the same concerns in a work session on Tuesday about the law’s impact on the city. He said the city should be in decent shape in its ability to provide services to city residents, as long as Meridian does not take on additional growth in areas outside its plans.
 
@@ -130,7 +130,7 @@ Kling was looking forward to finally having enough money in the budget to build 
 
 ![Nampa Fire Chief Kirk Carpenter says this plot of land on Roosevelt Ave. will be the future site of Fire Station 6.](https://www.idahostatesman.com/public/latest-news/19xvnh/picture251579048/alternates/FREE_1140/BOI_0523propertytaxlaw22)
 
-Nampa Fire Chief Kirk Carpenter says this plot of land on Roosevelt Ave. will be the future site of Fire Station 6. Sarah A. Miller <smiller@idahostatesman.com>
+Nampa Fire Chief Kirk Carpenter says this plot of land on Roosevelt Ave. will be the future site of Fire Station 6. Sarah A. Miller smiller@idahostatesman.com
 
 The police department also will be affected, she said.
 
@@ -166,7 +166,7 @@ In 2016, Idaho lawmakers removed the indexing and capped the homeowner’s exemp
 
 ![For sale signs for residential development on cleared farm land and other vacant lots have popped up in growing areas of Nampa.](https://www.idahostatesman.com/public/latest-news/thngb4/picture251579073/alternates/FREE_1140/BOI_0523propertytaxlaw29)
 
-For sale signs for residential development on cleared farm land and other vacant lots have popped up in growing areas of Nampa. Sarah A. Miller <smiller@idahostatesman.com>
+For sale signs for residential development on cleared farm land and other vacant lots have popped up in growing areas of Nampa. Sarah A. Miller smiller@idahostatesman.com
 
 Local government leaders, like Kling, called for a much larger increase in the homeowner’s exemption. She supported a bill introduced by Rep. Bruce Skaug, R-Nampa, that would have raised the homeowner’s exemption and added indexing, but the bill never got a hearing.
 

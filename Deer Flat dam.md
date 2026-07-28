@@ -5,4 +5,4 @@ related:
 - Lake Lowell
 authority: LOGAN
 ---
-creates Lake Lowell in Canyon County
+creates Lake Lowell in Canyon County 

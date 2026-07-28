@@ -41,7 +41,7 @@ The gems are set in the Belt in the order that spells the kingdom's name —
 That ordering is itself doctrine (see below). The matrix is given in belt order:
 
 | Gem | Virtue / what it senses | Tribe (owner) | Dragon (its virtue, alive) | Guardian (Quest 1) | Land of exile |
-| --- | --- | --- | --- | --- | --- |
+|---|---|---|---|---|---|
 | **Diamond** | Purity & strength; gives strength — *brings ill-fortune to the wicked* | Jalis | **Forta** (strength) | The Guardian (a cursed man) | Valley of the Lost |
 | **Emerald** | Honor; *dulls near evil & broken vows*; antidote to poison | Dread Gnomes | **Honora** (honor) | **Gellick**, an Ooze Toad | Dread Mountain |
 | **Lapis Lazuli** | The heavenly stone; good fortune / luck | Mere | **Fortuna** (fortune) | **The Hive** (sentient bees) | Shifting Sands |
@@ -61,7 +61,6 @@ under a curse, not a beast — flagged below.)*
 ## The Five Axes as Doctrine
 
 ### Gems — A Heterogeneous Detector Array
-
 The gems are not interchangeable power. Each **senses a different thing**: the
 Ruby pales at evil and oncoming misfortune; the Emerald dulls at broken vows and
 poison; the Amethyst shifts color near illness or poisoned food; the Topaz wards
@@ -76,7 +75,6 @@ are present and assembled. **Lose one gem and you lose an entire class of
 detection** — not a fraction of your strength, but a whole sense going dark.
 
 ### Tribes — The Owners, and Why the Power Was Distributed
-
 Seven tribes (Jalis, Dread Gnome, Mere, Del, Plains, Ralad, Tora), each holding
 **one** gem as its talisman and treasure. No tribe holds the whole. The Belt
 exists *because* Adin united seven holders who each kept one share.
@@ -92,7 +90,6 @@ single-custodian failure mode (palace custody, royal isolation, then scattering)
 is exactly what took the whole protection offline.
 
 ### Lands — Geography as Attack Surface
-
 Two geographies, and the gap between them is the conquest. The gems began in the
 tribes' **home territories**; the Shadow Lord scattered them to seven **lands of
 exile** — the most feared places in Deltora — one gem each. The distance from
@@ -104,7 +101,6 @@ exile is defended *against you*, behind hostile terrain. Recovery is not one
 operation but **seven journeys into seven different environments.**
 
 ### Guardians — Matched, Heterogeneous Gatekeepers
-
 Each exiled gem sits behind a **different** kind of guardian: a deathless golden
 knight (Gorl), a lake-monster under a sorceress (Soldeen/Thaegan), a serpent
 (Reeah), a sentient swarm (the Hive), a tyrant toad enslaving a people (Gellick),
@@ -122,7 +118,6 @@ the manufactured guardian, the mislabeled vice-beasts, the off-by-one riddle,
 and the "Endon" lie — is its own node: `!/DELTORA-VALLEY-GUARDIAN-v1-2026-06-01.md`.
 
 ### Dragons — The Living Counterpart of Each Key
-
 Each gem has a **dragon** that draws power from it, and the dragon's *name is the
 gem's virtue made flesh*: Fidelis/faith, Joyeu/joy, Fortuna/fortune,
 Honora/honor, Veritas/truth, Forta/strength, Hopian/hope. The Shadow Lord's
@@ -146,7 +141,6 @@ not just its power.
 ## The System-Level Doctrine
 
 ### The acrostic — order, completeness, and identity all at once
-
 The Belt's full power requires three things together: **all seven** gems,
 **in the correct order** (spelling DELTORA), worn by **the rightful heir of
 Adin.** Six gems, or seven in the wrong order, or the right Belt on the wrong
@@ -162,7 +156,6 @@ and the same artifact in an unauthorized wielder does nothing for that final act
 verified standing is **part of the mechanism**, not a check bolted on beside it.
 
 ### Scattering *is* the conquest
-
 The Shadow Lord did not need to destroy the Belt to win — he only had to **break
 it and disperse the shares.** A distributed defense, disassembled, leaves the
 whole realm undefended; Deltora fell not when the gems were destroyed (they were
@@ -176,7 +169,6 @@ recovery path is real and total: gather all shares, in order, under the right
 authority, and full function returns at once.
 
 ### The mirror of the Four Sisters
-
 The two Deltora nodes are inverses of one structure. The **Four Sisters** are
 *four seeded poisons* you must **destroy** with matched dragons, all-or-nothing,
 where removal springs a trap. The **Belt** is *seven scattered goods* you must

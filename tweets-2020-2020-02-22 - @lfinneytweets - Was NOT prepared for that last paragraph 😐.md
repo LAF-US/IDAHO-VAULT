@@ -16,10 +16,9 @@ related:
   - lfinneytweets
 ---
 
-@thelocalhistory Was NOT prepared for that last paragraph 😐 <https://t.co/UbjRO89aBK>
+@thelocalhistory Was NOT prepared for that last paragraph 😐 https://t.co/UbjRO89aBK
 
 ## Media
-
 - ![](https://pbs.twimg.com/tweet_video_thumb/ERWmqDSUcAA2ncy.jpg)
 
 *In reply to [@thelocalhistory](https://twitter.com/thelocalhistory)*

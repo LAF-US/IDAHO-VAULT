@@ -5,4 +5,4 @@ related:
 - marijuana
 ---
 
-plant that is harvested for hemp and marijuana
+plant that is harvested for hemp and marijuana 

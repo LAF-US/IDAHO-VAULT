@@ -14,8 +14,8 @@ vault_location: C:\Users\loganf\Documents\IDAHO-VAULT\!\BOOK-OF-THE-BINDER-REFER
 - Work: The Magicians TV series
 - Episode: Season 4, Episode 11, The 4-1-1
 - First aired: April 6, 2019
-- Reference page: <https://themagicians.fandom.com/wiki/Binder>
-- Episode page: <https://themagicians.fandom.com/wiki/The_4-1-1>
+- Reference page: https://themagicians.fandom.com/wiki/Binder
+- Episode page: https://themagicians.fandom.com/wiki/The_4-1-1
 
 ## Canon Detail
 
@@ -27,6 +27,7 @@ Short excerpt retained for identification:
 
 > Hey, what's with the third-person, past tense bullshit?
 > The Binder had no idea what she was talking about
+
 
 ## Quote Couplet Encoding
 

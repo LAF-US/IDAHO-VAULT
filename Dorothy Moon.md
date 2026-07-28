@@ -7,7 +7,7 @@ related:
 authority: LOGAN
 ---
 Residence: Stanley
-
 - IDGOP chairwoman 2023-
-- Former House member from LD8 before unsuccessful bid for Secretary of State in 2022
-- wife of Darr Moon
+- Former House member from LD8 before unsuccessful bid for Secretary of State in 2022 
+- wife of Darr Moon 
+

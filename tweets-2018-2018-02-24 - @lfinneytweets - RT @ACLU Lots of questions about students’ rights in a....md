@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-RT @ACLU: Lots of questions about students’ rights in a walkout.
+RT @ACLU: Lots of questions about students’ rights in a walkout. 
 
 Here’s the gist: Your school can punish you for missing class, just like…
 

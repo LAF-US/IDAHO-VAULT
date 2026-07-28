@@ -15,11 +15,10 @@ related:
 ---
 
 "Trump's cologne smelled like a newly shampood rug. Felt as if he was standing right there."
-<https://t.co/186XgZ4bX1>
+https://t.co/186XgZ4bX1
 
 ## Links
-
-- <https://www.creators.com/read/lenore-skenazy/07/14/smell-you-later>
+- https://www.creators.com/read/lenore-skenazy/07/14/smell-you-later
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

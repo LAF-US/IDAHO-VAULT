@@ -29,7 +29,6 @@ This conversation (TASK: GitHub Agent Setup) investigated vault files and curren
 ### Deliverable
 
 **`!ADMIN/BRANCH-STATUS-2026-03-22.md`** — Comprehensive branch assessment including:
-
 - Status of each branch (ahead/behind/collision risk)
 - Recommended merge sequence
 - Known issues (artifacts, unbuilt workflows)
@@ -65,7 +64,6 @@ This conversation (TASK: GitHub Agent Setup) investigated vault files and curren
 ### ⚠️ Collision/Rebase Needed
 
 **`claude/levelset-current-synthesis-zWxJc`** (3 commits ahead)
-
 - **Problem:** Ancestor branch merged as PR #15, but this branch has 3 new commits
 - **Structural issue:** Uses obsolete `!ADMINISTRATION/` folder; main uses `!ADMIN/`
 - **Options:**
@@ -76,7 +74,6 @@ This conversation (TASK: GitHub Agent Setup) investigated vault files and curren
 ### 🗑️ Stale/Archive Candidates
 
 9 branches are 15+ commits behind main (idaho-scraper, fix-swarm-alert, various Copilot branches). These need:
-
 - Rebase if continuing work
 - Closure if superseded
 - Consolidation if duplicating effort
@@ -117,7 +114,6 @@ This conversation (TASK: GitHub Agent Setup) investigated vault files and curren
 ## Conversation Awareness
 
 This task operates in:
-
 - **Tier:** 1 (direct repo access, Claude Code)
 - **Scope:** Branch assessment and reporting only (no merges executed)
 - **Visibility:** No visibility into Copilot, other Claude Code conversations, or GitHub REST API (sandbox limitation)

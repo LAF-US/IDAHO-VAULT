@@ -16,10 +16,9 @@ related:
   - lfinneytweets
 ---
 
-@danielwinlander Check out that age bracket crosstab 👀 <https://t.co/RDcH2eL7kw>
+@danielwinlander Check out that age bracket crosstab 👀 https://t.co/RDcH2eL7kw
 
 ## Media
-
 - ![](https://pbs.twimg.com/media/EStwQqeUMAAo6sv.jpg)
 
 *In reply to [@danielwreporter](https://twitter.com/danielwreporter)*

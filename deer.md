@@ -10,4 +10,4 @@ related:
 ---
 
 animals, big game species
-mule deer, white-tailed deer
+mule deer, white-tailed deer 

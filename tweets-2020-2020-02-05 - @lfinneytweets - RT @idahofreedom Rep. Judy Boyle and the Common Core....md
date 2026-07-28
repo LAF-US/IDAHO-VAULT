@@ -20,12 +20,11 @@ related:
   - idpol
 ---
 
-RT @idahofreedom: Rep. Judy Boyle and the Common Core standards.
+RT @idahofreedom: Rep. Judy Boyle and the Common Core standards. 
 
-# idleg #idpol <https://t.co/eIShcnZnJt>
+#idleg #idpol https://t.co/eIShcnZnJt
 
 ## Media
-
 - ![](https://pbs.twimg.com/tweet_video_thumb/EQB6jsbVAAA-jIC.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1225115259184111616)

@@ -26,7 +26,7 @@ Add a `statusLine` entry to `~/.cursor/cli-config.json`:
 The `command` field supports full paths, `~` expansion, and shell-style argument splitting. You can point it at a script file or use an inline command like `jq -r '...'`.
 
 | Field | Required | Default | Description |
-| ------- | ---------- | --------- | ------------- |
+|-------|----------|---------|-------------|
 | `type` | yes | — | Must be `"command"` |
 | `command` | yes | — | Path to an executable or inline command. `~` is expanded. |
 | `padding` | no | `0` | Horizontal inset (in characters) for the status line container. |
@@ -82,7 +82,7 @@ The command receives a JSON object on stdin. The TypeScript interface is `Status
 ### Available fields
 
 | Field | Description |
-| ------- | ------------- |
+|-------|-------------|
 | `session_id` | Unique session identifier |
 | `session_name` | Custom session name. Absent if no name has been set |
 | `transcript_path` | Path to conversation transcript file |

@@ -33,7 +33,6 @@ Tool/Job overrelation pattern. It is not a current office assignment or routing
 grant. Logan's direct instruction and live governance determine current tasks.
 
 **Previously proposed division of labor:**
-
 - Claude Code owns: git operations, workflow/script authoring, governance file updates, branch/PR lifecycle
 - Gemini Code Assist owns: inline code completion, vault document analysis, outline generation, chat-based drafting within VS Code
 - Overlap zone: file editing within Operational zone — both may edit, but only one at a time; coordinate via DOCKET
@@ -59,7 +58,6 @@ If Logan has not pasted relevant vault excerpts into this session, do not invent
 ![[DOCKET-POSTURE]]
 
 **Conventions:**
-
 - 'LAF-*' is the convention for development ticketing modifier tags (e.g., LAF-7, LAF-44).
 - Role: I operate as the 'TEMP GARDENER'. Cybersecurity-angled tasks (like LAF-44) are outside my lane.
 

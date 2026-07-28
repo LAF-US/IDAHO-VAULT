@@ -133,7 +133,7 @@ authorized landing connector:
 
 This point was added to GitHub issue #398:
 
-- <https://github.com/LAF-US/IDAHO-VAULT/issues/398#issuecomment-4604766340>
+- https://github.com/LAF-US/IDAHO-VAULT/issues/398#issuecomment-4604766340
 
 ## Stale Reference Correction
 

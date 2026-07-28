@@ -12,7 +12,7 @@ created: 2026-04-06
 
 ## Pedestals concentrate power. They discourage dissent. What if we built Idaho community differently?
 
-## None of the people quoted on the walls of the Idaho Anne Frank Human Rights Memorial were perfect. Some caused real harm. The memorial does not ask us to pretend otherwise, write guest columnist Jess Westhoff and Christina Bruce-Bennion
+## None of the people quoted on the walls of the Idaho Anne Frank Human Rights Memorial were perfect. Some caused real harm. The memorial does not ask us to pretend otherwise, write guest columnist Jess Westhoff and Christina Bruce-Bennion.
 
 ![The Wassmuth Center for Human Rights](https://idahocapitalsun.com/wp-content/uploads/2024/10/IMG_4572-2048x1365.jpg)
 
@@ -63,4 +63,4 @@ Our stories may be republished online or in print under Creative Commons license
 
 Jess Westhoff, the education director for the Wassmuth Center for Human Rights, is an educator committed to co-creating inclusive and joyful spaces for people to share their stories, imagine new possibilities together, and join in partnership to build a community where we all belong and thrive. With a Bachelor of Arts in American Studies and English from the University of Idaho as well as a Master of Arts in Education from Stanford University, Jess has more than 20 years of experience teaching students of all ages. Jess is an Auschwitz Legacy Fellow and member of the Human Rights Educators USA Steering Committee.
 
-Christina Bruce-Bennion is the executive director of the Wassmuth Center for Human Rights in Boise. The Wassmuth Center, home of the Idaho Anne Frank Human Rights Memorial, is an educational nonprofit that works with learners of all ages to create communities that center dignity and belonging. For more information or to join programs, visit <www.wassmuthcenter.org>.
+Christina Bruce-Bennion is the executive director of the Wassmuth Center for Human Rights in Boise. The Wassmuth Center, home of the Idaho Anne Frank Human Rights Memorial, is an educational nonprofit that works with learners of all ages to create communities that center dignity and belonging. For more information or to join programs, visit www.wassmuthcenter.org.

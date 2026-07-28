@@ -23,7 +23,7 @@ Keith Bybee is the LSO Staff Director / Budget and Policy Analysis who staffs bo
 ## Basic Info
 
 - **Role:** LSO Staff Director, Budget and Policy Analysis
-- **Email:** <JBybee@lso.idaho.gov>
+- **Email:** JBybee@lso.idaho.gov
 - **Committees staffed:** JFAC and EORAC
 
 ## Bybee Incident (March 2024)

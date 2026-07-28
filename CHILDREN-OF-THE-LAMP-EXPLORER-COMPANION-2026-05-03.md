@@ -43,3 +43,4 @@ That maps well to the current vault problem set:
 If the vault is a music box, then the lamp is not decorative. It is the place where the spirit can be reliably held, named, and re-invoked without collapsing the distinction between shell and occupant.
 
 That makes *Children of the Lamp* useful as a source of metaphysical vocabulary, not just fantasy trivia.
+

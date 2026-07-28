@@ -5,4 +5,4 @@ related:
 - Shoshone County
 authority: LOGAN
 ---
-former Shoshone County Sheriff
+former Shoshone County Sheriff 

@@ -6,4 +6,4 @@ related:
 - Reclaim Idaho
 authority: LOGAN
 ---
-Reclaim Idaho Medicaid Expansion ballot initiative
+Reclaim Idaho Medicaid Expansion ballot initiative 

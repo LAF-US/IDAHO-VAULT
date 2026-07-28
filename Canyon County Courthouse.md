@@ -5,4 +5,4 @@ related:
 - magistrate court
 ---
 
-magistrate court Canyon County courthouse
+magistrate court Canyon County courthouse 

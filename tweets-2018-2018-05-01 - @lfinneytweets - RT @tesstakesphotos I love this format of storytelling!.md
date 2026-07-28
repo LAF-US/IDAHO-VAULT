@@ -17,10 +17,9 @@ related:
 
 RT @tesstakesphotos: I love this format of storytelling!
 
-<https://t.co/a9ffqAHOLn>
+https://t.co/a9ffqAHOLn
 
 ## Links
-
-- <https://nyti.ms/2Kp8E7t>
+- https://nyti.ms/2Kp8E7t
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/991369844648919041)

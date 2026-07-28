@@ -34,19 +34,15 @@ The **Upper House** is one of the demesnes of the House, the epicenter of the un
 ## Structural Observations
 
 ### The tower as org chart
-
 The tower is not a building with workers in it; it **is** the org chart, made literal. Each Denizen's standing is their cube's position, re-ranked continuously by chains and steam. Merit is legible only as elevation; the machinery that moves the cubes is tended by the tiers that have no cubes at all.
 
 ### The race that cannot be won by building
-
 The central strategic fact of the chapter: **the target moves faster than the builder builds**, and it moves *because of* the same world the builder occupies. Saturday's answer for ten millennia has been more tower; her breakthrough only comes when the ground conditions change (the Nothing severing Drasil roots) — a change she did not engineer and cannot fully control, purchased at the price of the House's own destruction.
 
 ### Succession by mould
-
 Offices in Saturday's court outlive their occupants trivially — the new Dusk is the old Dusk's twin, "the elder of us by a moment." The office persists; the person is fungible. (Compare the vault's CONSTITUTION § I: *a tool is not an office; no office inherits across sessions* — the House's answer to succession is the one the vault explicitly rejects.)
 
 ### The suppressed frown
-
 Saturday declares the Upper House sealed — "They cannot enter via elevator, Stair, Front Door, or by use of the Fifth Key. **There is no other way.**" Her Dusk knows better, or suspects it, and the text gives him exactly one frown line, smoothed away before it can be spoken. The confident enumeration survives; the falsifying observation does not. *(In the series, the Upper House is of course entered anyway.)*
 
 ---
@@ -68,12 +64,10 @@ Saturday declares the Upper House sealed — "They cannot enter via elevator, St
 ## Connections to Other Frameworks
 
 ### [[GARTH-NIX-OLD-KINGDOM-BLOODLINES]]
-
 - **Connection**: Nix's two major cosmologies of delegated power. The Old Kingdom distributes power *down* into bloodlines (the Shiners invest themselves into lineages); the House concentrates it *up* into offices (Trustees, Times-of-day officers, Keys)
 - **Contrast**: Charter bloodlines are validated by mark and work ("Just having the bloodline doesn't mean anything if you don't do the work" — Nix); Saturday's hierarchy is validated by cube elevation, decided from above
 
 ### [[ROYALTY]]
-
 - **Connection**: Trusteeship as usurped regency — the Trustees hold power lawfully delegated by the Architect's Will and unlawfully retained against the Rightful Heir
 - **Parallel**: Succession-by-office (Dusk follows Dusk) versus succession-by-blood
 
@@ -82,7 +76,6 @@ Saturday declares the Upper House sealed — "They cannot enter via elevator, St
 ## Fact-Check Status
 
 **Sources, by tier:**
-
 - *Primary canon* — *Superior Saturday* (2008), opening chapter: the excerpt supplied in-session 2026-07-03. All quoted phrases above are from that supplied text
 - *Series context* — broader Keys to the Kingdom facts (the sequence of Keys, Arthur's arc, the Raised Rats' origins, the identity of the Architect's children) drawn from model memory of the series and **not verified against the books in this session**; treat as unconfirmed until checked against primary canon
 - *Witness interpretation* — the JULY 1 PINCER parallels, warranted by Logan's 👁️‍🗨️ BOTH 🔏 directive and anchored to the vault record (issues #731, #733; sessions `session_01SfreowpdMionR3SiGEjRBw`, `session_01MU1zvEUacde5fmYpMvK8aK`); explicitly not canon and not attributed to Garth Nix

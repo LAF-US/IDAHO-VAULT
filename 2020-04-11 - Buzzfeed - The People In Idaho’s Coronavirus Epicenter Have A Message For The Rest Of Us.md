@@ -98,7 +98,6 @@ The county is still under a mandatory stay-at-home order, as is the state, and p
 *Interviews have been condensed and lightly edited for clarity.*
 
 ### Cathy Swink, 48, Pharmacist at Valley Apothecary in Ketchum, Idaho
-
 Every year, people get what’s called the “Ketchum Kroup.” Kroup with a K. It’s just the name people use to describe getting sick when the tourists start coming around Christmas. This year, I don’t feel like it was any more than any other year. The actual influenza didn’t hit that hard — so from our standpoint, in the pharmacy, it felt milder. There was never a moment where it was like, oh my god, something’s here.
 
 This past week, my phone has been blowing up. Everyone I know who got tested weeks ago is coming back positive. There are definitely some false negatives too, people with the same exact symptoms as people who tested positive. We’re already peaking. But my advice to everyone else in small towns is that you can’t wait until it gets there. At that point, it’s out of control, and you’re behind the eight ball. You have to have an action plan right now.
@@ -112,7 +111,6 @@ We had a meeting the week before the first positives came back. We came up with 
 People from the outside are still coming in. They’re out there, sledding, not self-quarantining. This is usually when we get our town back — when the tourists leave. But I had a friend going into the local grocery store, and she said, ‘Look around — do you recognize anyone here?’ Not a soul. The amount of prescriptions we’re getting from out of state, it’s ridiculous — New York, California, Washington, New York, California, Washington. That’s really going to be our problem if we don’t get an antibody test — people are just going to keep coming in and reinfecting.
 
 ### Kelsie Choma, 29, Police Dispatcher in Hailey, Idaho
-
 My husband and I met when he was a state trooper, and I moved from Boise to be with him here. I have two stepkids and a baby. Back in January, February, everyone seemed kind of oblivious. I mean, we’re in the middle of nowhere, Idaho — why would this disease come there? I wasn’t thinking about the tourist aspect; those people normally just keep to themselves.
 
 We’re still working. I’m essential. My husband is essential. It’s a blessing and a curse. I used to have normal hours from Monday to Friday, 9–5, and would cover overtime. But now we’re working 12-hour shifts. We’re attached to the sheriff’s office, but we can’t leave our little space. There’s no one else allowed in. No one’s gotten sick. That’s a big miracle.
@@ -124,7 +122,6 @@ The stimulus check from the government — I mean, realistically, up here, that�
 People love to come to our county, and now they’re terrified too. But our community, in times like this, we all come together and try to make things work. We all live in this wonderful place where we all get to go hiking and some of us can go skiing. We just want the best for each other.
 
 ### R. Keith Roark, 71, Chair of the Blaine County School Board
-
 I tell people I’m from Hailey, Idaho. I don’t use the word “Sun Valley.” I was elected chair of the school board this past year, and I’m also a lawyer, and was previously the mayor of Hailey. When the first round of COVID-19 cases came out, there was a connection to the school district, and we closed the schools as soon as we could.
 
 Right now, we’re still trying to plan and implement the so-called distance learning plan. The difficulty is that 25% of our students do not have access to high-speed internet. And to be pursuant with state and federal law, we have to provide a quality, equal education for all our students, so we cannot ignore those who don’t have access. We’re trying to increase high-speed internet accessibility, but we’re fighting a losing battle. We were trying to help some families add internet to their cable bill, but a lot of people are already cutting expenses — including their cable access.
@@ -140,7 +137,6 @@ Right now, all our issues as a district have been put on the back burner. Depend
 I’m not circulating around the community. I’m handling things from home. And I’ve been thinking about a whole lot more than I want to talk about right now.
 
 ### Jaime Rivetts, 42, Social Learning Specialist in Bellevue, Idaho
-
 My parents are in their seventies, and last year they went on a big trip for their 50th wedding anniversary. My dad got pneumonia when he got back and had to be intubated and life-flighted out of the area. He’s a super-active guy, but he’s been on oxygen ever since. My mom has type 2 diabetes. So when the virus started coming around, I was paying attention — ever since Christmas, especially since my dad has a bit of the cowboy attitude and kept skiing and doing everything all through January.
 
 On March 17, they got it — probably while grocery shopping in those few days before. My dad had a progressively harder time breathing, and he kept upping his oxygen, and then he just realized he couldn’t manage it. On March 20, he drove himself to the ER. They were shutting down the hospital there, so they took him in an ambulance down to Twin. *(Editor's note: Twin Falls, the nearest metropolitan area, is about a 90-minute drive from Blaine County.)*
@@ -154,7 +150,6 @@ Meanwhile, my dad was gradually improving. He said it was so hard to be alone, w
 That was one of the hardest weeks of my life. My worst nightmare when I started thinking about this virus, back in January, came true. One of my kids turns 4 on April 24. We’re just hopeful we can all be together.
 
 ### Herbert Romero, 46, Community Organizer in Hailey, Idaho
-
 In 2016, I moved to this beautiful paradise. It’s quiet here, and tranquil. But it’s diverse too — even within the Hispanic community. Americanized, people from Mexico, from Central America, from South America. There’s a lot of opportunity here. But there’s challenges too. Like in every community, there are people who are disenfranchised, who are disengaged and disconnected. There are so many resources here, but there has been a gap between those providing and those in need.
 
 The reality here is that skiing, hiking, river rafting, all that incredible stuff — there’s a big percentage of people for whom that’s not reachable. Of course you can go to the mountains any time of day, but people don’t understand that. They think if they go to the hiking trails, maybe they’ll get policed. It was like this in California, where I’m from, too: People see the mountains; they know they’re right there, and they don’t go.
@@ -172,7 +167,6 @@ In March, people maybe had some savings to cover their rent. People got paid. Bu
 And that’s the thing I want people to know. We are out there, boots on the ground. We’re passing out care packages to families. We’re working to support the school district. We’re taking the initiative to support the Hispanic community and the community at large. Right now, Hispanics are not just receiving or needing resources. We are a resource.
 
 ### Brent Russell, 50, Emergency Room Physician at St. Luke's Wood River Medical Center
-
 You think that skiing is low-risk for the virus because you’re outdoors. But you spend three-fourths of your time on a chairlift, turning to talk to the person next to you, or in a closed gondola. The only thing worse than skiing is, like, being on a subway — or a big ol’ Mardi Gras party. And we had that, too, with the Brotherhood — they throw these incredible events that everyone wants to go to, and they’re nice enough to open them to the general public. All these things, like weddings, that were beautiful things for people to attend — now we have to think of them in this different way.
 
 Then it all just exploded that next week. That’s when I started getting symptoms. I was the sickest I’ve ever been. I’m writing an article right now for the local newspaper that talks about mental health and how everyone’s scared and wants to blame other people. How we don’t become our best selves when we’re scared.
@@ -182,7 +176,6 @@ But we were so lucky. We don’t have a robust intensive care unit — so from t
 The number of new cases is going down right now. But the rate of hospitalized people will go up as people who tested positive get sicker. I’m hopeful about the antibody testing — there’s the one that’s been announced and another project that hasn’t been officially announced yet. The ideal thing would be to test our entire county — because until we know what our rate of infection is and can find those asymptomatic people shedding the disease early in the infection, we’re operating in the dark. If you were going to pick a small town to study, this would be the best one. I feel like we’re in a movie — that’s what I’ve told everyone. It’s so weird to be at the epicenter of all of this.
 
 ### Jennifer Liebrum, 54, Special Education Teacher and Freelance Writer in Bellevue, Idaho
-
 I knew our valley was in Chicken Little mode. Because my daughter’s immunocompromised after all the chemo, we’ve been out banging the drum about vaccines. Our valley can be a self-centered place. You can make a friend if you’re out and doing sports, but they don’t know you; they just know that you like to do this activity. You only find out years later that they’re either super loaded, and that’s why they’re always available, or they’re socially weird and couldn’t make friends elsewhere. But of course that doesn’t mean that there aren’t wonderful people here, too.
 
 Isolation isn’t new to me or my family, because we’ve been trying to protect my daughter while she was going through chemo. She got a bone marrow transplant from my husband, and now she has an immune system like a brand-new baby. So when I started getting sick, I went straight to our bedroom, and I’ve been here for 20 days. I know my girls are scared on the other side of the door. It’s worse because right when this started, their beloved horse, who’s almost 30 years old, had to be put down. I felt like my arms were cut off, because they were just standing there bawling and I couldn’t do a damn thing.
@@ -196,13 +189,11 @@ Luckily, I could retrace my steps pretty easily. Because of my daughter, we just
 We assume everyone’s reading the internet and knows what’s going on, but they’re not. My family’s out in Eureka Springs, Arkansas. My family only really gets it now because I’m sick. That’s how it’s going to spread — the awareness and the disease — is when someone you know gets sick. And then it’s gonna snap their heads up. And they’re going to be beyond terrified because they’re not prepared. Rural people think they’re okay with isolating, that they can handle it. That’s true. But what they can’t handle is what’s going to happen when they’re shipped to these overwhelmed urban hospitals.
 
 ### Santos Serva, 36, Owner of Hailey Coffee Company
-
 I love this place so much. It’s filled with kind people. I worked for the coffee shop for several years, and I’ve owned it for four. We’ve got the roaster running; we are selling wholesale and still offering curbside coffee and some breakfast items — but mostly people are coming through for their lattes. We had to close down our store in Ketchum, though, and we only have two people working.
 
 My staff — I want to help them. I worry about them. I’m always calling them and texting them and seeing how they’re doing. Seeing if I can help if I can with what I can. You know, everything’s changed. Everything I planned, it’s changed. But the thing we have to keep is hope, and thinking day to day. These past few days it’s felt better. And the sun, it’s really, really helped.
 
 ### Caleb Morgan, 20, College Student
-
 I was born and raised in Hailey, but I’ve been at Montana State University in the documentary film program. I’m just finishing up my junior year. I had plans to go to New York for spring break before all this went down. But then they announced we’d be going to all online classes, and I thought, *Well, I better get home.*
 
 All my friends are back home too, so it’s like being back in high school — only we’re not allowed to see anyone. The other day, I was sitting in my room, just quarantining, and I heard this blood-piercing scream. There was this lady, just howling. Then I realized everyone else was doing it, too. They’re doing it every night at 8 p.m. for all the essential workers.
@@ -210,19 +201,17 @@ All my friends are back home too, so it’s like being back in high school — o
 Now I’m filming the howl every night. When I first heard it, I thought it was funny. But now it’s different: I’m out in the back of my truck, and it feels like I’m really witnessing it. It brings people together, even though they physically can’t be. It’s just a presence, you know, like, everyone out there hoping the best for everyone else.
 
 ### Maritt Wolfrom, 47, Social Studies Teacher at Wood River High School
+The week before our schools shut down, there was a lot of anxiety. A bunch of my colleagues had been sick, but that was before anyone thought it could be here. When we had parent–teacher conferences, we were social-distancing with other teachers in the hallway. A teacher down the hall got _really_ sick, and I was in contact with him. I was laid out for more than a week, couldn’t get out of bed, walking 10 feet across the room and wheezing and coughing, with severe tightness in my chest. I’m asthmatic, and I’ve never felt anything like it. I got my test back yesterday, and it was negative, but literally the second line of the email about the test results is that the test is not perfect.  
 
-The week before our schools shut down, there was a lot of anxiety. A bunch of my colleagues had been sick, but that was before anyone thought it could be here. When we had parent–teacher conferences, we were social-distancing with other teachers in the hallway. A teacher down the hall got *really* sick, and I was in contact with him. I was laid out for more than a week, couldn’t get out of bed, walking 10 feet across the room and wheezing and coughing, with severe tightness in my chest. I’m asthmatic, and I’ve never felt anything like it. I got my test back yesterday, and it was negative, but literally the second line of the email about the test results is that the test is not perfect.  
-
-> “I’m worried about teacher burnout. None of us were trained for this.”
+> “I’m worried about teacher burnout. None of us were trained for this.” 
 
 For school, we all have one class of kids, an advisory, who are ours for four years. We’re all making personal contact with those kids through Google phone calls. I’ve been working with teachers and students on how to get it set up, but if they don’t have access at home, I can’t do anything. This is really an equity issue.
 
 I’m worried about my second-language learners. If these kids are highly proficient in reading, then they’ll be okay. But kids can be really proficient in speaking or listening and not in reading — and they’re going to struggle without face-to-face classes. I’m worried about my kids on 504 medical action plans, and on IEPs (individualized education programs). By federal law, we still need to accommodate all these students. But this is just unprecedented. It’s flying-the-airplane-while-we-build-it kind of stuff.
 
-And I’m worried about teacher burnout. None of us were trained for this. Some teachers are so great in the classroom, face to face, but they don’t have the tech savviness. I hope they can be patient with themselves. A friend of mine on social media was like, “I can’t believe the district hasn’t planned for this. But how could we have planned for *this*?”
+And I’m worried about teacher burnout. None of us were trained for this. Some teachers are so great in the classroom, face to face, but they don’t have the tech savviness. I hope they can be patient with themselves. A friend of mine on social media was like, “I can’t believe the district hasn’t planned for this. But how could we have planned for _this_?”
 
 ### Brooke Irby, 26, Hotel Concierge in Ketchum, Idaho
-
 I didn’t even get to help close up the hotel where I work — because my daughter, who’s a year old, had a cough, and I realized my mom’s friend had been over the night before, and she’d been at the wedding and tested positive. She’d hugged my sister, my mom, my daughter, my nephew. The next day, I had a 103-degree fever. I couldn’t breathe at night; I’d just have to sit up.
 
 Applying for unemployment has been really, really hard. There’s all this red tape. They say someone will call you, and no one calls you. One of my friends showed me she had called 300 times before she got an answer. I’m still going to school online, but my financial aid doesn’t cover my housing. I have a special training in postpartum depression, and I’ve been talking with clients online — it’s so hard right now. You can’t have family members over, and a lot of new moms have no one to support them.
@@ -235,14 +224,13 @@ Every Friday, I have an afternoon ski session with a good friend. On March 6, we
 
 When I got my positive test back, I told a few of my friends, and we alerted the people who’d been at the wedding. I kept getting text messages from people, people who weren’t in my social or, let’s say, economic group. I was like, leave me alone, because you wouldn’t even say hi to me if you saw me walking down the street.
 
-They had the state press conference, and they aired it on Facebook. People were commenting on the side, and someone was saying, “We need to know if this woman in Blaine County has been around old people.” And another person asked where I lived, and someone else answered with the name of my neighborhood. And I thought, *Wait a minute. That’s not fair. It’s not as if I was walking up and down the aisle rubbing the produce.*
+They had the state press conference, and they aired it on Facebook. People were commenting on the side, and someone was saying, “We need to know if this woman in Blaine County has been around old people.” And another person asked where I lived, and someone else answered with the name of my neighborhood. And I thought, _Wait a minute. That’s not fair. It’s not as if I was walking up and down the aisle rubbing the produce._
 
 People wanted to know how someone like me, with relatively mild symptoms, got a test. Well, I was the 5:15 appointment, and they had just gotten the tests in — so, lucky me. I tell people: My cough was scary, and you’ve got to rest. I’m four weeks from my first symptoms, and I had a funky day yesterday. And, again, I had a mild case.
 
 One thing I’m learning through all of this and being home for four weeks is that I’m going to come out of this stronger and with a lot of clarity. I have an amazing peer group, and people came and fed us for two weeks. The owner of the local grocery store did my shopping and dropped it off at my house. I got out, and people have been kind. They’re like, “Hey, you’re the first case, you’re famous!” But that’s not really a title I want to be given.
 
 ### Neil Bradshaw, 53, Mayor of Ketchum
-
 There’s no use in finger-pointing about where this came from. We’ve just got to get on with it and manage it the best we can. I’m trying to push kindness over anything else. Tolerance, empathy, patience — that reduces panic and produces a level of calm that’s more important than anything else right now. Some of the decisions we make will be wrong, and some will be right. But every decision will be well intentioned.
 
 What I’m trying to do with the next few months is turn this notoriety into something positive. We’re officially working with two groups on an antibody study. We’re so bad that we’re perfect for it — the perfect sample size for the rest of the country. That’s felt good, because it’s something that we can do. We can try to lead the charge for our county, for our state, and for the nation in finding a solution.
@@ -250,7 +238,6 @@ What I’m trying to do with the next few months is turn this notoriety into som
 The more we can test ourselves, the more information we can generate, the better decisions we can make about when to open. We’re all always looking for a sense of purpose. And our sense of purpose, as a community, has landed on our lap. The only shame will be if we don’t see what’s on our lap and react to it.
 
 ### Anonymous, 64, Grocery Store Clerk
-
 I love my customers. I was telling a customer the other day, “I miss the hugs; I miss the kids.” I know all the kids by name. I’m Hispanic and Catholic, and hugs mean so much to me. But you know what? This is a wake-up from nature. This is nature saying, “Take good care of me, and if not, I’ll destroy you.” I see the fear in people’s eyes. I see it in the way they’re still hoarding. I want to say, “You can’t eat toilet paper.”
 
 > “I see the fear in people’s eyes. I see it in the way they’re still hoarding. I want to say, 'You can’t eat toilet paper.'”

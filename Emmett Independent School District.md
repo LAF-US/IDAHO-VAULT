@@ -4,4 +4,4 @@ related:
 - Gem County
 authority: LOGAN
 ---
-Emmett, Gem County
+Emmett, Gem County 

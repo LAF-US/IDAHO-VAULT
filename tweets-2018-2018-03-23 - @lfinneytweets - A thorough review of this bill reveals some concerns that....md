@@ -13,10 +13,9 @@ related:
   - lfinneytweets
 ---
 
-"A thorough review of this bill reveals some concerns that warrant further review during the next legislative session," Otter said. He did not veto the bill, allowing it to become law without his signature. <https://t.co/Thv1pOmtoR>
+"A thorough review of this bill reveals some concerns that warrant further review during the next legislative session," Otter said. He did not veto the bill, allowing it to become law without his signature. https://t.co/Thv1pOmtoR
 
 ## Links
-
-- <https://x.com/IdahoStatesman/status/976627223808565248>
+- https://x.com/IdahoStatesman/status/976627223808565248
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/977030798485241856)

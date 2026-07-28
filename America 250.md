@@ -5,4 +5,4 @@ aliases:
   - America's Semiquincentennial
   - 250th anniversary
 ---
-250th Anniversary of [[the United States]] [[Declaration of Independence]]
+250th Anniversary of [[the United States]] [[Declaration of Independence]] 

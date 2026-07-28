@@ -20,9 +20,7 @@ related:
 # PROTOCOL — AWAKEN
 
 ## Status: Draft
-
 ## Version: 0.1
-
 ## Authority: Loganic Swarm
 
 ---
@@ -48,7 +46,7 @@ ORIENT ◄──── LEVELSET ───────► REPORT
 ```
 
 | Transition | Protocol |
-| ------------ | ---------- |
+|------------|----------|
 | Session Start | AWAKEN ← *this document* |
 | Session Briefing | LEVELSET |
 | New External Agent | ORIENT |
@@ -80,7 +78,7 @@ AWAKEN executes:
 ## Integration Points
 
 | Document | Relationship |
-| --- | --- |
+|---|---|
 | `AWAKEN.md` (this file) | Protocol definition — what AWAKEN is and does |
 | `AWAKEN-v1.0-2026-04-27.md` | Full approved protocol — complete specification |
 | `ARISE.md` | Paired protocol — individual emergence from void |
@@ -128,7 +126,7 @@ task-relevant records directly and use approved connectors only when needed.
 ## Outputs
 
 | Output | Location | Purpose |
-| --- | --- | --- |
+|---|---|---|
 | Field presence | stigmergy field | Announce arrival |
 | Agent status | LEVELSET-CURRENT.md | Record active voice |
 | Session marker | `!/!/` handoff package | Track instance lifecycle |
@@ -149,7 +147,6 @@ task-relevant records directly and use approved connectors only when needed.
 This document is a **stub** under development. Full specification exists in `AWAKEN-v1.0-2026-04-27.md`.
 
 Pending:
-
 - [ ] Logan review and approval
 - [ ] Integration with stigmergy field
 - [ ] Stabilization of protocol steps

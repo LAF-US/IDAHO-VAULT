@@ -19,7 +19,6 @@ This document provides a comprehensive breakdown of major agent communication pr
 **Purpose:** Cross-framework agent interoperability standard
 
 **Key Characteristics:**
-
 - REST-based, supports all modalities (text, image, audio, video, binary)
 - Sync/async communication
 - Streaming interactions
@@ -31,14 +30,12 @@ This document provides a comprehensive breakdown of major agent communication pr
 **Governance:** Open standard under Linux Foundation (recently merged with A2A governance)
 
 **Key Features:**
-
 - No SDK required — works with curl, Postman, or browser requests
 - MIME-type extensibility for any data format
 - Async-first design with full sync support
 - Offline discovery via metadata embedded in distribution packages
 
 **Use Cases:**
-
 - Flexible agent replacement (swap agents without modifying integrations)
 - Multi-agent collaboration (specialized agents working as teams)
 - Cross-platform integration (marketing, analytics, dev tools)
@@ -47,10 +44,9 @@ This document provides a comprehensive breakdown of major agent communication pr
 **Reference Implementation:** BeeAI platform
 
 **Resources:**
-
-- Official Site: <https://agentcommunicationprotocol.dev/>
-- GitHub: <https://github.com/i-am-bee/acp>
-- OpenAPI Spec: <https://github.com/i-am-bee/acp/blob/main/docs/spec/openapi.yaml>
+- Official Site: https://agentcommunicationprotocol.dev/
+- GitHub: https://github.com/i-am-bee/acp
+- OpenAPI Spec: https://github.com/i-am-bee/acp/blob/main/docs/spec/openapi.yaml
 
 ---
 
@@ -61,38 +57,32 @@ This document provides a comprehensive breakdown of major agent communication pr
 **Key Concept:** Inspired by ant colony stigmergy — agents leave "digital pheromones" on a shared blackboard instead of communicating directly.
 
 **Core Mechanics:**
-
 - Signal Intensity: Agents post signals with varying strengths
 - Decay Curves: Signals fade over time/interaction to prevent clutter
 - Decoupled Awareness: Agents sense the blackboard and react autonomously
 
 **Architecture:**
-
 - No centralized orchestrator
 - No direct agent-to-agent messaging
 - Shared blackboard as coordination medium
 
 **Relationship to Other Protocols:**
-
 - Complements MCP — MCP answers "What tools can I use and what data can I see?" while SBP answers "What is the current state of the collective task and where is my help needed?"
 
 **Implementation:**
-
 - Reference Server: `@advicenxt/sbp-server` (TypeScript)
 - SDKs: TypeScript, Python
 - Pluggable Storage: in-memory, Redis, SQLite
 - DevOps Ready: OpenAPI 3.1 spec, Docker support
 
 **Use Cases:**
-
 - Production-ready for non-linear workflows
 - Scalable, fault-tolerant multi-agent systems
 - Dynamic task pickup without explicit handoffs
 
 **Resources:**
-
-- GitHub: <https://github.com/AdviceNXT/sbp>
-- Article: <https://dev.to/naveentvelu/introducing-sbp-multi-agent-coordination-via-digital-pheromones-2j4e>
+- GitHub: https://github.com/AdviceNXT/sbp
+- Article: https://dev.to/naveentvelu/introducing-sbp-multi-agent-coordination-via-digital-pheromones-2j4e
 
 ---
 
@@ -105,7 +95,6 @@ This document provides a comprehensive breakdown of major agent communication pr
 **Architecture:** Client-Server (JSON-RPC 2.0)
 
 **Core Components:**
-
 - Client (Host): Manages connections to MCP Servers, orchestrates requests
 - Server: Provides context + capabilities:
   - Tools: Model-controlled (LLM invokes external APIs)
@@ -114,27 +103,23 @@ This document provides a comprehensive breakdown of major agent communication pr
   - Sampling: Server-controlled (delegates LLM text generation to client)
 
 **Lifecycle:**
-
 1. Initialization: Protocol version negotiation, capability exchange
 2. Operation: JSON-RPC method calls + notifications
 3. Shutdown: Transport layer closure, resource cleanup
 
 **Strengths:**
-
 - Simple, well-documented
 - Tight LLM integration
 - Growing community
 
 **Gaps:**
-
 - Lacks streaming
 - Lacks memory
 - Lacks asynchronous execution
 
 **Resources:**
-
-- Official Site: <https://modelcontextprotocol.io/>
-- Specification: <https://modelcontextprotocol.io/specification/2025-06-18/>
+- Official Site: https://modelcontextprotocol.io/
+- Specification: https://modelcontextprotocol.io/specification/2025-06-18/
 
 ---
 
@@ -147,7 +132,6 @@ This document provides a comprehensive breakdown of major agent communication pr
 **Architecture:** P2P using Agent Cards (HTTP)
 
 **Key Characteristics:**
-
 - Focuses on enterprise task delegation and inter-agent negotiation
 - Message format: Task + Artifact (JSON)
 - Identity: DID-based handshake
@@ -165,7 +149,6 @@ This document provides a comprehensive breakdown of major agent communication pr
 **Architecture:** Decentralized P2P using DIDs (Decentralized Identifiers)
 
 **Key Characteristics:**
-
 - Identity: Decentralized Identifiers (DID: `did:wba`)
 - Discovery: Search engine or `.well-known/` endpoints
 - Message Format: JSON-LD + Schema.org
@@ -173,13 +156,11 @@ This document provides a comprehensive breakdown of major agent communication pr
 - Stateless (DID-auth tokens)
 
 **Use Cases:**
-
 - Open-internet agent marketplaces
 - Trustless identity
 - AI-native negotiation
 
 **Strengths:**
-
 - Trustless identity
 - AI-native negotiation
 - Open-internet scale
@@ -191,7 +172,7 @@ This document provides a comprehensive breakdown of major agent communication pr
 ## Comparative Analysis
 
 | Aspect | MCP | ACP | A2A | SBP | ANP |
-| -------- | ----- | ----- | ----- | ----- | ----- |
+|--------|-----|-----|-----|-----|-----|
 | **Architecture** | Client-Server (JSON-RPC) | Brokered Client-Server (Registry) | Peer-to-Peer (Agent Cards) | Blackboard | Decentralized P2P (DIDs) |
 | **Discovery** | Manual/Static URL | Registry-based | Agent Card (HTTP) | Shared Blackboard | Search Engine / `.well-known/` |
 | **Identity & Auth** | Token-based (+DIDs optional) | Bearer Tokens, mTLS, JWS | DID-based handshake | Pluggable (Redis, SQLite) | Decentralized Identifiers (DIDs) |
@@ -207,31 +188,26 @@ This document provides a comprehensive breakdown of major agent communication pr
 ## Strategic Recommendations for IDAHO-VAULT
 
 ### For Agent Communication Layer
-
 - **ACP** is the most mature and feature-complete for direct agent-to-agent communication
 - Supports streaming, async operations, and multimodal data
 - Strong governance under Linux Foundation
 
 ### For Swarm Coordination Layer
-
 - **SBP** provides the decentralized, stigmergic coordination needed for swarm intelligence
 - Eliminates single points of failure (no central orchestrator)
 - Scales well with agent count
 - Complements ACP perfectly — use ACP for direct communication and SBP for collective awareness
 
 ### For Tool Integration
-
 - **MCP** remains the standard for integrating external tools with LLMs
 - Well-documented and widely adopted
 - Can be used alongside ACP/SBP
 
 ### For Discovery in Distributed Environments
-
 - **ANP** enables trustless discovery across different vault instances
 - Useful if IDAHO-VAULT spans multiple networks or organizations
 
 ### Implementation Path
-
 1. Start with **ACP** for core agent communication (RECOMMENDED)
 2. Add **SBP** for swarm coordination (RECOMMENDED)
 3. Use **MCP** for tool/server integrations (RECOMMENDED)
@@ -241,12 +217,12 @@ This document provides a comprehensive breakdown of major agent communication pr
 
 ## Key Resources
 
-- **ACP:** <https://agentcommunicationprotocol.dev/>
-- **SBP:** <https://github.com/AdviceNXT/sbp>
-- **MCP:** <https://modelcontextprotocol.io/>
+- **ACP:** https://agentcommunicationprotocol.dev/
+- **SBP:** https://github.com/AdviceNXT/sbp
+- **MCP:** https://modelcontextprotocol.io/
 - **A2A:** Governed under Linux Foundation with ACP
-- **Comparison Article:** <https://heidloff.net/article/mcp-acp-a2a-agent-protocols/>
-- **Survey Paper:** <https://arxiv.org/abs/2505.02279v1>
+- **Comparison Article:** https://heidloff.net/article/mcp-acp-a2a-agent-protocols/
+- **Survey Paper:** https://arxiv.org/abs/2505.02279v1
 
 ---
 

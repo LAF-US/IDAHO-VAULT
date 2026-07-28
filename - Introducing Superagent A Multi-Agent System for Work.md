@@ -9,7 +9,7 @@ date created: Thursday, June 11th 2026, 6:01:04 pm
 date modified: Thursday, June 11th 2026, 6:01:23 pm
 ---
 
-## Ask an agent. Get a team
+## Ask an agent. Get a team.
 
 When we started Airtable twelve years ago, our bet was simple: software should adapt to how people actually work, not the other way around.
 

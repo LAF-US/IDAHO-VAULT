@@ -4,4 +4,4 @@ related:
 - Firth
 authority: LOGAN
 ---
-Firth, Bingham County
+Firth, Bingham County 

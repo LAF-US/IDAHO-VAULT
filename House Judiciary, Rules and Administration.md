@@ -21,9 +21,7 @@ related:
 authority: LOGAN
 ---
 # Roster
-
 ## 2023 Members
-
 - Bruce Skaug Chair
 - Heather Scott Vice Chair
 - Barbara Ehardt

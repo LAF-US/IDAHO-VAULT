@@ -60,3 +60,4 @@ git ls-files -z |
 ```
 
 Result: `secret-pattern guard: OK`.
+

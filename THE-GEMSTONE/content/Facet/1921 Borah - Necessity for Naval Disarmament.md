@@ -37,6 +37,6 @@ For myself, I refuse to concede time - **force** is the only power left, or that
 
 ---
 
-[^1] “William E. Borah on the Necessity for Naval Disarmament, September 1921”. Essay, September, 1921. From *Teaching American History*. <https://teachingamericanhistory.org/document/william-e-borah-on-the-necessity-for-naval-disarmament-september-1921/>
+[^1] “William E. Borah on the Necessity for Naval Disarmament, September 1921”. Essay, September, 1921. From *Teaching American History*. https://teachingamericanhistory.org/document/william-e-borah-on-the-necessity-for-naval-disarmament-september-1921/ 
 
 ---

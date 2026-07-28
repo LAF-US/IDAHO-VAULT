@@ -5,4 +5,4 @@ related:
 - Patriot Front
 authority: LOGAN
 ---
-Patriot Front member, Genesee Idaho resident
+Patriot Front member, Genesee Idaho resident 

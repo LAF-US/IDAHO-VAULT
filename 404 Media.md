@@ -7,5 +7,4 @@ related:
 authority: LOGAN
 ---
 online news outlet focused on technology
-
-- founded by former VICE Media staff
+- founded by former VICE Media staff 

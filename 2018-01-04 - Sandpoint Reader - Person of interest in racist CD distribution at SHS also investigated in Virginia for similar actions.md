@@ -82,7 +82,7 @@ After the officers detailed the terms of his trespass from school grounds, Rhode
 
 “We know it’s you. We’ve had you on our radar. OK?” he said. “We know you’ve been handing out the flyers, putting them on the lawns. We know you went to the school. We got you on video. (We) have your Jeep, your license plate number.”
 
-The police bodycam video can be viewed on the Reader Facebook page at: <www.bit.ly/Reader-bodycamclip>
+The police bodycam video can be viewed on the Reader Facebook page at: www.bit.ly/Reader-bodycamclip
 
 The incident at Sandpoint High School was the latest in an ongoing distribution campaign of racist literature. Flyers tossed into lawns in the dead of night spread racist and anti-Semitic images, anti-immigrant and anti-refugee sentiments and attacks against local nonprofit members, journalists and politicians, including mayor Shelby Rognstad. In September, the Bonner County Human Rights Task Force held a press conference condemning the flyers, saying that they do not reflect Sandpoint’s character.
 

@@ -40,7 +40,7 @@ IDAHO-VAULT now has a complete infrastructure for centralized credential managem
 ### Configuration & Setup
 
 | File | Purpose |
-| --- | --- |
+|---|---|
 | `.op/SETUP.md` | Complete installation + configuration guide for developer machines |
 | `.op/secrets.template.md` | Secret inventory, rotation schedule, and emergency procedures |
 | `.github/workflows/1password-secret-template.yml` | Example workflow using 1Password for secret injection |
@@ -48,7 +48,7 @@ IDAHO-VAULT now has a complete infrastructure for centralized credential managem
 ### Documentation Updates
 
 | File | Change |
-| --- | --- |
+|---|---|
 | `!/VAULT-CONVENTIONS.md` | Added "Secret Management via 1Password" subsection |
 | `.claude/CLAUDE.md` | Added "1Password Integration" section with setup requirements |
 | `1Password.md` (this file) | Integration summary and status |
@@ -86,7 +86,7 @@ IDAHO-VAULT now has a complete infrastructure for centralized credential managem
 ## Key Design Decisions
 
 | Decision | Rationale |
-| --- | --- |
+|---|---|
 | **Only `OP_SERVICE_ACCOUNT_TOKEN` in GitHub Secrets** | Minimizes credential surface; all other secrets fetched at runtime |
 | **SSH agent for git signing** | Signs commits via 1Password SSH key; verifiable without storing key locally |
 | **`.op/` dotfolder** | Agent-friendly configuration; follows vault dotfolder conventions |
@@ -115,7 +115,7 @@ IDAHO-VAULT now has a complete infrastructure for centralized credential managem
 ## Integration Status
 
 | Component | Status | Notes |
-| --- | --- | --- |
+|---|---|---|
 | 1Password CLI template | ✅ Deployed | `.op/SETUP.md` complete |
 | SSH agent configuration | ✅ Deployed | Part 4–5 of SETUP.md |
 | Git signing setup | ✅ Deployed | Part 5 of SETUP.md + test steps |

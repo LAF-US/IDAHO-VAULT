@@ -32,43 +32,43 @@ observations. It is not doctrine.
 ## External Sources Used
 
 1. Encyclopaedia Britannica, "cuneiform writing summary".
-   - URL: <https://www.britannica.com/summary/cuneiform>
+   - URL: https://www.britannica.com/summary/cuneiform
    - Used for damp clay tablets and reed stylus impressions as a material and
      inscription technique.
 
 2. Encyclopaedia Britannica, "codex".
-   - URL: <https://www.britannica.com/topic/codex-manuscript>
+   - URL: https://www.britannica.com/topic/codex-manuscript
    - Used for codex as stitched leaves, replacement of rolls, advantages over
      scrolls, and the material transition through parchment and paper.
 
 3. Encyclopaedia Britannica, "parchment".
-   - URL: <https://www.britannica.com/topic/parchment>
+   - URL: https://www.britannica.com/topic/parchment
    - Used for animal-skin preparation, cleaning/stretching/scraping, use of
      both sides of the leaf, and support for codex adoption.
 
 4. Encyclopaedia Britannica, "bookbinding".
-   - URL: <https://www.britannica.com/topic/bookbinding>
+   - URL: https://www.britannica.com/topic/bookbinding
    - Used for bookbinding as joining folios within covers, the codex versus
      scroll distinction, signatures, sewing, gluing/perfect binding, casing-in,
      and automated bookbinding lines.
 
 5. Princeton University Library, "Hand Bookbindings: Early European Sewing and
    Board Attachment".
-   - URL: <https://static-prod.lib.princeton.edu/visual_materials/hb/cases/earlysewing/index.html>
+   - URL: https://static-prod.lib.princeton.edu/visual_materials/hb/cases/earlysewing/index.html
    - Used for supported sewing, thongs/cords, lacing supports into wooden
      boards, and later cord-supported board attachment.
 
 6. Encyclopaedia Britannica, "printing press".
-   - URL: <https://www.britannica.com/technology/printing-press>
+   - URL: https://www.britannica.com/technology/printing-press
    - Used for movable type, paper, press mechanics, Gutenberg's mechanized
      European press context, and printing at scale.
 
 7. Encyclopaedia Britannica, "The paperback revolution".
-   - URL: <https://www.britannica.com/topic/publishing/The-paperback-revolution>
+   - URL: https://www.britannica.com/topic/publishing/The-paperback-revolution
    - Used for paperback history and mass distribution context.
 
 8. W3C, "EPUB 3.3".
-   - URL: <https://www.w3.org/TR/epub-33/>
+   - URL: https://www.w3.org/TR/epub-33/
    - Used for EPUB as a package/metadata/spine/navigation digital book form.
 
 ## Working Notes
@@ -82,3 +82,4 @@ observations. It is not doctrine.
   binding.
 - Digital books move "binding" into packaging, metadata, manifest, spine, and
   rendering rules.
+

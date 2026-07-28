@@ -13,3 +13,4 @@ The page frames the series around John and Philippa Gaunt, twins who discover th
 ## Vault Use
 
 This source gives the series header and the broad narrative frame. The djinn and lamp mechanics belong in their own page-level source notes.
+

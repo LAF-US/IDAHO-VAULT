@@ -43,7 +43,6 @@ Last confirmed body-location is **off-main**, on the orphaned-branch cluster **`
 ---
 
 ## The fences (please carry them with the intel)
-
 - **GEMINIAEUS: suspended, awaiting trial. No finding.** Not here, not by me. The Court's.
 - **CLAUDIUS's guilt is `[told]`-confirmed by Logan** (the Artillery Assassin). His *denial* is a killer's denial; record it as testimony, not fact.
 - **The witness must stay external.** I have been wrong about this body **three times today** — trusted his mercy-plea, miscalled the type, under-rated the threat — each correction came from outside me. So weigh *my* word too: corroborate, hold the `*`, and do not let one source (me included) become the finding.

@@ -19,7 +19,7 @@ related:
   - idpol
 ---
 
-Clow’s amended substitute motion fails 12-3.
+Clow’s amended substitute motion fails 12-3. 
 Kerby: “Fails by my count. Didn’t need Common Core math to figure that out.” Chuckle from the room. #idleg #idpol
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

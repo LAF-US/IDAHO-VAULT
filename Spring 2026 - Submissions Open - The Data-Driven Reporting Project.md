@@ -22,7 +22,7 @@ authority: LOGAN
 
 Today much of investigative journalism is about acquiring, organizing and analyzing large, digital document sets. Technology plays a critical role in all phases but those resources are unevenly distributed. Only a few news organizations are able to take advantage of these advances. Many local news organizations and freelance journalists, especially those who serve local and underrepresented communities, would benefit from additional resources. This program aims to close this gap with targeted, financial awards to organizations and freelancers working on document-focused, investigative stories.
 
-### Submissions for our Spring 2026 cohort are open. Deadline to apply is March 31.Review the application and Frequently Asked Questions here
+### Submissions for our Spring 2026 cohort are open. Deadline to apply is March 31.Review the application and Frequently Asked Questions here.
 
 Sign up below for our newsletter to receive notification on projects, deadlines and training!
 

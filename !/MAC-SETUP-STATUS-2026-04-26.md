@@ -14,14 +14,12 @@ related:
 # Mac Setup Status — 2026-04-26
 
 ## Hardware
-
 - **Machine:** Early 2015 MacBook Pro
 - **OS:** macOS 12.7.6 (Monterey)
 
 ## Infrastructure
 
 ### Shell & PATH
-
 ```bash
 # .zprofile sources NVM
 # .zshrc sources .zprofile
@@ -29,7 +27,6 @@ related:
 ```
 
 ### Compilers & Build Tools
-
 - **Xcode:** 14.2 (from Apple Developer .xip)
 - **Command Line Tools:** 14.2
 - **Clang:** Apple clang 14.0.0
@@ -37,7 +34,6 @@ related:
 - **Git LFS:** ✅ Installed (brew install git-lfs)
 
 ### Libraries Built From Source
-
 - **simdutf:** v21.0.0 → `/usr/local/lib/libsimdutf.dylib`
 - **simdjson:** v4.6.3 (brew)
 - **uvwasi:** v0.0.23 (brew)
@@ -45,7 +41,6 @@ related:
 ## OpenClaw Setup
 
 ### Gateway
-
 - **Status:** Starting (stuck/hanging)
 - **Port:** 18789 (loopback)
 - **Auth mode:** token
@@ -53,7 +48,6 @@ related:
 - **Service:** launchd (LaunchAgent)
 
 ### Configuration
-
 - **Default model:** `mistral/mistral-small-latest`
 - **Provider:** OpenRouter (env:OPENROUTER_API_KEY)
 - **Models available:**
@@ -63,22 +57,19 @@ related:
   - anthropic/claude-3.5-haiku (free)
 
 ### Channels
-
 | Channel | Status | Notes |
-| --------- | -------- | ------- |
+|---------|--------|-------|
 | Discord | Disabled | Needs token |
 | WhatsApp | Disabled | Needs setup |
 | Signal | N/A | Not configured |
 
 ### Agent (default)
-
 - **Auth profile:** openrouter (api_key mode)
 - **Workspace:** ~/.openclaw/workspace
 
 ## IDAHO-VAULT Integration
 
 ### Big Pickle (Cross-Platform Pioneer)
-
 - **Registered:** ✅ swarm.json + !/AGENTS.md
 - **Dotfolder:** `.bigpickle/`
 - **Tri-Part:** ✅ Complete
@@ -86,13 +77,11 @@ related:
 - **Note:** Big Pickle is a model available through OpenCode, not an orchestration persona.
 
 ### Scripts Created
-
 - `!/launch-claude-openrouter.sh`
 - `!/launch-codex-openrouter.sh`
 - `!/openclaw-daemon.sh`
 
 ### Aliases
-
 ```bash
 alias claude-or='/usr/local/bin/claude-openrouter'
 alias codex-or='/usr/local/bin/codex-openrouter'
@@ -101,21 +90,18 @@ alias codex-or='/usr/local/bin/codex-openrouter'
 ## Issues
 
 ### Gateway Startup
-
 - Gateway process starts but doesn't bind to port 18789
 - Logs show "starting..." but no "listening" confirmation
 - CPU spikes to 99% then process hangs
 - May be older hardware bottleneck
 
 ### Channels
-
 - Discord/WhatsApp need tokens from Logan
 - No Signal CLI configured
 
 ## Windows Parity Needed
 
 From Windows `.openclaw/openclaw-live-ref.json`:
-
 - ❌ Discord channel (needs token)
 - ❌ WhatsApp channel (needs setup)
 - ❌ Signal (needs signal-cli)

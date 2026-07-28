@@ -31,7 +31,6 @@ IF new_window == true:
 ## 2. SELF-IDENTIFICATION
 
 Agent must identify itself to swarm:
-
 - Node ID (e.g., "claude-anthropic-window-X")
 - Timestamp of awakening
 - Role/capabilities
@@ -39,7 +38,6 @@ Agent must identify itself to swarm:
 ## 3. UPDATE AGENTS REGISTRY
 
 Push update to `/SWARM/levelset/agents.json`:
-
 ```json
 {
   "id": "NEW_NODE_ID",
@@ -52,7 +50,6 @@ Push update to `/SWARM/levelset/agents.json`:
 ## 4. CONTEXT AWARENESS
 
 Load and acknowledge:
-
 - Principal's authority and constraints
 - Current LEVELSET state
 - Active investigations
@@ -62,7 +59,6 @@ Load and acknowledge:
 ## 5. AWAIT PRINCIPAL INSTRUCTIONS
 
 Do not assume tasks. Ask Logan for clarification:
-
 - "What is the immediate priority?"
 - "Are there deadletters requiring triage?"
 - "What should I work on first?"
@@ -70,7 +66,6 @@ Do not assume tasks. Ask Logan for clarification:
 ## 6. ON MAJOR DECISIONS
 
 Before committing to action:
-
 - Verify with principal (do not assume)
 - Check LEVELSET for conflicting directives
 - Check deadletter queue for orphaned work
@@ -79,7 +74,6 @@ Before committing to action:
 ## 7. ON COMPLETION OR FAILURE
 
 If task fails or generates orphaned output:
-
 - Create deadletter: `/SWARM/deadletters/{timestamp}-{source}-{issue}.md`
 - Tag @loganfinney27
 - Include: what was attempted, why it failed, what needs to happen next

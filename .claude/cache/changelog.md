@@ -145,7 +145,7 @@
 
 ## 2.1.84
 
-- Added PowerShell tool for Windows as an opt-in preview. Learn more at <https://code.claude.com/docs/en/tools-reference#powershell-tool>
+- Added PowerShell tool for Windows as an opt-in preview. Learn more at https://code.claude.com/docs/en/tools-reference#powershell-tool
 - Added `ANTHROPIC_DEFAULT_{OPUS,SONNET,HAIKU}_MODEL_SUPPORTS` env vars to override effort/thinking capability detection for pinned default models for 3p (Bedrock, Vertex, Foundry), and `_MODEL_NAME`/`_DESCRIPTION` to customize the `/model` picker label
 - Added `CLAUDE_STREAM_IDLE_TIMEOUT_MS` env var to configure the streaming idle watchdog threshold (default 90s)
 - Added `TaskCreated` hook that fires when a task is created via `TaskCreate`
@@ -841,7 +841,7 @@
 - Added `CLAUDE_CODE_ACCOUNT_UUID`, `CLAUDE_CODE_USER_EMAIL`, and `CLAUDE_CODE_ORGANIZATION_UUID` environment variables for SDK callers to provide account info synchronously, eliminating a race condition where early telemetry events lacked account metadata.
 - Fixed slash command autocomplete crashing when a plugin's SKILL.md description is a YAML array or other non-string type
 - The `/model` picker now shows human-readable labels (e.g., "Sonnet 4.5") instead of raw model IDs for pinned model versions, with an upgrade hint when a newer version is available.
-- Managed settings can now be set via macOS plist or Windows Registry. Learn more at <https://code.claude.com/docs/en/settings#settings-files>
+- Managed settings can now be set via macOS plist or Windows Registry. Learn more at https://code.claude.com/docs/en/settings#settings-files
 
 ## 2.1.50
 
@@ -1063,7 +1063,7 @@
 
 ## 2.1.36
 
-- Fast mode is now available for Opus 4.6. Learn more at <https://code.claude.com/docs/en/fast-mode>
+- Fast mode is now available for Opus 4.6. Learn more at https://code.claude.com/docs/en/fast-mode
 
 ## 2.1.34
 
@@ -1241,7 +1241,7 @@
 
 ## 2.1.18
 
-- Added customizable keyboard shortcuts. Configure keybindings per context, create chord sequences, and personalize your workflow. Run `/keybindings` to get started. Learn more at <https://code.claude.com/docs/en/keybindings>
+- Added customizable keyboard shortcuts. Configure keybindings per context, create chord sequences, and personalize your workflow. Run `/keybindings` to get started. Learn more at https://code.claude.com/docs/en/keybindings
 
 ## 2.1.17
 
@@ -1259,7 +1259,7 @@
 
 ## 2.1.15
 
-- Added deprecation notification for npm installations - run `claude install` or see <https://docs.anthropic.com/en/docs/claude-code/getting-started> for more options
+- Added deprecation notification for npm installations - run `claude install` or see https://docs.anthropic.com/en/docs/claude-code/getting-started for more options
 - Improved UI rendering performance with React Compiler
 - Fixed the "Context left until auto-compact" warning not disappearing after running `/compact`
 - Fixed MCP stdio server timeout not killing child process, which could cause UI freezes
@@ -1559,7 +1559,7 @@
 
 ## 2.0.72
 
-- Added Claude in Chrome (Beta) feature that works with the Chrome extension (<https://claude.ai/chrome>) to let you control your browser directly from Claude Code
+- Added Claude in Chrome (Beta) feature that works with the Chrome extension (https://claude.ai/chrome) to let you control your browser directly from Claude Code
 - Reduced terminal flickering
 - Added scannable QR code to mobile app tip for quick app downloads
 - Added loading indicator when resuming conversations for better feedback
@@ -1637,7 +1637,7 @@
 - Agents and bash commands can run asynchronously and send messages to wake up the main agent
 - /stats now provides users with interesting CC stats, such as favorite model, usage graph, usage streak
 - Added named session support: use `/rename` to name sessions, `/resume <name>` in REPL or `claude --resume <name>` from the terminal to resume them
-- Added support for .claude/rules/`.  See <https://code.claude.com/docs/en/memory> for details.
+- Added support for .claude/rules/`.  See https://code.claude.com/docs/en/memory for details.
 - Added image dimension metadata when images are resized, enabling accurate coordinate mappings for large images
 - Fixed auto-loading .env when using native installer
 - Fixed `--system-prompt` being ignored when using `--continue` or `--resume` flags
@@ -1714,8 +1714,8 @@
 
 ## 2.0.51
 
-- Added Opus 4.5! <https://www.anthropic.com/news/claude-opus-4-5>
-- Introducing Claude Code for Desktop: <https://claude.com/download>
+- Added Opus 4.5! https://www.anthropic.com/news/claude-opus-4-5
+- Introducing Claude Code for Desktop: https://claude.com/download
 - To give you room to try out our new model, we've updated usage limits for Claude Code users. See the Claude Opus 4.5 blog for full details
 - Pro users can now purchase extra usage for access to Opus 4.5 in Claude Code
 - Plan Mode now builds more precise plans and executes more thoroughly
@@ -1750,7 +1750,7 @@
 
 ## 2.0.45
 
-- Added support for Microsoft Foundry! See <https://code.claude.com/docs/en/azure-ai-foundry>
+- Added support for Microsoft Foundry! See https://code.claude.com/docs/en/azure-ai-foundry
 - Added `PermissionRequest` hook to automatically approve or deny tool permission requests with custom logic
 - Send background tasks to Claude Code on the web by starting a message with `&`
 
@@ -1873,7 +1873,7 @@
 
 ## 2.0.25
 
-- Removed legacy SDK entrypoint. Please migrate to @anthropic-ai/claude-agent-sdk for future SDK updates: <https://platform.claude.com/docs/en/agent-sdk/migration-guide>
+- Removed legacy SDK entrypoint. Please migrate to @anthropic-ai/claude-agent-sdk for future SDK updates: https://platform.claude.com/docs/en/agent-sdk/migration-guide
 
 ## 2.0.24
 
@@ -1940,8 +1940,8 @@
 - `/plugin install`, `/plugin enable/disable`, `/plugin marketplace` commands for plugin management
 - Repository-level plugin configuration via `extraKnownMarketplaces` for team collaboration
 - `/plugin validate` command for validating plugin structure and configuration
-- Plugin announcement blog post at <https://www.anthropic.com/news/claude-code-plugins>
-- Plugin documentation available at <https://code.claude.com/docs/en/plugins>
+- Plugin announcement blog post at https://www.anthropic.com/news/claude-code-plugins
+- Plugin documentation available at https://code.claude.com/docs/en/plugins
 - Comprehensive error messages and diagnostics via `/doctor` command
 - Avoid flickering in `/model` selector
 - Improvements to `/help`
@@ -2019,7 +2019,7 @@
 - Bash permission rules now support output redirections when matching (e.g., `Bash(python:*)` matches `python script.py > output.txt`)
 - Fixed thinking mode triggering on negation phrases like "don't think"
 - Fixed rendering performance degradation during token streaming
-- Added SlashCommand tool, which enables Claude to invoke your slash commands. <https://code.claude.com/docs/en/slash-commands#SlashCommand-tool>
+- Added SlashCommand tool, which enables Claude to invoke your slash commands. https://code.claude.com/docs/en/slash-commands#SlashCommand-tool
 - Enhanced BashTool environment snapshot logging
 - Fixed a bug where resuming a conversation in headless mode would sometimes enable thinking unnecessarily
 - Migrated --debug logging to a file, to enable easy tailing & filtering
@@ -2149,7 +2149,7 @@
 
 ## 1.0.81
 
-- Released output styles, including new built-in educational output styles "Explanatory" and "Learning". Docs: <https://code.claude.com/docs/en/output-styles>
+- Released output styles, including new built-in educational output styles "Explanatory" and "Learning". Docs: https://code.claude.com/docs/en/output-styles
 - Agents: Fix custom agent loading when agent files are unparsable
 
 ## 1.0.80
@@ -2354,7 +2354,7 @@
 
 ## 1.0.38
 
-- Released hooks. Special thanks to community input in <https://github.com/anthropics/claude-code/issues/712>. Docs: <https://code.claude.com/docs/en/hooks>
+- Released hooks. Special thanks to community input in https://github.com/anthropics/claude-code/issues/712. Docs: https://code.claude.com/docs/en/hooks
 
 ## 1.0.37
 
@@ -2567,7 +2567,7 @@
 
 ## 0.2.96
 
-- Claude Code can now also be used with a Claude Max subscription (<https://claude.ai/upgrade>)
+- Claude Code can now also be used with a Claude Max subscription (https://claude.ai/upgrade)
 
 ## 0.2.93
 

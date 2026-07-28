@@ -6,4 +6,4 @@
 
 Tailings don't just disappear. They pile up where they are discarded.
 
----
+--- 

@@ -13,7 +13,7 @@ authority: LOGAN
 ---
 **October 17, 2023**
 
-Boise, ID —
+Boise, ID — 
 
 The Idaho Republican Party has been inundated with emails and phone calls from registered Idaho voters expressing their profound disappointment with Congressman Mike Simpson’s decision today. Their voices are invaluable to us, and they have made it clear that they expected our representative to stand firmly with the Republican caucus and to set games aside and put the business of the American people first.
 

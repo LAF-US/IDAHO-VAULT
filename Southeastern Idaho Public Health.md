@@ -17,10 +17,9 @@ Director: Maggie Mann
 Pocatello, ID 83201  
 1-208-233-9080
 
-Southeast Idaho public health district
+Southeast Idaho public health district 
 
-Counties:
-
+Counties: 
 - Bannock
 - Power
 - Oneida

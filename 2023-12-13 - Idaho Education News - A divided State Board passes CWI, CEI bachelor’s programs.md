@@ -67,7 +67,6 @@ The CWI program and the CEI operations management proposals passed on identical 
 CEI’s digital forensics degree passed unanimously.
 
 ## Up next: the Idaho State job search
-
 The State Board will be back at work first thing Thursday morning — but behind closed doors.
 
 The board will meet in executive session to interview the five finalists for the Idaho State president’s job.

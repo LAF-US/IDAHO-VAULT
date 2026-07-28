@@ -6,4 +6,4 @@ related:
 - Idaho
 authority: LOGAN
 ---
-Governing board for College of Eastern Idaho, elected in Bonneville County
+Governing board for College of Eastern Idaho, elected in Bonneville County 

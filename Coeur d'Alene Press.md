@@ -6,4 +6,4 @@ related:
 - The Hagadone Corporation
 authority: LOGAN
 ---
-Coeur d'Alene newspaper owned by The Hagadone Corporation
+Coeur d'Alene newspaper owned by The Hagadone Corporation 

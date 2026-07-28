@@ -5,11 +5,10 @@ related:
 - Joint Senate and House Rules
 authority: LOGAN
 ---
-**Idaho Senate**
+**Idaho Senate** 
+- Senate members 
+- Joint Senate and House Rules 
 
-- Senate members
-- Joint Senate and House Rules
+--- 
 
----
-
-<https://legislature.idaho.gov/statutesrules/senaterules/>
+https://legislature.idaho.gov/statutesrules/senaterules/ 

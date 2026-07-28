@@ -134,13 +134,11 @@ See **DECISIONS.md** "Pending Decisions" section:
 ### CODE AUTHORITY Should Do
 
 **Already completed by this conversation:**
-
 - ✅ Commit context vault files to !ADMIN/
 - ✅ Push Constitution.md and Logan.md
 - ✅ Update DECISIONS.md with confirmed decisions
 
 **Still needed (manual actions):**
-
 - [ ] Create PR via GitHub web interface (if desired; can't be done by this conversation)
 - [ ] Coordinate with PERSISTENT: AUTHORITY: LEVELSET to receive outstanding documents:
   - LEVELSET-v3.2.6.1-PROMPT.md
@@ -155,17 +153,14 @@ See **DECISIONS.md** "Pending Decisions" section:
 ### Downstream: Other Conversations
 
 **PERSISTENT: AUTHORITY: LEVELSET:**
-
 - Must deliver 6 outstanding governance documents
 - Compaction risk — coordinate delivery timing
 
 **STORY: JFAC:**
-
 - CCA letter deadline ~March 18 (time-sensitive)
 - Ready to proceed without blocking consolidation
 
 **GitHub Copilot:**
-
 - Awaiting copilot-instructions.md guardrails
 - Should reference Constitution.md
 - Should declare capability level
@@ -238,7 +233,7 @@ Date:   2026-03-16 (timestamp)
 
 ## CONTACTS
 
-- **Logan Finney** (director): <logan.finney@idahoptv.org>
+- **Logan Finney** (director): logan.finney@idahoptv.org
 - **This conversation:** Claude Code – Idaho VAULT Multi-Conversation Consolidation (active)
 - **Escalation:** CODE AUTHORITY (direct repo access)
 

@@ -5,4 +5,4 @@ related:
 - magistrate court
 ---
 
-magistrate court Bonneville County courthouse
+magistrate court Bonneville County courthouse 

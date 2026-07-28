@@ -5,4 +5,4 @@ related:
 - housing
 ---
 
-Blaine County housing authority
+Blaine County housing authority 

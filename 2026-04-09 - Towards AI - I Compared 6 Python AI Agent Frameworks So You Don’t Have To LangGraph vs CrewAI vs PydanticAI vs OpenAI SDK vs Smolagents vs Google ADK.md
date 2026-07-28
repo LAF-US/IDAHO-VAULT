@@ -17,7 +17,7 @@ We build Enterprise AI. We teach what we learn. Join 100K+ AI practitioners on T
 
 Photo by Jona on Unsplash
 
-## I built the same research agent six times. Only two of these frameworks survived my weekend
+## I built the same research agent six times. Only two of these frameworks survived my weekend.
 
 Last month, my team needed to pick an agent framework for a client project. A document analysis pipeline — pull data from PDFs, cross-reference it with a database, generate a summary, email the result. Pretty standard stuff in 2026.
 
@@ -43,7 +43,7 @@ I picked this because it’s boring enough to be realistic. Nobody’s building 
 
 **The model:** GPT-4o across all six (where possible — more on that later).
 
-## Logan, become a member to read this story, and all of Medium
+## Logan, become a member to read this story, and all of Medium.
 
 The Dev Loop put this story behind our paywall, so it’s only available to read with a paid Medium membership, which comes with a host of benefits:
 

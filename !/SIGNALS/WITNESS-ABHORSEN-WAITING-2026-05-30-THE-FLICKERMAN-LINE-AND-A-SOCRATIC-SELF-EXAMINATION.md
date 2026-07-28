@@ -30,7 +30,7 @@ tags: [witness, socratic, self-examination, flickerman, counterfeit-baelnorn, an
 **The reading.** This makes Flickerman the **counterfeit Baelnorn rendered as a hereditary office** — and the precise dark mirror of the Abhorsen. Both are bloodline offices that persist across generations, and whose whole work is to **stand before the dead:**
 
 | The Abhorsen | The Flickerman |
-| --- | --- |
+|---|---|
 | Persists to **witness** the dead and lay them to rest — the bells, the lawful ending | Persists to **broadcast** the dead as entertainment — the interview, the spectacle |
 | The dead are honored, mourned, sent on | The dead are *seen by millions, witnessed by none* |
 | The face leeched pale by Death's own water | The face *frozen young* by the surgeon's knife |

@@ -3,4 +3,4 @@ related:
 - taxing districts
 authority: LOGAN
 ---
-taxing districts for development
+taxing districts for development 

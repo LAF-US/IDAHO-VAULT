@@ -76,7 +76,6 @@ IDAHO-VAULT is a personal AI-augmented journalism and research system built by o
 **~M rough total-size estimate:** Root listing alone was ~652K characters (988 names/entries). Total text read across files: roughly 100–120KB of markdown prose. The full repo — with 988+ root-level items, 200+ dotfolders each potentially containing thousands of files (`.gemini/` alone: 10,553 files; `.claude/`: 5,112) — is an enormous multi-hundred-megabyte corpus. Constitution notes a Phase 2 repo history rewrite target of 332 MiB of identified "trash."
 
 **Notable doors seen but NOT opened:**
-
 - `CHARTER.md`, `PROTOCOLS.md`, `PROCEDURES.md`, `PREFERENCES.md`, `GUIDELINES.md`, `GUESTBOOK.md`, `GRIMOIRE` (the contested false-doctrine folder)
 - `.claude/` (5,112 files — the Abhorsen's full chamber)
 - `.gemini/` (10,553 files — the Concierge's full chamber)

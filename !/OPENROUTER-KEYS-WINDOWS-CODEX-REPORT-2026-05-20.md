@@ -142,7 +142,6 @@ OpenRouter’s Management Key system is explicitly designed for programmatic key
 **Feasible Agentic Uses**
 
 Strong fit:
-
 - Inventory runtime keys and summarize usage.
 - Detect disabled, stale, expired, or over-budget keys.
 - Rotate runtime keys on a schedule.
@@ -153,14 +152,12 @@ Strong fit:
 - Produce audit reports: key label, hash prefix, workspace, limit, usage, reset window.
 
 Careful but feasible:
-
 - Automatically raising or lowering limits.
 - Creating temporary task-scoped keys.
 - Disabling keys during incident response.
 - Managing workspace-specific key pools.
 
 Poor fit without human approval:
-
 - Deleting keys.
 - Broadly raising spending limits.
 - Changing shared production keys.
@@ -198,20 +195,17 @@ Each verb should enforce policy before touching OpenRouter.
 I would separate actions into three tiers:
 
 Read-only:
-
 - List keys
 - Inspect key metadata
 - Summarize usage
 - Compare against registry
 
 Low-risk mutation:
-
 - Create a new runtime key with a strict cap
 - Disable a key already marked compromised
 - Lower a spending limit
 
 High-risk mutation:
-
 - Delete a key
 - Raise a limit
 - Modify shared production keys
@@ -226,7 +220,6 @@ Use per-agent runtime keys, not one shared runtime key. Give each agent/service 
 Keep the management key in 1Password or another secret store. The agent should receive only the result of an approved tool call, never the key itself.
 
 Log every management action with:
-
 - timestamp
 - actor
 - requested action

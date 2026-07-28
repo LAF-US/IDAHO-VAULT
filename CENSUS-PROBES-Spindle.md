@@ -58,7 +58,7 @@ This is the one concession to peer-signaling: a file-based async bus in the `!/S
 ### Summary of Definitions as the Vault States Them
 
 | Term | Vault meaning |
-| --- | --- |
+|---|---|
 | **Hub** | The central coordinator — `!/` directory as shared commons; GitHub as execution transport authority; Linear as dispatcher; WebSocket gateway in OpenClaw. Always singular, always where state is authoritative. |
 | **Spoke** | An agent, a platform connector, or a dotfolder — connected to the hub but not to each other. |
 | **Pipe** | Used as a verb ("pipe it into GCP") and personified as "The Conduit" (the routing/transmission role). Not a distinct topology class; it describes the channel between hub and destination. |

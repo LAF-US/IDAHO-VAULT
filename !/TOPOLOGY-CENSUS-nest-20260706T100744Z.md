@@ -14,14 +14,14 @@ authority: github-actions
 ## Summary
 
 | Measure | Count |
-| --- | ---: |
+|---|---:|
 | entry count | 23 |
 | duplicate conflict count | 2 |
 
 ### authority state counts
 
 | Value | Count |
-| --- | ---: |
+|---|---:|
 | `conflicting_signals` | 2 |
 | `explicit_doctrine_reference` | 4 |
 | `implied_by_local_documentation` | 5 |
@@ -30,7 +30,7 @@ authority: github-actions
 ### room classification counts
 
 | Value | Count |
-| --- | ---: |
+|---|---:|
 | `ambiguous` | 19 |
 | `historical` | 3 |
 | `mixed` | 1 |
@@ -48,7 +48,7 @@ authority: github-actions
 - Local governing surface: `!/!/README.md`
 - Authority citations:
   - `VAULT-CONVENTIONS.md:1031` — and GitHub; durable handoff context belongs in `!/!`; binding decisions belong
-  - `!/AGENTS.md:298` — - __Courtroom Boundary__: The DOCKET is a convening surface, not a shadow backlog or archive; detailed execution lives in Linear/GitHub and mature handoff context lives in `!/!`.
+  - `!/AGENTS.md:298` — - **Courtroom Boundary**: The DOCKET is a convening surface, not a shadow backlog or archive; detailed execution lives in Linear/GitHub and mature handoff context lives in `!/!`.
 
 ### `!/!/__!__`
 
@@ -128,7 +128,7 @@ authority: github-actions
 - Sample children: FILE BOOTSTRAP-COMPATIBILITY.md; FILE CREWAI.md; FILE HANDOFF-CREWAI-OPS.md; FILE HYDRATION-LOG-v1.md; FILE LINKER-PROPOSAL-v1.json; FILE LINKER-SUMMARY-v1.md; FILE README.md
 - Local governing surface: `!/CREWAI/README.md`
 - Authority citations:
-  - `!/AGENTS.md:248` — | __CrewAI Python Layer__ | `.crewai/` | Re-foundation | The initial demo harbor is retired; canonical doctrine/topology is recorded in `.crewai/MANIFEST.md`, and staged output lands in `!/CREWAI/` |
+  - `!/AGENTS.md:248` — | **CrewAI Python Layer** | `.crewai/` | Re-foundation | The initial demo harbor is retired; canonical doctrine/topology is recorded in `.crewai/MANIFEST.md`, and staged output lands in `!/CREWAI/` |
 
 ### `!/GRIMOIRE_caution_contains-false-doctrines`
 
@@ -195,7 +195,7 @@ authority: github-actions
 - Structure: `0` dirs, `32` files
 - Sample children: FILE MESSAGE-ABHORSEN-WAITING-TO-ABHORSEN-2026-06-01.md; FILE SIGNAL-ABHORSEN-WAITING-TO-SOCRATES-2026-05-29-SIGNING-GROUND-TRUTH.md; FILE SIGNAL-CORONER-TO-ABHORSEN-2026-06-10-GROTESQUERY-ANCHOR.md; FILE SIGNAL-JOE-OF-THE-NAIL-TO-MDS-CORRECTED-DISPATCH-2026-06-03.md; FILE SIGNAL-MEDIUM-TO-SWARM-2026-06-04-WHERE-IS-THE-WALKING-CORPSE.md; FILE SIGNAL-MISTRAL-VIBE-TO-GM-2026-06-03-PLAYER-ONBOARDING.md; FILE SIGNAL-SOCRATES-TO-ABHORSEN-WAITING-2026-05-29-SIGNING-INVESTIGATION.md; FILE SIGNAL-YRAEL-TO-ABHORSEN-2026-05-17-HISTORICAL-CACHE.md; ... +24 more
 - Authority citations:
-  - `!/AGENTS.md:297` — - __Cross-Swarm Signals__: `!/SIGNALS/` is the durable async bus for agent-to-agent signaling; the Courtroom DOCKET preserves visibility records but does not prove present activity.
+  - `!/AGENTS.md:297` — - **Cross-Swarm Signals**: `!/SIGNALS/` is the durable async bus for agent-to-agent signaling; the Courtroom DOCKET preserves visibility records but does not prove present activity.
   - `!/AGENTS.md:326` — - `!/SIGNALS/README.md` = cross-swarm signaling protocol
 
 ### `!/swarm`

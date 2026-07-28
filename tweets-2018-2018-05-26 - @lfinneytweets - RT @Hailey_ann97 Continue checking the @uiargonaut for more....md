@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @Hailey_ann97: Continue checking the @uiargonaut for more updates and reactions on Staben’s 2019 departure.
+RT @Hailey_ann97: Continue checking the @uiargonaut for more updates and reactions on Staben’s 2019 departure. 
 
 Have any questions? Have a…
 

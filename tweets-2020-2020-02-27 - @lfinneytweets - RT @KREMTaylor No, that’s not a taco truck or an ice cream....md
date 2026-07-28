@@ -17,7 +17,7 @@ related:
 
 RT @KREMTaylor: No, that’s not a taco truck or an ice cream truck...
 
-It’s the post office in the Latah County city of Deary.
+It’s the post office in the Latah County city of Deary. 
 
 …At least f…
 

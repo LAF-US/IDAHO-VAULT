@@ -3,4 +3,4 @@ related:
 - Governor
 authority: LOGAN
 ---
-former Governor candidate
+former Governor candidate 

@@ -34,7 +34,6 @@ A Bingham County judge issued a temporary restraining order on Sept. 15, blockin
 The restraining order blocks the state party from electing new Bingham County GOP officers while an internal party appeal process advances. The court will hear arguments on Sept. 28 regarding a preliminary injunction, which would replace the temporary restraining order.
 
 ## Where it all started
-
 Earlier this year, Bingham County Republican chairman Dan Cravens announced his intent to resign, effective Aug. 1, because he was moving out of state. The central committee under Cravens then held a series of elections at its July 20 regular meeting to select new party officers, with the intent that they would take office on Aug. 1.
 
 An unsigned complaint was later filed with the state party alleging that the Bingham County central committee had violated rules and bylaws in its conduct of the meeting and that the new chairman was not duly elected.
@@ -52,7 +51,6 @@ Thompson emailed Moon on Sept. 14 to say that he had received acknowledgment of 
 Thompson and the Bingham County executive committee filed a lawsuit the evening of Sept. 14 to block the new meeting and election from taking place.
 
 ## Restraining order issued
-
 The Bingham County Republican party asked the court to prevent the state party from conducting new officer elections until the appeals process under party rules is complete. The Bingham County District Court granted a temporary restraining order on Sept. 15 and will hear the county party’s case on Sept. 28 for a preliminary injunction, which would continue to block the state party from holding a new election.
 
 “While the Court does not have a fully developed record before it to reach an ultimate adjudication on the merits, the Court is satisfied that it is appropriate to issue a temporary restraining order prohibiting the Idaho Republican Party, by and through Dorothy Moon, from conducting or holding any meeting to elect officers to the Bingham County Republican Central Committee or to appoint nominees for the vacant position of the Bingham County Prosecuting Attorney during the pendency of the appellate review of Thompson’s appeal,” wrote Seventh Judicial District Judge Darren Simpson.
@@ -62,7 +60,6 @@ The court order acknowledges that Moon and the state party did not have an oppor
 “Notably, the evidence presented to the Court has been signed and verified while the allegations spurring Moon’s action to nullify the July 20, 2023 BCRCC meeting contain no such verification. An anonymous or unsigned complaint does not comport with notions of fair play and fair administration of justice,” the judge wrote.
 
 ## State party leaders respond
-
 Idaho Reports reached Moon by phone, where she declined to comment.
 
 “We do not discuss matters of litigation,” Moon told Idaho Reports.
@@ -96,7 +93,6 @@ Trent Clark, a former party chairman, contacted Idaho Reports on the morning of 
 “This unfortunate misinformation,” Clark said, raises questions for him such as “why was Mr. Fuller giving out an incorrect appeal date, and could it have anything to do with a desperate need to have the appeal done by September 28, the next court date?”
 
 ## Conspiracy allegations
-
 Thompson and the Bingham County Republican executive committee are represented by attorney Greg Chaney, a former state representative who was defeated in a run for senate in the last primary election.
 
 In the court filings, Chaney calls the situation “a continuation of a systematic conspiracy” to void certain county central committee elections and reconduct them “under circumstances carefully manipulated and choreographed to elect persons sympathetic to Moon and her aims.”

@@ -11,7 +11,7 @@ Skills for converting Struts Action classes to Spring MVC Controllers.
 ### Lifecycle Comparison
 
 | Aspect | Struts 2 | Spring MVC |
-| -------- | ---------- | ------------ |
+|--------|----------|------------|
 | **Binding Target** | Action fields directly | Method params or `@ModelAttribute` object |
 | **Binding Timing** | `ParametersInterceptor` AFTER `prepare()` | After `@ModelAttribute` method returns |
 | **Instance Scope** | New Action per request | Singleton (or `@Scope("request")` proxy) |
@@ -71,15 +71,13 @@ public String save(@ModelAttribute MyEntity entity) {
 **Steps:**
 
 1. **Remove imports:**
-
 ```java
 // DELETE
 import com.opensymphony.xwork2.ActionSupport;
 import org.apache.struts2.ActionSupport;
 ```
 
-1. **Add imports:**
-
+2. **Add imports:**
 ```java
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -90,8 +88,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.ui.Model;
 ```
 
-1. **Transform class declaration:**
-
+3. **Transform class declaration:**
 ```java
 // FROM
 public class HelloAction extends ActionSupport { }
@@ -101,8 +98,7 @@ public class HelloAction extends ActionSupport { }
 public class HelloController { }
 ```
 
-1. **Transform execute() method:**
-
+4. **Transform execute() method:**
 ```java
 // FROM
 public String execute() {
@@ -116,19 +112,19 @@ public String execute(Model model) {
 }
 ```
 
-1. **URL mapping derivation rules:**
+5. **URL mapping derivation rules:**
    - Remove `Action` suffix from class name
    - Convert to lowercase
    - Example: `HelloWorldAction` → `/helloworld`
 
-2. **HTTP method selection:**
+6. **HTTP method selection:**
    - Default: `@GetMapping`
    - Use `@PostMapping` if method contains form processing or data modification
 
 **Transformation Table - Return Constants:**
 
 | Struts | Spring |
-| -------- | -------- |
+|--------|--------|
 | `SUCCESS` | `"success"` |
 | `ERROR` | `"error"` |
 | `INPUT` | `"input"` |
@@ -150,7 +146,6 @@ public String execute(Model model) {
 **Transformation Rules:**
 
 1. **Simple properties → @RequestParam:**
-
 ```java
 // FROM (Struts)
 public class LoginAction extends ActionSupport {
@@ -181,8 +176,7 @@ public class LoginController {
 }
 ```
 
-1. **Complex objects → @ModelAttribute:**
-
+2. **Complex objects → @ModelAttribute:**
 ```java
 // TO (Spring) - for multiple related fields
 @PostMapping("/login")
@@ -192,8 +186,7 @@ public String login(@ModelAttribute LoginForm form, Model model) {
 }
 ```
 
-1. **Output properties → Model attributes:**
-
+3. **Output properties → Model attributes:**
 ```java
 // FROM: Action property used in JSP
 private String message;

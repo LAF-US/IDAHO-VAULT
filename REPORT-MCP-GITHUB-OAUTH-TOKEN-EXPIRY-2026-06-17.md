@@ -21,7 +21,6 @@ during PR #535; provenance is marked `[EVIDENCE]` (observed this session) vs.
 verified).
 
 ## Symptom `[EVIDENCE]`
-
 - The GitHub MCP tools returned, verbatim, `MCP server "github" requires
   re-authorization (token expired)` mid-session.
 - At the same moment, `git push` / `git fetch` over the repo's `127.0.0.1`
@@ -30,7 +29,6 @@ verified).
   MCP servers repeatedly connecting/disconnecting.
 
 ## Mechanism (what's actually going on)
-
 Two **distinct** things wear the same "tool unavailable" mask:
 
 1. **OAuth access-token expiry — the GitHub drop.** `[CLAIM]` The MCP OAuth
@@ -48,7 +46,6 @@ Two **distinct** things wear the same "tool unavailable" mask:
    unverified.
 
 ## Why `git` survives but the GitHub tools don't `[EVIDENCE → CLAIM]`
-
 They use **different credential paths**. Per the docs: the git client uses "a
 scoped credential inside the sandbox, which the proxy verifies and translates
 to your actual GitHub authentication token," while the built-in GitHub tools
@@ -57,7 +54,6 @@ container." Different lifecycles → `git` keeps working while the OAuth-backed
 MCP tools lapse. This matched the observed behavior exactly.
 
 ## What the official docs do / don't say
-
 - **Do:** token-based GitHub auth via a proxy; git uses a separate scoped
   sandbox credential; teleport/remote-control tokens are "short-lived" and
   refreshed via `/login`; cloud sessions/environments expire on inactivity.
@@ -66,7 +62,6 @@ MCP tools lapse. This matched the observed behavior exactly.
   reports, not the docs.
 
 ## Practical guidance
-
 - The drop is **non-destructive**: `git` push/fetch is unaffected, and webhook
   events still wake the session — only *initiating* GitHub API reads is blocked
   while the token is lapsed.
@@ -79,7 +74,6 @@ MCP tools lapse. This matched the observed behavior exactly.
   vault or repo.
 
 ## Provenance scorecard
-
 | Claim | Standing |
 | --- | --- |
 | Exact error string; git unaffected; recurs on long sessions | `[EVIDENCE]` (this session) |
@@ -94,7 +88,6 @@ end. Treat as well-corroborated across several reports, not a single
 authoritative spec.*
 
 ## Sources
-
 - [Use Claude Code on the web — official docs](https://code.claude.com/docs/en/claude-code-on-the-web)
 - [anthropics/claude-code #29718 — Auto-refresh MCP OAuth tokens on expiry](https://github.com/anthropics/claude-code/issues/29718)
 - [anthropics/claude-code #28262 — MCP OAuth tokens not auto-refreshing despite valid refresh tokens](https://github.com/anthropics/claude-code/issues/28262)

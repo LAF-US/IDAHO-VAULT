@@ -5,4 +5,4 @@ related:
 - Sandpoint
 authority: LOGAN
 ---
-former Bonner County Commissioner
+former Bonner County Commissioner 

@@ -13,10 +13,9 @@ related:
   - lfinneytweets
 ---
 
-The kids *aren't* alright. <https://t.co/xq29gTGWus>
+The kids *aren't* alright. https://t.co/xq29gTGWus
 
 ## Links
-
-- <https://x.com/twinfallstn/status/1236707522267971585>
+- https://x.com/twinfallstn/status/1236707522267971585
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1236720096430764032)

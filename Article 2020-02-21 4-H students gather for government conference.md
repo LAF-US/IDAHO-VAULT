@@ -18,13 +18,13 @@ related:
 - social media
 authority: LOGAN
 ---
-Secondary source: <https://www.loganfinney.com/idaho-legislature-2020/2/21/4-h-government-conference>
+Secondary source: https://www.loganfinney.com/idaho-legislature-2020/2/21/4-h-government-conference 
 
-Logan Finney, McClure Center
+Logan Finney, McClure Center 
 
-BOISE — Approximately 200 students from across the state gathered in Boise to learn about government and civic engagement. Idaho’s annual 4-H Know Your Government Conference took place over President’s Day Weekend.
+BOISE — Approximately 200 students from across the state gathered in Boise to learn about government and civic engagement. Idaho’s annual 4-H Know Your Government Conference took place over President’s Day Weekend. 
 
-The 4-H Youth Development Program is a community-based educational outreach program for ages five to eighteen. The national organization is supported by the U.S. Department of Agriculture and administered through state land-grant university extension offices. The University of Idaho Extension delivers 4-H programs in every county in the State of Idaho.
+The 4-H Youth Development Program is a community-based educational outreach program for ages five to eighteen. The national organization is supported by the U.S. Department of Agriculture and administered through state land-grant university extension offices. The University of Idaho Extension delivers 4-H programs in every county in the State of Idaho. 
 
 The Know Your Government Conference is a two-year project where 4-H’ers in eighth and ninth grades participate in either a judicial track or legislative track. Those in the judicial track participate in a mock trial. Bills considered by the mock legislature this year covered topics like veterans’ health coverage, agricultural education, and a program for pregnant mothers who give birth while incarcerated.
 

@@ -4,4 +4,4 @@ related:
 - outfitters and guides
 authority: LOGAN
 ---
-occupational and professional licensing board for outfitters and guides
+occupational and professional licensing board for outfitters and guides 

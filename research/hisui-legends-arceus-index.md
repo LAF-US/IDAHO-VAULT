@@ -13,7 +13,6 @@
 Master index for Hisui's notable characters.
 
 **Note**: Hisui does NOT have traditional Gym Leaders, Elite Four, or Champions. It features:
-
 - Mission system with noble Pokémon
 - Galaxy Team members as antagonists
 - Professor Laventon as research guide
@@ -38,7 +37,6 @@ The Galaxy Team is the survey corps the player joins; it is not a roster of type
 > Note: Cyrus is **not** a Hisui-era character and has been removed from this index. The earlier "Galaxy Team Commanders" roster of type specialists was not canonical and has been replaced with the corrected leadership above.
 
 ### Individual Files
-
 - [ ] Commander Kamado
 - [ ] Cyllene
 
@@ -49,14 +47,13 @@ The Galaxy Team is the survey corps the player joins; it is not a roster of type
 Wardens look after Hisui's noble Pokémon. (Names below are noted where confidently known; this list may be incomplete and is not a type-specialist roster.)
 
 | Warden | Noble Pokémon | Location |
-| -------- | --------------- | ---------- |
+|--------|---------------|----------|
 | **Lian** | Kleavor (Bug/Rock) | Obsidian Fieldlands |
 | **Arezu** | Lilligant (Grass) | Crimson Mirelands |
 | **Melli** | (Wormadam/Bug) | Crimson Mirelands |
 | **Gaeric** | Avalugg (Ice) | Alabaster Icelands |
 
 ### Individual Files
-
 - [ ] Lian
 - [ ] Arezu
 - [ ] Melli
@@ -67,13 +64,12 @@ Wardens look after Hisui's noble Pokémon. (Names below are noted where confiden
 ## Major Opponents and Narrative Figures
 
 | Role | Name | Notes | E1 |
-| ------ | ------ | ------- | ---- |
+|------|------|-------|----|
 | Diamond Clan Leader | **Adaman** | Leads the Diamond Clan | Yes |
 | Pearl Clan Leader | **Irida** | Leads the Pearl Clan | Yes |
 | Final antagonist | **Volo** | Late-game opponent | Yes |
 
 ### Individual Files
-
 - [ ] Adaman
 - [ ] Irida
 - [ ] Volo
@@ -88,7 +84,6 @@ Wardens look after Hisui's noble Pokémon. (Names below are noted where confiden
 | Rival | **Rei/Akari** | Starter-dependent | Yes |
 
 ### Individual Files
-
 - [ ] Laventon
 - [ ] Rei/Akari
 
@@ -97,7 +92,6 @@ Wardens look after Hisui's noble Pokémon. (Names below are noted where confiden
 ## Noble Pokémon
 
 Hisui features noble Pokémon that must be calmed:
-
 - Kleavor (Bug/Rock) - Obsidian Fieldlands
 - Lilligant (Grass) - Crimson Mirelands
 - Arcanine (Fire) - Cobalt Coastlands
@@ -109,7 +103,7 @@ Hisui features noble Pokémon that must be calmed:
 ## Research Status
 
 | Category | Total | Completed | Remaining | % |
-| ---------- | ------- | ----------- | ----------- | --- |
+|----------|-------|-----------|-----------|---|
 | Galaxy Team Leadership | 2 | 0 | 2 | 0% |
 | Wardens | 4 | 0 | 4 | 0% |
 | Major Opponents/Figures | 3 | 0 | 3 | 0% |
@@ -119,7 +113,6 @@ Hisui features noble Pokémon that must be calmed:
 ---
 
 ## Next Steps
-
 1. Start with **Commander Kamado** (Galaxy Team Leader)
 2. Use adapted template for non-Gym Leader characters
 

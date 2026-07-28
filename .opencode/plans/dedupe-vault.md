@@ -1,7 +1,6 @@
 # Deduplication Script - IDAHO-VAULT
 
 ## Scope
-
 - Root (Obsidian Vault): ~28,119 files
 - !/ (Nest): ~197 files
 

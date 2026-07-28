@@ -9,4 +9,4 @@ related:
 - national wildlife refuge
 authority: LOGAN
 ---
-national wildlife refuge for migratory birds in Bear Lake County near Bear Lake
+national wildlife refuge for migratory birds in Bear Lake County near Bear Lake 

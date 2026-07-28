@@ -76,7 +76,6 @@ Kelly Moysh provided diuretic Lasix pills to one or more students on the wrestli
 The PSC did not take any action on his license. The PSC’s administrative complaint recommends suspending his teaching certification until he: completes an ethics, drug-free workplace and understanding academic dishonesty courses; and an honoring the game course from Positive Coaching Alliance.
 
 # Current administrative complaints
-
 EdNews obtained four additional administrative complaints through a record’s request. The PSC has not made a final decision against the teacher, staff or administrator being investigated for violating Idaho Code. The state provides an opportunity to contest the allegations contained in the complaint during its administrative proceeding, if requested by the person accused of wrongdoing. One or more of the cases could be placed on the PSC’s next scheduled meeting for disciplinary decisions.
 
 ### Cory Gaylor — Kuna School District
@@ -96,7 +95,6 @@ Ronald Stone was convicted in 2022 of two counts of lewd conduct with a minor un
 Donald B. Young made inappropriate comments to colleagues and students, such as a desire to have sex with colleagues and commenting on female students’ bodies. He holds an occupational specialist teaching certificate with auto maintenance and light repair endorsements. He was employed by COSSA Schools — Parma, Notus, Wilder and Marsing schools districts – during the 2022-23 school year. The PSC recommends suspending his certifications until he completes ethics, boundaries and classroom management courses. Evidence of completion must be provided to the commission prior to consideration for reinstatement, according to the administrative complaint.
 
 # Executive committee recommendations
-
 The PSC’s executive committee went into a short executive session to review three cases. In open session, they did not use names but case file numbers. They declined a counteroffer in case 22317 (Kelly Moysh), recommended to permanently revoke the teacher’s certificate in case 22327 and revoke the teacher’s certificate in case 22314. EdNews requested more information on cases 22327 and 22314 but was informed that these documents are not currently a public record. These cases could come before the PSC at a future meeting.
 
 The PSC staff reported that two complaints had been reviewed and returned without an administrative complaint issued; there are three new cases for the executive committee to review at its next meeting and eight new cases recently opened that could come before the PSC for review.

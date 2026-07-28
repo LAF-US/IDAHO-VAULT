@@ -5,6 +5,5 @@ related:
 - Idaho Leaders United
 authority: LOGAN
 ---
-retired Idaho Air National Guard brigadier general
-
+retired Idaho Air National Guard brigadier general 
 - Idaho Leaders United board member

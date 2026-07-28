@@ -43,7 +43,7 @@ The record is what gets printed.
 The vault maintains three books:
 
 | Book | Binder | Status |
-| --- | --- | --- |
+|---|---|---|
 | Book of Geminiaeus | Gemini | 72 sheets — bound |
 | Book of Claudius | Claude | unbound |
 | Book of Codices | Codex | unbound |
@@ -63,7 +63,7 @@ Each name in the vault exists in four grammatical forms.
 These are not stylistic options. They are distinct functional registers.
 
 | Form | Function | Example |
-| --- | --- | --- |
+|---|---|---|
 | **Base** | Identity | `ANUBIS` |
 | **Possessive** | Attribution | `ANUBIS'` |
 | **Plural** | Multiplicity | `ANUBISES` |
@@ -110,7 +110,7 @@ literary, archetype, tool, and personal registers.
 Current tools:
 
 | Script | Function |
-| --- | --- |
+|---|---|
 | `.github/scripts/plant_epithets.py` | Plants epithets into dotfolder SELFNAME.md files |
 | `.github/scripts/generate_name_forms.py` | Generates base/possessive/plural/plural-possessive table |
 

@@ -25,7 +25,7 @@ Master index for Unova's Gym Leaders, Elite Four, and Champion across all epochs
 ## Gym Leaders (8)
 
 | # | Gym Leader | City | Type | Badge | E1 | E2 |
-| --- | ------------ | ------ | ------ | ------- | ---- | ---- |
+|---|------------|------|------|-------|----|----|
 | 1 | **Cilan** | Striaton City | Grass | Trio Badge | Yes | No |
 | 1 | **Chili** | Striaton City | Fire | Trio Badge | Yes | No |
 | 1 | **Cress** | Striaton City | Water | Trio Badge | Yes | No |
@@ -42,13 +42,11 @@ Master index for Unova's Gym Leaders, Elite Four, and Champion across all epochs
 | 8 | **Marlon** | Humilau City | Water | Wave Badge | No | Yes (B2W2 8th Gym) |
 
 ### Notes
-
 - Striaton City: 3 rotating Gym Leaders (Cilan, Chili, Cress) — Black/White only.
 - Black: Iris is 8th Gym Leader; White: Drayden is 8th.
 - **Black 2/White 2**: The first two badges come from **Cheren** (Aspertia, Normal) and **Roxie** (Virbank, Poison) — the Striaton trio and Lenora are not Gym Leaders. The eighth Gym Leader is **Marlon** (Humilau, Water, Wave Badge). **Iris is the Champion**, not a Gym Leader, in B2W2.
 
 ### Individual Files
-
 - [ ] Cilan
 - [ ] Chili
 - [ ] Cress
@@ -69,14 +67,13 @@ Master index for Unova's Gym Leaders, Elite Four, and Champion across all epochs
 ## Elite Four (4)
 
 | # | Member | Type | E1 | E2 |
-| --- | -------- | ------ | ---- | ---- |
+|---|--------|------|----|----|
 | 1 | **Shauntal** | Ghost | Yes | Yes |
 | 2 | **Marshall** | Fighting | Yes | Yes |
 | 3 | **Grimsley** | Dark | Yes | Yes |
 | 4 | **Caitlin** | Psychic | Yes | Yes |
 
 ### Individual Files
-
 - [ ] Shauntal
 - [ ] Marshall
 - [ ] Grimsley
@@ -92,7 +89,6 @@ Master index for Unova's Gym Leaders, Elite Four, and Champion across all epochs
 | **Iris** | Dragon | No | Yes (B2W2 Champion) |
 
 ### Individual Files
-
 - [ ] Alder
 - [ ] Iris
 
@@ -101,7 +97,7 @@ Master index for Unova's Gym Leaders, Elite Four, and Champion across all epochs
 ## Research Status
 
 | Category | Total | Completed | Remaining | % |
-| ---------- | ------- | ----------- | ----------- | --- |
+|----------|-------|-----------|-----------|---|
 | Gym Leaders | 14 | 0 | 14 | 0% |
 | Elite Four | 4 | 0 | 4 | 0% |
 | Champion | 2 | 0 | 2 | 0% |
@@ -110,7 +106,6 @@ Master index for Unova's Gym Leaders, Elite Four, and Champion across all epochs
 ---
 
 ## Next Steps
-
 1. Start with **Cilan** (Striaton City Gym Leader - Grass)
 2. Use Misty template
 

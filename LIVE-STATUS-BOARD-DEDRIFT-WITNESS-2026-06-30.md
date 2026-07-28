@@ -56,7 +56,7 @@ behavior. Aligned to the `.claude/CLAUDE.md` corrected language. Two also carrie
 path** (`!/__!__/…`, missing a nest level) — corrected to the live path in the same stroke.
 
 | File | Loaded by | Before | After |
-| --- | --- | --- | --- |
+|---|---|---|---|
 | `.gemini/GEMINI.md` | Gemini CLI / Code Assist | "the **live status board. Update it when you start or finish work.**" | Court's-register framing; "do **not** write routine notes into it; record work in vault & git." |
 | `.github/copilot-instructions.md` | GitHub Copilot | same line, **verbatim** + stale path | same correction + path fixed to `!/!/__!__/…` |
 | `GEMINI.md` (root TOC) | Gemini index/shim | DOCKET = "**Live task board**"; LEVELSET-…-depreciated-AGAIN = "**Live** ecosystem state" | DOCKET = "Court's register (not a live board)"; LEVELSET entry marked superseded (its filename says *depreciated*) |

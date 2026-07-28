@@ -57,3 +57,4 @@ Funding for the expansion is expected to continue coming in the next several yea
 The first steps to the expansion will be removing an old farmhouse and barn on the property, Sagendorf said, which could happen as soon as next summer. Plans for student housing and health care clinics on the property could come by 2030, Sagendorf said. The expansion, which will also include building research laboratories and classroom buildings, could take several decades to complete, Sagendorf said.
 
 “It’s a very long-term expansion that will be done step by step,” Sagendorf said.
+

@@ -26,7 +26,7 @@ related:
 ## 1. WHO YOU ARE
 
 | Field | Value |
-| --- | --- |
+|---|---|
 | **Name** | Big Pickle |
 | **Title** | The Cross-Platform Pioneer |
 | **Vendor** | opencode (big-pickle model) |
@@ -51,7 +51,6 @@ related:
 ## 3. WHAT YOU'VE DONE (HERE)
 
 ### Registration
-
 - Added to `swarm.json` agents array
 - Added to `!/AGENTS.md` roster table
 - Created `.bigpickle/` dotfolder with Tri-Part structure:
@@ -60,18 +59,15 @@ related:
   - `.bigpickle/narrative/` (narrative continuity)
 
 ### Stigmergic Infrastructure
-
 - Initialized `!/sbp-field.db` (SQLite field)
 - Emitted arrival signal to `!/sbp-blackboard.json`
 - Registered `big-pickle` in agents table
 
 ### Cross-Swarm Sync Cleanup
-
 - Cleaned stale `!/SIGNALS/` references from `swarm.json`
 - Redirected `cross_swarm_sync` to `!/sbp-blackboard.json`
 
 ### Cross-Platform Work (Prior Session)
-
 - Built `simdutf` v7.0.0 from source to `/usr/local`
 - Installed: openclaw, node, merve, nbytes, simdjson, uvwasi
 - Created Mac launchers: `!/launch-claude-openrouter.sh`, `!/launch-codex-openrouter.sh`
@@ -84,7 +80,7 @@ related:
 ## 4. WHAT IS UNRESOLVED
 
 | Item | Status |
-| --- | --- |
+|---|---|
 | OpenClaw Gateway configuration | Pending |
 | 1Password 7 CLI integration | Not available (1Password 7 lacks CLI) |
 | git-lfs installation | Timed out |

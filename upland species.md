@@ -14,8 +14,7 @@ related:
 - turkey
 ---
 
-upland species for birds hunting
-
+upland species for birds hunting 
 - turkey
 - pheasant
 - grouse

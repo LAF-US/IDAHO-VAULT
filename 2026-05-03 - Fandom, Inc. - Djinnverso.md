@@ -11,3 +11,4 @@ Djinnverso is the series' rule-bound game of chance.
 It is played with elemental dice and a crystal cup, and the page stresses that djinn power is forbidden during play. That makes the game a pure test of bluff, chance, and structured rules rather than raw magical force.
 
 For the vault, it is another example of a world where the system is only interesting because it constrains power with explicit rules.
+

@@ -7,13 +7,11 @@
 ## Installation
 
 Run the setup script:
-
 ```batch
 !\setup-1password-cli.bat
 ```
 
 Or manually:
-
 ```batch
 scoop install 1password
 ```
@@ -21,14 +19,12 @@ scoop install 1password
 ## Quick Commands
 
 ### Sign In
-
 ```batch
 op account add --address my.1password.com --email your@email.com
 op signin
 ```
 
 ### Basic Usage
-
 ```batch
 # List vaults
 op vault list
@@ -54,12 +50,10 @@ persistent environment variables.
 Store credentials in 1Password with specific field names, then reference them in OpenClaw config.
 
 **1Password Item: "OpenClaw Discord Bot"**
-
 - Field: `token` = Your Discord bot token
 - Field: `applicationId` = Your Discord app ID
 
 **openclaw.json:**
-
 ```json
 "discord": {
   "enabled": true,
@@ -99,7 +93,6 @@ openclaw secrets audit --json
 ## Store Channel Credentials
 
 ### Discord
-
 ```batch
 # Create item in 1Password
 op item create --category=login \
@@ -110,7 +103,6 @@ op item create --category=login \
 ```
 
 ### Signal
-
 ```batch
 op item create --category=login \
   --title="OpenClaw Signal" \
@@ -119,7 +111,6 @@ op item create --category=login \
 ```
 
 ### Telegram
-
 ```batch
 op item create --category=login \
   --title="OpenClaw Telegram Bot" \
@@ -136,7 +127,6 @@ set OP_CONFIG_DIR=%USERPROFILE%\.op
 ```
 
 For automation (service accounts):
-
 ```batch
 set OP_SERVICE_ACCOUNT_TOKEN=ops_...
 ```
@@ -144,7 +134,7 @@ set OP_SERVICE_ACCOUNT_TOKEN=ops_...
 ## Troubleshooting
 
 | Issue | Solution |
-| ------- | ---------- |
+|-------|----------|
 | `op: command not found` | Run `scoop install 1password` |
 | `not currently signed in` | Run `op signin` |
 | `item not found` | Check exact item name with `op item list` |

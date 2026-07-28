@@ -15,10 +15,9 @@ related:
   - lfinneytweets
 ---
 
-RT @blotmag: Set a reminder, Blot hits stands in one week ⏰ <https://t.co/0Q5FNkUjFa>
+RT @blotmag: Set a reminder, Blot hits stands in one week ⏰ https://t.co/0Q5FNkUjFa
 
 ## Media
-
 - ![](https://pbs.twimg.com/media/D0SMlFIVAAA_8nX.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1100204991074070528)

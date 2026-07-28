@@ -63,7 +63,6 @@ State leaders say they remain unclear on exactly which waters have lost federal 
 “Every state’s risk has increased,” said Julian Gonzalez, senior legislative counsel for policy and legislation at Earthjustice, an environmental law group. “The whole point of the Clean Water Act was to ensure that there’s not a patchwork of regulations. Even when EPA had full jurisdiction, there were tons of enforcement issues all across the country. This is only going to exacerbate them.”
 
 ### Staffing shortfalls abound to manage water quality
-
 In May, the Supreme Court ruled that the Clean Water Act does not cover wetlands that lack a continuous surface connection to a larger body of water, which excludes many waters that connect underground. The court also narrowed the law to exclude from protection “ephemeral” streams that flow only seasonally.
 
 Of the nation’s 118 million acres of wetlands, more than half could lose federal protection under the new definition, Earthjustice estimated. The EPA in August issued a new rule revising its regulation known as the “waters of the United States” rule to meet the court’s limitations.
@@ -87,7 +86,6 @@ A few states already have passed laws that are broader than the federal standard
 Last year, New York lawmakers passed a measure to expand the wetlands covered by state regulators, in part because of the pending Supreme Court case. Officials with the state Department of Environmental Conservation did not grant an interview about that effort, but supplied a statement saying the expansion would protect an additional 1 million acres of wetlands.
 
 ### States making investments in wetlands protection programs
-
 Other states are working to put firmer protections on the books. In New Mexico, officials already had been working prior to the ruling to establish a surface water permitting program.
 
 While the state currently has standards to protect wetlands, it’s enforcing them via administrative orders rather than a well-defined program. Agency officials have been coordinating with counterparts in Washington state, which is also using administrative orders, even as both states work toward a more defined program.

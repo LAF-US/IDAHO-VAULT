@@ -47,7 +47,7 @@ It does not classify authority, assign offices, or adjudicate registry claims.
 Those are [[CROSSFRAMING]] operations.
 
 | Scope | What Is Counted |
-| --- | --- |
+|---|---|
 | Nest (`!/`) | Collective routing surfaces, DOCKET entries, bootstrap files |
 | Persona chambers (`.*/`) | Dotfolders with tri-anchor presence |
 | Root | Top-level root folders (per `topology_census.py`'s `root.iterdir()` scan) |

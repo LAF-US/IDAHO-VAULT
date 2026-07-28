@@ -143,7 +143,7 @@ This is the **amendment to the divine-right reading**: the doctrine's danger is 
 The five registers above sort cleanly into a **quartet of cosmological strengths** (Registers 2, 3, 4, 5 each pin a distinct underwriter), with Register 1 (real-world law) sitting on the contested edge of each:
 
 | Register | Underwriter | Mechanism |
-| --- | --- | --- |
+|---|---|---|
 | **Hill / Narnia** (cosmological-enforcement) | The Goddess; the Deeper Magic from before the Dawn of Time | Oaths held by world-fabric; the Stone Table cracks |
 | **Mull / Fablehaven** (metaphysical-binding) | The covenant as world-rule | Break the binding, the world rearranges; honor it, the binding holds the world |
 | **Martin / Westeros** (cosmological-recording) | The Old Gods; weirwood-network witness | No enforcement; *witnessing* persists. "The North remembers." |
@@ -197,7 +197,6 @@ Where the cub generalized about real-world federal Indian law, the architect (a 
 ## Sources
 
 ### Vault internal
-
 - [[VOLTAIRE-HRE-READING-2026-06-08]]
 - [[DIVINE-RIGHT-OF-KINGS-READING-2026-06-08]]
 - [[ICEMARK-DEEP-CUT-2026-06-07]]
@@ -205,7 +204,6 @@ Where the cub generalized about real-world federal Indian law, the architect (a 
 - [[RESEARCH_Icemark-Lore-Compendium-2026-06-03]]
 
 ### External
-
 - *McGirt v. Oklahoma*, 591 U.S. ___ (2020) — Gorsuch, J., for the majority
 - *Cherokee Nation v. Georgia*, 30 U.S. 1 (1831) — Marshall, C.J. — "domestic dependent nations"
 - Stuart Hill, *The Cry of the Icemark* (2005); *Blade of Fire* (2006); *Last Battle of the Icemark* (2008); *Prince of the Icemark* (2013)

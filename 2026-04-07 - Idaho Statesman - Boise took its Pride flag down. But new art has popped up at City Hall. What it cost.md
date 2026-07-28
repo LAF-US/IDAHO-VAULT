@@ -29,7 +29,7 @@ The art appears to be drawing some attention; one woman, getting out of her park
 
 ![After removing Pride Flags at Boise City Hall, per new laws passed by the Idaho Legislature, the flagpoles are now rainbow striped and a sign is visible in a window on the front of the building, Tuesday, April 7, 2026.](https://www.idahostatesman.com/public/latest-news/t70/picture315328150/alternates/FREE_1140/BOI_0407boisecityhallsign.JPG)
 
-A rainbow sign is visible in a window on the front of Boise City Hall after the Pride flag was taken down. Darin Oswald <doswald@idahostatesman.com>
+A rainbow sign is visible in a window on the front of Boise City Hall after the Pride flag was taken down. Darin Oswald doswald@idahostatesman.com
 
 Boise spokesperson Maria Ortega confirmed in an email that the city is responsible for rainbow lights on City Hall, the wrapped flagpoles and the window display. The window display and the flagpoles cost just under $6,000, Ortega said, and came from the city’s existing operating budget. The lights did not cost additional money, she said.
 
@@ -47,7 +47,7 @@ At least one Boise official had hinted at finding another way around the law. Co
 
 ![Boise City has wrapped three flagpoles in rainbow colors in front of City Hall. The new chapter in an ongoing saga between Boise and the Idaho State Legislature was unveiled, Tuesday, April 7, 2026.](https://www.idahostatesman.com/public/latest-news/reidw2/picture315328293/alternates/FREE_1140/BOI_0407boisecityrainbow.JPG)
 
-Three Boise flagpoles are wrapped in rainbow colors after a new law forced the city to take its Pride flag down. Darin Oswald <doswald@idahostatesman.com>
+Three Boise flagpoles are wrapped in rainbow colors after a new law forced the city to take its Pride flag down. Darin Oswald doswald@idahostatesman.com
 
 McLean has been clear about her support for the LGBTQ+ community. She [took the Pride flag down](https://www.idahostatesman.com/news/local/article315253063.html) minutes after Little signed the bill but said in a statement that LGBTQ+ residents are “an essential part of Boise. You are welcome here. You belong here. And no law can change that.”
 

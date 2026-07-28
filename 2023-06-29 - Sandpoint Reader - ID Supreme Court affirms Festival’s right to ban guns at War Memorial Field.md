@@ -45,7 +45,7 @@ authority: LOGAN
 
 The yearslong legal controversy over the Festival at Sandpoint’s prohibition of firearms at War Memorial Field during its yearly summer concert series has ended with the Idaho Supreme Court, which handed down a unanimous ruling June 22 upholding the nonprofit’s right as a lessee to bar guns from the publicly owned venue.
 
-According to the published opinion of the court, Justice John R. Stegner wrote that the issue concerned “whether a private party that leases public property from an Idaho municipality may govern those who come and go from its property during the lease. The short answer is yes.”
+According to the published opinion of the court, Justice John R. Stegner wrote that the issue concerned “whether a private party that leases public property from an Idaho municipality may govern those who come and go from its property during the lease. The short answer is yes.” 
 
 That decision concurs with the 2021 ruling in District Court that dismissed with prejudice a lawsuit brought by Scott Herndon — now District 1 senator — and area resident Jeff Avery, with support from Boise-based lobby group Idaho Second Amendment Alliance and Washington-based Second Amendment Foundation.
 
@@ -67,7 +67,7 @@ That was the “fundamental” issue at the center of the case, the court decide
 
 Finally, the court wrote that Herndon et al. overshot their constitutional argument, “Relying on sweeping claims grounded in the Second Amendment,” asking the court “to second guess, not what is stated in the lease contract (which makes no mention of weapons at all), but the actions of the City’s mayor and city council in making their determination to lease to a private entity.
 
-“Nothing within the terms of the lease between the City and The Festival addresses carrying firearms or restricts the rules that The Festival may adopt while using the park for its private concerts,” justices added.
+“Nothing within the terms of the lease between the City and The Festival addresses carrying firearms or restricts the rules that The Festival may adopt while using the park for its private concerts,” justices added. 
 
 “Beyond that, both the Second Amendment and Article I, Section 11 of the Idaho Constitution apply only to government actors, not private parties,” the ruling stated. “Thus, the lease does not violate the public policy stated in Idaho Code section 18-3302J, the Second Amendment or the Idaho Constitution, Article 1, section 11.”
 
@@ -75,7 +75,7 @@ Furthermore, the court ruled, “The Appellants claim that the City and The Fest
 
 In a statement issued June 22, the city of Sandpoint expressed its satisfaction with the ruling and “look[ed] forward to a successful Festival at Sandpoint concert season next month,” according to Mayor Shelby Rognstad.
 
-The Festival will celebrate its 40th annual season Thursday, July 27-Sunday, Aug. 6, bringing artists from around the country to War Memorial Field. In previous statements, Festival officials have said that without a no-weapons policy, many musical acts would be contractually obligated not to perform at the venue — potentially threatening the estimated $3.8 million or more that the event generates in regional economic activity. The city in its statement went further, adding that in addition the Festival is responsible for more than $1.7 million gross regional product and more than $1 million in total compensation along with 37 full-time-equivalent jobs.
+The Festival will celebrate its 40th annual season Thursday, July 27-Sunday, Aug. 6, bringing artists from around the country to War Memorial Field. In previous statements, Festival officials have said that without a no-weapons policy, many musical acts would be contractually obligated not to perform at the venue — potentially threatening the estimated $3.8 million or more that the event generates in regional economic activity. The city in its statement went further, adding that in addition the Festival is responsible for more than $1.7 million gross regional product and more than $1 million in total compensation along with 37 full-time-equivalent jobs. 
 
 “[W]e are pleased to have finally reached a resolution in the courts,” Rognstad added. “The city has leased War Memorial Field to the Festival of Sandpoint for its concert series for almost 40 years. The Festival sets the rules for its concerts. The city of Sandpoint does not have a policy restricting the public carrying guns on public property and the Sandpoint Police Department does not enforce rules established by the Festival for its events.”
 
@@ -91,7 +91,7 @@ Despite the ruling by the District Court and unanimous decision by the Idaho Sup
 
 Based on previous reporting, it has already been established that private entities in Sandpoint and elsewhere in Idaho lease public property and have instituted weapons bans — including Bonner General Health.
 
-Herndon’s statement speculated that political subdivisions may rent public spaces such as national forests, state parks, county fairs and the like to private parties, then ban firearms.
+Herndon’s statement speculated that political subdivisions may rent public spaces such as national forests, state parks, county fairs and the like to private parties, then ban firearms. 
 
 Midway through his second term in the Idaho Senate, Herndon vowed to “go to the mat to find a legislative solution for Idaho’s gun owners.”
 

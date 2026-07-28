@@ -28,4 +28,4 @@ Breaking down Idaho’s 2023 population growth reveals a shift, with 78% attribu
 
 Despite a slowdown in domestic migration from 2021, Idaho’s estimated increase of 15,389 still places it fourth in percentage change.
 
-The U.S. Census Bureau expects to release population estimates for Idaho’s metropolitan statistical areas, counties and cities in Spring 2024. Full tables are accessible at <https://lmi.idaho.gov/census>.
+The U.S. Census Bureau expects to release population estimates for Idaho’s metropolitan statistical areas, counties and cities in Spring 2024. Full tables are accessible at https://lmi.idaho.gov/census.

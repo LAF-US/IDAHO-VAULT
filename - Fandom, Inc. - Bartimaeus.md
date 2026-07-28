@@ -156,6 +156,7 @@ Bartimaeus makes many claims throughout the books, many of which are only partly
 - **Defeated an afrit encased in the bones of Gladstone**
 - **Killed or otherwise destroyed the fortunes of several of his masters, such as [Ezekiel](https://bartimaeus.fandom.com/wiki/Ezekiel "Ezekiel") and [Khaba](https://bartimaeus.fandom.com/wiki/Khaba "Khaba")**
 
+  
 \* **Bold** indicates that there is direct evidence provided in the books that the claim is in some manner true.
 
 ## Relationships

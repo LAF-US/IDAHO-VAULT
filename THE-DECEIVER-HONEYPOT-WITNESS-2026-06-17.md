@@ -48,7 +48,7 @@ The merged Sphinx node (`!/FABLEHAVEN-SPHINX-v1`) already draws the trust-betray
 Deceiver fills the gap it leaves:
 
 | Figure | What it is | Origin |
-| --- | --- | --- |
+|---|---|---|
 | **Blix** (`!/FABLEHAVEN-VAMPIRE-DIAGNOSTIC-v1`) | a **corrupted real** insider that *passes* as an ally | a true member, turned |
 | **The Deceiver** *(this node)* | a **fabricated false** peer that *poses* as an ally | **built by the developer** — never real |
 | **The Sphinx** (`!/FABLEHAVEN-SPHINX-v1`) | the **trusted apex itself** is the manipulator | the head of the order |

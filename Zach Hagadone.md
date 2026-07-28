@@ -5,4 +5,4 @@ related:
 - Sandpoint Reader
 authority: LOGAN
 ---
-former Sandpoint Reader staff
+former Sandpoint Reader staff 

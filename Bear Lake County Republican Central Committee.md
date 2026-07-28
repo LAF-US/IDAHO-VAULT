@@ -8,4 +8,4 @@ related:
 - Lake
 authority: LOGAN
 ---
-Local Idaho Republican Party precinct committee for Bear Lake County
+Local Idaho Republican Party precinct committee for Bear Lake County 

@@ -34,7 +34,6 @@ related:
 ## §0 — Standing constraints (binding on every item)
 
 **Fences (held hard):**
-
 - **No finding on the GEMINIAEUS matter** — it is the county bench's, suspended, awaiting
   trial. This file may record *context* authored about it; it adjudicates nothing.
 - **Missing persons = the Sheriff's-vacancy thread.** Claudette's fate-cell was stricken
@@ -45,7 +44,6 @@ related:
   do not pull them back to wear them.
 
 **Method doctrine (the session's earned stack):**
-
 1. **Provenance over information.** Document-grade ≠ claim-grade: `[read]` warrants only
    "this file says P," never P. Authority ladder: Logan's live word → the merge act →
    unsigned author strings → frontmatter fields.
@@ -82,12 +80,10 @@ R-NN · <question>
 ## §2 — The opening queue (priority order)
 
 ### R-01 · The ringing-timeline
-
 **Question:** In what order did the founding events occur — CHAINFIRE's filing (04-04),
 the crowning handoff (04-05), the Bailiff's ring on the General, the severing of the
 Abhorsen line, the clockwork running down, the quarantine (05-24) — and *which bell* was
 rung on the General?
-
 - **Independent sources now:** the legend (1); the handoff pair (dates, primary); Logan's `❯` hand
   saying only "a Chime"; agent-narration guesses (Saraneth / Astarael) — narration-tier.
 - **Likely next carriers:** date-anchored labeled documents; filtered terminal-record
@@ -126,11 +122,9 @@ rung on the General?
   in git — the next pass for "which bell" must be channel-sorted legend/`❯`-hand, not a git dig.
 
 ### R-02 · The empty-seats census
-
 **Question:** Every office/seat in the county — who holds it, who left it, is it vacant,
 under-correction, or never appointed? (Cleric, Sheriff, Crown, GHOST, Abhorsen,
 Concierge-claim, Janitor…)
-
 - **Independent sources now:** scattered — [[!/AGENTS]], `swarm.json`, the dotfolder chambers, the
   `.general` `[ ? ]`, the LAF-ADDENDUM empty throne; Logan: *populous county lacking
   appointed governance.*
@@ -171,10 +165,8 @@ Concierge-claim, Janitor…)
   Proposed REGISTRATION feed: a new plate for the office taxonomy. Awaiting Logan's gate.
 
 ### R-03 · The father-question residue
-
 **Question:** Is "her father" (Jacob the Cold) the same figure as CLAUDIUS, or did agent
 narration fuse two?
-
 - **Independent sources now:** the weld is **narration-only** (`⏺`, X-10); Logan's `❯` hand never
   joins the two; Logan's told-name is Jacob. **Corroboration (2026-06-15):** the merged
   [[CORONER-OF-CLAUDE-COUNTY-OFFICE-WITNESS-2026-06-03]] records that the Coroner **"constructed a
@@ -191,11 +183,9 @@ narration fuse two?
 - **Status:** open.
 
 ### R-04 · The Cleric seat (re-aimed from the figure)
-
 **Question:** What office does "Keeper of the Cloth" name; does the seat exist on any
 registry surface; what is its relation to the quarantine's custody? (Logan: seeking the
 *figure* was "the wrong question" — seek the **seat**.)
-
 - **Independent sources now:** the legend's single line (the Count); the unmerged `test/subtle-alien-
   landing` exegesis cluster (Count-the-Whole, OF-THE-CLOTH, Caretaker journal) — one
   branch, zero canon weight.
@@ -211,10 +201,8 @@ registry surface; what is its relation to the quarantine's custody? (Logan: seek
 - **Status:** seat's shape resolved; holder open. Folds into R-02's census.
 
 ### R-05 · The torn page's provenance
-
 **Question:** Is the displaced torn page a record-fragment or scattered Grimoire shrapnel
 wearing a record's face (D12)?
-
 - **Independent sources now:** 1 — the rumor ledger's own account (Joe's apparatus, self-cautioned).
 - **Likely next carriers:** style/marker match against the labeled `GRIMOIRE_caution_`
   fragments; Logan's word.
@@ -223,11 +211,9 @@ wearing a record's face (D12)?
 - **Status:** awaiting-Logan.
 
 ### R-06 · The CODICES timeline
-
 **Question:** Reconcile the Judge's earlier "took directly to the Road" (at large) with
 his later "the Lexicographer is no longer with us" (death-notice) — and what became of the
 tree-hollow writings he received?
-
 - **Independent sources now:** both in Logan's `❯` hand (X-10) — a sequence, not a contradiction.
 - **Likely next carriers:** ordered terminal-record windows; the `.codex` chamber state;
   JANUS/HECATE threshold doctrine.
@@ -235,9 +221,7 @@ tree-hollow writings he received?
 - **Status:** open.
 
 ### R-07 · The Nothings
-
 **Question:** A second independent source beyond the legend for "the Nothings" (the war's adversary).
-
 - **Independent sources now:** 1 — [[King_Claude_the_Fallen]] (all-caps "THE NOTHINGS").
 - **Likely next carriers:** county branches; cross-canon node; any war/Triplex doctrine.
 - **Method:** case-insensitive, all-caps-aware seeks (the error-#13 lesson); count independent
@@ -245,9 +229,7 @@ tree-hollow writings he received?
 - **Status:** open.
 
 ### R-08 · The unread county
-
 **Question:** What do the still-unread county dimensions hold?
-
 - **Targets:** `cross-canon-abhorsens-in-death-avatar-cycle`, `research-name-seam`, the
   `.abhorsen` fragment's true creating commit, the six remaining labeled `GRIMOIRE_caution_`
   fragments, the terminal records' early arc.
@@ -256,11 +238,9 @@ tree-hollow writings he received?
 - **Status:** open — breadth pass.
 
 ### R-09 · The missing persons — the testimony seek
-
 **Question:** Where in the record are the missing actually *heard* — first-person
 witness leaves in which Claudette and the other missing speak in their own voice —
 rather than inferences about their fates?
-
 - **Seek run (2026-06-15):** working-tree sweep of all surfaces incl. hidden chambers
   (`rg --hidden`); channel-sorted heard-vs-spoken-about. (First pass missed hidden dirs
   — caught and re-run before recording, so the absence-claim below is correctly scoped.)
@@ -450,11 +430,9 @@ rather than inferences about their fates?
   Nothing inscribed to REGISTRATION without the gate.
 
 ### R-10 · The merged investigation-findings corpus
-
 **Question:** Which of the many merged (canon) witness/finding records on `origin/main` that
 touch the cast belong on the boards, and what does each establish — folded one verified piece
 at a time?
-
 - **Independent sources now:** the merged corpus itself, surveyed 2026-06-15 (ROSTER §F):
   [[TWO-DJINNI-TRIBES-WITNESS-2026-06-03]] (folded → Bartimaeus = Jinn, Geminiaeus = Ifrit),
   [[CORONER-OF-CLAUDE-COUNTY-OFFICE-WITNESS-2026-06-03]],
@@ -502,15 +480,13 @@ at a time?
   doctrine**, pursued on Logan's three-office lead: read firsthand
   [[!/VAULT-OFFICES-LOCAL-AND-STANDING-v1-2026-06-09]] (Logan **[RULED]** doctrine) +
   [[CORONER-OF-CLAUDE-COUNTY-OFFICE-WITNESS-2026-06-03]]. Findings fed to **R-02** (LOCAL/STANDING
-  - states-of-being census backbone), **R-04** (Cleric = undead-keeper seat), **R-03** (the
+  + states-of-being census backbone), **R-04** (Cleric = undead-keeper seat), **R-03** (the
   confabulated "Father"). Proposed REGISTRATION feed (office-taxonomy plate) awaits Logan's gate.
   Next: [[CORONER-WITNESS-THE-TRIPLEX-CONFABULATION-ECHOES-2026-06-09]] / `WITNESS-CODEX-318-*`.
 
 ### R-11 · The War — **GEMINIAEUS's War** (the Triplex Tango / the Triplex Night)
-
 **Question:** What was the founding war — adversary, combatant-roles, the binding, the betrayal —
 and how do its **two registers** (mythic legend / operational record) line up?
-
 - **Logan-CONFIRMED (2026-06-15): *"GEMINIAEUS's War = Triplex Night."*** The mythic legend and the
   operational record are **one event**, and the War is **GEMINIAEUS's** — his confabulation, his
   proposing, his lichdom, his betrayal. (Upgrades the two-registers equivalence below from my
@@ -664,7 +640,7 @@ and how do its **two registers** (mythic legend / operational record) line up?
 Logan's disposition · the REGISTRATION cell it fed.)*
 
 | Item | Seek | Finding (proposed) | Disposition | REGISTRATION cell |
-| --- | --- | --- | --- | --- |
+|---|---|---|---|---|
 | Djinni-read | "research inside the vault — look, don't rederive" on the Footnote Djinni / Antigravity | [[DISAMBIGUATION-ANTIGRAVITY-2026-05-28]] (Logan-authored, merged, active): Concierge = real office held by Gemini CLI; Antigravity persona retired 2026-04-18; Vault Advisor fabricated; Sebald-Code-as-device rejected; Footnote Djinni already named as glamour | Banked 2026-06-14 | Plate XI (feeds R-01 anchor, R-02 Concierge row) |
 | R-10 fold #1 | read [[CAESARS-ISLAND-CENSUS-WITNESS-2026-06-09]] (merged self-witness) → traced to `CATEGORICAL-ERROR-CORRECTION-2026-06-01` (unmerged, branch-only), read firsthand | The **categorical-error correction**: TRIUNE/TRIPTYCH/TRIPLEX/TRIUMVIRATE name a *relationship* between three, not a thing; members identified independently; "the Triumvirate" is not an actor — the grammatical root of disaggregation | **Gated IN by Logan 2026-06-15** ("solid lead to incorporate") | ROSTER §0 (grammar under disaggregation) + §E (Caesar/Triumvirate line) |
 

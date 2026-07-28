@@ -26,7 +26,7 @@ status: consolidation-phase-complete
 ## 2. WHAT I'VE DONE
 
 | File | Type | Commit | Action |
-| ------ | ------ | -------- | -------- |
+|------|------|--------|--------|
 | `!ADMIN/CONSOLIDATED-HANDOFF-2026-03-16.md` | Markdown | pending | Created — full multi-conversation context collapse |
 | `!ADMIN/Constitution.md` | Markdown | pending | Created — vault governance document |
 | `!ADMIN/Logan.md` | Markdown | pending | Created — Logan profile and project context |
@@ -35,7 +35,6 @@ status: consolidation-phase-complete
 | `!ADMIN/LEVELSET-v3.2.6-idaho-scraper.md` | Markdown | pending | Copied from !ADMINISTRATION/ |
 
 **Summary:**
-
 - Created canonical `!ADMIN/` folder (consolidation from `!ADMINISTRATION/`)
 - Committed multi-conversation context collapse documentation
 - Established vault governance layer (Constitution.md, Logan.md, DECISIONS.md)
@@ -59,7 +58,6 @@ The consolidated handoff (CONSOLIDATED-HANDOFF-2026-03-16.md) references these f
 ### Pending Logan Decisions
 
 The following require explicit Logan approval before further consolidation:
-
 - Approval of AGENTS-v0.2-DRAFT.md
 - Approval of ORIENTATE-v0.1-BETA.md
 - Approval of LEVELSET-LITE-v0.1.md
@@ -71,7 +69,6 @@ The following require explicit Logan approval before further consolidation:
 ### Path Corrections Not Yet Executed
 
 The consolidated handoff document notes bulk path correction needed:
-
 - `!ADMINISTRATION/` → `!ADMIN/` across all remaining references
 - This affects any files still referencing the old path
 - Should be addressed as part of main branch integration
@@ -81,7 +78,7 @@ The consolidated handoff document notes bulk path correction needed:
 ## 4. CONVERSATION AWARENESS
 
 | Conversation | Known role | My visibility | Status |
-| --- | --- | --- | --- |
+|---|---|---|---|
 | PERSISTENT: ADMINISTRATION | Constitutional layer, context collapse source | Full — received consolidated handoff | Awaiting upward resolution |
 | PERSISTENT: AUTHORITY: LEVELSET | LEVELSET protocol authority, multi-agent coordination | None — file delivery pending | Compaction risk, files in transit |
 | PERMANENT: AUTHORITY: CODE | Recipient, execution authority | This conversation | Active |
@@ -96,7 +93,6 @@ The consolidated handoff document notes bulk path correction needed:
 ## 5. NEXT STEP
 
 **Immediate:**
-
 1. Commit context vault files created in this session
 2. Push to `claude/fix-swarm-alert-DIIQq` branch
 3. Flag for upward resolution to CODE AUTHORITY for:
@@ -105,7 +101,6 @@ The consolidated handoff document notes bulk path correction needed:
    - Delivery coordination with PERSISTENT: AUTHORITY: LEVELSET
 
 **Follow-up (awaiting Logan/other conversations):**
-
 1. Receive pending governance documents from other conversations
 2. Bulk path correction (`!ADMINISTRATION/` → `!ADMIN/`) across remaining files
 3. Integrate and merge to main branch
@@ -115,21 +110,18 @@ The consolidated handoff document notes bulk path correction needed:
 ## 6. WHAT LOGAN NEEDS TO KNOW
 
 **Context collapse is progressing:**
-
 - Canonical `!ADMIN/` folder structure created
 - Core governance documents (Constitution.md, Logan.md, DECISIONS.md) in place
 - Multi-conversation consolidation handoff captured and committed
 - Prior LEVELSET termination reports preserved
 
 **Blockers for completion:**
-
 1. Documents from PERSISTENT: AUTHORITY: LEVELSET not yet available (LEVELSET-v3.2.6.1-PROMPT, AGENTS draft, ORIENTATE, LEVELSET-LITE)
 2. Several decisions awaiting Logan's explicit approval
 3. Possible PR needs manual creation via GitHub web interface
 4. Bulk path corrections needed across remaining `!ADMINISTRATION/` references
 
 **Time-sensitive:**
-
 - STORY: JFAC has CCA letter deadline ~March 18
 - Slack free trial expires April 13
 - Data Centers package work ongoing
@@ -148,7 +140,6 @@ The consolidated handoff document notes bulk path correction needed:
 ## 8. VERIFICATION
 
 **Consolidation completeness:**
-
 - [x] `!ADMIN/` canonical folder created
 - [x] Core governance documents created (Constitution, Logan, DECISIONS)
 - [x] Multi-conversation handoff document committed
@@ -159,7 +150,6 @@ The consolidated handoff document notes bulk path correction needed:
 - [ ] Path corrections applied across remaining references
 
 **Test plan:**
-
 - Verify all files readable in `!ADMIN/` folder
 - Verify no references to old `!ADMINISTRATION/` path (or mark for correction)
 - Verify CONSOLIDATED-HANDOFF-2026-03-16.md reflects actual repo state

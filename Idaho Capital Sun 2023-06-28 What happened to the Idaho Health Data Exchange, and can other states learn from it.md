@@ -45,7 +45,6 @@ related:
 authority: LOGAN
 ---
 Audrey Dutton, Idaho Capital Sun
-
 ## Exchange ran into financial troubles after its leadership made funding deals that fell through, leading to bitter feud over contract
 
 Dr. Brian Crownover got a notification from the Idaho Health Data Exchange that his patient was in the emergency room. Crownover is a primary care doctor in the Boise area, but this patient was two hours away, in Twin Falls.
@@ -56,6 +55,7 @@ Because of cases like that, Crownover swears by the Idaho Health Data Exchange. 
 
 Health care providers like Crownover can pull up records from the exchange to help fill gaps in a person’s recollection of their medical history. They can see what a surgeon documented during their patient’s hysterectomy 10 years ago. Crownover said the system retains valuable data, like a patient’s sleep apnea test results — a record whose absence will tank a health insurance claim for a CPAP machine replacement, or at least force the patient to repeat the expensive test at a sleep lab.
 
+
  The goal of the Idaho Health Data Exchange — like similar repositories in other states and regions — was to make every patient’s health records available at the click of a button when they needed to see a specialist, change doctors or get emergency care in another part of the state.  
 
 But the Idaho Health Data Exchange has long grappled with its funding and with a chicken-and-egg problem: how to make itself so robust that users like Crownover want to pay for it, so that it has revenue to make itself more robust.
@@ -63,6 +63,7 @@ But the Idaho Health Data Exchange has long grappled with its funding and with a
 The data exchange went into 2020 with a plan to tap a last round of money from a series of federal grants before they ran out, and in 2021 announced it would receive an $8 million philanthropic grant. But by fall 2022, the Idaho Health Data Exchange was in bankruptcy, owing creditors $4 million and defending itself against creditor lawsuits. It just exited bankruptcy after court-mediated negotiations with creditors.
 
 An investigation by the Idaho Capital Sun has found that the exchange ran into financial troubles after its leadership made funding deals that fell through, leading to a bitter feud over a contract.
+
 
 More than a decade of federal funding comes to an end for health data exchange
 Idaho’s is one of many health data exchanges in the U.S. — organizations that Lisa Bari, CEO of Civitas Networks for Health, thinks of “more like a public utility.”
@@ -85,12 +86,15 @@ Because it is privately owned and operated, the IHDE doesn’t have to answer di
 
 Still, the exchange was built with money from government programs, including Medicaid, and it holds millions of people’s medical records. The bankruptcy rattled members of the Idaho Legislature, and lawmakers in the 2023 legislative session ordered a look into the data exchange by the Office of Performance Evaluations.
 
+
+
 What is the Idaho Health Data Exchange?
 The exchange is not a public agency, despite having its roots in state and federal government. The Idaho Legislature passed a bill in 2006 to codify Idaho’s intent to improve health care through use of technology.
 
 The goal of the Idaho Health Data Exchange — like similar repositories in other states and regions — was to make every patient’s health records available at the click of a button when they needed to see a specialist, change doctors or get emergency care in another part of the state.
 
 The exchange’s medical director told the publication Healthcare Innovation in 2021 that the data exchange was taking in about 100,000 medical records per day. According to the publication, the health data exchange held medical records of more than 3 million people as of September 2021.
+
 
 Health care providers large and small can pay to use the data exchange’s infrastructure to share their patients’ medical records in a streamlined portal.
 
@@ -105,6 +109,7 @@ Crownover said he often uses the exchange when taking on new patients.
 “Patients, I’m lucky if they can remember 50% of their medical history. Usually it’s 20%,” he said.
 
 When he’s doing his “homework” before seeing a new patient, he said, he’ll find records in the data exchange that flag potentially serious issues: “Like, oh look, that CT scan had an abnormality, it was due to have a follow-up in 12 months, and that was three years ago. That happens all the time.”
+
 
 Keeping the lights on and the health data flowing
 What Crownover does not love is that, as an independent primary care doctor, he pays for the data exchange while others contribute no money and none of their own patient records.
@@ -133,10 +138,13 @@ Most exchanges, though, rely on a variety of income streams — not just user fe
 
 They can use the “big data” they’ve collected to produce reports on, for example, the most effective way to treat diabetes when patients live in remote, rural areas. That’s the kind of research health care businesses want enough to pay for.
 
-“They’ve got multiple ways to fund themselves and keep themselves open,” in ways that benefit patients and the public, Bari said.
+“They’ve got multiple ways to fund themselves and keep themselves open,” in ways that benefit patients and the public, Bari said. 
+
 
 How the Idaho Health Data Exchange got sued
 The exchange filed for Chapter 11 bankruptcy last August.
+
+
 
 Bookkeeping records show that, as it went through that bankruptcy, the exchange paid the consulting firms of its four top executives an average of about $64,000 per month from September 2022 through March 2023.
 
@@ -175,6 +183,7 @@ Health and Welfare officials declined an interview request from the Sun.
 While the department didn’t say which “deliverables” the data exchange did or didn’t meet, court documents refer to concerns about security documentation.
 
 “In late 2020, reeling from having been deprived of more than $2.2MM of funds (i.e., $1.5MM of eliminated contract value plus $700k of refused invoice payments), IHDE sought out funding support from private organizations,” the exchange’s bankruptcy reorganization plan says.
+
 
 The $8 million infusion that didn’t come through
 In May 2021, IHDE issued a press release about $8 million of private grant money on the way from Ethos Asset Management — a firm that later made Kastensmith an executive director. The money would come “in the form of a grant, that will continue for several years” with an option “to sustain and increase this funding in the future,” the press release said.

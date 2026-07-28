@@ -16,11 +16,10 @@ related:
   - lfinneytweets
 ---
 
-@Oregonian <https://t.co/GMZMSlyqAJ>
+@Oregonian https://t.co/GMZMSlyqAJ
 
 ## Links
-
-- <https://youtu.be/dT3V4nZeRko>
+- https://youtu.be/dT3V4nZeRko
 
 *In reply to [@Oregonian](https://twitter.com/Oregonian)*
 
