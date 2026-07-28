@@ -8,7 +8,7 @@ description: "Timothy H. O'Sullivan (1840–1882) was a photographer for two of 
 ---
 ![](https://cdn.saam.media/RaKLuLltlAuIL84G3WjTPl4Yrtg/2600/0/center/cover/webp/https%3A%2F%2Fd3ec1vt3scx7rr.cloudfront.net%2Ffiles%2Fimages%2F2017-07%2Fmisc.osullivan_1c.jpg)
 
-Timothy H. O'Sullivan, Shoshone Falls, Snake River, Idaho, View Across Top of Falls, 1874, albumen print, Library of Congress, Prints and Photographs Division
+Timothy H. O'Sullivan, Shoshone Falls, Snake River, [[Idaho]], View Across Top of Falls, 1874, albumen print, Library of Congress, Prints and Photographs Division
 
 [Timothy H. O’Sullivan](https://americanart.si.edu/person/4664/timothy-h-osullivan) (1840 – 1882) was a photographer for two of the most ambitious geographical surveys of the nineteenth century. He traversed the mountain and desert regions of the western United States under the command of Clarence King and Lt. George M. Wheeler for six seasons between 1867 and 1874. O’Sullivan developed a forthright and rigorous style in response to the landscapes of the American West, and returned to Washington, D.C. with hundreds of photographs that revealed an artist whose reach far surpassed the demands of practical documentation. He created a body of work that was without precedent in its visual and emotional complexity, while simultaneously meeting the needs of scientific investigation and western expansion.
 
@@ -33,3 +33,5 @@ Few photographers have captured more compelling images of the untamed American W
 *Framing the West: The Survey Photographs of Timothy H. O'Sullivan* is organized by the Smithsonian American Art Museum in cooperation with the Library of Congress, Washington, D.C. with support from the Robert S. and Grayce B. Kerr Foundation, the William W. Parker Fund, Paul Sack, the Bernie Stadiem Endowment Fund, Michael Wilson and the Smithsonian’s Scholarly Studies Program.born Ireland 1840-died New York City 1882
 
 O'Sullivan began his photography career as an apprentice in Mathew Brady's Fulton Street gallery in New York City and then moved on to the Washington, D.C., branch managed by Alexander Gardner.
+
+#idaho

@@ -21,7 +21,7 @@ It started with only a gas station, canvas tent cabins, a dining room, kitchen, 
 *When that something keeps a’ calling*  
 *till you feel you want to go,*  
 *Start your journey, travel westward,*  
-*to the land called “Idaho”*
+*to the land called “[[Idaho]]”*
 
 **– Robert Limbert**
 
@@ -50,3 +50,5 @@ Redfish Lake Lodge is located 60 miles north of Sun Valley and 6 miles south of 
 Arlen and Derrel Crouch, natives of Jerome, Idaho bought Redfish Lake Lodge in 1999. That year their son-in-law and daughter, Jeff and Audra Clegg, took on daily operations of the lodge. Today Arlen and Derrel and Jeff and Audra Clegg own the lodge. They feel a great sense of stewardship in preserving the historical and natural wonders of the area and in providing outstanding hospitality to all who visit.
 
 <iframe allow="clipboard-write; web-share" src="chrome-extension://cnjifjpddelmedmihgijeibhnjfabmlf/side-panel.html?context=iframe"></iframe>
+
+#idaho

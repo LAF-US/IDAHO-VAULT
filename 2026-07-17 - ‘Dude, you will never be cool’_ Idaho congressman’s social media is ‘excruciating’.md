@@ -11,7 +11,7 @@ Listen to this article
 
 It’s not easy being a career politician in America.
 
-Not only are you probably way past retirement age, but you also must attempt to wrap your remaining brain cells around what young voters think. And, in the case of Idaho congressman Mike Simpson, perhaps try to connect with these grandkid-age constituents.
+Not only are you probably way past retirement age, but you also must attempt to wrap your remaining brain cells around what young voters think. And, in the case of [[Idaho]] congressman Mike Simpson, perhaps try to connect with these grandkid-age constituents.
 
 It’s a recipe for face-melting TikTok disaster.
 
@@ -68,3 +68,5 @@ Idaho Statesman
 Michael Deeds is a long-serving entertainment reporter and opinion columnist at the Idaho Statesman, where he chronicles the Boise good life: restaurants, concerts, culture, cool stuff. He started as a summer intern after graduating from the University of Nebraska with a news-editorial journalism degree. Deeds’ prior Statesman roles have included sportswriter, music critic and features editor. His other writing has ranged from freelancing album reviews for The Washington Post to bragging about Boise in that inflight magazine you left on the plane.
 
 <iframe allow="clipboard-write; web-share" src="chrome-extension://cnjifjpddelmedmihgijeibhnjfabmlf/side-panel.html?context=iframe"></iframe>
+
+#idaho

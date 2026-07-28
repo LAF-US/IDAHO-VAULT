@@ -27,7 +27,7 @@ The fiscal year prior to that, Oct. 1, 2023, to Oct. 1, 2024, the city greenligh
 
 “The city has rapidly grown,” Coeur d’Alene Finance Director Katie Ebner said.
 
-To combat this exponential rise and hopefully hire some more people, the city is newly proposing to increase certain building, water and parking fees, among others. If the proposal passes, the extra dollars will be used to grow staff, at comparable rates to neighboring North Idaho communities.
+To combat this exponential rise and hopefully hire some more people, the city is newly proposing to increase certain building, water and parking fees, among others. If the proposal passes, the extra dollars will be used to grow staff, at comparable rates to neighboring North [[Idaho]] communities.
 
 City documents show at least 40 proposed fee increases, as well as new fees or fee reinstatements. The full list of proposed fee increases can be viewed at cdaid.org/publichearing.
 
@@ -62,3 +62,5 @@ Per the future of Coeur d’Alene and its continued growth, Ebner said, “We’
 “The only way to build is up,” she said. “Which is what we are seeing.”
 
 The city of Coeur d’Alene is slated to hold a public hearing regarding the proposed fee increases at 6 p.m., Aug. 4, at the Library Community Room at 702 E. Front Ave. Anyone interested in making public comments at the scheduled forum is encouraged to call the city clerk’s office at 208-769-2231.
+
+#idaho

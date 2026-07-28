@@ -11,7 +11,7 @@ description: "IDAHO FALLS — The executive director and founder of Idaho Choose
 
 ![A flyer for the Community Briefing featuring Executive Director and Founder of Idaho Chooses Life, David Ripley. | Courtesy Mike Colson](https://s3.us-west-2.amazonaws.com/assets.eastidahonews.com/wp-content/uploads/2026/07/David-Ripley-flyer.jpg)
 
-A flyer for the Community Briefing featuring Executive Director and Founder of Idaho Chooses Life, David Ripley. | Courtesy Mike Colson
+A flyer for the Community Briefing featuring Executive Director and Founder of [[Idaho]] Chooses Life, David Ripley. | Courtesy Mike Colson
 
 IDAHO FALLS — The executive director and founder of Idaho Chooses Life, David Ripley, is visiting Idaho Falls to discuss the abortion ballot initiative that will be on the ballot this November with community members.
 
@@ -40,3 +40,5 @@ For those wanting to learn more about BCRCC, visit [www.bonnevillegop.com](https
 [SUBMIT A CORRECTION](https://www.eastidahonews.com/submit-a-correction/?headline=Local%20GOP%20host%20Idaho%20Chooses%20Life%20founder%20to%20discuss%20abortion%20ballot%20measure&url=https://www.eastidahonews.com/2026/07/local-gop-host-idaho-chooses-life-founder-to-discuss-abortion-ballot-measure/)
 
 EastIdahoNews.com comment boards are a place for open, honest, and civil communication between readers regarding the news of the day and issues facing our communities. We encourage commenters to stay on topic, use positive and constructive language, and be empathetic to the feelings of other commenters. **THINK BEFORE YOU POST.** [Click here](https://www.eastidahonews.com/eastidahonews-com-code-of-ethics/#onlinecommenting) for more details on our commenting rules.
+
+#idaho

@@ -6,7 +6,7 @@ author:
 published: 2026-07-02
 created: 2026-07-20
 ---
-On July 2, 1862, the U. S. Congress passed what was called the “Ironclad Oath” law. The law required Federal officials and employees to swear, not just that they would not, but that they had *never* supported the Confederacy. This “test oath” led to bitter political turmoil in Idaho.  
+On July 2, 1862, the U. S. Congress passed what was called the “Ironclad Oath” law. The law required Federal officials and employees to swear, not just that they would not, but that they had *never* supported the Confederacy. This “test oath” led to bitter political turmoil in [[Idaho]].  
 [![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYtJhNpN67tP6k0E7S2M0nZ6tUK_GAzZFQnOx-2lX4jyxs0HxJXNhVhr_Yhw-fEbXX4546gg_qllAogyXlBADqvn65gKc7niBAHXHPETzam45k8F-Ou6Y0vetPspq6tmLCVXITqglWKAM/s200/Abe_Lincoln.jpg)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYtJhNpN67tP6k0E7S2M0nZ6tUK_GAzZFQnOx-2lX4jyxs0HxJXNhVhr_Yhw-fEbXX4546gg_qllAogyXlBADqvn65gKc7niBAHXHPETzam45k8F-Ou6Y0vetPspq6tmLCVXITqglWKAM/s1600/Abe_Lincoln.jpg) President Lincoln. Library of Congress.  
 The Civil War was in full swing when Congress passed the law. Lincoln’s “coat tails” had carried many Republicans to victory in the previous elections. When members from the seceded states withdrew, Republicans ended up with substantial majorities in both Congressional branches.  
   
@@ -27,3 +27,5 @@ The next legislature wanted to leave no doubt. They passed the same act again. A
 In 1867, the U. S. Supreme Court had ruled that some narrow applications of the Ironclad Oath were unconstitutional. Even so, the national law remained a suppressive tool in many jurisdictions until Radical Reconstruction began to ease in about 1877. Test oath opponents tried to repeal the law numerous times over the next several years. They finally succeeded in 1884.  
   
 References: \[B&W\], \[Hawley\]“The Fight Over the Iron Clad Oath, 1865-1867,” *Reference Series No. 381,* Idaho State Historical Society (July 18, 1966).John Hope Franklin, *Reconstruction After the Civil War,* University of Chicago Press (1994).Michael A. Ross, “Loyalty Oaths,” *Encyclopedia of the American Civil War,* David S. Heidler, Jeanne T. Heidler (eds.), W. W. Norton & Company, Inc., New York (2000).
+
+#idaho

@@ -9,7 +9,7 @@ created: 2026-07-20
 
 ## Career
 
-Michael Wasson grew up on the Nez Perce reservation in Idaho, and recalls that landscape, his elders, and their stories and language as having a formative impact on his writing.[^2] He earned his BA studying literature, creative writing and his indigenous Nez Perce language, Nimipuutímt, at [Lewis-Clark State College](https://en.wikipedia.org/wiki/Lewis-Clark_State_College "Lewis-Clark State College") [^3] and an MFA in creative writing from [Oregon State University](https://en.wikipedia.org/wiki/Oregon_State_University "Oregon State University") while teaching writing courses.[^4] He has also taught literature, writing, and English in Tokyo, Japan, and he currently lives in [Fukuoka](https://en.wikipedia.org/wiki/Fukuoka "Fukuoka"), on the island of Kyushu, in Japan. He has been reported to have lived there since 2014 where he worked as an English and English Conversational teacher.[^5]
+Michael Wasson grew up on the Nez Perce reservation in [[Idaho]], and recalls that landscape, his elders, and their stories and language as having a formative impact on his writing.[^2] He earned his BA studying literature, creative writing and his indigenous Nez Perce language, Nimipuutímt, at [Lewis-Clark State College](https://en.wikipedia.org/wiki/Lewis-Clark_State_College "Lewis-Clark State College") [^3] and an MFA in creative writing from [Oregon State University](https://en.wikipedia.org/wiki/Oregon_State_University "Oregon State University") while teaching writing courses.[^4] He has also taught literature, writing, and English in Tokyo, Japan, and he currently lives in [Fukuoka](https://en.wikipedia.org/wiki/Fukuoka "Fukuoka"), on the island of Kyushu, in Japan. He has been reported to have lived there since 2014 where he worked as an English and English Conversational teacher.[^5]
 
 His work has also been used as an example in a short form creative writing anthology used to teach poetry and short fiction.[^6] His first book, *This American Ghost*, ranges across topics from classical Greek literature to the violence done by Christianity and colonialism to the cultural experiences of Nez Perce people.[^7]
 
@@ -39,3 +39,5 @@ Wasson is the recipient of a [Native Arts and Cultures Foundation](https://en.wi
 [^7]: Squint, Kristin (2018). ["Review of This American Ghost"](https://journals.kent.ac.uk/index.php/transmotion/article/view/587). *Transmotion*. **4** (2). Retrieved 5 December 2021.
 
 [^8]: ["5 Young Poets Each Receive Rewards of $2500"](https://www.kxan.com/entertainment-news/5-young-poets-each-receive-grants-of-25000/). The Associated Press. NBC. 27 August 2019. Retrieved 2 December 2021.
+
+#idaho

@@ -16,7 +16,7 @@ A University of Utah health clinic with a sign warning of measles is pictured in
 
 A University of Utah health clinic with a sign warning of measles is pictured in Salt Lake City on June 30, 2025. (McKenzie Romero/Utah News Dispatch)
 
-In East Idaho, health officials are reporting that a vaccinated adult contracted measles in Teton County, near a Wyoming travel destination area that’s under an [active measles outbreak](https://idahocapitalsun.com/2026/07/13/health-department-declares-measles-outbreak-in-wyomings-teton-county-amid-influx-of-tourists/).
+In East [[Idaho]], health officials are reporting that a vaccinated adult contracted measles in Teton County, near a Wyoming travel destination area that’s under an [active measles outbreak](https://idahocapitalsun.com/2026/07/13/health-department-declares-measles-outbreak-in-wyomings-teton-county-amid-influx-of-tourists/).
 
 The case marks Idaho’s 10th [case of measles](https://public.tableau.com/app/profile/idaho.division.of.public.health/viz/TrackingIdahoMeasles/StatewideSummary?publish=yes) this year. That puts Idaho — like [the rest of the U.S.](https://www.washingtonpost.com/health/2026/07/06/why-us-measles-outbreaks-have-grown-harder-extinguish/) — on track to outpace the state’s total case counts from last year, when the state reported 13 cases amid the U.S.’s worst outbreak of measles in decades.
 
@@ -47,3 +47,5 @@ The virus’s serious complications can include pneumonia, encephalitis (an infl
 People with measles symptoms should not enter health care settings without calling ahead, and they should contact their health care providers. People exposed to measles should monitor for symptoms for 21 days after exposure.
 
 There is no antiviral treatment for measles, according to the CDC.
+
+#idaho

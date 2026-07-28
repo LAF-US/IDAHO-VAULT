@@ -7,7 +7,7 @@ published: 2026-07-22
 created: 2026-07-24
 description: "By Soncirey MitchellReader Staff Earlier this month, the Idaho Supreme Court ruled against Bonner County and local developers Tricore Investment, LLC, in a yearslong case regarding two contiguous minor land divisions outside of Coolin...."
 ---
-Earlier this month, the Idaho Supreme Court ruled against Bonner County and local developers Tricore Investment, LLC, in a yearslong case regarding two contiguous minor land divisions outside of Coolin. Though the county no longer uses MLDs, the ruling sets a precedent for legal review of additional land use decisions not explicitly outlined in Idaho’s Local Land Use Planning Act.
+Earlier this month, the [[Idaho]] Supreme Court ruled against Bonner County and local developers Tricore Investment, LLC, in a yearslong case regarding two contiguous minor land divisions outside of Coolin. Though the county no longer uses MLDs, the ruling sets a precedent for legal review of additional land use decisions not explicitly outlined in Idaho’s Local Land Use Planning Act.
 
 Tricore purchased three parcels along Priest Lake in 2021, which it later split into 35 lots through a series of 54 quitclaim deeds, transferring ownership “to and from itself,” according to the ruling. Tricore was therefore able to divide the land without triggering the Bonner County Planning and Zoning process or a review under LLUPA. Developers later filed for two contiguous MLDs, which the Bonner County Board of Commissioners approved, creating four lots each. At the time, Bonner County defined MLDs as any “division of land into four (4) or fewer lots or parcels.”
 
@@ -34,3 +34,5 @@ The Idaho Supreme Court has remanded the matter to the lower courts for further 
 ### Want to support independent local journalism?
 
 The Sandpoint Reader is our town's local, independent weekly newspaper. "Independent" means that the Reader is locally owned and operated by people who were born and raised in Sandpoint. The Reader is owned by Publisher Ben Olson, Editor-in-Chief Zach Hagadone and Senior Writer Soncirey Mitchell. **==Sandpoint Reader LLC is a completely independent business unit; no big newspaper group or corporate conglomerate or billionaire owner dictates our editorial policy.==** And we want the news, opinion and lifestyle stories we report to be freely available to all interested readers - so unlike many other newspapers and media websites, we have NO PAYWALL on our website. The Reader relies wholly on the support of our valued advertisers, as well as readers who voluntarily contribute. **==Want to ensure that local, independent journalism survives in our town? You can help support the Reader for as little as $1.==**
+
+#idaho

@@ -25,7 +25,7 @@ I’d spent 15 years aggressively covering politics and education for the *Inlan
 
 In my last years at the *Inlander*, I was going head-to-head with RANGE, trying to out-scoop them on [Camp Hope](https://www.inlander.com/news/camp-hope-officials-say-they-repeatedly-asked-police-for-help-removing-dangerous-residents-that-help/article_2911684a-c086-5da7-aff4-c3382da48042.html?ref=rangemedia.co) and [City Hall](https://www.inlander.com/news/how-a-network-of-politicos-tied-to-u-s-rep-cathy-mcmorris-rodgers-are-pulling/article_afdccfed-bfb0-5802-a9d4-7605045a11e5.html?ref=rangemedia.co). Increasingly, I had a sense that this little upstart publication had turned into my most formidable competitor.
 
-I left the *Inlander* in 2023 for a remote work position covering “democracy and extremism” throughout the entire Pacific Northwest. For two and a half years, I wrote plenty of deeply and aggressively reported stories about plenty of important topics: [white nationalists](https://www.wweek.com/news/2023/10/25/the-proudest-boy-in-portland/?ref=rangemedia.co) in Oregon, [right-wing lobbyists](https://www.investigatewest.org/secret-recording-shows-how-a-right-wing-idaho-lobbyist-tried-to-keep-a-legislator-in-lockstep/?ref=rangemedia.co) in Idaho, and [unethical plastic surgeons](https://www.rangemedia.co/allegations-gender-affirming-surgeon-stir-fears-trans-patients/) in Washington.
+I left the *Inlander* in 2023 for a remote work position covering “democracy and extremism” throughout the entire Pacific Northwest. For two and a half years, I wrote plenty of deeply and aggressively reported stories about plenty of important topics: [white nationalists](https://www.wweek.com/news/2023/10/25/the-proudest-boy-in-portland/?ref=rangemedia.co) in Oregon, [right-wing lobbyists](https://www.investigatewest.org/secret-recording-shows-how-a-right-wing-idaho-lobbyist-tried-to-keep-a-legislator-in-lockstep/?ref=rangemedia.co) in [[Idaho]], and [unethical plastic surgeons](https://www.rangemedia.co/allegations-gender-affirming-surgeon-stir-fears-trans-patients/) in Washington.
 
 But I wasn’t happy. The lack of a physical newsroom, the lack of a shared focus on a place — a single community in all its messiness — made it all feel hollow, and frankly, lonely.
 
@@ -42,3 +42,5 @@ Hit me up on Signal, Facebook Messenger, or my RANGE [email address](mailto:dani
 ### Daniel Walters
 
 Tags: [Range Updates](https://www.rangemedia.co/tag/range-updates/)
+
+#idaho
