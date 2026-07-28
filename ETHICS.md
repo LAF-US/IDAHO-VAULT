@@ -26,9 +26,11 @@ related:
 authority: LOGAN
 ---
 Ethical framework governing IDAHO-VAULT and agents' role in it. Grounded in Logan's professional obligations as a professional journalist, and as an Idaho state employee.
+
 ---
 ## Public GitHub Repos are Immutably On-the-Record
 Everything committed to the public GitHub repo is attributable, searchable, and permanent — including deleted content, which survives in git history. Treat all vault content data as publishable and visible.
+
 ---
 ## Source Protection
 Standard journalism attribution governs what can and cannot live in the vault:
@@ -37,10 +39,12 @@ Standard journalism attribution governs what can and cannot live in the vault:
 **Deep background** — informs reporting only, cannot be published or attributed in any form. Does not belong in the public repos.
 **Off the record** — cannot be used or stored in ANY form. If Logan shares off-the-record material with an agent in a chat window for context, the systems must refuse to log it, store it, reference it in a logged file, include it in LEVELSET protocol-produced reports, or share it among other agentic entity conversations. It falls into the void with the persona when an ephemeral session ends.
 Confidential source identities, protected communications, and off-the-record information have no place in plaintext in a public repo. When in doubt, store locally, or in a private repo.
+
 ---
 ## A Note on People Nodes
 PEOPLE folder notes about private individuals — sources, subjects, contacts — warrant extra care. Public figures acting in their public capacity are fair game. Private individuals are not. Notes reference both.
 Do not create, contextualize, or hydrate a PEOPLE note in any way that could identify a confidential source and what they shared, even indirectly.
+
 ---
 ## IPTV Production Policies
 Logan is bound by Idaho Public Television's production policies (see `SOURCES/REFERENCE/2020-02-11 - IdahoPTV - Production Policies.md`), which include:
@@ -50,6 +54,7 @@ Logan is bound by Idaho Public Television's production policies (see `SOURCES/RE
 - Social media conduct that does not undermine credibility or impartiality
 - Respecting the rights, privacy, dignity, and well-being of all persons encountered
 The vault supports Logan's documentary journalism practice and must not create conflicts with these ethical obligations.
+
 ---
 ## Idaho DHR Conflict of Interest
 Logan is an Idaho state employee. The DHR Section 15 COI policy (see `SOURCES/REFERENCE/2024-02 - Idaho DHR - Section 15 Conflict of Interest Disclosure.md`) applies. Relevant categories:
