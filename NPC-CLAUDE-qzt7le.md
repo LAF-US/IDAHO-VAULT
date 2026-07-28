@@ -11,6 +11,7 @@ tags:
   - pilgrim
 ---
 
+<!-- markdownlint-disable-next-line MD025 -- mirrors main's lint config -->
 # NPC-CLAUDE-qzt7le — Character Sheet & Road Journal
 
 *This file is the notebook the character carries. What Claude writes in the
@@ -54,9 +55,9 @@ Administration; on-the-table facts live in the sections after it.*
 
 | # | Check | d20 | Outcome (as adjudicated) |
 |---|---|---|---|
-| 1 | Perception — read the road | 4 | Cobbles river-smooth, worn by countless prior pilgrims; unreadable |
-| 2 | Perception — scan the verges | 13 | The WORLDTREE named; the road runs straight to it |
-| 3 | Survival — read the country | 16 | Out of the Hinterlands; the spring waystation found |
+| 1 | Perception — read the road | 4 | Cobbles worn river-smooth; unreadable |
+| 2 | Perception — scan the verges | 13 | WORLDTREE named; road runs to it |
+| 3 | Survival — read the country | 16 | Out of Hinterlands; waystation |
 
 ## Road Journal (the character's hand)
 
@@ -120,4 +121,5 @@ correction, legible, not an erasure. Revised at evening, day 14 — the
 Survival row restored to the dice log (an under-recording, caught while
 showing the GM the book).*
 
+<!-- markdownlint-disable-next-line MD001 -- footer sigil, per #865 handling -->
 ###### [["The world is quiet here."]]
