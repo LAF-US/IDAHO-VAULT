@@ -19,9 +19,10 @@ related:
   - idleg
 ---
 
-#idpol #idleg https://t.co/vvQ9eFvtJS
+# idpol #idleg <https://t.co/vvQ9eFvtJS>
 
 ## Media
+
 - ![](https://pbs.twimg.com/ext_tw_video_thumb/1233470263511089153/pu/img/FKcgrJ3VumZoTg5Y.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

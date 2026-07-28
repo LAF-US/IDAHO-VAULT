@@ -22,7 +22,9 @@ State of Idaho Chief Executive
 Commander in Chief of Idaho Army National Guard
 
 Current: Brad Little
+
 ## History
+
 - Brad Little 2019-
 - C.L. 'Butch' Otter 2007-2019
 - Jim Risch 2006-2007

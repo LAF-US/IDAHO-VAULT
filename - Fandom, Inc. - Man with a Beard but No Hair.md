@@ -7,7 +7,7 @@ created: 2026-04-14
 ---
 | “ | *But we know how to solve problems, don't we? Fire can solve any problem in the world.* | ” |
 | --- | --- | --- |
-|  | — The Man with a Beard but No Hair, *[The Slippery Slope](https://snicket.fandom.com/wiki/The_Slippery_Slope "The Slippery Slope")* |
+| | — The Man with a Beard but No Hair, *[The Slippery Slope](https://snicket.fandom.com/wiki/The_Slippery_Slope "The Slippery Slope")* |
 
 The **Man With a Beard But No Hair** is a mysterious antagonist. He is so villainous that even [Count Olaf](https://snicket.fandom.com/wiki/Count_Olaf "Count Olaf") fears him, and his name apparently brings such terror that it is never mentioned. He is known to have an associate that is referred to as the [Woman with Hair but No Beard](https://snicket.fandom.com/wiki/Woman_with_Hair_but_No_Beard "Woman with Hair but No Beard").
 
@@ -17,7 +17,7 @@ The **Man With a Beard But No Hair** is a mysterious antagonist. He is so villai
 
 | “ | *I've never seen one before, but it has been quite some time since I was a volunteer.* | ” |
 | --- | --- | --- |
-|  | — The Man with a Beard but No Hair, *[The Slippery Slope](https://snicket.fandom.com/wiki/The_Slippery_Slope "The Slippery Slope")* |
+| | — The Man with a Beard but No Hair, *[The Slippery Slope](https://snicket.fandom.com/wiki/The_Slippery_Slope "The Slippery Slope")* |
 
 The Man seems to have been in [V.F.D.](https://snicket.fandom.com/wiki/Volunteer_Fire_Department "Volunteer Fire Department") for a time predating [The Schism](https://snicket.fandom.com/wiki/The_Schism "The Schism"); following it, he and the [Woman with Hair but No Beard](https://snicket.fandom.com/wiki/Woman_with_Hair_but_No_Beard "Woman with Hair but No Beard") were planted firmly on the side of the Fire-starters.[^2]
 
@@ -35,7 +35,7 @@ The two of them somehow manage to acquire the [Snicket File](https://snicket.fan
 
 | “ | *Once you tell us where the [sugar bowl](https://snicket.fandom.com/wiki/Sugar_Bowl "Sugar Bowl") is, you can leave, volunteers, and take your baby friend with you. But wouldn't you rather join us?* | ” |
 | --- | --- | --- |
-|  | — The Man with a Beard but No Hair, *[The Slippery Slope](https://snicket.fandom.com/wiki/The_Slippery_Slope "The Slippery Slope")* |
+| | — The Man with a Beard but No Hair, *[The Slippery Slope](https://snicket.fandom.com/wiki/The_Slippery_Slope "The Slippery Slope")* |
 
 The Man and Woman arrive at the V.F.D. headquarters and slowly burn it down, room by room in order to keep the smoke to a minimum so they would not be spotted. Every morning of the arson, the two of them would celebrate with a bottle of wine and finger puppets. They did attempt to search the headquarters for the [Sugar Bowl](https://snicket.fandom.com/wiki/Sugar_Bowl "Sugar Bowl"), but are unable to find it.
 
@@ -67,7 +67,7 @@ It is unknown if he and the Woman with Hair but No Beard survived the [Hotel Den
 
 | “ | *Mummy! Daddy!* | ” |
 | --- | --- | --- |
-|  |  |
+| | |
 
 The Man with a Beard but No Hair and the Woman with Hair but No Beard are first seen in [The Slippery Slope: Part One](https://snicket.fandom.com/wiki/The_Slippery_Slope:_Pa***REMOVED***One "The Slippery Slope: Part One"), chasing Kit Snicket around the top of [Mount Fraught](https://snicket.fandom.com/wiki/Mount_Fraught "Mount Fraught"). After Kit jumps off, the pair runs into [Hugo](https://snicket.fandom.com/wiki/Hugo "Hugo"), [Colette](https://snicket.fandom.com/wiki/Colette "Colette") and [Kevin](https://snicket.fandom.com/wiki/Kevin "Kevin") who they threaten with swords. It is later implied that they killed them.
 
@@ -91,7 +91,7 @@ He is portrayed by [Richard E. Grant](https://snicket.fandom.com/wiki/Richard_E.
 
 | “ | *Having an aura of menace is like having a pet weasel, because you rarely meet someone who has one, and when you do it makes you want to hide under the coffee table. An aura of menace is simply a distinct feeling of evil that accompanies the arrival of certain people, and very few individuals are evil enough to produce an aura of menace that is very strong\[...\] But when two visitors arrived at the highest peak of the Mortmain Mountains, their aura of menace was unmistakable.* | ” |
 | --- | --- | --- |
-|  |  |
+| | |
 
 In the books, he is described as having an aura of menace first and foremost, scaring even [Esmé Squalor](https://snicket.fandom.com/wiki/Esm%C3%A9_Squalor "Esmé Squalor") and [Count Olaf](https://snicket.fandom.com/wiki/Count_Olaf "Count Olaf"). He is known to have a beard and a bald head, as well as a very hoarse voice, a cold grin and horrible laugh. He and the Woman with Hair but no beard dress in fireproof suits in order to better cause arson, which are made of shiny blue fabric with two large shoulderpads.
 
@@ -103,7 +103,7 @@ In the Netflix series, he's slightly taller than his partner with icy blue eyes,
 
 | “ | *You look well. It's been a long time since we've laid eyes on one another.* | ” |
 | --- | --- | --- |
-|  | — Chapter Six |
+| | — Chapter Six |
 
 **[Esmé Squalor](https://snicket.fandom.com/wiki/Esm%C3%A9_Squalor "Esmé Squalor")**: *I thought maybe [snow gnats](https://snicket.fandom.com/wiki/Snow_Gnats "Snow Gnats") were no longer in.*  
 
@@ -111,15 +111,15 @@ In the Netflix series, he's slightly taller than his partner with icy blue eyes,
 
 | “ | *We did you a favor, Olaf. We burned the whole place down.* | ” |
 | --- | --- | --- |
-|  | — Chapter Six |
+| | — Chapter Six |
 
 | “ | *So this is [Sunny Baudelaire](https://snicket.fandom.com/wiki/Sunny_Baudelaire "Sunny Baudelaire"). Well, well, well. I've heard so much about this little orphan. She's caused almost as many problems as her parents did.* | ” |
 | --- | --- | --- |
-|  | — Chapter Six |
+| | — Chapter Six |
 
 | “ | *We couldn't have burned down the entire headquarters at once. Someone would have spotted us. Remember, where there's some, there's fire.* | ” |
 | --- | --- | --- |
-|  | — Chapter Six |
+| | — Chapter Six |
 
 **Esmé Squalor**: *But if you burned down the headquarters room by room, didn't all the volunteers escape?*  
 
@@ -131,11 +131,11 @@ In the Netflix series, he's slightly taller than his partner with icy blue eyes,
 
 | “ | *Who are you signaling to, baby? If you're a spy, we're going to toss you off this mountain.* | ” |
 | --- | --- | --- |
-|  | — Chapter Nine |
+| | — Chapter Nine |
 
 | “ | *Enough chitchat. We have a lot of scheming to do, Olaf. I have some information that might help you with your recruiting idea, and according to the Snicket file, there's one more safe place for the volunteers to gather.* | ” |
 | --- | --- | --- |
-|  | — Chapter Nine |
+| | — Chapter Nine |
 
 **Man with a Beard but No Hair**: *That's enough! Our recruitment scheme is about to be put into action. We can't have you arguing all day long.*  
 
@@ -147,13 +147,13 @@ In the Netflix series, he's slightly taller than his partner with icy blue eyes,
 
 | “ | *With these eagles at our disposal, we can finally catch up to that [self-sustaining hot air mobile home](https://snicket.fandom.com/wiki/Self-Sustaining_Hot_Air_Mobile_Home "Self-Sustaining Hot Air Mobile Home") and destroy those volunteers!* | ” |
 | --- | --- | --- |
-|  | — Chapter Thirteen |
+| | — Chapter Thirteen |
 
 ### The Penultimate Peril
 
 | “ | *Please continue. [Justice Strauss](https://snicket.fandom.com/wiki/Justice_Strauss "Justice Strauss") was merely being sympathetic.* | ” |
 | --- | --- | --- |
-|  | — Chapter Eleven |
+| | — Chapter Eleven |
 
 **[Woman with Hair but No Beard](https://snicket.fandom.com/wiki/Woman_with_Hair_but_No_Beard "Woman with Hair but No Beard")**: *What are you waiting for, orphans?*  
 
@@ -161,19 +161,19 @@ In the Netflix series, he's slightly taller than his partner with icy blue eyes,
 
 | “ | *Nobody peek! Anyone who peeks will be turned over to the authorities!* | ” |
 | --- | --- | --- |
-|  | — Chapter Twelve |
+| | — Chapter Twelve |
 
 | “ | *The children are trying to trick you! Keep your blindfolds on!* | ” |
 | --- | --- | --- |
-|  | — Chapter Twelve |
+| | — Chapter Twelve |
 
 | “ | *They're guilty!* | ” |
 | --- | --- | --- |
-|  | — Chapter Twelve |
+| | — Chapter Twelve |
 
 | “ | *The authorities are guarding the entrance! The Baudelaires are running toward the elevatos! Capture them!* | ” |
 | --- | --- | --- |
-|  | — Chapter Twelve |
+| | — Chapter Twelve |
 
 **Violet Baudelaire**: *Fire! Attention everyone! There's a fire in the hotel! Please leave at once!*  
 

@@ -84,7 +84,7 @@ The classifier is not one test — it is **three orthogonal gates at three decis
 Conflating any two of them produces wrong conclusions:
 
 | Gate | Decides | Signal | Domain |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **Q1 — identity / provability** | `human` or `unprovable` thread → `needs-human` | is the thread *provably* bot-only? | **#398** (distinct signed agent identity). While agents commit as the maintainer, agent-as-human threads can't be proven bot-only and err safe to `needs-human`. |
 | **Q4 — cascade-safety** | bot-clearable + `auto_merge_armed` → `would-cascade` (HELD) | is GitHub auto-merge armed on this PR? | **Arming**, nothing else. Independent of who authored the threads. |
 | **Q5 — resolution disposition** | `safe_to_drain` only if every thread is **bare-resolvable** (`outdated`/`looked`), not `needs-fix`/`apply-suggestion` | does the thread need a real fix, or just a clear? | The work itself. A `needs-fix` thread needs an actual change before any resolve. |
@@ -99,6 +99,7 @@ elif not unresolved:
 elif machine_clearable == len(unresolved):
     lane = "would-cascade" if auto_merge_armed else "machine-disposable"
 ```
+
 ```
 safe_to_drain = lane == "machine-disposable" and not stale
                 and all(thread.resolution in BARE_RESOLVABLE_DISPOSITIONS for thread in plan)

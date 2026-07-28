@@ -9,5 +9,5 @@ related:
 - redistricting
 authority: LOGAN
 ---
-- Senate member from LD9 
-- Beat Jim Rice in primary election after redistricting 
+- Senate member from LD9
+- Beat Jim Rice in primary election after redistricting

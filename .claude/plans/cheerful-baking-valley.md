@@ -10,6 +10,7 @@ The flat plugin inventory at `!/PLUGIN-REGISTRY.md` was created this session but
 ## The CrewAI MANIFEST Pattern (model)
 
 From `.crewai/MANIFEST.md`:
+
 - **Layer boundaries table** — what surface controls what, who's authoritative
 - **Layered model** — CANON/DRIVE/RUNTIME/ARCHIVE with clear promotion rules
 - **Live topology** — active components with paths, purposes, statuses
@@ -18,6 +19,7 @@ From `.crewai/MANIFEST.md`:
 - **Durable doctrines** — standing principles
 
 From `agents.yaml` / `tasks.yaml` / `crew.py`:
+
 - Declarative config (YAML) + runtime wiring (Python)
 - Each agent has: role, goal, backstory
 - Each task has: description, expected_output, agent assignment
@@ -29,7 +31,7 @@ Rewrite `!/PLUGIN-REGISTRY.md` with these sections:
 ### 1. Layer Boundaries
 
 | Surface | Role | Authority |
-|---|---|---|
+| --- | --- | --- |
 | `!/PLUGIN-REGISTRY.md` | Live doctrine — authoritative plugin state | Current truth |
 | `.obsidian/community-plugins.json` | Runtime enabled list | Derives from registry |
 | `.obsidian/plugins/*/manifest.json` | Plugin code + metadata | Installed on disk |
@@ -40,7 +42,7 @@ Rewrite `!/PLUGIN-REGISTRY.md` with these sections:
 ### 2. Layered Model (replacing flat ENABLED/DORMANT)
 
 | Layer | Meaning | Promotion Rule |
-|---|---|---|
+| --- | --- | --- |
 | **ESSENTIAL** | Cannot be disabled without breaking vault infrastructure | Requires Logan + architectural review |
 | **ACTIVE** | Enabled, serving a documented purpose | Demotion requires rationale logged here |
 | **DORMANT** | Installed, not enabled, decision pending | Promote to ACTIVE or demote to RETIRED — Logan decides |
@@ -49,6 +51,7 @@ Rewrite `!/PLUGIN-REGISTRY.md` with these sections:
 ### 3. Live Topology
 
 Restructure the plugin tables by layer (ESSENTIAL/ACTIVE/DORMANT/RETIRED) instead of flat alphabetical. Each entry includes:
+
 - Plugin ID, name, version, size
 - **Role** (like crewAI agent role)
 - **Purpose** (like crewAI agent goal)
@@ -86,7 +89,7 @@ OBSIDIAN PLUGIN LAYER
 ### 5. Tracking Surfaces (replaces flat "Sync Storage Impact")
 
 | Surface | Tracks | Persistence | Size Impact |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Git (GitHub/LAF-US) | Plugin code (main.js, manifest.json) | Durable, LFS for binaries | 171 MB in `.obsidian/plugins/` |
 | Git `.gitignore` | Excludes `data.json` | — | Firewall |
 | Obsidian Sync (LAF-US vault) | Plugin code + settings IF "Installed community plugins: ON" | E2E encrypted remote | Counts against 1 GB |
@@ -108,7 +111,7 @@ Append-only log of every plugin state change, who did it, when, why.
 ## Files to Modify
 
 | File | Change |
-|---|---|
+| --- | --- |
 | `!/PLUGIN-REGISTRY.md` | Restructure from flat inventory to MANIFEST-pattern layered registry |
 | `.crewai/manifest.json` | Fix stale `loganfinney27` URL → `LAF-US` |
 

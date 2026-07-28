@@ -5,4 +5,4 @@ related:
 - taxing districts
 authority: LOGAN
 ---
-taxing districts for ports (i.e. the Port of Lewiston) 
+taxing districts for ports (i.e. the Port of Lewiston)

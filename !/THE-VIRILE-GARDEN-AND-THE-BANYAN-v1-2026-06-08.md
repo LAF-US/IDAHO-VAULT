@@ -62,7 +62,7 @@ The whole governance arc has been sorting how *the many become one* — and the 
 is the third shape, the one that resolves the other two.
 
 | Shape | What it is | The flaw / virtue |
-|---|---|---|
+| --- | --- | --- |
 | **The Caesar / Triumvirate** | **forged** unity — separable things *welded* into one un-relinquishable crown | the false one: separability collapsed; a face built from stolen masks (`!/THE-TRIUMVIRATE-THE-FORGERY-OF-UNITY-v1-2026-06-07.md`) |
 | **The Boids / flock** | **coordinated** plurality — separable agents on shared local rules, no center | true separability — but *no shared root*; coherence without belonging |
 | **The Banyan-grove tree** | **rooted** unity — one organism, one root system, many genuinely distinct branches | the legitimate "all one": *same roots, different branches* — unity **without** fusion |

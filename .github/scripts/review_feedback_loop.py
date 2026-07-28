@@ -247,6 +247,30 @@ def _auto_merge_state(owner: str, repo: str, pr_number: int) -> tuple[bool, bool
     return (enabled, queued)
 
 
+def _merge_state_status(owner: str, repo: str, pr_number: int) -> str:
+    """The PR's current ``mergeStateStatus`` (``CLEAN``/``UNSTABLE``/``BEHIND``/``BLOCKED``/
+    ``DIRTY``/``UNKNOWN``/...). Fail-open to ``"UNKNOWN"`` on a read failure — the caller's
+    BEHIND-only branch-update path then simply does not fire this cycle, exactly as if the
+    PR were not yet BEHIND; a later sync-pr/reconcile-open-prs pass re-reads it."""
+    try:
+        data = _graphql(
+            """
+            query($owner:String!, $name:String!, $number:Int!) {
+              repository(owner: $owner, name: $name) {
+                pullRequest(number: $number) { mergeStateStatus }
+              }
+            }
+            """,
+            owner=owner,
+            name=repo,
+            number=pr_number,
+        )
+    except (RuntimeError, ValueError):
+        return "UNKNOWN"
+    pull = (data.get("repository") or {}).get("pullRequest") or {}
+    return pull.get("mergeStateStatus") or "UNKNOWN"
+
+
 def _pr_node_id(owner: str, repo: str, pr_number: int) -> str | None:
     """The PR's GraphQL node id (required by enqueuePullRequest). None if it can't be read
     (fail-open: the caller then skips the explicit enqueue and relies on armed auto-merge)."""
@@ -296,24 +320,67 @@ def _enqueue_pr(node_id: str) -> tuple[bool, str | None]:
     return (False, None)  # not queue-ready yet — benign; armed auto-merge enqueues it when green
 
 
+def _update_branch(owner: str, repo: str, pr_number: int) -> tuple[bool, str | None]:
+    """Merge the base branch into the PR head via the ``update-branch`` REST endpoint — the
+    automated form of the "Update branch" button, and the same call
+    ``batch-arm-merge-queue.yml`` already uses on a BEHIND PR (that manual bulk sweep's proven
+    fix; this brings the same recovery to the event-driven engine, which previously just left
+    a BEHIND PR waiting indefinitely for someone else to push). Best-effort: never raises.
+
+    Returns ``(updated, error)``:
+      * ``(True, None)`` — the request succeeded; a merge commit landed on the PR head, CI
+        re-runs, and a later pass re-reads ``mergeStateStatus`` once it recomputes to CLEAN.
+      * ``(False, str)`` — the request failed (e.g. a real conflict surfaced as DIRTY by the
+        time this ran, or a workflows-permission error on a workflow-touching PR — the same
+        failure mode ``is_wf_perm_failure`` buckets separately in the bash sweep)."""
+    try:
+        _run(
+            [
+                "gh",
+                "api",
+                "--method",
+                "PUT",
+                f"repos/{owner}/{repo}/pulls/{pr_number}/update-branch",
+            ]
+        )
+    except RuntimeError as exc:
+        return (False, str(exc))
+    return (True, None)
+
+
 def _arm_auto_merge(owner: str, repo: str, pr_number: int) -> tuple[bool, str | None]:
-    """Arm auto-merge for the PR AND add it to the merge queue — two DISTINCT GitHub actions:
+    """Arm auto-merge for the PR, update its branch if BEHIND, AND add it to the merge queue —
+    three DISTINCT GitHub actions:
 
       1. **enablePullRequestAutoMerge** (`gh pr merge --auto`) — records "merge when ready."
          On a merge-queue repo this ALONE does not put the PR in the queue.
-      2. **enqueuePullRequest** (GraphQL) — the action that actually adds the PR to the merge
+      2. **update-branch** (REST) — when the head is BEHIND base, neither arming nor enqueuing
+         can make the PR CLEAN; merging base in is what lets it recompute. Without this, a
+         BEHIND PR just sits waiting for an unrelated event to nudge it (previously only
+         `batch-arm-merge-queue.yml`'s manual bulk sweep did this).
+      3. **enqueuePullRequest** (GraphQL) — the action that actually adds the PR to the merge
          queue. This is the half that was missing: arming-only left a ready PR sitting
          un-queued (the #508 symptom) because nothing ever called enqueue.
 
-    Returns ``(armed, error)``. ``armed`` is True once auto-merge is on (the floor). The enqueue
-    is best-effort: a not-yet-ready PR can't be enqueued, and the armed auto-merge enqueues it
-    when it goes green — so a not-ready enqueue result is NOT treated as a failure. A *real*
-    enqueue failure (auth/API), however, IS surfaced as the error while still reporting armed=True,
-    so "armed but never queued" is no longer silent (callers already log this error)."""
+    Returns ``(armed, error)``. ``armed`` is True once auto-merge is on (the floor). Both the
+    update-branch and enqueue steps are best-effort and folded into ``error`` as an
+    informational note when they don't succeed outright — neither is treated as arming having
+    failed, since a not-yet-ready or still-BEHIND PR is expected to need another pass."""
     enabled, queued = _auto_merge_state(owner, repo, pr_number)
     if queued:
         # Already in the queue — re-enqueuing would be a no-op (or an unwanted jump); leave it.
         return (True, None)
+    notes: list[str] = []
+    if _merge_state_status(owner, repo, pr_number) == "BEHIND":
+        # DIRTY (a real conflict) is a different state and never reaches here, so update-branch
+        # is only attempted when it can actually succeed. Checked regardless of `enabled`: a PR
+        # can already be armed and still fall BEHIND later.
+        updated, update_error = _update_branch(owner, repo, pr_number)
+        notes.append(
+            "branch updated (was BEHIND)"
+            if updated
+            else f"branch update (BEHIND) failed: {update_error}"
+        )
     if not enabled:
         try:
             # K5/#631 (norm set 2026-07-06): the merge QUEUE's configured method is the
@@ -328,10 +395,11 @@ def _arm_auto_merge(owner: str, repo: str, pr_number: int) -> tuple[bool, str | 
         except RuntimeError as exc:
             if not any(fragment in str(exc) for fragment in AUTO_MERGE_AUTHZ_FRAGMENTS):
                 raise
-            return (
-                False,
+            notes.insert(
+                0,
                 "GitHub Actions is not authorized to enable auto-merge on the protected base branch.",
             )
+            return (False, "; ".join(notes))
     # Arming is only half the job — explicitly add it to the merge queue now.
     node_id = _pr_node_id(owner, repo, pr_number)
     if node_id:
@@ -341,9 +409,9 @@ def _arm_auto_merge(owner: str, repo: str, pr_number: int) -> tuple[bool, str | 
             # benign "not queue-ready yet" case (which returns no error and is left for the
             # armed auto-merge to enqueue when green). Surface it so the "armed but never
             # queued" failure this PR fixes can't recur silently. Still armed=True.
-            return (True, f"auto-merge armed, but enqueue was rejected: {enqueue_error}")
+            notes.append(f"enqueue was rejected: {enqueue_error}")
     # node_id None (fail-open) or benign not-ready: armed; auto-merge enqueues it when green.
-    return (True, None)
+    return (True, "; ".join(notes)) if notes else (True, None)
 
 
 def _maybe_arm_auto_merge(

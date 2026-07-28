@@ -108,6 +108,13 @@ ENV/
 build/
 dist/
 
+# coverage.py local run artifacts — CI generates and uploads coverage.xml to
+# Codacy, never commits it.
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
 node_modules/
 **/node_modules/
 .npm-cache/

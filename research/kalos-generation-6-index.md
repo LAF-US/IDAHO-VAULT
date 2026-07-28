@@ -23,7 +23,7 @@ Master index for Kalos's Gym Leaders, Elite Four, and Champion.
 ## Gym Leaders (8)
 
 | # | Gym Leader | City | Type | Badge | E1 |
-|---|------------|------|------|-------|----|
+| --- | ------------ | ------ | ------ | ------- | ---- |
 | 1 | **Viola** | Santalune City | Bug | Bug Badge | Yes |
 | 2 | **Grant** | Cyllage City | Rock | Cliff Badge | Yes |
 | 3 | **Korrina** | Shalour City | Fighting | Rumble Badge | Yes |
@@ -34,6 +34,7 @@ Master index for Kalos's Gym Leaders, Elite Four, and Champion.
 | 8 | **Wulfric** | Snowbelle City | Ice | Iceberg Badge | Yes |
 
 ### Individual Files
+
 - [ ] Viola
 - [ ] Grant
 - [ ] Korrina
@@ -48,13 +49,14 @@ Master index for Kalos's Gym Leaders, Elite Four, and Champion.
 ## Elite Four (4)
 
 | # | Member | Type | E1 |
-|---|--------|------|----|
+| --- | -------- | ------ | ---- |
 | 1 | **Malva** | Fire | Yes |
 | 2 | **Siebold** | Water | Yes |
 | 3 | **Wikstrom** | Steel | Yes |
 | 4 | **Drasna** | Dragon | Yes |
 
 ### Individual Files
+
 - [ ] Malva
 - [ ] Siebold
 - [ ] Wikstrom
@@ -69,6 +71,7 @@ Master index for Kalos's Gym Leaders, Elite Four, and Champion.
 | **Diantha** | Mixed | Yes |
 
 ### Individual Files
+
 - [ ] Diantha
 
 ---
@@ -76,7 +79,7 @@ Master index for Kalos's Gym Leaders, Elite Four, and Champion.
 ## Research Status
 
 | Category | Total | Completed | Remaining | % |
-|----------|-------|-----------|-----------|---|
+| ---------- | ------- | ----------- | ----------- | --- |
 | Gym Leaders | 8 | 0 | 8 | 0% |
 | Elite Four | 4 | 0 | 4 | 0% |
 | Champion | 1 | 0 | 1 | 0% |
@@ -85,6 +88,7 @@ Master index for Kalos's Gym Leaders, Elite Four, and Champion.
 ---
 
 ## Next Steps
+
 1. Start with **Viola** (Santalune City Gym Leader)
 2. Use Misty template
 

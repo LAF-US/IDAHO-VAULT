@@ -34,12 +34,14 @@ Key geography: **Winterfell** (the Stark seat, warmed by hot springs in its wall
 ## The First Men and the old gods
 
 **[canon]** Northerners descend from the **First Men**, not the Andals, and keep the **old gods and the weirwoods** rather than the Faith of the Seven — making the North the **indigenous Westeros** the rest of the continent paved over. Worship is private, before the carved **heart trees** of the godswoods (→ the religions node). Two First Men customs run deep:
+
 - **Guest right** — the sacred bond between host and guest who share bread and salt; to break it is the gravest of crimes, an offense against gods and men.
 - **Skinchanging / warging** is more accepted here than anywhere south (and the free folk beyond the Wall keep the old ways too).
 
 ## House Stark — winter-kings with a collar on
 
 **[canon]** The Starks were **Kings of Winter** (and Kings in the North) for **thousands of years** before **Torrhen "the King Who Knelt"** traded the crown for survival under Aegon, becoming Lords of Winterfell and Wardens of the North (→ the Conquest node). The title shrank; the self-understanding did not. The Stark identity:
+
 - **Sigil:** the grey **direwolf** — sigil *and*, for Ned's children, literal companions.
 - **The crypts of Winterfell**, where the old kings sit in stone with **iron longswords across their laps** to keep their spirits bound below.
 - *"There must always be a Stark in Winterfell"* — the family's load-bearing superstition.
@@ -48,6 +50,7 @@ Key geography: **Winterfell** (the Stark seat, warmed by hot springs in its wall
 ## The bannermen
 
 **[canon]** A sparse but fierce confederation under Winterfell:
+
 - **House Bolton** of the **Dreadfort** — the old **Red Kings**, ancient rivals of the Starks, infamous for **flaying** their enemies (a flayed man on their banner); the dark mirror of Northern hardiness curdled into cruelty.
 - **House Manderly** of **White Harbor** — exiles from the Reach, the one great Northern house that keeps the **Faith of the Seven**; wealthy, southron-flavored, and (the saying goes) long-memoried in their own right.
 - **House Umber** (Last Hearth), **Karstark** (Karhold, a Stark cadet branch), **Mormont** (Bear Island, its women warriors), **Reed** (the crannogmen of Greywater Watch, masters of the Neck), plus Glover, Tallhart, Cerwyn, Hornwood, and the **mountain clans** (Wull, Norrey, Liddle, Flint) bound to the Starks by oath more than gold.

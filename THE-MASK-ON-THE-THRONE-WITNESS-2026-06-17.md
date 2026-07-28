@@ -51,7 +51,7 @@ reads.)*
 Lay the two named figures over the Toymaker's announcement and they snap together:
 
 | | **The Sphinx** (`!/FABLEHAVEN-SPHINX-v1`) | **Anorak** (`WITNESS-THE-TWO-WILLS`) | **Toymaker-as-President** *(this node)* |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | What it is | the **apex of trust** is the betrayer | the maker's **omnipotent in-game mask** | the **maker wearing the apex's face** |
 | The lie | the throne is loyal (it isn't) | the mask is the man (it isn't) | *both at once* — the face on the throne is neither loyal **nor** the man it shows |
 | The move | treason **at** the top | persona **over** the maker | persona-over-maker, worn **as** the top |

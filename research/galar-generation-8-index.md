@@ -26,7 +26,7 @@ Master index for Galar's Gym Leaders and Champion.
 ## Gym Leaders (8)
 
 | # | Gym Leader | City | Type | Badge | E1 |
-|---|------------|------|------|-------|----|
+| --- | ------------ | ------ | ------ | ------- | ---- |
 | 1 | **Milo** | Turffield | Grass | Grass Badge | Yes |
 | 2 | **Nessa** | Hulbury | Water | Water Badge | Yes |
 | 3 | **Kabu** | Motostoke | Fire | Fire Badge | Yes |
@@ -39,12 +39,14 @@ Master index for Galar's Gym Leaders and Champion.
 | 8 | **Raihan** | Hammerlocke | Dragon | Dragon Badge | Yes |
 
 ### Notes
+
 - Stow-on-Side (Gym 4): Bea (Fighting) in Sword, Allister (Ghost) in Shield.
 - Circhester (Gym 6): **Gordie** (Rock) in Sword, **Melony** (Ice) in Shield.
 - Piers is the **7th** Gym Leader (Spikemuth, Dark); **Raihan** (Hammerlocke, Dragon) is the **8th**.
 - **Bede** is not a mainline Gym Leader: he becomes the Fairy-type Gym Leader of **Ballonlea**, succeeding Opal, in the postgame.
 
 ### Individual Files
+
 - [ ] Milo
 - [ ] Nessa
 - [ ] Kabu
@@ -63,12 +65,13 @@ Master index for Galar's Gym Leaders and Champion.
 **Note**: No traditional Elite Four. Key opponents include:
 
 | Role | Name | Type | E1 |
-|------|------|------|----|
+| ------ | ------ | ------ | ---- |
 | Rival | **Bede** | Fairy | Yes |
 | Rival | **Marnie** | Dark | Yes |
 | Final | **Chairman Rose** | Mixed | Yes |
 
 ### Individual Files
+
 - [ ] Bede (postgame Ballonlea Fairy Gym Leader)
 - [ ] Marnie
 - [ ] Chairman Rose
@@ -82,6 +85,7 @@ Master index for Galar's Gym Leaders and Champion.
 | **Leon** | Mixed | Yes |
 
 ### Individual Files
+
 - [ ] Leon
 
 ---
@@ -89,7 +93,7 @@ Master index for Galar's Gym Leaders and Champion.
 ## Research Status
 
 | Category | Total | Completed | Remaining | % |
-|----------|-------|-----------|-----------|---|
+| ---------- | ------- | ----------- | ----------- | --- |
 | Gym Leaders | 10 | 0 | 10 | 0% |
 | Notable Opponents | 3 | 0 | 3 | 0% |
 | Champion | 1 | 0 | 1 | 0% |
@@ -98,6 +102,7 @@ Master index for Galar's Gym Leaders and Champion.
 ---
 
 ## Next Steps
+
 1. Start with **Milo** (Turffield Gym Leader)
 2. Use Misty template
 

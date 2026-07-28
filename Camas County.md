@@ -7,4 +7,4 @@ related:
 authority: LOGAN
 ---
 Seat: Fairfield
-Communities: Soldier, Hill City, Corral 
+Communities: Soldier, Hill City, Corral

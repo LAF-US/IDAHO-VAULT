@@ -4,4 +4,4 @@ related:
 - Nezperce
 authority: LOGAN
 ---
-Nezperce, Lewis County 
+Nezperce, Lewis County
