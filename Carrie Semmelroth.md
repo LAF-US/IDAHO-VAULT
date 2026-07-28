@@ -6,4 +6,4 @@ related:
 - Senate member
 authority: LOGAN
 ---
-Senate member for Legislative District 17 
+Senate member for Legislative District 17

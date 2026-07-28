@@ -20,7 +20,7 @@ One finding (PR #463's CENSUS doctrine + unresolved review threads) was carried 
 ## 5W Summary
 
 | | |
-|---|---|
+| --- | --- |
 | **Who** | No human-caused breakage. Failures are: 1 third-party GitHub Action bug (Codacy), 2 doctrine-drift checks on Logan's own `logan/obsidian` live-edit branch, 1 file-size policy hit on an in-progress agent branch, 1 unpinned-action lint hit on draft PR #450 (already a known TODO there), 1 known corruption-signature hit on a Codex branch (issue #739 pattern). |
 | **What** | 35 failing runs across 6 workflows: Codacy Security Scan (29), Sync Plugin Registry (9, pre-existing — not counted in the 35), Sync Agent Discovery Index (2), Validate Agent Content (1), Action Pin Policy (1), Redaction Damage Policy (1), plus one anomalous `claude-sign.yml` failure with no retrievable job logs. |
 | **When** | 2026-07-07T09:00Z – 2026-07-08T09:15Z (rolling 24h). Sync Plugin Registry has been failing since at least 2026-07-03 — a 5-day-old unaddressed chronic failure. |

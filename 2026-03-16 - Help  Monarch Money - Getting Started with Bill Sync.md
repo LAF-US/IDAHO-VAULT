@@ -121,11 +121,11 @@ No. Because Spinwheel only does a soft pull of your credit report to obtain stat
 
 Monarch gets information on the account type, whether the account is active, the current balance, the statement date, statement balance, statement due date and the minimum amount due. We don’t receive your full credit report.
 
-### The last four digits on my card don't match the last four digits shown by Spinwheel.
+### The last four digits on my card don't match the last four digits shown by Spinwheel
 
 Some cards are reported to the bureau with blinded/anonymized account numbers, which affect the last four digits referenced for mapping. These include cards from Apple, American Express, Barclays, Chime and Navy Federal. The account can still be mapped (you may need to use the account balance to determine the right account).
 
-### The balance shown by Spinwheel does not match the actual balance of my card.
+### The balance shown by Spinwheel does not match the actual balance of my card
 
 The amount shown by Spinwheel is the account balance at the time of the last statement date and is not a real-time balance. It is updated once a month. It's not meant to be a live statement balance but rather a hint to help you match accounts.
 
@@ -133,7 +133,7 @@ The amount shown by Spinwheel is the account balance at the time of the last sta
 
 The message "awaiting balance" is displayed when we have not yet received a statement balance from your financial institution.
 
-### My personal information was wrong during the verification process.
+### My personal information was wrong during the verification process
 
 This information comes from Equifax, so we recommend reaching out to Equifax as the first step. Please note that the address listed is typically the most recent address; however, the interface may also surface an older address rather than the most current one. If you recognize the address (even if it is a previous address) you can safely proceed.
 

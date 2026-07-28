@@ -9,7 +9,7 @@ created: 2026-04-14
 
 | “ | *People don't always get what they want in this world.* | ” |
 | --- | --- | --- |
-|  | — Esmé, “ [The Carnivorous Carnival: Part Two](https://snicket.fandom.com/wiki/The_Carnivorous_Carnival:_Pa***REMOVED***Two "The Carnivorous Carnival: Part Two") ” |
+| | — Esmé, “ [The Carnivorous Carnival: Part Two](https://snicket.fandom.com/wiki/The_Carnivorous_Carnival:_Pa***REMOVED***Two "The Carnivorous Carnival: Part Two") ” |
 
 **Esmé Gigi Geniveve Squalor** is the secondary antagonist of *[A Series of Unfortunate Events](https://snicket.fandom.com/wiki/A_Series_of_Unfortunate_Events "A Series of Unfortunate Events")*. She is considered to be one of the two main villains of the series in its latter half next to [Count Olaf](https://snicket.fandom.com/wiki/Count_Olaf "Count Olaf") due to her constant menacing role towards the Baudelaire children coupled with her greedy and consistent lust for [the Sugar Bowl](https://snicket.fandom.com/wiki/The_Sugar_Bowl "The Sugar Bowl"). Prior to the events of the series, she was a stage actress and member of [V.F.D.](https://snicket.fandom.com/wiki/Volunteer_Fire_Department "Volunteer Fire Department") She was the former love interest for both [Jerome Squalor](https://snicket.fandom.com/wiki/Jerome_Squalor "Jerome Squalor") and [The Bald Man](https://snicket.fandom.com/wiki/Bald_Man_with_the_Long_Nose "Bald Man with the Long Nose"). She was also a former love interest of Count Olaf, although it is unknown whether he became her boyfriend because he loved her, or because she would help him with his schemes.
 
@@ -27,7 +27,7 @@ When Olaf sets the hotel on fire, Squalor is seen alongside Carmelita inside one
 
 | “ | *Look at me! I'm beautiful, fashionable, and I smoke cigarettes!* | ” |
 | --- | --- | --- |
-|  | — Esmé Squalor, [The Slippery Slope](https://snicket.fandom.com/wiki/The_Slippery_Slope "The Slippery Slope") |
+| | — Esmé Squalor, [The Slippery Slope](https://snicket.fandom.com/wiki/The_Slippery_Slope "The Slippery Slope") |
 
 Esmé is greedy, vapid, materialistic, and vain, obsessed with popularity, status, trends, and fads. She frequently buys "in" clothing, items, and furniture to decorate her apartment suite. Her priority in life, above all else, seems to be fashionable, valuing style over practicality. For example, she insisted on preventing her apartment's elevator from being used, and she smokes simply because cigarettes are "in", even though she hates the taste and smell of them, and prefers to use a long holder. She even makes [aqueous martinis](https://snicket.fandom.com/wiki/Aqueous_martini "Aqueous martini") and buys [parsley soda](https://snicket.fandom.com/wiki/Parsley_soda "Parsley soda"). She leads a life of crime because it is "in". Even though she is already "unbelievably wealthy", she is obsessed with collecting money because money is "in", and she frequently brags about how wealthy she is and how much money is in her bank account.
 
@@ -223,29 +223,29 @@ Squalor is not a name, but means "a state of being extremely dirty and unpleasan
 - *"Pinstripe suits are in! And those horrible clothes you're wearing are out."*
 - *"AHHHHH! This sofa belonged to the King of Arizona, you don't recline on it."* (when Jerome is almost injured/killed by a falling lamp)
 - Jerome: *"Shouldn't we give the proceeds to those who need it? Perhaps those starving people we're reading about in the paper."*  
-	Esmé: *"Starving people can't eat money. Plus, if we give money to poor people, they won't be poor anymore and we won't have anyone to feel sorry for."*
+ Esmé: *"Starving people can't eat money. Plus, if we give money to poor people, they won't be poor anymore and we won't have anyone to feel sorry for."*
 - *"Are we living in garbage?"* (before leaving Herring Houdini restaurant)
 - *"Limousine, take us to a restaurant that is ACTUALLY in."*
 - *"You're either in or you're out."*
 - Mr. Poe: *"Now that I see you eating in a stylish restaurant, I know you'll be properly cared for by the city's seventh most powerful financial adviser."*  
-	Esmé: *"SIXTH! SIXTH! Sixth most.... sixth."*
+ Esmé: *"SIXTH! SIXTH! Sixth most.... sixth."*
 - *"Sleep is a natural part of life, like cosmetics or frivolous lawsuits."*
 - Klaus: *"We need to tell \[Jerome\] something important."*  
-	Esmé: *"You can tell me. I'm important."*
+ Esmé: *"You can tell me. I'm important."*
 - *"But I WANT to steal from you! I WANT TO STEAL FROM YOU THE WAY BEATRICE STOLE FROM ME!"*
 - *"I love a happy ending. It's like Wuthering Heights, which I never read."*
 - Esmé: " *Ooh, there's a pole. Are you sure this isn't more of a club?*"  
-	Count Olaf: " *That's a firepole, love.*" (upon entering the firehouse-turned-saloon in the Village)
+ Count Olaf: " *That's a firepole, love.*" (upon entering the firehouse-turned-saloon in the Village)
 - *"Butterflies in your stomach, Doctor Faustus? Don't worry, this is going to be fun."* (threatening Klaus)
 - *"DO IT! DO IT! DO IT! DO IT! DO IT!"* (cheering crowd to pressure Klaus to cut off Violet's head)
 - *"It's bad enough I've been dragged all over, and there are no in restaurants, no in boutiques. I'm forced to make my own dress out of a few scraps of tent. I will not be thrown over for a carny. Stay away from my boyfriend, or I don't know what I'll do."* (threatening Olivia Caliban)
 - *"Maybe Madame Lulu doesn't deserve to get thrown to the lions. People don't always get what they deserve in this world... and who knows that better than the two of you? After all, you're freaks."*
 - Esmé: *"I am Esmé Gigi Geniveve Squalor, and as you can see from my gown, I love freaks."*  
-	Kevin: *"That's so nice of you."*  
-	Esmé: *"Yes, it is."*
+ Kevin: *"That's so nice of you."*  
+ Esmé: *"Yes, it is."*
 - Esmé: *"Come on, darling."*  
-	Carmelita: *"Is Countie not my Daddy anymore?"*  
-	Esmé: *"He's not mine either, pet."*
+ Carmelita: *"Is Countie not my Daddy anymore?"*  
+ Esmé: *"He's not mine either, pet."*
 - *"The sugar bowl is mine!"* (final line before Hotel Denouement burns down)
 
 ## Trivia
@@ -255,7 +255,7 @@ Squalor is not a name, but means "a state of being extremely dirty and unpleasan
 Concept art of Esmé Squalor from The Ersatz Elevator (the TV series).
 
 - As a fashionable and sociopathic woman who displays constant avaricious and criminal behavior, she is reminiscent of previous popular culture antagonists such as [Madame Medusa](https://disney.fandom.com/wiki/Madame_Medusa "w:c:disney:Madame Medusa") and [Cruella De Vil](https://disney.fandom.com/wiki/Cruella_De_Vil "w:c:disney:Cruella De Vil"). Interestingly, in The Hostile Hospital, the outfit she wears to capture the children is a fur outfit that is white with black spots, not unlike Cruella's dream Dalmatian coat.
-	- One strong difference between Esmé and these characters is that Esmé is portrayed as being more normal and less "obviously evil" looking (as making characters "ugly" to denote them as "evil" is a common and arguably overused trope which can teach children bias). In *The Carnivorous Carnival*, Esmé is depicting having a slim and normal figure. She is also portrayed by Lucy Punch in the TV series, who could be considered an attractive woman.
+  - One strong difference between Esmé and these characters is that Esmé is portrayed as being more normal and less "obviously evil" looking (as making characters "ugly" to denote them as "evil" is a common and arguably overused trope which can teach children bias). In *The Carnivorous Carnival*, Esmé is depicting having a slim and normal figure. She is also portrayed by Lucy Punch in the TV series, who could be considered an attractive woman.
 - Esmé Squalor has an unofficial [fan club](https://snicket.fandom.com/wiki/Esm%C3%A9_Squalor_Fan_Club "Esmé Squalor Fan Club") of sorts, likely due to being very popular and a very "in" member of the city. The only known members are [Geraldine Julienne](https://snicket.fandom.com/wiki/Geraldine_Julienne "Geraldine Julienne") and [Vice Principal Nero](https://snicket.fandom.com/wiki/Vice_Principal_Nero "Vice Principal Nero"). In reality, it's really a team of fire-starting V.F.D agents. Their only known action is when they successfully took away the [Mamba du Mal](https://snicket.fandom.com/wiki/Mamba_du_Mal "Mamba du Mal") from the fire-fighting V.F.D. The fan club is mentioned in *[Lemony Snicket: The Unauthorized Autobiography](https://snicket.fandom.com/wiki/Lemony_Snicket:_The_Unauthorized_Autobiography "Lemony Snicket: The Unauthorized Autobiography")*.
 - Esmé being the city's "sixth" most important financial advisor may be related to the Number of the Beast symbolism, as she lives on 667 Dark Avenue. However, it could also simply be a reference to her appearing in the sixth book.
 ![Esmé Squalor.](https://static.wikia.nocookie.net/snicket/images/a/a4/EsmeCover.png/revision/latest/scale-to-width-down/200?cb=20170730024928)
@@ -272,13 +272,13 @@ Esmé carrying Jerome after he is drugged by Count Olaf's Troupe.
 - In *The Ersatz Elevator*, she shows ridiculously impressive physical strength when she has to drag Jerome's unconscious body up to her penthouse and all 65 flights on stairs. She is also seen carrying Jerome over her shoulder with ease as if he were a toothpick. In *The Hostile Hospital*, she knocked down file cabinets with ease as if they were dominoes to capture Violet Baudelaire, although she also did this in the book.
 - In the TV series, Esmé's fur dress is fake fur (at least from a behind-the-scenes perspective, it is likely intended to be real fur in the actual story) [\[1\]](https://www.youtube.com/watch?v=eEHezmts9iM)
 - The initials of her name form "EGGS". Many of her aliases form words:
-	- Sabrina Pepper Anastasia Marigold spells "SPAM", an Internet acronym for "stupid pointless annoying messages".
-		- Cassandra Ursula Terrific Elliandra spells "CUTE".
+  - Sabrina Pepper Anastasia Marigold spells "SPAM", an Internet acronym for "stupid pointless annoying messages".
+    - Cassandra Ursula Terrific Elliandra spells "CUTE".
 - Esmé is known as Esmé Gigi Geniveve Sordidez in Spain Esmé Gigi Geniveve Miseria in Latin America and Esmé Gigi Geniveve Elend in Germany.
 - She is technically still married to Jerome as Jerome said in *[The Penultimate Peril: Part Two](https://snicket.fandom.com/wiki/The_Penultimate_Peril:_Pa***REMOVED***Two "The Penultimate Peril: Part Two")* because they did not legally divorce yet.
 - In the TV series, Esmé mentions being part of the Snow Scouts during her youth - in *The Hostile Hospital: Part One*, she tells Olaf's Troupe she was crowned False Spring Queen at 14 years of age. When her troupe danced around the pole atop Mount Fraught, as per tradition, she allegedly discovered her love of pole dancing.
-	- There is no mention of Esmé's time as a Snow Scout, or False Spring Queen title, during either part of *The Slippery Slope*.
-		- Esmé's pole dancing interest is hinted at earlier in Season Two; in *The Vile Village: Part One*, she finds the firepole in the abandoned firehouse-turned-saloon, twirls around it, and asks Olaf if the place is more of a club.
+  - There is no mention of Esmé's time as a Snow Scout, or False Spring Queen title, during either part of *The Slippery Slope*.
+    - Esmé's pole dancing interest is hinted at earlier in Season Two; in *The Vile Village: Part One*, she finds the firepole in the abandoned firehouse-turned-saloon, twirls around it, and asks Olaf if the place is more of a club.
 - She likes coffee. [^6]
 - In *The Hostile Hospital: Part One*, Fernald compares Esmé to Yoko Ono; an artist who is reknowned for her fanatical art pieces. Yoko Ono's style of art was insane, much like Esmé, who has a crazy personality and taste in fashion.
 

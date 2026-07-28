@@ -33,7 +33,7 @@ related:
 ## Vault State
 
 | Directory | Markdown Files | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | !ADMINISTRATION/ | 15 | Infrastructure, audits, LEVELSET files |
 | ATTACHMENTS/ | 4 | Templates (Article, Hearing, OP-ED, Press Release) |
 | GOVERNMENTS/ | 392 | Executive, legislative, judicial, federal, tribal |
@@ -48,7 +48,7 @@ related:
 ## Automation
 
 | Script | File | Status |
-|---|---|---|
+| --- | --- | --- |
 | Legislature scraper | `idaho_leg_scraper.py` | Active — daily 6 AM MT |
 | Bill digest poster | `post_digest.py` | Active — called by scraper |
 | Sort audit | `so***REMOVED***audit.py` | Active — manual dispatch |
@@ -56,7 +56,7 @@ related:
 | Wayback audit | `wayback_audit.py` | Active |
 
 | Workflow | File | Status |
-|---|---|---|
+| --- | --- | --- |
 | `idaho-leg-scraper.yml` | Legislature scraper + digest | Active |
 | `sort-audit.yml` | Vault sort audit | Active |
 | `vault-propose-moves.yml` | File move proposals | Active |

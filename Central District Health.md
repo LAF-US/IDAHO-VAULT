@@ -14,9 +14,10 @@ Director: Russ Duke
 Boise, ID 83704-0825  
 1-208-375-5211  
 
-Treasure Valley & Central Idaho public health district 
+Treasure Valley & Central Idaho public health district
 
 Counties:
+
 - Ada
 - Elmore
 - Boise

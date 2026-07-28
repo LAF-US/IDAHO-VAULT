@@ -27,8 +27,8 @@ date modified: Thursday, June 11th 2026, 6:01:34 pm
 | --- |
 | Subjects: | Artificial Intelligence (cs.AI) |
 | Cite as: | [arXiv:2603.19461](https://arxiv.org/abs/2603.19461) \[cs.AI\] |
-|  | (or [arXiv:2603.19461v1](https://arxiv.org/abs/2603.19461v1) \[cs.AI\] for this version) |
-|  | [https://doi.org/10.48550/arXiv.2603.19461](https://doi.org/10.48550/arXiv.2603.19461) |
+| | (or [arXiv:2603.19461v1](https://arxiv.org/abs/2603.19461v1) \[cs.AI\] for this version) |
+| | [https://doi.org/10.48550/arXiv.2603.19461](https://doi.org/10.48550/arXiv.2603.19461) |
 
 ## Submission history
 

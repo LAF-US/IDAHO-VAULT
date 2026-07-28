@@ -20,11 +20,12 @@ related:
   - idpol
 ---
 
-RT @kkruesi: “The girl” 
+RT @kkruesi: “The girl”
 
-(The girl is me and she stands by her reporting.) #idleg #idpol https://t.co/JDQOPsnqw5
+(The girl is me and she stands by her reporting.) #idleg #idpol <https://t.co/JDQOPsnqw5>
 
 ## Media
+
 - ![](https://pbs.twimg.com/media/DaMctEZV4AAfzos.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/982894740042432512)
