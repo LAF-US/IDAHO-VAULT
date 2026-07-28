@@ -17,6 +17,7 @@ related:
 
 # LEVELSET
 This prompt is being run simultaneously across all active Claude conversations. Each conversation should respond with its own LEVELSET REPORT using the structure below. The goal is a unified picture of where we are across all parallel sessions.
+
 ---
 ## Your LEVELSET REPORT should cover:
 **1. WHO YOU ARE**
@@ -31,6 +32,7 @@ What is pending, incomplete, or waiting on Logan? What questions do you have tha
 What information, files, or decisions from Logan or other conversations would unblock you?
 **6. COLLISION RISKS**
 Are you aware of any files or folders that multiple conversations may have touched or are planning to touch? Flag them explicitly.
+
 ---
 ## Context for all conversations:
 **The vault:** IDAHO-VAULT — Logan Finney's personal extended memory and journalism research vault in Obsidian.md, ~2,900 notes, public GitHub repo at github.com/loganfinney27/IDAHO-VAULT.
