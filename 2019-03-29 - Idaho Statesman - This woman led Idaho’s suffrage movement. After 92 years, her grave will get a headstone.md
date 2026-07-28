@@ -11,7 +11,7 @@ Listen to this article
 
 Boise pioneer Corilla Robbins led a remarkable life.
 
-She crossed the Plains from Missouri to Idaho, leading an ox team on a prairie schooner with her husband and four children in 1876. She rode to Idaho City in Boise’s first horse-drawn taxi — the passenger compartment boasting a shiny body, glass windows and upholstered seats.
+She crossed the Plains from Missouri to [[Idaho]], leading an ox team on a prairie schooner with her husband and four children in 1876. She rode to Idaho City in Boise’s first horse-drawn taxi — the passenger compartment boasting a shiny body, glass windows and upholstered seats.
 
 In 1903, when the first automobile arrived in Boise, a roadster, she was the first woman to take a ride. And when the first airplane arrived in 1919, an open-air Curtiss, naturally, Robbins, then 73, was among the first to jump aboard the bi-plane and fly over Boise.
 
@@ -70,3 +70,5 @@ Idaho Statesman
 Reporter John Sowell has worked for the Statesman since 2013. He covers business and growth issues. He grew up in Emmett and graduated from the University of Oregon. If you like seeing stories like this, please consider supporting our work with a digital subscription to the Idaho Statesman.
 
 <iframe allow="clipboard-write; web-share" src="chrome-extension://cnjifjpddelmedmihgijeibhnjfabmlf/side-panel.html?context=iframe"></iframe>
+
+#idaho

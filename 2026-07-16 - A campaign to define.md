@@ -8,7 +8,7 @@ description:
 ---
 ![](https://www.ridenbaugh.com/WordPress/wp-content/uploads/stapiluslogo.png) What is the abortion initiative, really?
 
-How Idaho voters answer that question will decide the fate of the new abortion-related initiative that may dominate Idaho politics in the next three and a half months.
+How [[Idaho]] voters answer that question will decide the fate of the new abortion-related initiative that may dominate Idaho politics in the next three and a half months.
 
 After not just a few years but decades of Idaho Legislatures passing anti-abortion laws, Idaho voters this year will have a chance to speak to it directly. They have consistently re-elected legislators who passed those laws, but was that the reason for that support or just a by-product? We’ll soon find out.
 
@@ -39,3 +39,5 @@ My estimate: It depends on what voters think they are voting on. How is the meas
 “Proposition 1 claims to protect conscience rights for physicians, but leaves out churches, pregnancy centers, faith-based providers, and more.” The initiative would have no effect on those other groups as far as expression of conscience is concerned.
 
 So, what’s the initiative about? The best answer, as both the advocates and critics have suggested, lies in reading this short four-page document. The vote may hinge on how many people do.
+
+#idaho

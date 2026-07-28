@@ -20,7 +20,7 @@ Free Shipping in The USA
 
 Details
 
-Self-taught painter Joseph Ralph Breckenridge, aka "Cowboy Joe," was born in 1894 in Ionia, Michigan and passed away in Coeur d'Alene, Idaho, in 1972. During those years, Joe served in the Marine Corps in World War I and performed as a rodeo cowboy. He is best remembered for his paintings like this one, created as he traveled the US, Canada and Mexico. He painted on small wooden panels at bars, saloons and pool halls, trading his artworks for beer. He also painted murals and demonstrated his painting at county and state fairs. The black and white photo is from his obituary in the Coeur d'Alene, Idaho Press newspaper, while the color picture of him painting in a bar is by AI.
+Self-taught painter Joseph Ralph Breckenridge, aka "Cowboy Joe," was born in 1894 in Ionia, Michigan and passed away in Coeur d'Alene, [[Idaho]], in 1972. During those years, Joe served in the Marine Corps in World War I and performed as a rodeo cowboy. He is best remembered for his paintings like this one, created as he traveled the US, Canada and Mexico. He painted on small wooden panels at bars, saloons and pool halls, trading his artworks for beer. He also painted murals and demonstrated his painting at county and state fairs. The black and white photo is from his obituary in the Coeur d'Alene, Idaho Press newspaper, while the color picture of him painting in a bar is by AI.
 
 This painting with the title "Lost Pack Horse" shows a lone horse, pack on his back, wandering in a sleeting snowstorm against a washed-out blue sky, trying to follow in the footsteps of the horse in front of him, but falling behind. A single wolf is trailing him, waiting behind snow covered rocks for the right moment. The painting is so evocative of scenes played out in the wild.
 
@@ -63,3 +63,5 @@ Please stop back to visit regularly. We're always adding new things to love.
 Enjoy primping your home!  
   
 Thanks, Wayne, Linda & Sassy Henrich
+
+#idaho

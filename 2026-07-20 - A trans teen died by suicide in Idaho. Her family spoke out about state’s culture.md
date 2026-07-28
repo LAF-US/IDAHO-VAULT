@@ -9,7 +9,7 @@ description: "“The parents go and testify, and we say, ‘Children are going t
 ---
 ![A person flies a transgender pride flag outside of the Idaho Capitol in Boise during a Trans Day of Visibility rally, Tuesday, March 31, 2026.](https://www.idahostatesman.com/public/latest-news/umc0c/picture315257128/alternates/LANDSCAPE_1200/BOI_033104transvisibility.JPG)
 
-A person flies a transgender pride flag outside of the Idaho Capitol in Boise. The family of a transgender teenager is speaking out after their daughter died by suicide earlier this year, and pointing to the harms from the state’s laws targeting transgender people. smiller@idahostatesman.com
+A person flies a transgender pride flag outside of the [[Idaho]] Capitol in Boise. The family of a transgender teenager is speaking out after their daughter died by suicide earlier this year, and pointing to the harms from the state’s laws targeting transgender people. smiller@idahostatesman.com
 
 Listen to this article
 
@@ -46,3 +46,5 @@ Want to see more content like this?
 **CORRECTION:** This story was updated July 20, 2026, to correct the source of a quote from Joseph Pollard.
 
 Corrected Jul 20, 2026
+
+#idaho
