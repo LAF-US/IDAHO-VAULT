@@ -7,7 +7,7 @@ created: 2026-07-21
 ---
 ![Idaho State Archives building view from the front](https://history.idaho.gov/wp-content/uploads/ISA-Landing.jpg)
 
-The Idaho State Archives (ISA) and Research Center provide public access to records of fiscal, administrative, legal, cultural and long-term research value to the citizens and government of Idaho. ISA preserves a large and unique collection of materials that relate to the history of Idaho and the West, including photographs, books, maps, manuscripts, oral histories, and government records.
+The [[Idaho]] State Archives (ISA) and Research Center provide public access to records of fiscal, administrative, legal, cultural and long-term research value to the citizens and government of Idaho. ISA preserves a large and unique collection of materials that relate to the history of Idaho and the West, including photographs, books, maps, manuscripts, oral histories, and government records.
 
 How to schedule appointments:
 
@@ -36,3 +36,5 @@ Patrons are asked to help preserve ISA’s historic items by following these bas
 (208) 334-2620
 
 [public.archives@ishs.idaho.gov](mailto:public.archives@ishs.idaho.gov)
+
+#idaho
