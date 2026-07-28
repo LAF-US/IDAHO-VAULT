@@ -10,7 +10,7 @@ description: "In a  previous post , I mentioned that the lettering above the bu
 
 In a [previous post](https://www.rickjust.com/blog/sandblasting-history), I mentioned that the lettering above the building at 6th and Main had been sandblasted away. It had once read “Boise Turnverein,” marking the entrance to a club for those of German descent. The club was disbanded, and the building sold when anti-German fever was rampant in Boise at the beginning of World War I.  
   
-I ran across another example of that sentiment in a couple of issues of the Idaho Statesman from November 1917.  
+I ran across another example of that sentiment in a couple of issues of the [[Idaho]] Statesman from November 1917.  
   
 C.G. Goetling, who ran a farm near Eagle, was surprised to see a crowd of men approaching him one November day. They were upset about his hay derrick. Goetling sensed some danger, but he tried joking with them about it. They didn’t like the colors he had used to paint the derrick. The pole was red and white with a strip of black tar on one end. Those were the colors of the German flag. Since Goetling was of German descent, the men confronting him did not think it an accident.  
   
@@ -35,3 +35,5 @@ Nothing more of the incident was reported. I could find only two more mentions o
 This is what the German flag looked like in 1917.
 
 Speaking of Idaho history posts are copyright © 2020 by Rick Just. Sharing is encouraged. If you don’t find a button that lets you do that, find the post on Speaking of Idaho. If you’re missing my daily posts, select the RSS button, or select See it First under the Facebook Following tab.
+
+#idaho

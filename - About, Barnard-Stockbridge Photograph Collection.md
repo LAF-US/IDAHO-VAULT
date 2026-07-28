@@ -15,7 +15,7 @@ The Barnard-Stockbridge Collection features nearly 4,000 photographs selected fr
 
 ### T. N. Barnard
 
-In 1889, Thomas N. Barnard and his wife moved to Wallace, Idaho where he established his photo studio. The studio was destroyed in a fire in 1890 with a small amount of his negatives surviving. Most of the photographs taken in the early years “included landscapes, placer workings, townscapes, and panoramic views” of Wallace and Murray Idaho, taken on 5 x 7 and 8 x 10 dry-plate negatives. Barnard made most of his living from his landscape photographs, which were for sale to the general public and commissioned portraits.
+In 1889, Thomas N. Barnard and his wife moved to Wallace, [[Idaho]] where he established his photo studio. The studio was destroyed in a fire in 1890 with a small amount of his negatives surviving. Most of the photographs taken in the early years “included landscapes, placer workings, townscapes, and panoramic views” of Wallace and Murray Idaho, taken on 5 x 7 and 8 x 10 dry-plate negatives. Barnard made most of his living from his landscape photographs, which were for sale to the general public and commissioned portraits.
 
 ![Portrait of Thomas Nathan Barnard (1861-1916) in a studio chair, reading newspaper, with a cigar in his mouth.](https://objects.lib.uidaho.edu/barstock/small/barstock1224_sm.jpg)
 
@@ -48,3 +48,5 @@ This digital collection is built with [CollectionBuilder](https://collectionbuil
 Using the [CollectionBuilder-CSV](https://github.com/CollectionBuilder/collectionbuilder-csv) template and the static website generator [Jekyll](https://jekyllrb.com/), this project creates an engaging interface to explore driven by metadata.
 
 [![CollectionBuilder](https://www.lib.uidaho.edu/digital/barstock/assets/img/collectionbuilder-logo.png)](https://collectionbuilder.github.io/ "CollectionBuilder")
+
+#idaho

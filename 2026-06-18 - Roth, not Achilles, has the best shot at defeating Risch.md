@@ -11,7 +11,7 @@ Opinion articles provide independent perspectives on key community issues, separ
 
 ![Idaho Democratic candidate for U.S. Senator David Roth is shown in a 2022 debate.](https://www.idahostatesman.com/public/latest-news/deo0nm/picture266775236/alternates/LANDSCAPE_1200/BOI_1003SENdebate05roth)
 
-Idaho Democratic candidate for U.S. Senator David Roth is shown in a 2022 debate. doswald@idahostatesman.com
+[[Idaho]] Democratic candidate for U.S. Senator David Roth is shown in a 2022 debate. doswald@idahostatesman.com
 
 Listen to this article
 
@@ -40,3 +40,5 @@ LaRocco wants sparks to fly in Idaho. So do I. The poll just shows who should be
 Want to see more content like this?
 
 <iframe allow="clipboard-write; web-share" src="chrome-extension://cnjifjpddelmedmihgijeibhnjfabmlf/side-panel.html?context=iframe"></iframe>
+
+#idaho
