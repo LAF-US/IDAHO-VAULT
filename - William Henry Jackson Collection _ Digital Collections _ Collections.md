@@ -1,0 +1,21 @@
+---
+title: "William Henry Jackson Collection | Digital Collections | Collections"
+source: "https://lib.byu.edu/collections/william-henry-jackson-collection/about/"
+author:
+published:
+created: 2026-07-28
+description:
+---
+## About the Collection
+
+William Henry Jackson, 1843–1942, was one of the most renowned 19th Century landscape photographers of the American West. He was a man of great energy and love for the outdoors and especially the breadth and heights of the mountain west. His life spanned the first century of the new visual art of photography and the great era of westward expansion. He began his photography career in 1858 in New York as a photographic retouching artist in the burgeoning photography industry and ended it in New York City with his death in 1942. In between these years he became increasingly proficient in his chosen field through his studio and field work in Omaha, NE, his nine year odyssey as the official photographer with Ferdinand Vandeveer Hayden’s United States Geological Survey of the Territories, his 15 years in Denver, CO, 17 months of Asian and Pacific travel with the World Transportation Commission, his 27 years in Detroit associated with the Detroit Photographic Company and its successor the Detroit Publishing Company, and finally his highly productive “so-called” retirement years from 1924–1942.
+
+The photographs and art work, which comprise the bulk of the William Henry Jackson collection in the L. Tom Perry Special Collections, include 1,082 individual items, of which 1,079 can be found in this digital collection. There is an astonishing range of subjects and media, and a significant number of images from every phase of his long and prolific career. Approximately 1,000 of the photographs are attributed to Jackson, with three photographs clearly those of his son, Clarence S. Jackson.
+
+Geographically the collection is dominated by scenery of the western United States and Mexico, but also includes 231 images from all of the Asian and Pacific countries, except Korea, visited from 1894–1896, as a part of the World Transportation Commission travels. Because of his lengthy stay in Colorado, the over 190 Colorado images form the largest single group of western photographs. The over 90 images of Mexico form the next largest group of photographs. Native American portraiture, with approximately 60 images, Yellowstone, 56 images, and Utah, 21 images, also form important portions of the collection. The approximately 30 pieces of art, in various media, are western in their focus.
+
+This collection is rich in original, contemporary photographic prints, and original watercolors, oil paintings, and sketches. There are approximately 400 albumen prints and over 450 gelatin prints, along with about 50 stereocards, and almost 40 photochrom process prints. There is a tintype, an ambrotype, and 4 gelatin panorama prints of Russia, along with two albums (Yellowstone, and Mexico & Colorado).
+
+Although the collection is small, it spans his long career, and clearly demonstrates his growing proficiency and sophistication in photographic artistry. It is offered here as a unique collection which can stand on its own and as a complement to other major collections, some of which are also available on the Internet.
+
+[![A building and plaza](https://media.lib.byu.edu/assets/images/collections/1.0/william-henry-jackson-collection/mexico.jpg)](http://contentdm.lib.byu.edu/cdm/singleitem/collection/Jackson/id/4377) [![Elephant battery at Campleperr](https://media.lib.byu.edu/assets/images/collections/1.0/william-henry-jackson-collection/elephants.jpg)](http://contentdm.lib.byu.edu/cdm/singleitem/collection/Jackson/id/3953) [![One of Nasai temple, Japan.](https://media.lib.byu.edu/assets/images/collections/1.0/william-henry-jackson-collection/japan.jpg)](http://contentdm.lib.byu.edu/cdm/compoundobject/collection/Jackson/id/4141) [![A Goldes Bear Hunter Traveling on the frozen Amur River](https://media.lib.byu.edu/assets/images/collections/1.0/william-henry-jackson-collection/hunter.jpg)](http://contentdm.lib.byu.edu/cdm/compoundobject/collection/Jackson/id/3851)
