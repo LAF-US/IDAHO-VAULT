@@ -5,7 +5,7 @@ author:
 published: 2026-06-15
 created: 2026-07-20
 ---
-A state task force will spend the summer looking at Idaho’s competitive position in the changing world of college sports.
+A state task force will spend the summer looking at [[Idaho]]’s competitive position in the changing world of college sports.
 
 Gov. Brad Little announced the Working Group on College Athletics Monday.
 
@@ -25,3 +25,5 @@ The working group has eight members:
 The task force will hear from athletics departments from Idaho’s public universities “and identify state and local policy solutions and investment opportunities tailored to each institution’s needs,” according to the Little news release.
 
 The group is expected to deliver findings and recommendations to Little by September.
+
+#idaho

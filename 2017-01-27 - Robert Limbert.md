@@ -14,9 +14,11 @@ description: "Browse Collection     Finding Aid Photos by Limbert and photo
 
 Single individual in a canyon in the Owyhees.
 
-Photos by Limbert and photos of Limbert documenting his exploration of little-known regions of Idaho in the 1910s and 20s, notably what is now known as Craters of the Moon National Monument and Preserve, the Bruneau River canyon, and the Sawtooth Mountains. The collection also includes images from his taxidermy business, the Panama-Pacific International Exposition of 1915, and the early years of Redfish Lake Lodge.
+Photos by Limbert and photos of Limbert documenting his exploration of little-known regions of [[Idaho]] in the 1910s and 20s, notably what is now known as Craters of the Moon National Monument and Preserve, the Bruneau River canyon, and the Sawtooth Mountains. The collection also includes images from his taxidermy business, the Panama-Pacific International Exposition of 1915, and the early years of Redfish Lake Lodge.
 
 **Photo Credits**  
 Thumbnail image on homepage: [Robert W. Limbert with Rifle](http://digital.boisestate.edu/ "Opening Day"), MSS 80 11030.
 
 Landing page image: [Bruneau Canyon](http://digital.boisestate.edu/ "Romance Language Night"), MSS 80 248.
+
+#idaho
