@@ -8,7 +8,7 @@ published: 2020-11-17
 created: 2026-07-22
 description:
 ---
-Boise State University Special Collections and Archives (SCA) collects, preserves, and makes accessible primary source materials of enduring value about Boise State University, the city of Boise, the Treasure Valley, and the state of Idaho to enrich learning, research, and creative work. Collections are open for use by anyone from the campus, local, state, national, and international communities in support of the free exchange of ideas and information by promoting the widest possible access to our materials. While SCA strives to make all collections openly accessible, but may impose temporary restrictions on select materials based on donor stipulation, privacy concerns, legal regulations, or other reasons.
+Boise State University Special Collections and Archives (SCA) collects, preserves, and makes accessible primary source materials of enduring value about Boise State University, the city of Boise, the Treasure Valley, and the state of [[Idaho]] to enrich learning, research, and creative work. Collections are open for use by anyone from the campus, local, state, national, and international communities in support of the free exchange of ideas and information by promoting the widest possible access to our materials. While SCA strives to make all collections openly accessible, but may impose temporary restrictions on select materials based on donor stipulation, privacy concerns, legal regulations, or other reasons.
 
 ### Hours
 
@@ -53,3 +53,5 @@ Researchers may request reproductions for personal or public use. Staff may limi
 ### Permission to Publish
 
 Permission to publish materials requires staff approval and may be subject to fees. Please send requests to [archives@boisestate.edu](mailto:archives@boisestate.edu) with an explanation of the project. Use of athletics photos and videos may require permission from [Trademark Licensing and Enforcement](https://www.boisestate.edu/licensing/).
+
+#idaho

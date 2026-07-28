@@ -9,7 +9,7 @@ description: "In our Inside Idaho series, we like to take a look at the pioneers
 ---
 ![Idaho Flag](https://boisedev.com/wp-content/uploads/2021/07/shutterstock_1536621194-2048x1138.jpg)
 
-Idaho Flag, with a seal designed by Emma Edwards Greene
+[[Idaho]] Flag, with a seal designed by Emma Edwards Greene
 
 ![](https://boisedev.com/wp-content/uploads/2021/05/inside-idaho-bar.png)
 
@@ -60,3 +60,5 @@ To date, she is the first and only woman to design a state seal.
 Idaho Lottery - 90 MM - 2:1
 
 **Next week in our Inside Idaho series:** The state’s motto is on the state’s seal. But what does it mean?
+
+#idaho

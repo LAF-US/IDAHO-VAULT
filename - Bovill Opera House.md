@@ -14,7 +14,7 @@ description: "Item from Latah County Historic Places: Constructed in 1910, this 
 
 **Bovill Opera House (Site # 2)**
 
-**Location:** Bovill, Idaho. 46.85952134, -116.3949083
+**Location:** Bovill, [[Idaho]]. 46.85952134, -116.3949083
 
 **Description:** Constructed in 1910, this building hosted vaudeville troupes, silent movies, plays, and community events on the main floor. The upstairs was used for lodge meetings and dances. Beautiful murals, on the main level, were painted by "Cowboy Joe" Breckenridge.
 
@@ -40,3 +40,5 @@ In copyright, educational use permitted. Educational use includes non-commercial
 Standardized Rights:
 
 [http://rightsstatements.org/vocab/InC-EDU/1.0/](http://rightsstatements.org/vocab/InC-EDU/1.0/)
+
+#idaho

@@ -6,7 +6,7 @@ published: 2009-09-19
 created: 2026-07-20
 description: "(A historical marker  located near Lowman in Boise County, Idaho.)"
 ---
-Near Lowman in Boise County, Idaho — *The American West (Mountains)*
+Near Lowman in Boise County, [[Idaho]] — *The American West (Mountains)*
 
 ## Emma Edwards
 
@@ -38,3 +38,5 @@ this marker is on the Snake River Plain and in Greater Boise. It is also in the 
   
 Other nearby markers. At least 4 other markers are within 6 miles of this marker, measured as the crow flies: [A Community in Trouble](https://www.hmdb.org/m.asp?m=110747) (approx. 3.3 miles away); [Life in a Fire Camp](https://www.hmdb.org/m.asp?m=110749) (approx. 3.3 miles away); [Lowman](https://www.hmdb.org/m.asp?m=22616) (approx. 4 miles away); [It Happened One Summer](https://www.hmdb.org/m.asp?m=119233) (approx. 5½ miles away).  
 Credits. This page was last [revised](https://www.hmdb.org/ChangeHistory.asp?m=22637) on January 3, 2025. It was originally submitted on September 22, 2009, by Rebecca Maxwell of Boise, Idaho. This page has been viewed 3,790 times since then and 146 times this year. **Photos:** **1, 2.** submitted on September 22, 2009, by Rebecca Maxwell of Boise, Idaho. • Craig Swain was the editor who published this page.
+
+#idaho

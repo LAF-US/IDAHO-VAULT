@@ -15,7 +15,7 @@ created: 2026-07-16
 | **Date** | **Volume** | **Issue** | **Author** | **Title** | **Description** |
 | --- | --- | --- | --- | --- | --- |
 | 1966 | 10 | 1 | Edited by William E. Davis | George Forman, the Great Pedestrian | Entertaining and perceptive observations of Boise Basin during the gold rush. |
-| 1966 | 10 | 1 | Stacy Peterson | Silas Skinner's Owyhee Toll Road | An Idaho author describes the toll route established by Silas Skinner in 1866. |
+| 1966 | 10 | 1 | Stacy Peterson | Silas Skinner's Owyhee Toll Road | An [[Idaho]] author describes the toll route established by Silas Skinner in 1866. |
 | 1966 | 10 | 1 | R. G. Cook | Pioneer Portraits: Weldon B. Heyburn | This biographical sketch of a prominent Idaho United States Senator is based upon a thesis prepared at the University of Idaho. |
 | 1966 | 10 | 1 |  | Those Were the Days | ...Pack trains. |
 | 1966 | 10 | 1 |  | Book Reviews |  |
@@ -35,3 +35,5 @@ created: 2026-07-16
 | 1966-1967 | 10 | 4 |  | Book Reviews |  |
 
 <iframe allow="clipboard-write; web-share" src="chrome-extension://cnjifjpddelmedmihgijeibhnjfabmlf/side-panel.html?context=iframe"></iframe>
+
+#idaho
