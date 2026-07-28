@@ -14,7 +14,7 @@ Identifier: MS 2/1345
 
 ## Summary
 
-Three items dealing with Idaho roads and the construction of the Warrens & Big Creek Wagon Road and the completion of the Lewis & Clark Highway.
+Three items dealing with [[Idaho]] roads and the construction of the Warrens & Big Creek Wagon Road and the completion of the Lewis & Clark Highway.
 
 ## Dates
 
@@ -62,3 +62,5 @@ Part of the Idaho State Archives Manuscript Collections Repository
 Boise ID 83712  
 (208) 334-2620  
 [public.archives@ishs.idaho.gov](mailto:public.archives@ishs.idaho.gov "Send email")
+
+#idaho

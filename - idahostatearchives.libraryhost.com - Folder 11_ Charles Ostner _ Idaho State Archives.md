@@ -30,7 +30,7 @@ From the Collection: English
 
 ### General
 
-Items related to Charles Ostner and his sculpture of George Washington on horseback that was commissioned for the Idaho State Capitol. Includes photos and newspaper clippings.
+Items related to Charles Ostner and his sculpture of George Washington on horseback that was commissioned for the [[Idaho]] State Capitol. Includes photos and newspaper clippings.
 
 ## Repository Details
 
@@ -45,3 +45,5 @@ Part of the Idaho State Archives Manuscript Collections Repository
 Boise ID 83712  
 (208) 334-2620  
 [public.archives@ishs.idaho.gov](mailto:public.archives@ishs.idaho.gov "Send email")
+
+#idaho
