@@ -11,7 +11,7 @@ description: "The renowned Idaho Outsider artist was known for squirreling his d
 
 "Untitled," a previously known James Castle work Smithsonian American Art Museum
 
-At the end of this month, the city of Boise, Idaho, will reopen [the James Castle House](https://www.jamescastlehouse.org/) after a major renovation and expansion. Among the 61 works that will be on display by the acclaimed self-taught artist will include 11 never before seen by the public. That’s because, as [Anna Webb at the *Idaho Statesman*](http://www.idahostatesman.com/news/local/article208456679.html) explains, they were found stuffed in the wall of his house during the renovation.
+At the end of this month, the city of Boise, [[Idaho]], will reopen [the James Castle House](https://www.jamescastlehouse.org/) after a major renovation and expansion. Among the 61 works that will be on display by the acclaimed self-taught artist will include 11 never before seen by the public. That’s because, as [Anna Webb at the *Idaho Statesman*](http://www.idahostatesman.com/news/local/article208456679.html) explains, they were found stuffed in the wall of his house during the renovation.
 
 Rachel Reichert, cultural sites manager for Boise, tells Webb that the artworks were found in 2016 during the restoration process. She had a feeling that something was hidden behind a wall covered with newspaper and fabric insulation in the living room. Sure enough, when the insulation was peeled back it revealed ten artworks as well as blank paper, marbles, pencils and a tobacco bag. Reichert tells [Eileen Kinsella at *artnet*](https://news.artnet.com/art-world/james-castle-works-boise-home-1266695) *[News](http://news.artnet.com/art-world/james-castle-works-boise-home-1266695)* that one other newly discovered work was found in a small book in the wall of a bedroom. “It’s hard to say what the intention was. I don’t get the sense that it was a storage issue, ” Reichert says. “It’s almost like a little time capsule.”
 
@@ -30,3 +30,5 @@ In 2015, Schmidt sold the house to the City of Boise. A University of Idaho [arc
 “One of the most incredible parts of this project was to realize the connection between the house and Castle’s work,” Reichert tells Kinsella. “We discovered that many of the materials that Castle used in his work were quite possibly the same types of materials that were used to construct the house or to add on to the house.”
 
 When the James Castle House reopens on April 28 it will host several marquee events including the exhibition and a symposium in which the new artworks will be revealed.
+
+#idaho

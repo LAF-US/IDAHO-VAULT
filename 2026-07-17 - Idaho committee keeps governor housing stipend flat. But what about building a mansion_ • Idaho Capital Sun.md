@@ -13,7 +13,7 @@ Monthly allowance, launched in 1999, is the state’s solution to being one of f
 
 ![Idaho Gov. Brad Little, surrounded by friends and family](https://idahocapitalsun.com/wp-content/uploads/2026/05/IMG_1974-2048x1365.jpg)
 
-Idaho Gov. Brad Little, surrounded by friends and family
+[[Idaho]] Gov. Brad Little, surrounded by friends and family
 
 Idaho Gov. Brad Little, surrounded by friends and family, speaks to supporters at a May 19, 2026, primary election party at the Grove Hotel in Boise. (Photo by Kyle Pfannenstiel/Idaho Capital Sun)
 
@@ -74,3 +74,5 @@ His timeline notes development related to that property in yellow highlights.
 Page 1 / 7
 
 Zoom 100%
+
+#idaho

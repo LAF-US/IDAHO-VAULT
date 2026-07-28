@@ -50,4 +50,6 @@ Shared beliefs like these are central to the American experiment. E pluribus unu
 
 *Tim Storey is the CEO of the National Conference of State Legislatures. Sue K. Urahn is the president and CEO of The Pew Charitable Trusts.*
 
-This story was originally produced by [News From The States](https://www.newsfromthestates.com/article/e-pluribus-unum-not-slogan-its-choice), which is part of States Newsroom, a nonprofit news network which includes Idaho Capital Sun, and is supported by grants and a coalition of donors as a 501c(3) public charity.
+This story was originally produced by [News From The States](https://www.newsfromthestates.com/article/e-pluribus-unum-not-slogan-its-choice), which is part of States Newsroom, a nonprofit news network which includes [[Idaho]] Capital Sun, and is supported by grants and a coalition of donors as a 501c(3) public charity.
+
+#idaho

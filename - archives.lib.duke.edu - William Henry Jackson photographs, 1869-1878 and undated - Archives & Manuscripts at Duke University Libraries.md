@@ -27,7 +27,7 @@ Creator:
 
 Abstract:
 
-William Henry Jackson (1843-1942), was one of the earliest and most important American photographers. From 1869 to 1878 he was official photographer for the U.S. Geological Survey of the Territories. Collection includes 130 photographs and albumen prints, almost all of which Jackson made while employed by the Survey. States represented are Colorado, Idaho, Montana, Utah, and Wyoming. Photographs are organized in several series by year from 1869 to 1874. Other important photographs include both a series and an album of the area now know as Yellowstone National Park; some of Jackson's photographs were shown to Congress prior to their vote to establish it as the first national park.
+William Henry Jackson (1843-1942), was one of the earliest and most important American photographers. From 1869 to 1878 he was official photographer for the U.S. Geological Survey of the Territories. Collection includes 130 photographs and albumen prints, almost all of which Jackson made while employed by the Survey. States represented are Colorado, [[Idaho]], Montana, Utah, and Wyoming. Photographs are organized in several series by year from 1869 to 1874. Other important photographs include both a series and an album of the area now know as Yellowstone National Park; some of Jackson's photographs were shown to Congress prior to their vote to establish it as the first national park.
 
 Extent:
 
@@ -147,3 +147,5 @@ Preferred citation:
 Permalink:
 
 [https://idn.duke.edu/ark:/87924/m1mm02](https://idn.duke.edu/ark:/87924/m1mm02)
+
+#idaho

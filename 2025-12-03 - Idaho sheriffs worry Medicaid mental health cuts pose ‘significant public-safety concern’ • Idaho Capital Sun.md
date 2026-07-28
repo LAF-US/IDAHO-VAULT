@@ -15,7 +15,7 @@ After Medicaid contractor plans to cut critical services for people with severe 
 
 Close up of a psychologist taking notes during a mental health meeting in an office
 
-Magellan of Idaho’s cuts stem from the state of Idaho’s attempts to avoid a projected budget shortfall. (Getty Images)
+Magellan of [[Idaho]]’s cuts stem from the state of Idaho’s attempts to avoid a projected budget shortfall. (Getty Images)
 
 Idaho sheriffs are warning elected officials that new state Medicaid cuts to critical mental health services for people with severe mental illness could pose a public safety risk.
 
@@ -57,3 +57,5 @@ Jason Coombs, founder of Brick House Recovery, a substance abuse treatment cente
 Page 1 / 2
 
 Zoom 100%
+
+#idaho

@@ -16,7 +16,7 @@ House Speaker Mike Moyle, left, and Rep. Bruce Skaug should take a long look in 
 
 Listen to this article
 
-While currently residing in Oregon, I was previously a resident of Boise and the Treasure Valley for over 45 years. Daily I track Idaho news articles. The comments from House Speaker Mike Moyle and Rep. Bruce Skaug regarding the tragic stabbing of Jordan Harbst on the Boise Greenbelt are disgusting and specious. I suggest House Speaker Moyle and Rep. Skaug take a long look in the mirror at who’s to blame and how this tragedy could have been prevented. The same goes for all Republican members of the Idaho Legislature. Blaming the city of Boise for not enforcing the clumsy, lazy legislation known as the “Galloway Law,” and suggesting legal action against the city, is malpractice. What have you two and the Idaho Legislature as a whole done to address homelessness and the mental health crisis in Idaho? Here’s what: 1) repeatedly slashing funding for the latter and 2) taking punitive actions against the former. If there’s any blame to go around, it’s on both of you and your Republican cronies in the Idaho Legislature. Your actions and words are reckless and shameful!
+While currently residing in Oregon, I was previously a resident of Boise and the Treasure Valley for over 45 years. Daily I track [[Idaho]] news articles. The comments from House Speaker Mike Moyle and Rep. Bruce Skaug regarding the tragic stabbing of Jordan Harbst on the Boise Greenbelt are disgusting and specious. I suggest House Speaker Moyle and Rep. Skaug take a long look in the mirror at who’s to blame and how this tragedy could have been prevented. The same goes for all Republican members of the Idaho Legislature. Blaming the city of Boise for not enforcing the clumsy, lazy legislation known as the “Galloway Law,” and suggesting legal action against the city, is malpractice. What have you two and the Idaho Legislature as a whole done to address homelessness and the mental health crisis in Idaho? Here’s what: 1) repeatedly slashing funding for the latter and 2) taking punitive actions against the former. If there’s any blame to go around, it’s on both of you and your Republican cronies in the Idaho Legislature. Your actions and words are reckless and shameful!
 
 *Scott Hauser, The Dalles*
 
@@ -73,3 +73,5 @@ The city has included a line item for $50k in its FY 2027 budget to complete its
 Want to see more content like this?
 
 <iframe allow="clipboard-write; web-share" src="chrome-extension://cnjifjpddelmedmihgijeibhnjfabmlf/side-panel.html?context=iframe"></iframe>
+
+#idaho

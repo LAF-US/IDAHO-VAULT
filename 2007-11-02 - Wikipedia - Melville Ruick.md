@@ -9,7 +9,7 @@ created: 2026-07-20
 
 ## Early years
 
-Ruick was born in [Boise, Idaho](https://en.wikipedia.org/wiki/Boise,_Idaho "Boise, Idaho"), in 1898 to Amanda (née Hughes) and Norman Ruick.[^1] His father was a U.S. [district attorney](https://en.wikipedia.org/wiki/District_attorney "District attorney") in Idaho,[^2] and Ruick studied law at the [University of California](https://en.wikipedia.org/wiki/University_of_California "University of California").
+Ruick was born in [Boise, Idaho](https://en.wikipedia.org/wiki/Boise,_Idaho "Boise, Idaho"), in 1898 to Amanda (née Hughes) and Norman Ruick.[^1] His father was a U.S. [district attorney](https://en.wikipedia.org/wiki/District_attorney "District attorney") in [[Idaho]],[^2] and Ruick studied law at the [University of California](https://en.wikipedia.org/wiki/University_of_California "University of California").
 
 ## Military service
 
@@ -48,3 +48,5 @@ Ruick died in Los Angeles on December 24, 1972, aged 74.[^7]
 [^6]: ["Claire Niesen, Favorite of Soap Opera Fans, Dies"](https://www.newspapers.com/clip/6057669/the_san_bernardino_county_sun/). *[The San Bernardino County Sun](https://en.wikipedia.org/wiki/The_San_Bernardino_County_Sun "The San Bernardino County Sun")*. California, San Bernardino. [Associated Press](https://en.wikipedia.org/wiki/Associated_Press "Associated Press"). October 6, 1963. p. 21. Retrieved July 28, 2016 – via [Newspapers.com](https://en.wikipedia.org/wiki/Newspapers.com "Newspapers.com").
 
 [^7]: Thackrey, Ted Jr. (May 30, 1986). ["Character Actress Lurene Tuttle, 78, Dies"](https://www.latimes.com/archives/la-xpm-1986-05-30-me-8342-story.html). Los Angeles Times. Retrieved August 31, 2015.
+
+#idaho

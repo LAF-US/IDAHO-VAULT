@@ -5,7 +5,7 @@ author:
 published: 2019-07-09
 created: 2026-07-16
 ---
-Corilla Robbins crossed the Plains in 1876, arriving in Idaho after leading an on team on a prairie schooner. She never got a headstone, until now.
+Corilla Robbins crossed the Plains in 1876, arriving in [[Idaho]] after leading an on team on a prairie schooner. She never got a headstone, until now.
 
 Listen to this article
 
@@ -64,3 +64,5 @@ Idaho Statesman
 Reporter John Sowell has worked for the Statesman since 2013. He covers business and growth issues. He grew up in Emmett and graduated from the University of Oregon. If you like seeing stories like this, please consider supporting our work with a digital subscription to the Idaho Statesman.
 
 <iframe allow="clipboard-write; web-share" src="chrome-extension://cnjifjpddelmedmihgijeibhnjfabmlf/side-panel.html?context=iframe"></iframe>
+
+#idaho

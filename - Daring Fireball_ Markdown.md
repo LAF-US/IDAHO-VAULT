@@ -1,11 +1,14 @@
 ---
 title: "Daring Fireball: Markdown"
-source: "https://daringfireball.net/projects/markdown/"
+source: https://daringfireball.net/projects/markdown/
 author:
   - "[[John Gruber]]"
 published:
 created: 2026-07-20
 description:
+dv_Digest:
+  - MD5
+  - MD5
 ---
 ## Markdown
 

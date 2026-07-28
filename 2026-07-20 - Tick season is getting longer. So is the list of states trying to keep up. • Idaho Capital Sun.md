@@ -54,4 +54,6 @@ For states, the challenge is becoming less about responding to tick season and m
 
 *Stateline reporter Amanda Watford can be reached at* [*awatford@stateline.org*](mailto:awatford@stateline.org)*.*
 
-This story was originally produced by [Stateline](https://stateline.org/2026/07/16/tick-season-is-getting-longer-so-is-the-list-of-states-trying-to-keep-up/), which is part of States Newsroom, a nonprofit news network which includes Idaho Capital Sun, and is supported by grants and a coalition of donors as a 501c(3) public charity.
+This story was originally produced by [Stateline](https://stateline.org/2026/07/16/tick-season-is-getting-longer-so-is-the-list-of-states-trying-to-keep-up/), which is part of States Newsroom, a nonprofit news network which includes [[Idaho]] Capital Sun, and is supported by grants and a coalition of donors as a 501c(3) public charity.
+
+#idaho

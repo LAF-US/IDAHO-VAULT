@@ -14,7 +14,7 @@ State officials will transfer about $250M into fiscal year 2027 budget
 
 ![The exterior of the Idaho Statehouse](https://idahocapitalsun.com/wp-content/uploads/2026/03/031626LegislaturePsutphin154-scaled-e1776981367181.jpg)
 
-The exterior of the Idaho Statehouse
+The exterior of the [[Idaho]] Statehouse
 
 The exterior of the Idaho Statehouse as seen on March 16, 2026, in Boise. (Photo by Pat Sutphin for the Idaho Capital Sun)
 
@@ -65,3 +65,5 @@ Instead, Little would use any additional revenue to focus on prioritizing a chan
 Page 1 / 4
 
 Zoom 100%
+
+#idaho
