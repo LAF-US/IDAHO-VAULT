@@ -110,7 +110,7 @@ Work on `s3d` continued to improve compatibility with common S3-style workflows 
 
 All in all, March showed steady progress across nearly every layer of the ecosystem, consistent with Sia’s long-term mission: giving users real ownership over their data. With product improvements, marketing research, grant strategy refinement, and ecosystem development all moving forward together, March was another solid step toward a more usable and more resilient decentralized storage future.
 
-#### That’s all, folks!
+#### That’s all, folks
 
 Thanks for your continued support and dedication as we build the foundation of the decentralized future.
 

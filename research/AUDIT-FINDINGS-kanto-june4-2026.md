@@ -60,7 +60,7 @@ Minor formatting inconsistencies remain in Overview section structure and Refere
 ## CONSISTENCY SCORECARD
 
 | File | TOC | Section Names | Team Tables | References | Japanese Names | Score |
-|------|-----|---------------|-------------|------------|----------------|-------|
+| ------ | ----- | --------------- | ------------- | ------------ | ---------------- | ------- |
 | misty-gym-leader.md | No | No | Partial | Yes | Yes | 75% |
 | brock-pewter-gym-leader.md | Yes | Yes | Partial | Partial | Yes | 85% |
 | blue-champion-rival.md | Yes | Yes | Partial | Partial | Yes | 85% |
@@ -83,18 +83,21 @@ Minor formatting inconsistencies remain in Overview section structure and Refere
 ## ACTION ITEMS
 
 ### Priority 1 - Critical Fixes
+
 1. Fix Mistys TOC - Add References to Table of Contents
 2. Fix Mistys Anime section header - Change to Anime and Manga Appearances
 3. Fix Japanese names - keep Sabrina = ナツメ Natsume; correct Agatha to キクコ Kikuko
 
 ### Priority 2 - Moderate Fixes
-4. Add Type column to all team tables
-5. Update all Last updated dates to June 4, 2026
+
+1. Add Type column to all team tables
+2. Update all Last updated dates to June 4, 2026
 
 ### Priority 3 - Minor Fixes
-6. Standardize Overview section format
-7. Standardize Generation labeling
-8. Standardize References format
+
+1. Standardize Overview section format
+2. Standardize Generation labeling
+3. Standardize References format
 
 ---
 

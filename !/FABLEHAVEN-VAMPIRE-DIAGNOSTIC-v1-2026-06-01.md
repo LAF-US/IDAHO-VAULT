@@ -56,7 +56,7 @@ is suddenly not acting like themselves. Before anything else, settle one fork �
 **undead, or mortal?** It decides which book you are in:
 
 | Tell | Undead vampire → `!/UNDEAD-TAXONOMY-v1-2026-05-20.md` (Tiers 6–7) | Mortal blix → this manual |
-|---|---|---|
+| --- | --- | --- |
 | Alive? | No — post-death, cursed | **Yes** — a living human; breathes, ages, passes fully |
 | Could it be your coworker? | Rarely, and not for long | **Yes** — a Knight of the Dawn at the table |
 | The bitten | **Converted** — sired toward becoming one too (spawn → true) | **Not converted** — drained, puppeted, or used; stays themselves |
@@ -108,7 +108,7 @@ to you about its mechanism.**
 already has a referent, and it is *not* the blix:
 
 | Term | Refers to | Nature | Doc |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **Vampire** (vault sense) | Vampire Spawn / True Vampire | **Undead** — cursed, post-death; a soul problem | `!/UNDEAD-TAXONOMY-v1-2026-05-20.md` (Tiers 6–7) |
 | **Blix** (this manual) | Lecto- / Narco- / Viviblix | **Living mortal** — passes as human | here |
 
@@ -200,7 +200,7 @@ taxonomy laid over real material.
 Each prefix names the *domain* the vampire works in:
 
 | Type | Prefix | Root | Standing | Folklore family the power belongs to |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | **Narcoblix** | narco- | Greek *narkē*, "numbness, stupor, sleep" (→ narcotic, narcolepsy) | **Grounded** | The **mare / nightmare**: Germanic *mare*, Slavic *mora*, the night hag, the incubus/succubus — the demon that rides the sleeper's chest; the folklore of sleep paralysis. A power exercised *only over the sleeping* **is** the mara. |
 | **Viviblix** | vivi- | Latin *vivus*, "alive" (→ vivify, revive) | **Grounded** | The **revenant / draugr**: the Norse corpse that climbs out of the howe; the European restless dead. Reanimating the dead is the oldest necromantic motif — cf. the vault's own `NECROMANCER-DOCTRINE`. |
 | **Lectoblix** | lecto- | Uncertain. Plausibly Latin *lectus* ("bed") or *legere* ("to gather, choose"); no candidate root cleanly means "youth." | `*` | The **psychic / energy vampire** and the **strigoi**: the life-force drainer rather than the blood-drinker; the Báthory youth-legend; Dion Fortune's later occult codification. Draining *vitality* is a distinct folk tradition from the blood-vampire. |
@@ -465,7 +465,7 @@ The blix is *adjacent* to the Vampire tiers of the Undead Taxonomy but is a
 different problem. Keep the lines clean:
 
 | | Undead (Taxonomy) | Lich | Blix |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Alive? | No — post-death state | No — persists beyond standing | **Yes — a living mortal** |
 | Visible as wrong? | Usually (no flesh, no body, etc.) | Via the external soul-store | **No — it passes** |
 | Power exercised how? | By its own nature | By engineered persistence | **Through a bite — a relationship** |
@@ -524,7 +524,7 @@ either direction and you fail a different way:
   a new attacker. You cut strings off a convert and walk away.
 
 | | Transformation thrall (Tier 6→7) | Control-link thrall (blix) |
-|---|---|---|
+| --- | --- | --- |
 | Host | Converted into another attacker | Unchanged; hijacked while dormant |
 | Propagation | Each thrall becomes a vampire | None — no new blixes by bite |
 | On the host | Cure the conversion or lose the host | Nothing to cure; sever the link |
@@ -542,7 +542,7 @@ thing severance would have returned whole. Read the host before you treat it:
 ## The Blix Matrix
 
 | Blix | Bite is for | Sustenance | Activates when | Spreads | Vault analogue |
-|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- |
 | Lectoblix | Draining youth/vitality | Must keep feeding or ages instantly | Continuously, while feeding | By bite | Process counterfeiting freshness by consuming others' recency |
 | Narcoblix | Puppeting the bitten | Trance; hold lasts while victim sleeps | When the victim is **unattended/asleep** | By bite (planted in advance) | Dormant hook / live credential in an unmonitored process |
 | Viviblix | Reanimating the dead | Active power-spend; ends when withdrawn | While actively powered | By bite | Temporary reanimation of deprecated content / lapsed standing |

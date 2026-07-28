@@ -13,6 +13,7 @@ tags: [doctrine, Prismo, Scarab, cosmic-order, Wishmaster, Cosmic-Owl, hierarchy
 ---
 
 # Cosmic Order v1
+
 ## The Wishmaster, the Auditor, and the Institutional Hierarchy
 
 *Filed 2026-05-21.*
@@ -58,7 +59,7 @@ The series leaves the upper tiers of the cosmic governance structure
 deliberately vague. What is established:
 
 | Position | Entity | Notes |
-|---|---|---|
+| --- | --- | --- |
 | Above Prismo — unseen | Prismo's Boss | Never directly depicted; communicated via golden cord telephone with angel and devil wings; power estimated at GOLB's tier; may govern both light and dark aspects of the multiverse |
 | Auditor (initial) | Scarab | Above Prismo institutionally at the start of F&C; enforcement authority over unauthorized universes |
 | Wishmaster | Prismo | Governs the Time Room; grants wishes; answers to the Boss; subject to the GOLB constraint |
@@ -155,7 +156,7 @@ Scarab ends the F&C arc demoted to a position subservient to Prismo — working
 for the being he was investigating and hoping to supplant.
 
 | Phase | Scarab's position relative to Prismo |
-|---|---|
+| --- | --- |
 | Start of F&C | Above — institutional superior; auditor with enforcement authority |
 | End of F&C | Below — Prismo's employee |
 

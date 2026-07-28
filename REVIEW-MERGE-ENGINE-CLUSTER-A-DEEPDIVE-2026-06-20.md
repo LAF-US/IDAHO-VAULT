@@ -52,7 +52,7 @@ not an observation of live executions.
 in `main`, L2184–2213) that fall into four distinct concerns:
 
 | Concern | Subcommands | What it does |
-|---|---|---|
+| --- | --- | --- |
 | **A · Label substrate** | `ensure-labels` | Idempotently create the lifecycle labels (`LABEL_SPECS`, L113). Every other command calls it first. |
 | **B · Review-state projection** | `sync-pr`, `review-submitted`, `acknowledge-apply`, `promote-ready`, `reconcile-open-prs`, `enable-auto-merge` | Translate GitHub review/check/thread truth → projection labels + the auto-merge pause/arm decision. |
 | **C · Claim verification** | `verify-claim` | "Brass-mouth" check (IF 7, L53–57): compare an agent's *"work finished / ready to merge"* comment (`CLAIM_PATTERNS`, L59) against GitHub's real `mergeable`/checks; post a divergence note on disagreement. |
@@ -63,7 +63,7 @@ in `main`, L2184–2213) that fall into four distinct concerns:
 ## 2. Live wiring (workflow → trigger → subcommand → concern)
 
 | Workflow | Trigger | Engine call | Concern | Live? |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | `review-feedback-loop` | `issue_comment`; `pull_request_target` open/sync | `acknowledge-apply`, `sync-pr`, `verify-claim` | B + C | ✅ |
 | `review-response` | `pull_request_review` submitted | `review-submitted` | B | ✅ |
 | `auto-merge-engage` | `pull_request_target` open/sync | **`engage-outdated --apply`** | **D** | ✅ |
@@ -75,7 +75,7 @@ in `main`, L2184–2213) that fall into four distinct concerns:
 Plus the three inline-`gh` arming workflows that call **no** engine script:
 
 | Workflow | Trigger | Mechanism |
-|---|---|---|
+| --- | --- | --- |
 | `auto-merge-rhythm` | `pull_request_target` open/sync | inline `gh pr merge --auto --merge`, re-deriving protected-path + branch-rule checks in bash |
 | `dependabot-rhythm` | `pull_request_target` (+ labeled/unlabeled) | inline `gh pr merge --auto --squash`, Dependabot lane |
 | `batch-arm-merge-queue` | `workflow_dispatch` | inline bulk `gh pr merge --auto` with disable/re-enable toggle for merge-queue repos |
@@ -181,6 +181,7 @@ That collapses **9 workflows + 2 dormant/duplicated arming paths into 3 workflow
 engine**, and kills the F2 naming drift by making each workflow's name its subcommand.
 
 **Open questions for Logan before any build:**
+
 - Is the dormant engine arming path (`enable-auto-merge` / `reconcile-open-prs`) meant to be
   revived, or has the inline-`gh` rhythm permanently replaced it? F1's resolution depends on
   the answer.
