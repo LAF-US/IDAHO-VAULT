@@ -6,7 +6,7 @@ published:
 created: 2026-07-19
 description: "Gilbert Munger Catalog entry for picture ID #151."
 ---
-[Prev](https://gilbertmunger.org/Pages/ID83.html) [Next](https://gilbertmunger.org/Pages/ID312.html) **Locale: Idaho**  
+[Prev](https://gilbertmunger.org/Pages/ID83.html) [Next](https://gilbertmunger.org/Pages/ID312.html) **Locale: [[Idaho]]**  
   
 
 ## #151. Shoshone Falls - Idaho.
@@ -26,3 +26,5 @@ In 1873 Munger finished a 5 x 8 foot exhibition painting of this scene. See the 
 © Michael D. Schroeder 1 Sep 1999; Updated 20 May 2019.
 
 <iframe allow="clipboard-write; web-share" src="chrome-extension://cnjifjpddelmedmihgijeibhnjfabmlf/side-panel.html?context=iframe"></iframe>
+
+#idaho
