@@ -5,7 +5,7 @@ author:
 published: 2007-01-04
 created: 2026-07-20
 ---
-**Brady Udall** is an American writer. In 2010, he was appointed [Writer-in-Residence](https://en.wikipedia.org/wiki/Writer-in-Residence "Writer-in-Residence") of Idaho, a position he held until 2013.[^1]
+**Brady Udall** is an American writer. In 2010, he was appointed [Writer-in-Residence](https://en.wikipedia.org/wiki/Writer-in-Residence "Writer-in-Residence") of [[Idaho]], a position he held until 2013.[^1]
 
 ## Biography
 
@@ -48,3 +48,5 @@ Udall is the great-great-grandson of [David King Udall](https://en.wikipedia.org
 [^9]: [This American Life](https://en.wikipedia.org/wiki/This_American_Life "This American Life"), Episode [336: Who Can You Save?](http://www.thisamericanlife.org/Radio_Episode.aspx?episode=336), Act 3, broadcast 6 July 2007.
 
 [^10]: [Udall, Brady](https://en.wikipedia.org/wiki/Brady_Udall) (2011). [" *The Lonely Polygamist* Reading Group Guide: An Interview with Brady Udall"](https://archive.org/details/lonelypolygamist00brad/page/n609). [*The Lonely Polygamist*](https://en.wikipedia.org/wiki/The_Lonely_Polygamist "The Lonely Polygamist") (paperback ed.). New York: [W. W. Norton](https://en.wikipedia.org/wiki/W._W._Norton_&_Company "W. W. Norton & Company"). pp. 605–607. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [9780393339710](https://en.wikipedia.org/wiki/Special:BookSources/9780393339710 "Special:BookSources/9780393339710"). [OL](https://en.wikipedia.org/wiki/OL_\(identifier\) "OL (identifier)") [24922060M](https://openlibrary.org/books/OL24922060M).
+
+#idaho

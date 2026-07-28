@@ -7,7 +7,7 @@ published: 2026-07-15
 created: 2026-07-24
 description: "By Zach HagadoneReader Staff The pedestrian portion of the Long Bridge is again open to non-motorized traffic, less than a month and half after the Idaho Transportation Department closed the span due to deterioration..."
 ---
-The pedestrian portion of the Long Bridge is again open to non-motorized traffic, less than a month and half after the Idaho Transportation Department closed the span due to deterioration of support infrastructure below the bridge deck that posed a threat to public safety.
+The pedestrian portion of the Long Bridge is again open to non-motorized traffic, less than a month and half after the [[Idaho]] Transportation Department closed the span due to deterioration of support infrastructure below the bridge deck that posed a threat to public safety.
 
 According to the department, the reopening — which took place July 14 — came after “an intensive effort by engineers, bridge inspectors, maintenance crews and a local contractor to design, fabricate and install custom steel support brackets beneath the bridge at its most critical locations.”
 
@@ -52,3 +52,5 @@ According to one commenter to Project 7B, the bridge “feels like the heart of 
 ### Want to support independent local journalism?
 
 The Sandpoint Reader is our town's local, independent weekly newspaper. "Independent" means that the Reader is locally owned and operated by people who were born and raised in Sandpoint. The Reader is owned by Publisher Ben Olson, Editor-in-Chief Zach Hagadone and Senior Writer Soncirey Mitchell. **==Sandpoint Reader LLC is a completely independent business unit; no big newspaper group or corporate conglomerate or billionaire owner dictates our editorial policy.==** And we want the news, opinion and lifestyle stories we report to be freely available to all interested readers - so unlike many other newspapers and media websites, we have NO PAYWALL on our website. The Reader relies wholly on the support of our valued advertisers, as well as readers who voluntarily contribute. **==Want to ensure that local, independent journalism survives in our town? You can help support the Reader for as little as $1.==**
+
+#idaho

@@ -8,7 +8,7 @@ created: 2026-07-20
 
 ## Nell Shipman folder
 
-Nell Shipman was an actress, filmmaker, and author. In the 1920s, she had a production studio in Priest Lake, Idaho.
+Nell Shipman was an actress, filmmaker, and author. In the 1920s, she had a production studio in Priest Lake, [[Idaho]].
 
 ### Browse folder
 
@@ -131,3 +131,5 @@ Image
 Image
 
 <iframe allow="clipboard-write; web-share" src="chrome-extension://cnjifjpddelmedmihgijeibhnjfabmlf/side-panel.html?context=iframe"></iframe>
+
+#idaho

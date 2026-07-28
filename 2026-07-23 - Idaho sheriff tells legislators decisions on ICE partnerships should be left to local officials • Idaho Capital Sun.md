@@ -13,7 +13,7 @@ Bonneville County Sheriff Hulse said state should not require sheriffs, police t
 
 ![Idaho State Capitol Building in Boise](https://idahocapitalsun.com/wp-content/uploads/2025/01/010725StateLegistlature2PS166-2048x1396.jpg)
 
-Idaho State Capitol Building in Boise
+[[Idaho]] State Capitol Building in Boise
 
 The Idaho State Capitol Building in Boise shines in the sunlight on Jan. 7, 2025. (Pat Sutphin for the Idaho Capital Sun)
 
@@ -58,3 +58,5 @@ Rep. Dale Hawkins, a Republican from Fernwood who co-sponsored House Bill 659, t
 This isn’t the first time Hulse has spoken out to Idaho legislators. In December, Hulse wrote to Gov. Brad Little and Republican legislative leaders warning them that [discontinuing behavioral health programs represents “a significant public safety concern,”](https://idahocapitalsun.com/2025/12/03/idaho-sheriffs-worry-medicaid-mental-health-cuts-pose-significant-public-safety-concern/) the Sun previously reported. Hulse said that the state’s budget challenges were “self-inflicted,” and the result of an “overaggressive tax reduction stance.”
 
 Although the Idaho Legislature is not in session, a handful of joint committees and interim committees do meet periodically throughout the year. The Idaho Legislature is scheduled to reconvene in January for the 2027 legislative session.
+
+#idaho

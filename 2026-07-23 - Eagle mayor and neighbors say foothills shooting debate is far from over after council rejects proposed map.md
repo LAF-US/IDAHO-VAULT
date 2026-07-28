@@ -13,7 +13,7 @@ description: "The Eagle City Council voted down a proposal that would have chang
 
 ![eagleshootingmap](https://ewscripps.brightspotcdn.com/dims4/default/e9566d1/2147483647/strip/true/crop/3392x1908+15+0/resize/1280x720!/quality/90/?url=http%3A%2F%2Fewscripps-brightspot.s3.amazonaws.com%2F4d%2F1d%2F4be7dc17444080427ad7b7972903%2Fscreenshot-2026-07-22-at-11-14-08-pm.png)
 
-EAGLE, Idaho — The Eagle City Council unanimously voted down a proposal Tuesday night that would have changed where people could shoot within city limits — but city leaders and neighbors say the conversation is far from over.
+EAGLE, [[Idaho]] — The Eagle City Council unanimously voted down a proposal Tuesday night that would have changed where people could shoot within city limits — but city leaders and neighbors say the conversation is far from over.
 
 Mayor Brad Pike sat down with Idaho News 6 Wednesday afternoon to talk about what comes next. He said the vote was specifically on two items within Ordinance 942 — the weapons discharge section and a noise ordinance component. The noise ordinance will continue to be refined separately. The weapons discharge section, which deals with firearm discharge within city limits, is what generated the most debate.
 
@@ -82,3 +82,5 @@ We cover stories making an impact in Eagle. This is your home to stay on top of 
 [More News in Eagle](https://www.kivitv.com/eagle)
 
 ![](https://ewscripps.brightspotcdn.com/4a/38/6b8653394be49976a6b2f8afceb7/web-clark-greenlee-kivi-2756-rt-leap-photography-1.jpg)
+
+#idaho

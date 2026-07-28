@@ -9,7 +9,7 @@ description: "The publication covers common fireline terminology, handling relat
 ---
 [![](https://npr.brightspotcdn.com/dims4/default/bddfd12/2147483647/strip/true/crop/640x327+0+33/resize/360x184!/format/webp/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fac%2F55%2F826aaa184871a57a4e2439b98763%2Fmwnb-banner.png)](https://www.boisestatepublicradio.org/mountain-west-news-bureau)
 
-A regional collaboration of public media stations that serve the Rocky Mountain States of Colorado, Idaho, Nevada, New Mexico, Utah and Wyoming.
+A regional collaboration of public media stations that serve the Rocky Mountain States of Colorado, [[Idaho]], Nevada, New Mexico, Utah and Wyoming.
 
 ![The cover of the new Wildland Firefighter Family Handbook ](https://npr.brightspotcdn.com/dims4/default/f14c6d0/2147483647/strip/true/crop/719x700+0+0/resize/1760x1714!/format/webp/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F5d%2F91%2Fd6faa785478082ebd766487e7f26%2Fscreenshot-2026-07-15-at-3-18-16-pm.png)
 
@@ -46,3 +46,5 @@ She also said that fire partners can help each other with childcare and yard wor
 “It is immensely difficult at times,” Holter acknowledged. “And I think it also is, and can be, just a really important and joyful job too.”
 
 *This story was produced by the Mountain West News Bureau, a collaboration between Boise State Public Radio, Wyoming Public Media, Nevada Public Radio, KUNR in Nevada, KUNC in Northern Colorado, KANW in New Mexico, Colorado Public Radio and KJZZ in Arizona as well as NPR, with support from affiliate newsrooms across the region. Funding for the Mountain West News Bureau is provided in part by the Corporation for Public Broadcasting and Eric and Wendy Schmidt.*
+
+#idaho

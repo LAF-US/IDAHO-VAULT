@@ -15,7 +15,7 @@ Opinion articles provide independent perspectives on key community issues, separ
 
 Listen to this article
 
-As a family physician and a mother raising children in Idaho, I spend much of my day talking with families about health decisions. Few topics prompt as many thoughtful questions as childhood vaccination. While opinions about vaccines may differ, one principle should unite us: families deserve the ability to make informed health care decisions supported by reliable information, trusted medical guidance, and systems that make those choices possible.
+As a family physician and a mother raising children in [[Idaho]], I spend much of my day talking with families about health decisions. Few topics prompt as many thoughtful questions as childhood vaccination. While opinions about vaccines may differ, one principle should unite us: families deserve the ability to make informed health care decisions supported by reliable information, trusted medical guidance, and systems that make those choices possible.
 
 Across the country, and here in Idaho, policymakers continue to [debate legislation](https://www.idahostatesman.com/opinion/from-the-opinion-editor/article314983502.html) affecting how vaccines are [delivered](https://www.idahostatesman.com/opinion/editorials/article303277536.html), [documented](https://idahocapitalsun.com/2021/04/09/idaho-gop-leadership-accuses-state-of-unlawfully-using-vaccine-record-system/) and [monitored](https://idahocapitalsun.com/2024/02/05/idaho-bill-that-would-require-children-to-opt-in-to-vaccine-registry-heads-to-house-floor/). These discussions often center on protecting individual freedom. Personal choice is an important value, but it is equally important to recognize that meaningful choice depends on having access to healthcare, accurate records and practical tools that help families follow through on the decisions they make.
 
@@ -46,3 +46,5 @@ Want to see more content like this?
 A daily morning dispatch of local news, sports, business and opinion headlines.
 
 <iframe allow="clipboard-write; web-share" src="chrome-extension://cnjifjpddelmedmihgijeibhnjfabmlf/side-panel.html?context=iframe"></iframe>
+
+#idaho

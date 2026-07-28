@@ -20,7 +20,7 @@ Death
 
 16 Nov 1972 (aged 78)
 
-Coeur d'Alene, Kootenai County, Idaho, USA
+Coeur d'Alene, Kootenai County, [[Idaho]], USA
 
 Burial
 
@@ -107,3 +107,5 @@ By Ancestry®
 - Added: Dec 22, 2010
 - Find a Grave Memorial ID: 63243755
 - *Find a Grave*, database and images ([https://www.findagrave.com/memorial/63243755/joseph\_ralph-breckenridge](https://www.findagrave.com/memorial/63243755/joseph_ralph-breckenridge): accessed July 21, 2026), memorial page for Joseph Ralph “Cowboy Joe” Breckenridge (4 Jan 1894–16 Nov 1972), Find a Grave Memorial ID [63243755](https://www.findagrave.com/memorial/63243755/joseph_ralph-breckenridge), citing Forest Cemetery, Coeur d'Alene, Kootenai County, Idaho, USA; Maintained by Mark B (contributor [46942401](https://www.findagrave.com/user/profile/46942401)).
+
+#idaho

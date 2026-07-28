@@ -48,7 +48,7 @@ In the end, she was forced to abandon Lionshead four years after its creation an
 
 Invitation to dedication
 
-After her passing in 1970, Canada dubbed her “The First Lady of Canadian Cinema.” And in 1977, the state of Idaho renamed the site of Lionhead Lodge to Nell Shipman Point (MG 115).
+After her passing in 1970, Canada dubbed her “The First Lady of Canadian Cinema.” And in 1977, the state of [[Idaho]] renamed the site of Lionhead Lodge to Nell Shipman Point (MG 115).
 
 Special Collections and Archives has books in the Day-NW collection about Shipman–including her autobiography as well as the Claude and Catherine Simpson Papers which contain book research for *Priest Lake, North of the Narrows: Men and Women of the Upper Priest Lake Country, Idaho.*
 
@@ -77,3 +77,5 @@ Shipman, Nell, “The Movie that Couldn’t be Screened,” *Atlantic Monthly*, 
 Shipman, Nell and Tom Trusky. *The Silent Screen & My Talking Heart: An Autobiography*. 1st ed., Boise State University, 1987. [Day Northwest (Day-NW) Book Collection](https://archiveswest.orbiscascade.org/ark:80444/xv393143).
 
 Trusky, Tom. “Nell Shipman.” In Jane Gaines, Radha Vatsal, and Monica Dall’Asta, eds. [*Women Film Pioneers Project*](https://doi.org/10.7916/d8-ymha-rg65). New York, NY: Columbia University Libraries, 2013.
+
+#idaho

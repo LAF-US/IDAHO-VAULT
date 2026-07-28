@@ -7,7 +7,7 @@ created: 2026-07-16
 ---
 ![](https://ronroizen.wordpress.com/wp-content/uploads/2022/08/courthouse-early-undated-image.jpg)
 
-Shoshone County Courthouse, Wallace, Idaho–early undated photo
+Shoshone County Courthouse, Wallace, [[Idaho]]–early undated photo
 
 Shoshone County’s county seat moved from Murray (where it had been since July, 1885) to Wallace in November, 1898.
 
@@ -66,3 +66,5 @@ Despite all, the completed structure was an object of pride and satisfaction for
 It was a time of prosperity and change in the county. The state of Idaho, admitted to the union on July 3, 1890, was still young and full of promise. Shoshone County was one of Idaho’s leading sources of prosperity. On September 1, 1907 came news that the county’s total assessed valuation had risen to $10,240,000—now second only to Ada County in Idaho. Wallace was flourishing as well. “The town had built up and changed wonderfully,” wrote detective Charles Siringo of his return there in 1906. The first automobile appeared on the streets of Wallace in 1907, purchased by Dr. McGee. A 1906 newspaper article promised the courthouse would be one of the most imposing and beautiful in this section of the state.  
   
 It remains so today.
+
+#idaho

@@ -11,7 +11,7 @@ Opinion articles provide independent perspectives on key community issues, separ
 
 ![Chris Cargill is the president and CEO of the Mountain States Policy Center, an independent research center based in Idaho that believes in free market solutions.](https://www.idahostatesman.com/public/opinion/readers-opinion/c4oxw6/picture264860404/alternates/LANDSCAPE_1200/i-hrKcjp8-X4_edited_fitted.png)
 
-Chris Cargill is the president and CEO of the Mountain States Policy Center, an independent research center based in Idaho that believes in free market solutions.
+Chris Cargill is the president and CEO of the Mountain States Policy Center, an independent research center based in [[Idaho]] that believes in free market solutions.
 
 Listen to this article
 
@@ -56,3 +56,5 @@ This story was originally published July 20, 2026 at 4:00 AM with the headline [
 Want to see more content like this?
 
 <iframe allow="clipboard-write; web-share" src="chrome-extension://cnjifjpddelmedmihgijeibhnjfabmlf/side-panel.html?context=iframe"></iframe>
+
+#idaho
