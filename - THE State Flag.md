@@ -8,7 +8,7 @@ description: "​In doing research for my upcoming book, Symbols, Signs, and Son
 ---
 10/22/2019
 
-In doing research for my upcoming book, *Symbols, Signs, and Songs,* due out in November, I ran across a little interesting history on Idaho’s state flag. Since it is largely the state seal centered on a blue background, one would think we would have had an Idaho state flag for as long as we’ve had a seal since 1891. Not so.  
+In doing research for my upcoming book, *Symbols, Signs, and Songs,* due out in November, I ran across a little interesting history on [[Idaho]]’s state flag. Since it is largely the state seal centered on a blue background, one would think we would have had an Idaho state flag for as long as we’ve had a seal since 1891. Not so.  
   
 It took the Legislature 17 years to pass a law creating an Idaho State Flag. Even then they punted to the adjutant general, delegating the duty of coming up with the design and specifying that the flag would be blue and have the word Idaho on it. They appropriated 100 dollars to make that happen on March 12, 1907.  
   
@@ -21,3 +21,5 @@ Idaho got along with a single official state flag for years. It made the headlin
 Idaho's original state flag. Image from the physical photos file at the Idaho State Archives.
 
 Speaking of Idaho history posts are copyright © 2020 by Rick Just. Sharing is encouraged. If you don’t find a button that lets you do that, find the post on Speaking of Idaho. If you’re missing my daily posts, select the RSS button, or select See it First under the Facebook Following tab.
+
+#idaho
