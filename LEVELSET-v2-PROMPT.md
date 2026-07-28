@@ -56,6 +56,7 @@ Known conversations as of LEVELSET v2:
 10. Interpreting an unclear concept
 11. In the Blink of an Eye book recom...
 12. INQUIRY: Adobe Premiere Pro
+
 ---
 ## SECTION 6: UNRESOLVED & PENDING
 - Incomplete items waiting on Logan
@@ -67,6 +68,7 @@ Known conversations as of LEVELSET v2:
 1. Return to Logan for review
 2. Paste into TASK: LEVELSET reports for synthesis
 3. That conversation produces canonical `LEVELSET-v2.md` for commit to `!ADMIN/`
+
 ---
 ## GUIDING PRINCIPLES
 - Logan is human. Claude is software. Logan directs; Claude executes.
