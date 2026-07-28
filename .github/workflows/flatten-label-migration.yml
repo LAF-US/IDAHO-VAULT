@@ -53,9 +53,10 @@ jobs:
       - name: Guard — the flat schema must be live on this ref
         run: |
           set -euo pipefail
-          # If the retired prefixed vocabulary is still present, the flatten (#854) has
-          # not merged — refuse, or we would fight main's old stamping code.
-          if grep -q "FILETYPE_AXIS_PREFIX\|filetype:risk/" .github/scripts/review_feedback_loop.py; then
+          # If ANY retired vocabulary is still present — either prefixed axis
+          # (filetype:risk/ or depth:risk/) or the legacy risk/— marker — the flatten
+          # (#854) has not merged; refuse, or we would fight main's old stamping code.
+          if grep -q "FILETYPE_AXIS_PREFIX\|filetype:risk/\|depth:risk/\|risk/—" .github/scripts/review_feedback_loop.py; then
             echo "::error::Retired prefixed vocabulary still present on the default branch — merge the flatten (PR #854) before running this migration."
             exit 1
           fi
