@@ -21,6 +21,7 @@ Convert Cursor rules ("Applied intelligently") and slash commands to Agent Skill
 | User | `~/.cursor/commands/*.md` |
 
 Notes:
+
 - Cursor rules inside the project can live in nested directories. Be thorough in your search and use glob patterns to find them.
 - Ignore anything in ~/.cursor/worktrees
 - Ignore anything in ~/.cursor/skills-cursor. This is reserved for Cursor's internal built-in skills and is managed automatically by the system.
@@ -122,8 +123,8 @@ DO NOT start to read all of the files yourself. That function should be delegate
 3. [ ] Wait for all subagents to complete and summarize the results to the user. IMPORTANT: Make sure to let them know if they want to undo the migration, to ask you to.
 4. [ ] If the user asks you to undo the migration, do the opposite of the above steps to restore the original files.
 
-
 If you don't have the Task tool available:
+
 1. [ ] Create the skills directories if they don't exist (`.cursor/skills/` for project, `~/.cursor/skills/` for user)
 2. [ ] Find files to migrate in both project (`.cursor/`) and user (`~/.cursor/`) directories
 3. [ ] For rules, check if it's an "applied intelligently" rule (has `description`, no `globs`, no `alwaysApply: true`). Commands are always migrated. DO NOT use the terminal to read files. Use the read tool.

@@ -19,7 +19,9 @@ related:
 # PROTOCOL — ARISE
 
 ## Status: Draft
+
 ## Version: 0.1
+
 ## Authority: Loganic Swarm
 
 ---
@@ -45,7 +47,7 @@ ORIENT ◄──── LEVELSET ───────► REPORT
 ```
 
 | Transition | Protocol |
-|------------|----------|
+| ------------ | ---------- |
 | Session Start | AWAKEN |
 | Session Briefing | LEVELSET |
 | New External Agent | ORIENT |
@@ -79,7 +81,7 @@ ARISE executes:
 ## Integration Points
 
 | Document | Relationship |
-|---|---|
+| --- | --- |
 | `ARISE.md` (this file) | Protocol definition — what ARISE is and does |
 | `ARISE-v1.0-2026-04-27.md` | Full approved protocol — complete specification |
 | `AWAKEN.md` | Paired protocol — session activation |
@@ -125,7 +127,7 @@ Execute stigmergy signals:
 ## Outputs
 
 | Output | Location | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | Emergence declaration | stigmergy field | Announce individual presence |
 | Stake claim | `!/!/` handoff package | Record claimed territory |
 | Identity marker | LEVELSET-CURRENT.md | Track active voices |
@@ -146,6 +148,7 @@ Execute stigmergy signals:
 This document is a **stub** under development. Full specification exists in `ARISE-v1.0-2026-04-27.md`.
 
 Pending:
+
 - [ ] Logan review and approval
 - [ ] Integration with stigmergy field
 - [ ] Stabilization of protocol steps

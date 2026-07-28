@@ -88,7 +88,7 @@ It's always been my intention to have 8 to 10 rentals, so I was up to eight or s
 Nancy Hadley
 I had a very good interest rate to where my target renter will have income of $60,000, which is 80% of the median in Bonner County. So, the rents will be around $1,400, you know, 30% of $60,000 for your housing allowance or budget.
 Logan Finney
-And is that the workforce housing - it's not a grant, but the gap financing the state offered? 
+And is that the workforce housing - it's not a grant, but the gap financing the state offered?
 Nancy Hadley
 A workforce housing award project, yes. So, I had to put in some of my own money. I put in all of the land and infrastructure, and then they came in with the rest of the financing.
 Logan Finney

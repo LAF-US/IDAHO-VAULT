@@ -8,13 +8,13 @@
 
 ## Changes Made
 
-- 
-- 
+-
+-
 
 ## Related Work
 
-- 
-- 
+-
+-
 
 ## Blockers
 
@@ -23,6 +23,7 @@
 ---
 
 **Checklist:**
+
 - [ ] Tests pass (or no tests required)
 - [ ] No secrets in diff
 - [ ] Documentation updated IF needed
@@ -31,6 +32,7 @@
 ---
 
 **Risk Level:**
+
 - [ ] LOW: Single file fix, non-critical
 - [ ] MEDIUM: Multiple files, standard operation
 - [ ] HIGH: Core changes, requires human eyes
@@ -38,6 +40,7 @@
 ---
 
 **Labels to apply:**
+
 - `agent:[agent-name]`
 
 ---

@@ -4,4 +4,4 @@ related:
 - Nevada
 authority: LOGAN
 ---
-Nevada town on Duck Valley Indian Reservation 
+Nevada town on Duck Valley Indian Reservation

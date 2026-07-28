@@ -14,9 +14,10 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/t528VdSzEj
+<https://t.co/t528VdSzEj>
 
 ## Media
+
 - ![](https://pbs.twimg.com/media/DyYllzZWkAATVjv.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

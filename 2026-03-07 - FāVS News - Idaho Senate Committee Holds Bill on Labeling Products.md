@@ -69,8 +69,6 @@ Our Sponsors
 
 Idaho State Capital
 
-  
-
 **By Logan Finney | FāVS News Reporter**
 
 ![](https://www.youtube.com/watch?v=VWAJj0Rfqbw)

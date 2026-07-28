@@ -3,4 +3,4 @@ related:
 - Wendy Jaquet
 authority: LOGAN
 ---
-husband of Wendy Jaquet 
+husband of Wendy Jaquet

@@ -233,7 +233,7 @@ diagnosis:
 ## Place on the Grid
 
 | Axis | Reading |
-|---|---|
+| --- | --- |
 | Power | **Trivial** individually; **Significant** in aggregate |
 | Volition | Autonomous, but as a **multitude** |
 | Drive | **Industry** (and a love of treasure) |

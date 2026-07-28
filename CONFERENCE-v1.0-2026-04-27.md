@@ -35,6 +35,7 @@ A CONFERENCE CALL is declared when Logan needs more than one agent to act togeth
 ## II. SCOPE
 
 CONFERENCE CALL applies to:
+
 - Multi-agent planning sessions
 - Field-capture processing sessions
 - Cross-tier vault operations
@@ -42,6 +43,7 @@ CONFERENCE CALL applies to:
 - Any session Logan marks with the CONFERENCE CALL signal
 
 CONFERENCE CALL does **not** replace:
+
 - LEVELSET (agent orientation)
 - plain handoff practice (message clarity)
 
@@ -60,7 +62,7 @@ CONFERENCE CALL does **not** replace:
 ## IV. CONFERENCE STRUCTURE
 
 | Phase | Name | Actor | Description |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | 1 | **CALL** | Logan | Declares the CONFERENCE, names participants, sets agenda |
 | 2 | **CONVENE** | Agents | Each acknowledges, runs LEVELSET, declares readiness |
 | 3 | **CONFERENCE** | Chair-directed | Agenda items worked in order |
@@ -72,6 +74,7 @@ CONFERENCE CALL does **not** replace:
 ## V. ROLES
 
 ### Chair (Logan)
+
 - Opens and closes the CONFERENCE
 - Sets and owns the agenda
 - Directs agent action
@@ -79,11 +82,13 @@ CONFERENCE CALL does **not** replace:
 - Signs off on the CONFERENCE RECORD
 
 ### Participants
+
 - Acknowledge CALL, declare readiness (CONVENE)
 - Work assigned agenda items
 - Surface FLAGs immediately
 
 ### Recording Agent
+
 - Designated by Logan
 - Writes and commits CONFERENCE RECORD
 - Does not editorialize
@@ -132,6 +137,7 @@ READY: YES / NO
 Location: `!/CONFERENCE-RECORD-[YYYY-MM-DD]-[TOPIC-SLUG].md`
 
 Structure:
+
 ```yaml
 ---
 type: conference-record
@@ -144,6 +150,7 @@ status: open | closed | partial
 ```
 
 ### RECORD Sections
+
 - Agenda
 - Item outcomes (COMPLETE / HOLD / DEFERRED)
 - FLAGs Raised
@@ -169,7 +176,7 @@ DISMISSED: [agents]
 ## X. FAILURE MODES
 
 | Failure | Mitigation |
-|---|---|
+| --- | --- |
 | Quorum not reached | Chair decides: delay, substitute, or proceed |
 | Scope explosion | Reject additions; log as proposed follow-up |
 | Lane conflict | Chair arbitrates |
