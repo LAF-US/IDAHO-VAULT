@@ -70,7 +70,7 @@ jobs:
       - name: Mint Mistral App token
         if: ${{ github.event.inputs.agent == 'mistral' }}
         id: token_mistral
-        uses: actions/create-github-app-token@v3
+        uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1 # v3
         with:
           app-id: ${{ vars.MISTRAL_APP_ID }}
           private-key: ${{ secrets.MISTRAL_APP_PRIVATE_KEY }}
@@ -81,7 +81,7 @@ jobs:
       - name: Mint Codex App token
         if: ${{ github.event.inputs.agent == 'codex' }}
         id: token_codex
-        uses: actions/create-github-app-token@v3
+        uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1 # v3
         with:
           app-id: ${{ vars.CODEX_APP_ID }}
           private-key: ${{ secrets.CODEX_APP_PRIVATE_KEY }}
@@ -311,13 +311,13 @@ jobs:
           gh issue comment 398 --repo "$REPO" --body-file issue-comment.md
 
       - name: Close failed proof PR
-        if: ${{ steps.verify.outputs.verified != 'true' && steps.pr.outputs.number != '' }}
+        if: ${{ always() && steps.verify.outputs.verified != 'true' && steps.pr.outputs.number != '' }}
         env:
           GH_TOKEN: ${{ steps.app.outputs.token }}
           REPO: ${{ github.repository }}
           PR_NUMBER: ${{ steps.pr.outputs.number }}
         run: |
-          gh pr close "$PR_NUMBER" --repo "$REPO" --comment "Closing failed signing proof: commit verification did not return verified: true."
+          gh pr close "$PR_NUMBER" --repo "$REPO" --delete-branch --comment "Closing failed signing proof: commit verification did not return verified: true."
 
       - name: Fail if proof commit is not verified
         if: ${{ steps.verify.outputs.verified != 'true' }}
