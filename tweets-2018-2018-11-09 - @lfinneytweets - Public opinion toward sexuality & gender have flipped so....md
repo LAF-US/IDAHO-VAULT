@@ -13,9 +13,10 @@ related:
   - lfinneytweets
 ---
 
-Public opinion toward sexuality & gender have flipped so quickly in recent history and I feel so lucky to be a young queer person in these times. 🗳️🌈 https://t.co/rsdVHLdTEy
+Public opinion toward sexuality & gender have flipped so quickly in recent history and I feel so lucky to be a young queer person in these times. 🗳️🌈 <https://t.co/rsdVHLdTEy>
 
 ## Links
-- https://t.co/rsdVHLdTEy
+
+- <https://t.co/rsdVHLdTEy>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1060760386733932544)

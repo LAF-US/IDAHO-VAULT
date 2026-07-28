@@ -91,7 +91,6 @@ The annexation will require several sign-offs from the city in the coming months
 
 “…There will be public hearings at the planning and zoning commission and city council to ensure community engagement and invite feedback,” she wrote. “Nothing in the flexibility that we provide applicants during the pre-submittal steps affects the required public hearings, nor does it subvert the ability of residents to meaningfully participate in the process.”  
   
-
 ### Latest Stories
 
 A U.S. District Court judge ruled that the City of Boise didn't violate federal law when it condemned the historic Union Block building, but...

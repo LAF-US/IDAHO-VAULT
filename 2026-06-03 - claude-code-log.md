@@ -91,13 +91,13 @@ claude-code-log my-project --tui  # Automatically converts to ~/.claude/projects
 - **Smart Summaries**: Prioritizes Claude-generated summaries over first user messages for better session identification
 - **Working Directory Matching**: Automatically finds and opens projects matching your current working directory
 - **Quick Actions**:
-	- `h`: Generate and open session HTML in browser
-		- `m`: Generate and open session Markdown in browser
-		- `v`: View session Markdown in embedded viewer (with table of contents)
-		- `c`: Resume session in Claude Code with `claude -r <sessionId>`
-		- `r`: Reload session data from files
-		- `p`: Switch to project selector view
-		- `H` / `M` / `V`: Force regenerate HTML/Markdown (hidden shortcuts for development)
+  - `h`: Generate and open session HTML in browser
+    - `m`: Generate and open session Markdown in browser
+    - `v`: View session Markdown in embedded viewer (with table of contents)
+    - `c`: Resume session in Claude Code with `claude -r <sessionId>`
+    - `r`: Reload session data from files
+    - `p`: Switch to project selector view
+    - `H` / `M` / `V`: Force regenerate HTML/Markdown (hidden shortcuts for development)
 - **Project Statistics**: Real-time display of total sessions, messages, tokens, and date range
 - **Cache Integration**: Leverages existing cache system for fast loading with automatic cache validation
 - **Keyboard Navigation**: Arrow keys to navigate, Enter to expand row details, `q` to quit
@@ -233,10 +233,10 @@ When processing all projects, the tool generates:
 - **Token Usage Display**: Individual message and session-level token consumption tracking
 - **Syntax Highlighting**: Code blocks properly formatted with markdown rendering
 - **Markdown Support**: Server-side rendering with mistune including:
-	- Headers, lists, emphasis, strikethrough
-		- Code blocks and inline code
-		- Links, images, and tables
-		- GitHub Flavored Markdown features
+  - Headers, lists, emphasis, strikethrough
+    - Code blocks and inline code
+    - Links, images, and tables
+    - GitHub Flavored Markdown features
 - **Collapsible Content**: Tool use, system commands, and long content in expandable sections
 - **Floating Controls**: Always-available filter button, details toggle, and back-to-top navigation
 - **Cross-Session Features**: Summaries properly matched across async sessions
@@ -285,9 +285,9 @@ See [CONTRIBUTING.md](https://pypi.org/project/claude-code-log/CONTRIBUTING.md) 
 Projects built on top of `claude-code-log`:
 
 - **[archive-session](https://github.com/lifeinchords/claude-code-skills#archive-session-skill--slash-command--optional-hook)** by [@lifeinchords](https://github.com/lifeinchords). Wraps the CLI as three integration surfaces:
-	- a Claude Code [Skill](https://github.com/lifeinchords/claude-code-skills/blob/main/.claude/skills/archive-session/SKILL.md)
-		- a Claude Code slash [Command](https://github.com/lifeinchords/claude-code-skills/blob/main/.claude/commands/archive-session.md) `/archive-session` for explicit in-chat invocation
-		- a Claude Code PreCompact [Hook](https://github.com/lifeinchords/claude-code-skills/blob/main/.claude/hooks/pre-compact-archive.sh) that auto-archives transcripts and subagent logs right before context compaction
+  - a Claude Code [Skill](https://github.com/lifeinchords/claude-code-skills/blob/main/.claude/skills/archive-session/SKILL.md)
+    - a Claude Code slash [Command](https://github.com/lifeinchords/claude-code-skills/blob/main/.claude/commands/archive-session.md) `/archive-session` for explicit in-chat invocation
+    - a Claude Code PreCompact [Hook](https://github.com/lifeinchords/claude-code-skills/blob/main/.claude/hooks/pre-compact-archive.sh) that auto-archives transcripts and subagent logs right before context compaction
 
 Cross-platform (macOS and Windows/MSYS).
 

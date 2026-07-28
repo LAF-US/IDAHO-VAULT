@@ -64,7 +64,7 @@ English **sublation** comes from Latin ***sublatio*** — *a lifting up* — fro
 Sublation is one move with three faces, performed in a single act:
 
 | Face | Operation | What it does |
-|---|---|---|
+| --- | --- | --- |
 | **Cancel** | The prior form is negated | The old one-sidedness is no longer the operative shape |
 | **Preserve** | The content survives the cancellation | What was real about the prior form is kept |
 | **Lift** | The content is raised into a higher register | The new register holds what the old one could not |
@@ -202,6 +202,7 @@ Adjacent inquiry held for follow-up: the Roman *tollere liberum* — the ritual 
 ## Sources
 
 ### External
+
 - G.W.F. Hegel, *Wissenschaft der Logik* (1812–16); *Phänomenologie des Geistes* (1807)
 - [Sublation — Hegel.net](https://hegel.net/en/sublation.htm)
 - [Hegel's Dialectics — Stanford Encyclopedia of Philosophy](https://plato.stanford.edu/entries/hegel-dialectics/)
@@ -213,6 +214,7 @@ Adjacent inquiry held for follow-up: the Roman *tollere liberum* — the ritual 
 - *McGirt v. Oklahoma*, 591 U.S. ___ (2020)
 
 ### Vault internal
+
 - [[TREATY-MAKING-A-READING-2026-06-08]] — the form
 - [[VOLTAIRE-HRE-READING-2026-06-08]] — the contested-fiction-that-operated-as-standing case
 - [[DIVINE-RIGHT-OF-KINGS-READING-2026-06-08]] — the doctrine's three loud unmakings and McGirt's quieter fourth

@@ -41,7 +41,9 @@ the truthful account of what was decided then.
 ## What changed (2026-06-17)
 
 `main` now lands every change **through the GitHub merge queue** (verified this session by
-#546, #540, #542, #544, #536, #547, #548 all merging via the queue). The merge queue **is**
+
+# 546, #540, #542, #544, #536, #547, #548 all merging via the queue). The merge queue **is**
+
 branch protection on `main` — so:
 
 - **ARBORSCAPE IF 12's precondition is satisfied.** The structural reason the lane was shelved

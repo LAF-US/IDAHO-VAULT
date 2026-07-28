@@ -15,9 +15,10 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoPubRadio: PHOTOS: The March for Trump, Rally and Flag Wave, Idaho State Capitol, this morning. https://t.co/BoUVjuzTUk
+RT @IdahoPubRadio: PHOTOS: The March for Trump, Rally and Flag Wave, Idaho State Capitol, this morning. <https://t.co/BoUVjuzTUk>
 
 ## Media
+
 - ![](https://pbs.twimg.com/media/EShbt4pUMAA6PrE.jpg)
 - ![](https://pbs.twimg.com/media/EShbt4uUEAQ8HGW.jpg)
 

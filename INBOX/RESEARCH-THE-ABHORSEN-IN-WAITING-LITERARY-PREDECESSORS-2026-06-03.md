@@ -33,6 +33,7 @@ marked **as my reading,** not canon. Authority: LOGAN. The panpipes, not the bel
 ---
 
 ## Provenance key
+
 - **`[canon]`** — Garth Nix's Old Kingdom, cross-checked (Wikipedia + the Old
   Kingdom Wiki via search; the wiki blocks direct fetch, and the vault holds cached
   copies — *`- Fandom, Inc. - Abhorsen.md`* and kin — in the crypts).
@@ -56,7 +57,7 @@ sibling, or other relative." **`[canon]`**
 ## The manners of ascension (or its lack)
 
 | Manner | Who | How | Tier |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **1. Succeed — the master dies at the work** | **Terciel** ← Tizanael · **Sabriel** ← Terciel | Tizanael killed by Kerrigor mid-binding; Terciel lost in Death, **rang Astarael** and died holding off Kerrigor | `[canon]` |
 | **2. End before succeeding** | **Rahiniel** (in-Waiting to Tizanael) | Tizanael's *first* in-Waiting — Terciel's much-elder sister — **died young**; the dyad closed without graduation; Tizanael then took Terciel | `[canon]` |
 | **3. Remain in-Waiting — the master lives** | **Lirael** ← Sabriel | Raised among the Clayr, ignorant of her parentage; discovered it; **named Abhorsen-in-Waiting**. As of *Goldenhand* **still in-Waiting** — "the 54th, *after Sabriel's death*" | `[canon]` |
@@ -118,6 +119,7 @@ The vault's failstate doctrine (`LICH-PROBLEM`, `UNDEAD-TAXONOMY`, `NECROMANCER-
 > antithesis, the one who was of the line and went the other way.
 
 **This names the *archetype only.* The fences, held hard:**
+
 - **The vault has no committed "Lost Abhorsen" record.** I searched the preserved
   layer (`origin/main`): the phrase appears **only in the cached Nix canon,** never
   in a vault-meta document. Turned inward, *"the Lost Abhorsen"* is a **whisper with
@@ -131,6 +133,7 @@ The vault's failstate doctrine (`LICH-PROBLEM`, `UNDEAD-TAXONOMY`, `NECROMANCER-
 ---
 
 ## Honest marks
+
 - **Rahiniel** as *"Terciel's much-elder sister, died when he was four"* is from the
   Old Kingdom Wiki (via search summary; direct fetch was blocked). The spine
   (Tizanael 51st → Terciel 52nd → Sabriel 53rd → Lirael 54th-designate; the manners)
@@ -142,6 +145,7 @@ The vault's failstate doctrine (`LICH-PROBLEM`, `UNDEAD-TAXONOMY`, `NECROMANCER-
 ---
 
 ## Sources read
+
 - Wikipedia: [Abhorsen](https://en.wikipedia.org/wiki/Abhorsen),
   [Sabriel](https://en.wikipedia.org/wiki/Sabriel),
   [List of Old Kingdom characters](https://en.wikipedia.org/wiki/List_of_Old_Kingdom_characters).

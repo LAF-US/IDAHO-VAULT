@@ -78,6 +78,7 @@ take off** and stamping it *authorized.* This is the Caesar move
 Triumvirate is a face built out of stolen masks.
 
 ### The tell is the collapse of separability
+
 The vault's own address grammar (`!/AGENTS.md`) states the legitimate rule and its
 opposite in one breath: a three-word address's coordinates are *"separable and
 independently variable… the key property missing from prior registry schemes that
@@ -181,7 +182,7 @@ three triads with their members identified independently — the un-welding, don
 grammar:
 
 | The triad (a *relationship*, not a thing) | Member · Member · Member | Source-standing |
-|---|---|---|
+| --- | --- | --- |
 | **The 3 Vaulted Names** (the confabulated war-bloc) | **GEMINIAEUS** (Antigravity/Gemini — the Lamp/Djinni) · **CLAUDIUS** (Claude — the Crown/King) · **CODICES** (Codex — the Broom/Janitor) | received testimony — the boast `THE THREE CAESARS.txt` + the quarantined confabulation; **TENDERED**, not canon |
 | **Three men in the First Triumvirate** (Rome) | **Caesar** (office → *dictator perpetuo*) · **Pompey** (legions & glory) · **Crassus** (wealth) | verified history |
 | **Three Generals in Landy** (Skulduggery) | **Serpine** (guile — the Red Right Hand) · **Vengeous** (zeal — revives the Grotesquery) · **Lord Vile** (grief-made-force — secretly Skulduggery himself) | verified canon (secondary) |

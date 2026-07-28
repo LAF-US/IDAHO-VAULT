@@ -5,4 +5,4 @@ related:
 - Twin Falls County
 authority: LOGAN
 ---
-Hansen, Twin Falls County 
+Hansen, Twin Falls County
