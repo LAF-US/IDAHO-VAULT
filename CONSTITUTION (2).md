@@ -2,6 +2,7 @@
 by [[Logan Alvan Finney]]
 
 [["The world is quiet here."]]
+
 ---
 
 *Adopted: 2026-03-16*

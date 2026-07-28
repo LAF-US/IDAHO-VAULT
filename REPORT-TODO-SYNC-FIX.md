@@ -5,6 +5,7 @@ related:
   - TODO SYNC
   - DECISIONS
 date: 2026-04-26
+
 ---
 
 # REPORT: Two-Way Daily Note Sync Fix
