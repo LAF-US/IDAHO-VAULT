@@ -6,7 +6,7 @@ created: 2026-07-16
 ---
 11/3/2021
 
-We told you about Prisoner Number 2 in Idaho’s Territorial Prison and his first escape attempt yesterday. We’ll continue that story today.  
+We told you about Prisoner Number 2 in [[Idaho]]’s Territorial Prison and his first escape attempt yesterday. We’ll continue that story today.  
   
 As noted, Moroni Hicks’ status as Prisoner Number 2 doesn’t mean a lot. They didn’t start assigning numbers to prisoners until 1880, 16 years after the first territorial prison opened for business.  
   
@@ -33,3 +33,5 @@ J.W. Hayes seems to have vanished completely.
 The common thread in these two escapes, Prisoner Number 2, aka Moroni Hicks, was released from prison in August 1891, after serving for eleven years. He married Lucinda Owen in June 1893 in Kane, Utah. They had eight children together. Moroni passed away on March 17, 1931 and is buried in the Oddfellows Cemetery in Los Angeles.  
 
 Speaking of Idaho history posts are copyright © 2020 by Rick Just. Sharing is encouraged. If you don’t find a button that lets you do that, find the post on Speaking of Idaho. If you’re missing my daily posts, select the RSS button, or select See it First under the Facebook Following tab.
+
+#idaho

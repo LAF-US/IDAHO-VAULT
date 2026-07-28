@@ -12,7 +12,7 @@ description: "Idaho’s average $4.05 per gallon of gasoline lands in the top ha
 
 Gas prices are displayed on a billboard in North Salt Lake, Utah, on Tuesday, March 31, 2026. (Photo by McKenzie Romero/Utah News Dispatch)
 
-A gallon of gas has risen to a $4.05 average across Idaho (Photo by McKenzie Romero/Utah News Dispatch).
+A gallon of gas has risen to a $4.05 average across [[Idaho]] (Photo by McKenzie Romero/Utah News Dispatch).
 
 Idahoans are facing high prices at the pump as gas costs rose about 6 cents this week, according to a press release from AAA.
 
@@ -33,3 +33,5 @@ Prices for a barrel of crude oil have risen $12 since the beginning of July, now
 Gas prices do not average evenly across the state. In Coeur d’Alene, drivers can expect to pay $3.89, while those in Pocatello face prices nearly 17 cents higher at $4.06.
 
 “Keep bundling your trips and looking for ways to avoid peak traffic congestion,” Conde said. “We’re heading for choppy waters until we see a lasting resolution in the Middle East.”
+
+#idaho

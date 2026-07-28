@@ -14,7 +14,7 @@ Cyanobacteria water
 
 Cyanobacteria blooms occur when blue-green algae rapidly grows out of control. (Courtesy of Lorraine Backer/Centers for Disease Control and Prevention public health image library)
 
-Idaho’s Department of Health and Welfare [advised recreationists to stay out of Brownlee and Hells Canyon reservoirs](https://healthandwelfare.idaho.gov/news/health-advisory-issued-brownlee-and-hells-canyon-reservoirs-0) on Monday, after recent samples revealed high amounts of toxin-producing cyanobacteria.
+[[Idaho]]’s Department of Health and Welfare [advised recreationists to stay out of Brownlee and Hells Canyon reservoirs](https://healthandwelfare.idaho.gov/news/health-advisory-issued-brownlee-and-hells-canyon-reservoirs-0) on Monday, after recent samples revealed high amounts of toxin-producing cyanobacteria.
 
 Monday’s advisory comes after the department issued the same warning for Crane Creek Reservoir in Washington County earlier this month.
 
@@ -31,3 +31,5 @@ Regardless of where they plan to recreate, the Department of Health and Welfare 
 The department also urged Idahoans to watch for symptoms if they do end up in contact with the water, including rash, hives, diarrhea or headache. Dogs may become ill quicker than humans, and thus should be washed immediately after exiting the water.
 
 Increased levels of cyanobacteria are the result of rising temperatures, though the microorganisms are a native part of Idaho’s watersheds. Their populations bloom, releasing cyanotoxins, and present in a variety of different looks including mats, foam, or surface scum. The blooms are not always visible from the surface.
+
+#idaho

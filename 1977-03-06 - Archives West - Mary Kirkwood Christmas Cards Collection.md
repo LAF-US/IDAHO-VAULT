@@ -11,7 +11,7 @@ created: 2026-07-20
 
 Creator
 
-University of Idaho. Library. Special Collections Dept.
+University of [[Idaho]]. Library. Special Collections Dept.
 
 Title
 
@@ -81,3 +81,5 @@ Fred Franck donated the collection to the University of Idaho Library in 2003.
 
 - [Franck, Fred](https://nwda.orbiscascade.org/search.php?facet=name:Franck%2C%20Fred)
 - [Kirkwood, Mary](https://nwda.orbiscascade.org/search.php?facet=name:Kirkwood%2C%20Mary)
+
+#idaho

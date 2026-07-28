@@ -14,7 +14,7 @@ Photograph by David A. Wuerth
 
 ## Bio
 
-Rose Frank was born on April 6, 1912, in Sweetwater, Idaho, in the Nez Perce area. The Nez Perce tribe once spread across northwestern Oregon, northern Idaho, and western Montana.
+Rose Frank was born on April 6, 1912, in Sweetwater, [[Idaho]], in the Nez Perce area. The Nez Perce tribe once spread across northwestern Oregon, northern Idaho, and western Montana.
 
 They had established trading relations with distant tribes in British Columbia and California long before European contact. This enabled them to adorn their leather and fiber weavings with blue abalone and dentalia shells from the Pacific Ocean. Their leatherwork and quillwork were also notable, and by the late nineteenth century the excellence of Nez Perce beadwork had brought them an international reputation.
 
@@ -25,3 +25,5 @@ Most of Frank's life was spent quietly as a housewife. She worked outside the ho
 Many scholars believe that the Nez Perce invented cornhusk weaving. Although neighboring tribes practiced the art as well, the quality of Nez Perce work has always been considered outstanding. Over the years, Frank's work was widely collected. It was probably better known in Germany, where several museums placed standing orders for "flower pot" hats and storage bags. Frank's weavings were valued not only for her meticulous craftsmanship, but also for her equally tenacious maintenance of traditional aesthetic principles. Each of her bags was decorated on both sides with geometric or floral designs, using materials dyed either with natural dyes or, in later years, with the more brilliant commercial dyes. Frank prided herself in never repeating a design in more than 40 years of weaving.
 
 Describing her work, one of Frank's tribal members wrote: "From careful use of elements normally thrown out (packing string, cornhusk and yarn remnants), she weaves objects of beauty and function, using techniques and designs older than man's memory, traditional pieces that having sprung from the ground have a place, heritage." A Nez Perce Council member added: "She has taught many classes and taken on several apprentices.... She instills in her students the thought that they too must strive for excellence in themselves, which will be reflected in their handwork. She had struggled for excellence until it was no longer a struggle, but a part of her everyday living way."
+
+#idaho

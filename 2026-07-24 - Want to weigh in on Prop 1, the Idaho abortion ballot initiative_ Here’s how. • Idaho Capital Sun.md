@@ -10,7 +10,7 @@ description: "Idaho state election officials are asking the public to weigh in o
 
 ![Volunteers pass boxes of signatures supporting a ballot initiative to end Idaho's ban on abortion outside the state capitol.](https://idahocapitalsun.com/wp-content/uploads/2026/07/IMG_4021.png)
 
-Volunteers pass boxes of signatures supporting a ballot initiative to end Idaho's ban on abortion outside the state capitol.
+Volunteers pass boxes of signatures supporting a ballot initiative to end [[Idaho]]'s ban on abortion outside the state capitol.
 
 Volunteers pass boxes of signatures supporting a ballot initiative to end Idaho’s strict ban on abortion on July 2, 2026, outside the state Capitol in Boise. (Photo by Abigail Gerstein/Idaho Capital Sun)
 
@@ -28,3 +28,5 @@ This year’s voter pamphlet will include information on two constitutional amen
 A committee of legislative leaders last month [approved language to describe](https://idahocapitalsun.com/2026/06/04/idaho-legislators-approve-language-for-ballot-measures-on-marijuana-english-as-official-language/) those two proposed constitutional amendments on ballots.
 
 The voter pamphlet will also include information on an advisory question for voters to designate a state gun for Idaho. Lawmakers approved the advisory question this year through [House Bill 932](https://legislature.idaho.gov/sessioninfo/2026/legislation/H0932/).
+
+#idaho

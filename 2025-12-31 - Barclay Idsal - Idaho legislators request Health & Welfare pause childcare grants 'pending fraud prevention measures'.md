@@ -9,7 +9,7 @@ created: 2026-07-20
 
 ![statehouse.jpg](https://ewscripps.brightspotcdn.com/dims4/default/f6c17d1/2147483647/strip/true/crop/1280x720+0+0/resize/1280x720!/quality/90/?url=http%3A%2F%2Fewscripps-brightspot.s3.amazonaws.com%2Fe3%2F1a%2F5f8ed16540e895496daeed020c6a%2Fstatehouse.jpg)
 
-BOISE, Idaho — On Wednesday, Idaho lawmakers, Senator Brian Lenney (R - Canyon County) and Representative Josh Tanner (R - Ada County) sent a letter to Idaho Department of Health and Welfare Director Juliet Charron, requesting that the agency pause "$14 million childcare appropriation authorized under Senate Bill 1206 (FY 2026), pending implementation of enhanced program-integrity and fraud-prevention safeguards."
+BOISE, [[Idaho]] — On Wednesday, Idaho lawmakers, Senator Brian Lenney (R - Canyon County) and Representative Josh Tanner (R - Ada County) sent a letter to Idaho Department of Health and Welfare Director Juliet Charron, requesting that the agency pause "$14 million childcare appropriation authorized under Senate Bill 1206 (FY 2026), pending implementation of enhanced program-integrity and fraud-prevention safeguards."
 
 The republican legislators cite the recent controversy [regarding daycare fraud in Minnesota](https://www.kivitv.com/us-news/trump-administration-says-its-freezing-child-care-funds-to-minnesota-after-series-of-fraud-schemes) as the primary reason for the pause. "In light of these developments, and concerns raised regarding potential vulnerabilities within Idaho programs, proceeding with additional disbursements without strengthened safeguards would present unnecessary risk to taxpayers," reads the letter.
 
@@ -32,3 +32,5 @@ We cover stories making an impact in Downtown Boise. This is your home to stay o
 [More News in Downtown Boise](https://www.kivitv.com/downtown-boise)
 
 ![](https://ewscripps.brightspotcdn.com/b8/96/01a6aaae4803b13032066c81106f/chatgpt-image-jun-24-2026-11-29-09-am.png)
+
+#idaho

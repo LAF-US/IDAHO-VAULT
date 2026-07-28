@@ -7,7 +7,7 @@ published: 2022-06-16
 created: 2026-07-16
 description: "Many artists have been celebrated for their vivid depictions of the landscapes and history of the West. Here are a few Idaho artists."
 ---
-Many artists have been celebrated for their vivid depictions of the landscapes and history of the West. Here are a few Western artists from Idaho.
+Many artists have been celebrated for their vivid depictions of the landscapes and history of the West. Here are a few Western artists from [[Idaho]].
 
 ### James Castle
 
@@ -32,3 +32,5 @@ In 1991, Frank received a National Heritage Fellowship from the National Endowme
 For the past several years, she has focused on collaborating with land conservation organizations as well as focused on her art. In addition, she donates a portion of the sales of her paintings to a nonprofit, called, Plastic Bank, and uses re-purposed substrates in her paintings.
 
 Teannalach has gallery representation at [Capitol Contemporary Gallery](https://www.capitolcontemporary.com/) in Boise, Idaho, and Echo Arts in Bozeman, Montana. [ISI](https://www.idahoseniorindependent.com/subscribe/)
+
+#idaho
