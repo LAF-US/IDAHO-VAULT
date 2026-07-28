@@ -25,10 +25,11 @@ related:
   - idpol
 ---
 
-The four presidents of Idaho’s four-year universities present to JFAC this morning. 
-@LCSC @IdahoStateU @BoiseState @UIdaho #idleg #idedu #idpol https://t.co/sOSu9MJpZS
+The four presidents of Idaho’s four-year universities present to JFAC this morning.
+@LCSC @IdahoStateU @BoiseState @UIdaho #idleg #idedu #idpol <https://t.co/sOSu9MJpZS>
 
 ## Media
+
 - ![](https://pbs.twimg.com/media/EOvMoRTU8AIMbna.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1219293894984134659)

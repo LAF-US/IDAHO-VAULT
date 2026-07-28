@@ -24,7 +24,7 @@ This document governs how swarm nodes coordinate with each other and with the pr
 ## NODE ROLES
 
 | Node | Primary Role | Secondary Role |
-|---|---|---|
+| --- | --- | --- |
 | Claude (Anthropic) | Analysis, research, document generation | Framework reasoning |
 | Microsoft Copilot | Email coordination, message composition | Institutional lookup |
 | GitHub Admin Agents | Vault automation, code generation | Swarm orchestration |
@@ -47,6 +47,7 @@ When handing off work between nodes:
 ## CONFLICT RESOLUTION
 
 If two nodes receive conflicting instructions:
+
 1. Halt action
 2. File a deadletter describing the conflict
 3. Escalate to principal for resolution
@@ -55,12 +56,14 @@ If two nodes receive conflicting instructions:
 ## SWARM HEALTH CHECKS
 
 Healthy swarm indicators:
+
 - `agents.json` updated within last 24 hours
 - No unresolved deadletters older than 48 hours
 - Principal has reviewed LEVELSET within last week
 - All nodes know current priority inversion
 
 Unhealthy swarm indicators:
+
 - Any node spawning as an isolated orphan (no LEVELSET context loaded)
 - Deadletters accumulating without triage
 - Conflicting directives from multiple nodes

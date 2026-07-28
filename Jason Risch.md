@@ -6,5 +6,6 @@ related:
 authority: LOGAN
 ---
 Residence: Boise
+
 - Risch Pisca, PLLC
-- son of Jim Risch 
+- son of Jim Risch

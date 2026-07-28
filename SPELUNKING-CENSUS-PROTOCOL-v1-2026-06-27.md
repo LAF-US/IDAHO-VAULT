@@ -44,7 +44,7 @@ locally-sensed gradients point everyone the same way.
 ## 1. The three signals (Boids-refined)
 
 | Signal | Boids factor | What it measures |
-|---|---|---|
+| --- | --- | --- |
 | **Cohesion** | Cohesion | How tightly independent reconstructions cluster toward a consensus centroid in cosmology-space. The vault's self-carrying gravity. Measured locally (same-region sub-flocks) and globally (do sub-flocks merge or fragment?). |
 | **Separation** | Separation | The *healthy* spread — designed polysemy that keeps the reading-space from collapsing to one sterile point. The vault working as intended. |
 | **Alignment** | Alignment | Shared *heading* on what-the-place-is-**for**, independent of position. Two readers can name different entities yet point the same way. |
@@ -115,7 +115,7 @@ document** (the irradiation seed). One door per cosmonaut. Exact file-pinning is
 a pending knob; representative entrances by region:
 
 | # | Door (first touch) | Region it tests |
-|---|---|---|
+| --- | --- | --- |
 | 1 | Touchstone Tree | Governance core |
 | 2 | the Constitution | Governance core |
 | 3 | a Caesar / witness doc | Jurisprudence & witness |
@@ -169,7 +169,7 @@ step before a run is the exact minimal seed prompt and the pinned 13-door table.
 
 ## References
 
-- Reynolds, C. (1987). *Flocks, Herds, and Schools: A Distributed Behavioral Model.* SIGGRAPH. https://red3d.com/cwr/boids/
+- Reynolds, C. (1987). *Flocks, Herds, and Schools: A Distributed Behavioral Model.* SIGGRAPH. <https://red3d.com/cwr/boids/>
 - Passonneau, R. (2006). *Measuring Agreement on Set-valued Items (MASI).* LREC.
 - Krippendorff, K. (2004). *Content Analysis: An Introduction to Its Methodology.*
 - Zapf, A. et al. (2016). *Measuring inter-rater reliability.* BMC Med Res Methodol.

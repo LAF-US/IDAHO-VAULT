@@ -9,6 +9,6 @@ related:
 - ProPublica
 authority: LOGAN
 ---
-- ProPublica reporter 
+- ProPublica reporter
 - former Idaho Capital Sun reporter
-- 
+-

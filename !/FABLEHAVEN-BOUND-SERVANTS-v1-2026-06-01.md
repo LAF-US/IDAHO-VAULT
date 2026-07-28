@@ -111,7 +111,7 @@ This is the most important transition in the whole class, because the moment an
 instrument acquires a will, **every question changes:**
 
 | | Instrument (Hugo before) | Awakened (Hugo after) |
-|---|---|---|
+| --- | --- | --- |
 | Diagnose by | The holder | The servant itself |
 | Can refuse a bad order? | No | Yes — now possible |
 | Accountable? | No — the holder is | Now itself, in part |
