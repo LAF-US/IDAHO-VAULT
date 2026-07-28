@@ -28,7 +28,7 @@ fiddle tunes | folk music | mining camps
 
 Description:
 
-Collection of dance tunes from Warren's Diggins, Idaho in the 1860s. Peter Beemer, a musician with a small dance orchestra, wrote down and arranged the songs which were collected from various residents of the area. Includes historical information about dancing in 19th century America, the musicians in Warren's Diggins, and the sources of many of the tunes.
+Collection of dance tunes from Warren's Diggins, [[Idaho]] in the 1860s. Peter Beemer, a musician with a small dance orchestra, wrote down and arranged the songs which were collected from various residents of the area. Includes historical information about dancing in 19th century America, the musicians in Warren's Diggins, and the sources of many of the tunes.
 
 Publisher:
 
@@ -65,3 +65,5 @@ Warren (Idaho)
 Rights:
 
 This Item is in the Public Domain under the laws of the United States. This Item may be used without permission and with credit to MSS 268 Peter Beemer Manuscript, Special Collections and Archives, Boise State University. To request a high-resolution copy, contact archives@boisestate.edu.
+
+#idaho

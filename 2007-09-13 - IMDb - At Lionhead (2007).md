@@ -15,8 +15,10 @@ YOUR RATING
 
 [Documentary](https://www.imdb.com/interest/in0000060/?ref_=tt_ov_in_1)
 
-Follows the story of silent movie actress, director, and producer Nell Shipman from 1922 to 1925 at her production studio called Lionhead Lodge on Priest Lake in northern Idaho.
+Follows the story of silent movie actress, director, and producer Nell Shipman from 1922 to 1925 at her production studio called Lionhead Lodge on Priest Lake in northern [[Idaho]].
 
 Follows the story of silent movie actress, director, and producer Nell Shipman from 1922 to 1925 at her production studio called Lionhead Lodge on Priest Lake in northern Idaho.
 
 Follows the story of silent movie actress, director, and producer Nell Shipman from 1922 to 1925 at her production studio called Lionhead Lodge on Priest Lake in northern Idaho.
+
+#idaho
