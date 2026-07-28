@@ -13,6 +13,13 @@
   "dataview-autocompletion",
   "text-extractor",
   "map-of-content",
+<<<<<<< HEAD
+<<<<<<< HEAD
+  "obsidian-mind-map",
+=======
+>>>>>>> 4d3d06e2fac5b12be035d897a4635d9be5baf1bd
+=======
+>>>>>>> 4d3d06e2fac5b12be035d897a4635d9be5baf1bd
   "nldates-obsidian",
   "templater-obsidian",
   "obsidian-tasks-plugin",
@@ -23,6 +30,13 @@
   "roygbiv-day-accent",
   "frontmatter-markdown-links",
   "tag-wrangler",
+<<<<<<< HEAD
+<<<<<<< HEAD
+  "obsidian-full-calendar",
+=======
+>>>>>>> 4d3d06e2fac5b12be035d897a4635d9be5baf1bd
+=======
+>>>>>>> 4d3d06e2fac5b12be035d897a4635d9be5baf1bd
   "homepage",
   "settings-search",
   "smart-connections",
@@ -40,6 +54,13 @@
   "obsidian-tidy-footnotes",
   "obsidian-topic-linking",
   "todoist-context-bridge",
+<<<<<<< HEAD
+<<<<<<< HEAD
+  "markdown-attributes",
+=======
+>>>>>>> 4d3d06e2fac5b12be035d897a4635d9be5baf1bd
+=======
+>>>>>>> 4d3d06e2fac5b12be035d897a4635d9be5baf1bd
   "ai-image-analyzer",
   "table-editor-obsidian",
   "moviegrabber",
@@ -54,10 +75,20 @@
   "phone-to-roam-to-obsidian",
   "supercharged-links-obsidian",
   "translate",
+<<<<<<< HEAD
+<<<<<<< HEAD
+  "omnisearch"
+=======
+=======
+>>>>>>> 4d3d06e2fac5b12be035d897a4635d9be5baf1bd
   "omnisearch",
   "obsidian-dice-roller",
   "influx",
   "obsidian-kanban",
   "obisidian-note-linker",
   "tipa-support"
+<<<<<<< HEAD
+>>>>>>> 4d3d06e2fac5b12be035d897a4635d9be5baf1bd
+=======
+>>>>>>> 4d3d06e2fac5b12be035d897a4635d9be5baf1bd
 ]
