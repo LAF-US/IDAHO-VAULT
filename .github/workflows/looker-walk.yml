@@ -73,7 +73,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           python3 .github/scripts/thread_witness.py render-worklist \
-            --input looker-walk.json > looker-worklist.md
+            < looker-walk.json > looker-worklist.md
           # Key off lane, not visible unresolved counts: a truncated PR is lane
           # needs-human with maybe 0 visible unresolved threads, but the census cannot
           # prove it clear — closing the issue then would over-claim. (codex on #531.)

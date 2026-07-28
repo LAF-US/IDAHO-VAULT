@@ -378,15 +378,14 @@ def render_looker_worklist(report: dict) -> str:
     return "\n".join(lines)
 
 
-def render_worklist(args: argparse.Namespace) -> int:
-    """Read a looker-walk JSON report (file or stdin) and print the markdown worklist."""
-    # Plain path + explicit open, not argparse.FileType: FileType is deprecated
-    # (Python 3.14) and never closes the handle it opens.
-    if args.input:
-        with open(args.input, encoding="utf-8") as handle:
-            raw = handle.read()
-    else:
-        raw = sys.stdin.read()
+def render_worklist(args: argparse.Namespace) -> int:  # pylint: disable=unused-argument
+    """Read a looker-walk JSON report from stdin and print the markdown worklist.
+
+    stdin is the ONLY input: the shell's own redirect (`render-worklist < report.json`)
+    covers the file case, so the tool takes no path argument at all — no user-controlled
+    path, nothing to open, nothing to sanitize.
+    """
+    raw = sys.stdin.read()
     print(render_looker_worklist(json.loads(raw or "{}")))
     return 0
 
@@ -410,12 +409,7 @@ def build_parser() -> argparse.ArgumentParser:
         help="days of inactivity before a PR is flagged stale (positive int)",
     )
 
-    worklist = subparsers.add_parser("render-worklist")
-    worklist.add_argument(
-        "--input",
-        default=None,
-        help="path to a looker-walk JSON file to render (default: stdin)",
-    )
+    subparsers.add_parser("render-worklist")
     return parser
 
 
