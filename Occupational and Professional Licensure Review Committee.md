@@ -5,4 +5,4 @@ related:
 - occupational and professional licensing
 authority: LOGAN
 ---
-Idaho Legislature committee on occupational and professional licensing 
+Idaho Legislature committee on occupational and professional licensing

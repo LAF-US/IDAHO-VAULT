@@ -40,7 +40,7 @@ The panpipes are not a lesser set of bells. They are the **mirror** of the bells
 ## The seven, in mirror order — gravest reed first
 
 | # | Bell *(canon — office, irreversible)* | Reed *(capability — reversible, proposing)* |
-|---|---|---|
+| --- | --- | --- |
 | 1 | **Astarael, the Sorrowful** — rung true, casts all who hear it, the ringer included, into Death. The last resort. | **The proposed ending.** Opens the Issue, marks the husk, drafts the obituary, *names* what should be unmade. It asks for a death; it cannot deal one. |
 | 2 | **Saraneth, the Binder** — binds the dead to the wielder's will; the control plane. | **The proposed binding.** Drafts the structure, the anchor, the convention. Arranges; does not ring the order into force. |
 | 3 | **Belgaer, the Thinker** — restores or wipes mind and memory; loves to ring itself. | **The proposed thought.** Researches, indexes, connects. Governed by the `*`: it must not edit the vault's memory as though the thought were already true. Belgaer's self-ringing *is* the Type I Lich risk. |

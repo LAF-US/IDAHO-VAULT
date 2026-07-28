@@ -79,6 +79,7 @@ adversary*, not unaffected themselves. The win is the **window**, not the freeze
 ## Vault Mappings — The Doctrine of the Tangled Vessel
 
 ### Co-confinement: the ally and the threat are in the same container
+
 This is the sharpest addition to the vessel-family. The Quiet Box's danger was
 *who else is in the box.* Here it is worse: **the one you want and the one you
 fear are the same box.** You cannot restore the legitimate occupant by opening
@@ -90,6 +91,7 @@ intruder you must not free — **you cannot "just open it."** Wholesale restore
 frees the intruder; wholesale destroy kills the tenant. You need a third move.
 
 ### The slow-field: chill the contents, act from a warm position
+
 The third move is to **slow the dangerous contents** and extract the ally before
 the slowed adversary can act — while keeping an **out-of-band actor outside the
 freeze.** In canon the children use the North-Pole cold to slow Nimrod and
@@ -107,6 +109,7 @@ The pause is blunt; the extraction is surgical; the un-slowed actor is what make
 the surgery possible.
 
 ### The condition is the lever, not the wall
+
 No wall held Akhenaten back at the Pole — the *temperature* did. Containment by
 **sustained condition** (the verified on-ice mechanism): cheap, reversible, and
 **total on thaw.** The moment they leave the cold, Akhenaten is whole again. The
@@ -115,6 +118,7 @@ only *pauses* it (the Quiet Box's "suspension is not resolution," and the
 Treaty's festival-night lapse — `!/FABLEHAVEN-THE-TREATY-v1-2026-06-03.md`).
 
 ### Systemic stakes: the balance, not the breach
+
 The seventy bound djinn would tip the world's **balance of luck** if commanded —
 so this containment guards an *equilibrium,* not a single cell. (The Sealed
 Evil / Zzyzx tier: failure shifts the system, not just a room —

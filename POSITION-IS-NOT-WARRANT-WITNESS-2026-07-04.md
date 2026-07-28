@@ -39,8 +39,8 @@ House's ordinal rank of who-outranks-whom. Its opening, captioned **"Before Lord
 1. **The Architect** — the creator, inside her own Register, not above it.
 2. **Lord Sunday**, then **3.** Superior Saturday, **4.** Friday, **5.** Thursday, **6.** Wednesday,
    **7.** Tuesday, **8.** Monday — the seven Trustees (the Morrow Days), Sunday highest.
-9. **The Old One** — the primordial *Father*, ranked *below* seven of the Architect's Denizens.
-10. **The Mariner** · **11.** **The Piper**.
+3. **The Old One** — the primordial *Father*, ranked *below* seven of the Architect's Denizens.
+4. **The Mariner** · **11.** **The Piper**.
 
 Three different orderings run through the House, and the Register lets you see them at once:
 

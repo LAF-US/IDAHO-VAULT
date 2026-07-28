@@ -1,6 +1,7 @@
 # Python Compilation and Test Report
 
 ## Environment Note
+
 This system appears to lack PowerShell 6+ (pwsh.exe), which is required for automated execution. The scripts below provide manual verification methods.
 
 ## PART 1: Python Compilation Check
@@ -8,6 +9,7 @@ This system appears to lack PowerShell 6+ (pwsh.exe), which is required for auto
 ### Files Checked (41 total)
 
 **Location: .github/scripts/**
+
 - wayback_audit.py
 - validate_content.py
 - update_manifest.py
@@ -50,10 +52,13 @@ This system appears to lack PowerShell 6+ (pwsh.exe), which is required for auto
 - audit_repo_payloads.py — deleted 2026-07-24 (PR #854)
 
 **Location: .github/swarm/tools/**
+
 - state_manager.py
 
 ### Manual Verification Results
+
 Based on syntax review of sampled files:
+
 - All files appear to have valid Python 3 syntax
 - Proper use of type hints and imports observed
 - No obvious syntax errors detected in reviewed sections
@@ -61,6 +66,7 @@ Based on syntax review of sampled files:
 ### How to Run Full Compilation Check
 
 Execute in PowerShell or command prompt:
+
 ```powershell
 cd "C:\Users\loganf\Documents\IDAHO-VAULT"
 python -m py_compile .github\scripts\wayback_audit.py
@@ -69,6 +75,7 @@ python -m py_compile .github\scripts\validate_content.py
 ```
 
 Or use the provided script:
+
 ```powershell
 python C:\Users\loganf\final_test_runner.py
 ```
@@ -78,6 +85,7 @@ python C:\Users\loganf\final_test_runner.py
 ### Test Files (6 total)
 
 All test files are located in `tests/` directory:
+
 1. test_topology_census.py
 2. test_stale_bot_prs.py
 3. test_review_feedback_loop.py
@@ -98,6 +106,7 @@ python -m pytest tests\test_daily_rollover.py -v
 ```
 
 Or run all at once:
+
 ```powershell
 python -m pytest tests\test_topology_census.py tests\test_stale_bot_prs.py tests\test_review_feedback_loop.py tests\test_metadata_survey.py tests\test_backfill_daily_notes.py tests\test_daily_rollover.py -v
 ```
@@ -105,29 +114,36 @@ python -m pytest tests\test_topology_census.py tests\test_stale_bot_prs.py tests
 ## Scripts Provided
 
 ### 1. C:\Users\loganf\final_test_runner.py
+
 Comprehensive test runner that:
+
 - Checks all 41 Python files for syntax errors using `compile()`
 - Runs pytest on all 6 test files
 - Provides detailed error output for failures
 - Generates summary report
 
 ### 2. C:\Users\loganf\syntax_validator.py
+
 Syntax-only validator (faster):
+
 - Checks all 41 Python files for syntax errors
 - Does not run tests
 - Useful for quick syntax verification
 
 ### 3. C:\Users\loganf\run_tests.bat
+
 Batch file wrapper that executes the full test runner
 
 ## Next Steps
 
 1. **Install PowerShell 7+** (optional, for automated execution):
+
    ```powershell
    winget install Microsoft.PowerShell
    ```
 
 2. **Execute test runner** in PowerShell or cmd.exe:
+
    ```powershell
    python C:\Users\loganf\final_test_runner.py
    ```

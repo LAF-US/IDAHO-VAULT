@@ -5,4 +5,4 @@ related:
 - Owyhee County
 authority: LOGAN
 ---
-Homedale, Owyhee County 
+Homedale, Owyhee County

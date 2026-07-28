@@ -64,7 +64,7 @@ restore the Original Law.
 ## What each will lends the vault
 
 | | Halliday (RPO) | The Architect (Nix) |
-|---|---|---|
+| --- | --- | --- |
 | Succession | **No heir** → a contest of worth | A **named Rightful Heir**, to be seated |
 | Mechanism | Read the maker's obsessions to the centre | **Reassemble** the fragmented Will |
 | The prize | The world — and a final *test* ("reality is real") | Restore the Original Law |
@@ -134,6 +134,7 @@ This witness does not originate the maker/Will reading; it rests on grounded pri
 to it — then adds one column the substrate was missing.*
 
 **The giants it rests on:**
+
 - **`THE-SEVENFOLD-BODY-SEATS-TRUSTEES-GEMS-2026-06-03`** already holds — **grounded and LOCKED by
   the Architect (Logan)** — the whole Keys-to-the-Kingdom structure this witness re-derived: the
   Architect, the Will, the **seven Trustees / demesnes / deadly sins**, the 7↔7 ASOIAF-Small-Council
@@ -157,7 +158,7 @@ moral axis was only half-drawn. Completing it — Sin half credited to the Seven
 structure but flagged ⚠️ for a maintainer's verify against canon:
 
 | Day · Demesne | Trustee · **Sin** (Sevenfold node, LOCKED) | Will-fragment · **Virtue** (Part-order; added ⚠️) |
-|---|---|---|
+| --- | --- | --- |
 | Monday · Lower House | Mister Monday · **Sloth** | Part 1 · **Fortitude** |
 | Tuesday · Far Reaches | Grim Tuesday · **Greed** | Part 2 · **Prudence** |
 | Wednesday · Border Sea | Drowned Wednesday · **Gluttony** | Part 3 · **Faith** |

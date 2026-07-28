@@ -14,7 +14,7 @@ Use Codex on Windows with the native [Codex app](https://developers.openai.com/c
 
 Work across projects, run parallel agent threads, and review results in one place with the native Windows app.
 
-](https://developers.openai.com/codex/app/windows)
+](<https://developers.openai.com/codex/app/windows>)
 
 Depending on the surface and your setup, Codex can run on Windows in three practical ways:
 
@@ -101,10 +101,12 @@ This opens a WSL remote window, installs the VS Code Server if needed, and ensur
 - Look for the green status bar that shows `WSL: <distro>`.
 - Integrated terminals should display Linux paths (such as `/home/...`) instead of `C:\`.
 - You can verify with:
-	```bash
-	echo $WSL_DISTRO_NAME
-	```
-	This prints your distribution name.
+
+ ```bash
+ echo $WSL_DISTRO_NAME
+ ```
+
+ This prints your distribution name.
 
 If you don’t see “WSL: …” in the status bar, press `Ctrl+Shift+P`, pick `WSL: Reopen Folder in WSL`, and keep your repository under `/home/...` (not `C:\`) for best performance.
 
@@ -140,11 +142,13 @@ codex
 ### Working on code inside WSL
 
 - Working in Windows-mounted paths like `/mnt/c/…` can be slower than working in Windows-native paths. Keep your repositories under your Linux home directory (like `~/code/my-app`) for faster I/O and fewer symlink and permission issues:
-	```bash
-	mkdir -p ~/code && cd ~/code
-	git clone https://github.com/your/repo.git
-	cd repo
-	```
+
+ ```bash
+ mkdir -p ~/code && cd ~/code
+ git clone https://github.com/your/repo.git
+ cd repo
+ ```
+
 - If you need Windows access to files, they’re under `\wsl$\Ubuntu\home&lt;user>` in Explorer.
 
 ## Troubleshooting and FAQ

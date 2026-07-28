@@ -43,11 +43,7 @@ related:
 
 ---
 
-
-
 # PLUGINS-TRIAGE-2026-04-06
-
-
 
 **Triage by:** Claude Code (The Abhorsen)
 
@@ -55,31 +51,17 @@ related:
 
 **Status:** Conference call agenda staged — awaiting Logan's decisions
 
-
-
 ---
-
-
 
 ## Why This Document Exists
 
-
-
 Multiple agents have touched `.obsidian/` across several sessions. A critical discrepancy emerged during research: **LEVELSET-CURRENT reports 49 community plugins enabled on desktop, but the committed `community-plugins.json` contains only 12 entries.** Four plugin decisions have been deferred in the UNRESOLVED table without a resolution path.
-
-
 
 This document consolidates all agented plugin documentation, surfaces the discrepancy, and structures a levelset session for Logan to run through four decision checkpoints.
 
-
-
 ---
 
-
-
 ## Agented Documentation — Sources
-
-
 
 | Document | Author | Date | What It Says |
 
@@ -101,15 +83,9 @@ This document consolidates all agented plugin documentation, surfaces the discre
 
 | `PROTOCOL-CONFERENCE-CALL` (Copilot/Clerk) | GitHub Copilot (The Clerk) | 2026-04-06 | **Local-only** — exists on Logan's desktop via Obsidian Sync, not yet committed to git. Proposes conference call record format and JFAC coverage example. Awaiting Logan's review and adoption. |
 
-
-
 ---
 
-
-
 ## Critical Discrepancy
-
-
 
 | Measure | Value |
 
@@ -121,29 +97,17 @@ This document consolidates all agented plugin documentation, surfaces the discre
 
 | **Delta** | 37 missing |
 
-
-
 **Root cause (likely):** The Codex UTF-16 incident on 2026-04-05 corrupted `community-plugins.json`. Codex "restored to HEAD (49 enabled)" — but the HEAD it restored to was the `ec09efd0` commit, which itself only had 12 entries (the +5 plugins from that session were added after the pre-session baseline). The Obsidian Sync live state on Logan's Windows desktop reflects the correct count; the git record does not.
-
-
 
 **This is the gate:** No further plugin commits from any agent until Logan confirms the authoritative count and provides the correct file.
 
-
-
 ---
 
-
-
 ## The Four Decision Checkpoints
-
-
 
 ### Checkpoint 1 — Git / Live Sync (REQUIRED FIRST)
 
 **Gate: blocks all other plugin work**
-
-
 
 | | |
 
@@ -157,17 +121,11 @@ This document consolidates all agented plugin documentation, surfaces the discre
 
 | **Logan's answer** | _(fill in)_ |
 
-
-
 ---
-
-
 
 ### Checkpoint 2 — Breadcrumbs Frontmatter Config (Medium)
 
 **Can do this session; Claude implements immediately after Logan answers**
-
-
 
 | | |
 
@@ -181,15 +139,9 @@ This document consolidates all agented plugin documentation, surfaces the discre
 
 | **Logan's answer** | _(fill in)_ |
 
-
-
 ---
 
-
-
 ### Checkpoint 3 — Bulk Uninstall 91 Dormant Plugins (Low / can defer)
-
-
 
 | | |
 
@@ -205,15 +157,9 @@ This document consolidates all agented plugin documentation, surfaces the discre
 
 | **Logan's answer** | _(fill in)_ |
 
-
-
 ---
 
-
-
 ### Checkpoint 4 — LLM Plugin Sprawl (Low / can defer)
-
-
 
 | | |
 
@@ -227,15 +173,9 @@ This document consolidates all agented plugin documentation, surfaces the discre
 
 | **Logan's answer** | _(fill in — or defer)_ |
 
-
-
 ---
 
-
-
 ## Triage Route
-
-
 
 ```
 
@@ -283,15 +223,9 @@ START
 
 ```
 
-
-
 ---
 
-
-
 ## On PROTOCOL-CONFERENCE-CALL (Copilot / The Clerk)
-
-
 
 The Clerk's `PROTOCOL-CONFERENCE-CALL` document is visible in Obsidian's unlinked mentions panel (2026-04-06 daily note, right panel) but is not yet committed to git. It proposes:
 
@@ -299,21 +233,13 @@ The Clerk's `PROTOCOL-CONFERENCE-CALL` document is visible in Obsidian's unlinke
 
 - Example path: `!/CONFERENCE-RECORD-2026-04-06-JFAC-COVERAGE.md`
 
-- Status: *Proposed by GitHub Copilot (The Clerk). Awaiting Logan's review and adoption.*
-
-
+- Status: _Proposed by GitHub Copilot (The Clerk). Awaiting Logan's review and adoption._
 
 **Logan's decision needed:** Adopt the Clerk's conference call record format (commit and ratify), defer, or discard. If adopted, Claude can commit it to `!/` on this branch per TRIPLEX (Claude owns git commits; content in `!/` is Gemini's lane, but structural format docs are Claude-lane).
 
-
-
 ---
 
-
-
 ## Post-Triage Deliverables (Claude executes after decisions)
-
-
 
 | Deliverable | Trigger | File |
 
@@ -333,15 +259,9 @@ The Clerk's `PROTOCOL-CONFERENCE-CALL` document is visible in Obsidian's unlinke
 
 | PROTOCOL-CONFERENCE-CALL commit | If adopted | `!/CONFERENCE-RECORD-FORMAT.md` or per Clerk's proposed path |
 
-
-
 ---
 
-
-
 ## Verification Checklist (post-session)
-
-
 
 - [ ] `community-plugins.json` count matches LEVELSET-CURRENT reported count
 
@@ -355,13 +275,8 @@ The Clerk's `PROTOCOL-CONFERENCE-CALL` document is visible in Obsidian's unlinke
 
 - [ ] If Clerk's protocol adopted: document committed under Logan's ratification
 
-
-
 ---
 
+_Authored by Claude Code (The Abhorsen) on `claude/obsidian-plugins-triage-YDJ6Z` — 2026-04-07_
 
-
-*Authored by Claude Code (The Abhorsen) on `claude/obsidian-plugins-triage-YDJ6Z` — 2026-04-07*
-
-*The vault is the record. Logan decides.*
-
+_The vault is the record. Logan decides._

@@ -57,7 +57,7 @@ throne — here, the face is a footnote.
 Three things a citation can actually be:
 
 | | **Attesting** | **Adjacent** | **Absent** |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | The source… | says the specific claim | shares the topic/keywords, but does **not** say the claim | does not exist |
 | This is… | provenance | the **trap** — looks like provenance, isn't | an honest gap |
 | Mark it | grounded | **`*`** (not support) | **`*`** |

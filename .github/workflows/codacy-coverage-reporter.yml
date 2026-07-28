@@ -58,9 +58,26 @@ jobs:
         if: ${{ !cancelled() && steps.tests.conclusion != 'skipped' }}
         run: uv run coverage xml
 
+      # Uploads with a pinned, checksum-verified reporter binary instead of
+      # codacy/codacy-coverage-reporter-action: that action pipes an
+      # unpinned `master` get.sh from raw.githubusercontent.com straight
+      # into bash at runtime (twice), a supply-chain hole the org Actions
+      # pin policy cannot see because it sits inside the composite action's
+      # run step rather than a `uses:` reference. Same remediation pattern
+      # as codacy.yml. The expected SHA-512 is Codacy's own published
+      # checksum for reporter 14.1.3, as printed by get.sh in this repo's
+      # CI logs (run 30056985325). The token travels only as the
+      # CODACY_PROJECT_TOKEN env var, which the reporter reads natively.
+      # A single report needs no --partial/final pair.
       - name: Upload coverage to Codacy
         if: ${{ !cancelled() && steps.tests.conclusion != 'skipped' }}
-        uses: codacy/codacy-coverage-reporter-action@89d6c85cfafaec52c72b6c5e8b2878d33104c699 # v1.3.0
-        with:
-          project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
-          coverage-reports: coverage.xml
+        env:
+          CODACY_PROJECT_TOKEN: ${{ secrets.CODACY_PROJECT_TOKEN }}
+          REPORTER_VERSION: "14.1.3"
+          REPORTER_SHA512: "73a6c93fc5db509fd0423d6e545759c3f61d8360ee12054e32a9277daab6add0da6c6639248f6ed6c0042366440293ebc0b6144325aef52c5d3d4b230d65eb17"
+        shell: bash
+        run: |
+          curl -fsSL "https://artifacts.codacy.com/bin/codacy-coverage-reporter/${REPORTER_VERSION}/codacy-coverage-reporter-linux" -o codacy-coverage-reporter
+          echo "${REPORTER_SHA512}  codacy-coverage-reporter" | sha512sum -c -
+          chmod +x codacy-coverage-reporter
+          ./codacy-coverage-reporter report -r coverage.xml

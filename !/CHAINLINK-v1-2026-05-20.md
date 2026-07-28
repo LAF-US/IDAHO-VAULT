@@ -53,7 +53,7 @@ The cycle is the unit. CHAINFIRE without CHAINLINK is permanent damage.
 CHAINLINK without a prior CHAINFIRE burn is junk relinking on top of drift.
 
 | Phase | Protocol | Direction | Executor |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Burn | CHAINFIRE | Subtractive | `.github/scripts/chainfire.py` |
 | Survey | CHAINLINK / Crawler | Additive (evidence) | SPACE RACE deep-space vehicle |
 | Propose | CHAINLINK / Linker | Additive (staged) | SPACE RACE surface vehicle |
