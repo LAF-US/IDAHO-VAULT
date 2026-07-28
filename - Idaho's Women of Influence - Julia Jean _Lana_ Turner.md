@@ -4,7 +4,7 @@ author:
 published:
 created: 2026-07-20
 ---
-Born in Wallace, Idaho as the only daugher to teenaged parents, Lana moved to San Francisco when her family fell on hard times. Soon after moving, her parents separated and her father was killed in an unsolved murder-robbery in 1930. Her mother developed health problems and moved, with 10 year old Lana, to Los Angeles in 1931. Her mother was very poor during this time, and worked 80 hours a week as a beautician to support their small family.  
+Born in Wallace, [[Idaho]] as the only daugher to teenaged parents, Lana moved to San Francisco when her family fell on hard times. Soon after moving, her parents separated and her father was killed in an unsolved murder-robbery in 1930. Her mother developed health problems and moved, with 10 year old Lana, to Los Angeles in 1931. Her mother was very poor during this time, and worked 80 hours a week as a beautician to support their small family.  
   
 Lana Turner's discovery in a Hollywood drug store is show-business legend. At 16, Lana was skipping class to buy a soda at a malt shop when she was spotted by William R. Wilkerson, publisher of the Hollywood Reporter. Wilkerson referred her to the talent agent Zeppo Marx, who's agency immediately signed her on and cast her in her first film, *They Won't Forget* in 1937. It was in a scene in *They Won't Forget* that Lana earned the nickname "the Sweater Girl," which Lana detested throughout her career. In 1937, she signed a contract with Metro-Goldwin-Mayer for $100 a week and graduated from high school between filming. Her next starring role was opposite Mickey Rooney in the film *Love Finds Andy Hardy* in 1938.  
   
@@ -28,3 +28,5 @@ Julia Jean "Lana" Turner, Idaho's Women of Influence, Digital Collections, Unive
 Record Contributor:
 
 Shonda Reynolds
+
+#idaho

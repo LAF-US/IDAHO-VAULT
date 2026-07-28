@@ -7,7 +7,7 @@ published: 2026-07-22
 created: 2026-07-22
 description: "INSIDE: See what your district spends per student and why funding varies so widely across the state."
 ---
-Idaho’s average per-pupil spending increased by about $600 to $13,666 in the 2025-26 school year, state numbers show.
+[[Idaho]]’s average per-pupil spending increased by about $600 to $13,666 in the 2025-26 school year, state numbers show.
 
 The Gem State [has ranked last in per-pupil spending in recent years](https://www.idahoednews.org/top-news/idaho-ranks-last-in-per-pupil-spending-again/), according to data released earlier this year from the National Center for Education Statistics.
 
@@ -78,3 +78,5 @@ See what your district or charter spends below.
 | Lake Pend Oreille | 3,759 | $14,266 |
 
 <iframe src="https://www.scribd.com/embeds/1065006794/content?start_page=1&amp;view_mode&amp;access_key=key-40HkcWir1SZTDYL38Cpq" width="100%" height="500" frameborder="0"></iframe>
+
+#idaho

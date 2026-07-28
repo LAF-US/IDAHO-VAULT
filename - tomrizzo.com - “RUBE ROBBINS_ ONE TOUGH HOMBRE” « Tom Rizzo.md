@@ -18,7 +18,7 @@ Robbins finally caught up with outlaw **Charley Chambers** in August 1882 in Por
 
 Born in Maine, he left home at **age 17** following a quarrel with his father and briefly made his way to the California gold fields.
 
-In his mid-20s, Robbins moved to **Idaho** after discovering **gold** in the Salmon River area.
+In his mid-20s, Robbins moved to **[[Idaho]]** after discovering **gold** in the Salmon River area.
 
 He began working as a lawman in **1864** when Boise County Sheriff Sumner Pinkham appointed him a **deputy**. When Pinkham lost the next election, Robbins joined a stagecoach line and rode shotgun.
 
@@ -47,3 +47,5 @@ The well-respected lawman, considered the toughest in Idaho, **died on May 1, 19
 At the time, he was still on the job, working as a **traveling guard** for prisoners.
 
 \_\_\_\_\_\_\_
+
+#idaho
