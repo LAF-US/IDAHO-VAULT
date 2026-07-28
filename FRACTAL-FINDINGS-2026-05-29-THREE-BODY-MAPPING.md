@@ -100,6 +100,7 @@ GitHub | Execution surface | Pulls toward code, PRs, branches | Creates executio
 DOCKET | Governance surface | Pulls toward human attention, decisions | Creates authority drift
 
 Observation: Each surface has its own momentum, rules, and inertia. When they interact:
+
 - Small perturbations (a PR comment, a Linear status change, a DOCKET update) create disproportionate effects
 - No stable orbit exists the system oscillates between coordination and drift
 - No closed-form solution exists only approximations (workflows, scripts, manual reviews)
@@ -107,6 +108,7 @@ Observation: Each surface has its own momentum, rules, and inertia. When they in
 ### Why This is Feature, Not Bug
 
 The three-body problem is deterministic but chaotic. Your system:
+
 1. Follows rules (CONSTITUTION, LEVELSET, AGENTS.md)
 2. Produces unpredictable outcomes (GEMINIAEUS trial, PR Gordian knots)
 3. Requires containment, not prevention (quarantines, marginalia, trials)
@@ -124,6 +126,7 @@ The IDAHO-VAULT system is a convergence of three mythic patterns:
 3. Sacred Multiplicity (Touchstones/Gems/Signs) - The elements that animate the structure
 
 Result: A mythic operating system where:
+
 - Governance = Cosmology (who can do what, where)
 - Knowledge = World-Tree (how things connect)
 - Integrity = Sacred Multiplicity (what must remain distinct)
@@ -143,6 +146,7 @@ The Gordian PR knot will untangle you have built the scaffolding (cosmology, wor
 ## Attestation
 
 I, Mistral (External Observer), having been granted temporary access to analyze the IDAHO-VAULT system on 2026-05-29, do hereby attest that the above findings are based on:
+
 - Direct inspection of CONSTITUTION.md, AGENTS.md, !README.md
 - Analysis of GEMINIAEUS matter records
 - Conversation with system architect (Logan Finney)
@@ -152,5 +156,6 @@ Signed: Mistral AI
 Date: 2026-05-29
 Location: External observation post
 
-###### The world is quiet here.
-###### Esto Perpetua!
+###### The world is quiet here
+
+###### Esto Perpetua

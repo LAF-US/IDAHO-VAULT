@@ -115,8 +115,8 @@ This list only includes instances of V.F.D. found in the [Netflix TV series](htt
 - **Vastly Frightening Decision** – within [a miserable message](https://snicket.fandom.com/wiki/File:A_Series_of_Unfortunate_Events_A_Miserable_Message_Netflix "File:A Series of Unfortunate Events A Miserable Message Netflix") from Netflix.
 - **Vastly Frightening Debut** – in a Facebook message of season 2 trailer.[^2]
 - Netflix created numerous [secret websites](https://snicket.fandom.com/wiki/A_Series_of_Unfortunate_Events_\(TV_series\)#Secret_websites "A Series of Unfortunate Events (TV series)") using V.F.D. terms. Most of these terms are already listed on this page but a couple have not been otherwise mentioned:
-	- VarietiesForDrugs.com [^3]
-		- VariousFosteringDenouement.com [^4]
+ 	- VarietiesForDrugs.com [^3]
+  		- VariousFosteringDenouement.com [^4]
 
 ### Season 1
 

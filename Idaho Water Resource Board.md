@@ -4,5 +4,5 @@ related:
 - water
 authority: LOGAN
 ---
-Department of Water Resources 
-water 
+Department of Water Resources
+water

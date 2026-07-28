@@ -4,4 +4,4 @@ related:
 - Patriot Front
 authority: LOGAN
 ---
-Patriot Front member, Alabama resident 
+Patriot Front member, Alabama resident

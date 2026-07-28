@@ -37,19 +37,20 @@ In this step, you'll download a sample plugin to the `plugins` directory in your
 The sample plugin you'll use in this tutorial is available in a [GitHub repository](https://github.com/obsidianmd/obsidian-sample-plugin).
 
 1. Open a terminal window and change the project directory to the `plugins` directory.
-	```bash
-	cd path/to/vault
-	mkdir .obsidian/plugins
-	cd .obsidian/plugins
-	```
+ ```bash
+ cd path/to/vault
+ mkdir .obsidian/plugins
+ cd .obsidian/plugins
+ ```
+
 2. Clone the sample plugin using Git.
-	```bash
-	git clone https://github.com/obsidianmd/obsidian-sample-plugin.git
-	```
+ ```bash
+ git clone https://github.com/obsidianmd/obsidian-sample-plugin.git
+ ```
 
 > [!tip] GitHub template repository
 > The repository for the sample plugin is a GitHub template repository, which means you can create your own repository from the sample plugin. To learn how, refer to [Creating a repository from a template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template#creating-a-repository-from-a-template).
-> 
+>
 > Remember to use the URL of your own repository when cloning the sample plugin.
 
 ## Step 2: Build the plugin
@@ -57,17 +58,19 @@ The sample plugin you'll use in this tutorial is available in a [GitHub reposito
 In this step, you'll compile the sample plugin so that Obsidian can load it.
 
 1. Navigate to the plugin directory.
-	```bash
-	cd obsidian-sample-plugin
-	```
+ ```bash
+ cd obsidian-sample-plugin
+ ```
+
 2. Install dependencies.
-	```bash
-	npm install
-	```
+ ```bash
+ npm install
+ ```
+
 3. Compile the source code. The following command keeps running in the terminal and rebuilds the plugin when you modify the source code.
-	```bash
-	npm run dev
-	```
+ ```bash
+ npm run dev
+ ```
 
 Notice that the plugin directory now has a `main.js` file that contains a compiled version of the plugin.
 
@@ -103,15 +106,17 @@ To let the user interact with your plugin, add a *ribbon icon* that greets the u
 1. Open `main.ts` in your code editor.
 2. Rename the plugin class from `MyPlugin` to `HelloWorldPlugin`.
 3. Import `Notice` from the `obsidian` package (if it hasn't been imported already).
-	```ts
-	import { Notice, Plugin } from 'obsidian';
-	```
+ ```ts
+ import { Notice, Plugin } from 'obsidian';
+ ```
+
 4. In the `onload()` method, add the following code:
-	```ts
-	this.addRibbonIcon('dice', 'Greet', () => {
-	  new Notice('Hello, world!');
-	});
-	```
+ ```ts
+ this.addRibbonIcon('dice', 'Greet', () => {
+   new Notice('Hello, world!');
+ });
+ ```
+
 5. In the **Command palette**, select **Reload app without saving** to reload the plugin.
 
 You can now see a dice icon in the ribbon on the left side of the Obsidian window. Select it to display a message in the upper-right corner.

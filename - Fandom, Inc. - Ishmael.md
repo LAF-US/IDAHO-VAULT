@@ -7,7 +7,7 @@ created: 2026-04-14
 ---
 | “ | *I won't force you.* | ” |
 | --- | --- | --- |
-|  | — Ishmael's catchphrase |
+| | — Ishmael's catchphrase |
 
 **Ishmael**, who prefers the nickname **Ish**, is a major character in *[The End](https://snicket.fandom.com/wiki/The_End "The End")*, and also the main antagonist of the novel.
 
@@ -92,8 +92,8 @@ He is portrayed by [Peter MacNicol](https://snicket.fandom.com/wiki/Peter_MacNic
 - *"I've read more of the world's treacherous history than almost anyone, and as one of my colleagues once said, this history is indeed little more than the register of crimes, follies, and misfortunes of mankind."*
 - *"I've had enough of your lies. I'm going to do what I should have done years ago, Olaf, and slaughter you. I'm going to fire this harpoon gun right into that bulging belly of yours!"* (before shooting Count Olaf and unintentionally releasing the Medusiod Mycellium)
 - Ishmael: *"Your mother is right, Friday. You should respect your parent's wishes. It's more than the Baudelaires ever did."*  
-	Violet: *"We are respecting our parents' wishes. They didn't want to shelter us from the world's treacheries. They wanted us to survive them."*  
-	Ishmael: *"What do your parents know about surviving?"* (before pushing the boat off the island)
+ Violet: *"We are respecting our parents' wishes. They didn't want to shelter us from the world's treacheries. They wanted us to survive them."*  
+ Ishmael: *"What do your parents know about surviving?"* (before pushing the boat off the island)
 
 ### TV series
 
@@ -104,7 +104,7 @@ He is portrayed by [Peter MacNicol](https://snicket.fandom.com/wiki/Peter_MacNic
 - Ishmael regularly asks the islanders to refer to him as Ish, although Count Olaf is the only person that ever calls him that, near the end of *The End*. This is an allusion to the famous opening line of *Moby Dick*, "Call me Ishmael". Ironically, this is the only thing that Ishmael directly tells anyone to do, yet the only thing the islanders do not obey of him.
 - In " [The Wide Window: Part Two](https://snicket.fandom.com/wiki/The_Wide_Window:_Pa***REMOVED***Two "The Wide Window: Part Two") ", a [taxi driver](https://snicket.fandom.com/wiki/Ishmael_\(Taxi_Driver\) "Ishmael (Taxi Driver)") says "Call me Ishmael", which may be a dual reference to both *Moby Dick* and *The End*. Some fans used to believe that the taxi-driver is the same person as Ishmael from the island.[^1] However, this was proven incorrect since the characters were portrayed by two different actors. Thus, the two Ismaels are two different characters in the TV universe.
 - Ishmael has been theorized to be some parody of the stereotypical "God", who is often depicted as an old man sitting in a chair in addition to acting as a protector that enacts rules for people to follow. The thirteenth book depicts Ishmael as having a thick and wild beard. Likewise, many people envision God as having such a beard. The aforementioned deity in the Bible commanded Adam and Eve not to eat the forbidden fruit of knowledge, similar to how Ishmael attempts to keep the islanders nescient by persuading them not to learn how to read, as well as trying to forbid the islanders from eating the horseradish apples. Ishmael is also a Biblical name that means "God will hear" which may allude to his role.
-	- This symbolism is what compelled the writers of the TV series to desire to make Ishmael the founder of V.F.D. as they wanted to portray him as a "creator", although writer [Joe Tracz](https://snicket.fandom.com/wiki/Joe_Tracz "Joe Tracz") regrets omitting a line spoken by Ishmael about how V.F.D. has had different incarnations throughout history. Furthermore, his previous post as the principal of Prufrock is a result of the writers wish to throw some shade at the "good wizard trope" as seen with Albus Dumbledore in *Harry Potter* and Gandalf in *Lord of the Rings*.[\[1\]](https://unfortunatetv.tumblr.com/post/181814749696/heres-what-joe-tracz-had-to-say-about-ishmaels)
+ 	- This symbolism is what compelled the writers of the TV series to desire to make Ishmael the founder of V.F.D. as they wanted to portray him as a "creator", although writer [Joe Tracz](https://snicket.fandom.com/wiki/Joe_Tracz "Joe Tracz") regrets omitting a line spoken by Ishmael about how V.F.D. has had different incarnations throughout history. Furthermore, his previous post as the principal of Prufrock is a result of the writers wish to throw some shade at the "good wizard trope" as seen with Albus Dumbledore in *Harry Potter* and Gandalf in *Lord of the Rings*.[\[1\]](https://unfortunatetv.tumblr.com/post/181814749696/heres-what-joe-tracz-had-to-say-about-ishmaels)
 - In the TV series, Ishmael wields a decorated Shepherd's crook. While there are actual sheep on the island, one may interpret it as Ishmael acting as a figurative shepherd for the islanders that behave as such thanks to their herd mentality. Sheep are also mentioned frequently in the Bible, which reinforces the Biblical themes included in *The End*.
 - In the TV series, it is mentioned that Ishmael was the principal of Prufrock Prep. However, since Vice Principal Nero is still known as a vice principal, this would mean that Ishmael is still technically the principal of Prufrock.
 
@@ -112,7 +112,7 @@ He is portrayed by [Peter MacNicol](https://snicket.fandom.com/wiki/Peter_MacNic
 
 - *[The End](https://snicket.fandom.com/wiki/The_End "The End")*
 - [*A Series of Unfortunate Events* (TV series)](https://snicket.fandom.com/wiki/A_Series_of_Unfortunate_Events_\(TV_series\) "A Series of Unfortunate Events (TV series)")
-	- [The End (episode)](https://snicket.fandom.com/wiki/The_End_\(episode\) "The End (episode)")
+ 	- [The End (episode)](https://snicket.fandom.com/wiki/The_End_\(episode\) "The End (episode)")
 
 ## Side notes
 

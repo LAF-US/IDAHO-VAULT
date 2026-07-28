@@ -4,4 +4,4 @@ related:
 - Butte County
 authority: LOGAN
 ---
-Arco, Butte County 
+Arco, Butte County

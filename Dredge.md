@@ -79,6 +79,7 @@ Exact paths opened (read):
 **~M rough count of non-.md/.txt files seen but not read from the root listing alone:** approximately 80–100 machine files visible at the root (`.ps1`, `.py`, `.json`, `.sh`, `.yaml`, `.yml`, `.cfg`, `.csv`, `.sig`, `.bat`, `.cmd`, `.js`, `.ts`, `.toml`, `.ics`, `.xml`, `.pdf`, `.patch`, etc.) — plus hundreds more inside the `.github/` tree and the hundreds of `.dotfolder/` agent configuration directories.
 
 Machinery seen but NOT opened:
+
 - `.github/scripts/topology_census.py` (31 KB — vault graph analysis)
 - `.github/scripts/review_feedback_loop.py` (94 KB — largest script, AI-driven PR review automation)
 - `.github/scripts/metadata_survey.py`, `normalize_tags.py`, `classify_paths.py`

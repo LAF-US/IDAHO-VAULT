@@ -21,10 +21,10 @@ Codex supports MCP servers in both the CLI and the IDE extension.
 ## Supported MCP features
 
 - **STDIO servers**: Servers that run as a local process (started by a command).
-	- Environment variables
+ 	- Environment variables
 - **Streamable HTTP servers**: Servers that you access at an address.
-	- Bearer token authentication
-		- OAuth authentication (run `codex mcp login <server-name>` for servers that support OAuth)
+ 	- Bearer token authentication
+  		- OAuth authentication (run `codex mcp login <server-name>` for servers that support OAuth)
 
 ## Connect Codex to an MCP server
 
@@ -105,17 +105,20 @@ args = ["-y", "@upstash/context7-mcp"]
 [mcp_servers.context7.env]
 MY_ENV_VAR = "MY_ENV_VALUE"
 ```
+
 ```toml
 # Optional MCP OAuth callback overrides (used by \`codex mcp login\`)
 mcp_oauth_callback_port = 5555
 mcp_oauth_callback_url = "https://devbox.example.internal/callback"
 ```
+
 ```toml
 [mcp_servers.figma]
 url = "https://mcp.figma.com/mcp"
 bearer_token_env_var = "FIGMA_OAUTH_TOKEN"
 http_headers = { "X-Figma-Region" = "us-east-1" }
 ```
+
 ```toml
 [mcp_servers.chrome_devtools]
 url = "http://localhost:3000/mcp"

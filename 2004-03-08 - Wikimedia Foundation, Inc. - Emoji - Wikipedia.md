@@ -216,7 +216,7 @@ In 2016, [Firefox](https://en.wikipedia.org/wiki/Firefox "Firefox") 50 added in-
 Unicode defines [variation sequences](https://en.wikipedia.org/wiki/Variant_form_\(Unicode\) "Variant form (Unicode)") for many of its emoji to indicate their desired presentation.
 
 > Emoji characters can have two main kinds of presentation:
-> 
+>
 > - an *emoji presentation*, with colorful and perhaps whimsical shapes, even animated
 > - a *text presentation*, such as black & white
 
@@ -230,20 +230,20 @@ Specifying the desired presentation is done by following the base emoji with eit
 | Base code point | ℹ | ⌛ | ⚠ | ✒ | ❤ | 🀄 | 🈚 |
 | Base+VS15 (text) | ℹ︎ | ⌛︎ | ⚠︎ | ✒︎ | ❤︎ | 🀄︎ | 🈚︎ |
 | Base+VS16 (emoji) | ℹ️ | ⌛️ | ⚠️ | ✒️ | ❤️ | 🀄️ | 🈚️ |
-| Twemoji image |  |  |  |  |  |  |  |
+| Twemoji image | | | | | | | |
 
 ### Skin color
 
 Five symbol modifier characters were added with Unicode 8.0 to provide a range of skin tones for human emoji. These modifiers are U+1F3FB–U+1F3FF. They are based on the [Fitzpatrick scale](https://en.wikipedia.org/wiki/Fitzpatrick_scale "Fitzpatrick scale") for classifying human skin color. Human emoji that are not followed by one of these five modifiers should be displayed in a generic, non-realistic skin tone, such as bright yellow (■), blue (■), or gray (■).[^69] Human emoji that are followed directly by these characters should take on their skin color,[^175] as shown in the following table displaying skin tone variations of U+1F9D1 🧑 ADULT:
 
-|  | Text | Image |
+| | Text | Image |
 | --- | --- | --- |
-| Without modifier | 🧑 |  |
-| U+1F3FB 🏻 EMOJI MODIFIER FITZPATRICK TYPE-1-2 | 🧑🏻 |  |
-| U+1F3FC 🏼 EMOJI MODIFIER FITZPATRICK TYPE-3 | 🧑🏼 |  |
-| U+1F3FD 🏽 EMOJI MODIFIER FITZPATRICK TYPE-4 | 🧑🏽 |  |
-| U+1F3FE 🏾 EMOJI MODIFIER FITZPATRICK TYPE-5 | 🧑🏾 |  |
-| U+1F3FF 🏿 EMOJI MODIFIER FITZPATRICK TYPE-6 | 🧑🏿 |  |
+| Without modifier | 🧑 | |
+| U+1F3FB 🏻 EMOJI MODIFIER FITZPATRICK TYPE-1-2 | 🧑🏻 | |
+| U+1F3FC 🏼 EMOJI MODIFIER FITZPATRICK TYPE-3 | 🧑🏼 | |
+| U+1F3FD 🏽 EMOJI MODIFIER FITZPATRICK TYPE-4 | 🧑🏽 | |
+| U+1F3FE 🏾 EMOJI MODIFIER FITZPATRICK TYPE-5 | 🧑🏾 | |
+| U+1F3FF 🏿 EMOJI MODIFIER FITZPATRICK TYPE-6 | 🧑🏿 | |
 
 Non-human emoji (like U+26FD ⛽ FUEL PUMP) are unaffected by the Fitzpatrick modifiers.[^176] As of Unicode version 17.0, Fitzpatrick modifiers can be used with 133 human emoji spread across seven blocks: [Dingbats](https://en.wikipedia.org/wiki/Dingbats_\(Unicode_block\)#Emoji_modifiers "Dingbats (Unicode block)"), [Emoticons](https://en.wikipedia.org/wiki/Emoticons_\(Unicode_block\)#Emoji_modifiers "Emoticons (Unicode block)"), [Miscellaneous Symbols](https://en.wikipedia.org/wiki/Miscellaneous_Symbols#Emoji_modifiers "Miscellaneous Symbols"), [Miscellaneous Symbols and Pictographs](https://en.wikipedia.org/wiki/Miscellaneous_Symbols_and_Pictographs#Emoji_modifiers "Miscellaneous Symbols and Pictographs"), [Supplemental Symbols and Pictographs](https://en.wikipedia.org/wiki/Supplemental_Symbols_and_Pictographs#Emoji_modifiers "Supplemental Symbols and Pictographs"), [Symbols and Pictographs Extended-A](https://en.wikipedia.org/wiki/Symbols_and_Pictographs_Extended-A#Emoji_modifiers "Symbols and Pictographs Extended-A"), and [Transport and Map Symbols](https://en.wikipedia.org/wiki/Transpo***REMOVED***and_Map_Symbols#Emoji_modifiers "Transport and Map Symbols").[^177]
 
@@ -471,7 +471,7 @@ Additional emoji can be found in the following Unicode blocks: [Arrows](https://
 
 [^93]: Wang, Yanan (November 17, 2015). ["For first time ever, an emoji is crowned Oxford Dictionaries' Word of the Year"](https://www.washingtonpost.com/news/morning-mix/wp/2015/11/17/for-first-time-ever-an-emoji-is-crowned-oxford-dictionaries-word-of-the-year). *[The Washington Post](https://en.wikipedia.org/wiki/The_Washington_Post "The Washington Post")*. Retrieved January 20, 2016.
 
-[^94]: ["2015 Word of the Year is singular 'they'"](http://www.americandialect.org/2015-word-of-the-year-is-singular-they). *www.americandialect.org*. American Dialect Society. January 8, 2016. Retrieved October 19, 2017.
+[^94]: ["2015 Word of the Year is singular 'they'"](http://www.americandialect.org/2015-word-of-the-year-is-singular-they). *<www.americandialect.org>*. American Dialect Society. January 8, 2016. Retrieved October 19, 2017.
 
 [^95]: O'Neil, Lauren (April 22, 2015). ["Canadians top the world in smiling poop emoji use, report finds"](https://www.cbc.ca/news/trending/canadians-top-the-world-in-smiling-poop-emoji-use-report-finds-1.3043143). *[CBC News](https://en.wikipedia.org/wiki/CBC_News "CBC News")*. [Archived](https://web.archive.org/web/20241006110647/https://www.cbc.ca/news/trending/canadians-top-the-world-in-smiling-poop-emoji-use-report-finds-1.3043143) from the original on October 6, 2024. Retrieved January 31, 2025.
 
@@ -527,7 +527,7 @@ Additional emoji can be found in the following Unicode blocks: [Arrows](https://
 
 [^121]: Ibáñez, Álvaro (June 15, 2022). ["Un algoritmo que convierte texto a voz "con emoción y sentimiento" e imita a personajes y voces conocidas"](https://www.microsiervos.com/archivo/tecnologia/algoritmo-texto-voz-emocion-sentimiento.html) \[An algorithm that converts text to speech "with emotion and feeling" and imitates familiar characters and voices\]. *[Microsiervos](https://es.wikipedia.org/wiki/Microsiervos_\(blog\) "es:Microsiervos (blog)")* (in Spanish). [Archived](https://web.archive.org/web/20241212194934/https://www.microsiervos.com/archivo/tecnologia/algoritmo-texto-voz-emocion-sentimiento.html) from the original on December 12, 2024. Retrieved March 23, 2025.
 
-[^122]: ["Emoji Recently Added, v12.0"](https://www.unicode.org/emoji/charts-12.0/emoji-released.html). *www.unicode.org*. Retrieved November 16, 2020.
+[^122]: ["Emoji Recently Added, v12.0"](https://www.unicode.org/emoji/charts-12.0/emoji-released.html). *<www.unicode.org>*. Retrieved November 16, 2020.
 
 [^123]: Gharib, Malaka (February 8, 2019). ["Why Period Activists Think The 'Drop Of Blood' Emoji Is A Huge Win"](https://www.npr.org/sections/goatsandsoda/2019/02/08/692481425/why-period-activists-think-the-drop-of-blood-emoji-is-a-huge-win). *NPR*. Retrieved February 11, 2019.
 

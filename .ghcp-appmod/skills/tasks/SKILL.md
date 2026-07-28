@@ -26,7 +26,7 @@ Before generating tasks, verify:
 
    > `$KIT_ROOT` is provided by the calling agent.
 
-   - Bash example: `$KIT_ROOT/skills/scripts/bash/check-prerequisites.sh --json` 
+   - Bash example: `$KIT_ROOT/skills/scripts/bash/check-prerequisites.sh --json`
    - PowerShell example: `$KIT_ROOT/skills/scripts/powershell/check-prerequisites.ps1 -Json`
 
 2. **Load design documents**: Read from FEATURE_DIR if not already in memory:
@@ -64,6 +64,7 @@ Before generating tasks, verify:
    - Calculate coverage percentage
 
 6. **Validate Checkpoint**:
+
    ```
    CRITICAL ERRORS (must fix before proceeding):
    - Any plan item with status: "missing"
@@ -105,16 +106,18 @@ The tasks.md should be immediately executable - each task must be specific enoug
 Before generating tasks, check for applicable guidelines:
 
 1. **Scan `$KIT_ROOT/skills/guidelines/`** and `<workspace root>/.github/skills/guidelines/` for matching technology patterns from plan.md
+
 > You should scan once if they're the same directory, otherwise scan them independently and merge results.
-2. **For each matching guideline**:
+1. **For each matching guideline**:
    - Load the SKILL.md migration checklist
    - Map checklist items to task phases
    - Generate specific transformation tasks with file paths
-3. **Guideline tasks follow the same format**:
+2. **Guideline tasks follow the same format**:
    - `- [ ] T0XX [P] [US?] [GUIDELINE:skill-name] Description with file path`
    - In rewrite mode, guideline tasks MUST also include `[Source:]`: `- [ ] T0XX [P] [US?] [GUIDELINE:skill-name] Description [Source: path/to/OriginalFile.java#method]`
    - Example: `- [ ] T015 [P] [GUIDELINE:convert-action-to-controller] Convert HelloAction.execute() to HelloController.hello() [Source: src/.../HelloAction.java#execute]`
-4. **Document applied guidelines** in tasks.md header:
+3. **Document applied guidelines** in tasks.md header:
+
    ```markdown
    ## Applied Guidelines
    - struts-to-spring: 14 migration tasks generated
@@ -143,6 +146,7 @@ In **rewrite** mode, every task that converts, migrates, or rewrites source code
 ```
 
 Source annotation rules:
+
 - **Path**: Relative path from repository root to the source file being rewritten
 - **Methods**: After `#`, list the specific method names (comma-separated) that contain the business logic
 - **Multiple files**: Use multiple `[Source:]` annotations: `[Source: FileA.java#m1] [Source: FileB.java#m2]`
@@ -231,6 +235,7 @@ After tasks.md is complete, generate the traceability checkpoint:
 1. **Create checkpoint file**: `FEATURE_DIR/checkpoints/plan-to-tasks.yaml`
 
 2. **Extract plan item inventory from plan.md**:
+
    ```yaml
    # Scan plan for phase items
    plan_items_found:
@@ -243,6 +248,7 @@ After tasks.md is complete, generate the traceability checkpoint:
    ```
 
 3. **Extract task inventory from tasks.md**:
+
    ```yaml
    # Scan tasks for [Plan:X.Y] references
    tasks_found:
@@ -266,6 +272,7 @@ After tasks.md is complete, generate the traceability checkpoint:
    - Build full trace chains: REQ-001 → Phase-2.1 → T005,T006,T007
 
 6. **Generate checkpoint YAML**:
+
    ```yaml
    # checkpoints/plan-to-tasks.yaml
    metadata:

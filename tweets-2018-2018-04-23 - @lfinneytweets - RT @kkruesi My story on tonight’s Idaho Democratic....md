@@ -20,6 +20,6 @@ related:
   - idpol
 ---
 
-RT @kkruesi: My story on tonight’s Idaho Democratic gubernatorial debate: They agreed on a lot, until they didn’t #idleg #idpol  https://t.…
+RT @kkruesi: My story on tonight’s Idaho Democratic gubernatorial debate: They agreed on a lot, until they didn’t #idleg #idpol  <https://t.…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/988461052617637888)

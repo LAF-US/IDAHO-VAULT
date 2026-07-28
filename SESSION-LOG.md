@@ -25,6 +25,7 @@ related:
 **Status:** PERSISTENCE LAYER INITIALIZATION
 
 ## Operational Context
+
 - UNIFIED (US) SWARM operating under Logan's Project & Protocols
 - Constitution adopted 2026-03-18, replaces Claude.md v0.0
 - IDAHO-VAULT is master Obsidian knowledge base
@@ -32,6 +33,7 @@ related:
 - Capability tier: PERMANENT: AUTHORITY: CODE (repo operations, direct GitHub write)
 
 ## Current Objectives
+
 1. Establish persistent session memory for GitHub Copilot
 2. Integrate with nascent GitHub Actions for daily briefing generation
 3. Create agent coordination protocols across swarm
@@ -39,15 +41,18 @@ related:
 5. Enable read-write cycle: vault → execution → vault
 
 ## Open Questions
+
 - What data do satellite repos output?
 - How should Gemini/NotebookLM coordinate?
 - Where does persona-specific context live?
 - What morning briefing format does Logan prefer?
 
 ## Logan's Current Focus
+
 [To be updated by Logan]
 
 ## Last Executed Actions
+
 [Session history]
 
 ---

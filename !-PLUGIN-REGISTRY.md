@@ -30,7 +30,7 @@ loose pile of installed extensions.
 ## Layer Boundaries
 
 | Surface | Role | Authority |
-|---|---|---|
+| --- | --- | --- |
 | `!/PLUGIN-REGISTRY.md` | Live doctrine, topology, dependency declarations, and promotion rules for the plugin layer | Current plugin truth |
 | `.obsidian/community-plugins.json` | Enabled-plugin runtime interface state | Interface/output surface, not doctrine by itself |
 | `.obsidian/plugins/` | Installed plugin payloads, manifests, runtime assets, and local plugin data | Drive/runtime surface |
@@ -43,7 +43,7 @@ loose pile of installed extensions.
 ## Layered Model
 
 | Layer | Meaning | Writable By | Promotion Rule |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | `CANON` | Durable plugin doctrine: what is allowed, what is enabled, why it exists | Logan or explicitly assigned agents | Canon changes require registry update here |
 | `DRIVE` | Installed plugin payloads and tracked configuration surfaces | Logan and assigned agents | Drive changes become durable only when reflected here |
 | `RUNTIME` | Machine-local plugin data, caches, indexes, and sync side effects | Obsidian, plugins, local agents | Runtime artifacts do not self-promote |
@@ -74,7 +74,7 @@ Current priority:
 These core plugins are part of the minimum metadata/frontmatter path.
 
 | Plugin ID | Name | Why it is required now |
-|---|---|---|
+| --- | --- | --- |
 | `properties` | Properties | Canonical Obsidian UI for viewing and editing YAML/frontmatter-backed note properties |
 | `daily-notes` | Daily Notes | Root daily-note entrypoint used by the live daily-note infrastructure and tracked config |
 | `templates` | Templates | Applies the tracked markdown templates that seed frontmatter and note structure |
@@ -84,7 +84,7 @@ These core plugins are part of the minimum metadata/frontmatter path.
 These community plugins are the current canon minimum for stage 1.
 
 | Plugin ID | Name | Why it is required now |
-|---|---|---|
+| --- | --- | --- |
 | `obsidian-linter` | Linter | Normalizes frontmatter-adjacent structure and timestamp fields, and keeps metadata drift from accumulating silently |
 | `breadcrumbs` | Breadcrumbs | Reads the `related:` relation mesh and makes frontmatter relations operational instead of inert |
 | `periodic-notes` | Periodic Notes | Canonical creation and format wiring for daily, weekly, monthly, quarterly, and yearly note classes |
@@ -95,7 +95,7 @@ Some enabled plugins are required, but for narrower reasons than stage-1
 metadata/frontmatter authoring.
 
 | Plugin ID | Name | Required scope | Why it is required in that scope |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | `dataview` | Dataview | Corpus query/render contract | Existing notes and registry doctrine already assume Dataview-backed inspection and inline query availability |
 | `obsidian-local-rest-api` | Local REST API | Desktop agent runtime | Required runtime server for the local Obsidian-to-agent bridge on the desktop engine-room device |
 | `mcp-tools` | MCP Tools | Desktop agent runtime | Required bridge layer for the current MCP/agent ecosystem; depends on `obsidian-local-rest-api` being live |
@@ -110,7 +110,7 @@ These plugins may remain enabled and useful, but the registry does not
 currently declare them required by a live lane.
 
 | Plugin ID | Name | Current standing |
-|---|---|---|
+| --- | --- | --- |
 | `tag-wrangler` | Tag Wrangler | Useful maintenance surface for frontmatter tags, but not currently declared required |
 | `nldates-obsidian` | Natural Language Dates | Input convenience only; not currently declared required |
 | `obsidian-tasks-plugin` | Tasks | Task workflow layer; important but not yet declared required by current doctrine |
@@ -151,7 +151,7 @@ That means:
 ### Canon time/workflow plugin set
 
 | Plugin ID | Standing in this scope | Why it matters now |
-|---|---|---|
+| --- | --- | --- |
 | `daily-notes` | Required | Live daily-note entrypoint bound to the tracked daily-note template |
 | `templates` | Required | Applies the tracked template that seeds the daily note's structure and links |
 | `periodic-notes` | Required | Creates the active daily/weekly/monthly/quarterly/yearly note classes used by the current note cadence |
@@ -160,7 +160,7 @@ That means:
 ### Enabled, useful, but not yet canon-required for time/workflow
 
 | Plugin ID | Current standing | Why it is not required yet |
-|---|---|---|
+| --- | --- | --- |
 | `obsidian-tasks-plugin` | Workflow-adjacent | The live task loop currently works on plain markdown checkboxes in daily notes and `TO DO LIST.md`; no canon query or automation contract yet requires Tasks-specific syntax |
 | `obsidian-day-planner` | Workflow-adjacent | Configured and potentially useful, but no tracked template, doctrine surface, or automation currently depends on its timeline UI |
 | `nldates-obsidian` | Input convenience | Helps with typing dates, but the time system does not rely on it to remain lawful |
@@ -168,7 +168,7 @@ That means:
 ### Explicitly out of current time/workflow scope
 
 | Plugin ID | Status | Why it stays out of scope now |
-|---|---|---|
+| --- | --- | --- |
 | `calendar` | Dormant | The live loop does not depend on a separate calendar-pane plugin |
 | `calendarium` | Dormant | Installed, but current config has no live calendars and no daily-note binding |
 | `keep-the-rhythm` | Dormant | No current doctrinal or automation dependency |
@@ -257,7 +257,7 @@ Do not make a plugin required if:
 ### Fallback Expectations For Current Required Plugins
 
 | Plugin ID | Scope | Fallback if plugin breaks | Failure severity |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | `properties` | Frontmatter editing | Raw YAML editing in markdown | Low |
 | `daily-notes` | Daily-note creation | Manual creation of ISO daily notes from tracked template | Medium |
 | `templates` | Template insertion | Manual copy/use of tracked template files | Medium |
@@ -272,7 +272,7 @@ Do not make a plugin required if:
 ### Current Required Dependency Map
 
 | Plugin ID | Requirement class | Hard dependency | Redundancy posture |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | `properties` | Foundational core | Markdown files with YAML/frontmatter | Raw source editing remains lawful |
 | `daily-notes` | Foundational core | Tracked daily-note naming/config contract | Manual ISO-note creation remains lawful |
 | `templates` | Foundational core | Tracked template files in the vault | Manual template copy remains lawful |
@@ -289,7 +289,7 @@ Do not make a plugin required if:
 ## Current State
 
 | Key | Value |
-|---|---|
+| --- | --- |
 | Enabled plugins | 26 |
 | Canonical required core plugins | 3 |
 | Canonical required community plugins | 3 |
@@ -351,7 +351,7 @@ That separation matters because a plugin can be:
 #### Infrastructure / Agent Layer
 
 | Plugin ID | Name | Version | Size | Depends On | Purpose | Status |
-|---|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- | --- |
 | `obsidian-git` | Git | v2.38.0 | 732 KB | - | Git integration for vault version control | Enabled |
 | `obsidian-local-rest-api` | Local REST API | v3.5.0 | 2,530 KB | - | REST API server for MCP bridge; required by agent ecosystem | Enabled |
 | `mcp-tools` | MCP Tools | v0.2.27 | 117,479 KB | `obsidian-local-rest-api` | MCP bridge connecting Claude Desktop to vault; semantic search, templates | Enabled |
@@ -360,7 +360,7 @@ That separation matters because a plugin can be:
 #### Navigation / Search
 
 | Plugin ID | Name | Version | Size | Depends On | Purpose | Status |
-|---|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- | --- |
 | `breadcrumbs` | Breadcrumbs | v4.4.4 | 892 KB | - | Keystone navigation across `related:` frontmatter links | Enabled |
 | `omnisearch` | Omnisearch | v1.28.2 | 606 KB | - | Full-text vault search with index | Enabled |
 | `settings-search` | Settings Search | v1.3.10 | 18 KB | - | Search within Obsidian settings panels | Enabled |
@@ -374,7 +374,7 @@ That separation matters because a plugin can be:
 #### Content Creation / Editing
 
 | Plugin ID | Name | Version | Size | Depends On | Purpose | Status |
-|---|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- | --- |
 | `templater-obsidian` | Templater | v2.18.1 | 337 KB | - | Template engine for vault note creation | Enabled |
 | `ai-templater` | AI for Templater | v1.0.20 | 278 KB | `templater-obsidian` | AI extension for Templater; uses OpenAI client | Enabled |
 | `nldates-obsidian` | Natural Language Dates | v0.6.2 | 346 KB | - | Date-links from natural language input | Enabled |
@@ -390,7 +390,7 @@ That separation matters because a plugin can be:
 #### Daily Notes / Calendar
 
 | Plugin ID | Name | Version | Size | Depends On | Purpose | Status |
-|---|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- | --- |
 | `periodic-notes` | Periodic Notes | v0.0.17 | 177 KB | - | Daily, weekly, and monthly note management | Enabled |
 | `roygbiv-day-accent` | ROYGBIV Day Accent | v1.0.0 | 3 KB | `periodic-notes` | Weekday accent color rotation | Enabled |
 
@@ -401,7 +401,7 @@ Dormant plugins are installed but not part of the live enabled topology.
 #### AI / LLM
 
 | Plugin ID | Name | Version | Size | Has Config | Status |
-|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- |
 | `ai-image-analyzer` | AI Image Analyzer | v1.2.1 | 598 KB | Yes | Dormant / pending Logan |
 | `bmo-chatbot` | BMO Chatbot | v2.3.3 | 450 KB | Yes | Dormant / pending Logan |
 | `large-language-models` | Large Language Models | v0.23.0 | 1,557 KB | Yes | Dormant / pending Logan |
@@ -412,7 +412,7 @@ Dormant plugins are installed but not part of the live enabled topology.
 #### Content Organization
 
 | Plugin ID | Name | Version | Size | Has Config | Status |
-|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- |
 | `make-md` | make.md | v1.3.4 | 5,759 KB | Yes | Dormant / pending Logan |
 | `notebook-navigator` | Notebook Navigator | v2.5.6 | 4,786 KB | Yes | Dormant / pending Logan |
 | `quickadd` | QuickAdd | v2.12.0 | 4,179 KB | Yes | Dormant / pending Logan |
@@ -423,7 +423,7 @@ Dormant plugins are installed but not part of the live enabled topology.
 #### Calendar / Date
 
 | Plugin ID | Name | Version | Size | Has Config | Status |
-|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- |
 | `calendar` | Calendar | v1.5.10 | 138 KB | Yes | Dormant / pending Logan |
 | `calendarium` | Calendarium | v2.1.0 | 1,040 KB | Yes | Dormant / pending Logan |
 | `keep-the-rhythm` | Keep the Rhythm | v0.2.8 | 363 KB | Yes | Dormant / pending Logan |
@@ -431,14 +431,14 @@ Dormant plugins are installed but not part of the live enabled topology.
 #### PDF / Document
 
 | Plugin ID | Name | Version | Size | Has Config | Status |
-|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- |
 | `obsidian-extract-pdf-highlights` | PDF Highlights | v0.0.4 | 3,816 KB | Yes | Dormant / pending Logan |
 | `pdf-plus` | PDF++ | v0.40.31 | 1,092 KB | Yes | Dormant / pending Logan |
 
 #### Table / Editing
 
 | Plugin ID | Name | Version | Size | Has Config | Status |
-|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- |
 | `table-editor-obsidian` | Advanced Tables | v0.22.1 | 268 KB | Yes | Dormant / pending Logan |
 | `editing-toolbar` | Editing Toolbar | v4.0.2 | 629 KB | Yes | Dormant / pending Logan |
 | `cmdr` | Commander | v0.5.4 | 146 KB | Yes | Dormant / pending Logan |
@@ -446,7 +446,7 @@ Dormant plugins are installed but not part of the live enabled topology.
 #### Visual / UI
 
 | Plugin ID | Name | Version | Size | Has Config | Status |
-|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- |
 | `obsidian-icon-folder` | Iconize | v2.14.7 | 407 KB | Yes | Dormant / pending Logan |
 | `oz-image-plugin` | Image in Editor | v2.2.6 | 161 KB | Yes | Dormant / pending Logan |
 | `obsidian-admonition` | Admonition | v11.0.3 | 1,302 KB | Yes | Dormant / pending Logan |
@@ -454,7 +454,7 @@ Dormant plugins are installed but not part of the live enabled topology.
 #### Specialty
 
 | Plugin ID | Name | Version | Size | Has Config | Status |
-|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- |
 | `obsidian-leaflet-plugin` | Leaflet | v6.0.5 | 1,561 KB | Yes | Dormant / pending Logan |
 | `obsidian-5e-statblocks` | Fantasy Statblocks | v4.10.3 | 3,016 KB | Yes | Dormant / pending Logan |
 | `obsidian-dice-roller` | Dice Roller | v11.4.2 | 904 KB | Yes | Dormant / pending Logan |
@@ -468,7 +468,7 @@ Dormant plugins are installed but not part of the live enabled topology.
 These are the explicit dependency declarations for the current plugin layer.
 
 | Parent | Child | Dependency type | Operational note |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | `obsidian-local-rest-api` | `mcp-tools` | Required runtime dependency | MCP bridge depends on the REST API server being live |
 | `smart-connections` | `smart-connections-visualizer` | Feature dependency | Visualizer is subordinate to Smart Connections |
 | `templater-obsidian` | `ai-templater` | Functional dependency | AI for Templater extends the Templater surface |
@@ -486,7 +486,7 @@ source declarations: dependency edges live here, not only in memory.
 ## Writable Surfaces
 
 | Surface | Purpose | Persistence |
-|---|---|---|
+| --- | --- | --- |
 | `!/PLUGIN-REGISTRY.md` | Plugin doctrine, topology, and dependency declarations | Durable in git |
 | `.obsidian/community-plugins.json` | Enabled-plugin list used by Obsidian | Durable in git, interface state |
 | `.obsidian/plugins/*/manifest.json` | Installed plugin identity and version metadata | Durable in git when tracked |
@@ -518,7 +518,7 @@ With "Installed community plugins: ON" on the laptop, all 54 plugin directories
 sync to the Obsidian Sync remote.
 
 | Category | Size | Share |
-|---|---|---|
+| --- | --- | --- |
 | `mcp-tools` alone | 117 MB | 11.4% of 1 GB |
 | Other enabled plugins | 11 MB | 1.1% |
 | Dormant installed plugins | 43 MB | 4.2% |
@@ -532,7 +532,7 @@ If `mcp-tools` is excluded: 171 MB -> 54 MB.
 ## Activity Log
 
 | Date | Agent | Action | Rationale |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | 2026-04-17 | Codex (The Lexicographer) | Added canonical required-plugin tiers for stage 1, query/render, and desktop agent runtime | Separate minimum standing plugins from the broader enabled desktop stack and avoid flattening all requirements into one bucket |
 | 2026-04-12 | Codex (The Lexicographer) | Refactored flat plugin registry into manifest form | Align plugin layer with CrewAI-style layer boundaries, topology, writable surfaces, and promotion rules |
 | 2026-04-12 | Claude (The Abhorsen) | Created original plugin registry | No authoritative plugin record existed; agents were toggling plugins without governance |

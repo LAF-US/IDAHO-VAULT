@@ -16,9 +16,10 @@ District Director: Melody Bowyer
 Twin Falls, ID 83301-3156  
 1-208-737-5900
 
-Magic Valley public health district 
+Magic Valley public health district
 
-Counties: 
+Counties:
+
 - Blaine
 - Camas
 - Gooding

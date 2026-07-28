@@ -8,6 +8,6 @@ related:
 - legislative session
 ---
 
-interstate compact for counselors licensing 
+interstate compact for counselors licensing
 
-Legislature rejected in 2024 legislative session 
+Legislature rejected in 2024 legislative session

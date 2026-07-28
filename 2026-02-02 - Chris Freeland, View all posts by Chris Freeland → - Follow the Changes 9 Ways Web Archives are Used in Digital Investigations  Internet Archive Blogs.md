@@ -37,7 +37,7 @@ related:
 - website
 authority: LOGAN
 ---
-## Guest post from Thais Lobo, Liliana Bounegru & Jonathan W. Y. Gray, King’s College London.
+## Guest post from Thais Lobo, Liliana Bounegru & Jonathan W. Y. Gray, King’s College London
 
 *This work was supported by the* [*Centre for Digital Culture*](https://www.kcl.ac.uk/research/cdc) *and* [*Department of Digital Humanities*](https://www.kcl.ac.uk/ddh) *at King’s College London and developed further through collaborations with researchers and students at the* [*University of Amsterdam*](https://deep-culture.org/)*.*
 

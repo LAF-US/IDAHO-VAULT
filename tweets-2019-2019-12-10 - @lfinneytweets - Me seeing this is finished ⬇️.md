@@ -13,9 +13,10 @@ related:
   - lfinneytweets
 ---
 
-@pfinney69 Me seeing this is finished ⬇️ https://t.co/P8OystMoMm
+@pfinney69 Me seeing this is finished ⬇️ <https://t.co/P8OystMoMm>
 
 ## Media
+
 - ![](https://pbs.twimg.com/media/ELdpHYNU4AEWRzb.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1204547011644518401)
