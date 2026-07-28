@@ -6,7 +6,7 @@ published: 2026-07-09
 created: 2026-07-20
 description:
 ---
-![](https://www.ridenbaugh.com/WordPress/wp-content/uploads/stapiluslogo.png) While Democrats in Maine struggle with their preferences for the U.S. Senate, Idaho Democrats, for different reasons, are struggling too. They’re having to deal with two big considerations: One short term, one longer term, both focused now on the Gem State race for the U.S. Senate.
+![](https://www.ridenbaugh.com/WordPress/wp-content/uploads/stapiluslogo.png) While Democrats in Maine struggle with their preferences for the U.S. Senate, [[Idaho]] Democrats, for different reasons, are struggling too. They’re having to deal with two big considerations: One short term, one longer term, both focused now on the Gem State race for the U.S. Senate.
 
 The Republican nominee is three-term incumbent Jim Risch. The Democratic nominee is David Roth, who won a contested primary with 64% of the vote.
 
@@ -31,3 +31,5 @@ Here we have a very large point to consider. Democrats have not won an Idaho rac
 The question becomes reasonable: Is the Democratic brand in Idaho simply too torched, too untouchable (for whatever reason) to succeed anymore in this state? Is it too toxic for any person, however wonderful they may be or how bad their opponent, to succeed electorally (outside of Boise and a few other places) in Idaho anymore? Is some very new approach, maybe including independent candidacies, what’s needed?
 
 That’s a question this debate raises that Idaho Democrats ought to grapple with in a serious way. Soon.
+
+#idaho

@@ -6,7 +6,7 @@ published:
 created: 2026-07-20
 ---
 [![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixBGg_YwFncDA0ZXonTNnPrCrguNKpNMMQT15UPPcUJyFwoYcW_1WAndbLzDSKMUshzTOpJKCSIasdUH93pPTcBAA60VIkm2I1zWFKOsmeW6fc-wBHncBkg3Rhh61pWGzfUQc7/s320/LimbertBlog3.tif)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEixBGg_YwFncDA0ZXonTNnPrCrguNKpNMMQT15UPPcUJyFwoYcW_1WAndbLzDSKMUshzTOpJKCSIasdUH93pPTcBAA60VIkm2I1zWFKOsmeW6fc-wBHncBkg3Rhh61pWGzfUQc7/s1600/LimbertBlog3.tif) Robert Limbert with a horse and saddle.  
-MSS 080 Robert W. Limbert Papers Photo # 11032 Author, explorer, guide, lecturer and taxidermist Robert W. Limbert wrote about and photographed his explorations of the Idaho wilderness and traveled the country giving talks about his adventures.  
+MSS 080 Robert W. Limbert Papers Photo # 11032 Author, explorer, guide, lecturer and taxidermist Robert W. Limbert wrote about and photographed his explorations of the [[Idaho]] wilderness and traveled the country giving talks about his adventures.  
   
 His photographs and papers are preserved in the Archives and Special Collections Department of Albertsons Library at Boise State University. An online collection of 250 digital items is now freely available to researchers at Albertsons Library Digital Collections at [http://digital.boisestate.edu/cdm/landingpage/collection/Limbert](http://digital.boisestate.edu/cdm/landingpage/collection/Limbert).  
   
@@ -28,3 +28,5 @@ In addition to the 500 images that are online, Boise State University Albertsons
   
 Kent Randell,  
 Assistant Professor/Librarian/Archivist
+
+#idaho
