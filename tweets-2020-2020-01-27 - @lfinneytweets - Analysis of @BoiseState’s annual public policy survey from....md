@@ -16,14 +16,16 @@ related:
   - lfinneytweets
 ---
 
-Analysis of @BoiseState’s annual public policy survey from @KevinRichert: 
-Younger respondents and those with children under 18 were more likely to rate Idaho's school system poorly. 
-https://t.co/aZBL03gq7a https://t.co/htACAyGRCb
+Analysis of @BoiseState’s annual public policy survey from @KevinRichert:
+Younger respondents and those with children under 18 were more likely to rate Idaho's school system poorly.
+<https://t.co/aZBL03gq7a> <https://t.co/htACAyGRCb>
 
 ## Links
-- https://www.idahoednews.org/kevins-blog/schools-receive-mediocre-grades-in-latest-boise-state-survey/
+
+- <https://www.idahoednews.org/kevins-blog/schools-receive-mediocre-grades-in-latest-boise-state-survey/>
 
 ## Media
+
 - ![](https://pbs.twimg.com/media/EPUai1PUUAEhHQ4.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1221912997087440896)

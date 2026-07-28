@@ -24,7 +24,7 @@ To turn your web pages into graph objects, you need to add basic metadata to you
 - `og:title` - The title of your object as it should appear within the graph, e.g., "The Rock".
 - `og:type` - The [type](#types) of your object, e.g., "video.movie". Depending on the type you specify, other properties may also be required.
 - `og:image` - An image URL which should represent your object within the graph.
-- `og:url` - The canonical URL of your object that will be used as its permanent ID in the graph, e.g., "https://www.imdb.com/title/tt0117500/".
+- `og:url` - The canonical URL of your object that will be used as its permanent ID in the graph, e.g., "<https://www.imdb.com/title/tt0117500/>".
 
 As an example, the following is the Open Graph protocol markup for [The Rock on IMDB](https://www.imdb.com/title/tt0117500/):
 

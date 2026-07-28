@@ -1,6 +1,7 @@
 # Pokémon Regions - Master List
 
 ## Table of Contents
+
 1. [Core Series Regions](#core-series-regions)
 2. [Sub-Regions and DLC Areas](#sub-regions-and-dlc-areas)
 3. [Spin-Off Game Regions](#spin-off-game-regions)
@@ -13,7 +14,7 @@
 These are the primary regions from the main series Pokémon games, each introducing new Pokémon, Gym Leaders, Elite Four, and Champions.
 
 | # | Region | Generation | Debut Game(s) | Based On | Notes |
-|---|--------|------------|--------------|----------|-------|
+| --- | -------- | ------------ | -------------- | ---------- | ------- |
 | 1 | **Kanto** | I | Red, Blue, Green (Japan), Yellow | Kantō, Japan | The original region. Features 8 Gyms. |
 | 2 | **Johto** | II | Gold, Silver, Crystal | Kansai & traditional Japanese culture | West of Kanto. Features 8 Gyms. |
 | 3 | **Hoenn** | III | Ruby, Sapphire, Emerald | Kyūshū, Japan | Southern region. Features 8 Gyms. |
@@ -39,13 +40,15 @@ These are the primary regions from the main series Pokémon games, each introduc
 These are smaller areas within or adjacent to core regions, often introduced in DLC or special game versions.
 
 ### Kanto
+
 | Sub-Region | Debut Game(s) | Notes |
 |------------|--------------|-------|
 | **Sevii Islands** | FireRed, LeafGreen | Archipelago south of Kanto. 7 islands with unique Pokémon. |
 
 ### Paldea
+
 | Sub-Region | Debut Game(s) | Notes |
-|------------|--------------|-------|
+| ------------ | -------------- | ------- |
 | **Kitakami** | The Teal Mask (DLC) | Rural town inspired by traditional Japanese villages. |
 | **Blueberry Academy** | The Indigo Disk (DLC) | Prestigious school. Introduces new characters and story. |
 | **Terarium** | The Teal Mask / The Indigo Disk (DLC) | Underground research facility. |
@@ -58,7 +61,7 @@ These are smaller areas within or adjacent to core regions, often introduced in 
 Regions exclusive to spin-off games, not part of the main series canon.
 
 | Region | Debut Game(s) | Based On | Notes |
-|--------|--------------|----------|-------|
+| -------- | -------------- | ---------- | ------- |
 | **Orre** | Colosseum, XD: Gale of Darkness | Arizona/Nevada, USA | Desert region. Features Shadow Pokémon. |
 | **Fiore** | Pokémon Ranger | Based on Fiore Temple | Features capture mechanic instead of battles. |
 | **Almia** | Pokémon Ranger: Shadows of Almia | Various | Sequel to Fiore. |
@@ -93,6 +96,7 @@ Each core region appears across multiple **epochs** (generations, remakes, and s
 - **Paldea**: Gen IX (SV)
 
 Each epoch may feature:
+
 - Different Gym Leaders
 - Updated teams and levels
 - New story elements

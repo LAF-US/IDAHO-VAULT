@@ -13,9 +13,10 @@ related:
   - lfinneytweets
 ---
 
-This is my favorite thing I've read all week. https://t.co/XyXuZnIf9t
+This is my favorite thing I've read all week. <https://t.co/XyXuZnIf9t>
 
 ## Links
-- https://x.com/KeatonPatti/status/1158746498064179200
+
+- <https://x.com/KeatonPatti/status/1158746498064179200>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1158985663934451713)

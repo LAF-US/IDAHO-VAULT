@@ -50,7 +50,7 @@ You can think of Voxtral in roughly this shape:
 
 Voxtral behaves like a codec because it works on a compact representation of audio instead of raw samples. That makes it fast enough for interactive use.
 
-## Logan, become a member to read this story, and all of Medium.
+## Logan, become a member to read this story, and all of Medium
 
 Sebastian Buzdugan put this story behind our paywall, so it’s only available to read with a paid Medium membership, which comes with a host of benefits:
 
