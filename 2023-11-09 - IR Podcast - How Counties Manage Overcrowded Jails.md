@@ -48,7 +48,7 @@ authority: LOGAN
 ---
 *Ada County voters narrowly missed the 2/3 majority needed to pass a jail expansion bond in Tuesday’s local election – but it’s a familiar story for many counties across the state. Associate producer Logan Finney talks with jail administrator Capt. Doug Hughes from the Twin Falls Sheriff’s Department about what a failed jail expansion bond means for an Idaho community.*
 
-**Logan Finney, _Idaho Reports_:**
+**Logan Finney, *Idaho Reports*:**
 
 When we talk about Twin Falls County, we’re not just talking about the city of Twin Falls. Can you remind me just how much of a geographic area you guys cover?
 

@@ -31,10 +31,11 @@ One sentence contains five of the eight star classes simultaneously. All other o
 ## STAR CLASSES
 
 ### ★ "Vaulted Syntax"
+
 **Density:** 4 files — concentrated, rare.
 
 | File | Context |
-|---|---|
+| --- | --- |
 | `CONSTITUTION.md` | Colophon (line 207) — only canonical instance combining all vocabulary |
 | `!/CIVIC-LAW-AND-VAULTED-SYNTAX-2026-04-17.md` | Dedicated essay (today) |
 | `!/INBOX/AI-CAPTURES/README.md` | Passive: naming convention example |
@@ -45,14 +46,17 @@ One sentence contains five of the eight star classes simultaneously. All other o
 ---
 
 ### ★ "Logan's Project & Protocols"
+
 **Density:** ~40 files — widely distributed.
 
 **The file:** [`Logan's Project & Protocols.md`](../Logan's%20Project%20%26%20Protocols.md) (root, loose)
+
 ```
 Unity (v0.0) :: US alignment
 See ; CONSTITUTION and FRAMEWORKS
 "The world is quiet here." -LAF
 ```
+
 This is the **nexus file** — explicitly links `(v0.0)` to `(US)`.
 
 **Colophon formula** (appears verbatim in ~15 core persona/protocol files):
@@ -65,15 +69,18 @@ Also appears in: `! README.md`, `!README.md`, `!README (2).md`, both Linear chat
 ---
 
 ### ★ "Unified (US) Swarm" / "UNIFIED (US) SWARM"
+
 **Density:** 5 files (mixed-case) + ~35 files (ALL-CAPS, dominant form).
 
 **Mixed-case** (`Unified (US) Swarm`): `CONSTITUTION.md`, `CONSTITUTION 1.md`, `CONSTITUTION (2).md`, `ANTIGRAVITY.md`, `.antigravity/ANTIGRAVITY.md`
 
 **The file:** [`UNIFIED (US) SWARM.md`](../UNIFIED%20(US)%20SWARM.md) (root, loose)
+
 ```
 UNIFIED (US) SWARM!
 "The world is quiet here."
 ```
+
 Created 2026-03-24. Modified 2026-03-30. Has "The world is quiet here." anchor.
 
 Explicitly characterized by Codex Explorer (2026-04-13): *"`UNIFIED (US) SWARM.md` functions as a watermark more than a narrative body."* Confirmed as *"signature/watermark node"* in `!/!REPORT-TO-JANITOR-2026-04-09.md`.
@@ -81,27 +88,34 @@ Explicitly characterized by Codex Explorer (2026-04-13): *"`UNIFIED (US) SWARM.m
 ---
 
 ### ★ "(US)"
+
 **Density:** Appears in 42 files — but most are the UNIFIED (US) SWARM pattern. Standalone instances are few.
 
 **The file:** [`(US).md`](../(US).md) (root, loose)
+
 ```
 PROJECT HORIZON : UNIFIED SWARM
 ```
+
 Related: HORIZON, PROJECT, UNIFIED. Abbreviation stub for the Unified Swarm concept.
 
 ---
 
 ### ★ "(v0.0)"
+
 **Density:** 6 files.
 
 **The file:** [`(v0.0).md`](../(v0.0).md) (root, loose)
+
 ```
 "Logan's sub-beta" tag - emoticon - symbol
 text ; Subversioned "zero dot zero" ; FACE
 ```
+
 Related: FACE, Logan's, emoticon, symbol. This is Logan's authorship/sub-beta marker.
 
 **Instances in live use:**
+
 - `CONSTITUTION.md` — revision history: `*Replaced: Claude.md (v0.0) Frameworks*`
 - `individuals.md` — signature: `"The world is quiet here." (v0.0)-LAF✌️`
 - `2026-03-18.md` — template naming: `"v?LF-Obsidian-note-(v0.0)-IDPTV-Laptop.beta"`
@@ -111,14 +125,17 @@ Related: FACE, Logan's, emoticon, symbol. This is Logan's authorship/sub-beta ma
 ---
 
 ### ★ "-LAF" — Logan Alvan Finney
+
 **Register:** Formal. Widest scope.
 
 **The file:** [`-LAF.md`](../-LAF.md) (root, loose)
+
 ```
 Logan's initialization
 ```
 
 **Functions:**
+
 - Formal closing signature in documents and chat exports
 - Agent directive stamp (`"FIND !README.md and CRAWL... -LAF"`)
 - Linear task ID prefix (`LAF-3`, `LAF-7`, `LAF-17`, `LAF-25`, `LAF-44`, etc.)
@@ -130,16 +147,20 @@ Appears in: `0401 - The Concierge.md`, `20260402.0.cursor_the_custodian.md`, `BR
 ---
 
 ### ★ "-LF" — Logan Finney
+
 **Register:** Casual. Mid-register.
 
 **The file:** [`-LF.md`](../-LF.md) (root, loose)
+
 ```
 LOGAN initials
 "The world is quiet here."
 ```
+
 Has "The world is quiet here." anchor. The only signature file that carries it.
 
 **Functions:**
+
 - Conversational sign-off in chat exports
 - Daily note closing: `2026-03-21.md`, `2026-03-31.md`, `2026-04-02.md`
 - Combined: `"v?LF-Obsidian-note-(v0.0)-IDPTV-Laptop.beta" -LF ✌️`
@@ -149,6 +170,7 @@ Appears in: `Linear - agent chat - Greeting IDAHO-VAULT` (×2), `Linear - agent 
 ---
 
 ### ★ "-L" — Logan
+
 **Register:** Fastest. Minimal friction.
 
 **No file. No stub. Unanchored.**
@@ -162,7 +184,7 @@ Appears in: `!/GRIMOIRE/NETWEB-CREWAI-ALIGNMENT.md` (technical clarification mid
 ## SIGNATURE GRADIENT
 
 | Form | File | Anchor | Register | Function |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | `-LAF` | `-LAF.md` — *"Logan's initialization"* | Loose, root | Formal | Directives, task IDs, colophon, Linear prefix |
 | `-LF` | `-LF.md` — *"LOGAN initials"* + *"The world is quiet here."* | Loose, root | Casual | Chat sign-offs, daily notes |
 | `-L` | *No file.* | **Unanchored** | Bare | Single-line prompts, rapid corrections |
@@ -176,7 +198,7 @@ The gradient: `-LAF` → institutional authority · `-LF` → personal register 
 All six flagged by sort audits. All have copies in `_private/` rewrite-prep directories (×4 each). All unregistered in bootstrap layer.
 
 | File | Body | Note |
-|---|---|---|
+| --- | --- | --- |
 | [`(v0.0).md`](../(v0.0).md) | *"Logan's sub-beta tag / Subversioned 'zero dot zero'"* | Authorship marker |
 | [`(US).md`](../(US).md) | *"PROJECT HORIZON : UNIFIED SWARM"* | Abbreviation stub |
 | [`UNIFIED (US) SWARM.md`](../UNIFIED%20(US)%20SWARM.md) | *"UNIFIED (US) SWARM!"* + "The world is quiet here." | Watermark node |
@@ -189,7 +211,7 @@ All six flagged by sort audits. All have copies in `_private/` rewrite-prep dire
 ## OPEN GAPS
 
 | Gap | Status |
-|---|---|
+| --- | --- |
 | `VAULTED-SYNTAX.md` | ✅ Planted 2026-04-17 |
 | `-L` stub | ✅ Planted 2026-04-17 |
 | `REPORT.md` v(0.0) stub | ⚠️ File contains historical first-session levelset (2026-03-12); protocol stub unplanted — awaiting Logan decision |

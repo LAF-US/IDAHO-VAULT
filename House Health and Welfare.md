@@ -17,7 +17,9 @@ related:
 authority: LOGAN
 ---
 # Roster
+
 ## 2023 Members
+
 - John Vander Woude Chair
 - Marco Erickson Vice Chair
 - Megan Blanksma

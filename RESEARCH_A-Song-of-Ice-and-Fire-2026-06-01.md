@@ -30,7 +30,7 @@ date: 2026-06-01
 *A Song of Ice and Fire* is George R.R. Martin's epic-fantasy series, planned for **seven volumes**, of which **five are published**:
 
 | # | Title | First published (US) |
-|---|---|---|
+| --- | --- | --- |
 | 1 | *A Game of Thrones* | August 1996 |
 | 2 | *A Clash of Kings* | 1999 (UK late 1998) |
 | 3 | *A Storm of Swords* | November 2000 |
@@ -44,6 +44,7 @@ date: 2026-06-01
 - **Premise:** set on Westeros and Essos, three interlocking conflicts — the dynastic **War of the Five Kings** for the Iron Throne; the supernatural threat of the **Others / White Walkers** beyond the Wall; and the exiled **Daenerys Targaryen** and the return of dragons. Major houses: Stark, Lannister, Targaryen, Baratheon, Greyjoy, Tyrell, Martell, Arryn, Tully. [Wikipedia: ASOIAF]
 
 **Companion / prequel works:**
+
 - **Tales of Dunk & Egg** novellas — *The Hedge Knight* (1998), *The Sworn Sword* (2003), *The Mystery Knight* (2010); collected as *A Knight of the Seven Kingdoms* (2015).
 - **The World of Ice & Fire** (2014, with Elio M. García Jr. & Linda Antonsson).
 - **Fire & Blood** (Nov 20, 2018) — fictional Targaryen history; basis for *House of the Dragon*.
@@ -65,6 +66,7 @@ date: 2026-06-01
 - **The 2026 "finished manuscript" rumor — DEBUNKED.** A 4chan post (claiming to be a Bantam Spectra insider) alleged TWOW was completed late 2025, delivered internally Jan 2026 at ~1,600 pages, with a fall-2026 release. **Martin's publisher Bantam (Penguin Random House) denied it**, telling *Entertainment Weekly*: "The online chatter you are seeing regarding a supposed leak is false." Any "~70% done" or "fall 2026" framing is **rumor/derived, not a GRRM statement**. [Nerdbot, Apr 13 2026; IBTimes UK; GeekTyrant]
 
 > **Confirmed vs. rumor — keep these straight:**
+>
 > - **GRRM-confirmed:** still actively writing; still unfinished; ~1,100-page figure dates to 2022 and hasn't meaningfully advanced; he cites TV work and deadline trouble as causes.
 > - **NOT from GRRM (rumor):** any completed manuscript, January-2026 delivery, ~1,600 pages, fall-2026 release, or precise "70% done." The completion claim was explicitly denied by the publisher.
 
@@ -77,12 +79,15 @@ date: 2026-06-01
 **Game of Thrones (2011–2019, 8 seasons).** The show **overtook the books** around Season 6 (premiered Apr 24, 2016), proceeding beyond *A Dance with Dragons*. Its **final season (2019) is the franchise low point** — 55% on Rotten Tomatoes vs. the 90s for seasons 1–7 — and a fan petition to remake it passed ~1 million signatures (later cited ~1.8M); HBO declined. [Wikipedia: GoT S8; Deadline, May 2019]
 
 **House of the Dragon (2022– ).** Based on *Fire & Blood*. Season 2 aired 2024.
+
 - **Season 3 premieres June 21, 2026** on HBO/HBO Max (9 p.m. ET), **8 episodes**, weekly through a **finale on Aug 9, 2026**; first teaser/trailer ~April 27, 2026 (announcing the June 21 premiere), with a further trailer in late May 2026. Episode 1 is **scheduled to screen early** at **Italy's Taormina Film Festival (June 10–14, 2026)**, ~11 days before the HBO debut. Filming ran **Mar 21 – ~Oct 2025** (Leavesden). [Variety; Wikipedia: HOTD S3; Collider; GamesRadar]
 
 **A Knight of the Seven Kingdoms: The Hedge Knight.** The Dunk & Egg adaptation.
+
 - **Premiered Jan 18, 2026** on HBO/HBO Max (Sundays), **Season 1 = 6 episodes**. Stars Peter Claffey (Dunk) and Dexter Sol Ansell (Egg). **Renewed for Season 2** (announced ~Nov 2025, before S1 aired), based on *The Sworn Sword*, **targeted for 2027**. Strong reception (RT 94%, Metacritic 74). [Wikipedia; Rotten Tomatoes; Variety]
 
 **Other successor/spinoff projects:**
+
 - **Bloodmoon** (Jane Goldman "Long Night" prequel, Naomi Watts) — pilot shot, **cancelled** by HBO (Deadline, Oct 2019).
 - **The Sea Snake** (formerly "Nine Voyages," Corlys Velaryon) — **switched from live-action to animation** in early 2024; no series order/air date. [in development]
 - **Ten Thousand Ships** (Nymeria; founding of Dorne) — written by Eboni Booth; new pilot reportedly in the works. [in development, unconfirmed]
@@ -96,6 +101,7 @@ date: 2026-06-01
 **Critical standing.** Lev Grossman (*Time*, tied to the 2005 *Feast for Crows* release) dubbed Martin **"the American Tolkien"** — praising his "refusal to embrace a vision of the world as a Manichaean struggle between Good and Evil." The tag was echoed by the NYT, New Yorker, EW, USA Today, and others. Britannica notes Martin excels at "subverting our expectations." [*Time* (Grossman); Wikipedia; Britannica]
 
 **Awards (as reported; primary award DBs were fetch-blocked — verify win-vs-nomination at sfadb.com before publishing specifics):**
+
 - "Blood of the Dragon" (Daenerys novella from *AGOT*) — **1997 Hugo Award, Best Novella** (win).
 - *A Game of Thrones*, *A Clash of Kings*, *A Storm of Swords* — each won the **Locus Award for Best Fantasy Novel**; *ADWD* also won a Locus poll.
 - *A Storm of Swords* — **2001 Hugo Best Novel nominee** (lost to *Harry Potter and the Goblet of Fire*).
@@ -104,6 +110,7 @@ date: 2026-06-01
 **Sales / reach (as reported):** **90+ million copies worldwide as of April 2019**; translated into **47 languages** (as of 2017). Avoid the rounded "~100 million" unless explicitly framed as promotional. [Wikipedia; Winter Is Coming]
 
 **Themes:**
+
 - **Moral ambiguity / gray characters** — "loyalty, pride, human sexuality, piety, and the morality of violence."
 - **Subversion of fantasy color-coding** — the (good) Night's Watch wears black; the (corrupt) Kingsguard wears white.
 - **GRRM's north star:** Faulkner's 1949 Nobel line, "the only thing worth writing about is the human heart in conflict with itself."

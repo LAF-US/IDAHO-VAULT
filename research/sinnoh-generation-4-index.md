@@ -24,7 +24,7 @@ Master index for Sinnoh's Gym Leaders, Elite Four, and Champion.
 ## Gym Leaders (8)
 
 | # | Gym Leader | City | Type | Badge | E1 |
-|---|------------|------|------|-------|----|
+| --- | ------------ | ------ | ------ | ------- | ---- |
 | 1 | **Roark** | Oreburgh City | Rock | Coal Badge | Yes |
 | 2 | **Gardenia** | Eterna City | Grass | Forest Badge | Yes |
 | 3 | **Maylene** | Veilstone City | Fighting | Cobble Badge | Yes |
@@ -35,6 +35,7 @@ Master index for Sinnoh's Gym Leaders, Elite Four, and Champion.
 | 8 | **Volkner** | Sunyshore City | Electric | Beacon Badge | Yes |
 
 ### Individual Files
+
 - [ ] Roark
 - [ ] Gardenia
 - [ ] Maylene
@@ -49,13 +50,14 @@ Master index for Sinnoh's Gym Leaders, Elite Four, and Champion.
 ## Elite Four (4)
 
 | # | Member | Type | E1 |
-|---|--------|------|----|
+| --- | -------- | ------ | ---- |
 | 1 | **Aaron** | Bug | Yes |
 | 2 | **Bertha** | Ground | Yes |
 | 3 | **Flint** | Fire | Yes |
 | 4 | **Lucian** | Psychic | Yes |
 
 ### Individual Files
+
 - [ ] Aaron
 - [ ] Bertha
 - [ ] Flint
@@ -70,6 +72,7 @@ Master index for Sinnoh's Gym Leaders, Elite Four, and Champion.
 | **Cynthia** | Mixed | Yes |
 
 ### Individual Files
+
 - [ ] Cynthia
 
 ---
@@ -77,7 +80,7 @@ Master index for Sinnoh's Gym Leaders, Elite Four, and Champion.
 ## Research Status
 
 | Category | Total | Completed | Remaining | % |
-|----------|-------|-----------|-----------|---|
+| ---------- | ------- | ----------- | ----------- | --- |
 | Gym Leaders | 8 | 0 | 8 | 0% |
 | Elite Four | 4 | 0 | 4 | 0% |
 | Champion | 1 | 0 | 1 | 0% |
@@ -86,6 +89,7 @@ Master index for Sinnoh's Gym Leaders, Elite Four, and Champion.
 ---
 
 ## Next Steps
+
 1. Start with **Roark** (Oreburgh City Gym Leader)
 2. Use Misty template
 

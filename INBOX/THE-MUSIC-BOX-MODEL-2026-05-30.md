@@ -52,7 +52,7 @@ silent between windings — and its integrity is in the waiting for the hand.**
 ## The mechanism, mapped
 
 | Part | Function | What it models | Doctrine |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **Mainspring** | Stores a finite charge, wound by a hand | Authorization — external, granted, not self-sourced | The firing-mechanism; "neither runs without sanction" (`CHAINLINK-v1`) |
 | **Barrel-pins** | Fixed pattern; the box plays only what is pinned | The conferred role / typed doctrine; no improvising a note that isn't there | "Similarity is not relation… not free-association" (`CHAINLINK-v1`) |
 | **Comb** | Steel teeth plucked into sound | The voice — the aperture the pinned tune passes through | *Persona = per + sona* (`PERSONAE-ENGINE-v1`) |

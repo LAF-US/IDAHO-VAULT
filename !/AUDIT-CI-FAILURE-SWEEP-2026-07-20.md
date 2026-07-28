@@ -12,7 +12,7 @@ owner: Logan Finney
 ## 5W Summary
 
 | | |
-|---|---|
+| --- | --- |
 | **Who** | GitHub Actions runners on `laf-us/idaho-vault` (63 workflows per the Actions API's `list_workflows`, which also counts platform-registered dynamic workflows like Dependabot Updates/CodeQL default setup/Copilot cloud agent; 49 are `.yml` files under `.github/workflows/`); Claude Code (this session, scheduled). No new human-caused breakage. |
 | **What** | 28 `Codacy Security Scan` failures + 2 `action_required`; 11 `Codacy Coverage Reporter` failures + 1 `action_required` (new workflow, 100% failure rate since its first run at 2026-07-19T19:48Z — merged 2026-07-18, first triggered the next day); 8-run `Agent Review Response`/`Review Feedback Loop` cluster (transient); 1 `CodeQL` failure on PR #450 (root cause not visible). `opencode.yml`/`Dependabot Rhythm` — 30/30 `skipped`, the 2026-07-02 fix (PR #737) still holds, no `startup_failure`. `cloud-run-deploy.yml` (PULLMAN)/`janitor-sweep.yml` — zero runs in-window, nothing to report. |
 | **When** | 2026-07-19T04:53Z – 2026-07-20T04:53Z. Codacy failures spread across the full window, before and after 16:34Z. The Review-Response cluster is isolated to 2026-07-20T00:00–00:02Z. |

@@ -13,6 +13,7 @@ This skill guides you through creating custom subagents for Cursor. Subagents ar
 ## When to Use Subagents
 
 Subagents help you:
+
 - **Preserve context** by isolating exploration from your main conversation
 - **Specialize behavior** with focused system prompts for specific domains
 - **Reuse configurations** across projects with user-level subagents
@@ -197,6 +198,7 @@ Write the frontmatter with the required fields (`name` and `description`).
 ### Step 4: Write the System Prompt
 
 The body becomes the system prompt. Be specific about:
+
 - What the agent should do when invoked
 - The workflow or process to follow
 - Output format and structure
@@ -220,6 +222,7 @@ Use the my-agent subagent to [task description]
 ## Troubleshooting
 
 ### Subagent Not Found
+
 - Ensure file is in `.cursor/agents/` or `~/.cursor/agents/`
 - Check file has `.md` extension
 - Verify YAML frontmatter syntax is valid

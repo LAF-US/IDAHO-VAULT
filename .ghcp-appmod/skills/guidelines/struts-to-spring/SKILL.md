@@ -15,7 +15,7 @@ This guideline provides comprehensive skills for migrating Apache Struts 2 appli
 ## Skill Files
 
 | File | Skills | Description |
-|------|--------|-------------|
+| ------ | -------- | ------------- |
 | [SKILL-config.md](SKILL-config.md) | migrate-maven-dependencies, create-spring-boot-application, create-application-properties | Project setup and configuration |
 | [SKILL-action.md](SKILL-action.md) | convert-action-to-controller, convert-action-properties | Action to Controller conversion |
 | [SKILL-view.md](SKILL-view.md) | convert-jsp-tags, convert-ognl-to-el, convert-result-types | View layer migration |
@@ -30,30 +30,34 @@ This guideline provides comprehensive skills for migrating Apache Struts 2 appli
 Execute skills in this order:
 
 ### Phase 1: Project Setup
+
 1. [ ] `migrate-maven-dependencies` - Update pom.xml ([SKILL-config.md](SKILL-config.md))
 2. [ ] `create-spring-boot-application` - Create main class ([SKILL-config.md](SKILL-config.md))
 3. [ ] `create-application-properties` - Create configuration ([SKILL-config.md](SKILL-config.md))
 
 ### Phase 2: Configuration Migration
+
 4. [ ] `migrate-struts-xml` - Plan controller structure ([SKILL-xml.md](SKILL-xml.md))
-5. [ ] `migrate-web-xml` - Remove Struts filter ([SKILL-xml.md](SKILL-xml.md))
+2. [ ] `migrate-web-xml` - Remove Struts filter ([SKILL-xml.md](SKILL-xml.md))
 
 ### Phase 3: Action Conversion
+
 6. [ ] `convert-action-to-controller` - Convert each Action class ([SKILL-action.md](SKILL-action.md))
-7. [ ] `convert-action-properties` - Handle Action properties ([SKILL-action.md](SKILL-action.md))
+2. [ ] `convert-action-properties` - Handle Action properties ([SKILL-action.md](SKILL-action.md))
 
 ### Phase 4: Cross-cutting Concerns
+
 8. [ ] `convert-validation` - Migrate validation logic ([SKILL-interceptor.md](SKILL-interceptor.md))
-9. [ ] `convert-interceptor` - Convert interceptors ([SKILL-interceptor.md](SKILL-interceptor.md))
+2. [ ] `convert-interceptor` - Convert interceptors ([SKILL-interceptor.md](SKILL-interceptor.md))
 
 ### Phase 5: View Layer
-10. [ ] `convert-result-types` - Handle result mappings ([SKILL-view.md](SKILL-view.md))
-11. [ ] `convert-jsp-tags` - Update JSP files ([SKILL-view.md](SKILL-view.md))
-12. [ ] `convert-ognl-to-el` - Fix expressions ([SKILL-view.md](SKILL-view.md))
+ 1. [ ] `convert-result-types` - Handle result mappings ([SKILL-view.md](SKILL-view.md))
+ 2. [ ] `convert-jsp-tags` - Update JSP files ([SKILL-view.md](SKILL-view.md))
+ 3. [ ] `convert-ognl-to-el` - Fix expressions ([SKILL-view.md](SKILL-view.md))
 
 ### Phase 6: Testing & Polish
-13. [ ] `convert-test-classes` - Update tests ([SKILL-test.md](SKILL-test.md))
-14. [ ] `create-exception-handler` - Global exception handling ([SKILL-test.md](SKILL-test.md))
+ 1. [ ] `convert-test-classes` - Update tests ([SKILL-test.md](SKILL-test.md))
+ 2. [ ] `create-exception-handler` - Global exception handling ([SKILL-test.md](SKILL-test.md))
 
 ---
 
@@ -62,6 +66,7 @@ Execute skills in this order:
 ### Before (Struts)
 
 **HelloAction.java:**
+
 ```java
 package com.example.action;
 
@@ -93,6 +98,7 @@ public class HelloAction extends ActionSupport {
 ```
 
 **struts.xml:**
+
 ```xml
 <action name="hello" class="com.example.action.HelloAction">
     <result name="success">/WEB-INF/jsp/hello.jsp</result>
@@ -101,6 +107,7 @@ public class HelloAction extends ActionSupport {
 ```
 
 **hello.jsp:**
+
 ```jsp
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <html>
@@ -113,6 +120,7 @@ public class HelloAction extends ActionSupport {
 ### After (Spring Boot)
 
 **HelloForm.java:**
+
 ```java
 package com.example.form;
 
@@ -130,6 +138,7 @@ public class HelloForm {
 ```
 
 **HelloController.java:**
+
 ```java
 package com.example.controller;
 
@@ -166,6 +175,7 @@ public class HelloController {
 ```
 
 **hello.jsp:**
+
 ```jsp
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
@@ -176,6 +186,7 @@ public class HelloController {
 ```
 
 **Application.java:**
+
 ```java
 package com.example;
 
@@ -191,6 +202,7 @@ public class Application {
 ```
 
 **application.properties:**
+
 ```properties
 server.port=8080
 spring.mvc.view.prefix=/WEB-INF/jsp/

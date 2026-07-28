@@ -342,7 +342,7 @@ The following is a sampling of spells featured in multiple *Dungeons & Dragons* 
 
 [^78]: Kulp, Kevin. ["Unearthed Arcana (3.5) - Product History"](https://www.drivethrurpg.com/product/3734/Unearthed-Arcana-35). *DriveThruRPG*. [Archived](https://web.archive.org/web/20190406214000/https://www.drivethrurpg.com/product/3734/Unearthed-Arcana-35) from the original on 2019-04-06. Retrieved 2020-06-02.
 
-[^79]: ["d20 SRD Variant Magic Rules: Incantations"](https://www.d20srd.org/srd/variant/magic/incantations.htm). *www.d20srd.org*. [Archived](https://web.archive.org/web/20201101125031/https://www.d20srd.org/srd/variant/magic/incantations.htm) from the original on 2020-11-01. Retrieved 2020-06-02.
+[^79]: ["d20 SRD Variant Magic Rules: Incantations"](https://www.d20srd.org/srd/variant/magic/incantations.htm). *<www.d20srd.org>*. [Archived](https://web.archive.org/web/20201101125031/https://www.d20srd.org/srd/variant/magic/incantations.htm) from the original on 2020-11-01. Retrieved 2020-06-02.
 
 [^80]: *Unearthed Arcana (3.5)*. Collins, Andy. Renton, Wash.: Wizards of the Coast. 2004. p. 174. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [0-7869-3131-0](https://en.wikipedia.org/wiki/Special:BookSources/0-7869-3131-0 "Special:BookSources/0-7869-3131-0"). [OCLC](https://en.wikipedia.org/wiki/OCLC_\(identifier\) "OCLC (identifier)") [54497874](https://search.worldcat.org/oclc/54497874).
 

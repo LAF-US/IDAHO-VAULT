@@ -49,7 +49,7 @@ I wired up an FAQ bot in two hours, but when I tried adding dynamic data fetchin
 
 Dialogflow CX is slick if you’re already deep in Google Cloud. Intents, entities, and flows are easy to define. Plus, its built-in…
 
-## Logan, become a member to read this story, and all of Medium.
+## Logan, become a member to read this story, and all of Medium
 
 Muhummad Zaki put this story behind our paywall, so it’s only available to read with a paid Medium membership, which comes with a host of benefits:
 

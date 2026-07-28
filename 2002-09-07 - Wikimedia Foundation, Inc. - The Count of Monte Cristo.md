@@ -443,7 +443,7 @@ Newspaper advertisement for The Campbell Playhouse presentation of "The Count of
 
 [^37]: Oliveira, Paulo Motta (2009). "A mão do finado: as extraordinárias aventuras de um sucesso mundial". *II Seminário Brasileiro Livro e História Editorial*.
 
-[^38]: ["A mão do finado (La main du défunt)"](https://www.pastichesdumas.com/php/fiche.php?id=23). *www.pastichesdumas.com*. Retrieved 26 February 2022.
+[^38]: ["A mão do finado (La main du défunt)"](https://www.pastichesdumas.com/php/fiche.php?id=23). *<www.pastichesdumas.com>*. Retrieved 26 February 2022.
 
 [^39]: Gans, Andrew.["Borchert to Star in World Premiere of Wildhorn's Count of Monte Cristo"](http://www.playbill.com/news/article/126412.html) [Archived](https://web.archive.org/web/20090425033936/http://www.playbill.com/news/article/126412.html) 25 April 2009 at the [Wayback Machine](https://en.wikipedia.org/wiki/Wayback_Machine "Wayback Machine"), playbill.com, 18 February 2009
 

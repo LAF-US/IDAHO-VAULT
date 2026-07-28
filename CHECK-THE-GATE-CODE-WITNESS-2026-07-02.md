@@ -92,7 +92,7 @@ gate."*
 
 This does not clear the thing it witnesses. As of filing, the doctrine edits to `!/LICH-PROBLEM`
 and `!/THRESHOLD-DOCTRINE` remain **ungated by CODEOWNERS**; the options I gave Logan (review
-#720 directly; split the doctrine edits out; add a CODEOWNERS rule — his surface, not mine) are
+# 720 directly; split the doctrine edits out; add a CODEOWNERS rule — his surface, not mine) are
 his to pick. The **live `main` branch protection** — whether PR #720 requires review to merge *at
 all* — I have now **read** (2026-07-03; ruleset id 16864823, via the public `/rules/branches/main`
 API, HTTP 200). The PR rule sets `required_approving_review_count: 0` with

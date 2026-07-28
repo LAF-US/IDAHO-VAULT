@@ -39,14 +39,14 @@ The first time you launch a newly installed Linux distribution, a console window
 By default, the installed Linux distribution will be Ubuntu. This can be changed using the `-d` flag.
 
 - To change the distribution installed, enter:
-	```powershell
-	wsl.exe --install [Distro]
-	```
-	Replace `[Distro]` with the name of the distribution you would like to install.
+ ```powershell
+ wsl.exe --install [Distro]
+ ```
+ Replace `[Distro]` with the name of the distribution you would like to install.
 - To see a list of available Linux distributions available for download through the online store, enter:
-	```powershell
-	wsl.exe --list --online
-	```
+ ```powershell
+ wsl.exe --list --online
+ ```
 
 If you run into an issue during the install process, check the [installation section of the troubleshooting guide](https://learn.microsoft.com/en-us/windows/wsl/troubleshooting#installation-issues).
 
@@ -137,19 +137,19 @@ The method you select should depend on what you're doing. If you've opened a WSL
 Try the most recent features or updates to WSL by joining the [Windows Insiders Program](https://www.microsoft.com/windowsinsider/getting-started). Once you have joined Windows Insiders, you can choose the channel you would like to receive preview builds from inside the Windows settings menu to automatically receive any WSL updates or preview features associated with that build. You can choose from:
 
 - Canary Channel:
-	- Ideal for highly technical users.
-		- Preview the latest platform changes early in the development cycle.
-		- These builds can be unstable and are released with limited to no documentation.
+ 	- Ideal for highly technical users.
+  		- Preview the latest platform changes early in the development cycle.
+  		- These builds can be unstable and are released with limited to no documentation.
 - Dev Channel:
-	- Ideal for enthusiasts.
-		- Access the latest Windows 11 preview builds as we incubate new ideas and develop long lead features.
-		- There will be some rough edges and low stability.
+ 	- Ideal for enthusiasts.
+  		- Access the latest Windows 11 preview builds as we incubate new ideas and develop long lead features.
+  		- There will be some rough edges and low stability.
 - Beta Channel:
-	- Ideal for early adopters.
-		- Preview and provide feedback on pre-release features for Windows 11 in a stable environment.
+ 	- Ideal for early adopters.
+  		- Preview and provide feedback on pre-release features for Windows 11 in a stable environment.
 - Release Preview Channel:
-	- Ideal if you want to preview fixes and certain key features, plus get optional access to the next version of Windows before it’s generally available to the world.
-		- This channel is also recommended for commercial users.
+ 	- Ideal if you want to preview fixes and certain key features, plus get optional access to the next version of Windows before it’s generally available to the world.
+  		- This channel is also recommended for commercial users.
 
 If you prefer not switching your Windows installation to a preview channel, you can still test the latest preview of WSL by issuing the command:
 

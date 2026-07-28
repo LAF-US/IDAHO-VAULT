@@ -7,7 +7,7 @@ created: 2026-04-14
 ---
 | “ | *Some parents. They wouldn't even pay the ransom.* | ” |
 | --- | --- | --- |
-|  |  |
+| | |
 
 The **Spats Family** is a rich family that includes the relatives of [Carmelita Spats](https://snicket.fandom.com/wiki/Carmelita_Spats "Carmelita Spats"). Most or all of them may be deceased.
 

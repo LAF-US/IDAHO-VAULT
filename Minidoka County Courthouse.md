@@ -6,4 +6,4 @@ related:
 - magistrate court
 ---
 
-magistrate court Minidoka County courthouse 
+magistrate court Minidoka County courthouse
