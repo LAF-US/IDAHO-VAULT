@@ -243,6 +243,13 @@ labels, and classification is a separate layer from routing.*
 - **filetype** fires `risk/low` (Machine Doc) or `risk/med` (Code); `—` (Natural Language) = no label.
 - **filedepth** fires `risk/high` (Nest / protected) or `risk/nope` (still-point); `—` (root) = no label.
 
+> *Correction (2026-07-27, `*.claude.*`, PR #854): the shipped `classify_paths.py` keys filedepth on
+> `!/` PLACEMENT alone — `!/` → `high`, `!/!/__!__/!/` → `nope`, everything else → `—`. The earlier
+> protected-surface pins (`.github/**`, top-level dotfolders, named governance files) were dropped in
+> the flatten per Logan's four-flat ruling, so those surfaces now score `—`, not `high`. The
+> "(Nest / protected)" gloss above is superseded by the code — flagged here, not edited above, per the
+> witness rule (testimony is fixed to its moment).*
+
 A PR carries at most one of each (0–2 labels). `—/—` = **no `risk/*` label at all**. No prefixes, no
 explicit `—` labels, no separate clear-marker. (This retired the drifted 9-string scheme — the prefixed
 pair + a lossy legacy `risk/{—,low,high}` trio — flattened to these four on 2026-07-20.)
