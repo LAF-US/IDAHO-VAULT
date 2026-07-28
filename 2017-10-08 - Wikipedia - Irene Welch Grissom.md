@@ -23,7 +23,7 @@ She obtained a Pd.B. from [Colorado State Teachers' College](https://en.wikipedi
 
 1) Maggie Smith Hathaway, 2) Alma Margaret Higgins, 3) Irene Welch Grissom, 4) Ethel Redfield, 5) Alma E. Plumb, 6) Letitia H. Erb, 7) Mrs. Bernard McHugh, 8) Catherine E. Van Valkeburg
 
-She was a writer and entertainer. She was appointed poet laureate of Idaho by State Governor [Charles C. Moore](https://en.wikipedia.org/wiki/Charles_C._Moore "Charles C. Moore"), in June 1923.[^3]
+She was a writer and entertainer. She was appointed poet laureate of [[Idaho]] by State Governor [Charles C. Moore](https://en.wikipedia.org/wiki/Charles_C._Moore "Charles C. Moore"), in June 1923.[^3]
 
 She is the author of:[^3]
 
@@ -61,3 +61,5 @@ She died on July 14, 1965, in [Arcadia, California](https://en.wikipedia.org/wik
 [^3]: Binheim, Max; Elvin, Charles A (1928). [*Women of the West; a series of biographical sketches of living eminent women in the eleven western states of the United States of America*](https://archive.org/details/womenofwestserie00binh). p. [122](https://archive.org/details/womenofwestserie00binh/page/n153). Retrieved 8 August 2017. This article incorporates text from this source, which is in the [public domain](https://en.wikipedia.org/wiki/Public_domain "Public domain").
 
 [^4]: ["Irene Welch Grissom, The Superintendent (1910)"](https://buddiesinthesaddle.blogspot.it/2013/08/irene-welch-grissom-superintendent-1910.html). 16 August 2013. Retrieved 8 October 2017.
+
+#idaho
