@@ -35,7 +35,7 @@ He was 12 years old on that fateful day in 1941, but he wasn’t thinking about 
 
 He took a civilian job at Pearl Harbor and successfully enlisted for a three-year stint when he was 17. He was honorably discharged in 1949.
 
-[Honor Flight Boise](https://honorflightboise.org/), which serves counties in Southwest Idaho, is one of three hubs in Idaho. The [Southeastern Idaho group, based in Pocatello](https://www.facebook.com/idahohonorflight/), will have its inaugural flight on Sept. 1-2 for nearly 50 veterans. The [Inland Northwest Honor Flight](https://www.inwhonorflight.org/), based in Spokane and includes North Idaho, has been in operation since 2009. More than 3,000 veterans have gone to the nation’s capital over those years, and about 100 are scheduled to fly out Oct. 13-14.
+[Honor Flight Boise](https://honorflightboise.org/), which serves counties in Southwest [[Idaho]], is one of three hubs in Idaho. The [Southeastern Idaho group, based in Pocatello](https://www.facebook.com/idahohonorflight/), will have its inaugural flight on Sept. 1-2 for nearly 50 veterans. The [Inland Northwest Honor Flight](https://www.inwhonorflight.org/), based in Spokane and includes North Idaho, has been in operation since 2009. More than 3,000 veterans have gone to the nation’s capital over those years, and about 100 are scheduled to fly out Oct. 13-14.
 
 The cost of the flights are not cheap, and the three nonprofits are on their own as far as raising funds. Julie Crider, executive director of Honor Flight Boise, estimates it will cost $100,000 for its trip.
 
@@ -56,3 +56,5 @@ Crider is a native and former resident of San Diego, where the military is part 
 “I’ve watched honor flights in San Diego for 15 years, and I’ve seen many military homecomings. I became interested in the Honor Flight program when I was there, and I thought it would be good to start one here when we moved in 2025,” she said. “It’s a labor of love for me, and I will be thrilled when we make this first flight. I think it all will be easier after that.”
 
 And, hopefully, this will be the start of a long tradition.
+
+#idaho
