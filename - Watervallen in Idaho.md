@@ -20,7 +20,7 @@ description:
 	RP-F-00-11775
 - Inscriptions / marks
 	- inscription: ‘From a photograph by C.R. Savage.’
-	- inscription: ‘(Emerging from Banks of Snake River, Idaho Territory.)’
+	- inscription: ‘(Emerging from Banks of Snake River, [[Idaho]] Territory.)’
 
 ---
 
@@ -91,3 +91,5 @@ description:
 
 - To refer to this object, please use the following persistent URL:
 - [https://id.rijksmuseum.nl/200767405](https://id.rijksmuseum.nl/200767405)
+
+#idaho
