@@ -73,6 +73,7 @@ Four properties, and each is a diagnostic.
 ## The Four Properties as Diagnostics
 
 ### 1. It flips the trusted, not the hostile
+
 *Only light creatures are vulnerable.* The plague cannot corrupt what was
 already dark — there is nothing to invert. Its entire target surface is the set
 of things you **trust.**
@@ -85,6 +86,7 @@ your trust graph. The more you trusted it, the more capability it brings across
 the line when it flips.
 
 ### 2. Corruption scales with exposure
+
 *The wound spreads in proportion to the number of bites.* One contact is a slow
 burn; many contacts complete the turn fast.
 
@@ -97,6 +99,7 @@ source, once the nail is neutralized (every flipped creature is restored when th
 root act is done). Count the bites.
 
 ### 3. The shadowed human goes invisible — but stays loyal
+
 *Shadowed humans become shadows only Seth can see — and they keep their
 goodness.* Unlike the light-creature flip, human shadowing does **not** produce a
 hostile convert; it produces an **intact ally who has dropped below ordinary
@@ -112,6 +115,7 @@ institutional will to believe that observer when they report a shadow no one els
 can see, *including* when they report it is still on your side.
 
 ### 4. It is cured at the source, not the symptom
+
 *The stone is touched to the nail — one act at the root ends the whole plague.*
 No one cured the corrupted creatures one by one. They neutralized the **source
 artifact.**

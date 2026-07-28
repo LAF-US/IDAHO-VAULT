@@ -21,8 +21,8 @@ related:
   - idedu
 ---
 
-Idaho House votes down the budget for public colleges and universities again, 23-46. 
-#idleg #idpol #idedu
+Idaho House votes down the budget for public colleges and universities again, 23-46.
+# idleg #idpol #idedu
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

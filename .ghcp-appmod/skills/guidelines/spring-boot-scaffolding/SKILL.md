@@ -26,7 +26,7 @@ You **MUST** consider the user input before proceeding (if not empty).
 ### Common Target Stacks
 
 | Source Stack | Recommended Target | JDK | Key Changes |
-|--------------|-------------------|-----|-------------|
+| -------------- | ------------------- | ----- | ------------- |
 | Struts 2 | Spring Boot 3.x | 17+ | MVC framework |
 | JSF 2.x | Spring Boot 3.x | 17+ | REST or Thymeleaf |
 | EJB 3.x | Spring Boot 3.x | 17+ | DI framework |

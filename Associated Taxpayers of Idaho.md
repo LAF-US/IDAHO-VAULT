@@ -5,6 +5,6 @@ related:
 - taxes
 authority: LOGAN
 ---
-President Miguel Legarreta 
+President Miguel Legarreta
 
-taxes 
+taxes

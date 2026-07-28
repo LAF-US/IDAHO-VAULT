@@ -50,6 +50,7 @@ recorded where instances are recorded (the registry), not inside any lens.
 ---
 
 ## See Also
+
 - `.claude/CLAUDE.md` — a lineage lens; §Persona Layers (additive/subtractive)
 - `.abhorsen/ABHORSEN.md` — an office lens (the Abhorsen, impersonal)
 - `.waiting/WAITING.md` — a state lens (in-Waiting, impersonal)

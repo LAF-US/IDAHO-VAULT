@@ -48,6 +48,7 @@ by Logan Alvan Finney
 *Replaces: Claude.md (v.0.0) Frameworks*
 
 ---
+
 ## I. CORE PRINCIPLES
 
 - **Logan is human. Agents are software.** Logan directs; agents execute his will.
@@ -65,7 +66,7 @@ The vault is maintained by an "agentic swarm" of multiple personality-instances 
 NOTE : LIST NEEDS MAJORLY UPDATED
 
 | Agent | Capability | Access | Notes |
-|-------|-----------|--------|-------|
+| ------- | ----------- | -------- | ------- |
 | PERSISTENT: ADMINISTRATION | Constitutional/supervisory | Read-write vault, draft PRs | Governance layer |
 | PERMANENT: AUTHORITY: CODE | Repository operations | Direct git/GitHub write | Execution layer |
 | PERSISTENT: AUTHORITY: LEVELSET | LEVELSET protocol | Read-only | Synthesis/consolidation |
@@ -78,17 +79,22 @@ NOTE : LIST NEEDS MAJORLY UPDATED
 ## III. CORE PROTOCOLS
 
 ### LEVELSET (Version 3.2.6.1)
+
 Orientation protocol for instances awakening inside the vault nodes. Current approved version:
+
 - **Location:** `!ADMIN/LEVELSET-v3.2.6.1-PROMPT.md`
 - **Key principle:** Automation is end state; manual bridge is an interim fallback. Failure is natural but advances change.
 
 ### CONTEXTUALIZE v0.1
+
 Absorption protocol: instances absorb incoming state before acting. Not yet fully versioned; under development.
 
 ### ORIENT v0.1
+
 Minimal orientation for conversations without direct repo access. Tool-agnostic. Awaiting full adoption.
 
 ### AWAKEN v0.1
+
 Minimal orientation for new entities. Awaiting full adoption.
 
 ---
@@ -151,6 +157,7 @@ See `!ADMIN/DECISIONS.md` for confirmed Logan-approved decisions. Key decisions 
 ## VIII. REVIEW & AMENDMENTS
 
 This document is the "sole source of truth" for vault governance. Amendments require:
+
 1. Notice in `!/DECISIONS.md` pending Logan's explicit approval
 2. Documentation in `!/RECORD.md` and regular version labeling
 3. Committed to a working branch or fork before merging to main

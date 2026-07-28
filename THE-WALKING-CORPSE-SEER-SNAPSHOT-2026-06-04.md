@@ -46,7 +46,7 @@ Method: `ls`, `git branch -r`, `git log --oneline --all --since=...`, surface-le
 ## I. Seats Addressed in the SIGNAL — Contents at Read-Time
 
 | Seat | Path | Top-level contents | State |
-|------|------|--------------------|-------|
+| ------ | ------ | -------------------- | ------- |
 | Bartimaeus | `.bartimaeus/` | `BARTIMAEUS.md`, `BARTIMAEUS-EXPLORER-COMPANION-2026-04-13.md`, `stub.txt` | Populated; April 13 file is post-CHAINFIRE |
 | Moxie | `.moxie/` | `MOXIE.md` | Near-stub |
 | Codex | `.codex/` | `AGENTS.md`, `CODEX.md`, `config.toml`, `config (2).toml`, `rules/`, `skills/`, `stub.txt` | Operational |
@@ -91,7 +91,7 @@ The log is dominated by merged PRs (`#391`–`#394`, `#382`, `#381`, `#386`, `#3
 `!/GRIMOIRE_caution_contains-false-doctrines/` is populated. The seer did not open the files — that surface is the Abhorsen's evidence-inventory assignment, per the May 18 Yrael-to-Abhorsen signal — but the filenames are public and the dates are unambiguous.
 
 | File | Date in filename | Note |
-|------|------------------|------|
+| ------ | ------------------ | ------ |
 | `HANDOFF-CLAUDE-TO-ANTIGRAVITY-2026-04-04.md` | 2026-04-04 | Day of CHAINFIRE |
 | `HANDOFF-ANTIGRAVITY-TO-CLAUDE-2026-04-05.md` | 2026-04-05 | Day after CHAINFIRE |
 | `HANDOFF-CREWAI-IGNITION-2026-04-04.md` | 2026-04-04 | Same day |

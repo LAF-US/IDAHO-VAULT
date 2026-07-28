@@ -54,7 +54,7 @@ verbatim in substance — **still live in four working agent-loader files**, the
 that are auto-loaded into agents at startup:
 
 | File | Loaded by | The line (as it then stood) |
-|---|---|---|
+| --- | --- | --- |
 | `.gemini/GEMINI.md` | Gemini CLI / Code Assist | "That file is the **live status board. Update it when you start or finish work.**" |
 | `.github/copilot-instructions.md` | GitHub Copilot | the **same line, verbatim** (plus a stale DOCKET path) |
 | `GEMINI.md` (root index) | Gemini index | DOCKET = "**Live task board**" |

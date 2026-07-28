@@ -52,7 +52,7 @@ Printing
 
 *RS: presidential primary party affiliation (Doug Ricks LD34)
 
-Taking out emergency clause – will not affect this year’s primary election 
+Taking out emergency clause – will not affect this year’s primary election
 
 Democrats joining primary this year, Republicans want to ensure party affiliation rules apply to presidential primary (90 days)
 

@@ -60,8 +60,6 @@ Our Sponsors
 
 Coin of Silver American Money with words In God We Trust/DepositPhoto
 
-  
-
 **By Walter Hesford | FāVS News Columnist**
 
 *The views expressed in this opinion column are those of the author. They do not necessarily reflect the* [*views*](https://favs.news/about-favs-news/) *of* [*FāVS News.*](https://favs.news/)

@@ -5,7 +5,7 @@ author:
 published: 2026-04-05
 created: 2026-04-06
 ---
-### With more than 96,000 signatures collected and volunteers canvassing statewide, organizers say Idaho voters are responding to personal stories and the real-world impact of the state’s abortion ban.
+### With more than 96,000 signatures collected and volunteers canvassing statewide, organizers say Idaho voters are responding to personal stories and the real-world impact of the state’s abortion ban
 
 ![](https://substackcdn.com/image/fetch/$s_!kL_a!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9cd39663-e7b5-4411-bcfb-afa7f3dffe4e_2856x2142.jpeg)
 
