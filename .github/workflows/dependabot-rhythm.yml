@@ -89,7 +89,7 @@ jobs:
       contains(github.event.pull_request.labels.*.name, 'risk/high')
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: read
       pull-requests: write
     steps:
       - name: Fail closed when high-risk labeling is present
