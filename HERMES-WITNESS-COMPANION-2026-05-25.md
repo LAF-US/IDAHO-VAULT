@@ -49,7 +49,7 @@ The companion report (`HERMES-WITNESS-REPORT-2026-05-25.md`) covers what Hermes 
 Two Hermes processes were active at time of survey:
 
 | PID | Process | Details |
-|---|---|---|
+| --- | --- | --- |
 | 62971 | `hermes_cli.main gateway run --replace` | Gateway daemon |
 | 63078 | `node whatsapp-bridge/bridge.js` | Port 3000, self-chat mode |
 
@@ -70,7 +70,7 @@ The gateway is registered as a macOS LaunchAgent. It starts automatically at log
 ## GATEWAY: LIVE PLATFORM STATE
 
 | Platform | State | Notes |
-|---|---|---|
+| --- | --- | --- |
 | Telegram | 🟢 connected | |
 | Discord | 🟢 connected | LAF-US guild |
 | WhatsApp | 🟢 connected | self-chat bridge, port 3000 |
@@ -79,7 +79,7 @@ The gateway is registered as a macOS LaunchAgent. It starts automatically at log
 **Discord channels known to Hermes:**
 
 | Channel | ID | Guild |
-|---|---|---|
+| --- | --- | --- |
 | `ledger` | 1495651518760882198 | LAF-US |
 | `purgatory` | 1495660774708871289 | LAF-US |
 
@@ -92,7 +92,7 @@ The `ledger` channel is designated as the Discord home channel in `config.yaml`.
 ### Binaries
 
 | Path | Version | Python | Status |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | `~/.hermes/hermes-agent/venv/bin/hermes` | v0.14.0 | 3.11 | **Active** |
 | `~/Library/Python/3.13/bin/hermes` | v0.12.0 | 3.13 | Stale at survey time — updated to v0.14.0 during this session |
 | `~/.local/bin/hermes` | unknown | — | Present |
@@ -113,7 +113,7 @@ File: `~/.hermes/config.yaml` (version 23, last modified 2026-05-24)
 Config backups present from: 2026-05-05 through 2026-05-19
 
 | Parameter | Value |
-|---|---|
+| --- | --- |
 | Default model | `mistralai/mistral-small-2603` via OpenRouter |
 | Fallback 1 | `anthropic/claude-sonnet-4` via OpenRouter |
 | Fallback 2 | `openai/gpt-4o-mini` via OpenRouter |
@@ -140,6 +140,7 @@ Config backups present from: 2026-05-05 through 2026-05-19
 **OpenRouter API key:** In `~/.hermes/.env` (not in config.yaml — correct pattern)
 
 `.env` backup history:
+
 - `.env.bak-20260518-BEEFSTACK`
 - `.env.bak-20260519-hermes-direct-mistral`
 
@@ -197,7 +198,7 @@ Integration with Claude Code requires a `.mcp.json` in the vault root or an `mcp
 ## MEMORY STATE
 
 | File | State | Notes |
-|---|---|---|
+| --- | --- | --- |
 | `MEMORY.md` | Empty | Wiped this morning by Logan's direction |
 | `USER.md` | Absent | Wiped this morning by Logan's direction |
 | `MEMORY.md.lock` | Absent | Lock file does not exist |
@@ -214,7 +215,7 @@ Memory starts fresh as of this morning.
 21 categories containing skills in `~/.hermes/skills/`, totaling 95 SKILL.md files. (Four additional empty category directories — `domain`, `inference-sh`, `diagramming`, `gifs` — contain no SKILL.md files and are excluded from the table below.)
 
 | Category | Notable sub-skills |
-|---|---|
+| --- | --- |
 | `autonomous-ai-agents` | claude-code, codex, hermes-agent, kanban-codex-lane, opencode |
 | `note-taking` | **obsidian** |
 | `github` | codebase-inspection, github-auth, github-code-review, github-issues, github-pr-workflow, github-repo-management |
@@ -246,7 +247,7 @@ Note: Skills are installed but not all toolsets are active. The `toolsets:` fiel
 ## LOCAL OLLAMA MODELS
 
 | Model | Size | Last modified |
-|---|---|---|
+| --- | --- | --- |
 | devstral:latest | 14 GB | ~2 weeks ago |
 | codestral:latest | 12 GB | ~3 weeks ago |
 | mistral-large:latest | 73 GB | ~3 weeks ago |

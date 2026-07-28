@@ -216,7 +216,7 @@ Common causes:
 
 Claude Code offers several ways to work when you’re not at your terminal. They differ in what triggers the work, where Claude runs, and how much you need to set up.
 
-|  | Trigger | Claude runs on | Setup | Best for |
+| | Trigger | Claude runs on | Setup | Best for |
 | --- | --- | --- | --- | --- |
 | [Dispatch](https://code.claude.com/docs/en/desktop#sessions-from-dispatch) | Message a task from the Claude mobile app | Your machine (Desktop) | [Pair the mobile app with Desktop](https://support.claude.com/en/articles/13947068) | Delegating work while you’re away, minimal setup |
 | [Remote Control](https://code.claude.com/docs/en/remote-control) | Drive a running session from [claude.ai/code](https://claude.ai/code) or the Claude mobile app | Your machine (CLI or VS Code) | Run `claude remote-control` | Steering in-progress work from another device |

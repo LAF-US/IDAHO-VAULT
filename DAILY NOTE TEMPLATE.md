@@ -1,4 +1,5 @@
 <%* const d = moment(tp.file.title, "YYYY-MM-DD") -%>
+
 ---
 title: <% d.format("YYYY-MM-DD") %>
 aliases:
@@ -20,6 +21,7 @@ tags:
   - dailynote
 date created: <% d.format("dddd, MMMM Do YYYY, h:mm:ss a") %>
 date modified: <% d.format("dddd, MMMM Do YYYY, h:mm:ss a") %>
+
 ---
 
 [[TO DO LIST]]

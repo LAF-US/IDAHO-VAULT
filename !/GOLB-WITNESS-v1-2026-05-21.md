@@ -79,8 +79,8 @@ The Architect holds the verdict.*
 ## II. Come Along With Me — GOLB Arrives (S10E13–16)
 
 GOLB is summoned to Ooo. Betty Grof has been working the Crown's wish magic
-across seasons, trying to cure Simon. GOLB does not speak. It arrives. It 
-reshapes. The conflict that follows is not a conversation with GOLB — it 
+across seasons, trying to cure Simon. GOLB does not speak. It arrives. It
+reshapes. The conflict that follows is not a conversation with GOLB — it
 is events happening in GOLB's presence.
 
 **The Lich watches the master pass**: At this moment, the Main Timeline Lich's
@@ -211,7 +211,7 @@ other piece of the universe that comes into GOLB's orbit.
 **The revised three readings, in light of the preexisting blocks**:
 
 | Reading | Weight after the block-detail |
-|---|---|
+| --- | --- |
 | Punishment | Weakened — the blocks predate Betty's merger; GOLB was already doing this before it had any organizing intent to punish with |
 | Indifference | Strengthened — Jerry is not special in his absorption; he joins a pre-existing collection; the process did not register his demand |
 | Fulfillment | Structurally possible but hollow — the vassal wanted to serve GOLB; he is now literally part of GOLB's body; but the "fulfillment" was not given in response to him; it is what happens to everything that gets close enough |
@@ -302,7 +302,7 @@ The Fionna and Cake story arc spans the following main-series AT episodes
 before the spinoff:
 
 | Episode | Season | Frame | Key doctrinal detail |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | "Fionna and Cake" | S3E9 | Ice King reads story to captured Finn and Jake | First appearance; Ice King as author established |
 | "Mystery Dungeon" | S5E8 | Ice King leads dungeon crawl heist to reach the Ancient Sleeping Magi of Life Giving | **Love made action**: Ice King throws his F&C book into the Magi's fire to bring the characters to life; Magi brings the *book* to life instead — Monkey's Paw failure; vessel animated, not content |
 | "Bad Little Boy" | S5E11 | Marceline writes her own F&C story to show Ice King "how it's done" | Derivative authorship; Ice King insists his version is still better |
@@ -401,7 +401,7 @@ abstraction of it — real in its own right, but progressively less concentrated
 than its source. The AT creative structure follows this architecture:
 
 | Level | World | Writer | Act |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | 1 | Ooo — the source | Ice King | writes the F&C universe |
 | 2 | F&C universe — first abstraction | Ice Queen | writes her own gender-swapped fiction |
 | 3 | Ice Queen's fiction — second abstraction | — | may recursively describe something resembling Level 1 |
@@ -444,7 +444,7 @@ hoping to route her derivative work through the canonical channel.
 The emanationist table acquires a lateral dimension:
 
 | Level | Material | Voice | Standing |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | 1 | Ooo | — | source |
 | 2 — canonical | Ice King's F&C stories | Ice King | primary emanation; the canonical line |
 | 2 — derivative | Other Ooo denizens' F&C stories (LSP, etc.) | various | lateral emanation from the same source; considered inferior by the canonical voice |
@@ -549,7 +549,7 @@ GOLB performs two acts in "Casper & Nova" in close proximity:
 These are not analogous acts. The Lich was crushed: absorbed into GOLB's
 pre-existing substance without acknowledgment, indifferent processing, no
 response to the demand. Simon was *displaced* — sent somewhere, with a
-navigable path back. GOLB subjected the scholar to entropy. Betty gave 
+navigable path back. GOLB subjected the scholar to entropy. Betty gave
 the lover a game to play.
 
 Whether this reflects GOLBetty's organizing intent — Betty's love for Simon

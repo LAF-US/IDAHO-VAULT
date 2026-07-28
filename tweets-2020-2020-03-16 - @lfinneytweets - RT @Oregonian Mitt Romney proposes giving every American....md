@@ -15,12 +15,14 @@ related:
   - lfinneytweets
 ---
 
-RT @Oregonian: Mitt Romney proposes giving every American $1,000 during coronavirus outbreak https://t.co/ODXO8I0ymz https://t.co/6vF21gt3sT
+RT @Oregonian: Mitt Romney proposes giving every American $1,000 during coronavirus outbreak <https://t.co/ODXO8I0ymz> <https://t.co/6vF21gt3sT>
 
 ## Links
-- https://trib.al/3oBQpWX
+
+- <https://trib.al/3oBQpWX>
 
 ## Media
+
 - ![](https://pbs.twimg.com/media/ETQNcpIXYAcPUap.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1239630996711952387)

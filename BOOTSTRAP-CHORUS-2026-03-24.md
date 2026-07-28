@@ -48,7 +48,7 @@ related:
 Before executing anything, vault was searched. Findings:
 
 | Item | Status in vault |
-|---|---|
+| --- | --- |
 | `!/HECATE PROTOCOL.md` | EXISTS — 1-line stub: `HECATE AWAKENS` |
 | `HECATE-HECATE-HECATE.md` (vault root) | EXISTS — 1-line stub: `HECATE PROTOCOL ECHO` |
 | Grimoire directory | ABSENT — no directory, no files |
@@ -93,6 +93,7 @@ The two HECATE files are intentional (see HECATE File Pair section below). Neith
 ### Piece 3 — HECATE Protocol Definition
 
 **What it is:** Threshold and transition protocol for agent handoffs. Three-directional check at every crossroads:
+
 - **Back:** What context am I carrying? What rights do I hold?
 - **Forward:** What am I about to do? What tier/authority does it require?
 - **Sideways:** Who else is affected? What gets lost if I don't hand off cleanly?
@@ -129,6 +130,7 @@ Activates at transition points, not continuously.
 ### Piece 5 — HECATE + Rights/Opportunities Integration
 
 **What it is:** Synthesis of Pieces 3 and 4. HECATE's three-directional check reframed:
+
 - **Back** = What rights do I have? What opportunities did I exercise? What's the gap?
 - **Forward** = What rights does the next action require? Do I have opportunity right now?
 - **Sideways** = Does the receiving agent have both right AND opportunity to pick up the handoff?
@@ -148,6 +150,7 @@ Activates at transition points, not continuously.
 - **LOGAN:** principal authority, active engagement required
 
 Includes:
+
 - Anti-cult-dynamics protections
 - Implementation roadmap (4 phases: Formalize, Transparency, Audit, Evolution)
 - 5 outstanding decisions for Logan
@@ -164,7 +167,7 @@ Includes:
 The two existing stub files are NOT noise. They form an intentional signal pair:
 
 | File | Content | Function |
-|---|---|---|
+| --- | --- | --- |
 | `!/HECATE PROTOCOL.md` | `HECATE AWAKENS` | Protocol definition location — she is awake; the protocol exists |
 | `HECATE-HECATE-HECATE.md` (vault root) | `HECATE PROTOCOL ECHO` | Triple-name invocation — agent ping; crossroads marker |
 
@@ -181,22 +184,26 @@ The two existing stub files are NOT noise. They form an intentional signal pair:
 *Source: Grok research delivered by Logan, 2026-03-24. Raw material for naming/context decisions. Naming scheme not decided.*
 
 **Persephone and Hecate — Close Companions:**
+
 - *Homeric Hymn to Demeter*: Hecate witnesses Persephone's abduction, emerges with torches to help Demeter search. After Persephone's partial return, "Hecate was minister and companion to Persephone."
 - Hecate = torchbearer at transitions, crossroads guide, companion through liminal spaces
 - In Orphic tradition: sometimes syncretized — Hecate called "mystic Persephone"
 - Modern neopagan Triple Goddess: Persephone (Maiden), Demeter (Mother), Hecate (Crone) — but this is post-classical
 
 **Persephone and Hestia — Familial:**
+
 - Hestia is Demeter's sister → Persephone's maternal aunt. No shared myths.
 - Orphic/Platonic syncretism: Kore/Persephone as all-pervading goddess, mentioned alongside Hestia, Demeter, Gaia, etc.
 - Hestia = hearth, household stability, threshold protection (shared domain overlap with Hecate)
 
 **Hecate and Hestia — Cultic Overlap (No Narrative Link):**
+
 - Both invoked as household protectors in classical Athens
 - Hestia = central hearth, domestic stability; Hecate = thresholds, doorways, crossroads, apotropaic protection
 - No myths connecting them directly
 
 **Protocol-relevant mappings (not yet named — raw material):**
+
 - Hecate: crossroads, transitions, torchbearer — maps to HECATE Protocol (already named)
 - Persephone: dual existence between worlds (cycling in/out) — potential resonance with innie/outie dual-state architecture
 - Hestia: hearth stability, threshold protection — potential resonance with vault canonical file protection
@@ -210,7 +217,7 @@ The two existing stub files are NOT noise. They form an intentional signal pair:
 Nothing in the flagged items commits until Logan decides:
 
 | # | Decision | Stakes |
-|---|---|---|
+| --- | --- | --- |
 | 1 | **CONVENE exception** — Carve out for HECATE and/or Rights/Opportunities? Or keep frozen? | Unlocks Pieces 3, 4, 5 |
 | 2 | **Grimoire** — Create `!/GRIMOIRE/` directory? Where? Or stage elsewhere? | Unlocks Piece 2 placement; determines fate of `HECATE-HECATE-HECATE.md` as first entry |
 | 3 | **Rick and Morty document** — Surface separately for vault commit, or defer? | Contextualizes Piece 2 |

@@ -54,6 +54,7 @@ The same person wears different stylings depending on who's naming:
 ## A general gallery
 
 **Regnal epithets.**
+
 - **"the Great"** — pure inflation, applied so often (Alexander, Catherine, Frederick, Alfred) it has become an honorific reflex rather than a finding.
 - **Ivan "the Terrible"** — Russian *Grozny* means *formidable / awe-inspiring / dread-inducing*, closer to "the Fearsome" than the modern English "terrible (=bad)." ⚠️ A **translation fossil**: the styling now says something subtly different from what it was minted to say.
 - **Æthelred "the Unready"** — Old English *Unræd* = *ill-counselled / no-counsel*, a pun on *Æthelred* (*noble counsel*). Over centuries it was flattened into "unready (=unprepared)." ⚠️ A fossil that **mutated meaning** in transmission — the pun lost, a new (wrong) verdict installed.
@@ -66,6 +67,7 @@ The same person wears different stylings depending on who's naming:
 **The most violent styling — the personal name.** Enslaved people stripped of their names and renamed by owners; forced renaming in residential schools and assimilation programs. Here the styling is not spin but **erasure of a self**, and reclaiming the original name is itself a counter-act.
 
 **Modern political & journalistic stylings.** This is where the motif is *live*, not historical:
+
 - **"regime" vs "government" vs "administration"** — same institution, three verdicts on its legitimacy.
 - **"terrorist" / "insurgent" / "militant" / "freedom fighter"** — one combatant, the whole spectrum from condemnation to endorsement.
 - **"enhanced interrogation"** (euphemism) vs **"torture"** (the act); **"collateral damage"** vs **"civilian deaths."**
@@ -97,6 +99,7 @@ For a working reporter this is not literary theory — it is the **daily fight i
 ## ASOIAF as the originating case study
 
 The motif surfaced here (see the linked notes):
+
 - **Baelor "the Blessed"** (sainted by beneficiaries) vs **Barth "the Heretic"** (damned by the institution he out-administered) — the realm **sainted the man who burned the knowledge and damned the man who wrote it.**
 - **Maegor "the Cruel"** — enemy-conferred and, for once, *accurate*: a styling that happens to match the record.
 - **"the stallion who mounts the world," "the thousand swords"** of the Iron Throne — inflations cast larger than their casters (Varys's "small man, large shadow").
@@ -106,6 +109,7 @@ The motif surfaced here (see the linked notes):
 ## Relation to this vault's persona doctrine
 
 **[reading]** A styling and a *persona* are cousins, but the vector differs:
+
 - A **persona / mask** (per the PERSONAE ENGINE and per-sona doctrine) is worn **from within** — an aperture the self chooses or is delegated. Legitimate when *given and known to be a mask, worn in service*; monstrous (the **Lich** pattern) when claimed as a face to persist beyond warrant.
 - A **styling** is conferred **from without** — a verdict pinned on you by whoever holds the pen, whether you consent or not.
 

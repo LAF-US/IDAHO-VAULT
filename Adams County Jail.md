@@ -5,4 +5,4 @@ related:
 - County Sheriff
 ---
 
-County Sheriff, Adams County jail 
+County Sheriff, Adams County jail

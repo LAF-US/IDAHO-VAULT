@@ -5,4 +5,4 @@ related:
 - Kootenai County
 authority: LOGAN
 ---
-Harrison, Kootenai County 
+Harrison, Kootenai County
