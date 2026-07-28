@@ -9,6 +9,7 @@
 ## Part 1: Local Installation (Developer Machine)
 
 ### Prerequisites
+
 - Windows 11 Pro (confirmed)
 - Git Bash installed (`C:\Program Files\Git\bin\bash.exe`)
 - 1Password app (desktop) already signed in
@@ -17,18 +18,20 @@
 ### Step 1: Install 1Password CLI
 
 **Option A: Scoop (recommended for this machine)**
+
 ```bash
 scoop install 1password
 op --version  # Verify
 ```
 
 **Option B: Homebrew**
+
 ```bash
 brew install 1password-cli
 ```
 
 **Option C: Manual download**
-Download from https://app-updates.agilebits.com/check/win/1password/latest — extract to `C:\Program Files\1Password CLI\` and add to `PATH`.
+Download from <https://app-updates.agilebits.com/check/win/1password/latest> — extract to `C:\Program Files\1Password CLI\` and add to `PATH`.
 
 ### Step 2: Configure Shell Integration
 
@@ -48,6 +51,7 @@ alias op-signin='eval $(op signin)'
 ```
 
 Reload shell:
+
 ```bash
 source ~/.bashrc
 ```
@@ -60,6 +64,7 @@ op account add
 ```
 
 Test:
+
 ```bash
 op account list
 op vault list
@@ -70,6 +75,7 @@ op vault list
 Assumption: You have an SSH key in 1Password vault (e.g., "GitHub SSH Key" item).
 
 **Retrieve key fingerprint:**
+
 ```bash
 op item get "GitHub SSH Key" --fields private_key --format json | jq -r '.value' > /tmp/gh_key
 ssh-keygen -l -f /tmp/gh_key
@@ -77,6 +83,7 @@ rm /tmp/gh_key
 ```
 
 **Enable SSH agent in 1Password desktop app:**
+
 - Open 1Password → Settings → Developer
 - Toggle "SSH Agent" ON
 - Authorize the SSH key
@@ -84,6 +91,7 @@ rm /tmp/gh_key
 **Configure SSH to use 1Password agent:**
 
 Create/edit `~/.ssh/config`:
+
 ```
 Host github.com
   AddKeysToAgent yes
@@ -175,7 +183,7 @@ jobs:
 Create these items in 1Password (Vault: "IDAHO-VAULT" or suitable team vault):
 
 | Item Name | Type | Usage | Status |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | `GitHub Personal Access Token` | Password | GitHub API calls, Linear sync | Create |
 | `GitHub SSH Key` | SSH Key | Git commits, pushes | Create |
 | `Linear API Key` | Password | Linear workspace sync | Migrate (currently in GitHub Secrets) |
@@ -204,7 +212,7 @@ op item get "Secret Name" --fields label=username --format json
 ## Part 4: Troubleshooting
 
 | Problem | Solution |
-|---|---|
+| --- | --- |
 | `op: command not found` | Add 1Password to PATH; check `echo $PATH` |
 | SSH agent socket error | Ensure 1Password desktop app running + SSH Agent enabled in settings |
 | Git signing fails | Verify `git config gpg.format ssh` and key fingerprint matches |

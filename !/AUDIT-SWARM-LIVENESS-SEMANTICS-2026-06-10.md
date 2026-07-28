@@ -40,7 +40,7 @@ voice, service, office, session, branch, or task.
 ## Semantic Boundary
 
 | Record type | Durable meaning | It does not establish |
-|---|---|---|
+| --- | --- | --- |
 | Registration | A tool, lineage, shim, capability, or discovery path is recorded | A running instance or reachable service |
 | Observation | A fact was recorded on a stated date with a source | Continued activity after that date |
 | Appointment event | Logan appointed, ended, or corrected a named voice or instance for a defined office and scope | Continuing occupancy without later evidence |
@@ -82,7 +82,7 @@ No universal occupancy ledger is created.
 ## Surface Disposition
 
 | Surface | Finding | Disposition |
-|---|---|---|
+| --- | --- | --- |
 | `CONSTITUTION.md` | Governing rule already rejects durable live coordination and inherited office occupancy | Left substantively unchanged |
 | root `README.md` and `AGENTS.md` | Orientation language called structural or implementation surfaces live/current | Reworded as canonical, governed, or dated |
 | `!/WAKEUP.md` | Named current live surfaces and directed agents back to an active live surface | Replaced with canonical precedence and present-runtime evidence rules |

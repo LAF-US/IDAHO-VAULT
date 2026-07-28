@@ -16,9 +16,10 @@ related:
   - AttentionIdahoReporters
 ---
 
-#AttentionIdahoReporters https://t.co/SXnMlbiaim
+# AttentionIdahoReporters <https://t.co/SXnMlbiaim>
 
 ## Links
-- https://x.com/DonLDay/status/1239630927086505984
+
+- <https://x.com/DonLDay/status/1239630927086505984>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1239631447490609152)

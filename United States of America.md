@@ -6,4 +6,4 @@ related:
 - Pacific Ocean
 authority: LOGAN
 ---
-bordered by Canada and Mexico, Atlantic Ocean and Pacific Ocean 
+bordered by Canada and Mexico, Atlantic Ocean and Pacific Ocean

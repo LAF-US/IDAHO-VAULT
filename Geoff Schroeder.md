@@ -9,6 +9,6 @@ authority: LOGAN
 ---
 former LD8 Senator beaten in primary by Christy Zito
 
-attorney 
+attorney
 
-atheist 
+atheist
