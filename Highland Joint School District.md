@@ -4,4 +4,4 @@ related:
 - Lewis County
 authority: LOGAN
 ---
-Craigmont, Lewis County 
+Craigmont, Lewis County

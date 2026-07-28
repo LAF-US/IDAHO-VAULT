@@ -4,4 +4,4 @@ related:
 - legislative
 authority: LOGAN
 ---
-counties legislative body 
+counties legislative body

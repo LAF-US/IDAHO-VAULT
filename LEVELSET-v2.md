@@ -76,7 +76,7 @@ IDAHO-VAULT/
 ### Infrastructure Built
 
 | Asset | Type | Commit | Branch |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | `so***REMOVED***audit.py` | Python | `4754d08` | main |
 | `sort-audit.yml` (GitHub Action) | YAML | `4754d08` | main |
 | `sort-audit-2026-03-12.md` | Markdown (output) | `f7089f9` | main |
@@ -98,7 +98,7 @@ IDAHO-VAULT/
 ### Conversations with Known Contributions
 
 | Conversation | Tier | Role | Known Output | Status |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | **PERMANENT: CODE AUTHORITY** (this session) | 1 | Authoritative code session; LEVELSET synthesis | This document | Active |
 | **PERSISTENT: ADMINISTRATION** | Unknown | Vault governance, CLAUDE.md, Ethics.md | Unknown — nothing committed to repo | Unknown |
 | **TASK: LEVELSET reports** | Unknown | LEVELSET synthesis hub | Distributed LEVELSET v2 prompt | Active |
@@ -109,7 +109,7 @@ IDAHO-VAULT/
 ### Conversations — Context/Research (likely Tier 3)
 
 | Conversation | Probable Role |
-|---|---|
+| --- | --- |
 | Idaho Public Television overview a... | Background context on IPTV |
 | Idaho Reports episode production... | Production workflow reference |
 | Understanding Black's Law diction... | Legal terminology lookup |
@@ -156,6 +156,7 @@ The following conversations appear to be single-query research lookups with no o
 **2. PERSISTENT: ADMINISTRATION + This session — EVALUATE**
 
 If PERSISTENT: ADMINISTRATION has not produced committed artifacts (CLAUDE.md, Ethics.md), and this session now holds Tier 1 authoritative status, Logan should decide:
+
 - Does ADMINISTRATION remain the governance conversation? If so, it should produce CLAUDE.md and Ethics.md.
 - Or should this CODE AUTHORITY session absorb that role?
 
@@ -174,7 +175,7 @@ Branch `claude/idaho-legislature-scraper-RI6Ku` has 4 commits ahead of main. It 
 ## UNRESOLVED & PENDING
 
 | Item | Waiting On | Priority |
-|---|---|---|
+| --- | --- | --- |
 | CLAUDE.md creation | Logan's direction on content/scope | High |
 | Ethics.md creation | Logan's direction on content/scope | High |
 | LEVELSET v1 — was it produced? | Logan or ADMINISTRATION conversation | Low (historical) |

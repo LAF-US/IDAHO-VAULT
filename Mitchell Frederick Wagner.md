@@ -4,4 +4,4 @@ related:
 - Patriot Front
 authority: LOGAN
 ---
-Patriot Front member, Missouri resident 
+Patriot Front member, Missouri resident

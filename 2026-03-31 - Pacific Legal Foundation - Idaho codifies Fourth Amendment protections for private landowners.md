@@ -42,4 +42,4 @@ No files available.
 
 Pacific Legal Foundation is a national nonprofit law firm that defends Americans threatened by government overreach and abuse. Since our founding in 1973, we challenge the government when it violates individual liberty and constitutional rights. With active cases in 34 states plus Washington, D.C., PLF represents clients in state and federal courts, with 18 wins of 20 cases litigated at the U.S. Supreme Court.
 
-If you are on deadline and need immediate assistance, or need a comment from a PLF attorney, please contact our media team at media@pacificlegal.org.
+If you are on deadline and need immediate assistance, or need a comment from a PLF attorney, please contact our media team at <media@pacificlegal.org>.

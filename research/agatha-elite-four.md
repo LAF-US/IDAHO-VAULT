@@ -1,6 +1,7 @@
 # Agatha - The Elite Four Ghost Master
 
 ## Table of Contents
+
 1. [Overview](#overview)
 2. [Game Appearances](#game-appearances)
 3. [Teams and Battle Strategies](#teams-and-battle-strategies)
@@ -27,8 +28,9 @@
 ## Game Appearances
 
 ### Generation I (Red, Blue, Green, Yellow)
+
 - **Location**: Indigo Plateau (Chamber 3)
-- **Team**: 
+- **Team**:
   - Gengar (Lv. 54) - Hypnosis, Lick, Dream Eater, Confuse Ray
   - Golbat (Lv. 54) - Leech Life, Bite, Confuse Ray, Wing Attack
   - Haunter (Lv. 53) - Lick, Confuse Ray, Night Shade
@@ -38,11 +40,13 @@
 - **Notable**: Uses standard Trainer battle theme
 
 ### Generation II (Gold, Silver, Crystal)
+
 - **Status**: Absent. Agatha does **not** appear in the Generation II Elite Four. The Indigo Plateau Elite Four in Gold/Silver/Crystal is Will, Koga, Bruno, and Karen — Karen (Dark-type specialist) occupies the lineup in this era. There is no Generation II Agatha battle.
 
 ### Generation III (FireRed, LeafGreen)
+
 - **Location**: Indigo Plateau (Chamber 3)
-- **Team**: 
+- **Team**:
   - Gengar (Lv. 54) - Confuse Ray, Shadow Punch, Double Team, Toxic
   - Golbat (Lv. 54) - Confuse Ray, Bite, Air Cutter, Poison Fang
   - Haunter (Lv. 53) - Mean Look, Curse, Hypnosis, Dream Eater
@@ -52,14 +56,16 @@
 - **Notable**: Updated movesets with new moves
 
 ### Generation IV (HeartGold, SoulSilver)
+
 - **Location**: Indigo Plateau (Chamber 3)
 - **Team**: Same as FireRed/LeafGreen
 - **Reward**: 5,400 Poké Dollars
 - **Notable**: Can be battled again after becoming Champion
 
 ### Generation VII (Let's Go, Pikachu! and Eevee!)
+
 - **Location**: Indigo Plateau (Chamber 3)
-- **Team**: 
+- **Team**:
   - Arbok (Lv. 54)
   - Golbat (Lv. 54)
   - Wheezing (Lv. 53)
@@ -70,6 +76,7 @@
 - **Notable**: Updated team with Alolan Marowak and Wheezing
 
 ### Other Appearances
+
 - Pokémon Stadium 2: Elite Four, uses Gengar, Golbat, Haunter, Arbok, Muk
 - Pokémon Masters EX: Sync pair with Gengar
 - Pokémon Puzzle League: Opponent
@@ -81,7 +88,7 @@
 ### Core Team Across Games
 
 | Game | Pokémon | Level | Type | Moves |
-|------|---------|-------|------|-------|
+| ------ | --------- | ------- | ------ | ------- |
 | RBY | Gengar | 54 | Ghost/Poison | Hypnosis, Lick, Dream Eater, Confuse Ray |
 | RBY | Golbat | 54 | Poison/Flying | Leech Life, Bite, Confuse Ray, Wing Attack |
 | RBY | Haunter | 53 | Ghost/Poison | Lick, Confuse Ray, Night Shade |
@@ -100,6 +107,7 @@
 | LGPE | Gengar | 60 | Ghost/Poison | Various |
 
 ### Signature Pokémon
+
 - Gengar (lead Pokémon, appears twice in most games)
 - Golbat (Poison/Flying support)
 - Haunter (Ghost/Poison, status inducer)
@@ -107,7 +115,9 @@
 - Alolan Marowak (Fire/Ghost in Let's Go)
 
 ### Battle Strategy
+
 Agatha's battle strategy is characterized by:
+
 1. Status-inducing moves (Hypnosis, Confuse Ray, Toxic, Poison Fang)
 2. Ghost-type offense (Shadow Ball, Night Shade, Lick)
 3. Poison-type coverage (Sludge Bomb, Poison Sting)
@@ -115,6 +125,7 @@ Agatha's battle strategy is characterized by:
 5. Life-draining moves (Dream Eater, Leech Life)
 
 ### Recommended Counters
+
 - Psychic-types: Super effective against Poison (Alakazam, Espeon, Exeggutor)
 - Dark-types: Super effective against Ghost (Gen II+)
 - Ground-types: Super effective against Poison (Arbok)
@@ -128,6 +139,7 @@ Agatha's battle strategy is characterized by:
 ## Anime and Manga Appearances
 
 ### Main Anime
+
 - **Name**: Agatha
 - **Debut**: Episode "To Master the Onixpected!" (first Elite Four appearance)
 - **Role**: Elite Four member at Indigo Plateau
@@ -139,6 +151,7 @@ Agatha's battle strategy is characterized by:
   - Used mind-controlling wristbands on other Elite Four
 
 ### Key Anime Moments
+
 - First Elite Four member introduced in the series
 - Shown using Ghost-type Pokémon to control others
 - Had Gengar masquerade as shadows to drain energy
@@ -146,6 +159,7 @@ Agatha's battle strategy is characterized by:
 - Revealed mind-controlling powers in Pokémon Adventures manga
 
 ### Personality Traits (Anime)
+
 - Manipulative: Uses mind-control on other Elite Four members
 - Powerful: Strong Ghost-type user
 - Strategic: Uses deception and psychological warfare
@@ -153,8 +167,9 @@ Agatha's battle strategy is characterized by:
 - Ruthless: Will use any means to win
 
 ### Pokémon Adventures Manga
+
 - **Role**: Elite Four member, villainess
-- **Notable**: 
+- **Notable**:
   - Old rival of Professor Oak
   - Used mind-controlling wristbands on Bruno
   - Led Ghost-type Pokémon army
@@ -167,6 +182,7 @@ Agatha's battle strategy is characterized by:
 ## Personality and Design
 
 ### Personality
+
 - Manipulative: Controls others through her Ghost-type powers
 - Powerful: Confident in her Ghost-type abilities
 - Mysterious: Little is known about her past
@@ -174,6 +190,7 @@ Agatha's battle strategy is characterized by:
 - Ruthless: Will use any tactic to achieve victory
 
 ### Design Evolution
+
 - Generation I & III: Elderly woman with long hair, purple/black outfit
 - Generation II & IV: Similar design with updated sprites
 - Generation VII: Modernized appearance
@@ -181,11 +198,13 @@ Agatha's battle strategy is characterized by:
 - Anime: Tall, thin, with long black hair and dark robes
 
 ### Name Origin
+
 - **English**: Agatha - from Greek "agathos" (ἀγαθός) meaning "good" or "kind"
 - **Japanese**: キクコ (Kikuko) - a feminine given name written with characters such as 菊 (kiku, "chrysanthemum"), fitting an elderly, refined Ghost-type specialist
 - Contrasts with her manipulative personality
 
 ### Signature Quote
+>
 > "Fufufu... I am Agatha of the Elite Four! I've lived a long life, so I've perfected Ghost-type moves!"
 
 ---
@@ -193,6 +212,7 @@ Agatha's battle strategy is characterized by:
 ## Trivia
 
 ### Game Trivia
+
 - Third member of Kanto Elite Four
 - Despite Ghost specialty, most Pokémon are Poison-type
 - Only Elite Four member with all Poison-type in initial Gen I team
@@ -201,18 +221,21 @@ Agatha's battle strategy is characterized by:
 - Old rival of Professor Oak
 
 ### Anime Trivia
+
 - First Elite Four member to appear in anime
 - Used mind-control on Bruno
 - Gengar can masquerade as shadows
 - Arbok has pattern-changing ability
 
 ### Manga Trivia
+
 - Villainess in Pokémon Adventures
 - Led Ghost-type Pokémon army
 - Used wristbands to control other Elite Four
 - Defeated by Blue and Koga working together
 
 ### Cultural Impact
+
 - Represents Ghost-type mastery
 - Memorable for her manipulative personality
 - Popular character in competitive battling
@@ -221,6 +244,7 @@ Agatha's battle strategy is characterized by:
 ---
 
 ## References
+
 - Bulbapedia: [Agatha](https://bulbapedia.bulbagarden.net/wiki/Agatha), [Elite Four](https://bulbapedia.bulbagarden.net/wiki/Elite_Four)
 - Pokémon Wiki, Pokémon Database, Serebii.net, StrategyWiki, TheGamer
 
