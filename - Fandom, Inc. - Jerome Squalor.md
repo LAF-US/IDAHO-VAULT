@@ -7,7 +7,7 @@ created: 2026-04-14
 ---
 | “ | *Hello, everyone. I'm Jerome, and I am proudly one of the legal [guardians](https://snicket.fandom.com/wiki/Baudelaire_Children%27s_Guardians "Baudelaire Children's Guardians") of [Violet](https://snicket.fandom.com/wiki/Violet_Baudelaire "Violet Baudelaire"), [Klaus](https://snicket.fandom.com/wiki/Klaus_Baudelaire "Klaus Baudelaire") and [Sunny Baudelaire](https://snicket.fandom.com/wiki/Sunny_Baudelaire "Sunny Baudelaire"), and in the short time they have been under my care, I have been impressed with their intelligence, their fortitude and their charm, at least during the hours I was awake. They're noble children, like their parents. Therefore, if they're interested in [a large cardboard box with air holes](https://snicket.fandom.com/wiki/Very_Fancy_Doilies "Very Fancy Doilies") poked in it, I'm going to do everything I can to make sure they get it!* | ” |
 | --- | --- | --- |
-| | — Jerome Squalor, " [The Ersatz Elevator: Part Two](https://snicket.fandom.com/wiki/The_Ersatz_Elevator:_Pa***REMOVED***Two "The Ersatz Elevator: Part Two") " |
+| | — Jerome Squalor, " [The Ersatz Elevator: Part Two](https://snicket.fandom.com/wiki/The_Ersatz_Elevator:_Part_Two "The Ersatz Elevator: Part Two") " |
 
 **Jerome Squalor** is the sixth [guardian](https://snicket.fandom.com/wiki/Baudelaire_children%27s_guardians "Baudelaire children's guardians") of the Baudelaire orphans alongside his wife, [Esmé Squalor](https://snicket.fandom.com/wiki/Esm%C3%A9_Squalor "Esmé Squalor"), who was secretly in love and in cahoots with [Count Olaf](https://snicket.fandom.com/wiki/Count_Olaf "Count Olaf"). He makes his first appearance in book six: *[The Ersatz Elevator](https://snicket.fandom.com/wiki/The_Ersatz_Elevator "The Ersatz Elevator")*.
 

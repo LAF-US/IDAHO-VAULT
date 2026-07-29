@@ -37,6 +37,6 @@ The outcome could determine how much control states retain over voter data — a
 
 Here’s the lawsuit:
 
-<iframe src="https://www.scribd.com/embeds/1021106200/content?sta***REMOVED***page=1&amp;view_mode&amp;access_key=key-f6FA3z3qWTj627vOpy1a" width="100%" height="500" frameborder="0"></iframe>
+<iframe src="https://www.scribd.com/embeds/1021106200/content?start page=1&amp;view_mode&amp;access_key=key-f6FA3z3qWTj627vOpy1a" width="100%" height="500" frameborder="0"></iframe>
 
 [View this document on Scribd](https://www.scribd.com/doc/1021106200)

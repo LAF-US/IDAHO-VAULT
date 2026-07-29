@@ -288,7 +288,7 @@ If you paste a failing GitHub Actions run or the Bill Tracker request/response (
 
 [^7_2]: <https://pkg.go.dev/github.com/iden3/vault-plugin-secrets-iden3>
 
-[^7_3]: <https://www.reddit.com/r/ReverseEngineering/comments/5lxz6n/github_ida_fli***REMOVED***database/>
+[^7_3]: <https://www.reddit.com/r/ReverseEngineering/comments/5lxz6n/github_ida_flirt_database/>
 
 [^7_4]: <https://github.com/RandomiaGaming/Project-Vault>
 

@@ -49,7 +49,7 @@ He founded a production studio, staffed with writers who turned out hundreds of 
 
 Dumas depended on numerous assistants and collaborators, of whom [Auguste Maquet](https://en.wikipedia.org/wiki/Auguste_Maquet "Auguste Maquet") was the best known. It was not until the late twentieth century that his role was fully understood.[^19] Dumas wrote the short novel *[Georges](https://en.wikipedia.org/wiki/Georges_\(novel\) "Georges (novel)")* (1843), which uses ideas and plots later repeated in *The Count of Monte Cristo*. Maquet took Dumas to court to get authorial recognition and a higher payment rate for his work. He was successful in getting more money, but not a by-line.[^19] [^20]
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Ch%C3%A2teau_Monte_Cristo_Alexandre_Dumas_le_Po***REMOVED***Marly.jpg/250px-Ch%C3%A2teau_Monte_Cristo_Alexandre_Dumas_le_Po***REMOVED***Marly.jpg)
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Ch%C3%A2teau_Monte_Cristo_Alexandre_Dumas_le_Port_Marly.jpg/250px-Ch%C3%A2teau_Monte_Cristo_Alexandre_Dumas_le_Port_Marly.jpg)
 
 The Château de Monte-Cristo in Le Port-Marly
 
@@ -173,7 +173,7 @@ In addition, Dumas wrote many series of novels:
 
 1. *[The Three Musketeers](https://en.wikipedia.org/wiki/The_Three_Musketeers "The Three Musketeers")* (*Les Trois Mousquetaires*, 1844)
 2. *[Twenty Years After](https://en.wikipedia.org/wiki/Twenty_Years_After "Twenty Years After")* (*Vingt ans après*, 1845)
-3. *[The Vicomte de Bragelonne](https://en.wikipedia.org/wiki/The_Vicomte_de_Bragelonne "The Vicomte de Bragelonne")*, sometimes called *Ten Years Later* (*Le Vicomte de Bragelonne, ou Dix ans plus tard*, 1847). When published in English, it was usually split into three parts: *The Vicomte de Bragelonne* (sometimes called *Between Two Kings*), *Louise de la Valliere*, and *[The Man in the Iron Mask](https://en.wikipedia.org/wiki/The_Vicomte_of_Bragelonne:_Ten_Years_Later#Pa***REMOVED***Three:_The_Man_in_the_Iron_Mask_\(Chapters_181%E2%80%93269\) "The Vicomte of Bragelonne: Ten Years Later")*, of which the last part is the best known.
+3. *[The Vicomte de Bragelonne](https://en.wikipedia.org/wiki/The_Vicomte_de_Bragelonne "The Vicomte de Bragelonne")*, sometimes called *Ten Years Later* (*Le Vicomte de Bragelonne, ou Dix ans plus tard*, 1847). When published in English, it was usually split into three parts: *The Vicomte de Bragelonne* (sometimes called *Between Two Kings*), *Louise de la Valliere*, and *[The Man in the Iron Mask](https://en.wikipedia.org/wiki/The_Vicomte_of_Bragelonne:_Ten_Years_Later#Part_Three:_The_Man_in_the_Iron_Mask_\(Chapters_181%E2%80%93269\) "The Vicomte of Bragelonne: Ten Years Later")*, of which the last part is the best known.
 
 ##### Related books
 
@@ -253,7 +253,7 @@ Dumas wrote many plays and adapted several of his novels as dramas. In the 1840s
 Dumas wrote four original libretti for the Parisian opera stage:
 
 - *Piquillo* (1837), opéra-comique in one act with music by [Hippolyte Monpou](https://en.wikipedia.org/wiki/Hippolyte_Monpou "Hippolyte Monpou") (1804-1841)
-- *Samson* (1856), tableaux bibliques in four acts with music by [Gilbert Duprez](https://en.wikipedia.org/wiki/Gilbe***REMOVED***Duprez "Gilbert Duprez") (1806-1896), with Édouard Duprez (1804-1879)
+- *Samson* (1856), tableaux bibliques in four acts with music by [Gilbert Duprez](https://en.wikipedia.org/wiki/Gilbert_Duprez "Gilbert Duprez") (1806-1896), with Édouard Duprez (1804-1879)
 - *La Bacchante* (1858), opéra-comique in 2 acts with music by [Eugène Gautier](https://en.wikipedia.org/wiki/Eug%C3%A8ne_Gautier "Eugène Gautier") (1822-1878), with [Adolphe de Leuven](https://en.wikipedia.org/wiki/Adolphe_de_Leuven "Adolphe de Leuven") (1802-1884)
 - *[Le roman d'Elvire](https://en.wikipedia.org/wiki/Le_roman_d%27Elvire "Le roman d'Elvire")* (1860), opéra-comique in 3 acts with music by [Ambroise Thomas](https://en.wikipedia.org/wiki/Ambroise_Thomas "Ambroise Thomas") (1811-1896), with Adolphe de Leuven
 
@@ -350,7 +350,7 @@ French historian [Alain Decaux](https://en.wikipedia.org/wiki/Alain_Decaux "Alai
 
 [^33]: Jordan, Taylor (21 July 2015). [""Musketeers" author's coffin arrives at the Pantheon"](https://www.youtube.com/watch?v=0QQezHBtcpc&ab_channel=APArchive). *AP Archive*. France. Retrieved 15 February 2021.
 
-[^34]: [Chirac, Jacques](https://en.wikipedia.org/wiki/Jacques_Chirac "Jacques Chirac") (30 November 2002). ["Discours prononcé lors du transfert des cendres d'Alexandre Dumas au Panthéon"](https://fr.wikisource.org/wiki/Discours_prononc%C3%A9_lors_du_transfe***REMOVED***des_cendres_d%E2%80%99Alexandre_Dumas_au_Panth%C3%A9on) (in French). Retrieved 19 August 2008.
+[^34]: [Chirac, Jacques](https://en.wikipedia.org/wiki/Jacques_Chirac "Jacques Chirac") (30 November 2002). ["Discours prononcé lors du transfert des cendres d'Alexandre Dumas au Panthéon"](https://fr.wikisource.org/wiki/Discours_prononc%C3%A9_lors_du_transfert_des_cendres_d%E2%80%99Alexandre_Dumas_au_Panth%C3%A9on) (in French). Retrieved 19 August 2008.
 
 [^35]: ["Paris Monuments Panthéon-Close up picture of the interior of the crypt of Victor Hugo (left) Alexandre Dumas (middle) Émile Zola (right)"](https://web.archive.org/web/20120419194137/http://www.parisphotogallery.com/Paris/photos/monuments/Pantheon/Interior_crypt_Victor_Hugo_Alexandre_Dumas_Emile_Zola_10526.htm). ParisPhotoGallery. Archived from [the original](http://www.parisphotogallery.com/Paris/photos/monuments/Pantheon/Interior_crypt_Victor_Hugo_Alexandre_Dumas_Emile_Zola_10526.htm) on 19 April 2012. Retrieved 30 January 2012.
 

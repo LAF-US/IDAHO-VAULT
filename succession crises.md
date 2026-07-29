@@ -291,7 +291,7 @@ AI shifts developers toward strategic roles like architecture and oversight, wit
 
 [^7_6]: <https://newsletter.pragmaticengineer.com/p/when-ai-writes-almost-all-code-what>
 
-[^7_7]: <https://www.reddit.com/r/softwaredevelopment/comments/11n0ibu/how_sta***REMOVED***using_ai_in_software_development/>
+[^7_7]: <https://www.reddit.com/r/softwaredevelopment/comments/11n0ibu/how_start_using_ai_in_software_development/>
 
 [^7_8]: <https://www.youtube.com/watch?v=CQmI4XKTa0U>
 
