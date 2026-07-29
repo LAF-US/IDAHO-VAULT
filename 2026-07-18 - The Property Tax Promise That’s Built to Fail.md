@@ -13,7 +13,7 @@ description: "How Scott Herndon turns voter outrage into a fundraising engine, a
 
 You own your home. You paid for it. So why keep writing a check to the county every year for the privilege of living in a thing you already bought? Put that way, it sounds like common sense. It feels conservative. It feels like freedom.
 
-[Scott Herndon](https://idahoextremism.org/dossiers/scott-herndon/), the former North Idaho state senator who’s been desperately trying to stay in power in North Idaho and recently defeated Sen. Jim Woodward in the May primary, is running on some version of that promise again. Woodward was the kind of Republican who read the budget before voting on it. Herndon devises cunning ways to gaslight voters. There’s a difference, and Idaho is about to feel it.
+[Scott Herndon](https://idahoextremism.org/dossiers/scott-herndon/), the former North [[Idaho]] state senator who’s been desperately trying to stay in power in North Idaho and recently defeated Sen. Jim Woodward in the May primary, is running on some version of that promise again. Woodward was the kind of Republican who read the budget before voting on it. Herndon devises cunning ways to gaslight voters. There’s a difference, and Idaho is about to feel it.
 
 Herndon is a Christian nationalist with fringe views; he [intends to impose them on Idahoans](https://politicalpotatoes.substack.com/p/life-in-scott-herndons-idaho). He is not interested in compromise. His actual agenda goes well beyond taxes: stripping away genuine religious freedom, overriding parental rights that don’t match his ideology, and dismantling local government control in favor of top-down, state-mandated rules that would dictate what parents can and cannot do while enforcing a singular religious viewpoint on everyone else. The property tax promise is the bright, shiny object he uses to get elected. The rest of the agenda is what he does once he’s in office.
 
@@ -119,3 +119,5 @@ Gregory Graf is the creator of Political Potatoes and a lifelong conservative Re
 ***Do you want to help support Political Potatoes?*** **Please consider upgrading to a [paid subscription](https://politicalpotatoes.substack.com/subscribe).*****  
   
 Disclaimer:** The following is intended to convey an opinion on newsworthy events of public concern regarding public figures and/or public officials in exercising their official duties. No implications or inferences—beyond those explicitly stated in the preceding— are intended to be conveyed or endorsed by the Author. Wherever available, hyperlinks have been provided to allow readers to directly access any underlying assertions of fact upon which this opinion is based.*
+
+#idaho

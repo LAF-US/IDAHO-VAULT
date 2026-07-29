@@ -19,7 +19,7 @@ At Nampa Junior High School, Volk met Drake Levin, who had moved from Chicago, i
 
 The first time Volk saw Paul Revere perform with his band was at a variety show at Nampa High School. His older siblings were already well-acquainted with the group, who always drew large crowds when performing at area dances and clubs. Volk was impressed with the energy and showmanship of the band.[^7] Shortly after, his family moved from Nampa to Boise.[^1]
 
-While attending Borah High School in Boise, Volk ran track. At the Idaho State Track and Field Meet in the spring of 1963, he was on two first-place relay teams, helping set state records in the 440 and 880 yard relays. He was fired from the band he belonged to at the time, The Chancellors, for attending this meet instead of joining them for a gig. He also performed the role of Conrad Birdie in the school musical, *[Bye, Bye Birdie](https://en.wikipedia.org/wiki/Bye_Bye_Birdie_\(musical\) "Bye Bye Birdie (musical)")* in 1962. Volk also ran for Student Body President, but lost in a close recount election.[^3]
+While attending Borah High School in Boise, Volk ran track. At the [[Idaho]] State Track and Field Meet in the spring of 1963, he was on two first-place relay teams, helping set state records in the 440 and 880 yard relays. He was fired from the band he belonged to at the time, The Chancellors, for attending this meet instead of joining them for a gig. He also performed the role of Conrad Birdie in the school musical, *[Bye, Bye Birdie](https://en.wikipedia.org/wiki/Bye_Bye_Birdie_\(musical\) "Bye Bye Birdie (musical)")* in 1962. Volk also ran for Student Body President, but lost in a close recount election.[^3]
 
 Volk's parents left to live in Europe when Volk was 17. His father was now selling insurance to soldiers stationed overseas. Volk left Boise in September 1963 for college at the [University of Colorado](https://en.wikipedia.org/wiki/University_of_Colorado "University of Colorado") in [Boulder, Colorado](https://en.wikipedia.org/wiki/Boulder,_Colorado "Boulder, Colorado"). Intending to be a music major, he studied [classical music](https://en.wikipedia.org/wiki/Classical_music "Classical music") and opera. In the meantime, he kept playing guitar in a band in his fraternity.[^9]
 
@@ -222,3 +222,5 @@ Jeannie Snow is a vocalist with the Tommy Thompson Band in Las Vegas.[^36]
 [^35]: Ralph Mathis (2011). ["The Ralph Mathis Band"](https://web.archive.org/web/20110228054747/http://www.theralphmathisband.com/THE_RALPH_MATHIS_BAND/HOME_PAGE.html). Archived from [the original](http://www.theralphmathisband.com/THE_RALPH_MATHIS_BAND/HOME_PAGE.html) on February 28, 2011. Retrieved September 10, 2011.
 
 [^36]: Steve Tuminello (2011). ["Music Seen: Tommy Thompson Trio Rocks the Casbar at the Sahara This Week"](http://lasvegasatitsbest.com/MUSICSEEN4.html). *LasVegasatitsBest.com*. Siefkes Companies. Retrieved September 10, 2011.
+
+#idaho

@@ -11,7 +11,7 @@ In 2025, Skinner created and starred in *[Overcompensating](https://en.wikipedia
 
 ## Early life and education
 
-Skinner was born and raised in [Boise, Idaho](https://en.wikipedia.org/wiki/Boise,_Idaho "Boise, Idaho"), and attended [Bishop Kelly High School](https://en.wikipedia.org/wiki/Bishop_Kelly_High_School "Bishop Kelly High School"). His family is [Catholic](https://en.wikipedia.org/wiki/Catholic_Church "Catholic Church"), but he has said they "weren't really practicing".[^1] While a senior in high school, Skinner founded the nonprofit OATHS, which stands for Organization Assisting the Homeless Student, and was recognized at the 2011 National Philanthropy Day Idaho.[^2] He also played on Bishop Kelly's football team as a wide receiver.[^3]
+Skinner was born and raised in [Boise, Idaho](https://en.wikipedia.org/wiki/Boise,_Idaho "Boise, Idaho"), and attended [Bishop Kelly High School](https://en.wikipedia.org/wiki/Bishop_Kelly_High_School "Bishop Kelly High School"). His family is [Catholic](https://en.wikipedia.org/wiki/Catholic_Church "Catholic Church"), but he has said they "weren't really practicing".[^1] While a senior in high school, Skinner founded the nonprofit OATHS, which stands for Organization Assisting the Homeless Student, and was recognized at the 2011 National Philanthropy Day [[Idaho]].[^2] He also played on Bishop Kelly's football team as a wide receiver.[^3]
 
 Some of his early comedic inspirations were [Robin Williams](https://en.wikipedia.org/wiki/Robin_Williams "Robin Williams") in his role as *[Mrs. Doubtfire](https://en.wikipedia.org/wiki/Mrs._Doubtfire "Mrs. Doubtfire")*, and [*SpongeBob SquarePants*](https://en.wikipedia.org/wiki/SpongeBob_SquarePants_\(character\) "SpongeBob SquarePants (character)"). While he would perform renditions of [Britney Spears](https://en.wikipedia.org/wiki/Britney_Spears "Britney Spears") and [Destiny's Child](https://en.wikipedia.org/wiki/Destiny's_Child "Destiny's Child") songs for his family, he has discussed repressing some of his early proclivities toward performance and comedy due to bullying and homophobic comments.[^4]
 
@@ -99,3 +99,5 @@ Skinner is [gay](https://en.wikipedia.org/wiki/Gay "Gay") and came out in his se
 [^19]: ["Benny Drama and Terry O'Connor on the Perfect Halloween Costume"](https://www.interviewmagazine.com/culture/benny-drama-and-terry-oconnor-on-how-to-make-the-perfect-couples-halloween-costume). *Interview*. October 31, 2021. [Archived](https://web.archive.org/web/20211101172256/https://www.interviewmagazine.com/culture/benny-drama-and-terry-oconnor-on-how-to-make-the-perfect-couples-halloween-costume) from the original on November 1, 2021. Retrieved May 20, 2022.
 
 [^20]: Chinman, Luke. ["Benito Skinner and Terrence O'Connor Breakup After 9 Years of Dating"](https://people.com/benito-skinner-and-terrence-o-connor-breakup-11835307). People. Retrieved October 22, 2025.
+
+#idaho

@@ -11,7 +11,7 @@ Testing revealed Kristy Boswell's death was due to her use of kratom or kratom-l
 
 ![Idaho family shares warning after mother’s death linked to potent kratom compound](https://media.ktvb.com/assets/KTVB/images/96efa4c7-1129-478c-add9-a2ec66d54124/20260716T044508/96efa4c7-1129-478c-add9-a2ec66d54124_1920x1080.jpg)
 
-Idaho family shares warning after mother’s death linked to potent kratom compound
+[[Idaho]] family shares warning after mother’s death linked to potent kratom compound
 
 00:0000:00GO LIVE
 
@@ -151,3 +151,5 @@ As local health agencies and toxicologists work to better understand the drug, K
 "Because of these pills that she was able to access, our lives are never going to be the same," Morgan said. "We lost someone that we can't get back. I just want more people to pay attention to what they're putting into their bodies, and understand that just because it's said to be natural, doesn't mean it's safe."
 
 If you have teens at home, experts say check for unfamiliar gummies or tablets. And if you suspect an overdose, call 911 and use naloxone or narcan.
+
+#idaho

@@ -5,7 +5,7 @@ author:
 published: 2026-07-18
 created: 2026-07-20
 ---
-BOISE, Idaho — After May Pollard died on a late-January morning, a detective asked her parents a question: Had anyone wanted to hurt her?
+BOISE, [[Idaho]] — After May Pollard died on a late-January morning, a detective asked her parents a question: Had anyone wanted to hurt her?
 
 “A lot of America,” her mother answered.
 
@@ -322,3 +322,5 @@ Elyse said it's hard to come home to an empty, quiet house, where she no longer 
 *If you or someone you know is in crisis, call or text 988 to reach the Suicide and Crisis Lifeline or chat live at* [*988lifeline.org*](http://988lifeline.org/)*. You can also visit* [*SpeakingOfSuicide.com/resources*](http://speakingofsuicide.com/resources) *for additional support.*
 
 *If you are an LGBTQ young person in crisis, feeling suicidal or in need of a safe and judgment-free place to talk, call the Trevor Project now at 1-866-488-7386.*
+
+#idaho

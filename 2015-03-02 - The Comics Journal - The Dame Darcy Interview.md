@@ -29,7 +29,7 @@ Panel from "The Juicer and the Cake Walk," one of Dame Darcy's Victoriana ventur
 
 **DARCY: You want to give a bit of personal background?**
 
-**DAME DARCY:** My grandparents were in agriculture, and they were one of the top Appaloosa horse breeders in the world. My dad and my uncle grew up in this atmosphere on a farm in Idaho, and they were also artistic though, and they started playing bluegrass in their late teens. My grandpa died and we had to sell all the horses, which was really sad. My uncle still runs the farm, and my dad used to do sign-painting for 16 years and now he does some kind of graphic design thing.
+**DAME DARCY:** My grandparents were in agriculture, and they were one of the top Appaloosa horse breeders in the world. My dad and my uncle grew up in this atmosphere on a farm in [[Idaho]], and they were also artistic though, and they started playing bluegrass in their late teens. My grandpa died and we had to sell all the horses, which was really sad. My uncle still runs the farm, and my dad used to do sign-painting for 16 years and now he does some kind of graphic design thing.
 
 I was born in 1971 in Caldwell, Idaho, and the nurse came out and told my dad that I was a boy. And I costed $100 and I was a month late. \[*Laughs.*\]
 
@@ -420,3 +420,5 @@ I *have* almost died five times in my young life, between the ages 16 and 22, tw
 **DARCY: No, but it sounds like you’ve willed yourself into this world of the occult and arcane powers.**
 
 **DAME DARCY:** I have not! I’m really psychic. I can read palms, I’m not making that up. I don’t want to come off like Shirley MacLaine, like, “Oh, I’m the all-knowing psychic power being of the world, I see ghosts and blah blah blah.” It just so happens that’s what happened to me. I was born blonde with blue eyes, I was born psychic, I was born in Idaho. It’s just facts.
+
+#idaho

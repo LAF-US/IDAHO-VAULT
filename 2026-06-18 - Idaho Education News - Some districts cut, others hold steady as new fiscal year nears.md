@@ -5,7 +5,7 @@ author:
 published: 2026-06-18
 created: 2026-07-20
 ---
-School districts across Idaho are heading into the new fiscal year on different paths: West Ada and Boise are adjusting to enrollment declines, Middleton is making deep cuts and implementing fees after a failed levy, and Coeur d’Alene is planning for stability.
+School districts across [[Idaho]] are heading into the new fiscal year on different paths: West Ada and Boise are adjusting to enrollment declines, Middleton is making deep cuts and implementing fees after a failed levy, and Coeur d’Alene is planning for stability.
 
 Trustees are planning their districts’ expenses for the 2026-27 school year — from [teacher salaries](https://www.idahoednews.org/top-news/where-teachers-are-or-arent-getting-raises/) to curriculum and utility costs. And this year, many districts are facing tighter budgets as rising costs and enrollment declines squeeze finances.
 
@@ -283,3 +283,5 @@ Salary expenses increased from 2023 to 2025, but that trend is shifting. The dis
 *West Ada trustee David Binetti uses stacks of cash to compare tax rates in West Ada and Boise school districts on Tuesday, June 8, 2026, in Meridian.*
 
 <iframe title="VideoPress Video Player" aria-label="VideoPress Video Player" width="742" height="416.75666666666666" src="https://videopress.com/embed/Mbj4Enac?hd=1&amp;cover=1&amp;loop=0&amp;autoPlay=0&amp;permalink=0&amp;muted=0&amp;controls=1&amp;playsinline=0&amp;useAverageColor=0&amp;preloadContent=metadata" frameborder="0" allowfullscreen="" allow="clipboard-write; presentation"></iframe>
+
+#idaho

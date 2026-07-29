@@ -19,7 +19,7 @@ Trusky, Tom, 1944-2009
 
 Title
 
-Idaho Film Collection
+[[Idaho]] Film Collection
 
 Dates
 
@@ -1637,3 +1637,5 @@ Donated by Tom Trusky in 2001, with collection aid by Howard Anderson and Raymon
 		Container: Object AV\_342
 		- Description: *Washington Wonderland* | \[no description\] (16mm Film)
 		Container: Object AV\_345
+
+#idaho

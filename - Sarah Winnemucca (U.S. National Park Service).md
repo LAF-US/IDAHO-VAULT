@@ -58,7 +58,7 @@ Being under military authority would be better, she argued, than turning them lo
 
 Winnemucca’s model Native community took the form of an idealized reservation, where a virtuous white agent or military support would keep other white Americans away, allowing Native autonomy and domestic values to thrive. This vision informed a petition she made to Congress, in which she asked the honorable members to restore the Paiutes to the Malheur Reservation so that they could “afford homes….without losing their tribal relations, so essential to their happiness and good character” and which would “defend them from the encroachments of white settlers, so detrimental to their interests and their virtues.” [^13] The virtues she referred to, as seen in her plea for the Fort Vancouver prisoners–such as traditional gender roles, modesty, and industriousness–resonated with mainstream American understandings of domesticity and civilization. Winnemucca’s vision thus melded conservative elements with a radical central tenet: Native distance from violent white American settlers.[^14]
 
-Despite Winnemucca’s plea for the Shoshone and Bannock prisoners held at Vancouver Barracks, the group was released and escorted to the Fort Hall Reservation in Idaho that same year. Winnemucca’s inability to convince officials, along with repeated failures to help her people gain the assistance they needed and her collaboration with white sponsors, all contributed to reducing her standing in her own community by 1882.[^15]
+Despite Winnemucca’s plea for the Shoshone and Bannock prisoners held at Vancouver Barracks, the group was released and escorted to the Fort Hall Reservation in [[Idaho]] that same year. Winnemucca’s inability to convince officials, along with repeated failures to help her people gain the assistance they needed and her collaboration with white sponsors, all contributed to reducing her standing in her own community by 1882.[^15]
 
 Winnemucca went on to write her autobiography, *Life Among the Piutes* \[sic\]*: Their Wrongs and Claims*. Published in 1883 with the help of the sisters Elizabeth Peabody and Mary Peabody Mann, prominent woman reformers, the book boldly testified not only to the mistreatment of Paiutes living on the Yakama Reservation but also American expansion more generally. Her desire for permanent homes for her people remained constant. “I beseech of you,” she wrote, “sweep away the \[Indian\] agency system; give us homes to live in, for God's sake and for humanity's sake.” [^16] White Americans, including former supporters, roundly attacked the book for exposing the violence of American settlement.
 
@@ -105,3 +105,5 @@ Last updated: August 2, 2022
 [^15]: Hopkins, *Life Among the Piutes*, 243.
 
 [^16]: Hoxie, *This Indian Country*, 169-70.
+
+#idaho

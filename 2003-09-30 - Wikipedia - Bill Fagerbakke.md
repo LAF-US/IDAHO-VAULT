@@ -23,7 +23,7 @@ Fagerbakke in 2009
 
 Fagerbakke has appeared on television in roles such as [assistant coach](https://en.wikipedia.org/wiki/Coach_\(sport\) "Coach (sport)") "Dauber" Dybinski on *[Coach](https://en.wikipedia.org/wiki/Coach_\(TV_series\) "Coach (TV series)")*, and in films, including *[Funny Farm](https://en.wikipedia.org/wiki/Funny_Farm_\(film\) "Funny Farm (film)")*.[^12] He had a role as the mentally disabled Tom Cullen in the 1994 [mini-series](https://en.wikipedia.org/wiki/Miniseries "Miniseries") *[Stephen King's The Stand](https://en.wikipedia.org/wiki/The_Stand_\(1994_miniseries\) "The Stand (1994 miniseries)")*. From 1996 to 1999 he played Alan Parish in the [*Jumanji*](https://en.wikipedia.org/wiki/Jumanji_\(TV_series\) "Jumanji (TV series)") TV series. In 1999, he had a role in [HBO](https://en.wikipedia.org/wiki/Home_Box_Office "Home Box Office") 's original series *[Oz](https://en.wikipedia.org/wiki/Oz_\(TV_series\) "Oz (TV series)")* as Officer [Karl Metzger](https://en.wikipedia.org/wiki/Karl_Metzger "Karl Metzger").
 
-His character on *Coach* was based on a former assistant coach at Idaho, a graduate assistant nicknamed "Tuna." [^13]
+His character on *Coach* was based on a former assistant coach at [[Idaho]], a graduate assistant nicknamed "Tuna." [^13]
 
 He has appeared in numerous live action and animated films. With his first appearance coming in *[Perfect Strangers](https://en.wikipedia.org/wiki/Perfect_Strangers_\(1984_film\) "Perfect Strangers (1984 film)")* in 1984*.* He has since appeared in films such as *[Loose Cannons](https://en.wikipedia.org/wiki/Loose_Cannons_\(1990_film\) "Loose Cannons (1990 film)"), [Halloween II](https://en.wikipedia.org/wiki/Halloween_II_\(2009_film\) "Halloween II (2009 film)"), [Rosewood Lane](https://en.wikipedia.org/wiki/Rosewood_Lane "Rosewood Lane")* and *[Baby Makers](https://en.wikipedia.org/wiki/The_Babymakers "The Babymakers").*
 
@@ -181,3 +181,5 @@ In 2012 he was nominated at the [Critics' Choice Movie Awards](https://en.wikipe
 [^39]: ["Critics' Choice Awards | Blog | 17th Annual Critics' Choice Movie Awards (2012) - Best Picture: The Artist"](https://web.archive.org/web/20130108023529/http://www.criticschoice.com/movie-awards/17th-annual-critics-choice-movie-awards-2012/). *www.criticschoice.com*. Archived from [the original](http://www.criticschoice.com/movie-awards/17th-annual-critics-choice-movie-awards-2012/) on January 8, 2013. Retrieved September 4, 2025.
 
 [^40]: ["Bill Fagerbakke to Receive Animation Hall of Fame Game-Changers Award for His Work on 'SpongeBob' at the 2019 World Animation & VFX Summit"](http://www.nickalive.net/2019/10/bill-fagerbakke-to-receive-animation.html). Retrieved September 4, 2025.
+
+#idaho

@@ -19,7 +19,7 @@ Flat twined bags, frequently called cornhusk bags, are an art unique to indigeno
 
 > ###### “Cornhusk weaving was extremely important to the Nez Perce culture … Women would make baskets, nets and rope among other items that directly impacted the livelihood of the tribe”
 > 
-> ###### —Nez Perce weaver Jenny Williams (“Weaving the Past to Create a Future.” Char-Koosta News Moscow, Idaho. September 27, 2007.)
+> ###### —Nez Perce weaver Jenny Williams (“Weaving the Past to Create a Future.” Char-Koosta News Moscow, [[Idaho]]. September 27, 2007.)
 
 Through practicing the art of cornhusk weaving, weavers of the past and present and the bags they create sustain their community by providing nourishment and strength, though how exactly they do that has changed over the past two centuries. This has shifted from access to food in the early nineteenth century, to economic support in the later nineteenth century, to assertion of cultural identity in the twentieth century. The twined bags in this exhibition, from the Denver Art Museum collections, are symbols of continuity in indigenous Plateau culture through centuries of rapid change, and of the important contributions made by women artists.
 
@@ -95,3 +95,5 @@ Schlick, Mary Dodds. *Columbia River Basketry: Gift of the Ancestors, Gift of th
 University of Oregon Museum of Natural and Cultural History. “Plateau Basketry: Cornhusk Bags.” *Collections: Web Galleries*. Web. Last modified 2014. Accessed February 14, 2016. [URL](http://natural-history.uoregon.edu/collections/web-galleries/cornhusk-bags.).
 
 Wyman, Anne. “Cornhusk Bags of the Nez Perce Indians.” *Masterkey* 9 (1935): 89-95.
+
+#idaho

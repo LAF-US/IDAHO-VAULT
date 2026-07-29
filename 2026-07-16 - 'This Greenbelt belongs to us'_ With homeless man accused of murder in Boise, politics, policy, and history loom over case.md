@@ -39,7 +39,7 @@ Mountain West Bank - June 2026 New - 2:1
 
 Wardlaw had also been charged with battery twice and aggravated assault once in the last 13 months, [KTVB’s Morgan Romero reported](https://www.ktvb.com/article/news/crime/criminal-record-man-accused-boise-greenbelt-murder-stretches-back-decades/277-b5a3310e-2cad-47d2-871a-2582818c09c9). In May, an Ada County jury acquitted Wardlaw of aggravated battery and aggravated assault charges, [KIVI’s Riley Shoemaker reported](https://www.facebook.com/watch/?v=1546521896951306). The incident happened near the Interfaith Sanctuary’s former location in 2025. A juror told the station he “felt sick” about the verdict, but said the defense made a case that Wardlaw was acting in self-defense, and the juror said he didn’t find sufficient evidence to convict.
 
-[KTVB reported](https://www.ktvb.com/article/news/crime/criminal-record-man-accused-boise-greenbelt-murder-stretches-back-decades/277-b5a3310e-2cad-47d2-871a-2582818c09c9) that Wardlaw had a long criminal history dating back to the early 2000s. The station said he had checked into Intermountain Hospital for mental health treatment earlier this year, and the Idaho Department of Health and Welfare said he’d made “excellent progress.”
+[KTVB reported](https://www.ktvb.com/article/news/crime/criminal-record-man-accused-boise-greenbelt-murder-stretches-back-decades/277-b5a3310e-2cad-47d2-871a-2582818c09c9) that Wardlaw had a long criminal history dating back to the early 2000s. The station said he had checked into Intermountain Hospital for mental health treatment earlier this year, and the [[Idaho]] Department of Health and Welfare said he’d made “excellent progress.”
 
 ![LONG Building - May 2026 - 2:1](https://static-v2.boisedev.com/assets/9dba9691-8b04-405d-8e90-9017ac05eb4b.jpg)
 
@@ -254,3 +254,5 @@ Mountain West Bank - June 2026 New - 2:1
 During a vigil last week for Harbst, his father, Josh, sounded a note of hope, [as noted by KTVB](https://www.ktvb.com/article/news/crime/friends-and-family-honor-jordan-harbst-greenbelt-candlelight-vigil/277-98dfc209-c4ea-44b6-bab6-73da72574440), for his son, for the community, and for the Boise River Greenbelt.
 
 “We gather right here at midnight… to remind evil that this Greenbelt belongs to us. Please don’t let this be the last time you think of or speak of my son. We will continue his fight, and his story’s not over.”
+
+#idaho
