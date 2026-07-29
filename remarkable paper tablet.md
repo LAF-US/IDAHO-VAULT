@@ -33,9 +33,9 @@ If you want, I can also give you a quick “Should you buy one?” breakdown or 
 
 [^1_4]: <https://www.bestbuy.com/product/remarkable-2-10-3-paper-tablet-with-marker-plus-and-polymer-weave-book-folio-gray/C4SQZQ4JFJ/sku/6523555?utm_source=Perplexity\&utm_medium=referral>
 
-[^1_5]: <https://www.quill.com/remarkable-paper-pro-118-tablet-wifi-linux-marker-plus-mosaic-weave-basalt-bookfolio-gray-rm83c-1001nw/cbs/55501573.html?effo***REMOVED***code=369\&sfcp=1\&utm_source=Perplexity\&utm_medium=referral>
+[^1_5]: <https://www.quill.com/remarkable-paper-pro-118-tablet-wifi-linux-marker-plus-mosaic-weave-basalt-bookfolio-gray-rm83c-1001nw/cbs/55501573.html?effort_code=369\&sfcp=1\&utm_source=Perplexity\&utm_medium=referral>
 
-[^1_6]: <https://www.quill.com/remarkable-paper-pro-move-73-tablet-marker-plus-rm89a-1000nw/cbs/55501570.html?effo***REMOVED***code=369\&sfcp=1\&utm_source=Perplexity\&utm_medium=referral>
+[^1_6]: <https://www.quill.com/remarkable-paper-pro-move-73-tablet-marker-plus-rm89a-1000nw/cbs/55501570.html?effort_code=369\&sfcp=1\&utm_source=Perplexity\&utm_medium=referral>
 
 [^1_7]: <https://www.bestbuy.com/product/remarkable-paper-pro-11-8-paper-tablet-with-marker-plus-gray/C4SQZQ47YT/sku/6598707?utm_source=Perplexity\&utm_medium=referral>
 
@@ -86,7 +86,7 @@ If you meant “which one should I look for now?”, the main current models are
 
 [^2_9]: <https://www.bestbuy.com/product/remarkable-paper-pro-11-8-paper-tablet-with-marker-plus-gray/C4SQZQ47YT/sku/6598707?utm_source=Perplexity\&utm_medium=referral>
 
-[^2_10]: <https://www.quill.com/remarkable-paper-pro-move-73-tablet-marker-plus-rm89a-1000nw/cbs/55501570.html?effo***REMOVED***code=369\&sfcp=1\&utm_source=Perplexity\&utm_medium=referral>
+[^2_10]: <https://www.quill.com/remarkable-paper-pro-move-73-tablet-marker-plus-rm89a-1000nw/cbs/55501570.html?effort_code=369\&sfcp=1\&utm_source=Perplexity\&utm_medium=referral>
 
 ---
 

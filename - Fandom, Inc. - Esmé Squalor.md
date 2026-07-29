@@ -9,7 +9,7 @@ created: 2026-04-14
 
 | “ | *People don't always get what they want in this world.* | ” |
 | --- | --- | --- |
-| | — Esmé, “ [The Carnivorous Carnival: Part Two](https://snicket.fandom.com/wiki/The_Carnivorous_Carnival:_Pa***REMOVED***Two "The Carnivorous Carnival: Part Two") ” |
+| | — Esmé, “ [The Carnivorous Carnival: Part Two](https://snicket.fandom.com/wiki/The_Carnivorous_Carnival:_Part_Two "The Carnivorous Carnival: Part Two") ” |
 
 **Esmé Gigi Geniveve Squalor** is the secondary antagonist of *[A Series of Unfortunate Events](https://snicket.fandom.com/wiki/A_Series_of_Unfortunate_Events "A Series of Unfortunate Events")*. She is considered to be one of the two main villains of the series in its latter half next to [Count Olaf](https://snicket.fandom.com/wiki/Count_Olaf "Count Olaf") due to her constant menacing role towards the Baudelaire children coupled with her greedy and consistent lust for [the Sugar Bowl](https://snicket.fandom.com/wiki/The_Sugar_Bowl "The Sugar Bowl"). Prior to the events of the series, she was a stage actress and member of [V.F.D.](https://snicket.fandom.com/wiki/Volunteer_Fire_Department "Volunteer Fire Department") She was the former love interest for both [Jerome Squalor](https://snicket.fandom.com/wiki/Jerome_Squalor "Jerome Squalor") and [The Bald Man](https://snicket.fandom.com/wiki/Bald_Man_with_the_Long_Nose "Bald Man with the Long Nose"). She was also a former love interest of Count Olaf, although it is unknown whether he became her boyfriend because he loved her, or because she would help him with his schemes.
 
@@ -159,7 +159,7 @@ In *The Penultimate Peril*, Esmé is seen in a flashback during the play at *[La
 
 Esmé's possible murders are only heavily implied.
 
-In " [The Miserable Mill: Part One](https://snicket.fandom.com/wiki/The_Miserable_Mill:_Pa***REMOVED***One "The Miserable Mill: Part One") ", a [mysterious person](https://snicket.fandom.com/wiki/Mysterious_Arsonist "Mysterious Arsonist") is seen setting fire to the [Quagmire Mansion](https://snicket.fandom.com/wiki/Quagmire_Mansion "Quagmire Mansion") using a laser device. It has been thought to be **Esmé Squalor** because of the outfit. Later it was found out the outfit is a part of [VFD](https://snicket.fandom.com/wiki/VFD "VFD") disguise kit. [^4] Esmé's actress [Lucy Punch](https://snicket.fandom.com/wiki/Lucy_Punch "Lucy Punch") was not in credits of the episode either, just as Esmé was not in contact with [Count Olaf](https://snicket.fandom.com/wiki/Count_Olaf "Count Olaf") until " [The Ersatz Elevator: Part One](https://snicket.fandom.com/wiki/The_Ersatz_Elevator:_Pa***REMOVED***One "The Ersatz Elevator: Part One") " and Olaf did not know about the [Quagmire Fire](https://snicket.fandom.com/wiki/Quagmire_Fire "Quagmire Fire").[^5]
+In " [The Miserable Mill: Part One](https://snicket.fandom.com/wiki/The_Miserable_Mill:_Part_One "The Miserable Mill: Part One") ", a [mysterious person](https://snicket.fandom.com/wiki/Mysterious_Arsonist "Mysterious Arsonist") is seen setting fire to the [Quagmire Mansion](https://snicket.fandom.com/wiki/Quagmire_Mansion "Quagmire Mansion") using a laser device. It has been thought to be **Esmé Squalor** because of the outfit. Later it was found out the outfit is a part of [VFD](https://snicket.fandom.com/wiki/VFD "VFD") disguise kit. [^4] Esmé's actress [Lucy Punch](https://snicket.fandom.com/wiki/Lucy_Punch "Lucy Punch") was not in credits of the episode either, just as Esmé was not in contact with [Count Olaf](https://snicket.fandom.com/wiki/Count_Olaf "Count Olaf") until " [The Ersatz Elevator: Part One](https://snicket.fandom.com/wiki/The_Ersatz_Elevator:_Part_One "The Ersatz Elevator: Part One") " and Olaf did not know about the [Quagmire Fire](https://snicket.fandom.com/wiki/Quagmire_Fire "Quagmire Fire").[^5]
 
 Her possible victims:
 
@@ -275,7 +275,7 @@ Esmé carrying Jerome after he is drugged by Count Olaf's Troupe.
  	- Sabrina Pepper Anastasia Marigold spells "SPAM", an Internet acronym for "stupid pointless annoying messages".
   		- Cassandra Ursula Terrific Elliandra spells "CUTE".
 - Esmé is known as Esmé Gigi Geniveve Sordidez in Spain Esmé Gigi Geniveve Miseria in Latin America and Esmé Gigi Geniveve Elend in Germany.
-- She is technically still married to Jerome as Jerome said in *[The Penultimate Peril: Part Two](https://snicket.fandom.com/wiki/The_Penultimate_Peril:_Pa***REMOVED***Two "The Penultimate Peril: Part Two")* because they did not legally divorce yet.
+- She is technically still married to Jerome as Jerome said in *[The Penultimate Peril: Part Two](https://snicket.fandom.com/wiki/The_Penultimate_Peril:_Part_Two "The Penultimate Peril: Part Two")* because they did not legally divorce yet.
 - In the TV series, Esmé mentions being part of the Snow Scouts during her youth - in *The Hostile Hospital: Part One*, she tells Olaf's Troupe she was crowned False Spring Queen at 14 years of age. When her troupe danced around the pole atop Mount Fraught, as per tradition, she allegedly discovered her love of pole dancing.
  	- There is no mention of Esmé's time as a Snow Scout, or False Spring Queen title, during either part of *The Slippery Slope*.
   		- Esmé's pole dancing interest is hinted at earlier in Season Two; in *The Vile Village: Part One*, she finds the firepole in the abandoned firehouse-turned-saloon, twirls around it, and asks Olaf if the place is more of a club.
@@ -306,8 +306,8 @@ Tumblr p7awv5uvrF1w9szcho1 1280
 
 [^3]: [Zoom Interview with Daniel Handler](https://asoue.proboards.com/thread/36427/webinar-daniel-handler-transcript-page?page=2)
 
-[^4]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Carnivorous Carnival: Part One](https://snicket.fandom.com/wiki/The_Carnivorous_Carnival:_Pa***REMOVED***One "The Carnivorous Carnival: Part One")*
+[^4]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Carnivorous Carnival: Part One](https://snicket.fandom.com/wiki/The_Carnivorous_Carnival:_Part_One "The Carnivorous Carnival: Part One")*
 
-[^5]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Austere Academy: Part One](https://snicket.fandom.com/wiki/The_Austere_Academy:_Pa***REMOVED***One "The Austere Academy: Part One")*
+[^5]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Austere Academy: Part One](https://snicket.fandom.com/wiki/The_Austere_Academy:_Part_One "The Austere Academy: Part One")*
 
-[^6]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Hostile Hospital: Part One](https://snicket.fandom.com/wiki/The_Hostile_Hospital:_Pa***REMOVED***One "The Hostile Hospital: Part One")*
+[^6]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Hostile Hospital: Part One](https://snicket.fandom.com/wiki/The_Hostile_Hospital:_Part_One "The Hostile Hospital: Part One")*

@@ -313,7 +313,7 @@ Script Excerpt - *[The Ersatz Elevator](https://snicket.fandom.com/wiki/The_Ersa
 
 [![Script Excerpt - The Slippery Slope: Part One](https://static.wikia.nocookie.net/snicket/images/f/fc/Tssscriptexcerpt_tihoso.PNG/revision/latest/scale-to-width-down/147?cb=20191029235534 "Tssscriptexcerpt tihoso.PNG (515 KB)")](https://snicket.fandom.com/wiki/File:Tssscriptexcerpt_tihoso.PNG "Tssscriptexcerpt tihoso.PNG (515 KB)")
 
-Script Excerpt - *[The Slippery Slope: Part One](https://snicket.fandom.com/wiki/The_Slippery_Slope:_Pa***REMOVED***One "The Slippery Slope: Part One")*
+Script Excerpt - *[The Slippery Slope: Part One](https://snicket.fandom.com/wiki/The_Slippery_Slope:_Part_One "The Slippery Slope: Part One")*
 
 [![Count Olaf's Acting Troupe.](https://static.wikia.nocookie.net/snicket/images/a/a0/Actingtroupe_tihoso.jpg/revision/latest/scale-to-width-down/150?cb=20191029222457 "Actingtroupe tihoso.jpg (477 KB)")](https://snicket.fandom.com/wiki/File:Actingtroupe_tihoso.jpg "Actingtroupe tihoso.jpg (477 KB)")
 

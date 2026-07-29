@@ -65,7 +65,7 @@ It is unknown if she and the Man with a Beard but No Hair survived the [Hotel De
 
 ## Netflix Series Divergent Canon
 
-In the TV series, The Man with a Beard but No Hair and the Woman with Hair but No Beard are first seen in [The Slippery Slope: Part One](https://snicket.fandom.com/wiki/The_Slippery_Slope:_Pa***REMOVED***One "The Slippery Slope: Part One"), chasing [Kit Snicket](https://snicket.fandom.com/wiki/Kit_Snicket "Kit Snicket") around the top of [Mount Fraught](https://snicket.fandom.com/wiki/Mount_Fraught "Mount Fraught"). After Kit jumps off, the pair runs into [Hugo](https://snicket.fandom.com/wiki/Hugo "Hugo"), [Colette](https://snicket.fandom.com/wiki/Colette "Colette") and [Kevin](https://snicket.fandom.com/wiki/Kevin "Kevin") who they threaten with swords. It is later implied that they killed them.
+In the TV series, The Man with a Beard but No Hair and the Woman with Hair but No Beard are first seen in [The Slippery Slope: Part One](https://snicket.fandom.com/wiki/The_Slippery_Slope:_Part_One "The Slippery Slope: Part One"), chasing [Kit Snicket](https://snicket.fandom.com/wiki/Kit_Snicket "Kit Snicket") around the top of [Mount Fraught](https://snicket.fandom.com/wiki/Mount_Fraught "Mount Fraught"). After Kit jumps off, the pair runs into [Hugo](https://snicket.fandom.com/wiki/Hugo "Hugo"), [Colette](https://snicket.fandom.com/wiki/Colette "Colette") and [Kevin](https://snicket.fandom.com/wiki/Kevin "Kevin") who they threaten with swords. It is later implied that they killed them.
 
 When they visit Olaf, it is revealed they raised him as mentors. They don't congratulate him for perpetrating the fire that burned Caligari Carnival to the ground and revealed that they burnt down the VFD headquarters. At the same time, they were also quite disappointed in Olaf's failures to capture the Baudelaires. Because of this, Olaf attempts to kill [Sunny Baudelaire](https://snicket.fandom.com/wiki/Sunny_Baudelaire "Sunny Baudelaire") in order to gain their respect, but fails miserably. They actually take a shine to [Esmé Squalor](https://snicket.fandom.com/wiki/Esm%C3%A9_Squalor "Esmé Squalor"), much to Olaf's envy. Olaf is desperate to please her and The Man with a Beard but No Hair, but they continually look down upon him. Later, the Man and Woman are seen watching various fires throughout [the City](https://snicket.fandom.com/wiki/The_City "The City") burn.
 
@@ -187,7 +187,7 @@ Concept Art.
 
 [!["The Penultimate Peril: Part Two" Concept Art.](https://static.wikia.nocookie.net/snicket/images/7/7f/Judgewomanconcept.jpg/revision/latest/scale-to-width-down/179?cb=20200217030905 "Judgewomanconcept.jpg (497 KB)")](https://snicket.fandom.com/wiki/File:Judgewomanconcept.jpg "Judgewomanconcept.jpg (497 KB)")
 
-" [The Penultimate Peril: Part Two](https://snicket.fandom.com/wiki/The_Penultimate_Peril:_Pa***REMOVED***Two "The Penultimate Peril: Part Two") " Concept Art.
+" [The Penultimate Peril: Part Two](https://snicket.fandom.com/wiki/The_Penultimate_Peril:_Part_Two "The Penultimate Peril: Part Two") " Concept Art.
 
 [![Meeting Olaf on Mount Fraught.](https://static.wikia.nocookie.net/snicket/images/3/3d/43443891_745503982458768_7130670675240419328_n.jpg/revision/latest/scale-to-width-down/148?cb=20181027023413 "43443891 745503982458768 7130670675240419328 n.jpg (63 KB)")](https://snicket.fandom.com/wiki/File:43443891_745503982458768_7130670675240419328_n.jpg "43443891 745503982458768 7130670675240419328 n.jpg (63 KB)")
 

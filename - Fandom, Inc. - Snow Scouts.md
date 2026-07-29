@@ -183,6 +183,6 @@ Snow Scout Riot™
 
 [^1]: [PROSE](https://snicket.fandom.com/wiki/PROSE "PROSE"): *[The Slippery Slope](https://snicket.fandom.com/wiki/The_Slippery_Slope "The Slippery Slope")*
 
-[^2]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Slippery Slope: Part One](https://snicket.fandom.com/wiki/The_Slippery_Slope:_Pa***REMOVED***One "The Slippery Slope: Part One")*
+[^2]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Slippery Slope: Part One](https://snicket.fandom.com/wiki/The_Slippery_Slope:_Part_One "The Slippery Slope: Part One")*
 
-[^3]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Slippery Slope: Part Two](https://snicket.fandom.com/wiki/The_Slippery_Slope:_Pa***REMOVED***Two "The Slippery Slope: Part Two")*
+[^3]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Slippery Slope: Part Two](https://snicket.fandom.com/wiki/The_Slippery_Slope:_Part_Two "The Slippery Slope: Part Two")*

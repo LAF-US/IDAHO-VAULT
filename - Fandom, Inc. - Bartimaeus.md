@@ -97,7 +97,7 @@ Confusingly, although he clearly states while recounting a conversation with Pto
 
 ### Before the Books
 
-Bartimaeus was first summoned on 3010 BCE in Ur, Sumer. More of his early adventures can be viewed in [A Bartimaeus Chronology](http://www.bartimaeusbooks.com/ba***REMOVED***chronology.html).
+Bartimaeus was first summoned on 3010 BCE in Ur, Sumer. More of his early adventures can be viewed in [A Bartimaeus Chronology](http://www.bartimaeusbooks.com/bart_chronology.html).
 
 ### Prequel: The Ring of Solomon
 
