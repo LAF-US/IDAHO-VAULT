@@ -94,7 +94,8 @@ def _git_path_is_ignored(root: Path, relpath: str) -> bool:
         capture_output=True,
         text=True,
         encoding="utf-8",
-        errors="replace", check=False)
+        errors="replace",
+    )
     return result.returncode == 0
 
 
@@ -106,7 +107,8 @@ def _git_status_lines(root: Path, relpath: str) -> list[str]:
         capture_output=True,
         text=True,
         encoding="utf-8",
-        errors="replace", check=False)
+        errors="replace",
+    )
     return [line.rstrip() for line in result.stdout.splitlines() if line.strip()]
 
 

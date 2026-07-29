@@ -64,7 +64,8 @@ def run(
     _validate_cmd(cmd)
     try:
         result = subprocess.run(  # nosemgrep
-            cmd, capture_output=True, text=True, timeout=timeout, check=False)
+            cmd, capture_output=True, text=True, timeout=timeout
+        )
     except subprocess.TimeoutExpired as exc:
         raise RuntimeError(
             f"Command timed out after {timeout}s: {' '.join(cmd)}\n"
