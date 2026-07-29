@@ -11,9 +11,8 @@ import importlib.util
 import json
 import sys
 import tempfile
-import unittest
 from pathlib import Path
-from unittest import mock
+from unittest import TestCase, main, mock
 
 
 def _load_issue_reconciler_module():
@@ -38,7 +37,7 @@ def _load_issue_reconciler_module():
 issue_reconciler = _load_issue_reconciler_module()
 
 
-class IssueReconcilerTest(unittest.TestCase):
+class IssueReconcilerTest(TestCase):
     """Which of create / comment / close the current findings select."""
 
     def test_creates_issue_when_findings_exist_and_no_open_issue(self) -> None:
@@ -129,7 +128,7 @@ class IssueReconcilerTest(unittest.TestCase):
         self.assertEqual(report["issue_action"], "closed")
 
 
-class LookupTest(unittest.TestCase):
+class LookupTest(TestCase):
     """The search/view logic the gh_cli migration rewrote."""
 
     def _result(self, stdout: str = "", returncode: int = 0):
@@ -247,4 +246,4 @@ class LookupTest(unittest.TestCase):
 
 
 if __name__ == "__main__":
-    unittest.main()
+    main()
