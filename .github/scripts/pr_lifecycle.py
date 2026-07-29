@@ -46,18 +46,6 @@ def ensure_labels() -> None:
         )
 
 
-def _pr_arg(pr_number: int) -> str:
-    """Render a PR number as an argv token, via an explicit int() barrier.
-
-    `--pr-number` is declared `type=int`, so argparse rejects a non-integer before
-    set_state ever runs — but that guarantee lives in the parser, far from the `gh`
-    call, so a tracer following argv sees only a value derived from user input and
-    flags the command line as uncontrolled (CodeQL py/command-line-injection).
-    Converting here makes the invariant local: a decimal integer string, or it raises.
-    """
-    return str(int(pr_number))
-
-
 def set_state(pr_number: int, state: str) -> None:
     if pr_number <= 0:
         raise ValueError(f"Invalid PR number: {pr_number}")
@@ -72,7 +60,7 @@ def set_state(pr_number: int, state: str) -> None:
                 "gh",
                 "pr",
                 "edit",
-                _pr_arg(pr_number),
+                str(pr_number),
                 "--remove-label",
                 f"lifecycle/{known_state}",
             ],
@@ -84,7 +72,7 @@ def set_state(pr_number: int, state: str) -> None:
             "gh",
             "pr",
             "edit",
-            _pr_arg(pr_number),
+            str(pr_number),
             "--add-label",
             f"lifecycle/{state}",
         ],
