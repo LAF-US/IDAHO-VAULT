@@ -187,6 +187,7 @@ jobs:
           # `gh` with "Argument list too long" (observed on #871's first auto-pr
           # run). A file has no such limit.
           BODY_FILE=$(mktemp)
+          trap 'rm -f "$BODY_FILE"' EXIT
           printf '%s\n' \
             "## Auto-generated PR" \
             "" \
