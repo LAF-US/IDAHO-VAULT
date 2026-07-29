@@ -103,15 +103,7 @@ def find_vault_notes() -> list[Path]:
 
 
 def extract_frontmatter(content: str) -> str:
-    """
-    Return the note's YAML frontmatter block.
-
-    The block is delimited by opening and closing '---' fence lines, or ""
-    if the file has none. Restricting field extraction to this block keeps
-    `URL:`/`wayback:`-shaped lines that appear in prose or fenced example
-    code (e.g. a doc demonstrating the frontmatter convention) from being
-    mistaken for a real field of the file they're in.
-    """
+    """Return the note's own YAML frontmatter block (or "" if it has none)."""
     content = content.lstrip("﻿")
     lines = content.splitlines()
     if not lines or lines[0].strip() != "---":
