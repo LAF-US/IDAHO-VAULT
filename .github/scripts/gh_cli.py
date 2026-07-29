@@ -15,37 +15,6 @@ import subprocess
 
 _ALLOWED_EXECUTABLES: set[str] = {"gh"}
 
-# Allowed `gh` command SHAPES — the subcommand verb prefix, never the argument values.
-# shell=False plus the executable allowlist already make injection inert, but the command
-# INTENT was still assembled from caller-supplied pieces; CodeQL flags that as an
-# uncontrolled command line. Pinning the verb prefix to this literal set means a caller
-# can only ever invoke a family this automation already uses: dynamic values (PR numbers,
-# label text, bodies, jq expressions) stay free, while `gh <something-else>` cannot be
-# reached at all. Derived by enumerating every gh invocation across .github/**/*.py —
-# including issue_reconciler's `gh(*args)` splat — so this is the observed surface, not a
-# guess. ADD A LINE HERE when a script needs a new family; a missing entry fails loudly at
-# the call rather than silently doing the wrong thing.
-_ALLOWED_GH_PATTERNS: tuple[tuple[str, ...], ...] = (
-    ("api",),                 # REST + `api graphql`; the query itself is an argument
-    ("label", "create"),
-    ("pr", "close"),
-    ("pr", "comment"),
-    ("pr", "edit"),
-    ("pr", "list"),
-    ("pr", "merge"),
-    ("pr", "view"),
-    ("issue", "list"),
-    ("issue", "view"),
-    ("issue", "create"),
-    ("issue", "comment"),
-    ("issue", "close"),
-)
-
-
-def _command_shape_allowed(args: list[str]) -> bool:
-    """True if ``args`` (argv after the executable) opens with an allowed verb prefix."""
-    return any(args[: len(pattern)] == list(pattern) for pattern in _ALLOWED_GH_PATTERNS)
-
 
 def _as_text(value: bytes | str | None) -> str:
     """Normalize TimeoutExpired stream to str. Under text=True the main result
@@ -79,13 +48,6 @@ def _validate_cmd(cmd: list[str]) -> None:
             raise ValueError("All command arguments must be strings")
         if "\x00" in part:
             raise ValueError("Command arguments must not contain NUL bytes")
-    # Shape check LAST: the type/NUL loop above must have run first, so this only ever
-    # compares strings. Argument VALUES stay unconstrained — only the verb prefix is pinned.
-    if not _command_shape_allowed(cmd[1:]):
-        raise ValueError(
-            f"gh command shape not allowed: {' '.join(cmd[1:3])!r}. "
-            f"Add it to _ALLOWED_GH_PATTERNS if this family is intended."
-        )
 
 
 def run(
@@ -102,7 +64,7 @@ def run(
     _validate_cmd(cmd)
     try:
         result = subprocess.run(  # nosemgrep
-            cmd, capture_output=True, text=True, timeout=timeout, check=False
+            cmd, capture_output=True, text=True, timeout=timeout
         )
     except subprocess.TimeoutExpired as exc:
         raise RuntimeError(
