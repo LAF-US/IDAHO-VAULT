@@ -32,7 +32,7 @@ def _load_gh_cli_module():
 gh_cli = _load_gh_cli_module()
 
 
-def _completed(stdout: str = "", returncode: int = 0) -> gh_cli.GhResult:
+def _completed(stdout: str = "", returncode: int = 0):
     """Build the CompletedProcess shape gh_cli's own subprocess would return."""
     return gh_cli.subprocess.CompletedProcess(
         args=["gh"], returncode=returncode, stdout=stdout, stderr=""
@@ -193,8 +193,15 @@ class ArgvTest(TestCase):
         self.assertEqual(
             argv,
             ["gh", "api", "graphql", "-f", "query=query($n:Int!){x}",
-             "-f", "owner=LAF-US", "-F", "number=854", "-f", "flag=True"],
+             "-f", "owner=LAF-US", "-F", "number=854", "-F", "flag=true"],
         )
+
+    def test_graphql_renders_booleans_the_way_gh_parses_them(self) -> None:
+        # gh recognizes lowercase true/false for -F. Python's str(True) is "True",
+        # which gh passes through as the STRING "True" — a `Boolean!` variable rejects
+        # it. No caller passes a bool today; this keeps the trap from being set later.
+        argv, _ = _argv(gh_cli.graphql, "query{x}", first=True, second=False)
+        self.assertEqual(argv[-4:], ["-F", "first=true", "-F", "second=false"])
 
     def test_graphql_keeps_an_equals_sign_inside_the_value(self) -> None:
         # `gh api` splits -f/-F on the FIRST `=`, so a value containing more of them

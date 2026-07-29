@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import importlib.util
+import json
 import sys
 import tempfile
 import unittest
@@ -117,6 +118,123 @@ class IssueReconcilerTest(unittest.TestCase):
         )
         close_issue.assert_called_once_with(41)
         self.assertEqual(report["issue_action"], "closed")
+
+
+class LookupTest(unittest.TestCase):
+    """The search/view logic the gh_cli migration rewrote."""
+
+    def _result(self, stdout: str = "", returncode: int = 0):
+        # Built from the module's own subprocess, so this test file needs no
+        # subprocess import of its own and stays pinned to what gh_cli returns.
+        return issue_reconciler.gh_cli.subprocess.CompletedProcess(
+            args=["gh"], returncode=returncode, stdout=stdout, stderr=""
+        )
+
+    def _env(self):
+        return mock.patch.dict(
+            "os.environ", {"GITHUB_REPOSITORY": "LAF-US/IDAHO-VAULT"}, clear=False
+        )
+
+    def test_find_open_issue_requires_an_exact_title_match(self) -> None:
+        # gh's --search is fuzzy, so the exact-title check is what actually decides.
+        payload = json.dumps(
+            [{"number": 5, "title": "[Looker Worklist] Review-thread triage census (old)"},
+             {"number": 7, "title": "[Looker Worklist] Review-thread triage census"}]
+        )
+        with self._env(), mock.patch.object(
+            issue_reconciler.gh_cli, "issue_search_open", return_value=self._result(payload)
+        ) as search:
+            found = issue_reconciler.find_open_issue_number(
+                "[Looker Worklist] Review-thread triage census"
+            )
+        self.assertEqual(found, 7)
+        search.assert_called_once_with(
+            "LAF-US",
+            "IDAHO-VAULT",
+            search='"[Looker Worklist] Review-thread triage census" in:title',
+            json_fields="number,title",
+        )
+
+    def test_find_open_issue_returns_none_when_the_search_fails(self) -> None:
+        # A failed lookup must not be mistaken for "no issue exists" and then open a
+        # duplicate — but it also must not crash the workflow. None, and the caller
+        # creates one; that is the accepted trade recorded here.
+        with self._env(), mock.patch.object(
+            issue_reconciler.gh_cli, "issue_search_open", side_effect=RuntimeError("gh down")
+        ):
+            self.assertIsNone(issue_reconciler.find_open_issue_number("anything"))
+
+    def test_find_open_issue_survives_unparseable_output(self) -> None:
+        with self._env(), mock.patch.object(
+            issue_reconciler.gh_cli, "issue_search_open", return_value=self._result("not json")
+        ):
+            self.assertIsNone(issue_reconciler.find_open_issue_number("anything"))
+
+    def test_fingerprint_found_in_the_issue_body_skips_the_comment_read(self) -> None:
+        marker = "<!-- issue-reconciler-fingerprint:abc -->"
+        with self._env(), mock.patch.object(
+            issue_reconciler.gh_cli,
+            "issue_view",
+            return_value=self._result(json.dumps({"body": f"report\n\n{marker}\n"})),
+        ), mock.patch.object(
+            issue_reconciler.gh_cli, "api_issue_comments"
+        ) as comments:
+            self.assertTrue(issue_reconciler.issue_has_fingerprint(7, marker))
+        comments.assert_not_called()
+
+    def test_fingerprint_falls_through_to_comments(self) -> None:
+        marker = "<!-- issue-reconciler-fingerprint:abc -->"
+        with self._env(), mock.patch.object(
+            issue_reconciler.gh_cli,
+            "issue_view",
+            return_value=self._result(json.dumps({"body": "no marker here"})),
+        ), mock.patch.object(
+            issue_reconciler.gh_cli,
+            "api_issue_comments",
+            return_value=self._result(f"something\n{marker}\n"),
+        ) as comments:
+            self.assertTrue(issue_reconciler.issue_has_fingerprint(7, marker))
+        comments.assert_called_once_with(
+            "LAF-US", "IDAHO-VAULT", 7, jq=".[].body", check=False
+        )
+
+    def test_fingerprint_absent_when_the_comment_read_fails(self) -> None:
+        # api_issue_comments runs with check=False, so a non-zero exit arrives as a
+        # returncode rather than an exception — and must read as "not found", not as
+        # a crash and not as a false duplicate.
+        marker = "<!-- issue-reconciler-fingerprint:abc -->"
+        with self._env(), mock.patch.object(
+            issue_reconciler.gh_cli,
+            "issue_view",
+            side_effect=RuntimeError("no such issue"),
+        ), mock.patch.object(
+            issue_reconciler.gh_cli,
+            "api_issue_comments",
+            return_value=self._result("", returncode=1),
+        ):
+            self.assertFalse(issue_reconciler.issue_has_fingerprint(7, marker))
+
+    def test_repo_rejects_a_missing_or_malformed_repository(self) -> None:
+        for value in ("", "no-slash"):
+            with self.subTest(value=value):
+                with mock.patch.dict(
+                    "os.environ", {"GITHUB_REPOSITORY": value}, clear=False
+                ), self.assertRaises(RuntimeError):
+                    issue_reconciler._repo()
+
+    def test_body_fingerprint_refuses_a_traversing_path(self) -> None:
+        with self.assertRaises(ValueError):
+            issue_reconciler.ensure_body_fingerprint(Path("../etc/passwd"))
+
+    def test_body_fingerprint_is_stable_across_restamping(self) -> None:
+        # The digest is taken with any previous marker stripped, so an unchanged report
+        # yields an unchanged marker — that is the whole basis of the duplicate check.
+        with tempfile.TemporaryDirectory() as tempdir:
+            body_file = Path(tempdir) / "report.md"
+            body_file.write_text("# Report\n\nfindings\n", encoding="utf-8")
+            first = issue_reconciler.ensure_body_fingerprint(body_file)
+            second = issue_reconciler.ensure_body_fingerprint(body_file)
+        self.assertEqual(first, second)
 
 
 if __name__ == "__main__":

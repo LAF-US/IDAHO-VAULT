@@ -320,7 +320,12 @@ def graphql(query: str, **variables: object) -> GhResult:
     for key, value in variables.items():
         if not key.isidentifier():
             raise ValueError(f"Not a valid GraphQL variable name: {key!r}")
-        if isinstance(value, int) and not isinstance(value, bool):
+        if isinstance(value, bool):
+            # `-F` is the typed field, but gh only recognizes lowercase true/false —
+            # Python's str(True) is "True", which gh would pass through as the STRING
+            # "True" and a `Boolean!` variable would reject. Render it gh's way.
+            argv += ["-F", f"{key}={'true' if value else 'false'}"]
+        elif isinstance(value, int):
             argv += ["-F", f"{key}={int(value)}"]
         else:
             argv += ["-f", f"{key}={value}"]
