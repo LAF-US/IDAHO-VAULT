@@ -7,7 +7,6 @@ import argparse
 import hashlib
 import json
 import os
-import subprocess
 import sys
 from pathlib import Path
 
@@ -17,7 +16,7 @@ FINGERPRINT_PREFIX = "<!-- issue-reconciler-fingerprint:"
 FINGERPRINT_SUFFIX = " -->"
 
 
-def _json(result: subprocess.CompletedProcess[str]) -> list[dict] | dict | None:
+def _json(result: gh_cli.GhResult) -> list[dict] | dict | None:
     """Decode a gh JSON payload, returning None when there is nothing decodable."""
     try:
         return json.loads(result.stdout)

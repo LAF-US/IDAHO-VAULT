@@ -1,5 +1,4 @@
-"""
-Tests for gh_cli.py — the one module that builds a ``gh`` command line.
+"""Tests for gh_cli.py — the one module that builds a ``gh`` command line.
 
 These assert the exact argv each typed operation emits, and that values which
 could turn a value position into a flag (or a path traversal, or a second
@@ -10,7 +9,6 @@ caller cannot bypass any of this; these tests are what stands behind that claim.
 from __future__ import annotations
 
 import importlib.util
-import subprocess
 import sys
 from pathlib import Path
 from unittest import TestCase, main, mock
@@ -19,8 +17,9 @@ from unittest import TestCase, main, mock
 def _load_gh_cli_module():
     scripts_dir = Path(__file__).resolve().parents[1] / ".github" / "scripts"
     spec = importlib.util.spec_from_file_location("gh_cli_test_module", scripts_dir / "gh_cli.py")
+    if spec is None or spec.loader is None:
+        raise RuntimeError("gh_cli.py could not be loaded by file path")
     module = importlib.util.module_from_spec(spec)
-    assert spec.loader is not None
     original_sys_path = list(sys.path)
     sys.path.insert(0, str(scripts_dir))
     try:
@@ -33,8 +32,11 @@ def _load_gh_cli_module():
 gh_cli = _load_gh_cli_module()
 
 
-def _completed(stdout: str = "", returncode: int = 0) -> subprocess.CompletedProcess[str]:
-    return subprocess.CompletedProcess(args=["gh"], returncode=returncode, stdout=stdout, stderr="")
+def _completed(stdout: str = "", returncode: int = 0) -> gh_cli.GhResult:
+    """Build the CompletedProcess shape gh_cli's own subprocess would return."""
+    return gh_cli.subprocess.CompletedProcess(
+        args=["gh"], returncode=returncode, stdout=stdout, stderr=""
+    )
 
 
 def _argv(call, *args, **kwargs) -> tuple[list[str], dict]:
@@ -42,7 +44,7 @@ def _argv(call, *args, **kwargs) -> tuple[list[str], dict]:
     with mock.patch.object(gh_cli, "_run", return_value=_completed()) as run:
         call(*args, **kwargs)
     run.assert_called_once()
-    return (run.call_args.args[0], run.call_args.kwargs)
+    return (run.call_args.args[0], dict(run.call_args.kwargs))
 
 
 class ArgvTest(TestCase):
@@ -284,7 +286,7 @@ class RunPrimitiveTest(TestCase):
         )
 
     def test_raises_with_both_streams_on_non_zero_exit(self) -> None:
-        failed = subprocess.CompletedProcess(
+        failed = gh_cli.subprocess.CompletedProcess(
             args=["gh"], returncode=1, stdout="out", stderr="err"
         )
         with mock.patch.object(gh_cli.subprocess, "run", return_value=failed):
@@ -296,7 +298,7 @@ class RunPrimitiveTest(TestCase):
         self.assertIn("err", message)
 
     def test_returns_the_failure_when_check_is_false(self) -> None:
-        failed = subprocess.CompletedProcess(
+        failed = gh_cli.subprocess.CompletedProcess(
             args=["gh"], returncode=1, stdout="", stderr="nope"
         )
         with mock.patch.object(gh_cli.subprocess, "run", return_value=failed):
@@ -304,7 +306,7 @@ class RunPrimitiveTest(TestCase):
         self.assertEqual(result.returncode, 1)
 
     def test_timeout_raises_the_same_surface_and_decodes_byte_streams(self) -> None:
-        expired = subprocess.TimeoutExpired(
+        expired = gh_cli.subprocess.TimeoutExpired(
             cmd=["gh"], timeout=300, output=b"partial", stderr=b"\xff"
         )
         with mock.patch.object(gh_cli.subprocess, "run", side_effect=expired):
