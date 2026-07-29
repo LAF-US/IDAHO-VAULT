@@ -441,5 +441,32 @@ class RenderWorklistTest(TestCase):
         self.assertIn("threads-truncated", md)
 
 
+class RenderWorklistCliTest(TestCase):
+    def test_reads_the_report_from_stdin(self):
+        # stdin is the ONLY input: no path argument exists, so the shell redirect
+        # (`render-worklist < report.json`) is the whole file story.
+        report = json.dumps({
+            "open_prs": 2, "stale": 1, "by_lane": {"needs-human": 1},
+            "by_resolution": {}, "safe_to_drain": [],
+            "reports": [{"pr": 77, "lane": "needs-human", "stale": True,
+                         "auto_merge_armed": False, "threads_truncated": False,
+                         "unresolved_threads": 3, "resolution_counts": {}}],
+        })
+        args = thread_witness.build_parser().parse_args(["render-worklist"])
+        with mock.patch.object(sys, "stdin", io.StringIO(report)), \
+             mock.patch("builtins.print") as printed:
+            self.assertEqual(thread_witness.render_worklist(args), 0)
+        rendered = printed.call_args[0][0]
+        self.assertIn("**#77**", rendered)
+        self.assertIn("**Open PRs:** 2", rendered)
+
+    def test_empty_stdin_renders_the_empty_worklist(self):
+        args = thread_witness.build_parser().parse_args(["render-worklist"])
+        with mock.patch.object(sys, "stdin", io.StringIO("")), \
+             mock.patch("builtins.print") as printed:
+            self.assertEqual(thread_witness.render_worklist(args), 0)
+        self.assertIn("every open PR is in the `clear` lane", printed.call_args[0][0])
+
+
 if __name__ == "__main__":
     main()
