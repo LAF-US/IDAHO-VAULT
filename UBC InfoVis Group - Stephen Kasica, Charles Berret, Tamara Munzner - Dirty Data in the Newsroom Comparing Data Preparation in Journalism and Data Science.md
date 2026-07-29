@@ -42,16 +42,16 @@ Talk
 Materials
 
 - Paper:
- 	- [preprint](https://www.cs.ubc.ca/group/infovis/pubs/2023/dirty-data-in-the-newsroom/dirty-data-in-the-newsroom.pdf)
-  		- [DOI](https://doi.org/10.1145/3544548.3581271)
-  		- [bib](https://www.cs.ubc.ca/group/infovis/pubs/2023/dirty-data-in-the-newsroom/dirty-data-newsroom.bib)
+  - [preprint](https://www.cs.ubc.ca/group/infovis/pubs/2023/dirty-data-in-the-newsroom/dirty-data-in-the-newsroom.pdf)
+    - [DOI](https://doi.org/10.1145/3544548.3581271)
+    - [bib](https://www.cs.ubc.ca/group/infovis/pubs/2023/dirty-data-in-the-newsroom/dirty-data-newsroom.bib)
 - [Supplemental materials archived on OSF](https://osf.io/nbtvm/):
- 	- [Section 1: Related work on data science process papers and dirty data taxonomies](https://osf.io/t2dya/)
-  		- [Section 2: Interview study materials](https://osf.io/ub8kf/)
-  		- [Section 3: Activity codes through the first two phases of our study](https://osf.io/vfzpg/)
-  		- [Section 4: Issue code evolution](https://osf.io/x8rkv/)
-  		- [Section 5: Analysis of tool usage among data journalists](https://osf.io/j5fgb/)
-  		- [Section 6: Data integration challenges, including nightmare stories](https://osf.io/c8fm9/)
+  - [Section 1: Related work on data science process papers and dirty data taxonomies](https://osf.io/t2dya/)
+    - [Section 2: Interview study materials](https://osf.io/ub8kf/)
+    - [Section 3: Activity codes through the first two phases of our study](https://osf.io/vfzpg/)
+    - [Section 4: Issue code evolution](https://osf.io/x8rkv/)
+    - [Section 5: Analysis of tool usage among data journalists](https://osf.io/j5fgb/)
+    - [Section 6: Data integration challenges, including nightmare stories](https://osf.io/c8fm9/)
 
 Figures
 

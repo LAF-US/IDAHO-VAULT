@@ -133,7 +133,7 @@ In *The Penultimate Peril*, Justice Strauss is confirmed to survive the Hotel De
 The framed man.
 
 - She is one of the multiple characters with the initials [J.S.](https://snicket.fandom.com/wiki/J.S. "J.S.")
- 	- She may have been the intended recipient of the [Verbal Fridge Dialogue](https://snicket.fandom.com/wiki/Verbal_Fridge_Dialogue "Verbal Fridge Dialogue") found in *[The Slippery Slope](https://snicket.fandom.com/wiki/The_Slippery_Slope "The Slippery Slope")*.
+  - She may have been the intended recipient of the [Verbal Fridge Dialogue](https://snicket.fandom.com/wiki/Verbal_Fridge_Dialogue "Verbal Fridge Dialogue") found in *[The Slippery Slope](https://snicket.fandom.com/wiki/The_Slippery_Slope "The Slippery Slope")*.
 - There is, in the TV series, a photo of a framed man ([Barry Sonnenfeld](https://snicket.fandom.com/wiki/Barry_Sonnenfeld "Barry Sonnenfeld")) in her library. It is unclear if this is supposed to be her father, a friend, or someone unimportant.
 - In the French version, her full name is Judith "Judy" Sibyl Abbott.
 - Although it is unknown what inspired her surname "Strauss", [Daniel Handler](https://snicket.fandom.com/wiki/Daniel_Handler "Daniel Handler") is from San Francisco where the Golden Gate Bridge is, and the designer of the bridge is Joseph Strauss who also happens to be a J.S. However, this is only a hypothesis.
@@ -150,10 +150,10 @@ The framed man.
 - *[Lemony Snicket's A Series of Unfortunate Events (film)](https://snicket.fandom.com/wiki/Lemony_Snicket%27s_A_Series_of_Unfortunate_Events_\(film\) "Lemony Snicket's A Series of Unfortunate Events (film)")*
 - *[Lemony Snicket's A Series of Unfortunate Events (video game)](https://snicket.fandom.com/wiki/Lemony_Snicket%27s_A_Series_of_Unfortunate_Events_\(video_game\) "Lemony Snicket's A Series of Unfortunate Events (video game)")*
 - [*A Series of Unfortunate Events* (TV series)](https://snicket.fandom.com/wiki/A_Series_of_Unfortunate_Events_\(TV_series\) "A Series of Unfortunate Events (TV series)")
- 	- " [The Bad Beginning: Part One](https://snicket.fandom.com/wiki/The_Bad_Beginning:_Part_One "The Bad Beginning: Part One") "
-  		- " [The Bad Beginning: Part Two](https://snicket.fandom.com/wiki/The_Bad_Beginning:_Part_Two "The Bad Beginning: Part Two") "
-  		- " [The Penultimate Peril: Part One](https://snicket.fandom.com/wiki/The_Penultimate_Peril:_Part_One "The Penultimate Peril: Part One") "
-  		- " [The Penultimate Peril: Part Two](https://snicket.fandom.com/wiki/The_Penultimate_Peril:_Part_Two "The Penultimate Peril: Part Two") "
+  - " [The Bad Beginning: Part One](https://snicket.fandom.com/wiki/The_Bad_Beginning:_Part_One "The Bad Beginning: Part One") "
+    - " [The Bad Beginning: Part Two](https://snicket.fandom.com/wiki/The_Bad_Beginning:_Part_Two "The Bad Beginning: Part Two") "
+    - " [The Penultimate Peril: Part One](https://snicket.fandom.com/wiki/The_Penultimate_Peril:_Part_One "The Penultimate Peril: Part One") "
+    - " [The Penultimate Peril: Part Two](https://snicket.fandom.com/wiki/The_Penultimate_Peril:_Part_Two "The Penultimate Peril: Part Two") "
 
 ## Gallery
 

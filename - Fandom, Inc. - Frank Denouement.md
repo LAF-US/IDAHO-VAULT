@@ -44,13 +44,13 @@ Following the trial, both brothers are blindfolded while the Baudelaires, Count 
 - It is a mystery as to why Frank never reveals his identity to the Baudelaires, as while Ernest would let them know he is on the fire-starting side of the V.F.D. schism and Dewey must keep his identity a secret, Frank is the person they were told to help and revealing this would make them trust him.
 - Since the first letter of each Denouement brothers name could correspond to their birth order, Frank is possibly the youngest Denouement.
 - As Dewey confirmed being ambidextrous, it is likely Frank and Ernest are as well, as they are each identical triplets since 2/3 of a identical triplet pairing always has one be right handed and the other left handed leaving the last one ambidextrous, but it's impossible to tell which brother was truly which due to them all acting identical.
- 	- However he could trained himself to use whatever hand that was needed at moment to pass as one of his brothers.
+  - However he could trained himself to use whatever hand that was needed at moment to pass as one of his brothers.
 - If Frank had not let Violet deliver the harpoon gun to Carmelita, it is likely Dewey would have survived.
 - Some have speculated that Frank may actually be on the fire-starting side of VFD.
- 	- Frank never reveals his identity to the Baudelaires allowing Ernest to fool them (But Dewey as well).
-  		- Frank gave Carmelita Spats the harpoon gun Dewey later died from.
-  		- Frank may have supported the Baudelaires at the trial to keep his true loyalty a secret or because he holds a grudge against Olaf for his brother's death.
-  		- Despite these claims, Frank's secrecy may be so that they trusted Dewey as well, and it is likely that the V.F.D. wanted Carmelita to have the harpoon gun to distract her and Esme Squalor. Alternatively, the reason Frank gave the harpoon gun to Carmelita was to assist Frank into dropping the package into the sub-sub-basement.
+  - Frank never reveals his identity to the Baudelaires allowing Ernest to fool them (But Dewey as well).
+    - Frank gave Carmelita Spats the harpoon gun Dewey later died from.
+    - Frank may have supported the Baudelaires at the trial to keep his true loyalty a secret or because he holds a grudge against Olaf for his brother's death.
+    - Despite these claims, Frank's secrecy may be so that they trusted Dewey as well, and it is likely that the V.F.D. wanted Carmelita to have the harpoon gun to distract her and Esme Squalor. Alternatively, the reason Frank gave the harpoon gun to Carmelita was to assist Frank into dropping the package into the sub-sub-basement.
 - The show chooses to have Frank be the triplet who apprehends Count Olaf, though in the books it is ambiguous.
 - Based on scenes where it is known which triplet is which, Frank's personality seems to be more "matter of fact" and blunt than his brothers, perhaps in reference to his name.
 - Just like the [White-Faced Women](https://snicket.fandom.com/wiki/White-Faced_Women "White-Faced Women"), [Snickets](https://snicket.fandom.com/wiki/Snicket_Clan "Snicket Clan"), and [Quagmires](https://snicket.fandom.com/wiki/Quagmire_Family "Quagmire Family"), Frank appears to be a twin before the third sibling, [Dewey](https://snicket.fandom.com/wiki/Dewey_Denouement "Dewey Denouement") is revealed in [The Penultimate Peril](https://snicket.fandom.com/wiki/The_Penultimate_Peril "The Penultimate Peril").

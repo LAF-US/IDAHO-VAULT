@@ -74,7 +74,7 @@ Some tips:
 - It’s best to move closer to the subject of your photo, rather than zooming in.
 - Please don’t edit, Photoshop or add filters to your photos. For journalism, we need visuals to be authentic and untouched in any way!
 - Here are some examples of what we’re looking for. Notice how the photos show different perspectives.
- 	- *Two buckets hang inside the ceiling at Valley View to collect water from leaking pipes.*
- 	- *Buckets hang from the ceiling in the main hallway to collect leaking water at Valley View Elementary in Bonners Ferry, Idaho.*
- 	- A good example of a photo description: *Steve Bortz, Valley View Elementary’s head of maintenance, shines a light to show two buckets hanging inside a hallway ceiling to collect water leaking from pipes.*
- 	- These photos were taken on Jan. 22, 2023, by Sarah Miller of the Idaho Statesman.*
+  - *Two buckets hang inside the ceiling at Valley View to collect water from leaking pipes.*
+  - *Buckets hang from the ceiling in the main hallway to collect leaking water at Valley View Elementary in Bonners Ferry, Idaho.*
+  - A good example of a photo description: *Steve Bortz, Valley View Elementary’s head of maintenance, shines a light to show two buckets hanging inside a hallway ceiling to collect water leaking from pipes.*
+  - These photos were taken on Jan. 22, 2023, by Sarah Miller of the Idaho Statesman.*

@@ -17,8 +17,8 @@ created: 2026-04-17
 [Getting Started](https://docs.mistral.ai/api/endpoint/chat)
 
 - [Chat](https://docs.mistral.ai/api/endpoint/chat)
- 	- [postChat Completion
-  ](https://docs.mistral.ai/api/endpoint/chat#operation-chat_completion_v1_chat_completions_post)
+  - [postChat Completion
+](https://docs.mistral.ai/api/endpoint/chat#operation-chat_completion_v1_chat_completions_post)
 
 - [Fim](https://docs.mistral.ai/api/endpoint/fim)
 

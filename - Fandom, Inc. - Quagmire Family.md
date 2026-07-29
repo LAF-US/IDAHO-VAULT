@@ -44,7 +44,7 @@ When [Count Olaf](https://snicket.fandom.com/wiki/Count_Olaf "Count Olaf") meets
 - "Quagmire" was likely chosen for these characters' surname due to its definition of "a position or situation which is unpleasant or hazardous; *esp.* one from which it is difficult to extricate oneself." It also can mean "an area of wet, boggy land that gives way under foot; a quaking bog," or "something soft, flabby, or yielding." [^5]
 - Their most used fanmade names are Karen (Mrs. Quagmire) and Quinten (Mr. Quagmire).
 - According to the Netflix series, Mrs. Quagmire calls bad people *miscreants*. [^6]
- 	- She is also known for reading Italian poetry and activating trap doors. [^6]
+  - She is also known for reading Italian poetry and activating trap doors. [^6]
 - This family’s set of identical triplets are the only set in the franchise confirmed to be triplets from the time of their introduction- all other sets were initially thought to only be twins before they were revealed to be triplets later on in the storyline, a recurring theme in the series.
 
 ## Appearances

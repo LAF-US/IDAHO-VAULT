@@ -33,11 +33,11 @@ Take the following scenario:
 - It works well initially but can’t maintain context across sessions
 - You spend weeks engineering a RAG solution that seems to help
 - Then the cycle begins…
- 	- Users report the agent forgetting things, contradicting itself, or losing context mid-session
-  		- You build evals to quantify the problem
-  		- You re-engineer your entire RAG pipeline with better chunking, embeddings, retrieval strategies
-  		- The problems shift but don’t disappear
-  		- Repeat
+  - Users report the agent forgetting things, contradicting itself, or losing context mid-session
+    - You build evals to quantify the problem
+    - You re-engineer your entire RAG pipeline with better chunking, embeddings, retrieval strategies
+    - The problems shift but don’t disappear
+    - Repeat
 
 Eventually you realize the issue isn’t engineering—-it’s that you’re not extracting all the latent information from your data. You need to reason exhaustively, handle contradictions, track patterns over time, and maintain coherent state. In other words, you’d need to build Honcho.
 

@@ -87,12 +87,12 @@ Cleavers use [woven razor](https://skulduggery.fandom.com/wiki/Woven_Razor "Wove
 
 - All Cleavers have shaved heads.
 - According to the *[The Skulduggery Pleasant Grimoire](https://skulduggery.fandom.com/wiki/The_Skulduggery_Pleasant_Grimoire "The Skulduggery Pleasant Grimoire")*, there are legends of White Cleavers and Black Cleavers going back centuries, often serving as warnings to new recruits. These appear to have some historical basis, and indicate an unknown force at work. Connections to the [Black Cleaver](https://skulduggery.fandom.com/wiki/Black_Cleaver "Black Cleaver") are unknown.
- 	- There has also been one recorded mention of a Red Cleaver.
+  - There has also been one recorded mention of a Red Cleaver.
 - The Cleavers were originally part of an unproduced script.[^1]
 - A "Cleaver commander" was mentioned in one book, meaning Cleavers may hold different ranks.
- 	- This idea was only mentioned once, so it is unclear whether this is a common rank or whether the Cleaver in question was simply chosen to lead their comrades during that assignment.
-  		- The idea that they were in charge could be an assumption on the part of the character who mentioned them.
-  		- It is unclear if/how they are visually distinguishable from other Cleavers.
+  - This idea was only mentioned once, so it is unclear whether this is a common rank or whether the Cleaver in question was simply chosen to lead their comrades during that assignment.
+    - The idea that they were in charge could be an assumption on the part of the character who mentioned them.
+    - It is unclear if/how they are visually distinguishable from other Cleavers.
 
 ## References
 
