@@ -109,12 +109,14 @@ def extract_frontmatter(content: str) -> str:
     in prose or fenced example code (e.g. a doc demonstrating the frontmatter
     convention) from being mistaken for a real field of the file they're in.
     """
-    if not content.startswith("---"):
+    content = content.lstrip("﻿")
+    lines = content.splitlines()
+    if not lines or lines[0].strip() != "---":
         return ""
-    end = content.find("\n---", 3)
-    if end == -1:
-        return ""
-    return content[:end]
+    for i, line in enumerate(lines[1:], start=1):
+        if line.strip() == "---":
+            return "\n".join(lines[1:i])
+    return ""
 
 
 def extract_url(content: str) -> str | None:
