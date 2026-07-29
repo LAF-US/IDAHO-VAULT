@@ -68,6 +68,20 @@ def _num(value: int) -> str:
     return str(number)
 
 
+def _label(name: str) -> str:
+    """Return a label name that argv cannot mistake for a flag.
+
+    `gh` is Cobra-based: a token starting with ``-`` is parsed as a flag before it is
+    considered as a positional or as a flag's value, so a dash-prefixed label name is
+    not "a label with an odd name" — it is a parse error or, worse, a different
+    command. Empty is rejected for the same reason: it disappears from the argv the
+    reader thinks they wrote.
+    """
+    if not name or name.startswith("-"):
+        raise ValueError(f"Not a valid label name: {name!r}")
+    return name
+
+
 def _validate_cmd(cmd: list[str]) -> None:
     """Check the argv list this module built before handing it to the exec layer.
 
@@ -103,7 +117,11 @@ def label_create(
     name: str, *, color: str, description: str, force: bool = True, check: bool = True
 ) -> GhResult:
     """Create or update a label. Verb and flags are literals; only values vary."""
-    argv = ["gh", "label", "create", name, "--color", color, "--description", description]
+    argv = [
+        "gh", "label", "create", _label(name),
+        "--color", color,
+        "--description", description,
+    ]
     if force:
         argv.append("--force")
     return _run(argv, check=check)
@@ -126,9 +144,9 @@ def pr_edit(
         raise ValueError("pr_edit requires add_label and/or remove_label")
     argv = ["gh", "pr", "edit", _num(pr_number)]
     if add_label is not None:
-        argv += ["--add-label", add_label]
+        argv += ["--add-label", _label(add_label)]
     if remove_label is not None:
-        argv += ["--remove-label", remove_label]
+        argv += ["--remove-label", _label(remove_label)]
     return _run(argv, check=check)
 
 
@@ -177,6 +195,11 @@ def pr_merge(
     """
     if method != "merge":
         raise ValueError(f"merge method not allowed: {method!r} (the queue's method governs)")
+    if auto and disable_auto:
+        # Silently letting disable_auto win would leave a caller believing it armed a
+        # PR that is now disarmed. Contradictory input is not resolved here, it is
+        # refused — the same stance the method check above takes.
+        raise ValueError("pr_merge: auto and disable_auto are mutually exclusive")
     argv = ["gh", "pr", "merge", _num(pr_number)]
     if disable_auto:
         argv.append("--disable-auto")
