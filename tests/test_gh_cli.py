@@ -12,9 +12,8 @@ from __future__ import annotations
 import importlib.util
 import subprocess
 import sys
-import unittest
 from pathlib import Path
-from unittest import mock
+from unittest import TestCase, main, mock
 
 
 def _load_gh_cli_module():
@@ -38,17 +37,19 @@ def _completed(stdout: str = "", returncode: int = 0) -> subprocess.CompletedPro
     return subprocess.CompletedProcess(args=["gh"], returncode=returncode, stdout=stdout, stderr="")
 
 
-class ArgvTest(unittest.TestCase):
+def _argv(call, *args, **kwargs) -> tuple[list[str], dict]:
+    """Capture the argv (and run kwargs) one typed operation hands the run primitive."""
+    with mock.patch.object(gh_cli, "_run", return_value=_completed()) as run:
+        call(*args, **kwargs)
+    run.assert_called_once()
+    return (run.call_args.args[0], run.call_args.kwargs)
+
+
+class ArgvTest(TestCase):
     """Each typed operation emits exactly the command line it documents."""
 
-    def _argv(self, call, *args, **kwargs) -> tuple[list[str], dict]:
-        with mock.patch.object(gh_cli, "_run", return_value=_completed()) as run:
-            call(*args, **kwargs)
-        run.assert_called_once()
-        return (run.call_args.args[0], run.call_args.kwargs)
-
     def test_label_create(self) -> None:
-        argv, kwargs = self._argv(
+        argv, kwargs = _argv(
             gh_cli.label_create, "risk/low", color="0E8A16", description="Low risk"
         )
         self.assertEqual(
@@ -59,13 +60,13 @@ class ArgvTest(unittest.TestCase):
         self.assertEqual(kwargs, {"check": True})
 
     def test_label_create_without_force(self) -> None:
-        argv, _ = self._argv(
+        argv, _ = _argv(
             gh_cli.label_create, "risk/low", color="0E8A16", description="d", force=False
         )
         self.assertNotIn("--force", argv)
 
     def test_pr_edit_add_and_remove(self) -> None:
-        argv, kwargs = self._argv(
+        argv, kwargs = _argv(
             gh_cli.pr_edit, 854, add_label="risk/low", remove_label="risk/high", check=False
         )
         self.assertEqual(
@@ -80,9 +81,9 @@ class ArgvTest(unittest.TestCase):
             gh_cli.pr_edit(854)
 
     def test_pr_view_with_and_without_repo(self) -> None:
-        argv, _ = self._argv(gh_cli.pr_view, 12, json_fields="labels")
+        argv, _ = _argv(gh_cli.pr_view, 12, json_fields="labels")
         self.assertEqual(argv, ["gh", "pr", "view", "12", "--json", "labels"])
-        argv, _ = self._argv(
+        argv, _ = _argv(
             gh_cli.pr_view, 12, owner="LAF-US", repo="IDAHO-VAULT", json_fields="labels"
         )
         self.assertEqual(
@@ -96,15 +97,15 @@ class ArgvTest(unittest.TestCase):
 
     def test_pr_comment_keeps_multiline_markdown_in_one_element(self) -> None:
         body = "line one\n\n- bullet\n"
-        argv, _ = self._argv(gh_cli.pr_comment, 3, body)
+        argv, _ = _argv(gh_cli.pr_comment, 3, body)
         self.assertEqual(argv, ["gh", "pr", "comment", "3", "--body", body])
 
     def test_pr_merge_arms_and_disarms(self) -> None:
-        argv, _ = self._argv(gh_cli.pr_merge, 5, auto=True)
+        argv, _ = _argv(gh_cli.pr_merge, 5, auto=True)
         self.assertEqual(argv, ["gh", "pr", "merge", "5", "--merge", "--auto"])
-        argv, _ = self._argv(gh_cli.pr_merge, 5, disable_auto=True)
+        argv, _ = _argv(gh_cli.pr_merge, 5, disable_auto=True)
         self.assertEqual(argv, ["gh", "pr", "merge", "5", "--disable-auto"])
-        argv, _ = self._argv(gh_cli.pr_merge, 5)
+        argv, _ = _argv(gh_cli.pr_merge, 5)
         self.assertEqual(argv, ["gh", "pr", "merge", "5", "--merge"])
 
     def test_pr_merge_rejects_any_method_but_the_queues(self) -> None:
@@ -114,7 +115,7 @@ class ArgvTest(unittest.TestCase):
                 gh_cli.pr_merge(5, method=method)
 
     def test_pr_list_open(self) -> None:
-        argv, _ = self._argv(gh_cli.pr_list_open, "LAF-US", "IDAHO-VAULT")
+        argv, _ = _argv(gh_cli.pr_list_open, "LAF-US", "IDAHO-VAULT")
         self.assertEqual(
             argv,
             ["gh", "pr", "list", "--repo", "LAF-US/IDAHO-VAULT",
@@ -126,7 +127,7 @@ class ArgvTest(unittest.TestCase):
             gh_cli.pr_list_open("LAF-US", "../etc")
 
     def test_issue_search_open_and_view(self) -> None:
-        argv, _ = self._argv(
+        argv, _ = _argv(
             gh_cli.issue_search_open, "LAF-US", "IDAHO-VAULT",
             search='"[Looker Worklist] x" in:title', json_fields="number,title",
         )
@@ -136,7 +137,7 @@ class ArgvTest(unittest.TestCase):
              "--search", '"[Looker Worklist] x" in:title',
              "--json", "number,title", "--limit", "20"],
         )
-        argv, _ = self._argv(
+        argv, _ = _argv(
             gh_cli.issue_view, 7, owner="LAF-US", repo="IDAHO-VAULT", json_fields="body"
         )
         self.assertEqual(
@@ -145,32 +146,32 @@ class ArgvTest(unittest.TestCase):
         )
 
     def test_issue_create_comment_and_close(self) -> None:
-        argv, _ = self._argv(
+        argv, _ = _argv(
             gh_cli.issue_create,
-            owner="LAF-US", repo="IDAHO-VAULT", title="T", body_file="/tmp/body.md",
+            owner="LAF-US", repo="IDAHO-VAULT", title="T", body_file="report-body.md",
         )
         self.assertEqual(
             argv,
             ["gh", "issue", "create", "--repo", "LAF-US/IDAHO-VAULT",
-             "--title", "T", "--body-file", "/tmp/body.md"],
+             "--title", "T", "--body-file", "report-body.md"],
         )
-        argv, _ = self._argv(
+        argv, _ = _argv(
             gh_cli.issue_comment, 7, owner="LAF-US", repo="IDAHO-VAULT", body="done"
         )
         self.assertEqual(
             argv,
             ["gh", "issue", "comment", "7", "--repo", "LAF-US/IDAHO-VAULT", "--body", "done"],
         )
-        argv, _ = self._argv(
+        argv, _ = _argv(
             gh_cli.issue_comment_file,
-            7, owner="LAF-US", repo="IDAHO-VAULT", body_file="/tmp/body.md",
+            7, owner="LAF-US", repo="IDAHO-VAULT", body_file="report-body.md",
         )
         self.assertEqual(
             argv,
             ["gh", "issue", "comment", "7", "--repo", "LAF-US/IDAHO-VAULT",
-             "--body-file", "/tmp/body.md"],
+             "--body-file", "report-body.md"],
         )
-        argv, _ = self._argv(
+        argv, _ = _argv(
             gh_cli.issue_close, 7, owner="LAF-US", repo="IDAHO-VAULT"
         )
         self.assertEqual(
@@ -184,7 +185,7 @@ class ArgvTest(unittest.TestCase):
             gh_cli.issue_close(7, owner="LAF-US", repo="IDAHO-VAULT", reason="because")
 
     def test_graphql_types_its_variables(self) -> None:
-        argv, _ = self._argv(
+        argv, _ = _argv(
             gh_cli.graphql, "query($n:Int!){x}", owner="LAF-US", number=854, flag=True
         )
         self.assertEqual(
@@ -198,32 +199,36 @@ class ArgvTest(unittest.TestCase):
             gh_cli.graphql("query{x}", **{"--switch": "1"})
 
     def test_api_endpoints(self) -> None:
-        argv, _ = self._argv(gh_cli.api_pr_update_branch, "LAF-US", "IDAHO-VAULT", 9)
+        argv, _ = _argv(gh_cli.api_pr_update_branch, "LAF-US", "IDAHO-VAULT", 9)
         self.assertEqual(
             argv,
             ["gh", "api", "--method", "PUT",
              "repos/LAF-US/IDAHO-VAULT/pulls/9/update-branch"],
         )
-        argv, _ = self._argv(gh_cli.api_pr_files, "LAF-US", "IDAHO-VAULT", 9)
+        argv, _ = _argv(gh_cli.api_pr_files, "LAF-US", "IDAHO-VAULT", 9)
         self.assertEqual(
             argv,
             ["gh", "api", "--paginate", "repos/LAF-US/IDAHO-VAULT/pulls/9/files",
              "--jq", ".[].filename"],
         )
-        argv, _ = self._argv(gh_cli.api_issue_comments, "LAF-US", "IDAHO-VAULT", 9)
+        argv, _ = _argv(gh_cli.api_issue_comments, "LAF-US", "IDAHO-VAULT", 9)
         self.assertEqual(
             argv, ["gh", "api", "--paginate", "repos/LAF-US/IDAHO-VAULT/issues/9/comments"]
         )
-        argv, _ = self._argv(
+        argv, _ = _argv(
             gh_cli.api_issue_comments, "LAF-US", "IDAHO-VAULT", 9, jq=".[].body"
         )
         self.assertEqual(argv[-2:], ["--jq", ".[].body"])
 
 
-class ValueGuardTest(unittest.TestCase):
+class ValueGuardTest(TestCase):
     """A value can never become a flag, a path segment, or a second command."""
 
-    def test_slug_rejects_traversal_flags_and_separators(self) -> None:
+    # The guards are exercised through the operations rather than called directly, so
+    # these prove the guard is actually wired into the argv path — not merely that a
+    # helper exists somewhere beside it.
+
+    def test_operations_reject_a_repository_that_is_not_a_repository(self) -> None:
         for owner, repo in (
             ("..", "IDAHO-VAULT"),
             ("LAF-US", "../../etc"),
@@ -234,21 +239,17 @@ class ValueGuardTest(unittest.TestCase):
         ):
             with self.subTest(owner=owner, repo=repo):
                 with self.assertRaises(ValueError):
-                    gh_cli._slug(owner, repo)
+                    gh_cli.api_pr_files(owner, repo, 9)
 
-    def test_slug_accepts_real_names(self) -> None:
-        self.assertEqual(gh_cli._slug("LAF-US", "IDAHO-VAULT"), "LAF-US/IDAHO-VAULT")
-        self.assertEqual(gh_cli._slug("a_b.c", "d-e_f.g"), "a_b.c/d-e_f.g")
+    def test_operations_accept_real_repository_names(self) -> None:
+        argv, _ = _argv(gh_cli.api_pr_files, "a_b.c", "d-e_f.g", 9)
+        self.assertEqual(argv[3], "repos/a_b.c/d-e_f.g/pulls/9/files")
 
-    def test_num_rejects_non_numbers_and_non_positives(self) -> None:
+    def test_operations_reject_a_pr_number_that_is_not_a_number(self) -> None:
         for value in ("12; rm -rf /", "--flag", "", None, 0, -1):
             with self.subTest(value=value):
                 with self.assertRaises((ValueError, TypeError)):
-                    gh_cli._num(value)
-
-    def test_num_accepts_a_numeric_string(self) -> None:
-        self.assertEqual(gh_cli._num("854"), "854")
-        self.assertEqual(gh_cli._num(854), "854")
+                    gh_cli.pr_edit(value, add_label="risk/low")
 
     def test_validate_cmd_guards_the_argv_this_module_built(self) -> None:
         with self.assertRaises(ValueError):
@@ -268,7 +269,7 @@ class ValueGuardTest(unittest.TestCase):
         self.assertFalse(hasattr(gh_cli, "run"))
 
 
-class RunPrimitiveTest(unittest.TestCase):
+class RunPrimitiveTest(TestCase):
     """The run-capture-raise contract every operation inherits."""
 
     def test_returns_the_completed_process_on_success(self) -> None:
@@ -315,4 +316,4 @@ class RunPrimitiveTest(unittest.TestCase):
 
 
 if __name__ == "__main__":
-    unittest.main()
+    main()
