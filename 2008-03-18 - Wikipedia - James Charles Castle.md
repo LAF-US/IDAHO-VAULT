@@ -11,7 +11,7 @@ created: 2026-07-20
 
 ![James Castle at home in boise, Idaho](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/James_at_the_Front_of_His_Home_in_Boise%2C_idaho..webp/250px-James_at_the_Front_of_His_Home_in_Boise%2C_idaho..webp.png)
 
-James Castle seated in his studio in Boise, Idaho
+James Castle seated in his studio in Boise, [[Idaho]]
 
 James Castle was a self-taught artist who created drawings, assemblage and books throughout his lifetime. Castle was born profoundly [deaf](https://en.wikipedia.org/wiki/Deaf "Deaf") and for at least some time attended the Gooding School for the Deaf and the Blind in [Gooding](https://en.wikipedia.org/wiki/Gooding,_Idaho "Gooding, Idaho"), Idaho, but it is not known to what extent he could read, write, or use [sign language](https://en.wikipedia.org/wiki/Sign_language "Sign language").[^3] Castle's artworks were created almost exclusively with found materials such as papers salvaged from common packaging and mail, in addition to food containers of all types. Castle mixed ink using [soot](https://en.wikipedia.org/wiki/Soot "Soot") from the woodstove with saliva and applied it with tools of his own making, including sharpened sticks, and other found objects. His drawings sensitively depict interiors, buildings, animals, landscapes and people based on his family's rural [Garden Valley](https://en.wikipedia.org/wiki/Garden_Valley,_Idaho "Garden Valley, Idaho") homestead as well as the architecture and landscapes of the places he lived and visited. His former home in Boise, Idaho is now a cultural center devoted to his work and includes an [artist-in-residence](https://en.wikipedia.org/wiki/Artist-in-residence "Artist-in-residence") venue.[^4]
 
@@ -81,3 +81,5 @@ James Castle's works are in the collections of the following institutions:
 [^3]: Trusky, Tom (2004). *James Castle: His Life and His Art*. Boise: Idaho Center for the Book. pp. 11–17. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [0-932129-42-0](https://en.wikipedia.org/wiki/Special:BookSources/0-932129-42-0 "Special:BookSources/0-932129-42-0").
 
 [^4]: Webb, Anna (2018-04-12). ["These 11 artworks were inside walls of James Castle's house. This is how to see them"](http://www.idahostatesman.com/news/local/article208456679.html). *Idaho Statesman*. Retrieved 2018-04-13.
+
+#idaho

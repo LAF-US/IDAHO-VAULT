@@ -29,7 +29,7 @@ created: 2026-07-20
 ### Headings
 
 - \- Lakes & ponds
-- \- United States--Idaho--Pend Oreille Lake
+- \- United States--[[Idaho]]--Pend Oreille Lake
 
 ### Format Headings
 
@@ -180,3 +180,5 @@ Detroit Publishing Co, P. Pend d'Oreille Lake. United States Pend Oreille Lake I
 ### MLA citation style:
 
 Detroit Publishing Co., Publisher. Pend d'Oreille Lake. \[Between 1901 and 1906\] Photograph. Retrieved from the Library of Congress, <www.loc.gov/item/2016798907/>.
+
+#idaho

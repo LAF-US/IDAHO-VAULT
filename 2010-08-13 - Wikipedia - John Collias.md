@@ -13,7 +13,7 @@ After enlisting in the army, Collias arrived in Boise in 1942 by train from his 
 
 ## "Round About the Boise Valley"
 
-After the war, Collias attended the American Academy of Art in Chicago, a prominent commercial art school of the time, in the hopes of finding work making movie posters or TV storyboards.[^4] After he graduated, he moved instead back to Boise with his wife Lily, a Boise native, and began working as an illustrator at the local daily the *Idaho Statesman*. Then- *Idaho Statesman* publisher Margaret Cobb-Ailshie gave Collias a half-page of space in each Saturday evening edition of the newspaper and an assignment to create a serial feature that echoed the format of *Ripley’s Believe It or Not* but took as its subject Boise and Idaho news. In response, Collias launched "Round About the Boise Valley," a hand-drawn and hand-lettered local news feature that ran in 50 installments from October 1950 through September 1951.
+After the war, Collias attended the American Academy of Art in Chicago, a prominent commercial art school of the time, in the hopes of finding work making movie posters or TV storyboards.[^4] After he graduated, he moved instead back to Boise with his wife Lily, a Boise native, and began working as an illustrator at the local daily the *[[Idaho]] Statesman*. Then- *Idaho Statesman* publisher Margaret Cobb-Ailshie gave Collias a half-page of space in each Saturday evening edition of the newspaper and an assignment to create a serial feature that echoed the format of *Ripley’s Believe It or Not* but took as its subject Boise and Idaho news. In response, Collias launched "Round About the Boise Valley," a hand-drawn and hand-lettered local news feature that ran in 50 installments from October 1950 through September 1951.
 
 In the 2010 book *John Collias: Round About the Boise Valley*, author Nick Collias describes the feature thusly:
 
@@ -58,3 +58,5 @@ In July 2010, over 225 of Collias’ works were collected in the book *John Coll
 [^9]: Nick Collias, *John Collias*, pg 121
 
 [^10]: Dana Oland, "Idaho Statesman," July 23, 2010 , accessed August 13, 2010
+
+#idaho
