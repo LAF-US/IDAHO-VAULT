@@ -11,33 +11,27 @@ import subprocess
 import sys
 from pathlib import Path
 
-from gh_cli import run
+import gh_cli
 
 FINGERPRINT_PREFIX = "<!-- issue-reconciler-fingerprint:"
 FINGERPRINT_SUFFIX = " -->"
 
 
-def gh(*args: str, check: bool = True) -> subprocess.CompletedProcess[str]:
-    """Run a ``gh`` subcommand via the shared run-capture-raise primitive."""
-    return run(["gh", *args], check=check)
-
-
-def gh_json(*args: str) -> list[dict] | dict | None:
-    try:
-        result = gh(*args)
-    except RuntimeError:
-        return None
+def _json(result: subprocess.CompletedProcess[str]) -> list[dict] | dict | None:
+    """Decode a gh JSON payload, returning None when there is nothing decodable."""
     try:
         return json.loads(result.stdout)
     except json.JSONDecodeError:
         return None
 
 
-def _repo() -> str:
-    repo = os.environ.get("GITHUB_REPOSITORY", "")
-    if not repo:
-        raise RuntimeError("GITHUB_REPOSITORY is required.")
-    return repo
+def _repo() -> tuple[str, str]:
+    """Split ``GITHUB_REPOSITORY`` into ``(owner, repo)``."""
+    slug = os.environ.get("GITHUB_REPOSITORY", "")
+    owner, _, name = slug.partition("/")
+    if not owner or not name:
+        raise RuntimeError("GITHUB_REPOSITORY is required, as owner/repo.")
+    return (owner, name)
 
 
 def _strip_fingerprint(body: str) -> str:
@@ -61,20 +55,17 @@ def ensure_body_fingerprint(body_file: Path) -> str:
 
 
 def find_open_issue_number(title: str) -> int | None:
-    issues = gh_json(
-        "issue",
-        "list",
-        "--repo",
-        _repo(),
-        "--state",
-        "open",
-        "--search",
-        f"\"{title}\" in:title",
-        "--json",
-        "number,title",
-        "--limit",
-        "20",
-    )
+    owner, repo = _repo()
+    try:
+        result = gh_cli.issue_search_open(
+            owner,
+            repo,
+            search=f'"{title}" in:title',
+            json_fields="number,title",
+        )
+    except RuntimeError:
+        return None
+    issues = _json(result)
     if not isinstance(issues, list):
         return None
     for issue in issues:
@@ -84,39 +75,26 @@ def find_open_issue_number(title: str) -> int | None:
 
 
 def issue_has_fingerprint(issue_number: int, marker: str) -> bool:
-    issue = gh_json(
-        "issue",
-        "view",
-        str(issue_number),
-        "--repo",
-        _repo(),
-        "--json",
-        "body",
-    )
+    owner, repo = _repo()
+    try:
+        issue = _json(
+            gh_cli.issue_view(issue_number, owner=owner, repo=repo, json_fields="body")
+        )
+    except RuntimeError:
+        issue = None
     if isinstance(issue, dict) and marker in str(issue.get("body") or ""):
         return True
 
-    comments = gh(
-        "api",
-        "--paginate",
-        f"repos/{_repo()}/issues/{issue_number}/comments",
-        "--jq",
-        ".[].body",
-        check=False,
+    comments = gh_cli.api_issue_comments(
+        owner, repo, issue_number, jq=".[].body", check=False
     )
     return comments.returncode == 0 and marker in comments.stdout
 
 
 def create_issue(title: str, body_file: Path) -> int:
-    result = gh(
-        "issue",
-        "create",
-        "--repo",
-        _repo(),
-        "--title",
-        title,
-        "--body-file",
-        str(body_file),
+    owner, repo = _repo()
+    result = gh_cli.issue_create(
+        owner=owner, repo=repo, title=title, body_file=str(body_file)
     )
     issue_url = result.stdout.strip()
     if "/issues/" not in issue_url:
@@ -125,27 +103,13 @@ def create_issue(title: str, body_file: Path) -> int:
 
 
 def comment_issue(issue_number: int, body_file: Path) -> None:
-    gh(
-        "issue",
-        "comment",
-        str(issue_number),
-        "--repo",
-        _repo(),
-        "--body-file",
-        str(body_file),
-    )
+    owner, repo = _repo()
+    gh_cli.issue_comment_file(issue_number, owner=owner, repo=repo, body_file=str(body_file))
 
 
 def close_issue(issue_number: int) -> None:
-    gh(
-        "issue",
-        "close",
-        str(issue_number),
-        "--repo",
-        _repo(),
-        "--reason",
-        "completed",
-    )
+    owner, repo = _repo()
+    gh_cli.issue_close(issue_number, owner=owner, repo=repo)
 
 
 def reconcile_issue(
@@ -169,15 +133,8 @@ def reconcile_issue(
             comment_issue(issue_number, body_file)
             issue_action = "commented"
     elif issue_number is not None:
-        gh(
-            "issue",
-            "comment",
-            str(issue_number),
-            "--repo",
-            _repo(),
-            "--body",
-            resolved_comment,
-        )
+        owner, repo = _repo()
+        gh_cli.issue_comment(issue_number, owner=owner, repo=repo, body=resolved_comment)
         close_issue(issue_number)
         issue_action = "closed"
 
