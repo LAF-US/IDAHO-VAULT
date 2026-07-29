@@ -9,7 +9,7 @@ created: 2026-07-16
 
 [<sup>Narrated by Rich Palmer</sup>](https://richpalmer.com/?ref=tumbleweird.org)
 
-During the mid-1800s, a man named Hill Beachy was a hotel proprietor in Lewiston, Idaho. He was well put together, which was unusual for the small town, known for being more Wild West than Madison Square Gardens. The people knew him for not only his somewhat snobbish behavior, but also his zero tolerance policy around slinging a gun in his establishment.
+During the mid-1800s, a man named Hill Beachy was a hotel proprietor in Lewiston, [[Idaho]]. He was well put together, which was unusual for the small town, known for being more Wild West than Madison Square Gardens. The people knew him for not only his somewhat snobbish behavior, but also his zero tolerance policy around slinging a gun in his establishment.
 
 Everyone also knew about his friendship with Lloyd Magruder.
 
@@ -65,3 +65,5 @@ Beachy, still trying to help however he could, enlisted Page in a mission to rec
 
 - Hamilton, Ladd. *This Bloody Deed: The Magruder Incident.* Washington State University Press, 2025.
 - Liz. “The Bitter End of Lloyd Magruder.” Blogspot.Com, A ghrá, 27 Feb. 2016, [eaghra.blogspot.com/2016/02/the-bitter-end-of-lloyd-magruder.html](http://eaghra.blogspot.com/2016/02/the-bitter-end-of-lloyd-magruder.html?ref=tumbleweird.org)
+
+#idaho

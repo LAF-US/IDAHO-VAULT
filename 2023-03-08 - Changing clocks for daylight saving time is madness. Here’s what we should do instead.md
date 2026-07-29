@@ -17,7 +17,7 @@ Even if you’re one of those people who just love that it’s still light out a
 
 Not only is it inconvenient, it’s bad for your health.
 
-As Idaho Statesman reporter Shaun Goodwin [reported last week](https://www.idahostatesman.com/news/northwest/idaho/article272640465.html), changing the clock causes “upticks in heart problems, mood disorders, and motor vehicle collisions,” according to the Sleep Foundation. The disruption can also result in difficulty sleeping, not feeling well rested, tiredness and irritability. Changing the clocks results in traffic collisions, as drivers take time to transition to the new daylight hours.
+As [[Idaho]] Statesman reporter Shaun Goodwin [reported last week](https://www.idahostatesman.com/news/northwest/idaho/article272640465.html), changing the clock causes “upticks in heart problems, mood disorders, and motor vehicle collisions,” according to the Sleep Foundation. The disruption can also result in difficulty sleeping, not feeling well rested, tiredness and irritability. Changing the clocks results in traffic collisions, as drivers take time to transition to the new daylight hours.
 
 Most people prefer ending the clock-changing practice altogether, according to a recent [Monmouth University poll](https://www.monmouth.edu/polling-institute/reports/monmouthpoll_us_031522/).
 
@@ -98,3 +98,5 @@ Idaho Statesman
 Scott McIntosh is the communities editor and columnist for the Idaho Statesman. A graduate of Syracuse University, he joined the Statesman in August 2019. He previously was editor of the Idaho Press and the Argus Observer and was the owner and editor of the Kuna Melba News. He has been honored for his editorials and columns as well as his education, business and local government watchdog reporting by the Idaho Press Club and the National Newspaper Association. Sign up for his weekly newsletter, The Idaho Way. [Support my work with a digital subscription](https://mycheckout.idahostatesman.com/subscribe?ofrgp_id=394&g2i_or_o=Event&g2i_or_p=Reporter&cid=news_cta_0.99-1mo-15.99-on-article_202404)
 
 <iframe allow="clipboard-write; web-share" src="chrome-extension://cnjifjpddelmedmihgijeibhnjfabmlf/side-panel.html?context=iframe"></iframe>
+
+#idaho
