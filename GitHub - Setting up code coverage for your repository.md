@@ -35,20 +35,21 @@ After your tests generate a Cobertura XML report, upload it to GitHub so coverag
 
 1. Open your repository's CI workflow file (for example, `.github/workflows/ci.yml`).
 2. Add the following step after the step that runs your tests and generates the coverage report:
- ```yaml
- - name: Upload coverage report
+
+   ```yaml
+   - name: Upload coverage report
    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
    uses: actions/upload-code-coverage@v1
    with:
      file: COVERAGE-FILE-PATH.xml
      language: LANGUAGE
      label: LABEL
- ```
+   ```
 
 3. Replace the following values:
- - **`COVERAGE-FILE-PATH.xml`**: The path to your Cobertura XML report (for example, `coverage.xml` or `target/site/jacoco/cobertura.xml`).
- - **`LANGUAGE`**: The primary language of the code being covered (for example, `Python`, `Java`, `JavaScript`).
- - **`LABEL`**: An optional label to identify this coverage report (for example, `code-coverage/pytest`).
+   - **`COVERAGE-FILE-PATH.xml`**: The path to your Cobertura XML report (for example, `coverage.xml` or `target/site/jacoco/cobertura.xml`).
+   - **`LANGUAGE`**: The primary language of the code being covered (for example, `Python`, `Java`, `JavaScript`).
+   - **`LABEL`**: An optional label to identify this coverage report (for example, `code-coverage/pytest`).
 4. Commit and push the workflow change.
 
 ### Full workflow example
@@ -177,5 +178,6 @@ jobs:
 
 1. Open a pull request (or push to an existing one) that triggers the workflow you configured.
 2. After the workflow completes, look for a comment from `github-code-quality[bot]` on the pull request. The comment includes:
- - The aggregate coverage percentage for the pull request branch compared to the default branch.
-  - A per-file breakdown showing which files gained or lost coverage.
+   - The aggregate coverage percentage for the pull request branch compared to the default branch.
+
+- A per-file breakdown showing which files gained or lost coverage.

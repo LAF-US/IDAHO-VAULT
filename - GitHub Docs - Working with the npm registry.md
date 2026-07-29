@@ -71,34 +71,38 @@ You can use an `.npmrc` file to configure the scope mapping for your project. In
 
 1. Authenticate to GitHub Packages. For more information, see [Authenticating to GitHub Packages](#authenticating-to-github-packages).
 2. In the same directory as your `package.json` file, create or edit an `.npmrc` file to include a line specifying GitHub Packages URL and the namespace where the package is hosted. Replace `NAMESPACE` with the name of the user or organization account to which the package will be scoped.
- ```shell
- @NAMESPACE:registry=https://npm.pkg.github.com
- ```
+
+   ```shell
+   @NAMESPACE:registry=https://npm.pkg.github.com
+   ```
 
 3. Add the *.npmrc* file to the repository where GitHub Packages can find your project. For more information, see [Adding a file to a repository](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository).
 4. Verify the name of your package in your project's `package.json`. The `name` field must contain the scope and the name of the package. For example, if your package is called "test", and you are publishing it to the "My-org" GitHub organization, the `name` field in your `package.json` should be `@my-org/test`.
 5. Verify the `repository` field in your project's `package.json`. The `repository` field must match the URL for your GitHub repository. For example, if your repository URL is `github.com/my-org/test` then the repository field should be `https://github.com/my-org/test.git`.
 6. Publish the package:
- ```shell
- npm publish
- ```
+
+   ```shell
+   npm publish
+   ```
 
 ### Publishing a package using publishConfig in the package.json file
 
 You can use `publishConfig` element in the `package.json` file to specify the registry where you want the package published. For more information, see [publishConfig](https://docs.npmjs.com/files/package.json#publishconfig) in the npm documentation.
 
 1. Edit the `package.json` file for your package and include a `publishConfig` entry.
- ```shell
- "publishConfig": {
+
+   ```shell
+   "publishConfig": {
    "registry": "https://npm.pkg.github.com"
- },
- ```
+   },
+   ```
 
 2. Verify the `repository` field in your project's `package.json`. The `repository` field must match the URL for your GitHub repository. For example, if your repository URL is `github.com/my-org/test` then the repository field should be `https://github.com/my-org/test.git`.
 3. Publish the package:
- ```shell
- npm publish
- ```
+
+   ```shell
+   npm publish
+   ```
 
 ## Publishing multiple packages to the same repository
 
@@ -122,14 +126,16 @@ You also need to add the `.npmrc` file to your project so that all requests to i
 
 1. Authenticate to GitHub Packages. For more information, see [Authenticating to GitHub Packages](#authenticating-to-github-packages).
 2. In the same directory as your `package.json` file, create or edit an `.npmrc` file to include a line specifying GitHub Packages URL and the namespace where the package is hosted. Replace `NAMESPACE` with the name of the user or organization account to which the package will be scoped.
- ```shell
- @NAMESPACE:registry=https://npm.pkg.github.com
- ```
+
+   ```shell
+   @NAMESPACE:registry=https://npm.pkg.github.com
+   ```
 
 3. Add the *.npmrc* file to the repository where GitHub Packages can find your project. For more information, see [Adding a file to a repository](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository).
 4. Configure `package.json` in your project to use the package you are installing. To add your package dependencies to the `package.json` file for GitHub Packages, specify the full-scoped package name, such as `@my-org/server`. For packages from *npmjs.com*, specify the full name, such as `@babel/core` or `lodash`. Replace `ORGANIZATION_NAME/PACKAGE_NAME` with your package dependency.
- ```json
- {
+
+   ```json
+   {
    "name": "@my-org/server",
    "version": "1.0.0",
    "description": "Server app that uses the ORGANIZATION_NAME/PACKAGE_NAME package",
@@ -139,13 +145,14 @@ You also need to add the `.npmrc` file to your project so that all requests to i
    "dependencies": {
      "ORGANIZATION_NAME/PACKAGE_NAME": "1.0.0"
    }
- }
- ```
+   }
+   ```
 
 5. Install the package.
- ```shell
- npm install
- ```
+
+   ```shell
+   npm install
+   ```
 
 ### Installing packages from other organizations
 
