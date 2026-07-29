@@ -196,6 +196,13 @@ class ArgvTest(TestCase):
              "-f", "owner=LAF-US", "-F", "number=854", "-f", "flag=True"],
         )
 
+    def test_graphql_keeps_an_equals_sign_inside_the_value(self) -> None:
+        # `gh api` splits -f/-F on the FIRST `=`, so a value containing more of them
+        # stays intact. What matters on this side is that it is one argv element and
+        # never gets split by us.
+        argv, _ = _argv(gh_cli.graphql, "query{x}", after="Y3Vyc29yOnYyOpK0=")
+        self.assertEqual(argv[-2:], ["-f", "after=Y3Vyc29yOnYyOpK0="])
+
     def test_graphql_rejects_a_non_identifier_variable_name(self) -> None:
         with self.assertRaises(ValueError):
             gh_cli.graphql("query{x}", **{"--switch": "1"})
@@ -221,6 +228,15 @@ class ArgvTest(TestCase):
             gh_cli.api_issue_comments, "LAF-US", "IDAHO-VAULT", 9, jq=".[].body"
         )
         self.assertEqual(argv[-2:], ["--jq", ".[].body"])
+
+    def test_api_issue_comments_passes_check_through(self) -> None:
+        # `issue_reconciler.issue_has_fingerprint` reads `.returncode` on a missing or
+        # unreadable issue instead of raising, which only works while check=False
+        # reaches the primitive. Locked here so a default change cannot break it silently.
+        _, kwargs = _argv(
+            gh_cli.api_issue_comments, "LAF-US", "IDAHO-VAULT", 9, check=False
+        )
+        self.assertEqual(kwargs, {"check": False})
 
 
 class ValueGuardTest(TestCase):
