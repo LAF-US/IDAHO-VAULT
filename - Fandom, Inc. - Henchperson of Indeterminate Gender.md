@@ -113,8 +113,8 @@ In the Netflix series, they have much longer brown hair. They are also 6'4", mak
 ## Trivia
 
 - In the book series, the henchperson is called an "it" many times, which has been criticized as offensive by trans activists; it is also considered offensive by these groups that their androgyny (and perhaps also them being husky and overweight) is seen as monstrous by certain characters. For example, a line in *The Wide Window* says, "What frightened Violet was that you couldn't tell if this person was a man or a woman." In addition, they are called a "creature".
- 	- This controversy resulted in [Daniel Handler](https://snicket.fandom.com/wiki/Daniel_Handler "Daniel Handler") and the other writers of the Netflix adaptation changing the character of the henchperson to make them more human.
-  		- In the 2025 Edition of *[The Bad Beginning](https://snicket.fandom.com/wiki/The_Bad_Beginning "The Bad Beginning"),* their character profile says that their androgyny is instead "interesting," but them being "employed by a violent scoundrel" is worrying.
+  - This controversy resulted in [Daniel Handler](https://snicket.fandom.com/wiki/Daniel_Handler "Daniel Handler") and the other writers of the Netflix adaptation changing the character of the henchperson to make them more human.
+    - In the 2025 Edition of *[The Bad Beginning](https://snicket.fandom.com/wiki/The_Bad_Beginning "The Bad Beginning"),* their character profile says that their androgyny is instead "interesting," but them being "employed by a violent scoundrel" is worrying.
 - In the TV series, they mention their opinion that asparagus is more delicious than corn.
 - The Henchperson's survival is due to the fact that the writers wanted Olaf to be at his highest point at the end of [Season 2](https://snicket.fandom.com/wiki/Season_2 "Season 2") in order to show his downfall better in [Season 3](https://snicket.fandom.com/wiki/Season_3 "Season 3").[^15]
 
