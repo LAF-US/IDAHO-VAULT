@@ -17,7 +17,7 @@ Bell earned an [Associate of Arts](https://en.wikipedia.org/wiki/Associate_of_Ar
 
 ## Career
 
-Bell is a farmer and a retired school librarian in Idaho.[^1] [^3]
+Bell is a farmer and a retired school librarian in [[Idaho]].[^1] [^3]
 
 Bell was first elected to the Idaho House of Representatives in 1988.[^4]
 
@@ -114,3 +114,5 @@ Bell and her husband Jack have three sons.[^18]
 [^28]: ["State Rep. Maxine Bell Given Honorary Jean'ne M. Shreeve Research Excellence Award"](https://www.uidaho.edu/news/news-articles/news-releases/2019-january/012419-maxinebell). *uidaho.edu*. January 24, 2019. Retrieved December 22, 2019.
 
 [^29]: ["Representative Maxine Bell Presented With Honorary Jean'ne M. Shreeve NSF EPSCoR Research Excellent Award"](http://www.epscorideafoundation.org/news/2019/representative-maxine-bell-presented-with-honorary-jeanne-m-shreeve-nsf-epscor-research-excellence-award). *epscorideafoundation.org*. March 11, 2019. Retrieved December 22, 2019.
+
+#idaho

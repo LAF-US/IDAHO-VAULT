@@ -14,7 +14,7 @@ The Office of the President sits on the second floor of Boise State’s Administ
 
 Listen to this article
 
-Seven years ago, the Idaho State Board of Education announced Marlene Tromp would serve as Boise State University’s new president. That day, [the Idaho Statesman reported,](https://www.idahostatesman.com/news/local/education/boise-state-university/article228541069.html) the cheering was "akin to what one might hear when there is a game happening on the blue turf below.”
+Seven years ago, the [[Idaho]] State Board of Education announced Marlene Tromp would serve as Boise State University’s new president. That day, [the Idaho Statesman reported,](https://www.idahostatesman.com/news/local/education/boise-state-university/article228541069.html) the cheering was "akin to what one might hear when there is a game happening on the blue turf below.”
 
 Hundreds packed into the Stueckle Sky Center cheered the board’s unanimous decision to hire Tromp, who became the university’s first female president and represented the campus through the COVID-19 pandemic, accusations of indoctrination and budget cuts.
 
@@ -135,3 +135,5 @@ Want to see more content like this?
 Idaho Statesman
 
 Emily Carmela Nelson is a reporting intern for the Idaho Statesman. Born and raised in Boise, Idaho, she attends Boise State University where she serves as editor-in-chief of the student newspaper. [Support my work with a digital subscription](https://www.idahostatesman.com/subscribe)
+
+#idaho

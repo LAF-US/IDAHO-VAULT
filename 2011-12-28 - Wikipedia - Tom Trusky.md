@@ -17,7 +17,7 @@ Trusky was born in [Portland, Oregon](https://en.wikipedia.org/wiki/Portland,_Or
 
 In 1970, Trusky began teaching at Boise State College (formerly Boise Junior College, now Boise State University).[^3] Trusky taught freshman composition, poetry writing, and book arts. He repudiated the role of imagination in poetry; one student remembers, "I was taking a poetry class and the first thing he said was, 'If anyone wants to write about unicorns, they should consider another class. Unicorns aren't real and shouldn't be read about in poetry," a claim which contradicts the long history of poets writing poems about things that "aren't real," such as Beowulf, The Epic of Gilgamesh, "Ozymandias," William Blake's The Book of Urizen, Milton's Paradise Lost, Rossetti's [Goblin Market](https://en.wikipedia.org/wiki/Goblin_Market "Goblin Market"), Homer's The Odyssey, Keats' Endymion, Byron's Don Juan, and [Anne Carson](https://en.wikipedia.org/wiki/Anne_Carson "Anne Carson") 's Autobiography of Red.[^4]
 
-The [Council for Advancement and Support of Education](https://en.wikipedia.org/wiki/Council_for_Advancement_and_Support_of_Education "Council for Advancement and Support of Education") named Trusky Idaho's Professor of the Year in 1990, 1991, and 1993.[^5]
+The [Council for Advancement and Support of Education](https://en.wikipedia.org/wiki/Council_for_Advancement_and_Support_of_Education "Council for Advancement and Support of Education") named Trusky [[Idaho]]'s Professor of the Year in 1990, 1991, and 1993.[^5]
 
 ### cold drill
 
@@ -184,3 +184,5 @@ Trusky died on November 27, 2009.[^14] He willed his collection of [artists' boo
 [^15]: Woodward, Tim. "Eccentric Professor Tom Trusky Wills Boise State University a Stunning Gift: Frugal English Teacher Secretly Assembled an Art Collection Worth Hundreds of Thousands." *Idaho Statesman.* December 5, 2010.
 
 [^16]: Eckart, Kim (1993-10-23). ["BSU professor provokes with exhibit on AIDS"](https://www.facebook.com/photo.php?fbid=1682302645160211&set=a.1682298788493930.1073741854.100001414751166&type=3&l=159768b508&theater). *Idaho Statesman*. Retrieved 2018-01-26.
+
+#idaho

@@ -34,7 +34,7 @@ You’ll need to make sure your metadata has [a few required fields](https://col
 
 CollectionBuilder is designed and maintained by librarians at the [University of Idaho](https://www.lib.uidaho.edu/), following the [Lib-Static](https://lib-static.github.io/) approach, a methodology committed to leveraging static-web technologies and librarians’ specialized skills in metadata and classification to create engaging web publications.
 
-The project comes out of work done at the University of Idaho library’s digital humanities lab, the [Center for Digital Inquiry and Learning](https://www.lib.uidaho.edu/).
+The project comes out of work done at the University of [[Idaho]] library’s digital humanities lab, the [Center for Digital Inquiry and Learning](https://www.lib.uidaho.edu/).
 
 CollectionBuilder has received support from the University of Idaho Library, and grants from Institute for Museum and Library Services (IMLS) and National Endowment for the Humanities (NEH).
 
@@ -234,3 +234,5 @@ Have questions, comments, or concerns for CollectionBuilder developers? You’re
 
 - [Contributing](https://github.com/CollectionBuilder/collectionbuilder.github.io/blob/main/CONTRIBUTING.md) (tips and conventions)
 - [Project Code of Conduct](https://github.com/CollectionBuilder/collectionbuilder.github.io/blob/main/CODE_OF_CONDUCT.md)
+
+#idaho

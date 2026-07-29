@@ -22,7 +22,7 @@ Scanning the distant horizon, the 45-year old marshal adjusted his bandana to co
 
 Robbins finally caught up to Chambers in August 1882 in Portland, took him into custody, and returned him to prison in Boise — completing a journey of nearly 1,200 miles.
 
-During his law enforcement career, Robbins achieved a reputation as the “man most responsible for bringing law and order to the Idaho Territory.”
+During his law enforcement career, Robbins achieved a reputation as the “man most responsible for bringing law and order to the [[Idaho]] Territory.”
 
 Born in Maine, he left home at 17 following a quarrel with his father and made his way to the California gold fields for a short while.
 
@@ -338,3 +338,5 @@ In February 1884, two of the pioneers responded by hosting a pioneer reunion of 
 —————————-
 
 *page updated May 14, 2024*
+
+#idaho

@@ -9,7 +9,7 @@ description: "LEWISTON – It’s been more than half a century since Idaho vote
 ---
 ![Todd Achilles, an independent candidate for U.S. Senate in Idaho, talks to a voter Thursday in Lewiston.  (Orion Donovan Smith/The Spokesman-Review)](https://thumb.spokesman.com/0zyowTuoy3EnGS2MobgmRBPaINM=/2500x0/smart/media.spokesman.com/photos/2025/08/11/689592cac4c94.hires.jpg)
 
-Todd Achilles, an independent candidate for U.S. Senate in Idaho, talks to a voter Thursday in Lewiston. (Orion Donovan Smith/The Spokesman-Review)
+Todd Achilles, an independent candidate for U.S. Senate in [[Idaho]], talks to a voter Thursday in Lewiston. (Orion Donovan Smith/The Spokesman-Review)
 
 LEWISTON – It’s been more than half a century since Idaho voters sent anyone other than a Republican to the U.S. Senate. Now, a former Democratic state lawmaker is launching an independent bid to unseat an incumbent GOP senator in 2026, hoping that Idahoans share his frustration with both parties.
 
@@ -76,3 +76,5 @@ Roth said he worries that by criticizing both parties, Achilles could promote ap
 Achilles will wrap up the first leg of what he calls the “Shake up the System” listening tour at War Memorial in Sandpoint at 5:30 p.m. Tuesday. He said he intends to continue the tour in other parts of the state as he works to gain prominence around the country.
 
 ---
+
+#idaho

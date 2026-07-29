@@ -13,7 +13,7 @@ Related stories
 
 [News](https://favs.news/news/)
 
-This week's religion news includes LGBTQ+ politics, a proposed Spokane mosque, Idaho abortion ballot measure, Jewish outreach and Black history preservation.
+This week's religion news includes LGBTQ+ politics, a proposed Spokane mosque, [[Idaho]] abortion ballot measure, Jewish outreach and Black history preservation.
 
 [Eastern Washington](https://favs.news/news/eastern-washington/)
 
@@ -120,3 +120,5 @@ The rest of the summer at the Gorge belongs to artists and fans, but for that on
 ---
 
 [***FāVS News***](https://favs.news/newsletters/) ***uses*** [***professional journalists***](https://favs.news/news/) ***and*** [***thoughtful commentary***](https://favs.news/commentary/) ***to explore faith, values and ethics. Support journalism like this by making a tax-deductible*** [***donation***](https://favs.news/donate-to-favs-news/)***. FāVS is a 501(c)(3) nonprofit. © FāVS News. All rights reserved. Reproduction permitted only to authorized media partners or with written permission.***
+
+#idaho

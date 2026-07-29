@@ -108,4 +108,6 @@ But some see no real alternatives.
 
 *Editor’s note: This story was updated to correct the spelling of Chris Servheen’s name.* *Stateline reporter Alex Brown can be reached at* [*abrown@stateline.org*](mailto:abrown@stateline.org)*.*
 
-This story was originally produced by [Stateline](https://stateline.org/2026/07/20/the-feds-no-longer-protect-endangered-species-habitat-states-say-they-cant-pick-up-the-slack/), which is part of States Newsroom, a nonprofit news network which includes Idaho Capital Sun, and is supported by grants and a coalition of donors as a 501c(3) public charity.
+This story was originally produced by [Stateline](https://stateline.org/2026/07/20/the-feds-no-longer-protect-endangered-species-habitat-states-say-they-cant-pick-up-the-slack/), which is part of States Newsroom, a nonprofit news network which includes [[Idaho]] Capital Sun, and is supported by grants and a coalition of donors as a 501c(3) public charity.
+
+#idaho

@@ -10,7 +10,7 @@ created: 2026-07-20
 
 When I think of the genesis of some of the most glamorous actresses in the motion picture industry, I often recall the story of Lana Turner sipping a Coke at Schwab’s Drugstore, soon to be discovered as the next top studio star. Though that particular tale is purely Hollywood legend, it is worth noting that Lana, like so many other Hollywood hopefuls, came from a hard-working environment, long before the projection of her image on screens all over the world. While Lana was discovered at about the age of fifteen and her life is widely publicized from that point on, I would like to point you to the Lana that only a handful of people knew.
 
-Lana’s parents, John and Mildred Turner, met when John had finished service as an infantry platoon sergeant during World War I. He and Mildred met at a dance and fell in love, though Mildred’s family disapproved of their age difference; John was 24 and Mildred was 15. Nonetheless, they eloped and moved to the small town of Wallace, Idaho.
+Lana’s parents, John and Mildred Turner, met when John had finished service as an infantry platoon sergeant during World War I. He and Mildred met at a dance and fell in love, though Mildred’s family disapproved of their age difference; John was 24 and Mildred was 15. Nonetheless, they eloped and moved to the small town of Wallace, [[Idaho]].
 
 John worked primarily as a miner and briefly operated a dry-cleaning business in town. One year later, the birth of Julia Jean Turner, or just “Judy,” at Providence Hospital was a relief to her parents; Mildred’s grandmother had died in childbirth due to Rh factor complications, and there was a slight possibility that Mildred would experience the same condition. Thankfully, Mildred was spared, though Lana would unfortunately suffer from the complication later in life.
 
@@ -145,3 +145,5 @@ Former site of the Top Hat Cafe.
 [![1935-hollywood-high](https://i0.wp.com/hometownstohollywood.com/wp-content/uploads/2017/12/1935-hollywood-high1.jpg "1935-hollywood-high")](https://hometownstohollywood.com/idaho/lana-turner/1935-hollywood-high-3/)
 
 Though Lana is best remembered for many memorable film roles, her legacy lives on in the various locations she graced before becoming an iconic Hollywood star.
+
+#idaho

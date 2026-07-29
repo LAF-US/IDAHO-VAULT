@@ -7,7 +7,7 @@ created: 2026-07-20
 ---
 ## Poet's Idaho home is reborn
 
-Ezra Pound's birthplace is a two-story white clapboard house in the little Idaho mountain town of Hailey. Pound, the poet and frontman for...
+Ezra Pound's birthplace is a two-story white clapboard house in the little [[Idaho]] mountain town of Hailey. Pound, the poet and frontman for...
 
 The Associated Press
 
@@ -134,3 +134,5 @@ Sell your stuff
 10. [Seahawks’ title season chronicled in new NFL film](https://web.archive.org/web/20140305185833/http://seattletimes.nwsource.com/html/seahawks/2023041051_seahawksmovie04xml.html)
 
 [Most viewed images](https://web.archive.org/web/20140305185833/http://seattletimes.com/html/trending/)
+
+#idaho

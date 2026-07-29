@@ -9,7 +9,7 @@ description: "Art da Rosa examines why eliminating Idaho's property tax is more 
 ---
 The topic of eliminating Property Tax has been brought up. More than one elected official that I respect has raised it. Personally, I like the idea. I like it from the Constitutional and Liberty point of view. The argument is simple and powerful: if our real property can be taxed, then we, the citizens, do not truly own our property.
 
-Furthermore, property taxes in Idaho have climbed sharply in recent years — driven by soaring home values that increased the typical Idaho home price by roughly 57 percent between 2019 and 2023 alone. For families on fixed incomes, for farmers whose land value has risen but whose income has not, and for longtime residents watching their tax bills grow faster than their paychecks, the call to eliminate property tax is not unreasonable. It is a genuine cry of pain.
+Furthermore, property taxes in [[Idaho]] have climbed sharply in recent years — driven by soaring home values that increased the typical Idaho home price by roughly 57 percent between 2019 and 2023 alone. For families on fixed incomes, for farmers whose land value has risen but whose income has not, and for longtime residents watching their tax bills grow faster than their paychecks, the call to eliminate property tax is not unreasonable. It is a genuine cry of pain.
 
 As a student of the Constitution, I have to be honest about the challenges that eliminating property tax would present. Yes, the problem is real. The practical consequences, however, are more complicated than the slogan suggests. And the alternatives, when examined honestly, raise problems at least as serious as the one they are meant to solve.
 
@@ -134,3 +134,5 @@ Free newsletter · Unsubscribe anytime · [View on Substack](https://newsletter.
 ### About Art da Rosa
 
 Art da Rosa is a licensed Professional Engineer (PE) in Idaho and California. He is a former candidate for Jefferson County Commissioner and writes at DAROSA Patriots Corner on Facebook.
+
+#idaho

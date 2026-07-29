@@ -115,7 +115,7 @@ Darcy: There’s one thing that’s harder, and that’s cell animation, which i
 
 Rege: *So you were doing that first.*
 
-Darcy: Okay well, *Meat Cake* is my number one thing. I did my analytics and found out that’s what I’m most known for. I’ve got these other books and I play the banjo and I’m from Idaho, but I’ve lived in New York City and all this stuff.
+Darcy: Okay well, *Meat Cake* is my number one thing. I did my analytics and found out that’s what I’m most known for. I’ve got these other books and I play the banjo and I’m from [[Idaho]], but I’ve lived in New York City and all this stuff.
 
 Rege: *Well now there’s this book that shows it. You’ve got all this other stuff, and also work in all these other mediums, but this book is almost five hundred pages of comics!*
 
@@ -376,3 +376,5 @@ Darcy: Oh yeah I’m 45, I just turned 45 this year. So yeah we’re the same ag
 Rege: *I totally forgot that happened.*
 
 Darcy: All artists truly care about is legacy, what happens after you die. The fact that I was alive, what I did to change society, what I did for feminism, what I did for the world while I was here, and what I left behind. Because, those books in the attic that I read, that were 100 years old, those people that are long dead? - they’ve influenced me. My ultimate goal in life is for the little girl from 2172 seeing my book. She will, because it’s been published. Maybe she’ll do something really weird and different for her time. Where she’s interpreting it in the context of her generation.
+
+#idaho

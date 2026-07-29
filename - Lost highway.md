@@ -57,7 +57,7 @@ So he did, and on graduation found employment working in a Vancouver sawmill. He
 
 “Can you start next week?” he was asked.
 
-He worked there through graduate school and, along the way, realized two things: He liked public history, essentially the practice of history outside the classroom, and he didn’t need to get a doctorate to do it. Soon after he graduated with a master’s in history, Stratton told him about a job at the historical society in Latah County, Idaho, launching a peripatetic, 36-year career of researching and describing history in different ways.
+He worked there through graduate school and, along the way, realized two things: He liked public history, essentially the practice of history outside the classroom, and he didn’t need to get a doctorate to do it. Soon after he graduated with a master’s in history, Stratton told him about a job at the historical society in Latah County, [[Idaho]], launching a peripatetic, 36-year career of researching and describing history in different ways.
 
 As an independent consultant in the 1980s, Petersen did contract work for state and federal agencies, helping with interpretations, exhibits, and written materials. He wrote a history of the University of Idaho and the book *Company Town: Potlatch, Idaho, and the Potlatch Lumber Company*. He married Mary Reed, a fellow public historian he met at a mint julep social at McConnell Mansion, the Victorian home built in Moscow, Idaho, by William J. McConnell, an Idaho governor in the late 1800s. He spent most of the 1990s as an acquisitions editor for the WSU Press. With fellow Stratton student Glen Lindeman (’69 BA Political Science and History, ’73 MA History), they put out a dozen or so titles a year.
 
@@ -178,3 +178,5 @@ Gustav Sohon (1825–1903) was an artist, interpreter, and topographical assista
 [1863 Fort Walla Walla to Fort Benton military map detail (PDF)](https://wpcdn.web.wsu.edu/wp-magazine/uploads/sites/902/2016/03/1863-walla_walla-benton-map.pdf) Courtesy WSU Libraries Digital Collections
 
 [1865 Mullan miners’ map (PDF)](https://wpcdn.web.wsu.edu/wp-magazine/uploads/sites/902/2016/03/1865-mullan-miners-map.pdf) Courtesy WSU Libraries Digital Collections
+
+#idaho

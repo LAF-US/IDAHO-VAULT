@@ -8,7 +8,7 @@ published: 2026-05-29
 created: 2026-07-20
 description: "As rural communities face the closure of hospitals and labor and delivery units, crisis pregnancy centers — largely unregulated — are moving to fill the gap."
 ---
-SANDPOINT, Idaho — An anti-abortion pregnancy center on the outskirts of this Idaho Panhandle town greets visitors with an abridged Bible verse painted on the wall of its waiting area: “Come to me & I will give you rest.”
+SANDPOINT, [[Idaho]] — An anti-abortion pregnancy center on the outskirts of this Idaho Panhandle town greets visitors with an abridged Bible verse painted on the wall of its waiting area: “Come to me & I will give you rest.”
 
 7B Care Clinic has been operating in Sandpoint since 2001 and was previously called Life Choices Pregnancy Center and Sandpoint Crisis Pregnancy Center. It is [an affiliate](https://367552.fs1.hubspotusercontent-na1.net/hubfs/367552/Affiliate%20Standards_2025%20\(2\).pdf) of a nationwide network of Christian evangelical centers called Care Net. 7B, one of about 1,200 pregnancy centers affiliated with Care Net, offers pregnancy tests, limited ultrasounds, parenting and life skills classes, community support groups, and other free resources, such as children’s clothing. Donations from people, businesses, and more than 40 churches keep 7B’s operations running, Executive Director Janine Shepard said.
 
@@ -92,3 +92,5 @@ Sandpoint resident Makayla Sundquist, a licensed counselor, grew up in town. She
 But she also has doubts about 7B as a potential option for local care. She was skeptical that an anti-abortion, faith-based organization would provide accurate information on the options available to her.
 
 “It is something that I do think about and do have fear about,” Sundquist said. “I wish that wasn’t my reality.”
+
+#idaho

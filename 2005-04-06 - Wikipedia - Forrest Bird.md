@@ -25,7 +25,7 @@ Bird resided in [Sagle, Idaho](https://en.wikipedia.org/wiki/Sagle,_Idaho "Sagle
 
 Forrest and Pamela Bird opened the Bird Aviation Museum and Invention Center in July 2007, with aviator [Patty Wagstaff](https://en.wikipedia.org/wiki/Patty_Wagstaff "Patty Wagstaff") cutting a ceremonial ribbon at the end of the runway *while* flying. The Bird's are the founders and owners of the museum, which showcases Bird's various aircraft and inventions.[^6] On December 10, 2008, Bird received the [Presidential Citizens Medal](https://en.wikipedia.org/wiki/Presidential_Citizens_Medal "Presidential Citizens Medal") from President George Bush. The United States honored him for his groundbreaking contributions and for his work to keep America at the forefront of discovery.[^7] On October 7, 2009, President Barack Obama awarded Bird the [National Medal of Technology and Innovation](https://en.wikipedia.org/wiki/National_Medal_of_Technology_and_Innovation "National Medal of Technology and Innovation"), a recognition of his "outstanding contributions to the promotion of technology for the improvement of the economic, environmental or social well-being of the United States." [^8]
 
-Bird died at the age of 94 of natural causes at his Sagle, Idaho home on August 2, 2015.[^9] [^10]
+Bird died at the age of 94 of natural causes at his Sagle, [[Idaho]] home on August 2, 2015.[^9] [^10]
 
 ## Mechanical ventilators
 
@@ -93,3 +93,5 @@ Bird was awarded the Lifetime Scientific Achievement Award in 1985 by the [Ameri
 [^13]: ["Spotlight | National Inventors Hall of Fame"](https://web.archive.org/web/20150223052904/http://invent.org/inductee-detail/?IID=15). *invent.org*. Archived from [the original](http://invent.org/inductee-detail/?IID=15) on 2015-02-23.
 
 [^14]: ["How We Give"](http://www.arcfoundation.org/awards/achievement/).
+
+#idaho
