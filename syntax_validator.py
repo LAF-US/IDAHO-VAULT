@@ -57,7 +57,6 @@ test_files = [
     r"tests\test_stale_bot_prs.py",
     r"tests\test_review_feedback_loop.py",
     r"tests\test_thread_witness.py",
-    r"tests\test_gh_cli.py",
     r"tests\test_metadata_survey.py",
     r"tests\test_backfill_daily_notes.py",
     r"tests\test_daily_rollover.py",
