@@ -69,8 +69,7 @@ for filepath in compile_files:
     result = subprocess.run(
         [sys.executable, "-m", "py_compile", filepath],
         capture_output=True,
-        text=True
-    )
+        text=True, check=False)
     if result.returncode == 0:
         print(f"✓ PASS: {filepath}")
     else:
@@ -91,8 +90,7 @@ for test_file in test_files:
     result = subprocess.run(
         [sys.executable, "-m", "pytest", test_file, "-v"],
         capture_output=True,
-        text=True
-    )
+        text=True, check=False)
     if result.returncode == 0:
         print(f"✓ PASS")
     else:

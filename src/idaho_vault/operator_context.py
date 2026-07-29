@@ -141,8 +141,7 @@ def _tracked_files(root: Path) -> set[str] | None:
         result = subprocess.run(
             ["git", "-C", str(root), "ls-files"],
             capture_output=True,
-            text=True,
-        )
+            text=True, check=False)
     except OSError:
         return None
     if result.returncode != 0:

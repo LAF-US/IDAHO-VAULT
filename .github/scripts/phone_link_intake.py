@@ -129,8 +129,7 @@ def main(argv: list[str] | None = None) -> int:
             ["git", "add", *[str(path) for path in moved_paths]],
             cwd=str(vault_root),
             capture_output=True,
-            text=True,
-        )
+            text=True, check=False)
         if result.returncode == 0:
             print(f"Staged {len(moved_paths)} ingested file(s) for commit")
         else:
