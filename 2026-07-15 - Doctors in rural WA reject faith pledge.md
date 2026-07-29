@@ -7,7 +7,7 @@ published: 2026-07-15
 created: 2026-07-20
 description: "An Idaho pregnancy center wanted OB-GYNs to pledge ‘sexual purity’ and a relationship with Christ to form a partnership with a Newport hospital district."
 ---
-An Idaho pregnancy center wanted OB-GYNs to pledge ‘sexual purity’ and a relationship with Christ to form a partnership with a Newport hospital district.
+An [[Idaho]] pregnancy center wanted OB-GYNs to pledge ‘sexual purity’ and a relationship with Christ to form a partnership with a Newport hospital district.
 
 By
 
@@ -88,3 +88,5 @@ Seamon said legal action based on the hospital’s decision to reject the agreem
 Based in Newport, Sophia is a Murrow News Fellow covering rural issues for the Miner Newspaper and for RANGE. She has over 20 years experience as a reporter serving rural communities in Eastern WA and North ID. | sophia(at)rangemedia.co
 
 Tags: [Healthcare](https://www.rangemedia.co/tag/healthcare/)
+
+#idaho

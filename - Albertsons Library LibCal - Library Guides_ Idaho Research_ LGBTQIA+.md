@@ -13,7 +13,7 @@ created: 2026-07-21
 
 ## Introduction
 
-This guide is intended to compile the sources about Idaho LGBTQIA+ history from the Boise State Special Collections and Archives as well as what is accessible online through other platforms and formats. It touches on various points from the mid-20th century to the present, concentrating on gay and lesbian organizations in the 1990s, and serves as a look into the history of a community that isn’t often recognized as being a welcome part of this state. In addition to history, there are also resources for members of the LGBTQIA+ community that wish to find community and support in the present in addition to the past.
+This guide is intended to compile the sources about [[Idaho]] LGBTQIA+ history from the Boise State Special Collections and Archives as well as what is accessible online through other platforms and formats. It touches on various points from the mid-20th century to the present, concentrating on gay and lesbian organizations in the 1990s, and serves as a look into the history of a community that isn’t often recognized as being a welcome part of this state. In addition to history, there are also resources for members of the LGBTQIA+ community that wish to find community and support in the present in addition to the past.
 
 Compiled by Liz Mora, 2024
 
@@ -82,3 +82,5 @@ Series 6: Coeur d'Alene Office, Box 3 Folder 41
 - [**Next:** Topics >>](https://guides.boisestate.edu/c.php?g=74137&p=10689298)
 
 <iframe allow="clipboard-write; web-share" src="chrome-extension://cnjifjpddelmedmihgijeibhnjfabmlf/side-panel.html?context=iframe"></iframe>
+
+#idaho
