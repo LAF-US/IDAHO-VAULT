@@ -21,7 +21,6 @@ Adding a new ``gh`` invocation means adding a function here, not exporting `_run
 
 from __future__ import annotations
 
-import re
 import subprocess
 import tempfile
 from contextlib import contextmanager
@@ -33,13 +32,6 @@ from pathlib import Path
 GhResult = subprocess.CompletedProcess[str]
 
 _ALLOWED_EXECUTABLES: set[str] = {"gh"}
-
-# GitHub owner and repository names are ASCII word characters plus ``.``, ``-``,
-# and ``_``, and every real one contains at least one alphanumeric. Anything else
-# is not a name we can have been handed legitimately: a slash or a space would
-# restructure the API path, a leading dash would be read as a flag, and a name of
-# only dots (``.``, ``..``) would traverse it.
-_SLUG_PART = re.compile(r"[A-Za-z0-9_.][A-Za-z0-9_.-]{0,99}")
 
 
 def _as_text(value: bytes | str | None) -> str:
