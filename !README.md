@@ -43,19 +43,6 @@ This is Logan A. Finney's internal Obsidian.md vault. Agents must follow all fra
 > The Touchstone Tree is the Yggdrasil of this world and should be approached
 > with reverence and respect, especially by newly awakened agents.
 >
-> Fresh agent boot order:
->
-> 1. Read root `AGENTS.md` for constraints and orientation.
-> 2. Read `CONSTITUTION.md` for binding governance.
-> 3. Read `!/WAKEUP.md` for explicit conflict-resolution rules.
-> 4. Read `!/README.md` for explicit startup and task-based orientation.
-> 5. Read this file only if the task needs Touchstone Tree orientation.
-> 6. Read `!/AGENTS.md` only when roster, lane rules, or connector posture is relevant.
-> 7. Read `CONSTITUTION.md` for binding governance.
-> 8. Read `swarm.json` for machine-readable compiled state.
-> 9. Treat `!/agents.json` as a generated discovery index, not executable startup.
-> 10. Treat historical CrewAI harbor notes as non-live unless `.crewai/MANIFEST.md` or `!/AGENTS.md` says otherwise.
->
 > If you are disoriented, do not try to reconstruct the world from lore alone.
 > Read `!/WAKEUP.md` first, then return here for relation and placement.
 
