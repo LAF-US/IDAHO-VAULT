@@ -27,7 +27,7 @@ The night shoot conditions.
 
 Van Tuyle would head south to the St. Francis Hotel in San Francisco to let his frostbite heal, and cinematographer Joseph Walker remembered him asking the bellhops to bring a washtub, kerosene, liquor, and cigarettes and proceeding “to soak, smoke and get soaked.” This “cure” only did so much, however, and he eventually had to have three toes amputated. The unfortunate Byram fared even worse, passing away from his pneumonia on April 17, 1919. He had only appeared in a handful of films.
 
-At the very least, *Back to God’s Country*) earned back its costs several times over, enabling Nell to continue making films. But this work would be done *sans* Ernest, their marriage ending in divorce thanks to Nell having an affair with Van Tuyle. In 1922 she decided to move her company to the northern Idaho wilderness by Priest Lake, remote enough for an effective rustic atmosphere while still being decently close to Spokane. By this time she also had an impressive menagerie of animals, including dogs, raccoons, wolves, eagles bears, cougars, and horses, which she often used in her films–they were also carted up to Priest Lake, much to the locals’ amusement.
+At the very least, *Back to God’s Country*) earned back its costs several times over, enabling Nell to continue making films. But this work would be done *sans* Ernest, their marriage ending in divorce thanks to Nell having an affair with Van Tuyle. In 1922 she decided to move her company to the northern [[Idaho]] wilderness by Priest Lake, remote enough for an effective rustic atmosphere while still being decently close to Spokane. By this time she also had an impressive menagerie of animals, including dogs, raccoons, wolves, eagles bears, cougars, and horses, which she often used in her films–they were also carted up to Priest Lake, much to the locals’ amusement.
 
 ![](https://silentology.wordpress.com/wp-content/uploads/2022/12/nell-shipman-and-bear.webp)
 
@@ -71,3 +71,5 @@ Trusky, Tom. “Nell Shipman.” [https://wfpp.columbia.edu/pioneer/ccp-nell-shi
 
 [https://wikipedia.org/](https://wikipedia.org/)  
 [https://imdb.com/](https://imdb.com/)
+
+#idaho

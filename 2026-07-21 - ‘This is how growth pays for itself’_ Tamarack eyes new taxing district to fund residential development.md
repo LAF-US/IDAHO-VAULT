@@ -31,7 +31,7 @@ The district would finance the construction of roads, water and sewer systems, s
 
 St. Luke's Health Plan - 2026 2:1
 
-Earlier this year, the Idaho Legislature [expanded state law](https://legiscan.com/ID/text/H0926/id/3398300) governing Community Infrastructure Districts to allow them in unincorporated areas of counties. The change took effect July 1, making the financing tool available to Tamarack for the first time.
+Earlier this year, the [[Idaho]] Legislature [expanded state law](https://legiscan.com/ID/text/H0926/id/3398300) governing Community Infrastructure Districts to allow them in unincorporated areas of counties. The change took effect July 1, making the financing tool available to Tamarack for the first time.
 
 ## County approval needed
 
@@ -126,3 +126,5 @@ Tamarack’s previous owner and visionary, Jean-Pierre Boespflug of France, file
 ![Valley Lookout house - Drew](https://static-v2.boisedev.com/assets/12c5b6ba-e344-4f74-a83b-fe4af9ea9df5.gif)
 
 Valley Lookout house - Drew
+
+#idaho

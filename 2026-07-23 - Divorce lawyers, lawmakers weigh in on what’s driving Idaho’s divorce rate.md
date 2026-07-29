@@ -9,7 +9,7 @@ description: "Potential state law changes could make a difference."
 ---
 Listen to this article
 
-Idaho’s divorce rate has been steadily declining for nearly half a century, and [since 2020](https://www.gethealthy.dhw.idaho.gov/idaho-divorces), has been below the low-water mark set in 1956, according to data collected since 1950.
+[[Idaho]]’s divorce rate has been steadily declining for nearly half a century, and [since 2020](https://www.gethealthy.dhw.idaho.gov/idaho-divorces), has been below the low-water mark set in 1956, according to data collected since 1950.
 
 The Gem State’s divorce rate hit 3.2 divorces per 1,000 people in 2024, the most recent full-year data available. The downward trend is expected to continue through 2025, according to Idaho Department of Health and Welfare spokesperson AJ McWhorter.
 
@@ -94,3 +94,5 @@ Both Scott and Nichols told the Statesman they expect their bills would affect t
 Want to see more content like this?
 
 <iframe allow="clipboard-write; web-share" src="chrome-extension://cnjifjpddelmedmihgijeibhnjfabmlf/side-panel.html?context=iframe"></iframe>
+
+#idaho

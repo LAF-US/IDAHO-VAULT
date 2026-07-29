@@ -7,7 +7,7 @@ created: 2026-07-20
 ---
 **Update: This story was updated to clarify that Pocatello-Chubbuck cut four counseling clerk jobs. A previous version said that the district cut four counseling jobs.**
 
-Public schools across Idaho will have fewer teachers and staff members this fall amid declining enrollment and rising costs.
+Public schools across [[Idaho]] will have fewer teachers and staff members this fall amid declining enrollment and rising costs.
 
 School boards governing large and small districts — from Pocatello to Buhl to Parma — in recent weeks have eliminated teaching, administrative and staff positions ahead of the 2026-27 school year. The staffing reductions are largely through attrition, meaning unfilled positions will be eliminated, and most employees at districts making cuts will keep their jobs.
 
@@ -82,3 +82,5 @@ The state also hasn’t addressed the rising costs of special education. While l
 Critchfield’s spokeswoman said Thursday that her office will continue to push for an updated school funding formula that reflects the growing number of students who need additional resources.
 
 “While districts and charters are expected to operate within current funding distributions, the existing formula itself does not always adequately support those demands,” said Andrea Dearden, communications director for the Idaho Department of Education. “What Idaho schools need is a modernized funding formula that better reflects current realities and addresses longstanding unmet needs.”
+
+#idaho

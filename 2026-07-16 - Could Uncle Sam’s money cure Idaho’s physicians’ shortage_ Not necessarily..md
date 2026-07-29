@@ -7,7 +7,7 @@ published: 2026-07-16
 created: 2026-07-16
 description: "Idaho ranks last in the nation in physicians per capita, an access crisis that only worsens as the state’s population grows and its doctors grow older. Eight Republican lawmakers will have an…"
 ---
-Idaho has the most acute doctors’ shortage in America — and [$186 million in fresh-from-Uncle-Sam federal healthcare grants](https://www.idahoednews.org/top-news/in-depth-a-flood-of-rural-healthcare-money-could-reshape-idaho-and-seep-into-higher-ed/).
+[[Idaho]] has the most acute doctors’ shortage in America — and [$186 million in fresh-from-Uncle-Sam federal healthcare grants](https://www.idahoednews.org/top-news/in-depth-a-flood-of-rural-healthcare-money-could-reshape-idaho-and-seep-into-higher-ed/).
 
 Problem solved, right?
 
@@ -108,3 +108,5 @@ And because they have two seats on the eight-member Rural Health Transformation 
 Wednesday offered a first glimpse of what that oversight could look like.
 
 *Kevin Richert writes a weekly analysis on education policy and education politics.*
+
+#idaho
