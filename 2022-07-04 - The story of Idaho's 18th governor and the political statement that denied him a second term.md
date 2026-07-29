@@ -9,7 +9,7 @@ description: "EDITOR’S NOTE: This is the second in a series of stories about f
 ---
 [East Idaho Governs](https://www.eastidahonews.com/features/east-idaho-governs/)
 
-Chase Addison Clark of Idaho Falls was elected the 18th of governor of the state in 1940. Listen to the podcast in the video player above. | Photo courtesy [National Governor’s Association](https://www.nga.org/governor/chase-addison-clark/)
+Chase Addison Clark of [[Idaho]] Falls was elected the 18th of governor of the state in 1940. Listen to the podcast in the video player above. | Photo courtesy [National Governor’s Association](https://www.nga.org/governor/chase-addison-clark/)
 
 ***EDITOR’S NOTE: This is the second in a series of stories about former Gem State governors from eastern Idaho.***
 
@@ -144,3 +144,5 @@ Chase and Jean Clark, left, with President Lyndon B. Johnson and their daughter,
 [SUBMIT A CORRECTION](https://www.eastidahonews.com/submit-a-correction/?headline=The%20story%20of%20Idaho%E2%80%99s%2018th%20governor%20and%20the%20political%20statement%20that%20denied%20him%20a%20second%20term&url=https://www.eastidahonews.com/2022/07/the-story-of-idahos-18th-governor-and-the-political-statement-that-denied-him-a-second-term/)
 
 EastIdahoNews.com comment boards are a place for open, honest, and civil communication between readers regarding the news of the day and issues facing our communities. We encourage commenters to stay on topic, use positive and constructive language, and be empathetic to the feelings of other commenters. **THINK BEFORE YOU POST.** [Click here](https://www.eastidahonews.com/eastidahonews-com-code-of-ethics/#onlinecommenting) for more details on our commenting rules.
+
+#idaho

@@ -11,7 +11,7 @@ description: "The Pocatello City Council voted tonight on the Lex Developments a
 
 50 Followers
 
-POCATELLO, Idaho (KIFI) – The Pocatello City Council voted tonight on the Lex Developments appeal for the proposed AI data center and decided in a 4-1 decision to affirm the Hearing Examiner's decision from May to deny the applicant a conditional use permit.
+POCATELLO, [[Idaho]] (KIFI) – The Pocatello City Council voted tonight on the Lex Developments appeal for the proposed AI data center and decided in a 4-1 decision to affirm the Hearing Examiner's decision from May to deny the applicant a conditional use permit.
 
 **Background**
 
@@ -120,3 +120,5 @@ If the applicant is denied again, there is the option of a lawsuit like Councilm
 Article Topic Follows: [News](https://localnews8.com/category/news/)
 
 50 Followers
+
+#idaho

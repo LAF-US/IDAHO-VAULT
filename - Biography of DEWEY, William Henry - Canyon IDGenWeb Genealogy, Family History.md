@@ -22,7 +22,7 @@ IDGenWeb***
 
 Part Two
 
-Synopsis: Col. William Henry Dewey, who was born in New York in 1823, came West by way of the Isthmus arriving in San Francisco in 1852. After a short venture into the contracting business he left San Francisco for Virginia City, Nevada, lured there by dreams of gold. When the hoped for riches failed to materialize Col. Dewey, during the year 1863, walked from Virginia City to the site of Silver City, Idaho, there he staked out a townsite which was to become the center of the gold fields. There he was to spend forty more years of a colorful and eventful life trimmed with diamonds and gold. Col. Dewey, so called because of his prosperity and partiality to the South, always wore a diamond stud in his shirt and many are the tales connected with these diamonds.
+Synopsis: Col. William Henry Dewey, who was born in New York in 1823, came West by way of the Isthmus arriving in San Francisco in 1852. After a short venture into the contracting business he left San Francisco for Virginia City, Nevada, lured there by dreams of gold. When the hoped for riches failed to materialize Col. Dewey, during the year 1863, walked from Virginia City to the site of Silver City, [[Idaho]], there he staked out a townsite which was to become the center of the gold fields. There he was to spend forty more years of a colorful and eventful life trimmed with diamonds and gold. Col. Dewey, so called because of his prosperity and partiality to the South, always wore a diamond stud in his shirt and many are the tales connected with these diamonds.
 
 On August 5, 1884, a brief paragraph in the Tri-Weekly Statesman appeared revealing that Col. Dewey was being held for the fatal shooting of a man by the name of Koenig.
 
@@ -170,3 +170,5 @@ Note: “Scenic Idaho” has long been out of publication, and Faith Turner appe
 This page was last updated 03/23/2025
 
 <iframe allow="clipboard-write; web-share" src="chrome-extension://cnjifjpddelmedmihgijeibhnjfabmlf/side-panel.html?context=iframe"></iframe>
+
+#idaho

@@ -13,7 +13,7 @@ Following his retirement, Symmonds gained more popularity in 2020 through his [Y
 
 ## Early life and education
 
-Symmonds was born on December 30, 1983, in [Blytheville, Arkansas](https://en.wikipedia.org/wiki/Blytheville,_Arkansas "Blytheville, Arkansas").[^9] His family moved to Boise, Idaho when he was three-years old. His father Jeffrey Symmonds is a [surgeon](https://en.wikipedia.org/wiki/Surgeon "Surgeon"), and his mother Andrea is a [teacher](https://en.wikipedia.org/wiki/Teacher "Teacher").[^10] Raised in Boise, Symmonds is a 2002 graduate of [Bishop Kelly High School](https://en.wikipedia.org/wiki/Bishop_Kelly_High_School "Bishop Kelly High School").[^10]
+Symmonds was born on December 30, 1983, in [Blytheville, Arkansas](https://en.wikipedia.org/wiki/Blytheville,_Arkansas "Blytheville, Arkansas").[^9] His family moved to Boise, [[Idaho]] when he was three-years old. His father Jeffrey Symmonds is a [surgeon](https://en.wikipedia.org/wiki/Surgeon "Surgeon"), and his mother Andrea is a [teacher](https://en.wikipedia.org/wiki/Teacher "Teacher").[^10] Raised in Boise, Symmonds is a 2002 graduate of [Bishop Kelly High School](https://en.wikipedia.org/wiki/Bishop_Kelly_High_School "Bishop Kelly High School").[^10]
 
 An avid outdoorsman, Symmonds earned his [Eagle Scout](https://en.wikipedia.org/wiki/Eagle_Scout_\(Boy_Scouts_of_America\) "Eagle Scout (Boy Scouts of America)") award in high school.[^11] In high school, he won state championships in the [800 meters](https://en.wikipedia.org/wiki/800_meters "800 meters"), [1600 meters](https://en.wikipedia.org/wiki/1600_meters "1600 meters"), [3200 meters](https://en.wikipedia.org/wiki/3200_meters "3200 meters"), and the [4 × 400 m relay](https://en.wikipedia.org/wiki/4_x_400_metres_relay "4 x 400 metres relay"). His high school personal bests were 1:53 in the 800 meters, 4:20 in the 1600 meters, and 9:47 in the 3200 meters.[^10] [^12]
 
@@ -221,3 +221,5 @@ In 2020, Symmonds married Tiana Baur.[^45] He filed for divorce in September 202
 [^49]: ["Nick Symmonds"](https://www.youtube.com/@nicksymmonds/community). *YouTube*. Retrieved 2024-12-21.
 
 [^50]: [D3 star races to elite ranks, takes Athlete of the Week.](http://blogs.usatoday.com/sportsscope/2007/06/d3_star_races_t.html?csp=34) [Archived](https://web.archive.org/web/20071015140944/http://blogs.usatoday.com/sportsscope/2007/06/d3_star_races_t.html?csp=34) 2007-10-15 at the [Wayback Machine](https://en.wikipedia.org/wiki/Wayback_Machine "Wayback Machine") *[USA Today](https://en.wikipedia.org/wiki/USA_Today "USA Today")*, June 12, 2007.
+
+#idaho

@@ -67,7 +67,7 @@ Semrad feels like the city council members are acting in secret and, instead of 
 
 Mayor Hawkins acknowledged that some residents have threatened legal action and said she wanted to consult with the city’s attorney before responding to EastIdahoNews.com’s questions.
 
-In a written statement, Hawkins disputed many of the residents’ allegations, saying the city has followed Idaho law throughout the process and has worked for years to minimize the financial impact on homeowners.
+In a written statement, Hawkins disputed many of the residents’ allegations, saying the city has followed [[Idaho]] law throughout the process and has worked for years to minimize the financial impact on homeowners.
 
 Hawkins said the Bannock Street project has been in the works for several years and that the city secured multiple grants to cover most of the cost of the improvements. She said the City Council explored creating a local improvement district, or LID, to help pay for the city’s share of the project, noting that the funding method has been used on previous sidewalk, curb and gutter projects and was discussed during open City Council meetings and in city newsletters before construction began.
 
@@ -96,3 +96,5 @@ The dispute remains unresolved as residents continue seeking answers about the p
 [SUBMIT A CORRECTION](https://www.eastidahonews.com/submit-a-correction/?headline=Malad%20residents%20challenge%20road%20project%20charges;%20mayor%20responds&url=https://www.eastidahonews.com/2026/07/malad-residents-challenge-road-project-charges-mayor-responds/)
 
 EastIdahoNews.com comment boards are a place for open, honest, and civil communication between readers regarding the news of the day and issues facing our communities. We encourage commenters to stay on topic, use positive and constructive language, and be empathetic to the feelings of other commenters. **THINK BEFORE YOU POST.** [Click here](https://www.eastidahonews.com/eastidahonews-com-code-of-ethics/#onlinecommenting) for more details on our commenting rules.
+
+#idaho

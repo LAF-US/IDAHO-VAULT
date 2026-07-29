@@ -9,7 +9,7 @@ description: "Idahoans may one day see alternatives to their commute, as the Cit
 ---
 ## As Boise pushes for new passenger rail study, could the state catch on?
 
-New grant gives the city opportunities to research funding methods for passenger rail; Idaho’s political, economic landscape means it could still take a long time to finalize
+New grant gives the city opportunities to research funding methods for passenger rail; [[Idaho]]’s political, economic landscape means it could still take a long time to finalize
 
 ![The Boise Train Depot](https://idahocapitalsun.com/wp-content/uploads/2026/07/train-depot-boise-3-2048x1365.jpg)
 
@@ -120,3 +120,5 @@ If successful, the city’s application claims the service could create “safer
 Page 1 / 11
 
 Zoom 100%
+
+#idaho

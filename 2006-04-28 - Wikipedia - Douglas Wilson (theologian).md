@@ -9,7 +9,7 @@ created: 2026-07-20
 
 ## Biography
 
-Douglas Wilson was born in 1953. In 1958 his family moved to [Annapolis, Maryland](https://en.wikipedia.org/wiki/Annapolis,_Maryland "Annapolis, Maryland"), where he spent most of his childhood.[^5] His father, Jim Wilson, was a full-time [evangelist](https://en.wikipedia.org/wiki/Evangelism "Evangelism") who worked with the [Officers' Christian Union](https://en.wikipedia.org/wiki/Officers'_Christian_Fellowship "Officers' Christian Fellowship"). His father had become a Christian in the [Naval Academy](https://en.wikipedia.org/wiki/United_States_Naval_Academy "United States Naval Academy") and worked in Christian literature ministry both in Annapolis and later in Idaho.[^6] His father moved to the [Moscow, Idaho](https://en.wikipedia.org/wiki/Moscow,_Idaho "Moscow, Idaho"), area after retiring from the Navy to start a Christian bookstore on the [Washington State University](https://en.wikipedia.org/wiki/Washington_State_University "Washington State University") campus.[^7]
+Douglas Wilson was born in 1953. In 1958 his family moved to [Annapolis, Maryland](https://en.wikipedia.org/wiki/Annapolis,_Maryland "Annapolis, Maryland"), where he spent most of his childhood.[^5] His father, Jim Wilson, was a full-time [evangelist](https://en.wikipedia.org/wiki/Evangelism "Evangelism") who worked with the [Officers' Christian Union](https://en.wikipedia.org/wiki/Officers'_Christian_Fellowship "Officers' Christian Fellowship"). His father had become a Christian in the [Naval Academy](https://en.wikipedia.org/wiki/United_States_Naval_Academy "United States Naval Academy") and worked in Christian literature ministry both in Annapolis and later in [[Idaho]].[^6] His father moved to the [Moscow, Idaho](https://en.wikipedia.org/wiki/Moscow,_Idaho "Moscow, Idaho"), area after retiring from the Navy to start a Christian bookstore on the [Washington State University](https://en.wikipedia.org/wiki/Washington_State_University "Washington State University") campus.[^7]
 
 Upon graduating high school, he enlisted into the submarine service, serving on the [USS *Tusk*](https://en.wikipedia.org/wiki/USS_Tusk "USS Tusk") and the [USS *Ray*](https://en.wikipedia.org/wiki/USS_Ray_\(SSN-653\) "USS Ray (SSN-653)").[^8] He graduated from the [University of Idaho](https://en.wikipedia.org/wiki/University_of_Idaho "University of Idaho"),[^9] where he met his wife to be, Nancy, whom he married in 1975.[^10]
 
@@ -283,3 +283,5 @@ Later that year, Wilson had a successful operation removing the tumor, followed 
 [^51]: Wilson, Douglas (April 16, 2018). ["The Obedience of Cancer"](https://dougwils.com/resources/personal/the-obedience-of-cancer.html). *Blog and Mablog*. Moscow, ID. Retrieved April 15, 2024.
 
 [^52]: Wilson, Douglas (May 8, 2018). ["Gratitude & Update"](https://dougwils.com/resources/personal/the-obedience-of-cancer.html). *Blog and Mablog*. Moscow, ID. Retrieved April 15, 2024.
+
+#idaho

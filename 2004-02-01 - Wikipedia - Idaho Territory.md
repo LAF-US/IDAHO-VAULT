@@ -7,7 +7,7 @@ created: 2026-07-20
 ---
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Seal_of_Idaho_%281863%E2%80%931866%29.jpg/250px-Seal_of_Idaho_%281863%E2%80%931866%29.jpg)
 
-Seal of the Idaho Territory, 1863–1866
+Seal of the [[Idaho]] Territory, 1863–1866
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Id-state-penitentiary-old-entrance.jpg/250px-Id-state-penitentiary-old-entrance.jpg)
 
@@ -97,3 +97,5 @@ In a bid for statehood, Governor Stevenson called for a [constitutional conventi
 [^13]: Hart, I. W., ed. (1912). [*Proceedings and Debates of the Constitutional Convention of Idaho 1889*](https://books.google.com/books?id=yv8aAAAAYAAJ). Vol. 2. p. 2037.
 
 [^14]: ["Official Vote: Adopting the Constitution"](https://www.newspapers.com/article/the-idaho-statesman/127007078/). *The Idaho Statesman*. December 4, 1889.
+
+#idaho

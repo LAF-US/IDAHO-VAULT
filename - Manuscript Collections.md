@@ -10,7 +10,7 @@ description:
 Account book of farm records from an unidentified location, 1906-1924.
 
 [**Aho Collection, James**](https://t68c5a865aab279f8.starter1ua.preservica.com/portal/en-US/asset/sdb%3AIO%7C95654e0e-ee2f-4662-bf0f-bfe1a9189840). 19.96 lin. ft. (MC 131)  
-Research materials, books, interviews, audio recordings, video recordings, periodicals, brochures, and correspondence focusing on right-wing extremism, predominately in Idaho and the Pacific Northwest.
+Research materials, books, interviews, audio recordings, video recordings, periodicals, brochures, and correspondence focusing on right-wing extremism, predominately in [[Idaho]] and the Pacific Northwest.
 
 [**Alameda \[Id\] Ladies Aid Records**.](https://t68c5a865aab279f8.starter1ua.preservica.com/portal/en-US/asset/sdb%3AIO%7C5f9a80fc-d4da-45fd-8ebd-2dbdeb5ba823) 4.17 lin. ft. (MC 097)  
 The collection contains materials related to the Alameda Ladies Aid, founded in 1924. Other materials include, Meeting minutes, yearbooks, record books, newspaper clippings, financial records, and scrapbooks, day-to-day business, events, and activities of this local women’s group.
@@ -1057,3 +1057,5 @@ Naturalization record for S. A. Youngren, Knox County, Illinois, October 23, 188
 Financial affairs (bills, receipts, tax information) of the YWCA, Pocatello, ca. 1928 - 1982. There are also subject files on topics such as family planning, the women's movement, sexuality, legislation, and parenting.
 
 **Young Women's Christian Association Records.** 0.21 lin. ft. (MC 085) ***processing***
+
+#idaho

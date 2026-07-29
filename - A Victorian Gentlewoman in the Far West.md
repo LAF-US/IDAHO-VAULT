@@ -78,8 +78,10 @@ Google apps
 
 Google Account
 
-Logan Finney
+[[Logan Finney]]
 
 loganfinney27@gmail.com
 
 <iframe allow="clipboard-write; web-share" src="chrome-extension://cnjifjpddelmedmihgijeibhnjfabmlf/side-panel.html?context=iframe"></iframe>
+
+#logan-finney

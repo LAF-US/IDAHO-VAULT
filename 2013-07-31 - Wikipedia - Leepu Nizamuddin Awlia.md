@@ -73,4 +73,6 @@ Since 2013, Awlia has lived in [Coeur d'Alene](https://en.wikipedia.org/wiki/Coe
 
 [^18]: Dillard, Mechele R. (23 June 2015). ["Counting Cars Returns, Leepu & Pitbull Premieres on History Channel Tonight!"](http://www.tvruckus.com/2015/06/23/counting-cars-returns-leepu-pitbull-premieres-on-history-channel-tonight/). TVRuckus. Retrieved 1 July 2015.
 
-[^19]: Lamberson, Carolyn (23 June 2015). ["Duo turns junk cars into custom vehicles on new History Channel show"](http://www.spokesman.com/stories/2015/jun/23/duo-turns-junk-cars-into-custom-vehicles-on-new/). *[The Spokesman-Review](https://en.wikipedia.org/wiki/The_Spokesman-Review "The Spokesman-Review")*. Idaho. Retrieved 1 July 2015.
+[^19]: Lamberson, Carolyn (23 June 2015). ["Duo turns junk cars into custom vehicles on new History Channel show"](http://www.spokesman.com/stories/2015/jun/23/duo-turns-junk-cars-into-custom-vehicles-on-new/). *[The Spokesman-Review](https://en.wikipedia.org/wiki/The_Spokesman-Review "The Spokesman-Review")*. [[Idaho]]. Retrieved 1 July 2015.
+
+#idaho

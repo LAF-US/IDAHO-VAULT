@@ -11,7 +11,7 @@ description: "IDAHO FALLS – Jon Ochi, a 75-year-old Idaho Falls man of Japanes
 
 ![Fred Ochi](https://s3.us-west-2.amazonaws.com/assets.eastidahonews.com/wp-content/uploads/2023/02/Fred-Ochi.jpg)
 
-Fred Ochi moved to Idaho Falls in 1943 to escape hostility toward Japanese Americans. He passed away in 2007 at age 93, but his son, Jon, will be telling his story, during a community event on Saturday. | Courtesy Jon Ochi
+Fred Ochi moved to [[Idaho]] Falls in 1943 to escape hostility toward Japanese Americans. He passed away in 2007 at age 93, but his son, Jon, will be telling his story, during a community event on Saturday. | Courtesy Jon Ochi
 
 IDAHO FALLS – Jon Ochi, a 75-year-old Idaho Falls man of Japanese descent, is standing in his old sign shop at 275 Chamberlain Avenue as he looks through old photos and newspaper clippings dating back more than 80 years ago.
 
@@ -142,3 +142,5 @@ A flier for the Day of Remembrance Event on Saturday. | Courtesy Lora King
 [SUBMIT A CORRECTION](https://www.eastidahonews.com/submit-a-correction/?headline=An%20%E2%80%98abuse%20of%20the%20US%20Constitution%E2%80%99%20brought%20him%20to%20eastern%20Idaho.%20Why%20his%20son%20wants%20you%20to%20know%20about%20it&url=https://www.eastidahonews.com/2023/02/an-abuse-of-the-us-constitution-brought-him-to-eastern-idaho-why-his-son-wants-you-to-know-about-it/)
 
 EastIdahoNews.com comment boards are a place for open, honest, and civil communication between readers regarding the news of the day and issues facing our communities. We encourage commenters to stay on topic, use positive and constructive language, and be empathetic to the feelings of other commenters. **THINK BEFORE YOU POST.** [Click here](https://www.eastidahonews.com/eastidahonews-com-code-of-ethics/#onlinecommenting) for more details on our commenting rules.
+
+#idaho
