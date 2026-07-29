@@ -57,7 +57,7 @@ class LinearReporter:
         ]
         env = {**os.environ, "MCP_LIVE_WRITE": "true"}
         try:
-            proc = subprocess.run(cmd, capture_output=True, text=True, timeout=60, env=env, check=False)
+            proc = subprocess.run(cmd, capture_output=True, text=True, timeout=60, env=env)
         except subprocess.TimeoutExpired:
             return False, "linear failed: timeout while posting comment"
         if proc.returncode == 0:
