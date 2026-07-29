@@ -1,3 +1,10 @@
+"""Tests for issue_reconciler.py — the find-or-create-by-title recurring-issue driver.
+
+Two halves: ``IssueReconcilerTest`` covers the create/comment/close decision, and
+``LookupTest`` covers the search and fingerprint reads underneath it — the half the
+gh_cli migration rewrote.
+"""
+
 from __future__ import annotations
 
 import importlib.util
@@ -32,6 +39,8 @@ issue_reconciler = _load_issue_reconciler_module()
 
 
 class IssueReconcilerTest(unittest.TestCase):
+    """Which of create / comment / close the current findings select."""
+
     def test_creates_issue_when_findings_exist_and_no_open_issue(self) -> None:
         with tempfile.TemporaryDirectory() as tempdir, mock.patch.dict(
             "os.environ", {"GITHUB_REPOSITORY": "LAF-US/IDAHO-VAULT"}, clear=False
