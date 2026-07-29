@@ -97,10 +97,31 @@ class ArgvTest(TestCase):
         with self.assertRaises(ValueError):
             gh_cli.pr_view(12, owner="LAF-US", json_fields="labels")
 
-    def test_pr_comment_keeps_multiline_markdown_in_one_element(self) -> None:
+    def test_pr_comment_sends_the_body_as_a_file_not_argv(self) -> None:
+        # The body is caller text; keeping it out of the command line is the point.
+        # argv carries only a path this module wrote, and the file holds the body
+        # verbatim — including the newlines argv should never have been asked to carry.
         body = "line one\n\n- bullet\n"
-        argv, _ = _argv(gh_cli.pr_comment, 3, body)
-        self.assertEqual(argv, ["gh", "pr", "comment", "3", "--body", body])
+        seen = {}
+
+        def capture(argv, check=True):
+            seen["argv"] = argv
+            seen["written"] = Path(argv[-1]).read_text(encoding="utf-8")
+            return _completed()
+
+        with mock.patch.object(gh_cli, "_run", side_effect=capture):
+            gh_cli.pr_comment(3, body)
+        self.assertEqual(seen["argv"][:5], ["gh", "pr", "comment", "3", "--body-file"])
+        self.assertNotIn(body, seen["argv"])
+        self.assertEqual(seen["written"], body)
+
+    def test_body_file_is_cleaned_up_afterwards(self) -> None:
+        captured = {}
+        with mock.patch.object(
+            gh_cli, "_run", side_effect=lambda argv, check=True: captured.setdefault("p", argv[-1]) or _completed()
+        ):
+            gh_cli.pr_comment(3, "body")
+        self.assertFalse(Path(captured["p"]).exists())
 
     def test_pr_merge_arms_and_disarms(self) -> None:
         argv, _ = _argv(gh_cli.pr_merge, 5, auto=True)
@@ -166,20 +187,21 @@ class ArgvTest(TestCase):
     def test_issue_create_comment_and_close(self) -> None:
         argv, _ = _argv(
             gh_cli.issue_create,
-            owner="LAF-US", repo="IDAHO-VAULT", title="T", body_file="report-body.md",
+            owner="LAF-US", repo="IDAHO-VAULT", title="T", body="report text",
         )
-        self.assertEqual(
-            argv,
-            ["gh", "issue", "create", "--repo", "LAF-US/IDAHO-VAULT",
-             "--title", "T", "--body-file", "report-body.md"],
-        )
+        self.assertEqual(argv[:8], [
+            "gh", "issue", "create", "--repo", "LAF-US/IDAHO-VAULT",
+            "--title", "T", "--body-file",
+        ])
+        self.assertNotIn("report text", argv)
         argv, _ = _argv(
             gh_cli.issue_comment, 7, owner="LAF-US", repo="IDAHO-VAULT", body="done"
         )
-        self.assertEqual(
-            argv,
-            ["gh", "issue", "comment", "7", "--repo", "LAF-US/IDAHO-VAULT", "--body", "done"],
-        )
+        self.assertEqual(argv[:6], [
+            "gh", "issue", "comment", "7", "--repo", "LAF-US/IDAHO-VAULT",
+        ])
+        self.assertEqual(argv[6], "--body-file")
+        self.assertNotIn("done", argv)
         argv, _ = _argv(
             gh_cli.issue_comment_file,
             7, owner="LAF-US", repo="IDAHO-VAULT", body_file="report-body.md",
@@ -282,9 +304,17 @@ class ValueGuardTest(TestCase):
                 with self.assertRaises(ValueError):
                     gh_cli.api_pr_files(owner, repo, 9)
 
-    def test_operations_accept_real_repository_names(self) -> None:
-        argv, _ = _argv(gh_cli.api_pr_files, "a_b.c", "d-e_f.g", 9)
-        self.assertEqual(argv[3], "repos/a_b.c/d-e_f.g/pulls/9/files")
+    def test_operations_accept_the_repository_these_engines_govern(self) -> None:
+        argv, _ = _argv(gh_cli.api_pr_files, "LAF-US", "IDAHO-VAULT", 9)
+        self.assertEqual(argv[3], "repos/LAF-US/IDAHO-VAULT/pulls/9/files")
+
+    def test_operations_refuse_any_other_repository(self) -> None:
+        # These engines encode this vault's labels, merge-queue norm and lifecycle
+        # states. Pointing them at another repository is always a mistake.
+        for owner, repo in (("LAF-US", "OTHER"), ("someone", "IDAHO-VAULT")):
+            with self.subTest(owner=owner, repo=repo):
+                with self.assertRaises(ValueError):
+                    gh_cli.api_pr_files(owner, repo, 9)
 
     def test_operations_reject_a_pr_number_that_is_not_a_number(self) -> None:
         for value in ("12; rm -rf /", "--flag", "", None, 0, -1):

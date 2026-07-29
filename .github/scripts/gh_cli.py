@@ -23,6 +23,9 @@ from __future__ import annotations
 
 import re
 import subprocess
+import tempfile
+from contextlib import contextmanager
+from pathlib import Path
 
 
 # What every operation returns. Callers annotate against this instead of importing
@@ -51,12 +54,18 @@ def _as_text(value: bytes | str | None) -> str:
 
 
 def _slug(owner: str, repo: str) -> str:
-    """Return ``owner/repo``, rejecting anything that is not a GitHub name."""
-    for part in (owner, repo):
-        if not _SLUG_PART.fullmatch(part or ""):
-            raise ValueError(f"Not a valid GitHub owner/repo name: {part!r}")
-        if not any(char.isalnum() for char in part):
-            raise ValueError(f"Not a valid GitHub owner/repo name: {part!r}")
+    """Return ``owner/repo``, pinned to the one repository these engines govern.
+
+    Every caller here is vault infrastructure for LAF-US/IDAHO-VAULT — the arbiter
+    scripts already refuse to run anywhere else, and the label vocabulary, merge-queue
+    norm and lifecycle states this module encodes are all this repo's. Naming the
+    repository instead of accepting one keeps a mistyped or injected `--owner` from
+    reaching the API at all, rather than reaching it and being wrong.
+    """
+    if owner not in ("LAF-US",) or repo not in ("IDAHO-VAULT",):
+        raise ValueError(
+            f"These engines are scoped to LAF-US/IDAHO-VAULT, got: {owner!r}/{repo!r}"
+        )
     return f"{owner}/{repo}"
 
 
@@ -80,6 +89,23 @@ def _label(name: str) -> str:
     if not name or name.startswith("-"):
         raise ValueError(f"Not a valid label name: {name!r}")
     return name
+
+
+@contextmanager
+def _body_file(body: str):
+    """Yield a path holding ``body``, so the text never becomes an argv element.
+
+    `gh` takes either `--body` or `--body-file`. Comment bodies here are multi-line
+    attestations assembled at runtime, and argv is the wrong carrier for them twice
+    over: `ARG_MAX` truncates a long enough one at the exec layer, and every static
+    analyzer correctly reads caller text in a command line as caller text in a
+    command line. Writing it to a file and passing the path leaves argv holding only
+    tokens this module produced.
+    """
+    with tempfile.TemporaryDirectory(prefix="gh-cli-body-") as tmp:
+        path = Path(tmp) / "body.md"
+        path.write_text(body, encoding="utf-8")
+        yield str(path)
 
 
 def _validate_cmd(cmd: list[str]) -> None:
@@ -175,8 +201,11 @@ def pr_view(
 def pr_comment(
     pr_number: int, body: str, *, check: bool = True
 ) -> GhResult:
-    """Post a PR comment. ``body`` is one argv element — multi-line markdown is fine."""
-    return _run(["gh", "pr", "comment", _num(pr_number), "--body", body], check=check)
+    """Post a PR comment. The body goes via a file, never through argv."""
+    with _body_file(body) as path:
+        return _run(
+            ["gh", "pr", "comment", _num(pr_number), "--body-file", path], check=check
+        )
 
 
 def pr_merge(
@@ -273,28 +302,27 @@ def issue_view(
 
 
 def issue_create(
-    *, owner: str, repo: str, title: str, body_file: str, check: bool = True
+    *, owner: str, repo: str, title: str, body: str, check: bool = True
 ) -> GhResult:
-    """Open a new issue whose body is read from ``body_file``."""
-    argv = [
-        "gh", "issue", "create",
-        "--repo", _slug(owner, repo),
-        "--title", title,
-        "--body-file", body_file,
-    ]
-    return _run(argv, check=check)
+    """Open a new issue. The body goes via a file this module writes, not argv."""
+    with _body_file(body) as path:
+        argv = [
+            "gh", "issue", "create",
+            "--repo", _slug(owner, repo),
+            "--title", title,
+            "--body-file", path,
+        ]
+        return _run(argv, check=check)
 
 
 def issue_comment(
     issue_number: int, *, owner: str, repo: str, body: str, check: bool = True
 ) -> GhResult:
-    """Comment on an issue with an inline body — one argv element, multi-line is fine."""
-    argv = [
-        "gh", "issue", "comment", _num(issue_number),
-        "--repo", _slug(owner, repo),
-        "--body", body,
-    ]
-    return _run(argv, check=check)
+    """Comment on an issue. The body goes via a file, never through argv."""
+    with _body_file(body) as path:
+        return issue_comment_file(
+            issue_number, owner=owner, repo=repo, body_file=path, check=check
+        )
 
 
 def issue_comment_file(
