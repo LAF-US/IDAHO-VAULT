@@ -50,6 +50,78 @@ def _validate_cmd(cmd: list[str]) -> None:
             raise ValueError("Command arguments must not contain NUL bytes")
 
 
+def label_create(
+    name: str, *, color: str, description: str, force: bool = True, check: bool = True
+) -> subprocess.CompletedProcess[str]:
+    """Create or update a label. Verb and flags are literals; only values vary."""
+    argv = ["gh", "label", "create", name, "--color", color, "--description", description]
+    if force:
+        argv.append("--force")
+    return run(argv, check=check)
+
+
+def pr_edit(
+    pr_number: int,
+    *,
+    add_label: str | None = None,
+    remove_label: str | None = None,
+    check: bool = True,
+) -> subprocess.CompletedProcess[str]:
+    """Add and/or remove one label on a PR. ``pr_number`` is typed int, not text."""
+    if add_label is None and remove_label is None:
+        raise ValueError("pr_edit requires add_label and/or remove_label")
+    argv = ["gh", "pr", "edit", str(int(pr_number))]
+    if add_label is not None:
+        argv += ["--add-label", add_label]
+    if remove_label is not None:
+        argv += ["--remove-label", remove_label]
+    return run(argv, check=check)
+
+
+def pr_view(
+    pr_number: int, *, json_fields: str, repo: str | None = None, check: bool = True
+) -> subprocess.CompletedProcess[str]:
+    """Read PR fields as JSON. ``json_fields`` is a gh field list, not a shell string."""
+    argv = ["gh", "pr", "view", str(int(pr_number))]
+    if repo is not None:
+        argv += ["--repo", repo]
+    argv += ["--json", json_fields]
+    return run(argv, check=check)
+
+
+def pr_comment(
+    pr_number: int, body: str, *, check: bool = True
+) -> subprocess.CompletedProcess[str]:
+    """Post a PR comment. ``body`` is one argv element — multi-line markdown is fine."""
+    return run(["gh", "pr", "comment", str(int(pr_number)), "--body", body], check=check)
+
+
+def pr_merge(
+    pr_number: int,
+    *,
+    method: str = "merge",
+    auto: bool = False,
+    disable_auto: bool = False,
+    check: bool = True,
+) -> subprocess.CompletedProcess[str]:
+    """Arm or disarm auto-merge. ``method`` is validated against the queue's norm.
+
+    K5/#631: the merge queue's configured method is the single norm, and `--merge` is
+    the one canonical inert spelling. Rejecting anything else here keeps a divergent
+    method opinion from being expressible at all, rather than caught later by a test.
+    """
+    if method != "merge":
+        raise ValueError(f"merge method not allowed: {method!r} (the queue's method governs)")
+    argv = ["gh", "pr", "merge", str(int(pr_number))]
+    if disable_auto:
+        argv.append("--disable-auto")
+    else:
+        argv.append(f"--{method}")
+        if auto:
+            argv.append("--auto")
+    return run(argv, check=check)
+
+
 def run(
     cmd: list[str], check: bool = True, timeout: float | None = 300
 ) -> subprocess.CompletedProcess[str]:
