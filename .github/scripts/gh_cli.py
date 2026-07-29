@@ -1,5 +1,4 @@
-"""
-Shared ``gh`` wrapper — the only place in this repo that builds a ``gh`` command line.
+"""Shared ``gh`` wrapper — the only place in this repo that builds a ``gh`` command line.
 
 The first member of the Cluster A redesign shared lib (#600 §5), landed
 independently per #601 item 4. `review_feedback_loop._run`, `pr_lifecycle._run`,
@@ -26,6 +25,10 @@ import re
 import subprocess
 
 
+# What every operation returns. Callers annotate against this instead of importing
+# subprocess themselves — this module is the only one that needs it.
+GhResult = subprocess.CompletedProcess[str]
+
 _ALLOWED_EXECUTABLES: set[str] = {"gh"}
 
 # GitHub owner and repository names are ASCII word characters plus ``.``, ``-``,
@@ -37,8 +40,7 @@ _SLUG_PART = re.compile(r"[A-Za-z0-9_.][A-Za-z0-9_.-]{0,99}")
 
 
 def _as_text(value: bytes | str | None) -> str:
-    """
-    Normalize a TimeoutExpired stream to str.
+    """Normalize a TimeoutExpired stream to str.
 
     Under ``text=True`` the main result streams are str, but
     ``TimeoutExpired.stdout``/``.stderr`` come back as bytes.
@@ -67,8 +69,7 @@ def _num(value: int) -> str:
 
 
 def _validate_cmd(cmd: list[str]) -> None:
-    """
-    Check the argv list this module built before handing it to the exec layer.
+    """Check the argv list this module built before handing it to the exec layer.
 
     Deliberately does NOT reject newlines/CRs in argv elements: `--body`,
     `--description`, and similar flag values legitimately carry multi-line
@@ -100,7 +101,7 @@ def _validate_cmd(cmd: list[str]) -> None:
 
 def label_create(
     name: str, *, color: str, description: str, force: bool = True, check: bool = True
-) -> subprocess.CompletedProcess[str]:
+) -> GhResult:
     """Create or update a label. Verb and flags are literals; only values vary."""
     argv = ["gh", "label", "create", name, "--color", color, "--description", description]
     if force:
@@ -119,7 +120,7 @@ def pr_edit(
     add_label: str | None = None,
     remove_label: str | None = None,
     check: bool = True,
-) -> subprocess.CompletedProcess[str]:
+) -> GhResult:
     """Add and/or remove one label on a PR. ``pr_number`` is typed int, not text."""
     if add_label is None and remove_label is None:
         raise ValueError("pr_edit requires add_label and/or remove_label")
@@ -138,9 +139,8 @@ def pr_view(
     owner: str | None = None,
     repo: str | None = None,
     check: bool = True,
-) -> subprocess.CompletedProcess[str]:
-    """
-    Read PR fields as JSON. ``json_fields`` is a gh field list, not a shell string.
+) -> GhResult:
+    """Read PR fields as JSON. ``json_fields`` is a gh field list, not a shell string.
 
     ``owner`` and ``repo`` are given together or not at all; omitted, gh resolves the
     repository from the checkout it is run in.
@@ -156,7 +156,7 @@ def pr_view(
 
 def pr_comment(
     pr_number: int, body: str, *, check: bool = True
-) -> subprocess.CompletedProcess[str]:
+) -> GhResult:
     """Post a PR comment. ``body`` is one argv element — multi-line markdown is fine."""
     return _run(["gh", "pr", "comment", _num(pr_number), "--body", body], check=check)
 
@@ -168,9 +168,8 @@ def pr_merge(
     auto: bool = False,
     disable_auto: bool = False,
     check: bool = True,
-) -> subprocess.CompletedProcess[str]:
-    """
-    Arm or disarm auto-merge. ``method`` is validated against the queue's norm.
+) -> GhResult:
+    """Arm or disarm auto-merge. ``method`` is validated against the queue's norm.
 
     K5/#631: the merge queue's configured method is the single norm, and `--merge` is
     the one canonical inert spelling. Rejecting anything else here keeps a divergent
@@ -195,9 +194,8 @@ def pr_list_open(
     limit: int = 1000,
     json_fields: str = "number",
     check: bool = True,
-) -> subprocess.CompletedProcess[str]:
-    """
-    List a repository's OPEN PRs as JSON.
+) -> GhResult:
+    """List a repository's OPEN PRs as JSON.
 
     Open is the only state this repo's engines census, so it is fixed here rather than
     parameterized — a state nobody asks for is a value position nobody can misuse.
@@ -222,9 +220,8 @@ ISSUE_SEARCH_LIMIT = 20
 
 def issue_search_open(
     owner: str, repo: str, *, search: str, json_fields: str, check: bool = True
-) -> subprocess.CompletedProcess[str]:
-    """
-    Search a repository's OPEN issues, returning the requested JSON fields.
+) -> GhResult:
+    """Search a repository's OPEN issues, returning the requested JSON fields.
 
     The reconciler's find-or-create is the only caller and only ever looks for an open
     issue by title, so state and page size are fixed rather than parameterized.
@@ -242,7 +239,7 @@ def issue_search_open(
 
 def issue_view(
     issue_number: int, *, owner: str, repo: str, json_fields: str, check: bool = True
-) -> subprocess.CompletedProcess[str]:
+) -> GhResult:
     """Read issue fields as JSON."""
     argv = [
         "gh", "issue", "view", _num(issue_number),
@@ -254,7 +251,7 @@ def issue_view(
 
 def issue_create(
     *, owner: str, repo: str, title: str, body_file: str, check: bool = True
-) -> subprocess.CompletedProcess[str]:
+) -> GhResult:
     """Open a new issue whose body is read from ``body_file``."""
     argv = [
         "gh", "issue", "create",
@@ -267,7 +264,7 @@ def issue_create(
 
 def issue_comment(
     issue_number: int, *, owner: str, repo: str, body: str, check: bool = True
-) -> subprocess.CompletedProcess[str]:
+) -> GhResult:
     """Comment on an issue with an inline body — one argv element, multi-line is fine."""
     argv = [
         "gh", "issue", "comment", _num(issue_number),
@@ -279,7 +276,7 @@ def issue_comment(
 
 def issue_comment_file(
     issue_number: int, *, owner: str, repo: str, body_file: str, check: bool = True
-) -> subprocess.CompletedProcess[str]:
+) -> GhResult:
     """Comment on an issue with a body read from ``body_file``."""
     argv = [
         "gh", "issue", "comment", _num(issue_number),
@@ -296,7 +293,7 @@ def issue_close(
     repo: str,
     reason: str = "completed",
     check: bool = True,
-) -> subprocess.CompletedProcess[str]:
+) -> GhResult:
     """Close an issue with one of gh's own close reasons."""
     if reason not in {"completed", "not planned"}:
         raise ValueError(f"Not a valid close reason: {reason!r}")
@@ -313,9 +310,8 @@ def issue_close(
 # --------------------------------------------------------------------------- #
 
 
-def graphql(query: str, **variables: object) -> subprocess.CompletedProcess[str]:
-    """
-    Execute a GraphQL document, passing ints with ``-F`` and everything else with ``-f``.
+def graphql(query: str, **variables: object) -> GhResult:
+    """Execute a GraphQL document, passing ints with ``-F`` and everything else with ``-f``.
 
     Returns the raw ``CompletedProcess``; payload and GraphQL-error handling belong
     to the caller, which knows what shape it asked for.
@@ -333,7 +329,7 @@ def graphql(query: str, **variables: object) -> subprocess.CompletedProcess[str]
 
 def api_pr_update_branch(
     owner: str, repo: str, pr_number: int, *, check: bool = True
-) -> subprocess.CompletedProcess[str]:
+) -> GhResult:
     """Merge the base branch into a PR's head (``PUT .../pulls/N/update-branch``)."""
     path = f"repos/{_slug(owner, repo)}/pulls/{_num(pr_number)}/update-branch"
     return _run(["gh", "api", "--method", "PUT", path], check=check)
@@ -341,7 +337,7 @@ def api_pr_update_branch(
 
 def api_pr_files(
     owner: str, repo: str, pr_number: int, *, check: bool = True
-) -> subprocess.CompletedProcess[str]:
+) -> GhResult:
     """List a PR's changed file paths, one per line, across every page."""
     path = f"repos/{_slug(owner, repo)}/pulls/{_num(pr_number)}/files"
     return _run(["gh", "api", "--paginate", path, "--jq", ".[].filename"], check=check)
@@ -354,7 +350,7 @@ def api_issue_comments(
     *,
     jq: str | None = None,
     check: bool = True,
-) -> subprocess.CompletedProcess[str]:
+) -> GhResult:
     """Read an issue's (or PR's) issue-style comments across every page."""
     path = f"repos/{_slug(owner, repo)}/issues/{_num(issue_number)}/comments"
     argv = ["gh", "api", "--paginate", path]
@@ -370,9 +366,8 @@ def api_issue_comments(
 
 def _run(
     cmd: list[str], check: bool = True, timeout: float | None = 300
-) -> subprocess.CompletedProcess[str]:
-    """
-    Run ``cmd``, capturing stdout/stderr as text.
+) -> GhResult:
+    """Run ``cmd``, capturing stdout/stderr as text.
 
     On a non-zero exit (when ``check`` is True), raise ``RuntimeError`` carrying the
     command and both streams so the failure is never silent. ``timeout`` (seconds;
