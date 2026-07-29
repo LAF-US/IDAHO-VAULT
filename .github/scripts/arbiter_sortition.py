@@ -7,7 +7,7 @@ import json
 import random
 import sys
 
-from gh_cli import run as _run
+import gh_cli
 
 # This script is scoped to a single, fixed repository -- it is not a general
 # library, and ALL_REVIEWERS below is already a hardcoded roster specific to
@@ -42,7 +42,7 @@ def _graphql(query, **variables):
             cmd.extend(["-F", f"{key}={value}"])
         else:
             cmd.extend(["-f", f"{key}={value}"])
-    result = _run(cmd)
+    result = gh_cli.run(cmd)
     payload = json.loads(result.stdout or "{}")
     errors = payload.get("errors")
     if errors:
@@ -108,17 +108,17 @@ def _select_arbiters(active_reviewers, pr_number, count):
 def _ensure_arbiter_labels(arbiters):
     for arbiter in arbiters:
         label_name = f"{ARBITER_LABEL_PREFIX}{arbiter}"
-        _run(["gh", "label", "create", label_name, "--color", "00FF00", "--description", f"Arbiter: {arbiter} can approve this PR", "--force"], check=False)
+        gh_cli.label_create(label_name, color="00FF00", description=f"Arbiter: {arbiter} can approve this PR", check=False)
 
 
 def _apply_arbiter_labels(pr_number, arbiters):
     for arbiter in arbiters:
         label_name = f"{ARBITER_LABEL_PREFIX}{arbiter}"
-        _run(["gh", "pr", "edit", str(pr_number), "--add-label", label_name], check=False)
+        gh_cli.pr_edit(pr_number, add_label=label_name, check=False)
 
 
 def _remove_old_arbiter_labels(pr_number, current_arbiters):
-    result = _run(["gh", "pr", "view", str(pr_number), "--json", "labels"], check=False)
+    result = gh_cli.pr_view(pr_number, json_fields="labels", check=False)
     try:
         pr_data = json.loads(result.stdout or "{}")
         current_labels = {label.get("name", "") for label in pr_data.get("labels", [])}
@@ -135,7 +135,7 @@ def _remove_old_arbiter_labels(pr_number, current_arbiters):
             continue
         label_name = f"{ARBITER_LABEL_PREFIX}{reviewer}"
         if label_name in current_labels:
-            _run(["gh", "pr", "edit", str(pr_number), "--remove-label", label_name], check=False)
+            gh_cli.pr_edit(pr_number, remove_label=label_name, check=False)
 
 
 def _post_arbiter_comment(pr_number, arbiters):
@@ -155,7 +155,7 @@ def _post_arbiter_comment(pr_number, arbiters):
 ---
 *This is an automated sortition to implement the requirement: multiplicity of reviewers and a sortition of arbiters.*
 """
-    _run(["gh", "pr", "comment", str(pr_number), "--body", comment_body], check=False)
+    gh_cli.pr_comment(pr_number, comment_body, check=False)
 
 
 def main():
@@ -169,7 +169,7 @@ def main():
         sys.exit(f"--pr-number must be a positive integer, got: {args.pr_number}")
     # Re-derive through int() at the point of use: this is a pure digit-string
     # conversion (raises ValueError on anything non-numeric), so the value
-    # handed to _run() argv can never carry an injected flag/argument --
+    # handed to gh_cli.run() argv can never carry an injected flag/argument --
     # unlike the bare argparse-sourced int, an explicit int() call here is a
     # conversion CodeQL's command-injection query recognizes as a boundary.
     pr_number = int(args.pr_number)
