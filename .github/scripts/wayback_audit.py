@@ -122,6 +122,7 @@ def extract_frontmatter(content: str) -> str:
 
 
 def extract_url(content: str) -> str | None:
+    """Return the note's own `URL:` frontmatter value, or None if absent/placeholder."""
     m = re.search(r"^URL:\s*(.+)$", extract_frontmatter(content), re.MULTILINE)
     if not m:
         return None
@@ -135,6 +136,7 @@ def extract_url(content: str) -> str | None:
 
 
 def extract_wayback_field(content: str) -> str | None:
+    """Return the note's own `wayback:` frontmatter value, or None if absent."""
     m = re.search(r"^wayback:\s*(.+)$", extract_frontmatter(content), re.MULTILINE)
     return m.group(1).strip() if m else None
 
