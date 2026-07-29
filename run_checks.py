@@ -36,8 +36,7 @@ def run_syntax_checks(python_executable: str = sys.executable) -> int:
             [python_executable, "-m", "py_compile", file_path],
             cwd=REPO_ROOT,
             capture_output=True,
-            text=True,
-        )
+            text=True, check=False)
         if result.returncode != 0:
             print(f"ERROR in {file_path}:")
             print(result.stderr)
@@ -52,8 +51,7 @@ def run_pytest(python_executable: str = sys.executable) -> int:
         [python_executable, "-m", "pytest", *TEST_FILES, "-v"],
         cwd=REPO_ROOT,
         capture_output=True,
-        text=True,
-    )
+        text=True, check=False)
     print(result.stdout)
     if result.stderr:
         print(result.stderr)
