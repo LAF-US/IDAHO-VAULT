@@ -2355,7 +2355,7 @@ FACT CHECK every claim - start with internet and doc/man pages, then golden path
 > 16. "Secret reference: op://Vault/Mistral/credential"
 > 17. "See VAULT-CONVENTIONS.md for vault structure, naming, frontmatter, sourcing protocol, git practices, and automation standards."
 > 18. "DISCOVERY BEFORE INVENTION: Read existing vault files before proposing new conventions."
-> 19. "Read THE DOCKET to orient: !/__!__/!/! The world is quiet here/DOCKET.md"
+> 19. "Read THE DOCKET to orient: `!/__!__/!/! The world is quiet here/DOCKET.md`"
 > 20. "Task assignment flows through GitHub Issues (agent:mistral label, when activated)."
 > 21. "Each agent works on its own branch. PRs are the deliverable. Logan reviews and merges from GitHub."
 >
@@ -2721,7 +2721,7 @@ stdout: ./.mistral/MISTRAL.md:export MISTRAL_API_KEY=$(op read "op://Vault/Mistr
 | *"Each agent works on its own branch. PRs are the deliverable."* | ✅ **CONFIRMED** | Observed pattern: `claude/*`, `mistral/*`, `codex/*` branches | **ACCURATE** |
 | *"op://Vault/Mistral/credential"* | ⚠️ **UNVERIFIED** — Path exists in shim only | No other vault file references this exact path | **UNVERIFIED** |
 | *"scripts/Start-MistralVault.ps1"* | ❌ **INACCURATE** — No such file/directory at root | `find . -name "scripts" -type d` = 4 subdirectories, none at root | **FALSE** |
-| *"DOCKET path: !/__!__/!/! The world is quiet here/DOCKET.md"* | ❌ **INACCURATE** — Missing leading `!` | Actual: `!/!/__!__/!/! The world is quiet here/DOCKET.md` | **FALSE** |
+| *"DOCKET path: `!/__!__/!/! The world is quiet here/DOCKET.md`"* | ❌ **INACCURATE** — Missing leading `!` | Actual: `!/!/__!__/!/! The world is quiet here/DOCKET.md` | **FALSE** |
 | *"agent:mistral label"* | ⚠️ **UNVERIFIED** — No GitHub Issues found with this label | Only reference is in shim itself | **UNVERIFIED** |
 
 ---
