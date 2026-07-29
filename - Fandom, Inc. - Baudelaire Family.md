@@ -54,7 +54,7 @@ It is speculated that Gregor and Ike Anwhistle are the G and the I on the [Snick
 ## Trivia
 
 - The surname "Baudelaire" is taken from [Charles Baudelaire](https://en.wikipedia.org/wiki/Charles_Baudelaire "wikipedia:Charles Baudelaire"), a French poet and author who composed notable works such as *[Les Fleurs du mal](https://en.wikipedia.org/wiki/Les_Fleurs_du_mal "wikipedia:Les Fleurs du mal").*
- 	- The word "baudelaire", itself, is of French origin, and is the name of a short cutting sword or dagger with a broad, slightly curving blade.[^11]
+  - The word "baudelaire", itself, is of French origin, and is the name of a short cutting sword or dagger with a broad, slightly curving blade.[^11]
 - [Daniel Handler](https://snicket.fandom.com/wiki/Daniel_Handler "Daniel Handler") has confirmed in an interview that the Baudelaire Family are Jewish, but whether they are ethnically and/or religiously Jewish is not stated.[^12]
 
 ## Appearances
