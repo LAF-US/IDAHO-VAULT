@@ -21,10 +21,10 @@ Codex supports MCP servers in both the CLI and the IDE extension.
 ## Supported MCP features
 
 - **STDIO servers**: Servers that run as a local process (started by a command).
- 	- Environment variables
+  - Environment variables
 - **Streamable HTTP servers**: Servers that you access at an address.
- 	- Bearer token authentication
-  		- OAuth authentication (run `codex mcp login <server-name>` for servers that support OAuth)
+  - Bearer token authentication
+    - OAuth authentication (run `codex mcp login <server-name>` for servers that support OAuth)
 
 ## Connect Codex to an MCP server
 

@@ -21,8 +21,8 @@ authority: LOGAN
 Residence: Santa
 
 - former candidate for Idaho House in Legislative District 5
- 	- 2020 primary endorsed by Lt. Gov. Janice McGeachin, lost to Brandon Mitchell
- 	- 2018 primary lost to Bill Goesling
+  - 2020 primary endorsed by Lt. Gov. Janice McGeachin, lost to Brandon Mitchell
+  - 2018 primary lost to Bill Goesling
 
 ## Bio from <https://hariheath.com/about-hari/>
 

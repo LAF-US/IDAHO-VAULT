@@ -406,7 +406,7 @@ This report synthesizes the latest news across technology, regulation, markets, 
 
 ## Tags
 
-#AI #ArtificialIntelligence #MachineLearning #LLM #Regulation #Policy #Market #IPO #Valuation #Anthropic #Microsoft #OpenAI #Google #Mistral #Ethics #Copyright #Security #ChipShortage #MilitaryAI #UK #EU #US
+# AI #ArtificialIntelligence #MachineLearning #LLM #Regulation #Policy #Market #IPO #Valuation #Anthropic #Microsoft #OpenAI #Google #Mistral #Ethics #Copyright #Security #ChipShortage #MilitaryAI #UK #EU #US
 
 ---
 

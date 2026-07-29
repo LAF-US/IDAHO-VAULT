@@ -272,9 +272,9 @@ He was also known for his travel writing. These books included:
 - *Montevideo, ou une nouvelle Troie*, 1850 (*[The New Troy](https://en.wikipedia.org/wiki/The_New_Troy "The New Troy")*), inspired by the [Great Siege of Montevideo](https://en.wikipedia.org/wiki/Great_Siege_of_Montevideo "Great Siege of Montevideo")
 - *Le Journal de Madame Giovanni* (*The Journal of Madame Giovanni*, 1856)
 - *Travel Impressions in the Kingdom of Napoli/Naples Trilogy*:
- 	- *Impressions of Travel in Sicily* (*Le Speronare (Sicily – 1835)*, 1842
-  		- *Captain Arena* (*Le Capitaine Arena (Italy – Aeolian Islands and Calabria – 1835)*, 1842
-  		- *[Impressions of Travel in Naples](https://en.wikipedia.org/wiki/Le_Corricolo "Le Corricolo")* (*Le Corricolo (Rome – Naples – 1833)*, 1843
+  - *Impressions of Travel in Sicily* (*Le Speronare (Sicily – 1835)*, 1842
+    - *Captain Arena* (*Le Capitaine Arena (Italy – Aeolian Islands and Calabria – 1835)*, 1842
+    - *[Impressions of Travel in Naples](https://en.wikipedia.org/wiki/Le_Corricolo "Le Corricolo")* (*Le Corricolo (Rome – Naples – 1833)*, 1843
 - *Travel Impressions in Russia – Le Caucase Original edition: Paris 1859*
 - *Adventures in Czarist Russia, or From Paris to Astrakhan* (*Impressions de voyage: En Russie; De Paris à Astrakan: Nouvelles impressions de voyage (1858)*, 1859–1862
 - *Voyage to the Caucasus* (*Le Caucase: Impressions de voyage; suite de En Russie (1859)*, 1858–1859

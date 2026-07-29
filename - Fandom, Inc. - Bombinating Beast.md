@@ -112,18 +112,18 @@ The [statue](https://snicket.fandom.com/wiki/Bombinating_Beast_Statue "Bombinati
 ## Trivia
 
 - Known merchandise of the Bombinating Beast that exists in Stain'd-by-the-Sea:[^2]
- 	- Stuffed Animals
-  		- Decks of cards with Bombinating Beasts printed on the back
-  		- Coffee Mugs
-  		- Cereal Bowls
-  		- Napkins
-  		- Place Mats
-  		- Ashtrays
-  		- Candleholders
-  		- Silverware (specifically forks are mentioned)
-  		- Lamp Shades
-  		- Clocks
-  		- Carpets [^4]
+  - Stuffed Animals
+    - Decks of cards with Bombinating Beasts printed on the back
+    - Coffee Mugs
+    - Cereal Bowls
+    - Napkins
+    - Place Mats
+    - Ashtrays
+    - Candleholders
+    - Silverware (specifically forks are mentioned)
+    - Lamp Shades
+    - Clocks
+    - Carpets [^4]
 
 ## Appearances
 

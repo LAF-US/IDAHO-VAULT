@@ -56,6 +56,7 @@ Due to PowerShell 6+ (pwsh.exe) not being available in the execution environment
 40. ✓ audit_repo_payloads.py - Not fully reviewed (size)
 
 #### .github/swarm/tools/ (1 file)
+
  1. ✓ state_manager.py - Valid syntax
 
 ### Findings
