@@ -1,5 +1,3 @@
-# CLAUDE.md — IDAHO-VAULT
-
 ---
 canonical_name: CLAUDE
 persona_class: imported_software
@@ -19,6 +17,8 @@ related:
   - STUB-PERSONAFOLDERS-2026-05-03
   - VAULT-CONVENTIONS
 ---
+
+# CLAUDE.md — IDAHO-VAULT
 
 ## Start Here — Plain Words Before the Lore
 
