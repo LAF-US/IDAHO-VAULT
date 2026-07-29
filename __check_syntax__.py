@@ -37,7 +37,8 @@ def run_unittests(python_executable: str = sys.executable) -> int:
         [python_executable, "-m", "unittest", UNITTEST_TARGET, "-v"],
         cwd=REPO_ROOT,
         capture_output=True,
-        text=True, check=False)
+        text=True,
+    )
     print(result.stdout)
     if result.stderr:
         print(result.stderr)

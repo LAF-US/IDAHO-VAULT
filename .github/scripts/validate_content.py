@@ -93,7 +93,8 @@ def get_changed_files(base: str | None = None) -> list[Path]:
         command.append(f"{base}..HEAD")
     result = subprocess.run(
         command,
-        capture_output=True, text=True, check=False)
+        capture_output=True, text=True
+    )
     return [Path(f) for f in result.stdout.strip().splitlines() if f.endswith(".md")]
 
 

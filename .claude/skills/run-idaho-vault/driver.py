@@ -66,14 +66,14 @@ def vpy() -> Path:
 
 
 def run(cmd, **kw):
-    return subprocess.run([str(c) for c in cmd], cwd=ROOT, env=ENV, **kw, check=False)
+    return subprocess.run([str(c) for c in cmd], cwd=ROOT, env=ENV, **kw)
 
 
 def _uv(cmd, check: bool = True, extra_env: dict | None = None) -> int:
     """Run a uv setup command, surface its output, and fail fast on error."""
     env = {**ENV, **extra_env} if extra_env else ENV
     p = subprocess.run([str(c) for c in cmd], cwd=ROOT, env=env,
-                       capture_output=True, text=True, check=False)
+                       capture_output=True, text=True)
     sys.stderr.write(p.stdout)
     sys.stderr.write(p.stderr)
     if check and p.returncode != 0:
