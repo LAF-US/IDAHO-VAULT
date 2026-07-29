@@ -81,7 +81,8 @@ def run_compilation_checks():
                 [sys.executable, "-m", "py_compile", filepath],
                 capture_output=True,
                 text=True,
-                timeout=10
+                timeout=10,
+                check=False,
             )
             
             if result.returncode == 0:
@@ -122,7 +123,8 @@ def run_pytest_tests():
                 [sys.executable, "-m", "pytest", test_file, "-v", "--tb=short"],
                 capture_output=True,
                 text=True,
-                timeout=60
+                timeout=60,
+                check=False,
             )
             
             if result.returncode == 0:
