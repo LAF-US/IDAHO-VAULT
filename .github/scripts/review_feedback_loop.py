@@ -330,21 +330,6 @@ def _update_branch(owner: str, repo: str, pr_number: int) -> tuple[bool, str | N
     return (True, None)
 
 
-def _pr_arg(pr_number: int) -> str:
-    """Render a PR number as an argv token, via an explicit int() barrier.
-
-    Every caller already receives `pr_number` from an argparse option declared
-    `type=int`, so a non-integer can never reach here at runtime. That guarantee
-    lives in the parser, far from the `gh` call — a static analyzer tracing
-    argv sees only "a value derived from user input" and flags the command line
-    as uncontrolled (CodeQL py/command-line-injection). Converting here makes the
-    invariant local and explicit: the result is a decimal integer string or the
-    call raises, so no caller-supplied text can reach argv regardless of how the
-    value arrived.
-    """
-    return str(int(pr_number))
-
-
 def _arm_auto_merge(owner: str, repo: str, pr_number: int) -> tuple[bool, str | None]:
     """Arm auto-merge, update the branch if BEHIND, and add the PR to the merge queue.
 
@@ -390,7 +375,7 @@ def _arm_auto_merge(owner: str, repo: str, pr_number: int) -> tuple[bool, str | 
             # ("Cannot use `-d` or `--delete-branch` when merge queue enabled"),
             # which crashed every arm attempt. Head-branch cleanup belongs to the
             # repo's delete-on-merge behavior / branch-cleanup workflow, not here.
-            _run(["gh", "pr", "merge", _pr_arg(pr_number), "--merge", "--auto"])
+            _run(["gh", "pr", "merge", str(pr_number), "--merge", "--auto"])
         except RuntimeError as exc:
             if not any(fragment in str(exc) for fragment in AUTO_MERGE_AUTHZ_FRAGMENTS):
                 raise
@@ -437,7 +422,7 @@ def _maybe_arm_auto_merge(
         # so disable the auto-merge we just enabled and report failure rather than leave
         # an un-trackable armed PR.
         try:
-            _run(["gh", "pr", "edit", _pr_arg(pr_number), "--add-label", DEFAULT_AUTO_MERGE_LABEL])
+            _run(["gh", "pr", "edit", str(pr_number), "--add-label", DEFAULT_AUTO_MERGE_LABEL])
         except RuntimeError as exc:
             _disable_auto_merge(pr_number)
             return {
@@ -776,17 +761,17 @@ def ensure_labels() -> None:
 
 def _edit_label(pr_number: int, *, add: str | None = None, remove: str | None = None) -> None:
     if add:
-        _run(["gh", "pr", "edit", _pr_arg(pr_number), "--add-label", add], check=False)
+        _run(["gh", "pr", "edit", str(pr_number), "--add-label", add], check=False)
     if remove:
-        _run(["gh", "pr", "edit", _pr_arg(pr_number), "--remove-label", remove], check=False)
+        _run(["gh", "pr", "edit", str(pr_number), "--remove-label", remove], check=False)
 
 
 def _disable_auto_merge(pr_number: int, *, check: bool = False) -> None:
-    _run(["gh", "pr", "merge", _pr_arg(pr_number), "--disable-auto"], check=check)
+    _run(["gh", "pr", "merge", str(pr_number), "--disable-auto"], check=check)
 
 
 def _comment(pr_number: int, body: str) -> None:
-    _run(["gh", "pr", "comment", _pr_arg(pr_number), "--body", body])
+    _run(["gh", "pr", "comment", str(pr_number), "--body", body])
 
 
 def _csv_env(name: str, default: str = "") -> set[str]:
@@ -1678,7 +1663,7 @@ def _fetch_pr_merge_state(owner: str, repo: str, pr_number: int) -> dict:
         "gh",
         "pr",
         "view",
-        _pr_arg(pr_number),
+        str(pr_number),
         "--repo",
         f"{owner}/{repo}",
         "--json",
