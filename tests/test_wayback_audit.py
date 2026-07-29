@@ -10,8 +10,9 @@ def _load_wayback_audit():
     project_root = Path(__file__).resolve().parents[1]
     script_path = project_root / ".github" / "scripts" / "wayback_audit.py"
     spec = importlib.util.spec_from_file_location("wayback_audit_test_module", script_path)
+    if spec is None or spec.loader is None:
+        raise ImportError(f"Could not load module spec for {script_path}")
     module = importlib.util.module_from_spec(spec)
-    assert spec.loader is not None
     sys.modules[spec.name] = module
     spec.loader.exec_module(module)
     return module
@@ -38,7 +39,8 @@ class ExtractFrontmatterTest(unittest.TestCase):
 
     def test_leading_bom_is_tolerated(self) -> None:
         content = "﻿---\ntitle: test\nURL: https://example.com/bom-case\n---\nbody\n"
-        self.assertIn("URL: https://example.com/bom-case", wayback_audit.extract_frontmatter(content))
+        frontmatter = wayback_audit.extract_frontmatter(content)
+        self.assertIn("URL: https://example.com/bom-case", frontmatter)
 
     def test_four_dash_line_is_not_a_closing_fence(self) -> None:
         content = "---\nURL: https://example.com/real\n----\nmore: stuff\n---\nbody\n"
@@ -56,7 +58,8 @@ class ExtractFrontmatterTest(unittest.TestCase):
 
     def test_closing_fence_with_trailing_whitespace_is_recognized(self) -> None:
         content = "---\r\nURL: https://example.com/crlf-case\r\n---  \r\nbody\r\n"
-        self.assertIn("URL: https://example.com/crlf-case", wayback_audit.extract_frontmatter(content))
+        frontmatter = wayback_audit.extract_frontmatter(content)
+        self.assertIn("URL: https://example.com/crlf-case", frontmatter)
 
 
 class ExtractUrlTest(unittest.TestCase):
@@ -102,7 +105,10 @@ class ExtractWaybackFieldTest(unittest.TestCase):
         )
 
     def test_ignores_wayback_shaped_line_outside_frontmatter(self) -> None:
-        content = "---\nURL: https://example.com/x\n---\n\nSee also wayback: https://example.com/not-real\n"
+        content = (
+            "---\nURL: https://example.com/x\n---\n\n"
+            "See also wayback: https://example.com/not-real\n"
+        )
         self.assertIsNone(wayback_audit.extract_wayback_field(content))
 
     def test_missing_field_returns_none(self) -> None:
