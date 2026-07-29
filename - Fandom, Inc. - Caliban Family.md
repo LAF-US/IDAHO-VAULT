@@ -59,6 +59,6 @@ It is possible that the people in Thursday's family are named after days of the 
 
 [^2]: [PROSE](https://snicket.fandom.com/wiki/PROSE "PROSE"): *[Lemony Snicket: The Unauthorized Autobiography](https://snicket.fandom.com/wiki/Lemony_Snicket:_The_Unauthorized_Autobiography "Lemony Snicket: The Unauthorized Autobiography")*
 
-[^3]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Vile Village: Part Two](https://snicket.fandom.com/wiki/The_Vile_Village:_Pa***REMOVED***Two "The Vile Village: Part Two")*
+[^3]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Vile Village: Part Two](https://snicket.fandom.com/wiki/The_Vile_Village:_Part_Two "The Vile Village: Part Two")*
 
 [^4]: [PROSE](https://snicket.fandom.com/wiki/PROSE "PROSE"): *[The Grim Grotto](https://snicket.fandom.com/wiki/The_Grim_Grotto "The Grim Grotto")*

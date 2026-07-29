@@ -1509,10 +1509,10 @@ sudo port uninstall leaves
 
 Note that the uninstallation can cause new ports to become leaves. To uninstall all leaves, you can use the `rleaves` pseudo-port instead.
 
-To go through this process interactively so you can make sure you're not uninstalling anything you want to keep, you can install the `po***REMOVED***cutleaves` port. After installation, run it with
+To go through this process interactively so you can make sure you're not uninstalling anything you want to keep, you can install the `port cutleaves` port. After installation, run it with
 
 ```
-sudo po***REMOVED***cutleaves
+sudo port cutleaves
 ```
 
 ### 3.3.7. Keep Your Installation Lean by Defining Leaves as Requested Ports
@@ -1549,10 +1549,10 @@ When you've step-by-step figured out which ports you want to keep on your system
 sudo port uninstall leaves
 ```
 
-Note that uninstalling leaves may mark new ports as leaves, so you will have to repeat the process. You can install the `po***REMOVED***cutleaves` port, which is a special script for the job. It allows you to interactively decide whether to keep or uninstall a port. Run it as
+Note that uninstalling leaves may mark new ports as leaves, so you will have to repeat the process. You can install the `port cutleaves` port, which is a special script for the job. It allows you to interactively decide whether to keep or uninstall a port. Run it as
 
 ```
-sudo po***REMOVED***cutleaves
+sudo port cutleaves
 ```
 
 ```

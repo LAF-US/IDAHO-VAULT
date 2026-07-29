@@ -7,7 +7,7 @@ created: 2026-04-17
 ---
 Featured
 
-![nuneybits Vector art of burnt orange voice waves rising from a b4e149ce-8692-4f29-8c57-9d1ac9c21a08](https://venturebeat.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fjdtwqhzvc2n1%2F72D5HGgYf4s3Pux8zzbC4I%2Fdce882939be8e43c79c3fe9baf9a5400%2Fnuneybits_Vector_a***REMOVED***of_burnt_orange_voice_waves_rising_from_a__b4e149ce-8692-4f29-8c57-9d1ac9c21a08.webp%3Fw%3D1000%26q%3D100&w=3840&q=85)
+![nuneybits Vector art of burnt orange voice waves rising from a b4e149ce-8692-4f29-8c57-9d1ac9c21a08](https://venturebeat.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fjdtwqhzvc2n1%2F72D5HGgYf4s3Pux8zzbC4I%2Fdce882939be8e43c79c3fe9baf9a5400%2Fnuneybits_Vector_art_of_burnt_orange_voice_waves_rising_from_a__b4e149ce-8692-4f29-8c57-9d1ac9c21a08.webp%3Fw%3D1000%26q%3D100&w=3840&q=85)
 
 Credit: VentureBeat made with Midjourney
 

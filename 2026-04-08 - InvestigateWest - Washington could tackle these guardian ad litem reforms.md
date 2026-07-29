@@ -111,7 +111,7 @@ Thurston County guardians ad litem additionally benefit from monthly meetings, w
 
 ### Clear grievance process
 
-Although Washington State Court Rules lay out a [minimum standard](https://www.courts.wa.gov/cou***REMOVED***rules/pdf/GALR/SUP_GALR_07_00_00.pdf) for how local courts should handle complaints against guardians ad litem — and require that procedure to be easily understood — parents say it’s not always clear how to submit a complaint or what happens next.
+Although Washington State Court Rules lay out a [minimum standard](https://www.courts.wa.gov/court_rules/pdf/GALR/SUP_GALR_07_00_00.pdf) for how local courts should handle complaints against guardians ad litem — and require that procedure to be easily understood — parents say it’s not always clear how to submit a complaint or what happens next.
 
 One mom tried to submit a complaint in King County, for example, against a man who she believed was the guardian ad litem in her case. Yet even though he referred to his court filing as a “GAL report” and the order assigning him to the case said “Guardian ad Litem,” the mom was told she couldn’t pursue a complaint because the person was technically a parenting evaluator, according to court records and the mother’s emails with the court.
 

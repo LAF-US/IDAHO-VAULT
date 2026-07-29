@@ -97,7 +97,7 @@ There is a theory that the Great Unknown is not simply a physical object/being, 
 - "While reading and writing, the siblings found many answers for which they had been looking, although each answer, of course, only brought forth another mystery, as there were many details of the Baudelaires' lives that seemed like a strange, unreadable shape of some great unknown. But this did not concern them as much as you might think. One cannot spend forever sitting and solving the mysteries of one's history, and no matter how much one reads, the whole story can never be told."
 - "Perhaps it is better not to know precisely what was meant by this word, as some things are better left in the great unknown."
 
-The theory is hinted at in the TV series. In [The Grim Grotto: Part One](https://snicket.fandom.com/wiki/The_Grim_Grotto:_Pa***REMOVED***One "The Grim Grotto: Part One"), Fiona says "I like his use of symbolism, like how Moby Dick is both a literal whale and a metaphor for death." In [The Grim Grotto: Part Two](https://snicket.fandom.com/wiki/The_Grim_Grotto:_Pa***REMOVED***Two "The Grim Grotto: Part Two"), one of the captured children says, "I heard it's a metaphor for death."
+The theory is hinted at in the TV series. In [The Grim Grotto: Part One](https://snicket.fandom.com/wiki/The_Grim_Grotto:_Part_One "The Grim Grotto: Part One"), Fiona says "I like his use of symbolism, like how Moby Dick is both a literal whale and a metaphor for death." In [The Grim Grotto: Part Two](https://snicket.fandom.com/wiki/The_Grim_Grotto:_Part_Two "The Grim Grotto: Part Two"), one of the captured children says, "I heard it's a metaphor for death."
 
 Assuming it is not symbolism, the Great Unknown takes the series's nihilistic tone a step further by verging into the point of Cosmic Horror, at least in the Netflix series.
 
@@ -219,7 +219,7 @@ The Great Unknown.
 
 [![The Great Unknown in The Grim Grotto: Part One.](https://static.wikia.nocookie.net/snicket/images/5/55/FullSizeRender.jpg/revision/latest/scale-to-width-down/171?cb=20190102130224 "FullSizeRender.jpg (164 KB)")](https://snicket.fandom.com/wiki/File:FullSizeRender.jpg "FullSizeRender.jpg (164 KB)")
 
-The Great Unknown in [The Grim Grotto: Part One](https://snicket.fandom.com/wiki/The_Grim_Grotto:_Pa***REMOVED***One "The Grim Grotto: Part One").
+The Great Unknown in [The Grim Grotto: Part One](https://snicket.fandom.com/wiki/The_Grim_Grotto:_Part_One "The Grim Grotto: Part One").
 
 [![The statue of the Beast in The End](https://static.wikia.nocookie.net/snicket/images/d/d6/Bombinatingstatue.png/revision/latest/scale-to-width-down/148?cb=20190102130916 "Bombinatingstatue.png (247 KB)")](https://snicket.fandom.com/wiki/File:Bombinatingstatue.png "Bombinatingstatue.png (247 KB)")
 
@@ -243,6 +243,6 @@ The statue of the Beast in [The End](https://snicket.fandom.com/wiki/The_End_\(e
 
 [^6]: [PROSE](https://snicket.fandom.com/wiki/PROSE "PROSE"): *[Why Is This Night Different from All Other Nights?](https://snicket.fandom.com/wiki/Why_Is_This_Night_Different_from_All_Other_Nights%3F "Why Is This Night Different from All Other Nights?")*
 
-[^7]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Grim Grotto: Part One](https://snicket.fandom.com/wiki/The_Grim_Grotto:_Pa***REMOVED***One "The Grim Grotto: Part One")*
+[^7]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Grim Grotto: Part One](https://snicket.fandom.com/wiki/The_Grim_Grotto:_Part_One "The Grim Grotto: Part One")*
 
 [^8]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The End](https://snicket.fandom.com/wiki/The_End_\(episode\) "The End (episode)")*

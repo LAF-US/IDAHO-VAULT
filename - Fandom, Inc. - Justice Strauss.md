@@ -7,7 +7,7 @@ created: 2026-04-14
 ---
 | “ | *I don't blame you for having doubts, [Baudelaires](https://snicket.fandom.com/wiki/Baudelaire_Family "Baudelaire Family"). [Count Olaf](https://snicket.fandom.com/wiki/Count_Olaf "Count Olaf") fooled me once, and I will never forgive myself, but there are [two ot](https://snicket.fandom.com/wiki/Man_with_a_Beard_but_No_Hair "Man with a Beard but No Hair") [her judges](https://snicket.fandom.com/wiki/Woman_with_Hair_but_No_Beard "Woman with Hair but No Beard") on the High Court, and I've known them for years, and they've always been very concerned whenever I've reported on your case. I hope you can forgive me, Baudelaires, and trust me. But if not, you can trust the law.* | ” |
 | --- | --- | --- |
-| | — Justice Strauss to the Baudelaires in " [The Penultimate Peril: Part Two](https://snicket.fandom.com/wiki/The_Penultimate_Peril:_Pa***REMOVED***Two "The Penultimate Peril: Part Two") " |
+| | — Justice Strauss to the Baudelaires in " [The Penultimate Peril: Part Two](https://snicket.fandom.com/wiki/The_Penultimate_Peril:_Part_Two "The Penultimate Peril: Part Two") " |
 
 **Justice Strauss** is a high court judge who lives right across the street from [Count Olaf](https://snicket.fandom.com/wiki/Count_Olaf "Count Olaf") 's [house](https://snicket.fandom.com/wiki/Count_Olaf%27s_house "Count Olaf's house"). "Justice" is a title; her first name is unknown. In *[The Bad Beginning](https://snicket.fandom.com/wiki/The_Bad_Beginning "The Bad Beginning")*, she desired to become the Baudelaire's guardian, which they gladly accepted, but she was unable to adopt them because of the clause in their parents' wills appointing their "closest relative", geographically, as their legal guardian. Her regret over her naïve actions motivated her to begin a challenging crusade to bring Olaf to justice for good and hopefully be able to legally adopt the Baudelaire orphans.
 
@@ -150,10 +150,10 @@ The framed man.
 - *[Lemony Snicket's A Series of Unfortunate Events (film)](https://snicket.fandom.com/wiki/Lemony_Snicket%27s_A_Series_of_Unfortunate_Events_\(film\) "Lemony Snicket's A Series of Unfortunate Events (film)")*
 - *[Lemony Snicket's A Series of Unfortunate Events (video game)](https://snicket.fandom.com/wiki/Lemony_Snicket%27s_A_Series_of_Unfortunate_Events_\(video_game\) "Lemony Snicket's A Series of Unfortunate Events (video game)")*
 - [*A Series of Unfortunate Events* (TV series)](https://snicket.fandom.com/wiki/A_Series_of_Unfortunate_Events_\(TV_series\) "A Series of Unfortunate Events (TV series)")
- 	- " [The Bad Beginning: Part One](https://snicket.fandom.com/wiki/The_Bad_Beginning:_Pa***REMOVED***One "The Bad Beginning: Part One") "
-  		- " [The Bad Beginning: Part Two](https://snicket.fandom.com/wiki/The_Bad_Beginning:_Pa***REMOVED***Two "The Bad Beginning: Part Two") "
-  		- " [The Penultimate Peril: Part One](https://snicket.fandom.com/wiki/The_Penultimate_Peril:_Pa***REMOVED***One "The Penultimate Peril: Part One") "
-  		- " [The Penultimate Peril: Part Two](https://snicket.fandom.com/wiki/The_Penultimate_Peril:_Pa***REMOVED***Two "The Penultimate Peril: Part Two") "
+ 	- " [The Bad Beginning: Part One](https://snicket.fandom.com/wiki/The_Bad_Beginning:_Part_One "The Bad Beginning: Part One") "
+  		- " [The Bad Beginning: Part Two](https://snicket.fandom.com/wiki/The_Bad_Beginning:_Part_Two "The Bad Beginning: Part Two") "
+  		- " [The Penultimate Peril: Part One](https://snicket.fandom.com/wiki/The_Penultimate_Peril:_Part_One "The Penultimate Peril: Part One") "
+  		- " [The Penultimate Peril: Part Two](https://snicket.fandom.com/wiki/The_Penultimate_Peril:_Part_Two "The Penultimate Peril: Part Two") "
 
 ## Gallery
 

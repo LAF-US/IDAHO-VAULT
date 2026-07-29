@@ -69,7 +69,7 @@ It is unknown if he and the Woman with Hair but No Beard survived the [Hotel Den
 | --- | --- | --- |
 | | |
 
-The Man with a Beard but No Hair and the Woman with Hair but No Beard are first seen in [The Slippery Slope: Part One](https://snicket.fandom.com/wiki/The_Slippery_Slope:_Pa***REMOVED***One "The Slippery Slope: Part One"), chasing Kit Snicket around the top of [Mount Fraught](https://snicket.fandom.com/wiki/Mount_Fraught "Mount Fraught"). After Kit jumps off, the pair runs into [Hugo](https://snicket.fandom.com/wiki/Hugo "Hugo"), [Colette](https://snicket.fandom.com/wiki/Colette "Colette") and [Kevin](https://snicket.fandom.com/wiki/Kevin "Kevin") who they threaten with swords. It is later implied that they killed them.
+The Man with a Beard but No Hair and the Woman with Hair but No Beard are first seen in [The Slippery Slope: Part One](https://snicket.fandom.com/wiki/The_Slippery_Slope:_Part_One "The Slippery Slope: Part One"), chasing Kit Snicket around the top of [Mount Fraught](https://snicket.fandom.com/wiki/Mount_Fraught "Mount Fraught"). After Kit jumps off, the pair runs into [Hugo](https://snicket.fandom.com/wiki/Hugo "Hugo"), [Colette](https://snicket.fandom.com/wiki/Colette "Colette") and [Kevin](https://snicket.fandom.com/wiki/Kevin "Kevin") who they threaten with swords. It is later implied that they killed them.
 
 ![The Man and Woman watching the city burn.](https://static.wikia.nocookie.net/snicket/images/9/9a/Man.png/revision/latest/scale-to-width-down/250?cb=20190112142754)
 
