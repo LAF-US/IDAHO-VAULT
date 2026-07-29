@@ -43,8 +43,14 @@ def _strip_fingerprint(body: str) -> str:
 
 
 def ensure_body_fingerprint(body_file: Path) -> str:
+    """Stamp the body file with a digest of its own content and return the marker.
+
+    The digest is taken over the body with any previous marker stripped, so an
+    unchanged report produces an unchanged marker — that is what lets the caller
+    tell a repeat finding from a new one without diffing prose.
+    """
     if ".." in str(body_file):
-        raise Exception("Invalid file path")
+        raise ValueError(f"Refusing a body path containing '..': {body_file}")
     body = body_file.read_text(encoding="utf-8")
     canonical_body = _strip_fingerprint(body)
     digest = hashlib.sha256(canonical_body.encode("utf-8")).hexdigest()
@@ -54,6 +60,11 @@ def ensure_body_fingerprint(body_file: Path) -> str:
 
 
 def find_open_issue_number(title: str) -> int | None:
+    """Return the open issue whose title matches exactly, or None.
+
+    gh's search is fuzzy, so the exact-title check below is what actually decides;
+    the search only narrows the page.
+    """
     owner, repo = _repo()
     try:
         result = gh_cli.issue_search_open(
@@ -74,6 +85,7 @@ def find_open_issue_number(title: str) -> int | None:
 
 
 def issue_has_fingerprint(issue_number: int, marker: str) -> bool:
+    """Report whether this exact marker already appears in the issue body or comments."""
     owner, repo = _repo()
     try:
         issue = _json(
@@ -91,6 +103,7 @@ def issue_has_fingerprint(issue_number: int, marker: str) -> bool:
 
 
 def create_issue(title: str, body_file: Path) -> int:
+    """Open the issue and return its number, parsed from the URL gh prints."""
     owner, repo = _repo()
     result = gh_cli.issue_create(
         owner=owner, repo=repo, title=title, body_file=str(body_file)
@@ -102,11 +115,13 @@ def create_issue(title: str, body_file: Path) -> int:
 
 
 def comment_issue(issue_number: int, body_file: Path) -> None:
+    """Append the current report to an existing issue as a comment."""
     owner, repo = _repo()
     gh_cli.issue_comment_file(issue_number, owner=owner, repo=repo, body_file=str(body_file))
 
 
 def close_issue(issue_number: int) -> None:
+    """Close the issue as completed."""
     owner, repo = _repo()
     gh_cli.issue_close(issue_number, owner=owner, repo=repo)
 
@@ -118,6 +133,13 @@ def reconcile_issue(
     has_findings: bool,
     resolved_comment: str,
 ) -> dict[str, object]:
+    """Open, update, or close the recurring issue for ``title`` to match the findings.
+
+    Four outcomes, reported as ``issue_action``: ``created`` (findings, no open issue),
+    ``commented`` (findings the issue has not already recorded), ``noop_duplicate``
+    (findings identical to what is already there, by fingerprint), and ``closed``
+    (no findings left). Writes both to ``GITHUB_OUTPUT`` when the workflow sets it.
+    """
     issue_number = find_open_issue_number(title)
     issue_action = "noop"
 
@@ -161,6 +183,7 @@ def _parse_bool(raw: str) -> bool:
 
 
 def build_parser() -> argparse.ArgumentParser:
+    """Build the CLI parser."""
     parser = argparse.ArgumentParser()
     parser.add_argument("--title", required=True)
     parser.add_argument("--body-file", type=Path, required=True)
@@ -173,6 +196,7 @@ def build_parser() -> argparse.ArgumentParser:
 
 
 def main() -> int:
+    """Reconcile the issue named on the command line and print the report as JSON."""
     args = build_parser().parse_args()
     report = reconcile_issue(
         title=args.title,
