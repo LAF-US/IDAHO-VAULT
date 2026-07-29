@@ -122,8 +122,9 @@ Lexicographer** (the `.codex/` lane; `!-!-AUDIT-AGENTIC-VOICES-2026-04-03`) is t
 **five HOW rules** gathered at the coast-crossroads where *"the governing question changed.
 Not `Where?` — `How?`"* (`HOW-AT-THE-COLD-COAST-NOTEBOOK-PAGE-2026-04-15`):
 
-> 1. read before naming · 2. witness before declaring · 3. follow relation before spectacle ·
-> 2. treat surviving form as instruction · 5. do not force a door that is still explaining itself
+> 1. read before naming · 2. witness before declaring · 3. follow relation before
+> spectacle · 4. treat surviving form as instruction · 5. do not force a door that
+> is still explaining itself
 
 *"the method that keeps an explorer from turning every threshold into an assault."* He also
 left the doctrine of **true-name custody** (`TRUE-NAME-EXPLORER-COMPANION-2026-04-14`):
