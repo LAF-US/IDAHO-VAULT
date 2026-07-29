@@ -7,7 +7,7 @@ published: 2024-11-12
 created: 2026-07-16
 description: "The feasibility review is in its early stages, Idaho State University President Robert Wagner said Monday. It’s unclear how much it would cost to acquire the Idaho College of Osteopathic Medicine, …"
 ---
-Idaho State University is looking at the feasibility of buying a private medical school in Meridian.
+[[Idaho]] State University is looking at the feasibility of buying a private medical school in Meridian.
 
 The review is in its early stages, Idaho State President Robert Wagner said Monday. It’s unclear how much it would cost to acquire the [Idaho College of Osteopathic Medicine](https://www.icom.edu/) (ICOM) or where the state or the university would get the money. It’s not even clear that Idaho State would actually pursue a purchase of ICOM, which has been affiliated with Idaho State since it opened six years ago. And at this point, ICOM isn’t even for sale.
 
@@ -96,3 +96,5 @@ The state could purchase medical school “seats” at ICOM, as it now does thro
 Either way, the objective is to address a looming problem: Idaho’s growing doctor’s shortage. Wagner and Farnsworth can cite a series of grim statistics. Idaho ranks 49 <sup>th</sup> in the nation for primary medical care positions in Idaho, Wagner said. Even if Idaho added 1,400 doctors overnight, that massive influx would only bring its number of physicians to the national average, Farnsworth said. On top of that, he added, a third of Idaho’s doctors are over the age of 60.
 
 “You have to look at every combination of solutions,” he said.
+
+#idaho

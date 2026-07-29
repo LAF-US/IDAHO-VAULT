@@ -49,7 +49,7 @@ Robert Adler died in a [Boise, Idaho](https://en.wikipedia.org/wiki/Boise,_Idaho
 - [Obituary and Archive of American Television interview description](http://tvinterviewsarchive.blogspot.com/2007/02/co-inventor-of-wireless-television.html)
 - [Biography from IEEE](http://www.ieeeghn.org/wiki/index.php/Robert_Adler)
 
-[^1]: ["Man who glued TV watchers to the couch dies"](https://web.archive.org/web/20070219040307/http://edition.cnn.com/2007/US/02/16/obit.remote.control.ap/index.html). BOISE, Idaho: [CNN](https://en.wikipedia.org/wiki/CNN "CNN"). [The Associated Press](https://en.wikipedia.org/wiki/The_Associated_Press "The Associated Press"). February 16, 2007. Archived from [the original](http://www.cnn.com/2007/US/02/16/obit.remote.control.ap/index.html) on February 19, 2007. Retrieved August 8, 2019.
+[^1]: ["Man who glued TV watchers to the couch dies"](https://web.archive.org/web/20070219040307/http://edition.cnn.com/2007/US/02/16/obit.remote.control.ap/index.html). BOISE, [[Idaho]]: [CNN](https://en.wikipedia.org/wiki/CNN "CNN"). [The Associated Press](https://en.wikipedia.org/wiki/The_Associated_Press "The Associated Press"). February 16, 2007. Archived from [the original](http://www.cnn.com/2007/US/02/16/obit.remote.control.ap/index.html) on February 19, 2007. Retrieved August 8, 2019.
 
 [^2]: [Katie Hafner](https://en.wikipedia.org/wiki/Katie_Hafner "Katie Hafner") (February 20, 2007). ["Robert Adler, Zenith Physicist, Dies at 93"](https://www.nytimes.com/2007/02/20/obituaries/20adler.html). *[The New York Times](https://en.wikipedia.org/wiki/The_New_York_Times "The New York Times")*. p. A17. Retrieved 2015-06-20.
 
@@ -64,3 +64,5 @@ Robert Adler died in a [Boise, Idaho](https://en.wikipedia.org/wiki/Boise,_Idaho
 [^7]: Hafner, Katie (2007-02-20). ["Obituary: Robert Adler, co-inventor of television remote control, dies at 93 - Health & Science - International Herald Tribune"](https://www.nytimes.com/2007/02/20/health/20iht-obit.4656149.html). *The New York Times*. [ISSN](https://en.wikipedia.org/wiki/ISSN_\(identifier\) "ISSN (identifier)") [0362-4331](https://search.worldcat.org/issn/0362-4331). Retrieved 2025-06-26.
 
 [^8]: Hafner, Katie (2007-02-20). ["Robert Adler, Zenith Physicist, Dies at 93"](https://www.nytimes.com/2007/02/20/obituaries/20adler.html). *The New York Times*. [ISSN](https://en.wikipedia.org/wiki/ISSN_\(identifier\) "ISSN (identifier)") [0362-4331](https://search.worldcat.org/issn/0362-4331). Retrieved 2025-06-26.
+
+#idaho

@@ -12,7 +12,7 @@ Henrys Lake-1872
 
  [![Henrys Lake-1872](https://lensoftimenorthwest.com/wp-content/gallery/Henrys-Lake/Henrys_Lake_1872_960by500.jpg?t=1783324041 "Henrys Lake-1872")](https://lensoftimenorthwest.com/wp-content/gallery/Henrys-Lake/Henrys_Lake_1872_960by500.jpg?t=1783324041)[![Henrys Lake-2008](https://lensoftimenorthwest.com/wp-content/gallery/Henrys-Lake/Henrys_Lake_2008_960by500.jpg?t=1492786288 "Henrys Lake-2008")](https://lensoftimenorthwest.com/wp-content/gallery/Henrys-Lake/Henrys_Lake_2008_960by500.jpg?t=1492786288)
 
-**Henry’s Lake, Idaho in 1872 (William Henry Jackson, USGS-JWH00178) and in 2008 (CW-2008-10B-016).**
+**Henry’s Lake, [[Idaho]] in 1872 (William Henry Jackson, USGS-JWH00178) and in 2008 (CW-2008-10B-016).**
 
 The lake level was raised by a dam constructed across the mouth of the lake in 1923, and today many recreational homes dot the slopes of the basin.[^1] In the fall of 2008, the Forest Service was doing a small prescribed burn on the hill in the background. Historically, these dry south facing slopes above the lake likely burned every 20-40 years, and the grasslands near the lake may have been burned every few years. Wallow-like landforms and “rub-rocks” on the western side of the lake indicate that the area may have been periodically used by bison.
 
@@ -63,3 +63,5 @@ Researchers will likely use these variables in GIS models over the next few year
 [^9]: Haines, *Journal of a Trapper*, p. 41.
 
 [^10]: Kay, “Lewis and Clark”
+
+#idaho

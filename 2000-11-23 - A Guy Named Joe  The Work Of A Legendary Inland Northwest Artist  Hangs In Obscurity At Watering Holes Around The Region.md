@@ -11,7 +11,7 @@ Patrick Haight Special To The South Voice
 
 He was a high-speed itinerant mural painter who long ago went through the Inland Northwest like a human Lake Missoula, leaving evidence of his passage on nearly every vertical surface that would stand still long enough for a brush stroke.
 
-He cut a swath from the West Plains to the Idaho Panhandle. It once seemed as though every tavern and restaurant in the Spokane Valley had a Breckenridge wall.
+He cut a swath from the West Plains to the [[Idaho]] Panhandle. It once seemed as though every tavern and restaurant in the Spokane Valley had a Breckenridge wall.
 
 OK, I might be exaggerating a little. But even after 30 years, I can’t smell stale beer or eat a pickled egg without envisioning a Breckenridge.
 
@@ -102,3 +102,5 @@ He claimed to have appeared on “You Asked For It” - twice! - and to have bee
 Joe Breckenridge, a colorful local character who said he once sold paintings to Jack Dempsey and Franklin D. Roosevelt and loved telling the story of how he awoke one morning, broke and thirsty, to complete a painting in 40 seconds using his brother’s sock for a paintbrush, died in Coeur d’Alene in 1972.
 
 Patrick Haight is a columnist for the Valley Voice.
+
+#idaho

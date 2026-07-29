@@ -17,7 +17,7 @@ Kerri Webster was born in 1971 and raised in [Idaho](https://en.wikipedia.org/wi
 - Iowa Poetry Prize, [Jane Mead](https://en.wikipedia.org/wiki/Jane_Mead "Jane Mead"), judge, 2011
 - [Lucille Medwick Award](https://en.wikipedia.org/wiki/Lucille_Medwick_Memorial_Award "Lucille Medwick Memorial Award") from the [Poetry Society of America](https://en.wikipedia.org/wiki/Poetry_Society_of_America "Poetry Society of America"), [Nikky Finney](https://en.wikipedia.org/wiki/Nikky_Finney "Nikky Finney"), judge, 2013
 - Crazyhorse Lynda Hull Memorial Poetry Prize, [Dean Young](https://en.wikipedia.org/wiki/Dean_Young_\(poet\) "Dean Young (poet)"), judge, 2006
-- Idaho Commission on the Arts Fellowships, 2004 and 2016 [^2] [^3]
+- [[Idaho]] Commission on the Arts Fellowships, 2004 and 2016 [^2] [^3]
 - Poetry Society Chapbook Fellowship, [Carl Phillips](https://en.wikipedia.org/wiki/Carl_Phillips "Carl Phillips"), judge, 2003
 
 ## Publications
@@ -62,3 +62,5 @@ Of *Grand and Arsenal*, [Lisa Russ Spaar](https://en.wikipedia.org/wiki/Lisa_Rus
 [^2]: ["Faculty in Action: Kerri Webster"](https://web.archive.org/web/20200816041243/https://www.boisestate.edu/news/2016/06/28/kerri-webster/). *Boise State News*. June 28, 2016. Archived from [the original](https://www.boisestate.edu/news/2016/06/28/kerri-webster/) on 16 August 2020. Retrieved 5 February 2021.
 
 [^3]: ["Faculty in Action: Kerri Webster"](https://web.archive.org/web/20211008141932/https://www.boisestate.edu/news/2017/04/19/kerri-webster-2/). *Boise State News*. April 19, 2017. Archived from [the original](https://www.boisestate.edu/news/2017/04/19/kerri-webster-2/) on 8 October 2021. Retrieved 5 February 2021.
+
+#idaho

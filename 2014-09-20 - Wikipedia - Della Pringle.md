@@ -68,7 +68,7 @@ Pringle lost her fortune during the [Great Depression](https://en.wikipedia.org/
 - Agnew, Jeremy. *Entertainment In The Old West*. Jefferson, North Carolina:McFarland and Company, Inc., Publishers, 2011, p. 53.
 - Hiatt, Richard G., "Lady Troupers Along The Oregon Trail," *Theatre West:Image and Impact*. Atlanta, Georgia:Rodopi, 1990, pp. 132–135.
 - Mickel., Jere C., *Footlights on the Prairie*. St. Cloud, Minnesota: North Star Press, 1974, p. 76.
-- Penson-Warde, Betty. Idaho Women in History, Vol. 1. Boise, Idaho: Legendary Publishing Co., 1991, p. 139.
+- Penson-Warde, Betty. [[Idaho]] Women in History, Vol. 1. Boise, Idaho: Legendary Publishing Co., 1991, p. 139.
 - Della Pringle photo: Courtesy of Theatre Museum, Midwest Old Threshers, Mt. Pleasant, Iowa.
 
 ## External links
@@ -110,3 +110,5 @@ Pringle lost her fortune during the [Great Depression](https://en.wikipedia.org/
 [^17]: Huston, p. 29.
 
 [^18]: "Della Pringle, Pioneer Actress, Dies," *Idaho Statesman*, November 10, 1952, p. 11.
+
+#idaho
