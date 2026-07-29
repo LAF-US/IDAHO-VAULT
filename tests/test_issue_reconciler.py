@@ -13,8 +13,9 @@ def _load_issue_reconciler_module():
     scripts_dir = project_root / ".github" / "scripts"
     script_path = scripts_dir / "issue_reconciler.py"
     spec = importlib.util.spec_from_file_location("issue_reconciler_test_module", script_path)
+    if spec is None or spec.loader is None:
+        raise RuntimeError("issue_reconciler.py could not be loaded by file path")
     module = importlib.util.module_from_spec(spec)
-    assert spec.loader is not None
     # The reconciler imports gh_cli as a sibling module; loading it by file path needs
     # the scripts dir importable. Scope the mutation to the exec, as the engine tests do.
     original_sys_path = list(sys.path)
