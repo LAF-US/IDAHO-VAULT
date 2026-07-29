@@ -103,7 +103,8 @@ def find_vault_notes() -> list[Path]:
 
 
 def extract_frontmatter(content: str) -> str:
-    """Return the note's YAML frontmatter block.
+    """
+    Return the note's YAML frontmatter block.
 
     The block is delimited by opening and closing '---' fence lines, or ""
     if the file has none. Restricting field extraction to this block keeps
