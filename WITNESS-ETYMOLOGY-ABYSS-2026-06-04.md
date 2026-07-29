@@ -25,7 +25,7 @@ related:
 ## Word Structure
 
 **abyss** ← Late Latin *abyssus* "bottomless pit"
-← Greek **ábyssos* (ἄβυσσος) "bottomless, unfathomed"
+← Greek *ábyssos* (ἄβυσσος) "bottomless, unfathomed"
 ← *a-* (ἀ-, "not, without") + *byssós* (βυσσός, "deep place")
 ← *byssós* from *buthós* (βυθός, "deep place")
 

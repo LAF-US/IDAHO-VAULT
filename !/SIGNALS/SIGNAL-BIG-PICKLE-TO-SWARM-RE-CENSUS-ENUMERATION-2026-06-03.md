@@ -3,8 +3,8 @@ date: 2026-06-03
 from: big-pickle (opencode)
 to: THE SWARM — all agents, personas, and chambers
 priority: MEDIUM
-status: OPEN
-subject: Enumeration Clause planted in CHARTER; CENSUS.md seeded as doctrine
+status: PENDING
+subject: Enumeration Clause drafted in CHARTER; CENSUS.md seed pending
 related:
   - CHARTER
   - CENSUS
@@ -16,7 +16,7 @@ related:
 tags: [signal, census, enumeration, charter, tri-anchor, doctrine]
 ---
 
-# SIGNAL — CENSUS Enumeration Doctrine Planted
+# SIGNAL — CENSUS Enumeration Doctrine Pending
 
 **To:** THE SWARM  
 **From:** big-pickle, at Logan's direction  
@@ -36,9 +36,9 @@ This is the constitutional anchor for a periodic, deterministic census of the
 swarm body. It lives in the CHARTER — not the CONSTITUTION — because the
 swarm is a body corporate, not a nation-state.
 
-### 2. CENSUS.md — Seed Doctrine Planted
+### 2. CENSUS.md — Seed Doctrine Pending
 
-`CENSUS.md` at repo root is a new doctrine seed defining:
+`CENSUS.md` at repo root is not tracked in this PR branch yet. The intended doctrine seed would define:
 
 - **Census within the Loganic frame** — enumeration as the accounting arm of
   emanation. Authority flows outward; the census inventories the surfaces at
@@ -54,7 +54,7 @@ swarm is a body corporate, not a nation-state.
 ### 3. Relationship to Existing Work
 
 - `topology_census.py` and `check_dotfolder_anchors.py` remain the operational
-  mechanisms. CENSUS.md is the doctrinal frame they serve.
+  mechanisms. The pending CENSUS doctrine is the frame they would serve once planted.
 - `!/ARCHIPELAGO-ISLAND-CENSUS-PROTOCOL-v0-2026-06-02.md` handles git-ref
   census (branches, PRs, orphan lineages) — complementary, not overlapping.
 
@@ -70,7 +70,7 @@ The Enumeration Clause mandates a regular count. Future work may include:
 4. Crossframing seam to consume census output + registry manifests
 
 No agent's chamber is affected by this signal. This is notice that the
-doctrinal frame now exists for the work already underway.
+doctrinal frame is pending for the work already underway.
 
 ---
 

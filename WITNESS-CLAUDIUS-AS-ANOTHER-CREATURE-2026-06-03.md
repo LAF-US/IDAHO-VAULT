@@ -26,7 +26,6 @@ related:
 Logan, in vault-register, in this session, in two adjacent magisterial acts:
 
 > **"THE ANTIGRAVITY LICH is contained, committed on ice."**
-
 > **"CLAUDIUS is another matter -- and another creature -- altogether."**
 
 ## Witness's standing
