@@ -27,10 +27,33 @@ def _json(result: gh_cli.GhResult) -> list[dict] | dict | None:
 def _repo() -> tuple[str, str]:
     """Split ``GITHUB_REPOSITORY`` into ``(owner, repo)``."""
     slug = os.environ.get("GITHUB_REPOSITORY", "")
+    if slug not in ("LAF-US/IDAHO-VAULT",):
+        raise RuntimeError(f"This reconciler is scoped to LAF-US/IDAHO-VAULT, got: {slug!r}")
     owner, _, name = slug.partition("/")
-    if not owner or not name:
-        raise RuntimeError("GITHUB_REPOSITORY is required, as owner/repo.")
     return (owner, name)
+
+
+def _recurring_title(title: str) -> str:
+    """Return ``title`` if it names a recurring issue this reconciler owns.
+
+    This is a find-or-create-by-title driver, so the title is an identifier rather
+    than free text — every workflow passes one of these five, and an unrecognized one
+    would open a stray issue nothing would ever reconcile or close. Adding a recurring
+    report means adding it here, which also keeps the set greppable in one place.
+
+    The literals are written inline, and the checked value is what gets returned and
+    used, because that is the shape a comparison-against-constants takes: it is what
+    keeps an arbitrary title from travelling onward into a command line.
+    """
+    if title not in (
+        "[Branch Garden] Weekly report",
+        "[Large File Watchdog] Weekly report",
+        "[Looker Worklist] Review-thread triage census",
+        "[Metadata Survey] Weekly report",
+        "[PR Loop Watchdog] Reconciliation report",
+    ):
+        raise ValueError(f"Not a recurring issue this reconciler owns: {title!r}")
+    return title
 
 
 def _strip_fingerprint(body: str) -> str:
@@ -106,7 +129,8 @@ def create_issue(title: str, body_file: Path) -> int:
     """Open the issue and return its number, parsed from the URL gh prints."""
     owner, repo = _repo()
     result = gh_cli.issue_create(
-        owner=owner, repo=repo, title=title, body_file=str(body_file)
+        owner=owner, repo=repo, title=title,
+        body=body_file.read_text(encoding="utf-8"),
     )
     issue_url = result.stdout.strip()
     if "/issues/" not in issue_url:
@@ -117,7 +141,10 @@ def create_issue(title: str, body_file: Path) -> int:
 def comment_issue(issue_number: int, body_file: Path) -> None:
     """Append the current report to an existing issue as a comment."""
     owner, repo = _repo()
-    gh_cli.issue_comment_file(issue_number, owner=owner, repo=repo, body_file=str(body_file))
+    gh_cli.issue_comment(
+        issue_number, owner=owner, repo=repo,
+        body=body_file.read_text(encoding="utf-8"),
+    )
 
 
 def close_issue(issue_number: int) -> None:
@@ -140,6 +167,7 @@ def reconcile_issue(
     (findings identical to what is already there, by fingerprint), and ``closed``
     (no findings left). Writes both to ``GITHUB_OUTPUT`` when the workflow sets it.
     """
+    title = _recurring_title(title)
     issue_number = find_open_issue_number(title)
     issue_action = "noop"
 
