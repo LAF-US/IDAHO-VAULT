@@ -157,7 +157,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         def _flat_labels(ft: str | None, dp: str | None) -> tuple[str, ...]:
             # Flat schema: a fired axis stamps one label; `—` on an axis stamps nothing.
             return tuple(
-                label for label in (ft_label.get(ft), dp_label.get(dp)) if label
+                label for label in (ft_label.get(ft or ""), dp_label.get(dp or "")) if label
             )
 
         AUTO, HOLD, NEVER = "auto", "review-hold", "never"
