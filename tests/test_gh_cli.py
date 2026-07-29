@@ -116,6 +116,22 @@ class ArgvTest(TestCase):
             with self.assertRaises(ValueError):
                 gh_cli.pr_merge(5, method=method)
 
+    def test_pr_merge_refuses_arm_and_disarm_together(self) -> None:
+        with self.assertRaises(ValueError):
+            gh_cli.pr_merge(5, auto=True, disable_auto=True)
+
+    def test_label_operations_reject_a_name_argv_would_read_as_a_flag(self) -> None:
+        # gh is Cobra-based: a leading dash is parsed as a flag before it is considered
+        # a positional or a flag value, so this is a parse error, not an odd label.
+        for name in ("-force", "--delete", ""):
+            with self.subTest(name=name):
+                with self.assertRaises(ValueError):
+                    gh_cli.label_create(name, color="0E8A16", description="d")
+                with self.assertRaises(ValueError):
+                    gh_cli.pr_edit(5, add_label=name)
+                with self.assertRaises(ValueError):
+                    gh_cli.pr_edit(5, remove_label=name)
+
     def test_pr_list_open(self) -> None:
         argv, _ = _argv(gh_cli.pr_list_open, "LAF-US", "IDAHO-VAULT")
         self.assertEqual(
