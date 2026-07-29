@@ -97,7 +97,7 @@ Mevolent is a rather violent and cruel individual as shown in *Kingdom of the Wi
 - In Mevolent's first appearance, he heavily implies that he has eaten newborns before, but only those that have had it coming, though this was most likely meant in morbid jest.
 - The extreme power that Mevolent was supposed to have wielded has also led to speculation that he both knows, and has sealed, his True Name. However, this theory is disproven in *Kingdom of the Wicked*, wherein Darquesse cannot sense any trace of knowledge about Mevolent's True Name within him.
 - There will be more information given on Mevolent's death in the main dimension and on his victory in the alternative one during the course of Phase 2.[^3]
- 	- Alternative Mevolent may come to the main dimension and try to conquer it as well.[^4]
+  - Alternative Mevolent may come to the main dimension and try to conquer it as well.[^4]
 - Mevolent is more powerful than [Lord Vile](https://skulduggery.fandom.com/wiki/Lord_Vile "Lord Vile").[^5]
 
 ## Appearances

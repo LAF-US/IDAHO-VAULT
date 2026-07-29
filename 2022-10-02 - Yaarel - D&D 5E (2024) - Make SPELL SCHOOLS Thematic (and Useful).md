@@ -1102,10 +1102,10 @@ So if you stood outside a dead magic zone you could still launch acid arrows int
 > [Edwin Suijkerbuijk said:](https://www.enworld.org/goto/post?id=8790880)
 >
 > in older editions like ADnD 2nd certain spells had some advantages based on their school.  
-> 
+>
 > Acid arrow was a conjuration.  
 > Creating a vaguely arrow shaped blob of acid that was flying toward your target.  
-> 
+>
 > But only conjuring the blob of acid moving at speed was magical, the blob of acid itself was not.  
 > So if you stood outside a dead magic zone you could still launch acid arrows into the dead magic zone.
 >

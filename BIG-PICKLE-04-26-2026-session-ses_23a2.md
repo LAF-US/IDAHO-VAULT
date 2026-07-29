@@ -2185,24 +2185,24 @@ PR Lifecycle: Some jobs were not successful
 View workflow run
 
 Status Job Annotations
-reconcile 
+reconcile
 PR Lifecycle / reconcile
 Failed in 6 seconds
 
 annotations for PR Lifecycle / reconcile 2
-label-handler 
+label-handler
 PR Lifecycle / label-handler
 Skipped
 
-create-pr 
+create-pr
 PR Lifecycle / create-pr
 Skipped
 
-auto-merge 
+auto-merge
 PR Lifecycle / auto-merge
 Skipped
 
-cleanup 
+cleanup
 PR Lifecycle / cleanup
 Skipped
 

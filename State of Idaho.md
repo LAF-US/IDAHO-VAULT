@@ -202,8 +202,8 @@ one of the United States of America, organized under the Idaho Constitution from
 # Government
 
 - Executive Department
- 	- Constitutional Officers - Governor, Lieutenant Governor, Attorney General, Secretary of State, State Controller, State Treasurer, & Superintendent of Public Instruction
- 	- Executive Departments - Department of Administration, Department of Agriculture, Department of Commerce, Department of Labor, Department of Correction, Department of Environmental Quality, Department of Finance, Department of Fish and Game, Department of Health and Welfare, Department of Insurance, Department of Juvenile Corrections, Department of Transportation, Department of Lands, Department of Parks and Recreation, Department of Revenue and Taxation, Department of Water Resources, Department of Self-Governing Agencies, Industrial Commission, Idaho State Police
+  - Constitutional Officers - Governor, Lieutenant Governor, Attorney General, Secretary of State, State Controller, State Treasurer, & Superintendent of Public Instruction
+  - Executive Departments - Department of Administration, Department of Agriculture, Department of Commerce, Department of Labor, Department of Correction, Department of Environmental Quality, Department of Finance, Department of Fish and Game, Department of Health and Welfare, Department of Insurance, Department of Juvenile Corrections, Department of Transportation, Department of Lands, Department of Parks and Recreation, Department of Revenue and Taxation, Department of Water Resources, Department of Self-Governing Agencies, Industrial Commission, Idaho State Police
 - Legislative Department - Idaho Legislature (Idaho House of Representatives & Idaho Senate)
 - Judicial Department - Idaho Supreme Court & unified State Court System
 

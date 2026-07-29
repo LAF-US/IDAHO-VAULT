@@ -108,6 +108,7 @@ Before generating tasks, check for applicable guidelines:
 1. **Scan `$KIT_ROOT/skills/guidelines/`** and `<workspace root>/.github/skills/guidelines/` for matching technology patterns from plan.md
 
 > You should scan once if they're the same directory, otherwise scan them independently and merge results.
+
 1. **For each matching guideline**:
    - Load the SKILL.md migration checklist
    - Map checklist items to task phases
