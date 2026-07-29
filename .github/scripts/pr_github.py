@@ -3,16 +3,16 @@
 GraphQL execution, the pull-request fetch, and the authenticated-actor lookup —
 the I/O layer that both the review-state projector and the thread-witness looker
 need (#600 §5 shared lib: "_fetch_pr, thread walking … imported by both"). Built
-on ``gh_cli.run``; it depends on nothing in the engine, so both engines import it
-and neither owns it. Moved verbatim from ``review_feedback_loop.py`` — no
-behavior change.
+on ``gh_cli``'s typed operations; it depends on nothing in the engine, so both
+engines import it and neither owns it. Moved verbatim from
+``review_feedback_loop.py`` — no behavior change.
 """
 
 from __future__ import annotations
 
 import json
 
-from gh_cli import run
+import gh_cli
 
 
 def _graphql(query: str, **variables: object) -> dict:
@@ -21,13 +21,7 @@ def _graphql(query: str, **variables: object) -> dict:
     Integer variables are passed with ``-F`` (typed); all others with ``-f`` (string).
     Raises ``RuntimeError`` if the response carries GraphQL ``errors``.
     """
-    cmd = ["gh", "api", "graphql", "-f", f"query={query}"]
-    for key, value in variables.items():
-        if isinstance(value, int):
-            cmd.extend(["-F", f"{key}={value}"])
-        else:
-            cmd.extend(["-f", f"{key}={value}"])
-    result = run(cmd)
+    result = gh_cli.graphql(query, **variables)
     payload = json.loads(result.stdout or "{}")
     errors = payload.get("errors")
     if errors:
