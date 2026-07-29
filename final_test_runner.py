@@ -118,8 +118,7 @@ for test_file in TEST_FILES:
             capture_output=True,
             text=True,
             timeout=60,
-            cwd=os.getcwd()
-        )
+            cwd=os.getcwd(), check=False)
         
         if result.returncode == 0:
             print("✓ PASS")

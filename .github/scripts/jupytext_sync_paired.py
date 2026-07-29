@@ -79,8 +79,7 @@ def main(argv: list[str]) -> int:
         # strict one-twin-path-per-line contract the pre-commit hook word-splits into `git add`.
         # jupytext chatter on our stdout would be handed to `git add` as bogus paths.
         proc = subprocess.run(
-            ["jupytext", "--sync", "--", notebook], capture_output=True, text=True
-        )
+            ["jupytext", "--sync", "--", notebook], capture_output=True, text=True, check=False)
         if proc.stderr:
             sys.stderr.write(proc.stderr)
         if proc.returncode != 0:
