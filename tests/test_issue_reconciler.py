@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import importlib.util
+import sys
 import tempfile
 import unittest
 from pathlib import Path
@@ -9,11 +10,19 @@ from unittest import mock
 
 def _load_issue_reconciler_module():
     project_root = Path(__file__).resolve().parents[1]
-    script_path = project_root / ".github" / "scripts" / "issue_reconciler.py"
+    scripts_dir = project_root / ".github" / "scripts"
+    script_path = scripts_dir / "issue_reconciler.py"
     spec = importlib.util.spec_from_file_location("issue_reconciler_test_module", script_path)
     module = importlib.util.module_from_spec(spec)
     assert spec.loader is not None
-    spec.loader.exec_module(module)
+    # The reconciler imports gh_cli as a sibling module; loading it by file path needs
+    # the scripts dir importable. Scope the mutation to the exec, as the engine tests do.
+    original_sys_path = list(sys.path)
+    sys.path.insert(0, str(scripts_dir))
+    try:
+        spec.loader.exec_module(module)
+    finally:
+        sys.path[:] = original_sys_path
     return module
 
 
@@ -85,8 +94,8 @@ class IssueReconcilerTest(unittest.TestCase):
         ), mock.patch.object(
             issue_reconciler, "find_open_issue_number", return_value=41
         ), mock.patch.object(
-            issue_reconciler, "gh"
-        ) as gh, mock.patch.object(
+            issue_reconciler.gh_cli, "issue_comment"
+        ) as issue_comment, mock.patch.object(
             issue_reconciler, "close_issue"
         ) as close_issue:
             body_file = Path(tempdir) / "report.md"
@@ -99,14 +108,11 @@ class IssueReconcilerTest(unittest.TestCase):
                 resolved_comment="Resolved automatically.",
             )
 
-        gh.assert_called_once_with(
-            "issue",
-            "comment",
-            "41",
-            "--repo",
-            "LAF-US/IDAHO-VAULT",
-            "--body",
-            "Resolved automatically.",
+        issue_comment.assert_called_once_with(
+            41,
+            owner="LAF-US",
+            repo="IDAHO-VAULT",
+            body="Resolved automatically.",
         )
         close_issue.assert_called_once_with(41)
         self.assertEqual(report["issue_action"], "closed")

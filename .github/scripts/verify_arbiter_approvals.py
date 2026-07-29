@@ -19,13 +19,7 @@ ARBITER_LABEL_PREFIX = "arbiter/"
 
 
 def _graphql(query, **variables):
-    cmd = ["gh", "api", "graphql", "-f", f"query={query}"]
-    for key, value in variables.items():
-        if isinstance(value, int):
-            cmd.extend(["-F", f"{key}={value}"])
-        else:
-            cmd.extend(["-f", f"{key}={value}"])
-    result = gh_cli.run(cmd)
+    result = gh_cli.graphql(query, **variables)
     payload = json.loads(result.stdout or "{}")
     errors = payload.get("errors")
     if errors:
@@ -114,12 +108,9 @@ def main():
 
     if args.pr_number <= 0:
         sys.exit(f"--pr-number must be a positive integer, got: {args.pr_number}")
-    # Re-derive through int() at the point of use: this is a pure digit-string
-    # conversion (raises ValueError on anything non-numeric), so the value
-    # handed to gh_cli.run() argv can never carry an injected flag/argument --
-    # unlike the bare argparse-sourced int, an explicit int() call here is a
-    # conversion CodeQL's command-injection query recognizes as a boundary.
-    pr_number = int(args.pr_number)
+    # gh_cli's typed operations re-derive every PR number through int() before it
+    # reaches argv, so the value below cannot carry a flag or a second argument.
+    pr_number = args.pr_number
 
     if args.repo != _KNOWN_REPO:
         sys.exit(f"--repo must be {_KNOWN_REPO!r} (arbiter verification is scoped to this repository), got: {args.repo!r}")

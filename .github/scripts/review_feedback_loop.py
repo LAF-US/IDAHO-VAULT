@@ -52,7 +52,7 @@ from pr_threads import (  # shared thread-analysis vocabulary (#600 §5)
 # (through `_thread_resolution_disposition`), so the engine's surface stays honest
 # to what it uses. Their unit tests reference them from pr_threads directly.
 
-from gh_cli import run as _run
+import gh_cli
 from pr_github import _fetch_pr, _graphql, _viewer_login
 
 
@@ -334,15 +334,7 @@ def _update_branch(owner: str, repo: str, pr_number: int) -> tuple[bool, str | N
         time this ran, or a workflows-permission error on a workflow-touching PR — the same
         failure mode ``is_wf_perm_failure`` buckets separately in the bash sweep)."""
     try:
-        _run(
-            [
-                "gh",
-                "api",
-                "--method",
-                "PUT",
-                f"repos/{owner}/{repo}/pulls/{pr_number}/update-branch",
-            ]
-        )
+        gh_cli.api_pr_update_branch(owner, repo, pr_number)
     except RuntimeError as exc:
         return (False, str(exc))
     return (True, None)
@@ -391,7 +383,7 @@ def _arm_auto_merge(owner: str, repo: str, pr_number: int) -> tuple[bool, str | 
             # ("Cannot use `-d` or `--delete-branch` when merge queue enabled"),
             # which crashed every arm attempt. Head-branch cleanup belongs to the
             # repo's delete-on-merge behavior / branch-cleanup workflow, not here.
-            _run(["gh", "pr", "merge", str(pr_number), "--merge", "--auto"])
+            gh_cli.pr_merge(pr_number, auto=True)
         except RuntimeError as exc:
             if not any(fragment in str(exc) for fragment in AUTO_MERGE_AUTHZ_FRAGMENTS):
                 raise
@@ -435,7 +427,7 @@ def _maybe_arm_auto_merge(
         # so disable the auto-merge we just enabled and report failure rather than leave
         # an un-trackable armed PR.
         try:
-            _run(["gh", "pr", "edit", str(pr_number), "--add-label", DEFAULT_AUTO_MERGE_LABEL])
+            gh_cli.pr_edit(pr_number, add_label=DEFAULT_AUTO_MERGE_LABEL)
         except RuntimeError as exc:
             _disable_auto_merge(pr_number)
             return {
@@ -890,19 +882,7 @@ def _classify_pr_for_looker(
 
 
 def _ensure_label(name: str, color: str, description: str) -> None:
-    _run(
-        [
-            "gh",
-            "label",
-            "create",
-            name,
-            "--color",
-            color,
-            "--description",
-            description,
-            "--force",
-        ]
-    )
+    gh_cli.label_create(name, color=color, description=description)
 
 
 def ensure_labels() -> None:
@@ -912,17 +892,17 @@ def ensure_labels() -> None:
 
 def _edit_label(pr_number: int, *, add: str | None = None, remove: str | None = None) -> None:
     if add:
-        _run(["gh", "pr", "edit", str(pr_number), "--add-label", add], check=False)
+        gh_cli.pr_edit(pr_number, add_label=add, check=False)
     if remove:
-        _run(["gh", "pr", "edit", str(pr_number), "--remove-label", remove], check=False)
+        gh_cli.pr_edit(pr_number, remove_label=remove, check=False)
 
 
 def _disable_auto_merge(pr_number: int, *, check: bool = False) -> None:
-    _run(["gh", "pr", "merge", str(pr_number), "--disable-auto"], check=check)
+    gh_cli.pr_merge(pr_number, disable_auto=True, check=check)
 
 
 def _comment(pr_number: int, body: str) -> None:
-    _run(["gh", "pr", "comment", str(pr_number), "--body", body])
+    gh_cli.pr_comment(pr_number, body)
 
 
 def _csv_env(name: str, default: str = "") -> set[str]:
@@ -1071,13 +1051,7 @@ def _classify_pr_pair(owner: str, repo: str, pr_number: int) -> tuple[str | None
     armed off a failed classification; an unmarked PR holds)."""
     import classify_paths  # sibling module; scripts dir is on sys.path in script + test runs
 
-    result = _run(
-        [
-            "gh", "api", "--paginate",
-            f"repos/{owner}/{repo}/pulls/{pr_number}/files",
-            "--jq", ".[].filename",
-        ]
-    )
+    result = gh_cli.api_pr_files(owner, repo, pr_number)
     paths = [line.strip() for line in result.stdout.splitlines() if line.strip()]
     filetype = None
     depth = None
@@ -1366,21 +1340,7 @@ def _resolve_outdated_resolvable_threads(
 
 def _list_open_pr_numbers(owner: str, repo: str) -> list[int]:
     open_prs = json.loads(
-        _run(
-            [
-                "gh",
-                "pr",
-                "list",
-                "--repo",
-                f"{owner}/{repo}",
-                "--state",
-                "open",
-                "--limit",
-                "1000",
-                "--json",
-                "number",
-            ]
-        ).stdout
+        gh_cli.pr_list_open(owner, repo).stdout
         or "[]"
     )
     return [int(pr_row["number"]) for pr_row in open_prs]
@@ -1792,30 +1752,19 @@ def _matches_claim(body: str) -> bool:
 
 def _fetch_pr_merge_state(owner: str, repo: str, pr_number: int) -> dict:
     """Fetch the institutional state fields we compare claims against."""
-    cmd = [
-        "gh",
-        "pr",
-        "view",
-        str(pr_number),
-        "--repo",
-        f"{owner}/{repo}",
-        "--json",
-        "mergeable,mergeStateStatus,statusCheckRollup,isDraft,number",
-    ]
-    result = _run(cmd)
+    result = gh_cli.pr_view(
+        pr_number,
+        owner=owner,
+        repo=repo,
+        json_fields="mergeable,mergeStateStatus,statusCheckRollup,isDraft,number",
+    )
     return json.loads(result.stdout or "{}")
 
 
 def _list_pr_comment_bodies(owner: str, repo: str, pr_number: int) -> list[str]:
     """Return raw comment bodies for the PR (issue-style comments)."""
-    cmd = [
-        "gh",
-        "api",
-        f"repos/{owner}/{repo}/issues/{pr_number}/comments",
-        "--paginate",
-    ]
     try:
-        result = _run(cmd)
+        result = gh_cli.api_issue_comments(owner, repo, pr_number)
     except RuntimeError:
         return []
     try:
