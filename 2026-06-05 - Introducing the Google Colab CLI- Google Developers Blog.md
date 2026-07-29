@@ -44,16 +44,16 @@ Here is how an Agent can use the Colab CLI for a real-world ML workflow:
 The CLI can be used to run a real QLoRA pipeline that runs end-to-end with just a handful of commands. Offload heavy computational lifting to a GPU without typing a single cloud provisioning command by Instructing Antigravity (or your agent of choice) to build a remote fine-tuning job. In this scenario, we ask our agent to use the Colab CLI to fine-tune [google/gemma-3-1b-it](https://huggingface.co/google/gemma-3-1b-it) on a [Text-to-SQL dataset](https://huggingface.co/datasets/philschmid/gretel-synthetic-text-to-sql) to make the model better at writing SQL queries.
 
 **The Antigravity prompt:**  
-Use the Colab CLI (https://github.com/googlecolab/google-colab-cli) to fine-tune Gemma 3 1B using QLoRA. Provision a Colab T4 GPU instance, install the necessary ML packages (transformers, datasets, peft, trl, etc.), run my local ~ [finetune\_run](https://github.com/googlecolab/google-colab-cli/blob/main/examples/finetune_run.py)[.py](https://gist.github.com/spencersgoogle/05be7d5b8a86785284a72032d11e7214) script remotely, download the resulting safetensors adapter, save the notebook log, and cleanup.
+Use the Colab CLI (<https://github.com/googlecolab/google-colab-cli>) to fine-tune Gemma 3 1B using QLoRA. Provision a Colab T4 GPU instance, install the necessary ML packages (transformers, datasets, peft, trl, etc.), run my local ~ [finetune\_run](https://github.com/googlecolab/google-colab-cli/blob/main/examples/finetune_run.py)[.py](https://gist.github.com/spencersgoogle/05be7d5b8a86785284a72032d11e7214) script remotely, download the resulting safetensors adapter, save the notebook log, and cleanup.
 
 **Antigravity executes:**
 
 ```shell
-$ colab new --gpu T4
-$ colab install transformers datasets peft trl bitsandbytes accelerate
-$ colab exec -f finetune_run.py
-$ colab log --output gemma_finetune_log.ipynb
-$ colab stop
+colab new --gpu T4
+colab install transformers datasets peft trl bitsandbytes accelerate
+colab exec -f finetune_run.py
+colab log --output gemma_finetune_log.ipynb
+colab stop
 ```
 
 Antigravity also uses the "colab download" command to download the adapter model, adapter config, tokenizer config, and tokenizer, which can be used to load and run your fine-tuned model locally. Now you have a remotely fine-tuned model ready to serve from your local device!

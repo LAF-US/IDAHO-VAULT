@@ -8,6 +8,6 @@ related:
 - Shoshone-Paiute Tribes
 authority: LOGAN
 ---
-Shoshone-Paiute Tribes lands in Owyhee County and Nevada 
+Shoshone-Paiute Tribes lands in Owyhee County and Nevada
 
-Riddle, Owyhee 
+Riddle, Owyhee

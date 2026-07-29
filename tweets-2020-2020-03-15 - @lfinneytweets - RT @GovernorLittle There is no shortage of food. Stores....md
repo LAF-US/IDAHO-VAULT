@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-RT @GovernorLittle: There is no shortage of food. Stores will restock, so please don’t hoard. 
+RT @GovernorLittle: There is no shortage of food. Stores will restock, so please don’t hoard.
 
 The water supply is clean and safe to drink…
 

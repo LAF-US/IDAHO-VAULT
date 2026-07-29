@@ -36,6 +36,7 @@ The overwhelming majority of files flagged as "unique" in other shards were line
 divergences (CRLF vs LF) rather than missing content. Genuine gaps were small.
 
 ### Files confirmed as identical (different hash, same content)
+
 All `.github/workflows/*.yml`, `.github/scripts/*.py`, `requirements.txt`, `uv.lock`,
 `pyproject.toml`, most `.obsidian/` configs, and the bulk of vault notes — same content,
 Windows CRLF in pushable/agent-fix vs LF in origin/main.
@@ -43,12 +44,14 @@ Windows CRLF in pushable/agent-fix vs LF in origin/main.
 ### Genuinely unique files copied into vault (commit f09f1037)
 
 **From `IDAHO-VAULT-pushable`:**
+
 - `LAF-USB.md` — LAF Universal Sync Bus concept note
 - `USB.md` — USB framework alias note
 - `Universal Sync Bus.md` — USB framework alias note
 - `JUPYTER-NOTEBOOKS.md` — notebook infrastructure reference
 
 **From `IDAHO-VAULT-agent-fix` / `IDAHO-VAULT-pr-high`:**
+
 - `!/1password-preflight.ps1` — 1Password preflight check script
 - `!/credential-sweep.ps1` — credential sweep utility
 - `!/sbp-blackboard.json` — SBP blackboard state
@@ -69,6 +72,7 @@ Windows CRLF in pushable/agent-fix vs LF in origin/main.
 - `.obsidian/snippets/custom-admonitions.acaba3.css`
 
 **Also available for review (not auto-merged):**
+
 - `VAULT-CONVENTIONS.from-pushable-2026-05-08.md` — pushable version of VAULT-CONVENTIONS
   with aligned markdown table formatting. Content identical to current `VAULT-CONVENTIONS.md`;
   formatting is cleaner. Logan may wish to adopt and delete this file.
@@ -78,16 +82,19 @@ Windows CRLF in pushable/agent-fix vs LF in origin/main.
 ## Version Conflict Resolution
 
 ### `swarm.json`
+
 - Vault (47,415 bytes, modified 2026-05-16): **AUTHORITATIVE** — most recent, largest,
   includes .yrael/ registration from this session's "Windows Claude" commit.
 - Pushable (37,316 bytes, May 8): older local working copy — superseded.
 - Agent-fix (29,120 bytes, April 23): oldest — superseded.
 
 ### `AGENTS.md`
+
 - Vault and pushable: **byte-for-byte identical** (7,935 bytes each). No conflict.
 - Agent-fix / pr-high (5,892 bytes, April 23): older, smaller — superseded.
 
 ### `VAULT-CONVENTIONS.md`
+
 - Vault (33,765 bytes, from origin/main): authoritative committed version.
 - Pushable (35,975 bytes, May 8): same content, aligned table formatting, more whitespace-clean.
   Preserved as `VAULT-CONVENTIONS.from-pushable-2026-05-08.md` for Logan's optional adoption.
@@ -100,7 +107,7 @@ Windows CRLF in pushable/agent-fix vs LF in origin/main.
 **Method:** `git fetch` into `refs/preserved/history-rewrite/` namespace  
 **All objects now accessible in the vault's git object store.**
 
-### Preserved branches (28):
+### Preserved branches (28)
 
 | Branch | Head commit | Notes |
 | --- | --- | --- |
@@ -152,6 +159,7 @@ Content is lost. This is documented here as the permanent record.
 ```
 
 Local main is 3 commits ahead of origin/main:
+
 1. `309fe6e9` Windows Claude — .yrael/ anchor, session files
 2. `f09f1037` fragmentation recovery pass partial — 23 unique files from shards
 3. `3b16a100` Merge remote-tracking branch 'origin/main' — absorbed github-actions commits

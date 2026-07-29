@@ -7,7 +7,7 @@ created: 2026-04-14
 ---
 | “ | *Tea should be bitter as wormwood, and as sharp as a two-edged sword.* | ” |
 | --- | --- | --- |
-|  | — [V.F.D.](https://snicket.fandom.com/wiki/Volunteer_Fire_Department "Volunteer Fire Department") proverb |
+| | — [V.F.D.](https://snicket.fandom.com/wiki/Volunteer_Fire_Department "Volunteer Fire Department") proverb |
 
 The **Sugar Bowl**, also known as the **Vessel For Disaccharides**, is a mysterious yet prominent object that was mentioned repeatedly in *[A Series of Unfortunate Events](https://snicket.fandom.com/wiki/A_Series_of_Unfortunate_Events "A Series of Unfortunate Events").*
 
@@ -54,10 +54,10 @@ Lemony Snicket: The Unauthorized Autobiography's index entry for the sugar bowl 
 | --- | --- | --- |
 
 - The "vess" part can be assumed to be Vessel For Disaccharides. [^4] Whether this is a reference to the same sugar bowl that was stolen from Esmé Squalor, or simply evidence that the use of sugar bowls became common in VFD to provide storage of sensitive items, is not known.
-	- However, there would be a contradiction in the timeline if this was what was truly in the Sugar Bowl; Bertrand and Beatrice did not leave the island with a cure until she was pregnant with Violet, but the "Sugar Bowl secret" was mentioned in a VFD transcript meeting before then, and sugar bowls are mentioned to be at Lemony and Beatrice's wedding venue in a secret message.[^5] It also would not explain why Esmé felt entitled to the sugar bowl, although not why it would be considered valuable, as the Fire-Starting side of VFD did not know the Medusoid Mycelium was still around until *[The Grim Grotto](https://snicket.fandom.com/wiki/The_Grim_Grotto "The Grim Grotto")*.
+  - However, there would be a contradiction in the timeline if this was what was truly in the Sugar Bowl; Bertrand and Beatrice did not leave the island with a cure until she was pregnant with Violet, but the "Sugar Bowl secret" was mentioned in a VFD transcript meeting before then, and sugar bowls are mentioned to be at Lemony and Beatrice's wedding venue in a secret message.[^5] It also would not explain why Esmé felt entitled to the sugar bowl, although not why it would be considered valuable, as the Fire-Starting side of VFD did not know the Medusoid Mycelium was still around until *[The Grim Grotto](https://snicket.fandom.com/wiki/The_Grim_Grotto "The Grim Grotto")*.
 - The Sugar Bowl is theorized to be empty (but believed to have contained something a long time ago) and is now merely a figure of power. This could be relevant to the mention of a "sugar bowl secret" in VFD lore,[^5] and explain why nobody ever divulges its contents.
-	- Part of this theory is that the Sugar Bowl Secret was used as a way to motivate apprentices, as well as keep busy to prevent them from finding information their superiors didn't want them to know, with the truth of it being empty being revealed or understood upon graduation. However, after the Schism, Volunteers failed to reveal the truth to their apprentices, causing them to believe that it was, indeed, valuable.[^6]
-		- This ties into the theory that the sugar bowl is merely a MacGuffin, a plot device whose contents of it are actually completely irrelevant and whose function is simply to be a much sought-after object that motivates characters and drives the story along.
+  - Part of this theory is that the Sugar Bowl Secret was used as a way to motivate apprentices, as well as keep busy to prevent them from finding information their superiors didn't want them to know, with the truth of it being empty being revealed or understood upon graduation. However, after the Schism, Volunteers failed to reveal the truth to their apprentices, causing them to believe that it was, indeed, valuable.[^6]
+    - This ties into the theory that the sugar bowl is merely a MacGuffin, a plot device whose contents of it are actually completely irrelevant and whose function is simply to be a much sought-after object that motivates characters and drives the story along.
 - There is a theory which states that V.F.D hid microphones in Sugar Bowls to record conversations (once such instance appeared in Lemony Snicket: The Unauthorised Autobiography with Mr. Poe). The Sugar Bowl could contain a highly important one, perhaps something that would prove Lemony's innocence.[^7]
 - One theory is that the sugar bowl may contain the poison darts Beatrice used to kill Olaf's parents.
 

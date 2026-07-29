@@ -45,7 +45,7 @@ I had assumed he was a simple man of simple means, but the truth is, Bonner’s 
 
 The only mystery left is whether E.L. Bonner ever actually operated the “Bonner’s ferry” himself during the months he was here or, like most of his business investments, did he “entrust the execution of the plans and details to others?
 
-The Bonner County History Museum at 611 S. Ella Ave., Sandpoint, welcomes visitors Tuesday-Friday, 10 a.m. to 4 p.m. It’s also open the first Saturday each month from 10 a.m. to 2 p.m. with free admission. 208-263-2344, www.bonnercountyhistory.org
+The Bonner County History Museum at 611 S. Ella Ave., Sandpoint, welcomes visitors Tuesday-Friday, 10 a.m. to 4 p.m. It’s also open the first Saturday each month from 10 a.m. to 2 p.m. with free admission. 208-263-2344, <www.bonnercountyhistory.org>
 
 ![](https://assets.isu.pub/document-structure/230518231939-439065e206d13f2d2716e15518e26b36/v1/d54fcc295ad4eabec601ee3eef32f349.jpeg?width=720&quality=85%2C50)
 

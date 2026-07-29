@@ -15,7 +15,7 @@ type: reference
 ## Secrets Currently in Use
 
 | Secret Name | Type | Used By | Current Status | Next Action |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | `GitHub Personal Access Token` | Personal Access Token | GitHub API (Linear sync, scraper) | ❌ Not created | Create in 1Password + migrate from GitHub Secrets |
 | `GitHub SSH Key` | SSH Key (Ed25519) | Git commits, pushes, SSH auth | ❌ Not created | Generate or import + register in 1Password |
 | `Linear API Key` | API Key | Linear workspace sync (GitHub Actions) | ⚠️ In GitHub Secrets | Migrate from GitHub Secrets → 1Password |
@@ -30,7 +30,7 @@ type: reference
 ## Credential Rotation Schedule
 
 | Secret | Rotation Frequency | Last Rotated | Next Due |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | GitHub PAT | 90 days | — | — |
 | SSH Key | Annual or on compromise | — | — |
 | Linear API Key | 180 days | — | — |
@@ -66,6 +66,7 @@ type: reference
    - Save
 
 2. **In GitHub Actions workflow:**
+
    ```yaml
    - name: Fetch Secret from 1Password
      run: |
@@ -82,6 +83,7 @@ type: reference
 ## How to Rotate a Secret
 
 1. **Generate new credential:**
+
    ```bash
    op generate --length 32 --symbols  # For passwords
    ssh-keygen -t ed25519 -f ~/.ssh/id_new  # For SSH keys
@@ -103,6 +105,7 @@ type: reference
    - Update "Next Due" date
 
 5. **Confirm in workflows:**
+
    ```bash
    op item get "[Secret Name]"  # Verify new value is returned
    ```
@@ -114,7 +117,7 @@ type: reference
 ### If a Secret is Compromised
 
 1. **Immediately revoke** in source system (GitHub, Linear, service provider)
-2. **Generate replacement** 
+2. **Generate replacement**
 3. **Update in 1Password**
 4. **Rotate in all dependent systems**
 5. **Audit logs** — check for unauthorized access in GitHub Actions, Linear, etc.
@@ -150,6 +153,7 @@ op vault get IDAHO-VAULT
 ## Testing
 
 **Local test (after setup):**
+
 ```bash
 op item get "GitHub Personal Access Token" --fields password
 # Should return the token without errors
@@ -157,6 +161,7 @@ op item get "GitHub Personal Access Token" --fields password
 
 **GitHub Actions test:**
 Add a test workflow step:
+
 ```yaml
 - name: Test 1Password Access
   run: |
