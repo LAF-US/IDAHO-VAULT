@@ -1,5 +1,5 @@
 {
-  "promptDelete": false,
+  "promptDelete": true,
   "openBehavior": "daily",
   "alwaysUpdateLinks": true,
   "showUnsupportedFiles": true,
