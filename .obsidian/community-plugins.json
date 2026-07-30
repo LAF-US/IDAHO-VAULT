@@ -1,94 +1,51 @@
 [
+  "vault-inspector",
+  "obsidian-topic-linking",
   "obsidian-advanced-uri",
   "auto-keyword-linker",
   "auto-moc",
   "backlink-cache",
-  "beautiful-contact-cards",
-  "ai-templater",
-  "dataview",
+  "days-since",
+  "breadcrumbs",
+  "consistent-attachments-and-links",
+  "find-unlinked-files",
   "mcp-tools",
   "move-cursor-on-startup",
-  "breadcrumbs",
-  "dataview-serializer",
-  "dataview-autocompletion",
-  "text-extractor",
+  "obsidian-footnotes",
   "map-of-content",
-<<<<<<< HEAD
-<<<<<<< HEAD
   "obsidian-mind-map",
-=======
->>>>>>> 4d3d06e2fac5b12be035d897a4635d9be5baf1bd
-=======
->>>>>>> 4d3d06e2fac5b12be035d897a4635d9be5baf1bd
   "nldates-obsidian",
-  "templater-obsidian",
-  "obsidian-tasks-plugin",
-  "dataview-properties",
-  "days-since",
-  "review-obsidian",
-  "obsidian-file-cooker",
+  "obisidian-note-linker",
+  "phone-to-roam-to-obsidian",
   "roygbiv-day-accent",
-  "frontmatter-markdown-links",
-  "tag-wrangler",
-<<<<<<< HEAD
-<<<<<<< HEAD
-  "obsidian-full-calendar",
-=======
->>>>>>> 4d3d06e2fac5b12be035d897a4635d9be5baf1bd
-=======
->>>>>>> 4d3d06e2fac5b12be035d897a4635d9be5baf1bd
-  "homepage",
   "settings-search",
-  "smart-connections",
-  "obsidian-local-rest-api",
+  "homepage",
+  "obsidian-kanban",
+  "links",
   "obsidian-linter",
-  "smart-context",
-  "smart-rename",
-  "smart-templates",
-  "obsidian42-strange-new-worlds",
-  "smart-lookup",
+  "obsidian-local-rest-api",
   "metadata-menu",
   "periodic-notes",
+  "tag-wrangler",
+  "smart-connections",
+  "smart-context",
+  "smart-lookup",
+  "smart-templates",
+  "review-obsidian",
   "obsidian-folder-index",
-  "obsidian-git",
-  "obsidian-tidy-footnotes",
-  "obsidian-topic-linking",
+  "obsidian-tasks-plugin",
+  "tipa-support",
+  "obsidian42-strange-new-worlds",
   "todoist-context-bridge",
-<<<<<<< HEAD
-<<<<<<< HEAD
-  "markdown-attributes",
-=======
->>>>>>> 4d3d06e2fac5b12be035d897a4635d9be5baf1bd
-=======
->>>>>>> 4d3d06e2fac5b12be035d897a4635d9be5baf1bd
-  "ai-image-analyzer",
-  "table-editor-obsidian",
-  "moviegrabber",
-  "obsidian-advanced-slides",
-  "obsidian-5e-statblocks",
-  "find-unlinked-files",
-  "obsidian-footnotes",
-  "consistent-attachments-and-links",
-  "obsidian-icon-shortcodes",
-  "letterboxd-rss-sync",
-  "links",
-  "phone-to-roam-to-obsidian",
-  "supercharged-links-obsidian",
-  "translate",
-<<<<<<< HEAD
-<<<<<<< HEAD
-  "omnisearch"
-=======
-=======
->>>>>>> 4d3d06e2fac5b12be035d897a4635d9be5baf1bd
+  "smart-rename",
+  "templater-obsidian",
   "omnisearch",
-  "obsidian-dice-roller",
-  "influx",
-  "obsidian-kanban",
-  "obisidian-note-linker",
-  "tipa-support"
-<<<<<<< HEAD
->>>>>>> 4d3d06e2fac5b12be035d897a4635d9be5baf1bd
-=======
->>>>>>> 4d3d06e2fac5b12be035d897a4635d9be5baf1bd
+  "ai-templater",
+  "ai-image-analyzer",
+  "beautiful-contact-cards",
+  "dataview",
+  "dataview-serializer",
+  "dataview-autocompletion",
+  "dataview-properties",
+  "obsidian-transcription"
 ]
