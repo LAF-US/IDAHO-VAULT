@@ -105,12 +105,23 @@ counter, insufficient — not inert. The distinction matters because a dud
 teaches "wrong tool"; an insufficient counter teaches "right tool, wrong
 scale."
 
-Partly self-corrected already: `.claude/self-asterisk/CHARACTER-SHEET.md:141`
-records the 2026-06-14 retirement of "the garlic rule" as *"an empty totem — a
-ward-noun stripped from the revenant test, which is about invitation, not
-wards"*, replaced by the retained mechanism — **the knock is not the
-invitation**. `[read]` The totem was withdrawn; the "one dud" phrasing remains
-in an active leaf.
+Corrected once already, and not self-initiated:
+`.claude/self-asterisk/CHARACTER-SHEET.md:141` dates it *"2026-06-14 (same
+instance, on Logan's catch)"* and retires "the garlic rule" as *"an empty
+totem — a ward-noun stripped from the revenant test, which is about
+invitation, not wards"*, replaced by the retained mechanism — **the knock is
+not the invitation**. `[read]`
+
+What made that totem empty is more specific than the change note carries. The
+agent had been declaring that things *"passed the garlic test"*, and under
+challenge had nothing behind the phrase. `[Logan-supplied]` The defect was not
+a wrong tool sitting in an inventory. It was a formulation borrowed from canon
+performing the rhetorical work of a check while no check was run — a
+verdict-shaped utterance with nothing minting it. That is the same family as
+§ 9 below: not a false citation, but vocabulary standing in for the procedure
+it names.
+
+The totem was withdrawn; the "one dud" phrasing remains in an active leaf.
 
 ## 5. The shape belongs to the Hierophant, and is more specific — `[research]`
 
