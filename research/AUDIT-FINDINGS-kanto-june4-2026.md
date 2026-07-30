@@ -90,12 +90,12 @@ Minor formatting inconsistencies remain in Overview section structure and Refere
 
 ### Priority 2 - Moderate Fixes
 
-4. Add Type column to all team tables
+1. Add Type column to all team tables
 2. Update all Last updated dates to June 4, 2026
 
 ### Priority 3 - Minor Fixes
 
-6. Standardize Overview section format
+1. Standardize Overview section format
 2. Standardize Generation labeling
 3. Standardize References format
 

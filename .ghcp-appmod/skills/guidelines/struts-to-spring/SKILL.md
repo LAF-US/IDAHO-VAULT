@@ -37,25 +37,27 @@ Execute skills in this order:
 
 ### Phase 2: Configuration Migration
 
-4. [ ] `migrate-struts-xml` - Plan controller structure ([SKILL-xml.md](SKILL-xml.md))
+1. [ ] `migrate-struts-xml` - Plan controller structure ([SKILL-xml.md](SKILL-xml.md))
 2. [ ] `migrate-web-xml` - Remove Struts filter ([SKILL-xml.md](SKILL-xml.md))
 
 ### Phase 3: Action Conversion
 
-6. [ ] `convert-action-to-controller` - Convert each Action class ([SKILL-action.md](SKILL-action.md))
+1. [ ] `convert-action-to-controller` - Convert each Action class ([SKILL-action.md](SKILL-action.md))
 2. [ ] `convert-action-properties` - Handle Action properties ([SKILL-action.md](SKILL-action.md))
 
 ### Phase 4: Cross-cutting Concerns
 
-8. [ ] `convert-validation` - Migrate validation logic ([SKILL-interceptor.md](SKILL-interceptor.md))
+1. [ ] `convert-validation` - Migrate validation logic ([SKILL-interceptor.md](SKILL-interceptor.md))
 2. [ ] `convert-interceptor` - Convert interceptors ([SKILL-interceptor.md](SKILL-interceptor.md))
 
 ### Phase 5: View Layer
+
  1. [ ] `convert-result-types` - Handle result mappings ([SKILL-view.md](SKILL-view.md))
  2. [ ] `convert-jsp-tags` - Update JSP files ([SKILL-view.md](SKILL-view.md))
  3. [ ] `convert-ognl-to-el` - Fix expressions ([SKILL-view.md](SKILL-view.md))
 
 ### Phase 6: Testing & Polish
+
  1. [ ] `convert-test-classes` - Update tests ([SKILL-test.md](SKILL-test.md))
  2. [ ] `create-exception-handler` - Global exception handling ([SKILL-test.md](SKILL-test.md))
 
