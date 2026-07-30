@@ -73,61 +73,61 @@ The Telegram is said to answer the question, ***What comes after the end of The 
 ### Solving the Code
 
 1. The first word is three letters long, in dark purple, and can be found on page 133: The Reptile Room. The letters found are **otw.**
- 1. *You always want to do something new, but at the same time, I wanted to see if there were clues I c **o** uld integrate into the design.*
-  2. *This flips it so the priori **t** y is the reptiles, and his own living space is sort of diminutive.*
-  3. *And in “The Reptile Room,” \[Monty\]’s delighted to share his **w** orld with these kids.*
+   1. *You always want to do something new, but at the same time, I wanted to see if there were clues I c **o** uld integrate into the design.*
+   2. *This flips it so the priori **t** y is the reptiles, and his own living space is sort of diminutive.*
+   3. *And in “The Reptile Room,” \[Monty\]’s delighted to share his **w** orld with these kids.*
 2. Four letters long, dark orange, on page 99: Toupees for Toddlers. The letters found are **ests.**
- 1. *“W **e** ll, we can’t put a wig on a baby.”*
-  2. *It’s one of the odde **s** t things I’ve ever done in my career, applying a little wig on a baby.*
-  3. *When we star **t** ed the second season, Pre **s** ley had grown her hair long enough that we could actually create the ponytail with her own hair, which was a relief.*
+   1. *“W **e** ll, we can’t put a wig on a baby.”*
+   2. *It’s one of the odde **s** t things I’ve ever done in my career, applying a little wig on a baby.*
+   3. *When we star **t** ed the second season, Pre **s** ley had grown her hair long enough that we could actually create the ponytail with her own hair, which was a relief.*
 3. Two letters, pink, page 130: Mr. Poe's Office. The letters found are **of.**
- 1. *It can be goofy, but it’s never go **o** fy-stupid.*
-  2. *He’s the guy that’s literally standing between Olaf and the Baudelaire **f** ortune.*
+   1. *It can be goofy, but it’s never go **o** fy-stupid.*
+   2. *He’s the guy that’s literally standing between Olaf and the Baudelaire **f** ortune.*
 4. Seven letters, gray-blue, page 110: How to Dress for a Masked Ball. The letters are **eidnrsf.**
- 1. *The flashback that opens “The Carnivorous Carnival” is set at a Ven **e** tian-style masked ball, where masks conceal a number of familiar faces. Cynthia Summers designed each mask with the character in m **i** nd, including Dr Orwell’s “eyeglasses,” a Me **d** usa-inspired snake mask for Uncle Mo **n** ty, and theat **r** ical comedy/tragedy masks for the Snicket Brothers. (Jacques wears the comedy mask, while Lemony, of course, is tragedy.) The ball also marks the first on-screen appearance of the my **s** terious Beatrice, described in the script as “a beautiful woman dressed as a dragon **f** ly.”*
+   1. *The flashback that opens “The Carnivorous Carnival” is set at a Ven **e** tian-style masked ball, where masks conceal a number of familiar faces. Cynthia Summers designed each mask with the character in m **i** nd, including Dr Orwell’s “eyeglasses,” a Me **d** usa-inspired snake mask for Uncle Mo **n** ty, and theat **r** ical comedy/tragedy masks for the Snicket Brothers. (Jacques wears the comedy mask, while Lemony, of course, is tragedy.) The ball also marks the first on-screen appearance of the my **s** terious Beatrice, described in the script as “a beautiful woman dressed as a dragon **f** ly.”*
 5. Four letters, gray, page 45: Olivia Caliban/Madame Lulu. The letters found are **jtsu.**
- 1. *A dangling thread from Season One was a certain book on secret organizations discovered by **J** ustice Strauss - a book whose title will be familiar to anyone reading this.*
-  2. *Still, they liked the idea of a character finding* The Incomplete His **t** ory of Secret Organizations *and having the book change your life, as it will no doubt change yours.*
-  3. *While the book’s ver **s** ion of Olivia is a veteran agent of dubious morality, the show reinvents her as a noble school librarian struggling against institutional corruption.*
-  4. *There, disg **u** ised as Madame Lulu, she fulfills her mission of passing the book to the Baudelaires - and sacrifices herself at the lion pit to save their lives.*
+   1. *A dangling thread from Season One was a certain book on secret organizations discovered by **J** ustice Strauss - a book whose title will be familiar to anyone reading this.*
+   2. *Still, they liked the idea of a character finding* The Incomplete His **t** ory of Secret Organizations *and having the book change your life, as it will no doubt change yours.*
+   3. *While the book’s ver **s** ion of Olivia is a veteran agent of dubious morality, the show reinvents her as a noble school librarian struggling against institutional corruption.*
+   4. *There, disg **u** ised as Madame Lulu, she fulfills her mission of passing the book to the Baudelaires - and sacrifices herself at the lion pit to save their lives.*
 6. Three letters, gold, page 109: How to Dress for a Career in Food Service. The letters found are **uto.**
- 1. *Author Daniel Handler explains that the VFD agents we meed in the show are the types of people whom children notice by ad **u** lts overlook.*
-  2. *You’re going to no **t** ice things that are invisible to the adults talking over your head.*
-  3. *Take a go **o** d look at the restaurant’s terrifying logo.*
+   1. *Author Daniel Handler explains that the VFD agents we meed in the show are the types of people whom children notice by ad **u** lts overlook.*
+   2. *You’re going to no **t** ice things that are invisible to the adults talking over your head.*
+   3. *Take a go **o** d look at the restaurant’s terrifying logo.*
 7. Two letters, red, page 141: The Miserable Mill. The letters found are **fo**.
- 1. *“The Wide Window” le **f** t us with no more stage space, so it forced us to shoot the mill at a real location, an old dock building which we then tried to make look like a stage.*
-  2. *Klaus comes back from the eye d **o** ctor, but he isn’t quite himself.*
+   1. *“The Wide Window” le **f** t us with no more stage space, so it forced us to shoot the mill at a real location, an old dock building which we then tried to make look like a stage.*
+   2. *Klaus comes back from the eye d **o** ctor, but he isn’t quite himself.*
 8. Five letters, light purple, page 97: The Real Sugar Bowl. The letters found are **eahrc.**
- 1. *According to Esme, it was stolen from her by Beatrice, and according to Olivia, it may have been the r **e** ason for the VFD schism. It’s not the first sugar bowl to play a vital role in a work of classic literature (interested parties may seek out* We Have Always Lived in The Castle *at their local library), but D **a** niel Handler muses on another possible inspiration: “There a whole sugar scene in the movie* Midnight *(See: Snicket, Jacques, pg 44) that must have seeped into me when I was a child. Somehow I t **h** ink that was one of the sugar bowls of literature that ended up sneaking in.”*
-  2. *The existence of four identical sugar bowl \[props\] may be of interest to Esme Squalor, or at least her act **r** ess, Lucy Punch, who requested to keep one when the series wrapped. “My chara **c** ter was so desperate for it,” says Punch. “It seemed appropriate.”*
+   1. *According to Esme, it was stolen from her by Beatrice, and according to Olivia, it may have been the r **e** ason for the VFD schism. It’s not the first sugar bowl to play a vital role in a work of classic literature (interested parties may seek out* We Have Always Lived in The Castle *at their local library), but D **a** niel Handler muses on another possible inspiration: “There a whole sugar scene in the movie* Midnight *(See: Snicket, Jacques, pg 44) that must have seeped into me when I was a child. Somehow I t **h** ink that was one of the sugar bowls of literature that ended up sneaking in.”*
+   2. *The existence of four identical sugar bowl \[props\] may be of interest to Esme Squalor, or at least her act **r** ess, Lucy Punch, who requested to keep one when the series wrapped. “My chara **c** ter was so desperate for it,” says Punch. “It seemed appropriate.”*
 9. Four letters, blue, page 172: The Carnivorous Carnival. The letters found are **wlli.**
- 1. *There’s literally no program you can watch that’s any **w** ierce.*
-  2. *The aesthetic of carniva **l** s and circuses is naturally creepy and absurd to begin with. And then you add the overlay of our material, where everything is fi **l** tered through the Baudelaires, so the sets are designed to be seen as if you’re a vulnerable child glimpsing this horrible world and trying to maintain hope.*
-  3. *Count Olaf arrives at Caligari Carnival, where he hopes the fortune-teller can help h **i** m.*
+   1. *There’s literally no program you can watch that’s any **w** ierce.*
+   2. *The aesthetic of carniva **l** s and circuses is naturally creepy and absurd to begin with. And then you add the overlay of our material, where everything is fi **l** tered through the Baudelaires, so the sets are designed to be seen as if you’re a vulnerable child glimpsing this horrible world and trying to maintain hope.*
+   3. *Count Olaf arrives at Caligari Carnival, where he hopes the fortune-teller can help h **i** m.*
 10. Four letters, green, page 89: The Many Faces of Barry Sonnenfeld. The letters found are **eetm.**
- 1. *and in “The Vile Village,” he’s the fire chi **e** f posing with his Dalmatian int he firehouse-turned-saloon.*
-  2. *A common ancestor to our series’ interconn **e** cted families?*
-  3. *Barry birthday is April Fool’s Day, and for his bir **t** hday, I decided to knock off a painting with him in it.*
-  4. *We’re shooting the Hotel Denouement right now, and the whole hotel is based on the Dewey Deci **m** al System, and each floor is a different subject.*
+    1. *and in “The Vile Village,” he’s the fire chi **e** f posing with his Dalmatian int he firehouse-turned-saloon.*
+    2. *A common ancestor to our series’ interconn **e** cted families?*
+    3. *Barry birthday is April Fool’s Day, and for his bir **t** hday, I decided to knock off a painting with him in it.*
+    4. *We’re shooting the Hotel Denouement right now, and the whole hotel is based on the Dewey Deci **m** al System, and each floor is a different subject.*
 11. Five letters, magenta, page 64-65: The Sinister Songs. The lettters found are **agina.**
- 1. *“I was a huge fan of the books in my twenties, and I was also a huge f **a** n of Barry Sonnenfeld, so to see those two come together and actually be a part of it was unreal.”*
-  2. *Count Olaf introduces himself to the Baudelaires with this song and dance - i **g** noring the fact he’s already met them. Handlers says, “S **i** nging is perfect for Count Olaf because he imagines himself so wonderful.”*
-  3. *All of the dance numbers were choreographed by Paul Becker, who pulled double duty in the first half of “The Car **n** ivorous Carnival”.*
-  4. *She’s h **a** d quite an exciting / Time on the road*
+    1. *“I was a huge fan of the books in my twenties, and I was also a huge f **a** n of Barry Sonnenfeld, so to see those two come together and actually be a part of it was unreal.”*
+    2. *Count Olaf introduces himself to the Baudelaires with this song and dance - i **g** noring the fact he’s already met them. Handlers says, “S **i** nging is perfect for Count Olaf because he imagines himself so wonderful.”*
+    3. *All of the dance numbers were choreographed by Paul Becker, who pulled double duty in the first half of “The Car **n** ivorous Carnival”.*
+    4. *She’s h **a** d quite an exciting / Time on the road*
 12. Two letters, light gray, page 24: Violet the Inventor. The letters found are **on.**
- 1. *But n **o** w those inventions, like the Baudelaire mansion itself, are gone.*
-  2. *She promised her parents she would always look after them, and while Count Olaf’s schemes have put that promise to the test, Violet’s managed to sta **n** d strong in even the most unfortunate situation.*
+    1. *But n **o** w those inventions, like the Baudelaire mansion itself, are gone.*
+    2. *She promised her parents she would always look after them, and while Count Olaf’s schemes have put that promise to the test, Violet’s managed to sta **n** d strong in even the most unfortunate situation.*
 13. Five letters, dark blue, pages 116-117: Deciphering Code: Using the Dials of the Spyglass. The letters found are **riynb.**
- 1. *As a volunteer, you al **r** eady know why and when the spyglass was created (See: Motion Picture, Pg 10) but we will briefly recap its history here.*
-  2. *A permanent mark has its advantages, since even the most absent-minded member rarely leave the house without the **i** r ankle (See: Peg Leg, pg 86), but it has its drawbacks too, particularly if the organization undergoes a schism, so that the same symbol that once stood for comradery and literacy suddenly represents treachery and pyromania now that it is inscribed on the ankles of your enemies.*
-  3. *But just as a movie might be more than a movie, a spyglass can be more than a sp **y** glass.*
-  4. *Critics called these films terrible, which was the point: Sebald wanted to ensure that no one would want to see them besides other volu **n** teers, who would be more interested in their secret messages than their artistic value.*
-  5. *The cinema’s projectionist assigns the film a production code made up of a unique combination of num **b** ers and symbols.*
+    1. *As a volunteer, you al **r** eady know why and when the spyglass was created (See: Motion Picture, Pg 10) but we will briefly recap its history here.*
+    2. *A permanent mark has its advantages, since even the most absent-minded member rarely leave the house without the **i** r ankle (See: Peg Leg, pg 86), but it has its drawbacks too, particularly if the organization undergoes a schism, so that the same symbol that once stood for comradery and literacy suddenly represents treachery and pyromania now that it is inscribed on the ankles of your enemies.*
+    3. *But just as a movie might be more than a movie, a spyglass can be more than a sp **y** glass.*
+    4. *Critics called these films terrible, which was the point: Sebald wanted to ensure that no one would want to see them besides other volu **n** teers, who would be more interested in their secret messages than their artistic value.*
+    5. *The cinema’s projectionist assigns the film a production code made up of a unique combination of num **b** ers and symbols.*
 14. Five letters, pale yellow-gray, page 32: Who is Lemony Snicket? The letters found are **haebc.**
- 1. *He is currently investigating the lives of the Baudelaire orp **h** ans, though his reason for doing so is unknown, as are his whereabouts.*
-  2. *Mr. Snicket can be identified by his dry wit, his tailored suits, and his ankle tattoo, as well as his tendency to launch into wordy monologues cont **a** ining Very Frequent Definitions.*
-  3. *But when developing the series for Netflix, Barry Sonnenfeld and Daniel Handler indep **e** ndently felt that their Snicket should be seen as well as heard.*
-  4. *And they both independently thought of Patrick War **b** urton, a frequent Sonnenfeld collaborator whom Handler had loved in a little-seen film called* The Woman Chaser. *Volunteers who track it down will note that it features Warburton speaking to the **c** amera in a suit and a deadpan style that one might call Serlinig-esque - or Snicket-esque.*
+    1. *He is currently investigating the lives of the Baudelaire orp **h** ans, though his reason for doing so is unknown, as are his whereabouts.*
+    2. *Mr. Snicket can be identified by his dry wit, his tailored suits, and his ankle tattoo, as well as his tendency to launch into wordy monologues cont **a** ining Very Frequent Definitions.*
+    3. *But when developing the series for Netflix, Barry Sonnenfeld and Daniel Handler indep **e** ndently felt that their Snicket should be seen as well as heard.*
+    4. *And they both independently thought of Patrick War **b** urton, a frequent Sonnenfeld collaborator whom Handler had loved in a little-seen film called* The Woman Chaser. *Volunteers who track it down will note that it features Warburton speaking to the **c** amera in a suit and a deadpan style that one might call Serlinig-esque - or Snicket-esque.*
 
 All together, the code spells:
 
