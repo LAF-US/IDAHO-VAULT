@@ -48,4 +48,4 @@ Picked **PR #596** ("Land live Vault snapshot updates," open since 2026-06-20) â
 
 Cross-posted: GitHub issue #822 (comment), Linear LAF-72 (comment, not a new ticket), Slack #all-logan-finney, Discord #ledger (via Zapier).
 
-Claude-Session: https://claude.ai/code/session_01Dbbr4r32bPDaQiWX4R3f1u
+Claude-Session: <https://claude.ai/code/session_01Dbbr4r32bPDaQiWX4R3f1u>
