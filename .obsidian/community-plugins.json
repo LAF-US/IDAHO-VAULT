@@ -18,7 +18,6 @@
   "obisidian-note-linker",
   "phone-to-roam-to-obsidian",
   "roygbiv-day-accent",
-  "settings-search",
   "homepage",
   "obsidian-kanban",
   "links",
@@ -47,5 +46,13 @@
   "dataview-serializer",
   "dataview-autocompletion",
   "dataview-properties",
-  "obsidian-transcription"
+  "obsidian-transcription",
+  "obsidian-tidy-footnotes",
+  "text-extractor",
+  "supercharged-links-obsidian",
+  "obsidian-icon-shortcodes",
+  "frontmatter-markdown-links",
+  "obsidian-file-cooker",
+  "table-editor-obsidian",
+  "obsidian-advanced-slides"
 ]
