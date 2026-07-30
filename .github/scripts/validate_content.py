@@ -54,10 +54,28 @@ DANGEROUS_PATTERNS = [
     re.compile(r"<embed", re.IGNORECASE),
 ]
 
-# Unresolved date-placeholder tokens must not persist in daily notes or the
-# carryforward list. They compound across rollover runs (see PR for context).
-DATE_PLACEHOLDER_RE = re.compile(r"\[\[(YESTERDAY|TOMORROW|TODAY)\]\]")
+# Unrendered template placeholders must not persist in periodic notes or the
+# carryforward list: they compound across rollover runs. These are the two
+# delimiter families the vault's templates use, so they are what a failed
+# expansion actually leaves behind -- Templater `<% ... %>` and core Obsidian
+# Templates `{{...}}`. (This rule previously searched for [[YESTERDAY]] /
+# [[TODAY]] / [[TOMORROW]], which no template emits, so it missed every real
+# expansion failure while flagging hand-written wikilinks.)
+TEMPLATER_PLACEHOLDER_RE = re.compile(r"<%")
+BRACE_PLACEHOLDER_RE = re.compile(r"\{\{[^}\n]+\}\}")
+
 DAILY_NOTE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}\.md$")
+# Periodic-note filenames, from the title formats in the five NOTE TEMPLATEs:
+# day YYYY-MM-DD, week GGGG-[W]WW, month YYYY-MM, quarter YYYY-[Q]Q.
+# Yearly (YYYY) is deliberately absent -- a bare four-digit name is not a
+# reliable signal (`1000.md` exists at root and is not a year note), so yearly
+# notes are picked up by their `period:` frontmatter key instead.
+PERIODIC_NOTE_RE = re.compile(r"^\d{4}-(?:\d{2}-\d{2}|W\d{1,2}|Q[1-4]|\d{2})\.md$")
+PERIOD_VALUES = {"day", "week", "month", "quarter", "year"}
+# The templates themselves are written in this syntax and must never be flagged.
+TEMPLATE_SUFFIX = " NOTE TEMPLATE.md"
+CARRYFORWARD_FILE = "TO DO LIST.md"
+FENCE_RE = re.compile(r"^\s*(```|~~~)")
 
 # Sponsor names should be alphabetic with common punctuation
 SPONSOR_NAME_RE = re.compile(r"^[A-Za-z\s.\-',()]+$")
@@ -149,17 +167,50 @@ def validate_file_size(path: Path) -> list[str]:
     return errors
 
 
-def validate_date_placeholders(path: Path, content: str) -> list[str]:
-    """Scope-limited check: no [[YESTERDAY]]/[[TOMORROW]]/[[TODAY]] in daily
-    notes or TO DO LIST.md. Other files may legitimately mention the tokens
-    in prose (VAULT-CONVENTIONS.md, agent instructions, etc.)."""
+def is_periodic_surface(path: Path, frontmatter: dict | None) -> bool:
+    """True for the surfaces a failed template expansion can propagate through:
+    any periodic note (day/week/month/quarter/year) or the carryforward list.
+
+    The five `* NOTE TEMPLATE.md` files are excluded and must stay excluded --
+    they are written in the very syntax this check hunts for, so bringing them
+    into scope would make the check fail on itself."""
     name = path.name
-    if not (DAILY_NOTE_RE.match(name) or name == "TO DO LIST.md"):
+    if name.endswith(TEMPLATE_SUFFIX):
+        return False
+    if name == CARRYFORWARD_FILE or PERIODIC_NOTE_RE.match(name):
+        return True
+    if isinstance(frontmatter, dict):
+        period = frontmatter.get("period")
+        if isinstance(period, str) and period.strip().lower() in PERIOD_VALUES:
+            return True
+    return False
+
+
+def validate_template_placeholders(
+    path: Path, content: str, frontmatter: dict | None = None
+) -> list[str]:
+    """Scope-limited check: no unrendered template placeholders in periodic
+    notes or TO DO LIST.md. Other files may legitimately show the syntax in
+    prose or examples (VAULT-CONVENTIONS.md, agent instructions, the templates
+    themselves), and fenced blocks are skipped for the same reason."""
+    if not is_periodic_surface(path, frontmatter):
         return []
     errors = []
+    in_fence = False
     for i, line in enumerate(content.splitlines(), 1):
-        if DATE_PLACEHOLDER_RE.search(line):
-            errors.append(f"{path}:{i}: unresolved date placeholder token")
+        if FENCE_RE.match(line):
+            in_fence = not in_fence
+            continue
+        if in_fence:
+            continue
+        if TEMPLATER_PLACEHOLDER_RE.search(line):
+            errors.append(
+                f"{path}:{i}: unrendered Templater placeholder (<% ... %>)"
+            )
+        elif BRACE_PLACEHOLDER_RE.search(line):
+            errors.append(
+                f"{path}:{i}: unrendered template placeholder ({{{{...}}}})"
+            )
     return errors
 
 
@@ -253,7 +304,9 @@ def main() -> int:
             all_errors.extend(frontmatter_errors)
             all_errors.extend(validate_governed_metadata(path, frontmatter, args.scope))
             all_errors.extend(validate_content_safety(path, content))
-            all_errors.extend(validate_date_placeholders(path, content))
+            all_errors.extend(
+                validate_template_placeholders(path, content, frontmatter)
+            )
             all_errors.extend(validate_sponsor_names(path, content))
 
     if all_errors:
