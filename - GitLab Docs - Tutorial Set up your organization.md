@@ -19,10 +19,10 @@ Let’s get started.
 To use OpenCode in your terminal, you’ll need:
 
 1. A modern terminal emulator like:
- - [WezTerm](https://wezterm.org/), cross-platform
-  - [Alacritty](https://alacritty.org/), cross-platform
-  - [Ghostty](https://ghostty.org/), Linux and macOS
-  - [Kitty](https://sw.kovidgoyal.net/kitty/), Linux and macOS
+   - [WezTerm](https://wezterm.org/), cross-platform
+    - [Alacritty](https://alacritty.org/), cross-platform
+    - [Ghostty](https://ghostty.org/), Linux and macOS
+    - [Kitty](https://sw.kovidgoyal.net/kitty/), Linux and macOS
 2. API keys for the LLM providers you want to use.
 
 ---
@@ -38,16 +38,21 @@ curl -fsSL https://opencode.ai/install | bash
 You can also install it with the following commands:
 
 - **Using Node.js**
+
  ```bash
  npm install -g opencode-ai
  ```
 
 - **Using Homebrew on macOS and Linux**
+
  ```bash
  brew install anomalyco/tap/opencode
  ```
+
  > We recommend using the OpenCode tap for the most up to date releases. The official `brew install opencode` formula is maintained by the Homebrew team and is updated less frequently.
+
 - **Installing on Arch Linux**
+
  ```bash
  sudo pacman -S opencode           # Arch Linux (Stable)
  paru -S opencode-bin              # Arch Linux (Latest from AUR)
@@ -56,26 +61,31 @@ You can also install it with the following commands:
 #### Windows
 
 - **Using Chocolatey**
+
  ```bash
  choco install opencode
  ```
 
 - **Using Scoop**
+
  ```bash
  scoop install opencode
  ```
 
 - **Using NPM**
+
  ```bash
  npm install -g opencode-ai
  ```
 
 - **Using Mise**
+
  ```bash
  mise use -g github:anomalyco/opencode
  ```
 
 - **Using Docker**
+
  ```bash
  docker run -it --rm ghcr.io/anomalyco/opencode
  ```
@@ -93,18 +103,20 @@ With OpenCode you can use any LLM provider by configuring their API keys.
 If you are new to using LLM providers, we recommend using [OpenCode Zen](https://opencode.ai/docs/zen). It’s a curated list of models that have been tested and verified by the OpenCode team.
 
 1. Run the `/connect` command in the TUI, select opencode, and head to [opencode.ai/auth](https://opencode.ai/auth).
- ```txt
- /connect
- ```
+
+   ```txt
+   /connect
+   ```
 
 2. Sign in, add your billing details, and copy your API key.
 3. Paste your API key.
- ```txt
- ┌ API key
- │
- │
- └ enter
- ```
+
+   ```txt
+   ┌ API key
+   │
+   │
+   └ enter
+   ```
 
 Alternatively, you can select one of the other providers. [Learn more](https://opencode.ai/docs/providers#directory).
 
@@ -161,34 +173,43 @@ This is helpful if there’s a part of the codebase that you didn’t work on.
 You can ask OpenCode to add new features to your project. Though we first recommend asking it to create a plan.
 
 1. **Create a plan**
- OpenCode has a *Plan mode* that disables its ability to make changes and instead suggest *how* it’ll implement the feature.
- Switch to it using the **Tab** key. You’ll see an indicator for this in the lower right corner.
- ```bash
- <TAB>
- ```
- Now let’s describe what we want it to do.
- ```txt
- When a user deletes a note, we'd like to flag it as deleted in the database.
- Then create a screen that shows all the recently deleted notes.
- From this screen, the user can undelete a note or permanently delete it.
- ```
- You want to give OpenCode enough details to understand what you want. It helps to talk to it like you are talking to a junior developer on your team.
+   OpenCode has a *Plan mode* that disables its ability to make changes and instead suggest *how* it’ll implement the feature.
+   Switch to it using the **Tab** key. You’ll see an indicator for this in the lower right corner.
+
+   ```bash
+   <TAB>
+   ```
+
+   Now let’s describe what we want it to do.
+
+   ```txt
+   When a user deletes a note, we'd like to flag it as deleted in the database.
+   Then create a screen that shows all the recently deleted notes.
+   From this screen, the user can undelete a note or permanently delete it.
+   ```
+
+   You want to give OpenCode enough details to understand what you want. It helps to talk to it like you are talking to a junior developer on your team.
 2. **Iterate on the plan**
- Once it gives you a plan, you can give it feedback or add more details.
- ```txt
- We'd like to design this new screen using a design I've used before.
- [Image #1] Take a look at this image and use it as a reference.
- ```
- OpenCode can scan any images you give it and add them to the prompt. You can do this by dragging and dropping an image into the terminal.
+   Once it gives you a plan, you can give it feedback or add more details.
+
+   ```txt
+   We'd like to design this new screen using a design I've used before.
+   [Image #1] Take a look at this image and use it as a reference.
+   ```
+
+   OpenCode can scan any images you give it and add them to the prompt. You can do this by dragging and dropping an image into the terminal.
 3. **Build the feature**
- Once you feel comfortable with the plan, switch back to *Build mode* by hitting the **Tab** key again.
- ```bash
- <TAB>
- ```
- And asking it to make the changes.
- ```bash
- Sounds good! Go ahead and make the changes.
- ```
+   Once you feel comfortable with the plan, switch back to *Build mode* by hitting the **Tab** key again.
+
+   ```bash
+   <TAB>
+   ```
+
+   And asking it to make the changes.
+
+   ```bash
+   Sounds good! Go ahead and make the changes.
+   ```
 
 ---
 

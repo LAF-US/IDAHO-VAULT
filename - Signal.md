@@ -23,8 +23,8 @@ Status: external CLI integration. Gateway talks to `signal-cli` over HTTP JSON-R
 1. Use a **separate Signal number** for the bot (recommended).
 2. Install `signal-cli` (Java required if you use the JVM build).
 3. Choose one setup path:
- - **Path A (QR link):** `signal-cli link -n "OpenClaw"` and scan with Signal.
-  - **Path B (SMS register):** register a dedicated number with captcha + SMS verification.
+   - **Path A (QR link):** `signal-cli link -n "OpenClaw"` and scan with Signal.
+    - **Path B (SMS register):** register a dedicated number with captcha + SMS verification.
 4. Configure OpenClaw and restart the gateway.
 5. Send a first DM and approve pairing (`openclaw pairing approve signal <CODE>`).
 
@@ -81,7 +81,7 @@ Disable with:
 
 1. Install `signal-cli` (JVM or native build).
 2. Link a bot account:
- - `signal-cli link -n "OpenClaw"` then scan the QR in Signal.
+   - `signal-cli link -n "OpenClaw"` then scan the QR in Signal.
 3. Configure Signal and start the gateway.
 
 Example:
@@ -107,7 +107,7 @@ Multi-account support: use `channels.signal.accounts` with per-account config an
 Use this when you want a dedicated bot number instead of linking an existing Signal app account.
 
 1. Get a number that can receive SMS (or voice verification for landlines).
- - Use a dedicated bot number to avoid account/session conflicts.
+   - Use a dedicated bot number to avoid account/session conflicts.
 2. Install `signal-cli` on the gateway host:
 
 ```shellscript
@@ -150,9 +150,9 @@ openclaw channels status --probe
 ```
 
 1. Pair your DM sender:
- - Send any message to the bot number.
-  - Approve code on the server: `openclaw pairing approve signal <PAIRING_CODE>`.
-  - Save the bot number as a contact on your phone to avoid “Unknown contact”.
+   - Send any message to the bot number.
+    - Approve code on the server: `openclaw pairing approve signal <PAIRING_CODE>`.
+    - Save the bot number as a contact on your phone to avoid “Unknown contact”.
 
 Important: registering a phone number account with `signal-cli` can de-authenticate the main Signal app session for that number. Prefer a dedicated bot number, or use QR link mode if you need to keep your existing phone app setup.
 
@@ -186,8 +186,8 @@ DMs:
 - Default: `channels.signal.dmPolicy = "pairing"`.
 - Unknown senders receive a pairing code; messages are ignored until approved (codes expire after 1 hour).
 - Approve via:
- 	- `openclaw pairing list signal`
-  		- `openclaw pairing approve signal <CODE>`
+  - `openclaw pairing list signal`
+    - `openclaw pairing approve signal <CODE>`
 - Pairing is the default token exchange for Signal DMs. Details: [Pairing](https://docs.openclaw.ai/channels/pairing)
 - UUID-only senders (from `sourceUuid`) are stored as `uuid:<id>` in `channels.signal.allowFrom`.
 
@@ -239,8 +239,8 @@ Config:
 
 - `channels.signal.actions.reactions`: enable/disable reaction actions (default true).
 - `channels.signal.reactionLevel`: `off | ack | minimal | extensive`.
- 	- `off` / `ack` disables agent reactions (message tool `react` will error).
-  		- `minimal` / `extensive` enables agent reactions and sets the guidance level.
+  - `off` / `ack` disables agent reactions (message tool `react` will error).
+    - `minimal` / `extensive` enables agent reactions and sets the guidance level.
 - Per-account overrides: `channels.signal.accounts.<id>.actions.reactions`, `channels.signal.accounts.<id>.reactionLevel`.
 
 ## Delivery targets (CLI/cron)
