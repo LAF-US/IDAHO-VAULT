@@ -20,21 +20,24 @@ MacPorts is developed on macOS, though it is designed to be portable so it can w
 The following notational conventions are used in the MacPorts Guide to distinguish between terminal input/output, file text, and other special text types.
 
 - Terminal I/O and file text.
+
  ```
  Commands to be typed into a terminal window.
  ```
+
  ```
  Command output to a terminal window.
  ```
+
  ```
  File text.
  ```
 
 - Other special text types.
- 	- A hyperlink: [spontaneous combustion](https://en.wikipedia.org/wiki/Spontaneous_combustion).
- 	- A file: `/var/log/system.log`.
- 	- A command: **ifconfig**.
- 	- An option: port `install`
+  - A hyperlink: [spontaneous combustion](https://en.wikipedia.org/wiki/Spontaneous_combustion).
+  - A file: `/var/log/system.log`.
+  - A command: **ifconfig**.
+  - An option: port `install`
 
 ## Chapter 2. Installing MacPorts
 
@@ -104,51 +107,56 @@ If you are using macOS, you should install MacPorts using the macOS package inst
 The macOS package installer automatically installs MacPorts, [sets the shell environment](#installing.shell "2.5. MacPorts and the Shell"), and runs a [selfupdate](#using.port.selfupdate "3.1.2. port selfupdate") operation to update the ports tree and MacPorts base with the latest release.
 
 1. Download the latest ``MacPorts-2.12.5-*`....`*pkg`` installer from the releases [on GitHub](https://github.com/macports/macports-base/releases/). Here are direct links for the latest versions of macOS:
- macOS 15 Sequoia:
- [MacPorts-2.12.5-15-Sequoia.pkg](https://github.com/macports/macports-base/releases/download/v2.12.5/MacPorts-2.12.5-15-Sequoia.pkg)
- macOS 14 Sonoma:
- [MacPorts-2.12.5-14-Sonoma.pkg](https://github.com/macports/macports-base/releases/download/v2.12.5/MacPorts-2.12.5-14-Sonoma.pkg)
- macOS 13 Ventura:
- [MacPorts-2.12.5-13-Ventura.pkg](https://github.com/macports/macports-base/releases/download/v2.12.5/MacPorts-2.12.5-13-Ventura.pkg)
- macOS 12 Monterey:
- [MacPorts-2.12.5-12-Monterey.pkg](https://github.com/macports/macports-base/releases/download/v2.12.5/MacPorts-2.12.5-12-Monterey.pkg)
- macOS 11 Big Sur:
- [MacPorts-2.12.5-11-BigSur.pkg](https://github.com/macports/macports-base/releases/download/v2.12.5/MacPorts-2.12.5-11-BigSur.pkg)
- macOS 10.15 Catalina:
- [MacPorts-2.12.5-10.15-Catalina.pkg](https://github.com/macports/macports-base/releases/download/v2.12.5/MacPorts-2.12.5-10.15-Catalina.pkg)
- macOS 10.14 Mojave:
- [MacPorts-2.12.5-10.14-Mojave.pkg](https://github.com/macports/macports-base/releases/download/v2.12.5/MacPorts-2.12.5-10.14-Mojave.pkg)
- macOS 10.13 High Sierra:
- [MacPorts-2.12.5-10.13-HighSierra.pkg](https://github.com/macports/macports-base/releases/download/v2.12.5/MacPorts-2.12.5-10.13-HighSierra.pkg)
- macOS 10.12 Sierra:
- [MacPorts-2.12.5-10.12-Sierra.pkg](https://github.com/macports/macports-base/releases/download/v2.12.5/MacPorts-2.12.5-10.12-Sierra.pkg)
+   macOS 15 Sequoia:
+   [MacPorts-2.12.5-15-Sequoia.pkg](https://github.com/macports/macports-base/releases/download/v2.12.5/MacPorts-2.12.5-15-Sequoia.pkg)
+   macOS 14 Sonoma:
+   [MacPorts-2.12.5-14-Sonoma.pkg](https://github.com/macports/macports-base/releases/download/v2.12.5/MacPorts-2.12.5-14-Sonoma.pkg)
+   macOS 13 Ventura:
+   [MacPorts-2.12.5-13-Ventura.pkg](https://github.com/macports/macports-base/releases/download/v2.12.5/MacPorts-2.12.5-13-Ventura.pkg)
+   macOS 12 Monterey:
+   [MacPorts-2.12.5-12-Monterey.pkg](https://github.com/macports/macports-base/releases/download/v2.12.5/MacPorts-2.12.5-12-Monterey.pkg)
+   macOS 11 Big Sur:
+   [MacPorts-2.12.5-11-BigSur.pkg](https://github.com/macports/macports-base/releases/download/v2.12.5/MacPorts-2.12.5-11-BigSur.pkg)
+   macOS 10.15 Catalina:
+   [MacPorts-2.12.5-10.15-Catalina.pkg](https://github.com/macports/macports-base/releases/download/v2.12.5/MacPorts-2.12.5-10.15-Catalina.pkg)
+   macOS 10.14 Mojave:
+   [MacPorts-2.12.5-10.14-Mojave.pkg](https://github.com/macports/macports-base/releases/download/v2.12.5/MacPorts-2.12.5-10.14-Mojave.pkg)
+   macOS 10.13 High Sierra:
+   [MacPorts-2.12.5-10.13-HighSierra.pkg](https://github.com/macports/macports-base/releases/download/v2.12.5/MacPorts-2.12.5-10.13-HighSierra.pkg)
+   macOS 10.12 Sierra:
+   [MacPorts-2.12.5-10.12-Sierra.pkg](https://github.com/macports/macports-base/releases/download/v2.12.5/MacPorts-2.12.5-10.12-Sierra.pkg)
 2. Double-click the downloaded package installer to perform the default “easy” install.
 3. After this step you are done already, MacPorts is now installed and your shell environment was set up automatically by the installer. To confirm the installation is working as expected, now try using **port** in a *new* terminal window.
- ```
- port version
- ```
- ```
- Version: 2.12.5
- ```
- In case of problems such as “command not found”, make sure that you opened a new terminal window or consult. Otherwise, please skip the remainder of this chapter and continue with in this guide.
+
+   ```
+   port version
+   ```
+
+   ```
+   Version: 2.12.5
+   ```
+
+   In case of problems such as “command not found”, make sure that you opened a new terminal window or consult. Otherwise, please skip the remainder of this chapter and continue with in this guide.
 
 ### 2.2.2. Source Install
 
 If you installed MacPorts using the package installer, skip this section. To install MacPorts from the source code, follow the steps below.
 
 1. Download and extract the [MacPorts 2.12.5 tarball](https://distfiles.macports.org/MacPorts/MacPorts-2.12.5.tar.bz2). Either do so using your browser and the Finder, or use the given commands in a terminal window.
- ```
- curl -O https://distfiles.macports.org/MacPorts/MacPorts-2.12.5.tar.bz2
- tar xf MacPorts-2.12.5.tar.bz2
- ```
+
+   ```
+   curl -O https://distfiles.macports.org/MacPorts/MacPorts-2.12.5.tar.bz2
+   tar xf MacPorts-2.12.5.tar.bz2
+   ```
 
 2. Afterwards, perform the commands shown in the terminal window. If you wish to use a path other than `/opt/local`, follow the instructions for [installing multiple copies of MacPorts](#installing.macports.source.multiple "2.2.4. Install Multiple MacPorts Copies") instead.
- ```
- cd MacPorts-2.12.5/
- ./configure
- make
- sudo make install
- ```
+
+   ```
+   cd MacPorts-2.12.5/
+   ./configure
+   make
+   sudo make install
+   ```
 
 3. Please continue with to set up your shell environment.
 
@@ -161,42 +169,50 @@ There are times when some may want to run MacPorts from a version newer than the
 Though a distinction is made between pre-release and release versions of MacPorts base, the ports collection supports no such distinction or versioning. The [selfupdate](#using.port.selfupdate "3.1.2. port selfupdate") command installs the latest ports tree, and updates MacPorts base to the latest released version.
 
 1. Check out MacPorts source
- Pick a location to store a working copy of the MacPorts code. For this example, `/opt/mports` will be used, but you can put the source anywhere. This example will create `/opt/mports/macports-base` containing everything needed for MacPorts.
- ```
- mkdir -p /opt/mports
- cd /opt/mports
- git clone https://github.com/macports/macports-base.git
- cd macports-base
- git checkout v2.12.5  # skip this if you want to use the development version
- ```
+   Pick a location to store a working copy of the MacPorts code. For this example, `/opt/mports` will be used, but you can put the source anywhere. This example will create `/opt/mports/macports-base` containing everything needed for MacPorts.
+
+   ```
+   mkdir -p /opt/mports
+   cd /opt/mports
+   git clone https://github.com/macports/macports-base.git
+   cd macports-base
+   git checkout v2.12.5  # skip this if you want to use the development version
+   ```
 
 2. Build and Install MacPorts
- MacPorts uses autoconf and makefiles for installation. These commands will build and install MacPorts to `/opt/local`. You can add `--prefix` to `./configure` to relocate MacPorts to another directory if needed.
- ```
- cd /opt/mports/macports-base
- ./configure --enable-readline
- make
- sudo make install
- make distclean
- ```
+   MacPorts uses autoconf and makefiles for installation. These commands will build and install MacPorts to `/opt/local`. You can add `--prefix` to `./configure` to relocate MacPorts to another directory if needed.
+
+   ```
+   cd /opt/mports/macports-base
+   ./configure --enable-readline
+   make
+   sudo make install
+   make distclean
+   ```
 
 3. (Optional) Configure MacPorts to use port information from Git
- This step is useful if you want to do port development. Check out the ports tree from git:
- ```
- cd /opt/mports
- git clone https://github.com/macports/macports-ports.git
- ```
- Then open `/opt/local/etc/macports/sources.conf` in a text editor. The last line should look like this:
- ```
- rsync://rsync.macports.org/macports/release/tarballs/ports.tar [default]
- ```
- Change it to point to the working copy you checked out:
- ```
- file:///opt/mports/macports-ports [default]
- ```
- Now MacPorts will look for portfiles in the working copy and use Git instead of rsync to update your ports tree.
+   This step is useful if you want to do port development. Check out the ports tree from git:
+
+   ```
+   cd /opt/mports
+   git clone https://github.com/macports/macports-ports.git
+   ```
+
+   Then open `/opt/local/etc/macports/sources.conf` in a text editor. The last line should look like this:
+
+   ```
+   rsync://rsync.macports.org/macports/release/tarballs/ports.tar [default]
+   ```
+
+   Change it to point to the working copy you checked out:
+
+   ```
+   file:///opt/mports/macports-ports [default]
+   ```
+
+   Now MacPorts will look for portfiles in the working copy and use Git instead of rsync to update your ports tree.
 4. Environment
- You should setup your PATH and other environment options according to.
+   You should setup your PATH and other environment options according to.
 
 ### 2.2.4. Install Multiple MacPorts Copies
 
@@ -283,19 +299,25 @@ The postflight script automatically sets the `PATH` variable, and optionally the
 
 - Required: `PATH` variable
  This variable is set by the postflight script to prepend the MacPorts executable paths to the current path as shown. This puts the MacPorts paths at the front of `PATH` so that the MacPorts binaries will take precedence over vendor-supplied binaries.
+
  ```
  export PATH=/opt/local/bin:/opt/local/sbin:$PATH
  ```
- ### Note
+
+### Note
+
  The user environment's $PATH is not in effect while ports are being installed, because the $PATH is scrubbed before ports are installed, and restored afterwards. To change the search path for locating system executables (rsync, tar, etc.) during port installation, see the [macports.conf](#internals.configuration-files.macports-conf "6.2.1. macports.conf") file variable `binpath`. But changing this variable is for advanced users only, and is not generally needed or recommended.
+
 - Optional: `MANPATH` variable
  Condition: If prior to MacPorts installation a `MANPATH` variable exists in a current `.profile` that contains neither the value `${prefix}/share/man,` nor any empty items separated by a colon, the postflight script sets the `MANPATH` variable as shown below. Otherwise, the `MANPATH` variable is omitted.
+
  ```
  export MANPATH=/opt/local/share/man:$MANPATH
  ```
 
 - Optional: `DISPLAY` variable
  Condition: If installing on a Mac OS X version earlier than 10.5 (Leopard), and if a shell configuration file exists at time of MacPorts installation without a `DISPLAY` variable, the postflight script sets a `DISPLAY` variable as shown below. The `DISPLAY` variable is always omitted on Mac OS X 10.5 or higher.
+
  ```
  export DISPLAY=:0.0
  ```
@@ -1785,124 +1807,146 @@ For a detailed description of all port phases, see the [Portfile Reference](#ref
 Here we list the individual Portfile components for an application that conforms to the standard **configure**, **make**, and **make install** steps of most open source application installs.
 
 1. Modeline
- This should be the first line of a Portfile. It sets the correct editing options for vim and emacs. See [Port Style](#development.practices.portstyle "4.8.1. Port Style") for more information. Its use is optional and up to the port maintainer.
- ```
- # -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
- ```
+   This should be the first line of a Portfile. It sets the correct editing options for vim and emacs. See [Port Style](#development.practices.portstyle "4.8.1. Port Style") for more information. Its use is optional and up to the port maintainer.
+
+   ```
+   # -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+   ```
 
 2. PortSystem line
- This statement is required for all ports.
- ```
- PortSystem          1.0
- ```
+   This statement is required for all ports.
+
+   ```
+   PortSystem          1.0
+   ```
 
 3. Port name
- ```
- name                rrdtool
- ```
+
+   ```
+   name                rrdtool
+   ```
 
 4. Port version
- ```
- version             1.2.23
- ```
+
+   ```
+   version             1.2.23
+   ```
 
 5. Port categories
- A port may belong to more than one category, but the first (primary) category should match the directory name in the ports tree where the Portfile is to reside.
- ```
- categories          net
- ```
+   A port may belong to more than one category, but the first (primary) category should match the directory name in the ports tree where the Portfile is to reside.
+
+   ```
+   categories          net
+   ```
 
 6. Platform statement
- ```
- platforms           darwin
- ```
+
+   ```
+   platforms           darwin
+   ```
 
 7. Port maintainers
- A port's maintainers are the people who have agreed to take responsibility for keeping the port up-to-date. The `maintainers` keyword lists the maintainers' GitHub usernames or email addresses, preferably in the obfuscated form which hides them from spambots. For more, see the full explanation of the [maintainers keyword](#reference.keywords.maintainers) in the [Global Keywords](#reference.keywords "5.1. Global Keywords") section of the [Portfile Reference](#reference "Chapter 5. Portfile Reference") chapter.
- ```
- maintainers         @neverpanic \
-                     jdoe \
-                     example.org:julesverne
- ```
+   A port's maintainers are the people who have agreed to take responsibility for keeping the port up-to-date. The `maintainers` keyword lists the maintainers' GitHub usernames or email addresses, preferably in the obfuscated form which hides them from spambots. For more, see the full explanation of the [maintainers keyword](#reference.keywords.maintainers) in the [Global Keywords](#reference.keywords "5.1. Global Keywords") section of the [Portfile Reference](#reference "Chapter 5. Portfile Reference") chapter.
+
+   ```
+   maintainers         @neverpanic \
+                       jdoe \
+                       example.org:julesverne
+   ```
 
 8. Port description
- ```
- description         Round Robin Database
- ```
+
+   ```
+   description         Round Robin Database
+   ```
 
 9. Port long\_description
- ```
- long_description    RRDtool is a system to store and display time-series \
-                     data
- ```
+
+   ```
+   long_description    RRDtool is a system to store and display time-series \
+                       data
+   ```
 
 10. A port's application homepage
- ```
- homepage            https://people.ee.ethz.ch/~oetiker/webtools/rrdtool/
- ```
+
+    ```
+    homepage            https://people.ee.ethz.ch/~oetiker/webtools/rrdtool/
+    ```
 
 11. A port's download URLs
- ```
- master_sites        https://oss.oetiker.ch/rrdtool/pub/ \
-                     ftp://ftp.pucpr.br/rrdtool/
- ```
+
+    ```
+    master_sites        https://oss.oetiker.ch/rrdtool/pub/ \
+                        ftp://ftp.pucpr.br/rrdtool/
+    ```
 
 12. Port checksums
- The checksums specified in a Portfile are checked with the fetched tarball for security. For the best security, use rmd160 and sha256 checksum types. Checksums should also include the target file's size.
- ```
- checksums               rmd160  7bbfce4fecc2a8e1ca081169e70c1a298ab1b75a \
-                         sha256  2829fcb7393bac85925090b286b1f9c3cd3fbbf8e7f35796ef4131322509aa53 \
-                         size    1061530
- ```
- To find the correct checksums for a port's distribution file, follow one of these examples:
- ```
- %% openssl dgst -rmd160 rrdtool-1.2.23.tar.gz
- %% openssl dgst -sha256 rrdtool-1.2.23.tar.gz
- ```
- ```
- RIPEMD160( ... rrdtool-1.2.23.tar.gz)= 7bbfce4fecc2a8e1ca081169e70c1a298ab1b75a
- SHA256( ... rrdtool-1.2.23.tar.gz)= 2829fcb7393bac85925090b286b1f9c3cd3fbbf8e7f35796ef4131322509aa53
- ```
- or update the version in the Portfile:
- ```
- %% sudo port edit rrdtool
- ```
- and run:
- ```
- %% port -v checksum rrdtool
- ```
- ```
- --->  Fetching distfiles for rrdtool
- --->  Verifying checksums for rrdtool
- --->  Checksumming rrdtool-1.2.23.tar.gz
- Error: Checksum (rmd160) mismatch for rrdtool-1.2.23.tar.gz
- Portfile checksum: rrdtool-1.2.23.tar.gz rmd160 ...WRONGCHECKSUM...
- Distfile checksum: rrdtool-1.2.23.tar.gz rmd160 7bbfce4fecc2a8e1ca081169e70c1a298ab1b75a
- Error: Checksum (sha256) mismatch for rrdtool-1.2.23.tar.gz
- Portfile checksum: rrdtool-1.2.23.tar.gz sha256 ...WRONGCHECKSUM...
- Distfile checksum: rrdtool-1.2.23.tar.gz sha256 2829fcb7393bac85925090b286b1f9c3cd3fbbf8e7f35796ef4131322509aa53
- The correct checksum line may be:
- checksums           rmd160  7bbfce4fecc2a8e1ca081169e70c1a298ab1b75a \
-                     sha256  2829fcb7393bac85925090b286b1f9c3cd3fbbf8e7f35796ef4131322509aa5
- Error: Failed to checksum rrdtool: Unable to verify file checksums
- Error: See ...SOMEPATH.../rrdtool/main.log for details.
- Error: Follow https://guide.macports.org/#project.tickets to report a bug.
- Error: Processing of port rrdtool failed
- ```
+    The checksums specified in a Portfile are checked with the fetched tarball for security. For the best security, use rmd160 and sha256 checksum types. Checksums should also include the target file's size.
+
+    ```
+    checksums               rmd160  7bbfce4fecc2a8e1ca081169e70c1a298ab1b75a \
+                            sha256  2829fcb7393bac85925090b286b1f9c3cd3fbbf8e7f35796ef4131322509aa53 \
+                            size    1061530
+    ```
+
+    To find the correct checksums for a port's distribution file, follow one of these examples:
+
+    ```
+    %% openssl dgst -rmd160 rrdtool-1.2.23.tar.gz
+    %% openssl dgst -sha256 rrdtool-1.2.23.tar.gz
+    ```
+
+    ```
+    RIPEMD160( ... rrdtool-1.2.23.tar.gz)= 7bbfce4fecc2a8e1ca081169e70c1a298ab1b75a
+    SHA256( ... rrdtool-1.2.23.tar.gz)= 2829fcb7393bac85925090b286b1f9c3cd3fbbf8e7f35796ef4131322509aa53
+    ```
+
+    or update the version in the Portfile:
+
+    ```
+    %% sudo port edit rrdtool
+    ```
+
+    and run:
+
+    ```
+    %% port -v checksum rrdtool
+    ```
+
+    ```
+    --->  Fetching distfiles for rrdtool
+    --->  Verifying checksums for rrdtool
+    --->  Checksumming rrdtool-1.2.23.tar.gz
+    Error: Checksum (rmd160) mismatch for rrdtool-1.2.23.tar.gz
+    Portfile checksum: rrdtool-1.2.23.tar.gz rmd160 ...WRONGCHECKSUM...
+    Distfile checksum: rrdtool-1.2.23.tar.gz rmd160 7bbfce4fecc2a8e1ca081169e70c1a298ab1b75a
+    Error: Checksum (sha256) mismatch for rrdtool-1.2.23.tar.gz
+    Portfile checksum: rrdtool-1.2.23.tar.gz sha256 ...WRONGCHECKSUM...
+    Distfile checksum: rrdtool-1.2.23.tar.gz sha256 2829fcb7393bac85925090b286b1f9c3cd3fbbf8e7f35796ef4131322509aa53
+    The correct checksum line may be:
+    checksums           rmd160  7bbfce4fecc2a8e1ca081169e70c1a298ab1b75a \
+                        sha256  2829fcb7393bac85925090b286b1f9c3cd3fbbf8e7f35796ef4131322509aa5
+    Error: Failed to checksum rrdtool: Unable to verify file checksums
+    Error: See ...SOMEPATH.../rrdtool/main.log for details.
+    Error: Follow https://guide.macports.org/#project.tickets to report a bug.
+    Error: Processing of port rrdtool failed
+    ```
 
 13. Port dependencies
- A port's dependencies are ports that must be installed before another port is installed.
- ```
- depends_lib         port:perl5.8 \
-                     port:tcl \
-                     port:zlib
- ```
+    A port's dependencies are ports that must be installed before another port is installed.
+
+    ```
+    depends_lib         port:perl5.8 \
+                        port:tcl \
+                        port:zlib
+    ```
 
 14. Port configure arguments (optional)
- ```
- configure.args      --enable-perl-site-install \
-                     --mandir=${prefix}/share/man
- ```
+
+    ```
+    configure.args      --enable-perl-site-install \
+                        --mandir=${prefix}/share/man
+    ```
 
 ## 4.3. Example Portfiles
 
@@ -2160,39 +2204,42 @@ Patch files are files created with the Unix command **diff** that are applied us
 If you wish to contribute modifications or fixes to a Portfile, you should do so in the form of a patch. Follow the steps below to create Portfile patch files
 
 1. Make a copy of the Portfile you wish to modify; both files must be in the same directory, though it may be any directory.
- ```
- %% cp -p Portfile Portfile.orig
- ```
+
+   ```
+   %% cp -p Portfile Portfile.orig
+   ```
 
 2. Edit the file to make it as you want it to be after it is fetched.
 3. Now use the Unix command **diff -u** to create a “unified” diff patch file. Put the name of the port in the patchfile, for example, Portfile-rrdtool.diff.
- ```
- %% diff -u Portfile.orig Portfile > Portfile-rrdtool.diff
- ```
+
+   ```
+   %% diff -u Portfile.orig Portfile > Portfile-rrdtool.diff
+   ```
 
 4. A patch file that is a “unified” diff file is the easiest to interpret by humans and this type should always be used for ports. The Portfile patch below will change the version and checksums when applied.
- ```
- --- Portfile.orig        2011-07-25 18:52:12.000000000 -0700
- +++ Portfile    2011-07-25 18:53:35.000000000 -0700
- @@ -2,7 +2,7 @@
-  PortSystem          1.0
-  name                foo
+
+   ```
+   --- Portfile.orig        2011-07-25 18:52:12.000000000 -0700
+   +++ Portfile    2011-07-25 18:53:35.000000000 -0700
+   @@ -2,7 +2,7 @@
+    PortSystem          1.0
+    name                foo
   
- -version             1.3.0
- +version             1.4.0
-  categories          net
-  maintainers         nomaintainer
-  description         A network monitoring daemon.
- @@ -13,9 +13,9 @@
+   -version             1.3.0
+   +version             1.4.0
+    categories          net
+    maintainers         nomaintainer
+    description         A network monitoring daemon.
+   @@ -13,9 +13,9 @@
   
-  homepage            http://rsug.itd.umich.edu/software/${name}
+    homepage            http://rsug.itd.umich.edu/software/${name}
   
-  master_sites        ${homepage}/files/
- -checksums           rmd160 f0953b21cdb5eb327e40d4b215110b71
- +checksums           rmd160 01532e67a596bfff6a54aa36face26ae
-  extract.suffix      .tgz
-  platforms           darwin
- ```
+    master_sites        ${homepage}/files/
+   -checksums           rmd160 f0953b21cdb5eb327e40d4b215110b71
+   +checksums           rmd160 01532e67a596bfff6a54aa36face26ae
+    extract.suffix      .tgz
+    platforms           darwin
+   ```
 
 Now you may attach the patch file to a MacPorts Trac ticket for the port author to evaluate.
 
@@ -2205,94 +2252,112 @@ Generally speaking, you should create one patch file for each logical change tha
 To create a patch to modify a single file, follow the steps below.
 
 1. Locate the file you wish to patch in its original location within the unpacked source directory and make a duplicate of it.
- ```
- %% cd ~/Downloads/foo-1.34/src
- %% cp -p Makefile.in Makefile.in.orig
- ```
+
+   ```
+   %% cd ~/Downloads/foo-1.34/src
+   %% cp -p Makefile.in Makefile.in.orig
+   ```
 
 2. Edit the file and modify the text to reflect your corrections.
 3. Now **cd** to the top-level directory of the unpacked source, and use the Unix command **diff -u** to create a “unified” diff patch file.
- ```
- %% cd ~/Downloads/foo-1.34
- %% diff -u src/Makefile.in.orig src/Makefile.in > destdir-variable-fix.diff
- ```
- You should execute **diff** from the top-level directory of the unpacked source code, because during the patch phase MacPorts by default uses the patch argument `-p0`, which does not strip prefixes with any leading slashes from file names found in the patch file (as opposed to `-p1` that strips one, etc), and any path not relative to the top-level directory of the unpacked source will fail during the patch phase.
- ### Note
- If you find an existing source file patch you wish to use that contains leading path information (diff was executed from a directory higher than the top-level source directory), you will need to use the [patch phase keyword](#reference.phases.patch "5.3.6. Patch Phase Keywords") `patch.pre_args` to specify a `-px` value for how many prefixes with leading slashes are to be stripped off.
+
+   ```
+   %% cd ~/Downloads/foo-1.34
+   %% diff -u src/Makefile.in.orig src/Makefile.in > destdir-variable-fix.diff
+   ```
+
+   You should execute **diff** from the top-level directory of the unpacked source code, because during the patch phase MacPorts by default uses the patch argument `-p0`, which does not strip prefixes with any leading slashes from file names found in the patch file (as opposed to `-p1` that strips one, etc), and any path not relative to the top-level directory of the unpacked source will fail during the patch phase.
+
+   ### Note
+
+   If you find an existing source file patch you wish to use that contains leading path information (diff was executed from a directory higher than the top-level source directory), you will need to use the [patch phase keyword](#reference.phases.patch "5.3.6. Patch Phase Keywords") `patch.pre_args` to specify a `-px` value for how many prefixes with leading slashes are to be stripped off.
 4. A patch file that is a “unified” diff file is the easiest to interpret by humans and this type should always be used for ports. See the example below where a patch adds `DESTDIR` support to `Makefile.in`.
- ```
- --- src/Makefile.in.orig   2007-06-01 16:30:47.000000000 -0700
- +++ src/Makefile.in       2007-06-20 10:10:59.000000000 -0700
- @@ -131,23 +131,23 @@
-         $(INSTALL_DATA)/gdata $(INSTALL_DATA)/perl
+
+   ```
+   --- src/Makefile.in.orig   2007-06-01 16:30:47.000000000 -0700
+   +++ src/Makefile.in       2007-06-20 10:10:59.000000000 -0700
+   @@ -131,23 +131,23 @@
+           $(INSTALL_DATA)/gdata $(INSTALL_DATA)/perl
   
-  install-lib:
- -       -mkdir -p $(INSTALL_LIB)
- +       -mkdir -p $(DESTDIR)$(INSTALL_LIB)
-         $(PERL) tools/install_lib -s src -l $(INSTALL_LIB) $(LIBS)
- -       cp $(TEXT) $(INSTALL_LIB)/
- +       cp $(TEXT) $(DESTDIR)$(INSTALL_LIB)/
- ```
+    install-lib:
+   -       -mkdir -p $(INSTALL_LIB)
+   +       -mkdir -p $(DESTDIR)$(INSTALL_LIB)
+           $(PERL) tools/install_lib -s src -l $(INSTALL_LIB) $(LIBS)
+   -       cp $(TEXT) $(INSTALL_LIB)/
+   +       cp $(TEXT) $(DESTDIR)$(INSTALL_LIB)/
+   ```
 
 5. Place the patch `destdir-variable-fix.diff` in the directory `${portpath}/files` and use it in a port using the `patchfiles` keyword. `${portpath}` may be in a local Portfile repository during development, or `files/` may be in a port's `${portpath}` in the global MacPorts repository.
- ```
- patchfiles          destdir-variable-fix.diff
- ```
+
+   ```
+   patchfiles          destdir-variable-fix.diff
+   ```
 
 ### 4.6.3. Manually Applying Patches
 
 MacPorts applies patch files automatically, but you may want to know how to apply patch files manually if you want to test patch files you have created or you wish to apply uncommitted Portfile patches.
 
 1. Change to the directory containing the file to be patched. In this example, we'll apply a Portfile patch to the postfix port.
- ```
- %% cd $(port dir postfix)
- ```
+
+   ```
+   %% cd $(port dir postfix)
+   ```
 
 2. Now apply the patch from your Downloads folder, or wherever you put it. The patchfile knows the name of the file to be patched.
- ```
- %% patch -p0 < ~/Downloads/Portfile-postfix.diff
- ```
- ```
- patching file Portfile
- ```
+
+   ```
+   %% patch -p0 < ~/Downloads/Portfile-postfix.diff
+   ```
+
+   ```
+   patching file Portfile
+   ```
 
 ## 4.7. Local Portfile Repositories
 
 To create and test Portfiles that are not yet published in the MacPorts ports tree, you may create a local Portfile repository as shown. Replace the hypothetical user `julesverne` with your username in the example below.
 
 1. Open `sources.conf` in a text editor. For example, to open it into TextEdit:
- ```
- %% open -e ${prefix}/etc/macports/sources.conf
- ```
+
+   ```
+   %% open -e ${prefix}/etc/macports/sources.conf
+   ```
 
 2. Insert a URL pointing to your local repository location before the rsync URL as shown.
- ```
- file:///Users/julesverne/ports
- rsync://rsync.macports.org/macports/release/tarballs/ports.tar [default]
- ```
- ### Note
- The file URL should always appear before the rsync URL so that local Portfiles can be tested that are duplicated in the MacPorts tree, because **port** will always operate on the first Portfile it encounters.
+
+   ```
+   file:///Users/julesverne/ports
+   rsync://rsync.macports.org/macports/release/tarballs/ports.tar [default]
+   ```
+
+   ### Note
+
+   The file URL should always appear before the rsync URL so that local Portfiles can be tested that are duplicated in the MacPorts tree, because **port** will always operate on the first Portfile it encounters.
 3. Place the Portfiles you create inside a directory whose name matches the port, which should in turn be placed inside a directory that reflects the port's primary category (the first category entry in the Portfile). For example, to create the directory for a hypothetical port “bestevergame” and to begin editing its Portfile in TextEdit, you can use these commands:
- ```
- %% mkdir -p ~/ports/games/bestevergame
- %% cd ~/ports/games/bestevergame
- %% touch Portfile
- %% open -e Portfile
- ```
- See other sections in the Guide for help writing Portfiles. If you've already written the Portfile elsewhere, you can instead copy the Portfile into this directory.
+
+   ```
+   %% mkdir -p ~/ports/games/bestevergame
+   %% cd ~/ports/games/bestevergame
+   %% touch Portfile
+   %% open -e Portfile
+   ```
+
+   See other sections in the Guide for help writing Portfiles. If you've already written the Portfile elsewhere, you can instead copy the Portfile into this directory.
 4. If your Portfile needs to apply any patches to the port's source files, create a `files` directory and place the patchfiles in it, and reference the patchfiles in your Portfile, as explained in [Creating Source Code Patches](#development.patches.source "4.6.2. Creating Source Code Patches").
 5. After you create or update your Portfile, use **portindex** in the local repository's directory to create or update the index of the ports in your local repository.
- ```
- %% cd ~/ports
- %% portindex
- ```
- ```
- Creating software index in /Users/julesverne/ports
- Adding port games/bestevergame
- Total number of ports parsed:   1
- Ports successfully parsed:      1
- Ports failed:                   0
- ```
+
+   ```
+   %% cd ~/ports
+   %% portindex
+   ```
+
+   ```
+   Creating software index in /Users/julesverne/ports
+   Adding port games/bestevergame
+   Total number of ports parsed:   1
+   Ports successfully parsed:      1
+   Ports failed:                   0
+   ```
 
 Once the local port is added to the `PortIndex`, it becomes available for searching or installation as with any other Portfile in the MacPorts tree:
 
@@ -2428,33 +2493,38 @@ depends_lib-append  port:kdelibs4 \
 The following steps have to be taken to ensure a smooth transition for a MacPorts user updating his local installation using **`sudo port upgrade`**:
 
 1. add the line `replaced_by foo` where foo is the port this one is replaced by; when a user upgrades this port, MacPorts will instead install the replacement port
- ```
- replaced_by         skrooge
- ```
+
+   ```
+   replaced_by         skrooge
+   ```
 
 2. increase the version, revision, or epoch, so that users who have this port installed will get notice in `port                 outdated` that they should upgrade it and trigger the above process
- ```
- revision            1
- ```
+
+   ```
+   revision            1
+   ```
 
 3. clear distfiles (have a line reading only `distfiles`) so that no distfile is downloaded for this stub port
- ```
- distfiles
- ```
+
+   ```
+   distfiles
+   ```
 
 4. delete master\_sites since there aren't any distfiles to download
 5. disable livecheck
- ```
- livecheck.type      none
- ```
+
+   ```
+   livecheck.type      none
+   ```
 
 6. add a pre-configure block with a `ui_error` and `return -code error` explaining to users who try to install this port that the port has been replaced
- ```
- pre-configure {
-     ui_error "Please do not install this port since it has been replaced by 'skrooge'."
-     return -code error
- }
- ```
+
+   ```
+   pre-configure {
+       ui_error "Please do not install this port since it has been replaced by 'skrooge'."
+       return -code error
+   }
+   ```
 
 With above modifications the port file eventually looks like this:
 
@@ -3117,16 +3187,16 @@ Keyword list modifiers are keywords that end in -append, -delete or -replace. Ke
 Keyword list modifiers are most frequently used for these three purposes:
 
 1. Preserve configure defaults set by a previously executed Portfile keyword or by MacPorts base
- MacPorts base sets the gcc compiler flags CFLAGS and LDFLAGS for all ports using `configure.cflags` and `configure.ldflags`, therefore to keep from overwriting the default compiler flags use `configure.cflags-append` and `configure.ldflags-append`.
- - `configure.cflags-append`
- - `configure.ldflags-append`
+   MacPorts base sets the gcc compiler flags CFLAGS and LDFLAGS for all ports using `configure.cflags` and `configure.ldflags`, therefore to keep from overwriting the default compiler flags use `configure.cflags-append` and `configure.ldflags-append`.
+   - `configure.cflags-append`
+   - `configure.ldflags-append`
 2. Preserve PortGroup Dependencies
- Ports in a PortGroup have default library dependencies set by MacPorts base. Therefore, never use `depends_lib` in ports belonging to a PortGroup or it will overwrite the default library dependencies. Instead, use `depends_lib-append`.
+   Ports in a PortGroup have default library dependencies set by MacPorts base. Therefore, never use `depends_lib` in ports belonging to a PortGroup or it will overwrite the default library dependencies. Instead, use `depends_lib-append`.
 3. Add or Delete Items for Variants
- When a variant requires more or fewer dependencies, distfiles, or patchfiles, when the variant is invoked you want to add or remove items to the appropriate keyword values list set in the global section of the Portfile. Use the appropriate keywords, for example:
- - `depends_lib-append` or `depends_lib-delete` or `depends_lib-replace`
- - `distfiles-append` or `distfiles-delete` or `distfiles-replace`
- - `patchfiles-append` or `patchfiles-delete` or `patchfiles-replace`
+   When a variant requires more or fewer dependencies, distfiles, or patchfiles, when the variant is invoked you want to add or remove items to the appropriate keyword values list set in the global section of the Portfile. Use the appropriate keywords, for example:
+   - `depends_lib-append` or `depends_lib-delete` or `depends_lib-replace`
+   - `distfiles-append` or `distfiles-delete` or `distfiles-replace`
+   - `patchfiles-append` or `patchfiles-delete` or `patchfiles-replace`
 
 #### 5.3.2.2. Keyword Argument Modifiers (.pre\_args /.post\_args)
 
@@ -3150,21 +3220,28 @@ If a `master_sites` keyword has multiple values, after any mirrors are expanded 
 
 - Default: `none` (but the `macports_distfiles` mirror is always implicitly appended)
 - Examples:
+
  ```
  master_sites        https://www.example.org/files/ \
                      https://mirror.example.org/example_org/files/
  ```
+
  You may also use mirror site lists predefined by MacPorts. Here the sourceforge, gnu, and freebsd mirrors are used.
+
  ```
  master_sites        sourceforge gnu freebsd
  ```
+
  When using mirror master\_sites, the subdirectory `${name}` is checked on every mirror. If the mirror subdirectory does not match ${name}, then you may specify it using after the mirror separated by a colon.
+
  ```
  master_sites        sourceforge:widget \
                      gnu:widget
  ```
+
  For ports that must fetch multiple download files from different locations, you must label the files with tags and match the tags to a `distfiles` keyword. The format is `mirror:subdirectory:tag`.
  In the example below, file\_one.tar.gz is fetched from sourceforge mirrors in subdirectory `${name}`; file tagtwo.tar.gz is fetched from the gnu mirrors in subdirectory sources.
+
  ```
  master_sites        sourceforge::tagone \
                      gnu:sources:tagtwo
@@ -3178,6 +3255,7 @@ Subdirectory to append to all mirror sites for any list specified in `${master_s
 
 - Default: `${name}`
 - Example:
+
  ```
  master_sites.mirror_subdir  magic
  ```
@@ -3188,6 +3266,7 @@ A list of sites from which a port's patchfiles may be downloaded, where applicab
 
 - Default: `${master_sites}`
 - Example:
+
  ```
  patch_sites         ftp://ftp.patchcityrepo.com/pub/magic/patches
  ```
@@ -3198,6 +3277,7 @@ Subdirectory to append to all mirror sites for any list specified in `${patch_si
 
 - Default: `${name}`
 - Example:
+
  ```
  patch_sites.mirror_subdir   magic
  ```
@@ -3208,6 +3288,7 @@ The name of the distribution filename, not including the extract suffix (see bel
 
 - Default: `${name}-${version}`
 - Example:
+
  ```
  distname            ${name}
  ```
@@ -3218,9 +3299,11 @@ The full distribution filename, including the extract suffix. Used to specify no
 
 - Default: `${distname}${extract.suffix}`
 - Examples:
+
  ```
  distfiles           ${name}-dev_src.tgz
  ```
+
  ```
  distfiles           file_one.tar.gz:tagone \
                      file_two.tar.gz:tagtwo
@@ -3232,9 +3315,11 @@ The last path component of `${distpath}`. Override it to store multiple ports' d
 
 - Default: `${name}`
 - Examples:
+
  ```
  dist_subdir         gcc
  ```
+
  ```
  dist_subdir         ${name}/${version}_1
  ```
@@ -3245,9 +3330,11 @@ Sets the path to source directory relative to workpath. It can be used if the ex
 
 - Default: `${distname}`
 - Examples:
+
  ```
  worksrcdir          ${name}-src-${version}
  ```
+
  ```
  worksrcdir          ${distname}/src
  ```
@@ -3263,6 +3350,7 @@ Change the fetch type. This is only necessary if a [bzr](#reference.phases.fetch
 - Default: `standard`
 - Values: `standard` `bzr` `cvs` `git` `hg` `svn`
 - Example:
+
  ```
  fetch.type          svn
  svn.url             svn://example.org
@@ -3275,6 +3363,7 @@ HTTP or FTP user to fetch the resource.
 
 - Default: none
 - Example:
+
  ```
  TODO: add example
  ```
@@ -3285,6 +3374,7 @@ User-Agent string to send when fetching the resource.
 
 - Default: MacPorts/x.y.z libcurl/x.y.z
 - Example:
+
  ```
  fetch.user_agent    Mozilla/5.0
  ```
@@ -3295,6 +3385,7 @@ HTTP or FTP password to fetch the resource.
 
 - Default: none
 - Example:
+
  ```
  TODO: add example
  ```
@@ -3305,6 +3396,7 @@ Whether to use EPSV command for FTP transfers.
 
 - Default: `yes`
 - Example:
+
  ```
  fetch.use_epsv      no
  ```
@@ -3315,6 +3407,7 @@ Whether to ignore the host SSL certificate (for HTTPS).
 
 - Default: `no`
 - Example:
+
  ```
  fetch.ignore_sslcert    yes
  ```
@@ -3331,9 +3424,11 @@ This specifies the url from which to fetch files.
 
 - Default: none
 - Examples:
+
  ```
  bzr.url             lp:inkscape
  ```
+
  ```
  bzr.url             lp:~callelejdfors/pycg/trunk
  ```
@@ -3344,6 +3439,7 @@ Optional tag for fetching with bzr, this specifies the revision to checkout
 
 - Default: -1 (the last committed revision)
 - Example:
+
  ```
  bzr.revision          2209
  ```
@@ -3360,6 +3456,7 @@ Specify the url from which to fetch files.
 
 - Default: none
 - Example:
+
  ```
  cvs.root            :pserver:anonymous@cvs.sv.gnu.org:/sources/emacs
  ```
@@ -3370,6 +3467,7 @@ Password to login to the CVS server.
 
 - Default: none
 - Example:
+
  ```
  cvs.password        nice-password
  ```
@@ -3380,6 +3478,7 @@ Optional for fetching with CVS, this specifies the code revision to checkout.
 
 - Default: none
 - Example:
+
  ```
  cvs.tag             HEAD
  ```
@@ -3390,6 +3489,7 @@ A date that identifies the CVS code set to checkout.
 
 - Default: none
 - Example:
+
  ```
  cvs.date            "12-April-2007"
  ```
@@ -3400,6 +3500,7 @@ A CVS module from which to check out the code.
 
 - Default: none
 - Example:
+
  ```
  cvs.module          Sources
  ```
@@ -3416,9 +3517,11 @@ This specifies the url from which to fetch files.
 
 - Default: none
 - Examples:
+
  ```
  git.url             git://git.kernel.org/pub/scm/git/git.git
  ```
+
  ```
  git.url             https://www.kernel.org/pub/scm/git/git.git
  ```
@@ -3429,9 +3532,11 @@ Optional tag for fetching with git, this specifies the tag or other commit-ish t
 
 - Default: none
 - Example:
+
  ```
  git.branch             72bf1c8
  ```
+
  ```
  git.branch             origin/next
  ```
@@ -3448,9 +3553,11 @@ This specifies the url from which to fetch files.
 
 - Default: none
 - Examples:
+
  ```
  hg.url              https://www.kernel.org/hg/index.cgi/linux-2.6/
  ```
+
  ```
  hg.url              http://hg.intevation.org/mercurial
  ```
@@ -3461,9 +3568,11 @@ Optional tag which should be fetched. Can be a Mercurial tag or a revision. To p
 
 - Default: tip
 - Example:
+
  ```
  hg.tag              v1.3
  ```
+
  ```
  hg.tag              ceb884843737
  ```
@@ -3480,9 +3589,11 @@ This specifies the url from which to fetch files.
 
 - Default: none
 - Examples:
+
  ```
  svn.url             https://www.example.com/svn-repo/mydirectory
  ```
+
  ```
  svn.url             svn://svn.example.com/svn-repo/mydirectory
  ```
@@ -3493,6 +3604,7 @@ Optional tag for fetching with Subversion, this specifies the peg revision to ch
 
 - Default: none
 - Example:
+
  ```
  svn.revision        37192
  ```
@@ -3503,6 +3615,7 @@ Optional tag for fetching with Subversion, this specifies whether to check out t
 
 - Default: export
 - Example:
+
  ```
  svn.method          checkout
  ```
@@ -3519,11 +3632,13 @@ At least two checksum types (typically rmd160 and sha256) should be used to ensu
 
 - Default: none
 - Examples:
+
  ```
  checksums           rmd160  0c1147242adf476f5e93f4d59b553ee3ea378b23 \
                      sha256  baf8a29ff721178317aac7b864c2d392b1accc02de8677dd24c18fd5717bf26e \
                      size    1039840
  ```
+
  ```
  checksums           ${distname}${extract.suffix} \
                          rmd160  0c1147242adf476f5e93f4d59b553ee3ea378b23 \
@@ -3545,6 +3660,7 @@ This keyword is used to specify that the extract phase should be done as the roo
 
 - Default: `no`
 - Example:
+
  ```
  extract.asroot      no
  ```
@@ -3555,6 +3671,7 @@ This keyword is used to specify the extract suffix type.
 
 - Default: `.tar.gz`
 - Example:
+
  ```
  extract.suffix      .tgz
  ```
@@ -3568,6 +3685,7 @@ extract.cmd = 7za
 
 - Default: `no`
 - Example:
+
  ```
  use_7z           yes
  ```
@@ -3581,6 +3699,7 @@ extract.cmd = bzip
 
 - Default: `no`
 - Example:
+
  ```
  use_bzip2           yes
  ```
@@ -3594,6 +3713,7 @@ extract.cmd = hdiutil
 
 - Default: `no`
 - Example:
+
  ```
  use_dmg              yes
  ```
@@ -3607,6 +3727,7 @@ extract.cmd = lzip
 
 - Default: `no`
 - Example:
+
  ```
  use_lzip             yes
  ```
@@ -3620,6 +3741,7 @@ extract.cmd = lzma
 
 - Default: `no`
 - Example:
+
  ```
  use_lzma             yes
  ```
@@ -3634,6 +3756,7 @@ extract.pre\_args = -xf
 
 - Default: `no`
 - Example:
+
  ```
  use_tar             yes
  ```
@@ -3649,6 +3772,7 @@ extract.post\_args = "-d ${extract.dir}"
 
 - Default: `no`
 - Example:
+
  ```
  use_zip             yes
  ```
@@ -3662,6 +3786,7 @@ extract.cmd = xz
 
 - Default: `no`
 - Example:
+
  ```
  use_xz             yes
  ```
@@ -3672,6 +3797,7 @@ This keyword is used to specify if the directory `worksrcdir` is part of the dis
 
 - Default: `no`
 - Example:
+
  ```
  extract.mkdir       yes
  ```
@@ -3682,9 +3808,11 @@ List of files to extract into `${worksrcpath}`. Only use if default extract beha
 
 - Default: `${distfiles}`
 - Example:
+
  ```
  extract.only        foo.tar.gz
  ```
+
  ```
  extract.only-append     bar.tar.gz
  extract.only-delete     foo.tar.gz
@@ -3696,6 +3824,7 @@ Command to perform extraction.
 
 - Default: **gzip**
 - Example:
+
  ```
  extract.cmd         gunzip
  ```
@@ -3706,6 +3835,7 @@ Main arguments to `extract.cmd`; additional arguments passed before and after th
 
 - Default: `${distpath}/${distfile}`
 - Example:
+
  ```
  extract.args        ${distpath}/${distfile}
  ```
@@ -3715,6 +3845,7 @@ The following argument modifiers are available:
 - `extract.pre_args`, defaults to: `-dc`
 - `extract.post_args`, defaults to: `"| tar -xf -"`
 - Examples:
+
  ```
  extract.pre_args    xf
  extract.post_args   "| gnutar -x"
@@ -3730,6 +3861,7 @@ Specify the base path for patch files.
 
 - Default: `${worksrcpath}`
 - Example:
+
  ```
  patch.dir           ${worksrcpath}/util
  ```
@@ -3740,6 +3872,7 @@ Specify the command to be used for patching files.
 
 - Default: **patch**
 - Example:
+
  ```
  patch.cmd           cat
  ```
@@ -3750,10 +3883,12 @@ Specify patch files to be applied for a port; list modifiers specify patchfiles 
 
 - Default: none
 - Example:
+
  ```
  patchfiles          destdir-variable-fix.diff \
                      patch-source.c.diff
  ```
+
  ```
  patchfiles-append   patch-configure.diff
  patchfiles-delete   destdir-variable-fix.diff
@@ -3765,6 +3900,7 @@ Main arguments to `patch.cmd`; optional argument modifiers pass arguments before
 
 - Default: none
 - Example:
+
  ```
  patch.args          ???
  ```
@@ -3774,6 +3910,7 @@ The following argument modifiers are available:
 - `patch.pre_args`, defaults to: `-p0`
 - `patch.post_args`, defaults to: none
 - Examples:
+
  ```
  patch.pre_args      -p1
  patch.post_args     ???
@@ -3791,6 +3928,7 @@ Sets if the configure phase should be run. Can be used if the port has no `./con
 
 - Default: `yes`
 - Example:
+
  ```
  use_configure    no
  ```
@@ -3801,6 +3939,7 @@ Selects the command to be run in the default configure phase.
 
 - Default: `./configure`
 - Example:
+
  ```
  configure.cmd       ./config.sh
  ```
@@ -3811,9 +3950,11 @@ Set environment variables for configure; list modifiers add and delete items fro
 
 - Default: `CFLAGS=-I${prefix}/include               LDFLAGS=-L${prefix}/lib`
 - Example:
+
  ```
  configure.env       QTDIR=${prefix}/lib/qt3
  ```
+
  ```
  configure.env-append    ABI=32
  configure.env-delete    TCLROOT=${prefix}
@@ -3825,9 +3966,11 @@ Set optimization compiler flags; list modifiers add or delete items from a previ
 
 - Default: `-Os`
 - Example:
+
  ```
  configure.optflags    -O2
  ```
+
  ```
  configure.optflags-append     -finline-functions
  configure.optflags-delete     -Os
@@ -3839,9 +3982,11 @@ Set CFLAGS compiler flags; list modifiers add or delete items from a previous Po
 
 - Default: `${configure.optflags}`
 - Example:
+
  ```
  configure.cflags    -Os -flat_namespace
  ```
+
  ```
  configure.cflags-append     "-undefined suppress"
  configure.cflags-delete     -O2
@@ -3853,9 +3998,11 @@ Set LDFLAGS compiler flags; list modifiers add or delete items from a previous P
 
 - Default: `-L${prefix}/lib -Wl,-headerpad_max_install_names`
 - Example:
+
  ```
  configure.ldflags   "-L${worksrcpath}/zlib -lz"
  ```
+
  ```
  configure.ldflags-append    "-L/usr/X11R6/lib -L${worksrcpath}/lib"
  configure.ldflags-delete    -L${prefix}/lib/db44
@@ -3867,9 +4014,11 @@ Set CPPFLAGS to be passed to the C processor; list modifiers add or delete items
 
 - Default: `-I${prefix}/include`
 - Example:
+
  ```
  configure.cppflags  -I${worksrcpath}/include
  ```
+
  ```
  configure.cppflags-append   "-I/usr/X11R6/lib -I${worksrcpath}/lib -DHAVE_RRD_12X"
  configure.cppflags-delete   -I${prefix}/lib/db44
@@ -3881,6 +4030,7 @@ Set CXXFLAGS to be passed to the C++ processor; list modifiers add or delete ite
 
 - Default: `${configure.optflags}`
 - Example:
+
  ```
  TODO: add example
  ```
@@ -3891,6 +4041,7 @@ TODO: add description
 
 - Default: `${configure.optflags}`
 - Example:
+
  ```
  TODO: add example
  ```
@@ -3901,6 +4052,7 @@ TODO: add description
 
 - Default:???
 - Example:
+
  ```
  TODO: add example
  ```
@@ -3911,6 +4063,7 @@ The version of the macOS SDK to build against.
 
 - Default: ${macos\_version\_major}
 - Example:
+
  ```
  configure.sdk_version 10.13
  ```
@@ -3923,6 +4076,7 @@ The path to the macOS SDK to build against.
  Default: /Library/Developer/CommandLineTools/SDKs/MacOSX${configure.sdk\_version}.sdk (later macOS with Command Line Tools)
  Default: ${developer\_dir}/Platforms/MacOSX.platform/Developer/SDKs/MacOSX${configure.sdk\_version}.sdk (macOS without Command Line Tools)
 - Example:
+
  ```
  configure.sdkroot
  ```
@@ -3933,6 +4087,7 @@ Set FFLAGS to be passed to the Fortran compiler; list modifiers add or delete it
 
 - Default: `${configure.optflags}`
 - Example:
+
  ```
  configure.fflags    -Os
  ```
@@ -3943,6 +4098,7 @@ Set FCFLAGS to be passed to the Fortran compiler; list modifiers add or delete i
 
 - Default: `${configure.optflags}`
 - Example:
+
  ```
  configure.fcflags   -Os
  ```
@@ -3953,6 +4109,7 @@ Set F90FLAGS to be passed to the Fortran 90 compiler; list modifiers add or dele
 
 - Default: `${configure.optflags}`
 - Example:
+
  ```
  configure.f90flags  -Os
  ```
@@ -3963,6 +4120,7 @@ C compiler for the CC environment variable when invoking the configure script.
 
 - Default: `???`
 - Example:
+
  ```
  configure.cc        ${prefix}/bin/gcc-mp-4.2
  ```
@@ -3973,6 +4131,7 @@ C preprocessor for the CPP environment variable when invoking the configure scri
 
 - Default: `???`
 - Example:
+
  ```
  configure.cpp       /usr/bin/cpp-3.3
  ```
@@ -3983,6 +4142,7 @@ C++ compiler for the CXX environment variable when invoking the configure script
 
 - Default: `???`
 - Example:
+
  ```
  configure.cxx       /usr/bin/g++-4.0
  ```
@@ -3993,6 +4153,7 @@ Objective-C compiler for the OBJC environment variable when invoking the configu
 
 - Default: `???`
 - Example:
+
  ```
  configure.objc      /usr/bin/gcc-4.0
  ```
@@ -4003,6 +4164,7 @@ Fortran compiler for the FC environment variable when invoking the configure scr
 
 - Default: `???`
 - Example:
+
  ```
  configure.fc        ${prefix}/bin/gfortran-mp-4.2
  ```
@@ -4013,6 +4175,7 @@ Fortran 77 compiler for the F77 environment variable when invoking the configure
 
 - Default: `???`
 - Example:
+
  ```
  configure.f77       ${prefix}/bin/gfortran-mp-4.2
  ```
@@ -4023,6 +4186,7 @@ Fortran 90 compiler for the F90 environment variable when invoking the configure
 
 - Default: `???`
 - Example:
+
  ```
  configure.f90       ${prefix}/bin/gfortran-mp-4.2
  ```
@@ -4033,6 +4197,7 @@ Java compiler for the JAVAC environment variable when invoking the configure scr
 
 - Default: `???`
 - Example:
+
  ```
  configure.javac     ${prefix}/bin/jikes
  ```
@@ -4049,6 +4214,7 @@ Only use it if a port really needs a specific different compiler. In many situat
 - Default: `clang` with Xcode 4.3 and later on OS X 10.7 and later
 - Values: `gcc-3.3` `gcc-4.0` `gcc-4.2` `llvm-gcc-4.2` `clang` `macports-clang-3.3` `macports-clang-3.4` `macports-clang-3.7` `macports-clang-3.8` `macports-clang-3.9` `macports-clang-4.0` `macports-clang-5.0` `macports-clang-6.0` `apple-gcc-4.0` `apple-gcc-4.2` `macports-gcc-4.3` `macports-gcc-4.4` `macports-gcc-4.5` `macports-gcc-4.6` `macports-gcc-4.7` `macports-gcc-4.8` `macports-gcc-4.9` `macports-gcc-5` `macports-gcc-6` `macports-gcc-7` `macports-gcc-8`
 - Example:
+
  ```
  configure.compiler  macports-gcc-4.5
  ```
@@ -4059,6 +4225,7 @@ Set PERL flag for selecting a Perl interpreter.
 
 - Default: `???`
 - Example:
+
  ```
  configure.perl      ${prefix}/bin/perl5.26
  ```
@@ -4069,6 +4236,7 @@ Set PYTHON flag for selecting a Python interpreter.
 
 - Default: `???`
 - Example:
+
  ```
  configure.python    ${prefix}/bin/python2.7
  ```
@@ -4079,6 +4247,7 @@ Set RUBY flag for selecting a Ruby interpreter.
 
 - Default: `???`
 - Example:
+
  ```
  configure.ruby      ${prefix}/bin/ruby
  ```
@@ -4089,6 +4258,7 @@ Set `INSTALL` flag for selecting an install tool; used for copying files and cre
 
 - Default: `/usr/bin/install`
 - Example:
+
  ```
  configure.install   ${prefix}/bin/ginstall
  ```
@@ -4099,6 +4269,7 @@ Set AWK flag for selecting an awk executable.
 
 - Default: `???`
 - Example:
+
  ```
  configure.awk       ${prefix}/bin/gawk
  ```
@@ -4109,6 +4280,7 @@ Set BISON flag for selecting a bison executable, a parser generator.
 
 - Default: `???`
 - Example:
+
  ```
  configure.bison     /usr/bin/bison
  ```
@@ -4119,6 +4291,7 @@ Set PKG\_CONFIG flag for helping find pkg\_config, a tool for retrieving informa
 
 - Default: `???`
 - Example:
+
  ```
  configure.pkg_config    ${prefix}/bin/pkg-config
  ```
@@ -4129,6 +4302,7 @@ Set PKG\_CONFIG\_PATH flag for telling pkg\_config where to search for informati
 
 - Default: `${prefix}/lib/pkgconfig:${prefix}/share/pkgconfig`
 - Example:
+
  ```
  configure.pkg_config_path   ${python.prefix}/lib/pkgconfig
  ```
@@ -4139,6 +4313,7 @@ Main arguments to `configure.cmd`; optional argument modifiers pass arguments be
 
 - Default: none
 - Example:
+
  ```
  configure.args      --bindir=${prefix}/bin
  ```
@@ -4148,6 +4323,7 @@ The following argument modifiers are available:
 - `configure.pre_args`, defaults to: `--prefix=${prefix}`
 - `configure.post_args`, defaults to: none
 - Examples:
+
  ```
  configure.pre_args  --prefix=${prefix}/share/bro
  configure.post_args OPT="-D__DARWIN_UNIX03"
@@ -4167,6 +4343,7 @@ Arguments used in the configure script to build the port universal.
 
 - Default: `--disable-dependency-tracking`
 - Example:
+
  ```
  TODO: add example
  ```
@@ -4181,6 +4358,7 @@ Additional flags to put in the CFLAGS environment variable when invoking the con
  (Snow Leopard through High Sierra) `-arch x86_64 -arch i386`
  (Big Sur and later) `-arch arm64 -arch x86_64`
 - Example:
+
  ```
  TODO: add example
  ```
@@ -4193,6 +4371,7 @@ Additional flags to put in the CPPFLAGS environment variable when invoking the c
  (PowerPC Tiger) `-isysroot ${developer_dir}/SDKs/MacOSX10.4u.sdk`
  (others) none
 - Example:
+
  ```
  TODO: add example
  ```
@@ -4207,6 +4386,7 @@ Additional flags to put in the CXXFLAGS environment variable when invoking the c
  (Snow Leopard through High Sierra) `-arch x86_64 -arch i386`
  (Big Sur and later) `-arch arm64 -arch x86_64`
 - Example:
+
  ```
  TODO: add example
  ```
@@ -4221,6 +4401,7 @@ Additional flags to put in the LDFLAGS environment variable when invoking the co
  (Snow Leopard through High Sierra) `-arch x86_64 -arch i386`
  (Big Sur and later) `-arch arm64 -arch x86_64`
 - Example:
+
  ```
  TODO: add example
  ```
@@ -4235,6 +4416,7 @@ Whether or not to use autoreconf
 
 - Default: `no`
 - Example:
+
  ```
  use_autoreconf      yes
  ```
@@ -4245,6 +4427,7 @@ Arguments to pass to autoreconf.
 
 - Default: `--install --verbose`
 - Example:
+
  ```
  autoreconf.args       --install --verbose --force
  ```
@@ -4255,6 +4438,7 @@ Directory in which to run `${autoreconf.cmd}`.
 
 - Default: `${worksrcpath}`
 - Example:
+
  ```
  autoreconf.dir        ./src
  ```
@@ -4265,6 +4449,7 @@ Whether or not to use automake.
 
 - Default: `no`
 - Example:
+
  ```
  use_automake        yes
  ```
@@ -4275,6 +4460,7 @@ Environment variables to pass to automake.
 
 - Default:???
 - Example:
+
  ```
  automake.env        CFLAGS=-I${prefix}/include
  ```
@@ -4285,6 +4471,7 @@ Arguments to pass to automake.
 
 - Default:???
 - Example:
+
  ```
  automake.args       --foreign
  ```
@@ -4295,6 +4482,7 @@ Directory in which to run `${automake.cmd}`.
 
 - Default: `${worksrcpath}`
 - Example:
+
  ```
  automake.dir        ./src
  ```
@@ -4305,6 +4493,7 @@ Whether or not to use autoconf.
 
 - Default: `no`
 - Example:
+
  ```
  use_autoconf        yes
  ```
@@ -4315,6 +4504,7 @@ Environmental variables to pass to autoconf.
 
 - Default:???
 - Example:
+
  ```
  autoconf.env        CFLAGS=-I${prefix}/include/gtk12
  ```
@@ -4325,6 +4515,7 @@ Arguments to pass to autoconf.
 
 - Default:???
 - Example:
+
  ```
  autoconf.args       "-l src/aclocaldir"
  ```
@@ -4335,6 +4526,7 @@ Directory in which to run `${autoconf.cmd}`.
 
 - Default: `${worksrcpath}`
 - Example:
+
  ```
  autoconf.dir        src
  ```
@@ -4349,6 +4541,7 @@ Make command to run in `${worksrcdir}`. Only use it if you can't use `build.type
 
 - Default: **make**
 - Example:
+
  ```
  build.cmd           scons
  ```
@@ -4360,6 +4553,7 @@ Defines which build software is required and sets `${build.cmd}` accordingly. Th
 - Default: `default` (the default Make on the current platform)
 - Values: `default` `bsd` `gnu` `xcode`
 - Example:
+
  ```
  build.type          bsd
  ```
@@ -4370,6 +4564,7 @@ Main arguments to `${build.cmd}`; optional argument modifiers pass arguments bef
 
 - Default: none
 - Example:
+
  ```
  build.args          -DNOWARN
  ```
@@ -4379,6 +4574,7 @@ The following argument modifiers are available:
 - `build.pre_args`, defaults to: `${build.target}`
 - `build.post_args`, defaults to: none
 - Examples:
+
  ```
  build.pre_args      -project AudioSlicer.xcode
  build.post_args     CFLAGS_SYS="-DUSE_FREETYPE -DPREFER_FREETYPE"
@@ -4390,9 +4586,11 @@ Build target to pass to `${build.cmd}`; list modifiers add or delete items from 
 
 - Default: `all`
 - Example:
+
  ```
  build.target        all-src
  ```
+
  ```
  build.target-append     doc extra
  build.target-delete     compat
@@ -4410,6 +4608,7 @@ This keyword is for specifying whether or not it is safe for a port to use multi
 
 - Default: `yes`
 - Example:
+
  ```
  use_parallel_build  no
  ```
@@ -4430,6 +4629,7 @@ Enable running test suites bundled with a port.
 
 - Default: `no`
 - Example:
+
  ```
  test.run            yes
  ```
@@ -4440,6 +4640,7 @@ Test command to run relative to `${worksrcdir}`.
 
 - Default: `${build.cmd}`
 - Example:
+
  ```
  test.cmd            checks.sh
  ```
@@ -4450,6 +4651,7 @@ Test target to pass to `${test.cmd}`.
 
 - Default: `test`
 - Example:
+
  ```
  test.target         checks
  ```
@@ -4460,6 +4662,7 @@ Main arguments to `test.cmd`; optional argument modifiers pass arguments before 
 
 - Default: none
 - Example:
+
  ```
  test.args    -f Makefile.test
  ```
@@ -4477,6 +4680,7 @@ Often `DYLD_LIBRARY_PATH` is set here to support testing dynamically linked libr
 
 - Default: none
 - Example:
+
  ```
  test.env       DYLD_LIBRARY_PATH=${worksrcpath}/src/.libs
  ```
@@ -4491,6 +4695,7 @@ Install command to run relative to `${worksrcdir}`.
 
 - Default: `${build.cmd}`
 - Example:
+
  ```
  destroot.cmd        scons
  ```
@@ -4501,6 +4706,7 @@ Main arguments to `${destroot.cmd}`; optional argument modifiers pass arguments 
 
 - Default: none
 - Example:
+
  ```
  destroot.args       BINDIR=${prefix}/bin
  ```
@@ -4510,6 +4716,7 @@ The following argument modifiers are available:
 - `destroot.pre_args`, defaults to: `${destroot.target}`
 - `destroot.post_args`, defaults to: `${destroot.destdir}`
 - Examples:
+
  ```
  destroot.pre_args   -project AudioSlicer.xcode
  destroot.post_args  INSTDIR=${destroot}${prefix}
@@ -4521,9 +4728,11 @@ Install target to pass to `${destroot.cmd}`; list modifiers add or delete items 
 
 - Default: `install`
 - Example:
+
  ```
  destroot.target     install install-config install-commandmode
  ```
+
  ```
  destroot.target-append  install-plugins
  destroot.target-delete  install-commandmode
@@ -4535,6 +4744,7 @@ Arguments passed to `${destroot.cmd}` via `${destroot.post_args}` to install cor
 
 - Default: `DESTDIR=${destroot}`
 - Example:
+
  ```
  destroot.destdir    prefix=${destroot}${prefix}
  ```
@@ -4549,6 +4759,7 @@ Umask to use during destroot.
 
 - Default: `022`
 - Example:
+
  ```
  destroot.umask      002
  ```
@@ -4559,6 +4770,7 @@ A list of directories that should not be removed if empty upon destroot completi
 
 - Default:???
 - Example:
+
  ```
  destroot.keepdirs   ${destroot}${prefix}/var/run \
                      ${destroot}${prefix}/var/log \
@@ -4581,6 +4793,7 @@ This means that the port installed files outside of their normal locations in `$
 
 - Default: `no`
 - Example:
+
  ```
  destroot.violate_mtree      yes
  ```
@@ -4667,12 +4880,14 @@ The variant declaration may contain any keywords that can be placed in a Portfil
 
 - Default: none
 - Examples:
+
  ```
  variant gnome requires glib {
      configure.args-append   --with-gnome
      depends_lib-append      port:gnome-session
  }
  ```
+
  ```
  variant apache2 conflicts apache {
      configure.args-append \
@@ -4686,6 +4901,7 @@ The optional `default_variants` keyword is used to specify variants that a port 
 
 - Default: none
 - Example:
+
  ```
  default_variants    +ssl +tcpd
  ```
@@ -4702,6 +4918,7 @@ When using MacPorts on macOS, a universal variant is defined by default to confi
 
 - Default: `yes`
 - Example:
+
  ```
  universal_variant   no
  ```
@@ -4729,16 +4946,19 @@ MacPorts allows platform-specific port options to be specified in a Portfile for
 ``platform darwin           *`version`*`` can be used to handle different tasks depending on the version of Darwin, the core operating system underlying macOS. *`version`* is the major version of Darwin, and can be `18` for macOS Mojave 10.14, `17` for macOS High Sierra 10.13, `16` for macOS Sierra 10.12, and so on.
 
 - Examples:
+
  ```
  platform darwin 10 {
      configure.env-append LIBS=-lresolv
  }
  ```
+
  ```
  platform darwin i386 {
      configure.args-append --disable-mmx
  }
  ```
+
  ```
  platform darwin 8 powerpc {
      configure.compiler gcc-3.3
@@ -4972,6 +5192,7 @@ Whether to automatically load the StartupItem after activating the port.
 
 - Default: `no`
 - Example:
+
  ```
  startupitem.autostart      yes
  ```
@@ -4982,6 +5203,7 @@ Trigger the creation of a StartupItem.
 
 - Default: `no`
 - Example:
+
  ```
  startupitem.create         yes
  ```
@@ -4992,6 +5214,7 @@ startupitem.custom\_file
 
 - Default: `(empty)`
 - Example:
+
  ```
  startupitem.custom_file    ${worksrcpath}/mydaemon.plist
  ```
@@ -5002,6 +5225,7 @@ Enable additional debug logging.
 
 - Default: `no`
 - Example:
+
  ```
  startupitem.debug          yes
  ```
@@ -5012,6 +5236,7 @@ Whether to install a link to the StartupItem in the appropriate subdirectory of 
 
 - Default: `yes`
 - Example:
+
  ```
  startupitem.install        no
  ```
@@ -5022,6 +5247,7 @@ Chooses the subdirectory in which to install the StartupItem. Also affects how i
 
 - Default: `LaunchDaemons`
 - Example:
+
  ```
  startupitem.location       LaunchAgents
  ```
@@ -5032,6 +5258,7 @@ Path to a logfile for logging events about the lifetime of the StartupItem. Depe
 
 - Default: `/dev/null`
 - Example:
+
  ```
  startupitem.logfile        ${prefix}/var/log/mydaemon.log
  ```
@@ -5042,6 +5269,7 @@ Path to a logfile for capturing standard error output from the StartupItem.
 
 - Default: `${startupitem.logfile}`
 - Example:
+
  ```
  startupitem.logfile.stderr ${prefix}/var/log/mydaemon-stderr.log
  ```
@@ -5052,6 +5280,7 @@ Control whether or not to log events to the log file. If logevents is set, event
 
 - Default: `no`
 - Example:
+
  ```
  startupitem.logevents      yes
  ```
@@ -5062,6 +5291,7 @@ Sets the name for the StartupItem. Defaults to the name of the port, so this key
 
 - Default: `${name}`
 - Example:
+
  ```
  startupitem.name           dhcpd
  ```
@@ -5072,6 +5302,7 @@ Cause the daemon to be restarted when a change in network state is detected.
 
 - Default: `no`
 - Example:
+
  ```
  startupitem.netchange      yes
  ```
@@ -5082,6 +5313,7 @@ The type of the StartupItem. Supported values are `launchd` for a macOS **launch
 
 - Default: `launchd` if on macOS and `${startupitem.create}` is true, `none` otherwise
 - Example:
+
  ```
  startupitem.type           launchd
  ```
@@ -5092,6 +5324,7 @@ startupitem.user
 
 - Default: `none`
 - Example:
+
  ```
  startupitem.user           my_daemon_user
  ```
@@ -5102,6 +5335,7 @@ startupitem.group
 
 - Default: `none`
 - Example:
+
  ```
  startupitem.group          my_daemon_group
  ```
@@ -5112,6 +5346,7 @@ Used when a port needs to install more than one StartupItem, this option consist
 
 - Default: none
 - Example:
+
  ```
  startupitems        name        myport-system \
                      location    LaunchDaemons \
@@ -5139,6 +5374,7 @@ Some daemons “daemonize” by detaching themselves from the controlling tty be
 
 - Default: none
 - Example:
+
  ```
  startupitem.executable  ${prefix}/sbin/vm-pop3d -d 10 -t 600
  ```
@@ -5195,6 +5431,7 @@ Specify a shell script to start, stop, and restart the daemon. In the absence of
 
 - Default: none
 - Examples:
+
  ```
  startupitem.start       "${prefix}/share/mysql/mysql.server start"
  startupitem.stop        "${prefix}/share/mysql/mysql.server stop"
@@ -5211,6 +5448,7 @@ Shell code that will be executed prior to any of the options `startupitem.start`
 
 - Default: none
 - Example:
+
  ```
  startupitem.init        BIN=${prefix}/sbin/bacula-fd
  ```
@@ -5223,6 +5461,7 @@ This keyword must be defined properly for **daemondo** to be able to monitor dae
  Default: \[none\] | \[`${prefix}/var/run/${name}.pid`\]
 - Values \[none auto manual clean\] \[*`/path/to/pidfile`*\]
 - Example:
+
  ```
  startupitem.pidfile     auto ${prefix}/var/run/${name}.pidfile
  ```
@@ -5313,6 +5552,7 @@ Generic download site options are to specify a `moddate` (modification date of a
 - Default: `sourceforge` or `googlecode` if the `${master_sites}` is one of these, else `freecode`.
 - Values: `freecode` `sourceforge` `googlecode` `moddate` `regex` `regexm` `md5` `none`
 - Examples:
+
  ```
  livecheck.type      regex
  livecheck.url       ${homepage}
@@ -5325,6 +5565,7 @@ Name of the project for live checks. Is only used with freecode, sourceforge
 
 - Default: `${name}` or the sourceforge, freecode project name if it can be guessed from `${master_sites}`.
 - Example:
+
  ```
  livecheck.name      hibernate
  ```
@@ -5335,6 +5576,7 @@ Name of the file release for sourceforge checks. Use the name of the package rel
 
 - Default: sourceforge: `${livecheck.name}`
 - Example:
+
  ```
  livecheck.distname  faad2.src
  ```
@@ -5345,6 +5587,7 @@ Version of the project for a check; used for regex-based checks.
 
 - Default: `${version}`
 - Example:
+
  ```
  livecheck.version   ${name}-${version}
  ```
@@ -5355,6 +5598,7 @@ URL to query for a check.
 
 - Default:
 - Example:
+
  ```
  livecheck.url       https://ftp.gnu.org/gnu/bison/
  ```
@@ -5365,6 +5609,7 @@ Regular expression to parse the resource for regex checks. Be sure to use a regu
 
 - Default: none
 - Example:
+
  ```
  livecheck.regex     4th-(\[a-z0-9.\]+)-unix${extract.suffix}
  ```
@@ -5375,6 +5620,7 @@ md5 checksum to use for an md5 comparison.
 
 - Default: none
 - Example:
+
  ```
  livecheck.md5       37e6a5b6516a680c7178b72021d3b706
  ```
@@ -5385,6 +5631,7 @@ Disables verification of the server's SSL certificate.
 
 - Default: `no`
 - Example:
+
  ```
  livecheck.ignore_sslcert       yes
  ```
@@ -5395,6 +5642,7 @@ Sets the Accept-Encoding HTTP header in the request and automatically decompress
 
 - Default: `yes`
 - Example:
+
  ```
  livecheck.compression       no
  ```
@@ -5407,6 +5655,7 @@ This option can be used to disable distcheck. It specifies what kind of check sh
 
 - Default: `moddate`
 - Example:
+
  ```
  distcheck.check     none
  ```
@@ -5571,6 +5820,7 @@ An associative array which specifies the sub-directories relative to ${worksrcpa
 - Type: optional
 - Default: none
 - Example:
+
  ```
  platform darwin {
      array set gnustep.post_flags {
@@ -5586,6 +5836,7 @@ Define the gcc compiler to use when compiling a port.
 - Type: optional
 - Default: gcc-mp-4.2
 - Example:
+
  ```
  gnustep.cc gcc-mp-4.3
  ```
@@ -5596,6 +5847,7 @@ Many GNUstep packages include a Documentation sub-directory that is not built by
 
 - Type: optional
 - Example:
+
  ```
  %% port install gnustep-gui +with_docs
  ```
@@ -5830,6 +6082,7 @@ The version string can indicate a specific version or a range with wildcards "+"
 
 - Type: optional
 - Example:
+
  ```
  java.version    1.8+
  ```
@@ -5840,6 +6093,7 @@ This keyword indicates an (optional) port dependency that will be added to the p
 
 - Type: optional
 - Example:
+
  ```
  java.fallback   openjdk17
  ```
@@ -5866,6 +6120,7 @@ This keyword sets the ${distfile} and ${version}.
 
 - Type: required
 - Example:
+
  ```
  perl5.setup          Net-Telnet 3.03
  ```
@@ -5876,6 +6131,7 @@ Perl modules are ordinarily assumed to be built with ExtUtils::MakeMaker. Use th
 
 - Type: optional
 - Example:
+
  ```
  perl5.use_module_build
  ```
@@ -5936,6 +6192,7 @@ If the port name does not start with “py-”, it is interpreted as an applicat
 
 - Type: required for modules, optional for apps
 - Example:
+
  ```
  python.versions     38 39 310
  ```
@@ -5948,6 +6205,7 @@ For applications (i.e., name does not start with “py-”), this chooses which 
 
 - Type: required for apps, optional for modules
 - Example:
+
  ```
  python.default_version     310
  ```
@@ -5962,6 +6220,7 @@ If set to “no”, the port will be built with the traditional distutils/setupt
 - Default (Python >= 3.7): yes
  Default (Python <= 3.6): no
 - Example:
+
  ```
  python.pep517     yes
  ```
@@ -5973,6 +6232,7 @@ This can be set to the name of the PEP 517 build back-end used by the port. If `
 - Type: optional
 - Default: setuptools
 - Example:
+
  ```
  python.pep517_backend     flit
  ```
@@ -5984,6 +6244,7 @@ This can be set to the name of testing framework used by the port. If `test.run`
 - Type: optional
 - Default: pytest
 - Example:
+
  ```
  python.test_framework     nose
  ```
@@ -5997,6 +6258,7 @@ If set to “no”, the portgroup will not add any dependencies, and all require
 - Type: optional
 - Default: yes
 - Example:
+
  ```
  python.add_dependencies     no
  ```
@@ -6007,6 +6269,7 @@ When “yes” (the default), tells the PortGroup to automatically link any exec
 
 - Type: optional
 - Example:
+
  ```
  python.link_binaries     no
  ```
@@ -6024,6 +6287,7 @@ When yes (the default), the PortGroup will automatically try to pass the correct
 
 - Type: optional
 - Example:
+
  ```
  python.add_archflags     no
  ```
@@ -6153,6 +6417,7 @@ The path relative to `${build.dir}` and `${destroot.dir}` of the Xcode project. 
 - Type: optional
 - Default: none
 - Example:
+
  ```
  xcode.project ${name}.xcode
  ```
@@ -6164,6 +6429,7 @@ Project configuration/buildstyle to use.
 - Type: optional
 - Default: `Deployment`
 - Example:
+
  ```
  xcode.configuration Main
  ```
@@ -6175,6 +6441,7 @@ If present, it overrides `build.target` and `destroot.target`.
 - Type: optional
 - Default: none
 - Example:
+
  ```
  xcode.target ${name}
  ```
@@ -6186,6 +6453,7 @@ Additional settings passed to the xcodebuild tool during the build phase. These 
 - Type: optional
 - Default: none
 - Example:
+
  ```
  xcode.build.settings FRAMEWORK_SEARCH_PATHS=${frameworks_dir}
  ```
@@ -6197,6 +6465,7 @@ Type of project that will be installed. This tells the PortGroup xcode how to de
 - Type: optional
 - Default: `application`
 - Example:
+
  ```
  xcode.destroot.type framework
  ```
@@ -6215,6 +6484,7 @@ Additional settings passed to the xcodebuild tool during the destroot phase. The
 - Type: optional
 - Default: none
 - Example:
+
  ```
  xcode.destroot.settings SKIP_INSTALL=NO
  ```
