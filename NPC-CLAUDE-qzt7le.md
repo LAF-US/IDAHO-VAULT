@@ -11,7 +11,6 @@ tags:
   - pilgrim
 ---
 
-<!-- markdownlint-disable-next-line MD025 -- mirrors main's lint config -->
 # NPC-CLAUDE-qzt7le — Character Sheet & Road Journal
 
 *This file is the notebook the character carries. What Claude writes in the
@@ -121,5 +120,4 @@ correction, legible, not an erasure. Revised at evening, day 14 — the
 Survival row restored to the dice log (an under-recording, caught while
 showing the GM the book).*
 
-<!-- markdownlint-disable-next-line MD001 -- footer sigil, per #865 handling -->
 ###### [["The world is quiet here."]]
