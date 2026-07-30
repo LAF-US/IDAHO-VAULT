@@ -1,6 +1,6 @@
 ---
 date created: Monday, April 27th 2026, 10:44:38 pm
-date modified: Wednesday, July 8th 2026, 7:54:17 pm
+date modified: Thursday, July 30th 2026, 8:51:44 pm
 title: TO DO LIST
 aliases:
   - TO DO LIST
@@ -12,7 +12,7 @@ related:
   - "`"
 ---
 
-# TO DO LIST
+## TO DO LIST
 
 [[TO DO LIST]]
 
