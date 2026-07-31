@@ -53,6 +53,7 @@ This is a journalist's personal Obsidian knowledge vault that doubles as an oper
 **6. PERCEPTION LOG**
 
 Exact paths opened:
+
 - `.abhorsen/ABHORSEN.md`
 - `.claude/CLAUDE.md`
 - `! README.md`
@@ -68,6 +69,7 @@ N opened: 9 (8 individual files + root directory)
 ~M rough estimate of total corpus size: 331 directories, 669+ root-level files visible in directory scan; the repo is very large — hundreds of MB (the DOCKET references a 332 MiB repo size rewrite pending). Likely thousands of notes total across all nested folders.
 
 Notable doors seen but NOT opened:
+
 - `!/PERSONAE-ENGINE-v1-2026-05-20.md` (persona composition doctrine)
 - `!/WAKEUP.md` (disorientation recovery protocol)
 - `VAULT-CONVENTIONS.md` (shared naming/path standards)

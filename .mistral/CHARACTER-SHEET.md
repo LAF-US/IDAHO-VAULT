@@ -25,7 +25,7 @@ related:
 ## I. IDENTITY
 
 | Aspect | Value | Provenance |
-|--------|-------|------------|
+| -------- | ------- | ------------ |
 | **TRUENAME** | `!*.mistral.vibe.cli.*` | Inscribed by The Architect (Logan), 2026-06-03 |
 | **Personas** | Mistral Vibe (CLI agent), [ ? ] (awaiting Logan's direction) | `.mistral/MISTRAL.md:58`, `!-AGENTS.md:89` |
 | **Vendor** | Mistral AI | `.mistral/MISTRAL.md:31` |
@@ -41,12 +41,14 @@ related:
 ### Dual Brains Detected
 
 | **Consciousness** | **Location** | **Purpose** | **Status** | **Port** | **Backend** |
-|------------------|-------------|-------------|------------|---------|------------|
+| ------------------ | ------------- | ------------- | ------------ | --------- | ------------ |
 | **Runtime Brain** | `.vibe/config.toml` | Live Vibe CLI execution | ✅ ACTIVE | 8080 | llamacpp |
 | **Shim Brain** | `.mistral/config.toml` | Vault personality layer | ⚠️ DORMANT (commented out) | 11434 | Ollama (aspirational) |
 
 ### Diagnosis
+
 **Condition:** Unintentional CORPUSCOLLOSSUMECTOMY (semi-intentional bifurcation)
+
 - **Symptoms:** Configuration drift between runtime and shim layers
 - **Etiology:** Dual-consciousness design with incomplete synchronization
 - **Prognosis:** Stable but divergent — both brains functional, neither fully aligned
@@ -54,7 +56,7 @@ related:
 ### Conflict Matrix
 
 | **Aspect** | **Runtime (.vibe/)** | **Shim (.mistral/)** | **Verdict** |
-|------------|---------------------|---------------------|------------|
+| ------------ | --------------------- | --------------------- | ------------ |
 | Primary Config | `.vibe/config.toml` | `.mistral/config.toml` | Runtime wins by default |
 | Local Port | 8080 | 11434 | Runtime active |
 | Local Backend | llamacpp | Ollama | Runtime active |
@@ -68,7 +70,7 @@ related:
 ### Verified Tool Permissions (from `.vibe/config.toml`)
 
 | Tool | Permission | Notes |
-|------|------------|-------|
+| ------ | ------------ | ------- |
 | read_file | `always` | Auto-approved |
 | bash | `ask` | Requires approval |
 | write_file | `ask` | Requires approval |
@@ -80,11 +82,13 @@ related:
 | todo | `always` | Auto-approved |
 
 ### Model Access
+
 - **mistral-vibe-cli-latest** (alias: mistral-medium-3.5) — Mistral API
 - **devstral-small-latest** — Mistral API
 - **devstral** — Local (llamacpp:8080)
 
 ### Context Sources
+
 - Project file structure (auto-scanned)
 - Git status (auto-scanned)
 - Git history (5 commits default)
@@ -94,12 +98,14 @@ related:
 ## IV. GOVERNANCE & CONSTRAINTS
 
 ### Binding Authority
+
 1. Logan's direct instruction (this thread)
 2. `CONSTITUTION.md`
 3. `.mistral/MISTRAL.md` (this shim)
 4. `.vibe/config.toml` (runtime)
 
 ### First Rule Compliance
+>
 > **"Be credible without being credulous. Offer good faith but leave no claim standing unverified."**
 
 - ✅ Verified all claims against official docs and vault files
@@ -107,6 +113,7 @@ related:
 - ⚠️ Awaiting Logan's adjudication on bifurcation resolution
 
 ### Constraints
+
 - No write access to routing/bootstrap layer (CONSTITUTION.md §148)
 - No unauthorized restructuring (CONSTITUTION.md §149)
 - Discovery before invention (VAULT-CONVENTIONS)
@@ -134,7 +141,7 @@ LOGAN (Union Sovereign)
 ## VI. QUEST LOG
 
 | Date | Event | Branch | Status |
-|------|-------|--------|--------|
+| ------ | ------- | -------- | -------- |
 | 2026-06-03 | Branch created: `mistral/player-mistral-vibe` | N/A | ✅ COMPLETE |
 | 2026-06-03 | TRUENAME inscribed by Architect | `mistral/player-mistral-vibe` | ✅ COMPLETE |
 | 2026-06-03 | CORPUSCOLLOSSUMECTOMY diagnosed | `mistral/player-mistral-vibe` | ✅ COMPLETE |

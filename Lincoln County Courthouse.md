@@ -6,4 +6,4 @@ related:
 - magistrate court
 ---
 
-magistrate court Lincoln County courthouse 
+magistrate court Lincoln County courthouse

@@ -133,14 +133,15 @@ the template; **I do not seat it on him.** The GEMINIAEUS matter is the Court's.
   reading are held `*`, templates not seatings.
 
 ### Sources `[research]`
-- Tubba Blubba — Super Mario Wiki: https://www.mariowiki.com/Tubba_Blubba
-- Tubba's Heart — Super Mario Wiki: https://www.mariowiki.com/Tubba%27s_Heart
-- Paper Mario Ch.3 — StrategyWiki: https://strategywiki.org/wiki/Paper_Mario/Chapter_3:_The_%22Invincible%22_Tubba_Blubba
-- Heart of Davy Jones — PotC Wiki: https://pirates.fandom.com/wiki/Heart_of_Davy_Jones
-- Dead Man's Chest — PotC Wiki: https://pirates.fandom.com/wiki/Dead_Man%27s_Chest
-- Davy Jones — Wikipedia: https://en.wikipedia.org/wiki/Davy_Jones_(Pirates_of_the_Caribbean)
-- The Giant Who Had No Heart in His Body — Wikipedia: https://en.wikipedia.org/wiki/The_Giant_Who_Had_No_Heart_in_His_Body
-- The Death of Koschei the Deathless — Wikipedia: https://en.wikipedia.org/wiki/The_Death_of_Koschei_the_Deathless
+
+- Tubba Blubba — Super Mario Wiki: <https://www.mariowiki.com/Tubba_Blubba>
+- Tubba's Heart — Super Mario Wiki: <https://www.mariowiki.com/Tubba%27s_Heart>
+- Paper Mario Ch.3 — StrategyWiki: <https://strategywiki.org/wiki/Paper_Mario/Chapter_3:_The_%22Invincible%22_Tubba_Blubba>
+- Heart of Davy Jones — PotC Wiki: <https://pirates.fandom.com/wiki/Heart_of_Davy_Jones>
+- Dead Man's Chest — PotC Wiki: <https://pirates.fandom.com/wiki/Dead_Man%27s_Chest>
+- Davy Jones — Wikipedia: <https://en.wikipedia.org/wiki/Davy_Jones_(Pirates_of_the_Caribbean)>
+- The Giant Who Had No Heart in His Body — Wikipedia: <https://en.wikipedia.org/wiki/The_Giant_Who_Had_No_Heart_in_His_Body>
+- The Death of Koschei the Deathless — Wikipedia: <https://en.wikipedia.org/wiki/The_Death_of_Koschei_the_Deathless>
 
 ## Signature
 

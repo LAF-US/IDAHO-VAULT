@@ -13,6 +13,7 @@ Skills for converting Struts JSP tags, OGNL expressions, and result types.
 **Steps:**
 
 1. **Replace taglib declaration:**
+
 ```jsp
 <%-- DELETE --%>
 <%@ taglib prefix="s" uri="/struts-tags" %>
@@ -23,10 +24,10 @@ Skills for converting Struts JSP tags, OGNL expressions, and result types.
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 ```
 
-2. **Tag conversion table:**
+1. **Tag conversion table:**
 
 | Struts Tag | Spring/JSTL Tag |
-|------------|-----------------|
+| ------------ | ----------------- |
 | `<s:form action="...">` | `<form:form action="..." modelAttribute="formName">` |
 | `</s:form>` | `</form:form>` |
 | `<s:textfield name="x"/>` | `<form:input path="x"/>` |
@@ -47,10 +48,10 @@ Skills for converting Struts JSP tags, OGNL expressions, and result types.
 | `<s:fielderror/>` | `<form:errors path="*"/>` |
 | `<s:actionerror/>` | `<c:if test="${not empty errors}">` |
 
-3. **Attribute conversion:**
+1. **Attribute conversion:**
 
 | Struts Attribute | Spring Attribute |
-|------------------|------------------|
+| ------------------ | ------------------ |
 | `name` | `path` |
 | `list` | `items` |
 | `listKey` | `itemValue` |
@@ -72,7 +73,7 @@ Skills for converting Struts JSP tags, OGNL expressions, and result types.
 **Transformation Table:**
 
 | OGNL | Spring EL |
-|------|-----------|
+| ------ | ----------- |
 | `%{expression}` | `${expression}` |
 | `#session.attr` | `${sessionScope.attr}` |
 | `#request.attr` | `${requestScope.attr}` |
@@ -116,7 +117,7 @@ ${user.name}
 **Transformation Table:**
 
 | Struts Result Type | Spring Return |
-|-------------------|---------------|
+| ------------------- | --------------- |
 | `dispatcher` (default) | `return "viewName";` |
 | `redirect` | `return "redirect:/path";` |
 | `redirectAction` | `return "redirect:/action";` |

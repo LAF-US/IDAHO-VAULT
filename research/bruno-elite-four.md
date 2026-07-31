@@ -1,6 +1,7 @@
 # Bruno - The Elite Four Martial Artist
 
 ## Table of Contents
+
 1. [Overview](#overview)
 2. [Game Appearances](#game-appearances)
 3. [Teams and Battle Strategies](#teams-and-battle-strategies)
@@ -27,8 +28,9 @@
 ## Game Appearances
 
 ### Generation I (Red, Blue, Green, Yellow)
+
 - **Location**: Indigo Plateau (Chamber 2)
-- **Team**: 
+- **Team**:
   - Onix (Lv. 51) - Dig, Screech, Rock Throw, Bind
   - Hitmonchan (Lv. 53) - Comet Punch, Agility, Fire Punch, Ice Punch
   - Hitmonlee (Lv. 53) - Rolling Kick, Mega Kick, Meditate, Jump Kick
@@ -38,8 +40,9 @@
 - **Notable**: Uses standard Trainer battle theme (not Gym Leader theme)
 
 ### Generation II (Gold, Silver, Crystal)
+
 - **Location**: Indigo Plateau (Chamber 3)
-- **Team**: 
+- **Team**:
   - Hitmontop (Lv. 42) - Rolling Kick, Counter, Pursuit, Quick Attack
   - Hitmonlee (Lv. 42) - Double Kick, Swift, Mega Kick, Hi Jump Kick
   - Hitmonchan (Lv. 42) - Mach Punch, Thunder Punch, Ice Punch, Fire Punch
@@ -49,14 +52,16 @@
 - **Notable**: Johto Elite Four team adds the Generation II Hitmontop (single Onix, not two) and battles at lower levels before Machamp
 
 ### Generation III (FireRed, LeafGreen)
+
 - **Location**: Indigo Plateau (Chamber 2)
 - **Team**: Same as Generation I
 - **Reward**: 5,400 Poké Dollars
 - **Notable**: Uses Gym Leader battle theme for all Elite Four members
 
 ### Generation IV (HeartGold, SoulSilver)
+
 - **Location**: Indigo Plateau (Chamber 3)
-- **Team**: 
+- **Team**:
   - Onix (Lv. 48) - Earthquake, Rock Tomb, Iron Tail, Roar
   - Hitmonchan (Lv. 49) - Sky Uppercut, Mach Punch, Rock Tomb, Counter
   - Hitmonlee (Lv. 49) - Mega Kick, Foresight, Brick Break, Facade
@@ -66,11 +71,13 @@
 - **Notable**: Updated movesets with new moves
 
 ### Generation VII (Let's Go, Pikachu! and Eevee!)
+
 - **Location**: Indigo Plateau (Chamber 2)
 - **Team**: Similar to Generation I
 - **Notable**: Fighting-type focus with Rock-type support
 
 ### Other Appearances
+
 - Pokémon Stadium 2: Uses Hitmonlee, Hitmonchan, Machamp, Onix
 - Pokémon Masters EX: Sync pair with Onix
 - Pokémon Puzzle League: Opponent
@@ -82,7 +89,7 @@
 ### Core Team Across Games
 
 | Game | Pokémon | Level | Type | Moves |
-|------|---------|-------|------|-------|
+| ------ | --------- | ------- | ------ | ------- |
 | RBY | Onix | 51 | Rock/Ground | Dig, Screech, Rock Throw, Bind |
 | RBY | Hitmonchan | 53 | Fighting | Comet Punch, Agility, Fire Punch, Ice Punch |
 | RBY | Hitmonlee | 53 | Fighting | Rolling Kick, Mega Kick, Meditate, Jump Kick |
@@ -100,6 +107,7 @@
 | FRLG | Machamp | 56 | Fighting | Bulk Up, Cross Chop, Scary Face, Rock Tomb |
 
 ### Signature Pokémon
+
 - Machamp (lead Pokémon, highest level)
 - Hitmonlee (kicking specialist)
 - Hitmonchan (punching specialist)
@@ -107,7 +115,9 @@
 - Steelix (evolved form in some appearances)
 
 ### Battle Strategy
+
 Bruno's battle strategy is characterized by:
+
 1. Physical offense with high Attack stats
 2. Fighting-type STAB moves (Mega Kick, Cross Chop, Brick Break)
 3. Rock/Ground coverage with Onix
@@ -115,6 +125,7 @@ Bruno's battle strategy is characterized by:
 5. Bulk Up from Machamp for stat boosting
 
 ### Recommended Counters
+
 - Psychic-types: Super effective against Fighting (Alakazam, Espeon, Exeggutor)
 - Flying-types: Super effective against Fighting (Dodrio, Aerodactyl, Dragonite)
 - Fairy-types: Super effective against Fighting (Gen VI+)
@@ -127,6 +138,7 @@ Bruno's battle strategy is characterized by:
 ## Anime and Manga Appearances
 
 ### Main Anime
+
 - **Name**: Bruno
 - **Debut**: Episode "To Master the Onixpected!" (first Elite Four member to appear)
 - **Role**: Elite Four member at Indigo Plateau
@@ -138,20 +150,23 @@ Bruno's battle strategy is characterized by:
   - First seen talking about Blue collecting eight Gym Badges
 
 ### Key Anime Moments
+
 - First Elite Four member introduced in the series
 - Shown training with his Pokémon
 - Appeared in "A Charizard...and a Champion"
 - Observed battles at Indigo Plateau
 
 ### Personality Traits (Anime)
+
 - Confident in his abilities
 - Believes in rigorous training
 - Respectful of strong opponents
 - Martial arts master mindset
 
 ### Pokémon Adventures Manga
+
 - **Role**: Elite Four member
-- **Notable**: 
+- **Notable**:
   - Joined Lorelei, Agatha, and Lance after Masked Man's defeat
   - Trained with Brawly (Hoenn's Dewford Gym Leader)
   - Used Hitmonlee against Team Rocket
@@ -162,6 +177,7 @@ Bruno's battle strategy is characterized by:
 ## Personality and Design
 
 ### Personality
+
 - Philosophical: Believes in unlimited strength through training
 - Dedicated: Lives and trains with his Fighting Pokémon
 - Strong-willed: Never changes his training philosophy
@@ -169,17 +185,20 @@ Bruno's battle strategy is characterized by:
 - Martial artist: Embodies fighting spirit
 
 ### Design Evolution
+
 - Generation I & III: Tall, muscular build with long black hair in ponytail
 - Generation II & IV: Similar design with updated sprites
 - Consistent elements: Thick sideburns, determined expression
 - 3D model in Let's Go series
 
 ### Name Origin
+
 - **English**: Bruno - from Italian/German meaning "brown" or "armor"
 - **Japanese**: シバ (Siba) - possibly from "shiba" (芝, turf/grass) or "jiba" (self/ground)
 - Fits his grounded, martial arts personality
 
 ### Signature Quote
+>
 > "I am Bruno of the Elite Four! Through rigorous training, people and Pokémon can become stronger without limit. I've lived and trained with my Fighting Pokémon! And that will never change!"
 
 ---
@@ -187,6 +206,7 @@ Bruno's battle strategy is characterized by:
 ## Trivia
 
 ### Game Trivia
+
 - Only Elite Four member to retain position in both Generation I and II
 - Only Elite Four member with same type specialty as a Gym Leader (Kanto has no Fighting Gym)
 - Uses two Onix in most games
@@ -194,18 +214,21 @@ Bruno's battle strategy is characterized by:
 - Gym Leader battle theme plays in FRLG for all Elite Four
 
 ### Anime Trivia
+
 - First Elite Four member to appear in anime
 - Machamp defeated by Ash's Pidgeot
 - Appeared in multiple episodes at Indigo Plateau
 - Shown training with other Elite Four members
 
 ### Manga Trivia
+
 - Trained with Brawly from Hoenn
 - Fought against Team Rocket
 - Participated in Pokéathlon with Machamp
 - Joined Kanto Elite Four after Masked Man's defeat
 
 ### Cultural Impact
+
 - Represents martial arts and physical training philosophy
 - Popular character in competitive battling
 - Featured in Pokémon Masters EX
@@ -214,6 +237,7 @@ Bruno's battle strategy is characterized by:
 ---
 
 ## References
+
 - Bulbapedia: [Bruno](https://bulbapedia.bulbagarden.net/wiki/Bruno), [Elite Four](https://bulbapedia.bulbagarden.net/wiki/Elite_Four)
 - Pokémon Wiki, Pokémon Database, Serebii.net, Victory Road Wiki
 

@@ -62,19 +62,19 @@ When LangChain informs the model about the tools at its disposal, it will genera
 For this, LangChain will generate an addition to your own prompt that looks something like this:
 
 > You have access to the following tools.
-> 
+>
 > You must format your inputs to these tools to match their "JSON schema" definitions below.
-> 
+>
 > "JSON Schema" is a declarative language that allows you to annotate and validate JSON documents.
-> 
+>
 > For example, the example "JSON Schema" instance {"properties": {"foo": {"description": "a list of test words", "type": "array", "items": {"type": "string"}}}, "required": \["foo"\]}}
-> 
+>
 > would match an object with one required property, "foo". The "type" property specifies "foo" must be an "array", and the "description" property semantically describes it as "a list of test words". The items within "foo" must be strings.
-> 
+>
 > Thus, the object {"foo": \["bar", "baz"\]} is a well-formatted instance of this example "JSON Schema". The object {"properties": {"foo": \["bar", "baz"\]}} is not well-formatted.
-> 
+>
 > Here are the JSON Schema instances for the tools you have access to:
-> 
+>
 > click: left click on an element on a web page represented by a query selector, args: {"selector":{"type":"string","description":"The query selector to click on."}}
 
 ## Don't trust the LLM
@@ -174,7 +174,7 @@ We only pass the previously computed output on to the tool in **tool.call(action
 
 And in case this causes another error, we re-use the same function to handle parsing errors that will return a string that is supposed to be the tool output in the error case.
 
-### Let's summarize all the issues:
+### Let's summarize all the issues
 
 - We parse the model's output to JSON and use that parsed result to call a tool
 - If the parsing succeeds, we call the tool with any valid JSON

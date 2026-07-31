@@ -23,4 +23,3 @@ The series is useful to the vault because it treats djinn not as a one-off magic
 ## Vault Use
 
 This source is the series-level orientation note. It gives the outer frame; the Fandom notes carry the more detailed djinn and lamp metaphysics.
-

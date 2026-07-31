@@ -193,7 +193,7 @@ Fixed opposition schools only existed in 2e; prior to that, there was no school 
 | Abjuration | Alteration <sup>1</sup> | Illusion |
 | Alteration <sup>1</sup> | Abjuration | Necromancy |
 | Conjuration/Summoning | Greater Divination <sup>2</sup> | Evocation/Invocation |
-| Greater Divination <sup>2</sup> | Conjuration/Summoning |  |
+| Greater Divination <sup>2</sup> | Conjuration/Summoning | |
 | Enchantment/Charm <sup>3</sup> | Evocation/Invocation | Necromancy |
 | Evocation/Invocation | Enchantment/Charm <sup>3</sup> | Conjuration/Summoning |
 | Illusion | Necromancy | Abjuration **and** Evocation/Invocation |
