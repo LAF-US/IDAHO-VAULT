@@ -9,7 +9,7 @@ aliases:
   - "Idaho Experience: Pioneering Artists (working title)"
 linter-yaml-title-alias: Idaho_Experience-Pioneering_Artists_wt
 date created: Thursday, July 30th 2026, 8:55:27 pm
-date modified: Thursday, July 30th 2026, 11:02:25 pm
+date modified: Friday, July 31st 2026, 3:35:54 pm
 ---
 
 ## Idaho Experience: Pioneering Artists (wt)
