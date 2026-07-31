@@ -1,0 +1,312 @@
+{
+  "main": {
+    "id": "f949c5dc8080b38c",
+    "type": "split",
+    "children": [
+      {
+        "id": "83d1c8a9218a5c14",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1bb785ee3b55a2a0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2026-07-31.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "icon": "lucide-file",
+              "title": "2026-07-31"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1989002634980c47",
+    "type": "split",
+    "children": [
+      {
+        "id": "42ee737825f69ed5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d2f54bd4617e6d08",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byModifiedTime",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "bfa353d7709c7d8a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "4bcb8593f71f0f72",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 313.5
+  },
+  "right": {
+    "id": "7f8b1131e111e374",
+    "type": "split",
+    "children": [
+      {
+        "id": "1cd90d52950af42f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f9e4ada882b2469a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "2026-07-31.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "6de03e4df77758ae",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Idaho_Experience-Pioneering_Artists_wt.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": false
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "09957da811633349",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "759817181fba0679",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "9916133ea3303727",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Idaho_Experience-Pioneering_Artists_wt.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Idaho_Experience-Pioneering_Artists_wt"
+            }
+          },
+          {
+            "id": "cb6ab4d75a12f0d4",
+            "type": "leaf",
+            "state": {
+              "type": "Strange New Worlds",
+              "state": {},
+              "icon": "file-digit",
+              "title": "Strange New Worlds"
+            }
+          },
+          {
+            "id": "d03112876e4f9741",
+            "type": "leaf",
+            "state": {
+              "type": "map-of-content",
+              "state": {},
+              "icon": "stacked-levels",
+              "title": "Map of Content"
+            }
+          },
+          {
+            "id": "86987daab199315e",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          },
+          {
+            "id": "4c366c39599ec0d8",
+            "type": "leaf",
+            "state": {
+              "type": "DICE_ROLLER_VIEW",
+              "state": {},
+              "icon": "dices",
+              "title": "Dice Tray"
+            }
+          }
+        ],
+        "currentTab": 7
+      }
+    ],
+    "direction": "horizontal",
+    "width": 470.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "smart-connections:Smart Connections: Open connections view": true,
+      "smart-connections:Toggle Footer Connections": true,
+      "smart-connections:Smart Connections: Open random connection": true,
+      "daily-notes:Open today's daily note": true,
+      "switcher:Open quick switcher": false,
+      "omnisearch:Omnisearch": false,
+      "smart-lookup:Smart Lookup: Open lookup view": false,
+      "command-palette:Open command palette": false,
+      "graph:Open graph view": false,
+      "random-note:Open random note": false,
+      "canvas:Create new canvas": true,
+      "markdown-importer:Open format converter": true,
+      "workspaces:Manage workspace layouts": false,
+      "publish:Publish changes...": false,
+      "templates:Insert template": false,
+      "audio-recorder:Start/stop recording": false,
+      "bases:Create new base": true,
+      "zk-prefixer:Create new unique note": false,
+      "obisidian-note-linker:Note Linker": true,
+      "homepage:Open homepage": true,
+      "obsidian-kanban:Create new board": true,
+      "templater-obsidian:Templater": true,
+      "obsidian-git:Open Git source control": true,
+      "vault-inspector:Run scan": true,
+      "obsidian-full-calendar:Open Full Calendar": true,
+      "obsidian-advanced-slides:Show Slide Preview": true,
+      "table-editor-obsidian:Advanced Tables Toolbar": true,
+      "obsidian42-brat:BRAT": true,
+      "desk:Create new desk": true,
+      "obsidian-5e-statblocks:Open Creature pane": true,
+      "handwritten-notes:Create empty handwritten note": true,
+      "map-of-content:Update Map of Content": true,
+      "periodic-notes:Open today": false,
+      "calendarium:Open Calendarium": true,
+      "smart-context:Smart Context: Open Builder": true,
+      "smart-context:Smart Context: Copy to Clipboard (select depth)": true,
+      "smart-context:Smart Context: List Named Contexts": true,
+      "smart-templates:Smart Templates: Open template context": true
+    }
+  },
+  "active": "1bb785ee3b55a2a0",
+  "lastOpenFiles": [
+    "2026-08-09.md",
+    "2026-08-08.md",
+    "2026-08-07.md",
+    "2026-08-06.md",
+    "2026-08-05.md",
+    "2026-08-04.md",
+    "2026-08-03.md",
+    "2026-08-02.md",
+    "2026-08-01.md",
+    "2026-07-31.md",
+    "2026-07-30.md",
+    "be1a7dc1-1214-4496-80cc-26dd6a0dd2cfOriginal.txt",
+    "be1a7dc1-1214-4496-80cc-26dd6a0dd2cfOriginal.jpg",
+    "5e73ef9c-88fb-447d-9e34-5b66c7a8a5ccOriginal.txt",
+    "5e73ef9c-88fb-447d-9e34-5b66c7a8a5ccOriginal.jpg",
+    "48297732-5381-43bc-a1fb-5893d9f0fa2fOriginal.txt",
+    "48297732-5381-43bc-a1fb-5893d9f0fa2fOriginal.jpg",
+    "29a06054-223b-4784-bd5e-1e3e01d39edbOriginal.txt",
+    "29a06054-223b-4784-bd5e-1e3e01d39edbOriginal.jpg",
+    "!/YEARLY_NOTE_TEMPLATE.md",
+    "!/QUARTERLY_NOTE_TEMPLATE.md",
+    "!/MONTHLY_NOTE_TEMPLATE.md",
+    "!/WEEKLY_NOTE_TEMPLATE.md",
+    "!/DAILY_NOTE_TEMPLATE.md",
+    "!/_NOTE_TEMPLATE.md.md",
+    "202607311256.md",
+    "HOUSE-CLOCK-WITNESS-RD-2026-07-31.md",
+    "House_Time.jpg",
+    "2026-07-27 - AG Labrador Responds to Kohberger's Post-Conviction Relief Petition.md",
+    "2026-07-24 - Labrador Letter_ Defending Federal Rule Blocking Illegal Immigrants from Obtaining Commercial Drivers Licenses.md",
+    "2026-07-24 - Labrador Defends Rule Blocking Illegal Immigrants from Obtaining CDLs.md",
+    "2026-07-21 - $600,000 Secured by AG Labrador for Idaho in Two Consumer Data Settlements.md",
+    "2026-07-17 - Labrador Letter_ Record Results for Idaho Consumers.md",
+    "2026-07-31 - Labrador Letter_ Touring Idaho's New Firing Squad Chamber.md",
+    "Idaho_Experience-Pioneering_Artists_wt.md",
+    "video-000104-1415310121.mp4",
+    "apa-dcms-uk-comment.pdf",
+    "2026_WGA_Annual_Report_073026.pdf",
+    "__pycache__/importlib.cpython-313.pyc",
+    "__pycache__",
+    "scbl-fd-2015.pdf",
+    "Screenshot 2026-07-28 181222.jpg",
+    "43e30348-d7a5-4a20-a3e6-950ef389fe25_6177.jpg",
+    "jwh01549.jpg",
+    "jwh01558.jpg",
+    "jwh01541.jpg"
+  ]
+}
