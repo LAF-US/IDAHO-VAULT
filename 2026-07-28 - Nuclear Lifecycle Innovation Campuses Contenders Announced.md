@@ -43,3 +43,5 @@ Learn more about [Nuclear Lifecycle Innovation Campuses](https://gcc02.safelinks
 DOE’s Office of Critical Minerals and Energy Innovation Announces Winners of Lithium-Ion Recycling Prize Breakthrough Contest
 
 DOE Extends the Comment Period on Proposed Process Rule Updates
+
+#idaho
