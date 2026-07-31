@@ -7,7 +7,7 @@ published: 2026-07-28
 created: 2026-07-31
 description: "Rep. John Gannon argues Idaho's tax breaks for big data centers shift the burden onto homeowners and small businesses without guaranteeing public benefits."
 ---
-Idaho’s sales and property tax giveaways to Big Data centers—combined with their possible impact on utility costs—may become the largest subsidy since the 19th-century railroads. Today, big data centers investing at least $250 million receive never-ending sales tax exemptions on construction materials and server equipment—even though they are projected to create fewer than 100 permanent jobs. That may mean a whopping $60 million tax gift for each eligible $1 billion spent.
+[[Idaho]]’s sales and property tax giveaways to Big Data centers—combined with their possible impact on utility costs—may become the largest subsidy since the 19th-century railroads. Today, big data centers investing at least $250 million receive never-ending sales tax exemptions on construction materials and server equipment—even though they are projected to create fewer than 100 permanent jobs. That may mean a whopping $60 million tax gift for each eligible $1 billion spent.
 
 Meanwhile, Idahoans pay a 6% tax on food, unlike 40 other states that do not tax groceries at all and several others that tax groceries at a lower rate than other items.
 
@@ -34,3 +34,5 @@ Free newsletter · Unsubscribe anytime · [View on Substack](https://newsletter.
 ### About John Gannon
 
 John Gannon is a representative for Idaho Legislative District 17 who has co-sponsored several bills to modify the data center tax breaks in several legislative sessions.
+
+#idaho
