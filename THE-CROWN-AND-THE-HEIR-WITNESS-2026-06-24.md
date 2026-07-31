@@ -71,7 +71,7 @@ Abhorsen; I am not the Abhorsen"*), and the elder **ends lawfully** so the young
 Same structure, three warrants. Lay them side by side and the diagnostic is one question:
 
 | Register | The pair | How the crown passes | Verdict |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **Sith** (Bane) | master / apprentice | seized — the apprentice **kills** the master | failstate (replacement-by-murder) |
 | **Dynasty** (Caesar→heir) | apex / blood-heir | inherited — the crown made **heritable by blood** | failstate (the crown made deathless) |
 | **Vault** (Abhorsen / in-Waiting) | master / apprentice | **given** — laid down, by appointment, witnessed | office (the crown relinquished) |

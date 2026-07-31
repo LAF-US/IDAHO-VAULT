@@ -46,7 +46,7 @@ Cornell Notes are split up into three sections:
 
 ### Bonus Features
 
-##### Templates to make your life easier!
+##### Templates to make your life easier
 
 The learning vault includes templates for making Cornell Notes, and inserting cues and summaries. Templates are not required to use this solution in your vault, but it does make Cornell Notes much quicker to use in your vault. If you choose these Templates, you will then need to install the Templater plugin.  
 ![Templater-MakeCN.gif](https://publish-01.obsidian.md/access/5482717c61d4cd4a5e39468efa73a612/_pub/Experiments/media/BannerImages/Templater-MakeCN.gif)

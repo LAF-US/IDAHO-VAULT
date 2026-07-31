@@ -6,4 +6,5 @@ related:
 authority: LOGAN
 ---
 Residence: Meridian
-- former House member and House Revenue and Taxation chairman 
+
+- former House member and House Revenue and Taxation chairman

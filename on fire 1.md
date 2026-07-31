@@ -5,4 +5,4 @@ related:
 - fire
 authority: LOGAN
 ---
-fire 
+fire

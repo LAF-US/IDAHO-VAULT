@@ -5,4 +5,5 @@ related:
 authority: LOGAN
 ---
 Residence: Ada County
-- Former Ada County Republican Central Committee chairman 
+
+- Former Ada County Republican Central Committee chairman

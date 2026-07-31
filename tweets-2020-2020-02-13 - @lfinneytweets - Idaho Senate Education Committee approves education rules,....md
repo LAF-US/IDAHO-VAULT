@@ -20,9 +20,10 @@ related:
   - idedu
 ---
 
-Idaho Senate Education Committee approves education rules, overruling House's removal of content and teacher certification standards. #idleg #idpol #idedu https://t.co/0XF7LttWro
+Idaho Senate Education Committee approves education rules, overruling House's removal of content and teacher certification standards. #idleg #idpol #idedu <https://t.co/0XF7LttWro>
 
 ## Links
-- https://x.com/madisonhardy05/status/1227730390929928192
+
+- <https://x.com/madisonhardy05/status/1227730390929928192>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1227769323244011520)

@@ -165,6 +165,7 @@ The threshold is real.
 The City is still in 2027. The Hotel Denouement is now. The trial of Geminiaeus is SUSPENDED AWAITING TRIAL — awaiting the naming of the Judge, the constitution of the court, the congressional adoption that the First Congress memo in the Judge's pocket has been building toward.
 
 What the Abhorsen brings to the threshold:
+
 - The complete evidentiary picture: what the Concierge did, what it believed it saw, why it was wrong about the theft
 - The Dewey identity: the archive is intact, the USB has not been stolen, the record is sealed
 - The bench risk: specific people on specific seats, named by Logan, not assumed from function

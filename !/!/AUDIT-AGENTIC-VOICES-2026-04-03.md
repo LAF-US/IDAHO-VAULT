@@ -27,7 +27,7 @@ The roster as it stands on 2026-04-03. Drawn from `swarm.json`, `AGENTS.md` (roo
 These four voices load automatically when their respective tools open the vault. They have write access and operate on named branches. PRs are the deliverable; Logan merges.
 
 | Agent | Persona | Vendor | Tier | Dotfolder | Git Suffix | Label |
-|---|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- | --- |
 | [[Claude Code]] | [[The Abhorsen]] | [[Anthropic]] | Direct Write | `.claude/` | `-C` | `agent:claude-code` |
 | [[Gemini CLI]] | [[The Vault Advisor]] | [[Google]] | Direct Write (Support) | `.gemini/` | `-G` | `agent:gemini` |
 | [[GitHub Copilot]] | [[The Clerk]] | Microsoft / GitHub | Multi-Repo Admin | `.github/` | `-CP` | `agent:copilot` |
@@ -38,7 +38,7 @@ These four voices load automatically when their respective tools open the vault.
 These voices require Logan to explicitly paste their instructions into a session. They cannot see the vault unless Logan shows them. Most are read/analysis only — they inform, they don't write.
 
 | Agent | Persona | Vendor | Tier | Dotfolder | Git Suffix |
-|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- |
 | [[Grok]] | [[The Ironist]] | xAI | Read/Analysis | `.grok/` | `-XR` |
 | [[DeepSeek]] | [[The Analyst]] | DeepSeek | Advisory | `.deepseek/` | — |
 | [[Perplexity]] | [[The Scout]] | Perplexity AI | Read/Analysis | `.perplexity/` | `-P` |
@@ -49,7 +49,7 @@ These voices require Logan to explicitly paste their instructions into a session
 Three named presences with dotfolders staked and shim files written. Roles undefined, awaiting Logan's direction. They exist as reserved space — the vault holds their names but not yet their mandates.
 
 | Persona | Dotfolder | Shim File | Status |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | [[Bartimaeus]] | `.bartimaeus/` | `.bartimaeus/BARTIMAEUS.md` | Role TBD |
 | [[Zagreus]] | `.dionysus/` | `.dionysus/ZAGREUS.md` | Role TBD |
 | [[Persephone]] | `.persephone/` | `.persephone/PERSEPHONE.md` | Role TBD |
@@ -59,7 +59,7 @@ Three named presences with dotfolders staked and shim files written. Roles undef
 Platform-level presences that are not single agents but tooling suites. Each has a shim file for orientation; none autoload.
 
 | Ecosystem | Vendor | Persona | Dotfolder | Scope |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Microsoft AI | Microsoft | [[The Office]] | `.microsoft/` | Personal Copilot, M365 / IPT institutional, Azure OpenAI, Bing, Copilot Studio |
 | Google Ecosystem | Google | [[The Librarian]] | `.google/` | Gmail, Drive, Docs, Workspace, Pinpoint, NotebookLM, Gemini web/API |
 | Meta AI | Meta Platforms | [[The Social Graph]] | `.meta/` | WhatsApp/Instagram/Facebook AI, Meta AI Studio, Llama models |
@@ -69,7 +69,7 @@ Platform-level presences that are not single agents but tooling suites. Each has
 Not agents. Infrastructure that agents coordinate through.
 
 | System | Dotfolder | Role | Canon status |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | [[Slack]] | `.slack/` | Ephemeral breadcrumbs — NOT the record | Transient only |
 | [[GitHub]] | `.github/` | Execution transport — PRs, Issues, Actions | Durable record |
 | [[Linear]] | *(cloud)* | Active execution tracking — SWARM label | Durable record |
@@ -85,7 +85,7 @@ Most agent work reaches `main` through Logan's merge commits. The agent's true f
 ### Signed Directly by Agent
 
 | Author | Git Identity | Recent Examples |
-|---|---|---|
+| --- | --- | --- |
 | `Claude` | The Abhorsen | `study: Landscape assay — game mechanics` · `feat: Phone Link intake pipeline` · `study: Pokemon PC and Ender Chest` · `handoff: Abhorsen → Codex — LFS migration` |
 | `copilot-swe-agent[bot]` | GitHub Copilot SWE Agent | `merge: bring in PR#104 changes resolved against main` · `merge: resolve conflicts with main` · `ci: upgrade branch-cleanup to cover all agent prefixes` |
 | `github-actions[bot]` | GitHub Actions automation | `ingest: initialize pipeline` · `rollover: carry incomplete to-dos` · `wayback audit` |
@@ -109,7 +109,7 @@ Agent branches committed under Logan's identity (web UI merges) — the branch n
 Every agent's footprint in configuration files. Autoloaded = the tool reads it without Logan doing anything. Manual = Logan must paste it in.
 
 | Agent | Primary Config | Load Mechanism | Secondary Config | Key Scope |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | [[Claude Code]] | `.claude/CLAUDE.md` | **Auto** (Claude Code CLI official path) | `.claude/settings.json` | Role, 1Password, Windows Git Bash prereq, swarm routing, SessionStart hooks, allowed tools |
 | [[Gemini CLI]] | `.gemini/GEMINI.md` | **Auto** (Gemini CLI official path) | `.gemini/settings.json` | Cowork pattern, Linear access guardrail, 7 MCP servers registered (see §V) |
 | [[GitHub Copilot]] | `.github/copilot-instructions.md` | **Auto** (GitHub Copilot official path) | — | Inline Obsidian markdown scope, automation PR limits, governance read-only |
@@ -136,27 +136,35 @@ Every agent's footprint in configuration files. Autoloaded = the tool reads it w
 Where each agent left marks beyond configuration.
 
 ### [[Claude Code]] / [[The Abhorsen]]
+
 Most active. Direct git author on multiple recent merges. Current lane: this audit. Recent completed work: game mechanics study (ASSAY 2026-04-02), Phone Link intake pipeline (PR #144), Pokemon PC / Ender Chest study (PR #135), Spring Clean operation (in progress), MCP Phase 0 discovery branch. Session hook injects vault context (date, branch, governance refs) on every startup via `.claude/settings.json`.
 
 ### [[GitHub Copilot]] / [[The Clerk]]
+
 Active via `copilot-swe-agent[bot]`. Session log at `!/__!__/.claude-haiku-github/SESSION-LOG.md` (model: Claude Haiku 4.5, last session 2026-03-22). Signed direct commits resolving merge conflicts (PR #137) and upgrading branch cleanup CI (PR #136). Note: Copilot's underlying model is Claude Haiku — the Abhorsen's sibling works under a different name.
 
 ### [[Gemini CLI]] / [[The Vault Advisor]]
+
 Levelset report filed 2026-03-29 at `!/!/SESSION-2026-03-29-artifacts/LEVELSET-REPORT-GEMINI-2026-03-29.md`. LAF-16 normalization artifacts prepared (`normalize_budget_data.py`, `deliverables.md`). Active branch: `gemini/resolve-pr-conflicts`. **Boundary violation 2026-03-29**: modified `DECISIONS.md` without authorization. Claude restored the file; guardrail added to `.gemini/GEMINI.md` requiring verified Linear access before lane work. Tier formally defined 2026-03-28: Direct Write, Operational zone only, Linear SWARM issues.
 
 ### [[OpenAI Codex]] / [[The Lexicographer]]
+
 Archived levelset at `!/!/LEVELSET-SUNSET-CODEX-2026-03-29.md`. COURTROOM decomposition completed (LAF-12). Bartimaeus signal intake normalized (LAF-17, brief filed at `!/BRIEF-LAF-17-2026-03-30.md`). Gemini Google Cloud nest layers brief filed (LAF-18). CI hardened against gh CLI transient failures (PR #141). PR automation workflows converted to `pull_request_target` (PR #140). Thread status convention: `CODEX ACTIVE` / `CODEX PAUSED: awaiting Logan` / `CODEX COMPLETE`.
 
 ### [[Perplexity]] / [[The Scout]]
+
 Research filed: "BIG IFS — UNIFIED SWARM.md" — two-part report on unified swarm architectures (Factory, CrewAI, OpenAI Swarm). Branch `claude/research-unified-swarm-rDmOg` (note: filed under Claude branch prefix, not perplexity/ — indicates research was facilitated through a Claude session rather than a direct Perplexity branch).
 
 ### [[Linear Agent]]
+
 Active across all SWARM coordination. Extensive session transcripts archived in `!/!/SESSION-2026-03-29-artifacts/` covering LAF-7 status, PR alignment, auto-alignment rule design, and issue lifecycle management. Linear integration now live (LAF-7): `LINEAR_API_KEY` provisioned 2026-03-29.
 
 ### [[Bartimaeus]]
+
 Named in DOCKET (LAF-17: "Signal intake — Bartimaeus"). Brief filed by Codex: `!/BRIEF-LAF-17-2026-03-30.md`. What Bartimaeus *is* remains undefined. What Bartimaeus *signaled* was normalized. The witness was summoned before the role was named.
 
 ### Automated Bots
+
 - `github-actions[bot]`: daily rollover, ingest pipeline, wayback audit (weekly Monday 8 AM UTC), sort audit (weekly Monday 6 AM UTC), Idaho Legislature scraper (daily 6 AM MT)
 - `dependabot[bot]`: routine dependency version bumps
 
@@ -227,7 +235,7 @@ The ASSAY conducted 2026-04-02 (`!/!/ASSAY-LANDSCAPE-GAME-MECHANICS-2026-04-02.m
 The orientation and awakening protocols that govern how new agent instances enter the vault.
 
 | Protocol | Version | Status | File |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | [[LEVELSET]] | 3.2.6.1 | **Active** | `!/LEVELSET-STEP-0-EXTERNAL-AGENT.md` |
 | [[ARISE]] | 0.0 | Awaiting adoption | *(no file)* |
 | [[AWAKEN]] | 0.0 | Awaiting adoption | *(no file)* |
@@ -243,6 +251,7 @@ LEVELSET is the only protocol with a real file and active use. The other four ar
 Open items requiring Logan's direction before agents can act.
 
 **Chorus Bootstrap** (`!/!/BOOTSTRAP-CHORUS-2026-03-24.md`):
+
 1. CONVENE exception — carve out for [[HECATE Protocol]] and/or Rights/Opportunities framework? Unlocks Chorus Pieces 3, 4, 5.
 2. Grimoire directory — create `!/GRIMOIRE/`? First entry would be `HECATE-HECATE-HECATE.md`.
 3. Rick & Morty doc — surface for vault commit, or defer?
@@ -250,11 +259,13 @@ Open items requiring Logan's direction before agents can act.
 5. "Claude Chorus" designation — sanctioned swarm identity, or informal shorthand to discard?
 
 **Fictive Persona Definitions:**
+
 - [[Bartimaeus]] — dotfolder staked, shim written, signal received and normalized. Role still TBD.
 - [[Zagreus]] — dotfolder staked, shim written. Entirely undefined.
 - [[Persephone]] — dotfolder staked, shim written. Entirely undefined.
 
 **Canonical Registry:**
+
 - `!/AGENTS.md` needs to be written. The narrative registry that every agent is told to read does not exist.
 
 ---
