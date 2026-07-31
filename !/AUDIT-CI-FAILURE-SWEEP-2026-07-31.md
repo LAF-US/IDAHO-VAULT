@@ -26,6 +26,7 @@ owner: Logan Finney
 None. The 2 in-window failures on PR #873 are **not new** — the PR's own body (updated 2026-07-30) already self-diagnoses both as pre-existing `logan/obsidian` base-branch state, not this PR's changes: `!/WAKEUP.md` is absent on that base branch (present on `main`), and a root-level `importlib.py` on that branch shadows the stdlib and crashes `pip` before jupytext installs — both confirmed by the PR author to pass green on `main` (PR #880 @ `dd5d116c`) and explicitly out of that PR's scope to fix from its own branch.
 
 **Chronic items, checked directly, not just quiet:**
+
 - **Codacy Security Scan** — 5 runs in-window (`main` + 3 agent branches): 4 `success`, 1 `cancelled` (ordinary auto-supersede by a newer push on the same branch). Still holding since the 2026-07-24 fix.
 - **Sync Plugin Registry / Sync Agent Discovery Index** — 0 runs in-window (no `logan/obsidian` push touched plugin/agent config today), consistent with the self-heal job (#831/#834) that landed and was confirmed present on `main` in yesterday's sweep. Nothing new to add.
 - **`opencode` / `Agent Review Response`** — queried individually (30 runs each): 13 `skipped` and 3 `success` respectively, 0 `action_required`. No Copilot-bot approval-gate burst today.
@@ -42,4 +43,4 @@ None. The 2 in-window failures on PR #873 are **not new** — the PR's own body 
 ---
 Cross-posted: GitHub issue #822 (comment), Linear LAF-72 (comment), Slack #all-logan-finney, Discord #ledger (via Zapier), PR #470 (review comment, oldest-open-PR pass).
 
-Claude-Session: https://claude.ai/code/session_01L3qbUh4tT6FwB2Xd973tty
+Claude-Session: <https://claude.ai/code/session_01L3qbUh4tT6FwB2Xd973tty>
