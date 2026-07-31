@@ -1,4 +1,4 @@
-"""Shared ``gh`` wrapper — the only place in this repo that builds a ``gh`` command line.
+"""Shared ``gh`` wrapper for the migrated PR and issue automation callers.
 
 The first member of the Cluster A redesign shared lib (#600 §5), landed
 independently per #601 item 4. `review_feedback_loop._run`, `pr_lifecycle._run`,
@@ -7,7 +7,7 @@ capture stdout/stderr as text, and on a non-zero exit raise a ``RuntimeError``
 carrying the command and both streams. This is that one definition; the engines
 import it instead of each keeping their own.
 
-The run primitive is **private** (``_run``). Callers do not hand it argv — they
+The run primitive is **private** (``_run``). Migrated callers do not hand it argv — they
 call a typed operation (`pr_edit`, `pr_merge`, `graphql`, `api_pr_files`, …) that
 builds argv here from literal verb and flag tokens, placing caller data only in
 value positions and only after conversion/validation (`str(int(...))` for numbers,
@@ -16,7 +16,7 @@ second command into the command line, because a caller never writes one. That is
 the fix for "uncontrolled command line": the line is fully controlled by this
 module, and the sink is unreachable from outside it.
 
-Adding a new ``gh`` invocation means adding a function here, not exporting `_run`.
+Adding a new ``gh`` invocation for these callers means adding a function here, not exporting `_run`.
 """
 
 from __future__ import annotations
@@ -46,8 +46,7 @@ def _as_text(value: bytes | str | None) -> str:
 
 
 def _slug(owner: str, repo: str) -> str:
-    """
-    Return ``owner/repo``, pinned to the one repository these engines govern.
+    """Return ``owner/repo``, pinned to the one repository these engines govern.
 
     Every caller here is vault infrastructure for LAF-US/IDAHO-VAULT — the arbiter
     scripts already refuse to run anywhere else, and the label vocabulary, merge-queue
@@ -86,8 +85,7 @@ def _label(name: str) -> str:
 
 @contextmanager
 def _body_file(body: str):
-    """
-    Yield a path holding ``body``, so the text never becomes an argv element.
+    """Yield a path holding ``body``, so the text never becomes an argv element.
 
     `gh` takes either `--body` or `--body-file`. Comment bodies here are multi-line
     attestations assembled at runtime, and argv is the wrong carrier for them twice
