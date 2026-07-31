@@ -7,8 +7,6 @@ scope: GitHub Actions workflow runs, laf-us/idaho-vault, 2026-07-27T12:38Z to 20
 owner: Logan Finney
 ---
 
-# CI Failure Sweep — 2026-07-28
-
 ## 5W Summary
 
 | | |
