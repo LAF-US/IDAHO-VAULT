@@ -114,7 +114,7 @@ a.internal-link {
 .calendar .weekdays .day:nth-child(1),
 .calendar .weekdays span:nth-child(1),
 .calendar .days-of-week span:nth-child(1) {
-  color: var(--roygbiv-red);
+  color: var(--roygbiv-violet);
 }
 
 /* Monday */
@@ -124,7 +124,7 @@ a.internal-link {
 .calendar .weekdays .day:nth-child(2),
 .calendar .weekdays span:nth-child(2),
 .calendar .days-of-week span:nth-child(2) {
-  color: var(--roygbiv-orange);
+  color: var(--roygbiv-red);
 }
 
 /* Tuesday */
@@ -134,7 +134,7 @@ a.internal-link {
 .calendar .weekdays .day:nth-child(3),
 .calendar .weekdays span:nth-child(3),
 .calendar .days-of-week span:nth-child(3) {
-  color: var(--roygbiv-yellow);
+  color: var(--roygbiv-orange);
 }
 
 /* Wednesday */
@@ -144,7 +144,7 @@ a.internal-link {
 .calendar .weekdays .day:nth-child(4),
 .calendar .weekdays span:nth-child(4),
 .calendar .days-of-week span:nth-child(4) {
-  color: var(--roygbiv-green);
+  color: var(--roygbiv-yellow);
 }
 
 /* Thursday */
@@ -154,7 +154,7 @@ a.internal-link {
 .calendar .weekdays .day:nth-child(5),
 .calendar .weekdays span:nth-child(5),
 .calendar .days-of-week span:nth-child(5) {
-  color: var(--roygbiv-blue);
+  color: var(--roygbiv-green);
 }
 
 /* Friday */
@@ -164,7 +164,7 @@ a.internal-link {
 .calendar .weekdays .day:nth-child(6),
 .calendar .weekdays span:nth-child(6),
 .calendar .days-of-week span:nth-child(6) {
-  color: var(--roygbiv-indigo);
+  color: var(--roygbiv-blue);
 }
 
 /* Saturday */
@@ -174,5 +174,5 @@ a.internal-link {
 .calendar .weekdays .day:nth-child(7),
 .calendar .weekdays span:nth-child(7),
 .calendar .days-of-week span:nth-child(7) {
-  color: var(--roygbiv-violet);
+  color: var(--roygbiv-indigo);
 }
