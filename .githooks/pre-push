@@ -35,7 +35,7 @@ printf >&2 '%s\n' 'pre-push: checking secret patterns for commits not on upstrea
 "$PYTHON" .github/scripts/check_secret_patterns.py --paths-from-stdin --git-ref HEAD <"$push_paths"
 
 printf >&2 '%s\n' 'pre-push: checking large-file policy for commits not on upstream'
-"$PYTHON" .github/scripts/check_large_files.py --paths-from-stdin <"$push_paths"
+"$PYTHON" .github/scripts/check_large_files.py --paths-from-stdin --git-ref HEAD <"$push_paths"
 
 if [ -z "${GIT_LFS_SKIP_PUSH:-}" ]; then
   remote_name=${1:-origin}
