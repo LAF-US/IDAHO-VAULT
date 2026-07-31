@@ -1,0 +1,100 @@
+{
+  "is_obsidian_vault": true,
+  "smart_blocks": {
+    "embed_blocks": true,
+    "min_chars": 200
+  },
+  "smart_sources": {
+    "min_chars": 200,
+    "embed_model": {
+      "adapter": "transformers",
+      "transformers": {
+        "model_key": "TaylorAI/bge-micro-v2"
+      }
+    },
+    "excluded_headings": "",
+    "file_exclusions": "Untitled,Bobby Montoya smokejumper photos for Marcia/BobbyMontoya024back I used to be a Mexican. Photo by Alan Frentress Bach Studios early 60's. The suit doesn't fit any more. The Kentucky Fried Chicano,Bobby.jpg,SCRATCH FOLDER/SCRATCH BIN/Bobby Montoya smokejumper photos for Marcia/BobbyMontoya024back I used to be a Mexican. Photo by Alan Frentress Bach Studios early 60's. The suit doesn't fit any more. The Kentucky Fried Chicano,_private/rewrite-prep-dirty-2026-04-09/2023-12-01 - MOON - Pocatello awards drag queen story time an award for 'Human and Civil Rights,' Igniting concerns from parents over child exposure to gender confusion.md,_private/rewrite-prep-dirty-2026-04-09/2026-02-02 - Chris Freeland,View all posts by Chris Freeland → - Follow the Changes 9 Ways Web Archives are Used in Digital Investigations  Internet Archive Blogs.md,_private/rewrite-prep-dirty-2026-04-09/2026-04-01 - Institute for Justice - Institute for Justice Applauds Idaho Governor Signing Bill Protecting Private Property from Law Enforcement Searches Without a Warrant.md,_private/rewrite-prep-dirty-2026-04-09/SCRATCH FOLDER/SCRATCH BIN/vault/SOURCES/NEWS MEDIA/2025-11-07 - Idaho Capital Sun - After operating without official rules Idaho budget committee tweaks voting procedures.md,_private/rewrite-prep-dirty-2026-04-09/SCRATCH FOLDER/SCRATCH BIN/vault/SOURCES/NEWS MEDIA/2025-11-07 - Idaho Capital Sun - After operating without official rules Idaho budget committee tweaks voting procedures (2).md,_private/touchstone-repair/2026-04-01 - Institute for Justice - Institute for Justice Applauds Idaho Governor Signing Bill Protecting Private Property from Law Enforcement Searches Without a Warrant.md,_private/touchstone-repair-clean/2023-12-01 - MOON - Pocatello awards drag queen story time an award for 'Human and Civil Rights,_private/touchstone-repair-clean/2026-04-01 - Institute for Justice - Institute for Justice Applauds Idaho Governor Signing Bill Protecting Private Property from Law Enforcement Searches Without a Warrant.md,_private/workflow-fix-clean/2026-04-01 - Institute for Justice - Institute for Justice Applauds Idaho Governor Signing Bill Protecting Private Property from Law Enforcement Searches Without a Warrant.md,_junkdrawer_of_illegal_folders/Zoom/2025-04-16 13.19.12 Idaho Reports Podcast_ Lauren Necochea,Fighting Oligarchy Tour/2025-04-16 13.19.12 Idaho Reports Podcast_ Lauren Necochea,Fighting Oligarchy Tour.md,2026-06-15 - ‘Fix this code.’ The three little words behind the U.S. government decision that shut down Anthropic’s Fable and Mythos AI models (Conflicted copy MacBook Pro (Retina,13-inch,Early 2015) 202606210204).md,2026-07-07 - Military road from Fort Benton to Fort Walla-Walla. Letter from the Secretary of war,transmitting the report of Lieutenant Mullan,in charge of the construction of the military road ... _ Making of Am.md,2026-05-11 - 'They’re not scared,they’re just at home' Man plans to donate 885 acres to the Kalispel Tribe through conservation easement to protect wildlife (Conflicted copy Laptop (IdahoPTV) 202607081729).md,plugins/cache/openai-curated-remote/public-equity-investing/0.1.31/skills/public-equity-investing/internal-support/sector-context-overlay/references/exchanges-market-infrastructure/exchanges-market-infrastructure.md,- Mullen Books,ABAA - Art Across America_ Two Centuries of Regional Painting,1710-1920 _ Volume 3 (The Far Midwest,Rocky Mountain West,Southwest,Pacific) by Gerdts,William H._ VG_VG Hardcover (1990) First edi.md,2001-11-03 - Internet Archive - Dictionary of American sculptors _ _18th century to the present,_ illustrated with over 200 photographs _ Opitz,Glenn B _ Free Download,Borrow,and Streaming _ Internet Archive.md,- 2020.25.1 - Landscape,Pastel on paper. _br ___br __Raised on a farm near Idaho Falls,Idaho,Helen Aupperle became a painter of Indian subjects and had begun sketching Western scenes as a child when her family m.md,- 2025.10.84 - Jonathan Ochi is a Japanese-American born in Idaho Falls in 1947,whose parents were both children of Japanese immigrants. His father,Fred Ochi,was a graphic artist and watercolor painter who faced.md,2021-09-17 - (1) Carole King on X_ The cover of Simple Things is the work of the artist Roy Reynolds of Idaho Falls,Idaho. With his passing we lost a good man and I lost a good friend._R.I.P. Roy Reynolds.md,- Marco Deyasi - Community Without Borders_ Symbolism,Theosophy,and Anti-Colonialism in France,1880-1910 - Turning of the Wheel Humanities Colloquium 2011-2012 - Digital Initiatives - University of Idaho Library.md,Helen Aupperle became a painter of Indian subjects and had begun sketching Western scenes as a child when her fa.md,- Mullen Books - Art Across America_ Two Centuries of Regional Painting,1710-1920 Volume Three The Far Midwest,Pacific ONLY by William H. Gerdts on Mullen Books (Conflicted copy Laptop (IdahoPTV) 202607281713).md,- ScholarWorks - The Ted Trueblood Collection at Boise State University _ A Guide to the Papers of One of America's Foremost Outdoor Writers and Conservationists (Conflicted copy Laptop (IdahoPTV) 202607281529).md,2024-03-05 - Senator Murray Announces State of the Union Guest_ Kayla Smith,Former Idaho Resident Who Received Lifesaving Abortion Care in Seattle and Now Resides in Washington State (Conflicted copy Laptop (IdahoPTV) 202607281827).md,- Best of the West_ Governors come together to support mental health & well-being. Plus,nuclear lifecycle campuses; turning office buildings into housing; Colorado at 150; and free RECA clinics - WGA - Western Gov.md,- 2020.25.1 - Landscape, Pastel on paper. _br ___br __Raised on a farm near Idaho Falls, Idaho, Helen Aupperle became a painter of Indian subjects and had begun sketching Western scenes as a child when her fa.md,- 2020.25.1 - Landscape, Pastel on paper. _br ___br __Raised on a farm near Idaho Falls, Idaho, Helen Aupperle became a painter of Indian subjects and had begun sketching Western scenes as a child when her family m.md,- 2025.10.84 - Jonathan Ochi is a Japanese-American born in Idaho Falls in 1947, whose parents were both children of Japanese immigrants. His father, Fred Ochi, was a graphic artist and watercolor painter who faced.md,- Best of the West_ Governors come together to support mental health & well-being. Plus, nuclear lifecycle campuses; turning office buildings into housing; Colorado at 150; and free RECA clinics - WGA - Western Gov.md,- Marco Deyasi - Community Without Borders_ Symbolism, Theosophy, and Anti-Colonialism in France, 1880-1910 - Turning of the Wheel Humanities Colloquium 2011-2012 - Digital Initiatives - University of Idaho Library.md,- Mullen Books - Art Across America_ Two Centuries of Regional Painting, 1710-1920 Volume Three The Far Midwest, Rocky Mountain West, Southwest, Pacific ONLY by William H. Gerdts on Mullen Books (Conflicted copy Laptop (IdahoPTV) 202607281713).md,- Mullen Books, ABAA - Art Across America_ Two Centuries of Regional Painting, 1710-1920 _ Volume 3 (The Far Midwest, Rocky Mountain West, Southwest, Pacific) by Gerdts, William H._ VG_VG Hardcover (1990) First edi.md,2001-11-03 - Internet Archive - Dictionary of American sculptors _ _18th century to the present,_ illustrated with over 200 photographs _ Opitz, Glenn B _ Free Download, Borrow, and Streaming _ Internet Archive.md,2021-09-17 - (1) Carole King on X_ The cover of Simple Things is the work of the artist Roy Reynolds of Idaho Falls, Idaho. With his passing we lost a good man and I lost a good friend._R.I.P. Roy Reynolds.md,2024-03-05 - Senator Murray Announces State of the Union Guest_ Kayla Smith, Former Idaho Resident Who Received Lifesaving Abortion Care in Seattle and Now Resides in Washington State (Conflicted copy Laptop (IdahoPTV) 202607281827).md,2026-05-11 - 'They’re not scared, they’re just at home' Man plans to donate 885 acres to the Kalispel Tribe through conservation easement to protect wildlife (Conflicted copy Laptop (IdahoPTV) 202607081729).md,2026-06-15 - ‘Fix this code.’ The three little words behind the U.S. government decision that shut down Anthropic’s Fable and Mythos AI models (Conflicted copy MacBook Pro (Retina, 13-inch, Early 2015) 202606210204).md,2026-07-07 - Military road from Fort Benton to Fort Walla-Walla. Letter from the Secretary of war, transmitting the report of Lieutenant Mullan, in charge of the construction of the military road ... _ Making of Am.md",
+    "folder_exclusions": ""
+  },
+  "language": "en",
+  "re_import_wait_time": 60,
+  "smart_chat_threads": {
+    "chat_model": {
+      "adapter": "ollama",
+      "ollama": {}
+    }
+  },
+  "smart_notices": {
+    "muted": {
+      "done_import": true,
+      "embedding_complete": true,
+      "embedding_progress": true,
+      "initial_scan": true,
+      "saving_collection": true,
+      "new_version_available": true
+    }
+  },
+  "smart_view_filter": {
+    "expanded_view": false,
+    "render_markdown": true,
+    "show_full_path": false
+  },
+  "version": "",
+  "new_user": true,
+  "models": {
+    "embedding_platform": "transformers",
+    "chat_completion_platform": "open_router"
+  },
+  "connections_lists": {
+    "results_collection_key": "smart_sources",
+    "score_algo_key": "similarity",
+    "connections_post_process": "none",
+    "results_limit": 9,
+    "exclude_frontmatter_blocks": true,
+    "connections_list_item_component_key": "connections_list_item_v3",
+    "components": {
+      "connections_list_item_v3": {
+        "render_markdown": true,
+        "show_full_path": false
+      },
+      "connections_list_v4": {
+        "show_graph": true
+      }
+    },
+    "connections_view_location": "right",
+    "connections_list_component_key": "connections_list_v4",
+    "frontmatter_filter_include": "",
+    "frontmatter_filter_exclude": "",
+    "footer_connections": true
+  },
+  "context_items": {
+    "template_preset": "xml_structured",
+    "template_before": "<item loc=\"{{KEY}}\" at=\"{{TIME_AGO}}\">",
+    "template_after": "</item>"
+  },
+  "smart_contexts": {
+    "template_preset": "xml_structured",
+    "template_before": "<context>\n{{FILE_TREE}}",
+    "template_after": "</context>"
+  },
+  "lookup_lists": {
+    "results_collection_key": "smart_blocks",
+    "score_algo_key": "similarity",
+    "results_limit": 20
+  },
+  "embedding_models": {
+    "default_model_key": "transformers#1785513870947"
+  },
+  "event_logs": {
+    "native_notice_info": false,
+    "native_notice_warning": true,
+    "native_notice_error": true,
+    "native_notice_attention": false,
+    "native_notice_milestone": true
+  },
+  "smart_templates": {
+    "template_folder": "",
+    "template_name": "",
+    "template_headings": ""
+  }
+}

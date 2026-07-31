@@ -1,0 +1,118 @@
+{
+  "currentIndex": -1,
+  "currentView": null,
+  "modalSettings": {
+    "model": "gpt-3.5-turbo",
+    "modelName": "ChatGPT-3.5 turbo",
+    "modelType": "openAI",
+    "modelEndpoint": "chat",
+    "endpointURL": "/chat/completions",
+    "historyIndex": -1,
+    "imageSettings": {
+      "numberOfImages": 1,
+      "response_format": "url",
+      "size": "1024x1024",
+      "quality": "medium"
+    },
+    "chatSettings": {
+      "maxTokens": 0,
+      "temperature": 0.65,
+      "GPT4All": {},
+      "openAI": {
+        "frequencyPenalty": 0,
+        "logProbs": false,
+        "topLogProbs": null,
+        "presencePenalty": 0,
+        "responseFormat": "",
+        "topP": 1
+      }
+    },
+    "contextSettings": {
+      "includeActiveFile": true,
+      "includeSelection": true,
+      "selectedFiles": [],
+      "maxContextTokensPercent": 70
+    }
+  },
+  "widgetSettings": {
+    "model": "gpt-3.5-turbo",
+    "modelName": "ChatGPT-3.5 turbo",
+    "modelType": "openAI",
+    "modelEndpoint": "chat",
+    "endpointURL": "/chat/completions",
+    "historyIndex": -1,
+    "imageSettings": {
+      "numberOfImages": 1,
+      "response_format": "url",
+      "size": "1024x1024",
+      "quality": "medium"
+    },
+    "chatSettings": {
+      "maxTokens": 0,
+      "temperature": 0.65,
+      "GPT4All": {},
+      "openAI": {
+        "frequencyPenalty": 0,
+        "logProbs": false,
+        "topLogProbs": null,
+        "presencePenalty": 0,
+        "responseFormat": "",
+        "topP": 1
+      }
+    },
+    "contextSettings": {
+      "includeActiveFile": true,
+      "includeSelection": true,
+      "selectedFiles": [],
+      "maxContextTokensPercent": 70
+    }
+  },
+  "fabSettings": {
+    "model": "gpt-3.5-turbo",
+    "modelName": "ChatGPT-3.5 turbo",
+    "modelType": "openAI",
+    "modelEndpoint": "chat",
+    "endpointURL": "/chat/completions",
+    "historyIndex": -1,
+    "imageSettings": {
+      "numberOfImages": 1,
+      "response_format": "url",
+      "size": "1024x1024",
+      "quality": "medium"
+    },
+    "chatSettings": {
+      "maxTokens": 0,
+      "temperature": 0.65,
+      "GPT4All": {},
+      "openAI": {
+        "frequencyPenalty": 0,
+        "logProbs": false,
+        "topLogProbs": null,
+        "presencePenalty": 0,
+        "responseFormat": "",
+        "topP": 1
+      }
+    },
+    "contextSettings": {
+      "includeActiveFile": true,
+      "includeSelection": true,
+      "selectedFiles": [],
+      "maxContextTokensPercent": 70
+    }
+  },
+  "promptHistory": [],
+  "openAIAPIKey": "",
+  "claudeAPIKey": "",
+  "mistralAPIKey": "",
+  "claudeCodeOAuthToken": "",
+  "linearWorkspaces": [],
+  "geminiAPIKey": "",
+  "GPT4AllStreaming": false,
+  "showFAB": false,
+  "showRibbonIcon": true,
+  "enableFileContext": false,
+  "defaultModel": "",
+  "ollamaHost": "http://localhost:11434",
+  "ollamaModels": [],
+  "emptyChatAvatar": "llm-gal"
+}

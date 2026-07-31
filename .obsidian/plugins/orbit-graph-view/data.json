@@ -1,0 +1,12 @@
+{
+  "siblingSortMode": "modifiedTime",
+  "keplerBaseOmega": 5,
+  "theme": "light",
+  "orbitDirection": "counterclockwise",
+  "parentSource": "backlink",
+  "hideLoneStars": false,
+  "hideOrbitTrace": false,
+  "hideLink": false,
+  "orbitRadiusScale": 1,
+  "nodeSizeScale": 1
+}
