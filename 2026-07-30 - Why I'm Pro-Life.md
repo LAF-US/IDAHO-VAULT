@@ -44,3 +44,5 @@ Free newsletter · Unsubscribe anytime · [View on Substack](https://newsletter.
 ### About Brian Almon
 
 Brian Almon is the Editor of the Gem State Chronicle. He also serves as Chairman of the District 14 Republican Party and is a trustee of the Eagle Public Library Board. He lives with his wife and five children in Eagle.
+
+#idaho
