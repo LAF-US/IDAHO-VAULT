@@ -66,7 +66,9 @@ ALLOW_PATH_PATTERNS = (
 
 SECRET_CONTENT_PATTERNS = {
     "github_token": re.compile(r"\b(?:ghp|gho|ghu|ghs|ghr)_[A-Za-z0-9_]{30,}\b"),
-    "openai_key": re.compile(r"\bsk-(?:proj-)?[A-Za-z0-9_-]{32,}\b"),
+    "openai_key": re.compile(
+        r"\bsk-(?:proj-[A-Za-z0-9_-]{32,}|svcacct-[A-Za-z0-9_-]{32,}|[A-Za-z0-9]{32,})\b"
+    ),
     "anthropic_key": re.compile(r"\bsk-ant-[A-Za-z0-9_-]{32,}\b"),
     "slack_token": re.compile(r"\bxox(?:b|p|o|a|r|s)-[A-Za-z0-9-]{20,}\b"),
     # Broadened 2026-07-02: the old alternation missed ENCRYPTED / PGP / SSH2 /
@@ -79,6 +81,16 @@ SECRET_CONTENT_PATTERNS = {
         ["']?\b(api[_-]?key|secret|token|password|passwd|pwd)\b["']?
         \s*[:=]\s*["']?[A-Za-z0-9_./+=:-]{24,}
         """
+    ),
+}
+
+PUBLIC_EMBED_ALLOW_PATTERNS = {
+    "google_api_key": (
+        re.compile(r"https://www\.google\.com/maps/embed/v1/"),
+        re.compile(r"https://maps\.googleapis\.com/maps/api/staticmap\?"),
+    ),
+    "generic_secret_assignment": (
+        re.compile(r"https://starter1\.preservica\.com/Render/render/external\?"),
     ),
 }
 
@@ -188,6 +200,8 @@ def content_secret_findings(path: str, data: bytes) -> list[Finding]:
 
 def is_allowed_content_match(rule: str, line: str) -> bool:
     """Allow narrow generic placeholders without muting dedicated token rules."""
+    if any(pattern.search(line) for pattern in PUBLIC_EMBED_ALLOW_PATTERNS.get(rule, ())):
+        return True
     if rule != "generic_secret_assignment":
         return False
     if "secret-pattern: allow" in line:
