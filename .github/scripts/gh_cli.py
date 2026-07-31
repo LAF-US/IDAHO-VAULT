@@ -46,7 +46,8 @@ def _as_text(value: bytes | str | None) -> str:
 
 
 def _slug(owner: str, repo: str) -> str:
-    """Return ``owner/repo``, pinned to the one repository these engines govern.
+    """
+    Return ``owner/repo``, pinned to the one repository these engines govern.
 
     Every caller here is vault infrastructure for LAF-US/IDAHO-VAULT — the arbiter
     scripts already refuse to run anywhere else, and the label vocabulary, merge-queue
@@ -85,7 +86,8 @@ def _label(name: str) -> str:
 
 @contextmanager
 def _body_file(body: str):
-    """Yield a path holding ``body``, so the text never becomes an argv element.
+    """
+    Yield a path holding ``body``, so the text never becomes an argv element.
 
     `gh` takes either `--body` or `--body-file`. Comment bodies here are multi-line
     attestations assembled at runtime, and argv is the wrong carrier for them twice
