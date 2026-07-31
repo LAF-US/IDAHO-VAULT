@@ -7,7 +7,7 @@ published: 2026-07-29
 created: 2026-07-31
 description: "How much traction can an independent have?"
 ---
-Anyone wondering what to make of the shakeup in Idaho’s race for the U.S. Senate might be well advised to look across the state line at the election returns arriving there on Tuesday night (and beyond).
+Anyone wondering what to make of the shakeup in [[Idaho]]’s race for the U.S. Senate might be well advised to look across the state line at the election returns arriving there on Tuesday night (and beyond).
 
 That is the night of the Washington state primary election, and the results from congressional district 5 - which borders all of northern Idaho on the west - will be well worth absorbing for people in the Gem State as well.
 
@@ -34,3 +34,5 @@ One more point is worth mentioning. A long-standing rule of thumb in Washington 
 Remember that money Baumgartner is spending to influence the opposition race? It’s being used to “attack” Conroy - in terms that make her look good to local Democrats. He is, in other words, trying to boost her over independent Powell. He appears to see Powell as the larger threat.
 
 Which brings us to the Tuesday election. Take a look over the border and observe how strong a primary vote Baumgartner gets (if it’s much over 50% he may be in good shape), and the relative votes for Powell and Conroy. Taken together, these numbers may be useful markers in evaluating Idaho’s Senate race.
+
+#idaho

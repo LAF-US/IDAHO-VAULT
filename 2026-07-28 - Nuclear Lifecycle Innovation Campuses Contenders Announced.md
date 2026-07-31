@@ -6,7 +6,7 @@ published: 2026-07-28
 created: 2026-07-31
 description: "DOE announces Utah, Tennessee, Oklahoma, Louisiana, and Idaho as potential hosts to modernize the nation’s nuclear fuel cycle"
 ---
-DOE announces Utah, Tennessee, Oklahoma, Louisiana, and Idaho as potential hosts to modernize the nation’s nuclear fuel cycle
+DOE announces Utah, Tennessee, Oklahoma, Louisiana, and [[Idaho]] as potential hosts to modernize the nation’s nuclear fuel cycle
 
 [Energy.gov](https://www.energy.gov/)
 

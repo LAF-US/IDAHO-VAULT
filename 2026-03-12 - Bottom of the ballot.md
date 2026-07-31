@@ -13,7 +13,7 @@ These humble offices don’t get the attention they deserve. We should give them
 
 Especially since in this primary the top level offices, for congress and statewide office, have not a serious contest among them, even though (maybe not coincidentally) an unusually large number of people have filed for them. Above the state legislative level you can expect incumbents to win practically everything, easily. And there aren’t looking to be a large number of really hot legislative primary contests either, though a few are scattered here and there.
 
-Precinct offices up for election are far more numerous than any other kind of office. Idaho has more than 900 precincts (that exact number changes from time to time), and every party can elect people to represent them in those places. All but four candidates for them (Constitution Party contenders in Ada and Canyon counties and Libertarians in Bannock and Bonneville) is either Republican or Democratic.
+Precinct offices up for election are far more numerous than any other kind of office. [[Idaho]] has more than 900 precincts (that exact number changes from time to time), and every party can elect people to represent them in those places. All but four candidates for them (Constitution Party contenders in Ada and Canyon counties and Libertarians in Bannock and Bonneville) is either Republican or Democratic.
 
 Their mere presence on the ballot or in office can be an excellent indicator of sheer political strength: Parties strong in an area tend to be full up with precinct officers, and sometimes see actual competition for the spots. (We’ll shortly get to the very practical reasons for such competition.)
 
@@ -28,3 +28,5 @@ The state Republican Party, whose governing structure (as with the Democrats) is
 A good example how this plays out is Kootenai County, where 152 people have filed for the seats in 74 precincts, translating to contests all over the place - largely between the more extreme group which has been running the central committee for years, and others (many of them long-time Republicans) who have felt shut out. The practical implications of the elections are real; there’s a straight line, for example, between the central committee’s involvement in local community college board contests and the college’s recent near-death experience.
 
 These precinct contests, and those in some other places like Ada, Bonneville and Twin Falls counties especially, are likely to be hard fought in the coming weeks. Of all the primary contests upcoming on Idaho’s ballots, none may be more worth tending to.
+
+#idaho
