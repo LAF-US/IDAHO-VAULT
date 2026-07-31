@@ -23,7 +23,7 @@ On the afternoon of June 22, Neil “Lee” Spring was sitting in Rhodes Skate P
 
 Public camping became illegal in Boise last summer after Gov. Brad Little signed [Senate Bill 1141](https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2025/legislation/S1141E1.pdf), which forces cities with populations over 100,000 people to police the issue or face financial penalties.
 
-The law applies to just three of Idaho’s cities: Boise, Nampa and Meridian. Sponsored by Sen. Codi Galloway, R-Boise, Sen. Kelly Anthon, R-Rupert, and Rep. Bruce Skaug, R-Nampa, the “Galloway law,” so named after its main sponsor, was promoted as a remedy to what many saw as a growing homelessness issue in Idaho.
+The law applies to just three of [[Idaho]]’s cities: Boise, Nampa and Meridian. Sponsored by Sen. Codi Galloway, R-Boise, Sen. Kelly Anthon, R-Rupert, and Rep. Bruce Skaug, R-Nampa, the “Galloway law,” so named after its main sponsor, was promoted as a remedy to what many saw as a growing homelessness issue in Idaho.
 
 A year after its implementation, critics say the law makes it harder to serve homeless populations and targets the unhoused.
 
@@ -90,3 +90,5 @@ Still, some business owners believe that the city is not doing enough to combat 
 For Spring, the policing is a new, frustrating experience for a person who otherwise adheres to the law.
 
 “I’ve never been in trouble with the cops before I became homeless,” he said.
+
+#idaho
