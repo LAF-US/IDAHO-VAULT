@@ -79,10 +79,28 @@ SECRET_CONTENT_PATTERNS = {
     "generic_secret_assignment": re.compile(
         r"""(?ix)
         ["']?\b(api[_-]?key|secret|token|password|passwd|pwd)\b["']?
-        \s*[:=]\s*["']?[A-Za-z0-9_./+=:-]{24,}
+        \s*[:=]\s*
+        (?P<quote>["'])
+        (?P<value>[A-Za-z0-9_./+=:-]{24,})
+        (?P=quote)
         """
     ),
 }
+
+# Bare assignments are meaningful in declarative configuration and shell
+# files, but in programming-language and bundled JavaScript sources they are
+# normally references to constants, properties, types, or functions. Scoping
+# this fallback by file type keeps those identifiers from masquerading as
+# credential values while retaining coverage for unquoted YAML/INI/shell data.
+GENERIC_UNQUOTED_SECRET_ASSIGNMENT = re.compile(
+    r"""(?ix)
+    ["']?\b(api[_-]?key|secret|token|password|passwd|pwd)\b["']?
+    \s*[:=]\s*(?P<value>[A-Za-z0-9_./+=:-]{24,})
+    """
+)
+GENERIC_UNQUOTED_EXTENSIONS = frozenset(
+    ".yaml .yml .toml .ini .cfg .conf .properties .sh .bash .zsh .ps1".split()
+)
 
 PUBLIC_EMBED_ALLOW_PATTERNS = {
     "google_api_key": (
@@ -130,7 +148,7 @@ KNOWN_NON_SECRET_FILE_SIGNATURES = (
 # (measured: 12 .md + 27 .json false-positives). This is defense-in-depth, not
 # exclusion — a key pasted into a .md is still caught by the key/token detectors.
 _TEXT_EXTENSIONS = frozenset(
-    ".md .markdown .txt .json .jsonl .yaml .yml .toml .xml .html .htm .csv .tsv"
+    ".md .markdown .txt .json .jsonl .ajson .yaml .yml .toml .xml .html .htm .csv .tsv"
     " .js .mjs .ts .py .sh .rb .go .rs .java .kt .c .h .cpp .css .svg .rtf .tex"
     " .ipynb .log .cfg .ini .conf .properties .gitignore".split()
 )
@@ -198,7 +216,9 @@ def content_secret_findings(path: str, data: bytes) -> list[Finding]:
     return findings
 
 
-def is_allowed_content_match(rule: str, line: str) -> bool:
+def is_allowed_content_match(
+    rule: str, line: str, match: re.Match[str] | None = None
+) -> bool:
     """Allow narrow generic placeholders without muting dedicated token rules."""
     if any(pattern.search(line) for pattern in PUBLIC_EMBED_ALLOW_PATTERNS.get(rule, ())):
         return True
@@ -211,6 +231,8 @@ def is_allowed_content_match(rule: str, line: str) -> bool:
         or re.search(r"""(?i)["']?env:[A-Z][A-Z0-9_]*["']?""", line)
         or re.search(r"""(?i)["']?\$secretRef(?::[A-Za-z0-9_.:/-]+)?["']?""", line)
         or re.search(r"(?i)\breplace-with-[A-Za-z0-9_-]+\b", line)
+        or re.search(r"(?i)\b(?:your|example|sample|dummy|placeholder|changeme)[-_]", line)
+        or re.search(r"""(?i)\s*[:=]\s*["']?(?:https?|file)://""", line)
     )
 
 
@@ -351,12 +373,24 @@ def worktree_file_bytes(path: str) -> bytes | None:
 def content_findings(path: str, data: bytes) -> list[Finding]:
     text = data.decode("utf-8", errors="replace")
     findings: list[Finding] = []
+    ext = os.path.splitext(path)[1].lower()
+    allow_unquoted_generic = ext in GENERIC_UNQUOTED_EXTENSIONS or os.path.basename(path).startswith(".env")
     for line_number, line in enumerate(text.splitlines(), start=1):
         for rule, pattern in SECRET_CONTENT_PATTERNS.items():
-            if pattern.search(line):
-                if is_allowed_content_match(rule, line):
-                    continue
-                findings.append(Finding(path=path, line=line_number, rule=rule))
+            match = pattern.search(line)
+            if match is None or is_allowed_content_match(rule, line, match):
+                continue
+            findings.append(Finding(path=path, line=line_number, rule=rule))
+        if allow_unquoted_generic:
+            match = GENERIC_UNQUOTED_SECRET_ASSIGNMENT.search(line)
+            if match is not None and not is_allowed_content_match(
+                "generic_secret_assignment", line, match
+            ):
+                finding = Finding(
+                    path=path, line=line_number, rule="generic_secret_assignment"
+                )
+                if finding not in findings:
+                    findings.append(finding)
     return findings
 
 
