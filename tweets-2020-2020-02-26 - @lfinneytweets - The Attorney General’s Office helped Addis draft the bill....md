@@ -16,11 +16,12 @@ related:
   - lfinneytweets
 ---
 
-@IDSecOfState The Attorney General’s Office helped Addis draft the bill language. It doesn’t address fiscal notes, which Rep. Horman is addressing with another bill. 
-https://t.co/n5wu24kEQs
+@IDSecOfState The Attorney General’s Office helped Addis draft the bill language. It doesn’t address fiscal notes, which Rep. Horman is addressing with another bill.
+<https://t.co/n5wu24kEQs>
 
 ## Links
-- https://x.com/lfinneytweets/status/1231970409794326528
+
+- <https://x.com/lfinneytweets/status/1231970409794326528>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

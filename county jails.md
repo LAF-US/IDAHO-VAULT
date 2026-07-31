@@ -150,9 +150,10 @@ related:
 - jails
 authority: LOGAN
 ---
-counties jails 
+counties jails
 
 # Counties - Cities
+
 - Ada County Jail - Boise
 - Adams County Jail - Council
 - Bannock County Jail - Pocatello
@@ -196,4 +197,4 @@ counties jails
 - Teton County Jail - Driggs
 - Twin Falls County Jail - Twin Falls
 - Valley County Jail - Cascade
-- Washington County Jail - Weiser 
+- Washington County Jail - Weiser

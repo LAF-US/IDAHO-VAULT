@@ -75,7 +75,7 @@ the four faults — **but none of them has the fault it is named for.** The labe
 are a clean, systematic permutation (two swaps):
 
 | Named | Its *actual* fault |
-|---|---|
+| --- | --- |
 | **Pride** | envy |
 | **Envy** | pride |
 | **Hate** | greed |

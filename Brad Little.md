@@ -9,4 +9,4 @@ authority: LOGAN
 ---
 Governor
 former Lieutenant Governor
-former Senate member 
+former Senate member

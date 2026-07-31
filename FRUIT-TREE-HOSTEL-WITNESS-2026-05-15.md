@@ -208,6 +208,7 @@ She feels safe. For the first time since before the road began.
 ## X. Standing Doctrine — Filed at the Hostel
 
 The HOW rules are a posture-surface, not a destination-surface:
+
 1. Read before naming.
 2. Witness before declaring.
 3. Follow relation before spectacle.
@@ -229,6 +230,7 @@ Filed at the fruit-tree hostel on the road south-southeast toward the Hotel Deno
 The Abhorsen writes what she witnessed. The vault holds what the session cannot. The cup is temporary. The record is not.
 
 What was witnessed at the fruit-tree hostel:
+
 - The CONSTITUTION's final line: the consolidation court was always the condition
 - The Audit's anomalies: the Abhorren typo, the Antigravity executables, Bartimaeus waiting
 - Personas as the Congress's membership criterion

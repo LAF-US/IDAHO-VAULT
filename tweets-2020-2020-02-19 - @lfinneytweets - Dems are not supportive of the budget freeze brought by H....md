@@ -17,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-@IlanaRubel @IdahoDems Dems are not supportive of the budget freeze brought by H Majority Leader Moyle. 
+@IlanaRubel @IdahoDems Dems are not supportive of the budget freeze brought by H Majority Leader Moyle.
 “Simply berating the local government officials who are scrambling to fix the Legislature’s mess is totally counterproductive and will yield no meaningful relief to the property taxpayers of Idaho.”
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

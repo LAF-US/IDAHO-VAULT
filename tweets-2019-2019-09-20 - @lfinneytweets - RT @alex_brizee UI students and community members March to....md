@@ -16,6 +16,6 @@ related:
   - lfinneytweets
 ---
 
-RT @alex_brizee: UI students and community members March to Moscow High School during the Climate Crisis Walkout. @uiargonaut https://t.co/…
+RT @alex_brizee: UI students and community members March to Moscow High School during the Climate Crisis Walkout. @uiargonaut <https://t.co/…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1175171114508505088)

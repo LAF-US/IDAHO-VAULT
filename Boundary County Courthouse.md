@@ -5,4 +5,4 @@ related:
 - magistrate court
 ---
 
-magistrate court Boundary County courthouse 
+magistrate court Boundary County courthouse
