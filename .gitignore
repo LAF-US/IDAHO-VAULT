@@ -347,8 +347,7 @@ logs/
 # stylesheet, and non-secret configuration. Ignore only per-device runtime,
 # reproducible caches/downloads, and exact settings files containing secrets.
 
-# Per-device UI/runtime state.
-.obsidian/workspace*.json
+# Transient recovery state.
 .obsidian/file-recovery.json
 .obsidian/plugins/*/cache/
 .obsidian/**/* (2)*.json
