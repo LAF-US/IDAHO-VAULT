@@ -11,7 +11,7 @@ Leaders of a trust that funds health insurance for [more than](https://www.idaho
 
 The Idaho School Benefit Trust has exhausted its reserve funds and met last week with Blue Cross, the trust’s third-party benefits administrator, to address a shortfall that’s likely more than $10 million.
 
-During the Thursday meeting, Blue Cross representatives presented three payment options, according to documents obtained by Idaho Education News. All three options would require additional monthly payments from the trust’s members: public school districts and charter schools. Blue Cross asked the trust to make a decision by Wednesday.
+During the Thursday meeting, Blue Cross representatives presented three payment options, according to documents obtained by [[Idaho]] Education News. All three options would require additional monthly payments from the trust’s members: public school districts and charter schools. Blue Cross asked the trust to make a decision by Wednesday.
 
 But there are still unanswered questions surrounding the shortfall, including which districts and charters are responsible for covering it and how much they will owe.
 
@@ -116,3 +116,5 @@ Sen. Janie Ward-Engelking, a Democrat from Boise and one of the Legislature’s 
 Ward-Engelking said she isn’t surprised the trust ran out of money, and she pinned the blame on what she sees as the state’s chronic underfunding of public schools. The state underfunds healthcare for Idaho schools by $76 million, she said, by sending out money per support unit instead of per employee.
 
 “We knew it was going to happen,” Ward-Engelking said Monday. “We underfund everybody.”
+
+#idaho

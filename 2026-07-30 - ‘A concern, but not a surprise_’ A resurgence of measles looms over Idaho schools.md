@@ -11,7 +11,7 @@ description: "The state has reported only a handful of cases so far this year. N
 
 A sign outside of a hospital in downtown Boise informs patients about the risks of measles on Tuesday, July 28, 2026. (Sean Dolan/EdNews)
 
-Idaho has reported only 10 measles cases so far this year.
+[[Idaho]] has reported only 10 measles cases so far this year.
 
 The big numbers — and the signs of trouble — loom beyond the state’s borders.
 
@@ -121,3 +121,5 @@ Even if that comes down to the wire. On Aug. 11, Boise schools will partner on a
 Classes begin on Aug. 12.
 
 *Kevin Richert writes a weekly analysis on education policy and education politics.*
+
+#idaho
