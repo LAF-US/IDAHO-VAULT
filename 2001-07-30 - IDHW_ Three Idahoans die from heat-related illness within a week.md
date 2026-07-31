@@ -7,7 +7,7 @@ published: 2001-07-30
 created: 2026-07-31
 description: "Idaho endures extreme July heat, leading to three deaths from heat-related illnesses. Health officials urge public caution as the heat remains."
 ---
-Idaho endures extreme July heat, leading to three deaths from heat-related illnesses. Health officials urge public caution as the heat remains.
+[[Idaho]] endures extreme July heat, leading to three deaths from heat-related illnesses. Health officials urge public caution as the heat remains.
 
 #### More Videos
 
@@ -63,3 +63,5 @@ Other tips provided by IDHW include:
 - *Avoid alcohol and drinks with high caffeine or sugar*
 - *Replace salt and minerals with a low-sugar sports drink. Talk to your doctor first if you are on a low-salt diet, have diabetes, high blood pressure, or other chronic conditions.*
 - *Wear a wide-brimmed hat, sunglasses, and wear sunscreen with an SPF of 15 or higher. Reapply sunscreen if you will be outside longer than two hours.*
+
+#idaho

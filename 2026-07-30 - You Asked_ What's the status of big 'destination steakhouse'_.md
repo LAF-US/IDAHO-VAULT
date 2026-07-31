@@ -9,7 +9,7 @@ description: "Over a year and a half ago, BoiseDev reported a “destination ste
 ---
 ![](https://boisedev.com/wp-content/uploads/2025/01/were-excited-offshoot-of-popular-restaurant-plans-high-end-destination-in-star-Screenshot-2025-01-2.jpg)
 
-Rendering of Anderson Prime American Steakhouse in Star, Idaho. Rendering: Via City of Star
+Rendering of Anderson Prime American Steakhouse in Star, [[Idaho]]. Rendering: Via City of Star
 
 ![](https://boisedev.com/wp-content/uploads/2023/01/question-mark.png)
 
@@ -58,3 +58,5 @@ Anderson did not return multiple requests for comment.
 SERVPRO Boise - Jan25
 
 <iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&amp;zoom=14&amp;maptype=roadmap&amp;q=+10206+W+State+St%2C+Star%2C+ID+83669%2C+USA" title="Google map of  10206 W State St, Star, ID 83669, USA"></iframe>
+
+#idaho

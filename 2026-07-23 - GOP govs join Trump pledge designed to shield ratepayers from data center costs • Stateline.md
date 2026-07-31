@@ -32,7 +32,7 @@ He added that Big Tech companies are “happy” to foot the bill for data cente
 
 “I’ve always said that America’s goal must be to dominate the future, and that includes being the No. 1 superpower in artificial intelligence,” Trump said. “This is how we’ll grow our economy, lower the cost of living, protect American consumers and lead the world in AI and high tech.”
 
-Republican Govs. Jeff Landry of Louisiana, Brian Kemp of Georgia, Jim Pillen of Nebraska and Brad Little of Idaho joined the president at the roundtable to promote their commitment to the pledge. Some governors manage the state utility commissions that set electricity prices.
+Republican Govs. Jeff Landry of Louisiana, Brian Kemp of Georgia, Jim Pillen of Nebraska and Brad Little of [[Idaho]] joined the president at the roundtable to promote their commitment to the pledge. Some governors manage the state utility commissions that set electricity prices.
 
 A total of 23 Republican governors signed the pledge, according to an undated document the White House sent reporters Thursday morning. Only Florida’s Ron DeSantis, New Hampshire’s Kelly Ayotte and Vermont’s Phil Scott declined to sign.
 
@@ -87,3 +87,5 @@ Some Democratic lawmakers, including as Energy and Commerce ranking member Rep. 
 Rep. Alexandria Ocasio-Cortez of New York and Sen. Bernie Sanders of Vermont have introduced parallel [bills](https://www.sanders.senate.gov/press-releases/news-sanders-ocasio-cortez-announce-ai-data-center-moratorium-act/) in their respective chambers to implement a nationwide AI data center moratorium.
 
 Such legislation would temporarily prohibit the construction of new data centers and the expansion of existing ones in the U.S. until Congress addresses the economic, environmental and safety consequences associated with the facilities. Last week, New York became the [first state to impose a ban](https://www.cnbc.com/2026/07/14/new-york-ai-data-center-ban.html) on AI data centers.
+
+#idaho

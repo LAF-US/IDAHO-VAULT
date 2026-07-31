@@ -10,7 +10,7 @@ description: "Three Idahoans over the age of 55 died from heat-related complicat
 
 Close-up of a white electric fan in a cozy living room,
 
-The three Idahoans who had heat-related deaths all lived in different communities in southern Idaho, the Idaho Department of Health and Welfare announced. (Photo by Getty Images)
+The three Idahoans who had heat-related deaths all lived in different communities in southern [[Idaho]], the Idaho Department of Health and Welfare announced. (Photo by Getty Images)
 
 Three Idahoans over the age of 55 died from heat-related complications in the past week, state health officials announced Thursday.
 
@@ -39,3 +39,5 @@ Staying cool and hydrated is key. Here’s how:
 - Drink a low-sugar sports drink to replace salt and minerals, which you lose through sweating. If you are on a low-salt diet, have diabetes, high blood pressure or other chronic conditions, talk to your doctor first.
 - Check weather reports on local news, [weather.gov](https://weather.gov/) or the Centers for Disease Control and Prevention’s extreme heat tracker, [HeatRisk](https://ephtracking.cdc.gov/Applications/HeatRisk/).
 - Read more heat health advice from the [CDC](https://www.cdc.gov/heat-health/about/index.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fextreme-heat%2Fabout%2Findex.html).
+
+#idaho
