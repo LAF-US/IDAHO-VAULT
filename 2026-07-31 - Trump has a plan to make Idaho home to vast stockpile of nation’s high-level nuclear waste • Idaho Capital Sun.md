@@ -70,3 +70,5 @@ Here’s the bottom line: American needs safe, reliable nuclear energy, and the 
 Instead, the Trump administration has produced a jerry rigged, phantom economic development concept that is really just a plea to states like Idaho to take some garbage “temporarily,” while we kick the waste can down the road to places like Butte County, Idaho.
 
 If this were a nuclear waste version of “The Apprentice,” the Idaho politicians endorsing this nonsense would be fired since they clearly have no idea what they are doing.
+
+#idaho
