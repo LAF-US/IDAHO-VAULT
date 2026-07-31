@@ -53,6 +53,18 @@ class GenericSecretAssignmentTest(unittest.TestCase):
         source = "value = 'ghp_" + ("A" * 40) + "'"
         self.assertIn("github_token", rules_for("settings.py", source))
 
+    def test_attested_full_calendar_vendor_key_is_allowed_only_in_vendor_bundle(self):
+        value = "AIzaSyDIiklFwJ" + "XaLWuT_4y6I9ZRVVsPuf4xGrk"
+        source = f'googleCalendarApiKey: "{value}",'
+        vendor_path = ".obsidian/plugins/obsidian-full-calendar/main.js"
+        self.assertNotIn("google_api_key", rules_for(vendor_path, source))
+        self.assertIn("google_api_key", rules_for("copied-plugin/main.js", source))
+
+    def test_changed_full_calendar_key_is_not_allowed(self):
+        source = 'googleCalendarApiKey: "' + "AIza" + ("A" * 35) + '",'
+        vendor_path = ".obsidian/plugins/obsidian-full-calendar/main.js"
+        self.assertIn("google_api_key", rules_for(vendor_path, source))
+
 
 if __name__ == "__main__":
     unittest.main()
