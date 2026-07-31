@@ -13,7 +13,7 @@ description: "MARSING (Idaho Statesman) — Some people living in Owyhee County 
 
 The Big Grass Fire. | Courtesy KIVI
 
-MARSING ([Idaho Statesman](https://www.idahostatesman.com/news/northwest/idaho/article316704822.html)) — Some people living in Owyhee County have been “devastated” by the Big Grass Fire, with losses including structures and livestock, according to law enforcement. The “catastrophic fire” prompted Idaho’s governor to declare a disaster emergency on Wednesday.
+MARSING ([Idaho Statesman](https://www.idahostatesman.com/news/northwest/idaho/article316704822.html)) — Some people living in Owyhee County have been “devastated” by the Big Grass Fire, with losses including structures and livestock, according to law enforcement. The “catastrophic fire” prompted [[Idaho]]’s governor to declare a disaster emergency on Wednesday.
 
 An estimated 13 to 15 structures have been lost on the Idaho side, though agencies are still working to confirm an exact number, Paula Rhodes, Owyhee County Sheriff’s Office 911 coordinator, told the Idaho Statesman. A significant number of livestock have also succumbed to the fire.
 
@@ -40,3 +40,5 @@ Many ranchers have been trying to protect their land and livestock from the wild
 [SUBMIT A CORRECTION](https://www.eastidahonews.com/submit-a-correction/?headline=%E2%80%98Catastrophic:%E2%80%99%20Idaho%20declares%20Big%20Grass%20Fire%20emergency%20as%20structures,%20cattle%20are%20lost&url=https://www.eastidahonews.com/2026/07/catastrophic-idaho-declares-big-grass-fire-emergency-as-structures-cattle-are-lost/)
 
 EastIdahoNews.com comment boards are a place for open, honest, and civil communication between readers regarding the news of the day and issues facing our communities. We encourage commenters to stay on topic, use positive and constructive language, and be empathetic to the feelings of other commenters. **THINK BEFORE YOU POST.** [Click here](https://www.eastidahonews.com/eastidahonews-com-code-of-ethics/#onlinecommenting) for more details on our commenting rules.
+
+#idaho

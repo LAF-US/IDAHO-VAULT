@@ -9,7 +9,7 @@ description: "Staff could be pressed to “go lighter” at every step, be less 
 ---
 Opinion articles provide independent perspectives on key community issues, separate from our newsroom reporting.
 
-Idaho State Historic Preservation Office archaeologist Chris Shaver talks about artifacts found at a construction site at the assay office in Boise, Idaho.
+[[Idaho]] State Historic Preservation Office archaeologist Chris Shaver talks about artifacts found at a construction site at the assay office in Boise, Idaho.
 
 Listen to this article
 
@@ -72,3 +72,5 @@ Idaho Statesman
 Scott McIntosh is the communities editor and columnist for the Idaho Statesman. A graduate of Syracuse University, he joined the Statesman in August 2019. He previously was editor of the Idaho Press and the Argus Observer and was the owner and editor of the Kuna Melba News. He has been honored for his editorials and columns as well as his education, business and local government watchdog reporting by the Idaho Press Club and the National Newspaper Association. Sign up for his weekly newsletter, The Idaho Way. [Support my work with a digital subscription](https://mycheckout.idahostatesman.com/subscribe?ofrgp_id=394&g2i_or_o=Event&g2i_or_p=Reporter&cid=news_cta_0.99-1mo-15.99-on-article_202404)
 
 <iframe allow="clipboard-write; web-share" src="chrome-extension://cnjifjpddelmedmihgijeibhnjfabmlf/side-panel.html?context=iframe"></iframe>
+
+#idaho

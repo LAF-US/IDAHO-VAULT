@@ -13,7 +13,7 @@ description: "EDITOR’S NOTE: The following is the second in a two-part series 
 
 A Flock camera is knocked down in Pocatello. | Logan Ramsey, EastIdahoNews.com
 
-***EDITOR’S NOTE:** The following is the second in a two-part series examining Flock cameras in eastern Idaho. [Read the first article here](https://www.eastidahonews.com/2026/07/mass-surveillance-or-a-quicker-way-to-solve-crime-flock-cameras-cause-controversy-in-east-idaho/).*
+***EDITOR’S NOTE:** The following is the second in a two-part series examining Flock cameras in eastern [[Idaho]]. [Read the first article here](https://www.eastidahonews.com/2026/07/mass-surveillance-or-a-quicker-way-to-solve-crime-flock-cameras-cause-controversy-in-east-idaho/).*
 
 POCATELLO – Awareness has been spreading of a technology new to the region that, at the time of its adoption, attracted barely any public attention at all.
 
@@ -172,3 +172,5 @@ Both Paulsen and McKellar told EastIdahoNews.com that they see this opposition t
 [SUBMIT A CORRECTION](https://www.eastidahonews.com/submit-a-correction/?headline=Tort%20claim,%20vandalized%20cameras%20and%20eastern%20Idahoans%20up%20in%20arms%20about%20Flock%20cameras&url=https://www.eastidahonews.com/2026/07/tort-claim-vandalized-cameras-and-eastern-idahoans-in-arms-about-flock-cameras/)
 
 EastIdahoNews.com comment boards are a place for open, honest, and civil communication between readers regarding the news of the day and issues facing our communities. We encourage commenters to stay on topic, use positive and constructive language, and be empathetic to the feelings of other commenters. **THINK BEFORE YOU POST.** [Click here](https://www.eastidahonews.com/eastidahonews-com-code-of-ethics/#onlinecommenting) for more details on our commenting rules.
+
+#idaho

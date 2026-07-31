@@ -33,7 +33,7 @@ In Washington, Geissler has issued a more targeted call for reinforcements. His 
 
 Geissler said he had just finalized a plan to deploy 100 National Guard troops to help fight fires in Washington.
 
-Idaho Gov. Brad Little, a Republican, signed a wildfire disaster emergency Tuesday and ordered the Idaho National Guard to help fight a fire along the border of Oregon and Idaho, [the Idaho Capital Sun reported](https://idahocapitalsun.com/2026/07/29/idaho-gov-little-declares-wildfire-disaster-emergency-authorizes-guard-to-help-along-oregon-border/).
+[[Idaho]] Gov. Brad Little, a Republican, signed a wildfire disaster emergency Tuesday and ordered the Idaho National Guard to help fight a fire along the border of Oregon and Idaho, [the Idaho Capital Sun reported](https://idahocapitalsun.com/2026/07/29/idaho-gov-little-declares-wildfire-disaster-emergency-authorizes-guard-to-help-along-oregon-border/).
 
 And [crews](https://www.facebook.com/WestValleyCityFire/posts/pfbid02ooMTuWkGXQinPy67iyjQHk4kXaUzpLU8zzuPgfNZ2ZywVi4XX3RFsZKAkJy71Bn9l) from [Utah](https://www.facebook.com/sandycityfiredepartment/posts/pfbid02smMEf6aXqHxX8DxspEqgixcNueMQrUPnGc6UwejPSW6nVY1bK6cpZx1khyA5fpqxl?rdid=01xqUrUl3k0JSZbv#) have deployed to help fight fires in Oregon.
 
@@ -52,3 +52,5 @@ While the current situation in Washington is intense, Geissler said, the state D
 “You don’t want to burn everybody out all at one time,” he said.
 
 *Stateline reporter Alex Brown can be reached at* *abrown@stateline.org**.*
+
+#idaho

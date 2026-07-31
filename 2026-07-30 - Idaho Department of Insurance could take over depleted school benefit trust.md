@@ -7,7 +7,7 @@ published: 2026-07-30
 created: 2026-07-31
 description: "The trust experienced \"catastrophic scales of loss.\" The state regulatory agency is working to protect school district employees."
 ---
-Idaho Department of Insurance Director Dean Cameron said all options are on the table to address the deficit of the [depleted](https://www.idahoednews.org/top-news/insurance-trust-has-run-out-of-money-and-idaho-districts-have-to-pay-the-debt/) Idaho School Benefit Trust — including taking over management, placing the trust under rehabilitation or winding it down.
+[[Idaho]] Department of Insurance Director Dean Cameron said all options are on the table to address the deficit of the [depleted](https://www.idahoednews.org/top-news/insurance-trust-has-run-out-of-money-and-idaho-districts-have-to-pay-the-debt/) Idaho School Benefit Trust — including taking over management, placing the trust under rehabilitation or winding it down.
 
 ![](https://www.idahoednews.org/wp-content/uploads/2015/01/Dean-Cameron.jpg)
 
@@ -65,3 +65,5 @@ The department over the next several months will focus on two aspects, he said.
 The process may take several months.
 
 “We’ll have an opportunity for further examination, particularly after we resolve this first step,” Cameron said.
+
+#idaho

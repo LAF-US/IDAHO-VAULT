@@ -9,7 +9,7 @@ description: "A facility that could process antimony from the Stibnite mine in e
 ---
 ![](https://valleylookout.com/wp-content/uploads/sites/2/2026/07/valleylookout.com-more-than-a-demonstration-facility-idaho-national-laboratory-unveils-pilot-antimony-plant-for-perpetua-0-3.jpeg)
 
-The inside of a modular antimony processing plant developed at the Idaho National Laboratory. Photo: Courtesy Westpro Machinery
+The inside of a modular antimony processing plant developed at the [[Idaho]] National Laboratory. Photo: Courtesy Westpro Machinery
 
 A facility that could process antimony from the Stibnite mine in eastern Valley County for use by the U.S. military is complete.
 
@@ -120,3 +120,5 @@ The Stibnite project zone totals 1,740 acres, on which three open-pit mines span
 ![](https://valleylookout.com/wp-content/uploads/sites/2/2024/11/Screenshot-2023-02-21-at-1.54.08-PM.png)
 
 The Stibnite gold mine in eastern Valley County. Courtesy: Perpetua Resources
+
+#idaho

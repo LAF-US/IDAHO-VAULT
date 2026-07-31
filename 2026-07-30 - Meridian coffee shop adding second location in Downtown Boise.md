@@ -53,6 +53,8 @@ According to the Downtown Boise Association’s listing, there are more than 22 
 
 ![Weather with Sarah - Idaho Power](https://static-v2.boisedev.com/assets/54fe6a7b-4e48-4c07-b9ad-1f79c34fb57e.gif)
 
-Weather with Sarah - Idaho Power
+Weather with Sarah - [[Idaho]] Power
 
 <iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=REDACTED_GOOGLE_API_KEY&amp;zoom=15&amp;maptype=roadmap&amp;q=1202+W.+Front+Street" title="Google map of 1202 W. Front Street"></iframe>
+
+#idaho
