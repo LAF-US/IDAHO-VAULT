@@ -368,9 +368,6 @@ logs/
 .obsidian/plugins/phone-to-roam-to-obsidian/data.json
 .obsidian/plugins/todoist-context-bridge/data.json
 
-# Plugin data that is derived runtime history/cache rather than configuration.
-.obsidian/plugins/roygbiv-day-accent/data.json
-
 # ---------------------------------------------------------------------------
 # Editor, OS, and sync noise
 # ---------------------------------------------------------------------------
