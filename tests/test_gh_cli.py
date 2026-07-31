@@ -117,9 +117,12 @@ class ArgvTest(TestCase):
 
     def test_body_file_is_cleaned_up_afterwards(self) -> None:
         captured = {}
-        with mock.patch.object(
-            gh_cli, "_run", side_effect=lambda argv, check=True: captured.setdefault("p", argv[-1]) or _completed()
-        ):
+
+        def capture_path(argv, check=True):
+            captured["p"] = argv[-1]
+            return _completed()
+
+        with mock.patch.object(gh_cli, "_run", side_effect=capture_path):
             gh_cli.pr_comment(3, "body")
         self.assertFalse(Path(captured["p"]).exists())
 
