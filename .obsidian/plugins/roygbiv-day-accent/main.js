@@ -31,21 +31,14 @@ const WEEKDAY_TO_INDEX = {
 };
 
 module.exports = class RoygbivDayAccentPlugin extends Plugin {
-  async onload() {
-    this.settings = Object.assign({ lastActiveDayIndex: new Date().getDay() }, await this.loadData());
-
-    this.applyDayClass();
-
-    this.registerEvent(
-      this.app.workspace.on("active-leaf-change", () => this.applyDayClass())
-    );
+  onload() {
+    this.app.workspace.onLayoutReady(() => {
+      this.applyDayClass(this.app.workspace.getActiveFile());
+    });
 
     this.registerEvent(
-      this.app.metadataCache.on("changed", () => this.applyDayClass())
+      this.app.workspace.on("file-open", (file) => this.applyDayClass(file))
     );
-
-    this.scheduleMidnightRefresh();
-    this.registerInterval(window.setInterval(() => this.applyDayClass(), 60 * 60 * 1000));
   }
 
   onunload() {
@@ -59,28 +52,18 @@ module.exports = class RoygbivDayAccentPlugin extends Plugin {
     }
   }
 
-  async applyDayClass() {
+  applyDayClass(file) {
     if (!document || !document.body) return;
+    const dayIndex = this.resolveDayFromFrontmatter(file);
+    if (dayIndex === null) return;
     this.clearDayClasses();
-
-    const resolvedIndex = this.resolveDayFromFrontmatter();
-    if (resolvedIndex !== null) {
-      if (!this.settings || this.settings.lastActiveDayIndex !== resolvedIndex) {
-        this.settings = this.settings || {};
-        this.settings.lastActiveDayIndex = resolvedIndex;
-        await this.saveData(this.settings);
-      }
-    }
-
-    const dayIndex = resolvedIndex ?? this.settings?.lastActiveDayIndex ?? new Date().getDay();
     document.body.classList.add(DAY_CLASSES[dayIndex]);
   }
 
-  resolveDayFromFrontmatter() {
-    const activeFile = this.app.workspace.getActiveFile();
-    if (!activeFile) return null;
+  resolveDayFromFrontmatter(file) {
+    if (!file) return null;
 
-    const cache = this.app.metadataCache.getFileCache(activeFile);
+    const cache = this.app.metadataCache.getFileCache(file);
     const frontmatter = cache && cache.frontmatter ? cache.frontmatter : null;
     if (!frontmatter || frontmatter.weekday == null) return null;
 
@@ -94,19 +77,5 @@ module.exports = class RoygbivDayAccentPlugin extends Plugin {
     return Object.prototype.hasOwnProperty.call(WEEKDAY_TO_INDEX, key)
       ? WEEKDAY_TO_INDEX[key]
       : null;
-  }
-
-  scheduleMidnightRefresh() {
-    const now = new Date();
-    const next = new Date(now);
-    next.setHours(24, 0, 5, 0);
-    const ms = Math.max(1000, next.getTime() - now.getTime());
-
-    const timeoutId = window.setTimeout(() => {
-      this.applyDayClass();
-      this.scheduleMidnightRefresh();
-    }, ms);
-
-    this.register(() => window.clearTimeout(timeoutId));
   }
 };
