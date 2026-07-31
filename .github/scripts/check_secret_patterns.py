@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import argparse
 import base64
+import hashlib
 import math
 import os
 import re
@@ -111,6 +112,21 @@ PUBLIC_EMBED_ALLOW_PATTERNS = {
         re.compile(r"https://starter1\.preservica\.com/Render/render/external\?"),
     ),
 }
+
+# Published client credentials embedded in immutable third-party plugin builds.
+# Scope exceptions to the exact repository path, detector, and SHA-256 of the
+# matched literal. A changed vendor key or another key in the same bundle must
+# still stop the commit. Provenance for this fingerprint:
+# https://github.com/obsidian-community/obsidian-full-calendar/blob/0.10.7/src/ui/calendar.ts
+VENDOR_PUBLIC_CREDENTIAL_FINGERPRINTS = frozenset(
+    {
+        (
+            ".obsidian/plugins/obsidian-full-calendar/main.js",
+            "google_api_key",
+            "ada01f2aa7e0b4d15668b350d4d9103ef8ffd0133e5eba33c42bcd7a12f04b7a",
+        ),
+    }
+)
 
 
 @dataclass(frozen=True)
@@ -217,9 +233,14 @@ def content_secret_findings(path: str, data: bytes) -> list[Finding]:
 
 
 def is_allowed_content_match(
-    rule: str, line: str, match: re.Match[str] | None = None
+    path: str, rule: str, line: str, match: re.Match[str] | None = None
 ) -> bool:
     """Allow narrow generic placeholders without muting dedicated token rules."""
+    if match is not None:
+        fingerprint = hashlib.sha256(match.group(0).encode("utf-8")).hexdigest()
+        vendor_match = (path.replace("\\", "/"), rule, fingerprint)
+        if vendor_match in VENDOR_PUBLIC_CREDENTIAL_FINGERPRINTS:
+            return True
     if any(pattern.search(line) for pattern in PUBLIC_EMBED_ALLOW_PATTERNS.get(rule, ())):
         return True
     if rule != "generic_secret_assignment":
@@ -378,13 +399,13 @@ def content_findings(path: str, data: bytes) -> list[Finding]:
     for line_number, line in enumerate(text.splitlines(), start=1):
         for rule, pattern in SECRET_CONTENT_PATTERNS.items():
             match = pattern.search(line)
-            if match is None or is_allowed_content_match(rule, line, match):
+            if match is None or is_allowed_content_match(path, rule, line, match):
                 continue
             findings.append(Finding(path=path, line=line_number, rule=rule))
         if allow_unquoted_generic:
             match = GENERIC_UNQUOTED_SECRET_ASSIGNMENT.search(line)
             if match is not None and not is_allowed_content_match(
-                "generic_secret_assignment", line, match
+                path, "generic_secret_assignment", line, match
             ):
                 finding = Finding(
                     path=path, line=line_number, rule="generic_secret_assignment"
