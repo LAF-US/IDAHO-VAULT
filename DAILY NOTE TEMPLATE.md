@@ -24,4 +24,8 @@ date modified: <% d.format("dddd, MMMM Do YYYY, h:mm:ss a") %>
 
 ---
 
+## Day planner
+
+## Daily Queue
+
 [[TO DO LIST]]

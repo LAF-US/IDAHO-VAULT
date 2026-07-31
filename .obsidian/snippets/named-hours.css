@@ -1,0 +1,214 @@
+/* Named Hours — the day-shape frame for Full Calendar (fullcalendar.io) */
+/*
+ * Paints the ten named blocks of the working day as colored background bands
+ * across the Full Calendar time grid, so every day view carries the same
+ * shape whether or not anything is scheduled in it.
+ *
+ * Canon:  NAMED-HOURS-2026-07-31.md  (block names, times, provenance)
+ * Plugin: obsidian-full-calendar (Full Calendar, fullcalendar.io) — bundles
+ *         FullCalendar v5, which emits data-time on every timegrid slot.
+ *         The bands are pure CSS; they need no per-event support and survive
+ *         plugin data loss.
+ *
+ * Scope is limited to Full Calendar's own leaves so that other plugins
+ * shipping a .fc grid are untouched.
+ *
+ * Boundaries land on :00 and :30 because FullCalendar's default slotDuration
+ * is 30 minutes and the plugin does not override it. If you change
+ * slotDuration, the data-time values below change with it.
+ *
+ * No border-radius on the bands: they are <td> cells in a collapsed-border
+ * table, where corner rounding does not render reliably. Flat bands, hue
+ * carrying the distinction.
+ */
+
+.workspace-leaf-content[data-type^="full-calendar"] {
+  /* Sampled from Logan's reference render, 2026-07-31. */
+  --nh-dawn: #b6b6b6;
+  --nh-yan: #d85c79;
+  --nh-tan: #db793a;
+  --nh-tethera: #d8bd63;
+  --nh-noon: #888888;
+  --nh-methera: #5aaf81;
+  --nh-pits: #6b8bdd;
+  --nh-sethera: #a47cb0;
+  --nh-azer: #aa61bb;
+  --nh-dusk: #707070;
+
+  /* How strongly the bands read behind real events. Raise toward 100% for
+   * the full-saturation look of the reference render. */
+  --nh-band-strength: 26%;
+}
+
+/* ---------------------------------------------------------------- bands -- */
+
+.workspace-leaf-content[data-type^="full-calendar"]
+  .fc-timegrid-slot-lane[data-time] {
+  position: relative;
+}
+
+/* Each band is declared once as a custom property on its slots, so the fill
+ * and the label below both read from a single source. */
+
+.workspace-leaf-content[data-type^="full-calendar"]
+  .fc-timegrid-slot-lane[data-time="06:00:00"],
+.workspace-leaf-content[data-type^="full-calendar"]
+  .fc-timegrid-slot-lane[data-time="06:30:00"] {
+  --nh-band: var(--nh-dawn);
+}
+
+.workspace-leaf-content[data-type^="full-calendar"]
+  .fc-timegrid-slot-lane[data-time="07:00:00"],
+.workspace-leaf-content[data-type^="full-calendar"]
+  .fc-timegrid-slot-lane[data-time="07:30:00"],
+.workspace-leaf-content[data-type^="full-calendar"]
+  .fc-timegrid-slot-lane[data-time="08:00:00"] {
+  --nh-band: var(--nh-yan);
+}
+
+.workspace-leaf-content[data-type^="full-calendar"]
+  .fc-timegrid-slot-lane[data-time="08:30:00"],
+.workspace-leaf-content[data-type^="full-calendar"]
+  .fc-timegrid-slot-lane[data-time="09:00:00"],
+.workspace-leaf-content[data-type^="full-calendar"]
+  .fc-timegrid-slot-lane[data-time="09:30:00"] {
+  --nh-band: var(--nh-tan);
+}
+
+.workspace-leaf-content[data-type^="full-calendar"]
+  .fc-timegrid-slot-lane[data-time="10:00:00"],
+.workspace-leaf-content[data-type^="full-calendar"]
+  .fc-timegrid-slot-lane[data-time="10:30:00"],
+.workspace-leaf-content[data-type^="full-calendar"]
+  .fc-timegrid-slot-lane[data-time="11:00:00"] {
+  --nh-band: var(--nh-tethera);
+}
+
+.workspace-leaf-content[data-type^="full-calendar"]
+  .fc-timegrid-slot-lane[data-time="11:30:00"],
+.workspace-leaf-content[data-type^="full-calendar"]
+  .fc-timegrid-slot-lane[data-time="12:00:00"] {
+  --nh-band: var(--nh-noon);
+}
+
+.workspace-leaf-content[data-type^="full-calendar"]
+  .fc-timegrid-slot-lane[data-time="12:30:00"],
+.workspace-leaf-content[data-type^="full-calendar"]
+  .fc-timegrid-slot-lane[data-time="13:00:00"],
+.workspace-leaf-content[data-type^="full-calendar"]
+  .fc-timegrid-slot-lane[data-time="13:30:00"] {
+  --nh-band: var(--nh-methera);
+}
+
+.workspace-leaf-content[data-type^="full-calendar"]
+  .fc-timegrid-slot-lane[data-time="14:00:00"],
+.workspace-leaf-content[data-type^="full-calendar"]
+  .fc-timegrid-slot-lane[data-time="14:30:00"],
+.workspace-leaf-content[data-type^="full-calendar"]
+  .fc-timegrid-slot-lane[data-time="15:00:00"] {
+  --nh-band: var(--nh-pits);
+}
+
+.workspace-leaf-content[data-type^="full-calendar"]
+  .fc-timegrid-slot-lane[data-time="15:30:00"],
+.workspace-leaf-content[data-type^="full-calendar"]
+  .fc-timegrid-slot-lane[data-time="16:00:00"],
+.workspace-leaf-content[data-type^="full-calendar"]
+  .fc-timegrid-slot-lane[data-time="16:30:00"] {
+  --nh-band: var(--nh-sethera);
+}
+
+.workspace-leaf-content[data-type^="full-calendar"]
+  .fc-timegrid-slot-lane[data-time="17:00:00"],
+.workspace-leaf-content[data-type^="full-calendar"]
+  .fc-timegrid-slot-lane[data-time="17:30:00"],
+.workspace-leaf-content[data-type^="full-calendar"]
+  .fc-timegrid-slot-lane[data-time="18:00:00"] {
+  --nh-band: var(--nh-azer);
+}
+
+.workspace-leaf-content[data-type^="full-calendar"]
+  .fc-timegrid-slot-lane[data-time="18:30:00"],
+.workspace-leaf-content[data-type^="full-calendar"]
+  .fc-timegrid-slot-lane[data-time="19:00:00"] {
+  --nh-band: var(--nh-dusk);
+}
+
+/* Fill. The flat rgba fallback lands first for engines without color-mix()
+ * (older Obsidian mobile WebViews); color-mix() then takes over where it is
+ * supported and makes --nh-band-strength live. */
+.workspace-leaf-content[data-type^="full-calendar"]
+  .fc-timegrid-slot-lane[data-time] {
+  background-color: var(--nh-band);
+  background-color: color-mix(
+    in srgb,
+    var(--nh-band) var(--nh-band-strength),
+    transparent
+  );
+}
+
+/* Slots outside 06:00–19:30 have no --nh-band, so var() resolves to nothing
+ * and the declaration is invalid-at-computed-value-time — the lane falls back
+ * to the theme's own background. Stated here because it looks like an
+ * omission and is not one. */
+
+/* --------------------------------------------------------------- labels -- */
+/*
+ * The block's name, set once at the top of each band. Delete this section if
+ * the bare color bands are enough.
+ */
+
+.workspace-leaf-content[data-type^="full-calendar"]
+  .fc-timegrid-slot-lane[data-time]::after {
+  position: absolute;
+  top: 0.1em;
+  left: 0.4em;
+  font-size: 0.72em;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--nh-band, var(--text-muted));
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+.workspace-leaf-content[data-type^="full-calendar"]
+  .fc-timegrid-slot-lane[data-time="06:00:00"]::after {
+  content: "Dawn";
+}
+.workspace-leaf-content[data-type^="full-calendar"]
+  .fc-timegrid-slot-lane[data-time="07:00:00"]::after {
+  content: "Yan";
+}
+.workspace-leaf-content[data-type^="full-calendar"]
+  .fc-timegrid-slot-lane[data-time="08:30:00"]::after {
+  content: "Tan";
+}
+.workspace-leaf-content[data-type^="full-calendar"]
+  .fc-timegrid-slot-lane[data-time="10:00:00"]::after {
+  content: "Tethera";
+}
+.workspace-leaf-content[data-type^="full-calendar"]
+  .fc-timegrid-slot-lane[data-time="11:30:00"]::after {
+  content: "Noon";
+}
+.workspace-leaf-content[data-type^="full-calendar"]
+  .fc-timegrid-slot-lane[data-time="12:30:00"]::after {
+  content: "Methera";
+}
+.workspace-leaf-content[data-type^="full-calendar"]
+  .fc-timegrid-slot-lane[data-time="14:00:00"]::after {
+  content: "Pits";
+}
+.workspace-leaf-content[data-type^="full-calendar"]
+  .fc-timegrid-slot-lane[data-time="15:30:00"]::after {
+  content: "Sethera";
+}
+.workspace-leaf-content[data-type^="full-calendar"]
+  .fc-timegrid-slot-lane[data-time="17:00:00"]::after {
+  content: "Azer";
+}
+.workspace-leaf-content[data-type^="full-calendar"]
+  .fc-timegrid-slot-lane[data-time="18:30:00"]::after {
+  content: "Dusk";
+}

@@ -165,6 +165,17 @@ That means:
 | `obsidian-day-planner` | Workflow-adjacent | Configured and potentially useful, but no tracked template, doctrine surface, or automation currently depends on its timeline UI |
 | `nldates-obsidian` | Input convenience | Helps with typing dates, but the time system does not rely on it to remain lawful |
 
+### Proposed for time/workflow, not yet installed
+
+| Plugin ID | Standing | Notes |
+| --- | --- | --- |
+| `obsidian-full-calendar` | Proposed / not installed | Obsidian integration for fullcalendar.io. Its *daily note* calendar type reads events as list items under a heading in the daily note, so it renders the existing file-first loop rather than replacing it with a separate event store. Canon for the day-shape it displays is `NAMED-HOURS-2026-07-31.md`; the block frame ships as the tracked CSS snippet `.obsidian/snippets/named-hours.css` and works whether or not the plugin is ever enabled. **Not installed as of 2026-07-31** — plugin binaries are gitignored, so installation is a desktop action, pending Logan. |
+
+Nothing in this repository should be read as evidence that this plugin is
+installed or enabled. When it is, move the row into the enabled inventory with
+a real version and size, and record whether it earns standing above
+`obsidian-day-planner`, whose timeline UI it overlaps.
+
 ### Explicitly out of current time/workflow scope
 
 | Plugin ID | Status | Why it stays out of scope now |
