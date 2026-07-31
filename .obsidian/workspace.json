@@ -13,13 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-07-31.md",
+                "file": "- Mary Hallock Foote Paintings & Artwork for Sale _ Mary Hallock Foote Art Value Price Guide.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "2026-07-31"
+              "title": "- Mary Hallock Foote Paintings & Artwork for Sale _ Mary Hallock Foote Art Value Price Guide"
             }
           }
         ]
@@ -100,7 +100,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2026-07-31.md",
+                "file": "- Mary Hallock Foote Paintings & Artwork for Sale _ Mary Hallock Foote Art Value Price Guide.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -251,17 +251,14 @@
       "desk:Create new desk": true,
       "obsidian-5e-statblocks:Open Creature pane": true,
       "handwritten-notes:Create empty handwritten note": true,
-      "map-of-content:Update Map of Content": true,
+      "map-of-content:Update Map of Content": false,
       "periodic-notes:Open today": false,
-      "calendarium:Open Calendarium": true,
-      "smart-context:Smart Context: Open Builder": true,
-      "smart-context:Smart Context: Copy to Clipboard (select depth)": true,
-      "smart-context:Smart Context: List Named Contexts": true,
-      "smart-templates:Smart Templates: Open template context": true
+      "calendarium:Open Calendarium": false
     }
   },
   "active": "1bb785ee3b55a2a0",
   "lastOpenFiles": [
+    "2026-07-31.md",
     "2026-08-09.md",
     "2026-08-08.md",
     "2026-08-07.md",
@@ -271,7 +268,6 @@
     "2026-08-03.md",
     "2026-08-02.md",
     "2026-08-01.md",
-    "2026-07-31.md",
     "2026-07-30.md",
     "be1a7dc1-1214-4496-80cc-26dd6a0dd2cfOriginal.txt",
     "be1a7dc1-1214-4496-80cc-26dd6a0dd2cfOriginal.jpg",
