@@ -11,7 +11,7 @@ Listen to this article
 
 Alejandra Gamino Padilla felt alone.
 
-She and her husband were driving to work in Idaho in early June (she helped her husband with his house-painting business, she said), when three cars stopped them, one of them positioned in front of their vehicle, she recalled. Immigration agents detained her and her husband.
+She and her husband were driving to work in [[Idaho]] in early June (she helped her husband with his house-painting business, she said), when three cars stopped them, one of them positioned in front of their vehicle, she recalled. Immigration agents detained her and her husband.
 
 In detention, she described in Spanish, she spoke of tough conditions. She said she felt isolated, unable to communicate or ask questions with the English speakers. Outside, her two teenage children worked to get the money for a lawyer, she said, as their mother struggled to work with the technology provided to communicate with the outside world.
 
@@ -92,3 +92,5 @@ Gamino Padilla may be free now, but the challenges aren’t over. Her husband, w
 Want to see more content like this?
 
 <iframe allow="clipboard-write; web-share" src="chrome-extension://cnjifjpddelmedmihgijeibhnjfabmlf/side-panel.html?context=iframe"></iframe>
+
+#idaho

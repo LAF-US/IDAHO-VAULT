@@ -11,7 +11,7 @@ Opinion articles provide independent perspectives on key community issues, separ
 
 ![The Bennett Mountain power plant near Mountain Home, pictured here, is similar to the Peregrine Power Plant that Idaho Power plans to build in Elmore County.](https://www.idahostatesman.com/public/latest-news/bdh4xb/picture315648084/alternates/LANDSCAPE_1200/Idaho%20Power%20Bennett%20Mountain%20power%20plant.JPG)
 
-The Bennett Mountain power plant near Mountain Home, pictured here, is similar to the Peregrine Power Plant that Idaho Power plans to build in Elmore County. Provided by Idaho Power
+The Bennett Mountain power plant near Mountain Home, pictured here, is similar to the Peregrine Power Plant that [[Idaho]] Power plans to build in Elmore County. Provided by Idaho Power
 
 Listen to this article
 
@@ -38,3 +38,5 @@ In short, it’s clear that Idaho Power’s new gas plants are not in the public
 Want to see more content like this?
 
 <iframe allow="clipboard-write; web-share" src="chrome-extension://cnjifjpddelmedmihgijeibhnjfabmlf/side-panel.html?context=iframe"></iframe>
+
+#idaho

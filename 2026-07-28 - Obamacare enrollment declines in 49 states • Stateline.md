@@ -29,7 +29,7 @@ Under the Affordable Care Act, each state can either use the federal government�
 
 Enrollment fell the most in Ohio and Oklahoma (32%), Arizona (30%), South Carolina (29%), Indiana (28%), Michigan and Minnesota (27%), and Louisiana and Mississippi (26%).
 
-Enrollment in Connecticut, the District of Columbia, Idaho, Illinois, Massachusetts, Pennsylvania and Texas was flat or fell by less than 5%. In New Mexico, enrollment grew by 14%.
+Enrollment in Connecticut, the District of Columbia, [[Idaho]], Illinois, Massachusetts, Pennsylvania and Texas was flat or fell by less than 5%. In New Mexico, enrollment grew by 14%.
 
 Justin Lo, a KFF senior researcher who co-authored the report, said in an email that the number of fraudulent enrollees in Obamacare is likely in the “hundreds of thousands,” rather than the millions. Higher estimates, he said, are based on “suspicious patterns that could be explained by fraud or by legitimate factors, the most notable of which is greater subsidies making coverage more affordable.”
 
@@ -48,3 +48,5 @@ Lo said it’s hard to predict how enrollment figures may look in a year, as som
 Obamacare insurers are proposing a median premium increase of 14% for 2027, which would be a double-digit hike for the second year in a row, according to a [new analysis](https://www.healthsystemtracker.org/brief/how-much-and-why-aca-marketplace-premiums-are-going-up-in-2027/#Distribution%20of%20proposed%202027%20rate%20changes%20among%2077%20ACA%20Marketplace%20insurers) of preliminary rate filings. Rates should be finalized later this summer.
 
 *Stateline reporter Shalina Chatlani can be reached at* [*schatlani@stateline.org.*](mailto:schatlani@stateline.org)
+
+#idaho

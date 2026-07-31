@@ -11,7 +11,7 @@ description: "The Twin Falls County Sheriff's Office Search and Rescue team work
 
 ![Twin Falls Search and Rescue](https://ewscripps.brightspotcdn.com/dims4/default/81bb30f/2147483647/strip/true/crop/2048x1152+0+192/resize/1280x720!/quality/90/?url=http%3A%2F%2Fewscripps-brightspot.s3.amazonaws.com%2Fbc%2Fbf%2Fc3caf6af404c8fcd2c0ebda31b1d%2Ftwin-falls-pic.jpg)
 
-TWIN FALLS, Idaho — First responders recovered the body of a man who fell from the edge of the Snake River Canyon in Twin Falls Thursday morning, according to the Twin Falls County Sheriff's Office.
+TWIN FALLS, [[Idaho]] — First responders recovered the body of a man who fell from the edge of the Snake River Canyon in Twin Falls Thursday morning, according to the Twin Falls County Sheriff's Office.
 
 The Sheriff's Office's Search and Rescue team worked with several other first responders to search for the body.
 
@@ -36,3 +36,5 @@ We cover stories making an impact in Twin Falls. This is your home to stay on to
 ![](https://ewscripps.brightspotcdn.com/d4/d8/013360344018bc5d6f6ca9124fbf/joey-martin.jpeg)
 
 ![](https://ewscripps.brightspotcdn.com/df/ae/7dedc1b84a8f90a0c17d4c7ff529/nettleton-lorienkivi-2023-img-2279-web-size.jpg)
+
+#idaho

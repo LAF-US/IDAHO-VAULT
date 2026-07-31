@@ -11,7 +11,7 @@ description: "EDITOR’S NOTE: The following is the first in a two-part series e
 
 ![One of the dozen Flock cameras located through out the city of Idaho Falls. This camera can be found at the roundabout near south Boulevard and Elm Street. | Daniel V. Ramirez, EastIdahoNews.com](https://s3.us-west-2.amazonaws.com/assets.eastidahonews.com/wp-content/uploads/2026/07/Flock-Cameras-IF-2.jpg)
 
-One of the dozen Flock cameras located throughout the city of Idaho Falls. This camera can be found at the roundabout near south Boulevard and Elm Street. | Daniel V. Ramirez, EastIdahoNews.com
+One of the dozen Flock cameras located throughout the city of [[Idaho]] Falls. This camera can be found at the roundabout near south Boulevard and Elm Street. | Daniel V. Ramirez, EastIdahoNews.com
 
 ***EDITOR’S NOTE:** The following is the first in a two-part series examining Flock cameras in eastern Idaho. [Read the second article here](https://www.eastidahonews.com/2026/07/tort-claim-vandalized-cameras-and-eastern-idahoans-in-arms-about-flock-cameras/).*
 
@@ -178,3 +178,5 @@ This change in the contract will go before the City Council on July 30.
 [![Idaho Falls Police Department Procedures Manual regarding automated license plate readers. | Courtesy Idaho Falls Police Department](https://s3.us-west-2.amazonaws.com/assets.eastidahonews.com/wp-content/uploads/2026/07/IFPD-ALPR-policy-1-scaled.jpg)](https://s3.us-west-2.amazonaws.com/assets.eastidahonews.com/wp-content/uploads/2026/07/IFPD-ALPR-policy-1-scaled.jpg)[SUBMIT A CORRECTION](https://www.eastidahonews.com/submit-a-correction/?headline=Mass%20surveillance%20or%20a%20quicker%20way%20to%20solve%20crime?%20Flock%20cameras%20cause%20controversy%20in%20east%20Idaho&url=https://www.eastidahonews.com/2026/07/mass-surveillance-or-a-quicker-way-to-solve-crime-flock-cameras-cause-controversy-in-east-idaho/)
 
 EastIdahoNews.com comment boards are a place for open, honest, and civil communication between readers regarding the news of the day and issues facing our communities. We encourage commenters to stay on topic, use positive and constructive language, and be empathetic to the feelings of other commenters. **THINK BEFORE YOU POST.** [Click here](https://www.eastidahonews.com/eastidahonews-com-code-of-ethics/#onlinecommenting) for more details on our commenting rules.
+
+#idaho

@@ -9,7 +9,7 @@ description: "“I think we stand a real chance now at shocking the country and 
 ---
 ![Idaho’s race for U.S. Senate, featuring longtime incumbent Sen. Jim Risch, is facing a major shakeup with the general election just months away.](https://www.idahostatesman.com/public/latest-news/xxwxr2/picture295102729/alternates/LANDSCAPE_1200/BOI_1105electvoters)
 
-Idaho’s race for U.S. Senate, featuring longtime incumbent Sen. Jim Risch, is facing a major shakeup with the general election just months away. doswald@idahostatesman.com
+[[Idaho]]’s race for U.S. Senate, featuring longtime incumbent Sen. Jim Risch, is facing a major shakeup with the general election just months away. doswald@idahostatesman.com
 
 Listen to this article
 
@@ -72,3 +72,5 @@ His priorities include stopping corruption in Congress, making housing more affo
 People want change, he said, “and I think the time is now.”
 
 Want to see more content like this?
+
+#idaho

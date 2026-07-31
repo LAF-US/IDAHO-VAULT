@@ -13,7 +13,7 @@ description: "As the Big Grass Fire burns, communities are raising money and don
 
 [Riley Shoemaker](https://www.kivitv.com/riley-shoemaker)
 
-Riley Shoemaker is a Senior Reporter at Idaho News 6, where she covers politics, government accountability, education, criminal justice and the stories that impact Idahoans every day.
+Riley Shoemaker is a Senior Reporter at [[Idaho]] News 6, where she covers politics, government accountability, education, criminal justice and the stories that impact Idahoans every day.
 
 OWYHEE COUNTY, Idaho — As the Big Grass Fire continues burning across southwestern Idaho, ranchers say the greatest challenges won't end when the flames are extinguished.
 
@@ -52,3 +52,5 @@ Several organizations are collecting donations to support those impacted by the 
 - [**Indian Creek Steakhouse Fire Relief Fundraiser and Auction**](https://www.facebook.com/OwyheeCounty/posts/another-opportunity-to-support-our-cattlemenplease-help-if-you-can-%EF%B8%8Feven-sharing/1366667088958193/) in Caldwell, where proceeds will benefit families affected by the fire.
 
 ![The Spot - Idaho 6.2](https://ewscripps.brightspotcdn.com/08/2c/96ed6f764e03b94d53afffc11268/the-spot-logo-1.png)
+
+#idaho

@@ -43,7 +43,7 @@ Stay up to date with WGA in the coming months while Western Governors work toget
 
 ---
 
-**Nuclear lifecycle campuses**: this week, the Department of Energy [announced](https://www.energy.gov/articles/nuclear-lifecycle-innovation-campuses-contenders-announced) the five states that are in the running to host new Nuclear Innovation Lifecycle Campuses. Three of the contenders are in the West: Idaho, Oklahoma, and Utah.
+**Nuclear lifecycle campuses**: this week, the Department of Energy [announced](https://www.energy.gov/articles/nuclear-lifecycle-innovation-campuses-contenders-announced) the five states that are in the running to host new Nuclear Innovation Lifecycle Campuses. Three of the contenders are in the West: [[Idaho]], Oklahoma, and Utah.
 
 DOE’s Innovation Campuses will support the full nuclear fuel lifecycle, including fuel fabrication, enrichment, reprocessing, and final disposition of used nuclear fuel. They could also include reactor deployment and power generation, depending on the location.
 
@@ -70,3 +70,5 @@ RECA was recently expanded by Congress after the program lapsed in 2024. Western
 Clinics will be held in St. George on July 30, Provo/Orem on August 4, Salt Lake City on August 4, Logan on August 5, and Ogden on August 7.
 
 <iframe allow="clipboard-write; web-share" src="chrome-extension://cnjifjpddelmedmihgijeibhnjfabmlf/side-panel.html?context=iframe"></iframe>
+
+#idaho
