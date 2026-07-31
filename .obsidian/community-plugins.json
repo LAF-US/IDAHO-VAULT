@@ -1,5 +1,4 @@
 [
-  "vault-inspector",
   "obsidian-topic-linking",
   "obsidian-advanced-uri",
   "auto-keyword-linker",
@@ -23,7 +22,6 @@
   "links",
   "obsidian-linter",
   "obsidian-local-rest-api",
-  "metadata-menu",
   "periodic-notes",
   "tag-wrangler",
   "smart-connections",
@@ -41,18 +39,17 @@
   "omnisearch",
   "ai-templater",
   "ai-image-analyzer",
-  "beautiful-contact-cards",
   "dataview",
   "dataview-serializer",
   "dataview-autocompletion",
   "dataview-properties",
-  "obsidian-transcription",
   "obsidian-tidy-footnotes",
   "text-extractor",
   "supercharged-links-obsidian",
   "obsidian-icon-shortcodes",
   "frontmatter-markdown-links",
   "obsidian-file-cooker",
-  "table-editor-obsidian",
-  "obsidian-advanced-slides"
+  "beautiful-contact-cards",
+  "obsidian-git",
+  "influx"
 ]
