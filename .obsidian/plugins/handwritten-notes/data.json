@@ -1,0 +1,12 @@
+{
+  "defaultPath": "",
+  "assetUrl": "",
+  "useRelativePaths": true,
+  "showWelcomeModal": false,
+  "collapseEmbeds": true,
+  "favoriteTemplate": "blank.pdf",
+  "templatesAtCustom": false,
+  "templatesPath": "/templates/",
+  "openInNewTab": true,
+  "createFolderIfNotExists": false
+}

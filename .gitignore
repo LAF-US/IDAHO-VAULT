@@ -139,7 +139,11 @@ feed-generator/
 .state/
 !-dotfolder-hashcache.json
 .pycache/
-.smart-env/
+# Smart Environment control-plane settings, model registry, and authored
+# contexts/templates are portable state. Only its regenerated per-note index
+# and event log are exhaust.
+.smart-env/event_logs/
+.smart-env/multi/
 .makemd/
 .space/
 BMO/
@@ -336,37 +340,40 @@ logs/
 .crewai/logs/
 
 # ---------------------------------------------------------------------------
-# Obsidian local state and plugin runtime data
+# Obsidian secrets and exhaust
 # ---------------------------------------------------------------------------
-# Track vault-facing interface state and plugin manifests. Do not track private
-# plugin data, caches, indexes, or machine-local workspace state.
-.obsidian/workspace.json
+# Default: track vault configuration and complete plugin installations. An
+# enabled plugin must port with its manifest, executable main.js, optional
+# stylesheet, and non-secret configuration. Ignore only per-device runtime,
+# reproducible caches/downloads, and exact settings files containing secrets.
+
+# Per-device UI/runtime state.
 .obsidian/workspace*.json
-.obsidian/graph.json
-.obsidian/types.json
-.obsidian/backlink.json
 .obsidian/file-recovery.json
-.obsidian/page-preview.json
-.obsidian/switcher.json
-.obsidian/webviewer.json
-.obsidian/note-composer.json
-.obsidian/app.json
-.obsidian/appearance.json
-
-.obsidian/plugins/*/data.json
 .obsidian/plugins/*/cache/
-.obsidian/plugins/smart-connections/.smart-env/
-.obsidian/plugins/mcp-tools/bin/
-.obsidian/plugins/*/main.js
-.obsidian/plugins/*/styles.css
-.obsidian/plugins/obsidianclaw/
 .obsidian/plugins/fit/debug.log*
-.obsidian/**(2)*.json
+.obsidian/**/* (2)*.json
 
-!.obsidian/community-plugins.json
-!.obsidian/core-plugins.json
-!.obsidian/plugins/*/manifest.json
-!.obsidian/plugins/roygbiv-day-accent/main.js
+# Reproducible, platform-specific plugin runtime downloads.
+# Preserve Smart Environment control-plane files if an older install locates
+# the environment beneath the plugin directory.
+.obsidian/plugins/smart-connections/.smart-env/event_logs/
+.obsidian/plugins/smart-connections/.smart-env/multi/
+.obsidian/plugins/mcp-tools/bin/
+
+# Plugin settings that currently contain live credentials. These stay local
+# until the plugins store secrets separately from their portable data.json.
+.obsidian/plugins/ai-image-analyzer/data.json
+.obsidian/plugins/ai-templater/data.json
+.obsidian/plugins/obsidian-local-rest-api/data.json
+.obsidian/plugins/phone-to-roam-to-obsidian/data.json
+.obsidian/plugins/taskbone-ocr-plugin/data.json
+.obsidian/plugins/todoist-context-bridge/data.json
+
+# Plugin data that is derived runtime history/cache rather than configuration.
+.obsidian/plugins/obsidian-day-planner/data.json
+.obsidian/plugins/recent-files-obsidian/data.json
+.obsidian/plugins/roygbiv-day-accent/data.json
 
 # ---------------------------------------------------------------------------
 # Editor, OS, and sync noise
@@ -494,10 +501,6 @@ rclone-cache/
 
 .cache_ggshield
 
-# Ignore Smart Environment folder
-.smart-env
-.smart-env
-
 # Added by ggshield
 .cache_ggshield
 idaho-vault-48b78ec18835.json
@@ -532,9 +535,3 @@ C:\Users\loganf\.vibe\logs\session
 /C:\Users\loganf\.vibe\logs\session
 # credential belt: .op runtime env files never commit (templates unaffected)
 .op/*.env
-
-
-
-
-# Ignore Smart Environment folder
-.smart-env
