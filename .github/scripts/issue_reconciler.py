@@ -34,7 +34,8 @@ def _repo() -> tuple[str, str]:
 
 
 def _recurring_title(title: str) -> str:
-    """Return ``title`` if it names a recurring issue this reconciler owns.
+    """
+    Return ``title`` if it names a recurring issue this reconciler owns.
 
     This is a find-or-create-by-title driver, so the title is an identifier rather
     than free text — every workflow passes one of these five, and an unrecognized one
@@ -72,7 +73,7 @@ def ensure_body_fingerprint(body_file: Path) -> str:
     unchanged report produces an unchanged marker — that is what lets the caller
     tell a repeat finding from a new one without diffing prose.
     """
-    if ".." in str(body_file):
+    if ".." in body_file.parts:
         raise ValueError(f"Refusing a body path containing '..': {body_file}")
     body = body_file.read_text(encoding="utf-8")
     canonical_body = _strip_fingerprint(body)
@@ -141,9 +142,8 @@ def create_issue(title: str, body_file: Path) -> int:
 def comment_issue(issue_number: int, body_file: Path) -> None:
     """Append the current report to an existing issue as a comment."""
     owner, repo = _repo()
-    gh_cli.issue_comment(
-        issue_number, owner=owner, repo=repo,
-        body=body_file.read_text(encoding="utf-8"),
+    gh_cli.issue_comment_file(
+        issue_number, owner=owner, repo=repo, body_file=str(body_file)
     )
 
 
