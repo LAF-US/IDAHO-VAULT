@@ -7,7 +7,7 @@ created: 2026-07-21
 ---
 It all started in a library.
 
-In 2023, Colin Mannex, executive director of Kenworthy Performing Arts Center (KPAC) in Moscow, Idaho, was participating in a humanities panel at Washington State University when he first heard about a largely forgotten 1919 film. It was called *Told in the Hills —* the first feature film shot in Idaho.
+In 2023, Colin Mannex, executive director of Kenworthy Performing Arts Center (KPAC) in Moscow, [[Idaho]], was participating in a humanities panel at Washington State University when he first heard about a largely forgotten 1919 film. It was called *Told in the Hills —* the first feature film shot in Idaho.
 
 Based on Marah Ellis Ryan’s 1891 novel, the Western romance follows Genesee Jack, an Idaho settler seeking a new life, and the estranged brother who travels west to find him. The silent film was shot on location in Lawyer’s Canyon south of Lewiston and featured over 100 Nimiipuu (Nez Perce) actors.
 
@@ -112,3 +112,5 @@ Spread the word. News organizations can pick-up quality news, essays and feature
 Republish This Story
 
 Republish our articles for free, online or in print, under a Creative Commons license.
+
+#idaho

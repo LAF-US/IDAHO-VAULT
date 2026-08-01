@@ -27,7 +27,7 @@ PH1609
 
 Summary
 
-Photographs taken during the filming of "Told in the hills". The movie was shot in Idaho in 1919.
+Photographs taken during the filming of "Told in the hills". The movie was shot in [[Idaho]] in 1919.
 
 Repository
 
@@ -126,3 +126,5 @@ Processed by Maureen Hogan, 2020.
 - Description: [Actors on horseback with weapons](http://digitalcollections.lib.washington.edu/cdm/search/searchterm/1609.14/field/descri/mode/any/conn/and/order/title "Link to digital object")
 	Dates: 1919
 	Container: Folder 1, Item 14
+
+#idaho

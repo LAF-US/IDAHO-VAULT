@@ -108,7 +108,7 @@ Frank is renowned for her cornhusk weaving, a traditional Nez Perce Indian art, 
 
 Daily headlines, straight to your inboxRead it online first and stay up-to-date, delivered daily at 7 AMSign Up
 
-In 1986 she was given the Governor's Folk Award by then-Idaho Gov. John Evans.
+In 1986 she was given the Governor's Folk Award by then-[[Idaho]] Gov. John Evans.
 
 She was honored in September 1991 by the National Endowment of the Arts for her cornhusk weaving. She traveled to Washington, D.C., to accept a $5,000 award and attend a reception with the 15 others who won the National Heritage Fellowship, including blues guitarist B.B. King. There were 209 people nominated for the award in 1991.
 
@@ -335,3 +335,5 @@ Lewy AI
 [Browse Local AdsAs Seen in Print!](https://marketplace.lmtribune.com/)
 
 <iframe id="obsidian-clipper-iframe" allow="clipboard-write; web-share" src="chrome-extension://cnjifjpddelmedmihgijeibhnjfabmlf/side-panel.html?context=iframe"></iframe>
+
+#idaho

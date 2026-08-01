@@ -9,7 +9,7 @@ description: "EDITOR’S NOTE: This is the first in a series of stories about fo
 ---
 [East Idaho Governs](https://www.eastidahonews.com/features/east-idaho-governs/)
 
-Barzilla Clark was inaugurated as Idaho’s 16th governor in 1936 and previously served as mayor of Idaho Falls. Listen to the podcast in the video player above. | Photo on left taken from the [National Governors Association](https://www.nga.org/governor/barzilla-worth-clark/), Photo on right provided by the Museum of Idaho.
+Barzilla Clark was inaugurated as [[Idaho]]’s 16th governor in 1936 and previously served as mayor of Idaho Falls. Listen to the podcast in the video player above. | Photo on left taken from the [National Governors Association](https://www.nga.org/governor/barzilla-worth-clark/), Photo on right provided by the Museum of Idaho.
 
 ***EDITOR’S NOTE: This is the first in a series of stories about former Gem State governors from eastern Idaho.***
 
@@ -140,3 +140,5 @@ Patricia recalls many lively political discussions in her family over the years 
 [SUBMIT A CORRECTION](https://www.eastidahonews.com/submit-a-correction/?headline=How%20an%20Idaho%20Falls%20Democrat%20became%20the%20state%E2%80%99s%2016th%20governor%20and%20started%20a%20political%20dynasty&url=https://www.eastidahonews.com/2022/05/how-an-idaho-falls-democrat-became-the-states-16th-governor-and-started-a-political-dynasty/)
 
 EastIdahoNews.com comment boards are a place for open, honest, and civil communication between readers regarding the news of the day and issues facing our communities. We encourage commenters to stay on topic, use positive and constructive language, and be empathetic to the feelings of other commenters. **THINK BEFORE YOU POST.** [Click here](https://www.eastidahonews.com/eastidahonews-com-code-of-ethics/#onlinecommenting) for more details on our commenting rules.
+
+#idaho

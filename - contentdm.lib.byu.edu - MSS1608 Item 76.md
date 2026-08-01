@@ -8,7 +8,7 @@ created: 2026-07-20
 
 [William Henry Jackson](https://lib.byu.edu/collections/william-henry-jackson-collection/)
 
-\[Bear Lake, Idaho\]
+\[Bear Lake, [[Idaho]]\]
 
 ## \[Bear Lake, Idaho\]
 
@@ -111,3 +111,5 @@ All Items
 Powered by [CONTENTdm®](http://www.oclc.org/en-US/contentdm.html)
 
 <iframe allow="clipboard-write; web-share" src="chrome-extension://cnjifjpddelmedmihgijeibhnjfabmlf/side-panel.html?context=iframe"></iframe>
+
+#idaho

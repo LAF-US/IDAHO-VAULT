@@ -11,7 +11,7 @@ Opinion articles provide independent perspectives on key community issues, separ
 
 Listen to this article
 
-This spring, the state finished a renovation at the Idaho Maximum Security Institution south of Boise. The project took the better part of a year and cost more than $1.2 million. It is a retrofitted unit in F-Block, rebuilt for the firing squad — because on July 1, Idaho became the first state in America to make that method its primary means of execution.
+This spring, the state finished a renovation at the [[Idaho]] Maximum Security Institution south of Boise. The project took the better part of a year and cost more than $1.2 million. It is a retrofitted unit in F-Block, rebuilt for the firing squad — because on July 1, Idaho became the first state in America to make that method its primary means of execution.
 
 Four other states permit it, but only as an option. Idaho alone has made it the default.
 
@@ -46,3 +46,5 @@ The room in F-Block is ready. The lighting is chosen, sight lines are measured, 
 Want to see more content like this?
 
 <iframe allow="clipboard-write; web-share" src="chrome-extension://cnjifjpddelmedmihgijeibhnjfabmlf/side-panel.html?context=iframe"></iframe>
+
+#idaho

@@ -12,7 +12,7 @@ description:
 
 ## History of the Eagle Rock Art Guild
 
-In 1948 four Idaho Falls area artists collaborated and organized the Eagle Rock Art Guild.
+In 1948 four [[Idaho]] Falls area artists collaborated and organized the Eagle Rock Art Guild.
 
 The founders; Helen Aupperle, a high school art teacher, accomplished pastel and oil painter; Fred Ochi, a watercolor artist; Suzanne Fonnesbeck, a commercial artist, and a watercolor and ink artist; and Ina Schwartz Oyler, a local junior high school art teacher and talented oil painter, wanted to promote the arts in the Idaho Falls area, to encourage artists and to meet regularly to paint. They sought the help of the Idaho Art Association and nearby colleges.
 
@@ -78,3 +78,5 @@ We need you! Are you interested in being a board member or helping with an event
 Do you have a specialized skill that would be a resource? Active members are needed to keep the guild alive and relevant in the community.
 
 © 2025 Eagle Rock Art Guild, Inc. All Rights Reserved.
+
+#idaho

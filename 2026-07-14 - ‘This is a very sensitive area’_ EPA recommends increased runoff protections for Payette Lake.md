@@ -57,7 +57,7 @@ St. Luke's Health Plan - 2026 2:1
 
 The EPA study did not analyze all of the city’s stormwater drainage outlets into Payette Lake, but instead focused on the three main outlets for downtown McCall.
 
-“The majority of the stormwater runoff is coming from transportation (sources) between the city and the Idaho Transportation Department, so it seemed like a fairly direct connection to make,” Harris said.
+“The majority of the stormwater runoff is coming from transportation (sources) between the city and the [[Idaho]] Transportation Department, so it seemed like a fairly direct connection to make,” Harris said.
 
 ![](https://valleylookout.com/wp-content/uploads/sites/2/2026/07/valleylookout.com-this-is-a-very-sensitive-area-epa-recommends-increased-runoff-protections-for-payette-lake-screenshot-2026-07-14-at-6.08.15-pm.jpeg)
 
@@ -110,3 +110,5 @@ Council Member Julie Thrower suggested testing for 6PPD could be added to upcomi
 ![Valley Lookout house - Drew](https://static-v2.boisedev.com/assets/12c5b6ba-e344-4f74-a83b-fe4af9ea9df5.gif)
 
 Valley Lookout house - Drew
+
+#idaho

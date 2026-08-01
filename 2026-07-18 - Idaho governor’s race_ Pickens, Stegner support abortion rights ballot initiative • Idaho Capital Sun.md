@@ -9,7 +9,7 @@ description: "Independent John Stegner and Democrat Terri Pickens said they woul
 ---
 ## Idaho governor’s race: Pickens, Stegner support abortion rights ballot initiative
 
-Both candidates would oppose any effort by Idaho Legislature to repeal ballot initiative if voters pass it in November
+Both candidates would oppose any effort by [[Idaho]] Legislature to repeal ballot initiative if voters pass it in November
 
 ![Voters cast their ballots](https://idahocapitalsun.com/wp-content/uploads/2026/05/051926ElectionDayPSutphin016-1-2048x1420.jpg)
 
@@ -78,3 +78,5 @@ Pickens also said she would fight any effort by the Idaho Legislature to repeal 
 “I firmly believe that the will of the people matters,” Pickens said. “And if the people come out and vote ‘yes’ to restore bodily autonomy and the Idaho legislators think that they know better than the Idaho people, I will be at the Statehouse every single day, reminding them that they don’t get to touch the will of the people. And I’ll go a step further and start proposing a constitutional amendment, so when a ballot initiative is passed they can’t just undo it at their whim.”
 
 The general election is set for Nov. 3. In addition to the governor’s race and the ballot initiative to end Idaho’s abortion ban, all 105 seats in the Idaho Legislature will be up for election in November’s general election, as well as three of Idaho’s four congressional seats.
+
+#idaho

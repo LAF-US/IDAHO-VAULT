@@ -11,7 +11,7 @@ This column reflects the opinion of the writer. [Learn about the differences bet
 
 ![Idaho's last governor's mansion, former home of the late J.R. Simplot, who donated it to the state in 2004. (Betsy Russell / The Spokesman-Review)](https://thumb.spokesman.com/8npMj58G94cQkbJgLdZGR6jxHw0=/2500x0/smart/media.spokesman.com/photos/2016/11/21/GOV_MANSION.JPG.jpg)
 
-Idaho's last governor's mansion, former home of the late J.R. Simplot, who donated it to the state in 2004. (Betsy Russell / The Spokesman-Review)
+[[Idaho]]'s last governor's mansion, former home of the late J.R. Simplot, who donated it to the state in 2004. (Betsy Russell / The Spokesman-Review)
 
 To make up for the state’s lack of a governor’s mansion, Idaho pays its governor a $4,500 a month housing allowance, which in current Gov. Butch Otter’s case is $54,000 a year just to live at his own ranch in Star.
 
@@ -60,3 +60,5 @@ The panel decided to do more research and delay any decision on the stipend for 
 Rep. Melissa Wintrow, D-Boise, said, “I think we need to do some homework, truly to understand the history, and to be responsible with the taxpayer money. I’m not leaning a certain way.”
 
 [More from this author](https://www.spokesman.com/search/?q=&byline=Betsy+Russell)
+
+#idaho

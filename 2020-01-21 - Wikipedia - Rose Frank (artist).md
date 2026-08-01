@@ -34,7 +34,7 @@ Frank's artwork has been displayed in multiple exhibitions and permanent collect
 ## Awards and honors
 
 - 1991: Frank received a [National Heritage Fellowship](https://en.wikipedia.org/wiki/National_Heritage_Fellowship "National Heritage Fellowship") presented by the [National Endowment for the Arts](https://en.wikipedia.org/wiki/National_Endowment_for_the_Arts "National Endowment for the Arts"). Frank traveled to Washington D.C. to accept her $5,000 award alongside fifteen other artists who had also won this award. There were a total of 209 people nominated for this award.[^5] This award is given to show one's lifetime achievement in folk or traditional arts.[^12]
-- 1986: received the Governor's Folk Award by a former governor of Idaho, [John V. Evans](https://en.wikipedia.org/wiki/John_Evans_\(Idaho_governor\) "John Evans (Idaho governor)").[^5]
+- 1986: received the Governor's Folk Award by a former governor of [[Idaho]], [John V. Evans](https://en.wikipedia.org/wiki/John_Evans_\(Idaho_governor\) "John Evans (Idaho governor)").[^5]
 
 [^1]: Frank, Rose; McCormack, Ann (1996). "Rose Frank (Nez Perce), Cornhusk Weaver Interviewed by Ann McCormack (Nez Perce) in 1991". *Frontiers: A Journal of Women Studies*. **17** (1): 87. [doi](https://en.wikipedia.org/wiki/Doi_\(identifier\) "Doi (identifier)"):[10.2307/3346901](https://doi.org/10.2307%2F3346901). [JSTOR](https://en.wikipedia.org/wiki/JSTOR_\(identifier\) "JSTOR (identifier)") [3346901](https://www.jstor.org/stable/3346901).
 
@@ -59,3 +59,5 @@ Frank's artwork has been displayed in multiple exhibitions and permanent collect
 [^11]: Bauer, Jennifer (28 September 2007). ["Weaving Secrets"](https://lmtribune.com/a_and_e/weaving-secrets/article_5da6c200-65bb-5960-ad6f-eeee14e84e68.html). *Lewiston Tribune*.
 
 [^12]: [*National Endowment for the Arts, 1965-2000: A Brief Chronology of Federal Support for the Arts*](https://books.google.com/books?id=yBuCRHxDrasC&dq=Rose+Frank+cornhusk+weaver&pg=PT10). 2000.
+
+#idaho

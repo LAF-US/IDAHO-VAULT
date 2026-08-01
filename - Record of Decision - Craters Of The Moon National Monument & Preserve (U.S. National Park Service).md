@@ -8,7 +8,7 @@ description:
 ---
 **INTRODUCTION**
 
-The Department of the Interior, National Park Service (NPS) and Bureau of Land Management (BLM), prepared this Record of Decision (ROD) on the *Proposed Management Plan/Final Environmental Impact Statement for the Craters of the Moon National Monument and Preserve, Idaho* (henceforth, Proposed Plan/Final EIS). This Record of Decision includes a statement of the decisions made, synopses of other alternatives considered, the basis for the decision, a description of the environmentally preferable alternative, a discussion of non-impairment of National Park System resources or values, a listing of actions designed to minimize environmental harm, and an overview of public involvement in the decision-making process.
+The Department of the Interior, National Park Service (NPS) and Bureau of Land Management (BLM), prepared this Record of Decision (ROD) on the *Proposed Management Plan/Final Environmental Impact Statement for the Craters of the Moon National Monument and Preserve, [[Idaho]]* (henceforth, Proposed Plan/Final EIS). This Record of Decision includes a statement of the decisions made, synopses of other alternatives considered, the basis for the decision, a description of the environmentally preferable alternative, a discussion of non-impairment of National Park System resources or values, a listing of actions designed to minimize environmental harm, and an overview of public involvement in the decision-making process.
 
 **BACKGROUND**
 
@@ -281,3 +281,5 @@ Should Native American Graves Protection and Repatriation Act (NAGPRA) materials
 Minimum requirement analysis will precede any proposed management activities within designated wilderness areas and WSAs managed by the National Park Service. Bureau of Land Management-administered WSAs will continue to be managed under Interim Management Policy for Lands Under Wilderness Review. (See Appendix B, page 352 of the Proposed Management Plan and Final EIS.)
 
 Last updated: February 28, 2015
+
+#idaho

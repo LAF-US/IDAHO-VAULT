@@ -2,9 +2,12 @@
 set -eu
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Pre-push safety plus explicit LFS object upload. This avoids GitHub Desktop's
 # stock LFS pre-push /dev/stdin path on Windows while still ensuring objects exist upstream.
 =======
+=======
+>>>>>>> 4d3d06e2fac5b12be035d897a4635d9be5baf1bd
 repo_root=$(git rev-parse --show-toplevel 2>/dev/null) || { printf >&2 '%s\n' 'pre-push: cannot find repository root.'; exit 2; }
 cd "$repo_root" || { printf >&2 '%s\n' "pre-push: cannot enter repository root: $repo_root"; exit 2; }
 git lfs version >/dev/null 2>&1 || { printf >&2 '%s\n' 'git hook: Git LFS is required for this repository.'; exit 2; }
@@ -13,6 +16,9 @@ PYTHON=${PYTHON:-python}
 # Pre-push safety plus stock Git LFS upload. Do not read stdin in this hook
 # before calling `git lfs pre-push`; Git passes ref updates there, and LFS uses
 # that stream to decide which objects to upload.
+<<<<<<< HEAD
+>>>>>>> 4d3d06e2fac5b12be035d897a4635d9be5baf1bd
+=======
 >>>>>>> 4d3d06e2fac5b12be035d897a4635d9be5baf1bd
 
 upstream=$(git rev-parse --verify '@{u}' 2>/dev/null || true)
@@ -41,11 +47,14 @@ printf >&2 '%s\n' 'pre-push: checking secret patterns for commits not on upstrea
 
 printf >&2 '%s\n' 'pre-push: checking large-file policy for commits not on upstream'
 <<<<<<< HEAD
+<<<<<<< HEAD
 git diff --name-only -z --diff-filter=ACMR "$upstream"...HEAD | python .github/scripts/check_large_files.py --paths-from-stdin
 
 printf >&2 '%s\n' "pre-push: uploading LFS objects for HEAD to $1"
 git lfs push "$1" HEAD
 =======
+=======
+>>>>>>> 4d3d06e2fac5b12be035d897a4635d9be5baf1bd
 "$PYTHON" .github/scripts/check_large_files.py --paths-from-stdin <"$push_paths"
 
 if [ -z "${GIT_LFS_SKIP_PUSH:-}" ]; then
@@ -56,4 +65,7 @@ fi
 
 printf >&2 '%s\n' 'pre-push: delegating LFS upload to stock git lfs pre-push'
 exec git lfs pre-push "$@"
+<<<<<<< HEAD
+>>>>>>> 4d3d06e2fac5b12be035d897a4635d9be5baf1bd
+=======
 >>>>>>> 4d3d06e2fac5b12be035d897a4635d9be5baf1bd

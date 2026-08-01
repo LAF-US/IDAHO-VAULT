@@ -8,7 +8,7 @@ published: 2023-12-07
 created: 2026-07-22
 description: "One woman said that as she faced painful contractions, she stifled her cries to avoid waking her daughter, who was sleeping in the family’s hotel room."
 ---
-A mom from Caldwell, Idaho is one of four women involved in a lawsuit with the state of Idaho seeking clarification over its abortion laws.
+A mom from Caldwell, [[Idaho]] is one of four women involved in a lawsuit with the state of Idaho seeking clarification over its abortion laws.
 
 Listen to this article
 
@@ -99,3 +99,5 @@ This story was originally published December 7, 2023 at 4:00 AM.
 Want to see more content like this?
 
 <iframe allow="clipboard-write; web-share" src="chrome-extension://cnjifjpddelmedmihgijeibhnjfabmlf/side-panel.html?context=iframe"></iframe>
+
+#idaho

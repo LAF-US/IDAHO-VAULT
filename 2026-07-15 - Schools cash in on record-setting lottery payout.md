@@ -7,7 +7,7 @@ published: 2026-07-15
 created: 2026-07-16
 description: "The $56.25 million dividend isn’t a big jackpot for K-12, not in the context of an overall state budget approaching $2.8 billion — but it does represent a significant one-year increase."
 ---
-After a surge in ticket sales, the Idaho Lottery Wednesday awarded a record-breaking annual dividend to public schools.
+After a surge in ticket sales, the [[Idaho]] Lottery Wednesday awarded a record-breaking annual dividend to public schools.
 
 “There has never been a year like this before,” state Lottery Commission Chairman Craig Corbett said Wednesday, before awarding a $56.25 million dividend for K-12 during a brief Statehouse ceremony.
 
@@ -30,3 +30,5 @@ The lottery also announced $417,500 in awards to nearly 600 school programs and 
 “They have forgone buying purchasable items or entering sweepstakes for personal gain and instead generously donated to our school-based, Do Good programs,” lottery Director Andrew Arulanandam said [in a news release](https://ee.idaholottery.com/happenings/press-releases/idaho-lottery-returns-90-million-in-historic-dividend-for-schools).
 
 Established in 1989, the lottery has distributed more than $1.4 billion in dividends to public schools and buildings.
+
+#idaho

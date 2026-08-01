@@ -10,7 +10,7 @@ description: "Rose Frank (artist) facts for kids"
 
 This page is about the Nez Perce artist. For the New Zealand photographer, see [Rose Frank](https://kids.kiddle.co/Rose_Frank "Rose Frank").
 
-**Rose Frank** was a talented Native American artist. She was born on April 6, 1912, in Sweetwater, Idaho. Rose was a member of the [Nez Perce](https://kids.kiddle.co/Nez_Perce "Nez Perce") tribe. She became very well known for her special way of weaving with cornhusks.
+**Rose Frank** was a talented Native American artist. She was born on April 6, 1912, in Sweetwater, [[Idaho]]. Rose was a member of the [Nez Perce](https://kids.kiddle.co/Nez_Perce "Nez Perce") tribe. She became very well known for her special way of weaving with cornhusks.
 
 Rose used her art to help keep her tribe's traditions alive. She wanted to make sure their crafts and customs were remembered. She did this by creating beautiful artwork and teaching others how to weave. We don't know the exact date Rose Frank passed away.
 
@@ -66,3 +66,5 @@ Rose Frank received important awards for her art.
 All content from [Kiddle encyclopedia](https://kids.kiddle.co/) articles (including the article images and facts) can be freely used under [Attribution-ShareAlike](https://creativecommons.org/licenses/by-sa/3.0/) license, unless stated otherwise. Cite this article:
 
 [Rose Frank (artist) Facts for Kids](https://kids.kiddle.co/Rose_Frank_\(artist\)). *Kiddle Encyclopedia.*
+
+#idaho

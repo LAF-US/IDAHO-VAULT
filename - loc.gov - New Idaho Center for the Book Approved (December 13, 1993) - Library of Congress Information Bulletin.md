@@ -6,7 +6,7 @@ created: 2026-07-21
 ---
 ## New Idaho Center for the Book Approved News from the Center for the Book
 
-The Hemingway Western Studies Center at Boise State University will be the home of the new Idaho Center for the Book.
+The Hemingway Western Studies Center at Boise State University will be the home of the new [[Idaho]] Center for the Book.
 
 In making the announcement, John Y. Cole, director of the Center for the Book in the Library of Congress, congratulated Boise State University Professor of English Tom Trusky, who will serve as the center's director, on the successful two-year effort to develop the organizational and funding base necessary to establish the Idaho center. "Tom has enlisted 16 board members who together represent all aspects of Idaho's book community, from author to reader," Dr. Cole said. The board includes writers, artists, publishers, book sellers, librarians, archivists, educators and members of the Idaho Humanities Council and the Idaho Commission on the Arts. The state librarian will be an ex-officio member.
 
@@ -41,3 +41,5 @@ At the commission meeting, held in the Library's Rosenwald Room, chairman Merril
 Dr. Cole also announced that the Library has received a grant from the Henry Luce Foundation for a major Jefferson Building exhibition on "Jefferson, Knowledge and Democracy."
 
 For information about the projects of the Thomas Jefferson Commemoration Commission, write the commission, P.O. Box 735, Charlottesville, VA 22902. Telephone: (804) 977-7911.
+
+#idaho

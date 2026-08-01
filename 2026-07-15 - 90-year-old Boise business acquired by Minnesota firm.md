@@ -17,7 +17,7 @@ A Minnesota company has acquired a 90-year-old Boise business.
 
 Loffler Companies of St. Louis Park, Minnesota, purchased Fisher’s Technologies of Garden City, the companies announced. Terms of the deal were not disclosed.
 
-Fisher’s Office Equipment first opened in Downtown Boise with an office on 9th St., later moving to the Union Block building on Idaho St. in the 1940s. Tom Fisher started the business and started selling typewriters. The business expanded and offered a wide array of office equipment and furnishings.
+Fisher’s Office Equipment first opened in Downtown Boise with an office on 9th St., later moving to the Union Block building on [[Idaho]] St. in the 1940s. Tom Fisher started the business and started selling typewriters. The business expanded and offered a wide array of office equipment and furnishings.
 
 ![Visit Boise - 2:1 - Easier to brag 2](https://static-v2.boisedev.com/assets/2f756408-ffc3-4ed1-a7c1-ff6b8e785893.png)
 
@@ -56,3 +56,5 @@ Taylor said that in looking for a buyer, they wanted to find a strong fit. Fishe
 ![Commercial Tire - July 2026 - 2:1](https://static-v2.boisedev.com/assets/13cd7680-6f30-4701-82a1-9fb53cf3807b.jpg)
 
 Commercial Tire - July 2026 - 2:1
+
+#idaho

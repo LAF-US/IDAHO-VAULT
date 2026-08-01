@@ -25,7 +25,7 @@ created: 2026-07-16
 NY: Abbeville Press, 1990. First edition. Hardcover. Green cloth with illustrated dustjacket. 396 pp. and 226 illustrations. Volume 3 ONLY. VG/Good with weasr to the dustjacket from use. Item #168692  
 ISBN: 9780789200631  
   
-This volume looks at the far Midwest, Rocky Mountain West, Southwest and the Pacific. The volume presents essays on the different states within the defined areas, followed by extensive notes to the essays; followed by Acknowledgments as they pertain to each essay and state; followed by an extensive bibliography to each essay and state; finally followed by an exhaustive index to the volume. The works of over 200 artists are represented in this volume, making it an outstanding visual and informational reference work. Covers the following states: Minnesota, Iowa, Missouri, Kansas, Nebraska, South Dakota, North Dakota, Montana, Idaho, Wyoming, Colorado, Utah, New Mexico, Arizona, Nevada, Oregon, Washington, California, Alaska and Hawaii.
+This volume looks at the far Midwest, Rocky Mountain West, Southwest and the Pacific. The volume presents essays on the different states within the defined areas, followed by extensive notes to the essays; followed by Acknowledgments as they pertain to each essay and state; followed by an extensive bibliography to each essay and state; finally followed by an exhaustive index to the volume. The works of over 200 artists are represented in this volume, making it an outstanding visual and informational reference work. Covers the following states: Minnesota, Iowa, Missouri, Kansas, Nebraska, South Dakota, North Dakota, Montana, [[Idaho]], Wyoming, Colorado, Utah, New Mexico, Arizona, Nevada, Oregon, Washington, California, Alaska and Hawaii.
 
 OCLC: 923718470
 
@@ -35,3 +35,5 @@ OCLC: 923718470
 See all items in [American Art](https://www.mullenbooks.com/searchResults.php?category_id=295&action=browse&orderBy=), [General Art - American](https://www.mullenbooks.com/searchResults.php?category_id=2389&action=browse&orderBy=)
 
 See all items by [William H. Gerdts](https://www.mullenbooks.com/advSearchResults.php?authorField=William+H+Gerdts&action=search)
+
+#idaho

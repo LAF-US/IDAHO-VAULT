@@ -8,7 +8,7 @@ created: 2026-07-20
 
 Photograph of Gutzon Borglum.
 
-The path which led Sculptor John Gutzon de la Mothe Borglum to Mount Rushmore began on a homestead near Bear Lake, Idaho, where he was born in March of 1867. His father, James Borglum, had immigrated to this country from Denmark a few years earlier. Shortly after Gutzon's birth his family moved to Utah. By the time Borglum was seven they were living in Fremont, Nebraska.
+The path which led Sculptor John Gutzon de la Mothe Borglum to Mount Rushmore began on a homestead near Bear Lake, [[Idaho]], where he was born in March of 1867. His father, James Borglum, had immigrated to this country from Denmark a few years earlier. Shortly after Gutzon's birth his family moved to Utah. By the time Borglum was seven they were living in Fremont, Nebraska.
 
 #### Early Years
 
@@ -53,3 +53,5 @@ However, trouble had been brewing between Borglum and the businessmen directing 
 In 1923, Doane Robinson, the State Historian of South Dakota, read of the Stone Mountain venture and wrote to Borglum about the possibility of doing a mountain carving in the Black Hills. Borglum came to South Dakota in 1924 at the age of 57 and agreed in principle to do the project. His dismissal from Stone Mountain made it possible to return to South Dakota in the summer of 1925 and set in motion the machinery that eventually led to the creation of Mount Rushmore. Work on the sculpture began in 1927. Borglum remained devoted to the project until his death in Chicago following surgery on March 6, 1941, several days before his 74th birthday. He was buried in Forest Lawn Cemetery in Glendale, California. After his death, the project fell to his son Lincoln who in turn put the finishing touches on his father's vision.
 
 Last updated: January 25, 2023
+
+#idaho

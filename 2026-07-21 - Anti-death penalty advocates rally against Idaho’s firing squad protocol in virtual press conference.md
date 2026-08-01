@@ -15,7 +15,7 @@ description: "Today, anti-death penalty advocates Execution Intervention Project
 
 Execution Intervention Project
 
-BOISE, Idaho (KIFI) — Advocacy groups gathered today to strongly condemn Idaho's decision to adopt the firing squad as a primary method of execution, unveiling a new campaign aimed at state leaders.
+BOISE, [[Idaho]] (KIFI) — Advocacy groups gathered today to strongly condemn Idaho's decision to adopt the firing squad as a primary method of execution, unveiling a new campaign aimed at state leaders.
 
 Anti-death penalty organizations, including the Execution Intervention Project and Clergy United Against the Death Penalty, hosted a virtual press conference to address the state's policy shift. As part of their campaign, the groups unveiled a prominent billboard on Grove Street (near the 1500 block) in downtown Boise bearing a direct message to public officials: "Don't Shoot Tom Creech."
 
@@ -50,3 +50,5 @@ Despite vocal pushback from anti-death penalty organizations, they face an uphil
 Article Topic Follows: [News](https://localnews8.com/category/news/)
 
 50 Followers
+
+#idaho

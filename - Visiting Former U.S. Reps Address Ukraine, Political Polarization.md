@@ -12,7 +12,7 @@ Former U.S. Reps Larry LaRocco and Scott Klug spoke at events and met with stude
 
 This week marked the return of the Congress to Campus program at Suffolk, bringing two retired U.S. representatives to the University to discuss campaigning, governing, and life in the public eye. But no matter the topic at hand — from foreign relations and international trade to political career planning — the evolving situation in Ukraine, and the hyper-partisan political climate in the U.S., colored each conversation.  
   
-This year, Suffolk welcomed former U.S. Reps. Larry LaRocco, a Democrat who represented Idaho from 1991-1995, and Scott Klug, a Republican who represented Wisconsin from 1991-1999.  
+This year, Suffolk welcomed former U.S. Reps. Larry LaRocco, a Democrat who represented [[Idaho]] from 1991-1995, and Scott Klug, a Republican who represented Wisconsin from 1991-1999.  
   
 The Congress to Campus program was created by the Association of Former Members of Congress to increase civic literacy and engagement. LaRocco and Klug participated in several interactive events during their two day visit to campus, including “ [The Great Divide: Policymaking in Polarized Times](https://www.suffolk.edu/about/events/2022/03/01/biden-series-2022-no-3),” part of the virtual classroom series on Biden and the looming midterms presented by the Department of Political Science & Legal Studies, Ford Hall Forum at Suffolk University, the GBH Forum Network, and The Washington Center.  
   
@@ -59,3 +59,5 @@ Office of Public Affairs
 [Andrea Grant](mailto:agimler@suffolk.edu)  
 Office of Public Affairs  
 617-573-8410
+
+#idaho

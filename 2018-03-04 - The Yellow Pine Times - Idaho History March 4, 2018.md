@@ -9,7 +9,7 @@ created: 2026-07-16
 
 **Jesus Urquides – Legendary Local of Boise**
 
-Gold discoveries in the Idaho Territory attracted Mexican immigrants. They worked as miners, vaqueros (cowboys), and mule packers. Mexican packers learned their trade in their home country, the Southwest, and California. They also worked as Army packers and began packing supplies to the mining camps in Idaho in the 1860s. Jesus Urquides came to Boise in 1863. He established a successful packing business and created Urquides Village near the intersection of Broadway and Main Street as a place to house the Mexican packers who worked for him. The Jesus Urquides Memorial, a public art piece, was installed at 115 Main Street in 2013.
+Gold discoveries in the [[Idaho]] Territory attracted Mexican immigrants. They worked as miners, vaqueros (cowboys), and mule packers. Mexican packers learned their trade in their home country, the Southwest, and California. They also worked as Army packers and began packing supplies to the mining camps in Idaho in the 1860s. Jesus Urquides came to Boise in 1863. He established a successful packing business and created Urquides Village near the intersection of Broadway and Main Street as a place to house the Mexican packers who worked for him. The Jesus Urquides Memorial, a public art piece, was installed at 115 Main Street in 2013.
 
 *(Left, courtesy of the Idaho State Historical Society; below, authors’ collection.)*
 
@@ -207,3 +207,5 @@ Burial: Pioneer Cemetery Boise, Ada County, Idaho, USA
 ——————–
 
 *page updated June 27, 2025*
+
+#idaho

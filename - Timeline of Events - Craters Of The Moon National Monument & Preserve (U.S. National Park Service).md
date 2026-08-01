@@ -8,7 +8,7 @@ description:
 ---
 | **YEAR** |  |
 | --- | --- |
-| **(Before   Recorded   History)** | *The [Shoshone-Bannock](https://www.nps.gov/crmo/learn/historyculture/native-americans.htm) build rock rings at Indian Tunnel.*  *The most recent volcanic eruption in Idaho creates the Broken Top Flow about 2,100 years ago.* |
+| **(Before   Recorded   History)** | *The [Shoshone-Bannock](https://www.nps.gov/crmo/learn/historyculture/native-americans.htm) build rock rings at Indian Tunnel.*  *The most recent volcanic eruption in [[Idaho]] creates the Broken Top Flow about 2,100 years ago.* |
 | **1805** | *Lewis and Clark cross northern Idaho enroute to the Pacific Ocean.* |
 | ---  **1831** | ---  *Lewis and Clark expedition member, Jean Baptiste Charboneau, gets   separated from a brigade of fur trappers and nearly perishes trying to cross the Snake River Plain from south to north.* |
 | ---  **1833** | ---  *Army Captain Benjamin Bonneville explores the area with instructions to report back his findings to the War Department.* |
@@ -51,3 +51,5 @@ description:
 Historic photos of some of the fascinating people who have passed this way.
 
 Last updated: February 14, 2024
+
+#idaho

@@ -29,7 +29,7 @@ Advertisement
 
 Of course, “Angle of Repose” was a work of fiction -- but that doesn’t mean it can’t have been plagiarized. As it happens, Stegner used the private letters of Mary Hallock Foote and additional portions of her unpublished memoir intact, edited or combined with invented material for the basic structure of his narrative. He included page-long passages and entire paragraphs unaltered, slightly changed or invented, and borrowed specific details of her life for his most memorable character, Susan Burling Ward.
 
-In the process, Stegner brought Foote to the attention of a new generation of readers. Foote was a magazine writer, illustrator and author in the late 19th and early 20th centuries who wrote about the American West and lived in Colorado, Idaho and California. Stegner was responsible for a Foote boomlet by teaching her stories in his literature courses at Stanford University and including them in two anthologies of American writers before he inserted her semi-fictional character in his prize-winning novel.
+In the process, Stegner brought Foote to the attention of a new generation of readers. Foote was a magazine writer, illustrator and author in the late 19th and early 20th centuries who wrote about the American West and lived in Colorado, [[Idaho]] and California. Stegner was responsible for a Foote boomlet by teaching her stories in his literature courses at Stanford University and including them in two anthologies of American writers before he inserted her semi-fictional character in his prize-winning novel.
 
 Criticism of Stegner’s use of Foote’s material has circulated mainly among academics and some feminists and has gone largely unnoticed by the public, even though a magazine article in this newspaper drew attention to the issue five years ago. Whether Stegner was guilty of plagiarism and slander, as his harshest critics maintain, the complexity of the act has never been completely explored.
 
@@ -72,3 +72,5 @@ And then there are the readers who may feel they were fooled or cheated out of a
 It seems to me that Stegner and the Foote family both made mistakes -- but that doesn’t ruin the book. It still remains a classic in my estimation.
 
 This story, as the best history should, ends on the completion of a cycle. Benson submitted his introduction in manuscript form to Stegner’s widow, Mary, before the paperback came out. She asked that certain parts be deleted; Benson partly complied. And Mary Stegner, who is now in a rest home at the age of 96, has inserted a provision in her will that no movie will be made from that novel.
+
+#idaho

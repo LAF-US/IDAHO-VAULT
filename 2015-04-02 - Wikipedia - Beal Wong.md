@@ -9,7 +9,7 @@ created: 2026-07-20
 
 ## Biography
 
-Wong was born in Boise, Idaho, to parents who had immigrated to the United States from China. One of his brothers, [Bruce Wong](https://en.wikipedia.org/wiki/Bruce_Wong "Bruce Wong"), also became an actor as an adult.
+Wong was born in Boise, [[Idaho]], to parents who had immigrated to the United States from China. One of his brothers, [Bruce Wong](https://en.wikipedia.org/wiki/Bruce_Wong "Bruce Wong"), also became an actor as an adult.
 
 In 1933, he had a small part in the film *[Stage Mother](https://en.wikipedia.org/wiki/Stage_Mother_\(1933_film\) "Stage Mother (1933 film)")*.[^2] In 1936, he starred in *[Sum Hun](https://en.wikipedia.org/wiki/Sum_Hun "Sum Hun")*, a film produced by his brother Bruce. In 1944, he played Toma Nogato in *[The Purple Heart](https://en.wikipedia.org/wiki/The_Purple_Heart "The Purple Heart")*, a film that starred [Dana Andrews](https://en.wikipedia.org/wiki/Dana_Andrews "Dana Andrews").[^3] He played part in *[Flower Drum Song](https://en.wikipedia.org/wiki/Flower_Drum_Song_\(film\) "Flower Drum Song (film)")* in 1961,[^4] the Pastor in the 1962 film *[Experiment in Terror](https://en.wikipedia.org/wiki/Experiment_in_Terror "Experiment in Terror")* with [Glenn Ford](https://en.wikipedia.org/wiki/Glenn_Ford "Glenn Ford") and [Lee Remick](https://en.wikipedia.org/wiki/Lee_Remick "Lee Remick").[^5] In the television series *[The Bachelor Father](https://en.wikipedia.org/wiki/The_Bachelor_Father "The Bachelor Father")*, he had the role of Peter's Grandpa Ling.[^6] [^7]
 
@@ -46,3 +46,5 @@ Wong died in Los Angeles, California, on February 6, 1962, aged 55.[^8] [^9]
 [^9]: The Three Stooges Online Filmography [Cast Member: Beal Wong](http://www.threestooges.net/cast/actor/1603)
 
 [^10]: ["The Secret Code (1942)"](https://www.allmovie.com/movie/v153239). *allmovie.com*. 1940. Retrieved November 19, 2020.
+
+#idaho

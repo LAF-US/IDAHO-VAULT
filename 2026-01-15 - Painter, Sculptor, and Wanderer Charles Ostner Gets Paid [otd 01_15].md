@@ -10,7 +10,7 @@ description: Artist Ostner. J. H. Hawley photo.   On January 15, 1869, the Idaho
 ---
 [![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgRBj-zwtpC5aMRkGTWI9A538vhOSn3F2Tttw5UyPZJEDZE2JYvpzSpz83AyKy5bNWI4EAJPdCgq10RJnbj37J8A-6L4BgKC7odkYWwDWTpLZsD1qsjlBF_kp1X2xit4mDuuPw18k980c/s200/Ostner.jpg)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgRBj-zwtpC5aMRkGTWI9A538vhOSn3F2Tttw5UyPZJEDZE2JYvpzSpz83AyKy5bNWI4EAJPdCgq10RJnbj37J8A-6L4BgKC7odkYWwDWTpLZsD1qsjlBF_kp1X2xit4mDuuPw18k980c/s1600-h/Ostner.jpg) Artist Ostner. J. H. Hawley photo. On January 15, 1869, the Idaho legislature appropriated $2,500 to reward artist Charles L. Ostner for the equestrian statue of George Washington he had recently presented to the state.  
   
-Born in Baden, Germany in 1828, Ostner emigrated to the U.S. around 1848-1850. Stories that pose him as an untutored natural genius are just that … stories. In reality, Charles received an early grounding in art at the University of Heidelberg and made a living as a sculptor, sketch artist, and photographer before coming to Idaho.  
+Born in Baden, Germany in 1828, Ostner emigrated to the U.S. around 1848-1850. Stories that pose him as an untutored natural genius are just that … stories. In reality, Charles received an early grounding in art at the University of Heidelberg and made a living as a sculptor, sketch artist, and photographer before coming to [[Idaho]].  
   
 He settled first in California and began raising a family around 1852. Family members recalled that the artist had itchy feet, and often settled his wife and children someplace and then traveled extensively. Gold camps and other pioneer settlements held a deep fascination for him, yet there is no solid evidence that he prospected himself during these earlier years.  
   
@@ -35,3 +35,5 @@ His work included paintings on canvas, drawings, and a wide variety of lithograp
 The statue stood on the capitol grounds until 1934 when it was moved indoors, refurbished, and covered in gold leaf. The figure still has a place in the Idaho capitol building.  
   
 References: \[French\], \[Hawley\] “\[Bonanza Mine\],” *Weekly Miner*, Butte; *Idaho Statesman,* Boise (April 6, 1880; October, 29, 1881).\]Arthur Hart, “Idaho History: Charles Ostner was an artist, miner and wanderer,” *Idaho Statesman* (July 4, 2010). James H. Hawley, *Eleventh Biennial Report of the Board of Trustees of the State Historical Society of Idaho,* Boise (1928). “\[Statuary\],” *Philadelphia Inquirer,* Philadelphia; *National Republican,* Washington (December 28, 1872; January 15, 1873).
+
+#idaho

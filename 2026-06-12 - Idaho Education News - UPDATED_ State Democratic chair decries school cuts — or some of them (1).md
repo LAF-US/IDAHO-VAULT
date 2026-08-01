@@ -5,7 +5,7 @@ author:
 published: 2026-06-12
 created: 2026-07-20
 ---
-***UPDATED, 3:47 p.m., with comments from Idaho Democratic Party.***
+***UPDATED, 3:47 p.m., with comments from [[Idaho]] Democratic Party.***
 
 In a fundraising email Friday, state Democratic Party chair Lauren Necochea said Idaho is disinvesting in schools.
 
@@ -24,3 +24,5 @@ EdNews wrote about Middleton’s cuts earlier this week, [in a statewide roundup
 Necochea’s husband, Alejandro Necochea, is a Boise school trustee, [seeking re-election in September](https://www.idahoednews.org/news/two-current-and-a-former-trustee-announce-candidacy-for-boise-school-board/).
 
 Democrats used [a May 29 EdNews article](https://www.idahoednews.org/top-news/idaho-schools-reduce-staff-amid-rising-costs-enrollment-declines/), which did not mention the Boise cuts, to research their fundraising piece, party spokeswoman Avery Roberts said Friday. The fundraising piece was written before Wednesday, when EdNews reported on the Boise cuts, Roberts said.
+
+#idaho

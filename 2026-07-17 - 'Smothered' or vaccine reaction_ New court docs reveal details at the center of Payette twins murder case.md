@@ -13,7 +13,7 @@ description: "New court documents filed in the Payette twins murder case reveal 
 
 ![Twins Killed Mother Charged](https://ewscripps.brightspotcdn.com/dims4/default/972f245/2147483647/strip/true/crop/1070x602+0+56/resize/1280x720!/quality/90/?url=https%3A%2F%2Fewscripps.brightspotcdn.com%2F6f%2Fa8%2Fd669d6b24f1e847f0ef09ce080fc%2Fap26187718218557.jpg)
 
-PAYETTE COUNTY, Idaho — New court documents filed in the Payette twins murder case reveal two completely different stories — prosecutors say the infants were smothered, while the defense says they never recovered from routine vaccinations.
+PAYETTE COUNTY, [[Idaho]] — New court documents filed in the Payette twins murder case reveal two completely different stories — prosecutors say the infants were smothered, while the defense says they never recovered from routine vaccinations.
 
 Andrea Renee Shaw, 23, is charged with two counts of first-degree murder in the deaths of her twins, Dallas and Tyson Shaw, who were found dead in their Payette home in May of 2025.
 
@@ -64,3 +64,5 @@ Shaw remains held without bond after a judge revoked it entirely at a July 14 he
 <iframe title="Nurse's affidavit on behalf of Shaw's defense" src="https://ewscripps.brightspotcdn.com/17/ce/beac4d5a40fba57d2807bb698c3f/071426-affidavit-of-angela-wulbrecht-in-support-of-motion-for-bond-reduction.pdf" height="600"></iframe>
 
 ![The Spot - Idaho 6.2](https://ewscripps.brightspotcdn.com/08/2c/96ed6f764e03b94d53afffc11268/the-spot-logo-1.png)
+
+#idaho

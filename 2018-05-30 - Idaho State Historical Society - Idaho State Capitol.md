@@ -7,7 +7,7 @@ created: 2026-07-16
 ---
 ![Black and white rendering of the Idaho State Capitol building.](https://history.idaho.gov/wp-content/uploads/Capitol.jpg)
 
-The Capitol Curation Program is the product of a partnership between the Idaho State Historical Society (ISHS) and Idaho Capitol Commission. The Capitol Curator preserves and promotes the historic character of Idaho’s statehouse and manages a collection of over 1,000 artifacts and historic furnishings connected to the Idaho State Capitol. Through permanent and temporary exhibits within the capitol, the program provides context for this iconic monument and the place of government in the lives of Idahoans.
+The Capitol Curation Program is the product of a partnership between the [[Idaho]] State Historical Society (ISHS) and Idaho Capitol Commission. The Capitol Curator preserves and promotes the historic character of Idaho’s statehouse and manages a collection of over 1,000 artifacts and historic furnishings connected to the Idaho State Capitol. Through permanent and temporary exhibits within the capitol, the program provides context for this iconic monument and the place of government in the lives of Idahoans.
 
 Make your visit to the Idaho State Capitol more meaningful with *Idaho Landscapes: Temple of Light.* This special edition of the Idaho State Historical Society’s publication series guides you through the capitol’s construction, history, and 21 <sup>st</sup> century restoration. The booklet is available in the Idaho State Capitol Gift Shop.
 
@@ -294,3 +294,5 @@ Citizens across the United States initiated a grassroots effort to send food, cl
 In response to the “American Friendship Train,” the people of France started their own movement to fill a “Merci Train” with gifts of thanks for American aid. From children’s drawings to wallpaper, housewares to military medals, forty-nine “Forty-and-Eight” boxcars (named for the forty men or eight horses that could fit in each car) were filled and readied for distribution to each state.
 
 No two boxcars were the same. When Idaho’s boxcar arrived on February 22, 1949, Idahoans found this stunning plaster cast of Winged Victory of Samothrace inside. Today, Nike stands outside of Statuary Hall as a reminder of the Gem State’s connection to the world around us.
+
+#idaho

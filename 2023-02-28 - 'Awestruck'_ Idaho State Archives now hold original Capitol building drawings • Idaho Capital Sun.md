@@ -13,7 +13,7 @@ Hummel Architects donates more than 100 original drawings, paintings of Statehou
 
 ![Idaho Gov. Brad Little at the Capitol in Boise](https://idahocapitalsun.com/wp-content/uploads/2023/02/Brad-Little-Capitol-donation.jpg)
 
-Idaho Gov. Brad Little at the Capitol in Boise
+[[Idaho]] Gov. Brad Little at the Capitol in Boise
 
 During a Feb. 28, 2023, press conference at the Governor’s Ceremonial Office at the Statehouse, Gov. Brad Little thanked Hummel Architects for donating its original Idaho Capitol drawings and paintings to the Idaho State Archives, a division of the Idaho State Historical Society. (Christina Lords/Idaho Capital Sun)
 
@@ -64,3 +64,5 @@ Gallimore said the materials should be available for public research in about a 
 Idaho Gov. Brad Little thanked the architecture firm for the donation at the Tuesday press conference and said the spirit of the building can be felt each time Idahoans gather at the Capitol.
 
 “I have people coming here all the time, from all over the world and all over the nation, that are just awestruck by what we did,” he said. “It’s such an iconic site and iconic building, and the love we all have for this building (is immense.)”
+
+#idaho

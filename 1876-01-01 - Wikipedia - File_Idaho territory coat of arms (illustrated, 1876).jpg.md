@@ -28,7 +28,7 @@ This image was selected as **[picture of the day](https://en.wikipedia.org/wiki/
 
 DescriptionIdaho territory coat of arms (illustrated, 1876).jpg
 
-**English:** Idaho territory coat of arms
+**English:** [[Idaho]] territory coat of arms
 
 Date1876SourceMitchell, Henry (1876) *The State Arms of the Union*, [Boston](https://en.wikipedia.org/wiki/en:Boston "w:en:Boston"): [L. Prang](https://en.wikipedia.org/wiki/Louis_Prang "w:Louis Prang") & Co.Author
 
@@ -264,3 +264,5 @@ The following other wikis use this file:
 	- [Lãnh thổ Idaho](https://vi.wikipedia.org/wiki/L%C3%A3nh_th%E1%BB%95_Idaho)
 - Usage on zh.wikipedia.org
 	- [愛達荷領地](https://zh.wikipedia.org/wiki/%E6%84%9B%E9%81%94%E8%8D%B7%E9%A0%98%E5%9C%B0)
+
+#idaho

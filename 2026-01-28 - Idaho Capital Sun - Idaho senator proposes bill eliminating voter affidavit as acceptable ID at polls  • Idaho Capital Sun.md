@@ -10,7 +10,7 @@ created: 2026-07-20
 
 ![Bonneville County residents take part in the voting process during the May 21, 2024, primary election at The Waterfront Event Center in Idaho Falls](https://idahocapitalsun.com/wp-content/uploads/2024/05/Voting-024-2048x1367.jpg)
 
-Bonneville County residents take part in the voting process during the May 21, 2024, primary election at The Waterfront Event Center in Idaho Falls
+Bonneville County residents take part in the voting process during the May 21, 2024, primary election at The Waterfront Event Center in [[Idaho]] Falls
 
 Bonneville County residents take part in the voting process during the May 21, 2024, primary election at The Waterfront Event Center in Idaho Falls. (Pat Sutphin for the Idaho Capital Sun)
 
@@ -37,3 +37,5 @@ Lenney highlighted Wednesday a very small percentage of the total voters used th
 County election offices review all affidavits to confirm the voter’s name, address and signature against the individual’s voter record, Bishop said. Only registered voters may use the affidavit as identification at the polls, and it is a felony to provide false, erroneous or inaccurate information on voter affidavits.
 
 Lenney introduced a [similar bill last year](https://legislature.idaho.gov/sessioninfo/2025/legislation/S1049/), but it never received a hearing. In 2023, [Rep. Joe Alfieri, R-Coeur d’Alene](https://legislature.idaho.gov/legislators/membership/2026/id7857/), proposed a bill to eliminate the voter affidavit, but it [died in a 33-36 vote](https://idahocapitalsun.com/2023/03/21/idaho-house-kills-bill-that-would-have-eliminated-use-of-affidavits-for-voting/) in the Idaho House of Representatives, the Idaho Capital Sun reported.
+
+#idaho

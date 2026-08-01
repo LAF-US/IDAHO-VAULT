@@ -31,7 +31,7 @@ Accordingly, a draft ordinance calls for a reduction in the maximum allowable bu
 
 ![Idaho Lottery - 90 MM - 2:1](https://static-v2.boisedev.com/assets/35da0207-4735-4f00-a726-8f11ae69e570.gif)
 
-Idaho Lottery - 90 MM - 2:1
+[[Idaho]] Lottery - 90 MM - 2:1
 
 For downtown buildings, Anderson said that city code currently allows up to 42 feet for market-rate developments, 52 feet for projects providing 100% community housing, and 68 feet for hotels. The city’s tallest building downtown is the Limelight Hotel Ketchum, which is five stories, she said.
 
@@ -68,3 +68,5 @@ Regence - 2:1 - Business Grow
 Anderson said the updates would include “updates to the permitted and maximum floor area ratio (FAR) bonuses for each zoning district, increased community housing requirements for lots greater than 10,000 square feet, and clarification of the review and approval process.”
 
 “These changes are intended to make the incentive program more effective at generating deed-restricted community housing while ensuring that the benefits and expectations of the program are clear,” she said.
+
+#idaho

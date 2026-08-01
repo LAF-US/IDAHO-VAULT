@@ -14,7 +14,7 @@ description: "About HISTORIC PHOTOGRAPHS  folder - Portal App"
 
 Description:
 
-An artificial collection of historic photographs consisting primarily of images of southeast Idaho with some from outside the geographic collecting scope, taken between 1868 through 1954.
+An artificial collection of historic photographs consisting primarily of images of southeast [[Idaho]] with some from outside the geographic collecting scope, taken between 1868 through 1954.
 
 ### Browse folder
 
@@ -135,3 +135,5 @@ Image
 [![American Falls, Idaho Image thumbnail](https://t68c5a865aab279f8.starter1ua.preservica.com/portal/api/next/thumbnails?id=sdb%3AIO%7Cdf3197ac-84b5-4b41-9cbc-759893916f97)](https://t68c5a865aab279f8.starter1ua.preservica.com/portal/en-US/asset/sdb%3AIO%7Cdf3197ac-84b5-4b41-9cbc-759893916f97)
 
 Image
+
+#idaho

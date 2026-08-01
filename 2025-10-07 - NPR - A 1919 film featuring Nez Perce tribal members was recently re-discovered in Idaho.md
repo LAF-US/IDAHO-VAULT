@@ -5,7 +5,7 @@ author:
 published: 2025-10-07
 created: 2026-07-21
 ---
-**A 1919 film featuring Nez Perce tribal members was recently re-discovered in Idaho** **After being lost in a Soviet vault for decades, the first feature film made in Idaho, in 1919, is now returning to screens. It includes significant depictions of Nez Perce tribal members.**
+**A 1919 film featuring Nez Perce tribal members was recently re-discovered in [[Idaho]]** **After being lost in a Soviet vault for decades, the first feature film made in Idaho, in 1919, is now returning to screens. It includes significant depictions of Nez Perce tribal members.**
 
 #### A 1919 film featuring Nez Perce tribal members was recently re-discovered in Idaho
 
@@ -66,3 +66,5 @@ WILLIAMSON-CLOUD: I think the big kind of hope would be that the rest of the fil
 PATERSON: Archivists say chances are slim. But Williamson-Cloud is hopeful the other reels are out there somewhere. For NPR News, I'm Lauren Paterson in Moscow, Idaho.
 
 (SOUNDBITE OF MUSIC)
+
+#idaho
