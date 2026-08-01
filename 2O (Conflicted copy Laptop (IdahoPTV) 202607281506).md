@@ -1,0 +1,1 @@
+[[Owyhee County]] ([[Murphy]])  
