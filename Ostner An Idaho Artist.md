@@ -11,7 +11,7 @@ description: ​Charles Ostner, who was born in Austria, immigrated to America t
 
 7/7/2019
 
-Charles Ostner, who was born in Austria, immigrated to America to escape persecution in Germany. He had been involved in student uprisings there in 1848. He lived in California for about ten years working as a prospector. In 1860 the allure of gold brought him to the Florence Mining District in what would become Idaho. He found easy wealth a difficult thing to come by. On his way to Fabulous Florence, he got lost in the wilderness, spending nearly a month thrashing around. When found, Ostner was unconscious and emaciated. Life as a prospector had lost its allure.  
+Charles Ostner, who was born in Austria, immigrated to America to escape persecution in Germany. He had been involved in student uprisings there in 1848. He lived in California for about ten years working as a prospector. In 1860 the allure of gold brought him to the Florence Mining District in what would become [[Idaho]]. He found easy wealth a difficult thing to come by. On his way to Fabulous Florence, he got lost in the wilderness, spending nearly a month thrashing around. When found, Ostner was unconscious and emaciated. Life as a prospector had lost its allure.  
   
 Ostner bought an interest in a pack trail bridge in Garden Valley. The toll bridge was a reliable source of income. It gave him some time to pursue his art.  
   
@@ -39,3 +39,5 @@ Monument to Ostner erected on the site of his Garden Valley home in celebration 
 ![Picture](https://www.rickjust.com/uploads/5/2/5/3/52533793/ostner-2_orig.jpg)
 
 A crowd gathered on February 21, 1915 for “Washington-Lincoln patriotic services” in front of the Washington statue carved by Charles Ostner. The woman in the center of the photo is Mrs. Charles Ostner. To the right of Mrs. Ostner is Mrs. R.C. Adelman (nee Julia Ostner). Mrs. J.D. Jones is to the left of Mrs. Ostner. The girl dressed in white and placing a wreath is Clare Elizabeth Jones, the Ostner’s granddaughter. Courtesy of the Idaho State Historical Society’s physical photo collection.
+
+#idaho

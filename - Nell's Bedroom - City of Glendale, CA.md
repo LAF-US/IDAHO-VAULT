@@ -6,7 +6,7 @@ created: 2026-07-21
 ---
 ![jpgNellbdrm2](https://www.glendaleca.gov/home/showpublishedimage/6685/635250869266330000) Nell and her husband Ernie used the room next to Barry's as their bedroom; today it is a display room. The claw-foot bathtub was original to the house; thus it was in the house when the Shipmans lived here. Ernest helped Nell make the transition from stage to film. They had met in Seattle, when Ernest was a theatrical producer/manager and hired Nell as the lead in "The Barrier." Within a year they married; Nell was 18. Ten years later (1920) they divorced. *The Los Angeles Evening Herald* carried a front-page, banner-headline story, reporting that Ernie had deserted Nell a year earlier, taking her salary with him.
 
-After leaving Southern California, Nell eventually (1921) took her company and zoo to Priest Lake, Idaho. She and her crew built their own cabins and shelters for the animals, chopped their own wood, poached their own fish and game. Why did she choose such a difficult place for her studio? She explains, "I want exteriors to match the true locale of the story I am filming, and to me Priest Lake is the loveliest, wildest, most perfect spot of all" ("Incredible Idaho," 1977). Living and working under primitive conditions, Shipman wrote, starred in and produced "artistically and technically excellent films" (Naked Eye Productions, 1992).
+After leaving Southern California, Nell eventually (1921) took her company and zoo to Priest Lake, [[Idaho]]. She and her crew built their own cabins and shelters for the animals, chopped their own wood, poached their own fish and game. Why did she choose such a difficult place for her studio? She explains, "I want exteriors to match the true locale of the story I am filming, and to me Priest Lake is the loveliest, wildest, most perfect spot of all" ("Incredible Idaho," 1977). Living and working under primitive conditions, Shipman wrote, starred in and produced "artistically and technically excellent films" (Naked Eye Productions, 1992).
 
 ![secondonlake2](https://www.glendaleca.gov/home/showpublishedimage/6687/635250869269770000)
 
@@ -22,3 +22,5 @@ This concludes our online tour; thank you for participating. Your comments and q
 
 - [Hemingway Western Studies Center](https://www.glendaleca.gov/?splash=http%3a%2f%2fwww.boisestate.edu%2fhemingway%2f&____isexternal=true) has complete holdings of Nell Shipman films, as well as her autobiography, photos and videos of her films for sale.
 - [Nell Shipman Web Site](https://www.glendaleca.gov/?splash=https%3a%2f%2fwww.cinema.utoronto.ca%2fresearch-publications%2ffaculty-publications%2fgirl-gods-country-nell-shipman-and-silent-cinema&____isexternal=true) provides information including biography, articles, filmography on Shipman and links on film industry in general.
+
+#idaho

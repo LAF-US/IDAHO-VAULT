@@ -25,7 +25,7 @@ His one-hour special, *Happy Face*, became available on [Netflix](https://en.wik
 
 Hamilton resides in [New York City](https://en.wikipedia.org/wiki/New_York_City "New York City").[^10]
 
-In January 2022, he was hit by a shuttle bus as a pedestrian in Los Angeles at LAX airport, and suffered ten broken ribs, a compound fractured arm that required delayed emergency surgery, and a punctured collapsed lung.[^18] He recovered at his family home in Idaho.
+In January 2022, he was hit by a shuttle bus as a pedestrian in Los Angeles at LAX airport, and suffered ten broken ribs, a compound fractured arm that required delayed emergency surgery, and a punctured collapsed lung.[^18] He recovered at his family home in [[Idaho]].
 
 ## References
 
@@ -69,3 +69,5 @@ In January 2022, he was hit by a shuttle bus as a pedestrian in Los Angeles at L
 [^17]: ["'Ryan Hamilton: This Just Hit Me' Netflix Review: Stream It or Skip It?"](https://decider.com/2026/06/23/ryan-hamilton-this-just-hit-me-netflix-review-stream-it-or-skip-it/). 2026-06-23. Retrieved 2026-07-17.
 
 [^18]: ["Comedian Ryan Hamilton postpones SLC shows after being hit by a bus"](https://www.abc4.com/news/comedian-ryan-hamilton-postpones-slc-shows-after-being-hit-by-a-bus/). 26 January 2022.
+
+#idaho

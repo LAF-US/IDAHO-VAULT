@@ -15,7 +15,7 @@ description: "Grain farmers in southern and eastern Idaho faced a challenging gr
 
 KIFI
 
-IDAHO FALLS, Idaho (KIFI) - Grain farmers across southern and eastern Idaho are dealing with a difficult growing season after months of drought, spring frost, and increased pest pressure damaged wheat and barley fields.
+IDAHO FALLS, [[Idaho]] (KIFI) - Grain farmers across southern and eastern Idaho are dealing with a difficult growing season after months of drought, spring frost, and increased pest pressure damaged wheat and barley fields.
 
 Despite the difficulties, University of Idaho researcher Juliet Marshall says the overall outlook isn't as bleak as they first expected.
 
@@ -42,3 +42,5 @@ While many producers are still facing difficult harvests and lower yields, resea
 Article Topic Follows: [News](https://localnews8.com/category/news/)
 
 50 Followers
+
+#idaho

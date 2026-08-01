@@ -13,6 +13,7 @@ linter-yaml-title-alias: VAULT-CONVENTIONS
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 ## Wikilinks
@@ -178,7 +179,7 @@ All "direct-write" agents must anchor their external platform state into the vau
 
 | `sort_audit.py`        | Audits vault structure for misplaced files  | Weekly Monday 6 AM UTC + manual |
 
-| `idaho_leg_scraper.py` | Scrapes Idaho Legislature bill data         | Daily 6 AM MT + manual          |
+| `idaho_leg_scraper.py` | Scrapes [[Idaho]] Legislature bill data         | Daily 6 AM MT + manual          |
 
 | `post_digest.py`       | Posts bill activity to GitHub Issues digest | Called by scraper workflow      |
 
@@ -700,3 +701,8 @@ Filenames within any single directory **must be case-unique**. `Act.md` and `ACT
 =======
 # VAULT-CONVENTIONS
 >>>>>>> 4d3d06e2fac5b12be035d897a4635d9be5baf1bd
+=======
+# VAULT-CONVENTIONS
+>>>>>>> 4d3d06e2fac5b12be035d897a4635d9be5baf1bd
+
+#idaho

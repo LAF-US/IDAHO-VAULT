@@ -17,7 +17,7 @@ The Inland Northwest has quite a lot of screen credits to its name.
 
 There is, of course, “Vision Quest,” starring Matthew Modine, and the Johnny Depp- and Mary Stuart Masterson-led “Benny and Joon.” “Smoke Signals” and “At Middleton” were filmed in the area, as were “Camilla Dickinson,” “Mozart and the Whale,” “Z Nation” and “Dreamin’ Wild.”
 
-Before those films, in fact before “talkies” altogether, director George Melford came to Lewiston and Lapwai, Idaho, to film “Told in the Hills,” a Western romance that features more than 100 Nez Perce actors and creative collaborators.
+Before those films, in fact before “talkies” altogether, director George Melford came to Lewiston and Lapwai, [[Idaho]], to film “Told in the Hills,” a Western romance that features more than 100 Nez Perce actors and creative collaborators.
 
 More than a century after the film’s release in 1919, all that remained was 25 minutes of film footage. With that footage, plus more than 200 archival photos that were taken on set, the film has been recreated by Colin Mannex, executive director of the Kenworthy Performing Arts Centre, and film editor Tom Frank.
 
@@ -70,3 +70,5 @@ On top of the live soundtrack, Mannex said the fact that the main draw, “Told 
 “This is a story that I think is going to excite folks who are interested in finding points of connection with local history, geography and what our communities looked like 100 years ago as this film was celebrated in Lewiston and with a premiere in 1919, it’s fascinating to imagine all of the human points of connection involved in that process from over 100 years ago.”
 
 ---
+
+#idaho

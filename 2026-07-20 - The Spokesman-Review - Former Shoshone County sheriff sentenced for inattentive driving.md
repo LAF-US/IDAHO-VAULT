@@ -13,7 +13,7 @@ Former Shoshone County Sheriff Holly Lindsey was sentenced to four days in jail 
 
 Lindsey pleaded guilty July 7 to misdemeanor inattentive driving as part of a plea agreement before Magistrate Judge Tristan Poorman handed down the sentence.
 
-The complaint filed by the Idaho attorney general’s office said Lindsey struck a post at a gas station with her car. The attorney general’s office is the customary investigating agency for any Idaho sheriff facing criminal charges.
+The complaint filed by the [[Idaho]] attorney general’s office said Lindsey struck a post at a gas station with her car. The attorney general’s office is the customary investigating agency for any Idaho sheriff facing criminal charges.
 
 Lindsey was sentenced to two years of unsupervised probation. Her conditions include not using alcohol or drugs, submitting to blood alcohol concentration tests when requested, completing any recommended treatment and having an interlock device on her car for one year, according to court documents. She was also fined $300.
 
@@ -26,3 +26,5 @@ The sheriff’s office underwent a couple leadership changes in Lindsey’s abse
 Undersheriff Lance Stutzke filled the role before William Eddy was appointed. Eddy resigned amid health concerns and Shoshone County commissioners appointed Wehr in March. Wehr, a former Los Angeles Police Department officer and combat veteran, won the Republican primary in May and is running unopposed in the general election.
 
 ---
+
+#idaho

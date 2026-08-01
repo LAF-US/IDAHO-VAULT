@@ -4,7 +4,7 @@ author:
 published: 1947-09-27
 created: 2026-07-16
 ---
-This report is on result of a long program of geologic investigation in south-central Idaho, undertaken as an aid in the development of the mineral resources of the region. This quadrangle was examined because of the exceptional opportunities for the study of stratigraphy and structure afforded by the Lost River Range, which is the highest in Idaho and contains comparatively few intrusive igneous rocks.
+This report is on result of a long program of geologic investigation in south-central [[Idaho]], undertaken as an aid in the development of the mineral resources of the region. This quadrangle was examined because of the exceptional opportunities for the study of stratigraphy and structure afforded by the Lost River Range, which is the highest in Idaho and contains comparatively few intrusive igneous rocks.
 
 The Borah Peak quadrangle differs from the region to the west and northwest in that it contains parts of two sharply defined, narrow ranges elongated in a north-westerly direction, instead of broad, irregular mountain masses, in which the trends of most local topographic units are ill-defined. These ranges, the Lost River and the Lemhi, are flanked by intermontane valleys sparsely populated by stock ranchers.
 
@@ -28,3 +28,5 @@ The present mountain masses and broad intermontane valleys are in about the posi
 | Series Title | GSA Bulletin |
 | Index ID | [70214503](https://pubs.usgs.gov/publication/70214503) |
 | Record Source | [USGS Publications Warehouse](https://pubs.usgs.gov/) |
+
+#idaho

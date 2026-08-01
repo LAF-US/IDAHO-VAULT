@@ -13,7 +13,7 @@ The trust’s benefit manager, Debbie Hainke, sent a [letter](https://mailchi.mp
 
 ![](https://www.idahoednews.org/wp-content/uploads/2026/07/hainke.jpg)
 
-Debbie Hainke (Photo courtesy of the Idaho School Benefit Trust)
+Debbie Hainke (Photo courtesy of the [[Idaho]] School Benefit Trust)
 
 The shortfall is estimated to be equivalent to one month of contributions, Hainke wrote. The trust is working with the Idaho Department of Insurance and Blue Cross of Idaho — the trust’s benefit plan administrator — to better estimate the shortfall and find ways to “soften the immediate cash impact for participating school districts,” she added.
 
@@ -74,3 +74,5 @@ West Bonner Superintendent Kim Spacek said districts set budgets based on what t
 “It’s always a concern when you set a budget and you’re told here’s what your increases are going to be, and then you’re told, ‘Oh, by the way,'” Spacek said.
 
 “If you’re in a benefit trust, you’re really handing off decisions with the people who are at the trust,” he added.
+
+#idaho

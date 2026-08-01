@@ -26,10 +26,12 @@ Instead of publishing his findings in the Annual Report of the expedition, as he
 
 *Ferdinand Vandiveer Hayden and the Founding of the Yellowstone National Park*. Washington: U. S. Government Printing Office, 1973.  
   
-Hayden, F. V. *Sixth Annual Report of the United States Geological Survey of the Territories, Embracing Portions of Montana, Idaho, Wyoming, and Utah; Being a Report of Progress of the Explorations for the Year 1872*. Washington: Government Printing Office, 1873.  
+Hayden, F. V. *Sixth Annual Report of the United States Geological Survey of the Territories, Embracing Portions of Montana, [[Idaho]], Wyoming, and Utah; Being a Report of Progress of the Explorations for the Year 1872*. Washington: Government Printing Office, 1873.  
   
 Hayden, F. V. *Preliminary Report of the United States Geological Survey of Montana and Portions of Adjacent Territories; Being a Fifth Annual Report of Progress*. Washington: Government Printing Office, 1872.  
   
 Rodgers, Andrew Denny. *John Merle Coulter: Missionary in Science*. Princeton: Princeton University Press, 1944.  
   
 USDA PLANTS database. United States Department of Agriculture, Natural Resources Conservation Service. National Plant Data Center. [http://plants.usda.gov/](http://plants.usda.gov/ "(opens in a new window)") (for information on plant species *Dicentra uniflora*, *Calochortus nuttallii*, *Pinus ponderosa*, and *Botrychium lunarioides*; accessed July 6, 2010).
+
+#idaho

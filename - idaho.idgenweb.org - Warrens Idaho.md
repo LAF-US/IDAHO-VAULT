@@ -6,7 +6,7 @@ created: 2026-07-20
 ---
 ***Why they call it Warren***
 
-*Warren, one of the most famous and enduring of central Idaho's gold camps, was named for the discoverer of the precious yellow metal in that region, James Warren, of Lewiston. Described by the historian H.H. Bancroft as a "shiftless individual, a petty gambler, miner, and prospector."*
+*Warren, one of the most famous and enduring of central [[Idaho]]'s gold camps, was named for the discoverer of the precious yellow metal in that region, James Warren, of Lewiston. Described by the historian H.H. Bancroft as a "shiftless individual, a petty gambler, miner, and prospector."*
 
 *James Warren made up a prospecting party which left Lewiston on August 1, 1862, for an expedition into the Salmon river basin. Within less than a month he had discovered the rich gold deposits in the Warren meadows and returned here with news of the new and wealthy diggings.*
 
@@ -27,3 +27,5 @@ created: 2026-07-20
 If you have information to share, questions or corrections, please email [County Coordinator](mailto:ididaho@msn.com?subject=IdGenWeb)
 
 <iframe allow="clipboard-write; web-share" src="chrome-extension://cnjifjpddelmedmihgijeibhnjfabmlf/side-panel.html?context=iframe"></iframe>
+
+#idaho

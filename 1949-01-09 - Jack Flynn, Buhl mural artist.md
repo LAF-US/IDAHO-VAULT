@@ -6,7 +6,7 @@ published: 1949-01-09
 created: 2026-07-16
 description: "Clipping found in The Idaho Statesman published in Boise, Idaho on 1/9/1949. Jack Flynn, Buhl mural artist"
 ---
-Idaho Almost anything may happen in a place co where a Jack Flynn mural hangs. About two weeks Decks Shore tin Burley. 'Burley' seemed like a natural name so I used it." There have been few arguments about this end of the painting but the rest of it is something else again. The background essentials were taken from a snapshot of Neil Boydstun's which shows Lardo in the early 1900's some after his father built the Payette Lakes House and before the old wooden bridge was replaced. Nevertheless memory has a habit of confusing itself and plenty of arguments develop.
+[[Idaho]] Almost anything may happen in a place co where a Jack Flynn mural hangs. About two weeks Decks Shore tin Burley. 'Burley' seemed like a natural name so I used it." There have been few arguments about this end of the painting but the rest of it is something else again. The background essentials were taken from a snapshot of Neil Boydstun's which shows Lardo in the early 1900's some after his father built the Payette Lakes House and before the old wooden bridge was replaced. Nevertheless memory has a habit of confusing itself and plenty of arguments develop.
 
 Every time Flynn comes to town there is a new set waiting for him. Memories of Long Ago Some of the really long memories around lakes come to his rescue. Mrs. WarPayetted ren Cook and Neil Boydstun have that kind of memories. All of them have lived in area from the time shown in the painting.
 
@@ -31,3 +31,5 @@ It is part of a purely fictitious "settlement" painted in to represent McCall, &
 His work is vigorous, exciting, and original and it will probably make him famous one of these years if he keeps on working as he has been. Murals and Muscle Work Flynn has been painting in Idaho since he came home from the Army years ago, bringing his Texas wife, Peggy, with him. He has completed and installed murals of an Indian pow-wow, two stage caach scenes, an execution at Idaho City, cowboys in a tangle with longhorn cattle, Indian buffalo hunt, and a pair placer an, miners at a stream side, as well as the big Lardo painting. Between murals he splices out the budget by taking in work at his sign shop, and he ships out on a job of muscle work now and then. He finished building their home, Walls With And Flynn, never afraid of taking on a new job, is now getting his Murals hand pretty well trained at caring his for baby Carol.
 
 MOUSE.
+
+#idaho

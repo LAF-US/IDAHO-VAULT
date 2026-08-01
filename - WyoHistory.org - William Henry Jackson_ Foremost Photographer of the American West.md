@@ -66,7 +66,7 @@ Returning to the East in early October, Hayden and his men joined the lobbying e
 
 Were Jackson's photos the decisive factor in the passage of the legislation? Probably not, and this point is well argued by Howard Bossen in a 1981 paper presented to the Annual Meeting of the Association for Education in Journalism. Bossen does concede that Jackson's photos, as part of Hayden's larger exhibit, contributed to the growing body of evidence that the area was a natural wonder.
 
-The Hayden Survey returned to the Yellowstone region in summer 1872, splitting into two parties, one led by Hayden, and the other by James Stevenson, Hayden's second-in-command from the 1870 expedition. Jackson, with Stevenson's party, explored the western side of the Teton Range in present-day Idaho.
+The Hayden Survey returned to the Yellowstone region in summer 1872, splitting into two parties, one led by Hayden, and the other by James Stevenson, Hayden's second-in-command from the 1870 expedition. Jackson, with Stevenson's party, explored the western side of the Teton Range in present-day [[Idaho]].
 
 Jackson remained with the Hayden Survey until 1878, its final year. That year, Hayden returned to northwestern Wyoming Territory. The party departed from Cheyenne on July 24 and then traveled to South Pass and through the Wind River Mountains to present-day Jackson Hole, which was not named for William Henry, but for trapper and mountain man David Jackson, no relation. From there, the Hayden group entered Yellowstone Park.
 
@@ -137,3 +137,5 @@ Over a lifetime during which the West may have changed more than ever before or 
 - The image of Jackson’s painting, “Buffalo Stampede,” is image number WHJ-10610 from the Western History Collection, [Denver Public Library](http://digital.denverlibrary.org/cdm/singleitem/collection/p15330coll22/id/79024/rec/20 "(opens in a new window)"). Used with permission and thanks.
 - Jackson’s photos of Flaming Gorge, the rider with the pack mule on Mount Washburn, Natural Bridge, the Hayden Survey near Red Buttes, Devil’s Gate, Split Rock on the Sweetwater and Wind River Peak in the Wind River range are all from the [United States Geological Survey Library](https://library.usgs.gov/photo/#/ "(opens in a new window)"). Used with thanks.
 - For a gallery of Jackson’s early photos of Yellowstone Park, see the WyoHistory.org article, “Yellowstone, the World’s Wonderland” by Tamsen Emerson Hert at [/encyclopedia/yellowstone-national-park](https://www.wyohistory.org/encyclopedia/yellowstone-national-park).
+
+#idaho

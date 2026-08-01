@@ -9,7 +9,7 @@ created: 2026-07-16
 
 As The City of Boise’s first public swimming pool, The Natatorium has been Boise’s place to be come summer for over 120 years. For many families, The Natatorium is a family tradition; indeed, many of the children swimming at The Nat this summer will be splashing around in the same waters their great-grandparents swam in years ago.
 
-The Natatorium opened on May 25, 1892. The Nat’s six-story Moorish towers and four floors of galleries overlooking the geothermal pool made it Boise’s most exotic building. The perfect location to display the grandeur of Idaho at the turn of the century, The Nat was the site of Idaho’s first Inaugural Governor’s Ball in 1901. A cover slid over the 65’ x 125’ enclosed hot water swimming pool so it could serve as a dance floor just like in the movie “It’s a Wonderful Life.”
+The Natatorium opened on May 25, 1892. The Nat’s six-story Moorish towers and four floors of galleries overlooking the geothermal pool made it Boise’s most exotic building. The perfect location to display the grandeur of [[Idaho]] at the turn of the century, The Nat was the site of Idaho’s first Inaugural Governor’s Ball in 1901. A cover slid over the 65’ x 125’ enclosed hot water swimming pool so it could serve as a dance floor just like in the movie “It’s a Wonderful Life.”
 
 The 15,000 square foot building contained the largest indoor swimming pool in the country and included rooms for billiards, card playing, smoking, reading, and dining, as well as Turkish baths, hot tubs, steam tubs and a bar. In 1914 Hiram T. French named the landmark Natatorium “The Taj Mahal of the West.”
 
@@ -36,3 +36,5 @@ If you’ve ever felt like your goals are just floating ideas instead of a clear
 On May 9, the Idaho Film Society will roll out the red carpet for a moment years in the making—the inaugural Idaho Film Hall...
 
 Photos by Taylor Stanger In a world of mass production and digital perfection, Karen Klinefelter remains something rare—an artist whose work can’t be duplicated, digitized,...
+
+#idaho

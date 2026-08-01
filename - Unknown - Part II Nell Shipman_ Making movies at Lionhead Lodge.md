@@ -7,7 +7,7 @@ created: 2026-07-21
 ---
 **By Mary Jane Honegger**
 
-[![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgw-5w-S8DO_L-HLCEom7OfusJoKnDwqd4t46q1ZXYodE-WapReyi2_pgnahbV7s1q1QyhqJndjd7E5Pc4WKVRdxzSp1qB6ppzJ-zEumbS4l5S0MIYmznl3KdLgKfb9xi-cVnsrTry6ESyg/s1600/51ba-txXOeL._SL500_SY344_BO1%252C204%252C203%252C200_.jpg)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgw-5w-S8DO_L-HLCEom7OfusJoKnDwqd4t46q1ZXYodE-WapReyi2_pgnahbV7s1q1QyhqJndjd7E5Pc4WKVRdxzSp1qB6ppzJ-zEumbS4l5S0MIYmznl3KdLgKfb9xi-cVnsrTry6ESyg/s1600/51ba-txXOeL._SL500_SY344_BO1%252C204%252C203%252C200_.jpg) Intrigued by Nell Shipman’s story, I purchased a couple of books about her time in the Pacific Northwest and recently finished reading *Lionhead Lodge*, a first-hand account of Nell’s adventures in Spokane and North Idaho written by Lloyd Peters, a Spokane youth who caught the acting bug while watching Mary Pickford in *Rebecca of Sunny Brook Farm* at “the beautiful new Clemmer Theatre in Spokane.”
+[![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgw-5w-S8DO_L-HLCEom7OfusJoKnDwqd4t46q1ZXYodE-WapReyi2_pgnahbV7s1q1QyhqJndjd7E5Pc4WKVRdxzSp1qB6ppzJ-zEumbS4l5S0MIYmznl3KdLgKfb9xi-cVnsrTry6ESyg/s1600/51ba-txXOeL._SL500_SY344_BO1%252C204%252C203%252C200_.jpg)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgw-5w-S8DO_L-HLCEom7OfusJoKnDwqd4t46q1ZXYodE-WapReyi2_pgnahbV7s1q1QyhqJndjd7E5Pc4WKVRdxzSp1qB6ppzJ-zEumbS4l5S0MIYmznl3KdLgKfb9xi-cVnsrTry6ESyg/s1600/51ba-txXOeL._SL500_SY344_BO1%252C204%252C203%252C200_.jpg) Intrigued by Nell Shipman’s story, I purchased a couple of books about her time in the Pacific Northwest and recently finished reading *Lionhead Lodge*, a first-hand account of Nell’s adventures in Spokane and North [[Idaho]] written by Lloyd Peters, a Spokane youth who caught the acting bug while watching Mary Pickford in *Rebecca of Sunny Brook Farm* at “the beautiful new Clemmer Theatre in Spokane.”
 
 In his autobiography, Peters shares the delightful tale of how he and his brother, Ray, got started in the movie industry through a little bit of luck and a mail order ad that offered “movie lessons and a twelve-hour talent tester with make-up box by James Cruise for only $15.00.” ***Well, that is my picture career. I got into the movies,***
 
@@ -61,3 +61,5 @@ Nell Shipman DVD VOLUME 2 - **The Short Films**
 Nell Shipman DVD VOLUME 3 - **From Lionhead Lodge** (Includes all of Nell Shipman's surviving films made in Idaho.)
 
 NOTE: All the photos, with the exception of the book cover and the final photo, were scanned from the book *Lionhead Lodge*.
+
+#idaho

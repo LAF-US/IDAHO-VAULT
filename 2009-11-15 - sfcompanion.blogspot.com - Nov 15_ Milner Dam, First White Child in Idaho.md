@@ -12,7 +12,7 @@ On November 15, 1904, construction of Milner Dam on the Snake River was consider
   
 During this period also, the Twin Falls Land & Water Company began selling the land to be watered by the project, including lots in the new town of Twin Falls. The region grew rapidly after water arrived on the land in the spring of 1905. In early 1907, the legislature created Twin Falls County, with the village as its county seat.  
   
-On November 15, 1837, Eliza Spalding, wife of the Reverend Henry Harmon Spalding, gave birth to a daughter, also named Eliza. The birth occurred at the Spaldings’ Presbyterian mission at Lapwai, Idaho. The daughter was thus, according to the Hiram T. French wording, “the first white child born within the present borders of Idaho, and of those now living, is the first born in the entire Northwest Territory.”  
+On November 15, 1837, Eliza Spalding, wife of the Reverend Henry Harmon Spalding, gave birth to a daughter, also named Eliza. The birth occurred at the Spaldings’ Presbyterian mission at Lapwai, [[Idaho]]. The daughter was thus, according to the Hiram T. French wording, “the first white child born within the present borders of Idaho, and of those now living, is the first born in the entire Northwest Territory.”  
 
 [![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgx7Q0I24IJhtXcgVWbvrkZ8GJPkJZ5OnI0YkCmemd8Q2OYrv1ZIRwLz7_C0PWw8obSk0BkZV5aHagskPG5K6WgaH8N1W44aYW3JoThuNvgxNzkBmlL9aCiMKoPuwDV3i9ObOZUAnV4Yak/s320/SpaldingDau.jpg)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgx7Q0I24IJhtXcgVWbvrkZ8GJPkJZ5OnI0YkCmemd8Q2OYrv1ZIRwLz7_C0PWw8obSk0BkZV5aHagskPG5K6WgaH8N1W44aYW3JoThuNvgxNzkBmlL9aCiMKoPuwDV3i9ObOZUAnV4Yak/s1600-h/SpaldingDau.jpg)
 
@@ -22,3 +22,5 @@ On November 15, 1837, Eliza Spalding, wife of the Reverend Henry Harmon Spalding
 Hiram Taylor French, *History of Idaho: A Narrative Account …*, Lewis Publishing Co., Chicago and New York (1914).  
   
 Jim Gentry, *In the Middle and On the Edge*, College of Southern Idaho (2003).
+
+#idaho

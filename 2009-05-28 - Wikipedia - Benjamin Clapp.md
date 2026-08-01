@@ -9,7 +9,7 @@ created: 2026-07-20
 
 ## Early life and education
 
-At the age of eleven, Clapp began studying [trombone](https://en.wikipedia.org/wiki/Trombone "Trombone") in Idaho public schools. He studied privately under bass trombonist Mark Sellman for a number of years, and was awarded the [Louis Armstrong Award](https://en.wikipedia.org/wiki/Louis_Armstrong_award "Louis Armstrong award") in 1995, as well as performance awards at [Boise State University](https://en.wikipedia.org/wiki/Boise_State_University "Boise State University") and the [Lionel Hampton International Jazz Festival](https://en.wikipedia.org/wiki/Lionel_Hampton_Jazz_Festival "Lionel Hampton Jazz Festival"). Meanwhile, he was self-learning to play drums; influenced early on by drummers [Stewart Copeland](https://en.wikipedia.org/wiki/Stewart_Copeland "Stewart Copeland"), [Lars Ulrich](https://en.wikipedia.org/wiki/Lars_Ulrich "Lars Ulrich"), and [Dale Crover](https://en.wikipedia.org/wiki/Dale_Crover "Dale Crover").[^5]
+At the age of eleven, Clapp began studying [trombone](https://en.wikipedia.org/wiki/Trombone "Trombone") in [[Idaho]] public schools. He studied privately under bass trombonist Mark Sellman for a number of years, and was awarded the [Louis Armstrong Award](https://en.wikipedia.org/wiki/Louis_Armstrong_award "Louis Armstrong award") in 1995, as well as performance awards at [Boise State University](https://en.wikipedia.org/wiki/Boise_State_University "Boise State University") and the [Lionel Hampton International Jazz Festival](https://en.wikipedia.org/wiki/Lionel_Hampton_Jazz_Festival "Lionel Hampton Jazz Festival"). Meanwhile, he was self-learning to play drums; influenced early on by drummers [Stewart Copeland](https://en.wikipedia.org/wiki/Stewart_Copeland "Stewart Copeland"), [Lars Ulrich](https://en.wikipedia.org/wiki/Lars_Ulrich "Lars Ulrich"), and [Dale Crover](https://en.wikipedia.org/wiki/Dale_Crover "Dale Crover").[^5]
 
 ## Career
 
@@ -111,3 +111,5 @@ Among a number of studio projects and touring artists that hire Clapp to perform
 [^10]: Heart on a Stick review of Skeleton Key performance in New York. ["Ugly Americans (Firewater, Cordero/Skeleton Key, Southpaw/Bowery Ballroom, 5/24 & 5/27/08)"](https://web.archive.org/web/20081212023417/http://heartonastick.blog-city.com/mightbecheapbutwerenotfree.htm). Archived from [the original](http://heartonastick.blog-city.com/mightbecheapbutwerenotfree.htm) on 2008-12-12.
 
 [^11]: Amy Atkins (November 21, 2007). ["Skeleton Key, The Adversives, Nov. 24, Neurolux"](http://www.boiseweekly.com/boise/skeleton-key-the-adversives-nov-24-neurolux/Content?oid=934714). *Boise Weekly*.
+
+#idaho

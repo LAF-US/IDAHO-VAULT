@@ -9,7 +9,7 @@ description: "The Boise School District has made a five-year deal with Apple to 
 ---
 ![ICCU](https://static-v2.boisedev.com/assets/748dce9e-e5ec-4fa6-9c85-f6cbe0db4a73.png)
 
-Idaho schools are seeing rapid price increases for Google Chromebooks and other tech after Micron Technology [shifted](https://investors.micron.com/news-releases/news-release-details/micron-announces-exit-crucial-consumer-business) its computer parts business away from consumers and toward AI data centers.
+[[Idaho]] schools are seeing rapid price increases for Google Chromebooks and other tech after Micron Technology [shifted](https://investors.micron.com/news-releases/news-release-details/micron-announces-exit-crucial-consumer-business) its computer parts business away from consumers and toward AI data centers.
 
 School districts are navigating a volatile market as they decide whether to buy, sell or lease classroom laptops that can quickly lose value. Kuna is buying refurbished Chromebooks for $146 apiece while Bonneville is selling four-year-old Chromebooks for $5.
 
@@ -148,3 +148,5 @@ Trustee Nancy Gregory said the switch to Apple allows students to use devices th
 ![City of McCall - Visiting? 2:1](https://static-v2.boisedev.com/assets/57592d17-0c69-4d28-a6e9-c5d629733da1.png)
 
 City of McCall - Visiting? 2:1
+
+#idaho

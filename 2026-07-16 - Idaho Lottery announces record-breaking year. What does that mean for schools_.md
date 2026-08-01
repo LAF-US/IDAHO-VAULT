@@ -7,7 +7,7 @@ published: 2026-07-16
 created: 2026-07-17
 description: "Idaho Lottery dividends go toward public schools and state-owned buildings."
 ---
-The Idaho Lottery returned a $90 million dividend during the 2026 fiscal year, the largest in state history. The funds will go toward Idaho schools and state buildings. In the Capitol on Wednesday, Gov. Brad Little accepted a large paper check addressed to the “people of Idaho."
+The [[Idaho]] Lottery returned a $90 million dividend during the 2026 fiscal year, the largest in state history. The funds will go toward Idaho schools and state buildings. In the Capitol on Wednesday, Gov. Brad Little accepted a large paper check addressed to the “people of Idaho."
 
 Listen to this article
 
@@ -40,3 +40,5 @@ In addition to the dividend, the Idaho Lottery also contributed to hundreds of s
 “Here’s an important untold story about Idaho Lottery players. The Idaho Lottery’s VIP Club players have also made significant contributions to Idaho’s schools this year,” Idaho Lottery Director Andrew Arulanandam said. “They have forgone buying purchasable items or entering sweepstakes for personal gain and instead generously donated to our school based, Do Good programs.”
 
 Want to see more content like this?
+
+#idaho

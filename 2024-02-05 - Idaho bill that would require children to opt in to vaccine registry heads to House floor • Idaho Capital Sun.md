@@ -17,7 +17,7 @@ Photo shows Susan Hinchcliffe, a woman administering a Moderna Covid-19 vaccine 
 
 Susan Hinchcliffe, a volunteer with the Corrales Fire Department, gives Rachel Ralya’s 14-month old son a Moderna COVID-19 vaccine on June 23, 2022, following the FDA authorization of the vaccine for children ages 6 months to 5 years old. (Shelby Wyatt/Source NM)
 
-***Correction:** This story has been corrected to reflect Grace Howat’s quote during public testimony. She said Idaho’s current opt-out practice “intrudes on the privacy of its citizens and undermines parental rights.”*
+***Correction:** This story has been corrected to reflect Grace Howat’s quote during public testimony. She said [[Idaho]]’s current opt-out practice “intrudes on the privacy of its citizens and undermines parental rights.”*
 
 Idaho legislators advanced a bill on Monday that would require parents to opt in to the state’s vaccine registry, rather than Idaho’s existing policy that lets them to opt their children out.
 
@@ -66,3 +66,5 @@ And as a public health professional who’s given thousands of vaccines, she sai
 Rep. Jordan Redman, R-Coeur d’Alene, made a motion that the committee send the bill to the House floor and recommend that it pass. Only the committee’s three Democrats opposed the vote, after a failed motion by House Minority Leader Ilana Rubel, D-Boise, to hold the bill in committee.
 
 [House Bill 397](https://legislature.idaho.gov/sessioninfo/2024/legislation/H0397/) now heads to the House floor, where lawmakers could debate it before sending it through to the Idaho Senate.
+
+#idaho

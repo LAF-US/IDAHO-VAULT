@@ -16,7 +16,7 @@ Tony Foster, Devils Bedstead Looking South South East from the North Fork of the
 
 ### Painting locations: Idaho
 
-During the summer of 2018 Tony returned to one of his favored places to paint: Idaho’s Rocky Mountains. Invited to exhibit at Gail Severn Gallery in Ketchum, Idaho in 2019, Tony wandered and painted in Idaho’s Copper Basin, a wilderness area that is part of the Challis National Forest with spectacular views of the Pioneer Mountains. This Journey was exhibited together with a number of artworks from Tony’s earlier treks in the Great Basin. A major diptych included in the exhibition, *A Walk Across Death Valley* (1991), chronicles one of Foster’s most difficult hikes in what is the lowest point of the Great Basin. It was exhibited alongside a painting from the White Mountains in California, the highest point of the Great Basin.
+During the summer of 2018 Tony returned to one of his favored places to paint: [[Idaho]]’s Rocky Mountains. Invited to exhibit at Gail Severn Gallery in Ketchum, Idaho in 2019, Tony wandered and painted in Idaho’s Copper Basin, a wilderness area that is part of the Challis National Forest with spectacular views of the Pioneer Mountains. This Journey was exhibited together with a number of artworks from Tony’s earlier treks in the Great Basin. A major diptych included in the exhibition, *A Walk Across Death Valley* (1991), chronicles one of Foster’s most difficult hikes in what is the lowest point of the Great Basin. It was exhibited alongside a painting from the White Mountains in California, the highest point of the Great Basin.
 
 ---
 
@@ -34,3 +34,5 @@ During the summer of 2018 Tony returned to one of his favored places to paint: I
 **2019**
 
 - Gail Severn Gallery, Ketchum, Idaho
+
+#idaho

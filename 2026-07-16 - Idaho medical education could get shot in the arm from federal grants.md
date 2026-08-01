@@ -9,7 +9,7 @@ description: "Legislative support seems mixed for dedicating part of Idaho’s r
 ---
 ![Idaho state Rep. Josh Tanner, R-Eagle, talks with colleagues during the Joint Finance-Appropriations Committee meeting on Jan. 7, 2025, at the State Capitol Building in Boise.](https://npr.brightspotcdn.com/dims4/default/230c25d/2147483647/strip/true/crop/300x203+0+0/resize/1760x1190!/format/webp/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Fa6%2F46%2F4755ed1241828724a182405717ba%2F010725statelegistlature2ps094-300x203.jpg)
 
-Idaho state Rep. Josh Tanner, R-Eagle, talks with colleagues during the Joint Finance-Appropriations Committee meeting on Jan. 7, 2025, at the State Capitol Building in Boise.
+[[Idaho]] state Rep. Josh Tanner, R-Eagle, talks with colleagues during the Joint Finance-Appropriations Committee meeting on Jan. 7, 2025, at the State Capitol Building in Boise.
 
 Legislative support seems mixed for dedicating part of Idaho’s rural health transformation grant toward bolstering physician education in the state.
 
@@ -44,3 +44,5 @@ But Rep. Dustin Manwaring (R-Pocatello), who also sits on the rural health commi
 The committee didn’t make a decision on any proposal made by White. It’ll meet again next month.
 
 *Copyright 2026 Boise State Public Radio*
+
+#idaho

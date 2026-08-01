@@ -13,7 +13,7 @@ description: "ABOUT “Go West young man.” A timeless American dream that has 
 
 “Go West young man.” A timeless American dream that has wrapped Ed’s life and art. His stories, born from journal pages, create a narrative of those who live it; wildlife, cowboys, forestry and so many others. This has spilled over to all his travels around the world. It’s easy to see their dreams in the bright colors and bold lines of the finished pieces.
 
-His home and studio in east Boise, Idaho, create a base for the art but the next adventure always awaits. You might find him on a skiff in Florida or rowing a raft down a wild river. Whichever way, there are American stories to tell.
+His home and studio in east Boise, [[Idaho]], create a base for the art but the next adventure always awaits. You might find him on a skiff in Florida or rowing a raft down a wild river. Whichever way, there are American stories to tell.
 
 Drift West then becomes a lifestyle of enjoying the outdoors. And as creative director, Ed lends design and dialogue for the next evolution of enjoying the outdoors. Their pieces reflect the art of the drift and are regularly showcased in the flagship store in McCall, Idaho.
 
@@ -66,3 +66,5 @@ Linen Building, Solo show May 2013, Group show May 2012
 Razzle Dazzle, Represented, multiple showings  
 Brundage Mountain, Interior art 2014-Present  
 Donnie Macs (restaurant), Entire Interior 2008-2013
+
+#idaho

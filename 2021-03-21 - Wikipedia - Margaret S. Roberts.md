@@ -5,7 +5,7 @@ author:
 published: 2021-03-21
 created: 2026-07-20
 ---
-**Margaret Stevenson Roberts** (March 21, 1872 – May 25, 1952) was an American [librarian](https://en.wikipedia.org/wiki/Librarian "Librarian") known as Idaho's "Petticoat Governor" for her influence in advocating for [women's suffrage](https://en.wikipedia.org/wiki/Women's_suffrage "Women's suffrage"). She was the main force behind the Idaho Free Traveling Library for over thirty years, encouraging reading and the establishment of public libraries.
+**Margaret Stevenson Roberts** (March 21, 1872 – May 25, 1952) was an American [librarian](https://en.wikipedia.org/wiki/Librarian "Librarian") known as [[Idaho]]'s "Petticoat Governor" for her influence in advocating for [women's suffrage](https://en.wikipedia.org/wiki/Women's_suffrage "Women's suffrage"). She was the main force behind the Idaho Free Traveling Library for over thirty years, encouraging reading and the establishment of public libraries.
 
 ## Early life and education
 
@@ -56,3 +56,5 @@ In 2020, *[USA Today](https://en.wikipedia.org/wiki/USA_Today "USA Today")* name
 [^10]: ["About"](https://idaholibraries.org/about). *Idaho Library Association*. Retrieved March 21, 2021.
 
 [^11]: ["Veteran Educator Succumbs in Boise"](https://www.newspapers.com/image/15878046/?terms=margaret%20roberts&match=1). *Idaho State Journal*. Pocatello. May 26, 1952. Retrieved March 21, 2021.
+
+#idaho

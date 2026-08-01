@@ -11,7 +11,7 @@ description: "The controversial Caldera Flats subdivision proposal to develop 32
 
 50 Followers
 
-ISLAND PARK, Idaho (KIFI) – The controversial Caldera Flats subdivision proposal to develop 32 lots on 160 acres of Henry’s Lake Flats in Island Park received approval Monday from the Fremont County Commissioners.  
+ISLAND PARK, [[Idaho]] (KIFI) – The controversial Caldera Flats subdivision proposal to develop 32 lots on 160 acres of Henry’s Lake Flats in Island Park received approval Monday from the Fremont County Commissioners.  
   
 The project, owned by Doug and Kevin Button's DK Land LLC in Dillon, Montana, has evoked intense opposition from local residents concerned about the impact on wildlife habitat and environmentally-sensitive land in the Island Park caldera.  
   
@@ -62,3 +62,5 @@ Some Island Parks posted on social media they are considering a lawsuit to delay
 Article Topic Follows: [News](https://localnews8.com/category/news/)
 
 50 Followers
+
+#idaho

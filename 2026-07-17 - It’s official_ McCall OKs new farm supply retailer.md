@@ -21,7 +21,7 @@ On Thursday night, the McCall City Council unanimously voted to approve D&B Supp
 
 City of McCall - Visiting? 2:1
 
-The business will become the newest tenant in the Marketplace at McCall shopping center, which also includes Ridley’s Family Markets, a liquor store, a post office, and Idaho First Bank.
+The business will become the newest tenant in the Marketplace at McCall shopping center, which also includes Ridley’s Family Markets, a liquor store, a post office, and [[Idaho]] First Bank.
 
 [D&B](https://www.dbsupply.com/) was established in 1959 and has 15 locations throughout southwest Idaho and eastern Oregon. The stores carry a lineup of goods that varies by location, but typically includes pet supplies and food, outdoor equipment, power tools, clothing, and hardware. Floorplans indicate the McCall store would also sell guns and ammunition.
 
@@ -72,3 +72,5 @@ None of the businesses included in the analysis qualify as formula businesses, w
 The city’s limitation on formula businesses excludes gas stations and grocery stores.
 
 <iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=REDACTED_GOOGLE_API_KEY&amp;zoom=16&amp;maptype=satellite&amp;q=411+E.+Deinhard+Lane" title="Google map of 411 E. Deinhard Lane"></iframe>
+
+#idaho

@@ -6,7 +6,7 @@ created: 2026-07-16
 ---
 11/2/2021
 
-When you’re Prisoner Number 2 in the Idaho system, maybe you just try harder. Could that explain Moroni Hicks’ persistence in escaping?  
+When you’re Prisoner Number 2 in the [[Idaho]] system, maybe you just try harder. Could that explain Moroni Hicks’ persistence in escaping?  
   
 Hicks’ low number—coveted by criminals everywhere—is a little misleading. He was an early prisoner, but many others weren’t assigned a number in the first years of the prison. The Idaho Territorial Prison had been accepting guests since 1864. Hicks checked in in 1880, convicted of second-degree murder.  
   
@@ -45,3 +45,5 @@ The story concludes tomorrow.
   
 
 Speaking of Idaho history posts are copyright © 2020 by Rick Just. Sharing is encouraged. If you don’t find a button that lets you do that, find the post on Speaking of Idaho. If you’re missing my daily posts, select the RSS button, or select See it First under the Facebook Following tab.
+
+#idaho

@@ -5,7 +5,7 @@ author:
 published: 2026-07-17
 created: 2026-07-20
 ---
-Idaho organizations are investing in students and communities statewide, from scholarships for kids with foster care backgrounds to grants supporting youth programs.
+[[Idaho]] organizations are investing in students and communities statewide, from scholarships for kids with foster care backgrounds to grants supporting youth programs.
 
 This week’s education roundup also includes free financial aid help for families, a summer learning camp for Idaho middle schoolers and a national honor for a Blackfoot speech and debate coach.
 
@@ -72,3 +72,5 @@ Participants also connected with peers and college students.
 The free program included meals, transportation and opportunities for students to connect with peers and current college students. Boise State University and Idaho State University hosted this year’s sessions.
 
 Click [here](https://www.sde.idaho.gov/about-us/departments/federal-programs/title-i-c-migrant-education/#details-training-resources) for more on the state’s migrant education program.
+
+#idaho

@@ -22,7 +22,7 @@ description: "Photo"
 
 ## Description
 
-Made by Rose Frank Basket weaver Rose Frank returned from work at the Portland, Oregon shipyards in World War II. She began learning cornhusk weaving from Ida Blackeagle in 1947. She taught textile arts classes at Lewis-Clark State College in Lewiston, Idaho. In 1991 Frank received a National Heritage Fellowship Award from the National Endowment for the Arts, and said I felt it was important to keep the tradition going. Twined. Cornhusk, cotton twine, acrylic yarn. H 16, Dia 14.5 cm Nez Perce National Historical Park, NEPE 34057
+Made by Rose Frank Basket weaver Rose Frank returned from work at the Portland, Oregon shipyards in World War II. She began learning cornhusk weaving from Ida Blackeagle in 1947. She taught textile arts classes at Lewis-Clark State College in Lewiston, [[Idaho]]. In 1991 Frank received a National Heritage Fellowship Award from the National Endowment for the Arts, and said I felt it was important to keep the tradition going. Twined. Cornhusk, cotton twine, acrylic yarn. H 16, Dia 14.5 cm Nez Perce National Historical Park, NEPE 34057
 
 ## Credit
 
@@ -31,3 +31,5 @@ Nez Perce National Historical Park, NEPE 34057
 ## Copyright and Usage Info
 
 Multimedia credited to NPS without any copyright symbol are [public domain](http://www.usa.gov/copyright.shtml). Multimedia credited with a copyright symbol (indicating that the creator may maintain rights to the work) or credited to any entity other than NPS must not be presumed to be public domain; contact the host park or program to ascertain who owns the material.
+
+#idaho

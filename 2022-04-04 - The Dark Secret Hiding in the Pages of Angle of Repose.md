@@ -47,7 +47,7 @@ It bothered me in 1998, and it more than bothers me now. For far too long, the a
 
 *This article appears in the Spring 2022 issue of* Alta Journal*.*
 
-But lying there beside Tom, plotting how to successfully bring *Angle of Repose* to the stage, I brushed away the idea that Stegner might be one of those men who’d arrogate a woman’s work as his own. How could that be the case with the characters who dominate his novel? The Wards are perpetually on the move as Oliver’s career as a mining engineer takes him to California and Mexico and Colorado. They hang out with historical luminaries like geologist Clarence King and author Helen Hunt Jackson. Not to mention that tragic, awful decade in Boise, Idaho, as Oliver tries and fails to bring water to arid lands. Of course Stegner had invented those extraordinary lives and those bold, courageous characters. All that couldn’t possibly be real.
+But lying there beside Tom, plotting how to successfully bring *Angle of Repose* to the stage, I brushed away the idea that Stegner might be one of those men who’d arrogate a woman’s work as his own. How could that be the case with the characters who dominate his novel? The Wards are perpetually on the move as Oliver’s career as a mining engineer takes him to California and Mexico and Colorado. They hang out with historical luminaries like geologist Clarence King and author Helen Hunt Jackson. Not to mention that tragic, awful decade in Boise, [[Idaho]], as Oliver tries and fails to bring water to arid lands. Of course Stegner had invented those extraordinary lives and those bold, courageous characters. All that couldn’t possibly be real.
 
 ![mary hallock foote](https://hips.hearstapps.com/hmg-prod/images/mary-hallock-foote-1645741300.jpg?resize=980:* "mary hallock foote")
 
@@ -236,3 +236,5 @@ This site is protected by reCAPTCHA and the Google [Privacy Policy](https://poli
 ### Thanks for signing up!
 
 Welcome to Alta Live.
+
+#idaho

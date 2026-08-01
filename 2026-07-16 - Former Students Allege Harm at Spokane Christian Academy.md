@@ -81,7 +81,7 @@ What is not included on the website is that the organization that accredited the
 
 ## History of the ACCS and its connection to Pete Hegseth
 
-Founded in 1993 in Moscow, Idaho, the ACCS is currently headquartered there along with Wilson’s church, a school, a college, a seminary and a publishing house — all of which he founded.
+Founded in 1993 in Moscow, [[Idaho]], the ACCS is currently headquartered there along with Wilson’s church, a school, a college, a seminary and a publishing house — all of which he founded.
 
 The U.S. Secretary of Defense Pete Hegseth co-wrote a book with ACCS President David Goodwin titled “ [Battle for the American Mind: Uprooting a Century of Miseducation](https://www.amazon.com/Battle-American-Mind-Uprooting-Miseducation/dp/0063215047/ref=tmm_hrd_swatch_0?_encoding=UTF8&qid=1650090081&sr=8-1),” which advances a conservative Christian view of education.
 
@@ -180,3 +180,5 @@ The Oaks administration did not respond to FāVS News’ request for a comment.
 ---
 
 [***FāVS News***](https://favs.news/newsletters/) ***uses*** [***professional journalists***](https://favs.news/news/) ***and*** [***thoughtful commentary***](https://favs.news/commentary/) ***to explore faith, values and ethics. Support journalism like this by making a tax-deductible*** [***donation***](https://favs.news/donate-to-favs-news/)***. FāVS is a 501(c)(3) nonprofit. © FāVS News. All rights reserved. Reproduction permitted only to authorized media partners or with written permission.***
+
+#idaho

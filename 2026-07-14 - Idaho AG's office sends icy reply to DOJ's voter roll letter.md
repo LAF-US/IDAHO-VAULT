@@ -9,7 +9,7 @@ description: "The Idaho Attorney General’s Office didn’t take kindly to the 
 ---
 ![Secretary of State candidate and current Ada County Clerk Phil McGrane is pictured during the Idaho Republican Party 2022 General Election Night Celebration held at The Grove Hotel in Boise, Idaho. ](https://npr.brightspotcdn.com/dims4/default/7cd47f9/2147483647/strip/true/crop/5472x3648+0+0/resize/1760x1174!/format/webp/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F88%2F4c%2F018852e248a0b13a24dffaea24cc%2Fap22313201609233.jpg)
 
-Secretary of State candidate and current Ada County Clerk Phil McGrane is pictured during the Idaho Republican Party 2022 General Election Night Celebration held at The Grove Hotel in Boise, Idaho.
+Secretary of State candidate and current Ada County Clerk Phil McGrane is pictured during the [[Idaho]] Republican Party 2022 General Election Night Celebration held at The Grove Hotel in Boise, Idaho.
 
 The Idaho Attorney General’s Office didn’t take kindly to the latest insinuations by the federal government that the state’s elections aren’t up to snuff.
 
@@ -38,3 +38,5 @@ Craig outlined a few suggestions, including dismissing its lawsuit against the s
 “We all have the same goals here—to ensure that Idaho’s elections are free, fair, and transparent, and that Idaho’s voter registration list includes only U.S. Citizens and that only eligible U.S. Citizens vote in Idaho’s elections.”
 
 *Copyright 2026 Boise State Public Radio*
+
+#idaho

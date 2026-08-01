@@ -6,7 +6,7 @@ author:
 published: 2025-10-11
 created: 2026-07-16
 ---
-On the night of October 11, 1863, conspirators murdered packer Lloyd Magruder and four other men. The killings took place on the South Nez Percé Trail. The Trail – now also called the Magruder Corridor – twists crazily through the deep Central Idaho wilderness to cross a regional divide into Montana at Nez Percé Pass.  
+On the night of October 11, 1863, conspirators murdered packer Lloyd Magruder and four other men. The killings took place on the South Nez Percé Trail. The Trail – now also called the Magruder Corridor – twists crazily through the deep Central [[Idaho]] wilderness to cross a regional divide into Montana at Nez Percé Pass.  
 ![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhESRvZ-WGEn8fd5Gztav-13EUO6aqzGzhdPCsqmN63ly6k__ikPZpHGa-a7pDZV_uBimOa8EER_f9cPClgV4oJWhkuvN1WHS8fkacWJ6shAcLQzV91D1RePcSZfbcix-lrPr90Nxswn_w/s320/MagruderTrail.jpg) Magruder Corridor segment. U. S. Forest Service.  
 Scion of a prominent Maryland family, Lloyd Magruder had fought in the Mexican War and earned a promotion from private to second lieutenant. He resigned that commission to try his hand in the California gold fields. Bad luck reversed his initial success, so he moved to Lewiston, Idaho in July, 1862.  
   
@@ -27,3 +27,5 @@ Beachy passed a warning to the other passengers and watched them leave the next 
 Beachy's pursuit of the men became the stuff of legend, as he just missed them when they sailed from Portland on a coastal packet. Beachy had to race overland to apprehend the killers in San Francisco. He then returned them to Idaho for trial and execution.  
   
 References: \[B&W\], \[Illust-North\]Julia Conway Welch, *The Magruder Murders: Coping with Violence on the Idaho Frontier,* Falcon Press Publishing, Helena, Montana (© Julia Conway Welch, 1991).
+
+#idaho

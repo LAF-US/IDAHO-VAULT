@@ -23,7 +23,7 @@ In 1998, the [United States Mint](https://en.wikipedia.org/wiki/United_States_Mi
 
 Teton toured the country extensively to promote the new dollar coin's introduction and as a motivational speaker to encourage [Native American](https://en.wikipedia.org/wiki/Indigenous_peoples_of_the_Americas "Indigenous peoples of the Americas") education. Teton has stated that, "the image doesn't represent me, it represents all Native American women. All women have the dignity of the Golden Dollar's image." [^2]
 
-Teton currently serves as the public information officer for the Shoshone-Bannock Tribes in southeastern Idaho. She continues to make public appearance as Sacagawea to bring attention to American Indian and Alaska Native issues and concerns.
+Teton currently serves as the public information officer for the Shoshone-Bannock Tribes in southeastern [[Idaho]]. She continues to make public appearance as Sacagawea to bring attention to American Indian and Alaska Native issues and concerns.
 
 ## Notes
 
@@ -40,3 +40,5 @@ Teton currently serves as the public information officer for the Shoshone-Bannoc
 [^1]: [Sacagawea coin model speaks in Los Alamos July 23](http://www.lanl.gov/orgs/pa/newsbulletin/2002/07/09/text01.shtml) [Archived](https://web.archive.org/web/20120302090016/http://www.lanl.gov/orgs/pa/newsbulletin/2002/07/09/text01.shtml) 2 March 2012 at the [Wayback Machine](https://en.wikipedia.org/wiki/Wayback_Machine "Wayback Machine") *Los Alamos National Laboratory News Bulletin*, 9 July 2002.
 
 [^2]: [Randy'L He-Dow Teton Inspired the Coin's Design.](https://web.archive.org/web/20021228081745/http://www.defenselink.mil/specials/nativeamerican01/model.html) *American Indian Heritage Month.* (retrieved 26 May 2009)
+
+#idaho

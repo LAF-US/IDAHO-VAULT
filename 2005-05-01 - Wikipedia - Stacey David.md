@@ -11,7 +11,7 @@ The types of vehicles David works on range from off-road [four wheel drives](htt
 
 ## Early life and education
 
-Stacey David was born on January 11, 1963 [^3] and raised in Idaho. He earned his reputation in the [hot rod](https://en.wikipedia.org/wiki/Hot_rod "Hot rod") club driving a [1930 5-window Coupe](https://en.wikipedia.org/wiki/Ford_Model_A_\(1927-1931\) "Ford Model A (1927-1931)") to school every day. David has had a fascination for motor vehicles for as long as he can remember.
+Stacey David was born on January 11, 1963 [^3] and raised in [[Idaho]]. He earned his reputation in the [hot rod](https://en.wikipedia.org/wiki/Hot_rod "Hot rod") club driving a [1930 5-window Coupe](https://en.wikipedia.org/wiki/Ford_Model_A_\(1927-1931\) "Ford Model A (1927-1931)") to school every day. David has had a fascination for motor vehicles for as long as he can remember.
 
 By installing 440cc [snowmobile](https://en.wikipedia.org/wiki/Snowmobile "Snowmobile") engines, he was able to make his [go-karts](https://en.wikipedia.org/wiki/Go-karts "Go-karts") lightning fast even before he was a teenager. At the age of twelve, he did his first restoration: his sister's 1963 [Volkswagen Beetle](https://en.wikipedia.org/wiki/Volkswagen_Beetle "Volkswagen Beetle"). His father's flat fender [Willys](https://en.wikipedia.org/wiki/Willys "Willys") [Jeep](https://en.wikipedia.org/wiki/Jeep "Jeep") started his passion for [Four Wheel Drive](https://en.wikipedia.org/wiki/Four_Wheel_Drive "Four Wheel Drive") and [off-roading](https://en.wikipedia.org/wiki/Off-roading "Off-roading").
 
@@ -52,3 +52,5 @@ David is a [Christian](https://en.wikipedia.org/wiki/Christianity "Christianity"
 [^4]: ["Official Website of Stacey David and GearZ TV"](http://staceydavid.com/). *StaceyDavid.com*. Retrieved February 6, 2026.
 
 [^5]: [*Stacey David's Gearz*](https://staceydavid.com/node/2712), retrieved 2022-04-20
+
+#idaho

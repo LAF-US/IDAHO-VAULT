@@ -12,7 +12,7 @@ Filed Under [Labor, Industry, and Economics](https://www.intermountainhistories.
 
 ![Leesburg, Idaho](https://www.intermountainhistories.org/files/fullsize/d2d3a52593bbb82ec75f0d06b6e38da4.jpg)
 
-Leesburg, Idaho These are among the first buildings built in Leesburg, Idaho. By the time this photo was taken, though, Leesburg’s population was already declining. Source: “Buildings, Leesburg, Idaho.” A.F. Thrasher, 1870. Courtesy of the Idaho State Historical Society. https://idahohistory.contentdm.oclc.org/digital/collection/p265501coll1/id/748. Creator: A.F. Thrasher
+Leesburg, [[Idaho]] These are among the first buildings built in Leesburg, Idaho. By the time this photo was taken, though, Leesburg’s population was already declining. Source: “Buildings, Leesburg, Idaho.” A.F. Thrasher, 1870. Courtesy of the Idaho State Historical Society. https://idahohistory.contentdm.oclc.org/digital/collection/p265501coll1/id/748. Creator: A.F. Thrasher
 
 Only a year prior, these Civil War veterans had fought on opposing sides. But the promise of gold made for strange bedfellows.
 
@@ -69,3 +69,5 @@ Old schoolhouse This building used to be a schoolhouse for children in Leesburg.
 © [CARTO](https://carto.com/about-carto/), © [OpenStreetMap](http://www.openstreetmap.org/about/) contributors
 
 This marks Leesburg. The ghost town is still there physically, but most buildings are in a state of significant decay.
+
+#idaho

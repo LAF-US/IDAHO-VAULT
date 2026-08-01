@@ -10,7 +10,7 @@ description: "Law enforcement officers said during legislative hearings the bill
 ---
 ![Signs are poseted outside the Santee High School's gender neutral restrooms at their campus in Los Angeles, California on May 4, 2016. There is an "emerging consensus worldwide" that the LGBT community should enjoy the same rights as everyone else, Washington's first envoy for gay rights said, but warned transgender people are still too often victims of violence. (Photo by Mark Ralston / AFP via Getty Images)](https://www.idahostatesman.com/public/latest-news/66egt0/picture315566117/alternates/LANDSCAPE_1200/528313654-GI.JPG)
 
-Idaho’s new bathroom law will create some difficult enforcement decisions, police say. AFP via Getty Images
+[[Idaho]]’s new bathroom law will create some difficult enforcement decisions, police say. AFP via Getty Images
 
 Listen to this article
 
@@ -103,3 +103,5 @@ During the legislative session, Dahlinger said state law already gives law enfor
 Want to see more content like this?
 
 <iframe allow="clipboard-write; web-share" src="chrome-extension://cnjifjpddelmedmihgijeibhnjfabmlf/side-panel.html?context=iframe"></iframe>
+
+#idaho

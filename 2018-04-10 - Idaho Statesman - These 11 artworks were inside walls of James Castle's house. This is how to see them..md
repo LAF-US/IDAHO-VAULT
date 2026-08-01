@@ -9,7 +9,7 @@ James Castle was an artist who lived in Garden City producing unusual pieces of 
 
 Listen to this article
 
-When the restored and expanded James Castle House opens to the public on Saturday, April 28, its attractions will include a major exhibition of 61 works by the Idaho-born artist, some of which have never been seen by the public before.
+When the restored and expanded James Castle House opens to the public on Saturday, April 28, its attractions will include a major exhibition of 61 works by the [[Idaho]]-born artist, some of which have never been seen by the public before.
 
 They will remain on public display for a year. They will belong to the city of Boise forever.
 
@@ -68,3 +68,5 @@ CASTLE-RELATED EVENTS
 This story was originally published April 10, 2018 at 10:24 AM with the headline ["These 11 artworks were inside walls of James Castle's house. This is how to see them.."](http://www.idahostatesman.com/news/local/article208456679.html)
 
 Want to see more content like this?
+
+#idaho

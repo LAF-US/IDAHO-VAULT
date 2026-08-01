@@ -9,7 +9,7 @@ description: "Doors of history are open"
 ---
 ![](https://hagadone.media.clients.ellingtoncms.com/img/photos/2023/03/30/museumopen_tx65_fblur.jpg?a2a11ddd68fbcb3ee025828f3bbdf2e1f0686756)
 
-Museum of North Idaho Executive Director Britt Thurman stands by a Joe Breckenridge painting on Thursday. The painting will be in a featured exhibit when the museum opens Saturday.  
+Museum of North [[Idaho]] Executive Director Britt Thurman stands by a Joe Breckenridge painting on Thursday. The painting will be in a featured exhibit when the museum opens Saturday.  
 BILL BULEY/Press
 
 ![](https://hagadone.media.clients.ellingtoncms.com/img/photos/2023/03/30/_JP_6531_t1170.JPG?5cc718665ab672dba93d511ab4c682bb370e5f86)
@@ -73,3 +73,5 @@ BILL BULEY/Press
 A Joe Breckenridge painting is one of several that will be on display at the Museum of North Idaho.
 
 Editor's note: This story has been edited to reflect the correct amount that has been raised for the museum's new home.
+
+#idaho

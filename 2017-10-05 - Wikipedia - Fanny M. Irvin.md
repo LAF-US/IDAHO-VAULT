@@ -5,7 +5,7 @@ author:
 published: 2017-10-05
 created: 2026-07-20
 ---
-**Fanny Marie Irvin** (January 15, 1854 - September 26, 1929) was librarian of the Idaho State Law Library, and assisted in drafting several important legislative acts. She drafted a resolution to Congress from the state of Idaho endorsing women's suffrage, and campaigned for the passage of the [Nineteenth Amendment to the United States Constitution](https://en.wikipedia.org/wiki/Nineteenth_Amendment_to_the_United_States_Constitution "Nineteenth Amendment to the United States Constitution"), granting the right to vote to women.
+**Fanny Marie Irvin** (January 15, 1854 - September 26, 1929) was librarian of the [[Idaho]] State Law Library, and assisted in drafting several important legislative acts. She drafted a resolution to Congress from the state of Idaho endorsing women's suffrage, and campaigned for the passage of the [Nineteenth Amendment to the United States Constitution](https://en.wikipedia.org/wiki/Nineteenth_Amendment_to_the_United_States_Constitution "Nineteenth Amendment to the United States Constitution"), granting the right to vote to women.
 
 ## Early life
 
@@ -26,3 +26,5 @@ Fanny M. Irvin lived in New York City, New Mexico, Chicago, Washington, D. C, an
 [^2]: Binheim, Max; Elvin, Charles A (1928). [*Women of the West; a series of biographical sketches of living eminent women in the eleven western states of the United States of America*](https://archive.org/details/womenofwestserie00binh). p. [123](https://archive.org/details/womenofwestserie00binh/page/123). This article incorporates text from this source, which is in the [public domain](https://en.wikipedia.org/wiki/Public_domain "Public domain").
 
 [^3]: "Miss Fanny Irvin Called by Death At Her Home Here". *Idaho Statesman*. 15 October 1929. p. 9.
+
+#idaho

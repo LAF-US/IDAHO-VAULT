@@ -11,7 +11,7 @@ A crowd of more than 80 community members, teachers, parents and former students
 
 Meeting attendees included members of the Concerned Citizens for LPOHS Coalition, which filed an official grievance with LPOSD on June 30, demanding that they halt efforts to relocate the school from its 117-year-old building on 1005 North Boyer Ave., in Sandpoint.
 
-The 31-page document and subsequent conditional settlement offer alleged misuse of public funds, attendance and graduation data fraud, and violations of Idaho Open Meeting Law and the Individuals with Disabilities Education Act, among other claims. The group further threatened the board of trustees with recall efforts should they vote on the relocation without first holding a special public hearing on the issue.
+The 31-page document and subsequent conditional settlement offer alleged misuse of public funds, attendance and graduation data fraud, and violations of [[Idaho]] Open Meeting Law and the Individuals with Disabilities Education Act, among other claims. The group further threatened the board of trustees with recall efforts should they vote on the relocation without first holding a special public hearing on the issue.
 
 The district has repeatedly denied the coalition’s allegations, citing past agendas and fiscal and attendance audits. Still, at the request of the coalition, the Idaho Department of Education is currently conducting an additional audit of the district’s PowerSchool Student Information System metadata.
 
@@ -56,3 +56,5 @@ The board voted unanimously to relocate LPOHS. As of press time, the coalition h
 ### Want to support independent local journalism?
 
 The Sandpoint Reader is our town's local, independent weekly newspaper. "Independent" means that the Reader is locally owned and operated by people who were born and raised in Sandpoint. The Reader is owned by Publisher Ben Olson, Editor-in-Chief Zach Hagadone and Senior Writer Soncirey Mitchell. **==Sandpoint Reader LLC is a completely independent business unit; no big newspaper group or corporate conglomerate or billionaire owner dictates our editorial policy.==** And we want the news, opinion and lifestyle stories we report to be freely available to all interested readers - so unlike many other newspapers and media websites, we have NO PAYWALL on our website. The Reader relies wholly on the support of our valued advertisers, as well as readers who voluntarily contribute. **==Want to ensure that local, independent journalism survives in our town? You can help support the Reader for as little as $1.==**
+
+#idaho

@@ -9,7 +9,7 @@ created: 2026-07-20
 
 ## Biography
 
-Charlotte Lamberton was born in Idaho to Ethel (née Clark) Lamberton and Frank Lamberton, an insurance broker.[^1] At age 2, the family lived in [Mountain Home, Idaho](https://en.wikipedia.org/wiki/Mountain_Home,_Idaho "Mountain Home, Idaho").[^2] She had two brothers, Henry (Charles) and Jack who was killed in a train accident in 1931.[^3] Both Charlotte and Charles were born deaf.[^4] They were not allowed to learn [sign language](https://en.wikipedia.org/wiki/Sign_language "Sign language") but instead were homeschooled in [oralism](https://en.wikipedia.org/wiki/Oralism "Oralism") by their mother and attended [Los Angeles Day School for the Deaf](https://en.wikipedia.org/wiki/Los_Angeles_Day_School_for_the_Deaf?action=edit&redlink=1 "Los Angeles Day School for the Deaf (page does not exist)").[^5] Both learned to speak and sign as they got older.[^4]
+Charlotte Lamberton was born in [[Idaho]] to Ethel (née Clark) Lamberton and Frank Lamberton, an insurance broker.[^1] At age 2, the family lived in [Mountain Home, Idaho](https://en.wikipedia.org/wiki/Mountain_Home,_Idaho "Mountain Home, Idaho").[^2] She had two brothers, Henry (Charles) and Jack who was killed in a train accident in 1931.[^3] Both Charlotte and Charles were born deaf.[^4] They were not allowed to learn [sign language](https://en.wikipedia.org/wiki/Sign_language "Sign language") but instead were homeschooled in [oralism](https://en.wikipedia.org/wiki/Oralism "Oralism") by their mother and attended [Los Angeles Day School for the Deaf](https://en.wikipedia.org/wiki/Los_Angeles_Day_School_for_the_Deaf?action=edit&redlink=1 "Los Angeles Day School for the Deaf (page does not exist)").[^5] Both learned to speak and sign as they got older.[^4]
 
 Charlotte took dancing lessons starting at five years old because her mother wanted to "make \[her\] normal like other kids.[^6] She would often dance with her brother Charles but when he became a teenager he was diagnosed with a weak heart and Charlotte mostly danced alone.[^5] The family moved to Southern California and she started performing professionally in Hollywood when she was eleven.[^6] By 1930, the family lived in [Long Beach](https://en.wikipedia.org/wiki/Long_Beach,_California "Long Beach, California").[^7] When she was fourteen, she was being billed in stage shows as "The Exquisite Charlotte." [^8]
 
@@ -60,3 +60,5 @@ Lamberton's last show was in Alaska in 1948, where she was on a four-month tour.
 [^19]: ["Charlotte Frances Lamberton Marriage - California, County Marriages, 1850-1952"](https://www.familysearch.org/ark:/61903/1:1:K8KY-QGB). *FamilySearch.org*. Retrieved 2023-04-28.
 
 [^20]: ["Edwin Drolet Death - United States Social Security Death Index"](https://www.familysearch.org/ark:/61903/1:1:JLSC-4ZV). *FamilySearch.org*. Retrieved 2023-04-28.
+
+#idaho

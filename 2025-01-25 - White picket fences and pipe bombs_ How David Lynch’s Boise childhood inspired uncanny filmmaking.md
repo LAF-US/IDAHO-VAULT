@@ -9,7 +9,7 @@ description: "David Lynch, the director of cult classics such as Twin Peaks, Mul
 ---
 ***This story was originally published on January 24, 2025.***
 
-David Lynch, the director of cult classics such as Twin Peaks, Mulholland Drive and Eraserhead passed away last week. Known for his cryptic storytelling, surrealist imagery, and eerie moodiness, the filmmaker’s career was defined by a distinct visual style, perhaps shaped by his childhood in suburban Idaho.
+David Lynch, the director of cult classics such as Twin Peaks, Mulholland Drive and Eraserhead passed away last week. Known for his cryptic storytelling, surrealist imagery, and eerie moodiness, the filmmaker’s career was defined by a distinct visual style, perhaps shaped by his childhood in suburban [[Idaho]].
 
 In his 1986 neo-noir thriller, Blue Velvet, the main character [finds a moldy severed ear in a field](https://www.youtube.com/watch?v=BeYx_CBH700). In an interview published in the book *Lynch on Lynch*, the director said he first imagined this scene happening in Boise. Mixing vintage pop music with images of white picket fence americana, the movie is an unnerving study of the 1950s.
 
@@ -84,3 +84,5 @@ The director moved to Virginia when he was in eighth grade but returned to Boise
 In August of 2024, Lynch told the magazine [Sight and Sound](https://www.bfi.org.uk/sight-and-sound/news/sight-sound-september-2024-issue) he was diagnosed with emphysema. He died at the age of 78.
 
 *The audio version of this story features the titular 1950 song by Bobby Vinton used in the Blue Velvet movie soundtrack, as well as music composed by Angelo Badalamenti for Lynch’s 2001 Mulholland Drive. Excerpts from the director’s memoir are voiced by James Baker.*
+
+#idaho

@@ -44,7 +44,11 @@ The state. All appropriations flow through the Idaho state government.
 *Registered by address_poc.py — run POC-20260404-214321, 2026-04-04*
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #idaho
+=======
+#idaho
+>>>>>>> 4d3d06e2fac5b12be035d897a4635d9be5baf1bd
 =======
 #idaho
 >>>>>>> 4d3d06e2fac5b12be035d897a4635d9be5baf1bd
