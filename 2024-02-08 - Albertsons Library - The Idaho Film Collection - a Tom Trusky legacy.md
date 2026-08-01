@@ -9,7 +9,7 @@ created: 2026-07-21
 
 It’s a phenomenal story about a professor in search of preserving artifacts, a beautiful woman assisting him, and a run-in with the Soviets. Sounds like an Indiana Jones film, huh? Not quite. This is not Hollywood fiction, but a true story at the heart of the [Idaho Film Collection](https://archiveswest.orbiscascade.org/ark:80444/xv529889?q=trusky), a fabulous archival collection now available for research in Albertsons Library’s [special collections and archives](https://www.boisestate.edu/archives/).
 
-Former English professor [Tom Trusky](https://archiveswest.orbiscascade.org/ark:80444/xv03344), an expert historian on Idaho filmmaking, made it his mission to seek out lost relics of film and other related materials specifically connected to Idaho. In 1987, while searching for lost movies by silent film star/producer [Nell Shipman](https://archiveswest.orbiscascade.org/ark:80444/xv03213?q=trusky), Trusky discovered the Soviet Archives held two surviving reels of *Told in the Hills*. Shot in 1919, *Told in the Hills* was, at the time, believed to be the first feature-film made in Idaho. The film also realistically depicted the Nez Perce Indians who were cast, and involved, in the production, something unheard of at the time.
+Former English professor [Tom Trusky](https://archiveswest.orbiscascade.org/ark:80444/xv03344), an expert historian on [[Idaho]] filmmaking, made it his mission to seek out lost relics of film and other related materials specifically connected to Idaho. In 1987, while searching for lost movies by silent film star/producer [Nell Shipman](https://archiveswest.orbiscascade.org/ark:80444/xv03213?q=trusky), Trusky discovered the Soviet Archives held two surviving reels of *Told in the Hills*. Shot in 1919, *Told in the Hills* was, at the time, believed to be the first feature-film made in Idaho. The film also realistically depicted the Nez Perce Indians who were cast, and involved, in the production, something unheard of at the time.
 
 ## Marilyn Monroe seals the deal
 
@@ -30,3 +30,5 @@ Trusky’s IFC efforts were aided by a generous bequest from the estate of Idaho
 Special collections continues to collect materials related to Idaho film history. Email Cheryl Oestreicher, head of special collections and archives, at cheryloestreicher@boisestate.edu for more information.
 
 by Bryan Cottle, temporary processing archivist, Special Collections and Archives
+
+#idaho

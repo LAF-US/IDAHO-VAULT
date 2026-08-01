@@ -5,7 +5,7 @@ author:
 published: 2008-08-27
 created: 2026-07-20
 ---
-**Kim Barnes** (born 1958 in [Lewiston, Idaho](https://en.wikipedia.org/wiki/Lewiston,_Idaho "Lewiston, Idaho")) is a contemporary American author of fiction, memoir, and personal essays.[^1] She served as Poet Laureate of Idaho.
+**Kim Barnes** (born 1958 in [Lewiston, Idaho](https://en.wikipedia.org/wiki/Lewiston,_Idaho "Lewiston, Idaho")) is a contemporary American author of fiction, memoir, and personal essays.[^1] She served as Poet Laureate of [[Idaho]].
 
 ## Life
 
@@ -67,3 +67,5 @@ She is the recipient of two grants from the Idaho Commission on the Arts. In 199
 [^9]: ["Kim Barnes"](https://www.pw.org/content/kim_barnes). *Poets & Writers*. 28 September 2008. [Archived](https://web.archive.org/web/20171011072436/https://www.pw.org/content/kim_barnes) from the original on 11 Oct 2017. Retrieved 20 Jan 2019.
 
 [^10]: ["Loyal to the Land. Idaho's writer-in-residence Kim Barnes"](http://www.boiseweekly.com/boise/loyal-to-the-land/Content?oid=922500). 1 Jun 2005. [Archived](https://web.archive.org/web/20130316075657/https://www.boiseweekly.com/boise/loyal-to-the-land/Content?oid=922500) from the original on 16 Mar 2013. Retrieved 20 Jan 2019.
+
+#idaho

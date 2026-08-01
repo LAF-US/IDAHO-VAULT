@@ -7,7 +7,7 @@ published: 2021-09-20
 created: 2026-07-22
 description: "Roy Reynolds died September 17 at EIRMC after a fall at home. Roy was born in Idaho Falls on January 18, 1941, the child of Von and Wanda Reynolds. Roy first expressed his artistic vision as a child b"
 ---
-Roy Reynolds died September 17 at EIRMC after a fall at home. Roy was born in Idaho Falls on January 18, 1941, the child of Von and Wanda Reynolds. Roy first expressed his artistic vision as a child by drawing on the walls at home. He continued developing his artistic talent in high school where he studied with Helen Aupperle.  
+Roy Reynolds died September 17 at EIRMC after a fall at home. Roy was born in [[Idaho]] Falls on January 18, 1941, the child of Von and Wanda Reynolds. Roy first expressed his artistic vision as a child by drawing on the walls at home. He continued developing his artistic talent in high school where he studied with Helen Aupperle.  
   
 Growing up in Idaho Falls, Roy became acquainted with the colorful, eccentric characters who would later become central to many of his pieces. Roy earned a scholarship to the Art Center School of Los Angeles where he gained experience in commercial art, but the glittering, fast paced, and hectic lifestyle held no appeal for Roy.  
   
@@ -29,3 +29,5 @@ Condolences can be sent to the family at .
   
 
 ![](https://cache.legacy.net/legacy/images/cobrands/postregister/logos/local_1551_wfhnewlogo.jpg)
+
+#idaho

@@ -11,7 +11,7 @@ description: "A North Idaho city police department is the first in the state to 
 
 An ICE agent detains an immigrant on June 4 at Seattle Immigration Court. (Nick Wagner/The Seattle Times/TNS)
 
-A North Idaho city police department is the first in the state to contract with ICE to help with federal immigration enforcement as fallout over President Donald Trump’s deportation strategies intensifies.
+A North [[Idaho]] city police department is the first in the state to contract with ICE to help with federal immigration enforcement as fallout over President Donald Trump’s deportation strategies intensifies.
 
 The Post Falls Police Department this month announced it had signed an agreement with U.S. Immigration and Customs Enforcement, more technically known as a “287(g)” program, which allows city officers to enforce federal immigration law.
 
@@ -78,3 +78,5 @@ Mondragón believes having children of immigrants working for the police departm
 “We had to assimilate to a mainstream culture that didn’t like our otherness. I think because time has passed and we have progressed, there are folks that can be seen as successful and there are role models,” Mondragón said. “But some people in power that might have an immigrant background, I think a lot of them forget where they come from. We don’t have to assimilate anymore.
 
 ---
+
+#idaho

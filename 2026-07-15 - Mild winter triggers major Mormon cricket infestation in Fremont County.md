@@ -7,7 +7,7 @@ published: 2026-07-15
 created: 2026-07-17
 description: "Fremont County officials are battling a widespread Mormon cricket infestation attributed to mild winter temperatures, with the state deploying over 25,000 pounds of bait to protect local crops."
 ---
-ST. ANTHONY, Idaho (KIFI) — Fremont County is currently experiencing a widespread Mormon cricket infestation, a situation local officials attribute to recent mild winter temperatures. This marks the first time in many years the county has faced such an extensive cricket problem.
+ST. ANTHONY, [[Idaho]] (KIFI) — Fremont County is currently experiencing a widespread Mormon cricket infestation, a situation local officials attribute to recent mild winter temperatures. This marks the first time in many years the county has faced such an extensive cricket problem.
 
 Bryce Fowler, Fremont County Weed Control Specialist, confirmed this is the first infestation of this scale the county has seen in a long time. He noted that these crickets are native to Idaho and their increased numbers are due to a lack of cold winters. To combat the issue, the state Department of Agriculture has deployed more than 25,000 pounds of bait in Fremont County to protect local crops.
 
@@ -22,3 +22,5 @@ For homeowners, specific barrier products can be sprayed to slow crickets down f
 The state offers assistance through specialists, including an individual overseeing the [statewide Mormon cricket program](https://invasivespecies.idaho.gov/grasshopper). “The state is willing to help where they can,” Fowler stated.
 
 The long-term outlook for managing the cricket population in Fremont County largely depends on upcoming winter conditions. A harsh Idaho winter is considered the most effective natural control.
+
+#idaho

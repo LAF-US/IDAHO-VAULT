@@ -7,7 +7,7 @@ created: 2026-07-20
 ---
 ## Idaho Republicans advance stricter immigration laws
 
-(Photo courtesy of the Idaho Legislature)
+(Photo courtesy of the [[Idaho]] Legislature)
 
 In Idaho, a group of Republican lawmakers are pushing for stricter immigration laws, even as some national leaders suggest the party take a softer approach to avoid alienating voters in the midterm elections.
 
@@ -18,3 +18,5 @@ They also want to conduct audits to see how many illegal immigrants are in Idaho
 *Follow Seattle Red on-air at 770 AM, on the [Seattle Red app](https://seattlered.com/get-the-seattle-red-app), and streaming [audio](https://tuner.bonneville.com/live/KTTH-AM) and [video](https://seattlered.com/watch) on [SeattleRed.com](https://seattlered.com/).*
 
 [![](https://cdn.mynorthwest.com/mynw/wp-content/uploads/2025/03/MYNWContests-White830x100.jpg)](https://seattlered.com/newsletters)
+
+#idaho

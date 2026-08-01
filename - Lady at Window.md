@@ -12,4 +12,6 @@ description:
 
 ©Public Domain
 
-This illustration was inspired by the artist's experiences in Boise, Idaho, and appeared in her book, *The Chosen Valley*. Though a work of fiction, Mary Hallock Foote's book has been identified by scholars as being culturally important as a reflection of an Eastern woman's experience in the American West.
+This illustration was inspired by the artist's experiences in Boise, [[Idaho]], and appeared in her book, *The Chosen Valley*. Though a work of fiction, Mary Hallock Foote's book has been identified by scholars as being culturally important as a reflection of an Eastern woman's experience in the American West.
+
+#idaho

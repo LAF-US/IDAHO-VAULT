@@ -7,7 +7,7 @@ published: 2026-07-15
 created: 2026-07-16
 description: "The Bureau of Land Management gathered wild horses from the Saylor Creek Wild Horse Herd Management Area, just south of Glenns Ferry, on Wednesday to address an overpopulation that has grown more than twice the area’s appropriate management level."
 ---
-GLENNS FERRY, Idaho (KMVT/KSVT) — The Bureau of Land Management gathered wild horses from the Saylor Creek Wild Horse Herd Management Area, just south of Glenns Ferry, on Wednesday to address an overpopulation that has grown more than twice the area’s appropriate management level.
+GLENNS FERRY, [[Idaho]] (KMVT/KSVT) — The Bureau of Land Management gathered wild horses from the Saylor Creek Wild Horse Herd Management Area, just south of Glenns Ferry, on Wednesday to address an overpopulation that has grown more than twice the area’s appropriate management level.
 
 The herd management area is currently home to 118 horses. The BLM has set [the appropriate management level](https://www.blm.gov/programs/wild-horse-and-burro/about-the-program/program-data "https://www.blm.gov/programs/wild-horse-and-burro/about-the-program/program-data") at 50 animals, a figure determined by evaluating available vegetation, soil conditions, and water resources. Agency spokesperson Heather Tiel-Nelson said the goal was 100 horses, but the team captured 103.
 
@@ -24,3 +24,5 @@ All horses not returned to the range will be transported to the BLM’s Boise Wi
 Wranglers on horseback roped younger foals that could not keep pace with the larger group during the helicopter gather. Tiel-Nelson said those foals will be reunited with their mothers and remain with them until they reach weanable age, at which point they will be offered for adoption along with the other removed animals.
 
 The BLM plans to make all gathered horses available for adoption either this summer or this fall.
+
+#idaho

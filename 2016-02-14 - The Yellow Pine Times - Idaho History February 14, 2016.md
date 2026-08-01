@@ -8,7 +8,7 @@ created: 2026-07-20
 ### Secesh
 
 Image caption:  
-*Secesh River Trail sign — Secesh (for secessionist) River is one of a number of geographical and place names evidencing Confederate influence in Territorial* *Idaho*
+*Secesh River Trail sign — Secesh (for secessionist) River is one of a number of geographical and place names evidencing Confederate influence in Territorial* *[[Idaho]]*
 
 **Confederate Idaho and the ‘…most puerile happening that was ever enacted in the history of the Territory’**
 
@@ -77,3 +77,5 @@ The river drains a remote wilderness watershed in the Salmon River Mountains. Si
 ———————-
 
 *updated Nov 10, 2018*
+
+#idaho

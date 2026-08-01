@@ -7,7 +7,7 @@ published: 2026-07-17
 created: 2026-07-20
 description: "If the National Park Service signs on — and university officials expect a decision later this year — the university will be listed on the National Register of Historic Places."
 ---
-A state panel has endorsed a historic district designation for much of the University of Idaho’s Moscow campus.
+A state panel has endorsed a historic district designation for much of the University of [[Idaho]]’s Moscow campus.
 
 If the National Park Service signs on — and university officials expect a decision later this year — the U of I will be listed on the National Register of Historic Places.
 
@@ -30,3 +30,5 @@ Washington Trust - Wilcox - 2:1
 The nomination has been in the works since 2022, and the U of I says it used less than $20,000 on the process, using donations, internal grants and college support. “Similar university historic district nominations elsewhere have cost substantially more,” the U of I said in its news release.
 
 *This story was originally published by [Idaho Ed News](https://www.idahoednews.org/kevins-blog/u-of-i-historic-registry-proposal-goes-to-the-feds/) and is republished with permission.*
+
+#idaho

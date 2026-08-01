@@ -4,7 +4,7 @@ author:
 published:
 created: 2026-07-20
 ---
-Permeal Jane French was the first woman elected to state office in Idaho and was considered one of the best known and best loved educators in Idaho of her time. She was Superintendent of Public Instruction in the state from 1899-1903 and served as first Dean of Women at the University of Idaho from 1908-1936.  
+Permeal Jane French was the first woman elected to state office in [[Idaho]] and was considered one of the best known and best loved educators in Idaho of her time. She was Superintendent of Public Instruction in the state from 1899-1903 and served as first Dean of Women at the University of Idaho from 1908-1936.  
   
 Prior to her appointment in 1908, the position had existed in a similar form, but French placed more significance on the role. She built the University's first student union building, the Blue Bucket, using her personal funds. During her 28 years of service she touched the lives of many students with her thoughtful counsel. According to university historian Rafe Gibbs, Dean French treated each and every student with personal attention and courtesy.  
   
@@ -25,3 +25,5 @@ Permeal Jane French, Idaho's Women of Influence, Digital Collections, University
 Record Contributor:
 
 Annie Gaines
+
+#idaho

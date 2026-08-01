@@ -8,7 +8,7 @@ description: "The great seal of the State of Idaho can be found on business card
 ---
 5/18/2019
 
-The great seal of the State of Idaho can be found on business cards, letterhead, brochures, proclamations, and other official state documents, and it is the centerpiece of Idaho's flag.  
+The great seal of the State of [[Idaho]] can be found on business cards, letterhead, brochures, proclamations, and other official state documents, and it is the centerpiece of Idaho's flag.  
   
 Emma Edwards Green, who was born in California and was the daughter of a former governor of Missouri, was teaching art classes in Boise when the brand new Idaho Legislature announced a contest for the design of a state seal. She entered the competition and won $100. To this day, it remains the only state seal designed by a woman.  
   
@@ -25,3 +25,5 @@ Emma Edwards Green, from the physical photo collection of the Idaho State Archiv
 ![Picture](https://www.rickjust.com/uploads/5/2/5/3/52533793/state-seal_orig.jpg)
 
 Speaking of Idaho history posts are copyright © 2020 by Rick Just. Sharing is encouraged. If you don’t find a button that lets you do that, find the post on Speaking of Idaho. If you’re missing my daily posts, select the RSS button, or select See it First under the Facebook Following tab.
+
+#idaho

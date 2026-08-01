@@ -58,7 +58,7 @@ In October 2021 after taking an over-the-counter medication, Powers had a severe
 - *Youth Lagoon* " 7" (2011, Fat Possum Records)
 - "Mute" promo CD, digital (2013, Fat Possum Records)
 - "The Knower" 7", digital (2015, Fat Possum Records)
-- "Idaho Alien" digital (2023, Fat Possum Records)
+- "[[Idaho]] Alien" digital (2023, Fat Possum Records)
 - "Prizefighter" digital (2023, Fat Possum Records)
 - "The Sling" digital (2023, Fat Possum Records)
 - "Football" 7", digital (2024, Fat Possum Records)
@@ -143,3 +143,5 @@ In October 2021 after taking an over-the-counter medication, Powers had a severe
 [^28]: Ragusa, Paolo (January 8, 2025). ["Youth Lagoon Announces New Album and 2025 Tour, Reveals New Song "Speed Freak""](https://consequence.net/2025/01/youth-lagoon-rarely-do-i-dream-2025-tour-speed-freak-stream/). Consequence of Sound. Retrieved December 10, 2025.
 
 [^29]: [Martin, Rachel](https://en.wikipedia.org/wiki/Rachel_Martin_\(broadcast_journalist\) "Rachel Martin (broadcast journalist)") (June 11, 2023). ["Losing his voice gave this singer a new appreciation for God — and being alone"](https://www.npr.org/2023/06/11/1181349661/losing-his-voice-gave-this-singer-a-new-appreciation-for-god-and-being-alone?ft=nprml&f=1175750522). *[NPR](https://en.wikipedia.org/wiki/NPR "NPR")*. [Archived](https://web.archive.org/web/20230724155636/https://www.npr.org/2023/06/11/1181349661/losing-his-voice-gave-this-singer-a-new-appreciation-for-god-and-being-alone?ft=nprml&f=1175750522) from the original on July 24, 2023. Retrieved August 3, 2023.
+
+#idaho

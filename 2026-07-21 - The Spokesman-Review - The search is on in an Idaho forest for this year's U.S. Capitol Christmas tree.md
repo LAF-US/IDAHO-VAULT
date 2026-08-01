@@ -5,7 +5,7 @@ author:
 published: 2026-07-21
 created: 2026-07-21
 ---
-Gregory Dronen, usually in charge of the nursery that raises trees to be planted in the Nez Perce-Clearwater National Forest, stands at the ranger district headquarters in Potlatch, Idaho, and talks about helping to screen candidates to be the U.S. Capitol Christmas tree for the coming holiday season. (Jesse Tinsley/THE SPOKESMAN-REVIEW)
+Gregory Dronen, usually in charge of the nursery that raises trees to be planted in the Nez Perce-Clearwater National Forest, stands at the ranger district headquarters in Potlatch, [[Idaho]], and talks about helping to screen candidates to be the U.S. Capitol Christmas tree for the coming holiday season. (Jesse Tinsley/THE SPOKESMAN-REVIEW)
 
 Buried in 4 million acres of dense woods, rocky canyons and winding rivers of central Idaho’s Nez Perce-Clearwater National Forests, the next Capitol Christmas tree looms.
 
@@ -46,3 +46,5 @@ It’s fitting, he said, given the region’s roots tied to the timber industry 
 In 1906, the Potlatch Lumber Company built what was then the world’s largest sawmill, cutting 175 million board feet annually by 1920, according to a historical marker where the mill used to be in town. The first smoke jumpers fought wildland fires in the Nez Pearce-Clearwater National Forests, Peterson said, and saw one of the last river log drives on the Clearwater River.
 
 “We’re not a really well-known forest, but we have such a cool story to tell,” Peterson said. “I think that opportunity to tell that story is really neat.”
+
+#idaho

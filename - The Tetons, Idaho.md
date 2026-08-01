@@ -8,7 +8,7 @@ description: "View The Tetons, Idaho by Thomas Moran and other public domain art
 ---
 ![Thomas Moran - The Tetons, Idaho](https://mdl.artvee.com/sftb/511998ld.jpg)
 
-Thomas Moran - The Tetons, Idaho
+Thomas Moran - The Tetons, [[Idaho]]
 
 ![Thomas Moran](https://mdl.artvee.com/artpic/Thomas_Moran.jpg "Thomas Moran")
 
@@ -25,3 +25,5 @@ Thomas Moran's vision of the Western landscape was critical to the creation of Y
 Over the next forty years Moran traveled extensively. He went back to Yellowstone with Jackson in 1892. They were invited by Elwood Mead, the state engineer of Wyoming, in preparation for a "Wyoming Exhibition" at the World's Columbian Exposition. Thousands of tourists were now able to visit the park, arriving by the Northern Pacific Railway, and Moran and Jackson were able to take advantage of the tourist facilities, such as a hotel at Mammoth Hot Springs. Moran wrote "After a day at Norris we left for the Grand Canyon where we stayed two days and made a great many photos. I saw so much to sketch that I have determined to return there myself after I have been to the Geyser Basins and the lake and spend a week at work there. It is as glorious in color as ever and I was completely carried away by its magnificence. I think I can paint a better picture of it than the old one after I have made my sketches." Moran sketched many more images of the Canyon on this trip than he had in 1871, including views from the viewpoint named for him on the 1871 trip, "Moran Point." The Grand Canyon of the Yellowstone (1893–1901) is on view at the Smithsonian American Art Museum.
 
 Moran was elected to the membership of the National Academy of Design in 1884 and produced numerous works of art in his senior years.
+
+#idaho

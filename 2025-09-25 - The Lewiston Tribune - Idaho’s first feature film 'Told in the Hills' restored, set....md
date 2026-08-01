@@ -109,7 +109,7 @@ Members of the Nez Perce Tribe were among the actors who performed in the film.B
 
 ![Landscape, as captured in the Idaho Film Collection.](https://public-assets-prod.pubgen.ai/brand_4fc3eb37-4c8a-4951-9324-365f6e4b53fd/asset_cabb915b-d1d7-511e-8aa3-38ff146ba2dd..jpg?w=3840)
 
-Landscape, as captured in the Idaho Film Collection.Boise State University, Special Collections and Archives
+Landscape, as captured in the [[Idaho]] Film Collection.Boise State University, Special Collections and Archives
 
 ![Marilyn Monroe in a
 dress made from an Idaho potato sack, 1952.](https://public-assets-prod.pubgen.ai/brand_4fc3eb37-4c8a-4951-9324-365f6e4b53fd/asset_25478ac8-fff3-537c-8815-fbb5e424b96c..jpg?w=3840)
@@ -449,3 +449,5 @@ Lewy AI
 [Browse Local AdsAs Seen in Print!](https://marketplace.lmtribune.com/)
 
 <iframe id="obsidian-clipper-iframe" allow="clipboard-write; web-share" src="chrome-extension://cnjifjpddelmedmihgijeibhnjfabmlf/side-panel.html?context=iframe"></iframe>
+
+#idaho

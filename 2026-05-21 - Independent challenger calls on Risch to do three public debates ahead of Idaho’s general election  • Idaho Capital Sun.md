@@ -15,7 +15,7 @@ Candidate Todd Achilles says he’s proposed three debates before Nov. 3 electio
 
 I voted stickers
 
-“I voted” stickers sit ready for voters during the May 19, 2026, primary election at The Waterfront in Idaho Falls. (Photo by Pat Sutphin for the Idaho Capital Sun)
+“I voted” stickers sit ready for voters during the May 19, 2026, primary election at The Waterfront in [[Idaho]] Falls. (Photo by Pat Sutphin for the Idaho Capital Sun)
 
 ![Todd Achilles](https://idahocapitalsun.com/wp-content/uploads/2024/05/ToddAchillesHeadshot-scaled.jpg)
 
@@ -46,3 +46,5 @@ Before the 2014 general election, Risch and Democratic challenger Nels Mitchell 
 In his 2006 run for lieutenant governor, Risch declined to participate in the live public television debate after the station refused [his request to appear separately](https://www.spokesman.com/stories/2006/sep/02/risch-turns-down-debate-invitation/) from his opponent Democrat Larry LaRocco to answer questions, the Associated Press reported at the time. Risch said then that he was concerned about “disruptive behavior” from his opponent.
 
 In 2008, he [again skipped the public TV debate](https://www.spokesman.com/stories/2008/may/05/risch-to-skip-public-tv-debate-again/) for the May Republican primary and again appeared in the taped KTVB debate, the Spokesman-Review reported.
+
+#idaho

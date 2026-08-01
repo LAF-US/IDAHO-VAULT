@@ -24,7 +24,7 @@ Emma Edwards Green Papers
 | Subject | Women Artists; Women Artists, American; Character Sketches; Water Color Painting; Painting; Art; Art, American; Legislators |
 | Creator | Emma Edwards Green |
 | Language | English |
-| Location | Idaho, United States, [https://www.geonames.org/5596512/idaho.html](https://www.geonames.org/5596512/idaho.html) |
+| Location | [[Idaho]], United States, [https://www.geonames.org/5596512/idaho.html](https://www.geonames.org/5596512/idaho.html) |
 | Reproduction and Use | Required Credit Line: Idaho State Archives, MS 353, Emma Edwards Green Papers, Idaho State Archives |
 | Publisher | Idaho State Archives, a division of the Idaho State Historical Society |
 | Type | Document |
@@ -42,3 +42,5 @@ Emma Edwards Green Papers
 Powered by [CONTENTdm®](http://www.oclc.org/en-US/contentdm.html)
 
 <iframe allow="clipboard-write; web-share" src="chrome-extension://cnjifjpddelmedmihgijeibhnjfabmlf/side-panel.html?context=iframe"></iframe>
+
+#idaho

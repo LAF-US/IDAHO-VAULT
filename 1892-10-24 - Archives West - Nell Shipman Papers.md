@@ -27,7 +27,7 @@ MSS 081
 
 Summary
 
-Correspondence (chiefly after 1925) relating to literary projects, proposed film projects, and family and personal affairs; other papers from Nell Shipman's post-silent film career, including mss. of novels, short stories, film scripts, story outlines, research notes, and clippings; and photos (ca. 1910-1925) from her silent film work in California, Washington, Idaho, and Canada.
+Correspondence (chiefly after 1925) relating to literary projects, proposed film projects, and family and personal affairs; other papers from Nell Shipman's post-silent film career, including mss. of novels, short stories, film scripts, story outlines, research notes, and clippings; and photos (ca. 1910-1925) from her silent film work in California, Washington, [[Idaho]], and Canada.
 
 Repository
 
@@ -1156,3 +1156,5 @@ The collection is arranged in eight series: 1. Biographical and personal papers;
 
 - [Motion pictures](https://archiveswest.orbiscascade.org/search.php?facet=genreform:Motion%20pictures)
 - [Photographs](https://archiveswest.orbiscascade.org/search.php?facet=genreform:Photographs)
+
+#idaho

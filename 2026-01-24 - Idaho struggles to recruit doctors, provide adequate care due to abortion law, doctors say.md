@@ -11,7 +11,7 @@ description: "IDAHO FALLS — The health care landscape in Idaho looks vastly di
 
 ![(Left) CEO of Bingham Healthcare Jake Erickson and (right) OB-GYN Heather Pugmire speaking at City Club of Idaho Falls over Idaho's current landscape involving obstetric servies and stock of physicians. | Daniel V. Ramirez, EastIdahoNews.com](https://s3.us-west-2.amazonaws.com/assets.eastidahonews.com/wp-content/uploads/2026/01/IMG_0076.jpg)
 
-CEO of Bingham Healthcare Jake Erickson, left, and OB-GYN Heather Pugmire, right, speaking at City Club of Idaho Falls over Idaho’s current landscape involving obstetric services and stock of physicians. | Daniel V. Ramirez, EastIdahoNews.com
+CEO of Bingham Healthcare Jake Erickson, left, and OB-GYN Heather Pugmire, right, speaking at City Club of [[Idaho]] Falls over Idaho’s current landscape involving obstetric services and stock of physicians. | Daniel V. Ramirez, EastIdahoNews.com
 
 IDAHO FALLS — The health care landscape in Idaho looks vastly different from what it was four years ago, some Idaho medical professionals say. And they attribute the changes to the state’s near-total ban on abortions.
 
@@ -86,3 +86,5 @@ However, in speaking with legislators about abortion law reform, Pugmire said it
 [SUBMIT A CORRECTION](https://www.eastidahonews.com/submit-a-correction/?headline=Idaho%20struggles%20to%20recruit%20doctors,%20provide%20adequate%20care%20due%20to%20abortion%20law,%20doctors%20say&url=https://www.eastidahonews.com/2026/01/idaho-struggles-to-recruit-doctors-provide-adequate-care-due-to-abortion-law-doctors-say/)
 
 EastIdahoNews.com comment boards are a place for open, honest, and civil communication between readers regarding the news of the day and issues facing our communities. We encourage commenters to stay on topic, use positive and constructive language, and be empathetic to the feelings of other commenters. **THINK BEFORE YOU POST.** [Click here](https://www.eastidahonews.com/eastidahonews-com-code-of-ethics/#onlinecommenting) for more details on our commenting rules.
+
+#idaho

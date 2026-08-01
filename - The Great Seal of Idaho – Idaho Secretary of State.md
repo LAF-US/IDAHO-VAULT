@@ -12,7 +12,7 @@ description:
 
 ### The State Seal Now In Use
 
-In 1957, the thirty-fourth session of the Idaho legislature authorized the updating and improvement of the Great Seal to highlight the state’s natural beauty and more clearly define Idaho’s primary industries: mining, agriculture, and forestry.
+In 1957, the thirty-fourth session of the [[Idaho]] legislature authorized the updating and improvement of the Great Seal to highlight the state’s natural beauty and more clearly define Idaho’s primary industries: mining, agriculture, and forestry.
 
 Paul B. Evans and the Caxton Printers, Ltd. were commissioned to revise the seal. The original design by Emma Edwards Green was officially replaced with the painting by Paul B. Evans.
 
@@ -63,3 +63,5 @@ The stamp mill in the distance, which you can see by using a magnifying glass, i
 ### Instructions For Use of the Great Seal
 
 The seal should be displayed in good state, without alteration, and should not convey the impression that the product or services are state authorized, sponsored, or endorsed.
+
+#idaho

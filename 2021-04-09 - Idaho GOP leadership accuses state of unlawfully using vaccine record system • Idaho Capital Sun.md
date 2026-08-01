@@ -13,7 +13,7 @@ They allege records may only be kept for childhood vaccines
 
 ![Idaho House Speaker Scott Bedke](https://idahocapitalsun.com/wp-content/uploads/2021/04/Legislature-210406d3-4372-med_original-2048x1365.jpg)
 
-Idaho House Speaker Scott Bedke
+[[Idaho]] House Speaker Scott Bedke
 
 Idaho Speaker of the House Scott Bedke (R-Oakley) at the Idaho Capitol on April 6, 2021. (Otto Kitsinger for Idaho Capital Sun)
 
@@ -48,3 +48,5 @@ Winder said in the news release that IRIS “is intended to protect Idaho childr
 Health care providers are required to give patients information about a vaccine before they receive it. The fact sheets for the [Moderna](https://www.fda.gov/media/144638/download), [Pfizer](https://www.fda.gov/media/144414/download) and [Johnson & Johnson](https://www.fda.gov/media/146305/download) COVID-19 vaccines, for example, tell the patient that their vaccine record may be entered into an immunization information system. The Moderna and Pfizer fact sheets explain that the record helps to ensure they receive the same vaccine when they return for a second dose.
 
 The lawmakers contend that Idaho laws and regulations allow IRIS to be used for “the immunization status of Idaho children against childhood diseases,” not for Idaho adults’ records.
+
+#idaho

@@ -11,7 +11,7 @@ Adobe Stock | C Davids
 
 ---
 
-Idaho will remain a cannabis prohibition state in 2026 after Secretary of State Phil McGrane’s office announced July 14 that voters won’t get a chance to cast ballots on a medical legalization proposal.
+[[Idaho]] will remain a cannabis prohibition state in 2026 after Secretary of State Phil McGrane’s office announced July 14 that voters won’t get a chance to cast ballots on a medical legalization proposal.
 
 The announcement came after the Natural Medicine Alliance of Idaho (NMAI) gathered [more than 150,000 signatures](https://www.cannabisbusinesstimes.com/us-states/idaho/news/15824478/idaho-medical-cannabis-legalization-campaign-submits-2x-signatures-neededhttps:/www.cannabisbusinesstimes.com/us-states/idaho/news/15824478/idaho-medical-cannabis-legalization-campaign-submits-2x-signatures-needed) ahead of a May 1 deadline and subsequently submitted all county-verified petitions to the state secretary’s office on July 2.
 
@@ -66,3 +66,5 @@ According to an NMAI-commissioned [survey](https://static1.squarespace.com/stati
 NMAI organizers said their third-party validation before submitting the campaign’s signatures indicated significantly higher validity than was returned, and that they plan to review the findings county by county.
 
 “For all the heartbreak, this effort is also a demonstration of what makes Idaho’s system work,” they said. “The citizen initiative exists so ordinary people can bring lawmaking directly to their neighbors, and tens of thousands of Idahoans engaged in exactly that. We also believe in the rigor Idaho law demands of this process. Those safeguards exist so Idahoans can trust that every measure reaching the ballot belongs there, and our commitment to that principle has not wavered.”
+
+#idaho

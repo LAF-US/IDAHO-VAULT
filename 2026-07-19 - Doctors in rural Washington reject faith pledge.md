@@ -23,7 +23,7 @@ Two sociologists examine Freedom Con 2026 at the Gorge, exploring how Christian 
 
 [News](https://favs.news/news/)
 
-This week's religion news includes LGBTQ+ politics, a proposed Spokane mosque, Idaho abortion ballot measure, Jewish outreach and Black history preservation.
+This week's religion news includes LGBTQ+ politics, a proposed Spokane mosque, [[Idaho]] abortion ballot measure, Jewish outreach and Black history preservation.
 
 Our Sponsors
 
@@ -98,3 +98,5 @@ Seamon said legal action based on the hospital’s decision to reject the agreem
 ---
 
 [***FāVS News***](https://favs.news/newsletters/) ***uses*** [***professional journalists***](https://favs.news/news/) ***and*** [***thoughtful commentary***](https://favs.news/commentary/) ***to explore faith, values and ethics. Support journalism like this by making a tax-deductible*** [***donation***](https://favs.news/donate-to-favs-news/)***. FāVS is a 501(c)(3) nonprofit. © FāVS News. All rights reserved. Reproduction permitted only to authorized media partners or with written permission.***
+
+#idaho

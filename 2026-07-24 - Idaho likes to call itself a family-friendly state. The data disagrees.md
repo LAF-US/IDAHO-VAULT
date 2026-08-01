@@ -11,7 +11,7 @@ Opinion articles provide independent perspectives on key community issues, separ
 
 Listen to this article
 
-Idaho has some real strengths: low concentrated poverty and strong two-parent household rates. But strengths in family structure don’t make up for underfunded schools, stratospheric incarceration rates for mothers and children and severely limited access to healthcare.
+[[Idaho]] has some real strengths: low concentrated poverty and strong two-parent household rates. But strengths in family structure don’t make up for underfunded schools, stratospheric incarceration rates for mothers and children and severely limited access to healthcare.
 
 Our economic well-being is falling, with more kids in poverty, less secure parental employment and rising housing cost burdens. W
 
@@ -38,3 +38,5 @@ Want to see more content like this?
 We'll help you catch up on the day's top stories at 4:30 p.m. with headlines from the Treasure Valley, Idaho and beyond.
 
 <iframe allow="clipboard-write; web-share" src="chrome-extension://cnjifjpddelmedmihgijeibhnjfabmlf/side-panel.html?context=iframe"></iframe>
+
+#idaho

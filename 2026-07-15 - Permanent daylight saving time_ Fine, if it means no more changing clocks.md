@@ -45,7 +45,7 @@ But under permanent daylight saving time, even sleepyheads might wake up to a da
 
 Is that worth watching the sun set at 10 p.m. on a summer night? Perhaps. Is it worth getting rid of the twice-a-year grind of springing ahead and falling back? Probably.
 
-U.S. Reps. Mike Simpson and Russ Fulcher, both R-Idaho, voted in favor of the bill.
+U.S. Reps. Mike Simpson and Russ Fulcher, both R-[[Idaho]], voted in favor of the bill.
 
 “Every Idahoan I’ve spoken to dreads the seasonal time change,” Simpson said in a press release Tuesday. “Over the years, it has become increasingly clear that making this change will benefit farmers, outdoor recreationists, employers, and even public safety. The vast majority of Americans support locking the clock, and the Sunshine Protection Act is a common-sense reform.”
 
@@ -70,3 +70,5 @@ Idaho Statesman
 Scott McIntosh is the communities editor and columnist for the Idaho Statesman. A graduate of Syracuse University, he joined the Statesman in August 2019. He previously was editor of the Idaho Press and the Argus Observer and was the owner and editor of the Kuna Melba News. He has been honored for his editorials and columns as well as his education, business and local government watchdog reporting by the Idaho Press Club and the National Newspaper Association. Sign up for his weekly newsletter, The Idaho Way. [Support my work with a digital subscription](https://mycheckout.idahostatesman.com/subscribe?ofrgp_id=394&g2i_or_o=Event&g2i_or_p=Reporter&cid=news_cta_0.99-1mo-15.99-on-article_202404)
 
 <iframe allow="clipboard-write; web-share" src="chrome-extension://cnjifjpddelmedmihgijeibhnjfabmlf/side-panel.html?context=iframe"></iframe>
+
+#idaho

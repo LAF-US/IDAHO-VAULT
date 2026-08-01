@@ -11,7 +11,7 @@ A stained glass window in Boise, Id that once depicted Confederate general Rober
 
 Listen to this article
 
-The United Methodist Church’s Oregon-Idaho Conference will no longer hold its annual gathering in Idaho next year over safety concerns stemming in part from Idaho laws targeting transgender and nonbinary people.
+The United Methodist Church’s Oregon-[[Idaho]] Conference will no longer hold its annual gathering in Idaho next year over safety concerns stemming in part from Idaho laws targeting transgender and nonbinary people.
 
 The shift comes after it was decided in 2025 that the annual conference would be held in Boise at the Cathedral of the Rockies both this and next summer. But at the end of this year’s June conference, a member brought forward a motion to move next year’s event out of Idaho to “a location that is safer for all.”
 
@@ -86,3 +86,5 @@ Anders encouraged people choosing not to come to Idaho because of its laws to se
 “Loving Idaho doesn’t mean pretending that everything is OK,” Hirst said. “It means caring enough about this place and our people to stay engaged and work for change here. I can’t dismiss the very real fear that people feel. We can just only keep showing up and speaking out, working alongside others that are helping make a place where everyone can truly feel safe and welcome.”
 
 Want to see more content like this?
+
+#idaho

@@ -19,7 +19,7 @@ Three seats on the Boise School District’s Board of Trustees will be open for 
 
 Candidate filing for the Sept. 1 trustee elections will open on June 15 and close on June 26.
 
-In race No. 1, trustees Krista Hasler and Alejandro Necochea are running for two, six-year terms. These two seats are currently held by Hasler and trustee Nancy Gregory, who is leaving the board after 24 years for a run at the Idaho Senate in District 15.
+In race No. 1, trustees Krista Hasler and Alejandro Necochea are running for two, six-year terms. These two seats are currently held by Hasler and trustee Nancy Gregory, who is leaving the board after 24 years for a run at the [[Idaho]] Senate in District 15.
 
 Hasler is running for re-election and Necochea is running for the first time, after he was [appointed](https://www.idahoednews.org/news/boise-trustees-appoint-medical-director-to-fill-board-vacancy/) last year to fill a vacancy. The top two vote-getters will be elected.
 
@@ -92,3 +92,5 @@ Necochea was appointed in 2025. His priority is to assist the district ensure al
 ![](https://www.idahoednews.org/wp-content/uploads/2025/10/Alejandro.jpg)
 
 Alejandro Necochea (Sean Dolan/EdNews)
+
+#idaho

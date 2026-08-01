@@ -7,7 +7,7 @@ created: 2026-07-21
 ---
 ![A black and white photo shows several cast and crew members of Told in the Hills outside standing around a large film camera.](https://npr.brightspotcdn.com/dims4/default/9fa36ae/2147483647/strip/true/crop/6054x4747+0+0/resize/1760x1380!/format/webp/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F81%2Feb%2F7e43f85949cdacd94feb2936e62e%2Fcast-and-crew-idaho-film-collection-boise-state-university-special-collections-and-archives.jpg)
 
-Camera assistant James Wong Howe, left, and other crew and cast including Ann Little and Robert Warwick, right, on location in Kamiah, Idaho, in the spring of 1919. (Courtesy: Idaho Film Collection, Boise State University, Special Collections and Archives)
+Camera assistant James Wong Howe, left, and other crew and cast including Ann Little and Robert Warwick, right, on location in Kamiah, [[Idaho]], in the spring of 1919. (Courtesy: Idaho Film Collection, Boise State University, Special Collections and Archives)
 
 The first feature film made in Idaho was shot more than a century ago. A new version of it has premiered, in part due to the efforts of a determined professor and a team of archivists, historians and artists.
 
@@ -110,3 +110,5 @@ Since only two of the original six reels of “Told in the Hills” were recover
 Archivists say chances are slim. But he’s hopeful the other reels are out there somewhere.
 
 *UPDATE: This story has been updated with information and interviews from the film's premiere.*
+
+#idaho

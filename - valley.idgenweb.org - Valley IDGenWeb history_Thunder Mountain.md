@@ -10,7 +10,7 @@ created: 2026-07-16
 
 ### The Ghosts Walk Under the Water
 
-from *"Scenic Idaho",* Winter 1954  
+from *"Scenic [[Idaho]]",* Winter 1954  
 (note: "Scenic Idaho," published by Belcher Publishing Company, Boise, Idaho, has long been out publication and Faith Turner appears to have died in 1979)
 
 *The epic story of Thunder Mountain was a decade drama in three acts.*
@@ -149,3 +149,5 @@ Copyright © 2009 - - 2026 Sharon McConnel. All Rights Reserved.
 ---
 
 <iframe allow="clipboard-write; web-share" src="chrome-extension://cnjifjpddelmedmihgijeibhnjfabmlf/side-panel.html?context=iframe"></iframe>
+
+#idaho

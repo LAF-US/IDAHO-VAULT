@@ -6,7 +6,7 @@ created: 2026-07-21
 ---
 ## University Archives
 
-**Academy of Idaho (1901-1915) Photograph Collection.** [***digital collection available***](https://t68c5a865aab279f8.starter1ua.preservica.com/portal/en-US/collection/sdb%3ASO%7C76add774-8884-4c68-894e-c0810f5f5c20)  
+**Academy of [[Idaho]] (1901-1915) Photograph Collection.** [***digital collection available***](https://t68c5a865aab279f8.starter1ua.preservica.com/portal/en-US/collection/sdb%3ASO%7C76add774-8884-4c68-894e-c0810f5f5c20)  
 This collection contains images from the University Archives during the period that Idaho State University was the Academy of Idaho, 1901-1915.
 
 **Albion State Normal School Records.**[***digital collection available***](https://t68c5a865aab279f8.starter1ua.preservica.com/portal/en-US/collection/sdb%3ASO%7C4596fc7b-7456-4e37-9fb5-4db4248ce04d)  
@@ -137,3 +137,5 @@ This collection contains images from the University Archives during the period t
 
 **Wickiup**.  
 ISU yearbooks from 1907 through 1972, and includes a 1976/1977 and a 1980/1981 edition.
+
+#idaho

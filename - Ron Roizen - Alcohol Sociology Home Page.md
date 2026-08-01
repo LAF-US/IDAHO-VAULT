@@ -11,7 +11,7 @@ created: 2026-07-20
 > > > the Sociology of Alcohol
 > > > 
 > > > Ron Roizen  
-> > > Wallace, Idaho  
+> > > Wallace, [[Idaho]]  
 > > 
 > >   
 > > **N.B. Because of changing web addresses at *Points* and for other reasons I've removed active links from this page. Please contact me at [ronroizen@frontier.com](mailto:ronroizen@frontier.com) for access to items listed below. Thanks!**  
@@ -158,3 +158,5 @@ created: 2026-07-20
 
   
 <iframe allow="clipboard-write; web-share" src="chrome-extension://cnjifjpddelmedmihgijeibhnjfabmlf/side-panel.html?context=iframe"></iframe>
+
+#idaho

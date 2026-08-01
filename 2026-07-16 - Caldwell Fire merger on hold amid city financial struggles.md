@@ -17,7 +17,7 @@ The Caldwell Rural Fire District won't annex the city's fire department yet, poi
 
 [Norma James](https://www.kivitv.com/norma-james)
 
-I'm the Idaho News 6 neighborhood reporter dedicated to bringing you the latest stories from Caldwell.
+I'm the [[Idaho]] News 6 neighborhood reporter dedicated to bringing you the latest stories from Caldwell.
 
 CALDWELL, Idaho — The Caldwell Rural Fire District will not move forward with annexing the Caldwell Fire Department at this time, leaving the department's future tied to either a public safety levy or a separation from the city.
 
@@ -50,3 +50,5 @@ We cover stories making an impact in Caldwell. This is your home to stay on top 
 [More News in Caldwell](https://www.kivitv.com/calwell)
 
 ![](https://ewscripps.brightspotcdn.com/fd/6b/47588cff45b6bad2c71d43cbe221/chatgpt-image-jun-24-2026-11-32-14-am.png)
+
+#idaho

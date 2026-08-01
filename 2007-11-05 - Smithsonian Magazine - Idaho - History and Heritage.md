@@ -5,7 +5,7 @@ author:
 published: 2007-11-05
 created: 2026-07-16
 ---
-Prior to the arrival of European and Mexican explorers, roughly 8,000 American Indians, representing two distinct groups, inhabited Idaho: the Great Basin Shoshone and Bannock tribes of the Shoshone-Bannock, the Shoshone Paiute and the Plateau tribes of the Coeur d'Alene, Nez Perce and Kootenai. Today, Idaho's American Indian heritage, their tribes and chiefs are reflected in county names like Nez Perce, Benewah, Shoshone, Bannock and Kootenai counties and the communities of Shoshone, Pocatello, Blackfoot, Nezperce, White Bird, Kamiah, Lapwai, Weippe, Kooskia, Picabo and Tendoy.
+Prior to the arrival of European and Mexican explorers, roughly 8,000 American Indians, representing two distinct groups, inhabited [[Idaho]]: the Great Basin Shoshone and Bannock tribes of the Shoshone-Bannock, the Shoshone Paiute and the Plateau tribes of the Coeur d'Alene, Nez Perce and Kootenai. Today, Idaho's American Indian heritage, their tribes and chiefs are reflected in county names like Nez Perce, Benewah, Shoshone, Bannock and Kootenai counties and the communities of Shoshone, Pocatello, Blackfoot, Nezperce, White Bird, Kamiah, Lapwai, Weippe, Kooskia, Picabo and Tendoy.
 
 Spanish explorers made trips west beginning in 1592. Spaniards introduced pigs, horses, domestic fowl, tomatoes, beans, corn and garlic to the American Indians of the Northwest. Lewis and Clark were the first Euro-Americans to set foot on what is now known as Idaho. They encountered Spanish-speaking American Indians as well as those who spoke their tribal language. The expedition was followed by French-Canadian fur trappers resulting in names of communities like Coeur d'Alene (French for "heart of the awl") and Boise (Le Bois-French for "the trees").
 
@@ -92,3 +92,5 @@ Finally if your family is a **Napoleon Dynamite** fan, visit the movie location 
 ### Planning Your Next Trip?
 
 Explore great travel deals
+
+#idaho

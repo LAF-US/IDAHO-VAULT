@@ -6,7 +6,7 @@ created: 2026-07-20
 ---
 [Ron Roizen's Idaho History Page](http://www.roizen.com/ron/Idaho.html)  
 
-**Confederate Idaho and the ‘…most puerile happening** **that was ever enacted in the history of the Territory’  
+**Confederate [[Idaho]] and the ‘…most puerile happening** **that was ever enacted in the history of the Territory’  
 **
 
 ![](http://www.roizen.com/ron/clip_image002.JPG)
@@ -28,3 +28,5 @@ The impasse over the ironclad oath and compensation for legislators boiled over 
 Yet, the issue somehow soon quelled. Howlett decided on January 12, 1867 to pay legislators if they, in turn, would sign the ironclad oath by the morning of January 14. They did, they were paid, and the notorious incident in legislative history before long slipped uneasily into Idaho Territory’s colorful past. “Thus ended,” wrote historian William John McConnell of the events that flowed from what Governor Ballard termed the legislature’s “presumptuous” act, “the most puerile happening that was ever enacted in the history of the Territory” (p. 349).
 
 <iframe allow="clipboard-write; web-share" src="chrome-extension://cnjifjpddelmedmihgijeibhnjfabmlf/side-panel.html?context=iframe"></iframe>
+
+#idaho

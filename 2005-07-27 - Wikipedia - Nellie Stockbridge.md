@@ -31,4 +31,6 @@ Hart, Patricia; Nelson, Ivar (1993). *Mining Town: The Photographic Record of T.
 
 [^1]: Albright, Syd. ["Nellie Stockbridge: A tough photographer through tough times"](https://web.archive.org/web/20190509211433/https://www.cdapress.com/archive/article-39017cc5-a6df-5ac6-a3b2-a06609e05cf6.html). *The Coeur d'Alene Press*. Archived from [the original](https://www.cdapress.com/archive/article-39017cc5-a6df-5ac6-a3b2-a06609e05cf6.html) on 2019-05-09. Retrieved 7 April 2018.
 
-[^2]: ["Historical Photographs in the University of Idaho Library"](https://lib.uidaho.edu/special-collections/histphoto.html). *University of Idaho Library*. Retrieved 7 April 2018.
+[^2]: ["Historical Photographs in the University of Idaho Library"](https://lib.uidaho.edu/special-collections/histphoto.html). *University of [[Idaho]] Library*. Retrieved 7 April 2018.
+
+#idaho

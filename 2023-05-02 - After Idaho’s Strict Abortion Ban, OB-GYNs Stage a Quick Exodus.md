@@ -9,7 +9,7 @@ description: "At least two Idaho hospitals are ending labor and delivery service
 ---
 ![](https://www.youtube.com/watch?v=Zj0EtO1YRIY)
 
-SANDPOINT, Idaho — At a brewery in this northern Idaho city, hundreds of people recently held a wake of sorts to mourn the closure of Sandpoint’s only labor and delivery ward, collateral damage from the state’s Republican-led effort to criminalize nearly all abortions.
+SANDPOINT, [[Idaho]] — At a brewery in this northern Idaho city, hundreds of people recently held a wake of sorts to mourn the closure of Sandpoint’s only labor and delivery ward, collateral damage from the state’s Republican-led effort to criminalize nearly all abortions.
 
 Jen Quintano, the event’s organizer and a Sandpoint resident who runs a tree service, called to the crowd, packed shoulder to shoulder as children ran underfoot, “Raise your hand if you were born at Bonner General! Raise your hand if you gave birth at Bonner General!” Nearly everyone raised their hand.
 
@@ -92,3 +92,5 @@ Back in Sandpoint, Huntsberger and her family are saying their goodbyes to Idaho
 “It’s heartbreaking to me to think about what it will mean for a woman experiencing a pregnancy crisis,” the doctor said.
 
 But, she added, “This isn’t a safe place to practice medicine anymore.”
+
+#idaho

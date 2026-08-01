@@ -6,7 +6,7 @@ created: 2026-07-20
 ---
 ![sepia portrait of a man in a coat and tie wearing a tweed cap](https://www.nps.gov/common/uploads/cropped_image/primary/47D0D415-A5DA-9128-D863E367FFDB2FF5.jpg?width=600&quality=90&mode=crop&format=webp)
 
-Robert Limbert promoted Idaho and Craters of the Moon as tourist destinations in the 1910s and 20s. BSU Archives
+Robert Limbert promoted [[Idaho]] and Craters of the Moon as tourist destinations in the 1910s and 20s. BSU Archives
 
 Quick Facts
 
@@ -45,3 +45,5 @@ Historic photos of some of the fascinating people who have passed this way.
 ## Tags
 
 Last updated: January 27, 2024
+
+#idaho

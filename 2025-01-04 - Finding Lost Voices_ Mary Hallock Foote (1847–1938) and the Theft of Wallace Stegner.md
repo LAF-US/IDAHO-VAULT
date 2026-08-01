@@ -41,7 +41,7 @@ On New Year’s Day in 1872, Mary and her family visited the Walter’s home in 
 
 At the same time that Mary met Arthur, Helena had also fallen in love with a publisher named Richard Watson Gilder. But, both Mary and Helena were cautious of getting married as they were worried that once they became wives and then mothers, they would no longer be able to pursue their lives as artists. But both of them took the risk. In the Victorian Era, this was a real fear, and the balance between their art and lives as wives and then later mothers would be a long struggle for both women throughout their lives.
 
-When Arthur returned from the West, the two were married in February 1876. After a brief honeymoon, Arthur had to return to San Francisco. A few weeks later, Mary joined him. She said goodbye to all she loved and boarded the Overland Limited to San Francisco. Riding on the train across the country she worked on her commissioned engravings for *The Scarlet Letter* as the landscape flew by the train’s window*.* Mary was always looking, and she couldn’t take her eyes off of this new world of the West where she had landed. When she finally arrived in San Francisco, after a brief rest, she and her husband took a stage through the great oak forested valley of San Leandro to the quicksilver mine called New Almaden, where Arthur was working, and they would be living for the next year. This mine would be the first of many rugged places that she would live in over the years in California, Colorado, South Dakota, and Idaho.
+When Arthur returned from the West, the two were married in February 1876. After a brief honeymoon, Arthur had to return to San Francisco. A few weeks later, Mary joined him. She said goodbye to all she loved and boarded the Overland Limited to San Francisco. Riding on the train across the country she worked on her commissioned engravings for *The Scarlet Letter* as the landscape flew by the train’s window*.* Mary was always looking, and she couldn’t take her eyes off of this new world of the West where she had landed. When she finally arrived in San Francisco, after a brief rest, she and her husband took a stage through the great oak forested valley of San Leandro to the quicksilver mine called New Almaden, where Arthur was working, and they would be living for the next year. This mine would be the first of many rugged places that she would live in over the years in California, Colorado, South Dakota, and [[Idaho]].
 
 ![](https://substackcdn.com/image/fetch/$s_!mMv_!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe0f143f8-25bb-423b-a6c3-78c1c203a603_1200x894.jpeg)
 
@@ -175,3 +175,5 @@ March 30, 4:00-5:30 PM, Occidental Center for the Arts, Occidental, CA
 #### May
 
 May 17 - 5:30 - 7:30 PM - National Steinbeck Center, Salinas, CA
+
+#idaho

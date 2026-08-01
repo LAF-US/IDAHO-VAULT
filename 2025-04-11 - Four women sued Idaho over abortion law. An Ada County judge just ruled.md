@@ -9,7 +9,7 @@ description: "The women said fatal fetal anomalies and dangerous pregnancy condi
 ---
 ![Jennifer Adkins, of Caldwell, was the lead plaintiff in a lawsuit challenging Idaho’s strict abortion law. An Ada County judge ruled partially in the plaintiffs’ favor on Friday.](https://www.idahostatesman.com/public/latest-news/d8b3os/picture281356063/alternates/LANDSCAPE_1200/1101%2002%20abortion%20plaintiffs.jpg)
 
-Jennifer Adkins, of Caldwell, was the lead plaintiff in a lawsuit challenging Idaho’s strict abortion law. An Ada County judge ruled partially in the plaintiffs’ favor on Friday. smiller@idahostatesman.com
+Jennifer Adkins, of Caldwell, was the lead plaintiff in a lawsuit challenging [[Idaho]]’s strict abortion law. An Ada County judge ruled partially in the plaintiffs’ favor on Friday. smiller@idahostatesman.com
 
 Listen to this article
 
@@ -56,3 +56,5 @@ This story was originally published April 11, 2025 at 6:48 PM.
 Want to see more content like this?
 
 <iframe allow="clipboard-write; web-share" src="chrome-extension://cnjifjpddelmedmihgijeibhnjfabmlf/side-panel.html?context=iframe"></iframe>
+
+#idaho

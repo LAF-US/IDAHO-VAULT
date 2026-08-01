@@ -14,7 +14,7 @@ Identifier: MS 2/0171
 
 ## Summary
 
-Register (July 19, 1936) of attendance at the seventieth anniversary of the discovery of gold in Leesburg, Idaho; Letters signed by President Woodrow Wilson and Vice President Thomas Marshall to Kirkpatrick thanking him for gift of gold dust.
+Register (July 19, 1936) of attendance at the seventieth anniversary of the discovery of gold in Leesburg, [[Idaho]]; Letters signed by President Woodrow Wilson and Vice President Thomas Marshall to Kirkpatrick thanking him for gift of gold dust.
 
 ## Dates
 
@@ -54,3 +54,5 @@ Part of the Idaho State Archives Manuscript Collections Repository
 Boise ID 83712  
 (208) 334-2620  
 [public.archives@ishs.idaho.gov](mailto:public.archives@ishs.idaho.gov "Send email")
+
+#idaho

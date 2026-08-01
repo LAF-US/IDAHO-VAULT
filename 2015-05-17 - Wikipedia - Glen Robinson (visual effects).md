@@ -9,7 +9,7 @@ created: 2026-07-20
 
 ## Biography
 
-Glen Robinson was born Thomas Glenn Robinson in Idaho on September 20, 1914. When aged twelve his family moved to [Los Angeles city](https://en.wikipedia.org/wiki/Los_Angeles "Los Angeles") and in 1932, at the age of 18, he graduated from [Venice High School](https://en.wikipedia.org/wiki/Venice_High_School_\(Los_Angeles\) "Venice High School (Los Angeles)"). In 1936 he was hired by the [Metro-Goldwyn-Mayer](https://en.wikipedia.org/wiki/Metro-Goldwyn-Mayer "Metro-Goldwyn-Mayer") company, where he became the studio's top special effects coordinator.
+Glen Robinson was born Thomas Glenn Robinson in [[Idaho]] on September 20, 1914. When aged twelve his family moved to [Los Angeles city](https://en.wikipedia.org/wiki/Los_Angeles "Los Angeles") and in 1932, at the age of 18, he graduated from [Venice High School](https://en.wikipedia.org/wiki/Venice_High_School_\(Los_Angeles\) "Venice High School (Los Angeles)"). In 1936 he was hired by the [Metro-Goldwyn-Mayer](https://en.wikipedia.org/wiki/Metro-Goldwyn-Mayer "Metro-Goldwyn-Mayer") company, where he became the studio's top special effects coordinator.
 
 Alongside his special effects career, Robinson was an engineer of [roller coaster](https://en.wikipedia.org/wiki/Roller_coaster "Roller coaster") and double [Ferris wheel](https://en.wikipedia.org/wiki/Ferris_wheel "Ferris wheel") attractions at amusement and theme parks that included Magic Mountain ([Golden, Colorado](https://en.wikipedia.org/wiki/Heritage_Square_\(Golden,_Colorado\) "Heritage Square (Golden, Colorado)"); [Valencia, California](https://en.wikipedia.org/wiki/Six_Flags_Magic_Mountain "Six Flags Magic Mountain")), Pleasure Island ([Wakefield, Massachusetts](https://en.wikipedia.org/wiki/Wakefield,_Massachusetts "Wakefield, Massachusetts")), [Freedomland U.S.A.](https://en.wikipedia.org/wiki/Freedomland_U.S.A. "Freedomland U.S.A.") ([New York](https://en.wikipedia.org/wiki/The_Bronx "The Bronx")) and [Space City USA](https://en.wikipedia.org/wiki/Space_City_USA "Space City USA") (near [Huntsville, Alabama](https://en.wikipedia.org/wiki/Huntsville,_Alabama "Huntsville, Alabama")). In the book, *Freedomland U.S.A.: The Definitive History* (Theme Park Press, 2019), Robinson is credited for his work at the park. However, his specific contributions to Freedomland remain undetermined. Space City USA never was completed.
 
@@ -68,3 +68,5 @@ Glen Robinson died of natural causes on March 27, 2002, at the [Motion Picture &
 [^3]: Crean, Ellen (29 March 2002). ["Sad Week In Show Business"](https://www.cbsnews.com/news/sad-week-in-show-business/). *[CBS News](https://en.wikipedia.org/wiki/CBS_News "CBS News")*. Retrieved 20 October 2023.
 
 [^4]: Doug Galloway, *[Thomas ‘Glen’ Robinson: Special Effects Pioneer](https://variety.com/2002/scene/people-news/thomas-glen-robinson-1117866292/)*, May 1, 2002, *Variety.com* (US Edition)
+
+#idaho

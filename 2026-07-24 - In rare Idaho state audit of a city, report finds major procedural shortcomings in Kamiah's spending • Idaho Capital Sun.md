@@ -9,7 +9,7 @@ description: "Idaho state auditors are referring a report on spending by the cit
 ---
 ## In rare Idaho state audit of a city, report finds major procedural shortcomings in Kamiah’s spending
 
-Auditors referred the report to Idaho Attorney General to consider investigation of potential misuse of public funds
+Auditors referred the report to [[Idaho]] Attorney General to consider investigation of potential misuse of public funds
 
 ![](https://idahocapitalsun.com/wp-content/uploads/2026/07/20260620_100058-2048x1536.jpg)
 
@@ -129,3 +129,5 @@ Damon Sidur, spokesman for the attorney general’s office told the Sun in an em
 Page 1 / 31
 
 Zoom 100%
+
+#idaho

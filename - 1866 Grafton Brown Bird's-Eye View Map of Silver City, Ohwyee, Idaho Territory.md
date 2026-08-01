@@ -28,7 +28,7 @@ This Item
 
 Silver boomtown by the first African American Lithographer.
 
-A remarkable 1866 bird's-eye view of Silver City, Idaho Territory, issued by Grafton Tyler Brown, America's first African American lithographer, and presenting the mining boomtown at its height of prosperity. Silver City experienced one of America's richest mineral strikes, producing gold and silver for more than 40 years. This view is one of only two known examples, significant not only for its historic illustration of a pop-up boomtown in full bloom, but also for being one of the few surviving views engraved and printed by Grafton T. Brown. Unlike many views, it has the unique distinction of being drawn from daguerreotype photographs taken by Philip Frederick Castleman, who visited with a supply caravan in 1866.
+A remarkable 1866 bird's-eye view of Silver City, [[Idaho]] Territory, issued by Grafton Tyler Brown, America's first African American lithographer, and presenting the mining boomtown at its height of prosperity. Silver City experienced one of America's richest mineral strikes, producing gold and silver for more than 40 years. This view is one of only two known examples, significant not only for its historic illustration of a pop-up boomtown in full bloom, but also for being one of the few surviving views engraved and printed by Grafton T. Brown. Unlike many views, it has the unique distinction of being drawn from daguerreotype photographs taken by Philip Frederick Castleman, who visited with a supply caravan in 1866.
 
 ###### A Closer Look at the Town
 
@@ -71,3 +71,5 @@ Very good. A couple of near indiscernible margin repairs, left side.
 ###### References
 
 Reps, John, *Views and Viewmakers of Urban America*, (University of Missouri, Columbia, 1984), #770.
+
+#idaho

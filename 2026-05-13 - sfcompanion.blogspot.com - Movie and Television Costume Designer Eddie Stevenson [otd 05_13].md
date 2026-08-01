@@ -8,7 +8,7 @@ created: 2026-07-20
 ---
 [![](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiW9meEcxr-MLmeeTBjF380eICA89L67wHfB4eUFVTiZggub5lFd-hGcfQLvKWtdundWGSkR4ceKXt-jOPezf0_DArV0yzbyV6LYAomeUAOiVrmbJtq0hdvf7SCURzuiSB6mDa04_UlRLk/s200/SusanHayward.jpg)](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiW9meEcxr-MLmeeTBjF380eICA89L67wHfB4eUFVTiZggub5lFd-hGcfQLvKWtdundWGSkR4ceKXt-jOPezf0_DArV0yzbyV6LYAomeUAOiVrmbJtq0hdvf7SCURzuiSB6mDa04_UlRLk/s1600/SusanHayward.jpg) Susan Hayward costume,  
 *David and Bathsheba,* 1951.  
-Edward Stevenson Collection, ISU. Long-time Hollywood costume designer Edward Manson Stevenson was born May 13, 1906 in Pocatello, Idaho. Stevenson spent over thirty years designing movie costumes before switching over to television in 1955. Along the way, he created wardrobes for a host of Hollywood’s biggest stars: Susan Hayward, Maureen O'Hara, Shirley Temple, Ginger Rogers, Edward G. Robinson, and many others.  
+Edward Stevenson Collection, ISU. Long-time Hollywood costume designer Edward Manson Stevenson was born May 13, 1906 in Pocatello, [[Idaho]]. Stevenson spent over thirty years designing movie costumes before switching over to television in 1955. Along the way, he created wardrobes for a host of Hollywood’s biggest stars: Susan Hayward, Maureen O'Hara, Shirley Temple, Ginger Rogers, Edward G. Robinson, and many others.  
   
 Eddie credited an aunt who ran a millinery store with sparking an early interest in fabrics. He also said his first experience was at Pocatello High School, where he designed costumes for a couple of operettas. Unable to cope with Pocatello’s climate – he suffered from a “chronic respiratory ailment” – Stevenson moved to southern California in 1922.  
   
@@ -33,3 +33,5 @@ Stevenson said that TV posed special design challenges compared to movies, mainl
 Eddie had begun working with Ball for the *Here’s Lucy* show when he had a heart attack and died in December 1968.  
   
 References: Trent Clegg, *A Brief Biography of Edward Manson Stevenson (1906-1968),* Department of Special Collections and University Archives, Idaho State University, Pocatello."Ex-Pocatellan Designs Comedy Clothes for 'I Love Lucy' Television Series," *Idaho State Journal* (January 15, 1957)."Filmography: Edward Manson Stevenson," [Internet Movie Database](http://www.imdb.com/name/nm0828926/), Imdb.com
+
+#idaho

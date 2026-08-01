@@ -11,7 +11,7 @@ description: "IDAHO FALLS — Several highway projects across eastern Idaho coul
 
 ![Courtesy City of Idaho Falls](https://s3.us-west-2.amazonaws.com/assets.eastidahonews.com/wp-content/uploads/2025/04/road-construction.jpg)
 
-Road construction projects across Idaho could be delayed or placed on hold as the Idaho Transportation Department reprioritizes future transportation investments following state funding cuts. | File photo
+Road construction projects across [[Idaho]] could be delayed or placed on hold as the Idaho Transportation Department reprioritizes future transportation investments following state funding cuts. | File photo
 
 IDAHO FALLS — Several highway projects across eastern Idaho could be delayed as the Idaho Transportation Department (ITD) scales back future construction plans following major cuts to state transportation funding.
 
@@ -84,3 +84,5 @@ Buffat said ITD remains prepared to deliver future highway improvements when fun
 [SUBMIT A CORRECTION](https://www.eastidahonews.com/submit-a-correction/?headline=State%20funding%20cuts%20put%20local%20highway%20projects%20on%20hold,%20here%E2%80%99s%20what%E2%80%99s%20affected&url=https://www.eastidahonews.com/2026/07/state-funding-cuts-put-local-highway-projects-on-hold-heres-whats-affected/)
 
 EastIdahoNews.com comment boards are a place for open, honest, and civil communication between readers regarding the news of the day and issues facing our communities. We encourage commenters to stay on topic, use positive and constructive language, and be empathetic to the feelings of other commenters. **THINK BEFORE YOU POST.** [Click here](https://www.eastidahonews.com/eastidahonews-com-code-of-ethics/#onlinecommenting) for more details on our commenting rules.
+
+#idaho

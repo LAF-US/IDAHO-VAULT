@@ -27,7 +27,7 @@ MSS 080
 
 Summary
 
-Correspondence, articles, business records, scrapbooks, newspaper clippings, sketches, photos, and other papers, relating chiefly to Limbert's exploration of the Idaho wilderness, his promotion of Idaho as a tourist destination, and studies of Idaho wildlife. Includes material relating to the Sawtooth Mountains and Craters of the Moon lava fields; establishment and operation of Redfish Lake Lodge at Stanley, Idaho; national lecture tours; and circa 3000 photos of Idaho scenery and wildlife.
+Correspondence, articles, business records, scrapbooks, newspaper clippings, sketches, photos, and other papers, relating chiefly to Limbert's exploration of the [[Idaho]] wilderness, his promotion of Idaho as a tourist destination, and studies of Idaho wildlife. Includes material relating to the Sawtooth Mountains and Craters of the Moon lava fields; establishment and operation of Redfish Lake Lodge at Stanley, Idaho; national lecture tours; and circa 3000 photos of Idaho scenery and wildlife.
 
 Repository
 
@@ -723,3 +723,5 @@ Some later biographical material on Limbert has been placed with the collection 
 		Container: Box 27
 		- Description: Taxidermy negatives
 		Container: Box 28
+
+#idaho

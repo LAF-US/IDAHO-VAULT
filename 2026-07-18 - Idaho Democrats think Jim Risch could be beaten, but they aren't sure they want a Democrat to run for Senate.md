@@ -9,7 +9,7 @@ description: "WASHINGTON – Democratic Party leaders in Idaho’s most populous
 ---
 ![Sen. Jim Risch, R-Idaho, speaks during a Senate Foreign Relations Committee hearing at the U.S. Capitol on Dec. 6, 2023.  (Orion Donovan Smith/The Spokesman-Review)](https://thumb.spokesman.com/bepUE0P0owwKL31l6TX5XS5zuio=/2500x0/smart/media.spokesman.com/photos/2026/07/17/657bc502f3035.hires.jpg)
 
-Sen. Jim Risch, R-Idaho, speaks during a Senate Foreign Relations Committee hearing at the U.S. Capitol on Dec. 6, 2023. (Orion Donovan Smith/The Spokesman-Review)
+Sen. Jim Risch, R-[[Idaho]], speaks during a Senate Foreign Relations Committee hearing at the U.S. Capitol on Dec. 6, 2023. (Orion Donovan Smith/The Spokesman-Review)
 
 WASHINGTON – Democratic Party leaders in Idaho’s most populous county think they have their best chance in decades to oust an incumbent Republican senator. They just aren’t sure a Democrat is the one to do it.
 
@@ -60,3 +60,5 @@ The conundrum for Idaho Democrats mirrors [the situation in neighboring Montana]
 Outside of Ada County, Democrats in Idaho aren’t sure what to do. On Tuesday, the Kootenai County Democratic Central Committee voted to remain neutral in the race, endorsing neither Roth nor Achilles, the party’s Vice Chair Adam Bennett said.
 
 ---
+
+#idaho

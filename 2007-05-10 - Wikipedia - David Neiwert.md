@@ -19,7 +19,7 @@ Neiwert's 2020 book *Red Pill, Blue Pill* discusses how radicalization and consp
 
 ## Personal life
 
-Neiwert was raised in Idaho Falls, Idaho. He comes from a German-American background and was brought up in [Methodist](https://en.wikipedia.org/wiki/Methodism "Methodism") [Christianity](https://en.wikipedia.org/wiki/Christianity "Christianity"). According to Neiwert, sympathy for the [John Birch Society](https://en.wikipedia.org/wiki/John_Birch_Society "John Birch Society") was widespread amongst the population he grew up surrounded by and is "probably part of why I'm immune to conspiracism." [^5]
+Neiwert was raised in [[Idaho]] Falls, Idaho. He comes from a German-American background and was brought up in [Methodist](https://en.wikipedia.org/wiki/Methodism "Methodism") [Christianity](https://en.wikipedia.org/wiki/Christianity "Christianity"). According to Neiwert, sympathy for the [John Birch Society](https://en.wikipedia.org/wiki/John_Birch_Society "John Birch Society") was widespread amongst the population he grew up surrounded by and is "probably part of why I'm immune to conspiracism." [^5]
 
 Neiwert attended the [University of Idaho](https://en.wikipedia.org/wiki/University_of_Idaho "University of Idaho"), where he obtained his B.A. in English (1984), as well as the [University of Montana](https://en.wikipedia.org/wiki/University_of_Montana "University of Montana") (1987–88), where he studied creative writing. He notes that he contributed to [Republican](https://en.wikipedia.org/wiki/Republican_Party_\(United_States\) "Republican Party (United States)") political campaigns during this time.[^5]
 
@@ -64,3 +64,5 @@ He has been married since 1989 to Lisa Dowling of [Helena, Montana](https://en.w
 [^13]: Perlstein, Rick (April 3, 2013). ["The Minutemen and the Mainstream Media"](https://www.thenation.com/article/minutemen-and-mainstream-media/). *The Nation*. Retrieved November 1, 2017.
 
 [^14]: Patriquin, Martin (May 3, 2013). ["On out-of-control border patrollers"](https://www.macleans.ca/culture/books/and-hell-followed-with-her-crossing-the-dark-side-of-the-american-border/). *Macleans.ca*. Retrieved November 1, 2017.
+
+#idaho

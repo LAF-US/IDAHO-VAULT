@@ -34,7 +34,7 @@ Burial
 
 [Kohlerlawn Cemetery](https://www.findagrave.com/cemetery/494975/kohlerlawn-cemetery)
 
-Nampa, Canyon County, Idaho, USA [*Show Map*](http://maps.google.com/maps?q=43.5928083,-116.5631472&spn=0.004205,0.005249) GPS-Latitude: 43.5928083, Longitude: -116.5631472
+Nampa, Canyon County, [[Idaho]], USA [*Show Map*](http://maps.google.com/maps?q=43.5928083,-116.5631472&spn=0.004205,0.005249) GPS-Latitude: 43.5928083, Longitude: -116.5631472
 
 Memorial ID
 
@@ -70,3 +70,5 @@ Read More
 - Added: Sep 20, 2009
 - Find a Grave Memorial ID: 42188487
 - *Find a Grave*, database and images ([https://www.findagrave.com/memorial/42188487/william\_h-dewey](https://www.findagrave.com/memorial/42188487/william_h-dewey): accessed July 20, 2026), memorial page for Col William H. Dewey (1 Aug 1823–8 May 1903), Find a Grave Memorial ID [42188487](https://www.findagrave.com/memorial/42188487/william_h-dewey), citing Kohlerlawn Cemetery, Nampa, Canyon County, Idaho, USA; Maintained by William Yates (contributor [47096650](https://www.findagrave.com/user/profile/47096650)).
+
+#idaho

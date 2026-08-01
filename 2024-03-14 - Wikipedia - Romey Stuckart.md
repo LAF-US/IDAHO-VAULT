@@ -5,7 +5,7 @@ author:
 published: 2024-03-14
 created: 2026-07-20
 ---
-**Romey Stuckart** (August 29, 1955 – November 24, 2020) was an American painter. A [Guggenheim Fellow](https://en.wikipedia.org/wiki/Guggenheim_Fellow "Guggenheim Fellow"), she painted expressionist landscapes of the forests of her resident state Idaho and exhibited at the [Boise Art Museum](https://en.wikipedia.org/wiki/Boise_Art_Museum "Boise Art Museum"), the [Utah Museum of Contemporary Art](https://en.wikipedia.org/wiki/Utah_Museum_of_Contemporary_Art "Utah Museum of Contemporary Art"), and the [Northwest Museum of Arts and Culture](https://en.wikipedia.org/wiki/Northwest_Museum_of_Arts_and_Culture "Northwest Museum of Arts and Culture").
+**Romey Stuckart** (August 29, 1955 – November 24, 2020) was an American painter. A [Guggenheim Fellow](https://en.wikipedia.org/wiki/Guggenheim_Fellow "Guggenheim Fellow"), she painted expressionist landscapes of the forests of her resident state [[Idaho]] and exhibited at the [Boise Art Museum](https://en.wikipedia.org/wiki/Boise_Art_Museum "Boise Art Museum"), the [Utah Museum of Contemporary Art](https://en.wikipedia.org/wiki/Utah_Museum_of_Contemporary_Art "Utah Museum of Contemporary Art"), and the [Northwest Museum of Arts and Culture](https://en.wikipedia.org/wiki/Northwest_Museum_of_Arts_and_Culture "Northwest Museum of Arts and Culture").
 
 ## Biography
 
@@ -50,3 +50,5 @@ Stuckart died on November 24, 2020 of brain cancer.[^3] From February to June 20
 [^13]: [*A Creative Legacy: A History of the National Endowment for the Arts Visual Artists' Fellowship Program*](https://archive.org/details/creativelegacyhi2001prin). Harry N. Abrams, Inc. 2001. p. 235. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [978-0-8109-4170-0](https://en.wikipedia.org/wiki/Special:BookSources/978-0-8109-4170-0 "Special:BookSources/978-0-8109-4170-0").
 
 [^14]: Novak, Valle (September 12, 1995). ["The Coeur d'Alene Press"](https://www.newspapers.com/image/1033277842/). pp. A7. Retrieved March 17, 2024 – via Newspapers.com.
+
+#idaho

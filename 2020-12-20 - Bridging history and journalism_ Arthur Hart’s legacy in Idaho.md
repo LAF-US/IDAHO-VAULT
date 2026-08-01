@@ -9,7 +9,7 @@ description: "The state historian at the Idaho State Historical Society explains
 ---
 Opinion articles provide independent perspectives on key community issues, separate from our newsroom reporting.
 
-In 2017, historian and longtime Idaho Statesman columnist Arthur Hart talks about his experiences in Idaho. Referred to as "Mr. History," Hart passed away Tuesday, Dec. 8, 2020. He was 99.
+In 2017, historian and longtime [[Idaho]] Statesman columnist Arthur Hart talks about his experiences in Idaho. Referred to as "Mr. History," Hart passed away Tuesday, Dec. 8, 2020. He was 99.
 
 Listen to this article
 
@@ -90,3 +90,5 @@ This story was originally published December 20, 2020 at 4:00 AM.
 Want to see more content like this?
 
 <iframe allow="clipboard-write; web-share" src="chrome-extension://cnjifjpddelmedmihgijeibhnjfabmlf/side-panel.html?context=iframe"></iframe>
+
+#idaho

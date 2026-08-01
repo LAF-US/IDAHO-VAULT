@@ -4,7 +4,7 @@ author:
 published:
 created: 2026-07-20
 ---
-Born in Wallace, Idaho, Edith Miller attended the University of Idaho in the 1930s where she stayed very active: she took 20 credits a semester, worked four part-time jobs, was a "Hell Diver" on the swim team, a member of the women's rifle team, and secretary for Phi Chi Theta. She graduated in 1935 in just three years with a degree in business administration at the age of 19 before securing a teaching fellowship at Washington State University. During this time Edith also worked as a secretary for Psychiana, a mail-order religion owned by Dr. Frank B. Robinson.  
+Born in Wallace, [[Idaho]], Edith Miller attended the University of Idaho in the 1930s where she stayed very active: she took 20 credits a semester, worked four part-time jobs, was a "Hell Diver" on the swim team, a member of the women's rifle team, and secretary for Phi Chi Theta. She graduated in 1935 in just three years with a degree in business administration at the age of 19 before securing a teaching fellowship at Washington State University. During this time Edith also worked as a secretary for Psychiana, a mail-order religion owned by Dr. Frank B. Robinson.  
   
 In 1943, Edith sold her car and moved to Washington, D.C. to work for the Labor Department and later for the War Department. While in Washington, she began attending law school at George Washington University at night while working during the day. Edith graduated with a law degree in 1946 and passed the D.C. bar exam. She later noted that World War II had opened up many opportunities for women that hadn't existed before the war.  
   
@@ -27,3 +27,5 @@ Edith Miller Klein, Idaho's Women of Influence, Digital Collections, University 
 Record Contributor:
 
 Mike Bullard
+
+#idaho

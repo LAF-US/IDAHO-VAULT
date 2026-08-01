@@ -19,7 +19,7 @@ Schleiss, 63, now teaches fourth grade in Jerome’s dual-language program, wher
 
 Schleiss
 
-Schleiss fell in love with Spanish in high school. After graduation, she enrolled at Brigham Young University- Idaho to study Spanish literature.
+Schleiss fell in love with Spanish in high school. After graduation, she enrolled at Brigham Young University- [[Idaho]] to study Spanish literature.
 
 “They excel at foreign language,” Schleiss said of the program.
 
@@ -112,3 +112,5 @@ I wish parents knew that we have their students’ best interests always at the 
 ***What is your favorite part of the job right now?***
 
 My favorite part of the job is watching these kids truly communicate in two languages. I think that is such an amazing skill that they will always carry with them.
+
+#idaho

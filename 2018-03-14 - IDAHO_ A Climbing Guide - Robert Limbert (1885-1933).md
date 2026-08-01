@@ -9,7 +9,7 @@ created: 2026-07-20
 
 Self Portrait, Robert Limbert (Courtesy Robert Limbert Collection, Boise State University Library.)
 
-“Two Gun” Robert Limbert is probably the most interesting personality associated with Idaho Climbing History. You can read about his climbing-related accomplishments on Pages 15-16 of the book. His accomplishments and interests extended far beyond mountaineering. Robert developed Redfish Lodge and he is credited as the moving force behind the establishment of [Craters of the Moon National Monument](https://www.nps.gov/crmo/index.htm). In fact, the Visitors Center at the monument is named after him.
+“Two Gun” Robert Limbert is probably the most interesting personality associated with [[Idaho]] Climbing History. You can read about his climbing-related accomplishments on Pages 15-16 of the book. His accomplishments and interests extended far beyond mountaineering. Robert developed Redfish Lodge and he is credited as the moving force behind the establishment of [Craters of the Moon National Monument](https://www.nps.gov/crmo/index.htm). In fact, the Visitors Center at the monument is named after him.
 
 ### Other Resources
 
@@ -32,3 +32,5 @@ From the Idaho Statesman.
 [![This article was undated when I found it but more than likely is from late 1920.](https://www.idahoaclimbingguide.com/wp-content/uploads/3B6B3F92-0410-4156-ACAB-647521AC20CB.jpeg)](https://www.idahoaclimbingguide.com/wp-content/uploads/3B6B3F92-0410-4156-ACAB-647521AC20CB.jpeg)
 
 This article was undated when I found it but more than likely is from late 1920.
+
+#idaho

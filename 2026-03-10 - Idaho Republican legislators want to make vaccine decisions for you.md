@@ -9,7 +9,7 @@ description: "“It’s probably one of the most egregious demonstrations of gov
 ---
 Opinion articles provide independent perspectives on key community issues, separate from our newsroom reporting.
 
-Idaho mother Stephanie Nemore testifies before Idaho legislators on Wednesday, March 4, 2026, against a bill that would put a moratorium on mRNA vaccines.
+[[Idaho]] mother Stephanie Nemore testifies before Idaho legislators on Wednesday, March 4, 2026, against a bill that would put a moratorium on mRNA vaccines.
 
 Listen to this article
 
@@ -148,3 +148,5 @@ Idaho Statesman
 Scott McIntosh is the communities editor and columnist for the Idaho Statesman. A graduate of Syracuse University, he joined the Statesman in August 2019. He previously was editor of the Idaho Press and the Argus Observer and was the owner and editor of the Kuna Melba News. He has been honored for his editorials and columns as well as his education, business and local government watchdog reporting by the Idaho Press Club and the National Newspaper Association. Sign up for his weekly newsletter, The Idaho Way. [Support my work with a digital subscription](https://mycheckout.idahostatesman.com/subscribe?ofrgp_id=394&g2i_or_o=Event&g2i_or_p=Reporter&cid=news_cta_0.99-1mo-15.99-on-article_202404)
 
 <iframe allow="clipboard-write; web-share" src="chrome-extension://cnjifjpddelmedmihgijeibhnjfabmlf/side-panel.html?context=iframe"></iframe>
+
+#idaho

@@ -34,7 +34,7 @@ English
 
 ### Repository Details
 
-Part of the Idaho State Archives Manuscript Collections Repository
+Part of the [[Idaho]] State Archives Manuscript Collections Repository
 
 [https://history.idaho.gov/archives/](https://history.idaho.gov/archives/)
 
@@ -43,3 +43,5 @@ Part of the Idaho State Archives Manuscript Collections Repository
 Boise ID 83712  
 (208) 334-2620  
 [public.archives@ishs.idaho.gov](mailto:public.archives@ishs.idaho.gov "Send email")
+
+#idaho

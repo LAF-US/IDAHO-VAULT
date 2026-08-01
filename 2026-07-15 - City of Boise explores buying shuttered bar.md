@@ -19,7 +19,7 @@ Maria Ortega, a communications manager with the city, told BoiseDev via email th
 
 ![Idaho Lottery - 90 MM - 2:1](https://static-v2.boisedev.com/assets/35da0207-4735-4f00-a726-8f11ae69e570.gif)
 
-Idaho Lottery - 90 MM - 2:1
+[[Idaho]] Lottery - 90 MM - 2:1
 
 The property’s location is well-suited for housing, she said.
 
@@ -76,3 +76,5 @@ Ortega said that the purchase price, $1.75 million, was negotiated between the c
 Watkins Carter - 2:1
 
 <iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&amp;zoom=15&amp;maptype=roadmap&amp;q=3515+W.+State+St.%2C+Boise%2C+ID" title="Google map of 3515 W. State St., Boise, ID"></iframe>
+
+#idaho

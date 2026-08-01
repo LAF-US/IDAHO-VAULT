@@ -5,7 +5,7 @@ author:
 published: 2022-08-03
 created: 2026-07-20
 ---
-The **poet laureate of Idaho** or **writer in residence** is the [poet laureate](https://en.wikipedia.org/wiki/Poet_laureate "Poet laureate") for the [U.S. state](https://en.wikipedia.org/wiki/U.S._state "U.S. state") of [Idaho](https://en.wikipedia.org/wiki/Idaho "Idaho"). After 1982 the title was changed to writer in residence.[^1]
+The **poet laureate of [[Idaho]]** or **writer in residence** is the [poet laureate](https://en.wikipedia.org/wiki/Poet_laureate "Poet laureate") for the [U.S. state](https://en.wikipedia.org/wiki/U.S._state "U.S. state") of [Idaho](https://en.wikipedia.org/wiki/Idaho "Idaho"). After 1982 the title was changed to writer in residence.[^1]
 
 ## List of poets laureate
 
@@ -56,3 +56,5 @@ Irene Welch Grissom was the first poet laureate of Idaho
 [^9]: ["CMarie Fuhrman"](https://poets.org/poet/cmarie-fuhrman). *Academy of American Poets*. Retrieved 3 August 2022.
 
 [^10]: ["Kerri Webster"](https://poets.org/poet/kerri-webster). *Academy of American Poets*. Retrieved 2024-08-28.
+
+#idaho

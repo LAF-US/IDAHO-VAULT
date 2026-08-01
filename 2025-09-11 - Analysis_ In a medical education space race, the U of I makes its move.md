@@ -7,7 +7,7 @@ published: 2025-09-11
 created: 2026-07-16
 description: "With Idaho’s WWAMI affiliation in jeopardy, the U of I and Idaho State University are both actively looking at medical school partnerships. The U of I plan centers on 8,200 square feet in dow…"
 ---
-The University of Idaho is making its move in the medical education space race.
+The University of [[Idaho]] is making its move in the medical education space race.
 
 The U of I wants to convert 8,200 square feet at its Idaho Water Center in downtown Boise, creating room for a burgeoning medical education partnership with the [University of Utah](https://medicine.utah.edu/).
 
@@ -60,3 +60,5 @@ The task force really has one job, though, and it’s all about the medical scho
 It’s a space race, and the U of I and Idaho State are not just idling on the launch pad.
 
 *Kevin Richert writes a weekly analysis on education policy and education politics. Look for his stories each Thursday.*
+
+#idaho

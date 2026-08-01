@@ -11,7 +11,7 @@ description: "An Idaho artist who was unable to hear, speak, read, or write foun
 
 Drawing of the James Castle House on Eugene Street in Boise. Artwork: © 2021 James Castle Collection and Archive, All Rights Reserved.
 
-An Idaho artist who was unable to hear, speak, read, or write found his own way of communicating and documenting his life in Idaho.
+An [[Idaho]] artist who was unable to hear, speak, read, or write found his own way of communicating and documenting his life in Idaho.
 
 James Castle was born in Garden Valley, Idaho in 1899 and went to the School for the Deaf and the Blind in Gooding.
 
@@ -41,3 +41,5 @@ In addition to guided tours, the house is free to visit and open to the public T
 “Public interest in his art has grown exponentially in the last twenty-five years, including with recent, major exhibitions in Philadelphia, Washington, D.C., and Madrid,” The James Castle House website notes. “As people around the world experience Castle’s art, they engage with his exceptional vision of life in this place.”
 
 Along with visiting the James Castle House, the Boise Art Museum has a permanent collection of his work.
+
+#idaho

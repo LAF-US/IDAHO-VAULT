@@ -9,7 +9,7 @@ created: 2026-07-20
 
 Minnie Priest Dunton
 
-**Minnie Priest Dunton** (February 29, 1864 – July 13, 1921) was an American [suffragist](https://en.wikipedia.org/wiki/Suffrage "Suffrage") and [Idaho](https://en.wikipedia.org/wiki/Idaho "Idaho") State [Librarian](https://en.wikipedia.org/wiki/Librarian "Librarian").[^1] She was an early advocate of [women's rights](https://en.wikipedia.org/wiki/Women's_rights "Women's rights") in [Idaho](https://en.wikipedia.org/wiki/Idaho "Idaho"), and she served as an Idaho State Librarian from 1907 to 1915. She worked with other women to implement the [19th Amendment](https://en.wikipedia.org/wiki/Nineteenth_Amendment_to_the_United_States_Constitution "Nineteenth Amendment to the United States Constitution") in Idaho.[^2] She became the first woman to be appointed as the State Librarian in Idaho.[^1]
+**Minnie Priest Dunton** (February 29, 1864 – July 13, 1921) was an American [suffragist](https://en.wikipedia.org/wiki/Suffrage "Suffrage") and [Idaho](https://en.wikipedia.org/wiki/Idaho "Idaho") State [Librarian](https://en.wikipedia.org/wiki/Librarian "Librarian").[^1] She was an early advocate of [women's rights](https://en.wikipedia.org/wiki/Women's_rights "Women's rights") in [Idaho](https://en.wikipedia.org/wiki/Idaho "Idaho"), and she served as an [[Idaho]] State Librarian from 1907 to 1915. She worked with other women to implement the [19th Amendment](https://en.wikipedia.org/wiki/Nineteenth_Amendment_to_the_United_States_Constitution "Nineteenth Amendment to the United States Constitution") in Idaho.[^2] She became the first woman to be appointed as the State Librarian in Idaho.[^1]
 
 ## Biography
 
@@ -32,3 +32,5 @@ She died in Boise, Idaho, on July 13, 1921.[^1]
 [^3]: Stanton, Elizabeth Cady (1902). [*History of Woman Suffrage: 1883–1900*](https://books.google.com/books?id=BlMOAQAAIAAJ). New York City: Fowler & Wells. p. 591. Retrieved October 31, 2023.
 
 [^4]: Herringshaw, Thomas William (1915). [*Herringshaw's American Blue-book of Biography*](https://books.google.com/books?id=8yVRAQAAMAAJ). Chicago: American Publishers' Association. p. 398. Retrieved October 31, 2023.
+
+#idaho

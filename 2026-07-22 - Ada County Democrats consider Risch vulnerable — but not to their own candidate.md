@@ -15,7 +15,7 @@ This story originally published July 18, 2026, at [Spokesman.com](https://www.sp
 
 Listen to this article
 
-Democratic Party leaders in Idaho’s most populous county think they have their best chance in decades to oust an incumbent Republican senator. They just aren’t sure a Democrat is the one to do it.
+Democratic Party leaders in [[Idaho]]’s most populous county think they have their best chance in decades to oust an incumbent Republican senator. They just aren’t sure a Democrat is the one to do it.
 
 The Ada County Democrats sent a letter on July 8 to David Roth, who won their party’s primary in May, giving him just over a month to prove his campaign “has turned a corner” and has a chance of unseating Sen. Jim Risch, a Republican who has represented Idaho in the U.S. Senate since 2009. If Roth doesn’t raise $50,000 and produce a campaign plan by Aug. 12, the party’s executive committee said, it will consider endorsing [Todd Achilles](https://www.spokesman.com/stories/2025/aug/12/would-idahoans-send-an-independent-to-the-senate-t), an independent candidate whose campaign has picked up steam in recent months.
 
@@ -70,3 +70,5 @@ Want to see more content like this?
 A daily morning dispatch of local news, sports, business and opinion headlines.
 
 <iframe allow="clipboard-write; web-share" src="chrome-extension://cnjifjpddelmedmihgijeibhnjfabmlf/side-panel.html?context=iframe"></iframe>
+
+#idaho

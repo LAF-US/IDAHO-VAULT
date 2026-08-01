@@ -7,7 +7,7 @@ created: 2026-07-20
 ---
 Sen. Brian Lenney wants to repeal a part of state law that lets registered voters sign an affidavit to prove their identity in order to vote.
 
-The Nampa Republican proposed the bill Wednesday to the Senate State Affairs Committee, the Idaho Capital Sun [reports](https://idahocapitalsun.com/briefs/idaho-senator-proposes-bill-eliminating-voter-affidavit-as-acceptable-id-at-polls/). Current law allows registered voters to present a signed affidavit as an alternative to photo identification at the polls.
+The Nampa Republican proposed the bill Wednesday to the Senate State Affairs Committee, the [[Idaho]] Capital Sun [reports](https://idahocapitalsun.com/briefs/idaho-senator-proposes-bill-eliminating-voter-affidavit-as-acceptable-id-at-polls/). Current law allows registered voters to present a signed affidavit as an alternative to photo identification at the polls.
 
 ![](https://www.idahoednews.org/wp-content/uploads/2024/01/Lenney7778.jpg)
 
@@ -24,3 +24,5 @@ Still, not that many voters use the affidavit method, according to numbers Lenne
 A similar bill Lenney introduced last year never received a hearing. The House of Representatives voted down a bill that would have done the same thing in 2023.
 
 County election offices review affidavits to confirm the voter’s personal information and signature, said Chelsea Bishop, communications director for the Idaho Secretary of State’s Office.
+
+#idaho

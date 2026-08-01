@@ -17,7 +17,7 @@ A variable speed limit sign along Eagle Rd. in Meridian. Photo: Courtesy City of
 
 ---
 
-The Idaho Transportation Department wanted to shake things up on Eagle Rd. in hopes of decreasing accidents during rush hour.
+The [[Idaho]] Transportation Department wanted to shake things up on Eagle Rd. in hopes of decreasing accidents during rush hour.
 
 [As BoiseDev reported,](https://boisedev.com/news/2024/06/04/eagle-road-speed-limit-meridian/) the department has been working on introducing variable speed limits. The changes would take the speed limit from 55 mph to 45 mph during peak rush hour times. The current speed limit on the road is 55 MPH.
 
@@ -40,3 +40,5 @@ Watkins Carter - 2:1
 Youmans said ITD has now gotten the easements taken care of and is getting to work on testing the signs. If all goes well with testing, she said all the signs will be on “shortly,” within a matter of weeks.
 
 So, as you’re driving Eagle Rd. make sure to keep an eye out, the speed limit could soon be varying.
+
+#idaho
