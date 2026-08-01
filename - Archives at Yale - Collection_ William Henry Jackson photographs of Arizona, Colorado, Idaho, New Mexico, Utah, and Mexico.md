@@ -43,7 +43,7 @@ Call Number: WA Photos Folio 215
 
 ## Abstract
 
-Photographs taken by William Henry Jackson and published by W.H. Jackson & Co. of Arizona, Colorado, Idaho, New Mexico, Utah, and Mexico, circa 1880s.
+Photographs taken by William Henry Jackson and published by W.H. Jackson & Co. of Arizona, Colorado, [[Idaho]], New Mexico, Utah, and Mexico, circa 1880s.
 
 ## Bibliography
 
@@ -124,3 +124,5 @@ New Haven, CT 06511
 #### Access Information
 
 The Beinecke Library is open to all Yale University students and faculty, and visiting researchers whose work requires use of its special collections. You will need to bring appropriate photo ID the first time you register. Beinecke is a non-circulating, closed stack library. Paging is done by library staff during business hours. You can request collection material online at least two business days in advance of your visit, using the request links in Archives at Yale. For more information, please see [Planning Your Research Visit](http://beinecke.library.yale.edu/visit/planning-your-research-visit) and consult the [Reading Room Policies](http://beinecke.library.yale.edu/visit/reading-room-policies) prior to visiting the library.
+
+#idaho
