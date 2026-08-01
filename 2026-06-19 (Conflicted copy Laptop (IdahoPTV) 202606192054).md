@@ -1,0 +1,29 @@
+---
+date created: Friday, June 19th 2026, 4:55:33 pm
+date modified: Friday, June 19th 2026, 5:02:06 pm
+---
+
+---
+title: 2026-06-19
+aliases:
+  - 2026-06-19
+  - June 19, 2026
+  - June 19th, 2026
+  - 19 June 2026
+  - Friday, June 19, 2026
+linter-yaml-title-alias: 2026-06-19
+yesterday: 2026-06-18
+tomorrow: 2026-06-20
+weekday:
+  - Friday
+cssclasses:
+  - roygbiv-fri
+tags:
+  - today
+  - 2026/06/19
+  - dailynote
+date created: Friday, June 19th 2026, 12:00:00 am
+date modified: Friday, June 19th 2026, 12:00:00 am
+---
+
+[[TO DO LIST]]
