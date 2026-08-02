@@ -63,7 +63,7 @@ def run(
     # prevent uncontrolled command construction across callers.
     _validate_cmd(cmd)
     try:
-        result = subprocess.run(
+        result = subprocess.run(  # nosemgrep
             cmd, capture_output=True, text=True, timeout=timeout
         )
     except subprocess.TimeoutExpired as exc:
