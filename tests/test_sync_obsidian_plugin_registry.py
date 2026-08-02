@@ -13,8 +13,8 @@ import subprocess
 import sys
 import tempfile
 import unittest
+import unittest.mock
 from pathlib import Path
-from unittest import mock
 
 # Resolved once to an absolute path, matching this repo's tests/test_git_guardrails.py
 # convention, rather than the bare string "git".
@@ -78,7 +78,7 @@ class TrackedPluginManifestsTest(unittest.TestCase):
             encoding="utf-8",
         )
 
-        patcher = mock.patch.multiple(
+        patcher = unittest.mock.patch.multiple(
             sync_registry,
             REPO_ROOT=self.repo_root,
             OBSIDIAN_DIR=obsidian_dir,
@@ -127,7 +127,7 @@ class TrackedPluginManifestsTest(unittest.TestCase):
             )
             worktree_obsidian_dir = worktree_root / ".obsidian"
             try:
-                with mock.patch.multiple(
+                with unittest.mock.patch.multiple(
                     sync_registry,
                     REPO_ROOT=worktree_root,
                     OBSIDIAN_DIR=worktree_obsidian_dir,
