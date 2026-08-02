@@ -1,33 +1,30 @@
-"""Classify changed file paths into the two-axis risk scheme.
-
-Two independent axes, each scored for every file from its PATH alone:
-
-  * filetype  — WHAT the file is, by extension:
-      Natural Language (.md/.txt/...)             -> None  (no flag)
-      Machine Documentation (.json/.yaml/...; inert assets) -> "low"
-      Computer Code (.py/.sh/...)                 -> "med"
-      unrecognized extension                      -> "med" (conservative)
-  * filedepth — WHERE the file sits, by its literal directory prefix (see placement_flag):
-      repo root (not under "!/")                  -> None
-      inside "!/" (above the inner prefix)        -> "high"
-      inside "!/!/__!__/!/" and below             -> "nope"
-
-The two scores are independent and compose. Downstream, review_feedback_loop.py and
-agent-auto-pr.yml map the fields to flat labels: filetype -> risk/low|risk/med,
-filedepth -> risk/high|risk/nope; None on an axis stamps no label; None/None stamps none.
-
-JSON output (stdin: newline-separated paths):
-  {
-    "tier":  "low"|"high",                       # binary: SAFE_TIERS -> low, everything riskier -> high
-    "tier4": "clear"|"low"|"med"|"high"|"nope",  # composed read (nope>high>med>low>clear)
-    "filetype": None|"low"|"med",                # riskiest filetype across the changeset
-    "depth":    None|"high"|"nope",              # riskiest placement across the changeset (JSON key "depth")
-    "subtier":  None,                            # not implemented
-    "by_file":  [{"path","filetype","depth"}, ...],
-    "high_risk_files": [...], "low_risk_files": [...],
-  }
-"""
-
+"""Classify changed file paths into the two-axis risk scheme."""
+# Two independent axes, each scored for every file from its PATH alone:
+#
+#   * filetype  — WHAT the file is, by extension:
+#       Natural Language (.md/.txt/...)             -> None  (no flag)
+#       Machine Documentation (.json/.yaml/...; inert assets) -> "low"
+#       Computer Code (.py/.sh/...)                 -> "med"
+#       unrecognized extension                      -> "med" (conservative)
+#   * filedepth — WHERE the file sits, by its literal directory prefix (see placement_flag):
+#       repo root (not under "!/")                  -> None
+#       inside "!/" (above the inner prefix)        -> "high"
+#       inside "!/!/__!__/!/" and below             -> "nope"
+#
+# The two scores are independent and compose. Downstream, review_feedback_loop.py and
+# agent-auto-pr.yml map the fields to flat labels: filetype -> risk/low|risk/med,
+# filedepth -> risk/high|risk/nope; None on an axis stamps no label; None/None stamps none.
+#
+# JSON output (stdin: newline-separated paths):
+#   {
+#     "tier":  "low"|"high",                       # binary: SAFE_TIERS -> low, everything riskier -> high
+#     "tier4": "clear"|"low"|"med"|"high"|"nope",  # composed read (nope>high>med>low>clear)
+#     "filetype": None|"low"|"med",                # riskiest filetype across the changeset
+#     "depth":    None|"high"|"nope",              # riskiest placement across the changeset (JSON key "depth")
+#     "subtier":  None,                            # not implemented
+#     "by_file":  [{"path","filetype","depth"}, ...],
+#     "high_risk_files": [...], "low_risk_files": [...],
+#   }
 import json
 import posixpath
 import sys

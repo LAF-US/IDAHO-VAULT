@@ -186,13 +186,10 @@ LABEL_SPECS: dict[str, tuple[str, str]] = {
 
 
 def _auto_merge_state(owner: str, repo: str, pr_number: int) -> tuple[bool, bool]:
-    """Return ``(auto_merge_enabled, in_merge_queue)`` for the PR.
-
-    Fail-open to ``(False, False)``: if the state can't be read, the caller
-    behaves exactly as it did before this guard existed (a plain ``--auto``
-    enable) — never worse than the old code, and a transient read error never
-    evicts a queued PR.
-    """
+    """Return ``(auto_merge_enabled, in_merge_queue)`` for the PR."""
+    # Fail-open to ``(False, False)``: if the state can't be read, the caller behaves
+    # exactly as it did before this guard existed (a plain ``--auto`` enable) — never
+    # worse than the old code, and a transient read error never evicts a queued PR.
     try:
         data = _graphql(
             """
@@ -906,13 +903,11 @@ def _tier_from_pair(filetype_flag: str | None, depth_flag: str | None, marked: b
 
 
 def _classify_pr_pair(owner: str, repo: str, pr_number: int) -> tuple[str | None, str | None]:
-    """Run the two parallel analyses (classify_paths) over the PR's changed files.
-
-    The classifier is the SINGLE source of both axes (K1/K2); this is the engine-side
-    bridge that lets the restamp mirror the current diff on synchronize. Raises on any
-    API/import failure — callers fail SAFE by keeping the existing labels (a PR is never
-    armed off a failed classification; an unmarked PR holds).
-    """
+    """Run the two parallel analyses (classify_paths) over the PR's changed files."""
+    # The classifier is the SINGLE source of both axes (K1/K2); this is the engine-side
+    # bridge that lets the restamp mirror the current diff on synchronize. Raises on any
+    # API/import failure — callers fail SAFE by keeping the existing labels (a PR is never
+    # armed off a failed classification; an unmarked PR holds).
     result = _run(
         [
             "gh", "api", "--paginate",
