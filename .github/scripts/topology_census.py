@@ -104,7 +104,7 @@ def _git_path_is_ignored(root: Path, relpath: str) -> bool:
             timeout=30,
             check=False,
         )
-    except subprocess.TimeoutExpired:
+    except (OSError, subprocess.TimeoutExpired):
         return False
     return result.returncode == 0
 
@@ -122,7 +122,7 @@ def _git_status_lines(root: Path, relpath: str) -> list[str]:
             timeout=30,
             check=False,
         )
-    except subprocess.TimeoutExpired:
+    except (OSError, subprocess.TimeoutExpired):
         return []
     return [line.rstrip() for line in result.stdout.splitlines() if line.strip()]
 

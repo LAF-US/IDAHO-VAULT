@@ -237,6 +237,23 @@ class TopologyCensusTest(unittest.TestCase):
             self.assertFalse(topology_census._git_repo_available(self.root))
             self.assertEqual(topology_census._git_tracked_files(self.root), set())
 
+    def test_git_path_is_ignored_fails_soft_on_oserror(self) -> None:
+        # _git_repo_available() already fails soft on OSError; check-ignore's own
+        # subprocess.run call must match that contract instead of only catching
+        # TimeoutExpired and letting a mid-run OSError crash the census.
+        with (
+            patch.object(topology_census, "_git_repo_available", return_value=True),
+            patch.object(topology_census.subprocess, "run", side_effect=OSError("boom")),
+        ):
+            self.assertFalse(topology_census._git_path_is_ignored(self.root, "some/path"))
+
+    def test_git_status_lines_fails_soft_on_oserror(self) -> None:
+        with (
+            patch.object(topology_census, "_git_repo_available", return_value=True),
+            patch.object(topology_census.subprocess, "run", side_effect=OSError("boom")),
+        ):
+            self.assertEqual(topology_census._git_status_lines(self.root, "some/path"), [])
+
 
 if __name__ == "__main__":
     unittest.main()
