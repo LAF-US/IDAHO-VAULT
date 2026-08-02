@@ -1,7 +1,8 @@
-"""Regression coverage for #514: an untracked/gitignored local plugin
-manifest present only in this checkout must never leak into the generated
-registry, and a linked worktree of the same commit must produce identical
-output to the main checkout.
+"""Regression coverage for #514: untracked local plugins must not leak in.
+
+An untracked/gitignored local plugin manifest present only in this checkout
+must never appear in the generated registry, and a linked worktree of the
+same commit must produce identical output to the main checkout.
 """
 
 from __future__ import annotations
@@ -13,6 +14,7 @@ import sys
 import tempfile
 import unittest
 from pathlib import Path
+from unittest import mock
 
 # Resolved once to an absolute path, matching this repo's tests/test_git_guardrails.py
 # convention, rather than the bare string "git".
@@ -76,31 +78,19 @@ class TrackedPluginManifestsTest(unittest.TestCase):
             encoding="utf-8",
         )
 
-        self._orig = {
-            name: getattr(sync_registry, name)
-            for name in (
-                "REPO_ROOT",
-                "OBSIDIAN_DIR",
-                "COMMUNITY_CONFIG",
-                "CORE_CONFIG",
-                "PLUGIN_DIR",
-                "MANIFEST_PATH",
-                "SWARM_PATH",
-            )
-        }
-        sync_registry.REPO_ROOT = self.repo_root
-        sync_registry.OBSIDIAN_DIR = obsidian_dir
-        sync_registry.COMMUNITY_CONFIG = obsidian_dir / "community-plugins.json"
-        sync_registry.CORE_CONFIG = obsidian_dir / "core-plugins.json"
-        sync_registry.PLUGIN_DIR = plugin_dir
-        sync_registry.MANIFEST_PATH = self.repo_root / "manifest.json"
-        sync_registry.SWARM_PATH = self.repo_root / "swarm.json"
-
-    def tearDown(self):
-        """Restore the module's real repo-path constants and remove the temp repo."""
-        for name, value in self._orig.items():
-            setattr(sync_registry, name, value)
-        self._tmpdir.cleanup()
+        patcher = mock.patch.multiple(
+            sync_registry,
+            REPO_ROOT=self.repo_root,
+            OBSIDIAN_DIR=obsidian_dir,
+            COMMUNITY_CONFIG=obsidian_dir / "community-plugins.json",
+            CORE_CONFIG=obsidian_dir / "core-plugins.json",
+            PLUGIN_DIR=plugin_dir,
+            MANIFEST_PATH=self.repo_root / "manifest.json",
+            SWARM_PATH=self.repo_root / "swarm.json",
+        )
+        patcher.start()
+        self.addCleanup(patcher.stop)
+        self.addCleanup(self._tmpdir.cleanup)
 
     def test_untracked_local_plugin_is_excluded(self):
         """A manifest present on disk but not `git add`-ed must not be enumerated."""
@@ -135,16 +125,19 @@ class TrackedPluginManifestsTest(unittest.TestCase):
                 str(worktree_root),
                 "HEAD",
             )
+            worktree_obsidian_dir = worktree_root / ".obsidian"
             try:
-                sync_registry.REPO_ROOT = worktree_root
-                sync_registry.OBSIDIAN_DIR = worktree_root / ".obsidian"
-                sync_registry.COMMUNITY_CONFIG = sync_registry.OBSIDIAN_DIR / "community-plugins.json"
-                sync_registry.CORE_CONFIG = sync_registry.OBSIDIAN_DIR / "core-plugins.json"
-                sync_registry.PLUGIN_DIR = sync_registry.OBSIDIAN_DIR / "plugins"
-                sync_registry.MANIFEST_PATH = worktree_root / "manifest.json"
-                sync_registry.SWARM_PATH = worktree_root / "swarm.json"
-
-                worktree_state = sync_registry.build_state()
+                with mock.patch.multiple(
+                    sync_registry,
+                    REPO_ROOT=worktree_root,
+                    OBSIDIAN_DIR=worktree_obsidian_dir,
+                    COMMUNITY_CONFIG=worktree_obsidian_dir / "community-plugins.json",
+                    CORE_CONFIG=worktree_obsidian_dir / "core-plugins.json",
+                    PLUGIN_DIR=worktree_obsidian_dir / "plugins",
+                    MANIFEST_PATH=worktree_root / "manifest.json",
+                    SWARM_PATH=worktree_root / "swarm.json",
+                ):
+                    worktree_state = sync_registry.build_state()
             finally:
                 _run_git(self.repo_root, "worktree", "remove", "--force", str(worktree_root))
 
