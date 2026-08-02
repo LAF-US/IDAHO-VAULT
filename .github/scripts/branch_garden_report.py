@@ -73,8 +73,13 @@ def branch_age_days(branch: str) -> int:
 def branch_has_merge_base(branch: str) -> bool:
     try:
         run_text(["git", "merge-base", "origin/main", f"origin/{branch}"])
-    except subprocess.CalledProcessError as exc:
-        if exc.returncode == 1:
+    except RuntimeError as exc:
+        # _run() wraps the underlying CalledProcessError into RuntimeError,
+        # so it -- not CalledProcessError -- is what actually propagates here.
+        # `git merge-base` exits 1 specifically for "no common ancestor";
+        # anything else is a real failure and should still surface.
+        cause = exc.__cause__
+        if isinstance(cause, subprocess.CalledProcessError) and cause.returncode == 1:
             return False
         raise
     return True

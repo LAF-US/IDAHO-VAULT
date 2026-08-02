@@ -148,7 +148,7 @@ def main() -> int:
         ensure_labels()
         for pr in stale:
             set_state(int(pr["number"]), str(pr["lifecycle_state"]))
-            subprocess.run(
+            run_text(
                 [
                     "gh",
                     "pr",
@@ -156,9 +156,7 @@ def main() -> int:
                     str(pr["number"]),
                     "--comment",
                     args.comment,
-                ],
-                check=True,
-                timeout=60,
+                ]
             )
 
     lines = [
