@@ -163,14 +163,14 @@ class LookupTest(TestCase):
             json_fields="number,title",
         )
 
-    def test_find_open_issue_returns_none_when_the_search_fails(self) -> None:
-        # A failed lookup must not be mistaken for "no issue exists" and then open a
-        # duplicate — but it also must not crash the workflow. None, and the caller
-        # creates one; that is the accepted trade recorded here.
+    def test_find_open_issue_raises_when_the_search_fails(self) -> None:
+        # A failed lookup must not be mistaken for "no issue exists": the caller would
+        # then open a duplicate on every transient gh/API blip. It propagates instead,
+        # matching what this did before the gh_cli migration.
         with self._env(), mock.patch.object(
             issue_reconciler.gh_cli, "issue_search_open", side_effect=RuntimeError("gh down")
-        ):
-            self.assertIsNone(issue_reconciler.find_open_issue_number("anything"))
+        ), self.assertRaises(RuntimeError):
+            issue_reconciler.find_open_issue_number("anything")
 
     def test_find_open_issue_survives_unparseable_output(self) -> None:
         with self._env(), mock.patch.object(
