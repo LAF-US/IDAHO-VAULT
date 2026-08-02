@@ -111,22 +111,59 @@ class WorkflowSecurityInvariantsTest(unittest.TestCase):
 
     def test_flatten_label_migration_is_dispatch_only_and_least_privilege(self) -> None:
         # This one-shot migration edits PR labels and DELETES label definitions — a
-        # security-sensitive surface. Pin its trigger to workflow_dispatch ONLY (no schedule,
-        # no PR/push auto-trigger) and its permissions to the exact minimum the steps need
-        # (read contents to classify; issues + pull-requests write to edit/delete labels).
-        wf = yaml.safe_load(
-            (WORKFLOWS / "flatten-label-migration.yml").read_text(encoding="utf-8")
-        )
-        events = wf.get("on", wf.get(True)) or {}
-        names = set(events) if isinstance(events, (dict, list)) else {events}
+        # security-sensitive surface. It is split three ways so the destructive mode has to
+        # be chosen by name rather than by clearing a dry-run checkbox: the logic file is
+        # reusable-only (never dispatchable, never auto-triggered), and each entry point is
+        # dispatch-only with NO inputs. Pin all of it, plus permissions at the exact minimum
+        # the steps need (read contents to classify; issues + pull-requests write to
+        # edit/delete labels), on every one of the three files.
+        least_privilege = {"contents": "read", "pull-requests": "write", "issues": "write"}
+        logic = "flatten-label-migration.yml"
+        entry_points = {
+            "flatten-label-migration-preview.yml": True,
+            "flatten-label-migration-apply.yml": False,
+        }
+
+        def _events(name: str) -> dict[str, object]:
+            wf = yaml.safe_load((WORKFLOWS / name).read_text(encoding="utf-8"))
+            # PyYAML resolves the bare `on:` key to the boolean True, hence the fallback.
+            events = wf.get("on", wf.get(True)) or {}
+            self.assertEqual(
+                wf.get("permissions"), least_privilege,
+                f"{name} must declare exactly the least-privilege permission set",
+            )
+            return {"names": set(events) if isinstance(events, (dict, list)) else {events},
+                    "on": events, "wf": wf}
+
+        logic_events = _events(logic)
         self.assertEqual(
-            names, {"workflow_dispatch"},
-            "migration must be dispatch-only (no schedule/PR/push triggers)",
+            logic_events["names"], {"workflow_call"},
+            f"{logic} holds the destructive steps: it must be callable only, never "
+            "dispatchable and never auto-triggered (no schedule/PR/push)",
         )
-        self.assertEqual(
-            wf.get("permissions"),
-            {"contents": "read", "pull-requests": "write", "issues": "write"},
-        )
+
+        for name, dry_run in entry_points.items():
+            info = _events(name)
+            self.assertEqual(
+                info["names"], {"workflow_dispatch"},
+                f"{name} must be dispatch-only (no schedule/PR/push triggers)",
+            )
+            dispatch = info["on"].get("workflow_dispatch") or {}
+            self.assertFalse(
+                isinstance(dispatch, dict) and dispatch.get("inputs"),
+                f"{name} must take NO dispatch inputs — the mode is the workflow you pick, "
+                "not a parameter on a run that can also delete label definitions "
+                "(also Checkov CKV_GHA_7)",
+            )
+            jobs = info["wf"]["jobs"]
+            self.assertEqual(len(jobs), 1, f"{name} must be a single thin wrapper job")
+            job = next(iter(jobs.values()))
+            self.assertEqual(job.get("uses"), f"./.github/workflows/{logic}")
+            self.assertEqual(
+                job.get("with"), {"dry_run": dry_run},
+                f"{name} must pin dry_run={dry_run} — an entry point that can flip modes "
+                "would reintroduce exactly what the split removes",
+            )
 
     def test_security_required_check_contexts_are_distinct(self) -> None:
         secret = yaml.safe_load((WORKFLOWS / "secret-pattern-policy.yml").read_text(encoding="utf-8"))
