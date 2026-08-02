@@ -75,8 +75,7 @@ def read_enabled(path: Path) -> list[str]:
 
 
 def tracked_plugin_manifest_paths() -> list[Path]:
-    """List plugin manifests Git actually tracks at HEAD's index, not whatever
-    happens to be sitting on this checkout's disk.
+    """List plugin manifests Git actually tracks, not whatever sits on disk.
 
     A filesystem glob over PLUGIN_DIR picks up locally-installed, gitignored
     plugin directories (e.g. `.obsidian/plugins/obsidianclaw/`) that only
