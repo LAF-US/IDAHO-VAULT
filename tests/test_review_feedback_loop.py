@@ -1075,17 +1075,21 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             )
 
     def test_update_branch_tri_state_success_and_failure(self) -> None:
+        # Uses the real slug: _slug pins the engine to LAF-US/IDAHO-VAULT so the
+        # owner/repo cannot travel into a command line, which is what closes the
+        # py/command-line-injection flow through this path.
         with mock.patch.object(review_feedback_loop, "_run") as run:
-            ok, err = review_feedback_loop._update_branch("o", "r", 9)
+            ok, err = review_feedback_loop._update_branch("LAF-US", "IDAHO-VAULT", 9)
         self.assertTrue(ok)
         self.assertIsNone(err)
         run.assert_called_once_with(
-            ["gh", "api", "--method", "PUT", "repos/o/r/pulls/9/update-branch"]
+            ["gh", "api", "--method", "PUT",
+             "repos/LAF-US/IDAHO-VAULT/pulls/9/update-branch"]
         )
         with mock.patch.object(
             review_feedback_loop, "_run", side_effect=RuntimeError("conflict")
         ):
-            ok, err = review_feedback_loop._update_branch("o", "r", 9)
+            ok, err = review_feedback_loop._update_branch("LAF-US", "IDAHO-VAULT", 9)
         self.assertFalse(ok)
         self.assertEqual(err, "conflict")
 
