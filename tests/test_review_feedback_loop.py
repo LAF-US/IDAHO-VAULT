@@ -388,7 +388,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertTrue(state["lane_complete"])
         self.assertFalse(state["flag_clearable"])
         self.assertFalse(state["eligible_for_auto_merge"])
-        with mock.patch.object(review_feedback_loop, "_edit_label") as edit_label, \
+        with mock.patch.object(review_feedback_loop, "_edit_label"), \
              mock.patch.object(review_feedback_loop, "_disable_auto_merge"):
             actions = review_feedback_loop.apply_review_state_projection(18, state)
         self.assertNotIn("remove:risk/nope", actions)
