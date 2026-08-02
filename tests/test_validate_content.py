@@ -96,6 +96,17 @@ class ValidateContentTest(unittest.TestCase):
 
         self.assertIn("could not run", str(exc.exception))
 
+    def test_run_git_error_message_does_not_assume_command_shape(self) -> None:
+        # command[1] isn't always the subcommand (e.g. a leading "-C <dir>" flag) --
+        # the error message must describe the actual command, not a fixed position.
+        with patch.object(
+            validate_content.subprocess, "run", side_effect=FileNotFoundError("git")
+        ):
+            with self.assertRaises(RuntimeError) as exc:
+                validate_content._run_git(["git", "-C", "/tmp", "status"])
+
+        self.assertIn("git -C /tmp status", str(exc.exception))
+
     def test_get_changed_files_reads_markdown_paths_from_stdin(self) -> None:
         stdin_text = "\n".join(
             [
