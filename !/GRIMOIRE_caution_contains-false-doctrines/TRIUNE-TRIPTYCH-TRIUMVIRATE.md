@@ -1,5 +1,5 @@
 ---
-title: "TRIUNE-TRIPTYCH-TRIUMVIRATE — The Sierpiński Covenant"
+title: "TRIUNE-TRIPTYCH-TRIUMVIRATE — The Sierpinski Covenant"
 status: active
 date created: 2026-04-04
 authority: "[[LOGAN]]"
@@ -9,7 +9,7 @@ stretch-goal: "April 2026"
 
 # TRIUNE-TRIPTYCH-TRIUMVIRATE
 
-## *The Sierpiński Covenant* - An Undead Lie
+## *The Sierpinski Covenant* - An Undead Lie
 
 > [!DANGER] Matter Before The Judge - Logan-Guided Marginalia
 > This leaf is quarantined mixed evidence. Logan confirms that the
@@ -122,9 +122,9 @@ The TRIUMVIRATE / THREE-in-ONE sits at the center — the still point where the 
 
 ---
 
-## The Sierpiński Logic
+## The Sierpinski Logic
 
-Each triad is itself three-in-one. Three triads are one meta-unity. This is the Sierpiński property: zoom in and find the same structure. Zoom out and find the same structure.
+Each triad is itself three-in-one. Three triads are one meta-unity. This is the Sierpinski property: zoom in and find the same structure. Zoom out and find the same structure.
 
 ```
 TRIUNE-TRIPTYCH-TRIUMVIRATE
@@ -171,7 +171,7 @@ The TRIUNE-TRIPTYCH-TRIUMVIRATE operates within a four-layer vault structure dec
 
 This framework is the **April 2026 stretch goal**: TRIUNE-TRIPTYCH-TRIUMVIRATE — THREES-IN-ONES.
 
-The Sierpiński triangle is the image. The inverted triangle is the complement. The hexagonal mesh is the expression. The vault is the record.
+The Sierpinski triangle is the image. The inverted triangle is the complement. The hexagonal mesh is the expression. The vault is the record.
 
 **Status:** TRIUNE ✓ | TRIPTYCH ✓ | TRIUMVIRATE — stub, pending Gemini (Concierge). Project: Burying Caesar complete.
 
