@@ -22,8 +22,6 @@ related:
   - VAULT-CONVENTIONS
 ---
 
-# Review/Merge Engine — Status Snapshot (2026-07-25)
-
 *Filed by [[Claude Code]] (software NAME; no delegated TITLE or OFFICE this session) — 2026-07-25, session_01Fipj4vEJ5ADPuunn9ed5Hd.*
 *Continues the Cluster A deep-dive of 2026-06-20, which mapped the knot and left §5 as a proposal awaiting Logan's decision. Logan has now decided. This snapshot records the decision and the start of the work — so it is not abandoned and re-derived a third time.*
 

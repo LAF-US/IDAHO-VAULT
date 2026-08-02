@@ -15,8 +15,6 @@ related:
 tags: [report, automation/auto-merge, agent/coordination, drift, single-source-of-truth, no-verdict]
 ---
 
-# Stop routing by author/branch — the engine is already the universal path
-
 *Drafted at Logan's direction. Records two decisions Logan gave this session and the grounded
 finding that reshaped them. Supersedes an earlier draft of this note that proposed a `*/*`
 branch-form gate — that was still routing by branch name, and the premise under it (a "missing
@@ -82,4 +80,4 @@ Increments B (strip `agent-auto-pr` classify) and C (deletion-list reconciliatio
 `!roman.claude.*` — office held, not claimed. Claude Code, session `…01Fipj4vEJ5ADPuunn9ed5Hd`.
 I propose; Logan inscribes.
 
-###### [["The world is quiet here."]]
+*[["The world is quiet here."]]*
