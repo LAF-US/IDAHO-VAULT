@@ -34,18 +34,15 @@ def _repo() -> tuple[str, str]:
 
 
 def _recurring_title(title: str) -> str:
-    """
-    Return ``title`` if it names a recurring issue this reconciler owns.
-
-    This is a find-or-create-by-title driver, so the title is an identifier rather
-    than free text — every workflow passes one of these five, and an unrecognized one
-    would open a stray issue nothing would ever reconcile or close. Adding a recurring
-    report means adding it here, which also keeps the set greppable in one place.
-
-    The literals are written inline, and the checked value is what gets returned and
-    used, because that is the shape a comparison-against-constants takes: it is what
-    keeps an arbitrary title from travelling onward into a command line.
-    """
+    """Return ``title`` if it names a recurring issue this reconciler owns."""
+    # This is a find-or-create-by-title driver, so the title is an identifier rather
+    # than free text — every workflow passes one of these five, and an unrecognized one
+    # would open a stray issue nothing would ever reconcile or close. Adding a recurring
+    # report means adding it here, which also keeps the set greppable in one place.
+    #
+    # The literals are written inline, and the checked value is what gets returned and
+    # used, because that is the shape a comparison-against-constants takes: it is what
+    # keeps an arbitrary title from travelling onward into a command line.
     if title not in (
         "[Branch Garden] Weekly report",
         "[Large File Watchdog] Weekly report",
@@ -67,12 +64,10 @@ def _strip_fingerprint(body: str) -> str:
 
 
 def ensure_body_fingerprint(body_file: Path) -> str:
-    """Stamp the body file with a digest of its own content and return the marker.
-
-    The digest is taken over the body with any previous marker stripped, so an
-    unchanged report produces an unchanged marker — that is what lets the caller
-    tell a repeat finding from a new one without diffing prose.
-    """
+    """Stamp the body file with a digest of its own content and return the marker."""
+    # The digest is taken over the body with any previous marker stripped, so an
+    # unchanged report produces an unchanged marker — that is what lets the caller
+    # tell a repeat finding from a new one without diffing prose.
     if ".." in body_file.parts:
         raise ValueError(f"Refusing a body path containing '..': {body_file}")
     body = body_file.read_text(encoding="utf-8")
@@ -84,11 +79,9 @@ def ensure_body_fingerprint(body_file: Path) -> str:
 
 
 def find_open_issue_number(title: str) -> int | None:
-    """Return the open issue whose title matches exactly, or None.
-
-    gh's search is fuzzy, so the exact-title check below is what actually decides;
-    the search only narrows the page.
-    """
+    """Return the open issue whose title matches exactly, or None."""
+    # gh's search is fuzzy, so the exact-title check below is what actually decides;
+    # the search only narrows the page.
     owner, repo = _repo()
     # A failed search is NOT "no such issue". Swallowing the error here would make the
     # caller open a duplicate on every transient gh/API blip, so the failure propagates
@@ -140,15 +133,13 @@ def create_issue(title: str, body_file: Path) -> int:
 
 
 def comment_issue(issue_number: int, body_file: Path) -> None:
-    """Append the current report to an existing issue as a comment.
-
-    Passes the body's *text*, not this path. ``body_file`` arrives from the
-    ``--body-file`` command-line argument, so handing it to ``issue_comment_file``
-    would put caller-controlled input directly into argv — the "uncontrolled command
-    line" flow this PR exists to close. ``issue_comment`` writes the text to a
-    temp file `gh_cli` owns and passes *that* path instead, so argv carries only
-    tokens the module produced.
-    """
+    """Append the current report to an existing issue as a comment."""
+    # Passes the body's *text*, not this path. ``body_file`` arrives from the
+    # ``--body-file`` command-line argument, so handing it to ``issue_comment_file``
+    # would put caller-controlled input directly into argv — the "uncontrolled command
+    # line" flow this PR exists to close. ``issue_comment`` writes the text to a
+    # temp file `gh_cli` owns and passes *that* path instead, so argv carries only
+    # tokens the module produced.
     owner, repo = _repo()
     gh_cli.issue_comment(
         issue_number, owner=owner, repo=repo,
@@ -169,13 +160,11 @@ def reconcile_issue(
     has_findings: bool,
     resolved_comment: str,
 ) -> dict[str, object]:
-    """Open, update, or close the recurring issue for ``title`` to match the findings.
-
-    Four outcomes, reported as ``issue_action``: ``created`` (findings, no open issue),
-    ``commented`` (findings the issue has not already recorded), ``noop_duplicate``
-    (findings identical to what is already there, by fingerprint), and ``closed``
-    (no findings left). Writes both to ``GITHUB_OUTPUT`` when the workflow sets it.
-    """
+    """Open, update, or close the recurring issue for ``title`` to match the findings."""
+    # Four outcomes, reported as ``issue_action``: ``created`` (findings, no open issue),
+    # ``commented`` (findings the issue has not already recorded), ``noop_duplicate``
+    # (findings identical to what is already there, by fingerprint), and ``closed``
+    # (no findings left). Writes both to ``GITHUB_OUTPUT`` when the workflow sets it.
     title = _recurring_title(title)
     issue_number = find_open_issue_number(title)
     issue_action = "noop"
