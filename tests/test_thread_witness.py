@@ -1,9 +1,7 @@
-"""Tests for thread_witness.py — the looker read/classify/report side.
-
-Migrated from test_review_feedback_loop.py when the looker was extracted into its own
-module (2026-07-25, Logan's decision), plus dedicated tests for the two helpers the
-extraction split out of `_classify_pr_for_looker` to lower its complexity.
-"""
+"""Tests for thread_witness.py — the looker read/classify/report side."""
+# Migrated from test_review_feedback_loop.py when the looker was extracted into its own
+# module (2026-07-25, Logan's decision), plus dedicated tests for the two helpers the
+# extraction split out of `_classify_pr_for_looker` to lower its complexity.
 
 # Test-file scope: rules that don't fit a test module. Tests must call the private functions
 # they cover (protected-access); test names are self-documenting (missing docstrings); and the
@@ -11,6 +9,8 @@ extraction split out of `_classify_pr_for_looker` to lower its complexity.
 # pylint: disable=missing-function-docstring,missing-class-docstring,protected-access,too-many-arguments
 
 from __future__ import annotations
+
+from typing import Any
 
 import contextlib
 import io
@@ -49,7 +49,7 @@ def _thread(
     author_type: str = "User",
     body: str = "review note",
     resolved_by: str | None = None,
-) -> dict[str, object]:
+) -> dict[str, Any]:
     return {
         "id": "THREAD_1",
         "isResolved": resolved,
@@ -81,7 +81,7 @@ def _pr(
     threads_truncated: bool = False,
     auto_merge_enabled: bool = False,
     state: str = "OPEN",
-) -> dict[str, object]:
+) -> dict[str, Any]:
     created_at = created_at or datetime(2026, 4, 16, 2, 0, tzinfo=timezone.utc)
     updated_at = updated_at or created_at
     return {
@@ -100,11 +100,11 @@ def _pr(
     }
 
 
-def _bot_thread() -> dict[str, object]:
+def _bot_thread() -> dict[str, Any]:
     return _thread(authors=("coderabbitai",), author_type="Bot")
 
 
-def _looked_open_thread() -> dict[str, object]:
+def _looked_open_thread() -> dict[str, Any]:
     thread = _bot_thread()
     body = review_feedback_loop._build_attestation("claude-code-bot", "advisory", "ok")
     thread["comments"]["nodes"].append(
