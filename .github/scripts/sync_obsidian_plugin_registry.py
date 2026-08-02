@@ -18,6 +18,7 @@ from __future__ import annotations
 import argparse
 import copy
 import json
+import shutil
 import subprocess
 import sys
 from pathlib import Path
@@ -31,6 +32,11 @@ CORE_CONFIG = OBSIDIAN_DIR / "core-plugins.json"
 PLUGIN_DIR = OBSIDIAN_DIR / "plugins"
 MANIFEST_PATH = REPO_ROOT / "manifest.json"
 SWARM_PATH = REPO_ROOT / "swarm.json"
+
+# Resolved once to an absolute path (matching this repo's tests/test_git_guardrails.py
+# convention) rather than the bare string "git", so subprocess never depends on
+# whatever happens to be first on PATH.
+GIT_BIN = shutil.which("git") or "git"
 
 PLUGIN_REGISTRY_CANDIDATES = (
     "!-PLUGIN-REGISTRY.md",
@@ -80,7 +86,7 @@ def tracked_plugin_manifest_paths() -> list[Path]:
     reads the tracked index rather than ambient local state. See #514.
     """
     result = subprocess.run(
-        ["git", "ls-files", "-z", "--", ".obsidian/plugins/*/manifest.json"],
+        [GIT_BIN, "ls-files", "-z", "--", ".obsidian/plugins/*/manifest.json"],
         cwd=REPO_ROOT,
         capture_output=True,
         check=True,
