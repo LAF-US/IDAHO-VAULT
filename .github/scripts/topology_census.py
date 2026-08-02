@@ -82,12 +82,16 @@ def _git_repo_available(root: Path) -> bool:
 
 
 def _git_tracked_files(root: Path) -> set[str]:
+    # Deliberately fail-closed (unlike the sibling git helpers below): this
+    # feeds _tracked_prefix_exists() for every entry in the census, so a
+    # swallowed failure here doesn't just degrade one field -- it silently
+    # marks the *entire vault* untracked, and that report gets auto-committed
+    # by sort-audit.yml. Only "not a git repo at all" (_git_repo_available)
+    # is a legitimate reason to return an empty set; any other failure past
+    # that point should crash the run rather than produce a false census.
     if not _git_repo_available(root):
         return set()
-    try:
-        output = _run_git(root, "ls-files")
-    except (subprocess.TimeoutExpired, subprocess.CalledProcessError, OSError):
-        return set()
+    output = _run_git(root, "ls-files")
     return {line for line in output.splitlines() if line}
 
 
