@@ -32,6 +32,8 @@ from __future__ import annotations
 
 import argparse
 import json
+from pathlib import Path
+import tempfile
 import os
 import re
 import sys
@@ -314,7 +316,7 @@ def _update_branch(owner: str, repo: str, pr_number: int) -> tuple[bool, str | N
                 "api",
                 "--method",
                 "PUT",
-                f"repos/{owner}/{repo}/pulls/{pr_number}/update-branch",
+                f"repos/{_slug(owner, repo)}/pulls/{_num(pr_number)}/update-branch",
             ]
         )
     except RuntimeError as exc:
@@ -365,7 +367,7 @@ def _arm_auto_merge(owner: str, repo: str, pr_number: int) -> tuple[bool, str | 
             # ("Cannot use `-d` or `--delete-branch` when merge queue enabled"),
             # which crashed every arm attempt. Head-branch cleanup belongs to the
             # repo's delete-on-merge behavior / branch-cleanup workflow, not here.
-            _run(["gh", "pr", "merge", str(pr_number), "--merge", "--auto"])
+            _run(["gh", "pr", "merge", _num(pr_number), "--merge", "--auto"])
         except RuntimeError as exc:
             if not any(fragment in str(exc) for fragment in AUTO_MERGE_AUTHZ_FRAGMENTS):
                 raise
@@ -410,7 +412,7 @@ def _maybe_arm_auto_merge(
         # so disable the auto-merge we just enabled and report failure rather than leave
         # an un-trackable armed PR.
         try:
-            _run(["gh", "pr", "edit", str(pr_number), "--add-label", DEFAULT_AUTO_MERGE_LABEL])
+            _run(["gh", "pr", "edit", _num(pr_number), "--add-label", DEFAULT_AUTO_MERGE_LABEL])
         except RuntimeError as exc:
             _disable_auto_merge(pr_number)
             return {
@@ -747,19 +749,46 @@ def ensure_labels() -> None:
         _ensure_label(label, color, description)
 
 
+def _num(value: int) -> str:
+    """Render a PR number as argv text, rejecting non-numbers."""
+    number = int(value)
+    if number <= 0:
+        raise ValueError(f"Not a valid PR number: {value!r}")
+    return str(number)
+
+
+def _slug(owner: str, repo: str) -> str:
+    """Return ``owner/repo``, pinned to the one repository this engine governs."""
+    # Written as inline literals, and the checked values are the ones used, because
+    # that is the shape a comparison-against-constants takes — it is what keeps an
+    # arbitrary --repo from travelling onward into a command line.
+    if owner not in ("LAF-US",) or repo not in ("IDAHO-VAULT",):
+        raise ValueError(f"This engine is scoped to LAF-US/IDAHO-VAULT, got: {owner!r}/{repo!r}")
+    return f"{owner}/{repo}"
+
+
 def _edit_label(pr_number: int, *, add: str | None = None, remove: str | None = None) -> None:
     if add:
-        _run(["gh", "pr", "edit", str(pr_number), "--add-label", add], check=False)
+        _run(["gh", "pr", "edit", _num(pr_number), "--add-label", add], check=False)
     if remove:
-        _run(["gh", "pr", "edit", str(pr_number), "--remove-label", remove], check=False)
+        _run(["gh", "pr", "edit", _num(pr_number), "--remove-label", remove], check=False)
 
 
 def _disable_auto_merge(pr_number: int, *, check: bool = False) -> None:
-    _run(["gh", "pr", "merge", str(pr_number), "--disable-auto"], check=check)
+    _run(["gh", "pr", "merge", _num(pr_number), "--disable-auto"], check=check)
 
 
 def _comment(pr_number: int, body: str) -> None:
-    _run(["gh", "pr", "comment", str(pr_number), "--body", body])
+    """Post a PR comment with the body carried as a file, never as an argv element."""
+    # `gh` takes either --body or --body-file. These bodies are multi-line attestations
+    # assembled at runtime from CLI input, and argv is the wrong carrier twice over:
+    # ARG_MAX truncates a long one at the exec layer, and caller text in a command line
+    # is caller text in a command line. Writing it to a file this module owns leaves
+    # argv holding only tokens produced here.
+    with tempfile.TemporaryDirectory(prefix="rfl-comment-") as tmp:
+        path = Path(tmp) / "body.md"
+        path.write_text(body, encoding="utf-8")
+        _run(["gh", "pr", "comment", _num(pr_number), "--body-file", str(path)])
 
 
 def _csv_env(name: str, default: str = "") -> set[str]:
@@ -884,7 +913,7 @@ def _classify_pr_pair(owner: str, repo: str, pr_number: int) -> tuple[str | None
     result = _run(
         [
             "gh", "api", "--paginate",
-            f"repos/{owner}/{repo}/pulls/{pr_number}/files",
+            f"repos/{_slug(owner, repo)}/pulls/{_num(pr_number)}/files",
             "--jq", ".[].filename",
         ]
     )
@@ -1183,7 +1212,7 @@ def _list_open_pr_numbers(owner: str, repo: str) -> list[int]:
                 "pr",
                 "list",
                 "--repo",
-                f"{owner}/{repo}",
+                _slug(owner, repo),
                 "--state",
                 "open",
                 "--limit",
@@ -1635,9 +1664,9 @@ def _fetch_pr_merge_state(owner: str, repo: str, pr_number: int) -> dict:
         "gh",
         "pr",
         "view",
-        str(pr_number),
+        _num(pr_number),
         "--repo",
-        f"{owner}/{repo}",
+        _slug(owner, repo),
         "--json",
         "mergeable,mergeStateStatus,statusCheckRollup,isDraft,number",
     ]
@@ -1650,7 +1679,7 @@ def _list_pr_comment_bodies(owner: str, repo: str, pr_number: int) -> list[str]:
     cmd = [
         "gh",
         "api",
-        f"repos/{owner}/{repo}/issues/{pr_number}/comments",
+        f"repos/{_slug(owner, repo)}/issues/{_num(pr_number)}/comments",
         "--paginate",
     ]
     try:
