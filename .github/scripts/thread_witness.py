@@ -1,21 +1,19 @@
 #!/usr/bin/env python3
-"""GitHub PR looker/witness — the read/classify/report side.
-
-Extracted from review_feedback_loop.py on 2026-07-25 (Logan's decision: the looker is its
-own system — see REVIEW-MERGE-ENGINE-STATUS-2026-07-25.md). This module holds only the
-READ side: it resolves nothing and writes nothing.
-
-  - list-unlooked  : print the unresolved-thread worklist across open PRs.
-  - looker-walk    : classify every open PR into a looker lane (clear / machine-disposable
-                     / would-cascade / needs-human) plus a stale flag.
-  - render-worklist: render a looker-walk JSON report as a markdown triage surface.
-
-The write side (attest-resolve / engage-outdated / reconcile-witness) and the shared
-plumbing still live in review_feedback_loop.py; this module imports the three engine-side
-helpers it needs (`_list_open_pr_numbers`, `_parse_iso_datetime`, `_positive_int`)
-one-directionally, so there is no import cycle. Consolidating the shared plumbing into a
-library both import is the next extraction step.
-"""
+"""GitHub PR looker/witness — the read/classify/report side."""
+# Extracted from review_feedback_loop.py on 2026-07-25 (Logan's decision: the looker is its
+# own system — see REVIEW-MERGE-ENGINE-STATUS-2026-07-25.md). This module holds only the
+# READ side: it resolves nothing and writes nothing.
+#
+# - list-unlooked  : print the unresolved-thread worklist across open PRs.
+# - looker-walk    : classify every open PR into a looker lane (clear / machine-disposable
+# / would-cascade / needs-human) plus a stale flag.
+# - render-worklist: render a looker-walk JSON report as a markdown triage surface.
+#
+# The write side (attest-resolve / engage-outdated / reconcile-witness) and the shared
+# plumbing still live in review_feedback_loop.py; this module imports the three engine-side
+# helpers it needs (`_list_open_pr_numbers`, `_parse_iso_datetime`, `_positive_int`)
+# one-directionally, so there is no import cycle. Consolidating the shared plumbing into a
+# library both import is the next extraction step.
 
 from __future__ import annotations
 
@@ -40,12 +38,10 @@ from review_feedback_loop import (
 
 
 def _build_looker_queue(pr: dict) -> list[dict[str, object]]:
-    """Read-only worklist of unresolved threads on one PR for a looker.
-
-    Resolves nothing. Each entry carries what a looker needs to look: the
-    thread id, its comment authors, whether the anchor is outdated, whether a
-    look has already been attested, and a link.
-    """
+    """Read-only worklist of unresolved threads on one PR for a looker."""
+    # Resolves nothing. Each entry carries what a looker needs to look: the
+    # thread id, its comment authors, whether the anchor is outdated, whether a
+    # look has already been attested, and a link.
     items: list[dict[str, object]] = []
     for thread in (pr.get("reviewThreads") or {}).get("nodes") or []:
         if thread.get("isResolved"):
@@ -87,11 +83,9 @@ LOOKER_STALE_DAYS = 14
 
 
 def _thread_disposition(thread: dict) -> str:
-    """Classify one unresolved thread. Pure. One of: human, unprovable, looked-open, bot-disposable.
-
-    Split out of `_classify_pr_for_looker` so the per-thread decision is independently
-    testable and the classifier's own branching stays low.
-    """
+    """Classify one unresolved thread. Pure. One of: human, unprovable, looked-open, bot-disposable."""
+    # Split out of `_classify_pr_for_looker` so the per-thread decision is independently
+    # testable and the classifier's own branching stays low.
     page_info = (thread.get("comments") or {}).get("pageInfo")
     # An explicit "complete" page is hasNextPage is False; anything else (truncated
     # OR unknown/missing) is conservatively incomplete.
@@ -118,10 +112,8 @@ def _select_lane(  # pylint: disable=too-many-arguments,too-many-positional-argu
     machine_clearable: int,
     auto_merge_armed: bool,
 ) -> str:
-    """Pick the looker lane from the tallied thread dispositions. Pure.
-
-    Split out of `_classify_pr_for_looker` so lane selection is independently testable.
-    """
+    """Pick the looker lane from the tallied thread dispositions. Pure."""
+    # Split out of `_classify_pr_for_looker` so lane selection is independently testable.
     if threads_truncated or review_decision == "CHANGES_REQUESTED" or human or unprovable:
         return "needs-human"
     if unresolved_count == 0:
@@ -134,11 +126,9 @@ def _select_lane(  # pylint: disable=too-many-arguments,too-many-positional-argu
 def _tally_thread_plan(
     unresolved: list[dict],
 ) -> tuple[list[dict[str, object]], dict[str, int]]:
-    """Disposition each unresolved thread into a plan + per-lane counts. Pure.
-
-    Split out of `_classify_pr_for_looker` so the per-thread tally is independently
-    testable and the classifier's own branching stays low.
-    """
+    """Disposition each unresolved thread into a plan + per-lane counts. Pure."""
+    # Split out of `_classify_pr_for_looker` so the per-thread tally is independently
+    # testable and the classifier's own branching stays low.
     plan: list[dict[str, object]] = []
     counts = {"human": 0, "unprovable": 0, "looked-open": 0, "bot-disposable": 0}
     for thread in unresolved:
@@ -177,13 +167,11 @@ def _looker_pr_signals(pr: dict, *, now: datetime, stale_days: int) -> dict[str,
 
 
 def _is_safe_to_drain(lane: str, *, stale: bool, plan: list[dict[str, object]]) -> bool:
-    """Report whether a PR is a bare-drainable apply-pass candidate. Pure.
-
-    A bare attest-and-resolve could clear every thread WITHOUT a fix, so this demands
-    more than the coarse machine-disposable lane: the PR must not be stale, and every
-    thread must be bare-resolvable (outdated/looked). A needs-fix or apply-suggestion
-    thread is NOT bare-drainable. (codex on #529.)
-    """
+    """Report whether a PR is a bare-drainable apply-pass candidate. Pure."""
+    # A bare attest-and-resolve could clear every thread WITHOUT a fix, so this demands
+    # more than the coarse machine-disposable lane: the PR must not be stale, and every
+    # thread must be bare-resolvable (outdated/looked). A needs-fix or apply-suggestion
+    # thread is NOT bare-drainable. (codex on #529.)
     return (
         lane == "machine-disposable"
         and not stale
@@ -238,14 +226,12 @@ def _classify_pr_for_looker(
 
 
 def list_unlooked(args: argparse.Namespace) -> int:
-    """Print the looker queue across open PRs. Read-only: resolves nothing.
-
-    Layer A of the look-then-resolve design (#399). Surfaces unresolved review
-    threads that still need a looker, without touching any thread. Coverage is
-    bounded by `_fetch_pr` (up to the first 100 threads and 100 comments per
-    PR); deep cursor pagination is a follow-up if any PR exceeds those bounds.
-    Each thread carries a `looked` flag, so consumers can filter the queue.
-    """
+    """Print the looker queue across open PRs. Read-only: resolves nothing."""
+    # Layer A of the look-then-resolve design (#399). Surfaces unresolved review
+    # threads that still need a looker, without touching any thread. Coverage is
+    # bounded by `_fetch_pr` (up to the first 100 threads and 100 comments per
+    # PR); deep cursor pagination is a follow-up if any PR exceeds those bounds.
+    # Each thread carries a `looked` flag, so consumers can filter the queue.
     threads: list[dict[str, object]] = []
     for pr_number in _list_open_pr_numbers(args.owner, args.repo):
         threads.extend(_build_looker_queue(_fetch_pr(args.owner, args.repo, pr_number)))
@@ -263,15 +249,13 @@ def list_unlooked(args: argparse.Namespace) -> int:
 
 
 def looker_walk(args: argparse.Namespace) -> int:
-    """Walk every open PR and print the looker triage report. Read-only — resolves nothing.
-
-    Layer C of the look-then-resolve design (#399): turns the open-PR backlog into a
-    classified worklist (clear / machine-disposable / would-cascade / needs-human, plus a
-    stale/abandonment flag) so the backlog drains *with* judgment. This command WRITES
-    NOTHING; the guarded disposition path is `attest-resolve` (B2), gated separately. The
-    `safe_to_drain` list names the PRs a deterministic apply pass could clear without a
-    cascade or touching a human thread.
-    """
+    """Walk every open PR and print the looker triage report. Read-only — resolves nothing."""
+    # Layer C of the look-then-resolve design (#399): turns the open-PR backlog into a
+    # classified worklist (clear / machine-disposable / would-cascade / needs-human, plus a
+    # stale/abandonment flag) so the backlog drains *with* judgment. This command WRITES
+    # NOTHING; the guarded disposition path is `attest-resolve` (B2), gated separately. The
+    # `safe_to_drain` list names the PRs a deterministic apply pass could clear without a
+    # cascade or touching a human thread.
     now = datetime.now(timezone.utc)
     reports = [
         _classify_pr_for_looker(
@@ -364,12 +348,10 @@ def _worklist_body(reports: list) -> list[str]:
 
 
 def render_looker_worklist(report: dict) -> str:
-    """Render a looker-walk report (the `looker_walk` JSON) as a markdown worklist. Pure.
-
-    A read-only triage surface for a durable issue: the open-PR backlog grouped by lane
-    and by resolution disposition, so a looker can drain it with judgment. Resolves
-    nothing and decides nothing — it only makes the deterministic census legible.
-    """
+    """Render a looker-walk report (the `looker_walk` JSON) as a markdown worklist. Pure."""
+    # A read-only triage surface for a durable issue: the open-PR backlog grouped by lane
+    # and by resolution disposition, so a looker can drain it with judgment. Resolves
+    # nothing and decides nothing — it only makes the deterministic census legible.
     lines = _worklist_header(report)
     lines.append("")
     lines.append("### Per-PR worklist (PRs not in the `clear` lane)")
@@ -379,12 +361,10 @@ def render_looker_worklist(report: dict) -> str:
 
 
 def render_worklist(args: argparse.Namespace) -> int:  # pylint: disable=unused-argument
-    """Read a looker-walk JSON report from stdin and print the markdown worklist.
-
-    stdin is the ONLY input: the shell's own redirect (`render-worklist < report.json`)
-    covers the file case, so the tool takes no path argument at all — no user-controlled
-    path, nothing to open, nothing to sanitize.
-    """
+    """Read a looker-walk JSON report from stdin and print the markdown worklist."""
+    # stdin is the ONLY input: the shell's own redirect (`render-worklist < report.json`)
+    # covers the file case, so the tool takes no path argument at all — no user-controlled
+    # path, nothing to open, nothing to sanitize.
     raw = sys.stdin.read()
     print(render_looker_worklist(json.loads(raw or "{}")))
     return 0

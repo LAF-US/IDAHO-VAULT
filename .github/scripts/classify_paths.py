@@ -82,23 +82,23 @@ def placement_flag(path: str) -> str | None:
 
 
 def classify_file(path: str) -> tuple:
-    """Return (filetype_flag, placement_flag) for one path — two independent scores.
-    Windows-style separators are normalized to '/' first so the placement prefixes match
-    regardless of input source (git/gh emit '/', but local/tooling input may use '\\')."""
+    """Return (filetype_flag, placement_flag) for one path — two independent scores."""
+    # Windows-style separators are normalized to '/' first so the placement prefixes match
+    # regardless of input source (git/gh emit '/', but local/tooling input may use '\\').
     path = path.replace("\\", "/")
     return (filetype_flag(path), placement_flag(path))
 
 
 def riskiest(*flags) -> str | None:
-    """The riskiest non-None flag among `flags` by TIER_PRECEDENCE; None if all absent.
-    Used both to aggregate one axis across files and to combine the two axes."""
+    """The riskiest non-None flag among `flags` by TIER_PRECEDENCE; None if all absent."""
+    # Used both to aggregate one axis across files and to combine the two axes.
     present = [f for f in flags if f is not None]
     return min(present, key=TIER_PRECEDENCE.index) if present else None
 
 
 def combine(filetype, depth) -> str:
-    """Collapse the (filetype, depth) pair to one tier by TIER_PRECEDENCE (riskiest wins);
-    "clear" when both are None."""
+    """Collapse the (filetype, depth) pair to one tier by TIER_PRECEDENCE (riskiest wins)."""
+    # "clear" when both are None.
     return riskiest(filetype, depth) or CLEAR_TIER
 
 
