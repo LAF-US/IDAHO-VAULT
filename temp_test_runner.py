@@ -92,9 +92,9 @@ for test_file in test_files:
         capture_output=True,
         text=True, check=False)
     if result.returncode == 0:
-        print(f"✓ PASS")
+        print("✓ PASS")
     else:
-        print(f"✗ FAIL")
+        print("✗ FAIL")
         print("Output:")
         print(result.stdout)
         if result.stderr:

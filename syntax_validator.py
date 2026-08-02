@@ -100,5 +100,6 @@ def main():
     for test_file in test_files:
         print(f"  python -m pytest {test_file} -v")
 
+
 if __name__ == "__main__":
     main()
