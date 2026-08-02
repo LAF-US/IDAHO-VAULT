@@ -79,8 +79,9 @@ def branch_has_merge_base(branch: str) -> bool:
         # `git merge-base` exits 1 specifically for "no common ancestor";
         # anything else is a real failure and should still surface.
         cause = exc.__cause__
-        if isinstance(cause, subprocess.CalledProcessError) and cause.returncode == 1:
-            return False
+        if isinstance(cause, subprocess.CalledProcessError):
+            if cause.returncode == 1:
+                return False
         raise
     return True
 
