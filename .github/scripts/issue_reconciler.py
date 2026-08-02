@@ -140,10 +140,19 @@ def create_issue(title: str, body_file: Path) -> int:
 
 
 def comment_issue(issue_number: int, body_file: Path) -> None:
-    """Append the current report to an existing issue as a comment."""
+    """Append the current report to an existing issue as a comment.
+
+    Passes the body's *text*, not this path. ``body_file`` arrives from the
+    ``--body-file`` command-line argument, so handing it to ``issue_comment_file``
+    would put caller-controlled input directly into argv — the "uncontrolled command
+    line" flow this PR exists to close. ``issue_comment`` writes the text to a
+    temp file `gh_cli` owns and passes *that* path instead, so argv carries only
+    tokens the module produced.
+    """
     owner, repo = _repo()
-    gh_cli.issue_comment_file(
-        issue_number, owner=owner, repo=repo, body_file=str(body_file)
+    gh_cli.issue_comment(
+        issue_number, owner=owner, repo=repo,
+        body=body_file.read_text(encoding="utf-8"),
     )
 
 
