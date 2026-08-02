@@ -18,6 +18,7 @@ from __future__ import annotations
 import argparse
 import copy
 import json
+import subprocess
 import sys
 from pathlib import Path
 from typing import Any
@@ -67,12 +68,32 @@ def read_enabled(path: Path) -> list[str]:
     raise ValueError(f"{repo_rel(path)} must contain a JSON array or object")
 
 
+def tracked_plugin_manifest_paths() -> list[Path]:
+    """List plugin manifests Git actually tracks at HEAD's index, not whatever
+    happens to be sitting on this checkout's disk.
+
+    A filesystem glob over PLUGIN_DIR picks up locally-installed, gitignored
+    plugin directories (e.g. `.obsidian/plugins/obsidianclaw/`) that only
+    exist on some workstations/worktrees. Enumerating via `git ls-files`
+    instead means every checkout of the same commit -- main worktree, linked
+    worktree, or CI runner -- derives the identical manifest list, because it
+    reads the tracked index rather than ambient local state. See #514.
+    """
+    result = subprocess.run(
+        ["git", "ls-files", "-z", "--", ".obsidian/plugins/*/manifest.json"],
+        cwd=REPO_ROOT,
+        capture_output=True,
+        check=True,
+        text=True,
+    )
+    relative_paths = [p for p in result.stdout.split("\0") if p]
+    return [REPO_ROOT / p for p in sorted(relative_paths)]
+
+
 def read_plugin_manifests() -> dict[str, dict[str, Any]]:
     installed: dict[str, dict[str, Any]] = {}
-    if not PLUGIN_DIR.exists():
-        return installed
 
-    for manifest_path in sorted(PLUGIN_DIR.glob("*/manifest.json")):
+    for manifest_path in tracked_plugin_manifest_paths():
         data = load_json(manifest_path, {})
         plugin_id = str(data.get("id") or manifest_path.parent.name)
         installed[plugin_id] = {
