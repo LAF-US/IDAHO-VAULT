@@ -1,23 +1,21 @@
-"""Shared ``gh`` wrapper for the migrated PR and issue automation callers.
-
-The first member of the Cluster A redesign shared lib (#600 §5), landed
-independently per #601 item 4. `review_feedback_loop._run`, `pr_lifecycle._run`,
-and `issue_reconciler.gh` were three copies of the same thing: run a command,
-capture stdout/stderr as text, and on a non-zero exit raise a ``RuntimeError``
-carrying the command and both streams. This is that one definition; the engines
-import it instead of each keeping their own.
-
-The run primitive is **private** (``_run``). Migrated callers do not hand it argv — they
-call a typed operation (`pr_edit`, `pr_merge`, `graphql`, `api_pr_files`, …) that
-builds argv here from literal verb and flag tokens, placing caller data only in
-value positions and only after conversion/validation (`str(int(...))` for numbers,
-`_slug` for owner/repo). A caller therefore cannot splice a flag, an option, or a
-second command into the command line, because a caller never writes one. That is
-the fix for "uncontrolled command line": the line is fully controlled by this
-module, and the sink is unreachable from outside it.
-
-Adding a new ``gh`` invocation for these callers means adding a function here, not exporting `_run`.
-"""
+"""Shared ``gh`` wrapper for the migrated PR and issue automation callers."""
+# The first member of the Cluster A redesign shared lib (#600 §5), landed
+# independently per #601 item 4. `review_feedback_loop._run`, `pr_lifecycle._run`,
+# and `issue_reconciler.gh` were three copies of the same thing: run a command,
+# capture stdout/stderr as text, and on a non-zero exit raise a ``RuntimeError``
+# carrying the command and both streams. This is that one definition; the engines
+# import it instead of each keeping their own.
+#
+# The run primitive is **private** (``_run``). Migrated callers do not hand it argv — they
+# call a typed operation (`pr_edit`, `pr_merge`, `graphql`, `api_pr_files`, …) that
+# builds argv here from literal verb and flag tokens, placing caller data only in
+# value positions and only after conversion/validation (`str(int(...))` for numbers,
+# `_slug` for owner/repo). A caller therefore cannot splice a flag, an option, or a
+# second command into the command line, because a caller never writes one. That is
+# the fix for "uncontrolled command line": the line is fully controlled by this
+# module, and the sink is unreachable from outside it.
+#
+# Adding a new ``gh`` invocation for these callers means adding a function here, not exporting `_run`.
 
 from __future__ import annotations
 
@@ -35,25 +33,21 @@ _ALLOWED_EXECUTABLES: set[str] = {"gh"}
 
 
 def _as_text(value: bytes | str | None) -> str:
-    """Normalize a TimeoutExpired stream to str.
-
-    Under ``text=True`` the main result streams are str, but
-    ``TimeoutExpired.stdout``/``.stderr`` come back as bytes.
-    """
+    """Normalize a TimeoutExpired stream to str."""
+    # Under ``text=True`` the main result streams are str, but
+    # ``TimeoutExpired.stdout``/``.stderr`` come back as bytes.
     if isinstance(value, bytes):
         return value.decode("utf-8", errors="replace")
     return value or ""
 
 
 def _slug(owner: str, repo: str) -> str:
-    """Return ``owner/repo``, pinned to the one repository these engines govern.
-
-    Every caller here is vault infrastructure for LAF-US/IDAHO-VAULT — the arbiter
-    scripts already refuse to run anywhere else, and the label vocabulary, merge-queue
-    norm and lifecycle states this module encodes are all this repo's. Naming the
-    repository instead of accepting one keeps a mistyped or injected `--owner` from
-    reaching the API at all, rather than reaching it and being wrong.
-    """
+    """Return ``owner/repo``, pinned to the one repository these engines govern."""
+    # Every caller here is vault infrastructure for LAF-US/IDAHO-VAULT — the arbiter
+    # scripts already refuse to run anywhere else, and the label vocabulary, merge-queue
+    # norm and lifecycle states this module encodes are all this repo's. Naming the
+    # repository instead of accepting one keeps a mistyped or injected `--owner` from
+    # reaching the API at all, rather than reaching it and being wrong.
     if owner not in ("LAF-US",) or repo not in ("IDAHO-VAULT",):
         raise ValueError(
             f"These engines are scoped to LAF-US/IDAHO-VAULT, got: {owner!r}/{repo!r}"
@@ -70,14 +64,12 @@ def _num(value: int) -> str:
 
 
 def _label(name: str) -> str:
-    """Return a label name that argv cannot mistake for a flag.
-
-    `gh` is Cobra-based: a token starting with ``-`` is parsed as a flag before it is
-    considered as a positional or as a flag's value, so a dash-prefixed label name is
-    not "a label with an odd name" — it is a parse error or, worse, a different
-    command. Empty is rejected for the same reason: it disappears from the argv the
-    reader thinks they wrote.
-    """
+    """Return a label name that argv cannot mistake for a flag."""
+    # `gh` is Cobra-based: a token starting with ``-`` is parsed as a flag before it is
+    # considered as a positional or as a flag's value, so a dash-prefixed label name is
+    # not "a label with an odd name" — it is a parse error or, worse, a different
+    # command. Empty is rejected for the same reason: it disappears from the argv the
+    # reader thinks they wrote.
     if not name or name.startswith("-"):
         raise ValueError(f"Not a valid label name: {name!r}")
     return name
@@ -85,15 +77,13 @@ def _label(name: str) -> str:
 
 @contextmanager
 def _body_file(body: str):
-    """Yield a path holding ``body``, so the text never becomes an argv element.
-
-    `gh` takes either `--body` or `--body-file`. Comment bodies here are multi-line
-    attestations assembled at runtime, and argv is the wrong carrier for them twice
-    over: `ARG_MAX` truncates a long enough one at the exec layer, and every static
-    analyzer correctly reads caller text in a command line as caller text in a
-    command line. Writing it to a file and passing the path leaves argv holding only
-    tokens this module produced.
-    """
+    """Yield a path holding ``body``, so the text never becomes an argv element."""
+    # `gh` takes either `--body` or `--body-file`. Comment bodies here are multi-line
+    # attestations assembled at runtime, and argv is the wrong carrier for them twice
+    # over: `ARG_MAX` truncates a long enough one at the exec layer, and every static
+    # analyzer correctly reads caller text in a command line as caller text in a
+    # command line. Writing it to a file and passing the path leaves argv holding only
+    # tokens this module produced.
     with tempfile.TemporaryDirectory(prefix="gh-cli-body-") as tmp:
         path = Path(tmp) / "body.md"
         path.write_text(body, encoding="utf-8")
@@ -101,20 +91,18 @@ def _body_file(body: str):
 
 
 def _validate_cmd(cmd: list[str]) -> None:
-    """Check the argv list this module built before handing it to the exec layer.
-
-    Deliberately does NOT reject newlines/CRs in argv elements: `--body`,
-    `--description`, and similar flag values legitimately carry multi-line
-    markdown (PR comments, attestations, sortition posts -- this exact
-    check broke `review_feedback_loop.py`'s sync-pr/reconcile the moment it
-    landed, since every attestation/lifecycle comment is multi-line). A
-    newline inside one argv element is inert here regardless:
-    `subprocess.run` is always called with `shell=False`, so there is no
-    shell to reinterpret it. NUL is still rejected -- it truncates C
-    strings at the exec layer (CPython already raises ValueError on
-    embedded NULs; this just gives an earlier, clearer message from the
-    same guard as the rest of this check).
-    """
+    """Check the argv list this module built before handing it to the exec layer."""
+    # Deliberately does NOT reject newlines/CRs in argv elements: `--body`,
+    # `--description`, and similar flag values legitimately carry multi-line
+    # markdown (PR comments, attestations, sortition posts -- this exact
+    # check broke `review_feedback_loop.py`'s sync-pr/reconcile the moment it
+    # landed, since every attestation/lifecycle comment is multi-line). A
+    # newline inside one argv element is inert here regardless:
+    # `subprocess.run` is always called with `shell=False`, so there is no
+    # shell to reinterpret it. NUL is still rejected -- it truncates C
+    # strings at the exec layer (CPython already raises ValueError on
+    # embedded NULs; this just gives an earlier, clearer message from the
+    # same guard as the rest of this check).
     if not cmd:
         raise ValueError("Command must not be empty")
     if cmd[0] not in _ALLOWED_EXECUTABLES:
@@ -176,11 +164,9 @@ def pr_view(
     repo: str | None = None,
     check: bool = True,
 ) -> GhResult:
-    """Read PR fields as JSON. ``json_fields`` is a gh field list, not a shell string.
-
-    ``owner`` and ``repo`` are given together or not at all; omitted, gh resolves the
-    repository from the checkout it is run in.
-    """
+    """Read PR fields as JSON. ``json_fields`` is a gh field list, not a shell string."""
+    # ``owner`` and ``repo`` are given together or not at all; omitted, gh resolves the
+    # repository from the checkout it is run in.
     if (owner is None) != (repo is None):
         raise ValueError("pr_view takes owner and repo together, or neither")
     argv = ["gh", "pr", "view", _num(pr_number)]
@@ -208,12 +194,10 @@ def pr_merge(
     disable_auto: bool = False,
     check: bool = True,
 ) -> GhResult:
-    """Arm or disarm auto-merge. ``method`` is validated against the queue's norm.
-
-    K5/#631: the merge queue's configured method is the single norm, and `--merge` is
-    the one canonical inert spelling. Rejecting anything else here keeps a divergent
-    method opinion from being expressible at all, rather than caught later by a test.
-    """
+    """Arm or disarm auto-merge. ``method`` is validated against the queue's norm."""
+    # K5/#631: the merge queue's configured method is the single norm, and `--merge` is
+    # the one canonical inert spelling. Rejecting anything else here keeps a divergent
+    # method opinion from being expressible at all, rather than caught later by a test.
     if method != "merge":
         raise ValueError(f"merge method not allowed: {method!r} (the queue's method governs)")
     if auto and disable_auto:
@@ -239,11 +223,9 @@ def pr_list_open(
     json_fields: str = "number",
     check: bool = True,
 ) -> GhResult:
-    """List a repository's OPEN PRs as JSON.
-
-    Open is the only state this repo's engines census, so it is fixed here rather than
-    parameterized — a state nobody asks for is a value position nobody can misuse.
-    """
+    """List a repository's OPEN PRs as JSON."""
+    # Open is the only state this repo's engines census, so it is fixed here rather than
+    # parameterized — a state nobody asks for is a value position nobody can misuse.
     argv = [
         "gh", "pr", "list",
         "--repo", _slug(owner, repo),
@@ -265,11 +247,9 @@ ISSUE_SEARCH_LIMIT = 20
 def issue_search_open(
     owner: str, repo: str, *, search: str, json_fields: str, check: bool = True
 ) -> GhResult:
-    """Search a repository's OPEN issues, returning the requested JSON fields.
-
-    The reconciler's find-or-create is the only caller and only ever looks for an open
-    issue by title, so state and page size are fixed rather than parameterized.
-    """
+    """Search a repository's OPEN issues, returning the requested JSON fields."""
+    # The reconciler's find-or-create is the only caller and only ever looks for an open
+    # issue by title, so state and page size are fixed rather than parameterized.
     argv = [
         "gh", "issue", "list",
         "--repo", _slug(owner, repo),
@@ -354,11 +334,9 @@ def issue_close(
 
 
 def graphql(query: str, **variables: object) -> GhResult:
-    """Execute a GraphQL document, passing ints with ``-F`` and everything else with ``-f``.
-
-    Returns the raw ``CompletedProcess``; payload and GraphQL-error handling belong
-    to the caller, which knows what shape it asked for.
-    """
+    """Execute a GraphQL document, passing ints with ``-F`` and everything else with ``-f``."""
+    # Returns the raw ``CompletedProcess``; payload and GraphQL-error handling belong
+    # to the caller, which knows what shape it asked for.
     argv = ["gh", "api", "graphql", "-f", f"query={query}"]
     for key, value in variables.items():
         if not key.isidentifier():
@@ -415,13 +393,11 @@ def api_issue_comments(
 def _run(
     cmd: list[str], check: bool = True, timeout: float | None = 300
 ) -> GhResult:
-    """Run ``cmd``, capturing stdout/stderr as text.
-
-    On a non-zero exit (when ``check`` is True), raise ``RuntimeError`` carrying the
-    command and both streams so the failure is never silent. ``timeout`` (seconds;
-    ~5 min default) guards against a stalled call hanging the workflow indefinitely —
-    a timeout raises the same ``RuntimeError`` surface.
-    """
+    """Run ``cmd``, capturing stdout/stderr as text."""
+    # On a non-zero exit (when ``check`` is True), raise ``RuntimeError`` carrying the
+    # command and both streams so the failure is never silent. ``timeout`` (seconds;
+    # ~5 min default) guards against a stalled call hanging the workflow indefinitely —
+    # a timeout raises the same ``RuntimeError`` surface.
     # `cmd` is an argv list this module built from literal tokens, run with shell=False:
     # each element is passed as a literal argument, so there is no shell to inject into
     # and no caller-supplied flag can appear. _validate_cmd re-checks that invariant.

@@ -1,10 +1,8 @@
-"""Tests for gh_cli.py — the one module that builds a ``gh`` command line.
-
-These assert the exact argv each typed operation emits, and that values which
-could turn a value position into a flag (or a path traversal, or a second
-command) are rejected before argv is built. The run primitive is private, so a
-caller cannot bypass any of this; these tests are what stands behind that claim.
-"""
+"""Tests for gh_cli.py — the one module that builds a ``gh`` command line."""
+# These assert the exact argv each typed operation emits, and that values which
+# could turn a value position into a flag (or a path traversal, or a second
+# command) are rejected before argv is built. The run primitive is private, so a
+# caller cannot bypass any of this; these tests are what stands behind that claim.
 
 from __future__ import annotations
 
