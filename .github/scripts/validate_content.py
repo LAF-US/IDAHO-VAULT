@@ -92,11 +92,11 @@ def _run_git(command: list[str]) -> str:
             timeout=30, check=False,
         )
     except subprocess.TimeoutExpired as exc:
-        raise RuntimeError(f"git {command[1]} timed out after 30s") from exc
+        raise RuntimeError(f"{' '.join(command)} timed out after 30s") from exc
     except OSError as exc:
-        raise RuntimeError(f"git {command[1]} could not run: {exc}") from exc
+        raise RuntimeError(f"{' '.join(command)} could not run: {exc}") from exc
     if result.returncode != 0:
-        raise RuntimeError(result.stderr.strip() or f"git {command[1]} failed")
+        raise RuntimeError(result.stderr.strip() or f"{' '.join(command)} failed")
     return result.stdout
 
 
