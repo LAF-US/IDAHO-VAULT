@@ -1,6 +1,6 @@
 name: Flatten Label Migration (one-shot)
 
-# ONE-SHOT, dispatch-only migration from the retired 9-string risk vocabulary
+# ONE-SHOT migration from the retired 9-string risk vocabulary
 #   filetype:risk/{—,low,med} + depth:risk/{—,high,nope} + legacy risk/{—,low,high}
 # to the flat four:  risk/{low,med,high,nope}  (filetype fires low|med, filedepth
 # fires high|nope, — = absence, —/— = no risk/* label). See the flatten in PR #854
@@ -11,17 +11,26 @@ name: Flatten Label Migration (one-shot)
 # prefixed labels straight back. The guard step below fails fast if the flat schema
 # is not yet on the checked-out default branch.
 #
-# No cron (Logan's standing no-cron order) — workflow_dispatch only. Idempotent, and
-# dry-run by default (preview the plan before writing). Delete this workflow once the
-# migration has been run successfully — it is a one-shot, not standing machinery.
+# THIS FILE HOLDS THE LOGIC AND IS NOT DISPATCHABLE. Its two entry points are separate
+# dispatch-only wrappers, each carrying NO inputs:
+#   flatten-label-migration-preview.yml  → dry_run: true   (print the plan, write nothing)
+#   flatten-label-migration-apply.yml    → dry_run: false  (write, then delete the 7 labels)
+# The mode is chosen by picking a workflow, not by flipping a boolean on a run that also
+# deletes label definitions — the destructive half cannot be reached by leaving a checkbox
+# clear. That also satisfies Checkov CKV_GHA_7 (SLSA: a dispatch entry point takes no user
+# parameters) honestly, by moving the parameter to an internal workflow_call contract
+# rather than suppressing the rule.
+#
+# No cron (Logan's standing no-cron order). Idempotent. Delete all three files once the
+# migration has been run successfully — this is a one-shot, not standing machinery.
 
 on:
-  workflow_dispatch:
+  workflow_call:
     inputs:
       dry_run:
         description: "Preview only — no label writes or deletes"
         type: boolean
-        default: true
+        required: true
 
 permissions:
   contents: read
