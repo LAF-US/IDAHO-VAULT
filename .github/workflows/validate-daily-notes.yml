@@ -38,7 +38,12 @@ jobs:
             fi
           fi
 
-          VIOLATIONS=""
+          # An array, not a string. A prior version appended a literal "\n" to a
+          # string and printed it with `echo -e`, which interprets escapes in
+          # file-derived content: a note containing the two characters \ n
+          # followed by `::error::` would break onto a new line and the Actions
+          # runner would parse it as a real workflow command.
+          VIOLATIONS=()
 
           while IFS= read -r filepath; do
             [ -z "$filepath" ] && continue
@@ -68,10 +73,30 @@ jobs:
               fi
             fi
             # Any note declaring itself periodic, wherever it lives.
-            if [ "$scoped" = "false" ] \
-              && head -n 40 -- "$filepath" \
-                 | grep -qE '^period:[[:space:]]*(day|week|month|quarter|year)[[:space:]]*$'; then
-              scoped=true
+            #
+            # Read `period:` from the frontmatter block ONLY -- awk stops at the
+            # closing `---`, and bails immediately if the file does not open with
+            # one. A prior version piped `head -n 40` straight into grep, which
+            # scanned raw text: a body line reading `period: day` scoped the file
+            # in, and frontmatter longer than 40 lines was silently skipped.
+            #
+            # Matching mirrors is_periodic_surface() in validate_content.py, which
+            # tests `period.strip().lower() in PERIOD_VALUES` on a yaml.safe_load()
+            # mapping -- hence -i for case, optional quotes, and a tolerated
+            # trailing comment. Exact parity with a YAML parser is not claimed;
+            # where this differs it fails closed (misses a scope) rather than
+            # scoping in a file the Python would ignore.
+            if [ "$scoped" = "false" ]; then
+              frontmatter=$(awk '
+                NR == 1 && $0 !~ /^---/ { exit }
+                NR == 1                 { next }
+                /^---[[:space:]]*$/     { exit }
+                                        { print }
+              ' < "$filepath")
+              if printf '%s\n' "$frontmatter" \
+                | grep -qiE '^period:[[:space:]]*"?'"'"'?(day|week|month|quarter|year)'"'"'?"?[[:space:]]*(#.*)?$'; then
+                scoped=true
+              fi
             fi
             [ "$scoped" = "false" ] && continue
 
@@ -92,12 +117,12 @@ jobs:
             ' < "$filepath")
             if [ -n "$hits" ]; then
               while IFS= read -r hit; do
-                VIOLATIONS="${VIOLATIONS}  ${filepath}:${hit}\n"
+                VIOLATIONS+=("  ${filepath}:${hit}")
               done <<< "$hits"
             fi
           done <<< "$FILES"
 
-          if [ -n "$VIOLATIONS" ]; then
+          if [ ${#VIOLATIONS[@]} -gt 0 ]; then
             echo "::error::Unrendered template placeholders detected in a periodic note or TO DO LIST.md"
             echo ""
             echo "Templater (<% ... %>) and core Obsidian Templates ({{...}}) syntax"
@@ -107,7 +132,7 @@ jobs:
             echo "contaminates subsequent notes."
             echo ""
             echo "Offending lines:"
-            echo -e "$VIOLATIONS"
+            printf '%s\n' "${VIOLATIONS[@]}"
             echo ""
             echo "Fix: substitute the value the template would have produced."
             exit 1
