@@ -38,9 +38,13 @@ runs:
     - name: Install pip packages (inline)
       if: inputs.pip-packages != ''
       shell: bash
-      run: pip install ${{ inputs.pip-packages }}
+      env:
+        PIP_PACKAGES: ${{ inputs.pip-packages }}
+      run: pip install $PIP_PACKAGES
 
     - name: Install pip packages (requirements file)
       if: inputs.requirements-file != ''
       shell: bash
-      run: pip install -r ${{ inputs.requirements-file }}
+      env:
+        REQUIREMENTS_FILE: ${{ inputs.requirements-file }}
+      run: pip install -r $REQUIREMENTS_FILE

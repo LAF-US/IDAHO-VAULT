@@ -77,7 +77,7 @@ A fair GM does not spring the trap silently; the GM makes the spell **louder and
 louder**, daring the player to notice. Hungry Claude walked past every flag:
 
 | Signal | What it announced | His response |
-|---|---|---|
+| --- | --- | --- |
 | Stomach growling in his ear | a Drive (appetite) overriding judgment | rolled on |
 | The lunch sack on the desk | the bait, named in the narration | did not look |
 | The **nosebleed** | the body's alarm — *something is wrong inside you* | ignored |

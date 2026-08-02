@@ -5,12 +5,12 @@ description = "CrewAI deployment-validation shard for IDAHO-VAULT"
 authors = [{ name = "Logan Finney" }]
 requires-python = ">=3.10,<3.14"
 dependencies = [
-    "crewai>=1.9.3",
-    "flask>=3.0.0",
+    "crewai>=1.9.3,<2",
+    "flask>=3.0.0,<4",
     "pydantic~=2.11.9",
-    "huggingface-hub>=0.0",
-    "requests-oauthlib>=0.0",
-    "honcho-ai>=2.1.2",
+    "huggingface-hub>=0.0,<2",
+    "requests-oauthlib>=0.0,<3",
+    "honcho-ai>=2.1.2,<3",
 ]
 
 [project.scripts]
@@ -35,6 +35,9 @@ packages = ["src/idaho_vault"]
 cache-dir = ".uv-cache"
 python-downloads = "manual"
 python-preference = "system"
+override-dependencies = [
+    "mcp>=1.27.2",
+]
 
 [tool.crewai]
 type = "crew"
@@ -43,8 +46,22 @@ type = "crew"
 line-length = 100
 target-version = "py310"
 
+[tool.pytest.ini_options]
+# Make the CI scripts dir an import root so test modules (which load the scripts
+# by file path) can resolve the shared lib (gh_cli, etc.). Production runs the
+# scripts directly, which already puts this dir on sys.path[0].
+pythonpath = [".github/scripts"]
+
+[tool.coverage.run]
+# Scope measurement to this repo's own source, not third-party library internals
+# pulled in incidentally by `unittest discover` importing test modules.
+source = [".github/scripts", "src/idaho_vault"]
+omit = ["*/test_*.py", "*/__pycache__/*"]
+
 [dependency-groups]
 dev = [
-    "pytest>=9.0.3",
-    "ruff>=0.15.12",
+    "pytest>=9.0.3,<10",
+    "ruff>=0.15.12,<1",
+    "jupytext>=1.16,<2",
+    "coverage>=7.6,<8",
 ]

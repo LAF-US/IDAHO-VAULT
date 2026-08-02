@@ -108,6 +108,13 @@ ENV/
 build/
 dist/
 
+# coverage.py local run artifacts — CI generates and uploads coverage.xml to
+# Codacy, never commits it.
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+
 node_modules/
 **/node_modules/
 .npm-cache/
@@ -136,6 +143,7 @@ feed-generator/
 .cache/
 .tmp/
 .state/
+!-dotfolder-hashcache.json
 .pycache/
 .smart-env/
 .makemd/
@@ -181,10 +189,66 @@ logs/
 # Agent and tool runtime internals
 # ---------------------------------------------------------------------------
 # Preserve agent dotfolders and durable memory by default; ignore only volatile
-# runtime/auth/cache surfaces.
+# runtime/auth/cache surfaces. Each agent dot-dir declares its own policy;
+# root .gitignore entries here are the floor.
 .agent-home/
 
-.claude/settings.local.json
+# User runtime dotfolders (imported_software persona chambers) —
+# track anchor stubs only; ignore runtime/install/cache contents.
+# Dotfolder salvage safety: conflict-preserved `.home` copies, hash-suffixed
+# `.home.<sha>` copies, and Windows GUI duplicate names like `name (2).json`
+# inherit the privacy/runtime class of their source path unless Logan promotes
+# them explicitly.
+.claude/*.home*
+.claude/**/*.home*
+.claude/* ([0-9]*)*
+.claude/**/* ([0-9]*)*
+.codex/*.home*
+.codex/**/*.home*
+.codex/* ([0-9]*)*
+.codex/**/* ([0-9]*)*
+.codex/*.bak-*
+.codex/**/*.bak-*
+.codex/.app-server-state*
+.codex/sqlite/
+.config/scoop/config*.json*
+.ollama/id_ed25519*
+.sbx-denybin/* ([0-9]*)*
+
+
+# SSH identity material — keys, known hosts, signing config, auth state.
+.ssh/auth.json
+.ssh/1Password/
+.ssh/known_hosts*
+.ssh/authorized_keys
+.ssh/id_*
+.ssh/*_signing*
+.ssh/allowed_signers*
+
+# npm cache — opaque content-addressed store; can embed credential blobs.
+.npm/_cacache/
+
+# .local/ per-user runtime — tool installs, agent auth/SQLite dbs, signal keys.
+.local/bin/
+.local/share/opencode/
+.local/share/opentui/
+.local/share/signal-cli/
+.local/state/
+.local/state/opencode/
+.local/state/lesshst
+
+# VS Code shared storage — local editor state DBs, not vault content.
+.vscode-shared/sharedStorage/
+
+# OpenCode CLI config, Continue.dev IDE state, GPG keyring —
+# tool-specific infrastructure, not vault content.
+.config/opencode/
+.continue/
+.gnupg/
+
+# Claude Code runtime internals. CLAUDE.md + stub.txt are tracked;
+# everything below is local session or install state.
+.claude/settings.local*.json
 .claude/backups/
 .claude/cache/
 .claude/debug/
@@ -192,28 +256,56 @@ logs/
 .claude/projects/
 .claude/shell-snapshots/
 .claude/worktrees/
-.claude/plugins/cache/
+# marketplace installs + cache — re-downloadable, not vault content
+.claude/plugins/
 **/.claude/worktrees/
+.claude/*.last-cleanup
+.claude/history*.jsonl*
+.claude/mcp-needs-auth-cache*.json
+# clipboard snapshots — ephemeral, not documents
+.claude/paste-cache/
+# LLM-generated plan drafts (random-named). Promote to a named vault surface
+# only if a plan becomes durable; these are session-ephemeral by default.
+.claude/plans/
+# per-task state tracking, telemetry — machine-runtime
+.claude/tasks/
+.claude/usage-data/
 
+# .codex/ — track anchor shims at root; ignore all runtime subdirs
+.codex/..codex-global-state.json.tmp-*
 .codex/.personality_migration
 .codex/.sandbox/
+.codex/.sandbox-bin/
+.codex/ambient-suggestions/
+.codex/archived_sessions/
 .codex/cache/
 .codex/cap_sid
+.codex/chrome-native-hosts*.json
+.codex/computer-use/
+.codex/computer-use-turn-ended/
+.codex/history*.jsonl*
 .codex/home/
 .codex/installation_id
 .codex/log/
 .codex/logs_*.sqlite*
-.codex/models_cache.json
-.codex/plugins/cache/
+.codex/memories/
+.codex/models_cache*.json*
+.codex/plugins/
+.codex/process_manager/
 .codex/sandbox.log
+.codex/session_index.jsonl
+.codex/sessions/
+.codex/skills/
 .codex/state_*.sqlite*
 .codex/tmp/
 .codex/vendor_imports/
-.codex/version.json
+.codex/version*.json*
 
 .antigravity/argv.json
 .antigravity/extensions/
-.copilot/session-state/
+# settings, session cache, command history — local IDE state
+.copilot/*
+!.copilot/COPILOT.md
 .cursor/projects/
 .cursor/extensions/
 .cursor/plugins/cache/
@@ -291,6 +383,7 @@ logs/
 !.vscode/extensions.json
 !.vscode/tasks.json
 !.vscode/launch.json
+!.vscode/VSCODE.md
 !.vscode/mcp.json
 
 .idea/
@@ -411,3 +504,6 @@ idaho-vault-48b78ec18835.json
 local-scan-detect-secrets.json
 local-scan-detect-secrets.json
 idaho-vault-48b78ec18835.json
+
+# Jupyter checkpoint autosaves (regenerable; never the source of truth)
+.ipynb_checkpoints/

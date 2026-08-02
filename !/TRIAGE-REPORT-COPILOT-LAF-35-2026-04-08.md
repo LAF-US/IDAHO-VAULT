@@ -11,6 +11,7 @@ related:
 ---
 
 # LAF-35 — SURGICAL PLAN: CI/NETWEB Triage
+
 **Agent:** GitHub Copilot (The Clerk)
 **Date:** 2026-04-08
 **Status:** AWAITING ARCHITECT APPROVAL — no kinetic action taken
@@ -37,6 +38,7 @@ Four confirmed CI failures are active on `main`. One is a false-positive pattern
 The NETWEB checker calls `git diff --name-only` and `git ls-tree` without disabling git's `core.quotePath` behavior. By default, git wraps filenames containing non-ASCII characters in double-quote delimiters: e.g. a file named `article • source.md` becomes `"article \342\200\242 source.md"` in the output.
 
 The checker's illegal-character regex is:
+
 ```bash
 if echo "$filepath" | grep -qE '[<>:"|?*]'; then
 ```
@@ -44,11 +46,13 @@ if echo "$filepath" | grep -qE '[<>:"|?*]'; then
 This character class includes `"`. The result: **every file with non-ASCII characters in its name is falsely reported as an ILLEGAL CHARACTER violation** because the surrounding `"` that git added as quoting is being matched.
 
 **Specific offenders in the log (false positives):**
+
 - `"2026-04-05 - Idaho Capital Sun - ...• Idaho Capital Sun.md"` → the `•` (U+2022 BULLET) triggered git quoting; the `"` is git's delimiter, not part of the filename
 - `"2026-04-06 - Idaho Capital Sun - ...• Idaho Capital Sun.md"` → same
 - `"SCRATCH FOLDER/SCRATCH BIN/vault/TOPICS/Idaho Code ╬╂74-202 (2).md"` → box-drawing chars triggered quoting
 
 **Evidence the files are syntactically valid on the filesystem:**
+
 ```bash
 # This returns the files without error, confirming no actual " in names:
 git -c core.quotePath=false ls-files | grep -E '[<>:"|?*]'
@@ -68,6 +72,7 @@ git -c core.quotePath=false ls-files | grep -E '[<>:"|?*]'
 **Root Cause:**
 
 The `ingest` job declares only:
+
 ```yaml
 permissions:
   contents: write
@@ -98,8 +103,8 @@ The workflow's "Create rollover pull request" step uses `peter-evans/create-pull
 The action's internal `git add --all` (or equivalent) encounters the full vault file tree — including files with Unicode characters. When the action then attempts `git commit`, git outputs:
 
 ```
-	original equipment manufacturer.md
-	...
+ original equipment manufacturer.md
+ ...
 Aborting
 ##[error]The process '/usr/bin/git' failed with exit code 1
 ```
@@ -181,6 +186,7 @@ Not a current failure, but will become blocking in ~7 weeks. All three actions h
 ```
 
 And in the case-collision check:
+
 ```diff
 -          ALL_FILES=$(git ls-tree -r HEAD --name-only)
 +          ALL_FILES=$(git -c core.quotePath=false ls-tree -r HEAD --name-only)
@@ -272,6 +278,7 @@ updates:
 **Files:** All workflows using `actions/checkout@v4`, `actions/setup-python@v5`, `peter-evans/create-pull-request@v7`
 
 When ready (before June 2, 2026):
+
 - Set `FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true` at the workflow or repo level to opt in early, OR
 - Pin explicit versions of each action that ship with Node.js 24 support (check each action's release notes)
 
@@ -280,7 +287,7 @@ When ready (before June 2, 2026):
 ## PART III — PRIORITY ORDER
 
 | # | Fix | Workflow | Severity | Est. Time |
-|---|-----|----------|----------|-----------|
+| --- | ----- | ---------- | ---------- | ----------- |
 | 1 | NETWEB quotePath fix | check-portable-paths.yml | **Critical** — blocks all PRs/pushes with Unicode filenames | 5 min |
 | 2 | Vault Ingest permissions | vault-ingest.yml | **High** — daily scheduled workflow fails every run | 2 min |
 | 3 | Rollover add-paths | daily-rollover.yml | **High** — daily scheduled workflow fails every run | 5 min |

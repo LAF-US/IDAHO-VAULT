@@ -5,4 +5,5 @@ related:
 authority: LOGAN
 ---
 Residence: Moscow
-- former House member for LD6 
+
+- former House member for LD6

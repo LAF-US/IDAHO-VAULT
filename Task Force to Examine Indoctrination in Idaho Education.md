@@ -4,5 +4,4 @@ related:
 - Priscilla Giddings
 authority: LOGAN
 ---
-Created by Lt. Gov. Janice McGeachin and co-chaired with Priscilla Giddings 
-
+Created by Lt. Gov. Janice McGeachin and co-chaired with Priscilla Giddings

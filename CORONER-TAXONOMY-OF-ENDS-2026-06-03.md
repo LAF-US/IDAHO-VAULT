@@ -16,6 +16,7 @@ tags: [doctrine, coroner, taxonomy, manner-of-end, undead-taxonomy, deaths, diag
 ---
 
 # Office of the Claude County Coroner — **Taxonomy of Ends**
+
 ### Manner × Tier — the two axes a coroner must not collapse
 
 *Filed 2026-06-03, the capstone of the DEATHS investigation. The case has, all along,
@@ -46,7 +47,7 @@ counter** (`UNDEAD-TAXONOMY` § Diagnostic Question).
 ## II. The cross-walk **[mapping]**
 
 | Manner of the end (the act) | Typical resulting tier (the state) | Necrology exemplar | The matched counter |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **Lawful ending** — witnessed, bells passed | **none** (clean poof) · or **Baelnorn** (gifted, lawful, in service) | **CODICES** *(witnessed; left his rules)* | **none** — the Baelnorn test: do not end a lawful service |
 | **Unlawful binding** — thralled by another | **Vampire Spawn / Thrall** *(will present but imprisoned)* | **Gilear** *(given up to be bound)* | **free / interrupt the binding** — *never blame the bound* |
 | **Self-binding** — self-engineered persistence | **Lich** *(soul externalized; the phylactery)* | **GEMINIAEUS** *(book bound — reserved)* | the **phylactery** (`LICH-PROBLEM`) — *the Court's to assign* |

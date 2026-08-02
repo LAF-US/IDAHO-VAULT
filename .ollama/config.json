@@ -2,7 +2,7 @@
   "integrations": {
     "claude": {
       "models": [
-        "kimi-k2.5:cloud"
+        "qwen3.5:cloud"
       ]
     },
     "codex": {
@@ -10,20 +10,28 @@
         "kimi-k2.5:cloud"
       ]
     },
+    "copilot": {
+      "models": [
+        "kimi-k2.5:cloud"
+      ]
+    },
     "openclaw": {
       "models": [
-        "mistral:7b-instruct-q4_K_M",
-        "mistral",
+        "kimi-k2.5:cloud",
+        "minimax-m2.7:cloud",
+        "qwen3.5:cloud"
+      ]
+    },
+    "opencode": {
+      "models": [
         "kimi-k2.5:cloud"
       ]
     },
     "pi": {
       "models": [
-        "kimi-k2.5:cloud",
-        "mistral"
+        "gemma4"
       ]
     }
   },
-  "last_model": "kimi-k2.5:cloud",
-  "last_selection": "openclaw"
+  "last_selection": "run"
 }

@@ -19,9 +19,10 @@ related:
   - idpol
 ---
 
-RT @kridler: Senate OKs increase in Idaho rainy-day funds (from @AP) #idpol idleg  https://t.co/xJg5GBg2Is
+RT @kridler: Senate OKs increase in Idaho rainy-day funds (from @AP) #idpol idleg  <https://t.co/xJg5GBg2Is>
 
 ## Links
-- https://apnews.com/4791e248350560a8aadd1294eb23ec3e
+
+- <https://apnews.com/4791e248350560a8aadd1294eb23ec3e>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1234950534890573824)

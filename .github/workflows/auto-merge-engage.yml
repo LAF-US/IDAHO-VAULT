@@ -1,0 +1,140 @@
+name: Auto-merge on PR events
+
+# THE wired, event-driven loop: on a PR event, (1) resolve the resolvable (outdated,
+# bot-only) conversations — witnessed, (2) arm auto-merge as a backstop, and (3) ADD the PR
+# to the merge queue via the enqueuePullRequest mutation. Step 3 is load-bearing: on a
+# merge-queue repo `gh pr merge --auto` is an idempotent no-op (records "merge when ready"
+# but never enqueues — the #508 symptom), so WITHOUT an explicit enqueue a PR sits armed-but-
+# unqueued and never merges on its own, which is why the queue had to be hand-cranked via
+# batch-arm-merge-queue. Branch protection still decides what actually merges; the queue
+# re-runs the required checks. No manual dispatch.
+#
+# Two deliberate properties, learned the hard way:
+#   - Triggered ONLY by pull_request_target (which runs the workflow from the trusted
+#     base/default branch with repo secrets). It is never downstream of another workflow,
+#     so it cannot be silently broken by a disabled upstream (the failure mode that shelved
+#     the old reconcile chain). It deliberately does NOT use pull_request_review: that event
+#     does not share pull_request_target's base-branch code-provenance guarantee, and pairing
+#     it with write permissions is the footgun Copilot flagged on #582. The review-clears-a-
+#     block case is covered anyway — auto-merge, once enabled here on open/sync, persists and
+#     fires when the review lands, with no workflow re-run needed.
+#   - It does NOT use the retired risk-tier eligibility gate. It just resolves + arms;
+#     branch protection is the ONLY thing that decides what actually merges. Substantive
+#     (needs-fix / current) threads are never touched, so nothing is rubber-stamped — those
+#     PRs simply stay blocked on their unresolved conversations until really fixed.
+#
+# Security: pull_request_target runs with repo secrets, so it checks out the trusted
+# default branch and never executes PR-authored code; it acts on the PR purely via the API.
+
+on:
+  pull_request_target:
+    types: [opened, reopened, ready_for_review, synchronize]
+
+permissions:
+  # contents: write  — resolveReviewThread + enablePullRequestAutoMerge (the #546 gate family).
+  # pull-requests: write — the witnessed attestation reply, and enabling auto-merge.
+  contents: write
+  pull-requests: write
+
+concurrency:
+  # One pass per PR; a newer event supersedes an in-flight one.
+  group: auto-merge-engage-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  engage:
+    # Arm/enqueue only on an explicit human signal: the `auto-merge` label. Marking a PR
+    # ready-for-review (draft == false) is NOT consent to merge -- it invites review. Gating
+    # on the label decouples "please review" from "ship it" and closes the race where simply
+    # un-drafting a PR merged it out from under review (human and bot). Drafts stay unarmed;
+    # a maintainer adds `auto-merge` when a PR is actually cleared to land.
+    if: >
+      github.event.pull_request.draft == false &&
+      contains(github.event.pull_request.labels.*.name, 'auto-merge')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout trusted workflow surfaces
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
+        with:
+          python-version: "3.11"
+
+      - name: Resolve outdated bot conversations (witnessed)
+        # Same proven path as the engage-outdated workflow, scoped to this one PR. Only
+        # outdated, bot-only threads are attest-resolved; needs-fix is left untouched.
+        # Exits 0 even if some threads fail (per-thread errors are recorded, not raised),
+        # so this step stays low-noise.
+        # resolveReviewThread has a documented history of being FORBIDDEN for the
+        # integration token (the #398 boundary, noted in review_feedback_loop.py's own
+        # docstring) — prefer the user-scoped MERGE_QUEUE_TOKEN, same as this job's
+        # arm/enqueue steps, so the resolve isn't silently skipped under GITHUB_TOKEN.
+        env:
+          GH_TOKEN: ${{ secrets.MERGE_QUEUE_TOKEN || secrets.GITHUB_TOKEN }}
+          OWNER: ${{ github.repository_owner }}
+          REPO: ${{ github.event.repository.name }}
+          PR: ${{ github.event.pull_request.number }}
+        run: |
+          python3 .github/scripts/review_feedback_loop.py \
+            engage-outdated --owner "$OWNER" --repo "$REPO" --pr "$PR" --apply
+
+      - name: Click auto-merge (the merge queue is the gate)
+        # Same invocation proven to arm PRs in batch-arm-merge-queue. Tolerate failure:
+        # a PR that can't be armed (already queued, conflicting, or gated awaiting review)
+        # must not fail the run — branch protection decides what actually merges.
+        # The arm actor becomes the future enqueue actor, and GITHUB_TOKEN-actored
+        # events never dispatch workflow runs (GitHub anti-recursion) — prefer the
+        # user-scoped MERGE_QUEUE_TOKEN so armed PRs enqueue with a dispatching actor.
+        env:
+          GH_TOKEN: ${{ secrets.MERGE_QUEUE_TOKEN || secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+          PR: ${{ github.event.pull_request.number }}
+        run: |
+          if gh pr merge "$PR" --auto --merge --repo "$REPO"; then
+            echo "auto-merge enabled for #$PR"
+          else
+            echo "auto-merge not enabled for #$PR (likely awaiting review, conflicting, or already queued)"
+          fi
+
+      - name: Enqueue into the merge queue
+        # The load-bearing half: `gh pr merge --auto` above is a no-op on a merge-queue repo,
+        # so the PR enters the queue ONLY via enqueuePullRequest. Mirrors the proven
+        # batch-arm-merge-queue logic, scoped to this one PR:
+        #   - enqueue when mergeable per branch protection (mergeStateStatus CLEAN or UNSTABLE;
+        #     a *required* failure reads BLOCKED, so UNSTABLE = only a non-required check red);
+        #   - skip if already queued (mergeQueueEntry present) — a redundant mutation;
+        #   - tolerate not-ready / workflows-token / API failure (auto-merge persists, a later
+        #     event retries, and branch protection still gates the real merge).
+        # Uses MERGE_QUEUE_TOKEN (workflows-scoped PAT) when present so workflow-touching PRs
+        # can enqueue; falls back to GITHUB_TOKEN otherwise.
+        env:
+          GH_TOKEN: ${{ secrets.MERGE_QUEUE_TOKEN || secrets.GITHUB_TOKEN }}
+          OWNER: ${{ github.repository_owner }}
+          NAME: ${{ github.event.repository.name }}
+          PR: ${{ github.event.pull_request.number }}
+        run: |
+          state=$(gh pr view "$PR" --repo "$OWNER/$NAME" --json mergeStateStatus -q .mergeStateStatus 2>/dev/null || true)
+          echo "#$PR mergeStateStatus=$state"
+          case "$state" in
+            CLEAN|UNSTABLE) ;;
+            *) echo "  not enqueue-ready ($state) — auto-merge persists; a later event re-attempts"; exit 0 ;;
+          esac
+          info=$(gh api graphql \
+            -f query='query($o:String!,$n:String!,$p:Int!){repository(owner:$o,name:$n){pullRequest(number:$p){id mergeQueueEntry{id}}}}' \
+            -f o="$OWNER" -f n="$NAME" -F p="$PR" 2>/dev/null || true)
+          node=$(printf '%s' "$info" | jq -r '.data.repository.pullRequest.id // empty' 2>/dev/null || true)
+          queued=$(printf '%s' "$info" | jq -r '.data.repository.pullRequest.mergeQueueEntry.id // empty' 2>/dev/null || true)
+          if [ -n "$queued" ]; then echo "  already queued #$PR ($queued)"; exit 0; fi
+          if [ -z "$node" ]; then echo "  no node id for #$PR; skipping (auto-merge persists)"; exit 0; fi
+          entry=$(gh api graphql \
+            -f query='mutation($pr:ID!){enqueuePullRequest(input:{pullRequestId:$pr}){mergeQueueEntry{id}}}' \
+            -f pr="$node" --jq '.data.enqueuePullRequest.mergeQueueEntry.id' 2>/dev/null || true)
+          if [ -n "$entry" ] && [ "$entry" != "null" ]; then
+            echo "  enqueued #$PR (merge-queue entry $entry)"
+          else
+            echo "  enqueue not accepted yet for #$PR — auto-merge persists; branch protection gates the merge"
+          fi
