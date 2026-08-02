@@ -11,7 +11,16 @@ TESTS = ROOT / "tests"
 
 @pytest.hookimpl(trylast=True)
 def pytest_configure(config: pytest.Config) -> None:
-    """Fail before pytest enters tempfile retries against an unwritable cache."""
+    """
+    Fail loudly, with an actionable message, if the cache directory is unwritable.
+
+    pytest's own cacheprovider handles this silently: Cache.set()/mkdir() catch
+    OSError and only emit a PytestCacheWarning, so a broken cache directory is
+    easy to miss in CI output instead of loudly breaking --lf/--ff and the
+    cache fixture. (There's no tempfile *retry* loop on this path -- that
+    10-attempt retry mechanism belongs to a different, unrelated directory:
+    the tmp_path/tmpdir fixture's system-temp base dir in _pytest/tmpdir.py.)
+    """
     if not config.pluginmanager.hasplugin("cacheprovider"):
         return
 
