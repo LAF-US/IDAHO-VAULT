@@ -110,6 +110,25 @@ def _pr(
 
 
 class ReviewFeedbackLoopTest(unittest.TestCase):
+    def test_prior_verify_comment_is_found_past_the_first_page(self) -> None:
+        # Regression: `gh api --paginate` emits one array PER PAGE, so reading stdout as a
+        # single JSON document sees `[...][...]`, raises, and yields no bodies at all. The
+        # recursion guard then failed open on exactly the busy PRs most likely to already
+        # carry a verification comment. Reading via --jq has no document boundary.
+        marker = review_feedback_loop.VERIFY_CLAIM_MARKER
+        two_pages = "\n".join(["first page body", "another", f"page two body {marker}"])
+        captured = {}
+
+        def fake(owner, repo, issue_number, **kwargs):
+            captured.update(kwargs)
+            return SimpleNamespace(stdout=two_pages, stderr="", returncode=0)
+
+        with mock.patch.object(review_feedback_loop.gh_cli, "api_issue_comments", fake):
+            found = review_feedback_loop._has_prior_verify_comment("LAF-US", "IDAHO-VAULT", 877)
+
+        self.assertTrue(found)
+        self.assertEqual(captured.get("jq"), ".[].body")
+
     def test_clear_pair_pr_becomes_auto_merge_eligible_after_grace(self) -> None:
         # K3/#629: the `—/—` pair — and ONLY it — arms auto-merge. A PR that classify
         # scored clear (risk/—) with no blocking feedback is eligible once the grace window
