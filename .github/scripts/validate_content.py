@@ -64,7 +64,6 @@ DANGEROUS_PATTERNS = [
 TEMPLATER_PLACEHOLDER_RE = re.compile(r"<%")
 BRACE_PLACEHOLDER_RE = re.compile(r"\{\{[^}\n]+\}\}")
 
-DAILY_NOTE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}\.md$")
 # Periodic-note filenames, from the title formats in the five NOTE TEMPLATEs:
 # day YYYY-MM-DD, week GGGG-[W]WW, month YYYY-MM, quarter YYYY-[Q]Q.
 # Yearly (YYYY) is deliberately absent -- a bare four-digit name is not a
@@ -249,7 +248,13 @@ def validate_directory(path: Path, scope: str) -> list[str]:
 def is_governed_note(path: Path, scope: str) -> bool:
     """Limit schema enforcement to the currently governed automation lane."""
     path_str = str(path).replace("\\", "/")
-    if DAILY_NOTE_RE.match(path.name) or path.name == "TO DO LIST.md":
+    # PERIODIC_NOTE_RE, not DAILY_NOTE_RE: this exclusion exists because periodic
+    # notes carry template-generated frontmatter and cannot satisfy
+    # REQUIRED_GOVERNED_FIELDS. That was true of weekly/monthly/quarterly notes
+    # before PERIODIC_NOTE_RE was introduced; leaving the daily-only pattern here
+    # meant a note like 2026-W32.md under an admin/generated scope was treated as
+    # a governed note and failed on missing title/updated/status/authority.
+    if PERIODIC_NOTE_RE.match(path.name) or path.name == "TO DO LIST.md":
         return False
     if path.name in ROOT_GOVERNED_FILES:
         return True
