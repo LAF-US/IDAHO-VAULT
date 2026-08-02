@@ -31,19 +31,34 @@ on:
         description: "Preview only — no label writes or deletes"
         type: boolean
         required: true
+    secrets:
+      MERGE_QUEUE_TOKEN:
+        description: >-
+          Repo-scoped PAT authorizing label create/delete/edit. Declared optional and
+          taken explicitly rather than via `secrets: inherit`, so the preview entry
+          point can decline it: the dry run needs no write capability, and a PAT it
+          never uses is capability it should not be holding. Absent, GH_TOKEN falls
+          back to github.token under the caller's permissions.
+        required: false
 
+# A called workflow's GITHUB_TOKEN permissions can only be DOWNGRADED from the caller's —
+# requesting more fails validation before the run — so this is the floor that every entry
+# point can satisfy, not the union of what the steps might want. The read-only preview
+# caller grants exactly this; the APPLY caller grants more at its job level and this
+# downgrades it back. Label create/delete/edit is therefore never GITHUB_TOKEN's to do at
+# all: it rides the MERGE_QUEUE_TOKEN PAT, which only APPLY passes, and the guard below
+# refuses the destructive path outright if that PAT is missing rather than falling back to
+# a token that cannot do the job.
 permissions:
   contents: read
-  pull-requests: write
-  issues: write
+  pull-requests: read
 
 jobs:
   migrate:
     runs-on: ubuntu-latest
     env:
-      # Repo-scoped PAT so label create/delete/edit is authorized; falls back to the
-      # default github.token (more reliably populated than secrets.GITHUB_TOKEN).
       GH_TOKEN: ${{ secrets.MERGE_QUEUE_TOKEN || github.token }}
+      MIGRATION_PAT: ${{ secrets.MERGE_QUEUE_TOKEN }}
       OWNER: ${{ github.repository_owner }}
       NAME: ${{ github.event.repository.name }}
       DRY_RUN: ${{ inputs.dry_run }}
@@ -58,6 +73,19 @@ jobs:
         uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
         with:
           python-version: "3.11"
+
+      - name: Guard — the destructive path requires the PAT
+        if: ${{ inputs.dry_run == false }}
+        run: |
+          set -euo pipefail
+          # GITHUB_TOKEN is capped read-only here (see the permissions note above), so the
+          # writes below can only go through the PAT. Fail now, before any re-stamping,
+          # rather than part-way through with half the open PRs converted.
+          if [ -z "${MIGRATION_PAT:-}" ]; then
+            echo "::error::APPLY needs MERGE_QUEUE_TOKEN — the read-only github.token cannot create, edit, or delete labels."
+            exit 1
+          fi
+          echo "migration PAT present"
 
       - name: Guard — the flat schema must be live on this ref
         run: |

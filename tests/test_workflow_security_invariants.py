@@ -111,51 +111,78 @@ class WorkflowSecurityInvariantsTest(unittest.TestCase):
 
     def test_flatten_label_migration_is_dispatch_only_and_least_privilege(self) -> None:
         # This one-shot migration edits PR labels and DELETES label definitions — a
-        # security-sensitive surface. It is split three ways so the destructive mode has to
-        # be chosen by name rather than by clearing a dry-run checkbox: the logic file is
-        # reusable-only (never dispatchable, never auto-triggered), and each entry point is
-        # dispatch-only with NO inputs. Pin all of it, plus permissions at the exact minimum
-        # the steps need (read contents to classify; issues + pull-requests write to
-        # edit/delete labels), on every one of the three files.
-        least_privilege = {"contents": "read", "pull-requests": "write", "issues": "write"}
+        # security-sensitive surface. It is split three ways so that BOTH the destructive
+        # mode and the capability to perform it are reached only on purpose: the logic file
+        # is reusable-only (never dispatchable, never auto-triggered), and each entry point
+        # is dispatch-only with NO inputs, pinning its own mode. Write scope and the
+        # MERGE_QUEUE_TOKEN PAT live on the APPLY path alone — preview is read-only by
+        # construction, so a dry run cannot create, edit, or delete a label even if a step
+        # tried. This goes red if any of that separation erodes.
         logic = "flatten-label-migration.yml"
         entry_points = {
-            "flatten-label-migration-preview.yml": True,
-            "flatten-label-migration-apply.yml": False,
+            # name: (dry_run, permissions, carries the PAT)
+            "flatten-label-migration-preview.yml": (
+                True, {"contents": "read", "pull-requests": "read"}, False,
+            ),
+            "flatten-label-migration-apply.yml": (
+                False,
+                {"contents": "read", "pull-requests": "write", "issues": "write"},
+                True,
+            ),
         }
 
-        def _events(name: str) -> dict[str, object]:
+        def _load(name: str) -> tuple[dict, set]:
             wf = yaml.safe_load((WORKFLOWS / name).read_text(encoding="utf-8"))
             # PyYAML resolves the bare `on:` key to the boolean True, hence the fallback.
             events = wf.get("on", wf.get(True)) or {}
-            self.assertEqual(
-                wf.get("permissions"), least_privilege,
-                f"{name} must declare exactly the least-privilege permission set",
-            )
-            return {"names": set(events) if isinstance(events, (dict, list)) else {events},
-                    "on": events, "wf": wf}
+            return wf, (set(events) if isinstance(events, (dict, list)) else {events})
 
-        logic_events = _events(logic)
+        logic_wf, logic_events = _load(logic)
         self.assertEqual(
-            logic_events["names"], {"workflow_call"},
+            logic_events, {"workflow_call"},
             f"{logic} holds the destructive steps: it must be callable only, never "
             "dispatchable and never auto-triggered (no schedule/PR/push)",
         )
+        self.assertEqual(
+            logic_wf.get("permissions"), {"contents": "read", "pull-requests": "read"},
+            f"{logic} must declare the read-only FLOOR, not the union of what its steps "
+            "want. A called workflow can only downgrade its caller's permissions — asking "
+            "for more fails validation — so a write set here would break the read-only "
+            "preview entry point outright. Writes ride the PAT, not GITHUB_TOKEN.",
+        )
+        guards = [
+            step for job in logic_wf["jobs"].values() for step in job["steps"]
+            if "MIGRATION_PAT" in str(step.get("run", ""))
+        ]
+        self.assertEqual(
+            len(guards), 1,
+            f"{logic} must keep exactly one guard asserting the PAT is present",
+        )
+        self.assertIn(
+            "dry_run == false", str(guards[0].get("if", "")),
+            "the PAT guard must fire on the destructive path only, and must fire there: "
+            "without it APPLY would fall back to a read-only github.token and die "
+            "part-way through re-stamping",
+        )
 
-        for name, dry_run in entry_points.items():
-            info = _events(name)
+        for name, (dry_run, permissions, carries_pat) in entry_points.items():
+            wf, events = _load(name)
             self.assertEqual(
-                info["names"], {"workflow_dispatch"},
+                events, {"workflow_dispatch"},
                 f"{name} must be dispatch-only (no schedule/PR/push triggers)",
             )
-            dispatch = info["on"].get("workflow_dispatch") or {}
+            dispatch = events and (wf.get("on", wf.get(True)) or {}).get("workflow_dispatch")
             self.assertFalse(
                 isinstance(dispatch, dict) and dispatch.get("inputs"),
                 f"{name} must take NO dispatch inputs — the mode is the workflow you pick, "
                 "not a parameter on a run that can also delete label definitions "
                 "(also Checkov CKV_GHA_7)",
             )
-            jobs = info["wf"]["jobs"]
+            self.assertEqual(
+                wf.get("permissions"), permissions,
+                f"{name} must declare exactly its own least-privilege permission set",
+            )
+            jobs = wf["jobs"]
             self.assertEqual(len(jobs), 1, f"{name} must be a single thin wrapper job")
             job = next(iter(jobs.values()))
             self.assertEqual(job.get("uses"), f"./.github/workflows/{logic}")
@@ -163,6 +190,20 @@ class WorkflowSecurityInvariantsTest(unittest.TestCase):
                 job.get("with"), {"dry_run": dry_run},
                 f"{name} must pin dry_run={dry_run} — an entry point that can flip modes "
                 "would reintroduce exactly what the split removes",
+            )
+            self.assertEqual(
+                job.get("permissions"), permissions,
+                f"{name}'s wrapper job must cap the called workflow at the same set",
+            )
+            self.assertNotEqual(
+                job.get("secrets"), "inherit",
+                f"{name} must pass secrets explicitly, never `inherit` — inheritance is "
+                "what would hand the preview path a PAT it has no use for",
+            )
+            self.assertEqual(
+                bool(job.get("secrets")), carries_pat,
+                f"{name} carries the MERGE_QUEUE_TOKEN PAT: expected {carries_pat}. The "
+                "write capability belongs on the destructive path alone.",
             )
 
     def test_security_required_check_contexts_are_distinct(self) -> None:

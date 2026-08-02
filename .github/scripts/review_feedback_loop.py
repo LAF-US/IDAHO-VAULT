@@ -395,7 +395,10 @@ def _maybe_arm_auto_merge(
     owner: str, repo: str, pr_number: int, state: dict[str, object]
 ) -> dict[str, object]:
     """Arm merge-queue auto-merge for a PR only when it is eligible."""
-    # Eligible means risk/low + grace + no blocking threads (per evaluate_review_state).
+    # Eligibility is evaluate_review_state's alone, and it has two shapes under the flat
+    # schema: an affirmative `—/—` verdict past grace with no blocking threads, or a fired
+    # non-`nope` flag whose review lane has completed (APPROVED + threads clear), also past
+    # grace. `nope` never qualifies. Read the predicate there, not this comment.
     # Returns a small report; never raises for the ordinary not-eligible or not-authorized
     # cases. Protected paths are NOT vetoed here — the CODEOWNERS hard gate
     # (require_code_owner_review) blocks their merge regardless of arming; the merge queue +
