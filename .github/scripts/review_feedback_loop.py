@@ -219,13 +219,11 @@ def _auto_merge_state(owner: str, repo: str, pr_number: int) -> tuple[bool, bool
 
 
 def _merge_state_status(owner: str, repo: str, pr_number: int) -> str:
-    """Read the PR's current ``mergeStateStatus``.
-
-    One of ``CLEAN``/``UNSTABLE``/``BEHIND``/``BLOCKED``/``DIRTY``/``UNKNOWN``/... .
-    Fail-open to ``"UNKNOWN"`` on a read failure — the caller's BEHIND-only branch-update
-    path then simply does not fire this cycle, exactly as if the PR were not yet BEHIND;
-    a later sync-pr/reconcile-open-prs pass re-reads it.
-    """
+    """Read the PR's current ``mergeStateStatus``."""
+    # One of ``CLEAN``/``UNSTABLE``/``BEHIND``/``BLOCKED``/``DIRTY``/``UNKNOWN``/... .
+    # Fail-open to ``"UNKNOWN"`` on a read failure — the caller's BEHIND-only branch-update
+    # path then simply does not fire this cycle, exactly as if the PR were not yet BEHIND;
+    # a later sync-pr/reconcile-open-prs pass re-reads it.
     try:
         data = _graphql(
             """
@@ -246,11 +244,9 @@ def _merge_state_status(owner: str, repo: str, pr_number: int) -> str:
 
 
 def _pr_node_id(owner: str, repo: str, pr_number: int) -> str | None:
-    """Read the PR's GraphQL node id (required by enqueuePullRequest).
-
-    None if it can't be read (fail-open: the caller then skips the explicit
-    enqueue and relies on armed auto-merge).
-    """
+    """Read the PR's GraphQL node id (required by enqueuePullRequest)."""
+    # None if it can't be read (fail-open: the caller then skips the explicit
+    # enqueue and relies on armed auto-merge).
     try:
         data = _graphql(
             """
@@ -270,21 +266,19 @@ def _pr_node_id(owner: str, repo: str, pr_number: int) -> str | None:
 
 
 def _enqueue_pr(node_id: str) -> tuple[bool, str | None]:
-    """Add the PR to the merge queue via the ``enqueuePullRequest`` mutation.
-
-    This is the action that actually puts a PR in the queue, DISTINCT from
-    ``enablePullRequestAutoMerge`` ("merge when ready"). Best-effort: never raises.
-
-    Returns a tri-state ``(enqueued, error)`` so the caller can tell a benign delay from a
-    real failure:
-
-    * ``(True, None)``  — enqueued (a merge-queue entry id came back).
-    * ``(False, None)`` — benign: the PR is not yet queue-ready (required checks still
-      running, not mergeable, or the base branch has no merge queue). GitHub returns no
-      entry; the armed auto-merge enqueues it when it goes green. NOT an error.
-    * ``(False, str)``  — a real failure (auth/permission/API error from the mutation),
-      worth surfacing because an armed PR that silently never enqueues is the bug this fixes.
-    """
+    """Add the PR to the merge queue via the ``enqueuePullRequest`` mutation."""
+    # This is the action that actually puts a PR in the queue, DISTINCT from
+    # ``enablePullRequestAutoMerge`` ("merge when ready"). Best-effort: never raises.
+    #
+    # Returns a tri-state ``(enqueued, error)`` so the caller can tell a benign delay from a
+    # real failure:
+    #
+    # * ``(True, None)``  — enqueued (a merge-queue entry id came back).
+    # * ``(False, None)`` — benign: the PR is not yet queue-ready (required checks still
+    # running, not mergeable, or the base branch has no merge queue). GitHub returns no
+    # entry; the armed auto-merge enqueues it when it goes green. NOT an error.
+    # * ``(False, str)``  — a real failure (auth/permission/API error from the mutation),
+    # worth surfacing because an armed PR that silently never enqueues is the bug this fixes.
     try:
         data = _graphql(
             "mutation($pr:ID!){ enqueuePullRequest(input:{pullRequestId:$pr})"
@@ -300,21 +294,19 @@ def _enqueue_pr(node_id: str) -> tuple[bool, str | None]:
 
 
 def _update_branch(owner: str, repo: str, pr_number: int) -> tuple[bool, str | None]:
-    """Merge the base branch into the PR head via the ``update-branch`` REST endpoint.
-
-    The automated form of the "Update branch" button, and the same call
-    ``batch-arm-merge-queue.yml`` already uses on a BEHIND PR (that manual bulk sweep's proven
-    fix; this brings the same recovery to the event-driven engine, which previously just left
-    a BEHIND PR waiting indefinitely for someone else to push). Best-effort: never raises.
-
-    Returns ``(updated, error)``:
-
-    * ``(True, None)`` — the request succeeded; a merge commit landed on the PR head, CI
-      re-runs, and a later pass re-reads ``mergeStateStatus`` once it recomputes to CLEAN.
-    * ``(False, str)`` — the request failed (e.g. a real conflict surfaced as DIRTY by the
-      time this ran, or a workflows-permission error on a workflow-touching PR — the same
-      failure mode ``is_wf_perm_failure`` buckets separately in the bash sweep).
-    """
+    """Merge the base branch into the PR head via the ``update-branch`` REST endpoint."""
+    # The automated form of the "Update branch" button, and the same call
+    # ``batch-arm-merge-queue.yml`` already uses on a BEHIND PR (that manual bulk sweep's proven
+    # fix; this brings the same recovery to the event-driven engine, which previously just left
+    # a BEHIND PR waiting indefinitely for someone else to push). Best-effort: never raises.
+    #
+    # Returns ``(updated, error)``:
+    #
+    # * ``(True, None)`` — the request succeeded; a merge commit landed on the PR head, CI
+    # re-runs, and a later pass re-reads ``mergeStateStatus`` once it recomputes to CLEAN.
+    # * ``(False, str)`` — the request failed (e.g. a real conflict surfaced as DIRTY by the
+    # time this ran, or a workflows-permission error on a workflow-touching PR — the same
+    # failure mode ``is_wf_perm_failure`` buckets separately in the bash sweep).
     try:
         _run(
             [
@@ -331,25 +323,23 @@ def _update_branch(owner: str, repo: str, pr_number: int) -> tuple[bool, str | N
 
 
 def _arm_auto_merge(owner: str, repo: str, pr_number: int) -> tuple[bool, str | None]:
-    """Arm auto-merge, update the branch if BEHIND, and add the PR to the merge queue.
-
-    Three DISTINCT GitHub actions:
-
-    1. **enablePullRequestAutoMerge** (`gh pr merge --auto`) — records "merge when ready."
-       On a merge-queue repo this ALONE does not put the PR in the queue.
-    2. **update-branch** (REST) — when the head is BEHIND base, neither arming nor enqueuing
-       can make the PR CLEAN; merging base in is what lets it recompute. Without this, a
-       BEHIND PR just sits waiting for an unrelated event to nudge it (previously only
-       ``batch-arm-merge-queue.yml``'s manual bulk sweep did this).
-    3. **enqueuePullRequest** (GraphQL) — the action that actually adds the PR to the merge
-       queue. This is the half that was missing: arming-only left a ready PR sitting
-       un-queued (the #508 symptom) because nothing ever called enqueue.
-
-    Returns ``(armed, error)``. ``armed`` is True once auto-merge is on (the floor). Both the
-    update-branch and enqueue steps are best-effort and folded into ``error`` as an
-    informational note when they don't succeed outright — neither is treated as arming having
-    failed, since a not-yet-ready or still-BEHIND PR is expected to need another pass.
-    """
+    """Arm auto-merge, update the branch if BEHIND, and add the PR to the merge queue."""
+    # Three DISTINCT GitHub actions:
+    #
+    # 1. **enablePullRequestAutoMerge** (`gh pr merge --auto`) — records "merge when ready."
+    # On a merge-queue repo this ALONE does not put the PR in the queue.
+    # 2. **update-branch** (REST) — when the head is BEHIND base, neither arming nor enqueuing
+    # can make the PR CLEAN; merging base in is what lets it recompute. Without this, a
+    # BEHIND PR just sits waiting for an unrelated event to nudge it (previously only
+    # ``batch-arm-merge-queue.yml``'s manual bulk sweep did this).
+    # 3. **enqueuePullRequest** (GraphQL) — the action that actually adds the PR to the merge
+    # queue. This is the half that was missing: arming-only left a ready PR sitting
+    # un-queued (the #508 symptom) because nothing ever called enqueue.
+    #
+    # Returns ``(armed, error)``. ``armed`` is True once auto-merge is on (the floor). Both the
+    # update-branch and enqueue steps are best-effort and folded into ``error`` as an
+    # informational note when they don't succeed outright — neither is treated as arming having
+    # failed, since a not-yet-ready or still-BEHIND PR is expected to need another pass.
     enabled, queued = _auto_merge_state(owner, repo, pr_number)
     if queued:
         # Already in the queue — re-enqueuing would be a no-op (or an unwanted jump); leave it.
@@ -402,14 +392,12 @@ def _arm_auto_merge(owner: str, repo: str, pr_number: int) -> tuple[bool, str | 
 def _maybe_arm_auto_merge(
     owner: str, repo: str, pr_number: int, state: dict[str, object]
 ) -> dict[str, object]:
-    """Arm merge-queue auto-merge for a PR only when it is eligible.
-
-    Eligible means risk/low + grace + no blocking threads (per evaluate_review_state).
-    Returns a small report; never raises for the ordinary not-eligible or not-authorized
-    cases. Protected paths are NOT vetoed here — the CODEOWNERS hard gate
-    (require_code_owner_review) blocks their merge regardless of arming; the merge queue +
-    branch protection are the actual merge gate, and this only presses the button.
-    """
+    """Arm merge-queue auto-merge for a PR only when it is eligible."""
+    # Eligible means risk/low + grace + no blocking threads (per evaluate_review_state).
+    # Returns a small report; never raises for the ordinary not-eligible or not-authorized
+    # cases. Protected paths are NOT vetoed here — the CODEOWNERS hard gate
+    # (require_code_owner_review) blocks their merge regardless of arming; the merge queue +
+    # branch protection are the actual merge gate, and this only presses the button.
     if not bool(state.get("eligible_for_auto_merge")):
         return {"armed": False, "reason": "not eligible for auto-merge"}
     armed, arm_error = _arm_auto_merge(owner, repo, pr_number)
@@ -806,22 +794,18 @@ def _parse_body_marker_value(body: str, marker: str) -> str | None:
 
 
 class RiskMarkerInvariantError(ValueError):
-    """A per-axis risk-marker invariant was violated: two values on a single axis.
-
-    A dedicated type (not a bare ValueError) so callers can catch EXACTLY this breach
-    and never mistake an unrelated ValueError from the evaluate path for an invariant
-    violation. Subclasses ValueError so existing broad handlers still degrade safely.
-    """
+    """A per-axis risk-marker invariant was violated: two values on a single axis."""
+    # A dedicated type (not a bare ValueError) so callers can catch EXACTLY this breach
+    # and never mistake an unrelated ValueError from the evaluate path for an invariant
+    # violation. Subclasses ValueError so existing broad handlers still degrade safely.
 
 
 def _assert_risk_marker_exclusive(labels: set[str]) -> None:
-    """Fail loud on the one state the flat schema forbids: two values on a single axis.
-
-    Each axis carries AT MOST one flat label — risk/low XOR risk/med on the filetype
-    axis, risk/high XOR risk/nope on the filedepth axis. Both values on one axis is a
-    producer/backfill bug, not a routing decision — raise so it can never silently route
-    a PR whose axis is self-contradictory.
-    """
+    """Fail loud on the one state the flat schema forbids: two values on a single axis."""
+    # Each axis carries AT MOST one flat label — risk/low XOR risk/med on the filetype
+    # axis, risk/high XOR risk/nope on the filedepth axis. Both values on one axis is a
+    # producer/backfill bug, not a routing decision — raise so it can never silently route
+    # a PR whose axis is self-contradictory.
     if RISK_LOW_LABEL in labels and RISK_MED_LABEL in labels:
         raise RiskMarkerInvariantError(
             f"risk-marker invariant violated: the filetype axis carries both "
@@ -837,13 +821,11 @@ def _assert_risk_marker_exclusive(labels: set[str]) -> None:
 
 
 def _risk_pair_for_pr(labels: set[str]) -> tuple[str | None, str | None, bool]:
-    """Read the lane ``(filetype_flag, depth_flag, classified)`` off the flat labels.
-
-    ``filetype_flag`` is "med"/"low"/None; ``depth_flag`` is "nope"/"high"/None.
-    ``classified`` is True iff ANY risk/* flag is present — no flag present means we
-    cannot confirm the PR was classified from labels alone (an all-absent PR is NOT
-    classified-clear: it holds until an affirmative verdict says otherwise).
-    """
+    """Read the lane ``(filetype_flag, depth_flag, classified)`` off the flat labels."""
+    # ``filetype_flag`` is "med"/"low"/None; ``depth_flag`` is "nope"/"high"/None.
+    # ``classified`` is True iff ANY risk/* flag is present — no flag present means we
+    # cannot confirm the PR was classified from labels alone (an all-absent PR is NOT
+    # classified-clear: it holds until an affirmative verdict says otherwise).
     filetype_flag = (
         "med" if RISK_MED_LABEL in labels
         else "low" if RISK_LOW_LABEL in labels
@@ -859,11 +841,9 @@ def _risk_pair_for_pr(labels: set[str]) -> tuple[str | None, str | None, bool]:
 
 
 def _validate_pair(filetype_flag: str | None, depth_flag: str | None) -> None:
-    """Fail loud (RiskMarkerInvariantError) on an out-of-vocabulary axis flag.
-
-    A caller typo (e.g. "medium" for "med") gets a deterministic, domain-specific error
-    instead of a silent misroute (`_tier_from_pair`) or a raw KeyError (`restamp_risk_pair`).
-    """
+    """Fail loud (RiskMarkerInvariantError) on an out-of-vocabulary axis flag."""
+    # A caller typo (e.g. "medium" for "med") gets a deterministic, domain-specific error
+    # instead of a silent misroute (`_tier_from_pair`) or a raw KeyError (`restamp_risk_pair`).
     if filetype_flag not in (None, "low", "med"):
         raise RiskMarkerInvariantError(
             f"invalid filetype_flag {filetype_flag!r}: expected None, 'low', or 'med'"
@@ -875,12 +855,10 @@ def _validate_pair(filetype_flag: str | None, depth_flag: str | None) -> None:
 
 
 def _tier_from_pair(filetype_flag: str | None, depth_flag: str | None, marked: bool) -> str:
-    """Collapse a lane pair to the single-tier vocabulary (nope>high>med>low>clear).
-
-    An incompletely marked PR is `unknown` and HOLDS. Fails loud on an out-of-vocabulary
-    flag (e.g. a caller-supplied `verdict` typo like "medium") instead of letting it fall
-    through to `clear` and misroute the PR.
-    """
+    """Collapse a lane pair to the single-tier vocabulary (nope>high>med>low>clear)."""
+    # An incompletely marked PR is `unknown` and HOLDS. Fails loud on an out-of-vocabulary
+    # flag (e.g. a caller-supplied `verdict` typo like "medium") instead of letting it fall
+    # through to `clear` and misroute the PR.
     _validate_pair(filetype_flag, depth_flag)
     if not marked:
         return "unknown"
@@ -926,14 +904,12 @@ def restamp_risk_pair(
     filetype_flag: str | None,
     depth_flag: str | None,
 ) -> list[str]:
-    """Make the PR's risk labels mirror the classifier's verdict — the 'restamp'.
-
-    ``desired`` is the flat label for each fired axis: the filetype label if
-    ``filetype_flag`` is set, plus the filedepth label if ``depth_flag`` is set. A `—/—`
-    verdict (both None) yields an EMPTY desired set — a clear verdict stamps nothing and
-    removes any stale risk/* label. ``managed`` is the full flat set, so managed-not-desired
-    labels are removed. Mutates ``labels`` in place and returns the actions taken.
-    """
+    """Make the PR's risk labels mirror the classifier's verdict — the 'restamp'."""
+    # ``desired`` is the flat label for each fired axis: the filetype label if
+    # ``filetype_flag`` is set, plus the filedepth label if ``depth_flag`` is set. A `—/—`
+    # verdict (both None) yields an EMPTY desired set — a clear verdict stamps nothing and
+    # removes any stale risk/* label. ``managed`` is the full flat set, so managed-not-desired
+    # labels are removed. Mutates ``labels`` in place and returns the actions taken.
     _validate_pair(filetype_flag, depth_flag)
     actions: list[str] = []
     desired: set[str] = set()
@@ -961,14 +937,12 @@ def evaluate_review_state(
     auto_resolve_reviewers: set[str] | None = None,
     verdict: tuple[str | None, str | None] | None = None,
 ) -> dict[str, object]:
-    """Return one machine-readable view of the PR's current review state.
-
-    ``verdict`` is an optional caller-supplied ``(filetype_flag, depth_flag)`` straight
-    from the classifier — passed by the POST-classify evaluate calls so a `—/—` verdict
-    is affirmatively clear even with zero labels. Without a verdict the flags are read off
-    the labels, and an all-absent PR is ``unknown`` and HOLDS (never armed) — the safety
-    property that absence of a label is not the clear state.
-    """
+    """Return one machine-readable view of the PR's current review state."""
+    # ``verdict`` is an optional caller-supplied ``(filetype_flag, depth_flag)`` straight
+    # from the classifier — passed by the POST-classify evaluate calls so a `—/—` verdict
+    # is affirmatively clear even with zero labels. Without a verdict the flags are read off
+    # the labels, and an all-absent PR is ``unknown`` and HOLDS (never armed) — the safety
+    # property that absence of a label is not the clear state.
     label_names = {
         node["name"]
         for node in (pr.get("labels") or {}).get("nodes") or []
@@ -1141,25 +1115,23 @@ def apply_review_state_projection(
 def _resolve_outdated_resolvable_threads(
     pr: dict, looker: str | None = None, *, apply: bool = True
 ) -> list[dict[str, object]]:
-    """Attest-resolve every OUTDATED-RESOLVABLE thread on ``pr``.
-
-    Bot-only and GitHub-outdated (the commented lines no longer exist in the diff), witnessed
-    by `looker` via `attest_and_resolve`. This is the same narrowest-safe slice the
-    engage-outdated backlog walk uses, factored so the on-push `sync-pr` event can clear
-    stale bot threads AS THEY GO OUTDATED — not only on a manual engage-outdated dispatch.
-
-    `looker` is who the resolution is witnessed as. Pass it when the caller already knows
-    the actor (engage-outdated resolves it once for the whole backlog walk). When omitted
-    (the sync-pr event path), it is resolved LAZILY via `_viewer_login()` only if an
-    outdated-resolvable thread is actually found — so a push with no stale threads (the
-    common case) costs no extra GraphQL round-trip.
-
-    Disposition-driven (`_thread_resolution_disposition`), so it covers any bot reviewer
-    (CodeRabbit/Codex/Copilot), unlike the legacy allowlist resolver. needs-fix /
-    apply-suggestion / needs-human / looked threads are never touched — a substantive
-    finding is a caught error to fix, not to dispose of. Never merges. Returns one result
-    dict per considered thread.
-    """
+    """Attest-resolve every OUTDATED-RESOLVABLE thread on ``pr``."""
+    # Bot-only and GitHub-outdated (the commented lines no longer exist in the diff), witnessed
+    # by `looker` via `attest_and_resolve`. This is the same narrowest-safe slice the
+    # engage-outdated backlog walk uses, factored so the on-push `sync-pr` event can clear
+    # stale bot threads AS THEY GO OUTDATED — not only on a manual engage-outdated dispatch.
+    #
+    # `looker` is who the resolution is witnessed as. Pass it when the caller already knows
+    # the actor (engage-outdated resolves it once for the whole backlog walk). When omitted
+    # (the sync-pr event path), it is resolved LAZILY via `_viewer_login()` only if an
+    # outdated-resolvable thread is actually found — so a push with no stale threads (the
+    # common case) costs no extra GraphQL round-trip.
+    #
+    # Disposition-driven (`_thread_resolution_disposition`), so it covers any bot reviewer
+    # (CodeRabbit/Codex/Copilot), unlike the legacy allowlist resolver. needs-fix /
+    # apply-suggestion / needs-human / looked threads are never touched — a substantive
+    # finding is a caught error to fix, not to dispose of. Never merges. Returns one result
+    # dict per considered thread.
     results: list[dict[str, object]] = []
     for thread in (pr.get("reviewThreads") or {}).get("nodes") or []:
         if thread.get("isResolved"):
@@ -1781,11 +1753,9 @@ def verify_claim(args: argparse.Namespace) -> int:
 
 
 def _thread_belongs_to_pr(thread: dict, owner: str, repo: str, pr_number: int) -> bool:
-    """Report whether a thread's comment links place it on owner/repo PR #pr_number.
-
-    `_fetch_thread` resolves a *global* node id, so a stray or hostile id could point at
-    a thread on a different PR/repo; membership is verified before acting on it.
-    """
+    """Report whether a thread's comment links place it on owner/repo PR #pr_number."""
+    # `_fetch_thread` resolves a *global* node id, so a stray or hostile id could point at
+    # a thread on a different PR/repo; membership is verified before acting on it.
     expected = f"/{owner}/{repo}/pull/{pr_number}".lower()
     for comment in (thread.get("comments") or {}).get("nodes") or []:
         if expected in (comment.get("url") or "").lower():
@@ -1839,11 +1809,9 @@ def attest_resolve(args: argparse.Namespace) -> int:
 
 
 def _positive_int(value: str) -> int:
-    """Parse a strictly positive integer for an argparse option (e.g. --stale-days).
-
-    A non-positive staleness window misclassifies every PR (<=0 marks all stale,
-    making nothing safe to drain), so it is rejected at parse time.
-    """
+    """Parse a strictly positive integer for an argparse option (e.g. --stale-days)."""
+    # A non-positive staleness window misclassifies every PR (<=0 marks all stale,
+    # making nothing safe to drain), so it is rejected at parse time.
     try:
         parsed = int(value)
     except (TypeError, ValueError) as exc:
@@ -1854,24 +1822,22 @@ def _positive_int(value: str) -> int:
 
 
 def engage_outdated(args: argparse.Namespace) -> int:
-    """Engage the queue on the OUTDATED subset across open PRs.
-
-    Attest-resolve every outdated-resolvable thread; dry-run unless --apply.
-
-    The first 'engage' step (Logan: the queue runs by default; reviewer comments are what
-    keep a PR hanging). Scope is deliberately the narrowest safe slice — ONLY threads whose
-    resolution disposition is `outdated-resolvable` (bot-only, GitHub-outdated: the
-    commented lines no longer exist in the diff). Each is cleared via `attest_and_resolve`
-    with a recorded attestation by the looker — the `--looker` value, defaulting to the
-    authenticated actor (`_viewer_login()`) — so it is a *witnessed* resolution,
-    not the blind reconciler. needs-fix / apply-suggestion / looked / human threads are
-    never touched — needs-fix is the reviewer gate that keeps a PR hanging. This NEVER
-    merges; if clearing the last thread lets an armed PR flow, that is GitHub's auto-merge,
-    by design (the engaged queue).
-
-    --pr scopes the pass to a single PR number (the guinea-pig case: prove one PR clean
-    before widening to the whole backlog); default is every open PR.
-    """
+    """Engage the queue on the OUTDATED subset across open PRs."""
+    # Attest-resolve every outdated-resolvable thread; dry-run unless --apply.
+    #
+    # The first 'engage' step (Logan: the queue runs by default; reviewer comments are what
+    # keep a PR hanging). Scope is deliberately the narrowest safe slice — ONLY threads whose
+    # resolution disposition is `outdated-resolvable` (bot-only, GitHub-outdated: the
+    # commented lines no longer exist in the diff). Each is cleared via `attest_and_resolve`
+    # with a recorded attestation by the looker — the `--looker` value, defaulting to the
+    # authenticated actor (`_viewer_login()`) — so it is a *witnessed* resolution,
+    # not the blind reconciler. needs-fix / apply-suggestion / looked / human threads are
+    # never touched — needs-fix is the reviewer gate that keeps a PR hanging. This NEVER
+    # merges; if clearing the last thread lets an armed PR flow, that is GitHub's auto-merge,
+    # by design (the engaged queue).
+    #
+    # --pr scopes the pass to a single PR number (the guinea-pig case: prove one PR clean
+    # before widening to the whole backlog); default is every open PR.
     considered: list[dict[str, object]] = []
     # Resolve the looker once: default to the authenticated actor so the witness names
     # whoever actually ran the engine (agent token or CI bot), truthfully.
