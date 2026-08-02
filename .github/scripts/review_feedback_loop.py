@@ -1762,16 +1762,20 @@ def _fetch_pr_merge_state(owner: str, repo: str, pr_number: int) -> dict:
 
 
 def _list_pr_comment_bodies(owner: str, repo: str, pr_number: int) -> list[str]:
-    """Return raw comment bodies for the PR (issue-style comments)."""
+    """Return raw comment bodies for the PR (issue-style comments).
+
+    Reads via ``--jq`` rather than parsing stdout as one JSON document. ``gh api
+    --paginate`` emits a *separate* array per page, so any PR past the first page
+    produces ``[...][...]`` — not valid JSON. ``json.loads`` rejected it, this
+    returned ``[]``, and ``_has_prior_verify_comment`` then reported "no prior
+    comment" for exactly the busy PRs most likely to have one, posting a duplicate.
+    Per-page jq emits bodies as text and has no such document boundary.
+    """
     try:
-        result = gh_cli.api_issue_comments(owner, repo, pr_number)
+        result = gh_cli.api_issue_comments(owner, repo, pr_number, jq=".[].body")
     except RuntimeError:
         return []
-    try:
-        payload = json.loads(result.stdout or "[]")
-    except json.JSONDecodeError:
-        return []
-    return [item.get("body") or "" for item in payload if isinstance(item, dict)]
+    return result.stdout.splitlines()
 
 
 def _has_prior_verify_comment(owner: str, repo: str, pr_number: int) -> bool:
