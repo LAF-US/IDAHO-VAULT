@@ -74,9 +74,15 @@ def _run_git(root: Path, *args: str) -> str:
 
 
 def _git_repo_available(root: Path) -> bool:
+    # OSError (git not installed) and CalledProcessError (git ran and said "not
+    # a repository") are decisive "no" signals. TimeoutExpired is deliberately
+    # NOT caught here: a timeout on this probe means we don't know whether it's
+    # a repo, not that it isn't one -- treating it as "not available" would let
+    # _git_tracked_files() fall into its fail-closed guard's own blind spot and
+    # silently return an empty set instead of crashing.
     try:
         _run_git(root, "rev-parse", "--is-inside-work-tree")
-    except (OSError, subprocess.CalledProcessError, subprocess.TimeoutExpired):
+    except (OSError, subprocess.CalledProcessError):
         return False
     return True
 

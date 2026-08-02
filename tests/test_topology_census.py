@@ -237,6 +237,19 @@ class TopologyCensusTest(unittest.TestCase):
             self.assertFalse(topology_census._git_repo_available(self.root))
             self.assertEqual(topology_census._git_tracked_files(self.root), set())
 
+    def test_git_repo_available_does_not_swallow_timeout(self) -> None:
+        # A timeout on the availability probe means "unknown", not "not a repo" --
+        # letting it masquerade as unavailable would reopen _git_tracked_files()'s
+        # fail-closed guard to a false empty-set census via this call path.
+        with patch.object(
+            topology_census, "_run_git",
+            side_effect=subprocess.TimeoutExpired(cmd=["git"], timeout=30),
+        ):
+            with self.assertRaises(subprocess.TimeoutExpired):
+                topology_census._git_repo_available(self.root)
+            with self.assertRaises(subprocess.TimeoutExpired):
+                topology_census._git_tracked_files(self.root)
+
     def test_git_path_is_ignored_fails_soft_on_oserror(self) -> None:
         # _git_repo_available() already fails soft on OSError; check-ignore's own
         # subprocess.run call must match that contract instead of only catching
