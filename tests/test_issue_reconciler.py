@@ -1,9 +1,7 @@
-"""Tests for issue_reconciler.py — the find-or-create-by-title recurring-issue driver.
-
-Two halves: ``IssueReconcilerTest`` covers the create/comment/close decision, and
-``LookupTest`` covers the search and fingerprint reads underneath it — the half the
-gh_cli migration rewrote.
-"""
+"""Tests for issue_reconciler.py — the find-or-create-by-title recurring-issue driver."""
+# Two halves: ``IssueReconcilerTest`` covers the create/comment/close decision, and
+# ``LookupTest`` covers the search and fingerprint reads underneath it — the half the
+# gh_cli migration rewrote.
 
 from __future__ import annotations
 
