@@ -1,0 +1,28 @@
+name: Flatten Label Migration — PREVIEW (one-shot)
+
+# Non-destructive entry point for the one-shot risk-vocabulary flatten. Prints the plan
+# — which PRs would be re-stamped, which of the 7 retired label definitions would be
+# deleted — and writes nothing. Run this first; run the APPLY workflow only once this
+# output looks right.
+#
+# Deliberately parameterless: the mode is the workflow you pick, not a checkbox on a run
+# that can also delete labels. Logic lives in flatten-label-migration.yml.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+
+jobs:
+  preview:
+    uses: ./.github/workflows/flatten-label-migration.yml
+    with:
+      dry_run: true
+    permissions:
+      contents: read
+      pull-requests: write
+      issues: write
+    secrets: inherit
