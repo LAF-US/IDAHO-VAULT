@@ -170,11 +170,13 @@ class LookupTest(TestCase):
         ), self.assertRaises(RuntimeError):
             issue_reconciler.find_open_issue_number("anything")
 
-    def test_find_open_issue_survives_unparseable_output(self) -> None:
+    def test_find_open_issue_raises_on_unparseable_output(self) -> None:
+        # Garbled output is not proof that no issue exists. Returning None sent the
+        # caller down the create path and opened a duplicate.
         with self._env(), mock.patch.object(
             issue_reconciler.gh_cli, "issue_search_open", return_value=self._result("not json")
-        ):
-            self.assertIsNone(issue_reconciler.find_open_issue_number("anything"))
+        ), self.assertRaises(RuntimeError):
+            issue_reconciler.find_open_issue_number("anything")
 
     def test_fingerprint_found_in_the_issue_body_skips_the_comment_read(self) -> None:
         marker = "<!-- issue-reconciler-fingerprint:abc -->"
@@ -200,25 +202,32 @@ class LookupTest(TestCase):
             return_value=self._result(f"something\n{marker}\n"),
         ) as comments:
             self.assertTrue(issue_reconciler.issue_has_fingerprint(7, marker))
-        comments.assert_called_once_with(
-            "LAF-US", "IDAHO-VAULT", 7, jq=".[].body", check=False
-        )
+        comments.assert_called_once_with("LAF-US", "IDAHO-VAULT", 7, jq=".[].body")
 
-    def test_fingerprint_absent_when_the_comment_read_fails(self) -> None:
-        # api_issue_comments runs with check=False, so a non-zero exit arrives as a
-        # returncode rather than an exception — and must read as "not found", not as
-        # a crash and not as a false duplicate.
+    def test_fingerprint_raises_when_a_read_fails(self) -> None:
+        # False means "not present" and the caller posts on the strength of it, so a
+        # read that failed must not produce False. Previously both reads were
+        # swallowed and any transient blip yielded a duplicate comment.
         marker = "<!-- issue-reconciler-fingerprint:abc -->"
         with self._env(), mock.patch.object(
             issue_reconciler.gh_cli,
             "issue_view",
             side_effect=RuntimeError("no such issue"),
+        ), self.assertRaises(RuntimeError):
+            issue_reconciler.issue_has_fingerprint(7, marker)
+
+    def test_fingerprint_raises_when_the_comment_read_fails(self) -> None:
+        marker = "<!-- issue-reconciler-fingerprint:abc -->"
+        with self._env(), mock.patch.object(
+            issue_reconciler.gh_cli,
+            "issue_view",
+            return_value=self._result(json.dumps({"body": "no marker here"})),
         ), mock.patch.object(
             issue_reconciler.gh_cli,
             "api_issue_comments",
-            return_value=self._result("", returncode=1),
-        ):
-            self.assertFalse(issue_reconciler.issue_has_fingerprint(7, marker))
+            side_effect=RuntimeError("gh down"),
+        ), self.assertRaises(RuntimeError):
+            issue_reconciler.issue_has_fingerprint(7, marker)
 
     def test_repo_rejects_a_missing_or_malformed_repository(self) -> None:
         for value in ("", "no-slash"):

@@ -94,7 +94,9 @@ def find_open_issue_number(title: str) -> int | None:
     )
     issues = _json(result)
     if not isinstance(issues, list):
-        return None
+        # Unparseable output is not proof that no issue exists either. Returning None
+        # here would send the caller down the create path on a garbled response.
+        raise RuntimeError(f"Could not parse issue search output: {result.stdout[:200]!r}")
     for issue in issues:
         if issue.get("title") == title:
             return int(issue["number"])
@@ -103,20 +105,22 @@ def find_open_issue_number(title: str) -> int | None:
 
 def issue_has_fingerprint(issue_number: int, marker: str) -> bool:
     """Report whether this exact marker already appears in the issue body or comments."""
+    # Returning False means "not present", and the caller posts a comment on the
+    # strength of it. A read that failed proves nothing, so neither read is allowed
+    # to fail quietly: both propagate, and False is only ever returned after both
+    # succeeded and neither contained the marker. Swallowing them turned any
+    # transient gh/API blip into a duplicate comment.
     owner, repo = _repo()
-    try:
-        issue = _json(
-            gh_cli.issue_view(issue_number, owner=owner, repo=repo, json_fields="body")
-        )
-    except RuntimeError:
-        issue = None
-    if isinstance(issue, dict) and marker in str(issue.get("body") or ""):
+    issue = _json(
+        gh_cli.issue_view(issue_number, owner=owner, repo=repo, json_fields="body")
+    )
+    if not isinstance(issue, dict):
+        raise RuntimeError(f"Could not parse issue #{issue_number} body payload")
+    if marker in str(issue.get("body") or ""):
         return True
 
-    comments = gh_cli.api_issue_comments(
-        owner, repo, issue_number, jq=".[].body", check=False
-    )
-    return comments.returncode == 0 and marker in comments.stdout
+    comments = gh_cli.api_issue_comments(owner, repo, issue_number, jq=".[].body")
+    return marker in comments.stdout
 
 
 def create_issue(title: str, body_file: Path) -> int:
