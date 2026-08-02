@@ -1,5 +1,5 @@
 ---
-title: '"consistent with" ≠ evidence'
+title: CONSISTENT-WITH-NOT-EVIDENCE
 updated: 2026-06-22
 status: active
 authority: LOGAN
