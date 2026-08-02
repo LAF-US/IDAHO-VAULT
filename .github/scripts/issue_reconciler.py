@@ -90,15 +90,15 @@ def find_open_issue_number(title: str) -> int | None:
     the search only narrows the page.
     """
     owner, repo = _repo()
-    try:
-        result = gh_cli.issue_search_open(
-            owner,
-            repo,
-            search=f'"{title}" in:title',
-            json_fields="number,title",
-        )
-    except RuntimeError:
-        return None
+    # A failed search is NOT "no such issue". Swallowing the error here would make the
+    # caller open a duplicate on every transient gh/API blip, so the failure propagates
+    # and the run stops — which is what this did before the gh_cli migration.
+    result = gh_cli.issue_search_open(
+        owner,
+        repo,
+        search=f'"{title}" in:title',
+        json_fields="number,title",
+    )
     issues = _json(result)
     if not isinstance(issues, list):
         return None
