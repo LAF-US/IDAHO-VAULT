@@ -36,7 +36,13 @@ class BranchGardenReportTest(unittest.TestCase):
                     + f"\trefs/heads/{branch}"
                 )
             if cmd[:2] == ["git", "merge-base"]:
-                raise subprocess.CalledProcessError(1, cmd)
+                # Mirror what the real run_text()/_run() actually raises: a
+                # RuntimeError chained from the underlying CalledProcessError,
+                # not the CalledProcessError itself (see branch_has_merge_base).
+                try:
+                    raise subprocess.CalledProcessError(1, cmd)
+                except subprocess.CalledProcessError as exc:
+                    raise RuntimeError("git merge-base failed") from exc
             if cmd[:2] == ["git", "rev-list"]:
                 return "500"
             raise AssertionError(f"unexpected git call: {cmd}")
@@ -96,6 +102,27 @@ class BranchGardenReportTest(unittest.TestCase):
             branch_garden.subprocess, "run", side_effect=FileNotFoundError("git")
         ):
             self.assertEqual(branch_garden.living_worktree_branches(), set())
+
+    def test_branch_has_merge_base_returns_false_on_real_no_common_ancestor(self) -> None:
+        # git merge-base exits 1 specifically for "no common ancestor". _run()
+        # wraps that CalledProcessError into a RuntimeError before it ever
+        # reaches branch_has_merge_base, so this exercises the real path
+        # instead of mocking run_text() around it.
+        with mock.patch.object(
+            branch_garden.subprocess,
+            "run",
+            side_effect=subprocess.CalledProcessError(1, ["git", "merge-base"]),
+        ):
+            self.assertFalse(branch_garden.branch_has_merge_base("some-branch"))
+
+    def test_branch_has_merge_base_reraises_on_other_git_failures(self) -> None:
+        with mock.patch.object(
+            branch_garden.subprocess,
+            "run",
+            side_effect=subprocess.CalledProcessError(128, ["git", "merge-base"]),
+        ):
+            with self.assertRaises(RuntimeError):
+                branch_garden.branch_has_merge_base("some-branch")
 
 
 if __name__ == "__main__":

@@ -146,7 +146,14 @@ class StaleBotPrsTest(unittest.TestCase):
                             "--comment",
                             "closing stale bot pr",
                         ],
-                        {"check": True, "timeout": 60},
+                        {
+                            "check": True,
+                            "capture_output": True,
+                            "text": True,
+                            "encoding": "utf-8",
+                            "errors": "replace",
+                            "timeout": 60,
+                        },
                     ),
                 ],
             )

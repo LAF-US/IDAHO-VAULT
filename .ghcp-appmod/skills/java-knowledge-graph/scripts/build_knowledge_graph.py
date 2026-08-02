@@ -190,9 +190,23 @@ def _reject_doctype(path: Path) -> None:
     Real Maven POMs and Ant build files never declare one, so rejecting any
     DOCTYPE outright closes both classes -- without a defusedxml dependency,
     which this module deliberately avoids (see section header above).
+
+    Reads the raw bytes and tries every encoding ElementTree/expat could
+    plausibly settle on (UTF-8 is the XML default; UTF-16/UTF-32 are
+    self-declared via a BOM or the XML declaration's ``encoding=``
+    attribute). A single hardcoded UTF-8 decode would garble a UTF-16 file
+    into text with no literal "<!DOCTYPE" run for the regex to match, while
+    ET.parse()'s own encoding detection would still parse the real
+    declaration underneath -- silently letting the DOCTYPE through.
     """
-    if re.search(r"<!DOCTYPE", path.read_text(encoding="utf-8", errors="replace"), re.IGNORECASE):
-        raise ValueError(f"{path} declares a DOCTYPE, which is rejected to prevent XXE")
+    raw = path.read_bytes()
+    for encoding in ("utf-8", "utf-16", "utf-16-le", "utf-16-be", "utf-32"):
+        try:
+            text = raw.decode(encoding)
+        except (UnicodeDecodeError, LookupError):
+            continue
+        if re.search(r"<!DOCTYPE", text, re.IGNORECASE):
+            raise ValueError(f"{path} declares a DOCTYPE, which is rejected to prevent XXE")
 
 
 def parse_maven_pom(pom_path: Path) -> BuildModule:
