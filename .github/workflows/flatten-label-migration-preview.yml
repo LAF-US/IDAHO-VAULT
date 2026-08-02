@@ -7,14 +7,19 @@ name: Flatten Label Migration — PREVIEW (one-shot)
 #
 # Deliberately parameterless: the mode is the workflow you pick, not a checkbox on a run
 # that can also delete labels. Logic lives in flatten-label-migration.yml.
+#
+# Read-only by construction, not merely by convention: the dry-run path only lists open
+# PRs and reads their changed files, so this grants no write scope and does NOT pass the
+# MERGE_QUEUE_TOKEN PAT down. The reusable workflow's GH_TOKEN therefore falls back to
+# github.token under exactly these permissions — a preview run has no capability to
+# create, edit, or delete a label even if a step tried.
 
 on:
   workflow_dispatch:
 
 permissions:
   contents: read
-  pull-requests: write
-  issues: write
+  pull-requests: read
 
 jobs:
   preview:
@@ -23,6 +28,4 @@ jobs:
       dry_run: true
     permissions:
       contents: read
-      pull-requests: write
-      issues: write
-    secrets: inherit
+      pull-requests: read

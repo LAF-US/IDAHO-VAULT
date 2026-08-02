@@ -7,6 +7,10 @@ name: Flatten Label Migration — APPLY (one-shot, DESTRUCTIVE)
 # Deliberately parameterless: reaching this behavior requires choosing this workflow by
 # name, so it cannot be triggered by leaving a dry-run checkbox clear. Logic lives in
 # flatten-label-migration.yml.
+#
+# This is the only entry point that carries write scope and the MERGE_QUEUE_TOKEN PAT —
+# both are passed explicitly here rather than inherited, so the write capability lives on
+# the destructive path alone.
 
 on:
   workflow_dispatch:
@@ -25,4 +29,5 @@ jobs:
       contents: read
       pull-requests: write
       issues: write
-    secrets: inherit
+    secrets:
+      MERGE_QUEUE_TOKEN: ${{ secrets.MERGE_QUEUE_TOKEN }}
