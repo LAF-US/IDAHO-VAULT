@@ -46,6 +46,19 @@ def _labels(*names: str) -> dict[str, list[dict[str, str]]]:
     return {"nodes": [{"name": name} for name in names]}
 
 
+def _grid_labels(ft: str | None, dp: str | None) -> tuple[str, ...]:
+    """Stamp one risk grid cell in the flat schema."""
+    # A fired axis stamps one label; `—` on an axis stamps nothing, so the `—/—`
+    # cell comes back empty.
+    ft_label = {"low": review_feedback_loop.RISK_LOW_LABEL,
+                "med": review_feedback_loop.RISK_MED_LABEL}
+    dp_label = {"high": review_feedback_loop.RISK_HIGH_LABEL,
+                "nope": review_feedback_loop.RISK_NOPE_LABEL}
+    return tuple(
+        label for label in (ft_label.get(ft or ""), dp_label.get(dp or "")) if label
+    )
+
+
 def _thread(
     *,
     resolved: bool = False,
@@ -105,6 +118,34 @@ def _pr(
     }
 
 
+def _grid_states(
+    ft: str | None, dp: str | None, *, now: datetime, created_at: datetime
+) -> tuple[dict[str, object], dict[str, object]]:
+    """Evaluate one risk grid cell twice: unreviewed, then APPROVED."""
+    flat = _grid_labels(ft, dp)
+    if flat:
+        return (
+            review_feedback_loop.evaluate_review_state(
+                _pr(created_at=created_at, labels=flat), now=now
+            ),
+            review_feedback_loop.evaluate_review_state(
+                _pr(created_at=created_at, labels=flat, review_decision="APPROVED"), now=now
+            ),
+        )
+    # The `—/—` cell carries NO labels, so nothing can be derived from them; its clear
+    # state is affirmed by the classifier's verdict, mirroring how sync_pr calls
+    # evaluate_review_state post-classify.
+    return (
+        review_feedback_loop.evaluate_review_state(
+            _pr(created_at=created_at, labels=()), now=now, verdict=(None, None)
+        ),
+        review_feedback_loop.evaluate_review_state(
+            _pr(created_at=created_at, labels=(), review_decision="APPROVED"),
+            now=now, verdict=(None, None),
+        ),
+    )
+
+
 class ReviewFeedbackLoopTest(unittest.TestCase):
     def test_clear_pair_pr_becomes_auto_merge_eligible_after_grace(self) -> None:
         # K3/#629: the `—/—` verdict — and ONLY it — arms auto-merge. A PR that the classifier
@@ -149,17 +190,6 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         #   sovereign/never : any depth == nope → never eligible, even fully approved
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
         past_grace = now - timedelta(minutes=45)
-        ft_label = {"low": review_feedback_loop.RISK_LOW_LABEL,
-                    "med": review_feedback_loop.RISK_MED_LABEL}
-        dp_label = {"high": review_feedback_loop.RISK_HIGH_LABEL,
-                    "nope": review_feedback_loop.RISK_NOPE_LABEL}
-
-        def _flat_labels(ft: str | None, dp: str | None) -> tuple[str, ...]:
-            # Flat schema: a fired axis stamps one label; `—` on an axis stamps nothing.
-            return tuple(
-                label for label in (ft_label.get(ft or ""), dp_label.get(dp or "")) if label
-            )
-
         AUTO, HOLD, NEVER = "auto", "review-hold", "never"
         grid = {
             (None, None): AUTO,
@@ -174,25 +204,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         }
         for (ft, dp), lane in grid.items():
             with self.subTest(cell=f"ft={ft}/dp={dp}", lane=lane):
-                if lane == AUTO:
-                    # The `—/—` cell carries NO labels; its clear state is affirmed by the
-                    # classifier's verdict, mirroring how sync_pr calls it post-classify.
-                    unreviewed = review_feedback_loop.evaluate_review_state(
-                        _pr(created_at=past_grace, labels=()), now=now, verdict=(None, None)
-                    )
-                    approved = review_feedback_loop.evaluate_review_state(
-                        _pr(created_at=past_grace, labels=(), review_decision="APPROVED"),
-                        now=now, verdict=(None, None),
-                    )
-                else:
-                    flat = _flat_labels(ft, dp)
-                    unreviewed = review_feedback_loop.evaluate_review_state(
-                        _pr(created_at=past_grace, labels=flat), now=now
-                    )
-                    approved = review_feedback_loop.evaluate_review_state(
-                        _pr(created_at=past_grace, labels=flat, review_decision="APPROVED"),
-                        now=now,
-                    )
+                unreviewed, approved = _grid_states(ft, dp, now=now, created_at=past_grace)
                 if lane == AUTO:
                     self.assertTrue(
                         unreviewed["eligible_for_auto_merge"],
@@ -213,15 +225,10 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
                         approved["eligible_for_auto_merge"],
                         "depth=nope is the sovereign's hand — never auto, even approved",
                     )
-        # A not-yet-classified PR (no pair labels) must never be mistaken for clear — it HOLDS
-        # (the K4 positive-marker requirement: absence of a flag is not the clear state).
-        unmarked = review_feedback_loop.evaluate_review_state(
-            _pr(created_at=past_grace, labels=()), now=now
-        )
-        self.assertFalse(
-            unmarked["eligible_for_auto_merge"],
-            "unmarked PR must hold, never arm — clear requires a positive marker",
-        )
+        # The AUTO cell above is reached only via an affirmative `—/—` verdict. The
+        # converse — an unmarked PR with no verdict HOLDS rather than being mistaken for
+        # clear (K4 positive-marker) — is pinned by
+        # test_unclassified_pr_without_verdict_never_arms.
 
     def test_low_risk_pr_holds_and_never_auto_merges(self) -> None:
         # K3/#629 norm flip: risk/low is a sorter that FIRED (machine-doc paths) — it HOLDS
