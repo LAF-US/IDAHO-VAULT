@@ -12,39 +12,39 @@ Status: ready for DMs + spaces via Google Chat API webhooks (HTTP only).
 
 1. Create a Google Cloud project and enable the **Google Chat API**.
    - Go to: [Google Chat API Credentials](https://console.cloud.google.com/apis/api/chat.googleapis.com/credentials)
-    - Enable the API if it is not already enabled.
+   - Enable the API if it is not already enabled.
 2. Create a **Service Account**:
    - Press **Create Credentials** > **Service Account**.
-    - Name it whatever you want (e.g., `openclaw-chat`).
-    - Leave permissions blank (press **Continue**).
-    - Leave principals with access blank (press **Done**).
+   - Name it whatever you want (e.g., `openclaw-chat`).
+   - Leave permissions blank (press **Continue**).
+   - Leave principals with access blank (press **Done**).
 3. Create and download the **JSON Key**:
    - In the list of service accounts, click on the one you just created.
-    - Go to the **Keys** tab.
-    - Click **Add Key** > **Create new key**.
-    - Select **JSON** and press **Create**.
+   - Go to the **Keys** tab.
+   - Click **Add Key** > **Create new key**.
+   - Select **JSON** and press **Create**.
 4. Store the downloaded JSON file on your gateway host (e.g., `~/.openclaw/googlechat-service-account.json`).
 5. Create a Google Chat app in the [Google Cloud Console Chat Configuration](https://console.cloud.google.com/apis/api/chat.googleapis.com/hangouts-chat):
    - Fill in the **Application info**:
-    - **App name**: (e.g. `OpenClaw`)
+   - **App name**: (e.g. `OpenClaw`)
       - **Avatar URL**: (e.g. `https://openclaw.ai/logo.png`)
       - **Description**: (e.g. `Personal AI Assistant`)
-    - Enable **Interactive features**.
-    - Under **Functionality**, check **Join spaces and group conversations**.
-    - Under **Connection settings**, select **HTTP endpoint URL**.
-    - Under **Triggers**, select **Use a common HTTP endpoint URL for all triggers** and set it to your gateway’s public URL followed by `/googlechat`.
-    - *Tip: Run `openclaw status` to find your gateway’s public URL.*
-    - Under **Visibility**, check **Make this Chat app available to specific people and groups in <Your Domain>**.
-    - Enter your email address (e.g. `user@example.com`) in the text box.
-    - Click **Save** at the bottom.
+   - Enable **Interactive features**.
+   - Under **Functionality**, check **Join spaces and group conversations**.
+   - Under **Connection settings**, select **HTTP endpoint URL**.
+   - Under **Triggers**, select **Use a common HTTP endpoint URL for all triggers** and set it to your gateway’s public URL followed by `/googlechat`.
+   - *Tip: Run `openclaw status` to find your gateway’s public URL.*
+   - Under **Visibility**, check **Make this Chat app available to specific people and groups in <Your Domain>**.
+   - Enter your email address (e.g. `user@example.com`) in the text box.
+   - Click **Save** at the bottom.
 6. **Enable the app status**:
    - After saving, **refresh the page**.
-    - Look for the **App status** section (usually near the top or bottom after saving).
-    - Change the status to **Live - available to users**.
-    - Click **Save** again.
+   - Look for the **App status** section (usually near the top or bottom after saving).
+   - Change the status to **Live - available to users**.
+   - Click **Save** again.
 7. Configure OpenClaw with the service account path + webhook audience:
    - Env: `GOOGLE_CHAT_SERVICE_ACCOUNT_FILE=/path/to/service-account.json`
-    - Or config: `channels.googlechat.serviceAccountFile: "/path/to/service-account.json"`.
+   - Or config: `channels.googlechat.serviceAccountFile: "/path/to/service-account.json"`.
 8. Set the webhook audience type + value (matches your Chat app config).
 9. Start the gateway. Google Chat will POST to your webhook path.
 
@@ -132,13 +132,13 @@ Configure your tunnel’s ingress rules to only route the webhook path:
 
 1. Google Chat sends webhook POSTs to the gateway. Each request includes an `Authorization: Bearer <token>` header.
    - OpenClaw verifies bearer auth before reading/parsing full webhook bodies when the header is present.
-    - Google Workspace Add-on requests that carry `authorizationEventObject.systemIdToken` in the body are supported via a stricter pre-auth body budget.
+   - Google Workspace Add-on requests that carry `authorizationEventObject.systemIdToken` in the body are supported via a stricter pre-auth body budget.
 2. OpenClaw verifies the token against the configured `audienceType` + `audience`:
    - `audienceType: "app-url"` → audience is your HTTPS webhook URL.
-    - `audienceType: "project-number"` → audience is the Cloud project number.
+   - `audienceType: "project-number"` → audience is the Cloud project number.
 3. Messages are routed by space:
    - DMs use session key `agent:<agentId>:googlechat:direct:<spaceId>`.
-    - Spaces use session key `agent:<agentId>:googlechat:group:<spaceId>`.
+   - Spaces use session key `agent:<agentId>:googlechat:group:<spaceId>`.
 4. DM access is pairing by default. Unknown senders receive a pairing code; approve with:
    - `openclaw pairing approve googlechat <code>`
 5. Group spaces require @-mention by default. Use `botUser` if mention detection needs the app’s user name.

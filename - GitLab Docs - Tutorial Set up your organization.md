@@ -20,9 +20,9 @@ To use OpenCode in your terminal, you’ll need:
 
 1. A modern terminal emulator like:
    - [WezTerm](https://wezterm.org/), cross-platform
-    - [Alacritty](https://alacritty.org/), cross-platform
-    - [Ghostty](https://ghostty.org/), Linux and macOS
-    - [Kitty](https://sw.kovidgoyal.net/kitty/), Linux and macOS
+   - [Alacritty](https://alacritty.org/), cross-platform
+   - [Ghostty](https://ghostty.org/), Linux and macOS
+   - [Kitty](https://sw.kovidgoyal.net/kitty/), Linux and macOS
 2. API keys for the LLM providers you want to use.
 
 ---
