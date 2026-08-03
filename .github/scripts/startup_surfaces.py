@@ -81,11 +81,6 @@ def resolve_rel(name: str, root: Path | None = None) -> str | None:
     return None
 
 
-def missing(names: list[str], root: Path | None = None) -> list[str]:
-    """Names that cannot be found at any of their candidate paths."""
-    return [n for n in names if resolve(n, root) is None]
-
-
 def describe(names: list[str], root: Path | None = None) -> str:
     """Human-readable resolution table, for CI logs."""
     lines = []

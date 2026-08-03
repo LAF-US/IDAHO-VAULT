@@ -20,6 +20,8 @@ import subprocess
 import sys
 from pathlib import Path
 
+from startup_surfaces import candidates
+
 # ── Configuration ────────────────────────────────────────────────────────────
 
 # Directories each scope is allowed to touch
@@ -70,10 +72,6 @@ ROOT_GOVERNED_FILES = {
     "VAULT-METADATA-STANDARD.md",
     "VAULT-TEMPLATES.md",
 }
-import sys as _sys
-_sys.path.insert(0, str(Path(__file__).resolve().parent))
-from startup_surfaces import candidates  # noqa: E402
-
 REQUIRED_GOVERNED_FIELDS = ("title", "updated", "status", "authority")
 # Every path a protected surface may occupy, not just today's. Covering a
 # path that does not currently exist costs nothing; keying the guard to one

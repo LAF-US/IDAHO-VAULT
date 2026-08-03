@@ -7,15 +7,13 @@ import argparse
 import json
 from pathlib import Path
 
+from startup_surfaces import resolve_rel
+
 REQUIRED_CONTEXT = [
     "CONSTITUTION.md",
     "DECISIONS.md",
     "VAULT-CONVENTIONS.md",
 ]
-
-import sys
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-from startup_surfaces import candidates, resolve_rel  # noqa: E402
 
 # Resolved so the discovery index points at the file that is actually there;
 # falls back to the canonical path when a surface is absent entirely.

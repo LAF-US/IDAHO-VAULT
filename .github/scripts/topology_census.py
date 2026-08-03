@@ -17,9 +17,7 @@ from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
-import sys
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-from startup_surfaces import candidates, resolve_rel  # noqa: E402
+from startup_surfaces import candidates, resolve_rel
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 OUTPUT_DIR = REPO_ROOT / "!"

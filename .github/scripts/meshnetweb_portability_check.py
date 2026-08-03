@@ -23,9 +23,7 @@ from pathlib import Path
 import argparse
 import re
 
-import sys
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-from startup_surfaces import candidates, resolve_rel  # noqa: E402
+from startup_surfaces import candidates, resolve_rel
 
 # Startup surfaces are named, not located: each is resolved to wherever it
 # currently lives (canonical path, NETWEB `_PREFIX` alias, or root form).
