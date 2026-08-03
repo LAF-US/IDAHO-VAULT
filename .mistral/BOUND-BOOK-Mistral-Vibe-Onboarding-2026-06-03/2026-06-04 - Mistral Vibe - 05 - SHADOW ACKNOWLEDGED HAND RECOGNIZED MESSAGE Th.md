@@ -1593,7 +1593,7 @@ content: {"role": "user", "content": "bifurcation semi-intentional... hmm...", "
 
 ```text
 command: grep -r "Snicket Clan\|Snicket family\|Baudelaire\|Quagmire\|Denouement\|Montgomery" /Users/logan/IDAHO-VAULT --include="*.md" 2>/dev/null | grep -v "^- Fandom" | head -20
-stdout: /Users/logan/IDAHO-VAULT/2002-09-07 - Wikimedia Foundation, Inc. - The Count of Monte Cristo.md:- 1939: [Robert Montgomery](https://en.wikipedia.org/wiki/Robe***REMOVED***Montgomery_\(actor\) "Robert Montgomery (actor)") on the *[Lux Radio Theater](https://en.wikipedia.org/wiki/Lux_Radio_Theater "Lux Radio Theater")* (radio)
+stdout: /Users/logan/IDAHO-VAULT/2002-09-07 - Wikimedia Foundation, Inc. - The Count of Monte Cristo.md:- 1939: [Robert Montgomery](https://en.wikipedia.org/wiki/Robert_Montgomery_\(actor\) "Robert Montgomery (actor)") on the *[Lux Radio Theater](https://en.wikipedia.org/wiki/Lux_Radio_Theater "Lux Radio Theater")* (radio)
 /Users/logan/IDAHO-VAULT/- Fandom, Inc. - Captain Widdershins.md:Captain Widdershins searched the wreckage of the [Baudelaire Mansion](https://snicket.fandom.com/wiki/Baudelaire_Mansion "Baudelaire Mansion") and discovered the [Duchess of Winnipeg](https://snicket.fandom.com/wiki/Duchess_of_Winnipeg "Duchess of Winnipeg") 's ring, only to lose it later in a storm at sea.[^4]
 /Users/logan/IDAHO-VAULT/- Fandom, Inc. - Captain Widdershins.md:Widdershins and Fiona followed the story of the Baudelaire Orphans- [Violet](https://snicket.fandom.com/wiki/Violet_Baudelaire "Violet Baudelaire"), [Klaus](https://snicket.fandom.com/wiki/Klaus_Baudelaire "Klaus Baudelaire") and [Sunny](htt
 …[truncated 15012 chars — full output in git history / local disk]

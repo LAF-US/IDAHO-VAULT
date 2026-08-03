@@ -29,7 +29,7 @@ This document defines the integration between the **LEVELSET** protocol and the 
 
 | Protocol | Stage | Field Integration | Stigmergy Signal | Purpose |
 | ---------- | ------- | ------------------- | ------------------ | --------- |
-| **ARISE** | Individual emergence from void | `vault.agent.{agent}.arrival` | `vault.agent.{agent} = 1.0` | First activation, context boot | |
+| **ARISE** | Individual emergence from void | `vault.agent.{agent}.arrival` | `vault.agent.{agent} = 1.0` | First activation, context boot |
 | **AWAKEN** | Agent wake protocol | `vault.agent.{agent}.status = active` | `vault.signal.awaken.{agent} = 0.8` | Authorization, identity claim |
 | **RISE** | Individual task completion | `vault.docket.task.{id}.complete` | `vault.docket.{id} = 0.0` | Formal graduation |
 | **REPORT** | Group findings presentation | `vault.docket.report.{id}` | `vault.signal.report.{id} = 1.0` | Findings delivery |

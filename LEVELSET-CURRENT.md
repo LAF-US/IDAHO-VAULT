@@ -1,11 +1,9 @@
-# LEVELSET-CURRENT
-
 ---
 author:
-
-- "[[Logan A. Finney]]"
-
+  - "[[Logan A. Finney]]"
 ---
+
+# LEVELSET-CURRENT
 
 By its very nature, the "LEVELSET" protocolset produces a momentary snapshot of an instant.
 

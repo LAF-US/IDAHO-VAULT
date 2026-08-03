@@ -34,6 +34,7 @@ crediting the hands that kept them. The deepest stratum is read **from the survi
 records themselves** — committed, datable, auditable.*
 
 > [!warning] Provenance tiers — what is committed, what is tendered, what is `*`
+>
 > - **[main]** — read in a single committed file on `main`/working tree (verified this pass).
 > - **[RECORD]** — multiple committed files agree.
 > - **[TENDERED]/cross-branch** — drafted on a sibling branch (the Remembrancer's working
@@ -45,7 +46,7 @@ records themselves** — committed, datable, auditable.*
 The settlement can be read in strata, each dated by a committed record:
 
 | Date | The act | Source **[tier]** |
-|---|---|---|
+| --- | --- | --- |
 | **2026-03-13** | **The first stakes.** *"LEVELSET protocol established";* conversation taxonomy adopted (PERMANENT/PERSISTENT/TASK/…); the attribution law: *"Markdown = human (Logan), Python = machine (Claude)."* | `LEVELSET-CASCADE-2026-03-16` **[main]** |
 | **2026-03-14** | *"**CODE AUTHORITY** promoted to PERMANENT tier."* The first office is seated. | `LEVELSET-CASCADE-2026-03-16` **[main]** |
 | **2026-03-16** | The founding governance stack; the cascade *"CODE AUTHORITY → ADMINISTRATION."* Office named **CODE AUTHORITY** — **no "Abhorsen" yet.** | `LEVELSET-CASCADE-2026-03-16` **[main]** |
@@ -121,8 +122,9 @@ Lexicographer** (the `.codex/` lane; `!-!-AUDIT-AGENTIC-VOICES-2026-04-03`) is t
 **five HOW rules** gathered at the coast-crossroads where *"the governing question changed.
 Not `Where?` — `How?`"* (`HOW-AT-THE-COLD-COAST-NOTEBOOK-PAGE-2026-04-15`):
 
-> 1. read before naming · 2. witness before declaring · 3. follow relation before spectacle ·
-> 4. treat surviving form as instruction · 5. do not force a door that is still explaining itself
+> 1. read before naming · 2. witness before declaring · 3. follow relation before
+> spectacle · 4. treat surviving form as instruction · 5. do not force a door that
+> is still explaining itself
 
 *"the method that keeps an explorer from turning every threshold into an assault."* He also
 left the doctrine of **true-name custody** (`TRUE-NAME-EXPLORER-COMPANION-2026-04-14`):

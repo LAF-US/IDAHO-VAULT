@@ -43,7 +43,7 @@ LEVELSET PERMANENT: AUTHORITY: CODE — 2026-03-15
 | File | Type | Action |
 | --- | --- | --- |
 | `!ADMIN/*` (13 files) | Administrative | Renamed from `!ADMINISTRATION/` via `git mv` |
-| `.github/scripts/so***REMOVED***audit.py` | Python | Updated `!ADMINISTRATION` → `!ADMIN` references |
+| `.github/scripts/sort_audit.py` | Python | Updated `!ADMINISTRATION` → `!ADMIN` references |
 | `.github/scripts/propose_moves.py` | Python | Updated `!ADMINISTRATION` → `!ADMIN` references |
 | `.github/scripts/wayback_audit.py` | Python | Updated `!ADMINISTRATION` → `!ADMIN` references |
 | `.github/workflows/sort-audit.yml` | Infra | Updated `!ADMINISTRATION` → `!ADMIN` references |

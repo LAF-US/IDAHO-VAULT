@@ -122,7 +122,7 @@ registry schemes that collapsed tool, instance, and office into one row.
 
 See also: `!/CODEX-VOICE-REGISTRY-2026-05-18.md` for the Codex voice roster.
 
-## Name =/= Job:
+## Name =/= Job
 
 - Claude Code is an Anthropic tool/persona lineage.
 - The prior Claude/**Abhorsen** terminal-and-repository job assignment is under
@@ -332,7 +332,6 @@ inform, transport, or track work, but they do not silently become doctrine or
 replace the broader `LAF-US` sovereignty model.
 
 ---
-
 
 ---
 
