@@ -133,7 +133,7 @@ class ArgvTest(TestCase):
         self.assertEqual(argv, ["gh", "pr", "merge", "5", "--merge"])
 
     def test_pr_merge_rejects_any_method_but_the_queues(self) -> None:
-        # K5/#631: a divergent merge method is unexpressible, not test-caught.
+        # A divergent merge method is unexpressible, not merely test-caught.
         for method in ("squash", "rebase", "MERGE"):
             with self.assertRaises(ValueError):
                 gh_cli.pr_merge(5, method=method)
