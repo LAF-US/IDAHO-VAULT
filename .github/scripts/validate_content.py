@@ -20,6 +20,8 @@ import subprocess
 import sys
 from pathlib import Path
 
+from startup_surfaces import candidates
+
 # ── Configuration ────────────────────────────────────────────────────────────
 
 # Directories each scope is allowed to touch
@@ -71,14 +73,18 @@ ROOT_GOVERNED_FILES = {
     "VAULT-TEMPLATES.md",
 }
 REQUIRED_GOVERNED_FIELDS = ("title", "updated", "status", "authority")
+# Every path a protected surface may occupy, not just today's. Covering a
+# path that does not currently exist costs nothing; keying the guard to one
+# path means a legitimate move silently drops the file out of protection —
+# deletion review would stop applying with nothing failing to say so.
 PROTECTED_LIVE_FILES = {
     "AGENTS.md",
     "CONSTITUTION.md",
     "DECISIONS.md",
     "VAULT-CONVENTIONS.md",
-    "!/AGENTS.md",
-    "!/WAKEUP.md",
-    "!/README.md",
+    *candidates("NEST_AGENTS"),
+    *candidates("WAKEUP"),
+    *candidates("NEST_README"),
 }
 
 
