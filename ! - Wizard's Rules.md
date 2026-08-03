@@ -4,7 +4,18 @@ attribution: "Wizard's Rules © Terry Goodkind, *Sword of Truth* series. Rule st
 canonical_source: "The published *Sword of Truth* novels by Terry Goodkind. This file is an attributed convenience reference, NOT the canon."
 created: 2026-04-14
 date created: Tuesday, April 14th 2026, 9:15:41 pm
-date modified: 2026-06-21
+date modified: 2026-08-02
+related:
+  - WIZARDS_FIRST
+  - WIZARDS_SECOND
+  - WIZARDS_THIRD
+  - WIZARDS_FOURTH
+  - WIZARDS_FIFTH
+  - WIZARDS_SIXTH
+  - WIZARDS_SEVENTH
+  - WIZARDS_EIGHTH
+  - WIZARDS_NINTH
+  - WIZARDS_TENTH
 ---
 
 > [!NOTE] Attribution & fair use
