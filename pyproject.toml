@@ -11,6 +11,7 @@ dependencies = [
     "huggingface-hub>=0.0,<2",
     "requests-oauthlib>=0.0,<3",
     "honcho-ai>=2.1.2,<3",
+    "pygit2>=1.18.2,<2",
 ]
 
 [project.scripts]
