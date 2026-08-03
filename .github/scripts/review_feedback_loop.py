@@ -746,6 +746,12 @@ def _disable_auto_merge(pr_number: int, *, check: bool = False) -> None:
 
 
 def _comment(pr_number: int, body: str) -> None:
+    """Post a PR comment, with the body carried as a file rather than an argv element."""
+    # The carrying is gh_cli.pr_comment's job now (_body_file), but the reason it must
+    # happen belongs here, where the bodies are built: these are multi-line attestations
+    # assembled at runtime from CLI input, and argv is the wrong carrier twice over —
+    # ARG_MAX truncates a long one at the exec layer, and caller text in a command line
+    # is caller text in a command line.
     gh_cli.pr_comment(pr_number, body)
 
 
