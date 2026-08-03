@@ -97,9 +97,21 @@ def _download_repo_zip(owner: str, repo: str, ref: str, dest_dir: str) -> str:
 
 
 def _run_git(args: list[str]) -> None:
-    result = subprocess.run(
-        args, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, timeout=300
-    )
+    # `check=False` is explicit: the return code is inspected below, and relying
+    # on the default silently makes that inspection look redundant to a reader.
+    # Every failure leaves here as an InstallError, including a timeout -- the
+    # sparse-checkout caller falls back from https to ssh by catching
+    # InstallError, so a bare TimeoutExpired would skip the fallback and abort
+    # the install instead of retrying it.
+    try:
+        result = subprocess.run(
+            args, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True,
+            timeout=300, check=False,
+        )
+    except subprocess.TimeoutExpired as exc:
+        raise InstallError(f"{' '.join(args)} timed out after 300s") from exc
+    except OSError as exc:
+        raise InstallError(f"{' '.join(args)} could not run: {exc}") from exc
     if result.returncode != 0:
         raise InstallError(result.stderr.strip() or "Git command failed.")
 
