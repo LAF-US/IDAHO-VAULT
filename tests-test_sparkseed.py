@@ -3,7 +3,7 @@ from __future__ import annotations
 import sys
 import unittest
 from pathlib import Path
-from subprocess import CompletedProcess
+from subprocess import CompletedProcess  # nosec B404 -- see [tool.bandit] note in pyproject.toml
 from unittest import mock
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]

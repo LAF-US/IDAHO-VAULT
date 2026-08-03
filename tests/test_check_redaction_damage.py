@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 import importlib.util
-import subprocess
+import subprocess  # nosec B404 -- see [tool.bandit] note in pyproject.toml
 import sys
 import tempfile
 import unittest
@@ -32,6 +32,7 @@ def _git(repo: Path, *args: str) -> subprocess.CompletedProcess[str]:
         text=True,
         capture_output=True,
         check=True,
+        timeout=30,
     )
 
 
