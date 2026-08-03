@@ -137,15 +137,15 @@ def _grid_states(
             ),
         )
     # The `—/—` cell carries NO labels, so nothing can be derived from them; its clear
-    # state is affirmed by the classifier's verdict, mirroring how sync_pr calls
+    # state is affirmed by the classified lane, mirroring how sync_pr calls
     # evaluate_review_state post-classify.
     return (
         review_feedback_loop.evaluate_review_state(
-            _pr(created_at=created_at, labels=()), now=now, verdict=(None, None)
+            _pr(created_at=created_at, labels=()), now=now, classified_lane=(None, None)
         ),
         review_feedback_loop.evaluate_review_state(
             _pr(created_at=created_at, labels=(), review_decision="APPROVED"),
-            now=now, verdict=(None, None),
+            now=now, classified_lane=(None, None),
         ),
     )
 
@@ -171,10 +171,10 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertEqual(captured.get("jq"), ".[].body")
 
     def test_clear_pair_pr_becomes_auto_merge_eligible_after_grace(self) -> None:
-        # The `—/—` verdict — and ONLY it — arms auto-merge. A PR that the classifier
+        # A classified `—/—` lane — and ONLY it — arms auto-merge. A PR that the classifier
         # scored clear (no risk/* label) with no blocking feedback is eligible once the grace
         # window elapses; within grace it is not yet eligible. The clear state is affirmed by
-        # the classifier's `(None, None)` verdict (no labels to read).
+        # the classifier's `(None, None)` pair (no labels to read).
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
 
         early_state = review_feedback_loop.evaluate_review_state(
@@ -183,7 +183,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
                 labels=(),
             ),
             now=now,
-            verdict=(None, None),
+            classified_lane=(None, None),
         )
         ready_state = review_feedback_loop.evaluate_review_state(
             _pr(
@@ -191,7 +191,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
                 labels=(),
             ),
             now=now,
-            verdict=(None, None),
+            classified_lane=(None, None),
         )
 
         self.assertTrue(early_state["is_clear"])
@@ -248,15 +248,14 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
                         approved["eligible_for_auto_merge"],
                         "depth=nope is the sovereign's hand — never auto, even approved",
                     )
-        # The AUTO cell above is reached only via an affirmative `—/—` verdict. The
-        # converse — an unmarked PR with no verdict HOLDS rather than being mistaken for
-        # clear (the positive marker) — is pinned by
-        # test_unclassified_pr_without_verdict_never_arms.
+        # The converse of the AUTO cell above — a PR with no labels and no classified
+        # lane reads `unknown` and HOLDS — is pinned by
+        # test_unclassified_pr_without_a_classified_lane_never_arms.
 
     def test_low_risk_pr_holds_and_never_auto_merges(self) -> None:
         # risk/low is a sorter that FIRED (machine-doc paths) — it HOLDS
-        # for review, it does not arm. Only the positive clear marker auto-merges. A low-risk
-        # PR past grace with no blocking feedback stays ineligible and carries review/pending.
+        # for review, it does not arm. A low-risk PR past grace with no blocking
+        # feedback stays ineligible and carries review/pending.
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
 
         state = review_feedback_loop.evaluate_review_state(
@@ -333,7 +332,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
                     rfl._assert_risk_marker_exclusive(labels)
 
     def test_tier_from_pair_rejects_out_of_vocab_flags(self) -> None:
-        # A caller-supplied verdict typo (e.g. "medium" vs "med") must fail loud, not fall
+        # A caller-supplied lane typo (e.g. "medium" vs "med") must fail loud, not fall
         # through to "clear" and misroute the PR.
         rfl = review_feedback_loop
         with self.assertRaises(rfl.RiskMarkerInvariantError):
@@ -356,12 +355,12 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             rfl.restamp_risk_pair(1, set(), None, "highish")
 
     def test_pair_clear_arms_and_pair_flag_holds(self) -> None:
-        # The `—/—` verdict arms after grace; a fired lane holds until its review completes.
+        # A classified `—/—` lane arms after grace; a fired lane holds until its review completes.
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
         clear_state = review_feedback_loop.evaluate_review_state(
             _pr(created_at=now - timedelta(minutes=45), labels=()),
             now=now,
-            verdict=(None, None),
+            classified_lane=(None, None),
         )
         self.assertTrue(clear_state["is_clear"])
         self.assertTrue(clear_state["eligible_for_auto_merge"])
@@ -377,7 +376,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
     def test_lane_completion_clears_flag_and_flows(self) -> None:
         # "Restamp + clear": an approving review with no current threads completes the
         # lane — the PR becomes eligible, and the projection consumes the fired flag
-        # (removes the flat label; a clear verdict stamps none).
+        # (removes the flat label; a clear lane stamps none).
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
         state = review_feedback_loop.evaluate_review_state(
             _pr(created_at=now - timedelta(minutes=45),
@@ -393,7 +392,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
              mock.patch.object(review_feedback_loop, "_disable_auto_merge"):
             actions = review_feedback_loop.apply_review_state_projection(17, state)
         self.assertIn("remove:risk/med", actions)
-        # A clear verdict adds nothing.
+        # A clear lane adds nothing.
         self.assertNotIn("add:risk/med", actions)
         edit_label.assert_any_call(17, remove="risk/med")
 
@@ -417,12 +416,12 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertNotIn("remove:risk/nope", actions)
 
     def test_restamp_mirrors_classifier(self) -> None:
-        # Restamp: labels mirror the verdict — fired axes stamped, stale risk/* flags
+        # Restamp: labels mirror the classified lane — fired axes stamped, stale risk/* flags
         # retired, non-risk labels untouched.
         with mock.patch.object(review_feedback_loop, "_edit_label"):
             labels = {"risk/med", "review/pending"}
             actions = review_feedback_loop.restamp_risk_pair(21, labels, None, None)
-        # `—/—` verdict clears the fired filetype flag and adds nothing.
+        # A `—/—` lane clears the fired filetype flag and adds nothing.
         self.assertIn("remove:risk/med", actions)
         self.assertNotIn("review/pending", [a.split(":", 1)[-1] for a in actions])
         self.assertIn("review/pending", labels)  # non-risk labels untouched
@@ -459,7 +458,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertIn("add:risk/high", actions)
         self.assertEqual(labels, {"risk/med", "risk/high", "review/pending", "agent:claude-code"})
 
-        # A `—/—` verdict strips the retired vocabulary too, stamping nothing in its place.
+        # A `—/—` lane strips the retired vocabulary too, stamping nothing in its place.
         with mock.patch.object(review_feedback_loop, "_edit_label"):
             labels = set(retired) | {"review/pending"}
             review_feedback_loop.restamp_risk_pair(32, labels, None, None)
@@ -520,14 +519,14 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         ) as arm, contextlib.redirect_stdout(io.StringIO()):
             result = review_feedback_loop.sync_pr(args)
         self.assertEqual(result, 0)
-        # Restamped to `—/—` (no labels) -> clear lane via the verdict -> armed this pass.
+        # Restamped to `—/—` (no labels) -> clear lane passed in -> armed this pass.
         arm.assert_called_once_with("LAF-US", "IDAHO-VAULT", 300)
 
     def test_consumed_clear_lane_complete_pr_is_not_disarmed(self) -> None:
         # Regression: a PR whose flag was consumed (now zero risk/* labels) and whose lane
-        # completed (APPROVED, no threads) must be re-evaluated with the classifier verdict
+        # completed (APPROVED, no threads) must be re-evaluated with the classified lane
         # even though lane_complete skips the restamp. Before the fix the sweep skipped the
-        # verdict when lane_complete, so such a PR read as `unknown`, failed its eligibility
+        # lane when lane_complete, so such a PR read as `unknown`, failed its eligibility
         # check, and the projection DISARMED an already-armed clear PR.
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
         args = SimpleNamespace(
@@ -558,14 +557,14 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         ), contextlib.redirect_stdout(io.StringIO()):
             result = review_feedback_loop.sync_pr(args)
         self.assertEqual(result, 0)
-        # The consumed-clear lane-complete PR reads clear via the verdict -> stays eligible
+        # The consumed-clear lane-complete PR reads clear via the passed-in lane -> stays eligible
         # -> is NOT disarmed.
         disable.assert_not_called()
 
     def test_stale_flag_on_lane_complete_pr_is_consumed_not_orphaned(self) -> None:
         # Regression: a lane-complete PR that STILL carries a stale risk/* flag but now
         # classifies clear must keep its label-derived state so the projection CONSUMES the
-        # stale flag. Passing the clear verdict here would make flag_clearable false and
+        # stale flag. Passing the clear lane here would make flag_clearable false and
         # leave the flag orphaned on the PR.
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
         args = SimpleNamespace(
@@ -603,8 +602,8 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             edit_label.call_args_list,
         )
 
-    def test_unclassified_pr_without_verdict_never_arms(self) -> None:
-        # Safety: absence of a risk label is NOT clear. Without an affirmative verdict, an
+    def test_unclassified_pr_without_a_classified_lane_never_arms(self) -> None:
+        # Safety: absence of a risk label is NOT clear. Without a classified lane, an
         # all-absent PR is `unknown` and HOLDS — it must never be armed for auto-merge.
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
         state = review_feedback_loop.evaluate_review_state(
@@ -617,7 +616,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
 
     def test_unmarked_pr_holds_and_is_not_clear(self) -> None:
         # Absence of a marker is NOT classified-clear. An unmarked PR resolves
-        # to "unknown" and never arms — only a positive verdict of `—/—` does.
+        # to "unknown" and never arms — only a classified `—/—` lane does.
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
         state = review_feedback_loop.evaluate_review_state(
             _pr(created_at=now - timedelta(minutes=45), labels=(), body="## No marker\n"),
@@ -1285,7 +1284,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
 
     def test_sync_pr_arms_eligible_clear_pr_when_threads_clear(self) -> None:
         # End-to-end through sync_pr: a clear (`—/—`) grace-elapsed PR with no current threads
-        # is armed (guarded). The classifier's `(None, None)` verdict affirms clear; the PR
+        # is armed (guarded). The classifier's `(None, None)` pair affirms clear; the PR
         # carries no risk labels. Mirrors "arm when the last blocking thread clears".
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
         args = SimpleNamespace(
@@ -1392,7 +1391,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
 
     def test_reconcile_open_prs_promotes_and_arms_eligible_clear_pair_pr(self) -> None:
         # A clear (`—/—`) grace-elapsed, unblocked PR is promoted to merge/auto and
-        # armed for the merge queue. The classifier's `(None, None)` verdict affirms clear;
+        # armed for the merge queue. The classifier's `(None, None)` pair affirms clear;
         # the PR carries no risk labels. (A risk/low PR would HOLD instead.)
         args = SimpleNamespace(
             owner="LAF-US",
