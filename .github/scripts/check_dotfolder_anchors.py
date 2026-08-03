@@ -23,7 +23,7 @@ untracked runtime dirs (.venv, caches) never false-fail a local run.
 
 from __future__ import annotations
 
-import subprocess
+import subprocess  # nosec B404 -- see [tool.bandit] note in pyproject.toml
 import sys
 from pathlib import Path
 
@@ -47,18 +47,24 @@ def expected_anchor_name(dotfolder: str) -> str:
 
 
 def tracked_top_level_dotfolders() -> list[str]:
-    result = subprocess.run(
-        # quotePath=false: git's default quoting wraps non-ASCII names in
-        # "..." with octal escapes, which would fail startswith(".") and
-        # silently exempt such a dotfolder from enforcement.
-        ["git", "-c", "core.quotePath=false", "ls-tree", "HEAD"],
-        cwd=ROOT,
-        text=True,
-        encoding="utf-8",
-        errors="replace",
-        capture_output=True,
-        check=False,
-    )
+    try:
+        result = subprocess.run(
+            # quotePath=false: git's default quoting wraps non-ASCII names in
+            # "..." with octal escapes, which would fail startswith(".") and
+            # silently exempt such a dotfolder from enforcement.
+            ["git", "-c", "core.quotePath=false", "ls-tree", "HEAD"],
+            cwd=ROOT,
+            text=True,
+            encoding="utf-8",
+            errors="replace",
+            capture_output=True,
+            check=False,
+            timeout=30,
+        )
+    except subprocess.TimeoutExpired as exc:
+        raise RuntimeError("git ls-tree HEAD timed out after 30s") from exc
+    except OSError as exc:
+        raise RuntimeError(f"git ls-tree HEAD could not run: {exc}") from exc
     if result.returncode != 0:
         raise RuntimeError(result.stderr.strip() or "git ls-tree HEAD failed")
 
