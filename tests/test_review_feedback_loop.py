@@ -171,7 +171,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertEqual(captured.get("jq"), ".[].body")
 
     def test_clear_pair_pr_becomes_auto_merge_eligible_after_grace(self) -> None:
-        # K3/#629: the `—/—` verdict — and ONLY it — arms auto-merge. A PR that the classifier
+        # The `—/—` verdict — and ONLY it — arms auto-merge. A PR that the classifier
         # scored clear (no risk/* label) with no blocking feedback is eligible once the grace
         # window elapses; within grace it is not yet eligible. The clear state is affirmed by
         # the classifier's `(None, None)` verdict (no labels to read).
@@ -250,11 +250,11 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
                     )
         # The AUTO cell above is reached only via an affirmative `—/—` verdict. The
         # converse — an unmarked PR with no verdict HOLDS rather than being mistaken for
-        # clear (K4 positive-marker) — is pinned by
+        # clear (the positive marker) — is pinned by
         # test_unclassified_pr_without_verdict_never_arms.
 
     def test_low_risk_pr_holds_and_never_auto_merges(self) -> None:
-        # K3/#629 norm flip: risk/low is a sorter that FIRED (machine-doc paths) — it HOLDS
+        # risk/low is a sorter that FIRED (machine-doc paths) — it HOLDS
         # for review, it does not arm. Only the positive clear marker auto-merges. A low-risk
         # PR past grace with no blocking feedback stays ineligible and carries review/pending.
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
@@ -290,7 +290,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertEqual(state["risk_tier"], "low")
         self.assertTrue(state["low_risk"])
         self.assertTrue(state["grace_elapsed"])
-        # K3/#629: risk/low HOLDS — the label is canonical for the tier, but low is not the
+        # risk/low HOLDS — the label is canonical for the tier, but low is not the
         # clear pair, so it never arms.
         self.assertFalse(state["eligible_for_auto_merge"])
 
@@ -493,7 +493,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertEqual(labels, near_misses)
 
     def test_sync_pr_restamps_unmarked_pr_from_classifier(self) -> None:
-        # K6 backfill-by-automation: an unmarked in-flight PR gets its pair stamped from
+        # Backfill-by-automation: an unmarked in-flight PR gets its pair stamped from
         # the classifier on the next sync — no hand-sweep.
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
         args = SimpleNamespace(
@@ -604,7 +604,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         )
 
     def test_unclassified_pr_without_verdict_never_arms(self) -> None:
-        # K4 safety: absence of a risk label is NOT clear. Without an affirmative verdict, an
+        # Safety: absence of a risk label is NOT clear. Without an affirmative verdict, an
         # all-absent PR is `unknown` and HOLDS — it must never be armed for auto-merge.
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
         state = review_feedback_loop.evaluate_review_state(
@@ -616,7 +616,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertFalse(state["eligible_for_auto_merge"])
 
     def test_unmarked_pr_holds_and_is_not_clear(self) -> None:
-        # K4/#630 core: absence of a marker is NOT classified-clear. An unmarked PR resolves
+        # Absence of a marker is NOT classified-clear. An unmarked PR resolves
         # to "unknown" and never arms — only a positive verdict of `—/—` does.
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
         state = review_feedback_loop.evaluate_review_state(
@@ -1232,7 +1232,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             self.assertIsNone(review_feedback_loop._pr_node_id("o", "r", 9))
 
     # ----- guarded arm (#521/#527 reversal, 2026-06-17). The protected-path veto was
-    # retired 2026-06-29 (K1/#627, K2/#628): the CODEOWNERS hard gate
+    # retired 2026-06-29: the CODEOWNERS hard gate
     # (require_code_owner_review) now enforces "this path needs a human", so the engine no
     # longer vetoes protected paths — these tests assert the un-vetoed arm path. -----
 
@@ -1391,7 +1391,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertEqual(attest.call_args.args[2], "github-actions[bot]")
 
     def test_reconcile_open_prs_promotes_and_arms_eligible_clear_pair_pr(self) -> None:
-        # K3/#629: a clear (`—/—`) grace-elapsed, unblocked PR is promoted to merge/auto and
+        # A clear (`—/—`) grace-elapsed, unblocked PR is promoted to merge/auto and
         # armed for the merge queue. The classifier's `(None, None)` verdict affirms clear;
         # the PR carries no risk labels. (A risk/low PR would HOLD instead.)
         args = SimpleNamespace(
@@ -1438,7 +1438,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         arm_auto_merge.assert_called_once_with("LAF-US", "IDAHO-VAULT", 88)
 
     def test_promote_ready_fails_loud_on_invariant_violation(self) -> None:
-        # K4/#630: promote_ready shares reconcile's exit-code contract — non-zero when the
+        # promote_ready shares reconcile's exit-code contract — non-zero when the
         # invariant tripped (CI red), zero otherwise. `promote_ready` reads the report via
         # dict.get, so the stub returns a dict (not a namespace).
         args = SimpleNamespace(owner="LAF-US", repo="IDAHO-VAULT", grace_minutes=30)
