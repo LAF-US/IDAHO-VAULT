@@ -126,9 +126,9 @@ RISK_FLAG_LABELS = frozenset(
 # `restamp_risk_pair` removes any label matching this that the verdict did not ask for, so
 # a PR still wearing a superseded form (the retired `filetype:risk/*` + `depth:risk/*` +
 # `risk/—` scheme #854 replaced) converges the next time it is classified — no migration
-# script, and nothing to run by hand. Deliberately a RULE, not a list of retired strings:
-# an enumeration would need editing every time the vocabulary moves, which is the drift
-# that produced the nine-string scheme in the first place.
+# script, and nothing to run by hand. This matches on the namespace instead of enumerating
+# the retired strings: an enumeration would need editing every time the vocabulary moves,
+# and that editing is where the nine-string scheme #854 had to flatten came from.
 RISK_NAMESPACE_PATTERN = re.compile(r"^(?:[a-z]+:)?risk/")
 AUTO_MERGE_AUTHZ_FRAGMENTS = (
     "Pull request User is not authorized for this protected branch "
