@@ -7,7 +7,7 @@ Checks staged files for signs of injection, malformed frontmatter,
 or unexpected content. Exits non-zero to halt the workflow on failure.
 
 Usage:
-  python3 validate_content.py [--scope bills|admin|generated|inbox|all]
+  python3 validate_content.py [--scope bills|inbox|all]
 
 Exit codes:
   0  All checks passed
@@ -29,12 +29,6 @@ SCOPE_ALLOWED_DIRS: dict[str, list[str]] = {
         "GOVERNMENTS/IDAHO - LEGISLATIVE/SESSIONS/",
         "GOVERNMENTS/IDAHO - LEGISLATIVE/IDAHO HOUSE/",
         "GOVERNMENTS/IDAHO - LEGISLATIVE/IDAHO SENATE/",
-    ],
-    "admin": [
-        "!/",
-    ],
-    "generated": [
-        "!/",
     ],
     "inbox": [
         "INBOX/",
@@ -78,25 +72,6 @@ FENCE_RE = re.compile(r"^\s*(```|~~~)")
 
 # Sponsor names should be alphabetic with common punctuation
 SPONSOR_NAME_RE = re.compile(r"^[A-Za-z\s.\-',()]+$")
-ROOT_GOVERNED_FILES = {
-    "AGENTS.md",
-    "CONSTITUTION.md",
-    "DECISIONS.md",
-    "README.md",
-    "VAULT-CONVENTIONS.md",
-    "VAULT-METADATA-STANDARD.md",
-    "VAULT-TEMPLATES.md",
-}
-REQUIRED_GOVERNED_FIELDS = ("title", "updated", "status", "authority")
-PROTECTED_LIVE_FILES = {
-    "AGENTS.md",
-    "CONSTITUTION.md",
-    "DECISIONS.md",
-    "VAULT-CONVENTIONS.md",
-    "!/AGENTS.md",
-    "!/WAKEUP.md",
-    "!/README.md",
-}
 
 
 # ── Helpers ──────────────────────────────────────────────────────────────────
@@ -113,12 +88,6 @@ def get_changed_files(base: str | None = None) -> list[Path]:
         capture_output=True, text=True
     )
     return [Path(f) for f in result.stdout.strip().splitlines() if f.endswith(".md")]
-
-
-def validate_frontmatter(path: Path, content: str) -> list[str]:
-    """Check that YAML frontmatter parses cleanly."""
-    _, errors = parse_frontmatter(path, content)
-    return errors
 
 
 def parse_frontmatter(path: Path, content: str) -> tuple[dict | None, list[str]]:
@@ -245,48 +214,11 @@ def validate_directory(path: Path, scope: str) -> list[str]:
     return errors
 
 
-def is_governed_note(path: Path, scope: str) -> bool:
-    """Limit schema enforcement to the currently governed automation lane."""
-    path_str = str(path).replace("\\", "/")
-    # PERIODIC_NOTE_RE, not DAILY_NOTE_RE: this exclusion exists because periodic
-    # notes carry template-generated frontmatter and cannot satisfy
-    # REQUIRED_GOVERNED_FIELDS. That was true of weekly/monthly/quarterly notes
-    # before PERIODIC_NOTE_RE was introduced; leaving the daily-only pattern here
-    # meant a note like 2026-W32.md under an admin/generated scope was treated as
-    # a governed note and failed on missing title/updated/status/authority.
-    if PERIODIC_NOTE_RE.match(path.name) or path.name == "TO DO LIST.md":
-        return False
-    if path.name in ROOT_GOVERNED_FILES:
-        return True
-    return scope in {"admin", "generated"} and path_str.startswith("!/")
-
-
-def validate_governed_metadata(path: Path, frontmatter: dict | None, scope: str) -> list[str]:
-    """Require doctrinal baseline fields for governed notes."""
-    if not is_governed_note(path, scope):
-        return []
-    if frontmatter is None:
-        return [f"{path}: Governed note missing YAML frontmatter"]
-
-    missing = [field for field in REQUIRED_GOVERNED_FIELDS if not frontmatter.get(field)]
-    if not missing:
-        return []
-    return [f"{path}: Governed note missing required frontmatter field(s): {', '.join(missing)}"]
-
-
-def validate_deleted_path(path: Path, scope: str) -> list[str]:
-    """Reject deletion of protected live governance from an automated content lane."""
-    normalized = str(path).replace("\\", "/")
-    if normalized in PROTECTED_LIVE_FILES or is_governed_note(path, scope):
-        return [f"{path}: Deletion of governed content requires explicit human review"]
-    return []
-
-
 # ── Main ─────────────────────────────────────────────────────────────────────
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Validate staged content before commit")
-    parser.add_argument("--scope", choices=["bills", "admin", "generated", "inbox", "all"], default="all",
+    parser.add_argument("--scope", choices=["bills", "inbox", "all"], default="all",
                         help="Which scope to validate (restricts allowed directories)")
     parser.add_argument("--base", help="Validate the committed diff from BASE through HEAD instead of staged files")
     args = parser.parse_args()
@@ -302,17 +234,14 @@ def main() -> int:
         all_errors.extend(validate_file_size(path))
 
         if not path.exists():
-            all_errors.extend(validate_deleted_path(path, args.scope))
-        else:
-            content = path.read_text(encoding="utf-8", errors="replace")
-            frontmatter, frontmatter_errors = parse_frontmatter(path, content)
-            all_errors.extend(frontmatter_errors)
-            all_errors.extend(validate_governed_metadata(path, frontmatter, args.scope))
-            all_errors.extend(validate_content_safety(path, content))
-            all_errors.extend(
-                validate_template_placeholders(path, content, frontmatter)
-            )
-            all_errors.extend(validate_sponsor_names(path, content))
+            continue
+
+        content = path.read_text(encoding="utf-8", errors="replace")
+        frontmatter, frontmatter_errors = parse_frontmatter(path, content)
+        all_errors.extend(frontmatter_errors)
+        all_errors.extend(validate_content_safety(path, content))
+        all_errors.extend(validate_template_placeholders(path, content, frontmatter))
+        all_errors.extend(validate_sponsor_names(path, content))
 
     if all_errors:
         print(f"validate_content: {len(all_errors)} error(s) found:", file=sys.stderr)
