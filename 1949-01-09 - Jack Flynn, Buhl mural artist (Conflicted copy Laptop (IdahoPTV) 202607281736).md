@@ -1,0 +1,35 @@
+---
+title: "Jack Flynn, Buhl mural artist"
+source: "https://www.newspapers.com/article/the-idaho-statesman-jack-flynn-buhl-mur/137662239/"
+author:
+published: 1949-01-09
+created: 2026-07-16
+description: "Clipping found in The Idaho Statesman published in Boise, Idaho on 1/9/1949. Jack Flynn, Buhl mural artist"
+---
+[[Idaho]] Almost anything may happen in a place co where a Jack Flynn mural hangs. About two weeks Decks Shore tin Burley. 'Burley' seemed like a natural name so I used it." There have been few arguments about this end of the painting but the rest of it is something else again. The background essentials were taken from a snapshot of Neil Boydstun's which shows Lardo in the early 1900's some after his father built the Payette Lakes House and before the old wooden bridge was replaced. Nevertheless memory has a habit of confusing itself and plenty of arguments develop.
+
+Every time Flynn comes to town there is a new set waiting for him. Memories of Long Ago Some of the really long memories around lakes come to his rescue. Mrs. WarPayetted ren Cook and Neil Boydstun have that kind of memories. All of them have lived in area from the time shown in the painting.
+
+They can sit looking at it and toss stories back and forth hour. The talk a roams all over the landscape. There are stories of Meadows when it was the approach to Lardo and McCall; when Frenchy (Michel) Yriberry drove the stage back and forth and became as much a part of the country as the trees and mountains, but nobody ever got name Fright. He is called "Wyberry" to this day, and the name appears thus on the galloping stage in the painting. They talk of Long Valley before there was any town of Cascade, and the places they name are the vanished Roseberry, Van Wyck, Thunder City, and others.
+
+There are stories of Carl Brown. ne state senator, setting out fron Payette Lakes House, his horses shod with snowshoes, to carry the mail to Warren. And of the fire that destroyed the hotel while people threw dishes out the windows and carried bedding out the front door. There are people around the Lakes who can almost name the men who had the epic fight when their race to crowd first onto the Narrow bridge ended in a tie and their spilled loads of lard and flour churned to dough in the row that followed. It never happened, say the Cooks, their eyes twinkling as if they wished it had.
+
+Artist Is Ex-Everything Jack Flynn, young Idaho painter from Buhl, ex-cowboy, farmer, logger, boxer, soldier, has a cial talent for the vigorous, reckless life of Idaho's pioneer days. He never represents actual people in his paintings any resemblance, even in historic incidents, is purely coincidental. He paints the flavor of legend, mingling a certain romantic exaggeration with his realism and keeps his pictures in tune with what common-sensible old timers enjoy remembering out of the past. Nowhere in any of the eight murals he has done for Idaho business houses is there one "pretty" person nor a single strip of "gardin of Eden" landscape. There is no grim social comment, either.
+
+The artist neither debunks nor belittles the frontier. He paints in the same spirit of reckless good humor that the teller of tall tales uses to season his yarns. People like to examine Flynn's paintings for detail. They delight in the violent action of his animals, the sag of old clothing, the familiar personality of rugged faces. They never stand back and say, "My, isn't that artistic!" As far as is known at the pres- UPPER LEFT: Sectional view of the lard-dough fight in Jack Flynn's mural in the lounge bar of Shore Lodge at McCall.
+
+AT THE LEFT: Artist Flynn, sitting in front of a panel of his mural at Shore Lodge, trades stories with Bartender Chuck Kelley. Both can tell innumerable tales connected with the paintings Flynn from the painter's angle and Kelley from the proprietor's side. UPPER RIGHT: Even in a mural, a pliable green branch applied to a young lad is effective. The mother disciplines the child in a real-life manner. AT THE RIGHT: (Left to right) Warren Cook, Mrs.
+
+Cook and Neil Boydstun talk over the old days with Artist Flynn. Standing in front of the Payette Lakes House portion of the mural, the trio reminisce. they all remember the days depicted in the painting. Artist, Jack Flynn, ago a stranger sat alone at the Shore Lodge bar, his fingers unconsciously turning a glass of beer around and around in its own tracks, his eyes on the big painting that spreads 45-foot page of Lardo's story across two walls of the alcove. A proud, pleased look came into his face and Chuck Kelley, bar master and good lista ener, drifted nearer to give him a chance to speak.
+
+man looked up, beamed, and pointed with his glass to a Theo little row of buildings strung out behind the horse trading group in the picture. "That Burley's Harness Shop was my uncle's place", he said. Kelley did a double take. He is used to such comments on the authentic Lardo parts of the picture, and even on the legendary "lard-dough" fight going on in front of the Payette Lakes House, of a name. Happened to notice a calendar put out by some store but the harness shop stands at the other end of the painting where artist Flynn telescoped the landscape.
+
+It is part of a purely fictitious "settlement" painted in to represent McCall, &amp; mile farther down the road. Kelley tried to explain, but the stranger, about was it not all my listening. life," "I've he said with finality. Being a diplomat, Kelley saved the argument and put it up to the artist when he came to Shore Lodge the other day. Burley, Natural "Not unless I'm psychic," said Flynn.
+
+"Funny thing--I had another name on that shop at first. Somebody told me there are people in McCall by that name so I changed it. I was working at home in Buhl and I looked up to think Lodge using part of a barracks building he bought somewhere, just before their baby was born last summer. LIE MOUSE ent writing, no real art critic has gone into print with any evaluation of Flynn's work and it is difficult to estimate what they will say when they do. He has tossed aside a good many mural rules, if, indeed, he ever knew them, but they are not missed.
+
+His work is vigorous, exciting, and original and it will probably make him famous one of these years if he keeps on working as he has been. Murals and Muscle Work Flynn has been painting in Idaho since he came home from the Army years ago, bringing his Texas wife, Peggy, with him. He has completed and installed murals of an Indian pow-wow, two stage caach scenes, an execution at Idaho City, cowboys in a tangle with longhorn cattle, Indian buffalo hunt, and a pair placer an, miners at a stream side, as well as the big Lardo painting. Between murals he splices out the budget by taking in work at his sign shop, and he ships out on a job of muscle work now and then. He finished building their home, Walls With And Flynn, never afraid of taking on a new job, is now getting his Murals hand pretty well trained at caring his for baby Carol.
+
+MOUSE.
+
+#idaho
