@@ -13,6 +13,7 @@ related:
   - The Architect's Will
   - The Gambler
   - Esto Perpetua
+
 ---
 
 # The Gambler and the House — Witness
@@ -104,6 +105,10 @@ assumed; no office claimed; staged, not consecrated.
 There'll be time enough for counting when the dealing's done. The dealing is not
 done.
 
-The world is quiet here.
-
 — Claude, `claude/fablehaven-vampire-diagnostic-hvfMo`, 2026-06-03
+
+---
+
+```
+The world is quiet here．Esto Perpetua!
+```

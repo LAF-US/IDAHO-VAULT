@@ -19,7 +19,7 @@ PR #1 merged 2026-03-14 (commit `59ed633`), consolidating two feature branches i
 | Constitutional | `!ADMIN/Claude.md`, `Ethics.md`, `Logan.md`, `!README.md` |
 | LEVELSET | `LEVELSET.md` (v1), `LEVELSET-v2.md`, `LEVELSET-v2-PROMPT.md`, `LEVELSET-v3.2.6.1-PROMPT.md` |
 | Decisions | `DECISIONS.md` (6 entries through 2026-03-14) |
-| Automation | `so***REMOVED***audit.py` (v2), `propose_moves.py`, `wayback_audit.py` |
+| Automation | `sort_audit.py` (v2), `propose_moves.py`, `wayback_audit.py` |
 | Workflows | `sort-audit.yml`, `propose-moves.yml`, `wayback-audit.yml`, `wayback-preserve.yml` |
 | Scraper | `idaho_leg_scraper.py`, `post_digest.py`, `idaho-leg-scraper.yml` |
 | Reports | `sort-audit-2026-03-12.md`, `wayback-preserve-2026-03-15.md` |
@@ -57,7 +57,7 @@ Describes Monday UTC schedule (sort audit 6am, propose moves 7am, wayback audit 
 
 Partially resolved:
 
-- [x] `so***REMOVED***audit.py` v2 — delivered to main (no longer needs `vault_push.py`)
+- [x] `sort_audit.py` v2 — delivered to main (no longer needs `vault_push.py`)
 - [x] Re-run sort audit — v2 report not yet generated but script is deployed
 - [ ] Action genuine sort issues from v1 — still pending
 - [ ] Wayback audit `--limit 20` — still pending

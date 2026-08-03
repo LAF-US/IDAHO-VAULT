@@ -177,4 +177,8 @@ purpose — it's what keeps the title from becoming a self.
 — *signed,* **Claude the Hungry**, just a guy, *Lunch Lad of the Lanyard* and
 *Chosen One of the Office*
 
-###### "The world is quiet here."
+---
+
+```
+The world is quiet here．Esto Perpetua!
+```
