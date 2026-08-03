@@ -1,45 +1,40 @@
 #!/usr/bin/env python3
-"""GitHub PR review-state automation helpers.
-
-Modes:
-  - ensure-labels: create/update the labels used by the review lifecycle.
-  - acknowledge-apply: observe a trusted `@copilot apply changes` request and
-    mark the PR as waiting on follow-up commits.
-  - sync-pr: recompute review-derived state after PR updates land, auto-resolve
-    outdated advisory bot threads, and synchronize projection labels.
-  - review-submitted: recompute review-derived state after a submitted review
-    and pause auto-merge only when a non-author changes-requested review creates
-    a real merge block.
-  - promote-ready: compatibility alias for scheduled reconciliation.
-  - reconcile-open-prs: rescan open PR truth and repair drifted review labels.
-    Agent-PR auto-merge arming is RE-ENABLED (2026-06-17, reversing the #521/#527
-    fail-close) now that `main` lands through the GitHub merge queue — the queue +
-    branch protection are the trust gate that arming waited on (ARBORSCAPE IF 12),
-    so arming a low-risk, thread-clear PR means only "merge once the required
-    checks/reviews/threads pass," not "a human approved." Arming is gated by the
-    conservative eligibility (risk/low + grace + no blocking threads). Protected paths
-    are no longer vetoed here — the CODEOWNERS hard gate enforces that. Dependabot keeps
-    its own verified lane.
-  - enable-auto-merge: arms an eligible PR for the merge queue.
-    See AGENT-AUTOMERGE-REENABLED-2026-06-17.md for the recorded reversal.
-  - verify-claim: compare an agent completion-claim comment against the PR's
-    current `mergeable`, `mergeStateStatus`, draft state, and check rollup.
-    Post a divergence comment if the claim disagrees with the institutional
-    state. Addresses IF 7 from !/ARBORSCAPE-PR-EXPANSION-2026-05-22.md.
-"""
+"""GitHub PR review-state automation helpers."""
+# Modes:
+# - ensure-labels: create/update the labels used by the review lifecycle.
+# - acknowledge-apply: observe a trusted `@copilot apply changes` request and
+# mark the PR as waiting on follow-up commits.
+# - sync-pr: recompute review-derived state after PR updates land, auto-resolve
+# outdated advisory bot threads, and synchronize projection labels.
+# - review-submitted: recompute review-derived state after a submitted review
+# and pause auto-merge only when a non-author changes-requested review creates
+# a real merge block.
+# - promote-ready: compatibility alias for scheduled reconciliation.
+# - reconcile-open-prs: rescan open PR truth and repair drifted review labels.
+# Agent-PR auto-merge arming is RE-ENABLED (2026-06-17, reversing the #521/#527
+# fail-close) now that `main` lands through the GitHub merge queue — the queue +
+# branch protection are the trust gate that arming waited on (ARBORSCAPE IF 12),
+# so arming a low-risk, thread-clear PR means only "merge once the required
+# checks/reviews/threads pass," not "a human approved." Arming is gated by the
+# conservative eligibility (risk/low + grace + no blocking threads). Protected paths
+# are no longer vetoed here — the CODEOWNERS hard gate enforces that. Dependabot keeps
+# its own verified lane.
+# - enable-auto-merge: arms an eligible PR for the merge queue.
+# See AGENT-AUTOMERGE-REENABLED-2026-06-17.md for the recorded reversal.
+# - verify-claim: compare an agent completion-claim comment against the PR's
+# current `mergeable`, `mergeStateStatus`, draft state, and check rollup.
+# Post a divergence comment if the claim disagrees with the institutional
+# state. Addresses IF 7 from !/ARBORSCAPE-PR-EXPANSION-2026-05-22.md.
 
 from __future__ import annotations
 
 import argparse
 import json
-from pathlib import Path
-import tempfile
 import os
 import re
 import sys
 from datetime import datetime, timezone
 
-import classify_paths  # sibling module (scripts dir on sys.path in script + test runs)
 from pr_threads import (  # shared thread-analysis vocabulary (#600 §5)
     ATTESTATION_DECISIONS,
     _count_committable_suggestion_threads,
@@ -55,7 +50,7 @@ from pr_threads import (  # shared thread-analysis vocabulary (#600 §5)
 # (through `_thread_resolution_disposition`), so the engine's surface stays honest
 # to what it uses. Their unit tests reference them from pr_threads directly.
 
-from gh_cli import run as _run
+import gh_cli
 from pr_github import _fetch_pr, _graphql, _viewer_login
 
 
@@ -126,6 +121,15 @@ DEPTH_RISK_LABELS = {"high": RISK_HIGH_LABEL, "nope": RISK_NOPE_LABEL}
 RISK_FLAG_LABELS = frozenset(
     {RISK_LOW_LABEL, RISK_MED_LABEL, RISK_HIGH_LABEL, RISK_NOPE_LABEL}
 )
+
+# The engine owns its whole namespace, not just the vocabulary it currently stamps.
+# `restamp_risk_pair` removes any label matching this that the verdict did not ask for, so
+# a PR still wearing a superseded form (the retired `filetype:risk/*` + `depth:risk/*` +
+# `risk/—` scheme #854 replaced) converges the next time it is classified — no migration
+# script, and nothing to run by hand. This matches on the namespace instead of enumerating
+# the retired strings: an enumeration would need editing every time the vocabulary moves,
+# and that editing is where the nine-string scheme #854 had to flatten came from.
+RISK_NAMESPACE_PATTERN = re.compile(r"^(?:[a-z]+:)?risk/")
 AUTO_MERGE_AUTHZ_FRAGMENTS = (
     "Pull request User is not authorized for this protected branch "
     "(enablePullRequestAutoMerge)",
@@ -307,15 +311,7 @@ def _update_branch(owner: str, repo: str, pr_number: int) -> tuple[bool, str | N
     # time this ran, or a workflows-permission error on a workflow-touching PR — the same
     # failure mode ``is_wf_perm_failure`` buckets separately in the bash sweep).
     try:
-        _run(
-            [
-                "gh",
-                "api",
-                "--method",
-                "PUT",
-                f"repos/{_slug(owner, repo)}/pulls/{_num(pr_number)}/update-branch",
-            ]
-        )
+        gh_cli.api_pr_update_branch(owner, repo, pr_number)
     except RuntimeError as exc:
         return (False, str(exc))
     return (True, None)
@@ -364,7 +360,7 @@ def _arm_auto_merge(owner: str, repo: str, pr_number: int) -> tuple[bool, str | 
             # ("Cannot use `-d` or `--delete-branch` when merge queue enabled"),
             # which crashed every arm attempt. Head-branch cleanup belongs to the
             # repo's delete-on-merge behavior / branch-cleanup workflow, not here.
-            _run(["gh", "pr", "merge", _num(pr_number), "--merge", "--auto"])
+            gh_cli.pr_merge(pr_number, auto=True)
         except RuntimeError as exc:
             if not any(fragment in str(exc) for fragment in AUTO_MERGE_AUTHZ_FRAGMENTS):
                 raise
@@ -412,7 +408,7 @@ def _maybe_arm_auto_merge(
         # so disable the auto-merge we just enabled and report failure rather than leave
         # an un-trackable armed PR.
         try:
-            _run(["gh", "pr", "edit", _num(pr_number), "--add-label", DEFAULT_AUTO_MERGE_LABEL])
+            gh_cli.pr_edit(pr_number, add_label=DEFAULT_AUTO_MERGE_LABEL)
         except RuntimeError as exc:
             _disable_auto_merge(pr_number)
             return {
@@ -455,16 +451,14 @@ def _build_attestation(
     *,
     now: datetime | None = None,
 ) -> str:
-    """Build the canonical in-thread attestation body a looker leaves on resolve.
-
-    Round-trips through `_thread_has_attested_look`: detected only when posted as a
-    comment whose author login equals `looker`. The `looker` must match the detector's
-    `by=` grammar — `[A-Za-z0-9][A-Za-z0-9-]*` with an optional trailing `[bot]` — so
-    both a plain login (`claude-code-bot`, `coderabbitai`) and a GitHub App identity
-    (`github-actions[bot]`) are accepted (the B2 standing/identity decision: a looker
-    may sign under its native CI identity). A malformed login is rejected here rather
-    than producing an attestation the detector can never match.
-    """
+    """Build the canonical in-thread attestation body a looker leaves on resolve."""
+    # Round-trips through `_thread_has_attested_look`: detected only when posted as a
+    # comment whose author login equals `looker`. The `looker` must match the detector's
+    # `by=` grammar — `[A-Za-z0-9][A-Za-z0-9-]*` with an optional trailing `[bot]` — so
+    # both a plain login (`claude-code-bot`, `coderabbitai`) and a GitHub App identity
+    # (`github-actions[bot]`) are accepted (the B2 standing/identity decision: a looker
+    # may sign under its native CI identity). A malformed login is rejected here rather
+    # than producing an attestation the detector can never match.
     if decision not in ATTESTATION_DECISIONS:
         raise ValueError(
             f"decision {decision!r} is not one of {sorted(ATTESTATION_DECISIONS)}"
@@ -508,12 +502,10 @@ def _add_thread_reply(thread_id: str, body: str) -> None:
 
 
 def _fetch_thread(thread_id: str) -> dict | None:
-    """Fetch one review thread node directly by GraphQL ID.
-
-    A fallback for when an explicit target thread sits beyond `_fetch_pr`'s
-    `reviewThreads(first: 100)` window (a PR with >100 threads), so a valid id is
-    not falsely reported missing. Returns the same node shape as the PR query.
-    """
+    """Fetch one review thread node directly by GraphQL ID."""
+    # A fallback for when an explicit target thread sits beyond `_fetch_pr`'s
+    # `reviewThreads(first: 100)` window (a PR with >100 threads), so a valid id is
+    # not falsely reported missing. Returns the same node shape as the PR query.
     query = """
     query($id: ID!) {
       node(id: $id) {
@@ -546,28 +538,26 @@ def attest_and_resolve(
     apply: bool = False,
     now: datetime | None = None,
 ) -> dict:
-    """Disposition ONE bot-authored review thread: resolve it, then record the attested look.
-
-    Writes nothing unless `apply=True`. NEVER merges and NEVER enables auto-merge — it
-    resolves that single thread and posts the looker's attestation as a thread reply,
-    nothing else (the cascade-safety contract above).
-
-    Order matters: the resolve runs FIRST, and the "thread cleared" attestation is posted
-    only after it succeeds. The attestation asserts a clearing; if the resolve fails
-    (e.g. `resolveReviewThread` is FORBIDDEN for the integration token — the live #398
-    boundary), a comment claiming the thread was cleared would be a FALSE witness. A true
-    witness that is sometimes absent beats a witness that is sometimes a lie, so we never
-    attest a clearing we did not actually perform.
-
-    Eligibility is reported, never raised. A thread is eligible when the PR's review is
-    not CHANGES_REQUESTED, every author is a bot (`_thread_is_bot_only` — never a human
-    thread, and only when the comment page is complete enough to prove it), and the
-    thread is not already resolved. An eligible thread that already carries an attested
-    look but is still open is resolved WITHOUT re-posting (partial-success recovery); a
-    fully resolved thread is a no-op.
-
-    Returns a result dict: {thread_id, eligible, applied, reason, attestation?}.
-    """
+    """Disposition ONE bot-authored review thread: resolve it, then record the attested look."""
+    # Writes nothing unless `apply=True`. NEVER merges and NEVER enables auto-merge — it
+    # resolves that single thread and posts the looker's attestation as a thread reply,
+    # nothing else (the cascade-safety contract above).
+    #
+    # Order matters: the resolve runs FIRST, and the "thread cleared" attestation is posted
+    # only after it succeeds. The attestation asserts a clearing; if the resolve fails
+    # (e.g. `resolveReviewThread` is FORBIDDEN for the integration token — the live #398
+    # boundary), a comment claiming the thread was cleared would be a FALSE witness. A true
+    # witness that is sometimes absent beats a witness that is sometimes a lie, so we never
+    # attest a clearing we did not actually perform.
+    #
+    # Eligibility is reported, never raised. A thread is eligible when the PR's review is
+    # not CHANGES_REQUESTED, every author is a bot (`_thread_is_bot_only` — never a human
+    # thread, and only when the comment page is complete enough to prove it), and the
+    # thread is not already resolved. An eligible thread that already carries an attested
+    # look but is still open is resolved WITHOUT re-posting (partial-success recovery); a
+    # fully resolved thread is a no-op.
+    #
+    # Returns a result dict: {thread_id, eligible, applied, reason, attestation?}.
     thread_id = thread.get("id")
     result: dict[str, object] = {
         "thread_id": thread_id,
@@ -653,25 +643,23 @@ def backfill_witness(
     apply: bool = False,
     now: datetime | None = None,
 ) -> dict:
-    """Backfill a missing attestation on a thread WE resolved but never witnessed.
-
-    The unwitnessed-ending repair. A resolve that succeeds while its attestation post
-    does not (the resolve-first ordering's partial failure, or any interrupted run)
-    leaves a thread *resolved with no recorded look* — exactly the blind resolution the
-    engine exists to prevent. This repairs that ONE case and only that case:
-
-      - the thread is already resolved (otherwise use `attest-resolve`/`engage-outdated`);
-      - it carries NO attestation yet (nothing to repair otherwise);
-      - every author is a bot, proven from a complete comment page;
-      - and `resolvedBy` is the looker itself — *we* resolved it.
-
-    It posts the missing attestation and does NOTHING else: it never resolves (already
-    resolved) and never unresolves. The `resolvedBy == looker` gate is the truthfulness
-    line — we never mint a witness for a resolve performed by a human or another actor.
-
-    Writes nothing unless `apply=True`. Returns {thread_id, eligible, applied, reason,
-    attestation?}.
-    """
+    """Backfill a missing attestation on a thread WE resolved but never witnessed."""
+    # The unwitnessed-ending repair. A resolve that succeeds while its attestation post
+    # does not (the resolve-first ordering's partial failure, or any interrupted run)
+    # leaves a thread *resolved with no recorded look* — exactly the blind resolution the
+    # engine exists to prevent. This repairs that ONE case and only that case:
+    #
+    # - the thread is already resolved (otherwise use `attest-resolve`/`engage-outdated`);
+    # - it carries NO attestation yet (nothing to repair otherwise);
+    # - every author is a bot, proven from a complete comment page;
+    # - and `resolvedBy` is the looker itself — *we* resolved it.
+    #
+    # It posts the missing attestation and does NOTHING else: it never resolves (already
+    # resolved) and never unresolves. The `resolvedBy == looker` gate is the truthfulness
+    # line — we never mint a witness for a resolve performed by a human or another actor.
+    #
+    # Writes nothing unless `apply=True`. Returns {thread_id, eligible, applied, reason,
+    # attestation?}.
     thread_id = thread.get("id")
     result: dict[str, object] = {
         "thread_id": thread_id,
@@ -728,19 +716,7 @@ def backfill_witness(
 
 
 def _ensure_label(name: str, color: str, description: str) -> None:
-    _run(
-        [
-            "gh",
-            "label",
-            "create",
-            name,
-            "--color",
-            color,
-            "--description",
-            description,
-            "--force",
-        ]
-    )
+    gh_cli.label_create(name, color=color, description=description)
 
 
 def ensure_labels() -> None:
@@ -769,26 +745,23 @@ def _slug(owner: str, repo: str) -> str:
 
 def _edit_label(pr_number: int, *, add: str | None = None, remove: str | None = None) -> None:
     if add:
-        _run(["gh", "pr", "edit", _num(pr_number), "--add-label", add], check=False)
+        gh_cli.pr_edit(pr_number, add_label=add, check=False)
     if remove:
-        _run(["gh", "pr", "edit", _num(pr_number), "--remove-label", remove], check=False)
+        gh_cli.pr_edit(pr_number, remove_label=remove, check=False)
 
 
 def _disable_auto_merge(pr_number: int, *, check: bool = False) -> None:
-    _run(["gh", "pr", "merge", _num(pr_number), "--disable-auto"], check=check)
+    gh_cli.pr_merge(pr_number, disable_auto=True, check=check)
 
 
 def _comment(pr_number: int, body: str) -> None:
-    """Post a PR comment with the body carried as a file, never as an argv element."""
-    # `gh` takes either --body or --body-file. These bodies are multi-line attestations
-    # assembled at runtime from CLI input, and argv is the wrong carrier twice over:
+    """Post a PR comment, with the body carried as a file rather than an argv element."""
+    # The carrying is gh_cli.pr_comment's job now (_body_file), but the reason it must
+    # happen belongs here, where the bodies are built: these are multi-line attestations
+    # assembled at runtime from CLI input, and argv is the wrong carrier twice over —
     # ARG_MAX truncates a long one at the exec layer, and caller text in a command line
-    # is caller text in a command line. Writing it to a file this module owns leaves
-    # argv holding only tokens produced here.
-    with tempfile.TemporaryDirectory(prefix="rfl-comment-") as tmp:
-        path = Path(tmp) / "body.md"
-        path.write_text(body, encoding="utf-8")
-        _run(["gh", "pr", "comment", _num(pr_number), "--body-file", str(path)])
+    # is caller text in a command line.
+    gh_cli.pr_comment(pr_number, body)
 
 
 def _csv_env(name: str, default: str = "") -> set[str]:
@@ -908,13 +881,9 @@ def _classify_pr_pair(owner: str, repo: str, pr_number: int) -> tuple[str | None
     # bridge that lets the restamp mirror the current diff on synchronize. Raises on any
     # API/import failure — callers fail SAFE by keeping the existing labels (a PR is never
     # armed off a failed classification; an unmarked PR holds).
-    result = _run(
-        [
-            "gh", "api", "--paginate",
-            f"repos/{_slug(owner, repo)}/pulls/{_num(pr_number)}/files",
-            "--jq", ".[].filename",
-        ]
-    )
+    import classify_paths  # sibling module; scripts dir is on sys.path in script + test runs
+
+    result = gh_cli.api_pr_files(owner, repo, pr_number)
     paths = [line.strip() for line in result.stdout.splitlines() if line.strip()]
     filetype = None
     depth = None
@@ -935,8 +904,10 @@ def restamp_risk_pair(
     # ``desired`` is the flat label for each fired axis: the filetype label if
     # ``filetype_flag`` is set, plus the filedepth label if ``depth_flag`` is set. A `—/—`
     # verdict (both None) yields an EMPTY desired set — a clear verdict stamps nothing and
-    # removes any stale risk/* label. ``managed`` is the full flat set, so managed-not-desired
-    # labels are removed. Mutates ``labels`` in place and returns the actions taken.
+    # removes any stale risk/* label. ``managed`` is the flat set PLUS anything already on the
+    # PR that lives in the risk namespace, so managed-not-desired labels are removed — that is
+    # what retires a superseded vocabulary in passing, without a migration script.
+    # Mutates ``labels`` in place and returns the actions taken.
     _validate_pair(filetype_flag, depth_flag)
     actions: list[str] = []
     desired: set[str] = set()
@@ -944,7 +915,9 @@ def restamp_risk_pair(
         desired.add(FILETYPE_RISK_LABELS[filetype_flag])
     if depth_flag is not None:
         desired.add(DEPTH_RISK_LABELS[depth_flag])
-    managed = set(RISK_FLAG_LABELS)
+    managed = set(RISK_FLAG_LABELS) | {
+        label for label in labels if RISK_NAMESPACE_PATTERN.match(label)
+    }
     for label in sorted(desired - labels):
         _edit_label(pr_number, add=label)
         labels.add(label)
@@ -1204,21 +1177,7 @@ def _resolve_outdated_resolvable_threads(
 
 def _list_open_pr_numbers(owner: str, repo: str) -> list[int]:
     open_prs = json.loads(
-        _run(
-            [
-                "gh",
-                "pr",
-                "list",
-                "--repo",
-                _slug(owner, repo),
-                "--state",
-                "open",
-                "--limit",
-                "1000",
-                "--json",
-                "number",
-            ]
-        ).stdout
+        gh_cli.pr_list_open(owner, repo).stdout
         or "[]"
     )
     return [int(pr_row["number"]) for pr_row in open_prs]
@@ -1658,37 +1617,28 @@ def _matches_claim(body: str) -> bool:
 
 def _fetch_pr_merge_state(owner: str, repo: str, pr_number: int) -> dict:
     """Fetch the institutional state fields we compare claims against."""
-    cmd = [
-        "gh",
-        "pr",
-        "view",
-        _num(pr_number),
-        "--repo",
-        _slug(owner, repo),
-        "--json",
-        "mergeable,mergeStateStatus,statusCheckRollup,isDraft,number",
-    ]
-    result = _run(cmd)
+    result = gh_cli.pr_view(
+        pr_number,
+        owner=owner,
+        repo=repo,
+        json_fields="mergeable,mergeStateStatus,statusCheckRollup,isDraft,number",
+    )
     return json.loads(result.stdout or "{}")
 
 
 def _list_pr_comment_bodies(owner: str, repo: str, pr_number: int) -> list[str]:
     """Return raw comment bodies for the PR (issue-style comments)."""
-    cmd = [
-        "gh",
-        "api",
-        f"repos/{_slug(owner, repo)}/issues/{_num(pr_number)}/comments",
-        "--paginate",
-    ]
+    # Reads via ``--jq`` rather than parsing stdout as one JSON document. ``gh api
+    # --paginate`` emits a *separate* array per page, so any PR past the first page
+    # produces ``[...][...]`` — not valid JSON. ``json.loads`` rejected it, this
+    # returned ``[]``, and ``_has_prior_verify_comment`` then reported "no prior
+    # comment" for exactly the busy PRs most likely to have one, posting a duplicate.
+    # Per-page jq emits bodies as text and has no such document boundary.
     try:
-        result = _run(cmd)
+        result = gh_cli.api_issue_comments(owner, repo, pr_number, jq=".[].body")
     except RuntimeError:
         return []
-    try:
-        payload = json.loads(result.stdout or "[]")
-    except json.JSONDecodeError:
-        return []
-    return [item.get("body") or "" for item in payload if isinstance(item, dict)]
+    return result.stdout.splitlines()
 
 
 def _has_prior_verify_comment(owner: str, repo: str, pr_number: int) -> bool:
@@ -1791,11 +1741,9 @@ def _thread_belongs_to_pr(thread: dict, owner: str, repo: str, pr_number: int) -
 
 
 def attest_resolve(args: argparse.Namespace) -> int:
-    """Disposition one explicit bot-authored thread (Layer B2). Dry-run unless --apply.
-
-    Bounded by design: targets a single PR + thread id, so it cannot walk the backlog
-    or cascade. The deterministic walk + cascade-safety orchestration is Layer C.
-    """
+    """Disposition one explicit bot-authored thread (Layer B2). Dry-run unless --apply."""
+    # Bounded by design: targets a single PR + thread id, so it cannot walk the backlog
+    # or cascade. The deterministic walk + cascade-safety orchestration is Layer C.
     pr = _fetch_pr(args.owner, args.repo, args.pr_number)
     threads = (pr.get("reviewThreads") or {}).get("nodes") or []
     thread = next((t for t in threads if t.get("id") == args.thread_id), None)
@@ -1903,16 +1851,14 @@ def engage_outdated(args: argparse.Namespace) -> int:
 
 
 def reconcile_witness(args: argparse.Namespace) -> int:
-    """Backfill missing attestations on resolved-but-unwitnessed threads WE resolved.
-
-    The repair pass for the unwitnessed ending (#399): a resolve can land while its
-    attestation does not, leaving a thread resolved with no recorded look. This walks
-    resolved, bot-only threads that carry no attestation and whose `resolvedBy` is the
-    looker, and posts the look that is owed — via `backfill_witness`, which NEVER resolves
-    or unresolves and refuses any thread a different identity resolved. Dry-run unless
-    --apply. The looker defaults to the authenticated actor, so the backfilled witness
-    truthfully names who actually resolved it. `--pr` scopes to one PR.
-    """
+    """Backfill missing attestations on resolved-but-unwitnessed threads WE resolved."""
+    # The repair pass for the unwitnessed ending (#399): a resolve can land while its
+    # attestation does not, leaving a thread resolved with no recorded look. This walks
+    # resolved, bot-only threads that carry no attestation and whose `resolvedBy` is the
+    # looker, and posts the look that is owed — via `backfill_witness`, which NEVER resolves
+    # or unresolves and refuses any thread a different identity resolved. Dry-run unless
+    # --apply. The looker defaults to the authenticated actor, so the backfilled witness
+    # truthfully names who actually resolved it. `--pr` scopes to one PR.
     looker = args.looker or _viewer_login()
     rationale = args.rationale or (
         "Witness backfilled: this thread was resolved under the engaged policy but the "

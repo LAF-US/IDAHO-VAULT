@@ -201,26 +201,32 @@ jobs:
             LABEL_MARKER="none"
           fi
 
-          BODY=$(
-            printf '%s\n' \
-              "## Auto-generated PR" \
-              "" \
-              "**Agent:** \`$AGENT\`" \
-              "**Lifecycle:** \`staged\`" \
-              "**Label:** \`$LABEL_MARKER\`" \
-              "" \
-              "### Diff stat" \
-              "\`\`\`" \
-              "$DIFFSTAT" \
-              "\`\`\`" \
-              "" \
-              "---" \
-              "*Created by auto-pr workflow*"
-          )
+          # Pass the body via --body-file instead of inline argv: a branch with a
+          # very large diffstat (e.g. a vault-wide sweep touching thousands of
+          # files) can blow past the OS ARG_MAX for an inline `--body`, failing
+          # `gh` with "Argument list too long" (observed on #871's first auto-pr
+          # run). A file has no such limit.
+          BODY_FILE=$(mktemp)
+          trap 'rm -f "$BODY_FILE"' EXIT
+          printf '%s\n' \
+            "## Auto-generated PR" \
+            "" \
+            "**Agent:** \`$AGENT\`" \
+            "**Lifecycle:** \`staged\`" \
+            "**Label:** \`$LABEL_MARKER\`" \
+            "" \
+            "### Diff stat" \
+            "\`\`\`" \
+            "$DIFFSTAT" \
+            "\`\`\`" \
+            "" \
+            "---" \
+            "*Created by auto-pr workflow*" \
+            > "$BODY_FILE"
 
           CREATE_ARGS=(
             --title "$TITLE"
-            --body "$BODY"
+            --body-file "$BODY_FILE"
             --base main
             --head "$BRANCH_NAME"
           )

@@ -1,7 +1,7 @@
 """Tests for the two-axis risk classifier (classify_paths)."""
 
 import json
-import subprocess  # nosec B404 -- see [tool.bandit] note in pyproject.toml
+import subprocess
 import sys
 import unittest
 from pathlib import Path
