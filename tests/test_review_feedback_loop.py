@@ -204,13 +204,13 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
 
     def test_nine_cell_grid_routing_is_the_single_source(self) -> None:
         # The risk grid (WITNESS-THE-KEYS-ARE-THE-LEVERS-2026-06-21) is DERIVED from this
-        # engine, not a hand-assigned table: the (filetype, depth) label pair routes each PR
+        # engine, not a hand-assigned table: the (filetype, filedepth) label pair routes each PR
         # into exactly one of three lanes. This pins all nine cells so the settled grid cannot
         # silently drift. Lanes:
         #   auto            : —/—  → eligible on grace alone (no review lane)
-        #   review-hold     : any fired flag with depth != nope → eligible once its review lane
+        #   review-hold     : any fired flag with filedepth != nope → eligible once its review lane
         #                     completes (APPROVED + threads clear) AND grace elapses; holds otherwise
-        #   sovereign/never : any depth == nope → never eligible, even fully approved
+        #   sovereign/never : any filedepth == nope → never eligible, even fully approved
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
         past_grace = now - timedelta(minutes=45)
         AUTO, HOLD, NEVER = "auto", "review-hold", "never"
@@ -246,7 +246,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
                     self.assertFalse(unreviewed["eligible_for_auto_merge"])
                     self.assertFalse(
                         approved["eligible_for_auto_merge"],
-                        "depth=nope is the sovereign's hand — never auto, even approved",
+                        "filedepth=nope is the sovereign's hand — never auto, even approved",
                     )
         # The converse of the AUTO cell above — a PR with no labels and no classified
         # lane reads `unknown` and HOLDS — is pinned by
@@ -345,7 +345,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertEqual(rfl._tier_from_pair(None, None, False), "unknown")
 
     def test_restamp_risk_pair_rejects_out_of_vocab_flags(self) -> None:
-        # restamp indexes FILETYPE_RISK_LABELS/DEPTH_RISK_LABELS by flag; an out-of-vocab
+        # restamp indexes FILETYPE_RISK_LABELS/FILEDEPTH_RISK_LABELS by flag; an out-of-vocab
         # flag must raise RiskMarkerInvariantError (deterministic, domain-specific) rather
         # than a raw KeyError — matching _tier_from_pair's fail-loud behavior.
         rfl = review_feedback_loop
@@ -431,7 +431,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             labels = {"risk/high"}  # stale filedepth flag, to be replaced
             actions = review_feedback_loop.restamp_risk_pair(22, labels, "low", "high")
         self.assertIn("add:risk/low", actions)
-        # risk/high already present for the depth axis -> no re-add, no removal.
+        # risk/high already present for the filedepth axis -> no re-add, no removal.
         self.assertNotIn("remove:risk/high", actions)
         self.assertEqual(labels, {"risk/low", "risk/high"})
 
