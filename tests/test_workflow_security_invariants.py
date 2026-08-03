@@ -228,6 +228,23 @@ class WorkflowSecurityInvariantsTest(unittest.TestCase):
         self.assertNotIn("check", secret["jobs"])
         self.assertNotIn("check", large["jobs"])
 
+    def test_portability_gate_runs_python_integrity_checker_with_timeout(self) -> None:
+        workflow = yaml.safe_load((WORKFLOWS / "check-portable-paths.yml").read_text(encoding="utf-8"))
+        job = workflow["jobs"]["check-paths"]
+        self.assertEqual(job["timeout-minutes"], 10)
+
+        steps = {step["name"]: step for step in job["steps"] if "name" in step}
+        run = steps["Check Python automation integrity"]["run"]
+        self.assertIn("trusted-main/.github/scripts/check_python_integrity.py", run)
+        self.assertIn(".github/scripts/check_python_integrity.py", run)
+        self.assertIn('python "$INTEGRITY_CHECKER"', run)
+        # Regression guard: without --root "$GITHUB_WORKSPACE" pinned, running the
+        # trusted-main copy makes the checker's own default --root resolve to
+        # trusted-main/ (its __file__ parents), scanning the base commit's tree
+        # instead of the candidate workspace — silently missing violations the
+        # PR itself introduces.
+        self.assertIn('--root "$GITHUB_WORKSPACE"', run)
+
     def test_levelset_content_cannot_trigger_external_closure_message(self) -> None:
         self.assertFalse((WORKFLOWS / "levelset-closure-notify.yml").exists())
         self.assertFalse((ROOT / ".github" / "scripts" / "post_levelset_closure.py").exists())

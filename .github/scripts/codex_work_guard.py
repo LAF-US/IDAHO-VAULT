@@ -11,7 +11,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
-import subprocess
+import subprocess  # nosec B404 -- see [tool.bandit] note in pyproject.toml
 import sys
 from dataclasses import dataclass
 from pathlib import Path
@@ -57,6 +57,7 @@ def run_git(args: list[str], cwd: Path) -> subprocess.CompletedProcess[str]:
         errors="replace",
         capture_output=True,
         check=False,
+        timeout=30,
     )
 
 
