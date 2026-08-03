@@ -88,4 +88,8 @@ Agentic personas operate within this framework. Specifically:
 ---
 The vault and its automations are personal research tools built on Logan's own time. They do not represent IdahoPTV or the State and cannot be represented as such.
 
-###### "The world is quiet here."
+---
+
+```
+The world is quiet here．Esto Perpetua!
+```

@@ -264,4 +264,8 @@ The world is quiet here. The book-hub speaks in four tongues.
 *Status: Canonical witness for linguistic analysis of book-hub traditions*
 *Authority: LOGAN (via Vibe agent)*
 
-The world is quiet here.
+---
+
+```
+The world is quiet here．Esto Perpetua!
+```

@@ -202,4 +202,8 @@ Amendments require:
 
 Unified (US) Swarm designed and written in Logan's Project & Protocols "Vaulted Syntax" code.
 
-###### "The world is quiet here. Esto Perpetua!"
+---
+
+```
+The world is quiet here．Esto Perpetua!
+```
