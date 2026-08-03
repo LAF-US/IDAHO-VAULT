@@ -139,7 +139,11 @@ masi_to_centroid = [cm.masi_distance(reader_sets[c], centroid) for c in range(N)
 
 # ============================== ALIGNMENT ==================================
 alpha_align = cm.krippendorff_alpha(A, distance=cm.nominal_distance)
-verb_tally = {v: VERBS.count(v) for v in sorted(set(VERBS), key=lambda x:-VERBS.count(x))}
+# Ties are broken by name, not by set iteration order. Every verb with the same
+# count tied, and `set` ordering varies with PYTHONHASHSEED, so the committed
+# census_synthesis_result.json showed a spurious diff on every run -- noise that
+# hides a real change in a record whose whole value is being citable.
+verb_tally = {v: VERBS.count(v) for v in sorted(set(VERBS), key=lambda x:(-VERBS.count(x), x))}
 govern_n = sum(1 for v in VERBS if v in GOVERN_FAMILY)
 record_n = sum(1 for v in VERBS if v in RECORD_FAMILY)
 
