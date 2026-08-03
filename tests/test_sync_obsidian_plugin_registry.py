@@ -8,17 +8,13 @@ same commit must produce identical output to the main checkout.
 from __future__ import annotations
 
 import importlib.util
-import shutil
-import subprocess
 import sys
 import tempfile
 import unittest
 import unittest.mock
 from pathlib import Path
 
-# Resolved once to an absolute path, matching this repo's tests/test_git_guardrails.py
-# convention, rather than the bare string "git".
-GIT_BIN = shutil.which("git") or "git"
+import pygit2
 
 
 def _load_module(module_name: str, relative_path: str):
@@ -40,9 +36,23 @@ sync_registry = _load_module(
 )
 
 
-def _run_git(cwd: Path, *args: str) -> None:
-    """Run a git subcommand in `cwd`, raising on failure."""
-    subprocess.run([GIT_BIN, *args], cwd=cwd, check=True, capture_output=True, text=True)
+def _init_repo_with_commit(repo_root: Path, relative_file: str, content: str) -> pygit2.Repository:
+    """Init a repo at `repo_root`, commit one tracked file, return the pygit2.Repository."""
+    repo = pygit2.init_repository(str(repo_root))
+    repo.config["user.email"] = "test@example.invalid"
+    repo.config["user.name"] = "Test"
+
+    file_path = repo_root / relative_file
+    file_path.parent.mkdir(parents=True, exist_ok=True)
+    file_path.write_text(content, encoding="utf-8")
+
+    index = repo.index
+    index.add(relative_file)
+    index.write()
+    tree = index.write_tree()
+    author = pygit2.Signature("Test", "test@example.invalid")
+    repo.create_commit("HEAD", author, author, "add tracked plugin manifest", tree, [])
+    return repo
 
 
 class TrackedPluginManifestsTest(unittest.TestCase):
@@ -53,21 +63,14 @@ class TrackedPluginManifestsTest(unittest.TestCase):
         self._tmpdir = tempfile.TemporaryDirectory()
         self.repo_root = Path(self._tmpdir.name)
 
-        _run_git(self.repo_root, "init", "-q")
-        _run_git(self.repo_root, "config", "user.email", "test@example.invalid")
-        _run_git(self.repo_root, "config", "user.name", "Test")
+        self.repo = _init_repo_with_commit(
+            self.repo_root,
+            ".obsidian/plugins/tracked-plugin/manifest.json",
+            '{"id": "tracked-plugin", "name": "Tracked Plugin", "version": "1.0.0"}\n',
+        )
 
         obsidian_dir = self.repo_root / ".obsidian"
         plugin_dir = obsidian_dir / "plugins"
-
-        tracked_dir = plugin_dir / "tracked-plugin"
-        tracked_dir.mkdir(parents=True)
-        (tracked_dir / "manifest.json").write_text(
-            '{"id": "tracked-plugin", "name": "Tracked Plugin", "version": "1.0.0"}\n',
-            encoding="utf-8",
-        )
-        _run_git(self.repo_root, "add", ".obsidian/plugins/tracked-plugin/manifest.json")
-        _run_git(self.repo_root, "commit", "-q", "-m", "add tracked plugin manifest")
 
         # Simulates a gitignored plugin directory (e.g. obsidianclaw) that only
         # exists on this particular workstation/worktree and was never staged.
@@ -116,15 +119,8 @@ class TrackedPluginManifestsTest(unittest.TestCase):
         main_state = sync_registry.build_state()
 
         with tempfile.TemporaryDirectory() as worktree_dir:
-            worktree_root = Path(worktree_dir)
-            _run_git(
-                self.repo_root,
-                "worktree",
-                "add",
-                "--detach",
-                str(worktree_root),
-                "HEAD",
-            )
+            worktree_root = Path(worktree_dir) / "wt"
+            worktree = self.repo.add_worktree("linked-worktree-test", str(worktree_root))
             worktree_obsidian_dir = worktree_root / ".obsidian"
             try:
                 with unittest.mock.patch.multiple(
@@ -139,7 +135,7 @@ class TrackedPluginManifestsTest(unittest.TestCase):
                 ):
                     worktree_state = sync_registry.build_state()
             finally:
-                _run_git(self.repo_root, "worktree", "remove", "--force", str(worktree_root))
+                worktree.prune(True)
 
         self.assertEqual(
             main_state["current_state"],
