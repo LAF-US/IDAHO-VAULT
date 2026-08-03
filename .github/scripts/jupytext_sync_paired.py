@@ -25,13 +25,13 @@ from __future__ import annotations
 
 import json
 import os
-import subprocess
+import subprocess  # nosec B404 -- see [tool.bandit] note in pyproject.toml
 import sys
 
 
 def tracked_notebooks() -> list[str]:
     out = subprocess.run(
-        ["git", "ls-files", "*.ipynb"], capture_output=True, text=True, check=True
+        ["git", "ls-files", "*.ipynb"], capture_output=True, text=True, check=True, timeout=30
     )
     return [line for line in out.stdout.splitlines() if line]
 
@@ -79,7 +79,7 @@ def main(argv: list[str]) -> int:
         # strict one-twin-path-per-line contract the pre-commit hook word-splits into `git add`.
         # jupytext chatter on our stdout would be handed to `git add` as bogus paths.
         proc = subprocess.run(
-            ["jupytext", "--sync", "--", notebook], capture_output=True, text=True
+            ["jupytext", "--sync", "--", notebook], capture_output=True, text=True, timeout=120
         )
         if proc.stderr:
             sys.stderr.write(proc.stderr)

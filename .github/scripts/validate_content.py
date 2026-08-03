@@ -7,7 +7,7 @@ Checks staged files for signs of injection, malformed frontmatter,
 or unexpected content. Exits non-zero to halt the workflow on failure.
 
 Usage:
-  python3 validate_content.py [--scope bills|admin|generated|inbox|all]
+  python3 validate_content.py [--scope bills|admin|generated|inbox|all] [--paths-from-stdin]
 
 Exit codes:
   0  All checks passed
@@ -16,7 +16,7 @@ Exit codes:
 
 import argparse
 import re
-import subprocess
+import subprocess  # nosec B404 -- see [tool.bandit] note in pyproject.toml
 import sys
 from pathlib import Path
 
@@ -84,18 +84,39 @@ PROTECTED_LIVE_FILES = {
 
 # ── Helpers ──────────────────────────────────────────────────────────────────
 
-def get_changed_files(base: str | None = None) -> list[Path]:
-    """Get changed Markdown paths, including deletions."""
-    command = ["git", "diff", "--name-only", "--diff-filter=ACMRD"]
-    if base is None:
-        command.insert(2, "--cached")
-    else:
-        command.append(f"{base}..HEAD")
-    result = subprocess.run(
-        command,
-        capture_output=True, text=True
-    )
-    return [Path(f) for f in result.stdout.strip().splitlines() if f.endswith(".md")]
+
+def _run_git(command: list[str]) -> str:
+    try:
+        result = subprocess.run(
+            command, capture_output=True, text=True, encoding="utf-8", errors="replace",
+            timeout=30, check=False,
+        )
+    except subprocess.TimeoutExpired as exc:
+        raise RuntimeError(f"{' '.join(command)} timed out after 30s") from exc
+    except OSError as exc:
+        raise RuntimeError(f"{' '.join(command)} could not run: {exc}") from exc
+    if result.returncode != 0:
+        raise RuntimeError(result.stderr.strip() or f"{' '.join(command)} failed")
+    return result.stdout
+
+
+def get_changed_files(paths_from_stdin: bool = False) -> list[Path]:
+    """
+    Get changed Markdown paths, including deletions.
+
+    Two modes: staged (--cached, the default — local pre-commit usage), or
+    paths piped in over stdin, newline-delimited, already diffed by a trusted
+    caller. The latter mirrors check_portable_paths.py / check_python_integrity.py:
+    CI computes the diff itself against known-good SHAs (github.event.before /
+    github.sha, with a zero-SHA fallback for a branch's first-ever push) and
+    pipes the result in, so this script never needs an arbitrary ref string
+    and there is no free-text git argv to sanitize.
+    """
+    if paths_from_stdin:
+        lines = [stripped for line in sys.stdin.read().splitlines() if (stripped := line.strip())]
+        return [Path(f) for f in lines if f.endswith(".md")]
+    output = _run_git(["git", "diff", "--name-only", "--diff-filter=ACMRD", "--cached"])
+    return [Path(f) for f in output.strip().splitlines() if f.endswith(".md")]
 
 
 def validate_frontmatter(path: Path, content: str) -> list[str]:
@@ -232,12 +253,19 @@ def main() -> int:
     parser = argparse.ArgumentParser(description="Validate staged content before commit")
     parser.add_argument("--scope", choices=["bills", "admin", "generated", "inbox", "all"], default="all",
                         help="Which scope to validate (restricts allowed directories)")
-    parser.add_argument("--base", help="Validate the committed diff from BASE through HEAD instead of staged files")
+    parser.add_argument("--paths-from-stdin", action="store_true",
+                        help="Validate a newline-delimited list of paths read from stdin, "
+                             "already diffed by a trusted caller, instead of staged files")
     args = parser.parse_args()
 
-    staged = get_changed_files(args.base)
+    try:
+        staged = get_changed_files(args.paths_from_stdin)
+    except RuntimeError as exc:
+        print(f"validate_content: {exc}", file=sys.stderr)
+        return 1
     if not staged:
-        print("validate_content: No staged markdown files to check.")
+        source = "in the supplied diff" if args.paths_from_stdin else "staged"
+        print(f"validate_content: No markdown files {source} to check.")
         return 0
 
     all_errors: list[str] = []

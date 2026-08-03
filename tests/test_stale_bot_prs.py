@@ -17,6 +17,7 @@ def _load_stale_bot_prs_module():
 
     script_path = script_dir / "stale_bot_prs.py"
     spec = importlib.util.spec_from_file_location("stale_bot_prs_test_module", script_path)
+    assert spec is not None
     module = importlib.util.module_from_spec(spec)
     assert spec.loader is not None
     spec.loader.exec_module(module)
@@ -93,7 +94,6 @@ class StaleBotPrsTest(unittest.TestCase):
             age_days=2,
             apply=True,
             report_path=report_path,
-            comment="closing stale bot pr",
         )
         events: list[object] = []
 
@@ -143,9 +143,16 @@ class StaleBotPrsTest(unittest.TestCase):
                             "close",
                             "21",
                             "--comment",
-                            "closing stale bot pr",
+                            stale_bot_prs.CLOSE_COMMENT,
                         ],
-                        {"check": True},
+                        {
+                            "check": True,
+                            "capture_output": True,
+                            "text": True,
+                            "encoding": "utf-8",
+                            "errors": "replace",
+                            "timeout": 60,
+                        },
                     ),
                 ],
             )
@@ -153,6 +160,39 @@ class StaleBotPrsTest(unittest.TestCase):
             self.assertIn("lifecycle/abandoned", report_path.read_text(encoding="utf-8"))
         finally:
             report_path.unlink(missing_ok=True)
+
+    def test_run_json_fails_closed_when_gh_could_not_run(self) -> None:
+        with mock.patch.object(
+            stale_bot_prs.subprocess, "run", side_effect=FileNotFoundError("gh")
+        ):
+            with self.assertRaises(RuntimeError) as exc:
+                stale_bot_prs.run_json(["gh", "pr", "list"])
+
+        self.assertIn("could not run", str(exc.exception))
+
+    def test_run_json_fails_closed_on_invalid_json(self) -> None:
+        with mock.patch.object(
+            stale_bot_prs.subprocess,
+            "run",
+            return_value=mock.Mock(stdout="not json"),
+        ):
+            with self.assertRaises(RuntimeError) as exc:
+                stale_bot_prs.run_json(["gh", "pr", "list"])
+
+        self.assertIn("invalid JSON", str(exc.exception))
+
+    def test_main_fails_closed_when_gh_could_not_run(self) -> None:
+        args = SimpleNamespace(age_days=2, apply=False, report_path=Path("unused.md"))
+        with (
+            mock.patch.object(stale_bot_prs, "parse_args", return_value=args),
+            mock.patch.object(
+                stale_bot_prs.subprocess, "run", side_effect=FileNotFoundError("gh")
+            ),
+        ):
+            with self.assertRaises(RuntimeError) as exc:
+                stale_bot_prs.main()
+
+        self.assertIn("could not run", str(exc.exception))
 
 
 if __name__ == "__main__":
