@@ -191,8 +191,6 @@ This doctrine therefore concludes: **the Gordian options are not available witho
 
 ---
 
-```
-The world is quiet here．Esto Perpetua!
-```
+###### "The world is quiet here. Esto Perpetua!"
 
 *— Gordian Doctrine v1, filed 2026-06-01 by `!socrates.claude.novice` under LOGAN's standing-act.*

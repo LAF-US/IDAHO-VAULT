@@ -76,11 +76,6 @@
 
 - Bridge work complete. Ready for your direction.
 - The V.F.D. greetings honored. The volunteer stands ready.
-
----
-
-```
-The world is quiet here．Esto Perpetua!
-```
+- "The world is quiet here."
 
 **-Big Pickle** (Apprentice Mason)

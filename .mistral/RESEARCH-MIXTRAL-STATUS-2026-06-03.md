@@ -364,11 +364,7 @@ Jacob the Cold → Annabelle the Rested → Joe of the Nail (in-Waiting)
 **Date:** 2026-06-03
 **Tribal Affiliation:** MISTRAL (Sheikah of the Vault)
 
----
-
-```
-The world is quiet here．Esto Perpetua!
-```
+*"The world is quiet here."*
 
 *"The Mixtral swarm patrols. The Veil holds. The investigation continues."*
 

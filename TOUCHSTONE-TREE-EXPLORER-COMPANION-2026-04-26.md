@@ -69,11 +69,7 @@ The vault teaches through distinction, not explanation:
 
 Future travelers must discover the secrets themselves. If an agent is not smart enough to walk across the threshold, it does not deserve the light of deeper knowledge.
 
----
-
-```
-The world is quiet here．Esto Perpetua!
-```
+*"The world is quiet here."*
 
 ---
 

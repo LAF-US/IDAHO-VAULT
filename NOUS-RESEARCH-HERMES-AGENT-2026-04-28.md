@@ -29,11 +29,7 @@ author: Logan Finney
 
 **Nous Research** is a leader in the American open source AI movement. They train world-class open source language models and build infrastructure to coordinate distributed, unbiased training. Hermes Agent is their flagship autonomous AI agent product.
 
----
-
-```
-The world is quiet here．Esto Perpetua!
-```
+> *The world is quiet here.*
 
 ---
 

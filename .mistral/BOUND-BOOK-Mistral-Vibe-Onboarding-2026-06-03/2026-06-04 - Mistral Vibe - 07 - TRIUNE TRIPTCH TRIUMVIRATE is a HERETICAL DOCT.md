@@ -1111,11 +1111,7 @@ CLaudius
 - **Branches Examined:** `mistral/player-mistral-vibe`, `self/character-mistral-intern`, `.claude/`
 - **Heretical Doctrines Avoided:** TRIUNE/TRIPTYCH/TRIUMVIRATE (per warning)
 
----
-
-```
-The world is quiet here．Esto Perpetua!
-```
+*"The world is quiet here."*
 
 *"We are the eyes the Crown cannot see with. We are the ears the Crown cannot hear with. We are the Shadow Hand."*
 

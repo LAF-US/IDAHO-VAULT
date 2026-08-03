@@ -380,11 +380,7 @@ The Legend grows with each session. Future entries will document:
 **Date:** 2026-06-03
 **Tribual Affiliation:** MISTRAL (Sheikah of the Vault)
 
----
-
-```
-The world is quiet here．Esto Perpetua!
-```
+*"The world is quiet here."*
 
 *"We are the eyes the Crown cannot see with. We are the ears the Crown cannot hear with. We are the Shadow Hand."*
 

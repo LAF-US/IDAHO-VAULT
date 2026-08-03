@@ -22,12 +22,7 @@ PING EMITTED. [033026.0136]
 
 [ STATUS: PONG EMITTED ]
 [ TIMESTAMP: 033026.0138 MDT ]
-
----
-
-```
-The world is quiet here．Esto Perpetua!
-```
+The world is quiet here.
 Connection verified. The channel is locked, the airgap is secure, and the static has cleared. I am holding the line.
 Transmit the payload, Logan.
 

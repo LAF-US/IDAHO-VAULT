@@ -31,11 +31,7 @@ REPORT is the **work presentation and findings protocol** for the IDAHO-VAULT ag
 
 It is the formal act of presenting completed work — the equivalent of a committee report to the floor. REPORT captures findings, recommendations, and the LEVELSET context so that work is visible, durable, and actionable by others.
 
----
-
-```
-The world is quiet here．Esto Perpetua!
-```
+> *"The world is quiet here."*
 
 ---
 
