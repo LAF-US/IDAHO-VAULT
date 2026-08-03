@@ -27,7 +27,7 @@ A time-based one-time password (TOTP) application automatically generates an aut
 4. In the "Two-factor authentication" section of the page, click **Enable two-factor authentication**.
 5. Under "Scan the QR code", do one of the following:
    - Scan the QR code with your mobile device's app. After scanning, the app displays a six-digit code that you can enter on GitHub.
-    - If you can't scan the QR code, click **setup key** to see a code, the TOTP secret, that you can manually enter in your TOTP app instead.
+   - If you can't scan the QR code, click **setup key** to see a code, the TOTP secret, that you can manually enter in your TOTP app instead.
    ![Screenshot of the "Setup authenticator app" section of the 2FA settings. A link, labeled "setup key", is highlighted in orange.](https://docs.github.com/assets/cb-23826/mw-1440/images/help/2fa/ghes-3.8-and-higher-2fa-wizard-app-click-code.webp)
 6. The TOTP application saves your account on GitHub.com and generates a new authentication code every few seconds. On GitHub, type the code into the field under "Verify the code from the app."
 7. Under "Save your recovery codes", click **Download** to download your recovery codes to your device. Save them to a secure location because your recovery codes can help you get back into your account if you lose access.

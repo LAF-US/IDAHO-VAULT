@@ -30,8 +30,8 @@ You enable Dependabot version updates by committing a `dependabot.yml` configura
 7. Add an `updates` section, with an entry for each package manager you want Dependabot to monitor. This key is mandatory. You use it to configure how Dependabot updates the versions or your project's dependencies. Each entry configures the update settings for a particular package manager. For more information, see [About the dependabot.yml file](https://docs.github.com/en/code-security/concepts/supply-chain-security/about-the-dependabot-yml-file) and [Dependabot options reference](https://docs.github.com/en/code-security/dependabot/working-with-dependabot/dependabot-options-reference).
 8. For each package manager, use:
    - `package-ecosystem` to specify the package manager. For more information about the supported package managers, see [`package-ecosystem`](https://docs.github.com/en/code-security/dependabot/working-with-dependabot/dependabot-options-reference#package-ecosystem-).
-    - `directories` or `directory` to specify the location of multiple manifest or other definition files. For more information, see [Defining multiple locations for manifest files](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/controlling-dependencies-updated#defining-multiple-locations-for-manifest-files).
-    - `schedule.interval` to specify how often to check for new versions.
+   - `directories` or `directory` to specify the location of multiple manifest or other definition files. For more information, see [Defining multiple locations for manifest files](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/controlling-dependencies-updated#defining-multiple-locations-for-manifest-files).
+   - `schedule.interval` to specify how often to check for new versions.
 9. Check the `dependabot.yml` configuration file in to the `.github` directory of the repository.
 
 ### Example dependabot.yml file

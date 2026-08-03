@@ -1224,7 +1224,7 @@ CI runs the `detect-secrets` pre-commit hook in the `secrets` job. Pushes to `ma
 
 2. Understand the tools:
    - `detect-secrets` in pre-commit runs `detect-secrets-hook` with the repo’s baseline and excludes.
-    - `detect-secrets audit` opens an interactive review to mark each baseline item as real or false positive.
+   - `detect-secrets audit` opens an interactive review to mark each baseline item as real or false positive.
 3. For real secrets: rotate/remove them, then re-run the scan to update the baseline.
 4. For false positives: run the interactive audit and mark them as false:
 

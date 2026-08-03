@@ -163,8 +163,8 @@ Use the gcloud CLI to create a service account and attach it to your resource:
       - `USER_EMAIL`: the email address for a Google Account
 3. Create the resource that will run your code, and attach the service account to that resource. For example, if you use Compute Engine: Create a Compute Engine instance. Configure the instance as follows:
    - Replace `INSTANCE_NAME` with your preferred instance name.
-    - Set the `--zone` flag to the [zone](https://docs.cloud.google.com/compute/docs/zones#available) in which you want to create your instance.
-    - Set the `--service-account` flag to the email address for the service account that you created.
+   - Set the `--zone` flag to the [zone](https://docs.cloud.google.com/compute/docs/zones#available) in which you want to create your instance.
+   - Set the `--service-account` flag to the email address for the service account that you created.
 
    ```
    gcloud compute instances create INSTANCE_NAME --zone=ZONE --service-account=SERVICE_ACCOUNT_EMAIL
