@@ -110,6 +110,11 @@ def extract_url(content: str) -> str | None:
     if not url or url.lower() == "null" or url.lower() == "n/a":
         return None
     parsed = urllib.parse.urlparse(url)
+    # Note bodies are web clippings, so this string is externally authored.
+    # urlopen honours file:// and ftp://, which would make a planted `URL:` line
+    # read off the local disk; only the two schemes this audit is about get out.
+    if parsed.scheme not in {"http", "https"}:
+        return None
     if parsed.hostname and parsed.hostname in {"web.archive.org", "timetravel.mementoweb.org"}:
         return None
     return url

@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-import subprocess  # nosec B404 -- see [tool.bandit] note in pyproject.toml
+import subprocess
 from pathlib import Path
 
 

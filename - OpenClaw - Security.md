@@ -775,35 +775,35 @@ The Gateway broadcasts its presence via mDNS (`_openclaw-gw._tcp` on port 5353) 
 
 1. **Minimal mode** (default, recommended for exposed gateways): omit sensitive fields from mDNS broadcasts:
 
- ```json5
- {
-   discovery: {
-     mdns: { mode: "minimal" },
-   },
- }
- ```
+   ```json5
+   {
+     discovery: {
+       mdns: { mode: "minimal" },
+     },
+   }
+   ```
 
-1. **Disable entirely** if you don’t need local device discovery:
+2. **Disable entirely** if you don’t need local device discovery:
 
- ```json5
- {
-   discovery: {
-     mdns: { mode: "off" },
-   },
- }
- ```
+   ```json5
+   {
+     discovery: {
+       mdns: { mode: "off" },
+     },
+   }
+   ```
 
-1. **Full mode** (opt-in): include `cliPath` + `sshPort` in TXT records:
+3. **Full mode** (opt-in): include `cliPath` + `sshPort` in TXT records:
 
- ```json5
- {
-   discovery: {
-     mdns: { mode: "full" },
-   },
- }
- ```
+   ```json5
+   {
+     discovery: {
+       mdns: { mode: "full" },
+     },
+   }
+   ```
 
-1. **Environment variable** (alternative): set `OPENCLAW_DISABLE_BONJOUR=1` to disable mDNS without config changes.
+4. **Environment variable** (alternative): set `OPENCLAW_DISABLE_BONJOUR=1` to disable mDNS without config changes.
 
 In minimal mode, the Gateway still broadcasts enough for device discovery (`role`, `gatewayPort`, `transport`) but omits `cliPath` and `sshPort`. Apps that need CLI path information can fetch it via the authenticated WebSocket connection instead.
 
@@ -1218,22 +1218,21 @@ CI runs the `detect-secrets` pre-commit hook in the `secrets` job. Pushes to `ma
 
 1. Reproduce locally:
 
- ```shellscript
- pre-commit run --all-files detect-secrets
- ```
+   ```shellscript
+   pre-commit run --all-files detect-secrets
+   ```
 
-1. Understand the tools:
+2. Understand the tools:
+   - `detect-secrets` in pre-commit runs `detect-secrets-hook` with the repo’s baseline and excludes.
+   - `detect-secrets audit` opens an interactive review to mark each baseline item as real or false positive.
+3. For real secrets: rotate/remove them, then re-run the scan to update the baseline.
+4. For false positives: run the interactive audit and mark them as false:
 
-- `detect-secrets` in pre-commit runs `detect-secrets-hook` with the repo’s baseline and excludes.
-- `detect-secrets audit` opens an interactive review to mark each baseline item as real or false positive.
-1. For real secrets: rotate/remove them, then re-run the scan to update the baseline.
-2. For false positives: run the interactive audit and mark them as false:
+   ```shellscript
+   detect-secrets audit .secrets.baseline
+   ```
 
- ```shellscript
- detect-secrets audit .secrets.baseline
- ```
-
-1. If you need new excludes, add them to `.detect-secrets.cfg` and regenerate the baseline with matching `--exclude-files` / `--exclude-lines` flags (the config file is reference-only; detect-secrets doesn’t read it automatically).
+5. If you need new excludes, add them to `.detect-secrets.cfg` and regenerate the baseline with matching `--exclude-files` / `--exclude-lines` flags (the config file is reference-only; detect-secrets doesn’t read it automatically).
 
 Commit the updated `.secrets.baseline` once it reflects the intended state.
 

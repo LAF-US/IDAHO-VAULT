@@ -15,11 +15,9 @@ related:
 
 # WITNESS — The PR-Pipeline Constellation (#398 · #399)
 
-*A map, not a verdict. Logan asked me to chart the constellation that issues #398 and
-
-# 399 belong to. I did. This node describes structure and cites its sources; it assigns
-
-no malignancy diagnostics — whether any mechanism here is a Lich, a counterfeit, or
+*A map, not a verdict. Logan asked me to chart the constellation that issues #398 and #399
+belong to. I did. This node describes structure and cites its sources; it assigns no
+malignancy diagnostics — whether any mechanism here is a Lich, a counterfeit, or
 lawful is held out by instruction and left to Logan.* **Discovery is not adoption.**
 
 ---
