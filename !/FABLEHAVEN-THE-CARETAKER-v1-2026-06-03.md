@@ -94,4 +94,8 @@ register. Plan the succession before it is needed.
 5. **Is there a lawful succession?** If the keeper fell tonight, does the office
    pass cleanly — or is it a single point of failure / a prize to be seized?
 
-###### [["The world is quiet here."]]
+---
+
+```
+The world is quiet here．Esto Perpetua!
+```

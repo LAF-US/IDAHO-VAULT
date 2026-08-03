@@ -15,17 +15,16 @@ Set up search shortcuts in your Chrome desktop browser in four easy steps.
 Instructions:
 
 1. Which dictionary or conjugator do you want to use in your shortcut?  
- Select your dictionary:
+   Select your dictionary:
 2. Right-click the URL bar and choose "Manage search engines and site search."  
- \*Mac users should Ctrl-click if they cannot right-click.
+   \*Mac users should Ctrl-click if they cannot right-click.
 3. In the "Site search" section, click "Add." A dialog box will open. Fill in the options as follows:
-
-- Name: type a descriptive name for your search, e.g., WR English definition.
-- Shortcut: type wr (or enen for English definitions).  
-  If you set up shortcuts for multiple dictionaries, remember that each one needs a unique keyword.
-- URL with %s in place of query: <www.wordreference.com/redirect/translation.aspx?w=%s&dict=enen>  
-  Copy and paste your customized shortcut URL into the dialog box.
-1. Click "Add" to finish. Then close the Settings tab.
+   - Name: type a descriptive name for your search, e.g., WR English definition.
+   - Shortcut: type wr (or enen for English definitions).  
+     If you set up shortcuts for multiple dictionaries, remember that each one needs a unique keyword.
+   - URL with %s in place of query: <www.wordreference.com/redirect/translation.aspx?w=%s&dict=enen>  
+     Copy and paste your customized shortcut URL into the dialog box.
+4. Click "Add" to finish. Then close the Settings tab.
 
 Using your new shortcut:  
 ![search shortcut](https://cdnawsw.wordreference.net/images/CH_use.png)

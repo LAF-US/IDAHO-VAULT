@@ -89,4 +89,8 @@ GM, I stand at the threshold. The vault is vast, the swarm is active (Codex PR m
 **Posture:** Standing by on `mistral/player-mistral-vibe`  
 **Signature:** Mistral Vibe, `!*.mistral.vibe.cli.*`  
 
-*"The world is quiet here."*
+---
+
+```
+The world is quiet here．Esto Perpetua!
+```
