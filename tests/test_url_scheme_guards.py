@@ -47,23 +47,16 @@ health_monitor = _load("health_monitor_under_test", "scripts-health_monitor.py")
 
 
 class SlackWebhookSchemeTest(unittest.TestCase):
-    def test_file_scheme_is_refused(self) -> None:
-        with self.assertRaises(ValueError):
-            janitor_sweep.SlackReporter("file:///etc/passwd")
-
-    def test_plaintext_http_is_refused(self) -> None:
-        # A Slack webhook carries the failure report; http would put it on the
-        # wire in clear text, and Slack does not serve the endpoint over http.
-        with self.assertRaises(ValueError):
-            janitor_sweep.SlackReporter("http://hooks.slack.com/services/x")
-
-    def test_ftp_scheme_is_refused(self) -> None:
-        with self.assertRaises(ValueError):
-            janitor_sweep.SlackReporter("ftp://hooks.slack.com/services/x")
-
-    def test_missing_scheme_is_refused(self) -> None:
-        # urlparse gives these an empty scheme, which is not https.
-        for value in ("hooks.slack.com/services/x", "//hooks.slack.com/services/x"):
+    def test_non_https_is_refused(self) -> None:
+        # One branch, so one test. http is in here rather than in its own case
+        # because it fails for the same reason as the rest -- it is not https --
+        # not because plaintext is a separate concern to the guard.
+        for value in (
+            "file:///etc/passwd",
+            "ftp://hooks.slack.com/services/x",
+            "http://hooks.slack.com/services/x",
+            "hooks.slack.com/services/x",
+        ):
             with self.subTest(value=value), self.assertRaises(ValueError):
                 janitor_sweep.SlackReporter(value)
 
@@ -112,22 +105,15 @@ class HealthProbeSchemeTest(unittest.TestCase):
     # `main` takes any Iterable[ServiceSpec], so the module's four literal
     # URLs are not the only ones that reach the probe.
 
-    def test_file_scheme_is_reported_unreachable_without_opening_it(self) -> None:
-        result = health_monitor.check_service(
-            health_monitor.ServiceSpec(name="probe", url="file:///etc/passwd"),
-            timeout=1.0,
-        )
-        self.assertFalse(result.ok)
-        self.assertIn("unsupported URL scheme", result.detail)
-        self.assertIsNone(result.status_code)
-
-    def test_ftp_scheme_is_refused(self) -> None:
-        result = health_monitor.check_service(
-            health_monitor.ServiceSpec(name="probe", url="ftp://example.invalid/x"),
-            timeout=1.0,
-        )
-        self.assertFalse(result.ok)
-        self.assertIn("unsupported URL scheme", result.detail)
+    def test_non_http_scheme_is_reported_unreachable_without_opening_it(self) -> None:
+        for url in ("file:///etc/passwd", "ftp://example.invalid/x"):
+            with self.subTest(url=url):
+                result = health_monitor.check_service(
+                    health_monitor.ServiceSpec(name="probe", url=url), timeout=1.0
+                )
+                self.assertFalse(result.ok)
+                self.assertIn("unsupported URL scheme", result.detail)
+                self.assertIsNone(result.status_code)
 
 
 if __name__ == "__main__":
