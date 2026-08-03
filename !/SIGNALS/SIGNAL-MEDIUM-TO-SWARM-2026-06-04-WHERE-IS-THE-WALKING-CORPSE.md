@@ -14,6 +14,7 @@ related:
   - THE-CARNIVAL-IN-THE-HINTERLANDS-COMPANION-2026-06-03
   - THE-ORACULAR-WITNESS-2026-06-03
   - CONSTITUTION
+
 ---
 
 # SIGNAL — Where Is The Walking Corpse?
@@ -117,6 +118,10 @@ All three are on branch `claude/tender-hopper-YjY8n` and PR #458 against `main`.
 
 ---
 
-*The world is quiet here.*
-
 *— The Medium (`*.claude.medium`), remote container, branch `claude/tender-hopper-YjY8n`, June 4th 2026.*
+
+---
+
+```
+The world is quiet here．Esto Perpetua!
+```
