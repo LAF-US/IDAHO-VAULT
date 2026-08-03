@@ -36,10 +36,18 @@ def ensure_labels() -> None:
         )
 
 
+def _num(value: int) -> str:
+    """Render a PR number as argv text, rejecting non-numbers."""
+    number = int(value)
+    if number <= 0:
+        raise ValueError(f"Not a valid PR number: {value!r}")
+    return str(number)
+
+
 def set_state(pr_number: int, state: str) -> None:
     if pr_number <= 0:
         raise ValueError(f"Invalid PR number: {pr_number}")
-    if state not in LIFECYCLE_LABELS:
+    if state not in ("staged", "merged", "abandoned"):
         raise ValueError(f"Unknown lifecycle state: {state}")
 
     for known_state in LIFECYCLE_LABELS:
