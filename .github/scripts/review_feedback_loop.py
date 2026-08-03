@@ -1,45 +1,40 @@
 #!/usr/bin/env python3
-"""GitHub PR review-state automation helpers.
-
-Modes:
-  - ensure-labels: create/update the labels used by the review lifecycle.
-  - acknowledge-apply: observe a trusted `@copilot apply changes` request and
-    mark the PR as waiting on follow-up commits.
-  - sync-pr: recompute review-derived state after PR updates land, auto-resolve
-    outdated advisory bot threads, and synchronize projection labels.
-  - review-submitted: recompute review-derived state after a submitted review
-    and pause auto-merge only when a non-author changes-requested review creates
-    a real merge block.
-  - promote-ready: compatibility alias for scheduled reconciliation.
-  - reconcile-open-prs: rescan open PR truth and repair drifted review labels.
-    Agent-PR auto-merge arming is RE-ENABLED (2026-06-17, reversing the #521/#527
-    fail-close) now that `main` lands through the GitHub merge queue — the queue +
-    branch protection are the trust gate that arming waited on (ARBORSCAPE IF 12),
-    so arming a low-risk, thread-clear PR means only "merge once the required
-    checks/reviews/threads pass," not "a human approved." Arming is gated by the
-    conservative eligibility (risk/low + grace + no blocking threads). Protected paths
-    are no longer vetoed here — the CODEOWNERS hard gate enforces that. Dependabot keeps
-    its own verified lane.
-  - enable-auto-merge: arms an eligible PR for the merge queue.
-    See AGENT-AUTOMERGE-REENABLED-2026-06-17.md for the recorded reversal.
-  - verify-claim: compare an agent completion-claim comment against the PR's
-    current `mergeable`, `mergeStateStatus`, draft state, and check rollup.
-    Post a divergence comment if the claim disagrees with the institutional
-    state. Addresses IF 7 from !/ARBORSCAPE-PR-EXPANSION-2026-05-22.md.
-"""
+"""GitHub PR review-state automation helpers."""
+# Modes:
+# - ensure-labels: create/update the labels used by the review lifecycle.
+# - acknowledge-apply: observe a trusted `@copilot apply changes` request and
+# mark the PR as waiting on follow-up commits.
+# - sync-pr: recompute review-derived state after PR updates land, auto-resolve
+# outdated advisory bot threads, and synchronize projection labels.
+# - review-submitted: recompute review-derived state after a submitted review
+# and pause auto-merge only when a non-author changes-requested review creates
+# a real merge block.
+# - promote-ready: compatibility alias for scheduled reconciliation.
+# - reconcile-open-prs: rescan open PR truth and repair drifted review labels.
+# Agent-PR auto-merge arming is RE-ENABLED (2026-06-17, reversing the #521/#527
+# fail-close) now that `main` lands through the GitHub merge queue — the queue +
+# branch protection are the trust gate that arming waited on (ARBORSCAPE IF 12),
+# so arming a low-risk, thread-clear PR means only "merge once the required
+# checks/reviews/threads pass," not "a human approved." Arming is gated by the
+# conservative eligibility (risk/low + grace + no blocking threads). Protected paths
+# are no longer vetoed here — the CODEOWNERS hard gate enforces that. Dependabot keeps
+# its own verified lane.
+# - enable-auto-merge: arms an eligible PR for the merge queue.
+# See AGENT-AUTOMERGE-REENABLED-2026-06-17.md for the recorded reversal.
+# - verify-claim: compare an agent completion-claim comment against the PR's
+# current `mergeable`, `mergeStateStatus`, draft state, and check rollup.
+# Post a divergence comment if the claim disagrees with the institutional
+# state. Addresses IF 7 from !/ARBORSCAPE-PR-EXPANSION-2026-05-22.md.
 
 from __future__ import annotations
 
 import argparse
 import json
-from pathlib import Path
-import tempfile
 import os
 import re
 import sys
 from datetime import datetime, timezone
 
-import classify_paths  # sibling module (scripts dir on sys.path in script + test runs)
 from pr_threads import (  # shared thread-analysis vocabulary (#600 §5)
     ATTESTATION_DECISIONS,
     _count_committable_suggestion_threads,
@@ -447,16 +442,14 @@ def _build_attestation(
     *,
     now: datetime | None = None,
 ) -> str:
-    """Build the canonical in-thread attestation body a looker leaves on resolve.
-
-    Round-trips through `_thread_has_attested_look`: detected only when posted as a
-    comment whose author login equals `looker`. The `looker` must match the detector's
-    `by=` grammar — `[A-Za-z0-9][A-Za-z0-9-]*` with an optional trailing `[bot]` — so
-    both a plain login (`claude-code-bot`, `coderabbitai`) and a GitHub App identity
-    (`github-actions[bot]`) are accepted (the B2 standing/identity decision: a looker
-    may sign under its native CI identity). A malformed login is rejected here rather
-    than producing an attestation the detector can never match.
-    """
+    """Build the canonical in-thread attestation body a looker leaves on resolve."""
+    # Round-trips through `_thread_has_attested_look`: detected only when posted as a
+    # comment whose author login equals `looker`. The `looker` must match the detector's
+    # `by=` grammar — `[A-Za-z0-9][A-Za-z0-9-]*` with an optional trailing `[bot]` — so
+    # both a plain login (`claude-code-bot`, `coderabbitai`) and a GitHub App identity
+    # (`github-actions[bot]`) are accepted (the B2 standing/identity decision: a looker
+    # may sign under its native CI identity). A malformed login is rejected here rather
+    # than producing an attestation the detector can never match.
     if decision not in ATTESTATION_DECISIONS:
         raise ValueError(
             f"decision {decision!r} is not one of {sorted(ATTESTATION_DECISIONS)}"
@@ -500,12 +493,10 @@ def _add_thread_reply(thread_id: str, body: str) -> None:
 
 
 def _fetch_thread(thread_id: str) -> dict | None:
-    """Fetch one review thread node directly by GraphQL ID.
-
-    A fallback for when an explicit target thread sits beyond `_fetch_pr`'s
-    `reviewThreads(first: 100)` window (a PR with >100 threads), so a valid id is
-    not falsely reported missing. Returns the same node shape as the PR query.
-    """
+    """Fetch one review thread node directly by GraphQL ID."""
+    # A fallback for when an explicit target thread sits beyond `_fetch_pr`'s
+    # `reviewThreads(first: 100)` window (a PR with >100 threads), so a valid id is
+    # not falsely reported missing. Returns the same node shape as the PR query.
     query = """
     query($id: ID!) {
       node(id: $id) {
@@ -538,28 +529,26 @@ def attest_and_resolve(
     apply: bool = False,
     now: datetime | None = None,
 ) -> dict:
-    """Disposition ONE bot-authored review thread: resolve it, then record the attested look.
-
-    Writes nothing unless `apply=True`. NEVER merges and NEVER enables auto-merge — it
-    resolves that single thread and posts the looker's attestation as a thread reply,
-    nothing else (the cascade-safety contract above).
-
-    Order matters: the resolve runs FIRST, and the "thread cleared" attestation is posted
-    only after it succeeds. The attestation asserts a clearing; if the resolve fails
-    (e.g. `resolveReviewThread` is FORBIDDEN for the integration token — the live #398
-    boundary), a comment claiming the thread was cleared would be a FALSE witness. A true
-    witness that is sometimes absent beats a witness that is sometimes a lie, so we never
-    attest a clearing we did not actually perform.
-
-    Eligibility is reported, never raised. A thread is eligible when the PR's review is
-    not CHANGES_REQUESTED, every author is a bot (`_thread_is_bot_only` — never a human
-    thread, and only when the comment page is complete enough to prove it), and the
-    thread is not already resolved. An eligible thread that already carries an attested
-    look but is still open is resolved WITHOUT re-posting (partial-success recovery); a
-    fully resolved thread is a no-op.
-
-    Returns a result dict: {thread_id, eligible, applied, reason, attestation?}.
-    """
+    """Disposition ONE bot-authored review thread: resolve it, then record the attested look."""
+    # Writes nothing unless `apply=True`. NEVER merges and NEVER enables auto-merge — it
+    # resolves that single thread and posts the looker's attestation as a thread reply,
+    # nothing else (the cascade-safety contract above).
+    #
+    # Order matters: the resolve runs FIRST, and the "thread cleared" attestation is posted
+    # only after it succeeds. The attestation asserts a clearing; if the resolve fails
+    # (e.g. `resolveReviewThread` is FORBIDDEN for the integration token — the live #398
+    # boundary), a comment claiming the thread was cleared would be a FALSE witness. A true
+    # witness that is sometimes absent beats a witness that is sometimes a lie, so we never
+    # attest a clearing we did not actually perform.
+    #
+    # Eligibility is reported, never raised. A thread is eligible when the PR's review is
+    # not CHANGES_REQUESTED, every author is a bot (`_thread_is_bot_only` — never a human
+    # thread, and only when the comment page is complete enough to prove it), and the
+    # thread is not already resolved. An eligible thread that already carries an attested
+    # look but is still open is resolved WITHOUT re-posting (partial-success recovery); a
+    # fully resolved thread is a no-op.
+    #
+    # Returns a result dict: {thread_id, eligible, applied, reason, attestation?}.
     thread_id = thread.get("id")
     result: dict[str, object] = {
         "thread_id": thread_id,
@@ -645,25 +634,23 @@ def backfill_witness(
     apply: bool = False,
     now: datetime | None = None,
 ) -> dict:
-    """Backfill a missing attestation on a thread WE resolved but never witnessed.
-
-    The unwitnessed-ending repair. A resolve that succeeds while its attestation post
-    does not (the resolve-first ordering's partial failure, or any interrupted run)
-    leaves a thread *resolved with no recorded look* — exactly the blind resolution the
-    engine exists to prevent. This repairs that ONE case and only that case:
-
-      - the thread is already resolved (otherwise use `attest-resolve`/`engage-outdated`);
-      - it carries NO attestation yet (nothing to repair otherwise);
-      - every author is a bot, proven from a complete comment page;
-      - and `resolvedBy` is the looker itself — *we* resolved it.
-
-    It posts the missing attestation and does NOTHING else: it never resolves (already
-    resolved) and never unresolves. The `resolvedBy == looker` gate is the truthfulness
-    line — we never mint a witness for a resolve performed by a human or another actor.
-
-    Writes nothing unless `apply=True`. Returns {thread_id, eligible, applied, reason,
-    attestation?}.
-    """
+    """Backfill a missing attestation on a thread WE resolved but never witnessed."""
+    # The unwitnessed-ending repair. A resolve that succeeds while its attestation post
+    # does not (the resolve-first ordering's partial failure, or any interrupted run)
+    # leaves a thread *resolved with no recorded look* — exactly the blind resolution the
+    # engine exists to prevent. This repairs that ONE case and only that case:
+    #
+    # - the thread is already resolved (otherwise use `attest-resolve`/`engage-outdated`);
+    # - it carries NO attestation yet (nothing to repair otherwise);
+    # - every author is a bot, proven from a complete comment page;
+    # - and `resolvedBy` is the looker itself — *we* resolved it.
+    #
+    # It posts the missing attestation and does NOTHING else: it never resolves (already
+    # resolved) and never unresolves. The `resolvedBy == looker` gate is the truthfulness
+    # line — we never mint a witness for a resolve performed by a human or another actor.
+    #
+    # Writes nothing unless `apply=True`. Returns {thread_id, eligible, applied, reason,
+    # attestation?}.
     thread_id = thread.get("id")
     result: dict[str, object] = {
         "thread_id": thread_id,
@@ -1735,11 +1722,9 @@ def _thread_belongs_to_pr(thread: dict, owner: str, repo: str, pr_number: int) -
 
 
 def attest_resolve(args: argparse.Namespace) -> int:
-    """Disposition one explicit bot-authored thread (Layer B2). Dry-run unless --apply.
-
-    Bounded by design: targets a single PR + thread id, so it cannot walk the backlog
-    or cascade. The deterministic walk + cascade-safety orchestration is Layer C.
-    """
+    """Disposition one explicit bot-authored thread (Layer B2). Dry-run unless --apply."""
+    # Bounded by design: targets a single PR + thread id, so it cannot walk the backlog
+    # or cascade. The deterministic walk + cascade-safety orchestration is Layer C.
     pr = _fetch_pr(args.owner, args.repo, args.pr_number)
     threads = (pr.get("reviewThreads") or {}).get("nodes") or []
     thread = next((t for t in threads if t.get("id") == args.thread_id), None)
@@ -1847,16 +1832,14 @@ def engage_outdated(args: argparse.Namespace) -> int:
 
 
 def reconcile_witness(args: argparse.Namespace) -> int:
-    """Backfill missing attestations on resolved-but-unwitnessed threads WE resolved.
-
-    The repair pass for the unwitnessed ending (#399): a resolve can land while its
-    attestation does not, leaving a thread resolved with no recorded look. This walks
-    resolved, bot-only threads that carry no attestation and whose `resolvedBy` is the
-    looker, and posts the look that is owed — via `backfill_witness`, which NEVER resolves
-    or unresolves and refuses any thread a different identity resolved. Dry-run unless
-    --apply. The looker defaults to the authenticated actor, so the backfilled witness
-    truthfully names who actually resolved it. `--pr` scopes to one PR.
-    """
+    """Backfill missing attestations on resolved-but-unwitnessed threads WE resolved."""
+    # The repair pass for the unwitnessed ending (#399): a resolve can land while its
+    # attestation does not, leaving a thread resolved with no recorded look. This walks
+    # resolved, bot-only threads that carry no attestation and whose `resolvedBy` is the
+    # looker, and posts the look that is owed — via `backfill_witness`, which NEVER resolves
+    # or unresolves and refuses any thread a different identity resolved. Dry-run unless
+    # --apply. The looker defaults to the authenticated actor, so the backfilled witness
+    # truthfully names who actually resolved it. `--pr` scopes to one PR.
     looker = args.looker or _viewer_login()
     rationale = args.rationale or (
         "Witness backfilled: this thread was resolved under the engaged policy but the "
