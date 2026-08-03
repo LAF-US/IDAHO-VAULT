@@ -14,7 +14,7 @@ import hashlib
 import json
 import re
 import shutil
-import subprocess  # nosec B404 -- see [tool.bandit] note in pyproject.toml
+import subprocess
 import time
 from dataclasses import dataclass
 from pathlib import Path
