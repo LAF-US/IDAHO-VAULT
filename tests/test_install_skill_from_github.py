@@ -74,6 +74,56 @@ class GitArgumentGuardTest(unittest.TestCase):
             installer._git_sparse_checkout("--upload-pack=id", "main", ["skills/x"], "/tmp/x")
 
 
+class RepoSegmentGuardTest(unittest.TestCase):
+    """An owner and a repo name are single path segments that get interpolated
+    into both the clone URL and the codeload download URL. Checking the built
+    URL's scheme constrained nothing about what those segments contained, so
+    the segments themselves are what is checked."""
+
+    def test_owner_with_separator_is_refused(self) -> None:
+        with self.assertRaises(installer.InstallError):
+            installer._validate_repo_segment("owner/../other", "owner")
+
+    def test_dot_dot_is_refused(self) -> None:
+        # `..` is a path traversal in the codeload URL, not a repo name.
+        with self.assertRaises(installer.InstallError):
+            installer._validate_repo_segment("..", "owner")
+
+    def test_option_like_owner_is_refused(self) -> None:
+        with self.assertRaises(installer.InstallError):
+            installer._validate_repo_segment("-owner", "owner")
+
+    def test_whitespace_in_repo_is_refused(self) -> None:
+        for value in ("re po", "repo\nX", "repo\ty"):
+            with self.subTest(value=value):
+                with self.assertRaises(installer.InstallError):
+                    installer._validate_repo_segment(value, "repo")
+
+    def test_ordinary_owner_and_repo_pass(self) -> None:
+        for value in ("LAF-US", "IDAHO-VAULT", "repo.js", "some_repo", "v2.0"):
+            with self.subTest(value=value):
+                self.assertEqual(installer._validate_repo_segment(value, "repo"), value)
+
+    def test_built_urls_are_the_only_accepted_shapes(self) -> None:
+        https = installer._build_repo_url("LAF-US", "IDAHO-VAULT")
+        ssh = installer._build_repo_ssh("LAF-US", "IDAHO-VAULT")
+        self.assertEqual(installer._validate_repo_url(https), https)
+        self.assertEqual(installer._validate_repo_url(ssh), ssh)
+        for bad in (
+            "https://evil.example/LAF-US/IDAHO-VAULT.git",
+            "https://github.com/LAF-US/IDAHO-VAULT",  # no .git suffix
+            "ext::sh -c touch% /tmp/pwned",
+        ):
+            with self.subTest(bad=bad):
+                with self.assertRaises(installer.InstallError):
+                    installer._validate_repo_url(bad)
+
+    def test_source_construction_refuses_a_bad_owner(self) -> None:
+        args = installer.Args(repo="--upload-pack=id/repo", path=["skills/x"])
+        with self.assertRaises(installer.InstallError):
+            installer._resolve_source(args)
+
+
 class GithubRequestHostPinTest(unittest.TestCase):
     """github_request attaches GITHUB_TOKEN, so the URL decides where the
     credential goes; the destination is pinned where it is attached."""
