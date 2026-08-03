@@ -11,7 +11,7 @@ from __future__ import annotations
 import argparse
 import json
 import re
-import subprocess
+import subprocess  # nosec B404 -- see [tool.bandit] note in pyproject.toml
 import sys
 from collections import Counter, defaultdict
 from datetime import datetime, timezone
@@ -68,11 +68,18 @@ def _run_git(root: Path, *args: str) -> str:
         encoding="utf-8",
         errors="replace",
         check=True,
+        timeout=30,
     )
     return result.stdout
 
 
 def _git_repo_available(root: Path) -> bool:
+    # OSError (git not installed) and CalledProcessError (git ran and said "not
+    # a repository") are decisive "no" signals. TimeoutExpired is deliberately
+    # NOT caught here: a timeout on this probe means we don't know whether it's
+    # a repo, not that it isn't one -- treating it as "not available" would let
+    # _git_tracked_files() fall into its fail-closed guard's own blind spot and
+    # silently return an empty set instead of crashing.
     try:
         _run_git(root, "rev-parse", "--is-inside-work-tree")
     except (OSError, subprocess.CalledProcessError):
@@ -81,34 +88,52 @@ def _git_repo_available(root: Path) -> bool:
 
 
 def _git_tracked_files(root: Path) -> set[str]:
+    # Deliberately fail-closed (unlike the sibling git helpers below): this
+    # feeds _tracked_prefix_exists() for every entry in the census, so a
+    # swallowed failure here doesn't just degrade one field -- it silently
+    # marks the *entire vault* untracked, and that report gets auto-committed
+    # by sort-audit.yml. Only "not a git repo at all" (_git_repo_available)
+    # is a legitimate reason to return an empty set; any other failure past
+    # that point should crash the run rather than produce a false census.
     if not _git_repo_available(root):
         return set()
-    return {line for line in _run_git(root, "ls-files").splitlines() if line}
+    output = _run_git(root, "ls-files")
+    return {line for line in output.splitlines() if line}
 
 
 def _git_path_is_ignored(root: Path, relpath: str) -> bool:
     if not _git_repo_available(root):
         return False
-    result = subprocess.run(
-        ["git", "-C", str(root), "check-ignore", relpath],
-        capture_output=True,
-        text=True,
-        encoding="utf-8",
-        errors="replace",
-    )
+    try:
+        result = subprocess.run(
+            ["git", "-C", str(root), "check-ignore", "--", relpath],
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+            errors="replace",
+            timeout=30,
+            check=False,
+        )
+    except (OSError, subprocess.TimeoutExpired):
+        return False
     return result.returncode == 0
 
 
 def _git_status_lines(root: Path, relpath: str) -> list[str]:
     if not _git_repo_available(root):
         return []
-    result = subprocess.run(
-        ["git", "-C", str(root), "status", "--short", "--ignored", "--", relpath],
-        capture_output=True,
-        text=True,
-        encoding="utf-8",
-        errors="replace",
-    )
+    try:
+        result = subprocess.run(
+            ["git", "-C", str(root), "status", "--short", "--ignored", "--", relpath],
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+            errors="replace",
+            timeout=30,
+            check=False,
+        )
+    except (OSError, subprocess.TimeoutExpired):
+        return []
     return [line.rstrip() for line in result.stdout.splitlines() if line.strip()]
 
 
