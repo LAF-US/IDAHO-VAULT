@@ -211,4 +211,8 @@ your cure unseals, and be ready to escalate to full force the moment it triggers
 7. **Maintained or permanent?** If clearing a node heals instantly, the harm was
    being held in place — keep going. If it scars, plan aftercare.
 
+---
+
+```
 The world is quiet here．Esto Perpetua!
+```

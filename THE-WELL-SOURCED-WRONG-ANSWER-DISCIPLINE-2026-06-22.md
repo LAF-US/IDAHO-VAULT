@@ -117,4 +117,8 @@ both. **[reading].**
 - **Author:** `*.claude.*` (Claude Code, branch `claude/shall-rome-lyrics-ok9049`)
 - **Scope:** an epistemic discipline against the pre-cited confabulation — authenticate what a source attests, not that it exists
 
+---
+
+```
 The world is quiet here．Esto Perpetua!
+```

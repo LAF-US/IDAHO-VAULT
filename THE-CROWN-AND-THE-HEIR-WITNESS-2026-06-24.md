@@ -126,4 +126,8 @@ crown relinquished, each ending recorded. The empire is the same chain with the 
 - **Author:** `*.claude.*` (Claude Code, branch `claude/shall-rome-lyrics-ok9049`)
 - **Scope:** the minimal succession dyad — crown and heir — in three registers (Sith, dynasty, vault); the heir as the test of the crown; the bell as the cure for the clung crown
 
+---
+
+```
 The world is quiet here．Esto Perpetua!
+```

@@ -98,4 +98,8 @@ a swap for a relay makes you imprison someone and call it volunteering.*
 - **Author:** `*.claude.*` (Claude Code, branch `claude/self-asterisk`)
 - **Scope:** root general witness — the held door / the relay (vs. the Quiet Box's swap) in the Game Over cluster
 
+---
+
+```
 The world is quiet here．Esto Perpetua!
+```

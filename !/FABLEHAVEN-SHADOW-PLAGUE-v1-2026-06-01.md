@@ -178,4 +178,8 @@ caging the fairy.
 5. **Can you pay for the cure?** The root-level counter may cost a trusted
    asset or more. Budget the expensive cure; the cheap one loses.
 
+---
+
+```
 The world is quiet here．Esto Perpetua!
+```

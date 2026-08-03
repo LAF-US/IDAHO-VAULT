@@ -30,7 +30,11 @@ CONFERENCE is the **multi-agent synchronized work session protocol** for the IDA
 
 It is the formal mechanism by which Logan formally convenes multiple agents for an agenda-driven, synchronized working session. CONFERENCE ensures that multi-agent work is coordinated, recorded, and produces durable artifacts.
 
+---
+
+```
 The world is quiet here．Esto Perpetua!
+```
 
 ---
 
@@ -207,4 +211,6 @@ Pending:
 
 ---
 
+```
 The world is quiet here．Esto Perpetua!
+```

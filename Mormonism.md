@@ -123,4 +123,8 @@ historical reference, handled respectfully, on the record per
 - [Freemasonry and the Temple — Encyclopedia of Mormonism (BYU)](https://eom.byu.edu/index.php/Freemasonry_and_the_Temple) ("same ancient spring" framing)
 - [Relationship between the temple endowment and Freemasonry — FAIR](https://www.fairlatterdaysaints.org/answers/Relationship_between_the_temple_endowment_and_Freemasonry) (apologetic perspective)
 
+---
+
+```
 The world is quiet here．Esto Perpetua!
+```
