@@ -161,4 +161,8 @@ reference, on the record per [[VAULT-CONVENTIONS]].
 - [Johannes Valentinus Andreae — Wikipedia](https://en.wikipedia.org/wiki/Johannes_Valentinus_Andreae) (likely author; the "ludibrium")
 - Frances A. Yates, *The Rosicrucian Enlightenment* (Routledge, 1972) — [edition listing](https://www.goodreads.com/book/show/369848.The_Rosicrucian_Enlightenment) (the standard scholarly study: Hermetic-alchemical movement as predicate to modern science)
 
+---
+
+```
 The world is quiet here．Esto Perpetua!
+```

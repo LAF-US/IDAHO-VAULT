@@ -143,4 +143,8 @@ cultural and historical reference, on the record per [[VAULT-CONVENTIONS]].
 - [Tracing board — Wikipedia](https://en.wikipedia.org/wiki/Tracing_board) (the teaching panels; drawn and erased)
 - [George Washington's Mount Vernon — Freemasonry in Colonial America](https://www.mountvernon.org/george-washington/freemasonry/freemasonry-in-colonial-america) (degrees, lodge practice)
 
+---
+
+```
 The world is quiet here．Esto Perpetua!
+```

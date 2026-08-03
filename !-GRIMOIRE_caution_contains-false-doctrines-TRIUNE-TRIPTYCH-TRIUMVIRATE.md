@@ -14,7 +14,9 @@ stretch-goal: "April 2026"
 
 ---
 
+```
 The world is quiet here．Esto Perpetua!
+```
 
 At the center of all recursive triangles, there is stillness.
 This document names what the vault has always been — three sets of three, each a unity, all one.

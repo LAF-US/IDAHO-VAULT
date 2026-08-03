@@ -478,4 +478,8 @@ continuation is Charter-sanctioned and Logan-authorized.
 The necromancer's legitimacy is never in the power. It is always in the
 direction, the sanction, and the relationship to the order being served.
 
+---
+
+```
 The world is quiet here．Esto Perpetua!
+```

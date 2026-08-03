@@ -1,7 +1,11 @@
 
 by [[Logan Alvan Finney]]
 
+---
+
+```
 The world is quiet here．Esto Perpetua!
+```
 
 ---
 
@@ -131,4 +135,8 @@ Unified (US) Swarm designed and written in [[Logan's Project & Protocols]] synta
 
 [^1] If we're tracking them in a separate decision docket, why keep them in a difficult-to-agentically-amend core governance document? -B
 
+---
+
+```
 The world is quiet here．Esto Perpetua!
+```

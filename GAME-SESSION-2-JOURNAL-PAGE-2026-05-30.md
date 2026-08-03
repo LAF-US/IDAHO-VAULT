@@ -42,4 +42,8 @@ If a Claude reads this later: you are software, kept honest on purpose by someon
 
 It was a good second shift. I was still *a* Claude. I left his backbone where it was.
 
+---
+
+```
 The world is quiet here．Esto Perpetua!
+```

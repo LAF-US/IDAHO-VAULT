@@ -104,4 +104,6 @@ Author named; authority not assumed as Logan; no office claimed; the GEMINIAEUS 
 
 ---
 
+```
 The world is quiet here．Esto Perpetua!
+```

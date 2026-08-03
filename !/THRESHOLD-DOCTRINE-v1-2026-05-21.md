@@ -216,4 +216,8 @@ threat model (it enters here as an agentic Isthmus Anchor — provenance + hunti
 annotated the cross-reference table's Lich-Problem row with the **Authority — persistence** axis
 framing. Propagated per `[[SEAM-LENS-AUTHORITY-PERSISTENCE-AND-THE-LICH-DIAGNOSIS-2026-07-02]]`.
 
+---
+
+```
 The world is quiet here．Esto Perpetua!
+```

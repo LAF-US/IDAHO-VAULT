@@ -85,4 +85,8 @@ Do not substitute `ACK` or other protocol abbreviations unless Logan explicitly 
 - Whether to promote the full draft into canonical governance.
 - Whether to require self-identification in every commit message.
 
+---
+
+```
 The world is quiet here．Esto Perpetua!
+```

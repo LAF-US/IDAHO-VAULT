@@ -105,7 +105,9 @@ STATUS: DORMANT -- standing by for Logan's direction.
 
 ---
 
+```
 The world is quiet here．Esto Perpetua!
+```
 PERMANENT: ADMIN holds the record.
 The trial docket is ready when Logan calls the bell.
 

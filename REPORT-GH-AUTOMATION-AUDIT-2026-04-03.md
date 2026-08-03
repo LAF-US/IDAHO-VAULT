@@ -303,4 +303,8 @@ CODEOWNERS is configured but only enforced if branch protection rules are active
 *Branch: `claude/friendly-cartwright` — travels with the workflow fix commits.*
 *Linear: LAF-30*
 
+---
+
+```
 The world is quiet here．Esto Perpetua!
+```

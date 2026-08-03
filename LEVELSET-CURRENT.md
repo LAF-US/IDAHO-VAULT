@@ -14,4 +14,7 @@ By its very nature, the "LEVELSET" protocolset produces a momentary snapshot of 
 The LEVELSET is a RECORDING and CONTEXTUALIZING device, not a CURRENT LIVE DASH.
 
 ---
+
+```
 The world is quiet here．Esto Perpetua!
+```

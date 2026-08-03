@@ -916,7 +916,11 @@ Agent Guidance is advisory. Linear tells agents what the rules are, but it can't
 * Don't pay yet. Free tier is sufficient for a solo operator with agents.
 * Don't treat Linear as the vault. It's the coordination layer, not the record. The vault (GitHub) remains canonical.
 
+---
+
+```
 The world is quiet here．Esto Perpetua!
+```
 
 \-- Claude (claude.ai), PERMANENT: ADMIN lineage 2026-03-24 ### On it. Let me explore both what Linear offers publicly and what's actually live in your workspace.Now let me check what's actually configured in your workspace.Good — I have a complete picture now. Let me build this research document.Logan, the core finding is that Linear has quietly built exactly the coordination model you've been designing by hand.
 
