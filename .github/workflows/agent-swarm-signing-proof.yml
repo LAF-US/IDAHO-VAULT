@@ -1,5 +1,11 @@
 name: Agent Swarm Signing Proof
 
+# checkov:skip=CKV_GHA_7: `agent` is a closed `type: choice` enum (opencode|claude|
+# mistral|codex) GitHub itself validates before dispatch -- not free text. Every
+# consumer below is either an engine-evaluated `if:` condition or a quoted shell
+# variable via `env:` (AGENT=${{ github.event.inputs.agent }}, then "$AGENT" in a
+# `case` statement) -- never a raw `${{ }}` interpolation inside a run: script body,
+# which is the actual injection vector this check exists to catch.
 on:
   workflow_dispatch:
     inputs:
