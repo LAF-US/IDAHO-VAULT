@@ -8,7 +8,6 @@ from pathlib import Path
 from typing import Iterable
 from urllib import error, parse, request
 
-
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_LOG_PATH = REPO_ROOT / "!" / "MONITORING" / "health-log.md"
 USER_AGENT = "IDAHO-VAULT/health-monitor"

@@ -1,11 +1,12 @@
-"""Scheme guards on the urlopen call sites.
+"""
+Scheme guards on the urlopen call sites.
 
 `urllib.request.urlopen` honours `file://` and `ftp://`, so a URL that reaches
 it decides whether the call is a network request or a local-disk read. These
-scripts take their URLs from an environment variable, a CLI flag, and a caller
--supplied list respectively -- all operator-controlled today, none of them
-constrained by the type system tomorrow. The scheme is settled where the URL
-enters rather than assumed from where it came.
+scripts take their URLs from an environment variable, a CLI flag, and a
+caller-supplied list respectively -- all operator-controlled today, none of
+them constrained by the type system tomorrow. The scheme is settled where the
+URL enters rather than assumed from where it came.
 """
 
 from __future__ import annotations
@@ -21,7 +22,10 @@ ROOT = Path(__file__).resolve().parents[1]
 def _load(name: str, relative: str):
     path = ROOT / relative
     spec = importlib.util.spec_from_file_location(name, path)
-    assert spec is not None and spec.loader is not None
+    if spec is None or spec.loader is None:
+        # Not an assert: `python -O` strips those, and a loader that silently
+        # became None would then surface as an AttributeError further down.
+        raise ImportError(f"cannot load {name} from {path}")
     module = importlib.util.module_from_spec(spec)
     sys.modules[spec.name] = module
     spec.loader.exec_module(module)
@@ -49,8 +53,12 @@ class SlackWebhookSchemeTest(unittest.TestCase):
 
 
 class HealthProbeSchemeTest(unittest.TestCase):
-    """`main` takes any Iterable[ServiceSpec], so the module defaults are not
-    the only URLs that reach the probe."""
+    """
+    Cover the probe's own scheme check.
+
+    `main` takes any Iterable[ServiceSpec], so the module defaults are not the
+    only URLs that reach the probe.
+    """
 
     def test_file_scheme_is_reported_unreachable_without_opening_it(self) -> None:
         result = health_monitor.check_service(
