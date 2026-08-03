@@ -3,6 +3,3 @@
 !**.md
 
 # ESTO PERPETUA!
-# Python bytecode caches — build artifacts, never source.
-__pycache__/
-*.py[cod]
