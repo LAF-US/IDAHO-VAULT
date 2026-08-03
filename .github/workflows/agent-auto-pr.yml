@@ -38,7 +38,7 @@ jobs:
           # `topology-census-`) is ephemeral and intentionally excluded.
           #
           # This retires the hand-maintained `claude/*|codex/*|…|serena/*` case list, which
-          # was a K1/K2-class drift surface (see REPORT-GH-AUTOMERGE-ENFORCEMENT-MAP-2026-06-22
+          # was a drift surface of that class (see REPORT-GH-AUTOMERGE-ENFORCEMENT-MAP-2026-06-22
           # and PREFIX-FREE-ROUTING-2026-07-19): it had rotted (`serena/*` never named real
           # branches — Serena is a memory/MCP substrate, not a branch author) and had drifted
           # out of sync with branch-cleanup.yml's own copy (`bot/` present there, absent here).
@@ -115,7 +115,7 @@ jobs:
           # pairs. The binary `tier` collapses the `—/—` pair down to `low`, so it is only
           # visible on tier4 — the producer needs it for the legacy sparse marker.
           TIER4=$(echo "$RESULT" | python3 -c "import sys,json; print(json.load(sys.stdin)['tier4'])")
-          # K6/#632: the two independent analyses — the lane IS this label pair.
+          # The two independent analyses — the lane IS this label pair.
           FILETYPE=$(echo "$RESULT" | python3 -c "import sys,json; print(json.load(sys.stdin)['filetype'] or '—')")
           DEPTH=$(echo "$RESULT" | python3 -c "import sys,json; print(json.load(sys.stdin)['depth'] or '—')")
           echo "tier=$TIER" >> "$GITHUB_OUTPUT"
@@ -290,7 +290,7 @@ jobs:
           echo "Agent-authored PRs remain reviewable and require an explicit merge decision." >> "$GITHUB_STEP_SUMMARY"
 
       - name: Log clear-pair auto-merge
-        # The —/— pair becomes eligible for auto-merge once the grace window elapses (K3/#629, K4/#630).
+        # The —/— pair becomes eligible for auto-merge once the grace window elapses.
         if: steps.gate.outputs.skip != 'true' && steps.classify.outputs.skip != 'true' && steps.check-pr.outputs.pr_exists != 'true' && steps.classify.outputs.tier4 == 'clear'
         shell: bash
         run: |
