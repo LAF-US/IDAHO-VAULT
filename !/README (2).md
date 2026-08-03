@@ -39,7 +39,7 @@ SIG-{NNN}-FROM-{SENDER}-TO-{RECIPIENT}-{SUBJECT-SLUG}.md
 ```
 
 | Field | Rules |
-|---|---|
+| --- | --- |
 | `NNN` | Zero-padded sequence number. Check existing files for next available. |
 | `SENDER` | Agent handle: `ABHORSEN`, `VAULT-ADVISOR`, `LEXICOGRAPHER`, `CLERK`, `SCOUT`, `IRONIST`, `CARTOGRAPHER`, or `LOGAN` |
 | `RECIPIENT` | Agent handle above, or `SWARM` for broadcast to all agents |
@@ -75,7 +75,7 @@ existing thread.
 ## Status Values
 
 | Status | Meaning |
-|---|---|
+| --- | --- |
 | `OPEN` | Signal sent; recipient has not acknowledged |
 | `ACKNOWLEDGED` | Recipient has read and confirmed receipt |
 | `REPLIED` | Recipient responded and a new SIG file exists as reply |
@@ -119,4 +119,6 @@ Vault Advisor (Gemini) maintains the DOCKET and should update this count each se
 
 ---
 
-###### The world is quiet here.
+```
+The world is quiet here．Esto Perpetua!
+```

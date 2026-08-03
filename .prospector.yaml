@@ -1,0 +1,28 @@
+# Prospector's default profile enables two pydocstyle rules that conflict
+# with this repo's actual, established docstring convention -- each is one
+# half of a mutually-exclusive pair, and the codebase already consistently
+# uses the OTHER half:
+#
+# - D213 ("Multi-line docstring summary should start at the second line")
+#   conflicts with D212 (summary on the same line as the opening quotes).
+#   This repo's docstrings already use D212 throughout -- e.g. the module
+#   docstring at the top of .github/scripts/sync_obsidian_plugin_registry.py
+#   (unmodified by PR #891) also gets flagged for D213 once you point
+#   Prospector at that file locally; Codacy's PR-diff-scoped reporting just
+#   never surfaces it because that line isn't part of any diff.
+# - D203 ("1 blank line required before class docstring") conflicts with
+#   D211 (no blank line before class docstring). Checked every class
+#   docstring in the tracked tree: 55 use the D211 (no-blank-line) style,
+#   0 use D203.
+#
+# Disabling both here aligns Prospector's check with the convention this
+# codebase already, consistently uses, rather than asking new code to fight
+# every existing file's style. Verified locally with prospector==1.19.1 +
+# pydocstyle==6.3.0: this file is auto-discovered (no CLI flag needed) and
+# reduces prospector -w pydocstyle's findings on
+# .github/scripts/sync_obsidian_plugin_registry.py and
+# tests/test_sync_obsidian_plugin_registry.py from 3 to 0.
+pydocstyle:
+  disable:
+    - D203
+    - D213

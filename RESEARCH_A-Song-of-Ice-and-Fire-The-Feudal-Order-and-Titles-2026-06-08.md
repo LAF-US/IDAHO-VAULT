@@ -43,7 +43,7 @@ date: 2026-06-08
 **[canon]** GRRM **chose not to use** the graded European peerage (no **duke, marquess, earl/count, viscount, baron**). The whole set is:
 
 | Title | Who holds it |
-|---|---|
+| --- | --- |
 | **King / Queen** | the sovereign (addressed **"Your Grace"**) |
 | **Prince / Princess** | the royal house (and the Prince of Dorne) |
 | **Lord / Lady** | the **head of a lordly House** (great, major, or minor) — a grant of lordship normally comes with **lands or a castle** |
@@ -86,4 +86,6 @@ date: 2026-06-08
 
 ---
 
-###### [["The world is quiet here."]]
+```
+The world is quiet here．Esto Perpetua!
+```

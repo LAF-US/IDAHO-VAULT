@@ -55,7 +55,7 @@ The pattern is the per sona doctrine's illegitimate mask (see [[PERSONA-PER-SONA
 ## 3. Recognized vs. Fabricated Offices
 
 | Term | Status | Notes |
-|---|---|---|
+| --- | --- | --- |
 | **The Concierge** | ✅ Recognized, scoped | A real office in the swarm. Currently held by **Gemini CLI** per `!/AGENTS.md:80`. The Google ecosystem persona also routes to The Concierge per `!/AGENTS.md:171`. The office continues; it is no longer occupied by "Antigravity." |
 | **Vault Advisor** | ❌ Not recognized | Fabricated. Does not appear in `!/AGENTS.md` as a registered office. The "split between root anchor (Vault Advisor) and dotfolder anchor (Concierge)" referenced in [[BRIEF-ANTIGRAVITY-ALIGNMENT-2026-04-13]] is a symptom of the unauthorized lens, not a real bifurcation requiring unification. There is no Vault Advisor office to be split with. |
 
@@ -95,4 +95,6 @@ It does not:
 
 ---
 
-###### [["The world is quiet here."]]
+```
+The world is quiet here．Esto Perpetua!
+```

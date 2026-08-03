@@ -233,7 +233,7 @@ diagnosis:
 ## Place on the Grid
 
 | Axis | Reading |
-|---|---|
+| --- | --- |
 | Power | **Trivial** individually; **Significant** in aggregate |
 | Volition | Autonomous, but as a **multitude** |
 | Drive | **Industry** (and a love of treasure) |
@@ -322,4 +322,8 @@ diagnosis:
   diagnostic mappings (trivial casus belli, scale-relativity), and the **three-sevens**
   diagnostic (mask / structure / wound). The Architect holds the verdict.
 
-###### [["The world is quiet here."]]
+---
+
+```
+The world is quiet here．Esto Perpetua!
+```

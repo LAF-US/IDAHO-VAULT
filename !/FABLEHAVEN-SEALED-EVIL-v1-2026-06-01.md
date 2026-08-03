@@ -56,6 +56,7 @@ Fairy-Queen-class kill), not as the ordinary counter.
 ## The Specimens — Four Faces of the Seal
 
 ### Bahumat — Containment as the Founding Charter
+
 Bahumat is an ancient demon who plagued the region *before* Fablehaven existed.
 Europeans **imprisoned him in exchange for acknowledgment of ownership of the
 land** he had terrorized — and the preserve was then **founded on that land.**
@@ -72,6 +73,7 @@ seal.** The danger is *forgetting what you are built on top of.* Know what is
 under the hill; the seal is load-bearing.
 
 ### Graulas — The Dying Disguise and Weaponized Compassion
+
 This is the sharpest specimen, and the one most worth filing. Graulas was once
 among the most feared demons alive — but by the time we meet him he is **long
 past his prime, wasting from a fatal illness**, having made Fablehaven his home
@@ -91,6 +93,7 @@ helper, extract a **promise**, and weaponize the helper's own **compassion** to
 get itself **voluntarily restored and released.** This is Muriel's consented
 release (`!/FABLEHAVEN-WITCH-MURIEL-v1-2026-06-01.md`) by a different lever: not the petitioner's
 *desire* but their *pity* and sense of obligation. Two hard corollaries:
+
 - **The gift is bait.** The real powers Graulas granted Seth were genuine — and
   exactly what made the relationship trustworthy enough to exploit. A favor from
   a contained thing is an investment in your future compliance.
@@ -99,6 +102,7 @@ release (`!/FABLEHAVEN-WITCH-MURIEL-v1-2026-06-01.md`) by a different lever: not
   it. Mercy was never part of the trade; it was the trade's *disguise.*
 
 ### Kurisock — Power by Host-Binding
+
 Kurisock is a demon **more of shadow than substance.** To act in the material
 world at all, he must **bind himself to a host** — and doing so **amplifies the
 host.** He bound to the hamadryad **Ephira**, and through that union the Shadow
@@ -113,6 +117,7 @@ power suddenly exceeds its nature. (Compare the Vessel-Channeler in
 body.)
 
 ### Zzyzx & Gorgrog — The Master Prison and the Deliberate Unsealing
+
 Zzyzx is the apex: the great prison holding the worst demons, up to the Demon
 King **Gorgrog.** Its breach would be existential. And the canonical threat to
 it is **not a spontaneous breakout** — it is the **Sphinx**, who spent
@@ -154,7 +159,7 @@ The containment thread now has its full spectrum. The Sealed Evil is the
 inmate*:
 
 | | What it is | Can it be destroyed? | Held by |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **Bound Mortal** (Muriel) | A corrupted *mortal* | Yes, in principle — but contained instead | Spendable seals (the knots) |
 | **Sealed Evil** (demon) | A near-indestructible power | **No — only contained** | Founding seals; the hill; Zzyzx |
 | **The Quiet Box** | The apparatus, not an inmate | n/a | Itself a swap-prison (holds either of the above) |
@@ -183,4 +188,8 @@ seal **is** the resolution, in perpetuity.
 6. **If it breaks out, who and where re-seals it?** Re-containment needs a higher
    authority and a changed domain. Know both *before* the seal fails, not after.
 
-###### [["The world is quiet here."]]
+---
+
+```
+The world is quiet here．Esto Perpetua!
+```

@@ -9,4 +9,4 @@ related:
 - national wildlife refuge
 authority: LOGAN
 ---
-national wildlife refuge for migratory birds in Minidoka and Cassia County at Lake Walcott 
+national wildlife refuge for migratory birds in Minidoka and Cassia County at Lake Walcott

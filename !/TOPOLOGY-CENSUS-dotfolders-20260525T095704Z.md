@@ -14,7 +14,7 @@ authority: github-actions
 ## Summary
 
 | Measure | Count |
-|---|---:|
+| --- | ---: |
 | entry count | 298 |
 | live roster count | 17 |
 | historical recovery count | 6 |
@@ -23,7 +23,7 @@ authority: github-actions
 ### authority state counts
 
 | Value | Count |
-|---|---:|
+| --- | ---: |
 | `explicit_live_authority` | 28 |
 | `no_discernible_authority` | 270 |
 
@@ -883,11 +883,11 @@ authority: github-actions
 - Obvious authority: live doctrine
 - Git state: tracked=yes, ignored=no
 - Structure: `2` dirs, `7` files
-- Sample children: DIR crews; DIR tools; FILE 5WIZARDS-DRAFT.md; FILE __init__.py; FILE CREWAI.md; FILE manifest.json; FILE MANIFEST.md; FILE stub.txt; ... +1 more
+- Sample children: DIR crews; DIR tools; FILE 5WIZARDS-DRAFT.md; FILE **init**.py; FILE CREWAI.md; FILE manifest.json; FILE MANIFEST.md; FILE stub.txt; ... +1 more
 - Live roster: `no`
 - Historical recovery layer: `no`
 - Tracked MEMORY: `no`
-- Surface signals: OWNER=['5WIZARDS-DRAFT.md', '__init__.py', 'CREWAI.md', 'crews', 'manifest.json', 'MANIFEST.md', 'stub.txt', 'tools', 'TRAINING.md']; SHARED=[]; ARCHIVE=[]
+- Surface signals: OWNER=['5WIZARDS-DRAFT.md', '**init**.py', 'CREWAI.md', 'crews', 'manifest.json', 'MANIFEST.md', 'stub.txt', 'tools', 'TRAINING.md']; SHARED=[]; ARCHIVE=[]
 - Local governing surface: `.crewai/MANIFEST.md`
 - Notes:
   - Dotfolder does not appear in the live roster or recovery layer.

@@ -11,40 +11,40 @@ Status: ready for DMs + spaces via Google Chat API webhooks (HTTP only).
 ## Quick setup (beginner)
 
 1. Create a Google Cloud project and enable the **Google Chat API**.
-	- Go to: [Google Chat API Credentials](https://console.cloud.google.com/apis/api/chat.googleapis.com/credentials)
-		- Enable the API if it is not already enabled.
+   - Go to: [Google Chat API Credentials](https://console.cloud.google.com/apis/api/chat.googleapis.com/credentials)
+   - Enable the API if it is not already enabled.
 2. Create a **Service Account**:
-	- Press **Create Credentials** > **Service Account**.
-		- Name it whatever you want (e.g., `openclaw-chat`).
-		- Leave permissions blank (press **Continue**).
-		- Leave principals with access blank (press **Done**).
+   - Press **Create Credentials** > **Service Account**.
+   - Name it whatever you want (e.g., `openclaw-chat`).
+   - Leave permissions blank (press **Continue**).
+   - Leave principals with access blank (press **Done**).
 3. Create and download the **JSON Key**:
-	- In the list of service accounts, click on the one you just created.
-		- Go to the **Keys** tab.
-		- Click **Add Key** > **Create new key**.
-		- Select **JSON** and press **Create**.
+   - In the list of service accounts, click on the one you just created.
+   - Go to the **Keys** tab.
+   - Click **Add Key** > **Create new key**.
+   - Select **JSON** and press **Create**.
 4. Store the downloaded JSON file on your gateway host (e.g., `~/.openclaw/googlechat-service-account.json`).
 5. Create a Google Chat app in the [Google Cloud Console Chat Configuration](https://console.cloud.google.com/apis/api/chat.googleapis.com/hangouts-chat):
-	- Fill in the **Application info**:
-		- **App name**: (e.g. `OpenClaw`)
-				- **Avatar URL**: (e.g. `https://openclaw.ai/logo.png`)
-				- **Description**: (e.g. `Personal AI Assistant`)
-		- Enable **Interactive features**.
-		- Under **Functionality**, check **Join spaces and group conversations**.
-		- Under **Connection settings**, select **HTTP endpoint URL**.
-		- Under **Triggers**, select **Use a common HTTP endpoint URL for all triggers** and set it to your gateway’s public URL followed by `/googlechat`.
-		- *Tip: Run `openclaw status` to find your gateway’s public URL.*
-		- Under **Visibility**, check **Make this Chat app available to specific people and groups in <Your Domain>**.
-		- Enter your email address (e.g. `user@example.com`) in the text box.
-		- Click **Save** at the bottom.
+   - Fill in the **Application info**:
+   - **App name**: (e.g. `OpenClaw`)
+      - **Avatar URL**: (e.g. `https://openclaw.ai/logo.png`)
+      - **Description**: (e.g. `Personal AI Assistant`)
+   - Enable **Interactive features**.
+   - Under **Functionality**, check **Join spaces and group conversations**.
+   - Under **Connection settings**, select **HTTP endpoint URL**.
+   - Under **Triggers**, select **Use a common HTTP endpoint URL for all triggers** and set it to your gateway’s public URL followed by `/googlechat`.
+   - *Tip: Run `openclaw status` to find your gateway’s public URL.*
+   - Under **Visibility**, check **Make this Chat app available to specific people and groups in <Your Domain>**.
+   - Enter your email address (e.g. `user@example.com`) in the text box.
+   - Click **Save** at the bottom.
 6. **Enable the app status**:
-	- After saving, **refresh the page**.
-		- Look for the **App status** section (usually near the top or bottom after saving).
-		- Change the status to **Live - available to users**.
-		- Click **Save** again.
+   - After saving, **refresh the page**.
+   - Look for the **App status** section (usually near the top or bottom after saving).
+   - Change the status to **Live - available to users**.
+   - Click **Save** again.
 7. Configure OpenClaw with the service account path + webhook audience:
-	- Env: `GOOGLE_CHAT_SERVICE_ACCOUNT_FILE=/path/to/service-account.json`
-		- Or config: `channels.googlechat.serviceAccountFile: "/path/to/service-account.json"`.
+   - Env: `GOOGLE_CHAT_SERVICE_ACCOUNT_FILE=/path/to/service-account.json`
+   - Or config: `channels.googlechat.serviceAccountFile: "/path/to/service-account.json"`.
 8. Set the webhook audience type + value (matches your Chat app config).
 9. Start the gateway. Google Chat will POST to your webhook path.
 
@@ -55,7 +55,7 @@ Once the gateway is running and your email is added to the visibility list:
 1. Go to [Google Chat](https://chat.google.com/).
 2. Click the **+** (plus) icon next to **Direct Messages**.
 3. In the search bar (where you usually add people), type the **App name** you configured in the Google Cloud Console.
-	- **Note**: The bot will *not* appear in the “Marketplace” browse list because it is a private app. You must search for it by name.
+   - **Note**: The bot will *not* appear in the “Marketplace” browse list because it is a private app. You must search for it by name.
 4. Select your bot from the results.
 5. Click **Add** or **Chat** to start a 1:1 conversation.
 6. Send “Hello” to trigger the assistant!
@@ -69,30 +69,37 @@ Google Chat webhooks require a public HTTPS endpoint. For security, **only expos
 Use Tailscale Serve for the private dashboard and Funnel for the public webhook path. This keeps `/` private while exposing only `/googlechat`.
 
 1. **Check what address your gateway is bound to:**
-	```shellscript
-	ss -tlnp | grep 18789
-	```
-	Note the IP address (e.g., `127.0.0.1`, `0.0.0.0`, or your Tailscale IP like `100.x.x.x`).
+
+   ```shellscript
+   ss -tlnp | grep 18789
+   ```
+
+   Note the IP address (e.g., `127.0.0.1`, `0.0.0.0`, or your Tailscale IP like `100.x.x.x`).
 2. **Expose the dashboard to the tailnet only (port 8443):**
-	```shellscript
-	# If bound to localhost (127.0.0.1 or 0.0.0.0):
-	tailscale serve --bg --https 8443 http://127.0.0.1:18789
-	# If bound to Tailscale IP only (e.g., 100.106.161.80):
-	tailscale serve --bg --https 8443 http://100.106.161.80:18789
-	```
+
+   ```shellscript
+   # If bound to localhost (127.0.0.1 or 0.0.0.0):
+   tailscale serve --bg --https 8443 http://127.0.0.1:18789
+   # If bound to Tailscale IP only (e.g., 100.106.161.80):
+   tailscale serve --bg --https 8443 http://100.106.161.80:18789
+   ```
+
 3. **Expose only the webhook path publicly:**
-	```shellscript
-	# If bound to localhost (127.0.0.1 or 0.0.0.0):
-	tailscale funnel --bg --set-path /googlechat http://127.0.0.1:18789/googlechat
-	# If bound to Tailscale IP only (e.g., 100.106.161.80):
-	tailscale funnel --bg --set-path /googlechat http://100.106.161.80:18789/googlechat
-	```
+
+   ```shellscript
+   # If bound to localhost (127.0.0.1 or 0.0.0.0):
+   tailscale funnel --bg --set-path /googlechat http://127.0.0.1:18789/googlechat
+   # If bound to Tailscale IP only (e.g., 100.106.161.80):
+   tailscale funnel --bg --set-path /googlechat http://100.106.161.80:18789/googlechat
+   ```
+
 4. **Authorize the node for Funnel access:** If prompted, visit the authorization URL shown in the output to enable Funnel for this node in your tailnet policy.
 5. **Verify the configuration:**
-	```shellscript
-	tailscale serve status
-	tailscale funnel status
-	```
+
+   ```shellscript
+   tailscale serve status
+   tailscale funnel status
+   ```
 
 Your public webhook URL will be: `https://<node-name>.<tailnet>.ts.net/googlechat`
 
@@ -124,16 +131,16 @@ Configure your tunnel’s ingress rules to only route the webhook path:
 ## How it works
 
 1. Google Chat sends webhook POSTs to the gateway. Each request includes an `Authorization: Bearer <token>` header.
-	- OpenClaw verifies bearer auth before reading/parsing full webhook bodies when the header is present.
-		- Google Workspace Add-on requests that carry `authorizationEventObject.systemIdToken` in the body are supported via a stricter pre-auth body budget.
+   - OpenClaw verifies bearer auth before reading/parsing full webhook bodies when the header is present.
+   - Google Workspace Add-on requests that carry `authorizationEventObject.systemIdToken` in the body are supported via a stricter pre-auth body budget.
 2. OpenClaw verifies the token against the configured `audienceType` + `audience`:
-	- `audienceType: "app-url"` → audience is your HTTPS webhook URL.
-		- `audienceType: "project-number"` → audience is the Cloud project number.
+   - `audienceType: "app-url"` → audience is your HTTPS webhook URL.
+   - `audienceType: "project-number"` → audience is the Cloud project number.
 3. Messages are routed by space:
-	- DMs use session key `agent:<agentId>:googlechat:direct:<spaceId>`.
-		- Spaces use session key `agent:<agentId>:googlechat:group:<spaceId>`.
+   - DMs use session key `agent:<agentId>:googlechat:direct:<spaceId>`.
+   - Spaces use session key `agent:<agentId>:googlechat:group:<spaceId>`.
 4. DM access is pairing by default. Unknown senders receive a pairing code; approve with:
-	- `openclaw pairing approve googlechat <code>`
+   - `openclaw pairing approve googlechat <code>`
 5. Group spaces require @-mention by default. Use `botUser` if mention detection needs the app’s user name.
 
 ## Targets
@@ -205,19 +212,24 @@ status code: 405, reason phrase: HTTP error response: HTTP/1.1 405 Method Not Al
 This means the webhook handler isn’t registered. Common causes:
 
 1. **Channel not configured**: The `channels.googlechat` section is missing from your config. Verify with:
-	```shellscript
-	openclaw config get channels.googlechat
-	```
-	If it returns “Config path not found”, add the configuration (see [Config highlights](#config-highlights)).
+
+   ```shellscript
+   openclaw config get channels.googlechat
+   ```
+
+   If it returns “Config path not found”, add the configuration (see [Config highlights](#config-highlights)).
 2. **Plugin not enabled**: Check plugin status:
-	```shellscript
-	openclaw plugins list | grep googlechat
-	```
-	If it shows “disabled”, add `plugins.entries.googlechat.enabled: true` to your config.
+
+   ```shellscript
+   openclaw plugins list | grep googlechat
+   ```
+
+   If it shows “disabled”, add `plugins.entries.googlechat.enabled: true` to your config.
 3. **Gateway not restarted**: After adding config, restart the gateway:
-	```shellscript
-	openclaw gateway restart
-	```
+
+   ```shellscript
+   openclaw gateway restart
+   ```
 
 Verify the channel is running:
 

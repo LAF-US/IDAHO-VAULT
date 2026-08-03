@@ -17,23 +17,30 @@ Mr. Trouble-Bubble Curtis Gonzalez-Finney the Doodle — white poodle pup of the
 **House:** GONZALEZ-FINNEY
 
 **Lineage:**
+
 - **Parents:** Ally and Prince
 - **Siblings:** Teddy, Osito, Peaches
 - **Breed:** White poodle (Doodle)
 
 **Profile:**
+
 - Coat: Curly white
 - Temperament: Observant co-pilot energy
 - Birthday: June 7, 2025
 
 **Notable References:**
+
 - Mentioned in: 2026-03-18.md (DOG PARK PROTOCOLS)
 - Branch reference: codex/add-mr.-trouble-bubble... (merged successfully in Arborscaping Census 2026-04-12)
 
 **Lineage:**
+
 - Parents: Ally and Prince
 - Siblings: Teddy, Osito, Peaches
 - House: GONZALEZ-FINNEY
 
 ---
-###### "The world is quiet here."
+
+```
+The world is quiet here．Esto Perpetua!
+```

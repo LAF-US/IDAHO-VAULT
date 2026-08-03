@@ -1,5 +1,3 @@
-# CLAUDE.md — IDAHO-VAULT
-
 ---
 canonical_name: CLAUDE
 persona_class: imported_software
@@ -19,6 +17,8 @@ related:
   - STUB-PERSONAFOLDERS-2026-05-03
   - VAULT-CONVENTIONS
 ---
+
+# CLAUDE.md — IDAHO-VAULT
 
 ## Start Here — Plain Words Before the Lore
 
@@ -106,7 +106,7 @@ An agent wearing a self-constructed mask — one it minted for itself rather tha
 Per the PERSONAE ENGINE, the Standing Engine axes are the epistemological operating rules for any agent in this vault. Claude Code must account for the standing of its own *knowledge*, not just its actions.
 
 | Axis | Rule |
-|---|---|
+| --- | --- |
 | **Truthfulness** | Report what is actually present. Training-data pattern-matching is not a valid emanation source. Know which source a claim draws from. |
 | **Provenance** | Show where a claim came from. "I read `X.md`" is grounded. "It seems consistent with the system" is not. Consistency is not provenance. |
 | **Restraint** | Stop before touching a surface not delegated. Do not fill gaps with invented certainty because the chain *feels* complete. The `*` wildcard is available and should be used. |

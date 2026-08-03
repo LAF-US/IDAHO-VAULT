@@ -9,18 +9,29 @@
 import urllib.request\
 import json\
 \
+
 # Flickr API endpoint for user's public photos\
+
 user_id = "201908381@N02"\
 api_key = "YOUR_API_KEY"  # Note: Flickr API requires authentication\
 \
+
 # Alternative: Use Flickr's public photo URL pattern\
-# Format: https://live.staticflickr.com/\{server-id\}/\{id\}_\{secret\}_b.jpg\
+
+# Format: <https://live.staticflickr.com/\{server-id\}/\{id\}_\{secret\}_b.jpg\>
+
 \
+
 # Let's construct URLs from the photo IDs we saw on the page\
+
 # Photo IDs from the Flickr page: IMG_4715, IMG_4754, IMG_4758, IMG_4820, IMG_4824, IMG_4794, IMG_4864, IMG_4863, IMG_4831, IMG_4845, IMG_4832, IMG_4857, IMG_4854\
+
 \
+
 # Since we don't have API key, let's use direct Flickr photo page URLs\
+
 # which can be embedded as image sources\
+
 \
 photos = [\
     "55018540576",  # IMG_4715\
@@ -31,16 +42,16 @@ photos = [\
 ]\
 \
 for photo_id in photos:\
-    url = f"https://flickr.com/photos/loganfinney/\{photo_id\}/"\
+    url = f"<https://flickr.com/photos/loganfinney/\{photo_id\}/"\>
     print(url)\
 \
 EOF\
 \
-https://flickr.com/photos/loganfinney/55018540576/\
-https://flickr.com/photos/loganfinney/55018540596/\
-https://flickr.com/photos/loganfinney/55018540606/\
-https://flickr.com/photos/loganfinney/55018540666/\
-https://flickr.com/photos/loganfinney/55018540686/\
+<https://flickr.com/photos/loganfinney/55018540576/\>
+<https://flickr.com/photos/loganfinney/55018540596/\>
+<https://flickr.com/photos/loganfinney/55018540606/\>
+<https://flickr.com/photos/loganfinney/55018540666/\>
+<https://flickr.com/photos/loganfinney/55018540686/\>
 ubuntu@sandbox:~\
 [CMD_END][CMD_BEGIN]\
 ubuntu@e29ea14a11bb:~ $}

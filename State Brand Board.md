@@ -4,4 +4,4 @@ related:
 - livestock
 ---
 
-livestock 
+livestock

@@ -100,6 +100,7 @@ Seth (the fairies had turned him into a walrus-like monstrosity), and the
 ## Vault Mappings — Containment as a Spendable Resource
 
 ### 1. The prison is a finite set of seals the *authorized* keep buying open
+
 Muriel never breaks out. Her containment erodes only when a legitimate party
 **voluntarily spends a seal** to get something they want. **Every "small favor"
 is a knot.**
@@ -111,6 +112,7 @@ to spend the seals. The prison is defeated by **helpfulness**, one reasonable
 exception at a time.
 
 ### 2. Consent is the safeguard *and* the exploit
+
 The formula — *"Of my own free will, I sever this knot"* — is meant to make
 erosion impossible by accident or coercion. It works: every knot is spent
 *wittingly*. That is exactly why it fails. **Explicit consent does not mean
@@ -120,6 +122,7 @@ necessary but not sufficient: explicit is not the same as wise, and an attacker
 whose release requires your consent will work to obtain it.
 
 ### 3. The leak is slow, cumulative, and invisible per-transaction
+
 Eleven knots over 160 years. No single visitor experienced their one favor as
 dangerous; each was a reasonable trade in a hard moment. The aggregate is
 near-total compromise — and *nobody treated "only two left" as the emergency it
@@ -131,6 +134,7 @@ breach. Audit the *aggregate state of the seals*, not each request in isolation.
 knots from failing. Count the knots already gone.
 
 ### 4. The desperation ramp — favors are extracted under crisis
+
 The final knots were not spent idly. They were spent to **undo a curse on a
 child** and to **restore a grandmother** — the worse the petitioners' situation,
 the more willing they were to spend their last seals. The crisis is the lever.
@@ -142,6 +146,7 @@ threat will *wait for*, or *manufacture*, the crisis that makes you consent.
 engineering the conditions under which refusal collapses.)
 
 ### 5. The freed insider's first act is to widen the breach
+
 Loosed, Muriel did not simply leave. She spent her released power to raise an
 **army of giant imps** and to **free Bahumat**, a sealed demon far worse than
 herself (a Sealed Evil — see `!/FABLEHAVEN-SEALED-EVIL-v1-2026-06-01.md`).
@@ -154,6 +159,7 @@ Re-containing the insider does not re-seal what she already loosed. Track what
 the breach *unsealed*, not just the breacher.
 
 ### 6. Re-containment must be stronger, joint, and escalated
+
 The cure was not destruction; it was **re-binding.** With instructions from the
 **Fairy Queen** (a higher authority Kendra had to escalate to), an army of
 human-sized fairies defeated the pair and bound Muriel **together with Bahumat**
@@ -168,6 +174,7 @@ and should quarantine the insider *together with* whatever she unsealed. A
 binding that already failed once must not be restored to its prior strength.
 
 ### 7. Only the privileged class can spend a seal — so the attacker cultivates them
+
 A creature could not undo a knot; only a mortal could. So Muriel spent decades
 **cultivating the humans** — the only principals able to free her. The exploit
 path runs exclusively through the privileged class.
@@ -209,4 +216,8 @@ to be re-secured, not assumed neutralized, the moment the maker is bound.
    to higher authority, and bind the insider together with what she freed. Never
    restore a failed binding to its old strength.
 
-###### [["The world is quiet here."]]
+---
+
+```
+The world is quiet here．Esto Perpetua!
+```

@@ -21,24 +21,23 @@ If you want, I can also give you a tighter 1-paragraph explainer, a feature-by-f
 
 <div align="center">⁂</div>
 
-[^1_1]: https://www.oneusefulthing.org/p/claude-dispatch-and-the-power-of
+[^1_1]: <https://www.oneusefulthing.org/p/claude-dispatch-and-the-power-of>
 
-[^1_2]: https://www.macstories.net/stories/hands-on-with-claude-dispatch-for-cowork/
+[^1_2]: <https://www.macstories.net/stories/hands-on-with-claude-dispatch-for-cowork/>
 
-[^1_3]: https://www.lowcode.agency/blog/claude-dispatch-explained
+[^1_3]: <https://www.lowcode.agency/blog/claude-dispatch-explained>
 
-[^1_4]: https://www.forbes.com/sites/ronschmelzer/2026/03/20/claude-dispatch-lets-you-control-claude-cowork-with-your-phone/
+[^1_4]: <https://www.forbes.com/sites/ronschmelzer/2026/03/20/claude-dispatch-lets-you-control-claude-cowork-with-your-phone/>
 
-[^1_5]: https://www.productmarketfit.tech/p/understanding-claude-dispatch-complete
+[^1_5]: <https://www.productmarketfit.tech/p/understanding-claude-dispatch-complete>
 
-[^1_6]: https://causalinf.substack.com/p/claude-code-34-using-dispatch-on
+[^1_6]: <https://causalinf.substack.com/p/claude-code-34-using-dispatch-on>
 
-[^1_7]: https://aimaker.substack.com/p/claude-cowork-ai-research-agent-dispatch-scheduled-tasks-guide
+[^1_7]: <https://aimaker.substack.com/p/claude-cowork-ai-research-agent-dispatch-scheduled-tasks-guide>
 
-[^1_8]: https://www.reddit.com/r/ClaudeCode/comments/1s0w1nq/research_online_and_plan_through_claude_dispatch/
+[^1_8]: <https://www.reddit.com/r/ClaudeCode/comments/1s0w1nq/research_online_and_plan_through_claude_dispatch/>
 
-[^1_9]: https://www.youtube.com/watch?v=kKfBUVbMBVE
-
+[^1_9]: <https://www.youtube.com/watch?v=kKfBUVbMBVE>
 
 ---
 
@@ -49,14 +48,13 @@ You’re not doing anything wrong; Dispatch itself is flaky right now, and “Re
 
 <div align="center">⁂</div>
 
-[^2_1]: https://www.reddit.com/r/ClaudeCode/comments/1s0w1nq/research_online_and_plan_through_claude_dispatch/
+[^2_1]: <https://www.reddit.com/r/ClaudeCode/comments/1s0w1nq/research_online_and_plan_through_claude_dispatch/>
 
-[^2_2]: https://www.macstories.net/stories/hands-on-with-claude-dispatch-for-cowork/
+[^2_2]: <https://www.macstories.net/stories/hands-on-with-claude-dispatch-for-cowork/>
 
-[^2_3]: https://www.lowcode.agency/blog/claude-dispatch-explained
+[^2_3]: <https://www.lowcode.agency/blog/claude-dispatch-explained>
 
 [^2_4]: Screenshot_20260403-010431.jpg
-
 
 ---
 
@@ -71,7 +69,6 @@ For swarm-y stuff, think of Dispatch as your **radio** to a team of agents on th
 - Make a simple, consistent folder structure (e.g., `/swarm_runs/{date_topic}`) so agents can find and write files without guessing.[^3_7]
 - Use Dispatch for prep and follow-up, not irreversible actions: let swarms draft, test, and stage, then you approve/merge when you’re back at the keyboard.[^3_5]
 
-
 ## Swarm-specific use cases
 
 - “QA swarm while I’m away”: From your phone, tell Dispatch to run a swarm against a service or repo (frontend, backend, testing, docs agents) and leave you a QA report plus suggested patches in a folder.[^3_2][^3_4]
@@ -79,13 +76,11 @@ For swarm-y stuff, think of Dispatch as your **radio** to a team of agents on th
 - “Competing hypotheses”: Ask Dispatch to spin up two or more sub-swarms with different priors or methodologies on a story, then have a comparison memo written while you’re in the field.[^3_2][^3_4]
 - “Background maintenance swarm”: Schedule recurring Dispatch pings that trigger a swarm to refresh a living doc (timeline, stakeholder map, risk log) off new sources, then diff today vs. yesterday for you.[^3_1]
 
-
 ## Prompt patterns that help swarms
 
 - Always specify roles, artifacts, and exit criteria in the first message: “Use a multi-agent team (roles X/Y/Z). Produce: 1) coordination log, 2) final memo, 3) patch files. Stop when tests A/B pass.”[^3_4][^3_2]
 - Ask Dispatch to plan first, execute second: “Draft a swarm plan and send me the task list; once I reply ‘GO’, execute autonomously and write outputs to folder F.”.[^3_4]
 - For long runs, build in self-checks: instruct one agent to act as auditor, sampling outputs and flagging low-confidence sections for your review when you’re back at the desk.[^3_4]
-
 
 ## Working around current flakiness
 
@@ -97,26 +92,25 @@ If you describe your “Swarm” experiment (coding project, newsroom pipeline, 
 
 <div align="center">⁂</div>
 
-[^3_1]: https://aimaker.substack.com/p/claude-cowork-ai-research-agent-dispatch-scheduled-tasks-guide
+[^3_1]: <https://aimaker.substack.com/p/claude-cowork-ai-research-agent-dispatch-scheduled-tasks-guide>
 
-[^3_2]: https://alexop.dev/posts/from-tasks-to-swarms-agent-teams-in-claude-code/
+[^3_2]: <https://alexop.dev/posts/from-tasks-to-swarms-agent-teams-in-claude-code/>
 
-[^3_3]: https://www.lowcode.agency/blog/claude-dispatch-explained
+[^3_3]: <https://www.lowcode.agency/blog/claude-dispatch-explained>
 
-[^3_4]: https://help.apiyi.com/en/claude-code-swarm-mode-multi-agent-guide-en.html
+[^3_4]: <https://help.apiyi.com/en/claude-code-swarm-mode-multi-agent-guide-en.html>
 
-[^3_5]: https://www.junia.ai/blog/claude-dispatch-explained
+[^3_5]: <https://www.junia.ai/blog/claude-dispatch-explained>
 
-[^3_6]: https://www.productcompass.pm/p/claude-dispatch-guide?action=share
+[^3_6]: <https://www.productcompass.pm/p/claude-dispatch-guide?action=share>
 
-[^3_7]: https://www.linkedin.com/posts/garethrydon_claude-dispatch-tip-to-get-the-most-out-activity-7440502444767301632-uvkP
+[^3_7]: <https://www.linkedin.com/posts/garethrydon_claude-dispatch-tip-to-get-the-most-out-activity-7440502444767301632-uvkP>
 
-[^3_8]: https://www.youtube.com/watch?v=8LNZqLaXEGM
+[^3_8]: <https://www.youtube.com/watch?v=8LNZqLaXEGM>
 
-[^3_9]: https://www.reddit.com/r/ClaudeAI/comments/1s2fa6s/personalprivate_use_cases_for_dispatch_and/
+[^3_9]: <https://www.reddit.com/r/ClaudeAI/comments/1s2fa6s/personalprivate_use_cases_for_dispatch_and/>
 
-[^3_10]: https://www.reddit.com/r/ClaudeCode/comments/1roa5bu/the_actual_guide_to_setting_up_claude_cowork/
-
+[^3_10]: <https://www.reddit.com/r/ClaudeCode/comments/1roa5bu/the_actual_guide_to_setting_up_claude_cowork/>
 
 ---
 
@@ -129,7 +123,6 @@ You’re blocked because the desktop app (and Cowork/Dispatch) really do expect 
 - On Windows, Cowork’s MSIX installer registers the app under the admin user; standard users on the same box often can’t see or launch that instance unless they briefly get local admin rights during install.[^4_4][^4_1]
 - Claude’s docs also assume you or your org admin can toggle desktop features like “Code in the desktop” and “Remote Control” in the admin console, and optionally allow the more permissive permission modes; those are controlled at the tenant/admin level, not per end user.[^4_5][^4_2]
 
-
 ## Practical paths forward
 
 - If it’s your own machine: temporarily grant your user local admin, log out/in, install or reinstall Claude Desktop with Cowork, then drop your account back to standard; several users report this as the only stable fix right now.[^4_1]
@@ -141,26 +134,25 @@ If you tell me your exact environment (Windows vs Mac, personal vs newsroom IT m
 
 <div align="center">⁂</div>
 
-[^4_1]: https://www.reddit.com/r/ClaudeAI/comments/1reqs5g/installing_claude_on_windows_requires_admin_creds/
+[^4_1]: <https://www.reddit.com/r/ClaudeAI/comments/1reqs5g/installing_claude_on_windows_requires_admin_creds/>
 
-[^4_2]: https://code.claude.com/docs/en/desktop
+[^4_2]: <https://code.claude.com/docs/en/desktop>
 
-[^4_3]: https://support.claude.com/en/articles/13345190-get-started-with-cowork
+[^4_3]: <https://support.claude.com/en/articles/13345190-get-started-with-cowork>
 
-[^4_4]: https://github.com/anthropics/claude-code/issues/25055
+[^4_4]: <https://github.com/anthropics/claude-code/issues/25055>
 
-[^4_5]: https://support.claude.com/en/articles/9267276-roles-and-permissions
+[^4_5]: <https://support.claude.com/en/articles/9267276-roles-and-permissions>
 
-[^4_6]: https://www.claudelog.com/troubleshooting/
+[^4_6]: <https://www.claudelog.com/troubleshooting/>
 
-[^4_7]: https://code.claude.com/docs/en/permissions
+[^4_7]: <https://code.claude.com/docs/en/permissions>
 
-[^4_8]: https://platform.claude.com/docs/en/agent-sdk/permissions
+[^4_8]: <https://platform.claude.com/docs/en/agent-sdk/permissions>
 
-[^4_9]: https://inventivehq.com/knowledge-base/claude/how-to-fix-permission-errors
+[^4_9]: <https://inventivehq.com/knowledge-base/claude/how-to-fix-permission-errors>
 
-[^4_10]: https://www.linkedin.com/posts/jlldavies_claude-dropped-co-work-for-windows-today-activity-7427674832504274944-uU0d
-
+[^4_10]: <https://www.linkedin.com/posts/jlldavies_claude-dropped-co-work-for-windows-today-activity-7427674832504274944-uU0d>
 
 ---
 
@@ -173,7 +165,6 @@ You’re on a locked‑down, IT-managed Windows box, so you almost certainly can
 - Cowork/Dispatch on Windows expects to be installed and run under an account with local admin at install time; standard users often hit missing permissions, drivers, and update problems afterward.[^5_1][^5_2]
 - On tightly managed organizational machines, group policy may forbid granting your everyday profile those admin rights long‑term, and may also block background network traffic or file access Claude wants.[^5_3][^5_1]
 
-
 ## Concrete ask you can send to IT
 
 Something like this (short and non-scary):
@@ -181,6 +172,7 @@ Something like this (short and non-scary):
 > “For a limited pilot, I need to run Anthropic’s Claude Code / Cowork desktop app to assist with research and scripting. It requires local admin at install time.
 >
 > Could you either:
+>
 > 1) Temporarily grant my profile local admin so you can install Claude Desktop with Cowork and required permissions, then remove admin again after install; or
 > 2) Provision a small Windows VM or spare workstation where I have local admin so I can install and test Claude Desktop there instead of on my main work machine.
 >
@@ -195,16 +187,15 @@ That frames it as a controlled pilot on non‑sensitive data and gives them two 
 
 <div align="center">⁂</div>
 
-[^5_1]: https://www.reddit.com/r/ClaudeAI/comments/1reqs5g/installing_claude_on_windows_requires_admin_creds/
+[^5_1]: <https://www.reddit.com/r/ClaudeAI/comments/1reqs5g/installing_claude_on_windows_requires_admin_creds/>
 
-[^5_2]: https://github.com/anthropics/claude-code/issues/25055
+[^5_2]: <https://github.com/anthropics/claude-code/issues/25055>
 
-[^5_3]: https://code.claude.com/docs/en/desktop
+[^5_3]: <https://code.claude.com/docs/en/desktop>
 
-[^5_4]: https://support.claude.com/en/articles/13345190-get-started-with-cowork
+[^5_4]: <https://support.claude.com/en/articles/13345190-get-started-with-cowork>
 
-[^5_5]: https://www.claudelog.com/troubleshooting/
-
+[^5_5]: <https://www.claudelog.com/troubleshooting/>
 
 ---
 
@@ -217,13 +208,11 @@ A separate VM or disk is exactly the right pattern here: it gives you an admin-c
 - VMs isolate apps and network access, so if an AI agent or browser plugin misbehaves, it’s contained inside that guest OS, not your full IDPTV workstation or network shares.[^6_3]
 - State and higher-ed guidance increasingly recommends segregating AI workloads—often via dedicated VMs or VDI—for exactly this reason: clearer governance, easier monitoring, and simpler off-switch if something goes sideways.[^6_2][^6_1]
 
-
 ## What to ask IT for, concretely
 
 - A Windows 11 VM (or spare physical “lab” PC) joined to the same domain but flagged for AI/tooling experiments, with your account having local admin inside that VM.
 - Enough resources for Cowork/Dispatch and a browser: at least 4 cores and 16 GB RAM if possible, so long-running agent tasks don’t choke while you’re remote-controlling them.[^6_4][^6_5]
 - A separate virtual disk or drive letter inside the VM where project files live; you can keep anything sensitive on your main profile and only copy in what’s allowed to touch external AI services.[^6_3]
-
 
 ## How you’d actually use it
 
@@ -235,43 +224,42 @@ If you paste your IT request draft here, I can tighten it into a one-paragraph, 
 
 <div align="center">⁂</div>
 
-[^6_1]: https://coe.gsa.gov/coe/ai-guide-for-government/print-all/index.html
+[^6_1]: <https://coe.gsa.gov/coe/ai-guide-for-government/print-all/index.html>
 
-[^6_2]: https://www.elastic.co/blog/us-state-government-ai-agents
+[^6_2]: <https://www.elastic.co/blog/us-state-government-ai-agents>
 
-[^6_3]: https://v2cloud.com/blog/why-vms-are-the-ideal-environment-for-your-ai-agents
+[^6_3]: <https://v2cloud.com/blog/why-vms-are-the-ideal-environment-for-your-ai-agents>
 
-[^6_4]: https://www.reddit.com/r/ClaudeCode/comments/1qc6c84/what_is_the_best_setup_for_claude_code_in_vm_for/
+[^6_4]: <https://www.reddit.com/r/ClaudeCode/comments/1qc6c84/what_is_the_best_setup_for_claude_code_in_vm_for/>
 
-[^6_5]: https://claude.ai/public/artifacts/03a4aa0c-67b2-427f-838e-63770900bf1d
+[^6_5]: <https://claude.ai/public/artifacts/03a4aa0c-67b2-427f-838e-63770900bf1d>
 
-[^6_6]: https://www.veeam.com/blog/government-ai-data-protection.html
+[^6_6]: <https://www.veeam.com/blog/government-ai-data-protection.html>
 
-[^6_7]: https://info.microsoft.com/rs/157-GQE-382/images/EN-CNTNT-eBook-TheStateandLocalGovernmentAIRoadmap.pdf?version=0
+[^6_7]: <https://info.microsoft.com/rs/157-GQE-382/images/EN-CNTNT-eBook-TheStateandLocalGovernmentAIRoadmap.pdf?version=0>
 
-[^6_8]: https://cloud.google.com/blog/products/identity-security/how-confidential-accelerators-can-boost-ai-workload-security
+[^6_8]: <https://cloud.google.com/blog/products/identity-security/how-confidential-accelerators-can-boost-ai-workload-security>
 
-[^6_9]: https://ai.ncsu.edu/ai-for-staff-and-business-use/
+[^6_9]: <https://ai.ncsu.edu/ai-for-staff-and-business-use/>
 
-[^6_10]: https://tldrsec.com/p/tldr-sec-271
-
+[^6_10]: <https://tldrsec.com/p/tldr-sec-271>
 
 ---
 
-# The IDAHO-VAULT is currently in an active but volatile state of deployment. While the core infrastructure is tethered to the Google Cloud Platform, recent logs indicate significant friction in the automation and external integration layers.
+# The IDAHO-VAULT is currently in an active but volatile state of deployment. While the core infrastructure is tethered to the Google Cloud Platform, recent logs indicate significant friction in the automation and external integration layers
 
 Current Status: ACTIVE (Degraded)
 The vault is anchored to the GCP project idaho-vault and is being managed as a shared ledger of canonical knowledge via Obsidian.md and GitHub.
 Deployment Components
 
-* Canonical Source: The loganfinney27/IDAHO-VAULT GitHub repository remains the primary source of truth.
-* Infrastructure: Hosted on Google Cloud Platform; recent configurations were updated via Cloud Shell (April 2, 2026).
-* Coordination: Development has shifted toward unifying coordination tracks into a stable DOCKET, effectively archiving previous "Chorus" handoff snapshots.
+- Canonical Source: The loganfinney27/IDAHO-VAULT GitHub repository remains the primary source of truth.
+- Infrastructure: Hosted on Google Cloud Platform; recent configurations were updated via Cloud Shell (April 2, 2026).
+- Coordination: Development has shifted toward unifying coordination tracks into a stable DOCKET, effectively archiving previous "Chorus" handoff snapshots.
 Critical Blockers \& Failures
 As of early April 2026, several technical hurdles are preventing a "Green" status:
-* Workflow Failures: Frequent errors in GitHub Actions, specifically regarding the 1Password Secret Injection templates.
-* API Connectivity: The Bill Tracker API is currently returning a 403 FORBIDDEN error, severing the vault's link to legislative data.
-* Identity Sync: The Identity Sync protocol remains unverified, creating a gap in the vault's personal identity authentication layer.
+- Workflow Failures: Frequent errors in GitHub Actions, specifically regarding the 1Password Secret Injection templates.
+- API Connectivity: The Bill Tracker API is currently returning a 403 FORBIDDEN error, severing the vault's link to legislative data.
+- Identity Sync: The Identity Sync protocol remains unverified, creating a gap in the vault's personal identity authentication layer.
 Recent Activity
 The most recent push involved a transition to a more stable coordination framework (The DOCKET) and an integration of Obsidian Sync to maintain cross-device consistency for the Obsidian-based knowledge base.
 -GEMINI
@@ -282,7 +270,6 @@ Understood: IDAHO-VAULT is “up but limping,” and your own status note from G
 
 - The **source of truth** (Obsidian vault + `loganfinney27/IDAHO-VAULT` on GitHub) is intact, so knowledge capture and manual editing are safe even while automation is degraded.
 - The **GCP-hosted automation layer**—GitHub Actions, 1Password templates, Bill Tracker API calls, identity sync—is where the system is currently failing and needs staged remediation.
-
 
 ### Suggested next moves (very small steps)
 
@@ -297,26 +284,25 @@ If you paste a failing GitHub Actions run or the Bill Tracker request/response (
 
 <div align="center">⁂</div>
 
-[^7_1]: https://fastdemocracy.com/bill-search/id/2026/bills/IDB00009218/?report-bill-view=1
+[^7_1]: <https://fastdemocracy.com/bill-search/id/2026/bills/IDB00009218/?report-bill-view=1>
 
-[^7_2]: https://pkg.go.dev/github.com/iden3/vault-plugin-secrets-iden3
+[^7_2]: <https://pkg.go.dev/github.com/iden3/vault-plugin-secrets-iden3>
 
-[^7_3]: https://www.reddit.com/r/ReverseEngineering/comments/5lxz6n/github_ida_fli***REMOVED***database/
+[^7_3]: <https://www.reddit.com/r/ReverseEngineering/comments/5lxz6n/github_ida_flirt_database/>
 
-[^7_4]: https://github.com/RandomiaGaming/Project-Vault
+[^7_4]: <https://github.com/RandomiaGaming/Project-Vault>
 
-[^7_5]: https://evanli.github.io/Github-Ranking/Top100/Go.html
+[^7_5]: <https://evanli.github.io/Github-Ranking/Top100/Go.html>
 
-[^7_6]: https://github.com/personal-vault/pvp
+[^7_6]: <https://github.com/personal-vault/pvp>
 
-[^7_7]: https://fastdemocracy.com/bill-search/id/2024/bills/IDB00007005/
+[^7_7]: <https://fastdemocracy.com/bill-search/id/2024/bills/IDB00007005/>
 
-[^7_8]: https://www.pacificorp.com/content/dam/pcorp/documents/en/pacificorp/energy/hydro/stairs/P-597_StairsJointApplication_CoverLetter.pdf
+[^7_8]: <https://www.pacificorp.com/content/dam/pcorp/documents/en/pacificorp/energy/hydro/stairs/P-597_StairsJointApplication_CoverLetter.pdf>
 
-[^7_9]: https://history.idaho.gov/archives/
+[^7_9]: <https://history.idaho.gov/archives/>
 
-[^7_10]: https://archive.org/stream/chroniclesofokla2719okla/chroniclesofokla2719okla_djvu.txt
-
+[^7_10]: <https://archive.org/stream/chroniclesofokla2719okla/chroniclesofokla2719okla_djvu.txt>
 
 ---
 
@@ -334,7 +320,6 @@ IDAHO‑VAULT is **ACTIVE (Degraded)**: core content and repo infrastructure are
 - **Sync:** Obsidian Sync is now wired in, so cross‑device vault consistency is maintained as long as Git pushes succeed.
 - **Coordination:** The new **DOCKET** track is in effect; earlier “Chorus” handoff snapshots are effectively archived, simplifying coordination history.
 
-
 ## Infrastructure \& automation
 
 - **Cloud anchor:** Project is pinned to GCP project `idaho-vault`, with recent configuration changes made via Cloud Shell on April 2, 2026.
@@ -342,12 +327,10 @@ IDAHO‑VAULT is **ACTIVE (Degraded)**: core content and repo infrastructure are
 - **External APIs:** The Bill Tracker API is returning 403 FORBIDDEN, so automated ingestion of legislative data into the vault is currently offline.
 - **Identity Sync:** The identity/auth sync protocol is defined but **not yet verified**, leaving the personal identity layer in an experimental state.
 
-
 ## Coordination framework
 
 - **DOCKET:** Acts as the active coordination spine—tracking work, incidents, and decisions—while previous “Chorus” experiments are treated as historical artifacts.
 - **Operational mode:** The system is effectively in “content-first, automation‑second” mode: humans can read/write canonical knowledge, but should treat external integrations as unreliable until remediated.
-
 
 ## Recommended immediate actions
 
@@ -368,18 +351,15 @@ Here are concrete, real‑world Dispatch “usefuls” people are already runnin
 - Parallel desktop tasks from phone: power users queue multiple jobs (research, document building, searches) from their phone while away from their computer, letting each run in its own sandboxed Cowork session.[^9_2][^9_3]
 - “Prep work before you sit down”: using Dispatch on the commute to have Claude summarize unread emails, sketch a design doc, outline tests, and pull edge cases so that when you open the laptop, the grunt work is done.[^9_4]
 
-
 ## Automation / maker uses
 
 - On‑the‑fly website building: one user snaps photos at a café, sends them to their Claude Code setup via Dispatch, and has it generate and deploy a simple website via GitHub + Vercel in minutes.[^9_5]
 - Multi‑task research factory: some users run deep research, drafting, and outline refinement as separate tasks from a single Dispatch thread, checking and redirecting each one while they’re away from the desk.[^9_3][^9_2]
 
-
 ## Journalism‑adjacent / reporting patterns
 
 - Reporting assistant skill + Dispatch: guides for reporters describe skills where Claude reads background docs, proposes interview questions, finds gaps, and helps assemble publication packages (social posts, alerts, etc.); Dispatch then lets you trigger those skills while you’re in the field.[^9_6][^9_7]
 - Background task while on errands: one writer describes kicking off a long‑running background task (e.g., doc analysis) with Dispatch before leaving, then returning to a synthesized brief and notes instead of raw material.[^9_8]
-
 
 ## Idaho‑vault‑flavored ideas for you
 
@@ -391,26 +371,25 @@ If you tell me one specific recurring task in your week (e.g., “Monday bill ro
 
 <div align="center">⁂</div>
 
-[^9_1]: https://techysurgeon.substack.com/p/the-6-am-dispatch-how-i-use-claude
+[^9_1]: <https://techysurgeon.substack.com/p/the-6-am-dispatch-how-i-use-claude>
 
-[^9_2]: https://www.youtube.com/watch?v=mnsDx7HDwls
+[^9_2]: <https://www.youtube.com/watch?v=mnsDx7HDwls>
 
-[^9_3]: https://www.productcompass.pm/p/claude-dispatch-guide
+[^9_3]: <https://www.productcompass.pm/p/claude-dispatch-guide>
 
-[^9_4]: https://www.junia.ai/blog/claude-dispatch-explained
+[^9_4]: <https://www.junia.ai/blog/claude-dispatch-explained>
 
-[^9_5]: https://www.reddit.com/r/ClaudeAI/comments/1s2fa6s/personalprivate_use_cases_for_dispatch_and/
+[^9_5]: <https://www.reddit.com/r/ClaudeAI/comments/1s2fa6s/personalprivate_use_cases_for_dispatch_and/>
 
-[^9_6]: https://mcpmarket.com/tools/skills/investigative-journalism-researcher
+[^9_6]: <https://mcpmarket.com/tools/skills/investigative-journalism-researcher>
 
-[^9_7]: https://fdaudens.substack.com/p/how-to-use-ai-as-a-reporting-assistant
+[^9_7]: <https://fdaudens.substack.com/p/how-to-use-ai-as-a-reporting-assistant>
 
-[^9_8]: https://engincanveske.substack.com/p/i-used-claude-dispatch-to-run-a-background
+[^9_8]: <https://engincanveske.substack.com/p/i-used-claude-dispatch-to-run-a-background>
 
-[^9_9]: https://www.reddit.com/r/claude/comments/1rkff4n/whats_the_most_impressive_real_world_task_youve/
+[^9_9]: <https://www.reddit.com/r/claude/comments/1rkff4n/whats_the_most_impressive_real_world_task_youve/>
 
-[^9_10]: https://www.oneusefulthing.org/p/claude-dispatch-and-the-power-of
-
+[^9_10]: <https://www.oneusefulthing.org/p/claude-dispatch-and-the-power-of>
 
 ---
 
@@ -423,7 +402,6 @@ Yes—Dispatch is explicitly a **Cowork** feature, not a standalone thing.
 - Anthropic describes it as “Claude Cowork Dispatch,” a feature inside Cowork that gives you one continuous conversation across phone and desktop.[^10_1][^10_2]
 - You enable it from the Cowork section in Claude Desktop, then link your phone via the QR code; the desktop Cowork session does the work, your phone just sends tasks and reads results.[^10_3][^10_4][^10_1]
 
-
 ## What depends on Cowork
 
 - Dispatch relies on whatever Cowork is configured to use: your local folders, connectors (Slack, Gmail, Drive, etc.), and computer-access permissions on the desktop side.[^10_5][^10_2][^10_6]
@@ -432,26 +410,25 @@ Yes—Dispatch is explicitly a **Cowork** feature, not a standalone thing.
 
 <div align="center">⁂</div>
 
-[^10_1]: https://support.claude.com/en/articles/13947068-assign-tasks-to-claude-from-anywhere-in-cowork
+[^10_1]: <https://support.claude.com/en/articles/13947068-assign-tasks-to-claude-from-anywhere-in-cowork>
 
-[^10_2]: https://www.i-scoop.eu/claude-cowork-dispatch/
+[^10_2]: <https://www.i-scoop.eu/claude-cowork-dispatch/>
 
-[^10_3]: https://www.tomsguide.com/ai/i-sent-claude-a-task-from-my-phone-and-it-finished-it-on-my-laptop-without-me-touching-a-thing
+[^10_3]: <https://www.tomsguide.com/ai/i-sent-claude-a-task-from-my-phone-and-it-finished-it-on-my-laptop-without-me-touching-a-thing>
 
-[^10_4]: https://pasqualepillitteri.it/en/news/418/claude-cowork-dispatch-guide
+[^10_4]: <https://pasqualepillitteri.it/en/news/418/claude-cowork-dispatch-guide>
 
-[^10_5]: https://techysurgeon.substack.com/p/the-6-am-dispatch-how-i-use-claude
+[^10_5]: <https://techysurgeon.substack.com/p/the-6-am-dispatch-how-i-use-claude>
 
-[^10_6]: https://www.youtube.com/watch?v=blBrZw237Yw
+[^10_6]: <https://www.youtube.com/watch?v=blBrZw237Yw>
 
-[^10_7]: https://www.reddit.com/r/singularity/comments/1s1wnys/anthropic_announces_dispatch_control_your_claude/
+[^10_7]: <https://www.reddit.com/r/singularity/comments/1s1wnys/anthropic_announces_dispatch_control_your_claude/>
 
-[^10_8]: https://www.youtube.com/watch?v=8LNZqLaXEGM
+[^10_8]: <https://www.youtube.com/watch?v=8LNZqLaXEGM>
 
-[^10_9]: https://www.forbes.com/sites/ronschmelzer/2026/03/20/claude-dispatch-lets-you-control-claude-cowork-with-your-phone/
+[^10_9]: <https://www.forbes.com/sites/ronschmelzer/2026/03/20/claude-dispatch-lets-you-control-claude-cowork-with-your-phone/>
 
-[^10_10]: https://www.youtube.com/watch?v=v2jNcWGvyFw
-
+[^10_10]: <https://www.youtube.com/watch?v=v2jNcWGvyFw>
 
 ---
 
@@ -464,44 +441,41 @@ On Windows right now, Cowork effectively needs admin-level installation; there i
 - The Windows installer prompts for admin credentials and tends to register the app under the elevating admin account, not the standard user who will actually run Cowork.[^11_1][^11_2]
 - People who tried to install as an admin and then use Cowork from a separate non‑admin user report that Cowork either will not start or constantly claims it needs to “upgrade” again.[^11_3][^11_1]
 
-
 ## Workable pattern (if IT cooperates)
 
 - One workaround admins use is: temporarily grant the target user local admin, log in as that user, install Claude Desktop (with Cowork), then remove admin rights again; this installs the app into that user profile while satisfying the installer’s admin requirement.[^11_1]
 - Some admins also flip the Windows “AllowAllTrustedApps” registry setting to permit the MSIX install, then flip it back after Claude is installed, which is another way of making Cowork usable on the box while keeping the system locked down afterward.[^11_4]
 
-
 ## What you can realistically ask for
 
 - For your `loganf` account:
-    - A time‑boxed elevation to local admin so Claude Desktop with Cowork can be installed under your user and then de‑elevated.
-    - Or, more cleanly, a separate VM or lab machine where your account is local admin and Cowork/Dispatch live there, which avoids fighting per‑user vs. admin-account install quirks on your main IDPTV profile.[^11_5][^11_1]
+  - A time‑boxed elevation to local admin so Claude Desktop with Cowork can be installed under your user and then de‑elevated.
+  - Or, more cleanly, a separate VM or lab machine where your account is local admin and Cowork/Dispatch live there, which avoids fighting per‑user vs. admin-account install quirks on your main IDPTV profile.[^11_5][^11_1]
 
 If you tell me which option IT is most open to (temporary elevation vs. VM), I can give you a two‑sentence request tailored to that.
 <span style="display:none">[^11_10][^11_6][^11_7][^11_8][^11_9]</span>
 
 <div align="center">⁂</div>
 
-[^11_1]: https://www.reddit.com/r/ClaudeAI/comments/1reqs5g/installing_claude_on_windows_requires_admin_creds/
+[^11_1]: <https://www.reddit.com/r/ClaudeAI/comments/1reqs5g/installing_claude_on_windows_requires_admin_creds/>
 
-[^11_2]: https://github.com/anthropics/claude-code/issues/25055
+[^11_2]: <https://github.com/anthropics/claude-code/issues/25055>
 
-[^11_3]: https://www.facebook.com/groups/claudeaicommunity/posts/1234186872081811/
+[^11_3]: <https://www.facebook.com/groups/claudeaicommunity/posts/1234186872081811/>
 
-[^11_4]: https://www.linkedin.com/posts/jlldavies_claude-dropped-co-work-for-windows-today-activity-7427674832504274944-uU0d
+[^11_4]: <https://www.linkedin.com/posts/jlldavies_claude-dropped-co-work-for-windows-today-activity-7427674832504274944-uU0d>
 
-[^11_5]: https://code.claude.com/docs/en/desktop
+[^11_5]: <https://code.claude.com/docs/en/desktop>
 
-[^11_6]: https://support.claude.com/en/articles/13345190-get-started-with-cowork
+[^11_6]: <https://support.claude.com/en/articles/13345190-get-started-with-cowork>
 
-[^11_7]: https://www.youtube.com/watch?v=xEoVCx9CmxQ
+[^11_7]: <https://www.youtube.com/watch?v=xEoVCx9CmxQ>
 
-[^11_8]: https://www.youtube.com/watch?v=vRCtqT60hAc
+[^11_8]: <https://www.youtube.com/watch?v=vRCtqT60hAc>
 
-[^11_9]: https://support.claude.com/en/articles/14128542-let-claude-use-your-computer-in-cowork
+[^11_9]: <https://support.claude.com/en/articles/14128542-let-claude-use-your-computer-in-cowork>
 
-[^11_10]: https://code.claude.com/docs/en/permissions
-
+[^11_10]: <https://code.claude.com/docs/en/permissions>
 
 ---
 

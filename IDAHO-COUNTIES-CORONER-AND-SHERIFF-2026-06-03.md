@@ -97,7 +97,7 @@ Two clauses make the difference matter:
   deputies — below.)*
 
 | Idaho county office | Basis | Filled by |
-|---|---|---|
+| --- | --- | --- |
 | Commissioners (3) · **Sheriff** · Assessor · **Coroner** · Treasurer *(ex off. **public administrator** — §6)* · Clerk of District Court *(ex off. auditor/recorder)* | **Constitutional** — Art XVIII §6 | **Elected** |
 | Treasurer's *ex officio* **tax-collector** role | **Statutory** — §6 leaves tax collection to *"the officer… designated by law"*; I.C. § 34-620 / § 31-2001 make the treasurer ex off. tax collector | (the elected treasurer) |
 | Prosecuting attorney | **Constitutional** — Art V §18 (term/quals) | **Elected** |
@@ -270,4 +270,8 @@ Execute; do not reign.**
 - **Status:** active
 - **Authority:** LOGAN
 
-###### [["The world is quiet here."]]
+---
+
+```
+The world is quiet here．Esto Perpetua!
+```

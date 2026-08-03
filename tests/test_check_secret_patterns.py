@@ -11,6 +11,7 @@ def _load_secret_checker():
     project_root = Path(__file__).resolve().parents[1]
     script_path = project_root / ".github" / "scripts" / "check_secret_patterns.py"
     spec = importlib.util.spec_from_file_location("secret_checker_test_module", script_path)
+    assert spec is not None
     module = importlib.util.module_from_spec(spec)
     assert spec.loader is not None
     sys.modules[spec.name] = module
@@ -121,6 +122,38 @@ class SecretCheckerTest(unittest.TestCase):
             ".codex/auth (2).json.home.abcdef123456"
         )
         self.assertIn(".codex/auth.json", variants)
+
+    def test_run_git_fails_closed_when_git_missing(self) -> None:
+        with unittest.mock.patch.object(
+            secret_checker.subprocess, "run", side_effect=FileNotFoundError("git")
+        ):
+            with self.assertRaises(RuntimeError) as exc:
+                secret_checker.run_git(["diff"])
+        self.assertIn("could not run", str(exc.exception))
+
+    def test_staged_file_bytes_fails_closed_on_timeout(self) -> None:
+        with unittest.mock.patch.object(
+            secret_checker.subprocess,
+            "run",
+            side_effect=secret_checker.subprocess.TimeoutExpired(cmd="git show", timeout=30),
+        ):
+            with self.assertRaises(RuntimeError) as exc:
+                secret_checker.staged_file_bytes("some/file.txt")
+        self.assertIn("timed out", str(exc.exception))
+
+    def test_main_fails_closed_when_git_missing(self) -> None:
+        import io
+        from contextlib import redirect_stderr
+
+        with unittest.mock.patch.object(
+            secret_checker.subprocess, "run", side_effect=FileNotFoundError("git")
+        ), unittest.mock.patch.object(
+            secret_checker.sys, "argv", ["check_secret_patterns.py", "--staged"]
+        ), redirect_stderr(io.StringIO()) as captured_stderr:
+            status = secret_checker.main()
+
+        self.assertEqual(status, 1)
+        self.assertIn("could not run", captured_stderr.getvalue())
 
 if __name__ == "__main__":
     unittest.main()

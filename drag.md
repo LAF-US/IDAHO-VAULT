@@ -4,4 +4,4 @@ related:
 - gender identity
 authority: LOGAN
 ---
-LGBTQ+ pride performances around gender identity 
+LGBTQ+ pride performances around gender identity

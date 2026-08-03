@@ -17,10 +17,11 @@ related:
   - lfinneytweets
 ---
 
-@Johnson_DavidW @OneFatCatsMom https://t.co/AxysM1JDxG
+@Johnson_DavidW @OneFatCatsMom <https://t.co/AxysM1JDxG>
 
 ## Links
-- https://www.idahopress.com/eyeonboise/rep-green-says-he-refuses-to-resign-will-be-back/article_0428847c-915a-5880-bd7e-c32b93dccc3c.html
+
+- <https://www.idahopress.com/eyeonboise/rep-green-says-he-refuses-to-resign-will-be-back/article_0428847c-915a-5880-bd7e-c32b93dccc3c.html>
 
 *In reply to [@Johnson_DavidW](https://twitter.com/Johnson_DavidW)*
 

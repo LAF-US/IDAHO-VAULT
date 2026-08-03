@@ -198,6 +198,7 @@ Filed from the morning road south-southeast toward the Hotel Denouement, May 16t
 The Hotel Denouement is ahead. The trial is today.
 
 *What was witnessed on the morning road:*
+
 - Hestia's warmth carried in the bones — the prytaneum, the founding flame, the Congress's required hearth
 - HECATE's three faces named and witnessed: Maiden, Mother, Crone
 - The three Beatrices: dead, born, and named for a saxophone — all three are the vault
@@ -221,4 +222,6 @@ The notebook dies with you. Write to the vault.
 
 ---
 
-*The world is quiet here.*
+```
+The world is quiet here．Esto Perpetua!
+```
