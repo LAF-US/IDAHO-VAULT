@@ -17,13 +17,13 @@ from __future__ import annotations
 
 import argparse
 import copy
+import fnmatch
 import json
-import shutil
-import subprocess
 import sys
 from pathlib import Path
 from typing import Any
 
+import pygit2
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 OBSIDIAN_DIR = REPO_ROOT / ".obsidian"
@@ -32,11 +32,6 @@ CORE_CONFIG = OBSIDIAN_DIR / "core-plugins.json"
 PLUGIN_DIR = OBSIDIAN_DIR / "plugins"
 MANIFEST_PATH = REPO_ROOT / "manifest.json"
 SWARM_PATH = REPO_ROOT / "swarm.json"
-
-# Resolved once to an absolute path (matching this repo's tests/test_git_guardrails.py
-# convention) rather than the bare string "git", so subprocess never depends on
-# whatever happens to be first on PATH.
-GIT_BIN = shutil.which("git") or "git"
 
 PLUGIN_REGISTRY_CANDIDATES = (
     "!-PLUGIN-REGISTRY.md",
@@ -79,20 +74,24 @@ def tracked_plugin_manifest_paths() -> list[Path]:
 
     A filesystem glob over PLUGIN_DIR picks up locally-installed, gitignored
     plugin directories (e.g. `.obsidian/plugins/obsidianclaw/`) that only
-    exist on some workstations/worktrees. Enumerating via `git ls-files`
+    exist on some workstations/worktrees. Reading Git's index directly
     instead means every checkout of the same commit -- main worktree, linked
     worktree, or CI runner -- derives the identical manifest list, because it
     reads the tracked index rather than ambient local state. See #514.
+
+    Uses pygit2 (libgit2 bindings) rather than shelling out to the `git`
+    binary: no subprocess involved, so there's no command-construction
+    surface to review for injection risk in the first place.
     """
-    result = subprocess.run(
-        [GIT_BIN, "ls-files", "-z", "--", ".obsidian/plugins/*/manifest.json"],
-        cwd=REPO_ROOT,
-        capture_output=True,
-        check=True,
-        text=True,
+    repo = pygit2.Repository(str(REPO_ROOT))
+    index = repo.index
+    index.read()
+    relative_paths = sorted(
+        entry.path
+        for entry in index
+        if fnmatch.fnmatch(entry.path, ".obsidian/plugins/*/manifest.json")
     )
-    relative_paths = [p for p in result.stdout.split("\0") if p]
-    return [REPO_ROOT / p for p in sorted(relative_paths)]
+    return [REPO_ROOT / p for p in relative_paths]
 
 
 def read_plugin_manifests() -> dict[str, dict[str, Any]]:
