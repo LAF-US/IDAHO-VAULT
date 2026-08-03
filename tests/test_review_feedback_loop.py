@@ -250,12 +250,11 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
                     )
         # The AUTO cell above is reached only via an affirmative `—/—` verdict. The
         # converse — an unmarked PR with no verdict HOLDS rather than being mistaken for
-        # clear (the positive marker) — is pinned by
-        # test_unclassified_pr_without_verdict_never_arms.
+        # clear — is pinned by test_unclassified_pr_without_verdict_never_arms.
 
     def test_low_risk_pr_holds_and_never_auto_merges(self) -> None:
         # risk/low is a sorter that FIRED (machine-doc paths) — it HOLDS
-        # for review, it does not arm. Only the positive clear marker auto-merges. A low-risk
+        # for review, it does not arm. Only an affirmative `—/—` verdict auto-merges. A low-risk
         # PR past grace with no blocking feedback stays ineligible and carries review/pending.
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
 
