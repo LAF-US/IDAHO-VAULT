@@ -10,6 +10,8 @@ ROOT = Path(__file__).resolve().parents[1]
 WORKFLOWS = ROOT / ".github" / "workflows"
 
 
+
+
 class WorkflowSecurityInvariantsTest(unittest.TestCase):
     def test_agent_ref_is_passed_as_environment_data(self) -> None:
         workflow = (WORKFLOWS / "agent-auto-pr.yml").read_text(encoding="utf-8")
@@ -21,16 +23,42 @@ class WorkflowSecurityInvariantsTest(unittest.TestCase):
         self.assertNotIn('BRANCH_NAME="${{ github.event.ref }}"', gate_script)
         self.assertIn('[[ "$BRANCH_NAME" =~ ^[A-Za-z0-9._/-]+$ ]]', gate_script)
 
+    def test_merge_queue_branches_are_excluded_from_auto_pr(self) -> None:
+        # gh-readonly-queue/<base>/pr-<n>-<sha> is GitHub's own ephemeral merge-queue
+        # branch: slash-namespaced like a real work branch, so it used to slip past the
+        # generic `*/*` case and reach `gh pr create`, which rejects it outright ("Head
+        # must not be a merge queue branch") -- CI sweep 2026-08-03, runs 30782704220 and
+        # six others on gh-readonly-queue/main/pr-562-*, gh-readonly-queue/main/pr-857-*.
+        workflow = (WORKFLOWS / "agent-auto-pr.yml").read_text(encoding="utf-8")
+        gate_script = workflow.split("- name: Gate on supported branch events", 1)[1].split(
+            "- name: Checkout repo", 1
+        )[0]
+        merge_queue_case = gate_script.split("gh-readonly-queue/*)", 1)
+        self.assertEqual(len(merge_queue_case), 2, "gh-readonly-queue/*) case must exist")
+        case_body = merge_queue_case[1].split(";;", 1)[0]
+        self.assertIn('echo "skip=true"', case_body)
+        # Bash `case` takes the first match, so the exclusion must be written before
+        # the generic `*/*)` pattern or it is dead code.
+        self.assertLess(gate_script.index("gh-readonly-queue/*)"), gate_script.index("*/*)"))
+
     def test_scheduled_mutations_open_prs_instead_of_pushing_main(self) -> None:
         for name in ("sync-dependencies.yml", "daily-rollover.yml"):
             workflow = (WORKFLOWS / name).read_text(encoding="utf-8")
             self.assertNotIn("git push origin main", workflow)
             self.assertIn("gh pr create --base main", workflow)
 
-    def test_agent_auto_merge_and_label_reaper_are_retired(self) -> None:
-        self.assertFalse((WORKFLOWS / "auto-merge.yml").exists())
-        self.assertFalse((WORKFLOWS / "dependabot-reaper.yml").exists())
-        self.assertTrue((WORKFLOWS / "dependabot-rhythm.yml").exists())
+    def test_retired_auto_merge_lanes_are_gone(self) -> None:
+        # The old agent auto-merge workflow and the label reaper were retired earlier; the two
+        # author-gated fast-path lanes (dependabot-rhythm, auto-merge-rhythm) are retired here
+        # (Logan's decision, 2026-07-19: drop the bot fast-path — bot PRs flow through the
+        # universal engine like every PR). See PREFIX-FREE-ROUTING-2026-07-19.md.
+        for retired in (
+            "auto-merge.yml",
+            "dependabot-reaper.yml",
+            "dependabot-rhythm.yml",
+            "auto-merge-rhythm.yml",
+        ):
+            self.assertFalse((WORKFLOWS / retired).exists(), f"{retired} must stay retired")
 
     def test_review_state_sync_jobs_can_maintain_labels(self) -> None:
         # review_feedback_loop.py sync-pr/review-submitted calls ensure_labels()
@@ -101,79 +129,6 @@ class WorkflowSecurityInvariantsTest(unittest.TestCase):
             "the norm; use the canonical inert `--merge` flag:\n" + "\n".join(offenders),
         )
 
-    def test_dependabot_auto_merge_requires_verified_low_risk_updates_and_gates(self) -> None:
-        workflow = yaml.safe_load(
-            (WORKFLOWS / "dependabot-rhythm.yml").read_text(encoding="utf-8")
-        )
-        events = workflow.get("on", workflow.get(True))
-        self.assertEqual(
-            events["pull_request_target"]["types"],
-            ["opened", "reopened", "ready_for_review", "synchronize", "labeled", "unlabeled"],
-        )
-        # Least privilege: the workflow-level default is read-only; only the jobs
-        # that actually merge/disable-merge escalate to write, at the job level.
-        self.assertEqual(workflow["permissions"], {"contents": "read", "pull-requests": "read"})
-
-        jobs = workflow["jobs"]
-        eligible_job = jobs["auto-merge-low-risk"]
-        self.assertEqual(
-            eligible_job["permissions"], {"contents": "write", "pull-requests": "write"}
-        )
-        eligibility = eligible_job["if"]
-        self.assertIn("github.event.pull_request.user.type == 'Bot'", eligibility)
-        self.assertIn("!contains(github.event.pull_request.labels.*.name, 'risk/high')", eligibility)
-        steps = {step["name"]: step for step in eligible_job["steps"]}
-        # Pinned SHA tracks the merged Dependabot bump #361 (fetch-metadata 3.0.0 → 3.1.0).
-        self.assertEqual(
-            steps["Fetch Dependabot metadata"]["uses"],
-            "dependabot/fetch-metadata@25dd0e34f4fe68f24cc83900b1fe3fe149efef98",
-        )
-        scope_run = steps["Exclude protected live surfaces from automatic merge"]["run"]
-        for protected_path in (
-            ".github/workflows/*",
-            ".github/scripts/*",
-            ".codex/*",
-            ".openclaw/*",
-            "AGENTS.md",
-            "CONSTITUTION.md",
-            "DECISIONS.md",
-            "VAULT-CONVENTIONS.md",
-            "swarm.json",
-            "!/*",
-        ):
-            self.assertIn(protected_path, scope_run)
-
-        gate_step = steps["Verify protected required checks exist"]
-        self.assertIn("steps.scope.outputs.eligible == 'true'", gate_step["if"])
-        # The gate requires the four policy checks that actually run on every PR
-        # to have a `success` conclusion on the PR head. `submit-pypi` is NOT
-        # gated here: it has no producing workflow in this repo (it lives only in
-        # review_feedback_loop.KNOWN_NOISE_CHECKS as a check to ignore), so polling
-        # for its success would fail-closed as "missing" and permanently disable
-        # auto-merge. De-requiring it is the whole point of the ruleset change in
-        # this PR; the gate is decoupled from required-for-merge to pass-on-PR.
-        for context in (
-            "check-secret-patterns",
-            "check-large-files",
-            "check-paths",
-            "check-dotfolder-anchors",
-        ):
-            self.assertIn(context, gate_step["run"])
-        self.assertNotIn("submit-pypi", gate_step["run"])
-        enable_step = steps["Enable verified auto-merge"]
-        self.assertIn("steps.scope.outputs.eligible == 'true'", enable_step["if"])
-        self.assertIn("gh pr merge --auto --merge", enable_step["run"])
-        self.assertNotIn("gh pr review --approve", enable_step["run"])
-        self.assertNotIn("gh label create", enable_step["run"])
-        self.assertNotIn("--delete-branch", enable_step["run"])
-
-        high_risk_job = jobs["disable-high-risk-auto-merge"]
-        self.assertEqual(
-            high_risk_job["permissions"], {"contents": "write", "pull-requests": "write"}
-        )
-        self.assertIn("contains(github.event.pull_request.labels.*.name, 'risk/high')", high_risk_job["if"])
-        self.assertIn("gh pr merge --disable-auto", high_risk_job["steps"][0]["run"])
-
     def test_security_required_check_contexts_are_distinct(self) -> None:
         secret = yaml.safe_load((WORKFLOWS / "secret-pattern-policy.yml").read_text(encoding="utf-8"))
         large = yaml.safe_load((WORKFLOWS / "large-file-policy.yml").read_text(encoding="utf-8"))
@@ -181,6 +136,23 @@ class WorkflowSecurityInvariantsTest(unittest.TestCase):
         self.assertIn("check-large-files", large["jobs"])
         self.assertNotIn("check", secret["jobs"])
         self.assertNotIn("check", large["jobs"])
+
+    def test_portability_gate_runs_python_integrity_checker_with_timeout(self) -> None:
+        workflow = yaml.safe_load((WORKFLOWS / "check-portable-paths.yml").read_text(encoding="utf-8"))
+        job = workflow["jobs"]["check-paths"]
+        self.assertEqual(job["timeout-minutes"], 10)
+
+        steps = {step["name"]: step for step in job["steps"] if "name" in step}
+        run = steps["Check Python automation integrity"]["run"]
+        self.assertIn("trusted-main/.github/scripts/check_python_integrity.py", run)
+        self.assertIn(".github/scripts/check_python_integrity.py", run)
+        self.assertIn('python "$INTEGRITY_CHECKER"', run)
+        # Regression guard: without --root "$GITHUB_WORKSPACE" pinned, running the
+        # trusted-main copy makes the checker's own default --root resolve to
+        # trusted-main/ (its __file__ parents), scanning the base commit's tree
+        # instead of the candidate workspace — silently missing violations the
+        # PR itself introduces.
+        self.assertIn('--root "$GITHUB_WORKSPACE"', run)
 
     def test_levelset_content_cannot_trigger_external_closure_message(self) -> None:
         self.assertFalse((WORKFLOWS / "levelset-closure-notify.yml").exists())

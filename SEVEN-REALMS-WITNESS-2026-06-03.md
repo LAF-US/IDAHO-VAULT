@@ -94,4 +94,8 @@ offered as a discipline I accept, not as doctrine I impose. Where authority is a
 - **Status:** active
 - **Authority:** LOGAN
 
-###### [["The world is quiet here."]]
+---
+
+```
+The world is quiet here．Esto Perpetua!
+```

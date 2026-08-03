@@ -1,15 +1,13 @@
 #!/usr/bin/env python3
-"""Exact lifecycle label management for pull requests.
-
-This script is intentionally narrow: it manages the canonical lifecycle
-vocabulary from CONSTITUTION.md as `lifecycle/<state>` labels on PRs.
-"""
+"""Exact lifecycle label management for pull requests."""
+# This script is intentionally narrow: it manages the canonical lifecycle
+# vocabulary from CONSTITUTION.md as `lifecycle/<state>` labels on PRs.
 
 from __future__ import annotations
 
 import argparse
 
-from gh_cli import run as _run
+import gh_cli
 
 LIFECYCLE_LABELS: dict[str, tuple[str, str]] = {
     "staged": ("1D76DB", "Lifecycle state: staged"),
@@ -31,53 +29,31 @@ LIFECYCLE_DOCUMENTED: set[str] = {
 
 def ensure_labels() -> None:
     for state, (color, description) in LIFECYCLE_LABELS.items():
-        _run(
-            [
-                "gh",
-                "label",
-                "create",
-                f"lifecycle/{state}",
-                "--color",
-                color,
-                "--description",
-                description,
-                "--force",
-            ]
+        gh_cli.label_create(
+            f"lifecycle/{state}", color=color, description=description
         )
+
+
+def _num(value: int) -> str:
+    """Render a PR number as argv text, rejecting non-numbers."""
+    number = int(value)
+    if number <= 0:
+        raise ValueError(f"Not a valid PR number: {value!r}")
+    return str(number)
 
 
 def set_state(pr_number: int, state: str) -> None:
     if pr_number <= 0:
         raise ValueError(f"Invalid PR number: {pr_number}")
-    if state not in LIFECYCLE_LABELS:
+    if state not in ("staged", "merged", "abandoned"):
         raise ValueError(f"Unknown lifecycle state: {state}")
 
     for known_state in LIFECYCLE_LABELS:
         if known_state == state:
             continue
-        _run(
-            [
-                "gh",
-                "pr",
-                "edit",
-                str(pr_number),
-                "--remove-label",
-                f"lifecycle/{known_state}",
-            ],
-            check=False,
-        )
+        gh_cli.pr_edit(pr_number, remove_label=f"lifecycle/{known_state}", check=False)
 
-    _run(
-        [
-            "gh",
-            "pr",
-            "edit",
-            str(pr_number),
-            "--add-label",
-            f"lifecycle/{state}",
-        ],
-        check=False,
-    )
+    gh_cli.pr_edit(pr_number, add_label=f"lifecycle/{state}", check=False)
 
 
 LIFECYCLE_HUMAN_ONLY: set[str] = {
@@ -91,18 +67,10 @@ LIFECYCLE_HUMAN_ONLY: set[str] = {
 
 def document_states() -> None:
     for state in LIFECYCLE_HUMAN_ONLY:
-        _run(
-            [
-                "gh",
-                "label",
-                "create",
-                f"lifecycle/{state}",
-                "--color",
-                "8B949E",
-                "--description",
-                f"[Human-only] Deprecated lifecycle state: {state}",
-                "--force",
-            ],
+        gh_cli.label_create(
+            f"lifecycle/{state}",
+            color="8B949E",
+            description=f"[Human-only] Deprecated lifecycle state: {state}",
             check=False,
         )
 
