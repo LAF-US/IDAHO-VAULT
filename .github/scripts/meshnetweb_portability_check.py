@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Lightweight portability guardrail for core runtime/governance surfaces.
+r"""Lightweight portability guardrail for core runtime/governance surfaces.
 
 Detects hardcoded user paths (Windows, macOS, Linux home directories) in the
 runtime/governance surfaces that have to load identically on any of Logan's
@@ -10,7 +10,7 @@ Coverage is a *sweep*, not a list. It used to name six files, which meant the
 checker could only ever find what someone had already thought to enumerate —
 and it was, in fact, missing live violations sitting at the repository root
 (`final_test_runner.py`, `run_all_tests.py` and their duplicates all begin
-`os.chdir(r"C:\\Users\\loganf\\Documents\\IDAHO-VAULT")`). A guard whose
+`os.chdir(r"C:\Users\loganf\Documents\IDAHO-VAULT")`). A guard whose
 coverage is a hand-written list finds only what its author already knew.
 
 Two scopes, because they warrant different verdicts:
@@ -123,6 +123,7 @@ def findings_for(repo_root: Path, rel_path: str) -> list[str]:
 
 
 def main() -> int:
+    """Scan, report by scope, and return the process exit code."""
     parser = argparse.ArgumentParser(description="MESHNETWEB portability check")
     parser.add_argument(
         "--strict",
