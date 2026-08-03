@@ -438,7 +438,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
 
     def test_restamp_retires_a_superseded_vocabulary_in_passing(self) -> None:
         # What the set below is: seven concrete examples — #854's retired scheme, the
-        # strings that actually went out into the wild.  What it is not: the contract.
+        # strings that actually went out into the wild. What it is not: the contract.
         #
         # Measured, not asserted: with `restamp_risk_pair` reduced to a seven-case lookup
         # table over exactly these strings, every assertion in this test still passes, while
