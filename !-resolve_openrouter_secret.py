@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import argparse
 import shutil
-import subprocess
+import subprocess  # nosec B404 -- see [tool.bandit] note in pyproject.toml
 import sys
 from pathlib import Path
 
@@ -17,12 +17,18 @@ def ensure_op_available() -> None:
 
 
 def ensure_op_signed_in() -> None:
-    result = subprocess.run(
-        ["op", "whoami"],
-        stdout=subprocess.DEVNULL,
-        stderr=subprocess.DEVNULL,
-        check=False,
-    )
+    try:
+        result = subprocess.run(
+            ["op", "whoami"],
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+            check=False,
+            timeout=15,
+        )
+    except subprocess.TimeoutExpired as exc:
+        raise SystemExit("1Password CLI 'op whoami' timed out after 15s.") from exc
+    except OSError as exc:
+        raise SystemExit(f"1Password CLI 'op whoami' could not run: {exc}") from exc
     if result.returncode != 0:
         raise SystemExit(
             "1Password CLI is not signed in. Run 'op signin' or unlock desktop integration.\n"
@@ -32,12 +38,18 @@ def ensure_op_signed_in() -> None:
 
 
 def can_read_secret(secret_ref: str) -> bool:
-    result = subprocess.run(
-        ["op", "read", secret_ref],
-        stdout=subprocess.DEVNULL,
-        stderr=subprocess.DEVNULL,
-        check=False,
-    )
+    try:
+        result = subprocess.run(
+            ["op", "read", secret_ref],
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+            check=False,
+            timeout=15,
+        )
+    except subprocess.TimeoutExpired as exc:
+        raise SystemExit(f"1Password CLI 'op read' timed out after 15s (ref: {secret_ref}).") from exc
+    except OSError as exc:
+        raise SystemExit(f"1Password CLI 'op read' could not run: {exc}") from exc
     return result.returncode == 0
 
 
@@ -87,15 +99,18 @@ def render_op_env_file(op_ref: str) -> str:
 def main() -> int:
     parser = argparse.ArgumentParser(description="Generate a local OpenRouter env file from 1Password refs.")
     parser.add_argument("--vault", default="Vault", help="1Password vault name to search")
-    parser.add_argument("--out-file", default="", help="Destination env file path")
     parser.add_argument("--force", action="store_true", help="Force regeneration even if file exists")
     args = parser.parse_args()
 
-    repo_root = Path(__file__).resolve().parent.parent
-    out_file = Path(args.out_file) if args.out_file else repo_root / ".op" / "openrouter.env"
+    # This script lives at the vault root, so its own parent IS the vault root.
+    # The destination is always here -- no caller has ever needed to redirect
+    # it, so there's no external/argv value reaching open()/write_text() below
+    # for a path-injection query to flag.
+    repo_root = Path(__file__).resolve().parent
+    out_file = repo_root / ".op" / "openrouter.env"
 
     if out_file.exists() and not args.force:
-        with open(out_file) as f:
+        with open(out_file, encoding="utf-8") as f:
             content = f.read()
         if "OPENROUTER_API_KEY=sk-" in content:
             print(f"Env file already exists at {out_file}. Use --force to regenerate.")

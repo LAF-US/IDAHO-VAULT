@@ -5,7 +5,7 @@ from __future__ import annotations
 import argparse
 import os
 import shutil
-import subprocess
+import subprocess  # nosec B404 -- see [tool.bandit] note in pyproject.toml
 import sys
 from dataclasses import dataclass
 from pathlib import Path
@@ -61,13 +61,18 @@ def _format_command(command: list[str]) -> str:
 
 def _run_capture(command: list[str]) -> subprocess.CompletedProcess[str]:
     try:
-        return subprocess.run(command, capture_output=True, text=True, check=False)
+        return subprocess.run(command, capture_output=True, text=True, check=False, timeout=15)
+    except subprocess.TimeoutExpired as exc:
+        raise SparkseedError(f"Command timed out after 15s: '{_format_command(command)}'") from exc
     except OSError as exc:
         raise SparkseedError(f"Failed to start command '{_format_command(command)}': {exc}") from exc
 
 
 def _run_stream(command: list[str], *, env: dict[str, str]) -> subprocess.CompletedProcess[str]:
     try:
+        # One of these commands is `gateway run`, a foreground server meant to
+        # run until stopped; a fixed timeout would kill it outright.
+        # timeout: interactive
         return subprocess.run(command, env=env, check=False)
     except OSError as exc:
         raise SparkseedError(f"Failed to start command '{_format_command(command)}': {exc}") from exc
@@ -98,6 +103,7 @@ def ensure_op_signed_in() -> None:
         command = ["op", "whoami"]
     else:
         command = ["op", "signin"]
+        # timeout: interactive -- may prompt the human for a password/2FA code.
         result = subprocess.run(
             command,
             env=os.environ.copy(),
