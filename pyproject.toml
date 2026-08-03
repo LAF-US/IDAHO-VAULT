@@ -42,10 +42,6 @@ override-dependencies = [
 [tool.crewai]
 type = "crew"
 
-[tool.ruff]
-line-length = 100
-target-version = "py310"
-
 [tool.pytest.ini_options]
 # Make the CI scripts dir an import root so test modules (which load the scripts
 # by file path) can resolve the shared lib (gh_cli, etc.). Production runs the
