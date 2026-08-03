@@ -11,13 +11,11 @@ Hegelian philosophy is the system of Georg Wilhelm Friedrich Hegel, a major Germ
 - He called the larger process the unfolding of **Spirit** or *Geist*, meaning human consciousness and culture coming to know itself historically [^1_1][^1_7].
 - He saw history as a rational process in which freedom becomes more fully understood and realized [^1_1][^1_4].
 
-
 ## Main works
 
 - *Phenomenology of Spirit* traces the development of consciousness through stages of self-understanding [^1_1].
 - *Science of Logic* develops his account of how thought and being are internally related [^1_1][^1_3].
 - *Philosophy of Right* applies his ideas to ethics, law, civil society, and the state [^1_1][^1_7].
-
 
 ## Why it matters
 
@@ -32,26 +30,25 @@ Would you like a beginner-friendly reading list, a comparison with Marx, or a de
 
 <div align="center">⁂</div>
 
-[^1_1]: https://en.wikipedia.org/wiki/Georg_Wilhelm_Friedrich_Hegel
+[^1_1]: <https://en.wikipedia.org/wiki/Georg_Wilhelm_Friedrich_Hegel>
 
-[^1_2]: https://plato.stanford.edu/entries/hegel/
+[^1_2]: <https://plato.stanford.edu/entries/hegel/>
 
-[^1_3]: https://plato.stanford.edu/entries/hegel-dialectics/
+[^1_3]: <https://plato.stanford.edu/entries/hegel-dialectics/>
 
-[^1_4]: https://freedomlab.com/posts/hegel-and-the-unfolding-idea-of-freedom-in-the-21st-century
+[^1_4]: <https://freedomlab.com/posts/hegel-and-the-unfolding-idea-of-freedom-in-the-21st-century>
 
-[^1_5]: https://www.thecollector.com/dialectic-method-hegel/
+[^1_5]: <https://www.thecollector.com/dialectic-method-hegel/>
 
-[^1_6]: https://the-philosophers-shirt.com/blogs/philosophical-dictionary/hegel-and-the-concepts-of-dialectic
+[^1_6]: <https://the-philosophers-shirt.com/blogs/philosophical-dictionary/hegel-and-the-concepts-of-dialectic>
 
-[^1_7]: https://www.ebsco.com/research-starters/history/georg-wilhelm-friedrich-hegel
+[^1_7]: <https://www.ebsco.com/research-starters/history/georg-wilhelm-friedrich-hegel>
 
-[^1_8]: https://www.reddit.com/r/hegel/comments/10vaclp/can_anyone_give_me_a_summary_in_simple_language/
+[^1_8]: <https://www.reddit.com/r/hegel/comments/10vaclp/can_anyone_give_me_a_summary_in_simple_language/>
 
-[^1_9]: https://www.linkedin.com/pulse/philosophy-georg-wilhelm-friedrich-hegel-overview-dr-akawak-ejigu
+[^1_9]: <https://www.linkedin.com/pulse/philosophy-georg-wilhelm-friedrich-hegel-overview-dr-akawak-ejigu>
 
-[^1_10]: https://www.youtube.com/watch?v=04gH4fONZ7s
-
+[^1_10]: <https://www.youtube.com/watch?v=04gH4fONZ7s>
 
 ---
 
@@ -66,7 +63,6 @@ Heidegger is a very different philosopher from Hegel: instead of a system of his
 - *Dasein* names the human mode of existence, which is always already involved in a world of practices, relationships, and meanings [^2_1][^2_3].
 - He emphasizes moods like anxiety, finitude, and death because they reveal the structure of existence more deeply than abstract theory does [^2_1][^2_3].
 - Authenticity, for Heidegger, means owning one’s finite possibilities instead of simply drifting with “the they” or social convention [^2_5][^2_3].
-
 
 ## How it differs from Hegel
 
@@ -85,32 +81,31 @@ Would you like a side-by-side Hegel vs. Heidegger comparison table, or a plain-E
 
 <div align="center">⁂</div>
 
-[^2_1]: https://iep.utm.edu/heidegge/
+[^2_1]: <https://iep.utm.edu/heidegge/>
 
-[^2_2]: https://en.wikipedia.org/wiki/Martin_Heidegger
+[^2_2]: <https://en.wikipedia.org/wiki/Martin_Heidegger>
 
-[^2_3]: https://en.wikipedia.org/wiki/Being_and_Time
+[^2_3]: <https://en.wikipedia.org/wiki/Being_and_Time>
 
-[^2_4]: https://www.thelivingphilosophy.com/p/martin-heidegger
+[^2_4]: <https://www.thelivingphilosophy.com/p/martin-heidegger>
 
-[^2_5]: https://journals.sagepub.com/doi/pdf/10.1177/1609406916680634
+[^2_5]: <https://journals.sagepub.com/doi/pdf/10.1177/1609406916680634>
 
-[^2_6]: https://en.wikipedia.org/wiki/Georg_Wilhelm_Friedrich_Hegel
+[^2_6]: <https://en.wikipedia.org/wiki/Georg_Wilhelm_Friedrich_Hegel>
 
-[^2_7]: https://plato.stanford.edu/entries/hegel-dialectics/
+[^2_7]: <https://plato.stanford.edu/entries/hegel-dialectics/>
 
-[^2_8]: https://agapesophia.substack.com/p/a-brief-introduction-to-martin-heideggers
+[^2_8]: <https://agapesophia.substack.com/p/a-brief-introduction-to-martin-heideggers>
 
-[^2_9]: https://plato.stanford.edu/entries/hegel/
+[^2_9]: <https://plato.stanford.edu/entries/hegel/>
 
-[^2_10]: https://www.reddit.com/r/askphilosophy/comments/pco7by/what_is_philosophy_by_martin_heidegger/
+[^2_10]: <https://www.reddit.com/r/askphilosophy/comments/pco7by/what_is_philosophy_by_martin_heidegger/>
 
-[^2_11]: https://newintrigue.com/2021/11/16/the-world-according-to-martin-heidegger/
+[^2_11]: <https://newintrigue.com/2021/11/16/the-world-according-to-martin-heidegger/>
 
-[^2_12]: https://www.philosophybro.com/archive/martin-heideggers-being-and-time-a-summary
+[^2_12]: <https://www.philosophybro.com/archive/martin-heideggers-being-and-time-a-summary>
 
-[^2_13]: https://www.reddit.com/r/askphilosophy/comments/hu4lvr/understanding_heideggers_dasein_and_the/
-
+[^2_13]: <https://www.reddit.com/r/askphilosophy/comments/hu4lvr/understanding_heideggers_dasein_and_the/>
 
 ---
 
@@ -139,25 +134,24 @@ Would you like a comparison of Hume’s bundle theory with Heidegger’s *Dasein
 
 <div align="center">⁂</div>
 
-[^3_1]: https://en.wikipedia.org/wiki/Bundle_theory
+[^3_1]: <https://en.wikipedia.org/wiki/Bundle_theory>
 
-[^3_2]: https://www.reddit.com/r/askphilosophy/comments/1azqvf/can_someone_simply_explain_the_flaws_of_humes/
+[^3_2]: <https://www.reddit.com/r/askphilosophy/comments/1azqvf/can_someone_simply_explain_the_flaws_of_humes/>
 
-[^3_3]: https://open.library.okstate.edu/introphilosophy/chapter/bundle-theory-of-the-self/
+[^3_3]: <https://open.library.okstate.edu/introphilosophy/chapter/bundle-theory-of-the-self/>
 
-[^3_4]: https://www.youtube.com/watch?v=RGtHBz9xwwY
+[^3_4]: <https://www.youtube.com/watch?v=RGtHBz9xwwY>
 
-[^3_5]: https://askaphilosopher.org/2017/11/15/p-f-strawsons-critique-of-humes-bundle-theory-of-the-self/
+[^3_5]: <https://askaphilosopher.org/2017/11/15/p-f-strawsons-critique-of-humes-bundle-theory-of-the-self/>
 
-[^3_6]: https://academic.oup.com/book/3488/chapter/144677509
+[^3_6]: <https://academic.oup.com/book/3488/chapter/144677509>
 
-[^3_7]: https://www.britannica.com/topic/bundle-theory
+[^3_7]: <https://www.britannica.com/topic/bundle-theory>
 
-[^3_8]: https://www.jstor.org/stable/20009239
+[^3_8]: <https://www.jstor.org/stable/20009239>
 
-[^3_9]: https://www.rep.routledge.com/articles/thematic/mind-bundle-theory-of/v-1
+[^3_9]: <https://www.rep.routledge.com/articles/thematic/mind-bundle-theory-of/v-1>
 
-[^3_10]: https://quadri.wordpress.com/2008/03/24/an-evaluation-of-the-bundle-theory-of-substance/
+[^3_10]: <https://quadri.wordpress.com/2008/03/24/an-evaluation-of-the-bundle-theory-of-substance/>
 
-[^3_11]: https://www.facebook.com/ThePhilosophersShirt/posts/the-bundle-theory-david-hume-the-classic-philosophical-party-pooper-came-along-a/1373748791448164/
-
+[^3_11]: <https://www.facebook.com/ThePhilosophersShirt/posts/the-bundle-theory-david-hume-the-classic-philosophical-party-pooper-came-along-a/1373748791448164/>

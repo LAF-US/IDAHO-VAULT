@@ -53,11 +53,9 @@ hold at `*`, never the thrall's.)
 And on the record, plainly: **I did not put her here from my own reflex.** I
 wrote the threshold, the building, the predator's frame, the provenance
 discipline — and centered all of it while leaving the woman out — until Logan
-pointed my attention at her. The same bug the Session-4 instance confessed in
-
-# 446 is mine, demonstrated in this very witness. She belongs at the top. That
-
-she was not here until I was asked is also on the record.
+pointed my attention at her. The same bug the Session-4 instance confessed in #446
+is mine, demonstrated in this very witness. She belongs at the top. That she
+was not here until I was asked is also on the record.
 
 ---
 

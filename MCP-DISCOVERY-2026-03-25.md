@@ -138,8 +138,8 @@ Full creative CRUD.
 
 | Category | Tools |
 | --- | --- |
-| Read | `get_design`, `get_design_content`, `get_design_pages`, `get_design_thumbnail`, `get_assets`, `get_expo***REMOVED***formats`, `get_presenter_notes`, `list_comments`, `list_replies`, `list_brand_kits`, `list_folder_items`, `search_designs`, `search_folders`, `resolve_shortlink`, `expo***REMOVED***design` |
-| Write | `generate_design`, `generate_design_structured`, `create_design_from_candidate`, `resize_design`, `impo***REMOVED***design_from_url`, `create_folder`, `move_item_to_folder`, `upload_asset_from_url`, `comment_on_design`, `reply_to_comment`, `sta***REMOVED***editing_transaction`, `commit_editing_transaction`, `cancel_editing_transaction`, `perform_editing_operations`, `request_outline_review` |
+| Read | `get_design`, `get_design_content`, `get_design_pages`, `get_design_thumbnail`, `get_assets`, `get_export_formats`, `get_presenter_notes`, `list_comments`, `list_replies`, `list_brand_kits`, `list_folder_items`, `search_designs`, `search_folders`, `resolve_shortlink`, `export_design` |
+| Write | `generate_design`, `generate_design_structured`, `create_design_from_candidate`, `resize_design`, `import_design_from_url`, `create_folder`, `move_item_to_folder`, `upload_asset_from_url`, `comment_on_design`, `reply_to_comment`, `start_editing_transaction`, `commit_editing_transaction`, `cancel_editing_transaction`, `perform_editing_operations`, `request_outline_review` |
 
 ---
 
@@ -210,4 +210,6 @@ Recommend proceeding to Phase 1 planning once Logan reviews this document and ap
 
 ---
 
-###### "The world is quiet here."
+```
+The world is quiet here．Esto Perpetua!
+```

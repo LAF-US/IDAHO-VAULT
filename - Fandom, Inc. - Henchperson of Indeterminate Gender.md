@@ -7,7 +7,7 @@ created: 2026-04-14
 ---
 | “ | *I just think, even in changing context, that marriage is an inherently patriarchal construction that is likely to further the hegemonic juggernaut that's problematizing a lot of genders.* | ” |
 | --- | --- | --- |
-|  | — The Henchperson of Indeterminate Gender, " [The Bad Beginning: Part Two](https://snicket.fandom.com/wiki/The_Bad_Beginning:_Pa***REMOVED***Two "The Bad Beginning: Part Two") " |
+| | — The Henchperson of Indeterminate Gender, " [The Bad Beginning: Part Two](https://snicket.fandom.com/wiki/The_Bad_Beginning:_Part_Two "The Bad Beginning: Part Two") " |
 
 The **Henchperson of Indeterminate Gender**, also known as the " **Enormous Androgynous Person** " and **the one who looked like neither a man nor a woman** in the books, is a sinister androgynous individual.
 
@@ -69,7 +69,7 @@ The Henchperson being insightful.
 
 In the TV series, the Henchperson's narrative role is akin to the books, but they are portrayed rather differently as a character; the Henchperson, often using the alias "Lucafont", is portrayed as affable and far from obviously evil, being one of the only people to speak out against Count Olaf's shaming of the "freaks" at [Caligari Carnival](https://snicket.fandom.com/wiki/Caligari_Carnival "Caligari Carnival"). They aren't shown as particularly enormous in width, though they are taller than the other members of the troupe with the exception of the bald man. Not only do they speak in more than grunts, they often say insightful and thoughtful things which could be considered "deep", leaving many fans to call them in more modern language, "woke". They seem to be interested in social justice, gender studies, and related discussions.
 
-In " [The Reptile Room: Part Two](https://snicket.fandom.com/wiki/The_Reptile_Room:_Pa***REMOVED***Two "The Reptile Room: Part Two")," they take the role of the Hook-Handed Man and disguise themselves as Lucafont to fool Poe into thinking [Monty Montgomery](https://snicket.fandom.com/wiki/Monty_Montgomery "Monty Montgomery") 's death was an accident. The children quickly see through their disguise.
+In " [The Reptile Room: Part Two](https://snicket.fandom.com/wiki/The_Reptile_Room:_Part_Two "The Reptile Room: Part Two")," they take the role of the Hook-Handed Man and disguise themselves as Lucafont to fool Poe into thinking [Monty Montgomery](https://snicket.fandom.com/wiki/Monty_Montgomery "Monty Montgomery") 's death was an accident. The children quickly see through their disguise.
 
 They take the disguise of a gender studies professor at [Prufrock Preparatory School](https://snicket.fandom.com/wiki/Prufrock_Preparatory_School "Prufrock Preparatory School").[^9] They also help the troupe create [Herring Houdini](https://snicket.fandom.com/wiki/Herring_Houdini "Herring Houdini"), which they use as an excuse to bid on the [Red Herring](https://snicket.fandom.com/wiki/Red_Herring "Red Herring") statue that holds the [Quagmire triplets](https://snicket.fandom.com/wiki/Quagmire_Family "Quagmire Family") without anyone getting suspicious.[^10] They also appear with the rest of the troupe in the [Village of Fowl Devotees](https://snicket.fandom.com/wiki/Village_of_Fowl_Devotees "Village of Fowl Devotees").[^11]
 
@@ -96,15 +96,15 @@ In the Netflix series, they have much longer brown hair. They are also 6'4", mak
 ### Netflix
 
 - Mr. Poe: *"May I help you ma'am? Sir? Uh..."*  
-	Henchperson: *"I'm Nurse Lucafont."*  
-	Stephano: *"Nurse Lucafont. From the local sheriff's department's medical examiner's office?"*  
-	Henchperson: *"From the local..."* (Stephano mouths the words) *"I hear there's been a terrible accident involving a snake."*
+ Henchperson: *"I'm Nurse Lucafont."*  
+ Stephano: *"Nurse Lucafont. From the local sheriff's department's medical examiner's office?"*  
+ Henchperson: *"From the local..."* (Stephano mouths the words) *"I hear there's been a terrible accident involving a snake."*
 - Larry: *"It's Larry. I told you my name is Larry."*  
-	Hook-Handed Man: *"We don't care what your name is!"*  
-	Henchperson: *"Or what gender you are."*
+ Hook-Handed Man: *"We don't care what your name is!"*  
+ Henchperson: *"Or what gender you are."*
 - Henchperson: *"Open up in there!"*  
-	Klaus: *"No!"*  
-	Henchperson: *"...please?"*
+ Klaus: *"No!"*  
+ Henchperson: *"...please?"*
 - *"Here I am. Nurse Lucafont."* (a *Shining* reference)
 - *"Is a personal philosophy of moral relativism the only way to survive in an ethically complex world, or is it an excuse we use to justify doing bad things?"*
 - *"I joined Count Olaf because I thought he could teach me things, like how to harness my natural charisma into a career in the performing art, but I'm beginning to question my life choices."*
@@ -113,8 +113,8 @@ In the Netflix series, they have much longer brown hair. They are also 6'4", mak
 ## Trivia
 
 - In the book series, the henchperson is called an "it" many times, which has been criticized as offensive by trans activists; it is also considered offensive by these groups that their androgyny (and perhaps also them being husky and overweight) is seen as monstrous by certain characters. For example, a line in *The Wide Window* says, "What frightened Violet was that you couldn't tell if this person was a man or a woman." In addition, they are called a "creature".
-	- This controversy resulted in [Daniel Handler](https://snicket.fandom.com/wiki/Daniel_Handler "Daniel Handler") and the other writers of the Netflix adaptation changing the character of the henchperson to make them more human.
-		- In the 2025 Edition of *[The Bad Beginning](https://snicket.fandom.com/wiki/The_Bad_Beginning "The Bad Beginning"),* their character profile says that their androgyny is instead "interesting," but them being "employed by a violent scoundrel" is worrying.
+  - This controversy resulted in [Daniel Handler](https://snicket.fandom.com/wiki/Daniel_Handler "Daniel Handler") and the other writers of the Netflix adaptation changing the character of the henchperson to make them more human.
+    - In the 2025 Edition of *[The Bad Beginning](https://snicket.fandom.com/wiki/The_Bad_Beginning "The Bad Beginning"),* their character profile says that their androgyny is instead "interesting," but them being "employed by a violent scoundrel" is worrying.
 - In the TV series, they mention their opinion that asparagus is more delicious than corn.
 - The Henchperson's survival is due to the fact that the writers wanted Olaf to be at his highest point at the end of [Season 2](https://snicket.fandom.com/wiki/Season_2 "Season 2") in order to show his downfall better in [Season 3](https://snicket.fandom.com/wiki/Season_3 "Season 3").[^15]
 
@@ -168,7 +168,7 @@ Mr. Poe watches as the henchperson escapes with Olaf.
 
 [!["The Vile Village: Part One" Concept Art.](https://static.wikia.nocookie.net/snicket/images/a/a4/Henchpersontvvconcept.jpg/revision/latest/scale-to-width-down/120?cb=20200217030710 "Henchpersontvvconcept.jpg (464 KB)")](https://snicket.fandom.com/wiki/File:Henchpersontvvconcept.jpg "Henchpersontvvconcept.jpg (464 KB)")
 
-" [The Vile Village: Part One](https://snicket.fandom.com/wiki/The_Vile_Village:_Pa***REMOVED***One "The Vile Village: Part One") " Concept Art.
+" [The Vile Village: Part One](https://snicket.fandom.com/wiki/The_Vile_Village:_Part_One "The Vile Village: Part One") " Concept Art.
 
 [!["I'm totally a nurse." "Well, it does so say so on your pin."](https://static.wikia.nocookie.net/snicket/images/8/8d/TotallyANurse.gif/revision/latest/scale-to-width-down/286?cb=20180105134100 "TotallyANurse.gif (1.95 MB)")](https://snicket.fandom.com/wiki/File:TotallyANurse.gif "TotallyANurse.gif (1.95 MB)")
 
@@ -218,9 +218,9 @@ Shining reference.
 
 [^3]: [FILM](https://snicket.fandom.com/wiki/FILM "FILM"): *[Lemony Snicket's A Series of Unfortunate Events](https://snicket.fandom.com/wiki/Lemony_Snicket%27s_A_Series_of_Unfortunate_Events_\(film\) "Lemony Snicket's A Series of Unfortunate Events (film)")*
 
-[^4]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Reptile Room: Part Two](https://snicket.fandom.com/wiki/The_Reptile_Room:_Pa***REMOVED***Two "The Reptile Room: Part Two")*
+[^4]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Reptile Room: Part Two](https://snicket.fandom.com/wiki/The_Reptile_Room:_Part_Two "The Reptile Room: Part Two")*
 
-[^5]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Hostile Hospital: Part Two](https://snicket.fandom.com/wiki/The_Hostile_Hospital:_Pa***REMOVED***Two "The Hostile Hospital: Part Two")*
+[^5]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Hostile Hospital: Part Two](https://snicket.fandom.com/wiki/The_Hostile_Hospital:_Part_Two "The Hostile Hospital: Part Two")*
 
 [^6]: [PROSE](https://snicket.fandom.com/wiki/PROSE "PROSE"): *[The Incomplete History of Secret Organizations](https://snicket.fandom.com/wiki/The_Incomplete_History_of_Secret_Organizations:_An_Utterly_Unreliable_Account_of_Netflix%27s_A_Series_of_Unfortunate_Events "The Incomplete History of Secret Organizations: An Utterly Unreliable Account of Netflix's A Series of Unfortunate Events")*
 
@@ -228,16 +228,16 @@ Shining reference.
 
 [^8]: [PROSE](https://snicket.fandom.com/wiki/PROSE "PROSE"): *[The Wide Window](https://snicket.fandom.com/wiki/The_Wide_Window "The Wide Window")*
 
-[^9]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Austere Academy: Part One](https://snicket.fandom.com/wiki/The_Austere_Academy:_Pa***REMOVED***One "The Austere Academy: Part One")*
+[^9]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Austere Academy: Part One](https://snicket.fandom.com/wiki/The_Austere_Academy:_Part_One "The Austere Academy: Part One")*
 
-[^10]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Ersatz Elevator: Part Two](https://snicket.fandom.com/wiki/The_Ersatz_Elevator:_Pa***REMOVED***Two "The Ersatz Elevator: Part Two")*
+[^10]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Ersatz Elevator: Part Two](https://snicket.fandom.com/wiki/The_Ersatz_Elevator:_Part_Two "The Ersatz Elevator: Part Two")*
 
-[^11]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Vile Village: Part One](https://snicket.fandom.com/wiki/The_Vile_Village:_Pa***REMOVED***One "The Vile Village: Part One")*
+[^11]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Vile Village: Part One](https://snicket.fandom.com/wiki/The_Vile_Village:_Part_One "The Vile Village: Part One")*
 
-[^12]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Carnivorous Carnival: Part One](https://snicket.fandom.com/wiki/The_Carnivorous_Carnival:_Pa***REMOVED***One "The Carnivorous Carnival: Part One")*
+[^12]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Carnivorous Carnival: Part One](https://snicket.fandom.com/wiki/The_Carnivorous_Carnival:_Part_One "The Carnivorous Carnival: Part One")*
 
-[^13]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Slippery Slope: Part One](https://snicket.fandom.com/wiki/The_Slippery_Slope:_Pa***REMOVED***One "The Slippery Slope: Part One")*
+[^13]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Slippery Slope: Part One](https://snicket.fandom.com/wiki/The_Slippery_Slope:_Part_One "The Slippery Slope: Part One")*
 
-[^14]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Slippery Slope: Part Two](https://snicket.fandom.com/wiki/The_Slippery_Slope:_Pa***REMOVED***Two "The Slippery Slope: Part Two")*
+[^14]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Slippery Slope: Part Two](https://snicket.fandom.com/wiki/The_Slippery_Slope:_Part_Two "The Slippery Slope: Part Two")*
 
 [^15]: [Interview](http://asoue.proboards.com/thread/35443/netflix-season-3-production-thread?page=49)
