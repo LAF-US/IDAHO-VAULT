@@ -62,4 +62,8 @@ whether they belong instead under `.tinkerer/`:
 - `SPELUNKING-CENSUS-PROTOCOL-v1-2026-06-27.md`
 - `census_metrics.py`
 
-###### "The world is quiet here."
+---
+
+```
+The world is quiet here．Esto Perpetua!
+```

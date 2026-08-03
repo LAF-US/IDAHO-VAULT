@@ -136,4 +136,8 @@ is a pause, not a prison.
 - **Honest limit:** Kerr gives the *rule* (cold pacifies djinn), not a deep
   *why.* The mechanic generalizes the rule; it does not explain it.
 
-###### [["The world is quiet here."]]
+---
+
+```
+The world is quiet here．Esto Perpetua!
+```

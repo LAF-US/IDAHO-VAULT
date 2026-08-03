@@ -195,4 +195,8 @@ Mistaking one for the other wastes the repair or insults the wronged further.
   vanity-as-attack-surface, the reversibility axis (souring vs. fall), the vault
   mappings, and the self-application. The Architect holds the verdict.
 
-###### [["The world is quiet here."]]
+---
+
+```
+The world is quiet here．Esto Perpetua!
+```
