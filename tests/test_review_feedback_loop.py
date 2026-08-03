@@ -459,6 +459,33 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             review_feedback_loop.restamp_risk_pair(32, labels, None, None)
         self.assertEqual(labels, {"review/pending"})
 
+    def test_restamp_sweeps_a_vocabulary_the_code_has_never_seen(self) -> None:
+        # The test above enumerates the seven strings #854 retired, which a seven-case lookup
+        # table would satisfy just as well — it cannot tell a namespace rule from a hardcoded
+        # list. These labels appear nowhere in the codebase, so only a rule sweeps them, and a
+        # list would leave every one behind. This is the case that distinguishes the two.
+        # `newaxis:risk/—` keeps the em dash (U+2014) ON PURPOSE: three labels in the live
+        # retired vocabulary carry it — `filetype:risk/—`, `depth:risk/—`, `risk/—`. Swapping
+        # it for an ASCII stand-in would stop exercising the character the real labels use.
+        unseen = {"scope:risk/whatever", "tier:risk/x", "newaxis:risk/—", "risk/anything"}
+        with mock.patch.object(review_feedback_loop, "_edit_label"):
+            labels = set(unseen) | {"review/pending"}
+            actions = review_feedback_loop.restamp_risk_pair(33, labels, "low", None)
+        for label in unseen:
+            self.assertIn(f"remove:{label}", actions)
+        self.assertEqual(labels, {"risk/low", "review/pending"})
+
+    def test_restamp_leaves_names_that_only_resemble_the_namespace(self) -> None:
+        # The boundary the rule must NOT cross, kept separate from the sweep above so a
+        # failure says which half broke. `riskier/thing` and `notrisk/low` are not risk
+        # labels; a sloppy pattern (a bare `risk/` substring search) would eat both.
+        near_misses = {"riskier/thing", "notrisk/low", "review/pending"}
+        with mock.patch.object(review_feedback_loop, "_edit_label"):
+            labels = set(near_misses)
+            actions = review_feedback_loop.restamp_risk_pair(34, labels, None, None)
+        self.assertEqual(actions, [])
+        self.assertEqual(labels, near_misses)
+
     def test_sync_pr_restamps_unmarked_pr_from_classifier(self) -> None:
         # K6 backfill-by-automation: an unmarked in-flight PR gets its pair stamped from
         # the classifier on the next sync — no hand-sweep.
