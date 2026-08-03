@@ -1,24 +1,32 @@
 name: Agent Swarm Signing Proof
 
-# checkov:skip=CKV_GHA_7: `agent` is a closed `type: choice` enum (opencode|claude|
-# mistral|codex) GitHub itself validates before dispatch -- not free text. Every
-# consumer below is either an engine-evaluated `if:` condition or a quoted shell
-# variable via `env:` (AGENT=${{ github.event.inputs.agent }}, then "$AGENT" in a
-# `case` statement) -- never a raw `${{ }}` interpolation inside a run: script body,
-# which is the actual injection vector this check exists to catch.
+# THIS FILE HOLDS THE LOGIC AND IS NOT DISPATCHABLE. Its four entry points are separate
+# dispatch-only wrappers, each carrying NO inputs:
+#   agent-swarm-signing-proof-opencode.yml  -> agent: opencode
+#   agent-swarm-signing-proof-claude.yml    -> agent: claude
+#   agent-swarm-signing-proof-mistral.yml   -> agent: mistral
+#   agent-swarm-signing-proof-codex.yml     -> agent: codex
+# The lane is chosen by picking a workflow, not by a workflow_dispatch input a user could
+# type or select at runtime. That satisfies Checkov CKV_GHA_7 ("workflow_dispatch inputs
+# MUST be empty") honestly, by moving the parameter to an internal workflow_call contract
+# rather than suppressing the rule -- same pattern as flatten-label-migration.yml.
+
 on:
-  workflow_dispatch:
+  workflow_call:
     inputs:
       agent:
         description: "Per-agent GitHub App lane to test"
+        type: string
         required: true
-        default: "opencode"
-        type: choice
-        options:
-          - opencode
-          - claude
-          - mistral
-          - codex
+    secrets:
+      OPENCODE_AGENT_PRIVATE_KEY:
+        required: false
+      CLAUDE_APP_PRIVATE_KEY:
+        required: false
+      MISTRAL_APP_PRIVATE_KEY:
+        required: false
+      CODEX_APP_PRIVATE_KEY:
+        required: false
 
 permissions:
   contents: read
@@ -52,7 +60,7 @@ jobs:
           fi
 
       - name: Mint opencode App token
-        if: ${{ github.event.inputs.agent == 'opencode' }}
+        if: ${{ inputs.agent == 'opencode' }}
         id: token_opencode
         uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1 # v3
         with:
@@ -63,7 +71,7 @@ jobs:
           permission-issues: write
 
       - name: Mint Claude App token
-        if: ${{ github.event.inputs.agent == 'claude' }}
+        if: ${{ inputs.agent == 'claude' }}
         id: token_claude
         uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1 # v3
         with:
@@ -74,7 +82,7 @@ jobs:
           permission-issues: write
 
       - name: Mint Mistral App token
-        if: ${{ github.event.inputs.agent == 'mistral' }}
+        if: ${{ inputs.agent == 'mistral' }}
         id: token_mistral
         uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1 # v3
         with:
@@ -85,7 +93,7 @@ jobs:
           permission-issues: write
 
       - name: Mint Codex App token
-        if: ${{ github.event.inputs.agent == 'codex' }}
+        if: ${{ inputs.agent == 'codex' }}
         id: token_codex
         uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1 # v3
         with:
@@ -98,7 +106,7 @@ jobs:
       - name: Select App token
         id: app
         env:
-          AGENT: ${{ github.event.inputs.agent }}
+          AGENT: ${{ inputs.agent }}
           OPENCODE_TOKEN: ${{ steps.token_opencode.outputs.token }}
           OPENCODE_SLUG: ${{ steps.token_opencode.outputs.app-slug }}
           OPENCODE_INSTALLATION: ${{ steps.token_opencode.outputs.installation-id }}
@@ -154,7 +162,7 @@ jobs:
         env:
           GH_TOKEN: ${{ steps.app.outputs.token }}
           REPO: ${{ github.repository }}
-          AGENT: ${{ github.event.inputs.agent }}
+          AGENT: ${{ inputs.agent }}
           APP_SLUG: ${{ steps.app.outputs.slug }}
           INSTALLATION_ID: ${{ steps.app.outputs.installation }}
         run: |
@@ -201,7 +209,7 @@ jobs:
         env:
           GH_TOKEN: ${{ steps.app.outputs.token }}
           REPO: ${{ github.repository }}
-          AGENT: ${{ github.event.inputs.agent }}
+          AGENT: ${{ inputs.agent }}
           BRANCH: ${{ steps.proof.outputs.branch }}
           PROOF_PATH: ${{ steps.proof.outputs.proof_path }}
           COMMIT_SHA: ${{ steps.proof.outputs.commit_sha }}
@@ -262,7 +270,7 @@ jobs:
         env:
           GH_TOKEN: ${{ steps.app.outputs.token || secrets.GITHUB_TOKEN }}
           REPO: ${{ github.repository }}
-          AGENT: ${{ github.event.inputs.agent }}
+          AGENT: ${{ inputs.agent }}
           APP_SLUG: ${{ steps.app.outputs.slug }}
           INSTALLATION_ID: ${{ steps.app.outputs.installation }}
           BRANCH: ${{ steps.proof.outputs.branch }}
