@@ -32,7 +32,7 @@ from __future__ import annotations
 
 import argparse
 import re
-import subprocess
+import subprocess  # nosec B404 -- see [tool.bandit] note in pyproject.toml
 import sys
 from dataclasses import dataclass
 from pathlib import Path
@@ -62,12 +62,21 @@ class Finding:
 
 
 def repo_root() -> Path:
-    result = subprocess.run(
-        ["git", "rev-parse", "--show-toplevel"],
-        check=True,
-        capture_output=True,
-        text=True,
-    )
+    try:
+        result = subprocess.run(
+            ["git", "rev-parse", "--show-toplevel"],
+            check=True,
+            capture_output=True,
+            text=True,
+            timeout=30,
+        )
+    except subprocess.TimeoutExpired as exc:
+        raise SystemExit("check_character_conformity: git rev-parse timed out after 30s") from exc
+    except subprocess.CalledProcessError as exc:
+        message = (exc.stderr or "").strip() or "git rev-parse failed"
+        raise SystemExit(f"check_character_conformity: {message}") from exc
+    except OSError as exc:
+        raise SystemExit(f"check_character_conformity: git rev-parse could not run: {exc}") from exc
     return Path(result.stdout.strip()).resolve()
 
 
@@ -91,6 +100,7 @@ def git_tracked_files() -> list[str]:
         check=True,
         capture_output=True,
         text=True,
+        timeout=30,
     )
     return [line for line in result.stdout.splitlines() if line]
 
@@ -109,6 +119,7 @@ def git_text_attrs(paths: list[str]) -> dict[str, dict[str, str]]:
         input=payload,
         check=True,
         capture_output=True,
+        timeout=30,
     )
     attrs: dict[str, dict[str, str]] = {}
     fields = result.stdout.decode().split("\0")

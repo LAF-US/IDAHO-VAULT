@@ -6,7 +6,7 @@ from dataclasses import dataclass
 from datetime import date
 import json
 from pathlib import Path
-import subprocess
+import subprocess  # nosec B404 -- see [tool.bandit] note in pyproject.toml
 from typing import Iterable
 
 
@@ -142,8 +142,12 @@ def _tracked_files(root: Path) -> set[str] | None:
             ["git", "-C", str(root), "ls-files"],
             capture_output=True,
             text=True,
+            encoding="utf-8",
+            errors="replace",
+            timeout=30,
+            check=False,
         )
-    except OSError:
+    except (OSError, subprocess.TimeoutExpired):
         return None
     if result.returncode != 0:
         return None

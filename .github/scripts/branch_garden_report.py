@@ -6,7 +6,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
-import subprocess
+import subprocess  # nosec B404 -- see [tool.bandit] note in pyproject.toml
 import sys
 from collections import Counter
 from dataclasses import dataclass
@@ -38,14 +38,30 @@ class BranchState:
     living_worktree: bool = False
 
 
+def _run(cmd: list[str]) -> str:
+    try:
+        result = subprocess.run(
+            cmd, check=True, capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=60
+        )
+    except subprocess.TimeoutExpired as exc:
+        raise RuntimeError(f"{cmd[0]} timed out after 60s") from exc
+    except subprocess.CalledProcessError as exc:
+        raise RuntimeError((exc.stderr or "").strip() or f"{cmd[0]} failed") from exc
+    except OSError as exc:
+        raise RuntimeError(f"{cmd[0]} could not run: {exc}") from exc
+    return result.stdout
+
+
 def run_text(cmd: list[str]) -> str:
-    result = subprocess.run(cmd, check=True, capture_output=True, text=True)
-    return result.stdout.strip()
+    return _run(cmd).strip()
 
 
 def run_json(cmd: list[str]) -> object:
-    result = subprocess.run(cmd, check=True, capture_output=True, text=True)
-    return json.loads(result.stdout)
+    output = _run(cmd)
+    try:
+        return json.loads(output)
+    except json.JSONDecodeError as exc:
+        raise RuntimeError(f"{cmd[0]} produced invalid JSON: {exc}") from exc
 
 
 def branch_age_days(branch: str) -> int:
@@ -57,20 +73,32 @@ def branch_age_days(branch: str) -> int:
 def branch_has_merge_base(branch: str) -> bool:
     try:
         run_text(["git", "merge-base", "origin/main", f"origin/{branch}"])
-    except subprocess.CalledProcessError as exc:
-        if exc.returncode == 1:
-            return False
+    except RuntimeError as exc:
+        # _run() wraps the underlying CalledProcessError into RuntimeError,
+        # so it -- not CalledProcessError -- is what actually propagates here.
+        # `git merge-base` exits 1 specifically for "no common ancestor";
+        # anything else is a real failure and should still surface.
+        cause = exc.__cause__
+        if isinstance(cause, subprocess.CalledProcessError):
+            if cause.returncode == 1:
+                return False
         raise
     return True
 
 
 def living_worktree_branches() -> set[str]:
-    result = subprocess.run(
-        ["git", "worktree", "list", "--porcelain"],
-        check=False,
-        capture_output=True,
-        text=True,
-    )
+    try:
+        result = subprocess.run(
+            ["git", "worktree", "list", "--porcelain"],
+            check=False,
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+            errors="replace",
+            timeout=30,
+        )
+    except (subprocess.TimeoutExpired, OSError):
+        return set()
     if result.returncode != 0:
         return set()
 
@@ -115,7 +143,7 @@ def classify_branch(
         return BranchState(
             branch=branch,
             classification="FOREIGN_HISTORY",
-            recommendation="Quarantine for salvage review; do not decide by ahead/behind counts.",
+            recommendation="Quarantine for SALVAGE review; do not decide by ahead/behind counts.",
             age_days=age_days,
             pr_number=int(pr["number"]) if pr else None,
             pr_url=pr.get("url") if pr else None,
@@ -186,7 +214,7 @@ def classify_branch(
 def state_line(state: BranchState) -> str:
     pr_state = f"open PR #{state.pr_number}" if state.pr_number else "no PR"
     if not state.has_merge_base:
-        distance = "no merge base with main"
+        distance = "no merge base with `main`"
     else:
         distance = f"{state.ahead} ahead / {state.behind} behind"
     return (
@@ -198,7 +226,7 @@ def state_line(state: BranchState) -> str:
 def finding_line(state: BranchState, stale_days: int) -> str | None:
     if state.classification == "FOREIGN_HISTORY":
         return (
-            f"- `{state.branch}` is FOREIGN_HISTORY: require salvage review "
+            f"- `{state.branch}` is FOREIGN_HISTORY: require SALVAGE review "
             "before any prune decision."
         )
     if state.classification == "IDENTICAL":
@@ -328,4 +356,8 @@ def main() -> int:
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    try:
+        sys.exit(main())
+    except RuntimeError as exc:
+        print(f"branch_garden_report: {exc}", file=sys.stderr)
+        sys.exit(1)

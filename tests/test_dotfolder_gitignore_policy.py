@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-import subprocess
+import subprocess  # nosec B404 -- see [tool.bandit] note in pyproject.toml
 from pathlib import Path
 
 
@@ -13,6 +13,7 @@ def is_ignored(path: str) -> bool:
         cwd=ROOT,
         capture_output=True,
         check=False,
+        timeout=30,
     )
     if result.returncode not in {0, 1}:
         raise AssertionError(result.stderr.decode("utf-8", errors="replace"))
