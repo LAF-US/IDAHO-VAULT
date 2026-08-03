@@ -28,7 +28,12 @@ name: Auto-merge on PR events
 
 on:
   pull_request_target:
-    types: [opened, reopened, ready_for_review, synchronize]
+    # `labeled` is load-bearing: the job below gates on the `auto-merge` label, but without
+    # a `labeled` trigger, *applying* that label fires no event — so a PR labeled after its
+    # last open/sync sat armed-but-unqueued until a manual dispatch (the #720 symptom). With
+    # `labeled`, adding `auto-merge` engages the arm+enqueue directly. Any other label event
+    # runs the job too, then the `if` skips it — harmless, and the concurrency group dedupes.
+    types: [opened, reopened, ready_for_review, synchronize, labeled]
 
 permissions:
   # contents: write  — resolveReviewThread + enablePullRequestAutoMerge (the #546 gate family).
@@ -54,7 +59,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout trusted workflow surfaces
-        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           ref: ${{ github.event.repository.default_branch }}
           persist-credentials: false

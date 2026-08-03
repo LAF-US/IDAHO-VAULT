@@ -32,13 +32,16 @@ from __future__ import annotations
 
 import argparse
 import json
+from pathlib import Path
+import tempfile
 import os
 import re
 import sys
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timezone
+
+import classify_paths  # sibling module (scripts dir on sys.path in script + test runs)
 from pr_threads import (  # shared thread-analysis vocabulary (#600 §5)
     ATTESTATION_DECISIONS,
-    BARE_RESOLVABLE_DISPOSITIONS,
     _count_committable_suggestion_threads,
     _thread_authors,
     _thread_has_attested_look,
@@ -102,38 +105,27 @@ DEFAULT_REVIEW_PENDING_LABEL = "review/pending"
 DEFAULT_AUTO_MERGE_LABEL = "merge/auto"
 DEFAULT_SUGGESTIONS_LABEL = "review/suggestions-ready"
 RISK_LOW_LABEL = "risk/low"
+RISK_MED_LABEL = "risk/med"
 RISK_HIGH_LABEL = "risk/high"
-# K4/#630: the positive `—/—` marker — the label pair where NEITHER analysis fired.
-# Stamped ONLY when classify scored a PR clear. Per Logan's invariant it is MUTUALLY EXCLUSIVE with every
-# risk/* flag — a PR carries `risk/—` XOR a flag, never both.
-RISK_CLEAR_LABEL = "risk/—"
-RISK_FLAG_LABELS = frozenset({RISK_LOW_LABEL, RISK_HIGH_LABEL})
+RISK_NOPE_LABEL = "risk/nope"
 
-# K6/#632 (norm set by Logan, 2026-07-06): the lanes ARE the nine label pairs. Every PR
-# carries exactly TWO axis labels — one per independent analysis — and the pair is the
-# lane (the 3x3 matrix of label pairs):
-#   filetype axis: filetype:risk/— | filetype:risk/low | filetype:risk/med
-#   depth axis:    depth:risk/—    | depth:risk/high   | depth:risk/nope
-# Flags are TRANSIENT ROUTING STATE, never a verdict: the classifier restamps the pair on
+# K6/#632 (flat schema, norm set by Logan): the risk vocabulary is four flat labels across
+# two independent axes — each stamped ONLY when its axis fires. There are no prefixes, no
+# explicit `—` labels, and no separate clear marker.
+#   FILETYPE axis: risk/low (Machine Doc / inert assets) | risk/med (Computer Code — executes)
+#   FILEDEPTH axis: risk/high (path inside the "!/" tree) | risk/nope (path in the inner
+#                   "!/!/__!__/!/" region and below — never auto-merges)
+# A PR carries AT MOST one filetype value AND at most one filedepth value (0–2 labels total).
+# `—` on an axis is the ABSENCE of that axis's label; `—/—` (clear) is NO risk/* label at all.
+# Flags are TRANSIENT ROUTING STATE, never a verdict: the classifier restamps them on
 # synchronize (labels mirror the current diff), and when the lane's review completes the
-# engine clears the fired flag (restamps that axis to its `—`) and the PR flows.
-# depth:risk/nope is never auto-cleared — the still point asks for the sovereign's own hand.
-# The sparse single labels above (risk/low, risk/high, risk/—) are the LEGACY vocabulary,
-# still recognized as a fallback and still stamped during the transition (dependabot-rhythm
-# keys on risk/high); the pair takes precedence when present.
-FILETYPE_AXIS_PREFIX = "filetype:risk/"
-DEPTH_AXIS_PREFIX = "depth:risk/"
-AXIS_DASH = "—"
-FILETYPE_PAIR_LABELS = {
-    None: FILETYPE_AXIS_PREFIX + AXIS_DASH,
-    "low": FILETYPE_AXIS_PREFIX + "low",
-    "med": FILETYPE_AXIS_PREFIX + "med",
-}
-DEPTH_PAIR_LABELS = {
-    None: DEPTH_AXIS_PREFIX + AXIS_DASH,
-    "high": DEPTH_AXIS_PREFIX + "high",
-    "nope": DEPTH_AXIS_PREFIX + "nope",
-}
+# engine clears the fired flag (removes it) and the PR flows. risk/nope is never
+# auto-cleared — it always requires a human merge.
+FILETYPE_RISK_LABELS = {"low": RISK_LOW_LABEL, "med": RISK_MED_LABEL}
+DEPTH_RISK_LABELS = {"high": RISK_HIGH_LABEL, "nope": RISK_NOPE_LABEL}
+RISK_FLAG_LABELS = frozenset(
+    {RISK_LOW_LABEL, RISK_MED_LABEL, RISK_HIGH_LABEL, RISK_NOPE_LABEL}
+)
 AUTO_MERGE_AUTHZ_FRAGMENTS = (
     "Pull request User is not authorized for this protected branch "
     "(enablePullRequestAutoMerge)",
@@ -173,53 +165,31 @@ LABEL_SPECS: dict[str, tuple[str, str]] = {
         "1D76DB",
         "Has bot review threads with committable ```suggestion blocks ready to apply.",
     ),
+    # Flat 4-value risk schema — two axes, each label stamped only when its axis fires.
     RISK_LOW_LABEL: (
         "C2E0C6",
-        "Risk tier: low (only low-risk paths changed).",
+        "Filetype: low (machine documentation / inert assets).",
+    ),
+    RISK_MED_LABEL: (
+        "F9D0C4",
+        "Filetype: med (computer code — executes).",
     ),
     RISK_HIGH_LABEL: (
         "E99695",
-        "Risk tier: high (at least one high-risk path changed).",
+        "Filedepth: high (path inside the \"!/\" tree).",
     ),
-    RISK_CLEAR_LABEL: (
-        "0E8A16",
-        "The —/— label pair: neither analysis fired; auto-merge on open. Mutually exclusive with risk/*.",
-    ),
-    # K6 pair vocabulary — one label per axis, the pair is the lane.
-    FILETYPE_PAIR_LABELS[None]: (
-        "0E8A16",
-        "Filetype analysis: — (prose/NL; no flag fired on this axis).",
-    ),
-    FILETYPE_PAIR_LABELS["low"]: (
-        "C2E0C6",
-        "Filetype analysis: low (machine documentation / inert assets).",
-    ),
-    FILETYPE_PAIR_LABELS["med"]: (
-        "F9D0C4",
-        "Filetype analysis: med (computer code — executes).",
-    ),
-    DEPTH_PAIR_LABELS[None]: (
-        "0E8A16",
-        "Placement analysis: — (outside the Nest, off every protected surface).",
-    ),
-    DEPTH_PAIR_LABELS["high"]: (
-        "E99695",
-        "Placement analysis: high (Nest depth or protected surface).",
-    ),
-    DEPTH_PAIR_LABELS["nope"]: (
+    RISK_NOPE_LABEL: (
         "B60205",
-        "Placement analysis: nope (the still point — the sovereign's own hand, never auto).",
+        "Filedepth: nope (inner \"!/!/__!__/!/\" region and below; never auto-merges).",
     ),
 }
 
 
 def _auto_merge_state(owner: str, repo: str, pr_number: int) -> tuple[bool, bool]:
-    """Return ``(auto_merge_enabled, in_merge_queue)`` for the PR.
-
-    Fail-open to ``(False, False)``: if the state can't be read, the caller
-    behaves exactly as it did before this guard existed (a plain ``--auto``
-    enable) — never worse than the old code, and a transient read error never
-    evicts a queued PR."""
+    """Return ``(auto_merge_enabled, in_merge_queue)`` for the PR."""
+    # Fail-open to ``(False, False)``: if the state can't be read, the caller behaves
+    # exactly as it did before this guard existed (a plain ``--auto`` enable) — never
+    # worse than the old code, and a transient read error never evicts a queued PR.
     try:
         data = _graphql(
             """
@@ -248,10 +218,11 @@ def _auto_merge_state(owner: str, repo: str, pr_number: int) -> tuple[bool, bool
 
 
 def _merge_state_status(owner: str, repo: str, pr_number: int) -> str:
-    """The PR's current ``mergeStateStatus`` (``CLEAN``/``UNSTABLE``/``BEHIND``/``BLOCKED``/
-    ``DIRTY``/``UNKNOWN``/...). Fail-open to ``"UNKNOWN"`` on a read failure — the caller's
-    BEHIND-only branch-update path then simply does not fire this cycle, exactly as if the
-    PR were not yet BEHIND; a later sync-pr/reconcile-open-prs pass re-reads it."""
+    """Read the PR's current ``mergeStateStatus``."""
+    # One of ``CLEAN``/``UNSTABLE``/``BEHIND``/``BLOCKED``/``DIRTY``/``UNKNOWN``/... .
+    # Fail-open to ``"UNKNOWN"`` on a read failure — the caller's BEHIND-only branch-update
+    # path then simply does not fire this cycle, exactly as if the PR were not yet BEHIND;
+    # a later sync-pr/reconcile-open-prs pass re-reads it.
     try:
         data = _graphql(
             """
@@ -272,8 +243,9 @@ def _merge_state_status(owner: str, repo: str, pr_number: int) -> str:
 
 
 def _pr_node_id(owner: str, repo: str, pr_number: int) -> str | None:
-    """The PR's GraphQL node id (required by enqueuePullRequest). None if it can't be read
-    (fail-open: the caller then skips the explicit enqueue and relies on armed auto-merge)."""
+    """Read the PR's GraphQL node id (required by enqueuePullRequest)."""
+    # None if it can't be read (fail-open: the caller then skips the explicit
+    # enqueue and relies on armed auto-merge).
     try:
         data = _graphql(
             """
@@ -293,19 +265,19 @@ def _pr_node_id(owner: str, repo: str, pr_number: int) -> str | None:
 
 
 def _enqueue_pr(node_id: str) -> tuple[bool, str | None]:
-    """Add the PR to the merge queue via the ``enqueuePullRequest`` mutation — the action that
-    actually puts a PR in the queue, DISTINCT from ``enablePullRequestAutoMerge`` ("merge when
-    ready"). Best-effort: never raises.
-
-    Returns a tri-state ``(enqueued, error)`` so the caller can tell a benign delay from a real
-    failure:
-
-      * ``(True, None)``  — enqueued (a merge-queue entry id came back).
-      * ``(False, None)`` — benign: the PR is not yet queue-ready (required checks still running,
-        not mergeable, or the base branch has no merge queue). GitHub returns no entry; the armed
-        auto-merge enqueues it when it goes green. NOT an error.
-      * ``(False, str)``  — a real failure (auth/permission/API error from the mutation), worth
-        surfacing because an armed PR that silently never enqueues is exactly the bug this fixes."""
+    """Add the PR to the merge queue via the ``enqueuePullRequest`` mutation."""
+    # This is the action that actually puts a PR in the queue, DISTINCT from
+    # ``enablePullRequestAutoMerge`` ("merge when ready"). Best-effort: never raises.
+    #
+    # Returns a tri-state ``(enqueued, error)`` so the caller can tell a benign delay from a
+    # real failure:
+    #
+    # * ``(True, None)``  — enqueued (a merge-queue entry id came back).
+    # * ``(False, None)`` — benign: the PR is not yet queue-ready (required checks still
+    # running, not mergeable, or the base branch has no merge queue). GitHub returns no
+    # entry; the armed auto-merge enqueues it when it goes green. NOT an error.
+    # * ``(False, str)``  — a real failure (auth/permission/API error from the mutation),
+    # worth surfacing because an armed PR that silently never enqueues is the bug this fixes.
     try:
         data = _graphql(
             "mutation($pr:ID!){ enqueuePullRequest(input:{pullRequestId:$pr})"
@@ -321,18 +293,19 @@ def _enqueue_pr(node_id: str) -> tuple[bool, str | None]:
 
 
 def _update_branch(owner: str, repo: str, pr_number: int) -> tuple[bool, str | None]:
-    """Merge the base branch into the PR head via the ``update-branch`` REST endpoint — the
-    automated form of the "Update branch" button, and the same call
-    ``batch-arm-merge-queue.yml`` already uses on a BEHIND PR (that manual bulk sweep's proven
-    fix; this brings the same recovery to the event-driven engine, which previously just left
-    a BEHIND PR waiting indefinitely for someone else to push). Best-effort: never raises.
-
-    Returns ``(updated, error)``:
-      * ``(True, None)`` — the request succeeded; a merge commit landed on the PR head, CI
-        re-runs, and a later pass re-reads ``mergeStateStatus`` once it recomputes to CLEAN.
-      * ``(False, str)`` — the request failed (e.g. a real conflict surfaced as DIRTY by the
-        time this ran, or a workflows-permission error on a workflow-touching PR — the same
-        failure mode ``is_wf_perm_failure`` buckets separately in the bash sweep)."""
+    """Merge the base branch into the PR head via the ``update-branch`` REST endpoint."""
+    # The automated form of the "Update branch" button, and the same call
+    # ``batch-arm-merge-queue.yml`` already uses on a BEHIND PR (that manual bulk sweep's proven
+    # fix; this brings the same recovery to the event-driven engine, which previously just left
+    # a BEHIND PR waiting indefinitely for someone else to push). Best-effort: never raises.
+    #
+    # Returns ``(updated, error)``:
+    #
+    # * ``(True, None)`` — the request succeeded; a merge commit landed on the PR head, CI
+    # re-runs, and a later pass re-reads ``mergeStateStatus`` once it recomputes to CLEAN.
+    # * ``(False, str)`` — the request failed (e.g. a real conflict surfaced as DIRTY by the
+    # time this ran, or a workflows-permission error on a workflow-touching PR — the same
+    # failure mode ``is_wf_perm_failure`` buckets separately in the bash sweep).
     try:
         _run(
             [
@@ -340,7 +313,7 @@ def _update_branch(owner: str, repo: str, pr_number: int) -> tuple[bool, str | N
                 "api",
                 "--method",
                 "PUT",
-                f"repos/{owner}/{repo}/pulls/{pr_number}/update-branch",
+                f"repos/{_slug(owner, repo)}/pulls/{_num(pr_number)}/update-branch",
             ]
         )
     except RuntimeError as exc:
@@ -349,23 +322,23 @@ def _update_branch(owner: str, repo: str, pr_number: int) -> tuple[bool, str | N
 
 
 def _arm_auto_merge(owner: str, repo: str, pr_number: int) -> tuple[bool, str | None]:
-    """Arm auto-merge for the PR, update its branch if BEHIND, AND add it to the merge queue —
-    three DISTINCT GitHub actions:
-
-      1. **enablePullRequestAutoMerge** (`gh pr merge --auto`) — records "merge when ready."
-         On a merge-queue repo this ALONE does not put the PR in the queue.
-      2. **update-branch** (REST) — when the head is BEHIND base, neither arming nor enqueuing
-         can make the PR CLEAN; merging base in is what lets it recompute. Without this, a
-         BEHIND PR just sits waiting for an unrelated event to nudge it (previously only
-         `batch-arm-merge-queue.yml`'s manual bulk sweep did this).
-      3. **enqueuePullRequest** (GraphQL) — the action that actually adds the PR to the merge
-         queue. This is the half that was missing: arming-only left a ready PR sitting
-         un-queued (the #508 symptom) because nothing ever called enqueue.
-
-    Returns ``(armed, error)``. ``armed`` is True once auto-merge is on (the floor). Both the
-    update-branch and enqueue steps are best-effort and folded into ``error`` as an
-    informational note when they don't succeed outright — neither is treated as arming having
-    failed, since a not-yet-ready or still-BEHIND PR is expected to need another pass."""
+    """Arm auto-merge, update the branch if BEHIND, and add the PR to the merge queue."""
+    # Three DISTINCT GitHub actions:
+    #
+    # 1. **enablePullRequestAutoMerge** (`gh pr merge --auto`) — records "merge when ready."
+    # On a merge-queue repo this ALONE does not put the PR in the queue.
+    # 2. **update-branch** (REST) — when the head is BEHIND base, neither arming nor enqueuing
+    # can make the PR CLEAN; merging base in is what lets it recompute. Without this, a
+    # BEHIND PR just sits waiting for an unrelated event to nudge it (previously only
+    # ``batch-arm-merge-queue.yml``'s manual bulk sweep did this).
+    # 3. **enqueuePullRequest** (GraphQL) — the action that actually adds the PR to the merge
+    # queue. This is the half that was missing: arming-only left a ready PR sitting
+    # un-queued (the #508 symptom) because nothing ever called enqueue.
+    #
+    # Returns ``(armed, error)``. ``armed`` is True once auto-merge is on (the floor). Both the
+    # update-branch and enqueue steps are best-effort and folded into ``error`` as an
+    # informational note when they don't succeed outright — neither is treated as arming having
+    # failed, since a not-yet-ready or still-BEHIND PR is expected to need another pass.
     enabled, queued = _auto_merge_state(owner, repo, pr_number)
     if queued:
         # Already in the queue — re-enqueuing would be a no-op (or an unwanted jump); leave it.
@@ -391,13 +364,14 @@ def _arm_auto_merge(owner: str, repo: str, pr_number: int) -> tuple[bool, str | 
             # ("Cannot use `-d` or `--delete-branch` when merge queue enabled"),
             # which crashed every arm attempt. Head-branch cleanup belongs to the
             # repo's delete-on-merge behavior / branch-cleanup workflow, not here.
-            _run(["gh", "pr", "merge", str(pr_number), "--merge", "--auto"])
+            _run(["gh", "pr", "merge", _num(pr_number), "--merge", "--auto"])
         except RuntimeError as exc:
             if not any(fragment in str(exc) for fragment in AUTO_MERGE_AUTHZ_FRAGMENTS):
                 raise
             notes.insert(
                 0,
-                "GitHub Actions is not authorized to enable auto-merge on the protected base branch.",
+                "GitHub Actions is not authorized to enable auto-merge "
+                "on the protected base branch.",
             )
             return (False, "; ".join(notes))
     # Arming is only half the job — explicitly add it to the merge queue now.
@@ -417,12 +391,15 @@ def _arm_auto_merge(owner: str, repo: str, pr_number: int) -> tuple[bool, str | 
 def _maybe_arm_auto_merge(
     owner: str, repo: str, pr_number: int, state: dict[str, object]
 ) -> dict[str, object]:
-    """Guarded arm: enable merge-queue auto-merge for a PR ONLY when it is eligible
-    (risk/low + grace + no blocking threads, per evaluate_review_state). Returns a small
-    report; never raises for the ordinary not-eligible or not-authorized cases. Protected
-    paths are NOT vetoed here — the CODEOWNERS hard gate (require_code_owner_review) blocks
-    their merge regardless of arming; the merge queue + branch protection are the actual
-    merge gate, and this only presses the button."""
+    """Arm merge-queue auto-merge for a PR only when it is eligible."""
+    # Eligibility is evaluate_review_state's alone, and it has two shapes under the flat
+    # schema: an affirmative `—/—` verdict past grace with no blocking threads, or a fired
+    # non-`nope` flag whose review lane has completed (APPROVED + threads clear), also past
+    # grace. `nope` never qualifies. Read the predicate there, not this comment.
+    # Returns a small report; never raises for the ordinary not-eligible or not-authorized
+    # cases. Protected paths are NOT vetoed here — the CODEOWNERS hard gate
+    # (require_code_owner_review) blocks their merge regardless of arming; the merge queue +
+    # branch protection are the actual merge gate, and this only presses the button.
     if not bool(state.get("eligible_for_auto_merge")):
         return {"armed": False, "reason": "not eligible for auto-merge"}
     armed, arm_error = _arm_auto_merge(owner, repo, pr_number)
@@ -435,7 +412,7 @@ def _maybe_arm_auto_merge(
         # so disable the auto-merge we just enabled and report failure rather than leave
         # an un-trackable armed PR.
         try:
-            _run(["gh", "pr", "edit", str(pr_number), "--add-label", DEFAULT_AUTO_MERGE_LABEL])
+            _run(["gh", "pr", "edit", _num(pr_number), "--add-label", DEFAULT_AUTO_MERGE_LABEL])
         except RuntimeError as exc:
             _disable_auto_merge(pr_number)
             return {
@@ -504,32 +481,6 @@ def _build_attestation(
     stamp = moment.astimezone(timezone.utc).isoformat().replace("+00:00", "Z")
     marker = f"<!-- looked: by={looker}; at={stamp}; decision={decision}; v=1 -->"
     return f"Looked by `{looker}` — **{decision}**. {rationale}\n\n{marker}"
-
-
-def _build_looker_queue(pr: dict) -> list[dict[str, object]]:
-    """Read-only worklist of unresolved threads on one PR for a looker.
-
-    Resolves nothing. Each entry carries what a looker needs to look: the
-    thread id, its comment authors, whether the anchor is outdated, whether a
-    look has already been attested, and a link.
-    """
-    items: list[dict[str, object]] = []
-    for thread in (pr.get("reviewThreads") or {}).get("nodes") or []:
-        if thread.get("isResolved"):
-            continue
-        comments = (thread.get("comments") or {}).get("nodes") or []
-        first = comments[0] if comments else {}
-        items.append(
-            {
-                "pr": pr.get("number"),
-                "thread_id": thread.get("id"),
-                "authors": sorted(_thread_authors(thread)),
-                "is_outdated": bool(thread.get("isOutdated")),
-                "looked": _thread_has_attested_look(thread),
-                "url": first.get("url") or "",
-            }
-        )
-    return items
 
 
 # Layer B2 (#399): the guarded disposition core. `attest_and_resolve` is the ONLY
@@ -695,7 +646,6 @@ def attest_and_resolve(
 
 
 def backfill_witness(
-    pr: dict,
     thread: dict,
     looker: str,
     rationale: str,
@@ -777,118 +727,6 @@ def backfill_witness(
     return result
 
 
-# Layer C (#399): the deterministic walk. `_classify_pr_for_looker` is the pure
-# routing core — it reads one PR and sorts it into a lane WITHOUT writing anything.
-# The brownfield (orphaned PRs, agents gone, auto-merge armed under the maintainer
-# identity) is the spec: the looker drains it *with* judgment, never past it.
-#
-# Lanes (by the PR's unresolved review threads):
-#   - clear            : no unresolved threads.
-#   - machine-disposable: every unresolved thread is bot-authored and provable, the
-#                         review is not CHANGES_REQUESTED, and auto-merge is NOT armed
-#                         — safe for the looker to attest-and-resolve (clears threads,
-#                         never merges).
-#   - would-cascade    : as machine-disposable, but auto-merge IS armed — clearing the
-#                         last blocking thread could shove the PR through the barrier;
-#                         hold for a deliberate signal (Layer-C apply must skip these).
-#   - needs-human      : any human-authored thread, a CHANGES_REQUESTED review, or a
-#                         thread whose comment page is truncated (bot-only unprovable).
-# `stale` is an orthogonal abandonment flag (no activity for >= stale_days): a stale PR
-# is never a safe-drain candidate regardless of lane — abandoned work needs a person.
-LOOKER_STALE_DAYS = 14
-
-
-def _classify_pr_for_looker(
-    pr: dict, *, now: datetime | None = None, stale_days: int = LOOKER_STALE_DAYS
-) -> dict:
-    """Sort one PR into a looker lane. Pure and read-only — resolves nothing."""
-    now = now or datetime.now(timezone.utc)
-    review_threads = pr.get("reviewThreads") or {}
-    threads = review_threads.get("nodes") or []
-    # The thread list itself is fetched first: 100. If it is truncated, a blocking
-    # human/unprovable thread may lie beyond the page — the PR is never safe to drain.
-    threads_truncated = bool((review_threads.get("pageInfo") or {}).get("hasNextPage"))
-    unresolved = [t for t in threads if not t.get("isResolved")]
-
-    plan: list[dict[str, object]] = []
-    disposable = looked_open = human = unprovable = 0
-    for thread in unresolved:
-        page_info = (thread.get("comments") or {}).get("pageInfo")
-        # An explicit "complete" page is hasNextPage is False; anything else (truncated
-        # OR unknown/missing) is conservatively incomplete.
-        page_complete = isinstance(page_info, dict) and page_info.get("hasNextPage") is False
-        if not _thread_is_bot_only(thread):
-            # A human on the page we DO have is definitive — truncated or not.
-            disposition = "human"
-            human += 1
-        elif not page_complete:
-            # Bot-only on the visible page, but a human could lie beyond an incomplete
-            # one; bot-only must be proven from the full author list, so: unprovable.
-            disposition = "unprovable"
-            unprovable += 1
-        elif _thread_has_attested_look(thread):
-            disposition = "looked-open"  # attested but unresolved (recoverable)
-            looked_open += 1
-        else:
-            disposition = "bot-disposable"
-            disposable += 1
-        plan.append(
-            {
-                "thread_id": thread.get("id"),
-                "disposition": disposition,
-                "resolution": _thread_resolution_disposition(thread),
-                "authors": sorted(_thread_authors(thread)),
-            }
-        )
-
-    resolution_counts: dict[str, int] = {}
-    for entry in plan:
-        key = str(entry["resolution"])
-        resolution_counts[key] = resolution_counts.get(key, 0) + 1
-
-    review_decision = pr.get("reviewDecision") or ""
-    auto_merge_armed = bool((pr.get("autoMergeRequest") or {}).get("enabledAt"))
-    last_activity = _parse_iso_datetime(pr.get("updatedAt") or pr.get("createdAt"))
-    stale = bool(last_activity and (now - last_activity) >= timedelta(days=stale_days))
-    machine_clearable = disposable + looked_open
-
-    if threads_truncated or review_decision == "CHANGES_REQUESTED" or human or unprovable:
-        lane = "needs-human"
-    elif not unresolved:
-        lane = "clear"
-    elif machine_clearable == len(unresolved):
-        lane = "would-cascade" if auto_merge_armed else "machine-disposable"
-    else:  # pragma: no cover - defensive; every unresolved thread is classified above
-        lane = "needs-human"
-
-    return {
-        "pr": pr.get("number"),
-        "url": pr.get("url"),
-        "lane": lane,
-        "stale": stale,
-        # safe_to_drain is the APPLY-PASS candidate signal: a bare attest-and-resolve
-        # could clear every thread WITHOUT a fix. It requires more than the coarse
-        # machine-disposable lane — every thread must be bare-resolvable (outdated/looked).
-        # A needs-fix or apply-suggestion thread is NOT bare-drainable (needs a real fix /
-        # applied suggestion), so it must not be advertised as drainable. (codex on #529.)
-        "safe_to_drain": (
-            lane == "machine-disposable"
-            and not stale
-            and all(entry["resolution"] in BARE_RESOLVABLE_DISPOSITIONS for entry in plan)
-        ),
-        "auto_merge_armed": auto_merge_armed,
-        "review_decision": review_decision or None,
-        "is_draft": bool(pr.get("isDraft")),
-        "threads_truncated": threads_truncated,
-        "unresolved_threads": len(unresolved),
-        "machine_clearable": machine_clearable,
-        "human_threads": human,
-        "unprovable_threads": unprovable,
-        "resolution_counts": resolution_counts,
-        "threads": plan,
-    }
-
-
 def _ensure_label(name: str, color: str, description: str) -> None:
     _run(
         [
@@ -906,23 +744,51 @@ def _ensure_label(name: str, color: str, description: str) -> None:
 
 
 def ensure_labels() -> None:
+    """Create or update the labels used by the review lifecycle."""
     for label, (color, description) in LABEL_SPECS.items():
         _ensure_label(label, color, description)
 
 
+def _num(value: int) -> str:
+    """Render a PR number as argv text, rejecting non-numbers."""
+    number = int(value)
+    if number <= 0:
+        raise ValueError(f"Not a valid PR number: {value!r}")
+    return str(number)
+
+
+def _slug(owner: str, repo: str) -> str:
+    """Return ``owner/repo``, pinned to the one repository this engine governs."""
+    # Written as inline literals, and the checked values are the ones used, because
+    # that is the shape a comparison-against-constants takes — it is what keeps an
+    # arbitrary --repo from travelling onward into a command line.
+    if owner not in ("LAF-US",) or repo not in ("IDAHO-VAULT",):
+        raise ValueError(f"This engine is scoped to LAF-US/IDAHO-VAULT, got: {owner!r}/{repo!r}")
+    return f"{owner}/{repo}"
+
+
 def _edit_label(pr_number: int, *, add: str | None = None, remove: str | None = None) -> None:
     if add:
-        _run(["gh", "pr", "edit", str(pr_number), "--add-label", add], check=False)
+        _run(["gh", "pr", "edit", _num(pr_number), "--add-label", add], check=False)
     if remove:
-        _run(["gh", "pr", "edit", str(pr_number), "--remove-label", remove], check=False)
+        _run(["gh", "pr", "edit", _num(pr_number), "--remove-label", remove], check=False)
 
 
 def _disable_auto_merge(pr_number: int, *, check: bool = False) -> None:
-    _run(["gh", "pr", "merge", str(pr_number), "--disable-auto"], check=check)
+    _run(["gh", "pr", "merge", _num(pr_number), "--disable-auto"], check=check)
 
 
 def _comment(pr_number: int, body: str) -> None:
-    _run(["gh", "pr", "comment", str(pr_number), "--body", body])
+    """Post a PR comment with the body carried as a file, never as an argv element."""
+    # `gh` takes either --body or --body-file. These bodies are multi-line attestations
+    # assembled at runtime from CLI input, and argv is the wrong carrier twice over:
+    # ARG_MAX truncates a long one at the exec layer, and caller text in a command line
+    # is caller text in a command line. Writing it to a file this module owns leaves
+    # argv holding only tokens produced here.
+    with tempfile.TemporaryDirectory(prefix="rfl-comment-") as tmp:
+        path = Path(tmp) / "body.md"
+        path.write_text(body, encoding="utf-8")
+        _run(["gh", "pr", "comment", _num(pr_number), "--body-file", str(path)])
 
 
 def _csv_env(name: str, default: str = "") -> set[str]:
@@ -942,8 +808,6 @@ def _parse_iso_datetime(raw: str | None) -> datetime | None:
     return parsed
 
 
-
-
 def _parse_body_marker_value(body: str, marker: str) -> str | None:
     lines = body.splitlines()
     needle = marker.strip().lower()
@@ -958,97 +822,73 @@ def _parse_body_marker_value(body: str, marker: str) -> str | None:
     return None
 
 
-def _risk_tier_for_pr(body: str, labels: set[str]) -> str:
-    # Label is canonical: survives body rewrites by human or agent editors.
-    #
-    # A risk/* flag ALWAYS wins over the clear marker. Per the K4/#630 invariant the
-    # two are mutually exclusive — `risk/—` XOR a flag — so if a flag is somehow present
-    # alongside risk/—, a sorter DID fire and the PR is not clear. Resolving flag-first
-    # fails safe (hold, never auto-merge); the loud-failing exclusion check lives in
-    # `_assert_risk_marker_exclusive` and the tests.
-    if RISK_HIGH_LABEL in labels:
-        return "high"
-    if RISK_LOW_LABEL in labels:
-        return "low"
-    # Positive clear marker (the —/— label pair): the ONLY state that arms auto-merge (K3/#629).
-    # Absence of this marker is NOT classified-clear — an unmarked PR HOLDS (K4/#630).
-    if RISK_CLEAR_LABEL in labels:
-        return "clear"
-    return "unknown"
-
-
 class RiskMarkerInvariantError(ValueError):
-    """The K4 risk-marker invariant was violated: `risk/—` alongside a risk/* flag.
-
-    A dedicated type (not a bare ValueError) so callers can catch EXACTLY this breach
-    and never mistake an unrelated ValueError from the evaluate path for an invariant
-    violation. Subclasses ValueError so existing broad handlers still degrade safely."""
+    """A per-axis risk-marker invariant was violated: two values on a single axis."""
+    # A dedicated type (not a bare ValueError) so callers can catch EXACTLY this breach
+    # and never mistake an unrelated ValueError from the evaluate path for an invariant
+    # violation. Subclasses ValueError so existing broad handlers still degrade safely.
 
 
 def _assert_risk_marker_exclusive(labels: set[str]) -> None:
-    """Fail loud on the one state the K4 invariant forbids: `risk/—` alongside a flag.
-
-    The clear marker means "no sorter fired"; a risk/* flag means one did. Both at once
-    is a producer/backfill bug, not a routing decision — raise so it can never silently
-    auto-merge a PR that a sorter actually flagged."""
-    if RISK_CLEAR_LABEL in labels and (labels & RISK_FLAG_LABELS):
-        collision = sorted(labels & (RISK_FLAG_LABELS | {RISK_CLEAR_LABEL}))
+    """Fail loud on the one state the flat schema forbids: two values on a single axis."""
+    # Each axis carries AT MOST one flat label — risk/low XOR risk/med on the filetype
+    # axis, risk/high XOR risk/nope on the filedepth axis. Both values on one axis is a
+    # producer/backfill bug, not a routing decision — raise so it can never silently route
+    # a PR whose axis is self-contradictory.
+    if RISK_LOW_LABEL in labels and RISK_MED_LABEL in labels:
         raise RiskMarkerInvariantError(
-            f"risk-marker invariant violated: {RISK_CLEAR_LABEL} is mutually exclusive "
-            f"with risk/* flags, but this PR carries {collision}. A clear PR carries "
-            f"{RISK_CLEAR_LABEL} XOR a flag, never both."
+            f"risk-marker invariant violated: the filetype axis carries both "
+            f"{RISK_LOW_LABEL} and {RISK_MED_LABEL}. Each axis carries at most ONE "
+            f"value, never both."
         )
-
-
-def _axis_flag(labels: set[str], prefix: str, axis_name: str) -> tuple[bool, str | None]:
-    """Parse ONE axis's label off the K6 pair vocabulary.
-
-    Returns ``(marked, flag)``: ``marked`` is True iff the axis carries a pair label at
-    all; ``flag`` is None for the axis's `—` or the fired value. More than one label on
-    a single axis is the per-axis mutual-exclusion breach — fail loud, never route."""
-    values = sorted({label[len(prefix):] for label in labels if label.startswith(prefix)})
-    if len(values) > 1:
+    if RISK_HIGH_LABEL in labels and RISK_NOPE_LABEL in labels:
         raise RiskMarkerInvariantError(
-            f"risk-pair invariant violated: the {axis_name} axis carries "
-            f"{[prefix + v for v in values]}. Each axis carries exactly ONE label — "
-            f"its `{AXIS_DASH}` XOR its fired flag, never both."
+            f"risk-marker invariant violated: the filedepth axis carries both "
+            f"{RISK_HIGH_LABEL} and {RISK_NOPE_LABEL}. Each axis carries at most ONE "
+            f"value, never both."
         )
-    if not values:
-        return (False, None)
-    value = values[0]
-    return (True, None if value == AXIS_DASH else value)
 
 
 def _risk_pair_for_pr(labels: set[str]) -> tuple[str | None, str | None, bool]:
-    """(filetype_flag, depth_flag, fully_marked) — the K6 lane, read off the label pair.
+    """Read the lane ``(filetype_flag, depth_flag, classified)`` off the flat labels."""
+    # ``filetype_flag`` is "med"/"low"/None; ``depth_flag`` is "nope"/"high"/None.
+    # ``classified`` is True iff ANY risk/* flag is present — no flag present means we
+    # cannot confirm the PR was classified from labels alone (an all-absent PR is NOT
+    # classified-clear: it holds until an affirmative verdict says otherwise).
+    filetype_flag = (
+        "med" if RISK_MED_LABEL in labels
+        else "low" if RISK_LOW_LABEL in labels
+        else None
+    )
+    depth_flag = (
+        "nope" if RISK_NOPE_LABEL in labels
+        else "high" if RISK_HIGH_LABEL in labels
+        else None
+    )
+    classified = bool(labels & RISK_FLAG_LABELS)
+    return (filetype_flag, depth_flag, classified)
 
-    Falls back per-axis to the legacy sparse vocabulary (risk/low, risk/high, risk/—)
-    during the transition. ``fully_marked=False`` means at least one axis carries no
-    information — and an unmarked axis is NOT classified-clear (K4): the PR holds."""
-    ft_marked, ft = _axis_flag(labels, FILETYPE_AXIS_PREFIX, "filetype")
-    dp_marked, dp = _axis_flag(labels, DEPTH_AXIS_PREFIX, "depth")
-    # Legacy fallback: each sparse label was a COMPLETE single-label verdict, so any one
-    # of them marks BOTH axes (risk/low meant "filetype low, placement clear"; risk/high
-    # meant "placement risk"; risk/— meant both analyses clear). The restamp corrects the
-    # pair from the classifier on the next pass either way.
-    if not (ft_marked and dp_marked):
-        if RISK_HIGH_LABEL in labels:
-            if not dp_marked:
-                dp = "high"
-            ft_marked = dp_marked = True
-        elif RISK_LOW_LABEL in labels:
-            if not ft_marked:
-                ft = "low"
-            ft_marked = dp_marked = True
-        elif RISK_CLEAR_LABEL in labels:
-            # The K4 sparse clear marker asserts BOTH analyses scored clear.
-            ft_marked = dp_marked = True
-    return (ft, dp, ft_marked and dp_marked)
+
+def _validate_pair(filetype_flag: str | None, depth_flag: str | None) -> None:
+    """Fail loud (RiskMarkerInvariantError) on an out-of-vocabulary axis flag."""
+    # A caller typo (e.g. "medium" for "med") gets a deterministic, domain-specific error
+    # instead of a silent misroute (`_tier_from_pair`) or a raw KeyError (`restamp_risk_pair`).
+    if filetype_flag not in (None, "low", "med"):
+        raise RiskMarkerInvariantError(
+            f"invalid filetype_flag {filetype_flag!r}: expected None, 'low', or 'med'"
+        )
+    if depth_flag not in (None, "high", "nope"):
+        raise RiskMarkerInvariantError(
+            f"invalid depth_flag {depth_flag!r}: expected None, 'high', or 'nope'"
+        )
 
 
 def _tier_from_pair(filetype_flag: str | None, depth_flag: str | None, marked: bool) -> str:
-    """Collapse a lane pair to the single-tier vocabulary (nope>high>med>low>clear);
-    an incompletely marked PR is `unknown` and HOLDS."""
+    """Collapse a lane pair to the single-tier vocabulary (nope>high>med>low>clear)."""
+    # An incompletely marked PR is `unknown` and HOLDS. Fails loud on an out-of-vocabulary
+    # flag (e.g. a caller-supplied `verdict` typo like "medium") instead of letting it fall
+    # through to `clear` and misroute the PR.
+    _validate_pair(filetype_flag, depth_flag)
     if not marked:
         return "unknown"
     if depth_flag == "nope":
@@ -1063,18 +903,15 @@ def _tier_from_pair(filetype_flag: str | None, depth_flag: str | None, marked: b
 
 
 def _classify_pr_pair(owner: str, repo: str, pr_number: int) -> tuple[str | None, str | None]:
-    """Run the two parallel analyses (classify_paths) over the PR's changed files.
-
-    The classifier is the SINGLE source of both axes (K1/K2); this is the engine-side
-    bridge that lets the restamp mirror the current diff on synchronize. Raises on any
-    API/import failure — callers fail SAFE by keeping the existing labels (a PR is never
-    armed off a failed classification; an unmarked PR holds)."""
-    import classify_paths  # sibling module; scripts dir is on sys.path in script + test runs
-
+    """Run the two parallel analyses (classify_paths) over the PR's changed files."""
+    # The classifier is the SINGLE source of both axes (K1/K2); this is the engine-side
+    # bridge that lets the restamp mirror the current diff on synchronize. Raises on any
+    # API/import failure — callers fail SAFE by keeping the existing labels (a PR is never
+    # armed off a failed classification; an unmarked PR holds).
     result = _run(
         [
             "gh", "api", "--paginate",
-            f"repos/{owner}/{repo}/pulls/{pr_number}/files",
+            f"repos/{_slug(owner, repo)}/pulls/{_num(pr_number)}/files",
             "--jq", ".[].filename",
         ]
     )
@@ -1094,29 +931,20 @@ def restamp_risk_pair(
     filetype_flag: str | None,
     depth_flag: str | None,
 ) -> list[str]:
-    """Make the PR's risk labels mirror the classifier's verdict — the K6 'restamp'.
-
-    Stamps the axis pair AND keeps the legacy sparse vocabulary in sync during the
-    transition (dependabot-rhythm still keys on risk/high; the K4 global exclusion —
-    risk/— XOR flags — holds by construction because the derived tier is single-valued).
-    Mutates ``labels`` in place and returns the actions taken."""
+    """Make the PR's risk labels mirror the classifier's verdict — the 'restamp'."""
+    # ``desired`` is the flat label for each fired axis: the filetype label if
+    # ``filetype_flag`` is set, plus the filedepth label if ``depth_flag`` is set. A `—/—`
+    # verdict (both None) yields an EMPTY desired set — a clear verdict stamps nothing and
+    # removes any stale risk/* label. ``managed`` is the full flat set, so managed-not-desired
+    # labels are removed. Mutates ``labels`` in place and returns the actions taken.
+    _validate_pair(filetype_flag, depth_flag)
     actions: list[str] = []
-    tier = _tier_from_pair(filetype_flag, depth_flag, True)
-    desired = {FILETYPE_PAIR_LABELS[filetype_flag], DEPTH_PAIR_LABELS[depth_flag]}
-    if tier == "clear":
-        desired.add(RISK_CLEAR_LABEL)
-    elif tier == "low":
-        desired.add(RISK_LOW_LABEL)
-    elif tier in ("high", "nope"):
-        desired.add(RISK_HIGH_LABEL)
-    # tier == "med": no legacy flag — binary-legacy high meant placement risk; the med
-    # lane holds via the pair itself during the transition.
-    managed = (
-        set(FILETYPE_PAIR_LABELS.values())
-        | set(DEPTH_PAIR_LABELS.values())
-        | RISK_FLAG_LABELS
-        | {RISK_CLEAR_LABEL}
-    )
+    desired: set[str] = set()
+    if filetype_flag is not None:
+        desired.add(FILETYPE_RISK_LABELS[filetype_flag])
+    if depth_flag is not None:
+        desired.add(DEPTH_RISK_LABELS[depth_flag])
+    managed = set(RISK_FLAG_LABELS)
     for label in sorted(desired - labels):
         _edit_label(pr_number, add=label)
         labels.add(label)
@@ -1134,9 +962,14 @@ def evaluate_review_state(
     now: datetime | None = None,
     grace_minutes: int = DEFAULT_GRACE_MINUTES,
     auto_resolve_reviewers: set[str] | None = None,
+    verdict: tuple[str | None, str | None] | None = None,
 ) -> dict[str, object]:
     """Return one machine-readable view of the PR's current review state."""
-
+    # ``verdict`` is an optional caller-supplied ``(filetype_flag, depth_flag)`` straight
+    # from the classifier — passed by the POST-classify evaluate calls so a `—/—` verdict
+    # is affirmatively clear even with zero labels. Without a verdict the flags are read off
+    # the labels, and an all-absent PR is ``unknown`` and HOLDS (never armed) — the safety
+    # property that absence of a label is not the clear state.
     label_names = {
         node["name"]
         for node in (pr.get("labels") or {}).get("nodes") or []
@@ -1171,18 +1004,23 @@ def evaluate_review_state(
     draft = bool(pr.get("isDraft"))
     blocking_review = review_decision == "CHANGES_REQUESTED"
     _assert_risk_marker_exclusive(label_names)
-    # K6/#632: the lane is the label PAIR (filetype axis x depth axis), with per-axis
-    # legacy fallback during the transition. The derived single tier keeps the old
-    # vocabulary alive for reports/consumers.
-    filetype_flag, depth_flag, pair_marked = _risk_pair_for_pr(label_names)
+    # The lane is the flat (filetype, depth) pair. A caller-supplied verdict (the classifier's
+    # fresh reading) is authoritative and always "marked" — so a `—/—` verdict is affirmatively
+    # clear even with zero labels. Without a verdict the flags are read off the labels, and an
+    # all-absent PR is NOT marked (unknown, holds — absence of a label is not the clear state).
+    if verdict is not None:
+        filetype_flag, depth_flag = verdict
+        pair_marked = True
+    else:
+        filetype_flag, depth_flag, pair_marked = _risk_pair_for_pr(label_names)
     risk_tier = _tier_from_pair(filetype_flag, depth_flag, pair_marked)
-    is_clear = risk_tier == "clear"
+    is_clear = pair_marked and filetype_flag is None and depth_flag is None
     low_risk = risk_tier == "low"
     merge_blocked = draft or blocking_review or current_unresolved > 0
     # K6 lane completion — flags are transient routing state, consumed as the PR clears
-    # its lane: an approving review with no current threads completes the lane, the
-    # engine clears the fired flag (projection restamps that axis to `—`), and the PR
-    # flows. depth:nope is NEVER auto-cleared — the still point is the sovereign's hand.
+    # its lane: an approving review with no current threads completes the lane, the engine
+    # clears the fired flag (the projection removes the fired flat risk/* label), and the PR
+    # flows. depth:nope is NEVER auto-cleared — it always requires a human merge.
     lane_complete = (
         review_decision == "APPROVED" and current_unresolved == 0 and not draft
     )
@@ -1248,7 +1086,6 @@ def apply_review_state_projection(
     clear_apply_pending: bool = False,
 ) -> list[str]:
     """Synchronize projection labels so they reflect the evaluated review state."""
-
     current_labels = set(state.get("labels") or [])
     actions: list[str] = []
 
@@ -1277,10 +1114,11 @@ def apply_review_state_projection(
         actions.append(f"remove:{DEFAULT_PENDING_LABEL}")
         current_labels.discard(DEFAULT_PENDING_LABEL)
 
-    # K6 clear-on-completion: the lane's review completed, so the fired flag is CONSUMED —
-    # restamp each fired axis to its `—` and retire contradicted legacy sparse flags. The
-    # next synchronize (new code) restamps from the classifier and re-enters the lane;
-    # with no new code the cleared pair arms and the PR flows. nope is never touched.
+    # Clear-on-completion: the lane's review completed, so the fired flag is CONSUMED —
+    # restamp to `—/—`, removing every risk/* flag (a clear verdict stamps none). The next
+    # synchronize (new code) restamps from the classifier and re-enters the lane; with no
+    # new code the cleared (label-free) PR becomes eligible and flows once the grace window
+    # elapses. nope is never flag_clearable.
     if bool(state.get("lane_complete")) and bool(state.get("flag_clearable")):
         actions.extend(
             restamp_risk_pair(pr_number, current_labels, None, None)
@@ -1304,23 +1142,23 @@ def apply_review_state_projection(
 def _resolve_outdated_resolvable_threads(
     pr: dict, looker: str | None = None, *, apply: bool = True
 ) -> list[dict[str, object]]:
-    """Attest-resolve every OUTDATED-RESOLVABLE thread on `pr` — bot-only and
-    GitHub-outdated (the commented lines no longer exist in the diff) — witnessed by
-    `looker` via `attest_and_resolve`. This is the same narrowest-safe slice the
-    engage-outdated backlog walk uses, factored so the on-push `sync-pr` event can clear
-    stale bot threads AS THEY GO OUTDATED — not only on a manual engage-outdated dispatch.
-
-    `looker` is who the resolution is witnessed as. Pass it when the caller already knows
-    the actor (engage-outdated resolves it once for the whole backlog walk). When omitted
-    (the sync-pr event path), it is resolved LAZILY via `_viewer_login()` only if an
-    outdated-resolvable thread is actually found — so a push with no stale threads (the
-    common case) costs no extra GraphQL round-trip.
-
-    Disposition-driven (`_thread_resolution_disposition`), so it covers any bot reviewer
-    (CodeRabbit/Codex/Copilot), unlike the legacy allowlist resolver. needs-fix /
-    apply-suggestion / needs-human / looked threads are never touched — a substantive
-    finding is a caught error to fix, not to dispose of. Never merges. Returns one result
-    dict per considered thread."""
+    """Attest-resolve every OUTDATED-RESOLVABLE thread on ``pr``."""
+    # Bot-only and GitHub-outdated (the commented lines no longer exist in the diff), witnessed
+    # by `looker` via `attest_and_resolve`. This is the same narrowest-safe slice the
+    # engage-outdated backlog walk uses, factored so the on-push `sync-pr` event can clear
+    # stale bot threads AS THEY GO OUTDATED — not only on a manual engage-outdated dispatch.
+    #
+    # `looker` is who the resolution is witnessed as. Pass it when the caller already knows
+    # the actor (engage-outdated resolves it once for the whole backlog walk). When omitted
+    # (the sync-pr event path), it is resolved LAZILY via `_viewer_login()` only if an
+    # outdated-resolvable thread is actually found — so a push with no stale threads (the
+    # common case) costs no extra GraphQL round-trip.
+    #
+    # Disposition-driven (`_thread_resolution_disposition`), so it covers any bot reviewer
+    # (CodeRabbit/Codex/Copilot), unlike the legacy allowlist resolver. needs-fix /
+    # apply-suggestion / needs-human / looked threads are never touched — a substantive
+    # finding is a caught error to fix, not to dispose of. Never merges. Returns one result
+    # dict per considered thread.
     results: list[dict[str, object]] = []
     for thread in (pr.get("reviewThreads") or {}).get("nodes") or []:
         if thread.get("isResolved"):
@@ -1372,7 +1210,7 @@ def _list_open_pr_numbers(owner: str, repo: str) -> list[int]:
                 "pr",
                 "list",
                 "--repo",
-                f"{owner}/{repo}",
+                _slug(owner, repo),
                 "--state",
                 "open",
                 "--limit",
@@ -1422,34 +1260,46 @@ def _build_reconciliation_report(
                 auto_resolve_reviewers=auto_resolve_reviewers,
             )
             # K6 restamp (#632) — this sweep IS the backfill automation: every open PR's
-            # risk labels are re-mirrored from the one classifier (pair + legacy kept in
-            # sync), so unmarked/stale-labeled in-flight PRs migrate without a hand-sweep.
-            # Skipped when the lane already completed (its flag was consumed). Fails SAFE
-            # per PR: a classification error leaves that PR's labels untouched.
+            # risk labels are re-mirrored from the one classifier, so unmarked/stale-labeled
+            # in-flight PRs migrate without a hand-sweep. The verdict is always fetched; only
+            # the restamp is skipped once the lane completed (its flag was consumed). A
+            # classification error skips the restamp and leaves labels as-is; the PR is then
+            # evaluated on its existing labels, so an unmarked PR reads `unknown` and fails
+            # CLOSED — the projection disarms it. Intentional: a transient failure self-heals
+            # on the next clean sweep; a persistent one correctly holds the PR.
             restamp_actions: list[str] = []
-            if not state.get("lane_complete"):
-                try:
-                    ft_flag, dp_flag = _classify_pr_pair(owner, repo, pr_number)
-                except Exception as exc:  # noqa: BLE001 — "do not restamp", never abort
-                    print(
-                        f"::warning::K6 restamp skipped for #{pr_number}: {exc}",
-                        file=sys.stderr,
-                    )
-                else:
+            try:
+                ft_flag, dp_flag = _classify_pr_pair(owner, repo, pr_number)
+            except Exception as exc:  # noqa: BLE001  # pylint: disable=broad-except
+                print(
+                    f"::warning::K6 restamp skipped for #{pr_number}: {exc}",
+                    file=sys.stderr,
+                )
+            else:
+                # Restamp only when the lane has NOT completed (a completed lane's flag is
+                # consumed by the projection; re-stamping would re-add it).
+                if not state.get("lane_complete"):
                     label_set = {
                         node["name"]
                         for node in (pr.get("labels") or {}).get("nodes") or []
                         if node.get("name")
                     }
                     restamp_actions = restamp_risk_pair(pr_number, label_set, ft_flag, dp_flag)
-                    if restamp_actions:
-                        pr["labels"] = {"nodes": [{"name": name} for name in sorted(label_set)]}
-                        state = evaluate_review_state(
-                            pr,
-                            now=now,
-                            grace_minutes=grace_minutes,
-                            auto_resolve_reviewers=auto_resolve_reviewers,
-                        )
+                    pr["labels"] = {"nodes": [{"name": name} for name in sorted(label_set)]}
+                # Re-evaluate with the verdict when the diff was (re)stamped, OR when a
+                # lane-complete PR carries NO risk/* flag (first-pass risk_tier == "unknown")
+                # — the consumed-clear (—/—) case, which must read affirmatively clear (not
+                # `unknown`) so it isn't wrongly disarmed. A lane-complete PR that STILL has a
+                # stale flag keeps its label-derived state so the projection consumes it; a
+                # verdict override there would leave the stale flag orphaned.
+                if not state.get("lane_complete") or state.get("risk_tier") == "unknown":
+                    state = evaluate_review_state(
+                        pr,
+                        now=now,
+                        grace_minutes=grace_minutes,
+                        auto_resolve_reviewers=auto_resolve_reviewers,
+                        verdict=(ft_flag, dp_flag),
+                    )
         except RiskMarkerInvariantError as exc:
             # The K4/K6 mutual-exclusion invariant tripped on THIS PR. Fail loud — record
             # it and surface a non-zero exit — but do NOT abort the sweep: one mis-labeled
@@ -1530,6 +1380,7 @@ def _build_reconciliation_report(
 
 
 def acknowledge_apply(args: argparse.Namespace) -> int:
+    """Mark a PR as waiting on follow-up commits after a trusted apply-changes request."""
     ensure_labels()
 
     if not APPLY_RE.search(args.comment_body or ""):
@@ -1564,6 +1415,7 @@ def acknowledge_apply(args: argparse.Namespace) -> int:
 
 
 def sync_pr(args: argparse.Namespace) -> int:
+    """Recompute review-derived state after PR updates and sync projection labels."""
     ensure_labels()
 
     auto_resolve_reviewers = _csv_env(
@@ -1594,34 +1446,44 @@ def sync_pr(args: argparse.Namespace) -> int:
         auto_resolve_reviewers=auto_resolve_reviewers,
     )
 
-    # K6 restamp-on-sync (#632): risk labels mirror the CURRENT diff, from the one
-    # classifier — unless the lane already completed (its flag was consumed; only new
-    # code re-enters the lane). Fails SAFE: a classification error leaves labels
-    # untouched (an unmarked PR holds; nothing arms off a failed classification).
+    # K6 restamp-on-sync (#632): risk labels mirror the CURRENT diff from the one classifier.
+    # The verdict is always fetched (so a consumed-clear lane reads clear, not unknown); only
+    # the restamp is skipped once the lane completed (its flag was consumed). A classification
+    # error skips the restamp and leaves labels as-is; the PR is then evaluated on its existing
+    # labels, so an unmarked PR reads `unknown` and fails CLOSED — the projection disarms it.
+    # Intentional: a transient failure self-heals on the next clean sweep; a persistent one holds.
     restamp_actions: list[str] = []
-    if not state.get("lane_complete"):
-        try:
-            ft_flag, dp_flag = _classify_pr_pair(args.owner, args.repo, args.pr_number)
-        except Exception as exc:  # noqa: BLE001 — any failure means "do not restamp"
-            print(
-                f"::warning::K6 restamp skipped for #{args.pr_number} "
-                f"(classification failed; labels left as-is): {exc}",
-                file=sys.stderr,
-            )
-        else:
+    try:
+        ft_flag, dp_flag = _classify_pr_pair(args.owner, args.repo, args.pr_number)
+    except Exception as exc:  # noqa: BLE001  # pylint: disable=broad-except
+        print(
+            f"::warning::K6 restamp skipped for #{args.pr_number} "
+            f"(classification failed; labels left as-is): {exc}",
+            file=sys.stderr,
+        )
+    else:
+        # Restamp only when the lane has NOT completed (a completed lane's flag is consumed
+        # by the projection; re-stamping would re-add it).
+        if not state.get("lane_complete"):
             label_set = {
                 node["name"]
                 for node in (pr.get("labels") or {}).get("nodes") or []
                 if node.get("name")
             }
             restamp_actions = restamp_risk_pair(args.pr_number, label_set, ft_flag, dp_flag)
-            if restamp_actions:
-                pr["labels"] = {"nodes": [{"name": name} for name in sorted(label_set)]}
-                state = evaluate_review_state(
-                    pr,
-                    grace_minutes=args.grace_minutes,
-                    auto_resolve_reviewers=auto_resolve_reviewers,
-                )
+            pr["labels"] = {"nodes": [{"name": name} for name in sorted(label_set)]}
+        # Re-evaluate with the verdict when the diff was (re)stamped, OR when a lane-complete
+        # PR carries NO risk/* flag (first-pass risk_tier == "unknown") — the consumed-clear
+        # (—/—) case, which must read affirmatively clear (not `unknown`) so it isn't wrongly
+        # disarmed. A lane-complete PR that STILL has a stale flag keeps its label-derived
+        # state so the projection consumes it; a verdict override there would orphan the flag.
+        if not state.get("lane_complete") or state.get("risk_tier") == "unknown":
+            state = evaluate_review_state(
+                pr,
+                grace_minutes=args.grace_minutes,
+                auto_resolve_reviewers=auto_resolve_reviewers,
+                verdict=(ft_flag, dp_flag),
+            )
 
     clear_pending = (
         args.sync_actor in completion_actors and bool(state["has_copilot_apply_pending"])
@@ -1657,6 +1519,7 @@ def sync_pr(args: argparse.Namespace) -> int:
 
 
 def review_submitted(args: argparse.Namespace) -> int:
+    """Recompute review state after a submitted review; pause auto-merge on a real block."""
     ensure_labels()
 
     auto_resolve_reviewers = _csv_env(
@@ -1710,6 +1573,7 @@ def review_submitted(args: argparse.Namespace) -> int:
 
 
 def promote_ready(args: argparse.Namespace) -> int:
+    """Run scheduled reconciliation (compatibility alias for reconcile-open-prs)."""
     ensure_labels()
     auto_resolve_reviewers = _csv_env(
         "AUTO_RESOLVE_REVIEWERS",
@@ -1727,6 +1591,7 @@ def promote_ready(args: argparse.Namespace) -> int:
 
 
 def reconcile_open_prs(args: argparse.Namespace) -> int:
+    """Rescan open-PR truth, repair drifted labels, and arm eligible PRs for the queue."""
     ensure_labels()
     auto_resolve_reviewers = _csv_env(
         "AUTO_RESOLVE_REVIEWERS",
@@ -1745,6 +1610,7 @@ def reconcile_open_prs(args: argparse.Namespace) -> int:
 
 
 def enable_auto_merge(args: argparse.Namespace) -> int:
+    """Arm an eligible PR for the merge queue."""
     ensure_labels()
     auto_resolve_reviewers = _csv_env(
         "AUTO_RESOLVE_REVIEWERS",
@@ -1796,9 +1662,9 @@ def _fetch_pr_merge_state(owner: str, repo: str, pr_number: int) -> dict:
         "gh",
         "pr",
         "view",
-        str(pr_number),
+        _num(pr_number),
         "--repo",
-        f"{owner}/{repo}",
+        _slug(owner, repo),
         "--json",
         "mergeable,mergeStateStatus,statusCheckRollup,isDraft,number",
     ]
@@ -1811,7 +1677,7 @@ def _list_pr_comment_bodies(owner: str, repo: str, pr_number: int) -> list[str]:
     cmd = [
         "gh",
         "api",
-        f"repos/{owner}/{repo}/issues/{pr_number}/comments",
+        f"repos/{_slug(owner, repo)}/issues/{_num(pr_number)}/comments",
         "--paginate",
     ]
     try:
@@ -1826,10 +1692,14 @@ def _list_pr_comment_bodies(owner: str, repo: str, pr_number: int) -> list[str]:
 
 
 def _has_prior_verify_comment(owner: str, repo: str, pr_number: int) -> bool:
-    return any(VERIFY_CLAIM_MARKER in body for body in _list_pr_comment_bodies(owner, repo, pr_number))
+    return any(
+        VERIFY_CLAIM_MARKER in body
+        for body in _list_pr_comment_bodies(owner, repo, pr_number)
+    )
 
 
 def verify_claim(args: argparse.Namespace) -> int:
+    """Flag divergence between an agent completion-claim comment and the PR's real state."""
     body = args.comment_body or ""
 
     # Recursion guard: skip if the trigger comment IS a prior verification comment.
@@ -1909,152 +1779,15 @@ def verify_claim(args: argparse.Namespace) -> int:
     return 0
 
 
-def list_unlooked(args: argparse.Namespace) -> int:
-    """Print the looker queue across open PRs. Read-only: resolves nothing.
-
-    Layer A of the look-then-resolve design (#399). Surfaces unresolved review
-    threads that still need a looker, without touching any thread. Coverage is
-    bounded by `_fetch_pr` (up to the first 100 threads and 100 comments per
-    PR); deep cursor pagination is a follow-up if any PR exceeds those bounds.
-    Each thread carries a `looked` flag, so consumers can filter the queue.
-    """
-    threads: list[dict[str, object]] = []
-    for pr_number in _list_open_pr_numbers(args.owner, args.repo):
-        threads.extend(_build_looker_queue(_fetch_pr(args.owner, args.repo, pr_number)))
-    unlooked = [item for item in threads if not item["looked"]]
-    print(
-        json.dumps(
-            {
-                "open_threads": len(threads),
-                "unlooked_threads": len(unlooked),
-                "threads": threads,
-            }
-        )
-    )
-    return 0
-
-
 def _thread_belongs_to_pr(thread: dict, owner: str, repo: str, pr_number: int) -> bool:
-    """True if a thread's comment links place it on owner/repo PR #pr_number.
-
-    `_fetch_thread` resolves a *global* node id, so a stray or hostile id could point at
-    a thread on a different PR/repo; membership is verified before acting on it.
-    """
+    """Report whether a thread's comment links place it on owner/repo PR #pr_number."""
+    # `_fetch_thread` resolves a *global* node id, so a stray or hostile id could point at
+    # a thread on a different PR/repo; membership is verified before acting on it.
     expected = f"/{owner}/{repo}/pull/{pr_number}".lower()
     for comment in (thread.get("comments") or {}).get("nodes") or []:
         if expected in (comment.get("url") or "").lower():
             return True
     return False
-
-
-def looker_walk(args: argparse.Namespace) -> int:
-    """Walk every open PR and print the looker triage report. Read-only — resolves nothing.
-
-    Layer C of the look-then-resolve design (#399): turns the open-PR backlog into a
-    classified worklist (clear / machine-disposable / would-cascade / needs-human, plus a
-    stale/abandonment flag) so the backlog drains *with* judgment. This command WRITES
-    NOTHING; the guarded disposition path is `attest-resolve` (B2), gated separately. The
-    `safe_to_drain` list names the PRs a deterministic apply pass could clear without a
-    cascade or touching a human thread.
-    """
-    now = datetime.now(timezone.utc)
-    reports = [
-        _classify_pr_for_looker(
-            _fetch_pr(args.owner, args.repo, pr_number),
-            now=now,
-            stale_days=args.stale_days,
-        )
-        for pr_number in _list_open_pr_numbers(args.owner, args.repo)
-    ]
-    by_lane: dict[str, int] = {}
-    by_resolution: dict[str, int] = {}
-    for report in reports:
-        by_lane[str(report["lane"])] = by_lane.get(str(report["lane"]), 0) + 1
-        for key, count in (report.get("resolution_counts") or {}).items():
-            by_resolution[key] = by_resolution.get(key, 0) + int(count)
-    print(
-        json.dumps(
-            {
-                "open_prs": len(reports),
-                "by_lane": by_lane,
-                # backlog-wide thread breakdown by how each gets resolved: how much
-                # the engine can auto-apply vs. what needs a real agent fix vs. human.
-                "by_resolution": by_resolution,
-                "stale": sum(1 for report in reports if report["stale"]),
-                "safe_to_drain": [report["pr"] for report in reports if report["safe_to_drain"]],
-                "reports": reports,
-            }
-        )
-    )
-    return 0
-
-
-def render_looker_worklist(report: dict) -> str:
-    """Render a looker-walk report (the `looker_walk` JSON) as a markdown worklist. Pure.
-
-    A read-only triage surface for a durable issue: the open-PR backlog grouped by lane
-    and by resolution disposition, so a looker can drain it with judgment. Resolves
-    nothing and decides nothing — it only makes the deterministic census legible.
-    """
-
-    def _counts(mapping: dict) -> str:
-        return " · ".join(f"{key}: {value}" for key, value in sorted(mapping.items())) or "none"
-
-    open_prs = int(report.get("open_prs") or 0)
-    stale = int(report.get("stale") or 0)
-    safe = report.get("safe_to_drain") or []
-    reports = report.get("reports") or []
-
-    lines = [
-        "## Looker Worklist — review-thread triage (read-only)",
-        "",
-        "> Deterministic census of open PRs. **No threads resolved, no PRs merged.**",
-        "> The gated apply pass (`attest-resolve --apply`) is a separate decision.",
-        "",
-        f"- **Open PRs:** {open_prs} · **stale:** {stale}",
-        f"- **By lane:** {_counts(report.get('by_lane') or {})}",
-        f"- **By resolution:** {_counts(report.get('by_resolution') or {})}",
-        "",
-        "### `safe_to_drain` — bare-resolvable, non-stale (a gated apply pass could clear)",
-    ]
-    lines.extend([f"- #{pr}" for pr in safe] or ["- none"])
-    lines.append("")
-    lines.append("### Per-PR worklist (PRs not in the `clear` lane)")
-    # Filter on lane, NOT visible unresolved count: a PR whose thread list is truncated
-    # past page 1 is lane `needs-human` with possibly 0 *visible* unresolved threads — it
-    # must still surface, because the census cannot prove it is clear. (codex on #531.)
-    actionable = sorted(
-        (r for r in reports if r.get("lane") != "clear"),
-        key=lambda r: int(r.get("pr") or 0),
-    )
-    if actionable:
-        for r in actionable:
-            flags = [
-                flag
-                for flag, on in (
-                    ("stale", r.get("stale")),
-                    ("auto-merge-armed", r.get("auto_merge_armed")),
-                    ("threads-truncated", r.get("threads_truncated")),
-                )
-                if on
-            ]
-            flag_s = f" _({', '.join(flags)})_" if flags else ""
-            lines.append(
-                f"- **#{r.get('pr')}** — lane `{r.get('lane')}` · "
-                f"{int(r.get('unresolved_threads') or 0)} unresolved "
-                f"({_counts(r.get('resolution_counts') or {})}){flag_s}"
-            )
-    else:
-        lines.append("- none — every open PR is in the `clear` lane.")
-    lines.append("")
-    return "\n".join(lines)
-
-
-def render_worklist(args: argparse.Namespace) -> int:
-    """Read a looker-walk JSON report (file or stdin) and print the markdown worklist."""
-    raw = args.input.read() if args.input else sys.stdin.read()
-    print(render_looker_worklist(json.loads(raw or "{}")))
-    return 0
 
 
 def attest_resolve(args: argparse.Namespace) -> int:
@@ -2103,38 +1836,35 @@ def attest_resolve(args: argparse.Namespace) -> int:
 
 
 def _positive_int(value: str) -> int:
-    """argparse type: a strictly positive integer (e.g. --stale-days).
-
-    A non-positive staleness window misclassifies every PR (<=0 marks all stale,
-    making nothing safe to drain), so it is rejected at parse time.
-    """
+    """Parse a strictly positive integer for an argparse option (e.g. --stale-days)."""
+    # A non-positive staleness window misclassifies every PR (<=0 marks all stale,
+    # making nothing safe to drain), so it is rejected at parse time.
     try:
         parsed = int(value)
-    except (TypeError, ValueError):
-        raise argparse.ArgumentTypeError(f"invalid int value: {value!r}")
+    except (TypeError, ValueError) as exc:
+        raise argparse.ArgumentTypeError(f"invalid int value: {value!r}") from exc
     if parsed <= 0:
         raise argparse.ArgumentTypeError("must be a positive integer")
     return parsed
 
 
 def engage_outdated(args: argparse.Namespace) -> int:
-    """Engage the queue on the OUTDATED subset: attest-resolve every outdated-resolvable
-    thread across open PRs. Dry-run unless --apply.
-
-    The first 'engage' step (Logan: the queue runs by default; reviewer comments are what
-    keep a PR hanging). Scope is deliberately the narrowest safe slice — ONLY threads whose
-    resolution disposition is `outdated-resolvable` (bot-only, GitHub-outdated: the
-    commented lines no longer exist in the diff). Each is cleared via `attest_and_resolve`
-    with a recorded attestation by the looker — the `--looker` value, defaulting to the
-    authenticated actor (`_viewer_login()`) — so it is a *witnessed* resolution,
-    not the blind reconciler. needs-fix / apply-suggestion / looked / human threads are
-    never touched — needs-fix is the reviewer gate that keeps a PR hanging. This NEVER
-    merges; if clearing the last thread lets an armed PR flow, that is GitHub's auto-merge,
-    by design (the engaged queue).
-
-    --pr scopes the pass to a single PR number (the guinea-pig case: prove one PR clean
-    before widening to the whole backlog); default is every open PR.
-    """
+    """Engage the queue on the OUTDATED subset across open PRs."""
+    # Attest-resolve every outdated-resolvable thread; dry-run unless --apply.
+    #
+    # The first 'engage' step (Logan: the queue runs by default; reviewer comments are what
+    # keep a PR hanging). Scope is deliberately the narrowest safe slice — ONLY threads whose
+    # resolution disposition is `outdated-resolvable` (bot-only, GitHub-outdated: the
+    # commented lines no longer exist in the diff). Each is cleared via `attest_and_resolve`
+    # with a recorded attestation by the looker — the `--looker` value, defaulting to the
+    # authenticated actor (`_viewer_login()`) — so it is a *witnessed* resolution,
+    # not the blind reconciler. needs-fix / apply-suggestion / looked / human threads are
+    # never touched — needs-fix is the reviewer gate that keeps a PR hanging. This NEVER
+    # merges; if clearing the last thread lets an armed PR flow, that is GitHub's auto-merge,
+    # by design (the engaged queue).
+    #
+    # --pr scopes the pass to a single PR number (the guinea-pig case: prove one PR clean
+    # before widening to the whole backlog); default is every open PR.
     considered: list[dict[str, object]] = []
     # Resolve the looker once: default to the authenticated actor so the witness names
     # whoever actually ran the engine (agent token or CI bot), truthfully.
@@ -2203,7 +1933,7 @@ def reconcile_witness(args: argparse.Namespace) -> int:
             if not _thread_is_bot_only(thread):
                 continue
             try:
-                result = backfill_witness(pr, thread, looker, rationale, apply=args.apply)
+                result = backfill_witness(thread, looker, rationale, apply=args.apply)
             except RuntimeError as exc:
                 result = {
                     "thread_id": thread.get("id"),
@@ -2228,6 +1958,7 @@ def reconcile_witness(args: argparse.Namespace) -> int:
 
 
 def build_parser() -> argparse.ArgumentParser:
+    """Build the argparse parser for the review-feedback-loop subcommands."""
     parser = argparse.ArgumentParser()
     subparsers = parser.add_subparsers(dest="command", required=True)
 
@@ -2282,27 +2013,6 @@ def build_parser() -> argparse.ArgumentParser:
     verify.add_argument("--comment-author", default="")
     verify.add_argument("--comment-body", default="")
 
-    unlooked = subparsers.add_parser("list-unlooked")
-    unlooked.add_argument("--owner", required=True)
-    unlooked.add_argument("--repo", required=True)
-
-    walk = subparsers.add_parser("looker-walk")
-    walk.add_argument("--owner", required=True)
-    walk.add_argument("--repo", required=True)
-    walk.add_argument(
-        "--stale-days",
-        type=_positive_int,
-        default=LOOKER_STALE_DAYS,
-        help="days of inactivity before a PR is flagged stale (positive int)",
-    )
-
-    worklist = subparsers.add_parser("render-worklist")
-    worklist.add_argument(
-        "--input",
-        type=argparse.FileType("r"),
-        default=None,
-        help="looker-walk JSON file to render (default: stdin)",
-    )
 
     attest = subparsers.add_parser("attest-resolve")
     attest.add_argument("--owner", required=True)
@@ -2372,6 +2082,7 @@ def build_parser() -> argparse.ArgumentParser:
 
 
 def main() -> int:
+    """Parse CLI arguments and dispatch to the selected subcommand."""
     args = build_parser().parse_args()
     if args.command == "ensure-labels":
         ensure_labels()
@@ -2388,12 +2099,6 @@ def main() -> int:
         return reconcile_open_prs(args)
     if args.command == "verify-claim":
         return verify_claim(args)
-    if args.command == "list-unlooked":
-        return list_unlooked(args)
-    if args.command == "looker-walk":
-        return looker_walk(args)
-    if args.command == "render-worklist":
-        return render_worklist(args)
     if args.command == "attest-resolve":
         return attest_resolve(args)
     if args.command == "engage-outdated":
@@ -2406,6 +2111,6 @@ def main() -> int:
 if __name__ == "__main__":
     try:
         raise SystemExit(main())
-    except Exception as exc:  # pragma: no cover - workflow-facing failure path
+    except Exception as exc:  # pragma: no cover  # pylint: disable=broad-except
         print(f"review_feedback_loop.py failed: {exc}", file=sys.stderr)
         raise
