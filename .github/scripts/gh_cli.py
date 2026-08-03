@@ -10,7 +10,7 @@ import it instead of each keeping their own.
 
 from __future__ import annotations
 
-import subprocess  # nosec B404 -- see [tool.bandit] note in pyproject.toml
+import subprocess
 
 
 _ALLOWED_EXECUTABLES: set[str] = {"gh"}
