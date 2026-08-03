@@ -46,6 +46,17 @@ type = "crew"
 [tool.ruff]
 line-length = 100
 target-version = "py310"
+# uv.lock is TOML, not Python. Ruff's normal *.py extension-based file
+# discovery already skips it when run as `ruff check .` -- this exists
+# because some callers (verified: Codacy's Ruff integration, PR #891 run
+# 91770995487, 152 bogus "invalid-syntax" alerts) invoke Ruff with the
+# file's path passed explicitly, and Ruff's own documented behavior is to
+# ignore its exclude patterns for explicitly-passed paths unless
+# force-exclude is set. This teaches Ruff itself, so it's correct for any
+# invocation -- Codacy's, CI's, or a developer's local `ruff check <path>`
+# -- not just a review-platform-level exclusion of the alert.
+extend-exclude = ["uv.lock"]
+force-exclude = true
 
 [tool.pytest.ini_options]
 # Make the CI scripts dir an import root so test modules (which load the scripts
