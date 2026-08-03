@@ -1,13 +1,17 @@
-"""
-Scheme guards on the urlopen call sites.
+"""Scheme guards on the urlopen call sites."""
 
-`urllib.request.urlopen` honours `file://` and `ftp://`, so a URL that reaches
-it decides whether the call is a network request or a local-disk read. These
-scripts take their URLs from an environment variable, a CLI flag, and a
-caller-supplied list respectively -- all operator-controlled today, none of
-them constrained by the type system tomorrow. The scheme is settled where the
-URL enters rather than assumed from where it came.
-"""
+# Deliberately a one-line docstring: Codacy runs D212 (summary on the first
+# line) and D213 (summary on the second) together, and no multi-line docstring
+# satisfies both -- moving the summary to line 2 to clear D213 raised D212.
+# A single-line docstring makes neither rule applicable, so the prose lives
+# here instead of being lost.
+#
+# `urllib.request.urlopen` honours `file://` and `ftp://`, so a URL that
+# reaches it decides whether the call is a network request or a local-disk
+# read. These scripts take their URLs from an environment variable, a CLI
+# flag, and a caller-supplied list respectively -- all operator-controlled
+# today, none of them constrained by the type system tomorrow. The scheme is
+# settled where the URL enters rather than assumed from where it came.
 
 from __future__ import annotations
 
@@ -53,12 +57,10 @@ class SlackWebhookSchemeTest(unittest.TestCase):
 
 
 class HealthProbeSchemeTest(unittest.TestCase):
-    """
-    Cover the probe's own scheme check.
+    """Cover the probe's own scheme check."""
 
-    `main` takes any Iterable[ServiceSpec], so the module defaults are not the
-    only URLs that reach the probe.
-    """
+    # `main` takes any Iterable[ServiceSpec], so the module's four literal
+    # URLs are not the only ones that reach the probe.
 
     def test_file_scheme_is_reported_unreachable_without_opening_it(self) -> None:
         result = health_monitor.check_service(
