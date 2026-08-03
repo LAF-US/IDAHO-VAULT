@@ -446,9 +446,9 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         #
         # The contract is that the engine owns the risk NAMESPACE, whatever vocabulary
         # happens to live in it. `test_restamp_sweeps_a_vocabulary_the_code_has_never_seen`
-        # is the test that states it, and it fails against a lookup table. If you are about
-        # to make this test pass by enumerating labels in the engine, that one will stop
-        # you — which is the point. Do not enumerate there to satisfy the enumeration here.
+        # is the test that states it, and it fails against a lookup table. An engine that
+        # enumerates labels to satisfy this test would still fail that vocabulary sweep,
+        # which is the point of keeping both tests.
         #
         # Non-risk labels stay untouched throughout.
         retired = {
