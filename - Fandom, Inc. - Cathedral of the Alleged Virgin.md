@@ -31,7 +31,7 @@ When [Lemony Snicket](https://snicket.fandom.com/wiki/Lemony_Snicket "Lemony Sni
 
 - The Cathedral is likely a Catholic Cathedral dedicated to [Mary, mother of Jesus](https://en.wikipedia.org/wiki/Mary,_mother_of_Jesus "wikipedia:Mary, mother of Jesus"), a patron saint in the Catholic religion. Mary is believed by Catholics and Christians to be a virgin who miraculously gave birth to the son of God; the name of "Alleged Virgin" is a skeptical crack at this belief, along with beliefs for alleged "virgin" saints.
 - On the map, footsteps are drawn near the cathedral.
-- A sign pointing to the Cathedral of the Alleged Virgin can be seen in the [V.F.D. tunnels](https://snicket.fandom.com/wiki/V.F.D._tunnels "V.F.D. tunnels") in the Netflix adaptation in (at least) [A Bad Beginning: Part One](https://snicket.fandom.com/wiki/A_Bad_Beginning:_Pa***REMOVED***One "A Bad Beginning: Part One").
+- A sign pointing to the Cathedral of the Alleged Virgin can be seen in the [V.F.D. tunnels](https://snicket.fandom.com/wiki/V.F.D._tunnels "V.F.D. tunnels") in the Netflix adaptation in (at least) [A Bad Beginning: Part One](https://snicket.fandom.com/wiki/A_Bad_Beginning:_Part_One "A Bad Beginning: Part One").
 
 ## Gallery
 

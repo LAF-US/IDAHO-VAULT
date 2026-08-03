@@ -126,54 +126,49 @@ Use the gcloud CLI to create a service account and attach it to your resource:
 
 1. [Install](https://docs.cloud.google.com/sdk/docs/install) the Google Cloud CLI. After installation, [initialize](https://docs.cloud.google.com/sdk/docs/initializing) the Google Cloud CLI by running the following command:
 
- ```
- gcloud init
- ```
+   ```
+   gcloud init
+   ```
 
- If you're using an external identity provider (IdP), you must first [sign in to the gcloud CLI with your federated identity](https://docs.cloud.google.com/iam/docs/workforce-log-in-gcloud).
+   If you're using an external identity provider (IdP), you must first [sign in to the gcloud CLI with your federated identity](https://docs.cloud.google.com/iam/docs/workforce-log-in-gcloud).
 2. Set up authentication:
+   1. Ensure that you have the Create Service Accounts IAM role (`roles/iam.serviceAccountCreator`) and the Project IAM Admin role (`roles/resourcemanager.projectIamAdmin`). [Learn how to grant roles](https://docs.cloud.google.com/iam/docs/granting-changing-revoking-access).
+   2. Create the service account:
 
- 1. Ensure that you have the Create Service Accounts IAM role (`roles/iam.serviceAccountCreator`) and the Project IAM Admin role (`roles/resourcemanager.projectIamAdmin`). [Learn how to grant roles](https://docs.cloud.google.com/iam/docs/granting-changing-revoking-access).
- 2. Create the service account:
+    ```
+    gcloud iam service-accounts create SERVICE_ACCOUNT_NAME
+    ```
 
-  ```
-  gcloud iam service-accounts create SERVICE_ACCOUNT_NAME
-  ```
+    Replace `SERVICE_ACCOUNT_NAME` with a name for the service account.
+    3. To provide access to your project and your resources, grant a role to the service account:
 
-  Replace `SERVICE_ACCOUNT_NAME` with a name for the service account.
-  3. To provide access to your project and your resources, grant a role to the service account:
+    ```
+    gcloud projects add-iam-policy-binding PROJECT_ID --member="serviceAccount:SERVICE_ACCOUNT_NAME@PROJECT_ID.iam.gserviceaccount.com" --role=ROLE
+    ```
 
-  ```
-  gcloud projects add-iam-policy-binding PROJECT_ID --member="serviceAccount:SERVICE_ACCOUNT_NAME@PROJECT_ID.iam.gserviceaccount.com" --role=ROLE
-  ```
+    Replace the following:
+    - `SERVICE_ACCOUNT_NAME`: the name of the service account
+      - `PROJECT_ID`: the project ID where you created the service account
+      - `ROLE`: the role to grant
+    1. To grant another role to the service account, run the command as you did in the previous step.
+    2. Grant the required role to the principal that will attach the service account to other resources.
 
-  Replace the following:
+    ```
+    gcloud iam service-accounts add-iam-policy-binding SERVICE_ACCOUNT_NAME@PROJECT_ID.iam.gserviceaccount.com --member="user:USER_EMAIL" --role=roles/iam.serviceAccountUser
+    ```
 
-- `SERVICE_ACCOUNT_NAME`: the name of the service account
-  - `PROJECT_ID`: the project ID where you created the service account
-  - `ROLE`: the role to grant
+    Replace the following:
+    - `SERVICE_ACCOUNT_NAME`: the name of the service account
+      - `PROJECT_ID`: the project ID where you created the service account
+      - `USER_EMAIL`: the email address for a Google Account
+3. Create the resource that will run your code, and attach the service account to that resource. For example, if you use Compute Engine: Create a Compute Engine instance. Configure the instance as follows:
+   - Replace `INSTANCE_NAME` with your preferred instance name.
+   - Set the `--zone` flag to the [zone](https://docs.cloud.google.com/compute/docs/zones#available) in which you want to create your instance.
+   - Set the `--service-account` flag to the email address for the service account that you created.
 
-  1. To grant another role to the service account, run the command as you did in the previous step.
-  2. Grant the required role to the principal that will attach the service account to other resources.
-
-  ```
-  gcloud iam service-accounts add-iam-policy-binding SERVICE_ACCOUNT_NAME@PROJECT_ID.iam.gserviceaccount.com --member="user:USER_EMAIL" --role=roles/iam.serviceAccountUser
-  ```
-
-  Replace the following:
-
-- `SERVICE_ACCOUNT_NAME`: the name of the service account
-  - `PROJECT_ID`: the project ID where you created the service account
-  - `USER_EMAIL`: the email address for a Google Account
-1. Create the resource that will run your code, and attach the service account to that resource. For example, if you use Compute Engine: Create a Compute Engine instance. Configure the instance as follows:
-
-- Replace `INSTANCE_NAME` with your preferred instance name.
-- Set the `--zone` flag to the [zone](https://docs.cloud.google.com/compute/docs/zones#available) in which you want to create your instance.
-- Set the `--service-account` flag to the email address for the service account that you created.
-
- ```
- gcloud compute instances create INSTANCE_NAME --zone=ZONE --service-account=SERVICE_ACCOUNT_EMAIL
- ```
+   ```
+   gcloud compute instances create INSTANCE_NAME --zone=ZONE --service-account=SERVICE_ACCOUNT_EMAIL
+   ```
 
 For more information about authenticating to Google APIs, see [Authentication methods](https://docs.cloud.google.com/docs/authentication).
 
@@ -188,11 +183,11 @@ Services that don't require a principal can use API keys for authentication.
 To create an API key for an AI application, do the following:
 
 1. In the Google Cloud console, go to the **APIs & Services > Credentials** page.
- [Go Credentials](https://console.cloud.google.com/projectselector2/apis/credentials?supportedpurview=project)
+   [Go Credentials](https://console.cloud.google.com/projectselector2/apis/credentials?supportedpurview=project)
 2. Click **Create credentials** and then select **API key**.
 3. In the **API key created** dialog, click **Edit API key**.
-4. Edit the API Key **Application restrictions**. Application restrictions limit an API key's usage to specific websites, IP addresses, Android applications, or iOS applications. You can set one application restriction per key.
-5. Edit the API key **API restrictions**. API restrictions specify the enabled APIs that the key can call.
-6. Click **Save**.
+   1. Edit the API Key **Application restrictions**. Application restrictions limit an API key's usage to specific websites, IP addresses, Android applications, or iOS applications. You can set one application restriction per key.
+   2. Edit the API key **API restrictions**. API restrictions specify the enabled APIs that the key can call.
+4. Click **Save**.
 
 Your AI application can use the API key to authenticate to Google and Google Cloud services. To keep your API key secure, follow the [best practices for securely using API keys](https://support.google.com/googleapi/answer/6310037).

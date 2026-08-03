@@ -1,11 +1,9 @@
-# LEVELSET-CURRENT
-
 ---
 author:
-
-- "[[Logan A. Finney]]"
-
+  - "[[Logan A. Finney]]"
 ---
+
+# LEVELSET-CURRENT
 
 By its very nature, the "LEVELSET" protocolset produces a momentary snapshot of an instant.
 
@@ -14,4 +12,7 @@ By its very nature, the "LEVELSET" protocolset produces a momentary snapshot of 
 The LEVELSET is a RECORDING and CONTEXTUALIZING device, not a CURRENT LIVE DASH.
 
 ---
-THE WORLD IS QUIET HERE.
+
+```
+The world is quiet here．Esto Perpetua!
+```

@@ -42,7 +42,7 @@ A complete CSV export system for the Idaho Legislature scraper that generates da
 **Changes:**
 
 - Added `csv` module import
-- New `expo***REMOVED***bills_to_csv()` function (lines 1273-1330)
+- New `export_bills_to_csv()` function (lines 1273-1330)
   - Accepts bill list from `get_bill_list()`
   - Writes to CSV with 11 columns
   - Properly sanitizes all text fields

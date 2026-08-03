@@ -29,14 +29,36 @@ BOT_BRANCH_PREFIXES = {
 STALE_LIFECYCLE_STATE = "abandoned"
 
 
+def _run(cmd: list[str]) -> str:
+    try:
+        result = subprocess.run(
+            cmd, check=True, capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=60
+        )
+    except subprocess.TimeoutExpired as exc:
+        raise RuntimeError(f"{cmd[0]} timed out after 60s") from exc
+    except subprocess.CalledProcessError as exc:
+        raise RuntimeError((exc.stderr or "").strip() or f"{cmd[0]} failed") from exc
+    except OSError as exc:
+        raise RuntimeError(f"{cmd[0]} could not run: {exc}") from exc
+    return result.stdout
+
+
 def run_json(cmd: list[str]) -> object:
-    result = subprocess.run(cmd, check=True, capture_output=True, text=True)
-    return json.loads(result.stdout)
+    output = _run(cmd)
+    try:
+        return json.loads(output)
+    except json.JSONDecodeError as exc:
+        raise RuntimeError(f"{cmd[0]} produced invalid JSON: {exc}") from exc
 
 
 def run_text(cmd: list[str]) -> str:
-    result = subprocess.run(cmd, check=True, capture_output=True, text=True)
-    return result.stdout.strip()
+    return _run(cmd).strip()
+
+
+CLOSE_COMMENT = (
+    "Closing automatically: stale bot PR, not merge-clean, and older than the allowed age threshold. "
+    "A fresh bot PR can be regenerated later if the update is still desired."
+)
 
 
 def parse_args() -> argparse.Namespace:
@@ -44,13 +66,6 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--age-days", type=int, default=2)
     parser.add_argument("--apply", action="store_true")
     parser.add_argument("--report-path", type=Path, required=True)
-    parser.add_argument(
-        "--comment",
-        default=(
-            "Closing automatically: stale bot PR, not merge-clean, and older than the allowed age threshold. "
-            "A fresh bot PR can be regenerated later if the update is still desired."
-        ),
-    )
     return parser.parse_args()
 
 
@@ -115,8 +130,11 @@ def main() -> int:
         if author not in BOT_LOGINS:
             continue
 
-        merge_info = run_json(["gh", "pr", "view", str(pr["number"]), "--json", "mergeStateStatus"])
-        merge_state_by_number[int(pr["number"])] = str(merge_info["mergeStateStatus"])
+        # int-coerce BEFORE argv: makes "the PR number is digits, never
+        # option-shaped" a type-enforced invariant rather than trust in the API.
+        pr_number = int(pr["number"])
+        merge_info = run_json(["gh", "pr", "view", str(pr_number), "--json", "mergeStateStatus"])
+        merge_state_by_number[pr_number] = str(merge_info["mergeStateStatus"])
 
     stale = find_stale_bot_prs(
         open_prs,
@@ -129,16 +147,15 @@ def main() -> int:
         ensure_labels()
         for pr in stale:
             set_state(int(pr["number"]), str(pr["lifecycle_state"]))
-            subprocess.run(
+            run_text(
                 [
                     "gh",
                     "pr",
                     "close",
                     str(pr["number"]),
                     "--comment",
-                    args.comment,
-                ],
-                check=True,
+                    CLOSE_COMMENT,
+                ]
             )
 
     lines = [
@@ -171,4 +188,8 @@ def main() -> int:
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    try:
+        sys.exit(main())
+    except RuntimeError as exc:
+        print(f"stale_bot_prs: {exc}", file=sys.stderr)
+        sys.exit(1)
