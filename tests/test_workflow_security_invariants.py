@@ -111,12 +111,12 @@ class WorkflowSecurityInvariantsTest(unittest.TestCase):
         )
 
     def test_merge_method_is_the_queues_alone(self) -> None:
-        # K5/#631 (norm set by Logan, 2026-07-06): the merge QUEUE's configured method is
+        # Norm set by Logan, 2026-07-06: the merge QUEUE's configured method is
         # the single merge-method norm. gh syntax forces a method flag on every
         # `gh pr merge`, but on a merge-queue repo the queue overrides it — so the one
         # canonical, inert spelling is `--merge`. This goes red the moment any workflow
         # or script grows its own divergent method opinion (--squash/--rebase), which is
-        # exactly the two-prescriptions-no-norm drift K5 names.
+        # exactly the two-prescriptions-no-norm drift this guards against.
         scripts = ROOT / ".github" / "scripts"
         offenders: list[str] = []
         for path in sorted(list(WORKFLOWS.glob("*.yml")) + list(scripts.glob("*.py"))):

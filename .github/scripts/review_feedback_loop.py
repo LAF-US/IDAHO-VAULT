@@ -104,7 +104,7 @@ RISK_MED_LABEL = "risk/med"
 RISK_HIGH_LABEL = "risk/high"
 RISK_NOPE_LABEL = "risk/nope"
 
-# K6/#632 (flat schema, norm set by Logan): the risk vocabulary is four flat labels across
+# The risk vocabulary (flat schema, norm set by Logan) is four flat labels across
 # two independent axes — each stamped ONLY when its axis fires. There are no prefixes, no
 # explicit `—` labels, and no separate clear marker.
 #   FILETYPE axis: risk/low (Machine Doc / inert assets) | risk/med (Computer Code — executes)
@@ -137,8 +137,8 @@ AUTO_MERGE_AUTHZ_FRAGMENTS = (
 )
 
 # Protected-path gating is no longer done here. A hand-maintained glob list was one of
-# three drifting, fail-open re-implementations of "these paths need a human" (K1/#627,
-# K2/#628). The single source of that truth is now CODEOWNERS, enforced as a HARD GATE by
+# three drifting, fail-open re-implementations of "these paths need a human".
+# The single source of that truth is now CODEOWNERS, enforced as a HARD GATE by
 # the branch ruleset (`require_code_owner_review: true`, set by Logan): GitHub blocks the
 # merge of any owned-path PR until the owner reviews — un-bypassable, regardless of whether
 # this engine armed it. So the engine no longer second-guesses protection; arming a
@@ -352,7 +352,7 @@ def _arm_auto_merge(owner: str, repo: str, pr_number: int) -> tuple[bool, str | 
         )
     if not enabled:
         try:
-            # K5/#631 (norm set 2026-07-06): the merge QUEUE's configured method is the
+            # Norm set 2026-07-06: the merge QUEUE's configured method is the
             # single merge-method norm. gh syntax requires a method flag, but on a
             # merge-queue repo the queue overrides it — `--merge` is the one canonical,
             # inert spelling everywhere (test_workflow_security_invariants enforces it).
@@ -877,7 +877,7 @@ def _tier_from_pair(filetype_flag: str | None, depth_flag: str | None, marked: b
 
 def _classify_pr_pair(owner: str, repo: str, pr_number: int) -> tuple[str | None, str | None]:
     """Run the two parallel analyses (classify_paths) over the PR's changed files."""
-    # The classifier is the SINGLE source of both axes (K1/K2); this is the engine-side
+    # The classifier is the SINGLE source of both axes; this is the engine-side
     # bridge that lets the restamp mirror the current diff on synchronize. Raises on any
     # API/import failure — callers fail SAFE by keeping the existing labels (a PR is never
     # armed off a failed classification; an unmarked PR holds).
@@ -990,7 +990,7 @@ def evaluate_review_state(
     is_clear = pair_marked and filetype_flag is None and depth_flag is None
     low_risk = risk_tier == "low"
     merge_blocked = draft or blocking_review or current_unresolved > 0
-    # K6 lane completion — flags are transient routing state, consumed as the PR clears
+    # Lane completion — flags are transient routing state, consumed as the PR clears
     # its lane: an approving review with no current threads completes the lane, the engine
     # clears the fired flag (the projection removes the fired flat risk/* label), and the PR
     # flows. depth:nope is NEVER auto-cleared — it always requires a human merge.
@@ -1002,7 +1002,7 @@ def evaluate_review_state(
         and depth_flag != "nope"
         and (filetype_flag is not None or depth_flag is not None)
     )
-    # K3/#629 + K6: the `—/—` pair arms on open; a flagged lane arms once its review
+    # The `—/—` pair arms on open; a flagged lane arms once its review
     # completes (the flag is consumed). nope and any unmarked PR HOLD, always.
     eligible_for_auto_merge = (
         AGENT_AUTO_MERGE_ENABLED
@@ -1218,7 +1218,7 @@ def _build_reconciliation_report(
                 grace_minutes=grace_minutes,
                 auto_resolve_reviewers=auto_resolve_reviewers,
             )
-            # K6 restamp (#632) — this sweep IS the backfill automation: every open PR's
+            # Restamp — this sweep IS the backfill automation: every open PR's
             # risk labels are re-mirrored from the one classifier, so unmarked/stale-labeled
             # in-flight PRs migrate without a hand-sweep. The verdict is always fetched; only
             # the restamp is skipped once the lane completed (its flag was consumed). A
@@ -1231,7 +1231,7 @@ def _build_reconciliation_report(
                 ft_flag, dp_flag = _classify_pr_pair(owner, repo, pr_number)
             except Exception as exc:  # noqa: BLE001  # pylint: disable=broad-except
                 print(
-                    f"::warning::K6 restamp skipped for #{pr_number}: {exc}",
+                    f"::warning::risk restamp skipped for #{pr_number}: {exc}",
                     file=sys.stderr,
                 )
             else:
@@ -1260,7 +1260,7 @@ def _build_reconciliation_report(
                         verdict=(ft_flag, dp_flag),
                     )
         except RiskMarkerInvariantError as exc:
-            # The K4/K6 mutual-exclusion invariant tripped on THIS PR. Fail loud — record
+            # The risk-marker mutual-exclusion invariant tripped on THIS PR. Fail loud — record
             # it and surface a non-zero exit — but do NOT abort the sweep: one mis-labeled
             # PR must not starve every other open PR of reconciliation. Scoped to the
             # dedicated type so an unrelated ValueError still fails the run normally.
@@ -1275,8 +1275,8 @@ def _build_reconciliation_report(
         auto_merge_enabled = bool((pr.get("autoMergeRequest") or {}).get("enabledAt"))
         arm_error = None
         # Protected paths are not vetoed here anymore — the CODEOWNERS hard gate blocks
-        # their merge regardless of label/arm (K1/#627, K2/#628 retired in favor of the
-        # single, enforced source). Promotion keys only on eligibility + no merge block.
+        # their merge regardless of label/arm (the per-engine glob lists were retired in
+        # favor of the single, enforced source). Promotion keys only on eligibility + no merge block.
         if (
             AGENT_AUTO_MERGE_ENABLED
             and
@@ -1405,7 +1405,7 @@ def sync_pr(args: argparse.Namespace) -> int:
         auto_resolve_reviewers=auto_resolve_reviewers,
     )
 
-    # K6 restamp-on-sync (#632): risk labels mirror the CURRENT diff from the one classifier.
+    # Restamp-on-sync: risk labels mirror the CURRENT diff from the one classifier.
     # The verdict is always fetched (so a consumed-clear lane reads clear, not unknown); only
     # the restamp is skipped once the lane completed (its flag was consumed). A classification
     # error skips the restamp and leaves labels as-is; the PR is then evaluated on its existing
@@ -1416,7 +1416,7 @@ def sync_pr(args: argparse.Namespace) -> int:
         ft_flag, dp_flag = _classify_pr_pair(args.owner, args.repo, args.pr_number)
     except Exception as exc:  # noqa: BLE001  # pylint: disable=broad-except
         print(
-            f"::warning::K6 restamp skipped for #{args.pr_number} "
+            f"::warning::risk restamp skipped for #{args.pr_number} "
             f"(classification failed; labels left as-is): {exc}",
             file=sys.stderr,
         )
