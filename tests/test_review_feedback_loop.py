@@ -464,6 +464,9 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         # table would satisfy just as well — it cannot tell a namespace rule from a hardcoded
         # list. These labels appear nowhere in the codebase, so only a rule sweeps them, and a
         # list would leave every one behind. This is the case that distinguishes the two.
+        # `newaxis:risk/—` keeps the em dash (U+2014) ON PURPOSE: three labels in the live
+        # retired vocabulary carry it — `filetype:risk/—`, `depth:risk/—`, `risk/—`. Swapping
+        # it for an ASCII stand-in would stop exercising the character the real labels use.
         unseen = {"scope:risk/whatever", "tier:risk/x", "newaxis:risk/—", "risk/anything"}
         with mock.patch.object(review_feedback_loop, "_edit_label"):
             labels = set(unseen) | {"review/pending"}
@@ -472,9 +475,10 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             self.assertIn(f"remove:{label}", actions)
         self.assertEqual(labels, {"risk/low", "review/pending"})
 
-        # The boundary the rule must NOT cross: names that merely resemble the namespace.
-        # `riskier/thing` and `notrisk/low` are not risk labels, and a sloppy pattern
-        # (a bare `risk/` substring search) would eat both.
+    def test_restamp_leaves_names_that_only_resemble_the_namespace(self) -> None:
+        # The boundary the rule must NOT cross, kept separate from the sweep above so a
+        # failure says which half broke. `riskier/thing` and `notrisk/low` are not risk
+        # labels; a sloppy pattern (a bare `risk/` substring search) would eat both.
         near_misses = {"riskier/thing", "notrisk/low", "review/pending"}
         with mock.patch.object(review_feedback_loop, "_edit_label"):
             labels = set(near_misses)
