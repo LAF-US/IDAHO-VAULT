@@ -104,12 +104,25 @@ def main() -> int:
     alias = os.environ.get("JANITOR_ALIAS", "janitor-bot")
 
     reporters: list[Reporter] = []
+    setup_failures: list[dict[str, str | bool]] = []
     slack_webhook = os.environ.get("JANITOR_SLACK_WEBHOOK_URL", "").strip()
     if slack_webhook:
-        reporters.append(SlackReporter(slack_webhook))
+        # A misconfigured webhook is an unavailable sink, not a reason to abort.
+        # The scheme guard raises, and letting that escape would kill the script
+        # before it prints any JSON -- losing the failure report this run exists
+        # to deliver. The scheme is NOT echoed back: the webhook URL is itself
+        # the credential, and this output is a workflow log.
+        try:
+            reporters.append(SlackReporter(slack_webhook))
+        except ValueError:
+            setup_failures.append({
+                "target": "SlackReporter",
+                "ok": False,
+                "detail": "JANITOR_SLACK_WEBHOOK_URL is not an https URL; sink skipped",
+            })
 
-    results: list[dict[str, str | bool]] = []
-    if not reporters:
+    results: list[dict[str, str | bool]] = list(setup_failures)
+    if not reporters and not setup_failures:
         results.append({"target": "none", "ok": True, "detail": "no reporters configured"})
     else:
         for reporter in reporters:
