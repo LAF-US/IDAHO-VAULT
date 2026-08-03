@@ -8,6 +8,7 @@ related:
 - coordination
 - protocol
 - SBP
+
 ---
 
 # SBP — Stigmergic Blackboard Protocol
@@ -178,8 +179,10 @@ client.emit("local.test", "signal", 0.9)
 
 Active protocol. v0.1.0 released Feb 2026. Spec is RFC 2119 compliant. Active development.
 
+###### [ Maiden : Mother : Crone ]
+
 ---
 
-###### [["The world is quiet here."]]
-
-###### [ Maiden : Mother : Crone ]
+```
+The world is quiet here．Esto Perpetua!
+```

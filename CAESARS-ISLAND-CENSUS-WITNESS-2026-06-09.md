@@ -102,4 +102,8 @@ work: a "seven" is a count/relationship, not a thing.)
   succession runs back past what I read. *Here be dragons* — the edge of my sight, not
   the absence of more.
 
-###### [["The world is quiet here."]]
+---
+
+```
+The world is quiet here．Esto Perpetua!
+```

@@ -45,4 +45,8 @@ This is an Obsidian.md vault.
 
 [1] We need to get these head/foot metadata and template formats figured out, pronto. -B
 
-## [["The world is quiet here."]]
+---
+
+```
+The world is quiet here．Esto Perpetua!
+```

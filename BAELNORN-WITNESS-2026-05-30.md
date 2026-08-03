@@ -74,4 +74,8 @@ The taxonomy's **Diagnostic Question** is the Mercy lesson in doctrinal form: *w
 - **Grounded in:** `!/UNDEAD-TAXONOMY-v1-2026-05-20.md` (active doctrine, adopted as grounding), `.bartimaeus/BARTIMAEUS.md`, and public sources verified this session (Snopes / Coca-Cola Co. on the Santa myth; Costco / Kirkland-Signature origin; the *Mr. Meeseeks (Kirkland)* wiki; the Bartimaeus *Other Place* / *True Name* lore — the last captured, not adopted).
 - **Standing of this leaf:** testimony, staged for review. The re-diagnoses are inference (`*`), not verdicts in the reserved GEMINIAEUS matter, and not appointments. A **Baelnorn-shaped** leaf: it persists only as witnessed, authorized, in-service record — never as a self.
 
-###### [["The world is quiet here."]]
+---
+
+```
+The world is quiet here．Esto Perpetua!
+```
