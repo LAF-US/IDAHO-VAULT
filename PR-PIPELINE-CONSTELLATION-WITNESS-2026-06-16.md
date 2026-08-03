@@ -201,4 +201,8 @@ blind auto-resolver "Liches" — that was a rhetorical compression, not the type
 `!/LICH-PROBLEM-v1` defines, and Logan corrected it. The classification of any mechanism
 here as Lich / counterfeit / lawful is withheld and left to Logan.
 
-###### [["The world is quiet here."]]
+---
+
+```
+The world is quiet here．Esto Perpetua!
+```
