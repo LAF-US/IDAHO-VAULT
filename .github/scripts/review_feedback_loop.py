@@ -121,6 +121,15 @@ DEPTH_RISK_LABELS = {"high": RISK_HIGH_LABEL, "nope": RISK_NOPE_LABEL}
 RISK_FLAG_LABELS = frozenset(
     {RISK_LOW_LABEL, RISK_MED_LABEL, RISK_HIGH_LABEL, RISK_NOPE_LABEL}
 )
+
+# The engine owns its whole namespace, not just the vocabulary it currently stamps.
+# `restamp_risk_pair` removes any label matching this that the verdict did not ask for, so
+# a PR still wearing a superseded form (the retired `filetype:risk/*` + `depth:risk/*` +
+# `risk/—` scheme #854 replaced) converges the next time it is classified — no migration
+# script, and nothing to run by hand. Deliberately a RULE, not a list of retired strings:
+# an enumeration would need editing every time the vocabulary moves, which is the drift
+# that produced the nine-string scheme in the first place.
+RISK_NAMESPACE_PATTERN = re.compile(r"^(?:[a-z]+:)?risk/")
 AUTO_MERGE_AUTHZ_FRAGMENTS = (
     "Pull request User is not authorized for this protected branch "
     "(enablePullRequestAutoMerge)",
@@ -895,8 +904,10 @@ def restamp_risk_pair(
     # ``desired`` is the flat label for each fired axis: the filetype label if
     # ``filetype_flag`` is set, plus the filedepth label if ``depth_flag`` is set. A `—/—`
     # verdict (both None) yields an EMPTY desired set — a clear verdict stamps nothing and
-    # removes any stale risk/* label. ``managed`` is the full flat set, so managed-not-desired
-    # labels are removed. Mutates ``labels`` in place and returns the actions taken.
+    # removes any stale risk/* label. ``managed`` is the flat set PLUS anything already on the
+    # PR that lives in the risk namespace, so managed-not-desired labels are removed — that is
+    # what retires a superseded vocabulary in passing, without a migration script.
+    # Mutates ``labels`` in place and returns the actions taken.
     _validate_pair(filetype_flag, depth_flag)
     actions: list[str] = []
     desired: set[str] = set()
@@ -904,7 +915,9 @@ def restamp_risk_pair(
         desired.add(FILETYPE_RISK_LABELS[filetype_flag])
     if depth_flag is not None:
         desired.add(DEPTH_RISK_LABELS[depth_flag])
-    managed = set(RISK_FLAG_LABELS)
+    managed = set(RISK_FLAG_LABELS) | {
+        label for label in labels if RISK_NAMESPACE_PATTERN.match(label)
+    }
     for label in sorted(desired - labels):
         _edit_label(pr_number, add=label)
         labels.add(label)
