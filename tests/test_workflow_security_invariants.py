@@ -9,6 +9,29 @@ import yaml
 ROOT = Path(__file__).resolve().parents[1]
 WORKFLOWS = ROOT / ".github" / "workflows"
 
+# The one-shot risk-vocabulary migration edits PR labels and DELETES label definitions — a
+# security-sensitive surface, split three ways so that BOTH the destructive mode and the
+# capability to perform it are reached only on purpose. The logic file is reusable-only;
+# each entry point is dispatch-only, takes no inputs, and pins its own mode. Write scope
+# and the MERGE_QUEUE_TOKEN PAT ride the APPLY path alone, so a dry run cannot create,
+# edit, or delete a label even if a step tried. The three tests below hold that shape.
+MIGRATION_LOGIC = "flatten-label-migration.yml"
+MIGRATION_READ_ONLY = {"contents": "read", "pull-requests": "read"}
+MIGRATION_WRITE = {"contents": "read", "pull-requests": "write", "issues": "write"}
+# name -> (dry_run it pins, permissions it declares, whether it carries the PAT)
+MIGRATION_ENTRY_POINTS = {
+    "flatten-label-migration-preview.yml": (True, MIGRATION_READ_ONLY, False),
+    "flatten-label-migration-apply.yml": (False, MIGRATION_WRITE, True),
+}
+
+
+def _workflow(name: str) -> tuple[dict, set]:
+    """Parse a workflow, returning it alongside the set of event names it triggers on."""
+    # PyYAML resolves the bare `on:` key to the boolean True, hence the fallback.
+    wf = yaml.safe_load((WORKFLOWS / name).read_text(encoding="utf-8"))
+    events = wf.get("on", wf.get(True)) or {}
+    return wf, (set(events) if isinstance(events, (dict, list)) else {events})
+
 
 class WorkflowSecurityInvariantsTest(unittest.TestCase):
     def test_agent_ref_is_passed_as_environment_data(self) -> None:
@@ -27,10 +50,18 @@ class WorkflowSecurityInvariantsTest(unittest.TestCase):
             self.assertNotIn("git push origin main", workflow)
             self.assertIn("gh pr create --base main", workflow)
 
-    def test_agent_auto_merge_and_label_reaper_are_retired(self) -> None:
-        self.assertFalse((WORKFLOWS / "auto-merge.yml").exists())
-        self.assertFalse((WORKFLOWS / "dependabot-reaper.yml").exists())
-        self.assertTrue((WORKFLOWS / "dependabot-rhythm.yml").exists())
+    def test_retired_auto_merge_lanes_are_gone(self) -> None:
+        # The old agent auto-merge workflow and the label reaper were retired earlier; the two
+        # author-gated fast-path lanes (dependabot-rhythm, auto-merge-rhythm) are retired here
+        # (Logan's decision, 2026-07-19: drop the bot fast-path — bot PRs flow through the
+        # universal engine like every PR). See PREFIX-FREE-ROUTING-2026-07-19.md.
+        for retired in (
+            "auto-merge.yml",
+            "dependabot-reaper.yml",
+            "dependabot-rhythm.yml",
+            "auto-merge-rhythm.yml",
+        ):
+            self.assertFalse((WORKFLOWS / retired).exists(), f"{retired} must stay retired")
 
     def test_review_state_sync_jobs_can_maintain_labels(self) -> None:
         # review_feedback_loop.py sync-pr/review-submitted calls ensure_labels()
@@ -101,78 +132,93 @@ class WorkflowSecurityInvariantsTest(unittest.TestCase):
             "the norm; use the canonical inert `--merge` flag:\n" + "\n".join(offenders),
         )
 
-    def test_dependabot_auto_merge_requires_verified_low_risk_updates_and_gates(self) -> None:
-        workflow = yaml.safe_load(
-            (WORKFLOWS / "dependabot-rhythm.yml").read_text(encoding="utf-8")
-        )
-        events = workflow.get("on", workflow.get(True))
+    def test_flatten_label_migration_logic_file_is_callable_only(self) -> None:
+        # The file holding the destructive steps must be unreachable except through an
+        # entry point, and must not drag the read-only one up to its own needs.
+        wf, events = _workflow(MIGRATION_LOGIC)
         self.assertEqual(
-            events["pull_request_target"]["types"],
-            ["opened", "reopened", "ready_for_review", "synchronize", "labeled", "unlabeled"],
+            events, {"workflow_call"},
+            f"{MIGRATION_LOGIC} holds the destructive steps: it must be callable only, "
+            "never dispatchable and never auto-triggered (no schedule/PR/push)",
         )
-        # Least privilege: the workflow-level default is read-only; only the jobs
-        # that actually merge/disable-merge escalate to write, at the job level.
-        self.assertEqual(workflow["permissions"], {"contents": "read", "pull-requests": "read"})
+        self.assertEqual(
+            wf.get("permissions"), MIGRATION_READ_ONLY,
+            f"{MIGRATION_LOGIC} must declare the read-only FLOOR, not the union of what "
+            "its steps want. A called workflow can only downgrade its caller's "
+            "permissions — asking for more fails validation — so a write set here would "
+            "break the read-only preview entry point outright. Writes ride the PAT, not "
+            "GITHUB_TOKEN.",
+        )
 
-        jobs = workflow["jobs"]
-        eligible_job = jobs["auto-merge-low-risk"]
+    def test_flatten_label_migration_apply_path_refuses_to_start_without_the_pat(self) -> None:
+        # Because GITHUB_TOKEN is capped read-only, every label write depends on the PAT.
+        # That dependency has to fail fast rather than half-way through the re-stamp.
+        wf, _ = _workflow(MIGRATION_LOGIC)
+        guards = [
+            step for job in wf["jobs"].values() for step in job["steps"]
+            if "MIGRATION_PAT" in str(step.get("run", ""))
+        ]
         self.assertEqual(
-            eligible_job["permissions"], {"contents": "write", "pull-requests": "write"}
+            len(guards), 1,
+            f"{MIGRATION_LOGIC} must keep exactly one guard asserting the PAT is present",
         )
-        eligibility = eligible_job["if"]
-        self.assertIn("github.event.pull_request.user.type == 'Bot'", eligibility)
-        self.assertIn("!contains(github.event.pull_request.labels.*.name, 'risk/high')", eligibility)
-        steps = {step["name"]: step for step in eligible_job["steps"]}
-        # Pinned SHA tracks the merged Dependabot bump #361 (fetch-metadata 3.0.0 → 3.1.0).
-        self.assertEqual(
-            steps["Fetch Dependabot metadata"]["uses"],
-            "dependabot/fetch-metadata@25dd0e34f4fe68f24cc83900b1fe3fe149efef98",
+        self.assertIn(
+            "dry_run == false", str(guards[0].get("if", "")),
+            "the PAT guard must fire on the destructive path only, and must fire there: "
+            "without it APPLY would fall back to a read-only github.token and die "
+            "part-way through re-stamping",
         )
-        scope_run = steps["Exclude protected live surfaces from automatic merge"]["run"]
-        for protected_path in (
-            ".github/workflows/*",
-            ".github/scripts/*",
-            ".codex/*",
-            ".openclaw/*",
-            "AGENTS.md",
-            "CONSTITUTION.md",
-            "DECISIONS.md",
-            "VAULT-CONVENTIONS.md",
-            "swarm.json",
-            "!/*",
-        ):
-            self.assertIn(protected_path, scope_run)
 
-        gate_step = steps["Verify protected required checks exist"]
-        self.assertIn("steps.scope.outputs.eligible == 'true'", gate_step["if"])
-        # The gate requires the four policy checks that actually run on every PR
-        # to have a `success` conclusion on the PR head. `submit-pypi` is NOT
-        # gated here: it has no producing workflow in this repo (it lives only in
-        # review_feedback_loop.KNOWN_NOISE_CHECKS as a check to ignore), so polling
-        # for its success would fail-closed as "missing" and permanently disable
-        # auto-merge. De-requiring it is the whole point of the ruleset change in
-        # this PR; the gate is decoupled from required-for-merge to pass-on-PR.
-        for context in (
-            "check-secret-patterns",
-            "check-large-files",
-            "check-paths",
-            "check-dotfolder-anchors",
-        ):
-            self.assertIn(context, gate_step["run"])
-        self.assertNotIn("submit-pypi", gate_step["run"])
-        enable_step = steps["Enable verified auto-merge"]
-        self.assertIn("steps.scope.outputs.eligible == 'true'", enable_step["if"])
-        self.assertIn("gh pr merge --auto --merge", enable_step["run"])
-        self.assertNotIn("gh pr review --approve", enable_step["run"])
-        self.assertNotIn("gh label create", enable_step["run"])
-        self.assertNotIn("--delete-branch", enable_step["run"])
+    def test_flatten_label_migration_entry_points_are_parameterless_and_mode_pinned(self) -> None:
+        # Each entry point is a thin wrapper whose only job is to name a mode. Nothing
+        # about the run may be chosen at dispatch time.
+        for name, (dry_run, _permissions, _pat) in MIGRATION_ENTRY_POINTS.items():
+            wf, events = _workflow(name)
+            self.assertEqual(
+                events, {"workflow_dispatch"},
+                f"{name} must be dispatch-only (no schedule/PR/push triggers)",
+            )
+            dispatch = (wf.get("on", wf.get(True)) or {}).get("workflow_dispatch")
+            self.assertFalse(
+                isinstance(dispatch, dict) and dispatch.get("inputs"),
+                f"{name} must take NO dispatch inputs — the mode is the workflow you pick, "
+                "not a parameter on a run that can also delete label definitions "
+                "(also Checkov CKV_GHA_7)",
+            )
+            jobs = wf["jobs"]
+            self.assertEqual(len(jobs), 1, f"{name} must be a single thin wrapper job")
+            job = next(iter(jobs.values()))
+            self.assertEqual(job.get("uses"), f"./.github/workflows/{MIGRATION_LOGIC}")
+            self.assertEqual(
+                job.get("with"), {"dry_run": dry_run},
+                f"{name} must pin dry_run={dry_run} — an entry point that can flip modes "
+                "would reintroduce exactly what the split removes",
+            )
 
-        high_risk_job = jobs["disable-high-risk-auto-merge"]
-        self.assertEqual(
-            high_risk_job["permissions"], {"contents": "write", "pull-requests": "write"}
-        )
-        self.assertIn("contains(github.event.pull_request.labels.*.name, 'risk/high')", high_risk_job["if"])
-        self.assertIn("gh pr merge --disable-auto", high_risk_job["steps"][0]["run"])
+    def test_flatten_label_migration_write_capability_lives_on_the_apply_path(self) -> None:
+        # The separation that makes PREVIEW safe: it holds neither write scope nor the PAT,
+        # so a dry run has no capability to touch a label even if a step tried to.
+        for name, (_dry_run, permissions, carries_pat) in MIGRATION_ENTRY_POINTS.items():
+            wf, _ = _workflow(name)
+            job = next(iter(wf["jobs"].values()))
+            self.assertEqual(
+                wf.get("permissions"), permissions,
+                f"{name} must declare exactly its own least-privilege permission set",
+            )
+            self.assertEqual(
+                job.get("permissions"), permissions,
+                f"{name}'s wrapper job must cap the called workflow at the same set",
+            )
+            self.assertNotEqual(
+                job.get("secrets"), "inherit",
+                f"{name} must pass secrets explicitly, never `inherit` — inheritance is "
+                "what would hand the preview path a PAT it has no use for",
+            )
+            self.assertEqual(
+                bool(job.get("secrets")), carries_pat,
+                f"{name} carries the MERGE_QUEUE_TOKEN PAT: expected {carries_pat}. The "
+                "write capability belongs on the destructive path alone.",
+            )
 
     def test_security_required_check_contexts_are_distinct(self) -> None:
         secret = yaml.safe_load((WORKFLOWS / "secret-pattern-policy.yml").read_text(encoding="utf-8"))
