@@ -36,7 +36,6 @@ class Source:
     repo: str
     ref: str
     paths: list[str]
-    repo_url: str | None = None
 
 
 class InstallError(Exception):
@@ -130,6 +129,19 @@ def _validate_relative_path(path: str) -> None:
 # closes this flow.
 _SAFE_GIT_ARG_RE = re.compile(r"\A[A-Za-z0-9._][A-Za-z0-9._/-]*\Z")
 
+# An owner or a repo name is one path segment, so it may not contain `/`, and
+# it must begin with an alphanumeric -- a leading `.` would let `..` through,
+# which is a path traversal in the codeload URL rather than a repo name.
+_SAFE_REPO_SEGMENT_RE = re.compile(r"\A[A-Za-z0-9][A-Za-z0-9._-]*\Z")
+
+# The only two repo URLs this script ever builds, spelled out. Checking the
+# scheme alone constrained nothing about the rest of the string; pinning the
+# whole shape means the value reaching argv can only be a URL assembled from
+# an owner and a repo that already passed _validate_repo_segment.
+_SEG = r"[A-Za-z0-9][A-Za-z0-9._-]*"
+_REPO_URL_RE = re.compile(rf"\Ahttps://github\.com/{_SEG}/{_SEG}\.git\Z")
+_REPO_SSH_RE = re.compile(rf"\Agit@github\.com:{_SEG}/{_SEG}\.git\Z")
+
 
 def _validate_git_argument(value: str, label: str) -> str:
     if not value:
@@ -142,12 +154,20 @@ def _validate_git_argument(value: str, label: str) -> str:
     return value
 
 
+def _validate_repo_segment(value: str, label: str) -> str:
+    if not value:
+        raise InstallError(f"{label} must not be empty.")
+    if not _SAFE_REPO_SEGMENT_RE.match(value):
+        raise InstallError(
+            f"{label} must be a single path segment beginning with an "
+            f"alphanumeric and drawn from [A-Za-z0-9._-]: {value!r}"
+        )
+    return value
+
+
 def _validate_repo_url(url: str) -> str:
-    parsed = urllib.parse.urlparse(url)
-    if parsed.scheme not in {"https", "ssh"} and not url.startswith("git@"):
-        raise InstallError(f"Unsupported repo URL scheme: {url!r}")
-    if url.startswith("-"):
-        raise InstallError(f"repo URL may not begin with '-': {url!r}")
+    if not (_REPO_URL_RE.match(url) or _REPO_SSH_RE.match(url)):
+        raise InstallError(f"Unsupported repo URL: {url!r}")
     return url
 
 
@@ -219,10 +239,14 @@ def _copy_skill(src: str, dest_dir: str) -> None:
 
 
 def _build_repo_url(owner: str, repo: str) -> str:
+    owner = _validate_repo_segment(owner, "owner")
+    repo = _validate_repo_segment(repo, "repo")
     return f"https://github.com/{owner}/{repo}.git"
 
 
 def _build_repo_ssh(owner: str, repo: str) -> str:
+    owner = _validate_repo_segment(owner, "owner")
+    repo = _validate_repo_segment(repo, "repo")
     return f"git@github.com:{owner}/{repo}.git"
 
 
@@ -239,13 +263,25 @@ def _prepare_repo(source: Source, method: str, tmp_dir: str) -> str:
             else:
                 raise
     if method in ("git", "auto"):
-        repo_url = source.repo_url or _build_repo_url(source.owner, source.repo)
+        repo_url = _build_repo_url(source.owner, source.repo)
         try:
             return _git_sparse_checkout(repo_url, source.ref, source.paths, tmp_dir)
         except InstallError:
             repo_url = _build_repo_ssh(source.owner, source.repo)
             return _git_sparse_checkout(repo_url, source.ref, source.paths, tmp_dir)
     raise InstallError("Unsupported method.")
+
+
+def _make_source(owner: str, repo: str, ref: str, paths: list[str]) -> Source:
+    # Every Source is built here so the values are validated once, at the point
+    # they stop being argv and become the identifiers both the download path
+    # (codeload URL) and the git path (clone argv) build their strings from.
+    return Source(
+        owner=_validate_repo_segment(owner, "owner"),
+        repo=_validate_repo_segment(repo, "repo"),
+        ref=_validate_git_argument(ref, "ref"),
+        paths=[_validate_git_argument(path, "skill path") for path in paths],
+    )
 
 
 def _resolve_source(args: Args) -> Source:
@@ -259,7 +295,7 @@ def _resolve_source(args: Args) -> Source:
             paths = []
         if not paths:
             raise InstallError("Missing --path for GitHub URL.")
-        return Source(owner=owner, repo=repo, ref=ref, paths=paths)
+        return _make_source(owner, repo, ref, paths)
 
     if not args.repo:
         raise InstallError("Provide --repo or --url.")
@@ -274,12 +310,7 @@ def _resolve_source(args: Args) -> Source:
     if not args.path:
         raise InstallError("Missing --path for --repo.")
     paths = list(args.path)
-    return Source(
-        owner=repo_parts[0],
-        repo=repo_parts[1],
-        ref=args.ref,
-        paths=paths,
-    )
+    return _make_source(repo_parts[0], repo_parts[1], args.ref, paths)
 
 
 def _default_dest() -> str:
@@ -312,7 +343,6 @@ def main(argv: list[str]) -> int:
     args = _parse_args(argv)
     try:
         source = _resolve_source(args)
-        source.ref = source.ref or args.ref
         if not source.paths:
             raise InstallError("No skill paths provided.")
         for path in source.paths:
