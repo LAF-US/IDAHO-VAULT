@@ -164,4 +164,8 @@ historical reference, on the record per [[VAULT-CONVENTIONS]].
 - [Chiromancie nouvelle — Adolphe Desbarrolles (1801–1886), Internet Archive](https://archive.org/details/chiromancienouve00desb) (19th-century chiromancy)
 - [Which Stone to Wear on Which Finger — astrological gem-and-finger correspondence (industry guide)](https://www.navratan.com/blog/association-of-fingers-and-planets-on-your-hand) (planet/finger/gemstone assignments; conventions vary)
 
-###### [["The world is quiet here."]]
+---
+
+```
+The world is quiet here．Esto Perpetua!
+```

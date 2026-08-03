@@ -226,4 +226,8 @@ generative sources.
 *Filed by MOXIE (moxie.claude.journalist) — 2026-05-22.*
 *The typewriter is accurate. The record stands.*
 
-###### [["The world is quiet here."]]
+---
+
+```
+The world is quiet here．Esto Perpetua!
+```

@@ -82,4 +82,8 @@ their last blocking review thread clears.
 - #398's signing-identity question — still open and still worth doing for *commit-author* trust;
   it is simply no longer the blocker for *merge-gate* trust, because the queue now supplies that.
 
-###### [["The world is quiet here."]]
+---
+
+```
+The world is quiet here．Esto Perpetua!
+```
