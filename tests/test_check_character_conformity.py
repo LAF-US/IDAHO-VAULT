@@ -1,16 +1,19 @@
 from __future__ import annotations
 
 import importlib.util
+import subprocess  # nosec B404 -- see [tool.bandit] note in pyproject.toml
 import sys
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 
 def _load_checker():
     project_root = Path(__file__).resolve().parents[1]
     script_path = project_root / ".github" / "scripts" / "check_character_conformity.py"
     spec = importlib.util.spec_from_file_location("character_conformity_test_module", script_path)
+    assert spec is not None
     module = importlib.util.module_from_spec(spec)
     assert spec.loader is not None
     sys.modules[spec.name] = module
@@ -277,6 +280,29 @@ class SweepTest(unittest.TestCase):
         _, new = checker.sweep_file("note.md", b"\x97")
         assert new is not None
         self.assertFalse(new.startswith(checker.UTF8_BOM))
+
+
+class RepoRootFailClosedTest(unittest.TestCase):
+    def test_fails_closed_on_timeout(self) -> None:
+        with patch.object(
+            checker.subprocess, "run", side_effect=subprocess.TimeoutExpired(cmd="git", timeout=30)
+        ):
+            with self.assertRaises(SystemExit) as exc:
+                checker.repo_root()
+        self.assertIn("timed out", str(exc.exception))
+
+    def test_fails_closed_when_git_missing(self) -> None:
+        with patch.object(checker.subprocess, "run", side_effect=FileNotFoundError("git")):
+            with self.assertRaises(SystemExit) as exc:
+                checker.repo_root()
+        self.assertIn("could not run", str(exc.exception))
+
+    def test_fails_closed_on_nonzero_exit(self) -> None:
+        error = subprocess.CalledProcessError(128, ["git", "rev-parse"], stderr="not a git repository")
+        with patch.object(checker.subprocess, "run", side_effect=error):
+            with self.assertRaises(SystemExit) as exc:
+                checker.repo_root()
+        self.assertIn("not a git repository", str(exc.exception))
 
 
 if __name__ == "__main__":

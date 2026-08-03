@@ -7,7 +7,7 @@ import argparse
 import hashlib
 import json
 import os
-import subprocess
+import subprocess  # nosec B404 -- see [tool.bandit] note in pyproject.toml
 import sys
 from pathlib import Path
 
@@ -22,15 +22,12 @@ def gh(*args: str, check: bool = True) -> subprocess.CompletedProcess[str]:
     return run(["gh", *args], check=check)
 
 
-def gh_json(*args: str) -> list[dict] | dict | None:
-    try:
-        result = gh(*args)
-    except RuntimeError:
-        return None
+def gh_json(*args: str) -> list[dict] | dict:
+    result = gh(*args)
     try:
         return json.loads(result.stdout)
-    except json.JSONDecodeError:
-        return None
+    except json.JSONDecodeError as exc:
+        raise RuntimeError(f"gh {' '.join(args)} returned invalid JSON") from exc
 
 
 def _repo() -> str:

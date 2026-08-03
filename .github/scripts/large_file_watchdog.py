@@ -5,7 +5,7 @@ from __future__ import annotations
 
 import argparse
 import os
-import subprocess
+import subprocess  # nosec B404 -- see [tool.bandit] note in pyproject.toml
 import sys
 from pathlib import Path
 
@@ -27,10 +27,29 @@ def main() -> int:
     parser.add_argument("--top-n", type=int, default=20)
     args = parser.parse_args()
 
-    result = subprocess.run(
-        ["git", "ls-files", "-z"], check=True, capture_output=True
-    )
-    tracked = [Path(p.decode("utf-8")) for p in result.stdout.split(b"\0") if p]
+    try:
+        result = subprocess.run(
+            ["git", "ls-files", "-z"], check=True, capture_output=True, timeout=30
+        )
+    except subprocess.TimeoutExpired:
+        print("large_file_watchdog: git ls-files timed out after 30s", file=sys.stderr)
+        return 1
+    except subprocess.CalledProcessError as exc:
+        message = (exc.stderr or b"").decode("utf-8", errors="replace").strip()
+        print(f"large_file_watchdog: {message or 'git ls-files failed'}", file=sys.stderr)
+        return 1
+    except OSError as exc:
+        print(f"large_file_watchdog: git ls-files could not run: {exc}", file=sys.stderr)
+        return 1
+    # surrogateescape (not "replace"): a lossy decode would change the string
+    # for any non-UTF-8 filename, so path.exists()/stat() below would never
+    # find the real file and an offender could go uncounted. surrogateescape
+    # round-trips the original bytes losslessly, same as os.fsdecode().
+    tracked = [
+        Path(p.decode("utf-8", errors="surrogateescape"))
+        for p in result.stdout.split(b"\0")
+        if p
+    ]
 
     offenders: list[tuple[int, Path]] = []
     total_bytes = 0
