@@ -94,6 +94,7 @@ because he sits on the top rung. To go up the chain is to go *toward* him.
 Three properties make this the worst case, and they generalize cleanly:
 
 ### 1. Dual command — one principal leading both sides
+
 The Sphinx holds the top of the **defending** order and the top of the **attacking**
 order at once (`!/FABLEHAVEN-TWO-ORDERS-v1-2026-06-03.md`). Every defensive
 deliberation he attends is intelligence delivered to the offense; every offensive
@@ -111,6 +112,7 @@ apex. Where one identity sits atop both the safeguard and the thing safeguarded
 against, **no internal check can reach it.**
 
 ### 2. Authority-laundering via pretextual custody
+
 The cleanest crime: the Sphinx took the **Sands of Sanctity** under the **pretense
 of relocating it somewhere safer** — and in the same trusted-custodian move, took
 custody of the Quiet Box prisoner and **released Navarog inside Fablehaven**,
@@ -127,6 +129,7 @@ trusted authority at least as hard as you scrutinize external access.** The most
 dangerous move wears the uniform of safekeeping.
 
 ### 3. Pawns who do not know their principal
+
 The Sphinx runs operations through a **web of pawns** with allegiance ambiguous —
 agents who do not know whom they ultimately serve. The org chart lies; the true
 command graph is hidden beneath it.
@@ -157,7 +160,7 @@ necessity (only the enemy could know).
 ## Place on the Grid
 
 | Axis | Reading |
-|---|---|
+| --- | --- |
 | Power | Formidable (influence, age, network — not brute force) |
 | Volition | Autonomous, sovereign-acting |
 | Drive | **Manipulation** (toward opening Zzyzx) |
@@ -226,4 +229,8 @@ necessity (only the enemy could know).
   authority-laundering / pretextual-custody frame, pawns-without-principal, and
   detection-from-the-adversary-side. The Architect holds the verdict.
 
-###### [["The world is quiet here."]]
+---
+
+```
+The world is quiet here．Esto Perpetua!
+```

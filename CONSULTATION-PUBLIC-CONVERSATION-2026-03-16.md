@@ -40,7 +40,7 @@ Logan created a conversation called `PUBLIC: CONVERSATION` and instructed Claude
 `PUBLIC` is a new conversation prefix. The existing taxonomy (from DECISIONS.md, 2026-03-13):
 
 | Prefix | Purpose | Duration |
-|---|---|---|
+| --- | --- | --- |
 | PERMANENT | Central, non-deletable | Indefinite |
 | PERSISTENT | Long-running, role-specific | Long-lived |
 | TASK | Bounded, completable work items | Finite |
@@ -53,12 +53,14 @@ Logan created a conversation called `PUBLIC: CONVERSATION` and instructed Claude
 ### CODE AUTHORITY's Assessment
 
 **What this does well:**
+
 - Creates a transparent processing space — Logan can observe Claude's internal reasoning
 - "All selftalk contained" prevents context pollution across conversations
 - PUBLIC prefix signals it's on the record and observable — good governance
 - Gives Claude a place to stage ideas before they become formal handoffs
 
 **What needs definition:**
+
 1. **Tier:** Is this Tier 4 (read/analysis) or something new? Self-talk doesn't fit neatly into the advisory model — it's not advising anyone, it's processing.
 2. **Persistence:** Is this PERMANENT (always exists), PERSISTENT (long-running), or session-scoped?
 3. **Output:** Can self-talk produce artifacts that route to other conversations? Or is it strictly contained — what goes in stays in?
@@ -66,6 +68,7 @@ Logan created a conversation called `PUBLIC: CONVERSATION` and instructed Claude
 5. **Repo implications:** Does self-talk ever get committed to the vault? Or is it purely ephemeral in the conversation context?
 
 **CODE AUTHORITY's recommendation:**
+
 - Add PUBLIC as a formal prefix to the taxonomy
 - Classify as Tier 4 (Read/Analysis) with a note: "processing, not advisory"
 - No repo access — self-talk stays in the conversation

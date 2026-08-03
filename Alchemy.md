@@ -193,4 +193,8 @@ historical reference, on the record per [[VAULT-CONVENTIONS]].
 - [The Sceptical Chymist / Boyle's alchemical pursuits — Cambridge, *Robert Boyle Reconsidered*](https://www.cambridge.org/core/books/abs/robert-boyle-reconsidered/boyles-alchemical-pursuits/EABC02844EE8FEBB2A976CD8838BB4BE) (alchemy → chemistry transition)
 - [Jung and Alchemy: the Magnum Opus stages — Scott Jeffrey](https://scottjeffrey.com/jung-and-alchemy-magnum-opus/) (psychological reading)
 
-###### [["The world is quiet here."]]
+---
+
+```
+The world is quiet here．Esto Perpetua!
+```

@@ -40,10 +40,27 @@ review_feedback_loop = _load_review_feedback_loop_module()
 # engine's load above imported it, so it's cached in sys.modules; predicates the
 # engine no longer re-exports (e.g. _author_is_bot) are tested against it directly.
 pr_threads = sys.modules["pr_threads"]
+# Every ``gh`` command line is now built inside gh_cli by a typed operation, and the
+# run primitive there is private. Tests that assert on the emitted argv patch that one
+# primitive, so they check the command line that is actually executed.
+gh_cli = sys.modules["gh_cli"]
 
 
 def _labels(*names: str) -> dict[str, list[dict[str, str]]]:
     return {"nodes": [{"name": name} for name in names]}
+
+
+def _grid_labels(ft: str | None, dp: str | None) -> tuple[str, ...]:
+    """Stamp one risk grid cell in the flat schema."""
+    # A fired axis stamps one label; `—` on an axis stamps nothing, so the `—/—`
+    # cell comes back empty.
+    ft_label = {"low": review_feedback_loop.RISK_LOW_LABEL,
+                "med": review_feedback_loop.RISK_MED_LABEL}
+    dp_label = {"high": review_feedback_loop.RISK_HIGH_LABEL,
+                "nope": review_feedback_loop.RISK_NOPE_LABEL}
+    return tuple(
+        label for label in (ft_label.get(ft or ""), dp_label.get(dp or "")) if label
+    )
 
 
 def _thread(
@@ -105,26 +122,76 @@ def _pr(
     }
 
 
+def _grid_states(
+    ft: str | None, dp: str | None, *, now: datetime, created_at: datetime
+) -> tuple[dict[str, object], dict[str, object]]:
+    """Evaluate one risk grid cell twice: unreviewed, then APPROVED."""
+    flat = _grid_labels(ft, dp)
+    if flat:
+        return (
+            review_feedback_loop.evaluate_review_state(
+                _pr(created_at=created_at, labels=flat), now=now
+            ),
+            review_feedback_loop.evaluate_review_state(
+                _pr(created_at=created_at, labels=flat, review_decision="APPROVED"), now=now
+            ),
+        )
+    # The `—/—` cell carries NO labels, so nothing can be derived from them; its clear
+    # state is affirmed by the classifier's verdict, mirroring how sync_pr calls
+    # evaluate_review_state post-classify.
+    return (
+        review_feedback_loop.evaluate_review_state(
+            _pr(created_at=created_at, labels=()), now=now, verdict=(None, None)
+        ),
+        review_feedback_loop.evaluate_review_state(
+            _pr(created_at=created_at, labels=(), review_decision="APPROVED"),
+            now=now, verdict=(None, None),
+        ),
+    )
+
+
 class ReviewFeedbackLoopTest(unittest.TestCase):
+    def test_prior_verify_comment_is_found_past_the_first_page(self) -> None:
+        # Regression: `gh api --paginate` emits one array PER PAGE, so reading stdout as a
+        # single JSON document sees `[...][...]`, raises, and yields no bodies at all. The
+        # recursion guard then failed open on exactly the busy PRs most likely to already
+        # carry a verification comment. Reading via --jq has no document boundary.
+        marker = review_feedback_loop.VERIFY_CLAIM_MARKER
+        two_pages = "\n".join(["first page body", "another", f"page two body {marker}"])
+        captured = {}
+
+        def fake(owner, repo, issue_number, **kwargs):
+            captured.update(kwargs)
+            return SimpleNamespace(stdout=two_pages, stderr="", returncode=0)
+
+        with mock.patch.object(review_feedback_loop.gh_cli, "api_issue_comments", fake):
+            found = review_feedback_loop._has_prior_verify_comment("LAF-US", "IDAHO-VAULT", 877)
+
+        self.assertTrue(found)
+        self.assertEqual(captured.get("jq"), ".[].body")
+
     def test_clear_pair_pr_becomes_auto_merge_eligible_after_grace(self) -> None:
-        # K3/#629: the `—/—` pair — and ONLY it — arms auto-merge. A PR that classify
-        # scored clear (risk/—) with no blocking feedback is eligible once the grace window
-        # elapses; within grace it is not yet eligible.
+        # The `—/—` verdict — and ONLY it — arms auto-merge. A PR that the classifier
+        # scored clear (no risk/* label) with no blocking feedback is eligible once the grace
+        # window elapses; within grace it is not yet eligible. The clear state is affirmed by
+        # the classifier's `(None, None)` verdict (no labels to read).
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
 
         early_state = review_feedback_loop.evaluate_review_state(
             _pr(
                 created_at=now - timedelta(minutes=10),
-                labels=(review_feedback_loop.RISK_CLEAR_LABEL,),
+                labels=(),
             ),
             now=now,
+            verdict=(None, None),
         )
         ready_state = review_feedback_loop.evaluate_review_state(
             _pr(
                 created_at=now - timedelta(minutes=45),
-                labels=(review_feedback_loop.RISK_CLEAR_LABEL,),
+                labels=(),
             ),
             now=now,
+            verdict=(None, None),
         )
 
         self.assertTrue(early_state["is_clear"])
@@ -135,8 +202,59 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertTrue(ready_state["grace_elapsed"])
         self.assertTrue(ready_state["eligible_for_auto_merge"])
 
+    def test_nine_cell_grid_routing_is_the_single_source(self) -> None:
+        # The risk grid (WITNESS-THE-KEYS-ARE-THE-LEVERS-2026-06-21) is DERIVED from this
+        # engine, not a hand-assigned table: the (filetype, depth) label pair routes each PR
+        # into exactly one of three lanes. This pins all nine cells so the settled grid cannot
+        # silently drift. Lanes:
+        #   auto            : —/—  → eligible on grace alone (no review lane)
+        #   review-hold     : any fired flag with depth != nope → eligible once its review lane
+        #                     completes (APPROVED + threads clear) AND grace elapses; holds otherwise
+        #   sovereign/never : any depth == nope → never eligible, even fully approved
+        now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
+        past_grace = now - timedelta(minutes=45)
+        AUTO, HOLD, NEVER = "auto", "review-hold", "never"
+        grid = {
+            (None, None): AUTO,
+            (None, "high"): HOLD,
+            (None, "nope"): NEVER,
+            ("low", None): HOLD,
+            ("low", "high"): HOLD,
+            ("low", "nope"): NEVER,
+            ("med", None): HOLD,
+            ("med", "high"): HOLD,
+            ("med", "nope"): NEVER,
+        }
+        for (ft, dp), lane in grid.items():
+            with self.subTest(cell=f"ft={ft}/dp={dp}", lane=lane):
+                unreviewed, approved = _grid_states(ft, dp, now=now, created_at=past_grace)
+                if lane == AUTO:
+                    self.assertTrue(
+                        unreviewed["eligible_for_auto_merge"],
+                        "—/— must arm on grace with no review lane",
+                    )
+                elif lane == HOLD:
+                    self.assertFalse(
+                        unreviewed["eligible_for_auto_merge"],
+                        "a fired flag must HOLD until its review lane completes",
+                    )
+                    self.assertTrue(
+                        approved["eligible_for_auto_merge"],
+                        "a fired flag must flow once its review lane completes",
+                    )
+                else:  # NEVER
+                    self.assertFalse(unreviewed["eligible_for_auto_merge"])
+                    self.assertFalse(
+                        approved["eligible_for_auto_merge"],
+                        "depth=nope is the sovereign's hand — never auto, even approved",
+                    )
+        # The AUTO cell above is reached only via an affirmative `—/—` verdict. The
+        # converse — an unmarked PR with no verdict HOLDS rather than being mistaken for
+        # clear (the positive marker) — is pinned by
+        # test_unclassified_pr_without_verdict_never_arms.
+
     def test_low_risk_pr_holds_and_never_auto_merges(self) -> None:
-        # K3/#629 norm flip: risk/low is a sorter that FIRED (machine-doc paths) — it HOLDS
+        # risk/low is a sorter that FIRED (machine-doc paths) — it HOLDS
         # for review, it does not arm. Only the positive clear marker auto-merges. A low-risk
         # PR past grace with no blocking feedback stays ineligible and carries review/pending.
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
@@ -172,7 +290,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertEqual(state["risk_tier"], "low")
         self.assertTrue(state["low_risk"])
         self.assertTrue(state["grace_elapsed"])
-        # K3/#629: risk/low HOLDS — the label is canonical for the tier, but low is not the
+        # risk/low HOLDS — the label is canonical for the tier, but low is not the
         # clear pair, so it never arms.
         self.assertFalse(state["eligible_for_auto_merge"])
 
@@ -187,58 +305,83 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertFalse(state["eligible_for_auto_merge"])
 
     def test_pair_lane_parses_both_axes(self) -> None:
-        # K6/#632: the lane IS the label pair — one label per independent analysis.
+        # Flat schema: read one flag per axis off the flat labels; `classified` is True iff
+        # ANY risk/* flag is present.
         rfl = review_feedback_loop
-        ft, dp, marked = rfl._risk_pair_for_pr({"filetype:risk/—", "depth:risk/—"})
-        self.assertEqual((ft, dp, marked), (None, None, True))
-        ft, dp, marked = rfl._risk_pair_for_pr({"filetype:risk/med", "depth:risk/high"})
-        self.assertEqual((ft, dp, marked), ("med", "high", True))
-        ft, dp, marked = rfl._risk_pair_for_pr({"filetype:risk/low", "depth:risk/nope"})
-        self.assertEqual((ft, dp, marked), ("low", "nope", True))
-        # One axis unmarked (and no legacy fallback) -> NOT fully marked: the PR holds.
-        ft, dp, marked = rfl._risk_pair_for_pr({"filetype:risk/med"})
-        self.assertFalse(marked)
+        # No flags at all -> nothing to read; NOT classified from labels alone.
+        ft, dp, classified = rfl._risk_pair_for_pr(set())
+        self.assertEqual((ft, dp, classified), (None, None, False))
+        ft, dp, classified = rfl._risk_pair_for_pr({"risk/med", "risk/high"})
+        self.assertEqual((ft, dp, classified), ("med", "high", True))
+        ft, dp, classified = rfl._risk_pair_for_pr({"risk/low", "risk/nope"})
+        self.assertEqual((ft, dp, classified), ("low", "nope", True))
+        # One axis fired, the other absent -> the fired flag is read; classified is True.
+        ft, dp, classified = rfl._risk_pair_for_pr({"risk/med"})
+        self.assertEqual((ft, dp, classified), ("med", None, True))
 
     def test_pair_axis_exclusion_fails_loud(self) -> None:
-        # K6 per-axis mutual exclusion: an axis carries exactly ONE label — its `—` XOR
-        # its fired flag. Two labels on one axis is a producer/restamp bug: raise.
+        # Per-axis mutual exclusion: an axis carries AT MOST one value. Two values on one
+        # axis is a producer/restamp bug: _assert_risk_marker_exclusive raises.
         rfl = review_feedback_loop
         for labels in (
-            {"filetype:risk/—", "filetype:risk/med", "depth:risk/—"},
-            {"filetype:risk/low", "filetype:risk/med"},
-            {"depth:risk/high", "depth:risk/nope", "filetype:risk/—"},
+            {"risk/low", "risk/med"},
+            {"risk/high", "risk/nope"},
+            {"risk/low", "risk/med", "risk/high"},
         ):
             with self.subTest(labels=labels):
                 with self.assertRaises(rfl.RiskMarkerInvariantError):
-                    rfl._risk_pair_for_pr(labels)
+                    rfl._assert_risk_marker_exclusive(labels)
+
+    def test_tier_from_pair_rejects_out_of_vocab_flags(self) -> None:
+        # A caller-supplied verdict typo (e.g. "medium" vs "med") must fail loud, not fall
+        # through to "clear" and misroute the PR.
+        rfl = review_feedback_loop
+        with self.assertRaises(rfl.RiskMarkerInvariantError):
+            rfl._tier_from_pair("medium", None, True)
+        with self.assertRaises(rfl.RiskMarkerInvariantError):
+            rfl._tier_from_pair(None, "highish", True)
+        # Valid vocab still tiers as before.
+        self.assertEqual(rfl._tier_from_pair(None, None, True), "clear")
+        self.assertEqual(rfl._tier_from_pair("med", "high", True), "high")
+        self.assertEqual(rfl._tier_from_pair(None, None, False), "unknown")
+
+    def test_restamp_risk_pair_rejects_out_of_vocab_flags(self) -> None:
+        # restamp indexes FILETYPE_RISK_LABELS/DEPTH_RISK_LABELS by flag; an out-of-vocab
+        # flag must raise RiskMarkerInvariantError (deterministic, domain-specific) rather
+        # than a raw KeyError — matching _tier_from_pair's fail-loud behavior.
+        rfl = review_feedback_loop
+        with self.assertRaises(rfl.RiskMarkerInvariantError):
+            rfl.restamp_risk_pair(1, set(), "medium", None)
+        with self.assertRaises(rfl.RiskMarkerInvariantError):
+            rfl.restamp_risk_pair(1, set(), None, "highish")
 
     def test_pair_clear_arms_and_pair_flag_holds(self) -> None:
-        # The {—,—} pair arms after grace; a fired lane holds until its review completes.
+        # The `—/—` verdict arms after grace; a fired lane holds until its review completes.
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
         clear_state = review_feedback_loop.evaluate_review_state(
-            _pr(created_at=now - timedelta(minutes=45),
-                labels=("filetype:risk/—", "depth:risk/—")),
+            _pr(created_at=now - timedelta(minutes=45), labels=()),
             now=now,
+            verdict=(None, None),
         )
         self.assertTrue(clear_state["is_clear"])
         self.assertTrue(clear_state["eligible_for_auto_merge"])
 
         held_state = review_feedback_loop.evaluate_review_state(
             _pr(created_at=now - timedelta(minutes=45),
-                labels=("filetype:risk/med", "depth:risk/—")),
+                labels=(review_feedback_loop.RISK_MED_LABEL,)),
             now=now,
         )
         self.assertEqual(held_state["risk_tier"], "med")
         self.assertFalse(held_state["eligible_for_auto_merge"])
 
     def test_lane_completion_clears_flag_and_flows(self) -> None:
-        # K6 "Restamp + clear": an approving review with no current threads completes the
+        # "Restamp + clear": an approving review with no current threads completes the
         # lane — the PR becomes eligible, and the projection consumes the fired flag
-        # (restamps the axis to its `—`).
+        # (removes the flat label; a clear verdict stamps none).
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
         state = review_feedback_loop.evaluate_review_state(
             _pr(created_at=now - timedelta(minutes=45),
-                labels=("filetype:risk/med", "depth:risk/—"),
+                labels=(review_feedback_loop.RISK_MED_LABEL,),
                 review_decision="APPROVED"),
             now=now,
         )
@@ -249,17 +392,18 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         with mock.patch.object(review_feedback_loop, "_edit_label") as edit_label, \
              mock.patch.object(review_feedback_loop, "_disable_auto_merge"):
             actions = review_feedback_loop.apply_review_state_projection(17, state)
-        self.assertIn("add:filetype:risk/—", actions)
-        self.assertIn("remove:filetype:risk/med", actions)
-        edit_label.assert_any_call(17, add="filetype:risk/—")
+        self.assertIn("remove:risk/med", actions)
+        # A clear verdict adds nothing.
+        self.assertNotIn("add:risk/med", actions)
+        edit_label.assert_any_call(17, remove="risk/med")
 
     def test_nope_lane_never_auto_clears_even_approved(self) -> None:
-        # The still point asks for the sovereign's own hand: depth:risk/nope is never
-        # consumed by review completion and never arms.
+        # The still point asks for the sovereign's own hand: risk/nope is never consumed by
+        # review completion and never arms.
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
         state = review_feedback_loop.evaluate_review_state(
             _pr(created_at=now - timedelta(minutes=45),
-                labels=("filetype:risk/—", "depth:risk/nope"),
+                labels=(review_feedback_loop.RISK_NOPE_LABEL,),
                 review_decision="APPROVED"),
             now=now,
         )
@@ -267,37 +411,89 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertTrue(state["lane_complete"])
         self.assertFalse(state["flag_clearable"])
         self.assertFalse(state["eligible_for_auto_merge"])
-        with mock.patch.object(review_feedback_loop, "_edit_label") as edit_label, \
+        with mock.patch.object(review_feedback_loop, "_edit_label"), \
              mock.patch.object(review_feedback_loop, "_disable_auto_merge"):
             actions = review_feedback_loop.apply_review_state_projection(18, state)
-        self.assertNotIn("remove:depth:risk/nope", actions)
+        self.assertNotIn("remove:risk/nope", actions)
 
-    def test_restamp_mirrors_classifier_and_syncs_legacy(self) -> None:
-        # K6 restamp: labels mirror the verdict — pair stamped, stale pair labels and
-        # contradicted legacy sparse labels retired, legacy mirror kept in sync.
+    def test_restamp_mirrors_classifier(self) -> None:
+        # Restamp: labels mirror the verdict — fired axes stamped, stale risk/* flags
+        # retired, non-risk labels untouched.
         with mock.patch.object(review_feedback_loop, "_edit_label"):
-            labels = {"filetype:risk/med", "depth:risk/—", "risk/low", "review/pending"}
+            labels = {"risk/med", "review/pending"}
             actions = review_feedback_loop.restamp_risk_pair(21, labels, None, None)
-        self.assertIn("add:filetype:risk/—", actions)
-        self.assertIn("remove:filetype:risk/med", actions)
-        self.assertIn("add:risk/—", actions)
-        self.assertIn("remove:risk/low", actions)
+        # `—/—` verdict clears the fired filetype flag and adds nothing.
+        self.assertIn("remove:risk/med", actions)
+        self.assertNotIn("review/pending", [a.split(":", 1)[-1] for a in actions])
         self.assertIn("review/pending", labels)  # non-risk labels untouched
-        self.assertEqual(
-            labels & {"filetype:risk/—", "depth:risk/—", "risk/—"},
-            {"filetype:risk/—", "depth:risk/—", "risk/—"},
-        )
+        self.assertEqual(labels & review_feedback_loop.RISK_FLAG_LABELS, set())
 
         with mock.patch.object(review_feedback_loop, "_edit_label"):
-            labels = {"risk/—"}
+            labels = {"risk/high"}  # stale filedepth flag, to be replaced
             actions = review_feedback_loop.restamp_risk_pair(22, labels, "low", "high")
-        self.assertIn("add:filetype:risk/low", actions)
-        self.assertIn("add:depth:risk/high", actions)
+        self.assertIn("add:risk/low", actions)
+        # risk/high already present for the depth axis -> no re-add, no removal.
+        self.assertNotIn("remove:risk/high", actions)
+        self.assertEqual(labels, {"risk/low", "risk/high"})
+
+    def test_restamp_retires_a_superseded_vocabulary_in_passing(self) -> None:
+        # What the set below is: seven concrete examples — #854's retired scheme, the
+        # strings that actually went out into the wild. What it is not: the contract.
+        #
+        # Measured, not asserted: with `restamp_risk_pair` reduced to a seven-case lookup
+        # table over exactly these strings, every assertion in this test still passes, while
+        # `test_restamp_sweeps_a_vocabulary_the_code_has_never_seen` fails. That test is
+        # where the namespace contract is pinned; this one does not pin it alone.
+        #
+        # Non-risk labels stay untouched throughout.
+        retired = {
+            "filetype:risk/low", "filetype:risk/med", "filetype:risk/—",
+            "depth:risk/high", "depth:risk/nope", "depth:risk/—", "risk/—",
+        }
+        with mock.patch.object(review_feedback_loop, "_edit_label"):
+            labels = set(retired) | {"review/pending", "agent:claude-code"}
+            actions = review_feedback_loop.restamp_risk_pair(31, labels, "med", "high")
+        for label in retired:
+            self.assertIn(f"remove:{label}", actions)
+        self.assertIn("add:risk/med", actions)
         self.assertIn("add:risk/high", actions)
-        self.assertIn("remove:risk/—", actions)
+        self.assertEqual(labels, {"risk/med", "risk/high", "review/pending", "agent:claude-code"})
+
+        # A `—/—` verdict strips the retired vocabulary too, stamping nothing in its place.
+        with mock.patch.object(review_feedback_loop, "_edit_label"):
+            labels = set(retired) | {"review/pending"}
+            review_feedback_loop.restamp_risk_pair(32, labels, None, None)
+        self.assertEqual(labels, {"review/pending"})
+
+    def test_restamp_sweeps_a_vocabulary_the_code_has_never_seen(self) -> None:
+        # The test above enumerates the seven strings #854 retired, which a seven-case lookup
+        # table would satisfy just as well — it cannot tell a namespace rule from a hardcoded
+        # list. These labels appear nowhere in the codebase, so only a rule sweeps them, and a
+        # list would leave every one behind. This is the case that distinguishes the two.
+        # `newaxis:risk/—` keeps the em dash (U+2014) ON PURPOSE: three labels in the live
+        # retired vocabulary carry it — `filetype:risk/—`, `depth:risk/—`, `risk/—`. Swapping
+        # it for an ASCII stand-in would stop exercising the character the real labels use.
+        unseen = {"scope:risk/whatever", "tier:risk/x", "newaxis:risk/—", "risk/anything"}
+        with mock.patch.object(review_feedback_loop, "_edit_label"):
+            labels = set(unseen) | {"review/pending"}
+            actions = review_feedback_loop.restamp_risk_pair(33, labels, "low", None)
+        for label in unseen:
+            self.assertIn(f"remove:{label}", actions)
+        self.assertEqual(labels, {"risk/low", "review/pending"})
+
+    def test_restamp_leaves_names_that_only_resemble_the_namespace(self) -> None:
+        # The boundary the rule must NOT cross, kept separate from the sweep above so a
+        # failure says which half broke. `riskier/thing` and `notrisk/low` are not risk
+        # labels; a sloppy pattern (a bare `risk/` substring search) would eat both.
+        near_misses = {"riskier/thing", "notrisk/low", "review/pending"}
+        with mock.patch.object(review_feedback_loop, "_edit_label"):
+            labels = set(near_misses)
+            actions = review_feedback_loop.restamp_risk_pair(34, labels, None, None)
+        self.assertEqual(actions, [])
+        self.assertEqual(labels, near_misses)
 
     def test_sync_pr_restamps_unmarked_pr_from_classifier(self) -> None:
-        # K6 backfill-by-automation: an unmarked in-flight PR gets its pair stamped from
+        # Backfill-by-automation: an unmarked in-flight PR gets its pair stamped from
         # the classifier on the next sync — no hand-sweep.
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
         args = SimpleNamespace(
@@ -318,25 +514,110 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         ), mock.patch.object(
             review_feedback_loop, "_disable_auto_merge"
         ), mock.patch.object(
-            review_feedback_loop, "_run"
+            gh_cli, "_run"
         ), mock.patch.object(
             review_feedback_loop, "_arm_auto_merge", return_value=(True, None)
         ) as arm, contextlib.redirect_stdout(io.StringIO()):
             result = review_feedback_loop.sync_pr(args)
         self.assertEqual(result, 0)
-        # Restamped to the {—,—} pair -> clear lane -> armed on this same pass.
+        # Restamped to `—/—` (no labels) -> clear lane via the verdict -> armed this pass.
         arm.assert_called_once_with("LAF-US", "IDAHO-VAULT", 300)
 
-    def test_clear_marker_classifies_as_clear(self) -> None:
-        # K4/#630: the positive `risk/—` marker is its own tier ("clear"), distinct from low.
-        self.assertEqual(
-            review_feedback_loop._risk_tier_for_pr("", {review_feedback_loop.RISK_CLEAR_LABEL}),
-            "clear",
+    def test_consumed_clear_lane_complete_pr_is_not_disarmed(self) -> None:
+        # Regression: a PR whose flag was consumed (now zero risk/* labels) and whose lane
+        # completed (APPROVED, no threads) must be re-evaluated with the classifier verdict
+        # even though lane_complete skips the restamp. Before the fix the sweep skipped the
+        # verdict when lane_complete, so such a PR read as `unknown`, failed its eligibility
+        # check, and the projection DISARMED an already-armed clear PR.
+        now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
+        args = SimpleNamespace(
+            owner="LAF-US", repo="IDAHO-VAULT", pr_number=301,
+            sync_actor="someone", grace_minutes=30,
+        )
+        armed_clear = _pr(
+            number=301, created_at=now - timedelta(minutes=45),
+            labels=(review_feedback_loop.DEFAULT_AUTO_MERGE_LABEL,),
+            review_decision="APPROVED",
+        )
+        with mock.patch.object(review_feedback_loop, "ensure_labels"), mock.patch.object(
+            review_feedback_loop, "_fetch_pr", return_value=armed_clear
+        ), mock.patch.object(
+            review_feedback_loop, "_viewer_login", return_value="github-actions[bot]"
+        ), mock.patch.object(
+            review_feedback_loop, "_resolve_outdated_resolvable_threads", return_value=[]
+        ), mock.patch.object(
+            review_feedback_loop, "_classify_pr_pair", return_value=(None, None)
+        ), mock.patch.object(
+            review_feedback_loop, "_edit_label"
+        ), mock.patch.object(
+            review_feedback_loop, "_disable_auto_merge"
+        ) as disable, mock.patch.object(
+            gh_cli, "_run"
+        ), mock.patch.object(
+            review_feedback_loop, "_arm_auto_merge", return_value=(True, None)
+        ), contextlib.redirect_stdout(io.StringIO()):
+            result = review_feedback_loop.sync_pr(args)
+        self.assertEqual(result, 0)
+        # The consumed-clear lane-complete PR reads clear via the verdict -> stays eligible
+        # -> is NOT disarmed.
+        disable.assert_not_called()
+
+    def test_stale_flag_on_lane_complete_pr_is_consumed_not_orphaned(self) -> None:
+        # Regression: a lane-complete PR that STILL carries a stale risk/* flag but now
+        # classifies clear must keep its label-derived state so the projection CONSUMES the
+        # stale flag. Passing the clear verdict here would make flag_clearable false and
+        # leave the flag orphaned on the PR.
+        now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
+        args = SimpleNamespace(
+            owner="LAF-US", repo="IDAHO-VAULT", pr_number=302,
+            sync_actor="someone", grace_minutes=30,
+        )
+        stale = _pr(
+            number=302, created_at=now - timedelta(minutes=45),
+            labels=(review_feedback_loop.RISK_HIGH_LABEL,
+                    review_feedback_loop.DEFAULT_AUTO_MERGE_LABEL),
+            review_decision="APPROVED",
+        )
+        with mock.patch.object(review_feedback_loop, "ensure_labels"), mock.patch.object(
+            review_feedback_loop, "_fetch_pr", return_value=stale
+        ), mock.patch.object(
+            review_feedback_loop, "_viewer_login", return_value="github-actions[bot]"
+        ), mock.patch.object(
+            review_feedback_loop, "_resolve_outdated_resolvable_threads", return_value=[]
+        ), mock.patch.object(
+            review_feedback_loop, "_classify_pr_pair", return_value=(None, None)
+        ), mock.patch.object(
+            review_feedback_loop, "_edit_label"
+        ) as edit_label, mock.patch.object(
+            review_feedback_loop, "_disable_auto_merge"
+        ), mock.patch.object(
+            gh_cli, "_run"
+        ), mock.patch.object(
+            review_feedback_loop, "_arm_auto_merge", return_value=(True, None)
+        ), contextlib.redirect_stdout(io.StringIO()):
+            result = review_feedback_loop.sync_pr(args)
+        self.assertEqual(result, 0)
+        # The stale risk/high flag is consumed (removed), not orphaned.
+        self.assertIn(
+            mock.call(302, remove=review_feedback_loop.RISK_HIGH_LABEL),
+            edit_label.call_args_list,
         )
 
+    def test_unclassified_pr_without_verdict_never_arms(self) -> None:
+        # Safety: absence of a risk label is NOT clear. Without an affirmative verdict, an
+        # all-absent PR is `unknown` and HOLDS — it must never be armed for auto-merge.
+        now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
+        state = review_feedback_loop.evaluate_review_state(
+            _pr(created_at=now - timedelta(minutes=45), labels=()),
+            now=now,
+        )
+        self.assertEqual(state["risk_tier"], "unknown")
+        self.assertFalse(state["is_clear"])
+        self.assertFalse(state["eligible_for_auto_merge"])
+
     def test_unmarked_pr_holds_and_is_not_clear(self) -> None:
-        # K4/#630 core: absence of a marker is NOT classified-clear. An unmarked PR resolves
-        # to "unknown" and never arms — only the positive risk/— marker does.
+        # Absence of a marker is NOT classified-clear. An unmarked PR resolves
+        # to "unknown" and never arms — only a positive verdict of `—/—` does.
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
         state = review_feedback_loop.evaluate_review_state(
             _pr(created_at=now - timedelta(minutes=45), labels=(), body="## No marker\n"),
@@ -349,19 +630,19 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertTrue(state["grace_elapsed"])
         self.assertFalse(state["eligible_for_auto_merge"])
 
-    def test_clear_marker_is_mutually_exclusive_with_flags(self) -> None:
-        # K4/#630 invariant: risk/— XOR a flag, never both. A PR carrying the clear marker
-        # alongside any risk/* flag is a producer/backfill bug — fail LOUD, never silently
-        # auto-merge a PR a sorter actually flagged.
+    def test_axis_exclusion_is_mutually_exclusive_per_axis(self) -> None:
+        # Flat-schema invariant: an axis carries AT MOST one value. Two filetype values
+        # (risk/low + risk/med) or two filedepth values (risk/high + risk/nope) on one PR is
+        # a producer/backfill bug — fail LOUD, never silently route a contradictory axis.
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
-        for flag in (review_feedback_loop.RISK_LOW_LABEL, review_feedback_loop.RISK_HIGH_LABEL):
-            with self.subTest(flag=flag):
+        for pair in (
+            (review_feedback_loop.RISK_LOW_LABEL, review_feedback_loop.RISK_MED_LABEL),
+            (review_feedback_loop.RISK_HIGH_LABEL, review_feedback_loop.RISK_NOPE_LABEL),
+        ):
+            with self.subTest(pair=pair):
                 with self.assertRaises(review_feedback_loop.RiskMarkerInvariantError):
                     review_feedback_loop.evaluate_review_state(
-                        _pr(
-                            created_at=now - timedelta(minutes=45),
-                            labels=(review_feedback_loop.RISK_CLEAR_LABEL, flag),
-                        ),
+                        _pr(created_at=now - timedelta(minutes=45), labels=pair),
                         now=now,
                     )
 
@@ -605,7 +886,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             ),
         ), mock.patch.object(review_feedback_loop, "_edit_label"), mock.patch.object(
             review_feedback_loop, "_disable_auto_merge"
-        ) as disable_auto_merge, mock.patch.object(review_feedback_loop, "_run") as run:
+        ) as disable_auto_merge, mock.patch.object(gh_cli, "_run") as run:
             result = review_feedback_loop.enable_auto_merge(args)
 
         self.assertEqual(result, 0)
@@ -629,7 +910,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             ),
         ), mock.patch.object(review_feedback_loop, "_edit_label"), mock.patch.object(
             review_feedback_loop, "_disable_auto_merge"
-        ) as disable_auto_merge, mock.patch.object(review_feedback_loop, "_run") as run:
+        ) as disable_auto_merge, mock.patch.object(gh_cli, "_run") as run:
             result = review_feedback_loop.enable_auto_merge(args)
 
         self.assertEqual(result, 0)
@@ -647,7 +928,9 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
 
         with mock.patch.object(
             review_feedback_loop, "_auto_merge_state", return_value=(False, False)
-        ), mock.patch.object(review_feedback_loop, "_run", side_effect=error):
+        ), mock.patch.object(
+            review_feedback_loop, "_merge_state_status", return_value="CLEAN"
+        ), mock.patch.object(gh_cli, "_run", side_effect=error):
             enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 289)
 
         self.assertFalse(enabled)
@@ -659,15 +942,17 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         with mock.patch.object(
             review_feedback_loop, "_auto_merge_state", return_value=(False, False)
         ), mock.patch.object(
+            review_feedback_loop, "_merge_state_status", return_value="CLEAN"
+        ), mock.patch.object(
             review_feedback_loop, "_pr_node_id", return_value="PR_node1"
         ), mock.patch.object(
             review_feedback_loop, "_enqueue_pr", return_value=(True, None)
-        ) as enqueue, mock.patch.object(review_feedback_loop, "_run") as run:
+        ) as enqueue, mock.patch.object(gh_cli, "_run") as run:
             enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 10)
         self.assertTrue(enabled)
         self.assertIsNone(arm_error)
         run.assert_called_once_with(
-            ["gh", "pr", "merge", "10", "--merge", "--auto"]
+            ["gh", "pr", "merge", "10", "--merge", "--auto"], check=True
         )
         enqueue.assert_called_once_with("PR_node1")
 
@@ -677,10 +962,12 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         with mock.patch.object(
             review_feedback_loop, "_auto_merge_state", return_value=(True, False)
         ), mock.patch.object(
+            review_feedback_loop, "_merge_state_status", return_value="CLEAN"
+        ), mock.patch.object(
             review_feedback_loop, "_pr_node_id", return_value="PR_node2"
         ), mock.patch.object(
             review_feedback_loop, "_enqueue_pr", return_value=(True, None)
-        ) as enqueue, mock.patch.object(review_feedback_loop, "_run") as run:
+        ) as enqueue, mock.patch.object(gh_cli, "_run") as run:
             enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 11)
         self.assertTrue(enabled)
         self.assertIsNone(arm_error)
@@ -689,16 +976,20 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
 
     def test_arm_auto_merge_leaves_queued_pr_untouched(self) -> None:
         # Already in the merge queue → do nothing; re-enqueuing/re-arming would disturb it.
+        # Also never reads mergeStateStatus — a queued PR is never a BEHIND candidate here.
         with mock.patch.object(
             review_feedback_loop, "_auto_merge_state", return_value=(True, True)
         ), mock.patch.object(
+            review_feedback_loop, "_merge_state_status"
+        ) as merge_state, mock.patch.object(
             review_feedback_loop, "_enqueue_pr"
-        ) as enqueue, mock.patch.object(review_feedback_loop, "_run") as run:
+        ) as enqueue, mock.patch.object(gh_cli, "_run") as run:
             enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 12)
         self.assertTrue(enabled)
         self.assertIsNone(arm_error)
         run.assert_not_called()
         enqueue.assert_not_called()
+        merge_state.assert_not_called()
 
     def test_arm_auto_merge_enqueue_not_ready_is_non_fatal(self) -> None:
         # Enqueue is best-effort: a not-yet-ready PR can't be queued now, but it stays armed
@@ -707,10 +998,12 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         with mock.patch.object(
             review_feedback_loop, "_auto_merge_state", return_value=(False, False)
         ), mock.patch.object(
+            review_feedback_loop, "_merge_state_status", return_value="CLEAN"
+        ), mock.patch.object(
             review_feedback_loop, "_pr_node_id", return_value="PR_node3"
         ), mock.patch.object(
             review_feedback_loop, "_enqueue_pr", return_value=(False, None)
-        ), mock.patch.object(review_feedback_loop, "_run"):
+        ), mock.patch.object(gh_cli, "_run"):
             enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 13)
         self.assertTrue(enabled)
         self.assertIsNone(arm_error)  # benign not-ready must not leak as an error
@@ -721,12 +1014,14 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         with mock.patch.object(
             review_feedback_loop, "_auto_merge_state", return_value=(True, False)
         ), mock.patch.object(
+            review_feedback_loop, "_merge_state_status", return_value="CLEAN"
+        ), mock.patch.object(
             review_feedback_loop, "_pr_node_id", return_value="PR_node4"
         ), mock.patch.object(
             review_feedback_loop,
             "_enqueue_pr",
             return_value=(False, "Resource not accessible by integration"),
-        ), mock.patch.object(review_feedback_loop, "_run"):
+        ), mock.patch.object(gh_cli, "_run"):
             enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 14)
         self.assertTrue(enabled)
         self.assertIsNotNone(arm_error)
@@ -739,17 +1034,150 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         with mock.patch.object(
             review_feedback_loop, "_auto_merge_state", return_value=(False, False)
         ), mock.patch.object(
+            review_feedback_loop, "_merge_state_status", return_value="CLEAN"
+        ), mock.patch.object(
             review_feedback_loop, "_pr_node_id", return_value=None
         ), mock.patch.object(
             review_feedback_loop, "_enqueue_pr"
-        ) as enqueue, mock.patch.object(review_feedback_loop, "_run") as run:
+        ) as enqueue, mock.patch.object(gh_cli, "_run") as run:
             enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 15)
         self.assertTrue(enabled)
         self.assertIsNone(arm_error)
         run.assert_called_once_with(
-            ["gh", "pr", "merge", "15", "--merge", "--auto"]
+            ["gh", "pr", "merge", "15", "--merge", "--auto"], check=True
         )
         enqueue.assert_not_called()
+
+    def test_arm_auto_merge_updates_branch_when_behind_then_still_arms(self) -> None:
+        # BEHIND means neither arming nor enqueuing can make the PR CLEAN — merge base in
+        # first (the same recovery batch-arm-merge-queue.yml already does for this state),
+        # then still arm as a backstop so it's ready to enqueue once CI recomputes it CLEAN.
+        with mock.patch.object(
+            review_feedback_loop, "_auto_merge_state", return_value=(False, False)
+        ), mock.patch.object(
+            review_feedback_loop, "_merge_state_status", return_value="BEHIND"
+        ), mock.patch.object(
+            review_feedback_loop, "_update_branch", return_value=(True, None)
+        ) as update_branch, mock.patch.object(
+            review_feedback_loop, "_pr_node_id", return_value="PR_node20"
+        ), mock.patch.object(
+            review_feedback_loop, "_enqueue_pr", return_value=(False, None)
+        ), mock.patch.object(gh_cli, "_run") as run:
+            enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 20)
+        self.assertTrue(enabled)
+        self.assertIn("branch updated (was BEHIND)", arm_error)
+        update_branch.assert_called_once_with("o", "r", 20)
+        run.assert_called_once_with(["gh", "pr", "merge", "20", "--merge", "--auto"], check=True)
+
+    def test_arm_auto_merge_still_arms_when_branch_update_fails(self) -> None:
+        # A real update-branch failure (e.g. an actual conflict surfaced as DIRTY by the time
+        # this ran) is surfaced as an informational note, not treated as arming having failed.
+        with mock.patch.object(
+            review_feedback_loop, "_auto_merge_state", return_value=(False, False)
+        ), mock.patch.object(
+            review_feedback_loop, "_merge_state_status", return_value="BEHIND"
+        ), mock.patch.object(
+            review_feedback_loop, "_update_branch", return_value=(False, "merge conflict")
+        ), mock.patch.object(
+            review_feedback_loop, "_pr_node_id", return_value="PR_node21"
+        ), mock.patch.object(
+            review_feedback_loop, "_enqueue_pr", return_value=(False, None)
+        ), mock.patch.object(gh_cli, "_run") as run:
+            enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 21)
+        self.assertTrue(enabled)
+        self.assertIn("branch update (BEHIND) failed", arm_error)
+        self.assertIn("merge conflict", arm_error)
+        run.assert_called_once_with(["gh", "pr", "merge", "21", "--merge", "--auto"], check=True)
+
+    def test_arm_auto_merge_aggregates_notes_when_branch_update_and_enqueue_both_fail(
+        self,
+    ) -> None:
+        # Both failure notes must survive the join — neither overwrites the other.
+        with mock.patch.object(
+            review_feedback_loop, "_auto_merge_state", return_value=(False, False)
+        ), mock.patch.object(
+            review_feedback_loop, "_merge_state_status", return_value="BEHIND"
+        ), mock.patch.object(
+            review_feedback_loop, "_update_branch", return_value=(False, "merge conflict")
+        ), mock.patch.object(
+            review_feedback_loop, "_pr_node_id", return_value="PR_node23"
+        ), mock.patch.object(
+            review_feedback_loop, "_enqueue_pr", return_value=(False, "enqueue error")
+        ), mock.patch.object(gh_cli, "_run") as run:
+            enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 23)
+        self.assertTrue(enabled)
+        self.assertIn("branch update (BEHIND) failed", arm_error)
+        self.assertIn("merge conflict", arm_error)
+        self.assertIn("enqueue was rejected", arm_error)
+        self.assertIn("enqueue error", arm_error)
+        run.assert_called_once_with(["gh", "pr", "merge", "23", "--merge", "--auto"], check=True)
+
+    def test_arm_auto_merge_checks_behind_even_when_already_enabled(self) -> None:
+        # A PR can already be armed and still fall BEHIND later — the BEHIND check does not
+        # depend on `enabled`, so this must still trigger an update-branch attempt.
+        with mock.patch.object(
+            review_feedback_loop, "_auto_merge_state", return_value=(True, False)
+        ), mock.patch.object(
+            review_feedback_loop, "_merge_state_status", return_value="BEHIND"
+        ), mock.patch.object(
+            review_feedback_loop, "_update_branch", return_value=(True, None)
+        ) as update_branch, mock.patch.object(
+            review_feedback_loop, "_pr_node_id", return_value="PR_node22"
+        ), mock.patch.object(
+            review_feedback_loop, "_enqueue_pr", return_value=(False, None)
+        ), mock.patch.object(gh_cli, "_run") as run:
+            enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 22)
+        self.assertTrue(enabled)
+        self.assertIn("branch updated (was BEHIND)", arm_error)
+        update_branch.assert_called_once_with("o", "r", 22)
+        run.assert_not_called()  # already enabled — no redundant enable call
+
+    def test_merge_state_status_returns_value_and_fails_open(self) -> None:
+        with mock.patch.object(
+            review_feedback_loop,
+            "_graphql",
+            return_value={"repository": {"pullRequest": {"mergeStateStatus": "BEHIND"}}},
+        ):
+            self.assertEqual(
+                review_feedback_loop._merge_state_status("o", "r", 9), "BEHIND"
+            )
+        with mock.patch.object(review_feedback_loop, "_graphql", return_value={}):
+            self.assertEqual(
+                review_feedback_loop._merge_state_status("o", "r", 9), "UNKNOWN"
+            )
+        with mock.patch.object(
+            review_feedback_loop, "_graphql", side_effect=RuntimeError("boom")
+        ):
+            self.assertEqual(
+                review_feedback_loop._merge_state_status("o", "r", 9), "UNKNOWN"
+            )
+        with mock.patch.object(
+            review_feedback_loop,
+            "_graphql",
+            return_value={"repository": {"pullRequest": {"mergeStateStatus": None}}},
+        ):
+            self.assertEqual(
+                review_feedback_loop._merge_state_status("o", "r", 9), "UNKNOWN"
+            )
+
+    def test_update_branch_tri_state_success_and_failure(self) -> None:
+        # Real owner/repo: gh_cli pins these engines to the repository they govern,
+        # so a placeholder slug is now rejected before argv is built.
+        with mock.patch.object(gh_cli, "_run") as run:
+            ok, err = review_feedback_loop._update_branch("LAF-US", "IDAHO-VAULT", 9)
+        self.assertTrue(ok)
+        self.assertIsNone(err)
+        run.assert_called_once_with(
+            ["gh", "api", "--method", "PUT",
+             "repos/LAF-US/IDAHO-VAULT/pulls/9/update-branch"],
+            check=True,
+        )
+        with mock.patch.object(
+            gh_cli, "_run", side_effect=RuntimeError("conflict")
+        ):
+            ok, err = review_feedback_loop._update_branch("LAF-US", "IDAHO-VAULT", 9)
+        self.assertFalse(ok)
+        self.assertEqual(err, "conflict")
 
     def test_enqueue_pr_tri_state_entry_notready_failure(self) -> None:
         # The enqueue primitive is tri-state:
@@ -804,17 +1232,17 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             self.assertIsNone(review_feedback_loop._pr_node_id("o", "r", 9))
 
     # ----- guarded arm (#521/#527 reversal, 2026-06-17). The protected-path veto was
-    # retired 2026-06-29 (K1/#627, K2/#628): the CODEOWNERS hard gate
+    # retired 2026-06-29: the CODEOWNERS hard gate
     # (require_code_owner_review) now enforces "this path needs a human", so the engine no
     # longer vetoes protected paths — these tests assert the un-vetoed arm path. -----
 
     def test_maybe_arm_arms_eligible_pr(self) -> None:
         # On a successful arm, the merge/auto label is applied via a CHECKED gh call so the
-        # write can fail-close (see test below). Mock _run for that label edit.
+        # write can fail-close (see test below). Mock the gh_cli run primitive for that edit.
         with mock.patch.object(
             review_feedback_loop, "_arm_auto_merge", return_value=(True, None)
         ) as arm, mock.patch.object(
-            review_feedback_loop, "_run"
+            gh_cli, "_run"
         ) as run:
             result = review_feedback_loop._maybe_arm_auto_merge(
                 "o", "r", 5, {"eligible_for_auto_merge": True}
@@ -823,7 +1251,8 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         arm.assert_called_once_with("o", "r", 5)
         # The arm tags merge/auto so the disable path can later un-arm if it becomes blocked.
         run.assert_called_once_with(
-            ["gh", "pr", "edit", "5", "--add-label", review_feedback_loop.DEFAULT_AUTO_MERGE_LABEL]
+            ["gh", "pr", "edit", "5", "--add-label", review_feedback_loop.DEFAULT_AUTO_MERGE_LABEL],
+            check=True,
         )
 
     def test_maybe_arm_fails_closed_when_label_write_fails(self) -> None:
@@ -832,7 +1261,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         with mock.patch.object(
             review_feedback_loop, "_arm_auto_merge", return_value=(True, None)
         ), mock.patch.object(
-            review_feedback_loop, "_run", side_effect=RuntimeError("label write failed")
+            gh_cli, "_run", side_effect=RuntimeError("label write failed")
         ), mock.patch.object(
             review_feedback_loop, "_disable_auto_merge"
         ) as disable:
@@ -855,8 +1284,9 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         arm.assert_not_called()
 
     def test_sync_pr_arms_eligible_clear_pr_when_threads_clear(self) -> None:
-        # End-to-end through sync_pr: a clear-pair (risk/—), grace-elapsed PR with no current
-        # threads is armed (guarded). Mirrors "arm when the last blocking thread clears".
+        # End-to-end through sync_pr: a clear (`—/—`) grace-elapsed PR with no current threads
+        # is armed (guarded). The classifier's `(None, None)` verdict affirms clear; the PR
+        # carries no risk labels. Mirrors "arm when the last blocking thread clears".
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
         args = SimpleNamespace(
             owner="LAF-US",
@@ -868,7 +1298,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         ready = _pr(
             number=200,
             created_at=now - timedelta(minutes=45),
-            labels=(review_feedback_loop.RISK_CLEAR_LABEL,),
+            labels=(),
         )
         with mock.patch.object(review_feedback_loop, "ensure_labels"), mock.patch.object(
             review_feedback_loop, "_fetch_pr", return_value=ready
@@ -877,9 +1307,11 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         ), mock.patch.object(
             review_feedback_loop, "_resolve_outdated_resolvable_threads", return_value=[]
         ), mock.patch.object(
+            review_feedback_loop, "_classify_pr_pair", return_value=(None, None)
+        ), mock.patch.object(
             review_feedback_loop, "apply_review_state_projection", return_value=[]
         ), mock.patch.object(
-            review_feedback_loop, "_run"
+            gh_cli, "_run"
         ), mock.patch.object(
             review_feedback_loop, "_arm_auto_merge", return_value=(True, None)
         ) as arm, contextlib.redirect_stdout(io.StringIO()):
@@ -959,8 +1391,9 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertEqual(attest.call_args.args[2], "github-actions[bot]")
 
     def test_reconcile_open_prs_promotes_and_arms_eligible_clear_pair_pr(self) -> None:
-        # K3/#629: a clear-pair (risk/—), grace-elapsed, unblocked PR is promoted to
-        # merge/auto and armed for the merge queue. (A risk/low PR would HOLD instead.)
+        # A clear (`—/—`) grace-elapsed, unblocked PR is promoted to merge/auto and
+        # armed for the merge queue. The classifier's `(None, None)` verdict affirms clear;
+        # the PR carries no risk labels. (A risk/low PR would HOLD instead.)
         args = SimpleNamespace(
             owner="LAF-US",
             repo="IDAHO-VAULT",
@@ -969,7 +1402,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         ready_pr = _pr(
             number=88,
             created_at=datetime(2026, 4, 16, 1, 0, tzinfo=timezone.utc),
-            labels=(review_feedback_loop.RISK_CLEAR_LABEL,),
+            labels=(),
         )
 
         with mock.patch.object(review_feedback_loop, "ensure_labels"), mock.patch.object(
@@ -982,6 +1415,8 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             side_effect=[ready_pr],
         ), mock.patch.object(
             review_feedback_loop, "_viewer_login", return_value="github-actions[bot]"
+        ), mock.patch.object(
+            review_feedback_loop, "_classify_pr_pair", return_value=(None, None)
         ), mock.patch.object(
             review_feedback_loop,
             "_resolve_outdated_resolvable_threads",
@@ -1003,7 +1438,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         arm_auto_merge.assert_called_once_with("LAF-US", "IDAHO-VAULT", 88)
 
     def test_promote_ready_fails_loud_on_invariant_violation(self) -> None:
-        # K4/#630: promote_ready shares reconcile's exit-code contract — non-zero when the
+        # promote_ready shares reconcile's exit-code contract — non-zero when the
         # invariant tripped (CI red), zero otherwise. `promote_ready` reads the report via
         # dict.get, so the stub returns a dict (not a namespace).
         args = SimpleNamespace(owner="LAF-US", repo="IDAHO-VAULT", grace_minutes=30)
@@ -1018,19 +1453,19 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             self.assertEqual(review_feedback_loop.promote_ready(args), 0)
 
     def test_reconcile_fails_loud_on_invariant_but_still_sweeps_rest(self) -> None:
-        # K4/#630 fail-loud, right blast radius: a PR carrying risk/— alongside a flag trips
-        # the invariant. The sweep records it, exits non-zero (CI red), yet still processes
-        # every OTHER open PR — one mis-labeled PR must not starve the rest.
+        # Fail-loud, right blast radius: a PR carrying two values on one axis (risk/low +
+        # risk/med) trips the invariant. The sweep records it, exits non-zero (CI red), yet
+        # still processes every OTHER open PR — one mis-labeled PR must not starve the rest.
         args = SimpleNamespace(owner="LAF-US", repo="IDAHO-VAULT", grace_minutes=30)
         bad_pr = _pr(
             number=90,
             created_at=datetime(2026, 4, 16, 1, 0, tzinfo=timezone.utc),
-            labels=(review_feedback_loop.RISK_CLEAR_LABEL, review_feedback_loop.RISK_LOW_LABEL),
+            labels=(review_feedback_loop.RISK_LOW_LABEL, review_feedback_loop.RISK_MED_LABEL),
         )
         good_pr = _pr(
             number=91,
             created_at=datetime(2026, 4, 16, 1, 0, tzinfo=timezone.utc),
-            labels=(review_feedback_loop.RISK_CLEAR_LABEL,),
+            labels=(),
         )
 
         out = io.StringIO()
@@ -1040,6 +1475,8 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             review_feedback_loop, "_fetch_pr", side_effect=[bad_pr, good_pr]
         ), mock.patch.object(
             review_feedback_loop, "_viewer_login", return_value="github-actions[bot]"
+        ), mock.patch.object(
+            review_feedback_loop, "_classify_pr_pair", return_value=(None, None)
         ), mock.patch.object(
             review_feedback_loop, "_resolve_outdated_resolvable_threads", return_value=[]
         ), mock.patch.object(
@@ -1186,38 +1623,6 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertFalse(review_feedback_loop._thread_has_attested_look(nil_comments))
         self.assertFalse(review_feedback_loop._thread_has_attested_look(nil_nodes))
         self.assertFalse(review_feedback_loop._thread_has_attested_look(missing_body))
-
-    def test_build_looker_queue_unresolved_only_with_authors_and_looked_flag(self) -> None:
-        looked_thread = _thread(authors=("coderabbitai",))
-        looked_thread["comments"]["nodes"].append(
-            {
-                "author": {"login": "claude-code-bot"},
-                "body": "<!-- looked: by=claude-code-bot; decision=advisory; v=1 -->",
-                "url": "https://example.test/attestation",
-            }
-        )
-        pr = _pr(
-            number=42,
-            threads=(
-                _thread(authors=("coderabbitai", "human-reviewer", "coderabbitai")),
-                looked_thread,
-                _thread(resolved=True, authors=("copilot-pull-request-reviewer",)),
-                _thread(outdated=True, authors=("human-reviewer",)),
-            ),
-        )
-
-        with mock.patch.object(review_feedback_loop, "_resolve_thread") as resolve_thread:
-            items = review_feedback_loop._build_looker_queue(pr)
-
-        resolve_thread.assert_not_called()
-        self.assertEqual(len(items), 3)  # resolved thread excluded
-        self.assertTrue(all(item["pr"] == 42 for item in items))
-        # authors sorted + deduplicated; url from the first comment
-        self.assertEqual(items[0]["authors"], ["coderabbitai", "human-reviewer"])
-        self.assertEqual(items[0]["url"], "https://example.test/thread")
-        self.assertFalse(items[0]["looked"])
-        self.assertTrue(items[1]["looked"])
-        self.assertTrue(any(item["is_outdated"] for item in items))
 
     # ----- Layer B1: pure core of attest_and_resolve -----
 
@@ -1529,182 +1934,6 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         resolve.assert_not_called()
 
 
-    # ----- Layer C: looker-walk classification (read-only) -----
-
-    def _bot_thread(self) -> dict[str, object]:
-        return _thread(authors=("coderabbitai",), author_type="Bot")
-
-    def test_classify_needs_fix_is_machine_lane_but_not_drainable(self) -> None:
-        # A plain bot prose finding is the coarse machine-disposable LANE, but it is a
-        # needs-fix (substantive) thread — NOT safe_to_drain. A bare attest-resolve would
-        # rubber-stamp a caught error. (codex review on #529.)
-        now = datetime(2026, 6, 16, tzinfo=timezone.utc)
-        pr = _pr(number=1, created_at=now - timedelta(days=1), threads=(self._bot_thread(),))
-        report = review_feedback_loop._classify_pr_for_looker(pr, now=now)
-        self.assertEqual(report["lane"], "machine-disposable")
-        self.assertEqual(report["threads"][0]["resolution"], "needs-fix")
-        self.assertFalse(report["safe_to_drain"])
-        self.assertFalse(report["stale"])
-
-    def test_classify_outdated_bot_thread_is_safe_to_drain(self) -> None:
-        # Bare-resolvable: an outdated bot-only thread (referenced lines moved) is the one
-        # non-stale case a bare attest-resolve may clear without a fix.
-        now = datetime(2026, 6, 16, tzinfo=timezone.utc)
-        thread = _thread(authors=("coderabbitai",), author_type="Bot", outdated=True)
-        pr = _pr(number=14, created_at=now - timedelta(days=1), threads=(thread,))
-        report = review_feedback_loop._classify_pr_for_looker(pr, now=now)
-        self.assertEqual(report["threads"][0]["resolution"], "outdated-resolvable")
-        self.assertEqual(report["lane"], "machine-disposable")
-        self.assertTrue(report["safe_to_drain"])
-
-    def test_classify_would_cascade_when_auto_merge_armed(self) -> None:
-        now = datetime(2026, 6, 16, tzinfo=timezone.utc)
-        pr = _pr(
-            number=2, created_at=now - timedelta(days=1),
-            auto_merge_enabled=True, threads=(self._bot_thread(),),
-        )
-        report = review_feedback_loop._classify_pr_for_looker(pr, now=now)
-        self.assertEqual(report["lane"], "would-cascade")
-        self.assertFalse(report["safe_to_drain"])
-
-    def test_classify_needs_human_on_human_thread(self) -> None:
-        now = datetime(2026, 6, 16, tzinfo=timezone.utc)
-        pr = _pr(
-            number=3, created_at=now - timedelta(days=1),
-            threads=(_thread(authors=("loganfinney27",), author_type="User"),),
-        )
-        report = review_feedback_loop._classify_pr_for_looker(pr, now=now)
-        self.assertEqual(report["lane"], "needs-human")
-        self.assertFalse(report["safe_to_drain"])
-
-    def test_classify_needs_human_on_changes_requested(self) -> None:
-        now = datetime(2026, 6, 16, tzinfo=timezone.utc)
-        pr = _pr(
-            number=4, created_at=now - timedelta(days=1),
-            review_decision="CHANGES_REQUESTED", threads=(self._bot_thread(),),
-        )
-        report = review_feedback_loop._classify_pr_for_looker(pr, now=now)
-        self.assertEqual(report["lane"], "needs-human")
-
-    def test_classify_needs_human_on_truncated_comments(self) -> None:
-        now = datetime(2026, 6, 16, tzinfo=timezone.utc)
-        thread = self._bot_thread()
-        thread["comments"]["pageInfo"] = {"hasNextPage": True}
-        pr = _pr(number=5, created_at=now - timedelta(days=1), threads=(thread,))
-        report = review_feedback_loop._classify_pr_for_looker(pr, now=now)
-        self.assertEqual(report["lane"], "needs-human")
-        self.assertEqual(report["unprovable_threads"], 1)
-
-    def test_classify_clear_when_no_unresolved(self) -> None:
-        now = datetime(2026, 6, 16, tzinfo=timezone.utc)
-        pr = _pr(
-            number=6, created_at=now - timedelta(days=1),
-            threads=(_thread(resolved=True, authors=("coderabbitai",), author_type="Bot"),),
-        )
-        report = review_feedback_loop._classify_pr_for_looker(pr, now=now)
-        self.assertEqual(report["lane"], "clear")
-
-    def test_classify_stale_is_never_safe_to_drain(self) -> None:
-        now = datetime(2026, 6, 16, tzinfo=timezone.utc)
-        pr = _pr(number=7, created_at=now - timedelta(days=30), threads=(self._bot_thread(),))
-        report = review_feedback_loop._classify_pr_for_looker(pr, now=now, stale_days=14)
-        self.assertEqual(report["lane"], "machine-disposable")  # threads are clearable...
-        self.assertTrue(report["stale"])  # ...but it's abandoned
-        self.assertFalse(report["safe_to_drain"])  # so never auto-drained
-
-    def _looked_open_thread(self) -> dict[str, object]:
-        thread = self._bot_thread()
-        body = review_feedback_loop._build_attestation("claude-code-bot", "advisory", "ok")
-        thread["comments"]["nodes"].append(
-            {"author": {"login": "claude-code-bot", "__typename": "Bot"}, "body": body, "url": "u"}
-        )
-        return thread
-
-    def test_classify_looked_open_is_machine_clearable(self) -> None:
-        now = datetime(2026, 6, 16, tzinfo=timezone.utc)
-        pr = _pr(number=9, created_at=now - timedelta(days=1), threads=(self._looked_open_thread(),))
-        report = review_feedback_loop._classify_pr_for_looker(pr, now=now)
-        self.assertEqual(report["threads"][0]["disposition"], "looked-open")
-        self.assertEqual(report["machine_clearable"], 1)
-        self.assertEqual(report["lane"], "machine-disposable")  # recoverable, clearable
-
-    def test_classify_human_on_truncated_page_is_human_not_unprovable(self) -> None:
-        # A human on the page we DO have is definitive — truncation must not mask it.
-        now = datetime(2026, 6, 16, tzinfo=timezone.utc)
-        thread = _thread(authors=("loganfinney27",), author_type="User")
-        thread["comments"]["pageInfo"] = {"hasNextPage": True}
-        pr = _pr(number=10, created_at=now - timedelta(days=1), threads=(thread,))
-        report = review_feedback_loop._classify_pr_for_looker(pr, now=now)
-        self.assertEqual(report["threads"][0]["disposition"], "human")
-        self.assertEqual(report["human_threads"], 1)
-        self.assertEqual(report["unprovable_threads"], 0)
-        self.assertEqual(report["lane"], "needs-human")
-
-    def test_classify_needs_human_on_mixed_human_and_bot(self) -> None:
-        now = datetime(2026, 6, 16, tzinfo=timezone.utc)
-        human = _thread(authors=("loganfinney27",), author_type="User")
-        pr = _pr(
-            number=11, created_at=now - timedelta(days=1),
-            threads=(human, self._bot_thread()),
-        )
-        report = review_feedback_loop._classify_pr_for_looker(pr, now=now)
-        self.assertEqual(report["lane"], "needs-human")  # any human forces it
-        self.assertEqual(report["machine_clearable"], 1)  # the bot thread, still counted
-        self.assertEqual(report["human_threads"], 1)
-
-    def test_classify_needs_human_on_truncated_thread_list(self) -> None:
-        # reviewThreads itself is paginated: a blocking thread may lie beyond page 1.
-        now = datetime(2026, 6, 16, tzinfo=timezone.utc)
-        pr = _pr(
-            number=12, created_at=now - timedelta(days=1),
-            threads=(self._bot_thread(),), threads_truncated=True,
-        )
-        report = review_feedback_loop._classify_pr_for_looker(pr, now=now)
-        self.assertTrue(report["threads_truncated"])
-        self.assertEqual(report["lane"], "needs-human")
-        self.assertFalse(report["safe_to_drain"])
-
-    def test_classify_stale_uses_updated_at_over_created_at(self) -> None:
-        now = datetime(2026, 6, 16, tzinfo=timezone.utc)
-        pr = _pr(
-            number=13, created_at=now - timedelta(days=30),
-            updated_at=now - timedelta(days=1),
-            threads=(_thread(authors=("coderabbitai",), author_type="Bot", outdated=True),),
-        )
-        report = review_feedback_loop._classify_pr_for_looker(pr, now=now, stale_days=14)
-        self.assertFalse(report["stale"])  # recent activity wins over old creation
-        self.assertTrue(report["safe_to_drain"])  # bare-resolvable (outdated) + not stale
-
-    def test_stale_days_rejects_non_positive(self) -> None:
-        for bad in ("0", "-1"):
-            with self.assertRaises(SystemExit):
-                review_feedback_loop.build_parser().parse_args(
-                    ["looker-walk", "--owner", "o", "--repo", "r", "--stale-days", bad]
-                )
-
-    def test_looker_walk_is_read_only_and_emits_json(self) -> None:
-        pr = _pr(number=8, created_at=datetime(2026, 6, 15, tzinfo=timezone.utc),
-                 threads=(self._bot_thread(),))
-        args = review_feedback_loop.build_parser().parse_args(
-            ["looker-walk", "--owner", "o", "--repo", "r"]
-        )
-        buf = io.StringIO()
-        with mock.patch.object(review_feedback_loop, "_list_open_pr_numbers", return_value=[8]), \
-             mock.patch.object(review_feedback_loop, "_fetch_pr", return_value=pr), \
-             mock.patch.object(review_feedback_loop, "_resolve_thread") as resolve, \
-             mock.patch.object(review_feedback_loop, "_add_thread_reply") as reply, \
-             contextlib.redirect_stdout(buf):
-            rc = review_feedback_loop.looker_walk(args)
-        self.assertEqual(rc, 0)
-        resolve.assert_not_called()
-        reply.assert_not_called()
-        data = json.loads(buf.getvalue())
-        self.assertEqual(data["open_prs"], 1)
-        self.assertEqual(data["by_lane"], {"machine-disposable": 1})
-        self.assertIsInstance(data["safe_to_drain"], list)
-        self.assertEqual(data["reports"][0]["pr"], 8)
-        self.assertEqual(data["reports"][0]["lane"], "machine-disposable")
-
     # ----- Resolution disposition (#399 engine): HOW each thread gets resolved -----
 
     SUGGESTION_BODY = "Wrong value.\n\n```suggestion\ncorrected = True\n```\n"
@@ -1745,20 +1974,6 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         body = review_feedback_loop._build_attestation(looker, "advisory", "ok")
         t = _thread(authors=(looker,), author_type="Bot", body=body)
         self.assertEqual(review_feedback_loop._thread_resolution_disposition(t), "looked")
-
-    def test_classify_surfaces_resolution_and_counts(self) -> None:
-        now = datetime(2026, 6, 16, tzinfo=timezone.utc)
-        pr = _pr(
-            number=1,
-            created_at=now - timedelta(days=1),
-            threads=(
-                _thread(authors=("coderabbitai",), author_type="Bot", body=self.SUGGESTION_BODY),
-                _thread(authors=("chatgpt-codex-connector",), author_type="Bot", body="prose finding"),
-            ),
-        )
-        report = review_feedback_loop._classify_pr_for_looker(pr, now=now)
-        self.assertEqual(sorted(t["resolution"] for t in report["threads"]), ["apply-suggestion", "needs-fix"])
-        self.assertEqual(report["resolution_counts"], {"apply-suggestion": 1, "needs-fix": 1})
 
     # ----- Propose-only surfacing of committable suggestions (#3, 2026-06-19) -----
 
@@ -1812,52 +2027,6 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertIn(f"remove:{review_feedback_loop.DEFAULT_SUGGESTIONS_LABEL}", actions)
         edit_label.assert_any_call(17, remove=review_feedback_loop.DEFAULT_SUGGESTIONS_LABEL)
 
-    # ----- render_looker_worklist: read-only durable-issue triage surface -----
-
-    def test_render_looker_worklist_is_read_only_triage_markdown(self) -> None:
-        report = {
-            "open_prs": 3,
-            "by_lane": {"machine-disposable": 1, "needs-human": 1, "clear": 1},
-            "by_resolution": {"needs-fix": 2, "outdated-resolvable": 1},
-            "stale": 1,
-            "safe_to_drain": [42],
-            "reports": [
-                {"pr": 42, "lane": "machine-disposable", "stale": False, "auto_merge_armed": False,
-                 "unresolved_threads": 1, "resolution_counts": {"outdated-resolvable": 1}},
-                {"pr": 7, "lane": "needs-human", "stale": True, "auto_merge_armed": True,
-                 "unresolved_threads": 2, "resolution_counts": {"needs-fix": 2}},
-                {"pr": 9, "lane": "clear", "stale": False, "auto_merge_armed": False,
-                 "unresolved_threads": 0, "resolution_counts": {}},
-            ],
-        }
-        md = review_feedback_loop.render_looker_worklist(report)
-        self.assertIn("No threads resolved, no PRs merged", md)  # read-only framing
-        self.assertIn("**Open PRs:** 3", md)
-        self.assertIn("machine-disposable: 1", md)
-        self.assertIn("needs-fix: 2", md)
-        self.assertIn("- #42", md)  # safe_to_drain
-        self.assertIn("**#7**", md)  # actionable PR surfaced
-        self.assertIn("auto-merge-armed", md)  # flagged
-        self.assertNotIn("**#9**", md)  # clear PR (0 unresolved) omitted from worklist
-
-    def test_render_looker_worklist_handles_empty_report(self) -> None:
-        md = review_feedback_loop.render_looker_worklist({})
-        self.assertIn("**Open PRs:** 0", md)
-        self.assertIn("none", md)
-
-    def test_render_looker_worklist_surfaces_truncated_needs_human(self) -> None:
-        # Truncated past page 1: lane needs-human, 0 VISIBLE unresolved. Must still surface
-        # (the census can't prove it clear) and be flagged truncated. (codex review on #531.)
-        report = {
-            "open_prs": 1, "by_lane": {"needs-human": 1}, "by_resolution": {},
-            "stale": 0, "safe_to_drain": [],
-            "reports": [{"pr": 88, "lane": "needs-human", "stale": False,
-                         "auto_merge_armed": False, "threads_truncated": True,
-                         "unresolved_threads": 0, "resolution_counts": {}}],
-        }
-        md = review_feedback_loop.render_looker_worklist(report)
-        self.assertIn("**#88**", md)  # surfaced despite 0 visible unresolved
-        self.assertIn("threads-truncated", md)
 
     # ----- engage-outdated: the first 'engage' step (outdated-only) -----
 
@@ -1919,12 +2088,11 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         # It posts the attestation and NEVER resolves/unresolves (already resolved).
         thread = _thread(resolved=True, authors=("coderabbitai",), author_type="Bot",
                          resolved_by="loganfinney27")
-        pr = _pr(threads=(thread,))
         with mock.patch.object(review_feedback_loop, "_viewer_login", return_value="loganfinney27"), \
              mock.patch.object(review_feedback_loop, "_add_thread_reply") as reply, \
              mock.patch.object(review_feedback_loop, "_resolve_thread") as resolve:
             result = review_feedback_loop.backfill_witness(
-                pr, thread, "loganfinney27", "ok", apply=True
+                thread, "loganfinney27", "ok", apply=True
             )
         reply.assert_called_once()      # the missing witness is posted
         resolve.assert_not_called()     # never resolves/unresolves
@@ -1936,10 +2104,9 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         # gain a witness from us — we never forge a look for someone else's resolve.
         thread = _thread(resolved=True, authors=("coderabbitai",), author_type="Bot",
                          resolved_by="some-human")
-        pr = _pr(threads=(thread,))
         with mock.patch.object(review_feedback_loop, "_add_thread_reply") as reply:
             result = review_feedback_loop.backfill_witness(
-                pr, thread, "loganfinney27", "ok", apply=True
+                thread, "loganfinney27", "ok", apply=True
             )
         reply.assert_not_called()
         self.assertFalse(result["eligible"])
@@ -1957,10 +2124,9 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         # Unresolved thread → not a backfill target.
         unresolved = _thread(resolved=False, authors=("coderabbitai",), author_type="Bot",
                              resolved_by=None)
-        pr = _pr()
         with mock.patch.object(review_feedback_loop, "_add_thread_reply") as reply:
-            r1 = review_feedback_loop.backfill_witness(pr, attested, looker, "ok", apply=True)
-            r2 = review_feedback_loop.backfill_witness(pr, unresolved, looker, "ok", apply=True)
+            r1 = review_feedback_loop.backfill_witness(attested, looker, "ok", apply=True)
+            r2 = review_feedback_loop.backfill_witness(unresolved, looker, "ok", apply=True)
         reply.assert_not_called()
         self.assertIn("already carries an attested look", r1["reason"])
         self.assertIn("not resolved", r2["reason"])

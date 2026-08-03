@@ -25,38 +25,37 @@ If you want, I can also give you a quick “Should you buy one?” breakdown or 
 
 <div align="center">⁂</div>
 
-[^1_1]: https://remarkable.com
+[^1_1]: <https://remarkable.com>
 
-[^1_2]: https://www.amazon.com/reMarkable-Bundle-Notetaking-Connect-RM113/dp/B08HDL3XJR
+[^1_2]: <https://www.amazon.com/reMarkable-Bundle-Notetaking-Connect-RM113/dp/B08HDL3XJR>
 
-[^1_3]: https://www.bestbuy.com/product/remarkable-2-10-3-paper-tablet-with-marker-plus-black/C4SQZQ4J5Z/sku/6523557
+[^1_3]: <https://www.bestbuy.com/product/remarkable-2-10-3-paper-tablet-with-marker-plus-black/C4SQZQ4J5Z/sku/6523557>
 
-[^1_4]: https://www.bestbuy.com/product/remarkable-2-10-3-paper-tablet-with-marker-plus-and-polymer-weave-book-folio-gray/C4SQZQ4JFJ/sku/6523555?utm_source=Perplexity\&utm_medium=referral
+[^1_4]: <https://www.bestbuy.com/product/remarkable-2-10-3-paper-tablet-with-marker-plus-and-polymer-weave-book-folio-gray/C4SQZQ4JFJ/sku/6523555?utm_source=Perplexity\&utm_medium=referral>
 
-[^1_5]: https://www.quill.com/remarkable-paper-pro-118-tablet-wifi-linux-marker-plus-mosaic-weave-basalt-bookfolio-gray-rm83c-1001nw/cbs/55501573.html?effo***REMOVED***code=369\&sfcp=1\&utm_source=Perplexity\&utm_medium=referral
+[^1_5]: <https://www.quill.com/remarkable-paper-pro-118-tablet-wifi-linux-marker-plus-mosaic-weave-basalt-bookfolio-gray-rm83c-1001nw/cbs/55501573.html?effort_code=369\&sfcp=1\&utm_source=Perplexity\&utm_medium=referral>
 
-[^1_6]: https://www.quill.com/remarkable-paper-pro-move-73-tablet-marker-plus-rm89a-1000nw/cbs/55501570.html?effo***REMOVED***code=369\&sfcp=1\&utm_source=Perplexity\&utm_medium=referral
+[^1_6]: <https://www.quill.com/remarkable-paper-pro-move-73-tablet-marker-plus-rm89a-1000nw/cbs/55501570.html?effort_code=369\&sfcp=1\&utm_source=Perplexity\&utm_medium=referral>
 
-[^1_7]: https://www.bestbuy.com/product/remarkable-paper-pro-11-8-paper-tablet-with-marker-plus-gray/C4SQZQ47YT/sku/6598707?utm_source=Perplexity\&utm_medium=referral
+[^1_7]: <https://www.bestbuy.com/product/remarkable-paper-pro-11-8-paper-tablet-with-marker-plus-gray/C4SQZQ47YT/sku/6598707?utm_source=Perplexity\&utm_medium=referral>
 
-[^1_8]: https://electroeshop.com/products/remarkable-starter-bundle-remarkable-2-is-the-original-paper-tablet-includes-10-3-remarkable-tablet-marker-plus-pen-with?variant=42340630790180\&_gsid=XxvjR2H1km9G\&utm_source=Perplexity\&utm_medium=referral
+[^1_8]: <https://electroeshop.com/products/remarkable-starter-bundle-remarkable-2-is-the-original-paper-tablet-includes-10-3-remarkable-tablet-marker-plus-pen-with?variant=42340630790180\&_gsid=XxvjR2H1km9G\&utm_source=Perplexity\&utm_medium=referral>
 
-[^1_9]: https://packpulse.shop/products/remarkable-2-103-paper-tablet-w-marker-plus-ink-black-type-folio-keyboard-case?variant=44078492221491\&_gsid=wp1UBizbo8Lt\&utm_source=Perplexity\&utm_medium=referral
+[^1_9]: <https://packpulse.shop/products/remarkable-2-103-paper-tablet-w-marker-plus-ink-black-type-folio-keyboard-case?variant=44078492221491\&_gsid=wp1UBizbo8Lt\&utm_source=Perplexity\&utm_medium=referral>
 
-[^1_10]: https://electroeshop.com/products/remarkable-paper-pro-bundle-includes-11-8-remarkable-paper-tablet-and-marker-plus-pen-with-eraser?variant=42346406379556\&_gsid=D85oYNKyT5Jb\&utm_source=Perplexity\&utm_medium=referral
+[^1_10]: <https://electroeshop.com/products/remarkable-paper-pro-bundle-includes-11-8-remarkable-paper-tablet-and-marker-plus-pen-with-eraser?variant=42346406379556\&_gsid=D85oYNKyT5Jb\&utm_source=Perplexity\&utm_medium=referral>
 
-[^1_11]: https://electroeshop.com/products/remarkable-paper-pro-move-leather-folio-bundle-ultraportable-color-7-3-paper-tablet-with-marker-plus-pen-with-eraser-and-a?variant=42844482994212\&_gsid=MtqgTxZRCB5E\&utm_source=Perplexity\&utm_medium=referral
+[^1_11]: <https://electroeshop.com/products/remarkable-paper-pro-move-leather-folio-bundle-ultraportable-color-7-3-paper-tablet-with-marker-plus-pen-with-eraser-and-a?variant=42844482994212\&_gsid=MtqgTxZRCB5E\&utm_source=Perplexity\&utm_medium=referral>
 
-[^1_12]: https://www.youtube.com/watch?v=f5mND1I7Bf8
+[^1_12]: <https://www.youtube.com/watch?v=f5mND1I7Bf8>
 
-[^1_13]: https://www.bestbuy.com/product/remarkable-2-10-3-paper-tablet-with-marker-plus-and-polymer-weave-book-folio-gray/C4SQZQ4JFJ
+[^1_13]: <https://www.bestbuy.com/product/remarkable-2-10-3-paper-tablet-with-marker-plus-and-polymer-weave-book-folio-gray/C4SQZQ4JFJ>
 
-[^1_14]: https://www.reddit.com/r/RemarkableTablet/comments/1dtv2rt/is_remarkable_2_a_realistic_alternative_for_paper/
+[^1_14]: <https://www.reddit.com/r/RemarkableTablet/comments/1dtv2rt/is_remarkable_2_a_realistic_alternative_for_paper/>
 
-[^1_15]: https://www.youtube.com/watch?v=GFKma0-MJpY\&vl=en
+[^1_15]: <https://www.youtube.com/watch?v=GFKma0-MJpY\&vl=en>
 
-[^1_16]: https://www.youtube.com/watch?v=XSsLpAESfeU
-
+[^1_16]: <https://www.youtube.com/watch?v=XSsLpAESfeU>
 
 ---
 
@@ -69,26 +68,25 @@ If you meant “which one should I look for now?”, the main current models are
 
 <div align="center">⁂</div>
 
-[^2_1]: https://remarkable.com/products/remarkable-1
+[^2_1]: <https://remarkable.com/products/remarkable-1>
 
-[^2_2]: https://support.remarkable.com/s/article/About-reMarkable-1
+[^2_2]: <https://support.remarkable.com/s/article/About-reMarkable-1>
 
-[^2_3]: https://en.wikipedia.org/wiki/ReMarkable
+[^2_3]: <https://en.wikipedia.org/wiki/ReMarkable>
 
-[^2_4]: https://remarkable.com
+[^2_4]: <https://remarkable.com>
 
-[^2_5]: https://arstechnica.com/gadgets/2017/12/remarkable-tablet-review-the-high-price-of-getting-that-paper-feeling/
+[^2_5]: <https://arstechnica.com/gadgets/2017/12/remarkable-tablet-review-the-high-price-of-getting-that-paper-feeling/>
 
-[^2_6]: https://www.youtube.com/watch?v=WkhsRp8kX8c
+[^2_6]: <https://www.youtube.com/watch?v=WkhsRp8kX8c>
 
-[^2_7]: https://www.reddit.com/r/RemarkableTablet/comments/1atgp30/after_7_years_with_a_remarkable_v1_then_v2_lets/
+[^2_7]: <https://www.reddit.com/r/RemarkableTablet/comments/1atgp30/after_7_years_with_a_remarkable_v1_then_v2_lets/>
 
-[^2_8]: https://www.youtube.com/watch?v=BfVm5B-xLeA
+[^2_8]: <https://www.youtube.com/watch?v=BfVm5B-xLeA>
 
-[^2_9]: https://www.bestbuy.com/product/remarkable-paper-pro-11-8-paper-tablet-with-marker-plus-gray/C4SQZQ47YT/sku/6598707?utm_source=Perplexity\&utm_medium=referral
+[^2_9]: <https://www.bestbuy.com/product/remarkable-paper-pro-11-8-paper-tablet-with-marker-plus-gray/C4SQZQ47YT/sku/6598707?utm_source=Perplexity\&utm_medium=referral>
 
-[^2_10]: https://www.quill.com/remarkable-paper-pro-move-73-tablet-marker-plus-rm89a-1000nw/cbs/55501570.html?effo***REMOVED***code=369\&sfcp=1\&utm_source=Perplexity\&utm_medium=referral
-
+[^2_10]: <https://www.quill.com/remarkable-paper-pro-move-73-tablet-marker-plus-rm89a-1000nw/cbs/55501570.html?effort_code=369\&sfcp=1\&utm_source=Perplexity\&utm_medium=referral>
 
 ---
 
@@ -115,26 +113,25 @@ If you want, I can help you with one of these next:
 
 <div align="center">⁂</div>
 
-[^3_1]: https://support.remarkable.com/s/article/About-reMarkable-1
+[^3_1]: <https://support.remarkable.com/s/article/About-reMarkable-1>
 
-[^3_2]: https://remarkable.com/products/remarkable-1
+[^3_2]: <https://remarkable.com/products/remarkable-1>
 
-[^3_3]: https://arstechnica.com/gadgets/2017/12/remarkable-tablet-review-the-high-price-of-getting-that-paper-feeling/
+[^3_3]: <https://arstechnica.com/gadgets/2017/12/remarkable-tablet-review-the-high-price-of-getting-that-paper-feeling/>
 
-[^3_4]: https://www.reddit.com/r/RemarkableTablet/comments/1bzywa6/remarkable_1_worth_it/
+[^3_4]: <https://www.reddit.com/r/RemarkableTablet/comments/1bzywa6/remarkable_1_worth_it/>
 
-[^3_5]: https://goodereader.com/blog/electronic-readers/remarkable-1-vs-remarkable-2-which-one-should-you-buy
+[^3_5]: <https://goodereader.com/blog/electronic-readers/remarkable-1-vs-remarkable-2-which-one-should-you-buy>
 
-[^3_6]: https://www.youtube.com/watch?v=BfVm5B-xLeA
+[^3_6]: <https://www.youtube.com/watch?v=BfVm5B-xLeA>
 
-[^3_7]: https://goodereader.com/blog/electronic-readers/remarkable-1-is-now-discontinued
+[^3_7]: <https://goodereader.com/blog/electronic-readers/remarkable-1-is-now-discontinued>
 
-[^3_8]: https://www.youtube.com/watch?v=78ebt_yNHhw
+[^3_8]: <https://www.youtube.com/watch?v=78ebt_yNHhw>
 
-[^3_9]: https://www.reddit.com/r/RemarkableTablet/comments/obw1jp/remarkable_1_discontinued/
+[^3_9]: <https://www.reddit.com/r/RemarkableTablet/comments/obw1jp/remarkable_1_discontinued/>
 
-[^3_10]: https://r3new.com/products/remarkable-1-10-3-paper-tablet-w-pen-8gb-white
-
+[^3_10]: <https://r3new.com/products/remarkable-1-10-3-paper-tablet-w-pen-8gb-white>
 
 ---
 
@@ -164,26 +161,25 @@ If you want, I can also give you a simple “keep the 1 or upgrade to 2?” reco
 
 <div align="center">⁂</div>
 
-[^4_1]: https://www.facebook.com/groups/945315404042571/posts/1238492674724841/
+[^4_1]: <https://www.facebook.com/groups/945315404042571/posts/1238492674724841/>
 
-[^4_2]: https://www.reddit.com/r/RemarkableTablet/comments/mkz7ot/worth_the_cost_remarkable_1_vs_remarkable_2/
+[^4_2]: <https://www.reddit.com/r/RemarkableTablet/comments/mkz7ot/worth_the_cost_remarkable_1_vs_remarkable_2/>
 
-[^4_3]: https://www.youtube.com/watch?v=WkhsRp8kX8c
+[^4_3]: <https://www.youtube.com/watch?v=WkhsRp8kX8c>
 
-[^4_4]: https://goodereader.com/blog/electronic-readers/remarkable-1-vs-remarkable-2-which-one-should-you-buy
+[^4_4]: <https://goodereader.com/blog/electronic-readers/remarkable-1-vs-remarkable-2-which-one-should-you-buy>
 
-[^4_5]: https://remarkable.com/blog/remarkable-paper-pro-vs-remarkable-2-what-s-the-difference
+[^4_5]: <https://remarkable.com/blog/remarkable-paper-pro-vs-remarkable-2-what-s-the-difference>
 
-[^4_6]: https://merlinbecker.de/comparison-of-the-remarkable-tablet-generations-a-personal-insight-b8f93e17be83
+[^4_6]: <https://merlinbecker.de/comparison-of-the-remarkable-tablet-generations-a-personal-insight-b8f93e17be83>
 
-[^4_7]: https://www.youtube.com/watch?v=isyLKUeu6Js
+[^4_7]: <https://www.youtube.com/watch?v=isyLKUeu6Js>
 
-[^4_8]: https://www.youtube.com/watch?v=_4lKMZ1Np2k
+[^4_8]: <https://www.youtube.com/watch?v=_4lKMZ1Np2k>
 
-[^4_9]: https://www.simplykyra.com/blog/comparing-all-three-remarkable-devices-size-sync-and-surprises/
+[^4_9]: <https://www.simplykyra.com/blog/comparing-all-three-remarkable-devices-size-sync-and-surprises/>
 
-[^4_10]: https://remarkable.com/products/remarkable-1
-
+[^4_10]: <https://remarkable.com/products/remarkable-1>
 
 ---
 
@@ -212,32 +208,31 @@ I can break that down next.
 
 <div align="center">⁂</div>
 
-[^5_1]: https://remarkable.com/blog/big-changes-are-coming-to-the-remarkable-ecosystem
+[^5_1]: <https://remarkable.com/blog/big-changes-are-coming-to-the-remarkable-ecosystem>
 
-[^5_2]: https://remarkable.com/what-is-remarkable
+[^5_2]: <https://remarkable.com/what-is-remarkable>
 
-[^5_3]: https://www.youtube.com/watch?v=VqCg_RxJ1xE
+[^5_3]: <https://www.youtube.com/watch?v=VqCg_RxJ1xE>
 
-[^5_4]: https://remarkable.com
+[^5_4]: <https://remarkable.com>
 
-[^5_5]: https://remarkable.com/products/remarkable-1
+[^5_5]: <https://remarkable.com/products/remarkable-1>
 
-[^5_6]: https://support.remarkable.com/s/article/About-reMarkable-1
+[^5_6]: <https://support.remarkable.com/s/article/About-reMarkable-1>
 
-[^5_7]: https://goodereader.com/blog/electronic-readers/remarkable-1-vs-remarkable-2-which-one-should-you-buy
+[^5_7]: <https://goodereader.com/blog/electronic-readers/remarkable-1-vs-remarkable-2-which-one-should-you-buy>
 
-[^5_8]: https://www.reddit.com/r/RemarkableTablet/comments/1atgp30/after_7_years_with_a_remarkable_v1_then_v2_lets/
+[^5_8]: <https://www.reddit.com/r/RemarkableTablet/comments/1atgp30/after_7_years_with_a_remarkable_v1_then_v2_lets/>
 
-[^5_9]: https://markdkelly.substack.com/p/the-remarkable-2-should-you-buy-one
+[^5_9]: <https://markdkelly.substack.com/p/the-remarkable-2-should-you-buy-one>
 
-[^5_10]: https://stachu.net/the-remarkable-hacking-ecosystem/
+[^5_10]: <https://stachu.net/the-remarkable-hacking-ecosystem/>
 
-[^5_11]: https://www.youtube.com/watch?v=XSsLpAESfeU
+[^5_11]: <https://www.youtube.com/watch?v=XSsLpAESfeU>
 
-[^5_12]: https://en.wikipedia.org/wiki/ReMarkable
+[^5_12]: <https://en.wikipedia.org/wiki/ReMarkable>
 
-[^5_13]: https://businessmodelcanvastemplate.com/blogs/how-it-works/remarkable-how-it-works
-
+[^5_13]: <https://businessmodelcanvastemplate.com/blogs/how-it-works/remarkable-how-it-works>
 
 ---
 
@@ -262,26 +257,25 @@ If you want, I can turn this into a simple “what works without Connect vs with
 
 <div align="center">⁂</div>
 
-[^6_1]: https://support.remarkable.com/s/getting-started/step-1
+[^6_1]: <https://support.remarkable.com/s/getting-started/step-1>
 
-[^6_2]: https://remarkable.com/shop/connect
+[^6_2]: <https://remarkable.com/shop/connect>
 
-[^6_3]: https://support.remarkable.com/s/article/Pair-your-reMarkable-with-the-cloud
+[^6_3]: <https://support.remarkable.com/s/article/Pair-your-reMarkable-with-the-cloud>
 
-[^6_4]: https://remarkable.com/blog/six-little-known-remarkable-features
+[^6_4]: <https://remarkable.com/blog/six-little-known-remarkable-features>
 
-[^6_5]: https://remarkable.guide/guide/access/ssh.html
+[^6_5]: <https://remarkable.guide/guide/access/ssh.html>
 
-[^6_6]: https://remarkabletabletuser.com/post/2018/01/02/connect-to-your-remarkable-from-a-windows-pc/
+[^6_6]: <https://remarkabletabletuser.com/post/2018/01/02/connect-to-your-remarkable-from-a-windows-pc/>
 
-[^6_7]: https://www.youtube.com/watch?v=hRJLaPTPNxg
+[^6_7]: <https://www.youtube.com/watch?v=hRJLaPTPNxg>
 
-[^6_8]: https://remarkable.jms1.info/faq/cloud.html
+[^6_8]: <https://remarkable.jms1.info/faq/cloud.html>
 
-[^6_9]: https://www.reddit.com/r/RemarkableTablet/comments/1adqici/confusion_about_remarkable_connect_features/
+[^6_9]: <https://www.reddit.com/r/RemarkableTablet/comments/1adqici/confusion_about_remarkable_connect_features/>
 
-[^6_10]: https://www.facebook.com/groups/945315404042571/posts/1251851216722320/
-
+[^6_10]: <https://www.facebook.com/groups/945315404042571/posts/1251851216722320/>
 
 ---
 
@@ -302,26 +296,25 @@ If you want, I can give you a very short list of what USB lets you do on your re
 
 <div align="center">⁂</div>
 
-[^7_1]: https://support.remarkable.com/s/article/About-reMarkable-1
+[^7_1]: <https://support.remarkable.com/s/article/About-reMarkable-1>
 
-[^7_2]: https://remarkable.com/products/remarkable-2
+[^7_2]: <https://remarkable.com/products/remarkable-2>
 
-[^7_3]: https://remarkable.guide/tech/usb-web-interface.html
+[^7_3]: <https://remarkable.guide/tech/usb-web-interface.html>
 
-[^7_4]: https://support.remarkable.com/s/article/importing-and-exporting-files
+[^7_4]: <https://support.remarkable.com/s/article/importing-and-exporting-files>
 
-[^7_5]: https://remarkabletabletuser.com/post/2018/01/02/connect-to-your-remarkable-from-a-windows-pc/
+[^7_5]: <https://remarkabletabletuser.com/post/2018/01/02/connect-to-your-remarkable-from-a-windows-pc/>
 
-[^7_6]: https://www.reddit.com/r/RemarkableTablet/comments/1mj1356/how_to_connect_remarkable_to_pc_by_usb/
+[^7_6]: <https://www.reddit.com/r/RemarkableTablet/comments/1mj1356/how_to_connect_remarkable_to_pc_by_usb/>
 
-[^7_7]: https://www.youtube.com/watch?v=FRPLYdidQIE
+[^7_7]: <https://www.youtube.com/watch?v=FRPLYdidQIE>
 
-[^7_8]: https://philenius.github.io/devices/2019/10/18/transfer-files-using-a-usb-cable-to-remarkable.html
+[^7_8]: <https://philenius.github.io/devices/2019/10/18/transfer-files-using-a-usb-cable-to-remarkable.html>
 
-[^7_9]: https://www.reddit.com/r/RemarkableTablet/comments/m4hb0o/bluetooth_keyboard_via_usbc_on_remarkable_2/
+[^7_9]: <https://www.reddit.com/r/RemarkableTablet/comments/m4hb0o/bluetooth_keyboard_via_usbc_on_remarkable_2/>
 
-[^7_10]: https://fcc.report/FCC-ID/2AMK2-RM102/4198757.pdf
-
+[^7_10]: <https://fcc.report/FCC-ID/2AMK2-RM102/4198757.pdf>
 
 ---
 
@@ -335,7 +328,6 @@ On reMarkable 1, USB is the main local-offline connection method: it uses micro-
 - Transfer files locally through the USB web interface.[^8_5][^8_1]
 - Use it as an alternative when you do not want to rely on cloud sync.[^8_3][^8_5]
 
-
 ## Limits
 
 USB transfer is not the same as full app sync: it’s mainly a file-transfer path, not a complete cloud replacement. On the RM1, the port is micro-USB, so it’s older and less convenient than the USB-C on reMarkable 2.[^8_6][^8_7][^8_5][^8_2]
@@ -345,30 +337,29 @@ If you want, I can give you the exact steps to move files on a reMarkable 1 over
 
 <div align="center">⁂</div>
 
-[^8_1]: https://support.remarkable.com/s/article/importing-and-exporting-files
+[^8_1]: <https://support.remarkable.com/s/article/importing-and-exporting-files>
 
-[^8_2]: https://fcc.report/FCC-ID/2AMK2-RM102/4198757.pdf
+[^8_2]: <https://fcc.report/FCC-ID/2AMK2-RM102/4198757.pdf>
 
-[^8_3]: https://lizard-spock.co.uk/remarkable-local-file-transfer-without-the-cloud.html
+[^8_3]: <https://lizard-spock.co.uk/remarkable-local-file-transfer-without-the-cloud.html>
 
-[^8_4]: https://support.remarkable.com/s/article/About-reMarkable-1
+[^8_4]: <https://support.remarkable.com/s/article/About-reMarkable-1>
 
-[^8_5]: https://philenius.github.io/devices/2019/10/18/transfer-files-using-a-usb-cable-to-remarkable.html
+[^8_5]: <https://philenius.github.io/devices/2019/10/18/transfer-files-using-a-usb-cable-to-remarkable.html>
 
-[^8_6]: https://www.facebook.com/groups/1515071352447777/posts/1623846641570247/
+[^8_6]: <https://www.facebook.com/groups/1515071352447777/posts/1623846641570247/>
 
-[^8_7]: https://remarkable.com/products/remarkable-2
+[^8_7]: <https://remarkable.com/products/remarkable-2>
 
-[^8_8]: https://www.reddit.com/r/RemarkableTablet/comments/ueml2o/transferring_files_on_the_remarkable_1/
+[^8_8]: <https://www.reddit.com/r/RemarkableTablet/comments/ueml2o/transferring_files_on_the_remarkable_1/>
 
-[^8_9]: https://support.remarkable.com/s/article/Transferring-files-between-reMarkable-paper-tablets
+[^8_9]: <https://support.remarkable.com/s/article/Transferring-files-between-reMarkable-paper-tablets>
 
-[^8_10]: https://www.informaticar.net/how-to-transfer-files-to-remarkable-paper-pro-without-cloud/
+[^8_10]: <https://www.informaticar.net/how-to-transfer-files-to-remarkable-paper-pro-without-cloud/>
 
-[^8_11]: https://www.reddit.com/r/RemarkableTablet/comments/1fvoe43/charging_the_remarkable_paper_pro_with_a_usb_ausb/
+[^8_11]: <https://www.reddit.com/r/RemarkableTablet/comments/1fvoe43/charging_the_remarkable_paper_pro_with_a_usb_ausb/>
 
-[^8_12]: https://www.reddit.com/r/RemarkableTablet/comments/1dl1q85/rm1_microusb_connector_type/
-
+[^8_12]: <https://www.reddit.com/r/RemarkableTablet/comments/1dl1q85/rm1_microusb_connector_type/>
 
 ---
 
@@ -397,26 +388,25 @@ If you want, I can give you a very short, step-by-step “how to transfer a PDF 
 
 <div align="center">⁂</div>
 
-[^9_1]: https://support.remarkable.com/s/article/importing-and-exporting-files
+[^9_1]: <https://support.remarkable.com/s/article/importing-and-exporting-files>
 
-[^9_2]: https://lizard-spock.co.uk/remarkable-local-file-transfer-without-the-cloud.html
+[^9_2]: <https://lizard-spock.co.uk/remarkable-local-file-transfer-without-the-cloud.html>
 
-[^9_3]: https://remarkable.guide/tech/usb-web-interface.html
+[^9_3]: <https://remarkable.guide/tech/usb-web-interface.html>
 
-[^9_4]: https://philenius.github.io/devices/2019/10/18/transfer-files-using-a-usb-cable-to-remarkable.html
+[^9_4]: <https://philenius.github.io/devices/2019/10/18/transfer-files-using-a-usb-cable-to-remarkable.html>
 
-[^9_5]: https://github.com/rM-self-serve/webinterface-onboot
+[^9_5]: <https://github.com/rM-self-serve/webinterface-onboot>
 
-[^9_6]: https://www.reddit.com/r/RemarkableTablet/comments/14y8izx/cannot_use_usb_web_interface/
+[^9_6]: <https://www.reddit.com/r/RemarkableTablet/comments/14y8izx/cannot_use_usb_web_interface/>
 
-[^9_7]: https://bbs.archlinux.org/viewtopic.php?id=241144
+[^9_7]: <https://bbs.archlinux.org/viewtopic.php?id=241144>
 
-[^9_8]: https://www.informaticar.net/how-to-transfer-files-to-remarkable-paper-pro-without-cloud/
+[^9_8]: <https://www.informaticar.net/how-to-transfer-files-to-remarkable-paper-pro-without-cloud/>
 
-[^9_9]: https://remarkable.jms1.info/other/goMarkableStream.html
+[^9_9]: <https://remarkable.jms1.info/other/goMarkableStream.html>
 
-[^9_10]: https://www.reddit.com/r/RemarkableTablet/comments/1l7v7n4/does_anyone_know_where_the_usb_web_interface/
-
+[^9_10]: <https://www.reddit.com/r/RemarkableTablet/comments/1l7v7n4/does_anyone_know_where_the_usb_web_interface/>
 
 ---
 
@@ -453,30 +443,29 @@ If you want, I can sketch a **minimal setup** for your exact workflow:
 
 <div align="center">⁂</div>
 
-[^10_1]: https://www.obsidianstats.com/plugins/handwritten-notes
+[^10_1]: <https://www.obsidianstats.com/plugins/handwritten-notes>
 
-[^10_2]: https://riddle.press/a-marriage-between-handwritten-notes-and-obsidian/
+[^10_2]: <https://riddle.press/a-marriage-between-handwritten-notes-and-obsidian/>
 
-[^10_3]: https://philenius.github.io/devices/2019/10/18/transfer-files-using-a-usb-cable-to-remarkable.html
+[^10_3]: <https://philenius.github.io/devices/2019/10/18/transfer-files-using-a-usb-cable-to-remarkable.html>
 
-[^10_4]: https://forum.obsidian.md/t/do-any-of-you-combine-handwritten-notes-with-obsidian/17094
+[^10_4]: <https://forum.obsidian.md/t/do-any-of-you-combine-handwritten-notes-with-obsidian/17094>
 
-[^10_5]: https://support.remarkable.com/s/article/importing-and-exporting-files
+[^10_5]: <https://support.remarkable.com/s/article/importing-and-exporting-files>
 
-[^10_6]: https://lizard-spock.co.uk/remarkable-local-file-transfer-without-the-cloud.html
+[^10_6]: <https://lizard-spock.co.uk/remarkable-local-file-transfer-without-the-cloud.html>
 
-[^10_7]: https://github.com/FBarrca/obsidian-handwritten-notes
+[^10_7]: <https://github.com/FBarrca/obsidian-handwritten-notes>
 
-[^10_8]: https://www.reddit.com/r/ObsidianMD/comments/1kew8s8/handwritten_notes_in_obsidian_how_did_you_do_it/
+[^10_8]: <https://www.reddit.com/r/ObsidianMD/comments/1kew8s8/handwritten_notes_in_obsidian_how_did_you_do_it/>
 
-[^10_9]: https://obsidian.md/plugins?search=ink
+[^10_9]: <https://obsidian.md/plugins?search=ink>
 
-[^10_10]: https://forum.obsidian.md/t/handwritten-notes-for-obsidian-android/69419
+[^10_10]: <https://forum.obsidian.md/t/handwritten-notes-for-obsidian-android/69419>
 
-[^10_11]: https://www.reddit.com/r/RemarkableTablet/comments/1s7lmc5/i_made_my_remarkable_compatible_with_obsidian/
+[^10_11]: <https://www.reddit.com/r/RemarkableTablet/comments/1s7lmc5/i_made_my_remarkable_compatible_with_obsidian/>
 
-[^10_12]: https://www.youtube.com/watch?v=lzYCPkVnqIM
-
+[^10_12]: <https://www.youtube.com/watch?v=lzYCPkVnqIM>
 
 ---
 
@@ -505,28 +494,27 @@ If you want, I can give you a **reMarkable 1 + this plugin** workflow for swarm 
 
 <div align="center">⁂</div>
 
-[^11_1]: https://github.com/FBarrca/obsidian-handwritten-notes
+[^11_1]: <https://github.com/FBarrca/obsidian-handwritten-notes>
 
-[^11_2]: https://www.obsidianstats.com/plugins/handwritten-notes
+[^11_2]: <https://www.obsidianstats.com/plugins/handwritten-notes>
 
-[^11_3]: https://www.reddit.com/r/ObsidianMD/comments/154p7ou/obsidian_handwritten_notes_community/
+[^11_3]: <https://www.reddit.com/r/ObsidianMD/comments/154p7ou/obsidian_handwritten_notes_community/>
 
-[^11_4]: https://support.remarkable.com/s/article/importing-and-exporting-files
+[^11_4]: <https://support.remarkable.com/s/article/importing-and-exporting-files>
 
-[^11_5]: https://forum.obsidian.md/t/handwritten-notes-for-obsidian-android/69419
+[^11_5]: <https://forum.obsidian.md/t/handwritten-notes-for-obsidian-android/69419>
 
-[^11_6]: https://obsidian.md/plugins
+[^11_6]: <https://obsidian.md/plugins>
 
-[^11_7]: https://www.youtube.com/watch?v=H1MejF8kaX4
+[^11_7]: <https://www.youtube.com/watch?v=H1MejF8kaX4>
 
-[^11_8]: https://riddle.press/a-marriage-between-handwritten-notes-and-obsidian/
+[^11_8]: <https://riddle.press/a-marriage-between-handwritten-notes-and-obsidian/>
 
-[^11_9]: https://www.youtube.com/watch?v=zh-bg1AjYoY
+[^11_9]: <https://www.youtube.com/watch?v=zh-bg1AjYoY>
 
-[^11_10]: https://forum.obsidian.md/t/is-there-a-way-or-a-plugin-that-converts-real-time-handwriting-notes-to-automatically-typed-text/85393
+[^11_10]: <https://forum.obsidian.md/t/is-there-a-way-or-a-plugin-that-converts-real-time-handwriting-notes-to-automatically-typed-text/85393>
 
-[^11_11]: https://www.reddit.com/r/ObsidianMD/comments/1kew8s8/handwritten_notes_in_obsidian_how_did_you_do_it/
-
+[^11_11]: <https://www.reddit.com/r/ObsidianMD/comments/1kew8s8/handwritten_notes_in_obsidian_how_did_you_do_it/>
 
 ---
 
@@ -550,32 +538,31 @@ For your handwritten notes + Obsidian use case, export as **PDF** from reMarkabl
 
 <div align="center">⁂</div>
 
-[^12_1]: https://support.remarkable.com/s/article/Which-file-types-are-supported-on-reMarkable
+[^12_1]: <https://support.remarkable.com/s/article/Which-file-types-are-supported-on-reMarkable>
 
-[^12_2]: https://www.reddit.com/r/RemarkableTablet/comments/16zl6oo/struggling_with_remarkable_file_structure_basics/
+[^12_2]: <https://www.reddit.com/r/RemarkableTablet/comments/16zl6oo/struggling_with_remarkable_file_structure_basics/>
 
-[^12_3]: https://support.remarkable.com/s/article/importing-and-exporting-files
+[^12_3]: <https://support.remarkable.com/s/article/importing-and-exporting-files>
 
-[^12_4]: https://plasma.ninja/blog/devices/remarkable/binary/format/2017/12/26/reMarkable-lines-file-format.html
+[^12_4]: <https://plasma.ninja/blog/devices/remarkable/binary/format/2017/12/26/reMarkable-lines-file-format.html>
 
-[^12_5]: https://remarkable.jms1.info/info/filesystem.html
+[^12_5]: <https://remarkable.jms1.info/info/filesystem.html>
 
-[^12_6]: https://www.youtube.com/watch?v=_SJSr1JVI-U
+[^12_6]: <https://www.youtube.com/watch?v=_SJSr1JVI-U>
 
-[^12_7]: https://www.simplykyra.com/blog/how-to-make-template-files-for-your-remarkable/
+[^12_7]: <https://www.simplykyra.com/blog/how-to-make-template-files-for-your-remarkable/>
 
-[^12_8]: https://support.remarkable.com/s/article/Templates
+[^12_8]: <https://support.remarkable.com/s/article/Templates>
 
-[^12_9]: https://www.youtube.com/watch?v=zC_zakj-7YY
+[^12_9]: <https://www.youtube.com/watch?v=zC_zakj-7YY>
 
-[^12_10]: https://support.remarkable.com/s/article/Convert-to-Notebook
+[^12_10]: <https://support.remarkable.com/s/article/Convert-to-Notebook>
 
-[^12_11]: https://philenius.github.io/devices/2019/10/18/transfer-files-using-a-usb-cable-to-remarkable.html
+[^12_11]: <https://philenius.github.io/devices/2019/10/18/transfer-files-using-a-usb-cable-to-remarkable.html>
 
-[^12_12]: https://github.com/FBarrca/obsidian-handwritten-notes
+[^12_12]: <https://github.com/FBarrca/obsidian-handwritten-notes>
 
-[^12_13]: https://www.obsidianstats.com/plugins/handwritten-notes
-
+[^12_13]: <https://www.obsidianstats.com/plugins/handwritten-notes>
 
 ---
 
@@ -611,28 +598,27 @@ Want install/run steps for rmc on your setup?
 
 <div align="center">⁂</div>
 
-[^13_1]: https://github.com/ricklupton/rmc
+[^13_1]: <https://github.com/ricklupton/rmc>
 
-[^13_2]: https://github.com/ricklupton/rmscene
+[^13_2]: <https://github.com/ricklupton/rmscene>
 
-[^13_3]: https://pkg.go.dev/github.com/rorycl/rm2pdf
+[^13_3]: <https://pkg.go.dev/github.com/rorycl/rm2pdf>
 
-[^13_4]: https://www.davisr.me/projects/rcu/
+[^13_4]: <https://www.davisr.me/projects/rcu/>
 
-[^13_5]: https://github.com/akeil/rmtool
+[^13_5]: <https://github.com/akeil/rmtool>
 
-[^13_6]: https://philenius.github.io/devices/2019/10/18/transfer-files-using-a-usb-cable-to-remarkable.html
+[^13_6]: <https://philenius.github.io/devices/2019/10/18/transfer-files-using-a-usb-cable-to-remarkable.html>
 
-[^13_7]: https://www.reddit.com/r/RemarkableTablet/comments/1q7wces/html_or_txt_file_conversion/
+[^13_7]: <https://www.reddit.com/r/RemarkableTablet/comments/1q7wces/html_or_txt_file_conversion/>
 
-[^13_8]: https://sonix.ai/how-to-convert-rm-to-pdf
+[^13_8]: <https://sonix.ai/how-to-convert-rm-to-pdf>
 
-[^13_9]: https://www.youtube.com/watch?v=mrUmMLeVlIk
+[^13_9]: <https://www.youtube.com/watch?v=mrUmMLeVlIk>
 
-[^13_10]: https://github.com/juruen/rmapi/issues/141
+[^13_10]: <https://github.com/juruen/rmapi/issues/141>
 
-[^13_11]: https://www.reddit.com/r/RemarkableTablet/comments/1qodz90/stroke_eraser/
-
+[^13_11]: <https://www.reddit.com/r/RemarkableTablet/comments/1qodz90/stroke_eraser/>
 
 ---
 
@@ -654,14 +640,13 @@ What’s next—test the tool, swarm-specific templates, or something else?
 
 <div align="center">⁂</div>
 
-[^14_1]: https://www.perplexity.ai/search/beec5ee3-69ef-44cc-88f3-2dced7b46e56
+[^14_1]: <https://www.perplexity.ai/search/beec5ee3-69ef-44cc-88f3-2dced7b46e56>
 
-[^14_2]: https://github.com/ricklupton/rmc
+[^14_2]: <https://github.com/ricklupton/rmc>
 
-[^14_3]: https://philenius.github.io/devices/2019/10/18/transfer-files-using-a-usb-cable-to-remarkable.html
+[^14_3]: <https://philenius.github.io/devices/2019/10/18/transfer-files-using-a-usb-cable-to-remarkable.html>
 
-[^14_4]: https://www.perplexity.ai/search/e0aa74b3-0db1-4ca7-b13e-505508d83813
-
+[^14_4]: <https://www.perplexity.ai/search/e0aa74b3-0db1-4ca7-b13e-505508d83813>
 
 ---
 
@@ -691,32 +676,31 @@ Want a **script snippet** to audit/export your structure?[^15_5][^15_1]
 
 <div align="center">⁂</div>
 
-[^15_1]: https://remarkable.jms1.info/info/filesystem.html
+[^15_1]: <https://remarkable.jms1.info/info/filesystem.html>
 
-[^15_2]: https://plasma.ninja/blog/devices/remarkable/binary/format/2017/12/26/reMarkable-lines-file-format.html
+[^15_2]: <https://plasma.ninja/blog/devices/remarkable/binary/format/2017/12/26/reMarkable-lines-file-format.html>
 
-[^15_3]: https://remarkable.com/using-remarkable/advanced-techniques/organize-files-para-method
+[^15_3]: <https://remarkable.com/using-remarkable/advanced-techniques/organize-files-para-method>
 
-[^15_4]: https://support.remarkable.com/s/article/importing-and-exporting-files
+[^15_4]: <https://support.remarkable.com/s/article/importing-and-exporting-files>
 
-[^15_5]: https://github.com/ricklupton/rmc
+[^15_5]: <https://github.com/ricklupton/rmc>
 
-[^15_6]: https://www.reddit.com/r/RemarkableTablet/comments/11rcskf/how_good_is_the_remarkable_for_mind_mapping_and/
+[^15_6]: <https://www.reddit.com/r/RemarkableTablet/comments/11rcskf/how_good_is_the_remarkable_for_mind_mapping_and/>
 
-[^15_7]: https://remarkable.com/blog/six-little-known-remarkable-features
+[^15_7]: <https://remarkable.com/blog/six-little-known-remarkable-features>
 
-[^15_8]: https://support.remarkable.com/s/article/Data-security
+[^15_8]: <https://support.remarkable.com/s/article/Data-security>
 
-[^15_9]: https://www.youtube.com/watch?v=WULDYX2vV1g
+[^15_9]: <https://www.youtube.com/watch?v=WULDYX2vV1g>
 
-[^15_10]: https://stackoverflow.com/questions/71635274/fixing-npm-vulnerabilities
+[^15_10]: <https://stackoverflow.com/questions/71635274/fixing-npm-vulnerabilities>
 
-[^15_11]: https://support.remarkable.com/s/
+[^15_11]: <https://support.remarkable.com/s/>
 
-[^15_12]: https://www.youtube.com/shorts/xL6A3hpaGMo
+[^15_12]: <https://www.youtube.com/shorts/xL6A3hpaGMo>
 
-[^15_13]: https://remarkable.com/using-remarkable/workflows/pro-tips-organizing-paper-tablet
-
+[^15_13]: <https://remarkable.com/using-remarkable/workflows/pro-tips-organizing-paper-tablet>
 
 ---
 
@@ -743,32 +727,31 @@ Clean for personal swarm management on state-owned Windows (VM sandbox). Need a 
 
 <div align="center">⁂</div>
 
-[^16_1]: https://www.utah.gov/pmn/files/1005717.pdf
+[^16_1]: <https://www.utah.gov/pmn/files/1005717.pdf>
 
-[^16_2]: https://remarkable.jms1.info/info/filesystem.html
+[^16_2]: <https://remarkable.jms1.info/info/filesystem.html>
 
-[^16_3]: https://www.dla.mil/Disposition-Services/Offers/Law-Enforcement/Program-FAQs/
+[^16_3]: <https://www.dla.mil/Disposition-Services/Offers/Law-Enforcement/Program-FAQs/>
 
-[^16_4]: https://law.justia.com/codes/utah/title-59/chapter-12/part-2/section-213/
+[^16_4]: <https://law.justia.com/codes/utah/title-59/chapter-12/part-2/section-213/>
 
-[^16_5]: https://www.tylertech.com/products/enterprise-assessment-tax/enterprise-assessment/personal-property
+[^16_5]: <https://www.tylertech.com/products/enterprise-assessment-tax/enterprise-assessment/personal-property>
 
-[^16_6]: https://www.perplexity.ai/search/e0aa74b3-0db1-4ca7-b13e-505508d83813
+[^16_6]: <https://www.perplexity.ai/search/e0aa74b3-0db1-4ca7-b13e-505508d83813>
 
-[^16_7]: https://github.com/ricklupton/rmc
+[^16_7]: <https://github.com/ricklupton/rmc>
 
-[^16_8]: https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute\&Search_String=\&URL=0900-0999%2F0934%2FSections%2F0934.425.html
+[^16_8]: <https://www.leg.state.fl.us/Statutes/index.cfm?App_mode=Display_Statute\&Search_String=\&URL=0900-0999%2F0934%2FSections%2F0934.425.html>
 
-[^16_9]: https://fam.state.gov/fam/14fam/14fam0410.html
+[^16_9]: <https://fam.state.gov/fam/14fam/14fam0410.html>
 
-[^16_10]: https://www.perplexity.ai/search/c15d9f14-5703-4ed7-b1f9-3d3a04cd2265
+[^16_10]: <https://www.perplexity.ai/search/c15d9f14-5703-4ed7-b1f9-3d3a04cd2265>
 
-[^16_11]: https://www.youtube.com/watch?v=1UWsxiXGL5M
+[^16_11]: <https://www.youtube.com/watch?v=1UWsxiXGL5M>
 
-[^16_12]: https://kutv.com/news/local/proposed-law-would-prevent-private-investigators-from-following-people-with-gps-trackers
+[^16_12]: <https://kutv.com/news/local/proposed-law-would-prevent-private-investigators-from-following-people-with-gps-trackers>
 
-[^16_13]: https://www.flocksafety.com
-
+[^16_13]: <https://www.flocksafety.com>
 
 ---
 
@@ -792,26 +775,25 @@ Prefer full Android E Ink (Boox) or paper-like (reMarkable)?[^17_2][^17_6]
 
 <div align="center">⁂</div>
 
-[^17_1]: https://www.phonescoop.com/phones/phone.php?p=7252
+[^17_1]: <https://www.phonescoop.com/phones/phone.php?p=7252>
 
-[^17_2]: https://www.engadget.com/mobile/tablets/best-e-ink-tablet-130037939.html
+[^17_2]: <https://www.engadget.com/mobile/tablets/best-e-ink-tablet-130037939.html>
 
-[^17_3]: https://www.the-ebook-reader.com/ebook-reader-comparison.html
+[^17_3]: <https://www.the-ebook-reader.com/ebook-reader-comparison.html>
 
-[^17_4]: https://www.engadget.com/mobile/smartphones/light-phone-iii-review-minimalism-stretched-to-the-point-of-frustration-141559294.html
+[^17_4]: <https://www.engadget.com/mobile/smartphones/light-phone-iii-review-minimalism-stretched-to-the-point-of-frustration-141559294.html>
 
-[^17_5]: https://www.reddit.com/r/eink/comments/1ecuhqn/compare_ereaders_eink_tablets_and_eink_phones_my/
+[^17_5]: <https://www.reddit.com/r/eink/comments/1ecuhqn/compare_ereaders_eink_tablets_and_eink_phones_my/>
 
-[^17_6]: https://www.youtube.com/watch?v=SdJYRKXl0Ok
+[^17_6]: <https://www.youtube.com/watch?v=SdJYRKXl0Ok>
 
-[^17_7]: https://www.cnet.com/tech/computing/best-e-ink-tablets/
+[^17_7]: <https://www.cnet.com/tech/computing/best-e-ink-tablets/>
 
-[^17_8]: https://www.ign.com/articles/best-e-ink-tablets
+[^17_8]: <https://www.ign.com/articles/best-e-ink-tablets>
 
-[^17_9]: https://www.youtube.com/watch?v=qBdBSz4pia4
+[^17_9]: <https://www.youtube.com/watch?v=qBdBSz4pia4>
 
-[^17_10]: https://www.fieldmag.com/articles/light-phone-iii-review
-
+[^17_10]: <https://www.fieldmag.com/articles/light-phone-iii-review>
 
 ---
 
@@ -827,7 +809,6 @@ Your black Light Phone II is a minimalist E Ink phone designed for calls, texts,
 - **Ports**: Micro-USB charging, 3.5mm headphone.[^18_4]
 - **Network**: 4G LTE unlocked (AT\&T/T-Mobile/Verizon bands).[^18_3]
 
-
 ## Swarm + reMarkable fit
 
 Voice memos/notes on Lite → transcribe to reMarkable → USB → Obsidian vault. Hotspot tethers reMarkable offline. Perfect for LAF field audits without smartphone distractions.[^18_5][^18_6][^18_3]
@@ -837,26 +818,25 @@ Want **Lite II + reMarkable 1 workflow** for notes?[^18_1]
 
 <div align="center">⁂</div>
 
-[^18_1]: https://www.thelightphone.com/lightii
+[^18_1]: <https://www.thelightphone.com/lightii>
 
-[^18_2]: https://basic.space/products/light-phone-ii
+[^18_2]: <https://basic.space/products/light-phone-ii>
 
-[^18_3]: https://www.pcmag.com/reviews/light-phone-ii
+[^18_3]: <https://www.pcmag.com/reviews/light-phone-ii>
 
-[^18_4]: https://dumbwireless.com/products/light-phone-2
+[^18_4]: <https://dumbwireless.com/products/light-phone-2>
 
-[^18_5]: https://www.reddit.com/r/dumbphones/comments/1d7i6s7/light_phone_ii_after_one_month_long_and_positive/
+[^18_5]: <https://www.reddit.com/r/dumbphones/comments/1d7i6s7/light_phone_ii_after_one_month_long_and_positive/>
 
-[^18_6]: https://www.andyfuqua.com/p/the-light-phone-2-an-honest-review-from-a-real-user
+[^18_6]: <https://www.andyfuqua.com/p/the-light-phone-2-an-honest-review-from-a-real-user>
 
-[^18_7]: https://www.youtube.com/watch?v=eMwOysOpwBA
+[^18_7]: <https://www.youtube.com/watch?v=eMwOysOpwBA>
 
-[^18_8]: https://www.thelightphone.com/shop/products/light-phone-ii-black
+[^18_8]: <https://www.thelightphone.com/shop/products/light-phone-ii-black>
 
-[^18_9]: https://www.reddit.com/r/dumbphones/comments/1nf66vg/light_phone_ii_light_phone_2_is_this_the_goat_of/
+[^18_9]: <https://www.reddit.com/r/dumbphones/comments/1nf66vg/light_phone_ii_light_phone_2_is_this_the_goat_of/>
 
-[^18_10]: https://theprivacydad.com/light-phone-2-review/
-
+[^18_10]: <https://theprivacydad.com/light-phone-2-review/>
 
 ---
 
@@ -883,26 +863,25 @@ Test SIM swap first—Verizon recognizes LP II as unlocked. Need Verizon steps?[
 
 <div align="center">⁂</div>
 
-[^19_1]: https://www.thelightphone.com/compatibility-checker
+[^19_1]: <https://www.thelightphone.com/compatibility-checker>
 
-[^19_2]: https://support.thelightphone.com/hc/en-us/articles/360034940272-Verizon-Troubleshooting
+[^19_2]: <https://support.thelightphone.com/hc/en-us/articles/360034940272-Verizon-Troubleshooting>
 
-[^19_3]: https://www.reddit.com/r/Googlevoice/comments/1boplke/can_you_use_google_voice_with_a_data_only_esim/
+[^19_3]: <https://www.reddit.com/r/Googlevoice/comments/1boplke/can_you_use_google_voice_with_a_data_only_esim/>
 
-[^19_4]: https://www.reddit.com/r/LightPhone/comments/14ci2z3/verizon_cant_activate_my_lp_ii/
+[^19_4]: <https://www.reddit.com/r/LightPhone/comments/14ci2z3/verizon_cant_activate_my_lp_ii/>
 
-[^19_5]: https://support.thelightphone.com/hc/en-us/articles/360030789592-Using-Light-Phone-as-Secondary-Phone
+[^19_5]: <https://support.thelightphone.com/hc/en-us/articles/360030789592-Using-Light-Phone-as-Secondary-Phone>
 
-[^19_6]: https://b3n.org/google-voice-port-to-iphone-esim-on-us-mobile/
+[^19_6]: <https://b3n.org/google-voice-port-to-iphone-esim-on-us-mobile/>
 
-[^19_7]: https://www.thelightphone.com/how-it-works
+[^19_7]: <https://www.thelightphone.com/how-it-works>
 
-[^19_8]: https://opendevelopment.verizonwireless.com/device-showcase/device/9304
+[^19_8]: <https://opendevelopment.verizonwireless.com/device-showcase/device/9304>
 
-[^19_9]: https://www.reddit.com/r/LightPhone/comments/1qw9fg8/is_there_any_way_to_use_the_same_number_on_a/
+[^19_9]: <https://www.reddit.com/r/LightPhone/comments/1qw9fg8/is_there_any_way_to_use_the_same_number_on_a/>
 
-[^19_10]: https://www.youtube.com/watch?v=D5aC8o4Wgaw
-
+[^19_10]: <https://www.youtube.com/watch?v=D5aC8o4Wgaw>
 
 ---
 
@@ -925,30 +904,29 @@ Test swap—should take 5 mins. Stuck?[^20_7]
 
 <div align="center">⁂</div>
 
-[^20_1]: https://www.reddit.com/r/LightPhone/comments/184xh82/sim_swapping/
+[^20_1]: <https://www.reddit.com/r/LightPhone/comments/184xh82/sim_swapping/>
 
-[^20_2]: https://support.thelightphone.com/hc/en-us/articles/360034940272-Verizon-Troubleshooting
+[^20_2]: <https://support.thelightphone.com/hc/en-us/articles/360034940272-Verizon-Troubleshooting>
 
-[^20_3]: https://support.thelightphone.com/hc/en-us/articles/360030764372-Initial-Set-Up-Phone-Overview
+[^20_3]: <https://support.thelightphone.com/hc/en-us/articles/360030764372-Initial-Set-Up-Phone-Overview>
 
-[^20_4]: https://victra.com/blog/how-to-switch-phones-on-verizon/
+[^20_4]: <https://victra.com/blog/how-to-switch-phones-on-verizon/>
 
-[^20_5]: https://www.reddit.com/r/Googlevoice/comments/1boplke/can_you_use_google_voice_with_a_data_only_esim/
+[^20_5]: <https://www.reddit.com/r/Googlevoice/comments/1boplke/can_you_use_google_voice_with_a_data_only_esim/>
 
-[^20_6]: https://www.thelightphone.com/how-it-works
+[^20_6]: <https://www.thelightphone.com/how-it-works>
 
-[^20_7]: https://www.reddit.com/r/LightPhone/comments/14ci2z3/verizon_cant_activate_my_lp_ii/
+[^20_7]: <https://www.reddit.com/r/LightPhone/comments/14ci2z3/verizon_cant_activate_my_lp_ii/>
 
-[^20_8]: https://support.thelightphone.com/hc/en-us/articles/360030789592-Using-Light-Phone-as-Secondary-Phone
+[^20_8]: <https://support.thelightphone.com/hc/en-us/articles/360030789592-Using-Light-Phone-as-Secondary-Phone>
 
-[^20_9]: https://www.youtube.com/watch?v=2ndbAry0Bes
+[^20_9]: <https://www.youtube.com/watch?v=2ndbAry0Bes>
 
-[^20_10]: https://www.verizon.com/business/answers/sim-card-switch/
+[^20_10]: <https://www.verizon.com/business/answers/sim-card-switch/>
 
-[^20_11]: https://www.verizon.com/support/swap-devices-faqs/
+[^20_11]: <https://www.verizon.com/support/swap-devices-faqs/>
 
-[^20_12]: https://www.youtube.com/watch?v=BEAdgKGFxlo
-
+[^20_12]: <https://www.youtube.com/watch?v=BEAdgKGFxlo>
 
 ---
 
@@ -972,28 +950,27 @@ Lite + reMarkable 1 + Pixel eSIM = field-ready (calls offline, notes vector, dat
 
 <div align="center">⁂</div>
 
-[^21_1]: https://support.thelightphone.com/hc/en-us/articles/360034940272-Verizon-Troubleshooting
+[^21_1]: <https://support.thelightphone.com/hc/en-us/articles/360034940272-Verizon-Troubleshooting>
 
-[^21_2]: https://www.verizon.com/unlocked-smartphones/light-phone-ii-unlocked/
+[^21_2]: <https://www.verizon.com/unlocked-smartphones/light-phone-ii-unlocked/>
 
-[^21_3]: https://support.thelightphone.com/hc/en-us/articles/360030764372-Initial-Set-Up-Phone-Overview
+[^21_3]: <https://support.thelightphone.com/hc/en-us/articles/360030764372-Initial-Set-Up-Phone-Overview>
 
-[^21_4]: https://www.reddit.com/r/LightPhone/comments/11kcky5/verizon_and_sim/
+[^21_4]: <https://www.reddit.com/r/LightPhone/comments/11kcky5/verizon_and_sim/>
 
-[^21_5]: https://www.reddit.com/r/LightPhone/comments/1mgue6c/eli5_verizon_and_light_phone/
+[^21_5]: <https://www.reddit.com/r/LightPhone/comments/1mgue6c/eli5_verizon_and_light_phone/>
 
-[^21_6]: https://www.thelightphone.com/how-it-works
+[^21_6]: <https://www.thelightphone.com/how-it-works>
 
-[^21_7]: https://www.thelightphone.com/compatibility-checker
+[^21_7]: <https://www.thelightphone.com/compatibility-checker>
 
-[^21_8]: https://support.thelightphone.com/hc/en-us/articles/11665241683860-Carrier-Questions
+[^21_8]: <https://support.thelightphone.com/hc/en-us/articles/11665241683860-Carrier-Questions>
 
-[^21_9]: https://opendevelopment.verizonwireless.com/device-showcase/device/9304
+[^21_9]: <https://opendevelopment.verizonwireless.com/device-showcase/device/9304>
 
-[^21_10]: https://support.thelightphone.com/hc/en-us/articles/360030789592-Using-Light-Phone-as-Secondary-Phone
+[^21_10]: <https://support.thelightphone.com/hc/en-us/articles/360030789592-Using-Light-Phone-as-Secondary-Phone>
 
-[^21_11]: https://www.youtube.com/watch?v=BEAdgKGFxlo
-
+[^21_11]: <https://www.youtube.com/watch?v=BEAdgKGFxlo>
 
 ---
 
@@ -1016,38 +993,37 @@ reMarkable notes + Lite calls + Pixel data = zero extra. Swap now?[^22_3][^22_8]
 
 <div align="center">⁂</div>
 
-[^22_1]: https://support.thelightphone.com/hc/en-us/articles/360034940272-Verizon-Troubleshooting
+[^22_1]: <https://support.thelightphone.com/hc/en-us/articles/360034940272-Verizon-Troubleshooting>
 
-[^22_2]: https://www.verizon.com/support/swap-devices-faqs/
+[^22_2]: <https://www.verizon.com/support/swap-devices-faqs/>
 
-[^22_3]: https://www.reddit.com/r/LightPhone/comments/184xh82/sim_swapping/
+[^22_3]: <https://www.reddit.com/r/LightPhone/comments/184xh82/sim_swapping/>
 
-[^22_4]: https://victra.com/blog/how-to-switch-phones-on-verizon/
+[^22_4]: <https://victra.com/blog/how-to-switch-phones-on-verizon/>
 
-[^22_5]: https://www.verizon.com/solutions-and-services/add-ons/mobile/numbershare-mobile/
+[^22_5]: <https://www.verizon.com/solutions-and-services/add-ons/mobile/numbershare-mobile/>
 
-[^22_6]: https://www.verizon.com/plans/devices/
+[^22_6]: <https://www.verizon.com/plans/devices/>
 
-[^22_7]: https://www.reddit.com/r/Googlevoice/comments/1boplke/can_you_use_google_voice_with_a_data_only_esim/
+[^22_7]: <https://www.reddit.com/r/Googlevoice/comments/1boplke/can_you_use_google_voice_with_a_data_only_esim/>
 
-[^22_8]: https://www.thelightphone.com/how-it-works
+[^22_8]: <https://www.thelightphone.com/how-it-works>
 
-[^22_9]: https://www.verizon.com/plans/
+[^22_9]: <https://www.verizon.com/plans/>
 
-[^22_10]: https://www.verizon.com/plans/unlimited/
+[^22_10]: <https://www.verizon.com/plans/unlimited/>
 
-[^22_11]: https://victra.com/verizon-phone-plans/
+[^22_11]: <https://victra.com/verizon-phone-plans/>
 
-[^22_12]: https://www.reddit.com/r/verizon/comments/iqv6b9/multiple_plans_verizon_unlimited_and_new_get_more/
+[^22_12]: <https://www.reddit.com/r/verizon/comments/iqv6b9/multiple_plans_verizon_unlimited_and_new_get_more/>
 
-[^22_13]: https://www.reddit.com/r/AppleWatch/comments/yazj8b/verizon_number_share_actual_cost/
+[^22_13]: <https://www.reddit.com/r/AppleWatch/comments/yazj8b/verizon_number_share_actual_cost/>
 
-[^22_14]: https://wirelesszone.com/verizon-plans/
+[^22_14]: <https://wirelesszone.com/verizon-plans/>
 
-[^22_15]: https://www.verizon.com/prepaid/smartwatch-plans
+[^22_15]: <https://www.verizon.com/prepaid/smartwatch-plans>
 
-[^22_16]: https://www.verizon.com/discounts/phone-home-internet-bundle/
-
+[^22_16]: <https://www.verizon.com/discounts/phone-home-internet-bundle/>
 
 ---
 
@@ -1068,27 +1044,26 @@ reMarkable notes + Lite calls = field gold. Call Verizon?[^23_6][^23_4]
 
 <div align="center">⁂</div>
 
-[^23_1]: https://support.thelightphone.com/hc/en-us/articles/360030789592-Using-Light-Phone-as-Secondary-Phone
+[^23_1]: <https://support.thelightphone.com/hc/en-us/articles/360030789592-Using-Light-Phone-as-Secondary-Phone>
 
-[^23_2]: https://www.thelightphone.com/faq
+[^23_2]: <https://www.thelightphone.com/faq>
 
-[^23_3]: https://www.reddit.com/r/LightPhone/comments/1aiat2o/lightphone_as_companion_for_esim_device/
+[^23_3]: <https://www.reddit.com/r/LightPhone/comments/1aiat2o/lightphone_as_companion_for_esim_device/>
 
-[^23_4]: https://support.thelightphone.com/hc/en-us/articles/360034940272-Verizon-Troubleshooting
+[^23_4]: <https://support.thelightphone.com/hc/en-us/articles/360034940272-Verizon-Troubleshooting>
 
-[^23_5]: https://www.reddit.com/r/LightPhone/comments/11kcky5/verizon_and_sim/
+[^23_5]: <https://www.reddit.com/r/LightPhone/comments/11kcky5/verizon_and_sim/>
 
-[^23_6]: https://www.thelightphone.com/how-it-works
+[^23_6]: <https://www.thelightphone.com/how-it-works>
 
-[^23_7]: https://www.reddit.com/r/LightPhone/comments/1js6buy/esim_phone_swap/
+[^23_7]: <https://www.reddit.com/r/LightPhone/comments/1js6buy/esim_phone_swap/>
 
-[^23_8]: https://www.remitfinder.com/blog/how-to-transfer-esim-to-a-new-phone-the-complete-guide
+[^23_8]: <https://www.remitfinder.com/blog/how-to-transfer-esim-to-a-new-phone-the-complete-guide>
 
-[^23_9]: https://www.youtube.com/watch?v=z9rV9NKQ3ew
+[^23_9]: <https://www.youtube.com/watch?v=z9rV9NKQ3ew>
 
-[^23_10]: https://truely.com/blog/how-to-transfer-esim
+[^23_10]: <https://truely.com/blog/how-to-transfer-esim>
 
-[^23_11]: https://www.youtube.com/watch?v=Cw9tsqJg4qw
+[^23_11]: <https://www.youtube.com/watch?v=Cw9tsqJg4qw>
 
-[^23_12]: https://www.youtube.com/watch?v=QUyh5p0mfx8
-
+[^23_12]: <https://www.youtube.com/watch?v=QUyh5p0mfx8>

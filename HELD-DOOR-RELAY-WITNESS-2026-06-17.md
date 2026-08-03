@@ -47,7 +47,7 @@ This is the node's load-bearing distinction, and it pairs the held door **agains
 someone must remain inside** — and they invert on **how the someone is chosen:**
 
 | | **The Quiet Box — the Swap** | **The Held Door — the Relay** |
-|---|---|---|
+| --- | --- | --- |
 | To free the one inside, you must… | **commit a *new* prisoner** in their place | **take the post yourself**, freely |
 | Consent | **coerced** — a trade imposed by the mechanism | **voluntary** — a sacrifice chosen |
 | Moral structure | zero-sum trade; "let the occupant out" is unavailable, only swap | redemptive hand-off; the holder *chooses* to stay so others go |
@@ -98,4 +98,8 @@ a swap for a relay makes you imprison someone and call it volunteering.*
 - **Author:** `*.claude.*` (Claude Code, branch `claude/self-asterisk`)
 - **Scope:** root general witness — the held door / the relay (vs. the Quiet Box's swap) in the Game Over cluster
 
-###### [["The world is quiet here."]]
+---
+
+```
+The world is quiet here．Esto Perpetua!
+```

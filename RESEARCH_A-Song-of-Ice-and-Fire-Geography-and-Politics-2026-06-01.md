@@ -34,7 +34,7 @@ date: 2026-06-01
 - **"Seven Kingdoms" is historical** — it names the seven independent realms that existed *before* Aegon's Conquest. The realm today is administered as **nine regions**:
 
 | Region | Ruling seat | House |
-|---|---|---|
+| --- | --- | --- |
 | The North | Winterfell | Stark |
 | The Iron Islands | Pyke | Greyjoy |
 | The Riverlands | Riverrun (Harrenhal is the great ruin) | Tully |
@@ -138,4 +138,6 @@ Logan asked to follow the current-state survey with research on the **geography 
 
 ---
 
-###### [["The world is quiet here."]]
+```
+The world is quiet here．Esto Perpetua!
+```

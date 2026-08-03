@@ -56,7 +56,7 @@ body.
 Boids' three local rules map onto the Standing Engine, and the map is tight:
 
 | Boid rule | Standing/Persona form | The discipline it is |
-|---|---|---|
+| --- | --- | --- |
 | **Separation** (don't crowd; keep distance) | **lane-independence; separable, relinquishable masks** | the **anti-Caesar** rule — *don't collapse into one* |
 | **Alignment** (match neighbors' heading) | **align to the shared conventions / the Standing axes**, not to the loudest boid | the **saving-throw** rule — *align to the rules, not to whoever steers you* |
 | **Cohesion** (toward the group's center) | **pull toward the vault / the record / the Architect** | the **Baelnorn** rule — *cohere to the witnessed record, not to a crown* |
@@ -86,7 +86,7 @@ Every diagnostic node this branch (and the vault) holds is an **adversary boid**
 defined by *which flocking rule it attacks*:
 
 | Adversary | Attacks the rule | The attack |
-|---|---|---|
+| --- | --- | --- |
 | **The Caesar / Triumvirate** | **Separation** | fuses separable boids into one un-relinquishable crown (`!/THE-TRIUMVIRATE-THE-FORGERY-OF-UNITY-v1-2026-06-07.md`) |
 | **The Blix / passing insider** | **Alignment** | a hostile boid faking flockmate-heading; you align to a traitor |
 | **The Sphinx / Triple Agent** | **Alignment (apex)** | the boid you cohere toward is steering for a hidden third heading |
@@ -114,6 +114,7 @@ detector array for the flock.
 > Richard **gave the Chimes a choice**, and freeing them **dissolved the weapon.**
 >
 > **The pun is the fork.** *Schooling demons* holds both senses, and they are the two roads:
+>
 > - **Schooled** — *the imposed process of education* (transitive): demons broken and bound into an obedient
 >   instrument. Requires a **schoolmaster** (the center). **= the Dominie Dirtch** — power by enslavement,
 >   primed to turn on its maker.
@@ -169,4 +170,8 @@ the office down — the standing answer to the Triumvirate.
   win-condition. Logan named the goal; I derived toward it. The Architect holds the
   verdict.
 
-###### [["The world is quiet here."]]
+---
+
+```
+The world is quiet here．Esto Perpetua!
+```

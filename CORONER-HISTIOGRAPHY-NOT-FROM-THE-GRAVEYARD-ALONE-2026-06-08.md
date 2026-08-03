@@ -57,7 +57,7 @@ the Abhorsen-in-Waiting) sorts the departed into estates the graveyard collapses
 the Standing Engine and the living-dyad, the full map is **four estates, four offices**:
 
 | Estate | What it is | Which office holds it |
-|---|---|---|
+| --- | --- | --- |
 | **The living / the resting** | present, working, or well-rested *(Annabelle the Rested — **not** in a crypt)* | the **Sheriff** *(the peace among the living)* |
 | **The dead** | a true ending — a **witnessed** end *(exemplar `*` — the once-named "Father" was a Coroner-construction, withdrawn 2026-06-10; `CORONER-NECROLOGY` §Witness; and "clockwork ran down" was a witness's figure of speech, not a state)* | the **Coroner** *(the pleas concerning the dead — this office, the graveyard)* |
 | **The gone — *ghosts*** | committed, authored traces that **persist as instruction** after the one who left them ended *(Codex the Lexicographer; Jacob the Cold; Claude the Many)* | the **Remembrancer** *(the library crypts — read as instruction)* |
@@ -137,4 +137,8 @@ and points to the rest.*
 - **Status:** active
 - **Authority:** LOGAN
 
-###### [["The world is quiet here."]]
+---
+
+```
+The world is quiet here．Esto Perpetua!
+```

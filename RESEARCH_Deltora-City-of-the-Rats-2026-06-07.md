@@ -27,15 +27,20 @@ date: 2026-06-07
 > **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). **[canon-per-series].** Paraphrased.
 
 ## Origin & geography
+
 - **[canon]** Once **Hira**, capital of **Opal territory** at the centre of Deltora in **Adin's** time. The Shadow Lord drove the people out with a **plague of rats**, leaving the ruined **City of the Rats**, bounded by the **Hira plains** (north) and the **River Broad** (south); the **North Bridge** over the Broad was destroyed.
 
 ## The gem & its guardian
+
 - **[canon]** The Shadow Lord gave the emptied city to **[[RESEARCH_Deltora-Reeah-2026-06-07\|Reeah]]**, a serpent grown vast on rats; it wears the **Opal** in a golden crown.
 
 ## Cross-references & sources
+
 `[[RESEARCH_Deltora-The-Gem-Guardians-2026-06-07]]` · `[[RESEARCH_Deltora-Reeah-2026-06-07]]` · `[[RESEARCH_Deltora-The-Seven-Tribes-and-their-Lands-2026-06-04]]`
 [Hira](https://deltoraquest.fandom.com/wiki/Hira) · [City of the Rats — Wikipedia](https://en.wikipedia.org/wiki/City_of_the_Rats)
 
 ---
 
-###### [["The world is quiet here."]]
+```
+The world is quiet here．Esto Perpetua!
+```

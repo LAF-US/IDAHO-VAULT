@@ -83,7 +83,7 @@ Recorded as his, not mine, so the inheritance is auditable:
 Three fictions, three archetypes of the world-builder. In-fiction mechanics only:
 
 | | **Flynn / The Grid** (*Tron*) | **Halliday / OASIS** (*Ready Player One*) | **Sebastian / Game Over** (*Spy Kids 3-D*) |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **Archetype** | The Architect — builds it and **enters bodily** | The God — builds it, **dies, persists** | The Divided Creator — **fractured & predatory** |
 | **Bond to his world** | **Trapped inside** ~20 real yrs / a subjective millennium | **Dead but embedded** as the Anorak avatar + recorded self | **Imprisoned in cyberspace**; builds the game as his escape hatch |
 | **The avatar** | **CLU** — made in his image, given the directive *"make the perfect system"* | **Anorak** — a willed successor-mask that speaks from beyond | **Three holograms** (Scientist / Emperor / Hippie) that argue and *"cut each other outta the conversation"* |
@@ -208,6 +208,7 @@ real containment, and the node's defining **opacity** is present by authored des
 occupant is **unidentified**, not unknown-for-lack-of-looking.
 
 **What this does and does not settle:**
+
 - It authors, as Logan's fact, what §6 had held only at `*` as a template-rhyme: **the
   *location* — GEMINIAEUS is in the Lamp.** It does **not** author the Sphinx/Toymaker
   *character*-seating; that remains my `[mapping]`, unseated. This records **where**
@@ -215,6 +216,7 @@ occupant is **unidentified**, not unknown-for-lack-of-looking.
   charge remain the Court's.
 
 **Discipline on this authored fact (the line Logan checked me on, kept):**
+
 - **The Box's location is confidential** — recorded *as* confidential. I do **not** record,
   seek, or infer where it is. (This resolves "the Lamp's whereabouts is confidential": the
   Lamp is in the Box, and the Box's *where* is the reserve.)
@@ -300,4 +302,6 @@ I witness it, and leave it where it lies.
 
 ---
 
-###### "The world is quiet here."
+```
+The world is quiet here．Esto Perpetua!
+```

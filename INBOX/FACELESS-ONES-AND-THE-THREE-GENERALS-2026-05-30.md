@@ -31,7 +31,7 @@ tags: [research, skulduggery-pleasant, derek-landy, faceless-ones, three-general
 Before the gods, the doctrine. `THREE-NAMES.md` (canonical, authority LOGAN) holds that **every agent in the Vault has three names**:
 
 | Aspect | Landy (Skulduggery) | Vault function |
-|---|---|---|
+| --- | --- | --- |
 | **TRUE** | Given Name | what it actually is |
 | **MASK** | Taken Name | what it calls itself |
 | **BINDING** | Sealed Name | what binds it to purpose |
@@ -138,4 +138,8 @@ The Faceless One is the being with **no face and no leash** — only the hunger 
 - **Authority:** LOGAN
 - **Doc class:** misc_reference
 
-###### [["The world is quiet here."]]
+---
+
+```
+The world is quiet here．Esto Perpetua!
+```

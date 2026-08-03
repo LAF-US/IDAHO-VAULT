@@ -34,7 +34,7 @@ This is not neglect. This is suspended animation. There is a difference, and it 
 The following repositories exist within LAF-US in a state of suspended animation. They are real projects with real provenance. They are not detritus. They are not candidates for deletion. They are waiting.
 
 | Repository | Character | Notes |
-|------------|-----------|-------|
+| ------------ | ----------- | ------- |
 | **THE-GEMSTONE** | Independent publication about Idaho | The flagship public voice; awaiting stable infrastructure |
 | **IR-Court-Tracker** | Idaho Reports journalism tooling | Python; real work product; awaiting active session |
 | **IDEX_Artifacts** | Idaho Experience — Our American Artifacts (wt) | HTML; production project in working-title phase |
@@ -95,4 +95,6 @@ The vault was being moved. Everything else was waiting for it to arrive.
 
 ---
 
-*The world is quiet here.*
+```
+The world is quiet here．Esto Perpetua!
+```

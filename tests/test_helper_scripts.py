@@ -3,6 +3,7 @@ from __future__ import annotations
 import importlib.util
 import io
 import sys
+import tempfile
 import types
 import unittest
 from contextlib import redirect_stderr, redirect_stdout
@@ -16,6 +17,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 def _load_module(module_name: str, relative_path: str):
     script_path = PROJECT_ROOT / relative_path
     spec = importlib.util.spec_from_file_location(module_name, script_path)
+    assert spec is not None
     module = importlib.util.module_from_spec(spec)
     assert spec.loader is not None
     sys.modules[spec.name] = module
@@ -27,6 +29,9 @@ run_checks = _load_module("run_checks_test_module", "run_checks.py")
 check_syntax = _load_module("check_syntax_test_module", "__check_syntax__.py")
 check_portable_paths = _load_module(
     "check_portable_paths_test_module", ".github/scripts/check_portable_paths.py"
+)
+large_file_watchdog = _load_module(
+    "large_file_watchdog_test_module", ".github/scripts/large_file_watchdog.py"
 )
 jupytext_sync_paired = _load_module(
     "jupytext_sync_paired_test_module", ".github/scripts/jupytext_sync_paired.py"
@@ -48,6 +53,10 @@ class HelperScriptsTest(unittest.TestCase):
             cwd=run_checks.REPO_ROOT,
             capture_output=True,
             text=True,
+            encoding="utf-8",
+            errors="replace",
+            timeout=30,
+            check=False,
         )
 
     def test_check_syntax_compiles_from_repo_root_and_runs_tests_there(self) -> None:
@@ -70,6 +79,8 @@ class HelperScriptsTest(unittest.TestCase):
             cwd=check_syntax.REPO_ROOT,
             capture_output=True,
             text=True,
+            timeout=300,
+            check=False,
         )
 
     def test_portable_paths_detects_case_only_collisions(self) -> None:
@@ -99,6 +110,59 @@ class HelperScriptsTest(unittest.TestCase):
 
     def test_portable_paths_clean_path_has_no_findings(self) -> None:
         self.assertEqual(check_portable_paths.path_violations("notes/clean-name.md"), [])
+
+    def test_portable_paths_git_tracked_files_fails_closed_when_git_missing(self) -> None:
+        with patch.object(
+            check_portable_paths.subprocess,
+            "run",
+            side_effect=FileNotFoundError("git"),
+        ):
+            with self.assertRaises(RuntimeError) as exc:
+                check_portable_paths.git_tracked_files()
+
+        self.assertIn("could not run", str(exc.exception))
+
+    def test_large_file_watchdog_fails_closed_when_git_missing(self) -> None:
+        with (
+            patch.object(
+                large_file_watchdog.subprocess,
+                "run",
+                side_effect=FileNotFoundError("git"),
+            ),
+            patch.object(
+                # Never actually written: git failure returns before the report step.
+                # A non-hardcoded-tmp placeholder avoids tripping Bandit's B108 on a
+                # path this test never opens.
+                sys, "argv", ["large_file_watchdog.py", "--report-path", "report.md"]
+            ),
+            redirect_stdout(io.StringIO()),
+            redirect_stderr(io.StringIO()) as captured_stderr,
+        ):
+            status = large_file_watchdog.main()
+
+        self.assertEqual(status, 1)
+        self.assertIn("could not run", captured_stderr.getvalue())
+
+    def test_large_file_watchdog_tolerates_non_utf8_tracked_filenames(self) -> None:
+        # A lone continuation byte (0x80) is never valid UTF-8 on its own --
+        # git can still track a file whose name isn't valid UTF-8.
+        stdout = b"weird-\x80-name.md\0"
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            report_path = Path(tmp_dir) / "report.md"
+            with (
+                patch.object(
+                    large_file_watchdog.subprocess,
+                    "run",
+                    return_value=types.SimpleNamespace(returncode=0, stdout=stdout, stderr=b""),
+                ),
+                patch.object(
+                    sys, "argv", ["large_file_watchdog.py", "--report-path", str(report_path)]
+                ),
+                redirect_stdout(io.StringIO()),
+            ):
+                status = large_file_watchdog.main()
+
+        self.assertEqual(status, 0)
 
 
 class JupytextSyncPairedTest(unittest.TestCase):

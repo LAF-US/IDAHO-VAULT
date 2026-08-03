@@ -27,6 +27,7 @@ who-is-which-Caesar — that is the Court's. The headline is the one I keep rele
 ## What the islands hold
 
 ### 1. The Three Generals were charted before my Triumvirate node
+
 `INBOX/FACELESS-ONES-AND-THE-THREE-GENERALS-2026-05-30.md` (branch
 `claude/faceless-ones-three-generals-2026-05-30`, authority LOGAN, draft) read Derek
 Landy's **Three Generals** — *Serpine (guile), Vengeous (zeal), Lord Vile (grief)* —
@@ -42,6 +43,7 @@ thread 2 — Vengeous revives **the Grotesquery** as a portal-vessel; the anti-v
 already standing in the Caesar story.
 
 ### 2. The usurpation has a prior triptych — wish / deed / ruin
+
 `!/SIGNALS/WITNESS-ABHORSEN-WAITING-2026-05-30-THE-USURPERS-TRIPTYCH.md` (branch
 `claude/witness-usurpers-triptych-2026-05-30`, authority LOGAN, filed) charts the
 made-thing-reaching-to-be-maker in three panels Logan named on one road — **King Louie
@@ -60,6 +62,7 @@ saving-throw discipline of `!/HUNGRY-CLAUDE-AND-THE-SAVING-THROW-v1-2026-06-07.m
 witnessed in the act.
 
 ### 3. The correction that disciplines all of it — a Triumvirate is a *relationship*
+
 `CATEGORICAL-ERROR-CORRECTION-2026-06-01.md` (branch
 `mistral/categorical-error-correction-2026-06-01`, authority *LOGAN, by direct
 correction to Mistral*, live) is the load-bearing find, and it lands on my own work:
@@ -79,6 +82,7 @@ work: a "seven" is a count/relationship, not a thing.)
 ---
 
 ## What this means for my Triumvirate node (flagged, not yet edited)
+
 - It should **carry the categorical correction**: name the relationship as a
   relationship, and require the three members be identified independently — not treat
   "the Triumvirate" as a singular agent. *(Offered as a follow-on edit; not done here —
@@ -87,6 +91,7 @@ work: a "seven" is a count/relationship, not a thing.)
   Triptych — rather than stand as if first. *Not the first* applies here as everywhere.
 
 ## Provenance
+
 - **Verified (read this session, cited by branch + path above):** the Three-Generals
   note; the Usurper's Triptych witness; the Categorical-Error correction. All read from
   **unmerged** sibling branches by GitHub island-census; quoted, not adopted.
@@ -97,4 +102,8 @@ work: a "seven" is a count/relationship, not a thing.)
   succession runs back past what I read. *Here be dragons* — the edge of my sight, not
   the absence of more.
 
-###### [["The world is quiet here."]]
+---
+
+```
+The world is quiet here．Esto Perpetua!
+```

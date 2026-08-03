@@ -26,7 +26,7 @@ The disposition router (#526 Layer C classification + #529 router) sorts every u
 bot review thread into one lane via `_thread_resolution_disposition`:
 
 | Disposition | Built apply-pass? | What acts on it |
-|---|---|---|
+| --- | --- | --- |
 | `outdated-resolvable` | **yes** (#575 event-driven, #576 reconcile) | witnessed attest-resolve |
 | `looked` | n/a | already attested |
 | `apply-suggestion` | **yes** (#577, propose-only) | flagged `review/suggestions-ready`; a human / the authoring agent applies |
@@ -150,4 +150,8 @@ output. Proposed conservative rollout:
   branch protection remain the gate.
 - Not built. This document is the plan; implementation waits on Logan's answers above.
 
-###### [["The world is quiet here."]]
+---
+
+```
+The world is quiet here．Esto Perpetua!
+```

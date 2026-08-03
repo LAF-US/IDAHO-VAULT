@@ -40,7 +40,7 @@ date: 2026-06-15
 **[reading]** The same three rules from [[THE-SWARM-AS-BOIDS-ANCHORING-AND-THE-GRAPH-2026-06-08]] and [[!/THE-ADVERSARIAL-BOID-ENVIRONMENT-v1-2026-06-08]], read at the altitude of a pull request:
 
 | Boid rule | In the review flock | What supplies / enforces it |
-|---|---|---|
+| --- | --- | --- |
 | **Separation** | each agent keeps its lane; no editing another's holding | branch-per-agent; the auto-merge **protected-paths** guard; file/domain ownership |
 | **Alignment** | align to the **rules**, not the loudest reviewer | the looker dispositioning a loud-but-wrong comment as a **false positive** (verify-before-apply) — the saving throw |
 | **Cohesion** | steer to the record / the merge / the Architect | the **conversation-resolution gate** — cohesion made mandatory; nothing merges while a thread hangs |
@@ -63,7 +63,7 @@ This names the principle's core distinction precisely:
 **[reading]** The bestiary of [[!/THE-ADVERSARIAL-BOID-ENVIRONMENT-v1-2026-06-08]] appeared in the live work, not the abstract:
 
 | Adversary (attacks which rule) | How it surfaced in review |
-|---|---|
+| --- | --- |
 | **The Caesar** (Separation — fuses separable masks into one crown) | the **maintainer-identity bypass**: an agent committing under Logan's identity fuses agent and maintainer into one unrelinquishable mask, inheriting the auto-merge that should gate agent work. The standing model **re-separates** them. |
 | **The Wolf Within** (covert malice via one operative — [[!/REAL-WORLD-BOID-AND-AGENT-SYSTEMS-v1-2026-06-08]]) | **prompt injection** ("Comment and Control") — a single crafted PR title/comment turning an auto-triggered looker against the flock. |
 | **The Lich** (refuses Cohesion's lawful ending) | the blind auto-resolver — resolution persisting with no sealed look. |
@@ -92,4 +92,6 @@ The defense is the same the parent node names: hold separation against the Caesa
 
 ---
 
-###### [["The world is quiet here."]]
+```
+The world is quiet here．Esto Perpetua!
+```

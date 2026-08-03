@@ -47,11 +47,13 @@ There are 14 open PRs, a dirty worktree, untracked infrastructure files, and sev
 ## Step 1 — Assess the Branch Diff
 
 Run `git diff main...HEAD` and `git status` to get a precise inventory of:
+
 - What Gemini staged/unstaged on this branch
 - Whether `swarm/` deletions are intentional or accidents
 - Whether `!/!README.md` deletion + `!/! README.md` untracked = intentional rename
 
 **Files to confirm:**
+
 - `D swarm/README.md`, `swarm/__init__.py`, `swarm/app.py`, `swarm/tests/test_app.py` — confirm deletion intent (swarm/ is in flux per LEVELSET)
 - `D !/!README.md` + `?? !/! README.md` — likely a rename (space added to filename)
 - `M .gemini/settings.json` — Gemini added remote MCP servers; evaluate and keep/trim
@@ -63,7 +65,7 @@ Run `git diff main...HEAD` and `git status` to get a precise inventory of:
 Commit the following untracked vault infrastructure files that clearly belong:
 
 | File | Purpose |
-|---|---|
+| --- | --- |
 | `!/PLUGIN-AUTH-INVENTORY-2026-03-28.md` | Plugin auth probe results — Phase 1 clearance |
 | `!/LEVELSET-CODEX-ARCHIVAL-2026-03-28.md` | Codex session archival handoff |
 | `!/sort-audit-2026-03-29.md` | GitHub Actions sort audit output |
@@ -82,6 +84,7 @@ AGENTS.md has Gemini in the "Pending Definitions" section with no defined tier. 
 **Decision: Gemini = Direct Write (support) in Operational zone**
 
 Update `!/AGENTS.md`:
+
 - Move Gemini from "Pending Definitions" to the agent registry table
 - Set capability tier: Direct Write (support) — Operational zone only
 - Scope: Linear SWARM label issues + comments + status updates; vault `.md` edits via PR; no `!/` (Constitutional zone) writes
@@ -94,6 +97,7 @@ Update `!/AGENTS.md`:
 The plugin inventory recommends Linear Phase 1 (no GitHub Issue exists yet per LEVELSET). Add a standing direction entry to DOCKET:
 
 **Linear Phase 1 Pilot Scope:**
+
 - Target: Linear `SWARM` label, Logan's team workspace
 - Operations: issue creation, comments, status updates
 - Agents participating: Claude Code (Abhorsen), Gemini
@@ -105,6 +109,7 @@ The plugin inventory recommends Linear Phase 1 (no GitHub Issue exists yet per L
 ## Step 5 — Update LEVELSET-CURRENT.md
 
 The LEVELSET shows `Active branch: claude/update-habit-tracker-todo-p18EW` — that's stale. Update:
+
 - Active branch → `gemini/activate-linear-pilot`
 - Activity since last update: Gemini MCP server configuration, Linear pilot scoped, Gemini tier defined
 - Move "Linear-first write pilot scoping" from Pending → In Progress
@@ -115,6 +120,7 @@ The LEVELSET shows `Active branch: claude/update-habit-tracker-todo-p18EW` — t
 ## Step 6 — Update DOCKET
 
 Mark in DOCKET:
+
 - "Gemini tier decision" → resolved (Direct Write support, Operational zone)
 - "Linear workspace setup" → unblocked / in progress
 - Add: "Claude Code conducting vault operations per Logan delegation (2026-03-28)"
@@ -124,6 +130,7 @@ Mark in DOCKET:
 ## Step 7 — Create PR
 
 Push `gemini/activate-linear-pilot` to remote and open PR targeting `main` with:
+
 - Title: `Activate Linear pilot: Gemini tier defined, plugin inventory committed, DOCKET updated`
 - Summary covering: infrastructure files committed, Gemini tier resolved, Linear Phase 1 scoped
 
@@ -134,7 +141,7 @@ Push `gemini/activate-linear-pilot` to remote and open PR targeting `main` with:
 Produce a written triage of all 14 open PRs in priority order so Logan can make merge/close decisions efficiently:
 
 | # | PR | Recommendation |
-|---|---|---|
+| --- | --- | --- |
 | 83 | habit tracker todo (Claude) | Merge — clean, ready |
 | 84 | Revise Gemini persona (Codex) | Review — may conflict with Gemini tier decision above |
 | 86-93 | LAF-7 through LAF-15 (Codex) | Review batch — define merge order, likely squash |

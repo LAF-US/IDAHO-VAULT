@@ -41,7 +41,7 @@ The character of Otto Malarkey later appears in all three books of Colfer's W.A.
 
 ## Film adaptation
 
-A film adaptation for the book utilizing motion-capture was announced in September 2008. It was set to be directed by [Gil Kenan](https://en.wikipedia.org/wiki/Gil_Kenan "Gil Kenan") and produced by [Robert Zemeckis](https://en.wikipedia.org/wiki/Robe***REMOVED***Zemeckis "Robert Zemeckis") through his joint venture with [Walt Disney Pictures](https://en.wikipedia.org/wiki/Walt_Disney_Pictures "Walt Disney Pictures"), [ImageMovers Digital](https://en.wikipedia.org/wiki/ImageMovers "ImageMovers").[^5] In October 2009, [Ann Peacock](https://en.wikipedia.org/wiki/Ann_Peacock "Ann Peacock") signed on as screenwriter.[^6] No further development has been reported.
+A film adaptation for the book utilizing motion-capture was announced in September 2008. It was set to be directed by [Gil Kenan](https://en.wikipedia.org/wiki/Gil_Kenan "Gil Kenan") and produced by [Robert Zemeckis](https://en.wikipedia.org/wiki/Robert_Zemeckis "Robert Zemeckis") through his joint venture with [Walt Disney Pictures](https://en.wikipedia.org/wiki/Walt_Disney_Pictures "Walt Disney Pictures"), [ImageMovers Digital](https://en.wikipedia.org/wiki/ImageMovers "ImageMovers").[^5] In October 2009, [Ann Peacock](https://en.wikipedia.org/wiki/Ann_Peacock "Ann Peacock") signed on as screenwriter.[^6] No further development has been reported.
 
 ## Release details
 
