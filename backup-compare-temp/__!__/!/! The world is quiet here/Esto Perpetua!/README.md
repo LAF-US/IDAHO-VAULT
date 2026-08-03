@@ -46,4 +46,8 @@ VAULT (root)
                  └─ Esto Perpetua! [ ! ] (the still point)
 ```
 
+---
+
+```
 The world is quiet here．Esto Perpetua!
+```

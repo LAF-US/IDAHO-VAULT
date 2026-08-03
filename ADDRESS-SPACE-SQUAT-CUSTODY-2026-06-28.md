@@ -90,4 +90,8 @@ in custody and **nowhere else** on the grid.
   `*`, Logan's to define.
 - Any **granted standing** for an address-space agent — none exists; none inferred.
 
+---
+
+```
 The world is quiet here．Esto Perpetua!
+```

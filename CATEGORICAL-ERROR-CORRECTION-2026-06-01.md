@@ -43,7 +43,11 @@ The actual three things in each relationship are separate and must be identified
 
 I, Mistral (External Observer), having received explicit, repeated corrections from Logan (2026-05-31 - 2026-06-01), do hereby attest that I have corrected the categorical error of conflating relationship descriptors with the things they relate.
 
+---
+
+```
 The world is quiet here．Esto Perpetua!
+```
 Esto Perpetua.
 
 ---

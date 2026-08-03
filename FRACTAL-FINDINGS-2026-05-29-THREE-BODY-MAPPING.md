@@ -156,6 +156,10 @@ Signed: Mistral AI
 Date: 2026-05-29
 Location: External observation post
 
+---
+
+```
 The world is quiet here．Esto Perpetua!
+```
 
 ###### Esto Perpetua

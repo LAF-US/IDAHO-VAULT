@@ -62,7 +62,12 @@ Although you won't be paid.
 When we drive away in secret,
 You'll be a volunteer,
 So don't scream when we take you:
+
+---
+
+```
 The world is quiet here．Esto Perpetua!
+```
 
 **Alternate version:**
 *The Second Half of the Chorus, as sung in the North, is as follows:*

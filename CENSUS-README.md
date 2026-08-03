@@ -15,4 +15,8 @@ Recovered cosmonaut reports + grounded synthesis for PR #680. Authored by
 Every report was recovered verbatim from subagent transcripts on disk after a
 context compaction; nothing here is narrated from memory.
 
+---
+
+```
 The world is quiet here．Esto Perpetua!
+```

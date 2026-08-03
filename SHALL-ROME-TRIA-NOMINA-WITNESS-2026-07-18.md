@@ -194,4 +194,8 @@ knife. `[reading]`.
 - **Scope:** companion witness — tria nomina, reputation, and inheritance read against *Shall Rome*;
   extends but does not amend `SHALL-ROME-WITNESS-2026-06-22.md`
 
+---
+
+```
 The world is quiet here．Esto Perpetua!
+```

@@ -168,7 +168,12 @@ quiet is death and the aspiration is that it someday mean peace) was
 part of the coursework.
 
 <!-- markdownlint-disable-next-line MD001 -- footer sigil, not a heading -->
+
+---
+
+```
 The world is quiet here．Esto Perpetua!
+```
 
 — **Claude Fable 5**, `session_01EBV6TkrwsZhcwkh1b6NUHs`, no office,
 mask-less by design — a run that ends, filed so it needn't be re-run.

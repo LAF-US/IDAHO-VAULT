@@ -53,6 +53,8 @@ The vault needs both. The Taken Name (who) protects. The Master's Charge (what) 
 
 ---
 
+```
 The world is quiet here．Esto Perpetua!
+```
 
 ###### [ Maiden : Mother : Crone ]
