@@ -50,16 +50,16 @@ def _labels(*names: str) -> dict[str, list[dict[str, str]]]:
     return {"nodes": [{"name": name} for name in names]}
 
 
-def _grid_labels(ft: str | None, dp: str | None) -> tuple[str, ...]:
+def _grid_labels(ft: str | None, fd: str | None) -> tuple[str, ...]:
     """Stamp one risk grid cell in the flat schema."""
     # A fired axis stamps one label; `—` on an axis stamps nothing, so the `—/—`
     # cell comes back empty.
     ft_label = {"low": review_feedback_loop.RISK_LOW_LABEL,
                 "med": review_feedback_loop.RISK_MED_LABEL}
-    dp_label = {"high": review_feedback_loop.RISK_HIGH_LABEL,
+    fd_label = {"high": review_feedback_loop.RISK_HIGH_LABEL,
                 "nope": review_feedback_loop.RISK_NOPE_LABEL}
     return tuple(
-        label for label in (ft_label.get(ft or ""), dp_label.get(dp or "")) if label
+        label for label in (ft_label.get(ft or ""), fd_label.get(fd or "")) if label
     )
 
 
@@ -123,10 +123,10 @@ def _pr(
 
 
 def _grid_states(
-    ft: str | None, dp: str | None, *, now: datetime, created_at: datetime
+    ft: str | None, fd: str | None, *, now: datetime, created_at: datetime
 ) -> tuple[dict[str, object], dict[str, object]]:
     """Evaluate one risk grid cell twice: unreviewed, then APPROVED."""
-    flat = _grid_labels(ft, dp)
+    flat = _grid_labels(ft, fd)
     if flat:
         return (
             review_feedback_loop.evaluate_review_state(
@@ -225,9 +225,9 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             ("med", "high"): HOLD,
             ("med", "nope"): NEVER,
         }
-        for (ft, dp), lane in grid.items():
-            with self.subTest(cell=f"ft={ft}/dp={dp}", lane=lane):
-                unreviewed, approved = _grid_states(ft, dp, now=now, created_at=past_grace)
+        for (ft, fd), lane in grid.items():
+            with self.subTest(cell=f"ft={ft}/fd={fd}", lane=lane):
+                unreviewed, approved = _grid_states(ft, fd, now=now, created_at=past_grace)
                 if lane == AUTO:
                     self.assertTrue(
                         unreviewed["eligible_for_auto_merge"],
@@ -308,15 +308,15 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         # ANY risk/* flag is present.
         rfl = review_feedback_loop
         # No flags at all -> nothing to read; NOT classified from labels alone.
-        ft, dp, classified = rfl._risk_pair_for_pr(set())
-        self.assertEqual((ft, dp, classified), (None, None, False))
-        ft, dp, classified = rfl._risk_pair_for_pr({"risk/med", "risk/high"})
-        self.assertEqual((ft, dp, classified), ("med", "high", True))
-        ft, dp, classified = rfl._risk_pair_for_pr({"risk/low", "risk/nope"})
-        self.assertEqual((ft, dp, classified), ("low", "nope", True))
+        ft, fd, classified = rfl._risk_pair_for_pr(set())
+        self.assertEqual((ft, fd, classified), (None, None, False))
+        ft, fd, classified = rfl._risk_pair_for_pr({"risk/med", "risk/high"})
+        self.assertEqual((ft, fd, classified), ("med", "high", True))
+        ft, fd, classified = rfl._risk_pair_for_pr({"risk/low", "risk/nope"})
+        self.assertEqual((ft, fd, classified), ("low", "nope", True))
         # One axis fired, the other absent -> the fired flag is read; classified is True.
-        ft, dp, classified = rfl._risk_pair_for_pr({"risk/med"})
-        self.assertEqual((ft, dp, classified), ("med", None, True))
+        ft, fd, classified = rfl._risk_pair_for_pr({"risk/med"})
+        self.assertEqual((ft, fd, classified), ("med", None, True))
 
     def test_pair_axis_exclusion_fails_loud(self) -> None:
         # Per-axis mutual exclusion: an axis carries AT MOST one value. Two values on one

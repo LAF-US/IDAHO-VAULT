@@ -111,7 +111,7 @@ jobs:
 
           RESULT=$(echo "$CHANGED" | python3 trusted-main/.github/scripts/classify_paths.py)
           TIER=$(echo "$RESULT" | python3 -c "import sys,json; print(json.load(sys.stdin)['tier'])")
-          # tier4 is the 4-state read (clear|low|med|high) off the 3x3 matrix of label
+          # tier4 is the 5-state read (clear|low|med|high|nope) off the 3x3 matrix of label
           # pairs. The binary `tier` collapses the `—/—` pair down to `low`, so it is only
           # visible on tier4 — the producer needs it for the legacy sparse marker.
           TIER4=$(echo "$RESULT" | python3 -c "import sys,json; print(json.load(sys.stdin)['tier4'])")

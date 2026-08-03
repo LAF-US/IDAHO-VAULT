@@ -20,7 +20,7 @@
 #     "tier":  "low"|"high",                       # binary: SAFE_TIERS -> low, everything riskier -> high
 #     "tier4": "clear"|"low"|"med"|"high"|"nope",  # composed read (nope>high>med>low>clear)
 #     "filetype": None|"low"|"med",                # riskiest filetype across the changeset
-#     "filedepth": None|"high"|"nope",             # riskiest placement across the changeset
+#     "filedepth": None|"high"|"nope",             # riskiest filedepth across the changeset
 #     "subtier":  None,                            # not implemented
 #     "by_file":  [{"path","filetype","filedepth"}, ...],
 #     "high_risk_files": [...], "low_risk_files": [...],
@@ -80,7 +80,7 @@ def filedepth_flag(path: str) -> str | None:
 
 def classify_file(path: str) -> tuple:
     """Return (filetype_flag, filedepth_flag) for one path — two independent scores."""
-    # Windows-style separators are normalized to '/' first so the placement prefixes match
+    # Windows-style separators are normalized to '/' first so the filedepth prefixes match
     # regardless of input source (git/gh emit '/', but local/tooling input may use '\\').
     path = path.replace("\\", "/")
     return (filetype_flag(path), filedepth_flag(path))

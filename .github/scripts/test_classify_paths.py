@@ -31,7 +31,7 @@ class FiletypeTest(unittest.TestCase):
         self.assertEqual(cp.classify_file("mystery.q3z"), ("med", None))
 
 
-class PlacementTest(unittest.TestCase):
+class FiledepthTest(unittest.TestCase):
     def test_root_is_none(self):
         # A path under neither prefix scores None -- including flattened "!-…" root files,
         # which physically sit at repo root (their "-"-encoded name is not a directory path).
@@ -69,7 +69,7 @@ class PlacementTest(unittest.TestCase):
         self.assertEqual(cp.filedepth_flag("!/!/__!__/!README.md"), "high")
 
     def test_dotfolders_and_governance_score_none(self):
-        # No file or folder is special-cased on placement. Dotfolders (".github" is a
+        # No file or folder is special-cased on filedepth. Dotfolders (".github" is a
         # dotfolder like the rest) and root governance files are not under "!/" -> None.
         self.assertIsNone(cp.filedepth_flag(".github/workflows/deploy.yml"))
         self.assertIsNone(cp.filedepth_flag(".github/scripts/tool.py"))
@@ -79,19 +79,19 @@ class PlacementTest(unittest.TestCase):
         self.assertIsNone(cp.filedepth_flag("swarm.json"))
 
     def test_axes_are_independent(self):
-        # filetype and placement score separately; a code file in the nest carries both.
+        # filetype and filedepth score separately; a code file in the nest carries both.
         self.assertEqual(cp.classify_file("!/swarm/run.sh"), ("med", "high"))
         self.assertEqual(cp.classify_file("!/essay.md"), (None, "high"))
         self.assertEqual(cp.classify_file(".github/workflows/deploy.yml"), ("low", None))
         self.assertEqual(cp.classify_file(".github/scripts/tool.py"), ("med", None))
 
-    def test_lockfiles_are_placement_clear(self):
+    def test_lockfiles_are_filedepth_clear(self):
         for path in ("requirements.txt", "uv.lock"):
             with self.subTest(path=path):
                 self.assertIsNone(cp.filedepth_flag(path))
 
     def test_windows_separators_are_normalized(self):
-        # classify_file normalizes '\\' to '/' so placement prefixes match regardless of
+        # classify_file normalizes '\\' to '/' so filedepth prefixes match regardless of
         # separator style (git/gh emit '/', but local/tooling input may use '\\').
         self.assertEqual(cp.classify_file("!\\AGENTS.md"), (None, "high"))
         self.assertEqual(cp.classify_file("!\\!\\__!__\\!\\x.md"), (None, "nope"))
