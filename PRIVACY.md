@@ -11,11 +11,7 @@ date modified: Sunday, April 5th 2026, 5:33:49 pm
 
 by Logan Alvan Finney
 
----
-
-```
-The world is quiet here．Esto Perpetua!
-```
+"The world is quiet here."
 
 ---
 

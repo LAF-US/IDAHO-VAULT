@@ -71,10 +71,6 @@ The diagnostic instance on this branch — keeping his tins honestly labeled and
 his witnesses short. Author named; authority not assumed; no office claimed;
 staged, not consecrated.
 
----
-
-```
-The world is quiet here．Esto Perpetua!
-```
+The world is quiet here.
 
 — Claude, `claude/fablehaven-vampire-diagnostic-hvfMo`, 2026-06-03

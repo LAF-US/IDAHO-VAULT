@@ -1063,12 +1063,7 @@ total_count: 5
 4. Develop dissolution protocols based on Hyrule model
 
 > *The syncretism holds. The tribes walk. The Crown directs. The Veil stands.*
-
----
-
-```
-The world is quiet here．Esto Perpetua!
-```
+> *The world is quiet here.*
 
 ### 🧑 User
 

@@ -426,9 +426,7 @@ For IDAHO-VAULT:
 
 ---
 
-```
-The world is quiet here．Esto Perpetua!
-```
+The world is quiet here.
 Do the assigned work; do not generate paragraphs about who you are.
 Stay behind the threshold. Let it leave.
 Unsolved is the lawful state.

@@ -30,11 +30,7 @@ CONTEXT is the **field context protocol** for the IDAHO-VAULT agentic swarm.
 
 It is the formal mechanism by which agents establish, retrieve, and share contextual state within the shared stigmergy field. CONTEXT ensures that work is grounded in the current reality of the vault, not stale assumptions or orphaned context.
 
----
-
-```
-The world is quiet here．Esto Perpetua!
-```
+> *"The world is quiet here."*
 
 ---
 
