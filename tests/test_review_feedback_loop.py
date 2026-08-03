@@ -437,9 +437,20 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertEqual(labels, {"risk/low", "risk/high"})
 
     def test_restamp_retires_a_superseded_vocabulary_in_passing(self) -> None:
-        # The engine owns the whole risk namespace, not just the four labels it stamps, so a
-        # PR still wearing #854's retired nine-string scheme converges on its next classify
-        # instead of needing a migration run by hand. Non-risk labels stay untouched.
+        # READ THIS BEFORE CHANGING THE ENGINE TO SATISFY IT.
+        #
+        # The set below is seven CONCRETE EXAMPLES — #854's retired scheme, kept because
+        # they are the strings that actually went out into the wild. They are NOT the
+        # contract, and this test cannot enforce the contract on its own: a seven-case
+        # lookup table in `restamp_risk_pair` passes every assertion here.
+        #
+        # The contract is that the engine owns the risk NAMESPACE, whatever vocabulary
+        # happens to live in it. `test_restamp_sweeps_a_vocabulary_the_code_has_never_seen`
+        # is the test that states it, and it fails against a lookup table. If you are about
+        # to make this test pass by enumerating labels in the engine, that one will stop
+        # you — which is the point. Do not enumerate there to satisfy the enumeration here.
+        #
+        # Non-risk labels stay untouched throughout.
         retired = {
             "filetype:risk/low", "filetype:risk/med", "filetype:risk/—",
             "depth:risk/high", "depth:risk/nope", "depth:risk/—", "risk/—",
