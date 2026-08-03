@@ -64,9 +64,8 @@ class SlackWebhookSchemeTest(unittest.TestCase):
     def test_missing_scheme_is_refused(self) -> None:
         # urlparse gives these an empty scheme, which is not https.
         for value in ("hooks.slack.com/services/x", "//hooks.slack.com/services/x"):
-            with self.subTest(value=value):
-                with self.assertRaises(ValueError):
-                    janitor_sweep.SlackReporter(value)
+            with self.subTest(value=value), self.assertRaises(ValueError):
+                janitor_sweep.SlackReporter(value)
 
     def test_error_message_does_not_echo_the_webhook(self) -> None:
         # The webhook URL is the credential -- anyone holding it can post to the
