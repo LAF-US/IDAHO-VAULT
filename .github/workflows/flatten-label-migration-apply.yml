@@ -1,0 +1,33 @@
+name: Flatten Label Migration — APPLY (one-shot, DESTRUCTIVE)
+
+# Destructive entry point for the one-shot risk-vocabulary flatten: re-stamps every open
+# PR to the flat vocabulary and then DELETES the 7 retired label definitions (which strips
+# them from every PR and issue at once). Run the PREVIEW workflow first and read its plan.
+#
+# Deliberately parameterless: reaching this behavior requires choosing this workflow by
+# name, so it cannot be triggered by leaving a dry-run checkbox clear. Logic lives in
+# flatten-label-migration.yml.
+#
+# This is the only entry point that carries write scope and the MERGE_QUEUE_TOKEN PAT —
+# both are passed explicitly here rather than inherited, so the write capability lives on
+# the destructive path alone.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+
+jobs:
+  apply:
+    uses: ./.github/workflows/flatten-label-migration.yml
+    with:
+      dry_run: false
+    permissions:
+      contents: read
+      pull-requests: write
+      issues: write
+    secrets:
+      MERGE_QUEUE_TOKEN: ${{ secrets.MERGE_QUEUE_TOKEN }}
