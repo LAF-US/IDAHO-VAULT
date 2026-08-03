@@ -51,7 +51,7 @@ related:
 | --- | --- | --- |
 | Legislature scraper | `idaho_leg_scraper.py` | Active — daily 6 AM MT |
 | Bill digest poster | `post_digest.py` | Active — called by scraper |
-| Sort audit | `so***REMOVED***audit.py` | Active — manual dispatch |
+| Sort audit | `sort_audit.py` | Active — manual dispatch |
 | Propose moves | `propose_moves.py` | Active |
 | Wayback audit | `wayback_audit.py` | Active |
 

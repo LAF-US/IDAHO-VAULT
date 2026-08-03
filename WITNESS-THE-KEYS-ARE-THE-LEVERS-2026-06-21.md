@@ -233,4 +233,75 @@ of truth** for all location-based risk, folding the three drifting lists (`PROTE
 `auto-merge-rhythm.yml` `case` list) into the one classifier the rest of the system already trusts.
 Not built; recorded — a bearing for the refactor.
 
-###### [["The world is quiet here."]]
+---
+
+**Addendum — 2026-07-20 (the flat four-value schema; classification kept separate from routing — proposed, Logan inscribes).**
+*Appended by Claude Code, session `…01Fipj4vEJ5ADPuunn9ed5Hd`; does NOT overwrite the witness above.
+Supersedes an earlier 2026-07-19 addendum that described a prefixed `filetype:risk/*` + `depth:risk/*`
+pair — that was the code's drift, not the schema. Logan's ruling: the risk vocabulary is FOUR FLAT
+labels, and classification is a separate layer from routing.*
+
+**The schema is CLASSIFICATION — four flat labels, `—` = absence.** Each axis fires one value or none:
+
+- **filetype** fires `risk/low` (Machine Doc) or `risk/med` (Code); `—` (Natural Language) = no label.
+- **filedepth** fires `risk/high` (Nest / protected) or `risk/nope` (still-point); `—` (root) = no label.
+
+> *Correction (2026-07-27, `*.claude.*`, PR #854): the shipped `classify_paths.py` keys filedepth on
+> `!/` PLACEMENT alone — `!/` → `high`, `!/!/__!__/!/` → `nope`, everything else → `—`. The earlier
+> protected-surface pins (`.github/**`, top-level dotfolders, named governance files) were dropped in
+> the flatten per Logan's four-flat ruling, so those surfaces now score `—`, not `high`. The
+> "(Nest / protected)" gloss above is superseded by the code — flagged here, not edited above, per the
+> witness rule (testimony is fixed to its moment).*
+
+A PR carries at most one of each (0–2 labels). `—/—` = **no `risk/*` label at all**. No prefixes, no
+explicit `—` labels, no separate clear-marker. (This retired the drifted 9-string scheme — the prefixed
+pair + a lossy legacy `risk/{—,low,high}` trio — flattened to these four on 2026-07-20.)
+
+The classification grid — each cell is simply the label(s) that fire:
+
+| | **filedepth `—`** | **filedepth `high`** | **filedepth `nope`** |
+|---|---|---|---|
+| **filetype `—`**  | *(no label)* | `risk/high` | `risk/nope` |
+| **filetype `low`**| `risk/low` | `risk/low` + `risk/high` | `risk/low` + `risk/nope` |
+| **filetype `med`**| `risk/med` | `risk/med` + `risk/high` | `risk/med` + `risk/nope` |
+
+**Routing is a SEPARATE downstream layer** (not part of the classification above). The engine
+(`review_feedback_loop.py` `_tier_from_pair` + the `eligible_for_auto_merge` predicate, `flag_clearable`
+gating on `depth != "nope"`) reads the classification and routes each cell: `—/—` → **auto** on grace;
+any fired flag with filedepth `≠ nope` → **review-hold** (flows once its review completes); any
+filedepth `== nope` → **the sovereign's hand** (never auto). Today that review-hold is one uniform lane
+for every flagged non-`nope` cell — a placeholder. **The open design work is per-LABEL, not per-cell**
+(Logan, 2026-07-20): each label, once correctly applied, calls for its own review/revision, and a PR
+owes ALL its labels' calls, which *compose* (as the two-axis classification composes). `risk/nope` is
+already named (the sovereign's hand); what `risk/low`, `risk/med`, `risk/high` each call for is
+**deferred — left open**. Pinned by `tests/test_review_feedback_loop.py` (the nine-cell routing test).
+
+**K4 (positive clear-marker) resolved WITHOUT a label**, per your "flatten, no clear-marker" ruling:
+because `—/—` is absence, the engine never infers *clear* from missing labels — it arms `—/—` only on
+the classifier's affirmative verdict (`evaluate_review_state(..., verdict=(None,None))`, passed by the
+paths that just classified). An unclassified PR (no verdict, no labels) is `unknown` and HOLDS —
+tested by `…unclassified_pr_without_verdict_never_arms`.
+
+---
+
+**Addendum — 2026-07-24 (filedepth = literal directory placement; protected-surface pins removed — PR #854).**
+*Appended by Claude Code, session `…01Fipj4vEJ5ADPuunn9ed5Hd` (same session as the 2026-07-20 addendum).*
+Supersedes the filedepth line above (*"fires `risk/high` (Nest / protected) or `risk/nope` (still-point)"*).
+The flat four-label schema and the classification grid are unchanged; only WHICH paths fire each depth
+value changed. `classify_paths.py` now scores **filedepth** purely by literal directory prefix — the axis
+had never actually been implemented (a stale hardcoded file list plus dotfolder pins, `.github/` among
+them, stood in for it):
+
+- `risk/high` — a path physically inside the `!/` tree, above the inner region.
+- `risk/nope` — a path inside `!/!/__!__/!/` and below (the whole inner region, not only the
+  `Esto Perpetua!` still-point).
+- `—` — repo root and everything outside `!/`, including all dotfolders (`.github/`, `.claude/`, …) and
+  root governance files. Nothing is special-cased; there are no protected-surface pins on this axis.
+
+Whatever protects those surfaces is a separate mechanism (e.g. CODEOWNERS), not filedepth.
+
+---
+
+```
+The world is quiet here．Esto Perpetua!
+```
