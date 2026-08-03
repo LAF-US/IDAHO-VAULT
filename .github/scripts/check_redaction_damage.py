@@ -35,7 +35,7 @@ import argparse
 import os
 import re
 import shutil
-import subprocess
+import subprocess  # nosec B404 -- see [tool.bandit] note in pyproject.toml
 import sys
 from dataclasses import dataclass
 from pathlib import Path
@@ -103,6 +103,7 @@ def run_git(repo_root: Path, args: list[str]) -> subprocess.CompletedProcess[str
         errors="replace",
         capture_output=True,
         check=False,
+        timeout=30,
     )
 
 

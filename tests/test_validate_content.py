@@ -1,14 +1,17 @@
 from __future__ import annotations
 
 import importlib.util
+import io
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 
 def _load_validate_content_module():
     project_root = Path(__file__).resolve().parents[1]
     script_path = project_root / ".github" / "scripts" / "validate_content.py"
     spec = importlib.util.spec_from_file_location("validate_content_test_module", script_path)
+    assert spec is not None
     module = importlib.util.module_from_spec(spec)
     assert spec.loader is not None
     spec.loader.exec_module(module)
@@ -107,6 +110,72 @@ class SponsorNameTest(unittest.TestCase):
         content = "sponsor:\n  - Rep. Smith\n  - Rep. 0wned\n"
         errors = validate_content.validate_sponsor_names(target, content)
         self.assertEqual(errors, [f"{target}: Suspicious sponsor name: 'Rep. 0wned'"])
+
+    def test_run_git_fails_closed_when_git_missing(self) -> None:
+        with patch.object(
+            validate_content.subprocess, "run", side_effect=FileNotFoundError("git")
+        ):
+            with self.assertRaises(RuntimeError) as exc:
+                validate_content._run_git(["git", "diff"])
+
+        self.assertIn("could not run", str(exc.exception))
+
+    def test_run_git_error_message_does_not_assume_command_shape(self) -> None:
+        # command[1] isn't always the subcommand (e.g. a leading "-C <dir>" flag) --
+        # the error message must describe the actual command, not a fixed position.
+        # subprocess.run is mocked below, so this path is never actually opened;
+        # a non-tmp placeholder avoids tripping Bandit's B108 on a literal "/tmp".
+        with patch.object(
+            validate_content.subprocess, "run", side_effect=FileNotFoundError("git")
+        ):
+            with self.assertRaises(RuntimeError) as exc:
+                validate_content._run_git(["git", "-C", "some-repo-dir", "status"])
+
+        self.assertIn("git -C some-repo-dir status", str(exc.exception))
+
+    def test_get_changed_files_reads_markdown_paths_from_stdin(self) -> None:
+        stdin_text = "\n".join(
+            [
+                "GOVERNMENTS/IDAHO - LEGISLATIVE/BILLS/example.md",
+                "scripts/openrouter_runtime.py",  # non-markdown must be filtered out
+                "",  # blank line must be ignored
+                "  ",  # whitespace-only line must be ignored
+                "!/wayback-audit-2026-04-22.md ",  # trailing whitespace must be stripped
+            ]
+        )
+        with patch("sys.stdin", io.StringIO(stdin_text)):
+            changed = validate_content.get_changed_files(paths_from_stdin=True)
+
+        self.assertEqual(
+            changed,
+            [
+                Path("GOVERNMENTS/IDAHO - LEGISLATIVE/BILLS/example.md"),
+                Path("!/wayback-audit-2026-04-22.md"),
+            ],
+        )
+
+    def test_empty_paths_from_stdin_message_does_not_say_staged(self) -> None:
+        with (
+            patch("sys.argv", ["validate_content.py", "--paths-from-stdin"]),
+            patch.object(validate_content, "get_changed_files", return_value=[]),
+            patch("sys.stdout", io.StringIO()) as captured_stdout,
+        ):
+            status = validate_content.main()
+
+        self.assertEqual(status, 0)
+        self.assertIn("in the supplied diff", captured_stdout.getvalue())
+        self.assertNotIn("staged", captured_stdout.getvalue())
+
+    def test_empty_staged_message_says_staged(self) -> None:
+        with (
+            patch("sys.argv", ["validate_content.py"]),
+            patch.object(validate_content, "get_changed_files", return_value=[]),
+            patch("sys.stdout", io.StringIO()) as captured_stdout,
+        ):
+            status = validate_content.main()
+
+        self.assertEqual(status, 0)
+        self.assertIn("No markdown files staged", captured_stdout.getvalue())
 
 
 if __name__ == "__main__":
