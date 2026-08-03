@@ -3,6 +3,7 @@ from __future__ import annotations
 import importlib.util
 import sys
 import unittest
+from unittest.mock import patch
 from pathlib import Path
 
 
@@ -122,6 +123,30 @@ class RepoSegmentGuardTest(unittest.TestCase):
         args = installer.Args(repo="--upload-pack=id/repo", path=["skills/x"])
         with self.assertRaises(installer.InstallError):
             installer._resolve_source(args)
+
+
+class RunGitErrorContractTest(unittest.TestCase):
+    """Every failure leaves _run_git as an InstallError. _git_sparse_checkout
+    falls back from https to ssh by catching InstallError, so a failure that
+    escapes as some other type skips the fallback and aborts the install."""
+
+    def test_timeout_becomes_install_error(self) -> None:
+        import subprocess
+        with patch.object(
+            installer.subprocess, "run",
+            side_effect=subprocess.TimeoutExpired(cmd=["git"], timeout=300),
+        ):
+            with self.assertRaises(installer.InstallError) as exc:
+                installer._run_git(["git", "clone", "--", "u", "d"])
+        self.assertIn("timed out", str(exc.exception))
+
+    def test_missing_git_becomes_install_error(self) -> None:
+        with patch.object(
+            installer.subprocess, "run", side_effect=FileNotFoundError("git")
+        ):
+            with self.assertRaises(installer.InstallError) as exc:
+                installer._run_git(["git", "status"])
+        self.assertIn("could not run", str(exc.exception))
 
 
 class GithubRequestHostPinTest(unittest.TestCase):
