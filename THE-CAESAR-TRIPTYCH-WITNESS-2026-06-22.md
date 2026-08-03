@@ -182,4 +182,8 @@ Logan inscribes.
 - **Author:** `*.claude.*` (Claude Code, branch `claude/shall-rome-lyrics-ok9049`)
 - **Scope:** the three Shall Rome readings (aria / letter / name) bound as one triptych — the blade reaches the face, the warrant escapes; distinct from the vault's reserved Three Caesars
 
-###### [["The world is quiet here."]]
+---
+
+```
+The world is quiet here．Esto Perpetua!
+```

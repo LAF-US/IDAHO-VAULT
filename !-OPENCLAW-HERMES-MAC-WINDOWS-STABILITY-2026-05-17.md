@@ -90,4 +90,8 @@ Policy exclusions:
 - Prefer SSH tunnel over LAN exposure for cross-machine work.
 - Record cross-machine handoffs in plain language. [[!-XKCD-MINIMAL-HANDOFF-2026-05-17]] is guidance, not a required protocol.
 
-###### [["The world is quiet here."]]
+---
+
+```
+The world is quiet here．Esto Perpetua!
+```
