@@ -6,9 +6,24 @@ runtime/governance surfaces that have to load identically on any of Logan's
 machines. Distinct from check_portable_paths.py which guards against NETWEB
 (Windows-reserved filename) collisions.
 
+Coverage is a *sweep*, not a list. It used to name six files, which meant the
+checker could only ever find what someone had already thought to enumerate —
+and it was, in fact, missing live violations sitting at the repository root
+(`final_test_runner.py`, `run_all_tests.py` and their duplicates all begin
+`os.chdir(r"C:\\Users\\loganf\\Documents\\IDAHO-VAULT")`). A guard whose
+coverage is a hand-written list finds only what its author already knew.
+
+Two scopes, because they warrant different verdicts:
+
+- GATED: the startup surfaces plus everything under `.github/` — the code
+  that actually has to run on any machine. A finding here fails --strict.
+- SWEPT: every other tracked script and workflow. Reported always, never
+  fatal. Root-level debris is a real problem but not this gate's to enforce,
+  and a gate that cannot pass on the day it ships teaches people to ignore it.
+
 Two modes:
 - report (default): print findings, exit 0 — non-blocking signal
-- --strict: exit 1 on any finding — blocking gate, used by the cross-platform
+- --strict: exit 1 on findings in GATED scope, used by the cross-platform
   smoke workflow on pull_request events
 
 Recovered from #310 (closed 2026-05-22, codex/greet-user-with-a-friendly-message)
@@ -22,6 +37,7 @@ from __future__ import annotations
 from pathlib import Path
 import argparse
 import re
+import subprocess
 
 from startup_surfaces import candidates, resolve_rel
 
@@ -30,17 +46,68 @@ from startup_surfaces import candidates, resolve_rel
 # Moving one is the Architect's prerogative and must not break this check.
 SURFACE_NAMES = ["AGENTS", "WAKEUP", "NEST_README", "SWARM"]
 
-# Fixed-location files that are genuinely tied to their path.
-CHECK_FILES = [
-    ".github/workflows/cross-platform-smoke.yml",
-    ".github/workflows/sync-dependencies.yml",
-]
+SCAN_SUFFIXES = {".py", ".ps1", ".sh", ".bash", ".yml", ".yaml"}
+
+# Vendored, generated, or transient trees. Shell snapshots are point-in-time
+# captures of a developer's environment: they contain home paths by nature and
+# are not a runtime surface.
+EXCLUDED_PREFIXES = (
+    ".obsidian/",
+    "node_modules/",
+    ".venv/",
+    "venv/",
+    "trusted-main/",
+    ".claude/shell-snapshots/",
+    ".claude/plugins/",
+    ".serena/",
+)
+
+# These two *define* the patterns; their own source necessarily contains them.
+SELF_REFERENTIAL = (
+    ".github/scripts/meshnetweb_portability_check.py",
+    ".github/scripts/check_portable_paths.py",
+)
+
+GATED_PREFIXES = (".github/",)
 
 PORTABILITY_PATTERNS = {
-    "hardcoded_windows_user_path": re.compile(r"[A-Za-z]:\\\\Users\\\\", re.IGNORECASE),
-    "hardcoded_macos_user_path": re.compile(r"/Users/[^/]+"),
-    "hardcoded_linux_home_path": re.compile(r"/home/[^/]+"),
+    "hardcoded_windows_user_path": re.compile(r"[A-Za-z]:\\+Users\\+", re.IGNORECASE),
+    "hardcoded_macos_user_path": re.compile(r"/Users/[^/\s\"']+"),
+    "hardcoded_linux_home_path": re.compile(r"/home/[^/\s\"']+"),
 }
+
+
+def tracked_files(repo_root: Path) -> list[str]:
+    """Every file git tracks, as repo-relative POSIX paths."""
+    result = subprocess.run(
+        ["git", "-C", str(repo_root), "ls-files", "-z"],
+        capture_output=True, text=True, check=True,
+    )
+    return [p for p in result.stdout.split("\0") if p]
+
+
+def scan_targets(repo_root: Path) -> list[str]:
+    """Scriptable surfaces worth scanning, excluding vendored/transient trees."""
+    targets = []
+    for rel in tracked_files(repo_root):
+        if rel.startswith(EXCLUDED_PREFIXES) or rel in SELF_REFERENTIAL:
+            continue
+        if Path(rel).suffix.lower() in SCAN_SUFFIXES:
+            targets.append(rel)
+    return sorted(targets)
+
+
+def findings_for(repo_root: Path, rel_path: str) -> list[str]:
+    """Portability labels triggered by one file."""
+    path = repo_root / rel_path
+    try:
+        text = path.read_text(encoding="utf-8", errors="replace")
+    except OSError:
+        return []
+    return [
+        label for label, pattern in PORTABILITY_PATTERNS.items()
+        if pattern.search(text)
+    ]
 
 
 def main() -> int:
@@ -48,47 +115,51 @@ def main() -> int:
     parser.add_argument(
         "--strict",
         action="store_true",
-        help="exit non-zero when issues are found",
+        help="exit non-zero when issues are found in the gated scope",
     )
     args = parser.parse_args()
 
     repo_root = Path(__file__).resolve().parents[2]
-    failures: list[str] = []
+    gated: list[str] = []
+    swept: list[str] = []
 
-    targets: list[str] = []
+    # Startup surfaces, resolved by name, are always gated.
+    surface_paths: list[str] = []
     for name in SURFACE_NAMES:
         rel = resolve_rel(name, repo_root)
         if rel is None:
-            failures.append(
+            gated.append(
                 f"[missing] startup surface {name} not found at any of: "
                 + ", ".join(candidates(name))
             )
         else:
-            targets.append(rel)
-    targets.extend(CHECK_FILES)
+            surface_paths.append(rel)
 
-    for rel_path in targets:
-        file_path = repo_root / rel_path
-        if not file_path.exists():
-            failures.append(f"[missing] required file not found: {rel_path}")
-            continue
+    for rel_path in sorted(set(surface_paths) | set(scan_targets(repo_root))):
+        is_gated = rel_path in surface_paths or rel_path.startswith(GATED_PREFIXES)
+        for label in findings_for(repo_root, rel_path):
+            (gated if is_gated else swept).append(f"[{label}] {rel_path}")
 
-        text = file_path.read_text(encoding="utf-8", errors="replace")
-        for label, pattern in PORTABILITY_PATTERNS.items():
-            if pattern.search(text):
-                failures.append(f"[{label}] {rel_path}")
-
-    if failures:
-        print("MESHNETWEB portability findings:")
-        for item in failures:
+    if gated:
+        print("MESHNETWEB portability findings (gated scope):")
+        for item in gated:
             print(f" - {item}")
-        if args.strict:
-            print("Strict mode enabled: failing check.")
-            return 1
-        print("Non-strict mode: reporting only.")
-        return 0
+    else:
+        print("MESHNETWEB portability check passed (gated scope clean).")
 
-    print("MESHNETWEB portability check passed.")
+    if swept:
+        print(f"\nReport-only findings outside the gated scope ({len(swept)}):")
+        for item in swept:
+            print(f" - {item}")
+        print(
+            "\nThese are not fatal. They are mostly root-level scripts carrying a "
+            "single developer's absolute paths; cleaning them up is a separate "
+            "matter from this gate."
+        )
+
+    if gated and args.strict:
+        print("\nStrict mode enabled: failing check on gated-scope findings.")
+        return 1
     return 0
 
 

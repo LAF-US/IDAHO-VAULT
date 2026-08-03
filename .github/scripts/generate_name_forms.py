@@ -91,7 +91,10 @@ def main() -> None:
         rows.append(forms)
 
     if "--md" in sys.argv:
-        vault = "C:/Users/loganf/Documents/IDAHO-VAULT"
+        # Derived from this script's own location, like every other script
+        # in .github/scripts/. Was hardcoded to one machine's absolute path.
+        vault = os.path.dirname(os.path.dirname(os.path.dirname(
+            os.path.abspath(__file__))))
         out_path = os.path.join(vault, "!", "NAME-FORMS-TABLE-2026-04-17.md")
         frontmatter = (
             "---\n"

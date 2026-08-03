@@ -21,12 +21,17 @@ import argparse
 import hashlib
 import shutil
 import subprocess
+import os
 import sys
 from datetime import datetime
 from pathlib import Path
 
 
-DEFAULT_SOURCE = Path(r"C:\Users\loganf\Downloads\Phone Link")
+# Same location on any machine and any OS, and overridable for machines that
+# put it elsewhere. Was pinned to one user's absolute Windows path.
+DEFAULT_SOURCE = Path(
+    os.environ.get("PHONE_LINK_SOURCE") or (Path.home() / "Downloads" / "Phone Link")
+)
 
 
 def get_vault_root() -> Path:
