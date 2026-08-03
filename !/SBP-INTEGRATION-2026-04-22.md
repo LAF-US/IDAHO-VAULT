@@ -170,6 +170,6 @@ The vault already has the **blackboard concept** — it's the file system + git 
 
 ---
 
-###### [["The world is quiet here."]]
+The world is quiet here．Esto Perpetua!
 
 ###### [ Maiden : Mother : Crone ]

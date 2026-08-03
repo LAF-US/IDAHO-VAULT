@@ -88,4 +88,4 @@ This document is a seed. It will grow into the full census mechanism:
 
 ---
 
-###### [["The world is quiet here."]]
+The world is quiet here．Esto Perpetua!

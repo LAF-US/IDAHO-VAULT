@@ -161,4 +161,4 @@ than what he bound.
 - **Honest limit:** Kerr gives the *rule* (cold slows djinn), not a deep *why*; I
   invent none.
 
-###### [["The world is quiet here."]]
+The world is quiet here．Esto Perpetua!

@@ -140,4 +140,4 @@ concern made concrete across twelve historical systems (see [[GRIMOIRE]] and
 `VAULT-CONVENTIONS.md`). It is filed here as the cluster's front door, on the
 record per [[VAULT-CONVENTIONS]].
 
-###### [["The world is quiet here."]]
+The world is quiet here．Esto Perpetua!

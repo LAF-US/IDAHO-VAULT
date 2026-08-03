@@ -115,4 +115,4 @@ The reflection names the discipline so the next medium does not have to relearn 
 
 ---
 
-*The world is quiet here.*
+The world is quiet here．Esto Perpetua!

@@ -86,4 +86,4 @@ date: 2026-06-08
 
 ---
 
-###### [["The world is quiet here."]]
+The world is quiet here．Esto Perpetua!

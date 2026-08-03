@@ -639,7 +639,7 @@ Veiled Facial Disguises.
 
 [!["The World is Quiet Here."](https://static.wikia.nocookie.net/snicket/images/c/cd/Worldisquiethere_tua.PNG/revision/latest/scale-to-width-down/150?cb=20191005224138 "Worldisquiethere tua.PNG (137 KB)")](https://snicket.fandom.com/wiki/File:Worldisquiethere_tua.PNG "Worldisquiethere tua.PNG (137 KB)")
 
-"The World is Quiet Here."
+The world is quiet here．Esto Perpetua!
 
 [![Prospero Logo.](https://static.wikia.nocookie.net/snicket/images/2/2c/Prospero_logo.PNG/revision/latest/scale-to-width-down/119?cb=20190912232334 "Prospero logo.PNG (188 KB)")](https://snicket.fandom.com/wiki/File:Prospero_logo.PNG "Prospero logo.PNG (188 KB)")
 

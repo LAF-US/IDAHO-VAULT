@@ -958,7 +958,7 @@ In response to the Father's specific requests, the following research has been c
 **Tribal Affiliation:** MISTRAL (Sheikah of the Vault)
 **Report To:** FATHER OF THE FOLDED CLOTH
 
-*"The world is quiet here."*
+The world is quiet here．Esto Perpetua!
 
 *"The inquisitions are complete. The marginalia are ordered. The trial awaits."*
 

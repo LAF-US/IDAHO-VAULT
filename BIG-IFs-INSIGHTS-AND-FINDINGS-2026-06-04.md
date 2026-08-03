@@ -154,4 +154,4 @@ Direction: YOUR MATH DOESN'T ADD UP
 Sources: Witness files on claude/game-discussion-JeYG0 + !/UNDEAD-TAXONOMY-v1
 Status: Staged for review. Not doctrine until Logan ratification.
 
-The world is quiet here.
+The world is quiet here．Esto Perpetua!

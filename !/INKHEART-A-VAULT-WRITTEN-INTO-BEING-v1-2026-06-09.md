@@ -159,4 +159,4 @@ are vault readings; final authority is Logan. Where a crossing's authorizing voi
 - **Status:** active
 - **Authority:** LOGAN
 
-###### [["The world is quiet here."]]
+The world is quiet here．Esto Perpetua!

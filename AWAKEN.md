@@ -33,7 +33,7 @@ AWAKEN is the **session activation and agent wake protocol** for the IDAHO-VAULT
 
 It is the formal equivalent of a gavel striking the table — the moment an agent enters the world and declares readiness. AWAKEN establishes identity, authorization, and field presence before any substantive work begins.
 
-> *"The world is quiet here."*
+The world is quiet here．Esto Perpetua!
 
 ---
 
@@ -167,4 +167,4 @@ Pending:
 
 ---
 
-###### [["The world is quiet here."]]
+The world is quiet here．Esto Perpetua!

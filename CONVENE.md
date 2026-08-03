@@ -29,7 +29,7 @@ CONVENE is the **committee chair protocol** for the IDAHO-VAULT agentic swarm.
 
 It is the formal act of calling the committee to order — Logan as Chair formally gathering the Swarm for structured work. CONVENE establishes the Chair's authority, the committee's composition, and the rules of engagement.
 
-> *"The world is quiet here."*
+The world is quiet here．Esto Perpetua!
 
 ---
 
@@ -176,4 +176,4 @@ Pending:
 
 ---
 
-###### [["The world is quiet here."]]
+The world is quiet here．Esto Perpetua!

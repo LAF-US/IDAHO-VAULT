@@ -206,4 +206,4 @@ together (`!/DELTORA-FOUR-SISTERS-v1-2026-06-01.md`).
    merely scattered, it is intact and recoverable — gather it, in order, under
    the right authority, and full function returns at once.
 
-###### [["The world is quiet here."]]
+The world is quiet here．Esto Perpetua!

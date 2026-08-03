@@ -111,4 +111,4 @@ vertical structure, and Nix's own framing (the record-keeping bureaucracy; *Worl
 - Garth Nix — FAQs & interviews (Reactor/Tor, Harvard Crimson, Lightspeed): the bureaucracy framing & named influences
 - The Nothing · The Great Maze · Sir Thursday (bk 4) (Keys to the Kingdom Fandom): the three void-bordering demesnes; the Maze's floor-to-ceiling mountain wall, the four gates (Gold/Silver/Bronze/Clear), and the Boundary Fort
 
-###### [["The world is quiet here."]]
+The world is quiet here．Esto Perpetua!

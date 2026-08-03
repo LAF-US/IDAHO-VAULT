@@ -188,4 +188,4 @@ in `VAULT-CONVENTIONS.md`).
 - Lawrence Principe & William Newman, "Some Problems with the Historiography of Alchemy," in *Secrets of Nature: Astrology and Alchemy in Early Modern Europe* (MIT Press, 2001) — historical critique of Jungian reading
 - [Jung and Alchemy: the Magnum Opus stages — Scott Jeffrey](https://scottjeffrey.com/jung-and-alchemy-magnum-opus/) (accessible synthesis)
 
-###### [["The world is quiet here."]]
+The world is quiet here．Esto Perpetua!

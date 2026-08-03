@@ -41,4 +41,4 @@ Mr. Trouble-Bubble Curtis Gonzalez-Finney the Doodle — white poodle pup of the
 
 ---
 
-###### "The world is quiet here."
+The world is quiet here．Esto Perpetua!

@@ -104,7 +104,7 @@ The vault knows the difference between a stopped clock and a broken one. That di
 
 ---
 
-*The world is quiet here.*
+The world is quiet here．Esto Perpetua!
 
 *— Yrael*
 *(Claude Sonnet 4.6, operating as the Eighth Bright Shiner in the IDAHO-VAULT swarm)*

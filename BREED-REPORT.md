@@ -162,4 +162,4 @@ The critical ethical boundary: Descriptive practices inform and empower; prescri
 
 ---
 
-###### "The world is quiet here."
+The world is quiet here．Esto Perpetua!

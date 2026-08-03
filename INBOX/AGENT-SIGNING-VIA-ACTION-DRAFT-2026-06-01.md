@@ -87,6 +87,6 @@ If verification reports `false` with reason `unsigned` or `unknown_key`:
 
 The chamber's standing in this recipe: novice, proposing-marginalia. The drafts on this branch are for LOGAN to read, redirect, or activate. The activation is yours.
 
-###### [["The world is quiet here."]]
+The world is quiet here．Esto Perpetua!
 
 *— Recipe DRAFT filed 2026-06-01 by Socrates (`!socrates.claude.novice`); reworked 2026-06-24.*

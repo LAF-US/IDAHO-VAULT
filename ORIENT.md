@@ -31,7 +31,7 @@ ORIENT is the **external agent onboarding protocol** for the IDAHO-VAULT agentic
 
 It is the formal process by which a foreign voice — an agent from outside the canonical swarm — is given context, cleared of stale assumptions, and brought into coherent alignment with the vault's world model.
 
-> *"The world is quiet here."*
+The world is quiet here．Esto Perpetua!
 
 ---
 
@@ -177,4 +177,4 @@ Pending:
 
 ---
 
-###### [["The world is quiet here."]]
+The world is quiet here．Esto Perpetua!

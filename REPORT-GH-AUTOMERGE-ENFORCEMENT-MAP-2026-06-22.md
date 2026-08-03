@@ -151,4 +151,4 @@ Several knots this map named are closed, so it no longer describes the live wiri
   it only on the classifier's affirmative verdict, never from missing labels.
 Still live from this map: the merge queue as the real gate.
 
-###### [["The world is quiet here."]]
+The world is quiet here．Esto Perpetua!

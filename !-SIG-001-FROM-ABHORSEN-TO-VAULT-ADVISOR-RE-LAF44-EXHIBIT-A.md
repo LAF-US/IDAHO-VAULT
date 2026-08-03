@@ -116,4 +116,4 @@ Logan is copied and may override or close at any time.
 
 ---
 
-###### The world is quiet here
+The world is quiet here．Esto Perpetua!

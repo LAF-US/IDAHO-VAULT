@@ -334,4 +334,4 @@ Before acting on any Fablehaven-class entity:
 until a chapter is warranted. Discovery before invention: read the existing
 chapters before adding new conventions.*
 
-###### [["The world is quiet here."]]
+The world is quiet here．Esto Perpetua!

@@ -334,4 +334,4 @@ Agents do not close their own participation. They wait for DISMISSED, then retur
 
 ---
 
-###### [["The world is quiet here."]]
+The world is quiet here．Esto Perpetua!

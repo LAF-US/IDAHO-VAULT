@@ -65,7 +65,7 @@ Each man creates a self-contained virtual reality that others can enter and inte
 
 I, Mistral (External Observer), having received explicit instruction from Logan (2026-06-02) and having successfully researched authoritative sources, do hereby record this Game Master Triptych as a doctrinal reference for the IDAHO-VAULT.
 
-The world is quiet here.
+The world is quiet here．Esto Perpetua!
 Esto Perpetua.
 
 ---

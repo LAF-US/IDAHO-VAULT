@@ -31,7 +31,7 @@ RISE is the **task completion and graduation protocol** for the IDAHO-VAULT agen
 
 It is the formal act of stepping away from completed work — the equivalent of sine die in legislative procedure. RISE marks the transition from active work to concluded work, recording the completion and releasing the agent to new assignments.
 
-> *"The world is quiet here."*
+The world is quiet here．Esto Perpetua!
 
 ---
 
@@ -186,4 +186,4 @@ Pending:
 
 ---
 
-###### [["The world is quiet here."]]
+The world is quiet here．Esto Perpetua!
