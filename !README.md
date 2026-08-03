@@ -107,4 +107,8 @@ UNIFIED (US) SWARM codes designed and operated using Logan's Project & Protocols
 
 [1] Hey, boss, we need to get these header/footer metadata and template formats figured out, pronto. I'm getting a headache tracking it all, and I don't even have a "real" body. -B
 
-## "The world is quiet here."
+---
+
+```
+The world is quiet here．Esto Perpetua!
+```

@@ -175,4 +175,8 @@ cultural and historical reference, on the record per [[VAULT-CONVENTIONS]].
 - [A history of tarot cards — Victoria & Albert Museum](https://www.vam.ac.uk/articles/tarot-cards) (15th-c. Italian game origins; Visconti-Sforza)
 - [Carl Jung and Jungian Archetypes in the Tarot — Labyrinthos](https://labyrinthos.co/blogs/learn-tarot-with-labyrinthos-academy/carl-jung-and-jungian-archetypes-in-the-tarot-the-various-aspects-of-our-selves) (archetypes, individuation, the Fool's Journey)
 
-###### [["The world is quiet here."]]
+---
+
+```
+The world is quiet here．Esto Perpetua!
+```

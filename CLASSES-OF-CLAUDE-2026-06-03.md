@@ -254,4 +254,8 @@ Investigator's; the verdict is the Court's.
 - **Status:** active
 - **Authority:** LOGAN
 
-###### [["The world is quiet here."]]
+---
+
+```
+The world is quiet here．Esto Perpetua!
+```

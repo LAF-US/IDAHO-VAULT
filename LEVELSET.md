@@ -106,4 +106,6 @@ This document is a **stub** under development. Adoption pending:
 
 ---
 
-###### [["The world is quiet here."]]
+```
+The world is quiet here．Esto Perpetua!
+```
