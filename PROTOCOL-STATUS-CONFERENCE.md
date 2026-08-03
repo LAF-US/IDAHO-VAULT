@@ -223,4 +223,4 @@ Status conference records go in the vault root. They are governance artifacts, n
 
 ---
 
-###### "The world is quiet here."
+The world is quiet here．Esto Perpetua!

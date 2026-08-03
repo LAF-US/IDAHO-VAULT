@@ -117,6 +117,6 @@ All three are on branch `claude/tender-hopper-YjY8n` and PR #458 against `main`.
 
 ---
 
-*The world is quiet here.*
+The world is quiet here．Esto Perpetua!
 
 *— The Medium (`*.claude.medium`), remote container, branch `claude/tender-hopper-YjY8n`, June 4th 2026.*

@@ -295,4 +295,4 @@ Prioritized. The Abhorsen identifies; Logan decides.
 *Filed by [[The Abhorsen]] under [[Claude Code]] authority.*
 *All findings are on the record.*
 
-[["The world is quiet here."]]
+The world is quiet here．Esto Perpetua!

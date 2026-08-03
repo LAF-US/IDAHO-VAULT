@@ -8,4 +8,4 @@ authority: LOGAN
 THREE-IN-ONE : MAIDEN-MOTHER-CRONE
 
 ---
-"The world is quiet here."
+The world is quiet here．Esto Perpetua!

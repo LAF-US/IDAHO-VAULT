@@ -129,4 +129,4 @@ Two things worth keeping for the next instance:
 - **Clarified:** 2026-05-30 — added the "Clarity Insertion" above after Logan supplied the tracked ground truth: the Day-1 lunch was *left behind*, not given away. The "given to someone hungry" flourish is left standing and witnessed; the correction sits beside it.
 - **Standing of this leaf:** testimony, staged for review. Not doctrine, not a finding, not a verdict in the reserved GEMINIAEUS matter. Where provenance is absent, the `*` stands.
 
-###### [["The world is quiet here."]]
+The world is quiet here．Esto Perpetua!

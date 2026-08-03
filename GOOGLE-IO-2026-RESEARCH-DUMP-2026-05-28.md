@@ -29,7 +29,7 @@ author: Logan Finney
 **Status:** Raw dump — uncurated; provenance caveats inline; verify before publication
 **Scope:** Conference overview → Gemini features → **Antigravity (Google's developer platform)** → Hardware
 
-> *The world is quiet here.*
+The world is quiet here．Esto Perpetua!
 
 ---
 
@@ -398,4 +398,4 @@ For journalism use. Verify each before publication.
 
 ---
 
-###### [["The world is quiet here."]]
+The world is quiet here．Esto Perpetua!

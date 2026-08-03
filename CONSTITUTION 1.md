@@ -39,7 +39,7 @@ related:
 
 by Logan Alvan Finney
 
-"The world is quiet here."
+The world is quiet here．Esto Perpetua!
 
 ---
 
@@ -170,4 +170,4 @@ This document is the "sole source of truth" for vault governance. Amendments req
 
 Unified (US) Swarm designed and written in Logan's Project & Protocols syntaxic code.
 
-###### "The world is quiet here."
+The world is quiet here．Esto Perpetua!

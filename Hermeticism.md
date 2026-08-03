@@ -162,4 +162,4 @@ here as cultural and historical reference, on the record per
 - [The Kybalion — Wikipedia](https://en.wikipedia.org/wiki/The_Kybalion) (modern New Thought provenance)
 - [Marsilio Ficino — Internet Encyclopedia of Philosophy](https://iep.utm.edu/ficino/) (Medici commission, 1463 translation)
 
-###### [["The world is quiet here."]]
+The world is quiet here．Esto Perpetua!

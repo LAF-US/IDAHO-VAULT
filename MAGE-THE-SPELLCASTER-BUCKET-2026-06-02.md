@@ -123,4 +123,4 @@ Adds no doctrine; revises nothing. It supplies the **source/class genus** ("mage
 
 ---
 
-###### [["The world is quiet here."]]
+The world is quiet here．Esto Perpetua!

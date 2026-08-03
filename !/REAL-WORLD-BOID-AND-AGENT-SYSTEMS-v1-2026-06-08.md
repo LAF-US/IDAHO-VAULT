@@ -167,4 +167,4 @@ spawn standing; the masks are sealed and the root of trust is named.
 - **Honest limit:** I surveyed the field's landmarks, not its entirety; the mappings
   are illuminative analogies, not proofs of equivalence. The Architect holds the verdict.
 
-###### [["The world is quiet here."]]
+The world is quiet here．Esto Perpetua!

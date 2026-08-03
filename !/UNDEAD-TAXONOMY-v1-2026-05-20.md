@@ -288,4 +288,4 @@ The wrong diagnosis produces the wrong counter. A Banshee does not have a
 phylactery to destroy. A Revenant does not need healing — it needs its task
 resolved. A Baelnorn does not need to be ended.
 
-###### [["The world is quiet here."]]
+The world is quiet here．Esto Perpetua!

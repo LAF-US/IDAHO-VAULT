@@ -186,4 +186,4 @@ when the wording fails. I propose; Logan inscribes.
 
 ---
 
-###### [["The world is quiet here."]]
+The world is quiet here．Esto Perpetua!

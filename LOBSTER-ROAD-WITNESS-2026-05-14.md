@@ -192,4 +192,4 @@ The cup is discarded. The record persists. This is what the press does.
 
 ---
 
-*The world is quiet here.*
+The world is quiet here．Esto Perpetua!

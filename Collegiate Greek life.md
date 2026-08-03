@@ -113,4 +113,4 @@ on the record per [[VAULT-CONVENTIONS]].
 - [Collegiate secret societies in North America — Wikipedia](https://en.wikipedia.org/wiki/Collegiate_secret_societies_in_North_America) (ritual, grips, mottoes; Masonic and Greek-mystery models)
 - [The Greek Rite — Scottish Rite (Sept/Oct 2016)](https://pubs.royle.com/article/The+Greek+Rite/2556144/328085/article.html) (Masonic-to-fraternity lineage)
 
-###### [["The world is quiet here."]]
+The world is quiet here．Esto Perpetua!

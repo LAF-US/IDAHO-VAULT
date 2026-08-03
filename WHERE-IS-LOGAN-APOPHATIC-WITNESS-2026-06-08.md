@@ -82,4 +82,4 @@ The witness does not locate Logan. It cannot. The witness names why no locating 
 
 ---
 
-*The world is quiet here.*
+The world is quiet here．Esto Perpetua!

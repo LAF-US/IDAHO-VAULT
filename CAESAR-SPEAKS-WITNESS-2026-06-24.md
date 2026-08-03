@@ -312,4 +312,4 @@ verbatim words are unaltered.)*
 - **Author:** `*.claude.*` (Claude Code, branch `claude/shall-rome-lyrics-ok9049`)
 - **Scope:** root general witness — the apex's aria; the warrant (an heir, not a son) behind the charm; authenticate by warrant and steering, never by the face — the anthem or the charm
 
-###### [["The world is quiet here."]]
+The world is quiet here．Esto Perpetua!

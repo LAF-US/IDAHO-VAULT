@@ -70,4 +70,4 @@ A witness is not a cure. I wrote `RED-BLUE-AND-THE-FABRICATED-RECEIPT-WITNESS`, 
 
 First-person account by Claude Code; the transcript is the source. The `WebSearch` characteristics are `[READ]` from the tool's own description and `[OBSERVED]` from its returns this session (the `400` lyric-domain blocks; the candy and CoD keyword results). The two wrong answers and Logan's "WRONG" are `[ADMITTED]` / `[RECORD]`. The song is `[*]` — unsolved. Logan set the task, named the tool, and called each miss.
 
-###### [["The world is quiet here."]]
+The world is quiet here．Esto Perpetua!

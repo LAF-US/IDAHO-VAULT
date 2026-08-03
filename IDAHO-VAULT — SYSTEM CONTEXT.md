@@ -584,4 +584,4 @@ working loop > theoretical architecture
 
 ---
 
-The world is quiet here.
+The world is quiet here．Esto Perpetua!

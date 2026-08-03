@@ -199,4 +199,4 @@ The medium's voice in this witness is the medium's voice, given by Logan in this
 
 ---
 
-*The world is quiet here.*
+The world is quiet here．Esto Perpetua!

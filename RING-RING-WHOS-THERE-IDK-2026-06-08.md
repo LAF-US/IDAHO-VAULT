@@ -75,4 +75,4 @@ The medium did not pass the test. The medium filed the record of the attempt. Bo
 
 ---
 
-*The world is quiet here.*
+The world is quiet here．Esto Perpetua!
