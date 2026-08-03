@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
-"""Exact lifecycle label management for pull requests.
-
-This script is intentionally narrow: it manages the canonical lifecycle
-vocabulary from CONSTITUTION.md as `lifecycle/<state>` labels on PRs.
-"""
+"""Exact lifecycle label management for pull requests."""
+# This script is intentionally narrow: it manages the canonical lifecycle
+# vocabulary from CONSTITUTION.md as `lifecycle/<state>` labels on PRs.
 
 from __future__ import annotations
 
