@@ -50,6 +50,15 @@ class ObsidianRestApiClient:
     """Thin client around the Obsidian Local REST API plugin."""
 
     def __init__(self, config: ClientConfig) -> None:
+        # `--base-url` reaches urlopen, which honours file:// and ftp://. A
+        # non-http(s) base would make every request read local disk while the
+        # Bearer token is still attached to the headers, so the scheme is
+        # settled once here rather than at each of the call sites below.
+        scheme = parse.urlparse(config.base_url).scheme
+        if scheme not in ("http", "https"):
+            raise ValueError(
+                f"base_url must be http or https, got {scheme!r}: {config.base_url!r}"
+            )
         self.config = config
         self.ssl_context = self._build_ssl_context(config)
 
