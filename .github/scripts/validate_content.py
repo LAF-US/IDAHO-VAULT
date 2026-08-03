@@ -70,15 +70,23 @@ ROOT_GOVERNED_FILES = {
     "VAULT-METADATA-STANDARD.md",
     "VAULT-TEMPLATES.md",
 }
+import sys as _sys
+_sys.path.insert(0, str(Path(__file__).resolve().parent))
+from startup_surfaces import candidates  # noqa: E402
+
 REQUIRED_GOVERNED_FIELDS = ("title", "updated", "status", "authority")
+# Every path a protected surface may occupy, not just today's. Covering a
+# path that does not currently exist costs nothing; keying the guard to one
+# path means a legitimate move silently drops the file out of protection —
+# deletion review would stop applying with nothing failing to say so.
 PROTECTED_LIVE_FILES = {
     "AGENTS.md",
     "CONSTITUTION.md",
     "DECISIONS.md",
     "VAULT-CONVENTIONS.md",
-    "!/AGENTS.md",
-    "!/WAKEUP.md",
-    "!/README.md",
+    *candidates("NEST_AGENTS"),
+    *candidates("WAKEUP"),
+    *candidates("NEST_README"),
 }
 
 

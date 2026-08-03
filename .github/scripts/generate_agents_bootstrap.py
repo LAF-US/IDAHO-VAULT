@@ -13,9 +13,15 @@ REQUIRED_CONTEXT = [
     "VAULT-CONVENTIONS.md",
 ]
 
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from startup_surfaces import candidates, resolve_rel  # noqa: E402
+
+# Resolved so the discovery index points at the file that is actually there;
+# falls back to the canonical path when a surface is absent entirely.
 OPTIONAL_CONTEXT = [
-    "!/WAKEUP.md",
-    "!/AGENTS.md",
+    resolve_rel("WAKEUP") or "!/WAKEUP.md",
+    resolve_rel("NEST_AGENTS") or "!/AGENTS.md",
     "LEVELSET.md",
 ]
 

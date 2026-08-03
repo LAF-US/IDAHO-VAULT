@@ -23,12 +23,17 @@ from pathlib import Path
 import argparse
 import re
 
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from startup_surfaces import candidates, resolve_rel  # noqa: E402
 
+# Startup surfaces are named, not located: each is resolved to wherever it
+# currently lives (canonical path, NETWEB `_PREFIX` alias, or root form).
+# Moving one is the Architect's prerogative and must not break this check.
+SURFACE_NAMES = ["AGENTS", "WAKEUP", "NEST_README", "SWARM"]
+
+# Fixed-location files that are genuinely tied to their path.
 CHECK_FILES = [
-    "AGENTS.md",
-    "!/WAKEUP.md",
-    "!/README.md",
-    "swarm.json",
     ".github/workflows/cross-platform-smoke.yml",
     ".github/workflows/sync-dependencies.yml",
 ]
@@ -52,7 +57,19 @@ def main() -> int:
     repo_root = Path(__file__).resolve().parents[2]
     failures: list[str] = []
 
-    for rel_path in CHECK_FILES:
+    targets: list[str] = []
+    for name in SURFACE_NAMES:
+        rel = resolve_rel(name, repo_root)
+        if rel is None:
+            failures.append(
+                f"[missing] startup surface {name} not found at any of: "
+                + ", ".join(candidates(name))
+            )
+        else:
+            targets.append(rel)
+    targets.extend(CHECK_FILES)
+
+    for rel_path in targets:
         file_path = repo_root / rel_path
         if not file_path.exists():
             failures.append(f"[missing] required file not found: {rel_path}")

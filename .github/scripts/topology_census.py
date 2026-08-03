@@ -17,6 +17,10 @@ from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from startup_surfaces import candidates, resolve_rel  # noqa: E402
+
 REPO_ROOT = Path(__file__).resolve().parents[2]
 OUTPUT_DIR = REPO_ROOT / "!"
 DOCTRINE_PATHS = (
@@ -121,10 +125,22 @@ def _load_text(path: Path) -> str:
     return path.read_text(encoding="utf-8", errors="replace") if path.exists() else ""
 
 
+def _resolve_doctrine(root: Path, relpath: str) -> Path:
+    """Map a canonical doctrine path to where that surface currently lives."""
+    for name in ("WAKEUP", "NEST_README", "NEST_AGENTS"):
+        if relpath in candidates(name):
+            found = resolve_rel(name, root)
+            if found is not None:
+                return root / Path(found)
+    return root / Path(relpath)
+
+
 def _load_doctrine(root: Path) -> dict[str, list[str]]:
     doctrine: dict[str, list[str]] = {}
     for relpath in DOCTRINE_PATHS:
-        path = root / Path(relpath)
+        # Key by the canonical path so census output stays stable, but read
+        # from wherever the surface actually is.
+        path = _resolve_doctrine(root, relpath)
         doctrine[relpath] = _load_text(path).splitlines()
     return doctrine
 
