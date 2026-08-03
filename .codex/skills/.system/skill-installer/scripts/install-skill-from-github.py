@@ -142,6 +142,15 @@ def _validate_git_argument(value: str, label: str) -> str:
     return value
 
 
+def _validate_repo_url(url: str) -> str:
+    parsed = urllib.parse.urlparse(url)
+    if parsed.scheme not in {"https", "ssh"} and not url.startswith("git@"):
+        raise InstallError(f"Unsupported repo URL scheme: {url!r}")
+    if url.startswith("-"):
+        raise InstallError(f"repo URL may not begin with '-': {url!r}")
+    return url
+
+
 def _validate_skill_name(name: str) -> None:
     altsep = os.path.altsep
     if not name or os.path.sep in name or (altsep and altsep in name):
@@ -151,11 +160,12 @@ def _validate_skill_name(name: str) -> None:
 
 
 def _git_sparse_checkout(repo_url: str, ref: str, paths: list[str], dest_dir: str) -> str:
-    _validate_git_argument(ref, "ref")
-    for path in paths:
-        _validate_git_argument(path, "skill path")
-    if repo_url.startswith("-"):
-        raise InstallError(f"repo URL may not begin with '-': {repo_url!r}")
+    # Bind the validated values: argv must be built from what the guard
+    # returned, not from the originals it merely inspected. A check whose
+    # result is discarded is not on the path between input and use.
+    ref = _validate_git_argument(ref, "ref")
+    paths = [_validate_git_argument(path, "skill path") for path in paths]
+    repo_url = _validate_repo_url(repo_url)
     repo_dir = os.path.join(dest_dir, "repo")
     clone_cmd = [
         "git",
