@@ -24,7 +24,6 @@ import tempfile
 from contextlib import contextmanager
 from pathlib import Path
 
-
 # What every operation returns. Callers annotate against this instead of importing
 # subprocess themselves — this module is the only one that needs it.
 GhResult = subprocess.CompletedProcess[str]
