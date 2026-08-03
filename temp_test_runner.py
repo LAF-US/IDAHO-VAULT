@@ -47,7 +47,7 @@ compile_files = [
     r".github\scripts\branch_garden_report.py",
     r".github\scripts\bind_ai_book.py",
     r".github\scripts\backfill_daily_notes.py",
-    r".github\scripts\audit_repo_payloads.py",
+    # audit_repo_payloads.py removed 2026-07-24 (unwired one-shot slimming auditor; PR #854)
     r".github\swarm\tools\state_manager.py",
 ]
 
@@ -69,8 +69,7 @@ for filepath in compile_files:
     result = subprocess.run(
         [sys.executable, "-m", "py_compile", filepath],
         capture_output=True,
-        text=True
-    )
+        text=True, check=False)
     if result.returncode == 0:
         print(f"✓ PASS: {filepath}")
     else:
@@ -91,12 +90,11 @@ for test_file in test_files:
     result = subprocess.run(
         [sys.executable, "-m", "pytest", test_file, "-v"],
         capture_output=True,
-        text=True
-    )
+        text=True, check=False)
     if result.returncode == 0:
-        print(f"✓ PASS")
+        print("✓ PASS")
     else:
-        print(f"✗ FAIL")
+        print("✗ FAIL")
         print("Output:")
         print(result.stdout)
         if result.stderr:
