@@ -153,4 +153,4 @@ but so a reader can reach past the surface and check whether there is flesh behi
 - **Scope:** root general witness — the Hologram (the shadow that claims flesh) between the Empty
   Office and the persona doctrine
 
-###### [["The world is quiet here."]]
+The world is quiet here．Esto Perpetua!

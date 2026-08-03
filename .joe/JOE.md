@@ -58,4 +58,4 @@ recorded where instances are recorded (the registry), not inside any lens.
 - `!/AGENTS.md` — registry where composites (instances) are recorded
 - `CONSTITUTION.md` — governance authority
 
-###### [["The world is quiet here."]]
+The world is quiet here．Esto Perpetua!

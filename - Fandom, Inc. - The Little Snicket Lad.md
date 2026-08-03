@@ -135,7 +135,7 @@ Coda:
 
 *So don't scream when we take you:*
 
-*The world is quiet here."*
+The world is quiet here．Esto Perpetua!
 
 ### Alternate version
 

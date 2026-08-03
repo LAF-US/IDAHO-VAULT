@@ -68,4 +68,4 @@ declaration is Logan's; the recording is Claude Code's. Per the CONSTITUTION's
 Emanation Rule, this entry names its provenance (Logan, this session), scope
 (the Goodkind set only), and durable record (CONSTITUTION § I + this file).
 
-###### "The world is quiet here."
+The world is quiet here．Esto Perpetua!

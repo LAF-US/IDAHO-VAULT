@@ -58,4 +58,4 @@ A case-specific review packet may apply Vaulted Syntax doctrine, but it does
 not become that doctrine merely by surviving in the vault. Promotion into
 governing surfaces remains witnessed and recorded through Logan's authority.
 
-###### [["The world is quiet here."]]
+The world is quiet here．Esto Perpetua!

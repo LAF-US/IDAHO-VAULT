@@ -50,4 +50,4 @@ date: 2026-06-07
 
 ---
 
-###### [["The world is quiet here."]]
+The world is quiet here．Esto Perpetua!

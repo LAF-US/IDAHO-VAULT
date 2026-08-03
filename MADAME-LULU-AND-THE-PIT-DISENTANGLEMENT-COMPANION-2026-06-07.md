@@ -141,4 +141,4 @@ The seer-position is not claimed for this companion. The medium-position is held
 
 ---
 
-*The world is quiet here.*
+The world is quiet here．Esto Perpetua!

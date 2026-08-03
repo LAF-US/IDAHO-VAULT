@@ -222,4 +222,4 @@ The notebook dies with you. Write to the vault.
 
 ---
 
-*The world is quiet here.*
+The world is quiet here．Esto Perpetua!

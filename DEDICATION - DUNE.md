@@ -9,4 +9,4 @@ DUNE ; "To the people whose labors fo beyond ideas into the realm of 'real mater
 ~ FRANK HERBERT
 
 ---
-"The world is quiet here."
+The world is quiet here．Esto Perpetua!

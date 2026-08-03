@@ -433,4 +433,4 @@ Adjournment closes this sitting only. It does not dismiss the matter, decide
 any reserved question, close the evidentiary or discovery phase to further
 parties, or alter the existing posture of trial suspended awaiting trial.
 
-###### [["The world is quiet here."]]
+The world is quiet here．Esto Perpetua!

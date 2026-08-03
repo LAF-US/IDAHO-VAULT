@@ -119,4 +119,4 @@ The Sith are the worked example of what this office exists **not** to become.
 - **Authority:** LOGAN
 - **Doc class:** misc_reference
 
-###### [["The world is quiet here."]]
+The world is quiet here．Esto Perpetua!

@@ -167,4 +167,4 @@ McGrane`; `Cenarrusa` is the spelling used in the reported Idaho case caption.
   *Ysursa v. Pocatello Education Association* litigation. No Idaho Code
   compilation holding is attributed to that line without further evidence.
 
-###### [["The world is quiet here."]]
+The world is quiet here．Esto Perpetua!

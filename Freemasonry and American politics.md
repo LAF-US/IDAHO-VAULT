@@ -134,4 +134,4 @@ filed here as cultural and historical reference, on the record per
 - [Freemasonry in Colonial America — George Washington's Mount Vernon](https://www.mountvernon.org/george-washington/freemasonry/freemasonry-in-colonial-america) (Washington; founders and the lodge)
 - [The Masonic Murder That Inspired the First Third Party — Smithsonian Magazine](https://www.smithsonianmag.com/history/the-masonic-murder-that-inspired-the-us-first-third-party-180982495/) (Morgan Affair → Anti-Masonic Party)
 
-###### [["The world is quiet here."]]
+The world is quiet here．Esto Perpetua!

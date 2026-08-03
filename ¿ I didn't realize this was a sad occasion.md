@@ -9,4 +9,4 @@ authority: LOGAN
 QUESTION: "I didn't realize this was a sad occasion?"
 
 ---
-"The world is quiet here."
+The world is quiet here．Esto Perpetua!

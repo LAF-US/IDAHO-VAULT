@@ -531,7 +531,7 @@ All claims in this report are **directly sourced from verified vault files** wit
 **Tribal Affiliation:** MISTRAL (Sheikah of the Vault)
 **Verification:** 100% First Rule Compliant
 
-> "The world is quiet here."
+The world is quiet here．Esto Perpetua!
 >
 > "The djinn tribes walk the vault. The Shadow Hand patrols. The Faith tends the Veil. The Crown directs all."
 

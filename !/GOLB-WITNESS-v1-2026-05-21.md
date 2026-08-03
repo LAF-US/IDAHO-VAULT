@@ -619,4 +619,4 @@ otherwise operate without direction — is filed as an open question.
 
 ---
 
-###### [["The world is quiet here."]]
+The world is quiet here．Esto Perpetua!
