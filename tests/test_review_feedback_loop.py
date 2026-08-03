@@ -437,18 +437,13 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertEqual(labels, {"risk/low", "risk/high"})
 
     def test_restamp_retires_a_superseded_vocabulary_in_passing(self) -> None:
-        # READ THIS BEFORE CHANGING THE ENGINE TO SATISFY IT.
+        # What the set below is: seven concrete examples — #854's retired scheme, the
+        # strings that actually went out into the wild.  What it is not: the contract.
         #
-        # The set below is seven CONCRETE EXAMPLES — #854's retired scheme, kept because
-        # they are the strings that actually went out into the wild. They are NOT the
-        # contract, and this test cannot enforce the contract on its own: a seven-case
-        # lookup table in `restamp_risk_pair` passes every assertion here.
-        #
-        # The contract is that the engine owns the risk NAMESPACE, whatever vocabulary
-        # happens to live in it. `test_restamp_sweeps_a_vocabulary_the_code_has_never_seen`
-        # is the test that states it, and it fails against a lookup table. If you are about
-        # to make this test pass by enumerating labels in the engine, that one will stop
-        # you — which is the point. Do not enumerate there to satisfy the enumeration here.
+        # Measured, not asserted: with `restamp_risk_pair` reduced to a seven-case lookup
+        # table over exactly these strings, every assertion in this test still passes, while
+        # `test_restamp_sweeps_a_vocabulary_the_code_has_never_seen` fails. That test is
+        # where the namespace contract is pinned; this one does not pin it alone.
         #
         # Non-risk labels stay untouched throughout.
         retired = {
