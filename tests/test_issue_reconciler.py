@@ -231,11 +231,10 @@ class LookupTest(TestCase):
 
     def test_repo_rejects_a_missing_or_malformed_repository(self) -> None:
         for value in ("", "no-slash"):
-            with self.subTest(value=value):
-                with mock.patch.dict(
-                    "os.environ", {"GITHUB_REPOSITORY": value}, clear=False
-                ), self.assertRaises(RuntimeError):
-                    issue_reconciler._repo()
+            with self.subTest(value=value), mock.patch.dict(
+                "os.environ", {"GITHUB_REPOSITORY": value}, clear=False
+            ), self.assertRaises(RuntimeError):
+                issue_reconciler._repo()
 
     def test_body_fingerprint_refuses_a_traversing_path(self) -> None:
         with self.assertRaises(ValueError):

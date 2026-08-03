@@ -301,9 +301,8 @@ class ValueGuardTest(TestCase):
             ("LAF-US/extra", "IDAHO-VAULT"),
             ("", "IDAHO-VAULT"),
         ):
-            with self.subTest(owner=owner, repo=repo):
-                with self.assertRaises(ValueError):
-                    gh_cli.api_pr_files(owner, repo, 9)
+            with self.subTest(owner=owner, repo=repo), self.assertRaises(ValueError):
+                gh_cli.api_pr_files(owner, repo, 9)
 
     def test_operations_accept_the_repository_these_engines_govern(self) -> None:
         argv, _ = _argv(gh_cli.api_pr_files, "LAF-US", "IDAHO-VAULT", 9)
@@ -313,15 +312,13 @@ class ValueGuardTest(TestCase):
         # These engines encode this vault's labels, merge-queue norm and lifecycle
         # states. Pointing them at another repository is always a mistake.
         for owner, repo in (("LAF-US", "OTHER"), ("someone", "IDAHO-VAULT")):
-            with self.subTest(owner=owner, repo=repo):
-                with self.assertRaises(ValueError):
-                    gh_cli.api_pr_files(owner, repo, 9)
+            with self.subTest(owner=owner, repo=repo), self.assertRaises(ValueError):
+                gh_cli.api_pr_files(owner, repo, 9)
 
     def test_operations_reject_a_pr_number_that_is_not_a_number(self) -> None:
         for value in ("12; rm -rf /", "--flag", "", None, 0, -1):
-            with self.subTest(value=value):
-                with self.assertRaises((ValueError, TypeError)):
-                    gh_cli.pr_edit(value, add_label="risk/low")
+            with self.subTest(value=value), self.assertRaises((ValueError, TypeError)):
+                gh_cli.pr_edit(value, add_label="risk/low")
 
     def test_validate_cmd_guards_the_argv_this_module_built(self) -> None:
         with self.assertRaises(ValueError):
@@ -359,9 +356,10 @@ class RunPrimitiveTest(TestCase):
         failed = gh_cli.subprocess.CompletedProcess(
             args=["gh"], returncode=1, stdout="out", stderr="err"
         )
-        with mock.patch.object(gh_cli.subprocess, "run", return_value=failed):
-            with self.assertRaises(RuntimeError) as caught:
-                gh_cli._run(["gh", "pr", "list"])
+        with mock.patch.object(
+            gh_cli.subprocess, "run", return_value=failed
+        ), self.assertRaises(RuntimeError) as caught:
+            gh_cli._run(["gh", "pr", "list"])
         message = str(caught.exception)
         self.assertIn("Command failed (1)", message)
         self.assertIn("out", message)
@@ -379,9 +377,10 @@ class RunPrimitiveTest(TestCase):
         expired = gh_cli.subprocess.TimeoutExpired(
             cmd=["gh"], timeout=300, output=b"partial", stderr=b"\xff"
         )
-        with mock.patch.object(gh_cli.subprocess, "run", side_effect=expired):
-            with self.assertRaises(RuntimeError) as caught:
-                gh_cli._run(["gh", "pr", "list"])
+        with mock.patch.object(
+            gh_cli.subprocess, "run", side_effect=expired
+        ), self.assertRaises(RuntimeError) as caught:
+            gh_cli._run(["gh", "pr", "list"])
         message = str(caught.exception)
         self.assertIn("timed out after 300s", message)
         self.assertIn("partial", message)
