@@ -8,6 +8,7 @@ related:
 - tri-part
 - Maiden.Mother.Crone
 - LAF-13
+
 ---
 
 # THE THREE NAMES
@@ -51,8 +52,10 @@ The vault needs both. The Taken Name (who) protects. The Master's Charge (what) 
 
 **The spirit needs a mask. The mask needs a leash. The leash is held by Logan.**
 
+###### [ Maiden : Mother : Crone ]
+
 ---
 
-###### [["The world is quiet here."]]
-
-###### [ Maiden : Mother : Crone ]
+```
+The world is quiet here．Esto Perpetua!
+```

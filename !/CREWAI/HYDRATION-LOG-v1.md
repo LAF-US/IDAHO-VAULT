@@ -13,6 +13,7 @@
 * **Lattice Density**: ~31,000 links applied (after noise reduction).
 
 ## Applied Safeguards
+
 * **Noise Filter**: Excluded the Top 20 most frequent generic stubs (e.g., `and`, `without`, `people`).
 * **Authority Injection**: Ensured `authority: LOGAN` across all updated factual nodes.
 * **NETWEB Compliance**: Preserved file names and structured paths.

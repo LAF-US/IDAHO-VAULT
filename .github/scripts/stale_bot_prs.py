@@ -12,7 +12,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
-import subprocess  # nosec B404 -- see [tool.bandit] note in pyproject.toml
+import subprocess
 import sys
 from datetime import datetime, timezone
 from pathlib import Path

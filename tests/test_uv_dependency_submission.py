@@ -79,6 +79,7 @@ class UvDependencySubmissionTest(unittest.TestCase):
             "pkg:pypi/huggingface-hub@",
             "pkg:pypi/requests-oauthlib@",
             "pkg:pypi/honcho-ai@",
+            "pkg:pypi/pygit2@",
         ):
             match = [v for k, v in self.resolved.items() if k.startswith(purl)]
             self.assertTrue(match, f"missing direct dependency {purl}")
@@ -117,10 +118,14 @@ class UvDependencySubmissionTest(unittest.TestCase):
         self.assertEqual(len(onnx), 2, onnx)
 
     def test_resolved_count_matches_non_local_versioned_packages(self) -> None:
-        # 163 [[package]] entries in uv.lock (162 + coverage, added for Codacy
-        # coverage reporting), minus the single editable local project, all
-        # registry packages versioned -> 162 distinct purls.
-        self.assertEqual(len(self.resolved), 162)
+        # 165 [[package]] entries in uv.lock (163 + pygit2, added in #891 to
+        # read Git's tracked index directly via libgit2 bindings instead of
+        # shelling out to the git binary; pygit2 appears as two version-split
+        # entries -- 1.18.2 for Python 3.10, 1.19.3 for 3.11+ -- the same
+        # multi-version pattern as numpy/onnxruntime below), minus the single
+        # editable local project, all registry packages versioned -> 164
+        # distinct purls.
+        self.assertEqual(len(self.resolved), 164)
 
 
 if __name__ == "__main__":

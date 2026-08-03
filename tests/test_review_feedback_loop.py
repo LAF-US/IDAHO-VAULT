@@ -40,6 +40,10 @@ review_feedback_loop = _load_review_feedback_loop_module()
 # engine's load above imported it, so it's cached in sys.modules; predicates the
 # engine no longer re-exports (e.g. _author_is_bot) are tested against it directly.
 pr_threads = sys.modules["pr_threads"]
+# Every ``gh`` command line is now built inside gh_cli by a typed operation, and the
+# run primitive there is private. Tests that assert on the emitted argv patch that one
+# primitive, so they check the command line that is actually executed.
+gh_cli = sys.modules["gh_cli"]
 
 
 def _labels(*names: str) -> dict[str, list[dict[str, str]]]:
@@ -147,6 +151,25 @@ def _grid_states(
 
 
 class ReviewFeedbackLoopTest(unittest.TestCase):
+    def test_prior_verify_comment_is_found_past_the_first_page(self) -> None:
+        # Regression: `gh api --paginate` emits one array PER PAGE, so reading stdout as a
+        # single JSON document sees `[...][...]`, raises, and yields no bodies at all. The
+        # recursion guard then failed open on exactly the busy PRs most likely to already
+        # carry a verification comment. Reading via --jq has no document boundary.
+        marker = review_feedback_loop.VERIFY_CLAIM_MARKER
+        two_pages = "\n".join(["first page body", "another", f"page two body {marker}"])
+        captured = {}
+
+        def fake(owner, repo, issue_number, **kwargs):
+            captured.update(kwargs)
+            return SimpleNamespace(stdout=two_pages, stderr="", returncode=0)
+
+        with mock.patch.object(review_feedback_loop.gh_cli, "api_issue_comments", fake):
+            found = review_feedback_loop._has_prior_verify_comment("LAF-US", "IDAHO-VAULT", 877)
+
+        self.assertTrue(found)
+        self.assertEqual(captured.get("jq"), ".[].body")
+
     def test_clear_pair_pr_becomes_auto_merge_eligible_after_grace(self) -> None:
         # K3/#629: the `—/—` verdict — and ONLY it — arms auto-merge. A PR that the classifier
         # scored clear (no risk/* label) with no blocking feedback is eligible once the grace
@@ -413,6 +436,62 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertNotIn("remove:risk/high", actions)
         self.assertEqual(labels, {"risk/low", "risk/high"})
 
+    def test_restamp_retires_a_superseded_vocabulary_in_passing(self) -> None:
+        # What the set below is: seven concrete examples — #854's retired scheme, the
+        # strings that actually went out into the wild. What it is not: the contract.
+        #
+        # Measured, not asserted: with `restamp_risk_pair` reduced to a seven-case lookup
+        # table over exactly these strings, every assertion in this test still passes, while
+        # `test_restamp_sweeps_a_vocabulary_the_code_has_never_seen` fails. That test is
+        # where the namespace contract is pinned; this one does not pin it alone.
+        #
+        # Non-risk labels stay untouched throughout.
+        retired = {
+            "filetype:risk/low", "filetype:risk/med", "filetype:risk/—",
+            "depth:risk/high", "depth:risk/nope", "depth:risk/—", "risk/—",
+        }
+        with mock.patch.object(review_feedback_loop, "_edit_label"):
+            labels = set(retired) | {"review/pending", "agent:claude-code"}
+            actions = review_feedback_loop.restamp_risk_pair(31, labels, "med", "high")
+        for label in retired:
+            self.assertIn(f"remove:{label}", actions)
+        self.assertIn("add:risk/med", actions)
+        self.assertIn("add:risk/high", actions)
+        self.assertEqual(labels, {"risk/med", "risk/high", "review/pending", "agent:claude-code"})
+
+        # A `—/—` verdict strips the retired vocabulary too, stamping nothing in its place.
+        with mock.patch.object(review_feedback_loop, "_edit_label"):
+            labels = set(retired) | {"review/pending"}
+            review_feedback_loop.restamp_risk_pair(32, labels, None, None)
+        self.assertEqual(labels, {"review/pending"})
+
+    def test_restamp_sweeps_a_vocabulary_the_code_has_never_seen(self) -> None:
+        # The test above enumerates the seven strings #854 retired, which a seven-case lookup
+        # table would satisfy just as well — it cannot tell a namespace rule from a hardcoded
+        # list. These labels appear nowhere in the codebase, so only a rule sweeps them, and a
+        # list would leave every one behind. This is the case that distinguishes the two.
+        # `newaxis:risk/—` keeps the em dash (U+2014) ON PURPOSE: three labels in the live
+        # retired vocabulary carry it — `filetype:risk/—`, `depth:risk/—`, `risk/—`. Swapping
+        # it for an ASCII stand-in would stop exercising the character the real labels use.
+        unseen = {"scope:risk/whatever", "tier:risk/x", "newaxis:risk/—", "risk/anything"}
+        with mock.patch.object(review_feedback_loop, "_edit_label"):
+            labels = set(unseen) | {"review/pending"}
+            actions = review_feedback_loop.restamp_risk_pair(33, labels, "low", None)
+        for label in unseen:
+            self.assertIn(f"remove:{label}", actions)
+        self.assertEqual(labels, {"risk/low", "review/pending"})
+
+    def test_restamp_leaves_names_that_only_resemble_the_namespace(self) -> None:
+        # The boundary the rule must NOT cross, kept separate from the sweep above so a
+        # failure says which half broke. `riskier/thing` and `notrisk/low` are not risk
+        # labels; a sloppy pattern (a bare `risk/` substring search) would eat both.
+        near_misses = {"riskier/thing", "notrisk/low", "review/pending"}
+        with mock.patch.object(review_feedback_loop, "_edit_label"):
+            labels = set(near_misses)
+            actions = review_feedback_loop.restamp_risk_pair(34, labels, None, None)
+        self.assertEqual(actions, [])
+        self.assertEqual(labels, near_misses)
+
     def test_sync_pr_restamps_unmarked_pr_from_classifier(self) -> None:
         # K6 backfill-by-automation: an unmarked in-flight PR gets its pair stamped from
         # the classifier on the next sync — no hand-sweep.
@@ -435,7 +514,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         ), mock.patch.object(
             review_feedback_loop, "_disable_auto_merge"
         ), mock.patch.object(
-            review_feedback_loop, "_run"
+            gh_cli, "_run"
         ), mock.patch.object(
             review_feedback_loop, "_arm_auto_merge", return_value=(True, None)
         ) as arm, contextlib.redirect_stdout(io.StringIO()):
@@ -473,7 +552,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         ), mock.patch.object(
             review_feedback_loop, "_disable_auto_merge"
         ) as disable, mock.patch.object(
-            review_feedback_loop, "_run"
+            gh_cli, "_run"
         ), mock.patch.object(
             review_feedback_loop, "_arm_auto_merge", return_value=(True, None)
         ), contextlib.redirect_stdout(io.StringIO()):
@@ -512,7 +591,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         ) as edit_label, mock.patch.object(
             review_feedback_loop, "_disable_auto_merge"
         ), mock.patch.object(
-            review_feedback_loop, "_run"
+            gh_cli, "_run"
         ), mock.patch.object(
             review_feedback_loop, "_arm_auto_merge", return_value=(True, None)
         ), contextlib.redirect_stdout(io.StringIO()):
@@ -807,7 +886,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             ),
         ), mock.patch.object(review_feedback_loop, "_edit_label"), mock.patch.object(
             review_feedback_loop, "_disable_auto_merge"
-        ) as disable_auto_merge, mock.patch.object(review_feedback_loop, "_run") as run:
+        ) as disable_auto_merge, mock.patch.object(gh_cli, "_run") as run:
             result = review_feedback_loop.enable_auto_merge(args)
 
         self.assertEqual(result, 0)
@@ -831,7 +910,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             ),
         ), mock.patch.object(review_feedback_loop, "_edit_label"), mock.patch.object(
             review_feedback_loop, "_disable_auto_merge"
-        ) as disable_auto_merge, mock.patch.object(review_feedback_loop, "_run") as run:
+        ) as disable_auto_merge, mock.patch.object(gh_cli, "_run") as run:
             result = review_feedback_loop.enable_auto_merge(args)
 
         self.assertEqual(result, 0)
@@ -851,7 +930,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             review_feedback_loop, "_auto_merge_state", return_value=(False, False)
         ), mock.patch.object(
             review_feedback_loop, "_merge_state_status", return_value="CLEAN"
-        ), mock.patch.object(review_feedback_loop, "_run", side_effect=error):
+        ), mock.patch.object(gh_cli, "_run", side_effect=error):
             enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 289)
 
         self.assertFalse(enabled)
@@ -868,12 +947,12 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             review_feedback_loop, "_pr_node_id", return_value="PR_node1"
         ), mock.patch.object(
             review_feedback_loop, "_enqueue_pr", return_value=(True, None)
-        ) as enqueue, mock.patch.object(review_feedback_loop, "_run") as run:
+        ) as enqueue, mock.patch.object(gh_cli, "_run") as run:
             enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 10)
         self.assertTrue(enabled)
         self.assertIsNone(arm_error)
         run.assert_called_once_with(
-            ["gh", "pr", "merge", "10", "--merge", "--auto"]
+            ["gh", "pr", "merge", "10", "--merge", "--auto"], check=True
         )
         enqueue.assert_called_once_with("PR_node1")
 
@@ -888,7 +967,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             review_feedback_loop, "_pr_node_id", return_value="PR_node2"
         ), mock.patch.object(
             review_feedback_loop, "_enqueue_pr", return_value=(True, None)
-        ) as enqueue, mock.patch.object(review_feedback_loop, "_run") as run:
+        ) as enqueue, mock.patch.object(gh_cli, "_run") as run:
             enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 11)
         self.assertTrue(enabled)
         self.assertIsNone(arm_error)
@@ -904,7 +983,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             review_feedback_loop, "_merge_state_status"
         ) as merge_state, mock.patch.object(
             review_feedback_loop, "_enqueue_pr"
-        ) as enqueue, mock.patch.object(review_feedback_loop, "_run") as run:
+        ) as enqueue, mock.patch.object(gh_cli, "_run") as run:
             enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 12)
         self.assertTrue(enabled)
         self.assertIsNone(arm_error)
@@ -924,7 +1003,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             review_feedback_loop, "_pr_node_id", return_value="PR_node3"
         ), mock.patch.object(
             review_feedback_loop, "_enqueue_pr", return_value=(False, None)
-        ), mock.patch.object(review_feedback_loop, "_run"):
+        ), mock.patch.object(gh_cli, "_run"):
             enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 13)
         self.assertTrue(enabled)
         self.assertIsNone(arm_error)  # benign not-ready must not leak as an error
@@ -942,7 +1021,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             review_feedback_loop,
             "_enqueue_pr",
             return_value=(False, "Resource not accessible by integration"),
-        ), mock.patch.object(review_feedback_loop, "_run"):
+        ), mock.patch.object(gh_cli, "_run"):
             enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 14)
         self.assertTrue(enabled)
         self.assertIsNotNone(arm_error)
@@ -960,12 +1039,12 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             review_feedback_loop, "_pr_node_id", return_value=None
         ), mock.patch.object(
             review_feedback_loop, "_enqueue_pr"
-        ) as enqueue, mock.patch.object(review_feedback_loop, "_run") as run:
+        ) as enqueue, mock.patch.object(gh_cli, "_run") as run:
             enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 15)
         self.assertTrue(enabled)
         self.assertIsNone(arm_error)
         run.assert_called_once_with(
-            ["gh", "pr", "merge", "15", "--merge", "--auto"]
+            ["gh", "pr", "merge", "15", "--merge", "--auto"], check=True
         )
         enqueue.assert_not_called()
 
@@ -983,12 +1062,12 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             review_feedback_loop, "_pr_node_id", return_value="PR_node20"
         ), mock.patch.object(
             review_feedback_loop, "_enqueue_pr", return_value=(False, None)
-        ), mock.patch.object(review_feedback_loop, "_run") as run:
+        ), mock.patch.object(gh_cli, "_run") as run:
             enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 20)
         self.assertTrue(enabled)
         self.assertIn("branch updated (was BEHIND)", arm_error)
         update_branch.assert_called_once_with("o", "r", 20)
-        run.assert_called_once_with(["gh", "pr", "merge", "20", "--merge", "--auto"])
+        run.assert_called_once_with(["gh", "pr", "merge", "20", "--merge", "--auto"], check=True)
 
     def test_arm_auto_merge_still_arms_when_branch_update_fails(self) -> None:
         # A real update-branch failure (e.g. an actual conflict surfaced as DIRTY by the time
@@ -1003,12 +1082,12 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             review_feedback_loop, "_pr_node_id", return_value="PR_node21"
         ), mock.patch.object(
             review_feedback_loop, "_enqueue_pr", return_value=(False, None)
-        ), mock.patch.object(review_feedback_loop, "_run") as run:
+        ), mock.patch.object(gh_cli, "_run") as run:
             enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 21)
         self.assertTrue(enabled)
         self.assertIn("branch update (BEHIND) failed", arm_error)
         self.assertIn("merge conflict", arm_error)
-        run.assert_called_once_with(["gh", "pr", "merge", "21", "--merge", "--auto"])
+        run.assert_called_once_with(["gh", "pr", "merge", "21", "--merge", "--auto"], check=True)
 
     def test_arm_auto_merge_aggregates_notes_when_branch_update_and_enqueue_both_fail(
         self,
@@ -1024,14 +1103,14 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             review_feedback_loop, "_pr_node_id", return_value="PR_node23"
         ), mock.patch.object(
             review_feedback_loop, "_enqueue_pr", return_value=(False, "enqueue error")
-        ), mock.patch.object(review_feedback_loop, "_run") as run:
+        ), mock.patch.object(gh_cli, "_run") as run:
             enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 23)
         self.assertTrue(enabled)
         self.assertIn("branch update (BEHIND) failed", arm_error)
         self.assertIn("merge conflict", arm_error)
         self.assertIn("enqueue was rejected", arm_error)
         self.assertIn("enqueue error", arm_error)
-        run.assert_called_once_with(["gh", "pr", "merge", "23", "--merge", "--auto"])
+        run.assert_called_once_with(["gh", "pr", "merge", "23", "--merge", "--auto"], check=True)
 
     def test_arm_auto_merge_checks_behind_even_when_already_enabled(self) -> None:
         # A PR can already be armed and still fall BEHIND later — the BEHIND check does not
@@ -1046,7 +1125,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             review_feedback_loop, "_pr_node_id", return_value="PR_node22"
         ), mock.patch.object(
             review_feedback_loop, "_enqueue_pr", return_value=(False, None)
-        ), mock.patch.object(review_feedback_loop, "_run") as run:
+        ), mock.patch.object(gh_cli, "_run") as run:
             enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 22)
         self.assertTrue(enabled)
         self.assertIn("branch updated (was BEHIND)", arm_error)
@@ -1082,19 +1161,19 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             )
 
     def test_update_branch_tri_state_success_and_failure(self) -> None:
-        # Uses the real slug: _slug pins the engine to LAF-US/IDAHO-VAULT so the
-        # owner/repo cannot travel into a command line, which is what closes the
-        # py/command-line-injection flow through this path.
-        with mock.patch.object(review_feedback_loop, "_run") as run:
+        # Real owner/repo: gh_cli pins these engines to the repository they govern,
+        # so a placeholder slug is now rejected before argv is built.
+        with mock.patch.object(gh_cli, "_run") as run:
             ok, err = review_feedback_loop._update_branch("LAF-US", "IDAHO-VAULT", 9)
         self.assertTrue(ok)
         self.assertIsNone(err)
         run.assert_called_once_with(
             ["gh", "api", "--method", "PUT",
-             "repos/LAF-US/IDAHO-VAULT/pulls/9/update-branch"]
+             "repos/LAF-US/IDAHO-VAULT/pulls/9/update-branch"],
+            check=True,
         )
         with mock.patch.object(
-            review_feedback_loop, "_run", side_effect=RuntimeError("conflict")
+            gh_cli, "_run", side_effect=RuntimeError("conflict")
         ):
             ok, err = review_feedback_loop._update_branch("LAF-US", "IDAHO-VAULT", 9)
         self.assertFalse(ok)
@@ -1159,11 +1238,11 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
 
     def test_maybe_arm_arms_eligible_pr(self) -> None:
         # On a successful arm, the merge/auto label is applied via a CHECKED gh call so the
-        # write can fail-close (see test below). Mock _run for that label edit.
+        # write can fail-close (see test below). Mock the gh_cli run primitive for that edit.
         with mock.patch.object(
             review_feedback_loop, "_arm_auto_merge", return_value=(True, None)
         ) as arm, mock.patch.object(
-            review_feedback_loop, "_run"
+            gh_cli, "_run"
         ) as run:
             result = review_feedback_loop._maybe_arm_auto_merge(
                 "o", "r", 5, {"eligible_for_auto_merge": True}
@@ -1172,7 +1251,8 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         arm.assert_called_once_with("o", "r", 5)
         # The arm tags merge/auto so the disable path can later un-arm if it becomes blocked.
         run.assert_called_once_with(
-            ["gh", "pr", "edit", "5", "--add-label", review_feedback_loop.DEFAULT_AUTO_MERGE_LABEL]
+            ["gh", "pr", "edit", "5", "--add-label", review_feedback_loop.DEFAULT_AUTO_MERGE_LABEL],
+            check=True,
         )
 
     def test_maybe_arm_fails_closed_when_label_write_fails(self) -> None:
@@ -1181,7 +1261,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         with mock.patch.object(
             review_feedback_loop, "_arm_auto_merge", return_value=(True, None)
         ), mock.patch.object(
-            review_feedback_loop, "_run", side_effect=RuntimeError("label write failed")
+            gh_cli, "_run", side_effect=RuntimeError("label write failed")
         ), mock.patch.object(
             review_feedback_loop, "_disable_auto_merge"
         ) as disable:
@@ -1231,9 +1311,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         ), mock.patch.object(
             review_feedback_loop, "apply_review_state_projection", return_value=[]
         ), mock.patch.object(
-            review_feedback_loop, "_edit_label"
-        ), mock.patch.object(
-            review_feedback_loop, "_run"
+            gh_cli, "_run"
         ), mock.patch.object(
             review_feedback_loop, "_arm_auto_merge", return_value=(True, None)
         ) as arm, contextlib.redirect_stdout(io.StringIO()):
