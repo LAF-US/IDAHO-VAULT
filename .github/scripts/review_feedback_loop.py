@@ -104,7 +104,7 @@ RISK_MED_LABEL = "risk/med"
 RISK_HIGH_LABEL = "risk/high"
 RISK_NOPE_LABEL = "risk/nope"
 
-# K6/#632 (flat schema, norm set by Logan): the risk vocabulary is four flat labels across
+# The risk vocabulary (flat schema, norm set by Logan) is four flat labels across
 # two independent axes — each stamped ONLY when its axis fires. There are no prefixes, no
 # explicit `—` labels, and no separate clear marker.
 #   FILETYPE axis: risk/low (Machine Doc / inert assets) | risk/med (Computer Code — executes)
@@ -112,7 +112,7 @@ RISK_NOPE_LABEL = "risk/nope"
 #                   "!/!/__!__/!/" region and below — never auto-merges)
 # A PR carries AT MOST one filetype value AND at most one filedepth value (0–2 labels total).
 # `—` on an axis is the ABSENCE of that axis's label; `—/—` (clear) is NO risk/* label at all.
-# Flags are TRANSIENT ROUTING STATE, never a verdict: the classifier restamps them on
+# Flags are TRANSIENT ROUTING STATE, not a durable record: the classifier restamps them on
 # synchronize (labels mirror the current diff), and when the lane's review completes the
 # engine clears the fired flag (removes it) and the PR flows. risk/nope is never
 # auto-cleared — it always requires a human merge.
@@ -123,7 +123,7 @@ RISK_FLAG_LABELS = frozenset(
 )
 
 # The engine owns its whole namespace, not just the vocabulary it currently stamps.
-# `restamp_risk_pair` removes any label matching this that the verdict did not ask for, so
+# `restamp_risk_pair` removes any label matching this that the classified lane did not ask for,
 # a PR still wearing a superseded form (the retired `filetype:risk/*` + `depth:risk/*` +
 # `risk/—` scheme #854 replaced) converges the next time it is classified — no migration
 # script, and nothing to run by hand. This matches on the namespace instead of enumerating
@@ -137,8 +137,8 @@ AUTO_MERGE_AUTHZ_FRAGMENTS = (
 )
 
 # Protected-path gating is no longer done here. A hand-maintained glob list was one of
-# three drifting, fail-open re-implementations of "these paths need a human" (K1/#627,
-# K2/#628). The single source of that truth is now CODEOWNERS, enforced as a HARD GATE by
+# three drifting, fail-open re-implementations of "these paths need a human".
+# The single source of that truth is now CODEOWNERS, enforced as a HARD GATE by
 # the branch ruleset (`require_code_owner_review: true`, set by Logan): GitHub blocks the
 # merge of any owned-path PR until the owner reviews — un-bypassable, regardless of whether
 # this engine armed it. So the engine no longer second-guesses protection; arming a
@@ -352,7 +352,7 @@ def _arm_auto_merge(owner: str, repo: str, pr_number: int) -> tuple[bool, str | 
         )
     if not enabled:
         try:
-            # K5/#631 (norm set 2026-07-06): the merge QUEUE's configured method is the
+            # Norm set 2026-07-06: the merge QUEUE's configured method is the
             # single merge-method norm. gh syntax requires a method flag, but on a
             # merge-queue repo the queue overrides it — `--merge` is the one canonical,
             # inert spelling everywhere (test_workflow_security_invariants enforces it).
@@ -389,7 +389,7 @@ def _maybe_arm_auto_merge(
 ) -> dict[str, object]:
     """Arm merge-queue auto-merge for a PR only when it is eligible."""
     # Eligibility is evaluate_review_state's alone, and it has two shapes under the flat
-    # schema: an affirmative `—/—` verdict past grace with no blocking threads, or a fired
+    # schema: a classified `—/—` lane past grace with no blocking threads, or a fired
     # non-`nope` flag whose review lane has completed (APPROVED + threads clear), also past
     # grace. `nope` never qualifies. Read the predicate there, not this comment.
     # Returns a small report; never raises for the ordinary not-eligible or not-authorized
@@ -827,7 +827,7 @@ def _risk_pair_for_pr(labels: set[str]) -> tuple[str | None, str | None, bool]:
     # ``filetype_flag`` is "med"/"low"/None; ``depth_flag`` is "nope"/"high"/None.
     # ``classified`` is True iff ANY risk/* flag is present — no flag present means we
     # cannot confirm the PR was classified from labels alone (an all-absent PR is NOT
-    # classified-clear: it holds until an affirmative verdict says otherwise).
+    # classified-clear: it holds until the classifier says the lane is `—/—`).
     filetype_flag = (
         "med" if RISK_MED_LABEL in labels
         else "low" if RISK_LOW_LABEL in labels
@@ -859,7 +859,7 @@ def _validate_pair(filetype_flag: str | None, depth_flag: str | None) -> None:
 def _tier_from_pair(filetype_flag: str | None, depth_flag: str | None, marked: bool) -> str:
     """Collapse a lane pair to the single-tier vocabulary (nope>high>med>low>clear)."""
     # An incompletely marked PR is `unknown` and HOLDS. Fails loud on an out-of-vocabulary
-    # flag (e.g. a caller-supplied `verdict` typo like "medium") instead of letting it fall
+    # flag (e.g. a caller-supplied `classified_lane` typo like "medium") instead of letting it fall
     # through to `clear` and misroute the PR.
     _validate_pair(filetype_flag, depth_flag)
     if not marked:
@@ -877,7 +877,7 @@ def _tier_from_pair(filetype_flag: str | None, depth_flag: str | None, marked: b
 
 def _classify_pr_pair(owner: str, repo: str, pr_number: int) -> tuple[str | None, str | None]:
     """Run the two parallel analyses (classify_paths) over the PR's changed files."""
-    # The classifier is the SINGLE source of both axes (K1/K2); this is the engine-side
+    # The classifier is the SINGLE source of both axes; this is the engine-side
     # bridge that lets the restamp mirror the current diff on synchronize. Raises on any
     # API/import failure — callers fail SAFE by keeping the existing labels (a PR is never
     # armed off a failed classification; an unmarked PR holds).
@@ -900,10 +900,10 @@ def restamp_risk_pair(
     filetype_flag: str | None,
     depth_flag: str | None,
 ) -> list[str]:
-    """Make the PR's risk labels mirror the classifier's verdict — the 'restamp'."""
+    """Make the PR's risk labels mirror the classified lane — the 'restamp'."""
     # ``desired`` is the flat label for each fired axis: the filetype label if
     # ``filetype_flag`` is set, plus the filedepth label if ``depth_flag`` is set. A `—/—`
-    # verdict (both None) yields an EMPTY desired set — a clear verdict stamps nothing and
+    # lane (both None) yields an EMPTY desired set — a clear lane stamps nothing and
     # removes any stale risk/* label. ``managed`` is the flat set PLUS anything already on the
     # PR that lives in the risk namespace, so managed-not-desired labels are removed — that is
     # what retires a superseded vocabulary in passing, without a migration script.
@@ -935,12 +935,12 @@ def evaluate_review_state(
     now: datetime | None = None,
     grace_minutes: int = DEFAULT_GRACE_MINUTES,
     auto_resolve_reviewers: set[str] | None = None,
-    verdict: tuple[str | None, str | None] | None = None,
+    classified_lane: tuple[str | None, str | None] | None = None,
 ) -> dict[str, object]:
     """Return one machine-readable view of the PR's current review state."""
-    # ``verdict`` is an optional caller-supplied ``(filetype_flag, depth_flag)`` straight
-    # from the classifier — passed by the POST-classify evaluate calls so a `—/—` verdict
-    # is affirmatively clear even with zero labels. Without a verdict the flags are read off
+    # ``classified_lane`` is an optional caller-supplied ``(filetype_flag, depth_flag)``
+    # straight from the classifier — passed by the POST-classify evaluate calls so a `—/—`
+    # lane is affirmatively clear even with zero labels. Without it the flags are read off
     # the labels, and an all-absent PR is ``unknown`` and HOLDS (never armed) — the safety
     # property that absence of a label is not the clear state.
     label_names = {
@@ -977,12 +977,12 @@ def evaluate_review_state(
     draft = bool(pr.get("isDraft"))
     blocking_review = review_decision == "CHANGES_REQUESTED"
     _assert_risk_marker_exclusive(label_names)
-    # The lane is the flat (filetype, depth) pair. A caller-supplied verdict (the classifier's
-    # fresh reading) is authoritative and always "marked" — so a `—/—` verdict is affirmatively
-    # clear even with zero labels. Without a verdict the flags are read off the labels, and an
+    # The lane is the flat (filetype, depth) pair. A caller-supplied lane (the classifier's
+    # fresh reading) is authoritative and always "marked" — so a `—/—` lane is affirmatively
+    # clear even with zero labels. Without one the flags are read off the labels, and an
     # all-absent PR is NOT marked (unknown, holds — absence of a label is not the clear state).
-    if verdict is not None:
-        filetype_flag, depth_flag = verdict
+    if classified_lane is not None:
+        filetype_flag, depth_flag = classified_lane
         pair_marked = True
     else:
         filetype_flag, depth_flag, pair_marked = _risk_pair_for_pr(label_names)
@@ -990,7 +990,7 @@ def evaluate_review_state(
     is_clear = pair_marked and filetype_flag is None and depth_flag is None
     low_risk = risk_tier == "low"
     merge_blocked = draft or blocking_review or current_unresolved > 0
-    # K6 lane completion — flags are transient routing state, consumed as the PR clears
+    # Lane completion — flags are transient routing state, consumed as the PR clears
     # its lane: an approving review with no current threads completes the lane, the engine
     # clears the fired flag (the projection removes the fired flat risk/* label), and the PR
     # flows. depth:nope is NEVER auto-cleared — it always requires a human merge.
@@ -1002,7 +1002,7 @@ def evaluate_review_state(
         and depth_flag != "nope"
         and (filetype_flag is not None or depth_flag is not None)
     )
-    # K3/#629 + K6: the `—/—` pair arms on open; a flagged lane arms once its review
+    # The `—/—` pair arms on open; a flagged lane arms once its review
     # completes (the flag is consumed). nope and any unmarked PR HOLD, always.
     eligible_for_auto_merge = (
         AGENT_AUTO_MERGE_ENABLED
@@ -1088,7 +1088,7 @@ def apply_review_state_projection(
         current_labels.discard(DEFAULT_PENDING_LABEL)
 
     # Clear-on-completion: the lane's review completed, so the fired flag is CONSUMED —
-    # restamp to `—/—`, removing every risk/* flag (a clear verdict stamps none). The next
+    # restamp to `—/—`, removing every risk/* flag (a clear lane stamps none). The next
     # synchronize (new code) restamps from the classifier and re-enters the lane; with no
     # new code the cleared (label-free) PR becomes eligible and flows once the grace window
     # elapses. nope is never flag_clearable.
@@ -1218,9 +1218,9 @@ def _build_reconciliation_report(
                 grace_minutes=grace_minutes,
                 auto_resolve_reviewers=auto_resolve_reviewers,
             )
-            # K6 restamp (#632) — this sweep IS the backfill automation: every open PR's
+            # Restamp — this sweep IS the backfill automation: every open PR's
             # risk labels are re-mirrored from the one classifier, so unmarked/stale-labeled
-            # in-flight PRs migrate without a hand-sweep. The verdict is always fetched; only
+            # in-flight PRs migrate without a hand-sweep. The lane is always fetched; only
             # the restamp is skipped once the lane completed (its flag was consumed). A
             # classification error skips the restamp and leaves labels as-is; the PR is then
             # evaluated on its existing labels, so an unmarked PR reads `unknown` and fails
@@ -1231,7 +1231,7 @@ def _build_reconciliation_report(
                 ft_flag, dp_flag = _classify_pr_pair(owner, repo, pr_number)
             except Exception as exc:  # noqa: BLE001  # pylint: disable=broad-except
                 print(
-                    f"::warning::K6 restamp skipped for #{pr_number}: {exc}",
+                    f"::warning::risk restamp skipped for #{pr_number}: {exc}",
                     file=sys.stderr,
                 )
             else:
@@ -1245,22 +1245,22 @@ def _build_reconciliation_report(
                     }
                     restamp_actions = restamp_risk_pair(pr_number, label_set, ft_flag, dp_flag)
                     pr["labels"] = {"nodes": [{"name": name} for name in sorted(label_set)]}
-                # Re-evaluate with the verdict when the diff was (re)stamped, OR when a
+                # Re-evaluate with the classified lane when the diff was (re)stamped, OR when a
                 # lane-complete PR carries NO risk/* flag (first-pass risk_tier == "unknown")
                 # — the consumed-clear (—/—) case, which must read affirmatively clear (not
                 # `unknown`) so it isn't wrongly disarmed. A lane-complete PR that STILL has a
                 # stale flag keeps its label-derived state so the projection consumes it; a
-                # verdict override there would leave the stale flag orphaned.
+                # lane override there would leave the stale flag orphaned.
                 if not state.get("lane_complete") or state.get("risk_tier") == "unknown":
                     state = evaluate_review_state(
                         pr,
                         now=now,
                         grace_minutes=grace_minutes,
                         auto_resolve_reviewers=auto_resolve_reviewers,
-                        verdict=(ft_flag, dp_flag),
+                        classified_lane=(ft_flag, dp_flag),
                     )
         except RiskMarkerInvariantError as exc:
-            # The K4/K6 mutual-exclusion invariant tripped on THIS PR. Fail loud — record
+            # The risk-marker mutual-exclusion invariant tripped on THIS PR. Fail loud — record
             # it and surface a non-zero exit — but do NOT abort the sweep: one mis-labeled
             # PR must not starve every other open PR of reconciliation. Scoped to the
             # dedicated type so an unrelated ValueError still fails the run normally.
@@ -1275,8 +1275,8 @@ def _build_reconciliation_report(
         auto_merge_enabled = bool((pr.get("autoMergeRequest") or {}).get("enabledAt"))
         arm_error = None
         # Protected paths are not vetoed here anymore — the CODEOWNERS hard gate blocks
-        # their merge regardless of label/arm (K1/#627, K2/#628 retired in favor of the
-        # single, enforced source). Promotion keys only on eligibility + no merge block.
+        # their merge regardless of label/arm (the per-engine glob lists were retired in
+        # favor of the single, enforced source). Promotion keys only on eligibility + no merge block.
         if (
             AGENT_AUTO_MERGE_ENABLED
             and
@@ -1405,8 +1405,8 @@ def sync_pr(args: argparse.Namespace) -> int:
         auto_resolve_reviewers=auto_resolve_reviewers,
     )
 
-    # K6 restamp-on-sync (#632): risk labels mirror the CURRENT diff from the one classifier.
-    # The verdict is always fetched (so a consumed-clear lane reads clear, not unknown); only
+    # Restamp-on-sync: risk labels mirror the CURRENT diff from the one classifier.
+    # The lane is always fetched (so a consumed-clear lane reads clear, not unknown); only
     # the restamp is skipped once the lane completed (its flag was consumed). A classification
     # error skips the restamp and leaves labels as-is; the PR is then evaluated on its existing
     # labels, so an unmarked PR reads `unknown` and fails CLOSED — the projection disarms it.
@@ -1416,7 +1416,7 @@ def sync_pr(args: argparse.Namespace) -> int:
         ft_flag, dp_flag = _classify_pr_pair(args.owner, args.repo, args.pr_number)
     except Exception as exc:  # noqa: BLE001  # pylint: disable=broad-except
         print(
-            f"::warning::K6 restamp skipped for #{args.pr_number} "
+            f"::warning::risk restamp skipped for #{args.pr_number} "
             f"(classification failed; labels left as-is): {exc}",
             file=sys.stderr,
         )
@@ -1431,17 +1431,18 @@ def sync_pr(args: argparse.Namespace) -> int:
             }
             restamp_actions = restamp_risk_pair(args.pr_number, label_set, ft_flag, dp_flag)
             pr["labels"] = {"nodes": [{"name": name} for name in sorted(label_set)]}
-        # Re-evaluate with the verdict when the diff was (re)stamped, OR when a lane-complete
-        # PR carries NO risk/* flag (first-pass risk_tier == "unknown") — the consumed-clear
-        # (—/—) case, which must read affirmatively clear (not `unknown`) so it isn't wrongly
-        # disarmed. A lane-complete PR that STILL has a stale flag keeps its label-derived
-        # state so the projection consumes it; a verdict override there would orphan the flag.
+        # Re-evaluate with the classified lane when the diff was (re)stamped, OR when a
+        # lane-complete PR carries NO risk/* flag (first-pass risk_tier == "unknown") —
+        # the consumed-clear (—/—) case, which must read affirmatively clear (not
+        # `unknown`) so it isn't wrongly disarmed. A lane-complete PR that STILL has a
+        # stale flag keeps its label-derived state so the projection consumes it; a lane
+        # override there would orphan the flag.
         if not state.get("lane_complete") or state.get("risk_tier") == "unknown":
             state = evaluate_review_state(
                 pr,
                 grace_minutes=args.grace_minutes,
                 auto_resolve_reviewers=auto_resolve_reviewers,
-                verdict=(ft_flag, dp_flag),
+                classified_lane=(ft_flag, dp_flag),
             )
 
     clear_pending = (
