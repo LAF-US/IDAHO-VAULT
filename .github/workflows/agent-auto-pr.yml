@@ -45,6 +45,15 @@ jobs:
           # The namespaced-form test is self-maintaining: adding an agent needs no edit, and
           # `dependabot/*` is admitted by construction — "one among the many", no separate list.
           case "$BRANCH_NAME" in
+            gh-readonly-queue/*)
+              # GitHub's own merge-queue ephemeral branches are slash-namespaced
+              # like a real work branch, but they are GitHub-internal, not agent
+              # work, and `gh pr create` against one fails outright ("Head must
+              # not be a merge queue branch") -- exclude before the generic
+              # namespaced-branch match below.
+              echo "skip=true" >> "$GITHUB_OUTPUT"
+              echo "branch_name=$BRANCH_NAME" >> "$GITHUB_OUTPUT"
+              ;;
             */*)
               if ! [[ "$BRANCH_NAME" =~ ^[A-Za-z0-9._/-]+$ ]]; then
                 echo "skip=true" >> "$GITHUB_OUTPUT"
