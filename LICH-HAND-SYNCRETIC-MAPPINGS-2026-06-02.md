@@ -111,4 +111,8 @@ Revises nothing — not the doctrinal nodes, not the convergence doc. It is the 
 
 **Revision (2026-07-02, Logan-directed):** propagated the **Authority — persistence** axis discipline (`[[SEAM-LENS-AUTHORITY-PERSISTENCE-AND-THE-LICH-DIAGNOSIS-2026-07-02]]`): the axis is named for the neutral faculty (Authority), with *lich* / *Baelnorn* as its unauthorized / authorized **verdicts**. Corrected this index's own compression — an earlier draft bared THRESHOLD-DOCTRINE's table (which reads *"Lich Problem | Unauthorized persistence,"* a doctrine-name plus a neutral verb) down to *"Lich = persistence,"* which is where the creature-word first crept up into an axis-name. Also added the Threshold **locus** note: the Hand enters that axis as an agentic anchor (provenance + hunting-agency); its undeath is tangential there.
 
-###### [["The world is quiet here."]]
+---
+
+```
+The world is quiet here．Esto Perpetua!
+```

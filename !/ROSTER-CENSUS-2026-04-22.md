@@ -10,6 +10,7 @@ related:
 - TRI-PART
 - Maiden.Mother.Crone
 - HECATE
+
 ---
 
 # ROSTER CENSUS — 2026-04-22
@@ -212,8 +213,10 @@ Each dotfolder can be activated as a **prismatic layer** by stacking:
 4. [ ] Add runtime configs to tool stubs
 5. [ ] Audit `.ares/` and similar "ancient" stubs for intended use
 
+###### [ Maiden : Mother : Crone ]
+
 ---
 
-###### [["The world is quiet here."]]
-
-###### [ Maiden : Mother : Crone ]
+```
+The world is quiet here．Esto Perpetua!
+```

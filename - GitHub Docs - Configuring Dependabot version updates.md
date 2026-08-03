@@ -10,30 +10,29 @@ You enable Dependabot version updates by committing a `dependabot.yml` configura
 
 1. On GitHub, navigate to the main page of the repository.
 2. Under your repository name, click **Settings**. If you cannot see the "Settings" tab, select the dropdown menu, then click **Settings**.
- ![Screenshot of a repository header showing the tabs. The "Settings" tab is highlighted by a dark orange outline.](https://docs.github.com/assets/cb-28260/mw-1440/images/help/repository/repo-actions-settings.webp)
+   ![Screenshot of a repository header showing the tabs. The "Settings" tab is highlighted by a dark orange outline.](https://docs.github.com/assets/cb-28260/mw-1440/images/help/repository/repo-actions-settings.webp)
 3. In the "Security" section of the sidebar, click **Advanced Security**.
 4. Under "Dependabot", to the right of "Dependabot version updates", click **Enable** to open a basic `dependabot.yml` configuration file in the `.github` directory of your repository. For information about the options you can use to customize how Dependabot maintains your repositories, see [Dependabot options reference](https://docs.github.com/en/code-security/dependabot/working-with-dependabot/dependabot-options-reference).
 
- ```yaml
- # To get started with Dependabot version updates, you'll need to specify which
- # package ecosystems to update and where the package manifests are located.
- version: 2
- updates:
- - package-ecosystem: "" # See documentation for possible values
-   directory: "/" # Location of package manifests
-   schedule:
-     interval: "weekly"
- ```
+   ```yaml
+   # To get started with Dependabot version updates, you'll need to specify which
+   # package ecosystems to update and where the package manifests are located.
+   version: 2
+   updates:
+   - package-ecosystem: "" # See documentation for possible values
+     directory: "/" # Location of package manifests
+     schedule:
+       interval: "weekly"
+   ```
 
-1. Add a `version`. This key is mandatory. The file must start with `version: 2`.
-2. Optionally, if you have dependencies in a private registry, add a `registries` section containing authentication details. For more information, see [Configuring access to private registries for Dependabot](https://docs.github.com/en/code-security/dependabot/working-with-dependabot/configuring-access-to-private-registries-for-dependabot).
-3. Add an `updates` section, with an entry for each package manager you want Dependabot to monitor. This key is mandatory. You use it to configure how Dependabot updates the versions or your project's dependencies. Each entry configures the update settings for a particular package manager. For more information, see [About the dependabot.yml file](https://docs.github.com/en/code-security/concepts/supply-chain-security/about-the-dependabot-yml-file) and [Dependabot options reference](https://docs.github.com/en/code-security/dependabot/working-with-dependabot/dependabot-options-reference).
-4. For each package manager, use:
-
-- `package-ecosystem` to specify the package manager. For more information about the supported package managers, see [`package-ecosystem`](https://docs.github.com/en/code-security/dependabot/working-with-dependabot/dependabot-options-reference#package-ecosystem-).
-- `directories` or `directory` to specify the location of multiple manifest or other definition files. For more information, see [Defining multiple locations for manifest files](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/controlling-dependencies-updated#defining-multiple-locations-for-manifest-files).
-- `schedule.interval` to specify how often to check for new versions.
-1. Check the `dependabot.yml` configuration file in to the `.github` directory of the repository.
+5. Add a `version`. This key is mandatory. The file must start with `version: 2`.
+6. Optionally, if you have dependencies in a private registry, add a `registries` section containing authentication details. For more information, see [Configuring access to private registries for Dependabot](https://docs.github.com/en/code-security/dependabot/working-with-dependabot/configuring-access-to-private-registries-for-dependabot).
+7. Add an `updates` section, with an entry for each package manager you want Dependabot to monitor. This key is mandatory. You use it to configure how Dependabot updates the versions or your project's dependencies. Each entry configures the update settings for a particular package manager. For more information, see [About the dependabot.yml file](https://docs.github.com/en/code-security/concepts/supply-chain-security/about-the-dependabot-yml-file) and [Dependabot options reference](https://docs.github.com/en/code-security/dependabot/working-with-dependabot/dependabot-options-reference).
+8. For each package manager, use:
+   - `package-ecosystem` to specify the package manager. For more information about the supported package managers, see [`package-ecosystem`](https://docs.github.com/en/code-security/dependabot/working-with-dependabot/dependabot-options-reference#package-ecosystem-).
+   - `directories` or `directory` to specify the location of multiple manifest or other definition files. For more information, see [Defining multiple locations for manifest files](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/controlling-dependencies-updated#defining-multiple-locations-for-manifest-files).
+   - `schedule.interval` to specify how often to check for new versions.
+9. Check the `dependabot.yml` configuration file in to the `.github` directory of the repository.
 
 ### Example dependabot.yml file
 
@@ -80,7 +79,7 @@ On a fork, you also need to explicitly enable Dependabot.
 
 1. On GitHub, navigate to the main page of the repository.
 2. Under your repository name, click **Settings**. If you cannot see the "Settings" tab, select the dropdown menu, then click **Settings**.
- ![Screenshot of a repository header showing the tabs. The "Settings" tab is highlighted by a dark orange outline.](https://docs.github.com/assets/cb-28260/mw-1440/images/help/repository/repo-actions-settings.webp)
+   ![Screenshot of a repository header showing the tabs. The "Settings" tab is highlighted by a dark orange outline.](https://docs.github.com/assets/cb-28260/mw-1440/images/help/repository/repo-actions-settings.webp)
 3. In the "Security" section of the sidebar, click **Advanced Security**.
 4. Under "Dependabot," to the right of "Dependabot version updates," click **Enable** to allow Dependabot to initiate version updates.
 

@@ -13,6 +13,7 @@ import pytest
 def load_reconciler():
     module_path = Path(__file__).resolve().parents[1] / "dotfolder_reconcile.py"
     spec = importlib.util.spec_from_file_location("dotfolder_reconcile_test_module", module_path)
+    assert spec is not None
     module = importlib.util.module_from_spec(spec)
     assert spec.loader is not None
     sys.modules[spec.name] = module
@@ -776,6 +777,7 @@ def test_containment_include_ignored_scans_gitignored_auth_json(tmp_path: Path) 
         check=True,
         stdout=subprocess.DEVNULL,
         stderr=subprocess.DEVNULL,
+        timeout=30,
     )
     secret_path = vault_root / ".codex" / "auth.json"
     secret_path.parent.mkdir(parents=True)
