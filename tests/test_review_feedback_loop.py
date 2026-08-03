@@ -436,6 +436,29 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertNotIn("remove:risk/high", actions)
         self.assertEqual(labels, {"risk/low", "risk/high"})
 
+    def test_restamp_retires_a_superseded_vocabulary_in_passing(self) -> None:
+        # The engine owns the whole risk namespace, not just the four labels it stamps, so a
+        # PR still wearing #854's retired nine-string scheme converges on its next classify
+        # instead of needing a migration run by hand. Non-risk labels stay untouched.
+        retired = {
+            "filetype:risk/low", "filetype:risk/med", "filetype:risk/—",
+            "depth:risk/high", "depth:risk/nope", "depth:risk/—", "risk/—",
+        }
+        with mock.patch.object(review_feedback_loop, "_edit_label"):
+            labels = set(retired) | {"review/pending", "agent:claude-code"}
+            actions = review_feedback_loop.restamp_risk_pair(31, labels, "med", "high")
+        for label in retired:
+            self.assertIn(f"remove:{label}", actions)
+        self.assertIn("add:risk/med", actions)
+        self.assertIn("add:risk/high", actions)
+        self.assertEqual(labels, {"risk/med", "risk/high", "review/pending", "agent:claude-code"})
+
+        # A `—/—` verdict strips the retired vocabulary too, stamping nothing in its place.
+        with mock.patch.object(review_feedback_loop, "_edit_label"):
+            labels = set(retired) | {"review/pending"}
+            review_feedback_loop.restamp_risk_pair(32, labels, None, None)
+        self.assertEqual(labels, {"review/pending"})
+
     def test_sync_pr_restamps_unmarked_pr_from_classifier(self) -> None:
         # K6 backfill-by-automation: an unmarked in-flight PR gets its pair stamped from
         # the classifier on the next sync — no hand-sweep.
