@@ -38,6 +38,7 @@ from pathlib import Path
 import argparse
 import re
 import subprocess
+import sys
 
 from startup_surfaces import candidates, resolve_rel
 
@@ -78,12 +79,20 @@ PORTABILITY_PATTERNS = {
 
 
 def tracked_files(repo_root: Path) -> list[str]:
-    """Every file git tracks, as repo-relative POSIX paths."""
+    """Every file git tracks, as repo-relative POSIX paths.
+
+    Captured as bytes and decoded explicitly. `text=True` would decode with
+    the process locale, which on a Windows runner is cp1252 — and the vault
+    tracks filenames containing curly quotes, so the reader thread dies with
+    a UnicodeDecodeError and `result.stdout` comes back None. `-z` also
+    suppresses git's octal path quoting, so these bytes are raw UTF-8.
+    """
     result = subprocess.run(
         ["git", "-C", str(repo_root), "ls-files", "-z"],
-        capture_output=True, text=True, check=True,
+        capture_output=True, check=True,
     )
-    return [p for p in result.stdout.split("\0") if p]
+    decoded = result.stdout.decode("utf-8", errors="surrogateescape")
+    return [p for p in decoded.split("\0") if p]
 
 
 def scan_targets(repo_root: Path) -> list[str]:
@@ -118,6 +127,12 @@ def main() -> int:
         help="exit non-zero when issues are found in the gated scope",
     )
     args = parser.parse_args()
+
+    # A Windows runner's console defaults to cp1252. Any finding whose path
+    # contains a character outside that set would kill the report on print,
+    # after the scan had already succeeded.
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
     repo_root = Path(__file__).resolve().parents[2]
     gated: list[str] = []
