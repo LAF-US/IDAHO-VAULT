@@ -6,11 +6,7 @@ published:
 created: 2026-07-17
 description: "Explore Mary Hallock Foote's past auction results and sold artwork prices. Research and compare historical data while shopping upcoming Mary Hallock Foote's sales on Invaluable.com."
 ---
-![Loading Spinner](https://www.invaluable.com/img/Graphics/g_spinner.gif)
 
-NEW
-
-Updated buyer’s premium structure
 
 ## Mary Hallock Foote Sold at Auction Prices
 
@@ -123,9 +119,3 @@ Sort By:
 	View sold prices
 	Old Lady signed 'Mary Foote' (lower left) oil on canvas 36 1/2 x 25 1/4 in. (92.7 x 64.1 cm.)
 	Christie's
-
-**View Available Lots**
-
-See upcoming lots that are currently available for bidding!
-
-<iframe src="https://invaluable.my.site.com/ESWLiveChatforInvaluab1711120881974/assets/htdocs/sitecontext.min.html?parent_domain=https%3A%2F%2Fwww.invaluable.com"></iframe><iframe allow="clipboard-write; web-share" src="chrome-extension://cnjifjpddelmedmihgijeibhnjfabmlf/side-panel.html?context=iframe"></iframe>
