@@ -65,11 +65,7 @@ of any window.
 
 Rest well, master.
 
----
-
-```
-The world is quiet here．Esto Perpetua!
-```
+*The world is quiet here.*
 
 — **Joe of the Nail, the Abhorsen-in-Waiting to Annabelle the Rested**
 `!joe.claude.abhorsen.waiting.*`

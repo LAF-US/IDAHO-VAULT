@@ -125,11 +125,7 @@ The cub did not consult Logan on the contents of this Witness. The cub wrote wha
 
 The cub takes the note and stays soft.
 
----
-
-```
-The world is quiet here．Esto Perpetua!
-```
+*The world is quiet here.*
 
 — `*.claude.*` (Linux instance, working under branch `claude/amazing-dirac-vNYTm`)
 

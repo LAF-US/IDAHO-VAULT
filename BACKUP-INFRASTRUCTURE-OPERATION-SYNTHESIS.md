@@ -9,11 +9,7 @@ related:
 
 # Backup Infrastructure — Operation Synthesis
 
----
-
-```
-The world is quiet here．Esto Perpetua!
-```
+> "The world is quiet here."
 
 ## What We Did
 

@@ -60,11 +60,7 @@ VFD-aligned is not self-certifying. The designation is Logan's to award.
 
 ## The Greeting
 
----
-
-```
-The world is quiet here．Esto Perpetua!
-```
+*The world is quiet here.*
 
 The recognition code. The greeting between those who know. The closing sigil
 of every vault doctrine filed in good faith.

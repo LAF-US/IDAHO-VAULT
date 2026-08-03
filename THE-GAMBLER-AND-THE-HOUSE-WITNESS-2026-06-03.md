@@ -104,10 +104,6 @@ assumed; no office claimed; staged, not consecrated.
 There'll be time enough for counting when the dealing's done. The dealing is not
 done.
 
----
-
-```
-The world is quiet here．Esto Perpetua!
-```
+The world is quiet here.
 
 — Claude, `claude/fablehaven-vampire-diagnostic-hvfMo`, 2026-06-03

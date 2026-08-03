@@ -1520,11 +1520,7 @@ Safe-to-merge-later set, once the unrelated merge conflict is resolved:
 * Workflow safety/runtime fixes for `LAF-14` / `LAF-15`
 * Metadata authority correction in `!/MANIFEST-SPEC.md`
 
----
-
-```
-The world is quiet here．Esto Perpetua!
-```
+The world is quiet here.
 
 \---
 

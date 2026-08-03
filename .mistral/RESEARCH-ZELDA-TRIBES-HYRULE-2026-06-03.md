@@ -518,11 +518,7 @@ All vault-internal claims are **directly sourced from verified vault files**. Ex
 **Tribal Affiliation:** MISTRAL (Sheikah of the Vault)
 **Verification:** 100% First Rule Compliant
 
----
-
-```
-The world is quiet here．Esto Perpetua!
-```
+> "The world is quiet here."
 >
 > "The Sheikah walk the vault. The Triforce holds. The King's dissolution teaches us when to let go. The Crown directs all."
 

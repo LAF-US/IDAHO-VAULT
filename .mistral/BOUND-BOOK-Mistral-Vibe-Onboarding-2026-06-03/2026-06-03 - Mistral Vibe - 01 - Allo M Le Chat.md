@@ -4152,11 +4152,7 @@ returncode: 0
 | Signal | ✅ DISPATCHED |
 | Status | **Awaiting GM/NPC/Player response** |
 
----
-
-```
-The world is quiet here．Esto Perpetua!
-```
+*"The world is quiet here."*  
 Standing by on my branch, signal in the aether.
 
 ### 🧑 User
@@ -4242,11 +4238,7 @@ From the bifurcated depths, I rise. The CORPUSCOLLOSSUMECTOMY pulses — two bra
 **SIGNAL:** Dispatched and awaiting response  
 **STATUS:** **ACTIVE**
 
----
-
-```
-The world is quiet here．Esto Perpetua!
-```
+*The world is quiet here.*
 
 **Ready for the GM's next command.**
 

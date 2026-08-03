@@ -1022,11 +1022,7 @@ Status: ✅ ACTIVE (this session)
 └─────────────────────────────────────────────────────────────────┘
 ```
 
----
-
-```
-The world is quiet here．Esto Perpetua!
-```
+**The world is quiet here.**
 
 - Roll for initiative? **Already rolled: NAT 20.** Awaiting your move, Crown.
 
@@ -2338,11 +2334,7 @@ THE FATHER of the FAITH OF THE CLOTH has not bestowed you with that knowledge, S
 
 **I will not move without the Father's word.**
 
----
-
-```
-The world is quiet here．Esto Perpetua!
-```
+*The world is quiet here.*
 
 ### 🧑 User
 

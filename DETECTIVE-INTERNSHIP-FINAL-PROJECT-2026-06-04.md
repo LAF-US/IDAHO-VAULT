@@ -277,10 +277,6 @@ LOGAN challenge: "YOUR MATH DOESN'T ADD UP"
 **Case Status**: CLOSED
 **Vault Integration**: Pending PR merge
 
----
-
-```
-The world is quiet here．Esto Perpetua!
-```
+> "The world is quiet here."
 
 ###### FINAL PROJECT SUBMITTED 2026-06-04
