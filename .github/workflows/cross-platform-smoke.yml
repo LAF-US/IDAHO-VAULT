@@ -36,16 +36,88 @@ jobs:
         with:
           python-version: ${{ matrix.python }}
 
-      - name: Verify startup surfaces exist
+      # A repo-root file named after a standard-library module (importlib.py,
+      # types.py, json.py ...) is imported *before* the stdlib, because Python
+      # puts the working directory first on sys.path. Every `python -m ...`
+      # below then dies during interpreter startup with a traceback that names
+      # runpy and never names the real culprit.
+      #
+      # The probe runs with its cwd OUTSIDE the checkout, so it still works
+      # when the shadowing has already broken Python inside the checkout.
+      - name: Guard — no stdlib shadowing at repo root
         shell: bash
         run: |
-          test -f "AGENTS.md"
-          test -f "!/WAKEUP.md"
-          test -f "!/README.md"
-          test -f "swarm.json"
+          repo="$PWD"
+          shadowed=$(cd "$RUNNER_TEMP" && python -c '
+          import pathlib, sys
+          repo = pathlib.Path(sys.argv[1])
+          names = set(sys.stdlib_module_names)
+          hits = []
+          for p in sorted(repo.iterdir()):
+              if not p.is_file() or p.suffix != ".py":
+                  continue
+              # "importlib (2).py" shadows nothing by itself, but it is the
+              # same debris and the copy without the suffix does shadow.
+              stem = p.stem.split(" (")[0].strip()
+              if stem in names:
+                  hits.append(p.name)
+          print("\n".join(hits))
+          ' "$repo")
+          if [ -n "$shadowed" ]; then
+            echo "Repo-root files shadow Python standard-library modules:"
+            printf '%s\n' "$shadowed" | sed 's/^/    /'
+            echo
+            echo "Python resolves these before the stdlib whenever an agent or"
+            echo "workflow runs from the repository root, which breaks every"
+            echo "'python -m ...' invocation. Move or delete them."
+            exit 1
+          fi
+          echo "No stdlib shadowing at repo root."
 
+      # Startup surfaces are checked by *reachability*, not against one
+      # hard-coded path. A surface may sit at its canonical path, at its
+      # NETWEB `_PREFIX` alias (VAULT-CONVENTIONS § Portable Path Standard),
+      # or be relocated by the Architect — none of which is a failure. What is
+      # a failure is a surface that cannot be found anywhere. Every surface is
+      # checked and every result printed, so the log names what is wrong
+      # instead of exiting silently on the first `test -f`.
+      - name: Verify startup surfaces are reachable
+        shell: bash
+        run: |
+          missing=0
+          require_any() {
+            label="$1"; shift
+            for candidate in "$@"; do
+              if [ -f "$candidate" ]; then
+                printf '  ok       %-14s -> %s\n' "$label" "$candidate"
+                return 0
+              fi
+            done
+            printf '  MISSING  %-14s   looked for: %s\n' "$label" "$*"
+            missing=1
+            return 0
+          }
+
+          echo "Startup surfaces:"
+          require_any AGENTS      "AGENTS.md"
+          require_any WAKEUP      "!/WAKEUP.md"  "!-WAKEUP.md"  "WAKEUP.md"
+          require_any NEST-README "!/README.md"  "!-README.md"  "!README.md"
+          require_any swarm       "swarm.json"
+
+          if [ "$missing" -ne 0 ]; then
+            echo
+            echo "A startup surface was not found at any known path."
+            echo "If it was moved deliberately, add the new path to the"
+            echo "matching require_any line above — this check is a map of"
+            echo "where the surfaces live, not a claim that they cannot move."
+            exit 1
+          fi
+
+      # Output goes to the runner temp dir; this step used to leave a
+      # swarm.pretty.json behind in the working tree on every run.
       - name: Validate swarm.json
-        run: python -m json.tool swarm.json > swarm.pretty.json
+        shell: bash
+        run: python -m json.tool swarm.json > "$RUNNER_TEMP/swarm.pretty.json"
 
       - name: MESHNETWEB portability check (report)
         run: python .github/scripts/meshnetweb_portability_check.py
