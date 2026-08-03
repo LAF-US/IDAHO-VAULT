@@ -1,6 +1,6 @@
 name: Python Test Suite
 
-# Runs tests/ (unittest discovery) in CI. Before this workflow, no automation in
+# Runs tests/ (pytest) in CI. Before this workflow, no automation in
 # this repo ever installed the pyproject.toml/uv.lock dependency set (pydantic,
 # pytest, crewai, ...) or executed tests/*.py at all -- every other checker
 # workflow runs a single stdlib-only script directly, and "full test suite
@@ -39,4 +39,4 @@ jobs:
         run: uv sync
 
       - name: Run test suite
-        run: uv run python -m unittest discover -s tests -p "test_*.py" -v
+        run: uv run pytest tests -v

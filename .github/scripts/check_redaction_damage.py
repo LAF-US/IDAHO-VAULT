@@ -35,7 +35,7 @@ import argparse
 import os
 import re
 import shutil
-import subprocess  # nosec B404 -- see [tool.bandit] note in pyproject.toml
+import subprocess
 import sys
 from dataclasses import dataclass
 from pathlib import Path

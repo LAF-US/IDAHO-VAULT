@@ -8,7 +8,7 @@ whole tracked tree for case-insensitive collisions.
 from __future__ import annotations
 
 import argparse
-import subprocess  # nosec B404 -- see [tool.bandit] note in pyproject.toml
+import subprocess
 import sys
 from collections import defaultdict
 
