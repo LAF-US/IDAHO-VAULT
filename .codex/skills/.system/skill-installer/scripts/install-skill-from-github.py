@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 from dataclasses import dataclass
 import os
+import re
 import shutil
 import subprocess
 import sys
@@ -119,6 +120,28 @@ def _validate_relative_path(path: str) -> None:
         raise InstallError("Skill path must be a relative path inside the repo.")
 
 
+# `git` takes its own options from argv, so shell=False is not the whole story:
+# these values land in `git clone --branch <ref> -- <url> <dir>` and
+# `git sparse-checkout set <paths>`, and a ref spelled `--upload-pack=...` is
+# remote code execution rather than a branch name. Values must not begin with
+# `-`, and are held to the characters refs, repo names and repo-relative paths
+# actually use. `git checkout <ref>` cannot take a `--` separator (there it
+# means "the rest are pathspecs"), so validation -- not a separator -- is what
+# closes this flow.
+_SAFE_GIT_ARG_RE = re.compile(r"\A[A-Za-z0-9._][A-Za-z0-9._/-]*\Z")
+
+
+def _validate_git_argument(value: str, label: str) -> str:
+    if not value:
+        raise InstallError(f"{label} must not be empty.")
+    if not _SAFE_GIT_ARG_RE.match(value):
+        raise InstallError(
+            f"{label} may not begin with '-' or contain characters outside "
+            f"[A-Za-z0-9._/-]: {value!r}"
+        )
+    return value
+
+
 def _validate_skill_name(name: str) -> None:
     altsep = os.path.altsep
     if not name or os.path.sep in name or (altsep and altsep in name):
@@ -128,6 +151,11 @@ def _validate_skill_name(name: str) -> None:
 
 
 def _git_sparse_checkout(repo_url: str, ref: str, paths: list[str], dest_dir: str) -> str:
+    _validate_git_argument(ref, "ref")
+    for path in paths:
+        _validate_git_argument(path, "skill path")
+    if repo_url.startswith("-"):
+        raise InstallError(f"repo URL may not begin with '-': {repo_url!r}")
     repo_dir = os.path.join(dest_dir, "repo")
     clone_cmd = [
         "git",
@@ -139,6 +167,7 @@ def _git_sparse_checkout(repo_url: str, ref: str, paths: list[str], dest_dir: st
         "--single-branch",
         "--branch",
         ref,
+        "--",
         repo_url,
         repo_dir,
     ]
@@ -154,6 +183,7 @@ def _git_sparse_checkout(repo_url: str, ref: str, paths: list[str], dest_dir: st
                 "1",
                 "--sparse",
                 "--single-branch",
+                "--",
                 repo_url,
                 repo_dir,
             ]
