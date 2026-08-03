@@ -6,7 +6,7 @@ from dataclasses import asdict, dataclass
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Iterable
-from urllib import error, request
+from urllib import error, parse, request
 
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
@@ -38,6 +38,18 @@ DEFAULT_SERVICES: tuple[ServiceSpec, ...] = (
 
 
 def check_service(service: ServiceSpec, timeout: float = 5.0) -> ServiceResult:
+    # `main` accepts any Iterable[ServiceSpec], so the defaults are not the only
+    # thing that reaches here. urlopen honours file:// and ftp://, which would
+    # turn a reachability probe into a local-file read reported as "reachable".
+    scheme = parse.urlparse(service.url).scheme
+    if scheme not in ("http", "https"):
+        return ServiceResult(
+            name=service.name,
+            url=service.url,
+            ok=False,
+            status_code=None,
+            detail=f"refused: unsupported URL scheme {scheme!r}",
+        )
     req = request.Request(
         service.url,
         method="HEAD",

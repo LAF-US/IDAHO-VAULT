@@ -12,6 +12,7 @@ from __future__ import annotations
 import json
 import os
 import sys
+import urllib.parse
 import urllib.request
 from dataclasses import dataclass
 from pathlib import Path
@@ -34,6 +35,13 @@ class Reporter(Protocol):
 
 class SlackReporter:
     def __init__(self, webhook_url: str) -> None:
+        # urlopen honours file:// and ftp://, so the scheme is checked where the
+        # URL enters rather than trusted because it came from the environment.
+        # A JANITOR_SLACK_WEBHOOK_URL set to file:///etc/passwd would otherwise
+        # read local disk and report the result as a delivery failure.
+        scheme = urllib.parse.urlparse(webhook_url).scheme
+        if scheme != "https":
+            raise ValueError(f"Slack webhook must be https, got {scheme!r}")
         self.webhook_url = webhook_url
 
     def send(self, event: FailedRunEvent, body: str) -> tuple[bool, str]:
