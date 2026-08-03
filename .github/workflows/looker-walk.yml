@@ -1,7 +1,7 @@
 name: Looker Walk — read-only PR triage census
 
 # Manually-dispatched, READ-ONLY companion to Layer C (#399). Runs
-# `review_feedback_loop.py looker-walk`, which classifies every open PR into
+# `thread_witness.py looker-walk`, which classifies every open PR into
 # lanes (clear / machine-disposable / would-cascade / needs-human) plus a stale
 # flag and a safe_to_drain verdict, and publishes the JSON triage report to the
 # run summary.
@@ -44,7 +44,7 @@ jobs:
           REPO: ${{ github.event.repository.name }}
           STALE_DAYS: ${{ github.event.inputs.stale_days || '14' }}
         run: |
-          python3 .github/scripts/review_feedback_loop.py looker-walk \
+          python3 .github/scripts/thread_witness.py looker-walk \
             --owner "$OWNER" \
             --repo "$REPO" \
             --stale-days "$STALE_DAYS" \
@@ -72,8 +72,8 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          python3 .github/scripts/review_feedback_loop.py render-worklist \
-            --input looker-walk.json > looker-worklist.md
+          python3 .github/scripts/thread_witness.py render-worklist \
+            < looker-walk.json > looker-worklist.md
           # Key off lane, not visible unresolved counts: a truncated PR is lane
           # needs-human with maybe 0 visible unresolved threads, but the census cannot
           # prove it clear — closing the issue then would over-claim. (codex on #531.)

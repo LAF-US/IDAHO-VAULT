@@ -22,6 +22,7 @@ COMPILE_FILES = [
     r".github\scripts\stale_bot_prs.py",
     r".github\scripts\sort_audit.py",
     r".github\scripts\review_feedback_loop.py",
+    r".github\scripts\thread_witness.py",
     r".github\scripts\pr_lifecycle.py",
     r".github\scripts\propose_moves.py",
     r".github\scripts\post_levelset_closure.py",
@@ -51,7 +52,7 @@ COMPILE_FILES = [
     r".github\scripts\branch_garden_report.py",
     r".github\scripts\bind_ai_book.py",
     r".github\scripts\backfill_daily_notes.py",
-    r".github\scripts\audit_repo_payloads.py",
+    # audit_repo_payloads.py removed 2026-07-24 (unwired one-shot slimming auditor; PR #854)
     r".github\swarm\tools\state_manager.py",
 ]
 
@@ -59,6 +60,7 @@ TEST_FILES = [
     r"tests\test_topology_census.py",
     r"tests\test_stale_bot_prs.py",
     r"tests\test_review_feedback_loop.py",
+    r"tests\test_thread_witness.py",
     r"tests\test_metadata_survey.py",
     r"tests\test_backfill_daily_notes.py",
     r"tests\test_daily_rollover.py",
@@ -79,7 +81,8 @@ def run_compilation_checks():
                 [sys.executable, "-m", "py_compile", filepath],
                 capture_output=True,
                 text=True,
-                timeout=10
+                timeout=10,
+                check=False,
             )
             
             if result.returncode == 0:
@@ -95,7 +98,7 @@ def run_compilation_checks():
             print(f"✗ FAIL: {filepath}")
             print("  Error: Timeout (>10s)")
             results.append((filepath, "FAIL", "Timeout (>10s)"))
-        except Exception as e:
+        except Exception as e:  # pylint: disable=broad-except
             print(f"✗ FAIL: {filepath}")
             print(f"  Error: {str(e)}")
             results.append((filepath, "FAIL", str(e)))
@@ -120,7 +123,8 @@ def run_pytest_tests():
                 [sys.executable, "-m", "pytest", test_file, "-v", "--tb=short"],
                 capture_output=True,
                 text=True,
-                timeout=60
+                timeout=60,
+                check=False,
             )
             
             if result.returncode == 0:
@@ -138,7 +142,7 @@ def run_pytest_tests():
             print("✗ FAIL")
             print("  Error: Timeout (>60s)")
             results.append((test_file, "FAIL", "Timeout (>60s)"))
-        except Exception as e:
+        except Exception as e:  # pylint: disable=broad-except
             print("✗ FAIL")
             print(f"  Error: {str(e)}")
             results.append((test_file, "FAIL", str(e)))
