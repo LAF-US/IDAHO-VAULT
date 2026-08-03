@@ -36,8 +36,8 @@ from __future__ import annotations
 
 from pathlib import Path
 import argparse
+import os
 import re
-import subprocess
 import sys
 
 from startup_surfaces import candidates, resolve_rel
@@ -61,6 +61,7 @@ EXCLUDED_PREFIXES = (
     ".claude/shell-snapshots/",
     ".claude/plugins/",
     ".serena/",
+    ".git/",
 )
 
 # These two *define* the patterns; their own source necessarily contains them.
@@ -78,31 +79,33 @@ PORTABILITY_PATTERNS = {
 }
 
 
-def tracked_files(repo_root: Path) -> list[str]:
-    """Every file git tracks, as repo-relative POSIX paths.
-
-    Captured as bytes and decoded explicitly. `text=True` would decode with
-    the process locale, which on a Windows runner is cp1252 — and the vault
-    tracks filenames containing curly quotes, so the reader thread dies with
-    a UnicodeDecodeError and `result.stdout` comes back None. `-z` also
-    suppresses git's octal path quoting, so these bytes are raw UTF-8.
-    """
-    result = subprocess.run(
-        ["git", "-C", str(repo_root), "ls-files", "-z"],
-        capture_output=True, check=True,
-    )
-    decoded = result.stdout.decode("utf-8", errors="surrogateescape")
-    return [p for p in decoded.split("\0") if p]
-
-
 def scan_targets(repo_root: Path) -> list[str]:
-    """Scriptable surfaces worth scanning, excluding vendored/transient trees."""
+    """Scriptable surfaces worth scanning, excluding vendored/transient trees.
+
+    Walks the working tree rather than shelling out to `git ls-files`. The
+    filesystem hands back `str` paths already decoded by Python, which sidesteps
+    the locale question entirely — the git subprocess had to be decoded by hand
+    because `text=True` used cp1252 on Windows runners and died on the vault's
+    curly-quoted filenames. In a CI checkout the two listings are equivalent,
+    and on a developer machine walking the tree is the more honest answer for a
+    portability sweep: an untracked script with a hardcoded home path is still
+    a script with a hardcoded home path.
+    """
     targets = []
-    for rel in tracked_files(repo_root):
-        if rel.startswith(EXCLUDED_PREFIXES) or rel in SELF_REFERENTIAL:
-            continue
-        if Path(rel).suffix.lower() in SCAN_SUFFIXES:
-            targets.append(rel)
+    for dirpath, dirnames, filenames in os.walk(repo_root):
+        rel_dir = Path(dirpath).relative_to(repo_root).as_posix()
+        prefix = "" if rel_dir == "." else rel_dir + "/"
+        # Prune excluded trees in place so os.walk never descends into them.
+        dirnames[:] = [
+            d for d in dirnames
+            if not f"{prefix}{d}/".startswith(EXCLUDED_PREFIXES)
+        ]
+        for name in filenames:
+            rel = f"{prefix}{name}"
+            if rel in SELF_REFERENTIAL:
+                continue
+            if Path(name).suffix.lower() in SCAN_SUFFIXES:
+                targets.append(rel)
     return sorted(targets)
 
 
