@@ -1,0 +1,16 @@
+{
+  "calendarSources": [
+    {
+      "type": "dailynote",
+      "color": "#ffffff",
+      "heading": "<%* const d = moment(tp.file.title, \"YYYY-MM-DD\") -%>"
+    }
+  ],
+  "defaultCalendar": 0,
+  "firstDay": 1,
+  "initialView": {
+    "desktop": "timeGridWeek",
+    "mobile": "listWeek"
+  },
+  "timeFormat24h": false
+}

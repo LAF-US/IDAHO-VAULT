@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import argparse
 import base64
+import hashlib
 import math
 import os
 import re
@@ -66,7 +67,9 @@ ALLOW_PATH_PATTERNS = (
 
 SECRET_CONTENT_PATTERNS = {
     "github_token": re.compile(r"\b(?:ghp|gho|ghu|ghs|ghr)_[A-Za-z0-9_]{30,}\b"),
-    "openai_key": re.compile(r"\bsk-(?:proj-)?[A-Za-z0-9_-]{32,}\b"),
+    "openai_key": re.compile(
+        r"\bsk-(?:proj-[A-Za-z0-9_-]{32,}|svcacct-[A-Za-z0-9_-]{32,}|[A-Za-z0-9]{32,})\b"
+    ),
     "anthropic_key": re.compile(r"\bsk-ant-[A-Za-z0-9_-]{32,}\b"),
     "slack_token": re.compile(r"\bxox(?:b|p|o|a|r|s)-[A-Za-z0-9-]{20,}\b"),
     # Broadened 2026-07-02: the old alternation missed ENCRYPTED / PGP / SSH2 /
@@ -77,10 +80,53 @@ SECRET_CONTENT_PATTERNS = {
     "generic_secret_assignment": re.compile(
         r"""(?ix)
         ["']?\b(api[_-]?key|secret|token|password|passwd|pwd)\b["']?
-        \s*[:=]\s*["']?[A-Za-z0-9_./+=:-]{24,}
+        \s*[:=]\s*
+        (?P<quote>["'])
+        (?P<value>[A-Za-z0-9_./+=:-]{24,})
+        (?P=quote)
         """
     ),
 }
+
+# Bare assignments are meaningful in declarative configuration and shell
+# files, but in programming-language and bundled JavaScript sources they are
+# normally references to constants, properties, types, or functions. Scoping
+# this fallback by file type keeps those identifiers from masquerading as
+# credential values while retaining coverage for unquoted YAML/INI/shell data.
+GENERIC_UNQUOTED_SECRET_ASSIGNMENT = re.compile(
+    r"""(?ix)
+    ["']?\b(api[_-]?key|secret|token|password|passwd|pwd)\b["']?
+    \s*[:=]\s*(?P<value>[A-Za-z0-9_./+=:-]{24,})
+    """
+)
+GENERIC_UNQUOTED_EXTENSIONS = frozenset(
+    ".yaml .yml .toml .ini .cfg .conf .properties .sh .bash .zsh .ps1".split()
+)
+
+PUBLIC_EMBED_ALLOW_PATTERNS = {
+    "google_api_key": (
+        re.compile(r"https://www\.google\.com/maps/embed/v1/"),
+        re.compile(r"https://maps\.googleapis\.com/maps/api/staticmap\?"),
+    ),
+    "generic_secret_assignment": (
+        re.compile(r"https://starter1\.preservica\.com/Render/render/external\?"),
+    ),
+}
+
+# Published client credentials embedded in immutable third-party plugin builds.
+# Scope exceptions to the exact repository path, detector, and SHA-256 of the
+# matched literal. A changed vendor key or another key in the same bundle must
+# still stop the commit. Provenance for this fingerprint:
+# https://github.com/obsidian-community/obsidian-full-calendar/blob/0.10.7/src/ui/calendar.ts
+VENDOR_PUBLIC_CREDENTIAL_FINGERPRINTS = frozenset(
+    {
+        (
+            ".obsidian/plugins/obsidian-full-calendar/main.js",
+            "google_api_key",
+            "ada01f2aa7e0b4d15668b350d4d9103ef8ffd0133e5eba33c42bcd7a12f04b7a",
+        ),
+    }
+)
 
 
 @dataclass(frozen=True)
@@ -118,7 +164,7 @@ KNOWN_NON_SECRET_FILE_SIGNATURES = (
 # (measured: 12 .md + 27 .json false-positives). This is defense-in-depth, not
 # exclusion — a key pasted into a .md is still caught by the key/token detectors.
 _TEXT_EXTENSIONS = frozenset(
-    ".md .markdown .txt .json .jsonl .yaml .yml .toml .xml .html .htm .csv .tsv"
+    ".md .markdown .txt .json .jsonl .ajson .yaml .yml .toml .xml .html .htm .csv .tsv"
     " .js .mjs .ts .py .sh .rb .go .rs .java .kt .c .h .cpp .css .svg .rtf .tex"
     " .ipynb .log .cfg .ini .conf .properties .gitignore".split()
 )
@@ -186,8 +232,17 @@ def content_secret_findings(path: str, data: bytes) -> list[Finding]:
     return findings
 
 
-def is_allowed_content_match(rule: str, line: str) -> bool:
+def is_allowed_content_match(
+    path: str, rule: str, line: str, match: re.Match[str] | None = None
+) -> bool:
     """Allow narrow generic placeholders without muting dedicated token rules."""
+    if match is not None:
+        fingerprint = hashlib.sha256(match.group(0).encode("utf-8")).hexdigest()
+        vendor_match = (path.replace("\\", "/"), rule, fingerprint)
+        if vendor_match in VENDOR_PUBLIC_CREDENTIAL_FINGERPRINTS:
+            return True
+    if any(pattern.search(line) for pattern in PUBLIC_EMBED_ALLOW_PATTERNS.get(rule, ())):
+        return True
     if rule != "generic_secret_assignment":
         return False
     if "secret-pattern: allow" in line:
@@ -197,6 +252,8 @@ def is_allowed_content_match(rule: str, line: str) -> bool:
         or re.search(r"""(?i)["']?env:[A-Z][A-Z0-9_]*["']?""", line)
         or re.search(r"""(?i)["']?\$secretRef(?::[A-Za-z0-9_.:/-]+)?["']?""", line)
         or re.search(r"(?i)\breplace-with-[A-Za-z0-9_-]+\b", line)
+        or re.search(r"(?i)\b(?:your|example|sample|dummy|placeholder|changeme)[-_]", line)
+        or re.search(r"""(?i)\s*[:=]\s*["']?(?:https?|file)://""", line)
     )
 
 
@@ -337,12 +394,24 @@ def worktree_file_bytes(path: str) -> bytes | None:
 def content_findings(path: str, data: bytes) -> list[Finding]:
     text = data.decode("utf-8", errors="replace")
     findings: list[Finding] = []
+    ext = os.path.splitext(path)[1].lower()
+    allow_unquoted_generic = ext in GENERIC_UNQUOTED_EXTENSIONS or os.path.basename(path).startswith(".env")
     for line_number, line in enumerate(text.splitlines(), start=1):
         for rule, pattern in SECRET_CONTENT_PATTERNS.items():
-            if pattern.search(line):
-                if is_allowed_content_match(rule, line):
-                    continue
-                findings.append(Finding(path=path, line=line_number, rule=rule))
+            match = pattern.search(line)
+            if match is None or is_allowed_content_match(path, rule, line, match):
+                continue
+            findings.append(Finding(path=path, line=line_number, rule=rule))
+        if allow_unquoted_generic:
+            match = GENERIC_UNQUOTED_SECRET_ASSIGNMENT.search(line)
+            if match is not None and not is_allowed_content_match(
+                path, "generic_secret_assignment", line, match
+            ):
+                finding = Finding(
+                    path=path, line=line_number, rule="generic_secret_assignment"
+                )
+                if finding not in findings:
+                    findings.append(finding)
     return findings
 
 
