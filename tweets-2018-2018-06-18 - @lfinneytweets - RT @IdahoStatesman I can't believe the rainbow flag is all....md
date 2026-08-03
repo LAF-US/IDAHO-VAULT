@@ -19,6 +19,6 @@ related:
 ---
 
 RT @IdahoStatesman: "I can't believe the rainbow flag is all over town. I can't believe the rainbow flag is on City Hall."
-# boisepride2018…
+#boisepride2018…
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1008748471501770757)

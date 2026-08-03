@@ -26,14 +26,13 @@ A time-based one-time password (TOTP) application automatically generates an aut
 3. In the "Access" section of the sidebar, click **Password and authentication**.
 4. In the "Two-factor authentication" section of the page, click **Enable two-factor authentication**.
 5. Under "Scan the QR code", do one of the following:
-
-- Scan the QR code with your mobile device's app. After scanning, the app displays a six-digit code that you can enter on GitHub.
-- If you can't scan the QR code, click **setup key** to see a code, the TOTP secret, that you can manually enter in your TOTP app instead.
- ![Screenshot of the "Setup authenticator app" section of the 2FA settings. A link, labeled "setup key", is highlighted in orange.](https://docs.github.com/assets/cb-23826/mw-1440/images/help/2fa/ghes-3.8-and-higher-2fa-wizard-app-click-code.webp)
-1. The TOTP application saves your account on GitHub.com and generates a new authentication code every few seconds. On GitHub, type the code into the field under "Verify the code from the app."
-2. Under "Save your recovery codes", click **Download** to download your recovery codes to your device. Save them to a secure location because your recovery codes can help you get back into your account if you lose access.
-3. After saving your two-factor recovery codes, click **I have saved my recovery codes** to enable two-factor authentication for your account.
-4. Optionally, you can configure additional 2FA methods to reduce your risk of account lockout. For more details on how to configure each additional method, see [Configuring two-factor authentication using a security key](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-a-security-key) and [Configuring two-factor authentication using GitHub Mobile](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-github-mobile).
+   - Scan the QR code with your mobile device's app. After scanning, the app displays a six-digit code that you can enter on GitHub.
+   - If you can't scan the QR code, click **setup key** to see a code, the TOTP secret, that you can manually enter in your TOTP app instead.
+   ![Screenshot of the "Setup authenticator app" section of the 2FA settings. A link, labeled "setup key", is highlighted in orange.](https://docs.github.com/assets/cb-23826/mw-1440/images/help/2fa/ghes-3.8-and-higher-2fa-wizard-app-click-code.webp)
+6. The TOTP application saves your account on GitHub.com and generates a new authentication code every few seconds. On GitHub, type the code into the field under "Verify the code from the app."
+7. Under "Save your recovery codes", click **Download** to download your recovery codes to your device. Save them to a secure location because your recovery codes can help you get back into your account if you lose access.
+8. After saving your two-factor recovery codes, click **I have saved my recovery codes** to enable two-factor authentication for your account.
+9. Optionally, you can configure additional 2FA methods to reduce your risk of account lockout. For more details on how to configure each additional method, see [Configuring two-factor authentication using a security key](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-a-security-key) and [Configuring two-factor authentication using GitHub Mobile](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-github-mobile).
 
 ### Manually configuring a TOTP app
 
@@ -59,11 +58,10 @@ Before using this method, be sure that you can receive text messages. Carrier ra
 4. Complete the CAPTCHA challenge, which helps protect against spam and abuse.
 5. Under "Verify account", select your country code and type your mobile phone number, including the area code. When your information is correct, click **Send authentication code**.
 6. You'll receive a text message with a security code. On GitHub, type the code into the field under "Verify the code sent to your phone" and click **Continue**.
-
-- If you need to edit the phone number you entered, you'll need to complete another CAPTCHA challenge.
-1. Under "Save your recovery codes", click **Download** to download your recovery codes to your device. Save them to a secure location because your recovery codes can help you get back into your account if you lose access.
-2. After saving your two-factor recovery codes, click **I have saved my recovery codes** to enable two-factor authentication for your account.
-3. Optionally, you can configure additional 2FA methods to reduce your risk of account lockout. For more details on how to configure each additional method, see [Configuring two-factor authentication using a security key](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-a-security-key) and [Configuring two-factor authentication using GitHub Mobile](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-github-mobile).
+   - If you need to edit the phone number you entered, you'll need to complete another CAPTCHA challenge.
+7. Under "Save your recovery codes", click **Download** to download your recovery codes to your device. Save them to a secure location because your recovery codes can help you get back into your account if you lose access.
+8. After saving your two-factor recovery codes, click **I have saved my recovery codes** to enable two-factor authentication for your account.
+9. Optionally, you can configure additional 2FA methods to reduce your risk of account lockout. For more details on how to configure each additional method, see [Configuring two-factor authentication using a security key](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-a-security-key) and [Configuring two-factor authentication using GitHub Mobile](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication#configuring-two-factor-authentication-using-github-mobile).
 
 ## Configuring two-factor authentication using a passkey
 
@@ -91,7 +89,7 @@ Registering a security key for your account is available after enabling 2FA with
 3. In the upper-right corner of any page on GitHub, click your profile picture, then click **Settings**.
 4. In the "Access" section of the sidebar, click **Password and authentication**.
 5. Next to "Security keys," click **Add**.
- ![Screenshot of the "two-factor methods" section of the 2FA settings. A gray button labeled "Add" is outlined in orange.](https://docs.github.com/assets/cb-33660/mw-1440/images/help/2fa/add-security-keys-option.webp)
+   ![Screenshot of the "two-factor methods" section of the 2FA settings. A gray button labeled "Add" is outlined in orange.](https://docs.github.com/assets/cb-33660/mw-1440/images/help/2fa/add-security-keys-option.webp)
 6. Under "Security keys," click **Register new security key**.
 7. Type a nickname for the security key, then click **Add**.
 8. Following your security key's documentation, activate your security key.

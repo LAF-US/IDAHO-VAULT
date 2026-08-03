@@ -54,7 +54,7 @@ Responsibilities:
 
 ## Boot Order
 
-1. `sta***REMOVED***SPARKSEED.sh` (root)
+1. `start_SPARKSEED.sh` (root)
 2. `!/WAKEUP.md`
 3. `!/README.md`
 4. `!/AGENTS.md`
