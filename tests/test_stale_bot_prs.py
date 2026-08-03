@@ -94,7 +94,6 @@ class StaleBotPrsTest(unittest.TestCase):
             age_days=2,
             apply=True,
             report_path=report_path,
-            comment="closing stale bot pr",
         )
         events: list[object] = []
 
@@ -144,7 +143,7 @@ class StaleBotPrsTest(unittest.TestCase):
                             "close",
                             "21",
                             "--comment",
-                            "closing stale bot pr",
+                            stale_bot_prs.CLOSE_COMMENT,
                         ],
                         {
                             "check": True,
@@ -183,7 +182,7 @@ class StaleBotPrsTest(unittest.TestCase):
         self.assertIn("invalid JSON", str(exc.exception))
 
     def test_main_fails_closed_when_gh_could_not_run(self) -> None:
-        args = SimpleNamespace(age_days=2, apply=False, report_path=Path("unused.md"), comment="")
+        args = SimpleNamespace(age_days=2, apply=False, report_path=Path("unused.md"))
         with (
             mock.patch.object(stale_bot_prs, "parse_args", return_value=args),
             mock.patch.object(

@@ -55,18 +55,17 @@ def run_text(cmd: list[str]) -> str:
     return _run(cmd).strip()
 
 
+CLOSE_COMMENT = (
+    "Closing automatically: stale bot PR, not merge-clean, and older than the allowed age threshold. "
+    "A fresh bot PR can be regenerated later if the update is still desired."
+)
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument("--age-days", type=int, default=2)
     parser.add_argument("--apply", action="store_true")
     parser.add_argument("--report-path", type=Path, required=True)
-    parser.add_argument(
-        "--comment",
-        default=(
-            "Closing automatically: stale bot PR, not merge-clean, and older than the allowed age threshold. "
-            "A fresh bot PR can be regenerated later if the update is still desired."
-        ),
-    )
     return parser.parse_args()
 
 
@@ -155,7 +154,7 @@ def main() -> int:
                     "close",
                     str(pr["number"]),
                     "--comment",
-                    args.comment,
+                    CLOSE_COMMENT,
                 ]
             )
 
