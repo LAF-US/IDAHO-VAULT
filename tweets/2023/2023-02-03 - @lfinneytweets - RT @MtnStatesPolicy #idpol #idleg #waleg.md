@@ -22,9 +22,7 @@ related:
   - waleg
 ---
 
-RT @MtnStatesPolicy: https://t.co/e8MoL2xNWb
-
-#idpol #idleg #waleg https://t.co/K5qcVQnUox
+RT @MtnStatesPolicy: https://t.co/e8MoL2xNWb #idpol #idleg #waleg https://t.co/K5qcVQnUox
 
 ## Links
 - https://www.mountainstatespolicy.org/post/which-state-esa-proposal-is-best

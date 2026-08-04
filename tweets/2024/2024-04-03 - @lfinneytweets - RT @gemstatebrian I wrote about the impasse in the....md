@@ -18,8 +18,6 @@ related:
   - idpol
 ---
 
-RT @gemstatebrian: I wrote about the impasse in the Legislature over the potential sale of the ITD building at the Chronicle today:
-
-#idpol…
+RT @gemstatebrian: I wrote about the impasse in the Legislature over the potential sale of the ITD building at the Chronicle today: #idpol…
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1775372225270731104)
