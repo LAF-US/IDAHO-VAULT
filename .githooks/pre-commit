@@ -1,36 +1,11 @@
 #!/usr/bin/env sh
 set -eu
 
-# Only regenerate/stage the plugin registry when it's actually out of sync.
-# Previously this unconditionally wrote+staged manifest.json/swarm.json on
-# every commit; combined with the old filesystem-glob-based generator, a
-# linked worktree missing a main-checkout-only gitignored plugin dir would
-# see "drift" and silently stage a destructive registry rewrite on commits
-# that never touched plugin state. The generator is now git-tracked-index
-# based (see #514), so this should only fire on genuine tracked-input drift.
-if ! python .github/scripts/sync_obsidian_plugin_registry.py --check; then
-  python .github/scripts/sync_obsidian_plugin_registry.py --write
-  git add manifest.json swarm.json
-  python .github/scripts/sync_obsidian_plugin_registry.py --check
-fi
-python .github/scripts/laf_usb_manifest.py LAF-USB-OBJECT-MANIFEST*.json
 python .github/scripts/check_secret_patterns.py --staged
 python .github/scripts/check_large_files.py --staged
 
-# Jupytext: keep staged *paired* notebooks in sync with their twins (the machine<->plaintext
-# marriage). Only notebooks that DECLARE a pairing are synced; a sync failure on a paired
-# notebook aborts the commit (no silent '|| true' that would let drift slip in). Unpaired or
-# corrupt notebooks are left untouched (the footgun guard). Renames are included (ACMR) so a
-# renamed notebook's twin is re-synced here, not left to drift until CI catches it.
-#
-# Path handling: NETWEB enforces no trailing space and no <>:"|?* in tracked names, but it does
-# NOT forbid *internal* spaces -- so split the staged list on newline only (IFS) and carry it in
-# positional params, keeping space-bearing paths intact without bashisms (stays POSIX sh; no
-# arrays / no `read -d`). NETWEB still permits [ and ] in names, so `set -f` (noglob) wraps each
-# unquoted expansion: we want IFS word-splitting only, never pathname expansion turning a bracketed
-# filename into unintended matches. A literal newline inside a filename would still break this, but
-# git's plain --name-only output cannot represent one unquoted, and such a name is itself a
-# portability violation. `-- '*.ipynb'` is git's own pathspec (matches at any depth).
+# Jupytext below, unclear if actually needed here...
+
 if command -v jupytext >/dev/null 2>&1; then
   nbs=$(git diff --cached --name-only --diff-filter=ACMR -- '*.ipynb')
   if [ -n "$nbs" ]; then
