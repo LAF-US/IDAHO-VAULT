@@ -28,6 +28,6 @@ Candidates have begun to file with @IDSecOfState for the May statewide #idleg pr
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/ESOqaNLWAAILNdZ.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/ESOqaNLWAAILNdZ.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1235018099210022914)

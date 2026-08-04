@@ -27,6 +27,6 @@ https://t.co/IFPbUoulAP https://t.co/gPR0rZYpLq
 - https://www.idahostatesman.com/news/local/community/boise/article257095707.html
 
 ## Media
-- ![](https://pbs.twimg.com/media/FJAGYnUVQAA6yGh.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/FJAGYnUVQAA6yGh.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1481692066271096832)

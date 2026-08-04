@@ -5,7 +5,7 @@ author:
 published: 2001-09-19
 created: 2026-04-13
 ---
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Papertape-Wikipedia-example-dark1-2000px.png/250px-Papertape-Wikipedia-example-dark1-2000px.png)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Papertape-Wikipedia-example-dark1-2000px.png/250px-Papertape-Wikipedia-example-dark1-2000px.png)
 
 Punched tape with the word "Wikipedia" encoded in ASCII. Presence and absence of a hole represents 1 and 0, respectively; for example, W is encoded as 1010111.
 
@@ -23,7 +23,7 @@ Common examples of character encoding systems include Morse code, the [Baudot co
 
 The Baudot code, a five- [bit](https://en.wikipedia.org/wiki/Bit "Bit") encoding, was created by [Émile Baudot](https://en.wikipedia.org/wiki/%C3%89mile_Baudot "Émile Baudot") in 1870, patented in 1874, modified by Donald Murray in 1901, and standardized by CCITT as International Telegraph Alphabet No. 2 (ITA2) in 1930. The name *baudot* has been erroneously applied to ITA2 and its many variants. ITA2 suffered from many shortcomings and was often improved by many equipment manufacturers, sometimes creating compatibility issues.
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Blue-punch-card-front-horiz.png/250px-Blue-punch-card-front-horiz.png)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Blue-punch-card-front-horiz.png/250px-Blue-punch-card-front-horiz.png)
 
 Hollerith 80-column punch card with EBCDIC character set
 

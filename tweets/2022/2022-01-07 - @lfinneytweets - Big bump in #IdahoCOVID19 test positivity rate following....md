@@ -22,6 +22,6 @@ Big bump in #IdahoCOVID19 test positivity rate following Christmas. https://t.co
 - https://x.com/IdahoReports/status/1479593056680636419
 
 ## Media
-- ![](https://pbs.twimg.com/media/FIiVRpRVEAIocAc.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/FIiVRpRVEAIocAc.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1479596689996455936)

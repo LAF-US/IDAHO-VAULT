@@ -23,6 +23,6 @@ related:
 RT @KeithRidler: Idaho lawmakers hold news conference on conservative priorities. #idpol #idleg https://t.co/q11cz0hnwU
 
 ## Media
-- ![](https://pbs.twimg.com/media/Erd332xU0AAgbxZ.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/Erd332xU0AAgbxZ.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1348678751056396289)

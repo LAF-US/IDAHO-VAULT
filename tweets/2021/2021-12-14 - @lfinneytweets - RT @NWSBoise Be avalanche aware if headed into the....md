@@ -26,6 +26,6 @@ RT @NWSBoise: Be avalanche aware if headed into the mountains. #idwx #orwx https
 - https://x.com/SawtoothAvy/status/1470745027584294912
 
 ## Media
-- ![](https://pbs.twimg.com/media/FGl0RHnVUAIZEKW.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/FGl0RHnVUAIZEKW.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1470843162377609219)

@@ -21,6 +21,6 @@ related:
 RT @KTVBJoe: #New - Here is the statement from SWDH on what happened this morning https://t.co/ALeCjDC1g9
 
 ## Media
-- ![](https://pbs.twimg.com/media/EdECDrBUMAAWLbV.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EdECDrBUMAAWLbV.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1283829522073137153)

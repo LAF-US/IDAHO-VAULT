@@ -20,6 +20,6 @@ Check it out March 4 🗓 <https://t.co/oU2h0TsJak>
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/D0cZspsVsAAjA6B.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/D0cZspsVsAAjA6B.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1101356233112469510)

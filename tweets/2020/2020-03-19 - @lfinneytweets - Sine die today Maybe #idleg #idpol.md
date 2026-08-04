@@ -21,6 +21,6 @@ related:
 Sine die today? Maybe?? #idleg #idpol https://t.co/JN6BXLRBMp
 
 ## Media
-- ![](https://pbs.twimg.com/tweet_video_thumb/ETfezVXU0AYyGDC.jpg)
+- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/ETfezVXU0AYyGDC.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1240705210734923776)

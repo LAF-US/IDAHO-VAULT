@@ -4,7 +4,7 @@ author:
 published:
 created: 2026-04-19
 ---
-![](https://kinopio.club/help/assets/cat.png)
+![alt text needed](https://kinopio.club/help/assets/cat.png)
 
 The Kinopio API is used to find, save, and update the spaces of signed up users. You can use it to make cool things too.
 

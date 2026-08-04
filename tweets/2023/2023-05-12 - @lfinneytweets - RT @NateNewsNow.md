@@ -18,6 +18,6 @@ related:
 RT @NateNewsNow: https://t.co/gZskuoNftB
 
 ## Media
-- ![](https://pbs.twimg.com/media/Fv8zo1waIAARgJ0.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/Fv8zo1waIAARgJ0.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1657102360425164800)

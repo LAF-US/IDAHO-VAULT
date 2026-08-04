@@ -16,6 +16,6 @@ related:
 Nothing like a good Twitter refresh! This was my first choice of header had it fit in the dimensions. https://t.co/z2qT8TnPy2
 
 ## Media
-- ![](https://pbs.twimg.com/media/FLDYSniVQAENr7K.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/FLDYSniVQAENr7K.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1490929292871892992)

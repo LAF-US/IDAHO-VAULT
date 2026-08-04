@@ -23,6 +23,6 @@ related:
 RT @KeithRidler: Idaho State Police prepping early Tuesday at Idaho Statehouse. #idpol #idleg https://t.co/v7SRy3jUEH
 
 ## Media
-- ![](https://pbs.twimg.com/media/EgRXqjCUYAYtZpp.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EgRXqjCUYAYtZpp.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1298262745804976128)

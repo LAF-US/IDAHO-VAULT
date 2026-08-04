@@ -22,7 +22,7 @@ RT @MrOlmos: Photo on the left by @SmileItsNathan
 On the right by @PDocumentarians https://t.co/MpHqSQNUBa
 
 ## Media
-- ![](https://pbs.twimg.com/media/E8YDK-bVEA0W4eg.jpg)
-- ![](https://pbs.twimg.com/media/E8YDK-ZVEBkQwLE.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/E8YDK-bVEA0W4eg.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/E8YDK-ZVEBkQwLE.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1424837516289474561)

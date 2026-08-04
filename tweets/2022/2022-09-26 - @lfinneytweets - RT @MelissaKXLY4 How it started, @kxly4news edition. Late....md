@@ -20,7 +20,7 @@ RT @MelissaKXLY4: How it started, @kxly4news edition.
 Late 1970s —> Now https://t.co/PgN7PgN6FV
 
 ## Media
-- ![](https://pbs.twimg.com/media/FdnZ-XiaAAA7yqi.jpg)
-- ![](https://pbs.twimg.com/media/FdnZ-XiaEAAiOLO.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/FdnZ-XiaAAA7yqi.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/FdnZ-XiaEAAiOLO.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1574529829579665408)

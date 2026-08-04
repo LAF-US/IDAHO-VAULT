@@ -20,6 +20,6 @@ RT @ZavalaA: Trump at CAGOP convention:
 “I will prevent World War III” https://t.co/J9QBLMvZ2G
 
 ## Media
-- ![](https://pbs.twimg.com/media/F7OcYzLacAAxZfs.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/F7OcYzLacAAxZfs.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1707884068044722338)

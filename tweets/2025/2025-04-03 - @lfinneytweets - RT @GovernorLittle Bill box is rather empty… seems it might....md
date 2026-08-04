@@ -21,6 +21,6 @@ related:
 RT @GovernorLittle: Bill box is rather empty… seems it might be time to #SineDie ?! https://t.co/mpPe2SCTpA
 
 ## Media
-- ![](https://pbs.twimg.com/media/GnoK3v5a8AEaAn9.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/GnoK3v5a8AEaAn9.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1907880208306417674)

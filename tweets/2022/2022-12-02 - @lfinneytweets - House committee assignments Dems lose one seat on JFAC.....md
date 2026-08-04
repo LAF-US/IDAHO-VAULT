@@ -21,6 +21,6 @@ related:
 House committee assignments: Dems lose one seat on JFAC. #idleg #idpol https://t.co/72O0iieCfW
 
 ## Media
-- ![](https://pbs.twimg.com/media/Fi_KMCiVEBUQvzK.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/Fi_KMCiVEBUQvzK.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1598718703784595457)

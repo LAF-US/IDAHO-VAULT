@@ -25,6 +25,6 @@ related:
 We have a very interesting school choice conversation coming up on the @IdahoReports podcast this week. Make sure you're subscribed! 🎧 #idleg #idpol #idedu https://t.co/GoknuN1QJ1
 
 ## Media
-- ![](https://pbs.twimg.com/ext_tw_video_thumb/1630705939686002689/pu/img/9b5TzQATcncoz67K.jpg)
+- ![alt text needed](https://pbs.twimg.com/ext_tw_video_thumb/1630705939686002689/pu/img/9b5TzQATcncoz67K.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1630706446492135425)

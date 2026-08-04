@@ -23,6 +23,6 @@ related:
 A packed press conference this morning where @GovernorLittle is declaring a state of emergency to access additional supplies and funds for #COVID19 response. #idpol https://t.co/x7he6nDDP8
 
 ## Media
-- ![](https://pbs.twimg.com/media/ETALZ-qXsAERfAW.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/ETALZ-qXsAERfAW.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1238502446348947456)

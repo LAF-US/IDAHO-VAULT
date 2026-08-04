@@ -16,7 +16,7 @@ related:
   - idpol
 ---
 
-#idpol https://t.co/B2i8D15rYZ
+\#idpol https://t.co/B2i8D15rYZ
 
 ## Links
 - https://x.com/RepRussFulcher/status/1100463418614652930

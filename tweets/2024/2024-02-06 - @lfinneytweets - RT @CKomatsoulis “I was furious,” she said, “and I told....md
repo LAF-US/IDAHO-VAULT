@@ -20,8 +20,6 @@ related:
   - idleg
 ---
 
-RT @CKomatsoulis: “I was furious,” she said, “and I told them I didn’t want my kids to be in this system.”
-
-#idpol #idleg @EyeOnBoiseGuido…
+RT @CKomatsoulis: “I was furious,” she said, “and I told them I didn’t want my kids to be in this system.” #idpol #idleg @EyeOnBoiseGuido…
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1754960598771576867)

@@ -26,6 +26,6 @@ RT @idahofreedom: Rep. Judy Boyle and the Common Core standards.
 
 ## Media
 
-- ![](https://pbs.twimg.com/tweet_video_thumb/EQB6jsbVAAA-jIC.jpg)
+- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/EQB6jsbVAAA-jIC.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1225115259184111616)

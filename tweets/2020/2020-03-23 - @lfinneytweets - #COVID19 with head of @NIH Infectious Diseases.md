@@ -18,7 +18,7 @@ related:
   - COVID19
 ---
 
-#COVID19 with head of @NIH Infectious Diseases https://t.co/DuOdZTHYLR
+\#COVID19 with head of @NIH Infectious Diseases https://t.co/DuOdZTHYLR
 
 ## Links
 - https://x.com/sciencecohen/status/1241872306550362112

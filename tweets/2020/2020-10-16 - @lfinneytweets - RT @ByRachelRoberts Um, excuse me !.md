@@ -18,6 +18,6 @@ related:
 RT @ByRachelRoberts: Um, excuse me?!? https://t.co/OFoaGjco0p
 
 ## Media
-- ![](https://pbs.twimg.com/media/EkfLf1fU0AEPCnW.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EkfLf1fU0AEPCnW.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1317245560508751872)
