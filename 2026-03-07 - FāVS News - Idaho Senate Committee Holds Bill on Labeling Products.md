@@ -71,7 +71,7 @@ Idaho State Capital
 
 **By Logan Finney | FāVS News Reporter**
 
-![](https://www.youtube.com/watch?v=VWAJj0Rfqbw)
+![alt text needed](https://www.youtube.com/watch?v=VWAJj0Rfqbw)
 
 Numerous medical products such as vaccines were developed using human fetal cells in their scientific research. An Idaho Senate committee this week debated if the government should take a stronger role in labeling products developed using those cells, ultimately holding the bill.
 

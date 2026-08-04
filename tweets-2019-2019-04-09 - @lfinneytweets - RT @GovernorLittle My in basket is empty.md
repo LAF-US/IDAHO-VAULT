@@ -19,6 +19,6 @@ RT @GovernorLittle: My in basket is empty <https://t.co/Ml7s8P2V14>
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/D3uwfvpUwAAoehS.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/D3uwfvpUwAAoehS.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1115742845724323840)

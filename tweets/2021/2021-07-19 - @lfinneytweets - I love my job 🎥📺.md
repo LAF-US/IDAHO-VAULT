@@ -16,6 +16,6 @@ related:
 I love my job 🎥📺 https://t.co/YhbsYVgEEe
 
 ## Media
-- ![](https://pbs.twimg.com/media/E6noBEHVkAA2-On.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/E6noBEHVkAA2-On.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1416918671641899009)

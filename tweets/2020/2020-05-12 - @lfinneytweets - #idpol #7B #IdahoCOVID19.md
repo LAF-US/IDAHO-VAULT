@@ -20,7 +20,7 @@ related:
   - IdahoCOVID19
 ---
 
-#idpol #7B #IdahoCOVID19 https://t.co/IYfafFRCox
+\#idpol #7B #IdahoCOVID19 https://t.co/IYfafFRCox
 
 ## Links
 - https://x.com/A_Amplified/status/1260278156163985409

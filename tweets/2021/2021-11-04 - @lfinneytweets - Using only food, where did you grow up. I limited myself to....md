@@ -19,9 +19,9 @@ Using only food, where did you grow up. I limited myself to one potato-adjacent 
 - https://x.com/am_reports/status/1456070161941897218
 
 ## Media
-- ![](https://pbs.twimg.com/media/FDUsKrQVUAYZNal.jpg)
-- ![](https://pbs.twimg.com/media/FDUsK9YVcAcTCco.jpg)
-- ![](https://pbs.twimg.com/media/FDUsLHSVkAMYv6_.jpg)
-- ![](https://pbs.twimg.com/media/FDUsLQUUcAMTteL.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/FDUsKrQVUAYZNal.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/FDUsK9YVcAcTCco.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/FDUsLHSVkAMYv6_.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/FDUsLQUUcAMTteL.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1456118627854258180)

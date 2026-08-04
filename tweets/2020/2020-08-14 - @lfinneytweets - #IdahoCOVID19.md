@@ -16,7 +16,7 @@ related:
   - IdahoCOVID19
 ---
 
-#IdahoCOVID19 https://t.co/lADN56BkHj
+\#IdahoCOVID19 https://t.co/lADN56BkHj
 
 ## Links
 - https://x.com/IdahoPubRadio/status/1294110660494680064

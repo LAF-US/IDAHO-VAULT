@@ -18,6 +18,6 @@ related:
 RT @HayatNorimine: Here's the House vote for adjournment. https://t.co/H5XVhL01Pb
 
 ## Media
-- ![](https://pbs.twimg.com/media/FEbinhxVUAIKgZx.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/FEbinhxVUAIKgZx.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1461104368221048845)

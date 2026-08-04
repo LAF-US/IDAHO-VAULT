@@ -21,7 +21,7 @@ related:
 @PetsPolitics @Doge_Idaho @DOGE https://t.co/D4X5QO5sFD
 
 ## Media
-- ![](https://pbs.twimg.com/media/GmXm4N8bwAA6Qw_.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/GmXm4N8bwAA6Qw_.jpg)
 
 *In reply to [@PetsPolitics](https://twitter.com/PetsPolitics)*
 

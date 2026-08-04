@@ -22,6 +22,6 @@ https://t.co/lcfx2uvnoA https://t.co/2ZUv2dqt8l
 - https://theonion.com/third-amendment-rights-group-celebrates-another-success-1819569379/
 
 ## Media
-- ![](https://pbs.twimg.com/media/Gc_1pyYXkAA0xYE.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/Gc_1pyYXkAA0xYE.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1859988958253596792)

@@ -19,6 +19,6 @@ https://t.co/WZWNkspGFB https://t.co/TOsCF8i2pK
 - https://x.com/BetsyZRussell/status/1452746869503709185
 
 ## Media
-- ![](https://pbs.twimg.com/tweet_video_thumb/FCkzj_KVkAERm7M.jpg)
+- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/FCkzj_KVkAERm7M.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1452749054161534978)

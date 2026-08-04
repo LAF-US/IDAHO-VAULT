@@ -19,6 +19,6 @@ related:
 Senate is taking up social issue bills and House is reconvening at 7pm. They could actually do it tonight... #idleg https://t.co/CsqqVsuWzo
 
 ## Media
-- ![](https://pbs.twimg.com/tweet_video_thumb/GKMuM0Xb0AAc6E9.jpg)
+- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/GKMuM0Xb0AAc6E9.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1775313481782510036)

@@ -19,6 +19,6 @@ related:
 - https://x.com/freedomcaucusID/status/1902551653783630053
 
 ## Media
-- ![](https://pbs.twimg.com/media/GmhINfebAAAdGdz.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/GmhINfebAAAdGdz.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1902850241076007257)

@@ -19,7 +19,6 @@ related:
   - transparencywho
 ---
 
-RT @ryannoyance: Does anyone have $2,478 laying around? I could use it. The @uidaho wants it to fulfill my FOIA requests.
-#transparencywho
+RT @ryannoyance: Does anyone have $2,478 laying around? I could use it. The @uidaho wants it to fulfill my FOIA requests. #transparencywho
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1124002134595338243)

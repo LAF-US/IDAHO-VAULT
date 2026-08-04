@@ -17,7 +17,7 @@ related:
 Rep. Chad Christensen (R-Ammon) https://t.co/ZoaXsDSwvs
 
 ## Media
-- ![](https://pbs.twimg.com/media/EbQEt6GXYAIp0KQ.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EbQEt6GXYAIp0KQ.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

@@ -26,4 +26,4 @@ Sync the files in your Microsoft 365 or SharePoint site libraries so they’re a
 - Once synced, your SharePoint files appear in File Explorer under the name of your organization, or in Mac Finder if you're using a Mac. ![screenshot of Synced files file explorer](https://support.microsoft.com/images/en-us/7cfb0ab5-76bb-478a-8e01-1db162704126?format=avif&w=800)
 - Each location will appear in a separate subfolder.
 - Copy or move files from your computer to SharePoint right from your file system.
-- To check the status of your files, add an account, or manage other sync settings, select the OneDrive cloud icon ![](https://support.microsoft.com/images/en-us/2b93454a-0d5f-4f23-8c2b-80a82121d4bc?format=avif&w=800) in the Windows notification area.
+- To check the status of your files, add an account, or manage other sync settings, select the OneDrive cloud icon ![alt text needed](https://support.microsoft.com/images/en-us/2b93454a-0d5f-4f23-8c2b-80a82121d4bc?format=avif&w=800) in the Windows notification area.

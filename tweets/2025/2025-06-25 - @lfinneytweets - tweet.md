@@ -19,7 +19,7 @@ related:
 @kissphoria https://t.co/TkAHioLgye
 
 ## Media
-- ![](https://pbs.twimg.com/tweet_video_thumb/GuUzWv6aQAAMxkr.jpg)
+- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/GuUzWv6aQAAMxkr.jpg)
 
 *In reply to [@kissphoria](https://twitter.com/kissphoria)*
 

@@ -19,7 +19,7 @@ related:
 @Sisyphus43 If only :( https://t.co/5hALc7yok8
 
 ## Media
-- ![](https://pbs.twimg.com/media/GP_ijEKaQAABS49.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/GP_ijEKaQAABS49.jpg)
 
 *In reply to [@Sisyphus43](https://twitter.com/Sisyphus43)*
 

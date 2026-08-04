@@ -22,6 +22,6 @@ Provost John Wiencek announces @uidaho will allow students to opt in to pass/fai
 The email to students includes a link to instructions for changing classes to the P/F scale via VandalWeb. https://t.co/c2cQMkY9Qo
 
 ## Media
-- ![](https://pbs.twimg.com/media/EUJowxfXsAEktgd.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EUJowxfXsAEktgd.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1243671653839548416)
