@@ -1,9 +1,10 @@
 name: check-notebooks-paired
 
 # The "middle" guardrail: every explicitly-paired Jupyter notebook must stay in sync with its
-# Markdown twin. Mirrors the repo's other check-* workflows. Installs jupytext directly (so it
-# does not depend on requirements.txt carrying the dev tool). Actions are pinned to full SHAs
-# per repo policy.
+# Markdown twin. Mirrors the repo's other check-* workflows. Actions are pinned to full SHAs
+# per repo policy, and so is jupytext: the version is read from requirements.txt, the repo's
+# resolved lock, rather than re-declared here. An unpinned range in a build is not a version
+# choice, it is a promise to install whatever shipped most recently.
 
 on:
   pull_request:
@@ -30,8 +31,16 @@ jobs:
       - uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
         with:
           python-version: "3.11"
-      - name: Install jupytext
-        run: python -m pip install --quiet "jupytext>=1.16,<2"
+      - name: Install jupytext at the version this repo locks
+        # Fail closed: if requirements.txt stops pinning jupytext, stop rather than silently
+        # fall back to "whatever pip resolves today" — that fallback is the original defect.
+        run: |
+          PIN=$(grep -E '^jupytext==' requirements.txt) || {
+            echo "::error::requirements.txt does not pin jupytext; refusing to guess a version."
+            exit 1
+          }
+          echo "Installing $PIN (from requirements.txt)"
+          python -m pip install --quiet "$PIN"
       - name: Sync every paired notebook and fail on drift
         run: |
           # Sync ONLY notebooks that declare a pairing (explicit opt-in). A sync error on a
