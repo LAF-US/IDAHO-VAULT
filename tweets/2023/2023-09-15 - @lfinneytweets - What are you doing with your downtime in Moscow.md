@@ -16,6 +16,6 @@ related:
 What are you doing with your downtime in Moscow? https://t.co/IBB6ERbgzz
 
 ## Media
-- ![](https://pbs.twimg.com/media/F6GBMxcboAAgEjg.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/F6GBMxcboAAgEjg.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1702784202700431520)

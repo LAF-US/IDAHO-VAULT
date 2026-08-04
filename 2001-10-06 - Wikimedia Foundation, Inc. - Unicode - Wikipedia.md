@@ -55,7 +55,7 @@ The **Unicode Bulldog Award** is given to people deemed to be influential in Uni
 
 ### Scripts covered
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Unicode_sample.svg/250px-Unicode_sample.svg.png)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Unicode_sample.svg/250px-Unicode_sample.svg.png)
 
 Many modern applications can render a substantial subset of the many scripts in Unicode, as demonstrated by this screenshot from the OpenOffice.org application.
 

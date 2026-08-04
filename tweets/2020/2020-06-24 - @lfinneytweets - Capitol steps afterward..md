@@ -17,10 +17,10 @@ related:
 Capitol steps afterward. https://t.co/sVo75OOt7o
 
 ## Media
-- ![](https://pbs.twimg.com/media/EbQGS_yWAAAbpEI.jpg)
-- ![](https://pbs.twimg.com/media/EbQGdnjXYAICmP1.jpg)
-- ![](https://pbs.twimg.com/media/EbQGxmXX0AEgCp-.jpg)
-- ![](https://pbs.twimg.com/media/EbQG1ioXkAEBeUY.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EbQGS_yWAAAbpEI.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EbQGdnjXYAICmP1.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EbQGxmXX0AEgCp-.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EbQG1ioXkAEBeUY.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

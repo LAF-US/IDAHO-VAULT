@@ -23,7 +23,7 @@ https://t.co/1LwH7DTW51 https://t.co/CZ1xcjc1ky
 - https://www.uiargonaut.com/2020/06/07/lc-valley-black-lives-matter-and-protect-lc-valley-rallies-took-place-1-mile-apart/
 
 ## Media
-- ![](https://pbs.twimg.com/media/EaUuUO9UEAUv2Nn.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EaUuUO9UEAUv2Nn.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

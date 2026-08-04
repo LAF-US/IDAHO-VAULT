@@ -18,7 +18,7 @@ Other existing approaches frequently use smaller, more closely paired audio-text
 
 About a third of Whisper’s audio dataset is non-English, and it is alternately given the task of transcribing in the original language or translating to English. We find this approach is particularly effective at learning speech to text translation and outperforms the supervised SOTA on CoVoST2 to English translation zero-shot.
 
-![](https://images.ctfassets.net/kftzwdyauwt9/29f82291-67a2-491f-3cf6180c16fd/d0d5a05fa5d3f801db92285328bda70e/asr-training-data-mobile.svg)
+![alt text needed](https://images.ctfassets.net/kftzwdyauwt9/29f82291-67a2-491f-3cf6180c16fd/d0d5a05fa5d3f801db92285328bda70e/asr-training-data-mobile.svg)
 
 ASR training data inputs and outputs
 

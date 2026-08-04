@@ -22,10 +22,10 @@ related:
 \#idpol @reclaimID https://t.co/s3oDrUYilE
 
 ## Media
-- ![](https://pbs.twimg.com/media/E95PQjyUcAALQwk.jpg)
-- ![](https://pbs.twimg.com/media/E95PRAnVkAQojbc.jpg)
-- ![](https://pbs.twimg.com/media/E95PTQZVQAIYNU_.jpg)
-- ![](https://pbs.twimg.com/media/E95PTyNVQAE_ltL.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/E95PQjyUcAALQwk.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/E95PRAnVkAQojbc.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/E95PTQZVQAIYNU_.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/E95PTyNVQAE_ltL.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

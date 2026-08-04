@@ -10,7 +10,7 @@ date created: Monday, April 20th 2026, 12:49:21 pm
 date modified: Monday, April 20th 2026, 12:53:45 pm
 ---
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Sed_stream_editor_%28cropped%29.jpg/250px-Sed_stream_editor_%28cropped%29.jpg)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Sed_stream_editor_%28cropped%29.jpg/250px-Sed_stream_editor_%28cropped%29.jpg)
 
 The man page for the sed utility, as seen in various Linux distributions
 
@@ -22,11 +22,11 @@ Man pages are often referred to as an *[online](https://en.wikipedia.org/wiki/On
 
 ## History
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Screenshot_of_%22Xman%22_program.png/250px-Screenshot_of_%22Xman%22_program.png)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Screenshot_of_%22Xman%22_program.png/250px-Screenshot_of_%22Xman%22_program.png)
 
 xman, an early X11 application for viewing manual pages
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/OpenBSD_Manpages_Section_8_Intro.png/250px-OpenBSD_Manpages_Section_8_Intro.png)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/OpenBSD_Manpages_Section_8_Intro.png/250px-OpenBSD_Manpages_Section_8_Intro.png)
 
 OpenBSD section 8 intro man page, displaying in a text console
 
@@ -42,7 +42,7 @@ There was a hidden [Easter egg](https://en.wikipedia.org/wiki/Easter_egg_\(media
 
 ## Formatting
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/FreeBSD_typeset_man_page.png/250px-FreeBSD_typeset_man_page.png)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/FreeBSD_typeset_man_page.png/250px-FreeBSD_typeset_man_page.png)
 
 Part of the FreeBSD man(1) manual page, typeset into PDF format
 

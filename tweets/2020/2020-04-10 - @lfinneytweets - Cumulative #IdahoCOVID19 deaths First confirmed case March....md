@@ -23,7 +23,7 @@ Week two (March 26): 3 deaths
 Week four (April 9): 24 deaths https://t.co/EbhAluKPV0
 
 ## Media
-- ![](https://pbs.twimg.com/media/EVN3dsBU8AItD1_.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EVN3dsBU8AItD1_.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

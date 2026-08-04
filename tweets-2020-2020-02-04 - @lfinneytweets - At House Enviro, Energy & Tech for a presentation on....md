@@ -22,6 +22,6 @@ At House Enviro, Energy & Tech for a presentation on findings and recommendation
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/EP9izxdU0AACjZI.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EP9izxdU0AACjZI.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1224806269669629952)

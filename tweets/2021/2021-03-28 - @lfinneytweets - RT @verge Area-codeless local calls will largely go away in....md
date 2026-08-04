@@ -21,6 +21,6 @@ RT @verge: Area-codeless local calls will largely go away in October — but for
 - https://trib.al/c30zVyl
 
 ## Media
-- ![](https://pbs.twimg.com/media/ExlmIwSXEAYIH1d.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/ExlmIwSXEAYIH1d.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1376245647393759232)

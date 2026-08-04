@@ -21,6 +21,6 @@ RT @robcurley: Shawn Vestal: WSU students step up, fund Evergreen print edition 
 - https://buff.ly/2G93HhC
 
 ## Media
-- ![](https://pbs.twimg.com/media/DX0dHtWVAAAD6P9.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/DX0dHtWVAAAD6P9.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/971994952992309250)

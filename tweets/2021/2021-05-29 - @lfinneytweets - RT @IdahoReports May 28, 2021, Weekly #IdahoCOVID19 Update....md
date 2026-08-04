@@ -22,6 +22,6 @@ related:
 RT @IdahoReports: May 28, 2021, Weekly #IdahoCOVID19 Update | @IdahoPTV https://t.co/ehuwMOYXor
 
 ## Media
-- ![](https://pbs.twimg.com/amplify_video_thumb/1398427955219427335/img/tB9DABO4Re8OB6Xv.jpg)
+- ![alt text needed](https://pbs.twimg.com/amplify_video_thumb/1398427955219427335/img/tB9DABO4Re8OB6Xv.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1398430287609036805)

@@ -21,6 +21,6 @@ related:
 Moscow, ID #idpol #idleg https://t.co/zJgyKoj0U0
 
 ## Media
-- ![](https://pbs.twimg.com/media/FbIWdZoaMAADmG3.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/FbIWdZoaMAADmG3.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1563336724667060226)

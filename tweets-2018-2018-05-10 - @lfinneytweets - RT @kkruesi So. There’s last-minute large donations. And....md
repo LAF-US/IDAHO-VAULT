@@ -22,6 +22,6 @@ RT @kkruesi: So. There’s last-minute large donations. And then there’s last-
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/DczkgJqVwAADxu7.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/DczkgJqVwAADxu7.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/994457145482489856)

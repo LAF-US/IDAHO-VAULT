@@ -10,7 +10,7 @@ date modified: Monday, April 13th 2026, 11:05:06 pm
 
 ### A popular argument on the left holds that political parties are essentially illegal in the US because they are so regulated that they can’t manage their own affairs. This is not true
 
-![](https://substackcdn.com/image/fetch/$s_!Pe9d!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F446b09a7-28ad-48e7-acb3-b47c29ceb810_1456x1048.png)
+![alt text needed](https://substackcdn.com/image/fetch/$s_!Pe9d!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F446b09a7-28ad-48e7-acb3-b47c29ceb810_1456x1048.png)
 
 New York State ballot in 2010 ( Mark Mitchell | Creative Commons)
 

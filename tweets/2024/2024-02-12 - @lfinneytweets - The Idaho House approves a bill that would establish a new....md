@@ -26,6 +26,6 @@ The Idaho House approves a bill that would establish a new maternal mortality re
 - https://blog.idahoreports.idahoptv.org/2024/02/05/house-committee-passes-bill-to-re-establish-maternal-mortality-review-committee/
 
 ## Media
-- ![](https://pbs.twimg.com/media/GGJ7lf4bMAA6LMl.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/GGJ7lf4bMAA6LMl.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1757102691590033550)

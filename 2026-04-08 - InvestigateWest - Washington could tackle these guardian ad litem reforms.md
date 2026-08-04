@@ -13,7 +13,7 @@ These issues have spurred state lawmakers to look for ways to improve the system
 
 “Folks have been frustrated by GALs who are writing reports that feel biased,” Taylor said. “I think that there are significant opportunities for updates to the law, updates to the requirements for training.”
 
-![](https://storage.ghost.io/c/51/fb/51fbb531-c573-4349-a070-603375674d25/content/images/2026/04/AP24009011920418-2.jpg)
+![alt text needed](https://storage.ghost.io/c/51/fb/51fbb531-c573-4349-a070-603375674d25/content/images/2026/04/AP24009011920418-2.jpg)
 
 Rep. Jamila Taylor, D-Federal Way, listens to proceedings on the House floor at the Washington state Capitol on Monday, Jan. 8, 2024, in Olympia, Wash. (AP Photo/Lindsey Wasson)
 
@@ -55,7 +55,7 @@ Keddie, who helped develop the state’s training curriculum, thinks narrower or
 
 A narrow investigation can also help limit the time — and costs — that go into a report. Attorneys and advocates say they’ve seen guardians ad litem overdo their investigations, running their bills upwards of $40,000 for a single case. On the other hand, those who aim to complete thorough investigations but avoid charging parents exorbitant fees end up putting in hours of unpaid work, according to Keddie.
 
-![](https://storage.ghost.io/c/51/fb/51fbb531-c573-4349-a070-603375674d25/content/images/2026/04/Copy-of-DSC_9679-1-.jpg)
+![alt text needed](https://storage.ghost.io/c/51/fb/51fbb531-c573-4349-a070-603375674d25/content/images/2026/04/Copy-of-DSC_9679-1-.jpg)
 
 The Thurston County Family and Juvenile Court in Tumwater, Washington. (Moe Clark/InvestigateWest)
 
@@ -99,7 +99,7 @@ Johnson, who has served on over 800 cases, said she has mentored four new hires 
 
 “You’re going to weigh in about something that may change people’s lives,” Johnson said. “I’ve had a lot of nights where I've woken up in the middle of night wondering, ‘Am I doing the right thing here?’”
 
-![](https://storage.ghost.io/c/51/fb/51fbb531-c573-4349-a070-603375674d25/content/images/2026/04/Copy-of-DSC_9673-1-.jpg)
+![alt text needed](https://storage.ghost.io/c/51/fb/51fbb531-c573-4349-a070-603375674d25/content/images/2026/04/Copy-of-DSC_9673-1-.jpg)
 
 Pamphlets on display at the Thurston County Family and Juvenile Court in Tumwater, Washington. (Moe Clark/InvestigateWest)
 

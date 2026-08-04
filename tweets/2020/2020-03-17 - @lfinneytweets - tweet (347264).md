@@ -20,7 +20,7 @@ related:
 @GrittyNHL @RadioDawson https://t.co/GE3csjW9KM
 
 ## Media
-- ![](https://pbs.twimg.com/tweet_video_thumb/ETVhO8sWsAIDS3i.jpg)
+- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/ETVhO8sWsAIDS3i.jpg)
 
 *In reply to [@GrittyNHL](https://twitter.com/GrittyNHL)*
 

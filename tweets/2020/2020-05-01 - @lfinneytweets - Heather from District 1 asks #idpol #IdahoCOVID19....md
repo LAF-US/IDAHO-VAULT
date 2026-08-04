@@ -25,6 +25,6 @@ related:
 Heather from District 1 asks: #idpol #IdahoCOVID19 @RepHeatherScott #AskGovLittle https://t.co/3DSKSv2gHX
 
 ## Media
-- ![](https://pbs.twimg.com/media/EW6Va_XUwAAlxLS.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EW6Va_XUwAAlxLS.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1256255812026195970)
