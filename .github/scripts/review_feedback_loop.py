@@ -103,6 +103,11 @@ RISK_LOW_LABEL = "risk/low"
 RISK_MED_LABEL = "risk/med"
 RISK_HIGH_LABEL = "risk/high"
 RISK_NOPE_LABEL = "risk/nope"
+# The `—/—` cell's own label (— is U+2014). Stamped when NEITHER axis fires, and
+# only then. It is the classifier saying "I looked and nothing fired" — which is a
+# different statement from a PR that carries no risk label because nothing has
+# classified it yet.
+RISK_CLEAR_LABEL = "risk/—"
 
 # The risk vocabulary (flat schema, norm set by Logan) is four flat labels across
 # two independent axes — each stamped ONLY when its axis fires. There are no prefixes, no
@@ -110,8 +115,10 @@ RISK_NOPE_LABEL = "risk/nope"
 #   FILETYPE axis: risk/low (Machine Doc / inert assets) | risk/med (Computer Code — executes)
 #   FILEDEPTH axis: risk/high (path inside the "!/" tree) | risk/nope (path in the inner
 #                   "!/!/__!__/!/" region and below — never auto-merges)
-# A PR carries AT MOST one filetype value AND at most one filedepth value (0–2 labels total).
-# `—` on an axis is the ABSENCE of that axis's label; `—/—` (clear) is NO risk/* label at all.
+# A PR carries AT MOST one filetype value AND at most one filedepth value. `—` on an
+# axis is the absence of that axis's label; when NEITHER fires the PR carries
+# `risk/—`, the ninth cell's own label. A PR with no risk/* label at all is NOT
+# clear — it is unclassified, and it HOLDS.
 # Flags are TRANSIENT ROUTING STATE, not a durable record: the classifier restamps them on
 # synchronize (labels mirror the current diff), and when the lane's review completes the
 # engine clears the fired flag (removes it) and the PR flows. risk/nope is never
@@ -123,9 +130,10 @@ RISK_FLAG_LABELS = frozenset(
 )
 
 # The engine owns its whole namespace, not just the vocabulary it currently stamps.
-# `restamp_risk_pair` removes any label matching this that the classified lane did not ask for,
-# a PR still wearing a superseded form (the retired `filetype:risk/*` + `depth:risk/*` +
-# `risk/—` scheme #854 replaced) converges the next time it is classified — no migration
+# `restamp_risk_pair` removes any label matching this that the classified lane did not ask
+# for, so a PR still wearing a superseded form (the retired `filetype:risk/*` and
+# `depth:risk/*` prefixed scheme #854 replaced) converges the next time it is classified —
+# no migration
 # script, and nothing to run by hand. This matches on the namespace instead of enumerating
 # the retired strings: an enumeration would need editing every time the vocabulary moves,
 # and that editing is where the nine-string scheme #854 had to flatten came from.
@@ -803,11 +811,13 @@ class RiskMarkerInvariantError(ValueError):
 
 
 def _assert_risk_marker_exclusive(labels: set[str]) -> None:
-    """Fail loud on the one state the flat schema forbids: two values on a single axis."""
+    """Fail loud on the states the flat schema forbids: two values on one axis, or
+    the clear label alongside a fired one."""
     # Each axis carries AT MOST one flat label — risk/low XOR risk/med on the filetype
     # axis, risk/high XOR risk/nope on the filedepth axis. Both values on one axis is a
     # producer/backfill bug, not a routing decision — raise so it can never silently route
-    # a PR whose axis is self-contradictory.
+    # a PR whose axis is self-contradictory. `risk/—` asserts that NOTHING fired, so it
+    # cannot coexist with a fired flag; that pairing is a contradiction, not a tier.
     if RISK_LOW_LABEL in labels and RISK_MED_LABEL in labels:
         raise RiskMarkerInvariantError(
             f"risk-marker invariant violated: the filetype axis carries both "
@@ -820,14 +830,22 @@ def _assert_risk_marker_exclusive(labels: set[str]) -> None:
             f"{RISK_HIGH_LABEL} and {RISK_NOPE_LABEL}. Each axis carries at most ONE "
             f"value, never both."
         )
+    fired = labels & RISK_FLAG_LABELS
+    if RISK_CLEAR_LABEL in labels and fired:
+        raise RiskMarkerInvariantError(
+            f"risk-marker invariant violated: {RISK_CLEAR_LABEL} says no axis fired, "
+            f"but {sorted(fired)} is present. The clear label is stamped only when "
+            f"NEITHER axis fires."
+        )
 
 
 def _risk_pair_for_pr(labels: set[str]) -> tuple[str | None, str | None, bool]:
     """Read the lane ``(filetype_flag, filedepth_flag, classified)`` off the flat labels."""
     # ``filetype_flag`` is "med"/"low"/None; ``filedepth_flag`` is "nope"/"high"/None.
-    # ``classified`` is True iff ANY risk/* flag is present — no flag present means we
-    # cannot confirm the PR was classified from labels alone (an all-absent PR is NOT
-    # classified-clear: it holds until the classifier says the lane is `—/—`).
+    # ``classified`` is True iff a fired flag OR ``RISK_CLEAR_LABEL`` is present. The
+    # clear label is what makes the `—/—` cell readable off the labels alone: it says the
+    # classifier looked and nothing fired. A PR wearing NO risk label has not been
+    # classified at all, and holds.
     filetype_flag = (
         "med" if RISK_MED_LABEL in labels
         else "low" if RISK_LOW_LABEL in labels
@@ -838,7 +856,7 @@ def _risk_pair_for_pr(labels: set[str]) -> tuple[str | None, str | None, bool]:
         else "high" if RISK_HIGH_LABEL in labels
         else None
     )
-    classified = bool(labels & RISK_FLAG_LABELS)
+    classified = bool(labels & RISK_FLAG_LABELS) or RISK_CLEAR_LABEL in labels
     return (filetype_flag, filedepth_flag, classified)
 
 
@@ -902,11 +920,13 @@ def restamp_risk_pair(
 ) -> list[str]:
     """Make the PR's risk labels mirror the classified lane — the 'restamp'."""
     # ``desired`` is the flat label for each fired axis: the filetype label if
-    # ``filetype_flag`` is set, plus the filedepth label if ``filedepth_flag`` is set. A `—/—`
-    # lane (both None) yields an EMPTY desired set — a clear lane stamps nothing and
-    # removes any stale risk/* label. ``managed`` is the flat set PLUS anything already on the
-    # PR that lives in the risk namespace, so managed-not-desired labels are removed — that is
-    # what retires a superseded vocabulary in passing, without a migration script.
+    # ``filetype_flag`` is set, plus the filedepth label if ``filedepth_flag`` is set. When
+    # NEITHER fires, ``desired`` is ``{RISK_CLEAR_LABEL}`` — the `—/—` cell stamps its own
+    # label rather than stamping nothing, so a later read can tell 'classified, nothing
+    # fired' from 'never classified'. ``managed`` is the flat set plus the clear label plus
+    # anything already on the PR that lives in the risk namespace, so managed-not-desired
+    # labels are removed — that is what retires a superseded vocabulary in passing,
+    # without a migration script.
     # Mutates ``labels`` in place and returns the actions taken.
     _validate_pair(filetype_flag, filedepth_flag)
     actions: list[str] = []
@@ -915,7 +935,9 @@ def restamp_risk_pair(
         desired.add(FILETYPE_RISK_LABELS[filetype_flag])
     if filedepth_flag is not None:
         desired.add(FILEDEPTH_RISK_LABELS[filedepth_flag])
-    managed = set(RISK_FLAG_LABELS) | {
+    if not desired:
+        desired.add(RISK_CLEAR_LABEL)
+    managed = set(RISK_FLAG_LABELS) | {RISK_CLEAR_LABEL} | {
         label for label in labels if RISK_NAMESPACE_PATTERN.match(label)
     }
     for label in sorted(desired - labels):
@@ -978,9 +1000,9 @@ def evaluate_review_state(
     blocking_review = review_decision == "CHANGES_REQUESTED"
     _assert_risk_marker_exclusive(label_names)
     # The lane is the flat (filetype, filedepth) pair. A caller-supplied lane (the classifier's
-    # fresh reading) is authoritative and always "marked" — so a `—/—` lane is affirmatively
-    # clear even with zero labels. Without one the flags are read off the labels, and an
-    # all-absent PR is NOT marked (unknown, holds — absence of a label is not the clear state).
+    # fresh reading) is authoritative and always "marked". Without one the flags are read off
+    # the labels, where `risk/—` reads as affirmatively clear and NO risk label at all reads
+    # as unknown and HOLDS — absence of a label is not the clear state.
     if classified_lane is not None:
         filetype_flag, filedepth_flag = classified_lane
         pair_marked = True

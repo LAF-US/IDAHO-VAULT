@@ -177,11 +177,12 @@ jobs:
           AGENT=$(echo "$BRANCH_NAME" | sed 's|/.*||')
           DIFFSTAT=$(git diff --stat origin/main...HEAD)
 
-          # Flat 4-value risk schema: stamp the fired axes only. The filetype axis fires
-          # risk/low | risk/med; the filedepth axis fires risk/high | risk/nope. An axis
-          # whose classifier value is the em-dash (—) fires NOTHING (no label). `—/—`
-          # (no risk/* label at all) becomes eligible to arm once the grace window elapses;
-          # a fired flag routes the PR into its review lane and is removed when that review completes.
+          # Flat risk schema: stamp the fired axes, and stamp `risk/—` when neither fires.
+          # The filetype axis fires risk/low | risk/med; the filedepth axis fires
+          # risk/high | risk/nope. An axis whose classifier value is the em-dash (—) fires
+          # nothing of its own. The `—/—` cell carries `risk/—`, which becomes eligible to
+          # arm once the grace window elapses; a fired flag routes the PR into its review
+          # lane and is removed when that review completes.
           FT_LABEL=""
           FD_LABEL=""
           case "$RISK_FILETYPE" in
@@ -192,6 +193,13 @@ jobs:
             high) FD_LABEL="risk/high" ;;
             nope) FD_LABEL="risk/nope" ;;
           esac
+          # Stamped at creation, not left for the first sync to backfill: a PR carrying no
+          # risk label at all reads as UNCLASSIFIED and holds, so the clear cell has to say
+          # clear out loud or it is indistinguishable from never having been looked at.
+          CLEAR_LABEL=""
+          if [ -z "$FT_LABEL" ] && [ -z "$FD_LABEL" ]; then
+            CLEAR_LABEL="risk/—"
+          fi
           # review/pending is the low-risk lane's review marker (tier4 == low).
           if [ "$RISK_TIER4" = "low" ]; then
             LABEL="review/pending"
@@ -235,6 +243,9 @@ jobs:
           fi
           if [ -n "$FD_LABEL" ]; then
             CREATE_ARGS+=(--label "$FD_LABEL")
+          fi
+          if [ -n "$CLEAR_LABEL" ]; then
+            CREATE_ARGS+=(--label "$CLEAR_LABEL")
           fi
           if [ -n "$LABEL" ]; then
             CREATE_ARGS+=(--label "$LABEL")
