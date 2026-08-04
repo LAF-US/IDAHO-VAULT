@@ -8,14 +8,15 @@
 .obsidian/plugins/phone-to-roam-to-obsidian/data.json
 .obsidian/plugins/todoist-context-bridge/data.json
 *.env*
-*.venv*
+*.pem
 *.sq*
+*.venv*
 */*private*/*
 .*/id_*
 .*/*_hosts*
 .*/*keys*/*.*
 .*/credstore*
-.*/*.credentials.*
+.*/*.*credentials*.*
 .*/**/marketplaces/*
 
 # THE WORLD IS QUIET HERE．
