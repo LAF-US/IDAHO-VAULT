@@ -1,0 +1,2 @@
+
+"smart_sources:device-flow.md": {"path":"device-flow.md","last_embed":{"hash":null},"embeddings":{},"last_read":{"hash":"1ycm2xg","at":1785795040214},"class_name":"SmartSource","last_import":{"mtime":1783704669537,"size":371,"at":1785795040252,"hash":"1ycm2xg"},"blocks":{"#Device Flow":[1,10],"#Device Flow#{1}":[3,5],"#Device Flow#{2}":[6,6],"#Device Flow#{3}":[7,7],"#Device Flow#{4}":[8,8],"#Device Flow#{5}":[9,10]},"outlinks":[{"title":"../concepts/oauth-flows.md","target":"../concepts/oauth-flows.md","line":3}],"task_lines":[],"tasks":{},"codeblock_ranges":[]},
