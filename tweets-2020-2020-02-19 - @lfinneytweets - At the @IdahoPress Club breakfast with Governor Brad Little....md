@@ -26,6 +26,6 @@ At the @IdahoPress Club breakfast with Governor Brad Little taking questions fro
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/ERJlFlKU8AEuher.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/ERJlFlKU8AEuher.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1230156804383895552)

@@ -29,6 +29,6 @@ https://t.co/OgSUh8NKpF https://t.co/ExDmaE4doh
 - https://blog.idahoreports.idahoptv.org/2023/11/08/chronic-wasting-disease-detected-in-new-meadows-mule-deer/
 
 ## Media
-- ![](https://pbs.twimg.com/media/F-ch-W3aUAAXBOK.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/F-ch-W3aUAAXBOK.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1722383276592255328)

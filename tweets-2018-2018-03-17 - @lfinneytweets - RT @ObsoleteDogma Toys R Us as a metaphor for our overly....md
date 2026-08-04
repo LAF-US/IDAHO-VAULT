@@ -23,6 +23,6 @@ RT @ObsoleteDogma: Toys R Us as a metaphor for our overly financialized economy 
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/DYbnpBuWsAIYrcn.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/DYbnpBuWsAIYrcn.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/974913941305356289)

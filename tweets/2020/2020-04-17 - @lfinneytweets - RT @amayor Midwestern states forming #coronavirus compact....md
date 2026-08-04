@@ -26,6 +26,6 @@ https://t.co/HvGKS8SewC https://t.co/ZbLEtwIPRk
 - https://www.cnn.com/2020/04/16/politics/midwest-governors-reopening-pact/index.html
 
 ## Media
-- ![](https://pbs.twimg.com/media/EVwPd4YVcAAnBt-.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EVwPd4YVcAAnBt-.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1251002635940847616)

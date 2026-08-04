@@ -21,6 +21,6 @@ related:
 RT @uidaho: Happy birthday #Idaho, the 43rd state. Together, we've been brave and bold since the beginning. 🙌🎉 https://t.co/JzFq0AewRn
 
 ## Media
-- ![](https://pbs.twimg.com/media/F0HgsUCWwAIJr2n.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/F0HgsUCWwAIJr2n.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1675888282360741888)

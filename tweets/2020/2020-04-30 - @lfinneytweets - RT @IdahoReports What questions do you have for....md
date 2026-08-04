@@ -19,7 +19,6 @@ related:
   - IdahoCOVID19
 ---
 
-RT @IdahoReports: What questions do you have for @GovernorLittle after this morning’s "Rebound Stage 1" press conference? 
-#IdahoCOVID19 #i…
+RT @IdahoReports: What questions do you have for @GovernorLittle after this morning’s "Rebound Stage 1" press conference? #IdahoCOVID19 #i…
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1255943219914760192)

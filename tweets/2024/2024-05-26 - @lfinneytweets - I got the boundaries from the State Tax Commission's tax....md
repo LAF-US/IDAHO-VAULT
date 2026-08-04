@@ -23,7 +23,7 @@ https://t.co/KCKl6urh9z https://t.co/DKnvZYi81i
 - https://istc.maps.arcgis.com/apps/webappviewer/index.html?id=9f9d6e39375a4766b1317ba1e67e058d
 
 ## Media
-- ![](https://pbs.twimg.com/media/GOhysX5a4AESErO.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/GOhysX5a4AESErO.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

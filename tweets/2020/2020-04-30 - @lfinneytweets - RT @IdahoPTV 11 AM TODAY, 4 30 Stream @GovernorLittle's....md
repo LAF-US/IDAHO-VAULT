@@ -21,8 +21,7 @@ related:
   - idpol
 ---
 
-RT @IdahoPTV: 11 AM TODAY, 4/30: Stream @GovernorLittle's press conference LIVE here: https://t.co/8TtGWPW6OM
-#IdahoCovid19 #idpol
+RT @IdahoPTV: 11 AM TODAY, 4/30: Stream @GovernorLittle's press conference LIVE here: https://t.co/8TtGWPW6OM #IdahoCovid19 #idpol
 
 ## Links
 - https://www.facebook.com/idahoptv

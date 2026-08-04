@@ -19,7 +19,7 @@ related:
 Idaho Senate incumbents after primary results #idleg https://t.co/VcrTu8QljE
 
 ## Media
-- ![](https://pbs.twimg.com/media/GOTOztfacAAlllK.jpg)
-- ![](https://pbs.twimg.com/media/GOTOzuMboAAm8pB.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/GOTOztfacAAlllK.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/GOTOzuMboAAm8pB.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1793785943025135792)

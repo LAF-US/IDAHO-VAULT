@@ -20,7 +20,7 @@ related:
 @mlcarmel @shannon_minor https://t.co/8K0sMwkGxE
 
 ## Media
-- ![](https://pbs.twimg.com/media/FBJXQM9UUAAdEtY.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/FBJXQM9UUAAdEtY.jpg)
 
 *In reply to [@mlcarmel](https://twitter.com/mlcarmel)*
 

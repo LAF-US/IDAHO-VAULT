@@ -25,6 +25,6 @@ related:
 RT @NWSBoise: Here's a look from space of the smoke across the entire Pacific Northwest. #idwx #orwx #wawx https://t.co/JJihNakEwc
 
 ## Media
-- ![](https://pbs.twimg.com/tweet_video_thumb/E8t16qdVEAARzPO.jpg)
+- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/E8t16qdVEAARzPO.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1426368722206269442)

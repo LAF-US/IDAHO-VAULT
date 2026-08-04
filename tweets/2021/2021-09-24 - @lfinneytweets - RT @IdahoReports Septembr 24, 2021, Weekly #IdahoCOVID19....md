@@ -22,6 +22,6 @@ related:
 RT @IdahoReports: Septembr 24, 2021, Weekly #IdahoCOVID19 Update | @IdahoPTV https://t.co/zuFlarKVZx
 
 ## Media
-- ![](https://pbs.twimg.com/amplify_video_thumb/1441532278161641475/img/cQegtq7JEEGcgmAJ.jpg)
+- ![alt text needed](https://pbs.twimg.com/amplify_video_thumb/1441532278161641475/img/cQegtq7JEEGcgmAJ.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1441532566964555777)

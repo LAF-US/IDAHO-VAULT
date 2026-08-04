@@ -24,7 +24,7 @@ Senate leadership typically doesn’t hold news conferences after legislative se
 
 The session ended Thursday, after 81 days marked by debates over budgets and high-stakes policies that touched on [teachers’ unions](https://www.idahoednews.org/legislative-roundups/statehouse-roundup-4-2-26-house-poised-for-vote-on-union-bill-as-adjournment-nears/), [virtual education](https://www.idahoednews.org/legislative-roundups/statehouse-roundup-4-1-26-idla-virtual-school-budget-cuts-clear-senate/), health care and immigration, among other topics.
 
-![](https://www.idahoednews.org/wp-content/uploads/2026/04/IMG_8048.jpg)
+![alt text needed](https://www.idahoednews.org/wp-content/uploads/2026/04/IMG_8048.jpg)
 
 Speaker of the House Mike Moyle, R-Star, welcomes his colleagues onto the House floor on the final day of the legislative session on Thursday, April 2, 2026. (Sean Dolan/EdNews)
 
@@ -48,7 +48,7 @@ Democrats Friday took aim at both the governor and Republican lawmakers, highlig
 
 “Idaho is something you shouldn’t have to endure, right?” said Wintrow, D-Boise, putting a twist on Little’s “Enduring Idaho” slogan. “Idahoans have endured a lot this session: broken promises, bad budgeting, culture war distractions and poor governing dressed up as leadership.”
 
-![](https://www.idahoednews.org/wp-content/uploads/2026/04/IMG_8008.jpg)
+![alt text needed](https://www.idahoednews.org/wp-content/uploads/2026/04/IMG_8008.jpg)
 
 House Minority Leader Ilana Rubel, D-Boise, celebrates at the end of the legislative session on Thursday, April 2, 2026. (Sean Dolan/EdNews)
 

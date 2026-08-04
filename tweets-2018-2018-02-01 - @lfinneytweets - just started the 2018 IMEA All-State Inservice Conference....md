@@ -20,6 +20,6 @@ related:
 
 ## Media
 
-- ![](https://pbs.twimg.com/ext_tw_video_thumb/959125339636051968/pu/img/t0AxtXroutCjVAQT.jpg)
+- ![alt text needed](https://pbs.twimg.com/ext_tw_video_thumb/959125339636051968/pu/img/t0AxtXroutCjVAQT.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/959125738283679744)

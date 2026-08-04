@@ -18,7 +18,7 @@ related:
   - idpol
 ---
 
-#IdahoCOVID19 #idpol https://t.co/nauVSdV9ph
+\#IdahoCOVID19 #idpol https://t.co/nauVSdV9ph
 
 ## Links
 - https://x.com/IdahoReports/status/1276334409478631425

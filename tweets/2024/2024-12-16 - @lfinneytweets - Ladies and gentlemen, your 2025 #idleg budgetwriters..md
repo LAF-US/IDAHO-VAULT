@@ -19,6 +19,6 @@ related:
 Ladies and gentlemen, your 2025 #idleg budgetwriters. https://t.co/g9u5ckPf0f
 
 ## Media
-- ![](https://pbs.twimg.com/media/Ge8ue1RaMAAJjnL.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/Ge8ue1RaMAAJjnL.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1868763567119647048)

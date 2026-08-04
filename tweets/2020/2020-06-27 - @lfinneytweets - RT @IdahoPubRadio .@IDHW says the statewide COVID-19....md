@@ -22,6 +22,6 @@ RT @IdahoPubRadio: .@IDHW says the statewide COVID-19 hotline has been deactivat
 - https://www.facebook.com/614836341895311/posts/3151677868211133/?d=n
 
 ## Media
-- ![](https://pbs.twimg.com/media/EbiKlSkU8AEOOuW.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EbiKlSkU8AEOOuW.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1276984652918427648)

@@ -22,6 +22,6 @@ Sen. Martin is taking time while the Senate is at ease to speak about calling 2-
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/EOQ2BVBU8AAErsm.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EOQ2BVBU8AAErsm.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1217158823569346561)

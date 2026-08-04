@@ -25,6 +25,6 @@ RT @RadioDawson: The House just rejected AG @lawrencewasden’s budget with no d
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/ES2EauZU0AE2uNZ.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/ES2EauZU0AE2uNZ.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1237791618670850054)

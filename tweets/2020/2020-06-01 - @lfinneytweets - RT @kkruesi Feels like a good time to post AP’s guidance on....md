@@ -18,6 +18,6 @@ related:
 RT @kkruesi: Feels like a good time to post AP’s guidance on the word looting: https://t.co/hjxQWbSYAx
 
 ## Media
-- ![](https://pbs.twimg.com/media/EZW6o7zXkAA0Ad5.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EZW6o7zXkAA0Ad5.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1267511841070055424)

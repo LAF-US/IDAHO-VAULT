@@ -18,6 +18,6 @@ related:
 RT @chazhutton: Thought I’d draw a more accurate calendar for 2020 so far.... https://t.co/hWB9W4PIAH
 
 ## Media
-- ![](https://pbs.twimg.com/media/EWYDRgqWsAE1yLM.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EWYDRgqWsAE1yLM.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1254456110364323840)

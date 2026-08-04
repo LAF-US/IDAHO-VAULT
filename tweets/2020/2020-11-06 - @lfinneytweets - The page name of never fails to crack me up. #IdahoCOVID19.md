@@ -22,6 +22,6 @@ The page name of https://t.co/nxIWTF7aiy never fails to crack me up. #IdahoCOVID
 - http://coronavirus.idaho.gov
 
 ## Media
-- ![](https://pbs.twimg.com/media/EmLcfehU8AAru8-.png)
+- ![alt text needed](https://pbs.twimg.com/media/EmLcfehU8AAru8-.png)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1324863719361323008)

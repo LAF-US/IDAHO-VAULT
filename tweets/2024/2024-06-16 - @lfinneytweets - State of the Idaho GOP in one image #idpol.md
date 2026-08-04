@@ -19,6 +19,6 @@ related:
 State of the Idaho GOP in one image #idpol https://t.co/jgtllMX12b
 
 ## Media
-- ![](https://pbs.twimg.com/media/GQNONmVawAAuqoy.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/GQNONmVawAAuqoy.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1802370273389482445)
