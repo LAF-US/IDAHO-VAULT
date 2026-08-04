@@ -4,7 +4,21 @@ version = "0.1.0"
 description = "The world is quiet here．Esto Perpetua!"
 authors = [{ name = "Logan Finney" }, { name = "Unified Swarm" }]
 dependencies = [
-    "packaging"
+    "packaging",
+    # Each entry names a file that imports it and the run that proved it. All three
+    # were smoked out by `uv run pytest tests` on e3ec9e414, which stopped with
+    # "Interrupted: 6 errors during collection" and named them one at a time.
+    #
+    # src/idaho_vault/five_wizards/models.py:5 -> test_five_wizards,
+    # test_threshold_runner, test_civic_scaffold
+    "pydantic~=2.11.9",
+    # .github/scripts/metadata_survey.py:28 -> test_metadata_survey;
+    # tests/test_workflow_security_invariants.py:6 imports it directly.
+    # NOTE: PyYAML was never declared here. It has been arriving as a transitive
+    # dependency of something else, which is why nothing noticed when it stopped.
+    "pyyaml>=6.0,<7",
+    # tests/test_sync_obsidian_plugin_registry.py:17
+    "pygit2>=1.18.2,<2",
 ]
 # Just like a .gitignore file, don't fiddle with this willy-nilly.
 
