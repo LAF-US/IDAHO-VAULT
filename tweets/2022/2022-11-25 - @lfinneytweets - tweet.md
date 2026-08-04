@@ -18,6 +18,6 @@ related:
 @HollyCookID https://t.co/PBJNGum84B
 
 ## Media
-- ![](https://pbs.twimg.com/media/FibHPWhacAAoaUm.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/FibHPWhacAAoaUm.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1596182187610894337)

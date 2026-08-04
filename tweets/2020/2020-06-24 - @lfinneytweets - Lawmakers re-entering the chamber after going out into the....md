@@ -17,9 +17,9 @@ related:
 Lawmakers re-entering the chamber after going out into the hallway, gathering chairs to sit in the well. https://t.co/k9TUmT7JIi
 
 ## Media
-- ![](https://pbs.twimg.com/media/EbQDojlWAAAAsys.jpg)
-- ![](https://pbs.twimg.com/media/EbQDoj9XYAIwILn.jpg)
-- ![](https://pbs.twimg.com/media/EbQDok4XQAcZdmu.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EbQDojlWAAAAsys.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EbQDoj9XYAIwILn.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EbQDok4XQAcZdmu.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

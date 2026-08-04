@@ -20,6 +20,6 @@ https://t.co/56yEL0o20S https://t.co/DwIH51gpuR
 - https://youtube.com/c/PFINNEY?sub_confirmation=1
 
 ## Media
-- ![](https://pbs.twimg.com/media/FZgixTJUIAEICfF.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/FZgixTJUIAEICfF.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1556031903148298240)

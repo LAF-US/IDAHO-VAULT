@@ -20,8 +20,6 @@ related:
   - idleg
 ---
 
-RT @gemstatebrian: The committee voted to hold S1252, effectively killing the bill for another year.
-
-#idpol #idleg
+RT @gemstatebrian: The committee voted to hold S1252, effectively killing the bill for another year. #idpol #idleg
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1769826079970103332)

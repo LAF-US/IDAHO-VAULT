@@ -21,6 +21,6 @@ related:
 Idaho state senator asks that "God send the nuke" in response to an Algerian woman punching an Italian woman in Paris 2024 Olympic boxing. #idleg #idpol https://t.co/2mamzUgpQx
 
 ## Media
-- ![](https://pbs.twimg.com/media/GT7BRXwb0AAG2SH.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/GT7BRXwb0AAG2SH.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1819103806095052866)

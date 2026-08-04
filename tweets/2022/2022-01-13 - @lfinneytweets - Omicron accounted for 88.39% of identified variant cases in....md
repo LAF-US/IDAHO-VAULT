@@ -21,6 +21,6 @@ related:
 Omicron accounted for 88.39% of identified variant cases in the second half of December, per @IDHW data. #IdahoCOVID19 https://t.co/EpFVSzIycG
 
 ## Media
-- ![](https://pbs.twimg.com/media/FI_893HVgAIogCc.png)
+- ![alt text needed](https://pbs.twimg.com/media/FI_893HVgAIogCc.png)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1481688379397869569)

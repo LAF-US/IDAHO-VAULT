@@ -19,6 +19,6 @@ Woohoo! Stopping by the office means picking up my mail 😁
 Thanks @jjsaldana https://t.co/ooxoGQu1r7
 
 ## Media
-- ![](https://pbs.twimg.com/media/EvQ0nWdVgAAotmB.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EvQ0nWdVgAAotmB.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1365774440156463106)

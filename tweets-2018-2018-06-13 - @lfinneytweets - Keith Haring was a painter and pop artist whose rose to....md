@@ -17,7 +17,7 @@ Keith Haring was a painter and pop artist whose rose to prominence in 1980s New 
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/Dfja7-wX0AEBLxA.jpg)
-- ![](https://pbs.twimg.com/media/Dfja-i7W4AEb9Vd.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/Dfja7-wX0AEBLxA.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/Dfja-i7W4AEb9Vd.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1006795319827488769)

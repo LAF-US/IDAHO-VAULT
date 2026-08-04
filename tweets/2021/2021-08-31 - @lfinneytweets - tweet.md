@@ -20,7 +20,7 @@ related:
 @ryannoyance @coyethan_ https://t.co/DZ4tnrflaG
 
 ## Media
-- ![](https://pbs.twimg.com/media/E-IzChRUYAEh6w-.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/E-IzChRUYAEh6w-.jpg)
 
 *In reply to [@ryannoyance](https://twitter.com/ryannoyance)*
 

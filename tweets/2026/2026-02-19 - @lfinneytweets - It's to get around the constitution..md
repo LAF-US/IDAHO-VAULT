@@ -20,7 +20,7 @@ related:
 @LibertyBelle208 @FromHavilah It's to get around the constitution. https://t.co/XcvBiRKwwy
 
 ## Media
-- ![](https://pbs.twimg.com/media/HBfLq6pbAAAX4ZG.png)
+- ![alt text needed](https://pbs.twimg.com/media/HBfLq6pbAAAX4ZG.png)
 
 *In reply to [@LibertyBelle208](https://twitter.com/LibertyBelle208)*
 

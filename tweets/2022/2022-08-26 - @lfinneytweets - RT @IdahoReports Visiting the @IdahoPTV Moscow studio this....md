@@ -20,7 +20,7 @@ related:
 RT @IdahoReports: Visiting the @IdahoPTV Moscow studio this week with some @uidaho journalism students! https://t.co/fbjNppJF7u
 
 ## Media
-- ![](https://pbs.twimg.com/media/FbH2fxAUYAETuDr.jpg)
-- ![](https://pbs.twimg.com/media/FbH2iM7VsAEt25N.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/FbH2fxAUYAETuDr.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/FbH2iM7VsAEt25N.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1563301649309134848)

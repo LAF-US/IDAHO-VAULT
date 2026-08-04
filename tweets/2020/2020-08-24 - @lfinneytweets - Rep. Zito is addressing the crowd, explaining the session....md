@@ -17,7 +17,7 @@ related:
 Rep. Zito is addressing the crowd, explaining the session gallery rules. "No flags, no signs, no booing," she says. The crowd lets out a round of applause for the gallery being open. https://t.co/k65LCejAzR
 
 ## Media
-- ![](https://pbs.twimg.com/media/EgMqF6cU0AcO6ee.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EgMqF6cU0AcO6ee.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

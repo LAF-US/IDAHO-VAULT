@@ -20,7 +20,7 @@ related:
 @AngryNIdaho @BetsyZRussell @salsuppe Staggered implementation until 2024 https://t.co/BNz6nYQ1QK
 
 ## Media
-- ![](https://pbs.twimg.com/media/EzRZwLzVUAosyej.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EzRZwLzVUAosyej.jpg)
 
 *In reply to [@AngryNIdaho](https://twitter.com/AngryNIdaho)*
 

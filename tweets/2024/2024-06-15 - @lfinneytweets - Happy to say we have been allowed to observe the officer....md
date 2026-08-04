@@ -22,7 +22,7 @@ related:
 Happy to say we have been allowed to observe the officer nominations and upcoming vote! #idpol #idleg https://t.co/J9u6qDA0s7
 
 ## Media
-- ![](https://pbs.twimg.com/media/GQJMb73bQAAkilY.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/GQJMb73bQAAkilY.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

@@ -18,6 +18,6 @@ related:
   - idpol
 ---
 
-#idleg #idpol
+\#idleg #idpol
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1775379407303250296)

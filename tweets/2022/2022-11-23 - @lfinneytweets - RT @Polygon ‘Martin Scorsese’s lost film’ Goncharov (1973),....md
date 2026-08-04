@@ -21,6 +21,6 @@ RT @Polygon: ‘Martin Scorsese’s lost film’ Goncharov (1973), explained htt
 - https://www.polygon.com/23471749/goncharov-1973-explained-tumblr-meme?utm_campaign=polygon&utm_content=chorus&utm_medium=social&utm_source=twitter
 
 ## Media
-- ![](https://pbs.twimg.com/media/FiHhdxTWIBALFgK.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/FiHhdxTWIBALFgK.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1595273350259277825)

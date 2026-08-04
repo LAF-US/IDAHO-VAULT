@@ -18,7 +18,7 @@ related:
   - idpol
 ---
 
-#idleg #idpol https://t.co/To62xXxC1S
+\#idleg #idpol https://t.co/To62xXxC1S
 
 ## Links
 - https://x.com/KTVB/status/1589388427128176641

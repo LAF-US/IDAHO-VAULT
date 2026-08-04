@@ -18,9 +18,9 @@ related:
 RT @ImErinRobinson: Photos courtesy: U.S. Army Photo by Sgt. Kaden D. Pitt https://t.co/H90RrRM2J4
 
 ## Media
-- ![](https://pbs.twimg.com/media/E-txHqGVQAMAYqS.jpg)
-- ![](https://pbs.twimg.com/media/E-txHrDVQAA6LAn.jpg)
-- ![](https://pbs.twimg.com/media/E-txHsHVUAISjdM.jpg)
-- ![](https://pbs.twimg.com/media/E-txHtIUUAQogub.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/E-txHqGVQAMAYqS.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/E-txHrDVQAA6LAn.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/E-txHsHVUAISjdM.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/E-txHtIUUAQogub.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1435365831156776964)

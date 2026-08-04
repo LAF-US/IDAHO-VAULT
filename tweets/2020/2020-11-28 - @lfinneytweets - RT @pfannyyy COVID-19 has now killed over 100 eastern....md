@@ -18,9 +18,7 @@ related:
   - IdahoCOVID19
 ---
 
-RT @pfannyyy: COVID-19 has now killed over 100 eastern Idahoans. 
-
-#IdahoCOVID19
+RT @pfannyyy: COVID-19 has now killed over 100 eastern Idahoans. #IdahoCOVID19
 https://t.co/7uSHAK2eNT
 
 ## Links

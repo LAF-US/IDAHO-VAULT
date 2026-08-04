@@ -17,7 +17,7 @@ related:
 Confirmed cases by county. https://t.co/dtm8TIP9FJ
 
 ## Media
-- ![](https://pbs.twimg.com/media/EVN3Oc_UEAAbGFs.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EVN3Oc_UEAAbGFs.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 
