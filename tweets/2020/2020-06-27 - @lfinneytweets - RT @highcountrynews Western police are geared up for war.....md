@@ -25,6 +25,6 @@ https://t.co/efIAzIkKZs https://t.co/n5ayR7Xxpc
 - https://hcne.ws/31wpz3l
 
 ## Media
-- ![](https://pbs.twimg.com/media/EbdmermWAAAR-K8.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EbdmermWAAAR-K8.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1276983343494475776)

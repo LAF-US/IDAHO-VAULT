@@ -22,8 +22,6 @@ related:
 
 RT @LatahCoHistory: Two horsedrawn combines and car full of people near Moscow, Idaho. 1905. 
 
-LCHS Photo: 25-02-045 
-
-#LatahCounty #Idaho…
+LCHS Photo: 25-02-045 #LatahCounty #Idaho…
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1379543266157191169)

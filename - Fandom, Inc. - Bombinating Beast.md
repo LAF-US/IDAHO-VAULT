@@ -135,13 +135,13 @@ The [statue](https://snicket.fandom.com/wiki/Bombinating_Beast_Statue "Bombinati
 
 ### All the Wrong Questions Illustrations
 
- [![](https://static.wikia.nocookie.net/snicket/images/e/e8/Bombinatingtransparent.png/revision/latest/scale-to-width-down/185?cb=20201223040441 "Bombinatingtransparent.png (1.73 MB)") ![](https://static.wikia.nocookie.net/snicket/images/e/e8/Bombinatingtransparent.png/revision/latest/scale-to-width-down/185?cb=20201223040441 "Bombinatingtransparent.png (1.73 MB)")](https://snicket.fandom.com/wiki/File:Bombinatingtransparent.png "Bombinatingtransparent.png (1.73 MB)")
+ [![alt text needed](https://static.wikia.nocookie.net/snicket/images/e/e8/Bombinatingtransparent.png/revision/latest/scale-to-width-down/185?cb=20201223040441 "Bombinatingtransparent.png (1.73 MB)") ![alt text needed](https://static.wikia.nocookie.net/snicket/images/e/e8/Bombinatingtransparent.png/revision/latest/scale-to-width-down/185?cb=20201223040441 "Bombinatingtransparent.png (1.73 MB)")](https://snicket.fandom.com/wiki/File:Bombinatingtransparent.png "Bombinatingtransparent.png (1.73 MB)")
 
 [![Concept Art.](https://static.wikia.nocookie.net/snicket/images/f/f9/1%3Fconcept2.jpg/revision/latest/scale-to-width-down/121?cb=20191020183321 "1?concept2.jpg (87 KB)")](https://snicket.fandom.com/wiki/File:1%3Fconcept2.jpg "1?concept2.jpg (87 KB)")
 
 Concept Art.
 
- [![](https://static.wikia.nocookie.net/snicket/images/a/a8/Bombinatingconcept.jpg/revision/latest/scale-to-width-down/167?cb=20201112140903 "Bombinatingconcept.jpg (51 KB)") ![](https://static.wikia.nocookie.net/snicket/images/a/a8/Bombinatingconcept.jpg/revision/latest/scale-to-width-down/167?cb=20201112140903 "Bombinatingconcept.jpg (51 KB)")](https://snicket.fandom.com/wiki/File:Bombinatingconcept.jpg "Bombinatingconcept.jpg (51 KB)")
+ [![alt text needed](https://static.wikia.nocookie.net/snicket/images/a/a8/Bombinatingconcept.jpg/revision/latest/scale-to-width-down/167?cb=20201112140903 "Bombinatingconcept.jpg (51 KB)") ![alt text needed](https://static.wikia.nocookie.net/snicket/images/a/a8/Bombinatingconcept.jpg/revision/latest/scale-to-width-down/167?cb=20201112140903 "Bombinatingconcept.jpg (51 KB)")](https://snicket.fandom.com/wiki/File:Bombinatingconcept.jpg "Bombinatingconcept.jpg (51 KB)")
 
 [![Promo poem presumably referencing the Beast.](https://static.wikia.nocookie.net/snicket/images/5/5f/STANZA_1.6.jpg/revision/latest/scale-to-width-down/185?cb=20121108210428 "STANZA 1.6.jpg (68 KB)")](https://snicket.fandom.com/wiki/File:STANZA_1.6.jpg "STANZA 1.6.jpg (68 KB)")
 
@@ -225,7 +225,7 @@ The Great Unknown in [The Grim Grotto: Part One](https://snicket.fandom.com/wiki
 
 The statue of the Beast in [The End](https://snicket.fandom.com/wiki/The_End_\(episode\) "The End (episode)")
 
- [![](https://static.wikia.nocookie.net/snicket/images/c/cc/Bombinatingstatuenetflix.png/revision/latest/scale-to-width-down/185?cb=20200627163115 "Bombinatingstatuenetflix.png (4.13 MB)") ![](https://static.wikia.nocookie.net/snicket/images/c/cc/Bombinatingstatuenetflix.png/revision/latest/scale-to-width-down/185?cb=20200627163115 "Bombinatingstatuenetflix.png (4.13 MB)")](https://snicket.fandom.com/wiki/File:Bombinatingstatuenetflix.png "Bombinatingstatuenetflix.png (4.13 MB)")
+ [![alt text needed](https://static.wikia.nocookie.net/snicket/images/c/cc/Bombinatingstatuenetflix.png/revision/latest/scale-to-width-down/185?cb=20200627163115 "Bombinatingstatuenetflix.png (4.13 MB)") ![alt text needed](https://static.wikia.nocookie.net/snicket/images/c/cc/Bombinatingstatuenetflix.png/revision/latest/scale-to-width-down/185?cb=20200627163115 "Bombinatingstatuenetflix.png (4.13 MB)")](https://snicket.fandom.com/wiki/File:Bombinatingstatuenetflix.png "Bombinatingstatuenetflix.png (4.13 MB)")
 
 ## Sources
 

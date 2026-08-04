@@ -16,6 +16,6 @@ related:
 Pro tip: when you pack extra AA batteries, make sure they're not actually AAA! https://t.co/VG9wzZDixc
 
 ## Media
-- ![](https://pbs.twimg.com/tweet_video_thumb/GP_hdrGaQAAP2xY.jpg)
+- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/GP_hdrGaQAAP2xY.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1801406285935689979)

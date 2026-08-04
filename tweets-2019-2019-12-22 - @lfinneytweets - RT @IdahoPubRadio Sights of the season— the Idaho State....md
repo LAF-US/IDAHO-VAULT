@@ -20,8 +20,8 @@ RT @IdahoPubRadio: Sights of the season— the Idaho State Capitol, Boise. (@ran
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/EMZuFlnUYAECRtP.jpg)
-- ![](https://pbs.twimg.com/media/EMZuFlhU0AI9Vat.jpg)
-- ![](https://pbs.twimg.com/media/EMZuFljVUAE7s19.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EMZuFlnUYAECRtP.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EMZuFlhU0AI9Vat.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EMZuFljVUAE7s19.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1208831882181275648)

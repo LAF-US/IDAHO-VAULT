@@ -19,7 +19,7 @@ related:
 @HDruzin https://t.co/DRziZVUSp5
 
 ## Media
-- ![](https://pbs.twimg.com/media/E9BwpBzVcAEk5If.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/E9BwpBzVcAEk5If.jpg)
 
 *In reply to [@HDruzin](https://twitter.com/HDruzin)*
 

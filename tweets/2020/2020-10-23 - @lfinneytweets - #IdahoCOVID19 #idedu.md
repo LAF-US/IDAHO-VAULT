@@ -18,7 +18,7 @@ related:
   - idedu
 ---
 
-#IdahoCOVID19 #idedu https://t.co/xOCWUHLx3P
+\#IdahoCOVID19 #idedu https://t.co/xOCWUHLx3P
 
 ## Links
 - https://x.com/twinfallstn/status/1319671207084642304

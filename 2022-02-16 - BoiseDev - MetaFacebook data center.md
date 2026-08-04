@@ -43,11 +43,11 @@ Meta Kuna Idaho
 
 #### ‘Growth paying for growth’ or ‘effective end’ to attracting business? Bill aimed at large power users moves forward
 
-![](https://boisedev.com/wp-content/uploads/2024/07/aerial-video-see-metas-huge-kuna-data-center-from-the-air-meta-kuna.jpg)
+![alt text needed](https://boisedev.com/wp-content/uploads/2024/07/aerial-video-see-metas-huge-kuna-data-center-from-the-air-meta-kuna.jpg)
 
 #### Aerial video: See Meta’s huge Kuna data center from the air
 
-![](https://boisedev.com/wp-content/uploads/2023/10/IMG_6692-2048x1536.jpg)
+![alt text needed](https://boisedev.com/wp-content/uploads/2023/10/IMG_6692-2048x1536.jpg)
 
 #### Kuna, ranch owners back to negotiating table after earlier eminent domain, extortion suit threats
 
@@ -57,7 +57,7 @@ Meta Kuna Idaho
 
 #### Meta inks deal with Idaho Power for renewable energy to power Kuna data center
 
-![](https://boisedev.com/wp-content/uploads/2023/07/Screenshot-2023-07-05-at-9.59.48-AM.png)
+![alt text needed](https://boisedev.com/wp-content/uploads/2023/07/Screenshot-2023-07-05-at-9.59.48-AM.png)
 
 #### Video tour: Scheels, Tamarack, New Y, 2nd tallest building, more highlight Boise-area construction
 
@@ -83,7 +83,7 @@ Meta Kuna Idaho
 
 #### ICYMI: You Asked: About Facebook Kuna’s power, water, tax incentives, employees, roads — and urban renewal
 
-![](https://boisedev.com/wp-content/uploads/2022/12/74127646-DB5B-498C-A9EA-C0814A6A9BAB-2048x1536.jpg)
+![alt text needed](https://boisedev.com/wp-content/uploads/2022/12/74127646-DB5B-498C-A9EA-C0814A6A9BAB-2048x1536.jpg)
 
 #### Meta slows work on Kuna project. Says redesign for AI underway: ‘we remain committed’
 
@@ -91,7 +91,7 @@ Meta Kuna Idaho
 
 #### Far from services, Meta/Facebook gives cash to Kuna to soften impact of property tax legislation
 
-![](https://boisedev.com/wp-content/uploads/2022/08/Screen-Shot-2022-08-18-at-10.38.03-AM.png)
+![alt text needed](https://boisedev.com/wp-content/uploads/2022/08/Screen-Shot-2022-08-18-at-10.38.03-AM.png)
 
 #### Video tour: Meta, Scheels, apartments, hotels, the airport, more highlight Boise-area construction
 

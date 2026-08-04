@@ -21,6 +21,6 @@ related:
 Amended homeowner's exemption bill carries in the House. Now back to the Senate to see if they agree with the amendment. #idleg #idpol https://t.co/b1iFSr26gk
 
 ## Media
-- ![](https://pbs.twimg.com/media/ETQGalcXkAAgwF5.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/ETQGalcXkAAgwF5.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1239622859414073344)

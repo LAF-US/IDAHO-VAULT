@@ -16,6 +16,6 @@ related:
 Yeah, okay, cool. https://t.co/Ba52mwGwpS
 
 ## Media
-- ![](https://pbs.twimg.com/media/Ehl2RudXsAAyKcD.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/Ehl2RudXsAAyKcD.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1304203659287212032)

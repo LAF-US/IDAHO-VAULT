@@ -19,7 +19,7 @@ related:
 @tucker_id https://t.co/HDIRTFyXWn
 
 ## Media
-- ![](https://pbs.twimg.com/tweet_video_thumb/GnonjKhaoAAtdzB.jpg)
+- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/GnonjKhaoAAtdzB.jpg)
 
 *In reply to [@tucker_id](https://twitter.com/tucker_id)*
 

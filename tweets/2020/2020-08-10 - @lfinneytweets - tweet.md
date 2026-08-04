@@ -16,6 +16,6 @@ related:
 @davlinnews https://t.co/ei7QNkSU22
 
 ## Media
-- ![](https://pbs.twimg.com/tweet_video_thumb/EfEq1P6UwAYs1mN.jpg)
+- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/EfEq1P6UwAYs1mN.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1292861667940818944)

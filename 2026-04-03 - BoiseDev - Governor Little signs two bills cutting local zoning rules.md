@@ -55,7 +55,7 @@ Regence - 2:1 - Business Grow
 
 The vote was extremely close, with the vote total flopping back and forth between a tie and a majority in the final moments before Speaker of the House Rep. Mike Moyle, R-Moyle, locked the machine to confirm the votes. The bill was a tie until Rep. Dori Healey, R-Boise, flipped her vote at the last minute to support it.
 
-![](https://boisedev.com/wp-content/uploads/2026/03/yimby-Screenshot-2026-03-2.png)
+![alt text needed](https://boisedev.com/wp-content/uploads/2026/03/yimby-Screenshot-2026-03-2.png)
 
 SB 1354, which cut regulations on accessory dwelling units, was debated heavily and was approved on a wider 47-23 margin.
 

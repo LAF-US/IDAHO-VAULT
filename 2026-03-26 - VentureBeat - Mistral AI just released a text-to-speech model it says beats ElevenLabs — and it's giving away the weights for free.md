@@ -21,7 +21,7 @@ It is a bet that the future of enterprise voice AI will not be shaped by whoever
 
 "We see audio as a big bet and as a critical and maybe the only future interface with all the AI models," Pierre Stock, Mistral's vice president of science and the first employee hired at the company, said in an exclusive interview with VentureBeat. "This is something customers have been asking for."
 
-![](https://www.youtube.com/watch?v=_N-ZGjGSVls)
+![alt text needed](https://www.youtube.com/watch?v=_N-ZGjGSVls)
 
 ## A 3-billion-parameter model that fits on a laptop and runs six times faster than real-time speech
 

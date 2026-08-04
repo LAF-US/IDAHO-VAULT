@@ -28,6 +28,6 @@ RT @MtnStatesPolicy: Election primary format across the country https://t.co/eH6
 - https://www.ncsl.org/elections-and-campaigns/state-primary-election-types
 
 ## Media
-- ![](https://pbs.twimg.com/media/GX20iR3aUAUThXh.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/GX20iR3aUAUThXh.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1837221689362632782)

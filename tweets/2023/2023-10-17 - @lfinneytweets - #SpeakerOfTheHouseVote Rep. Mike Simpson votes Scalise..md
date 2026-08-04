@@ -17,7 +17,7 @@ related:
   - SpeakerOfTheHouseVote
 ---
 
-#SpeakerOfTheHouseVote Rep. Mike Simpson votes Scalise.
+\#SpeakerOfTheHouseVote Rep. Mike Simpson votes Scalise.
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

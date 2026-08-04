@@ -23,6 +23,6 @@ related:
 RT @KeithRidler: Early voting, Boise City Hall, May 3, 2022. #idpol #idleg https://t.co/T49WlFmYDa
 
 ## Media
-- ![](https://pbs.twimg.com/media/FR3DxhiVEAMtufB.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/FR3DxhiVEAMtufB.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1521609189956616195)

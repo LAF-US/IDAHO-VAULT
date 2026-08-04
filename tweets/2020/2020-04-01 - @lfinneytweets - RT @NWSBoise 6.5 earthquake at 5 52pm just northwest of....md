@@ -25,7 +25,7 @@ related:
 RT @NWSBoise: 6.5 earthquake at 5:52pm just northwest of Stanley, Idaho. #idwx #orwx #wawx https://t.co/Nu13y9paA2
 
 ## Media
-- ![](https://pbs.twimg.com/media/EUeiLWhXkAMsY2I.jpg)
-- ![](https://pbs.twimg.com/media/EUeiTc2XgAMCrvb.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EUeiLWhXkAMsY2I.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EUeiTc2XgAMCrvb.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1245142641458569216)

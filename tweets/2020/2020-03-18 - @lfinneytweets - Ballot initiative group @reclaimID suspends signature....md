@@ -23,7 +23,7 @@ related:
 Ballot initiative group @reclaimID suspends signature gathering campaign due to #IdahoCovid19. Last week they'd advised volunteers to adopt a "take the pen" model and regularly sanitize their clipboards. #idpol https://t.co/I6fuI43ODT
 
 ## Media
-- ![](https://pbs.twimg.com/media/ETaGik_XkAUVpPE.jpg)
-- ![](https://pbs.twimg.com/media/ETaGjEuXgAIevfR.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/ETaGik_XkAUVpPE.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/ETaGjEuXgAIevfR.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1240326692280791041)

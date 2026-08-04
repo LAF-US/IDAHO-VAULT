@@ -25,6 +25,6 @@ https://t.co/hZLyA1JnEW https://t.co/gdHFlsXgOz
 - https://legislature.idaho.gov/sessioninfo/2021/legislation/H0249/
 
 ## Media
-- ![](https://pbs.twimg.com/media/EvvOBxrVcAQGOn_.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EvvOBxrVcAQGOn_.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1367913595523067905)

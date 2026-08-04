@@ -20,7 +20,6 @@ related:
   - farmworkers
 ---
 
-RT @ProjectFare: Summer is coming. How are #Idaho farmers, #farmworkers and advocates preparing for another season of smoke and heat?
-#farm…
+RT @ProjectFare: Summer is coming. How are #Idaho farmers, #farmworkers and advocates preparing for another season of smoke and heat? #farm…
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1508515492582940672)

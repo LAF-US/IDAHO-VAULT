@@ -18,6 +18,6 @@ related:
 RT @cspan: Statement from C-SPAN https://t.co/QsvmsJ69LC
 
 ## Media
-- ![](https://pbs.twimg.com/media/EUDt4ZBXgAEmivo.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EUDt4ZBXgAEmivo.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1243287667111952384)

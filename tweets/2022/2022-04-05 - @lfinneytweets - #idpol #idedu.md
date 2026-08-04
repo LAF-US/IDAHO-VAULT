@@ -18,7 +18,7 @@ related:
   - idedu
 ---
 
-#idpol #idedu https://t.co/RSigpsVlHi
+\#idpol #idedu https://t.co/RSigpsVlHi
 
 ## Links
 - https://x.com/CdAPressNews/status/1511398191354187780
