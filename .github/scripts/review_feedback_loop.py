@@ -109,9 +109,11 @@ RISK_NOPE_LABEL = "risk/nope"
 # classified it yet.
 RISK_CLEAR_LABEL = "risk/—"
 
-# The risk vocabulary (flat schema, norm set by Logan) is four flat labels across
-# two independent axes — each stamped ONLY when its axis fires. There are no prefixes, no
-# explicit `—` labels, and no separate clear marker.
+# The risk vocabulary (flat schema, norm set by Logan) is four flat FLAG labels across two
+# independent axes — each stamped ONLY when its axis fires — plus one clear label for when
+# neither does. There are no prefixes: the `filetype:risk/` and `depth:risk/` forms were a
+# prior agent's transitionary scaffolding, they stay retired, and only the bare `risk/…`
+# form is live.
 #   FILETYPE axis: risk/low (Machine Doc / inert assets) | risk/med (Computer Code — executes)
 #   FILEDEPTH axis: risk/high (path inside the "!/" tree) | risk/nope (path in the inner
 #                   "!/!/__!__/!/" region and below — never auto-merges)
