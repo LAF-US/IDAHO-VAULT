@@ -22,8 +22,7 @@ related:
   - idedu
 ---
 
-RT @brandendurst: For Immediate Release:
-#idpol #idleg #idedu https://t.co/idSEjTGMny
+RT @brandendurst: For Immediate Release: #idpol #idleg #idedu https://t.co/idSEjTGMny
 
 ## Media
 - ![](https://pbs.twimg.com/media/F65JHyHaEAAXYE8.jpg)
