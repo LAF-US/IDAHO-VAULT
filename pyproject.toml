@@ -7,3 +7,16 @@ dependencies = [
     "packaging"
 ]
 # Just like a .gitignore file, don't fiddle with this willy-nilly.
+
+[dependency-groups]
+# Every entry names the workflow that spawns it. Nothing lives here that CI does not
+# actually invoke through uv — those are the only two workflows that use uv at all.
+# Deliberately NOT here: jupytext (check-notebooks-paired.yml pip-installs it at the
+# version it reads out of uv.lock, never through uv) and ruff (no workflow invokes it;
+# Codacy runs its own). Both were in the group before and neither was feeding anything.
+dev = [
+    # python-test-suite.yml -> `uv run pytest tests -v`
+    "pytest>=9.0.3,<10",
+    # codacy-coverage-reporter.yml -> `uv run coverage run -m pytest` / `uv run coverage xml`
+    "coverage>=7.6,<8",
+]
