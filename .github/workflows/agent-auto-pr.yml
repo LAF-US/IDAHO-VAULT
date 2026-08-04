@@ -306,4 +306,4 @@ jobs:
         shell: bash
         run: |
           echo "Lifecycle set to \`lifecycle/staged\`." >> "$GITHUB_STEP_SUMMARY"
-          echo "Clear pair (\`—/—\`): no risk/* label stamped; eligible for auto-merge once the grace window elapses." >> "$GITHUB_STEP_SUMMARY"
+          echo "Clear pair (\`—/—\`): \`risk/—\` stamped as classified-clear; eligible for auto-merge once the grace window elapses." >> "$GITHUB_STEP_SUMMARY"

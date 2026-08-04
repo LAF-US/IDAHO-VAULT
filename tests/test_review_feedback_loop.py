@@ -598,6 +598,35 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             edit_label.call_args_list,
         )
 
+    def test_restamp_removes_before_it_adds(self) -> None:
+        # Ordering is load-bearing, not cosmetic. Each _edit_label is a separate API call,
+        # so the PR is observable in between. On clear -> fired, adding first would leave
+        # `risk/—` and `risk/med` on the PR simultaneously, and an evaluate landing in that
+        # window raises RiskMarkerInvariantError. Removing first leaves a window with no
+        # risk label, which reads `unknown` and holds.
+        with mock.patch.object(review_feedback_loop, "_edit_label"):
+            labels = {review_feedback_loop.RISK_CLEAR_LABEL}
+            actions = review_feedback_loop.restamp_risk_pair(42, labels, "med", None)
+        removes = [i for i, a in enumerate(actions) if a.startswith("remove:")]
+        adds = [i for i, a in enumerate(actions) if a.startswith("add:")]
+        self.assertTrue(removes and adds, actions)
+        self.assertLess(max(removes), min(adds), actions)
+        # And the reverse transition, fired -> clear, for the same reason.
+        with mock.patch.object(review_feedback_loop, "_edit_label"):
+            labels = {"risk/med"}
+            actions = review_feedback_loop.restamp_risk_pair(43, labels, None, None)
+        removes = [i for i, a in enumerate(actions) if a.startswith("remove:")]
+        adds = [i for i, a in enumerate(actions) if a.startswith("add:")]
+        self.assertTrue(removes and adds, actions)
+        self.assertLess(max(removes), min(adds), actions)
+
+    def test_clear_label_is_registered_for_creation(self) -> None:
+        # restamp stamps it, so ensure_labels has to be able to create it. A label the
+        # engine adds but never declares is one the repo may not have.
+        self.assertIn(
+            review_feedback_loop.RISK_CLEAR_LABEL, review_feedback_loop.LABEL_SPECS
+        )
+
     def test_clear_cell_stamps_its_own_label(self) -> None:
         # The `—/—` cell is the only one that stamps `risk/—`, and it stamps nothing else.
         with mock.patch.object(review_feedback_loop, "_edit_label"):

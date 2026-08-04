@@ -194,6 +194,13 @@ LABEL_SPECS: dict[str, tuple[str, str]] = {
         "B60205",
         "Filedepth: nope (inner \"!/!/__!__/!/\" region and below; never auto-merges).",
     ),
+    # Not an axis value — the ninth cell. `ensure_labels` creates only what this dict
+    # names, and `restamp_risk_pair` stamps this one, so leaving it out would have the
+    # engine adding a label the repo was never told to create.
+    RISK_CLEAR_LABEL: (
+        "D4E3F0",
+        "Classified clear: the classifier ran and neither axis fired.",
+    ),
 }
 
 
@@ -940,14 +947,20 @@ def restamp_risk_pair(
     managed = set(RISK_FLAG_LABELS) | {RISK_CLEAR_LABEL} | {
         label for label in labels if RISK_NAMESPACE_PATTERN.match(label)
     }
-    for label in sorted(desired - labels):
-        _edit_label(pr_number, add=label)
-        labels.add(label)
-        actions.append(f"add:{label}")
+    # REMOVE BEFORE ADD, and the order is load-bearing now that `risk/—` exists.
+    # Each `_edit_label` is its own API call, so the PR is observable between them.
+    # Adding first would put `risk/—` and a fired flag on the PR at the same time on a
+    # clear -> fired transition, and any evaluate landing in that window raises
+    # RiskMarkerInvariantError. Removing first leaves a window with NO risk label,
+    # which reads `unknown` and HOLDS. Both windows are wrong; only one is safe.
     for label in sorted((labels & managed) - desired):
         _edit_label(pr_number, remove=label)
         labels.discard(label)
         actions.append(f"remove:{label}")
+    for label in sorted(desired - labels):
+        _edit_label(pr_number, add=label)
+        labels.add(label)
+        actions.append(f"add:{label}")
     return actions
 
 
