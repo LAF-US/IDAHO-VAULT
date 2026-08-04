@@ -24,6 +24,6 @@ related:
 - https://x.com/MtnStatesPolicy/status/1603608243536027648
 
 ## Media
-- ![](https://pbs.twimg.com/media/FkEv5I2aUAANcdd.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/FkEv5I2aUAANcdd.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1603615603121881091)

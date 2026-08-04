@@ -18,6 +18,6 @@ related:
 RT @lenkiefer: as % of labor force 2/2 https://t.co/2q2NZB81yX
 
 ## Media
-- ![](https://pbs.twimg.com/tweet_video_thumb/EUmfd2qXsAAEvcn.jpg)
+- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/EUmfd2qXsAAEvcn.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1246084553128546304)

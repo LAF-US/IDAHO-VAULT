@@ -22,6 +22,6 @@ Joint House & Senate Judiciary meeting today for a presentation from Dept of Cor
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/EPUKPO7UUAAoVZP.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EPUKPO7UUAAoVZP.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1221894139622461440)

@@ -19,7 +19,7 @@ related:
 @gemstatebrian https://t.co/Vx11hDKqqs
 
 ## Media
-- ![](https://pbs.twimg.com/tweet_video_thumb/GnpQqrabIAApzz4.jpg)
+- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/GnpQqrabIAApzz4.jpg)
 
 *In reply to [@brianalmon](https://twitter.com/brianalmon)*
 

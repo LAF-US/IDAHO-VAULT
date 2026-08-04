@@ -24,7 +24,7 @@ https://t.co/o9KoUEMHbq https://t.co/rs34WVV3Ma
 - https://x.com/lfinneytweets/status/1281253616502726656
 
 ## Media
-- ![](https://pbs.twimg.com/media/EclOZEuUYAA-qYs.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EclOZEuUYAA-qYs.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

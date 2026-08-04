@@ -25,6 +25,6 @@ RT @JeremyMyNBC5: “At first I was afraid, I was petrified.”
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/DxtVFZRX0AEZkBB.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/DxtVFZRX0AEZkBB.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1088675144854208513)

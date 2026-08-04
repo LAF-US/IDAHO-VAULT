@@ -21,6 +21,6 @@ related:
 \#IdahoCOVID19 @RepHeatherScott https://t.co/izYEnc7H4B
 
 ## Media
-- ![](https://pbs.twimg.com/media/EWoTzFHVAAAfp7g.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EWoTzFHVAAAfp7g.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1254837224392126473)

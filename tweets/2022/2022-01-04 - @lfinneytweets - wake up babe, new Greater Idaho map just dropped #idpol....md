@@ -21,6 +21,6 @@ related:
 wake up babe, new Greater Idaho map just dropped #idpol #attentionidahoreporters https://t.co/W491UQWFo9
 
 ## Media
-- ![](https://pbs.twimg.com/media/FIPEvPAVgAEa7tG.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/FIPEvPAVgAEa7tG.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1478241420653707265)

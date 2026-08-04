@@ -22,9 +22,9 @@ Teens crowd the third floor of the rotunda in protest of transgender legislation
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/ER4oy6yWAAA8uuK.jpg)
-- ![](https://pbs.twimg.com/media/ER4ozm7WAAEdhDE.jpg)
-- ![](https://pbs.twimg.com/media/ER4o0aMWkAEYTsf.jpg)
-- ![](https://pbs.twimg.com/media/ER4o1CvXUAEry63.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/ER4oy6yWAAA8uuK.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/ER4ozm7WAAEdhDE.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/ER4o0aMWkAEYTsf.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/ER4o1CvXUAEry63.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1233468253227319299)

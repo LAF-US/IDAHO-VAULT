@@ -21,6 +21,6 @@ related:
 \#idleg #idpol https://t.co/ChAGSA897x
 
 ## Media
-- ![](https://pbs.twimg.com/media/Fm5U1rlaAAE2Ok3.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/Fm5U1rlaAAE2Ok3.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1616322611159662595)

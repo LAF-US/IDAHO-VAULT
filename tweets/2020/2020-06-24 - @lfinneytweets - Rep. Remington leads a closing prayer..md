@@ -17,7 +17,7 @@ related:
 Rep. Remington leads a closing prayer. https://t.co/gWv46FWtyR
 
 ## Media
-- ![](https://pbs.twimg.com/media/EbQGDSsWoAExZA9.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EbQGDSsWoAExZA9.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

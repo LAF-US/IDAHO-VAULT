@@ -18,6 +18,6 @@ related:
 RT @bubbaprog: Police literally opening fire on the free press. https://t.co/g8RMImZLGr
 
 ## Media
-- ![](https://pbs.twimg.com/media/EZOyY_5WoAATDXc.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EZOyY_5WoAATDXc.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1266854728404615168)

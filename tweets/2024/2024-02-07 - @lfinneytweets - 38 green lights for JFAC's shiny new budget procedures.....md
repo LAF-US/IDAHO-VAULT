@@ -19,6 +19,6 @@ related:
 38 green lights for JFAC's shiny new budget procedures. #idleg https://t.co/XtPizy9tz5
 
 ## Media
-- ![](https://pbs.twimg.com/media/GFwdntaakAAE8VN.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/GFwdntaakAAE8VN.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1755310597707829336)

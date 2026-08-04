@@ -23,6 +23,6 @@ related:
 RT @IdahoReports: We have an announcement to make. #idpol #idleg https://t.co/V3FHsiLRmE
 
 ## Media
-- ![](https://pbs.twimg.com/tweet_video_thumb/EXCv_BkU8AANeDy.jpg)
+- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/EXCv_BkU8AANeDy.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1256732203356020736)

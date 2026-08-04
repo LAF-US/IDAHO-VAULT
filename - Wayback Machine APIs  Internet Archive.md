@@ -9,7 +9,7 @@ date created: Tuesday, April 28th 2026, 6:26:18 pm
 date modified: Tuesday, April 28th 2026, 6:26:29 pm
 ---
 
-![](https://archive.org/web/images/logo_wayback_210x77.png)
+![alt text needed](https://archive.org/web/images/logo_wayback_210x77.png)
 
 ## Wayback Machine APIs
 

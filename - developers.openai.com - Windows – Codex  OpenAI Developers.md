@@ -6,7 +6,7 @@ created: 2026-04-20
 ---
 Use Codex on Windows with the native [Codex app](https://developers.openai.com/codex/app/windows), the [CLI](https://developers.openai.com/codex/cli), or the [IDE extension](https://developers.openai.com/codex/ide).
 
-[![](https://developers.openai.com/images/codex/codex-banner-icon.webp)](https://developers.openai.com/codex/app/windows)
+[![alt text needed](https://developers.openai.com/images/codex/codex-banner-icon.webp)](https://developers.openai.com/codex/app/windows)
 
 [Use the Codex app on Windows](https://developers.openai.com/codex/app/windows)
 

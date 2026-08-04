@@ -24,6 +24,6 @@ related:
 House Minority Leader @IlanaRubel held a press conference this afternoon on the property tax problem. @IdahoDems say there are several Democrat-authored and bipartisan bills that would help address the issue but have not received committee hearings. #idleg #idpol https://t.co/6DGcfvaoxW
 
 ## Media
-- ![](https://pbs.twimg.com/media/ERK0QtQUwAAmz55.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/ERK0QtQUwAAmz55.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1230243855124983809)

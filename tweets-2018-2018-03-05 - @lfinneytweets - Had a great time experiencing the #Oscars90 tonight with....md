@@ -27,6 +27,6 @@ Had a great time experiencing the #Oscars90 tonight with @KenworthyPAC
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/DXg31HYU8AAgcrH.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/DXg31HYU8AAgcrH.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/970587129809027072)

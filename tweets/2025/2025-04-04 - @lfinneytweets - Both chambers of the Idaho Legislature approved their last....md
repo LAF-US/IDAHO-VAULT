@@ -23,6 +23,6 @@ https://t.co/qph8HYcioe https://t.co/KvmSwxTzTR
 - https://blog.idahoreports.idahoptv.org/2025/04/03/outstanding-budgets-extend-the-2025-session/
 
 ## Media
-- ![](https://pbs.twimg.com/tweet_video_thumb/GnqM01LaMAANMzt.jpg)
+- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/GnqM01LaMAANMzt.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1907992237767790946)

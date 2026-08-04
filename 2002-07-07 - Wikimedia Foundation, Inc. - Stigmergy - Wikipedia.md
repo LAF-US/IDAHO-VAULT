@@ -5,7 +5,7 @@ author:
 published: 2002-07-07
 created: 2026-04-13
 ---
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Safari_ants.jpg/250px-Safari_ants.jpg)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Safari_ants.jpg/250px-Safari_ants.jpg)
 
 Ant paths built from pheromone traces
 

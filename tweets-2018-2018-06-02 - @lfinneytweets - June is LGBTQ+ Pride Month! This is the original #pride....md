@@ -20,6 +20,6 @@ June is LGBTQ+ Pride Month! This is the original #pride flag design by Gilbert B
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/DepUnSAV4AEydkl.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/DepUnSAV4AEydkl.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1002706906761199616)

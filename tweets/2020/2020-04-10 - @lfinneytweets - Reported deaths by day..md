@@ -17,7 +17,7 @@ related:
 Reported deaths by day. https://t.co/l8OcqXzVMp
 
 ## Media
-- ![](https://pbs.twimg.com/media/EVN4EHiUYAAqjU0.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EVN4EHiUYAAqjU0.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

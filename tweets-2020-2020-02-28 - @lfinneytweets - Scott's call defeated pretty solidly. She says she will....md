@@ -23,7 +23,7 @@ Scott's call defeated pretty solidly. She says she will move to assign the abort
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/ER4Y2OAXsAAq7H0.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/ER4Y2OAXsAAq7H0.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

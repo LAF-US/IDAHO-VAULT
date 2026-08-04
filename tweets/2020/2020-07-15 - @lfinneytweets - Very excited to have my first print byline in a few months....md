@@ -25,7 +25,7 @@ I covered @IdSBOE's Back to School Framework announcement and spoke with superin
 - http://www.owyheepublishing.com/
 
 ## Media
-- ![](https://pbs.twimg.com/media/Ec_LoXSU8AAfUhH.png)
-- ![](https://pbs.twimg.com/media/Ec_LplpUcAI1PQZ.png)
+- ![alt text needed](https://pbs.twimg.com/media/Ec_LoXSU8AAfUhH.png)
+- ![alt text needed](https://pbs.twimg.com/media/Ec_LplpUcAI1PQZ.png)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1283470150692306944)

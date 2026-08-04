@@ -20,7 +20,7 @@ related:
 There are enough ventilators and ICU beds, but the number of healthcare workers contracting COVID-19 has increased. Hahn said that they believe these healthcare workers are contracting the disease out in their communities, not while at work. #IdahoCOVID19 https://t.co/dcAPwqGHTZ
 
 ## Media
-- ![](https://pbs.twimg.com/media/EbYI0zrU4AAsK5f.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EbYI0zrU4AAsK5f.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 
