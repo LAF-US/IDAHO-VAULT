@@ -18,7 +18,7 @@ Specifically UTC-7 <https://t.co/gkX8AiOXN5>
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/ERUfgwtUwAARCyP.png)
+- ![alt text needed](https://pbs.twimg.com/media/ERUfgwtUwAARCyP.png)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

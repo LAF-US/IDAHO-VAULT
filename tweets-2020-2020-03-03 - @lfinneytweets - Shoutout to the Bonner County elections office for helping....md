@@ -17,6 +17,6 @@ Shoutout to the Bonner County elections office for helping me get my absentee ba
 
 ## Media
 
-- ![](https://pbs.twimg.com/tweet_video_thumb/ESN6tWJUwAAYo-u.jpg)
+- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/ESN6tWJUwAAYo-u.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1234965648561692672)

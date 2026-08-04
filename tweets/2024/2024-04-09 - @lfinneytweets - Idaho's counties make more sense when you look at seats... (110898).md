@@ -20,9 +20,9 @@ related:
 Idaho's counties make more sense when you look at seats instead of boundaries. (2/2) #idpol https://t.co/GfSSWd0zQW
 
 ## Media
-- ![](https://pbs.twimg.com/media/GKwhB8kb0AAUAoc.jpg)
-- ![](https://pbs.twimg.com/media/GKwhB9lbMAA0DJB.jpg)
-- ![](https://pbs.twimg.com/media/GKwhCAmbcAA3Lo9.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/GKwhB8kb0AAUAoc.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/GKwhB9lbMAA0DJB.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/GKwhCAmbcAA3Lo9.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

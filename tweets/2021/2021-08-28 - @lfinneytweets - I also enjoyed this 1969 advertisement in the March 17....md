@@ -19,7 +19,7 @@ related:
 I also enjoyed this 1969 advertisement in the March 17 edition of @IdahoStateJ. https://t.co/JkyshArDN8
 
 ## Media
-- ![](https://pbs.twimg.com/media/E91kmOSVcAUWE5S.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/E91kmOSVcAUWE5S.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

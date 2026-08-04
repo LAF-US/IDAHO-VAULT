@@ -19,6 +19,6 @@ https://t.co/ipTQcMwcUk https://t.co/7Z81uixcCX
 - https://x.com/washingtonpost/status/1253718170411708416
 
 ## Media
-- ![](https://pbs.twimg.com/tweet_video_thumb/EWYc_TtUMAAH9HI.jpg)
+- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/EWYc_TtUMAAH9HI.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1253721426386804743)

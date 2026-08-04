@@ -23,6 +23,6 @@ related:
 Senate amendments to the affirmative action bill approved by the House. Makes its way to @GovernorLittle now. #idpol #idleg https://t.co/XK4kQ5JbOo
 
 ## Media
-- ![](https://pbs.twimg.com/media/ETQHSOzXQAUZOf-.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/ETQHSOzXQAUZOf-.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1239623816273264640)

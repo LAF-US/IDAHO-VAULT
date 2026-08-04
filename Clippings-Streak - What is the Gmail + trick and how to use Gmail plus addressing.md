@@ -92,7 +92,7 @@ The Gmail + trick is a great way to track a small number of customers or clients
 
 Tools like [Streak](http://www.streak.com/) help you automatically track interactions with contacts and leads in pipelines inside your Gmail inbox.
 
-![](https://www.youtube.com/watch?v=4UXjqi8z6W8)
+![alt text needed](https://www.youtube.com/watch?v=4UXjqi8z6W8)
 
 For each lead, you can:
 

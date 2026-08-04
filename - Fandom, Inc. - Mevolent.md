@@ -32,7 +32,7 @@ At an unknown time he took control of the dimension, he later started purges aga
 
 #### Kingdom of the Wicked
 
-![](https://static.wikia.nocookie.net/skulduggery/images/4/4b/Three_Generals.png/revision/latest/scale-to-width-down/180?cb=20170510171029)
+![alt text needed](https://static.wikia.nocookie.net/skulduggery/images/4/4b/Three_Generals.png/revision/latest/scale-to-width-down/180?cb=20170510171029)
 
 Mevolent's three generals
 

@@ -16,7 +16,7 @@ related:
   - IdahoCOVID19
 ---
 
-#IdahoCOVID19 https://t.co/wvZTnuAMPy
+\#IdahoCOVID19 https://t.co/wvZTnuAMPy
 
 ## Links
 - https://x.com/annehelen/status/1253046747212832769

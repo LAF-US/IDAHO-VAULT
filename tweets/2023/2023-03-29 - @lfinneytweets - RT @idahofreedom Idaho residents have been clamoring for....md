@@ -20,8 +20,6 @@ related:
   - idleg
 ---
 
-RT @idahofreedom: "Idaho residents have been clamoring for property tax for a very very long time." - Sen. Chris Trakel
-
-#idpol #idleg http…
+RT @idahofreedom: "Idaho residents have been clamoring for property tax for a very very long time." - Sen. Chris Trakel #idpol #idleg http…
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1641211704783560705)

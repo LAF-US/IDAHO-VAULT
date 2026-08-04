@@ -19,7 +19,7 @@ related:
 RT @Hayley__Harding: Photos from @IdahoStatesman's Darin Oswald of tonight's protest https://t.co/HuKszecXtz
 
 ## Media
-- ![](https://pbs.twimg.com/media/EowYuaLUcAIM0xo.jpg)
-- ![](https://pbs.twimg.com/media/EowYuaJUwAESCH7.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EowYuaLUcAIM0xo.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EowYuaJUwAESCH7.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1336470721321582593)

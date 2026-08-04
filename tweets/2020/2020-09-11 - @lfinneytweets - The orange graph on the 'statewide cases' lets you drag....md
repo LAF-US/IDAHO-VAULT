@@ -20,7 +20,7 @@ related:
 @Phurrlosophy @IDHW The orange graph on the 'statewide cases' lets you drag your cursor over individual data points to see what that day's total was. It's really difficult to do on mobile. https://t.co/RexfO74FVh
 
 ## Media
-- ![](https://pbs.twimg.com/media/EhpfCk3U0AAsArr.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EhpfCk3U0AAsArr.jpg)
 
 *In reply to [@Phurrlosophy](https://twitter.com/Phurrlosophy)*
 

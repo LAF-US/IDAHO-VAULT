@@ -16,7 +16,7 @@ related:
   - IdahoCOVID19
 ---
 
-#IdahoCOVID19 https://t.co/A7kSvyZHEv
+\#IdahoCOVID19 https://t.co/A7kSvyZHEv
 
 ## Links
 - https://x.com/ByRachelRoberts/status/1243966814146584577

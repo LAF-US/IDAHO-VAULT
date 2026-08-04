@@ -23,6 +23,6 @@ related:
 From my dives into the @IdahoPTV archives: an episode of Dialogue from 2010 on the Tea Party Movement. #idleg #idpol https://t.co/CrlcO6dkMe
 
 ## Media
-- ![](https://pbs.twimg.com/media/F7e_WlhbIAA_o64.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/F7e_WlhbIAA_o64.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1709045035860476116)

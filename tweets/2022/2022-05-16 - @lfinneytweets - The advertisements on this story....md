@@ -16,7 +16,7 @@ related:
 @salsuppe The advertisements on this story... https://t.co/d9VwQX7X1t
 
 ## Media
-- ![](https://pbs.twimg.com/media/FS6BO35UEAAioWv.jpg)
-- ![](https://pbs.twimg.com/media/FS6BO36UsAA0lHT.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/FS6BO35UEAAioWv.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/FS6BO36UsAA0lHT.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1526299586452631552)

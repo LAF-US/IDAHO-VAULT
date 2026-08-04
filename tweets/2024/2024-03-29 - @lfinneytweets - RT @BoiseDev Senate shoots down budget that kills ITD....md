@@ -18,9 +18,7 @@ related:
   - idpol
 ---
 
-RT @BoiseDev: Senate shoots down budget that kills ITD campus sale, sets up standoff with House
-
-#idpol
+RT @BoiseDev: Senate shoots down budget that kills ITD campus sale, sets up standoff with House #idpol
 
 https://t.co/anQrl7WENd
 

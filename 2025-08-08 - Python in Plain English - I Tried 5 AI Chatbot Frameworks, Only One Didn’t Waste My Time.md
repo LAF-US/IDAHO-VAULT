@@ -11,7 +11,7 @@ created: 2026-04-17
 
 New Python content every day. Follow to join our 3.5M+ monthly readers.
 
-![](https://miro.medium.com/v2/resize:fit:1400/format:webp/0*h3zuv2gr6OBa8lgl)
+![alt text needed](https://miro.medium.com/v2/resize:fit:1400/format:webp/0*h3zuv2gr6OBa8lgl)
 
 Photo by Owen Beard on Unsplash
 

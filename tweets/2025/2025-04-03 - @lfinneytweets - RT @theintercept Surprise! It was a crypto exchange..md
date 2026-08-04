@@ -21,6 +21,6 @@ RT @theintercept: Surprise! It was a crypto exchange. https://t.co/uJKh5gGF08 ht
 - https://interc.pt/3XI5gMw
 
 ## Media
-- ![](https://pbs.twimg.com/media/Gnkk9NqWUAAsZvf.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/Gnkk9NqWUAAsZvf.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1907887979844218971)

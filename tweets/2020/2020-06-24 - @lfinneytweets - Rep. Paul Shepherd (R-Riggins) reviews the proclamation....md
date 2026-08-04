@@ -17,7 +17,7 @@ related:
 Rep. Paul Shepherd (R-Riggins) reviews the proclamation against Governor Little. https://t.co/1lYuGci24V
 
 ## Media
-- ![](https://pbs.twimg.com/media/EbQDUOUXQAg5pNS.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EbQDUOUXQAg5pNS.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

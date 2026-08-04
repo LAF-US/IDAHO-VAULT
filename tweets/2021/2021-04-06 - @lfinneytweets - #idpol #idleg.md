@@ -18,7 +18,7 @@ related:
   - idleg
 ---
 
-#idpol #idleg https://t.co/ACrpSK7IRE
+\#idpol #idleg https://t.co/ACrpSK7IRE
 
 ## Links
 - https://x.com/TheIdahoPress/status/1379202193425899521

@@ -21,8 +21,8 @@ related:
 We've got a good one for y'all on @IdahoReports tonight. #idpol https://t.co/wC1rAY5a8s
 
 ## Media
-- ![](https://pbs.twimg.com/media/GIvF9O8bQAA7mh5.jpg)
-- ![](https://pbs.twimg.com/media/GIvFpc2aQAA0B8D.jpg)
-- ![](https://pbs.twimg.com/media/GIvFrecbAAAUYVd.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/GIvF9O8bQAA7mh5.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/GIvFpc2aQAA0B8D.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/GIvFrecbAAAUYVd.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1768724956698009669)

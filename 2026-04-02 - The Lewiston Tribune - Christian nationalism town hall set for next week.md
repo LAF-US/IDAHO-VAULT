@@ -365,4 +365,4 @@ Lewy AI
 
 ![AI Chatbot Toggle](https://public-assets-prod.pubgen.ai/brand_4fc3eb37-4c8a-4951-9324-365f6e4b53fd/asset_7e7bca4b-2bd0-460d-b083-5a2ab708fe7d.svg?w=3840)
 
-  ![](https://d2vpe5holfgxc9.cloudfront.net/pxl.png?ts=1775492258752&puri=https%3A%2F%2Fwww.lmtribune.com%2Flocal-news%2Fchristian-nationalism-town-hall-set-for-next-week-fd8558a6%3Futm_source%3Dfavs-news&refuri=https%3A%2F%2Ffavs.news%2F&uuid=56add33d-eea9-4b69-932c-513c9263fa82)
+  ![alt text needed](https://d2vpe5holfgxc9.cloudfront.net/pxl.png?ts=1775492258752&puri=https%3A%2F%2Fwww.lmtribune.com%2Flocal-news%2Fchristian-nationalism-town-hall-set-for-next-week-fd8558a6%3Futm_source%3Dfavs-news&refuri=https%3A%2F%2Ffavs.news%2F&uuid=56add33d-eea9-4b69-932c-513c9263fa82)

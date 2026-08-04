@@ -162,7 +162,7 @@ San Diego, CA 92103
 - [LinkedIn](https://www.linkedin.com/company/newsrevenuehub)
 - [Newsletter](https://fundjournalism.org/newsletter-sign-up/)
 
-[![](https://fundjournalism.org/wp-content/uploads/2022/07/NRH_KnockOut_Stacked.svg)](https://fundjournalism.org/)
+[![alt text needed](https://fundjournalism.org/wp-content/uploads/2022/07/NRH_KnockOut_Stacked.svg)](https://fundjournalism.org/)
 
 #### Get Our Newsletter →
 

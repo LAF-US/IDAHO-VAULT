@@ -20,8 +20,7 @@ related:
   - idleg
 ---
 
-RT @CKomatsoulis: Idaho Democratic Central Committee passes cease-fire resolution
-#idpol #idleg
+RT @CKomatsoulis: Idaho Democratic Central Committee passes cease-fire resolution #idpol #idleg
 https://t.co/OvGlS6qwqs
 
 ## Links

@@ -23,6 +23,6 @@ related:
 RT @BetsyZRussell: Special session of #idleg ends at 9:18 pm; both houses have adjourned sine die #idpol https://t.co/0kxSX1DQhf
 
 ## Media
-- ![](https://pbs.twimg.com/media/EgZbOR3VAAA9O4W.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EgZbOR3VAAA9O4W.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1298829467045920769)

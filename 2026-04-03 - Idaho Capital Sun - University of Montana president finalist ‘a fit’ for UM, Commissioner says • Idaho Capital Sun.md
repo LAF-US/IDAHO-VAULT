@@ -26,7 +26,7 @@ More than 60 candidates applied for the job in a search Christian described Frid
 
 He said they like his focus on students, his experience at Boise State, and his interest in helping UM move forward and build on its successes — versus wanting to reshape it.
 
-![](https://idahocapitalsun.com/wp-content/uploads/2026/04/Jeremiah_Shinn.jpg)
+![alt text needed](https://idahocapitalsun.com/wp-content/uploads/2026/04/Jeremiah_Shinn.jpg)
 
 Jeremiah Shinn, finalist for University of Montana president. (Provided photo by Priscilla Grover and the University of Montana)
 

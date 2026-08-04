@@ -19,9 +19,7 @@ related:
   - idahocovid19
 ---
 
-RT @IdahoPTV: April 2nd - Idaho COVID19 update from @IdahoReports. https://t.co/Jr3sFt6zMj
-
-#idahocovid19 
+RT @IdahoPTV: April 2nd - Idaho COVID19 update from @IdahoReports. https://t.co/Jr3sFt6zMj #idahocovid19
 Like | Follow | Share
 
 ## Links
