@@ -832,6 +832,52 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         fetch_pr.assert_not_called()
         self.assertEqual(pr_view.call_args.kwargs["json_fields"], "labels")
 
+    def test_acknowledge_apply_reads_a_populated_gh_label_payload(self) -> None:
+        # The label list arrives from `gh pr view --json labels` as a FLAT array,
+        # where the GraphQL `_fetch_pr` nested it under `labels.nodes`. A misread of
+        # that shape does not raise — it yields an empty label set, which sends every
+        # apply request down the "not labelled yet" branch and posts a duplicate
+        # acknowledgement comment, forever, silently.
+        #
+        # The empty-label test above cannot catch that: an unparsed payload and a
+        # genuinely unlabelled PR both produce `set()` and the same calls. Only a
+        # PR that is ALREADY labelled distinguishes them, so this asserts the quiet
+        # branch — no label edit, no comment — against a realistic gh payload.
+        args = SimpleNamespace(
+            owner="LAF-US",
+            repo="IDAHO-VAULT",
+            pr_number=41,
+            comment_author="loganf",
+            author_association="OWNER",
+            comment_body="@copilot apply changes",
+        )
+        payload = json.dumps(
+            {
+                "labels": [
+                    {"id": "LA_1", "name": "risk:docs", "description": "", "color": "ededed"},
+                    {
+                        "id": "LA_2",
+                        "name": review_feedback_loop.DEFAULT_PENDING_LABEL,
+                        "description": "",
+                        "color": "d4c5f9",
+                    },
+                ]
+            }
+        )
+
+        with mock.patch.object(review_feedback_loop, "ensure_labels"), mock.patch.object(
+            review_feedback_loop.gh_cli,
+            "pr_view",
+            return_value=SimpleNamespace(stdout=payload),
+        ), mock.patch.object(
+            review_feedback_loop, "_edit_label"
+        ) as edit_label, mock.patch.object(review_feedback_loop, "_comment") as comment:
+            result = review_feedback_loop.acknowledge_apply(args)
+
+        self.assertEqual(result, 0)
+        edit_label.assert_not_called()
+        comment.assert_not_called()
+
     def test_sync_pr_clears_pending_only_for_allowed_completion_actors(self) -> None:
         args = SimpleNamespace(
             owner="LAF-US",
