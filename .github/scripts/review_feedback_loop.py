@@ -155,7 +155,7 @@ AUTO_MERGE_AUTHZ_FRAGMENTS = (
 LABEL_SPECS: dict[str, tuple[str, str]] = {
     DEFAULT_AUTO_MERGE_LABEL: (
         "0E8A16",
-        "Legacy agent auto-merge marker; removed during reconciliation.",
+        "Engine state: auto-merge armed on this PR; the engine removes it on disarm (reconciliation).",
     ),
     DEFAULT_REVIEW_REQUIRED_LABEL: (
         "D93F0B",
