@@ -16,6 +16,6 @@ related:
   - Boise
 ---
 
-#Boise folks: the Walgreens on Orchard & Overland had some COVID-19 at-home rapid antigen tests stocked near the register.
+\#Boise folks: the Walgreens on Orchard & Overland had some COVID-19 at-home rapid antigen tests stocked near the register.
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1482423694299254785)

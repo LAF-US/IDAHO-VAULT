@@ -19,7 +19,7 @@ related:
   - IdahoCOVID19
 ---
 
-#IdahoCOVID19 presser live with @GovernorLittle from @IdahoPTV  https://t.co/4frY7ClFlf
+\#IdahoCOVID19 presser live with @GovernorLittle from @IdahoPTV  https://t.co/4frY7ClFlf
 
 ## Links
 - https://www.facebook.com/idahoptv/videos/660364134698678/

@@ -20,7 +20,7 @@ related:
   - idpol
 ---
 
-#IdahoCOVID19 data visualization time, courtesy of @BoiseState_HCRI. Two threads: Cases & Deaths #idpol 
+\#IdahoCOVID19 data visualization time, courtesy of @BoiseState_HCRI. Two threads: Cases & Deaths #idpol 
 https://t.co/U8hHfjuf0H https://t.co/lZhxQkxNOf
 
 ## Links

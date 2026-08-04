@@ -18,7 +18,7 @@ related:
   - GoVandals
 ---
 
-#IdahoCOVID19 @uidahohousing #GoVandals https://t.co/jBZKVxw5Rs
+\#IdahoCOVID19 @uidahohousing #GoVandals https://t.co/jBZKVxw5Rs
 
 ## Links
 - https://x.com/KBSX915/status/1285969340475441152

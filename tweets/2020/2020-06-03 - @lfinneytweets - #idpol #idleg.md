@@ -18,7 +18,7 @@ related:
   - idleg
 ---
 
-#idpol #idleg https://t.co/Qp0Ymk4dpw
+\#idpol #idleg https://t.co/Qp0Ymk4dpw
 
 ## Links
 - https://x.com/EastIDNews/status/1268264504153919488
