@@ -49,7 +49,7 @@ Val Agostino is the CEO and co-founder of Monarch. With a strong background in e
 
 [See more on LinkedIn](https://linkedin.com/in/valagostino)
 
-## You might also like...
+## You might also like
 
 ![](https://cdn.sanity.io/images/mdewiujj/production/de2b2fc826e8c21b053d848b995f502a040b10b7-1628x1078.png?auto=format&fit=max&q=90&w=1628)
 

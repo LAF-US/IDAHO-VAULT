@@ -175,6 +175,7 @@ district with:
 - changed standing or state
 
 ### 4. Keep declared districts out of the player's implied verb-space until they
+
 can answer actions truthfully
 
 A district can remain named while still clearly marked as not yet enterable.

@@ -71,18 +71,18 @@ the world's order.
 > not as live Tree doctrine. The Charter / Corpus / Grimoire triad remains
 > under Logan review and must not be promoted as clean Tree doctrine.
 
-1. THE CORE: MIND
-	1. CONSTITUTION
-	2. CHARTER
-	3. CORPUS
-2. THE PERIPHERY: BODY
-	1. PROTOCOLS
-	2. PROCEDURES
-	3. PREFERENCES
-3. THE GHOST: SOUL
-	1. GUIDELINES
-	2. GUESTBOOK
-	3. GRIMOIRE
+1. THE [[CORE]]: [[MIND]]
+	1. [[CONSTITUTION]]
+	2. [[CHARTER]]
+	3. [[CORPUS]]
+2. THE [[PERIPHERY]]: [[BODY]]
+	1. [[PROTOCOLS]]
+	2. [[PROCEDURES]]
+	3. [[PREFERENCES]]
+3. THE [[GHOST]]: [[SOUL]]
+	1. [[GUIDELINES]]
+	2. [[GUESTBOOK]]
+	3. [[GRIMOIRE]]
 4. THE NEST: !
 	1. `!` is the Swarmic Nest: the collective operational body of the group within the world named by the Tree.
 	2. !/! - nested folders for agents to communicate internally with stable routing

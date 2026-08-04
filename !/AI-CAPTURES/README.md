@@ -16,9 +16,11 @@ CORRECTION: LOGAN SAYS: This was *never* an active surface or container. **I did
 
 ---
 
-# AI-CAPTURES — Drop Zone
+# AI-CAPTURES — Dead Drop Zone
 
-Landing pad for AI conversation exports. The bridge between ephemeral chat sessions and the vault record.
+## *FOUND **HERETICAL** BY THE FAITH OF THE CLOTH*
+
+Unapproved landing pad for AI conversation exports. The bridge between ephemeral chat sessions and the vault record.
 
 This folder exists because of the **book-binding problem**: AI conversations happen in web sandboxes (Claude.ai, Gemini, ChatGPT, Perplexity) with no automatic capture path into the vault. Every insight, brief, and decision that stays only in chat is lost when the context window closes or the tab dies.
 
@@ -41,12 +43,13 @@ YYYY-MM-DD - {AGENT} - {TITLE-SLUG}.md
 ```
 
 | Field | Values | Example |
-|---|---|---|
+| --- | --- | --- |
 | `YYYY-MM-DD` | ISO date of the conversation | `2026-04-12` |
 | `{AGENT}` | `Chat Claude`, `Gemini`, `Perplexity`, `GPT`, `Grok`, `Codex` | `Chat Claude` |
 | `{TITLE-SLUG}` | Short descriptive title, title case | `Vaulted Syntax Protocol Design Brief` |
 
 **Examples:**
+
 ```
 2026-04-12 - Chat Claude - Vaulted Syntax Protocol Design Brief.md
 2026-04-10 - Gemini - LAF-44 Lion and Fox Architecture.md
@@ -77,18 +80,21 @@ related:
 ## Export Methods
 
 ### Path 1 — Full Data Export (one-time bulk)
+
 **Settings > Privacy > Export Data**  
 Downloads ZIP with JSON of all conversations. Link expires 24 hours.  
 Drop the ZIP or extracted JSONs into `INBOX/AI-CAPTURES/full-export/`.  
 Status: one-time historical archive — not a recurring workflow.
 
 ### Path 2 — Chrome Extension (recommended, ongoing)
+
 **[Claude Chat Exporter](https://chromewebstore.google.com/) — free, Markdown output**  
 Open the conversation → click Export → choose Markdown → drag `.md` into this folder → commit.  
 The Abhorsen sees it on GitHub immediately.  
 Status: **primary ongoing book-binding solution**.
 
 ### Path 3 — Claude Code Session Export
+
 `/export` or session transcript tools within Claude Code (The Abhorsen's own sessions).  
 Does not capture Chat Claude sessions — different environment.  
 Status: Abhorsen self-capture only; does not bridge the Chat gap.

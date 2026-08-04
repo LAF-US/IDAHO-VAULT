@@ -7,4 +7,4 @@ related:
 - waterfowl species
 authority: LOGAN
 ---
-protection area for waterfowl species in Franklin County near Oxford 
+protection area for waterfowl species in Franklin County near Oxford

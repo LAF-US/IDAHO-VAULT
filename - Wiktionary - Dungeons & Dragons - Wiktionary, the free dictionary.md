@@ -19,8 +19,9 @@ created: 2026-04-17
 \[[edit](https://en.wiktionary.org/w/index.php?title=Dungeons_%26_Dragons&action=edit&section=3 "Edit section: Pronunciation")\]
 
 - ([General American](https://en.wikipedia.org/wiki/General_American_English "w:General American English")) [IPA](https://en.wiktionary.org/wiki/Wiktionary:International_Phonetic_Alphabet "Wiktionary:International Phonetic Alphabet") <sup>(<a href="https://en.wiktionary.org/wiki/Appendix:English_pronunciation" title="Appendix:English pronunciation">key</a>)</sup>: /dʌnd͡ʒənz ænd dɹæɡənz/, \[dʌnd͡ʒənz n̩ d͡ʒɹæːɡənz\]
+
 - | Audio ([US](https://en.wikipedia.org/wiki/American_English "w:American English")): | Duration: 2 seconds. | ([file](https://en.wiktionary.org/wiki/File:LL-Q1860_\(eng\)-Naomi_Persephone_Amethyst_\(NaomiAmethyst\)-Dungeons_%26_Dragons.wav "File:LL-Q1860 (eng)-Naomi Persephone Amethyst (NaomiAmethyst)-Dungeons & Dragons.wav")) |
-	| --- | --- | --- |
+ | --- | --- | --- |
 
 ### Proper noun
 
@@ -47,6 +48,7 @@ created: 2026-04-17
 \[[edit](https://en.wiktionary.org/w/index.php?title=Dungeons_%26_Dragons&action=edit&section=7 "Edit section: Translations")\]
 
 Hidden categories:
+
 - [Pages with entries](https://en.wiktionary.org/wiki/Category:Pages_with_entries "Category:Pages with entries")
 - [Pages with 1 entry](https://en.wiktionary.org/wiki/Category:Pages_with_1_entry "Category:Pages with 1 entry")
 - [Entries with translation boxes](https://en.wiktionary.org/wiki/Category:Entries_with_translation_boxes "Category:Entries with translation boxes")

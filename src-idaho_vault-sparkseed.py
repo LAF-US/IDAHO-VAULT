@@ -211,7 +211,7 @@ def main(argv: list[str] | None = None) -> int:
     """CLI entrypoint for the Python-native SPARKSEED bootstrap."""
 
     parser = argparse.ArgumentParser(
-        prog="sta***REMOVED***SPARKSEED",
+        prog="start_SPARKSEED",
         description="Bootstrap the OpenClaw runtime from local 1Password-backed vault state.",
     )
     parser.parse_args(argv)

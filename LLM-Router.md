@@ -6,7 +6,7 @@ jupyter:
       extension: .md
       format_name: markdown
       format_version: '1.3'
-      jupytext_version: 1.19.3
+      jupytext_version: 1.19.5
   kernelspec:
     display_name: Python 3
     language: python
@@ -32,7 +32,7 @@ from typing import Dict, List, Optional
 with open('swarm.json', 'r') as f:
     swarm = json.load(f)
 
-print(f"Swarm registry version: {swarm.get('registry_version', 'unknown')}")
+print(f"Vault authority: {swarm.get('vault_authority', 'unknown')}")
 print(f"Agents: {[a['id'] for a in swarm.get('agents', [])]}")
 ```
 

@@ -15,6 +15,6 @@ date modified: Monday, April 20th 2026, 11:59:53 am
 
 ---
 
-*   **BULLET JOURNAL (A):** User's daily context & tasks.
-*   **ZETTELKASTEN (B):** Vault's networked knowledge base.
-*   **UNIFIED SWARM (C):** AI agents for Retrieval-Augmented Generation (RAG).
+* **BULLET JOURNAL (A):** User's daily context & tasks.
+* **ZETTELKASTEN (B):** Vault's networked knowledge base.
+* **UNIFIED SWARM (C):** AI agents for Retrieval-Augmented Generation (RAG).

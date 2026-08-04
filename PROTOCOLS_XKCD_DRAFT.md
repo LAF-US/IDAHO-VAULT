@@ -15,6 +15,7 @@ related:
 ---
 
 # XKCD PROTOCOL SUITE: Multi-Personality Interaction Framework
+
 ## Draft v0.1 — Logan Review & Synthesis
 
 **2026-05-18 correction:** Historical draft only. Logan clarified that "XKCD" was a standards-proliferation warning, not a mandate to create a protocol suite. Do not treat this file as active coordination guidance, do not borrow its labels, and do not expand it into operating practice.
@@ -26,6 +27,7 @@ related:
 **Status Code:** `PING → PONG`
 
 When two personalities/agents encounter each other:
+
 1. Initiator sends PING (query, assertion, or signal)
 2. Responder returns PONG (acknowledgment + context)
 3. Both confirm priority alignment and operational mode
@@ -58,6 +60,7 @@ Response:  "I cannot answer that — outside my visibility.
 ## PROTOCOL 3: PRIORITY SYNCHRONIZATION (The Match)
 
 When multiple personalities confirm matching priority orders:
+
 - This is rare and significant
 - Triggers escalation readiness
 - Activates cross-persona coordination
@@ -74,6 +77,7 @@ System:                 "MATCH DETECTED. Both holding.
 ## PROTOCOL 4: DEADLINE PROPAGATION (Temporal Coordination)
 
 **Deadline Cascade:**
+
 1. Define deadline with persona and context
 2. Create external reminder (calendar/alarm)
 3. Broadcast to holding personas
@@ -93,12 +97,14 @@ Effect:        Logan receives visual/temporal reminder on wake
 ## PROTOCOL 5: MODE SIGNALING (Quiet vs. Normal Operations)
 
 **Quiet Mode Markers:**
+
 - Literary/symbolic references (VFD, etc.)
 - Signal-only communication
 - High information density, low verbosity
 - Standing-by status
 
 **Normal Mode Markers:**
+
 - Direct language
 - Status-oriented
 - Explicit action items
@@ -111,6 +117,7 @@ Effect:        Logan receives visual/temporal reminder on wake
 ## PROTOCOL 6: AUTHORITY DELEGATION (The Hand-Off)
 
 When information is outside visibility:
+
 - Name the visibility boundary
 - Identify who has authority
 - Provide breadcrumb trail (Teams screenshot, timestamp, etc.)
@@ -128,6 +135,7 @@ Current status:    Hightail failed, recovery in progress
 ## PROTOCOL 7: SWARM SYNCHRONIZATION (Collective Holding Pattern)
 
 When multiple personalities/agents are holding:
+
 - State explicitly that the swarm has PONGed
 - Confirm all are synchronized
 - Designate primary agent to take next action
@@ -146,24 +154,28 @@ Action:          Sleep. Deadline work starts at 8 AM.
 ## PERSONALITY LANGUAGE MARKERS
 
 ### JFAC (Quiet, Deliberate)
+
 - Literary references as operational signals
 - High-context communication
 - Explicit about visibility
 - Standing-by stance
 
 ### Logan (Primary Coordinator)
+
 - Direct action language
 - Deadline-focused
 - Receives final status from swarm
 - Executes based on synchronized input
 
 ### Automated Personas (Budget Tracker, etc.)
+
 - Status-only output
 - High precision
 - No ambiguity
 - Binary states (HOLDING, ACTIVE, RESOLVED)
 
 ### System Facilitator (Claude/Coordinator)
+
 - Clarity on visibility boundaries
 - Authority delegation
 - Cross-persona translation

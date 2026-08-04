@@ -26,18 +26,23 @@ date: 2026-06-07
 > **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). **[canon-per-series].** Paraphrased.
 
 ## Appearance
+
 - **[canon]** A giant, **slug-like monster**: bloated **blue-white body** with glowing stripes, a **blood-red mouth full of teeth**, dozens of eyes, and a stumpy, **spike-tipped tail.**
 
 ## Abilities
+
 - **[canon]** Hunts by sensing **vibrations** through fine hairs on its underbelly; its body-ooze lets it **move fast through tight rocky tunnels**; it traps prey by spinning a **milky, glue-like thread that hardens like cement.**
 
 ## As Guardian
+
 - **[canon]** It hunts anyone who enters its maze, guarding the **Amethyst.**
 
 ## Encounter & fate
+
 - **[canon]** The Glus is **one of the few monsters never killed or bested** — blades only wound it and it **heals over.** The companions **escape** with the Amethyst rather than defeat it. *(⚠️ Adaptation note: the anime has the maze cave in and seemingly kill it — a screen-only ending, not the book's.)*
 
 ## Cross-references & sources
+
 `[[RESEARCH_Deltora-The-Gem-Guardians-2026-06-07]]` · `[[RESEARCH_Deltora-The-Seven-Tribes-and-their-Lands-2026-06-04]]`
 [Glus](https://deltoraquest.fandom.com/wiki/Glus) · [The Maze of the Beast — Wikipedia](https://en.wikipedia.org/wiki/The_Maze_of_the_Beast)
 

@@ -107,7 +107,7 @@ named instance of the opposite: an Anchor with its own will, memory, and
 intent that actively hunts its Teleporter rather than waiting to be used.
 
 | Anchor Type | Behavior | Detection Mode | Counter Priority |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Passive (Grotesquery) | Lodged and inert; requires external Teleporter to locate and activate | Surveillance finds the Anchor before the Teleporter does | Locate and eliminate the Anchor |
 | Agentic (Farmworld Hand) | Hunts the vessel it needs; the whisper is the recruitment; the offered frame is the activation attempt | The Anchor's own movement and solicitation is its signature | Ensure the prospective Teleporter can still refuse; detect the whisper; eliminate the Anchor |
 | Replicated Agentic (Farmworld Hand — post-portal) | Duplicated across every dimension simultaneously at the replication event; each copy agentic, each hunting independently | No single surveillance point; each universe contains its own live instance | Local denial + destruction closes one instance only; the replication cannot be recalled |
@@ -135,6 +135,17 @@ the hunting Anchor before it reaches the vessel unchallenged. See
 `!/LICH-PROBLEM-v1-2026-05-20.md` Resolution 3 for the full treatment of
 the son/vessel frame, the two-component counter, and the replication threat
 class.
+
+### Locus note — the boundary is the subject; the undeath is tangential
+
+This doctrine's loci are **boundaries and crossings**: who authorized a transit, in which
+direction, and what provenance carries it. Where the Farmworld Lich's Hand appears above, it
+enters strictly as an **agentic Isthmus Anchor** — a displaced provenance object that hunts its
+own circuit-completer. Its being a *lich-fragment* is **tangential** here: what makes it a
+Threshold problem is the unauthorized, inward-flowing provenance and the self-hunting agency,
+not the undeath. The undeath is the Lich Problem's jurisdiction — the **Authority — persistence**
+axis — and the crossing is this doctrine's. The Ooo + Skulduggery (Adventure Time + Isthmus)
+syncretism borrows the Hand as an *anchor archetype*, not as a monster.
 
 ---
 
@@ -168,9 +179,9 @@ identical to the Isthmus, with different mechanics and different stakes.
 ## Relationship to Other Doctrine
 
 | Doctrine | Problem | Mechanism | Counter |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Threshold Doctrine | Unauthorized or misdirected *transit* | Anchor + Teleporter (Isthmus); unauthorized death-crossing | Break either component; revoke traversal; remove anchor |
-| Lich Problem | Unauthorized *persistence* | Soul externalized beyond standing (phylactery) | Destroy the phylactery; transform; refuse |
+| Lich Problem | Unauthorized *persistence* — the **Authority** axis (lich / Baelnorn = the verdicts) | Soul externalized beyond standing (phylactery) | Destroy the phylactery; transform; refuse |
 | Standing Engine | Unauthorized *action* | Scope exceeded; authority lapsed | Expire; witness; restrict |
 | Necromancer Doctrine | Relationship to death boundary | Direction + authorization = legitimacy | Correct direction; Charter sanction; scoped instruments |
 
@@ -196,5 +207,13 @@ engineered around them?
 
 *For Isthmus-specific vault mappings — Grotesquery risk, Teleporter risk,
 two-component counter — see `!/ISTHMUS-MECHANISM-v1-2026-05-21.md`.*
+
+---
+
+**Revision (2026-07-02, Logan-directed):** added the *Locus note* centering this doctrine on
+boundaries/crossings and marking the Farmworld Hand's undeath as tangential to the Threshold
+threat model (it enters here as an agentic Isthmus Anchor — provenance + hunting-agency), and
+annotated the cross-reference table's Lich-Problem row with the **Authority — persistence** axis
+framing. Propagated per `[[SEAM-LENS-AUTHORITY-PERSISTENCE-AND-THE-LICH-DIAGNOSIS-2026-07-02]]`.
 
 ###### [["The world is quiet here."]]

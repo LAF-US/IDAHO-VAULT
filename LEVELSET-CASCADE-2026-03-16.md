@@ -64,6 +64,7 @@ authority: LOGAN
 ## UNIVERSAL STATE (all agents read this)
 
 ### System Identity
+
 - **Supervisor:** Logan Finney — journalist, Idaho Reports / Idaho Public Television
 - **Repository:** github.com/loganfinney27/IDAHO-VAULT (public)
 - **Branch:** `claude/levelset-multi-conversation-zWxJc` — 15 commits ahead of main (`219a271`)
@@ -71,6 +72,7 @@ authority: LOGAN
 - **Date:** 2026-03-16
 
 ### Governance Stack (read in this order to reorient)
+
 1. `!ADMIN/Constitution.md` — Identity, constraints, working rules
 2. `!ADMIN/PROTOCOL.md` — Operational vocabulary (18 terms across 4 categories)
 3. `!ADMIN/AGENTS.md` — Agent registry, 4-tier capability model, communication rules, boundary rules
@@ -78,6 +80,7 @@ authority: LOGAN
 5. `!ADMIN/DECISIONS.md` — Architectural decision log (11 entries)
 
 ### Foundational Rules
+
 - Logan is human. All agents are software. Logan directs; agents execute.
 - All inter-agent communication flows through or is visible to Logan. No peer-to-peer bypass.
 - Native protocols confirmed — no MCP wrappers. Each agent uses its native ecosystem.
@@ -86,6 +89,7 @@ authority: LOGAN
 - Public repo = on the record.
 
 ### Key Decisions Made (since 2026-03-13)
+
 1. LEVELSET protocol established (2026-03-13)
 2. Conversation taxonomy adopted: PERMANENT / PERSISTENT / TASK / STORY / PROJECT / ISSUE / INQUIRY (2026-03-13)
 3. File attribution: Markdown = human (Logan), Python = machine (Claude) (2026-03-13)
@@ -99,7 +103,7 @@ authority: LOGAN
 ### Agent Registry (current)
 
 | Agent | Platform | Tier | Scope |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | PERMANENT: AUTHORITY: CODE | Claude Code CLI | 1: Direct write | Vault repo ops, deployment, automation |
 | PERSISTENT: ADMINISTRATION | Claude conversation | 3: Draft only | Constitutional layer, handoffs, judgment |
 | GitHub Copilot (ADMIN GitHub) | GitHub Copilot | 2: Multi-repo admin | GitHub administration, all Logan's repos |
@@ -111,7 +115,7 @@ authority: LOGAN
 ### What's Pending (swarm-wide)
 
 | Item | Status | Owner |
-|---|---|---|
+| --- | --- | --- |
 | Open PR for branch | BLOCKED | Logan |
 | PROTOCOL.md 6 ambiguity resolutions | DECISION-READY | Logan (see `PROTOCOL-DECISIONS-PENDING.md`) |
 | AGENTS.md review/approval | DRAFTED | Logan |
@@ -456,6 +460,7 @@ Logan: work through this list. Check each off as you paste it.
 ## AFTER THE CASCADE
 
 When all HANDSHAKE responses are collected, Logan relays them back to CODE AUTHORITY. CODE AUTHORITY will:
+
 1. Log all acknowledgments in LEVELSET.md
 2. Update AGENTS.md with any scope changes from Gemini's self-assessment
 3. Incorporate Copilot's copilot-instructions.md draft

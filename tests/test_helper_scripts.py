@@ -85,6 +85,21 @@ class HelperScriptsTest(unittest.TestCase):
 
         self.assertEqual(findings, ["RESERVED NAME: NOTES/CON.md (component: CON.md)"])
 
+    def test_portable_paths_flags_backslash_paths(self) -> None:
+        # The exact shape that broke Windows checkout: a Windows-absolute path
+        # committed as a single tracked name with literal backslashes.
+        findings = check_portable_paths.path_violations(
+            r"C:\Users\loganf\.vibe\logs\session/s/messages.jsonl"
+        )
+
+        self.assertTrue(
+            any(f.startswith("BACKSLASH IN PATH:") for f in findings),
+            findings,
+        )
+
+    def test_portable_paths_clean_path_has_no_findings(self) -> None:
+        self.assertEqual(check_portable_paths.path_violations("notes/clean-name.md"), [])
+
 
 class JupytextSyncPairedTest(unittest.TestCase):
     """The paired-sync helper's contract: skip unpaired, surface (don't fail on) corrupt
