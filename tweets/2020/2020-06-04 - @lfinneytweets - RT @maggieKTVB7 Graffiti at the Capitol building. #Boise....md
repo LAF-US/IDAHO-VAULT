@@ -23,9 +23,9 @@ RT @maggieKTVB7: Graffiti at the Capitol building. #Boise
 Photos: Lori June https://t.co/NIrIKOpKtI
 
 ## Media
-- ![](https://pbs.twimg.com/media/EZrMSdHUEAAeOXh.jpg)
-- ![](https://pbs.twimg.com/media/EZrMSdgXsAUYeFG.jpg)
-- ![](https://pbs.twimg.com/media/EZrMSdfX0AIxhoP.jpg)
-- ![](https://pbs.twimg.com/media/EZrMSdhWoAEcUVI.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EZrMSdHUEAAeOXh.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EZrMSdgXsAUYeFG.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EZrMSdfX0AIxhoP.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EZrMSdhWoAEcUVI.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1268563815873933312)

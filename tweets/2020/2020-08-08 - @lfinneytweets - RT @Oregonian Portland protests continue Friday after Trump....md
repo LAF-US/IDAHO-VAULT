@@ -21,6 +21,6 @@ RT @Oregonian: Portland protests continue Friday after Trump denounces ‘lawles
 - https://trib.al/FNDau62
 
 ## Media
-- ![](https://pbs.twimg.com/media/Ee3pbKtWkAE0MBF.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/Ee3pbKtWkAE0MBF.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1291978236516163585)

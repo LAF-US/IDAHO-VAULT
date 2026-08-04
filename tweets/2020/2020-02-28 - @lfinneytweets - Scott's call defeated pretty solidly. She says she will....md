@@ -22,7 +22,7 @@ related:
 Scott's call defeated pretty solidly. She says she will move to assign the abortion bill to the State Affairs committee sometime later. #idpol #idleg https://t.co/tr6Ce7QIq4
 
 ## Media
-- ![](https://pbs.twimg.com/media/ER4Y2OAXsAAq7H0.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/ER4Y2OAXsAAq7H0.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

@@ -22,8 +22,8 @@ related:
 20 pages later #idleg #idpol https://t.co/FYbBvCKgbi
 
 ## Media
-- ![](https://pbs.twimg.com/media/FoAtUujaQAAfTzZ.jpg)
-- ![](https://pbs.twimg.com/media/FoAtVR_aEAEZClj.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/FoAtUujaQAAfTzZ.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/FoAtVR_aEAEZClj.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

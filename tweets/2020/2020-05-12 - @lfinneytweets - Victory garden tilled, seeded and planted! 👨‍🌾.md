@@ -16,8 +16,8 @@ related:
 Victory garden tilled, seeded and planted! 👨‍🌾 https://t.co/NFYjNzYQtu
 
 ## Media
-- ![](https://pbs.twimg.com/media/EX2GCVQU4AAPzMt.jpg)
-- ![](https://pbs.twimg.com/media/EX2GH77UMAESbVg.jpg)
-- ![](https://pbs.twimg.com/media/EX2GKP2UYAA-x8o.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EX2GCVQU4AAPzMt.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EX2GH77UMAESbVg.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EX2GKP2UYAA-x8o.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1260311075368534016)

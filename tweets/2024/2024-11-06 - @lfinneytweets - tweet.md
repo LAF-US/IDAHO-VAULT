@@ -18,6 +18,6 @@ related:
 @HurstforIdaho https://t.co/xxllcbJEcW
 
 ## Media
-- ![](https://pbs.twimg.com/tweet_video_thumb/GbsTIE0boAEIuGz.jpg)
+- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/GbsTIE0boAEIuGz.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1854096710064275858)

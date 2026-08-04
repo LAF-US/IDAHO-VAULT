@@ -23,7 +23,7 @@ related:
 RT @BetsyZRussell: House has convened... #idleg #idpol https://t.co/ikPx5h8uw1
 
 ## Media
-- ![](https://pbs.twimg.com/media/Ew2ztUkUYAEzrm3.jpg)
-- ![](https://pbs.twimg.com/media/Ew2ztUjVkAcjDfW.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/Ew2ztUkUYAEzrm3.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/Ew2ztUjVkAcjDfW.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1372951533105471488)

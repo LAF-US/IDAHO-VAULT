@@ -17,7 +17,7 @@ related:
 Rep. Tony Wisniewski (R-Post Falls) https://t.co/zywYH006FE
 
 ## Media
-- ![](https://pbs.twimg.com/media/EbQFVswXsAEniun.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EbQFVswXsAEniun.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

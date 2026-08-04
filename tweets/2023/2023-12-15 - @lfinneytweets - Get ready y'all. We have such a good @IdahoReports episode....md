@@ -23,6 +23,6 @@ related:
 Get ready y'all. We have such a good @IdahoReports episode tonight. #idleg #idpol https://t.co/veJsizWbCw
 
 ## Media
-- ![](https://pbs.twimg.com/media/GBa1KJgaUAA6Dg2.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/GBa1KJgaUAA6Dg2.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1735774294075154691)

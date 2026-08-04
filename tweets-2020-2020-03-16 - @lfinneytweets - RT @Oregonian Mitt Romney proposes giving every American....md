@@ -23,6 +23,6 @@ RT @Oregonian: Mitt Romney proposes giving every American $1,000 during coronavi
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/ETQNcpIXYAcPUap.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/ETQNcpIXYAcPUap.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1239630996711952387)

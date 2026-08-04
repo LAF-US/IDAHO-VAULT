@@ -18,7 +18,7 @@ related:
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/DyYllzZWkAATVjv.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/DyYllzZWkAATVjv.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

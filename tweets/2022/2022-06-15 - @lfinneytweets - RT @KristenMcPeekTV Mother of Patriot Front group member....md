@@ -21,6 +21,6 @@ RT @KristenMcPeekTV: Mother of Patriot Front group member speaks out after son's
 - https://bit.ly/3mOZeGO
 
 ## Media
-- ![](https://pbs.twimg.com/ext_tw_video_thumb/1537135897103069184/pu/img/RVtV5xb-8LQoiHlL.jpg)
+- ![alt text needed](https://pbs.twimg.com/ext_tw_video_thumb/1537135897103069184/pu/img/RVtV5xb-8LQoiHlL.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1537136741122920448)

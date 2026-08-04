@@ -22,6 +22,6 @@ https://t.co/gvThNzgrOq https://t.co/8KmRXIcXws
 - https://bit.ly/39TRGwe
 
 ## Media
-- ![](https://pbs.twimg.com/amplify_video_thumb/1444051623290884096/img/UeBlH298CF5Sy-Oz.jpg)
+- ![alt text needed](https://pbs.twimg.com/amplify_video_thumb/1444051623290884096/img/UeBlH298CF5Sy-Oz.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1444061552546435072)

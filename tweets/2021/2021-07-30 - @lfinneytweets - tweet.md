@@ -20,7 +20,7 @@ related:
 @VoteMorales @davlinnews @IdahoReports @pocketcasts https://t.co/6qSBjDJAwX
 
 ## Media
-- ![](https://pbs.twimg.com/tweet_video_thumb/E7lM1K6VcAAPpsn.jpg)
+- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/E7lM1K6VcAAPpsn.jpg)
 
 *In reply to [@JordanRMorales](https://twitter.com/JordanRMorales)*
 

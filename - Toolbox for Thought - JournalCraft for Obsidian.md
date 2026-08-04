@@ -8,7 +8,7 @@ created: 2026-04-24
 
 Transform your journaling practice with JournalCraft, a curated collection of 10 powerful journaling templates designed specifically for Obsidian, along with an introductory to advanced advice to improve your journaling practice.
 
-![](https://www.youtube.com/watch?v=uRb4E80TFBw)
+![alt text needed](https://www.youtube.com/watch?v=uRb4E80TFBw)
 
 ![01.jpg](https://publish-01.obsidian.md/access/5482717c61d4cd4a5e39468efa73a612/_pub/media/store/journal-craft/01.jpg)
 

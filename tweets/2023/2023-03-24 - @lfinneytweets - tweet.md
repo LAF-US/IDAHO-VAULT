@@ -17,7 +17,7 @@ related:
 @verified https://t.co/drMJ3cvecy
 
 ## Media
-- ![](https://pbs.twimg.com/tweet_video_thumb/Fr8gxZqaYAALx8V.jpg)
+- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/Fr8gxZqaYAALx8V.jpg)
 
 *In reply to [@PremiumBusiness](https://twitter.com/PremiumBusiness)*
 

@@ -25,9 +25,9 @@ https://t.co/wuKrFUSn9L https://t.co/fkPf7Dt0d2
 - https://idahofamily.org/petition-charlie-kirk-memorial-highway/
 
 ## Media
-- ![](https://pbs.twimg.com/media/G6Eii_4agAERKaR.jpg)
-- ![](https://pbs.twimg.com/media/G6EilSubMAIyvFn.jpg)
-- ![](https://pbs.twimg.com/media/G6EimvObMAAooJ-.jpg)
-- ![](https://pbs.twimg.com/media/G6EinzIbMAE-nGs.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/G6Eii_4agAERKaR.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/G6EilSubMAIyvFn.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/G6EimvObMAAooJ-.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/G6EinzIbMAE-nGs.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1990911366450868328)

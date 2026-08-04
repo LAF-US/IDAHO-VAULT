@@ -9,7 +9,7 @@ created: 2026-04-17
 
 ## [Level Up Coding](https://levelup.gitconnected.com/?source=post_page---publication_nav-5517fd7b58a6-654739930dce---------------------------------------)
 
-![](https://miro.medium.com/v2/resize:fit:1400/format:webp/0*NXbwTwgnsEftHqi0)
+![alt text needed](https://miro.medium.com/v2/resize:fit:1400/format:webp/0*NXbwTwgnsEftHqi0)
 
 Photo by Andrea De Santis on Unsplash
 

@@ -22,8 +22,7 @@ related:
   - idahoprimary
 ---
 
-When @davlinnews asked @GovernorLittle Thursday night if moving the May primary was an option, he said "Yes." 
-#IdahoCOVID19 #idpol #idahoprimary https://t.co/JLg9aaVfIl
+When @davlinnews asked @GovernorLittle Thursday night if moving the May primary was an option, he said "Yes." #IdahoCOVID19 #idpol #idahoprimary https://t.co/JLg9aaVfIl
 
 ## Links
 - https://x.com/ScottMcIntosh12/status/1243944279178797057

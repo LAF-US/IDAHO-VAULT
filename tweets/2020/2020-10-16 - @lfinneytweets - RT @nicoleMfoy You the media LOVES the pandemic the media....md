@@ -20,6 +20,6 @@ RT @nicoleMfoy: You: the media LOVES the pandemic
 the media by Friday, every time: https://t.co/jEwftQKeuh
 
 ## Media
-- ![](https://pbs.twimg.com/tweet_video_thumb/EkdsobGU8AECGqi.jpg)
+- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/EkdsobGU8AECGqi.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1317143421757263872)

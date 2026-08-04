@@ -24,6 +24,6 @@ Senate amendments to the affirmative action bill approved by the House. Makes it
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/ETQHSOzXQAUZOf-.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/ETQHSOzXQAUZOf-.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1239623816273264640)
