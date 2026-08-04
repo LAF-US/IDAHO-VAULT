@@ -1,5 +1,34 @@
-# The *default* assumption for the VAULT is that things need to be tracked. The *only* exceptions to that sole assumption are **secrets** and **exhaust**. Tread lightly here.
+# LOGAN ONLY
 
-!**.md
+.cache_ggshield
+.obsidian/plugins/ai-templater/data.json
+.obsidian/plugins/ai-image-analyzer/data.json
+.obsidian/plugins/obsidian-local-rest-api/data.json
+.obsidian/plugins/mcp-tools/bin/mcp-server.exe
+.obsidian/plugins/phone-to-roam-to-obsidian/data.json
+.obsidian/plugins/todoist-context-bridge/data.json
+*.env*
+*.venv*
+*.sq*
+*/*private*/*
+.*/id_*
+.*/*_hosts*
+.*/*keys*/*.*
+.*/credstore*
+.*/*.credentials.*
+.*/**/marketplaces/*
+
+# THE WORLD IS QUIET HERE．
+
+.cursor/extensions/*
+.obsidian/plugins/*/cache/*
+.obsidian/plugins/*/dist/*
+.ollama/**/blobs/*
 
 # ESTO PERPETUA!
+
+!.gitignore
+!/.*/stub.txt
+!/**.md
+
+# The *default* assumption for the VAULT is that things need to be tracked. The *only* exceptions to that sole assumption are **secrets** and **exhaust**. Tread lightly here.
