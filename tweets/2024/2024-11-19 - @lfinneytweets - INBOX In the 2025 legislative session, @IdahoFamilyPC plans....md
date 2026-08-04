@@ -24,6 +24,6 @@ INBOX: In the 2025 legislative session, @IdahoFamilyPC plans to introduce a bill
 Over 2,000 people have signed their petition online. #idleg #idpol https://t.co/O6l7Kav6tD
 
 ## Media
-- ![](https://pbs.twimg.com/media/GcxdceRbcAI8_Ss.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/GcxdceRbcAI8_Ss.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1858964235826720889)

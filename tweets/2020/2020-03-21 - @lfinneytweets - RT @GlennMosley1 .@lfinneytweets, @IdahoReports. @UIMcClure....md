@@ -25,6 +25,6 @@ related:
 RT @GlennMosley1: .@lfinneytweets, @IdahoReports. @UIMcClure @uidaho #journalismmatters https://t.co/jsH3PICfjn
 
 ## Media
-- ![](https://pbs.twimg.com/media/ETnFBdlVAAUPXuF.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/ETnFBdlVAAUPXuF.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1241489913863753728)

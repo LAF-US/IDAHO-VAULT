@@ -23,6 +23,6 @@ related:
 Wow, Idaho voters turned down a *lot* in property taxes yesterday. #idedu #idpol #idleg https://t.co/Azr1B0hbdL
 
 ## Media
-- ![](https://pbs.twimg.com/media/FrR9AnwaAAE8wUD.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/FrR9AnwaAAE8wUD.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1636070115509956609)

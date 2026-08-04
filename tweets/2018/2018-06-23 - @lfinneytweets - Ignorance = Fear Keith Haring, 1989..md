@@ -18,7 +18,7 @@ Ignorance = Fear
 Keith Haring, 1989. https://t.co/XHmlSKKgvZ
 
 ## Media
-- ![](https://pbs.twimg.com/media/DgaDgBjUYAA1u7Z.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/DgaDgBjUYAA1u7Z.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

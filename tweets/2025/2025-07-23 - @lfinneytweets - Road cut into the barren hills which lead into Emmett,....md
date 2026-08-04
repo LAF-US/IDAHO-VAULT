@@ -19,6 +19,6 @@ related:
 - https://www.loc.gov/item/2017877582/
 
 ## Media
-- ![](https://pbs.twimg.com/media/GwkdRr8aYAAk5dN.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/GwkdRr8aYAAk5dN.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1948121078481444920)

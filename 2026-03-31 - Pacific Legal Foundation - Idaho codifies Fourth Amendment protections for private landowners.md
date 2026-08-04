@@ -22,7 +22,7 @@ authority: LOGAN
 ---
 [Donate](https://pacificlegal.org/donate/)
 
-![](https://pacificlegal.org/wp-content/uploads/2020/07/idaho-e1595348815899.jpeg)
+![alt text needed](https://pacificlegal.org/wp-content/uploads/2020/07/idaho-e1595348815899.jpeg)
 
 **Boise, Idaho; March 31, 2026:** Idaho Governor Brad Little signed legislation today that strengthens constitutional protections for the state’s private landowners by barring government agents from entering private property without a warrant, the owner’s consent, or exigent circumstances. The Property Rights Protection Act gives Idaho farmers, ranchers, and rural landowners a direct legal remedy — including $1,000 per violation payable to the landowner, plus actual damages and attorney’s fees — when government agents trespass on their land.
 

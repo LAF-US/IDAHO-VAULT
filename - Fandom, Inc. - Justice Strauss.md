@@ -195,7 +195,7 @@ Justice Strauss smiling.
 
 Justice Strauss pointing to Count Olaf's house.
 
- [![](https://static.wikia.nocookie.net/snicket/images/7/70/JusticeWhat.gif/revision/latest/scale-to-width-down/120?cb=20180408114627 "JusticeWhat.gif (415 KB)") ![](https://static.wikia.nocookie.net/snicket/images/7/70/JusticeWhat.gif/revision/latest/scale-to-width-down/120?cb=20180408114627 "JusticeWhat.gif (415 KB)")](https://snicket.fandom.com/wiki/File:JusticeWhat.gif "JusticeWhat.gif (415 KB)")
+ [![alt text needed](https://static.wikia.nocookie.net/snicket/images/7/70/JusticeWhat.gif/revision/latest/scale-to-width-down/120?cb=20180408114627 "JusticeWhat.gif (415 KB)") ![alt text needed](https://static.wikia.nocookie.net/snicket/images/7/70/JusticeWhat.gif/revision/latest/scale-to-width-down/120?cb=20180408114627 "JusticeWhat.gif (415 KB)")](https://snicket.fandom.com/wiki/File:JusticeWhat.gif "JusticeWhat.gif (415 KB)")
 
 [![Justice Strauss reading "Adoption Law & You".](https://static.wikia.nocookie.net/snicket/images/8/84/Justice_Strauss_reads_Adoption_Law_%26_You.jpg/revision/latest/scale-to-width-down/240?cb=20170125052512 "Justice Strauss reads Adoption Law & You.jpg (99 KB)")](https://snicket.fandom.com/wiki/File:Justice_Strauss_reads_Adoption_Law_%26_You.jpg "Justice Strauss reads Adoption Law & You.jpg (99 KB)")
 
@@ -211,13 +211,13 @@ Justice Strauss in her library.
 
 Justice Strauss at The Marvelous Marriage.
 
- [![](https://static.wikia.nocookie.net/snicket/images/7/75/Elder_sam_with_J._Strauss.jpg/revision/latest/scale-to-width-down/213?cb=20190620151033 "Elder sam with J. Strauss.jpg (86 KB)") ![](https://static.wikia.nocookie.net/snicket/images/7/75/Elder_sam_with_J._Strauss.jpg/revision/latest/scale-to-width-down/213?cb=20190620151033 "Elder sam with J. Strauss.jpg (86 KB)")](https://snicket.fandom.com/wiki/File:Elder_sam_with_J._Strauss.jpg "Elder sam with J. Strauss.jpg (86 KB)")
+ [![alt text needed](https://static.wikia.nocookie.net/snicket/images/7/75/Elder_sam_with_J._Strauss.jpg/revision/latest/scale-to-width-down/213?cb=20190620151033 "Elder sam with J. Strauss.jpg (86 KB)") ![alt text needed](https://static.wikia.nocookie.net/snicket/images/7/75/Elder_sam_with_J._Strauss.jpg/revision/latest/scale-to-width-down/213?cb=20190620151033 "Elder sam with J. Strauss.jpg (86 KB)")](https://snicket.fandom.com/wiki/File:Elder_sam_with_J._Strauss.jpg "Elder sam with J. Strauss.jpg (86 KB)")
 
 [![Justice Strauss on the trolley.](https://static.wikia.nocookie.net/snicket/images/6/61/StraussTrolley.png/revision/latest/scale-to-width-down/240?cb=20190117100254 "StraussTrolley.png (770 KB)")](https://snicket.fandom.com/wiki/File:StraussTrolley.png "StraussTrolley.png (770 KB)")
 
 Justice Strauss on the trolley.
 
- [![](https://static.wikia.nocookie.net/snicket/images/1/12/YouCanTrustTheLaw.gif/revision/latest/scale-to-width-down/160?cb=20190121145434 "YouCanTrustTheLaw.gif (5.75 MB)") ![](https://static.wikia.nocookie.net/snicket/images/1/12/YouCanTrustTheLaw.gif/revision/latest/scale-to-width-down/160?cb=20190121145434 "YouCanTrustTheLaw.gif (5.75 MB)")](https://snicket.fandom.com/wiki/File:YouCanTrustTheLaw.gif "YouCanTrustTheLaw.gif (5.75 MB)")
+ [![alt text needed](https://static.wikia.nocookie.net/snicket/images/1/12/YouCanTrustTheLaw.gif/revision/latest/scale-to-width-down/160?cb=20190121145434 "YouCanTrustTheLaw.gif (5.75 MB)") ![alt text needed](https://static.wikia.nocookie.net/snicket/images/1/12/YouCanTrustTheLaw.gif/revision/latest/scale-to-width-down/160?cb=20190121145434 "YouCanTrustTheLaw.gif (5.75 MB)")](https://snicket.fandom.com/wiki/File:YouCanTrustTheLaw.gif "YouCanTrustTheLaw.gif (5.75 MB)")
 
 [![Justice Strauss during the trial.](https://static.wikia.nocookie.net/snicket/images/2/2b/ThreeTrial.png/revision/latest/scale-to-width-down/180?cb=20190305142554 "ThreeTrial.png (2.26 MB)")](https://snicket.fandom.com/wiki/File:ThreeTrial.png "ThreeTrial.png (2.26 MB)")
 

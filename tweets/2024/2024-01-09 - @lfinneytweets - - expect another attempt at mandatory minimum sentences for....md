@@ -22,8 +22,7 @@ related:
 ---
 
 - expect another attempt at mandatory minimum sentences for fentanyl, but maybe with a more nuanced look at how well Idaho's MM laws work?
-- @GovernorLittle when asked if he supports or opposes ranked choice voting: "It's not on the ballot yet."
-#idleg #idpol
+- @GovernorLittle when asked if he supports or opposes ranked choice voting: "It's not on the ballot yet." #idleg #idpol
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

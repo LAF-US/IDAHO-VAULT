@@ -18,7 +18,7 @@ The opening session concludes with performances by the Lake City High School Orc
 
 ## Media
 
-- ![](https://pbs.twimg.com/ext_tw_video_thumb/959136874135633920/pu/img/36sk7ZK8WAn_aPEl.jpg)
+- ![alt text needed](https://pbs.twimg.com/ext_tw_video_thumb/959136874135633920/pu/img/36sk7ZK8WAn_aPEl.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

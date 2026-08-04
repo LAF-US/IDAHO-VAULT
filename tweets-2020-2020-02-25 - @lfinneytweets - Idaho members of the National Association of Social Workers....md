@@ -24,6 +24,6 @@ Idaho members of the National Association of Social Workers @naswidaho stand out
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/ERpWFZkU4AAEqHa.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/ERpWFZkU4AAEqHa.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1232392106796371968)

@@ -226,7 +226,7 @@ She is also the grandniece of [D](https://snicket.fandom.com/wiki/D._Snicket "D.
 
 ### Netflix
 
- [![](https://static.wikia.nocookie.net/snicket/images/f/f9/BeatriceTransparent.png/revision/latest/scale-to-width-down/120?cb=20240115175358 "BeatriceTransparent.png (382 KB)") ![](https://static.wikia.nocookie.net/snicket/images/f/f9/BeatriceTransparent.png/revision/latest/scale-to-width-down/120?cb=20240115175358 "BeatriceTransparent.png (382 KB)")](https://snicket.fandom.com/wiki/File:BeatriceTransparent.png "BeatriceTransparent.png (382 KB)")
+ [![alt text needed](https://static.wikia.nocookie.net/snicket/images/f/f9/BeatriceTransparent.png/revision/latest/scale-to-width-down/120?cb=20240115175358 "BeatriceTransparent.png (382 KB)") ![alt text needed](https://static.wikia.nocookie.net/snicket/images/f/f9/BeatriceTransparent.png/revision/latest/scale-to-width-down/120?cb=20240115175358 "BeatriceTransparent.png (382 KB)")](https://snicket.fandom.com/wiki/File:BeatriceTransparent.png "BeatriceTransparent.png (382 KB)")
 
 [![Kit and her newborn daughter.](https://static.wikia.nocookie.net/snicket/images/b/b4/Kitbeaii.png/revision/latest/scale-to-width-down/240?cb=20190915135338 "Kitbeaii.png (3.51 MB)")](https://snicket.fandom.com/wiki/File:Kitbeaii.png "Kitbeaii.png (3.51 MB)")
 

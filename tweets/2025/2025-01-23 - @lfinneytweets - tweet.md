@@ -18,6 +18,6 @@ related:
 @lib_crusher https://t.co/ZxE0Z64A3T
 
 ## Media
-- ![](https://pbs.twimg.com/media/Gh8asjFaIAAl0bS.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/Gh8asjFaIAAl0bS.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1882252525245804723)

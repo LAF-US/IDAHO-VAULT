@@ -23,7 +23,6 @@ The House Republican Caucus lists their session priorities as:
 - Property Tax Relief & Transparency 
 - Unanticipated Surplus Distribution 
 - Transportation & Infrastructure Improvements 
-- Education Investments Review 
-#idleg #idpol
+- Education Investments Review #idleg #idpol
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1348753933217353728)

@@ -19,7 +19,7 @@ related:
 @clarkcorbin @davlinnews @davlinnews https://t.co/gpzPWjjsqB
 
 ## Media
-- ![](https://pbs.twimg.com/media/FBxExTaVUAI-w-v.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/FBxExTaVUAI-w-v.jpg)
 
 *In reply to [@clarkcorbin](https://twitter.com/clarkcorbin)*
 

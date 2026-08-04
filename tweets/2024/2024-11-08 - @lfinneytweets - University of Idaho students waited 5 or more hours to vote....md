@@ -21,6 +21,6 @@ related:
 University of Idaho students waited 5 or more hours to vote on campus Tuesday, per the Argonaut student newspaper. Delays caused by a bottleneck registering new voters with electronic poll books. #idpol #idleg https://t.co/XBneXHf91w
 
 ## Media
-- ![](https://pbs.twimg.com/media/Gb369bHbwAMnTUg.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/Gb369bHbwAMnTUg.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1854914563172598211)
