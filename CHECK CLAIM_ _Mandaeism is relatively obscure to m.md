@@ -9,7 +9,6 @@ The claim is **well supported**. Mandaeism is widely described as a small, littl
 - **“Relatively obscure to most people outside the Middle East or religious studies circles”** is plausible and consistent with descriptions of Mandaeans as “little-known,” “obscure,” and intensely private.[^1_3][^1_5][^1_8]
 - **“One of the few surviving Gnostic traditions from antiquity”** is accurate in a broad sense; several sources say Mandaeism uniquely or nearly uniquely survives from Late Antiquity as a Gnostic religion.[^1_4][^1_7][^1_1]
 
-
 ## Nuance
 
 - The phrase **“one of the few”** is safer than **“the only”**, because some sources frame it as “the last remaining link” or “may well be the only sect” depending on scholarly interpretation.[^1_5][^1_4]
@@ -18,26 +17,25 @@ The claim is **well supported**. Mandaeism is widely described as a small, littl
 
 <div align="center">⁂</div>
 
-[^1_1]: https://www.academia.edu/4041522/Mandaeism_in_Antiquity_and_the_Antiquity_of_Mandaeism
+[^1_1]: <https://www.academia.edu/4041522/Mandaeism_in_Antiquity_and_the_Antiquity_of_Mandaeism>
 
-[^1_2]: https://www.facebook.com/groups/583113712191538/posts/1049225345580370/
+[^1_2]: <https://www.facebook.com/groups/583113712191538/posts/1049225345580370/>
 
-[^1_3]: https://brewminate.com/mandaeism-an-ancient-gnostic-religion-followed-by-a-tiny-minority-of-iraqis/
+[^1_3]: <https://brewminate.com/mandaeism-an-ancient-gnostic-religion-followed-by-a-tiny-minority-of-iraqis/>
 
-[^1_4]: https://en.wikipedia.org/wiki/Mandaeism
+[^1_4]: <https://en.wikipedia.org/wiki/Mandaeism>
 
-[^1_5]: https://religionnews.com/2007/11/02/obscure-mandaean-faith-risks-extinction-in-iraq/
+[^1_5]: <https://religionnews.com/2007/11/02/obscure-mandaean-faith-risks-extinction-in-iraq/>
 
-[^1_6]: https://timelessmyths.com/stories/mandeans/
+[^1_6]: <https://timelessmyths.com/stories/mandeans/>
 
-[^1_7]: https://www.britannica.com/topic/Mandaeanism
+[^1_7]: <https://www.britannica.com/topic/Mandaeanism>
 
-[^1_8]: https://religion.fandom.com/wiki/Mandaeism
+[^1_8]: <https://religion.fandom.com/wiki/Mandaeism>
 
-[^1_9]: https://portalcioranbr.wordpress.com/2025/11/26/mandaeism-last-gnostic-religion/
+[^1_9]: <https://portalcioranbr.wordpress.com/2025/11/26/mandaeism-last-gnostic-religion/>
 
-[^1_10]: https://www.youtube.com/watch?v=XpHHBo0i348
-
+[^1_10]: <https://www.youtube.com/watch?v=XpHHBo0i348>
 
 ---
 
@@ -60,26 +58,25 @@ A very simplified Gnostic idea would be: the world is not fully what it seems, t
 
 <div align="center">⁂</div>
 
-[^2_1]: https://www.ebsco.com/research-starters/religion-and-philosophy/gnosticism
+[^2_1]: <https://www.ebsco.com/research-starters/religion-and-philosophy/gnosticism>
 
-[^2_2]: https://thegodlab.wordpress.com/2015/03/31/the-christian-gnostic-tradition-with-a-small-g/
+[^2_2]: <https://thegodlab.wordpress.com/2015/03/31/the-christian-gnostic-tradition-with-a-small-g/>
 
-[^2_3]: https://en.wikipedia.org/wiki/Gnosticism
+[^2_3]: <https://en.wikipedia.org/wiki/Gnosticism>
 
-[^2_4]: https://www.youtube.com/watch?v=JOvVgqBpeTY
+[^2_4]: <https://www.youtube.com/watch?v=JOvVgqBpeTY>
 
-[^2_5]: https://gnosticismexplained.org
+[^2_5]: <https://gnosticismexplained.org>
 
-[^2_6]: https://learn.ligonier.org/podcasts/simply-put/gnosticism
+[^2_6]: <https://learn.ligonier.org/podcasts/simply-put/gnosticism>
 
-[^2_7]: https://www.youtube.com/watch?v=xDjahA4-6SQ\&vl=en
+[^2_7]: <https://www.youtube.com/watch?v=xDjahA4-6SQ\&vl=en>
 
-[^2_8]: https://zondervanacademic.com/blog/gnosticism
+[^2_8]: <https://zondervanacademic.com/blog/gnosticism>
 
-[^2_9]: https://www.reddit.com/r/explainlikeimfive/comments/neq9rj/eli5_what_is_gnosticism/
+[^2_9]: <https://www.reddit.com/r/explainlikeimfive/comments/neq9rj/eli5_what_is_gnosticism/>
 
-[^2_10]: https://www.modernreformation.org/resources/articles/gnosticism
-
+[^2_10]: <https://www.modernreformation.org/resources/articles/gnosticism>
 
 ---
 
@@ -106,20 +103,19 @@ A simple summary is: the demiurge is the “world-maker” in Gnosticism, but he
 
 <div align="center">⁂</div>
 
-[^3_1]: https://gnosticismexplained.org/the-gnostic-demiurge/
+[^3_1]: <https://gnosticismexplained.org/the-gnostic-demiurge/>
 
-[^3_2]: https://en.wikipedia.org/wiki/Demiurge
+[^3_2]: <https://en.wikipedia.org/wiki/Demiurge>
 
-[^3_3]: https://www.youtube.com/watch?v=kq-CoIFf8l0
+[^3_3]: <https://www.youtube.com/watch?v=kq-CoIFf8l0>
 
-[^3_4]: https://study.com/academy/lesson/demiurge-overview-facts-gnosticism.html
+[^3_4]: <https://study.com/academy/lesson/demiurge-overview-facts-gnosticism.html>
 
-[^3_5]: https://www.reddit.com/r/Gnostic/comments/i37paj/what_is_the_motive_of_the_demiurge/
+[^3_5]: <https://www.reddit.com/r/Gnostic/comments/i37paj/what_is_the_motive_of_the_demiurge/>
 
-[^3_6]: https://www.britannica.com/topic/Demiurge
+[^3_6]: <https://www.britannica.com/topic/Demiurge>
 
-[^3_7]: https://www.facebook.com/groups/604206033703414/posts/1556724081784933/
-
+[^3_7]: <https://www.facebook.com/groups/604206033703414/posts/1556724081784933/>
 
 ---
 
@@ -133,7 +129,6 @@ Early Christians called Gnosticism heretical because it clashed with core Christ
 - **Jesus:** Many Gnostic systems taught that Jesus only appeared to have a real body, which denied the incarnation and bodily resurrection emphasized by the early Church.[^4_2][^4_5]
 - **Salvation:** Gnosticism stressed hidden, elite knowledge for liberation, while the Church taught that salvation was open through faith in Christ and the apostolic message.[^4_7][^4_1]
 
-
 ## Why the Church reacted strongly
 
 The early Church also saw Gnostic teachers as threatening church unity and apostolic authority because they claimed special revelations not grounded in the teaching handed down from the apostles. In short, Gnosticism was rejected not just as a different opinion, but as a system that seemed to rewrite the Christian story from creation to redemption.[^4_4][^4_5][^4_1][^4_3]
@@ -145,22 +140,21 @@ Gnosticism was considered heresy because it denied or reshaped central Christian
 
 <div align="center">⁂</div>
 
-[^4_1]: https://matgilbert.wordpress.com/2013/09/17/gnosticism-the-early-church-and-us-part-one/
+[^4_1]: <https://matgilbert.wordpress.com/2013/09/17/gnosticism-the-early-church-and-us-part-one/>
 
-[^4_2]: https://insight.org/resources/article-library/mind-over-matter-the-heresy-of-gnosticism-both-then-and-now
+[^4_2]: <https://insight.org/resources/article-library/mind-over-matter-the-heresy-of-gnosticism-both-then-and-now>
 
-[^4_3]: https://centralseminary.edu/gnosticism-a-christological-heresy/
+[^4_3]: <https://centralseminary.edu/gnosticism-a-christological-heresy/>
 
-[^4_4]: https://www.reddit.com/r/religion/comments/rd4rxo/why_is_gnosticism_so_widely_condemned_as_heresy/
+[^4_4]: <https://www.reddit.com/r/religion/comments/rd4rxo/why_is_gnosticism_so_widely_condemned_as_heresy/>
 
-[^4_5]: https://en.wikipedia.org/wiki/Gnosticism
+[^4_5]: <https://en.wikipedia.org/wiki/Gnosticism>
 
-[^4_6]: https://www.youtube.com/watch?v=JOvVgqBpeTY
+[^4_6]: <https://www.youtube.com/watch?v=JOvVgqBpeTY>
 
-[^4_7]: https://discourse.biologos.org/t/gnosticism-and-the-early-church/45255
+[^4_7]: <https://discourse.biologos.org/t/gnosticism-and-the-early-church/45255>
 
-[^4_8]: https://www.facebook.com/groups/632741350138383/posts/25438757469110094/
-
+[^4_8]: <https://www.facebook.com/groups/632741350138383/posts/25438757469110094/>
 
 ---
 
@@ -181,7 +175,6 @@ Agnostic usually means a person who says they do not know whether God exists, or
 - **Gnosticism** = a religious tradition centered on secret spiritual knowledge.[^5_9][^5_7]
 - **Agnosticism** = a position of not knowing, or saying one cannot know, whether God exists.[^5_3][^5_1]
 
-
 ## Easy way to remember
 
 “Gnostic” in religion is about a movement or belief system, while “agnostic” is usually about uncertainty or lack of knowledge regarding God.[^5_1][^5_9]
@@ -189,26 +182,25 @@ Agnostic usually means a person who says they do not know whether God exists, or
 
 <div align="center">⁂</div>
 
-[^5_1]: https://www.reddit.com/r/askphilosophy/comments/glxajy/what_is_the_difference_between_gnosticism_and/
+[^5_1]: <https://www.reddit.com/r/askphilosophy/comments/glxajy/what_is_the_difference_between_gnosticism_and/>
 
-[^5_2]: https://homework.study.com/explanation/what-is-the-difference-between-gnostic-and-agnostic.html
+[^5_2]: <https://homework.study.com/explanation/what-is-the-difference-between-gnostic-and-agnostic.html>
 
-[^5_3]: https://en.wikiversity.org/wiki/Epistemology:_Agnosticism_or_Gnosticism%3F
+[^5_3]: <https://en.wikiversity.org/wiki/Epistemology:_Agnosticism_or_Gnosticism%3F>
 
-[^5_4]: https://www.youtube.com/shorts/OUx-GUeBEY0
+[^5_4]: <https://www.youtube.com/shorts/OUx-GUeBEY0>
 
-[^5_5]: https://www.facebook.com/groups/31425129128/posts/10164161222894129/
+[^5_5]: <https://www.facebook.com/groups/31425129128/posts/10164161222894129/>
 
-[^5_6]: https://www.instagram.com/reel/DSz8ywwjhFD/
+[^5_6]: <https://www.instagram.com/reel/DSz8ywwjhFD/>
 
-[^5_7]: https://spacedoutscientist.com/2015/07/30/from-agnostic-to-gnostic-from-ignorance-to-knowlege/
+[^5_7]: <https://spacedoutscientist.com/2015/07/30/from-agnostic-to-gnostic-from-ignorance-to-knowlege/>
 
-[^5_8]: https://www.stanleycolors.com/2013/12/atheism-vs-theism-vs-agnosticism-vs-gnosticism-a-simple-guide-to-know-what-the-hell-you-are/
+[^5_8]: <https://www.stanleycolors.com/2013/12/atheism-vs-theism-vs-agnosticism-vs-gnosticism-a-simple-guide-to-know-what-the-hell-you-are/>
 
-[^5_9]: https://en.wikipedia.org/wiki/Gnosticism
+[^5_9]: <https://en.wikipedia.org/wiki/Gnosticism>
 
-[^5_10]: https://www.youtube.com/shorts/iT5Qml-nfjM
-
+[^5_10]: <https://www.youtube.com/shorts/iT5Qml-nfjM>
 
 ---
 
@@ -222,7 +214,6 @@ Agnosticism is about **knowledge**, while atheism and theism are about **belief*
 - **Atheism:** lack of belief in gods, or belief that gods do not exist depending on the definition used.[^6_3][^6_1]
 - **Agnosticism:** the view that we do not know, or cannot know, whether gods exist.[^6_1][^6_2]
 
-
 ## How they overlap
 
 Agnosticism is not a middle ground between theism and atheism; it is a separate axis. So someone can be both agnostic and theist, or both agnostic and atheist.[^6_2][^6_1]
@@ -234,20 +225,19 @@ Think of **theism/atheism** as answering “Do you believe in God?” and **agno
 
 <div align="center">⁂</div>
 
-[^6_1]: https://plato.stanford.edu/archives/win2024/entries/atheism-agnosticism/
+[^6_1]: <https://plato.stanford.edu/archives/win2024/entries/atheism-agnosticism/>
 
-[^6_2]: https://study.com/academy/lesson/religious-views-atheism-agnosticism-theism.html
+[^6_2]: <https://study.com/academy/lesson/religious-views-atheism-agnosticism-theism.html>
 
-[^6_3]: https://www.answers-in-reason.com/religion/atheism/conflated-and-misunderstood-terms-volume-2-theism-atheism-agnosticism/
+[^6_3]: <https://www.answers-in-reason.com/religion/atheism/conflated-and-misunderstood-terms-volume-2-theism-atheism-agnosticism/>
 
-[^6_4]: https://www.reddit.com/r/DebateAnAtheist/comments/1bv0ns6/atheism_and_theism_are_both_devoid_of_reason/
+[^6_4]: <https://www.reddit.com/r/DebateAnAtheist/comments/1bv0ns6/atheism_and_theism_are_both_devoid_of_reason/>
 
-[^6_5]: https://equality.leeds.ac.uk/wp-content/uploads/sites/64/2017/06/Briefing-note-Atheism.pdf
+[^6_5]: <https://equality.leeds.ac.uk/wp-content/uploads/sites/64/2017/06/Briefing-note-Atheism.pdf>
 
-[^6_6]: https://www.facebook.com/groups/378789228969685/posts/2761025514079366/
+[^6_6]: <https://www.facebook.com/groups/378789228969685/posts/2761025514079366/>
 
-[^6_7]: https://www.youtube.com/watch?v=8dQLRXruu9w
-
+[^6_7]: <https://www.youtube.com/watch?v=8dQLRXruu9w>
 
 ---
 
@@ -263,7 +253,6 @@ Eastern and Western Christianity share the same core faith in Jesus Christ, but 
 - **Creed and tradition:** The West added the **filioque** clause to the Nicene Creed, which Eastern churches did not accept.[^7_3]
 - **Practice:** Differences also appear in icons, communion practice, prayer posture, church architecture, and fasting customs.[^7_3]
 
-
 ## Big picture
 
 A simple way to think about it is that the East tends to emphasize mystery, healing, and transformation, while the West tends to emphasize explanation, legal categories, and doctrinal definition. That said, there is a lot of overlap, and the differences are not absolute.[^7_6][^7_1][^7_3]
@@ -273,18 +262,17 @@ Would you like a side-by-side table of Eastern Orthodox, Roman Catholic, and Pro
 
 <div align="center">⁂</div>
 
-[^7_1]: https://musalaha.org/beyond-bells-and-smells-the-gap-between-eastern-and-western-christianity/
+[^7_1]: <https://musalaha.org/beyond-bells-and-smells-the-gap-between-eastern-and-western-christianity/>
 
-[^7_2]: https://jesseorloff.com/2021/05/22/saved-for-what-salvation-through-the-eyes-of-eastern-and-western-christians/
+[^7_2]: <https://jesseorloff.com/2021/05/22/saved-for-what-salvation-through-the-eyes-of-eastern-and-western-christians/>
 
-[^7_3]: https://www.youtube.com/watch?v=9Yk0slGP-rM
+[^7_3]: <https://www.youtube.com/watch?v=9Yk0slGP-rM>
 
-[^7_4]: https://www.reddit.com/r/theology/comments/1etl9o4/eastern_vs_western_christianity_are_more/
+[^7_4]: <https://www.reddit.com/r/theology/comments/1etl9o4/eastern_vs_western_christianity_are_more/>
 
-[^7_5]: https://www.facebook.com/groups/westernriteorthodox/posts/26085487717720283/
+[^7_5]: <https://www.facebook.com/groups/westernriteorthodox/posts/26085487717720283/>
 
-[^7_6]: https://www.patheos.com/blogs/jaredingle/2024/05/eastern-and-western-theology-a-primer/
-
+[^7_6]: <https://www.patheos.com/blogs/jaredingle/2024/05/eastern-and-western-theology-a-primer/>
 
 ---
 
@@ -307,20 +295,19 @@ This is a shorthand contrast, not an absolute rule. Western Christianity also ha
 
 <div align="center">⁂</div>
 
-[^8_1]: https://draltang.wordpress.com/2024/03/11/theosis-and-transformation-the-essence-of-eastern-and-western-christian-mysticism/
+[^8_1]: <https://draltang.wordpress.com/2024/03/11/theosis-and-transformation-the-essence-of-eastern-and-western-christian-mysticism/>
 
-[^8_2]: https://soulstream.org/mystical-transformation-a-journey-of-healing-and-union-with-god/
+[^8_2]: <https://soulstream.org/mystical-transformation-a-journey-of-healing-and-union-with-god/>
 
-[^8_3]: https://absentofi.org/2009/06/orthodox-mysticism/
+[^8_3]: <https://absentofi.org/2009/06/orthodox-mysticism/>
 
-[^8_4]: https://en.wikipedia.org/wiki/Christian_mysticism
+[^8_4]: <https://en.wikipedia.org/wiki/Christian_mysticism>
 
-[^8_5]: https://glory2godforallthings.com/2023/06/12/mystical-theology-and-the-orthodox-faith/
+[^8_5]: <https://glory2godforallthings.com/2023/06/12/mystical-theology-and-the-orthodox-faith/>
 
-[^8_6]: https://www.facebook.com/groups/ask.about.the.orthodox.faith/posts/25776493015277958/
+[^8_6]: <https://www.facebook.com/groups/ask.about.the.orthodox.faith/posts/25776493015277958/>
 
-[^8_7]: https://gocstanna.org/the-mysteries/
-
+[^8_7]: <https://gocstanna.org/the-mysteries/>
 
 ---
 
@@ -347,22 +334,21 @@ The point is not to deny God, but to avoid reducing God to human language and me
 
 <div align="center">⁂</div>
 
-[^9_1]: https://www.patheos.com/blogs/jaredingle/2024/05/eastern-and-western-theology-a-primer/
+[^9_1]: <https://www.patheos.com/blogs/jaredingle/2024/05/eastern-and-western-theology-a-primer/>
 
-[^9_2]: https://en.wikipedia.org/wiki/Apophatic_theology
+[^9_2]: <https://en.wikipedia.org/wiki/Apophatic_theology>
 
-[^9_3]: https://www.reddit.com/r/Catholicism/comments/4x82jf/cataphatic_vs_apophatic_theology/
+[^9_3]: <https://www.reddit.com/r/Catholicism/comments/4x82jf/cataphatic_vs_apophatic_theology/>
 
-[^9_4]: https://www.gotquestions.org/apophatic-theology.html
+[^9_4]: <https://www.gotquestions.org/apophatic-theology.html>
 
-[^9_5]: https://livingchurch.org/covenant/on-knowing-and-not-knowing-god-reflections-on-the-apophatic/
+[^9_5]: <https://livingchurch.org/covenant/on-knowing-and-not-knowing-god-reflections-on-the-apophatic/>
 
-[^9_6]: https://www.byzcath.org/forums/ubbthreads.php/topics/285527/Re: Cataphatic and Apophatic
+[^9_6]: <https://www.byzcath.org/forums/ubbthreads.php/topics/285527/Re>: Cataphatic and Apophatic
 
-[^9_7]: https://www.facebook.com/groups/discussionofsalvation/posts/2140976559263717/
+[^9_7]: <https://www.facebook.com/groups/discussionofsalvation/posts/2140976559263717/>
 
-[^9_8]: https://www.facebook.com/jasonlsilva/posts/the-apophatic-mystic-an-apophatic-mystic-is-someone-who-approaches-the-divine-or/1196736878490454/
-
+[^9_8]: <https://www.facebook.com/jasonlsilva/posts/the-apophatic-mystic-an-apophatic-mystic-is-someone-who-approaches-the-divine-or/1196736878490454/>
 
 ---
 
@@ -387,35 +373,33 @@ Would you like a compact comparison of “mystery” in Christianity, Greek myst
 
 <div align="center">⁂</div>
 
-[^10_1]: https://en.wikipedia.org/wiki/Sacred_mysteries
+[^10_1]: <https://en.wikipedia.org/wiki/Sacred_mysteries>
 
-[^10_2]: https://ses.edu/five-reasons-christianity-did-not-copy-mystery-religions/
+[^10_2]: <https://ses.edu/five-reasons-christianity-did-not-copy-mystery-religions/>
 
-[^10_3]: https://www.wisdomlib.org/christianity/concept/divine-mysteries
+[^10_3]: <https://www.wisdomlib.org/christianity/concept/divine-mysteries>
 
-[^10_4]: https://www.reddit.com/r/AcademicBiblical/comments/dzmi6l/christianity_mystery_religion/
+[^10_4]: <https://www.reddit.com/r/AcademicBiblical/comments/dzmi6l/christianity_mystery_religion/>
 
-[^10_5]: https://www.britannica.com/topic/mystery-religion/Mystery-religions-and-Christianity
+[^10_5]: <https://www.britannica.com/topic/mystery-religion/Mystery-religions-and-Christianity>
 
-[^10_6]: https://noyam.org/?sdm_process_download=1\&download_id=7583
+[^10_6]: <https://noyam.org/?sdm_process_download=1\&download_id=7583>
 
-[^10_7]: https://www.thinkingfaith.org/articles/20121218_2.htm
+[^10_7]: <https://www.thinkingfaith.org/articles/20121218_2.htm>
 
-[^10_8]: https://kinginstitute.stanford.edu/king-papers/documents/influence-mystery-religions-christianity
+[^10_8]: <https://kinginstitute.stanford.edu/king-papers/documents/influence-mystery-religions-christianity>
 
-[^10_9]: https://www.facebook.com/groups/2970716169674739/posts/9698483246897964/
+[^10_9]: <https://www.facebook.com/groups/2970716169674739/posts/9698483246897964/>
 
-[^10_10]: https://en.wikipedia.org/wiki/Apophatic_theology
+[^10_10]: <https://en.wikipedia.org/wiki/Apophatic_theology>
 
-[^10_11]: https://livingchurch.org/covenant/on-knowing-and-not-knowing-god-reflections-on-the-apophatic/
-
+[^10_11]: <https://livingchurch.org/covenant/on-knowing-and-not-knowing-god-reflections-on-the-apophatic/>
 
 ---
 
-# Yes!
+# Yes
 
 Here’s a compact comparison:
-
 
 | Tradition | What “mystery” means | How it is known | Main emphasis |
 | :-- | :-- | :-- | :-- |
@@ -453,7 +437,6 @@ Common patterns across many traditions include:
 - Symbolic death and rebirth.
 - Return with a new role or awareness.
 
-
 ## Key difference
 
 Mysticism is mainly about **experience of the sacred**, while initiation is mainly about **entry, belonging, and transformation through rite**. A person can be mystical without a formal initiation, but many traditions use initiation to prepare, authorize, or symbolize the mystical journey.
@@ -467,26 +450,25 @@ Would you like a comparison of initiation in Christianity, Mandaeism, and ancien
 
 <div align="center">⁂</div>
 
-[^12_1]: https://www.gettherapybirmingham.com/the-mystical-roots-and-therapeutic-fruits-of-initiation-rites/
+[^12_1]: <https://www.gettherapybirmingham.com/the-mystical-roots-and-therapeutic-fruits-of-initiation-rites/>
 
-[^12_2]: https://en.wikipedia.org/wiki/Religious_initiation_rites
+[^12_2]: <https://en.wikipedia.org/wiki/Religious_initiation_rites>
 
-[^12_3]: https://perennialfollower.wordpress.com/2019/05/22/the-mystical-experience-meeting-the-face-of-god/
+[^12_3]: <https://perennialfollower.wordpress.com/2019/05/22/the-mystical-experience-meeting-the-face-of-god/>
 
-[^12_4]: https://bluelabyrinths.com/2015/03/08/the-psychology-of-initiation-rites/
+[^12_4]: <https://bluelabyrinths.com/2015/03/08/the-psychology-of-initiation-rites/>
 
-[^12_5]: https://www.wisdomlib.org/concept/initiation-ritual
+[^12_5]: <https://www.wisdomlib.org/concept/initiation-ritual>
 
-[^12_6]: https://pmc.ncbi.nlm.nih.gov/articles/PMC6707356/
+[^12_6]: <https://pmc.ncbi.nlm.nih.gov/articles/PMC6707356/>
 
-[^12_7]: https://logoilibrary.com/wp-content/uploads/2020/10/Mysticism-Initiation-and-Dream.pdf
+[^12_7]: <https://logoilibrary.com/wp-content/uploads/2020/10/Mysticism-Initiation-and-Dream.pdf>
 
-[^12_8]: https://religionatfsu.omeka.net/items/show/187
+[^12_8]: <https://religionatfsu.omeka.net/items/show/187>
 
-[^12_9]: https://1000wordphilosophy.com/2024/11/21/james-mystical-experience/
+[^12_9]: <https://1000wordphilosophy.com/2024/11/21/james-mystical-experience/>
 
-[^12_10]: https://www.youtube.com/watch?v=3MnmMrHL82c
-
+[^12_10]: <https://www.youtube.com/watch?v=3MnmMrHL82c>
 
 ---
 
@@ -515,26 +497,25 @@ If you want, I can turn this into a tighter historical timeline from Eleusis to 
 
 <div align="center">⁂</div>
 
-[^13_1]: https://en.wikipedia.org/wiki/Greco-Roman_mysteries
+[^13_1]: <https://en.wikipedia.org/wiki/Greco-Roman_mysteries>
 
-[^13_2]: https://www.sacredearthjourneys.ca/blog/exploring-the-divine-how-the-ancient-greek-mysteries-still-shape-our-world-today/
+[^13_2]: <https://www.sacredearthjourneys.ca/blog/exploring-the-divine-how-the-ancient-greek-mysteries-still-shape-our-world-today/>
 
-[^13_3]: https://eleusinianmysteries.org/comparative-analysis-of-greek-mystery-cults/
+[^13_3]: <https://eleusinianmysteries.org/comparative-analysis-of-greek-mystery-cults/>
 
-[^13_4]: https://brewminate.com/secrecy-and-initiation-rites-in-ancient-mystery-cults/
+[^13_4]: <https://brewminate.com/secrecy-and-initiation-rites-in-ancient-mystery-cults/>
 
-[^13_5]: https://en.wikipedia.org/wiki/Eleusinian_Mysteries
+[^13_5]: <https://en.wikipedia.org/wiki/Eleusinian_Mysteries>
 
-[^13_6]: https://bmcr.brynmawr.edu/2004/2004.06.35/
+[^13_6]: <https://bmcr.brynmawr.edu/2004/2004.06.35/>
 
-[^13_7]: https://www.thearchaeologist.org/blog/mystery-cults-of-the-ancient-world
+[^13_7]: <https://www.thearchaeologist.org/blog/mystery-cults-of-the-ancient-world>
 
-[^13_8]: https://humanjourney.us/ideas/axial-age-thought/religious-life-in-the-greek-axial-age-part-2-the-mystery-cults/
+[^13_8]: <https://humanjourney.us/ideas/axial-age-thought/religious-life-in-the-greek-axial-age-part-2-the-mystery-cults/>
 
-[^13_9]: https://www.youtube.com/watch?v=FHN7DnVqEZg
+[^13_9]: <https://www.youtube.com/watch?v=FHN7DnVqEZg>
 
-[^13_10]: https://www.reddit.com/r/Hellenism/comments/1blzdcj/hellenistic_mystery_cults_and_their_possible/
-
+[^13_10]: <https://www.reddit.com/r/Hellenism/comments/1blzdcj/hellenistic_mystery_cults_and_their_possible/>
 
 ---
 
@@ -561,23 +542,22 @@ The biggest difference from religious initiation is that Greek life secrecy is o
 
 <div align="center">⁂</div>
 
-[^14_1]: https://stophazing.org/2024/11/06/houses-of-horror-reflections-part-1/
+[^14_1]: <https://stophazing.org/2024/11/06/houses-of-horror-reflections-part-1/>
 
-[^14_2]: https://greekgear.com/blog/sorority-initiation-ritual-handbook/
+[^14_2]: <https://greekgear.com/blog/sorority-initiation-ritual-handbook/>
 
-[^14_3]: https://greekgodsparadise.com/2017/06/27/5-great-lessons-the-greek-gods-and-goddesses-teach/
+[^14_3]: <https://greekgodsparadise.com/2017/06/27/5-great-lessons-the-greek-gods-and-goddesses-teach/>
 
-[^14_4]: https://www.hulu.com/series/houses-of-horror-secrets-of-college-greek-life-aa3c6e29-c388-4bb4-89cc-5e632c10815e
+[^14_4]: <https://www.hulu.com/series/houses-of-horror-secrets-of-college-greek-life-aa3c6e29-c388-4bb4-89cc-5e632c10815e>
 
-[^14_5]: https://www.reddit.com/r/Catholicism/comments/12l0fjl/college_fraternity_initiation_ritual/
+[^14_5]: <https://www.reddit.com/r/Catholicism/comments/12l0fjl/college_fraternity_initiation_ritual/>
 
-[^14_6]: https://www.linkedin.com/pulse/11-lessons-from-ancient-greeks-master-change-simone-dassereto
+[^14_6]: <https://www.linkedin.com/pulse/11-lessons-from-ancient-greeks-master-change-simone-dassereto>
 
-[^14_7]: https://www.youtube.com/watch?v=SRT0BKkGAEw
+[^14_7]: <https://www.youtube.com/watch?v=SRT0BKkGAEw>
 
-[^14_8]: https://cdn.zephyrcms.com/796018ab-86f7-4a9b-8331-29fa76323a8a/-/inline/yes/ritual-book-dec-2017.pdf
+[^14_8]: <https://cdn.zephyrcms.com/796018ab-86f7-4a9b-8331-29fa76323a8a/-/inline/yes/ritual-book-dec-2017.pdf>
 
-[^14_9]: https://i-asc.org/lessons/the-basics-of-greek-mythology/
+[^14_9]: <https://i-asc.org/lessons/the-basics-of-greek-mythology/>
 
-[^14_10]: https://www.aetv.com/shows/houses-of-horror-secrets-of-college-greek-life
-
+[^14_10]: <https://www.aetv.com/shows/houses-of-horror-secrets-of-college-greek-life>

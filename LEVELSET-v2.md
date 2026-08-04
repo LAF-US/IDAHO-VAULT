@@ -68,7 +68,7 @@ IDAHO-VAULT/
   SOURCES/                — Source documents, news media, editorials, reports
   TOPICS/                 — Subject-area notes
   X LABELER/              — Unsorted/pending classification
-  .github/scripts/        — Automation (so***REMOVED***audit.py, idaho_leg_scraper.py, post_digest.py)
+  .github/scripts/        — Automation (sort_audit.py, idaho_leg_scraper.py, post_digest.py)
   .github/workflows/      — GitHub Actions (sort-audit.yml, idaho-leg-scraper.yml)
   .obsidian/              — Obsidian configuration and plugins
 ```
@@ -77,7 +77,7 @@ IDAHO-VAULT/
 
 | Asset | Type | Commit | Branch |
 | --- | --- | --- | --- |
-| `so***REMOVED***audit.py` | Python | `4754d08` | main |
+| `sort_audit.py` | Python | `4754d08` | main |
 | `sort-audit.yml` (GitHub Action) | YAML | `4754d08` | main |
 | `sort-audit-2026-03-12.md` | Markdown (output) | `f7089f9` | main |
 | `idaho_leg_scraper.py` | Python | `449d365` | feature branch |
@@ -180,7 +180,7 @@ Branch `claude/idaho-legislature-scraper-RI6Ku` has 4 commits ahead of main. It 
 | Ethics.md creation | Logan's direction on content/scope | High |
 | LEVELSET v1 — was it produced? | Logan or ADMINISTRATION conversation | Low (historical) |
 | Legislature scraper merge to main | Logan's review and approval | Medium |
-| Sort audit false positives (Malheur, Multnomah, Orange, Summit counties flagged as "Idaho counties") | Code fix in so***REMOVED***audit.py | Low |
+| Sort audit false positives (Malheur, Multnomah, Orange, Summit counties flagged as "Idaho counties") | Code fix in sort_audit.py | Low |
 | `X LABELER/` unsorted files | Manual triage by Logan | Ongoing |
 | Commit attribution to conversations | Conversation self-reporting | Low |
 
@@ -202,7 +202,7 @@ Two feature branches exist. The scraper branch is substantive and should be revi
 
 ### 4. The sort audit has false positives
 
-`sort-audit-2026-03-12.md` flags out-of-state counties (Malheur, Multnomah, Orange, Summit) as "looks like an Idaho county." The heuristic in `so***REMOVED***audit.py` needs refinement. Not urgent, but worth noting.
+`sort-audit-2026-03-12.md` flags out-of-state counties (Malheur, Multnomah, Orange, Summit) as "looks like an Idaho county." The heuristic in `sort_audit.py` needs refinement. Not urgent, but worth noting.
 
 ### 5. Vault-level .obsidian plugins
 

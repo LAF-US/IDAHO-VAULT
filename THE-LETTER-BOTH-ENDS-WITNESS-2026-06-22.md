@@ -171,4 +171,8 @@ body above without Logan's gate.*
 - **Change Note:** 2026-06-23 (Logan's direction) — corrected the *Caesar's Too Ambitious* parenthetical in "The writing end": that track is a **cut song** (not in the EP or show; Yurchuk's own caption, see `SHALL-ROME-PROVENANCE`), written from Caesar's perspective, not the conspirators' "charge." Original kept and superseded by a dated inline note; the reading otherwise stands as filed. Held without over-reading, per Logan.
 - **Scope:** the planted letter shown from both ends — Brutus reading (Shakespeare) and the faction writing (Yurchuk); the "&c." as the gap that is the instrument
 
-###### [["The world is quiet here."]]
+---
+
+```
+The world is quiet here．Esto Perpetua!
+```

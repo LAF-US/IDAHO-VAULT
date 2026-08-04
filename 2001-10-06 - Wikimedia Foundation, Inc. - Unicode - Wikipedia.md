@@ -145,28 +145,28 @@ The [CJK Radicals Supplement](https://en.wikipedia.org/wiki/CJK_Radicals_Supplem
 
 [^2]: The total number of graphic and format characters, excluding [private use characters](https://en.wikipedia.org/wiki/Unicode_private_use_area "Unicode private use area"), [control characters](https://en.wikipedia.org/wiki/Unicode_control_characters "Unicode control characters"), [noncharacters](https://en.wikipedia.org/wiki/Noncharacter "Noncharacter"), and [surrogate code points](https://en.wikipedia.org/wiki/Surrogate_code_points "Surrogate code points")).
 
-[^3]: - 2.0 added Amendments 5, 6, and 7
-- 2.1 added two characters from Amendment 18.
+[^3]: 2.0 added Amendments 5, 6, and 7
+2.1 added two characters from Amendment 18.
 
 [^4]: 3.2 added Amendment 1.
 
-[^5]: - 4.1 added Amendment 1
-- 5.0 added Amendment 2 as well as four characters from Amendment 3
-- 5.1 added Amendment 4
-- 5.2 added Amendments 5 and 6
+[^5]: 4.1 added Amendment 1
+5.0 added Amendment 2 as well as four characters from Amendment 3
+5.1 added Amendment 4
+5.2 added Amendments 5 and 6
 
 [^6]: Plus the [Indian rupee sign](https://en.wikipedia.org/wiki/Indian_rupee_sign "Indian rupee sign")
 
-[^7]: - 6.2 added the [Turkish lira sign](https://en.wikipedia.org/wiki/Turkish_lira_sign "Turkish lira sign")
-- 6.3 added five additional characters
-- 7.0 added Amendments 1 and 2 as well as the [ruble sign](https://en.wikipedia.org/wiki/Ruble_sign "Ruble sign")
+[^7]: 6.2 added the [Turkish lira sign](https://en.wikipedia.org/wiki/Turkish_lira_sign "Turkish lira sign")
+6.3 added five additional characters
+7.0 added Amendments 1 and 2 as well as the [ruble sign](https://en.wikipedia.org/wiki/Ruble_sign "Ruble sign")
 
 [^8]: Plus Amendment 1, as well as the [Lari sign](https://en.wikipedia.org/wiki/Georgian_lari "Georgian lari"), nine CJK unified ideographs, and 41 emoji;[^65]  
 9.0 added Amendment 2, as well as Adlam, Newa, Japanese TV symbols, and 74 emoji and symbols.[^66]
 
-[^9]: - Plus 56 emoji, 285 [hentaigana](https://en.wikipedia.org/wiki/Hentaigana "Hentaigana") characters, and 3 Zanabazar Square characters
-- 11.0 added 46 Mtavruli Georgian capital letters, 5 CJK unified ideographs, and 66 emoji
-- 12.0 added 62 additional characters.
+[^9]: Plus 56 emoji, 285 [hentaigana](https://en.wikipedia.org/wiki/Hentaigana "Hentaigana") characters, and 3 Zanabazar Square characters
+11.0 added 46 Mtavruli Georgian capital letters, 5 CJK unified ideographs, and 66 emoji
+12.0 added 62 additional characters.
 
 [^10]: ["Table 4-4: General Category"](https://www.unicode.org/versions/latest/core-spec/chapter-4/#G134153). *The Unicode Standard*. Unicode Consortium. September 2025.
 
@@ -196,9 +196,9 @@ The [CJK Radicals Supplement](https://en.wikipedia.org/wiki/CJK_Radicals_Supplem
 
 [^23]: Jenkins, John H. (2021-08-26). ["Unicode Standard Annex #45: U-source Ideographs"](https://www.unicode.org/reports/tr45/tr45-25.html). *Unicode Consortium*. §2.2 The Source Field. Retrieved 2022-06-23.
 
-[^24]: - ["Unicode Character Count V17.0"](https://www.unicode.org/versions/stats/). The Unicode Consortium. 2025-09-10.
-- ["Unicode 17.0 Versioned Charts Index"](https://www.unicode.org/charts/PDF/Unicode-17.0/). The Unicode Consortium. 2025-09-10.
-- ["Supported Scripts"](https://www.unicode.org/standard/supported.html). The Unicode Consortium. 2025-09-10. Retrieved 2025-09-10.
+[^24]: ["Unicode Character Count V17.0"](https://www.unicode.org/versions/stats/). The Unicode Consortium. 2025-09-10.
+["Unicode 17.0 Versioned Charts Index"](https://www.unicode.org/charts/PDF/Unicode-17.0/). The Unicode Consortium. 2025-09-10.
+["Supported Scripts"](https://www.unicode.org/standard/supported.html). The Unicode Consortium. 2025-09-10. Retrieved 2025-09-10.
 
 [^25]: ["The Unicode Standard: A Technical Introduction"](https://www.unicode.org/standard/principles.html). 2019-08-22. Retrieved 2024-09-11.
 
@@ -237,35 +237,35 @@ Unicode arose as the result of eight years of working experience with XCCS. Its 
 
 [^42]: ["Enumerated Versions of The Unicode Standard"](https://www.unicode.org/versions/enumeratedversions.html). Retrieved 2025-09-12.
 
-[^43]: - [*The Unicode Standard, Version 1.0.0*](https://www.unicode.org/versions/Unicode1.0.0). Mountain View, California: The Unicode Consortium. October 1991.
-- ["1.0.0/UnicodeData.txt (reconstructed)"](https://www.unicode.org/Public/reconstructed/1.0.0/UnicodeData.txt). 2004. Retrieved 2010-03-16.
+[^43]: [*The Unicode Standard, Version 1.0.0*](https://www.unicode.org/versions/Unicode1.0.0). Mountain View, California: The Unicode Consortium. October 1991.
+["1.0.0/UnicodeData.txt (reconstructed)"](https://www.unicode.org/Public/reconstructed/1.0.0/UnicodeData.txt). 2004. Retrieved 2010-03-16.
 
-[^44]: - [*The Unicode Standard, Version 1.0.1*](https://www.unicode.org/versions/Unicode1.0.1). Mountain View, California: The Unicode Consortium. June 1992.
-- ["Unicode Data 1.0.1"](https://www.unicode.org/Public/reconstructed/1.0.1/UnicodeData.txt). Retrieved 2010-03-16.
+[^44]: [*The Unicode Standard, Version 1.0.1*](https://www.unicode.org/versions/Unicode1.0.1). Mountain View, California: The Unicode Consortium. June 1992.
+["Unicode Data 1.0.1"](https://www.unicode.org/Public/reconstructed/1.0.1/UnicodeData.txt). Retrieved 2010-03-16.
 
-[^45]: - [*The Unicode Standard, Version 1.1.5*](https://www.unicode.org/versions/Unicode1.1.5). Mountain View, California: The Unicode Consortium. July 1995.
-- ["Unicode Data 1995"](https://www.unicode.org/Public/1.1-Update/UnicodeData-1.1.5.txt). Retrieved 2010-03-16.
+[^45]: [*The Unicode Standard, Version 1.1.5*](https://www.unicode.org/versions/Unicode1.1.5). Mountain View, California: The Unicode Consortium. July 1995.
+["Unicode Data 1995"](https://www.unicode.org/Public/1.1-Update/UnicodeData-1.1.5.txt). Retrieved 2010-03-16.
 
-[^46]: - [*The Unicode Standard, Version 2.0.0*](https://www.unicode.org/versions/Unicode2.0.0). Mountain View, California: The Unicode Consortium. July 1996.
-- ["Unicode Data-2.0.14"](https://www.unicode.org/Public/2.0-Update/UnicodeData-2.0.14.txt). Retrieved 2010-03-16.
+[^46]: [*The Unicode Standard, Version 2.0.0*](https://www.unicode.org/versions/Unicode2.0.0). Mountain View, California: The Unicode Consortium. July 1996.
+["Unicode Data-2.0.14"](https://www.unicode.org/Public/2.0-Update/UnicodeData-2.0.14.txt). Retrieved 2010-03-16.
 
-[^47]: - [*The Unicode Standard, Version 2.1.2*](https://www.unicode.org/versions/Unicode2.1.2). Mountain View, California: The Unicode Consortium. May 1998.
-- ["Unicode Data-2.1.2"](https://www.unicode.org/Public/2.1-Update/UnicodeData-2.1.2.txt). Retrieved 2010-03-16.
+[^47]: [*The Unicode Standard, Version 2.1.2*](https://www.unicode.org/versions/Unicode2.1.2). Mountain View, California: The Unicode Consortium. May 1998.
+["Unicode Data-2.1.2"](https://www.unicode.org/Public/2.1-Update/UnicodeData-2.1.2.txt). Retrieved 2010-03-16.
 
-[^48]: - [*The Unicode Standard, Version 3.0.0*](https://www.unicode.org/versions/Unicode3.0.0). Mountain View, California: The Unicode Consortium. September 1999.
-- ["Unicode Data-3.0.0"](https://www.unicode.org/Public/3.0-Update/UnicodeData-3.0.0.txt). Retrieved 2023-10-02.
+[^48]: [*The Unicode Standard, Version 3.0.0*](https://www.unicode.org/versions/Unicode3.0.0). Mountain View, California: The Unicode Consortium. September 1999.
+["Unicode Data-3.0.0"](https://www.unicode.org/Public/3.0-Update/UnicodeData-3.0.0.txt). Retrieved 2023-10-02.
 
-[^49]: - [*The Unicode Standard, Version 3.1.0*](https://www.unicode.org/versions/Unicode3.1.0). Mountain View, California: The Unicode Consortium. March 2001.
-- ["Unicode Data-3.1.0"](https://www.unicode.org/Public/3.1-Update/UnicodeData-3.1.0.txt). Retrieved 2023-10-02.
+[^49]: [*The Unicode Standard, Version 3.1.0*](https://www.unicode.org/versions/Unicode3.1.0). Mountain View, California: The Unicode Consortium. March 2001.
+["Unicode Data-3.1.0"](https://www.unicode.org/Public/3.1-Update/UnicodeData-3.1.0.txt). Retrieved 2023-10-02.
 
-[^50]: - [*The Unicode Standard, Version 3.2.0*](https://www.unicode.org/versions/Unicode3.2.0). Mountain View, California: The Unicode Consortium. March 2002.
-- ["Unicode Data-3.2.0"](https://www.unicode.org/Public/3.2-Update/UnicodeData-3.2.0.txt). Retrieved 2023-10-02.
+[^50]: [*The Unicode Standard, Version 3.2.0*](https://www.unicode.org/versions/Unicode3.2.0). Mountain View, California: The Unicode Consortium. March 2002.
+["Unicode Data-3.2.0"](https://www.unicode.org/Public/3.2-Update/UnicodeData-3.2.0.txt). Retrieved 2023-10-02.
 
-[^51]: - [*The Unicode Standard, Version 4.0.0*](https://www.unicode.org/versions/Unicode4.0.0). Mountain View, California: The Unicode Consortium. April 2003. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [0-321-18578-1](https://en.wikipedia.org/wiki/Special:BookSources/0-321-18578-1 "Special:BookSources/0-321-18578-1").
-- ["Unicode Data-4.0.0"](https://www.unicode.org/Public/4.0-Update/UnicodeData-4.0.0.txt). Retrieved 2023-10-02.
+[^51]: [*The Unicode Standard, Version 4.0.0*](https://www.unicode.org/versions/Unicode4.0.0). Mountain View, California: The Unicode Consortium. April 2003. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [0-321-18578-1](https://en.wikipedia.org/wiki/Special:BookSources/0-321-18578-1 "Special:BookSources/0-321-18578-1").
+["Unicode Data-4.0.0"](https://www.unicode.org/Public/4.0-Update/UnicodeData-4.0.0.txt). Retrieved 2023-10-02.
 
-[^52]: - [*The Unicode Standard, Version 4.1.0*](https://www.unicode.org/versions/Unicode4.1.0). Mountain View, California: The Unicode Consortium. March 2004. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [0-321-18578-1](https://en.wikipedia.org/wiki/Special:BookSources/0-321-18578-1 "Special:BookSources/0-321-18578-1").
-- ["Unicode Data-4.1.0"](https://www.unicode.org/Public/4.1.0/ucd/UnicodeData.txt). Retrieved 2010-03-16.
+[^52]: [*The Unicode Standard, Version 4.1.0*](https://www.unicode.org/versions/Unicode4.1.0). Mountain View, California: The Unicode Consortium. March 2004. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [0-321-18578-1](https://en.wikipedia.org/wiki/Special:BookSources/0-321-18578-1 "Special:BookSources/0-321-18578-1").
+["Unicode Data-4.1.0"](https://www.unicode.org/Public/4.1.0/ucd/UnicodeData.txt). Retrieved 2010-03-16.
 
 [^53]: ["Named Sequences-4.1.0"](https://www.unicode.org/Public/4.1.0/ucd/NamedSequences.txt). *Unicode*. 2005. Retrieved 2010-03-16.
 
@@ -273,38 +273,38 @@ Unicode arose as the result of eight years of working experience with XCCS. Its 
 
 [^55]: ["Unicode Data 5.0.0"](https://www.unicode.org/Public/5.0.0/ucd/UnicodeData.txt). Retrieved 2010-03-17.
 
-[^56]: - [*The Unicode Standard, Version 5.1.0*](https://www.unicode.org/versions/Unicode5.1.0). Mountain View, California: The Unicode Consortium. 2008-04-04. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [0-321-48091-0](https://en.wikipedia.org/wiki/Special:BookSources/0-321-48091-0 "Special:BookSources/0-321-48091-0").
-- ["Unicode Data 5.1.0"](https://www.unicode.org/Public/5.1.0/ucd/UnicodeData.txt). Retrieved 2010-03-17.
+[^56]: [*The Unicode Standard, Version 5.1.0*](https://www.unicode.org/versions/Unicode5.1.0). Mountain View, California: The Unicode Consortium. 2008-04-04. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [0-321-48091-0](https://en.wikipedia.org/wiki/Special:BookSources/0-321-48091-0 "Special:BookSources/0-321-48091-0").
+["Unicode Data 5.1.0"](https://www.unicode.org/Public/5.1.0/ucd/UnicodeData.txt). Retrieved 2010-03-17.
 
-[^57]: - [*The Unicode Standard, Version 5.2.0*](https://www.unicode.org/versions/Unicode5.2.0). Mountain View, California: The Unicode Consortium. 2009-10-01. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [978-1-936213-00-9](https://en.wikipedia.org/wiki/Special:BookSources/978-1-936213-00-9 "Special:BookSources/978-1-936213-00-9").
-- ["Unicode Data 5.2.0"](https://www.unicode.org/Public/5.2.0/ucd/UnicodeData.txt). Retrieved 2010-03-17.
+[^57]: [*The Unicode Standard, Version 5.2.0*](https://www.unicode.org/versions/Unicode5.2.0). Mountain View, California: The Unicode Consortium. 2009-10-01. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [978-1-936213-00-9](https://en.wikipedia.org/wiki/Special:BookSources/978-1-936213-00-9 "Special:BookSources/978-1-936213-00-9").
+["Unicode Data 5.2.0"](https://www.unicode.org/Public/5.2.0/ucd/UnicodeData.txt). Retrieved 2010-03-17.
 
-[^58]: - [*The Unicode Standard, Version 6.1.0*](https://www.unicode.org/versions/Unicode6.1.0). Mountain View, California: The Unicode Consortium. 2012-01-31. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [978-1-936213-02-3](https://en.wikipedia.org/wiki/Special:BookSources/978-1-936213-02-3 "Special:BookSources/978-1-936213-02-3").
-- ["Unicode Data 6.0.0"](https://www.unicode.org/Public/6.0.0/ucd/UnicodeData.txt). Retrieved 2010-10-11.
+[^58]: [*The Unicode Standard, Version 6.1.0*](https://www.unicode.org/versions/Unicode6.1.0). Mountain View, California: The Unicode Consortium. 2012-01-31. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [978-1-936213-02-3](https://en.wikipedia.org/wiki/Special:BookSources/978-1-936213-02-3 "Special:BookSources/978-1-936213-02-3").
+["Unicode Data 6.0.0"](https://www.unicode.org/Public/6.0.0/ucd/UnicodeData.txt). Retrieved 2010-10-11.
 
 [^59]: ["Unicode 6.0 Emoji List"](https://emojipedia.org/unicode-6.0/). *emojipedia.org*. Retrieved 2022-09-21.
 
-[^60]: - [*The Unicode Standard, Version 6.1.0*](https://www.unicode.org/versions/Unicode6.1.0). Mountain View, California: The Unicode Consortium. 2012-01-31. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [978-1-936213-02-3](https://en.wikipedia.org/wiki/Special:BookSources/978-1-936213-02-3 "Special:BookSources/978-1-936213-02-3").
-- ["Unicode Data 6.1.0"](https://www.unicode.org/Public/6.1.0/ucd/UnicodeData.txt). Retrieved 2012-01-31.
+[^60]: [*The Unicode Standard, Version 6.1.0*](https://www.unicode.org/versions/Unicode6.1.0). Mountain View, California: The Unicode Consortium. 2012-01-31. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [978-1-936213-02-3](https://en.wikipedia.org/wiki/Special:BookSources/978-1-936213-02-3 "Special:BookSources/978-1-936213-02-3").
+["Unicode Data 6.1.0"](https://www.unicode.org/Public/6.1.0/ucd/UnicodeData.txt). Retrieved 2012-01-31.
 
-[^61]: - [*The Unicode Standard, Version 6.2.0*](https://www.unicode.org/versions/Unicode6.2.0). Mountain View, California: The Unicode Consortium. 2012-09-26. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [978-1-936213-07-8](https://en.wikipedia.org/wiki/Special:BookSources/978-1-936213-07-8 "Special:BookSources/978-1-936213-07-8").
-- ["Unicode Data 6.2.0"](https://www.unicode.org/Public/6.2.0/ucd/UnicodeData.txt). Retrieved 2012-09-26.
+[^61]: [*The Unicode Standard, Version 6.2.0*](https://www.unicode.org/versions/Unicode6.2.0). Mountain View, California: The Unicode Consortium. 2012-09-26. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [978-1-936213-07-8](https://en.wikipedia.org/wiki/Special:BookSources/978-1-936213-07-8 "Special:BookSources/978-1-936213-07-8").
+["Unicode Data 6.2.0"](https://www.unicode.org/Public/6.2.0/ucd/UnicodeData.txt). Retrieved 2012-09-26.
 
-[^62]: - [*The Unicode Standard, Version 6.3.0*](https://www.unicode.org/versions/Unicode6.3.0). Mountain View, California: The Unicode Consortium. 2013-09-30. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [978-1-936213-08-5](https://en.wikipedia.org/wiki/Special:BookSources/978-1-936213-08-5 "Special:BookSources/978-1-936213-08-5").
-- ["Unicode Data 6.3.0"](https://www.unicode.org/Public/6.3.0/ucd/UnicodeData.txt). Retrieved 2013-09-30.
+[^62]: [*The Unicode Standard, Version 6.3.0*](https://www.unicode.org/versions/Unicode6.3.0). Mountain View, California: The Unicode Consortium. 2013-09-30. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [978-1-936213-08-5](https://en.wikipedia.org/wiki/Special:BookSources/978-1-936213-08-5 "Special:BookSources/978-1-936213-08-5").
+["Unicode Data 6.3.0"](https://www.unicode.org/Public/6.3.0/ucd/UnicodeData.txt). Retrieved 2013-09-30.
 
-[^63]: - [*The Unicode Standard, Version 7.0.0*](https://www.unicode.org/versions/Unicode7.0.0). Mountain View, California: The Unicode Consortium. 2014-06-16. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [978-1-936213-09-2](https://en.wikipedia.org/wiki/Special:BookSources/978-1-936213-09-2 "Special:BookSources/978-1-936213-09-2").
-- ["Unicode Data 7.0.0"](https://www.unicode.org/Public/7.0.0/ucd/UnicodeData.txt). Retrieved 2014-06-15.
+[^63]: [*The Unicode Standard, Version 7.0.0*](https://www.unicode.org/versions/Unicode7.0.0). Mountain View, California: The Unicode Consortium. 2014-06-16. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [978-1-936213-09-2](https://en.wikipedia.org/wiki/Special:BookSources/978-1-936213-09-2 "Special:BookSources/978-1-936213-09-2").
+["Unicode Data 7.0.0"](https://www.unicode.org/Public/7.0.0/ucd/UnicodeData.txt). Retrieved 2014-06-15.
 
-[^64]: - [*The Unicode Standard, Version 8.0.0*](https://www.unicode.org/versions/Unicode8.0.0). Mountain View, California: The Unicode Consortium. 2015-06-17. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [978-1-936213-10-8](https://en.wikipedia.org/wiki/Special:BookSources/978-1-936213-10-8 "Special:BookSources/978-1-936213-10-8").
-- ["Unicode Data 8.0.0"](https://www.unicode.org/Public/8.0.0/ucd/UnicodeData.txt). Retrieved 2015-06-17.
+[^64]: [*The Unicode Standard, Version 8.0.0*](https://www.unicode.org/versions/Unicode8.0.0). Mountain View, California: The Unicode Consortium. 2015-06-17. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [978-1-936213-10-8](https://en.wikipedia.org/wiki/Special:BookSources/978-1-936213-10-8 "Special:BookSources/978-1-936213-10-8").
+["Unicode Data 8.0.0"](https://www.unicode.org/Public/8.0.0/ucd/UnicodeData.txt). Retrieved 2015-06-17.
 
 [^65]: [*The Unicode Standard, Version 8.0.0*](https://www.unicode.org/versions/Unicode8.0.0). Mountain View, California: The Unicode Consortium. 2015-06-17. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [978-1-936213-10-8](https://en.wikipedia.org/wiki/Special:BookSources/978-1-936213-10-8 "Special:BookSources/978-1-936213-10-8").
 
 [^66]: [*The Unicode Standard, Version 9.0.0*](https://www.unicode.org/versions/Unicode9.0.0). Mountain View, California: The Unicode Consortium. 2016-06-21. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [978-1-936213-13-9](https://en.wikipedia.org/wiki/Special:BookSources/978-1-936213-13-9 "Special:BookSources/978-1-936213-13-9").
 
-[^67]: - [*The Unicode Standard, Version 9.0.0*](https://www.unicode.org/versions/Unicode9.0.0). Mountain View, California: The Unicode Consortium. 2016-06-21. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [978-1-936213-13-9](https://en.wikipedia.org/wiki/Special:BookSources/978-1-936213-13-9 "Special:BookSources/978-1-936213-13-9").
-- ["Unicode Data 9.0.0"](https://www.unicode.org/Public/9.0.0/ucd/UnicodeData.txt). Retrieved 2016-06-21.
+[^67]: [*The Unicode Standard, Version 9.0.0*](https://www.unicode.org/versions/Unicode9.0.0). Mountain View, California: The Unicode Consortium. 2016-06-21. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [978-1-936213-13-9](https://en.wikipedia.org/wiki/Special:BookSources/978-1-936213-13-9 "Special:BookSources/978-1-936213-13-9").
+["Unicode Data 9.0.0"](https://www.unicode.org/Public/9.0.0/ucd/UnicodeData.txt). Retrieved 2016-06-21.
 
 [^68]: Lobao, Martim (2016-06-07). ["These Are The Two Emoji That Weren't Approved For Unicode 9 But Which Google Added To Android Anyway"](https://www.androidpolice.com/2016/06/07/two-emoji-werent-approved-unicode-9-google-added-android-anyway/). *Android Police*. Retrieved 2016-09-04.
 
@@ -316,17 +316,17 @@ Unicode arose as the result of eight years of working experience with XCCS. Its 
 
 [^72]: ["Unicode Version 12.1 released in support of the Reiwa Era"](https://blog.unicode.org/2019/05/unicode-12-1-en.html). *The Unicode Blog*. Retrieved 2019-05-07.
 
-[^73]: - [*The Unicode Standard, Version 13.0.0*](https://www.unicode.org/versions/Unicode13.0.0). Mountain View, California: The Unicode Consortium. 2020-03-10. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [978-1-936213-26-9](https://en.wikipedia.org/wiki/Special:BookSources/978-1-936213-26-9 "Special:BookSources/978-1-936213-26-9").
-- ["Announcing The Unicode Standard, Version 13.0"](https://blog.unicode.org/2020/03/announcing-unicode-standard-version-130.html). *The Unicode Blog*. Retrieved 2020-03-11.
+[^73]: [*The Unicode Standard, Version 13.0.0*](https://www.unicode.org/versions/Unicode13.0.0). Mountain View, California: The Unicode Consortium. 2020-03-10. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [978-1-936213-26-9](https://en.wikipedia.org/wiki/Special:BookSources/978-1-936213-26-9 "Special:BookSources/978-1-936213-26-9").
+["Announcing The Unicode Standard, Version 13.0"](https://blog.unicode.org/2020/03/announcing-unicode-standard-version-130.html). *The Unicode Blog*. Retrieved 2020-03-11.
 
 [^74]: ["The Unicode Standard, Version 13.0– Core Specification Appendix C"](https://www.unicode.org/versions/Unicode13.0.0/appC.pdf) (PDF). Unicode Consortium. Retrieved 2020-03-11.
 
-[^75]: - [*The Unicode Standard, Version 14.0.0*](https://www.unicode.org/versions/Unicode14.0.0). Mountain View, California: The Unicode Consortium. 2021-09-14. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [978-1-936213-29-0](https://en.wikipedia.org/wiki/Special:BookSources/978-1-936213-29-0 "Special:BookSources/978-1-936213-29-0").
-- ["Announcing The Unicode Standard, Version 14.0"](https://blog.unicode.org/2021/09/announcing-unicode-standard-version-140.html).
+[^75]: [*The Unicode Standard, Version 14.0.0*](https://www.unicode.org/versions/Unicode14.0.0). Mountain View, California: The Unicode Consortium. 2021-09-14. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [978-1-936213-29-0](https://en.wikipedia.org/wiki/Special:BookSources/978-1-936213-29-0 "Special:BookSources/978-1-936213-29-0").
+["Announcing The Unicode Standard, Version 14.0"](https://blog.unicode.org/2021/09/announcing-unicode-standard-version-140.html).
 
 [^76]: [*The Unicode Standard, Version 15.0.0*](https://www.unicode.org/versions/Unicode15.0.0). Mountain View, California: The Unicode Consortium. 2022-09-13. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [978-1-936213-32-0](https://en.wikipedia.org/wiki/Special:BookSources/978-1-936213-32-0 "Special:BookSources/978-1-936213-32-0").
 
-[^77]: - [*The Unicode Standard, Version 15.1.0*](https://www.unicode.org/versions/Unicode15.1.0). South San Francisco, California: The Unicode Consortium. 2023-09-12. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [978-1-936213-33-7](https://en.wikipedia.org/wiki/Special:BookSources/978-1-936213-33-7 "Special:BookSources/978-1-936213-33-7").
+[^77]: [*The Unicode Standard, Version 15.1.0*](https://www.unicode.org/versions/Unicode15.1.0). South San Francisco, California: The Unicode Consortium. 2023-09-12. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [978-1-936213-33-7](https://en.wikipedia.org/wiki/Special:BookSources/978-1-936213-33-7 "Special:BookSources/978-1-936213-33-7").
 
 [^78]: [*The Unicode Standard, Version 16.0.0*](https://www.unicode.org/versions/Unicode16.0.0). South San Francisco, California: The Unicode Consortium. 2024-09-10. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [978-1-936213-34-4](https://en.wikipedia.org/wiki/Special:BookSources/978-1-936213-34-4 "Special:BookSources/978-1-936213-34-4").
 

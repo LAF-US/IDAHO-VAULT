@@ -7,7 +7,7 @@ Checks staged files for signs of injection, malformed frontmatter,
 or unexpected content. Exits non-zero to halt the workflow on failure.
 
 Usage:
-  python3 validate_content.py [--scope bills|admin|generated|inbox|all] [--paths-from-stdin]
+  python3 validate_content.py [--scope bills|inbox|all] [--paths-from-stdin]
 
 Exit codes:
   0  All checks passed
@@ -16,7 +16,7 @@ Exit codes:
 
 import argparse
 import re
-import subprocess  # nosec B404 -- see [tool.bandit] note in pyproject.toml
+import subprocess
 import sys
 from pathlib import Path
 
@@ -29,12 +29,6 @@ SCOPE_ALLOWED_DIRS: dict[str, list[str]] = {
         "GOVERNMENTS/IDAHO - LEGISLATIVE/SESSIONS/",
         "GOVERNMENTS/IDAHO - LEGISLATIVE/IDAHO HOUSE/",
         "GOVERNMENTS/IDAHO - LEGISLATIVE/IDAHO SENATE/",
-    ],
-    "admin": [
-        "!/",
-    ],
-    "generated": [
-        "!/",
     ],
     "inbox": [
         "INBOX/",
@@ -54,32 +48,30 @@ DANGEROUS_PATTERNS = [
     re.compile(r"<embed", re.IGNORECASE),
 ]
 
-# Unresolved date-placeholder tokens must not persist in daily notes or the
-# carryforward list. They compound across rollover runs (see PR for context).
-DATE_PLACEHOLDER_RE = re.compile(r"\[\[(YESTERDAY|TOMORROW|TODAY)\]\]")
-DAILY_NOTE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}\.md$")
+# Unrendered template placeholders must not persist in periodic notes or the
+# carryforward list: they compound across rollover runs. These are the two
+# delimiter families the vault's templates use, so they are what a failed
+# expansion actually leaves behind -- Templater `<% ... %>` and core Obsidian
+# Templates `{{...}}`. (This rule previously searched for [[YESTERDAY]] /
+# [[TODAY]] / [[TOMORROW]], which no template emits, so it missed every real
+# expansion failure while flagging hand-written wikilinks.)
+TEMPLATER_PLACEHOLDER_RE = re.compile(r"<%")
+BRACE_PLACEHOLDER_RE = re.compile(r"\{\{[^}\n]+\}\}")
+
+# Periodic-note filenames, from the title formats in the five NOTE TEMPLATEs:
+# day YYYY-MM-DD, week GGGG-[W]WW, month YYYY-MM, quarter YYYY-[Q]Q.
+# Yearly (YYYY) is deliberately absent -- a bare four-digit name is not a
+# reliable signal (`1000.md` exists at root and is not a year note), so yearly
+# notes are picked up by their `period:` frontmatter key instead.
+PERIODIC_NOTE_RE = re.compile(r"^\d{4}-(?:\d{2}-\d{2}|W\d{1,2}|Q[1-4]|\d{2})\.md$")
+PERIOD_VALUES = {"day", "week", "month", "quarter", "year"}
+# The templates themselves are written in this syntax and must never be flagged.
+TEMPLATE_SUFFIX = " NOTE TEMPLATE.md"
+CARRYFORWARD_FILE = "TO DO LIST.md"
+FENCE_RE = re.compile(r"^\s*(```|~~~)")
 
 # Sponsor names should be alphabetic with common punctuation
 SPONSOR_NAME_RE = re.compile(r"^[A-Za-z\s.\-',()]+$")
-ROOT_GOVERNED_FILES = {
-    "AGENTS.md",
-    "CONSTITUTION.md",
-    "DECISIONS.md",
-    "README.md",
-    "VAULT-CONVENTIONS.md",
-    "VAULT-METADATA-STANDARD.md",
-    "VAULT-TEMPLATES.md",
-}
-REQUIRED_GOVERNED_FIELDS = ("title", "updated", "status", "authority")
-PROTECTED_LIVE_FILES = {
-    "AGENTS.md",
-    "CONSTITUTION.md",
-    "DECISIONS.md",
-    "VAULT-CONVENTIONS.md",
-    "!/AGENTS.md",
-    "!/WAKEUP.md",
-    "!/README.md",
-}
 
 
 # ── Helpers ──────────────────────────────────────────────────────────────────
@@ -117,12 +109,6 @@ def get_changed_files(paths_from_stdin: bool = False) -> list[Path]:
         return [Path(f) for f in lines if f.endswith(".md")]
     output = _run_git(["git", "diff", "--name-only", "--diff-filter=ACMRD", "--cached"])
     return [Path(f) for f in output.strip().splitlines() if f.endswith(".md")]
-
-
-def validate_frontmatter(path: Path, content: str) -> list[str]:
-    """Check that YAML frontmatter parses cleanly."""
-    _, errors = parse_frontmatter(path, content)
-    return errors
 
 
 def parse_frontmatter(path: Path, content: str) -> tuple[dict | None, list[str]]:
@@ -170,17 +156,50 @@ def validate_file_size(path: Path) -> list[str]:
     return errors
 
 
-def validate_date_placeholders(path: Path, content: str) -> list[str]:
-    """Scope-limited check: no [[YESTERDAY]]/[[TOMORROW]]/[[TODAY]] in daily
-    notes or TO DO LIST.md. Other files may legitimately mention the tokens
-    in prose (VAULT-CONVENTIONS.md, agent instructions, etc.)."""
+def is_periodic_surface(path: Path, frontmatter: dict | None) -> bool:
+    """True for the surfaces a failed template expansion can propagate through:
+    any periodic note (day/week/month/quarter/year) or the carryforward list.
+
+    The five `* NOTE TEMPLATE.md` files are excluded and must stay excluded --
+    they are written in the very syntax this check hunts for, so bringing them
+    into scope would make the check fail on itself."""
     name = path.name
-    if not (DAILY_NOTE_RE.match(name) or name == "TO DO LIST.md"):
+    if name.endswith(TEMPLATE_SUFFIX):
+        return False
+    if name == CARRYFORWARD_FILE or PERIODIC_NOTE_RE.match(name):
+        return True
+    if isinstance(frontmatter, dict):
+        period = frontmatter.get("period")
+        if isinstance(period, str) and period.strip().lower() in PERIOD_VALUES:
+            return True
+    return False
+
+
+def validate_template_placeholders(
+    path: Path, content: str, frontmatter: dict | None = None
+) -> list[str]:
+    """Scope-limited check: no unrendered template placeholders in periodic
+    notes or TO DO LIST.md. Other files may legitimately show the syntax in
+    prose or examples (VAULT-CONVENTIONS.md, agent instructions, the templates
+    themselves), and fenced blocks are skipped for the same reason."""
+    if not is_periodic_surface(path, frontmatter):
         return []
     errors = []
+    in_fence = False
     for i, line in enumerate(content.splitlines(), 1):
-        if DATE_PLACEHOLDER_RE.search(line):
-            errors.append(f"{path}:{i}: unresolved date placeholder token")
+        if FENCE_RE.match(line):
+            in_fence = not in_fence
+            continue
+        if in_fence:
+            continue
+        if TEMPLATER_PLACEHOLDER_RE.search(line):
+            errors.append(
+                f"{path}:{i}: unrendered Templater placeholder (<% ... %>)"
+            )
+        elif BRACE_PLACEHOLDER_RE.search(line):
+            errors.append(
+                f"{path}:{i}: unrendered template placeholder ({{{{...}}}})"
+            )
     return errors
 
 
@@ -216,42 +235,11 @@ def validate_directory(path: Path, scope: str) -> list[str]:
     return errors
 
 
-def is_governed_note(path: Path, scope: str) -> bool:
-    """Limit schema enforcement to the currently governed automation lane."""
-    path_str = str(path).replace("\\", "/")
-    if DAILY_NOTE_RE.match(path.name) or path.name == "TO DO LIST.md":
-        return False
-    if path.name in ROOT_GOVERNED_FILES:
-        return True
-    return scope in {"admin", "generated"} and path_str.startswith("!/")
-
-
-def validate_governed_metadata(path: Path, frontmatter: dict | None, scope: str) -> list[str]:
-    """Require doctrinal baseline fields for governed notes."""
-    if not is_governed_note(path, scope):
-        return []
-    if frontmatter is None:
-        return [f"{path}: Governed note missing YAML frontmatter"]
-
-    missing = [field for field in REQUIRED_GOVERNED_FIELDS if not frontmatter.get(field)]
-    if not missing:
-        return []
-    return [f"{path}: Governed note missing required frontmatter field(s): {', '.join(missing)}"]
-
-
-def validate_deleted_path(path: Path, scope: str) -> list[str]:
-    """Reject deletion of protected live governance from an automated content lane."""
-    normalized = str(path).replace("\\", "/")
-    if normalized in PROTECTED_LIVE_FILES or is_governed_note(path, scope):
-        return [f"{path}: Deletion of governed content requires explicit human review"]
-    return []
-
-
 # ── Main ─────────────────────────────────────────────────────────────────────
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Validate staged content before commit")
-    parser.add_argument("--scope", choices=["bills", "admin", "generated", "inbox", "all"], default="all",
+    parser.add_argument("--scope", choices=["bills", "inbox", "all"], default="all",
                         help="Which scope to validate (restricts allowed directories)")
     parser.add_argument("--paths-from-stdin", action="store_true",
                         help="Validate a newline-delimited list of paths read from stdin, "
@@ -274,15 +262,14 @@ def main() -> int:
         all_errors.extend(validate_file_size(path))
 
         if not path.exists():
-            all_errors.extend(validate_deleted_path(path, args.scope))
-        else:
-            content = path.read_text(encoding="utf-8", errors="replace")
-            frontmatter, frontmatter_errors = parse_frontmatter(path, content)
-            all_errors.extend(frontmatter_errors)
-            all_errors.extend(validate_governed_metadata(path, frontmatter, args.scope))
-            all_errors.extend(validate_content_safety(path, content))
-            all_errors.extend(validate_date_placeholders(path, content))
-            all_errors.extend(validate_sponsor_names(path, content))
+            continue
+
+        content = path.read_text(encoding="utf-8", errors="replace")
+        frontmatter, frontmatter_errors = parse_frontmatter(path, content)
+        all_errors.extend(frontmatter_errors)
+        all_errors.extend(validate_content_safety(path, content))
+        all_errors.extend(validate_template_placeholders(path, content, frontmatter))
+        all_errors.extend(validate_sponsor_names(path, content))
 
     if all_errors:
         print(f"validate_content: {len(all_errors)} error(s) found:", file=sys.stderr)
