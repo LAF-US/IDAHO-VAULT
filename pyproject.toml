@@ -3,6 +3,12 @@ name = "idaho-vault"
 version = "0.1.0"
 description = "The world is quiet here．Esto Perpetua!"
 authors = [{ name = "Logan Finney" }, { name = "Unified Swarm" }]
+# Without this, uv resolves against its own default of >=3.13 — which silently
+# drops every 3.10 resolution from uv.lock while smoke-tests.yml still runs the
+# suite on 3.10. Measured: removing it collapsed pygit2 from two version-split
+# entries (1.18.2 for 3.10, 1.19.3 for 3.11+) to one, and left the lock claiming
+# 3.13-only for a project CI exercises on 3.10.
+requires-python = ">=3.10,<3.14"
 dependencies = [
     "packaging",
     # Each entry names a file that imports it and the run that proved it. All three
@@ -20,6 +26,28 @@ dependencies = [
     # tests/test_sync_obsidian_plugin_registry.py:17
     "pygit2>=1.18.2,<2",
 ]
+# `bootstrap_contract.py:_check_pyproject` greps this file for three literal
+# tokens and fails the Five Wizards threshold contract without them:
+#   'name = "idaho-vault"', 'type = "crew"', 'idaho_vault = "idaho_vault.main:run"'
+# The first is above; the other two are these sections. Not decoration — a
+# named consumer reads them as text.
+[project.scripts]
+idaho_vault = "idaho_vault.main:run"
+
+[tool.crewai]
+type = "crew"
+
+[tool.ruff]
+# uv.lock is TOML, not Python. Ruff's own *.py discovery already skips it for
+# `ruff check .` — this exists because some callers pass the path explicitly
+# (verified: Codacy's Ruff integration, PR #891 run 91770995487, 152 bogus
+# "invalid-syntax" alerts), and Ruff ignores exclude patterns for explicitly
+# passed paths unless force-exclude is set. Restored here and not merely on
+# precedent: this branch regenerates uv.lock, which is the condition that
+# produced the #891 alert storm.
+extend-exclude = ["uv.lock"]
+force-exclude = true
+
 # Just like a .gitignore file, don't fiddle with this willy-nilly.
 
 [dependency-groups]
