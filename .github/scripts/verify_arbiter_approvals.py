@@ -5,7 +5,7 @@ import argparse
 import json
 import sys
 
-from gh_cli import run as _run
+import gh_cli
 
 # This script is scoped to a single, fixed repository. --repo is compared
 # against this literal constant (rather than validated with a regex) so
@@ -19,13 +19,7 @@ ARBITER_LABEL_PREFIX = "arbiter/"
 
 
 def _graphql(query, **variables):
-    cmd = ["gh", "api", "graphql", "-f", f"query={query}"]
-    for key, value in variables.items():
-        if isinstance(value, int):
-            cmd.extend(["-F", f"{key}={value}"])
-        else:
-            cmd.extend(["-f", f"{key}={value}"])
-    result = _run(cmd)
+    result = gh_cli.graphql(query, **variables)
     payload = json.loads(result.stdout or "{}")
     errors = payload.get("errors")
     if errors:
@@ -58,7 +52,7 @@ def _get_pr_reviews(owner, repo, pr_number):
 
 
 def _get_arbiter_labels(pr_number):
-    result = _run(["gh", "pr", "view", str(pr_number), "--json", "labels"], check=False)
+    result = gh_cli.pr_view(pr_number, json_fields="labels", check=False)
     try:
         pr_data = json.loads(result.stdout or "{}")
         labels = [label.get("name", "") for label in pr_data.get("labels", [])]
@@ -96,7 +90,7 @@ def _get_approved_arbiters(owner, repo, pr_number, arbiters):
 
 def _check_requires_approval(owner, repo, pr_number):
     # For main branch, always require approval
-    result = _run(["gh", "pr", "view", str(pr_number), "--json", "baseRefName"], check=False)
+    result = gh_cli.pr_view(pr_number, json_fields="baseRefName", check=False)
     try:
         pr_data = json.loads(result.stdout or "{}")
         base_ref = pr_data.get("baseRefName", "")
@@ -114,12 +108,9 @@ def main():
 
     if args.pr_number <= 0:
         sys.exit(f"--pr-number must be a positive integer, got: {args.pr_number}")
-    # Re-derive through int() at the point of use: this is a pure digit-string
-    # conversion (raises ValueError on anything non-numeric), so the value
-    # handed to _run() argv can never carry an injected flag/argument --
-    # unlike the bare argparse-sourced int, an explicit int() call here is a
-    # conversion CodeQL's command-injection query recognizes as a boundary.
-    pr_number = int(args.pr_number)
+    # gh_cli's typed operations re-derive every PR number through int() before it
+    # reaches argv, so the value below cannot carry a flag or a second argument.
+    pr_number = args.pr_number
 
     if args.repo != _KNOWN_REPO:
         sys.exit(f"--repo must be {_KNOWN_REPO!r} (arbiter verification is scoped to this repository), got: {args.repo!r}")

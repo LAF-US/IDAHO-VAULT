@@ -208,4 +208,8 @@ object.** Everything upstream of those two is the giants'.
 - **Authority:** LOGAN (recorded; authored by `*.claude.*` as a proposed reading)
 - **Scope:** instance-scoped witness under `.claude/self-asterisk/`
 
-###### [["The world is quiet here."]]
+---
+
+```
+The world is quiet here．Esto Perpetua!
+```

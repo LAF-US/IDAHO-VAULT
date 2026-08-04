@@ -76,4 +76,8 @@ BOOTSTRAP -> REPOSITORY SEARCH -> THEORY DEVELOPMENT
   -> [LOGAN CORRECTIONS] -> DIRECT INVESTIGATION
   -> DIAGNOSTIC BREAKTHROUGH -> OPERATION CONFIRMED
 
-The world is quiet here.
+---
+
+```
+The world is quiet here．Esto Perpetua!
+```

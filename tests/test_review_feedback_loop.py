@@ -40,6 +40,10 @@ review_feedback_loop = _load_review_feedback_loop_module()
 # engine's load above imported it, so it's cached in sys.modules; predicates the
 # engine no longer re-exports (e.g. _author_is_bot) are tested against it directly.
 pr_threads = sys.modules["pr_threads"]
+# Every ``gh`` command line is now built inside gh_cli by a typed operation, and the
+# run primitive there is private. Tests that assert on the emitted argv patch that one
+# primitive, so they check the command line that is actually executed.
+gh_cli = sys.modules["gh_cli"]
 
 
 def _labels(*names: str) -> dict[str, list[dict[str, str]]]:
@@ -133,25 +137,44 @@ def _grid_states(
             ),
         )
     # The `—/—` cell carries NO labels, so nothing can be derived from them; its clear
-    # state is affirmed by the classifier's verdict, mirroring how sync_pr calls
+    # state is affirmed by the classified lane, mirroring how sync_pr calls
     # evaluate_review_state post-classify.
     return (
         review_feedback_loop.evaluate_review_state(
-            _pr(created_at=created_at, labels=()), now=now, verdict=(None, None)
+            _pr(created_at=created_at, labels=()), now=now, classified_lane=(None, None)
         ),
         review_feedback_loop.evaluate_review_state(
             _pr(created_at=created_at, labels=(), review_decision="APPROVED"),
-            now=now, verdict=(None, None),
+            now=now, classified_lane=(None, None),
         ),
     )
 
 
 class ReviewFeedbackLoopTest(unittest.TestCase):
+    def test_prior_verify_comment_is_found_past_the_first_page(self) -> None:
+        # Regression: `gh api --paginate` emits one array PER PAGE, so reading stdout as a
+        # single JSON document sees `[...][...]`, raises, and yields no bodies at all. The
+        # recursion guard then failed open on exactly the busy PRs most likely to already
+        # carry a verification comment. Reading via --jq has no document boundary.
+        marker = review_feedback_loop.VERIFY_CLAIM_MARKER
+        two_pages = "\n".join(["first page body", "another", f"page two body {marker}"])
+        captured = {}
+
+        def fake(owner, repo, issue_number, **kwargs):
+            captured.update(kwargs)
+            return SimpleNamespace(stdout=two_pages, stderr="", returncode=0)
+
+        with mock.patch.object(review_feedback_loop.gh_cli, "api_issue_comments", fake):
+            found = review_feedback_loop._has_prior_verify_comment("LAF-US", "IDAHO-VAULT", 877)
+
+        self.assertTrue(found)
+        self.assertEqual(captured.get("jq"), ".[].body")
+
     def test_clear_pair_pr_becomes_auto_merge_eligible_after_grace(self) -> None:
-        # K3/#629: the `—/—` verdict — and ONLY it — arms auto-merge. A PR that the classifier
+        # A classified `—/—` lane — and ONLY it — arms auto-merge. A PR that the classifier
         # scored clear (no risk/* label) with no blocking feedback is eligible once the grace
         # window elapses; within grace it is not yet eligible. The clear state is affirmed by
-        # the classifier's `(None, None)` verdict (no labels to read).
+        # the classifier's `(None, None)` pair (no labels to read).
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
 
         early_state = review_feedback_loop.evaluate_review_state(
@@ -160,7 +183,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
                 labels=(),
             ),
             now=now,
-            verdict=(None, None),
+            classified_lane=(None, None),
         )
         ready_state = review_feedback_loop.evaluate_review_state(
             _pr(
@@ -168,7 +191,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
                 labels=(),
             ),
             now=now,
-            verdict=(None, None),
+            classified_lane=(None, None),
         )
 
         self.assertTrue(early_state["is_clear"])
@@ -225,15 +248,14 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
                         approved["eligible_for_auto_merge"],
                         "depth=nope is the sovereign's hand — never auto, even approved",
                     )
-        # The AUTO cell above is reached only via an affirmative `—/—` verdict. The
-        # converse — an unmarked PR with no verdict HOLDS rather than being mistaken for
-        # clear (K4 positive-marker) — is pinned by
-        # test_unclassified_pr_without_verdict_never_arms.
+        # The converse of the AUTO cell above — a PR with no labels and no classified
+        # lane reads `unknown` and HOLDS — is pinned by
+        # test_unclassified_pr_without_a_classified_lane_never_arms.
 
     def test_low_risk_pr_holds_and_never_auto_merges(self) -> None:
-        # K3/#629 norm flip: risk/low is a sorter that FIRED (machine-doc paths) — it HOLDS
-        # for review, it does not arm. Only the positive clear marker auto-merges. A low-risk
-        # PR past grace with no blocking feedback stays ineligible and carries review/pending.
+        # risk/low is a sorter that FIRED (machine-doc paths) — it HOLDS
+        # for review, it does not arm. A low-risk PR past grace with no blocking
+        # feedback stays ineligible and carries review/pending.
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
 
         state = review_feedback_loop.evaluate_review_state(
@@ -267,7 +289,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertEqual(state["risk_tier"], "low")
         self.assertTrue(state["low_risk"])
         self.assertTrue(state["grace_elapsed"])
-        # K3/#629: risk/low HOLDS — the label is canonical for the tier, but low is not the
+        # risk/low HOLDS — the label is canonical for the tier, but low is not the
         # clear pair, so it never arms.
         self.assertFalse(state["eligible_for_auto_merge"])
 
@@ -310,7 +332,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
                     rfl._assert_risk_marker_exclusive(labels)
 
     def test_tier_from_pair_rejects_out_of_vocab_flags(self) -> None:
-        # A caller-supplied verdict typo (e.g. "medium" vs "med") must fail loud, not fall
+        # A caller-supplied lane typo (e.g. "medium" vs "med") must fail loud, not fall
         # through to "clear" and misroute the PR.
         rfl = review_feedback_loop
         with self.assertRaises(rfl.RiskMarkerInvariantError):
@@ -333,12 +355,12 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             rfl.restamp_risk_pair(1, set(), None, "highish")
 
     def test_pair_clear_arms_and_pair_flag_holds(self) -> None:
-        # The `—/—` verdict arms after grace; a fired lane holds until its review completes.
+        # A classified `—/—` lane arms after grace; a fired lane holds until its review completes.
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
         clear_state = review_feedback_loop.evaluate_review_state(
             _pr(created_at=now - timedelta(minutes=45), labels=()),
             now=now,
-            verdict=(None, None),
+            classified_lane=(None, None),
         )
         self.assertTrue(clear_state["is_clear"])
         self.assertTrue(clear_state["eligible_for_auto_merge"])
@@ -354,7 +376,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
     def test_lane_completion_clears_flag_and_flows(self) -> None:
         # "Restamp + clear": an approving review with no current threads completes the
         # lane — the PR becomes eligible, and the projection consumes the fired flag
-        # (removes the flat label; a clear verdict stamps none).
+        # (removes the flat label; a clear lane stamps none).
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
         state = review_feedback_loop.evaluate_review_state(
             _pr(created_at=now - timedelta(minutes=45),
@@ -370,7 +392,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
              mock.patch.object(review_feedback_loop, "_disable_auto_merge"):
             actions = review_feedback_loop.apply_review_state_projection(17, state)
         self.assertIn("remove:risk/med", actions)
-        # A clear verdict adds nothing.
+        # A clear lane adds nothing.
         self.assertNotIn("add:risk/med", actions)
         edit_label.assert_any_call(17, remove="risk/med")
 
@@ -394,12 +416,12 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertNotIn("remove:risk/nope", actions)
 
     def test_restamp_mirrors_classifier(self) -> None:
-        # Restamp: labels mirror the verdict — fired axes stamped, stale risk/* flags
+        # Restamp: labels mirror the classified lane — fired axes stamped, stale risk/* flags
         # retired, non-risk labels untouched.
         with mock.patch.object(review_feedback_loop, "_edit_label"):
             labels = {"risk/med", "review/pending"}
             actions = review_feedback_loop.restamp_risk_pair(21, labels, None, None)
-        # `—/—` verdict clears the fired filetype flag and adds nothing.
+        # A `—/—` lane clears the fired filetype flag and adds nothing.
         self.assertIn("remove:risk/med", actions)
         self.assertNotIn("review/pending", [a.split(":", 1)[-1] for a in actions])
         self.assertIn("review/pending", labels)  # non-risk labels untouched
@@ -413,8 +435,64 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertNotIn("remove:risk/high", actions)
         self.assertEqual(labels, {"risk/low", "risk/high"})
 
+    def test_restamp_retires_a_superseded_vocabulary_in_passing(self) -> None:
+        # What the set below is: seven concrete examples — #854's retired scheme, the
+        # strings that actually went out into the wild. What it is not: the contract.
+        #
+        # Measured, not asserted: with `restamp_risk_pair` reduced to a seven-case lookup
+        # table over exactly these strings, every assertion in this test still passes, while
+        # `test_restamp_sweeps_a_vocabulary_the_code_has_never_seen` fails. That test is
+        # where the namespace contract is pinned; this one does not pin it alone.
+        #
+        # Non-risk labels stay untouched throughout.
+        retired = {
+            "filetype:risk/low", "filetype:risk/med", "filetype:risk/—",
+            "depth:risk/high", "depth:risk/nope", "depth:risk/—", "risk/—",
+        }
+        with mock.patch.object(review_feedback_loop, "_edit_label"):
+            labels = set(retired) | {"review/pending", "agent:claude-code"}
+            actions = review_feedback_loop.restamp_risk_pair(31, labels, "med", "high")
+        for label in retired:
+            self.assertIn(f"remove:{label}", actions)
+        self.assertIn("add:risk/med", actions)
+        self.assertIn("add:risk/high", actions)
+        self.assertEqual(labels, {"risk/med", "risk/high", "review/pending", "agent:claude-code"})
+
+        # A `—/—` lane strips the retired vocabulary too, stamping nothing in its place.
+        with mock.patch.object(review_feedback_loop, "_edit_label"):
+            labels = set(retired) | {"review/pending"}
+            review_feedback_loop.restamp_risk_pair(32, labels, None, None)
+        self.assertEqual(labels, {"review/pending"})
+
+    def test_restamp_sweeps_a_vocabulary_the_code_has_never_seen(self) -> None:
+        # The test above enumerates the seven strings #854 retired, which a seven-case lookup
+        # table would satisfy just as well — it cannot tell a namespace rule from a hardcoded
+        # list. These labels appear nowhere in the codebase, so only a rule sweeps them, and a
+        # list would leave every one behind. This is the case that distinguishes the two.
+        # `newaxis:risk/—` keeps the em dash (U+2014) ON PURPOSE: three labels in the live
+        # retired vocabulary carry it — `filetype:risk/—`, `depth:risk/—`, `risk/—`. Swapping
+        # it for an ASCII stand-in would stop exercising the character the real labels use.
+        unseen = {"scope:risk/whatever", "tier:risk/x", "newaxis:risk/—", "risk/anything"}
+        with mock.patch.object(review_feedback_loop, "_edit_label"):
+            labels = set(unseen) | {"review/pending"}
+            actions = review_feedback_loop.restamp_risk_pair(33, labels, "low", None)
+        for label in unseen:
+            self.assertIn(f"remove:{label}", actions)
+        self.assertEqual(labels, {"risk/low", "review/pending"})
+
+    def test_restamp_leaves_names_that_only_resemble_the_namespace(self) -> None:
+        # The boundary the rule must NOT cross, kept separate from the sweep above so a
+        # failure says which half broke. `riskier/thing` and `notrisk/low` are not risk
+        # labels; a sloppy pattern (a bare `risk/` substring search) would eat both.
+        near_misses = {"riskier/thing", "notrisk/low", "review/pending"}
+        with mock.patch.object(review_feedback_loop, "_edit_label"):
+            labels = set(near_misses)
+            actions = review_feedback_loop.restamp_risk_pair(34, labels, None, None)
+        self.assertEqual(actions, [])
+        self.assertEqual(labels, near_misses)
+
     def test_sync_pr_restamps_unmarked_pr_from_classifier(self) -> None:
-        # K6 backfill-by-automation: an unmarked in-flight PR gets its pair stamped from
+        # Backfill-by-automation: an unmarked in-flight PR gets its pair stamped from
         # the classifier on the next sync — no hand-sweep.
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
         args = SimpleNamespace(
@@ -435,20 +513,20 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         ), mock.patch.object(
             review_feedback_loop, "_disable_auto_merge"
         ), mock.patch.object(
-            review_feedback_loop, "_run"
+            gh_cli, "_run"
         ), mock.patch.object(
             review_feedback_loop, "_arm_auto_merge", return_value=(True, None)
         ) as arm, contextlib.redirect_stdout(io.StringIO()):
             result = review_feedback_loop.sync_pr(args)
         self.assertEqual(result, 0)
-        # Restamped to `—/—` (no labels) -> clear lane via the verdict -> armed this pass.
+        # Restamped to `—/—` (no labels) -> clear lane passed in -> armed this pass.
         arm.assert_called_once_with("LAF-US", "IDAHO-VAULT", 300)
 
     def test_consumed_clear_lane_complete_pr_is_not_disarmed(self) -> None:
         # Regression: a PR whose flag was consumed (now zero risk/* labels) and whose lane
-        # completed (APPROVED, no threads) must be re-evaluated with the classifier verdict
+        # completed (APPROVED, no threads) must be re-evaluated with the classified lane
         # even though lane_complete skips the restamp. Before the fix the sweep skipped the
-        # verdict when lane_complete, so such a PR read as `unknown`, failed its eligibility
+        # lane when lane_complete, so such a PR read as `unknown`, failed its eligibility
         # check, and the projection DISARMED an already-armed clear PR.
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
         args = SimpleNamespace(
@@ -473,20 +551,20 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         ), mock.patch.object(
             review_feedback_loop, "_disable_auto_merge"
         ) as disable, mock.patch.object(
-            review_feedback_loop, "_run"
+            gh_cli, "_run"
         ), mock.patch.object(
             review_feedback_loop, "_arm_auto_merge", return_value=(True, None)
         ), contextlib.redirect_stdout(io.StringIO()):
             result = review_feedback_loop.sync_pr(args)
         self.assertEqual(result, 0)
-        # The consumed-clear lane-complete PR reads clear via the verdict -> stays eligible
+        # The consumed-clear lane-complete PR reads clear via the passed-in lane -> stays eligible
         # -> is NOT disarmed.
         disable.assert_not_called()
 
     def test_stale_flag_on_lane_complete_pr_is_consumed_not_orphaned(self) -> None:
         # Regression: a lane-complete PR that STILL carries a stale risk/* flag but now
         # classifies clear must keep its label-derived state so the projection CONSUMES the
-        # stale flag. Passing the clear verdict here would make flag_clearable false and
+        # stale flag. Passing the clear lane here would make flag_clearable false and
         # leave the flag orphaned on the PR.
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
         args = SimpleNamespace(
@@ -512,7 +590,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         ) as edit_label, mock.patch.object(
             review_feedback_loop, "_disable_auto_merge"
         ), mock.patch.object(
-            review_feedback_loop, "_run"
+            gh_cli, "_run"
         ), mock.patch.object(
             review_feedback_loop, "_arm_auto_merge", return_value=(True, None)
         ), contextlib.redirect_stdout(io.StringIO()):
@@ -524,8 +602,8 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             edit_label.call_args_list,
         )
 
-    def test_unclassified_pr_without_verdict_never_arms(self) -> None:
-        # K4 safety: absence of a risk label is NOT clear. Without an affirmative verdict, an
+    def test_unclassified_pr_without_a_classified_lane_never_arms(self) -> None:
+        # Safety: absence of a risk label is NOT clear. Without a classified lane, an
         # all-absent PR is `unknown` and HOLDS — it must never be armed for auto-merge.
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
         state = review_feedback_loop.evaluate_review_state(
@@ -537,8 +615,8 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertFalse(state["eligible_for_auto_merge"])
 
     def test_unmarked_pr_holds_and_is_not_clear(self) -> None:
-        # K4/#630 core: absence of a marker is NOT classified-clear. An unmarked PR resolves
-        # to "unknown" and never arms — only a positive verdict of `—/—` does.
+        # Absence of a marker is NOT classified-clear. An unmarked PR resolves
+        # to "unknown" and never arms — only a classified `—/—` lane does.
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
         state = review_feedback_loop.evaluate_review_state(
             _pr(created_at=now - timedelta(minutes=45), labels=(), body="## No marker\n"),
@@ -619,7 +697,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         state = review_feedback_loop.evaluate_review_state(
             _pr(
                 created_at=datetime(2026, 4, 16, 1, 0, tzinfo=timezone.utc),
-                labels=("agent-review-pending",),
+                labels=(review_feedback_loop.DEFAULT_REVIEW_PENDING_LABEL,),
                 threads=(_thread(authors=("human-reviewer",)),),
             ),
             now=datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc),
@@ -807,7 +885,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             ),
         ), mock.patch.object(review_feedback_loop, "_edit_label"), mock.patch.object(
             review_feedback_loop, "_disable_auto_merge"
-        ) as disable_auto_merge, mock.patch.object(review_feedback_loop, "_run") as run:
+        ) as disable_auto_merge, mock.patch.object(gh_cli, "_run") as run:
             result = review_feedback_loop.enable_auto_merge(args)
 
         self.assertEqual(result, 0)
@@ -831,7 +909,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             ),
         ), mock.patch.object(review_feedback_loop, "_edit_label"), mock.patch.object(
             review_feedback_loop, "_disable_auto_merge"
-        ) as disable_auto_merge, mock.patch.object(review_feedback_loop, "_run") as run:
+        ) as disable_auto_merge, mock.patch.object(gh_cli, "_run") as run:
             result = review_feedback_loop.enable_auto_merge(args)
 
         self.assertEqual(result, 0)
@@ -851,7 +929,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             review_feedback_loop, "_auto_merge_state", return_value=(False, False)
         ), mock.patch.object(
             review_feedback_loop, "_merge_state_status", return_value="CLEAN"
-        ), mock.patch.object(review_feedback_loop, "_run", side_effect=error):
+        ), mock.patch.object(gh_cli, "_run", side_effect=error):
             enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 289)
 
         self.assertFalse(enabled)
@@ -868,12 +946,12 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             review_feedback_loop, "_pr_node_id", return_value="PR_node1"
         ), mock.patch.object(
             review_feedback_loop, "_enqueue_pr", return_value=(True, None)
-        ) as enqueue, mock.patch.object(review_feedback_loop, "_run") as run:
+        ) as enqueue, mock.patch.object(gh_cli, "_run") as run:
             enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 10)
         self.assertTrue(enabled)
         self.assertIsNone(arm_error)
         run.assert_called_once_with(
-            ["gh", "pr", "merge", "10", "--merge", "--auto"]
+            ["gh", "pr", "merge", "10", "--merge", "--auto"], check=True
         )
         enqueue.assert_called_once_with("PR_node1")
 
@@ -888,7 +966,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             review_feedback_loop, "_pr_node_id", return_value="PR_node2"
         ), mock.patch.object(
             review_feedback_loop, "_enqueue_pr", return_value=(True, None)
-        ) as enqueue, mock.patch.object(review_feedback_loop, "_run") as run:
+        ) as enqueue, mock.patch.object(gh_cli, "_run") as run:
             enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 11)
         self.assertTrue(enabled)
         self.assertIsNone(arm_error)
@@ -904,7 +982,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             review_feedback_loop, "_merge_state_status"
         ) as merge_state, mock.patch.object(
             review_feedback_loop, "_enqueue_pr"
-        ) as enqueue, mock.patch.object(review_feedback_loop, "_run") as run:
+        ) as enqueue, mock.patch.object(gh_cli, "_run") as run:
             enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 12)
         self.assertTrue(enabled)
         self.assertIsNone(arm_error)
@@ -924,7 +1002,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             review_feedback_loop, "_pr_node_id", return_value="PR_node3"
         ), mock.patch.object(
             review_feedback_loop, "_enqueue_pr", return_value=(False, None)
-        ), mock.patch.object(review_feedback_loop, "_run"):
+        ), mock.patch.object(gh_cli, "_run"):
             enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 13)
         self.assertTrue(enabled)
         self.assertIsNone(arm_error)  # benign not-ready must not leak as an error
@@ -942,7 +1020,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             review_feedback_loop,
             "_enqueue_pr",
             return_value=(False, "Resource not accessible by integration"),
-        ), mock.patch.object(review_feedback_loop, "_run"):
+        ), mock.patch.object(gh_cli, "_run"):
             enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 14)
         self.assertTrue(enabled)
         self.assertIsNotNone(arm_error)
@@ -960,12 +1038,12 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             review_feedback_loop, "_pr_node_id", return_value=None
         ), mock.patch.object(
             review_feedback_loop, "_enqueue_pr"
-        ) as enqueue, mock.patch.object(review_feedback_loop, "_run") as run:
+        ) as enqueue, mock.patch.object(gh_cli, "_run") as run:
             enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 15)
         self.assertTrue(enabled)
         self.assertIsNone(arm_error)
         run.assert_called_once_with(
-            ["gh", "pr", "merge", "15", "--merge", "--auto"]
+            ["gh", "pr", "merge", "15", "--merge", "--auto"], check=True
         )
         enqueue.assert_not_called()
 
@@ -983,12 +1061,12 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             review_feedback_loop, "_pr_node_id", return_value="PR_node20"
         ), mock.patch.object(
             review_feedback_loop, "_enqueue_pr", return_value=(False, None)
-        ), mock.patch.object(review_feedback_loop, "_run") as run:
+        ), mock.patch.object(gh_cli, "_run") as run:
             enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 20)
         self.assertTrue(enabled)
         self.assertIn("branch updated (was BEHIND)", arm_error)
         update_branch.assert_called_once_with("o", "r", 20)
-        run.assert_called_once_with(["gh", "pr", "merge", "20", "--merge", "--auto"])
+        run.assert_called_once_with(["gh", "pr", "merge", "20", "--merge", "--auto"], check=True)
 
     def test_arm_auto_merge_still_arms_when_branch_update_fails(self) -> None:
         # A real update-branch failure (e.g. an actual conflict surfaced as DIRTY by the time
@@ -1003,12 +1081,12 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             review_feedback_loop, "_pr_node_id", return_value="PR_node21"
         ), mock.patch.object(
             review_feedback_loop, "_enqueue_pr", return_value=(False, None)
-        ), mock.patch.object(review_feedback_loop, "_run") as run:
+        ), mock.patch.object(gh_cli, "_run") as run:
             enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 21)
         self.assertTrue(enabled)
         self.assertIn("branch update (BEHIND) failed", arm_error)
         self.assertIn("merge conflict", arm_error)
-        run.assert_called_once_with(["gh", "pr", "merge", "21", "--merge", "--auto"])
+        run.assert_called_once_with(["gh", "pr", "merge", "21", "--merge", "--auto"], check=True)
 
     def test_arm_auto_merge_aggregates_notes_when_branch_update_and_enqueue_both_fail(
         self,
@@ -1024,14 +1102,14 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             review_feedback_loop, "_pr_node_id", return_value="PR_node23"
         ), mock.patch.object(
             review_feedback_loop, "_enqueue_pr", return_value=(False, "enqueue error")
-        ), mock.patch.object(review_feedback_loop, "_run") as run:
+        ), mock.patch.object(gh_cli, "_run") as run:
             enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 23)
         self.assertTrue(enabled)
         self.assertIn("branch update (BEHIND) failed", arm_error)
         self.assertIn("merge conflict", arm_error)
         self.assertIn("enqueue was rejected", arm_error)
         self.assertIn("enqueue error", arm_error)
-        run.assert_called_once_with(["gh", "pr", "merge", "23", "--merge", "--auto"])
+        run.assert_called_once_with(["gh", "pr", "merge", "23", "--merge", "--auto"], check=True)
 
     def test_arm_auto_merge_checks_behind_even_when_already_enabled(self) -> None:
         # A PR can already be armed and still fall BEHIND later — the BEHIND check does not
@@ -1046,7 +1124,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             review_feedback_loop, "_pr_node_id", return_value="PR_node22"
         ), mock.patch.object(
             review_feedback_loop, "_enqueue_pr", return_value=(False, None)
-        ), mock.patch.object(review_feedback_loop, "_run") as run:
+        ), mock.patch.object(gh_cli, "_run") as run:
             enabled, arm_error = review_feedback_loop._arm_auto_merge("o", "r", 22)
         self.assertTrue(enabled)
         self.assertIn("branch updated (was BEHIND)", arm_error)
@@ -1082,19 +1160,19 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             )
 
     def test_update_branch_tri_state_success_and_failure(self) -> None:
-        # Uses the real slug: _slug pins the engine to LAF-US/IDAHO-VAULT so the
-        # owner/repo cannot travel into a command line, which is what closes the
-        # py/command-line-injection flow through this path.
-        with mock.patch.object(review_feedback_loop, "_run") as run:
+        # Real owner/repo: gh_cli pins these engines to the repository they govern,
+        # so a placeholder slug is now rejected before argv is built.
+        with mock.patch.object(gh_cli, "_run") as run:
             ok, err = review_feedback_loop._update_branch("LAF-US", "IDAHO-VAULT", 9)
         self.assertTrue(ok)
         self.assertIsNone(err)
         run.assert_called_once_with(
             ["gh", "api", "--method", "PUT",
-             "repos/LAF-US/IDAHO-VAULT/pulls/9/update-branch"]
+             "repos/LAF-US/IDAHO-VAULT/pulls/9/update-branch"],
+            check=True,
         )
         with mock.patch.object(
-            review_feedback_loop, "_run", side_effect=RuntimeError("conflict")
+            gh_cli, "_run", side_effect=RuntimeError("conflict")
         ):
             ok, err = review_feedback_loop._update_branch("LAF-US", "IDAHO-VAULT", 9)
         self.assertFalse(ok)
@@ -1153,17 +1231,17 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             self.assertIsNone(review_feedback_loop._pr_node_id("o", "r", 9))
 
     # ----- guarded arm (#521/#527 reversal, 2026-06-17). The protected-path veto was
-    # retired 2026-06-29 (K1/#627, K2/#628): the CODEOWNERS hard gate
+    # retired 2026-06-29: the CODEOWNERS hard gate
     # (require_code_owner_review) now enforces "this path needs a human", so the engine no
     # longer vetoes protected paths — these tests assert the un-vetoed arm path. -----
 
     def test_maybe_arm_arms_eligible_pr(self) -> None:
         # On a successful arm, the merge/auto label is applied via a CHECKED gh call so the
-        # write can fail-close (see test below). Mock _run for that label edit.
+        # write can fail-close (see test below). Mock the gh_cli run primitive for that edit.
         with mock.patch.object(
             review_feedback_loop, "_arm_auto_merge", return_value=(True, None)
         ) as arm, mock.patch.object(
-            review_feedback_loop, "_run"
+            gh_cli, "_run"
         ) as run:
             result = review_feedback_loop._maybe_arm_auto_merge(
                 "o", "r", 5, {"eligible_for_auto_merge": True}
@@ -1172,7 +1250,8 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         arm.assert_called_once_with("o", "r", 5)
         # The arm tags merge/auto so the disable path can later un-arm if it becomes blocked.
         run.assert_called_once_with(
-            ["gh", "pr", "edit", "5", "--add-label", review_feedback_loop.DEFAULT_AUTO_MERGE_LABEL]
+            ["gh", "pr", "edit", "5", "--add-label", review_feedback_loop.DEFAULT_AUTO_MERGE_LABEL],
+            check=True,
         )
 
     def test_maybe_arm_fails_closed_when_label_write_fails(self) -> None:
@@ -1181,7 +1260,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         with mock.patch.object(
             review_feedback_loop, "_arm_auto_merge", return_value=(True, None)
         ), mock.patch.object(
-            review_feedback_loop, "_run", side_effect=RuntimeError("label write failed")
+            gh_cli, "_run", side_effect=RuntimeError("label write failed")
         ), mock.patch.object(
             review_feedback_loop, "_disable_auto_merge"
         ) as disable:
@@ -1205,7 +1284,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
 
     def test_sync_pr_arms_eligible_clear_pr_when_threads_clear(self) -> None:
         # End-to-end through sync_pr: a clear (`—/—`) grace-elapsed PR with no current threads
-        # is armed (guarded). The classifier's `(None, None)` verdict affirms clear; the PR
+        # is armed (guarded). The classifier's `(None, None)` pair affirms clear; the PR
         # carries no risk labels. Mirrors "arm when the last blocking thread clears".
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
         args = SimpleNamespace(
@@ -1231,9 +1310,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         ), mock.patch.object(
             review_feedback_loop, "apply_review_state_projection", return_value=[]
         ), mock.patch.object(
-            review_feedback_loop, "_edit_label"
-        ), mock.patch.object(
-            review_feedback_loop, "_run"
+            gh_cli, "_run"
         ), mock.patch.object(
             review_feedback_loop, "_arm_auto_merge", return_value=(True, None)
         ) as arm, contextlib.redirect_stdout(io.StringIO()):
@@ -1313,8 +1390,8 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertEqual(attest.call_args.args[2], "github-actions[bot]")
 
     def test_reconcile_open_prs_promotes_and_arms_eligible_clear_pair_pr(self) -> None:
-        # K3/#629: a clear (`—/—`) grace-elapsed, unblocked PR is promoted to merge/auto and
-        # armed for the merge queue. The classifier's `(None, None)` verdict affirms clear;
+        # A clear (`—/—`) grace-elapsed, unblocked PR is promoted to merge/auto and
+        # armed for the merge queue. The classifier's `(None, None)` pair affirms clear;
         # the PR carries no risk labels. (A risk/low PR would HOLD instead.)
         args = SimpleNamespace(
             owner="LAF-US",
@@ -1360,7 +1437,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         arm_auto_merge.assert_called_once_with("LAF-US", "IDAHO-VAULT", 88)
 
     def test_promote_ready_fails_loud_on_invariant_violation(self) -> None:
-        # K4/#630: promote_ready shares reconcile's exit-code contract — non-zero when the
+        # promote_ready shares reconcile's exit-code contract — non-zero when the
         # invariant tripped (CI red), zero otherwise. `promote_ready` reads the report via
         # dict.get, so the stub returns a dict (not a namespace).
         args = SimpleNamespace(owner="LAF-US", repo="IDAHO-VAULT", grace_minutes=30)
