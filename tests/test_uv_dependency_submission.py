@@ -121,15 +121,22 @@ class UvDependencySubmissionTest(unittest.TestCase):
         # Scope is reachability, not direct-name membership. Both root sets and
         # the edges come from the lock, so this states the rule rather than a
         # census of which packages happened to be installed the day it was written.
-        edges = {
-            uds.normalize(pkg["name"]): {
+        # MERGE, do not overwrite. A dict comprehension keyed on the normalized name
+        # keeps only the LAST record for a package the lock pins at several versions
+        # (pygit2 today), silently dropping the earlier version's edges — and a
+        # dependency reachable only through the dropped record then falls out of both
+        # root sets and has its scope silently unchecked below. `build_snapshot`
+        # accumulates with setdefault().update(); this has to match, or the
+        # independent re-derivation is re-deriving something else.
+        edges: dict[str, set[str]] = {}
+        for pkg in self.lock["package"]:
+            if not pkg.get("name"):
+                continue
+            edges.setdefault(uds.normalize(pkg["name"]), set()).update(
                 uds.normalize(dep["name"])
                 for dep in pkg.get("dependencies", [])
                 if isinstance(dep, dict) and dep.get("name")
-            }
-            for pkg in self.lock["package"]
-            if pkg.get("name")
-        }
+            )
 
         def reachable_from(roots: list[str]) -> set[str]:
             seen: set[str] = set()
@@ -175,13 +182,23 @@ class UvDependencySubmissionTest(unittest.TestCase):
             kept = [k for k in self.resolved if k.startswith(f"pkg:pypi/{name}@")]
             self.assertEqual(len(kept), expected, sorted(kept))
 
-    def test_resolved_count_matches_non_local_versioned_packages(self) -> None:
+    def test_resolved_matches_non_local_versioned_packages(self) -> None:
         # Every registry-backed [[package]] becomes exactly one purl; the editable
-        # local project and any git/url/path sources become none. This computes
-        # that from the lock, which is what the previous hardcoded 164 was a
-        # snapshot of — and 164 is what it fails on the moment the manifest moves.
-        self.assertEqual(len(self.resolved), len(self.registry_packages))
+        # local project and any git/url/path sources become none. Derived from the
+        # lock, which is what the previous hardcoded 164 was a snapshot of.
+        #
+        # Identities, not just cardinality: equal counts also hold if a registry
+        # package went missing and a git/url/path source was mislabeled as PyPI in
+        # its place, which is the substitution this test exists to catch. The count
+        # assertion stays alongside it — a set comparison cannot see duplicate
+        # resolved records, since a set collapses them.
+        expected = {
+            f"pkg:pypi/{uds.normalize(pkg['name'])}@{pkg['version']}"
+            for pkg in self.registry_packages
+        }
         self.assertTrue(self.registry_packages, "uv.lock has no registry packages")
+        self.assertEqual(set(self.resolved), expected)
+        self.assertEqual(len(self.resolved), len(self.registry_packages))
 
 
 if __name__ == "__main__":
