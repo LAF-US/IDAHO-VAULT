@@ -2,7 +2,10 @@
 title: pyproject.toml Dependency Provenance — 2026-08-04
 type: audit
 status: draft
-authority: CLAUDE (measurement only; no change to pyproject.toml proposed or made)
+updated: 2026-08-04
+authority: LOGAN
+authors:
+- Claude Code (measurement only; no change to pyproject.toml proposed or made)
 scope: pyproject.toml dependency and config sections, src/idaho_vault/, LAF-US/IDAHO-VAULT
 owner: Logan Finney
 ---
