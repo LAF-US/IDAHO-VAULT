@@ -1,2 +1,0 @@
-
-"smart_sources:feedback_swarm_lane_boundaries.md": {"path":"feedback_swarm_lane_boundaries.md","last_embed":{"hash":null},"embeddings":{},"last_read":{"hash":"1v0ktb0","at":1785795040993},"class_name":"SmartSource","last_import":{"mtime":1774805172017,"size":659,"at":1785795041005,"hash":"1v0ktb0"},"blocks":{"#---frontmatter---":[1,5],"#":[7,12]},"outlinks":[],"metadata":{"name":"Swarm lane boundaries","description":"Which agent owns which work type — PR creation, inspection, merges, etc.","type":"feedback"},"task_lines":[],"tasks":{},"codeblock_ranges":[]},

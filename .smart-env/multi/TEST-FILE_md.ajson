@@ -1,2 +1,0 @@
-
-"smart_sources:TEST-FILE.md": {"path":"TEST-FILE.md","last_embed":{"hash":null},"embeddings":{},"last_read":{"hash":"xkbjky","at":1785795062875},"class_name":"SmartSource","last_import":{"mtime":1783456676227,"size":503,"at":1785795062901,"hash":"xkbjky"},"blocks":{"#---frontmatter---":[1,4],"#TEST-FILE.md":[6,17],"#TEST-FILE.md#{1}":[8,17]},"outlinks":[],"metadata":{"status":"superseded","reason":"Test artifact - remove before merge"},"task_lines":[],"tasks":{},"codeblock_ranges":[]},

@@ -1,2 +1,0 @@
-
-"smart_sources:feedback_agent_signatures.md": {"path":"feedback_agent_signatures.md","last_embed":{"hash":null},"embeddings":{},"last_read":{"hash":"1rzqe18","at":1785795040971},"class_name":"SmartSource","last_import":{"mtime":1774754915690,"size":528,"at":1785795040991,"hash":"1rzqe18"},"blocks":{"#---frontmatter---":[1,5],"#":[7,12]},"outlinks":[],"metadata":{"name":"Agent signatures in vault files","description":"Agents should sign their work in vault files — do not flag or remove agent signatures","type":"feedback"},"task_lines":[],"tasks":{},"codeblock_ranges":[]},
