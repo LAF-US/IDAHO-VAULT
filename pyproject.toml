@@ -18,9 +18,10 @@ dependencies = [
     "packaging",
 ]
 
-# Required verbatim by src/idaho_vault/bootstrap_contract.py:78, which fails the
-# threshold prereflight without the exact token
-# `idaho_vault = "idaho_vault.main:run"`. The other eight entries this file used
+# Required verbatim by src/idaho_vault/bootstrap_contract.py's
+# _check_pyproject() (required_tokens), which fails the threshold preflight
+# without the exact token `idaho_vault = "idaho_vault.main:run"`. The other
+# eight entries this file used
 # to carry (run_crew, train, replay, test, run_with_trigger,
 # five_wizards_threshold, civic_scaffold, metadata_survey) are named by no
 # contract and no test; the suite is green without them.
@@ -35,7 +36,8 @@ build-backend = "hatchling.build"
 [tool.hatch.build.targets.wheel]
 packages = ["src/idaho_vault"]
 
-# Required verbatim by bootstrap_contract.py:77 (the token `type = "crew"`).
+# Required verbatim by bootstrap_contract.py's _check_pyproject()
+# (required_tokens): the token `type = "crew"`.
 [tool.crewai]
 type = "crew"
 
@@ -43,9 +45,10 @@ type = "crew"
 dev = [
     "pytest>=9.0.3,<10",
     "coverage>=7.6,<8",
-    # ruff and jupytext are imported by nothing, but
-    # tests/test_uv_dependency_submission.py asserts ruff is in the resolved set
-    # and pins the resolved count at 164.
+    # Neither is `import`ed by Python source -- jupytext is invoked as a CLI by
+    # .github/scripts/jupytext_sync_paired.py, and ruff is a CI-only linter --
+    # but tests/test_uv_dependency_submission.py also asserts ruff is in the
+    # resolved set and pins the resolved count at 164.
     "ruff>=0.15.12,<1",
     "jupytext>=1.16,<2",
 ]
