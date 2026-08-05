@@ -17,8 +17,8 @@ related:
 Gallery members applaud and legislators exit the chamber. https://t.co/TkhQ2VIT9n
 
 ## Media
-- ![](https://pbs.twimg.com/media/EbQGLncXgAQ9eev.jpg)
-- ![](https://pbs.twimg.com/media/EbQGLoeWkAA7ETF.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EbQGLncXgAQ9eev.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EbQGLoeWkAA7ETF.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

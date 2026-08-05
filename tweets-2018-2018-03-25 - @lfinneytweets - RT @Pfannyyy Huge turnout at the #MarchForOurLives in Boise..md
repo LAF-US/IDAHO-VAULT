@@ -22,9 +22,9 @@ RT @Pfannyyy: Huge turnout at the #MarchForOurLives in Boise. <https://t.co/pbGC
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/DZEL2zAU8AALOK7.jpg)
-- ![](https://pbs.twimg.com/media/DZEL2y6UQAEB6qW.jpg)
-- ![](https://pbs.twimg.com/media/DZEL2yxU8AAnqfY.jpg)
-- ![](https://pbs.twimg.com/media/DZEL2zaUQAA-BXS.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/DZEL2zAU8AALOK7.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/DZEL2y6UQAEB6qW.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/DZEL2yxU8AAnqfY.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/DZEL2zaUQAA-BXS.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/977831994989006848)

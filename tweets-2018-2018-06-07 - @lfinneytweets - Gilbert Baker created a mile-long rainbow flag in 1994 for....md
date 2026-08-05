@@ -18,7 +18,7 @@ Gilbert Baker created a mile-long rainbow flag in 1994 for the 25th anniversary 
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/DfDtpROUcAA5AOK.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/DfDtpROUcAA5AOK.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

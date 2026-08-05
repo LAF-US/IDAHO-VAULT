@@ -27,6 +27,6 @@ I love doing #idleg/#idpol research.
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/EPeyRf0UEAAzU74.png)
+- ![alt text needed](https://pbs.twimg.com/media/EPeyRf0UEAAzU74.png)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1222641875510689793)

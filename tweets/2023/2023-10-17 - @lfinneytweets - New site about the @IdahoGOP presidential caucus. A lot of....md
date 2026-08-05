@@ -27,6 +27,6 @@ New https://t.co/2z4DxX5WDg site about the @IdahoGOP presidential caucus. A lot 
 - https://www.idahorepublicancaucus.com
 
 ## Media
-- ![](https://pbs.twimg.com/media/F8pk2g-aYAA8gdZ.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/F8pk2g-aYAA8gdZ.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1714294976069452260)

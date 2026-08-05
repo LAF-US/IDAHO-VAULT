@@ -17,7 +17,7 @@ related:
 Rep. Tammy Nichols (R-Middleton) https://t.co/ejv5D7PKcN
 
 ## Media
-- ![](https://pbs.twimg.com/media/EbQFOE8XsAAAFWT.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EbQFOE8XsAAAFWT.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

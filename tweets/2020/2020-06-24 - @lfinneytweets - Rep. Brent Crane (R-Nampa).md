@@ -17,7 +17,7 @@ related:
 Rep. Brent Crane (R-Nampa) https://t.co/FQqmjQMouM
 
 ## Media
-- ![](https://pbs.twimg.com/media/EbQFHwQXQAAejtL.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EbQFHwQXQAAejtL.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

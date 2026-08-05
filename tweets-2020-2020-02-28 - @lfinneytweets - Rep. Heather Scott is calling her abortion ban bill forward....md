@@ -22,6 +22,6 @@ Rep. Heather Scott is calling her abortion ban bill forward from committee. The 
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/ER4QiIvUEAADyic.png)
+- ![alt text needed](https://pbs.twimg.com/media/ER4QiIvUEAADyic.png)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1233441640758444032)

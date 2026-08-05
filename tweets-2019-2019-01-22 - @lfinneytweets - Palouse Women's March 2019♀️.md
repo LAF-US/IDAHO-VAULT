@@ -17,6 +17,6 @@ Palouse Women's March 2019♀️ <https://t.co/ieroTLhgMi>
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/DxenvbaX0AAavLN.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/DxenvbaX0AAavLN.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1087522275811778560)

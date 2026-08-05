@@ -22,6 +22,6 @@ related:
 RT @KTVBJoe: #Idaho casts 4 electoral college votes for @realDonaldTrump https://t.co/DjC4JEhhM1
 
 ## Media
-- ![](https://pbs.twimg.com/media/EpOIAwnUYAA86hI.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EpOIAwnUYAA86hI.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1338585702376775680)

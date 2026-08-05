@@ -21,6 +21,6 @@ Pictured from left: @GovernorLittle, Rep. Megan Blanksma, and ID Chief Justice R
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/ERLBS2yU8AIFa1m.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/ERLBS2yU8AIFa1m.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1230259113948405760)

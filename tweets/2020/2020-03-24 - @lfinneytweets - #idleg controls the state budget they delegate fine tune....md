@@ -20,7 +20,7 @@ related:
   - idpol
 ---
 
-#idleg controls the state budget they delegate fine tune balancing in June to the executive branch after sine die. I heard members say that flexibility was especially important this year with the possibility of #COVID19 economic impacts and delayed tax collection dates. #idpol https://t.co/mObDg7hMWw
+\#idleg controls the state budget they delegate fine tune balancing in June to the executive branch after sine die. I heard members say that flexibility was especially important this year with the possibility of #COVID19 economic impacts and delayed tax collection dates. #idpol https://t.co/mObDg7hMWw
 
 ## Links
 - https://x.com/RadioDawson/status/1242519914591580166

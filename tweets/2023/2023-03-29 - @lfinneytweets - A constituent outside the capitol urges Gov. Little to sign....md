@@ -21,6 +21,6 @@ related:
 A constituent outside the capitol urges Gov. Little to sign HB 71, a bill to outlaw gender-confirming surgical and hormonal treatments for minors. She was in the same spot a few weeks ago with a sign encouraging people to call their senators and support the bill. #idleg #idpol https://t.co/ljmo5nLiWQ
 
 ## Media
-- ![](https://pbs.twimg.com/media/FsaGOawaAAAvUcY.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/FsaGOawaAAAvUcY.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1641146705549864961)

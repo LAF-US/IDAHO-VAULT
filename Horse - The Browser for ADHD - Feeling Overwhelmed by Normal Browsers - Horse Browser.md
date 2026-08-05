@@ -105,7 +105,7 @@ Stop holding your research in working memory. Let the browser track your journey
 
 Embrace how you naturally explore ideas. Non-linear thinking becomes a superpower, not something to fight.
 
-![](https://www.youtube.com/watch?v=7gvxrieLvII)
+![alt text needed](https://www.youtube.com/watch?v=7gvxrieLvII)
 
 > Horse Browser is *unlike anything* I've ever seen in this space.
 

@@ -23,8 +23,8 @@ related:
 RT @jjsaldana: Here is the latest Idaho Rebound info in Spanish. #COVIDidaho #idpol https://t.co/bOW3XGzu4U
 
 ## Media
-- ![](https://pbs.twimg.com/media/EZsf5-OU4AAYWk_.jpg)
-- ![](https://pbs.twimg.com/media/EZsf5-OUcAAnhhP.jpg)
-- ![](https://pbs.twimg.com/media/EZsf5-NUMAAKv7v.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EZsf5-OU4AAYWk_.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EZsf5-OUcAAnhhP.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EZsf5-NUMAAKv7v.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1268653314859622401)

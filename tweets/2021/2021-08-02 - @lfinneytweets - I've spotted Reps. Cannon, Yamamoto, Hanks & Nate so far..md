@@ -17,7 +17,7 @@ related:
 I've spotted Reps. Cannon, Yamamoto, Hanks & Nate so far. https://t.co/a3A4Anxr3f
 
 ## Media
-- ![](https://pbs.twimg.com/media/E7ywWm8VIAcnFX7.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/E7ywWm8VIAcnFX7.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

@@ -25,6 +25,6 @@ Four years of fun. Thanks for all the memories, friends! 🎷 #vandalmarchingban
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/ELpu4OHVUAEIXwh.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/ELpu4OHVUAEIXwh.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1205397776185475072)

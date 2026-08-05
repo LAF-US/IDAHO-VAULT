@@ -16,6 +16,6 @@ related:
 @KelcieMMorris https://t.co/9HzPbBogGW
 
 ## Media
-- ![](https://pbs.twimg.com/media/FrYgdCJaIAE9K91.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/FrYgdCJaIAE9K91.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1636531199920459777)

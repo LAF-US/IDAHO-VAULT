@@ -25,7 +25,7 @@ related:
 "Now that our initiative rights are restored, it's time to exercise them," @lukemayville said, referring to Monday's @idcourts decision. #idleg #idpol https://t.co/iY2pbVsqhT
 
 ## Media
-- ![](https://pbs.twimg.com/media/E95OxfrVUAQ8qYj.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/E95OxfrVUAQ8qYj.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

@@ -22,6 +22,6 @@ related:
 RT @IdahoReports: Weekly #IdahoCOVID19 Update for November 19, 2021 | @IdahoPTV https://t.co/1DJweaZALW
 
 ## Media
-- ![](https://pbs.twimg.com/amplify_video_thumb/1461819856689324033/img/9EUS7qWAT2kaVm6I.jpg)
+- ![alt text needed](https://pbs.twimg.com/amplify_video_thumb/1461819856689324033/img/9EUS7qWAT2kaVm6I.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1461820124529401870)

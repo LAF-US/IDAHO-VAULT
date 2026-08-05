@@ -11,7 +11,7 @@ Most teams still treat AI models like black boxes in the cloud. Mistral is quiet
 
 ## Why Mistral is interesting to engineers
 
-![](https://miro.medium.com/v2/resize:fit:1400/format:webp/0*GZoU0gttJYkckdgf)
+![alt text needed](https://miro.medium.com/v2/resize:fit:1400/format:webp/0*GZoU0gttJYkckdgf)
 
 Mistral is not trying to be OpenAI. They are trying to be LLVM for AI.
 

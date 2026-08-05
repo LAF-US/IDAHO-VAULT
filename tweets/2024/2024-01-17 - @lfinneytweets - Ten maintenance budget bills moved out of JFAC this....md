@@ -27,6 +27,6 @@ https://t.co/ywWCrrM6Q5 https://t.co/nj7PGD6itv
 - https://public.flourish.studio/visualisation/16478092/
 
 ## Media
-- ![](https://pbs.twimg.com/media/GEAzTgQaMAE34TX.png)
+- ![alt text needed](https://pbs.twimg.com/media/GEAzTgQaMAE34TX.png)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1747453299027259692)

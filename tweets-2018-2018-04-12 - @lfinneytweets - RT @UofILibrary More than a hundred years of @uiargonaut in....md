@@ -26,6 +26,6 @@ RT @UofILibrary: More than a hundred years of @uiargonaut in our digital collect
 
 ## Media
 
-- ![](https://pbs.twimg.com/tweet_video_thumb/DadRVQoVMAAaDQs.jpg)
+- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/DadRVQoVMAAaDQs.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/984299490382245888)
