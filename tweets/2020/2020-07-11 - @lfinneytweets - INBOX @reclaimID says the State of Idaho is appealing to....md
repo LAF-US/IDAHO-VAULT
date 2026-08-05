@@ -20,7 +20,7 @@ related:
   - idleg
 ---
 
-INBOX: @reclaimID says the State of Idaho is appealing to the U.S. Supreme Court for a stay on the group's electronic signature drive to get their education initiative on the November ballot. #idpol #idleg https://t.co/NcSW8murmO
+INBOX: @reclaimID says the State of Idaho is appealing to the U.S. Supreme Court for a stay on the group's electronic signature drive to get their education initiative on the November ballot. #idpol #idleg <https://t.co/NcSW8murmO>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EcrPXMPUEAAi-Tt.jpg)

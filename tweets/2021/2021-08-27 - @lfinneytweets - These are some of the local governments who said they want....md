@@ -21,7 +21,7 @@ related:
   - idpol
 ---
 
-@IdahoController These are some of the local governments who said they want to participate in the Transparent Idaho budget reporting pilot program. The list is not finalized or comprehensive, just an example of interested entities. #idleg #idpol https://t.co/yDs8WamPAe
+@IdahoController These are some of the local governments who said they want to participate in the Transparent Idaho budget reporting pilot program. The list is not finalized or comprehensive, just an example of interested entities. #idleg #idpol <https://t.co/yDs8WamPAe>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/E90QypvVEAIFrUh.jpg)

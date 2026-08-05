@@ -16,9 +16,9 @@ related:
   - idpol
 ---
 
-Make your plan to vote in May by having your ballot show up in the mail! #idpol https://t.co/C8jrtL9pHs
+Make your plan to vote in May by having your ballot show up in the mail! #idpol <https://t.co/C8jrtL9pHs>
 
 ## Links
-- https://x.com/IDSecOfState/status/1242601831626203137
+- <https://x.com/IDSecOfState/status/1242601831626203137>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1242667148658393089)

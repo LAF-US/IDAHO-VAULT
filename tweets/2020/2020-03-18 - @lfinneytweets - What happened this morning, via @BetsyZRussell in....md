@@ -17,10 +17,10 @@ related:
   - lfinneytweets
 ---
 
-What happened this morning, via @BetsyZRussell in @TheIdahoPress. https://t.co/5nsVEhtwGO
+What happened this morning, via @BetsyZRussell in @TheIdahoPress. <https://t.co/5nsVEhtwGO>
 
 ## Links
-- https://www.idahopress.com/eyeonboise/house-opens-with-debate-on-hb-a-rep-scott-s/article_4e64d23c-0cfc-5398-9b38-ee5596f2674b.html
+- <https://www.idahopress.com/eyeonboise/house-opens-with-debate-on-hb-a-rep-scott-s/article_4e64d23c-0cfc-5398-9b38-ee5596f2674b.html>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

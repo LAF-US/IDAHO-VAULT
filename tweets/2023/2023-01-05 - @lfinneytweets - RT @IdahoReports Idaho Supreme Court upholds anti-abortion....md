@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoReports: Idaho Supreme Court upholds anti-abortion legislation https://t.co/KT1gVB8q9R
+RT @IdahoReports: Idaho Supreme Court upholds anti-abortion legislation <https://t.co/KT1gVB8q9R>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2023/01/05/idaho-supreme-court-upholds-anti-abortion-legislation/
+- <https://blog.idahoreports.idahoptv.org/2023/01/05/idaho-supreme-court-upholds-anti-abortion-legislation/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1611125684348538881)

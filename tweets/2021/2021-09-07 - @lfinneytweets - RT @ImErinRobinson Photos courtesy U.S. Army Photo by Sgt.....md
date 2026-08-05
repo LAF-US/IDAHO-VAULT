@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-RT @ImErinRobinson: Photos courtesy: U.S. Army Photo by Sgt. Kaden D. Pitt https://t.co/H90RrRM2J4
+RT @ImErinRobinson: Photos courtesy: U.S. Army Photo by Sgt. Kaden D. Pitt <https://t.co/H90RrRM2J4>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/E-txHqGVQAMAYqS.jpg)

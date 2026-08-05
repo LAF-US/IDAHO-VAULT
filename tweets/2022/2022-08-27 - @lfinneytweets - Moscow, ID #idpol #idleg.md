@@ -18,7 +18,7 @@ related:
   - idleg
 ---
 
-Moscow, ID #idpol #idleg https://t.co/zJgyKoj0U0
+Moscow, ID #idpol #idleg <https://t.co/zJgyKoj0U0>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FbIWdZoaMAADmG3.jpg)

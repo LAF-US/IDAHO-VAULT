@@ -18,6 +18,6 @@ related:
   - IdahoCOVID19
 ---
 
-RT @IdahoReports: Live on Facebook to answer viewer #IdahoCOVID19 questions with @Governor Little and @IDHW Director Jeppesen: https://t.co…
+RT @IdahoReports: Live on Facebook to answer viewer #IdahoCOVID19 questions with @Governor Little and @IDHW Director Jeppesen: <https://t.co…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1250967449794564097)

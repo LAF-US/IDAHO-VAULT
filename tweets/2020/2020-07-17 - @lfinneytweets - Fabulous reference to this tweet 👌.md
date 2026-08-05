@@ -15,10 +15,10 @@ related:
 ---
 
 Fabulous reference to this tweet 👌
-https://t.co/ylde5WQ9jx
+<https://t.co/ylde5WQ9jx>
 
 ## Links
-- https://x.com/ISPNorthIdaho/status/1268378800993103874
+- <https://x.com/ISPNorthIdaho/status/1268378800993103874>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

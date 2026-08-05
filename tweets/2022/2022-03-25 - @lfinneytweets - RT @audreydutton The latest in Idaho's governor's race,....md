@@ -17,6 +17,6 @@ related:
   - lfinneytweets
 ---
 
-RT @audreydutton: The latest in Idaho's governor's race, from our friends at @KBSX915 and the dogged research of @RadioDawson  https://t.co…
+RT @audreydutton: The latest in Idaho's governor's race, from our friends at @KBSX915 and the dogged research of @RadioDawson  <https://t.co…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1507441747361640448)

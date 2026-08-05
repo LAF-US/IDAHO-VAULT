@@ -19,7 +19,7 @@ related:
   - idpol
 ---
 
-HCR 2 passes the House 55-15. Democrats, Manwaring, Syme & Wood against. #idleg #idpol https://t.co/yIpvDWvDyb
+HCR 2 passes the House 55-15. Democrats, Manwaring, Syme & Wood against. #idleg #idpol <https://t.co/yIpvDWvDyb>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/Esmd254U0AEIdsQ.jpg)

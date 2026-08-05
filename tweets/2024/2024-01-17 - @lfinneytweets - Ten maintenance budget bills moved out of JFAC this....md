@@ -21,10 +21,10 @@ related:
 ---
 
 Ten "maintenance budget" bills moved out of JFAC this morning. Democrats are concerned about the process. Story coming at @IdahoReports in the morning. #idleg #idpol 
-https://t.co/ywWCrrM6Q5 https://t.co/nj7PGD6itv
+<https://t.co/ywWCrrM6Q5> <https://t.co/nj7PGD6itv>
 
 ## Links
-- https://public.flourish.studio/visualisation/16478092/
+- <https://public.flourish.studio/visualisation/16478092/>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GEAzTgQaMAE34TX.png)

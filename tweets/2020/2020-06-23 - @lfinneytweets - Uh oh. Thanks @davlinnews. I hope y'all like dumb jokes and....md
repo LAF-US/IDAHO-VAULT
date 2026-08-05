@@ -15,7 +15,7 @@ related:
 
 Uh oh. Thanks @davlinnews. 
 
-I hope y'all like dumb jokes and news about Idaho. https://t.co/GORXLbdjQG
+I hope y'all like dumb jokes and news about Idaho. <https://t.co/GORXLbdjQG>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EbN9VriUYAEjIvk.jpg)

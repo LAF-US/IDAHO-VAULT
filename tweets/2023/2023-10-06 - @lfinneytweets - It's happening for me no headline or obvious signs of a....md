@@ -13,7 +13,7 @@ related:
   - lfinneytweets
 ---
 
-It's happening for me: no headline or obvious signs of a link vs. photo - aside from url in lower right corner - at least on desktop. https://t.co/Z5l9eF45AO
+It's happening for me: no headline or obvious signs of a link vs. photo - aside from url in lower right corner - at least on desktop. <https://t.co/Z5l9eF45AO>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/F7xXEIJbkAAb_AV.jpg)

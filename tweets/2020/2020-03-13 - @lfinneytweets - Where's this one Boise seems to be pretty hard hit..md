@@ -17,10 +17,10 @@ related:
 ---
 
 @KirkSiegler Where's this one? Boise seems to be pretty hard hit. 
-https://t.co/h6aoUMbpvs
+<https://t.co/h6aoUMbpvs>
 
 ## Links
-- https://x.com/madisonhardy05/status/1238282862341681152
+- <https://x.com/madisonhardy05/status/1238282862341681152>
 
 *In reply to [@KirkSiegler](https://twitter.com/KirkSiegler)*
 

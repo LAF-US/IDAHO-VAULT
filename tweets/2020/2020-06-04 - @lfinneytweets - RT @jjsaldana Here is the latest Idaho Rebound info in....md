@@ -20,7 +20,7 @@ related:
   - idpol
 ---
 
-RT @jjsaldana: Here is the latest Idaho Rebound info in Spanish. #COVIDidaho #idpol https://t.co/bOW3XGzu4U
+RT @jjsaldana: Here is the latest Idaho Rebound info in Spanish. #COVIDidaho #idpol <https://t.co/bOW3XGzu4U>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EZsf5-OU4AAYWk_.jpg)

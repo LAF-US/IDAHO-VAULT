@@ -18,9 +18,9 @@ related:
   - idleg
 ---
 
-All this and much more coming up tonight! #idpol #idleg https://t.co/45Jz7Gpcz1
+All this and much more coming up tonight! #idpol #idleg <https://t.co/45Jz7Gpcz1>
 
 ## Links
-- https://x.com/IdahoReports/status/1849954179592134822
+- <https://x.com/IdahoReports/status/1849954179592134822>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1849961985892651195)

@@ -18,7 +18,7 @@ related:
   - SEJ2023
 ---
 
-"This is a three-act story. We're telling acts one and two," screenwriter and Ken Burns creative partner Dayton Duncan says of The American Buffalo, premiering on @PBS this October. #SEJ2023 https://t.co/NJ7YxBpg2y
+"This is a three-act story. We're telling acts one and two," screenwriter and Ken Burns creative partner Dayton Duncan says of The American Buffalo, premiering on @PBS this October. #SEJ2023 <https://t.co/NJ7YxBpg2y>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FuQkrj_aAAAUAZQ.jpg)

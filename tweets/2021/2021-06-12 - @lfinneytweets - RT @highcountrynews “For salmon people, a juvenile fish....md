@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-RT @highcountrynews: “For salmon people, a juvenile fish kill is an absolute worst-case scenario.” https://t.co/BvQR2Mm1bt
+RT @highcountrynews: “For salmon people, a juvenile fish kill is an absolute worst-case scenario.” <https://t.co/BvQR2Mm1bt>
 
 ## Links
-- https://hcne.ws/3wE7YT3
+- <https://hcne.ws/3wE7YT3>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1403732991310921729)

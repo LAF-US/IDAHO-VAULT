@@ -19,10 +19,10 @@ related:
 ---
 
 @SurelySherly6 @hmaboi @IdahoReports It will be here in the digital media archive. The debate and vote was in the Senate Chambers on Feb 3.
-https://t.co/JMrdRyApon
+<https://t.co/JMrdRyApon>
 
 ## Links
-- http://lso.legislature.idaho.gov/MediaArchive
+- <http://lso.legislature.idaho.gov/MediaArchive>
 
 *In reply to [@SurelySherly6](https://twitter.com/SurelySherly6)*
 

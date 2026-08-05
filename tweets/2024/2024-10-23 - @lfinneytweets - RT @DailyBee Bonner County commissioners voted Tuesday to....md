@@ -17,9 +17,9 @@ related:
 
 RT @DailyBee: Bonner County commissioners voted Tuesday to approve a lease service agreement for a baby box.
 
-https://t.co/EjHIBWkS3q
+<https://t.co/EjHIBWkS3q>
 
 ## Links
-- https://bonnercountydailybee.com/news/2024/oct/23/bocc-approves-baby-box-agreement/
+- <https://bonnercountydailybee.com/news/2024/oct/23/bocc-approves-baby-box-agreement/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1849206791567282238)

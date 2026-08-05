@@ -23,10 +23,10 @@ related:
 ---
 
 @ScottMcIntosh12 @IDSecOfState explained their reasoning in pretty decent detail. I wonder how many absentee ballots an extra month's effort would turn out. #idpol #EarlyVoteIdaho
-https://t.co/5ZQM3bkvez
+<https://t.co/5ZQM3bkvez>
 
 ## Links
-- https://x.com/NateBrownNews/status/1243679949082357760
+- <https://x.com/NateBrownNews/status/1243679949082357760>
 
 *In reply to [@ScottMcIntosh12](https://twitter.com/ScottMcIntosh12)*
 

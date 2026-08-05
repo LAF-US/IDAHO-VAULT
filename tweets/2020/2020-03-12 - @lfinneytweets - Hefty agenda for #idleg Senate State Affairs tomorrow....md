@@ -18,7 +18,7 @@ related:
   - idpol
 ---
 
-Hefty agenda for #idleg Senate State Affairs tomorrow morning. New property tax measures after the failure of H409, daylight saving time part 2, abortion funding, warrantless arrests, guns in schools part 2. #idpol https://t.co/Li5OpUQ5Ev
+Hefty agenda for #idleg Senate State Affairs tomorrow morning. New property tax measures after the failure of H409, daylight saving time part 2, abortion funding, warrantless arrests, guns in schools part 2. #idpol <https://t.co/Li5OpUQ5Ev>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/ES7WUokUYAEOVTE.jpg)

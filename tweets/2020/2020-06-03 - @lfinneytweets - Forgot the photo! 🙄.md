@@ -17,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-@annehelen @DailyBee Forgot the photo! 🙄 https://t.co/EpBrpq1RlU
+@annehelen @DailyBee Forgot the photo! 🙄 <https://t.co/EpBrpq1RlU>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EZnjpgOUYAETpa_.jpg)

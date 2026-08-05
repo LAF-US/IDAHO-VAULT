@@ -20,9 +20,9 @@ related:
   - idpol
 ---
 
-RT @BetsyZRussell: Eye on Boise: @idahoednews: Idaho's primary: Following the money, by @KevinRichert #idpol https://t.co/hmGyptDoGp https:…
+RT @BetsyZRussell: Eye on Boise: @idahoednews: Idaho's primary: Following the money, by @KevinRichert #idpol <https://t.co/hmGyptDoGp> https:…
 
 ## Links
-- https://www.idahopress.com/eyeonboise/idahos-primary-following-the-money/article_2d707731-742c-56c9-8c34-d3fe45d7e757.html
+- <https://www.idahopress.com/eyeonboise/idahos-primary-following-the-money/article_2d707731-742c-56c9-8c34-d3fe45d7e757.html>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1262474911638892545)

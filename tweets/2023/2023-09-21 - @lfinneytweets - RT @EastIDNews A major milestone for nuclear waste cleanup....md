@@ -15,6 +15,6 @@ related:
   - lfinneytweets
 ---
 
-RT @EastIDNews: A major milestone for nuclear waste cleanup at the Idaho Environmental Coalition was just reached.     https://t.co/AUemQYm…
+RT @EastIDNews: A major milestone for nuclear waste cleanup at the Idaho Environmental Coalition was just reached.     <https://t.co/AUemQYm…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1704975396897431941)

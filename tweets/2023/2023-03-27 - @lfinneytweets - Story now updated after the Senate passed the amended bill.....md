@@ -18,9 +18,9 @@ related:
   - idleg
 ---
 
-Story now updated after the Senate passed the amended bill. It'll be up to House members tomorrow whether they want to send it to @GovernorLittle or stay and fight about the election date. #idleg https://t.co/7Ul1mXpNpv
+Story now updated after the Senate passed the amended bill. It'll be up to House members tomorrow whether they want to send it to @GovernorLittle or stay and fight about the election date. #idleg <https://t.co/7Ul1mXpNpv>
 
 ## Links
-- https://x.com/IdahoReports/status/1640464129403101186
+- <https://x.com/IdahoReports/status/1640464129403101186>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1640477782894592001)

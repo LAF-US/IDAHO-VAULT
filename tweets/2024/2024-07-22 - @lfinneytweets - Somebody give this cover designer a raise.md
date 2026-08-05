@@ -13,9 +13,9 @@ related:
   - lfinneytweets
 ---
 
-Somebody give this cover designer a raise https://t.co/SeaYYd9msr
+Somebody give this cover designer a raise <https://t.co/SeaYYd9msr>
 
 ## Links
-- https://x.com/TIME/status/1815126532341297385
+- <https://x.com/TIME/status/1815126532341297385>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1815180370058654009)

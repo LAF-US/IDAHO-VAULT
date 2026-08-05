@@ -22,7 +22,7 @@ related:
   - KenworthyPAC
 ---
 
-Had a great time experiencing the #Oscars90 tonight with @KenworthyPAC #KPACOscars #KenworthyPAC https://t.co/MB8jZ8E5tR
+Had a great time experiencing the #Oscars90 tonight with @KenworthyPAC #KPACOscars #KenworthyPAC <https://t.co/MB8jZ8E5tR>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/DXg31HYU8AAgcrH.jpg)

@@ -17,9 +17,9 @@ related:
 ---
 
 Senate State Affairs is taking testimony on an emergency declaration resolution that tries to walk the line between ending restrictions and maintaining FEMA funds. Testimony has been concerned that an emergency could exist for funding purposes. #idleg 
-https://t.co/57arZuLiHi
+<https://t.co/57arZuLiHi>
 
 ## Links
-- https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2021/legislation/SCR101.pdf
+- <https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2021/legislation/SCR101.pdf>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1351552187101396998)

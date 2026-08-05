@@ -20,9 +20,9 @@ related:
   - idedu
 ---
 
-RT @idahoednews: There was ... a lot ... happening at the #idleg today. Get a full, updated roundup here. #idedu https://t.co/ZhDA36JjUG
+RT @idahoednews: There was ... a lot ... happening at the #idleg today. Get a full, updated roundup here. #idedu <https://t.co/ZhDA36JjUG>
 
 ## Links
-- https://idahoednews.org/2sOLv
+- <https://idahoednews.org/2sOLv>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1628926480469344259)

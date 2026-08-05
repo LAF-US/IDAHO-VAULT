@@ -14,10 +14,10 @@ related:
   - lfinneytweets
 ---
 
-And here is that second vaccination group in more detail. That document is here: https://t.co/f4ym9L3DqC https://t.co/dHvRBH0afq
+And here is that second vaccination group in more detail. That document is here: <https://t.co/f4ym9L3DqC> <https://t.co/dHvRBH0afq>
 
 ## Links
-- https://coronavirus.idaho.gov/wp-content/uploads/2021/01/Prioritization-Groups-1-and-2-FINAL.pdf
+- <https://coronavirus.idaho.gov/wp-content/uploads/2021/01/Prioritization-Groups-1-and-2-FINAL.pdf>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/ErkGJHRVEAELzWE.jpg)

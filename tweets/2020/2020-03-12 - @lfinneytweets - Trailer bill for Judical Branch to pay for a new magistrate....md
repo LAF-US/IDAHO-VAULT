@@ -17,10 +17,10 @@ related:
 ---
 
 @BetsyZRussell Trailer bill for Judical Branch to pay for a new magistrate judge and court reporter in Judicial District 1, specifically Bonner County. Passes unanimously as well. 
-https://t.co/DMBCj64vJV
+<https://t.co/DMBCj64vJV>
 
 ## Links
-- https://legislature.idaho.gov/sessioninfo/2020/legislation/s1356/
+- <https://legislature.idaho.gov/sessioninfo/2020/legislation/s1356/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

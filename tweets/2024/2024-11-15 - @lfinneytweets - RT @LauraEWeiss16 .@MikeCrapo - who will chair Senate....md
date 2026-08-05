@@ -16,6 +16,6 @@ related:
   - lfinneytweets
 ---
 
-RT @LauraEWeiss16: .@MikeCrapo - who will chair Senate Finance Committee next year - on RFK Jr.’s nomination for HHS: https://t.co/po3wCjvh…
+RT @LauraEWeiss16: .@MikeCrapo - who will chair Senate Finance Committee next year - on RFK Jr.’s nomination for HHS: <https://t.co/po3wCjvh…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1857217092237602841)

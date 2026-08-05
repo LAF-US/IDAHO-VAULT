@@ -16,9 +16,9 @@ related:
   - idleg
 ---
 
-Take a tiny break from the #idleg special session and check out one of my favorite places in the world! https://t.co/14K5csIrSC
+Take a tiny break from the #idleg special session and check out one of my favorite places in the world! <https://t.co/14K5csIrSC>
 
 ## Links
-- https://x.com/IdahoPTV/status/1298630781040877568
+- <https://x.com/IdahoPTV/status/1298630781040877568>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1298636427270348802)

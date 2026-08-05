@@ -19,7 +19,7 @@ related:
 ---
 
 RT @madisonhardy05: Don’t be that guy that only votes during presidential elections.
-Nobody likes that guy #vote https://t.co/Tvxgh4VgGE
+Nobody likes that guy #vote <https://t.co/Tvxgh4VgGE>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FDNTC5YUUAMeCX6.jpg)

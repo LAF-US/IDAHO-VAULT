@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-RT @idahomolly: We’ve got 20+ volunteers and 7 pick up trucks loading potatoes to bring them to Hailey and Ketchum. https://t.co/HUWo9bbRpR
+RT @idahomolly: We’ve got 20+ volunteers and 7 pick up trucks loading potatoes to bring them to Hailey and Ketchum. <https://t.co/HUWo9bbRpR>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EWdkzrAVAAI5j8g.jpg)

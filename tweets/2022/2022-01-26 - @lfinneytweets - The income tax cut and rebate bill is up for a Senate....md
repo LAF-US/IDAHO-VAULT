@@ -16,7 +16,7 @@ related:
   - idpol
 ---
 
-The income tax cut and rebate bill is up for a Senate committee hearing, tomorrow at 3 p.m. #idpol https://t.co/FbLrTuOz7i
+The income tax cut and rebate bill is up for a Senate committee hearing, tomorrow at 3 p.m. #idpol <https://t.co/FbLrTuOz7i>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FKD-v0XVgAEA427.jpg)

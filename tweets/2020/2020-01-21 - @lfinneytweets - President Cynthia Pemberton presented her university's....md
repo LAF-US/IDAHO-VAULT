@@ -22,7 +22,7 @@ related:
   - idedu
 ---
 
-@LCSC President Cynthia Pemberton presented her university's budget to JFAC this morning. She brought the helmet to talk about CTE and their new construction training program. #idleg #idpol #idedu https://t.co/N3k7Cti7VA
+@LCSC President Cynthia Pemberton presented her university's budget to JFAC this morning. She brought the helmet to talk about CTE and their new construction training program. #idleg #idpol #idedu <https://t.co/N3k7Cti7VA>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EO03WULUEAE_ksk.jpg)

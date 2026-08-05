@@ -20,6 +20,6 @@ related:
   - idpol
 ---
 
-RT @RuthBrownNews: JFAC members all received a letter from the new interim IDHW director on plans moving forward. #idleg #idpol https://t.c…
+RT @RuthBrownNews: JFAC members all received a letter from the new interim IDHW director on plans moving forward. #idleg #idpol <https://t.c…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1745510821978103968)

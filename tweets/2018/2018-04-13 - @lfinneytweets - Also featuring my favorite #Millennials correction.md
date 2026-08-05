@@ -17,7 +17,7 @@ related:
   - Millennials
 ---
 
-Also featuring my favorite #Millennials correction https://t.co/SkIKDTawbA
+Also featuring my favorite #Millennials correction <https://t.co/SkIKDTawbA>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/DapoaySVQAAl3R3.jpg)

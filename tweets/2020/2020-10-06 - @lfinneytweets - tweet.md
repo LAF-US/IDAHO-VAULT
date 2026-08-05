@@ -14,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-@Aminboise https://t.co/U7ZKnky5EL
+@Aminboise <https://t.co/U7ZKnky5EL>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/Ejq4yv0U8AA0vSK.jpg)

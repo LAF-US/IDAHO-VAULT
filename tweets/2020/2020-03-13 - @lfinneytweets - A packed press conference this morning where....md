@@ -20,7 +20,7 @@ related:
   - idpol
 ---
 
-A packed press conference this morning where @GovernorLittle is declaring a state of emergency to access additional supplies and funds for #COVID19 response. #idpol https://t.co/x7he6nDDP8
+A packed press conference this morning where @GovernorLittle is declaring a state of emergency to access additional supplies and funds for #COVID19 response. #idpol <https://t.co/x7he6nDDP8>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/ETALZ-qXsAERfAW.jpg)

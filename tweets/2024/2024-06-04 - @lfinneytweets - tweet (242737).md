@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-@danielwinvw https://t.co/StWIG2dlUj
+@danielwinvw <https://t.co/StWIG2dlUj>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GPQrlPcbsAE6FF_.jpg)

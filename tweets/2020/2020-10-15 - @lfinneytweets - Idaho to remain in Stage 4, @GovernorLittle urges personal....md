@@ -20,7 +20,7 @@ related:
   - idpol
 ---
 
-Idaho to remain in Stage 4, @GovernorLittle urges personal responsibility to slow spread of virus and prevent healthcare system overload. #IdahoCOVID19 #idpol https://t.co/uCvpq4RFT0
+Idaho to remain in Stage 4, @GovernorLittle urges personal responsibility to slow spread of virus and prevent healthcare system overload. #IdahoCOVID19 #idpol <https://t.co/uCvpq4RFT0>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EkZKl1RU4AAcJ2Q.jpg)

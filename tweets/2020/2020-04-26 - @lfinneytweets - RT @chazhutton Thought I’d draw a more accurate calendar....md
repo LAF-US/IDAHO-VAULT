@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-RT @chazhutton: Thought I’d draw a more accurate calendar for 2020 so far.... https://t.co/hWB9W4PIAH
+RT @chazhutton: Thought I’d draw a more accurate calendar for 2020 so far.... <https://t.co/hWB9W4PIAH>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EWYDRgqWsAE1yLM.jpg)

@@ -15,6 +15,6 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoPTV: Satellites can help you find some Science Trek treasure with Geocaching in Idaho State parks!  Learn more at https://t.co/weD…
+RT @IdahoPTV: Satellites can help you find some Science Trek treasure with Geocaching in Idaho State parks!  Learn more at <https://t.co/weD…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1435732547233714176)

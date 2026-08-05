@@ -13,7 +13,7 @@ related:
   - lfinneytweets
 ---
 
-Pro tip: when you pack extra AA batteries, make sure they're not actually AAA! https://t.co/VG9wzZDixc
+Pro tip: when you pack extra AA batteries, make sure they're not actually AAA! <https://t.co/VG9wzZDixc>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/GP_hdrGaQAAP2xY.jpg)

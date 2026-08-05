@@ -16,9 +16,9 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoPubRadio: Education, tax relief in the 2022 Idaho State of the State Address. @JessicaMegis reports: https://t.co/K8YERCYtj0
+RT @IdahoPubRadio: Education, tax relief in the 2022 Idaho State of the State Address. @JessicaMegis reports: <https://t.co/K8YERCYtj0>
 
 ## Links
-- https://idahopublicradio.wordpress.com/2022/01/16/little-delivers-state-of-the-state-address/
+- <https://idahopublicradio.wordpress.com/2022/01/16/little-delivers-state-of-the-state-address/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1482830001447653378)

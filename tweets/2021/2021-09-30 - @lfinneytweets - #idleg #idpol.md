@@ -18,9 +18,9 @@ related:
   - idpol
 ---
 
-\#idleg #idpol https://t.co/jsKvgHCYMR
+\#idleg #idpol <https://t.co/jsKvgHCYMR>
 
 ## Links
-- https://x.com/BoiseDev/status/1443356999316611074
+- <https://x.com/BoiseDev/status/1443356999316611074>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1443653418405400579)

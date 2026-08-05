@@ -22,9 +22,9 @@ related:
   - EMTALA
 ---
 
-"What they’re saying is... it doesn’t need to be expedited,” said Idaho Attorney General Raúl Labrador. “The U.S. government was making these broad interpretations of EMTALA and was in essence trying to make any hospital an abortion mill." #idleg #idpol #SCOTUS #EMTALA https://t.co/wBI7aRI5GI
+"What they’re saying is... it doesn’t need to be expedited,” said Idaho Attorney General Raúl Labrador. “The U.S. government was making these broad interpretations of EMTALA and was in essence trying to make any hospital an abortion mill." #idleg #idpol #SCOTUS #EMTALA <https://t.co/wBI7aRI5GI>
 
 ## Links
-- https://x.com/IdahoReports/status/1806395924433805743
+- <https://x.com/IdahoReports/status/1806395924433805743>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1806400039880892815)

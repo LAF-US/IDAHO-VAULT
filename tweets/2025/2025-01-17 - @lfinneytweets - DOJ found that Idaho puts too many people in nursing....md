@@ -16,9 +16,9 @@ related:
   - idleg
 ---
 
-DOJ found that Idaho puts too many people in nursing facilities unnecessarily without any plan to reintegrate them into the community. The state could not only improve outcomes for individuals with disabilities, but also save money on Medicaid expenses, the report says. #idleg https://t.co/oNhWa2Orel
+DOJ found that Idaho puts too many people in nursing facilities unnecessarily without any plan to reintegrate them into the community. The state could not only improve outcomes for individuals with disabilities, but also save money on Medicaid expenses, the report says. #idleg <https://t.co/oNhWa2Orel>
 
 ## Links
-- https://x.com/IdahoReports/status/1880337922726977540
+- <https://x.com/IdahoReports/status/1880337922726977540>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1880402158132293756)

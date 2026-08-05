@@ -14,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-Defeated by challenger https://t.co/4UW8ssg45U
+Defeated by challenger <https://t.co/4UW8ssg45U>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GOTLEucaMAA6rQf.jpg)

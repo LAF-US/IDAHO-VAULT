@@ -14,10 +14,10 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/Iz7izsd7OK
+<https://t.co/Iz7izsd7OK>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2022/02/07/house-panel-approves-upping-idahos-grocery-tax-credit/
+- <https://blog.idahoreports.idahoptv.org/2022/02/07/house-panel-approves-upping-idahos-grocery-tax-credit/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

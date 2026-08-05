@@ -14,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-In addition to his cartoonish style, Haring was known for placing his work in public settings and addressing serious topics such as the AIDS crisis and Apartheid in South Africa. https://t.co/79tUAz4aQm
+In addition to his cartoonish style, Haring was known for placing his work in public settings and addressing serious topics such as the AIDS crisis and Apartheid in South Africa. <https://t.co/79tUAz4aQm>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/DfjbUwOWsAAJpSx.jpg)

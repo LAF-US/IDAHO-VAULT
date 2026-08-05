@@ -18,7 +18,7 @@ related:
   - idpol
 ---
 
-District 6 Senate race, as usual, will come down to final absentee ballot counts out of Latah County. House incumbents Mitchell and McCann are sitting pretty. #idleg #idpol https://t.co/iYSAF43yni
+District 6 Senate race, as usual, will come down to final absentee ballot counts out of Latah County. House incumbents Mitchell and McCann are sitting pretty. #idleg #idpol <https://t.co/iYSAF43yni>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GbsQiUxbwAAdNn4.jpg)

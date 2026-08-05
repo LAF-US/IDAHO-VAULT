@@ -16,9 +16,9 @@ related:
   - idpol
 ---
 
-Boogaloo gear and unofficial Aloha shirt 'uniforms' showed up at armed protest in Lewiston this month. #idpol https://t.co/kBrM1MRv5w
+Boogaloo gear and unofficial Aloha shirt 'uniforms' showed up at armed protest in Lewiston this month. #idpol <https://t.co/kBrM1MRv5w>
 
 ## Links
-- https://x.com/jason_a_w/status/1271263681267896320
+- <https://x.com/jason_a_w/status/1271263681267896320>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1271469244488617987)

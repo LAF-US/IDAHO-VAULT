@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-RT @DailyBee: https://t.co/YrbrhxzEFa
+RT @DailyBee: <https://t.co/YrbrhxzEFa>
 
 ## Links
-- https://bonnercountydailybee.com/news/2021/jul/24/report-finds-growth-hispanic-population-work-neede/
+- <https://bonnercountydailybee.com/news/2021/jul/24/report-finds-growth-hispanic-population-work-neede/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1419006613843693569)

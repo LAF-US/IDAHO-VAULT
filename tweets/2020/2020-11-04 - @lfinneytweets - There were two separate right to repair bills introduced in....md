@@ -18,9 +18,9 @@ related:
   - idpol
 ---
 
-There were two separate right to repair bills introduced in the last #idleg session, though neither advanced very far. It'll be interesting to see if the topic comes up again in the '21 session. #idpol https://t.co/bVZGeHmVzs
+There were two separate right to repair bills introduced in the last #idleg session, though neither advanced very far. It'll be interesting to see if the topic comes up again in the '21 session. #idpol <https://t.co/bVZGeHmVzs>
 
 ## Links
-- https://x.com/onthemedia/status/1324083435208613888
+- <https://x.com/onthemedia/status/1324083435208613888>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1324086837762088961)

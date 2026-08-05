@@ -16,9 +16,9 @@ related:
   - idpol
 ---
 
-Any guesses on how something like this would shake out in ID? #idpol https://t.co/T4ro4ieAmw
+Any guesses on how something like this would shake out in ID? #idpol <https://t.co/T4ro4ieAmw>
 
 ## Links
-- https://x.com/Taniel/status/1324113359810211841
+- <https://x.com/Taniel/status/1324113359810211841>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1324119950475186182)

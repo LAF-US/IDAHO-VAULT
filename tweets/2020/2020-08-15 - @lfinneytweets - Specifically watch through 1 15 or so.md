@@ -17,10 +17,10 @@ related:
 ---
 
 @ryannoyance Specifically watch through 1:15 or so
-https://t.co/LhXeKSiCeS
+<https://t.co/LhXeKSiCeS>
 
 ## Links
-- https://youtu.be/xqs626gtTjU
+- <https://youtu.be/xqs626gtTjU>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

@@ -18,7 +18,7 @@ related:
   - Graduation2020
 ---
 
-Commencement is easy when you graduated a year ago. #VandalGrad #Graduation2020 https://t.co/nYMSg7PV4x
+Commencement is easy when you graduated a year ago. #VandalGrad #Graduation2020 <https://t.co/nYMSg7PV4x>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/E1g1jfQUYAAkCd7.jpg)

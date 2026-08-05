@@ -17,10 +17,10 @@ related:
 ---
 
 @NateBrownNews Thanks, I Hate It
-https://t.co/c4hlId7rlW
+<https://t.co/c4hlId7rlW>
 
 ## Links
-- https://www.vice.com/en_us/article/8843w4/we-asked-professional-piercers-if-cuomo-actually-has-nipple-rings
+- <https://www.vice.com/en_us/article/8843w4/we-asked-professional-piercers-if-cuomo-actually-has-nipple-rings>
 
 *In reply to [@NateBrownNews](https://twitter.com/NateBrownNews)*
 

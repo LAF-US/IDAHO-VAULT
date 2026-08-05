@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-RT @tomcoulter_: In front of the Wyoming Capitol. https://t.co/u5JiAX91us
+RT @tomcoulter_: In front of the Wyoming Capitol. <https://t.co/u5JiAX91us>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/ext_tw_video_thumb/1269757759152689156/pu/img/fMrTpjs2eCOidfti.jpg)

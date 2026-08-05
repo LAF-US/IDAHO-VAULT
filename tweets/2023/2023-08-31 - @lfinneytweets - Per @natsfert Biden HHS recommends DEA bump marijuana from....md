@@ -16,9 +16,9 @@ related:
 ---
 
 Per @natsfert: Biden HHS recommends DEA bump marijuana from Schedule I (no medical value, high abuse risk) down to Schedule III (moderate abuse risk). Could have huge effects if DEA takes recommendation. (THC is a schedule I drug under Idaho law however.) 
-https://t.co/BKXLIyZBcn
+<https://t.co/BKXLIyZBcn>
 
 ## Links
-- https://www.politico.com/news/2023/08/30/marijuana-review-move-to-schedule-iii-00113493
+- <https://www.politico.com/news/2023/08/30/marijuana-review-move-to-schedule-iii-00113493>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1697321531960078851)

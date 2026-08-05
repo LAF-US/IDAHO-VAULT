@@ -21,9 +21,9 @@ related:
 ---
 
 Remember how the West Bonner school board was paralyzed last year when two trustees were recalled and a third wasn't showing up to meetings? State lawmakers introduced a bill today that would prevent that from happening again. #idedu #idleg #idpol 
-https://t.co/QpPUbojJds
+<https://t.co/QpPUbojJds>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2024/01/18/bill-printed-to-prevent-quorum-loss-on-school-boards/
+- <https://blog.idahoreports.idahoptv.org/2024/01/18/bill-printed-to-prevent-quorum-loss-on-school-boards/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1748124955987112245)

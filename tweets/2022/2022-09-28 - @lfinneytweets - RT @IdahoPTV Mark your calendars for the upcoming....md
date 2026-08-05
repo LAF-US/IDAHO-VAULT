@@ -26,6 +26,6 @@ related:
   - idahoptv
 ---
 
-RT @IdahoPTV: Mark your calendars for the upcoming #idahodebates on IdahoPTV! #idleg #idpol #idahodebates #idahoptv https://t.co/PZoS5xCb…
+RT @IdahoPTV: Mark your calendars for the upcoming #idahodebates on IdahoPTV! #idleg #idpol #idahodebates #idahoptv <https://t.co/PZoS5xCb…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1575220075640266752)

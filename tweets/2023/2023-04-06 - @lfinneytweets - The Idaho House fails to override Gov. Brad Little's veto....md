@@ -18,7 +18,7 @@ related:
   - idpol
 ---
 
-The Idaho House fails to override Gov. Brad Little's veto on a bill regarding library materials for minors. #idleg #idpol https://t.co/cOr8iurUEo
+The Idaho House fails to override Gov. Brad Little's veto on a bill regarding library materials for minors. #idleg #idpol <https://t.co/cOr8iurUEo>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FtDQUNnakAAUk1x.jpg)

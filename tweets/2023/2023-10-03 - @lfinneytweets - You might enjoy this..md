@@ -17,10 +17,10 @@ related:
 ---
 
 @AndrewBaertlein You might enjoy this. 
-https://t.co/zmwsHOfhqQ
+<https://t.co/zmwsHOfhqQ>
 
 ## Links
-- https://youtu.be/IBum4BroMKU
+- <https://youtu.be/IBum4BroMKU>
 
 *In reply to [@AndrewBaertlein](https://twitter.com/AndrewBaertlein)*
 

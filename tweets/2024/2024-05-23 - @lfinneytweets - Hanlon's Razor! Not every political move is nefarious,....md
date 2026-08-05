@@ -13,9 +13,9 @@ related:
   - lfinneytweets
 ---
 
-Hanlon's Razor! Not every political move is nefarious, sometimes humans make human errors. https://t.co/Y1uZuupmQd
+Hanlon's Razor! Not every political move is nefarious, sometimes humans make human errors. <https://t.co/Y1uZuupmQd>
 
 ## Links
-- https://x.com/tucker_id/status/1793672220142981179
+- <https://x.com/tucker_id/status/1793672220142981179>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1793681770120114322)

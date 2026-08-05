@@ -18,9 +18,9 @@ related:
   - flashback
 ---
 
-Friendly reminder that at this time one year ago, COVID-19 vaccines weren't widely available and the issue at hand was who'd be the first in line to get them. #IdahoCOVID19 #flashback https://t.co/CQrVUvp3Xg
+Friendly reminder that at this time one year ago, COVID-19 vaccines weren't widely available and the issue at hand was who'd be the first in line to get them. #IdahoCOVID19 #flashback <https://t.co/CQrVUvp3Xg>
 
 ## Links
-- https://x.com/IdahoReports/status/1344081589056253952
+- <https://x.com/IdahoReports/status/1344081589056253952>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1468327128387047425)

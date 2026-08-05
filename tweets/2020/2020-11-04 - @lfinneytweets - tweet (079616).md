@@ -17,10 +17,10 @@ related:
   - lfinneytweets
 ---
 
-@lukemayville @danielwinlander https://t.co/eGX1vgqLcd
+@lukemayville @danielwinlander <https://t.co/eGX1vgqLcd>
 
 ## Links
-- https://x.com/lfinneytweets/status/1323900452375654402
+- <https://x.com/lfinneytweets/status/1323900452375654402>
 
 *In reply to [@lukemayville](https://twitter.com/lukemayville)*
 

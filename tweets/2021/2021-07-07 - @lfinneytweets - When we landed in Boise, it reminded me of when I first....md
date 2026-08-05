@@ -16,9 +16,9 @@ related:
   - idpol
 ---
 
-"When we landed in Boise, it reminded me of when I first when to Denver fifty years ago and looked around." #idpol https://t.co/XbjORP0w1X
+"When we landed in Boise, it reminded me of when I first when to Denver fifty years ago and looked around." #idpol <https://t.co/XbjORP0w1X>
 
 ## Links
-- https://x.com/TODAYshow/status/1412752064770416649
+- <https://x.com/TODAYshow/status/1412752064770416649>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1412850785684049920)

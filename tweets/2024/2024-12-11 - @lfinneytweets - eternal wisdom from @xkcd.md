@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-eternal wisdom from @xkcd https://t.co/IQjaX6UQpP
+eternal wisdom from @xkcd <https://t.co/IQjaX6UQpP>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/Gei9c3BaEAIeefg.png)

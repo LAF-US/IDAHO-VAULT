@@ -20,6 +20,6 @@ related:
   - COVID19
 ---
 
-RT @BetsyZRussell: Eye on Boise: S-R: Pastor Tim decides against repeat of in-person church services this Sunday #idpol #COVID19 https://t.…
+RT @BetsyZRussell: Eye on Boise: S-R: Pastor Tim decides against repeat of in-person church services this Sunday #idpol #COVID19 <https://t.…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1246176734992429056)

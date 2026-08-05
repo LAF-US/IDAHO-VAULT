@@ -17,6 +17,6 @@ related:
 ---
 
 RT @DonLDay: NEW TONIGHT: So, there could be a big change to the speed limit on Eagle Rd. @Syd__Kidd has you covered:
-https://t.co/KMJhk3m1…
+<https://t.co/KMJhk3m1…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1798182048282378381)

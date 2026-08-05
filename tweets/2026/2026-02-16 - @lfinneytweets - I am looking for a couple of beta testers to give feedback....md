@@ -13,9 +13,9 @@ related:
   - lfinneytweets
 ---
 
-I am looking for a couple of beta testers to give feedback on my revamped 2026 Budget Tracker... DM if interested https://t.co/6uADkIbX6x
+I am looking for a couple of beta testers to give feedback on my revamped 2026 Budget Tracker... DM if interested <https://t.co/6uADkIbX6x>
 
 ## Links
-- https://x.com/lfinneytweets/status/1906890192264581619
+- <https://x.com/lfinneytweets/status/1906890192264581619>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/2023484794957689053)

@@ -14,10 +14,10 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/VlQF4XbMbx
+<https://t.co/VlQF4XbMbx>
 
 ## Links
-- https://cdapress.com/news/2024/may/24/defense-rests-in-defamation-case/
+- <https://cdapress.com/news/2024/may/24/defense-rests-in-defamation-case/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

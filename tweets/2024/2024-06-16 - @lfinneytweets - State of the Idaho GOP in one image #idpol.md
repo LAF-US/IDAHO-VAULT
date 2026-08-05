@@ -16,7 +16,7 @@ related:
   - idpol
 ---
 
-State of the Idaho GOP in one image #idpol https://t.co/jgtllMX12b
+State of the Idaho GOP in one image #idpol <https://t.co/jgtllMX12b>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GQNONmVawAAuqoy.jpg)

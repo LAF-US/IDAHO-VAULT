@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-Shout-out to @ryansuppe for getting me to actually dive into @letterboxd https://t.co/QbO4E8sXNp
+Shout-out to @ryansuppe for getting me to actually dive into @letterboxd <https://t.co/QbO4E8sXNp>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GLksWKjb0AAaffC.jpg)

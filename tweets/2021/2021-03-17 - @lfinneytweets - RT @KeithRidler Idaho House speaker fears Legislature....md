@@ -23,6 +23,6 @@ related:
   - IdahoCovid19
 ---
 
-RT @KeithRidler: Idaho House speaker fears Legislature shutdown amid COVID-19 (from @AP) #idpol #idleg #IdahoCovid19  https://t.co/n0upzF2K…
+RT @KeithRidler: Idaho House speaker fears Legislature shutdown amid COVID-19 (from @AP) #idpol #idleg #IdahoCovid19  <https://t.co/n0upzF2K…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1372258274221813761)

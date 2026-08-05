@@ -18,6 +18,6 @@ related:
 RT @jonesblakej: For comparison, SoS office says turnout rates were lower across Ada and Blaine in 2016:
 
 Ada: 75%
-Blaine: 78% https://t.co…
+Blaine: 78% <https://t.co…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1323828995062820865)

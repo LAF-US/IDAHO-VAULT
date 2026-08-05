@@ -24,10 +24,10 @@ related:
 ---
 
 @PetsPolitics @IDSecOfState The @IdahoCapitalSun reports Young was already intending to request a recount. But now her campaign doesn't have to pay for it! #idleg #idpol 
-https://t.co/O8omjl7XuD
+<https://t.co/O8omjl7XuD>
 
 ## Links
-- https://idahocapitalsun.com/2024/05/24/gap-in-closest-idaho-legislative-primary-race-narrows-to-just-two-votes-as-recount-looms/
+- <https://idahocapitalsun.com/2024/05/24/gap-in-closest-idaho-legislative-primary-race-narrows-to-just-two-votes-as-recount-looms/>
 
 *In reply to [@PetsPolitics](https://twitter.com/PetsPolitics)*
 

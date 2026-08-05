@@ -18,6 +18,6 @@ related:
 ---
 
 RT @IdahoPTV: Your daily Idaho coronavirus update from @IdahoPTV's @IdahoReports with @davlinnews: #IdahoCovid19
-https://t.co/KgLJKksPQB
+<https://t.co/KgLJKksPQB>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1244781849508864002)

@@ -16,10 +16,10 @@ related:
   - lfinneytweets
 ---
 
-@colinmnash https://t.co/vJXDz5hlI9
+@colinmnash <https://t.co/vJXDz5hlI9>
 
 ## Links
-- https://www.dataforprogress.org/blog/2020/3/9/biden-ahead-mi-id
+- <https://www.dataforprogress.org/blog/2020/3/9/biden-ahead-mi-id>
 
 *In reply to [@colinmnash](https://twitter.com/colinmnash)*
 

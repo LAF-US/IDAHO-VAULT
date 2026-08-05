@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-@sanford_nate Dakota lives! https://t.co/jaVtR8e2gp
+@sanford_nate Dakota lives! <https://t.co/jaVtR8e2gp>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GKdWICfaYAAbKiu.jpg)

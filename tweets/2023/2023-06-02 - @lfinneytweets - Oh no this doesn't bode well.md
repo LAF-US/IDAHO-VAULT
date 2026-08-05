@@ -14,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-Oh no this doesn't bode well https://t.co/AY86cV1PLZ
+Oh no this doesn't bode well <https://t.co/AY86cV1PLZ>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/Fxo4ZI9aIAAkV7c.jpg)

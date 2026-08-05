@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-RT @DylanDailyBee: Here are just a couple photos I took at today's Back the Bonner Blue event. https://t.co/drBy0PDTbB
+RT @DylanDailyBee: Here are just a couple photos I took at today's Back the Bonner Blue event. <https://t.co/drBy0PDTbB>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EeXiWhzU4AAvojI.jpg)

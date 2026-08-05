@@ -20,10 +20,10 @@ related:
 ---
 
 More from @ThePostRegister: Anonymous political flyers came from a law client of the Bonneville party chair. #idpol 
-https://t.co/hD3JKwg7uH
+<https://t.co/hD3JKwg7uH>
 
 ## Links
-- https://www.postregister.com/news/local/bonneville-republican-party-chair-connected-to-election-door-hangers/article_a3e9657d-bcea-5b56-8cae-acc97edd97a5.html
+- <https://www.postregister.com/news/local/bonneville-republican-party-chair-connected-to-election-door-hangers/article_a3e9657d-bcea-5b56-8cae-acc97edd97a5.html>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

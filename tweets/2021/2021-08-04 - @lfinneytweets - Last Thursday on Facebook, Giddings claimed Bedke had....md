@@ -14,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-Last Thursday on Facebook, Giddings claimed Bedke had authorized the subpoena for her to appear. On the first hearing day, Dixon told me the committee issued subpoenas for all their witnesses in both the Giddings and von Ehlinger hearings, which he described as standard practice. https://t.co/217Psvu2uh
+Last Thursday on Facebook, Giddings claimed Bedke had authorized the subpoena for her to appear. On the first hearing day, Dixon told me the committee issued subpoenas for all their witnesses in both the Giddings and von Ehlinger hearings, which he described as standard practice. <https://t.co/217Psvu2uh>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/E76pYC-VoAUm3xF.jpg)

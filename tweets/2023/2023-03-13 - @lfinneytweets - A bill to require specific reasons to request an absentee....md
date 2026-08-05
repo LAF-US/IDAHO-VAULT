@@ -18,7 +18,7 @@ related:
   - idpol
 ---
 
-A bill to require specific reasons to request an absentee ballot has failed in the Idaho House. #idleg #idpol https://t.co/mktLKHkiZX
+A bill to require specific reasons to request an absentee ballot has failed in the Idaho House. #idleg #idpol <https://t.co/mktLKHkiZX>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FrHm9wjaIAEaQBa.jpg)

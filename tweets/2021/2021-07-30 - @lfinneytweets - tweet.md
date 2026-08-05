@@ -17,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-@VoteMorales @davlinnews @IdahoReports @pocketcasts https://t.co/6qSBjDJAwX
+@VoteMorales @davlinnews @IdahoReports @pocketcasts <https://t.co/6qSBjDJAwX>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/E7lM1K6VcAAPpsn.jpg)

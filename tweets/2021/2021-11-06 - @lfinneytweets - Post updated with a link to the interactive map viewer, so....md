@@ -18,9 +18,9 @@ related:
   - idpol
 ---
 
-Post updated with a link to the interactive map viewer, so my fellow redistricting nerds can get down to the street level. (Plus some halfway-decent screenshots for the less tech savvy.) #idleg #idpol https://t.co/qoCqfyQMcg
+Post updated with a link to the interactive map viewer, so my fellow redistricting nerds can get down to the street level. (Plus some halfway-decent screenshots for the less tech savvy.) #idleg #idpol <https://t.co/qoCqfyQMcg>
 
 ## Links
-- https://x.com/IdahoReports/status/1456751551465209857
+- <https://x.com/IdahoReports/status/1456751551465209857>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1456781879110111238)

@@ -20,7 +20,7 @@ related:
   - idleg
 ---
 
-RT @IdahoReports: We have an announcement to make. #idpol #idleg https://t.co/V3FHsiLRmE
+RT @IdahoReports: We have an announcement to make. #idpol #idleg <https://t.co/V3FHsiLRmE>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/EXCv_BkU8AANeDy.jpg)

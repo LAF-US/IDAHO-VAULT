@@ -15,6 +15,6 @@ related:
   - lfinneytweets
 ---
 
-RT @apalermotweets: design a flag that reflects boise, they said https://t.co/dln5MXeOFQ
+RT @apalermotweets: design a flag that reflects boise, they said <https://t.co/dln5MXeOFQ>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1910048038082752739)

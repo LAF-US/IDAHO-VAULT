@@ -17,10 +17,10 @@ related:
 ---
 
 Really trying to push out all the dedicated users that came with the platform you bought aren't you @elonmusk 
-https://t.co/7XEUJ5emYJ
+<https://t.co/7XEUJ5emYJ>
 
 ## Links
-- https://www.socialmediatoday.com/news/twitter-looks-to-make-tweetdeck-a-twitter-blue-exclusive-feature/642451/
+- <https://www.socialmediatoday.com/news/twitter-looks-to-make-tweetdeck-a-twitter-blue-exclusive-feature/642451/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

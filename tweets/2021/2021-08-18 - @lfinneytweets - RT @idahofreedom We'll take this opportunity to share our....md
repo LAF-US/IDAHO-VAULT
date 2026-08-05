@@ -20,9 +20,9 @@ related:
   - idpol
 ---
 
-RT @idahofreedom: We'll take this opportunity to share our new media policy with the Twitterverse: https://t.co/AsYGJaLWCR #idleg #idpol
+RT @idahofreedom: We'll take this opportunity to share our new media policy with the Twitterverse: <https://t.co/AsYGJaLWCR> #idleg #idpol
 
 ## Links
-- https://idahofreedom.org/media-policy/
+- <https://idahofreedom.org/media-policy/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1428121435348688898)

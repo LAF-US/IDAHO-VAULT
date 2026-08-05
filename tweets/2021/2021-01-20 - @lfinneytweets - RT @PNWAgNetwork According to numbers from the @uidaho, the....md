@@ -21,6 +21,6 @@ related:
 
 RT @PNWAgNetwork: According to numbers from the @uidaho, the #Idaho farm GDP has grown at twice the rate of the state’s GDP.
 
-https://t.co/…
+<https://t.co/…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1351955558681571328)

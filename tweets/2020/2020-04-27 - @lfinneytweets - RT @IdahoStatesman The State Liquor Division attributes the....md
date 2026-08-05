@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoStatesman: The State Liquor Division attributes the anomaly primarily to a “misunderstanding.’ https://t.co/njl3GmTPEB
+RT @IdahoStatesman: The State Liquor Division attributes the anomaly primarily to a “misunderstanding.’ <https://t.co/njl3GmTPEB>
 
 ## Links
-- https://trib.al/pW3Y68h
+- <https://trib.al/pW3Y68h>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1254857532373209089)

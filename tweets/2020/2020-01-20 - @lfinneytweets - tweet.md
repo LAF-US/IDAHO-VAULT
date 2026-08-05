@@ -19,7 +19,7 @@ related:
   - lfinneytweets
 ---
 
-@LCSC @IdahoStateU @BoiseState @uidaho https://t.co/SFlmXBEzkE
+@LCSC @IdahoStateU @BoiseState @uidaho <https://t.co/SFlmXBEzkE>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EOvOBSqU8AY_hzw.jpg)

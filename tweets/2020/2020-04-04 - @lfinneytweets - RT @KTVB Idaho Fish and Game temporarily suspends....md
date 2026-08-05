@@ -15,6 +15,6 @@ related:
   - lfinneytweets
 ---
 
-RT @KTVB: Idaho Fish and Game temporarily suspends nonresident sales of permits, licenses and tags due to coronavirus https://t.co/vUcvt0u3…
+RT @KTVB: Idaho Fish and Game temporarily suspends nonresident sales of permits, licenses and tags due to coronavirus <https://t.co/vUcvt0u3…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1246495374014996481)

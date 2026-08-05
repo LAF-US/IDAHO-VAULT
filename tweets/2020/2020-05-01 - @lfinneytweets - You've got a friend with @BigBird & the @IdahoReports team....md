@@ -20,9 +20,9 @@ related:
   - IdahoCOVID19
 ---
 
-You've got a friend with @BigBird & the @IdahoReports team at @IdahoPTV! 😷 #IdahoCOVID19 https://t.co/PklG8t76nL
+You've got a friend with @BigBird & the @IdahoReports team at @IdahoPTV! 😷 #IdahoCOVID19 <https://t.co/PklG8t76nL>
 
 ## Links
-- https://x.com/IdahoMarissa/status/1256061560088170496
+- <https://x.com/IdahoMarissa/status/1256061560088170496>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1256104047343398913)

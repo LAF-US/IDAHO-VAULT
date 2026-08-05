@@ -20,9 +20,9 @@ related:
   - idpol
 ---
 
-\#idedu #idleg #idpol https://t.co/vqvbRks2BE
+\#idedu #idleg #idpol <https://t.co/vqvbRks2BE>
 
 ## Links
-- https://x.com/apalermotweets/status/1402828832168579083
+- <https://x.com/apalermotweets/status/1402828832168579083>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1402854766523293696)

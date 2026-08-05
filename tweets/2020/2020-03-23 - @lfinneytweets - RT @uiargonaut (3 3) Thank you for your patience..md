@@ -17,9 +17,9 @@ related:
 
 RT @uiargonaut: (3/3) Thank you for your patience.
 
-https://t.co/wQsLrQH2vP
+<https://t.co/wQsLrQH2vP>
 
 ## Links
-- https://www.uiargonaut.com/2020/03/14/covid-19-documented-cases-in-idaho/
+- <https://www.uiargonaut.com/2020/03/14/covid-19-documented-cases-in-idaho/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1241957853839024129)

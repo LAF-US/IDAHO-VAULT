@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-RT @NateNewsNow: https://t.co/gZskuoNftB
+RT @NateNewsNow: <https://t.co/gZskuoNftB>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/Fv8zo1waIAARgJ0.jpg)

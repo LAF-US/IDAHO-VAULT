@@ -13,7 +13,7 @@ related:
   - lfinneytweets
 ---
 
-I see https://t.co/fCitpfkUrz
+I see <https://t.co/fCitpfkUrz>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EbYatzlUYAA0amI.png)

@@ -16,9 +16,9 @@ related:
 ---
 
 The Bonners Ferry @BFHerald is looking for a reporter to cover Boundary County schools, city government, and general assignment stories. 
-https://t.co/6YNsSiRQMK
+<https://t.co/6YNsSiRQMK>
 
 ## Links
-- https://www.journalismjobs.com/1659890-reporter-bonners-ferry-herald
+- <https://www.journalismjobs.com/1659890-reporter-bonners-ferry-herald>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1255249717409316868)

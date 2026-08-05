@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-RT @CBS2Boise: The chart. https://t.co/hyYqJZZJrE
+RT @CBS2Boise: The chart. <https://t.co/hyYqJZZJrE>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EmlXn_bVkAAkS6E.png)

@@ -17,7 +17,7 @@ related:
 
 RT @nicoleMfoy: You: the media LOVES the pandemic
 
-the media by Friday, every time: https://t.co/jEwftQKeuh
+the media by Friday, every time: <https://t.co/jEwftQKeuh>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/EkdsobGU8AECGqi.jpg)

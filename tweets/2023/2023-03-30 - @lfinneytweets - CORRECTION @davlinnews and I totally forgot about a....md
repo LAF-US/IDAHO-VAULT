@@ -20,10 +20,10 @@ related:
 ---
 
 @KevinRichert CORRECTION: @davlinnews and I totally forgot about a pandemic-motivated emergency powers bill override that failed in 2021. #idleg 
-https://t.co/OP7hMlBRVY
+<https://t.co/OP7hMlBRVY>
 
 ## Links
-- https://legislature.idaho.gov/sessioninfo/2021/legislation/H0135/
+- <https://legislature.idaho.gov/sessioninfo/2021/legislation/H0135/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

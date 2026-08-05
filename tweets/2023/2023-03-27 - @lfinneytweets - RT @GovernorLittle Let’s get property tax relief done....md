@@ -15,10 +15,10 @@ related:
   - lfinneytweets
 ---
 
-RT @GovernorLittle: Let’s get property tax relief done right. Read my full statement here: https://t.co/wOwpkXsCCe https://t.co/piAOhh8k7u
+RT @GovernorLittle: Let’s get property tax relief done right. Read my full statement here: <https://t.co/wOwpkXsCCe> <https://t.co/piAOhh8k7u>
 
 ## Links
-- https://gov.idaho.gov/pressrelease/gov-little-lets-get-property-tax-relief-done-right/
+- <https://gov.idaho.gov/pressrelease/gov-little-lets-get-property-tax-relief-done-right/>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/ext_tw_video_thumb/1640426020733059072/pu/img/CBqhvw8FrmzHd6EG.jpg)

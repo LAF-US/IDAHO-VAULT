@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-The Kino Short Film Festival, in its 20th year, is a showcase event for @uidaho film & television majors. Students write, produce, direct and edit their own short film to debut. This year features a 12-film mix of dance, drama, comedy, commentary & animation with director Q&As. https://t.co/FVZWjHXiLi
+The Kino Short Film Festival, in its 20th year, is a showcase event for @uidaho film & television majors. Students write, produce, direct and edit their own short film to debut. This year features a 12-film mix of dance, drama, comedy, commentary & animation with director Q&As. <https://t.co/FVZWjHXiLi>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EXNYnQyU4AAL_cr.jpg)

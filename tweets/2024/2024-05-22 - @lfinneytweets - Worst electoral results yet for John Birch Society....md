@@ -18,7 +18,7 @@ related:
   - idpol
 ---
 
-Worst electoral results yet for John Birch Society proponent Bob Vickaryous - which isn't surprising considering the local Democratic Party actively opposed him. #idleg #idpol https://t.co/UZKlBcseyD
+Worst electoral results yet for John Birch Society proponent Bob Vickaryous - which isn't surprising considering the local Democratic Party actively opposed him. #idleg #idpol <https://t.co/UZKlBcseyD>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GONAe-faIAADD_X.jpg)

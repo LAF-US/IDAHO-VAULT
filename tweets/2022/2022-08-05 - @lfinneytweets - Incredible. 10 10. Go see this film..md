@@ -13,7 +13,7 @@ related:
   - lfinneytweets
 ---
 
-Incredible. 10/10. Go see this film. https://t.co/WbyssiNlec
+Incredible. 10/10. Go see this film. <https://t.co/WbyssiNlec>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FZXduXCUYAA44W-.jpg)

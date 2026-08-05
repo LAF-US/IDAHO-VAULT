@@ -19,7 +19,7 @@ related:
 ---
 
 Provost John Wiencek announces @uidaho will allow students to opt in to pass/fail grading by May 1 for all Spring 2020 courses due to #IdahoCOVID19 circumstances. 
-The email to students includes a link to instructions for changing classes to the P/F scale via VandalWeb. https://t.co/c2cQMkY9Qo
+The email to students includes a link to instructions for changing classes to the P/F scale via VandalWeb. <https://t.co/c2cQMkY9Qo>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EUJowxfXsAEktgd.jpg)

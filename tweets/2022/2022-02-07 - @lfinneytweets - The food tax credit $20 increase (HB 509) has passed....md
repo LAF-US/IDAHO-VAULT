@@ -19,9 +19,9 @@ related:
 ---
 
 The food tax credit $20 increase (HB 509) has passed committee and heads to the House floor. #idleg #idpol 
-https://t.co/lp31RJYgFo
+<https://t.co/lp31RJYgFo>
 
 ## Links
-- https://legislature.idaho.gov/sessioninfo/2022/legislation/H0509/
+- <https://legislature.idaho.gov/sessioninfo/2022/legislation/H0509/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1490726459706540032)

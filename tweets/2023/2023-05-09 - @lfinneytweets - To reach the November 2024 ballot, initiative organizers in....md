@@ -19,9 +19,9 @@ related:
 ---
 
 To reach the November 2024 ballot, initiative organizers in Idaho must gather signatures from 6% of registered voters in at least 18 legislative districts and reach 62,895 signatures statewide. #idleg #idpol 
-https://t.co/8EGVEM4sG4
+<https://t.co/8EGVEM4sG4>
 
 ## Links
-- https://datawrapper.dwcdn.net/NCkMr/2/
+- <https://datawrapper.dwcdn.net/NCkMr/2/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1655995136105656321)

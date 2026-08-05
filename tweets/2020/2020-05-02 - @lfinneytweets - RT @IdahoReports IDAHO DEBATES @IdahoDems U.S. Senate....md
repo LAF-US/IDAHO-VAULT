@@ -17,6 +17,6 @@ related:
 ---
 
 RT @IdahoReports: IDAHO DEBATES: @IdahoDems U.S. Senate primary with @votevandermaas and @electpaulette on @IdahoPTV. 
-https://t.co/LaLtmjw…
+<https://t.co/LaLtmjw…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1256416179276505089)

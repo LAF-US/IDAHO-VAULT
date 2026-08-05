@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @libbuh: Idk if @amandamull meant for this to be comforting but this is the best I’ve felt all week https://t.co/olRGGdKbmx
+RT @libbuh: Idk if @amandamull meant for this to be comforting but this is the best I’ve felt all week <https://t.co/olRGGdKbmx>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/ETfIqJaU8AEbnsy.jpg)

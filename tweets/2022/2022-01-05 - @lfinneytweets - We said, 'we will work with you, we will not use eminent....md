@@ -20,9 +20,9 @@ related:
   - idleg
 ---
 
-"We said, 'we will work with you, we will not use eminent domain to take the property,' that we were gonna do this the right way," @ponderayfuture community development director Erik Brubaker told the crowd. "We got here because of those relationships." #idpol #idleg https://t.co/gcSkGEyp5d
+"We said, 'we will work with you, we will not use eminent domain to take the property,' that we were gonna do this the right way," @ponderayfuture community development director Erik Brubaker told the crowd. "We got here because of those relationships." #idpol #idleg <https://t.co/gcSkGEyp5d>
 
 ## Links
-- https://x.com/DailyBee/status/1478787529604141063
+- <https://x.com/DailyBee/status/1478787529604141063>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1478805656664625156)

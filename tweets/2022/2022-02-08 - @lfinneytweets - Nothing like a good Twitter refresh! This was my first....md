@@ -13,7 +13,7 @@ related:
   - lfinneytweets
 ---
 
-Nothing like a good Twitter refresh! This was my first choice of header had it fit in the dimensions. https://t.co/z2qT8TnPy2
+Nothing like a good Twitter refresh! This was my first choice of header had it fit in the dimensions. <https://t.co/z2qT8TnPy2>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FLDYSniVQAENr7K.jpg)

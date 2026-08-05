@@ -17,10 +17,10 @@ related:
 ---
 
 @gemstatebrian Huh. Weird in my mind that a Party would use the Legislature's credentialing body for their convention but what do I know. 
-https://t.co/CMXviVUU9E
+<https://t.co/CMXviVUU9E>
 
 ## Links
-- https://idahopressclub.org/capitol-correspondents-association/
+- <https://idahopressclub.org/capitol-correspondents-association/>
 
 *In reply to [@brianalmon](https://twitter.com/brianalmon)*
 

@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-RT @NikStreng: I hear Scott Bedke is making an announcement tomorrow at 10 a.m. at the Capitol but I dunno https://t.co/3c5dxF4asj
+RT @NikStreng: I hear Scott Bedke is making an announcement tomorrow at 10 a.m. at the Capitol but I dunno <https://t.co/3c5dxF4asj>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/E2VMzehVUAAb3BV.jpg)

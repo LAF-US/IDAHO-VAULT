@@ -18,7 +18,7 @@ related:
   - idpol
 ---
 
-The redistricting commission continues their statewide public testimony tour, this week in North Idaho. I'll have a full story up tomorrow. #idleg #idpol https://t.co/AFRKr3Qxml
+The redistricting commission continues their statewide public testimony tour, this week in North Idaho. I'll have a full story up tomorrow. #idleg #idpol <https://t.co/AFRKr3Qxml>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/E_w-DdDUcAMWPiR.jpg)

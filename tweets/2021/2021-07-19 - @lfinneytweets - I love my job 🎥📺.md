@@ -13,7 +13,7 @@ related:
   - lfinneytweets
 ---
 
-I love my job 🎥📺 https://t.co/YhbsYVgEEe
+I love my job 🎥📺 <https://t.co/YhbsYVgEEe>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/E6noBEHVkAA2-On.jpg)

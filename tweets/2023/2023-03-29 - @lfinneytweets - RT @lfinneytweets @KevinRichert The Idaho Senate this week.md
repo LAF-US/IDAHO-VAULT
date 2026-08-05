@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @lfinneytweets: @KevinRichert The Idaho Senate this week: https://t.co/k8uORjDavR
+RT @lfinneytweets: @KevinRichert The Idaho Senate this week: <https://t.co/k8uORjDavR>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/FsZ-ui6WYAI5wD_.jpg)

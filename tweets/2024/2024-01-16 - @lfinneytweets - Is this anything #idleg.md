@@ -17,9 +17,9 @@ related:
 ---
 
 Is this anything? #idleg 
-https://t.co/9SIr1O6D8K
+<https://t.co/9SIr1O6D8K>
 
 ## Links
-- https://public.flourish.studio/visualisation/16463393/
+- <https://public.flourish.studio/visualisation/16463393/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1747313133969183230)

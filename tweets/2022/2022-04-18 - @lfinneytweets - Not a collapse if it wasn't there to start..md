@@ -14,10 +14,10 @@ related:
 ---
 
 Not a collapse if it wasn't there to start. 
-https://t.co/Ia5HN9ijte https://t.co/pB29dsFjMt
+<https://t.co/Ia5HN9ijte> <https://t.co/pB29dsFjMt>
 
 ## Links
-- https://x.com/lfinneytweets/status/1237205984302362625
-- https://x.com/zackbeauchamp/status/1516087953465958405
+- <https://x.com/lfinneytweets/status/1237205984302362625>
+- <https://x.com/zackbeauchamp/status/1516087953465958405>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1516118362899636225)

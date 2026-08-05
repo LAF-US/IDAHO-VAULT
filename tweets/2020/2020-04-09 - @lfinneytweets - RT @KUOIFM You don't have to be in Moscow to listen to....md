@@ -16,9 +16,9 @@ related:
 ---
 
 RT @KUOIFM: You don't have to be in Moscow to listen to KUOI! Listen now ⬇️
-https://t.co/59QO6Ic2nA
+<https://t.co/59QO6Ic2nA>
 
 ## Links
-- https://www.kuoi.org/radio/
+- <https://www.kuoi.org/radio/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1248341102421102592)

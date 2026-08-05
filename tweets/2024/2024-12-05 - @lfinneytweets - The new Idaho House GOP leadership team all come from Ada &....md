@@ -17,9 +17,9 @@ related:
 ---
 
 The new Idaho House GOP leadership team all come from Ada & Canyon, while the Idaho Senate GOP leaders hail from Mini-Cassia, Ada, East & North. #idleg 
-https://t.co/jo5yLOJxHf
+<https://t.co/jo5yLOJxHf>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2024/12/04/legislative-leadership-selected-for-2025-session/
+- <https://blog.idahoreports.idahoptv.org/2024/12/04/legislative-leadership-selected-for-2025-session/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1864544133567905900)

@@ -13,9 +13,9 @@ related:
   - lfinneytweets
 ---
 
-"If you get caught with weed in Idaho they'll fine you $420" is not a terrible public awareness campaign TBH... https://t.co/jDApxf1uYT
+"If you get caught with weed in Idaho they'll fine you $420" is not a terrible public awareness campaign TBH... <https://t.co/jDApxf1uYT>
 
 ## Links
-- https://x.com/ChristinaLords/status/1760065966745231858
+- <https://x.com/ChristinaLords/status/1760065966745231858>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1760100865967554879)

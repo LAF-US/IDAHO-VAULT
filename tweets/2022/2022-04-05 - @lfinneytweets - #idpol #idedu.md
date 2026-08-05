@@ -18,9 +18,9 @@ related:
   - idedu
 ---
 
-\#idpol #idedu https://t.co/RSigpsVlHi
+\#idpol #idedu <https://t.co/RSigpsVlHi>
 
 ## Links
-- https://x.com/CdAPressNews/status/1511398191354187780
+- <https://x.com/CdAPressNews/status/1511398191354187780>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1511409200395476995)

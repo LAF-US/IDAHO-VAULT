@@ -18,7 +18,7 @@ related:
   - idpol
 ---
 
-Full committee room for the SB 1038 education savings account hearing. #idleg #idpol https://t.co/EdytIPp4iQ
+Full committee room for the SB 1038 education savings account hearing. #idleg #idpol <https://t.co/EdytIPp4iQ>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/Fo9a1sBaQAAm4-F.jpg)

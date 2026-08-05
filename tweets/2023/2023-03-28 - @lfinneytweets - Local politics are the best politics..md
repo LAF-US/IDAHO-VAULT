@@ -13,9 +13,9 @@ related:
   - lfinneytweets
 ---
 
-Local politics are the best politics. https://t.co/1bgJIm0YDa
+Local politics are the best politics. <https://t.co/1bgJIm0YDa>
 
 ## Links
-- https://x.com/DailyBee/status/1640778499219951618
+- <https://x.com/DailyBee/status/1640778499219951618>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1640798536261304321)

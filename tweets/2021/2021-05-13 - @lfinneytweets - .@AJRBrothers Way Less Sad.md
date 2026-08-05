@@ -17,10 +17,10 @@ related:
 ---
 
 .@AJRBrothers Way Less Sad 
-https://t.co/8e8K9Ato0Y
+<https://t.co/8e8K9Ato0Y>
 
 ## Links
-- https://open.spotify.com/track/4jbtL4tjkqghUvJknUqU1s?si=M-M7hB3MSd--7PxT2b8PXA
+- <https://open.spotify.com/track/4jbtL4tjkqghUvJknUqU1s?si=M-M7hB3MSd--7PxT2b8PXA>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

@@ -19,7 +19,7 @@ related:
   - idpol
 ---
 
-@RealBearSmith @IdahoReports A bit unfair considering it was early 'hey folks things are just getting going' remarks before polls had closed and not a big speech #idpol https://t.co/TPp9MQ6nlg
+@RealBearSmith @IdahoReports A bit unfair considering it was early 'hey folks things are just getting going' remarks before polls had closed and not a big speech #idpol <https://t.co/TPp9MQ6nlg>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GOOHCXGakAA6uG_.jpg)

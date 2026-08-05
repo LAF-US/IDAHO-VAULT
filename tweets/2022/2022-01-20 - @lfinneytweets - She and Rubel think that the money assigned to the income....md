@@ -18,7 +18,7 @@ related:
   - idleg
 ---
 
-@HollyCookID She and Rubel think that the money assigned to the income tax cut means they don't have enough for other cuts and budget priorities. #idleg https://t.co/gk9mdpYx54
+@HollyCookID She and Rubel think that the money assigned to the income tax cut means they don't have enough for other cuts and budget priorities. #idleg <https://t.co/gk9mdpYx54>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FJkciCyVkAEaS2K.jpg)

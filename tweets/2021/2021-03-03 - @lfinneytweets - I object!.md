@@ -13,9 +13,9 @@ related:
   - lfinneytweets
 ---
 
-I object! https://t.co/TVhJqBqfui
+I object! <https://t.co/TVhJqBqfui>
 
 ## Links
-- https://x.com/APStylebook/status/1367157316001357831
+- <https://x.com/APStylebook/status/1367157316001357831>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1367170449520529411)

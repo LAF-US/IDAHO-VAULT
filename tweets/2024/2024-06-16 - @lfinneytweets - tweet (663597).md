@@ -18,7 +18,7 @@ related:
   - lfinneytweets
 ---
 
-@MacRaslan @HurstforIdaho @MariaOlsenNate https://t.co/1issZIHBm9
+@MacRaslan @HurstforIdaho @MariaOlsenNate <https://t.co/1issZIHBm9>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/ext_tw_video_thumb/1802272673705381888/pu/img/tsr5uGWiCagOJWDG.jpg)

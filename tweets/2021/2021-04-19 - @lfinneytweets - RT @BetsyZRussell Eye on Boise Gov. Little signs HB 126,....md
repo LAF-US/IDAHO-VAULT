@@ -20,6 +20,6 @@ related:
   - idpol
 ---
 
-RT @BetsyZRussell: Eye on Boise: Gov. Little signs HB 126, industrial hemp legalization bill, into law #idleg #idpol  https://t.co/9kqfqAP5…
+RT @BetsyZRussell: Eye on Boise: Gov. Little signs HB 126, industrial hemp legalization bill, into law #idleg #idpol  <https://t.co/9kqfqAP5…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1384186057567051778)

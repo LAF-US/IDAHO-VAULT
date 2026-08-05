@@ -14,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-Not pursuing reelection https://t.co/KL2i7wO5nK
+Not pursuing reelection <https://t.co/KL2i7wO5nK>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GOTLEJ8aUAATqmr.jpg)

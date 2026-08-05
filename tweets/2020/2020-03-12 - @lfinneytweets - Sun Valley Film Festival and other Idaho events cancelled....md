@@ -13,9 +13,9 @@ related:
   - lfinneytweets
 ---
 
-Sun Valley Film Festival and other Idaho events cancelled/postponed amid pandemic concerns https://t.co/l1Fs0Vo5D0
+Sun Valley Film Festival and other Idaho events cancelled/postponed amid pandemic concerns <https://t.co/l1Fs0Vo5D0>
 
 ## Links
-- https://x.com/twinfallstn/status/1238177978007388167
+- <https://x.com/twinfallstn/status/1238177978007388167>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1238180197087580162)

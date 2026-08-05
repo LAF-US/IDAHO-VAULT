@@ -19,7 +19,7 @@ related:
   - idpol
 ---
 
-I'm at @ISPHeadquarters in Meridian for a press conference with @GovernorLittle. The governor recently sent five ISP troopers to Arizona to assist with drug enforcement at the US-Mexico border. #idpol https://t.co/YcwTWfnlyP
+I'm at @ISPHeadquarters in Meridian for a press conference with @GovernorLittle. The governor recently sent five ISP troopers to Arizona to assist with drug enforcement at the US-Mexico border. #idpol <https://t.co/YcwTWfnlyP>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/E6SQsg4VcAEbyfs.jpg)

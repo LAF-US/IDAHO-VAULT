@@ -18,9 +18,9 @@ related:
   - idpol
 ---
 
-RT @BetsyZRussell: Eye on Boise: AP: Turnout looks to be big in Idaho's first mail-only primary #idpol   https://t.co/XGe3w7Fwko https://t.…
+RT @BetsyZRussell: Eye on Boise: AP: Turnout looks to be big in Idaho's first mail-only primary #idpol   <https://t.co/XGe3w7Fwko> <https://t.…>
 
 ## Links
-- https://www.idahopress.com/eyeonboise/turnout-looks-to-be-big-in-idahos-first-mail-only-primary/article_4134a1b8-6d83-521b-92ad-6620b5c58b12.html
+- <https://www.idahopress.com/eyeonboise/turnout-looks-to-be-big-in-idahos-first-mail-only-primary/article_4134a1b8-6d83-521b-92ad-6620b5c58b12.html>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1262884032817147904)

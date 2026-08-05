@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-RT @waDNR: Made a playlist for your weekend hike https://t.co/gRk5U7NpJ9
+RT @waDNR: Made a playlist for your weekend hike <https://t.co/gRk5U7NpJ9>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FaiQtLkXkAEJuAL.jpg)

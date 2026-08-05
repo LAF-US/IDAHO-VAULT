@@ -18,7 +18,7 @@ related:
   - lfinneytweets
 ---
 
-@PetsPolitics @Doge_Idaho @DOGE https://t.co/D4X5QO5sFD
+@PetsPolitics @Doge_Idaho @DOGE <https://t.co/D4X5QO5sFD>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GmXm4N8bwAA6Qw_.jpg)

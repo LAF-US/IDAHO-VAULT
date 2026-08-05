@@ -15,6 +15,6 @@ related:
   - lfinneytweets
 ---
 
-RT @UIMcClure: Well deserved @RHaunID! https://t.co/RRQxrJKIDY
+RT @UIMcClure: Well deserved @RHaunID! <https://t.co/RRQxrJKIDY>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1404942146432503808)

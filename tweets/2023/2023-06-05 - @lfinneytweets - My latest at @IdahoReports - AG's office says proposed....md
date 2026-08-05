@@ -20,9 +20,9 @@ related:
   - idpol
 ---
 
-My latest at @IdahoReports - AG's office says proposed initiative "plainly violates" state law, but the legal analysis is only advisory in nature. #idleg #idpol https://t.co/WixxY1cSTT
+My latest at @IdahoReports - AG's office says proposed initiative "plainly violates" state law, but the legal analysis is only advisory in nature. #idleg #idpol <https://t.co/WixxY1cSTT>
 
 ## Links
-- https://x.com/IdahoReports/status/1665837409240592392
+- <https://x.com/IdahoReports/status/1665837409240592392>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1665838099434467328)

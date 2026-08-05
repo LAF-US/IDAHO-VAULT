@@ -18,7 +18,7 @@ related:
   - idpol
 ---
 
-Speaker Moyle said he liked the bowtie, so I've already won regardless of results tonight #idleg #idpol https://t.co/WcGKCNkTzq
+Speaker Moyle said he liked the bowtie, so I've already won regardless of results tonight #idleg #idpol <https://t.co/WcGKCNkTzq>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GOJtybxagAIxsY8.jpg)

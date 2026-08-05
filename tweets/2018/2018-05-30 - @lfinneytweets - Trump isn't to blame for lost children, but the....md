@@ -13,9 +13,9 @@ related:
   - lfinneytweets
 ---
 
-Trump isn't to blame for lost children, but the administration's parent/child separation policy is putting a lot of strain on an already struggling system. https://t.co/civOiFTZK0
+Trump isn't to blame for lost children, but the administration's parent/child separation policy is putting a lot of strain on an already struggling system. <https://t.co/civOiFTZK0>
 
 ## Links
-- https://x.com/voxdotcom/status/1001610402273415175
+- <https://x.com/voxdotcom/status/1001610402273415175>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1001644519496990720)

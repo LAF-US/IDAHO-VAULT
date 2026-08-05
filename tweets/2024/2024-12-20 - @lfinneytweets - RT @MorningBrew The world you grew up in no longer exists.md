@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-RT @MorningBrew: The world you grew up in no longer exists https://t.co/9mRC9Yh5XR
+RT @MorningBrew: The world you grew up in no longer exists <https://t.co/9mRC9Yh5XR>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GfRKUyKWMAAoE62.jpg)

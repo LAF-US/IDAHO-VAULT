@@ -18,7 +18,7 @@ related:
   - idpol
 ---
 
-We've got a good one for y'all on @IdahoReports tonight. #idpol https://t.co/wC1rAY5a8s
+We've got a good one for y'all on @IdahoReports tonight. #idpol <https://t.co/wC1rAY5a8s>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GIvF9O8bQAA7mh5.jpg)

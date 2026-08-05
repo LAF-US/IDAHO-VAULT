@@ -13,9 +13,9 @@ related:
   - lfinneytweets
 ---
 
-Climbing the Statue of Liberty in protest on the 4th of July. How American 🇺🇲 https://t.co/UGUh9ddxXr
+Climbing the Statue of Liberty in protest on the 4th of July. How American 🇺🇲 <https://t.co/UGUh9ddxXr>
 
 ## Links
-- https://x.com/USATODAY/status/1014645398013702144
+- <https://x.com/USATODAY/status/1014645398013702144>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1015122970199523329)

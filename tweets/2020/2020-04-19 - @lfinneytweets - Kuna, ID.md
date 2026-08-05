@@ -13,7 +13,7 @@ related:
   - lfinneytweets
 ---
 
-Kuna, ID https://t.co/Yvq7Y00ffn
+Kuna, ID <https://t.co/Yvq7Y00ffn>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EV7tveQU0AANbJB.jpg)

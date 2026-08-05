@@ -14,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-Lovely advertisement, too https://t.co/TygZcN8Hxz
+Lovely advertisement, too <https://t.co/TygZcN8Hxz>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EWEYcLRUcAE3jiV.jpg)

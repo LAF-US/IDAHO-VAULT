@@ -20,9 +20,9 @@ related:
   - idedu
 ---
 
-Democrats asked for a compromise on the election date issue; GOP lawmakers say they already have one. #idpol #idleg #idedu https://t.co/8DKFZmUaqZ
+Democrats asked for a compromise on the election date issue; GOP lawmakers say they already have one. #idpol #idleg #idedu <https://t.co/8DKFZmUaqZ>
 
 ## Links
-- https://x.com/IdahoReports/status/1636508584396595201
+- <https://x.com/IdahoReports/status/1636508584396595201>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1636512196695064581)

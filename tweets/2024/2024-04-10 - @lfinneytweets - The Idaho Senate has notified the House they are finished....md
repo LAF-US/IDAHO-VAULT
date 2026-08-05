@@ -18,7 +18,7 @@ related:
   - idpol
 ---
 
-The Idaho Senate has notified the House they are finished with business. #idleg #idpol https://t.co/dcJV52ynrd
+The Idaho Senate has notified the House they are finished with business. #idleg #idpol <https://t.co/dcJV52ynrd>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/ext_tw_video_thumb/1778160666370777090/pu/img/P8f05z1vridpcOdl.jpg)

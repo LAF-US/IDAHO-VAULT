@@ -20,9 +20,9 @@ related:
   - idpol
 ---
 
-The state announced the first confirmed case exactly one week ago, less than 12 hours after the governor signed the #coronavirus emergency declaration. #IdahoCovid19 #idpol https://t.co/ZhDPpatg3N
+The state announced the first confirmed case exactly one week ago, less than 12 hours after the governor signed the #coronavirus emergency declaration. #IdahoCovid19 #idpol <https://t.co/ZhDPpatg3N>
 
 ## Links
-- https://x.com/IDHW/status/1241138110899068931
+- <https://x.com/IDHW/status/1241138110899068931>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1241140640542371840)

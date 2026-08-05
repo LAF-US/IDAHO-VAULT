@@ -19,6 +19,6 @@ related:
 ---
 
 RT @IdahoReports: Tonight (April 3rd)’s #IdahoCOVID19 update with @davlinnews: 
-https://t.co/0mLVJI7RgT
+<https://t.co/0mLVJI7RgT>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1246238351046242309)

@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-RT @kkruesi: Feels like a good time to post AP’s guidance on the word looting: https://t.co/hjxQWbSYAx
+RT @kkruesi: Feels like a good time to post AP’s guidance on the word looting: <https://t.co/hjxQWbSYAx>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EZW6o7zXkAA0Ad5.jpg)

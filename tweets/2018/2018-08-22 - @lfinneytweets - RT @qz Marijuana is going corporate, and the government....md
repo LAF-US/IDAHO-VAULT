@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-RT @qz: Marijuana is going corporate, and the government isn’t ready https://t.co/1w1xJ9dVKI
+RT @qz: Marijuana is going corporate, and the government isn’t ready <https://t.co/1w1xJ9dVKI>
 
 ## Links
-- http://bit.ly/2Po9d3U
+- <http://bit.ly/2Po9d3U>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1032164598776922112)

@@ -17,9 +17,9 @@ related:
 ---
 
 The reviews for Logan's Budget Tracker™ are in: ⭐ "amazing!" ⭐ "helpful!" ⭐ "so depressing!" ⭐ #idleg ⭐ 
-https://t.co/cHANQLvPoa
+<https://t.co/cHANQLvPoa>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2025/03/25/outstanding-budgets-extend-the-2025-session/
+- <https://blog.idahoreports.idahoptv.org/2025/03/25/outstanding-budgets-extend-the-2025-session/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1906890192264581619)

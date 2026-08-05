@@ -16,9 +16,9 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoPubRadio: Full statement from @uidaho. https://t.co/j7k1Hw5XlN
+RT @IdahoPubRadio: Full statement from @uidaho. <https://t.co/j7k1Hw5XlN>
 
 ## Links
-- https://x.com/uidaho/status/1240709651190038530
+- <https://x.com/uidaho/status/1240709651190038530>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1240716013554958337)

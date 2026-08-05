@@ -18,7 +18,7 @@ related:
   - idleg
 ---
 
-INBOX: In accordance with U.S. flag code, Governor Brad Little has ordered U.S. flags and State of Idaho flags to be flown at half-staff immediately until sunset on Tuesday, January 28, 2025, in honor of President Jimmy Carter who passed away Sunday. #idpol #idleg https://t.co/rwvztcBG0S
+INBOX: In accordance with U.S. flag code, Governor Brad Little has ordered U.S. flags and State of Idaho flags to be flown at half-staff immediately until sunset on Tuesday, January 28, 2025, in honor of President Jimmy Carter who passed away Sunday. #idpol #idleg <https://t.co/rwvztcBG0S>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GgDeNlvakAAhbe2.jpg)

@@ -20,7 +20,7 @@ related:
   - idpol
 ---
 
-Get ready y'all. We have such a good @IdahoReports episode tonight. #idleg #idpol https://t.co/veJsizWbCw
+Get ready y'all. We have such a good @IdahoReports episode tonight. #idleg #idpol <https://t.co/veJsizWbCw>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GBa1KJgaUAA6Dg2.jpg)

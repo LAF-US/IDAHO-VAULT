@@ -19,10 +19,10 @@ related:
 ---
 
 Update on my Local Option Tax story from November: The City of Ponderay has announced they will use revenues to purchase a piece of waterfront property (with an infamous gate) that has long stymied trail connectivity along Pend Oreille Bay. #idpol #idleg 
-https://t.co/3DicciyXN8 https://t.co/PANCPwMndt
+<https://t.co/3DicciyXN8> <https://t.co/PANCPwMndt>
 
 ## Links
-- https://youtu.be/WltDtVskh1Y
-- https://x.com/DailyBee/status/1474057662304329733
+- <https://youtu.be/WltDtVskh1Y>
+- <https://x.com/DailyBee/status/1474057662304329733>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1474067321568186368)

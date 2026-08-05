@@ -17,7 +17,7 @@ related:
   - idpol
 ---
 
-All cities and counties are to distribute this stay-home order. It replaces the previous isolation order for Blaine County. (page 10) #idpol https://t.co/GwGYlhHjVF
+All cities and counties are to distribute this stay-home order. It replaces the previous isolation order for Blaine County. (page 10) #idpol <https://t.co/GwGYlhHjVF>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/ET_vQVfVAAA6lPX.jpg)

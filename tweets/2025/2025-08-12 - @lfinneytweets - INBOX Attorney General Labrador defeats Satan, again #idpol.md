@@ -16,7 +16,7 @@ related:
   - idpol
 ---
 
-INBOX: "Attorney General Labrador defeats Satan, again" #idpol https://t.co/94d2YU78Zh
+INBOX: "Attorney General Labrador defeats Satan, again" #idpol <https://t.co/94d2YU78Zh>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GyKfVkWaEAIAPJr.jpg)

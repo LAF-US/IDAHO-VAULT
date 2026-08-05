@@ -13,7 +13,7 @@ related:
   - lfinneytweets
 ---
 
-@davlinnews https://t.co/ei7QNkSU22
+@davlinnews <https://t.co/ei7QNkSU22>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/EfEq1P6UwAYs1mN.jpg)

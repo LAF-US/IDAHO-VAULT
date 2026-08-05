@@ -25,9 +25,9 @@ related:
 
 The only "water rights" I was aware of as a kid next to Lake Pend Oreille were boat launches (and drinking water treatment plants?) 
 
-Good thing the @IdahoPubRadio-@UIMcClure team has @RHaunID to cover the (actual) water rights situation in Eastern Idaho. #idleg #idpol #idahoag https://t.co/UicWvyRHcw
+Good thing the @IdahoPubRadio-@UIMcClure team has @RHaunID to cover the (actual) water rights situation in Eastern Idaho. #idleg #idpol #idahoag <https://t.co/UicWvyRHcw>
 
 ## Links
-- https://x.com/IdahoPubRadio/status/1225249726397702144
+- <https://x.com/IdahoPubRadio/status/1225249726397702144>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1225478260261191680)

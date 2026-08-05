@@ -21,9 +21,9 @@ related:
 ---
 
 The rest of Sen. Christy Zito's interrupted floor comments, via @idahofreedom. #idleg #idpol 
-https://t.co/5NDrRkSFvi
+<https://t.co/5NDrRkSFvi>
 
 ## Links
-- https://www.youtube.com/watch?v=rGq7Q1dzG4g
+- <https://www.youtube.com/watch?v=rGq7Q1dzG4g>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1488986957174566913)

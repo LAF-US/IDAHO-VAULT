@@ -20,7 +20,7 @@ related:
 
 RT @maggieKTVB7: Graffiti at the Capitol building. #Boise 
 
-Photos: Lori June https://t.co/NIrIKOpKtI
+Photos: Lori June <https://t.co/NIrIKOpKtI>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EZrMSdHUEAAeOXh.jpg)

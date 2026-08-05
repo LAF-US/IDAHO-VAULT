@@ -20,9 +20,9 @@ related:
 ---
 
 My brother is doing such cool stuff. (via @blotmag) @uidaho #GoVandals 
-https://t.co/YWeO9EnJ6e
+<https://t.co/YWeO9EnJ6e>
 
 ## Links
-- https://www.blotmagazine.com/2021/12/06/virtual-technology-and-design-program-prepares-students-for-metaverse/
+- <https://www.blotmagazine.com/2021/12/06/virtual-technology-and-design-program-prepares-students-for-metaverse/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1496311576261021696)

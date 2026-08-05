@@ -18,10 +18,10 @@ related:
   - lfinneytweets
 ---
 
-@99Jmee99 @IDHW @KeithRidler https://t.co/Dw9DgbqkzO
+@99Jmee99 @IDHW @KeithRidler <https://t.co/Dw9DgbqkzO>
 
 ## Links
-- https://x.com/lfinneytweets/status/1346584968760233984
+- <https://x.com/lfinneytweets/status/1346584968760233984>
 
 *In reply to [@99Jmee99](https://twitter.com/99Jmee99)*
 

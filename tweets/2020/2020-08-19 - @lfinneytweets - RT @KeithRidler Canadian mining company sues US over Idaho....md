@@ -23,9 +23,9 @@ related:
   - Salmon
 ---
 
-RT @KeithRidler: Canadian mining company sues US over Idaho water pollution (from @AP) #idpol #GoldMining #Salmon  https://t.co/HmXQIT5jYx
+RT @KeithRidler: Canadian mining company sues US over Idaho water pollution (from @AP) #idpol #GoldMining #Salmon  <https://t.co/HmXQIT5jYx>
 
 ## Links
-- https://apnews.com/04efa8bb4264442b6753481107accfd6
+- <https://apnews.com/04efa8bb4264442b6753481107accfd6>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1296196915021746176)

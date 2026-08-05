@@ -14,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-Rep. Remington leads a closing prayer. https://t.co/gWv46FWtyR
+Rep. Remington leads a closing prayer. <https://t.co/gWv46FWtyR>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EbQGDSsWoAExZA9.jpg)

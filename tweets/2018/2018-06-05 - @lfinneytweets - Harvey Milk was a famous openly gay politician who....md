@@ -13,7 +13,7 @@ related:
   - lfinneytweets
 ---
 
-Harvey Milk was a famous openly gay politician who represented The Castro district of San Francisco. He sponsored an anti-discrimination bill & fought a ballot initiative to fire gay school teachers in CA. He & the mayor were assassinated by a fellow city supervisor in Nov 1978. https://t.co/6stIW73ksH
+Harvey Milk was a famous openly gay politician who represented The Castro district of San Francisco. He sponsored an anti-discrimination bill & fought a ballot initiative to fire gay school teachers in CA. He & the mayor were assassinated by a fellow city supervisor in Nov 1978. <https://t.co/6stIW73ksH>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/De6c6eRVAAABC6x.jpg)

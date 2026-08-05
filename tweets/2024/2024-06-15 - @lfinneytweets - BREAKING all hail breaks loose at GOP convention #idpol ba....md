@@ -16,7 +16,7 @@ related:
   - idpol
 ---
 
-BREAKING: all hail breaks loose at GOP convention #idpol *ba dum pssh* https://t.co/CmQOLTGzCO
+BREAKING: all hail breaks loose at GOP convention #idpol *ba dum pssh* <https://t.co/CmQOLTGzCO>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GQIk__fbwAAUIAH.jpg)

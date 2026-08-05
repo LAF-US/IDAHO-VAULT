@@ -18,9 +18,9 @@ related:
   - idedu
 ---
 
-Today's @IdSBOE meeting starts live on Facebook at 9am Mountain Time, 8am Pacific. #idedu https://t.co/p26bzzt3VD
+Today's @IdSBOE meeting starts live on Facebook at 9am Mountain Time, 8am Pacific. #idedu <https://t.co/p26bzzt3VD>
 
 ## Links
-- https://x.com/kalinelson6/status/1249817055026491393
+- <https://x.com/kalinelson6/status/1249817055026491393>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1250793569788411905)

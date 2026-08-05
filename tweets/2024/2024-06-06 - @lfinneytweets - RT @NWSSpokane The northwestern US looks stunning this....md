@@ -20,7 +20,7 @@ related:
   - idwx
 ---
 
-RT @NWSSpokane: The northwestern US looks stunning this afternoon from space! #wawx #idwx https://t.co/K3BaddH6md
+RT @NWSSpokane: The northwestern US looks stunning this afternoon from space! #wawx #idwx <https://t.co/K3BaddH6md>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GPWS-NkbYAAlmre.png)

@@ -19,9 +19,9 @@ related:
 ---
 
 The war of attrition between Moyle and Winder over the ITD budget – specifically whether to kill the State Street property sale – finally came to a close this evening. #idleg #idpol 
-https://t.co/HpWICezmbh
+<https://t.co/HpWICezmbh>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2024/04/03/itd-budget-saga-closes-out-session/
+- <https://blog.idahoreports.idahoptv.org/2024/04/03/itd-budget-saga-closes-out-session/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1775737375643332844)

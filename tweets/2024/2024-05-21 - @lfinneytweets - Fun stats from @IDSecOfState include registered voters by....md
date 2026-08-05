@@ -19,9 +19,9 @@ related:
 ---
 
 Fun stats from @IDSecOfState include registered voters by political party in each county! #idpol 
-https://t.co/bMYos1hyB1
+<https://t.co/bMYos1hyB1>
 
 ## Links
-- https://public.flourish.studio/visualisation/18056578/
+- <https://public.flourish.studio/visualisation/18056578/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1793016295568581112)

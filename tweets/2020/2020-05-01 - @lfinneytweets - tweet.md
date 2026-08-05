@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-@ryannoyance https://t.co/cTSM4Cwev2
+@ryannoyance <https://t.co/cTSM4Cwev2>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/EW87DwAVcAAG2h3.jpg)

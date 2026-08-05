@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-Context you don't get from a screenshot of an Instagram post of a screenshot of a headline: @JohnsHopkins showed a big death spike as Florida weekly & Michigan twice-weekly data was released on the same day, plus Delaware delayed some reporting until reviewing death certificates. https://t.co/DbBvClnTfM
+Context you don't get from a screenshot of an Instagram post of a screenshot of a headline: @JohnsHopkins showed a big death spike as Florida weekly & Michigan twice-weekly data was released on the same day, plus Delaware delayed some reporting until reviewing death certificates. <https://t.co/DbBvClnTfM>
 
 ## Links
-- https://x.com/nicholsforidaho/status/1422086178988191749
+- <https://x.com/nicholsforidaho/status/1422086178988191749>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1422182491809452034)

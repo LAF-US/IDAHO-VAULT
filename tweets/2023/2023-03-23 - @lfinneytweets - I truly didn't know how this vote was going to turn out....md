@@ -16,9 +16,9 @@ related:
   - idleg
 ---
 
-I truly didn't know how this vote was going to turn out until it was announced. #idleg https://t.co/D8QsFYgabs
+I truly didn't know how this vote was going to turn out until it was announced. #idleg <https://t.co/D8QsFYgabs>
 
 ## Links
-- https://x.com/IdahoReports/status/1638979692425543681
+- <https://x.com/IdahoReports/status/1638979692425543681>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1638980712677396485)

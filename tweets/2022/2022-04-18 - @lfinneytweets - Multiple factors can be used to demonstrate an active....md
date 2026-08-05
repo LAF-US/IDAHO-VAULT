@@ -16,9 +16,9 @@ related:
   - lfinneytweets
 ---
 
-@AntifaWhisperer @IDJoe4Congress @IdahoReports @IdahoGOP Multiple factors can be used to demonstrate an active campaign. They're laid out in the letter that was sent to all candidates in contested races. https://t.co/RlhMfC7KuJ
+@AntifaWhisperer @IDJoe4Congress @IdahoReports @IdahoGOP Multiple factors can be used to demonstrate an active campaign. They're laid out in the letter that was sent to all candidates in contested races. <https://t.co/RlhMfC7KuJ>
 
 ## Links
-- https://www.idahoptv.org/shows/idahodebates/
+- <https://www.idahoptv.org/shows/idahodebates/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1516132949304897537)

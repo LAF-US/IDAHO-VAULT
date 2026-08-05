@@ -24,10 +24,10 @@ related:
 ---
 
 @truecrime72 @IAmNotOk_Ok The @IdahoSDE has written new content standards. #idleg #idpol 
-https://t.co/z8w5f6N62Z
+<https://t.co/z8w5f6N62Z>
 
 ## Links
-- https://www.sde.idaho.gov/academic/standards/standards-review.html
+- <https://www.sde.idaho.gov/academic/standards/standards-review.html>
 
 *In reply to [@truecrime72](https://twitter.com/truecrime72)*
 

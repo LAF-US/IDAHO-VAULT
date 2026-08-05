@@ -18,7 +18,7 @@ related:
   - idpol
 ---
 
-The redistricting commission is holding another public meeting tonight, this one at the Idaho Capitol in Boise. I count just over twenty attendees, which is similar to the turnout this afternoon in Meridian. #idleg #idpol https://t.co/rrNmL3uPiS
+The redistricting commission is holding another public meeting tonight, this one at the Idaho Capitol in Boise. I count just over twenty attendees, which is similar to the turnout this afternoon in Meridian. #idleg #idpol <https://t.co/rrNmL3uPiS>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/E_cu_zXVkAAYuKn.jpg)

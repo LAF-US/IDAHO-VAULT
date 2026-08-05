@@ -16,9 +16,9 @@ related:
   - idleg
 ---
 
-House State Affairs (specifically Rep. Young) taking a close look at definitions this month! #idleg https://t.co/GZGEFCrBXx
+House State Affairs (specifically Rep. Young) taking a close look at definitions this month! #idleg <https://t.co/GZGEFCrBXx>
 
 ## Links
-- https://x.com/RuthBrownNews/status/1749846462333341842
+- <https://x.com/RuthBrownNews/status/1749846462333341842>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1749846805905592422)

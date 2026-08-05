@@ -16,7 +16,7 @@ related:
   - idleg
 ---
 
-Sen. Dan Foreman wins reelection by 1,861 votes. #idleg https://t.co/vQUO7RBlH2
+Sen. Dan Foreman wins reelection by 1,861 votes. #idleg <https://t.co/vQUO7RBlH2>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/Gbsc2BPawAABfQz.png)

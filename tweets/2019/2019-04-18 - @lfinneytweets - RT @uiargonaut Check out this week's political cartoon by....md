@@ -18,7 +18,7 @@ related:
   - PolitoonThursday
 ---
 
-RT @uiargonaut: Check out this week's political cartoon by Ethan Coy. #PolitoonThursday https://t.co/wvErSGmDqp
+RT @uiargonaut: Check out this week's political cartoon by Ethan Coy. #PolitoonThursday <https://t.co/wvErSGmDqp>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/D4ckZ6tU4AA_wM6.jpg)

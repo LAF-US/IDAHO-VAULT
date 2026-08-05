@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-@thenextbarstool @dugganreports @davlinnews https://t.co/aDPf5JwNVl
+@thenextbarstool @dugganreports @davlinnews <https://t.co/aDPf5JwNVl>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/FfYZXW-acAArXjI.jpg)

@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-RT @Raul_Labrador: Attorney General Labrador’s Statement on District Court Ruling on the Open Primaries Initiative https://t.co/P35AoYCniS
+RT @Raul_Labrador: Attorney General Labrador’s Statement on District Court Ruling on the Open Primaries Initiative <https://t.co/P35AoYCniS>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GWvN2FaWcAAU4jW.jpg)

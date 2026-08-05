@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-RT @CBS2Boise: The Idaho Capitol through an 11-year-old's eyes: 'It's just a really really cool building' https://t.co/xGIMQLBEBa
+RT @CBS2Boise: The Idaho Capitol through an 11-year-old's eyes: 'It's just a really really cool building' <https://t.co/xGIMQLBEBa>
 
 ## Links
-- https://idahonews.com/news/local/tour-the-statehouse-through-an-11-year-olds-eyes
+- <https://idahonews.com/news/local/tour-the-statehouse-through-an-11-year-olds-eyes>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1218761404800360448)

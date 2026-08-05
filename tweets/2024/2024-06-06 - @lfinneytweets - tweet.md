@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-@GabeOsterhout https://t.co/tmbmQconBL
+@GabeOsterhout <https://t.co/tmbmQconBL>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/GPaL3Rub0AATGJq.jpg)

@@ -14,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-Waiting on one last senator... https://t.co/tq0SI1wadE
+Waiting on one last senator... <https://t.co/tq0SI1wadE>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FEPvYubVUAoN1MP.jpg)

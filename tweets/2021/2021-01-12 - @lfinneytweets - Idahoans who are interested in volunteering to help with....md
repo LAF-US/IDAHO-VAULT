@@ -19,9 +19,9 @@ related:
 ---
 
 Idahoans who are interested in volunteering to help with vaccination efforts can sign up for their local Medical Reserve Corps. #IdahoCOVID19 #idpol 
-https://t.co/Se0Mo8k7Kl
+<https://t.co/Se0Mo8k7Kl>
 
 ## Links
-- https://www.volunteeridaho.com/
+- <https://www.volunteeridaho.com/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1349117397043593217)

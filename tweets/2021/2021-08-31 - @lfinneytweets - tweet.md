@@ -17,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-@ryannoyance @coyethan_ https://t.co/DZ4tnrflaG
+@ryannoyance @coyethan_ <https://t.co/DZ4tnrflaG>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/E-IzChRUYAEh6w-.jpg)

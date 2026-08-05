@@ -17,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-@GrittyNHL @RadioDawson https://t.co/GE3csjW9KM
+@GrittyNHL @RadioDawson <https://t.co/GE3csjW9KM>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/ETVhO8sWsAIDS3i.jpg)

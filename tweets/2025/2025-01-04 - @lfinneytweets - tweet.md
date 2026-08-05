@@ -16,10 +16,10 @@ related:
   - lfinneytweets
 ---
 
-@LinkofSunshine https://t.co/ynIDDZbFYR
+@LinkofSunshine <https://t.co/ynIDDZbFYR>
 
 ## Links
-- https://www.friendlyatheist.com/p/parting-words-from-the-only-atheist
+- <https://www.friendlyatheist.com/p/parting-words-from-the-only-atheist>
 
 *In reply to [@LinkofSunshine](https://twitter.com/LinkofSunshine)*
 

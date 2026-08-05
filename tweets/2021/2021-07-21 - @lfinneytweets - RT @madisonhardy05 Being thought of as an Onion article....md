@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-RT @madisonhardy05: Being thought of as an Onion article might be the peak of my career. https://t.co/EnPcFnpb57
+RT @madisonhardy05: Being thought of as an Onion article might be the peak of my career. <https://t.co/EnPcFnpb57>
 
 ## Links
-- https://x.com/MelissaKXLY4/status/1417906331164438528
+- <https://x.com/MelissaKXLY4/status/1417906331164438528>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1417930829154570242)

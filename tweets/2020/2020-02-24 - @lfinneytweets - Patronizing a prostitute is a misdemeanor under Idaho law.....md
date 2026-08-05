@@ -20,10 +20,10 @@ related:
 ---
 
 Patronizing a prostitute is a misdemeanor under Idaho law. A new bill would add fines to that conviction, up to $2,000 and $5,000. #idleg #idpol 
-https://t.co/BuzmkjGvMr
+<https://t.co/BuzmkjGvMr>
 
 ## Links
-- https://x.com/gregchaneyidaho/status/1232004076465868801
+- <https://x.com/gregchaneyidaho/status/1232004076465868801>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

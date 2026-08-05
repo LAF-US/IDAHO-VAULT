@@ -20,10 +20,10 @@ related:
 ---
 
 I also spoke with Speaker Bedke and Rep. Necochea about the income tax proposal on Friday. #idleg #idpol 
-https://t.co/43etT8t8eT
+<https://t.co/43etT8t8eT>
 
 ## Links
-- https://youtu.be/o7E71zqzR00
+- <https://youtu.be/o7E71zqzR00>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

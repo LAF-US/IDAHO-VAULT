@@ -16,9 +16,9 @@ related:
 ---
 
 RT @LewistonTribune: Sponsors for both proposed pieces of legislation asked by ed committee to rewrite and resubmit
-https://t.co/rEdej4NFRQ
+<https://t.co/rEdej4NFRQ>
 
 ## Links
-- https://bit.ly/3Sz7GZZ
+- <https://bit.ly/3Sz7GZZ>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1629254660103061504)

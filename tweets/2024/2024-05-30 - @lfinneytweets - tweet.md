@@ -14,10 +14,10 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/JXGNaschis
+<https://t.co/JXGNaschis>
 
 ## Links
-- https://x.com/IdahoReports/status/1796286288363958326?t=eDBK-OlAsqPWENjcHuTbUQ
+- <https://x.com/IdahoReports/status/1796286288363958326?t=eDBK-OlAsqPWENjcHuTbUQ>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

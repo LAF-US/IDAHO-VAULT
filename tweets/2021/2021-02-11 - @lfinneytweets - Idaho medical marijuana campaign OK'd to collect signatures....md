@@ -18,9 +18,9 @@ related:
 ---
 
 Idaho medical marijuana campaign OK'd to collect signatures (via @pfannyyy @thepostregister @Report4America) 
-https://t.co/14IOWFwVmK
+<https://t.co/14IOWFwVmK>
 
 ## Links
-- https://www.postregister.com/news/election/idaho-medical-marijuana-campaign-okd-to-collect-signatures/article_c8a76a02-d2fa-562f-af29-7753733ebf97.html
+- <https://www.postregister.com/news/election/idaho-medical-marijuana-campaign-okd-to-collect-signatures/article_c8a76a02-d2fa-562f-af29-7753733ebf97.html>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1359679869316071424)

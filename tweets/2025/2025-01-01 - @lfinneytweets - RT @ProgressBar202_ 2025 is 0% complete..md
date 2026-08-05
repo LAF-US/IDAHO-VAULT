@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-RT @ProgressBar202_: 2025 is 0% complete. https://t.co/l0xhiBn4nt
+RT @ProgressBar202_: 2025 is 0% complete. <https://t.co/l0xhiBn4nt>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GgKnW-yXsAA4NXh.jpg)

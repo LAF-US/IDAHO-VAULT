@@ -18,7 +18,7 @@ related:
   - MarchForOurLives
 ---
 
-RT @Pfannyyy: Huge turnout at the #MarchForOurLives in Boise. https://t.co/pbGCgoE0q2
+RT @Pfannyyy: Huge turnout at the #MarchForOurLives in Boise. <https://t.co/pbGCgoE0q2>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/DZEL2zAU8AALOK7.jpg)

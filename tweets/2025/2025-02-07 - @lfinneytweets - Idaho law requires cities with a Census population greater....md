@@ -18,7 +18,7 @@ related:
   - idpol
 ---
 
-Idaho law requires cities with a Census population greater than 100,000 people to elect their city council members by geographic district. The Senate introduced a bill today that would change that to 25,000 people, quadrupling the number of cities it covers. #idleg #idpol https://t.co/Beb7e5m3Q0
+Idaho law requires cities with a Census population greater than 100,000 people to elect their city council members by geographic district. The Senate introduced a bill today that would change that to 25,000 people, quadrupling the number of cities it covers. #idleg #idpol <https://t.co/Beb7e5m3Q0>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GjJTjacbEAAstdO.jpg)

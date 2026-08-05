@@ -15,10 +15,10 @@ related:
   - lfinneytweets
 ---
 
-The account @realDonaldTrump has been permanently suspended under Twitter's Glorification of Violence policy. https://t.co/STLdj093an https://t.co/hiTR5Fnqp0
+The account @realDonaldTrump has been permanently suspended under Twitter's Glorification of Violence policy. <https://t.co/STLdj093an> <https://t.co/hiTR5Fnqp0>
 
 ## Links
-- https://x.com/Safety/status/1347684877634838528
+- <https://x.com/Safety/status/1347684877634838528>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/ErP0kY3UUAAyOFW.jpg)

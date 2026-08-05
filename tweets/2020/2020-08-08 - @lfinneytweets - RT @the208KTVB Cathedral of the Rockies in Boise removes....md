@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-RT @the208KTVB: Cathedral of the Rockies in Boise removes stained-glass image of Robert E. Lee https://t.co/7zJIsjaXlq
+RT @the208KTVB: Cathedral of the Rockies in Boise removes stained-glass image of Robert E. Lee <https://t.co/7zJIsjaXlq>
 
 ## Links
-- https://feeds.feedblitz.com/~/632850336/0/ktvb/the208~Cathedral-of-the-Rockies-in-Boise-removes-stainedglass-image-of-Robert-E-Lee?utm_campaign=snd-autopilot
+- <https://feeds.feedblitz.com/~/632850336/0/ktvb/the208~Cathedral-of-the-Rockies-in-Boise-removes-stainedglass-image-of-Robert-E-Lee?utm_campaign=snd-autopilot>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1291950239192985601)

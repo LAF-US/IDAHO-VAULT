@@ -19,7 +19,7 @@ related:
   - IdahoCOVID19
 ---
 
-RT @IdahoReports: April 23 Weekly #IdahoCOVID19 Update | @IdahoPTV https://t.co/TYVOlqzXkX
+RT @IdahoReports: April 23 Weekly #IdahoCOVID19 Update | @IdahoPTV <https://t.co/TYVOlqzXkX>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/ext_tw_video_thumb/1385763092554915841/pu/img/PALg5avcKB33OWtX.jpg)

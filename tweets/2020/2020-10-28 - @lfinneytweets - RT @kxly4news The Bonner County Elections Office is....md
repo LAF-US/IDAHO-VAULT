@@ -15,6 +15,6 @@ related:
   - lfinneytweets
 ---
 
-RT @kxly4news: The Bonner County Elections Office is reporting a record voter turnout one week ahead of the election.  https://t.co/3IITk4t…
+RT @kxly4news: The Bonner County Elections Office is reporting a record voter turnout one week ahead of the election.  <https://t.co/3IITk4t…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1321324117207863297)

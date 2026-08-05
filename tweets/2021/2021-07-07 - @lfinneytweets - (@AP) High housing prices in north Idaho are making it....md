@@ -19,9 +19,9 @@ related:
 ---
 
 (@AP) High housing prices in north Idaho are making it difficult to attract police officers. Kootenai County Sheriff Bob Norris said his agency has recruited new hires only to have them decline the job after discovering they couldn’t afford housing. #idpol
-https://t.co/iIiY07UpW7
+<https://t.co/iIiY07UpW7>
 
 ## Links
-- https://apnews.com/article/id-state-wire-idaho-business-government-and-politics-d5b10431861d36dfb58f77e8033837cb
+- <https://apnews.com/article/id-state-wire-idaho-business-government-and-politics-d5b10431861d36dfb58f77e8033837cb>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1412857050468556800)

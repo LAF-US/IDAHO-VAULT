@@ -16,7 +16,7 @@ related:
   - idleg
 ---
 
-Galloway takes the District 15 Senate seat. Both incumbents. Healey is reelected by 1,780 votes and Berch by just 227.  #idleg https://t.co/BIJQdpihvN
+Galloway takes the District 15 Senate seat. Both incumbents. Healey is reelected by 1,780 votes and Berch by just 227.  #idleg <https://t.co/BIJQdpihvN>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GbsfJrDbkAElYwu.png)

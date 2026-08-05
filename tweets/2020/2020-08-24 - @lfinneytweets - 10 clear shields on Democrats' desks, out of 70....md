@@ -19,7 +19,7 @@ related:
   - idpol
 ---
 
-10 clear shields on Democrats' desks, out of 70 representatives. #idleg #idpol https://t.co/W3ZHdXagPP
+10 clear shields on Democrats' desks, out of 70 representatives. #idleg #idpol <https://t.co/W3ZHdXagPP>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EgMq6PYU0AE2IIt.jpg)

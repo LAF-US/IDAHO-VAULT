@@ -15,10 +15,10 @@ related:
   - lfinneytweets
 ---
 
-RT @IDHSAA: Find the entire guide to safely re-opening sports and activities this fall here: https://t.co/dShFI1RRxS https://t.co/ufhT20yAD1
+RT @IDHSAA: Find the entire guide to safely re-opening sports and activities this fall here: <https://t.co/dShFI1RRxS> <https://t.co/ufhT20yAD1>
 
 ## Links
-- https://idhsaa.org/asset/HOME%20PAGE/IHSAA%20Fall%20Sport%20COVID%20Guidelines.pdf
+- <https://idhsaa.org/asset/HOME%20PAGE/IHSAA%20Fall%20Sport%20COVID%20Guidelines.pdf>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EdEylBSUYAA6vDS.jpg)

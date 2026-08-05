@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-@davlinnews @laralaradisney @IdahoReports https://t.co/GZmaQOXu6l
+@davlinnews @laralaradisney @IdahoReports <https://t.co/GZmaQOXu6l>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/FKdX9SSVkAMwyth.jpg)

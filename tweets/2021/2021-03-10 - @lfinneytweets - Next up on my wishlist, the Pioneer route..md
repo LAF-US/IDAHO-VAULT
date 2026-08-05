@@ -13,9 +13,9 @@ related:
   - lfinneytweets
 ---
 
-Next up on my wishlist, the Pioneer route. https://t.co/yNTTeOAlC7
+Next up on my wishlist, the Pioneer route. <https://t.co/yNTTeOAlC7>
 
 ## Links
-- https://x.com/samjmintz/status/1369765607353286661
+- <https://x.com/samjmintz/status/1369765607353286661>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1369773030906359809)

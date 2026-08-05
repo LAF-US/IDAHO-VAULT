@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-RT @EllamaeBurnell: Protesters are standing in silence outside of the Admin. https://t.co/70z2XEu5v6
+RT @EllamaeBurnell: Protesters are standing in silence outside of the Admin. <https://t.co/70z2XEu5v6>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/DyNKgPqUcAEwBuU.jpg)

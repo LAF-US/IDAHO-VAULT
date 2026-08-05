@@ -16,6 +16,6 @@ related:
 ---
 
 RT @danielwinlander: For all those worried about the fearmongering about a 
-"second wave" of COVID-19, take comfort in this: https://t.co/T…
+"second wave" of COVID-19, take comfort in this: <https://t.co/T…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1281265311967145990)

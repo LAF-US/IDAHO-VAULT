@@ -14,9 +14,9 @@ related:
 ---
 
 Even though my phone didn't go off during today's emergency alert test, I'm still going to share this amazing @20korg episode that can't be legally broadcast over the radio. 
-https://t.co/iO2fOSoA0C
+<https://t.co/iO2fOSoA0C>
 
 ## Links
-- https://www.20k.org/episodes/emergencyalert
+- <https://www.20k.org/episodes/emergencyalert>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1425590105046093825)

@@ -14,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-Capitol steps part 2, feat. Ammon Bundy https://t.co/bKTn3QSj3B
+Capitol steps part 2, feat. Ammon Bundy <https://t.co/bKTn3QSj3B>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EbQG3rjWAAApYPQ.jpg)

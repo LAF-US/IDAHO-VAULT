@@ -16,9 +16,9 @@ related:
 ---
 
 RT @LewistonTribune: Lewiston’s McCann takes on agriculture, commerce, human resources and education committees
-https://t.co/QBnrygVuwU
+<https://t.co/QBnrygVuwU>
 
 ## Links
-- https://bit.ly/3FgEPBU
+- <https://bit.ly/3FgEPBU>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1461079659269931008)

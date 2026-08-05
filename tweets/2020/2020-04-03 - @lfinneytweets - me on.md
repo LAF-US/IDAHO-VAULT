@@ -13,10 +13,10 @@ related:
   - lfinneytweets
 ---
 
-me on https://t.co/nxIWTF7aiy https://t.co/nV7kQ9zWlG
+me on <https://t.co/nxIWTF7aiy> <https://t.co/nV7kQ9zWlG>
 
 ## Links
-- http://coronavirus.idaho.gov
+- <http://coronavirus.idaho.gov>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/EUtxGBRU8AAn_Vu.jpg)

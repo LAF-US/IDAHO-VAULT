@@ -18,10 +18,10 @@ related:
 ---
 
 Similar language is also in the Department of Administration budget bill. Senators are negotiating over whether to pull that one back too, or wait until a new ITD budget advances. #idleg  
-https://t.co/9yDFNZgd5H
+<https://t.co/9yDFNZgd5H>
 
 ## Links
-- https://legislature.idaho.gov/sessioninfo/2024/legislation/H0726/
+- <https://legislature.idaho.gov/sessioninfo/2024/legislation/H0726/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

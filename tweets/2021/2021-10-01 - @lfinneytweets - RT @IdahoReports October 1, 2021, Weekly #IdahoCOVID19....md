@@ -19,7 +19,7 @@ related:
   - IdahoCOVID19
 ---
 
-RT @IdahoReports: October 1, 2021, Weekly #IdahoCOVID19 Update | @IdahoPTV https://t.co/mLDFYeSuJR
+RT @IdahoReports: October 1, 2021, Weekly #IdahoCOVID19 Update | @IdahoPTV <https://t.co/mLDFYeSuJR>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/amplify_video_thumb/1444025396442243074/img/zwxf1it4Eundk77n.jpg)

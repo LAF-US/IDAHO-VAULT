@@ -19,7 +19,7 @@ related:
   - Idaho
 ---
 
-RT @KTVBJoe: #Idaho casts 4 electoral college votes for @realDonaldTrump https://t.co/DjC4JEhhM1
+RT @KTVBJoe: #Idaho casts 4 electoral college votes for @realDonaldTrump <https://t.co/DjC4JEhhM1>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EpOIAwnUYAA86hI.jpg)

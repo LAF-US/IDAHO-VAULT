@@ -18,9 +18,9 @@ related:
   - idleg
 ---
 
-The drug prohibition constitutional amendment now advances to the House, where it will need 47 votes to clear the 2/3 approval margin. #idpol #idleg https://t.co/FPFQH0DSds
+The drug prohibition constitutional amendment now advances to the House, where it will need 47 votes to clear the 2/3 approval margin. #idpol #idleg <https://t.co/FPFQH0DSds>
 
 ## Links
-- https://x.com/BetsyZRussell/status/1357051629724262400
+- <https://x.com/BetsyZRussell/status/1357051629724262400>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1357052360032309248)

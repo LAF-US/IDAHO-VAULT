@@ -22,6 +22,6 @@ related:
 ---
 
 RT @IdahoReports: #idleg fiscal policy nerds (and Idaho Reports @YouTube subscribers 😉) get early access this week. #idpol 
-https://t.co/Ei…
+<https://t.co/Ei…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1492294966214729734)

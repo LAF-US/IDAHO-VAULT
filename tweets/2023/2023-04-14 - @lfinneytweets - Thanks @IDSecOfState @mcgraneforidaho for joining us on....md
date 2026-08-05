@@ -23,7 +23,7 @@ related:
   - idpol
 ---
 
-Thanks @IDSecOfState @mcgraneforidaho for joining us on @IdahoReports this week! Be sure to tune in tonight on @IdahoPTV at 8 p.m. #idleg #idpol https://t.co/P82wcxddoW
+Thanks @IDSecOfState @mcgraneforidaho for joining us on @IdahoReports this week! Be sure to tune in tonight on @IdahoPTV at 8 p.m. #idleg #idpol <https://t.co/P82wcxddoW>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FttO2QuaIAAFyJd.jpg)

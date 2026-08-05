@@ -17,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-@LibertyBelle208 @FromHavilah It's to get around the constitution. https://t.co/XcvBiRKwwy
+@LibertyBelle208 @FromHavilah It's to get around the constitution. <https://t.co/XcvBiRKwwy>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/HBfLq6pbAAAX4ZG.png)

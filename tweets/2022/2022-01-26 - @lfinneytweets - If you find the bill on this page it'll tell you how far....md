@@ -18,10 +18,10 @@ related:
 ---
 
 @KelcieMMorris @thenextbarstool @davlinnews @clarkcorbin If you find the bill on this page it'll tell you how far it's made it in the process and what committee it's assigned to. 
-https://t.co/H89di7qhug
+<https://t.co/H89di7qhug>
 
 ## Links
-- https://legislature.idaho.gov/sessioninfo/2022/legislation/
+- <https://legislature.idaho.gov/sessioninfo/2022/legislation/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

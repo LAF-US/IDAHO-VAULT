@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-RT @mlcarmel: The Idaho Dems aren’t happy with the last minute property tax hot potato going on https://t.co/uTTd4pSC5V
+RT @mlcarmel: The Idaho Dems aren’t happy with the last minute property tax hot potato going on <https://t.co/uTTd4pSC5V>
 
 ## Links
-- https://x.com/jcdeloof/status/1640724736358469633
+- <https://x.com/jcdeloof/status/1640724736358469633>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1640769716695310336)

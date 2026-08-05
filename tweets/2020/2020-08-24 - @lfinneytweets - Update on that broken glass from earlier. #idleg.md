@@ -16,9 +16,9 @@ related:
   - idleg
 ---
 
-Update on that broken glass from earlier. #idleg https://t.co/gn40RWyqtE
+Update on that broken glass from earlier. #idleg <https://t.co/gn40RWyqtE>
 
 ## Links
-- https://x.com/KeithRidler/status/1297967544884580352
+- <https://x.com/KeithRidler/status/1297967544884580352>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1297969740745338880)

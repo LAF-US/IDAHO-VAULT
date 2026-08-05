@@ -14,10 +14,10 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/0fTEE8LkuR
+<https://t.co/0fTEE8LkuR>
 
 ## Links
-- https://idahocapitalsun.com/2026/01/26/idaho-prisons-are-full-costs-for-incarcerating-inmates-in-jails-and-out-of-state-are-skyrocketing/
+- <https://idahocapitalsun.com/2026/01/26/idaho-prisons-are-full-costs-for-incarcerating-inmates-in-jails-and-out-of-state-are-skyrocketing/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

@@ -13,7 +13,7 @@ related:
   - lfinneytweets
 ---
 
-@TaraBethIdaho https://t.co/Wvmb4bzh0j
+@TaraBethIdaho <https://t.co/Wvmb4bzh0j>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/FBoZww-VgAACgxa.jpg)

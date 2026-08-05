@@ -19,9 +19,9 @@ related:
 ---
 
 "@UniversityofKY and @OregonState, both of which have hemp research programs, are trying to get more funding through the @USDA.
-OSU is advocating for investment in research 'to inform the developing and quickly growing industrial hemp sector,' VP Steve Clark told @CannabisWire." https://t.co/1At9aA8qoX
+OSU is advocating for investment in research 'to inform the developing and quickly growing industrial hemp sector,' VP Steve Clark told @CannabisWire." <https://t.co/1At9aA8qoX>
 
 ## Links
-- https://x.com/CannabisWire/status/1223247726818811912
+- <https://x.com/CannabisWire/status/1223247726818811912>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1223302642618626049)

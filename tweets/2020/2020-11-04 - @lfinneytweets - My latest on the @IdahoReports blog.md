@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-My latest on the @IdahoReports blog: https://t.co/sx8gQbwr53
+My latest on the @IdahoReports blog: <https://t.co/sx8gQbwr53>
 
 ## Links
-- https://x.com/IdahoReports/status/1324054249634820096
+- <https://x.com/IdahoReports/status/1324054249634820096>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1324054422784073728)

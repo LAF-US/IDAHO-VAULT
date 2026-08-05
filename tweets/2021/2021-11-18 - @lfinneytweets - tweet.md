@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-@laralaradisney https://t.co/Q8AzPRzSub
+@laralaradisney <https://t.co/Q8AzPRzSub>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FEdVQ85VgAEb1Lb.jpg)

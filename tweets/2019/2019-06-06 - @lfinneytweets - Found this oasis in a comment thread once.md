@@ -13,7 +13,7 @@ related:
   - lfinneytweets
 ---
 
-@davlinnews Found this oasis in a comment thread once: https://t.co/sv0kLMliqF
+@davlinnews Found this oasis in a comment thread once: <https://t.co/sv0kLMliqF>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/D8XAjiRV4AEB82W.jpg)

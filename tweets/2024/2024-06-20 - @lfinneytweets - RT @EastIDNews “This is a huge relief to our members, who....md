@@ -15,6 +15,6 @@ related:
   - lfinneytweets
 ---
 
-RT @EastIDNews: “This is a huge relief to our members, who have had their livelihoods threatened over the past month."    https://t.co/FazY…
+RT @EastIDNews: “This is a huge relief to our members, who have had their livelihoods threatened over the past month."    <https://t.co/FazY…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1803931871702876299)

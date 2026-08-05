@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-@DonLDay https://t.co/C9ifg3yLrk
+@DonLDay <https://t.co/C9ifg3yLrk>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/Fps4urNagAAjdE_.jpg)

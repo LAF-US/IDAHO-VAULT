@@ -16,9 +16,9 @@ related:
   - idleg
 ---
 
-This is the most interesting vote breakdown I've seen in some time. #idleg https://t.co/kPq8qrqH2P
+This is the most interesting vote breakdown I've seen in some time. #idleg <https://t.co/kPq8qrqH2P>
 
 ## Links
-- https://x.com/lfinneytweets/status/1491853532412071947
+- <https://x.com/lfinneytweets/status/1491853532412071947>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1491859870408069132)

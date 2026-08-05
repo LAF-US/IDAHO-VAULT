@@ -15,6 +15,6 @@ related:
   - lfinneytweets
 ---
 
-RT @CdAPressNews: Police arrested an armed man who allegedly trespassed while protesting a library program for LGBTQ youths. https://t.co/H…
+RT @CdAPressNews: Police arrested an armed man who allegedly trespassed while protesting a library program for LGBTQ youths. <https://t.co/H…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1474072757432307725)

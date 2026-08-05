@@ -14,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-Rep. Tammy Nichols (R-Middleton) https://t.co/ejv5D7PKcN
+Rep. Tammy Nichols (R-Middleton) <https://t.co/ejv5D7PKcN>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EbQFOE8XsAAAFWT.jpg)

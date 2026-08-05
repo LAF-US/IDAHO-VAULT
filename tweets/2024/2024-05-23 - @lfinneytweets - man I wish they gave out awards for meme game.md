@@ -13,9 +13,9 @@ related:
   - lfinneytweets
 ---
 
-man I wish they gave out awards for meme game https://t.co/qtEsowZGdQ
+man I wish they gave out awards for meme game <https://t.co/qtEsowZGdQ>
 
 ## Links
-- https://x.com/currevive/status/1793427271883399255
+- <https://x.com/currevive/status/1793427271883399255>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1793432000004804738)

@@ -15,6 +15,6 @@ related:
   - lfinneytweets
 ---
 
-RT @CBS2Boise: Not a few hours after CDH announced face masks for Ada County did the SWDH announce a special session. https://t.co/Dk5wxhtC…
+RT @CBS2Boise: Not a few hours after CDH announced face masks for Ada County did the SWDH announce a special session. <https://t.co/Dk5wxhtC…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1283242950009384961)

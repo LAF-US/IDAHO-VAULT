@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-RT @CPRNews: The former officers involved have been criminally charged and have warrants out for their arrest. https://t.co/dip7moWEKj
+RT @CPRNews: The former officers involved have been criminally charged and have warrants out for their arrest. <https://t.co/dip7moWEKj>
 
 ## Links
-- https://buff.ly/3uZGkzD
+- <https://buff.ly/3uZGkzD>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1395399912565604354)

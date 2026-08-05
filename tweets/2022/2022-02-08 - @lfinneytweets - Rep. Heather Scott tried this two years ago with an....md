@@ -18,9 +18,9 @@ related:
   - idpol
 ---
 
-Rep. Heather Scott tried this two years ago with an abortion bill. #idleg #idpol https://t.co/kCLxFbyHGz
+Rep. Heather Scott tried this two years ago with an abortion bill. #idleg #idpol <https://t.co/kCLxFbyHGz>
 
 ## Links
-- https://t.co/kCLxFbyHGz
+- <https://t.co/kCLxFbyHGz>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1491131049698795520)

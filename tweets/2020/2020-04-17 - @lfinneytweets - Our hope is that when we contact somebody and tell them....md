@@ -21,9 +21,9 @@ related:
   - idpol
 ---
 
-"Our hope is that when we contact somebody and tell them that they're violating the order, they'll comply with that verbal warning and head home," @KootenaiSheriff Lt. Stu Miller told @KREM2. Any potential citations would occur on a case-by-case basis. #IdahoCOVID19 #idpol https://t.co/bDHYUIiH3S
+"Our hope is that when we contact somebody and tell them that they're violating the order, they'll comply with that verbal warning and head home," @KootenaiSheriff Lt. Stu Miller told @KREM2. Any potential citations would occur on a case-by-case basis. #IdahoCOVID19 #idpol <https://t.co/bDHYUIiH3S>
 
 ## Links
-- https://x.com/TViydo/status/1250954911027609601
+- <https://x.com/TViydo/status/1250954911027609601>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1250996215132512256)

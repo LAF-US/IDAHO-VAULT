@@ -17,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-@mlcarmel @shannon_minor https://t.co/8K0sMwkGxE
+@mlcarmel @shannon_minor <https://t.co/8K0sMwkGxE>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FBJXQM9UUAAdEtY.jpg)

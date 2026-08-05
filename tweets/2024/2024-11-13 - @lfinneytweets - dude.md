@@ -18,10 +18,10 @@ related:
 ---
 
 @gemstatebrian @HeatherScottID dude 
-https://t.co/qiBZqGOmEH
+<https://t.co/qiBZqGOmEH>
 
 ## Links
-- https://www.adl.org/resources/hate-symbol/1488
+- <https://www.adl.org/resources/hate-symbol/1488>
 
 *In reply to [@brianalmon](https://twitter.com/brianalmon)*
 

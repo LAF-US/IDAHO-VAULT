@@ -16,9 +16,9 @@ related:
   - lfinneytweets
 ---
 
-Thread from @reclaimID co-founder responding to recent claims by @IdahoFreedom Foundation chair https://t.co/1vEsM0Kyz4
+Thread from @reclaimID co-founder responding to recent claims by @IdahoFreedom Foundation chair <https://t.co/1vEsM0Kyz4>
 
 ## Links
-- https://x.com/lukemayville/status/1115324938154647553
+- <https://x.com/lukemayville/status/1115324938154647553>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1115708072385601536)

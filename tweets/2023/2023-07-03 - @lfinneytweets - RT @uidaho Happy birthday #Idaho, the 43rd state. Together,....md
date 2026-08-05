@@ -18,7 +18,7 @@ related:
   - Idaho
 ---
 
-RT @uidaho: Happy birthday #Idaho, the 43rd state. Together, we've been brave and bold since the beginning. 🙌🎉 https://t.co/JzFq0AewRn
+RT @uidaho: Happy birthday #Idaho, the 43rd state. Together, we've been brave and bold since the beginning. 🙌🎉 <https://t.co/JzFq0AewRn>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/F0HgsUCWwAIJr2n.jpg)

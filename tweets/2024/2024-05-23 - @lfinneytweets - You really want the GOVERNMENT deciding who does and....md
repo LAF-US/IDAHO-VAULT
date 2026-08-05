@@ -20,7 +20,7 @@ related:
   - lfinneytweets
 ---
 
-@currevive @IdahoPressClub @IRE_NICAR @Poynter @sejorg @DartCenter You really want the GOVERNMENT deciding who does and doesn't get to be a reporter? https://t.co/AmdLHLD9c5
+@currevive @IdahoPressClub @IRE_NICAR @Poynter @sejorg @DartCenter You really want the GOVERNMENT deciding who does and doesn't get to be a reporter? <https://t.co/AmdLHLD9c5>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GORoXImaoAAm_-d.jpg)

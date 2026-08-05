@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-RT @danielwinlander: https://t.co/aCUnAC7Om0
+RT @danielwinlander: <https://t.co/aCUnAC7Om0>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FTA73r4UYAA5plF.jpg)

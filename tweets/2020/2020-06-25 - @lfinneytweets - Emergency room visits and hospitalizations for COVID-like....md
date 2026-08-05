@@ -17,7 +17,7 @@ related:
   - IdahoCOVID19
 ---
 
-Emergency room visits and hospitalizations for COVID-like illnesses have trended slightly upward, but not enough to throw off reopening. #IdahoCOVID19 https://t.co/8cIMtowW7G
+Emergency room visits and hospitalizations for COVID-like illnesses have trended slightly upward, but not enough to throw off reopening. #IdahoCOVID19 <https://t.co/8cIMtowW7G>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EbYIfJZUEAEcMhu.jpg)

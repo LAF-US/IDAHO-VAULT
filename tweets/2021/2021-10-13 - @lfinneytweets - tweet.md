@@ -17,10 +17,10 @@ related:
   - lfinneytweets
 ---
 
-@TeeTuckerHarrie @IdahoReports https://t.co/Bf3rEbdDm0
+@TeeTuckerHarrie @IdahoReports <https://t.co/Bf3rEbdDm0>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2020/11/04/election-preview-constitutional-amendment-hjr4/
+- <https://blog.idahoreports.idahoptv.org/2020/11/04/election-preview-constitutional-amendment-hjr4/>
 
 *In reply to [@TeeTuckerHarrie](https://twitter.com/TeeTuckerHarrie)*
 

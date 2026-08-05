@@ -15,6 +15,6 @@ related:
   - lfinneytweets
 ---
 
-RT @News_3_Now: A new plan is underway with a new irrigation canal pipeline to recharge the Snake River Plain Aquifer. https://t.co/5hJoetu…
+RT @News_3_Now: A new plan is underway with a new irrigation canal pipeline to recharge the Snake River Plain Aquifer. <https://t.co/5hJoetu…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1720246514306670709)

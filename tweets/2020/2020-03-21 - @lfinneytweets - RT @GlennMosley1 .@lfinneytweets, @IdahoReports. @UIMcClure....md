@@ -22,7 +22,7 @@ related:
   - journalismmatters
 ---
 
-RT @GlennMosley1: .@lfinneytweets, @IdahoReports. @UIMcClure @uidaho #journalismmatters https://t.co/jsH3PICfjn
+RT @GlennMosley1: .@lfinneytweets, @IdahoReports. @UIMcClure @uidaho #journalismmatters <https://t.co/jsH3PICfjn>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/ETnFBdlVAAUPXuF.jpg)

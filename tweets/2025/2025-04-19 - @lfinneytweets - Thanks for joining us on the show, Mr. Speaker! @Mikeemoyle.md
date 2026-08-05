@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-Thanks for joining us on the show, Mr. Speaker! @Mikeemoyle https://t.co/JGRCo3WJRZ
+Thanks for joining us on the show, Mr. Speaker! @Mikeemoyle <https://t.co/JGRCo3WJRZ>
 
 ## Links
-- https://x.com/IdahoReports/status/1913388368362172867
+- <https://x.com/IdahoReports/status/1913388368362172867>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1913391958258843776)

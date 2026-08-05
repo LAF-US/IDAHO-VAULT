@@ -20,9 +20,9 @@ related:
 ---
 
 And I thought Idaho had a lot of specialty license plates... #idleg (via @BeautPublicData @jonkeegan)
-https://t.co/KiEbgdTe2t
+<https://t.co/KiEbgdTe2t>
 
 ## Links
-- https://www.beautifulpublicdata.com/all-of-the-license-plates-in-the-united-states/
+- <https://www.beautifulpublicdata.com/all-of-the-license-plates-in-the-united-states/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1696248279858835591)

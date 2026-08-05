@@ -14,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-L to R: Moon, Scott, Wisniewski, Christensen https://t.co/sx4ZPMrVZo
+L to R: Moon, Scott, Wisniewski, Christensen <https://t.co/sx4ZPMrVZo>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EbQFuDwXgAAsG_M.jpg)

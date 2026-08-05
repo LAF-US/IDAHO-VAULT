@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-@TheDemocrats https://t.co/LWhiKD9M6B
+@TheDemocrats <https://t.co/LWhiKD9M6B>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/Gk7gSEDXoAAOs1M.jpg)

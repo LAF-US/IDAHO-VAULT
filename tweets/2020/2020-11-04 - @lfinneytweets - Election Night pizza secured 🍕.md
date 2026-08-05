@@ -13,7 +13,7 @@ related:
   - lfinneytweets
 ---
 
-Election Night pizza secured 🍕 https://t.co/2rxFGYpPhN
+Election Night pizza secured 🍕 <https://t.co/2rxFGYpPhN>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/El8VQWIUYAAC3EG.jpg)

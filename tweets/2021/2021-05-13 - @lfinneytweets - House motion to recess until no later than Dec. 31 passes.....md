@@ -19,7 +19,7 @@ related:
   - idpol
 ---
 
-House motion to recess until no later than Dec. 31 passes. See you all sometime later this year? #idleg #idpol https://t.co/LT0beXbm4i
+House motion to recess until no later than Dec. 31 passes. See you all sometime later this year? #idleg #idpol <https://t.co/LT0beXbm4i>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/E1PpMM6VcAIBpvd.jpg)

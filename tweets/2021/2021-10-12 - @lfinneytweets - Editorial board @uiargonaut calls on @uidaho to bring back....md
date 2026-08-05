@@ -19,9 +19,9 @@ related:
   - IdahoCOVID19
 ---
 
-Editorial board @uiargonaut calls on @uidaho to bring back on-campus COVID-19 testing for students, citing lack of resources in local stores and having to compete with full-time Moscow residents. #IdahoCOVID19 https://t.co/eFaZp07TQz
+Editorial board @uiargonaut calls on @uidaho to bring back on-campus COVID-19 testing for students, citing lack of resources in local stores and having to compete with full-time Moscow residents. #IdahoCOVID19 <https://t.co/eFaZp07TQz>
 
 ## Links
-- https://x.com/uiargonaut/status/1447989157226106881
+- <https://x.com/uiargonaut/status/1447989157226106881>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1448047345476640771)

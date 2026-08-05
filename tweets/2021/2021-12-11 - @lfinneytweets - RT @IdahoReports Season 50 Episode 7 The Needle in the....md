@@ -21,9 +21,9 @@ related:
 ---
 
 RT @IdahoReports: Season 50 Episode 7: The Needle in the Haystack... #idleg #idpol 
-https://t.co/JexrV4TYYh
+<https://t.co/JexrV4TYYh>
 
 ## Links
-- https://video.idahoptv.org/video/the-needle-in-the-haystack-dec-10-2021-jnijyr/
+- <https://video.idahoptv.org/video/the-needle-in-the-haystack-dec-10-2021-jnijyr/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1469512609795743746)

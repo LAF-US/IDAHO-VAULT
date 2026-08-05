@@ -21,6 +21,6 @@ related:
 ---
 
 RT @IdahoReports: Gov. Brad Little delivers the 2023 State of the State and budget address live at 1pm MT/noon PT. #idleg #idpol 
-https://t…
+<https://t…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1612531629570019328)

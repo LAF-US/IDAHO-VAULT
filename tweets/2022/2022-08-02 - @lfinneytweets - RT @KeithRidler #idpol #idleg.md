@@ -20,9 +20,9 @@ related:
   - idleg
 ---
 
-RT @KeithRidler: https://t.co/9R2wM9tYOB  #idpol #idleg
+RT @KeithRidler: <https://t.co/9R2wM9tYOB>  #idpol #idleg
 
 ## Links
-- https://apnews.com/article/abortion-health-lawsuits-idaho-926faa1d6773e888d1fed10353000e13
+- <https://apnews.com/article/abortion-health-lawsuits-idaho-926faa1d6773e888d1fed10353000e13>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1554530053202984962)

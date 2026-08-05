@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-RT @cspan: Trump Administration Rescinds Order on Federal Aid Freeze https://t.co/mWiuaeNP4B
+RT @cspan: Trump Administration Rescinds Order on Federal Aid Freeze <https://t.co/mWiuaeNP4B>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GieuAf8XcAA4Ffz.jpg)

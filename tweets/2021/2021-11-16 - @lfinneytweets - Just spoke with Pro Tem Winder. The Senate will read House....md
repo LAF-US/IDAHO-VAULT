@@ -16,9 +16,9 @@ related:
   - idleg
 ---
 
-Just spoke with Pro Tem Winder. The Senate will read House bills across the desk, assign them to committee and adjourn for the evening. #idleg https://t.co/5RCjuPJk9k
+Just spoke with Pro Tem Winder. The Senate will read House bills across the desk, assign them to committee and adjourn for the evening. #idleg <https://t.co/5RCjuPJk9k>
 
 ## Links
-- https://t.co/5RCjuPJk9k
+- <https://t.co/5RCjuPJk9k>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1460757117367820288)

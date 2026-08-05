@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-RT @jribas: weird couple of years for brands https://t.co/sFgw7mV5am
+RT @jribas: weird couple of years for brands <https://t.co/sFgw7mV5am>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/DedAdgnWkAYIWF8.jpg)

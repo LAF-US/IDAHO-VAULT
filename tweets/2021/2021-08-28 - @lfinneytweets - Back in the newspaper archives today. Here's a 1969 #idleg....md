@@ -18,7 +18,7 @@ related:
   - idleg
 ---
 
-Back in the newspaper archives today. Here's a 1969 #idleg roundup from the March 4 edition of @IdahoStatesman. https://t.co/rMwGdCWbYU
+Back in the newspaper archives today. Here's a 1969 #idleg roundup from the March 4 edition of @IdahoStatesman. <https://t.co/rMwGdCWbYU>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/E91khIpUYAEP-7E.jpg)

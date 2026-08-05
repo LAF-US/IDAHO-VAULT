@@ -20,6 +20,6 @@ related:
   - idpol
 ---
 
-RT @BetsyZRussell: Eye on Boise: How SJR 101 would allow for hemp if lawmakers legalized it this year... #idleg #idpol https://t.co/Wr9MiZP…
+RT @BetsyZRussell: Eye on Boise: How SJR 101 would allow for hemp if lawmakers legalized it this year... #idleg #idpol <https://t.co/Wr9MiZP…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1353762191309115393)

@@ -16,9 +16,9 @@ related:
   - idpol
 ---
 
-Are you insinuating none of your candidates who have RSVP'd to our debates are actually Republicans? #idpol https://t.co/3ifLpOx9IK
+Are you insinuating none of your candidates who have RSVP'd to our debates are actually Republicans? #idpol <https://t.co/3ifLpOx9IK>
 
 ## Links
-- https://x.com/IdahoGOP/status/1512570176331386881
+- <https://x.com/IdahoGOP/status/1512570176331386881>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1512572563536289792)

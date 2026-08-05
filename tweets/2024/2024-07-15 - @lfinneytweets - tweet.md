@@ -16,10 +16,10 @@ related:
   - lfinneytweets
 ---
 
-@gregapruett https://t.co/jlqR0gtQ0o
+@gregapruett <https://t.co/jlqR0gtQ0o>
 
 ## Links
-- https://www.idahostatesman.com/news/business/article277939698.html
+- <https://www.idahostatesman.com/news/business/article277939698.html>
 
 *In reply to [@gregapruett](https://twitter.com/gregapruett)*
 

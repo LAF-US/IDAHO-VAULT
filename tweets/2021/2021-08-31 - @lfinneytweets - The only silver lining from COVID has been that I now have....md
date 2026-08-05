@@ -13,9 +13,9 @@ related:
   - lfinneytweets
 ---
 
-The only silver lining from COVID has been that I now have a bunch of masks for riding my bike on smoke-filled days. https://t.co/SdMUhbAzyp
+The only silver lining from COVID has been that I now have a bunch of masks for riding my bike on smoke-filled days. <https://t.co/SdMUhbAzyp>
 
 ## Links
-- https://x.com/NWSBoise/status/1432760576153841671
+- <https://x.com/NWSBoise/status/1432760576153841671>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1432762507588870150)

@@ -18,9 +18,9 @@ related:
   - idpol
 ---
 
-\#idleg #idpol https://t.co/pW5t7B0dg5
+\#idleg #idpol <https://t.co/pW5t7B0dg5>
 
 ## Links
-- https://x.com/maggieKTVB7/status/1360384868308320258
+- <https://x.com/maggieKTVB7/status/1360384868308320258>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1360387233493078016)

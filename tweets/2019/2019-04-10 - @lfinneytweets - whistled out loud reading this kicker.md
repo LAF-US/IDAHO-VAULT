@@ -17,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-@sethogilvie @IdahoReports *whistled out loud reading this kicker* https://t.co/nnf3ccrDSf
+@sethogilvie @IdahoReports *whistled out loud reading this kicker* <https://t.co/nnf3ccrDSf>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/D3wF6HBU0AANNbL.jpg)

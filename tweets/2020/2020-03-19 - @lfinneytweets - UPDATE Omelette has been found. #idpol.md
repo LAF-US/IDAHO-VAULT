@@ -16,9 +16,9 @@ related:
   - idpol
 ---
 
-UPDATE: Omelette has been found. #idpol https://t.co/cZzVvsBotM
+UPDATE: Omelette has been found. #idpol <https://t.co/cZzVvsBotM>
 
 ## Links
-- https://x.com/lfinneytweets/status/1230923503278231552
+- <https://x.com/lfinneytweets/status/1230923503278231552>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1240470668908478464)

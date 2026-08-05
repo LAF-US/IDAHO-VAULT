@@ -16,9 +16,9 @@ related:
   - IdahoCOVID19
 ---
 
-Re: high school sports and #IdahoCOVID19 Stage 3 https://t.co/KxNYvzDv31
+Re: high school sports and #IdahoCOVID19 Stage 3 <https://t.co/KxNYvzDv31>
 
 ## Links
-- https://x.com/lfinneytweets/status/1321167526789672961
+- <https://x.com/lfinneytweets/status/1321167526789672961>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1321168278857732096)

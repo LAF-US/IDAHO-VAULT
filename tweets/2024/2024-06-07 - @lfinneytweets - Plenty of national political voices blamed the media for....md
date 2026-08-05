@@ -13,9 +13,9 @@ related:
   - lfinneytweets
 ---
 
-Plenty of national political voices blamed "the media" for spreading this original story after the video had already gone viral — but few acknowledgements that the updates, including the one that led to those criticisms, have all come from the local ABC affiliate. https://t.co/u4vLyW29KJ
+Plenty of national political voices blamed "the media" for spreading this original story after the video had already gone viral — but few acknowledgements that the updates, including the one that led to those criticisms, have all come from the local ABC affiliate. <https://t.co/u4vLyW29KJ>
 
 ## Links
-- https://x.com/EastIDNews/status/1799118547035083115
+- <https://x.com/EastIDNews/status/1799118547035083115>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1799121602170286483)

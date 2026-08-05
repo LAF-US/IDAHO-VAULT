@@ -16,10 +16,10 @@ related:
   - lfinneytweets
 ---
 
-@GovernorLittle https://t.co/VGK6BHezoh
+@GovernorLittle <https://t.co/VGK6BHezoh>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2022/02/01/income-tax-cut-clears-the-legislature-amid-debates-over-grocery-tax/
+- <https://blog.idahoreports.idahoptv.org/2022/02/01/income-tax-cut-clears-the-legislature-amid-debates-over-grocery-tax/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

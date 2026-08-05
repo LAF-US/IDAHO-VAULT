@@ -19,6 +19,6 @@ related:
   - idpol
 ---
 
-RT @BetsyZRussell: Eye on Boise: AP: Idaho seeks dismissal of lawsuit over virus rescue money, by @KeithRidler #idpol https://t.co/CwMbQy1v…
+RT @BetsyZRussell: Eye on Boise: AP: Idaho seeks dismissal of lawsuit over virus rescue money, by @KeithRidler #idpol <https://t.co/CwMbQy1v…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1313615814742867968)

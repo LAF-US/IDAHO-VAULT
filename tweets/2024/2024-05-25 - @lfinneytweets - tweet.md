@@ -14,10 +14,10 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/scltm4MLPD
+<https://t.co/scltm4MLPD>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2024/05/24/state-offers-divided-response-to-itd-campus-lawsuit/
+- <https://blog.idahoreports.idahoptv.org/2024/05/24/state-offers-divided-response-to-itd-campus-lawsuit/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

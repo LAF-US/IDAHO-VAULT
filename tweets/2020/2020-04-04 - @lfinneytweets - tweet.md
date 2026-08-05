@@ -16,10 +16,10 @@ related:
   - lfinneytweets
 ---
 
-@highcountrynews https://t.co/EOXXWaRdp9
+@highcountrynews <https://t.co/EOXXWaRdp9>
 
 ## Links
-- https://idfg.idaho.gov/species/roadkill
+- <https://idfg.idaho.gov/species/roadkill>
 
 *In reply to [@highcountrynews](https://twitter.com/highcountrynews)*
 

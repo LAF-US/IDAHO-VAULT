@@ -14,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-Obligatory 'journalist with too many tabs open' tweet https://t.co/jOEvKuRgzN
+Obligatory 'journalist with too many tabs open' tweet <https://t.co/jOEvKuRgzN>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/E_iY5zKVcAM53OU.jpg)

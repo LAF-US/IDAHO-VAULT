@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-RT @HayatNorimine: Here's the House vote for adjournment. https://t.co/H5XVhL01Pb
+RT @HayatNorimine: Here's the House vote for adjournment. <https://t.co/H5XVhL01Pb>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FEbinhxVUAIKgZx.jpg)

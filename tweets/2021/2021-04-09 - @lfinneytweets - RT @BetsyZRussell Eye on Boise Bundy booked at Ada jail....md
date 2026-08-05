@@ -20,6 +20,6 @@ related:
   - idpol
 ---
 
-RT @BetsyZRussell: Eye on Boise: Bundy booked at Ada jail again, charged with trespass, resisting arrest #idleg #idpol  https://t.co/2Ne5xQ…
+RT @BetsyZRussell: Eye on Boise: Bundy booked at Ada jail again, charged with trespass, resisting arrest #idleg #idpol  <https://t.co/2Ne5xQ…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1380338611283841024)

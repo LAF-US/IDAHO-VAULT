@@ -18,10 +18,10 @@ related:
   - idleg
 ---
 
-RT @IdahoPTV: Pro-tip for watching the legislature on IdahoPTV's Idaho in Session, https://t.co/k19Wqt2six. #idleg https://t.co/sH0owWdxak
+RT @IdahoPTV: Pro-tip for watching the legislature on IdahoPTV's Idaho in Session, <https://t.co/k19Wqt2six>. #idleg <https://t.co/sH0owWdxak>
 
 ## Links
-- https://www.idahoptv.org/shows/idahoinsession/Legislature/
-- https://x.com/laralaradisney/status/1298633389071667200
+- <https://www.idahoptv.org/shows/idahoinsession/Legislature/>
+- <https://x.com/laralaradisney/status/1298633389071667200>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1298670642418524161)

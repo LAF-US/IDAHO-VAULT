@@ -15,10 +15,10 @@ related:
 ---
 
 “I felt a severe pain in my nose, and with the maturity of a boxer, I said ‘enough,’ because I didn’t want to, I didn’t want to, I couldn’t finish the match,” Carini said, and that she is not qualified to decide whether Khelif should be allowed to compete.
-https://t.co/qK6OTVkhHH
+<https://t.co/qK6OTVkhHH>
 
 ## Links
-- https://apnews.com/article/olympics-2024-boxing-gender-4b6eb881cce9c34484d30c68ad979127
+- <https://apnews.com/article/olympics-2024-boxing-gender-4b6eb881cce9c34484d30c68ad979127>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

@@ -13,9 +13,9 @@ related:
   - lfinneytweets
 ---
 
-Administrative rules, concurrent resolutions, and birth certificate issues. One could almost mistake it for an Idaho story. https://t.co/hmw3b8I95P
+Administrative rules, concurrent resolutions, and birth certificate issues. One could almost mistake it for an Idaho story. <https://t.co/hmw3b8I95P>
 
 ## Links
-- https://x.com/DailyInterLake/status/1382008178481635328
+- <https://x.com/DailyInterLake/status/1382008178481635328>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1382045336986800130)

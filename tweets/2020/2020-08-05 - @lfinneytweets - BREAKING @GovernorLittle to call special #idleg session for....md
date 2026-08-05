@@ -20,7 +20,7 @@ related:
   - idpol
 ---
 
-BREAKING: @GovernorLittle to call special #idleg session for the end of August. #idpol https://t.co/Yve9Uj4C2Q
+BREAKING: @GovernorLittle to call special #idleg session for the end of August. #idpol <https://t.co/Yve9Uj4C2Q>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EerHy9OUEAEixvK.png)

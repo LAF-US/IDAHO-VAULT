@@ -18,9 +18,9 @@ related:
   - idpol
 ---
 
-Some lawmakers say Kuna sabotaged property tax relief by creating an urban renewal district around a planned Meta data center. A bill to force data centers to either take the sales tax exemption or be included in urban renewal (not both) died in committee today. #idleg #idpol https://t.co/WfIflbUuTD
+Some lawmakers say Kuna sabotaged property tax relief by creating an urban renewal district around a planned Meta data center. A bill to force data centers to either take the sales tax exemption or be included in urban renewal (not both) died in committee today. #idleg #idpol <https://t.co/WfIflbUuTD>
 
 ## Links
-- https://x.com/IdahoReports/status/1630299911638904833
+- <https://x.com/IdahoReports/status/1630299911638904833>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1630300664793542656)

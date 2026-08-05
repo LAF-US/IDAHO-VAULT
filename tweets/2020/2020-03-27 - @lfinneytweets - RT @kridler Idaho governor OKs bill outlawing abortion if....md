@@ -21,9 +21,9 @@ related:
   - idleg
 ---
 
-RT @kridler: Idaho governor OKs bill outlawing abortion if Roe reversed (from @AP) #idpol #idleg  https://t.co/IfC03t4zVz
+RT @kridler: Idaho governor OKs bill outlawing abortion if Roe reversed (from @AP) #idpol #idleg  <https://t.co/IfC03t4zVz>
 
 ## Links
-- https://apnews.com/03127ebfbf23ddf00e2e5458eb3144ce
+- <https://apnews.com/03127ebfbf23ddf00e2e5458eb3144ce>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1243596757201596416)

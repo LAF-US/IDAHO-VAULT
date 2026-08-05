@@ -18,7 +18,7 @@ related:
   - idpol
 ---
 
-House approves a bill to limit future specialty license plate beneficiaries to state entities and set minimum sales requirements for existing plates. #idleg #idpol https://t.co/XU1B3B9b3h
+House approves a bill to limit future specialty license plate beneficiaries to state entities and set minimum sales requirements for existing plates. #idleg #idpol <https://t.co/XU1B3B9b3h>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/ETbb7HeUEAU6aPF.jpg)

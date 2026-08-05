@@ -20,10 +20,10 @@ related:
 ---
 
 @wheresPaunch @john_c_wagner @IdahoPTV @INL It's up on YouTube! 
-https://t.co/m8EQd5kWfP
+<https://t.co/m8EQd5kWfP>
 
 ## Links
-- https://x.com/IdahoReports/status/1549393625964072968?t=rzs48wufkeLgKNxdJAz28g
+- <https://x.com/IdahoReports/status/1549393625964072968?t=rzs48wufkeLgKNxdJAz28g>
 
 *In reply to [@wheresPaunch](https://twitter.com/wheresPaunch)*
 

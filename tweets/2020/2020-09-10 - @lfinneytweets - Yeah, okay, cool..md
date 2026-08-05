@@ -13,7 +13,7 @@ related:
   - lfinneytweets
 ---
 
-Yeah, okay, cool. https://t.co/Ba52mwGwpS
+Yeah, okay, cool. <https://t.co/Ba52mwGwpS>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/Ehl2RudXsAAyKcD.jpg)

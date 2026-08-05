@@ -19,9 +19,9 @@ related:
   - idpol
 ---
 
-RT @KeithRidler: Idaho Power cuts coal by 2028 in plan to state regulators (from @AP) #idpol  https://t.co/3Ne8oY24H1
+RT @KeithRidler: Idaho Power cuts coal by 2028 in plan to state regulators (from @AP) #idpol  <https://t.co/3Ne8oY24H1>
 
 ## Links
-- https://apnews.com/article/3c46e97474785fba1e91bd7f6ef4d869
+- <https://apnews.com/article/3c46e97474785fba1e91bd7f6ef4d869>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1478806466396000258)

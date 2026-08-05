@@ -17,6 +17,6 @@ related:
 
 RT @MtnStatesPolicy: For the record, Idaho and Washington legislators have been in session for the exact same number of days.  
 
-https://t.…
+<https://t.…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/2014060763099578405)

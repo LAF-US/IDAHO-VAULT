@@ -17,7 +17,7 @@ related:
   - idleg
 ---
 
-House chairs departing include Rick Youngblood (JFAC), Greg Chaney (Judiciary & Administration), Stephen Harris (Revenue & Taxation), Clark Kauffman (Agricultural Affairs), Marc Gibbs (Resources & Conservation), Fred Wood (Health & Welfare), and Paul Amador (Ways & Means). #idleg https://t.co/3TCiu3Obw2
+House chairs departing include Rick Youngblood (JFAC), Greg Chaney (Judiciary & Administration), Stephen Harris (Revenue & Taxation), Clark Kauffman (Agricultural Affairs), Marc Gibbs (Resources & Conservation), Fred Wood (Health & Welfare), and Paul Amador (Ways & Means). #idleg <https://t.co/3TCiu3Obw2>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FhQUoueVQAAe83A.jpg)

@@ -15,6 +15,6 @@ related:
   - lfinneytweets
 ---
 
-RT @helenaironline: Tensions between religious freedom legislation and LGBTQ rights have flared more than once in recent days. https://t.co…
+RT @helenaironline: Tensions between religious freedom legislation and LGBTQ rights have flared more than once in recent days. <https://t.co…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1362236020515762188)

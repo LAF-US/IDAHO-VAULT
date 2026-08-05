@@ -20,7 +20,7 @@ related:
   - idleg
 ---
 
-RT @KeithRidler: Idaho State Police prepping early Tuesday at Idaho Statehouse. #idpol #idleg https://t.co/v7SRy3jUEH
+RT @KeithRidler: Idaho State Police prepping early Tuesday at Idaho Statehouse. #idpol #idleg <https://t.co/v7SRy3jUEH>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EgRXqjCUYAYtZpp.jpg)

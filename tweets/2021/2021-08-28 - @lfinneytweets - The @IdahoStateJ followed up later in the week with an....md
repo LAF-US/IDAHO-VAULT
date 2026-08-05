@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-The @IdahoStateJ followed up later in the week with an article on the local psychiatrist who sponsored the ad, who admitted he wasn't familiar with the approach to sex education in Pocatello schools. https://t.co/oWAyVKUGiz
+The @IdahoStateJ followed up later in the week with an article on the local psychiatrist who sponsored the ad, who admitted he wasn't familiar with the approach to sex education in Pocatello schools. <https://t.co/oWAyVKUGiz>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/E92BmLmUYA0JSzq.jpg)

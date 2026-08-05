@@ -18,9 +18,9 @@ related:
   - IdahoCOVID19
 ---
 
-First county commission I'm aware of to use power bestowed by #idleg to overrule health district mandates. (There are none currently, but @phdidaho had a mask mandate this spring. This seems to preemptively indicate Bonner County will reject any future mandates.) #IdahoCOVID19 https://t.co/BCv979U3aA
+First county commission I'm aware of to use power bestowed by #idleg to overrule health district mandates. (There are none currently, but @phdidaho had a mask mandate this spring. This seems to preemptively indicate Bonner County will reject any future mandates.) #IdahoCOVID19 <https://t.co/BCv979U3aA>
 
 ## Links
-- https://x.com/DailyBee/status/1451926393835585536
+- <https://x.com/DailyBee/status/1451926393835585536>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1452111310003400717)

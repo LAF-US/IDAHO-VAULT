@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoPubRadio: The least U.S. Drought Monitor for the West. https://t.co/WMs6DurP9O
+RT @IdahoPubRadio: The least U.S. Drought Monitor for the West. <https://t.co/WMs6DurP9O>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FL0dweoVUAonqv3.png)

@@ -15,9 +15,9 @@ related:
 
 A good candidate profile here. However if Cawthorn was born in '95 he's a Baby Millennial, not Gen Z. 
 
-Yes, this is the hill I will die on. https://t.co/Nr8YF5Xb5T
+Yes, this is the hill I will die on. <https://t.co/Nr8YF5Xb5T>
 
 ## Links
-- https://x.com/davidmackau/status/1276933190503010306
+- <https://x.com/davidmackau/status/1276933190503010306>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1276945781308616709)

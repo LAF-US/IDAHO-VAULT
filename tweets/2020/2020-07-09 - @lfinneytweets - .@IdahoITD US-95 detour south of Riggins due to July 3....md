@@ -16,9 +16,9 @@ related:
 ---
 
 .@IdahoITD: US-95 detour south of Riggins due to July 3 rockslide will not open after significant movement on the slope. Closure is expected for at least two days. "Until this is solved, we recommend that drivers check 511 every time they travel on US-95.”
-https://t.co/sLYTbbP2Ii
+<https://t.co/sLYTbbP2Ii>
 
 ## Links
-- https://itd.idaho.gov/news/us-95-between-riggins-and-pollock-may-temporarily-reopen-tomorrow-afternoon/
+- <https://itd.idaho.gov/news/us-95-between-riggins-and-pollock-may-temporarily-reopen-tomorrow-afternoon/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1281253616502726656)

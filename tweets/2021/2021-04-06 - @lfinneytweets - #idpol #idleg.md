@@ -18,9 +18,9 @@ related:
   - idleg
 ---
 
-\#idpol #idleg https://t.co/ACrpSK7IRE
+\#idpol #idleg <https://t.co/ACrpSK7IRE>
 
 ## Links
-- https://x.com/TheIdahoPress/status/1379202193425899521
+- <https://x.com/TheIdahoPress/status/1379202193425899521>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1379505515584057344)

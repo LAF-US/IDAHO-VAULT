@@ -20,10 +20,10 @@ related:
 ---
 
 @danielwinlander Meanwhile in Idaho, the independent redistricting commission is actively inviting people to submit their own maps (and actually finding them helpful). #idpol 
-https://t.co/peI55ANC29
+<https://t.co/peI55ANC29>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2021/09/30/we-dont-want-to-be-with-them-wed-like-to-be-with-these-folks-instead/
+- <https://blog.idahoreports.idahoptv.org/2021/09/30/we-dont-want-to-be-with-them-wed-like-to-be-with-these-folks-instead/>
 
 *In reply to [@danielwreporter](https://twitter.com/danielwreporter)*
 

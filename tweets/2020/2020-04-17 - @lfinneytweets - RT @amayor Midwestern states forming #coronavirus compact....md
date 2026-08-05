@@ -20,10 +20,10 @@ related:
 
 RT @amayor: Midwestern states forming #coronavirus compact
 Minn, Wisc, Ill, Mich, Ky, Oh, In
-https://t.co/HvGKS8SewC https://t.co/ZbLEtwIPRk
+<https://t.co/HvGKS8SewC> <https://t.co/ZbLEtwIPRk>
 
 ## Links
-- https://www.cnn.com/2020/04/16/politics/midwest-governors-reopening-pact/index.html
+- <https://www.cnn.com/2020/04/16/politics/midwest-governors-reopening-pact/index.html>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EVwPd4YVcAAnBt-.jpg)

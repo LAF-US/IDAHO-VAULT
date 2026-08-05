@@ -16,10 +16,10 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoPubRadio: .@IDHW says the statewide COVID-19 hotline has been deactivated. Update: https://t.co/P4wZOD2IvN https://t.co/L1vcSGTWmG
+RT @IdahoPubRadio: .@IDHW says the statewide COVID-19 hotline has been deactivated. Update: <https://t.co/P4wZOD2IvN> <https://t.co/L1vcSGTWmG>
 
 ## Links
-- https://www.facebook.com/614836341895311/posts/3151677868211133/?d=n
+- <https://www.facebook.com/614836341895311/posts/3151677868211133/?d=n>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EbiKlSkU8AEOOuW.jpg)

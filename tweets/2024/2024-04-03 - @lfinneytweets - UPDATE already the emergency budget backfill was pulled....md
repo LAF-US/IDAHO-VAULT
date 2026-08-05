@@ -18,9 +18,9 @@ related:
   - idpol
 ---
 
-UPDATE already: the emergency budget backfill was pulled back due to "questioning the accuracy of the numbers" heard in committee this morning. Session continues... #idleg #idpol https://t.co/ciyoOqhrsi
+UPDATE already: the emergency budget backfill was pulled back due to "questioning the accuracy of the numbers" heard in committee this morning. Session continues... #idleg #idpol <https://t.co/ciyoOqhrsi>
 
 ## Links
-- https://x.com/lfinneytweets/status/1775595386922783207
+- <https://x.com/lfinneytweets/status/1775595386922783207>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1775615295123845284)

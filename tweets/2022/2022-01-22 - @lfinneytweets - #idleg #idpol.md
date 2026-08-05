@@ -23,10 +23,10 @@ related:
 ---
 
 @IdahoSenateGOP @brandendurst @DurstforIdaho #idleg #idpol 
-https://t.co/I3CANr8Tzz
+<https://t.co/I3CANr8Tzz>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2022/01/21/senate-gop-refutes-ethics-allegations/
+- <https://blog.idahoreports.idahoptv.org/2022/01/21/senate-gop-refutes-ethics-allegations/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

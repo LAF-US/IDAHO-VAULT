@@ -21,9 +21,9 @@ related:
   - IdahoCovid19
 ---
 
-RT @KeithRidler: Official: Idaho virus outbreak linked to family gathering  (from @AP) #idpol #IdahoCovid19  https://t.co/27xBDtvSWn
+RT @KeithRidler: Official: Idaho virus outbreak linked to family gathering  (from @AP) #idpol #IdahoCovid19  <https://t.co/27xBDtvSWn>
 
 ## Links
-- https://apnews.com/0329032ecc4f4205bca011332147794b
+- <https://apnews.com/0329032ecc4f4205bca011332147794b>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1260701580250112000)

@@ -17,7 +17,7 @@ related:
   - idleg
 ---
 
-Senate chairs Jeff Agenbroad (JFAC), Steven Thayn (Education), Jim Rice (Local Govermnet & Taxation), Patti Anne Lodge (State Affairs), Steve Vick (Resources & Environment), Jim Patrick (Commerce & Human Resources), and Fred Martin (Health & Welfare) also will not return. #idleg https://t.co/psAYqfqtr6
+Senate chairs Jeff Agenbroad (JFAC), Steven Thayn (Education), Jim Rice (Local Govermnet & Taxation), Patti Anne Lodge (State Affairs), Steve Vick (Resources & Environment), Jim Patrick (Commerce & Human Resources), and Fred Martin (Health & Welfare) also will not return. #idleg <https://t.co/psAYqfqtr6>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FhQUqmXVIAADDsV.jpg)

@@ -19,9 +19,9 @@ related:
 ---
 
 The big income tax bill has made it over the finish line. Now what? #idleg #idpol 
-https://t.co/EcvvEEC3K1
+<https://t.co/EcvvEEC3K1>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2022/02/02/so-about-those-property-taxes/
+- <https://blog.idahoreports.idahoptv.org/2022/02/02/so-about-those-property-taxes/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1489033413386379265)

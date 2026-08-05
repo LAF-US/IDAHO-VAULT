@@ -14,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-Rep. Chad Christensen (R-Ammon) https://t.co/ZoaXsDSwvs
+Rep. Chad Christensen (R-Ammon) <https://t.co/ZoaXsDSwvs>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EbQEt6GXYAIp0KQ.jpg)

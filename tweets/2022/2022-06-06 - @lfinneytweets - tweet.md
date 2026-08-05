@@ -14,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/yAI3rd9yS8
+<https://t.co/yAI3rd9yS8>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FUmRIu9VUAAMNMk.jpg)

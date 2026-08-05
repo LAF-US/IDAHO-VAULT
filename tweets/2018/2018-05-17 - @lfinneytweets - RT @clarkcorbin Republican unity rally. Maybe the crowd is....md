@@ -18,7 +18,7 @@ related:
   - idpol
 ---
 
-RT @clarkcorbin: Republican unity rally. Maybe the crowd is stuck in traffic. #idpol https://t.co/tar3sL9TPS
+RT @clarkcorbin: Republican unity rally. Maybe the crowd is stuck in traffic. #idpol <https://t.co/tar3sL9TPS>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/DdaSNgkVMAAduKC.jpg)

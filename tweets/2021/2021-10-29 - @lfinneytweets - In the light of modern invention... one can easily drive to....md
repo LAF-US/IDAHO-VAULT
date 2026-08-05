@@ -23,10 +23,10 @@ related:
 ---
 
 @AngryNIdaho @LewistonTribune "In the light of modern invention... one can easily drive to and through 10 to 12 county seats in a day. This with telephone communication... reduce distance and the old argument for so many county seats to the border of ridicule." #idpol #idleg 
-https://t.co/SeFwGX35ue
+<https://t.co/SeFwGX35ue>
 
 ## Links
-- https://news.google.com/newspapers?id=eK9fAAAAIBAJ&pg=3688%2C275736
+- <https://news.google.com/newspapers?id=eK9fAAAAIBAJ&pg=3688%2C275736>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

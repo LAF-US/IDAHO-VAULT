@@ -20,9 +20,9 @@ related:
   - idpol
 ---
 
-RT @RuthBrownNews: The EMS sustainability task force has been working toward this for years. #idleg #idpol https://t.co/OIGn3WFUtq
+RT @RuthBrownNews: The EMS sustainability task force has been working toward this for years. #idleg #idpol <https://t.co/OIGn3WFUtq>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2024/03/14/bill-advances-to-declare-idaho-ems-an-essential-service/
+- <https://blog.idahoreports.idahoptv.org/2024/03/14/bill-advances-to-declare-idaho-ems-an-essential-service/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1768439687755207033)

@@ -14,10 +14,10 @@ related:
   - lfinneytweets
 ---
 
-@KelcieMMorris @davlinnews By "early" I apparently mean Thursday.  https://t.co/OZoCFxbf6I
+@KelcieMMorris @davlinnews By "early" I apparently mean Thursday.  <https://t.co/OZoCFxbf6I>
 
 ## Links
-- https://x.com/lfinneytweets/status/1443648108768858128
+- <https://x.com/lfinneytweets/status/1443648108768858128>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

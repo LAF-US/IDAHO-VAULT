@@ -18,7 +18,7 @@ related:
   - idpol
 ---
 
-Superintendent Ybarra is before JFAC this morning to present the public schools budget. #idleg #idpol https://t.co/nUoWmxQmGG
+Superintendent Ybarra is before JFAC this morning to present the public schools budget. #idleg #idpol <https://t.co/nUoWmxQmGG>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EO-q3vaU4AE1REL.jpg)

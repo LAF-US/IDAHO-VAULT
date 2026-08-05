@@ -18,9 +18,9 @@ related:
   - idpol
 ---
 
-New: The Joint Finance-Appropriations Committee killed a proposed fund to fight federal vaccine mandates, questioning whether a new fund was necessary when the legislature already has two funds available for legal action. #idleg #idpol https://t.co/4DKc9vsr5A
+New: The Joint Finance-Appropriations Committee killed a proposed fund to fight federal vaccine mandates, questioning whether a new fund was necessary when the legislature already has two funds available for legal action. #idleg #idpol <https://t.co/4DKc9vsr5A>
 
 ## Links
-- https://x.com/IdahoReports/status/1460372342169759746
+- <https://x.com/IdahoReports/status/1460372342169759746>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1460373557544820739)

@@ -16,7 +16,7 @@ related:
   - idleg
 ---
 
-Someday I'll walk to the end of the tunnel. Today is not that day. #idleg https://t.co/cLsxsxB48q
+Someday I'll walk to the end of the tunnel. Today is not that day. #idleg <https://t.co/cLsxsxB48q>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FmtEa1KakAUiExE.jpg)

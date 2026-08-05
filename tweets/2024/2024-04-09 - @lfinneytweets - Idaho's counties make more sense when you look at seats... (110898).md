@@ -17,7 +17,7 @@ related:
   - idpol
 ---
 
-Idaho's counties make more sense when you look at seats instead of boundaries. (2/2) #idpol https://t.co/GfSSWd0zQW
+Idaho's counties make more sense when you look at seats instead of boundaries. (2/2) #idpol <https://t.co/GfSSWd0zQW>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GKwhB8kb0AAUAoc.jpg)

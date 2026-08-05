@@ -16,9 +16,9 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoPTV: Check out the latest in Idaho news with @IdahoReports https://t.co/vWfNtKKIva
+RT @IdahoPTV: Check out the latest in Idaho news with @IdahoReports <https://t.co/vWfNtKKIva>
 
 ## Links
-- https://x.com/IdahoReports/status/1497298065027473408
+- <https://x.com/IdahoReports/status/1497298065027473408>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1497439046288609280)

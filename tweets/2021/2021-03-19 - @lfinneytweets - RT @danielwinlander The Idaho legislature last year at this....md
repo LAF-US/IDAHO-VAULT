@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-RT @danielwinlander: The Idaho legislature last year at this time: https://t.co/87u0FNObjA
+RT @danielwinlander: The Idaho legislature last year at this time: <https://t.co/87u0FNObjA>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/Ew2wwYjVEAIFieq.png)

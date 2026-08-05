@@ -20,10 +20,10 @@ related:
 ---
 
 Interesting note on this electioneering bill: committee discussion included reference to a parking lot collision in Kootenai County this fall where somebody was tryng to get one of a few parking spots over 100 feet from the building. #idleg #idpol 
-https://t.co/dz3IVl5clZ
+<https://t.co/dz3IVl5clZ>
 
 ## Links
-- https://www.kxly.com/news/it-felt-reckless-kootenai-county-elections-office-sees-trouble-before-election-day/article_3cbcbf40-7781-11ee-b2ec-0f047d478500.html
+- <https://www.kxly.com/news/it-felt-reckless-kootenai-county-elections-office-sees-trouble-before-election-day/article_3cbcbf40-7781-11ee-b2ec-0f047d478500.html>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

@@ -13,7 +13,7 @@ related:
   - lfinneytweets
 ---
 
-Welcome to the first TikTok election. https://t.co/7cFbygRIv7
+Welcome to the first TikTok election. <https://t.co/7cFbygRIv7>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/ext_tw_video_thumb/1821601139239866368/pu/img/SXz8WjIMViY4cmKV.jpg)

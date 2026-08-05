@@ -18,9 +18,9 @@ related:
   - idpol
 ---
 
-The governor has until 10:17am to act on the library bill and 12:15pm to act on two appropriations bills that forbid the State Street campus sale. #idleg #idpol https://t.co/Yw7Y243SKj
+The governor has until 10:17am to act on the library bill and 12:15pm to act on two appropriations bills that forbid the State Street campus sale. #idleg #idpol <https://t.co/Yw7Y243SKj>
 
 ## Links
-- https://x.com/IdahoReports/status/1777868677288788120
+- <https://x.com/IdahoReports/status/1777868677288788120>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1777869152084242639)

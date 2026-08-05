@@ -20,6 +20,6 @@ related:
 
 RT @NBCOlympics: “I was shocked.” 
 
-Hear from Noah Lyles after becoming the fastest man in the world. ⚡️ #ParisOlympics https://t.co/N9DNAs…
+Hear from Noah Lyles after becoming the fastest man in the world. ⚡️ #ParisOlympics <https://t.co/N9DNAs…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1820469138898489514)

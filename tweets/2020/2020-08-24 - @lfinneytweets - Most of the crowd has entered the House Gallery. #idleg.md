@@ -16,7 +16,7 @@ related:
   - idleg
 ---
 
-Most of the crowd has entered the House Gallery. #idleg https://t.co/reS2Rpl7ow
+Most of the crowd has entered the House Gallery. #idleg <https://t.co/reS2Rpl7ow>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EgMpXeqU0AAGs14.jpg)

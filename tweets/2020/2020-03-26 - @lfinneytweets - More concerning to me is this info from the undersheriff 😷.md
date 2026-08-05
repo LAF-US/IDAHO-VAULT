@@ -17,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-@RadioDawson @LewistonTribune More concerning to me is this info from the undersheriff 😷 https://t.co/sHpfaHZsKI
+@RadioDawson @LewistonTribune More concerning to me is this info from the undersheriff 😷 <https://t.co/sHpfaHZsKI>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EUD9wEaU4AAgxyH.jpg)

@@ -15,6 +15,6 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoPTV: We're thrilled to hear that our mission and initiatives resonate with you, Rachel! Thank you for your support 🥰 https://t.co/…
+RT @IdahoPTV: We're thrilled to hear that our mission and initiatives resonate with you, Rachel! Thank you for your support 🥰 <https://t.co/…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1499176365223940098)

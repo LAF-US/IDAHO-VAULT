@@ -21,9 +21,9 @@ related:
 ---
 
 New on the @IdahoReports blog: Vaccine rollout continues with low supply and high demand. #IdahoCOVID19 #idpol 
-https://t.co/wGP4xjKMnU
+<https://t.co/wGP4xjKMnU>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2021/01/29/vaccine-rollout-continues-with-low-supply-and-high-demand/
+- <https://blog.idahoreports.idahoptv.org/2021/01/29/vaccine-rollout-continues-with-low-supply-and-high-demand/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1355290731598860290)

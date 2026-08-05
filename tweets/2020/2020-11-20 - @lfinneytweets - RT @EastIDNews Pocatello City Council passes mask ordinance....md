@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-RT @EastIDNews: Pocatello City Council passes mask ordinance that includes fines if you don’t wear one https://t.co/jjjtzVCXO3
+RT @EastIDNews: Pocatello City Council passes mask ordinance that includes fines if you don’t wear one <https://t.co/jjjtzVCXO3>
 
 ## Links
-- https://www.eastidahonews.com/2020/11/pocatello-city-council-passes-mask-ordinance-that-includes-fines-if-you-dont-wear-one/
+- <https://www.eastidahonews.com/2020/11/pocatello-city-council-passes-mask-ordinance-that-includes-fines-if-you-dont-wear-one/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1329622829029965825)

@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-RT @pgcornwell: Go sports! https://t.co/7CcGViyqCV
+RT @pgcornwell: Go sports! <https://t.co/7CcGViyqCV>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/Edn-qtKU0AEyoVo.jpg)

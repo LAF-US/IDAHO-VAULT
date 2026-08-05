@@ -17,10 +17,10 @@ related:
 ---
 
 @DLind I take back that last sentence, this is pretty great.
-https://t.co/uvlre6ZPmn
+<https://t.co/uvlre6ZPmn>
 
 ## Links
-- https://youtu.be/2FONFHaYSVY
+- <https://youtu.be/2FONFHaYSVY>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

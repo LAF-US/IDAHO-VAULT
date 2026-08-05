@@ -21,9 +21,9 @@ related:
 
 RT @IdahoPTV: @GovernorLittle's guidelines for reopening businesses in Idaho: #idahoCovid19 
 
-https://t.co/Ny6GVLf4am https://t.co/dpzX4usS…
+<https://t.co/Ny6GVLf4am> <https://t.co/dpzX4usS…>
 
 ## Links
-- https://rebound.idaho.gov/wp-content/uploads/2020/04/opening-up-guidlines.pdf
+- <https://rebound.idaho.gov/wp-content/uploads/2020/04/opening-up-guidlines.pdf>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1253434807956078593)

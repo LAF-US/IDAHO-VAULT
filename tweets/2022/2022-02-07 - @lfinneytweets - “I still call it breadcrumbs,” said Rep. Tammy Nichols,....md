@@ -19,9 +19,9 @@ related:
 ---
 
 “I still call it breadcrumbs,” said Rep. Tammy Nichols, R-Middleton. “I still don’t see good tax relief legislation coming forward and I’m losing hope in regards to that effort.” #idleg #idpol 
-https://t.co/Iz7izsd7OK
+<https://t.co/Iz7izsd7OK>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2022/02/07/house-panel-approves-upping-idahos-grocery-tax-credit/
+- <https://blog.idahoreports.idahoptv.org/2022/02/07/house-panel-approves-upping-idahos-grocery-tax-credit/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1490813424518922240)

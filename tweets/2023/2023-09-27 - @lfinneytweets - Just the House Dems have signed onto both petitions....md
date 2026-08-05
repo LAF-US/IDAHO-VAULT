@@ -18,10 +18,10 @@ related:
 ---
 
 @IdahoSenateGOP @IdahoDems Just the House Dems have signed onto both petitions apparently. 
-https://t.co/yfb5uIOuYg
+<https://t.co/yfb5uIOuYg>
 
 ## Links
-- https://x.com/HerndonforIdaho/status/1706883324453798377?t=PNFLYWC9_0M_bCL3whZ36w
+- <https://x.com/HerndonforIdaho/status/1706883324453798377?t=PNFLYWC9_0M_bCL3whZ36w>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

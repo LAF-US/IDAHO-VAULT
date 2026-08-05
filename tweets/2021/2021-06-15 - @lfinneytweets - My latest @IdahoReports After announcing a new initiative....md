@@ -22,9 +22,9 @@ related:
 ---
 
 My latest @IdahoReports: After announcing a new initiative campaign last week, @reclaimID backtracked and told volunteers to pause their signature collection drive. Recently passed tweaks to the initiative process keep kicking up roadblocks. #idleg #idpol 
-https://t.co/qfP0XRqTag
+<https://t.co/qfP0XRqTag>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2021/06/15/education-funding-ballot-initiative-delayed-after-premature-start/
+- <https://blog.idahoreports.idahoptv.org/2021/06/15/education-funding-ballot-initiative-delayed-after-premature-start/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1404943937303760899)

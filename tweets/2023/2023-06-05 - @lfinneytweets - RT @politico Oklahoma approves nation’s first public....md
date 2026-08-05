@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-RT @politico: Oklahoma approves nation’s first public religious charter school https://t.co/ZYcfVL8COJ
+RT @politico: Oklahoma approves nation’s first public religious charter school <https://t.co/ZYcfVL8COJ>
 
 ## Links
-- http://ow.ly/Ryqh104Jxcv
+- <http://ow.ly/Ryqh104Jxcv>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1665850947887853568)

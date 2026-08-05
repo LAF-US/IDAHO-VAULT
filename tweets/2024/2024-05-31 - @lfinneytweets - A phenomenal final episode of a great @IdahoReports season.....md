@@ -18,9 +18,9 @@ related:
   - idpol
 ---
 
-A phenomenal final episode of a great @IdahoReports  season. #idpol https://t.co/SKJiUN7sNl
+A phenomenal final episode of a great @IdahoReports  season. #idpol <https://t.co/SKJiUN7sNl>
 
 ## Links
-- https://x.com/IdahoReports/status/1796607875327918119
+- <https://x.com/IdahoReports/status/1796607875327918119>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1796608338614206648)

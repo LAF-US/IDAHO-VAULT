@@ -23,10 +23,10 @@ related:
 ---
 
 @IdahoPTV @idpol The Idaho Supreme Court heard arguments on whether the 2021 redistricting commission completed its work within its required 90-day timeframe, and whether the commission is legally allowed to split voting precincts in its congressional plan. #idleg #idpol 
-https://t.co/xDoOER2CpT
+<https://t.co/xDoOER2CpT>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2022/01/24/idaho-supreme-court-hears-congressional-redistricting-arguments/
+- <https://blog.idahoreports.idahoptv.org/2022/01/24/idaho-supreme-court-hears-congressional-redistricting-arguments/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

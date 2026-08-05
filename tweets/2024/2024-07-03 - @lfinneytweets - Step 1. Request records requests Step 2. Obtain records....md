@@ -21,10 +21,10 @@ related:
 Step 2. Obtain records requests 
 Step 3. ?????
 Step 4. Profit 
-https://t.co/DEFVEQGHPk
+<https://t.co/DEFVEQGHPk>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2021/08/12/analysis-are-ethics-complaint-responses-subject-to-public-disclosure/
+- <https://blog.idahoreports.idahoptv.org/2021/08/12/analysis-are-ethics-complaint-responses-subject-to-public-disclosure/>
 
 *In reply to [@gookin_pol](https://twitter.com/gookin_pol)*
 

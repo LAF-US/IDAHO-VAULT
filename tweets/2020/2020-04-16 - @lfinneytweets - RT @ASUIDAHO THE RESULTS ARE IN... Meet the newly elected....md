@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-RT @ASUIDAHO: THE RESULTS ARE IN... Meet the newly elected ASUI President, Vice-Presidents, and Senators! https://t.co/E2DNgX8Nph
+RT @ASUIDAHO: THE RESULTS ARE IN... Meet the newly elected ASUI President, Vice-Presidents, and Senators! <https://t.co/E2DNgX8Nph>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EVvT6keU0AExFFQ.jpg)

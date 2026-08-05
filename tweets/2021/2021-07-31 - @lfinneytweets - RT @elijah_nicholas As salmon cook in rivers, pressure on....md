@@ -16,6 +16,6 @@ related:
 ---
 
 RT @elijah_nicholas: As salmon cook in rivers, pressure on Biden mounts via @ColumbiaInsight 
-https://t.co/hRtY4w07Gp
+<https://t.co/hRtY4w07Gp>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1421562582503104515)

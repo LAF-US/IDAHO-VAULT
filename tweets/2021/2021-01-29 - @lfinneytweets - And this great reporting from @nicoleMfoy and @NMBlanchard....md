@@ -19,10 +19,10 @@ related:
 ---
 
 And this great reporting from @nicoleMfoy and @NMBlanchard @IdahoStatesman. 
-https://t.co/nLUP0W8sDI
+<https://t.co/nLUP0W8sDI>
 
 ## Links
-- https://www.idahostatesman.com/news/northwest/idaho/article244065002.html
+- <https://www.idahostatesman.com/news/northwest/idaho/article244065002.html>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

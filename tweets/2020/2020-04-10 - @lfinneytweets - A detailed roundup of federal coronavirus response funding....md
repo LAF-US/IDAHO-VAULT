@@ -21,10 +21,10 @@ related:
 ---
 
 A detailed roundup of federal coronavirus response funding in @RepHeatherScott’s legislative newsletter tonight. #IdahoCOVID19 #idpol 
-https://t.co/7GZpcwtM1V https://t.co/teRUQSYiPq
+<https://t.co/7GZpcwtM1V> <https://t.co/teRUQSYiPq>
 
 ## Links
-- https://content.govdelivery.com/accounts/IDLEG/bulletins/285cd8c
+- <https://content.govdelivery.com/accounts/IDLEG/bulletins/285cd8c>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EVOFHPoU0AM5I8b.jpg)

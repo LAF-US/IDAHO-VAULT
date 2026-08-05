@@ -17,10 +17,10 @@ related:
 ---
 
 On Wednesday, the House and Senate both adjourned until Tuesday of next week, meaning neither will be in session Thursday when protesters gather at the Capitol to demonstrate their ire with Gov. Gretchen Whitmer's "stay home" executive orders. (@LSJNews) 
-https://t.co/8WIeloICEj
+<https://t.co/8WIeloICEj>
 
 ## Links
-- https://www.lansingstatejournal.com/story/news/2020/05/13/michigan-capitol-closed-during-coronavirus-protest/5183573002/
+- <https://www.lansingstatejournal.com/story/news/2020/05/13/michigan-capitol-closed-during-coronavirus-protest/5183573002/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

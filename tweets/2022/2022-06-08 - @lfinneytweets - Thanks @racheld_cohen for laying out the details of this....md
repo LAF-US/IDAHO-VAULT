@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-Thanks @racheld_cohen for laying out the details of this project for our listeners (and me)! https://t.co/cicwuLA5zv
+Thanks @racheld_cohen for laying out the details of this project for our listeners (and me)! <https://t.co/cicwuLA5zv>
 
 ## Links
-- https://x.com/IdahoReports/status/1534612920910217217
+- <https://x.com/IdahoReports/status/1534612920910217217>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1534613748865830913)

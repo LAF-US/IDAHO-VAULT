@@ -13,9 +13,9 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/COpKcuSk5v
+<https://t.co/COpKcuSk5v>
 
 ## Links
-- https://www.ktvb.com/article/news/politics/hundreds-of-new-idaho-laws-goes-into-effect-july-1/277-568255239
+- <https://www.ktvb.com/article/news/politics/hundreds-of-new-idaho-laws-goes-into-effect-july-1/277-568255239>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1013179838960553984)

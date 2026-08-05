@@ -19,9 +19,9 @@ related:
   - idpol
 ---
 
-RT @KeithRidler: Idaho Medicaid expansion numbers continue to rise  (from @AP) #idpol  https://t.co/mPrvobrd20
+RT @KeithRidler: Idaho Medicaid expansion numbers continue to rise  (from @AP) #idpol  <https://t.co/mPrvobrd20>
 
 ## Links
-- https://apnews.com/f59d929031f908a5118b7174845a8f0f
+- <https://apnews.com/f59d929031f908a5118b7174845a8f0f>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1271581586715054081)

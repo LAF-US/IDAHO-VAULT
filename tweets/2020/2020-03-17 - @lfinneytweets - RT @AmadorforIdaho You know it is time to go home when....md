@@ -20,7 +20,7 @@ related:
   - idpol
 ---
 
-RT @AmadorforIdaho: You know it is time to go home when: #idleg #idpol https://t.co/NuG2fQr1lN
+RT @AmadorforIdaho: You know it is time to go home when: #idleg #idpol <https://t.co/NuG2fQr1lN>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/ETWGIi8U8AAXy9Z.jpg)

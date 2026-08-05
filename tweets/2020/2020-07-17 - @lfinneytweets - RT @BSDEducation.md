@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-RT @BSDEducation: https://t.co/Svb73G6QRJ
+RT @BSDEducation: <https://t.co/Svb73G6QRJ>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EdE4qsSUwAAvPJR.png)

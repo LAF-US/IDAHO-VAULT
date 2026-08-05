@@ -15,6 +15,6 @@ related:
   - lfinneytweets
 ---
 
-RT @HerndonforIdaho: At a conference discussing the right to life and the healthiest policies for our American families https://t.co/ZVc1CN…
+RT @HerndonforIdaho: At a conference discussing the right to life and the healthiest policies for our American families <https://t.co/ZVc1CN…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1558563075195711488)

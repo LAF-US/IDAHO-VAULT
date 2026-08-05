@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-RT @heersinkolivia: An audience member was almost removed from the audience. https://t.co/vFfVivjfa8
+RT @heersinkolivia: An audience member was almost removed from the audience. <https://t.co/vFfVivjfa8>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/ext_tw_video_thumb/1286338366531764230/pr/img/lT5ROTbkl1j-CsuR.jpg)

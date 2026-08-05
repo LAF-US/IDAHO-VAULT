@@ -14,10 +14,10 @@ related:
   - lfinneytweets
 ---
 
-Interact with these visuals here! https://t.co/U8hHfjuf0H
+Interact with these visuals here! <https://t.co/U8hHfjuf0H>
 
 ## Links
-- https://boisestate.maps.arcgis.com/apps/opsdashboard/index.html#/2d27bfd0cb8144438679cb1d0fade2f4
+- <https://boisestate.maps.arcgis.com/apps/opsdashboard/index.html#/2d27bfd0cb8144438679cb1d0fade2f4>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

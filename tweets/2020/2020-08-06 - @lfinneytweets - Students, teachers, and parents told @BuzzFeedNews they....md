@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-"Students, teachers, and parents told @BuzzFeedNews they fear the school rushed its reopening. Despite reports of positive COVID-19 cases among students and staff, classes have resumed and students have been told they could face expulsion if they don't attend." https://t.co/sELaMyaeFH
+"Students, teachers, and parents told @BuzzFeedNews they fear the school rushed its reopening. Despite reports of positive COVID-19 cases among students and staff, classes have resumed and students have been told they could face expulsion if they don't attend." <https://t.co/sELaMyaeFH>
 
 ## Links
-- https://x.com/BuzzFeedNews/status/1291506729121796096
+- <https://x.com/BuzzFeedNews/status/1291506729121796096>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1291512240927997953)

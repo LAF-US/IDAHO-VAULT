@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-RT @jonesblakej: Not the best photo, but here's this year's "Idaho Conservative Agenda." https://t.co/nEDuppAgT2
+RT @jonesblakej: Not the best photo, but here's this year's "Idaho Conservative Agenda." <https://t.co/nEDuppAgT2>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/Erd6zxzVkAAAGVn.jpg)

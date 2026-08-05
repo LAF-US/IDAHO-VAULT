@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-RT @EastIDNews: Idaho Falls couple sentenced for voting twice in the 2020 presidential election https://t.co/sS4TIaG6jZ
+RT @EastIDNews: Idaho Falls couple sentenced for voting twice in the 2020 presidential election <https://t.co/sS4TIaG6jZ>
 
 ## Links
-- https://www.eastidahonews.com/2021/11/idaho-falls-couple-sentenced-for-voting-twice-in-the-2020-presidential-election/
+- <https://www.eastidahonews.com/2021/11/idaho-falls-couple-sentenced-for-voting-twice-in-the-2020-presidential-election/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1456699273421094913)

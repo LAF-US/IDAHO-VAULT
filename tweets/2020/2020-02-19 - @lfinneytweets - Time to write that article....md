@@ -13,7 +13,7 @@ related:
   - lfinneytweets
 ---
 
-Time to write that article... https://t.co/7PRBIQFhAK
+Time to write that article... <https://t.co/7PRBIQFhAK>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/ERKNf6qVAAAnBV8.jpg)

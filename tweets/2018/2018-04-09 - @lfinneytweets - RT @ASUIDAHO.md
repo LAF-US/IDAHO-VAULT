@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-RT @ASUIDAHO: https://t.co/nmM7QSsm5c
+RT @ASUIDAHO: <https://t.co/nmM7QSsm5c>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/DaXBErHUMAAjJlt.jpg)

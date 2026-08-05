@@ -17,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoPubRadio: .@PauletteEJordan, running for Idaho governor, opened a campaign office in @CityofMoscowId today. https://t.co/PFWQWH3LFa
+RT @IdahoPubRadio: .@PauletteEJordan, running for Idaho governor, opened a campaign office in @CityofMoscowId today. <https://t.co/PFWQWH3LFa>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/DZo-k_jVMAAzEaf.jpg)

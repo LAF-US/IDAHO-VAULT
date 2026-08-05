@@ -14,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-Gilbert Baker created a mile-long rainbow flag in 1994 for the 25th anniversary of the Stonewall riots. https://t.co/afYTnArxQR
+Gilbert Baker created a mile-long rainbow flag in 1994 for the 25th anniversary of the Stonewall riots. <https://t.co/afYTnArxQR>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/DfDtpROUcAA5AOK.jpg)

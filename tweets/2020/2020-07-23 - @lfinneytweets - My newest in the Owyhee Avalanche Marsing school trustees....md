@@ -20,7 +20,7 @@ related:
   - IdahoCOVID19
 ---
 
-My newest in the Owyhee Avalanche: Marsing school trustees adopt their reopening plan, Bruneau-Grand View's plan will be revised until August, and the uncertainty around mask requirements due to different governments' powers and responsibilities. #idpol #idedu #IdahoCOVID19 https://t.co/v2WFtxbPur
+My newest in the Owyhee Avalanche: Marsing school trustees adopt their reopening plan, Bruneau-Grand View's plan will be revised until August, and the uncertainty around mask requirements due to different governments' powers and responsibilities. #idpol #idedu #IdahoCOVID19 <https://t.co/v2WFtxbPur>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/Edkp2laUEAAMR0L.png)

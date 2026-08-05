@@ -15,6 +15,6 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoStatesman: The two legal organizations argue that eviction cases are too complex to be finished in a speedy process. https://t.co/…
+RT @IdahoStatesman: The two legal organizations argue that eviction cases are too complex to be finished in a speedy process. <https://t.co/…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1258159127567581187)

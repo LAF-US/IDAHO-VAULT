@@ -16,9 +16,9 @@ related:
   - IdahoCOVID19
 ---
 
-\#IdahoCOVID19 https://t.co/VBe6cuqHfE
+\#IdahoCOVID19 <https://t.co/VBe6cuqHfE>
 
 ## Links
-- https://x.com/kxly4news/status/1283046145221111811
+- <https://x.com/kxly4news/status/1283046145221111811>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1283071110309978113)

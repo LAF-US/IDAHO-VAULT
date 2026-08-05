@@ -14,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-Rep. Priscilla Giddings (R-White Bird) https://t.co/KCuSqCg30x
+Rep. Priscilla Giddings (R-White Bird) <https://t.co/KCuSqCg30x>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EbQF8tPWAAMN6wI.jpg)

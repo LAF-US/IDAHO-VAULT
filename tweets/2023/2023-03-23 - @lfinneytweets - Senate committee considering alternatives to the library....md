@@ -16,9 +16,9 @@ related:
   - idleg
 ---
 
-Senate committee considering alternatives to "the library bill" #idleg https://t.co/HGWjLOHQ1w
+Senate committee considering alternatives to "the library bill" #idleg <https://t.co/HGWjLOHQ1w>
 
 ## Links
-- https://x.com/IdahoReports/status/1638959685217964032
+- <https://x.com/IdahoReports/status/1638959685217964032>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1638981259950194688)

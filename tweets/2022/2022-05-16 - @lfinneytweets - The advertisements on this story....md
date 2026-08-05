@@ -13,7 +13,7 @@ related:
   - lfinneytweets
 ---
 
-@salsuppe The advertisements on this story... https://t.co/d9VwQX7X1t
+@salsuppe The advertisements on this story... <https://t.co/d9VwQX7X1t>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FS6BO35UEAAioWv.jpg)
