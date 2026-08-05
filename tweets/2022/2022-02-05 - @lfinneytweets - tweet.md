@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-@JoshScholer https://t.co/MMjEw8d4Dr
+@JoshScholer <https://t.co/MMjEw8d4Dr>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2022/02/04/judge-sides-with-pizzuto-over-commutation-denial/
+- <https://blog.idahoreports.idahoptv.org/2022/02/04/judge-sides-with-pizzuto-over-commutation-denial/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1489756783690223616)

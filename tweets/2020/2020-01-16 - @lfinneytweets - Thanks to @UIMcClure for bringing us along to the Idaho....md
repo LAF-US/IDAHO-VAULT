@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-Thanks to @UIMcClure for bringing us along to the Idaho Environmental Forum! https://t.co/UMgGC78s2p
+Thanks to @UIMcClure for bringing us along to the Idaho Environmental Forum! <https://t.co/UMgGC78s2p>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EOXM3IyU4AAXWqe.jpg)

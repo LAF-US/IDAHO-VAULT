@@ -18,7 +18,7 @@ related:
   - idpol
 ---
 
-Folks over on Instagram are NOT buying Bayer's pesticide messaging. #idleg #idpol https://t.co/lFRcZW8ZlY
+Folks over on Instagram are NOT buying Bayer's pesticide messaging. #idleg #idpol <https://t.co/lFRcZW8ZlY>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/Gl0afHWXgAAtDXR.jpg)

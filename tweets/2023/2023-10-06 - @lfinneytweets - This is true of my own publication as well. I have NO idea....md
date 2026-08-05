@@ -14,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-This is true of my own publication as well. I have NO idea what this story is about without clicking through to the website - which kinda defeats the purpose of tweeting it? https://t.co/em5jt94Gdz
+This is true of my own publication as well. I have NO idea what this story is about without clicking through to the website - which kinda defeats the purpose of tweeting it? <https://t.co/em5jt94Gdz>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/F7xYeSFaUAA3zLl.jpg)

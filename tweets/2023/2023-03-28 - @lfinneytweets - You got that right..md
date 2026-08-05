@@ -17,10 +17,10 @@ related:
 ---
 
 @mlcarmel You got that right. 
-https://t.co/BnIbNBahyf
+<https://t.co/BnIbNBahyf>
 
 ## Links
-- https://x.com/aliforidaho/status/1640760329826123777
+- <https://x.com/aliforidaho/status/1640760329826123777>
 
 *In reply to [@mlcarmel](https://twitter.com/mlcarmel)*
 

@@ -20,7 +20,7 @@ related:
   - idleg
 ---
 
-RT @KeithRidler: House Speaker Scott Bedke gavels the House into session. #idpol #idleg https://t.co/nmiFdraShh
+RT @KeithRidler: House Speaker Scott Bedke gavels the House into session. #idpol #idleg <https://t.co/nmiFdraShh>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EreRnHcU0AAuxhc.jpg)

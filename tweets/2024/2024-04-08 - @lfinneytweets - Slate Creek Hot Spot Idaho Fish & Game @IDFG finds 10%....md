@@ -23,10 +23,10 @@ Slate Creek Hot Spot: Idaho Fish & Game @IDFG finds 10% overall CWD rate in Spri
 - 72 mule deer (3 CWD+)
 - 2 sick elk (1 CWD+)
 ~8,000 lbs of game will be donated from negative animals. #idpol 
-https://t.co/PTh7y6AsOO https://t.co/jtqH0d3GXz
+<https://t.co/PTh7y6AsOO> <https://t.co/jtqH0d3GXz>
 
 ## Links
-- https://idfg.idaho.gov/article/spring-2024-cwd-management-action-wrap
+- <https://idfg.idaho.gov/article/spring-2024-cwd-management-action-wrap>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GKrEDNbaoAQrGfE.jpg)

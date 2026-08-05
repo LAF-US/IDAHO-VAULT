@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-RT @cspan: Statement from C-SPAN https://t.co/QsvmsJ69LC
+RT @cspan: Statement from C-SPAN <https://t.co/QsvmsJ69LC>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EUDt4ZBXgAEmivo.jpg)

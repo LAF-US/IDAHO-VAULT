@@ -18,9 +18,9 @@ related:
   - idpol
 ---
 
-Another social media defamation case out of North Idaho moves forward. #idleg #idpol https://t.co/pnvQaPQaZD
+Another social media defamation case out of North Idaho moves forward. #idleg #idpol <https://t.co/pnvQaPQaZD>
 
 ## Links
-- https://x.com/mpdailynews/status/1804203287396389185
+- <https://x.com/mpdailynews/status/1804203287396389185>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1804208749864980985)

@@ -18,7 +18,7 @@ related:
   - idpol
 ---
 
-State of Idaho response to ITD campus lawsuit #idleg #idpol https://t.co/UAgPQ28vRj
+State of Idaho response to ITD campus lawsuit #idleg #idpol <https://t.co/UAgPQ28vRj>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GO2sB-za4AEuXPV.jpg)

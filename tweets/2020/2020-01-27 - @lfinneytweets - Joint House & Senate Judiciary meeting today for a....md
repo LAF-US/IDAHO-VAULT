@@ -18,7 +18,7 @@ related:
   - idpol
 ---
 
-Joint House & Senate Judiciary meeting today for a presentation from Dept of Correction Director Josh Tewalt. #idleg #idpol https://t.co/jw2eWaH5y8
+Joint House & Senate Judiciary meeting today for a presentation from Dept of Correction Director Josh Tewalt. #idleg #idpol <https://t.co/jw2eWaH5y8>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EPUKPO7UUAAoVZP.jpg)

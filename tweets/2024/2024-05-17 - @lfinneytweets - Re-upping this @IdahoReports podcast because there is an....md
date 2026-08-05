@@ -19,9 +19,9 @@ related:
 ---
 
 Re-upping this @IdahoReports podcast because there is an Idaho Supreme Court election on the ballot Tuesday! #idpol 
-https://t.co/Q4FpwLWspo
+<https://t.co/Q4FpwLWspo>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2022/10/26/podcast-episode-judges-on-the-ballot/
+- <https://blog.idahoreports.idahoptv.org/2022/10/26/podcast-episode-judges-on-the-ballot/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1791490172942680095)

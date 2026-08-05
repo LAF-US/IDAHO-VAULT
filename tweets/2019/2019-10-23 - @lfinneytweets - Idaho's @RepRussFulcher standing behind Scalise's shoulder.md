@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-Idaho's @RepRussFulcher standing behind Scalise's shoulder https://t.co/XoS12LZbjq
+Idaho's @RepRussFulcher standing behind Scalise's shoulder <https://t.co/XoS12LZbjq>
 
 ## Links
-- https://x.com/SteveScalise/status/1187100490888335360
+- <https://x.com/SteveScalise/status/1187100490888335360>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1187111942059511809)

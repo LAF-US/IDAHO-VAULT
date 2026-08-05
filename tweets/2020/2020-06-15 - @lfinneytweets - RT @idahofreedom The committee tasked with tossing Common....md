@@ -18,9 +18,9 @@ related:
   - idleg
 ---
 
-RT @idahofreedom: The committee tasked with tossing Common Core in Idaho will begin its work next week: https://t.co/O3GOngh8rK #idleg #i…
+RT @idahofreedom: The committee tasked with tossing Common Core in Idaho will begin its work next week: <https://t.co/O3GOngh8rK> #idleg #i…
 
 ## Links
-- https://idahofreedom.org/we-know-which-lawmakers-will-toss-common-core-write-new-content-standards/
+- <https://idahofreedom.org/we-know-which-lawmakers-will-toss-common-core-write-new-content-standards/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1272563457515114505)

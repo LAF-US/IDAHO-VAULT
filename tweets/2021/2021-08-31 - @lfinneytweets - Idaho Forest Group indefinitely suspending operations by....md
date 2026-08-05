@@ -16,9 +16,9 @@ related:
   - Lumber
 ---
 
-Idaho Forest Group "indefinitely" suspending operations by late November at its St. Regis, MT, sawmill that employs 99 people and contracts with loggers and haulers, some of whom may continue delivering logs to other IFG mills in North Idaho. #Lumber https://t.co/UBgkahhIb6
+Idaho Forest Group "indefinitely" suspending operations by late November at its St. Regis, MT, sawmill that employs 99 people and contracts with loggers and haulers, some of whom may continue delivering logs to other IFG mills in North Idaho. #Lumber <https://t.co/UBgkahhIb6>
 
 ## Links
-- https://x.com/DailyBee/status/1432704743130947597
+- <https://x.com/DailyBee/status/1432704743130947597>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1432734970523512834)

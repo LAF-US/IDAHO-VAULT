@@ -18,7 +18,7 @@ related:
   - idpol
 ---
 
-Imagine you're a state lawmaker reading your constituent emails one day, only to realize this email you're reading says it's from... yourself? #idleg #idpol https://t.co/89sc8HGcMv
+Imagine you're a state lawmaker reading your constituent emails one day, only to realize this email you're reading says it's from... yourself? #idleg #idpol <https://t.co/89sc8HGcMv>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GjyKK2tacAAWcUO.jpg)

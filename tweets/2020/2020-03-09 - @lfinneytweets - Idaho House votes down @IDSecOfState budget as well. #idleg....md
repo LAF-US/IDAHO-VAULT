@@ -20,7 +20,7 @@ related:
   - idpol
 ---
 
-Idaho House votes down @IDSecOfState budget as well. #idleg #idpol https://t.co/7tXysQXsZV
+Idaho House votes down @IDSecOfState budget as well. #idleg #idpol <https://t.co/7tXysQXsZV>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/ESr2ZBXWoAIrhS5.jpg)

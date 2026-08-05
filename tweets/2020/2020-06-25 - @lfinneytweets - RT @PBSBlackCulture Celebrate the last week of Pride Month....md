@@ -15,6 +15,6 @@ related:
   - lfinneytweets
 ---
 
-RT @PBSBlackCulture: Celebrate the last week of Pride Month with these excellent documentaries that feature LGBTQ voices. https://t.co/cP4i…
+RT @PBSBlackCulture: Celebrate the last week of Pride Month with these excellent documentaries that feature LGBTQ voices. <https://t.co/cP4i…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1276183590271770624)

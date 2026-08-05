@@ -19,9 +19,9 @@ related:
   - idleg
 ---
 
-Wow @mlcarmel really out here doing @RadioDawson's song of the week thing for him #idleg https://t.co/nvtIDafv2e
+Wow @mlcarmel really out here doing @RadioDawson's song of the week thing for him #idleg <https://t.co/nvtIDafv2e>
 
 ## Links
-- https://x.com/mlcarmel/status/1640482318598168577
+- <https://x.com/mlcarmel/status/1640482318598168577>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1640494424982704129)

@@ -18,9 +18,9 @@ related:
   - idpol
 ---
 
-\#idleg #idpol https://t.co/IldSew2vgx
+\#idleg #idpol <https://t.co/IldSew2vgx>
 
 ## Links
-- https://x.com/LewistonTribune/status/1470779016403640328
+- <https://x.com/LewistonTribune/status/1470779016403640328>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1470889216481632265)

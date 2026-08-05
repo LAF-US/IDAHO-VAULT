@@ -18,7 +18,7 @@ related:
   - idpol
 ---
 
-Photo thread time! ⬇️ #idleg #idpol https://t.co/X8xyljSM89
+Photo thread time! ⬇️ #idleg #idpol <https://t.co/X8xyljSM89>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EbQHIg1XQAw3FXd.jpg)

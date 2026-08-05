@@ -18,9 +18,9 @@ related:
   - NICAR
 ---
 
-Thank you #NICAR for the skills that made this 330+ row Flourish monstrosity possible. @IRE_NICAR https://t.co/Vn4imKyvVj
+Thank you #NICAR for the skills that made this 330+ row Flourish monstrosity possible. @IRE_NICAR <https://t.co/Vn4imKyvVj>
 
 ## Links
-- https://x.com/IdahoReports/status/2025016203811664336
+- <https://x.com/IdahoReports/status/2025016203811664336>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/2025025276657488188)

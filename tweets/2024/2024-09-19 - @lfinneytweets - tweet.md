@@ -13,9 +13,9 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/0HCFKum1M5
+<https://t.co/0HCFKum1M5>
 
 ## Links
-- https://youtu.be/OhzY5QLO4FA
+- <https://youtu.be/OhzY5QLO4FA>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1836897151496114535)

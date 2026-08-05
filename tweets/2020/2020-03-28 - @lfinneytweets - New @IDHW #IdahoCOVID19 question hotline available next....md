@@ -20,9 +20,9 @@ related:
   - idpol
 ---
 
-New @IDHW #IdahoCOVID19 question hotline available next week #idpol https://t.co/3zxOfrj5IM
+New @IDHW #IdahoCOVID19 question hotline available next week #idpol <https://t.co/3zxOfrj5IM>
 
 ## Links
-- https://x.com/IDHW/status/1243926588091228169
+- <https://x.com/IDHW/status/1243926588091228169>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1243931465064185856)

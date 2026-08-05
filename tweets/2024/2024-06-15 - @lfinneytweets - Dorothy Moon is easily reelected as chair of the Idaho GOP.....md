@@ -18,7 +18,7 @@ related:
   - idleg
 ---
 
-Dorothy Moon is easily reelected as chair of the Idaho GOP. Later in her acceptance speech she specifically named Tom Luna and Trent Clark, telling them they need to help unite the party. Clark took the mic to congratulate her and pledged to support her as chair. #idpol #idleg https://t.co/v1UePDCuKc
+Dorothy Moon is easily reelected as chair of the Idaho GOP. Later in her acceptance speech she specifically named Tom Luna and Trent Clark, telling them they need to help unite the party. Clark took the mic to congratulate her and pledged to support her as chair. #idpol #idleg <https://t.co/v1UePDCuKc>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/ext_tw_video_thumb/1802122412542275585/pu/img/EZdNRnJQEL-85B9m.jpg)

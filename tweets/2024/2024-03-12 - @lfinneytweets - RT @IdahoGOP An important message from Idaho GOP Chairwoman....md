@@ -20,7 +20,7 @@ related:
   - WeAreIdaho
 ---
 
-RT @IdahoGOP: An important message from Idaho GOP Chairwoman Dorothy Moon. #IDGOP #WeAreIdaho https://t.co/KRAyK68kK2
+RT @IdahoGOP: An important message from Idaho GOP Chairwoman Dorothy Moon. #IDGOP #WeAreIdaho <https://t.co/KRAyK68kK2>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/ext_tw_video_thumb/1767667173701636096/pu/img/p4yq87LATdNnLspD.jpg)

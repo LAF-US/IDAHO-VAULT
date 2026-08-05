@@ -14,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-Reported deaths by day. https://t.co/l8OcqXzVMp
+Reported deaths by day. <https://t.co/l8OcqXzVMp>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EVN4EHiUYAAqjU0.jpg)

@@ -15,6 +15,6 @@ related:
   - lfinneytweets
 ---
 
-RT @ToddKunzTV: Idaho State University President Kevin Satterlee announced Monday that he will retire December 31, 2023. https://t.co/eCpdZ…
+RT @ToddKunzTV: Idaho State University President Kevin Satterlee announced Monday that he will retire December 31, 2023. <https://t.co/eCpdZ…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1668380050432069632)

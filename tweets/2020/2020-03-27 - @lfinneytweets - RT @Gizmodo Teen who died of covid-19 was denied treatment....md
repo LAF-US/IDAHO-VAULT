@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-RT @Gizmodo: Teen who died of covid-19 was denied treatment because he didn't have health insurance https://t.co/ziWHOZlAaH https://t.co/Zc…
+RT @Gizmodo: Teen who died of covid-19 was denied treatment because he didn't have health insurance <https://t.co/ziWHOZlAaH> <https://t.co/Zc…>
 
 ## Links
-- http://gizmo.do/LTV6OrS
+- <http://gizmo.do/LTV6OrS>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1243547235951894529)

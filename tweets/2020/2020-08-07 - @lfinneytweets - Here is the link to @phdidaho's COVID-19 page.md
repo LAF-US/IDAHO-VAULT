@@ -15,10 +15,10 @@ related:
 ---
 
 Here is the link to @phdidaho's COVID-19 page: 
-https://t.co/0DFWPoHSVk
+<https://t.co/0DFWPoHSVk>
 
 ## Links
-- https://panhandlehealthdistrict.org/covid-19/
+- <https://panhandlehealthdistrict.org/covid-19/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

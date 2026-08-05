@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoStatesman: Suspected Trump assassin had ‘delusions of grandeur,’ political views all over the map https://t.co/XS1iVM5G5R
+RT @IdahoStatesman: Suspected Trump assassin had ‘delusions of grandeur,’ political views all over the map <https://t.co/XS1iVM5G5R>
 
 ## Links
-- https://www.idahostatesman.com/news/politics-government/article292565284.html?taid=66e8a1095a018a000158f490&utm_campaign=trueanthem&utm_medium=social&utm_source=twitter
+- <https://www.idahostatesman.com/news/politics-government/article292565284.html?taid=66e8a1095a018a000158f490&utm_campaign=trueanthem&utm_medium=social&utm_source=twitter>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1835802483974983981)

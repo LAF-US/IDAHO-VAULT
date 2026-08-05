@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-Everyone settling in. I believe @BetsyZRussell is getting a head count here. https://t.co/UxGmIWSGs7
+Everyone settling in. I believe @BetsyZRussell is getting a head count here. <https://t.co/UxGmIWSGs7>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EbQD43VWoAE6thI.jpg)

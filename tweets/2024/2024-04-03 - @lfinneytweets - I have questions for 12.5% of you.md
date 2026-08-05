@@ -13,9 +13,9 @@ related:
   - lfinneytweets
 ---
 
-I have questions for 12.5% of you https://t.co/QVaKexqIqr
+I have questions for 12.5% of you <https://t.co/QVaKexqIqr>
 
 ## Links
-- https://x.com/lfinneytweets/status/1775379407303250296
+- <https://x.com/lfinneytweets/status/1775379407303250296>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1775594860999033065)

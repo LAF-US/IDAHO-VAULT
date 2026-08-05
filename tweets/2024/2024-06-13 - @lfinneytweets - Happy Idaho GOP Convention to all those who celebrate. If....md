@@ -16,7 +16,7 @@ related:
   - idpol
 ---
 
-Happy Idaho GOP Convention to all those who celebrate. If you see me, come say hi and share news! #idpol https://t.co/9mMo5Ahp2A
+Happy Idaho GOP Convention to all those who celebrate. If you see me, come say hi and share news! #idpol <https://t.co/9mMo5Ahp2A>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GP7Ij3vaUAAI-Nc.jpg)

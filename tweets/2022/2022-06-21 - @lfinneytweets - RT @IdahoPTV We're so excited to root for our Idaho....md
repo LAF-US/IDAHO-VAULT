@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoPTV: We're so excited to root for our Idaho contestant, Nikki Tomanio-Allemand! https://t.co/iztLG9uepK
+RT @IdahoPTV: We're so excited to root for our Idaho contestant, Nikki Tomanio-Allemand! <https://t.co/iztLG9uepK>
 
 ## Links
-- https://x.com/PBS/status/1538929674184798208
+- <https://x.com/PBS/status/1538929674184798208>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1539318427403243520)

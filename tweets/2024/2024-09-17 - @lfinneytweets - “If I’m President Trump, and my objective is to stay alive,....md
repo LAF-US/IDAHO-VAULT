@@ -19,9 +19,9 @@ related:
   - idpol
 ---
 
-“If I’m President Trump, and my objective is to stay alive, I want to look at a lot of different options, including possibly even private security to enhance some of these needs,” @RepRussFulcher said in a @NewsNation interview. #idpol https://t.co/e70EjJiXsE
+“If I’m President Trump, and my objective is to stay alive, I want to look at a lot of different options, including possibly even private security to enhance some of these needs,” @RepRussFulcher said in a @NewsNation interview. #idpol <https://t.co/e70EjJiXsE>
 
 ## Links
-- https://x.com/thehill/status/1835878858454597725
+- <https://x.com/thehill/status/1835878858454597725>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1836167877025841503)

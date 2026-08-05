@@ -15,10 +15,10 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoNews6: 2 justices argue Supreme Court should 'fix' same-sex marriage decision https://t.co/TFkLJL3AJx https://t.co/S7IBnMBLKg
+RT @IdahoNews6: 2 justices argue Supreme Court should 'fix' same-sex marriage decision <https://t.co/TFkLJL3AJx> <https://t.co/S7IBnMBLKg>
 
 ## Links
-- https://buff.ly/33yPAiS
+- <https://buff.ly/33yPAiS>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EjlXy2QXYAQS6Xy.jpg)

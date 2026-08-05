@@ -15,7 +15,7 @@ related:
 ---
 
 Ignorance = Fear
-Keith Haring, 1989. https://t.co/XHmlSKKgvZ
+Keith Haring, 1989. <https://t.co/XHmlSKKgvZ>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/DgaDgBjUYAA1u7Z.jpg)

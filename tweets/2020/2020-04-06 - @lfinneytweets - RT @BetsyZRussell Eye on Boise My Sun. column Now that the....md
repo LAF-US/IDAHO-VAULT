@@ -18,9 +18,9 @@ related:
   - idpol
 ---
 
-RT @BetsyZRussell: Eye on Boise: My Sun. column: Now that the #idpol primary race is on, some candidate news... https://t.co/B56dyVN58B htt…
+RT @BetsyZRussell: Eye on Boise: My Sun. column: Now that the #idpol primary race is on, some candidate news... <https://t.co/B56dyVN58B> htt…
 
 ## Links
-- https://www.idahopress.com/eyeonboise/my-sun-column-now-that-the-race-is-on-some-candidate-news/article_b389789d-f468-5048-9ca8-39f7977ed1b9.html
+- <https://www.idahopress.com/eyeonboise/my-sun-column-now-that-the-race-is-on-some-candidate-news/article_b389789d-f468-5048-9ca8-39f7977ed1b9.html>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1247091920775434241)

@@ -13,7 +13,7 @@ related:
   - lfinneytweets
 ---
 
-Victory garden tilled, seeded and planted! 👨‍🌾 https://t.co/NFYjNzYQtu
+Victory garden tilled, seeded and planted! 👨‍🌾 <https://t.co/NFYjNzYQtu>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EX2GCVQU4AAPzMt.jpg)

@@ -18,7 +18,7 @@ related:
   - idpol
 ---
 
-Rep. John Ganon (D-Boise) just came by the press room with draft legislation that would allow the legislature to conduct the session via video conference during an emergency declaration. "We need to have a plan and be ready for a special session," he says. #idleg #idpol https://t.co/ldWrYbZNY7
+Rep. John Ganon (D-Boise) just came by the press room with draft legislation that would allow the legislature to conduct the session via video conference during an emergency declaration. "We need to have a plan and be ready for a special session," he says. #idleg #idpol <https://t.co/ldWrYbZNY7>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/ETVZGauWoAQuFnN.jpg)

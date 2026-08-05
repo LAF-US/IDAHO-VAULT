@@ -18,7 +18,7 @@ related:
   - SineDie
 ---
 
-RT @GovernorLittle: Bill box is rather empty… seems it might be time to #SineDie ?! https://t.co/mpPe2SCTpA
+RT @GovernorLittle: Bill box is rather empty… seems it might be time to #SineDie ?! <https://t.co/mpPe2SCTpA>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GnoK3v5a8AEaAn9.jpg)

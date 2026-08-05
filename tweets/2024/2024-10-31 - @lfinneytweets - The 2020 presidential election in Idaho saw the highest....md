@@ -18,7 +18,7 @@ related:
   - idpol
 ---
 
-The 2020 presidential election in Idaho saw the highest voter turnout since at least 1980. Looking at turnout from the latest spring primary, I wonder if voters will set another new record next week. #idleg #idpol https://t.co/GyP5339wSd
+The 2020 presidential election in Idaho saw the highest voter turnout since at least 1980. Looking at turnout from the latest spring primary, I wonder if voters will set another new record next week. #idleg #idpol <https://t.co/GyP5339wSd>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GbP4K0xakAIMNVD.jpg)

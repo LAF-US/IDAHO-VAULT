@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-RT @courtneyrozen: Tech company https://t.co/6eIhXAfbfQ claimed that fraudsters stole $400 B in pandemic unemployment aid. My colleagues in…
+RT @courtneyrozen: Tech company <https://t.co/6eIhXAfbfQ> claimed that fraudsters stole $400 B in pandemic unemployment aid. My colleagues in…
 
 ## Links
-- http://ID.me
+- <http://ID.me>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1593278934400933893)

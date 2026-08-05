@@ -21,9 +21,9 @@ related:
   - idpol
 ---
 
-Big news from @idcourts today. The full court opinion is embedded here in @RuthBrownNews's post. #idleg #idpol https://t.co/hl4dgiUsSs
+Big news from @idcourts today. The full court opinion is embedded here in @RuthBrownNews's post. #idleg #idpol <https://t.co/hl4dgiUsSs>
 
 ## Links
-- https://x.com/IdahoReports/status/1429922479980482577
+- <https://x.com/IdahoReports/status/1429922479980482577>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1429922773980246017)

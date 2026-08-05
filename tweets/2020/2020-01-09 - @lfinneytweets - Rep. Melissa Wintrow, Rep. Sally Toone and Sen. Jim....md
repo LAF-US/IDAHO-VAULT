@@ -18,7 +18,7 @@ related:
   - idpol
 ---
 
-Rep. Melissa Wintrow, Rep. Sally Toone and Sen. Jim Woodward listen to testimony at this morning’s JFAC meeting. The committee reviewed budgets from several agencies today, including the Division of Veterans Services, State Treasurer, and Secretary of State. #idleg #idpol https://t.co/Mb8HRIFBDS
+Rep. Melissa Wintrow, Rep. Sally Toone and Sen. Jim Woodward listen to testimony at this morning’s JFAC meeting. The committee reviewed budgets from several agencies today, including the Division of Veterans Services, State Treasurer, and Secretary of State. #idleg #idpol <https://t.co/Mb8HRIFBDS>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EN349X8U4AIIvjs.jpg)

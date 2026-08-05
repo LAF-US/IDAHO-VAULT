@@ -16,9 +16,9 @@ related:
 ---
 
 RT @kristenhare: McClatchy is outsourcing page design and typesetting, cutting at least 26 jobs
-https://t.co/KMlLpSt7Rt
+<https://t.co/KMlLpSt7Rt>
 
 ## Links
-- https://www.poynter.org/reporting-editing/2021/mcclatchy-is-outsourcing-page-design-and-typesetting-cutting-at-least-26-jobs/
+- <https://www.poynter.org/reporting-editing/2021/mcclatchy-is-outsourcing-page-design-and-typesetting-cutting-at-least-26-jobs/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1376693395729510402)

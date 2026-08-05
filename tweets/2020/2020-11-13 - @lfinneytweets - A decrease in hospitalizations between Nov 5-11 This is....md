@@ -17,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-@danielwinlander A decrease in hospitalizations between Nov 5-11? This is what @IDHW reports through Nov 11 https://t.co/oyw9XZSpM1
+@danielwinlander A decrease in hospitalizations between Nov 5-11? This is what @IDHW reports through Nov 11 <https://t.co/oyw9XZSpM1>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EmuRM9vUwAcW3T3.jpg)

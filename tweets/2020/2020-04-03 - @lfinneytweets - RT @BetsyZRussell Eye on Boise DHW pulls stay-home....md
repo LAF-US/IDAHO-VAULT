@@ -19,6 +19,6 @@ related:
   - idpol
 ---
 
-RT @BetsyZRussell: Eye on Boise: DHW pulls stay-home compliance reporting form after complaints, by @NateBrownNews #idpol https://t.co/aoMw…
+RT @BetsyZRussell: Eye on Boise: DHW pulls stay-home compliance reporting form after complaints, by @NateBrownNews #idpol <https://t.co/aoMw…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1245864616309035008)

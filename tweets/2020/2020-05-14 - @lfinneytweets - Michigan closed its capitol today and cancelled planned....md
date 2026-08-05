@@ -16,9 +16,9 @@ related:
 ---
 
 Michigan closed its capitol today and cancelled planned legislative session, rather than confront another armed protest & threats against @GovWhitmer. Armed protesters crowded the statehouse on April 30, confronting police and intimidating state lawmakers.
-https://t.co/lhXCz66fnY
+<https://t.co/lhXCz66fnY>
 
 ## Links
-- https://www.bloomberg.com/news/articles/2020-05-14/michigan-cancels-legislative-session-to-avoid-armed-protesters
+- <https://www.bloomberg.com/news/articles/2020-05-14/michigan-cancels-legislative-session-to-avoid-armed-protesters>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1261004982360268801)

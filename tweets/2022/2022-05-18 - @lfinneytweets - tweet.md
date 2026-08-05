@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-@KevinRichert @CSRichert https://t.co/WarN1FIuC6
+@KevinRichert @CSRichert <https://t.co/WarN1FIuC6>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/FTAepn4UAAAhkM9.jpg)

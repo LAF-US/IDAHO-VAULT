@@ -14,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-Confirmed cases by county. https://t.co/dtm8TIP9FJ
+Confirmed cases by county. <https://t.co/dtm8TIP9FJ>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EVN3Oc_UEAAbGFs.jpg)

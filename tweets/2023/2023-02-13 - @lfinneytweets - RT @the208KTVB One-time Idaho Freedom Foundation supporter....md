@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-RT @the208KTVB: One-time Idaho Freedom Foundation supporter now looks to expose group and its tactics https://t.co/8wuNdkHwVf
+RT @the208KTVB: One-time Idaho Freedom Foundation supporter now looks to expose group and its tactics <https://t.co/8wuNdkHwVf>
 
 ## Links
-- https://feeds.feedblitz.com/~/727258253/0/ktvb/the208~Onetime-Idaho-Freedom-Foundation-supporter-now-looks-to-expose-group-and-its-tactics
+- <https://feeds.feedblitz.com/~/727258253/0/ktvb/the208~Onetime-Idaho-Freedom-Foundation-supporter-now-looks-to-expose-group-and-its-tactics>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1625274289044996098)

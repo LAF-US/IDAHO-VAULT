@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-RT @mckinneykelsey: I wrote about Chappell Roan and parasocial relationships and the sickness of modern fandom: https://t.co/YgvNNN6Bzm
+RT @mckinneykelsey: I wrote about Chappell Roan and parasocial relationships and the sickness of modern fandom: <https://t.co/YgvNNN6Bzm>
 
 ## Links
-- https://defector.com/chapell-roan-fan-privacy-drama
+- <https://defector.com/chapell-roan-fan-privacy-drama>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1826297872452841587)

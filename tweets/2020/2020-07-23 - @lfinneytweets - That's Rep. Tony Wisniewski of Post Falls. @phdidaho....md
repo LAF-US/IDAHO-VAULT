@@ -18,9 +18,9 @@ related:
   - idleg
 ---
 
-That's Rep. Tony Wisniewski of Post Falls. @phdidaho #IdahoCOVID19 #idleg https://t.co/VBGoFg2CNA
+That's Rep. Tony Wisniewski of Post Falls. @phdidaho #IdahoCOVID19 #idleg <https://t.co/VBGoFg2CNA>
 
 ## Links
-- https://x.com/TViydo/status/1286393495859556353
+- <https://x.com/TViydo/status/1286393495859556353>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1286418029404762112)

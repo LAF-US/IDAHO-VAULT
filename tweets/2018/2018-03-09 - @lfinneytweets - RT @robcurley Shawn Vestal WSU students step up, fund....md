@@ -15,10 +15,10 @@ related:
   - lfinneytweets
 ---
 
-RT @robcurley: Shawn Vestal: WSU students step up, fund Evergreen print edition https://t.co/SOrexSW01b https://t.co/ayrkamsmqh
+RT @robcurley: Shawn Vestal: WSU students step up, fund Evergreen print edition <https://t.co/SOrexSW01b> <https://t.co/ayrkamsmqh>
 
 ## Links
-- https://buff.ly/2G93HhC
+- <https://buff.ly/2G93HhC>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/DX0dHtWVAAAD6P9.jpg)

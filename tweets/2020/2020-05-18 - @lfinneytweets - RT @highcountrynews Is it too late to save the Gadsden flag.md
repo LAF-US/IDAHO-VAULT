@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-RT @highcountrynews: Is it too late to save the Gadsden flag? https://t.co/4CjQeIJmuu
+RT @highcountrynews: Is it too late to save the Gadsden flag? <https://t.co/4CjQeIJmuu>
 
 ## Links
-- https://hcne.ws/2AFgNVc
+- <https://hcne.ws/2AFgNVc>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1262433698571358213)

@@ -20,7 +20,7 @@ related:
   - idpol
 ---
 
-From my dives into the @IdahoPTV archives: an episode of Dialogue from 2010 on the Tea Party Movement. #idleg #idpol https://t.co/CrlcO6dkMe
+From my dives into the @IdahoPTV archives: an episode of Dialogue from 2010 on the Tea Party Movement. #idleg #idpol <https://t.co/CrlcO6dkMe>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/F7e_WlhbIAA_o64.jpg)

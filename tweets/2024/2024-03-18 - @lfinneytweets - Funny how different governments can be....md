@@ -18,10 +18,10 @@ related:
 ---
 
 @NC5PhilWilliams @schelzig Funny how different governments can be... 
-https://t.co/H7ndsjI7k6
+<https://t.co/H7ndsjI7k6>
 
 ## Links
-- https://idwr.idaho.gov/iwrb/programs/cloud-seeding-program/
+- <https://idwr.idaho.gov/iwrb/programs/cloud-seeding-program/>
 
 *In reply to [@PhilNvestigates](https://twitter.com/PhilNvestigates)*
 

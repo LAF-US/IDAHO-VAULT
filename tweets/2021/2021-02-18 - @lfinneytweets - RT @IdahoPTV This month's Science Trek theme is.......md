@@ -15,6 +15,6 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoPTV: This month's Science Trek theme is... earthquakes! Find videos that explore the science behind seismic research at https://t.…
+RT @IdahoPTV: This month's Science Trek theme is... earthquakes! Find videos that explore the science behind seismic research at <https://t.…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1362219813821554689)

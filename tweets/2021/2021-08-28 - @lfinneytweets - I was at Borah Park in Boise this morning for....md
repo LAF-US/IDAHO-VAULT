@@ -21,7 +21,7 @@ related:
   - idpol
 ---
 
-I was at Borah Park in Boise this morning for @IdahoReports, where @reclaimID volunteers gathered for training before heading out to collect signatures for their education initiative in surrounding neighborhoods. #idleg #idpol https://t.co/375PyjOFV4
+I was at Borah Park in Boise this morning for @IdahoReports, where @reclaimID volunteers gathered for training before heading out to collect signatures for their education initiative in surrounding neighborhoods. #idleg #idpol <https://t.co/375PyjOFV4>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/E95MsTgUcAE_Erz.jpg)

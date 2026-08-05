@@ -18,7 +18,7 @@ related:
   - idpol
 ---
 
-A live look at where my wonderful colleagues make the #idleg #idpol streaming happen! https://t.co/7CQW2jTJ1t
+A live look at where my wonderful colleagues make the #idleg #idpol streaming happen! <https://t.co/7CQW2jTJ1t>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GIfsMv_akAAss19.jpg)

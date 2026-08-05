@@ -13,7 +13,7 @@ related:
   - lfinneytweets
 ---
 
-What are you doing with your downtime in Moscow? https://t.co/IBB6ERbgzz
+What are you doing with your downtime in Moscow? <https://t.co/IBB6ERbgzz>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/F6GBMxcboAAgEjg.jpg)

@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-@idahofreedom https://t.co/vPYdVvt9ek
+@idahofreedom <https://t.co/vPYdVvt9ek>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/FHRJLnFVEAAZP-D.jpg)

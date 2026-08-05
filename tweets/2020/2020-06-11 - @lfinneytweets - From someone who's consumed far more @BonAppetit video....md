@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-From someone who's consumed far more @BonAppetit video content than I'd like to admit, this is the best overview of the situation I've seen so far. https://t.co/hT8L0U1WXh
+From someone who's consumed far more @BonAppetit video content than I'd like to admit, this is the best overview of the situation I've seen so far. <https://t.co/hT8L0U1WXh>
 
 ## Links
-- https://x.com/bettinamak/status/1270817995493986304
+- <https://x.com/bettinamak/status/1270817995493986304>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1270905322853421056)

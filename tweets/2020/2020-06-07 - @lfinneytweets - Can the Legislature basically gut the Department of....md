@@ -20,9 +20,9 @@ related:
   - idedu
 ---
 
-"Can the Legislature basically gut the Department of Education by statute?” Chief Justice Burdick asked at one point. “Can they or can they not?" #idpol #idleg #idedu https://t.co/J0hAvYHi46
+"Can the Legislature basically gut the Department of Education by statute?” Chief Justice Burdick asked at one point. “Can they or can they not?" #idpol #idleg #idedu <https://t.co/J0hAvYHi46>
 
 ## Links
-- https://t.co/J0hAvYHi46
+- <https://t.co/J0hAvYHi46>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1269756794634563584)

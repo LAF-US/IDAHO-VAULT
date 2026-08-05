@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-RT @jonesblakej: And the list of legislators supporting it: https://t.co/dGBOw4VRzq
+RT @jonesblakej: And the list of legislators supporting it: <https://t.co/dGBOw4VRzq>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/Erd7IoeVgAARxbs.jpg)

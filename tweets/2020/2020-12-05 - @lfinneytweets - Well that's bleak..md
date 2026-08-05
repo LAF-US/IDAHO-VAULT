@@ -13,9 +13,9 @@ related:
   - lfinneytweets
 ---
 
-Well that's bleak. https://t.co/C6oUWpr3v2
+Well that's bleak. <https://t.co/C6oUWpr3v2>
 
 ## Links
-- https://t.co/C6oUWpr3v2
+- <https://t.co/C6oUWpr3v2>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1335042494388600834)

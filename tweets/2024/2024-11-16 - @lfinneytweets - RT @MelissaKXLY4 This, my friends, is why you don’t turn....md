@@ -18,7 +18,7 @@ related:
   - PaulTyson
 ---
 
-RT @MelissaKXLY4: This, my friends, is why you don’t turn your back on traditional broadcast television. #PaulTyson https://t.co/EsEmnuWWZx
+RT @MelissaKXLY4: This, my friends, is why you don’t turn your back on traditional broadcast television. #PaulTyson <https://t.co/EsEmnuWWZx>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/GcezHaKaMAIExha.jpg)

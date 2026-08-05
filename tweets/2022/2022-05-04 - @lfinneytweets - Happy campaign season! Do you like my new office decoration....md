@@ -18,7 +18,7 @@ related:
   - idpol
 ---
 
-Happy campaign season! Do you like my new office decoration? #idleg #idpol https://t.co/pVYtSIq6ux
+Happy campaign season! Do you like my new office decoration? #idleg #idpol <https://t.co/pVYtSIq6ux>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FR8pa88VgAANKzV.jpg)

@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-RT @lori_denhartog: https://t.co/6anX8panwH
+RT @lori_denhartog: <https://t.co/6anX8panwH>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FEccGSQVUAA3JJ4.jpg)

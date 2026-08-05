@@ -13,9 +13,9 @@ related:
   - lfinneytweets
 ---
 
-Spoiler: this is how *every* broadcast ends after the cameras are off https://t.co/r11h8ktOhl
+Spoiler: this is how *every* broadcast ends after the cameras are off <https://t.co/r11h8ktOhl>
 
 ## Links
-- https://x.com/FaithfulPolitik/status/1237910275946405888
+- <https://x.com/FaithfulPolitik/status/1237910275946405888>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1237915445757235200)

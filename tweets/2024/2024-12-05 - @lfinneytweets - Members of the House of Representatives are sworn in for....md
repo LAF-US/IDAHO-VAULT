@@ -16,7 +16,7 @@ related:
   - idleg
 ---
 
-Members of the House of Representatives are sworn in for the 68th Idaho Legislature. #idleg https://t.co/Ww48lkXVRE
+Members of the House of Representatives are sworn in for the 68th Idaho Legislature. #idleg <https://t.co/Ww48lkXVRE>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GeDEO6kbYAE-gmh.jpg)

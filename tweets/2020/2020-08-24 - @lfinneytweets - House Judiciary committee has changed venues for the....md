@@ -18,7 +18,7 @@ related:
   - idpol
 ---
 
-House Judiciary committee has changed venues for the liability bill to the Lincoln auditorium, the statehouse's largest hearing room. #idleg #idpol https://t.co/5zT4ktrc7A
+House Judiciary committee has changed venues for the liability bill to the Lincoln auditorium, the statehouse's largest hearing room. #idleg #idpol <https://t.co/5zT4ktrc7A>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EgNCswzUYAE7T8w.jpg)

@@ -15,6 +15,6 @@ related:
   - lfinneytweets
 ---
 
-RT @BuzzFeedNews: NEW: Apple has given the conservative app Parler 24 hours to clean itself up or be deleted from the App store https://t.c…
+RT @BuzzFeedNews: NEW: Apple has given the conservative app Parler 24 hours to clean itself up or be deleted from the App store <https://t.c…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1347683296952475649)

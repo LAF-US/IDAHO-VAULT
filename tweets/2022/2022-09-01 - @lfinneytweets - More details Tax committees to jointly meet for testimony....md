@@ -18,9 +18,9 @@ related:
   - idpol
 ---
 
-More details: Tax committees to jointly meet for testimony in Lincoln Auditorium. Senators will leave then Rev & Tax will vote on the bill. Assuming it passes the House, Local Gov & Tax will take up a vote afterward. #idleg #idpol https://t.co/Xgv1L2cKBU
+More details: Tax committees to jointly meet for testimony in Lincoln Auditorium. Senators will leave then Rev & Tax will vote on the bill. Assuming it passes the House, Local Gov & Tax will take up a vote afterward. #idleg #idpol <https://t.co/Xgv1L2cKBU>
 
 ## Links
-- https://x.com/lfinneytweets/status/1565346451374239751
+- <https://x.com/lfinneytweets/status/1565346451374239751>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1565350381177020417)

@@ -19,7 +19,7 @@ related:
   - IdahoCOVID19
 ---
 
-INBOX: @GovernorLittle increases @IDNationalGuard #IdahoCOVID19 deployment to 250 guard members and extends mission through March 2021. https://t.co/fCbhpK6XVC
+INBOX: @GovernorLittle increases @IDNationalGuard #IdahoCOVID19 deployment to 250 guard members and extends mission through March 2021. <https://t.co/fCbhpK6XVC>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/Eo_IEzMU8AEicWL.jpg)

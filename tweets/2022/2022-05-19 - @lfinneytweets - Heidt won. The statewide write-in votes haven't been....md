@@ -19,10 +19,10 @@ related:
 ---
 
 @RudySotoIDUSA @Walton_Emily @IdahoDems Heidt won. The statewide write-in votes haven't been tallied up by candidate yet, but there weren't enough for anyone to beat him.
-https://t.co/ixvjci7VQk
+<https://t.co/ixvjci7VQk>
 
 ## Links
-- https://idahocapitalsun.com/briefs/results-of-idaho-democratic-gubernatorial-primary-election-not-expected-tonight/
+- <https://idahocapitalsun.com/briefs/results-of-idaho-democratic-gubernatorial-primary-election-not-expected-tonight/>
 
 *In reply to [@RudySotoIDUSA](https://twitter.com/RudySotoIDUSA)*
 

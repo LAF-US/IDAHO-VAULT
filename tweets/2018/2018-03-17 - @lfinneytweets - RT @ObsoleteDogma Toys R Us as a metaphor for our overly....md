@@ -15,10 +15,10 @@ related:
   - lfinneytweets
 ---
 
-RT @ObsoleteDogma: Toys R Us as a metaphor for our overly financialized economy https://t.co/6NMjiZx81Y https://t.co/90DwXr0rrd
+RT @ObsoleteDogma: Toys R Us as a metaphor for our overly financialized economy <https://t.co/6NMjiZx81Y> <https://t.co/90DwXr0rrd>
 
 ## Links
-- http://theweek.com/articles/761124/how-vulture-capitalists-ate-toys-r
+- <http://theweek.com/articles/761124/how-vulture-capitalists-ate-toys-r>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/DYbnpBuWsAIYrcn.jpg)

@@ -13,7 +13,7 @@ related:
   - lfinneytweets
 ---
 
-2:41pm https://t.co/aGZJuAiE8d
+2:41pm <https://t.co/aGZJuAiE8d>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/E1NxDMwUYAIIJni.jpg)

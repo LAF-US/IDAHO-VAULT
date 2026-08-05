@@ -22,9 +22,9 @@ related:
 ---
 
 The Senate Judiciary & Rules Committee introduced a bill from Sen. Brian Lenney that would make it more difficult to file meritless lawsuits in the hopes of stifling someone’s free speech, called an anti-SLAPP law. (via @mlcarmel @BoiseDev) #idleg #idpol 
-https://t.co/OhirZxhrwx
+<https://t.co/OhirZxhrwx>
 
 ## Links
-- https://boisedev.com/news/2025/01/13/slapp-lenney-bill/
+- <https://boisedev.com/news/2025/01/13/slapp-lenney-bill/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1878927377323163972)

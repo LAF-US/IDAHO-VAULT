@@ -16,7 +16,7 @@ related:
   - idpol
 ---
 
-You love to see it. #idpol https://t.co/ckjbfBdf48
+You love to see it. #idpol <https://t.co/ckjbfBdf48>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/El_jVo8VkAET6ES.jpg)

@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-@IDSecOfState "Blue" Blaine County https://t.co/WvFnlhNGPW
+@IDSecOfState "Blue" Blaine County <https://t.co/WvFnlhNGPW>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GOIXI7-aYAACfEj.jpg)

@@ -17,7 +17,7 @@ related:
 
 RT @ChuckGrassley: Getting ready for Pres Trump 2b sworn in 
 
-Thx Booker for photo https://t.co/Zve5nTFUl0
+Thx Booker for photo <https://t.co/Zve5nTFUl0>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/Ghv50ymWEAA9E5m.jpg)

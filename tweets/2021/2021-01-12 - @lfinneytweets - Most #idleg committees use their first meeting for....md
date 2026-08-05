@@ -18,7 +18,7 @@ related:
   - idpol
 ---
 
-Most #idleg committees use their first meeting for organizational sessions and new member introductions. The House State Affairs committee has three draft bills prepared for Tuesday relating to emergency declarations and separation of powers. #idpol https://t.co/N8MOqS9isr
+Most #idleg committees use their first meeting for organizational sessions and new member introductions. The House State Affairs committee has three draft bills prepared for Tuesday relating to emergency declarations and separation of powers. #idpol <https://t.co/N8MOqS9isr>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/Erg2mQAU0AIxgJ6.jpg)

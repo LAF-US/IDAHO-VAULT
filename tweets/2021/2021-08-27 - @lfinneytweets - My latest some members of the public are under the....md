@@ -16,9 +16,9 @@ related:
   - IdahoCOVID19
 ---
 
-My latest: some members of the public are under the impression they should get a COVID-19 booster shot now, which is not the case. #IdahoCOVID19 https://t.co/yynjezTIHb
+My latest: some members of the public are under the impression they should get a COVID-19 booster shot now, which is not the case. #IdahoCOVID19 <https://t.co/yynjezTIHb>
 
 ## Links
-- https://x.com/IdahoReports/status/1431052669364314114
+- <https://x.com/IdahoReports/status/1431052669364314114>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1431276468219236362)

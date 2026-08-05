@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-@Dub__A https://t.co/IaRsBfO5Ef
+@Dub__A <https://t.co/IaRsBfO5Ef>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GIgpCrjaMAABisr.jpg)

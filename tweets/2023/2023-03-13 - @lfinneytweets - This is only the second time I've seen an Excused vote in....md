@@ -16,9 +16,9 @@ related:
   - idleg
 ---
 
-This is only the second time I've seen an Excused vote in the Idaho House. Speaker Moyle told me the same was true for him too! #idleg https://t.co/gIjG3Tn4ho
+This is only the second time I've seen an Excused vote in the Idaho House. Speaker Moyle told me the same was true for him too! #idleg <https://t.co/gIjG3Tn4ho>
 
 ## Links
-- https://x.com/IdahoReports/status/1635415651203403778
+- <https://x.com/IdahoReports/status/1635415651203403778>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1635417660673646592)

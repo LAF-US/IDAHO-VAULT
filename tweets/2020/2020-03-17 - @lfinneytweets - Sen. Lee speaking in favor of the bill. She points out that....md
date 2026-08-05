@@ -15,10 +15,10 @@ related:
 ---
 
 Sen. Lee speaking in favor of the bill. She points out that the Senate passed a version of the bill last year. 
-https://t.co/vuJMb0TIeS
+<https://t.co/vuJMb0TIeS>
 
 ## Links
-- https://legislature.idaho.gov/sessioninfo/2019/legislation/S1099/
+- <https://legislature.idaho.gov/sessioninfo/2019/legislation/S1099/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

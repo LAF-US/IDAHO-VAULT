@@ -16,9 +16,9 @@ related:
 ---
 
 .@AP analysis shows thousands of people are getting sick from COVID-19 on the job, with recent surges of infection in meatpacking, poultry-processing and construction sectors. Even the White House has proven vulnerable with positive tests in staff members.
-https://t.co/OFr4CfTlkY
+<https://t.co/OFr4CfTlkY>
 
 ## Links
-- https://apnews.com/ca81c7b25c28945361d716ed5835b658
+- <https://apnews.com/ca81c7b25c28945361d716ed5835b658>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1260285177642680320)

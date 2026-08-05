@@ -13,7 +13,7 @@ related:
   - lfinneytweets
 ---
 
-Keith Haring was a painter and pop artist whose rose to prominence in 1980s New York. His work embraced art and consumer products, taking inspiration from Andy Warhol, and paved inroads for street art into the mainstream. https://t.co/q3vhbVo9gz
+Keith Haring was a painter and pop artist whose rose to prominence in 1980s New York. His work embraced art and consumer products, taking inspiration from Andy Warhol, and paved inroads for street art into the mainstream. <https://t.co/q3vhbVo9gz>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/Dfja7-wX0AEBLxA.jpg)

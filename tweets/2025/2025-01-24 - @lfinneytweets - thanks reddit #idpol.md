@@ -16,7 +16,7 @@ related:
   - idpol
 ---
 
-thanks reddit #idpol https://t.co/UBS7sbuU2A
+thanks reddit #idpol <https://t.co/UBS7sbuU2A>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GiFRX-XbwAAp3aG.jpg)

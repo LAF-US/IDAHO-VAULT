@@ -17,10 +17,10 @@ related:
 ---
 
 From January in @idahoednews: 
-https://t.co/rgxTT2v5iu
+<https://t.co/rgxTT2v5iu>
 
 ## Links
-- https://www.idahoednews.org/voices/we-must-make-real-investments-in-idaho-schools/
+- <https://www.idahoednews.org/voices/we-must-make-real-investments-in-idaho-schools/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

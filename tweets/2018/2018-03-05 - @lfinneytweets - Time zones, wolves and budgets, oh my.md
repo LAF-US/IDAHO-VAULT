@@ -13,9 +13,9 @@ related:
   - lfinneytweets
 ---
 
-Time zones, wolves and budgets, oh my https://t.co/Lz4culSQD4
+Time zones, wolves and budgets, oh my <https://t.co/Lz4culSQD4>
 
 ## Links
-- https://x.com/SpokesmanReview/status/970477238251487232
+- <https://x.com/SpokesmanReview/status/970477238251487232>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/970692168720379905)

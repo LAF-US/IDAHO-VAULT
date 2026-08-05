@@ -17,9 +17,9 @@ related:
 
 RT @uiargonaut: Read about the University of Idaho Library's digital collection about the 1918 Flu Pandemic.
 
-https://t.co/Ryc29kqcBC
+<https://t.co/Ryc29kqcBC>
 
 ## Links
-- https://www.uiargonaut.com/2020/04/27/ui-library-digital-collection-compares-1918-pandemic-to-2020-pandemic/
+- <https://www.uiargonaut.com/2020/04/27/ui-library-digital-collection-compares-1918-pandemic-to-2020-pandemic/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1254858926895427585)

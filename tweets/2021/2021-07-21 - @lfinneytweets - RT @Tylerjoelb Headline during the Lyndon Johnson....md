@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-RT @Tylerjoelb: Headline during the Lyndon Johnson administration: https://t.co/fJWFc73oaQ
+RT @Tylerjoelb: Headline during the Lyndon Johnson administration: <https://t.co/fJWFc73oaQ>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/E60tJwvXEAcYiKa.png)

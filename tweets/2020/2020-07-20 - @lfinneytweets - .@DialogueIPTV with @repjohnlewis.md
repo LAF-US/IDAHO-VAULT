@@ -16,9 +16,9 @@ related:
   - lfinneytweets
 ---
 
-.@DialogueIPTV with @repjohnlewis https://t.co/6UdCP5BnR8
+.@DialogueIPTV with @repjohnlewis <https://t.co/6UdCP5BnR8>
 
 ## Links
-- https://x.com/IdahoPTV/status/1285245596794667009
+- <https://x.com/IdahoPTV/status/1285245596794667009>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1285288889494589440)

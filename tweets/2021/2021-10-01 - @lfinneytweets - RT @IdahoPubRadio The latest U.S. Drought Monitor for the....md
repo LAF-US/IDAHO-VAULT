@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoPubRadio: The latest U.S. Drought Monitor for the West. https://t.co/uaKW1CMNtd
+RT @IdahoPubRadio: The latest U.S. Drought Monitor for the West. <https://t.co/uaKW1CMNtd>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FAj-um3UYAIhAR9.jpg)

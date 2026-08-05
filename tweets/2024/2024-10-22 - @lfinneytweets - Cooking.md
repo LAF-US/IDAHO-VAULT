@@ -13,7 +13,7 @@ related:
   - lfinneytweets
 ---
 
-Cooking https://t.co/6jVPibpYsi
+Cooking <https://t.co/6jVPibpYsi>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GaiCujoboAAbzUr.jpg)

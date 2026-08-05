@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-RT @politico: Russell M. Nelson, oldest-ever president of The Church of Jesus Christ of Latter-day Saints, dies https://t.co/GyGow6smQW
+RT @politico: Russell M. Nelson, oldest-ever president of The Church of Jesus Christ of Latter-day Saints, dies <https://t.co/GyGow6smQW>
 
 ## Links
-- http://ow.ly/eVbb106mWOC
+- <http://ow.ly/eVbb106mWOC>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1972452763012665684)

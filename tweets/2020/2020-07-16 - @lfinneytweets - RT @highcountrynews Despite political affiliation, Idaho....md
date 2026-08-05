@@ -17,9 +17,9 @@ related:
 
 RT @highcountrynews: Despite political affiliation, Idaho hunters and anglers agree public lands need protection.
 
-https://t.co/CszV8rQ23C
+<https://t.co/CszV8rQ23C>
 
 ## Links
-- https://hcne.ws/3eHDRBL
+- <https://hcne.ws/3eHDRBL>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1283867437071360001)

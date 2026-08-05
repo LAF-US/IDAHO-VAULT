@@ -13,7 +13,7 @@ related:
   - lfinneytweets
 ---
 
-Shoutout to the Bonner County elections office for helping me get my absentee ballot on time after I filled out the form wrong https://t.co/DlehYqXK6d
+Shoutout to the Bonner County elections office for helping me get my absentee ballot on time after I filled out the form wrong <https://t.co/DlehYqXK6d>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/ESN6tWJUwAAYo-u.jpg)

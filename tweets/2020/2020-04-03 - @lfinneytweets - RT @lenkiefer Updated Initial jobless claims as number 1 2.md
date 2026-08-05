@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-RT @lenkiefer: Updated: Initial jobless claims as number 1/2 https://t.co/VoQ3hye1LT
+RT @lenkiefer: Updated: Initial jobless claims as number 1/2 <https://t.co/VoQ3hye1LT>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/EUmf-d-WsAATSpi.jpg)

@@ -22,9 +22,9 @@ related:
 
 Sen. Roger Marshall (R-Kan.) said to @axios that federal legislation simply to codify gay marriage "sounds like it’s a bill in search of a problem." 
 
-Idaho's state constitution and the Idaho GOP platform explicitly define marriage as between one man and one woman. #idleg #idpol https://t.co/DizSyDc86m
+Idaho's state constitution and the Idaho GOP platform explicitly define marriage as between one man and one woman. #idleg #idpol <https://t.co/DizSyDc86m>
 
 ## Links
-- https://x.com/AndrewSolender/status/1547378614953459718
+- <https://x.com/AndrewSolender/status/1547378614953459718>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1547453143344025603)

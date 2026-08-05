@@ -22,9 +22,9 @@ related:
 ---
 
 Idaho’s public and private colleges and universities will split close to $56 million from the federal coronavirus package, and at least half of that money has to go directly to students, @KevinRichert writes for @idahoednews. #idedu #IdahoCOVID19 
-https://t.co/I38mdkuafU
+<https://t.co/I38mdkuafU>
 
 ## Links
-- https://www.idahoednews.org/news/colleges-universities-prepare-to-send-out-coronavirus-student-aid/
+- <https://www.idahoednews.org/news/colleges-universities-prepare-to-send-out-coronavirus-student-aid/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1250844239820230656)

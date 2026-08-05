@@ -13,7 +13,7 @@ related:
   - lfinneytweets
 ---
 
-@KelcieMMorris https://t.co/9HzPbBogGW
+@KelcieMMorris <https://t.co/9HzPbBogGW>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FrYgdCJaIAE9K91.jpg)

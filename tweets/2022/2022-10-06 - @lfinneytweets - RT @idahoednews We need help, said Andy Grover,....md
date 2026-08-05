@@ -20,6 +20,6 @@ related:
   - idleg
 ---
 
-RT @idahoednews: "We need help," said Andy Grover, representing school administrators in front of the committee. #idedu #idleg https://t.co…
+RT @idahoednews: "We need help," said Andy Grover, representing school administrators in front of the committee. #idedu #idleg <https://t.co…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1578169066623488000)

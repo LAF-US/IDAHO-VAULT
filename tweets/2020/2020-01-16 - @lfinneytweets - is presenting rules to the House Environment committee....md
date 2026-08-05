@@ -20,7 +20,7 @@ related:
   - idpol
 ---
 
-@IdahoDEQ is presenting rules to the House Environment committee today. Well, they're supposed to be. The House is still at ease while the majority is in caucus. #idleg #idpol https://t.co/FBi9F7z1tR
+@IdahoDEQ is presenting rules to the House Environment committee today. Well, they're supposed to be. The House is still at ease while the majority is in caucus. #idleg #idpol <https://t.co/FBi9F7z1tR>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EObiVncU8AABvwO.jpg)

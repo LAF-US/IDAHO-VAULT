@@ -14,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-Rep. Ron Mendive (R-CDA) https://t.co/BUrkX8KMCA
+Rep. Ron Mendive (R-CDA) <https://t.co/BUrkX8KMCA>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EbQE092XYAMkSVw.jpg)

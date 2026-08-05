@@ -16,9 +16,9 @@ related:
   - COVID19
 ---
 
-"The hospitals [across the U.S.] are facing the same challenges: a steep decline in revenue from a drop in elective medical procedures, compounded by a sharp increase in expenses as they protect their personnel and prepare for a surge of coronavirus patients." #COVID19 https://t.co/OTvag7vM4D
+"The hospitals [across the U.S.] are facing the same challenges: a steep decline in revenue from a drop in elective medical procedures, compounded by a sharp increase in expenses as they protect their personnel and prepare for a surge of coronavirus patients." #COVID19 <https://t.co/OTvag7vM4D>
 
 ## Links
-- https://x.com/IdahoStatesman/status/1245543291900301314
+- <https://x.com/IdahoStatesman/status/1245543291900301314>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1245554597688528896)

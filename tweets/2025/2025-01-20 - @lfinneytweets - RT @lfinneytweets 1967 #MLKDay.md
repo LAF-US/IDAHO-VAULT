@@ -19,10 +19,10 @@ related:
 ---
 
 RT @lfinneytweets: 1967 #MLKDay 
-https://t.co/jMyQT8qaQj https://t.co/mCvE8QaZAi
+<https://t.co/jMyQT8qaQj> <https://t.co/mCvE8QaZAi>
 
 ## Links
-- https://www.truthorfiction.com/mlk-birmingham-news-cartoon/
+- <https://www.truthorfiction.com/mlk-birmingham-news-cartoon/>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FJVuUjUUYAMJa1m.jpg)

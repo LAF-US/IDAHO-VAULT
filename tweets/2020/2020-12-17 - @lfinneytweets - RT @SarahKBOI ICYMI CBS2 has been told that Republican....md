@@ -17,6 +17,6 @@ related:
 
 RT @SarahKBOI: ICYMI: CBS2 has been told that Republican leadership will not consider mask requirements or virtual proceedings.
 
-https://t.…
+<https://t.…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1339381607875014657)

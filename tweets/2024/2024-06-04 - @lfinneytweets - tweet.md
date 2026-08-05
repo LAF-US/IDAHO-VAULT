@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-@ReversVinc82189 https://t.co/lyeqtu3tbD
+@ReversVinc82189 <https://t.co/lyeqtu3tbD>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/GPPl0gqacAUQrbF.jpg)

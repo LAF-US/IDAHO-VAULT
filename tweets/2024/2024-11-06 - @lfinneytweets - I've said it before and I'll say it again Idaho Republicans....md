@@ -19,9 +19,9 @@ related:
 ---
 
 I've said it before and I'll say it again: Idaho Republicans benefit electorally from high voter turnout. #idpol #idleg 
-https://t.co/2Qm02vuj3M
+<https://t.co/2Qm02vuj3M>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2020/11/06/analysis-jordan-results-reveal-idaho-gop-benefitted-from-record-turnout/
+- <https://blog.idahoreports.idahoptv.org/2020/11/06/analysis-jordan-results-reveal-idaho-gop-benefitted-from-record-turnout/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1854100324803363328)

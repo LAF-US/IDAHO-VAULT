@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-RT @robcurley: Spokane is ‘definitely slowing’ COVID-19 spread; North Idaho gets plan for reopening https://t.co/kJJNsawWDL https://t.co/3U…
+RT @robcurley: Spokane is ‘definitely slowing’ COVID-19 spread; North Idaho gets plan for reopening <https://t.co/kJJNsawWDL> <https://t.co/3U…>
 
 ## Links
-- https://buff.ly/2xWm2P7
+- <https://buff.ly/2xWm2P7>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1253450324909518848)

@@ -13,10 +13,10 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/jXyo3wO6Nl https://t.co/YZKFgHlMa0
+<https://t.co/jXyo3wO6Nl> <https://t.co/YZKFgHlMa0>
 
 ## Links
-- https://x.com/nycsouthpaw/status/1323753344968568833
+- <https://x.com/nycsouthpaw/status/1323753344968568833>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/El8RPtRUYAEf3Qv.jpg)

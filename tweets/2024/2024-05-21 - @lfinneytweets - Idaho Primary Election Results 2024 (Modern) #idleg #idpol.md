@@ -19,9 +19,9 @@ related:
 ---
 
 Idaho Primary Election Results 2024 (Modern) #idleg #idpol  
-https://t.co/YJL4VsYEXf
+<https://t.co/YJL4VsYEXf>
 
 ## Links
-- https://results.voteidaho.gov/
+- <https://results.voteidaho.gov/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1793005011720396830)

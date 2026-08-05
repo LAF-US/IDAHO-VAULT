@@ -19,10 +19,10 @@ related:
 ---
 
 @CmckayboiChuck @IdahoPTV @GovernorLittle I know as much as Davlin outlines in this thread, which is very little. The administration is pretty tight-lipped about their announcements. 
-https://t.co/t5UqjcObFa
+<https://t.co/t5UqjcObFa>
 
 ## Links
-- https://x.com/davlinnews/status/1320445829237198848
+- <https://x.com/davlinnews/status/1320445829237198848>
 
 *In reply to [@CmckayboiChuck](https://twitter.com/CmckayboiChuck)*
 

@@ -14,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-@lemommeringue1 https://t.co/M314QEcpos
+@lemommeringue1 <https://t.co/M314QEcpos>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/FpD94neakAA9rNg.jpg)

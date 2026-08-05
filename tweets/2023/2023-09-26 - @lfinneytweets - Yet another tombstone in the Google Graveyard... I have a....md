@@ -14,9 +14,9 @@ related:
 ---
 
 Yet another tombstone in the Google Graveyard... 
-I have a very long episode queue to get through before I start scrambling to find another platform (and continue to avoid YouTube Music like the plague). https://t.co/CpZJXeS3Y1
+I have a very long episode queue to get through before I start scrambling to find another platform (and continue to avoid YouTube Music like the plague). <https://t.co/CpZJXeS3Y1>
 
 ## Links
-- https://x.com/verge/status/1706671586898534810
+- <https://x.com/verge/status/1706671586898534810>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1706804396896801251)

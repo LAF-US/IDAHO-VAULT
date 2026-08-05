@@ -20,7 +20,7 @@ related:
   - idpol
 ---
 
-Tonight on @IdahoReports #idleg #idpol https://t.co/PsoqIzTkP0
+Tonight on @IdahoReports #idleg #idpol <https://t.co/PsoqIzTkP0>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FtJeDa6aYAAhXON.jpg)

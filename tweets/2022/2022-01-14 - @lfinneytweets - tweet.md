@@ -13,10 +13,10 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/OUHHQ7H3Ip https://t.co/f1MaA7Z0Pa
+<https://t.co/OUHHQ7H3Ip> <https://t.co/f1MaA7Z0Pa>
 
 ## Links
-- https://t.co/OUHHQ7H3Ip
+- <https://t.co/OUHHQ7H3Ip>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/FJFfZv7UcAE-2YG.jpg)

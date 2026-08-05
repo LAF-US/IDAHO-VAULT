@@ -19,9 +19,9 @@ related:
   - journalism
 ---
 
-RT @JSKstanford: When Facebook went down this week, traffic to news sites went up. via ⁦@NiemanLab⁩ #journalism  https://t.co/bSgSVNPDQr
+RT @JSKstanford: When Facebook went down this week, traffic to news sites went up. via ⁦@NiemanLab⁩ #journalism  <https://t.co/bSgSVNPDQr>
 
 ## Links
-- https://www.niemanlab.org/2021/10/when-facebook-went-down-this-week-traffic-to-news-sites-went-up/
+- <https://www.niemanlab.org/2021/10/when-facebook-went-down-this-week-traffic-to-news-sites-went-up/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1446316076950720513)

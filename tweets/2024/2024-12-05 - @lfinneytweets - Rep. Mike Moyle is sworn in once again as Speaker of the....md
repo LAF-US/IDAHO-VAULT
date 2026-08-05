@@ -16,7 +16,7 @@ related:
   - idleg
 ---
 
-Rep. Mike Moyle is sworn in once again as Speaker of the House. #idleg https://t.co/e8yc6XeLOk
+Rep. Mike Moyle is sworn in once again as Speaker of the House. #idleg <https://t.co/e8yc6XeLOk>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GeDFRZoa8AAroXy.jpg)

@@ -19,7 +19,7 @@ related:
   - idleg
 ---
 
-More like this if I'm being honest... #idpol #idleg https://t.co/k5TF9or4f6
+More like this if I'm being honest... #idpol #idleg <https://t.co/k5TF9or4f6>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/GO3D3Mra4AYfszg.jpg)

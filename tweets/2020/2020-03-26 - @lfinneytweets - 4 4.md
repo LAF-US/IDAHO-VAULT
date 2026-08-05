@@ -14,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-4/4 https://t.co/Nptlp4ISgi
+4/4 <https://t.co/Nptlp4ISgi>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/ET__w9FVAAAfR86.png)

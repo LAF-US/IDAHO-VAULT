@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoReports: https://t.co/kdRR7lItDy
+RT @IdahoReports: <https://t.co/kdRR7lItDy>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/E_gxhSnUcAQXaof.png)

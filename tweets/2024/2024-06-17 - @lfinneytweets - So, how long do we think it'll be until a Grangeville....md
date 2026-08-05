@@ -16,7 +16,7 @@ related:
   - idpol
 ---
 
-So, how long do we think it'll be until a Grangeville bypass on Highway 95? #idpol https://t.co/mVH03JzQxR
+So, how long do we think it'll be until a Grangeville bypass on Highway 95? #idpol <https://t.co/mVH03JzQxR>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GQSlkOsaQAAjtgy.jpg)

@@ -22,7 +22,7 @@ related:
   - orwx
 ---
 
-RT @NWSBoise: 🔥Smoky conditions this morning is mainly from the #LoyaltonFire near Reno. #idwx #orwx https://t.co/m20p2oTuR3
+RT @NWSBoise: 🔥Smoky conditions this morning is mainly from the #LoyaltonFire near Reno. #idwx #orwx <https://t.co/m20p2oTuR3>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/EfjS6orUwAAkorl.jpg)

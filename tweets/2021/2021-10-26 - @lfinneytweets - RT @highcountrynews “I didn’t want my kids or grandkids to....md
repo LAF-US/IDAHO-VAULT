@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-RT @highcountrynews: “I didn’t want my kids or grandkids to ever read such a one-sided description of an event.” https://t.co/jQqvGLqCeX
+RT @highcountrynews: “I didn’t want my kids or grandkids to ever read such a one-sided description of an event.” <https://t.co/jQqvGLqCeX>
 
 ## Links
-- https://www.hcn.org/issues/53.11/indigenous-affairs-people-places-decolonizing-idahos-road-signs
+- <https://www.hcn.org/issues/53.11/indigenous-affairs-people-places-decolonizing-idahos-road-signs>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1453082731164831744)

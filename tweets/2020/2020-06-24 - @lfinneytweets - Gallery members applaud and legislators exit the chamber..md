@@ -14,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-Gallery members applaud and legislators exit the chamber. https://t.co/TkhQ2VIT9n
+Gallery members applaud and legislators exit the chamber. <https://t.co/TkhQ2VIT9n>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EbQGLncXgAQ9eev.jpg)

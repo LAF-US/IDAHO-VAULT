@@ -13,7 +13,7 @@ related:
   - lfinneytweets
 ---
 
-University of Idaho appears to have already scrubbed offices like the Women's Center, Black/African American Cultural Center and LGBTQA Office from its website. They now redirect to a "Student Support Services" page with links to request laptops or holiday bus seats, or withdraw. https://t.co/ngcwZtKG1y
+University of Idaho appears to have already scrubbed offices like the Women's Center, Black/African American Cultural Center and LGBTQA Office from its website. They now redirect to a "Student Support Services" page with links to request laptops or holiday bus seats, or withdraw. <https://t.co/ngcwZtKG1y>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GfMY_Z-asAIJiuJ.jpg)

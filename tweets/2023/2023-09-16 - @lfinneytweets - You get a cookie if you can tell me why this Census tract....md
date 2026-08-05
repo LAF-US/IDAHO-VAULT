@@ -16,9 +16,9 @@ related:
   - idpol
 ---
 
-You get a cookie if you can tell me why this Census tract shape is so weird. #idpol https://t.co/RDndObEERg
+You get a cookie if you can tell me why this Census tract shape is so weird. #idpol <https://t.co/RDndObEERg>
 
 ## Links
-- https://x.com/everytract/status/1172514295957065729
+- <https://x.com/everytract/status/1172514295957065729>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1702852857832370367)

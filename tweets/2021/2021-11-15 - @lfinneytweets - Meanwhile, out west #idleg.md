@@ -16,7 +16,7 @@ related:
   - idleg
 ---
 
-Meanwhile, out west #idleg https://t.co/zHS1veeS7F
+Meanwhile, out west #idleg <https://t.co/zHS1veeS7F>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FEQCKQOVIAIA8Rl.jpg)

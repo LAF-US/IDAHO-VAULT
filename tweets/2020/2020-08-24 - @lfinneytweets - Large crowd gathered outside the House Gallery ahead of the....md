@@ -18,7 +18,7 @@ related:
   - idpol
 ---
 
-Large crowd gathered outside the House Gallery ahead of the #idleg special session at 10. They started a "This is for us" chant that's been going for a few minutes now. #idpol https://t.co/40kZb77mEn
+Large crowd gathered outside the House Gallery ahead of the #idleg special session at 10. They started a "This is for us" chant that's been going for a few minutes now. #idpol <https://t.co/40kZb77mEn>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EgMkrykUYAEanIr.jpg)

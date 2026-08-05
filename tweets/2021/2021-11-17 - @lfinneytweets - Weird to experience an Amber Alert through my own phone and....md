@@ -16,9 +16,9 @@ related:
   - idleg
 ---
 
-Weird to experience an Amber Alert through my own phone and the #idleg House stream at the same time. https://t.co/mBzXFT0sQ5
+Weird to experience an Amber Alert through my own phone and the #idleg House stream at the same time. <https://t.co/mBzXFT0sQ5>
 
 ## Links
-- https://x.com/ISP_Alerts/status/1460756182474231810
+- <https://x.com/ISP_Alerts/status/1460756182474231810>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1460759947927453697)

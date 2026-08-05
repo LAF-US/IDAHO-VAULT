@@ -20,9 +20,9 @@ related:
   - COVID19
 ---
 
-RT @BetsyZRussell: Eye on Boise: Governor announces four-stage plan for reopening Idaho economy #idpol #COVID19 https://t.co/0aJyp8iX3F htt…
+RT @BetsyZRussell: Eye on Boise: Governor announces four-stage plan for reopening Idaho economy #idpol #COVID19 <https://t.co/0aJyp8iX3F> htt…
 
 ## Links
-- https://www.idahopress.com/eyeonboise/governor-announces-four-stage-plan-for-reopening-idaho-economy/article_d4ecc8d4-2361-5b93-bbc4-5db324646b3b.html
+- <https://www.idahopress.com/eyeonboise/governor-announces-four-stage-plan-for-reopening-idaho-economy/article_d4ecc8d4-2361-5b93-bbc4-5db324646b3b.html>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1253395672943874048)

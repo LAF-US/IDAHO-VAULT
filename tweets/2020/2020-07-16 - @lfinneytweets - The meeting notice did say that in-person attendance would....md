@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-@DonLDay @davlinnews The meeting notice did say that in-person attendance would be limited to board and staff members. https://t.co/fcd3Gjzy1n
+@DonLDay @davlinnews The meeting notice did say that in-person attendance would be limited to board and staff members. <https://t.co/fcd3Gjzy1n>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EdDw7ukU4AA0KeF.png)

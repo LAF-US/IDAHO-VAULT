@@ -16,9 +16,9 @@ related:
   - lfinneytweets
 ---
 
-Live now: @uidaho KINO Film Festival 2020 https://t.co/klxGKLwUWg via @YouTube
+Live now: @uidaho KINO Film Festival 2020 <https://t.co/klxGKLwUWg> via @YouTube
 
 ## Links
-- https://youtu.be/mNDGM3yo8X0
+- <https://youtu.be/mNDGM3yo8X0>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1258925425440387072)

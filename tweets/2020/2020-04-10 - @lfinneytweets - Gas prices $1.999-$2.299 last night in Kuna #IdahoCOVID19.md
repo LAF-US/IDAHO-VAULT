@@ -16,7 +16,7 @@ related:
   - IdahoCOVID19
 ---
 
-Gas prices $1.999-$2.299 last night in Kuna #IdahoCOVID19 https://t.co/rZWiwisAei
+Gas prices $1.999-$2.299 last night in Kuna #IdahoCOVID19 <https://t.co/rZWiwisAei>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EVQ4dNUVAAAt7ct.jpg)

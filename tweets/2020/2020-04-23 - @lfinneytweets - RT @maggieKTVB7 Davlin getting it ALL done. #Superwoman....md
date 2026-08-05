@@ -18,6 +18,6 @@ related:
   - Superwoman
 ---
 
-RT @maggieKTVB7: Davlin getting it ALL done. #Superwoman @davlinnews https://t.co/SKB7N62364
+RT @maggieKTVB7: Davlin getting it ALL done. #Superwoman @davlinnews <https://t.co/SKB7N62364>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1253435025992773640)

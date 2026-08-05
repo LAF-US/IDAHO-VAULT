@@ -22,9 +22,9 @@ related:
   - dataviz
 ---
 
-The @IDSecOfState team is doing such cool stuff! #idleg #idpol #dataviz https://t.co/zw2xmGPONO
+The @IDSecOfState team is doing such cool stuff! #idleg #idpol #dataviz <https://t.co/zw2xmGPONO>
 
 ## Links
-- https://x.com/GabeOsterhout/status/1765425718115369243
+- <https://x.com/GabeOsterhout/status/1765425718115369243>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1765433627998060776)

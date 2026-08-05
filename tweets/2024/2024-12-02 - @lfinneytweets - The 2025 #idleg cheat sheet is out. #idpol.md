@@ -19,10 +19,10 @@ related:
 ---
 
 The 2025 #idleg cheat sheet is out. #idpol 
-https://t.co/99MRd449q0 https://t.co/AYGM3wXhD2
+<https://t.co/99MRd449q0> <https://t.co/AYGM3wXhD2>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/wp-content/uploads/2024/12/District-Map-2025.pdf
+- <https://blog.idahoreports.idahoptv.org/wp-content/uploads/2024/12/District-Map-2025.pdf>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/Gd0oI9yaEAM8jsa.jpg)

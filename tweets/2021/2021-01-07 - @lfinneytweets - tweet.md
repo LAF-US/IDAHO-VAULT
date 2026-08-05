@@ -13,7 +13,7 @@ related:
   - lfinneytweets
 ---
 
-@bychadsokol https://t.co/FszQ7VHVOG
+@bychadsokol <https://t.co/FszQ7VHVOG>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/ErG-90FVkAQ8Tan.jpg)

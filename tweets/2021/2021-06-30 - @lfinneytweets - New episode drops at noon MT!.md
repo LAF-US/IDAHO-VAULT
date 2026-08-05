@@ -13,9 +13,9 @@ related:
   - lfinneytweets
 ---
 
-New episode drops at noon MT! https://t.co/O067Fb4gFN
+New episode drops at noon MT! <https://t.co/O067Fb4gFN>
 
 ## Links
-- https://x.com/IdahoReports/status/1410041812736122880
+- <https://x.com/IdahoReports/status/1410041812736122880>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1410269779538022402)

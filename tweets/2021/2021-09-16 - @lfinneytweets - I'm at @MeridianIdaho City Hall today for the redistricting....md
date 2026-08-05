@@ -20,7 +20,7 @@ related:
   - idpol
 ---
 
-I'm at @MeridianIdaho City Hall today for the redistricting commission meeting. #idleg #idpol https://t.co/vRcEEnSbPq
+I'm at @MeridianIdaho City Hall today for the redistricting commission meeting. #idleg #idpol <https://t.co/vRcEEnSbPq>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/E_basOgVUBIqiHE.jpg)

@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-Putting this on a t-shirt @mlcarmel https://t.co/ce4unve4hL
+Putting this on a t-shirt @mlcarmel <https://t.co/ce4unve4hL>
 
 ## Links
-- https://x.com/mlcarmel/status/1646992659775623169
+- <https://x.com/mlcarmel/status/1646992659775623169>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1646998267119685633)

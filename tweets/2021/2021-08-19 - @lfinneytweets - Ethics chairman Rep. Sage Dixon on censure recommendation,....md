@@ -21,9 +21,9 @@ related:
 ---
 
 Ethics chairman Rep. Sage Dixon on censure recommendation, next steps, and possible edits to House Rule 45. @sndpnt_reader #idleg #idpol 
-https://t.co/kK4F6aTL2i
+<https://t.co/kK4F6aTL2i>
 
 ## Links
-- https://sandpointreader.com/ethics-chair-dixon-provides-more-details-on-recommendation-to-censure-rep-giddings/
+- <https://sandpointreader.com/ethics-chair-dixon-provides-more-details-on-recommendation-to-censure-rep-giddings/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1428414218986917891)

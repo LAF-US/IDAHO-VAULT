@@ -21,9 +21,9 @@ related:
 ---
 
 RT @IdahoReports: Sign up for our newsletter to get the latest from Idaho Reports. #idleg #idpol 
-https://t.co/Wad0SFeSyS
+<https://t.co/Wad0SFeSyS>
 
 ## Links
-- https://www.idahoptv.org/shows/idahoreports/newsletter/
+- <https://www.idahoptv.org/shows/idahoreports/newsletter/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1490721344589156352)

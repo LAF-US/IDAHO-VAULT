@@ -23,7 +23,7 @@ related:
   - IdahoCOVID19
 ---
 
-INBOX: @IDHouseCaucus responds to @GovernorLittle. #idpol #idleg #IdahoCOVID19 https://t.co/CCyMBLqwpS
+INBOX: @IDHouseCaucus responds to @GovernorLittle. #idpol #idleg #IdahoCOVID19 <https://t.co/CCyMBLqwpS>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EsXHHalU4AA2Gb_.png)

@@ -16,6 +16,6 @@ related:
   - lfinneytweets
 ---
 
-RT @AmadorforIdaho: @chuckupd @electpaulette https://t.co/uFcTAiw4VV
+RT @AmadorforIdaho: @chuckupd @electpaulette <https://t.co/uFcTAiw4VV>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1255668216476532738)

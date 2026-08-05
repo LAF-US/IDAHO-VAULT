@@ -16,6 +16,6 @@ related:
 ---
 
 RT @IdahoReports: LIVE NOW: "Open to Local Control" with @davlinnews, @RadioDawson & @clarkcorbin #IdahoCOVID19 #idleg #idpol 
-https://t.co…
+<https://t.co…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1281771716218286081)

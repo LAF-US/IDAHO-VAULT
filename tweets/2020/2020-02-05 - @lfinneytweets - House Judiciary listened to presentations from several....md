@@ -20,7 +20,7 @@ related:
 
 House Judiciary listened to presentations from several district judges today. 
 
-To save time, the committee gave unanimous consent at the beginning of the meeting to print all of the RS bills on today’s agenda. #idleg #idpol https://t.co/rusSFrdfJk
+To save time, the committee gave unanimous consent at the beginning of the meeting to print all of the RS bills on today’s agenda. #idleg #idpol <https://t.co/rusSFrdfJk>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EQCuB8WUwAEqOVi.jpg)

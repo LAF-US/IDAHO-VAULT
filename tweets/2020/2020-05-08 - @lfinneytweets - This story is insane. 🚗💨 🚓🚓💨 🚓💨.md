@@ -14,9 +14,9 @@ related:
 ---
 
 This story is insane. 
-🚗💨 🚓🚓💨 🚓💨 https://t.co/ItRpVmCvwK
+🚗💨 🚓🚓💨 🚓💨 <https://t.co/ItRpVmCvwK>
 
 ## Links
-- https://x.com/CdAPressNews/status/1258814918624608256
+- <https://x.com/CdAPressNews/status/1258814918624608256>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1258847686565875712)

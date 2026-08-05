@@ -16,9 +16,9 @@ related:
 ---
 
 Gay child marriage! 
-Time for @AngryNIdaho to update the threat list https://t.co/dmSDBPnXNg
+Time for @AngryNIdaho to update the threat list <https://t.co/dmSDBPnXNg>
 
 ## Links
-- https://x.com/NateBrownNews/status/1222571806558572544
+- <https://x.com/NateBrownNews/status/1222571806558572544>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1222572592034242560)

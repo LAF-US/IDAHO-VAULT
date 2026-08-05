@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-RT @CdAPressNews: Join us on live on Facebook next week to get to know your candidates. https://t.co/XmtIk5wLvG
+RT @CdAPressNews: Join us on live on Facebook next week to get to know your candidates. <https://t.co/XmtIk5wLvG>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EjXSErZVgAAa3rd.png)

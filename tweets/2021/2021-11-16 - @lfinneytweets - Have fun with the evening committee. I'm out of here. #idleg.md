@@ -16,7 +16,7 @@ related:
   - idleg
 ---
 
-Have fun with the evening committee. I'm out of here. #idleg https://t.co/raUP6Xkaym
+Have fun with the evening committee. I'm out of here. #idleg <https://t.co/raUP6Xkaym>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FERrmvkVIAIFx0X.jpg)

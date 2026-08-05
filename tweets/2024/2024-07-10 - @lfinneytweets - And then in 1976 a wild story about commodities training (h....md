@@ -16,10 +16,10 @@ related:
   - lfinneytweets
 ---
 
-And then in 1976: a wild story about commodities training (h/t @planetmoney)  https://t.co/qZd0SGmuu5
+And then in 1976: a wild story about commodities training (h/t @planetmoney)  <https://t.co/qZd0SGmuu5>
 
 ## Links
-- https://www.npr.org/transcripts/1197956482
+- <https://www.npr.org/transcripts/1197956482>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

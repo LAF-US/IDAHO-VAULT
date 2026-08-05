@@ -20,7 +20,7 @@ related:
   - idpol
 ---
 
-Here is the new Senate resolution introduced this morning intended to end the #IdahoCOVID19 health order. #idleg #idpol https://t.co/1Zu6aaixvu
+Here is the new Senate resolution introduced this morning intended to end the #IdahoCOVID19 health order. #idleg #idpol <https://t.co/1Zu6aaixvu>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/Es6_DDuU4AAneHD.png)

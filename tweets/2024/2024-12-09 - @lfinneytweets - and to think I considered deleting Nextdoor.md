@@ -13,7 +13,7 @@ related:
   - lfinneytweets
 ---
 
-and to think I considered deleting Nextdoor https://t.co/jeZZb6A44v
+and to think I considered deleting Nextdoor <https://t.co/jeZZb6A44v>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GeXsDo0a8AA4tV3.jpg)

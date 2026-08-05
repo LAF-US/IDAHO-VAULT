@@ -18,9 +18,9 @@ related:
   - idpol
 ---
 
-\#idedu #idpol https://t.co/WclRNeRspU
+\#idedu #idpol <https://t.co/WclRNeRspU>
 
 ## Links
-- https://x.com/apalermotweets/status/1519372279313944582
+- <https://x.com/apalermotweets/status/1519372279313944582>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1519379265547956224)

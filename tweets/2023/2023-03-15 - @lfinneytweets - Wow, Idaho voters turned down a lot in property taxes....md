@@ -20,7 +20,7 @@ related:
   - idleg
 ---
 
-Wow, Idaho voters turned down a *lot* in property taxes yesterday. #idedu #idpol #idleg https://t.co/Azr1B0hbdL
+Wow, Idaho voters turned down a *lot* in property taxes yesterday. #idedu #idpol #idleg <https://t.co/Azr1B0hbdL>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FrR9AnwaAAE8wUD.jpg)

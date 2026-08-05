@@ -19,7 +19,7 @@ related:
   - IdahoCOVID19
 ---
 
-RT @IdahoReports: August 20, 2021, Weekly #IdahoCOVID19 Update | @IdahoPTV https://t.co/MkrLBNrCE3
+RT @IdahoReports: August 20, 2021, Weekly #IdahoCOVID19 Update | @IdahoPTV <https://t.co/MkrLBNrCE3>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/amplify_video_thumb/1428863574332477445/img/JxiI9IX-wVNVuVL-.jpg)

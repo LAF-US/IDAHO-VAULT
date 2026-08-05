@@ -14,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-same comparison but in video https://t.co/dFpvGw9aCw
+same comparison but in video <https://t.co/dFpvGw9aCw>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/ext_tw_video_thumb/1866573448325238785/pu/img/jR-sjCrqDHNJVTti.jpg)

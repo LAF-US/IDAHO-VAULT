@@ -13,7 +13,7 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/QfTrl47hSp
+<https://t.co/QfTrl47hSp>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GRm_TlqaUAE3n66.jpg)

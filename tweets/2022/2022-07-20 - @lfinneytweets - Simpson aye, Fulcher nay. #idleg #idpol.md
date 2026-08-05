@@ -18,9 +18,9 @@ related:
   - idpol
 ---
 
-Simpson aye, Fulcher nay. #idleg #idpol https://t.co/w3m2MJ7sfX
+Simpson aye, Fulcher nay. #idleg #idpol <https://t.co/w3m2MJ7sfX>
 
 ## Links
-- https://x.com/CraigCaplan/status/1549515986675679238
+- <https://x.com/CraigCaplan/status/1549515986675679238>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1549577184976572417)

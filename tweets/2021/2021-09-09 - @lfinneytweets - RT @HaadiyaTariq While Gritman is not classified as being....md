@@ -15,6 +15,6 @@ related:
   - lfinneytweets
 ---
 
-RT @HaadiyaTariq: While Gritman is not classified as being in crisis care, they are still seeing issues in staffing and beds. https://t.co/…
+RT @HaadiyaTariq: While Gritman is not classified as being in crisis care, they are still seeing issues in staffing and beds. <https://t.co/…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1436090661946617858)

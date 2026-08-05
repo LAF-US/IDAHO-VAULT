@@ -20,7 +20,7 @@ related:
   - idpol
 ---
 
-RT @IdahoReports: Catch up on this week's online coverage from Idaho Reports. #idleg #idpol https://t.co/CAZHAsSeR8
+RT @IdahoReports: Catch up on this week's online coverage from Idaho Reports. #idleg #idpol <https://t.co/CAZHAsSeR8>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/ext_tw_video_thumb/1481759965501026307/pu/img/Tqy4KxsaKP28sirR.jpg)

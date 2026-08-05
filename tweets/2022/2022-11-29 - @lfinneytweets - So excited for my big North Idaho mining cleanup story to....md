@@ -18,7 +18,7 @@ related:
   - idleg
 ---
 
-So excited for my big North Idaho mining cleanup story to air this week on @IdahoReports! #idleg https://t.co/AwbAQIIMpK
+So excited for my big North Idaho mining cleanup story to air this week on @IdahoReports! #idleg <https://t.co/AwbAQIIMpK>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FiwXM7YUcAApqD7.jpg)

@@ -19,9 +19,9 @@ related:
 ---
 
 Idaho lawmakers were notified this morning that a state agency has overspent its budget by $4.7 million this year. #idleg #idpol  
-https://t.co/HCI3EH2Tdj
+<https://t.co/HCI3EH2Tdj>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2024/04/03/vocational-rehab-budget-hole-comes-to-light/
+- <https://blog.idahoreports.idahoptv.org/2024/04/03/vocational-rehab-budget-hole-comes-to-light/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1775595386922783207)

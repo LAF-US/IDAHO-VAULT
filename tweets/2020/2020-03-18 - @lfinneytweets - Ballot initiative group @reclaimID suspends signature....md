@@ -20,7 +20,7 @@ related:
   - idpol
 ---
 
-Ballot initiative group @reclaimID suspends signature gathering campaign due to #IdahoCovid19. Last week they'd advised volunteers to adopt a "take the pen" model and regularly sanitize their clipboards. #idpol https://t.co/I6fuI43ODT
+Ballot initiative group @reclaimID suspends signature gathering campaign due to #IdahoCovid19. Last week they'd advised volunteers to adopt a "take the pen" model and regularly sanitize their clipboards. #idpol <https://t.co/I6fuI43ODT>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/ETaGik_XkAUVpPE.jpg)

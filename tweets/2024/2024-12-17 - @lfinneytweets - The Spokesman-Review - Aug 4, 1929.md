@@ -13,7 +13,7 @@ related:
   - lfinneytweets
 ---
 
-The Spokesman-Review - Aug 4, 1929 https://t.co/9VfSdpVQjP
+The Spokesman-Review - Aug 4, 1929 <https://t.co/9VfSdpVQjP>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GfBajfOawAA1hyO.jpg)

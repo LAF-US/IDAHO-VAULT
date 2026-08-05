@@ -19,9 +19,9 @@ related:
 ---
 
 (to the theme of JAWS) 
-jfac... jfac... jfac jfaC jfAC jFAC..... JFAC!!!!!! #idleg #idpol https://t.co/rl6277d0hu
+jfac... jfac... jfac jfaC jfAC jFAC..... JFAC!!!!!! #idleg #idpol <https://t.co/rl6277d0hu>
 
 ## Links
-- https://t.co/rl6277d0hu
+- <https://t.co/rl6277d0hu>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1640905347446771713)

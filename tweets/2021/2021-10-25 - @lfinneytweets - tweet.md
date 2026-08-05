@@ -13,10 +13,10 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/WZWNkspGFB https://t.co/TOsCF8i2pK
+<https://t.co/WZWNkspGFB> <https://t.co/TOsCF8i2pK>
 
 ## Links
-- https://x.com/BetsyZRussell/status/1452746869503709185
+- <https://x.com/BetsyZRussell/status/1452746869503709185>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/FCkzj_KVkAERm7M.jpg)

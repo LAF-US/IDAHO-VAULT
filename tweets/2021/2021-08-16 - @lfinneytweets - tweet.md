@@ -13,10 +13,10 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/lLMFIpELx3 https://t.co/9baIvw1nQP
+<https://t.co/lLMFIpELx3> <https://t.co/9baIvw1nQP>
 
 ## Links
-- https://www.snopes.com/fact-check/cnn-praise-taliban-masks/
-- https://x.com/EdForIdaho/status/1427309027831078912
+- <https://www.snopes.com/fact-check/cnn-praise-taliban-masks/>
+- <https://x.com/EdForIdaho/status/1427309027831078912>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1427329349930213376)

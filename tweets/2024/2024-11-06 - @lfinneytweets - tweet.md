@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-@HurstforIdaho https://t.co/xxllcbJEcW
+@HurstforIdaho <https://t.co/xxllcbJEcW>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/GbsTIE0boAEIuGz.jpg)

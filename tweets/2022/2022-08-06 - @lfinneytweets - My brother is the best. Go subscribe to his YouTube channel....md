@@ -14,10 +14,10 @@ related:
 ---
 
 My brother is the best. Go subscribe to his YouTube channel for animations and shenanigans 😁 
-https://t.co/56yEL0o20S https://t.co/DwIH51gpuR
+<https://t.co/56yEL0o20S> <https://t.co/DwIH51gpuR>
 
 ## Links
-- https://youtube.com/c/PFINNEY?sub_confirmation=1
+- <https://youtube.com/c/PFINNEY?sub_confirmation=1>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FZgixTJUIAEICfF.jpg)

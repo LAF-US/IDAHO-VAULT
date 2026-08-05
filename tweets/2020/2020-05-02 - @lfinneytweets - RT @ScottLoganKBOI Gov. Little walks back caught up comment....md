@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-RT @ScottLoganKBOI: Gov. Little walks back "caught up" comment about state jobless claims. https://t.co/uZvkFeNdSL
+RT @ScottLoganKBOI: Gov. Little walks back "caught up" comment about state jobless claims. <https://t.co/uZvkFeNdSL>
 
 ## Links
-- https://idahonews.com/news/coronavirus/idaho-governor-walks-back-caught-up-comment-on-jobless-claims
+- <https://idahonews.com/news/coronavirus/idaho-governor-walks-back-caught-up-comment-on-jobless-claims>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1256654613073113089)

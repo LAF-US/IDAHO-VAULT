@@ -18,10 +18,10 @@ related:
   - idpol
 ---
 
-\#idleg #idpol https://t.co/qwHlq9PTuL https://t.co/oVAOqYHFWI
+\#idleg #idpol <https://t.co/qwHlq9PTuL> <https://t.co/oVAOqYHFWI>
 
 ## Links
-- https://x.com/gregchaneyidaho/status/1225569788480626695
+- <https://x.com/gregchaneyidaho/status/1225569788480626695>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/EQItJSkUwAAqAhY.jpg)

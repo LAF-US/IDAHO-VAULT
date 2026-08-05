@@ -21,9 +21,9 @@ related:
   - IDpol
 ---
 
-RT @CynthiaSewell: .@MikeCrapo and @SenatorRisch connection to @ScottPruittOK Capitol Hill lobbyist pad #IDpol https://t.co/DzRF9Rs09Q
+RT @CynthiaSewell: .@MikeCrapo and @SenatorRisch connection to @ScottPruittOK Capitol Hill lobbyist pad #IDpol <https://t.co/DzRF9Rs09Q>
 
 ## Links
-- http://www.idahostatesman.com/news/politics-government/state-politics/article207800619.html
+- <http://www.idahostatesman.com/news/politics-government/state-politics/article207800619.html>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/981228339082903555)

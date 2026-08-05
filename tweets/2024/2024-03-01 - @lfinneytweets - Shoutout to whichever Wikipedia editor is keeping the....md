@@ -14,9 +14,9 @@ related:
 ---
 
 Shoutout to whichever Wikipedia editor is keeping the University of Phoenix page updated with UI developments. 
-https://t.co/dtu79xboTR
+<https://t.co/dtu79xboTR>
 
 ## Links
-- https://en.wikipedia.org/wiki/University_of_Phoenix#Proposed_acquisition_by_University_of_Arkansas_System_and_Four_Three_Education
+- <https://en.wikipedia.org/wiki/University_of_Phoenix#Proposed_acquisition_by_University_of_Arkansas_System_and_Four_Three_Education>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1763588729187573927)

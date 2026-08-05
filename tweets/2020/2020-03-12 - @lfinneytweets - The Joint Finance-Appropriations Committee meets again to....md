@@ -18,7 +18,7 @@ related:
   - idpol
 ---
 
-The Joint Finance-Appropriations Committee meets again to write replacement budgets for those killed on the House floor this month. #idleg #idpol https://t.co/t7MUEUPhHH
+The Joint Finance-Appropriations Committee meets again to write replacement budgets for those killed on the House floor this month. #idleg #idpol <https://t.co/t7MUEUPhHH>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/ES8BbU_XgAA90Xb.jpg)

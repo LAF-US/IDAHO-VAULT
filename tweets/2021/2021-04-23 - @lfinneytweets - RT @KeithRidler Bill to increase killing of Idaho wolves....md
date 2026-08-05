@@ -21,9 +21,9 @@ related:
   - idleg
 ---
 
-RT @KeithRidler: Bill to increase killing of Idaho wolves clears House panel (from @AP) #idpol #idleg  https://t.co/KxLnLzxJFi
+RT @KeithRidler: Bill to increase killing of Idaho wolves clears House panel (from @AP) #idpol #idleg  <https://t.co/KxLnLzxJFi>
 
 ## Links
-- https://apnews.com/article/4c74d048aead83a5804e813f4419179d
+- <https://apnews.com/article/4c74d048aead83a5804e813f4419179d>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1385410431523581953)

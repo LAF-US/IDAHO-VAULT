@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-Good to know the @AP has a time machine. https://t.co/KMouubeR8O
+Good to know the @AP has a time machine. <https://t.co/KMouubeR8O>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/El88R5TU4AALf0O.jpg)

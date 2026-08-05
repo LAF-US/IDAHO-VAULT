@@ -18,9 +18,9 @@ related:
   - idpol
 ---
 
-AG Wasden speaks up about proposed change to Idaho emergency price gouging laws. #idleg #idpol https://t.co/IiBPPZMpms
+AG Wasden speaks up about proposed change to Idaho emergency price gouging laws. #idleg #idpol <https://t.co/IiBPPZMpms>
 
 ## Links
-- https://x.com/lawrencewasden/status/1361708618052079617
+- <https://x.com/lawrencewasden/status/1361708618052079617>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1361713197573545986)

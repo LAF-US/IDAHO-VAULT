@@ -18,7 +18,7 @@ related:
   - Boise
 ---
 
-RT @USGS_Idaho: Live look at #Boise. https://t.co/IBE7KXeHmK
+RT @USGS_Idaho: Live look at #Boise. <https://t.co/IBE7KXeHmK>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GUexC1Sa8AEBgCG.jpg)

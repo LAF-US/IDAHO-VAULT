@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-RT @KTVB: Payette mayor resigns, does not provide reason and asks for privacy https://t.co/kI8O6BHCZ5
+RT @KTVB: Payette mayor resigns, does not provide reason and asks for privacy <https://t.co/kI8O6BHCZ5>
 
 ## Links
-- https://www.ktvb.com/article/news/local/local-payette-city-mayor-resigns-cite-reason/277-442a852f-c40e-40cf-a5f6-c95603b50263?utm_campaign=snd-autopilot
+- <https://www.ktvb.com/article/news/local/local-payette-city-mayor-resigns-cite-reason/277-442a852f-c40e-40cf-a5f6-c95603b50263?utm_campaign=snd-autopilot>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1749828558359577066)

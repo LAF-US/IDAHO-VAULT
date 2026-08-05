@@ -21,7 +21,7 @@ related:
   - idpol
 ---
 
-NEW: @IdahoSenateGOP statement denouncing @brandendurst @DurstforIdaho's account of events, "spurious attacks" and "aggressive actions" following Senate Education committee meeting Tuesday.  #idleg #idpol https://t.co/ASrkGdd17E
+NEW: @IdahoSenateGOP statement denouncing @brandendurst @DurstforIdaho's account of events, "spurious attacks" and "aggressive actions" following Senate Education committee meeting Tuesday.  #idleg #idpol <https://t.co/ASrkGdd17E>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FJqrVsHUcAIcs8f.jpg)

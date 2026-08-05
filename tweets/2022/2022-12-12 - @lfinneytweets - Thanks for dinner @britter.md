@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-Thanks for dinner @britter https://t.co/g7hLmvhldT
+Thanks for dinner @britter <https://t.co/g7hLmvhldT>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FjvNW4fagAAmHkJ.jpg)

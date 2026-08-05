@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-RT @nocontextpawnee: https://t.co/Ch77SLkYzE
+RT @nocontextpawnee: <https://t.co/Ch77SLkYzE>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/ETBCU1xUMAArV61.jpg)

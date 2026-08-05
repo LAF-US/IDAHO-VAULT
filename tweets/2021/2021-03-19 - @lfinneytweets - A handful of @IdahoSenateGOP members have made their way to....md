@@ -20,7 +20,7 @@ related:
   - idleg
 ---
 
-A handful of @IdahoSenateGOP members have made their way to the floor. #idpol #idleg https://t.co/DmKDArLZiI
+A handful of @IdahoSenateGOP members have made their way to the floor. #idpol #idleg <https://t.co/DmKDArLZiI>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/Ew2t6RxVkAAAFOJ.jpg)

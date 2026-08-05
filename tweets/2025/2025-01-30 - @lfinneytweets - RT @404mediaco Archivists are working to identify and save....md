@@ -17,9 +17,9 @@ related:
 
 RT @404mediaco: Archivists are working to identify and save thousands of datasets disappearing from Data . gov
 
-🔗https://t.co/BnILtQ5px0 ht…
+🔗<https://t.co/BnILtQ5px0> ht…
 
 ## Links
-- https://www.404media.co/archivists-work-to-identify-and-save-the-thousands-of-datasets-disappearing-from-data-gov/
+- <https://www.404media.co/archivists-work-to-identify-and-save-the-thousands-of-datasets-disappearing-from-data-gov/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1885091863780114754)

@@ -13,9 +13,9 @@ related:
   - lfinneytweets
 ---
 
-Sandpoint's Scott Rhodes is back in the news again. https://t.co/9TznRMtFcO
+Sandpoint's Scott Rhodes is back in the news again. <https://t.co/9TznRMtFcO>
 
 ## Links
-- https://x.com/BuzzFeedNews/status/1036456498400874497
+- <https://x.com/BuzzFeedNews/status/1036456498400874497>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1036495055823953920)

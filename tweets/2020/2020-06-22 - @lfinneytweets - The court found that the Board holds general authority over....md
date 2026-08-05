@@ -16,13 +16,13 @@ related:
 
 The court found that the Board holds general authority over the public school system and sets policies, while the Superintendent is charged with carrying out the Board's policies. 
 
-Full opinion: https://t.co/cWJZdzipnO
+Full opinion: <https://t.co/cWJZdzipnO>
 
-Summary: https://t.co/SmQA9K9h3O
+Summary: <https://t.co/SmQA9K9h3O>
 
 ## Links
-- https://isc.idaho.gov/opinions/47991.pdf
-- https://isc.idaho.gov/opinions/47991summ.pdf
+- <https://isc.idaho.gov/opinions/47991.pdf>
+- <https://isc.idaho.gov/opinions/47991summ.pdf>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

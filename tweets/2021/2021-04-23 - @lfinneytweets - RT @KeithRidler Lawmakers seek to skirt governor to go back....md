@@ -21,9 +21,9 @@ related:
   - idleg
 ---
 
-RT @KeithRidler: Lawmakers seek to skirt governor to go back into session (from @AP) #idpol #idleg  https://t.co/6TnTHz7xvG
+RT @KeithRidler: Lawmakers seek to skirt governor to go back into session (from @AP) #idpol #idleg  <https://t.co/6TnTHz7xvG>
 
 ## Links
-- https://apnews.com/article/43f7b77e8ef41c5c46b0abacb4059926
+- <https://apnews.com/article/43f7b77e8ef41c5c46b0abacb4059926>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1385658159574835209)

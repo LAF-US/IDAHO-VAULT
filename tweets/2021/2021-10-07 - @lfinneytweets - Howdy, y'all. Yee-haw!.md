@@ -13,10 +13,10 @@ related:
   - lfinneytweets
 ---
 
-Howdy, y'all. Yee-haw! https://t.co/ysJckz7Krg https://t.co/3eL96MQDtr
+Howdy, y'all. Yee-haw! <https://t.co/ysJckz7Krg> <https://t.co/3eL96MQDtr>
 
 ## Links
-- https://x.com/Phil_Lewis_/status/1445830952941404163
+- <https://x.com/Phil_Lewis_/status/1445830952941404163>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FBIZeHQUcBQV-Fv.jpg)

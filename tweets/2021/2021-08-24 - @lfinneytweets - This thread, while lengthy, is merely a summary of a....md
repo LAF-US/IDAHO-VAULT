@@ -16,10 +16,10 @@ related:
 
 This thread, while lengthy, is merely a summary of a 55-page court document. I would encourage the legal-minded folks to peruse the opinion more closely. 
 Justices Stegner and Brody bring up some important arguments along their way to the same conclusion. 
-https://t.co/2a49LkEZD6
+<https://t.co/2a49LkEZD6>
 
 ## Links
-- https://isc.idaho.gov/opinions/48784.pdf
+- <https://isc.idaho.gov/opinions/48784.pdf>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

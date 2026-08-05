@@ -16,6 +16,6 @@ related:
 ---
 
 RT @CBS2Boise: UPDATE: Mountain Home mayor clarifies coronavirus statements: 'I was speaking from a place of frustration'
-https://t.co/BVlP…
+<https://t.co/BVlP…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1246870445363572738)

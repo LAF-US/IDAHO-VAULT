@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-RT @boiseboone: Supreme Court rejects Republican attack on Biden victory https://t.co/CCcVPpIteF
+RT @boiseboone: Supreme Court rejects Republican attack on Biden victory <https://t.co/CCcVPpIteF>
 
 ## Links
-- https://apnews.com/article/fe784086a81497dcfe38f0eb5bffd36d
+- <https://apnews.com/article/fe784086a81497dcfe38f0eb5bffd36d>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1337545849493078017)

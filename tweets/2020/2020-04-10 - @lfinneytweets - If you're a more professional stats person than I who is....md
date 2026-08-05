@@ -14,10 +14,10 @@ related:
   - lfinneytweets
 ---
 
-If you're a more professional stats person than I who is interested, they have the data available here! https://t.co/LlYGbNfOgN
+If you're a more professional stats person than I who is interested, they have the data available here! <https://t.co/LlYGbNfOgN>
 
 ## Links
-- https://github.com/Boise-State-HCRI/Idaho_COVID-19
+- <https://github.com/Boise-State-HCRI/Idaho_COVID-19>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

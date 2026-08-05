@@ -22,6 +22,6 @@ related:
   - idpol
 ---
 
-RT @gregchaneyidaho: We’re back in session at #idleg Hopeful we can efficiently finish the people’s business and #sinedie #idpol https://t.…
+RT @gregchaneyidaho: We’re back in session at #idleg Hopeful we can efficiently finish the people’s business and #sinedie #idpol <https://t.…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1379498387817435136)

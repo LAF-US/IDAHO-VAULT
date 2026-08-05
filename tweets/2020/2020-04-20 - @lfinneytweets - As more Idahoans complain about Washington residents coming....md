@@ -20,9 +20,9 @@ related:
 ---
 
 As more Idahoans complain about Washington residents coming to golf and visit parks — because their golf courses and parks are closed due to the coronavirus — @KootenaiSheriff is stepping up efforts to let them know they shouldn’t be here. 
-(@CdAPressNews) #IdahoCOVID19 https://t.co/UyI10upVwS
+(@CdAPressNews) #IdahoCOVID19 <https://t.co/UyI10upVwS>
 
 ## Links
-- https://x.com/CdAPressNews/status/1252272403046006784
+- <https://x.com/CdAPressNews/status/1252272403046006784>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1252309039066673152)

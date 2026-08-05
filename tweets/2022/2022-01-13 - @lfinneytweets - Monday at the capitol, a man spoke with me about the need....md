@@ -21,10 +21,10 @@ related:
 ---
 
 Monday at the capitol, a man spoke with me about the need for media objectivity. He said the @IdahoStatesman had run an article on antisemitism and "dragged" the Lt Gov's name into the story, illustrating their bias. I found the story today. #idpol #idleg 
-https://t.co/IFPbUoulAP https://t.co/gPR0rZYpLq
+<https://t.co/IFPbUoulAP> <https://t.co/gPR0rZYpLq>
 
 ## Links
-- https://www.idahostatesman.com/news/local/community/boise/article257095707.html
+- <https://www.idahostatesman.com/news/local/community/boise/article257095707.html>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FJAGYnUVQAA6yGh.jpg)

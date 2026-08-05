@@ -16,9 +16,9 @@ related:
 ---
 
 RT @SPRlocalnews: Idaho House modifies its disciplinary procedures in response to 2021 cases.
-https://t.co/fowHSIfF8k
+<https://t.co/fowHSIfF8k>
 
 ## Links
-- https://www.spokanepublicradio.org/regional-news/2022-03-25/idaho-house-modifies-its-disciplinary-procedures-in-response-to-2021-cases
+- <https://www.spokanepublicradio.org/regional-news/2022-03-25/idaho-house-modifies-its-disciplinary-procedures-in-response-to-2021-cases>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1507513140535128064)

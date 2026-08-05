@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoStatesman: Idaho Legislature kills ‘Too Great for Hate’ license plate on last day of ‘hateful session’ https://t.co/F1vJCZiQKt
+RT @IdahoStatesman: Idaho Legislature kills ‘Too Great for Hate’ license plate on last day of ‘hateful session’ <https://t.co/F1vJCZiQKt>
 
 ## Links
-- https://trib.al/BPD45iy
+- <https://trib.al/BPD45iy>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1241058770563633152)

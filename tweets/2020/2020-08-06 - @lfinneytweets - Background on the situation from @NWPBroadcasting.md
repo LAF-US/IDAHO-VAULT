@@ -17,10 +17,10 @@ related:
 ---
 
 Background on the situation from @NWPBroadcasting: 
-https://t.co/zR9NhHGKt3
+<https://t.co/zR9NhHGKt3>
 
 ## Links
-- https://www.nwpb.org/2020/03/06/in-gun-friendly-idaho-dispute-over-sandpoint-festival-pits-2nd-amendment-against-property-rights/
+- <https://www.nwpb.org/2020/03/06/in-gun-friendly-idaho-dispute-over-sandpoint-festival-pits-2nd-amendment-against-property-rights/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

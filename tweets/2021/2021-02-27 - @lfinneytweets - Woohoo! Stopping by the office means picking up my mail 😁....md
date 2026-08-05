@@ -16,7 +16,7 @@ related:
 ---
 
 Woohoo! Stopping by the office means picking up my mail 😁
-Thanks @jjsaldana https://t.co/ooxoGQu1r7
+Thanks @jjsaldana <https://t.co/ooxoGQu1r7>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EvQ0nWdVgAAotmB.jpg)

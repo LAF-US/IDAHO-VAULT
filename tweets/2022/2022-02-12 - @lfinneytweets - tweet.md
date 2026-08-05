@@ -14,10 +14,10 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/r8lfjhxPVW
+<https://t.co/r8lfjhxPVW>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2022/02/11/whats-this-wayfair-fund-i-keep-hearing-about/
+- <https://blog.idahoreports.idahoptv.org/2022/02/11/whats-this-wayfair-fund-i-keep-hearing-about/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

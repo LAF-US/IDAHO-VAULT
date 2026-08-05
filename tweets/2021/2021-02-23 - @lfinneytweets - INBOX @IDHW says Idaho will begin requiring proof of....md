@@ -20,7 +20,7 @@ related:
   - COVID19vaccines
 ---
 
-INBOX: @IDHW says Idaho will begin requiring proof of residency  or work for vaccine appointments. #IdahoCOVID19 #COVID19vaccines https://t.co/WTFozBWi5E
+INBOX: @IDHW says Idaho will begin requiring proof of residency  or work for vaccine appointments. #IdahoCOVID19 #COVID19vaccines <https://t.co/WTFozBWi5E>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/Eu7v4geUYAAtDkr.png)

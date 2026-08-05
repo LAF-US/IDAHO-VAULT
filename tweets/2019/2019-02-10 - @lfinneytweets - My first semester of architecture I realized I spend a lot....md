@@ -15,9 +15,9 @@ related:
 
 "My first semester of architecture I realized I spend a lot of time in the studio. All I need is a place to go and sleep, and to hold my food--a place to put my stuff." 
 Check out my latest video and read @AlexisRVanHorn's great story! 
-https://t.co/nFRrgVZwEt
+<https://t.co/nFRrgVZwEt>
 
 ## Links
-- https://www.uiargonaut.com/2019/02/06/reinventing-on-campus-living/
+- <https://www.uiargonaut.com/2019/02/06/reinventing-on-campus-living/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1094725072676253697)

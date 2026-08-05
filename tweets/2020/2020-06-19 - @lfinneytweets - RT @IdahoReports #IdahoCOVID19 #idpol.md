@@ -20,7 +20,7 @@ related:
   - idpol
 ---
 
-RT @IdahoReports: #IdahoCOVID19 #idpol https://t.co/CPl2pLuKtJ
+RT @IdahoReports: #IdahoCOVID19 #idpol <https://t.co/CPl2pLuKtJ>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/Ea1wnLOUEAIZ03V.jpg)

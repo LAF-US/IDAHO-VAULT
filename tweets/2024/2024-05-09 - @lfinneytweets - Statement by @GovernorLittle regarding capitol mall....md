@@ -20,7 +20,7 @@ related:
   - idleg
 ---
 
-Statement by @GovernorLittle regarding capitol mall protests: "Idaho cherishes and protects our First Amendment rights to speech, popular and unpopular alike, but I will not tolerate any group’s efforts to establish encampments that damage state property..." #idpol #idleg https://t.co/6yj5e4i4af
+Statement by @GovernorLittle regarding capitol mall protests: "Idaho cherishes and protects our First Amendment rights to speech, popular and unpopular alike, but I will not tolerate any group’s efforts to establish encampments that damage state property..." #idpol #idleg <https://t.co/6yj5e4i4af>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GNJecTNbkAAlt52.jpg)

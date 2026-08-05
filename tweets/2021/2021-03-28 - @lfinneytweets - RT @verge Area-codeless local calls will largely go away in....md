@@ -15,10 +15,10 @@ related:
   - lfinneytweets
 ---
 
-RT @verge: Area-codeless local calls will largely go away in October — but for a good reason https://t.co/lksipYypeN https://t.co/Dr8b0X7nAx
+RT @verge: Area-codeless local calls will largely go away in October — but for a good reason <https://t.co/lksipYypeN> <https://t.co/Dr8b0X7nAx>
 
 ## Links
-- https://trib.al/c30zVyl
+- <https://trib.al/c30zVyl>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/ExlmIwSXEAYIH1d.jpg)

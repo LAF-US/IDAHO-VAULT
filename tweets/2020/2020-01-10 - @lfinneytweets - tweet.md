@@ -17,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-@XavierAWard @NateBrownNews @nicoleMfoy @KBSX915 https://t.co/F1VXB30y50
+@XavierAWard @NateBrownNews @nicoleMfoy @KBSX915 <https://t.co/F1VXB30y50>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EN8eNbYUwAAl5Hr.jpg)

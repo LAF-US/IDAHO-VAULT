@@ -16,9 +16,9 @@ related:
   - idleg
 ---
 
-Looking at you, #idleg pressroom. https://t.co/K9UFCCHpzL
+Looking at you, #idleg pressroom. <https://t.co/K9UFCCHpzL>
 
 ## Links
-- https://x.com/rczullo/status/1295748903166500871
+- <https://x.com/rczullo/status/1295748903166500871>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1295777779263315968)

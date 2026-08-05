@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-@lib_crusher https://t.co/ZxE0Z64A3T
+@lib_crusher <https://t.co/ZxE0Z64A3T>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/Gh8asjFaIAAl0bS.jpg)

@@ -18,7 +18,7 @@ related:
   - idpol
 ---
 
-The House and Senate have informed each other the chambers are organized and ready for business. They will soon receive the governor in a joint session for the State of the State Address. #idleg #idpol https://t.co/aBNrwRGfVx
+The House and Senate have informed each other the chambers are organized and ready for business. They will soon receive the governor in a joint session for the State of the State Address. #idleg #idpol <https://t.co/aBNrwRGfVx>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GgogT4XaMAAr65B.jpg)

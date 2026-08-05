@@ -17,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-@tucker_id @brandendurst https://t.co/QG1a79FtWO
+@tucker_id @brandendurst <https://t.co/QG1a79FtWO>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GNkQlPhbAAUH5el.jpg)

@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-RT @CBS2Boise: Idaho Youth Ranch: "Please, don't dump!" https://t.co/W5HCIlfVzS
+RT @CBS2Boise: Idaho Youth Ranch: "Please, don't dump!" <https://t.co/W5HCIlfVzS>
 
 ## Links
-- https://idahonews.com/news/coronavirus/idaho-youth-ranch-please-dont-dump-during-coronavirus-pandemic
+- <https://idahonews.com/news/coronavirus/idaho-youth-ranch-please-dont-dump-during-coronavirus-pandemic>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1243999541109485568)

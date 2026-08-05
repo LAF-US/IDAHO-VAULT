@@ -15,6 +15,6 @@ related:
   - lfinneytweets
 ---
 
-RT @the208KTVB: Boise City Councilwoman pens letter to parents of teen arrested at Black Lives Matter protest for firing a gun https://t.co…
+RT @the208KTVB: Boise City Councilwoman pens letter to parents of teen arrested at Black Lives Matter protest for firing a gun <https://t.co…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1270536467811414016)

@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-RT @chaddcripe: 48 hours after our 100th confirmed coronavirus case, we have our 200th. Statewide count now at 201: https://t.co/IaTzI5abQO
+RT @chaddcripe: 48 hours after our 100th confirmed coronavirus case, we have our 200th. Statewide count now at 201: <https://t.co/IaTzI5abQO>
 
 ## Links
-- https://www.idahostatesman.com/news/coronavirus/article241205826.html
+- <https://www.idahostatesman.com/news/coronavirus/article241205826.html>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1243597078950887430)

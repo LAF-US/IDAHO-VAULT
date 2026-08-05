@@ -19,7 +19,7 @@ related:
   - IdahoCOVID19
 ---
 
-RT @IdahoReports: Weekly #IdahoCOVID19 Update for February 4, 20220 | @IdahoPTV https://t.co/rALEwM8DDy
+RT @IdahoReports: Weekly #IdahoCOVID19 Update for February 4, 20220 | @IdahoPTV <https://t.co/rALEwM8DDy>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/amplify_video_thumb/1489721135021264898/img/GdRW2uxMi-PzB5-Q.jpg)

@@ -15,6 +15,6 @@ related:
   - lfinneytweets
 ---
 
-RT @localnews8: This is the first of his “Building Idaho’s Future” bills that make investments in critical state priorities.  https://t.co/…
+RT @localnews8: This is the first of his “Building Idaho’s Future” bills that make investments in critical state priorities.  <https://t.co/…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1371514182676447235)

@@ -13,7 +13,7 @@ related:
   - lfinneytweets
 ---
 
-brave new world etc etc https://t.co/hD4wzTKuQT
+brave new world etc etc <https://t.co/hD4wzTKuQT>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FxozLTXacAYVxw-.jpg)

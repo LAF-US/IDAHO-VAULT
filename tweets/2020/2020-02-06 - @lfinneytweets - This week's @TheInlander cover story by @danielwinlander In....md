@@ -22,7 +22,7 @@ related:
 ---
 
 This week's @TheInlander cover story by @danielwinlander: 
-"In Idaho, Rep. Scott has argued, the battle isn't between the GOP and tiny Democratic minority. It's between the ‘gravy train’ Republicans — addicted to federal bribes — and those working for the citizens." #idleg #idpol https://t.co/T97eYHt99L
+"In Idaho, Rep. Scott has argued, the battle isn't between the GOP and tiny Democratic minority. It's between the ‘gravy train’ Republicans — addicted to federal bribes — and those working for the citizens." #idleg #idpol <https://t.co/T97eYHt99L>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EQHQCoLWAAAi_l6.jpg)

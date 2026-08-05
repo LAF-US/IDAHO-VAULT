@@ -19,6 +19,6 @@ related:
 
 RT @IdahoPTV: In case you missed it: @PBS @NewsHour included Idaho in this story about the economic impact of coronavirus:
 
-https://t.co/6b…
+<https://t.co/6b…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1261426954407784448)

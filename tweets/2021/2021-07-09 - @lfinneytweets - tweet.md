@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-@sidnuncio @davlinnews https://t.co/OMWCcoMu0c
+@sidnuncio @davlinnews <https://t.co/OMWCcoMu0c>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/E54kILcVUAEwyN4.jpg)

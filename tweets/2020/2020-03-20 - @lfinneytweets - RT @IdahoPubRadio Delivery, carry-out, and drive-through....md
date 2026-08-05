@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoPubRadio: Delivery, carry-out, and drive-through options remain available in @CityofMoscowId., https://t.co/OqngL0R20u
+RT @IdahoPubRadio: Delivery, carry-out, and drive-through options remain available in @CityofMoscowId., <https://t.co/OqngL0R20u>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/ETlsxESUUAEE1R_.jpg)

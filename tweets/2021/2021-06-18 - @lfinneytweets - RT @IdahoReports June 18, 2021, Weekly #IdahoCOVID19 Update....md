@@ -19,7 +19,7 @@ related:
   - IdahoCOVID19
 ---
 
-RT @IdahoReports: June 18, 2021, Weekly #IdahoCOVID19 Update | @IdahoPTV https://t.co/7zYboLrjgB
+RT @IdahoReports: June 18, 2021, Weekly #IdahoCOVID19 Update | @IdahoPTV <https://t.co/7zYboLrjgB>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/amplify_video_thumb/1406008788168048642/img/juSevbgVobHgc-LH.jpg)

@@ -18,7 +18,7 @@ related:
   - idleg
 ---
 
-RT @IdahoReports: The Idaho Legislature adjourned sine die (end of session) on April 4, 2025. #idleg https://t.co/TtkftiD0ba
+RT @IdahoReports: The Idaho Legislature adjourned sine die (end of session) on April 4, 2025. #idleg <https://t.co/TtkftiD0ba>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GnuekMdbcAAesL5.jpg)

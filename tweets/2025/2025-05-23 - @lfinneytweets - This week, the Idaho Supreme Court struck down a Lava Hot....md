@@ -19,9 +19,9 @@ related:
 ---
 
 This week, the Idaho Supreme Court struck down a Lava Hot Springs ordinance that limited what kinds of short-term vacation rentals can operate in residential zones of the city. #idpol #idleg 
-https://t.co/BWDtah6exh
+<https://t.co/BWDtah6exh>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2025/05/23/cities-cannot-limit-vacation-rentals-based-on-owner-occupancy-supreme-court-rules/
+- <https://blog.idahoreports.idahoptv.org/2025/05/23/cities-cannot-limit-vacation-rentals-based-on-owner-occupancy-supreme-court-rules/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1925986479517405687)

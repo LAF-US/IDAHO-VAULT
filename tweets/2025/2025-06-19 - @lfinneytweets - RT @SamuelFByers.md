@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-RT @SamuelFByers: https://t.co/mw90Q1sxA7
+RT @SamuelFByers: <https://t.co/mw90Q1sxA7>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GtuPWBkWIAAD3K4.jpg)

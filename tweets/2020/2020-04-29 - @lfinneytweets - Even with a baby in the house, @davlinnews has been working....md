@@ -18,9 +18,9 @@ related:
   - idpol
 ---
 
-Even with a baby in the house, @davlinnews has been working her tail off to keep you up-to-date on the #IdahoCOVID19 situation. #idpol https://t.co/OVjeao3JEU
+Even with a baby in the house, @davlinnews has been working her tail off to keep you up-to-date on the #IdahoCOVID19 situation. #idpol <https://t.co/OVjeao3JEU>
 
 ## Links
-- https://x.com/IdahoReports/status/1255295462720094208
+- <https://x.com/IdahoReports/status/1255295462720094208>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1255295849883676672)

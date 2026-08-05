@@ -18,9 +18,9 @@ related:
   - idleg
 ---
 
-BREAKING #idpol #idleg https://t.co/ESY47WzS1Q
+BREAKING #idpol #idleg <https://t.co/ESY47WzS1Q>
 
 ## Links
-- https://x.com/IdahoReports/status/1762906472588136555
+- <https://x.com/IdahoReports/status/1762906472588136555>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1762906598631162115)

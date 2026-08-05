@@ -17,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-@AngryNIdaho @BetsyZRussell @salsuppe Staggered implementation until 2024 https://t.co/BNz6nYQ1QK
+@AngryNIdaho @BetsyZRussell @salsuppe Staggered implementation until 2024 <https://t.co/BNz6nYQ1QK>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EzRZwLzVUAosyej.jpg)

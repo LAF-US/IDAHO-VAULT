@@ -18,9 +18,9 @@ related:
   - idpol
 ---
 
-Boise is the first city (that I'm aware of) to utilize this statute. #idleg #idpol https://t.co/gAY4cY6FmQ
+Boise is the first city (that I'm aware of) to utilize this statute. #idleg #idpol <https://t.co/gAY4cY6FmQ>
 
 ## Links
-- https://x.com/KTVB/status/1587970575540146183
+- <https://x.com/KTVB/status/1587970575540146183>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1587986837054058496)

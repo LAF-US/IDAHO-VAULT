@@ -23,7 +23,7 @@ related:
   - idleg
 ---
 
-@GovernorLittle @IdahoController Here is an overview of the “Building Idaho’s Future” infrastructure plan from @GovernorLittle. #idpol #idleg https://t.co/w8Wwgkri8B
+@GovernorLittle @IdahoController Here is an overview of the “Building Idaho’s Future” infrastructure plan from @GovernorLittle. #idpol #idleg <https://t.co/w8Wwgkri8B>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EreoLoBUYAIqUX5.jpg)

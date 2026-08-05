@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-@AngryNIdaho @bychadsokol Let's keep the counties in tact for the sake of simplicity (and so we don't have to establish provisional governments after the hostile takeover). We avoid Missoula and Butte and Montana gets to keep her capital. https://t.co/oKZuquBfoF
+@AngryNIdaho @bychadsokol Let's keep the counties in tact for the sake of simplicity (and so we don't have to establish provisional governments after the hostile takeover). We avoid Missoula and Butte and Montana gets to keep her capital. <https://t.co/oKZuquBfoF>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EsygxbOUwAE8PO1.jpg)

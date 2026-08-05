@@ -18,7 +18,7 @@ related:
   - attentionidahoreporters
 ---
 
-wake up babe, new Greater Idaho map just dropped #idpol #attentionidahoreporters https://t.co/W491UQWFo9
+wake up babe, new Greater Idaho map just dropped #idpol #attentionidahoreporters <https://t.co/W491UQWFo9>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FIPEvPAVgAEa7tG.jpg)

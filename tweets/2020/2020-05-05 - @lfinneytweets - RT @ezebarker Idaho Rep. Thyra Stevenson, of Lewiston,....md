@@ -15,10 +15,10 @@ related:
   - lfinneytweets
 ---
 
-RT @ezebarker: Idaho Rep. Thyra Stevenson, of Lewiston, 'fighting for her life' after suffering heart attack https://t.co/U33j75Jgcr
+RT @ezebarker: Idaho Rep. Thyra Stevenson, of Lewiston, 'fighting for her life' after suffering heart attack <https://t.co/U33j75Jgcr>
 Story…
 
 ## Links
-- https://bit.ly/3b8KWZk
+- <https://bit.ly/3b8KWZk>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1257759031852068864)

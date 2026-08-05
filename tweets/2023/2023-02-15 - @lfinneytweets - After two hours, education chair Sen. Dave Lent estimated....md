@@ -22,10 +22,10 @@ related:
 ---
 
 After two hours, education chair Sen. Dave Lent estimated that more than 70 people were still signed up to testify about education savings accounts. The committee will hear more public testimony tomorrow and possibly vote on the bill. #idleg #idpol #idedu
-https://t.co/E12IXNZqc6
+<https://t.co/E12IXNZqc6>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2023/02/14/lengthy-testimony-on-esas-committee-vote-expected-wednesday/
+- <https://blog.idahoreports.idahoptv.org/2023/02/14/lengthy-testimony-on-esas-committee-vote-expected-wednesday/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-@clarkcorbin @davlinnews @davlinnews https://t.co/gpzPWjjsqB
+@clarkcorbin @davlinnews @davlinnews <https://t.co/gpzPWjjsqB>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FBxExTaVUAI-w-v.jpg)

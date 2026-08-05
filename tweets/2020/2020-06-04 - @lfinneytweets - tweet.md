@@ -17,10 +17,10 @@ related:
   - lfinneytweets
 ---
 
-@annehelen @DailyBee https://t.co/JnnAOPx5o9
+@annehelen @DailyBee <https://t.co/JnnAOPx5o9>
 
 ## Links
-- https://x.com/lyndsie_kiebert/status/1268681797019164672
+- <https://x.com/lyndsie_kiebert/status/1268681797019164672>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

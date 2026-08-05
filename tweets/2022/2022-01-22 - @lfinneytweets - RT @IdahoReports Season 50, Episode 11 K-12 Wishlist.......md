@@ -21,9 +21,9 @@ related:
 ---
 
 RT @IdahoReports: Season 50, Episode 11: K-12 Wishlist... #idleg #idpol 
-https://t.co/PSrqOO0kSA
+<https://t.co/PSrqOO0kSA>
 
 ## Links
-- https://video.idahoptv.org/video/k-12-wish-list-wpysel/
+- <https://video.idahoptv.org/video/k-12-wish-list-wpysel/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1484726974622748678)

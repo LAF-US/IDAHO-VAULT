@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoStatesman: Sometimes the Internet lies https://t.co/uA4qEi1pIW
+RT @IdahoStatesman: Sometimes the Internet lies <https://t.co/uA4qEi1pIW>
 
 ## Links
-- https://trib.al/jjzl3DD
+- <https://trib.al/jjzl3DD>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1276514316590538752)

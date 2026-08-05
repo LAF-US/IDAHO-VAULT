@@ -18,7 +18,7 @@ related:
   - idpol
 ---
 
-Was doing some Frank Church research for a project today and @POTUS jumpscared me... #idpol https://t.co/3pX6N28htp
+Was doing some Frank Church research for a project today and @POTUS jumpscared me... #idpol <https://t.co/3pX6N28htp>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GRHfZ5naoAEUE_I.jpg)

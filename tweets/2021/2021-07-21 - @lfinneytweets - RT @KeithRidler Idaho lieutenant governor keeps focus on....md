@@ -19,9 +19,9 @@ related:
   - idpol
 ---
 
-RT @KeithRidler: Idaho lieutenant governor keeps focus on vaccine mandates  (from @AP) #idpol  https://t.co/rSVtEwXcpw
+RT @KeithRidler: Idaho lieutenant governor keeps focus on vaccine mandates  (from @AP) #idpol  <https://t.co/rSVtEwXcpw>
 
 ## Links
-- https://apnews.com/article/7378216f7c72faebf2acdfc28795e0c4
+- <https://apnews.com/article/7378216f7c72faebf2acdfc28795e0c4>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1417874072617185280)

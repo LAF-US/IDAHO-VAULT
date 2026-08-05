@@ -15,10 +15,10 @@ related:
   - lfinneytweets
 ---
 
-RT @samjmintz: Amtrak confirms it will restore daily long-distance service, starting in May https://t.co/5r81xOSEoD https://t.co/Jt4rnhsjNS
+RT @samjmintz: Amtrak confirms it will restore daily long-distance service, starting in May <https://t.co/5r81xOSEoD> <https://t.co/Jt4rnhsjNS>
 
 ## Links
-- https://x.com/samjmintz/status/1369737791811239939
+- <https://x.com/samjmintz/status/1369737791811239939>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EwJic-BWQAAkoUA.png)

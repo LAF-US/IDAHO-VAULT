@@ -17,9 +17,9 @@ related:
 ---
 
 This photograph of young farmers on their way to a dance was taken in Germany in 1914 by August Sander. Except they weren't farmers. And the dance they were on their way to was World War I. @artassignment @PBSDS 
-https://t.co/cMqahTmc5Q
+<https://t.co/cMqahTmc5Q>
 
 ## Links
-- https://youtu.be/3AVNhTi9pzM
+- <https://youtu.be/3AVNhTi9pzM>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1101369176009007104)

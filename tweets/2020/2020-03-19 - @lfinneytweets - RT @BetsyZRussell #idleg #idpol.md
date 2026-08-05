@@ -20,7 +20,7 @@ related:
   - idpol
 ---
 
-RT @BetsyZRussell: #idleg #idpol https://t.co/TSYnKigulP
+RT @BetsyZRussell: #idleg #idpol <https://t.co/TSYnKigulP>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/ETfvTZrUwAEu7NT.jpg)

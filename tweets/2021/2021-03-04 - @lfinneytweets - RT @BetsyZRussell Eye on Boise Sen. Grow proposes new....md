@@ -15,6 +15,6 @@ related:
   - lfinneytweets
 ---
 
-RT @BetsyZRussell: Eye on Boise: Sen. Grow proposes new version of anti-drug constitutional amendment; link to my full story at https://t.c…
+RT @BetsyZRussell: Eye on Boise: Sen. Grow proposes new version of anti-drug constitutional amendment; link to my full story at <https://t.c…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1367286048108081153)

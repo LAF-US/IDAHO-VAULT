@@ -20,7 +20,7 @@ related:
   - SpecialSession2020
 ---
 
-I have a bunch of photos that I'll post tonight, but here's my favorite so far. #idleg #idpol #SpecialSession2020 https://t.co/piAo2no3Bg
+I have a bunch of photos that I'll post tonight, but here's my favorite so far. #idleg #idpol #SpecialSession2020 <https://t.co/piAo2no3Bg>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EbOMR4-UYAAxwBy.jpg)

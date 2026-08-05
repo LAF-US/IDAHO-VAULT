@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-@Boise1932 Dorothy Moon candidate speech (2/2) https://t.co/W7FhiOITyV
+@Boise1932 Dorothy Moon candidate speech (2/2) <https://t.co/W7FhiOITyV>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/ext_tw_video_thumb/1802759239519358976/pu/img/zDhWOhmHxhl0jNq1.jpg)

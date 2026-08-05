@@ -20,7 +20,7 @@ related:
   - idpol
 ---
 
-After signature teams dispersed, @SamSandmire talks strategy with another @reclaimID volunteer leader. #idpol https://t.co/ODEvFl5Sdx
+After signature teams dispersed, @SamSandmire talks strategy with another @reclaimID volunteer leader. #idpol <https://t.co/ODEvFl5Sdx>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/E95PAGZVQAI5w6T.jpg)

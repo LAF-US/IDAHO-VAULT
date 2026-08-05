@@ -15,6 +15,6 @@ related:
   - lfinneytweets
 ---
 
-RT @rebexxxxa: i wrote about why it's so hard to look away from Claudia Conway, and what we owe her as a teen girl in crisis https://t.co/V…
+RT @rebexxxxa: i wrote about why it's so hard to look away from Claudia Conway, and what we owe her as a teen girl in crisis <https://t.co/V…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1313577706605297664)

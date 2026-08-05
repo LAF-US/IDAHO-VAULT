@@ -16,9 +16,9 @@ related:
   - idpol
 ---
 
-"Community Library District Trustee Robert Fish is worried about more than just his position on the library's board, but the politics of Kootenai County elections as a whole." #idpol https://t.co/d2e70z4sKT
+"Community Library District Trustee Robert Fish is worried about more than just his position on the library's board, but the politics of Kootenai County elections as a whole." #idpol <https://t.co/d2e70z4sKT>
 
 ## Links
-- https://x.com/madisonhardy05/status/1382374563024039945
+- <https://x.com/madisonhardy05/status/1382374563024039945>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1382388264347127810)

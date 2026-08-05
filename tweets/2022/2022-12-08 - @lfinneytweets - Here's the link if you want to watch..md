@@ -15,10 +15,10 @@ related:
 ---
 
 Here's the link if you want to watch. 
-https://t.co/sBLiJYAXMN
+<https://t.co/sBLiJYAXMN>
 
 ## Links
-- https://www.idahoptv.org/shows/idahoinsession/ww55/
+- <https://www.idahoptv.org/shows/idahoinsession/ww55/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

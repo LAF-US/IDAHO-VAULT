@@ -16,9 +16,9 @@ related:
 ---
 
 RT @idahoednews: He was 67. 
-https://t.co/iwGOkBiXPT
+<https://t.co/iwGOkBiXPT>
 
 ## Links
-- https://www.idahoednews.org/news/coulson-indoctrination-task-force-member-dies-of-covid/
+- <https://www.idahoednews.org/news/coulson-indoctrination-task-force-member-dies-of-covid/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1447304957669957632)

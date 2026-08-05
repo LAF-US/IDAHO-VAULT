@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-@hollycookID https://t.co/9LMxff0mfk
+@hollycookID <https://t.co/9LMxff0mfk>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/GQLtb8EasAAI1RM.jpg)

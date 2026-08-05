@@ -14,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-Truly the end of an era in North Idaho. https://t.co/89vDmvIbzJ
+Truly the end of an era in North Idaho. <https://t.co/89vDmvIbzJ>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FiMFhr-VEAAQYXc.jpg)

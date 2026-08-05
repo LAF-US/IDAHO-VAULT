@@ -21,9 +21,9 @@ related:
 ---
 
 The Idaho State of the State address begins in a few moments. You can watch along here on the @IdahoPTV livestream. #idpol #idleg 
-https://t.co/O95aujMH7r
+<https://t.co/O95aujMH7r>
 
 ## Links
-- https://video.idahoptv.org/livestream/
+- <https://video.idahoptv.org/livestream/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1348721198276833280)

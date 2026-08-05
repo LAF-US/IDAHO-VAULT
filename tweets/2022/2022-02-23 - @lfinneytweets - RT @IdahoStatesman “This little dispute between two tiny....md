@@ -15,6 +15,6 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoStatesman: “This little dispute between two tiny cities could be replicated in every city in Canyon County.” https://t.co/uKV6ofeb…
+RT @IdahoStatesman: “This little dispute between two tiny cities could be replicated in every city in Canyon County.” <https://t.co/uKV6ofeb…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1496540691513880577)

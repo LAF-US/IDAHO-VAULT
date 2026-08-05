@@ -15,6 +15,6 @@ related:
   - lfinneytweets
 ---
 
-RT @NiemanLab: Twitter is blocking all interactions (except Quote Tweets) with President Trump's video https://t.co/sl0lsBfbIk
+RT @NiemanLab: Twitter is blocking all interactions (except Quote Tweets) with President Trump's video <https://t.co/sl0lsBfbIk>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1346932308205473799)

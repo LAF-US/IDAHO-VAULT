@@ -20,6 +20,6 @@ related:
   - idpol
 ---
 
-RT @BetsyZRussell: Eye on Boise: Redistricting commission makes substantial progress on legislative district map #idleg #idpol  https://t.c…
+RT @BetsyZRussell: Eye on Boise: Redistricting commission makes substantial progress on legislative district map #idleg #idpol  <https://t.c…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1453835612520214530)

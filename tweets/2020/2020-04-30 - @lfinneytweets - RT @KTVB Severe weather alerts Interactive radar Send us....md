@@ -18,10 +18,10 @@ related:
   - 7spring
 ---
 
-RT @KTVB: Severe weather alerts: https://t.co/rtDcl0gpEJ Interactive radar: https://t.co/jZbbyVCGY7 Send us your #7spring storm photos
+RT @KTVB: Severe weather alerts: <https://t.co/rtDcl0gpEJ> Interactive radar: <https://t.co/jZbbyVCGY7> Send us your #7spring storm photos
 
 ## Links
-- https://bit.ly/3bTPILJ
-- https://bit.ly/3aTnuPU
+- <https://bit.ly/3bTPILJ>
+- <https://bit.ly/3aTnuPU>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1255955508776726528)

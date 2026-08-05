@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-RT @IDHW: Idaho SNAP benefits can now be used for online purchases at Amazon and Walmart (press release): https://t.co/Ez7rLYm1eM
+RT @IDHW: Idaho SNAP benefits can now be used for online purchases at Amazon and Walmart (press release): <https://t.co/Ez7rLYm1eM>
 
 ## Links
-- http://ow.ly/WbOL50zxJD9
+- <http://ow.ly/WbOL50zxJD9>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1257747308176740352)

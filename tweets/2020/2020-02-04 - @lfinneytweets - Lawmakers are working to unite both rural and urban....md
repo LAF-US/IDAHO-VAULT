@@ -18,9 +18,9 @@ related:
   - idleg
 ---
 
-Lawmakers are working to unite both rural and urban perspectives in the Statehouse through their new Farm, Ranch and Timber Issues Caucus. #idpol #idleg https://t.co/cooRlNDV0Q
+Lawmakers are working to unite both rural and urban perspectives in the Statehouse through their new Farm, Ranch and Timber Issues Caucus. #idpol #idleg <https://t.co/cooRlNDV0Q>
 
 ## Links
-- https://x.com/IdahoPubRadio/status/1224495437287022592
+- <https://x.com/IdahoPubRadio/status/1224495437287022592>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1224506128316256256)

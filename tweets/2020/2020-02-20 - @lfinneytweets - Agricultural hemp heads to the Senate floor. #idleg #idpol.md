@@ -18,9 +18,9 @@ related:
   - idpol
 ---
 
-Agricultural hemp heads to the Senate floor. #idleg #idpol https://t.co/RwrmL33xqZ
+Agricultural hemp heads to the Senate floor. #idleg #idpol <https://t.co/RwrmL33xqZ>
 
 ## Links
-- https://t.co/RwrmL33xqZ
+- <https://t.co/RwrmL33xqZ>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1230528482314055681)

@@ -19,7 +19,7 @@ related:
   - idpol
 ---
 
-\#idpol @reclaimID https://t.co/s3oDrUYilE
+\#idpol @reclaimID <https://t.co/s3oDrUYilE>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/E95PQjyUcAALQwk.jpg)

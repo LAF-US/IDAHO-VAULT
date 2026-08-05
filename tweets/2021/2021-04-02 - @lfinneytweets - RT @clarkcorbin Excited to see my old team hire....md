@@ -19,6 +19,6 @@ related:
   - idleg
 ---
 
-RT @clarkcorbin: Excited to see my old team hire @jonesblakej. Please give him a follow and send him education and #idleg tips. https://t.c…
+RT @clarkcorbin: Excited to see my old team hire @jonesblakej. Please give him a follow and send him education and #idleg tips. <https://t.c…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1378096096094773248)

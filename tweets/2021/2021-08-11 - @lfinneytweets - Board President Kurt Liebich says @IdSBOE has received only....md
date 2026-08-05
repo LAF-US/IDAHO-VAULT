@@ -20,9 +20,9 @@ related:
   - idpol
 ---
 
-Board President Kurt Liebich says @IdSBOE has received "only about a dozen comments" on their drafted diversity, equity and inclusion policy. "I encourage you to read the draft policy, draw your own conclusions and let us know what you think," Liebich writes. #idedu #idpol https://t.co/8I6sAZpkim
+Board President Kurt Liebich says @IdSBOE has received "only about a dozen comments" on their drafted diversity, equity and inclusion policy. "I encourage you to read the draft policy, draw your own conclusions and let us know what you think," Liebich writes. #idedu #idpol <https://t.co/8I6sAZpkim>
 
 ## Links
-- https://x.com/IdSBOE/status/1425477638424985606
+- <https://x.com/IdSBOE/status/1425477638424985606>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1425482438487154695)

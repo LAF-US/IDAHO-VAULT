@@ -14,10 +14,10 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/uHW0rCqs7K
+<https://t.co/uHW0rCqs7K>
 
 ## Links
-- https://soundcloud.com/idaho-reports/extra-was-the-2020-election-stolen
+- <https://soundcloud.com/idaho-reports/extra-was-the-2020-election-stolen>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

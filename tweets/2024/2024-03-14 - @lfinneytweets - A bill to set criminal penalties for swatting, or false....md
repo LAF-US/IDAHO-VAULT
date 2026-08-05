@@ -19,9 +19,9 @@ related:
 ---
 
 A bill to set criminal penalties for swatting, or false emergency reports meant as a prank or harassment, has passed the Idaho Senate 23-12 moves to the House. #idleg #idpol 
-https://t.co/k99kyI1PDE
+<https://t.co/k99kyI1PDE>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2024/03/11/swatting-bill-moves-to-senate-floor/
+- <https://blog.idahoreports.idahoptv.org/2024/03/11/swatting-bill-moves-to-senate-floor/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1768327498126029205)

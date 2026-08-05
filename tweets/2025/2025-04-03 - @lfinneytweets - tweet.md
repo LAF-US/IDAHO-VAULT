@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-@tucker_id https://t.co/HDIRTFyXWn
+@tucker_id <https://t.co/HDIRTFyXWn>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/GnonjKhaoAAtdzB.jpg)

@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-RT @KTVB: Tents in pro-Palestinian encampment in Idaho allowed to remain up https://t.co/05QWDQyRCk
+RT @KTVB: Tents in pro-Palestinian encampment in Idaho allowed to remain up <https://t.co/05QWDQyRCk>
 
 ## Links
-- https://www.ktvb.com/article/news/local/tents-pro-palestinian-encampment-in-idaho-allowed-to-remain-up/277-0222e7d0-1365-4934-91df-59205f993318?utm_campaign=snd-autopilot
+- <https://www.ktvb.com/article/news/local/tents-pro-palestinian-encampment-in-idaho-allowed-to-remain-up/277-0222e7d0-1365-4934-91df-59205f993318?utm_campaign=snd-autopilot>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1787599651933508075)

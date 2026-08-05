@@ -21,9 +21,9 @@ related:
   - idleg
 ---
 
-RT @kridler: House panel OKs Idaho bill to ban transgender women athletes (from @AP) #idpol #idleg  https://t.co/L9uamSXoGU
+RT @kridler: House panel OKs Idaho bill to ban transgender women athletes (from @AP) #idpol #idleg  <https://t.co/L9uamSXoGU>
 
 ## Links
-- https://apnews.com/65bf55da15c773aad414bf5c2304f74a
+- <https://apnews.com/65bf55da15c773aad414bf5c2304f74a>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1230538436722847745)

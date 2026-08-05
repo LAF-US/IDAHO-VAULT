@@ -22,10 +22,10 @@ related:
 ---
 
 Correction from @IdahoCapitalSun's @maldonado_mia_: This is not the first LGBTQ+ hate crime successfully prosecuted in the state! #idleg #idpol 
-https://t.co/M9JQa1GTi0
+<https://t.co/M9JQa1GTi0>
 
 ## Links
-- https://x.com/IdahoCapitalSun/status/1720212579912659189
+- <https://x.com/IdahoCapitalSun/status/1720212579912659189>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

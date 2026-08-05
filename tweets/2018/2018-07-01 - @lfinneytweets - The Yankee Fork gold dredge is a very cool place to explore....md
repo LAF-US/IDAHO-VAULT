@@ -13,9 +13,9 @@ related:
   - lfinneytweets
 ---
 
-The Yankee Fork gold dredge is a very cool place to explore if you're ever near Stanley, ID. I'm excited to hear that some of the damage to the river will be restored, while preserving the historical significe of the area. https://t.co/kTOuh9Fmng
+The Yankee Fork gold dredge is a very cool place to explore if you're ever near Stanley, ID. I'm excited to hear that some of the damage to the river will be restored, while preserving the historical significe of the area. <https://t.co/kTOuh9Fmng>
 
 ## Links
-- https://x.com/IdahoMtExpress/status/1012729167920721920
+- <https://x.com/IdahoMtExpress/status/1012729167920721920>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1013557421850021890)

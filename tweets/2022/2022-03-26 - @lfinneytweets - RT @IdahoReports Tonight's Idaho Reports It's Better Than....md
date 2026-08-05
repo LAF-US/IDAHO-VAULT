@@ -22,6 +22,6 @@ related:
 ---
 
 RT @IdahoReports: Tonight's Idaho Reports: It's Better Than Nothing... (Season 50, Episode 20) @IdahoPTV #idleg #idpol 
-https://t.co/CZ2PTA…
+<https://t.co/CZ2PTA…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1507546856858873860)

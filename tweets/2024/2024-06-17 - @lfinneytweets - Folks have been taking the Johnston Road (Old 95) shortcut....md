@@ -14,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-Folks have been taking the Johnston Road (Old 95) shortcut for so long it's become the recommended route on Google Maps! https://t.co/DaksvWsW6V
+Folks have been taking the Johnston Road (Old 95) shortcut for so long it's become the recommended route on Google Maps! <https://t.co/DaksvWsW6V>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GQSmoJAbMAA7exk.jpg)

@@ -16,9 +16,9 @@ related:
   - lfinneytweets
 ---
 
-RT @aaronkunz: Montana legislators clash over rules for legislative session (from @AP) https://t.co/FsY7FtkoqS
+RT @aaronkunz: Montana legislators clash over rules for legislative session (from @AP) <https://t.co/FsY7FtkoqS>
 
 ## Links
-- https://apnews.com/article/4c75cfc62d88f50a0559e9a274577f11
+- <https://apnews.com/article/4c75cfc62d88f50a0559e9a274577f11>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1336127586724794368)

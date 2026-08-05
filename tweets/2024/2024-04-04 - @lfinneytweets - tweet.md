@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-@joeja https://t.co/LC1jKAqtz2
+@joeja <https://t.co/LC1jKAqtz2>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/GKSpQPnaYAEs5Rh.jpg)

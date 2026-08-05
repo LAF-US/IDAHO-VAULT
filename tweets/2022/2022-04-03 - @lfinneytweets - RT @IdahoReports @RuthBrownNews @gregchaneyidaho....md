@@ -25,6 +25,6 @@ related:
 ---
 
 RT @IdahoReports: @RuthBrownNews @gregchaneyidaho @colinmnash @lfinneytweets Season 50 Episode 21: Sine Die… #idleg #idpol 
-https://t.co/ZA…
+<https://t.co/ZA…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1510753045939843081)

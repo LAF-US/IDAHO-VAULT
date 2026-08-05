@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-The only one who deserves this is @dril https://t.co/muSNlg9aP2
+The only one who deserves this is @dril <https://t.co/muSNlg9aP2>
 
 ## Links
-- https://x.com/atrupar/status/1640512821401206785
+- <https://x.com/atrupar/status/1640512821401206785>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1640538402763472897)

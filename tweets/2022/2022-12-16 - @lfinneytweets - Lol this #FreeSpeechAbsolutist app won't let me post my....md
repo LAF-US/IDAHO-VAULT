@@ -16,7 +16,7 @@ related:
   - FreeSpeechAbsolutist
 ---
 
-Lol this #FreeSpeechAbsolutist app won't let me post my Mastodon link https://t.co/Le8yqHclr4
+Lol this #FreeSpeechAbsolutist app won't let me post my Mastodon link <https://t.co/Le8yqHclr4>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FkEX_MWacAI-ezb.jpg)

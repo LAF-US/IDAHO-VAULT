@@ -15,6 +15,6 @@ related:
   - lfinneytweets
 ---
 
-RT @jackdolanLAT: LA Times Today: California cops and firefighters are taking their pensions to Idaho’s ‘Little Orange County’ https://t.co…
+RT @jackdolanLAT: LA Times Today: California cops and firefighters are taking their pensions to Idaho’s ‘Little Orange County’ <https://t.co…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1753231722832134511)

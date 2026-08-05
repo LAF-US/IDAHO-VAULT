@@ -22,7 +22,7 @@ date created: Sunday, April 12th 2026, 1:03:41 pm
 date modified: Sunday, April 12th 2026, 5:56:34 pm
 ---
 
-RT @IdahoReports: IdahoCOVID19 https://t.co/PPgO39bRu9
+RT @IdahoReports: IdahoCOVID19 <https://t.co/PPgO39bRu9>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EoHYydvVoAk74zf.jpg)

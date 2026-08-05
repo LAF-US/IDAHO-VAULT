@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-RT @KTVB: Absentee ballots in Jerome, Payette County reissued due to printing error https://t.co/X6jvH6Cupq
+RT @KTVB: Absentee ballots in Jerome, Payette County reissued due to printing error <https://t.co/X6jvH6Cupq>
 
 ## Links
-- https://www.ktvb.com/article/news/politics/elections/jerome-county-ballots-error-reissue/277-4d5bb112-5687-4fc7-a224-1348f15d9861?utm_campaign=snd-autopilot
+- <https://www.ktvb.com/article/news/politics/elections/jerome-county-ballots-error-reissue/277-4d5bb112-5687-4fc7-a224-1348f15d9861?utm_campaign=snd-autopilot>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1839700260849119580)

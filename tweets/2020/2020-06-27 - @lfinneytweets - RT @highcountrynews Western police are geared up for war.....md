@@ -19,10 +19,10 @@ related:
 ---
 
 RT @highcountrynews: Western police are geared up for war. But who’s the enemy? #infographic
-https://t.co/efIAzIkKZs https://t.co/n5ayR7Xxpc
+<https://t.co/efIAzIkKZs> <https://t.co/n5ayR7Xxpc>
 
 ## Links
-- https://hcne.ws/31wpz3l
+- <https://hcne.ws/31wpz3l>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EbdmermWAAAR-K8.jpg)

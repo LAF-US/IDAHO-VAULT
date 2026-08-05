@@ -16,7 +16,7 @@ related:
   - idleg
 ---
 
-nature is healing #idleg https://t.co/ipfitJrwOB
+nature is healing #idleg <https://t.co/ipfitJrwOB>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GnpXhGgawAAE5hv.jpg)

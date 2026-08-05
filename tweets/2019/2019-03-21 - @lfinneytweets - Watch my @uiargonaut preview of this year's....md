@@ -16,9 +16,9 @@ related:
 ---
 
 Watch my @uiargonaut preview of this year's DancersDrummersDreamers performance, and see the live show Thursday thru Saturday at the Hartung Theatre! 
-https://t.co/QC85o6JvBI
+<https://t.co/QC85o6JvBI>
 
 ## Links
-- https://youtu.be/oLQ24NizaYs
+- <https://youtu.be/oLQ24NizaYs>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1108792388531609600)

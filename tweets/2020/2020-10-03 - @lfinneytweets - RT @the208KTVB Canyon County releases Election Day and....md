@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-RT @the208KTVB: Canyon County releases Election Day and early voting poll location details https://t.co/JbQTVdlFCU
+RT @the208KTVB: Canyon County releases Election Day and early voting poll location details <https://t.co/JbQTVdlFCU>
 
 ## Links
-- https://feeds.feedblitz.com/~/636268778/0/ktvb/the208~Canyon-County-releases-Election-Day-and-early-voting-poll-location-details?utm_campaign=snd-autopilot
+- <https://feeds.feedblitz.com/~/636268778/0/ktvb/the208~Canyon-County-releases-Election-Day-and-early-voting-poll-location-details?utm_campaign=snd-autopilot>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1312185150193635328)

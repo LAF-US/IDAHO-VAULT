@@ -23,7 +23,7 @@ related:
   - idpol
 ---
 
-Tonight on @IdahoReports: @BetsyZRussell and @KevinRichert talk with @davlinnews about what did and didn't get done before the legislature adjourned sine die, and I'm on air to talk taxes! Tune in tonight on @IdahoPTV. #idleg #idpol https://t.co/uzT0egPCSN
+Tonight on @IdahoReports: @BetsyZRussell and @KevinRichert talk with @davlinnews about what did and didn't get done before the legislature adjourned sine die, and I'm on air to talk taxes! Tune in tonight on @IdahoPTV. #idleg #idpol <https://t.co/uzT0egPCSN>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/ETlO1G6U8AAubXw.jpg)

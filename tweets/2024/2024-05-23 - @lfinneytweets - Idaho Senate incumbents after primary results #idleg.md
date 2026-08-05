@@ -16,7 +16,7 @@ related:
   - idleg
 ---
 
-Idaho Senate incumbents after primary results #idleg https://t.co/VcrTu8QljE
+Idaho Senate incumbents after primary results #idleg <https://t.co/VcrTu8QljE>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GOTOztfacAAlllK.jpg)

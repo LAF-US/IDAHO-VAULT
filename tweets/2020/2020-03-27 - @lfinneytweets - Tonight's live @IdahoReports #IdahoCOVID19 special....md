@@ -19,10 +19,10 @@ related:
   - IdahoCOVID19
 ---
 
-Tonight's live @IdahoReports #IdahoCOVID19 special summarized by the wonderful @heersinkolivia. Watch the full hour here: https://t.co/iSmhcn4LHU https://t.co/YHgs1cs9b0
+Tonight's live @IdahoReports #IdahoCOVID19 special summarized by the wonderful @heersinkolivia. Watch the full hour here: <https://t.co/iSmhcn4LHU> <https://t.co/YHgs1cs9b0>
 
 ## Links
-- https://www.idahoptv.org/shows/idahoreports/
-- https://x.com/heersinkolivia/status/1243398263899713543
+- <https://www.idahoptv.org/shows/idahoreports/>
+- <https://x.com/heersinkolivia/status/1243398263899713543>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1243414759862456326)

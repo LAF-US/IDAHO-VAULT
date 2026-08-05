@@ -17,10 +17,10 @@ related:
 ---
 
 @currevive If you have notes on any specific articles or biases my email is on the website. 
-https://t.co/BFFXPKyFQT
+<https://t.co/BFFXPKyFQT>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/author/loganfinney/
+- <https://blog.idahoreports.idahoptv.org/author/loganfinney/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

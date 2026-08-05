@@ -15,10 +15,10 @@ related:
   - lfinneytweets
 ---
 
-Check out the @UofILibrary 1918 Flu Pandemic Collection  https://t.co/CLPySxAaNY https://t.co/aOHKCi43vB
+Check out the @UofILibrary 1918 Flu Pandemic Collection  <https://t.co/CLPySxAaNY> <https://t.co/aOHKCi43vB>
 
 ## Links
-- https://www.lib.uidaho.edu/digital/1918flu/
+- <https://www.lib.uidaho.edu/digital/1918flu/>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EV-32cAU0AEGC3S.jpg)

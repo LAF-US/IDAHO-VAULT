@@ -23,6 +23,6 @@ related:
   - IdahoCovid19
 ---
 
-RT @KeithRidler: Idaho wraps up chaotic special session; Bundy arrested again (from @AP) #idpol #idleg #IdahoCovid19  https://t.co/H6p5Tny3…
+RT @KeithRidler: Idaho wraps up chaotic special session; Bundy arrested again (from @AP) #idpol #idleg #IdahoCovid19  <https://t.co/H6p5Tny3…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1298829511841050625)

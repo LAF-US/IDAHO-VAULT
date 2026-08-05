@@ -21,9 +21,9 @@ related:
 ---
 
 The Senate floor drama from today, courtesy of @idahofreedom. #idleg #idpol 
-https://t.co/blLfnqQpNj
+<https://t.co/blLfnqQpNj>
 
 ## Links
-- https://youtu.be/5GC_a2emvTM
+- <https://youtu.be/5GC_a2emvTM>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1488956703538233346)

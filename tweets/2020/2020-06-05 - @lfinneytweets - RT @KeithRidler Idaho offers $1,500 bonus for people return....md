@@ -19,9 +19,9 @@ related:
   - idpol
 ---
 
-RT @KeithRidler: Idaho offers $1,500 bonus for people return to work (from @AP) #idpol  https://t.co/kFCX0HDb5n
+RT @KeithRidler: Idaho offers $1,500 bonus for people return to work (from @AP) #idpol  <https://t.co/kFCX0HDb5n>
 
 ## Links
-- https://apnews.com/01f257d42cdfb3bfe143bb76e8935a9b
+- <https://apnews.com/01f257d42cdfb3bfe143bb76e8935a9b>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1268959034331152384)

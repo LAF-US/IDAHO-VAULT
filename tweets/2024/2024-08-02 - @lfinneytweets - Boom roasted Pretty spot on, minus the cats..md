@@ -13,7 +13,7 @@ related:
   - lfinneytweets
 ---
 
-Boom roasted? Pretty spot on, minus the cats. https://t.co/rBS5AlkQAU
+Boom roasted? Pretty spot on, minus the cats. <https://t.co/rBS5AlkQAU>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GUA8Hxxb0AI_ltW.jpg)

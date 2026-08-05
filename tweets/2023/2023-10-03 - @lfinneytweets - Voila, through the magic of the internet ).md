@@ -17,9 +17,9 @@ related:
 ---
 
 @hollycookID @IdahoPTV Voila, through the magic of the internet :)
-https://t.co/Tm9L3Afvpg
+<https://t.co/Tm9L3Afvpg>
 
 ## Links
-- https://www.pbs.org/video/dialogue-tea-party-movement/
+- <https://www.pbs.org/video/dialogue-tea-party-movement/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1709236064760787300)

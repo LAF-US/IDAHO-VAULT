@@ -20,10 +20,10 @@ related:
 ---
 
 @cremieuxrecueil Not quite how it happened. ZBR came after the fact. #idpol 
-https://t.co/JQFDDSYFVK
+<https://t.co/JQFDDSYFVK>
 
 ## Links
-- https://ballotpedia.org/Idaho_lawmakers_fail_to_reauthorize_administrative_rules_for_third_straight_year
+- <https://ballotpedia.org/Idaho_lawmakers_fail_to_reauthorize_administrative_rules_for_third_straight_year>
 
 *In reply to [@cremieuxrecueil](https://twitter.com/cremieuxrecueil)*
 

@@ -15,10 +15,10 @@ related:
 ---
 
 'Imane Khelif won her opening bout when opponent Angela Carini quit after just 46 seconds. Khelif was disqualified from the 2023 world championships after failing an unspecified gender eligibility test, and her presence has become a divisive issue.'
-https://t.co/qK6OTVkhHH
+<https://t.co/qK6OTVkhHH>
 
 ## Links
-- https://apnews.com/article/olympics-2024-boxing-gender-4b6eb881cce9c34484d30c68ad979127
+- <https://apnews.com/article/olympics-2024-boxing-gender-4b6eb881cce9c34484d30c68ad979127>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

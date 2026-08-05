@@ -17,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-@bivlo @IdahoReports https://t.co/z4dhQW0hBc
+@bivlo @IdahoReports <https://t.co/z4dhQW0hBc>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/FDUivJaUcAAY55q.jpg)

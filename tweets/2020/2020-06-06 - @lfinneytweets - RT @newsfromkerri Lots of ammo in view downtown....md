@@ -18,7 +18,7 @@ related:
   - LewistonProtest
 ---
 
-RT @newsfromkerri: Lots of ammo in view downtown #LewistonProtest https://t.co/iYOWBkRQDF
+RT @newsfromkerri: Lots of ammo in view downtown #LewistonProtest <https://t.co/iYOWBkRQDF>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EZ2bDUdUMAAEqCl.jpg)

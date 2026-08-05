@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-RT @pewjournalism: 🚨NEW🚨 Journalists sense turmoil in their industry amid continued passion for their work. https://t.co/uYdNz9N1yV https:/…
+RT @pewjournalism: 🚨NEW🚨 Journalists sense turmoil in their industry amid continued passion for their work. <https://t.co/uYdNz9N1yV> https:/…
 
 ## Links
-- https://pewrsr.ch/3NSGty6
+- <https://pewrsr.ch/3NSGty6>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1536752735386624001)

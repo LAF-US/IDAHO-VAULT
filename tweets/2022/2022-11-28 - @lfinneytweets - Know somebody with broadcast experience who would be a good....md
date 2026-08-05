@@ -18,9 +18,9 @@ related:
   - idleg
 ---
 
-Know somebody with broadcast experience who would be a good part of the Idaho in Session team, bringing transparent government meetings to citizens across the state? Send them @IdahoPTV's way! #idleg https://t.co/H4Cs2yb7dn
+Know somebody with broadcast experience who would be a good part of the Idaho in Session team, bringing transparent government meetings to citizens across the state? Send them @IdahoPTV's way! #idleg <https://t.co/H4Cs2yb7dn>
 
 ## Links
-- https://x.com/IdahoPTV/status/1597286647137435649
+- <https://x.com/IdahoPTV/status/1597286647137435649>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1597313006840340480)

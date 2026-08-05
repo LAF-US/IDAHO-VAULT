@@ -15,6 +15,6 @@ related:
   - lfinneytweets
 ---
 
-RT @gemstatebrian: https://t.co/gQUhgDnZQN
+RT @gemstatebrian: <https://t.co/gQUhgDnZQN>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1869962274452189638)

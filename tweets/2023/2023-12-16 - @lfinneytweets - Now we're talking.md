@@ -17,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-@tjnunamaker @Lemommeringue Now we're talking https://t.co/11jybQCUiF
+@tjnunamaker @Lemommeringue Now we're talking <https://t.co/11jybQCUiF>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GBbszGqboAAHz3-.jpg)

@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-RT @CamardaNicole: Full gallery with HB 377 is being discussed in the senate chambers. https://t.co/A8U4PBldTc
+RT @CamardaNicole: Full gallery with HB 377 is being discussed in the senate chambers. <https://t.co/A8U4PBldTc>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/Ez7lLXWVEAAi8Q9.jpg)

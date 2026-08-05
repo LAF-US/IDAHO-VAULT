@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-(@AP) "Some states and cities that have been shipped masks, gloves, ventilators and other essential equipment from the nation’s medical stockpile to fight the coronavirus have gotten an unwelcome surprise: the material is unusable." https://t.co/aPCRqukHBg
+(@AP) "Some states and cities that have been shipped masks, gloves, ventilators and other essential equipment from the nation’s medical stockpile to fight the coronavirus have gotten an unwelcome surprise: the material is unusable." <https://t.co/aPCRqukHBg>
 
 ## Links
-- https://x.com/Oregonian/status/1246579668989415424
+- <https://x.com/Oregonian/status/1246579668989415424>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1246593985944023040)

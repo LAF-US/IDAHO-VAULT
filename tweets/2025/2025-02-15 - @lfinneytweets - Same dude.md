@@ -13,7 +13,7 @@ related:
   - lfinneytweets
 ---
 
-Same dude https://t.co/wj2UgWCijC
+Same dude <https://t.co/wj2UgWCijC>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GjzAJgjacAASO1h.jpg)

@@ -13,9 +13,9 @@ related:
   - lfinneytweets
 ---
 
-Hanlon's razor https://t.co/y0qPvgPNnA
+Hanlon's razor <https://t.co/y0qPvgPNnA>
 
 ## Links
-- https://x.com/MariaOlsenNate/status/1706913961168535686
+- <https://x.com/MariaOlsenNate/status/1706913961168535686>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1706923842999095746)

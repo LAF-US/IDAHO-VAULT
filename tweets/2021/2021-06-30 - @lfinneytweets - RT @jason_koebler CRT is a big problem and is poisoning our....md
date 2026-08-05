@@ -15,6 +15,6 @@ related:
   - lfinneytweets
 ---
 
-RT @jason_koebler: CRT is a big problem and is poisoning our nation, as I showed in this investigation I did a few years ago: https://t.co/…
+RT @jason_koebler: CRT is a big problem and is poisoning our nation, as I showed in this investigation I did a few years ago: <https://t.co/…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1410386510931578883)

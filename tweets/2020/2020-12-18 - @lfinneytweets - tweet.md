@@ -17,10 +17,10 @@ related:
   - lfinneytweets
 ---
 
-@danielwinlander @audreydutton https://t.co/wjgHvpuGNA
+@danielwinlander @audreydutton <https://t.co/wjgHvpuGNA>
 
 ## Links
-- https://youtu.be/vcMCIfvfEPA
+- <https://youtu.be/vcMCIfvfEPA>
 
 *In reply to [@danielwreporter](https://twitter.com/danielwreporter)*
 

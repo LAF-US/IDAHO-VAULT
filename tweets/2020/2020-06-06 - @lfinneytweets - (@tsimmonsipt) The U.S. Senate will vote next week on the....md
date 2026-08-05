@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-(@tsimmonsipt) The U.S. Senate will vote next week on the Great American Outdoors Act, which would redirect more offshore oil and gas lease profits and allow up to $9.5 billion in other non-taxpayer funds to address repairs in national parks and on other public lands. https://t.co/bbHVU0AzF0
+(@tsimmonsipt) The U.S. Senate will vote next week on the Great American Outdoors Act, which would redirect more offshore oil and gas lease profits and allow up to $9.5 billion in other non-taxpayer funds to address repairs in national parks and on other public lands. <https://t.co/bbHVU0AzF0>
 
 ## Links
-- https://x.com/TheIdahoPress/status/1269079057087336449
+- <https://x.com/TheIdahoPress/status/1269079057087336449>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1269082937695203328)

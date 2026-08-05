@@ -22,9 +22,9 @@ related:
 ---
 
 Workers can’t work if they can’t afford to live where they work. (via @lyndsie_kiebert @sndpnt_reader) #idleg #idpol 
-https://t.co/L3EzzfYvce
+<https://t.co/L3EzzfYvce>
 
 ## Links
-- https://sandpointreader.com/where-are-all-the-workers-part-iii/
+- <https://sandpointreader.com/where-are-all-the-workers-part-iii/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1445450333165998081)

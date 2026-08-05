@@ -21,6 +21,6 @@ related:
   - idpol
 ---
 
-RT @BetsyZRussell: Eye on Boise: @KTVB: Protesters target home of lawmaker proposing home-protests bill... #idleg #idpol https://t.co/qDFad…
+RT @BetsyZRussell: Eye on Boise: @KTVB: Protesters target home of lawmaker proposing home-protests bill... #idleg #idpol <https://t.co/qDFad…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1362569218831446016)

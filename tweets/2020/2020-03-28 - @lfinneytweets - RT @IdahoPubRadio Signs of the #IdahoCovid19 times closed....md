@@ -20,6 +20,6 @@ related:
   - IdahoCovid19
 ---
 
-RT @IdahoPubRadio: Signs of the #IdahoCovid19 times: closed buildings @uidaho in @CityofMoscowId, a closed play area in Moscow. https://t.c…
+RT @IdahoPubRadio: Signs of the #IdahoCovid19 times: closed buildings @uidaho in @CityofMoscowId, a closed play area in Moscow. <https://t.c…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1243991326946807808)

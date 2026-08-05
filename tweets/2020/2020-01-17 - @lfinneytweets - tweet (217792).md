@@ -17,10 +17,10 @@ related:
   - lfinneytweets
 ---
 
-@Johnson_DavidW @OneFatCatsMom https://t.co/XviI1r6GIS
+@Johnson_DavidW @OneFatCatsMom <https://t.co/XviI1r6GIS>
 
 ## Links
-- https://x.com/lfinneytweets/status/1217885430223261696?s=19
+- <https://x.com/lfinneytweets/status/1217885430223261696?s=19>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

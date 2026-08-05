@@ -16,10 +16,10 @@ related:
   - lfinneytweets
 ---
 
-@brianalmon https://t.co/aZ582CRgSi
+@brianalmon <https://t.co/aZ582CRgSi>
 
 ## Links
-- https://www.youtube.com/watch?v=pklr0UD9eSo
+- <https://www.youtube.com/watch?v=pklr0UD9eSo>
 
 *In reply to [@brianalmon](https://twitter.com/brianalmon)*
 

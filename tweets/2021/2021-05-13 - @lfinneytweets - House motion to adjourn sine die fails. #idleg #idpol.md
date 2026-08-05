@@ -18,7 +18,7 @@ related:
   - idpol
 ---
 
-House motion to adjourn sine die fails. #idleg #idpol https://t.co/BDAgGULkOd
+House motion to adjourn sine die fails. #idleg #idpol <https://t.co/BDAgGULkOd>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/E1Po_wVUYAAmxEs.jpg)

@@ -13,7 +13,7 @@ related:
   - lfinneytweets
 ---
 
-@davlinnews It'll be okay! Just a little poke. And I've been needing to schedule a regular appointment anyway 😅 https://t.co/zjHQePFHJr
+@davlinnews It'll be okay! Just a little poke. And I've been needing to schedule a regular appointment anyway 😅 <https://t.co/zjHQePFHJr>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EbEAoRUUMAANrRz.jpg)

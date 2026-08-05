@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-RT @mattdpearce: The Los Angeles Times' new owner, Patrick Soon-Shiong, just sent his first letter to our newsroom: https://t.co/KwD5J92e4t
+RT @mattdpearce: The Los Angeles Times' new owner, Patrick Soon-Shiong, just sent his first letter to our newsroom: <https://t.co/KwD5J92e4t>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/DVeseM-VQAAccw1.jpg)

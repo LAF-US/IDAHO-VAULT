@@ -20,10 +20,10 @@ related:
 ---
 
 Here's what we know so far! #idleg #idpol 
-https://t.co/puoSIAHVHM
+<https://t.co/puoSIAHVHM>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2025/02/14/complete-fabrications-lawmakers-receive-fake-constituent-emails-regarding-grocery-tax-legislation/
+- <https://blog.idahoreports.idahoptv.org/2025/02/14/complete-fabrications-lawmakers-receive-fake-constituent-emails-regarding-grocery-tax-legislation/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

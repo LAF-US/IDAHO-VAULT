@@ -16,7 +16,7 @@ related:
   - pride
 ---
 
-June is LGBTQ+ Pride Month! This is the original #pride flag design by Gilbert Baker flown at the San Francisco Gay Freedom Day Parade, June 25, 1978 🏳️‍🌈 https://t.co/o7AjsmLUVO
+June is LGBTQ+ Pride Month! This is the original #pride flag design by Gilbert Baker flown at the San Francisco Gay Freedom Day Parade, June 25, 1978 🏳️‍🌈 <https://t.co/o7AjsmLUVO>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/DepUnSAV4AEydkl.jpg)

@@ -13,9 +13,9 @@ related:
   - lfinneytweets
 ---
 
-Hmmmmmmm https://t.co/x8AHSmnXRd
+Hmmmmmmm <https://t.co/x8AHSmnXRd>
 
 ## Links
-- https://x.com/danielwreporter/status/1351988250936713216
+- <https://x.com/danielwreporter/status/1351988250936713216>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1352006474675879936)

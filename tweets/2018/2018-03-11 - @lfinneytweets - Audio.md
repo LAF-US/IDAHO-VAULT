@@ -14,10 +14,10 @@ related:
   - lfinneytweets
 ---
 
-Audio: https://t.co/duPDDqiYMZ
+Audio: <https://t.co/duPDDqiYMZ>
 
 ## Links
-- https://x.com/IdahoPubRadio/status/972635362966224896?s=19
+- <https://x.com/IdahoPubRadio/status/972635362966224896?s=19>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

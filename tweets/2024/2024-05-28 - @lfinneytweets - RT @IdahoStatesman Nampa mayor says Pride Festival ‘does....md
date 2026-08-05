@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoStatesman: Nampa mayor says Pride Festival ‘does not reflect’ her beliefs, but city must allow it https://t.co/yIBDc1tewa
+RT @IdahoStatesman: Nampa mayor says Pride Festival ‘does not reflect’ her beliefs, but city must allow it <https://t.co/yIBDc1tewa>
 
 ## Links
-- https://www.idahostatesman.com/news/local/community/canyon-county/article288809225.html?taid=66564ce6569ae500010ee6c3&utm_campaign=trueanthem&utm_medium=social&utm_source=twitter
+- <https://www.idahostatesman.com/news/local/community/canyon-county/article288809225.html?taid=66564ce6569ae500010ee6c3&utm_campaign=trueanthem&utm_medium=social&utm_source=twitter>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1795591479412592706)

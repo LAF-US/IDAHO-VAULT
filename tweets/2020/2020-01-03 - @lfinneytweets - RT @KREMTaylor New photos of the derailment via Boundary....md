@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-RT @KREMTaylor: New photos of the derailment via Boundary County Emergency Management. https://t.co/GCHOeNI26K
+RT @KREMTaylor: New photos of the derailment via Boundary County Emergency Management. <https://t.co/GCHOeNI26K>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/ENUPG6vWoAM8Xmw.jpg)

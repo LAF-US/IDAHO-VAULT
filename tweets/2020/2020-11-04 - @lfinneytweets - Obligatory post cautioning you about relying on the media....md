@@ -13,7 +13,7 @@ related:
   - lfinneytweets
 ---
 
-Obligatory post cautioning you about relying on "the media" to call election results https://t.co/5i29bsEaoK
+Obligatory post cautioning you about relying on "the media" to call election results <https://t.co/5i29bsEaoK>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/El8bwZnVoAAZMKG.jpg)

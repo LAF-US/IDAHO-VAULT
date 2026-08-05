@@ -14,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-Capitol steps afterward. https://t.co/sVo75OOt7o
+Capitol steps afterward. <https://t.co/sVo75OOt7o>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EbQGS_yWAAAbpEI.jpg)

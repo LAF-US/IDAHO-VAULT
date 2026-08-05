@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-RT @bubbaprog: Police literally opening fire on the free press. https://t.co/g8RMImZLGr
+RT @bubbaprog: Police literally opening fire on the free press. <https://t.co/g8RMImZLGr>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EZOyY_5WoAATDXc.jpg)

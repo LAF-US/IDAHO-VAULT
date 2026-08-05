@@ -15,6 +15,6 @@ related:
   - lfinneytweets
 ---
 
-RT @josh_idaho: Idaho proudly casts all 32 delegate votes for the 45th and 47th President of the United States, Donald Trump! https://t.co/…
+RT @josh_idaho: Idaho proudly casts all 32 delegate votes for the 45th and 47th President of the United States, Donald Trump! <https://t.co/…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1812950907224748140)

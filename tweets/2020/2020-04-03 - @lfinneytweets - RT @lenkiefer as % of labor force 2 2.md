@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-RT @lenkiefer: as % of labor force 2/2 https://t.co/2q2NZB81yX
+RT @lenkiefer: as % of labor force 2/2 <https://t.co/2q2NZB81yX>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/EUmfd2qXsAAEvcn.jpg)

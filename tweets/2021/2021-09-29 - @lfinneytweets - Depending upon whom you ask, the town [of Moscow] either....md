@@ -18,9 +18,9 @@ related:
   - idpol
 ---
 
-"Depending upon whom you ask, the town [of Moscow] either hosts a Calvinist utopia or a patriarchal cult in which women must submit or face discipline at home and at church." (via @VICE) *contains descriptions of sexual violence* #idpol https://t.co/sds7OZNdTY
+"Depending upon whom you ask, the town [of Moscow] either hosts a Calvinist utopia or a patriarchal cult in which women must submit or face discipline at home and at church." (via @VICE) *contains descriptions of sexual violence* #idpol <https://t.co/sds7OZNdTY>
 
 ## Links
-- https://x.com/sarahstankorb/status/1442886812750401542
+- <https://x.com/sarahstankorb/status/1442886812750401542>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1443285677332783108)

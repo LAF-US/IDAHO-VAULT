@@ -20,6 +20,6 @@ related:
   - idpol
 ---
 
-RT @IdahoReports: The sponsor said the popularity of absentee ballots could be detrimental to the voting process. #idleg #idpol https://t.c…
+RT @IdahoReports: The sponsor said the popularity of absentee ballots could be detrimental to the voting process. #idleg #idpol <https://t.c…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1621205005310255104)

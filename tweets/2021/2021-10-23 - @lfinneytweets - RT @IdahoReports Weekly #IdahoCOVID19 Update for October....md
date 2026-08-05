@@ -20,9 +20,9 @@ related:
 ---
 
 RT @IdahoReports: Weekly #IdahoCOVID19 Update for October 22, 2021 | @IdahoPTV 
-https://t.co/7PqSxgL153
+<https://t.co/7PqSxgL153>
 
 ## Links
-- https://youtu.be/Fa3mn0wQe0Q
+- <https://youtu.be/Fa3mn0wQe0Q>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1451709581290213376)

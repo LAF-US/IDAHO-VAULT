@@ -20,7 +20,7 @@ related:
   - idpol
 ---
 
-RT @BetsyZRussell: House has convened... #idleg #idpol https://t.co/ikPx5h8uw1
+RT @BetsyZRussell: House has convened... #idleg #idpol <https://t.co/ikPx5h8uw1>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/Ew2ztUkUYAEzrm3.jpg)

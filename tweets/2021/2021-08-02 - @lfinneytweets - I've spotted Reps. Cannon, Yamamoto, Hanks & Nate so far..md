@@ -14,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-I've spotted Reps. Cannon, Yamamoto, Hanks & Nate so far. https://t.co/a3A4Anxr3f
+I've spotted Reps. Cannon, Yamamoto, Hanks & Nate so far. <https://t.co/a3A4Anxr3f>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/E7ywWm8VIAcnFX7.jpg)

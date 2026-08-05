@@ -16,9 +16,9 @@ related:
   - idleg
 ---
 
-CORRECTION: It's the end of March, who knows when anything will happen. #idleg https://t.co/5Iw2bYjFzv
+CORRECTION: It's the end of March, who knows when anything will happen. #idleg <https://t.co/5Iw2bYjFzv>
 
 ## Links
-- https://x.com/BetsyZRussell/status/1507441211040141318
+- <https://x.com/BetsyZRussell/status/1507441211040141318>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1507450720835964928)

@@ -19,9 +19,9 @@ related:
 ---
 
 Updated post: Dates and times have been scheduled for all of the redistricting meetings across the state. Many locations are still TBD. #idleg #idpol 
-https://t.co/13XBOuZk2s
+<https://t.co/13XBOuZk2s>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2021/09/09/redistricting-commission-takes-first-crack-at-redrawing-maps/
+- <https://blog.idahoreports.idahoptv.org/2021/09/09/redistricting-commission-takes-first-crack-at-redrawing-maps/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1437910093413044225)

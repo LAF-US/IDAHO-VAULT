@@ -19,10 +19,10 @@ related:
 ---
 
 @brockforidaho @HerndonforIdaho @freedomcaucusID Fish & Game and the Office of Species Conservation and Dept. of Agriculture
-https://t.co/Xw4nu5tJVa
+<https://t.co/Xw4nu5tJVa>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2024/02/27/house-passes-wolf-and-grizzly-depredation-bill/
+- <https://blog.idahoreports.idahoptv.org/2024/02/27/house-passes-wolf-and-grizzly-depredation-bill/>
 
 *In reply to [@brockforidaho](https://twitter.com/brockforidaho)*
 

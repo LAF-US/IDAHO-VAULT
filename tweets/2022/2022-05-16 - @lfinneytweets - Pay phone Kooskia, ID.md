@@ -15,7 +15,7 @@ related:
 
 Pay phone 
 
-Kooskia, ID https://t.co/s8nu4e2jlP
+Kooskia, ID <https://t.co/s8nu4e2jlP>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FS2bUPGXwAE0KTQ.jpg)

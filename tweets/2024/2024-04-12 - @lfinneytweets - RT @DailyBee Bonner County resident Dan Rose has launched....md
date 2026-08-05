@@ -17,6 +17,6 @@ related:
 
 RT @DailyBee: Bonner County resident Dan Rose has launched an independent candidacy campaign for Idaho State Senate, District 1.
 
-https://t…
+<https://t…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1778922618630107229)

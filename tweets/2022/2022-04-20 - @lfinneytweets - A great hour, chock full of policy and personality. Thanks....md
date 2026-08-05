@@ -25,9 +25,9 @@ related:
   - idpol
 ---
 
-A great hour, chock full of policy and personality. Thanks @davlinnews @RuthBrownNews @KeithRidler @MorganRomeroTV @RadioDawson  @Macomber4Idaho @Raul_Labrador @lawrencewasden for your time before Idaho voters tonight. #idleg #idpol https://t.co/ckXsHoDj7v
+A great hour, chock full of policy and personality. Thanks @davlinnews @RuthBrownNews @KeithRidler @MorganRomeroTV @RadioDawson  @Macomber4Idaho @Raul_Labrador @lawrencewasden for your time before Idaho voters tonight. #idleg #idpol <https://t.co/ckXsHoDj7v>
 
 ## Links
-- https://x.com/BetsyZRussell/status/1516639149456969730
+- <https://x.com/BetsyZRussell/status/1516639149456969730>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1516650157252653058)

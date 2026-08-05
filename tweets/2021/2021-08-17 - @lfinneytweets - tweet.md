@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-@HDruzin https://t.co/DRziZVUSp5
+@HDruzin <https://t.co/DRziZVUSp5>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/E9BwpBzVcAEk5If.jpg)

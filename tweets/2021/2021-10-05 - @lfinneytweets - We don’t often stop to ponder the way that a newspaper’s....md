@@ -13,9 +13,9 @@ related:
   - lfinneytweets
 ---
 
-"We don’t often stop to ponder the way that a newspaper’s collapse makes people feel: less connected, more alone. As local news crumbles, so does our tether to one another." https://t.co/tRMv8Fhjnx
+"We don’t often stop to ponder the way that a newspaper’s collapse makes people feel: less connected, more alone. As local news crumbles, so does our tether to one another." <https://t.co/tRMv8Fhjnx>
 
 ## Links
-- https://t.co/tRMv8Fhjnx
+- <https://t.co/tRMv8Fhjnx>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1445444769233076231)

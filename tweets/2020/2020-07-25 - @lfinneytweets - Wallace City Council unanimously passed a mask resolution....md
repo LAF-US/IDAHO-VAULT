@@ -19,9 +19,9 @@ related:
 ---
 
 Wallace City Council unanimously passed a mask resolution Friday. Per city officials, specifics borrow heavily from a similar mandate in McCall requiring masks in any public place or unprotected social interaction inside city limits. #IdahoCOVID19 #idpol 
-https://t.co/2989b95H2s
+<https://t.co/2989b95H2s>
 
 ## Links
-- https://shoshonenewspress.com/news/2020/jul/24/mask-order-effect-wallace/
+- <https://shoshonenewspress.com/news/2020/jul/24/mask-order-effect-wallace/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1286827847986720768)

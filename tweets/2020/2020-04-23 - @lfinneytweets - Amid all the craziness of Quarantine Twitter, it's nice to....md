@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-Amid all the craziness of Quarantine Twitter, it's nice to get a polite memo from @realDonaldTrump every once in a while. https://t.co/GtXVgZLjrH
+Amid all the craziness of Quarantine Twitter, it's nice to get a polite memo from @realDonaldTrump every once in a while. <https://t.co/GtXVgZLjrH>
 
 ## Links
-- https://x.com/russelneiss/status/1253427847177179138
+- <https://x.com/russelneiss/status/1253427847177179138>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1253428306612903937)

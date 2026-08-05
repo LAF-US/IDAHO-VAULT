@@ -17,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-@brandendurst @NorthIdaho https://t.co/L40UtfYrqX
+@brandendurst @NorthIdaho <https://t.co/L40UtfYrqX>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/FkIexttaUAIObOD.jpg)

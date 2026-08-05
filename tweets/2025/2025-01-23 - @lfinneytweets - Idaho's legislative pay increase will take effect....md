@@ -17,9 +17,9 @@ related:
 ---
 
 Idaho's legislative pay increase will take effect automatically if there is no action by lawmakers before the 25th day of the session, which this year falls on January 30th. #idleg 
-https://t.co/3IYbCPeWuP
+<https://t.co/3IYbCPeWuP>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2025/01/22/house-leaders-want-to-preserve-lawmaker-pay-raise/
+- <https://blog.idahoreports.idahoptv.org/2025/01/22/house-leaders-want-to-preserve-lawmaker-pay-raise/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1882484189536428461)

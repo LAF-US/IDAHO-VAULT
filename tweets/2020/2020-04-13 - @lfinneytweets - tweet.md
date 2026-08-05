@@ -14,10 +14,10 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/8kVPpdOJH4
+<https://t.co/8kVPpdOJH4>
 
 ## Links
-- https://genius.com/amp/John-steinbeck-grapes-of-wrath-chapter-25-annotated
+- <https://genius.com/amp/John-steinbeck-grapes-of-wrath-chapter-25-annotated>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

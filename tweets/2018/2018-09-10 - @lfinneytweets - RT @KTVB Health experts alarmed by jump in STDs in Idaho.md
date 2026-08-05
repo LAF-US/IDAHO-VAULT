@@ -15,10 +15,10 @@ related:
   - lfinneytweets
 ---
 
-RT @KTVB: Health experts alarmed by jump in STDs in Idaho https://t.co/B1lfy10QgU https://t.co/2c0CmUDqan
+RT @KTVB: Health experts alarmed by jump in STDs in Idaho <https://t.co/B1lfy10QgU> <https://t.co/2c0CmUDqan>
 
 ## Links
-- https://on.ktvb.com/2oVZSVi
+- <https://on.ktvb.com/2oVZSVi>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/DmtaI6BX4AAQxiF.jpg)

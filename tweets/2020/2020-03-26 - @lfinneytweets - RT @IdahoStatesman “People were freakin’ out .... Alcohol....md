@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoStatesman: “People were freakin’ out .... Alcohol is important to people, obviously.” https://t.co/6HDX9DCACm
+RT @IdahoStatesman: “People were freakin’ out .... Alcohol is important to people, obviously.” <https://t.co/6HDX9DCACm>
 
 ## Links
-- https://trib.al/7fflpvv
+- <https://trib.al/7fflpvv>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1243321405040517125)

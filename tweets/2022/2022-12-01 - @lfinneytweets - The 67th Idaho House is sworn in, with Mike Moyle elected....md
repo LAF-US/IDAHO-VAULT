@@ -19,7 +19,7 @@ related:
   - idpol
 ---
 
-The 67th Idaho House is sworn in, with Mike Moyle elected Speaker. #idleg #idpol https://t.co/jMdqPPX17N
+The 67th Idaho House is sworn in, with Mike Moyle elected Speaker. #idleg #idpol <https://t.co/jMdqPPX17N>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/Fi57XhCVIAAi9CM.jpg)

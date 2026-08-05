@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-RT @APWestRegion: Harried parents trapped at home amid virus shutdowns are just giving up on distance learning. https://t.co/glGmD8moUM
+RT @APWestRegion: Harried parents trapped at home amid virus shutdowns are just giving up on distance learning. <https://t.co/glGmD8moUM>
 
 ## Links
-- http://apne.ws/i0RIIqn
+- <http://apne.ws/i0RIIqn>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1252642342445576192)

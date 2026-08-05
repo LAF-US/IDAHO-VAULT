@@ -18,10 +18,10 @@ related:
   - lfinneytweets
 ---
 
-@ben_a_goldfarb @suehalpernVT “The bottom has just dropped out,” James said. “Research is at a standstill. We haven’t even been able to locate just a few [monarchs] to restart our breeding program.” @RHaunID @SpokesmanReview  https://t.co/HWsGuDWMWq
+@ben_a_goldfarb @suehalpernVT “The bottom has just dropped out,” James said. “Research is at a standstill. We haven’t even been able to locate just a few [monarchs] to restart our breeding program.” @RHaunID @SpokesmanReview  <https://t.co/HWsGuDWMWq>
 
 ## Links
-- https://www.spokesman.com/stories/2020/aug/02/the-bottom-has-just-dropped-out-as-insect-populati/
+- <https://www.spokesman.com/stories/2020/aug/02/the-bottom-has-just-dropped-out-as-insect-populati/>
 
 *In reply to [@ben_a_goldfarb](https://twitter.com/ben_a_goldfarb)*
 

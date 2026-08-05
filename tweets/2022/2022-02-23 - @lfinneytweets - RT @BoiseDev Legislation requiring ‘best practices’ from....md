@@ -15,6 +15,6 @@ related:
   - lfinneytweets
 ---
 
-RT @BoiseDev: Legislation requiring ‘best practices’ from landlords during rental application process heads to House floor https://t.co/Nyc…
+RT @BoiseDev: Legislation requiring ‘best practices’ from landlords during rental application process heads to House floor <https://t.co/Nyc…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1496523558675435521)

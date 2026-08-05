@@ -19,9 +19,9 @@ related:
   - idpol
 ---
 
-My latest for @IdahoReports digs into the 2020 presidential election and its allegations of voter fraud and misconduct in multiple states. Endless thanks to @bplenercover for getting into the constitutional weeds with me and explaining things so clearly. #idpol https://t.co/6NnNqKwA7N
+My latest for @IdahoReports digs into the 2020 presidential election and its allegations of voter fraud and misconduct in multiple states. Endless thanks to @bplenercover for getting into the constitutional weeds with me and explaining things so clearly. #idpol <https://t.co/6NnNqKwA7N>
 
 ## Links
-- https://x.com/IdahoReports/status/1360412711687888900
+- <https://x.com/IdahoReports/status/1360412711687888900>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1360413841876680711)

@@ -21,9 +21,9 @@ Overall @uidaho enrollment came in at 11,926, a <1% increase.
 
 –1,475 1st-year students this fall, a 2% increase
 
-–Retention rate of students returning for their second year dropped from 81% last year to 77% this year https://t.co/AaZ5X9DB0b
+–Retention rate of students returning for their second year dropped from 81% last year to 77% this year <https://t.co/AaZ5X9DB0b>
 
 ## Links
-- https://x.com/idahoednews/status/1187087360028106753
+- <https://x.com/idahoednews/status/1187087360028106753>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1187116586122936321)

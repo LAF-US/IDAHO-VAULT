@@ -16,9 +16,9 @@ related:
   - idpol
 ---
 
-blissfully ignoring royals, confusedly thinking for a moment this was a weirdly specific #idpol dig https://t.co/RVmkgbl5IR
+blissfully ignoring royals, confusedly thinking for a moment this was a weirdly specific #idpol dig <https://t.co/RVmkgbl5IR>
 
 ## Links
-- https://x.com/dieworkwear/status/1767395915369980294
+- <https://x.com/dieworkwear/status/1767395915369980294>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1767408192588517522)

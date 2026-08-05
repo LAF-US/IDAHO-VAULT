@@ -17,9 +17,9 @@ related:
 
 RT @IdSBOE: BOARD TO REVIEW POLICIES ON ACADEMIC FREEDOM AND RESPONSIBILITY ON IDAHO CAMPUSES
 
-Full details here: https://t.co/7qGvXnJEvx
+Full details here: <https://t.co/7qGvXnJEvx>
 
 ## Links
-- https://boardofed.idaho.gov/resources/board-to-review-policies-on-academic-freedom-and-responsibility-on-idaho-campuses/
+- <https://boardofed.idaho.gov/resources/board-to-review-policies-on-academic-freedom-and-responsibility-on-idaho-campuses/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1385364766990823426)

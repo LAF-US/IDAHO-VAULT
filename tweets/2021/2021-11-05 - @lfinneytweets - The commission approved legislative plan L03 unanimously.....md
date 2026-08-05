@@ -19,9 +19,9 @@ related:
 ---
 
 The commission approved legislative plan L03 unanimously. Commissioners Nels Mitchell and Dan Schmidt both voted against congressional plan C03. #idleg #idpol 
-https://t.co/prFrJshGMQ
+<https://t.co/prFrJshGMQ>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2021/11/05/idaho-final-redistricting-maps-approved/
+- <https://blog.idahoreports.idahoptv.org/2021/11/05/idaho-final-redistricting-maps-approved/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1456752387180220419)

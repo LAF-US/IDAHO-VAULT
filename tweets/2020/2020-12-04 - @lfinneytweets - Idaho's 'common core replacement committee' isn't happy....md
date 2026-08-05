@@ -22,9 +22,9 @@ related:
 ---
 
 Idaho's 'common core replacement committee' isn't happy with the revisions so far, @clarkcorbin writes for @idahoednews. #idpol #idleg 
-https://t.co/rHlmq8wtMH
+<https://t.co/rHlmq8wtMH>
 
 ## Links
-- https://www.idahoednews.org/news/legislative-interim-committee-expresses-ongoing-concerns-with-academic-standards/
+- <https://www.idahoednews.org/news/legislative-interim-committee-expresses-ongoing-concerns-with-academic-standards/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1334985160404606977)

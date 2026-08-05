@@ -13,9 +13,9 @@ related:
   - lfinneytweets
 ---
 
-Let's goooooooo https://t.co/QNss4UgJHu
+Let's goooooooo <https://t.co/QNss4UgJHu>
 
 ## Links
-- https://x.com/IdahoNews6/status/1805803683575222311
+- <https://x.com/IdahoNews6/status/1805803683575222311>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1805988818946031962)

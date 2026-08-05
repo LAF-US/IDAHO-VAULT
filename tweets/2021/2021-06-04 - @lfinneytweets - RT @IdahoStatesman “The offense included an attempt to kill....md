@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoStatesman: “The offense included an attempt to kill the individual.” https://t.co/KYrtRzL24L
+RT @IdahoStatesman: “The offense included an attempt to kill the individual.” <https://t.co/KYrtRzL24L>
 
 ## Links
-- https://trib.al/9FMNZIt
+- <https://trib.al/9FMNZIt>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1400855376069742594)

@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-RT @registerguard: Rep. Mike Nearman stripped of committees, Speaker Kotek calls for his resignation https://t.co/IDzqa9wDyf
+RT @registerguard: Rep. Mike Nearman stripped of committees, Speaker Kotek calls for his resignation <https://t.co/IDzqa9wDyf>
 
 ## Links
-- https://bit.ly/2LmlkkU
+- <https://bit.ly/2LmlkkU>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1348894109646217217)

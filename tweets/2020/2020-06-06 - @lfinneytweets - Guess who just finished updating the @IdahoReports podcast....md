@@ -21,10 +21,10 @@ related:
 ---
 
 Guess who just finished updating the @IdahoReports podcast feed? (Hint: me!) #idpol #AttentionIdahoReporters 
-https://t.co/FmMDgK5gOQ https://t.co/eRSU9N99XG
+<https://t.co/FmMDgK5gOQ> <https://t.co/eRSU9N99XG>
 
 ## Links
-- https://soundcloud.com/idaho-reports
+- <https://soundcloud.com/idaho-reports>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/EZyxKYAUwAELaXX.jpg)

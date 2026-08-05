@@ -15,6 +15,6 @@ related:
   - lfinneytweets
 ---
 
-RT @CdAPressNews: A U.S. judge in Spokane rejected a water park's challenge to Gov. Jay Inslee's use of emergency powers. https://t.co/A11Y…
+RT @CdAPressNews: A U.S. judge in Spokane rejected a water park's challenge to Gov. Jay Inslee's use of emergency powers. <https://t.co/A11Y…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1283863498720604161)

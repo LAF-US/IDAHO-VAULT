@@ -16,9 +16,9 @@ related:
 ---
 
 A North Idaho perspective on the week's happenings from the @sndpnt_reader. 
-https://t.co/k5AtV9UWRH
+<https://t.co/k5AtV9UWRH>
 
 ## Links
-- https://sandpointreader.com/here-we-have-idaho-this-is-not-necessary/
+- <https://sandpointreader.com/here-we-have-idaho-this-is-not-necessary/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1462206563649613826)

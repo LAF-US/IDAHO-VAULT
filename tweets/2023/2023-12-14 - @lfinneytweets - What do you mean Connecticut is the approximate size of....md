@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-@IdahoReports What do you mean Connecticut is the approximate size of Bonner + Boundary counties yet it gets two entire U.S. Senators all to itself? https://t.co/KdWxTJAWGa
+@IdahoReports What do you mean Connecticut is the approximate size of Bonner + Boundary counties yet it gets two entire U.S. Senators all to itself? <https://t.co/KdWxTJAWGa>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GBRHTeibgAAlTzP.jpg)

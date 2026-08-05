@@ -19,7 +19,7 @@ related:
 
 Cumulative #IdahoCOVID19 cases.
 Thursday, March 12: first confirmed case
-Thursday, April 9 (week four): 1,353 https://t.co/ZQeHB94IFn
+Thursday, April 9 (week four): 1,353 <https://t.co/ZQeHB94IFn>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EVN138mUMAIkn04.jpg)

@@ -18,9 +18,9 @@ related:
 ---
 
 @AmyTheSnowWoman @thelocalhistory @PauletteEJordan @SenatorRisch I did a piece in a similar vein comparing Jordan's 2018 and 2020 races. 
-https://t.co/2Qm02vLTVk
+<https://t.co/2Qm02vLTVk>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2020/11/06/analysis-jordan-results-reveal-idaho-gop-benefitted-from-record-turnout/
+- <https://blog.idahoreports.idahoptv.org/2020/11/06/analysis-jordan-results-reveal-idaho-gop-benefitted-from-record-turnout/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1346263574201524224)

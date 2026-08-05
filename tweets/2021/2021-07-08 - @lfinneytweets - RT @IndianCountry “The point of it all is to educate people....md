@@ -16,6 +16,6 @@ related:
 ---
 
 RT @IndianCountry: “The point of it all is to educate people on what happened to our people and what happened in Canada.”
-https://t.co/mJJH…
+<https://t.co/mJJH…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1412958266582204418)

@@ -18,9 +18,9 @@ related:
   - idpol
 ---
 
-One of many artificial intelligence bills floating around the Idaho statehouse: HB 465 expands Idaho's child pornography laws to cover AI-generated images. #idleg #idpol https://t.co/UL3VSEISl3
+One of many artificial intelligence bills floating around the Idaho statehouse: HB 465 expands Idaho's child pornography laws to cover AI-generated images. #idleg #idpol <https://t.co/UL3VSEISl3>
 
 ## Links
-- https://x.com/IdahoReports/status/1757514730846220466
+- <https://x.com/IdahoReports/status/1757514730846220466>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1757540037074591781)

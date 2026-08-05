@@ -20,9 +20,9 @@ related:
   - lfinneytweets
 ---
 
-@RadioDawson @audreydutton @HayatNorimine @KTVBJoe @boiseboone @BetsyZRussell @LewistonTribune https://t.co/N5jiDoDnXh
+@RadioDawson @audreydutton @HayatNorimine @KTVBJoe @boiseboone @BetsyZRussell @LewistonTribune <https://t.co/N5jiDoDnXh>
 
 ## Links
-- https://x.com/lfinneytweets/status/1425926220781260801
+- <https://x.com/lfinneytweets/status/1425926220781260801>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1426209511623200770)

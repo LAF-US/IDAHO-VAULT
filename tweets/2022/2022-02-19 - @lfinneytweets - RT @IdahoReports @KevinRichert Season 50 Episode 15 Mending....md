@@ -22,9 +22,9 @@ related:
 ---
 
 RT @IdahoReports: @KevinRichert Season 50 Episode 15: Mending Systems, Helping Students... #idleg #idpol 
-https://t.co/aDTLuBsCW2
+<https://t.co/aDTLuBsCW2>
 
 ## Links
-- https://video.idahoptv.org/video/mending-systems-helping-students-feb-18-2022-cd4glp/
+- <https://video.idahoptv.org/video/mending-systems-helping-students-feb-18-2022-cd4glp/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1494878702261260289)

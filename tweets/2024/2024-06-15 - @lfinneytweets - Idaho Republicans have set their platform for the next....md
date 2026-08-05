@@ -17,9 +17,9 @@ related:
 ---
 
 Idaho Republicans have set their platform for the next election cycle. #idpol 
-https://t.co/p53Jt47k9p
+<https://t.co/p53Jt47k9p>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2024/06/15/gop-platform-changes-include-opposition-to-workforce-training-funding-embryo-destruction/
+- <https://blog.idahoreports.idahoptv.org/2024/06/15/gop-platform-changes-include-opposition-to-workforce-training-funding-embryo-destruction/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1802100089986637997)

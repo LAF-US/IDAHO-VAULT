@@ -20,9 +20,9 @@ related:
   - idleg
 ---
 
-RT @IdahoReports: Catch up on all the #idpol news with our first mid-week newsletter of the #idleg session: https://t.co/n99SIZl5Po https:/…
+RT @IdahoReports: Catch up on all the #idpol news with our first mid-week newsletter of the #idleg session: <https://t.co/n99SIZl5Po> https:/…
 
 ## Links
-- https://conta.cc/3DQRdtV
+- <https://conta.cc/3DQRdtV>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1623334145882746880)

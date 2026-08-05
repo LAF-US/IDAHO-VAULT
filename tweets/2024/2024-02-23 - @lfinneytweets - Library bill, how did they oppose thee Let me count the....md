@@ -18,9 +18,9 @@ related:
   - idleg
 ---
 
-Library bill, how did they oppose thee? Let me count the ways. #idpol #idleg https://t.co/XwdBb3Ud4P
+Library bill, how did they oppose thee? Let me count the ways. #idpol #idleg <https://t.co/XwdBb3Ud4P>
 
 ## Links
-- https://x.com/IdahoReports/status/1760817303833473475
+- <https://x.com/IdahoReports/status/1760817303833473475>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1760817667202793855)

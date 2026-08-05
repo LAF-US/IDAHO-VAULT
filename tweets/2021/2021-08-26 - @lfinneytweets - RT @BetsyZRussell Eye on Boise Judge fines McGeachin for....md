@@ -18,6 +18,6 @@ related:
   - idpol
 ---
 
-RT @BetsyZRussell: Eye on Boise: Judge fines McGeachin for 'bad faith' violations of Idaho Public Records Act #idpol  https://t.co/U8wzJB9k…
+RT @BetsyZRussell: Eye on Boise: Judge fines McGeachin for 'bad faith' violations of Idaho Public Records Act #idpol  <https://t.co/U8wzJB9k…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1431042787558842371)

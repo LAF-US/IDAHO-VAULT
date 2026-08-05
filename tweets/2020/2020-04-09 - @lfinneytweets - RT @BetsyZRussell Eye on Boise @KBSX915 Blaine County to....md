@@ -21,6 +21,6 @@ related:
   - idpol
 ---
 
-RT @BetsyZRussell: Eye on Boise: @KBSX915: Blaine County to participate in clinical study on #COVID19 antibodies #idpol  https://t.co/P4bIq…
+RT @BetsyZRussell: Eye on Boise: @KBSX915: Blaine County to participate in clinical study on #COVID19 antibodies #idpol  <https://t.co/P4bIq…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1248328738846027778)

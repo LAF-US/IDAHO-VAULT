@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoStatesman: “The question I ask myself every morning.” https://t.co/Sw4Eqy31bh
+RT @IdahoStatesman: “The question I ask myself every morning.” <https://t.co/Sw4Eqy31bh>
 
 ## Links
-- https://trib.al/GkYibny
+- <https://trib.al/GkYibny>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1255717177052676096)

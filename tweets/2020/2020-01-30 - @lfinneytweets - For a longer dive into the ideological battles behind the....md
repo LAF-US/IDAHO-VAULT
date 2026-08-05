@@ -20,10 +20,10 @@ related:
 ---
 
 @lyndsie_kiebert @sndpnt_reader For a longer dive into the ideological battles behind the scenes here, @annehelen visited my hometown for @BuzzFeedNews 
-https://t.co/tHTdlqQ1k4
+<https://t.co/tHTdlqQ1k4>
 
 ## Links
-- https://www.buzzfeednews.com/article/annehelenpetersen/idaho-redoubt-gun-control-rights-second-amendment
+- <https://www.buzzfeednews.com/article/annehelenpetersen/idaho-redoubt-gun-control-rights-second-amendment>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

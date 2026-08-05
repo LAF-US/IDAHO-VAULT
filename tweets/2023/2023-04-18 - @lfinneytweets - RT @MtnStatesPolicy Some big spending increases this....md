@@ -22,9 +22,9 @@ related:
 
 RT @MtnStatesPolicy: Some big spending increases this session in Idaho. Where is it going?
 
-https://t.co/8eWSvZc4pk #idpol #idleg
+<https://t.co/8eWSvZc4pk> #idpol #idleg
 
 ## Links
-- https://www.mountainstatespolicy.org/post/top-10-idaho-general-fund-spending
+- <https://www.mountainstatespolicy.org/post/top-10-idaho-general-fund-spending>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1648409843584368645)

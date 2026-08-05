@@ -22,10 +22,10 @@ related:
 ---
 
 Schriever joined us a year ago on @IdahoReports to talk about the first detection of chronic wasting disease in the state. #idleg #idpol 
-https://t.co/hnDQ5QMs5R
+<https://t.co/hnDQ5QMs5R>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2021/12/10/chronic-wasting-disease-surveillance-underway-in-central-idaho/
+- <https://blog.idahoreports.idahoptv.org/2021/12/10/chronic-wasting-disease-surveillance-underway-in-central-idaho/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

@@ -20,9 +20,9 @@ related:
 
 (@apalermooo, @uiargonaut) 
 Armed groups took to downtown Lewiston on Saturday, vowing to protect local businesses from potential looters. But the looters never came. A mile away, over 1,000 people attended the LC Valley Black Lives Matter protest. #idpol 
-https://t.co/1LwH7DTW51
+<https://t.co/1LwH7DTW51>
 
 ## Links
-- https://www.uiargonaut.com/2020/06/07/lc-valley-black-lives-matter-and-protect-lc-valley-rallies-took-place-1-mile-apart/
+- <https://www.uiargonaut.com/2020/06/07/lc-valley-black-lives-matter-and-protect-lc-valley-rallies-took-place-1-mile-apart/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1270077773185335303)

@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoPubRadio: The forecast: sunshine with a touch of @uidaho Kibbie Dome. https://t.co/6LuOMgIaYQ
+RT @IdahoPubRadio: The forecast: sunshine with a touch of @uidaho Kibbie Dome. <https://t.co/6LuOMgIaYQ>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EXb89lSUYAIEIed.jpg)

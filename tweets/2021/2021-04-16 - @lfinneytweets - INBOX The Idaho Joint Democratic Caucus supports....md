@@ -22,7 +22,7 @@ related:
 ---
 
 INBOX: The Idaho Joint Democratic Caucus supports @GovernorLittle's veto on emergency powers. 
-“It is critical that our executive branch can act swiftly and effectively, something that our legislative branch has not exactly modeled this session,” @IlanaRubel said. #idleg #idpol https://t.co/8f7trMIp3O
+“It is critical that our executive branch can act swiftly and effectively, something that our legislative branch has not exactly modeled this session,” @IlanaRubel said. #idleg #idpol <https://t.co/8f7trMIp3O>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EzIEOWcVUAAvQJj.png)

@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-RT @ByRachelRoberts: Um, excuse me?!? https://t.co/OFoaGjco0p
+RT @ByRachelRoberts: Um, excuse me?!? <https://t.co/OFoaGjco0p>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EkfLf1fU0AEPCnW.jpg)

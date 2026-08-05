@@ -14,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-Lawmakers re-entering the chamber after going out into the hallway, gathering chairs to sit in the well. https://t.co/k9TUmT7JIi
+Lawmakers re-entering the chamber after going out into the hallway, gathering chairs to sit in the well. <https://t.co/k9TUmT7JIi>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EbQDojlWAAAAsys.jpg)

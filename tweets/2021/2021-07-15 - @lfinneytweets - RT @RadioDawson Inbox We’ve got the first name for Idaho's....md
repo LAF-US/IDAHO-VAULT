@@ -20,7 +20,7 @@ related:
   - idleg
 ---
 
-RT @RadioDawson: Inbox: We’ve got the first name for Idaho's six-member redistricting commission #idpol #idleg https://t.co/nuAvHQVXMi
+RT @RadioDawson: Inbox: We’ve got the first name for Idaho's six-member redistricting commission #idpol #idleg <https://t.co/nuAvHQVXMi>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/E6WrLACUcAcC6rF.png)

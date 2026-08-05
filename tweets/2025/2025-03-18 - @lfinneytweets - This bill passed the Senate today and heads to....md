@@ -20,9 +20,9 @@ related:
   - idpol
 ---
 
-This bill passed the Senate today and heads to @GovernorLittle's desk. #idleg #idpol https://t.co/NwwnVpKALd
+This bill passed the Senate today and heads to @GovernorLittle's desk. #idleg #idpol <https://t.co/NwwnVpKALd>
 
 ## Links
-- https://x.com/lfinneytweets/status/1899962246148796656
+- <https://x.com/lfinneytweets/status/1899962246148796656>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1902141775764189393)

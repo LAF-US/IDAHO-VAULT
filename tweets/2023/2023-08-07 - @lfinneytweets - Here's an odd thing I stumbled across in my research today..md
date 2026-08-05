@@ -14,10 +14,10 @@ related:
 ---
 
 Here's an odd thing I stumbled across in my research today. 
-https://t.co/tEe1Zl0z4R https://t.co/57wl5InvLw
+<https://t.co/tEe1Zl0z4R> <https://t.co/57wl5InvLw>
 
 ## Links
-- https://www.atlasobscura.com/articles/strange-maps-the-disunited-states
+- <https://www.atlasobscura.com/articles/strange-maps-the-disunited-states>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/F28-W0KasAA5itF.jpg)

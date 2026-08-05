@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-RT @DavidNForIdaho: I am pleased to see this bill moving forward. https://t.co/XKuKLo9MRe
+RT @DavidNForIdaho: I am pleased to see this bill moving forward. <https://t.co/XKuKLo9MRe>
 
 ## Links
-- https://x.com/IlanaRubel/status/1100971921678643200
+- <https://x.com/IlanaRubel/status/1100971921678643200>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1101014475212242944)

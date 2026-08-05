@@ -22,9 +22,9 @@ related:
 ---
 
 Little hails from an older establishment line of Idaho Republicans. By contrast, McGeachin flourished as a new tea party conservative and gained more influence with the rise of Trump-era conservative populism, says @politico. #idpol #idleg @Ximena_Bustillo
-https://t.co/rNlL5nhDTD
+<https://t.co/rNlL5nhDTD>
 
 ## Links
-- https://politi.co/3vc8iHO
+- <https://politi.co/3vc8iHO>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1403428780933189635)

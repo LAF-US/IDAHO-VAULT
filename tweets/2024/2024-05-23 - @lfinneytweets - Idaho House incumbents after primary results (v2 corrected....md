@@ -16,7 +16,7 @@ related:
   - idleg
 ---
 
-Idaho House incumbents after primary results (v2 corrected thread) #idleg https://t.co/aVpJkLxISX
+Idaho House incumbents after primary results (v2 corrected thread) #idleg <https://t.co/aVpJkLxISX>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GOTLDpraoAEvuSY.jpg)

@@ -18,7 +18,7 @@ related:
   - idpol
 ---
 
-Special Session 2020 #idleg #idpol https://t.co/FOUx83x0q0
+Special Session 2020 #idleg #idpol <https://t.co/FOUx83x0q0>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EgMsb6eU8AELfLe.jpg)

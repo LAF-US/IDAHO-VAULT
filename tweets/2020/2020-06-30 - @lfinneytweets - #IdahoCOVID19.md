@@ -16,9 +16,9 @@ related:
   - IdahoCOVID19
 ---
 
-\#IdahoCOVID19 https://t.co/d9yLv0RhE9
+\#IdahoCOVID19 <https://t.co/d9yLv0RhE9>
 
 ## Links
-- https://x.com/NYGovCuomo/status/1277987460929159169
+- <https://x.com/NYGovCuomo/status/1277987460929159169>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1278050700967030784)

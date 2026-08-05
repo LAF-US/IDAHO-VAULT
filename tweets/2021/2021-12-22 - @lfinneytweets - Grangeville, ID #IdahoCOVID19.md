@@ -16,7 +16,7 @@ related:
   - IdahoCOVID19
 ---
 
-Grangeville, ID #IdahoCOVID19 https://t.co/qUfOMbw0mZ
+Grangeville, ID #IdahoCOVID19 <https://t.co/qUfOMbw0mZ>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FHP2kaoVcAE2gib.jpg)

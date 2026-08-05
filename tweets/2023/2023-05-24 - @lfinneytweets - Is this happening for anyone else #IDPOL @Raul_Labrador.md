@@ -18,7 +18,7 @@ related:
   - IDPOL
 ---
 
-Is this happening for anyone else? #IDPOL @Raul_Labrador https://t.co/qJVPcsNCcf
+Is this happening for anyone else? #IDPOL @Raul_Labrador <https://t.co/qJVPcsNCcf>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/Fw6HabDaEAIOC7-.jpg)

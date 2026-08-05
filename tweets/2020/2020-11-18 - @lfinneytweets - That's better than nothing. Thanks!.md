@@ -15,10 +15,10 @@ related:
 ---
 
 That's better than nothing. Thanks! 
-https://t.co/RzNuZT5ziO
+<https://t.co/RzNuZT5ziO>
 
 ## Links
-- https://x.com/IDHW/status/1328856303821873152
+- <https://x.com/IDHW/status/1328856303821873152>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

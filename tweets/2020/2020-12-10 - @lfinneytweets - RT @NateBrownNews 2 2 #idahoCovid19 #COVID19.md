@@ -20,7 +20,7 @@ related:
   - COVID19
 ---
 
-RT @NateBrownNews: 2/2 #idahoCovid19 #COVID19 https://t.co/6gvEpg8ljq
+RT @NateBrownNews: 2/2 #idahoCovid19 #COVID19 <https://t.co/6gvEpg8ljq>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/Eo5gqsGUcAExCsb.jpg)

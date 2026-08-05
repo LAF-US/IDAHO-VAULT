@@ -22,6 +22,6 @@ related:
   - idleg
 ---
 
-RT @HerndonforIdaho: I ask the IEA about teaching institutional racism and safe spaces for gender identity. #idedu #idpol #idleg https://t.…
+RT @HerndonforIdaho: I ask the IEA about teaching institutional racism and safe spaces for gender identity. #idedu #idpol #idleg <https://t.…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1615158725878378498)

@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-Triple byline today. Good work, @davlinnews & @RuthBrownNews. https://t.co/R6v6vsEpLx
+Triple byline today. Good work, @davlinnews & @RuthBrownNews. <https://t.co/R6v6vsEpLx>
 
 ## Links
-- https://x.com/IdahoReports/status/1445521072825110531
+- <https://x.com/IdahoReports/status/1445521072825110531>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1445524318130098178)

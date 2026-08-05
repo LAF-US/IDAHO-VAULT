@@ -18,7 +18,7 @@ related:
   - IdahoCOVID19
 ---
 
-\#IdahoCOVID19 @RepHeatherScott https://t.co/izYEnc7H4B
+\#IdahoCOVID19 @RepHeatherScott <https://t.co/izYEnc7H4B>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EWoTzFHVAAAfp7g.jpg)

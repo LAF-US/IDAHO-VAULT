@@ -19,7 +19,7 @@ related:
   - COVID19
 ---
 
-RT @IdahoPubRadio: Reminder from @IDHW— the #COVID19 hotline is now available. https://t.co/2fRGaapOVk
+RT @IdahoPubRadio: Reminder from @IDHW— the #COVID19 hotline is now available. <https://t.co/2fRGaapOVk>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EUznMUgU8AIvePN.jpg)

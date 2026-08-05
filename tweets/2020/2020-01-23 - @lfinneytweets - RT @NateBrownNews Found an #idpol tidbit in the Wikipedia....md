@@ -18,7 +18,7 @@ related:
   - idpol
 ---
 
-RT @NateBrownNews: Found an #idpol tidbit in the Wikipedia article on Daylight Savings Time. https://t.co/vCYhamaUXI
+RT @NateBrownNews: Found an #idpol tidbit in the Wikipedia article on Daylight Savings Time. <https://t.co/vCYhamaUXI>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EO-uZmNUYAAmcF8.jpg)

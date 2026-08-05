@@ -19,6 +19,6 @@ related:
 ---
 
 RT @IdahoReports: @IdahoPTV @BoiseState @LEAF_Research @HydroLejo Season 50 Episode 22: A Bleak Situation... #idleg #idpol 
-https://t.co/Mp…
+<https://t.co/Mp…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1512640296932167681)

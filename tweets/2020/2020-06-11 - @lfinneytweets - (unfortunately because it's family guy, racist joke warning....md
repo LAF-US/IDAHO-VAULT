@@ -15,10 +15,10 @@ related:
 ---
 
 (unfortunately because it's family guy, racist joke warning 2/3 of the way in) 
-https://t.co/MVcZMJ9xFU
+<https://t.co/MVcZMJ9xFU>
 
 ## Links
-- https://x.com/Bruiser4Eq/status/1270796995607830528
+- <https://x.com/Bruiser4Eq/status/1270796995607830528>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

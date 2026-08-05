@@ -18,7 +18,7 @@ related:
   - idpol
 ---
 
-It's official: Welcome to the 2023 Idaho Senate. #idleg #idpol https://t.co/PtwNLvRAMZ
+It's official: Welcome to the 2023 Idaho Senate. #idleg #idpol <https://t.co/PtwNLvRAMZ>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/Fi5uXIIVUAA4LFe.jpg)

@@ -20,9 +20,9 @@ related:
   - idpol
 ---
 
-The Faculty Assembly, Staff Assembly, and Associated Students of @NorthIdaho College have all passed votes of no confidence in the school's Board of Trustees. #idleg #idpol https://t.co/xlnogKScBd
+The Faculty Assembly, Staff Assembly, and Associated Students of @NorthIdaho College have all passed votes of no confidence in the school's Board of Trustees. #idleg #idpol <https://t.co/xlnogKScBd>
 
 ## Links
-- https://x.com/KayeThornbrugh/status/1603800757706588160
+- <https://x.com/KayeThornbrugh/status/1603800757706588160>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1603836077353373696)

@@ -18,7 +18,7 @@ related:
   - idleg
 ---
 
-University of Idaho students waited 5 or more hours to vote on campus Tuesday, per the Argonaut student newspaper. Delays caused by a bottleneck registering new voters with electronic poll books. #idpol #idleg https://t.co/XBneXHf91w
+University of Idaho students waited 5 or more hours to vote on campus Tuesday, per the Argonaut student newspaper. Delays caused by a bottleneck registering new voters with electronic poll books. #idpol #idleg <https://t.co/XBneXHf91w>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/Gb369bHbwAMnTUg.jpg)

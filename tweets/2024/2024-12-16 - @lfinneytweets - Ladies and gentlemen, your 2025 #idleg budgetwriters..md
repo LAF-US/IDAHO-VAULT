@@ -16,7 +16,7 @@ related:
   - idleg
 ---
 
-Ladies and gentlemen, your 2025 #idleg budgetwriters. https://t.co/g9u5ckPf0f
+Ladies and gentlemen, your 2025 #idleg budgetwriters. <https://t.co/g9u5ckPf0f>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/Ge8ue1RaMAAJjnL.jpg)

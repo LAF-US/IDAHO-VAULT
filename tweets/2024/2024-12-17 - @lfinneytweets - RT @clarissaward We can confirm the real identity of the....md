@@ -17,6 +17,6 @@ related:
 
 RT @clarissaward: We can confirm the real identity of the man from our story last Wednesday as Salama Mohammed Salama
 
-https://t.co/wb77EEM…
+<https://t.co/wb77EEM…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1868856930950955147)

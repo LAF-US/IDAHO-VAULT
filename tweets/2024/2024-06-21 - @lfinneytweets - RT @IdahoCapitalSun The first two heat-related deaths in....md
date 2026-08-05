@@ -16,6 +16,6 @@ related:
 ---
 
 RT @IdahoCapitalSun: The first two heat-related deaths in Idaho this year have been reported to the Division of Public Health.
-https://t.co…
+<https://t.co…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1804273315449836020)

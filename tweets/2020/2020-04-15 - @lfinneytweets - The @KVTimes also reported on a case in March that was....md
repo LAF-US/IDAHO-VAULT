@@ -18,9 +18,9 @@ related:
   - IdahoCOVID19
 ---
 
-The @KVTimes also reported on a case in March that was reported & removed because the person had put down a Boundary County mailing address but was actually living in Kootenai County. #IdahoCOVID19 https://t.co/LMK2aiKdI8
+The @KVTimes also reported on a case in March that was reported & removed because the person had put down a Boundary County mailing address but was actually living in Kootenai County. #IdahoCOVID19 <https://t.co/LMK2aiKdI8>
 
 ## Links
-- https://x.com/uiargonaut/status/1250556194072092672
+- <https://x.com/uiargonaut/status/1250556194072092672>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1250573834110955521)

@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-RT @FarnoushAmiri: AP lede for the history books: https://t.co/zZi8op2KoN
+RT @FarnoushAmiri: AP lede for the history books: <https://t.co/zZi8op2KoN>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GbsgujOaAAAhO4g.jpg)

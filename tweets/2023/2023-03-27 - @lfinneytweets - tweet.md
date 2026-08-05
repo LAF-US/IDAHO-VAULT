@@ -14,10 +14,10 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/imhgi08lRf
+<https://t.co/imhgi08lRf>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2023/03/27/senate-quickly-pushes-out-new-property-tax-bill/
+- <https://blog.idahoreports.idahoptv.org/2023/03/27/senate-quickly-pushes-out-new-property-tax-bill/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

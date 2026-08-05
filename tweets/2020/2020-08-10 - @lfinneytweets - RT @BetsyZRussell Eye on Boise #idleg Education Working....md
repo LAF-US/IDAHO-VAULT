@@ -20,6 +20,6 @@ related:
   - idpol
 ---
 
-RT @BetsyZRussell: Eye on Boise: #idleg Education Working Group adjourns 'til Thurs. after voting for 3 more draft bills #idpol https://t.c…
+RT @BetsyZRussell: Eye on Boise: #idleg Education Working Group adjourns 'til Thurs. after voting for 3 more draft bills #idpol <https://t.c…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1292912485402415104)

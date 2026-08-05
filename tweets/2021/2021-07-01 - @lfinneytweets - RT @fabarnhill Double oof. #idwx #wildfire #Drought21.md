@@ -22,7 +22,7 @@ related:
   - Drought21
 ---
 
-RT @fabarnhill: Double oof. #idwx #wildfire #Drought21 https://t.co/3Djkv6zCEM
+RT @fabarnhill: Double oof. #idwx #wildfire #Drought21 <https://t.co/3Djkv6zCEM>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/E5OfYy2VkAUTKQR.jpg)

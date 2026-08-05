@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-RT @OrianaBeLike: hi supreme court what is happening https://t.co/BRQnGa8C2q
+RT @OrianaBeLike: hi supreme court what is happening <https://t.co/BRQnGa8C2q>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GRBbUS1WYAAgGFE.jpg)

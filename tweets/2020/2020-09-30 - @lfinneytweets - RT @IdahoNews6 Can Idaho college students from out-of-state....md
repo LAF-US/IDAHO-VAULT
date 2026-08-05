@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoNews6: Can Idaho college students from out-of-state vote here? Yes, but beware of possible repercussions https://t.co/8H3tv4bKJE
+RT @IdahoNews6: Can Idaho college students from out-of-state vote here? Yes, but beware of possible repercussions <https://t.co/8H3tv4bKJE>
 
 ## Links
-- https://buff.ly/2Scjvqx
+- <https://buff.ly/2Scjvqx>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1311331010236133376)

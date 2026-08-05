@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-@nicoleMfoy Reminds me of this https://t.co/O3aFGqU9TF
+@nicoleMfoy Reminds me of this <https://t.co/O3aFGqU9TF>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FJo0t2mVUAIMOfr.jpg)

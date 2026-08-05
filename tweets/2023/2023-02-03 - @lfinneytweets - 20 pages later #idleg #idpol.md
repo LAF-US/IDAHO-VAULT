@@ -19,7 +19,7 @@ related:
   - idpol
 ---
 
-20 pages later #idleg #idpol https://t.co/FYbBvCKgbi
+20 pages later #idleg #idpol <https://t.co/FYbBvCKgbi>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FoAtUujaQAAfTzZ.jpg)

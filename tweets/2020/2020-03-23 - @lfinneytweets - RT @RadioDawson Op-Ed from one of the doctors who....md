@@ -16,6 +16,6 @@ related:
   - lfinneytweets
 ---
 
-RT @RadioDawson: Op-Ed from one of the doctors who contracted Coronavirus in the Wood River Valley via @IdahoMtExpress: https://t.co/Tge97i…
+RT @RadioDawson: Op-Ed from one of the doctors who contracted Coronavirus in the Wood River Valley via @IdahoMtExpress: <https://t.co/Tge97i…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1242164592211415043)

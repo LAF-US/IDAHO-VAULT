@@ -16,7 +16,7 @@ related:
   - IdahoCovid19
 ---
 
-\#IdahoCovid19 Gothic https://t.co/ldyxeXsO96
+\#IdahoCovid19 Gothic <https://t.co/ldyxeXsO96>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/ETbbIgOX0AA_qne.jpg)

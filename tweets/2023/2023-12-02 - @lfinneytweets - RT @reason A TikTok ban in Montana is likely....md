@@ -16,9 +16,9 @@ related:
 ---
 
 RT @reason: A TikTok ban in Montana is likely unconstitutional, a federal judge ruled on Thursday.
-https://t.co/iNSzuwGJlj
+<https://t.co/iNSzuwGJlj>
 
 ## Links
-- https://reason.com/2023/12/01/judge-halts-montanas-first-amendment-violating-tiktok-ban/
+- <https://reason.com/2023/12/01/judge-halts-montanas-first-amendment-violating-tiktok-ban/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1730755210111545462)

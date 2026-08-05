@@ -16,9 +16,9 @@ related:
 ---
 
 RT @CKomatsoulis: Do you think you know what Kuna means? You might be wrong.
-https://t.co/uTtgFo5SCR
+<https://t.co/uTtgFo5SCR>
 
 ## Links
-- https://www.idahopress.com/news/local/whats-in-a-name-behind-kunas-origin-and-the-effort-to-better-teach-idahos-indigenous/article_74d5edb4-7d8d-11ed-9216-e7010ab6dbb8.html
+- <https://www.idahopress.com/news/local/whats-in-a-name-behind-kunas-origin-and-the-effort-to-better-teach-idahos-indigenous/article_74d5edb4-7d8d-11ed-9216-e7010ab6dbb8.html>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1604652396164288512)

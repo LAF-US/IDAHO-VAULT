@@ -18,9 +18,9 @@ related:
   - idpol
 ---
 
-“I think the University of Idaho is doing a decent job, but that's in comparison to other universities,” said Philip Stevens, director of American Indian studies. “I think universities as a whole are doing a horrible job.” #idedu #idpol https://t.co/JdrvtoUNWP
+“I think the University of Idaho is doing a decent job, but that's in comparison to other universities,” said Philip Stevens, director of American Indian studies. “I think universities as a whole are doing a horrible job.” #idedu #idpol <https://t.co/JdrvtoUNWP>
 
 ## Links
-- https://x.com/highcountrynews/status/1295758102181097485
+- <https://x.com/highcountrynews/status/1295758102181097485>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1295773687988117504)

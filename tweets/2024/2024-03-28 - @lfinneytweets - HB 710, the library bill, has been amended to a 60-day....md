@@ -18,7 +18,7 @@ related:
   - idpol
 ---
 
-HB 710, the library bill, has been amended to a 60-day timeline. #idleg #idpol https://t.co/GVwf4Uwq38
+HB 710, the library bill, has been amended to a 60-day timeline. #idleg #idpol <https://t.co/GVwf4Uwq38>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GJyasGgbEAEO8WH.jpg)

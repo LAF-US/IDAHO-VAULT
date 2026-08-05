@@ -16,9 +16,9 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoReports: From @RuthBrownNews: House Ethics Committee recommends censure, expulsion of Rep. von Ehlinger: https://t.co/zd590DEEHg #…
+RT @IdahoReports: From @RuthBrownNews: House Ethics Committee recommends censure, expulsion of Rep. von Ehlinger: <https://t.co/zd590DEEHg> #…
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2021/04/29/ethics-committee-votes-to-suspend-censure-rep-von-ehlinger/
+- <https://blog.idahoreports.idahoptv.org/2021/04/29/ethics-committee-votes-to-suspend-censure-rep-von-ehlinger/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1387838185103781888)

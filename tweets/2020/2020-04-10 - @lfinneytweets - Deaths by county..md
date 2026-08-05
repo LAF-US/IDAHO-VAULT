@@ -14,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-Deaths by county. https://t.co/MCAjf2S2Fs
+Deaths by county. <https://t.co/MCAjf2S2Fs>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EVN4KdCUEAQbge4.jpg)

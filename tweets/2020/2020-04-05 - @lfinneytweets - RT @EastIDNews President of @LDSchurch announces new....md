@@ -16,6 +16,6 @@ related:
   - lfinneytweets
 ---
 
-RT @EastIDNews: President of @LDSchurch announces new symbol, calls for worldwide Good Friday fast for relief from COVID-19 https://t.co/cV…
+RT @EastIDNews: President of @LDSchurch announces new symbol, calls for worldwide Good Friday fast for relief from COVID-19 <https://t.co/cV…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1246628128425824256)

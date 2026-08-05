@@ -16,6 +16,6 @@ related:
 ---
 
 RT @GovernorLittle: My proclamation detailing how Idaho’s May 19 primary election will be carried out is now available here:
-https://t.co/j…
+<https://t.co/j…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1245515328915828736)

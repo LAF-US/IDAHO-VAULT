@@ -17,6 +17,6 @@ related:
 
 RT @KBSX915: If lawmakers didn’t legalize industrial hemp, Hempitecture might have reconsidered its plans to expand in Idaho
 
-https://t.co/…
+<https://t.co/…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1404533539559731200)

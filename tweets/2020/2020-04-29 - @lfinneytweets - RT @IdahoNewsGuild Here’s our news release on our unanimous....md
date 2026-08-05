@@ -17,9 +17,9 @@ related:
 
 RT @IdahoNewsGuild: Here’s our news release on our unanimous win 👇👇
 
-https://t.co/Q6z2w9EAYP
+<https://t.co/Q6z2w9EAYP>
 
 ## Links
-- https://idahonewsguild.org/2020/04/29/a-unanimous-vote-for-the-idaho-news-guild/
+- <https://idahonewsguild.org/2020/04/29/a-unanimous-vote-for-the-idaho-news-guild/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1255599003527307264)

@@ -13,7 +13,7 @@ related:
   - lfinneytweets
 ---
 
-@RHaunID https://t.co/XyzcXIyrPy
+@RHaunID <https://t.co/XyzcXIyrPy>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/EZ9GxRNVcAE8lxI.jpg)

@@ -16,9 +16,9 @@ related:
 ---
 
 RT @uiargonaut: Students participated in a march Wednesday to protest actions made by administration
-https://t.co/CSca8A58BK
+<https://t.co/CSca8A58BK>
 
 ## Links
-- https://www.uiargonaut.com/2019/01/31/students-protest-to-support-bennett/
+- <https://www.uiargonaut.com/2019/01/31/students-protest-to-support-bennett/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1091021607982616576)
