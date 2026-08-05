@@ -4,7 +4,7 @@ author:
 published:
 created: 2026-04-28
 ---
-```markdown
+```
 # skill
 
 A comprehensive guide for editing GitBook documentation in external environments like Cursor, Claude Code, or other text editors. This skill provides all the formatting syntax, configuration options, and best practices needed to create and maintain GitBook content outside the GitBook web interface.

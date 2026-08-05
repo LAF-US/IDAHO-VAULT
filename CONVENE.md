@@ -35,7 +35,7 @@ It is the formal act of calling the committee to order — Logan as Chair formal
 
 ## Role in the Protocol Stack
 
-```markdown
+```
 AWAKEN ──────────────────────► RISE
    │                                │
    │                                │
@@ -111,7 +111,7 @@ Logan names:
 
 Participants acknowledge:
 
-```markdown
+```
 CONVENE RECEIVED
 AGENT: [Name + persona]
 ARISE: [status]
@@ -176,6 +176,6 @@ Pending:
 
 ---
 
-```markdown
+```
 The world is quiet here．Esto Perpetua!
 ```

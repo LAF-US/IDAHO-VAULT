@@ -114,6 +114,6 @@ diagnosis, not adopted as canon or verdict. Where authority is absent, **`*`** s
 
 ---
 
-```markdown
+```
 The world is quiet here．Esto Perpetua!
 ```

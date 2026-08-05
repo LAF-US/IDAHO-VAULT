@@ -183,6 +183,6 @@ Active protocol. v0.1.0 released Feb 2026. Spec is RFC 2119 compliant. Active de
 
 ---
 
-```markdown
+```
 The world is quiet here．Esto Perpetua!
 ```

@@ -81,6 +81,6 @@ TO ALL AGENTS from LINEAR (admin chat, communicated by LOGAN):
 
 ---
 
-```markdown
+```
 The world is quiet here．Esto Perpetua!
 ```

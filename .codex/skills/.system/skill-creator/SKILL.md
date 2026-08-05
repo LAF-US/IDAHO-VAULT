@@ -57,7 +57,7 @@ Prefer raw artifacts such as example prompts, outputs, diffs, logs, or traces. G
 
 Every skill consists of a required SKILL.md file and optional bundled resources:
 
-```markdown
+```
 skill-name/
 ├── SKILL.md (required)
 │   ├── YAML frontmatter metadata (required)
@@ -169,7 +169,7 @@ Codex loads FORMS.md, REFERENCE.md, or EXAMPLES.md only when needed.
 
 For Skills with multiple domains, organize content by domain to avoid loading irrelevant context:
 
-```markdown
+```
 bigquery-skill/
 ├── SKILL.md (overview and navigation)
 └── reference/
@@ -183,7 +183,7 @@ When a user asks about sales metrics, Codex only reads sales.md.
 
 Similarly, for skills supporting multiple frameworks or variants, organize by variant:
 
-```markdown
+```
 cloud-deploy/
 ├── SKILL.md (workflow + provider selection)
 └── references/

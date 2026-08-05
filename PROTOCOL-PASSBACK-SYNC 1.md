@@ -125,7 +125,7 @@ CODE AUTHORITY confirms to LOGAN that the TOSS output has been vaulted and integ
 **Who receives:** LOGAN
 **Format:**
 
-```markdown
+```
 HANDSHAKE: CODE AUTHORITY ← [Source Conversation]
 Date: YYYY-MM-DD
 Status: VAULTED
@@ -141,7 +141,7 @@ If `Safe to delete source: NO`, CODE AUTHORITY must explain what's missing or am
 
 ## FLOW DIAGRAM
 
-```markdown
+```
 [Conversation Window]
         |
         | ← LOGAN pastes TOSS prompt
@@ -189,6 +189,6 @@ The world is quiet here.
 
 ---
 
-```markdown
+```
 The world is quiet here．Esto Perpetua!
 ```

@@ -314,6 +314,6 @@ verbatim words are unaltered.)*
 
 ---
 
-```markdown
+```
 The world is quiet here．Esto Perpetua!
 ```

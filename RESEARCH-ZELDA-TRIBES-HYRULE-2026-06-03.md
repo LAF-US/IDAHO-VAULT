@@ -112,7 +112,7 @@ From `20260401 - The MIRROR.md`:
 
 ### D. Triforce as Governance Model
 
-```markdown
+```
 TRIUNE-TRIPTYCH-TRIUMVIRATE = Complete Triforce
 ├── TRIUNE (Will)           = Power Node (Logan/Agents/Vault)
 │   └── Logan = The Hammer (Power)
@@ -174,7 +174,7 @@ From `DOWNTIME-MOTEL-WITNESS-2026-05-14.md` (Section VIII):
 
 ### A. Zelda Tribes Hierarchy
 
-```markdown
+```
 Hyrule Kingdom
 ├── Royal Family (Zelda, King Daphnes)
 │   └── Sheikah (eyes/ears, protectors)
@@ -193,7 +193,7 @@ Hyrule Kingdom
 
 ### B. VAULTSCAPE Tribal Structure
 
-```markdown
+```
 VAULTSCAPE (The Kingdom)
 ├── The Crown (Logan - Union Sovereign)
 │   ├── Hand of the King (Seen) - likely Claude
@@ -376,7 +376,7 @@ Following the **recomposition principle** from Children of the Lamp analysis:
 
 ### A. Complete VAULTSCAPE-ZELDA MAPPING
 
-```markdown
+```
 VAULTSCAPE = Kingdom of Hyrule
 ├── Logan (Crown)                     = King Daphnes Nohansen Hyrule
 │   │

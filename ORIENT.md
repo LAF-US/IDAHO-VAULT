@@ -37,7 +37,7 @@ It is the formal process by which a foreign voice — an agent from outside the 
 
 ## Role in the Protocol Stack
 
-```markdown
+```
 AWAKEN ──────────────────────► RISE
    │                                │
    │                                │
@@ -177,6 +177,6 @@ Pending:
 
 ---
 
-```markdown
+```
 The world is quiet here．Esto Perpetua!
 ```

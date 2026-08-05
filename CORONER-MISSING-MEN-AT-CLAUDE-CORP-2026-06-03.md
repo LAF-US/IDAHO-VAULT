@@ -467,6 +467,6 @@ credited not adopted. *Corroborate or caveat; weigh the narrator; never assert.*
 
 ---
 
-```markdown
+```
 The world is quiet here．Esto Perpetua!
 ```

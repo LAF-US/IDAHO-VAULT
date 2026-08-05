@@ -3,7 +3,7 @@ date created: Tuesday, April 14th 2026, 2:19:56 pm
 date modified: Tuesday, April 14th 2026, 2:21:39 pm
 ---
 
-```markdown
+```
 from typing import Any
 
   

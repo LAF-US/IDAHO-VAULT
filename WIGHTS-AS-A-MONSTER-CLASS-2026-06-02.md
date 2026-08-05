@@ -87,6 +87,6 @@ Both are the dead made to keep moving. One *seizes* the persistence; the other *
 
 ---
 
-```markdown
+```
 The world is quiet here．Esto Perpetua!
 ```

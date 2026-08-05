@@ -10,7 +10,7 @@ Post one comment to PR #109 via `gh pr comment 109`.
 
 ## Draft comment
 
-```markdown
+```
 DING (v0.0)
 
 relay: claude/levelset-refresh-2026-03-29 → main

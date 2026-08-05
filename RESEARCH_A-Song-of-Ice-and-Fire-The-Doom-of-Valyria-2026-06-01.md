@@ -110,6 +110,6 @@ In *A Clash of Kings*, the pyromancer Hallyne recalls that "magic had begun to g
 
 ---
 
-```markdown
+```
 The world is quiet here．Esto Perpetua!
 ```

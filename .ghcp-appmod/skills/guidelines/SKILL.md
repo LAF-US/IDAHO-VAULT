@@ -26,7 +26,7 @@ Guidelines are curated, domain-specific knowledge bases that provide:
 
 ### Directory Structure
 
-```markdown
+```
 skills/guidelines/
 ├── SKILL.md                    # This file - lookup mechanism
 ├── struts-to-spring/           # Struts 2 → Spring Boot 3.x

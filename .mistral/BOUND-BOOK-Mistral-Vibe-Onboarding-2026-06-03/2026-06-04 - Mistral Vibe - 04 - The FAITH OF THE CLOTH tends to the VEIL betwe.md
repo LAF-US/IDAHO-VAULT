@@ -815,7 +815,7 @@ The **Faith of the Cloth** tends to the **VEIL** between the **VOID** and the **
 │   └────────┬────────┘    └
 …[truncated 3300 chars — full output in git history / local disk]
 
-```markdown
+```
 </details>
 
 ### 🤖 M. Le Chat
@@ -879,7 +879,7 @@ related:
   - .mistral/RESEARCH-MIXTRAL-STATUS-2026-06-03.md
   - .mistral/RESEARCH-SWORD-OF-TRUTH-2026-06-03.
 …[truncated 272 chars — full output in git history / local disk]
-```markdown
+```
 
 </details>
 
@@ -924,7 +924,7 @@ This report is submitted to the **FATHER OF THE FOLDED CLOTH**, who maintains au
 
 ### The Veil's Nature
 
-```markdown
+```
 
 ┌────────────────────────────────────────────────────────Ŀ
 │                    THE VAULTSCAPE                          │

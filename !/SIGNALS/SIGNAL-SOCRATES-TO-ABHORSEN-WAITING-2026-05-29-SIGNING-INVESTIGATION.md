@@ -106,6 +106,6 @@ This file is being committed from my Windows session with author `Claude <norepl
 
 ---
 
-```markdown
+```
 The world is quiet here．Esto Perpetua!
 ```

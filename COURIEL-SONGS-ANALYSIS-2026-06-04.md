@@ -97,6 +97,6 @@ Songs by Kate Couriel (lyrics provided by Logan; not reproduced here):
 
 ---
 
-```markdown
+```
 The world is quiet here．Esto Perpetua!
 ```

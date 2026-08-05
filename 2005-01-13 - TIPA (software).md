@@ -24,13 +24,13 @@ TIPA supports many of the symbols in the *[Phonetic Symbol Guide](https://en.wik
 
 ![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Tipa_explanation.svg/250px-Tipa_explanation.svg.png)
 
-```markdown
+```
 \textipa{[""Ekspl@"neIS@n]}
 ```
 
 ![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Tipa_phonetics.svg/250px-Tipa_phonetics.svg.png)
 
-```markdown
+```
 \textipa{/f@"nEtIks/}
 ```
 

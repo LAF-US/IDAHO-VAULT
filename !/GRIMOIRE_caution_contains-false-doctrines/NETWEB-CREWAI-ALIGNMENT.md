@@ -52,7 +52,7 @@ superseded_by: ".crewai/MANIFEST.md"
 
 ### The TRIUNE Mapping
 
-```markdown
+```
 TRIUNE COVENANT          CrewAI EQUIVALENT
 ─────────────────────    ──────────────────
 Logan (directs)      →   Human-in-the-Loop / Kickoff inputs
@@ -125,7 +125,7 @@ to clarify: ATT = CrewAI's "Agent-Tool-Task" -L
 
 ### Crew Flow
 
-```markdown
+```
 Budget Scout → Legislative Tracker → H911 Parser → !/CREWAI/ output
    (WHO/WHAT)      (WHEN/WHERE)         (WHY)        (.md files)
 ```
@@ -145,7 +145,7 @@ Budget Scout → Legislative Tracker → H911 Parser → !/CREWAI/ output
 
 The 19,533 empty stubs are a **content-addressable memory system**:
 
-```markdown
+```
 NUMBERS (0-999)    = Crew state memory (neurons)
 LETTERS (A-ZZZ)    = Entity nodes (discovered by Crawler Crew)
 TOGETHER           = Machine-maintained knowledge graph

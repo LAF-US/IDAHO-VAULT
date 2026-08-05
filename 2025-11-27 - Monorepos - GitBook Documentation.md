@@ -10,7 +10,7 @@ GitBook can synchronize multiple directories from the same repository with multi
 
 Example of a repository structure:
 
-```markdown
+```
 /
   package.json
   packages/

@@ -159,7 +159,7 @@ All channels enabled in OpenClaw config but require tokens:
 
 ## Architecture Summary
 
-```markdown
+```
                     ┌────────────────────────────────────Ŀ
                     │         OpenRouter.ai                 │
                     │    openrouter.ai/api/v1 = unified    │
@@ -311,6 +311,6 @@ openclaw skills update
 
 ---
 
-```markdown
+```
 The world is quiet here．Esto Perpetua!
 ```

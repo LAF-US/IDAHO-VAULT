@@ -335,6 +335,6 @@ replace the broader `LAF-US` sovereignty model.
 
 ---
 
-```markdown
+```
 The world is quiet here．Esto Perpetua!
 ```

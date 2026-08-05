@@ -45,7 +45,7 @@ Ollama is a tool for running large language models locally with ease.
 
 #### On macOS
 
-```markdown
+```
 # Download and install from official website
 curl -fsSL https://ollama.com/install.sh | sh
 
@@ -55,7 +55,7 @@ brew install ollama
 
 #### Verify Installation
 
-```markdown
+```
 ollama --version
 ```
 
@@ -63,20 +63,20 @@ ollama --version
 
 Download the `devstral-small-2` model (or any model you prefer):
 
-```markdown
+```
 # Pull the model (this may take a few minutes depending on your internet speed)
 ollama pull devstral-small-2
 ```
 
 Verify the model is downloaded:
 
-```markdown
+```
 ollama list
 ```
 
 ### Step 3: Start Ollama Server
 
-```markdown
+```
 # Start the Ollama server
 ollama serve
 ```
@@ -87,7 +87,7 @@ ollama serve
 
 To run Ollama in the background on macOS/Linux:
 
-```markdown
+```
 # Create a background service (optional)
 ollama serve &
 ```
@@ -98,7 +98,7 @@ Check out the repo: [https://github.com/mistralai/mistral-vibe](https://github.c
 
 Using pipx
 
-```markdown
+```
 # Install pipx if you don't have it
 brew install pipx  # macOS
 # or
@@ -114,7 +114,7 @@ pipx install -e .
 
 #### Open new tab terminal and verify the installation
 
-```markdown
+```
 vibe --version
 ```
 
@@ -134,7 +134,7 @@ When you first run `vibe`, it creates a default config file. However, we need to
 
 Create or edit `~/.vibe/config.toml` with the following configuration:
 
-```markdown
+```
 # ~/.vibe/config.toml
 
 # Set Ollama model as default
@@ -275,7 +275,7 @@ max_todos = 100
 
 #### Provider Configuration
 
-```markdown
+```
 [[providers]]
 name = "ollama"                              # Provider identifier
 api_base = "http://localhost:11434/v1"       # Ollama's OpenAI-compatible endpoint
@@ -286,7 +286,7 @@ backend = "generic"                          # Use generic HTTP backend
 
 #### Model Configuration
 
-```markdown
+```
 [[models]]
 name = "devstral-small-2"                    # Exact model name in Ollama
 provider = "ollama"                          # Links to provider above
@@ -304,7 +304,7 @@ output_price = 0.0                           # Free for local
 
 #### 1\. Start Vibe
 
-```markdown
+```
 # Navigate to your project
 cd /path/to/your/project
 

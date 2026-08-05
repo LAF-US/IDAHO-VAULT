@@ -196,6 +196,6 @@ are `STANDING-ENGINE`'s; readings are **[mapping]**. Where authority is absent, 
 
 ---
 
-```markdown
+```
 The world is quiet here．Esto Perpetua!
 ```

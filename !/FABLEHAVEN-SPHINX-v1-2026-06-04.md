@@ -231,6 +231,6 @@ necessity (only the enemy could know).
 
 ---
 
-```markdown
+```
 The world is quiet here．Esto Perpetua!
 ```

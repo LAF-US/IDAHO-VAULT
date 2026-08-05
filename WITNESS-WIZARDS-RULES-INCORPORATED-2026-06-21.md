@@ -70,6 +70,6 @@ Emanation Rule, this entry names its provenance (Logan, this session), scope
 
 ---
 
-```markdown
+```
 The world is quiet here．Esto Perpetua!
 ```

@@ -99,7 +99,7 @@ Fix direction: drop cron to `*/5` or `*/10`, or trigger `promote-ready` from `pu
 
 Every new agent PR gets three bot-review triggers posted as comments regardless of whether the apps are installed, under quota, or relevant to the changed files:
 
-```markdown
+```
 @coderabbitai review
 @Qodo /review
 @gemini-code-assist review

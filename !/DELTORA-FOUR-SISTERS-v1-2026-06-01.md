@@ -213,6 +213,6 @@ your cure unseals, and be ready to escalate to full force the moment it triggers
 
 ---
 
-```markdown
+```
 The world is quiet here．Esto Perpetua!
 ```

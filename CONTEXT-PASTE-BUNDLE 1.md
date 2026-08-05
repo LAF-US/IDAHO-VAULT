@@ -82,7 +82,7 @@ authority: LOGAN
 
 ### 3. VAULT STRUCTURE
 
-```markdown
+```
 IDAHO-VAULT/
   !ADMIN/              Session logs, LEVELSET reports, wayback preservation logs
   GOVERNMENTS/         Idaho legislative, executive, judicial + federal + tribal

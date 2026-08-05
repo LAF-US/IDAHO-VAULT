@@ -114,7 +114,7 @@ authority: LOGAN
 
 ### Architecture A: CrewAI with LangChain Tools (Simplest)
 
-```markdown
+```
 ┌────────────────────────────────────────────Ŀ
 │                 CrewAI Crew                   │
 │  ┌────────────Ŀ  ┌────────────Ŀ          │
@@ -135,7 +135,7 @@ authority: LOGAN
 
 ### Architecture B: LangGraph Orchestration with CrewAI Teams
 
-```markdown
+```
 ┌────────────────────────────────────────────Ŀ
 │              LangGraph StateGraph             │
 │  ┌────────────Ŀ  ┌────────────Ŀ          │
@@ -157,7 +157,7 @@ authority: LOGAN
 
 ### Architecture C: Hybrid Pipeline
 
-```markdown
+```
 ┌────────────────────────────────────────────Ŀ
 │              Input Layer                      │
 └─────────────────────┬───────────────────────┘

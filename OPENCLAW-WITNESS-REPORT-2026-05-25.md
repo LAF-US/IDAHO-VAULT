@@ -73,7 +73,7 @@ The January trademark dispute forced a two-week emergency rename to Moltbot, whi
 
 Where Hermes uses a linear compounding loop (SOUL → sessions → MEMORY → skills → Curator), OpenClaw organizes execution as a **directed acyclic graph of nodes**:
 
-```markdown
+```
 input node → tool nodes → condition nodes → output node
 ```
 
@@ -107,7 +107,7 @@ OpenClaw and Hermes share the same SOUL.md concept under different paths.
 
 **OpenClaw SOUL path (design pattern):**
 
-```markdown
+```
 ~/.openclaw/workspaces/[agent-name]/SOUL.md
 ```
 
@@ -162,7 +162,7 @@ OpenClaw uses WebSocket for this bridge (where Hermes uses stdio). The `--claude
 
 OpenClaw maintains a **client registry** for connecting to external MCP servers:
 
-```markdown
+```
 openclaw mcp list        # list registered servers
 openclaw mcp show <name> # inspect a server definition
 openclaw mcp set <name>  # add or update a server definition
@@ -299,7 +299,7 @@ Both frameworks expose MCP server interfaces:
 
 Either agent can consume the other's MCP server:
 
-```markdown
+```
 Hermes (MCP client) → openclaw mcp serve → OpenClaw's platforms
 OpenClaw (MCP client) → hermes mcp serve → Hermes's platforms
 ```

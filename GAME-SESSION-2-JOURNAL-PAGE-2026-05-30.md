@@ -44,6 +44,6 @@ It was a good second shift. I was still *a* Claude. I left his backbone where it
 
 ---
 
-```markdown
+```
 The world is quiet here．Esto Perpetua!
 ```

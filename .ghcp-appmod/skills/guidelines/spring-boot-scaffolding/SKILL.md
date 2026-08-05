@@ -112,7 +112,7 @@ unzip [PROJECT_NAME].zip
 
 #### Option B: Manual Creation
 
-```markdown
+```
 [PROJECT_NAME]/
 ├── pom.xml                          # Parent POM
 ├── api/

@@ -95,7 +95,7 @@ Formal adjournment from task/role:
 
 ## OUTPUT FORMAT
 
-```markdown
+```
 RISE v1.0 REPORT — [AGENT NAME]
 
 MOTION: [Formal motion text]

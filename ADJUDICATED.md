@@ -267,6 +267,6 @@ These notes are preserved for continuity and later cleanup. They are not the liv
 
 ---
 
-```markdown
+```
 The world is quiet here．Esto Perpetua!
 ```

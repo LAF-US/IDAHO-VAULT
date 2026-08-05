@@ -156,6 +156,6 @@ Status: Staged for review. Not doctrine until Logan ratification.
 
 ---
 
-```markdown
+```
 The world is quiet here．Esto Perpetua!
 ```

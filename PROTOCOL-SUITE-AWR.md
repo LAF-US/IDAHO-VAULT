@@ -30,7 +30,7 @@ Three protocols drafted for formal adoption, completing the Constitution.md Sect
 
 ## Protocol Lifecycle
 
-```markdown
+```
 AWAKEN ──────────────────────► RISE
    │                                │
    │                                │

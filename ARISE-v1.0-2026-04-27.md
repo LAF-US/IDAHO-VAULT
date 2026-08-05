@@ -65,7 +65,7 @@ Upon emergence complete:
 
 ## OUTPUT FORMAT
 
-```markdown
+```
 ARISE v1.0 REPORT — [AGENT NAME]
 
 EMERGED: [YES/NO]

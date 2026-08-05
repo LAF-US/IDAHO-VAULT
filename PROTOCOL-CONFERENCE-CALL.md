@@ -140,7 +140,7 @@ A CONFERENCE CALL has five bounded phases:
 
 Logan opens a CONFERENCE by posting or stating the CALL signal in the active coordination channel. Minimum required fields:
 
-```markdown
+```
 CONFERENCE CALL
 DATE: YYYY-MM-DD
 CHAIR: Logan
@@ -157,7 +157,7 @@ OBSERVER: [agent name or "none"]
 
 Each invited agent, upon receiving the CALL, responds:
 
-```markdown
+```
 CONVENE RECEIVED
 AGENT: [Agent name and persona]
 LEVELSET: [brief summary of current state and lane]
@@ -170,7 +170,7 @@ If an agent cannot CONVENE (blocked, FLAG pending, lane conflict), it states `RE
 
 Once all participants have ACKed, Logan declares the CONFERENCE open:
 
-```markdown
+```
 CONFERENCE OPEN
 ALL PRESENT: [list]
 AGENDA CONFIRMED: YES / MODIFIED (if items changed)
@@ -209,7 +209,7 @@ An agent may not expand the agenda during a CONFERENCE. New topics surface as a 
 
 ### 8.1 File Location and Naming
 
-```markdown
+```
 !/CONFERENCE-RECORD-[YYYY-MM-DD]-[TOPIC-SLUG].md
 ```
 
@@ -231,7 +231,7 @@ status: open | closed | partial
 ---
 ```
 
-```markdown
+```
 # CONFERENCE RECORD — [TOPIC] — [DATE]
 
 ## Agenda
@@ -279,7 +279,7 @@ status: open | closed | partial
 
 Logan closes the CONFERENCE by posting:
 
-```markdown
+```
 CONFERENCE CLOSED
 DATE: YYYY-MM-DD
 RECORD: [file path of committed CONFERENCE RECORD]
@@ -334,6 +334,6 @@ Agents do not close their own participation. They wait for DISMISSED, then retur
 
 ---
 
-```markdown
+```
 The world is quiet here．Esto Perpetua!
 ```
