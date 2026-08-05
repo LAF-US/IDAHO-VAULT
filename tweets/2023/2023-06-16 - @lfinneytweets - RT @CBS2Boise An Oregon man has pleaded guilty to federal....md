@@ -16,6 +16,6 @@ related:
 ---
 
 RT @CBS2Boise: An Oregon man has pleaded guilty to federal hate crime charges in Boise after trying to hit multiple people with his car. 
-#…
+\#…
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1669495985876381697)
