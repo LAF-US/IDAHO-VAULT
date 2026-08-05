@@ -1,0 +1,105 @@
+Rolling over: 2026-04-06 -> 2026-04-07
+Carrying forward 12 incomplete item(s):
+  - [ ] FINAL BUDGETS UPDATE
+  - [ ] FARNSWORTH SCRIPT 1
+  	- [ ] Logan happy
+  - [ ] PIERCE SCRIPT 1
+  	- [ ] Logan happy
+  - [ ] FRANKLIN SCRIPT 1
+  	- [ ] Write and send
+  	- [ ] Logan happy
+  - [ ] GET GITHUB ACTIONS TO STOP FAILING
+  - [ ] FIX DAILY NOTE SYNCING/CARRYFORWARD
+  	- [ ] Tasks completed on a DAY were not checked off here.
+  	- [ ] Tasks uncomplete on a DAY were not added to here.
+
+--- 2026-04-07.md (dry run) ---
+---
+title: 2026-04-07
+aliases:
+  - 2026-04-07
+  - April 7, 2026
+  - April 7th, 2026
+  - 7 April 2026
+  - Tuesday, April 7, 2026
+linter-yaml-title-alias: 2026-04-07
+yesterday: 2026-04-06
+tomorrow: 2026-04-08
+weekday:
+  - Tuesday
+cssclasses:
+  - roygbiv-tue
+tags:
+  - today
+  - 2026/04/07
+  - dailynote
+date created: Tuesday, April 7th 2026, 12:00:00 am
+date modified: Tuesday, April 7th 2026, 12:00:00 am
+---
+
+[[TO DO LIST]]
+
+- [ ] FINAL BUDGETS UPDATE
+- [ ] FARNSWORTH SCRIPT 1
+	- [ ] Logan happy
+- [ ] PIERCE SCRIPT 1
+	- [ ] Logan happy
+- [ ] FRANKLIN SCRIPT 1
+	- [ ] Write and send
+	- [ ] Logan happy
+- [ ] GET GITHUB ACTIONS TO STOP FAILING
+- [ ] FIX DAILY NOTE SYNCING/CARRYFORWARD
+	- [ ] Tasks completed on a DAY were not checked off here.
+	- [ ] Tasks uncomplete on a DAY were not added to here.
+- WORK
+- [ ] FARNSWORTH SCRIPT 2
+	- [x] Transcripts clean
+	- [ ] Write and send
+	- [ ] Logan happy
+- [ ] PIERCE SCRIPT 2
+	- [ ] Transcripts clean
+	- [ ] Write and send
+	- [ ] Logan happy
+- [ ] FRANKLIN SCRIPT 2
+	- [ ] Transcripts clean
+	- [ ] Write and send
+	- [ ] Logan happy
+- PERSONAL
+-  [ ] ?
+
+--- TO DO LIST.md (dry run) ---
+---
+title: TO DO LIST
+linter-yaml-title-alias: TO DO LIST
+date created: Friday, March 27th 2026, 10:09:45 am
+date modified: Monday, April 6th 2026, 9:58:27 am
+related:
+  - DAILY NOTE
+  - Data Centers
+  - FIX
+  - PKG
+authority: LOGAN
+---
+
+*Persistent list ù incomplete items should carry forward daily. Link daily notes here.*
+
+## Active
+
+- [ ] FINAL BUDGETS UPDATE
+- [ ] FARNSWORTH SCRIPT 1
+	- [ ] Logan happy
+	- [x] Transcripts clean
+	- [x] Write and send
+- [ ] PIERCE SCRIPT 1
+	- [ ] Logan happy
+	- [x] Transcripts clean
+	- [x] Write and send
+- [ ] FRANKLIN SCRIPT 1
+	- [ ] Write and send
+	- [ ] Logan happy
+	- [x] Transcripts clean
+- [ ] GET GITHUB ACTIONS TO STOP FAILING
+- [ ] FIX DAILY NOTE SYNCING/CARRYFORWARD
+	- [ ] Tasks completed on a DAY were not checked off here.
+	- [ ] Tasks uncomplete on a DAY were not added to here.
+- WORK

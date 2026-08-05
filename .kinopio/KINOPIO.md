@@ -6,6 +6,6 @@ related:
   - runtime
 ---
 
-**.kinopio** â€” Imported software runtime persona.
+**.kinopio** — Imported software runtime persona.
 
 kinopio runtime and configuration.

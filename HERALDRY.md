@@ -19,7 +19,6 @@ related:
 ## Core Components
 
 ### The Coat of Arms
-
 The central element of heraldry, typically consisting of:
 
 - Shield: Primary surface bearing the main charges
@@ -28,7 +27,6 @@ The central element of heraldry, typically consisting of:
 - Subordinary: More complex shapes (roundels, annulets, etc.)
 
 ### Additional Elements
-
 - Crest: Decorative element above the shield
 - Motto: Family phrase or battle cry (on a scroll)
 - Supporters: Figures (animals, humans, mythical creatures) holding the shield
@@ -37,14 +35,11 @@ The central element of heraldry, typically consisting of:
 - Compartment: Base on which supporters stand
 
 ### Tinctures (Colors)
-
 Metals:
-
 - Or (Gold/Yellow)
 - Argent (Silver/White)
 
 Colors:
-
 - Azure (Blue)
 - Gules (Red)
 - Sable (Black)
@@ -70,7 +65,6 @@ Heraldry serves as the visual equivalent of a pedigree or genealogy:
 ### Cadency System
 
 Marks to distinguish sons in order of birth:
-
 1. Label (first son) - horizontal bar with pendants
 2. Crescent (second son)
 3. Mullet (third son) - star
@@ -93,7 +87,6 @@ Using the BREED-REPORT 2x2 framework:
 | Humans | Heraldry / Genealogy | Royalty / Eugenics |
 
 Heraldry occupies the descriptive + human quadrant, making it:
-
 - Genealogys visual cousin - both document lineage, but heraldry uses symbols
 - Pedigrees human equivalent - both document ancestry, but for different subjects
 - The bridge between genealogy and art
@@ -103,13 +96,11 @@ Heraldry occupies the descriptive + human quadrant, making it:
 ## Historical Development
 
 ### Origins
-
 - 12th century: Battlefield identification (surcoats over armor)
 - Crusades: Need to identify knights in battle led to standardized symbols
 - Tournaments: Heralds announced participants and recorded coats of arms
 
 ### Evolution
-
 - 13th-14th century: Formalization of rules and terminology
 - 15th century: Heraldic colleges established (College of Arms in England, 1484)
 - Renaissance: Complex designs, artistic elaboration
@@ -120,19 +111,16 @@ Heraldry occupies the descriptive + human quadrant, making it:
 ## Notable Examples
 
 ### Royal Heraldry
-
 - Royal Coat of Arms of the United Kingdom: English lions, Scottish lion rampant, Irish harp, with lion and unicorn supporters (the fleurs-de-lis of the old French claim were dropped in 1801)
 - Coat of Arms of Spain: Quartered with castles and lions
 - Imperial Coat of Arms of Russia: Double-headed eagle
 
 ### Family Heraldry
-
 - House of Habsburg: the Austrian "bindenschild" (red-white-red fess); the black eagle on gold was the imperial arms of office, not the family device
 - House of Plantagenet: Three lions passant guardant
 - House of Tudor: Rose (combining red rose of Lancaster and white rose of York)
 
 ### Corporate Heraldry
-
 - Universities: Harvard, Oxford, Cambridge all have coats of arms
 - Cities: London, Paris, Rome have municipal coats of arms
 - Modern brands: Many logos draw from heraldic tradition
@@ -170,6 +158,4 @@ Heraldry occupies the descriptive + human quadrant, making it:
 
 ---
 
-```
-The world is quiet here．Esto Perpetua!
-```
+###### "The world is quiet here."

@@ -48,8 +48,4 @@ two ways a dyad closes.)*
 The active implementation chamber is `.claude/`. Where this folder and `.claude/`
 disagree, defer to `.claude/CLAUDE.md`, `!/AGENTS.md`, and `swarm.json`.
 
----
-
-```
-The world is quiet here．Esto Perpetua!
-```
+*The world is quiet here.*

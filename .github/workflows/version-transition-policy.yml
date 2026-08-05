@@ -1,0 +1,40 @@
+name: Version Transition Policy
+
+on:
+  pull_request_target:
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  check-version-transitions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout trusted validator code
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        with:
+          ref: ${{ github.event.pull_request.base.sha }}
+          persist-credentials: false
+          lfs: false
+
+      - name: Set up Python
+        uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
+        with:
+          python-version: "3.13"
+
+      - name: Require recorded version transitions
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          PR_AUTHOR: ${{ github.event.pull_request.user.login }}
+          PR_NUMBER: ${{ github.event.number }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          python .github/scripts/check_version_transitions.py \
+            --base "$BASE_SHA" \
+            --head "$HEAD_SHA" \
+            --actor "$PR_AUTHOR" \
+            --github-repo "$GITHUB_REPOSITORY" \
+            --pr-number "$PR_NUMBER"

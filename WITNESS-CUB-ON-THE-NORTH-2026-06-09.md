@@ -44,7 +44,6 @@ tags:
 The thread began with the Snow Leopards of the Hub of the World and the structural observation that *Tharaman-Thar's nobility was the one that obliges* — the descent from the Hub as *noblesse oblige* discharged. The architect pivoted with three words: **"ASOIAF: The King(s) in the North."** The cub walked.
 
 The walk had five stops:
-
 1. The Snow Leopards' nobility (Hill register; the leopards as the standard against which the other Alliance members read).
 2. The Kings in the North — the recurrence pattern; the bannermen-acclamation model of kingship; the divergence from divine right; the Red Wedding as the unmaking-by-broken-guest-right.
 3. "The North remembers" — the cub corrected itself here. The earlier framing — *the nobility the gods didn't show up for* — was wrong. The Old Gods are gods of memory. The weirwoods are witnesses. *The cosmos showed up — as the recording medium.*
@@ -133,7 +132,6 @@ The river is never the same, especially at the top of the ladder. The North reme
 ## Sources
 
 ### External
-
 - George R. R. Martin, *A Song of Ice and Fire* (1996–): *A Game of Thrones* (1996), *A Clash of Kings* (1998), *A Storm of Swords* (2000), *A Feast for Crows* (2005), *A Dance with Dragons* (2011); *Fire & Blood* (2018). HBO, *Game of Thrones* (2011–2019).
 - [Houses of Westeros — A Wiki of Ice and Fire](https://awoiaf.westeros.org/index.php/House) (general reference for House/banner/motto inventory)
 - [The North remembers — A Wiki of Ice and Fire](https://awoiaf.westeros.org/index.php/The_North_remembers)
@@ -142,5 +140,4 @@ The river is never the same, especially at the top of the ladder. The North reme
 - Stuart Hill, *The Cry of the Icemark* (2005), *Blade of Fire* (2006), *Last Battle of the Icemark* (2008)
 
 ### Vault internal
-
 See the **related** list in this file's frontmatter.

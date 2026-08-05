@@ -1,0 +1,21 @@
+---
+source: "https://www.loc.gov/collections/worlds-transportation-commission/about-this-collection/"
+author:
+published:
+created: 2026-07-20
+---
+This collection contains nearly nine hundred images by American photographer [William Henry Jackson](https://www.loc.gov/collections/worlds-transportation-commission/special-presentation/jackson-chronology/). In addition to [railroads](https://www.loc.gov/collections/worlds-transportation-commission/?q=subject_w:railroads), [elephants](https://www.loc.gov/collections/worlds-transportation-commission/?q=elephants), [camels](https://www.loc.gov/collections/worlds-transportation-commission/?q=camels), [horses](https://www.loc.gov/collections/worlds-transportation-commission/?q=subject_w:horses), [sleds and sleighs](https://www.loc.gov/collections/worlds-transportation-commission/?q=sleds+and+sleighs), [sedan chairs](https://www.loc.gov/collections/worlds-transportation-commission/?q=sedan+chairs),[rickshaws](https://www.loc.gov/collections/worlds-transportation-commission/?q=rickshaws), and other types of transportation, Jackson photographed [city views](https://www.loc.gov/collections/worlds-transportation-commission/?q=cityscape+photographs), [street](https://www.loc.gov/collections/worlds-transportation-commission/?q=subject_w:streets) and [harbor scenes](https://www.loc.gov/collections/worlds-transportation-commission/?q=subject_w:harbors), landscapes, local inhabitants, and Commission members as they travelled through North Africa, Asia, Australia, and Oceania.
+
+### Background and Scope
+
+Railroad publicist Joseph Gladding Pangborn organized the World's Transportation Commission to gather information about foreign transportation systems, especially railroads, for the Field Columbian Museum in Chicago. At that time, the Field Columbian Museum had acquired several exhibits from the World's Columbian Exposition, including extensive displays on transportation and the railway.
+
+The U. S. was in the midst of an economic depression when Pangborn's grand tour began. He intended to win friends for American businesses interested in international markets by gathering information about the far away lands and providing information about products available from the States. Besides Pangborn, the Commission included a railroad engineer, a graphic artist, and photographer [William Henry Jackson](https://www.loc.gov/collections/worlds-transportation-commission/special-presentation/jackson-chronology/) (1842-1943), who had extensive experience photographing for American railroads and geological survey expeditions.
+
+The Commission began its tour in Tunis in late 1894 and at first traveled so rapidly that Jackson had time for only a few photographs of his chief subjects--traditional and modern transportation methods and popular tourist sites. The pace slowed in Ceylon, and as the group toured India, Oceania, China, and Siberia, Jackson produced more images illustrating native life, influences of modern civilization, and picturesque scenery. Many of the photographs appeared in an "Around the World" travel series in *Harper's Weekly*.
+
+The collection is arranged by format (photographs and lantern slides) then by [trip itinerary](https://www.loc.gov/collections/worlds-transportation-commission/special-presentation/trip-itinerary/), i.e., chronologically and geographically.
+
+The images have been reproduced from 584 lantern slides, which are 3.25 x 4 inches, and from 297 silver gelatin prints made by the Library from the original film and glass negatives which are 8 x 10 inches or smaller. Lantern slides are glass, positive transparencies. They are the forerunner of today's color slides. The machine used to project the slides was frequently called a magic lantern. Since lantern slides were usually made from a negative, some images may appear twice, as both a lantern slide and a photograph. To make the lantern slides look more realistic, they were colored by hand with dyes and paints.
+
+The image titles have been taken from nineteenth-century information found with the images. Some locations, for example, are misidentified. As more accurate information is discovered, it is provided in notes. For place names that have changed, the modern name appears as the place category.

@@ -16,23 +16,7 @@ from dataclasses import dataclass
 from pathlib import Path
 
 
-def _repo_root() -> Path:
-    # In CI this script executes from the trusted base-branch checkout
-    # (trusted-main/), while the content under test is the PRIMARY checkout —
-    # which is exactly the run step's working directory: every policy workflow
-    # invokes this script with cwd at the primary checkout and never sets a
-    # working-directory override. Using the process cwd keeps the
-    # trusted-validator split (trusted code, PR-head content) without deriving
-    # any filesystem path from environment data — there is no tainted-path
-    # flow left for a scanner to model, and no hard-coded runner path to break
-    # on self-hosted runners or a repo rename. Local (pre-commit) runs fall
-    # back to the script's own repository.
-    if os.environ.get("GITHUB_ACTIONS") == "true":
-        return Path.cwd()
-    return Path(__file__).resolve().parents[2]
-
-
-REPO_ROOT = _repo_root()
+REPO_ROOT = Path(__file__).resolve().parents[2]
 MB = 1024 * 1024
 GB = 1024 * MB
 
@@ -51,21 +35,15 @@ class Candidate:
 
 
 def run_git(args: list[str]) -> subprocess.CompletedProcess[str]:
-    try:
-        return subprocess.run(
-            ["git", *args],
-            cwd=REPO_ROOT,
-            text=True,
-            encoding="utf-8",
-            errors="replace",
-            capture_output=True,
-            check=False,
-            timeout=30,
-        )
-    except subprocess.TimeoutExpired as exc:
-        raise RuntimeError(f"git {args[0]} timed out after 30s") from exc
-    except OSError as exc:
-        raise RuntimeError(f"git {args[0]} could not run: {exc}") from exc
+    return subprocess.run(
+        ["git", *args],
+        cwd=REPO_ROOT,
+        text=True,
+        encoding="utf-8",
+        errors="replace",
+        capture_output=True,
+        check=False,
+    )
 
 
 def parse_porcelain_line(line: str) -> tuple[str, str] | None:
@@ -93,15 +71,55 @@ def git_ls_files_candidates() -> list[Candidate]:
     return candidates
 
 
-def stdin_path_candidates() -> list[Candidate]:
+def worktree_path_candidates(paths: list[str]) -> list[Candidate]:
     candidates: list[Candidate] = []
-    for raw_path in sys.stdin.buffer.read().split(b"\0"):
-        if not raw_path:
-            continue
-        path_text = raw_path.decode("utf-8", errors="replace")
+    for path_text in paths:
         path = REPO_ROOT / path_text
         if path.is_file():
             candidates.append(Candidate(status="changed", path=path, size=path.stat().st_size))
+    return candidates
+
+
+def stdin_paths() -> list[str]:
+    return [
+        raw.decode("utf-8", errors="replace")
+        for raw in sys.stdin.buffer.read().split(b"\0")
+        if raw
+    ]
+
+
+def git_ref_path_candidates(ref: str, paths: list[str]) -> list[Candidate]:
+    if not paths:
+        return []
+
+    process = subprocess.Popen(
+        ["git", "cat-file", "--batch-check"],
+        cwd=REPO_ROOT,
+        stdin=subprocess.PIPE,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        text=True,
+        encoding="utf-8",
+        errors="replace",
+    )
+    request = "".join(f"{ref}:{path}\n" for path in paths)
+    stdout, stderr = process.communicate(request)
+    if process.returncode != 0:
+        message = stderr.strip()
+        raise RuntimeError(message or "git cat-file failed")
+
+    candidates: list[Candidate] = []
+    for path_text, line in zip(paths, stdout.splitlines()):
+        if line.endswith(" missing"):
+            continue
+        parts = line.split()
+        if len(parts) != 3 or parts[1] != "blob":
+            continue
+        try:
+            size = int(parts[2])
+        except ValueError:
+            continue
+        candidates.append(Candidate(status=f"{ref}:blob", path=REPO_ROOT / path_text, size=size))
     return candidates
 
 
@@ -133,9 +151,13 @@ def changed_candidates(staged_only: bool) -> list[Candidate]:
     return candidates
 
 
-def lfs_filter_for(path: Path) -> str | None:
+def lfs_filter_for(path: Path, *, source: str | None = None) -> str | None:
     rel = path.relative_to(REPO_ROOT).as_posix()
-    result = run_git(["check-attr", "filter", "--", rel])
+    args = ["check-attr"]
+    if source is not None:
+        args.append(f"--source={source}")
+    args.extend(["filter", "--", rel])
+    result = run_git(args)
     if result.returncode != 0:
         return None
     # Format: path: filter: lfs
@@ -156,6 +178,7 @@ def main() -> int:
     parser.add_argument("--staged", action="store_true", help="check only staged files")
     parser.add_argument("--all-tracked", action="store_true", help="check all tracked files")
     parser.add_argument("--paths-from-stdin", action="store_true", help="check NUL-delimited paths from stdin")
+    parser.add_argument("--git-ref", help="read file sizes and attributes from this Git ref when checking stdin paths")
     parser.add_argument(
         "--lfs-required-mb",
         type=int,
@@ -175,27 +198,26 @@ def main() -> int:
     mode_count = sum(1 for enabled in (args.staged, args.all_tracked, args.paths_from_stdin) if enabled)
     if mode_count > 1:
         parser.error("--staged, --all-tracked, and --paths-from-stdin are mutually exclusive")
+    if args.git_ref and not args.paths_from_stdin:
+        parser.error("--git-ref requires --paths-from-stdin")
 
-    try:
-        if args.all_tracked:
-            candidates = git_ls_files_candidates()
-        elif args.paths_from_stdin:
-            candidates = stdin_path_candidates()
-        else:
-            candidates = changed_candidates(staged_only=args.staged)
+    if args.all_tracked:
+        candidates = git_ls_files_candidates()
+    elif args.paths_from_stdin:
+        paths = stdin_paths()
+        candidates = git_ref_path_candidates(args.git_ref, paths) if args.git_ref else worktree_path_candidates(paths)
+    else:
+        candidates = changed_candidates(staged_only=args.staged)
 
-        too_large: list[Candidate] = []
-        missing_lfs: list[Candidate] = []
+    too_large: list[Candidate] = []
+    missing_lfs: list[Candidate] = []
 
-        for candidate in candidates:
-            if candidate.size > lfs_max:
-                too_large.append(candidate)
-                continue
-            if candidate.size > lfs_required and lfs_filter_for(candidate.path) != "lfs":
-                missing_lfs.append(candidate)
-    except RuntimeError as exc:
-        print(f"large-file guard: {exc}", file=sys.stderr)
-        return 1
+    for candidate in candidates:
+        if candidate.size > lfs_max:
+            too_large.append(candidate)
+            continue
+        if candidate.size > lfs_required and lfs_filter_for(candidate.path, source=args.git_ref) != "lfs":
+            missing_lfs.append(candidate)
 
     if not too_large and not missing_lfs:
         print("large-file guard: OK")

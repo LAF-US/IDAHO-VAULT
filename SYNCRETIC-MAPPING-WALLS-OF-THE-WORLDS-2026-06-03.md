@@ -162,7 +162,7 @@ The synthesis case. Hill operates in the **northern axis register** — Saxon-co
 Tabulating across the corpus, with builders foregrounded alongside custodians:
 
 | Tradition | Wall | Builder(s) | Custodian(s) | Conditional passage |
-| --- | --- | --- | --- | --- |
+|---|---|---|---|---|
 | Classical axis mundi | Cosmic mountain | Cosmogonic act | Shaman / hero / god | The qualified, ritually |
 | Open Polar Sea | Arctic ice ring | (natural; cosmology silent) | (none staffed) | Eden fantasy; fails on contact |
 | Symmes Hole | Polar entrance | (cosmogony implied) | (none staffed) | Survives as fringe |
@@ -277,7 +277,6 @@ Within the vault's own grammar, *The Abhorsen* is also a named delegated office 
 ## Sources
 
 ### IRL provenance
-
 - [Roof of the World — Wikipedia](https://en.wikipedia.org/wiki/Roof_of_the_World)
 - [Pamir Mountains — Wikipedia](https://en.wikipedia.org/wiki/Pamir_Mountains)
 - [Axis mundi — Wikipedia](https://en.wikipedia.org/wiki/Axis_mundi)
@@ -288,7 +287,6 @@ Within the vault's own grammar, *The Abhorsen* is also a named delegated office 
 - John Cleves Symmes Jr., circular of 1818 — Symmes Hole
 
 ### Primary texts
-
 - Mary Shelley, *Frankenstein; or, The Modern Prometheus* (1818)
 - Jules Verne, *Voyage au centre de la Terre* (1864)
 - H. P. Lovecraft, *At the Mountains of Madness* (1931, serialized in *Astounding Stories*)
@@ -297,11 +295,9 @@ Within the vault's own grammar, *The Abhorsen* is also a named delegated office 
 - Garth Nix, *Sabriel* (1995), *Lirael* (2001), *Abhorsen* (2003), *Clariel* (2014), *Goldenhand* (2016) — Old Kingdom sequence
 
 ### Visual narrative
-
 - *Avatar: The Last Airbender* (Nickelodeon, 2005–2008)
 - *The Legend of Korra* (Nickelodeon, 2012–2014)
 
 ### Vault internal
-
 - [[RESEARCH_Icemark-Chronicles-2026-06-03]]
 - [[RESEARCH_Icemark-Lore-Compendium-2026-06-03]]

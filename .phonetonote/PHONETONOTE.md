@@ -6,6 +6,6 @@ related:
   - runtime
 ---
 
-**.phonetonote** â€” Imported software runtime persona.
+**.phonetonote** — Imported software runtime persona.
 
 phonetonote runtime and configuration.

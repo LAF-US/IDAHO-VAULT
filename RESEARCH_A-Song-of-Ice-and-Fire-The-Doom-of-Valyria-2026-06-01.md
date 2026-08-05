@@ -65,7 +65,6 @@ TWOIAF records that it is *commonly believed* the Doom was simple geology: the F
 
 **Theory B — Faltering magic (the Septon Barth thread)** *(the load-bearing scholarly theory).*
 TWOIAF reports a minority of maesters, drawing on fragments of Septon Barth, who held that Valyria had used sorcery to tame the Fourteen Flames for thousands of years — and that its endless appetite for slaves and wealth served as much to *sustain* those spells as to expand the Freehold. On this reading, when the magic at last faltered the cataclysm became inevitable: sorcery had held the volcanoes in check, and the slave-and-conquest economy existed partly to *fuel* it — so when it failed, the Doom followed. [awoiaf: Doom of Valyria]
-
 - **Why this theory survives only as fragments:** Barth's *Dragons, Wyrms, and Wyverns: Their Unnatural History* was condemned by the Citadel as *"provocative but unsound,"* and **King Baelor I "the Blessed" ordered it expunged and destroyed**. (⚠️ My earlier prompt's "Baelor Breakspear" was a conflation — the book-burning is **Baelor I Targaryen**.) Barth also speculated the Valyrians *bred dragons by bloodmagic* — reinforcing the picture of Valyrian power as fundamentally sorcerous. [awoiaf: Barth; Dragons, Wyrms, and Wyverns]
 
 > **Who was Septon Barth?** *(the source the whole theory rests on)*
@@ -73,7 +72,6 @@ TWOIAF reports a minority of maesters, drawing on fragments of Septon Barth, who
 >
 > **Inverted epithets — reading past the names** *(⚠️ interpretation, on canon facts).*
 > The Doom's lost testimony is guarded by two epithets the Faith handed out — and the facts turn both upside-down:
->
 > - **Septon Barth → "the Heretic":** the wisest man of his age, condemned for studying the higher mysteries and writing that dragons were *made* — i.e., for being **right about what the establishment denied**.
 > - **Baelor I → "the Blessed":** sainted king (the **Great Sept of Baelor** bears his name) whose piety in practice **burned Barth's books**, **imprisoned his own sisters** in the Maidenvault, installed absurd High Septons (a stonemason; reputedly a boy of eight), and ended in a **devotional fast that starved him to death** heirless at ~27.
 >
@@ -110,6 +108,4 @@ In *A Clash of Kings*, the pyromancer Hallyne recalls that "magic had begun to g
 
 ---
 
-```
-The world is quiet here．Esto Perpetua!
-```
+###### "The world is quiet here."

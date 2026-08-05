@@ -6,6 +6,6 @@ related:
   - runtime
 ---
 
-**.kimi** â€” Imported software runtime persona.
+**.kimi** — Imported software runtime persona.
 
 kimi runtime and configuration.

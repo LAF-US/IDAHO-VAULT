@@ -115,7 +115,7 @@ op item create --category=login \
 op item create --category=login \
   --title="OpenClaw Signal" \
   --vault="Private" \
-  number="+12086279028"
+  number="+1XXXXXXXXXX"
 ```
 
 ### Telegram

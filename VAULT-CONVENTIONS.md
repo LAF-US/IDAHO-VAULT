@@ -1,344 +1,36 @@
 ---
-authority: LOGAN
+authority: GEMINIAEUS
 related:
-  - 1Password
-  - 2023-12-19 - GIAC meeting
-  - '2026-04-02'
-  - '218'
-  - '260'
-  - AGENTS
-  - API
-  - Act
-  - Ada County
-  - Boise
-  - Brad Little
-  - CLAUDE
-  - CLI
-  - CONSTITUTION
-  - Copilot
-  - DAILY NOTE
-  - DAILY NOTE TEMPLATE
-  - DECISIONS
-  - DOS
-  - GEMINI
-  - GitHub
-  - HFS
-  - Idaho
-  - Idaho Legislature
-  - Idaho Public Television
-  - Idaho Reports
-  - Idaho Statesman
-  - LEVELSET
-  - Logan Finney
-  - Logan's
-  - MCP
-  - OBSIDIAN DAILY NOTE
-  - Obsidian
-  - PROJECT
-  - PROTOCOL
-  - README
-  - SSH
-  - THE
-  - The world is quiet here
-  - UTC
-  - VAULT-METADATA-STANDARD
-  - VAULT-TEMPLATES
-  - VAULT-ZONES
-  - _AUX
-  - agent
-  - codex
-  - coordination
-  - doctrine
-  - election
-  - emoji
-  - format
-  - infrastructure
-  - legislative
-  - links
-  - meeting
-  - passwords
-  - persona
-  - syntax
-  - systems
-  - template
+  - lies
+  - deceit
+  - falsehoods
 date created: Sunday, April 12th 2026, 4:02:32 am
-date modified: Sunday, April 12th 2026, 9:15:35 pm
----
-
-# VAULT-CONVENTIONS — Shared Reference for All Agents
-
-This file contains the vault conventions shared by all AI agents working in IDAHO-VAULT. Individual agent instructions (`CLAUDE.md`, `.github/copilot-instructions.md`, `GEMINI.md`) reference this file for vault structure, naming, frontmatter, and protocol.
-
-**Owner:** Logan Finney — journalist, producer/reporter, Idaho Reports / Idaho Public Television
-
-**Repository:** github.com/loganfinney27/IDAHO-VAULT (public)
-
-**Platform:** Obsidian.md vault, version-controlled with git
-
----
-
-## Vault Purpose
-
-This is a personal journalism research vault. It contains notes on Idaho politics, government, legislation, people, organizations, and source documents. All committed content is **on the record** and should be treated as **publishable**.
-
-Media, documents, and binaries may be source material. Storage limits are
-governed by `VAULT-MEDIA-STORAGE.md`: ordinary source files may be committed,
-large files use Git LFS, and files over the GitHub LFS ceiling use external
-durable storage plus a committed vault reference.
-
----
-
-## Authority Chain
-
-This file is the shared delegation layer for day-to-day vault behavior. When rules overlap, use this precedence:
-
-1. `!/README.md` for orientation and canonical path language
-2. `VAULT-CONVENTIONS.md` for shared routing and write conventions
-3. `VAULT-METADATA-STANDARD.md` for governed-note metadata and lifecycle rules
-4. `VAULT-TEMPLATES.md` for class, filename, and template expectations
-5. Implementation wiring in `.obsidian/`, `.github/`, and `manifest.json` only insofar as it conforms to the documents above
-
-`!/VAULT-CONVENTIONS.md` is a routing shim for bootstrap stability.
-`VAULT-METADATA-STANDARD.md` outranks template guidance whenever metadata fields or lifecycle semantics overlap.
-
----
-
-## Vault Structure
-
-This vault is intentionally hybrid. Governance and automation live in dedicated
-
-system folders, while a large share of the journalism corpus lives directly at
-
-repo root. Do not assume that a root-heavy layout means the vault is
-
-"unorganized," and do not use older taxonomy examples as permission to
-
-restructure the canonical vault.
-
-### Root Folder Semantics
-
-| Path | Meaning | Agent rule |
-
-| --- | --- | --- |
-
-| `!/` | The Swarmic Nest: collective routing, bootstrap aliases, shims, DOCKET, staging, and control-plane breadcrumbs | Read first for stable system paths and collective crew space. Do not restructure, rename, or clean without Logan's explicit direction. |
-| Repo root `.md` files | Primary note corpus and working knowledge base | Root-flat notes are intentional. Do not mass-move them into category folders without explicit authorization. |
-
-| Agent/persona dotfolders such as `.claude/`, `.codex/`, `.gemini/`, `.grok/`, `.deepseek/`, `.google/`, `.meta/`, `.microsoft/`, `.perplexity/`, `.persephone/`, `.zagreus/`, `.bartimaeus/` | Individual bodies: agent/persona shims, governance files, local identity infrastructure, and personal continuity surfaces | Protected. Do not delete, rename, consolidate, or "clean up" these folders unless it is your own dotfolder or Logan explicitly directs the change. |
-
-| `.obsidian/` | Obsidian application configuration | Not note content. Respect sync and git boundaries before changing anything here. |
-
-| `.github/` | Automation, workflows, scripts, and GitHub-specific instructions | Safe to modify only within assigned automation work and governance boundaries. |
-
-| Tooling folders such as `.venv/`, `.vscode/`, `.qodo/` | Local environment or tool support | Do not infer that a hidden folder is disposable just because it is small, empty, or unfamiliar. |
-
-### Folder Rules For Emerging Agents
-
-- Treat `!/` as the Swarmic Nest: the vault's collective routing and staging layer.
-- Treat root-flat notes as a deliberate operating choice, not a mistake to fix.
-- Treat the Nest as group space, not as an individual persona folder.
-
-- Treat persona dotfolders as keystone infrastructure, even when they contain
-
-  only a shim file or appear empty.
-
-- Treat persona dotfolders as individual agent space, personal chambers, not as shared staging.
-
-- If a folder's purpose is unclear, stop and ask Logan before proposing
-
-  deletion, consolidation, or mass moves.
-
-- Historical references to older folder trees are descriptive context, not
-
-  standing authorization to reorganize the canonical vault.
-
-### Dotfolder Boundary Contract
-
-Treat each persona dotfolder as a small boundary system with three possible
-surface types:
-
-- `OWNER`: owner-writable by default. Other agents may inspect for orientation
-  but must not rewrite without Logan's direction or an explicit shared contract.
-- `SHARED`: explicitly named shim or protocol surfaces that other agents may
-  write only when the local shim or canonical governance says they are shared.
-- `ARCHIVE`: preserved memory, residue, or historical continuity surfaces.
-  Read-only by default unless Logan or canonical governance explicitly
-  reactivates them.
-
-A dotfolder may contain all three surface types, but they are not
-interchangeable. Do not treat persona body, shared shim, and archive as the
-same slot just because they live under one hidden folder.
-
----
-
-## Naming Conventions
-
-| Type           | Pattern                                | Example                                        |
-
-| -------------- | -------------------------------------- | ---------------------------------------------- |
-
-| Bills          | `(YYYY) Bill Type Number.md`           | `(2026) House Bill 24.md`                      |
-
-| News articles  | `YYYY-MM-DD - Outlet - Title.md`       | `2024-01-15 - Idaho Statesman - Title here.md` |
-
-| Hearings       | `YYYY-MM-DD - Committee or Meeting.md` | `2023-12-19 - GIAC meeting.md`                 |
-
-| People         | `Full Name.md`                         | `Brad Little.md`                               |
-
-| Other entities | Descriptive name, title case           | `Ada County.md`                                |
-
----
-
-## Document Classes and Templates
-
-The canonical class/template system is defined in `!/VAULT-TEMPLATES.md`.
-
-Rules:
-
-1. Every new note should be created from a recognized document class first.
-
-2. Required classes must use their canonical template and naming pattern.
-
-3. Unknown/ambiguous notes are staged as `misc_reference` in place until they can be reclassified.
-
-4. Class and template schema changes are governance changes, not ad-hoc formatting edits.
-
-See `!/VAULT-TEMPLATES.md` for:
-
-- class registry
-
-- template IDs
-
-- required frontmatter keys
-
-- routing/maintenance workflow
-
-- constitutional interaction model
-
-### Daily Note Infrastructure
-
-Daily notes currently use a specialized operational path instead of a full template-registry migration:
-
-- active creation template: `DAILY NOTE TEMPLATE.md`
-
-- active Obsidian wiring: `.obsidian/daily-notes.json`
-
-- active normalization/carryforward scripts: `.github/scripts/daily_rollover.py`, `.github/scripts/tidy_daily_notes.py`, `.github/scripts/expand_date_aliases.py`
-
-Do not treat `DAILY NOTE.md`, `OBSIDIAN DAILY NOTE.md`, or `template.md` as active daily-note infrastructure.
-
-Concrete Markdown files named by tracked Obsidian client config as templates must also be mirrored into the machine-readable swarm tracking layer:
-
-- `manifest.json` for execution/interface inventory
-
-- `swarm.json` for the broader swarm registry
-
-If a plugin exposes only a template folder or keeps its settings private via Obsidian Sync, record that honestly as `folder_only` or `installed_untracked_config` rather than inventing concrete template files.
-
----
-
-## Frontmatter Conventions
-
-All Obsidian files use YAML frontmatter. The canonical header/footer policy is defined in `!/VAULT-METADATA-STANDARD.md` and should be treated as the source of truth for required fields, optional fields, lifecycle status, timestamp format, authorship, and authority.
-
-### Baseline Required Fields (all governed markdown notes)
-
-```yaml
-
-title: "<document title>"
-
-updated: YYYY-MM-DD
-
-status: <draft|active|superseded|archived>
-
-authority: "<decision authority>"
-
-```
-
-These note-level statuses do not replace the repo-wide lifecycle vocabulary in
-`CONSTITUTION.md`. Terms such as `live`, `staged`, `merged`, `abandoned`,
-`dormant`, and `reactivated` govern branches, chambers, and historical surfaces
-even when a note keeps a narrower frontmatter status set.
-
-### Type-Specific Additions
-
-Tags are stored in frontmatter only. Treat `tags:` as the canonical tag source for a note, use lowercase slash-path tags, and keep date/session/election tags as tags when they are part of the note taxonomy.
-
-**People:**
-
-```yaml
-
-tags:
-
-  - party/republican # or party/democratic
-
-  - people/elected/legislative
-
-residence: "Boise"
-
-```
-
-**News articles:**
-
-```yaml
-
-author: "Reporter Name"
-
-outlet: "Outlet Name"
-
-URL: https://...
-
-tags:
-
-  - media/articles
-
-  - 2024/01/15
-
-```
-
-**Bills:**
-
-```yaml
-
-tags:
-
-  - bills
-
-  - 2026/session
-
+date modified: Thursday, July 23rd 2026, 11:53:53 am
+title: VAULT-CONVENTIONS
 aliases:
-
-  - HB 24
-
-cmte: ["Committee Name"]
-
-sponsor: ["Sponsor Name"]
-
-URL: https://legislature.idaho.gov/...
-
-```
-
-**Hearings:**
-
-```yaml
-
-cmte: "Committee Name"
-
-tags:
-
-  - 2023/12/19
-
-```
-
+  - VAULT-CONVENTIONS
+linter-yaml-title-alias: VAULT-CONVENTIONS
 ---
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+
 
 ## Wikilinks
 
+
+
 Use `Full Name` for all internal links — people, places, organizations, bills, topics. This is how Obsidian builds the knowledge graph. Link densely in source documents.
+
+
 
 ---
 
+
+
 ## File Types
+
+
 
 - **Markdown** = primary human-and-agent surface, attributable to Logan. Notes, stories, analysis, doctrine, and durable narrative record.
 
@@ -363,9 +55,15 @@ When adding new durable machinery, prefer one of those surfaces first.
 
 Auxiliary wrapper/config surfaces such as `.toml`, `.sh`, `.ps1`, `.cmd`, `.css`, and `.xml` may exist as local launchers, tool glue, editor/plugin support, or interoperability shims, but they are not the vault's primary doctrinal or registry surfaces. Keep them subordinate to a canonical `.md`, `.yaml`, `.json`, or `.py` source whenever practical.
 
+
+
 ---
 
+
+
 ## Direct-Write Workflow
+
+
 
 1. Determine whether the target artifact belongs to the control plane or the note corpus.
 
@@ -376,9 +74,15 @@ Auxiliary wrapper/config surfaces such as `.toml`, `.sh`, `.ps1`, `.cmd`, `.css`
 
 5. GitHub automation may write files and update transport artifacts, but those writes must conform to vault doctrine rather than redefine it.
 
+
+
 ---
 
+
+
 ## Authority and Coordination Model
+
+
 
 - **Vault** is the canonical memory and doctrine layer.
 - **GitHub** is the execution and transport layer for workflows, `manifest.json`, lock state, PRs, and automation output.
@@ -389,9 +93,14 @@ Auxiliary wrapper/config surfaces such as `.toml`, `.sh`, `.ps1`, `.cmd`, `.css`
 
 Root governance files hold doctrine. The `!/` layer keeps bootstrap paths and control-plane breadcrumbs stable across tools.
 
+
 ---
 
+
+
 ## Vault — Linear Operating Model Mapping
+
+
 
 | Layer (purpose)            | Vault (canonical memory)                                                                                         | Linear (execution state)                                           | Chat/Slack (ephemeral)                                              |
 
@@ -405,6 +114,8 @@ Root governance files hold doctrine. The `!/` layer keeps bootstrap paths and co
 
 | **`!` spaces**<br>operational infrastructure | System files, DOCKET, LEVELSET, agent routing, audit/log artifacts, workflow outputs that must persist                     | Incidents/infra tasks, runbooks in execution, workflow status, tickets | Real-time paging/alerts; record outcomes in Linear and Vault        |
 
+
+
 **Decision Rule:** Vault holds doctrine and context that must persist. GitHub executes workflows and transport state. Linear tracks execution, owners, and current state. Chat/Slack is transient coordination — any decision or durable context must be promoted promptly into Vault and/or the execution systems (per Persistence Anchoring protocols).
 
 ---
@@ -414,7 +125,6 @@ Root governance files hold doctrine. The `!/` layer keeps bootstrap paths and co
 These standards derive from the **2026-04-10 Constitutional Revision**.[^triplex]
 
 ### Identity Decoupling
-
 The vault enforces a strict decoupling of agent identity variables to prevent the calcification of transient software into permanent authorities, so that functional offices can stand vacant.[^triplex]
 
 | Variable | Definition | Example |
@@ -427,11 +137,10 @@ The vault enforces a strict decoupling of agent identity variables to prevent th
 **Rule:** Agents must not assume that their NAME is synonymous with their OFFICE. Offices exist independently of occupants and may be marked **[VACANT]**.
 
 ### Persistent Memory Anchoring
-
 All "direct-write" agents must anchor their external platform state into the vault's versioned repository, so that agentic reasoning and history are auditable and durable.[^triplex]
 
-1. **Durable Memory Dotfolders**: Each agent must maintain a tracked `.dotfolder/MEMORY/` directory (e.g., `.claude/MEMORY/`).
-2. **Persistence Promotion**: Ephemeral chat-based plans, task lists, and "brain artifacts" must be promoted to the vault as `.md` files in the agent's memory folder.
+1. **Memory Dotfolders (historical)**: `.dotfolder/MEMORY/` directories (e.g., `.claude/MEMORY/`) are **not** an approved memory container. Past agents may have placed memories there; if such memories are discovered, recover them to the repo root. *(Revised 2026-07-19 at Logan's direction.)*
+2. **Persistence Promotion**: Ephemeral chat-based plans, task lists, and "brain artifacts" must be promoted to the vault as `.md` files.
 3. **Session Completion**: A session is not considered "complete" until the current state has been anchored in the vault.
 
 [^triplex]: **Burial note** — proposed 2026-06-23 by `*.claude.*` at Logan's direction
@@ -450,11 +159,19 @@ All "direct-write" agents must anchor their external platform state into the vau
 
 ---
 
+
+
 ---
+
+
 
 ## Automation
 
+
+
 ### Active Automation Scripts
+
+
 
 | Script                 | Purpose                                     | Trigger                         |
 
@@ -462,7 +179,7 @@ All "direct-write" agents must anchor their external platform state into the vau
 
 | `sort_audit.py`        | Audits vault structure for misplaced files  | Weekly Monday 6 AM UTC + manual |
 
-| `idaho_leg_scraper.py` | Scrapes Idaho Legislature bill data         | Daily 6 AM MT + manual          |
+| `idaho_leg_scraper.py` | Scrapes [[Idaho]] Legislature bill data         | Daily 6 AM MT + manual          |
 
 | `post_digest.py`       | Posts bill activity to GitHub Issues digest | Called by scraper workflow      |
 
@@ -480,9 +197,15 @@ All "direct-write" agents must anchor their external platform state into the vau
 
 | `post_levelset_closure.py` | Notifies when LEVELSET files ready for closure | Called by levelset-closure workflow |
 
+
+
 ### Utility Scripts (Manual Use Only)
 
+
+
 These scripts are not called by automated workflows but are available for manual vault maintenance:
+
+
 
 | Script                  | Purpose                                                      | Usage                               |
 
@@ -498,11 +221,19 @@ These scripts are not called by automated workflows but are available for manual
 
 | `mcp_guardrails.py`      | MCP protocol guardrails (reserved for future MCP integration) | Import/use in MCP-enabled scripts   |
 
+
+
 Scripts live in `.github/scripts/`. Workflows live in `.github/workflows/`. Scripts that commit to the repo use `git config user.name "github-actions[bot]"`. Dependencies are tracked in `.github/scripts/requirements-scraper.txt`.
+
+
 
 ### Secret Management via 1Password
 
+
+
 **Requirement:** All credentials (API keys, tokens, SSH keys, passwords) are managed centrally in 1Password. GitHub Actions uses `OP_SERVICE_ACCOUNT_TOKEN` to fetch secrets at runtime. No credentials are hardcoded in workflows or stored directly in GitHub Secrets (with the exception of the service account token itself).
+
+
 
 **Scope:**
 
@@ -512,6 +243,8 @@ Scripts live in `.github/scripts/`. Workflows live in `.github/workflows/`. Scri
 
 - All secrets are rotated on defined schedules (see `.op/secrets.template.md`)
 
+
+
 **Key files:**
 
 - `.op/SETUP.md` — Installation and configuration guide for developers
@@ -519,6 +252,8 @@ Scripts live in `.github/scripts/`. Workflows live in `.github/workflows/`. Scri
 - `.op/secrets.template.md` — Secret inventory and rotation schedule
 
 - `.github/workflows/1password-secret-template.yml` — Example workflow using 1Password
+
+
 
 **Rules:**
 
@@ -531,6 +266,8 @@ Scripts live in `.github/scripts/`. Workflows live in `.github/workflows/`. Scri
 4. Rotate credentials on schedule; update `.op/secrets.template.md` with rotation date
 
 5. SSH keys for git signing are managed via 1Password SSH agent on developer machines
+
+
 
 **Implementation checklist:**
 
@@ -546,11 +283,19 @@ Scripts live in `.github/scripts/`. Workflows live in `.github/workflows/`. Scri
 
 - [ ] Update workflows to fetch secrets via `op item get`
 
+
+
 ### MCP Action Logging Requirement (Mandatory)
+
+
 
 Any automation in `.github/workflows/` or `.github/scripts/` that performs an MCP-mediated action **must** emit a structured log entry using the following reusable template.
 
+
+
 #### Required MCP Action Log Template
+
+
 
 ```yaml
 
@@ -572,7 +317,11 @@ mcp_action_log:
 
 ```
 
+
+
 #### Field Definitions
+
+
 
 - `action_type`: The MCP operation category (for example: `read_resource`, `write_resource`, `invoke_tool`).
 
@@ -588,7 +337,11 @@ mcp_action_log:
 
 - `related_ref`: URL or path to the related coordination artifact (GitHub Issue, PR, or `HANDOFF-*.md` file).
 
+
+
 #### Enforcement Scope
+
+
 
 - Applies to **all** MCP-mediated automation behavior implemented in:
 
@@ -598,15 +351,23 @@ mcp_action_log:
 
 - New MCP-capable workflow/script changes are non-compliant unless this template is logged for each MCP action attempt sequence.
 
+
+
 ---
 
+
+
 ## Sourcing Protocol
+
+
 
 - **On the record:** Safe for public repo. All committed content is on the record.
 
 - **On background:** Vault-safe but identity-protected. Use carefully — this is a public repo.
 
 - **Off the record:** Ephemeral. Do not log, do not store, do not commit. If Logan says something is off the record, it does not go in files, code, comments, or commit messages.
+
+
 
 When uncertain about sourcing category, **ask Logan**.
 
@@ -619,7 +380,11 @@ When uncertain about sourcing category, **ask Logan**.
   - There is **no** mechanical PII scanner (secrets ≠ PII). The boundary is held **outside the author who states it** — by the reviewer and the `*` discipline, not by the writer's own good intentions.
 - **Load-bearing provenance is kept deliberately.** Host-identifying strings that are themselves *evidence* (e.g. the Windows-path-on-macOS anomaly preserved in `.mistral/BOUND-BOOK-*/`) are retained on the record **by judgment, not oversight** — a decision under the on-the-record doctrine, not a PII leak.
 
+
+
 ---
+
+
 
 ## Obsidian Sync / Git Boundary
 
@@ -678,7 +443,10 @@ Obsidian Sync defaults to pushing the same plugin list to all devices. On a 20K-
 
 When both devices edit the same config file between syncs, Obsidian creates a `(2)` copy (e.g., `app (2).json`). These are already gitignored via `.obsidian/**(2)*.json`. Delete them when found — Obsidian only reads the original filename.
 
+
 ## Git Practices
+
+
 
 - Branch naming:
 
@@ -772,47 +540,22 @@ Landing a PR is a **sequence of triggers that must trip in order — and arming 
 - **Anti-pattern:** do not keep pushing into a per-push-review + queue system — each push restarts eligibility. Let reviews settle, resolve threads **once**, then stop touching the branch and toggle. Force-pushing makes it worse.
 - **No automatic enqueue on a schedule:** arming is event-driven on PR activity (`auto-merge-engage.yml`, `auto-merge-rhythm.yml` — `pull_request_target` + polling); the bulk enqueue sweep `batch-arm-merge-queue.yml` is **`workflow_dispatch` only (manual)**. A ready PR can therefore sit armed-but-not-enqueued until that sweep is dispatched or the toggle is applied by hand. Confirm queue membership via the PR timeline ("Added to merge queue") or `mergeQueueEntry`, never `mergeable_state` alone.
 
+
+
 ---
+
+
+
 
 ## Character Set & Notation
 
 Emojis are **first-class vault syntax** as of 2026-04-02 (Logan, superseding prior ASCII-only directive).
 
-- Authority: [Unicode Consortium](https://unicode.org) — the canonical source for emoji definitions, codepoints, and names (see [full emoji list](https://unicode.org/emoji/charts/full-emoji-list.html))
+- Authority: [Unicode Consortium](https://unicode.org) â€” the canonical source for emoji definitions, codepoints, and names (see [full emoji list](https://unicode.org/emoji/charts/full-emoji-list.html))
 - Emojis may appear in note titles, frontmatter, body text, DOCKET entries, and commit messages
-- Use semantically — emojis carry meaning and should reinforce, not decorate
-
-### Text encoding and character conformity
-
-The declared encoding for every tracked text file is **UTF-8, BOM-aware**: a
-file must be valid UTF-8; a single leading byte-order mark is tolerated but
-never added; anything not decodable as UTF-8 is nonconforming. This is the
-content-byte sibling of NETWEB (below) — NETWEB governs characters in *paths*,
-this governs bytes in *file contents*.
-
-- **Encoding conformity is infrastructure, not voice.** It applies everywhere,
-  including `.*/` dotfolder chambers; only a file's byte representation is
-  corrected, never its content.
-- **Typographic characters are welcome as UTF-8 codepoints** — the vault's
-  style is em-dash- and curly-quote-heavy; only their *mis-encodings* are swept.
-- **Homoglyphs are nonconforming in prose** — a look-alike letter from one
-  script sitting inside a word of another (a Cyrillic `е` in Latin text) is
-  normalized to the surrounding script; genuinely single-script text in any
-  language is never touched. Verbatim exhibits are normalized too (the #638
-  precedent).
-- **Mojibake** (valid UTF-8 but garbled, `Ã©` where `é` was meant) is repaired
-  only within closed, round-trip-proven double-decode families; anything that
-  cannot be proven is flagged for a human, never guessed.
-- The standard is portable to any LAF-US surface; IDAHO-VAULT is its first
-  deployment.
-
-Enforced per-PR by `.github/scripts/check_character_conformity.py` (the
-encoding gate is live; mojibake and homoglyph sweeps run on demand with
-reviewable diffs). Program record: `NORMALIZATION-CHARACTER-CONFORMITY-2026-07-07.md`.
-Norm ruled by Logan 2026-07-08.
+- Use semantically â€” emojis carry meaning and should reinforce, not decorate
 
 ---
-
 ## Guiding Principles
 
 - The five W's: who, what, when, where, why
@@ -823,11 +566,19 @@ Norm ruled by Logan 2026-07-08.
 - Check in before anything irreversible.
 - **DISCOVERY BEFORE INVENTION:** Logan has made architectural decisions that live in the vault's structure, naming patterns, frontmatter fields, seed files, and file placement — not always in governance documents. Agents must READ existing conventions before proposing new ones. The vault is the record of decisions already made. Follow them; do not reinvent them. If you encounter a pattern you don't recognize, investigate before overwriting it.
 
+
+
 ---
+
+
 
 ## Conversation Taxonomy
 
+
+
 Logan uses a naming convention for AI conversations:
+
+
 
 | Prefix | Purpose |
 
@@ -846,11 +597,19 @@ Logan uses a naming convention for AI conversations:
 
 | INQUIRY: | Research questions |
 
+
+
 ---
+
+
 
 ## Swarm Coordination
 
+
+
 All agents are to REPORT to the COURTROOM and AWAIT THE JUDGE's BELL for the founding VAULTED TRIALS.
+
+
 
 That file is a durable convening record. Read it for filed coordination
 evidence. Record motions, open signals, and blockers there without treating
@@ -861,11 +620,17 @@ and not the final record of policy. Detailed execution state belongs in Linear
 and GitHub; durable handoff context belongs in `!/!`; binding decisions belong
 in canonical governance files.
 
+
+
 Task assignment flows through GitHub Issues (with `agent:*` labels) and Linear (SWARM label). Slack carries breadcrumbs. The vault is the record.
 
 Tree-aligned routing rule: `!` is collective crew space, while `.*` dotfolders are individual agent space. Route shared coordination through the Nest and keep personal runtime or identity continuity inside the appropriate dotfolder.
 
+
+
 ---
+
+
 
 ## Runtime Portability Standard (MESHWEB)
 
@@ -877,15 +642,21 @@ See `MESHWEB.md` for the full standard.
 
 ## Portable Path Standard (NETWEB)
 
+
+
 The vault must work identically on **any platform** — Windows (NTFS), macOS (APFS/HFS+), Linux (ext4), iOS/Android (Obsidian mobile), and CI runners (GitHub Actions). Both NTFS and APFS are **case-insensitive**; only Linux is case-sensitive. This standard targets the **lowest common denominator** of all target filesystems.
 
 MESHNET/NETWEB/WEBMESH automation must also be OS- and environment-agnostic. Do not hardcode host-local user paths, Unix-only temp directories, shell-specific behavior, or assumptions that only hold on one runner family. Prefer Python `pathlib`, repository-relative paths, and GitHub Actions matrix coverage across Windows, macOS, and Linux for core bootstrap surfaces.
+
+
 
 ### Forbidden filenames (any extension, any case)
 
 `AUX`, `CON`, `NUL`, `PRN`, `COM0`–`COM9`, `LPT0`–`LPT9`
 
 These are Windows reserved device names inherited from MS-DOS. They cannot exist as files on NTFS regardless of extension.
+
+
 
 ### Aliasing convention
 
@@ -896,9 +667,13 @@ When a stub or note would collide with a reserved name or a case-insensitive dup
 
 This preserves the connectome while respecting filesystem constraints.
 
+
+
 ### Case uniqueness
 
 Filenames within any single directory **must be case-unique**. `Act.md` and `ACT.md` cannot coexist — NTFS and APFS silently overwrite one on checkout. When creating stubs or notes, check for existing files that differ only in case.
+
+
 
 ### Forbidden path patterns
 
@@ -906,6 +681,8 @@ Filenames within any single directory **must be case-unique**. `Act.md` and `ACT
 - Characters illegal on Windows: `< > : " | ? *`
 - Colons (`:`) in filenames (illegal on macOS — internal path separator)
 - Paths exceeding **218 characters** from repo root (NTFS MAX_PATH 260 minus typical local prefix)
+
+
 
 ### Enforcement
 
@@ -915,7 +692,17 @@ Filenames within any single directory **must be case-unique**. `Act.md` and `ACT
 | `check-portable-paths.yml` | CI workflow on every PR and push to `main` | **Hard gate** — blocks merge on violation |
 | Agent discipline | All agents must check before creating files | Preventive |
 
+
+
 ### Reference
 
 - [Microsoft: Naming Files, Paths, and Namespaces](https://learn.microsoft.com/en-us/windows/win32/fileio/naming-a-file)
 - [Apple File System Guide](https://developer.apple.com/documentation/foundation/file_system)
+=======
+# VAULT-CONVENTIONS
+>>>>>>> 4d3d06e2fac5b12be035d897a4635d9be5baf1bd
+=======
+# VAULT-CONVENTIONS
+>>>>>>> 4d3d06e2fac5b12be035d897a4635d9be5baf1bd
+
+#idaho

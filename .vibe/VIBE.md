@@ -6,6 +6,6 @@ related:
   - runtime
 ---
 
-**.vibe** â€” Imported software runtime persona.
+**.vibe** — Imported software runtime persona.
 
 vibe runtime and configuration.

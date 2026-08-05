@@ -6,6 +6,6 @@ related:
   - runtime
 ---
 
-**.ollama** â€” Imported software runtime persona.
+**.ollama** — Imported software runtime persona.
 
 ollama runtime and configuration.

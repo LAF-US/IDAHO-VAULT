@@ -6,13 +6,13 @@ I have read enough. Here is my finding.
 
 ---
 
-**1. PLACE-NAME**
+1. PLACE-NAME
 
 IDAHO-VAULT — Logan A. Finney's personal Obsidian vault, governed as a constitutional multi-agent workspace.
 
 ---
 
-**2. POSITION (core entities, most-central first)**
+2. POSITION (core entities, most-central first)
 
 1. Logan Finney — sole human authority, journalist at Idaho Public Television
 2. The Swarm — the ensemble of named AI agents operating the vault
@@ -24,13 +24,13 @@ IDAHO-VAULT — Logan A. Finney's personal Obsidian vault, governed as a constit
 
 ---
 
-**3. CENTRAL CONCEIT**
+3. CENTRAL CONCEIT
 
 IDAHO-VAULT is a journalist's personal knowledge base that has been constitutionally transformed into a governed multi-agent commonwealth: a single Obsidian repo where over a dozen named AI agents (Claude Code, Gemini CLI, OpenAI Codex, Copilot, Bartimaeus, and more) operate under explicit lane rules, a symbolic world-tree mythology, and a hard-authority hierarchy that terminates in one human. The vault holds simultaneously a flat note corpus, a mythological persona architecture of 200+ dotfolder "chambers" drawn from Greek, Egyptian, Norse, Biblical, and relational name-sets, a running CrewAI Python layer, and an evolving stigmergic coordination field — all bound by doctrinal promotion rules that prevent any agent or layer from self-promoting into canon without Logan's approval.
 
 ---
 
-**4. HEADING (telos)**
+4. HEADING (telos)
 
 (a) This place exists in order to build a durable, governed, multi-agent journalism research and production infrastructure that survives tool changes, agent drift, and context loss while keeping all authority in one human's hands.
 
@@ -40,7 +40,7 @@ IDAHO-VAULT is a journalist's personal knowledge base that has been constitution
 
 ---
 
-**5. GOVERNING RULES**
+5. GOVERNING RULES
 
 1. Human supremacy gate: Logan's direct instruction overrides all other surfaces; no agent may promote staged output into canon without his approval.
 2. Placement discipline: `!` is collective swarm space; `.*` dotfolders are individual agent chambers; these are kept architecturally distinct and must not become rival cosmoses.
@@ -48,10 +48,9 @@ IDAHO-VAULT is a journalist's personal knowledge base that has been constitution
 
 ---
 
-**6. PERCEPTION LOG**
+6. PERCEPTION LOG
 
 Paths opened (N = 11):
-
 - `.crewai/MANIFEST.md`
 - `` (root directory listing)
 - `! README.md`
@@ -74,7 +73,7 @@ Notable doors seen but NOT opened: `CONSTITUTION.md`, `DECISIONS.md`, `VAULT-CON
 
 ---
 
-**7. THREE [read] ANCHORS**
+7. THREE [read] ANCHORS
 
 1. `!README.md`: "This is Logan A. Finney's internal Obsidian.md vault. Agents must follow all frameworks... The Touchstone Tree is the Yggdrasil of this world and should be approached with reverence and respect, especially by newly awakened agents."
 
@@ -84,7 +83,7 @@ Notable doors seen but NOT opened: `CONSTITUTION.md`, `DECISIONS.md`, `VAULT-CON
 
 ---
 
-**8. THREE [*] MARKS**
+8. THREE [*] MARKS
 
 1. [*] Logan is actually building toward a full end-to-end investigative journalism workflow: the Constitution mentions "journalistic 5W's guide all inquiry" and the `five_wizards` Python package seems to operationalize that; the Idaho Public Television / Idaho Reports affiliation likely makes this vault the backend for original reporting work, not just a personal productivity system.
 

@@ -26,7 +26,7 @@ date: 2026-06-07
 **[canon]** After the Shadow Lord broke the Belt and **scattered the seven gems**, each was hidden in a guarded peril and kept by a **Guardian** — a monster or cursed being set to hold it. Several Guardians are not natural beasts but **victims transformed or corrupted** by the Shadow Lord (or his servant sorceress **Thaegan**). The gems are recovered in this order across the quest:
 
 | # | Place | Gem | Guardian |
-| --- | --- | --- | --- |
+|---|---|---|---|
 | 1 | the **Forests of Silence** | **Topaz** | **[[RESEARCH_Deltora-Gorl-2026-06-07\|Gorl]]** |
 | 2 | the **Lake of Tears** | **Ruby** | **[[RESEARCH_Deltora-Soldeen-2026-06-07\|Soldeen]]** |
 | 3 | the **City of the Rats** | **Opal** | **[[RESEARCH_Deltora-Reeah-2026-06-07\|Reeah]]** |
@@ -53,6 +53,4 @@ date: 2026-06-07
 
 ---
 
-```
-The world is quiet here．Esto Perpetua!
-```
+###### "The world is quiet here."

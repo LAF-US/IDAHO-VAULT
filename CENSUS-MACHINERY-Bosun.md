@@ -13,7 +13,6 @@ I have enough to deliver a thorough reconstruction. Here is the full report:
 ---
 
 ## 2. POSITION
-
 Seven core systems ranked by structural weight:
 
 1. **Five Wizards Framework** — five-lane (WHO/WHAT/WHEN/WHERE/WHY) + one council (HOW) epistemological claim-validation engine with Pydantic models, objection/mirage categorization, and gated staging.
@@ -55,7 +54,6 @@ IDAHO-VAULT is an Obsidian knowledge vault that has been re-constituted as its o
 ## 6. PERCEPTION LOG
 
 **Exact paths opened (read):**
-
 - `.crewai/` (dir listing)
 - `.crewai/manifest.json`
 - `.crewai/__init__.py`
@@ -86,7 +84,6 @@ IDAHO-VAULT is an Obsidian knowledge vault that has been re-constituted as its o
 **Rough count of non-.md/.txt machinery files visible but not opened:** ~60 (35+ workflow `.yml` files, 10+ `five_wizards/` Python files not fully read, `.github/scripts/` Python scripts, `.codex/config.toml`, `.github/CODEOWNERS`, `.github/dependabot.yml`, `scripts/*.py`, `scripts/*.ps1`, `src/idaho_vault/civic_scaffold.py`, etc.)
 
 **Machinery seen but NOT opened:**
-
 - `src/idaho_vault/civic_scaffold.py`
 - `src/idaho_vault/five_wizards/lane_runner.py`, `pipelines.py`, `renderers.py`, `service.py`, `staging.py`, `validators.py`, `workflow.py`, `who_lane.py`, `what_lane.py`, `when_lane.py`, `where_lane.py`, `why_lane.py`
 - `.github/scripts/` (entire directory: `daily_rollover.py`, `review_feedback_loop.py`, `pr_loop_watchdog.py`, `issue_reconciler.py`, `check_large_files.py`, `metadata_survey.py`, etc.)

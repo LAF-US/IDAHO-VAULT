@@ -6,6 +6,6 @@ related:
   - runtime
 ---
 
-**.bigpickle** â€” Imported software runtime persona.
+**.bigpickle** — Imported software runtime persona.
 
 bigpickle runtime and configuration.

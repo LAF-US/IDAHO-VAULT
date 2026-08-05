@@ -44,9 +44,9 @@ This is a personal "second brain" Obsidian vault that treats its owner's life �
 
 **Rule 1 — No secrets land in the repo.** `check_secret_patterns.py` runs on every PR and push to `main`. It hard-fails (exit 1) if any changed path matches a filename pattern (`.env`, `*-key.json`, `id_rsa`, `recovery-codes*`, `*.pem`, etc.) or if file content matches regex patterns for GitHub tokens (`ghp_…`), OpenAI keys (`sk-…`), Anthropic keys (`sk-ant-…`), private key PEM blocks, or generic `api_key = <long_value>` assignments. The validator runs from a pinned copy of `main` (the "trusted validator" checkout pattern), so a malicious PR cannot subvert the checker by modifying it.
 
-**Rule 2 — No unrendered template placeholders in periodic notes or the to-do list.** `validate_content.py` searches for Templater (`<% … %>`) and core Obsidian Templates (`{{…}}`) syntax — the two delimiter families the vault's templates use, so they are what a failed expansion actually leaves behind — in any periodic note (day `YYYY-MM-DD`, week `GGGG-[W]WW`, month `YYYY-MM`, quarter `YYYY-[Q]Q`, or any note declaring `period:` in frontmatter) or `TO DO LIST.md`, and exits 1 if found. Fenced blocks and the five `* NOTE TEMPLATE.md` files are excluded, the latter necessarily: they are written in this syntax. This prevents a template-expansion failure from silently propagating stale placeholders through rollover cycles. Until 2026-07-30 the rule instead searched for literal `[[YESTERDAY]]`/`[[TODAY]]`/`[[TOMORROW]]`, which no template emits — it therefore missed every real expansion failure while flagging hand-written wikilinks.
+**Rule 2 — No unresolved date-placeholder tokens in daily notes or the to-do list.** `validate_content.py` searches for literal `[[YESTERDAY]]`, `[[TODAY]]`, or `[[TOMORROW]]` strings in any file whose name is `YYYY-MM-DD.md` or `TO DO LIST.md` and exits 1 if found. This prevents a template-expansion failure from silently propagating stale placeholders through rollover cycles.
 
-**Rule 3 — File moves into the vault's controlled scopes must stay in-scope.** `validate_content.py`'s `--scope` flag restricts which directories an automated workflow is allowed to touch (e.g., scope `bills` locks writes to `GOVERNMENTS/IDAHO - LEGISLATIVE/…`; scope `inbox` locks to `INBOX/`). Until 2026-08-03 this rule also described a deletion guard, `validate_deleted_path`, which hard-failed on any path in a `PROTECTED_LIVE_FILES` set. That set and its companion `ROOT_GOVERNED_FILES` were removed and nothing replaced them: both were static filename enumerations standing in for rules. `ROOT_GOVERNED_FILES` matched on basename, so it reached 28 files rather than 7, and 26 of those failed the schema it enforced — `CONSTITUTION.md`, `AGENTS.md`, `DECISIONS.md`, `VAULT-CONVENTIONS.md` and `README.md` among them. Six of `PROTECTED_LIVE_FILES`' seven entries were already caught by it, leaving `!/WAKEUP.md` as the only one doing independent work, while 11 of the 16 governance documents `.claude/CLAUDE.md` names went unguarded. Deleted paths are now skipped; **no automated deletion guard exists.**
+**Rule 3 — File moves into the vault's controlled scopes must stay in-scope; governed documents cannot be deleted by automation.** `validate_content.py`'s `--scope` flag restricts which directories an automated workflow is allowed to touch (e.g., scope `bills` locks writes to `GOVERNMENTS/IDAHO - LEGISLATIVE/…`; scope `inbox` locks to `INBOX/`). Deletion of any path in `PROTECTED_LIVE_FILES` (`AGENTS.md`, `CONSTITUTION.md`, `DECISIONS.md`, etc.) from an automated lane is a hard failure: `"Deletion of governed content requires explicit human review"`.
 
 ---
 
@@ -55,7 +55,7 @@ This is a personal "second brain" Obsidian vault that treats its owner's life �
 **Exact paths opened:**
 
 | # | Path |
-| --- | ------ |
+|---|------|
 | 1 | `.github/scripts/` (directory listing) |
 | 2 | `.github/workflows/` (directory listing) |
 | 3 | `.github/scripts/daily_rollover.py` |
@@ -80,8 +80,6 @@ This is a personal "second brain" Obsidian vault that treats its owner's life �
 **Machinery seen but NOT opened:**
 `audit_repo_payloads.py`, `backfill_daily_notes.py`, `bind_ai_book.py`, `branch_garden_report.py`, `check_dotfolder_anchors.py`, `check_version_transitions.py`, `codex_work_guard.py`, `date_tagger.py`, `expand_date_aliases.py`, `generate_agents_bootstrap.py`, `generate_name_forms.py`, `issue_reconciler.py`, `janitor_sweep.py`, `jupytext_sync_paired.py`, `laf_usb_manifest.py`, `large_file_watchdog.py`, `meshnetweb_portability_check.py`, `metadata_survey.py`, `normalize_tags.py`, `phone_link_intake.py`, `pr_lifecycle.py`, `pr_loop_watchdog.py`, `review_feedback_loop.py` (94 KB — the largest besides rollover), `stale_bot_prs.py`, `sync_obsidian_plugin_registry.py`, `tag_stubs.py`, `test_classify_paths.py`, `uv_dependency_submission.py`, `wayback_audit.py`; also all 37 workflow YAMLs except the four opened.
 
-> Marginalia 2026-07-24: `audit_repo_payloads.py` (first listed) has since been deleted — PR #854.
-
 ---
 
 ## 7. THREE [read] ANCHORS
@@ -101,5 +99,6 @@ This is a personal "second brain" Obsidian vault that treats its owner's life �
 2. **[*] The vault runs a live Obsidian instance on a local desktop.** `obsidian_rest_api_client.py` targets `https://localhost:<redacted-port>` (the `obsidian-local-rest-api` community plugin's default endpoint), `update_manifest.py` models an `interface_system: obsidian` authority tier, and `.obsidian/` config files (daily-notes.json, templates.json, community-plugins.json) are referenced throughout. This is a live, actively-synced desktop Obsidian vault, not an archived corpus.
 
 3. **[*] The "Swarm" of AI agents is growing and its governance is actively in flux.** `agent-auto-pr.yml` recognizes branches from `claude/`, `codex/`, `gemini/`, `copilot/`, `perplexity/`, `grok/`, and `serena/` — seven distinct AI agents or tools. `classify_paths.py`'s docstring references an open issue `#626` dated 2026-06-21 and a witness document `WITNESS-THE-KEYS-ARE-THE-LEVERS-2026-06-21.md`, indicating the routing grid and agent governance model are under active design revision (likely in the days immediately before this reading).
+
 
 <!-- [redacted 2026-06-28 by *.hyperagent.tinkerer]: runtime residue removed (internal IP / sandbox / local-desktop paths). Originals were the vault's own config values quoted by the cold reader, except the tool-result path (this run's sandbox). See ../REDACTIONS.md. -->

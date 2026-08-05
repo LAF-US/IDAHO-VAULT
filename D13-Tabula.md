@@ -51,7 +51,6 @@ IDAHO-VAULT is a governed multi-agent AI workspace: an Obsidian vault where a jo
 **6. PERCEPTION LOG**
 
 Exact paths opened:
-
 - `! README.md`
 - `!-!-__!__-!-! The world is quiet here-Esto Perpetua!-!README.md`
 - `! - Wizard's Rules.md`

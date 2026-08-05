@@ -126,6 +126,4 @@ Martin's world has **no orthodoxy and no confirmed god** — only a plurality of
 
 ---
 
-```
-The world is quiet here．Esto Perpetua!
-```
+###### "The world is quiet here."

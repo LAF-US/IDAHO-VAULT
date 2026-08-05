@@ -24,7 +24,7 @@ I now have enough to give a complete, authoritative reconstruction. Let me compi
 4. **`CODEOWNERS` + `agent-review-gate.yml` — Logan-gated merge control** — CONSTITUTION.md, AGENTS.md, all workflows and scripts require `@loganfinney27` review before any merge.
 5. **`check_secret_patterns.py` + `codex_work_guard.py` — pre-commit / CI guards** — block credential files, live API keys, and Codex work escaping into temp directories; run at both commit-time and CI.
 6. **`swarm_mvp_intake.py` + `swarm-mvp-intake.yml` — gated ingest pipeline** — dispatched workflow that stages agent-submitted documents into `INBOX/SWARM-MVP/`, acquires/releases a manifest lock, validates content, and opens a *draft* PR that only Logan can merge.
-7. **`check_dotfolder_anchors.py` — dotfolder integrity CI** — enforces the anchor FORMAT for every tracked top-level dotfolder (`.<name>/<NAME>.md`, per STUB-PERSONAFOLDERS): a new dotfolder cannot land without its anchor; 13 pre-existing anchorless folders (`GRANDFATHERED_MISSING_ANCHORS`) warn instead of failing until each gains its anchor and leaves the set.
+7. **`check_dotfolder_anchors.py` — dotfolder integrity CI** — asserts that every durable agent-identity chamber (`.claude/`, `.gemini/`, `.codex/`, `.grok/`, `.deepseek/`, etc.) has its required anchor file present; fails CI if any is missing.
 
 ---
 
@@ -48,7 +48,7 @@ This is a **personal AI-swarm governance platform**: a single GitHub repo that a
 
 1. **No credential or secret material may reach the repo.** `check_secret_patterns.py` runs as a pre-commit and CI guard; it matches regex patterns for GitHub tokens, OpenAI/Anthropic keys, Slack tokens, private key blocks, Google API keys, `.env` files, `.pem`/`.p12`, SSH keys, and password CSVs. A match blocks the commit; matched text is never printed to output (only path + rule name). Files can opt out of the generic assignment rule only via `secret-pattern: allow` inline comments or `process.env.*` references.
 
-2. **Every tracked top-level dotfolder must carry its format-derived anchor.** `check_dotfolder_anchors.py` (run in CI via `check-dotfolder-anchors.yml`) enumerates tracked dotfolders from `git ls-tree HEAD` and requires `.<name>/<NAME>.md` (`.claude/CLAUDE.md`, `.gemini/GEMINI.md`, `.codex/CODEX.md`, …). A missing anchor fails the check for any non-grandfathered folder; the 13 folders in `GRANDFATHERED_MISSING_ANCHORS` are pre-existing debt that warns (with a healed-folder announcement once anchored) rather than fails. This prevents silent deletion or stub-only states for active agent chambers.
+2. **Every durable agent-identity dotfolder must have its registered anchor file.** `check_dotfolder_anchors.py` (run in CI via `check-dotfolder-anchors.yml`) verifies that `.claude/CLAUDE.md`, `.gemini/GEMINI.md`, `.codex/CODEX.md`, `.github/copilot-instructions.md`, and ~17 other dotfolder/anchor pairs all exist. Missing any single anchor fails the check. This prevents silent deletion or stub-only states for active agent chambers.
 
 3. **Agent-submitted intake documents must pass through a draft PR that only Logan can merge.** The `swarm-mvp-intake.yml` workflow creates a branch, acquires a manifest lock, validates content via `validate_content.py --scope inbox`, then opens a `--draft` PR with the explicit note "This PR is draft-only. Logan remains the merge gate." CODEOWNERS additionally requires `@loganfinney27` review on all workflows, scripts, CONSTITUTION.md, and AGENTS.md before any merge can land.
 
@@ -57,7 +57,6 @@ This is a **personal AI-swarm governance platform**: a single GitHub repo that a
 ### 6. PERCEPTION LOG
 
 Paths opened (N = 12):
-
 - `swarm.json` (root)
 - root directory listing
 - `.github/` directory listing

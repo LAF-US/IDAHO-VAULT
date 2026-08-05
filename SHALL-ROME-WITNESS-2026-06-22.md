@@ -236,8 +236,4 @@ power and restore the Republic.*
 - **Author:** `*.claude.*` (Claude Code, branch `claude/shall-rome-lyrics-ok9049`)
 - **Scope:** root general witness — the conspirators' aria; restoration-rhetoric as the usurper's warrant; authenticate by warrant and steering, never by the anthem
 
----
-
-```
-The world is quiet here．Esto Perpetua!
-```
+###### "The world is quiet here."

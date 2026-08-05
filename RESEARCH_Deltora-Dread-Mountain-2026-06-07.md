@@ -26,20 +26,15 @@ date: 2026-06-07
 > **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). **[canon-per-series].** Paraphrased.
 
 ## Geography
-
 - **[canon]** The **largest peak of the Barrier Mountains** — the range that forms Deltora's entire **northern border** with the Shadowlands. Home of the **Dread Gnomes**, and of the **Dreaming Spring**, whose water carries a transforming magic.
 
 ## The gem & its guardian
-
 - **[canon]** The **Emerald** sat amid the gnomes' treasure under the **Ooze Toad [[RESEARCH_Deltora-Gellick-2026-06-07\|Gellick]]**, who enslaved the gnomes — until Dreaming-Spring water turned him to a tree and the freed gnomes yielded the gem.
 
 ## Cross-references & sources
-
 `[[RESEARCH_Deltora-The-Gem-Guardians-2026-06-07]]` · `[[RESEARCH_Deltora-Gellick-2026-06-07]]` · `[[RESEARCH_Deltora-The-Seven-Tribes-and-their-Lands-2026-06-04]]`
 [Dread Mountain](https://deltoraquest.fandom.com/wiki/Dread_Mountain_(location)) · [Dread Gnomes](https://deltoraquest.fandom.com/wiki/Dread_Gnomes)
 
 ---
 
-```
-The world is quiet here．Esto Perpetua!
-```
+###### "The world is quiet here."

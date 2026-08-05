@@ -32,7 +32,6 @@ This report establishes a conceptual framework for understanding the relationshi
 ### Descriptive (Documentation of What Exists)
 
 #### Pedigree (Animals)
-
 - Definition: Official family tree for purebred animals
 - Function: Documents ancestry, breed standards, health certifications
 - Purpose: Trace lineage, verify authenticity, inform breeding decisions
@@ -40,7 +39,6 @@ This report establishes a conceptual framework for understanding the relationshi
 - Example: AKC-certified pedigree for a Golden Retriever
 
 #### Genealogy (Humans)
-
 - Definition: Study of family history and lineage
 - Function: Maps ancestral relationships, cultural heritage, medical history
 - Purpose: Personal identity, historical understanding, health awareness
@@ -50,7 +48,6 @@ This report establishes a conceptual framework for understanding the relationshi
 ### Prescriptive (Control of What Should Exist)
 
 #### Breeding (Animals)
-
 - Definition: Selective reproduction of animals for desired traits
 - Function: Produces offspring with predictable characteristics
 - Purpose: Improve breed standards, health, temperament, working ability
@@ -58,7 +55,6 @@ This report establishes a conceptual framework for understanding the relationshi
 - Example: Breeding Goldendoodles for hypoallergenic coats
 
 #### Eugenics (Humans)
-
 - Definition: Controlled human reproduction to improve genetic qualities
 - Function: Dictates who can/cannot reproduce based on traits
 - Purpose: Create superior populations, eliminate undesirable traits
@@ -70,12 +66,10 @@ This report establishes a conceptual framework for understanding the relationshi
 ## AXIS EXPLANATION
 
 ### Vertical Axis: Subject
-
 - Animals: Controlled environments, breeding programs, purebred standards
 - Humans: Personal/family history, societal implications, individual rights
 
 ### Horizontal Axis: Purpose
-
 - Descriptive: Documents what exists (neutral, factual, informative)
 - Prescriptive: Controls what should exist (value-laden, directive, coercive)
 
@@ -84,9 +78,8 @@ This report establishes a conceptual framework for understanding the relationshi
 ## KEY DISTINCTIONS
 
 ### Descriptive vs. Prescriptive
-
 | Aspect | Descriptive | Prescriptive |
-| -------- | ------------- | -------------- |
+|--------|-------------|--------------|
 | Role | Observer | Controller |
 | Action | Records | Directs |
 | Ethics | Neutral | Value-laden |
@@ -94,9 +87,8 @@ This report establishes a conceptual framework for understanding the relationshi
 | Outcome | Knowledge | Control |
 
 ### Animals vs. Humans
-
 | Aspect | Animals | Humans |
-| -------- | --------- | -------- |
+|--------|---------|--------|
 | Agency | Owner/breeder | Individual |
 | Rights | Property law | Human rights |
 | Ethics | Welfare-focused | Autonomy-focused |
@@ -120,19 +112,16 @@ The distinction is intentional - eugenics crosses ethical boundaries that the ot
 ## PRACTICAL APPLICATIONS
 
 ### For Animal Breeding Programs
-
 - Use pedigree to document lineage
 - Use breeding to select for health and temperament
 - Avoid crossing into eugenics territory (over-selecting for aesthetics at expense of health)
 
 ### For Human Genealogy
-
 - Use genealogy to understand heritage
 - Respect individual autonomy in family planning
 - Reject eugenics in all forms
 
 ### For AI Agent Development (Analogous Concepts)
-
 - Pedigree equivalent: Model cards, version history
 - Breeding equivalent: Fine-tuning, model forking
 - Genealogy equivalent: Knowledge lineage, training data provenance
@@ -162,6 +151,4 @@ The critical ethical boundary: Descriptive practices inform and empower; prescri
 
 ---
 
-```
-The world is quiet here．Esto Perpetua!
-```
+###### "The world is quiet here."

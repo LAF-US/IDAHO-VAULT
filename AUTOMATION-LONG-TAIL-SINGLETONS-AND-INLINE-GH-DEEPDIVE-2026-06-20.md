@@ -51,7 +51,7 @@ across them* — and in what the scan turned up that no workflow references at a
 39 workflow files on `main` = **12 spine** (mapped already) + **27 long tail** (here):
 
 | Layer | Count | Shape | Members |
-| --- | --- | --- | --- |
+|---|---|---|---|
 | **L1 · true 1:1 singletons** | 14 | one workflow → its own dedicated script | `check-dotfolder-anchors`, `check-notebooks-paired`, `check-portable-paths`, `daily-rollover`, `dependency-submission-uv`, `janitor-sweep`, `laf-usb-manifest-policy`, `large-file-policy`, `sort-audit`, `stale-bot-prs`, `sync-agents-bootstrap`, `sync-plugin-registry`, `version-transition-policy`, `wayback-audit` |
 | **L2 · minor shared (×2) + multi-script** | 6 | a script with 2 callers, or a workflow with ≥2 scripts | shared: `pr_lifecycle.py` (`branch-cleanup` + `agent-auto-pr`), `check_secret_patterns.py` (`secret-pattern-policy` + `secret-pattern-full-scan`), `validate_content.py` (`validate-agent-content` + `swarm-mvp-intake`); multi-script: `cross-platform-smoke` (2), `swarm-mvp-intake` (3) |
 | **L3 · inline-`gh` / no own script** | 10 | thin glue over bash or a marketplace action | the 3 Cluster-A arming workflows (`auto-merge-rhythm`, `dependabot-rhythm`, `batch-arm-merge-queue`) + `1password-secret-template`, `cloud-run-deploy`, `codeql`, `opencode`, `sync-dependencies`, `validate-daily-notes`, `wayback-preserve` |
@@ -65,8 +65,8 @@ inventory are registrations/GitHub-managed, not files — out of scope here, cat
 
 ### Q1 — Cluster C: one framework, or N tinker toys? *A family, but a loose one — don't over-fit.*
 
-Issue #586 hypothesized that the policy gates repeat *"event-gate + scheduled-sweep +
-issue_reconciler reporting."* The read **partly** confirms it and partly breaks it:
+#586 hypothesized that the policy gates repeat *"event-gate + scheduled-sweep + issue_reconciler
+reporting."* The read **partly** confirms it and partly breaks it:
 
 - **The pattern is real but only two pairs actually instantiate it.** `large-file` has the full
   triad: `large-file-policy` (PR/push event gate → `check_large_files.py`, fails the run) **and**
@@ -103,8 +103,6 @@ at all**:
 `audit_repo_payloads.py` · `backfill_daily_notes.py` · `bind_ai_book.py` · `date_tagger.py` ·
 `expand_date_aliases.py` · `generate_name_forms.py` · `normalize_tags.py` ·
 `obsidian_rest_api_client.py` · `phone_link_intake.py` · `tag_stubs.py`
-
-> Marginalia 2026-07-24: `audit_repo_payloads.py` (first in the orphan list above) has since been deleted — PR #854.
 
 This does **not** mean they are dead — it means their invocation lane is *not CI*. They are
 plausibly pre-commit hooks, local-runtime helpers (Obsidian-side, e.g.

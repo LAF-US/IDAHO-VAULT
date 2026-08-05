@@ -1,0 +1,13 @@
+{
+  "id": "21",
+  "subject": "[L3] Wire Obsidian mcp-tools MCP into Hermes + OpenClaw — DONE 2026-07-06",
+  "description": "Completed 2026-07-06 (session 4f03d270): Hermes mcp_servers rewired — openclaw entry repointed off dead nvm path to ~/node_modules/.bin/openclaw (9 tools registered); obsidian-vault entry reshaped from wrong-shape HTTPS URL to stdio .obsidian/plugins/mcp-tools/bin/mcp-server + OBSIDIAN_API_KEY (20 tools registered) = 29 tools from 2 servers, confirmed in gateway log 20:18. OpenClaw side: `openclaw mcp add obsidian` (probed: 18 tools + prompts). Backups: *.bak.premcpwire.20260706-200846. Remaining half of the original task (obsidian CLI as OpenClaw skill) split out to its own task.",
+  "activeForm": "Wiring Obsidian into Hermes + OpenClaw",
+  "status": "completed",
+  "blocks": [
+    "22"
+  ],
+  "blockedBy": [
+    "20"
+  ]
+}

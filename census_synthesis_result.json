@@ -12,10 +12,10 @@
   "alpha_alignment": -0.016304347826086918,
   "verb_tally": {
     "govern": 9,
-    "chronicle": 1,
-    "coordinate": 1,
     "document": 1,
-    "witness": 1
+    "witness": 1,
+    "chronicle": 1,
+    "coordinate": 1
   },
   "govern_n": 9,
   "record_n": 4,

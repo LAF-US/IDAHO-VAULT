@@ -101,8 +101,4 @@ authority not assumed; no office claimed; staged, not consecrated.
 
 — Claude, `claude/fablehaven-vampire-diagnostic-hvfMo`, 2026-06-03
 
----
-
-```
-The world is quiet here．Esto Perpetua!
-```
+###### "The world is quiet here."

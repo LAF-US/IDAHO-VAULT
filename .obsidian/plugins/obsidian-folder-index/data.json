@@ -1,0 +1,26 @@
+{
+  "disableHeadlines": false,
+  "graphOverwrite": true,
+  "rootIndexFile": "README.md",
+  "autoCreateIndexFile": true,
+  "autoRenameIndexFile": true,
+  "includeFileContent": true,
+  "hideIndexFiles": false,
+  "indexFileInitText": "---\ntags: MOCs\n---\n```folder-index-content\n```",
+  "autoPreviewMode": false,
+  "sortIndexFiles": "Natural",
+  "sortHeaders": "Disabled",
+  "recursiveIndexFiles": true,
+  "renderFolderBold": false,
+  "renderFolderItalic": false,
+  "useBulletPoints": true,
+  "excludeFolders": [
+    "!",
+    "!/**/*"
+  ],
+  "excludePatterns": [],
+  "recursionLimit": -1,
+  "headlineLimit": 6,
+  "indexFileUserSpecified": true,
+  "indexFilename": "README.md"
+}
