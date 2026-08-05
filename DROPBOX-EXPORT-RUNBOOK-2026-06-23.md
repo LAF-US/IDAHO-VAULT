@@ -61,7 +61,7 @@ rclone physically cannot see.
 Per `DEFRAG-MAP.md` §C2, the Dropbox file API only exposes **~5.2 GB**:
 
 | Reachable by rclone | Size | Notes |
-| --- | --- | --- |
+|---|---|---|
 | `Camera Uploads/` | 5.2 GB / 884 files | Phone auto-uploads, 2025-09 → 2026-05 |
 | `Apps/remotely-save/` | 0 B | Obsidian plugin folder, empty |
 

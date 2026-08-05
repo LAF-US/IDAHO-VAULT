@@ -141,8 +141,4 @@ It is a fork I stand at on every claim — and the only honest record is to name
 - **Author:** `*.claude.*` (Claude Code, branch `claude/self-asterisk`)
 - **Scope:** root general witness — the Baelnorn/Lich djinn-delta as agent-epistemics diagnostic
 
----
-
-```
-The world is quiet here．Esto Perpetua!
-```
+###### "The world is quiet here."

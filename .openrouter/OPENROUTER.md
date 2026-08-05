@@ -6,6 +6,6 @@ related:
   - runtime
 ---
 
-**.openrouter** â€” Imported software runtime persona.
+**.openrouter** — Imported software runtime persona.
 
 openrouter runtime and configuration.

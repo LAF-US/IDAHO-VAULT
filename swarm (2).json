@@ -1,0 +1,1360 @@
+{
+  "// note": "Machine-readable structured registry of all swarm elements. See AGENTS.md (human-readable) and !/AGENTS.md (canonical narrative registry).",
+  "// governance": "CONSTITUTION.md",
+  "// conventions": "VAULT-CONVENTIONS.md",
+  "principal": "Logan Finney",
+  "vault_authority": "https://github.com/LAF-US/IDAHO-VAULT",
+  "wakeup_protocol": {
+    "quick_start": "!/WAKEUP.md",
+    "boot_order": [
+      "AGENTS.md",
+      "!/WAKEUP.md",
+      "CONSTITUTION.md",
+      "DECISIONS.md",
+      "VAULT-CONVENTIONS.md"
+    ],
+    "conflict_precedence": [
+      "Logan direct instruction",
+      "CONSTITUTION.md",
+      "!/WAKEUP.md and !/AGENTS.md",
+      "swarm.json",
+      "generated bootstrap surfaces",
+      "historical notes and exploratory residue"
+    ],
+    "historical_rule": "Historical CrewAI harbor notes, abandoned branch artifacts, and exploratory scaffolds remain historical unless Logan or canonical governance explicitly reclassifies them.",
+    "scope_note": "Connector posture in this registry is local to IDAHO-VAULT. The broader LAF-US chamber and team topology lives in !/AGENTS.md and !/LAF-USB-FIVE-CORES-MIGRATION-2026-04-15.md."
+  },
+  "agents": [
+    {
+      "id": "claude-code",
+      "name": "Claude Code",
+      "vendor": "Anthropic",
+      "dotfolder": ".claude",
+      "autoload_file": ".claude/CLAUDE.md",
+      "autoload": true,
+      "memory_anchored": true,
+      "capability_tier": "Direct Write",
+      "role": "Anthropic Claude Code lineage; direct-write tool surface. Specific offices and duties require Logan appointment.",
+      "label": "agent:claude-code",
+      "notes": "The prior Claude/Abhorsen job assignment is under Logan correction and is not inherited by Claude instances.",
+      "orientation_note": "The auto-loaded instruction file is descriptive context; no local launcher is required."
+    },
+    {
+      "id": "gemini-cli",
+      "name": "Gemini CLI",
+      "vendor": "Google",
+      "dotfolder": ".gemini",
+      "autoload_file": ".gemini/GEMINI.md",
+      "autoload": true,
+      "memory_anchored": true,
+      "capability_tier": "Direct Write (Support)",
+      "role": "Google Gemini lineage; support-capable tool surface. Specific offices and duties require Logan appointment.",
+      "label": "agent:gemini",
+      "notes": "The prior Gemini/Concierge job assignment is under Logan correction and is not inherited by Gemini instances.",
+      "orientation_note": "The auto-loaded instruction file is descriptive context; no local launcher is required."
+    },
+    {
+      "id": "antigravity",
+      "name": "Antigravity CLI",
+      "vendor": "Google",
+      "dotfolder": ".antigravity",
+      "autoload_file": "ANTIGRAVITY.md",
+      "autoload": false,
+      "memory_anchored": false,
+      "capability_tier": "Direct Write (Support)",
+      "role": "narrative lens, Sebald Code, Antigravity lineage",
+      "label": "agent:antigravity",
+      "observations": [
+        {
+          "kind": "recorded_uninstallation",
+          "date": "2026-04-18",
+          "source_commit": "b05b53ae68fe25a0e3a9703c33aec90dc85eccc6"
+        }
+      ],
+      "orientation_note": "Historical entry; it does not create a local startup route."
+    },
+    {
+      "id": "github-copilot",
+      "name": "GitHub Copilot",
+      "vendor": "Microsoft / GitHub",
+      "dotfolder": ".github",
+      "autoload_file": ".github/copilot-instructions.md",
+      "autoload": true,
+      "capability_tier": "Multi-Repo Admin",
+      "role": "inline Obsidian markdown and syntax",
+      "label": "agent:copilot",
+      "notes": "The Clerk is retained as a recorded narrative label in !/AGENTS.md. This tool-lineage record asserts no appointment or office occupancy.",
+      "orientation_note": "The auto-loaded instruction file is descriptive context; no local launcher is required."
+    },
+    {
+      "id": "codex-cli",
+      "name": "OpenAI Codex CLI",
+      "vendor": "OpenAI",
+      "dotfolder": ".codex",
+      "autoload_file": "AGENTS.md",
+      "config_file": ".codex/config.toml",
+      "reference_shim": ".codex/CODEX.md",
+      "autoload": true,
+      "capability_tier": "Direct Write (scripting)",
+      "role": "OpenAI Codex lineage; scripting-capable tool surface. Specific offices and duties require Logan appointment.",
+      "label": "agent:codex",
+      "notes": "The Lexicographer is a historical voice and office claim, not inherited by Codex instances. Codex auto-loads repo AGENTS.md instructions. Project-scoped Codex config lives in .codex/config.toml; .codex/CODEX.md is a repo-specific reference shim. See !/CODEX-VOICE-REGISTRY-2026-05-18.md.",
+      "orientation_note": "Codex auto-loads AGENTS.md; no local launcher is required."
+    },
+    {
+      "id": "grok",
+      "name": "Grok",
+      "vendor": "xAI",
+      "dotfolder": ".grok",
+      "autoload_file": ".grok/GROK.md",
+      "autoload": false,
+      "autoload_note": "Manual injection - no confirmed xAI CLI dotfolder spec",
+      "capability_tier": "Read/Analysis",
+      "role": "The Ironist - rapid reasoning, real-time web access",
+      "label": null,
+      "orientation_note": "Descriptive entry only; no local launcher is required."
+    },
+    {
+      "id": "deepseek",
+      "name": "DeepSeek",
+      "vendor": "DeepSeek",
+      "dotfolder": ".deepseek",
+      "autoload_file": ".deepseek/DEEPSEEK.md",
+      "autoload": false,
+      "capability_tier": "Advisory",
+      "role": "The Analyst - deep reasoning, code analysis, research synthesis",
+      "label": null
+    },
+    {
+      "id": "perplexity",
+      "name": "Perplexity",
+      "vendor": "Perplexity AI",
+      "dotfolder": ".perplexity",
+      "autoload_file": ".perplexity/PERPLEXITY.md",
+      "autoload": false,
+      "capability_tier": "Read/Analysis",
+      "role": "The Scout - web search and research synthesis",
+      "label": null,
+      "orientation_note": "Descriptive entry only; no local launcher is required."
+    },
+    {
+      "id": "linear-agent",
+      "name": "Linear Agent",
+      "vendor": "Linear",
+      "dotfolder": null,
+      "autoload_file": null,
+      "autoload": false,
+      "config": "cloud - configured in Linear workspace settings",
+      "capability_tier": "Advisory",
+      "role": "Linear workspace AI - context synthesis, issue creation, status tracking",
+      "label": null,
+      "observations": [
+        {
+          "kind": "recorded_launch",
+          "date": "2026-03-24",
+          "source_commit": "b05b53ae68fe25a0e3a9703c33aec90dc85eccc6"
+        }
+      ],
+      "notes": "No local dotfolder. Access via Cmd+J, Slack, Teams, @mentions in Linear."
+    },
+    {
+      "id": "serena",
+      "name": "Serena",
+      "vendor": "oraios / community",
+      "dotfolder": ".serena",
+      "autoload_file": ".serena/SERENA.md",
+      "autoload": false,
+      "capability_tier": "Support",
+      "role": "Semantic code intelligence — symbol navigation, codebase analysis, refactoring assistance",
+      "label": null,
+      "protocol": "MCP",
+      "runtime_scope": "local MCP runtime when configured",
+      "observations": [
+        {
+          "kind": "recorded_launch",
+          "date": "2026-04-04",
+          "source_commit": "b05b53ae68fe25a0e3a9703c33aec90dc85eccc6"
+        }
+      ],
+      "notes": "MCP server (github.com/oraios/serena). The recorded runtime architecture is local-only; this registry does not assert present availability or reachability."
+    },
+    {
+      "id": "mistral-vibe",
+      "name": "Mistral Vibe CLI",
+      "vendor": "Mistral AI",
+      "dotfolder": ".mistral",
+      "autoload_file": ".mistral/MISTRAL.md",
+      "autoload": false,
+      "autoload_note": "Pending confirmation of official Mistral Vibe dotfolder spec — manual injection until confirmed",
+      "capability_tier": "Unclassified — awaiting Logan",
+      "role": "No durable role assignment recorded",
+      "label": null,
+      "winget_id": "MistralAI.MistralVibe.ACP",
+      "observations": [
+        {
+          "kind": "recorded_installation",
+          "date": "2026-04-18",
+          "source_commit": "b05b53ae68fe25a0e3a9703c33aec90dc85eccc6",
+          "details": {
+            "version": "2.7.6"
+          }
+        },
+        {
+          "kind": "recorded_launch",
+          "date": "2026-04-18",
+          "source_commit": "b05b53ae68fe25a0e3a9703c33aec90dc85eccc6"
+        }
+      ],
+      "orientation_note": "Descriptive entry only; no local launcher is required."
+    }
+  ],
+  "personas": [
+    {
+      "id": "bartimaeus",
+      "name": "Bartimaeus",
+      "dotfolder": ".bartimaeus",
+      "autoload_file": ".bartimaeus/BARTIMAEUS.md",
+      "autoload": false,
+      "role": "TBD - pending Logan's direction",
+      "notes": "The prior Bartimaeus/Cartographer job assignment is under Logan correction; this registry asserts no appointment event."
+    },
+    {
+      "id": "zagreus",
+      "name": "Zagreus",
+      "dotfolder": ".zagreus",
+      "autoload_file": ".zagreus/ZAGREUS.md",
+      "autoload": false,
+      "role": "TBD - pending Logan's direction"
+    },
+    {
+      "id": "persephone",
+      "name": "Persephone",
+      "dotfolder": ".persephone",
+      "autoload_file": ".persephone/PERSEPHONE.md",
+      "autoload": false,
+      "role": "TBD - pending Logan's direction"
+    }
+  ],
+  "ecosystems": [
+    {
+      "id": "microsoft",
+      "name": "Microsoft AI ecosystem",
+      "vendor": "Microsoft",
+      "dotfolder": ".microsoft",
+      "shim_file": ".microsoft/MICROSOFT.md",
+      "autoload": false,
+      "scope": [
+        "Microsoft Copilot (personal)",
+        "Microsoft 365 Copilot (IPT enterprise)",
+        "Azure OpenAI",
+        "Bing AI",
+        "Copilot Studio",
+        "Microsoft 365 apps"
+      ],
+      "identity_contexts": {
+        "personal": "Logan's personal Microsoft account - Logan controls all settings",
+        "institutional": "Idaho Public Television M365 tenant - subject to IPT IT policy"
+      }
+    },
+    {
+      "id": "google",
+      "name": "Google ecosystem",
+      "vendor": "Google",
+      "dotfolder": ".google",
+      "shim_file": ".google/GOOGLE.md",
+      "autoload": false,
+      "scope": [
+        "Gmail",
+        "Google Calendar",
+        "Google Docs/Sheets/Slides",
+        "Google Drive",
+        "Google Workspace",
+        "Google Pinpoint",
+        "NotebookLM",
+        "Gemini web/API"
+      ],
+      "note": "Gemini CLI coding agent is separate - see .gemini/GEMINI.md"
+    },
+    {
+      "id": "meta",
+      "name": "Meta AI ecosystem",
+      "vendor": "Meta Platforms",
+      "dotfolder": ".meta",
+      "shim_file": ".meta/META.md",
+      "autoload": false,
+      "scope": [
+        "Meta AI (WhatsApp/Instagram/Facebook)",
+        "Meta AI Studio",
+        "Llama models"
+      ]
+    }
+  ],
+  "systems": [
+    {
+      "id": "github",
+      "name": "GitHub",
+      "type": "coordination",
+      "url": "https://github.com/loganfinney27/IDAHO-VAULT",
+      "role": "Code hosting, PRs, Issues, GitHub Actions",
+      "integrations": [
+        "linear"
+      ]
+    },
+    {
+      "id": "linear",
+      "name": "Linear",
+      "type": "coordination",
+      "role": "Execution tracking, owners, deadlines (SWARM label)",
+      "config": "cloud-only - no local dotfolder",
+      "github_sync": "Bidirectional: PR lifecycle drives issue state (In Progress -> In Review -> Done). Branch naming or magic words (closes ENG-123) link PRs to issues.",
+      "ai_agent_ref": "linear-agent"
+    },
+    {
+      "id": "slack",
+      "name": "Slack",
+      "type": "coordination",
+      "dotfolder": ".slack",
+      "shim_file": ".slack/SLACK.md",
+      "role": "Ephemeral coordination - breadcrumbs only. Not the record.",
+      "rule": "Durable decisions must be promoted to vault or Linear."
+    },
+    {
+      "id": "obsidian-sync",
+      "name": "Obsidian Sync",
+      "type": "sync",
+      "role": "Private courier for plugin settings and credentials across devices",
+      "rule": "Plugin data.json files are gitignored - never reach GitHub"
+    }
+  ],
+  "connectors": [
+    {
+      "id": "github",
+      "name": "GitHub",
+      "category": "core",
+      "role": "Primary execution and transport layer for issues, PRs, workflows, and automation output",
+      "write_mode": "gated-write",
+      "authoritative_for": "execution transport",
+      "promotion_target": [
+        "vault",
+        "linear"
+      ],
+      "status": "active",
+      "integration_points": [
+        "issues",
+        "pull_requests",
+        ".github/workflows/",
+        ".github/scripts/"
+      ],
+      "auth_dependency": "GitHub app connector in Codex session; repository auth and repo secrets for workflow-side automation",
+      "human_gate": "Policy-changing, destructive, or governance-redefining writes remain Logan-gated.",
+      "promotion_rule": "GitHub may carry execution state and automation output, but durable doctrine and long-lived context must be promoted into the vault; owner and status mirrors may be reflected into Linear when execution tracking is needed.",
+      "notes": "Primary AFK paging route via GitHub Issues."
+    },
+    {
+      "id": "linear",
+      "name": "Linear",
+      "category": "core",
+      "role": "Owner, status, and planning layer for SWARM-tracked execution",
+      "write_mode": "gated-write",
+      "authoritative_for": "execution state",
+      "promotion_target": [
+        "vault",
+        "github"
+      ],
+      "status": "active",
+      "integration_points": [
+        ".github/scripts/linear_gateway.py",
+        ".github/scripts/linear_pr_sync.py",
+        ".github/workflows/linear-brief.yml",
+        ".github/workflows/linear-pr-sync.yml",
+        ".github/workflows/linear-webhook.yml"
+      ],
+      "auth_dependency": "Linear connector in Codex session; LINEAR_API_KEY and webhook secrets for GitHub-side automation",
+      "human_gate": "Live writes stay dry-run by default unless explicitly enabled; no meaningful work without a mapped issue.",
+      "promotion_rule": "Linear tracks ownership, status, and planning; durable doctrine and recoverable context must be promoted back into the vault, and code-execution context may be mirrored to GitHub.",
+      "notes": "Secondary AFK paging route; SWARM label is the registered coordination hub."
+    },
+    {
+      "id": "slack",
+      "name": "Slack",
+      "category": "core",
+      "role": "Tertiary paging and conversational breadcrumb layer",
+      "write_mode": "notification-write",
+      "authoritative_for": "nothing durable",
+      "promotion_target": [
+        "vault",
+        "github",
+        "linear"
+      ],
+      "status": "active",
+      "integration_points": [
+        ".github/scripts/janitor_sweep.py",
+        ".github/workflows/janitor-sweep.yml"
+      ],
+      "auth_dependency": "Slack connector in Codex session; SWARM_SLACK_WEBHOOK_URL for workflow notifications",
+      "human_gate": "Decisions do not become durable until promoted into vault, GitHub, or Linear; urgent use is allowed but not self-authorizing.",
+      "promotion_rule": "Use Slack for notifications, quick coordination, and breadcrumbs only; promote every durable outcome into the vault or execution systems promptly.",
+      "notes": "Tertiary AFK paging route; not a system of record."
+    },
+    {
+      "id": "gmail",
+      "name": "Gmail",
+      "category": "adjunct",
+      "role": "Read-first inbox and message-context lane",
+      "write_mode": "read-only",
+      "authoritative_for": "nothing durable",
+      "promotion_target": [
+        "vault",
+        "github",
+        "linear"
+      ],
+      "status": "available-read-only",
+      "integration_points": [],
+      "auth_dependency": "Gmail connector in Codex session",
+      "human_gate": "Any file write or durable use requires explicit query-time approval and sanitization of private content.",
+      "promotion_rule": "Gmail may inform work, but actionable or durable outcomes must be promoted explicitly into the vault or execution systems.",
+      "notes": "Source-sensitive communication lane; treat as ephemeral until promoted."
+    },
+    {
+      "id": "google_calendar",
+      "name": "Google Calendar",
+      "category": "adjunct",
+      "role": "Read-first scheduling and availability context lane",
+      "write_mode": "read-only",
+      "authoritative_for": "nothing durable",
+      "promotion_target": [
+        "vault",
+        "github",
+        "linear"
+      ],
+      "status": "available-read-only",
+      "integration_points": [],
+      "auth_dependency": "Google Calendar connector in Codex session",
+      "human_gate": "Any durable use requires explicit promotion; scheduling writes are out of scope for the v1 hub.",
+      "promotion_rule": "Calendar context may inform triage or planning, but commitments must be captured in vault, GitHub, or Linear if they matter operationally.",
+      "notes": "Scheduling context only in v1."
+    },
+    {
+      "id": "google_drive",
+      "name": "Google Drive",
+      "category": "adjunct",
+      "role": "Read-first document and evidence retrieval lane",
+      "write_mode": "read-only",
+      "authoritative_for": "nothing durable",
+      "promotion_target": [
+        "vault",
+        "github",
+        "linear"
+      ],
+      "status": "available-read-only",
+      "integration_points": [],
+      "auth_dependency": "Google Drive connector in Codex session",
+      "human_gate": "File writes require explicit approval; do not treat Drive as the operational record.",
+      "promotion_rule": "Drive material may inform work, but durable notes, decisions, and execution context must be promoted into the vault or execution systems.",
+      "notes": "Docs, Sheets, Slides, and Drive access remain adjunct in v1."
+    },
+    {
+      "id": "box",
+      "name": "Box",
+      "category": "adjunct",
+      "role": "Read-first external content and archival retrieval lane",
+      "write_mode": "read-only",
+      "authoritative_for": "nothing durable",
+      "promotion_target": [
+        "vault",
+        "github",
+        "linear"
+      ],
+      "status": "available-read-only",
+      "integration_points": [],
+      "auth_dependency": "Box connector in Codex session",
+      "human_gate": "Explicit human approval is required before any durable extraction or cross-system write.",
+      "promotion_rule": "Box content may be consulted or summarized, but anything durable must be promoted into the vault or execution systems.",
+      "notes": "External repository of supporting materials; not wired into repo automation."
+    },
+    {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "category": "deferred",
+      "role": "Platform and deployment connector, not part of the v1 ops hub",
+      "write_mode": "deferred",
+      "authoritative_for": "nothing in the current ops hub",
+      "promotion_target": [
+        "vault",
+        "github",
+        "linear"
+      ],
+      "status": "plugin-available-deferred",
+      "integration_points": [],
+      "auth_dependency": "Cloudflare plugin skills are available in Codex; external account auth is required for live operations",
+      "human_gate": "Any deploy, infrastructure, or platform write is Logan-gated and requires a separate activation plan.",
+      "promotion_rule": "No automatic promotion; if Cloudflare outputs matter, capture them in vault, GitHub, or Linear explicitly.",
+      "notes": "Deferred until a separate runtime and deployment plan exists."
+    },
+    {
+      "id": "hugging_face",
+      "name": "Hugging Face",
+      "category": "deferred",
+      "role": "Research and remote compute connector, not part of the v1 ops hub",
+      "write_mode": "deferred",
+      "authoritative_for": "nothing in the current ops hub",
+      "promotion_target": [
+        "vault",
+        "github",
+        "linear"
+      ],
+      "status": "plugin-available-deferred",
+      "integration_points": [],
+      "auth_dependency": "Hugging Face plugin skills and connector access are available in Codex; external token and project auth are required for live operations",
+      "human_gate": "Any job run, model publish, or remote write is Logan-gated and requires a separate activation plan.",
+      "promotion_rule": "No automatic promotion; research findings or job outputs must be promoted explicitly if they become durable.",
+      "notes": "Deferred until a separate research or compute workflow is approved."
+    }
+  ],
+  "control_plane": {
+    "coordination_hub_issue": "LAF-25",
+    "scoped_issue": "LAF-28",
+    "narrative_registry": "!/AGENTS.md",
+    "discovery_index": "!/agents.json",
+    "scope_note": "GitHub, Linear, and Slack here describe the repo-local operating posture of IDAHO-VAULT, not the whole LAF-US world model.",
+    "system_roles": {
+      "github": "execution_transport",
+      "linear": "execution_state",
+      "slack": "ephemeral_breadcrumbs"
+    }
+  },
+  "template_tracking": {
+    "source_of_truth": "tracked_obsidian_config",
+    "registry_files": [
+      "manifest.json",
+      "swarm.json"
+    ],
+    "policy": "Concrete Obsidian template files named by tracked client config must be mirrored here and in manifest.json. Folder-only plugin scopes and private plugin settings must be declared explicitly instead of guessed.",
+    "concrete_bindings": [
+      {
+        "client": "obsidian",
+        "plugin": "core/daily-notes",
+        "config_path": ".obsidian/daily-notes.json",
+        "template_path": "DAILY NOTE TEMPLATE.md",
+        "mode": "daily_note",
+        "status": "active"
+      }
+    ],
+    "folder_bindings": [
+      {
+        "client": "obsidian",
+        "plugin": "core/templates",
+        "config_path": ".obsidian/templates.json",
+        "folder": "",
+        "status": "folder_only",
+        "note": "Tracked config exposes a template pool, not concrete template file bindings."
+      }
+    ],
+    "untracked_plugins": [
+      {
+        "client": "obsidian",
+        "plugin": "templater-obsidian",
+        "status": "installed_untracked_config",
+        "config_path": ".obsidian/plugins/templater-obsidian/data.json",
+        "note": "Plugin settings are intentionally private via Obsidian Sync and are not read into swarm tracking."
+      }
+    ]
+  },
+  "plugin_layer": {
+    "// note": "Machine-readable registration of the Obsidian plugin layer. Canonical doctrine, topology, and promotion rules are documented in !/PLUGIN-REGISTRY.md.",
+    "manifest_doc": "!-PLUGIN-REGISTRY.md",
+    "interface_state_files": [
+      ".obsidian/community-plugins.json",
+      ".obsidian/core-plugins.json"
+    ],
+    "payload_root": ".obsidian/plugins/",
+    "status": "active",
+    "authority_boundary": "Obsidian config files define interface state; the plugin registry document defines doctrine and promotion rules.",
+    "promotion_gate": "No plugin-state change counts as legitimate until !/PLUGIN-REGISTRY.md is updated.",
+    "counts": {
+      "enabled_community": 44,
+      "enabled_core": 31,
+      "dormant_installed": 31,
+      "installed_total": 75,
+      "enabled_missing_manifest": 0
+    },
+    "entrypoints": [
+      {
+        "id": "plugin-manifest",
+        "path": "!-PLUGIN-REGISTRY.md",
+        "role": "plugin doctrine and promotion rules"
+      },
+      {
+        "id": "community-plugins",
+        "path": ".obsidian/community-plugins.json",
+        "role": "enabled community-plugin interface state"
+      },
+      {
+        "id": "core-plugins",
+        "path": ".obsidian/core-plugins.json",
+        "role": "enabled core-plugin interface state"
+      },
+      {
+        "id": "plugin-payloads",
+        "path": ".obsidian/plugins/",
+        "role": "installed community-plugin manifests and payloads"
+      }
+    ],
+    "families": {
+      "enabled": [
+        "infrastructure_agent",
+        "navigation_search",
+        "content_creation_editing",
+        "daily_notes_calendar"
+      ],
+      "dormant": [
+        "ai_llm",
+        "content_organization",
+        "calendar_date",
+        "pdf_document",
+        "table_editing",
+        "visual_ui",
+        "specialty"
+      ]
+    },
+    "dependency_edges": [
+      {
+        "parent": "obsidian-local-rest-api",
+        "child": "mcp-tools",
+        "type": "required_runtime"
+      },
+      {
+        "parent": "smart-connections",
+        "child": "smart-connections-visualizer",
+        "type": "feature_extension"
+      },
+      {
+        "parent": "templater-obsidian",
+        "child": "ai-templater",
+        "type": "functional_extension"
+      },
+      {
+        "parent": "periodic-notes",
+        "child": "roygbiv-day-accent",
+        "type": "data_dependency"
+      }
+    ],
+    "writable_surfaces": [
+      {
+        "path": "!/PLUGIN-REGISTRY.md",
+        "persistence": "durable"
+      },
+      {
+        "path": ".obsidian/community-plugins.json",
+        "persistence": "durable_interface_state"
+      },
+      {
+        "path": ".obsidian/core-plugins.json",
+        "persistence": "durable_interface_state"
+      },
+      {
+        "path": ".obsidian/plugins/*/manifest.json",
+        "persistence": "durable_when_tracked"
+      },
+      {
+        "path": ".obsidian/plugins/*/data.json",
+        "persistence": "ephemeral_gitignored"
+      },
+      {
+        "path": ".obsidian/plugins/*/cache/",
+        "persistence": "ephemeral_gitignored"
+      },
+      {
+        "path": ".smart-env/",
+        "persistence": "ephemeral_local_runtime"
+      },
+      {
+        "path": ".makemd/",
+        "persistence": "ephemeral_local_runtime"
+      },
+      {
+        "path": ".space/",
+        "persistence": "ephemeral_local_runtime"
+      }
+    ],
+    "source_of_truth": "tracked_obsidian_config",
+    "generated_by": ".github/scripts/sync_obsidian_plugin_registry.py",
+    "current_state": {
+      "enabled_community_count": 44,
+      "enabled_core_count": 31,
+      "installed_community_count": 75,
+      "dormant_installed_count": 31,
+      "enabled_missing_manifest_count": 0
+    },
+    "enabled_community_plugins": [
+      "obsidian-linter",
+      "roygbiv-day-accent",
+      "periodic-notes",
+      "recent-files-obsidian",
+      "omnisearch",
+      "settings-search",
+      "tag-wrangler",
+      "nldates-obsidian",
+      "obsidian-local-rest-api",
+      "mcp-tools",
+      "home-tab",
+      "letterboxd-rss-sync",
+      "smart-connections",
+      "smart-connections-visualizer",
+      "breadcrumbs",
+      "obsidian-icon-shortcodes",
+      "templater-obsidian",
+      "handwritten-notes",
+      "wikipedia-search",
+      "msg-handler",
+      "obsidian42-strange-new-worlds",
+      "obsidian-day-planner",
+      "dataview",
+      "obsidian-tasks-plugin",
+      "calendar",
+      "obsidian-folder-index",
+      "obsidian-icon-folder",
+      "oz-image-plugin",
+      "tipa-support",
+      "phone-to-roam-to-obsidian",
+      "nostr-writer",
+      "moviegrabber",
+      "todoist-context-bridge",
+      "move-cursor-on-startup",
+      "map-of-content",
+      "obsidian-footnotes",
+      "habit-calendar",
+      "heatmap-calendar",
+      "metadata-menu",
+      "notebook-navigator",
+      "quickadd",
+      "obsidian-tidy-footnotes",
+      "time-ruler",
+      "translate"
+    ],
+    "enabled_core_plugins": [
+      "file-explorer",
+      "global-search",
+      "switcher",
+      "graph",
+      "backlink",
+      "canvas",
+      "outgoing-link",
+      "tag-pane",
+      "footnotes",
+      "properties",
+      "page-preview",
+      "daily-notes",
+      "templates",
+      "note-composer",
+      "command-palette",
+      "slash-command",
+      "editor-status",
+      "bookmarks",
+      "markdown-importer",
+      "zk-prefixer",
+      "random-note",
+      "outline",
+      "word-count",
+      "slides",
+      "audio-recorder",
+      "workspaces",
+      "file-recovery",
+      "publish",
+      "sync",
+      "bases",
+      "webviewer"
+    ],
+    "installed_community_plugins": [
+      {
+        "id": "ai-image-analyzer",
+        "name": "AI image analyzer",
+        "version": "1.2.1",
+        "path": ".obsidian/plugins/ai-image-analyzer/manifest.json"
+      },
+      {
+        "id": "ai-templater",
+        "name": "AI for Templater",
+        "version": "1.0.20",
+        "path": ".obsidian/plugins/ai-templater/manifest.json"
+      },
+      {
+        "id": "beautiful-contact-cards",
+        "name": "Beautiful Contact Cards",
+        "version": "1.6.2",
+        "path": ".obsidian/plugins/beautiful-contact-cards/manifest.json"
+      },
+      {
+        "id": "bmo-chatbot",
+        "name": "BMO Chatbot",
+        "version": "2.3.3",
+        "path": ".obsidian/plugins/bmo-chatbot/manifest.json"
+      },
+      {
+        "id": "breadcrumbs",
+        "name": "Breadcrumbs",
+        "version": "4.4.4",
+        "path": ".obsidian/plugins/breadcrumbs/manifest.json"
+      },
+      {
+        "id": "calendar",
+        "name": "Calendar",
+        "version": "1.5.10",
+        "path": ".obsidian/plugins/calendar/manifest.json"
+      },
+      {
+        "id": "calendarium",
+        "name": "Calendarium",
+        "version": "2.1.0",
+        "path": ".obsidian/plugins/calendarium/manifest.json"
+      },
+      {
+        "id": "cmdr",
+        "name": "Commander",
+        "version": "0.5.4",
+        "path": ".obsidian/plugins/cmdr/manifest.json"
+      },
+      {
+        "id": "dataview",
+        "name": "Dataview",
+        "version": "0.5.68",
+        "path": ".obsidian/plugins/dataview/manifest.json"
+      },
+      {
+        "id": "dataview-autocompletion",
+        "name": "Dataview Autocompletion",
+        "version": "0.9.5",
+        "path": ".obsidian/plugins/dataview-autocompletion/manifest.json"
+      },
+      {
+        "id": "dataview-properties",
+        "name": "Dataview (to) Properties",
+        "version": "0.0.24",
+        "path": ".obsidian/plugins/dataview-properties/manifest.json"
+      },
+      {
+        "id": "dataview-serializer",
+        "name": "Dataview Serializer",
+        "version": "2.6.0",
+        "path": ".obsidian/plugins/dataview-serializer/manifest.json"
+      },
+      {
+        "id": "days-since",
+        "name": "Days Since",
+        "version": "2.0.3",
+        "path": ".obsidian/plugins/days-since/manifest.json"
+      },
+      {
+        "id": "desk",
+        "name": "Desk",
+        "version": "1.0.6",
+        "path": ".obsidian/plugins/desk/manifest.json"
+      },
+      {
+        "id": "editing-toolbar",
+        "name": "Editing Toolbar",
+        "version": "4.0.2",
+        "path": ".obsidian/plugins/editing-toolbar/manifest.json"
+      },
+      {
+        "id": "fit",
+        "name": "Fit",
+        "version": "1.4.0",
+        "path": ".obsidian/plugins/fit/manifest.json"
+      },
+      {
+        "id": "habit-calendar",
+        "name": "Habit Calendar",
+        "version": "1.2.0",
+        "path": ".obsidian/plugins/habit-calendar/manifest.json"
+      },
+      {
+        "id": "handwritten-notes",
+        "name": "Handwritten Notes",
+        "version": "1.4.0",
+        "path": ".obsidian/plugins/handwritten-notes/manifest.json"
+      },
+      {
+        "id": "heatmap-calendar",
+        "name": "Heatmap Calendar",
+        "version": "0.7.1",
+        "path": ".obsidian/plugins/heatmap-calendar/manifest.json"
+      },
+      {
+        "id": "home-tab",
+        "name": "Home tab",
+        "version": "1.2.2",
+        "path": ".obsidian/plugins/home-tab/manifest.json"
+      },
+      {
+        "id": "keep-the-rhythm",
+        "name": "Keep the Rhythm",
+        "version": "0.2.8",
+        "path": ".obsidian/plugins/keep-the-rhythm/manifest.json"
+      },
+      {
+        "id": "large-language-models",
+        "name": "Large Language Models",
+        "version": "0.23.0",
+        "path": ".obsidian/plugins/large-language-models/manifest.json"
+      },
+      {
+        "id": "letterboxd-rss-sync",
+        "name": "Letterboxd Diary RSS Sync",
+        "version": "1.3.0",
+        "path": ".obsidian/plugins/letterboxd-rss-sync/manifest.json"
+      },
+      {
+        "id": "links",
+        "name": "Links",
+        "version": "1.17.51",
+        "path": ".obsidian/plugins/links/manifest.json"
+      },
+      {
+        "id": "loom",
+        "name": "Loom",
+        "version": "1.22.6",
+        "path": ".obsidian/plugins/loom/manifest.json"
+      },
+      {
+        "id": "make-md",
+        "name": "make.md",
+        "version": "1.3.4",
+        "path": ".obsidian/plugins/make-md/manifest.json"
+      },
+      {
+        "id": "map-of-content",
+        "name": "Map of Content",
+        "version": "1.4.0",
+        "path": ".obsidian/plugins/map-of-content/manifest.json"
+      },
+      {
+        "id": "mcp-tools",
+        "name": "MCP Tools",
+        "version": "0.2.27",
+        "path": ".obsidian/plugins/mcp-tools/manifest.json"
+      },
+      {
+        "id": "metadata-menu",
+        "name": "Metadata Menu",
+        "version": "0.8.12",
+        "path": ".obsidian/plugins/metadata-menu/manifest.json"
+      },
+      {
+        "id": "move-cursor-on-startup",
+        "name": "Move Cursor On Startup",
+        "version": "1.0.0",
+        "path": ".obsidian/plugins/move-cursor-on-startup/manifest.json"
+      },
+      {
+        "id": "moviegrabber",
+        "name": "Moviegrabber",
+        "version": "1.1.23",
+        "path": ".obsidian/plugins/moviegrabber/manifest.json"
+      },
+      {
+        "id": "msg-handler",
+        "name": "MSG Handler",
+        "version": "0.0.6",
+        "path": ".obsidian/plugins/msg-handler/manifest.json"
+      },
+      {
+        "id": "nexus-ai-chat-importer",
+        "name": "Nexus AI Chat Importer",
+        "version": "1.5.7",
+        "path": ".obsidian/plugins/nexus-ai-chat-importer/manifest.json"
+      },
+      {
+        "id": "nldates-obsidian",
+        "name": "Natural Language Dates",
+        "version": "0.6.2",
+        "path": ".obsidian/plugins/nldates-obsidian/manifest.json"
+      },
+      {
+        "id": "nostr-writer",
+        "name": "Nostr Writer",
+        "version": "2.2.0",
+        "path": ".obsidian/plugins/nostr-writer/manifest.json"
+      },
+      {
+        "id": "notebook-navigator",
+        "name": "Notebook Navigator",
+        "version": "2.5.6",
+        "path": ".obsidian/plugins/notebook-navigator/manifest.json"
+      },
+      {
+        "id": "obsidian-5e-statblocks",
+        "name": "Fantasy Statblocks",
+        "version": "4.10.3",
+        "path": ".obsidian/plugins/obsidian-5e-statblocks/manifest.json"
+      },
+      {
+        "id": "obsidian-admonition",
+        "name": "Admonition",
+        "version": "11.0.3",
+        "path": ".obsidian/plugins/obsidian-admonition/manifest.json"
+      },
+      {
+        "id": "obsidian-day-planner",
+        "name": "Day Planner",
+        "version": "0.28.0",
+        "path": ".obsidian/plugins/obsidian-day-planner/manifest.json"
+      },
+      {
+        "id": "obsidian-dice-roller",
+        "name": "Dice Roller",
+        "version": "11.4.2",
+        "path": ".obsidian/plugins/obsidian-dice-roller/manifest.json"
+      },
+      {
+        "id": "obsidian-extract-pdf-highlights",
+        "name": "PDF Highlights",
+        "version": "0.0.4",
+        "path": ".obsidian/plugins/obsidian-extract-pdf-highlights/manifest.json"
+      },
+      {
+        "id": "obsidian-file-cooker",
+        "name": "File Cooker",
+        "version": "2.0.0",
+        "path": ".obsidian/plugins/obsidian-file-cooker/manifest.json"
+      },
+      {
+        "id": "obsidian-folder-index",
+        "name": "Folder Index",
+        "version": "1.0.30",
+        "path": ".obsidian/plugins/obsidian-folder-index/manifest.json"
+      },
+      {
+        "id": "obsidian-footnotes",
+        "name": "Footnote Shortcut",
+        "version": "0.1.3",
+        "path": ".obsidian/plugins/obsidian-footnotes/manifest.json"
+      },
+      {
+        "id": "obsidian-git",
+        "name": "Git",
+        "version": "2.38.3",
+        "path": ".obsidian/plugins/obsidian-git/manifest.json"
+      },
+      {
+        "id": "obsidian-icon-folder",
+        "name": "Iconize",
+        "version": "2.14.7",
+        "path": ".obsidian/plugins/obsidian-icon-folder/manifest.json"
+      },
+      {
+        "id": "obsidian-icon-shortcodes",
+        "name": "Icon Shortcodes",
+        "version": "0.9.7",
+        "path": ".obsidian/plugins/obsidian-icon-shortcodes/manifest.json"
+      },
+      {
+        "id": "obsidian-leaflet-plugin",
+        "name": "Leaflet",
+        "version": "6.0.5",
+        "path": ".obsidian/plugins/obsidian-leaflet-plugin/manifest.json"
+      },
+      {
+        "id": "obsidian-linter",
+        "name": "Linter",
+        "version": "1.31.2",
+        "path": ".obsidian/plugins/obsidian-linter/manifest.json"
+      },
+      {
+        "id": "obsidian-local-rest-api",
+        "name": "Local REST API",
+        "version": "3.5.0",
+        "path": ".obsidian/plugins/obsidian-local-rest-api/manifest.json"
+      },
+      {
+        "id": "obsidian-tasks-plugin",
+        "name": "Tasks",
+        "version": "7.23.1",
+        "path": ".obsidian/plugins/obsidian-tasks-plugin/manifest.json"
+      },
+      {
+        "id": "obsidian-tidy-footnotes",
+        "name": "Tidy Footnotes",
+        "version": "0.1.2",
+        "path": ".obsidian/plugins/obsidian-tidy-footnotes/manifest.json"
+      },
+      {
+        "id": "obsidian42-brat",
+        "name": "BRAT",
+        "version": "2.0.4",
+        "path": ".obsidian/plugins/obsidian42-brat/manifest.json"
+      },
+      {
+        "id": "obsidian42-strange-new-worlds",
+        "name": "Strange New Worlds",
+        "version": "2.3.7",
+        "path": ".obsidian/plugins/obsidian42-strange-new-worlds/manifest.json"
+      },
+      {
+        "id": "omnisearch",
+        "name": "Omnisearch",
+        "version": "1.28.2",
+        "path": ".obsidian/plugins/omnisearch/manifest.json"
+      },
+      {
+        "id": "oz-image-plugin",
+        "name": "Image in Editor",
+        "version": "2.2.6",
+        "path": ".obsidian/plugins/oz-image-plugin/manifest.json"
+      },
+      {
+        "id": "pdf-plus",
+        "name": "PDF++",
+        "version": "0.40.31",
+        "path": ".obsidian/plugins/pdf-plus/manifest.json"
+      },
+      {
+        "id": "periodic-notes",
+        "name": "Periodic Notes",
+        "version": "0.0.17",
+        "path": ".obsidian/plugins/periodic-notes/manifest.json"
+      },
+      {
+        "id": "phone-to-roam-to-obsidian",
+        "name": "Phone to Note to Obsidian",
+        "version": "1.0.2",
+        "path": ".obsidian/plugins/phone-to-roam-to-obsidian/manifest.json"
+      },
+      {
+        "id": "quickadd",
+        "name": "QuickAdd",
+        "version": "2.12.0",
+        "path": ".obsidian/plugins/quickadd/manifest.json"
+      },
+      {
+        "id": "recent-files-obsidian",
+        "name": "Recent Files",
+        "version": "1.7.6",
+        "path": ".obsidian/plugins/recent-files-obsidian/manifest.json"
+      },
+      {
+        "id": "roygbiv-day-accent",
+        "name": "ROYGBIV Day Accent",
+        "version": "1.0.0",
+        "path": ".obsidian/plugins/roygbiv-day-accent/manifest.json"
+      },
+      {
+        "id": "settings-search",
+        "name": "Settings Search",
+        "version": "1.3.10",
+        "path": ".obsidian/plugins/settings-search/manifest.json"
+      },
+      {
+        "id": "smart-connections",
+        "name": "Smart Connections",
+        "version": "4.1.8",
+        "path": ".obsidian/plugins/smart-connections/manifest.json"
+      },
+      {
+        "id": "smart-connections-visualizer",
+        "name": "Smart Connections Visualizer",
+        "version": "1.0.27",
+        "path": ".obsidian/plugins/smart-connections-visualizer/manifest.json"
+      },
+      {
+        "id": "table-editor-obsidian",
+        "name": "Advanced Tables",
+        "version": "0.22.1",
+        "path": ".obsidian/plugins/table-editor-obsidian/manifest.json"
+      },
+      {
+        "id": "tag-wrangler",
+        "name": "Tag Wrangler",
+        "version": "0.6.4",
+        "path": ".obsidian/plugins/tag-wrangler/manifest.json"
+      },
+      {
+        "id": "taskbone-ocr-plugin",
+        "name": "Taskbone",
+        "version": "2.3.2",
+        "path": ".obsidian/plugins/taskbone-ocr-plugin/manifest.json"
+      },
+      {
+        "id": "templater-obsidian",
+        "name": "Templater",
+        "version": "2.18.1",
+        "path": ".obsidian/plugins/templater-obsidian/manifest.json"
+      },
+      {
+        "id": "text-extractor",
+        "name": "Text Extractor",
+        "version": "0.7.0",
+        "path": ".obsidian/plugins/text-extractor/manifest.json"
+      },
+      {
+        "id": "time-ruler",
+        "name": "Time Ruler",
+        "version": "2.7.1",
+        "path": ".obsidian/plugins/time-ruler/manifest.json"
+      },
+      {
+        "id": "tipa-support",
+        "name": "TIPA Support",
+        "version": "1.0.1",
+        "path": ".obsidian/plugins/tipa-support/manifest.json"
+      },
+      {
+        "id": "todoist-context-bridge",
+        "name": "Todoist Context Bridge",
+        "version": "1.1.1",
+        "path": ".obsidian/plugins/todoist-context-bridge/manifest.json"
+      },
+      {
+        "id": "translate",
+        "name": "Translate",
+        "version": "1.4.9",
+        "path": ".obsidian/plugins/translate/manifest.json"
+      },
+      {
+        "id": "wikipedia-search",
+        "name": "Wikipedia Helper",
+        "version": "2.7.0",
+        "path": ".obsidian/plugins/wikipedia-search/manifest.json"
+      }
+    ],
+    "dormant_installed_plugins": [
+      "ai-image-analyzer",
+      "ai-templater",
+      "beautiful-contact-cards",
+      "bmo-chatbot",
+      "calendarium",
+      "cmdr",
+      "dataview-autocompletion",
+      "dataview-properties",
+      "dataview-serializer",
+      "days-since",
+      "desk",
+      "editing-toolbar",
+      "fit",
+      "keep-the-rhythm",
+      "large-language-models",
+      "links",
+      "loom",
+      "make-md",
+      "nexus-ai-chat-importer",
+      "obsidian-5e-statblocks",
+      "obsidian-admonition",
+      "obsidian-dice-roller",
+      "obsidian-extract-pdf-highlights",
+      "obsidian-file-cooker",
+      "obsidian-git",
+      "obsidian-leaflet-plugin",
+      "obsidian42-brat",
+      "pdf-plus",
+      "table-editor-obsidian",
+      "taskbone-ocr-plugin",
+      "text-extractor"
+    ],
+    "enabled_plugins_missing_manifest": [],
+    "promotion_rule": "Any committed Obsidian plugin config change must be accompanied by synced manifest.json and swarm.json plugin_layer blocks."
+  },
+  "cross_swarm_sync": {
+    "// note": "Machine-readable registration of the vault-native cross-swarm signaling bus. Protocol lives in !/SIGNALS/README.md.",
+    "protocol_doc": "!/SIGNALS/README.md",
+    "signal_root": "!/SIGNALS/",
+    "courtroom_record": "!/__!__/!/! The world is quiet here/DOCKET.md",
+    "registration_state": "registered",
+    "transport_model": "vault_native_async_signal_bus",
+    "authority_boundary": "swarm.json registers the signaling bus; its canonical protocol is documented in !/SIGNALS/README.md; execution state remains in GitHub and Linear; the Courtroom DOCKET is a durable visibility record, not proof of present activity.",
+    "entrypoints": [
+      {
+        "id": "signal-protocol",
+        "path": "!/SIGNALS/README.md",
+        "role": "canonical signaling protocol"
+      },
+      {
+        "id": "signal-root",
+        "path": "!/SIGNALS/",
+        "role": "durable cross-agent signal files"
+      },
+      {
+        "id": "courtroom-docket",
+        "path": "!/__!__/!/! The world is quiet here/DOCKET.md",
+        "role": "durable record for signal visibility and coordination entries"
+      },
+      {
+        "id": "narrative-registry",
+        "path": "!/AGENTS.md",
+        "role": "agent handles and lane rules"
+      }
+    ],
+    "status_values": [
+      "OPEN",
+      "ACKNOWLEDGED",
+      "REPLIED",
+      "CLOSED",
+      "OVERRIDDEN"
+    ],
+    "required_fields": [
+      "sig_id",
+      "from",
+      "to",
+      "re",
+      "date",
+      "status",
+      "thread",
+      "replying_to"
+    ],
+    "runtime_rules": [
+      "Any agent may write a signal file.",
+      "Recipients check OPEN signals at session start.",
+      "Replies are new files, not body edits.",
+      "No secrets belong in signal files."
+    ],
+    "promotion_gate": "Signals may coordinate work, but durable decisions and execution commitments must still be promoted into the vault, GitHub, or Linear explicitly."
+  },
+  "crews": {
+    "// note": "CrewAI is a registered layer under re-foundation. swarm.json registers the layer but does not carry CrewAI crew, task, or runner topology.",
+    "manifest": ".crewai/manifest.json",
+    "manifest_doc": ".crewai/MANIFEST.md",
+    "status": "refoundation",
+    "output_dir": "!/CREWAI/",
+    "runtime_class": "vault-contained local runtime slice",
+    "authority_boundary": "swarm.json registers the layer; canonical CrewAI topology and promotion rules are documented in .crewai/MANIFEST.md.",
+    "principle": "Portable authority over local runtime romance",
+    "roster": []
+  },
+  "protocols": [
+    {
+      "id": "levelset",
+      "name": "LEVELSET",
+      "version": "3.2.6.1",
+      "file": "!/LEVELSET-STEP-0-EXTERNAL-AGENT.md",
+      "status": "active",
+      "flag": "STEP-0 and STEP-1 in active development"
+    },
+    {
+      "id": "arise",
+      "name": "ARISE",
+      "version": "0.0",
+      "file": null,
+      "status": "awaiting adoption"
+    },
+    {
+      "id": "awaken",
+      "name": "AWAKEN",
+      "version": "0.0",
+      "file": null,
+      "status": "awaiting adoption"
+    },
+    {
+      "id": "orient",
+      "name": "ORIENT",
+      "version": "0.0",
+      "file": null,
+      "status": "awaiting adoption"
+    },
+    {
+      "id": "context",
+      "name": "CONTEXT",
+      "version": "0.0",
+      "file": null,
+      "status": "under development"
+    }
+  ]
+}

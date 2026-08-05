@@ -6,6 +6,6 @@ related:
   - runtime
 ---
 
-**.test-conflict** â€” Imported software runtime persona.
+**.test-conflict** — Imported software runtime persona.
 
 test-conflict runtime and configuration.

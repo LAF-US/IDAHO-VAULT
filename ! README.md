@@ -1,29 +1,34 @@
 ---
-title: '!README'
+title: "! README"
 aliases:
-- '!README'
-linter-yaml-title-alias: '!README'
+  - "! README"
+linter-yaml-title-alias: "! README"
 related:
-- CHARTER
-- CONSTITUTION
-- FRAMEWORKS
-- GRIMOIRE
-- GUESTBOOK
-- GUIDELINES
-- Logan's
-- Logan's Project & Protocols
-- Obsidian
-- PREFERENCES
-- PROCEDURES
-- PROTOCOLS
-- README
-- TOUCHSTONE
-- The world is quiet here
-- UNIFIED
-- UNIFIED (US) SWARM
-- template
+  - CHARTER
+  - CONSTITUTION
+  - FRAMEWORKS
+  - GRIMOIRE
+  - GUESTBOOK
+  - GUIDELINES
+  - Logan's
+  - Logan's Project & Protocols
+  - Obsidian
+  - PREFERENCES
+  - PROCEDURES
+  - PROTOCOLS
+  - README
+  - TOUCHSTONE
+  - The world is quiet here
+  - UNIFIED
+  - UNIFIED (US) SWARM
+  - template
 authority: LOGAN
+date created: Friday, April 24th 2026, 6:37:28 pm
+date modified: Friday, July 3rd 2026, 10:02:53 pm
 ---
+
+# ! README
+
 This is an Obsidian.md vault.
 
 [[TOUCHSTONE]] [[FRAMEWORKS]]:

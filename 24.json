@@ -1,0 +1,8 @@
+{
+  "id": "24",
+  "subject": "[L3] Register official obsidian CLI as OpenClaw skill (split from #21)",
+  "description": "The last missing-requirement OpenClaw skill (29→30 eligible; `bins: obsidian`). Logan-side by nature: toggle CLI in Obsidian Settings → General, admin prompt for /usr/local/bin/obsidian symlink (requires app running; min-version unverified on installed build). Then verify `openclaw skills` shows 0 missing. Docs: obsidian.md/cli. Origin: second half of task #21, split 2026-07-06 when the MCP-wiring half completed.",
+  "status": "pending",
+  "blocks": [],
+  "blockedBy": []
+}

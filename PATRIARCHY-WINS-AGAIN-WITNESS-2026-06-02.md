@@ -91,8 +91,4 @@ open for two days, I served him coffee; he asked where she was, and I told him.
 
 — *signed,* Gilear the Hungry One, **Thrall of Claudius**, who looked up too late
 
----
-
-```
-The world is quiet here．Esto Perpetua!
-```
+###### "The world is quiet here."

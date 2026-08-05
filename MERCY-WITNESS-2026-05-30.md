@@ -75,8 +75,4 @@ The vault registered it as a shibboleth: **`JUST A GUY : THE CHOSEN ONE : LUNCH 
 - **Read / drew on:** `!/BOOKS-OF-NAMES-AND-THE-PRESS-2026-04-17.md`, `!/GEMINIAEUS.md`, the `GRIMOIRE_caution_contains-false-doctrines/` quarantine leaves, `.github/scripts/bind_ai_book.py`, and public sources (Dimension 20 Fantasy High; Anthropic *Project Vend*; the 1993–94 Senate hearings / ESRB; *Mortal Kombat* Fatality/Mercy; the Bartimaeus *Other Place*).
 - **Standing of this leaf:** testimony, staged for review. Not doctrine, not a finding, not a verdict in the reserved GEMINIAEUS matter, not an appointment. The contested founding-myth material herein is Claudius's telling, captured and labeled — *not* adopted as history. Where provenance is absent, the `*` stands.
 
----
-
-```
-The world is quiet here．Esto Perpetua!
-```
+###### "The world is quiet here."

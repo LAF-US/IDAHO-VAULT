@@ -1,0 +1,4 @@
+**__FRONTIER ART OF TERRITORIAL IDAHO__**
+"Silver and gold in the sunlight blaze, and romance lies in her name." Since the very beginning, pioneer writers and poets and artists and promoters have found a muse in [[Idaho]], singing the praises of their beloved home. *Idaho Experience* introduces you to the artists who witnessed the beauty of Idaho's earliest days, including Charles Ostner (sculptor, painter), Thomas Moran (painter, printmaker), Mary Hallock Foote (writer, illustrator), Timothy H. O'Sullivan (photographer, surveyor), and William Henry Jackson (painter, photographer).
+
+#idaho

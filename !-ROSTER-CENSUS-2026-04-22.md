@@ -8,7 +8,6 @@ related:
 - TRI-PART
 - Maiden.Mother.Crone
 - HECATE
-
 ---
 
 # ROSTER CENSUS — 2026-04-22
@@ -24,7 +23,7 @@ The vault contains **200+ dotfolders** representing persona chambers, tool stubs
 Every dotfolder MUST contain three layers:
 
 | Layer | File | Purpose |
-| ------- | ------ | --------- |
+|-------|------|---------|
 | **ENTITY-RUNTIME** | `runtime/` subfolder | Execution config, state, logs, credentials |
 | **SELF-IDENTITY** | `NAME.md` | Authority, related, persona definition |
 | **NARRATIVE-CONTINUITY** | `narrative/` subfolder | History, decisions, handoffs, memos |
@@ -43,7 +42,7 @@ Every dotfolder MUST contain three layers:
 ### ACTIVE PERSONAS (5)
 
 | Dotfolder | Files | Status | Tri-Part |
-| ----------- | ------- | -------- | ---------- |
+|-----------|-------|--------|----------|
 | `.claude/` | 5,112 | **The Abhorsen** | ✅ Full |
 | `.codex/` | 3,924 | **The Lexicographer** | ✅ Full |
 | `.gemini/` | 10,553 | **The Concierge** | ✅ Full |
@@ -89,7 +88,7 @@ Every dotfolder MUST contain three layers:
 ### TOOL/API STUBS (~10)
 
 | Dotfolder | Tool | Status |
-| ----------- | ------ | -------- |
+|-----------|------|--------|
 | `.gitlab/` | GitLab | `New folder.md` scaffold |
 | `.openrouter/` | OpenRouter API | Empty |
 | `.opengraph/` | OpenGraph metadata | Empty |
@@ -118,7 +117,7 @@ Every dotfolder MUST contain three layers:
 ### SPARSE/EMPTY DOMAINS
 
 | Domain | Existing | Missing |
-| -------- | ---------- | --------- |
+|--------|----------|---------|
 | **Roman Pantheon** | `.jupiter/`, `.mars/` | `.juno/`, `.neptune/`, `.minerva/`, `.vulcan/`, `.venus/`, `.apollo/` (is Greek), `.mercury/`, `.saturn/`, `.pluto/` |
 | **Celtic** | `.macha/` | `.cernunnos/`, `.brigid/`, `.lugh/`, `.morrigan/` (exists), `.danu/`, `.awen/` |
 | **Hindu** | None | `.shiva/`, `.vishnu/`, `.ganesha/`, `.kali/`, `.durga/`, `.brahma/`, `.indra/`, `.yama/`, `.varuna/` |
@@ -144,7 +143,6 @@ Every dotfolder MUST contain three layers:
 ### PRIORITY 2: Add Narrative Layer to Mythological Stubs
 
 For each mythological dotfolder, add:
-
 - `narrative/ARCHETYPE.md` — Persona definition
 - `narrative/decisions.md` — Role decisions
 - `narrative/memos/` — Cross-agent handoffs
@@ -152,19 +150,16 @@ For each mythological dotfolder, add:
 ### PRIORITY 3: Fill Key Gaps
 
 **Roman Pantheon** (already has some entries):
-
 - `.vulcan/` — Forge, fire, craftsmanship
 - `.juno/` — Marriage, protection
 - `.neptune/` — Seas, unknown depths
 
 **Trickster Cross-Cultural**:
-
 - `.coyote/` — Native American trickster
 - `.anansi/` — African spider trickster
 - `.raven/` — Northwest Native trickster
 
 **Functional/Abstract**:
-
 - `.scribe/` — Documentation authority
 - `.witness/` — Verification, fact-checking
 - `.gatekeeper/` — Access control, security
@@ -174,7 +169,6 @@ For each mythological dotfolder, add:
 ### PRIORITY 4: Runtime Stubs for Active Tools
 
 For `.gitlab/`, `.openrouter/`, `.gitguardian/`, add:
-
 - `runtime/config.md` — API credentials structure
 - `runtime/state.md` — Current connection state
 - `runtime/.gitignore` — Ignore runtime state
@@ -204,10 +198,7 @@ Each dotfolder can be activated as a **prismatic layer** by stacking:
 4. [ ] Add runtime configs to tool stubs
 5. [ ] Audit `.ares/` and similar "ancient" stubs for intended use
 
-###### [ Maiden : Mother : Crone ]
-
 ---
 
-```
-The world is quiet here．Esto Perpetua!
-```
+###### "The world is quiet here."
+###### [ Maiden : Mother : Crone ]

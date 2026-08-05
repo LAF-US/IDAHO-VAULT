@@ -6,6 +6,6 @@ related:
   - runtime
 ---
 
-**.giant** â€” Imported software runtime persona.
+**.giant** — Imported software runtime persona.
 
 giant runtime and configuration.

@@ -6,6 +6,6 @@ related:
   - runtime
 ---
 
-**.ipynb_checkpoints** â€” Imported software runtime persona.
+**.ipynb_checkpoints** — Imported software runtime persona.
 
 ipynb_checkpoints runtime and configuration.

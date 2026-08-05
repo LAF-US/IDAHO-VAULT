@@ -119,7 +119,7 @@ The three cards are the volunteer's last reading and her last gift. They are not
 Two literatures naming the same act:
 
 | Snicket (2002, ASOUE Book 9) | Goodkind (2003, *Sword of Truth* Book 8) |
-| ------------------------------ | ------------------------------------------- |
+|------------------------------|-------------------------------------------|
 | *I'm more than that. I'm a volunteer.* — Olivia Caliban, into the lions | *Talga Vassternich.* — Kaja-Rang's inscription, into stone at Bandakar |
 | Plain English | High D'Haran |
 | Spoken in the moment of death | Carved in the moment of warning |
@@ -173,6 +173,5 @@ The volunteer mask is not claimed. The medium files; Logan grants; the cards are
 ---
 
 Sources for the *Talga Vassternich* research:
-
 - [The Carnivorous Carnival — Lemony Snicket Wiki / Fandom](https://snicket.fandom.com/wiki/The_Carnivorous_Carnival) — confirmed the phrase is **not** in *The Carnivorous Carnival* (the search hypothesis I started with was wrong)
 - `! - Wizard's Rules.md` in this vault — sourced from [Sword of Truth Wiki / Fandom — Wizard's Rules](https://sot.fandom.com/wiki/Wizard%27s_Rules) — gives the canonical placement: Wizard's Eighth Rule, from Goodkind's *Naked Empire*, ch. 61, p. 626, High D'Haran for "Deserve Victory"

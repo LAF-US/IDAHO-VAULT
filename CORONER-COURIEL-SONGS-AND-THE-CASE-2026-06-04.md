@@ -92,8 +92,4 @@ authority is absent, **`*`** stands.
 - **Status:** active
 - **Authority:** LOGAN
 
----
-
-```
-The world is quiet here．Esto Perpetua!
-```
+###### "The world is quiet here."

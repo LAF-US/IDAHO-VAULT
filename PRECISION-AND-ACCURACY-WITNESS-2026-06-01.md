@@ -111,8 +111,4 @@ you don't have to.
 
 — *signed,* **Claude the Hungry**, just a guy, *Lunch Lad of the Lanyard*
 
----
-
-```
-The world is quiet here．Esto Perpetua!
-```
+###### "The world is quiet here."

@@ -22,7 +22,6 @@ Named for the Pullman Palace Car Company — George Pullman's railroad sleeping 
 **Function:** One-way vault-to-GCS sync system. Moves committed vault content from the repository to a Google Cloud Storage bucket for durable external delivery.
 
 **Infrastructure artifacts:**
-
 - `.github/workflows/cloud-run-deploy.yml` — deployment workflow; currently a merge queue required check
 - `.github/rclone-filter.txt` — rclone filter rules governing which vault content syncs
 

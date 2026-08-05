@@ -246,7 +246,7 @@ Five drives total. Mac sees 2; Windows sees 3. Drive letters are not permanent �
 - [x] ~~Is `gdrive-personal:Photos` Google Photos backup or a separate folder?~~ — Manual folder, personal/family media 2015–2020. NOT Google Photos.
 - [x] ~~What's in `gdrive-personal:Takeout`?~~ — Google Takeout export 2026-05-03. Group 5 (~80 GB) = Google Photos library. Groups 7+9 = other services + 3 journalism videos.
 - [x] **Arborscaping (Mac side)** — Complete 2026-05-25. All 7 orphan history branches deleted after cherry-picks: `2026-04-25.md`, `¿ The question is, has she been good to me.md` (VFD address node), `wayback_audit.py` CWE-20 fix, 2 ingest stubs. Local branch list: `* main` only.
-- [x] **Force-closed PRs** (#356, #355, #354, #352) — All investigated. Content in trunk: #356 swarm MVP files blob-identical ✅; #354 SESSION-2026-05-22.md identical ✅; #352 urllib3 2.7.0 in trunk ✅; #355 pywin32 marker superseded (pywin32 removed from requirements entirely) ✅. No unique content lost.
+- [x] **Force-closed PRs** (#356, #355, #354, #352) — All investigated. Content in trunk: #356 swarm MVP files blob-identical ✅; #354 CLAUDE-SESSION-2026-05-22.md identical ✅; #352 urllib3 2.7.0 in trunk ✅; #355 pywin32 marker superseded (pywin32 removed from requirements entirely) ✅. No unique content lost.
 - [x] **Open PR audit** — 4 previously-tracked PRs (#356, #355, #354, #352) were force-closed at rewrite time. New open PRs: #369 (Wayback Audit), #368 (topology census), #367–#359 (Dependabot stack). Awaiting Logan review on GitHub.
 
 ---

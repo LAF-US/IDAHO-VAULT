@@ -26,20 +26,15 @@ date: 2026-06-07
 > **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). **[canon-per-series].** Paraphrased.
 
 ## Origin & geography
-
 - **[canon]** A foul, dangerous lake in Deltora's **north** — but once the beautiful city of **D'Or**. About a century ago **[[RESEARCH_Deltora-Thaegan-2026-06-07\|Thaegan]]** drowned the city into the lake, transforming its people into sea-creatures and stripping the **Ralads** of their voices.
 
 ## The gem & its guardian
-
 - **[canon]** The **Ruby** lies at the **Weeping Rock**, guarded by **[[RESEARCH_Deltora-Soldeen-2026-06-07\|Soldeen]]** — in truth **Nanion**, D'Or's leader, forced into serpent form. With Thaegan's death the curse breaks: the lake reverts to **D'Or** and its people to human.
 
 ## Cross-references & sources
-
 `[[RESEARCH_Deltora-The-Gem-Guardians-2026-06-07]]` · `[[RESEARCH_Deltora-Soldeen-2026-06-07]]` · `[[RESEARCH_Deltora-Thaegan-2026-06-07]]`
 [Lake of Tears](https://deltoraquest.fandom.com/wiki/Lake_of_Tears_(location)) · [The Lake of Tears — Wikipedia](https://en.wikipedia.org/wiki/The_Lake_of_Tears)
 
 ---
 
-```
-The world is quiet here．Esto Perpetua!
-```
+###### "The world is quiet here."

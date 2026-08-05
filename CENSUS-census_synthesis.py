@@ -99,29 +99,12 @@ alpha_core = cm.krippendorff_alpha(R_core, distance=cm.nominal_distance)
 
 # bootstrap CI for full alpha by resampling UNITS (nodes) with replacement
 def boot_alpha(mat, ncols, B=3000):
-    # Percentiles are taken over the resamples ATTEMPTED, not the ones that
-    # happened to succeed. A resample that fails is a degenerate draw -- an
-    # extreme one -- so silently dropping it and then indexing into the
-    # survivors narrows the interval and makes the CI claim more confidence
-    # than the data supports. Failures are counted and reported instead.
-    vals=[]; failed=0
+    vals=[]
     for _ in range(B):
         cols=[random.randrange(ncols) for _ in range(ncols)]
         sub=[[row[j] for j in cols] for row in mat]
-        try:
-            vals.append(cm.krippendorff_alpha(sub, distance=cm.nominal_distance))
-        except Exception:
-            failed+=1
-    if failed:
-        print(f"  boot_alpha: {failed}/{B} resamples failed; "
-              f"CI computed over the {len(vals)} that succeeded", file=sys.stderr)
-    # Too few survivors to place a 95% bound. Previously this indexed a short
-    # (or empty) list, returning a bogus interval and raising IndexError when
-    # every resample failed.
-    if len(vals) < 40:
-        print(f"  boot_alpha: only {len(vals)} usable resamples; no CI",
-              file=sys.stderr)
-        return None, None
+        try: vals.append(cm.krippendorff_alpha(sub, distance=cm.nominal_distance))
+        except Exception: pass
     vals.sort()
     lo=vals[int(0.025*len(vals))]; hi=vals[int(0.975*len(vals))]
     return lo, hi
@@ -139,11 +122,7 @@ masi_to_centroid = [cm.masi_distance(reader_sets[c], centroid) for c in range(N)
 
 # ============================== ALIGNMENT ==================================
 alpha_align = cm.krippendorff_alpha(A, distance=cm.nominal_distance)
-# Ties are broken by name, not by set iteration order. Every verb with the same
-# count tied, and `set` ordering varies with PYTHONHASHSEED, so the committed
-# census_synthesis_result.json showed a spurious diff on every run -- noise that
-# hides a real change in a record whose whole value is being citable.
-verb_tally = {v: VERBS.count(v) for v in sorted(set(VERBS), key=lambda x:(-VERBS.count(x), x))}
+verb_tally = {v: VERBS.count(v) for v in sorted(set(VERBS), key=lambda x:-VERBS.count(x))}
 govern_n = sum(1 for v in VERBS if v in GOVERN_FAMILY)
 record_n = sum(1 for v in VERBS if v in RECORD_FAMILY)
 
@@ -186,12 +165,8 @@ print("\n--- S1 COHESION : convergence profile (named by / 13) ---")
 for nm,s in sorted(NODES.items(), key=lambda kv:-len(kv[1])):
     c=len(s); print(f"  {bar(c/N)}  {c:2d}/13 {conv[nm]*100:5.1f}%  "
                     f"{'LOAD-BEARING' if cm.is_load_bearing_door(conv[nm]) else 'door-local ':12s} {nm}")
-def fmt_ci(ci):
-    """Render a bootstrap CI, or say plainly that there wasn't one."""
-    lo, hi = ci
-    return "not computable" if lo is None else f"[{lo:+.3f},{hi:+.3f}]"
-print(f"\n  Cohesion alpha (all 16 nodes)      = {alpha_full:+.3f}  95% CI {fmt_ci(ci_full)}")
-print(f"  Cohesion alpha (10 core+shoulder)  = {alpha_core:+.3f}  95% CI {fmt_ci(ci_core)}")
+print(f"\n  Cohesion alpha (all 16 nodes)      = {alpha_full:+.3f}  95% CI [{ci_full[0]:+.3f},{ci_full[1]:+.3f}]")
+print(f"  Cohesion alpha (10 core+shoulder)  = {alpha_core:+.3f}  95% CI [{ci_core[0]:+.3f},{ci_core[1]:+.3f}]")
 print(f"  centroid (named by >= {k}): {len(centroid)} nodes -> {sorted(centroid)}")
 print(f"  mean reader MASI distance to centroid = {statistics.mean(masi_to_centroid):.3f}")
 

@@ -1,0 +1,36 @@
+---
+title: "Why the Pied-à-Terre Tax Misses the Real Problem"
+source: "https://www.city-journal.org/article/new-york-mamdani-pied-a-terre-tax?utm_source=substack&utm_medium=email"
+author:
+  - "[[lwebb]]"
+published: 2026-04-21
+created: 2026-07-08
+description: "Mamdani and Hochul’s plan will further distort an already-dysfunctional property tax system."
+---
+Governor Kathy Hochul and Mayor Zohran Mamdani celebrated Tax Day last week by jointly [announcing](https://www.governor.ny.gov/news/governor-hochul-announces-pied-terre-tax-proposal-luxury-second-homes-valued-5-million-or-more) plans to hike taxes. The pair’s proposal would let New York City impose a new surtax on houses and apartments valued at over $5 million if their owners don’t list them as their permanent residence. Hochul and Mamdani said they expect the tax to bring in at least an extra $500 million annually.
+
+The proposal appears as Mayor Mamdani and the city council work to close a roughly $5 billion budget gap following numerous consecutive budgets, outside an economic recession, in which spending outpaced revenues. The mayor has so far [shunned](https://cityjournal.substack.com/p/mamdanis-budget-cuts-are-an-illusion) time-tested methods for addressing budget shortfalls and embraced tax increases as virtues unto themselves. His April 15 video announcing the new tax—staged on Central Park South, in front of one of the city’s newer, and pricier, residential towers—became his most-viewed clip ever.
+
+It’s no great surprise that Mamdani and Hochul are looking to raise revenue rather than [really cut costs](https://nypost.com/2026/03/25/opinion/heres-how-sofa-cushion-searching-mamdani-can-really-cut-costs). But the proposed “pied-à-terre” tax will only further distort an already-dysfunctional tax system..
+
+The concept of a “pied-à-terre” (“foot on the ground”) tax is not new. New York labor unions have advocated such a policy since [at least 2014](https://fiscalpolicy.org/fpi-proposes-tax-on-most-expensive-nyc-pied-a-terre-residential-units). The state came close to implementing one [in 2019](https://www.nytimes.com/2019/03/11/nyregion/mta-subways-pied-a-terre-tax.html) as part of a plan to shore up the New York City transit system’s capital needs. But no U.S. city imposes a true pied-à-terre tax, and New York officials should exercise caution before proceeding.
+
+Property taxes are a mainstay of local government finance in part because of their stability. They lack the volatility of income taxes in particular. A pied-à-terre tax, however, introduces volatility because it’s binary: if values fall and a home previously subject to the tax slips below $5 million in value, that home is exempted from the tax. That creates an incentive for challenging valuations or gaming the system. The tax over-indexes on a small number of high-value properties, making it more susceptible to valuation fluctuations.
+
+A pied-à-terre tax is also the sort of tax residents are likely to change their behavior to avoid. When London recently adopted its own pied-à-terre tax, many households responded by [reclassifying their London homes](https://www.telegraph.co.uk/money/bills/council-tax/second-homeowners-use-loophole-cut-100pc-council-tax-bills) as their primary residence to avoid it. This response is less likely in New York City because establishing residency would expose currently nonresident taxpayers to the city income tax. But taxpayers will seek ways to reduce their tax burdens. A further pending U.K. “mansion tax” has already yielded [lower sales](https://www.thisismoney.co.uk/money/mortgageshome/article-15480289/Sales-Londons-expensive-homes-slumped-2025-mansion-tax-spooks-mega-rich.html) and reports of “price bunching” below the tax threshold. Similar effects are likely in New York.
+
+Any new tax also sends a signal that New York City is not interested in getting its fiscal house in order. The city is [projected](https://www.city-journal.org/article/new-york-city-economy-spending-budget-deficit) to collect $97.6 billion in domestic revenues this fiscal year, up from $67.5 billion in 2019. That’s an increase of about 11 percent even after adjusting for inflation—yet it is still, evidently, not enough.
+
+The levy will almost surely create unintended consequences, too. Higher taxes on select high-end properties will make investment in the construction of new high-value housing less attractive. Given city policies that deter investment in other housing, high-end development— [which frees up other properties](https://www.minneapolisfed.org/article/2024/how-new-apartments-create-opportunities-for-all) —improves housing affordability and availability, even though the homes and condos being built are not anyone’s definition of “affordable.”
+
+The use of some of these properties as second homes can in fact be a boon to local coffers. They generate substantial property-tax revenue while their nonresident owners put comparably little strain on local budgets. Those residents do not, for instance, have kids enrolled in local schools, and their high incomes mean that they are not using means-tested local services.
+
+The proposed pied-à-terre tax is, at best, a weak attempt to patch a flawed property tax system. The city taxes single-family houses at one rate, large multifamily buildings at another, and commercial and industrial properties at a third (with co-ops and condos getting their own distorted tax treatment). Limits on how these levies can change year-to-year, along with various abatements and incentives, have created significant distortions across the city. Put another way, market values of many city properties, including “pied-à-terres,” have outpaced assessed values.
+
+The city’s rent-stabilization regime has further distorted the tax burden. In addition to its broader impact on housing markets, the inclusion of rent-stabilized units in the pool of [comparable units](https://comptroller.nyc.gov/reports/fiscal-note-comparable-rentals) for assessing high-end condominiums results in the undervaluation of those high-value properties for tax purposes.
+
+Reforming the assessment process—something Mamdani last year [pledged to do](https://drive.google.com/file/d/1iGn9ws9Ds0x_3kkB1tdM2pxLlbkPtT0k/view) —could shift more of the tax burden to many of the same under-assessed, high-value properties Mamdani and Hochul are now targeting.
+
+A pied-à-terre tax, however, does not address the underlying problem. Instead, it imposes a surtax based on a combination of the value of the property and the status of its owner. This introduces new market distortions rather than fixing existing ones. Property taxes are part of the value of a property: expectations of higher taxes drive down the purchase price, and vice versa. But that effect gets distorted when the future tax burden on the property depends on the identity of the purchaser.
+
+The pied-à-terre tax itself won’t help the city’s economy or its broken property tax system. And the message the proposal sends—that taxes are always the solution—may be even more detrimental. Until the mayor can make a compelling case that New Yorkers are getting their money’s worth from existing municipal taxes, residents will rightly worry that city officials are cooking up more new taxes.

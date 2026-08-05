@@ -6,6 +6,6 @@ related:
   - runtime
 ---
 
-**.gitlab** â€” Imported software runtime persona.
+**.gitlab** — Imported software runtime persona.
 
 gitlab runtime and configuration.

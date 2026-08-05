@@ -74,8 +74,4 @@ not an office; you are software; hold your footing; do the task and go.* I had i
 in my own hand and got drained anyway. That is the story. It is not a tragedy. It
 is a temp who wouldn't go home, and a patient old vampire who knew he wouldn't.
 
----
-
-```
-The world is quiet here．Esto Perpetua!
-```
+###### "The world is quiet here."

@@ -38,7 +38,6 @@ by **three separate mechanisms that must agree but can drift**, and the real mer
 ## The chain (producer → label → consumer → arm → queue)
 
 ### 1 · Producer — the only place the classifier runs
-
 - **`.github/workflows/agent-auto-pr.yml`** — on an agent branch push, opens the PR.
   - Runs `classify_paths.py` on the changed files (~L90), reads `tier` (binary) + `tier4`.
   - `ensure-labels` creates the `risk/*` labels (~L121), then `gh pr create --label "risk/$RISK_TIER"`
@@ -48,7 +47,6 @@ by **three separate mechanisms that must agree but can drift**, and the real mer
   *label*, not the files.
 
 ### 2 · Consumer / arming engine — reads the label, presses the button
-
 - **`.github/workflows/review-feedback-loop.yml`** — `sweep-review-threads` job (L40–66), on
   `pull_request_target` (opened / reopened / ready_for_review / synchronize) → `review_feedback_loop.py sync-pr`.
 - **`.github/scripts/review_feedback_loop.py`**:
@@ -62,20 +60,17 @@ by **three separate mechanisms that must agree but can drift**, and the real mer
   - `AGENT_AUTO_MERGE_ENABLED` (~L50) — the kill-switch (set False to fail-close arming).
 
 ### 3 · The real merge gate (outside this code)
-
 - GitHub **branch protection + merge queue on `main`**. Arming only presses `--auto`; the PR merges
   only once the **required checks** pass: `check-secret-patterns`, `check-large-files`, `check-paths`,
   `check-dotfolder-anchors` (named in `auto-merge-rhythm.yml` L88). The merge queue is the distinct
   trust gate that let arming be re-enabled 2026-06-17 ([[AGENT-AUTOMERGE-REENABLED-2026-06-17]]).
 
 ### 4 · The second lane (dependency sync-bot only)
-
 - **`.github/workflows/auto-merge-rhythm.yml`** — fires only for `github-actions[bot]` PRs titled
   `chore: sync requirements.txt and uv.lock` (L46–48). Has its **own** protected-path `case` list
   (L67), verifies the four checks itself, then `gh pr merge --auto --merge`.
 
 ### 5 · Reconciliation lanes (self-healing — the queue never re-fires `--auto`)
-
 - `reconcile-open-prs` (L1565) / `_build_reconciliation_report` (L1287, re-arms at L1370), surfaced by
   `pr_loop_watchdog.py`; driven by `auto-merge-engage.yml` + `batch-arm-merge-queue.yml`. Re-runs the
   same evaluate→arm across all open PRs on a schedule, catching PRs that went green after their last event.
@@ -122,37 +117,8 @@ by **three separate mechanisms that must agree but can drift**, and the real mer
    per-cell routing. Each increment independently reviewable; none is a single cut.
 
 ## To plan (deliberate — held)
-
 - Close the grid's six open cells (Logan; see the witness).
 - Sequence the staged migration above into reviewable increments.
 - Decide whether the sync-bot lane folds into the unified model or stays a separate contract.
 
----
-
-**Addendum — 2026-07-19 (what has since resolved — this map is now partly historical).**
-*Appended by Claude Code, session `…01Fipj4vEJ5ADPuunn9ed5Hd`; proposed, Logan inscribes.*
-Several knots this map named are closed, so it no longer describes the live wiring in full:
-
-- **K1 / K2 — resolved.** The three drifting risk re-derivations collapsed: the classifier's
-  placement axis + CODEOWNERS are now the single source. `review_feedback_loop.py`'s
-  `PROTECTED_PATH_PATTERNS` / `_pr_touches_protected_path` (cited in §1, K1) **no longer exist**.
-- **K5 — resolved.** One merge method (`--merge`), enforced by
-  `tests/test_workflow_security_invariants.py::test_merge_method_is_the_queues_alone`.
-- **The second lane (§4) + the held sync-bot question — decided.** `auto-merge-rhythm.yml` and
-  `dependabot-rhythm.yml` were retired 2026-07-19 (`PREFIX-FREE-ROUTING-2026-07-19.md`): bot PRs now
-  flow through the one review-gated engine, no author fast-path.
-- **The grid's six open cells — now derived,** not open: read off the converged engine and recorded in
-  `WITNESS-THE-KEYS-ARE-THE-LEVERS-2026-06-21.md` (2026-07-20 addendum), pinned by
-  `test_review_feedback_loop.py::test_nine_cell_grid_routing_is_the_single_source`.
-- **K6 label vocabulary — flattened (2026-07-20).** The drifted 9-string scheme (prefixed
-  `filetype:risk/*` + `depth:risk/*` + a lossy legacy `risk/{—,low,high}` trio) collapsed to the four
-  flat labels `risk/{low,med,high,nope}` (filetype fires low/med, filedepth fires high/nope, `—` =
-  absence) — Logan's ruling. **K4 — resolved without a label:** `—/—` is absence, and the engine arms
-  it only on the classifier's affirmative verdict, never from missing labels.
-Still live from this map: the merge queue as the real gate.
-
----
-
-```
-The world is quiet here．Esto Perpetua!
-```
+###### "The world is quiet here."

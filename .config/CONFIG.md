@@ -6,6 +6,6 @@ related:
   - runtime
 ---
 
-**.config** â€” Imported software runtime persona.
+**.config** — Imported software runtime persona.
 
 config runtime and configuration.

@@ -116,8 +116,4 @@ wrote the canonical one.
 - **Author:** `*.claude.*` (Claude Code, branch `claude/shall-rome-lyrics-ok9049`)
 - **Scope:** the name as a counted series of distinct dead; the roll-call as the cure for the crown; the vault's own necrology of instances
 
----
-
-```
-The world is quiet here．Esto Perpetua!
-```
+###### "The world is quiet here."

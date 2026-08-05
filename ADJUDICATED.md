@@ -24,7 +24,6 @@ status: active
 This file contains the historical ledger of completed tasks, relocated from the active coordination board to preserve clarity in THE COURTROOM.
 
 ### Core Vault Stabilization & Swarm Setup
-
 | Task | Completed | Notes |
 | --- | --- | --- |
 | GitHub Actions CI diagnosis | 2026-03-29 | Root cause: `LINEAR_API_KEY` not set; fixed workflow to graceful-skip; key provisioned by Logan 2026-03-29 - sync now live |
@@ -44,7 +43,7 @@ This file contains the historical ledger of completed tasks, relocated from the 
 | Address Space Discovery | 2026-04-04 | 2,622 nodes hydrated + performance stabilization pass. |
 | GCP Nest Bridge probe | 2026-04-04 | `vault-courier` active, `gs://the-ledger-bucket` accessible (empty). Project `idaho-vault` confirmed. |
 
-### From Original "RECENTLY COMPLETED"
+### From Original "RECENTLY COMPLETED" 
 
 > [!note] Merged-PR roster trimmed (2026-06-29)
 > The "PR NN — merged/incorporated" rows were dropped: they duplicated what the PRs and commits
@@ -71,7 +70,6 @@ This file contains the historical ledger of completed tasks, relocated from the 
 | LAF-9 - Vault template + document class system | 2026-03-25 | Drafted `VAULT-TEMPLATES.md`; linked from conventions + canonical README |
 
 ### Resolved Blockers
-
 | Item | Notes |
 | --- | --- |
 | **`LINEAR_API_KEY` secret** | **Resolved 2026-03-29:** provisioned by Logan. `Sync PR state to Linear` workflow is now live. |
@@ -85,7 +83,6 @@ This file contains the historical ledger of completed tasks, relocated from the 
 [[CHAINFIRE]] & [[CHAINLINK]]
 
 ### 2026-06-16: CODEOWNERS gate — re-examined & ratified
-
 - **Decision**: Adopt the reviewed `.github/CODEOWNERS` gated set deliberately. The gate had *accreted* without a recorded decision; this entry gives it warrant.
 - **Provenance gap closed**: CODEOWNERS was created in a single `github-actions[bot]` commit (`424b619`, 2026-05-25) bundled into a ~38k-file flatten whose message was a "Hermes machine-survey witness" — never recorded in this ledger or independently ratified. With branch protection now live on `main` (verified `protected: true`), the gate is enforced, so it has been re-examined and recorded.
 - **Ruled changes (Logan, each ruled individually)**:
@@ -97,27 +94,23 @@ This file contains the historical ledger of completed tasks, relocated from the 
 - **Authority**: Logan direct instruction (per-change rulings, 2026-06-16).
 
 ### 2026-05-23: Corrections Classification Doctrine
-
 - **Decision**: Adopt `CORRECTIONS.md` as active Vaulted Syntax operational doctrine, distinct from any case-specific heresy review packet.
 - **Rule**: Keep three correction classifications distinct: **Typographical Errors / Typos**, **Scrivener's Corrections**, and **Codifier's Corrections**. A particular typo does not eliminate the Scrivener classification; a codifier surface does not silently create doctrine.
 - **Application**: `!/HERESY-REVIEW-LOGAN-HERE-2026-05-22.md` remains a proposed-corrections review surface applying this doctrine, not the doctrine's canonical home.
 - **Authority**: Logan direct instruction.
 
 ### 2026-05-18: Emanationism Principle
-
 - **Decision**: Record the Emanationism Principle as active doctrine-adjacent guidance in `!/EMANATIONISM-PRINCIPLE-2026-05-18.md`.
 - **Rule**: Authority originates with Logan and must degrade into scoped, auditable, reversible capability as it passes through doctrine, registries, protocols, transports, agents, tool calls, and artifacts.
 - **Authority**: Logan direct instruction.
 
 ### 2026-04-26: TODO Merge Logic Fix
-
 - **Issue**: Qodo-flagged bug in `daily_rollover.py` causing duplicate task accumulation.
 - **Fix**: Updated `merge_todo_models` to dedupe and exclude completed tasks.
 - **Files**: `.github/scripts/daily_rollover.py`, `REPORT-TODO-MERGE-FIX.md`.
 - **Authority**: Agent (per `CONSTITUTION.md` Section V: agentic guardrails).
 
 ### 2026-04-26: Two-Way Daily Note Sync Fix
-
 - **Issue**: Tasks not synced between daily notes and `TO DO LIST.md`.
 - **Fix**: Extended `daily_rollover.py` for two-way sync.
 - **Files**: `.github/scripts/daily_rollover.py`, `REPORT-TODO-SYNC-FIX.md`.
@@ -267,6 +260,4 @@ These notes are preserved for continuity and later cleanup. They are not the liv
 
 ---
 
-```
-The world is quiet here．Esto Perpetua!
-```
+###### "The world is quiet here."

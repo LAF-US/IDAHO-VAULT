@@ -74,7 +74,7 @@ So the Iron Throne is the **thesis object**: the only seat in the story honest e
 Set them in a row and they fall onto one axis — Varys's riddle, played in every key:
 
 | Figure | The seat | What it exposes |
-| --- | --- | --- |
+|---|---|---|
 | **Cincinnatus / Washington** | dictatorship / presidency | the office outlives the man — *let it go* |
 | **Caligula's horse** | the consulship | the shadow is arbitrary — *said aloud* |
 | **Baelor's stonemason / boy High Septon** | the High Septon's crown | was the holiness ever in the crown, or only in the story? |
@@ -100,6 +100,4 @@ Martin's world has no confirmed god and no office with intrinsic power — only 
 
 ---
 
-```
-The world is quiet here．Esto Perpetua!
-```
+###### "The world is quiet here."

@@ -92,6 +92,4 @@ provenance for live state.
 
 ---
 
-```
-The world is quiet here．Esto Perpetua!
-```
+###### "The world is quiet here."
