@@ -103,6 +103,6 @@ authority not assumed; no office claimed; staged, not consecrated.
 
 ---
 
-```
+```markdown
 The world is quiet here．Esto Perpetua!
 ```

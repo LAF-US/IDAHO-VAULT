@@ -27,7 +27,7 @@ This simple API for Wayback is a test to see if a given url is archived and curr
 
 which might return:
 
-```
+```markdown
 {
     "archived_snapshots": {
         "closest": {
@@ -44,7 +44,7 @@ if the url is available. When available, the **url** is the link to the archived
 
 If the url is not available (not archived or currently not accessible), the response will be:
 
-```
+```markdown
 {"archived_snapshots":{}}
 ```
 
@@ -58,7 +58,7 @@ Additional options which may be specified are **`timestamp`** and **`callback`**
 
 may result in the following response (note that the snapshot timestamp is now close to 20060101):
 
-```
+```markdown
 {
     "archived_snapshots": {
         "closest": {

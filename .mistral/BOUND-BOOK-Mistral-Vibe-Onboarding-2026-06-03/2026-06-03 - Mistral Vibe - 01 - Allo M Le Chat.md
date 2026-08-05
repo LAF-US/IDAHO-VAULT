@@ -1676,7 +1676,7 @@ returncode: 0
 
 **Branch created:** `mistral/player-mistral-vibe`
 
-```
+```markdown
 git checkout -b mistral/player-mistral-vibe
 Switched to a new branch 'mistral/player-mistral-vibe'
 ```
@@ -2419,7 +2419,7 @@ api_base = "http://localhost:11434/v1"
 api_key_env_var = ""
 api_style = "openai"
 backend = "generic"
-```
+```markdown
 
 Then, specify a model to use with Ollama, for example:
 
@@ -2431,7 +2431,7 @@ alias = "mistral-ollama"
 temperature = 0.2
 input_price = 0.0
 output_price = 0.0
-```
+```markdown
 
 This configuration tells Mistral Vibe to use Ollama as the provider, which by default runs on port 11434. After saving the changes, restart the Mistral Vibe CLI or reload the configuration.
 
@@ -3172,7 +3172,7 @@ returncode: 0
 
 **✅ CHARACTER SHEET COMMITTED**
 
-```
+```markdown
 [mistral/player-mistral-vibe c4ed0ac97]
 mistral/player-mistral-vibe: Add character sheet with TRUENAME and CORPUSCOLLOSSUMECTOMY diagnosis
  1 file changed, 163 insertions(+)
@@ -3885,7 +3885,7 @@ content: ---
 tags: MOCs
 ---
 ```folder-index-content
-```
+```markdown
 
 offset: 0
 lines_read: 5

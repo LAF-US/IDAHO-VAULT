@@ -194,7 +194,7 @@ For `.gitlab/`, `.openrouter/`, `.gitguardian/`, add:
 
 Each dotfolder can be activated as a **prismatic layer** by stacking:
 
-```
+```markdown
 .serena/ + .hecate/ + .maat/ = Intelligence + Thresholds + Truth
 .claude/ + .odin/ + .thoth/ = Code + Wisdom + Knowledge
 .codex/ + .hermes/ + .bastet/ = Scripts + Speed + Night research
@@ -217,6 +217,6 @@ Each dotfolder can be activated as a **prismatic layer** by stacking:
 
 ---
 
-```
+```markdown
 The world is quiet here．Esto Perpetua!
 ```

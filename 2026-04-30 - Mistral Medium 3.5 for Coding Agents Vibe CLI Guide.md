@@ -69,7 +69,7 @@ With the Medium 3.5 release, Vibe switched its default model from Devstral 2 to 
 - **Shell execution:** Run terminal commands for testing, building, linting, and other development tasks
 - **Todo management:** Track multi-step tasks with a built-in checklist that persists across the session
 
-```
+```markdown
 # Install Vibe CLI
 pip install mistral-vibe
 
@@ -97,7 +97,7 @@ Remote agents are a new capability launched alongside Medium 3.5. Instead of run
 - **GitHub PR integration:** Remote agents can create pull requests directly on GitHub when they finish a task, complete with diffs and descriptions.
 - **Cloud compute:** Offload heavy tasks to cloud infrastructure without tying up your local machine's resources.
 
-```
+```markdown
 # Start a remote coding session
 vibe --remote "Add pagination to the /users API endpoint"
 
@@ -119,7 +119,7 @@ Reliable function calling is the foundation of any coding agent. Medium 3.5 supp
 
 Here is a practical example of defining tools for a coding agent and letting Medium 3.5 select the appropriate one:
 
-```
+```markdown
 from openai import OpenAI
 
 client = OpenAI(
@@ -215,7 +215,7 @@ Best for complex coding tasks:
 - Test case generation
 - Temperature: 0.7 recommended
 
-```
+```markdown
 # Fast mode for simple file reads (low latency, fewer tokens)
 summary = client.chat.completions.create(
     model="mistral-medium-3.5",
@@ -259,7 +259,7 @@ Work Mode is particularly useful for team leads and senior developers who spend 
 
 If Vibe CLI doesn't fit your workflow, you can build a custom coding agent using the Mistral API directly. The API is OpenAI-compatible, so existing agent frameworks and patterns work with minimal changes. Here is a minimal agent loop that reads files, runs commands, and iterates until the task is complete:
 
-```
+```markdown
 import json
 import subprocess
 from openai import OpenAI

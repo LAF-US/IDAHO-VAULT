@@ -50,6 +50,6 @@ disagree, defer to `.claude/CLAUDE.md`, `!/AGENTS.md`, and `swarm.json`.
 
 ---
 
-```
+```markdown
 The world is quiet here．Esto Perpetua!
 ```

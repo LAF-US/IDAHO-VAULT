@@ -38,7 +38,7 @@ One finding (PR #463's CENSUS doctrine + unresolved review threads) was carried 
 
 Every push/PR/merge_group against `main` in the window failed identically. Root cause is not the repo's code — `max-allowed-issues: 2147483647` in `.github/workflows/codacy.yml` already forces the analysis step itself to exit 0 regardless of findings. The crash happens *after* analysis, while `codacy/codacy-analysis-cli-action` builds the SARIF report:
 
-```
+```markdown
 Exception in thread "main" java.nio.charset.MalformedInputException: Input length = 1
     at ... better.files.File.lines(File.scala:282)
     at com.codacy.analysis.cli.formatter.Sarif.$anonfun$createResults$3(Sarif.scala:146)
@@ -63,7 +63,7 @@ Both SARIF crashes are now gone (confirmed: no `Exception in thread` anywhere in
 
 `.github/workflows/sync-plugin-registry.yml` runs `sync_obsidian_plugin_registry.py --check` on every push touching `.obsidian/*` config or `manifest.json`/`swarm.json`, and fails closed on drift. Every failure in the window is the same message:
 
-```
+```markdown
 Obsidian plugin registry drift detected:
   manifest.json
   swarm.json

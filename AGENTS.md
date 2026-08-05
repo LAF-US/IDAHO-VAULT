@@ -77,7 +77,7 @@ Root governance files remain authoritative: `CONSTITUTION.md`, `LEVELSET.md`, an
 
 The `LAF-US` organization uses a **Five Cores model** for repository and team topology in a Venn Diagram arrangement, with PRIVATE and PUBLIC containing SECRET, PUBLISH, and PERSONAL:
 
-```
+```markdown
 LAF-US (Organization)
 ├── PRIVATE
 │   ├── SECRET
@@ -94,6 +94,6 @@ Manually revised by Logan A. Finney on 05/25/2026
 
 ---
 
-```
+```markdown
 The world is quiet here．Esto Perpetua!
 ```

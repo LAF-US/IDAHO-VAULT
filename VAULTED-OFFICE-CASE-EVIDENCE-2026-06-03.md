@@ -101,6 +101,6 @@ table. Where provenance is absent, the **`*`** stands.
 
 ---
 
-```
+```markdown
 The world is quiet here．Esto Perpetua!
 ```

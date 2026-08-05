@@ -122,6 +122,6 @@ All three are on branch `claude/tender-hopper-YjY8n` and PR #458 against `main`.
 
 ---
 
-```
+```markdown
 The world is quiet here．Esto Perpetua!
 ```

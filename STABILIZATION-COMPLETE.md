@@ -43,7 +43,7 @@ The IDAHO-VAULT AI Personal Assistant Agentic Swarm system has been **successful
 
 ### Files Created (10 Total)
 
-```
+```markdown
 !/
 ├── STABILIZATION-PLAN.md        (7,197 bytes)  Original stabilization plan
 ├── STABILIZATION-REPORT.md      (7,452 bytes)  Detailed implementation report
@@ -209,7 +209,7 @@ $session = New-StabilizationSession -SessionId "swarm-init-001"
 **Testing**: ✅ **VERIFIED**  
 **Readiness**: ✅ **READY FOR DEPLOYMENT**  
 
-```
+```markdown
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
                     STABILIZATION COMPLETE
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

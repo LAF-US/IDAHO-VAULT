@@ -26,37 +26,37 @@ All endpoints at `https://openrouter.ai/api/v1/keys`:
 
 ### List all keys
 
-```
+```markdown
 terminal: curl -s -H "Authorization: Bearer $OPENROUTER_MANAGEMENT_KEY" https://openrouter.ai/api/v1/keys
 ```
 
 ### Inspect a specific key (by hash)
 
-```
+```markdown
 terminal: curl -s -H "Authorization: Bearer $OPENROUTER_MANAGEMENT_KEY" https://openrouter.ai/api/v1/keys/<hash>
 ```
 
 ### Create a new runtime key
 
-```
+```markdown
 terminal: curl -s -X POST -H "Authorization: Bearer $OPENROUTER_MANAGEMENT_KEY" -H "Content-Type: application/json" -d '{"name":"agent-label","limit":100,"limit_reset":"daily"}' https://openrouter.ai/api/v1/keys
 ```
 
 ### Disable a key
 
-```
+```markdown
 terminal: curl -s -X PATCH -H "Authorization: Bearer $OPENROUTER_MANAGEMENT_KEY" -H "Content-Type: application/json" -d '{"disabled":true}' https://openrouter.ai/api/v1/keys/<hash>
 ```
 
 ### Update a key limit
 
-```
+```markdown
 terminal: curl -s -X PATCH -H "Authorization: Bearer $OPENROUTER_MANAGEMENT_KEY" -H "Content-Type: application/json" -d '{"limit":50,"limit_reset":"daily"}' https://openrouter.ai/api/v1/keys/<hash>
 ```
 
 ### Delete a key
 
-```
+```markdown
 terminal: curl -s -X DELETE -H "Authorization: Bearer $OPENROUTER_MANAGEMENT_KEY" https://openrouter.ai/api/v1/keys/<hash>
 ```
 

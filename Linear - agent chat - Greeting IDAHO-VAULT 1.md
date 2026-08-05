@@ -807,7 +807,7 @@ Here's where I get specific about how one person managing agents would actually 
 
 Create a single Initiative (e.g., "IDAHO-VAULT SWARM") containing multiple Projects:
 
-```
+```markdown
 Initiative: IDAHO-VAULT SWARM
   |
   +-- Project: Vault Housekeeping
@@ -845,7 +845,7 @@ Write your Constitution.md principles as workspace-level Agent Guidance. Every a
 
 Example workspace guidance:
 
-```
+```markdown
 # IDAHO-VAULT Agent Guidance
 
 ## Authority
@@ -1163,7 +1163,7 @@ Across languages, audiences can be linguistically reified (“the crowd,” “t
 
 **Timeline of semantic shift**
 
-```
+```markdown
 13th c."chatter(en)"attested;imitative/echoicorigin emphasized inmodern etymologiesmid-15th c."chat(ten)" emergesas clipped form of"chatter"16th c."chat" stabilizes asfamiliar conversation(verb/noun)late 19th c."chat up" develops(flirt/ingratiatesense)1988IRC created (chat asnetworked,synchronous textactivity)1993RFC 1459 documentsInternet Relay Chatprotocol1994"chat room" attested(online sense)2010slivestream platformsoperationalize chatas always-visibleaudience stream2020s"Chat,"conventionalized asaudience vocative;"chat" circulates asslang term ofaddress beyondstreamingSemantic shift of "chat" in English and platform culture
 ```
 
@@ -1187,13 +1187,13 @@ Platform affordances can invert conclusions. For example, if a platform filters 
 
 **Source links index**
 
-```
+```markdown
 text
 ```
 
 **Copy**
 
-```
+```markdown
 Merriam-Webster “chat” entry: https://www.merriam-webster.com/dictionary/chat
 Etymonline “chat”: https://www.etymonline.com/word/chat
 Etymonline “chatter”: https://www.etymonline.com/word/chatter
@@ -1216,13 +1216,13 @@ Litt (2012) imagined audience landing: https://www.tandfonline.com/doi/abs/10.10
 
 **Sample Slack message draft**
 
-```
+```markdown
 text
 ```
 
 **Copy**
 
-```
+```markdown
 Field notes on “chat” (linguistics + livestream culture)
 
 Key claim: “Chat” isn’t a new pronoun; it’s a noun used as a vocative/proper-name-like collective label (“Chat, …”), plus a reified crowd actor (“Chat is spamming …”). This emerges from platform affordances: synchronous text streams + addressability + immediate response.
@@ -1239,13 +1239,13 @@ Big IFs:
 
 **Sample Linear update draft**
 
-```
+```markdown
 text
 ```
 
 **Copy**
 
-```
+```markdown
 Research summary: “chat” as word → interface → collective addressee
 
 Findings:

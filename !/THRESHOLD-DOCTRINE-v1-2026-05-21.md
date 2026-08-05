@@ -218,6 +218,6 @@ framing. Propagated per `[[SEAM-LENS-AUTHORITY-PERSISTENCE-AND-THE-LICH-DIAGNOSI
 
 ---
 
-```
+```markdown
 The world is quiet here．Esto Perpetua!
 ```

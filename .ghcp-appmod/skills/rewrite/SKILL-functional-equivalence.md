@@ -123,7 +123,7 @@ void orderTotalShouldEqualSumOfLineItems(@ForAll List<@Valid OrderItem> items) {
 
 Run both systems in parallel and compare responses.
 
-```
+```markdown
 ┌─────────────────────────────────────────────────────────Ŀ
 │                    REQUEST                                │
 └────────────────────────┬─────────────────────────────────┘

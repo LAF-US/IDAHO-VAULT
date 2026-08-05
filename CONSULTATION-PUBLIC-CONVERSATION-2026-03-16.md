@@ -83,7 +83,7 @@ But this touches constitutional territory — ADMINISTRATION should weigh in on 
 
 *Logan: paste this into PERSISTENT: ADMINISTRATION*
 
-```
+```markdown
 CONSULTATION REQUEST: CODE AUTHORITY → ADMINISTRATION
 Date: 2026-03-16
 Re: PUBLIC: CONVERSATION — constitutional implications
@@ -141,7 +141,7 @@ ROUTING: Logan relays your response to CODE AUTHORITY.
 
 *Logan: paste this into the GitHub Copilot conversation*
 
-```
+```markdown
 CONSULTATION REQUEST: CODE AUTHORITY → GITHUB COPILOT
 Date: 2026-03-16
 Re: PUBLIC: CONVERSATION — GitHub/platform implications

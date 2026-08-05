@@ -70,7 +70,7 @@
 
 ### Components of a Swarm Agent
 
-```
+```markdown
 ┌────────────────────────────────Ŀ
 │           SWARM AGENT             │
 ├────────────────────────────────Ĵ
@@ -200,7 +200,7 @@ Based on research from Milvus and swarm intelligence literature:
 
 **Structure:**
 
-```
+```markdown
           Master Agent
          /    |    \
    Coordinator  Coordinator  Coordinator
@@ -435,7 +435,7 @@ Worker Worker Worker Worker Worker Worker
 
 Based on your existing AGENTS.md structure and the protocol research, here's a tailored recommendation:
 
-```
+```markdown
 IDAHO-VAULT Swarm Architecture
 ├────────────────────────────────────Ŀ
 │           COORDINATION LAYER          │
@@ -544,7 +544,7 @@ IDAHO-VAULT Swarm Architecture
 
 ### Implementation Roadmap
 
-```
+```markdown
 Phase 1 (Weeks 1-2): Foundation
 ├── Set up ACP infrastructure
 ├── Integrate MCP tools

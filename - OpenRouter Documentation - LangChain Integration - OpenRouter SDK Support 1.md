@@ -13,7 +13,7 @@ LangChain provides a standard interface for working with chat models. You can us
 - [LangChain Python integration](https://docs.langchain.com/oss/python/integrations/chat/openrouter): [langchain-openrouter on PyPI](https://pypi.org/project/langchain-openrouter/)
 - [LangChain JavaScript integration](https://docs.langchain.com/oss/javascript/integrations/chat/openrouter): [@langchain/openrouter on npm](https://www.npmjs.com/package/@langchain/openrouter)
 
-```
+```markdown
 1import { ChatOpenRouter } from "@langchain/openrouter";
 2
 3const model = new ChatOpenRouter(

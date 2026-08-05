@@ -292,7 +292,7 @@ the branch-merge. Both branches had to be answered in a single act of will.
 
 **The three-branch chain:**
 
-```
+```markdown
 Three beings enter the Time Room simultaneously
 
 LICH'S WISH: extinction of all life
@@ -478,6 +478,6 @@ Caduceus Road, under the branches, approaching the Hotel Denouement.*
 
 ---
 
-```
+```markdown
 The world is quiet here．Esto Perpetua!
 ```

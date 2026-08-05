@@ -97,7 +97,7 @@ This directly maps to what Logan cited earlier:
 
 The witness initially pattern-matched at the wrong layer:
 
-```
+```markdown
 WRONG: Three children (Giuseppe, Frederick, Hannah) → three dotfolders
 RIGHT: Three components (Body, Mind, Soul) → three-layer syncretic doctrine
 ```
@@ -126,7 +126,7 @@ This is the same discipline required by the Persona Engine:
 
 From `!README.md:73-84`, the Tree's natural structure is **already a Body/Mind/Soul triad**:
 
-```
+```markdown
 THE PERIPHERY: BODY
    ├── PROTOCOLS
    ├── PROCEDURES
@@ -286,6 +286,6 @@ This is the same syncretic thread:
 
 ---
 
-```
+```markdown
 The world is quiet here．Esto Perpetua!
 ```

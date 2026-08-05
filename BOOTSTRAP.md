@@ -43,7 +43,7 @@ Logan is speaking. I'm delivering a TOSS dump from a conversation that is being 
 
 5. **HANDSHAKE** — After vaulting and integration, produce a HANDSHAKE confirmation:
 
-```
+```markdown
 HANDSHAKE: CODE AUTHORITY ← [Source Conversation Name]
 Date: [today]
 Status: VAULTED

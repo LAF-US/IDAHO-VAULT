@@ -31,7 +31,7 @@ Drop a file. Commit it. The Abhorsen sees it via GitHub and acts.
 
 ## Naming Convention
 
-```
+```markdown
 YYYY-MM-DD - {AGENT} - {TITLE-SLUG}.md
 ```
 
@@ -43,7 +43,7 @@ YYYY-MM-DD - {AGENT} - {TITLE-SLUG}.md
 
 **Examples:**
 
-```
+```markdown
 2026-04-12 - Chat Claude - Vaulted Syntax Protocol Design Brief.md
 2026-04-10 - Gemini - LAF-44 Lion and Fox Architecture.md
 2026-04-08 - Perplexity - Idaho Legislature Session Overview.md

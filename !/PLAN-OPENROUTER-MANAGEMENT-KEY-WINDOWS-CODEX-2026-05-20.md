@@ -208,6 +208,6 @@ Prefer running this inventory directly on Windows Codex, where the OpenRouter Ma
 
 ---
 
-```
+```markdown
 The world is quiet here．Esto Perpetua!
 ```

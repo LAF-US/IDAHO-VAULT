@@ -68,7 +68,7 @@ related:
 
 ## §1 — Item template
 
-```
+```markdown
 R-NN · <question>
   Independent sources now: <count> — <named carrier(s)>
   Likely next carriers: <where a 2nd–4th independent source might live>
@@ -722,6 +722,6 @@ Logan's disposition · the REGISTRATION cell it fed.)*
 
 ---
 
-```
+```markdown
 The world is quiet here．Esto Perpetua!
 ```

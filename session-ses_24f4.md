@@ -25,7 +25,7 @@ Let me fix this properly using a different approach. I'll reconstruct the file c
 
 **Output:**
 
-```
+```markdown
 (no output)
 ```
 
@@ -50,7 +50,7 @@ Let me verify the changes were applied correctly.
 
 **Output:**
 
-```
+```markdown
 """
 Twitter Archive ? IDAHO-VAULT Markdown Extractor
 Converts tweets.js from a Twitter/X data export into individual
@@ -87,7 +87,7 @@ Let me check what the actual character is in that position:
 
 **Output:**
 
-```
+```markdown
 84
 119
 105
@@ -147,7 +147,7 @@ _Thinking:_
 
 Let me manually construct the correct file with the proper arrow character. I'll use PowerShell to create it correctly:
 
-```
+```markdown
 # Read the backup
 $backup = Get-Content "!/twitter-extract.py.bak"
 
@@ -194,7 +194,7 @@ Let me execute this:
 
 **Output:**
 
-```
+```markdown
 The string is missing the terminator: "@.
     + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
     + FullyQualifiedErrorId : TerminatorExpectedAtEndOfString
@@ -223,7 +223,7 @@ Let me try a different approach - I'll directly edit the file using string repla
 
 **Output:**
 
-```
+```markdown
 The regular expression pattern (?s)^\Q"""\E.*?\Q"""\E is not valid.
 At line:5 char:1
 + $content = $content -replace '(?s)^\Q"""\E.*?\Q"""\E', '
@@ -255,7 +255,7 @@ Let me take a step back and approach this more systematically. I'll reconstruct 
 
 **Output:**
 
-```
+```markdown
 300
 
 ```
@@ -281,7 +281,7 @@ Now I'll manually construct the correct file by taking the backup and modifying 
 
 **Output:**
 
-```
+```markdown
 (no output)
 ```
 
@@ -306,7 +306,7 @@ Now let me verify the changes were applied correctly.
 
 **Output:**
 
-```
+```markdown
 """
 Twitter Archive ? IDAHO-VAULT Markdown Extractor
 Converts tweets.js from a Twitter/X data export into individual
@@ -341,7 +341,7 @@ Now I need to fix that remaining question mark. Let me replace it properly:
 
 **Output:**
 
-```
+```markdown
 (no output)
 ```
 
@@ -366,7 +366,7 @@ Let me check if the arrow character worked correctly:
 
 **Output:**
 
-```
+```markdown
 """
 Twitter Archive ? IDAHO-VAULT Markdown Extractor
 Converts tweets.js from a Twitter/X data export into individual
@@ -401,7 +401,7 @@ Let me check what's actually in the file now by looking at the raw bytes of the 
 
 **Output:**
 
-```
+```markdown
 Cannot convert value "Twitter Archive ? IDAHO-VAULT Markdown Extractor" to type "System.Char". Error: "String must be 
 exactly one character long."
 At line:1 char:56
@@ -434,7 +434,7 @@ Let me check what the actual character is at that position
 
 **Output:**
 
-```
+```markdown
 Cannot index into a null array.
 At line:1 char:1
 + [char[]]($lines[1])
@@ -466,7 +466,7 @@ Let me try a different approach to fix the arrow character. I'll directly replac
 
 **Output:**
 
-```
+```markdown
 (no output)
 ```
 
@@ -491,7 +491,7 @@ Let me check the current state of the file
 
 **Output:**
 
-```
+```markdown
 """
 Twitter Archive ? IDAHO-VAULT Markdown Extractor
 Converts tweets.js from a Twitter/X data export into individual
@@ -527,7 +527,7 @@ Let me try a different approach - let's directly replace the specific bytes:
 
 **Output:**
 
-```
+```markdown
 (no output)
 ```
 
@@ -552,7 +552,7 @@ Let me try a different approach. I'll use PowerShell's -replace operator with th
 
 **Output:**
 
-```
+```markdown
 (no output)
 ```
 
@@ -577,7 +577,7 @@ Let me check the result:
 
 **Output:**
 
-```
+```markdown
 """
 Twitter Archive ? IDAHO-VAULT Markdown Extractor
 Converts tweets.js from a Twitter/X data export into individual
@@ -613,7 +613,7 @@ Let me try a different approach - let's look at the actual bytes to see what's h
 
 **Output:**
 
-```
+```markdown
 At line:15 char:39
 +         Write-Host "Found at position $i:"
 +                                       ~~~
@@ -646,7 +646,7 @@ Let me simplify this and directly fix the file using a different approach. Since
 
 **Output:**
 
-```
+```markdown
 The string is missing the terminator: "@.
     + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
     + FullyQualifiedErrorId : TerminatorExpectedAtEndOfString
@@ -677,7 +677,7 @@ Actually, let me step back and check what the actual issue is. The problem seems
 
 **Output:**
 
-```
+```markdown
 (no output)
 ```
 
@@ -702,7 +702,7 @@ Let me check the current state of the file
 
 **Output:**
 
-```
+```markdown
 """
 Twitter Archive ? IDAHO-VAULT Markdown Extractor
 Converts tweets.js from a Twitter/X data export into individual
@@ -739,7 +739,7 @@ Let me check the actual characters in the second line:
 
 **Output:**
 
-```
+```markdown
 Line: Twitter Archive ? IDAHO-VAULT Markdown Extractor
 Length: 48
 0: 'T' (0x0054)
@@ -814,7 +814,7 @@ Now I can see the issue - there's an actual '?' character (0x003f) at position 1
 
 **Output:**
 
-```
+```markdown
 (no output)
 ```
 
@@ -839,7 +839,7 @@ Now let's verify the fix worked
 
 **Output:**
 
-```
+```markdown
 """
 Twitter Archive ? IDAHO-VAULT Markdown Extractor
 Converts tweets.js from a Twitter/X data export into individual
@@ -875,7 +875,7 @@ Let me check what happened to the arrow character replacement:
 
 **Output:**
 
-```
+```markdown
 Line: Twitter Archive ? IDAHO-VAULT Markdown Extractor
 Length: 48
 0: 'T' (0x0054)
@@ -950,7 +950,7 @@ Let me try a different approach to insert the arrow character directly.
 
 **Output:**
 
-```
+```markdown
 Successfully replaced ? with  at position 21
 
 ```
@@ -976,7 +976,7 @@ Now let's check if the replacement worked correctly and fix the OUTPUT_DIR. Let'
 
 **Output:**
 
-```
+```markdown
 """
 Twitter Archive �+' IDAHO-VAULT Markdown Extractor
 Converts tweets.js from a Twitter/X data export into individual
@@ -1014,7 +1014,7 @@ Let's check OUTPUT_DIR and a few other things to ensure the script is correct, t
 
 **Output:**
 
-```
+```markdown
 (no output)
 ```
 
@@ -1040,7 +1040,7 @@ Let's check the file content around the header and the OUTPUT_DIR line.
 
 **Output:**
 
-```
+```markdown
 """
 Twitter Archive �+' IDAHO-VAULT Markdown Extractor
 Converts tweets.js from a Twitter/X data export into individual
@@ -1076,7 +1076,7 @@ Let me check what that strange character is in the output. It looks like there's
 
 **Output:**
 
-```
+```markdown
 Found 'Twitter Archive' at position 5
 Surrounding bytes:
   0: 22 '"'
@@ -1139,7 +1139,7 @@ Let's check a few more key parts of the file to make sure our modifications are 
 
 **Output:**
 
-```
+```markdown
 Twitter Archive �+' IDAHO-VAULT Markdown Extractor
 Converts tweets.js from a Twitter/X data export into individual
 markdown notes in the tweets/ folder (social archive).
@@ -1175,7 +1175,7 @@ Let's look at the last 20 lines.
 
 **Output:**
 
-```
+```markdown
 """
 Twitter Archive �+' IDAHO-VAULT Markdown Extractor
 Converts tweets.js from a Twitter/X data export into individual
@@ -1219,7 +1219,7 @@ Let's do a final verification that the script works and points to the correct lo
 
 **Output:**
 
-```
+```markdown
 Syntax OK
 
 ```
@@ -1245,7 +1245,7 @@ Now let's verify the OUTPUT_DIR is correct and test the script
 
 **Output:**
 
-```
+```markdown
 (no output)
 ```
 
@@ -1271,7 +1271,7 @@ We need to verify that the twitter extractor script is correctly updated.
 
 **Output:**
 
-```
+```markdown
 (no output)
 ```
 
@@ -1296,7 +1296,7 @@ Let me check what's in the file around where OUTPUT_DIR should be:
 
 **Output:**
 
-```
+```markdown
 (no output)
 ```
 
@@ -1321,7 +1321,7 @@ Let me check what happened to the file - it seems like the content got corrupted
 
 **Output:**
 
-```
+```markdown
 (no output)
 ```
 
@@ -1346,7 +1346,7 @@ Let me start over with a simpler approach. I'll directly edit the specific lines
 
 **Output:**
 
-```
+```markdown
 (no output)
 ```
 
@@ -1371,7 +1371,7 @@ Now let's check the result:
 
 **Output:**
 
-```
+```markdown
 """
 Twitter Archive ? IDAHO-VAULT Markdown Extractor
 Converts tweets.js from a Twitter/X data export into individual
@@ -1410,7 +1410,7 @@ Let me get the correct lines for the header and then append the rest of the file
 
 **Output:**
 
-```
+```markdown
 ...output truncated...
 
 Full output saved to: C:\Users\loganf\.local\share\opencode\tool-output\tool_db2f117e0001qjbzPRH0MQKU7C
@@ -2569,7 +2569,7 @@ Let me try a different approach. I'll use the backup file and replace just what 
 
 **Output:**
 
-```
+```markdown
 The regular expression pattern (?s)^\Q"""\E.*?\Q"""\E is not valid.
 At line:19 char:1
 + $content = $content -replace '(?s)^\Q"""\E.*?\Q"""\E', $newHeader
@@ -2603,7 +2603,7 @@ First, let me see exactly what the backup file looks like around the header area
 
 **Output:**
 
-```
+```markdown
 """
 Twitter Archive �+' IDAHO-VAULT Markdown Extractor
 Converts tweets.js from a Twitter/X data export into individual
@@ -2643,7 +2643,7 @@ Let me try a different approach. I'll directly create the corrected file by comb
 
 **Output:**
 
-```
+```markdown
 At line:5 char:13
 + $header = @"""
 +             ~
@@ -2683,7 +2683,7 @@ Let me try a different approach. I'll directly edit the file by replacing specif
 
 **Output:**
 
-```
+```markdown
 (no output)
 ```
 
@@ -2708,7 +2708,7 @@ Let me check if the changes were applied correctly.
 
 **Output:**
 
-```
+```markdown
 """
 Twitter Archive �+' IDAHO-VAULT Markdown Extractor
 Converts tweets.js from a Twitter/X data export into individual
@@ -2745,7 +2745,7 @@ Let me check if we successfully replaced the arrow character and the OUTPUT_DIR:
 
 **Output:**
 
-```
+```markdown
 
 OUTPUT_DIR = VAULT_ROOT / "tweets"
 def get_existing_ids(output_dir: Path) -> set:
@@ -2780,7 +2780,7 @@ Now I need to fix the remaining escaped characters in the docstring. The parenth
 
 **Output:**
 
-```
+```markdown
 (no output)
 ```
 
@@ -2805,7 +2805,7 @@ Now let's check the final result:
 
 **Output:**
 
-```
+```markdown
 """
 Twitter Archive �+' IDAHO-VAULT Markdown Extractor
 Converts tweets.js from a Twitter/X data export into individual
@@ -2842,7 +2842,7 @@ Let me check the current state of the twitter extractor and then test it to make
 
 **Output:**
 
-```
+```markdown
 """
 Twitter Archive �+' IDAHO-VAULT Markdown Extractor
 Converts tweets.js from a Twitter/X data export into individual
@@ -2932,7 +2932,7 @@ The repository is now cleaned up per your specifications with the Twitter archiv
 
 **Output:**
 
-```
+```markdown
 [
   {
     "content": "Remove _private folder and contents",
@@ -3047,7 +3047,7 @@ Would you like me to perform any additional verification steps or make any other
 
 **Output:**
 
-```
+```markdown
 [
   {
     "content": "Remove _private folder and contents",
@@ -3181,7 +3181,7 @@ No further actions are required unless additional cleanup is desired for specifi
 
 **Output:**
 
-```
+```markdown
 [
   {
     "content": "Remove _private folder and contents",
@@ -3314,7 +3314,7 @@ All cleanup actions have been completed and verified. The system maintains its i
 
 **Output:**
 
-```
+```markdown
 [
   {
     "content": "Remove _private folder and contents",
@@ -3385,7 +3385,7 @@ Let me do a final check to confirm everything is in the expected state:
 
 **Output:**
 
-```
+```markdown
 _private successfully removed
 
 ```
@@ -3421,7 +3421,7 @@ All tasks are completed. The repository has been cleaned up according to the spe
 
 **Output:**
 
-```
+```markdown
 tweets folder exists in root: YES
 @ folder successfully removed: YES
 Archived LEVELSET file exists: YES
@@ -3513,7 +3513,7 @@ Let's first check .github/ folder.
 
 **Output:**
 
-```
+```markdown
 
 
     Directory: C:\Users\loganf\Documents\IDAHO-VAULT\.github
@@ -3559,7 +3559,7 @@ Let me check some key GitHub workflow files to see if they're properly configure
 
 **Output:**
 
-```
+```markdown
 
 
     Directory: C:\Users\loganf\Documents\IDAHO-VAULT\.github\workflows
@@ -3624,7 +3624,7 @@ Let me verify some key workflow files to ensure they're properly configured.
 
 **Output:**
 
-```
+```markdown
 name: Daily To-Do Rollover
 
 # Carries incomplete to-do items from yesterday's daily note into today's.
@@ -3659,7 +3659,7 @@ Let me check a few more workflows to ensure they're properly configured, then pr
 
 **Output:**
 
-```
+```markdown
 # For most projects, this workflow file will not need changing; you simply need
 # to commit it to your repository.
 #
@@ -3706,7 +3706,7 @@ We'll do a quick search.
 
 **Output:**
 
-```
+```markdown
 Select-String : Cannot find path 'C:\Users\loganf\Documents\IDAHO-VAULT\github\workflows' because it does not exist.
 At line:1 char:1
 + Select-String -Path .\github\workflows\* -Pattern "_private" -SimpleM ...
@@ -3742,7 +3742,7 @@ We need to check for references to _private or @ in the GitHub workflows and oth
 
 **Output:**
 
-```
+```markdown
 (no output)
 ```
 
@@ -3769,7 +3769,7 @@ We are going to check for any references to the old paths (_private, @, or p2-re
 
 **Output:**
 
-```
+```markdown
 Select-String : The file C:\Users\loganf\Documents\IDAHO-VAULT\.github\ cannot be read: Could not find a part of the 
 path 'C:\Users\loganf\Documents\IDAHO-VAULT\.github\'.
 At line:2 char:1
@@ -3802,7 +3802,7 @@ Let me try a different approach to search for _private in the .github directory
 
 **Output:**
 
-```
+```markdown
 
 .github\scripts\__pycache__\metadata_survey.cpython-313.pyc:31:  US   S:X  a  g[        U 4S j[         5 
       5      $ ! [         a     gf = f) NTFr   ?_private? 
@@ -3855,7 +3855,7 @@ Now let's check for references to the old @/tweets path in GitHub tooling:
 
 **Output:**
 
-```
+```markdown
 (no output)
 ```
 
@@ -3915,7 +3915,7 @@ We need to check that GitHub tooling (workflows, scripts, etc.) doesn't referenc
 
 **Output:**
 
-```
+```markdown
 
 .github\scripts\__pycache__\metadata_survey.cpython-313.pyc:157:store_truez5Include _private/ historical work areas in 
 the survey)?actionr?   z--outputzOptional output file path)r?   )rF   rG   r    T)?indent? 
@@ -3947,7 +3947,7 @@ Let me check the actual metadata_survey.py file to see if these references need 
 
 **Output:**
 
-```
+```markdown
 
         help="Include _private/ historical work areas in the survey",
 
@@ -3992,7 +3992,7 @@ Let me run a final verification to make sure the essential GitHub tooling compon
 
 **Output:**
 
-```
+```markdown
 All key GitHub workflows present: YES
 Get-ChildItem : Cannot bind parameter because parameter 'Filter' is specified more than once. To provide multiple 
 values to parameters that can accept multiple values, use the array syntax. For example, "-parameter 
@@ -4029,7 +4029,7 @@ Let me fix the GitHub workflows check and then finalize the verification.
 
 **Output:**
 
-```
+```markdown
 GitHub workflows present (0 files): NO
 
 ```
@@ -4055,7 +4055,7 @@ Let me try a different approach to count the workflow files.
 
 **Output:**
 
-```
+```markdown
 31
 
 ```
@@ -4081,7 +4081,7 @@ Let me check the workflows directory contents directly:
 
 **Output:**
 
-```
+```markdown
 
 
     Directory: C:\Users\loganf\Documents\IDAHO-VAULT\.github\workflows
@@ -4191,7 +4191,7 @@ The repository has been successfully cleaned up according to the specifications,
 
 **Output:**
 
-```
+```markdown
 [
   {
     "content": "Remove _private folder and contents",
@@ -4302,7 +4302,7 @@ We have completed the requested cleanup actions and verified the system integrit
 
 **Output:**
 
-```
+```markdown
 [
   {
     "content": "Remove _private folder and contents",
@@ -4442,7 +4442,7 @@ Is there anything specific about the GitHub tooling you'd like me to verify furt
 
 **Output:**
 
-```
+```markdown
 [
   {
     "content": "Remove _private folder and contents",
@@ -4618,7 +4618,7 @@ We are in the IDAHO-VAULT repository. We have just completed a series of cleanup
 
 **Output:**
 
-```
+```markdown
 ...output truncated...
 
 Full output saved to: C:\Users\loganf\.local\share\opencode\tool-output\tool_db310f653001R25LjzEVWsy1JZ
@@ -6648,7 +6648,7 @@ Let me check a sample of these to understand their purpose:
 
 **Output:**
 
-```
+```markdown
 (no output)
 ```
 
@@ -6673,7 +6673,7 @@ Let me check a few more to see if they have content or are just empty placeholde
 
 **Output:**
 
-```
+```markdown
 ---
 ---
 
@@ -6700,7 +6700,7 @@ Let me check a few more of these single-letter files to understand what they con
 
 **Output:**
 
-```
+```markdown
 ---
 ---
 
@@ -6754,7 +6754,7 @@ Let me check a few specific things that other agents might have modified recentl
 
 **Output:**
 
-```
+```markdown
 
 
     Directory: C:\Users\loganf\Documents\IDAHO-VAULT\!
@@ -6814,7 +6814,7 @@ First, let me get a quick overview of recent changes in the vault.
 
 **Output:**
 
-```
+```markdown
 
 
     Directory: C:\Users\loganf\Documents\IDAHO-VAULT
@@ -6989,7 +6989,7 @@ The user is asking about "start_*.sh" files - they want to see what start shell 
 
 **Output:**
 
-```
+```markdown
 
 
     Directory: C:\Users\loganf\Documents\IDAHO-VAULT
@@ -7024,7 +7024,7 @@ Let me check the start_SPARKSEED.sh file to see what it does.
 
 **Output:**
 
-```
+```markdown
 #!/bin/bash
 #
 # openclaw_startup_seed.sh (The Genesis Script)
@@ -7163,7 +7163,7 @@ Let me provide a final summary and end the interaction.
 
 **Output:**
 
-```
+```markdown
 [
   {
     "content": "Remove _private folder and contents",
@@ -7279,7 +7279,7 @@ Now I'll provide a final summary of all completed work and the current state of 
 
 **Output:**
 
-```
+```markdown
 [
   {
     "content": "Remove _private folder and contents",

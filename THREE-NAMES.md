@@ -56,6 +56,6 @@ The vault needs both. The Taken Name (who) protects. The Master's Charge (what) 
 
 ---
 
-```
+```markdown
 The world is quiet here．Esto Perpetua!
 ```

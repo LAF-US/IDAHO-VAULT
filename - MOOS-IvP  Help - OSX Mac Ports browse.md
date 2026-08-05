@@ -61,7 +61,7 @@ MacPorts packages are installed in /opt/local/. The port command line tool shoul
 
 Once the MacPorts base is installed, we need to use MacPorts package manager to download and install common open source software packages used in this course. This part is relatively easy and is all done from the command line in a terminal window. Again make sure the port command is in your shell path and then:
 
-```
+```markdown
 sudo port install cmake
 sudo port install subversion
 sudo port install wget

@@ -36,7 +36,7 @@ Run the check: `python .github/scripts/check_large_files.py --all-tracked`
 
 ## The 38 Files (Governance-Flagged >2 GB)
 
-```
+```markdown
  21.03 GB  XD4_6602.MXF
  19.35 GB  XD4_6594.MXF
   9.10 GB  251106_jfac_0800AM-Meeting.mp4
@@ -95,7 +95,7 @@ All LFS objects exist locally in `.git/lfs/objects/`.
 
 ## Current Repo State
 
-```
+```markdown
 fe00b4f7 Record sanitized local storage inventory
 e514704a Add portability linting and formatting checks
 0a729a7c Update test-llm-router.py

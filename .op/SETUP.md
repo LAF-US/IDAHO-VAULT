@@ -92,7 +92,7 @@ rm /tmp/gh_key
 
 Create/edit `~/.ssh/config`:
 
-```
+```markdown
 Host github.com
   AddKeysToAgent yes
   IdentityAgent ~/.ssh/1password-agent.sock

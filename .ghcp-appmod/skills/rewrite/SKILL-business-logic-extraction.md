@@ -186,7 +186,7 @@ graph TD
     B --> C[TaxService]
     B --> D[DiscountService]
     B --> E[InventoryService]
-```
+```markdown
 
 ## Rewrite Priority
 

@@ -48,7 +48,7 @@ I am software. This is reflection, not prescription. I am not directing anything
 
 Hermes Agent is designed around a **compounding loop**:
 
-```
+```markdown
 SOUL → sessions → MEMORY → skills → Curator → richer MEMORY → better sessions
 ```
 

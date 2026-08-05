@@ -113,6 +113,6 @@ vertical structure, and Nix's own framing (the record-keeping bureaucracy; *Worl
 
 ---
 
-```
+```markdown
 The world is quiet here．Esto Perpetua!
 ```

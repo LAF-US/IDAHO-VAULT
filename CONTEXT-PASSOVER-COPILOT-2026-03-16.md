@@ -94,7 +94,7 @@ Exists on mothership. Contains full operational instructions for Claude Code ses
 
 ### Priority 1: Merge mothership to main
 
-```
+```markdown
 Branch: claude/levelset-multi-conversation-zWxJc
 Target: main
 Method: PR or direct merge — Logan's call
@@ -106,7 +106,7 @@ This is the single most important action. All governance work lives on this bran
 
 Delete these 8 branches after confirming no unmerged unique work:
 
-```
+```markdown
 claude/deploy-vault-automation-Qq5iK
 claude/idaho-legislature-scraper-RI6Ku
 claude/levelset-closure-notification-ss7wR

@@ -33,7 +33,7 @@ Issues with LangChain's approach to abstractions can be demonstrated with this t
 
 Here is a Python example using just the OpenAI package:
 
-```
+```markdown
 1 from openai import OpenAI
  2 
  3 client = OpenAI(api_key="<your_api_key>")
@@ -54,7 +54,7 @@ This is simple code that is easy to understand, containing a single class and on
 
 Let's contrast this with LangChain's version:
 
-```
+```markdown
 1 from langchain_openai import ChatOpenAI
  2 from langchain_core.output_parsers import StrOutputParser
  3 from langchain_core.prompts import ChatPromptTemplate
@@ -90,7 +90,7 @@ Let's look at another abstraction comparison in Python, this time for fetching J
 
 Using the built-in http package:
 
-```
+```markdown
 1 import http.client
 2 import json
 3 
@@ -103,7 +103,7 @@ Using the built-in http package:
 
 Using the requests package:
 
-```
+```markdown
 1 import requests
 2 
 3 response = requests.get("https://api.example.com/data")
