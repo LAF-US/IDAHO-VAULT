@@ -27,7 +27,7 @@ date: 2026-06-08
 **[history]** Above the nobility sits the **sovereign** (king/queen; on the Continent an **emperor**, and the **grand duke** — a sovereign rank *between* king and duke). The titled nobility proper, the British **peerage**, runs in five ranks, highest to lowest:
 
 | Rank | Origin / etymology | Note |
-| --- | --- | --- |
+|---|---|---|
 | **Duke** | Latin **dux**, "leader / general" | Highest; styled "His/Her Grace." First English creation **1337** (Edward III → the Black Prince, Duke of Cornwall). |
 | **Marquess** (Marquis; Ger. **Margrave**) | a lord of the **march / mark** — a **frontier** district | Originally a count entrusted to guard a border. |
 | **Earl** / **Count** | **Earl** ← Old Norse **jarl**, "chieftain"; **Count** ← Latin **comes**, "companion" (of the emperor) | England's **oldest** title and once its highest; rules (in theory) a **county**. Ger. **Graf**, Fr. **Comte**, Sp. **Conde**. |
@@ -51,14 +51,12 @@ date: 2026-06-08
 ## Vassalage — lord and vassal
 
 **[history]** The bond is reciprocal: a **lord** grants a **fief** (Latin *feudum*; the "fee") and **protection**; the **vassal** gives **service** (above all military) and **loyalty**.
-
 - **Homage & fealty** — the binding ceremony: **homage** (the vassal kneels, places his hands between the lord's, becomes "**his man**") followed by an **oath of fealty** sworn on relics or the Bible, to serve and defend.
 - **Liege lord / overlord / suzerain** — the superior to whom service is owed; a **liege** lord's claim **overrides** a vassal's other lords (mattering when a man held fiefs of several lords).
 
 ## Title vs. tenure — the load-bearing distinction
 
 **[history]** Two different ladders share the word "lord":
-
 - A **peerage title** (duke, earl, baron) is a **rank / dignity** in an order of precedence, conferred by the crown. In the UK it is **not *in commercio*** — it **cannot be bought or sold**.
 - A **lordship of the manor** (Fr. **seigneurie**) is a **feudal land-title**: property carrying historic **jurisdiction** (the *court baron*), **not** a peerage. It **can** be bought and sold (apart from the land), ranks its holder as **Esquire** / high gentry, and — tellingly — **"lord" by itself is not a title**: even a commoner could own a lordship and *be* its lord.
 
@@ -72,6 +70,4 @@ So **rank** (who outranks whom) and **tenure** (who holds what land, of whom, wi
 
 ---
 
-```
-The world is quiet here．Esto Perpetua!
-```
+###### "The world is quiet here."

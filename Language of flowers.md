@@ -210,8 +210,4 @@ and historical reference, on the record per [[VAULT-CONVENTIONS]].
 - [Floriography: The Language of Flowers — CSUN University Library Special Collections](https://library.csun.edu/sca/peek-stacks/floriography)
 - [Robert Tyas, *The Sentiment of Flowers; or, Language of Flora* — Internet Archive (scanned original)](https://archive.org/details/sentimentflower00tyas)
 
----
-
-```
-The world is quiet here．Esto Perpetua!
-```
+###### "The world is quiet here."

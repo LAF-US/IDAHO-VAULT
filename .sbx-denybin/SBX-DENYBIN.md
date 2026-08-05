@@ -6,6 +6,6 @@ related:
   - runtime
 ---
 
-**.sbx-denybin** â€” Imported software runtime persona.
+**.sbx-denybin** — Imported software runtime persona.
 
 sbx-denybin runtime and configuration.

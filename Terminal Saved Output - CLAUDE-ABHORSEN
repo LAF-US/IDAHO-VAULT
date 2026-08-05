@@ -1416,13 +1416,13 @@ PY  5.7s
   ┊ 🔎 grep      signal-cli-rest-api|docker run|register|verify|SIGNAL_HTTP_URL|SIGNAL_ACCOUNT  0.3s
   ┊ 🔎 grep      signal-cli-rest-api|SIGNAL_HTTP_URL|SIGNAL_ACCOUNT|signal setup|register  0.5s
   ┊ 📖 read      /Users/logan/.hermes/hermes-agent/hermes_cli/gateway.py  0.9s
-  ┊ 💻 $         signal-cli -a +12086279028 --output=json listAccounts || true  4.0s
-  ┊ 💻 $         signal-cli -a +12086279028 --output=json listIdentities || true  4.8s
+  ┊ 💻 $         signal-cli -a +1XXXXXXXXXX --output=json listAccounts || true  4.0s
+  ┊ 💻 $         signal-cli -a +1XXXXXXXXXX --output=json listIdentities || true  4.8s
   ┊ 🔎 find      *signal-cli*  19.8s
   ┊ 💻 $         signal-cli --help | sed -n '1,220p'  2.4s
   ┊ 💻 $         signal-cli --output=json listAccounts  5.5s
   ┊ 📖 read      /Users/logan/.hermes/hermes-agent/website/docs/user-guide/messaging/signal.md  0.9s
-  ┊ 💻 $         signal-cli --account +12086279028 daemon --http 127.0.0.1:8080  5.3s [error]
+  ┊ 💻 $         signal-cli --account +1XXXXXXXXXX daemon --http 127.0.0.1:8080  5.3s [error]
   ┊ 💻 $         signal-cli link -n HermesAgent  20.6s [error]
  ─  ⚕ Hermes  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── 
                                                                                                                                                                                              
@@ -1431,7 +1431,7 @@ PY  5.7s
      Current status                                                                                                                                                                          
      signal-cli is installed and working: version 0.13.24                                                                                                                                    
      Signal HTTP endpoint is currently down because the Signal account is not linked yet                                                                                                     
-     When I tried to start the daemon, it failed with: User +12086279028 is not registered                                                                                                   
+     When I tried to start the daemon, it failed with: User +1XXXXXXXXXX is not registered                                                                                                   
                                                                                                                                                                                              
      I triggered the link flow and got this device-link URI:                                                                                                                                 
      sgnl://linkdevice?uuid=Y4EqD1yYg6Nr82NrsxV1Ew%3D%3D&pub_key=BSCX8yq27jisj0jaC9Ag%2FKKIA%2B9OOo5aIO6S%2FPJP6Y0d                                                                          
@@ -1641,7 +1641,7 @@ ln -sfn "/Users/logan/.local/opt/signal-cli-${LATEST}/bin/signal-cli" "/Users/lo
   ⏱ Timeout — denying command
   ┊ 💻 $         mkdir -p /Users/logan/.hermes/signal-rest-data && chmod 777 /Users/logan/.hermes/signal-rest-data && ls -ld /Users/logan/.hermes/signal-rest-data  60.5s [error]
   ┊ 💻 $         docker rm -f hermes-signal-rest >/dev/null 2>&1 || true; docker run -d --name hermes-signal-rest -p 8080:8080 -v /Users/logan/.hermes/signal-rest-data:/home/.local/share/signal-cli -e MODE=json-rpc bbernhard/signal-cli-rest-api:latest  0.9s [error]
-  ┊ 💻 $         signal-cli -a +12086279028 register  7.7s [error]
+  ┊ 💻 $         signal-cli -a +1XXXXXXXXXX register  7.7s [error]
  ─  ⚕ Hermes  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── 
                                                                                                                                                                                              
      Good progress. I’ve moved us forward and found the real blocker cleanly.                                                                                                                
@@ -1667,9 +1667,9 @@ ln -sfn "/Users/logan/.local/opt/signal-cli-${LATEST}/bin/signal-cli" "/Users/lo
      Then I will do the rest myself immediately:                                                                                                                                             
      extract captcha token                                                                                                                                                                   
      run:                                                                                                                                                                                    
-     signal-cli -a +12086279028 register --captcha "<token>"                                                                                                                                 
+     signal-cli -a +1XXXXXXXXXX register --captcha "<token>"                                                                                                                                 
      then:                                                                                                                                                                                   
-     signal-cli -a +12086279028 verify <code>                                                                                                                                                
+     signal-cli -a +1XXXXXXXXXX verify <code>                                                                                                                                                
      start daemon on 127.0.0.1:8080                                                                                                                                                          
      restart Hermes gateway                                                                                                                                                                  
      probe Signal end-to-end                                                                                                                                                                 
@@ -1693,9 +1693,9 @@ giUZz10LuVyh4JbWQnijfvatI7Y5k2Hg4fliie0MlWzMzCOH-ldU5EKdirNoyaJzzbXSCnKU_xh2KGZt
 4gF640vpwdTw89KKlPL7mAe-4YS6QoYp2nsd-Alay7re-2ZM7OEeQiFXCMbeadNv7AhoN-lYDmuia3KoNDRkOTU3Y2Soc2hhcmRfaWTODTtkKQ.CC-tVeHNOyDzKzTz6PfD0OhZV83etVuUfBwIHYPTYgc
 
 ────────────────────────────────────────
-  ┊ 💻 $         signal-cli -a +12086279028 register --captcha 'signalcaptcha://signal-hcaptcha.5fad97ac-7d06-4e44-b18a-b950b20148ff.registration.P1_eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.haJwZACjZXhwzmoACVincGFzc2tlecUFTQ3XSOh4eqEJbyvVKi9wgzCMVcjLBo9vVlxSkUu86JAnl5ntEEj7EQqV-U4hsRrVDK34lHShiU0qln2F4g4ZtVAko6fLtrtLLlWsuVgOaxlpL19L85yyukVPZDnS42kxLkz4fw8IPXFVnJQI3NUeONaT0-Xs-S0DtWJNts-KAfqp5KpPtI4czGRvL4371GSAon_mw0EzfwmRRLunkmSYhA_HHbTTaB5lYgp4Wv8gMLBjFIA5oFWINjZvRxDOR1r7w1msPPRa7f4Lfg_7mN341h-TaJnjBc5QsSctdYK1ovk9TO6DaxmodYq5zJW6vQUqnuspSFhRAA5k1rnRp0-IsYyS19foeGNjYMJvAUGb1WXtzadvKzUwVz_QGphGeIp6R8UgiKoADPSJAiU9DOTRYKiQMj2v6e82Ke10lmwg3F3M4hJxZkQ6sk1bmBbp3WYAifjF7rSSGABZ9ncl1Gs3DCfBUGDzKtywhJD6VIHT0k2nppkynkf00ZVkw9MdgEXTL-_70PbQkRL1y0DMlS3zXS6dDAgNcu5UJefuj-FdtdpvMff9U6v-q062IZcCDFKaPbSqxY82H6GNSKPxo1y1DjWI66Xs7owdJbq_xDpzWxkaj8vmr7Apl7uoiWU_WZdP2qkOhJ4eCC_pPPgzLP8U6UDa20xdpWTB7B5Uv0qHseeLi1Nxi_2bBWwB9DucnE_zrZhsjHwAzUs-GpVd0x6OXMFUBvu_PRlY90YI9GcKtUxPu7IF_O23Qd6xr3NB9Ik95dyDqkJCxz0kaFoahlOuUVWMMeYwxvjL43o7MbEyIeVCPhx2BHXBsFWxEBRODLTNwO0zSTcUp1mLrCCWux3rE4tD97vLkAVRQ3pSCdQH_kf_Og5FVkD_hPrSt-x3bNWMI88O8HGlCcJSWngZ9Nu14gl-PrhcTyhwCwbbapEH_S2xuyUG-IMmgM8rIgxKDiFSlxwglLTkZklMecfJi7oc5cVIZbrTdkncykEMngN5dnIm_QNsfZNHxl_NOL4LSZE-XSL1l36NE81XQwTT1idjCU5Cjzil9Woe3BNxrRfRppvQaOBHh2TcucgJfqrRc9qQEDM-Pb89Ngk1KW1n5dnpL98nXab9sgog_C8DWI3CxIwRf9UQrmIBRb0yMuXhtyO8hvOidqAz4ACD_13GuEttdHRWIacgCAZotZo5NnXOg5-0h0qWKB81nTyQnLVTsmLbLZ3NELpIQkZY-qrL6HNvwWr1rChcIlsfvjWqpp1TS9-dqXQqsW-JO_EMvMqLeMs7vcMzSzrUhQ4taZsRVnQ5d53Ql9A4-06qgjrVT_DAg5lSb3Tljr7QV6RamoG-FzFFxsO2iZ5Ir0oPshUm8bOLmbY6PX2ELQMeYeiHyEM2G8bDoeWIEhbjF4J3NVP0L9mgT8jQ3sBVgtMu5FVEKb2t4e2pwS-Zjfr-vkeIvRxS5JIoc7Bnb82-taYPvEk25dOreSDAbb3T8zmIcK6a8coriEKZbKin11FjVfuqdqjdwizndB53sa3RN-jfw4W9yOkBtLA_PYU1yFsgiUZz10LuVyh4JbWQnijfvatI7Y5k2Hg4fliie0MlWzMzCOH-ldU5EKdirNoyaJzzbXSCnKU_xh2KGZt00zWlYdy-hcMwEHXV56pRBJRRj3swkWy4S3A8igSieevumC7vB0uSxU_GLBGEoMOxjEZ-93pXKGQP0_6_djyTA9WFpZAFRScNoYUE4vdlf9jZ4gF640vpwdTw89KKlPL7mAe-4YS6QoYp2nsd-Alay7re-2ZM7OEeQiFXCMbeadNv7AhoN-lYDmuia3KoNDRkOTU3Y2Soc2hhcmRfaWTODTtkKQ.CC-tVeHNOyDzKzTz6PfD0OhZV83etVuUfBwIHYPTYgc'  10.1s
+  ┊ 💻 $         signal-cli -a +1XXXXXXXXXX register --captcha 'signalcaptcha://signal-hcaptcha.5fad97ac-7d06-4e44-b18a-b950b20148ff.registration.P1_eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.haJwZACjZXhwzmoACVincGFzc2tlecUFTQ3XSOh4eqEJbyvVKi9wgzCMVcjLBo9vVlxSkUu86JAnl5ntEEj7EQqV-U4hsRrVDK34lHShiU0qln2F4g4ZtVAko6fLtrtLLlWsuVgOaxlpL19L85yyukVPZDnS42kxLkz4fw8IPXFVnJQI3NUeONaT0-Xs-S0DtWJNts-KAfqp5KpPtI4czGRvL4371GSAon_mw0EzfwmRRLunkmSYhA_HHbTTaB5lYgp4Wv8gMLBjFIA5oFWINjZvRxDOR1r7w1msPPRa7f4Lfg_7mN341h-TaJnjBc5QsSctdYK1ovk9TO6DaxmodYq5zJW6vQUqnuspSFhRAA5k1rnRp0-IsYyS19foeGNjYMJvAUGb1WXtzadvKzUwVz_QGphGeIp6R8UgiKoADPSJAiU9DOTRYKiQMj2v6e82Ke10lmwg3F3M4hJxZkQ6sk1bmBbp3WYAifjF7rSSGABZ9ncl1Gs3DCfBUGDzKtywhJD6VIHT0k2nppkynkf00ZVkw9MdgEXTL-_70PbQkRL1y0DMlS3zXS6dDAgNcu5UJefuj-FdtdpvMff9U6v-q062IZcCDFKaPbSqxY82H6GNSKPxo1y1DjWI66Xs7owdJbq_xDpzWxkaj8vmr7Apl7uoiWU_WZdP2qkOhJ4eCC_pPPgzLP8U6UDa20xdpWTB7B5Uv0qHseeLi1Nxi_2bBWwB9DucnE_zrZhsjHwAzUs-GpVd0x6OXMFUBvu_PRlY90YI9GcKtUxPu7IF_O23Qd6xr3NB9Ik95dyDqkJCxz0kaFoahlOuUVWMMeYwxvjL43o7MbEyIeVCPhx2BHXBsFWxEBRODLTNwO0zSTcUp1mLrCCWux3rE4tD97vLkAVRQ3pSCdQH_kf_Og5FVkD_hPrSt-x3bNWMI88O8HGlCcJSWngZ9Nu14gl-PrhcTyhwCwbbapEH_S2xuyUG-IMmgM8rIgxKDiFSlxwglLTkZklMecfJi7oc5cVIZbrTdkncykEMngN5dnIm_QNsfZNHxl_NOL4LSZE-XSL1l36NE81XQwTT1idjCU5Cjzil9Woe3BNxrRfRppvQaOBHh2TcucgJfqrRc9qQEDM-Pb89Ngk1KW1n5dnpL98nXab9sgog_C8DWI3CxIwRf9UQrmIBRb0yMuXhtyO8hvOidqAz4ACD_13GuEttdHRWIacgCAZotZo5NnXOg5-0h0qWKB81nTyQnLVTsmLbLZ3NELpIQkZY-qrL6HNvwWr1rChcIlsfvjWqpp1TS9-dqXQqsW-JO_EMvMqLeMs7vcMzSzrUhQ4taZsRVnQ5d53Ql9A4-06qgjrVT_DAg5lSb3Tljr7QV6RamoG-FzFFxsO2iZ5Ir0oPshUm8bOLmbY6PX2ELQMeYeiHyEM2G8bDoeWIEhbjF4J3NVP0L9mgT8jQ3sBVgtMu5FVEKb2t4e2pwS-Zjfr-vkeIvRxS5JIoc7Bnb82-taYPvEk25dOreSDAbb3T8zmIcK6a8coriEKZbKin11FjVfuqdqjdwizndB53sa3RN-jfw4W9yOkBtLA_PYU1yFsgiUZz10LuVyh4JbWQnijfvatI7Y5k2Hg4fliie0MlWzMzCOH-ldU5EKdirNoyaJzzbXSCnKU_xh2KGZt00zWlYdy-hcMwEHXV56pRBJRRj3swkWy4S3A8igSieevumC7vB0uSxU_GLBGEoMOxjEZ-93pXKGQP0_6_djyTA9WFpZAFRScNoYUE4vdlf9jZ4gF640vpwdTw89KKlPL7mAe-4YS6QoYp2nsd-Alay7re-2ZM7OEeQiFXCMbeadNv7AhoN-lYDmuia3KoNDRkOTU3Y2Soc2hhcmRfaWTODTtkKQ.CC-tVeHNOyDzKzTz6PfD0OhZV83etVuUfBwIHYPTYgc'  10.1s
   ┊ 💻 $         signal-cli --output=json listAccounts  4.6s
-  ┊ 💻 $         signal-cli -v -a +12086279028 register --captcha 'signalcaptcha://signal-hcaptcha.5fad97ac-7d06-4e44-b18a-b950b20148ff.registration.P1_eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.haJwZACjZXhwzmoACVincGFzc2tlecUFTQ3XSOh4eqEJbyvVKi9wgzCMVcjLBo9vVlxSkUu86JAnl5ntEEj7EQqV-U4hsRrVDK34lHShiU0qln2F4g4ZtVAko6fLtrtLLlWsuVgOaxlpL19L85yyukVPZDnS42kxLkz4fw8IPXFVnJQI3NUeONaT0-Xs-S0DtWJNts-KAfqp5KpPtI4czGRvL4371GSAon_mw0EzfwmRRLunkmSYhA_HHbTTaB5lYgp4Wv8gMLBjFIA5oFWINjZvRxDOR1r7w1msPPRa7f4Lfg_7mN341h-TaJnjBc5QsSctdYK1ovk9TO6DaxmodYq5zJW6vQUqnuspSFhRAA5k1rnRp0-IsYyS19foeGNjYMJvAUGb1WXtzadvKzUwVz_QGphGeIp6R8UgiKoADPSJAiU9DOTRYKiQMj2v6e82Ke10lmwg3F3M4hJxZkQ6sk1bmBbp3WYAifjF7rSSGABZ9ncl1Gs3DCfBUGDzKtywhJD6VIHT0k2nppkynkf00ZVkw9MdgEXTL-_70PbQkRL1y0DMlS3zXS6dDAgNcu5UJefuj-FdtdpvMff9U6v-q062IZcCDFKaPbSqxY82H6GNSKPxo1y1DjWI66Xs7owdJbq_xDpzWxkaj8vmr7Apl7uoiWU_WZdP2qkOhJ4eCC_pPPgzLP8U6UDa20xdpWTB7B5Uv0qHseeLi1Nxi_2bBWwB9DucnE_zrZhsjHwAzUs-GpVd0x6OXMFUBvu_PRlY90YI9GcKtUxPu7IF_O23Qd6xr3NB9Ik95dyDqkJCxz0kaFoahlOuUVWMMeYwxvjL43o7MbEyIeVCPhx2BHXBsFWxEBRODLTNwO0zSTcUp1mLrCCWux3rE4tD97vLkAVRQ3pSCdQH_kf_Og5FVkD_hPrSt-x3bNWMI88O8HGlCcJSWngZ9Nu14gl-PrhcTyhwCwbbapEH_S2xuyUG-IMmgM8rIgxKDiFSlxwglLTkZklMecfJi7oc5cVIZbrTdkncykEMngN5dnIm_QNsfZNHxl_NOL4LSZE-XSL1l36NE81XQwTT1idjCU5Cjzil9Woe3BNxrRfRppvQaOBHh2TcucgJfqrRc9qQEDM-Pb89Ngk1KW1n5dnpL98nXab9sgog_C8DWI3CxIwRf9UQrmIBRb0yMuXhtyO8hvOidqAz4ACD_13GuEttdHRWIacgCAZotZo5NnXOg5-0h0qWKB81nTyQnLVTsmLbLZ3NELpIQkZY-qrL6HNvwWr1rChcIlsfvjWqpp1TS9-dqXQqsW-JO_EMvMqLeMs7vcMzSzrUhQ4taZsRVnQ5d53Ql9A4-06qgjrVT_DAg5lSb3Tljr7QV6RamoG-FzFFxsO2iZ5Ir0oPshUm8bOLmbY6PX2ELQMeYeiHyEM2G8bDoeWIEhbjF4J3NVP0L9mgT8jQ3sBVgtMu5FVEKb2t4e2pwS-Zjfr-vkeIvRxS5JIoc7Bnb82-taYPvEk25dOreSDAbb3T8zmIcK6a8coriEKZbKin11FjVfuqdqjdwizndB53sa3RN-jfw4W9yOkBtLA_PYU1yFsgiUZz10LuVyh4JbWQnijfvatI7Y5k2Hg4fliie0MlWzMzCOH-ldU5EKdirNoyaJzzbXSCnKU_xh2KGZt00zWlYdy-hcMwEHXV56pRBJRRj3swkWy4S3A8igSieevumC7vB0uSxU_GLBGEoMOxjEZ-93pXKGQP0_6_djyTA9WFpZAFRScNoYUE4vdlf9jZ4gF640vpwdTw89KKlPL7mAe-4YS6QoYp2nsd-Alay7re-2ZM7OEeQiFXCMbeadNv7AhoN-lYDmuia3KoNDRkOTU3Y2Soc2hhcmRfaWTODTtkKQ.CC-tVeHNOyDzKzTz6PfD0OhZV83etVuUfBwIHYPTYgc'  7.1s [error]
+  ┊ 💻 $         signal-cli -v -a +1XXXXXXXXXX register --captcha 'signalcaptcha://signal-hcaptcha.5fad97ac-7d06-4e44-b18a-b950b20148ff.registration.P1_eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.haJwZACjZXhwzmoACVincGFzc2tlecUFTQ3XSOh4eqEJbyvVKi9wgzCMVcjLBo9vVlxSkUu86JAnl5ntEEj7EQqV-U4hsRrVDK34lHShiU0qln2F4g4ZtVAko6fLtrtLLlWsuVgOaxlpL19L85yyukVPZDnS42kxLkz4fw8IPXFVnJQI3NUeONaT0-Xs-S0DtWJNts-KAfqp5KpPtI4czGRvL4371GSAon_mw0EzfwmRRLunkmSYhA_HHbTTaB5lYgp4Wv8gMLBjFIA5oFWINjZvRxDOR1r7w1msPPRa7f4Lfg_7mN341h-TaJnjBc5QsSctdYK1ovk9TO6DaxmodYq5zJW6vQUqnuspSFhRAA5k1rnRp0-IsYyS19foeGNjYMJvAUGb1WXtzadvKzUwVz_QGphGeIp6R8UgiKoADPSJAiU9DOTRYKiQMj2v6e82Ke10lmwg3F3M4hJxZkQ6sk1bmBbp3WYAifjF7rSSGABZ9ncl1Gs3DCfBUGDzKtywhJD6VIHT0k2nppkynkf00ZVkw9MdgEXTL-_70PbQkRL1y0DMlS3zXS6dDAgNcu5UJefuj-FdtdpvMff9U6v-q062IZcCDFKaPbSqxY82H6GNSKPxo1y1DjWI66Xs7owdJbq_xDpzWxkaj8vmr7Apl7uoiWU_WZdP2qkOhJ4eCC_pPPgzLP8U6UDa20xdpWTB7B5Uv0qHseeLi1Nxi_2bBWwB9DucnE_zrZhsjHwAzUs-GpVd0x6OXMFUBvu_PRlY90YI9GcKtUxPu7IF_O23Qd6xr3NB9Ik95dyDqkJCxz0kaFoahlOuUVWMMeYwxvjL43o7MbEyIeVCPhx2BHXBsFWxEBRODLTNwO0zSTcUp1mLrCCWux3rE4tD97vLkAVRQ3pSCdQH_kf_Og5FVkD_hPrSt-x3bNWMI88O8HGlCcJSWngZ9Nu14gl-PrhcTyhwCwbbapEH_S2xuyUG-IMmgM8rIgxKDiFSlxwglLTkZklMecfJi7oc5cVIZbrTdkncykEMngN5dnIm_QNsfZNHxl_NOL4LSZE-XSL1l36NE81XQwTT1idjCU5Cjzil9Woe3BNxrRfRppvQaOBHh2TcucgJfqrRc9qQEDM-Pb89Ngk1KW1n5dnpL98nXab9sgog_C8DWI3CxIwRf9UQrmIBRb0yMuXhtyO8hvOidqAz4ACD_13GuEttdHRWIacgCAZotZo5NnXOg5-0h0qWKB81nTyQnLVTsmLbLZ3NELpIQkZY-qrL6HNvwWr1rChcIlsfvjWqpp1TS9-dqXQqsW-JO_EMvMqLeMs7vcMzSzrUhQ4taZsRVnQ5d53Ql9A4-06qgjrVT_DAg5lSb3Tljr7QV6RamoG-FzFFxsO2iZ5Ir0oPshUm8bOLmbY6PX2ELQMeYeiHyEM2G8bDoeWIEhbjF4J3NVP0L9mgT8jQ3sBVgtMu5FVEKb2t4e2pwS-Zjfr-vkeIvRxS5JIoc7Bnb82-taYPvEk25dOreSDAbb3T8zmIcK6a8coriEKZbKin11FjVfuqdqjdwizndB53sa3RN-jfw4W9yOkBtLA_PYU1yFsgiUZz10LuVyh4JbWQnijfvatI7Y5k2Hg4fliie0MlWzMzCOH-ldU5EKdirNoyaJzzbXSCnKU_xh2KGZt00zWlYdy-hcMwEHXV56pRBJRRj3swkWy4S3A8igSieevumC7vB0uSxU_GLBGEoMOxjEZ-93pXKGQP0_6_djyTA9WFpZAFRScNoYUE4vdlf9jZ4gF640vpwdTw89KKlPL7mAe-4YS6QoYp2nsd-Alay7re-2ZM7OEeQiFXCMbeadNv7AhoN-lYDmuia3KoNDRkOTU3Y2Soc2hhcmRfaWTODTtkKQ.CC-tVeHNOyDzKzTz6PfD0OhZV83etVuUfBwIHYPTYgc'  7.1s [error]
   ┊ 💻 $         signal-cli submitRateLimitChallenge -h  2.1s
  ─  ⚕ Hermes  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── 
                                                                                                                                                                                              
@@ -1724,8 +1724,8 @@ giUZz10LuVyh4JbWQnijfvatI7Y5k2Hg4fliie0MlWzMzCOH-ldU5EKdirNoyaJzzbXSCnKU_xh2KGZt
 ● After you ran the command I got a 2FA code via SMS --- same failure point as the last agent who tried to set this up.
 
 ────────────────────────────────────────
-  ┊ 💻 $         signal-cli --output=json listAccounts; signal-cli -a +12086279028 --output=json listIdentities || true  9.1s
-  ┊ 💻 $         signal-cli -v -a +12086279028 register  7.2s
+  ┊ 💻 $         signal-cli --output=json listAccounts; signal-cli -a +1XXXXXXXXXX --output=json listIdentities || true  9.1s
+  ┊ 💻 $         signal-cli -v -a +1XXXXXXXXXX register  7.2s
  ─  ⚕ Hermes  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── 
                                                                                                                                                                                              
      Excellent catch. This is actually progress, not failure.                                                                                                                                
@@ -1737,7 +1737,7 @@ giUZz10LuVyh4JbWQnijfvatI7Y5k2Hg4fliie0MlWzMzCOH-ldU5EKdirNoyaJzzbXSCnKU_xh2KGZt
      Please paste the SMS code you just received and I’ll run verification immediately.                                                                                                      
                                                                                                                                                                                              
      Command I will run as soon as you send it:                                                                                                                                              
-     signal-cli -a +12086279028 verify <code>                                                                                                                                                
+     signal-cli -a +1XXXXXXXXXX verify <code>                                                                                                                                                
                                                                                                                                                                                              
      Then I’ll start daemon + gateway and test Signal end-to-end.                                                                                                                            
                                                                                                                                                                                              
@@ -1747,7 +1747,7 @@ giUZz10LuVyh4JbWQnijfvatI7Y5k2Hg4fliie0MlWzMzCOH-ldU5EKdirNoyaJzzbXSCnKU_xh2KGZt
 ● 962654
 
 ────────────────────────────────────────
-  ┊ 💻 $         signal-cli -v -a +12086279028 verify 962654  7.8s [error]
+  ┊ 💻 $         signal-cli -v -a +1XXXXXXXXXX verify 962654  7.8s [error]
   ┊ 💻 $         mkdir -p /tmp/signal-rest-data && chmod 777 /tmp/signal-rest-data && ls -ld /tmp/signal-rest-data  9.7s
   ┊ 💻 $         docker rm -f hermes-signal-rest >/dev/null 2>&1 || true; docker run -d --name hermes-signal-rest -p 8080:8080 -v /tmp/signal-rest-data:/home/.local/share/signal-cli -e MODE=json-rpc bbernhard/signal-cli-rest-api:latest  1.3s
   ┊ 💻 $         sleep 2; docker ps --format '{{.Names}} {{.Status}} {{.Ports}}'; docker logs --tail 60 hermes-signal-rest  2.6s
@@ -1832,7 +1832,7 @@ PY  0.3s
 ────────────────────────────────────────
 ● This is a laptop. I cannot open the signal app here.
 ────────────────────────────────────────
-  ┊ 💻 $         curl -sS -X POST 'http://127.0.0.1:8080/v1/register/%2B12086279028' -H 'Content-Type: application/json' -d '{"captcha":"signalcaptcha://signal-hcaptcha.5fad97ac-7d06-4e44-b18a-b950b20148ff.registration.P1_eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.haJwZACjZXhwzmoACVincGFzc2tlecUFTQ3XSOh4eqEJbyvVKi9wgzCMVcjLBo9vVlxSkUu86JAnl5ntEEj7EQqV-U4hsRrVDK34lHShiU0qln2F4g4ZtVAko6fLtrtLLlWsuVgOaxlpL19L85yyukVPZDnS42kxLkz4fw8IPXFVnJQI3NUeONaT0-Xs-S0DtWJNts-KAfqp5KpPtI4czGRvL4371GSAon_mw0EzfwmRRLunkmSYhA_HHbTTaB5lYgp4Wv8gMLBjFIA5oFWINjZvRxDOR1r7w1msPPRa7f4Lfg_7mN341h-TaJnjBc5QsSctdYK1ovk9TO6DaxmodYq5zJW6vQUqnuspSFhRAA5k1rnRp0-IsYyS19foeGNjYMJvAUGb1WXtzadvKzUwVz_QGphGeIp6R8UgiKoADPSJAiU9DOTRYKiQMj2v6e82Ke10lmwg3F3M4hJxZkQ6sk1bmBbp3WYAifjF7rSSGABZ9ncl1Gs3DCfBUGDzKtywhJD6VIHT0k2nppkynkf00ZVkw9MdgEXTL-_70PbQkRL1y0DMlS3zXS6dDAgNcu5UJefuj-FdtdpvMff9U6v-q062IZcCDFKaPbSqxY82H6GNSKPxo1y1DjWI66Xs7owdJbq_xDpzWxkaj8vmr7Apl7uoiWU_WZdP2qkOhJ4eCC_pPPgzLP8U6UDa20xdpWTB7B5Uv0qHseeLi1Nxi_2bBWwB9DucnE_zrZhsjHwAzUs-GpVd0x6OXMFUBvu_PRlY90YI9GcKtUxPu7IF_O23Qd6xr3NB9Ik95dyDqkJCxz0kaFoahlOuUVWMMeYwxvjL43o7MbEyIeVCPhx2BHXBsFWxEBRODLTNwO0zSTcUp1mLrCCWux3rE4tD97vLkAVRQ3pSCdQH_kf_Og5FVkD_hPrSt-x3bNWMI88O8HGlCcJSWngZ9Nu14gl-PrhcTyhwCwbbapEH_S2xuyUG-IMmgM8rIgxKDiFSlxwglLTkZklMecfJi7oc5cVIZbrTdkncykEMngN5dnIm_QNsfZNHxl_NOL4LSZE-XSL1l36NE81XQwTT1idjCU5Cjzil9Woe3BNxrRfRppvQaOBHh2TcucgJfqrRc9qQEDM-Pb89Ngk1KW1n5dnpL98nXab9sgog_C8DWI3CxIwRf9UQrmIBRb0yMuXhtyO8hvOidqAz4ACD_13GuEttdHRWIacgCAZotZo5NnXOg5-0h0qWKB81nTyQnLVTsmLbLZ3NELpIQkZY-qrL6HNvwWr1rChcIlsfvjWqpp1TS9-dqXQqsW-JO_EMvMqLeMs7vcMzSzrUhQ4taZsRVnQ5d53Ql9A4-06qgjrVT_DAg5lSb3Tljr7QV6RamoG-FzFFxsO2iZ5Ir0oPshUm8bOLmbY6PX2ELQMeYeiHyEM2G8bDoeWIEhbjF4J3NVP0L9mgT8jQ3sBVgtMu5FVEKb2t4e2pwS-Zjfr-vkeIvRxS5JIoc7Bnb82-taYPvEk25dOreSDAbb3T8zmIcK6a8coriEKZbKin11FjVfuqdqjdwizndB53sa3RN-jfw4W9yOkBtLA_PYU1yFsgiUZz10LuVyh4JbWQnijfvatI7Y5k2Hg4fliie0MlWzMzCOH-ldU5EKdirNoyaJzzbXSCnKU_xh2KGZt00zWlYdy-hcMwEHXV56pRBJRRj3swkWy4S3A8igSieevumC7vB0uSxU_GLBGEoMOxjEZ-93pXKGQP0_6_djyTA9WFpZAFRScNoYUE4vdlf9jZ4gF640vpwdTw89KKlPL7mAe-4YS6QoYp2nsd-Alay7re-2ZM7OEeQiFXCMbeadNv7AhoN-lYDmuia3KoNDRkOTU3Y2Soc2hhcmRfaWTODTtkKQ.CC-tVeHNOyDzKzTz6PfD0OhZV83etVuUfBwIHYPTYgc"}' -i  4.3s
+  ┊ 💻 $         curl -sS -X POST 'http://127.0.0.1:8080/v1/register/%2B1XXXXXXXXXX' -H 'Content-Type: application/json' -d '{"captcha":"signalcaptcha://signal-hcaptcha.5fad97ac-7d06-4e44-b18a-b950b20148ff.registration.P1_eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.haJwZACjZXhwzmoACVincGFzc2tlecUFTQ3XSOh4eqEJbyvVKi9wgzCMVcjLBo9vVlxSkUu86JAnl5ntEEj7EQqV-U4hsRrVDK34lHShiU0qln2F4g4ZtVAko6fLtrtLLlWsuVgOaxlpL19L85yyukVPZDnS42kxLkz4fw8IPXFVnJQI3NUeONaT0-Xs-S0DtWJNts-KAfqp5KpPtI4czGRvL4371GSAon_mw0EzfwmRRLunkmSYhA_HHbTTaB5lYgp4Wv8gMLBjFIA5oFWINjZvRxDOR1r7w1msPPRa7f4Lfg_7mN341h-TaJnjBc5QsSctdYK1ovk9TO6DaxmodYq5zJW6vQUqnuspSFhRAA5k1rnRp0-IsYyS19foeGNjYMJvAUGb1WXtzadvKzUwVz_QGphGeIp6R8UgiKoADPSJAiU9DOTRYKiQMj2v6e82Ke10lmwg3F3M4hJxZkQ6sk1bmBbp3WYAifjF7rSSGABZ9ncl1Gs3DCfBUGDzKtywhJD6VIHT0k2nppkynkf00ZVkw9MdgEXTL-_70PbQkRL1y0DMlS3zXS6dDAgNcu5UJefuj-FdtdpvMff9U6v-q062IZcCDFKaPbSqxY82H6GNSKPxo1y1DjWI66Xs7owdJbq_xDpzWxkaj8vmr7Apl7uoiWU_WZdP2qkOhJ4eCC_pPPgzLP8U6UDa20xdpWTB7B5Uv0qHseeLi1Nxi_2bBWwB9DucnE_zrZhsjHwAzUs-GpVd0x6OXMFUBvu_PRlY90YI9GcKtUxPu7IF_O23Qd6xr3NB9Ik95dyDqkJCxz0kaFoahlOuUVWMMeYwxvjL43o7MbEyIeVCPhx2BHXBsFWxEBRODLTNwO0zSTcUp1mLrCCWux3rE4tD97vLkAVRQ3pSCdQH_kf_Og5FVkD_hPrSt-x3bNWMI88O8HGlCcJSWngZ9Nu14gl-PrhcTyhwCwbbapEH_S2xuyUG-IMmgM8rIgxKDiFSlxwglLTkZklMecfJi7oc5cVIZbrTdkncykEMngN5dnIm_QNsfZNHxl_NOL4LSZE-XSL1l36NE81XQwTT1idjCU5Cjzil9Woe3BNxrRfRppvQaOBHh2TcucgJfqrRc9qQEDM-Pb89Ngk1KW1n5dnpL98nXab9sgog_C8DWI3CxIwRf9UQrmIBRb0yMuXhtyO8hvOidqAz4ACD_13GuEttdHRWIacgCAZotZo5NnXOg5-0h0qWKB81nTyQnLVTsmLbLZ3NELpIQkZY-qrL6HNvwWr1rChcIlsfvjWqpp1TS9-dqXQqsW-JO_EMvMqLeMs7vcMzSzrUhQ4taZsRVnQ5d53Ql9A4-06qgjrVT_DAg5lSb3Tljr7QV6RamoG-FzFFxsO2iZ5Ir0oPshUm8bOLmbY6PX2ELQMeYeiHyEM2G8bDoeWIEhbjF4J3NVP0L9mgT8jQ3sBVgtMu5FVEKb2t4e2pwS-Zjfr-vkeIvRxS5JIoc7Bnb82-taYPvEk25dOreSDAbb3T8zmIcK6a8coriEKZbKin11FjVfuqdqjdwizndB53sa3RN-jfw4W9yOkBtLA_PYU1yFsgiUZz10LuVyh4JbWQnijfvatI7Y5k2Hg4fliie0MlWzMzCOH-ldU5EKdirNoyaJzzbXSCnKU_xh2KGZt00zWlYdy-hcMwEHXV56pRBJRRj3swkWy4S3A8igSieevumC7vB0uSxU_GLBGEoMOxjEZ-93pXKGQP0_6_djyTA9WFpZAFRScNoYUE4vdlf9jZ4gF640vpwdTw89KKlPL7mAe-4YS6QoYp2nsd-Alay7re-2ZM7OEeQiFXCMbeadNv7AhoN-lYDmuia3KoNDRkOTU3Y2Soc2hhcmRfaWTODTtkKQ.CC-tVeHNOyDzKzTz6PfD0OhZV83etVuUfBwIHYPTYgc"}' -i  4.3s
   💾 Self-improvement review: Memory updated
   ┊ 💻 $         docker logs --tail 120 hermes-signal-rest  0.3s
  ─  ⚕ Hermes  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── 
@@ -2202,7 +2202,7 @@ acN3hZbGY0tM0rYNV675C1hoYl-kbvUyBzjIsxTHI0LP79o8tmWIakmlRGdIl3LLmJyq8-FONNiPx_hw
 KrIxQIF1bHSerfvHbNvoqSFyVkfeR6VhdhIVpuaLLti9jgvM5x2k2I_LEkUJ9nK7OLBNGiLsomtyqDMwZWQ1ZTViqHNoYXJkX2lkzg07ZCk.i5BID7_YR5uTYas_DWS1HOuAi_WFKFuDCg1Bug35ypQ
 
 ────────────────────────────────────────
-  ┊ 💻 $         curl -sS -X POST 'http://127.0.0.1:8080/v1/register/%2B12086279028' -H 'Content-Type: application/json' -d @- <<'JSON'
+  ┊ 💻 $         curl -sS -X POST 'http://127.0.0.1:8080/v1/register/%2B1XXXXXXXXXX' -H 'Content-Type: application/json' -d @- <<'JSON'
 {"captcha":"signalcaptcha://signal-hcaptcha.5fad97ac-7d06-4e44-b18a-b950b20148ff.registration.P1_eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.haJwZACjZXhwzmoAJHKncGFzc2tlecUFS7_77DUZenRAYkk4nb_A-gAO5iasIXhlyIWNCt52XhdU2XHoQeAMXDw2P70uMYgS4JpjYeGHl3d4Ol_JrS0LjeU1WOZJ8lnEbEfKj24IWSdj8n7ST-jeEg_UP4_it4OTWOcjNBkTe_L_NMoYxrrjiITKMNdP_2NRYYxTqj9ba7wnLYKEKcTZqXfcing8UNXcxioZLUbK0ELLkTJCZzXbhzrFLUfhEyENzRdLLgM-tAbCj7vDX1wDxFo7pBSjjobQypPW6RdLwxUIYLXch_GpcT6Ft7nTwPrm5SpqMHmq8P_I-hA4xBByoGTuuNcHls8KN6zfHH_d6apGjzVvUJLfUvrk_BT3avEs2Jh5kmhWbnC6Y1VqyfOKgUXqU-EFniBeMybJ7ohtpScZoVzzpjlIprNMeARET4-KUnzaQPV0d56aVAME7Ii_5D2Vg9cO9Q8GnNGTLtk8iQy4i58vGLaXeAw4Aj-8zEFgerxfUClKK2Xw-GZW6xC-Wc9Tyz1rNQK3FhNsvLlrspcA6gJEbQg8Bpl6DM3qXs5p7nUmMNn6xCzYOLzS-qJ5E7Ltf_ydMn6eFdSrcF-NskMeRPkkhTe63ul9tZdwDauSWzCc2ZTVx9UIiXXVVDgXWIupMypnr7Jq3Y0uV3BgfHEQnKih2JhbAIr6JWkAgXJojicDs-VXCbdgpZK7IuV0saF_X6JS1ootwlJCK5ISiqXQfc61Yj64EtrifctDAJEScR-wbJ_iduxppeixSG1wXRSBa1885hgVDnb6NsITQG3egQDCVh1hRovf2YJit8ws_fgmLsGaNdwXL2q5A6FmBVPvyWyQU2wDyA8EyydKHzlJbSqDj_5Jb130_NLiaVXeDqfayTn3SBVw6slXZ2OdVNgZXHVxIH_krPMstAHSvPBUOcH9erIA8c9kybmbTvWTZV32c5xMyXL6pxnLh3sT5x4WPvXTiPXbH57ZzcmE4aamuz6ukn2iKQ8xp6oDuKTa61Oz87QQjy7e1VcFUwVy9480ATvHO7_GVtqjJ_2I9nET9tsiEJhdyzJbwECgSvNZzIhvIKS6HGQrRyoMabuIv4zZcDkPoGw-dwEBCr3aCqOiQJXzVaK2-bx-bRwnVpU9Ew1EJrT5syS6sU8ZU4kliGvhCeMgwk7Xk2Grwdbv3WMg3uzCicq6jZtYHy1ozOPa-WeQvClBWbFTdkoox4tUGJpEra_DEY8cavoAzdGdAugig_ZB90gppv82SsdkBQedM23u8kiaup1BgUiCamBUAfJmXHVgXrC4QwOkVSQOz2yrSQsybF038stQstRuh2O4cH95RRAjn20Qg8HMH8ygoFGz9JFuDh-baPIg4UAxfYSFu3_yKH7YDnTx1gFU6Qb0T4GS5MI4b58Z2OdgEfQ1ZmKth2h6DvX7EF72f2el-U8OR4LHqrNIIM6Chya2z8OOcmMs4Mx9c9VtF3kagHQHSBXHjtYDNz2eDgkLtFUVIjoIboyeistbFtaZxdquVA_cKXoVYwEqfaOfwx_T1BnO-wYnwbaNp-4o5kzhCNBlST8acN3hZbGY0tM0rYNV675C1hoYl-kbvUyBzjIsxTHI0LP79o8tmWIakmlRGdIl3LLmJyq8-FONNiPx_hwvCOoVY4fR8vv9qvoTmXm9yD4udj3uZ_nl5FtEHC9V9xgaH6rdL7eADKcdmlVoW5G3feYABuZt3FqMpKLPZr95mOtuo19bMg_5_gwVSBTxRqJaKrIxQIF1bHSerfvHbNvoqSFyVkfeR6VhdhIVpuaLLti9jgvM5x2k2I_LEkUJ9nK7OLBNGiLsomtyqDMwZWQ1ZTViqHNoYXJkX2lkzg07ZCk.i5BID7_YR5uTYas_DWS1HOuAi_WFKFuDCg1Bug35ypQ"}
 JSON  1.9s
   ┊ 💻 $         docker logs --tail 80 hermes-signal-rest  0.3s
@@ -2212,7 +2212,7 @@ JSON  1.9s
      Register succeeded this time.                                                                                                                                                           
                                                                                                                                                                                              
      I have a confirmed 201 Created from:                                                                                                                                                    
-     POST /v1/register/+12086279028                                                                                                                                                          
+     POST /v1/register/+1XXXXXXXXXX                                                                                                                                                          
                                                                                                                                                                                              
      Next step:                                                                                                                                                                              
      Wait for the SMS code, paste it here, and I’ll run verify immediately via the same REST stack.                                                                                          
@@ -2223,16 +2223,16 @@ JSON  1.9s
 ● 281343
 
 ────────────────────────────────────────
-  ┊ 💻 $         curl -sS -X POST 'http://127.0.0.1:8080/v1/register/%2B12086279028/verify/281343' -H 'Content-Type: application/json' -d '{}' -i  8.7s
+  ┊ 💻 $         curl -sS -X POST 'http://127.0.0.1:8080/v1/register/%2B1XXXXXXXXXX/verify/281343' -H 'Content-Type: application/json' -d '{}' -i  8.7s
   ┊ 💻 $         python3 - <<'PY'
 import json
 j=json.load(open('/tmp/signal_swagger.json'))
 print(json.dumps(j['definitions']['api.VerifyNumberSettings'], indent=2))
 PY  0.5s
-  ┊ 💻 $         curl -sS -X POST 'http://127.0.0.1:8080/v1/register/%2B12086279028/verify/281343' -H 'Content-Type: application/json' -d '{"pin":null}' -i  0.5s
+  ┊ 💻 $         curl -sS -X POST 'http://127.0.0.1:8080/v1/register/%2B1XXXXXXXXXX/verify/281343' -H 'Content-Type: application/json' -d '{"pin":null}' -i  0.5s
   ┊ 💻 $         curl -sS http://127.0.0.1:8080/v1/accounts  0.4s
   ┊ 💻 $         docker exec hermes-signal-rest sh -lc 'ls -la /home/.local/share/signal-cli/data; cat /home/.local/share/signal-cli/data/accounts.json 2>/dev/null || true'  3.9s
-  ┊ 💻 $         curl -sS http://127.0.0.1:8080/v1/accounts/+12086279028  0.4s
+  ┊ 💻 $         curl -sS http://127.0.0.1:8080/v1/accounts/+1XXXXXXXXXX  0.4s
   ┊ 💻 $         ls -lna /tmp/signal-rest-data /tmp/signal-rest-data/data /tmp/signal-rest-data/data/accounts.json  0.3s [error]
   ┊ 💻 $         set -e
 mkdir -p /Users/logan/.local/share/signal-cli
@@ -2240,7 +2240,7 @@ if [ -d /Users/logan/.local/share/signal-cli/data ]; then mv /Users/logan/.local
 docker cp hermes-signal-rest:/home/.local/share/signal-cli/data /Users/logan/.local/share/signal-cli/
 ls -la /Users/logan/.local/share/signal-cli/data
 signal-cli --output=json listAccounts  8.0s
-  ┊ 💻 $         pkill -f 'signal-cli-rest-api' || true; docker rm -f hermes-signal-rest >/dev/null 2>&1 || true; signal-cli -a +12086279028 daemon --http 127.0.0.1:8080  3.0s
+  ┊ 💻 $         pkill -f 'signal-cli-rest-api' || true; docker rm -f hermes-signal-rest >/dev/null 2>&1 || true; signal-cli -a +1XXXXXXXXXX daemon --http 127.0.0.1:8080  3.0s
   ┊ ⚙️  proc      wait proc_b6068a6  12.0s
   ┊ 💻 $         curl -sS http://127.0.0.1:8080/api/v1/check  0.4s
   ┊ 💻 $         signal-cli --output=json listAccounts  60.5s [error]
@@ -2250,8 +2250,8 @@ signal-cli --output=json listAccounts  8.0s
   ┊ 💻 $         tail -n 120 /Users/logan/.hermes/logs/gateway.log  0.4s
   ┊ 📖 read      /Users/logan/.hermes/logs/gateway.log  0.9s
   ┊ 🔎 grep      Signal: connected|cannot reach signal-cli|signal adapter initialized|signal disconnected|Reconnect signal  0.2s
-  ┊ 📨 send      signal:+12086279028: "Hermes Signal activation probe. If you receive this, Signal is fully enabled."  0.2s
-  ┊ 🧠 memory    +memory: "Signal is now configured and reachable on Logan's host; send_message to signal:+12086279028 succeeds."  0.0s
+  ┊ 📨 send      signal:+1XXXXXXXXXX: "Hermes Signal activation probe. If you receive this, Signal is fully enabled."  0.2s
+  ┊ 🧠 memory    +memory: "Signal is now configured and reachable on Logan's host; send_message to signal:+1XXXXXXXXXX succeeds."  0.0s
  ─  ⚕ Hermes  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── 
                                                                                                                                                                                              
      Success. It worked this time.                                                                                                                                                           
@@ -2264,7 +2264,7 @@ signal-cli --output=json listAccounts  8.0s
      Ran live Signal probe                                                                                                                                                                   
                                                                                                                                                                                              
      Hard proof                                                                                                                                                                              
-     send_message to target signal:+12086279028 returned success                                                                                                                             
+     send_message to target signal:+1XXXXXXXXXX returned success                                                                                                                             
                                                                                                                                                                                              
      So Signal is now enabled and reachable.                                                                                                                                                 
                                                                                                                                                                                              
@@ -2283,7 +2283,7 @@ signal-cli --output=json listAccounts  8.0s
   ┊ 💻 $         date -u '+%Y-%m-%d %H:%M:%S UTC'  0.4s
   ┊ 📨 send      discord:#ledger: "Hermes reliability burst 1/3 at 2026-05-10 14:08:04 UTC"  0.4s
   ┊ 📨 send      telegram:Logan Finney: "Hermes reliability burst 1/3 at 2026-05-10 14:08:04 UTC"  0.8s
-  ┊ 📨 send      signal:+12086279028: "Hermes reliability burst 1/3 at 2026-05-10 14:08:04 UTC"  1.0s
+  ┊ 📨 send      signal:+1XXXXXXXXXX: "Hermes reliability burst 1/3 at 2026-05-10 14:08:04 UTC"  1.0s
   ┊ 💻 $         python3 - <<'PY'
 import time
 time.sleep(4)
@@ -2292,7 +2292,7 @@ PY  4.8s
   ┊ 💻 $         date -u '+%Y-%m-%d %H:%M:%S UTC'  0.4s
   ┊ 📨 send      discord:#ledger: "Hermes reliability burst 2/3 at 2026-05-10 14:08:29 UTC"  0.3s
   ┊ 📨 send      telegram:Logan Finney: "Hermes reliability burst 2/3 at 2026-05-10 14:08:29 UTC"  0.9s
-  ┊ 📨 send      signal:+12086279028: "Hermes reliability burst 2/3 at 2026-05-10 14:08:29 UTC"  0.1s
+  ┊ 📨 send      signal:+1XXXXXXXXXX: "Hermes reliability burst 2/3 at 2026-05-10 14:08:29 UTC"  0.1s
   ┊ 💻 $         python3 - <<'PY'
 import time
 time.sleep(4)
@@ -2301,7 +2301,7 @@ PY  4.4s
   ┊ 💻 $         date -u '+%Y-%m-%d %H:%M:%S UTC'  0.3s
   ┊ 📨 send      discord:#ledger: "Hermes reliability burst 3/3 at 2026-05-10 14:08:52 UTC"  0.4s
   ┊ 📨 send      telegram:Logan Finney: "Hermes reliability burst 3/3 at 2026-05-10 14:08:52 UTC"  0.7s
-  ┊ 📨 send      signal:+12086279028: "Hermes reliability burst 3/3 at 2026-05-10 14:08:52 UTC"  0.1s
+  ┊ 📨 send      signal:+1XXXXXXXXXX: "Hermes reliability burst 3/3 at 2026-05-10 14:08:52 UTC"  0.1s
  ─  ⚕ Hermes  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── 
                                                                                                                                                                                              
      RUN TEST completed.                                                                                                                                                                     
@@ -2310,7 +2310,7 @@ PY  4.4s
      Burst summary                                                                                                                                                                           
      Discord #ledger: 3/3 success                                                                                                                                                            
      Telegram Logan Finney: 3/3 success                                                                                                                                                      
-     Signal +12086279028: 3/3 success                                                                                                                                                        
+     Signal +1XXXXXXXXXX: 3/3 success                                                                                                                                                        
                                                                                                                                                                                              
      Timestamps used                                                                                                                                                                         
      1/3 2026-05-10 14:08:04 UTC                                                                                                                                                             
@@ -2341,7 +2341,7 @@ PY  4.4s
   ┊ 💻 $         tail -n 20 /Users/logan/.hermes/logs/gateway.log  0.4s
   ┊ 💻 $         tail -n 40 /Users/logan/.hermes/logs/gateway.error.log  0.4s
   ┊ 📨 send      telegram:Logan Finney: "I received your report about Telegram replies failing and I am now running gateway-side diagnostics/fix. Please standby for 2 minutes."  0.9s
-  ┊ 💻 $         signal-cli -a +12086279028 daemon --http 127.0.0.1:8080  0.2s
+  ┊ 💻 $         signal-cli -a +1XXXXXXXXXX daemon --http 127.0.0.1:8080  0.2s
   ┊ ⚙️  proc      wait proc_b8a539e  0.0s
   ┊ 💻 $         ps -p 16609 -o pid,ppid,etime,command || true; pgrep -fl 'hermes_cli.main gateway run' || true  0.4s
   ┊ 💻 $         python3 - <<'PY'

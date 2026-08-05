@@ -1,35 +1,123 @@
-# LOGAN ONLY
+<<<<<<< Updated upstream
+# The *default* assumption for the VAULT is that things need to be tracked. The *only* exceptions to that sole assumption are **secrets** and **exhaust**. Tread lightly here.
 
+# Keep markdown and dotstubs
+
+!**.md
+!**/stub.txt
+
+# Plaintext secret file
+
+/.cache_ggshield
+/.claude/.credentials.json
+/.obsidian/plugins/obsidian-local-rest-api/data.json
+/.obsidian/plugins/phone-to-roam-to-obsidian/data.json
+/.ssh/id_ed25519
+/.ssh/id_ed25519.pub
+/.ssh/known_hosts
+
+# Large media bytestore
+
+/.ollama/models/blobs
+
+# ESTO PERPETUA!
+.obsidian/plugins/mcp-tools/bin/mcp-server.exe
+.ollama/id_ed25519
+.ollama/id_ed25519.pub
+.obsidian/plugins/ai-image-analyzer/data.json
+.obsidian/plugins/ai-templater/data.json
+.obsidian/plugins/todoist-context-bridge/data.json
+=======
+# The *default* assumption for the VAULT is that things need to be tracked. 
+# The *only* exceptions to that assumption are **secrets** and **exhaust**.
+# Tread lightly here.
+
+# -------------------------------------------------------------------
+# OS System Files
+# -------------------------------------------------------------------
+
+## General
+._*
+Icon?
+
+## Linux
+~*
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+## Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+[Dd]esktop.ini
+.stackdump
+$RECYCLE.BIN/
+
+## macOS
+.DS_Store
+.AppleDouble
+.AppleDB
+.AppleDesktop
+.LSOverride
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.apdisk
+*.icloud
+Network Trash Folder
+Temporary Items
+
+# -------------------------------------------------------------------
+# Packages & Builds
+# -------------------------------------------------------------------
+/cache/
+/build/
+/blobs/
+/dependencies/
+/dist/
+/marketplaces/
+/node_modules/
+/vendor/
+
+# -------------------------------------------------------------------
+# Environment & Secrets
+# -------------------------------------------------------------------
+credentials
+credstore
+id_*
+*_hosts*
+*_keys*
 .cache_ggshield
+.env
+.env.local
+.pem
+.venv
+/env/
+/private/
+/venv/
+
 .obsidian/plugins/ai-templater/data.json
 .obsidian/plugins/ai-image-analyzer/data.json
 .obsidian/plugins/obsidian-local-rest-api/data.json
-.obsidian/plugins/mcp-tools/bin/mcp-server.exe
 .obsidian/plugins/phone-to-roam-to-obsidian/data.json
 .obsidian/plugins/todoist-context-bridge/data.json
-*.env*
-*.pem
-*.sq*
-*.venv*
-*/*private*/*
-.*/id_*
-.*/*_hosts*
-.*/*keys*/*.*
-.*/credstore*
-.*/*.*credentials*.*
-.*/**/marketplaces/*
 
-# THE WORLD IS QUIET HERE．
-
-.cursor/extensions/*
-.obsidian/plugins/*/cache/*
-.obsidian/plugins/*/dist/*
-.ollama/**/blobs/*
-
-# ESTO PERPETUA!
+# -------------------------------------------------------------------
+# Ignorefile Exclusions
+# -------------------------------------------------------------------
 
 !.gitignore
 !/.*/stub.txt
 !/**.md
 
-# The *default* assumption for the VAULT is that things need to be tracked. The *only* exceptions to that sole assumption are **secrets** and **exhaust**. Tread lightly here.
+# -------------------------------------------------------------------
+# THE WORLD IS QUIET HERE．ESTO PERPETUA!
+# -------------------------------------------------------------------
+>>>>>>> Stashed changes

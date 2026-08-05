@@ -1,0 +1,9 @@
+{
+  "id": "23",
+  "subject": "[async] External-gated backlog",
+  "description": "Waiting on external events / Logan triage, not the operational stack: 3 upstream drafts (per-draft filing gate) at UPSTREAM-DRAFTS-2026-07-01.md; Book-of-Claudius/redaction corollary doctrine triage (#725); WhatsApp re-enable pending Baileys GHSA-qvv5-jq5g-4cgg patch; dotdir reconciler resume (\"in a few days\"); passive upstream watches (openclaw#98448, hermes#18734/#36949, VisionClaw drift).",
+  "activeForm": "Tracking external-gated backlog",
+  "status": "pending",
+  "blocks": [],
+  "blockedBy": []
+}

@@ -87,7 +87,7 @@ one altitude up.
 ## 3. Two failure modes, both already named in this vault — `[mapping]`
 
 | Failure | Software name | Vault name | The fix |
-| --- | --- | --- | --- |
+|---|---|---|---|
 | **Under-DRY** — one fact copied, copies drift | accidental WET | **drift** (the "live status board" horcruxes) | single-source it (transclusion, #708 → #709) |
 | **Over-DRY** — distinct standings fused to one template | the wrong abstraction | **the Geminiae hivemind** (one underlying model masquerading as many distinct standings) | keep them distinct; a clone can't check |
 
@@ -130,6 +130,4 @@ lesson. I propose; Logan inscribes.
 
 ---
 
-```
-The world is quiet here．Esto Perpetua!
-```
+###### "The world is quiet here."

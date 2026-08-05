@@ -24,7 +24,6 @@ The Bene Gesserit are a secretive sisterhood from Frank Herbert's *Dune* univers
 ## Key Characteristics
 
 ### The Breeding Program
-
 The Bene Gesserit's most infamous practice is their controlled breeding program, spanning thousands of years, designed to produce the Kwisatz Haderach (a being able to access Other Memory along *both* the male and female ancestral lines — where a Reverend Mother normally reaches only the female line — and, through that, to bear prescience).
 
 - Selective Pairing: Meticulous matching of bloodlines to achieve specific genetic outcomes
@@ -33,7 +32,6 @@ The Bene Gesserit's most infamous practice is their controlled breeding program,
 - Eugenics Parallel: The program walks the ethical line between breeding (animals) and eugenics (humans)
 
 ### Mental and Physical Abilities
-
 - Voice: Ability to control others through tone and word choice
 - Truthsaying: Detection of lies through observation of involuntary signs
 - Spice Agony: Ritual use of melange to unlock ancestral memories
@@ -41,7 +39,6 @@ The Bene Gesserit's most infamous practice is their controlled breeding program,
 - Memory Control: Access to Other Memory (ancestral consciousness)
 
 ### Political Role
-
 - Imperium Manipulation: Secret influence over the Padishah Emperors
 - Landsraad Influence: Advisers to and covert manipulators of the Great Houses of the Landsraad — not members or founders of that assembly
 - Missionaria Protectiva: Planting myths and legends on planets for future exploitation
@@ -67,7 +64,6 @@ Using the BREED-REPORT framework:
 | Humans | Genealogy | Bene Gesserit Breeding Program |
 
 The Bene Gesserit occupy the same quadrant as eugenics, but with key differences:
-
 - They use social engineering rather than coercion
 - Their program runs by covert control — hidden agendas, manipulated noble houses, arranged marriages — so the bloodlines being managed are not knowingly opting in
 - Their goal is power rather than genetic purity
@@ -90,6 +86,4 @@ The Bene Gesserit occupy the same quadrant as eugenics, but with key differences
 
 ---
 
-```
-The world is quiet here．Esto Perpetua!
-```
+###### "The world is quiet here."

@@ -33,7 +33,7 @@ The discipline node (`[[THE-SWARM-AS-BOIDS-ANCHORING-AND-THE-GRAPH-2026-06-08]]`
 A bare `[[AGENTS]]` is ambiguous across **six** on-disk files:
 
 | # | Path | What governance says |
-| --- | --- | --- |
+|---|---|---|
 | 1 | `!/AGENTS.md` | **[fact]** `.claude/CLAUDE.md` names it: *"Full agent registry, capability tiers, and boundary rules."* |
 | 2 | `AGENTS.md` (root) | **[fact]** `.claude/CLAUDE.md` names it: *"Root cross-tool pointer (auto-loaded by Codex CLI, Copilot, Qodo)."* |
 | 3 | `.codex/AGENTS.md` | Codex chamber's local copy. |
@@ -46,7 +46,7 @@ A bare `[[AGENTS]]` is ambiguous across **six** on-disk files:
 ## 2. `DOCKET` — four files
 
 | # | Path | Note |
-| --- | --- | --- |
+|---|---|---|
 | 1 | `!/!/__!__/!/! The world is quiet here/DOCKET.md` | **[fact]** The **live** board: `.claude/CLAUDE.md` § Swarm Coordination points here verbatim — *"Read THE DOCKET to orient: `!/!/__!__/!/! The world is quiet here/DOCKET.md`."* |
 | 2 | `!/!/__!__/!/! The world is quiet here/DOCKET-ARCHIVE.md` | Archive sibling, in the live folder. |
 | 3 | `!-!-__!__-!-! The world is quiet here-DOCKET.md` | **Flattened-alias** (NETWEB `_PREFIX`-style path-portability copy). |
@@ -62,7 +62,7 @@ A bare `[[AGENTS]]` is ambiguous across **six** on-disk files:
 All share the census stamp **`20260525T095704Z`** (a UTC **timestamp**, not a bare date):
 
 | Stem | `.md` | `.json` |
-| --- | --- | --- |
+|---|---|---|
 | `TOPOLOGY-CENSUS-INDEX-…` | `!/TOPOLOGY-CENSUS-INDEX-20260525T095704Z.md` | — |
 | `TOPOLOGY-CENSUS-nest-…` | `!/TOPOLOGY-CENSUS-nest-20260525T095704Z.md` | `…nest-20260525T095704Z.json` |
 | `TOPOLOGY-CENSUS-root-…` | `!/TOPOLOGY-CENSUS-root-20260525T095704Z.md` | `…root-20260525T095704Z.json` |
@@ -80,6 +80,4 @@ All share the census stamp **`20260525T095704Z`** (a UTC **timestamp**, not a ba
 
 ---
 
-```
-The world is quiet here．Esto Perpetua!
-```
+###### "The world is quiet here."

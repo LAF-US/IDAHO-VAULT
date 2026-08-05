@@ -6,13 +6,13 @@ I now have enough to give a rich and grounded answer. Let me compile my findings
 
 ---
 
-**1. PLACE-NAME**
+1. **PLACE-NAME**
 
 IDAHO-VAULT — an Obsidian knowledge vault and AI-agent operating base maintained by Logan Alvan Finney, journalist/producer at Idaho Reports / Idaho Public Television.
 
 ---
 
-**2. POSITION (core entities)**
+2. **POSITION (core entities)**
 
 1. Logan Finney — sovereign owner, final authority
 2. The Swarm — multi-agent AI crew (Claude/Abhorsen, Gemini/Concierge, Codex/Lexicographer, Copilot/Clerk, Serena/Tapestry et al.)
@@ -24,13 +24,13 @@ IDAHO-VAULT — an Obsidian knowledge vault and AI-agent operating base maintain
 
 ---
 
-**3. CENTRAL CONCEIT**
+3. **CENTRAL CONCEIT**
 
 IDAHO-VAULT is simultaneously a working journalist's research and production base and a governed multi-agent AI swarm, held together by a quasi-constitutional civic-fantasy architecture in which dozens of AI agents are assigned mythological/literary personas and operate inside a hierarchically nested Obsidian vault governed by explicit doctrine (CONSTITUTION, CHARTER, PROTOCOLS), with Logan as the irreplaceable human sovereign at the center. The mythological dotfolders are not decoration; they are the actual identity chambers of individual agents, and the whole structure is designed so that AI tools can orient themselves, follow boot sequences, and defer to Logan's approval without losing narrative coherence.
 
 ---
 
-**4. HEADING (telos)**
+4. **HEADING (telos)**
 
 (a) This place exists in order to **run a governed, narratively coherent AI swarm in service of a working journalist's production and civic-research work — while keeping a human sovereign in final control of every consequential decision.**
 (b) Core verb: **govern.**
@@ -38,7 +38,7 @@ IDAHO-VAULT is simultaneously a working journalist's research and production bas
 
 ---
 
-**5. GOVERNING RULES**
+5. **GOVERNING RULES**
 
 1. **Logan is the final unblockable authority.** No agent merges, promotes, or resolves a cross-lane conflict without Logan's explicit approval; all blocked items queue to the DOCKET for his eyes.
 2. **The vault is the durable record; everything else (Slack, Linear, chat) is ephemeral.** Decisions must be promoted from conversation to canonical vault files or they do not exist.
@@ -46,7 +46,7 @@ IDAHO-VAULT is simultaneously a working journalist's research and production bas
 
 ---
 
-**6. PERCEPTION LOG**
+6. **PERCEPTION LOG**
 
 Exact paths opened (N = 10):
 
@@ -65,7 +65,6 @@ Exact paths opened (N = 10):
 **~M rough estimate of total corpus size:** root directory alone has 988 named entries visible; with ~200+ dotfolders each potentially containing multiple files, and numbered notes (`0.md` through `191.md`+), the corpus likely runs to several thousand files total, with reported 332 MiB of tracked content (mentioned in the DOCKET's Phase 2 rewrite note).
 
 **Notable doors seen but NOT opened:**
-
 - `CONSTITUTION.md` (root — the binding governance document)
 - `!-WAKEUP.md` (agent orientation/conflict-clearing surface)
 - `swarm.json` (machine-readable agent/connector registry)
@@ -79,7 +78,7 @@ Exact paths opened (N = 10):
 
 ---
 
-**7. THREE [read] ANCHORS**
+7. **THREE [read] ANCHORS**
 
 1. **`!-AGENTS.md`** — Canonical agent roster naming five direct-write AI agents with mythological/literary personas (Abhorsen, Concierge, Lexicographer, Clerk, Tapestry), 200+ dormant persona dotfolders, the tri-part dotfolder structure specification, and the LAF-US org topology.
 
@@ -89,7 +88,7 @@ Exact paths opened (N = 10):
 
 ---
 
-**8. THREE [*] MARKS**
+8. **THREE [*] MARKS**
 
 1. **[*] The Idaho political archive (Borah speeches, Roosevelt visits, state legislation) is the substantive journalistic content Logan is building toward publication** — the AI swarm exists in large part to process, tag, and structure this primary-source material for Idaho public-affairs reporting, though I only opened the stub of one Borah photo note and did not read the full archive.
 

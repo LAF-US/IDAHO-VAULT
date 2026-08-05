@@ -14,7 +14,6 @@ tags: [reference, analysis, kate-couriel, draw-me, patriarchys-dead, gender, era
 ---
 
 # Kate Couriel — *"Draw Me"* & *"Patriarchy's Dead"*
-
 ### an analysis
 
 *Compiled 2026-06-04 at Logan's direction. This is **criticism of two songs** by the
@@ -42,7 +41,6 @@ draw a person** — refuses that: it demands she be drawn **as a person in the f
 instance**, default-eligible, not summoned afterward to fill the slot the man didn't.
 
 **Technique [analysis]:**
-
 - **Escalating role-list + the mid-list trap** — the listener convicts *themself* by
   picturing men; the song never has to accuse.
 - **The paired double-standards** in the chorus (*good boss / "bossy," passion /
@@ -95,8 +93,4 @@ Songs by Kate Couriel (lyrics provided by Logan; not reproduced here):
 - **Status:** active
 - **Authority:** LOGAN
 
----
-
-```
-The world is quiet here．Esto Perpetua!
-```
+###### "The world is quiet here."

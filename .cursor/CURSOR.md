@@ -6,6 +6,6 @@ related:
   - runtime
 ---
 
-**.cursor** â€” Imported software runtime persona.
+**.cursor** — Imported software runtime persona.
 
 cursor runtime and configuration.

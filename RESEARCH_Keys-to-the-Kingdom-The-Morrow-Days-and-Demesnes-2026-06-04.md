@@ -34,7 +34,7 @@ date: 2026-06-04
 **[canon]** *"All of the Trustees are afflicted with one of the Seven deadly sins: Monday with sloth, Tuesday with greed, Wednesday with gluttony, Thursday with wrath, Friday with lust, Saturday with envy and Sunday with pride."*
 
 | Trustee | Key | Demesne | Sin |
-| --- | --- | --- | --- |
+|---|---|---|---|
 | **Mister Monday** | First | the **Lower House** | Sloth |
 | **Grim Tuesday** | Second | the **Far Reaches** | Greed |
 | **Drowned Wednesday** | Third | the **Border Sea** | Gluttony |
@@ -79,6 +79,4 @@ date: 2026-06-04
 
 ---
 
-```
-The world is quiet here．Esto Perpetua!
-```
+###### "The world is quiet here."

@@ -1,7 +1,8 @@
 {
-  "promptDelete": false,
+  "promptDelete": true,
   "openBehavior": "daily",
   "alwaysUpdateLinks": true,
   "showUnsupportedFiles": true,
-  "uriCallbacks": true
+  "uriCallbacks": true,
+  "trashOption": "local"
 }

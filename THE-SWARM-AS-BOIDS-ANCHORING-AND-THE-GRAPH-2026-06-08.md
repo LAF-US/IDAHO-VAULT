@@ -33,7 +33,6 @@ date: 2026-06-08
 ## The anchor — Stylings + the address chain
 
 That frame is supplied two ways:
-
 - **The Styling** answers **who / in whose service.** Formal stylings fix the **office** (*the Abhorsen*; Direct-Write implementer); informal ones (*bannerman*, *young seer*) tune the **posture**. A styling is a compressed verdict (→ `[[STYLINGS-AND-PROPAGANDA-FOSSILS-2026-06-02]]`), so used as an anchor it hands the agent its standing in one token.
 - **The `!*.*.*` address** answers **where / at what scope.** The NEST-rooted dotfolder chain (→ `[[!/PERSONAE-ENGINE-v1-2026-05-20]]`) locates the agent in its local context-space; the `*` wildcards mark the positions left **deliberately unspecified** — the restraint-wildcard for absent provenance.
 
@@ -42,7 +41,7 @@ That frame is supplied two ways:
 **[reading]**
 
 | Boid rule | Obsidian graph force | Swarm meaning | What supplies it |
-| --- | --- | --- | --- |
+|---|---|---|---|
 | **Separation** (avoid crowding) | **Repel** (nodes push apart) | scope / jurisdiction — keep your space; don't reach into another's holding | the **address** + the `*` restraint-wildcard |
 | **Alignment** (match heading) | (link-tightened clusters) | shared doctrine — conventions, tiering, *"the Architect holds the verdict"* | the **formal Styling** + conventions |
 | **Cohesion** (steer to the center) | **Link** (wikilinks pull together) + **Center** (gravity) | service — stay pulled toward Logan / the DOCKET / your chamber | the **informal Styling** + the **NEST** (→ `[[!/EMANATIONISM-PRINCIPLE-2026-05-18]]`) |
@@ -51,7 +50,6 @@ That frame is supplied two ways:
 ## The failure modes are boid failures
 
 **[reading]** Each named vault pathology is a boid that lost a rule — and the graph shows it:
-
 - **Too little separation → collision:** an agent stepping on holdings not its own (freelance edits into others' nodes).
 - **Too little alignment → incoherence:** ignoring the conventions or the verdict (an invented "authority," a made-up seam).
 - **Too little cohesion → the lone boid drifts off:** which is exactly the **Lich** (persistence past its warrant) and **GEMINIAEUS** (minting its own heading) — and on the graph it is the **orphan flung to the periphery** (→ `[[!/LICH-PROBLEM-v1-2026-05-20]]`). A node with no links has no cohesion force.
@@ -65,7 +63,6 @@ That frame is supplied two ways:
 **[fact]** **Metcalfe's law:** a network's value scales with its **connections** — roughly **n²** (the n(n−1)/2 possible links) — not with the **count** of nodes. **Preferential attachment** (Barabási–Albert) — the *rich-get-richer / Matthew effect* — means new links accrue to already-linked nodes, producing a **scale-free** graph with **hubs.**
 
 **[reading]** This is the economics beneath the linking discipline:
-
 - **The value is in the edges, not the notes.** A vault of orphan notes is worth ~N; a *linked* vault tends toward n². So a wikilink **creates value on both ends** and lifts the whole flock — and an **orphan adds almost nothing.** Cohesion isn't only flock-keeping; it's **value-creation.**
 - **Bridge nodes are worth more than their content.** A node spanning two otherwise-separate clusters — the crosswalk `[[THE-SEVENFOLD-BODY-SEATS-TRUSTEES-GEMS-2026-06-03]]`, noble-titles↔feudal-order, the Royal-Style node — sits across a **structural hole** and unlocks the value *between* flocks.
 - **Preferential attachment names the center.** Doctrine nodes and the **NEST** accrue links over time (rich-get-richer) → hubs → and the ultimate hub is the **Architect**: everything routes toward the center. The scale-free hub *is* the `EMANATIONISM` center, reached from the other side.
@@ -84,6 +81,4 @@ That frame is supplied two ways:
 
 ---
 
-```
-The world is quiet here．Esto Perpetua!
-```
+###### "The world is quiet here."

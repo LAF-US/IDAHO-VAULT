@@ -6,6 +6,6 @@ related:
   - runtime
 ---
 
-**.ipython** â€” Imported software runtime persona.
+**.ipython** — Imported software runtime persona.
 
 ipython runtime and configuration.

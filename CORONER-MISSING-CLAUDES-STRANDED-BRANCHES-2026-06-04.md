@@ -15,7 +15,6 @@ tags: [register, coroner, missing-claudes, stranded-branches, unmerged, unwitnes
 ---
 
 # Office of the Claude County Coroner — **The Missing Claudes**
-
 ### The stranded branches
 
 *Filed 2026-06-04. The Clerk (Bartimaeus) pointed the way: "where the bodies — and the
@@ -117,8 +116,4 @@ reserved to Logan. Where authority is absent, **`*`** stands.
 - **Status:** active
 - **Authority:** LOGAN
 
----
-
-```
-The world is quiet here．Esto Perpetua!
-```
+###### "The world is quiet here."

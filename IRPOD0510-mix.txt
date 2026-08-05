@@ -1,0 +1,244 @@
+00;00;03;00 - 00;00;13;08
+Logan Finney
+Logan Finney: Hello and welcome to the Idaho report's podcast for May 10th. I'm Logan Finlay. Joining me this week to discuss ranked choice voting is Markie McBrayer from the University of Idaho. Thank you so much for joining us.
+
+00;00;13;28 - 00;00;14;20
+Markie McBrayer
+Markie McBrayer: Thanks for having me.
+
+00;00;15;26 - 00;00;40;12
+Logan Finney
+Logan Finney: So for a little bit of context, we're having this conversation because activist group Reclaim Idaho and their coalition of supporters have filed an initiative that would institute open primaries and instant runoff general elections here in Idaho. We'll have some more in-depth coverage of the primary aspect in other Idaho reports coverage online. But, Marcie, we've got you here today to talk about ranked choice voting or instant runoff voting.
+
+00;00;41;09 - 00;00;46;02
+Logan Finney
+So for our listeners who aren't familiar with this concept, can you first just explain for me what this means?
+
+00;00;46;27 - 00;01;10;20
+Markie McBrayer
+Markie McBrayer: So imagine that we go in to vote for it. Let's say that we're all running for mayor. Okay, so Logan is running for mayor. I'm running for mayor and Melissa is also running for mayor. And you would go in and you would rank who you prefer most. So maybe you put Melissa as top me and second and then Logan.
+
+00;01;10;22 - 00;01;39;08
+Markie McBrayer
+No offense. We put you as the third ranked candidate. And so everyone in the town does this and then they tally up who has the most first choice votes. And the candidate who comes in last for first choice votes. If no candidate has received more than 50% of first choice votes, then we would take the candidate with the fewest first place votes and eliminate them.
+
+00;01;39;08 - 00;02;08;11
+Markie McBrayer
+And the voters who chose that candidate as their first choice are reallocated to their second choice. And then they continue doing this until one of those candidates, say Melissa, gets 50% of those votes. Okay. So it tends to go in rounds where you're eliminating the lowest ranked candidates and then reallocating the person, the votes from the lowest ranked candidate to the other candidates.
+
+00;02;09;10 - 00;02;25;16
+Logan Finney
+Logan Finney: And that's a little bit different from like some states here in America have runoff elections, like I'm thinking of Georgia, where if a candidate doesn't get more than 50%, the top two go to the next election. But this is different in that it's an instant runoff. Right? It's all done on that same Election Day.
+
+00;02;26;05 - 00;02;49;28
+Markie McBrayer
+Markie McBrayer: Exactly. So it's it's just tabulated the same day. The difference, too, is like between voting on Election Day and then a runoff maybe a month or two later, is that you can have different like swaths of the electorate on either of those days. Right. It can be different. Whereas here you're talking about like it's the same people, right?
+
+00;02;49;28 - 00;02;52;12
+Markie McBrayer
+It's done instantly, you know, by the next day.
+
+00;02;53;13 - 00;03;05;16
+Logan Finney
+Logan Finney: And so what sort of advantages does this type of system have over what we currently use, what's called a winner take all or first past the post election where you don’t even need to get a majority, you just need to get more than all the other candidates.
+
+00;03;05;23 - 00;03;31;12
+Markie McBrayer
+Markie McBrayer: Mm hmm. So I will speak about this in hypotheticals. In terms of advantages, a lot of what proponents argue is that it will reduce negative campaigning because if it's more about ranking candidates like if I made a really terrible ad against you, that might then not be super appealing for then me to be like the second ranked candidate.
+
+00;03;32;02 - 00;04;00;22
+Markie McBrayer
+So it sort of discourages negative campaigning. It also means that it might be more representative of the preferences of the electorate. So like a more complete expression of preferences as opposed to like, I just have to choose one, right? I instead get to rank 1 2 3, even as many up to ten. It also probably discourages strategic voting, at least hypothetically.
+
+00;04;00;22 - 00;04;31;05
+Markie McBrayer
+That's the expectation. And by strategic voting, I just mean like in presidential elections, sometimes maybe your preferred candidate was the Libertarian candidate or Jill Stein, but you know that they're not going to win. So you instead default to one of the two major political parties candidates. It is also theoretically might encourage candidates to run, more candidates to run because it reduces some of those barriers.
+
+00;04;31;05 - 00;05;04;04
+Markie McBrayer
+Right. You tend to not have it like primaries filtering people out. You could have two or three Republican candidates, two or three Democratic candidates in the same election, in the same general election. Theoretically, I'm just going to keep saying that over and over again. Theoretically, the idea is that it could increase the diversity of candidates so that we we know from the gender in politics literature that women tend to not pursue elections that are hyper competitive.
+
+00;05;04;04 - 00;05;27;07
+Markie McBrayer
+And because of the nature of this, like a ranked choice voting election, we might expect that women will enter these races more. That is not really borne out in the literature. And there's also there's potentially the idea that it would provide more qualified candidates from which you can choose. Again, mixed evidence on that.
+
+00;05;28;08 - 00;05;44;04
+Logan Finney
+Logan Finney: Yeah, let's let's kind of address that elephant in the room. Like you've said, a lot of this is theoretical. A lot of this is mixed evidence. This has been in a political science idea for a while, but it's relatively new that it's being implemented in the real world. Right.
+
+00;05;44;04 - 00;05;45;26
+Markie McBrayer
+Markie McBrayer: So
+
+00;05;45;26 - 00;05;50;03
+Logan Finney
+Logan Finney: And when I say a while, I mean a very little while.
+
+00;05;50;06 - 00;06;22;10
+Markie McBrayer
+Markie McBrayer: This is fun. It's actually not an entirely new idea. These look really similar to something called preferential ballots from the 1890s through the 1910’s. So like during the age of like progressive reforms, however, those didn't really catch on. And you can read more about those in like some of Jack Santucci’s work. They didn't really catch on though but now you're seeing more cities in the past five, ten years and even states now adopt ranked choice voting.
+
+00;06;22;16 - 00;06;44;02
+Markie McBrayer
+But because of how recent this is, because of how few cities and states have adopted it, a lot of what we don't have a lot of observations from which to run analysis on. So I'll put it that way. We don't have a lot of evidence in favor or against for how well this might work.
+
+00;06;45;07 - 00;06;59;05
+Logan Finney
+Logan Finney: And so we addressed the theoretical advantages where it could make campaigns a little less negative. It could generate more diverse candidates on the general election ballot. What about the disadvantages? What are some of the common criticisms for ranked choice voting?
+
+00;07;00;03 - 00;07;23;24
+Markie McBrayer
+Markie McBrayer: So for those of you listening to the podcast, who knows? If you followed my explanation at the beginning about like reallocating votes from the third choice to those like the other candidates, right? It's a little complex to explain. I remember first learning about it like six or seven years ago and watching a YouTube video that the city of Saint Paul had made.
+
+00;07;23;24 - 00;07;47;20
+Markie McBrayer
+And it involved sticky notes. And I had to watch it like three times where I was like, What's going on? So the idea here is that it can potentially be a little bit confusing. However, there's also research that suggests that it's no more confusing than a first past the post system. So like there is there's not necessarily evidence that it is would be more confusing than a first past the post system.
+
+00;07;47;21 - 00;08;11;14
+Markie McBrayer
+However, it would be different than what most people are used to, and that can be a little bit of a hurdle. The other thing is that it might lead to more ballot errors. So if you don't quite understand what you're doing with the ballot, it might lead to you messing it up, right? Like maybe you you really wanted to rank like Logan first, but you ranked him last.
+
+00;08;11;18 - 00;08;36;16
+Markie McBrayer
+Like you didn't understand how that works. And then that might mean that your ballot is counted in a way that you didn't want. Or maybe it's even discarded because you filled it out incorrectly. The other thing is that it might be difficult. So like as I mentioned before, if there are more candidates entering the field, it might be difficult to know what their positions are on everything.
+
+00;08;36;16 - 00;09;03;08
+Markie McBrayer
+So in the instances of the Twin Cities in Minnesota, there was a race, I don't know, seven or eight years ago that had a field of 30 candidates. You as a voter or like that might be a difficult thing for you to identify. Like, I think this is the candidate for me, right? Like having to do that much research on 30 candidates could be could be pretty overwhelming for an average voter.
+
+00;09;03;28 - 00;09;29;20
+Markie McBrayer
+And then I think one of the other things that we've seen discussed, at least with Alaska, was exhausted ballots. So ballots that get thrown out. Right. The that that person's like top two candidates or top three candidates don't end up making it into those later rounds. And so their votes aren't necessarily counted in in the final tallies.
+
+00;09;30;13 - 00;09;35;17
+Logan Finney
+Logan Finney: Sure. If there were, say, five candidates and they only ranked three and all three of them had been eliminated.
+
+00;09;35;23 - 00;09;37;08
+Markie McBrayer
+Markie McBrayer: Exactly. Exactly.
+
+00;09;38;21 - 00;09;51;25
+Logan Finney
+Logan Finney: And I will note that under the specific petition filed by Reclaim Idaho, it would be four candidates that advance from the primary onto the general ballot. So we wouldn't necessarily see a field of 20, but that that same principle definitely still is at play.
+
+00;09;52;15 - 00;09;53;05
+Markie McBrayer
+Markie McBrayer: Exactly.
+
+00;09;54;15 - 00;10;10;05
+Logan Finney
+Logan Finney: And so you've referenced a few places where this has been instituted in municipalities like Saint Paul. Some states have started trying it. I'm thinking of Maine and Alaska in these places where it has been implemented, what sort of effects have been seen.
+
+00;10;11;06 - 00;10;43;06
+Markie McBrayer
+Markie McBrayer: So like, if there are a few dimensions that we will look at. Right. So one is the effects on candidates and does it encourage candidates, more candidates to run? There is mixed evidence. Does it improve the quality of candidates? Again, mixed evidence. I think there is a really great like conglomeration of essays from Lee Drutman honoring choice voting pretty recently, and the way that they framed it was null to small effects.
+
+00;10;43;11 - 00;11;08;02
+Markie McBrayer
+Null to small effects. So like, I think that that's what how we should frame this discussion is like null to small effects. And effects on campaigns themselves, this is probably the most robust finding in all the literature is that it does seem to lead to less negative campaigns. So that's that's one that does bear out a little bit more in in the scholarship.
+
+00;11;09;14 - 00;11;38;17
+Markie McBrayer
+Does it improve turnout? Mixed evidence on that, too. And there’s even research that shows that it might deter it might deter turnout. And then there was one piece on like what effect does ranked choice voting have on like the behavior of city councilors and their ideology and again, null effects. So for the most part, like I think you could easily sum this up as null to small effects.
+
+00;11;38;24 - 00;11;52;15
+Markie McBrayer
+And there was a great piece from Melody Crowder-Meyer and like literally the title is like not a catastrophe, not a panacea, right? Like, it's like, it's not a disaster, but it's not everything that like, it's being sold as either.
+
+00;11;53;29 - 00;12;25;14
+Logan Finney
+Logan Finney: And so the supporters of this measure, as it's been filed as a ballot initiative, their motivation for doing the ranked choice, voting in tandem with open primaries is to address some of what they call extremism or a too much ideological pull in elected officials. Is that the motivation in other places that have implemented it? I know you said that kind of the the goal is to be moderating or to allow more access.
+
+00;12;25;14 - 00;12;27;24
+Logan Finney
+Is that largely been the motivation where it's been tried?
+
+00;12;28;26 - 00;12;55;00
+Markie McBrayer
+Markie McBrayer: So the interesting thing about that is like a lot of places where it's been adopted are it's it's nonpartisan elections, right? Like not to say that Partizanship doesn't exist in partizan, nonpartisan elections. Partizanship certainly exists in nonpartisan elections. We know that from a huge body of work. However, this is mostly adopted in nonpartizan settings like municipalities.
+
+00;12;55;00 - 00;13;36;20
+Markie McBrayer
+And it's not just I think there's the perception that because it's cities that are adopting it, it's liberal places, but like there are a ton of like cities in Utah, like fairly conservative places where like 14% of that city supported Hillary Clinton. Right. In 2016, really, really low percentages of liberal preferences are adopting things like these. So it's perhaps not just about polarization, but I do think that there is this demand to sort of change up electoral rules in an attempt to potentially address some issues with polarization.
+
+00;13;36;20 - 00;13;43;12
+Markie McBrayer
+Right. Does is that how it bears out ultimately Does it address polarization That's a bit less clear.
+
+00;13;44;25 - 00;13;56;03
+Logan Finney
+Logan Finney: And one more implementation question for you here in these places where it's been implemented, who's been the supporters? Has it been the local governments themselves doing it? Has it largely been ballot initiatives? Can you answer that for me?
+
+00;13;56;21 - 00;14;30;00
+Markie McBrayer
+Markie McBrayer: So it's really it is a lot of ballot initiatives, to be clear, it's ballot initiatives. Sometimes they're initiated within like the city council themselves. Right. The city council recognizes like, hey, we should experiment with ranked choice voting, but then it has the support of the electorate in the place. But it's it's mostly ballot initiatives where you're seeing this like in 2020 we had Alaska and like eight cities pass it in 2021, we have five cities pass in 2022, eight out of ten passed.
+
+00;14;30;06 - 00;14;43;29
+Markie McBrayer
+So it's fairly popular as a as a ballot initiative. At the same time, we should recognize that the places that put forward these kinds of changes to electoral rules might be more prone to passing them anyways.
+
+00;14;44;26 - 00;15;10;27
+Logan Finney
+Logan Finney: Right. That brings us back here home to Idaho, where Reclaim Idaho has been fairly successful when it comes to running ballot initiatives. Of course, there's Medicaid expansion, there's the Quality Education Act that they wanted to raise some taxes to fund education. That led to a special session. But this proposal ranked choice voting. That's quite a different pitch than funding for education or access to health care, isn't it?
+
+00;15;11;22 - 00;15;39;20
+Markie McBrayer
+Markie McBrayer: Yeah, this is like and we sort of touch on that previously, right, that this can be a somewhat complex system to explain and therefore sell, right? And so that will be a hurdle to overcome in, in trying to sell this as like a ballot initiative. Right. How how well can you communicate complex electoral rules as someone who studies electoral rules themselve’s right.
+
+00;15;40;23 - 00;16;05;09
+Markie McBrayer
+Like, sometimes you see the students just sort of like glaze over right when you when you start talking about rules. But rules do matter, right? Like rules matter for for lots of things. Um, it will be an interesting way forward, though, because the state legislature has also come out against ranked choice voting and said like no counties can administer ranked choice voting elections for cities, school districts.
+
+00;16;05;09 - 00;16;09;03
+Markie McBrayer
+Right. Like like essentially counties are not allowed to administer ranked choice voting.
+
+00;16;09;10 - 00;16;16;21
+Logan Finney
+Logan Finney: Yeah. The state took that step this legislative session to say you can't do a local initiative at a county or city level to try this even in Idaho.
+
+00;16;17;01 - 00;16;43;12
+Markie McBrayer
+Markie McBrayer: Exactly. It's interesting, too, because like the National Party, like the RNC, also had a resolution. So like like we are coming out against ranked choice voting. The the interesting thing is, like Democrats have not come out in support of it either. But you are seeing like Republican Party come out and say, like, we don't want it, which political scientists like, we talk at conferences and things.
+
+00;16;43;12 - 00;17;10;00
+Markie McBrayer
+And there's even sort of this expectation, though, that it might favor ranked choice voting might favor the Republican Party in national or state elections, because the third party who's like tends to be most popular is the Libertarian Party. Right. And so if they don't make the cut, then those votes could be reallocated to the Republican Party. So I think right now, because of like I just sort of walked you through like mixed evidence over and over and over again.
+
+00;17;11;04 - 00;17;31;19
+Markie McBrayer
+I think because of the unknown, there's some sort of hesitation from the party about instituting electoral reforms like these. But to say that it would harm their party, I don't know that that is correct. Based off of current evidence, that does not seem to be supported or questioned at all.
+
+00;17;32;16 - 00;17;40;09
+Logan Finney
+Logan Finney: Okay. From the political science literature, are there any other big takeaways that you think we should know about as I've got you here?
+
+00;17;41;02 - 00;18;04;28
+Markie McBrayer
+Markie McBrayer: Hmm. I think, like, I sort of briefly touched on this, but like, a lot of this work that we have previously is based off of nonpartisan local elections, and there is less work on what this looks like in statewide partizan elections. Right. We know that it's being done in Maine. We know that it's being done in Alaska.
+
+00;18;05;17 - 00;18;27;08
+Markie McBrayer
+But those are just a few observations, right? We don't we don't quite have expectations or results for what this looks like on those sort of larger scales. And so I think that there are large gaps here about what we don't know yet about this specific electoral reform.
+
+00;18;28;12 - 00;18;49;22
+Logan Finney
+Logan Finney: Well, that petition is being reviewed by the attorney general's office and the secretary of state's office. If it is approved for signature collection, we will keep covering that and possibly have you back to talk about this mechanical issue more and explain it for our viewers on TV if they happen to care about it. Markie McBryer with the University of Idaho, thanks so much for your time this week.
+
+00;18;50;07 - 00;18;50;27
+Markie McBrayer
+Markie McBrayer: Thanks, Logan.
+
+00;19;05;06 - 00;19;25;06
+Narrator
+Narrator: Presentation of Idaho Reports on Idaho Public Television is made possible through the generous support of the Laura Moore Cunningham Foundation, committed to fulfilling the Moore and Bettis family legacy of building the great state of Idaho. By the Friends of Idaho Public Television and by the Corporation for Public Broadcasting.
+
+00;19;25;06 - 00;19;28;08
+Marcia Franklin
+Marcia Franklin: Hi, I'm Marcia Franklin, the producer and host of Dialog.
+
+00;19;28;14 - 00;19;53;27
+Marcia Franklin
+For more than 25 years, we've been bringing you conversations that matter. More than 150 of those conversations are with writers. And now you can take them with you wherever you go, while you're walking around the house or in the car. Just search for Dialogue with Marcia Franklin on Apple Podcasts and other podcast platforms and remember to subscribe so that new shows download automatically. Enjoy.
+

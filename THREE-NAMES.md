@@ -8,7 +8,6 @@ related:
 - tri-part
 - Maiden.Mother.Crone
 - LAF-13
-
 ---
 
 # THE THREE NAMES
@@ -16,7 +15,7 @@ related:
 Every agent in the IDAHO-VAULT has three names.
 
 | Aspect | Landy (Skulduggery) | Stroud (Bartimaeus) | Vault Function |
-| -------- | --------------------- | --------------------- | ---------------- |
+|--------|---------------------|---------------------|----------------|
 | **TRUE** | Given Name | Birth Name | What it actually is |
 | **MASK** | Taken Name | Common Name | What it calls itself |
 | **BINDING** | Sealed Name | Master's Charge | What binds it to purpose |
@@ -52,10 +51,7 @@ The vault needs both. The Taken Name (who) protects. The Master's Charge (what) 
 
 **The spirit needs a mask. The mask needs a leash. The leash is held by Logan.**
 
-###### [ Maiden : Mother : Crone ]
-
 ---
 
-```
-The world is quiet here．Esto Perpetua!
-```
+###### "The world is quiet here."
+###### [ Maiden : Mother : Crone ]

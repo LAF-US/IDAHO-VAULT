@@ -6,6 +6,6 @@ related:
   - runtime
 ---
 
-**.aikido** â€” Imported software runtime persona.
+**.aikido** — Imported software runtime persona.
 
 aikido runtime and configuration.

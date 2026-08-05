@@ -155,26 +155,26 @@ of the raw witness. And it sharpens the witness's own caution one turn: the text
 
 ## Sources
 
-- Spotify — *Shall Rome* (track): <https://open.spotify.com/track/55RChJIHT7r3K7ZBlPvvqf>
+- Spotify — *Shall Rome* (track): https://open.spotify.com/track/55RChJIHT7r3K7ZBlPvvqf
 - Playbill — "Samantha Pauly, Savy Jackson, Elizabeth Teeter, More Featured on Caesar: The Musical Recording":
-  <https://playbill.com/article/samantha-pauly-savy-jackson-elizabeth-teeter-more-featured-on-caesar-the-musical-recording>
+  https://playbill.com/article/samantha-pauly-savy-jackson-elizabeth-teeter-more-featured-on-caesar-the-musical-recording
 - BroadwayWorld — "Samantha Pauly, Savy Jackson and More to be Featured on CAESAR: THE MUSICAL Studio Cast EP":
-  <https://www.broadwayworld.com/article/Samantha-Pauly-Savy-Jackson-and-More-to-be-Featured-on-CAESAR-THE-MUSICAL-Studio-Cast-EP-20260519>
+  https://www.broadwayworld.com/article/Samantha-Pauly-Savy-Jackson-and-More-to-be-Featured-on-CAESAR-THE-MUSICAL-Studio-Cast-EP-20260519
 - Amazon — *Caesar: The Musical (2026 Studio Cast EP)*, Grace Yurchuk:
-  <https://www.amazon.com/Caesar-Musical-2026-Studio-Cast/dp/B0H1SFG1LN>
-- Spotify — *Caesar: The Musical* (EP), Grace Yurchuk: <https://open.spotify.com/album/3LGYdH5aIFGHTZWMIcRyvb>
+  https://www.amazon.com/Caesar-Musical-2026-Studio-Cast/dp/B0H1SFG1LN
+- Spotify — *Caesar: The Musical* (EP), Grace Yurchuk: https://open.spotify.com/album/3LGYdH5aIFGHTZWMIcRyvb
 - Spotify — *Caesar's Too Ambitious (Demo Cut)* (standalone single, **not on the EP**), Grace Yurchuk:
-  <https://open.spotify.com/album/5Pit6shbb3pREcOHoTH9zM>
+  https://open.spotify.com/album/5Pit6shbb3pREcOHoTH9zM
 - Apple Music — *Caesar's Too Ambitious (Demo Cut from Caesar the Musical)* (standalone single, ~2025):
-  <https://music.apple.com/ca/song/caesars-too-ambitious-demo-cut-from-caesar-the-musical/1797404527>
+  https://music.apple.com/ca/song/caesars-too-ambitious-demo-cut-from-caesar-the-musical/1797404527
 - Grace Yurchuk (**@graceyurchuk**), **Instagram** post caption — *"this CUT SONG from Caesar … won't be in the EP
   (or the show)"* — the attesting source for the cut-from-show status (screenshots provided by Logan, 2026-06-23;
   primary source, not a fetched URL).
 - The Sondheim Hub — "A Conversation with Grace Yurchuk":
-  <https://www.thesondheimhub.com/p/a-conversation-with-grace-yurchuk>
+  https://www.thesondheimhub.com/p/a-conversation-with-grace-yurchuk
 - Kickstarter — "Caesar: The Musical EP by Grace Yurchuk":
-  <https://www.kickstarter.com/projects/graceyurchuk/caesar-the-musical-ep/creator>
-- TikTok — Grace Yurchuk (@itsthegraceplace): <https://www.tiktok.com/@itsthegraceplace>
+  https://www.kickstarter.com/projects/graceyurchuk/caesar-the-musical-ep/creator
+- TikTok — Grace Yurchuk (@itsthegraceplace): https://www.tiktok.com/@itsthegraceplace
 
 ## Document Metadata
 
@@ -186,8 +186,4 @@ of the raw witness. And it sharpens the witness's own caution one turn: the text
 - **Scope:** external provenance for the song "Shall Rome," found after the witness was filed and kept separate from it
 - **Change Note:** 2026-06-22 — added *"The work and its author"* (`[research]`, fetch caveat): the EP is a crowdfunded *sample* of an in-progress all-women *Caesar: The Musical* by Grace Yurchuk; the lyrics are snapshots of a still-being-written show. Witness untouched. Same day — **corrected** the *"Caesar's Too Ambitious"* entry: it is a standalone earlier **demo** (its own cover art) that Yurchuk has said **will not make the show**, not an EP/sibling track; the over-credit in the merged `THE-LETTER-BOTH-ENDS-WITNESS` is flagged here, witness not edited. Same day — searched for external provenance that Yurchuk said it "won't make the show": **none found**; that status held `[Logan]` (memory), while the standalone / pre-EP / not-on-EP facts were `[catalog]`-attested. **2026-06-23 — resolved:** Logan supplied Yurchuk's own **Instagram** caption (`@graceyurchuk`) calling it a *"CUT SONG"* that *"won't be in the EP (or the show)"*; the claim is upgraded **`[Logan]` → `[attested]`**, the take-vs-show ambiguity resolved by the author (cut from the show).
 
----
-
-```
-The world is quiet here．Esto Perpetua!
-```
+###### "The world is quiet here."

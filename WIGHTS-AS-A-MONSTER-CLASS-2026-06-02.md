@@ -52,7 +52,7 @@ This is where "wight" becomes a **taxon** — a labeled box in the bestiary — 
 **[reading]** Across folklore, fiction, and games the undead sort along two axes — **corporeal vs. incorporeal**, and **mindless vs. intelligent**:
 
 | Type | Body | Mind | Signature |
-| --- | --- | --- | --- |
+|---|---|---|---|
 | **Skeleton** | corporeal | mindless | animated bones |
 | **Zombie** | corporeal | mindless | shambling flesh, hunger/contagion |
 | **Ghoul** | corporeal | feral | eats the dead |
@@ -87,6 +87,4 @@ Both are the dead made to keep moving. One *seizes* the persistence; the other *
 
 ---
 
-```
-The world is quiet here．Esto Perpetua!
-```
+###### "The world is quiet here."

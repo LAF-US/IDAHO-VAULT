@@ -79,7 +79,7 @@ conspirators' "charge." It is not part of the work. Original line kept, not eras
 The same letter indicts a different danger at each end:
 
 | | **Reading end — Shakespeare** | **Writing end — Yurchuk** |
-| --- | --- | --- |
+|---|---|---|
 | What is shown | the **mark** completing the forgery | the **faction** engineering it |
 | The danger | filling a gap with invented certainty | leaving a gap built to be filled |
 | The vault name | the **confabulation** — `THE-WELL-SOURCED-WRONG-ANSWER` (Brutus pieces the `*` out instead of marking it) | the **Deceiver / recruitment honeypot** — `THE-DECEIVER-HONEYPOT` (warrant manufactured, presentation perfect) |
@@ -171,8 +171,4 @@ body above without Logan's gate.*
 - **Change Note:** 2026-06-23 (Logan's direction) — corrected the *Caesar's Too Ambitious* parenthetical in "The writing end": that track is a **cut song** (not in the EP or show; Yurchuk's own caption, see `SHALL-ROME-PROVENANCE`), written from Caesar's perspective, not the conspirators' "charge." Original kept and superseded by a dated inline note; the reading otherwise stands as filed. Held without over-reading, per Logan.
 - **Scope:** the planted letter shown from both ends — Brutus reading (Shakespeare) and the faction writing (Yurchuk); the "&c." as the gap that is the instrument
 
----
-
-```
-The world is quiet here．Esto Perpetua!
-```
+###### "The world is quiet here."

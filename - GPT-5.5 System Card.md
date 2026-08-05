@@ -5,10 +5,7 @@ author:
 published:
 created: 2026-06-14
 description: "GPT-5.5 is a new model designed for complex, real-world work, including writing code, researching online, analyzing information, creating documents and spreadsheets, and moving across tools to get things done. Relative to earlier models, GPT-5.5 understands the task earlier, asks for less guidance, uses tools more effectively, checks it work and keeps going until it’s done."
-date created: Sunday, June 14th 2026, 12:47:37 pm
-date modified: Sunday, June 14th 2026, 12:47:54 pm
 ---
-
 GPT-5.5 is a new model designed for complex, real-world work, including writing code, researching online, analyzing information, creating documents and spreadsheets, and moving across tools to get things done. Relative to earlier models, GPT-5.5 understands the task earlier, asks for less guidance, uses tools more effectively, checks it work and keeps going until it’s done.
 
 We subjected the model to our full suite of predeployment safety evaluations and our Preparedness Framework, including targeted red-teaming for advanced cybersecurity and biology capabilities, and collected feedback on real use cases from nearly 200 early-access partners before release. We are releasing GPT-5.5 with our strongest set of safeguards to date, designed to reduce misuse while preserving legitimate, beneficial uses of advanced capabilities.
