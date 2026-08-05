@@ -22,14 +22,14 @@ Insert the `wayback:` line directly after the `URL:` field.
 
 ### `SOURCES/NEWS MEDIA/2023-05-03 - VICE - Accessing Porn In Utah Is Now a Complicated Process That Requires a Picture of Your Face.md`
 
-```markdown
+```
 URL: https://www.vice.com/en/article/z3mnqx/utah-age-verification-pornhub-xhamster-laws
 wayback: https://web.archive.org/web/20230503182929/https://www.vice.com/en/article/z3mnqx/utah-age-verification-pornhub-xhamster-laws
 ```
 
 ### `SOURCES/NEWS MEDIA/2023-06-15 - New York Times - Oregon Town's Marijuana Boom Yields Envy in Idaho.md`
 
-```markdown
+```
 URL: https://www.nytimes.com/2023/06/15/business/economy/oregon-idaho-marijuana.html
 wayback: https://web.archive.org/web/20230615100122/https://www.nytimes.com/2023/06/15/business/economy/oregon-idaho-marijuana.html
 ```

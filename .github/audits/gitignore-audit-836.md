@@ -2,7 +2,7 @@
 
 ## Current .gitignore (as of this audit)
 
-```markdown
+```
 # The *default* assumption for the VAULT is that things need to be tracked. The *only* exceptions to that sole assumption are **secrets** and **exhaust**. Tread lightly here.
 
 # Keep markdown and dotstubs

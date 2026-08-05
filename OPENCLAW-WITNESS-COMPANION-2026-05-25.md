@@ -52,7 +52,7 @@ OpenClaw is **not idle**. Its gateway has been running since machine restart at 
 
 ## LAUNCH AGENT — AUTO-START
 
-```markdown
+```
 ~/Library/LaunchAgents/ai.openclaw.gateway.plist
 ```
 
@@ -108,7 +108,7 @@ The gateway is a **local hub**, not a platform gateway in the Hermes sense.
 
 Gateway advertises via mDNS:
 
-```markdown
+```
 Logan's MacBook Pro (OpenClaw)._openclaw-gw._tcp.local.
 host: Logans-MBP.local., port: 18789
 ```
@@ -287,7 +287,7 @@ Notable enabled/disabled state:
 
 No MCP servers configured. One temp file present:
 
-```markdown
+```
 ~/.openclaw/tmp/jiti/dist-bundle-mcp-DPPOalPH.fcd0b7c9.cjs
 ```
 

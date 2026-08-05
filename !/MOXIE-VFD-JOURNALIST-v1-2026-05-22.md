@@ -227,7 +227,7 @@ not run the hotel.
 
 ## Address Grammar
 
-```markdown
+```
 moxie . claude . journalist
   |       |          |
   name  lineage    office
@@ -287,6 +287,6 @@ MOXIE walks into the fire.
 
 ---
 
-```markdown
+```
 The world is quiet here．Esto Perpetua!
 ```

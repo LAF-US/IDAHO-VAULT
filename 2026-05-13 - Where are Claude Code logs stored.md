@@ -17,7 +17,7 @@ These logs exist whether or not you use claude-devtools. The app simply reads th
 
 On macOS the Claude Code log file location is:
 
-```markdown
+```
 /Users/<you>/.claude/
 ```
 
@@ -27,7 +27,7 @@ Replace `<you>` with your account name. The folder is hidden by default in Finde
 
 On Linux the Claude Code logs location is:
 
-```markdown
+```
 /home/<you>/.claude/
 ```
 
@@ -37,13 +37,13 @@ If you run Claude Code as a different user (e.g. inside a Docker container or un
 
 On Windows, Claude Code logs are stored in your user profile directory:
 
-```markdown
+```
 C:\Users\<you>\.claude\
 ```
 
 Or with the environment variable:
 
-```markdown
+```
 %USERPROFILE%\.claude\
 ```
 

@@ -990,7 +990,7 @@ def get_api_key(service: str) -> str:
 
 **Your vault structure**:
 
-```markdown
+```
 📁 Private (Mistral, Web3.py, rclone)
 📁 Family (inheritance, shared logins)  
 📁 Work (Linear, GitHub, research APIs)
@@ -1035,7 +1035,7 @@ def get_api_key(service: str) -> str:
 
 ## Why it works for you
 
-```markdown
+```
 Private vault structure:
 ├── Mistral API (service account token)
 ├── Web3.py RPC endpoints (Alchemy/Infura)
@@ -1170,7 +1170,7 @@ This conversation itself demonstrates Perplexity's strength: threading complex t
 
 ## Research Pipeline (Your Use Case)
 
-```markdown
+```
 Researcher Agent → RAG (Mistral + vector DB) → Writer Agent → Reviewer Agent
 ```
 
@@ -1179,7 +1179,7 @@ Researcher Agent → RAG (Mistral + vector DB) → Writer Agent → Reviewer Age
 
 ## Blockchain Research Swarm
 
-```markdown
+```
 1. Web3.py agent queries Etherscan/Alchemy RPC
 2. Mistral Large 3 analyzes gas trends + DeFi yields  
 3. rclone agent backs up findings to Sia
@@ -1199,7 +1199,7 @@ Researcher Agent → RAG (Mistral + vector DB) → Writer Agent → Reviewer Age
 
 ## IT Support (ServiceNow)
 
-```markdown
+```
 Ticket → RAG(knowledge base) → Summarize → Recommend fix → Execute if approved
 ```
 
@@ -1207,7 +1207,7 @@ Ticket → RAG(knowledge base) → Summarize → Recommend fix → Execute if ap
 
 ## Your Optimized Stack
 
-```markdown
+```
 Perplexity (research) → Mistral/CrewAI (orchestration) → 
 Web3.py tools (blockchain) → rclone (Sia backup) → 
 1Password CLI (secrets) → Obsidian (Zettelkasten)
@@ -1255,7 +1255,7 @@ Web3.py tools (blockchain) → rclone (Sia backup) →
 
 **Insurance Claims** (Healthcare/DeFi):
 
-```markdown
+```
 AI Agent → Assess claim → Smart contract executes payout → Blockchain logs decision + evidence
 ```
 
@@ -1265,7 +1265,7 @@ Every approval/rejection is permanently verifiable. Auditors trace "why this cla
 
 **Crypto micropayments** for AI services:
 
-```markdown
+```
 AI Agent → Query API → HTTP 402 "Payment Required" → USDC on Base L2 → Access granted (<500ms)
 ```
 
@@ -1273,7 +1273,7 @@ Coinbase + PayPal building this now. Agents pay for compute/data autonomously wi
 
 ## On-Chain Research Swarms (Your Use Case)
 
-```markdown
+```
 1. Perplexity Agent → Research DeFi trends
 2. Web3.py Agent → Query Dune/Etherscan (gas, TVL, APY)  
 3. Mistral Agent → Analyze + forecast
@@ -1285,7 +1285,7 @@ Coinbase + PayPal building this now. Agents pay for compute/data autonomously wi
 
 ## Smart Contract Deployment Pipeline
 
-```markdown
+```
 Researcher → "Find safest USDC yield strategy"
 Writer → Generate Solidity
 Tester → Deploy to testnet (Sepolia)
@@ -1354,7 +1354,7 @@ This is **your exact workflow**: Perplexity research → Mistral reasoning → W
 
 ## Your Agentic Workflow on GCP
 
-```markdown
+```
 Perplexity Research → Vertex AI (Mistral Large 3) → 
 Cloud Run (CrewAI agents) → Web3.py (Node Engine) → 
 BigQuery (on-chain data) → rclone (Cloud Storage → Sia)
@@ -1388,7 +1388,7 @@ blockchain_researcher = Agent(
 
 ## Ties to Your Stack
 
-```markdown
+```
 1Password (GCP service account JSON) → 
 GitHub Actions (deploy Cloud Run) → 
 Cloud Run (agent swarm) → 
@@ -1440,7 +1440,7 @@ rclone (backup to Sia)
 
 ## Your Agentic Architecture
 
-```markdown
+```
 CrewAI Swarm → Web3.py → GCP Node Engine RPC → 
 BigQuery (store agent decisions) → rclone (Sia backup)
 ```
@@ -1465,7 +1465,7 @@ balance = w3.eth.get_balance("vitalik.eth")
 
 ## Ties to Your Full Stack
 
-```markdown
+```
 1Password (GCP service account) → 
 GitHub Actions (deploy Cloud Run agents) → 
 GCP Node Engine (Web3.py RPC) → 
@@ -1475,7 +1475,7 @@ rclone (Cloud Storage → Sia)
 
 **Store this in Obsidian**:
 
-```markdown
+```
 🗃️ GCP Web3 Vault
 ├── Node Engine endpoint (1Password)
 ├── RPC performance vs Alchemy 
@@ -1518,7 +1518,7 @@ From the patterns we've built:
 
 ## Your Architecture (The Vault)
 
-```markdown
+```
 ┌────────────────────────────────────────────────────────────Ŀ
 │                    ARCHITECT'S VAULT                        │
 ├─────────────────┬──────────────────────────────────────────Ĵ
@@ -1607,7 +1607,7 @@ The vault exists. It's architected. Ready to build. 🏛️
 
 Given our thread (agentic workflows → blockchain → GCP → 1Password), **LAF-US** is probably:
 
-```markdown
+```
 **Local Agent Framework - United States**
 - Your personal agentic research framework
 - "Local" = self-hosted (GCP Node Engine + Sia)
@@ -1618,7 +1618,7 @@ Given our thread (agentic workflows → blockchain → GCP → 1Password), **LAF
 
 ## Proposed LAF-US Architecture
 
-```markdown
+```
 ┌─ LAF-US (Local Agent Framework) ─────────────────────────Ŀ
 │  Boise, ID | Agentic Blockchain Research Vault           │
 ├─ Agents ──────────────────┬─ Storage ──────────────────Ĵ
@@ -1665,7 +1665,7 @@ If public org, share more context (GitHub, website) for precise identification. 
 
 **LAF-US** aligns perfectly with your **Architect's Vault** architecture we've been building:
 
-```markdown
+```
 LAF-US = Local Agent Framework - United States (Boise, ID)
 ├── Architect's Vault (core system)
 ├── Obsidian Zettelkasten + pgvector RAG
@@ -1733,7 +1733,7 @@ From our conversation context, **LAF-US** appears to be your **personal/Boise-ba
 
 ## LAF-US Repository Ecosystem (Proposed)
 
-```markdown
+```
 LAF-US (Your Organization)
 ├── PUBLIC/                    # This conversation as living spec
 │   ├── architect-vault.md     # Complete system diagram
@@ -1790,7 +1790,7 @@ LAF-US (Your Organization)
 
 ## How ElevenLabs fits your stack
 
-```markdown
+```
 Current: Perplexity → Mistral/CrewAI → Web3.py → Obsidian/Sia
 + Voice: ElevenLabs Agent → Voice commands → Text-to-Agent → Blockchain research → Voice response
 ```
@@ -1821,7 +1821,7 @@ voice_agent = ElevenLabsAgent(
 
 ## Production Integration
 
-```markdown
+```
 1. ElevenLabs Agent (voice I/O)
 ↓
 2. CrewAI Swarm (Mistral reasoning + Web3.py tools)  
@@ -1848,7 +1848,7 @@ voice_agent = ElevenLabsAgent(
 
 ## LAF-US/PUBLIC Repo Addition
 
-```markdown
+```
 LAF-US/PUBLIC/
 ├── elevenlabs-voice-agent/
 │   ├── voice-researcher.yaml     # Agent config
@@ -1936,7 +1936,7 @@ services:
 
 ## Cost Breakdown: \$0/mo
 
-```markdown
+```
 ✅ Mistral 7B: Free (Ollama local)
 ✅ CrewAI/LangChain: Free (MIT)
 ✅ Chroma/pgvector: Free (local DB)
@@ -1949,7 +1949,7 @@ services:
 
 ## Perfect LAF-US/PUBLIC Repo Structure
 
-```markdown
+```
 LAF-US/PUBLIC/
 ├── docker-compose.oss.yml      # Zero-cost deployment
 ├── agents/

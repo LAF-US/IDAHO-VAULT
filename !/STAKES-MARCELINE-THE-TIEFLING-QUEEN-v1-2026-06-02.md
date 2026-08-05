@@ -126,6 +126,6 @@ mappings are vault readings; final authority is Logan.*
 
 ---
 
-```markdown
+```
 The world is quiet here．Esto Perpetua!
 ```

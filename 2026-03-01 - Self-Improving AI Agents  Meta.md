@@ -71,7 +71,7 @@ Loop 3 — Self-Improvement
 
 The system modifies its own task logic *and* its own improvement logic based on evaluation feedback, using an archive of historically successful variants as stepping stones. This is the loop unique to HyperAgents.
 
-```markdown
+```
 ┌────────────────────────────────────────────────────────────────────Ŀ
 │  Archive  (population of historically successful agent variants)     │
 │     │                                                               │
@@ -321,7 +321,7 @@ Environment setup, API key configuration (OpenAI, Anthropic, Google), Docker ima
 
 If you use HyperAgents in your research, please cite the original paper:
 
-```markdown
+```
 @misc{zhang2026hyperagents,
       title={Hyperagents},
       author={Jenny Zhang and Bingchen Zhao and Wannan Yang

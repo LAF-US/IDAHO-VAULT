@@ -14,7 +14,7 @@ created: 2026-04-13
 
 ##### Code
 
-```markdown
+```
 mermaidmindmap
   root((mindmap))
     Origins
@@ -40,7 +40,7 @@ The syntax for creating Mindmaps is simple and relies on indentation for setting
 
 In the following example you can see how there are 3 different levels. One with starting at the left of the text and another level with two rows starting at the same column, defining the node A. At the end there is one more level where the text is indented further than the previous lines defining the nodes B and C.
 
-```markdown
+```
 mindmap
     Root
         A
@@ -52,7 +52,7 @@ In summary is a simple text outline where there is one node at the root level ca
 
 ##### Code
 
-```markdown
+```
 mermaidmindmap
 Root
     A
@@ -118,7 +118,7 @@ Mindmap can show the following shapes:
 
 ##### Code
 
-```markdown
+```
 mermaidmindmap
     id[I am a square]
 ```
@@ -129,7 +129,7 @@ mermaidmindmap
 
 ##### Code
 
-```markdown
+```
 mermaidmindmap
     id(I am a rounded square)
 ```
@@ -140,7 +140,7 @@ mermaidmindmap
 
 ##### Code
 
-```markdown
+```
 mermaidmindmap
     id((I am a circle))
 ```
@@ -151,7 +151,7 @@ mermaidmindmap
 
 ##### Code
 
-```markdown
+```
 mermaidmindmap
     id))I am a bang((
 ```
@@ -180,7 +180,7 @@ mermaidmindmap
 
 ##### Code
 
-```markdown
+```
 mermaidmindmap
     id)I am a cloud(
 ```
@@ -205,7 +205,7 @@ mermaidmindmap
 
 ##### Code
 
-```markdown
+```
 mermaidmindmap
     id{{I am a hexagon}}
 ```
@@ -216,7 +216,7 @@ mermaidmindmap
 
 ##### Code
 
-```markdown
+```
 mermaidmindmap
     I am the default shape
 ```
@@ -244,7 +244,7 @@ As with flowcharts you can add icons to your nodes but with an updated syntax. T
 
 ##### Code
 
-```markdown
+```
 mermaidmindmap
     Root
         A
@@ -283,7 +283,7 @@ Again the syntax for adding classes is similar to flowcharts. You can add classe
 
 ##### Code
 
-```markdown
+```
 mermaidmindmap
     Root
         A[A]
@@ -322,7 +322,7 @@ mermaidmindmap
 
 The actual indentation does not really matter only compared with the previous rows. If we take the previous example and disrupt it a little we can see how the calculations are performed. Let us start with placing C with a smaller indentation than `B` but larger then `A`.
 
-```markdown
+```
 mindmap
     Root
         A
@@ -334,7 +334,7 @@ This outline is unclear as `B` clearly is a child of `A` but when we move on to 
 
 ##### Code
 
-```markdown
+```
 mermaidmindmap
 Root
     A
@@ -394,7 +394,7 @@ The "Markdown Strings" feature enhances mind maps by offering a more versatile s
 
 ##### Code
 
-```markdown
+```
 mermaidmindmap
     id1["\`**Root** with
 a second line
@@ -441,7 +441,7 @@ You can also refer the [implementation in the live editor](https://github.com/me
 
 Mermaid also supports a Tidy Tree layout for mindmaps.
 
-```markdown
+```
 ---
 config:
   layout: tidy-tree

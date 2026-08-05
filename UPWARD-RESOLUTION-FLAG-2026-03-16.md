@@ -212,7 +212,7 @@ See **DECISIONS.md** "Pending Decisions" section:
 
 ## COMMIT SUMMARY
 
-```markdown
+```
 commit ad3fa6d
 Author: Claude Code <claude@anthropic.com>
 Date:   2026-03-16 (timestamp)

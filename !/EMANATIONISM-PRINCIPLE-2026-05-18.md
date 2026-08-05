@@ -101,6 +101,6 @@ If those answers are missing, pause and restore the chain before proceeding.
 
 ---
 
-```markdown
+```
 The world is quiet here．Esto Perpetua!
 ```

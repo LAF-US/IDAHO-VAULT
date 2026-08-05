@@ -65,7 +65,7 @@ Before generating tasks, verify:
 
 6. **Validate Checkpoint**:
 
-   ```markdown
+   ```
    CRITICAL ERRORS (must fix before proceeding):
    - Any plan item with status: "missing"
    - Coverage percentage < 100%

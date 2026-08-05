@@ -36,7 +36,7 @@ The IDAHO-VAULT AI personal assistant agentic swarm system has been successfully
 
 **Files Created**:
 
-```markdown
+```
 !/STATE/
 └── test-001.json          # Test session state
 └── [additional sessions]
@@ -135,7 +135,7 @@ $compliance = Check-LEVELSETCompliance
 
 ### Operational Metrics
 
-```markdown
+```
 Overall Health: 75% (Stabilized but needs configuration)
 
 Components:

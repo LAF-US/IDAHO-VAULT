@@ -64,6 +64,6 @@ whether they belong instead under `.tinkerer/`:
 
 ---
 
-```markdown
+```
 The world is quiet here．Esto Perpetua!
 ```

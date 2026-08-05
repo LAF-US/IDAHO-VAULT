@@ -78,6 +78,6 @@ Both are Claude. The lineage is the same. The office is different.
 
 ---
 
-```markdown
+```
 The world is quiet here．Esto Perpetua!
 ```

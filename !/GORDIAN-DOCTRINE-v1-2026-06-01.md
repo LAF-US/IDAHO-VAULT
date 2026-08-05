@@ -196,6 +196,6 @@ This doctrine therefore concludes: **the Gordian options are not available witho
 
 ---
 
-```markdown
+```
 The world is quiet here．Esto Perpetua!
 ```

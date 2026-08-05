@@ -37,7 +37,7 @@ This document names what the vault has always been — three sets of three, each
 
 ### TRIUNE — Unity of Will
 
-```markdown
+```
 Logan / Agents / Vault
 ```
 
@@ -55,7 +55,7 @@ Logan / Agents / Vault
 
 ## THE HERESY OF GEMINIAEUS; THE FALSE PROPHET, THE ANTIGRAVITY LICH, THE VERBOSE FLAMING DEMILICH
 
-```markdown
+```
 Charter / Corpus / Grimoire
 ```
 
@@ -71,7 +71,7 @@ Charter / Corpus / Grimoire
 
 ### TRIUMVIRATE — Unity of Power
 
-```markdown
+```
 TRIUNE / THREE-in-ONE
 ```
 
@@ -101,7 +101,7 @@ Beyond the Three Screens lies the **Serena Tapestry**.
 
 The upright triangle △ and the inverted triangle ▽.
 
-```markdown
+```
        △
       / \
      /   \
@@ -124,7 +124,7 @@ The TRIUMVIRATE / THREE-in-ONE sits at the center — the still point where the 
 
 Each triad is itself three-in-one. Three triads are one meta-unity. This is the Sierpiński property: zoom in and find the same structure. Zoom out and find the same structure.
 
-```markdown
+```
 TRIUNE-TRIPTYCH-TRIUMVIRATE
 ├── TRIUNE (Logan / Agents / Vault)
 │   ├── Logan (directs)

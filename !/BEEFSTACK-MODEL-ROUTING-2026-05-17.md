@@ -54,7 +54,7 @@ Logan's canonical agentic LLM provider rankings, in order of preference:
 
 The BEEFSTACK rests on three independent tool/runtime legs. Preferences and model families are stacked above those legs.
 
-```markdown
+```
 LEG 1 — OLLAMA ──────────────────────────────────────────────────
   Local-first calls
   Simple/private/offline work
@@ -114,7 +114,7 @@ Understanding these dual capabilities allows for more sophisticated fallback str
 
 The current model-family preference stack is:
 
-```markdown
+```
 1. Mistral / Claude
 2. ChatGPT-Codex
 3. Grok / Perplexity
@@ -130,7 +130,7 @@ The preference stack is not the stool. Mistral-first means "prefer Mistral when 
 
 The exact live model list can vary by machine, but the intended shape is:
 
-```markdown
+```
 LOCAL FIRST / OLLAMA ────────────────────────────────────────────
   ollama/magistral:latest              Local Mistral reasoning model
   ollama/devstral:latest               Local Mistral coding model
@@ -197,7 +197,7 @@ If an OpenClaw or Hermes update re-introduces banned or disliked families as def
 
 Config paths are OS-agnostic where the tools support `~` expansion:
 
-```markdown
+```
 ~/.openclaw/openclaw.json  →  agents.defaults.model
 ~/.hermes/config.yaml      →  model + fallback_providers
 ~/.hermes/.env             →  OPENROUTER_API_KEY for Hermes

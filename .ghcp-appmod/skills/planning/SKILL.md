@@ -54,7 +54,7 @@ You **MUST** consider the user input before proceeding (if not empty).
 
 7. **Validate Checkpoint**:
 
-   ```markdown
+   ```
    CRITICAL ERRORS (must fix before proceeding):
    - Any requirement with status: "missing"
    - Coverage percentage < 100%

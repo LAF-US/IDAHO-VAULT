@@ -47,6 +47,6 @@ This is an Obsidian.md vault.
 
 ---
 
-```markdown
+```
 The world is quiet here．Esto Perpetua!
 ```

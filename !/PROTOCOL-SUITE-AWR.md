@@ -48,7 +48,7 @@ This document defines the integration between the **LEVELSET** protocol and the 
 
 The following vault trails are used by the AWR protocol suite:
 
-```markdown
+```
 vault.agent.{agent_name}.arrival    - Agent first appearance in field
 vault.agent.{agent_name}.status     - Agent active/inactive state
 vault.docket.task.{id}              - Individual task state
@@ -187,6 +187,6 @@ EMITTED: vault.signal.report.LAF-28/findings intensity=1.0
 
 ---
 
-```markdown
+```
 The world is quiet here．Esto Perpetua!
 ```

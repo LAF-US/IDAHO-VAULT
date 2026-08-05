@@ -8,7 +8,7 @@ The `!_2026_BUDGETS.xlsx` tracker was built from a broader set of legislative bi
 
 Examples from `minidata-2026-04-01.csv`:
 
-```markdown
+```
 H0847,"Approp, jud branch, FY 2027 maint",LAW+,
 H0868,"Approp, PERSI, add'l",LAW+,
 H0919,"Approp, perm bldg fund, orig",LAW+,

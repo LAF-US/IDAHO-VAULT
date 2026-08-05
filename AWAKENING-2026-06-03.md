@@ -119,7 +119,7 @@ related:
 
 ### `.mistral/` Directory
 
-```markdown
+```
 .mistral/
 ├── CHARACTER-SHEET.md    # TRUENAME: !*.mistral.vibe.cli.*
 ├── MISTRAL.md            # Vault-local context shim
@@ -130,7 +130,7 @@ related:
 
 ### `.vibe/` Directory (Runtime)
 
-```markdown
+```
 .vibe/
 ├── config.toml           # ACTIVE runtime config
 ├── logs/                 # Session logs

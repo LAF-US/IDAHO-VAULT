@@ -112,7 +112,7 @@ related:
 
 ## STIGMERGIC SIGNAL EMITTED
 
-```markdown
+```
 Trail: vault.agent.big-pickle
 Event: arrival
 Intensity: 1.0

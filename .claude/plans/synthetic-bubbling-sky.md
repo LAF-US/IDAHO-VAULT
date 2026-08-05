@@ -81,7 +81,7 @@ The JFAC Crew exists in `.crewai/` but has **never run end-to-end**. Two additio
 
 ## Execution Order
 
-```markdown
+```
 Step 1: Write B's alignment brief → !/GRIMOIRE/
 Step 2: Add crewai to requirements.txt
 Step 3: Build MANIFEST.md

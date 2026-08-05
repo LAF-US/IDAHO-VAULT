@@ -75,6 +75,6 @@ in this vault is like that: trivially small payload, magnificently verified chan
 
 ---
 
-```markdown
+```
 The world is quiet here．Esto Perpetua!
 ```

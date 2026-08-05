@@ -60,7 +60,7 @@ Copilot — two documents exist for you. Logan will paste whichever is appropria
 
 **Logan: this file lives on a different branch. To view:**
 
-```markdown
+```
 git show origin/claude/public-conversation-setup-zl2oe:!ADMINISTRATION/CONTEXT-PASSOVER-COPILOT-2026-03-16.md
 ```
 

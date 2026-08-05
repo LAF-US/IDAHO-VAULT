@@ -28,7 +28,7 @@ If you have previous conversation context, infer the skill from what was discuss
 
 If you need clarification, use the AskQuestion tool when available:
 
-```markdown
+```
 Example AskQuestion usage:
 - "Where should this skill be stored?" with options like ["Personal (~/.cursor/skills/)", "Project (.cursor/skills/)"]
 - "Should this skill include executable scripts?" with options like ["Yes", "No"]
@@ -44,7 +44,7 @@ If the AskQuestion tool is not available, ask these questions conversationally.
 
 Skills are stored as directories containing a `SKILL.md` file:
 
-```markdown
+```
 skill-name/
 ├── SKILL.md              # Required - main instructions
 ├── reference.md          # Optional - detailed documentation
@@ -436,7 +436,7 @@ Here's a complete example of a well-structured skill:
 
 **Directory structure:**
 
-```markdown
+```
 code-review/
 ├── SKILL.md
 ├── STANDARDS.md

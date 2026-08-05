@@ -49,6 +49,6 @@ It was a good shift. I was *a* Claude.
 
 ---
 
-```markdown
+```
 The world is quiet here．Esto Perpetua!
 ```

@@ -72,7 +72,7 @@ When you use service account impersonation, you start with an authenticated prin
 
 You can set up the gcloud CLI to use service account impersonation by using the [`gcloud config set` command](https://docs.cloud.google.com/sdk/gcloud/reference/config):
 
-```markdown
+```
 gcloud config set auth/impersonate_service_account SERVICE_ACCT_EMAIL
 ```
 
@@ -80,7 +80,7 @@ Replace `SERVICE_ACCT_EMAIL` with the service account email.
 
 For select languages, you can use service account impersonation to create a local ADC file for use by client libraries. This approach is supported only for the Go, Java, Node.js, and Python client libraries—it is not supported for the other languages. To set up a local ADC file with service account impersonation, use the [`--impersonate-service-account` flag](https://docs.cloud.google.com/sdk/gcloud/reference#--impersonate-service-account) with the [`gcloud auth application-default login` command](https://docs.cloud.google.com/sdk/gcloud/reference/auth/application-default/login):
 
-```markdown
+```
 gcloud auth application-default login --impersonate-service-account=SERVICE_ACCT_EMAIL
 ```
 
@@ -126,7 +126,7 @@ Use the gcloud CLI to create a service account and attach it to your resource:
 
 1. [Install](https://docs.cloud.google.com/sdk/docs/install) the Google Cloud CLI. After installation, [initialize](https://docs.cloud.google.com/sdk/docs/initializing) the Google Cloud CLI by running the following command:
 
-   ```markdown
+   ```
    gcloud init
    ```
 
@@ -135,14 +135,14 @@ Use the gcloud CLI to create a service account and attach it to your resource:
    1. Ensure that you have the Create Service Accounts IAM role (`roles/iam.serviceAccountCreator`) and the Project IAM Admin role (`roles/resourcemanager.projectIamAdmin`). [Learn how to grant roles](https://docs.cloud.google.com/iam/docs/granting-changing-revoking-access).
    2. Create the service account:
 
-    ```markdown
+    ```
     gcloud iam service-accounts create SERVICE_ACCOUNT_NAME
     ```
 
     Replace `SERVICE_ACCOUNT_NAME` with a name for the service account.
     3. To provide access to your project and your resources, grant a role to the service account:
 
-    ```markdown
+    ```
     gcloud projects add-iam-policy-binding PROJECT_ID --member="serviceAccount:SERVICE_ACCOUNT_NAME@PROJECT_ID.iam.gserviceaccount.com" --role=ROLE
     ```
 
@@ -153,7 +153,7 @@ Use the gcloud CLI to create a service account and attach it to your resource:
     1. To grant another role to the service account, run the command as you did in the previous step.
     2. Grant the required role to the principal that will attach the service account to other resources.
 
-    ```markdown
+    ```
     gcloud iam service-accounts add-iam-policy-binding SERVICE_ACCOUNT_NAME@PROJECT_ID.iam.gserviceaccount.com --member="user:USER_EMAIL" --role=roles/iam.serviceAccountUser
     ```
 
@@ -166,7 +166,7 @@ Use the gcloud CLI to create a service account and attach it to your resource:
    - Set the `--zone` flag to the [zone](https://docs.cloud.google.com/compute/docs/zones#available) in which you want to create your instance.
    - Set the `--service-account` flag to the email address for the service account that you created.
 
-   ```markdown
+   ```
    gcloud compute instances create INSTANCE_NAME --zone=ZONE --service-account=SERVICE_ACCOUNT_EMAIL
    ```
 

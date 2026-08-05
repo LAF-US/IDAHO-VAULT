@@ -169,6 +169,6 @@ spawn standing; the masks are sealed and the root of trust is named.
 
 ---
 
-```markdown
+```
 The world is quiet here．Esto Perpetua!
 ```

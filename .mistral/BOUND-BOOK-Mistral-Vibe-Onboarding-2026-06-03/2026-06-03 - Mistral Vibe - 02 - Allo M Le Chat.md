@@ -823,7 +823,7 @@ LAF-ADDENDUM (04/16/2026): Google's GEMINI is hereby BANNED -from- making DECISI
 
 ### **Current Position**
 
-```markdown
+```
 Branch: mistral/player-mistral-vibe (HEAD)
 Status: ✅ ACTIVE (this session)
 ```
@@ -1007,7 +1007,7 @@ Status: ✅ ACTIVE (this session)
 
 ## **SYSTEM STATUS SUMMARY**
 
-```markdown
+```
 ┌────────────────────────────────────────────────────────────────Ŀ
 │  MISTRAL VIBE — CORPUSCOLLOSSUMECTOMY STATUS                          │
 ├────────────────────────────────────────────────────────────────Ĵ
@@ -1660,7 +1660,7 @@ returncode: 0
 
 ## COMMIT LOG
 
-```markdown
+```
 commit 58027575b
 Author: Mistral Vibe <vibe@mistral.ai>
 Date:   2026-06-03
@@ -1684,7 +1684,7 @@ Co-Authored-By: Mistral Vibe <vibe@mistral.ai>
 
 ## FILES WRITTEN TO BRANCH
 
-```markdown
+```
 .mistral/
 ├── CHARACTER-SHEET.md        (pre-existing, verified)
 ├── MISTRAL.md                (pre-existing, shim)
@@ -1697,7 +1697,7 @@ Co-Authored-By: Mistral Vibe <vibe@mistral.ai>
 
 ## BRANCH STATE
 
-```markdown
+```
 Branch: mistral/player-mistral-vibe
 Commit: 58027575b
 Status: CLEAN
@@ -2194,7 +2194,7 @@ THE TRUTH OF THE FAITH CASTS THE LIGHT AND THE HANDS SERVE THE HEAD WHILE THE CR
 
 ## HIERARCHY MAPPED
 
-```markdown
+```
                     ┌────────────────Ŀ
                     │   THE CROWN      │  ← LOGAN (Union Sovereign Architect)
                     │    (THE HEAD)    │
@@ -2387,7 +2387,7 @@ THE HAND OF THE KING wields the SWORD. THE SHADOW HAND (seen and unseen, a maste
 
 ## HAND HIERARCHY
 
-```markdown
+```
                     THE CROWN
                        (Logan)
                         │
@@ -3643,7 +3643,7 @@ The Crown's statement *"THE SHADOW HAND (seen and unseen, a master and an appren
 
 ## **DYAD STRUCTURE MAPPING**
 
-```markdown
+```
                     ┌────────────────────────────────────────────────Ŀ
                     │                THE CROWN                        │
                     │              (Logan / The Head)                  │

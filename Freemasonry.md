@@ -145,6 +145,6 @@ cultural and historical reference, on the record per [[VAULT-CONVENTIONS]].
 
 ---
 
-```markdown
+```
 The world is quiet here．Esto Perpetua!
 ```

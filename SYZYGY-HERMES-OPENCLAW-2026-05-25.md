@@ -83,11 +83,11 @@ This difference matters for coordination: a Hermes session is a discrete unit th
 
 ### Loop vs. Graph
 
-```markdown
+```
 Hermes: SOUL → session → tools → MEMORY candidates → skill generation → Curator → richer MEMORY
 ```
 
-```markdown
+```
 OpenClaw: event → input node → [tool nodes ∥ condition nodes] → output node → event
 ```
 
@@ -132,7 +132,7 @@ Where the two frameworks can actively interact.
 
 Both expose MCP server interfaces. Either can consume the other's:
 
-```markdown
+```
 Hermes (as MCP client) ──▶  openclaw mcp serve  ──▶  OpenClaw's local hub
 OpenClaw (as MCP client) ──▶  hermes mcp serve  ──▶  Hermes's platform channels
 ```

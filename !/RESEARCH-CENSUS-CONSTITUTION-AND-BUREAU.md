@@ -138,7 +138,7 @@ Major divisions:
 
 The Census Bureau defines a hierarchy of geographic entities:
 
-```markdown
+```
 Nation
   ├── Regions (4)
   │   └── Divisions (9)
@@ -205,6 +205,6 @@ The census is not a count of citizens. It is a count of persons. That distinctio
 
 ---
 
-```markdown
+```
 The world is quiet here．Esto Perpetua!
 ```

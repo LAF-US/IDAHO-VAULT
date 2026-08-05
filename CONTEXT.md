@@ -36,7 +36,7 @@ It is the formal mechanism by which agents establish, retrieve, and share contex
 
 ## Role in the Protocol Stack
 
-```markdown
+```
 AWAKEN ──────────────────────► RISE
    │                                │
    │                                │
@@ -180,6 +180,6 @@ Pending:
 
 ---
 
-```markdown
+```
 The world is quiet here．Esto Perpetua!
 ```

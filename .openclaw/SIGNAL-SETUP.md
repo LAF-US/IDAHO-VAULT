@@ -81,7 +81,7 @@ Run the directory setup script:
 
 Or manually create:
 
-```markdown
+```
 .openclaw\credentials\signal\default\
 ```
 
@@ -113,7 +113,7 @@ robocopy "%USERPROFILE%\.local\share\signal-cli" "C:\Users\loganf\Documents\IDAH
 
 2. **Check OpenClaw logs** for Signal channel activity:
 
-   ```markdown
+   ```
    .openclaw\logs\
    ```
 

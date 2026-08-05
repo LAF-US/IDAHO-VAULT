@@ -12,7 +12,7 @@ Mermaid can render Git diagrams
 
 ##### Code
 
-```markdown
+```
 mermaid---
 title: Example Git diagram
 ---
@@ -56,7 +56,7 @@ A simple gitgraph showing three commits on the default (***main***) branch:
 
 ##### Code
 
-```markdown
+```
 mermaid    gitGraph
        commit
        commit
@@ -75,7 +75,7 @@ Let us see how this works with the help of the following diagram:
 
 ##### Code
 
-```markdown
+```
 mermaid    gitGraph
        commit id: "Alpha"
        commit id: "Beta"
@@ -102,7 +102,7 @@ Let us see how these different commit type look with the help of the following d
 
 ##### Code
 
-```markdown
+```
 mermaid    gitGraph
        commit id: "Normal"
        commit
@@ -124,7 +124,7 @@ Let us see how this works with the help of the following diagram:
 
 ##### Code
 
-```markdown
+```
 mermaid    gitGraph
        commit
        commit id: "Normal" tag: "v1.0.0"
@@ -149,7 +149,7 @@ Let see this in an example:
 
 ##### Code
 
-```markdown
+```
 mermaid    gitGraph
        commit
        commit
@@ -173,7 +173,7 @@ Let see modify our previous example:
 
 ##### Code
 
-```markdown
+```
 mermaid    gitGraph
        commit
        commit
@@ -202,7 +202,7 @@ Let us modify our previous example to merge our two branches:
 
 ##### Code
 
-```markdown
+```
 mermaid    gitGraph
        commit
        commit
@@ -234,7 +234,7 @@ Let us see how this works with the help of the following diagram:
 
 ##### Code
 
-```markdown
+```
 mermaid    gitGraph
        commit id: "1"
        commit id: "2"
@@ -283,7 +283,7 @@ Let see an example:
 
 ##### Code
 
-```markdown
+```
 mermaid    gitGraph
         commit id: "ZERO"
         branch develop
@@ -325,7 +325,7 @@ Usage example:
 
 ##### Code
 
-```markdown
+```
 mermaid---
 config:
   logLevel: 'debug'
@@ -389,7 +389,7 @@ Usage example: Rotated commit labels
 
 ##### Code
 
-```markdown
+```
 mermaid---
 config:
   logLevel: 'debug'
@@ -420,7 +420,7 @@ Usage example: Horizontal commit labels
 
 ##### Code
 
-```markdown
+```
 mermaid---
 config:
   logLevel: 'debug'
@@ -455,7 +455,7 @@ Usage example:
 
 ##### Code
 
-```markdown
+```
 mermaid---
 config:
   logLevel: 'debug'
@@ -516,7 +516,7 @@ Usage example:
 
 ##### Code
 
-```markdown
+```
 mermaid---
 config:
   logLevel: 'debug'
@@ -570,7 +570,7 @@ Usage example:
 
 ##### Code
 
-```markdown
+```
 mermaid---
 config:
   logLevel: 'debug'
@@ -594,7 +594,7 @@ Usage example:
 
 ##### Code
 
-```markdown
+```
 mermaid---
 config:
   logLevel: 'debug'
@@ -636,7 +636,7 @@ Usage example:
 
 ##### Code
 
-```markdown
+```
 mermaid    gitGraph LR:
        commit
        commit
@@ -663,7 +663,7 @@ Usage example:
 
 ##### Code
 
-```markdown
+```
 mermaid    gitGraph TB:
        commit
        commit
@@ -690,7 +690,7 @@ Usage example:
 
 ##### Code
 
-```markdown
+```
 mermaid    gitGraph BT:
        commit
        commit
@@ -715,7 +715,7 @@ Commits in Mermaid display temporal information in gitgraph by default. For exam
 
 ##### Code
 
-```markdown
+```
 mermaid---
 config:
   gitGraph:
@@ -737,7 +737,7 @@ gitGraph:
 
 ##### Code
 
-```markdown
+```
 mermaid---
 config:
   gitGraph:
@@ -773,7 +773,7 @@ The following are the different pre-defined theme options:
 
 ##### Code
 
-```markdown
+```
 mermaid---
 config:
   logLevel: 'debug'
@@ -829,7 +829,7 @@ config:
 
 ##### Code
 
-```markdown
+```
 mermaid---
 config:
   logLevel: 'debug'
@@ -885,7 +885,7 @@ config:
 
 ##### Code
 
-```markdown
+```
 mermaid---
 config:
   logLevel: 'debug'
@@ -941,7 +941,7 @@ config:
 
 ##### Code
 
-```markdown
+```
 mermaid---
 config:
   logLevel: 'debug'
@@ -997,7 +997,7 @@ config:
 
 ##### Code
 
-```markdown
+```
 mermaid---
 config:
   logLevel: 'debug'
@@ -1059,7 +1059,7 @@ See how the default theme is used to set the colors for the branches:
 
 ##### Code
 
-```markdown
+```
 mermaid---
 config:
   logLevel: 'debug'
@@ -1097,7 +1097,7 @@ Now let's override the default values for the `git0` to `git3` variables:
 
 ##### Code
 
-```markdown
+```
 mermaid---
 config:
   logLevel: 'debug'
@@ -1140,7 +1140,7 @@ Now let's override the default values for the `gitBranchLabel0` to `gitBranchLab
 
 ##### Code
 
-```markdown
+```
 mermaid---
 config:
   logLevel: 'debug'
@@ -1184,7 +1184,7 @@ Example: Now let's override the default values for the `commitLabelColor` to `co
 
 ##### Code
 
-```markdown
+```
 mermaid---
 config:
   logLevel: 'debug'
@@ -1219,7 +1219,7 @@ Example: Now let's override the default values for the `commitLabelFontSize` var
 
 ##### Code
 
-```markdown
+```
 mermaid---
 config:
   logLevel: 'debug'
@@ -1255,7 +1255,7 @@ Example: Now let's override the default values for the `tagLabelFontSize` variab
 
 ##### Code
 
-```markdown
+```
 mermaid---
 config:
   logLevel: 'debug'
@@ -1289,7 +1289,7 @@ You can customize tag using the `tagLabelColor`,`tagLabelBackground` and `tagLab
 
 ##### Code
 
-```markdown
+```
 mermaid---
 config:
   logLevel: 'debug'
@@ -1327,7 +1327,7 @@ Now let's override the default values for the `git0` to `git3` variables:
 
 ##### Code
 
-```markdown
+```
 mermaid---
 config:
   logLevel: 'debug'

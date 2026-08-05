@@ -31,7 +31,7 @@ How to run, inspect, and extend the CrewAI harbor in IDAHO-VAULT.
 
 3. **API key in `.env`** (gitignored — never committed):
 
-   ```markdown
+   ```
    ANTHROPIC_API_KEY=sk-ant-...
    ```
 
@@ -130,7 +130,7 @@ crew_run_id: "{run_id}"
 
 ## Architecture
 
-```markdown
+```
 .crewai/                    ← Code/config (committed)
   crews/                    ← Crew definitions
     jfac_crew.py            ← JFAC Parser (active)

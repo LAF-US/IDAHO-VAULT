@@ -70,7 +70,7 @@ The committee proceeds to CONFERENCE or other structured work.
 
 ## OUTPUT FORMAT
 
-```markdown
+```
 CONVENE v0.1 — CHAIR: LOGAN
 DATE: [Timestamp]
 PURPOSE: [Description]

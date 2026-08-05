@@ -15,7 +15,7 @@ Shade offers a full-featured python SDK that enables you to access any part of y
 
 Our SDK supports Python 3.8+. Once you have successfully installed Python on your machine, you can install below:
 
-```markdown
+```
 pip install shade-python-sdk
 ```
 
@@ -33,7 +33,7 @@ You can access your API Keys by going to Settings > API Keys
 
 You can easily initialize the Shade SDK by initializing a Shade object. This will authenticate and authorize as your user - whatever you have access to, the object will have access to.
 
-```markdown
+```
 API_KEY = 'sk....'
 REMOTE_URL = 'https://api.shade.inc'
 shade = Shade(remote_url=REMOTE_URL, api_key=API_KEY)

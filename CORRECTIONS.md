@@ -169,6 +169,6 @@ McGrane`; `Cenarrusa` is the spelling used in the reported Idaho case caption.
 
 ---
 
-```markdown
+```
 The world is quiet here．Esto Perpetua!
 ```

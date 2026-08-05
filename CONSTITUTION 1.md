@@ -172,6 +172,6 @@ Unified (US) Swarm designed and written in Logan's Project & Protocols syntaxic 
 
 ---
 
-```markdown
+```
 The world is quiet here．Esto Perpetua!
 ```

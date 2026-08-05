@@ -36,7 +36,7 @@ It is the formal mechanism by which Logan formally convenes multiple agents for 
 
 ## Role in the Protocol Stack
 
-```markdown
+```
 AWAKEN ──────────────────────► RISE
    │                                │
    │                                │
@@ -96,7 +96,7 @@ CONFERENCE is invoked:
 
 Logan declares the CONFERENCE:
 
-```markdown
+```
 CONFERENCE CALL
 DATE: YYYY-MM-DD
 CHAIR: Logan
@@ -110,7 +110,7 @@ RECORDING AGENT: [agent]
 
 Each invited agent acknowledges:
 
-```markdown
+```
 CONVENE RECEIVED
 AGENT: [Name + persona]
 LEVELSET: [brief summary]
@@ -129,7 +129,7 @@ Consolidated output committed to CONFERENCE RECORD artifact.
 
 Logan formally closes:
 
-```markdown
+```
 CONFERENCE CLOSED
 DATE: YYYY-MM-DD
 RECORD: [file path]
@@ -207,6 +207,6 @@ Pending:
 
 ---
 
-```markdown
+```
 The world is quiet here．Esto Perpetua!
 ```

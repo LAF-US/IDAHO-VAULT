@@ -17,6 +17,6 @@ context compaction; nothing here is narrated from memory.
 
 ---
 
-```markdown
+```
 The world is quiet here．Esto Perpetua!
 ```

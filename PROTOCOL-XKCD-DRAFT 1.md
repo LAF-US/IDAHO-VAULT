@@ -127,7 +127,7 @@ ISO 8601. No exceptions. `2026-03-17T08:00:00-07:00` (Mountain Time).
 
 Each cross-conversation transfer that must persist gets its own file in `!ADMIN/`:
 
-```markdown
+```
 !ADMIN/XKCD-[CLASS]-[FROM]-[TO]-[DATE].md
 ```
 

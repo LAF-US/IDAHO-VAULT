@@ -67,7 +67,7 @@ Prompts can use almost any natural language query. Depending on the model you us
 
 Prompts can transform page content into JSON that can be manipulated with [filters](https://obsidian.md/help/web-clipper/filters). For example:
 
-```markdown
+```
 {{"return a JSON object for each tweet, that includes the author, tweet_text, date in YYYY-MM-DD format, and images array (if there are any)"|map:tweet => ({text: tweet.tweet_text, author: tweet.author, date: tweet.date})|template:"${text}\n— [[@${author}]], [[${date}]]\n"}}
 ```
 

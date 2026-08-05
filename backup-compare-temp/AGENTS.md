@@ -112,6 +112,6 @@ Logan is the sole human decision-maker. When he is away from keyboard:
 
 ---
 
-```markdown
+```
 The world is quiet here．Esto Perpetua!
 ```

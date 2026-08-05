@@ -108,7 +108,7 @@ Distribution:
 
 ## OUTPUT FORMAT
 
-```markdown
+```
 REPORT v0.1 — [AGENT NAME]
 Subject: [Brief description]
 Date: [Timestamp]
