@@ -16,7 +16,7 @@ related:
   - IdahoCOVID19
 ---
 
-#IdahoCOVID19 https://t.co/HzPLM2c1rI
+\#IdahoCOVID19 https://t.co/HzPLM2c1rI
 
 ## Links
 - https://x.com/uidaho/status/1245531439778516992

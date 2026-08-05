@@ -21,6 +21,6 @@ related:
 The Idaho House of Representatives stands at recess until Wednesday, April 10 at noon. #idleg #idpol https://t.co/MjbVRYo20d
 
 ## Media
-- ![](https://pbs.twimg.com/ext_tw_video_thumb/1775653481438969856/pu/img/BEy1dDrdN_XUiGPP.jpg)
+- ![alt text needed](https://pbs.twimg.com/ext_tw_video_thumb/1775653481438969856/pu/img/BEy1dDrdN_XUiGPP.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1775653511629517148)

@@ -75,4 +75,14 @@ The vault already has a real protocol stack, but authority is split across appro
 
 This snapshot supports the current direction: stabilize and canonize working project protocols that have survived actual use. Do not proliferate new standards when the work is to clarify the existing stack.
 
-###### [["The world is quiet here."]]
+## Addendum — Named But Not Yet Defined (2026-05-28)
+
+Names referenced in vault discussion or closed PRs but lacking a defined surface. Inventoried here for canonization triage; definition belongs to LOGAN.
+
+- **PULLMAN** — two distinct referents: (1) **Pullman Company** — railroad car manufacturer; transportation vessel (sense used in PR #227 `antigravity/pullman-oidc-pipeline` for the AFFABLE BASTION OIDC carrier); (2) **Philip Pullman** — author of *His Dark Materials* (Lyra cosmology, subtle knife, Dust; relates to `!/THRESHOLD-DOCTRINE-v1-2026-05-21.md`'s intrinsic-fitness model). Pinned 2026-05-28.
+
+---
+
+```
+The world is quiet here．Esto Perpetua!
+```

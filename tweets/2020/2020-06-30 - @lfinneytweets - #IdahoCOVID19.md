@@ -16,7 +16,7 @@ related:
   - IdahoCOVID19
 ---
 
-#IdahoCOVID19 https://t.co/d9yLv0RhE9
+\#IdahoCOVID19 https://t.co/d9yLv0RhE9
 
 ## Links
 - https://x.com/NYGovCuomo/status/1277987460929159169

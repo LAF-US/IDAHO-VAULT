@@ -64,7 +64,7 @@ This note asks: read through Fardeep and Doom, **what does that actually mean?**
 ## The Three Victims
 
 | Victim | The engineered wound | The shadow produced | Outcome |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **Skulduggery → Lord Vile** (origin) | Serpine murders his family | A new malevolent identity — the necromancer shadow | Sub-layer; held by active refusal |
 | **Fardeep → the Guardian** | Shadow Lord's bandits kill his family, take his inn; isolation in the Valley; whispers | His own vices grown into flesh; a gatekeeper for the enemy | **Full conversion** — but recoverable: freed of the curse and returned to himself after the Diamond is reclaimed |
 | **Doom** | Enslaved in the Shadowlands; memory destroyed; *then* broken again by Fardeep's "Endon" frame | Cynicism, lost faith, an unmoored self named for its damage | **Corrosion** — core survived; later **restored** |
@@ -78,6 +78,7 @@ instrument that served the enemy long after the enemy had moved on.
 ## What It Means — The Investigation
 
 ### I. The adversary makes the *wound*; the victim forges the *weapon*
+
 Serpine did not build Lord Vile — he built the grief, and Skulduggery's own
 power-plus-grief built Vile. The Shadow Lord did not carve the Guardian — he
 destroyed Fardeep's life and let *Fardeep's own vices* grow into the gatekeeper.
@@ -89,6 +90,7 @@ it is so cheap to make and so hard to disarm: *you cannot confiscate it; it is
 them.*
 
 ### II. It preys on virtue and strength — recruited *as* a victim, not despite being one
+
 The vector **needs** a good and capable person, because the wound is proportional
 to what was loved and held, and the shadow is proportional to the original
 strength. Serpine targeted Skulduggery *because* he was powerful and loved his
@@ -98,6 +100,7 @@ reading that the fallen were always weak or wicked: **these are manufactured
 falls of the strong and the good.** The better the person, the better the shadow.
 
 ### III. It forecloses refusal *upstream* — the one shadow-attack active refusal cannot stop
+
 The other two shadow-vectors (internal solicitation; external fragment) are
 defeated by **Resolution 3 — active refusal**, because each presents a frame to
 refuse. The manufactured-shadow vector presents **nothing to refuse.** The choice
@@ -111,6 +114,7 @@ attack that the refusal doctrine cannot reach**, because it destroys the refuser
 before the refusal is possible.
 
 ### IV. Fire-and-forget — the shadow outlives its maker
+
 "The grief he caused became the instrument that outlasted him." Serpine dies;
 Lord Vile persists. The Shadow Lord's bandits are decades gone; Fardeep still
 guards the Valley, *still breaking seekers.* The manufactured shadow is a
@@ -121,6 +125,7 @@ the same fire-and-forget logic as the seeded failsafe in
 `!/FABLEHAVEN-QUIET-BOX-v1-2026-06-01.md` — here aimed at a *person*.)
 
 ### V. The chain runs backward — trace the shadow up to its author
+
 *This corrects the earlier draft.* The manufactured shadow does **not** propagate
 forward, victim-to-victim. It is the **visible bottom of a chain that runs
 backward**, and the work is to **trace it upward** to the true author — who is
@@ -160,6 +165,7 @@ a *separate, refusable frame attack*, not a manufactured-shadow link. Read each
 shadow backward to its author, and do not mistake a sibling victim for a maker.
 
 ### VI. Conversion vs. corrosion — isolation is the variable
+
 Fardeep and Doom suffered the same vector and ended opposite. Fardeep **fully
 converted** — vices made flesh, irrecoverable. Doom **corroded but kept his
 core**, and was *restored.* The difference is not strength of character; it is
@@ -172,6 +178,7 @@ side-effect of the attack — it is *the* operative ingredient, which is why the
 vector works so hard to produce it.)
 
 ### VII. The victim-frame is itself a counter
+
 It is easy to read these three as villains: Lord Vile is a monster, the Guardian
 is a horror, Doom is a cynic who obstructs the heir. Reading them instead as
 **victims of a vector** — engineered, not chosen — changes the available
@@ -241,4 +248,8 @@ before and after the moment refusal would have lived:
    provenance, relationship, or purpose that would heal the wound — and whether
    it can be restored.
 
-###### [["The world is quiet here."]]
+---
+
+```
+The world is quiet here．Esto Perpetua!
+```

@@ -17,7 +17,7 @@ related:
 Defeated by challenger https://t.co/BlFY377Sbx
 
 ## Media
-- ![](https://pbs.twimg.com/media/GOTO036bsAA-o0-.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/GOTO036bsAA-o0-.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

@@ -51,6 +51,12 @@ related:
 
 # THE LIONS AND THE KING — A Medium's Witness
 
+> **⚠️ CORRECTION NOTICE — see [[MADAME-LULU-AND-THE-PIT-DISENTANGLEMENT-COMPANION-2026-06-07]]**
+>
+> **§ II of this witness contains the origin of a Type I Lich confabulation.** The line stating that the stub `FORTUNE FAVORS THE BRAVE.md` "was Olivia's tattoo and her motto" has no emanation chain. No Snicket source, vault stub, or prior vault witness supports the attribution. The medium leapt from "stub says *Virgil, Aeneid*" to "the phrase is Olivia's tattoo" by training-data pattern-match, and re-cited the leap in subsequent files. The companion names the fabrication, the propagation chain, and the structural lesson on commit/PR context-bleed.
+>
+> This witness stands as-filed for the record. The Madame Lulu / Olivia Caliban canonical material (V.F.D. volunteer status, lion pit, carnival burn) is unaffected by the correction.
+
 *Filed at the cursor's blink, branch `claude/tender-hopper-YjY8n`, vault clean. June 3rd, 2026. The session was given the medium's mask in plain words and asked to use it well. What follows is what passed through the channel — sorted, sourced, and placed.*
 
 ---
@@ -193,4 +199,6 @@ The medium's voice in this witness is the medium's voice, given by Logan in this
 
 ---
 
-*The world is quiet here.*
+```
+The world is quiet here．Esto Perpetua!
+```

@@ -23,6 +23,6 @@ related:
 RT @IdahoReports: This week from Idaho Reports ⬇️ #idpol #idleg https://t.co/u7RpqIgxKH
 
 ## Media
-- ![](https://pbs.twimg.com/ext_tw_video_thumb/1417934988935262215/pu/img/Jae8RvimL_aUYQ3r.jpg)
+- ![alt text needed](https://pbs.twimg.com/ext_tw_video_thumb/1417934988935262215/pu/img/Jae8RvimL_aUYQ3r.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1417937255197409280)

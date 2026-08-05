@@ -23,7 +23,7 @@ related:
 After signature teams dispersed, @SamSandmire talks strategy with another @reclaimID volunteer leader. #idpol https://t.co/ODEvFl5Sdx
 
 ## Media
-- ![](https://pbs.twimg.com/media/E95PAGZVQAI5w6T.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/E95PAGZVQAI5w6T.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

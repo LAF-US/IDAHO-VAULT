@@ -22,6 +22,6 @@ Remember to check your voter registration & request your ballot at https://t.co/
 - http://idahovotes.gov
 
 ## Media
-- ![](https://pbs.twimg.com/media/EWpZsB6UEAIIURg.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EWpZsB6UEAIIURg.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1254914076360097792)

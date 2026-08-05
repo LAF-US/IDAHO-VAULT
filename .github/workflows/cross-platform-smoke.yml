@@ -30,9 +30,9 @@ jobs:
     runs-on: ${{ matrix.os }}
 
     steps:
-      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
-      - uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
         with:
           python-version: ${{ matrix.python }}
 
@@ -49,6 +49,9 @@ jobs:
 
       - name: MESHNETWEB portability check (report)
         run: python .github/scripts/meshnetweb_portability_check.py
+
+      - name: Codex work surface guard
+        run: python .github/scripts/codex_work_guard.py
 
       - name: MESHNETWEB portability check (strict on PR)
         if: github.event_name == 'pull_request' || github.event_name == 'merge_group'

@@ -16,6 +16,6 @@ related:
 Incredible. 10/10. Go see this film. https://t.co/WbyssiNlec
 
 ## Media
-- ![](https://pbs.twimg.com/media/FZXduXCUYAA44W-.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/FZXduXCUYAA44W-.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1555393037739577345)

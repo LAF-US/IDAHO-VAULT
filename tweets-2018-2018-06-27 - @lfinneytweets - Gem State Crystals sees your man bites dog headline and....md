@@ -13,9 +13,10 @@ related:
   - lfinneytweets
 ---
 
-Gem State Crystals sees your "man bites dog" headline and raises you a snake 🐍 https://t.co/PX97JaC1Fh
+Gem State Crystals sees your "man bites dog" headline and raises you a snake 🐍 <https://t.co/PX97JaC1Fh>
 
 ## Media
-- ![](https://pbs.twimg.com/media/DgujzUjVAAEm5zB.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/DgujzUjVAAEm5zB.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1012082652113850368)

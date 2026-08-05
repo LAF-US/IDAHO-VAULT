@@ -26,22 +26,29 @@ date: 2026-06-07
 > **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). **[canon-per-series].** Paraphrased.
 
 ## Identity & origin
+
 - **[canon]** Soldeen is **Nanion**, **leader of the D'Or** people — transformed and trapped in the lake by the sorceress **Thaegan.**
 - **[canon]** About a hundred years ago, Thaegan — unable to bear the **beauty of the city of D'Or** and the happiness of its people — cursed Deltora's north, **drowning D'Or into the Lake of Tears** and **silencing the protesting Ralads.**
 
 ## Nature & appearance
+
 - **[canon]** A great **eel-like beast** ruling the lake's waters.
 
 ## As Guardian
+
 - **[canon]** He keeps the **Ruby** at the **Weeping Rock.** (The Ruby is blood-red, **paling to pink** in the presence of evil or misfortune.)
 
 ## Encounter & fate
+
 - **[canon]** The **Topaz** (already recovered) restores Soldeen's memory of being **Nanion**; he then **ferries Lief to the Weeping Rock** and yields the Ruby. When **Thaegan** attacks, **Kree** (Jasmine's raven) pecks her one unprotected finger, drawing blood — she **dissipates.** The lake's creatures revert to human form and **D'Or is restored.**
 
 ## Cross-references & sources
+
 `[[RESEARCH_Deltora-The-Gem-Guardians-2026-06-07]]` · `[[RESEARCH_Deltora-The-Seven-Tribes-and-their-Lands-2026-06-04]]`
 [Soldeen](https://deltoraquest.fandom.com/wiki/Soldeen) · [Lake of Tears](https://deltoraquest.fandom.com/wiki/Lake_of_Tears_(location)) · [Thaegan](https://deltoraquest.fandom.com/wiki/Thaegan)
 
 ---
 
-###### [["The world is quiet here."]]
+```
+The world is quiet here．Esto Perpetua!
+```

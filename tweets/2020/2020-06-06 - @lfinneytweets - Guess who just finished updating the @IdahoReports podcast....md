@@ -27,6 +27,6 @@ https://t.co/FmMDgK5gOQ https://t.co/eRSU9N99XG
 - https://soundcloud.com/idaho-reports
 
 ## Media
-- ![](https://pbs.twimg.com/tweet_video_thumb/EZyxKYAUwAELaXX.jpg)
+- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/EZyxKYAUwAELaXX.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1269083992902389760)

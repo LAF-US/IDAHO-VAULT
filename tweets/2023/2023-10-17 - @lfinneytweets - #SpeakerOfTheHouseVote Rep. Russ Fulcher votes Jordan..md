@@ -16,6 +16,6 @@ related:
   - SpeakerOfTheHouseVote
 ---
 
-#SpeakerOfTheHouseVote Rep. Russ Fulcher votes Jordan.
+\#SpeakerOfTheHouseVote Rep. Russ Fulcher votes Jordan.
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1714328488763854912)

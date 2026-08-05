@@ -21,8 +21,8 @@ RT @FactTank: 5 facts about Fox News https://t.co/uyZNZb8XoD https://t.co/yQwIV4
 - https://pewrsr.ch/3e2EGFf
 
 ## Media
-- ![](https://pbs.twimg.com/media/EWESRzhWoAUyNOg.jpg)
-- ![](https://pbs.twimg.com/media/EWESRylXgAAiToK.png)
-- ![](https://pbs.twimg.com/media/EWESRwyXQAMm20N.png)
+- ![alt text needed](https://pbs.twimg.com/media/EWESRzhWoAUyNOg.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EWESRylXgAAiToK.png)
+- ![alt text needed](https://pbs.twimg.com/media/EWESRwyXQAMm20N.png)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1252449922382589954)

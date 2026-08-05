@@ -21,6 +21,6 @@ related:
 The House and Senate have informed each other the chambers are organized and ready for business. They will soon receive the governor in a joint session for the State of the State Address. #idleg #idpol https://t.co/aBNrwRGfVx
 
 ## Media
-- ![](https://pbs.twimg.com/media/GgogT4XaMAAr65B.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/GgogT4XaMAAr65B.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1876347729619853325)

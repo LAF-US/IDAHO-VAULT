@@ -2,8 +2,8 @@ from __future__ import annotations
 
 import importlib.util
 import json
-import shutil
 import subprocess
+import tempfile
 import unittest
 from pathlib import Path
 from unittest.mock import patch
@@ -13,6 +13,7 @@ def _load_topology_census_module():
     project_root = Path(__file__).resolve().parents[1]
     script_path = project_root / ".github" / "scripts" / "topology_census.py"
     spec = importlib.util.spec_from_file_location("topology_census_test_module", script_path)
+    assert spec is not None
     module = importlib.util.module_from_spec(spec)
     assert spec.loader is not None
     spec.loader.exec_module(module)
@@ -24,29 +25,27 @@ topology_census = _load_topology_census_module()
 
 class TopologyCensusTest(unittest.TestCase):
     def setUp(self) -> None:
-        project_root = Path(__file__).resolve().parents[1]
-        self.tempdir = project_root / "tests" / "_tmp_topology_census_case"
-        shutil.rmtree(self.tempdir, ignore_errors=True)
-        self.root = self.tempdir / "vault"
+        self.tempdir = tempfile.TemporaryDirectory()
+        self.addCleanup(self.tempdir.cleanup)
+        self.root = Path(self.tempdir.name) / "vault"
         self.root.mkdir(parents=True, exist_ok=True)
         self.output_dir = self.root / "!"
-        subprocess.run(["git", "init"], cwd=self.root, check=True, capture_output=True)
+        subprocess.run(["git", "init"], cwd=self.root, check=True, capture_output=True, timeout=10)
         subprocess.run(
             ["git", "config", "user.email", "test@example.com"],
             cwd=self.root,
             check=True,
             capture_output=True,
+            timeout=10,
         )
         subprocess.run(
             ["git", "config", "user.name", "Topology Census Test"],
             cwd=self.root,
             check=True,
             capture_output=True,
+            timeout=10,
         )
         self._write_fixture()
-
-    def tearDown(self) -> None:
-        shutil.rmtree(self.tempdir, ignore_errors=True)
 
     def _write(self, relpath: str, content: str) -> None:
         path = self.root / Path(relpath)
@@ -149,10 +148,14 @@ class TopologyCensusTest(unittest.TestCase):
         self._write("INBOX/PHONE-LINK/phone.txt", "hello\n")
         self._write("_private/notes.md", "# private\n")
         self._write("@/tweets/thread.md", "# tweet\n")
-        subprocess.run(["git", "add", "."], cwd=self.root, check=True, capture_output=True)
+        subprocess.run(["git", "add", "."], cwd=self.root, check=True, capture_output=True, timeout=10)
         # Keep ignored creatures local-only.
         subprocess.run(
-            ["git", "reset", "--", "_private", "@"], cwd=self.root, check=True, capture_output=True
+            ["git", "reset", "--", "_private", "@"],
+            cwd=self.root,
+            check=True,
+            capture_output=True,
+            timeout=10,
         )
 
     def test_root_scope_counts_ignored_and_tracked_folders_without_move_commands(self) -> None:
@@ -233,6 +236,36 @@ class TopologyCensusTest(unittest.TestCase):
         with patch.object(topology_census, "_run_git", side_effect=FileNotFoundError):
             self.assertFalse(topology_census._git_repo_available(self.root))
             self.assertEqual(topology_census._git_tracked_files(self.root), set())
+
+    def test_git_repo_available_does_not_swallow_timeout(self) -> None:
+        # A timeout on the availability probe means "unknown", not "not a repo" --
+        # letting it masquerade as unavailable would reopen _git_tracked_files()'s
+        # fail-closed guard to a false empty-set census via this call path.
+        with patch.object(
+            topology_census, "_run_git",
+            side_effect=subprocess.TimeoutExpired(cmd=["git"], timeout=30),
+        ):
+            with self.assertRaises(subprocess.TimeoutExpired):
+                topology_census._git_repo_available(self.root)
+            with self.assertRaises(subprocess.TimeoutExpired):
+                topology_census._git_tracked_files(self.root)
+
+    def test_git_path_is_ignored_fails_soft_on_oserror(self) -> None:
+        # _git_repo_available() already fails soft on OSError; check-ignore's own
+        # subprocess.run call must match that contract instead of only catching
+        # TimeoutExpired and letting a mid-run OSError crash the census.
+        with (
+            patch.object(topology_census, "_git_repo_available", return_value=True),
+            patch.object(topology_census.subprocess, "run", side_effect=OSError("boom")),
+        ):
+            self.assertFalse(topology_census._git_path_is_ignored(self.root, "some/path"))
+
+    def test_git_status_lines_fails_soft_on_oserror(self) -> None:
+        with (
+            patch.object(topology_census, "_git_repo_available", return_value=True),
+            patch.object(topology_census.subprocess, "run", side_effect=OSError("boom")),
+        ):
+            self.assertEqual(topology_census._git_status_lines(self.root, "some/path"), [])
 
 
 if __name__ == "__main__":

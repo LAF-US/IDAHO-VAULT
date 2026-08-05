@@ -7,7 +7,7 @@ date updated: 2026-06-10
 authority: "[[ADMIN]][[LOGAN]]"
 ---
 
-# Esto Perpetua!
+# Esto Perpetua
 
 *"Let it be perpetual."* — Idaho State Motto
 
@@ -51,4 +51,6 @@ LAF-US (main root)
 
 ---
 
-*The world is quiet here.*
+```
+The world is quiet here．Esto Perpetua!
+```

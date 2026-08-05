@@ -10,7 +10,7 @@ date created: Sunday, May 3rd 2026, 9:04:24 pm
 date modified: Sunday, May 3rd 2026, 11:07:26 pm
 ---
 
-![](https://upload.wikimedia.org/wikipedia/en/thumb/0/05/TIPA_code_points.png/500px-TIPA_code_points.png)
+![alt text needed](https://upload.wikimedia.org/wikipedia/en/thumb/0/05/TIPA_code_points.png/500px-TIPA_code_points.png)
 
 The TIPA character set
 
@@ -22,13 +22,13 @@ TIPA supports many of the symbols in the *[Phonetic Symbol Guide](https://en.wik
 
 ## Examples
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Tipa_explanation.svg/250px-Tipa_explanation.svg.png)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Tipa_explanation.svg/250px-Tipa_explanation.svg.png)
 
 ```
 \textipa{[""Ekspl@"neIS@n]}
 ```
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Tipa_phonetics.svg/250px-Tipa_phonetics.svg.png)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Tipa_phonetics.svg/250px-Tipa_phonetics.svg.png)
 
 ```
 \textipa{/f@"nEtIks/}

@@ -46,7 +46,7 @@ Each gem is a distinct tribe's talisman, with its own symbol and powers, hidden 
 its own land:
 
 | Gem | Symbol of | Tribe | Powers | Hidden in (the land) |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | **Diamond** | innocence, purity, strength | **Jalis** | courage & strength; protection from pestilence; aids true love | **Valley of the Lost** |
 | **Emerald** | honour | **Dread Gnomes** | dulls near evil or a broken vow; remedy for sores/ulcers; antidote to poison | **Dread Mountain** |
 | **Lapis Lazuli** | good fortune (*the heavenly stone*) | **Mere** | brings good luck; affiliated with the opal | **Shifting Sands** |
@@ -104,7 +104,7 @@ Tribe for each gem.**
 **The seven dragons — and the virtue each name carries [canon] / [mapping]:**
 
 | Gem (symbol) | Dragon **[canon]** | The name's sense **[mapping]** |
-|---|---|---|
+| --- | --- | --- |
 | **Topaz** (faithfulness) | **Fidelis** | *fidelis* — faithful |
 | **Ruby** (happiness) | **Joyeu** | *joie* — joy |
 | **Opal** (hope) | **Hopian** | hope |
@@ -180,4 +180,8 @@ anti-amalgamation reading is a vault mapping; final authority is Logan.*
 - **Status:** active
 - **Authority:** LOGAN
 
-###### [["The world is quiet here."]]
+---
+
+```
+The world is quiet here．Esto Perpetua!
+```

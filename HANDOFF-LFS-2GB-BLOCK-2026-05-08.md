@@ -22,6 +22,7 @@ These files were added to git tracking in commit `7a63a629` (`.gitignore refacto
 ## Governance Policy
 
 `.github/scripts/check_large_files.py` enforces:
+
 - **>100 MB** — must have LFS attributes (enforced by pre-commit hook)
 - **>2 GB** — cannot be committed to GitHub LFS (amended from 5 GB to match GitHub's platform limit)
 
@@ -138,7 +139,7 @@ f3af3d85 document universal sync bus framework
 ## Key Reference Files
 
 | File | Purpose |
-|------|---------|
+| ------ | --------- |
 | `.github/scripts/check_large_files.py` | Governance policy (100 MB min / 2 GB max) |
 | `.githooks/pre-push` | Runs `git lfs pre-push "$@"` |
 | `.githooks/pre-commit` | Calls `check_large_files.py --staged` |
@@ -147,3 +148,7 @@ f3af3d85 document universal sync bus framework
 | `LEVELSET-LFS-SHUTDOWN-2026-05-06.md` | May 6 interrupted push record |
 | `.gitattributes` | LFS tracking patterns (55+ file types) |
 | `AGENTS.md` | Agent governance, boot order, boundary rules |
+
+---
+
+*Indexed in [[STORAGE-LFS-USB-CONSTELLATION-INDEX-2026-06-17]].*

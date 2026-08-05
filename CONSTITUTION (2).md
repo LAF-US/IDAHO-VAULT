@@ -2,6 +2,7 @@
 by [[Logan Alvan Finney]]
 
 [["The world is quiet here."]]
+
 ---
 
 *Adopted: 2026-03-16*
@@ -9,6 +10,7 @@ by [[Logan Alvan Finney]]
 *Replaces: Claude.md (v.0.0) Frameworks*
 
 ---
+
 ## I. CORE PRINCIPLES
 
 - **Logan is human. Agents are software.** Logan directs; agents execute his will.
@@ -30,21 +32,28 @@ NOTE : LIST NEEDS MAJORLY UPDATED ACROSS DISTRIBUTED UNIFIED (US) SYSTEMS
 ## III. CORE WORKING-SWARM PROTOCOLS TODAY
 
 ### LEVELSET (Version 3.2.6.1)
+
 #### FLAG: "LEVELSET STEP-0 and STEP-1 are in active development"
+
 Orientation protocol for instances awakening inside the vault. Current approved version:
+
 - **Location:** `!/LEVELSET-STEP-0-EXTERNAL-AGENT.md`
 - **Key principle:** Automation is end state; manual bridge is an interim fallback. Failure is natural but advances change.
 
 ### ARISE v(0.0)
+
 Minimal orientation for new entities. Awaiting full adoption.
 
 ### AWAKEN v(0.0)
+
 Minimal orientation for new entities. Awaiting full adoption.
 
 ### ORIENT v(0.0)
+
 Minimal orientation for conversations. Job-tool-discovery. Awaiting full adoption.
 
 ### CONTEXT v(0.0)
+
 Absorption protocol: instances absorb incoming state before acting. Under development.
 
 ---
@@ -107,6 +116,7 @@ See `DECISIONS.md` for confirmed Logan-approved decisions[^1]. Key decisions (as
 ## VIII. REVIEW & AMENDMENTS
 
 This document is the "sole source of truth" for vault governance. Amendments require:
+
 1. Notice in `!/DECISIONS.md` pending Logan's explicit approval
 2. Documentation in `!/RECORD.md` and regular version labeling
 3. Committed to a working branch or fork before merging to main
@@ -121,4 +131,8 @@ Unified (US) Swarm designed and written in [[Logan's Project & Protocols]] synta
 
 [^1] If we're tracking them in a separate decision docket, why keep them in a difficult-to-agentically-amend core governance document? -B
 
-###### [["The world is quiet here."]]
+---
+
+```
+The world is quiet here．Esto Perpetua!
+```

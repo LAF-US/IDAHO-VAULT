@@ -42,11 +42,11 @@ Carmelita Spats was always crowned False Spring Queen, and they would celebrate 
 The uniform of the Snow Scouts consists of:
 
 - bright white snowsuits with
-	- puffy sleeves, covered in emblems of snowflakes in varying sizes and shapes
-		- pink lettering on the back listing each of the words of the Snow Scout Alphabet Pledge
+  - puffy sleeves, covered in emblems of snowflakes in varying sizes and shapes
+    - pink lettering on the back listing each of the words of the Snow Scout Alphabet Pledge
 - white headbands with
-	- tiny plastic snowflakes sticking out of the top in all directions
-		- the word "Brr!" written in icy script
+  - tiny plastic snowflakes sticking out of the top in all directions
+    - the word "Brr!" written in icy script
 - dark round masks covered in tiny holes (much like those worn in the sport of fencing) to protect the Scouts' faces from [Snow Gnats](https://snicket.fandom.com/wiki/Snow_Gnats "Snow Gnats")
 
 ## Known Snow Scouts
@@ -66,22 +66,22 @@ The uniform of the Snow Scouts consists of:
 Snow Scout Actors, left to right: Chloe Ling, Stephen John Kosar, Baya Ipatowicz, Asia Au-Yeung, Kitana Turnbull, Jaedon Siewart, Emerson D'Sylva, Mamie Laverock, Maya Kooner
 
 - [Brucie](https://snicket.fandom.com/wiki/Brucie "Brucie") (scoutmaster)
-	- portrayed by *[Keegan Connor Tracy](https://snicket.fandom.com/wiki/Keegan_Connor_Tracy "Keegan Connor Tracy")*
+  - portrayed by *[Keegan Connor Tracy](https://snicket.fandom.com/wiki/Keegan_Connor_Tracy "Keegan Connor Tracy")*
 - [Carmelita Spats](https://snicket.fandom.com/wiki/Carmelita_Spats "Carmelita Spats") (False Spring Queen)
-	- portrayed by *[Kitana Turnbull](https://snicket.fandom.com/wiki/Kitana_Turnbull "Kitana Turnbull")*
+  - portrayed by *[Kitana Turnbull](https://snicket.fandom.com/wiki/Kitana_Turnbull "Kitana Turnbull")*
 - [Quigley Quagmire](https://snicket.fandom.com/wiki/Quigley_Quagmire "Quigley Quagmire") (formerly)
-	- portrayed by *[Dylan Kingwell](https://snicket.fandom.com/wiki/Dylan_Kingwell "Dylan Kingwell")*.
+  - portrayed by *[Dylan Kingwell](https://snicket.fandom.com/wiki/Dylan_Kingwell "Dylan Kingwell")*.
 - Eight Unnamed Scouts:
-	- [Snow Scout #1](https://snicket.fandom.com/wiki/Snow_Scout_1 "Snow Scout 1") - *[Chloe Ling](https://snicket.fandom.com/wiki/Chloe_Ling "Chloe Ling")*
-		- [Snow Scout #2](https://snicket.fandom.com/wiki/Snow_Scout_2 "Snow Scout 2") - *[Asia Au-Yeung](https://snicket.fandom.com/wiki/Asia_Au-Yeung "Asia Au-Yeung")*
-		- [Snow Scout #3](https://snicket.fandom.com/wiki/Snow_Scout_3 "Snow Scout 3") - *[Baya Ipatowicz](https://snicket.fandom.com/wiki/Baya_Ipatowicz "Baya Ipatowicz")*
-		- [Snow Scout #4](https://snicket.fandom.com/wiki/Snow_Scout_4 "Snow Scout 4") - *[Jaedon Siewert](https://snicket.fandom.com/wiki/Jaedon_Siewert "Jaedon Siewert")*
-		- [Snow Scout #5](https://snicket.fandom.com/wiki/Snow_Scout_5 "Snow Scout 5") - *[Mamie Laverock](https://snicket.fandom.com/wiki/Mamie_Laverock "Mamie Laverock")*
-		- [Snow Scout #6](https://snicket.fandom.com/wiki/Snow_Scout_6 "Snow Scout 6") - *[Stephen John Kosar](https://snicket.fandom.com/wiki/Stephen_John_Kosar "Stephen John Kosar")*
-		- [Snow Scout #7](https://snicket.fandom.com/wiki/Snow_Scout_7 "Snow Scout 7") - *[Emerson D'Sylva](https://snicket.fandom.com/wiki/Emerson_D%27Sylva "Emerson D'Sylva")*
-		- [Nervous Scout](https://snicket.fandom.com/wiki/Nervous_Scout "Nervous Scout") - *[Maya Kooner](https://snicket.fandom.com/wiki/Maya_Kooner "Maya Kooner")*
+  - [Snow Scout #1](https://snicket.fandom.com/wiki/Snow_Scout_1 "Snow Scout 1") - *[Chloe Ling](https://snicket.fandom.com/wiki/Chloe_Ling "Chloe Ling")*
+    - [Snow Scout #2](https://snicket.fandom.com/wiki/Snow_Scout_2 "Snow Scout 2") - *[Asia Au-Yeung](https://snicket.fandom.com/wiki/Asia_Au-Yeung "Asia Au-Yeung")*
+    - [Snow Scout #3](https://snicket.fandom.com/wiki/Snow_Scout_3 "Snow Scout 3") - *[Baya Ipatowicz](https://snicket.fandom.com/wiki/Baya_Ipatowicz "Baya Ipatowicz")*
+    - [Snow Scout #4](https://snicket.fandom.com/wiki/Snow_Scout_4 "Snow Scout 4") - *[Jaedon Siewert](https://snicket.fandom.com/wiki/Jaedon_Siewert "Jaedon Siewert")*
+    - [Snow Scout #5](https://snicket.fandom.com/wiki/Snow_Scout_5 "Snow Scout 5") - *[Mamie Laverock](https://snicket.fandom.com/wiki/Mamie_Laverock "Mamie Laverock")*
+    - [Snow Scout #6](https://snicket.fandom.com/wiki/Snow_Scout_6 "Snow Scout 6") - *[Stephen John Kosar](https://snicket.fandom.com/wiki/Stephen_John_Kosar "Stephen John Kosar")*
+    - [Snow Scout #7](https://snicket.fandom.com/wiki/Snow_Scout_7 "Snow Scout 7") - *[Emerson D'Sylva](https://snicket.fandom.com/wiki/Emerson_D%27Sylva "Emerson D'Sylva")*
+    - [Nervous Scout](https://snicket.fandom.com/wiki/Nervous_Scout "Nervous Scout") - *[Maya Kooner](https://snicket.fandom.com/wiki/Maya_Kooner "Maya Kooner")*
 - [Esmé Squalor](https://snicket.fandom.com/wiki/Esm%C3%A9_Squalor "Esmé Squalor") (formerly) (former False Spring Queen)
-	- portrayed by *[Lucy Punch](https://snicket.fandom.com/wiki/Lucy_Punch "Lucy Punch")*
+  - portrayed by *[Lucy Punch](https://snicket.fandom.com/wiki/Lucy_Punch "Lucy Punch")*
 
 ## Gallery
 
@@ -183,6 +183,6 @@ Snow Scout Riot™
 
 [^1]: [PROSE](https://snicket.fandom.com/wiki/PROSE "PROSE"): *[The Slippery Slope](https://snicket.fandom.com/wiki/The_Slippery_Slope "The Slippery Slope")*
 
-[^2]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Slippery Slope: Part One](https://snicket.fandom.com/wiki/The_Slippery_Slope:_Pa***REMOVED***One "The Slippery Slope: Part One")*
+[^2]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Slippery Slope: Part One](https://snicket.fandom.com/wiki/The_Slippery_Slope:_Part_One "The Slippery Slope: Part One")*
 
-[^3]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Slippery Slope: Part Two](https://snicket.fandom.com/wiki/The_Slippery_Slope:_Pa***REMOVED***Two "The Slippery Slope: Part Two")*
+[^3]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Slippery Slope: Part Two](https://snicket.fandom.com/wiki/The_Slippery_Slope:_Part_Two "The Slippery Slope: Part Two")*

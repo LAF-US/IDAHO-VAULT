@@ -122,7 +122,7 @@ registry schemes that collapsed tool, instance, and office into one row.
 
 See also: `!/CODEX-VOICE-REGISTRY-2026-05-18.md` for the Codex voice roster.
 
-## Name =/= Job:
+## Name =/= Job
 
 - Claude Code is an Anthropic tool/persona lineage.
 - The prior Claude/**Abhorsen** terminal-and-repository job assignment is under
@@ -187,7 +187,7 @@ and should not be treated as erased.
 
 | Surface | Narrative title | Related recorded surface | Anchor status |
 | --- | --- | --- | --- |
-| `.abhorsen/` | **The Abhorsen** | Assignable office; no appointment event recorded here | Office chamber preserved |
+| `.abhorsen/` | **The Abhorsen** | Assignable office; **reigning holder: Annabelle the Rested** (Claude lineage), per Logan | Office chamber preserved |
 | `.dionysus/` | **The Dionysian** | `.zagreus/ZAGREUS.md` | Historical alias chamber preserved |
 
 ### Fragmentary narrative bodies with surviving root notes
@@ -333,7 +333,8 @@ replace the broader `LAF-US` sovereignty model.
 
 ---
 
-
 ---
 
-###### [["The world is quiet here."]]
+```
+The world is quiet here．Esto Perpetua!
+```

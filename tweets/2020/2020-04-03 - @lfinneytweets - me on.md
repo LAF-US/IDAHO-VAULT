@@ -19,6 +19,6 @@ me on https://t.co/nxIWTF7aiy https://t.co/nV7kQ9zWlG
 - http://coronavirus.idaho.gov
 
 ## Media
-- ![](https://pbs.twimg.com/tweet_video_thumb/EUtxGBRU8AAn_Vu.jpg)
+- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/EUtxGBRU8AAn_Vu.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1246214080492257280)

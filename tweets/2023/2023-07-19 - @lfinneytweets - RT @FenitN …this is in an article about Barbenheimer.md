@@ -21,6 +21,6 @@ RT @FenitN: …this is in an article about Barbenheimer https://t.co/vL9xeYjP0n 
 - https://www.washingtonpost.com/opinions/2023/07/19/barbie-oppenheimer-movies-anthropocene/
 
 ## Media
-- ![](https://pbs.twimg.com/media/F1bnQFHX0AYhVbI.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/F1bnQFHX0AYhVbI.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1681788041638162432)

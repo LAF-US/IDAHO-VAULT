@@ -97,7 +97,7 @@ Confusingly, although he clearly states while recounting a conversation with Pto
 
 ### Before the Books
 
-Bartimaeus was first summoned on 3010 BCE in Ur, Sumer. More of his early adventures can be viewed in [A Bartimaeus Chronology](http://www.bartimaeusbooks.com/ba***REMOVED***chronology.html).
+Bartimaeus was first summoned on 3010 BCE in Ur, Sumer. More of his early adventures can be viewed in [A Bartimaeus Chronology](http://www.bartimaeusbooks.com/bart_chronology.html).
 
 ### Prequel: The Ring of Solomon
 
@@ -156,7 +156,6 @@ Bartimaeus makes many claims throughout the books, many of which are only partly
 - **Defeated an afrit encased in the bones of Gladstone**
 - **Killed or otherwise destroyed the fortunes of several of his masters, such as [Ezekiel](https://bartimaeus.fandom.com/wiki/Ezekiel "Ezekiel") and [Khaba](https://bartimaeus.fandom.com/wiki/Khaba "Khaba")**
 
-  
 \* **Bold** indicates that there is direct evidence provided in the books that the claim is in some manner true.
 
 ## Relationships

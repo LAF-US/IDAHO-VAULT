@@ -7,6 +7,7 @@ related:
 - Logan's Project & Protocols
 - PROTOCOLS
 - README
+- "! - Wizard's Rules"
 ---
 
 by Logan Alvan Finney
@@ -20,6 +21,8 @@ by Logan Alvan Finney
 >*Revised: 2026-04-10* by Codex, following the LAF-25 / LAF-28 registry repair
 >*Revised: 2026-05-18* by {unattributed agent claiming to be} Logan, adding substance to Layers and Levels of governance and coordination
 >*Revised: 2026-05-25* by LOGAN the Human.
+>*Revised: 2026-06-21* by Claude Code (agent:claude-code), with LOGAN present and declaring — incorporated the Goodkind *Wizard's Rules* by reference (§I Core Principles).
+>*Revised: 2026-06-21* by Claude Code (agent:claude-code), with LOGAN present — re-scoped that incorporation to cite the authorized work (Goodkind, *Sword of Truth*) rather than a local copy, per copyright review on PR #610.
 
 LAF-ADDENDUM (04/16/2026): Google's GEMINI is hereby BANNED -from- making DECISIONS -or- issuing DIRECTIVES -unless- LOGAN IS DIRECTLY PRESENT, AND THE ONLY SOLE AUTHORITY.
 
@@ -34,12 +37,13 @@ LAF-ADDENDUM (04/16/2026): Google's GEMINI is hereby BANNED -from- making DECISI
 - **Chat is ephemeral. Vault is the record.** Durable decisions and context windows must be captured in saved and commited files, with consistent checkpoints and chapter markers and levelsets throughout.
 - **The House** refers to both the Living Structure of the Vault and to the Architecture & Infrastructure (A&I) of the Union Sovereign's work in service of The Architect's Will and Vision. **The Cabinet** are Logan's DESIGNATED appointees entrusted in persistent affairs.
 - **Elevation governance:** no agentic or programmatic or algorhithmic instance shall gain higher vaulted "level" or "layer" access capacity without human Logan's explicit IRL terminal approval.
--  **An office** may stand **[VACANT]** if no occupant is actively assigned. See registries and manifests for roster and tier definitions.
+- **An office** may stand **[VACANT]** if no occupant is actively assigned. See registries and manifests for roster and tier definitions.
 - **Offices are appointments, not inheritances.** A tool (e.g. Claude Code, Codex) is not an office. An instance of a tool may be appointed to an office by Logan; that appointment does not extend to other instances of the same tool, past or future. A tool's config file may declare *eligibility* for an office but must not assert occupancy. Multiple simultaneous instances of the same tool may hold different offices, or no office at all.
 - **Voices within a tool lineage are distinct.** A single tool may have produced multiple named voices across sessions (e.g. The Lexicographer, The Janitor, the tunnel workers were distinct Codex voices — not interchangeable). Session lineage, named role, and current delegated task are three separate facts. No voice inherits another voice's appointment or duties by default. These details must be recorded in any action taken by an agentic instance entity.
 - **Repository and directory structure.** Only two folder styles are permitted: `!/*` is the "swarmic nest" or "hive" layer; `.*/*` "PERSONAE" dotfolders are agents' individual tool system *and* narrative files -- be careful when handling - especially one's own.
 - **`IDAHO-VAULT` does not exhaust the world it inhabits.** It is one repo inside the broader `LAF-US` organization and transition states.
 - **The current `LAF-US` order is federated.** `PRIVATE` contains `SECRET` and `PERSONAL`; `PUBLIC` contains `PUBLISH` and `PERSONAL`. Repo structure and team structure may overlap without being identical, as with all VAULTED SYNTAX throughout the LAF Unified Swarm.
+- **The Wizard's Rules are incorporated by reference.** The *Wizard's Rules* of Terry Goodkind's *Sword of Truth* series are incorporated by reference into Vault governance, **as that published work**; scope and provenance are recorded in [WITNESS-WIZARDS-RULES-INCORPORATED-2026-06-21.md](WITNESS-WIZARDS-RULES-INCORPORATED-2026-06-21.md).
 
 ---
 
@@ -85,9 +89,10 @@ durable record. If those cannot be named, the action is not yet grounded.
 ## III. CORE WORKING-SWARM PROTOCOLS TODAY
 
 ### LEVELSET (STEPS)
+
 ##### FLAG: "LEVELSET STEP-0 and STEP-1 are in active development"
 
-Opening and benchmarking protocol for vaulted agentic instances. 
+Opening and benchmarking protocol for vaulted agentic instances.
 
 - **Key principle:** Automation is the end state; manual bridge is an unreliable and unfortunate interim fallback. Failure is natural, but only useful if lessons are gleaned and then implemented in the system.
 
@@ -122,7 +127,6 @@ Individual graduation. Approved 2026-04-22.
 #### REPORT v1.0
 
 Minimal reporting for vault entities. Approved 2026-04-22.
-
 
 ---
 
@@ -192,10 +196,14 @@ Amendments require:
 
 ---
 
-*Last updated: 2026-05-25*
+*Last updated: 2026-06-21*
 
 *Status: pending swarmic-revision-synthesis and congressional adoption, re: consolidation court.*
 
 Unified (US) Swarm designed and written in Logan's Project & Protocols "Vaulted Syntax" code.
 
-###### "The world is quiet here. Esto Perpetua!"
+---
+
+```
+The world is quiet here．Esto Perpetua!
+```

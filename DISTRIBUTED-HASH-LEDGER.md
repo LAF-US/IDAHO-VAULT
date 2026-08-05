@@ -5,6 +5,8 @@ status: staged
 authority: logan
 date created: Thursday, April 23rd 2026, 1:56:33 pm
 date modified: Thursday, April 23rd 2026, 5:56:58 pm
+related:
+  - STORAGE-LFS-USB-CONSTELLATION-INDEX-2026-06-17
 ---
 
 # Distributed Hash Ledger Infrastructure
@@ -170,6 +172,7 @@ This infrastructure draws from research in [explain LangChain.md](explain LangCh
 ### Verification Workflow — LEVELSET → SYNC → VERIFY → REPORT
 
 ```
+
 LEVELSET (session start)
     │
     ├─▶ SNIFF ──▶ PULL from providers ──▶ Context load
@@ -179,6 +182,7 @@ LEVELSET (session start)
     ├─▶ CHECK ──▶ Verify across providers ──▶ rclone check
     │
     └─▶ REPORT ──▶ Emit verified state ──▶ DISMISS
+
 ```
 
 ### Distributed Verification Command Reference

@@ -19,7 +19,7 @@ related:
 @LPNational @ChubbyPrimate https://t.co/8RvZRcp1Yf
 
 ## Media
-- ![](https://pbs.twimg.com/tweet_video_thumb/FWYgxqhVEAAOpBX.jpg)
+- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/FWYgxqhVEAAOpBX.jpg)
 
 *In reply to [@LPNational](https://twitter.com/LPNational)*
 

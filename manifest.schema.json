@@ -46,7 +46,7 @@
       "required": ["enabled", "mode", "server", "notes"],
       "properties": {
         "enabled": { "type": "boolean" },
-        "mode": { "const": "transpo***REMOVED***only" },
+        "mode": { "const": "transport_only" },
         "server": { "type": ["string", "null"] },
         "notes": { "type": "string" }
       },

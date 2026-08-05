@@ -17,7 +17,7 @@ related:
 Rep. Judy Boyle (R-Midvale) https://t.co/ZtlOZLrqIB
 
 ## Media
-- ![](https://pbs.twimg.com/media/EbQEcpWX0AA2FNC.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EbQEcpWX0AA2FNC.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

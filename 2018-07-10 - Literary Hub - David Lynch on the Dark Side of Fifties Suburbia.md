@@ -24,7 +24,7 @@ authority: LOGAN
 
 [![Literary Hub](https://s26162.pcdn.co/wp-content/themes/lithub-prime/img/logo-compact.png)](https://lithub.com/)
 
-![](https://s26162.pcdn.co/wp-content/uploads/2018/07/Untitled-design-2.jpg "David Lynch on the Dark Side of Fifties Suburbia")
+![alt text needed](https://s26162.pcdn.co/wp-content/uploads/2018/07/Untitled-design-2.jpg "David Lynch on the Dark Side of Fifties Suburbia")
 
 ## Bombs, Bullets, and Amputated Feet, Obviously
 
@@ -60,7 +60,7 @@ I’d been with him just 15 minutes before it happened. When he said, “Dave, I
 
 \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 
-![](https://s26162.pcdn.co/wp-content/uploads/2018/07/room-to-dream-david-lynch.jpeg)
+![alt text needed](https://s26162.pcdn.co/wp-content/uploads/2018/07/room-to-dream-david-lynch.jpeg)
 
 *From* [Room to Dream](https://www.penguinrandomhouse.com/books/545016/room-to-dream-by-david-lynch-and-kristine-mckenna/9780399589195/). *Used with permission of Random House. Copyright © 2018 by David Lynch and Kristine McKenna.*
 

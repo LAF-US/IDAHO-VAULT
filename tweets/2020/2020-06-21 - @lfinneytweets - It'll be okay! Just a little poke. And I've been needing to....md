@@ -16,6 +16,6 @@ related:
 @davlinnews It'll be okay! Just a little poke. And I've been needing to schedule a regular appointment anyway 😅 https://t.co/zjHQePFHJr
 
 ## Media
-- ![](https://pbs.twimg.com/media/EbEAoRUUMAANrRz.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EbEAoRUUMAANrRz.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1274800871058976768)

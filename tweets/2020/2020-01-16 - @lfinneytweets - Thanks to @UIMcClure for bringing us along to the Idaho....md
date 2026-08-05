@@ -18,6 +18,6 @@ related:
 Thanks to @UIMcClure for bringing us along to the Idaho Environmental Forum! https://t.co/UMgGC78s2p
 
 ## Media
-- ![](https://pbs.twimg.com/media/EOXM3IyU4AAXWqe.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EOXM3IyU4AAXWqe.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1217604530071691264)

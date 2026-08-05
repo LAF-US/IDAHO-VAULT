@@ -133,6 +133,7 @@ Your support makes BoiseDev possible.
 #### Project Tracker
 
 - ### Micron Boise expansion
+
 - ### Meta/Facebook data center
 
 ---

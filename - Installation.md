@@ -21,7 +21,7 @@ You can install it with `npx skills add crewaiinc/skills`
 
 Watch this video tutorial for a step-by-step demonstration of the installation process:
 
-![](https://www.youtube.com/watch?v=-kSOTtYzgEw)
+![alt text needed](https://www.youtube.com/watch?v=-kSOTtYzgEw)
 
 ## Text Tutorial
 

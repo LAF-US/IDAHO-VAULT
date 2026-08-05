@@ -18,6 +18,6 @@ related:
 RT @pgcornwell: Go sports! https://t.co/7CcGViyqCV
 
 ## Media
-- ![](https://pbs.twimg.com/tweet_video_thumb/Edn-qtKU0AEyoVo.jpg)
+- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/Edn-qtKU0AEyoVo.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1286340558806491136)

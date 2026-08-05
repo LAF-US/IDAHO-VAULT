@@ -6,6 +6,17 @@ published:
 created: 2026-04-14
 date created: Tuesday, April 14th 2026, 9:15:41 pm
 date modified: Tuesday, April 14th 2026, 9:22:15 pm
+related:
+  - WIZARDS_FIRST
+  - WIZARDS_SECOND
+  - WIZARDS_THIRD
+  - WIZARDS_FOURTH
+  - WIZARDS_FIFTH
+  - WIZARDS_SIXTH
+  - WIZARDS_SEVENTH
+  - WIZARDS_EIGHTH
+  - WIZARDS_NINTH
+  - WIZARDS_TENTH
 ---
 
 In the "Sword of Truth" series, there is a set of rules or guidelines called **Wizard's Rules**. In each of the books, a new rule is introduced. The books' plots somewhat revolves around these rules (although most of the rules come into play in each book). As of April 2026, there are fourteen rules total, but only eleven of them have been numbered.

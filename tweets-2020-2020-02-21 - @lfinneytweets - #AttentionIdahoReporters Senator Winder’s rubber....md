@@ -16,7 +16,7 @@ related:
   - AttentionIdahoReporters
 ---
 
-#AttentionIdahoReporters: 
+#AttentionIdahoReporters:
 Senator Winder’s rubber chicken—named Omelette—is still missing from his office.
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1230923503278231552)
