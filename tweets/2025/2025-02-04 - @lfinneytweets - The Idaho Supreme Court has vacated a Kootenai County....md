@@ -1,4 +1,5 @@
 ---
+title: "The Idaho Supreme Court has vacated a Kootenai County..."
 date: 2025-02-04
 time: 00:44:20
 tweet_id: "1886576488348311989"

@@ -1,4 +1,5 @@
 ---
+title: "Full story from @NinaRobin7 @IdahoPubRadio"
 date: 2018-03-08
 time: 22:17:49
 tweet_id: "971872641899311105"

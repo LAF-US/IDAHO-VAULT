@@ -1,4 +1,5 @@
 ---
+title: "RT @BuzzFeedNews NEW Apple has given the conservative app..."
 date: 2021-01-08
 time: 23:15:11
 tweet_id: "1347683296952475649"

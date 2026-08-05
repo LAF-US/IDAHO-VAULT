@@ -1,4 +1,5 @@
 ---
+title: "My latest at @IdahoReports - AG's office says proposed..."
 date: 2023-06-05
 time: 21:48:47
 tweet_id: "1665838099434467328"

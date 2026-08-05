@@ -1,4 +1,5 @@
 ---
+title: "RT @GovernorLittle I will be rescinding and reversing any..."
 date: 2021-10-05
 time: 22:31:15
 tweet_id: "1445516965355810823"

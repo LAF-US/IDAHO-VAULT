@@ -1,4 +1,5 @@
 ---
+title: "The Idaho State Department of Agriculture proposed changes..."
 date: 2020-09-25
 time: 18:08:07
 tweet_id: "1309555296683962368"

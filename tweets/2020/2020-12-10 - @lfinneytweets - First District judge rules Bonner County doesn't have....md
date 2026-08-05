@@ -1,4 +1,5 @@
 ---
+title: "First District judge rules Bonner County doesn't have..."
 date: 2020-12-10
 time: 19:15:52
 tweet_id: "1337113822142730240"

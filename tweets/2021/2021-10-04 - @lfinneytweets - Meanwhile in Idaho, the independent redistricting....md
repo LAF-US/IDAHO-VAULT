@@ -1,4 +1,5 @@
 ---
+title: "Meanwhile in Idaho, the independent redistricting..."
 date: 2021-10-04
 time: 20:00:46
 tweet_id: "1445116706569867268"

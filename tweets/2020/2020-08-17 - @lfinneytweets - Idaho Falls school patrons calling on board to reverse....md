@@ -1,4 +1,5 @@
 ---
+title: "Idaho Falls school patrons calling on board to reverse..."
 date: 2020-08-17
 time: 16:30:29
 tweet_id: "1295397600741347329"

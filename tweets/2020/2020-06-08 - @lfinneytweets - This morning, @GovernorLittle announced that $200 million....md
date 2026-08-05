@@ -1,4 +1,5 @@
 ---
+title: "This morning, @GovernorLittle announced that $200 million..."
 date: 2020-06-08
 time: 19:10:12
 tweet_id: "1270070641241108480"

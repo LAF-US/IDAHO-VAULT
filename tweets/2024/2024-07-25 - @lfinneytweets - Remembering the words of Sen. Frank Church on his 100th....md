@@ -1,4 +1,5 @@
 ---
+title: "Remembering the words of Sen. Frank Church on his 100th..."
 date: 2024-07-25
 time: 22:41:55
 tweet_id: "1816604823544037463"

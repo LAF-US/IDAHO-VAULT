@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoStatesman What\u2019s going on with the sale of Boise\u2019s..."
 date: 2024-05-31
 time: 05:56:50
 tweet_id: "1796420554758701423"

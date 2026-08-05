@@ -1,4 +1,5 @@
 ---
+title: "The redistricting commission continues their statewide..."
 date: 2021-09-20
 time: 23:23:46
 tweet_id: "1440094363476905991"

@@ -1,4 +1,5 @@
 ---
+title: "The Idaho Debates on @IdahoPTV Attorney General, 2022..."
 date: 2022-04-20
 time: 05:29:10
 tweet_id: "1516650159152664576"

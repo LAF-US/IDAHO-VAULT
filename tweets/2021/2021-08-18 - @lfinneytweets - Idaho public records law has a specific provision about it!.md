@@ -1,4 +1,5 @@
 ---
+title: "Idaho public records law has a specific provision about it!"
 date: 2021-08-18
 time: 05:14:13
 tweet_id: "1427861368695267330"

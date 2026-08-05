@@ -1,4 +1,5 @@
 ---
+title: "RT @KBSX915 The civil liability bill went through six..."
 date: 2020-08-27
 time: 13:23:37
 tweet_id: "1298974450268778498"

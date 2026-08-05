@@ -1,4 +1,5 @@
 ---
+title: "That\u2019s what a newspaper, particularly a regional one close..."
 date: 2023-05-01
 time: 18:24:04
 tweet_id: "1653103004827136000"

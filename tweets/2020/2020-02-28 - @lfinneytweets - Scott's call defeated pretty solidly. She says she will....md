@@ -1,4 +1,5 @@
 ---
+title: "Scott's call defeated pretty solidly. She says she will..."
 date: 2020-02-28
 time: 17:55:31
 tweet_id: "1233450674026729473"

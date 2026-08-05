@@ -1,4 +1,5 @@
 ---
+title: "The letter linked on the Idaho Debates webpage ( was sent..."
 date: 2022-04-18
 time: 19:12:48
 tweet_id: "1516132658069135361"

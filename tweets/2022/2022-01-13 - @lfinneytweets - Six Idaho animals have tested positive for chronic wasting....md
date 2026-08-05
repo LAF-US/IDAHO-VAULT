@@ -1,4 +1,5 @@
 ---
+title: "Six Idaho animals have tested positive for chronic wasting..."
 date: 2022-01-13
 time: 00:44:13
 tweet_id: "1481426826924724224"

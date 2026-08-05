@@ -1,4 +1,5 @@
 ---
+title: "Ethics chairman Rep. Sage Dixon on censure recommendation,..."
 date: 2021-08-19
 time: 17:51:03
 tweet_id: "1428414218986917891"

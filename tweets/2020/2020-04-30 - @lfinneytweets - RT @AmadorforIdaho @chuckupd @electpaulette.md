@@ -1,4 +1,5 @@
 ---
+title: "RT @AmadorforIdaho @chuckupd @electpaulette"
 date: 2020-04-30
 time: 01:20:06
 tweet_id: "1255668216476532738"

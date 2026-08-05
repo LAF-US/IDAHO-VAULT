@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise What it cost Ada County to..."
 date: 2020-03-26
 time: 17:27:01
 tweet_id: "1243227972028362752"

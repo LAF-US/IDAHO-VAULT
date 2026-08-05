@@ -1,4 +1,5 @@
 ---
+title: "(The referenced statute is 33-1604, for those curious.)"
 date: 2022-07-01
 time: 22:01:21
 tweet_id: "1542991776490786817"

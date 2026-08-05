@@ -1,4 +1,5 @@
 ---
+title: "RT @BoiseDev Idaho tried to lure a nuclear company in 2008...."
 date: 2020-11-10
 time: 22:59:45
 tweet_id: "1326298528897925123"

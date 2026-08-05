@@ -1,4 +1,5 @@
 ---
+title: "A lot of climate change research looks to the future\u20262050,..."
 date: 2022-04-04
 time: 01:01:00
 tweet_id: "1510784465315897345"

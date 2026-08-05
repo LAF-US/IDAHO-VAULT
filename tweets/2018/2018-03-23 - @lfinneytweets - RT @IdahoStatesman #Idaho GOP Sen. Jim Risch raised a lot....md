@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoStatesman #Idaho GOP Sen. Jim Risch raised a lot..."
 date: 2018-03-23
 time: 17:14:28
 tweet_id: "977232122002907137"

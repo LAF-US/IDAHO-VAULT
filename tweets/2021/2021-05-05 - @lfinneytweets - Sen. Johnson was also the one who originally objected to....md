@@ -1,4 +1,5 @@
 ---
+title: "Sen. Johnson was also the one who originally objected to..."
 date: 2021-05-05
 time: 21:14:04
 tweet_id: "1390052198281662467"

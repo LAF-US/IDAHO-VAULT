@@ -1,4 +1,5 @@
 ---
+title: "Schriever joined us a year ago on @IdahoReports to talk..."
 date: 2022-12-08
 time: 17:33:04
 tweet_id: "1600906317794660352"

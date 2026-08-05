@@ -1,4 +1,5 @@
 ---
+title: "Senate State Affairs was scheduled to begin at 8am. The..."
 date: 2021-11-15
 time: 15:42:02
 tweet_id: "1460271886428819460"

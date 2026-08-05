@@ -1,4 +1,5 @@
 ---
+title: "RT @lawrencewasden News release Property Tax Scam Targets..."
 date: 2022-06-28
 time: 18:43:16
 tweet_id: "1541854761196015616"

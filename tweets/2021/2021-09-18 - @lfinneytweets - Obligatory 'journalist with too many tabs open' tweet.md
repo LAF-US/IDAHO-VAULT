@@ -1,4 +1,5 @@
 ---
+title: "Obligatory 'journalist with too many tabs open' tweet"
 date: 2021-09-18
 time: 03:26:13
 tweet_id: "1439068212809793538"

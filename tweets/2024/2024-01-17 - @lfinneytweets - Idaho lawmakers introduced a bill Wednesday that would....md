@@ -1,4 +1,5 @@
 ---
+title: "Idaho lawmakers introduced a bill Wednesday that would..."
 date: 2024-01-17
 time: 21:39:11
 tweet_id: "1747735339979129056"

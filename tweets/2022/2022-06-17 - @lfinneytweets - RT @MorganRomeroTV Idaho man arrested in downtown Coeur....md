@@ -1,4 +1,5 @@
 ---
+title: "RT @MorganRomeroTV Idaho man arrested in downtown Coeur..."
 date: 2022-06-17
 time: 04:04:05
 tweet_id: "1537647241623531520"

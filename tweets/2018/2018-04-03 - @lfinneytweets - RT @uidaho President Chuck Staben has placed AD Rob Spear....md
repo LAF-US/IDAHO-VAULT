@@ -1,4 +1,5 @@
 ---
+title: "RT @uidaho President Chuck Staben has placed AD Rob Spear..."
 date: 2018-04-03
 time: 17:51:59
 tweet_id: "981227829374328832"

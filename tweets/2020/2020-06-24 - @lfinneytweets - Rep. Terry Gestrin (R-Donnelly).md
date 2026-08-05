@@ -1,4 +1,5 @@
 ---
+title: "Rep. Terry Gestrin (R-Donnelly)"
 date: 2020-06-24
 time: 04:50:40
 tweet_id: "1275652539590094848"

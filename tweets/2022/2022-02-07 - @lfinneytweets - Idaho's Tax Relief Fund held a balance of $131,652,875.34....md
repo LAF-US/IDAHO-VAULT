@@ -1,4 +1,5 @@
 ---
+title: "Idaho's Tax Relief Fund held a balance of $131,652,875.34..."
 date: 2022-02-07
 time: 22:27:57
 tweet_id: "1490814617756467201"

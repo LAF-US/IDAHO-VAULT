@@ -1,4 +1,5 @@
 ---
+title: "Yet again, Rep. Ron Nate's move under House Rules to call..."
 date: 2022-03-23
 time: 15:24:34
 tweet_id: "1506653135271473160"

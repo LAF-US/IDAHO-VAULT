@@ -1,4 +1,5 @@
 ---
+title: "Six Republican state lawmakers, all from Nampa in..."
 date: 2021-07-12
 time: 23:28:00
 tweet_id: "1414728279341223938"

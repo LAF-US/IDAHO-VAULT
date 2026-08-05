@@ -1,4 +1,5 @@
 ---
+title: "2015 #idleg \u201cI believe you all are here to sincerely serve..."
 date: 2025-01-24
 time: 01:00:16
 tweet_id: "1882594231396741348"

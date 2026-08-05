@@ -1,4 +1,5 @@
 ---
+title: "\u201cWe have not moved from where we\u2019ve always stood,\u201d..."
 date: 2024-06-16
 time: 02:15:33
 tweet_id: "1802163073467482236"

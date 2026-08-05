@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Idaho primary election..."
 date: 2020-05-16
 time: 00:49:26
 tweet_id: "1261458703707860992"

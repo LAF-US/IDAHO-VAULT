@@ -1,4 +1,5 @@
 ---
+title: "Last Thursday on Facebook, Giddings claimed Bedke had..."
 date: 2021-08-04
 time: 03:34:45
 tweet_id: "1422762906249097217"

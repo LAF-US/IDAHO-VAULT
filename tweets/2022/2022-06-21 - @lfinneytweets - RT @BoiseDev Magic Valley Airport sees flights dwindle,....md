@@ -1,4 +1,5 @@
 ---
+title: "RT @BoiseDev Magic Valley Airport sees flights dwindle,..."
 date: 2022-06-21
 time: 17:27:29
 tweet_id: "1539298978499424256"

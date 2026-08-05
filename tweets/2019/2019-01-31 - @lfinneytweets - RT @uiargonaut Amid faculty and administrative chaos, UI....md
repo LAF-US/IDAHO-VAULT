@@ -1,4 +1,5 @@
 ---
+title: "RT @uiargonaut Amid faculty and administrative chaos, UI..."
 date: 2019-01-31
 time: 19:03:29
 tweet_id: "1091049347871997952"

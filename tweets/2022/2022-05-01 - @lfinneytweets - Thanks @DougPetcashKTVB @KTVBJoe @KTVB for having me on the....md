@@ -1,4 +1,5 @@
 ---
+title: "Thanks @DougPetcashKTVB @KTVBJoe @KTVB for having me on the..."
 date: 2022-05-01
 time: 19:38:15
 tweet_id: "1520850102465687553"

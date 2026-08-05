@@ -1,4 +1,5 @@
 ---
+title: "Gem County Commissioner @SWDHIDAHO chair We have a surge, a..."
 date: 2020-07-23
 time: 16:35:19
 tweet_id: "1286339117912031232"

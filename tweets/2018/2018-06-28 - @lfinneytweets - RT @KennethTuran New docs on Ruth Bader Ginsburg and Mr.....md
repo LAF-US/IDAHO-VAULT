@@ -1,4 +1,5 @@
 ---
+title: "RT @KennethTuran New docs on Ruth Bader Ginsburg and Mr...."
 date: 2018-06-28
 time: 08:46:29
 tweet_id: "1012255904253796352"

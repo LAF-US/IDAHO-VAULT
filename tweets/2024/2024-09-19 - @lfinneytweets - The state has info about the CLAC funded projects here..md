@@ -1,4 +1,5 @@
 ---
+title: "The state has info about the CLAC funded projects here."
 date: 2024-09-19
 time: 18:20:17
 tweet_id: "1836832701514666134"

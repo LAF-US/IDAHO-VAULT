@@ -1,4 +1,5 @@
 ---
+title: "RT @KTVB Payette mayor resigns, does not provide reason and..."
 date: 2024-01-23
 time: 16:16:53
 tweet_id: "1749828558359577066"

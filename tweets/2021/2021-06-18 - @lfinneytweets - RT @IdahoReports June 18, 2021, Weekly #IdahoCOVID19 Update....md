@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports June 18, 2021, Weekly #IdahoCOVID19 Update..."
 date: 2021-06-18
 time: 23:01:01
 tweet_id: "1406024177493045249"

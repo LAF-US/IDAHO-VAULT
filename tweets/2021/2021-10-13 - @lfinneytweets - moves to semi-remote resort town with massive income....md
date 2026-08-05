@@ -1,4 +1,5 @@
 ---
+title: "moves to semi-remote resort town with massive income..."
 date: 2021-10-13
 time: 19:25:39
 tweet_id: "1448369360590966787"

@@ -1,4 +1,5 @@
 ---
+title: "More Bonner Kootenai @phdidaho coverage from the other side..."
 date: 2020-12-04
 time: 05:26:22
 tweet_id: "1334730744661348352"

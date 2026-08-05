@@ -1,4 +1,5 @@
 ---
+title: "RT @KeithRidler Idaho lieutenant governor keeps focus on..."
 date: 2021-07-21
 time: 15:48:16
 tweet_id: "1417874072617185280"

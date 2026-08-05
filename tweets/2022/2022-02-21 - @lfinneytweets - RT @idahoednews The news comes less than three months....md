@@ -1,4 +1,5 @@
 ---
+title: "RT @idahoednews The news comes less than three months..."
 date: 2022-02-21
 time: 17:06:38
 tweet_id: "1495807185783246850"

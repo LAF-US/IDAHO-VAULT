@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Follow state election results with the..."
 date: 2024-11-06
 time: 04:31:03
 tweet_id: "1854018635700068771"

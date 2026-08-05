@@ -1,4 +1,5 @@
 ---
+title: "I know as much as Davlin outlines in this thread, which is..."
 date: 2020-10-26
 time: 03:39:37
 tweet_id: "1320570752836358144"

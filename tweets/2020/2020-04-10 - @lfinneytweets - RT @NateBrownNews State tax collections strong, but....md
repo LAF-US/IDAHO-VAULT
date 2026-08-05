@@ -1,4 +1,5 @@
 ---
+title: "RT @NateBrownNews State tax collections strong, but..."
 date: 2020-04-10
 time: 05:57:38
 tweet_id: "1248490300613341184"

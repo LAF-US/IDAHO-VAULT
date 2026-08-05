@@ -1,4 +1,5 @@
 ---
+title: "don't worry guys, Threads still sucks"
 date: 2024-12-11
 time: 03:17:11
 tweet_id: "1866683621941383223"

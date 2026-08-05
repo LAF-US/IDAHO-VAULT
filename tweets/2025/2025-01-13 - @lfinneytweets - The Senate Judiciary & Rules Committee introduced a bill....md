@@ -1,4 +1,5 @@
 ---
+title: "The Senate Judiciary & Rules Committee introduced a bill..."
 date: 2025-01-13
 time: 22:09:30
 tweet_id: "1878927377323163972"

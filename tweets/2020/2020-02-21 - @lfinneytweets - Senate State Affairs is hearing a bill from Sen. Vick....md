@@ -1,4 +1,5 @@
 ---
+title: "Senate State Affairs is hearing a bill from Sen. Vick..."
 date: 2020-02-21
 time: 15:33:36
 tweet_id: "1230878241562316800"

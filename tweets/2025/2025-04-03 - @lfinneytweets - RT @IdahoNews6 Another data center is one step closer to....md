@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoNews6 Another data center is one step closer to..."
 date: 2025-04-03
 time: 19:58:07
 tweet_id: "1907885342201729477"

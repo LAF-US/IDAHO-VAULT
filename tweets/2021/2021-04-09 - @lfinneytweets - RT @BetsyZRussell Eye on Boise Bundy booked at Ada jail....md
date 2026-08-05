@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Bundy booked at Ada jail..."
 date: 2021-04-09
 time: 01:55:45
 tweet_id: "1380338611283841024"

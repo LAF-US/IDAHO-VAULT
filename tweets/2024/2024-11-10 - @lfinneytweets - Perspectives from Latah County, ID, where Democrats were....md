@@ -1,4 +1,5 @@
 ---
+title: "Perspectives from Latah County, ID, where Democrats were..."
 date: 2024-11-10
 time: 22:09:13
 tweet_id: "1855734484936831442"

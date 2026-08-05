@@ -1,4 +1,5 @@
 ---
+title: "Thanks @gemmagaudette for having me on #IdahoMatters today!..."
 date: 2023-07-28
 time: 21:05:15
 tweet_id: "1685033703146414080"

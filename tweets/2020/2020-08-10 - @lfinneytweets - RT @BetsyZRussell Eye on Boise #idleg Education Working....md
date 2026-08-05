@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise #idleg Education Working..."
 date: 2020-08-10
 time: 19:55:32
 tweet_id: "1292912485402415104"

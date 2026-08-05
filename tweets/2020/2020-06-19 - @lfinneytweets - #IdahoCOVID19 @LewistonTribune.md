@@ -1,4 +1,5 @@
 ---
+title: "#IdahoCOVID19 @LewistonTribune"
 date: 2020-06-19
 time: 21:28:53
 tweet_id: "1274091810415996929"

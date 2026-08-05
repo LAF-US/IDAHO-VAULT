@@ -1,4 +1,5 @@
 ---
+title: "RT @qz How to find out how much Facebook thinks it knows..."
 date: 2019-01-21
 time: 02:21:47
 tweet_id: "1087173382020296704"

@@ -1,4 +1,5 @@
 ---
+title: "Kootenai County jury awards over $1.1 million in damages to..."
 date: 2024-05-25
 time: 00:52:11
 tweet_id: "1794169558674399565"

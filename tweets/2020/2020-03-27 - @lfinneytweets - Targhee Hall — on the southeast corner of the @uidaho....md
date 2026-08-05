@@ -1,4 +1,5 @@
 ---
+title: "Targhee Hall \u2014 on the southeast corner of the @uidaho..."
 date: 2020-03-27
 time: 17:47:08
 tweet_id: "1243595423886888960"

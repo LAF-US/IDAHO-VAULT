@@ -1,4 +1,5 @@
 ---
+title: "#1 thing I miss about @uidaho @VandalBand street parades,..."
 date: 2020-06-11
 time: 04:08:48
 tweet_id: "1270930962566615040"

@@ -1,4 +1,5 @@
 ---
+title: "RT @NWSBoise Current view from space of the wildfire smoke..."
 date: 2021-07-09
 time: 21:14:14
 tweet_id: "1413607449408327681"

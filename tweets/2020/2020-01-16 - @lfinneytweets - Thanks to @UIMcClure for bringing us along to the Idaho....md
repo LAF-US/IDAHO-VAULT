@@ -1,4 +1,5 @@
 ---
+title: "Thanks to @UIMcClure for bringing us along to the Idaho..."
 date: 2020-01-16
 time: 00:28:36
 tweet_id: "1217604530071691264"

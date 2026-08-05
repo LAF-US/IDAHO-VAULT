@@ -1,4 +1,5 @@
 ---
+title: "Republican #idleg candidates have very strong margins in..."
 date: 2020-11-04
 time: 07:57:19
 tweet_id: "1323897097628782592"

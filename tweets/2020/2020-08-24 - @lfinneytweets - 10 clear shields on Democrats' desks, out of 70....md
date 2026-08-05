@@ -1,4 +1,5 @@
 ---
+title: "10 clear shields on Democrats' desks, out of 70..."
 date: 2020-08-24
 time: 16:06:35
 tweet_id: "1297928300845654016"

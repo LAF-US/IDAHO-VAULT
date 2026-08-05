@@ -1,4 +1,5 @@
 ---
+title: "RT @pewjournalism \ud83d\udea8NEW\ud83d\udea8 Journalists sense turmoil in their..."
 date: 2022-06-14
 time: 16:49:38
 tweet_id: "1536752735386624001"

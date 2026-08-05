@@ -1,4 +1,5 @@
 ---
+title: "Part of the reason #PrideMonth is so important is that it's..."
 date: 2018-06-03
 time: 00:51:18
 tweet_id: "1003076626257571840"

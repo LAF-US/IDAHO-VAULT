@@ -1,4 +1,5 @@
 ---
+title: "RT @Poynter How three very different wealthy newspaper..."
 date: 2018-06-06
 time: 21:18:21
 tweet_id: "1004472586539970560"

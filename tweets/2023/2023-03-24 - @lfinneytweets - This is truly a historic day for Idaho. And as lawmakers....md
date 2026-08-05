@@ -1,4 +1,5 @@
 ---
+title: "This is truly a historic day for Idaho. And as lawmakers..."
 date: 2023-03-24
 time: 02:37:02
 tweet_id: "1639093937771266048"

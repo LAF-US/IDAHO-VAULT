@@ -1,4 +1,5 @@
 ---
+title: "Unpopular opinion The Senate represents states (not..."
 date: 2020-06-25
 time: 20:25:41
 tweet_id: "1276250230204231680"

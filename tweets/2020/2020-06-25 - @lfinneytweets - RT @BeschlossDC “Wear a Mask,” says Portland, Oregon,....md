@@ -1,4 +1,5 @@
 ---
+title: "RT @BeschlossDC \u201cWear a Mask,\u201d says Portland, Oregon,..."
 date: 2020-06-25
 time: 16:02:36
 tweet_id: "1276184026479501312"

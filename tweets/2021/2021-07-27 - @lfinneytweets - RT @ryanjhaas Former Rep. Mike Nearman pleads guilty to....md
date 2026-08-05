@@ -1,4 +1,5 @@
 ---
+title: "RT @ryanjhaas Former Rep. Mike Nearman pleads guilty to..."
 date: 2021-07-27
 time: 19:09:57
 tweet_id: "1420099155846852608"

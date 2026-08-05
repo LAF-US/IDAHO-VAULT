@@ -1,4 +1,5 @@
 ---
+title: "New blog post My relationship with the town of Moscow has..."
 date: 2018-05-18
 time: 06:41:26
 tweet_id: "997366534749089792"

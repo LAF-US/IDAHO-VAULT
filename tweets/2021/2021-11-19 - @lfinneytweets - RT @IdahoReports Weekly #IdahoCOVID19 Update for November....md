@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Weekly #IdahoCOVID19 Update for November..."
 date: 2021-11-19
 time: 22:14:11
 tweet_id: "1461820124529401870"

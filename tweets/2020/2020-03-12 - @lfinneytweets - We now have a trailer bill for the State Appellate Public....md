@@ -1,4 +1,5 @@
 ---
+title: "We now have a trailer bill for the State Appellate Public..."
 date: 2020-03-12
 time: 21:59:00
 tweet_id: "1238222990354944000"

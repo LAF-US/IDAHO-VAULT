@@ -1,4 +1,5 @@
 ---
+title: "Funny how different governments can be..."
 date: 2024-03-18
 time: 20:38:04
 tweet_id: "1769825619863285904"

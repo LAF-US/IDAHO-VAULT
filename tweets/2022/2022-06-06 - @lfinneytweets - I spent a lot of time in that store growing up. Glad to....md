@@ -1,4 +1,5 @@
 ---
+title: "I spent a lot of time in that store growing up. Glad to..."
 date: 2022-06-06
 time: 21:00:08
 tweet_id: "1533916673379422209"

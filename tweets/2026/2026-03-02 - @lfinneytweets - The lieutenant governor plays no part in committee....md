@@ -1,4 +1,5 @@
 ---
+title: "The lieutenant governor plays no part in committee..."
 date: 2026-03-02
 time: 21:04:15
 tweet_id: "2028577144746750066"

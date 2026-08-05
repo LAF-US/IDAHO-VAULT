@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Idaho to stay in Stage 4 for..."
 date: 2020-10-15
 time: 19:20:49
 tweet_id: "1316821349487181825"

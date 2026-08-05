@@ -1,4 +1,5 @@
 ---
+title: "Idaho's counties make more sense when you look at seats... (110898)"
 date: 2024-04-09
 time: 22:53:39
 tweet_id: "1777832273209110898"

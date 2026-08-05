@@ -1,4 +1,5 @@
 ---
+title: "RT @nprpolitics President Trump And First Lady Test..."
 date: 2020-10-02
 time: 07:05:02
 tweet_id: "1311925139303358464"

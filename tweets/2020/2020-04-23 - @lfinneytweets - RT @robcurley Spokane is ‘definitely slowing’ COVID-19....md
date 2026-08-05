@@ -1,4 +1,5 @@
 ---
+title: "RT @robcurley Spokane is \u2018definitely slowing\u2019 COVID-19..."
 date: 2020-04-23
 time: 22:27:00
 tweet_id: "1253450324909518848"

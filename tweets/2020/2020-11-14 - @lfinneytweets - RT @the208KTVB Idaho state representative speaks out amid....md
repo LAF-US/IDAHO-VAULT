@@ -1,4 +1,5 @@
 ---
+title: "RT @the208KTVB Idaho state representative speaks out amid..."
 date: 2020-11-14
 time: 03:33:35
 tweet_id: "1327454605609824257"

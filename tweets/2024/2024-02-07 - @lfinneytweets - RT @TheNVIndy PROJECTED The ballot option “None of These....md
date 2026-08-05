@@ -1,4 +1,5 @@
 ---
+title: "RT @TheNVIndy PROJECTED The ballot option \u201cNone of These..."
 date: 2024-02-07
 time: 06:22:59
 tweet_id: "1755114917156503916"

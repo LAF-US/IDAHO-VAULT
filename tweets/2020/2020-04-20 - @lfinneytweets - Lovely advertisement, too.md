@@ -1,4 +1,5 @@
 ---
+title: "Lovely advertisement, too"
 date: 2020-04-20
 time: 18:51:58
 tweet_id: "1252309049015586817"

@@ -1,4 +1,5 @@
 ---
+title: "North Idaho patients who would have gone to Kootenai Health..."
 date: 2020-10-28
 time: 23:48:24
 tweet_id: "1321599730732859393"

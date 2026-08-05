@@ -1,4 +1,5 @@
 ---
+title: "Folks over on Instagram are NOT buying Bayer's pesticide..."
 date: 2025-03-12
 time: 06:07:22
 tweet_id: "1899703745157759395"

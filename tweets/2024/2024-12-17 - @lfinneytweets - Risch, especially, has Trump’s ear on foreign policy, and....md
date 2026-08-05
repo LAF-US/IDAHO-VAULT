@@ -1,4 +1,5 @@
 ---
+title: "Risch, especially, has Trump\u2019s ear on foreign policy, and..."
 date: 2024-12-17
 time: 14:56:22
 tweet_id: "1869033904507924489"

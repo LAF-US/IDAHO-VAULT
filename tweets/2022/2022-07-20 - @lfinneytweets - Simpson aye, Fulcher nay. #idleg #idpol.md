@@ -1,4 +1,5 @@
 ---
+title: "Simpson aye, Fulcher nay. #idleg #idpol"
 date: 2022-07-20
 time: 02:09:25
 tweet_id: "1549577184976572417"

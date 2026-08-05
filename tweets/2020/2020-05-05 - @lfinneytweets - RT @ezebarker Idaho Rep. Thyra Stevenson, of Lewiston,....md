@@ -1,4 +1,5 @@
 ---
+title: "RT @ezebarker Idaho Rep. Thyra Stevenson, of Lewiston,..."
 date: 2020-05-05
 time: 19:48:15
 tweet_id: "1257759031852068864"

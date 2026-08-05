@@ -1,4 +1,5 @@
 ---
+title: "To guarantee a senator to every county \u2014 i.e., a world..."
 date: 2021-10-29
 time: 15:16:01
 tweet_id: "1454104745287700484"

@@ -1,4 +1,5 @@
 ---
+title: "RT @v2aggie2 Idaho primary gives Medicaid expansion a boost"
 date: 2018-05-22
 time: 06:04:56
 tweet_id: "998806900845170688"

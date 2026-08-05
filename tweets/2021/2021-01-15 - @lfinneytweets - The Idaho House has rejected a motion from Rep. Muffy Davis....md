@@ -1,4 +1,5 @@
 ---
+title: "The Idaho House has rejected a motion from Rep. Muffy Davis..."
 date: 2021-01-15
 time: 16:22:04
 tweet_id: "1350116046204637185"

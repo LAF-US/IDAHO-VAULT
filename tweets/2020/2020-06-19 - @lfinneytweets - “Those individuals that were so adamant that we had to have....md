@@ -1,4 +1,5 @@
 ---
+title: "\u201cThose individuals that were so adamant that we had to have..."
 date: 2020-06-19
 time: 04:28:58
 tweet_id: "1273835139739668486"

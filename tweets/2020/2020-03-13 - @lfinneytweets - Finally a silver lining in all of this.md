@@ -1,4 +1,5 @@
 ---
+title: "Finally a silver lining in all of this"
 date: 2020-03-13
 time: 01:19:11
 tweet_id: "1238273367657967616"

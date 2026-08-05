@@ -1,4 +1,5 @@
 ---
+title: "RT @OrianaBeLike hi supreme court what is happening"
 date: 2024-06-26
 time: 19:41:44
 tweet_id: "1806050232809181326"

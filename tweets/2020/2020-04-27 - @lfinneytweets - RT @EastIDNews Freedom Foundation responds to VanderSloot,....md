@@ -1,4 +1,5 @@
 ---
+title: "RT @EastIDNews Freedom Foundation responds to VanderSloot,..."
 date: 2020-04-27
 time: 23:27:01
 tweet_id: "1254914982870843393"

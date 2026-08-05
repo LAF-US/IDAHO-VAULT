@@ -1,4 +1,5 @@
 ---
+title: "RT @KeithRidler US seeks to invalidate Idaho water rights..."
 date: 2022-08-26
 time: 16:27:17
 tweet_id: "1563201427496792064"

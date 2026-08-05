@@ -1,4 +1,5 @@
 ---
+title: "Interesting how legislative opposition to the library bill..."
 date: 2024-04-15
 time: 18:55:58
 tweet_id: "1779946786104443183"

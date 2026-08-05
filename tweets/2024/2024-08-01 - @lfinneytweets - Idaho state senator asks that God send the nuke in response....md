@@ -1,4 +1,5 @@
 ---
+title: "Idaho state senator asks that God send the nuke in response..."
 date: 2024-08-01
 time: 20:11:59
 tweet_id: "1819103806095052866"

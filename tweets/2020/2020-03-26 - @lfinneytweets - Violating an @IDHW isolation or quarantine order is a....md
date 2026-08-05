@@ -1,4 +1,5 @@
 ---
+title: "Violating an @IDHW isolation or quarantine order is a..."
 date: 2020-03-26
 time: 00:42:35
 tweet_id: "1242975200880164865"

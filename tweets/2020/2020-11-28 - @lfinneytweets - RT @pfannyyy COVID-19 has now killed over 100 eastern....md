@@ -1,4 +1,5 @@
 ---
+title: "RT @pfannyyy COVID-19 has now killed over 100 eastern..."
 date: 2020-11-28
 time: 00:53:55
 tweet_id: "1332487853771689984"

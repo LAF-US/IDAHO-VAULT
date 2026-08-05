@@ -1,4 +1,5 @@
 ---
+title: "RT @SPRlocalnews Washington Supreme Court rules against..."
 date: 2022-04-01
 time: 23:14:25
 tweet_id: "1510032867916611588"

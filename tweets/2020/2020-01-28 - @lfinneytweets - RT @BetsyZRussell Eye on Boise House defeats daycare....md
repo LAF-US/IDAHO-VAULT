@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise House defeats daycare..."
 date: 2020-01-28
 time: 22:57:04
 tweet_id: "1222292537949351936"

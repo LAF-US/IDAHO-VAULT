@@ -1,4 +1,5 @@
 ---
+title: "Trump's cologne smelled like a newly shampood rug. Felt as..."
 date: 2018-09-27
 time: 00:23:17
 tweet_id: "1045106567060774912"

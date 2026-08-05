@@ -1,4 +1,5 @@
 ---
+title: "RT @k_talerico Let's be blunt, Idaho you're smoking a lot..."
 date: 2020-01-18
 time: 00:06:13
 tweet_id: "1218323670264733696"

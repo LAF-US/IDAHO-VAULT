@@ -1,4 +1,5 @@
 ---
+title: "The @IdahoStateJ followed up later in the week with an..."
 date: 2021-08-28
 time: 02:25:21
 tweet_id: "1431442751485190145"

@@ -1,4 +1,5 @@
 ---
+title: "RT @CBS2Boise Secretary of State announces #VoteEarlyIdaho..."
 date: 2020-03-19
 time: 00:55:50
 tweet_id: "1240441818539425792"

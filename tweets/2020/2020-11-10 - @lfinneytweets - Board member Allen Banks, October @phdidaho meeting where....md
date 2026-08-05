@@ -1,4 +1,5 @@
 ---
+title: "Board member Allen Banks, October @phdidaho meeting where..."
 date: 2020-11-10
 time: 01:28:16
 tweet_id: "1325973518295527425"

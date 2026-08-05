@@ -1,4 +1,5 @@
 ---
+title: "RT @kkruesi Feels like a good time to post AP\u2019s guidance on..."
 date: 2020-06-01
 time: 17:42:26
 tweet_id: "1267511841070055424"

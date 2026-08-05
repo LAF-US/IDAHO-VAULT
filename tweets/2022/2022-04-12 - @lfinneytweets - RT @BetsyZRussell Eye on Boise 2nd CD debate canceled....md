@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise 2nd CD debate canceled..."
 date: 2022-04-12
 time: 00:18:41
 tweet_id: "1513672920903561218"

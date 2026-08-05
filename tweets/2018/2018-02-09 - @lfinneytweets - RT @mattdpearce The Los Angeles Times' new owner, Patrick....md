@@ -1,4 +1,5 @@
 ---
+title: "RT @mattdpearce The Los Angeles Times' new owner, Patrick..."
 date: 2018-02-09
 time: 20:24:10
 tweet_id: "962059571807141889"

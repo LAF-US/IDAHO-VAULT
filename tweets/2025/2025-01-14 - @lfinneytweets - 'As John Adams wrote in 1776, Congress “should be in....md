@@ -1,4 +1,5 @@
 ---
+title: "'As John Adams wrote in 1776, Congress \u201cshould be in..."
 date: 2025-01-14
 time: 19:06:12
 tweet_id: "1879243638481588500"

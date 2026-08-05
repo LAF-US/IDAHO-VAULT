@@ -1,4 +1,5 @@
 ---
+title: "RT @uiargonaut Make a plan to vote on Tuesday with Argonaut..."
 date: 2018-11-04
 time: 09:50:15
 tweet_id: "1059019987459891200"

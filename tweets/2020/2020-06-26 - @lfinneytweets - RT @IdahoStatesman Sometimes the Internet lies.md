@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoStatesman Sometimes the Internet lies"
 date: 2020-06-26
 time: 13:55:04
 tweet_id: "1276514316590538752"

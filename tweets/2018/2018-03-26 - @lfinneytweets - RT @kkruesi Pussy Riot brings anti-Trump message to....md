@@ -1,4 +1,5 @@
 ---
+title: "RT @kkruesi Pussy Riot brings anti-Trump message to..."
 date: 2018-03-26
 time: 18:55:49
 tweet_id: "978344791384637441"

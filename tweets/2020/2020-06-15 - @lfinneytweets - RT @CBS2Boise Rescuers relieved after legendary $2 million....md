@@ -1,4 +1,5 @@
 ---
+title: "RT @CBS2Boise Rescuers relieved after legendary $2 million..."
 date: 2020-06-15
 time: 19:38:28
 tweet_id: "1272614470443954177"

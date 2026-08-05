@@ -1,4 +1,5 @@
 ---
+title: "Can the Legislature basically gut the Department of..."
 date: 2020-06-07
 time: 22:23:05
 tweet_id: "1269756794634563584"

@@ -1,4 +1,5 @@
 ---
+title: "Take a short vacation and get off work earlier on Fridays."
 date: 2022-02-26
 time: 02:10:02
 tweet_id: "1497393487167180800"

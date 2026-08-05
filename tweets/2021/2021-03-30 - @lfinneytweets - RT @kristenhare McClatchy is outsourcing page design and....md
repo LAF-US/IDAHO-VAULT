@@ -1,4 +1,5 @@
 ---
+title: "RT @kristenhare McClatchy is outsourcing page design and..."
 date: 2021-03-30
 time: 00:30:57
 tweet_id: "1376693395729510402"

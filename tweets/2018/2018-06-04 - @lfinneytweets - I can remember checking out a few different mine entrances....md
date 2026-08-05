@@ -1,4 +1,5 @@
 ---
+title: "I can remember checking out a few different mine entrances..."
 date: 2018-06-04
 time: 21:34:30
 tweet_id: "1003751874971951110"

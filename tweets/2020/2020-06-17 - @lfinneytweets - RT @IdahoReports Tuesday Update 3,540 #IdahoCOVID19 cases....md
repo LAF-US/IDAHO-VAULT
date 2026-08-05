@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Tuesday Update 3,540 #IdahoCOVID19 cases..."
 date: 2020-06-17
 time: 15:38:03
 tweet_id: "1273278742605914119"

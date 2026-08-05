@@ -1,4 +1,5 @@
 ---
+title: "The Faculty Assembly, Staff Assembly, and Associated..."
 date: 2022-12-16
 time: 19:34:53
 tweet_id: "1603836077353373696"

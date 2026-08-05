@@ -1,4 +1,5 @@
 ---
+title: "\u201cWe have identified the enemy.\u201d Idaho Republicans censure..."
 date: 2023-05-09
 time: 15:53:40
 tweet_id: "1655964259866771456"

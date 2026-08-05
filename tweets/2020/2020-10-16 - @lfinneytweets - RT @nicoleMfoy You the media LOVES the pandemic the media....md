@@ -1,4 +1,5 @@
 ---
+title: "RT @nicoleMfoy You the media LOVES the pandemic the media..."
 date: 2020-10-16
 time: 16:40:37
 tweet_id: "1317143421757263872"

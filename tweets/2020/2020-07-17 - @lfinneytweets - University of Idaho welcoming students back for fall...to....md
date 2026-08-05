@@ -1,4 +1,5 @@
 ---
+title: "University of Idaho welcoming students back for fall...to..."
 date: 2020-07-17
 time: 02:49:06
 tweet_id: "1283956865173340163"

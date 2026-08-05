@@ -1,4 +1,5 @@
 ---
+title: "Glad somebody knows what's going on up north. #idpol"
 date: 2020-11-04
 time: 06:25:44
 tweet_id: "1323874050800717824"

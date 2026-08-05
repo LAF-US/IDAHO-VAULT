@@ -1,4 +1,5 @@
 ---
+title: "I did my best to put this relatively nerdy topic into terms..."
 date: 2020-10-17
 time: 01:18:02
 tweet_id: "1317273634172329985"

@@ -1,4 +1,5 @@
 ---
+title: "Back in the newspaper archives today. Here's a 1969 #idleg..."
 date: 2021-08-28
 time: 00:20:32
 tweet_id: "1431411339474259973"

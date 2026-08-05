@@ -1,4 +1,5 @@
 ---
+title: "Pro tip when you pack extra AA batteries, make sure they're..."
 date: 2024-06-14
 time: 00:08:21
 tweet_id: "1801406285935689979"

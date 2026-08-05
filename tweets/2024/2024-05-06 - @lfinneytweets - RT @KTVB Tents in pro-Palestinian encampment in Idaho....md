@@ -1,4 +1,5 @@
 ---
+title: "RT @KTVB Tents in pro-Palestinian encampment in Idaho..."
 date: 2024-05-06
 time: 21:45:43
 tweet_id: "1787599651933508075"

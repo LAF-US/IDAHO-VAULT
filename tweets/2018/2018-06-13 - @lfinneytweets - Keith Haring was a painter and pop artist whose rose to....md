@@ -1,4 +1,5 @@
 ---
+title: "Keith Haring was a painter and pop artist whose rose to..."
 date: 2018-06-13
 time: 07:08:04
 tweet_id: "1006795319827488769"

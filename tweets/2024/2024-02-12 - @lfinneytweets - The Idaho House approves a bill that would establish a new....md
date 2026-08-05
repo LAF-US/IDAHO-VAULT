@@ -1,4 +1,5 @@
 ---
+title: "The Idaho House approves a bill that would establish a new..."
 date: 2024-02-12
 time: 18:01:41
 tweet_id: "1757102691590033550"

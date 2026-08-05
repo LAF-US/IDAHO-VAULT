@@ -1,4 +1,5 @@
 ---
+title: "RT @ZavalaA Trump at CAGOP convention \u201cI will prevent World..."
 date: 2023-09-29
 time: 22:24:27
 tweet_id: "1707884068044722338"

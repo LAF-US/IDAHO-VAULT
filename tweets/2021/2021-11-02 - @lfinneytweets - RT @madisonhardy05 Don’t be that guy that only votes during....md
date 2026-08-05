@@ -1,4 +1,5 @@
 ---
+title: "RT @madisonhardy05 Don\u2019t be that guy that only votes during..."
 date: 2021-11-02
 time: 21:12:45
 tweet_id: "1455644072006152193"

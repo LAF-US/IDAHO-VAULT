@@ -1,4 +1,5 @@
 ---
+title: "RT @KTVB Records Idaho man paid more than $2,000 to bail..."
 date: 2022-06-16
 time: 04:02:01
 tweet_id: "1537284336684109825"

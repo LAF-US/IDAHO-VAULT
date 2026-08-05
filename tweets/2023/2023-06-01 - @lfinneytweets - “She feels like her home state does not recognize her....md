@@ -1,4 +1,5 @@
 ---
+title: "\u201cShe feels like her home state does not recognize her..."
 date: 2023-06-01
 time: 23:05:07
 tweet_id: "1664407758324785152"

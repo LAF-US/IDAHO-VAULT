@@ -1,4 +1,5 @@
 ---
+title: "Trailer bill for Judical Branch to pay for a new magistrate..."
 date: 2020-03-12
 time: 22:01:56
 tweet_id: "1238223728011440128"

@@ -1,4 +1,5 @@
 ---
+title: "University of Idaho @ASUIDAHO Senate passes resolution..."
 date: 2020-02-20
 time: 16:34:58
 tweet_id: "1230531300714401792"

@@ -1,4 +1,5 @@
 ---
+title: "RT @Oregonian Proposed ballot measures aim to stop Oregon..."
 date: 2020-03-26
 time: 02:02:42
 tweet_id: "1242995362203193344"

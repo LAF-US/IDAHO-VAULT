@@ -1,4 +1,5 @@
 ---
+title: "The House is taking up a Senate property tax bill now. As..."
 date: 2020-03-16
 time: 18:02:52
 tweet_id: "1239613115253190656"

@@ -1,4 +1,5 @@
 ---
+title: "Since the middle of June, Bonner County\u2019s confirmed active..."
 date: 2020-07-05
 time: 02:53:30
 tweet_id: "1279609319676186624"

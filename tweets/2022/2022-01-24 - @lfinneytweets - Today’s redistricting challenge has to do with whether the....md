@@ -1,4 +1,5 @@
 ---
+title: "Today\u2019s redistricting challenge has to do with whether the..."
 date: 2022-01-24
 time: 20:31:48
 tweet_id: "1485711957604782080"

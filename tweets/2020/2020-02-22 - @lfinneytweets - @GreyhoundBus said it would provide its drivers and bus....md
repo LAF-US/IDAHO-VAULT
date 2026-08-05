@@ -1,4 +1,5 @@
 ---
+title: "@GreyhoundBus said it would provide its drivers and bus..."
 date: 2020-02-22
 time: 15:55:55
 tweet_id: "1231246245403824129"

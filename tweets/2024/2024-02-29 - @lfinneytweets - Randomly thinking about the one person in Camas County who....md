@@ -1,4 +1,5 @@
 ---
+title: "Randomly thinking about the one person in Camas County who..."
 date: 2024-02-29
 time: 01:44:19
 tweet_id: "1763017321512407194"

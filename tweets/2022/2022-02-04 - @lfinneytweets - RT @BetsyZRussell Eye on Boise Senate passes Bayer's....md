@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Senate passes Bayer's..."
 date: 2022-02-04
 time: 19:55:32
 tweet_id: "1489689097568276480"

@@ -1,4 +1,5 @@
 ---
+title: "RT @BoiseDev US Commerce Secretary confirms possible large..."
 date: 2022-07-18
 time: 16:26:10
 tweet_id: "1549068019363483648"

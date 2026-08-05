@@ -1,4 +1,5 @@
 ---
+title: "Speaker Scott Bedke becoming Lt Gov opens up the House's..."
 date: 2022-11-11
 time: 04:07:59
 tweet_id: "1590919240080846848"

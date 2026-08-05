@@ -1,4 +1,5 @@
 ---
+title: "Wow, Idaho voters turned down a lot in property taxes..."
 date: 2023-03-15
 time: 18:21:26
 tweet_id: "1636070115509956609"

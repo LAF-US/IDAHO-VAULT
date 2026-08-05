@@ -1,4 +1,5 @@
 ---
+title: "I'm gonna keep complaining about paywalls FYI"
 date: 2021-07-09
 time: 00:30:41
 tweet_id: "1413294500634456065"

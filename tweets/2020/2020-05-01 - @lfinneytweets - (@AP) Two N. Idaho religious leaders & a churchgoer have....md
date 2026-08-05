@@ -1,4 +1,5 @@
 ---
+title: "(@AP) Two N. Idaho religious leaders & a churchgoer have..."
 date: 2020-05-01
 time: 21:16:20
 tweet_id: "1256331643972808704"

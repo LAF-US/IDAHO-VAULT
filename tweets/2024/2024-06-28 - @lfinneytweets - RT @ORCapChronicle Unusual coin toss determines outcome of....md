@@ -1,4 +1,5 @@
 ---
+title: "RT @ORCapChronicle Unusual coin toss determines outcome of..."
 date: 2024-06-28
 time: 01:33:58
 tweet_id: "1806501262663524637"

@@ -1,4 +1,5 @@
 ---
+title: ".@IdahoStatesman @CynthiaSewell Idaho Lt. Governor Janice..."
 date: 2020-04-21
 time: 23:00:58
 tweet_id: "1252734097450926082"

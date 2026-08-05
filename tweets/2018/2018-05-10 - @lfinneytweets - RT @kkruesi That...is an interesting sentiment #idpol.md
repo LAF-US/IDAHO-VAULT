@@ -1,4 +1,5 @@
 ---
+title: "RT @kkruesi That...is an interesting sentiment #idpol"
 date: 2018-05-10
 time: 20:28:22
 tweet_id: "994675534037577728"

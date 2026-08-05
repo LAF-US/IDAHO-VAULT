@@ -1,4 +1,5 @@
 ---
+title: "Gov. Brad Little signed legislation on Monday that preempts..."
 date: 2023-03-24
 time: 18:00:55
 tweet_id: "1639326440369049601"

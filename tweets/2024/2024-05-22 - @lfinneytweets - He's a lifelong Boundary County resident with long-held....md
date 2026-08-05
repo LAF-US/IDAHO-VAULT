@@ -1,4 +1,5 @@
 ---
+title: "He's a lifelong Boundary County resident with long-held..."
 date: 2024-05-22
 time: 18:33:46
 tweet_id: "1793349553200287851"

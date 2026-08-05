@@ -1,4 +1,5 @@
 ---
+title: "RT @voxdotcom They tweeted, Facebooked, and livestreamed..."
 date: 2021-01-08
 time: 00:36:27
 tweet_id: "1347341359716339712"

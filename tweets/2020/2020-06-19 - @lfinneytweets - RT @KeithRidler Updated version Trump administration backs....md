@@ -1,4 +1,5 @@
 ---
+title: "RT @KeithRidler Updated version Trump administration backs..."
 date: 2020-06-19
 time: 21:30:13
 tweet_id: "1274092145230483456"

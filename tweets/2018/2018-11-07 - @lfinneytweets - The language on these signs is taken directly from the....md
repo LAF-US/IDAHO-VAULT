@@ -1,4 +1,5 @@
 ---
+title: "The language on these signs is taken directly from the..."
 date: 2018-11-07
 time: 00:06:42
 tweet_id: "1059960295659950080"

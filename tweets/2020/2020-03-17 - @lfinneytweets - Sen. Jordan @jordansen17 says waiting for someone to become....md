@@ -1,4 +1,5 @@
 ---
+title: "Sen. Jordan @jordansen17 says waiting for someone to become..."
 date: 2020-03-17
 time: 20:53:24
 tweet_id: "1240018419254087680"

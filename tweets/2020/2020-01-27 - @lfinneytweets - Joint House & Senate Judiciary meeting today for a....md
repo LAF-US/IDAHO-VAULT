@@ -1,4 +1,5 @@
 ---
+title: "Joint House & Senate Judiciary meeting today for a..."
 date: 2020-01-27
 time: 20:33:59
 tweet_id: "1221894139622461440"

@@ -1,4 +1,5 @@
 ---
+title: "An expected #IdahoCOVID19 liability bill at the upcoming..."
 date: 2020-08-14
 time: 16:27:56
 tweet_id: "1294309794937896960"

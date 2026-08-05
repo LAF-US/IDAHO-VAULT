@@ -1,4 +1,5 @@
 ---
+title: "How did this not click for me before If both Idaho bills..."
 date: 2020-01-31
 time: 22:18:51
 tweet_id: "1223370084015575041"

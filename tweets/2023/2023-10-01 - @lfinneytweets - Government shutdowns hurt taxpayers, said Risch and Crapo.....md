@@ -1,4 +1,5 @@
 ---
+title: "Government shutdowns hurt taxpayers, said Risch and Crapo...."
 date: 2023-10-01
 time: 02:42:51
 tweet_id: "1708311483061522517"

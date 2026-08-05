@@ -1,4 +1,5 @@
 ---
+title: "not meant to be homophobic isn't the same as not..."
 date: 2018-07-17
 time: 17:12:57
 tweet_id: "1019268733645176833"

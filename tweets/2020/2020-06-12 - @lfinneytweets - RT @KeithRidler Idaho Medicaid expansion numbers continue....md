@@ -1,4 +1,5 @@
 ---
+title: "RT @KeithRidler Idaho Medicaid expansion numbers continue..."
 date: 2020-06-12
 time: 23:14:09
 tweet_id: "1271581586715054081"

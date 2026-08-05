@@ -1,4 +1,5 @@
 ---
+title: "RT @HayatNorimine Here's the House vote for adjournment."
 date: 2021-11-17
 time: 22:50:02
 tweet_id: "1461104368221048845"

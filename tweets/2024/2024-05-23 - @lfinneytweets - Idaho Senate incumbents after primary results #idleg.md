@@ -1,4 +1,5 @@
 ---
+title: "Idaho Senate incumbents after primary results #idleg"
 date: 2024-05-23
 time: 23:27:50
 tweet_id: "1793785943025135792"

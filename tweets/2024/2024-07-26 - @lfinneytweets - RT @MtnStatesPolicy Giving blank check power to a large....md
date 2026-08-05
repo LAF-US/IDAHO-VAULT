@@ -1,4 +1,5 @@
 ---
+title: "RT @MtnStatesPolicy Giving blank check power to a large..."
 date: 2024-07-26
 time: 17:41:27
 tweet_id: "1816891594550989230"

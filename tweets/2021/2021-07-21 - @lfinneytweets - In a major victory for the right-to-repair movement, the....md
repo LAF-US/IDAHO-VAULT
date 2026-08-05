@@ -1,4 +1,5 @@
 ---
+title: "In a major victory for the right-to-repair movement, the..."
 date: 2021-07-21
 time: 19:46:46
 tweet_id: "1417934092801245184"

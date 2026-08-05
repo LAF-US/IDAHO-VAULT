@@ -1,4 +1,5 @@
 ---
+title: "And I thought Idaho had a lot of specialty license..."
 date: 2023-08-28
 time: 19:47:59
 tweet_id: "1696248279858835591"

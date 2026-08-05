@@ -1,4 +1,5 @@
 ---
+title: "We're long past Idaho's primary election, but I just came..."
 date: 2022-07-05
 time: 20:56:02
 tweet_id: "1544424892241625088"

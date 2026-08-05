@@ -1,4 +1,5 @@
 ---
+title: "Was doing some Frank Church research for a project today..."
 date: 2024-06-27
 time: 23:32:08
 tweet_id: "1806470599222636736"

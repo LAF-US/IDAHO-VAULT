@@ -1,4 +1,5 @@
 ---
+title: "Massively complex ideologies with hundreds of years of..."
 date: 2018-11-28
 time: 22:22:09
 tweet_id: "1067906519830691840"

@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoStatesman A nuclear power plant 120 miles from..."
 date: 2025-07-29
 time: 18:58:15
 tweet_id: "1950269656914416059"

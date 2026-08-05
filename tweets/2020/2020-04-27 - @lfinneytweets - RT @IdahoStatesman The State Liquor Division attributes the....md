@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoStatesman The State Liquor Division attributes the..."
 date: 2020-04-27
 time: 19:38:44
 tweet_id: "1254857532373209089"

@@ -1,4 +1,5 @@
 ---
+title: "RT @registerguard Rep. Mike Nearman stripped of committees,..."
 date: 2021-01-12
 time: 07:26:31
 tweet_id: "1348894109646217217"

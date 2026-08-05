@@ -1,4 +1,5 @@
 ---
+title: "A constitutional amendment must earn a two-thirds vote in..."
 date: 2022-06-16
 time: 21:18:33
 tweet_id: "1537545188330962944"

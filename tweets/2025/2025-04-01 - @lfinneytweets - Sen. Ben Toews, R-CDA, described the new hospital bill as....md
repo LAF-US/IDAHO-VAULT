@@ -1,4 +1,5 @@
 ---
+title: "Sen. Ben Toews, R-CDA, described the new hospital bill as..."
 date: 2025-04-01
 time: 19:00:10
 tweet_id: "1907145986667094102"

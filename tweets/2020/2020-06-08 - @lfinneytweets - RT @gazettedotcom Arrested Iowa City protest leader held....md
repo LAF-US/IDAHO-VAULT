@@ -1,4 +1,5 @@
 ---
+title: "RT @gazettedotcom Arrested Iowa City protest leader held..."
 date: 2020-06-08
 time: 18:20:13
 tweet_id: "1270058062150131715"

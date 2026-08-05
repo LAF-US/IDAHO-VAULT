@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoStatesman Suspected Trump assassin had \u2018delusions..."
 date: 2024-09-16
 time: 22:06:34
 tweet_id: "1835802483974983981"

@@ -1,4 +1,5 @@
 ---
+title: "Lovely that the approach to end of this session boils down..."
 date: 2024-04-03
 time: 03:58:13
 tweet_id: "1775372205091930170"

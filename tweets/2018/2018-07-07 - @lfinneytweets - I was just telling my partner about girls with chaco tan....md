@@ -1,4 +1,5 @@
 ---
+title: "I was just telling my partner about girls with chaco tan..."
 date: 2018-07-07
 time: 06:32:18
 tweet_id: "1015483627428147201"

@@ -1,4 +1,5 @@
 ---
+title: "As a former @VandalBand member, Pete stands out in my mind..."
 date: 2020-01-15
 time: 16:53:57
 tweet_id: "1217490112159707138"

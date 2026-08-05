@@ -1,4 +1,5 @@
 ---
+title: "The good news is that Idaho hasn't found any more quagga..."
 date: 2025-08-01
 time: 19:43:15
 tweet_id: "1951368147338142089"

@@ -1,4 +1,5 @@
 ---
+title: "While it's true the U.S. Senate passed a bill last year to..."
 date: 2023-09-19
 time: 20:26:55
 tweet_id: "1704230611647619295"

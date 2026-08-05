@@ -1,4 +1,5 @@
 ---
+title: "Incredibly helpful to be locked out of the @IdahoReports..."
 date: 2024-10-15
 time: 20:01:54
 tweet_id: "1846280359174197378"

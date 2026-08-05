@@ -1,4 +1,5 @@
 ---
+title: "RT @CBS2Boise UPDATE Mountain Home mayor clarifies..."
 date: 2020-04-05
 time: 18:40:54
 tweet_id: "1246870445363572738"

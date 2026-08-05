@@ -1,4 +1,5 @@
 ---
+title: "The Bingham County situation #idpol #idleg"
 date: 2023-09-21
 time: 19:45:20
 tweet_id: "1704944920371536285"

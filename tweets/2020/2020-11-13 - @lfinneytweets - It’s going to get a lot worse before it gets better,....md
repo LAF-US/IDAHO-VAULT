@@ -1,4 +1,5 @@
 ---
+title: "It\u2019s going to get a lot worse before it gets better,..."
 date: 2020-11-13
 time: 00:41:33
 tweet_id: "1327048924742356992"

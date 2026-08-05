@@ -1,4 +1,5 @@
 ---
+title: "RT @KTVB Caldwell police responded to 'swatting call' on..."
 date: 2024-04-02
 time: 21:10:39
 tweet_id: "1775269638592708943"

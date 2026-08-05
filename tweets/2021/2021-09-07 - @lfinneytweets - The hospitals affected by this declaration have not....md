@@ -1,4 +1,5 @@
 ---
+title: "The hospitals affected by this declaration have not..."
 date: 2021-09-07
 time: 18:02:44
 tweet_id: "1435302529332482048"

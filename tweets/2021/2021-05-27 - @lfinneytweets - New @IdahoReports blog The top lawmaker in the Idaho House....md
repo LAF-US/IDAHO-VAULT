@@ -1,4 +1,5 @@
 ---
+title: "New @IdahoReports blog The top lawmaker in the Idaho House..."
 date: 2021-05-27
 time: 21:50:19
 tweet_id: "1398033854540095489"

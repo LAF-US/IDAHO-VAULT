@@ -1,4 +1,5 @@
 ---
+title: "The page name of never fails to crack me up. #IdahoCOVID19"
 date: 2020-11-06
 time: 23:58:20
 tweet_id: "1324863719361323008"

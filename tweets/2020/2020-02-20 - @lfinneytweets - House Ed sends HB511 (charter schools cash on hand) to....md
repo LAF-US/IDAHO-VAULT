@@ -1,4 +1,5 @@
 ---
+title: "House Ed sends HB511 (charter schools cash on hand) to..."
 date: 2020-02-20
 time: 17:12:13
 tweet_id: "1230540673255792640"

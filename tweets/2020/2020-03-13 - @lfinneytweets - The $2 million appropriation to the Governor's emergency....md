@@ -1,4 +1,5 @@
 ---
+title: "The $2 million appropriation to the Governor's emergency..."
 date: 2020-03-13
 time: 20:53:29
 tweet_id: "1238568888305979392"

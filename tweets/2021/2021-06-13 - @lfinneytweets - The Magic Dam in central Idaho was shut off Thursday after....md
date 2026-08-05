@@ -1,4 +1,5 @@
 ---
+title: "The Magic Dam in central Idaho was shut off Thursday after..."
 date: 2021-06-13
 time: 17:25:29
 tweet_id: "1404127800504688640"

@@ -1,4 +1,5 @@
 ---
+title: "Provost John Wiencek announces @uidaho will allow students..."
 date: 2020-03-27
 time: 22:50:03
 tweet_id: "1243671653839548416"

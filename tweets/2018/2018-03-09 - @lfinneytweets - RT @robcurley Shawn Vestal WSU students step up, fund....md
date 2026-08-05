@@ -1,4 +1,5 @@
 ---
+title: "RT @robcurley Shawn Vestal WSU students step up, fund..."
 date: 2018-03-09
 time: 06:23:50
 tweet_id: "971994952992309250"

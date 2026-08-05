@@ -1,4 +1,5 @@
 ---
+title: "RT @idahoednews He was 67."
 date: 2021-10-10
 time: 20:56:06
 tweet_id: "1447304957669957632"

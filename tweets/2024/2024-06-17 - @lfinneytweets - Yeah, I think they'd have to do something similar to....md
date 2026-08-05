@@ -1,4 +1,5 @@
 ---
+title: "Yeah, I think they'd have to do something similar to..."
 date: 2024-06-17
 time: 18:24:17
 tweet_id: "1802769250098295000"

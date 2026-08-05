@@ -1,4 +1,5 @@
 ---
+title: "Ada County Paramedics provided county commissioners a..."
 date: 2021-10-06
 time: 05:12:26
 tweet_id: "1445617927638564864"

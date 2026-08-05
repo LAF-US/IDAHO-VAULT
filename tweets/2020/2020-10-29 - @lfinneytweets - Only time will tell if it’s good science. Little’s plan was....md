@@ -1,4 +1,5 @@
 ---
+title: "Only time will tell if it\u2019s good science. Little\u2019s plan was..."
 date: 2020-10-29
 time: 01:14:23
 tweet_id: "1321621369247821825"

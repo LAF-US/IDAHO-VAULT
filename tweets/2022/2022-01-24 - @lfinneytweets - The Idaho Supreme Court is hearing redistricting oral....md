@@ -1,4 +1,5 @@
 ---
+title: "The Idaho Supreme Court is hearing redistricting oral..."
 date: 2022-01-24
 time: 20:29:44
 tweet_id: "1485711438270255104"

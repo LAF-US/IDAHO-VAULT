@@ -1,4 +1,5 @@
 ---
+title: "The Idaho Senate has notified the House they are finished..."
 date: 2024-04-10
 time: 20:38:42
 tweet_id: "1778160700348842189"

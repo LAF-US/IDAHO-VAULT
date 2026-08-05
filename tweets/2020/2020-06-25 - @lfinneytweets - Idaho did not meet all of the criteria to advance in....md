@@ -1,4 +1,5 @@
 ---
+title: "Idaho did not meet all of the criteria to advance in..."
 date: 2020-06-25
 time: 18:03:57
 tweet_id: "1276214562543464448"

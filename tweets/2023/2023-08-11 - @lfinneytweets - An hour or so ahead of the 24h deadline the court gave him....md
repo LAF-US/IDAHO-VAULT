@@ -1,4 +1,5 @@
 ---
+title: "An hour or so ahead of the 24h deadline the court gave him..."
 date: 2023-08-11
 time: 21:35:44
 tweet_id: "1690114805011812354"

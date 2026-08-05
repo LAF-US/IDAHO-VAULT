@@ -1,4 +1,5 @@
 ---
+title: "Candidates have begun to file with @IDSecOfState for the..."
 date: 2020-03-04
 time: 01:43:55
 tweet_id: "1235018099210022914"

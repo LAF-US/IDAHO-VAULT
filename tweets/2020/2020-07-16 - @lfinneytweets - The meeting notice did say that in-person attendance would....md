@@ -1,4 +1,5 @@
 ---
+title: "The meeting notice did say that in-person attendance would..."
 date: 2020-07-16
 time: 15:50:06
 tweet_id: "1283791023601115136"

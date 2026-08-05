@@ -1,4 +1,5 @@
 ---
+title: "Idaho\u2019s public and private colleges and universities will..."
 date: 2020-04-16
 time: 17:51:20
 tweet_id: "1250844239820230656"

@@ -1,4 +1,5 @@
 ---
+title: "Love this kind of thoughtful, entertaining LGBTQ+ centered..."
 date: 2018-02-10
 time: 09:51:13
 tweet_id: "962262670270332928"

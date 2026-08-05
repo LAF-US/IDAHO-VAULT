@@ -1,4 +1,5 @@
 ---
+title: "RT @JohnWSowell Boise-area companies dominated in obtaining..."
 date: 2020-07-06
 time: 20:24:50
 tweet_id: "1280236285123125248"

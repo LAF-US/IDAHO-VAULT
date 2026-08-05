@@ -1,4 +1,5 @@
 ---
+title: "Idaho lawmakers have been quietly working for years to..."
 date: 2025-03-12
 time: 23:14:33
 tweet_id: "1899962246148796656"

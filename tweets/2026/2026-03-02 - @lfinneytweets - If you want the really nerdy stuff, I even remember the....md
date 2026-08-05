@@ -1,4 +1,5 @@
 ---
+title: "If you want the really nerdy stuff, I even remember the..."
 date: 2026-03-02
 time: 21:46:43
 tweet_id: "2028587834542866941"

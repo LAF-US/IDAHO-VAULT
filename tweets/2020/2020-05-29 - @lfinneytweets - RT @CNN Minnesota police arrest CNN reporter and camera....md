@@ -1,4 +1,5 @@
 ---
+title: "RT @CNN Minnesota police arrest CNN reporter and camera..."
 date: 2020-05-29
 time: 15:22:30
 tweet_id: "1266389462587551749"

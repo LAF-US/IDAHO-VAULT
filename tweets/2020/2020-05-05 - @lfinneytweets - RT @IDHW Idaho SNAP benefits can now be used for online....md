@@ -1,4 +1,5 @@
 ---
+title: "RT @IDHW Idaho SNAP benefits can now be used for online..."
 date: 2020-05-05
 time: 19:01:40
 tweet_id: "1257747308176740352"

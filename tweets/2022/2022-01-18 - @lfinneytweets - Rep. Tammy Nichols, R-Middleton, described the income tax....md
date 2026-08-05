@@ -1,4 +1,5 @@
 ---
+title: "Rep. Tammy Nichols, R-Middleton, described the income tax..."
 date: 2022-01-18
 time: 19:28:09
 tweet_id: "1483521613848985601"

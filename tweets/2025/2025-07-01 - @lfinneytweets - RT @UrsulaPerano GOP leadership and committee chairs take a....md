@@ -1,4 +1,5 @@
 ---
+title: "RT @UrsulaPerano GOP leadership and committee chairs take a..."
 date: 2025-07-01
 time: 16:42:47
 tweet_id: "1940088706096144652"

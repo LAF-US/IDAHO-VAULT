@@ -1,4 +1,5 @@
 ---
+title: "Twitter trolls are nothing new, but just you wait... Genius..."
 date: 2024-04-12
 time: 00:36:14
 tweet_id: "1778582867049894002"

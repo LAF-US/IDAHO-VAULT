@@ -1,4 +1,5 @@
 ---
+title: "RT @CBS2Boise Dozens of US Marines in Japan's Okinawa get..."
 date: 2020-07-11
 time: 18:31:59
 tweet_id: "1282019825343053824"

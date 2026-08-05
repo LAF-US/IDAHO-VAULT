@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports This week's IR Newsletter \ud83d\udcec #idleg #idpol"
 date: 2022-02-12
 time: 01:57:07
 tweet_id: "1492316806425448450"

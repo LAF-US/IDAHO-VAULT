@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoGOP Ever wonder how a resolution passed by the..."
 date: 2023-03-28
 time: 20:06:58
 tweet_id: "1640807714166038528"

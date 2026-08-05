@@ -1,4 +1,5 @@
 ---
+title: "We don\u2019t often stop to ponder the way that a newspaper\u2019s..."
 date: 2021-10-05
 time: 17:44:22
 tweet_id: "1445444769233076231"

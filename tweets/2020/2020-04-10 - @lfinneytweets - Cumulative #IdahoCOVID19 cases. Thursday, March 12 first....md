@@ -1,4 +1,5 @@
 ---
+title: "Cumulative #IdahoCOVID19 cases. Thursday, March 12 first..."
 date: 2020-04-10
 time: 04:48:05
 tweet_id: "1248472799175266304"

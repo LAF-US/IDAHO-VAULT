@@ -1,4 +1,5 @@
 ---
+title: "A local group fundraising for the Salvation Army on Friday..."
 date: 2019-12-11
 time: 06:39:19
 tweet_id: "1204651859392155648"

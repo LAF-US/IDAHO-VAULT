@@ -1,4 +1,5 @@
 ---
+title: "RT @NikStreng I hear Scott Bedke is making an announcement..."
 date: 2021-05-27
 time: 01:40:30
 tweet_id: "1397729393460404232"

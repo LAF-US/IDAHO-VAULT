@@ -1,4 +1,5 @@
 ---
+title: "All multi-person gatherings, including faith services, are..."
 date: 2020-03-26
 time: 00:42:36
 tweet_id: "1242975205418393600"

@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports A similar bill passed the House last year,..."
 date: 2023-02-13
 time: 23:22:58
 tweet_id: "1625274360394301440"

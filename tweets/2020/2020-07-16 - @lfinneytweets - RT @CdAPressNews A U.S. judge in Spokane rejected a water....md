@@ -1,4 +1,5 @@
 ---
+title: "RT @CdAPressNews A U.S. judge in Spokane rejected a water..."
 date: 2020-07-16
 time: 20:38:05
 tweet_id: "1283863498720604161"

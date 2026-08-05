@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoCapitalSun The first two heat-related deaths in..."
 date: 2024-06-21
 time: 22:00:54
 tweet_id: "1804273315449836020"

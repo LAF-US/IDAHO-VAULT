@@ -1,4 +1,5 @@
 ---
+title: "and to think I considered deleting Nextdoor"
 date: 2024-12-09
 time: 16:25:15
 tweet_id: "1866157170217341400"

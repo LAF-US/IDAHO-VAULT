@@ -1,4 +1,5 @@
 ---
+title: "It\u2019s one thing to sunset a bad or unpopular app, but Google..."
 date: 2024-04-15
 time: 19:26:23
 tweet_id: "1779954441128759514"

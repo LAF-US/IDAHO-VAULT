@@ -1,4 +1,5 @@
 ---
+title: "Fauci said a gradual process will be required based on the..."
 date: 2020-04-13
 time: 06:10:02
 tweet_id: "1249580585959313408"

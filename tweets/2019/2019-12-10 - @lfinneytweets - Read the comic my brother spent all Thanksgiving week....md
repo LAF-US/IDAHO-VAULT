@@ -1,4 +1,5 @@
 ---
+title: "Read the comic my brother spent all Thanksgiving week..."
 date: 2019-12-10
 time: 23:43:46
 tweet_id: "1204547285108969472"

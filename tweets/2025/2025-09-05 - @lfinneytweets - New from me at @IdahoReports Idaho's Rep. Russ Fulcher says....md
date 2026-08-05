@@ -1,4 +1,5 @@
 ---
+title: "New from me at @IdahoReports Idaho's Rep. Russ Fulcher says..."
 date: 2025-09-05
 time: 16:16:17
 tweet_id: "1963999638593368248"

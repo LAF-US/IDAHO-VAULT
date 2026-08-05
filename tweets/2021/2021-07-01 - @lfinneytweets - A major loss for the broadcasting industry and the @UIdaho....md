@@ -1,4 +1,5 @@
 ---
+title: "A major loss for the broadcasting industry and the @UIdaho..."
 date: 2021-07-01
 time: 04:18:39
 tweet_id: "1410452769530540036"

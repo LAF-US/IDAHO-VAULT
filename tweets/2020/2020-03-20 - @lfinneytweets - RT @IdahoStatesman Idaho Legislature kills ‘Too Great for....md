@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoStatesman Idaho Legislature kills \u2018Too Great for..."
 date: 2020-03-20
 time: 17:47:23
 tweet_id: "1241058770563633152"

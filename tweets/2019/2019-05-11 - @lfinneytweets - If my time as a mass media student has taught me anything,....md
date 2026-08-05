@@ -1,4 +1,5 @@
 ---
+title: "If my time as a mass media student has taught me anything,..."
 date: 2019-05-11
 time: 18:00:28
 tweet_id: "1127272275995004929"

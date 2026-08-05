@@ -1,4 +1,5 @@
 ---
+title: "Eastern ID Public Health spokeswoman Mimi Taylor said..."
 date: 2020-06-05
 time: 00:14:57
 tweet_id: "1268697783478837248"

@@ -1,4 +1,5 @@
 ---
+title: "Not pursuing reelection"
 date: 2024-05-23
 time: 23:11:29
 tweet_id: "1793781826814988692"

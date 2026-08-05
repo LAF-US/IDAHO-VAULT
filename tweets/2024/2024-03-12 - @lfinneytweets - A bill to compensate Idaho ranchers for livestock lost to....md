@@ -1,4 +1,5 @@
 ---
+title: "A bill to compensate Idaho ranchers for livestock lost to..."
 date: 2024-03-12
 time: 23:53:24
 tweet_id: "1767700450999152878"

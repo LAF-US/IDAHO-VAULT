@@ -1,4 +1,5 @@
 ---
+title: "via The @Verge #Wordle will be free forever because you can..."
 date: 2022-02-02
 time: 20:56:03
 tweet_id: "1488979551380119552"

@@ -1,4 +1,5 @@
 ---
+title: "The outfitters and guides liability bill passes the Senate..."
 date: 2023-02-22
 time: 19:08:45
 tweet_id: "1628471877285867522"

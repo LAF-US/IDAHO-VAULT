@@ -1,4 +1,5 @@
 ---
+title: "Legislative District 2 precinct committee members debated..."
 date: 2020-01-24
 time: 00:59:49
 tweet_id: "1220511489108262918"

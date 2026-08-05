@@ -1,4 +1,5 @@
 ---
+title: "Slate Creek Hot Spot Idaho Fish & Game @IDFG finds 10%..."
 date: 2024-04-08
 time: 21:40:57
 tweet_id: "1777451590158537104"

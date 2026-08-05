@@ -1,4 +1,5 @@
 ---
+title: "Specialty @IdahoITD license plate day at #idleg with dual..."
 date: 2020-02-18
 time: 16:23:15
 tweet_id: "1229803573501820928"

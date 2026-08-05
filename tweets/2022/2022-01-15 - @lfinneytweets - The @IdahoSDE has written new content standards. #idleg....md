@@ -1,4 +1,5 @@
 ---
+title: "The @IdahoSDE has written new content standards. #idleg..."
 date: 2022-01-15
 time: 02:51:52
 tweet_id: "1482183726666682372"

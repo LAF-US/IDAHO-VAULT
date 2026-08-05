@@ -1,4 +1,5 @@
 ---
+title: "Some lawmakers say Kuna sabotaged property tax relief by..."
 date: 2023-02-27
 time: 20:15:42
 tweet_id: "1630300664793542656"

@@ -1,4 +1,5 @@
 ---
+title: ".@IdahoITD US-95 detour south of Riggins due to July 3..."
 date: 2020-07-09
 time: 15:47:21
 tweet_id: "1281253616502726656"

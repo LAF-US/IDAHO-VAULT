@@ -1,4 +1,5 @@
 ---
+title: "Sen. Martin is taking time while the Senate is at ease to..."
 date: 2020-01-14
 time: 18:57:31
 tweet_id: "1217158823569346561"

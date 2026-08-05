@@ -1,4 +1,5 @@
 ---
+title: "AG Wasden speaks up about proposed change to Idaho..."
 date: 2021-02-16
 time: 16:25:00
 tweet_id: "1361713197573545986"

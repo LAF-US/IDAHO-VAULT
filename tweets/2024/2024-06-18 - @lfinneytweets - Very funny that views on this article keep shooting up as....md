@@ -1,4 +1,5 @@
 ---
+title: "Very funny that views on this article keep shooting up as..."
 date: 2024-06-18
 time: 15:54:48
 tweet_id: "1803094016566972572"

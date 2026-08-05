@@ -1,4 +1,5 @@
 ---
+title: "Kootenai County Sheriff Bob Norris checked out two books..."
 date: 2023-09-27
 time: 16:47:12
 tweet_id: "1707074421834539009"

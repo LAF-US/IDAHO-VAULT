@@ -1,4 +1,5 @@
 ---
+title: "RT @natsfert When people in the west talk about pioneer..."
 date: 2025-03-15
 time: 23:45:10
 tweet_id: "1901057112744358097"

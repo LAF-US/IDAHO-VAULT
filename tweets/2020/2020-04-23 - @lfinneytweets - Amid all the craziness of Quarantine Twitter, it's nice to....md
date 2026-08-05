@@ -1,4 +1,5 @@
 ---
+title: "Amid all the craziness of Quarantine Twitter, it's nice to..."
 date: 2020-04-23
 time: 20:59:30
 tweet_id: "1253428306612903937"

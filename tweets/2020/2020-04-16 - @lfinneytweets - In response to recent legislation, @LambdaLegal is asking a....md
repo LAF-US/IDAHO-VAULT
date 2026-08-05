@@ -1,4 +1,5 @@
 ---
+title: "In response to recent legislation, @LambdaLegal is asking a..."
 date: 2020-04-16
 time: 19:15:01
 tweet_id: "1250865296983814144"

@@ -1,4 +1,5 @@
 ---
+title: "Former Idaho Senate education chairman Dean Mortimer..."
 date: 2021-04-16
 time: 02:39:44
 tweet_id: "1382886398613622784"

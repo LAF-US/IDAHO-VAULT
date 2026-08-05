@@ -1,4 +1,5 @@
 ---
+title: "Thursday at 11 46am MT is the deadline for @GovernorLittle..."
 date: 2025-02-26
 time: 23:18:44
 tweet_id: "1894889868553297924"

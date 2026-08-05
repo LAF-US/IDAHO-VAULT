@@ -1,4 +1,5 @@
 ---
+title: "Scientists at @uidaho are finding that wildfire smoke..."
 date: 2021-08-17
 time: 01:40:29
 tweet_id: "1427445194027270145"

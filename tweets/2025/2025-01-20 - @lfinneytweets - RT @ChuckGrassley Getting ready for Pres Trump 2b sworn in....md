@@ -1,4 +1,5 @@
 ---
+title: "RT @ChuckGrassley Getting ready for Pres Trump 2b sworn in..."
 date: 2025-01-20
 time: 19:10:56
 tweet_id: "1881419156098261124"

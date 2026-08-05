@@ -1,4 +1,5 @@
 ---
+title: "Gun homicides killed 15 Idahoans last year, while gun..."
 date: 2018-03-18
 time: 08:39:38
 tweet_id: "975290619877707776"

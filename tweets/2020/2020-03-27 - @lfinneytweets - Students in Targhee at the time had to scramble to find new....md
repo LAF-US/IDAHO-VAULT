@@ -1,4 +1,5 @@
 ---
+title: "Students in Targhee at the time had to scramble to find new..."
 date: 2020-03-27
 time: 17:47:08
 tweet_id: "1243595424960675840"

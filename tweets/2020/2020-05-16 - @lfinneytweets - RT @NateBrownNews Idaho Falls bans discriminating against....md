@@ -1,4 +1,5 @@
 ---
+title: "RT @NateBrownNews Idaho Falls bans discriminating against..."
 date: 2020-05-16
 time: 20:11:08
 tweet_id: "1261751055043268608"

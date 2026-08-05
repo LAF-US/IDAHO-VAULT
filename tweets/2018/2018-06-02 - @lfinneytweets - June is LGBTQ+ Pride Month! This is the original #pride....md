@@ -1,4 +1,5 @@
 ---
+title: "June is LGBTQ+ Pride Month! This is the original #pride..."
 date: 2018-06-02
 time: 00:22:10
 tweet_id: "1002706906761199616"

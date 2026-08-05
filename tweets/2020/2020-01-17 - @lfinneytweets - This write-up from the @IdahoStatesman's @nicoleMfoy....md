@@ -1,4 +1,5 @@
 ---
+title: "This write-up from the @IdahoStatesman's @nicoleMfoy..."
 date: 2020-01-17
 time: 13:30:37
 tweet_id: "1218163720045522944"

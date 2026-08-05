@@ -1,4 +1,5 @@
 ---
+title: "The way they went about it felt, to a lot of the residents,..."
 date: 2020-03-27
 time: 17:47:09
 tweet_id: "1243595425803726848"

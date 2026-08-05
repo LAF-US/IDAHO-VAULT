@@ -1,4 +1,5 @@
 ---
+title: ".@IdSBOE adopts non-binding @GovernorLittle Idaho Back to..."
 date: 2020-07-09
 time: 15:37:42
 tweet_id: "1281251190164971522"

@@ -1,4 +1,5 @@
 ---
+title: "Grangeville, Idaho, population 3,000. Syringa Hospital has..."
 date: 2020-03-20
 time: 02:56:01
 tweet_id: "1240834449568219137"

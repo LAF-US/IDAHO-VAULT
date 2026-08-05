@@ -1,4 +1,5 @@
 ---
+title: "I did a piece in a similar vein comparing Jordan's 2018 and..."
 date: 2021-01-05
 time: 01:13:43
 tweet_id: "1346263574201524224"

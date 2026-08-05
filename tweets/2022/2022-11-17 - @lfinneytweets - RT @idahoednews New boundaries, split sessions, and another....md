@@ -1,4 +1,5 @@
 ---
+title: "RT @idahoednews New boundaries, split sessions, and another..."
 date: 2022-11-17
 time: 19:40:41
 tweet_id: "1593328289699233793"

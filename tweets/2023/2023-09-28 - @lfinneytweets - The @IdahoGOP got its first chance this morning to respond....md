@@ -1,4 +1,5 @@
 ---
+title: "The @IdahoGOP got its first chance this morning to respond..."
 date: 2023-09-28
 time: 22:20:34
 tweet_id: "1707520704223285714"

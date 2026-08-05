@@ -1,4 +1,5 @@
 ---
+title: "RT @NateBrownNews Few competitive races but several new..."
 date: 2020-09-07
 time: 17:37:12
 tweet_id: "1303024535403335680"

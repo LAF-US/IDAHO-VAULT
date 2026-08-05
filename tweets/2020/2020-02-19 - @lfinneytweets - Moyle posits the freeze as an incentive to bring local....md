@@ -1,4 +1,5 @@
 ---
+title: "Moyle posits the freeze as an incentive to bring local..."
 date: 2020-02-19
 time: 21:44:04
 tweet_id: "1230246699706150912"

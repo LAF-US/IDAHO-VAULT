@@ -1,4 +1,5 @@
 ---
+title: "Overall @uidaho enrollment came in at 11,926, a 1%..."
 date: 2019-10-23
 time: 21:20:24
 tweet_id: "1187116586122936321"

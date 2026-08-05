@@ -1,4 +1,5 @@
 ---
+title: "Road cut into the barren hills which lead into Emmett,..."
 date: 2025-07-23
 time: 20:40:34
 tweet_id: "1948121078481444920"

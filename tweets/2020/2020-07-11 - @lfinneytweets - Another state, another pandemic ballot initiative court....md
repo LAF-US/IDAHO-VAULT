@@ -1,4 +1,5 @@
 ---
+title: "Another state, another pandemic ballot initiative court..."
 date: 2020-07-11
 time: 17:07:41
 tweet_id: "1281998607621648384"

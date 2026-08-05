@@ -1,4 +1,5 @@
 ---
+title: "Case numbers have continued to rise over the last two..."
 date: 2020-06-25
 time: 18:12:07
 tweet_id: "1276216616573743105"

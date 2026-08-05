@@ -1,4 +1,5 @@
 ---
+title: "House Health & Welfare is hearing HB 642, the newest county..."
 date: 2020-03-16
 time: 19:04:45
 tweet_id: "1239628690142547968"

@@ -1,4 +1,5 @@
 ---
+title: "RT @IDHSAA Find the entire guide to safely re-opening..."
 date: 2020-07-17
 time: 02:33:40
 tweet_id: "1283952983206580224"

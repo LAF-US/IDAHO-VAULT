@@ -1,4 +1,5 @@
 ---
+title: "This news comes as the Idaho Senate is poised to consider a..."
 date: 2024-03-14
 time: 19:14:57
 tweet_id: "1768355153294561409"

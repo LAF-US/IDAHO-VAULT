@@ -1,4 +1,5 @@
 ---
+title: "RT @kkruesi Senate panel vacates vote used to kill..."
 date: 2018-03-07
 time: 01:38:03
 tweet_id: "971198257178161152"

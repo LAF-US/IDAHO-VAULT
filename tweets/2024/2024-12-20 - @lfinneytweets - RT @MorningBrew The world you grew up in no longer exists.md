@@ -1,4 +1,5 @@
 ---
+title: "RT @MorningBrew The world you grew up in no longer exists"
 date: 2024-12-20
 time: 21:30:37
 tweet_id: "1870220285028524538"

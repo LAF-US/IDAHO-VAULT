@@ -1,4 +1,5 @@
 ---
+title: "Sen. Jordan is up now, reading from the Attorney General..."
 date: 2020-03-16
 time: 23:06:46
 tweet_id: "1239689594762715136"

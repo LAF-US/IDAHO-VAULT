@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio Polls are open until 8 p.m. tonight..."
 date: 2024-05-21
 time: 22:04:51
 tweet_id: "1793040282260242591"

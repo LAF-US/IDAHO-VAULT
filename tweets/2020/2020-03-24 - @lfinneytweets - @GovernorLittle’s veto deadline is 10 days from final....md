@@ -1,4 +1,5 @@
 ---
+title: "@GovernorLittle\u2019s veto deadline is 10 days from final..."
 date: 2020-03-24
 time: 19:39:11
 tweet_id: "1242536459661238272"

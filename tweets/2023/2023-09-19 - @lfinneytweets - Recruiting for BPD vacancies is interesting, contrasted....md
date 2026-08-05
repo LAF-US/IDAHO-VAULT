@@ -1,4 +1,5 @@
 ---
+title: "Recruiting for BPD vacancies is interesting, contrasted..."
 date: 2023-09-19
 time: 21:49:04
 tweet_id: "1704251283702706590"

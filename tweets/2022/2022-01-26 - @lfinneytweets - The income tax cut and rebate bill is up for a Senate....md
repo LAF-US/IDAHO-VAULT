@@ -1,4 +1,5 @@
 ---
+title: "The income tax cut and rebate bill is up for a Senate..."
 date: 2022-01-26
 time: 22:37:09
 tweet_id: "1486468279115804675"

@@ -1,4 +1,5 @@
 ---
+title: "As a guy writing for a media outlet, I just went looking..."
 date: 2022-07-06
 time: 03:29:17
 tweet_id: "1544523856164990977"

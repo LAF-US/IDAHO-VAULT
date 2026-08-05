@@ -1,4 +1,5 @@
 ---
+title: "The Idaho Senate approved a bill Tuesday that would carry..."
 date: 2024-02-28
 time: 01:08:40
 tweet_id: "1762645963234242677"

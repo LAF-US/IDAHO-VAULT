@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports July 23, 2021, Weekly #IdahoCOVID19 Update..."
 date: 2021-07-23
 time: 22:56:40
 tweet_id: "1418706661225553921"

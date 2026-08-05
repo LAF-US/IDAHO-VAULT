@@ -1,4 +1,5 @@
 ---
+title: "RT @GovernorLittle First bill of the 2025 legislative..."
 date: 2025-01-28
 time: 01:25:16
 tweet_id: "1884050073312792998"

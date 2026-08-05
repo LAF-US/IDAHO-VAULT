@@ -1,4 +1,5 @@
 ---
+title: "RT @kkruesi GOP Sen. Dan Foreman, a state lawmaker who..."
 date: 2018-04-25
 time: 20:28:17
 tweet_id: "989239696612978688"

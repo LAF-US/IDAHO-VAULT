@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoOnYourSide Gobernador de Idaho declara estado de..."
 date: 2020-03-14
 time: 03:56:29
 tweet_id: "1238675341847097349"

@@ -1,4 +1,5 @@
 ---
+title: "Democratic lawmakers argued today that local governments..."
 date: 2024-02-26
 time: 21:00:43
 tweet_id: "1762221177551065467"

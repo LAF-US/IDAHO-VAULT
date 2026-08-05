@@ -1,4 +1,5 @@
 ---
+title: "Wallace City Council unanimously passed a mask resolution..."
 date: 2020-07-25
 time: 00:57:21
 tweet_id: "1286827847986720768"

@@ -1,4 +1,5 @@
 ---
+title: "RT @ryannoyance .@uidaho wish you could learn how to..."
 date: 2019-02-10
 time: 01:25:07
 tweet_id: "1094406879835344896"

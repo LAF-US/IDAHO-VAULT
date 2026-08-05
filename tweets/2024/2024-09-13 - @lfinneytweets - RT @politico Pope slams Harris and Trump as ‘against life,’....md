@@ -1,4 +1,5 @@
 ---
+title: "RT @politico Pope slams Harris and Trump as \u2018against life,\u2019..."
 date: 2024-09-13
 time: 20:35:57
 tweet_id: "1834692516370956381"

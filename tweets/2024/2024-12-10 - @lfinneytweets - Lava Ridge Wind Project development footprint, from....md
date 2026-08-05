@@ -1,4 +1,5 @@
 ---
+title: "Lava Ridge Wind Project development footprint, from..."
 date: 2024-12-10
 time: 19:44:05
 tweet_id: "1866569594158407815"

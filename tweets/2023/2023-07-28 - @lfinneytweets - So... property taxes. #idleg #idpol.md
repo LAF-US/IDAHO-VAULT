@@ -1,4 +1,5 @@
 ---
+title: "So... property taxes. #idleg #idpol"
 date: 2023-07-28
 time: 00:23:46
 tweet_id: "1684721272134287360"

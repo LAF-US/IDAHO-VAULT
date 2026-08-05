@@ -1,4 +1,5 @@
 ---
+title: "RT @idahoednews A third Idaho high retires a mascot with..."
 date: 2020-07-17
 time: 17:16:20
 tweet_id: "1284175112124563457"

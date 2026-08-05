@@ -1,4 +1,5 @@
 ---
+title: "RT @IsabelSteckel my reps have advised me to remain silent..."
 date: 2024-12-10
 time: 22:46:25
 tweet_id: "1866615480255123782"

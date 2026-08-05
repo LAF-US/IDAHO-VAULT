@@ -1,4 +1,5 @@
 ---
+title: "RT @CKomatsoulis Do you think you know what Kuna means You..."
 date: 2022-12-19
 time: 01:38:38
 tweet_id: "1604652396164288512"

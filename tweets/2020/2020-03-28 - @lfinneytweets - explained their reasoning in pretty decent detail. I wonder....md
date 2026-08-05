@@ -1,4 +1,5 @@
 ---
+title: "explained their reasoning in pretty decent detail. I wonder..."
 date: 2020-03-28
 time: 19:30:42
 tweet_id: "1243983873425297413"

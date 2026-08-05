@@ -1,4 +1,5 @@
 ---
+title: "Shattered glass from one of the gallery doors. Not sure..."
 date: 2020-08-24
 time: 16:00:28
 tweet_id: "1297926758730100737"

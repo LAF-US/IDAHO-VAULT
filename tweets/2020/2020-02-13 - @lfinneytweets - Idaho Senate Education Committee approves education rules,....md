@@ -1,4 +1,5 @@
 ---
+title: "Idaho Senate Education Committee approves education rules,..."
 date: 2020-02-13
 time: 01:39:52
 tweet_id: "1227769323244011520"

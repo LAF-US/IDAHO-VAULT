@@ -1,4 +1,5 @@
 ---
+title: "RT @the208KTVB Anne Frank Memorial in Boise vandalized with..."
 date: 2020-12-09
 time: 18:06:37
 tweet_id: "1336734010010030080"

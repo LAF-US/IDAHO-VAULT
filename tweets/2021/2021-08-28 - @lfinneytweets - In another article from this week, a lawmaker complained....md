@@ -1,4 +1,5 @@
 ---
+title: "In another article from this week, a lawmaker complained..."
 date: 2021-08-28
 time: 02:03:39
 tweet_id: "1431437288572022784"

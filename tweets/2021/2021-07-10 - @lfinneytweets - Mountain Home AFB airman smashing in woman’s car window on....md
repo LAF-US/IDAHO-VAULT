@@ -1,4 +1,5 @@
 ---
+title: "Mountain Home AFB airman smashing in woman\u2019s car window on..."
 date: 2021-07-10
 time: 00:27:04
 tweet_id: "1413655977086230529"

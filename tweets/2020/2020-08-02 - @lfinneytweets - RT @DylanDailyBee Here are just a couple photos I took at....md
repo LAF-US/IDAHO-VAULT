@@ -1,4 +1,5 @@
 ---
+title: "RT @DylanDailyBee Here are just a couple photos I took at..."
 date: 2020-08-02
 time: 03:35:57
 tweet_id: "1289766863220568064"

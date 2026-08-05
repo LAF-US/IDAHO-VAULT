@@ -1,4 +1,5 @@
 ---
+title: "The sole congressional challenge alleged the redistricting..."
 date: 2022-02-11
 time: 19:55:05
 tweet_id: "1492225700803141634"

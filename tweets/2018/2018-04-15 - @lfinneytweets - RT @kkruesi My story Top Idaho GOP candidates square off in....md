@@ -1,4 +1,5 @@
 ---
+title: "RT @kkruesi My story Top Idaho GOP candidates square off in..."
 date: 2018-04-15
 time: 05:24:23
 tweet_id: "985388343826432000"

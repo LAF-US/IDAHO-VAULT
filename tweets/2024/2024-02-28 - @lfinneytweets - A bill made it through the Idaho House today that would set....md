@@ -1,4 +1,5 @@
 ---
+title: "A bill made it through the Idaho House today that would set..."
 date: 2024-02-28
 time: 01:10:57
 tweet_id: "1762646536918602175"

@@ -1,4 +1,5 @@
 ---
+title: "Rep. Paul Shepherd (R-Riggins) reviews the proclamation..."
 date: 2020-06-24
 time: 04:50:34
 tweet_id: "1275652513782472705"

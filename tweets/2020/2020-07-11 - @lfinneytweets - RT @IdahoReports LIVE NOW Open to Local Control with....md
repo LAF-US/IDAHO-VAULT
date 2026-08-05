@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports LIVE NOW Open to Local Control with..."
 date: 2020-07-11
 time: 02:06:05
 tweet_id: "1281771716218286081"

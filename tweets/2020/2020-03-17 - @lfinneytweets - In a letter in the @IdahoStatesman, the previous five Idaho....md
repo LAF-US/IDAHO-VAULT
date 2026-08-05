@@ -1,4 +1,5 @@
 ---
+title: "In a letter in the @IdahoStatesman, the previous five Idaho..."
 date: 2020-03-17
 time: 17:55:53
 tweet_id: "1239973747613782016"

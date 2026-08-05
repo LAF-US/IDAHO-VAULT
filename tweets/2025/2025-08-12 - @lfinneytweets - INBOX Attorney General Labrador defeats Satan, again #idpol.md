@@ -1,4 +1,5 @@
 ---
+title: "INBOX Attorney General Labrador defeats Satan, again #idpol"
 date: 2025-08-12
 time: 16:08:46
 tweet_id: "1955300438015873539"

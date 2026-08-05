@@ -1,4 +1,5 @@
 ---
+title: "While cities in Idaho\u2019s fast-growing Treasure Valley have..."
 date: 2021-05-24
 time: 23:37:43
 tweet_id: "1396973717549318145"

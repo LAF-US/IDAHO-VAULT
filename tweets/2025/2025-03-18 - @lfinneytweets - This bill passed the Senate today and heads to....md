@@ -1,4 +1,5 @@
 ---
+title: "This bill passed the Senate today and heads to..."
 date: 2025-03-18
 time: 23:35:14
 tweet_id: "1902141775764189393"

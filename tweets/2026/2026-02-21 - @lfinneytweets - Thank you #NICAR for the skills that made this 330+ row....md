@@ -1,4 +1,5 @@
 ---
+title: "Thank you #NICAR for the skills that made this 330+ row..."
 date: 2026-02-21
 time: 01:50:23
 tweet_id: "2025025276657488188"

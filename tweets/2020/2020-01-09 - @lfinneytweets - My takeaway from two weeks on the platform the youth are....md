@@ -1,4 +1,5 @@
 ---
+title: "My takeaway from two weeks on the platform the youth are..."
 date: 2020-01-09
 time: 06:25:12
 tweet_id: "1215157554793177093"

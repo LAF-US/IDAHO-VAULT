@@ -1,4 +1,5 @@
 ---
+title: "The court found that the Board holds general authority over..."
 date: 2020-06-22
 time: 23:15:46
 tweet_id: "1275205870243069952"

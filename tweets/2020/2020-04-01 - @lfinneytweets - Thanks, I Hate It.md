@@ -1,4 +1,5 @@
 ---
+title: "Thanks, I Hate It"
 date: 2020-04-01
 time: 18:23:07
 tweet_id: "1245416417945509888"

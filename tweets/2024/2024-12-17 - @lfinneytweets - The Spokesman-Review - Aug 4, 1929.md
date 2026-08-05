@@ -1,4 +1,5 @@
 ---
+title: "The Spokesman-Review - Aug 4, 1929"
 date: 2024-12-17
 time: 18:55:13
 tweet_id: "1869094014567477609"

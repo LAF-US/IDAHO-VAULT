@@ -1,4 +1,5 @@
 ---
+title: "Pay phone Kooskia, ID"
 date: 2022-05-16
 time: 03:47:24
 tweet_id: "1526046632122499072"

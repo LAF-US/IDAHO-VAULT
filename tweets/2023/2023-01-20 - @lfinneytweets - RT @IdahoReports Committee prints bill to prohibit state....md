@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Committee prints bill to prohibit state..."
 date: 2023-01-20
 time: 05:31:14
 tweet_id: "1616307342659969026"

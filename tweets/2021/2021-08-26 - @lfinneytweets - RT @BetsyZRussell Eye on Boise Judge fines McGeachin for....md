@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Judge fines McGeachin for..."
 date: 2021-08-26
 time: 23:56:02
 tweet_id: "1431042787558842371"

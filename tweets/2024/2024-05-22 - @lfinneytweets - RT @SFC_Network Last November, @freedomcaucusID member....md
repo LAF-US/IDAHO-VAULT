@@ -1,4 +1,5 @@
 ---
+title: "RT @SFC_Network Last November, @freedomcaucusID member..."
 date: 2024-05-22
 time: 22:52:44
 tweet_id: "1793414722349596748"

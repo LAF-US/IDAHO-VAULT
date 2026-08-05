@@ -1,4 +1,5 @@
 ---
+title: "My first video for the Argonaut is live!"
 date: 2018-02-14
 time: 05:12:01
 tweet_id: "963641958085296129"

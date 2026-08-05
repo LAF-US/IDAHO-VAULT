@@ -1,4 +1,5 @@
 ---
+title: "I have typed the word party far too many times today."
 date: 2023-09-28
 time: 22:21:49
 tweet_id: "1707521018699591796"

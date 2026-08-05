@@ -1,4 +1,5 @@
 ---
+title: "Christensen I am definitely on board with getting rid of..."
 date: 2020-03-17
 time: 20:07:03
 tweet_id: "1240006757193154560"

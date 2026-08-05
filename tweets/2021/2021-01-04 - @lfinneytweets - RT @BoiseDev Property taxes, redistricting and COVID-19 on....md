@@ -1,4 +1,5 @@
 ---
+title: "RT @BoiseDev Property taxes, redistricting and COVID-19 on..."
 date: 2021-01-04
 time: 19:16:56
 tweet_id: "1346173787205615616"

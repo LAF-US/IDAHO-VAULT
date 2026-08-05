@@ -1,4 +1,5 @@
 ---
+title: "\u201cWe take pride in our mascot, but the Nez Perce Tribe and..."
 date: 2020-07-15
 time: 16:29:14
 tweet_id: "1283438484452065286"

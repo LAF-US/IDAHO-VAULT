@@ -1,4 +1,5 @@
 ---
+title: "From Bill Spence @LewistonTribune Redistricting committee..."
 date: 2021-08-31
 time: 18:02:41
 tweet_id: "1432765802256556032"

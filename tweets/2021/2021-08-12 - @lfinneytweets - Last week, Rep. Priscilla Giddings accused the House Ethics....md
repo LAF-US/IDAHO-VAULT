@@ -1,4 +1,5 @@
 ---
+title: "Last week, Rep. Priscilla Giddings accused the House Ethics..."
 date: 2021-08-12
 time: 21:04:38
 tweet_id: "1425926220781260801"

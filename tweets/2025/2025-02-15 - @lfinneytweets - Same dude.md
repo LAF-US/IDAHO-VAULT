@@ -1,4 +1,5 @@
 ---
+title: "Same dude"
 date: 2025-02-15
 time: 03:01:16
 tweet_id: "1890597214784762056"

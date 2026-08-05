@@ -1,4 +1,5 @@
 ---
+title: "RT @CdAPressNews 26 people have died of COVID-19 in the..."
 date: 2020-08-18
 time: 17:38:05
 tweet_id: "1295777000578146304"

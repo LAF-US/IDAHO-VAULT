@@ -1,4 +1,5 @@
 ---
+title: "'As the memo itself acknowledges, two separate federal..."
 date: 2020-09-25
 time: 19:01:53
 tweet_id: "1309568826669891589"

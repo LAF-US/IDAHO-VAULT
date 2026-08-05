@@ -1,4 +1,5 @@
 ---
+title: "The $92 million does not represent new money... It is money..."
 date: 2023-09-05
 time: 22:46:50
 tweet_id: "1699192394598822215"

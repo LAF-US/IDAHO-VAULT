@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoStatesman \u201cThe offense included an attempt to kill..."
 date: 2021-06-04
 time: 16:42:02
 tweet_id: "1400855376069742594"

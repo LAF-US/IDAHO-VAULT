@@ -1,4 +1,5 @@
 ---
+title: "Behind the scenes of @KUOIFM The Vandal Scoreboard with..."
 date: 2019-04-17
 time: 20:12:11
 tweet_id: "1118608111026094080"

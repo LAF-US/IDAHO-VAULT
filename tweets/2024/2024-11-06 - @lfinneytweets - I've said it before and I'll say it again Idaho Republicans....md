@@ -1,4 +1,5 @@
 ---
+title: "I've said it before and I'll say it again Idaho Republicans..."
 date: 2024-11-06
 time: 09:55:39
 tweet_id: "1854100324803363328"

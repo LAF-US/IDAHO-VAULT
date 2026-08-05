@@ -1,4 +1,5 @@
 ---
+title: ".@RepHeatherScott called out political figures as tyrants..."
 date: 2020-10-09
 time: 22:27:31
 tweet_id: "1314694007834902529"

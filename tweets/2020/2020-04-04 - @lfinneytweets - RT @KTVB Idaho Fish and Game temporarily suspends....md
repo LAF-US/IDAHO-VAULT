@@ -1,4 +1,5 @@
 ---
+title: "RT @KTVB Idaho Fish and Game temporarily suspends..."
 date: 2020-04-04
 time: 17:50:30
 tweet_id: "1246495374014996481"

@@ -1,4 +1,5 @@
 ---
+title: "RT @chaddcripe Two of the first eight coronavirus cases in..."
 date: 2020-03-18
 time: 00:06:38
 tweet_id: "1240067048283070465"

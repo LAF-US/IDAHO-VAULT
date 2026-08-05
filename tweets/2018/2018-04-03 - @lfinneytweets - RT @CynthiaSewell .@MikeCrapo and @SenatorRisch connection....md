@@ -1,4 +1,5 @@
 ---
+title: "RT @CynthiaSewell .@MikeCrapo and @SenatorRisch connection..."
 date: 2018-04-03
 time: 17:54:01
 tweet_id: "981228339082903555"

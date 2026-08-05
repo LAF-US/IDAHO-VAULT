@@ -1,4 +1,5 @@
 ---
+title: "Multiple sources from inside Bundy's campaign told..."
 date: 2022-02-17
 time: 18:24:43
 tweet_id: "1494377283460558848"

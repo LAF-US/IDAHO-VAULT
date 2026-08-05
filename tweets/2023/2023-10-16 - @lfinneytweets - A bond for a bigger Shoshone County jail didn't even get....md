@@ -1,4 +1,5 @@
 ---
+title: "A bond for a bigger Shoshone County jail didn't even get..."
 date: 2023-10-16
 time: 03:28:07
 tweet_id: "1713758695392518308"

@@ -1,4 +1,5 @@
 ---
+title: "Or, the new leader in the chamber with power over committee..."
 date: 2024-11-07
 time: 04:25:16
 tweet_id: "1854379568486039738"

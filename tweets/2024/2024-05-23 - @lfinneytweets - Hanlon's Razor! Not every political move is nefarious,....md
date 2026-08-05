@@ -1,4 +1,5 @@
 ---
+title: "Hanlon's Razor! Not every political move is nefarious,..."
 date: 2024-05-23
 time: 16:33:53
 tweet_id: "1793681770120114322"

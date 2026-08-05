@@ -1,4 +1,5 @@
 ---
+title: "Rep. Tanner tells me he wouldn't want to lead JFAC in the..."
 date: 2026-01-01
 time: 01:05:22
 tweet_id: "2006532166747074690"

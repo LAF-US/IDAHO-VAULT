@@ -1,4 +1,5 @@
 ---
+title: "The document circulated by MyPillow CEO Mike Lindell..."
 date: 2021-09-30
 time: 02:19:13
 tweet_id: "1443400005788700672"

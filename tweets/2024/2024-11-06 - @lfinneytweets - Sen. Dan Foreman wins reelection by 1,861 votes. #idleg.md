@@ -1,4 +1,5 @@
 ---
+title: "Sen. Dan Foreman wins reelection by 1,861 votes. #idleg"
 date: 2024-11-06
 time: 10:24:20
 tweet_id: "1854107541770539127"

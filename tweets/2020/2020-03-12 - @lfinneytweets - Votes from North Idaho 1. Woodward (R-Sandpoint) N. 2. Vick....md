@@ -1,4 +1,5 @@
 ---
+title: "Votes from North Idaho 1. Woodward (R-Sandpoint) N. 2. Vick..."
 date: 2020-03-12
 time: 17:18:05
 tweet_id: "1238152293821767681"

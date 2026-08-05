@@ -1,4 +1,5 @@
 ---
+title: "RT @uiargonaut School shootings are a sad but common thread..."
 date: 2019-05-04
 time: 19:05:38
 tweet_id: "1124751957384548352"

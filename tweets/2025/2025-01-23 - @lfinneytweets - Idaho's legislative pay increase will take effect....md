@@ -1,4 +1,5 @@
 ---
+title: "Idaho's legislative pay increase will take effect..."
 date: 2025-01-23
 time: 17:43:00
 tweet_id: "1882484189536428461"

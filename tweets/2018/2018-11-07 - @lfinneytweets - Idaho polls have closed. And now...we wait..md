@@ -1,4 +1,5 @@
 ---
+title: "Idaho polls have closed. And now...we wait."
 date: 2018-11-07
 time: 04:13:12
 tweet_id: "1060022329999126529"

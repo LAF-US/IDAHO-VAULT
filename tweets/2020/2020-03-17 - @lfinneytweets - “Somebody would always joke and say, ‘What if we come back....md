@@ -1,4 +1,5 @@
 ---
+title: "\u201cSomebody would always joke and say, \u2018What if we come back..."
 date: 2020-03-17
 time: 23:40:33
 tweet_id: "1240060485677899776"

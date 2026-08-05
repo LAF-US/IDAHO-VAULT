@@ -1,4 +1,5 @@
 ---
+title: "RT @Oregonian Portland protests continue Friday after Trump..."
 date: 2020-08-08
 time: 06:03:10
 tweet_id: "1291978236516163585"

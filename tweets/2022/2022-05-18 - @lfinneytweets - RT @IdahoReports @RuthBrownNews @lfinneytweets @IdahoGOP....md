@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports @RuthBrownNews @lfinneytweets @IdahoGOP..."
 date: 2022-05-18
 time: 04:37:19
 tweet_id: "1526783970980925440"

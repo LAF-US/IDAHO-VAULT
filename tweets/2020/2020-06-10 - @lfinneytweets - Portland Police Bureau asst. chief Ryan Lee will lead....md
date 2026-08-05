@@ -1,4 +1,5 @@
 ---
+title: "Portland Police Bureau asst. chief Ryan Lee will lead..."
 date: 2020-06-10
 time: 01:46:01
 tweet_id: "1270532639099740161"

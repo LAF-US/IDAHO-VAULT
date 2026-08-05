@@ -1,4 +1,5 @@
 ---
+title: "New recommendation based on CDC guidance instructs people..."
 date: 2020-04-03
 time: 23:21:04
 tweet_id: "1246216173605122048"

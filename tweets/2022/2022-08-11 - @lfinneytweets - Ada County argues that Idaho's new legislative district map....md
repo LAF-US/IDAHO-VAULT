@@ -1,4 +1,5 @@
 ---
+title: "Ada County argues that Idaho's new legislative district map..."
 date: 2022-08-11
 time: 22:46:54
 tweet_id: "1557861141438554112"

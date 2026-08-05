@@ -1,4 +1,5 @@
 ---
+title: "RT @NMBlanchard \ud83d\udce3\ud83d\udce3\ud83d\udce3"
 date: 2021-04-21
 time: 18:44:29
 tweet_id: "1384941122183696386"

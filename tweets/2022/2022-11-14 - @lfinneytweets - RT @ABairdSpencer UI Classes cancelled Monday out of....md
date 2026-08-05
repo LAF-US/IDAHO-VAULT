@@ -1,4 +1,5 @@
 ---
+title: "RT @ABairdSpencer UI Classes cancelled Monday out of..."
 date: 2022-11-14
 time: 06:04:16
 tweet_id: "1592035668615909377"

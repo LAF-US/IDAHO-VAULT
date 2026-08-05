@@ -1,4 +1,5 @@
 ---
+title: "Lol this #FreeSpeechAbsolutist app won't let me post my..."
 date: 2022-12-16
 time: 03:14:21
 tweet_id: "1603589318375014401"

@@ -1,4 +1,5 @@
 ---
+title: "RT @EastIDNews Judge rules in favor of Idaho Republican..."
 date: 2023-11-03
 time: 01:09:42
 tweet_id: "1720246844259987634"

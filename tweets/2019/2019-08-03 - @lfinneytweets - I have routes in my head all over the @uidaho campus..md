@@ -1,4 +1,5 @@
 ---
+title: "I have routes in my head all over the @uidaho campus."
 date: 2019-08-03
 time: 22:41:53
 tweet_id: "1157783673778757632"

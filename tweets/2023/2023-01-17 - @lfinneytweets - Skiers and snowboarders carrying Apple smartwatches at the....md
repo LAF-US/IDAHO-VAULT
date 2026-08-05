@@ -1,4 +1,5 @@
 ---
+title: "Skiers and snowboarders carrying Apple smartwatches at the..."
 date: 2023-01-17
 time: 17:28:31
 tweet_id: "1615400686765895681"

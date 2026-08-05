@@ -1,4 +1,5 @@
 ---
+title: "RT @blotmag Educators and students discuss the state of..."
 date: 2019-05-01
 time: 19:10:31
 tweet_id: "1123666022962085888"

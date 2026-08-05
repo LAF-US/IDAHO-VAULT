@@ -1,4 +1,5 @@
 ---
+title: "RT @PBSBlackCulture Celebrate the last week of Pride Month..."
 date: 2020-06-25
 time: 16:00:52
 tweet_id: "1276183590271770624"

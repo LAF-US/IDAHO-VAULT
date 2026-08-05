@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Tribes file legal challenge..."
 date: 2021-12-16
 time: 20:30:57
 tweet_id: "1471578618140643332"

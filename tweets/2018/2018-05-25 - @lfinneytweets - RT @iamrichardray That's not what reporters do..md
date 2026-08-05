@@ -1,4 +1,5 @@
 ---
+title: "RT @iamrichardray That's not what reporters do."
 date: 2018-05-25
 time: 02:31:30
 tweet_id: "999840351778103297"

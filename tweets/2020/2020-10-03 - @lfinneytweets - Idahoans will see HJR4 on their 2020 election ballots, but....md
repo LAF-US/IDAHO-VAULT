@@ -1,4 +1,5 @@
 ---
+title: "Idahoans will see HJR4 on their 2020 election ballots, but..."
 date: 2020-10-03
 time: 01:56:28
 tweet_id: "1312209872813875203"

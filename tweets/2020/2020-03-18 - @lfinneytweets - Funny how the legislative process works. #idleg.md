@@ -1,4 +1,5 @@
 ---
+title: "Funny how the legislative process works. #idleg"
 date: 2020-03-18
 time: 16:28:03
 tweet_id: "1240314030192902145"

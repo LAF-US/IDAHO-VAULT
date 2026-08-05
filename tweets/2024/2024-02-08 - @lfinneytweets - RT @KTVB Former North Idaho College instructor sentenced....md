@@ -1,4 +1,5 @@
 ---
+title: "RT @KTVB Former North Idaho College instructor sentenced..."
 date: 2024-02-08
 time: 15:13:43
 tweet_id: "1755610867855757745"

@@ -1,4 +1,5 @@
 ---
+title: "The Idaho Supreme Court heard arguments on whether the 2021..."
 date: 2022-01-25
 time: 00:34:07
 tweet_id: "1485772936539561984"

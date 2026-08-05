@@ -1,4 +1,5 @@
 ---
+title: "Gem State Crystals sees your man bites dog headline and..."
 date: 2018-06-27
 time: 21:18:02
 tweet_id: "1012082652113850368"

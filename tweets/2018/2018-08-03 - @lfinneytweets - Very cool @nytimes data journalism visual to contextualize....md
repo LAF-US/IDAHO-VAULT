@@ -1,4 +1,5 @@
 ---
+title: "Very cool @nytimes data journalism visual to contextualize..."
 date: 2018-08-03
 time: 06:02:57
 tweet_id: "1025260713508392960"

@@ -1,4 +1,5 @@
 ---
+title: "So excited for my big North Idaho mining cleanup story to..."
 date: 2022-11-29
 time: 19:43:22
 tweet_id: "1597677618869854209"

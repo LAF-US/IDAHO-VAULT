@@ -1,4 +1,5 @@
 ---
+title: "RT @TheIdahoPress A video on social media of a Boise pastor..."
 date: 2022-06-10
 time: 00:03:51
 tweet_id: "1535050069849673728"

@@ -1,4 +1,5 @@
 ---
+title: "RT @vicenews Idaho lawmakers want the state to tell people..."
 date: 2018-03-13
 time: 23:12:58
 tweet_id: "973698460238020610"

@@ -1,4 +1,5 @@
 ---
+title: "The Joint Finance-Appropriations Committee meets again to..."
 date: 2020-03-12
 time: 21:07:23
 tweet_id: "1238209999869902848"

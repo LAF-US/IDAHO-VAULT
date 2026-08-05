@@ -1,4 +1,5 @@
 ---
+title: "RT @CdAPressNews Two Coeur d'Alene School Board members..."
 date: 2021-10-01
 time: 19:18:01
 tweet_id: "1444018785476767746"

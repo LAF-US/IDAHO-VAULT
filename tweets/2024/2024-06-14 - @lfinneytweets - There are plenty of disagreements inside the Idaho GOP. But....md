@@ -1,4 +1,5 @@
 ---
+title: "There are plenty of disagreements inside the Idaho GOP. But..."
 date: 2024-06-14
 time: 22:08:55
 tweet_id: "1801738615258841388"

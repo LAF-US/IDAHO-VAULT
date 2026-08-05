@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports From @RuthBrownNews House Ethics Committee..."
 date: 2021-04-29
 time: 18:36:22
 tweet_id: "1387838185103781888"

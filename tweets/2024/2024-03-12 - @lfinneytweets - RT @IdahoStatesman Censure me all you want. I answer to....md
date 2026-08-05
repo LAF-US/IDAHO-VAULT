@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoStatesman Censure me all you want. I answer to..."
 date: 2024-03-12
 time: 21:55:50
 tweet_id: "1767670864752091512"

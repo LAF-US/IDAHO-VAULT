@@ -1,4 +1,5 @@
 ---
+title: "RT @AriDrennen In case you missed it, here's a three-second..."
 date: 2024-06-28
 time: 04:19:28
 tweet_id: "1806542909766029578"

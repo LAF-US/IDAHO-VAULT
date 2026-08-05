@@ -1,4 +1,5 @@
 ---
+title: "RT @pewjournalism Chart Republicans in news media \u2018bubble\u2019..."
 date: 2021-06-03
 time: 01:56:27
 tweet_id: "1400270123202605057"

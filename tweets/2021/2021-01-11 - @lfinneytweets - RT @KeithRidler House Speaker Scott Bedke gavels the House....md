@@ -1,4 +1,5 @@
 ---
+title: "RT @KeithRidler House Speaker Scott Bedke gavels the House..."
 date: 2021-01-11
 time: 19:05:10
 tweet_id: "1348707541853720576"

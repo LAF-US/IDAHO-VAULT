@@ -1,4 +1,5 @@
 ---
+title: "RT @KeithRidler Wind project would double Idaho's turbine..."
 date: 2021-08-19
 time: 19:20:20
 tweet_id: "1428436688406081538"

@@ -1,4 +1,5 @@
 ---
+title: "RT @maggieKTVB7 Graffiti at the Capitol building. #Boise..."
 date: 2020-06-04
 time: 15:22:37
 tweet_id: "1268563815873933312"

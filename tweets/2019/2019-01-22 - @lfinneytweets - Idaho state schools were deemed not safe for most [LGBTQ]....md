@@ -1,4 +1,5 @@
 ---
+title: "Idaho state schools were deemed not safe for most [LGBTQ]..."
 date: 2019-01-22
 time: 21:19:59
 tweet_id: "1087822207445696512"

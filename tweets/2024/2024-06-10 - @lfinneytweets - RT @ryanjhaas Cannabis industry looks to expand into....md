@@ -1,4 +1,5 @@
 ---
+title: "RT @ryanjhaas Cannabis industry looks to expand into..."
 date: 2024-06-10
 time: 21:00:14
 tweet_id: "1800271782206976403"

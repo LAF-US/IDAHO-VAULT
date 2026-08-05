@@ -1,4 +1,5 @@
 ---
+title: "Former @NorthIdaho College president sues college, trustees..."
 date: 2021-10-02
 time: 01:23:58
 tweet_id: "1444110880933744647"

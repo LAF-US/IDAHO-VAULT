@@ -1,4 +1,5 @@
 ---
+title: "RT @KeithRidler Idaho governor declines debates ahead of..."
 date: 2022-04-15
 time: 22:28:51
 tweet_id: "1515094831277625346"

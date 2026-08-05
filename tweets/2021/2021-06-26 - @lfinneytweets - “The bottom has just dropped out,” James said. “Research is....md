@@ -1,4 +1,5 @@
 ---
+title: "\u201cThe bottom has just dropped out,\u201d James said. \u201cResearch is..."
 date: 2021-06-26
 time: 02:38:36
 tweet_id: "1408615649052528642"

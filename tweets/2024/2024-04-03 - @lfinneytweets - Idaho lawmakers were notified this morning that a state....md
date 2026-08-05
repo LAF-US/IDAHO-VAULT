@@ -1,4 +1,5 @@
 ---
+title: "Idaho lawmakers were notified this morning that a state..."
 date: 2024-04-03
 time: 18:45:03
 tweet_id: "1775595386922783207"

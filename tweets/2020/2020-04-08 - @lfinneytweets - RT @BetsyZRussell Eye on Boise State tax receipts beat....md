@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise State tax receipts beat..."
 date: 2020-04-08
 time: 17:03:02
 tweet_id: "1247932979952803841"

@@ -1,4 +1,5 @@
 ---
+title: "In addition to his cartoonish style, Haring was known for..."
 date: 2018-06-13
 time: 07:10:12
 tweet_id: "1006795858053091329"

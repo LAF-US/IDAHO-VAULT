@@ -1,4 +1,5 @@
 ---
+title: "RT @NateBrownNews Erickson ousts Zollinger; Cook beats..."
 date: 2020-06-03
 time: 06:27:37
 tweet_id: "1268066790770278400"

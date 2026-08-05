@@ -1,4 +1,5 @@
 ---
+title: "RT @uiargonaut Bennett tested negative for meth one day..."
 date: 2019-04-20
 time: 16:50:39
 tweet_id: "1119644560471154688"

@@ -1,4 +1,5 @@
 ---
+title: "Views from election day. A Borah High poll worker told me..."
 date: 2020-11-03
 time: 17:01:28
 tweet_id: "1323671647379861504"

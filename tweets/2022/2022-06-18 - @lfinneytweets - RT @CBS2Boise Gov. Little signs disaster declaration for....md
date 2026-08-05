@@ -1,4 +1,5 @@
 ---
+title: "RT @CBS2Boise Gov. Little signs disaster declaration for..."
 date: 2022-06-18
 time: 21:01:50
 tweet_id: "1538265757389164544"

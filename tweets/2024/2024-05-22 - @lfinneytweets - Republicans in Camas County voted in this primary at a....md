@@ -1,4 +1,5 @@
 ---
+title: "Republicans in Camas County voted in this primary at a..."
 date: 2024-05-22
 time: 22:14:32
 tweet_id: "1793405107209642341"

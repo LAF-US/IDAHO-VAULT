@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoNews6 Meridian man sentenced for shooting at two..."
 date: 2024-06-06
 time: 00:13:42
 tweet_id: "1798508527931289824"

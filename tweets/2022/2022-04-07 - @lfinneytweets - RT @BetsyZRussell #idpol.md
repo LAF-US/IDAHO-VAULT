@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell #idpol"
 date: 2022-04-07
 time: 19:58:56
 tweet_id: "1512158000491888640"

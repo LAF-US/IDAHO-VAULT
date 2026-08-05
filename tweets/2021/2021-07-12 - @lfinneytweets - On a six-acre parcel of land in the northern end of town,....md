@@ -1,4 +1,5 @@
 ---
+title: "On a six-acre parcel of land in the northern end of town,..."
 date: 2021-07-12
 time: 16:25:49
 tweet_id: "1414622032222855181"

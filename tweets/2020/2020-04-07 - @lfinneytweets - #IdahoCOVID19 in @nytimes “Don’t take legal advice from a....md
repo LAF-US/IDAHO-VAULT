@@ -1,4 +1,5 @@
 ---
+title: "#IdahoCOVID19 in @nytimes \u201cDon\u2019t take legal advice from a..."
 date: 2020-04-07
 time: 18:43:07
 tweet_id: "1247595777335033856"

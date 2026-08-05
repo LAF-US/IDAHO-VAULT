@@ -1,4 +1,5 @@
 ---
+title: "Just spoke with Pro Tem Winder. The Senate will read House..."
 date: 2021-11-16
 time: 23:50:10
 tweet_id: "1460757117367820288"

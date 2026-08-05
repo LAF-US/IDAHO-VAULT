@@ -1,4 +1,5 @@
 ---
+title: "Sen. Kelly Anthon is sworn in as Senate President Pro..."
 date: 2024-12-05
 time: 15:36:01
 tweet_id: "1864695228437024887"

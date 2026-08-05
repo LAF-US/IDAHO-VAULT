@@ -1,4 +1,5 @@
 ---
+title: "I put a lot of work the last few days into boiling down..."
 date: 2021-09-21
 time: 22:11:21
 tweet_id: "1440438527506857985"

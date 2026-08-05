@@ -1,4 +1,5 @@
 ---
+title: "RT @TeddyAmen The student who died in the Denver school..."
 date: 2019-05-08
 time: 16:00:16
 tweet_id: "1126154860942938113"

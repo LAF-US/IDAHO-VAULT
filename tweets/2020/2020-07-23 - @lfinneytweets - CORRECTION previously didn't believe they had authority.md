@@ -1,4 +1,5 @@
 ---
+title: "CORRECTION previously didn't believe they had authority"
 date: 2020-07-23
 time: 16:39:30
 tweet_id: "1286340170753683456"

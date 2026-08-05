@@ -1,4 +1,5 @@
 ---
+title: "RT @MurphyWoodhouse 100,000 people purged from Idaho's..."
 date: 2023-08-17
 time: 21:27:28
 tweet_id: "1692287049481765048"

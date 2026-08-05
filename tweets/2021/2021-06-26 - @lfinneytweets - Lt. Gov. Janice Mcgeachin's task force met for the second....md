@@ -1,4 +1,5 @@
 ---
+title: "Lt. Gov. Janice Mcgeachin's task force met for the second..."
 date: 2021-06-26
 time: 00:53:51
 tweet_id: "1408589287663144962"

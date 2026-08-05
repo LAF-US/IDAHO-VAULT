@@ -1,4 +1,5 @@
 ---
+title: "RT @the208KTVB Cathedral of the Rockies in Boise removes..."
 date: 2020-08-08
 time: 04:11:54
 tweet_id: "1291950239192985601"

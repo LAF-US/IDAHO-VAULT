@@ -1,4 +1,5 @@
 ---
+title: "RT @uiargonaut The university updated students on campus..."
 date: 2021-08-31
 time: 03:46:01
 tweet_id: "1432550214821240833"

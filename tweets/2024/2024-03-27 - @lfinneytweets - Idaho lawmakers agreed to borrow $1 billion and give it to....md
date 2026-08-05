@@ -1,4 +1,5 @@
 ---
+title: "Idaho lawmakers agreed to borrow $1 billion and give it to..."
 date: 2024-03-27
 time: 01:22:05
 tweet_id: "1772796199659290810"

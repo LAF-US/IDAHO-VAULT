@@ -1,4 +1,5 @@
 ---
+title: "I realized I spend a lot of time in the [architecture]..."
 date: 2019-02-07
 time: 17:27:24
 tweet_id: "1093561880512102405"

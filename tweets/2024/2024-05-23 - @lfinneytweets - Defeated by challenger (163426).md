@@ -1,4 +1,5 @@
 ---
+title: "Defeated by challenger (163426)"
 date: 2024-05-23
 time: 23:27:55
 tweet_id: "1793785962625163426"

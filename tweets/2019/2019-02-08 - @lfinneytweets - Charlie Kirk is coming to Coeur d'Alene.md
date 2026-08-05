@@ -1,4 +1,5 @@
 ---
+title: "Charlie Kirk is coming to Coeur d'Alene"
 date: 2019-02-08
 time: 06:54:13
 tweet_id: "1093764922821898240"

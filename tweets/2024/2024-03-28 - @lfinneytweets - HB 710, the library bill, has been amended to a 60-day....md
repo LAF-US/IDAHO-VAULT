@@ -1,4 +1,5 @@
 ---
+title: "HB 710, the library bill, has been amended to a 60-day..."
 date: 2024-03-28
 time: 21:29:29
 tweet_id: "1773462438115217769"

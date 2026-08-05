@@ -1,4 +1,5 @@
 ---
+title: "Rep. Chad Christensen (R-Ammon)"
 date: 2020-06-24
 time: 04:50:39
 tweet_id: "1275652533688717312"

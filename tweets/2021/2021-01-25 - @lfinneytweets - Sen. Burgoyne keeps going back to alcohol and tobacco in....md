@@ -1,4 +1,5 @@
 ---
+title: "Sen. Burgoyne keeps going back to alcohol and tobacco in..."
 date: 2021-01-25
 time: 16:46:22
 tweet_id: "1353746041154150400"

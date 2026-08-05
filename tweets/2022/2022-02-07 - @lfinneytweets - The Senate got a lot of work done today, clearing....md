@@ -1,4 +1,5 @@
 ---
+title: "The Senate got a lot of work done today, clearing..."
 date: 2022-02-07
 time: 19:03:09
 tweet_id: "1490763078736093184"

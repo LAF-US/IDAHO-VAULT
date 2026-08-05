@@ -1,4 +1,5 @@
 ---
+title: "Idaho's system-wide acceptance letters for colleges and..."
 date: 2020-03-15
 time: 17:46:46
 tweet_id: "1239246676826533889"

@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio Signs of the #IdahoCovid19 times closed..."
 date: 2020-03-28
 time: 20:00:19
 tweet_id: "1243991326946807808"

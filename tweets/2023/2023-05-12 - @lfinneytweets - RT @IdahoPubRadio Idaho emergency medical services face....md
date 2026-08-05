@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio Idaho emergency medical services face..."
 date: 2023-05-12
 time: 18:46:56
 tweet_id: "1657095025619271681"

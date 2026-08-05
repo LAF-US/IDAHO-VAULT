@@ -1,4 +1,5 @@
 ---
+title: "RT @voxdotcom Weed isn\u2019t legal everywhere yet. The snack..."
 date: 2022-04-20
 time: 21:18:34
 tweet_id: "1516889081761828864"

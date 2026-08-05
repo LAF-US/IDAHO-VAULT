@@ -1,4 +1,5 @@
 ---
+title: "RT @NWSBoise \ud83d\udd25Smoky conditions this morning is mainly from..."
 date: 2020-08-16
 time: 17:19:56
 tweet_id: "1295047654892683264"

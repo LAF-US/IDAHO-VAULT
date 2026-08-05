@@ -1,4 +1,5 @@
 ---
+title: "You're the one who decided to leave and miss out on all the..."
 date: 2020-11-12
 time: 01:02:29
 tweet_id: "1326691804171829248"

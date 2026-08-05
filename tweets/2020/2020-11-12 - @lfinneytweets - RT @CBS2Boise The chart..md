@@ -1,4 +1,5 @@
 ---
+title: "RT @CBS2Boise The chart."
 date: 2020-11-12
 time: 01:06:50
 tweet_id: "1326692900915146752"

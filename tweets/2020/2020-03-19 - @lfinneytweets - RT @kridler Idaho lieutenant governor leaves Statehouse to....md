@@ -1,4 +1,5 @@
 ---
+title: "RT @kridler Idaho lieutenant governor leaves Statehouse to..."
 date: 2020-03-19
 time: 17:51:29
 tweet_id: "1240697415557992448"

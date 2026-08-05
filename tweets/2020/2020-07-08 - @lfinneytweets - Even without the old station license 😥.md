@@ -1,4 +1,5 @@
 ---
+title: "Even without the old station license \ud83d\ude25"
 date: 2020-07-08
 time: 05:22:13
 tweet_id: "1280733908464615425"

@@ -1,4 +1,5 @@
 ---
+title: "Climbing the Statue of Liberty in protest on the 4th of..."
 date: 2018-07-06
 time: 06:39:10
 tweet_id: "1015122970199523329"

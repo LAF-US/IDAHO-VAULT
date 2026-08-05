@@ -1,4 +1,5 @@
 ---
+title: "Not trying to be snarky here, but... How much 'political..."
 date: 2020-06-08
 time: 03:45:56
 tweet_id: "1269838043642380290"

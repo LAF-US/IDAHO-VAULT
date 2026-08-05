@@ -1,4 +1,5 @@
 ---
+title: "New @IdahoReports from me Lawyers for Attorney General Ra\u00fal..."
 date: 2024-09-04
 time: 19:48:14
 tweet_id: "1831419018416419280"

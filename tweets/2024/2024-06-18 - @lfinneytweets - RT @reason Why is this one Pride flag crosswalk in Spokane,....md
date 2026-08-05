@@ -1,4 +1,5 @@
 ---
+title: "RT @reason Why is this one Pride flag crosswalk in Spokane,..."
 date: 2024-06-18
 time: 19:22:26
 tweet_id: "1803146269210321038"

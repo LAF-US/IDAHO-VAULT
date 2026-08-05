@@ -1,4 +1,5 @@
 ---
+title: "This thread, while lengthy, is merely a summary of a..."
 date: 2021-08-24
 time: 01:01:13
 tweet_id: "1429972027205554178"

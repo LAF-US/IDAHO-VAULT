@@ -1,4 +1,5 @@
 ---
+title: "Riggins Mayor Glenna McClure said all but three of the..."
 date: 2020-03-27
 time: 13:36:40
 tweet_id: "1243532393505370114"

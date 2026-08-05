@@ -1,4 +1,5 @@
 ---
+title: "House approves a bill to limit future specialty license..."
 date: 2020-03-18
 time: 23:33:32
 tweet_id: "1240421105803776000"

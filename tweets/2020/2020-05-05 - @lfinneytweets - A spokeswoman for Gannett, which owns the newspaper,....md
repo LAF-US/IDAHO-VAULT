@@ -1,4 +1,5 @@
 ---
+title: "A spokeswoman for Gannett, which owns the newspaper,..."
 date: 2020-05-05
 time: 18:23:58
 tweet_id: "1257737820971520000"

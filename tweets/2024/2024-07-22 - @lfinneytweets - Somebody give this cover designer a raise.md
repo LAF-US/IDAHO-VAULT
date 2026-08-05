@@ -1,4 +1,5 @@
 ---
+title: "Somebody give this cover designer a raise"
 date: 2024-07-22
 time: 00:21:39
 tweet_id: "1815180370058654009"

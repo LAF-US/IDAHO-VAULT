@@ -1,4 +1,5 @@
 ---
+title: "A Bonner County man pleaded guilty last week to tearing..."
 date: 2020-07-14
 time: 22:25:59
 tweet_id: "1283165877265788928"

@@ -1,4 +1,5 @@
 ---
+title: "Streaming gained a foothold in the early 2010s because it..."
 date: 2024-12-18
 time: 18:22:43
 tweet_id: "1869448220977619171"

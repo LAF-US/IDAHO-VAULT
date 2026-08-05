@@ -1,4 +1,5 @@
 ---
+title: "Disgusting. Richard Sovenski (52, of Hayden, ID) arrested..."
 date: 2018-07-18
 time: 20:32:56
 tweet_id: "1019681447542571008"

@@ -1,4 +1,5 @@
 ---
+title: "RT @RuthBrownNews JFAC members all received a letter from..."
 date: 2024-01-11
 time: 18:19:44
 tweet_id: "1745510821978103968"

@@ -1,4 +1,5 @@
 ---
+title: "Twice a day in Arco, Lost Rivers Medical Center CEO Brad..."
 date: 2020-04-04
 time: 05:13:13
 tweet_id: "1246304798233595905"

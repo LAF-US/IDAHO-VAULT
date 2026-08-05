@@ -1,4 +1,5 @@
 ---
+title: "RT @CBS2Boise Idaho residents asked to 'pay back'..."
 date: 2021-10-01
 time: 22:07:58
 tweet_id: "1444061552546435072"

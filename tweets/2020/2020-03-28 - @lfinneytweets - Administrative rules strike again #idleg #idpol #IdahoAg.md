@@ -1,4 +1,5 @@
 ---
+title: "Administrative rules strike again #idleg #idpol #IdahoAg"
 date: 2020-03-28
 time: 20:08:43
 tweet_id: "1243993440276197382"

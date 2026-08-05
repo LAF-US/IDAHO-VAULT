@@ -1,4 +1,5 @@
 ---
+title: "An even better way to consume this week's @IdahoReports..."
 date: 2024-03-28
 time: 00:07:55
 tweet_id: "1773139922695631046"

@@ -1,4 +1,5 @@
 ---
+title: "INBOX Rep. John Gannon (D-Boise) once again calling for the..."
 date: 2020-07-11
 time: 02:23:40
 tweet_id: "1281776138642046976"

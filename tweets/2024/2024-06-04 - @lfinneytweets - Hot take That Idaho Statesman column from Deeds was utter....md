@@ -1,4 +1,5 @@
 ---
+title: "Hot take That Idaho Statesman column from Deeds was utter..."
 date: 2024-06-04
 time: 01:55:35
 tweet_id: "1797809393477755196"

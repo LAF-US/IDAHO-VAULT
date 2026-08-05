@@ -1,4 +1,5 @@
 ---
+title: "Former Lt. Gov. Loren Leman, an advocate for the repeal..."
 date: 2024-11-19
 time: 04:44:19
 tweet_id: "1858733018569208021"

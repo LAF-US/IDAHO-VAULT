@@ -1,4 +1,5 @@
 ---
+title: "While other companies have voluntarily shut down amidst the..."
 date: 2020-03-19
 time: 20:18:35
 tweet_id: "1240734433335898112"

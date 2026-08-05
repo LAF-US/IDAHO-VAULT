@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports This week from Idaho Reports \u2b07\ufe0f #idpol..."
 date: 2021-07-21
 time: 19:59:20
 tweet_id: "1417937255197409280"

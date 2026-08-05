@@ -1,4 +1,5 @@
 ---
+title: "Waiting on one last senator..."
 date: 2021-11-15
 time: 15:50:06
 tweet_id: "1460273914660016135"

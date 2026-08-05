@@ -1,4 +1,5 @@
 ---
+title: "RT @News_3_Now A new plan is underway with a new irrigation..."
 date: 2023-11-03
 time: 01:08:24
 tweet_id: "1720246514306670709"

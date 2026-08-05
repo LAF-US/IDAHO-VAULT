@@ -1,4 +1,5 @@
 ---
+title: "Why yes I would love to read the draft bill and get ready..."
 date: 2022-08-23
 time: 20:00:44
 tweet_id: "1562167976802930688"

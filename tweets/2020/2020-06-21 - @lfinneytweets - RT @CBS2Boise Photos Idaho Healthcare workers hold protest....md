@@ -1,4 +1,5 @@
 ---
+title: "RT @CBS2Boise Photos Idaho Healthcare workers hold protest..."
 date: 2020-06-21
 time: 03:12:27
 tweet_id: "1274540658179497986"

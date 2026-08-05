@@ -1,4 +1,5 @@
 ---
+title: "RT @DailyBee A deli employee at Winter Ridge Natural Foods..."
 date: 2020-07-17
 time: 02:26:37
 tweet_id: "1283951207426318336"

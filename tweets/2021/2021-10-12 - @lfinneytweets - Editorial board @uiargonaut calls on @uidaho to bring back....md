@@ -1,4 +1,5 @@
 ---
+title: "Editorial board @uiargonaut calls on @uidaho to bring back..."
 date: 2021-10-12
 time: 22:06:05
 tweet_id: "1448047345476640771"

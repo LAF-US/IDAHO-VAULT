@@ -1,4 +1,5 @@
 ---
+title: "I wrote about the budget freeze hearing for @IdahoPubRadio..."
 date: 2020-02-19
 time: 21:40:07
 tweet_id: "1230245706494922752"

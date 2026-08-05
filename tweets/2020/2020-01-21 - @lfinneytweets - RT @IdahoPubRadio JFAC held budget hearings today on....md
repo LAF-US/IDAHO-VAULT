@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio JFAC held budget hearings today on..."
 date: 2020-01-21
 time: 15:55:03
 tweet_id: "1219649616871706625"

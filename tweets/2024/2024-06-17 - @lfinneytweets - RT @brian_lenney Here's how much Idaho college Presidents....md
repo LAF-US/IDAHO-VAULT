@@ -1,4 +1,5 @@
 ---
+title: "RT @brian_lenney Here's how much Idaho college Presidents..."
 date: 2024-06-17
 time: 18:48:27
 tweet_id: "1802775329326653872"

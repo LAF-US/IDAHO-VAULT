@@ -1,4 +1,5 @@
 ---
+title: "New from me on the @IdahoReports blog Sen. David Nelson..."
 date: 2020-11-04
 time: 20:12:36
 tweet_id: "1324082138707226624"

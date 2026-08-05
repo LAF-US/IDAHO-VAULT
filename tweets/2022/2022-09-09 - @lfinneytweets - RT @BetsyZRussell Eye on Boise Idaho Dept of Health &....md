@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Idaho Dept of Health &..."
 date: 2022-09-09
 time: 23:30:32
 tweet_id: "1568381368887046146"

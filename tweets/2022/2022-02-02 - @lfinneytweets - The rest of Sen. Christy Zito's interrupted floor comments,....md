@@ -1,4 +1,5 @@
 ---
+title: "The rest of Sen. Christy Zito's interrupted floor comments,..."
 date: 2022-02-02
 time: 21:25:29
 tweet_id: "1488986957174566913"

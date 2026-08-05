@@ -1,4 +1,5 @@
 ---
+title: "RT @KMVTNews Idaho Democratic Senator Mark Nye announced..."
 date: 2022-02-11
 time: 07:49:25
 tweet_id: "1492043078386864129"

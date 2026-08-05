@@ -1,4 +1,5 @@
 ---
+title: "\u201cDoesn\u2019t that make common sense, @GovernorLittle said of..."
 date: 2020-04-16
 time: 19:11:13
 tweet_id: "1250864339864580096"

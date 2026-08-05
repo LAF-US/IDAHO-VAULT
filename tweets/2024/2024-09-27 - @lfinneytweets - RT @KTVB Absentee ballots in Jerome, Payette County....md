@@ -1,4 +1,5 @@
 ---
+title: "RT @KTVB Absentee ballots in Jerome, Payette County..."
 date: 2024-09-27
 time: 16:14:56
 tweet_id: "1839700260849119580"

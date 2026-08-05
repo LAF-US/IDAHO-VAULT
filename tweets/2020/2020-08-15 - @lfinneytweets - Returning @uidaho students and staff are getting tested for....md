@@ -1,4 +1,5 @@
 ---
+title: "Returning @uidaho students and staff are getting tested for..."
 date: 2020-08-15
 time: 17:15:49
 tweet_id: "1294684231302434816"

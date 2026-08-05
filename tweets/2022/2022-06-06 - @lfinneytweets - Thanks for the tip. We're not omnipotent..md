@@ -1,4 +1,5 @@
 ---
+title: "Thanks for the tip. We're not omnipotent."
 date: 2022-06-06
 time: 20:18:57
 tweet_id: "1533906309719871489"

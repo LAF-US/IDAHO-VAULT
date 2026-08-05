@@ -1,4 +1,5 @@
 ---
+title: "RT @SPRlocalnews New voting maps to be drawn by state..."
 date: 2021-11-16
 time: 21:21:30
 tweet_id: "1460719701818937344"

@@ -1,4 +1,5 @@
 ---
+title: "On Wednesday, the House and Senate both adjourned until..."
 date: 2020-05-14
 time: 18:46:31
 tweet_id: "1261004984008667136"

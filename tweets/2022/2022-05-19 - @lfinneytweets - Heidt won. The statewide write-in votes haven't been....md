@@ -1,4 +1,5 @@
 ---
+title: "Heidt won. The statewide write-in votes haven't been..."
 date: 2022-05-19
 time: 03:32:01
 tweet_id: "1527129925852876801"

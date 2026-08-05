@@ -1,4 +1,5 @@
 ---
+title: "Omicron accounted for 88.39% of identified variant cases in..."
 date: 2022-01-13
 time: 18:03:32
 tweet_id: "1481688379397869569"

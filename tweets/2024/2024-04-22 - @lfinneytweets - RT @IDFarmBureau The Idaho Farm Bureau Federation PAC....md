@@ -1,4 +1,5 @@
 ---
+title: "RT @IDFarmBureau The Idaho Farm Bureau Federation PAC..."
 date: 2024-04-22
 time: 18:59:06
 tweet_id: "1782484291471147039"

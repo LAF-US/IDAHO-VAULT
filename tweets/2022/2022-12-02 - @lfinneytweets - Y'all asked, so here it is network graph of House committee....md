@@ -1,4 +1,5 @@
 ---
+title: "Y'all asked, so here it is network graph of House committee..."
 date: 2022-12-02
 time: 18:19:52
 tweet_id: "1598743768433594368"

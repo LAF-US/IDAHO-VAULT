@@ -1,4 +1,5 @@
 ---
+title: "After two hours, education chair Sen. Dave Lent estimated..."
 date: 2023-02-15
 time: 02:44:15
 tweet_id: "1625687405637541889"

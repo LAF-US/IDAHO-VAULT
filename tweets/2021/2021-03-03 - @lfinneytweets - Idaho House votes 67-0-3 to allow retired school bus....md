@@ -1,4 +1,5 @@
 ---
+title: "Idaho House votes 67-0-3 to allow retired school bus..."
 date: 2021-03-03
 time: 18:00:00
 tweet_id: "1367172923002212353"

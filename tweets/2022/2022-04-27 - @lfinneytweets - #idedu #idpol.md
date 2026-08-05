@@ -1,4 +1,5 @@
 ---
+title: "#idedu #idpol"
 date: 2022-04-27
 time: 18:13:40
 tweet_id: "1519379265547956224"

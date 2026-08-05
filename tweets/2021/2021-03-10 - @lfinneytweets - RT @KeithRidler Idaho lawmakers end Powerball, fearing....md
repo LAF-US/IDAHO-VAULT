@@ -1,4 +1,5 @@
 ---
+title: "RT @KeithRidler Idaho lawmakers end Powerball, fearing..."
 date: 2021-03-10
 time: 22:16:51
 tweet_id: "1369774277151449091"

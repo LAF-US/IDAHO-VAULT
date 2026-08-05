@@ -1,4 +1,5 @@
 ---
+title: "RT @NateBrownNews Plan's on here #idpol #idahoCovid19..."
 date: 2020-04-23
 time: 18:44:55
 tweet_id: "1253394436412764161"

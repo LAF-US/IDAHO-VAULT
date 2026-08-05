@@ -1,4 +1,5 @@
 ---
+title: "Income tax bill HB 436 moves to the House floor on a voice..."
 date: 2022-01-18
 time: 17:17:28
 tweet_id: "1483488723798876162"

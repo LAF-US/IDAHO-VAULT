@@ -1,4 +1,5 @@
 ---
+title: "\u201cI don\u2019t think we\u2019ll be in a hurry to hear any of them..."
 date: 2021-01-27
 time: 00:31:17
 tweet_id: "1354225432011304963"

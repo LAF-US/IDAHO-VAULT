@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Podcast Episode No Public Funds for..."
 date: 2022-09-28
 time: 20:09:10
 tweet_id: "1575216062832218113"

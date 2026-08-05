@@ -1,4 +1,5 @@
 ---
+title: "RT @KLEWNews 0% contained, evacuation orders remain in place"
 date: 2021-07-12
 time: 16:52:57
 tweet_id: "1414628862114230279"

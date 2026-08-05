@@ -1,4 +1,5 @@
 ---
+title: "Latest on Sandpoint gun case from @DailyBee Bonner County..."
 date: 2020-08-06
 time: 19:14:20
 tweet_id: "1291452565222068224"

@@ -1,4 +1,5 @@
 ---
+title: "(@AP) High housing prices in north Idaho are making it..."
 date: 2021-07-07
 time: 19:32:25
 tweet_id: "1412857050468556800"

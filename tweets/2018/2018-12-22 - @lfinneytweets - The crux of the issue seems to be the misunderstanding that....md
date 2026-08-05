@@ -1,4 +1,5 @@
 ---
+title: "The crux of the issue seems to be the misunderstanding that..."
 date: 2018-12-22
 time: 19:29:20
 tweet_id: "1076560336931540993"

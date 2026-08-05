@@ -1,4 +1,5 @@
 ---
+title: "This chart is cluttered, difficult to use, and overall a..."
 date: 2022-12-12
 time: 23:18:11
 tweet_id: "1602442722861674497"

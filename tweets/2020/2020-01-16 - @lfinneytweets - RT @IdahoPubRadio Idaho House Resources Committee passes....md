@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio Idaho House Resources Committee passes..."
 date: 2020-01-16
 time: 06:42:31
 tweet_id: "1217698627704905728"

@@ -1,4 +1,5 @@
 ---
+title: "Idaho featured heavily in this piece on National Guard..."
 date: 2021-07-07
 time: 19:11:09
 tweet_id: "1412851701250330626"

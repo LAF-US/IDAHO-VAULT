@@ -1,4 +1,5 @@
 ---
+title: "Much gratitude to @RuthBrownNews for doing most of the work..."
 date: 2021-12-01
 time: 00:14:13
 tweet_id: "1465836596528226309"

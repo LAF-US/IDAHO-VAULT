@@ -1,4 +1,5 @@
 ---
+title: "Not calling names by putting Vickaryous in the JBS camp btw..."
 date: 2024-05-22
 time: 18:33:46
 tweet_id: "1793349551774224397"

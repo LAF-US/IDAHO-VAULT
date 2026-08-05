@@ -1,4 +1,5 @@
 ---
+title: "Loved this sentence It\u2019s worth being pedantic, and..."
 date: 2020-04-27
 time: 16:59:31
 tweet_id: "1254817466116534274"

@@ -1,4 +1,5 @@
 ---
+title: "Most recently a Neo-Nazi who racked up a massive FCC fine..."
 date: 2020-06-06
 time: 16:25:22
 tweet_id: "1269304384820662272"

@@ -1,4 +1,5 @@
 ---
+title: "Dorothy Moon is easily reelected as chair of the Idaho GOP...."
 date: 2024-06-15
 time: 23:34:32
 tweet_id: "1802122550430109742"

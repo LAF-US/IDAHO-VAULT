@@ -1,4 +1,5 @@
 ---
+title: "INBOX Gov. Brad Little appoints Bellevue mayor Ned Burns to..."
 date: 2021-12-23
 time: 17:53:46
 tweet_id: "1474075775196303365"

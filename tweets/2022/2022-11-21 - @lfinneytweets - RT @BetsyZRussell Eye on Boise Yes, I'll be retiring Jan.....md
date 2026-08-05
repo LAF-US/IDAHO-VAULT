@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Yes, I'll be retiring Jan...."
 date: 2022-11-21
 time: 04:07:51
 tweet_id: "1594543084721012737"

@@ -1,4 +1,5 @@
 ---
+title: "Some people in this room have called me the leader of a..."
 date: 2024-06-17
 time: 17:49:47
 tweet_id: "1802760566282608667"
