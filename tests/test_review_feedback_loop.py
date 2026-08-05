@@ -194,9 +194,10 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertTrue(ready_state["eligible_for_auto_merge"])
 
     def test_nine_cell_grid_routing_is_the_single_source(self) -> None:
-        # The risk grid (WITNESS-THE-KEYS-ARE-THE-LEVERS-2026-06-21) is DERIVED from this
-        # engine, not a hand-assigned table: the (filetype, filedepth) label pair routes each PR
-        # into exactly one of three lanes. This pins all nine cells so the settled grid cannot
+        # The risk grid (WITNESS-THE-KEYS-ARE-THE-LEVERS-2026-06-21): the
+        # (filetype, filedepth) label pair routes each PR into exactly one of three lanes.
+        # `grid` below is a hand-assigned expectation table asserted against the engine — it
+        # is not derived from it. This pins all nine cells so the settled grid cannot
         # silently drift. Lanes:
         #   auto            : —/—  → eligible on grace alone (no review lane)
         #   review-hold     : any fired flag with filedepth != nope → eligible once its review lane
