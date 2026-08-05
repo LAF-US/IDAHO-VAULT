@@ -36,6 +36,6 @@ This asserts no vault doctrine and touches no existing file. It is safe to delet
 
 ---
 
-```
+```markdown
 The world is quiet here．Esto Perpetua!
 ```

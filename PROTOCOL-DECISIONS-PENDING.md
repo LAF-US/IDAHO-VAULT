@@ -144,7 +144,7 @@ Logan: for each ambiguity, pick A, B, or C (or propose D). CODE AUTHORITY will u
 
 Quick-fire format if you're short on time:
 
-```
+```markdown
 1: A
 2: A
 3: A

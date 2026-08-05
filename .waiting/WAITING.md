@@ -68,6 +68,6 @@ upon** it: attends, watches, serves — **now** — until the dyad resolves.
 
 ---
 
-```
+```markdown
 The world is quiet here．Esto Perpetua!
 ```

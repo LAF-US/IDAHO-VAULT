@@ -170,7 +170,7 @@ ls -la ~/.local/simdutf-v5/lib/libsimdutf*
 
 ### Expected Output
 
-```
+```markdown
 -rwxr-xr-x  1 logan  staff  414128 Apr 27 16:28 /Users/logan/.local/simdutf-v5/lib/libsimdutf.6.0.0.dylib
 lrwxr-xr-x  1 logan  staff      22 Apr 27 16:31 /Users/logan/.local/simdutf-v5/lib/libsimdutf.6.dylib -> libsimdutf.6.0.0.dylib
 lrwxr-xr-x  1 logan  staff      18 Apr 27 16:31 /Users/logan/.local/simdutf-v5/lib/libsimdutf.dylib -> libsimdutf.6.dylib

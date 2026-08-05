@@ -28,6 +28,6 @@ It is **inert** — flagged, not yet handled. Finer details are withheld from th
 
 ---
 
-```
+```markdown
 The world is quiet here．Esto Perpetua!
 ```

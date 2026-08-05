@@ -19,7 +19,7 @@ There are three ways to integrate with OpenRouter, depending on how much control
 | **[Client SDKs](https://openrouter.ai/docs/quickstart#using-the-client-sdks)** | Type-safe model calls with minimal overhead |
 | **[Agent SDK](https://openrouter.ai/docs/quickstart#using-the-agent-sdk)** | Building agents with tool use, loops, and state |
 
-```
+```markdown
 Read https://openrouter.ai/skills/create-agent/SKILL.md and follow the instructions to build an agent using OpenRouter.
 ```
 
@@ -35,7 +35,7 @@ The most direct way to use OpenRouter. Send standard HTTP requests to the `/api/
 
 You can use the interactive [Request Builder](https://openrouter.ai/request-builder) to generate OpenRouter API requests in the language of your choice.
 
-```
+```markdown
 1import requests
 2import json
 3
@@ -68,13 +68,13 @@ The [Client SDKs](https://openrouter.ai/docs/client-sdks/overview) wrap the Open
 
 First, install the SDK:
 
-```
+```markdown
 $npm install @openrouter/sdk
 ```
 
 Then use it in your code:
 
-```
+```markdown
 1import OpenRouter from '@openrouter/sdk';
 2
 3const client = new OpenRouter({
@@ -108,7 +108,7 @@ The [Agent SDK](https://openrouter.ai/docs/agent-sdk/overview) (`@openrouter/age
 
 Install the package:
 
-```
+```markdown
 $npm install @openrouter/agent
 ```
 
@@ -151,7 +151,7 @@ See the full [Agent SDK documentation](https://openrouter.ai/docs/agent-sdk/over
 
 You can also use the OpenAI SDK pointed at OpenRouter as a drop-in replacement. This is useful if you have existing code built on the OpenAI SDK and want to access OpenRouter’s model catalog without changing your code structure.
 
-```
+```markdown
 1import OpenAI from 'openai';
 2
 3const openai = new OpenAI({

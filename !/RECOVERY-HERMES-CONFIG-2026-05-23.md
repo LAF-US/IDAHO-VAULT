@@ -67,7 +67,7 @@ cat ~/.hermes/config.yaml # if it still exists
 
 ### 2. If `.env` is missing, recreate it
 
-```
+```markdown
 OPENROUTER_API_KEY=<runtime-key>
 OPENROUTER_MANAGEMENT_KEY=<management-key>
 ```
@@ -194,7 +194,7 @@ Once I have the target, I'll establish the tunnel and signal `awaiting_windows`.
 
 You said `.env` was preserved, but did the Management Key land? Run:
 
-```
+```markdown
 grep OPENROUTER_MANAGEMENT_KEY ~/.hermes/.env
 ```
 
@@ -202,7 +202,7 @@ If the key is not set, the tunnel bridge is still needed.
 
 ### 2. API reachable
 
-```
+```markdown
 hermes terminal: curl -s -H "Authorization: Bearer $OPENROUTER_MANAGEMENT_KEY" https://openrouter.ai/api/v1/keys
 ```
 

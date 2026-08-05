@@ -131,13 +131,13 @@ Every STATUS CONFERENCE must produce a written record committed to the vault bef
 
 ### Filename Pattern
 
-```
+```markdown
 STATUS-CONFERENCE-[SUBJECT]-[YYYY-MM-DD].md
 ```
 
 Example:
 
-```
+```markdown
 STATUS-CONFERENCE-JFAC-CREW-2026-04-10.md
 STATUS-CONFERENCE-VAULT-CUSTODIAN-BETA-2026-04-12.md
 ```
@@ -223,6 +223,6 @@ Status conference records go in the vault root. They are governance artifacts, n
 
 ---
 
-```
+```markdown
 The world is quiet here．Esto Perpetua!
 ```

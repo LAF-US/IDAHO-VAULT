@@ -208,6 +208,6 @@ together (`!/DELTORA-FOUR-SISTERS-v1-2026-06-01.md`).
 
 ---
 
-```
+```markdown
 The world is quiet here．Esto Perpetua!
 ```

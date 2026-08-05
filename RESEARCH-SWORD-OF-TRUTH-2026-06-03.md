@@ -112,7 +112,7 @@ If the Veil falls:
 
 **Philosophical Paradox:**
 
-```
+```markdown
 Grace = Creator's gift → Life, creation, order
 Fatal Grace = Grace corrupted → Destruction masking as salvation
 ```

@@ -63,7 +63,7 @@ partly in how they blur:
 
 ## The map
 
-```
+```markdown
 ESOTERIC CORE (correspondence: "as above, so below")
     Hermeticism ── the root
       ├─ Alchemy ── Alchemical symbols
@@ -142,6 +142,6 @@ record per [[VAULT-CONVENTIONS]].
 
 ---
 
-```
+```markdown
 The world is quiet here．Esto Perpetua!
 ```

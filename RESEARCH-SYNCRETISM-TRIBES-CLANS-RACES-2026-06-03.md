@@ -86,7 +86,7 @@ These patterns are **not decorative references** — they are **operational temp
 
 **The Model:**
 
-```
+```markdown
 EXTERNAL CANON (Factual Nodes)
 ├── Djinn: Marid, Ifrit/Afrit, Jinn/Jann
 ├── Zelda: Sheikah, Hylians, Gorons, Zora, Gerudo, Rito, Korok
@@ -578,7 +578,7 @@ From `2026-05-03 - Children of the Lamp Tribes vs Bartimaeus Spirits.md`:
 
 **The Model:**
 
-```
+```markdown
 EXTERNAL CANON LAYER (Factual Nodes - Do Not Modify)
 ├── Djinn System
 │   ├── Marid (Good, Council)

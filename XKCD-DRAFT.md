@@ -50,14 +50,14 @@ Current guidance: use plain language, existing vault notes, and Logan's explicit
 
 **Format:**
 
-```
+```markdown
 PING → [agent name]
 PONG ← [agent name]: [priority] | [blocker or "clear"] | [one-line status]
 ```
 
 **Example:**
 
-```
+```markdown
 PING → STORY: JFAC
 PONG ← STORY: JFAC: CCA deadline 3/18 | 5 quotes pending audio | quiet mode
 ```
@@ -80,7 +80,7 @@ PONG ← STORY: JFAC: CCA deadline 3/18 | 5 quotes pending audio | quiet mode
 
 **Format:**
 
-```
+```markdown
 CLAIM: !ADMIN/Constitution.md — [agent name] — [reason]
 RELEASE: !ADMIN/Constitution.md — [agent name]
 ```
@@ -101,7 +101,7 @@ RELEASE: !ADMIN/Constitution.md — [agent name]
 
 **Format:**
 
-```
+```markdown
 COLLISION CHECK: wikilink_pass.py
   WRITES: GOVERNMENTS/**, SOURCES/**, TOPICS/**
   CONFLICTS WITH: idaho_leg_scraper.py (writes GOVERNMENTS/IDAHO - LEGISLATIVE/**)
@@ -120,7 +120,7 @@ COLLISION CHECK: wikilink_pass.py
 
 - A HANDOFF must contain exactly four sections:
 
-```
+```markdown
 HANDOFF: [source] → [destination]
 DATE: YYYY-MM-DD
 
@@ -155,7 +155,7 @@ DATE: YYYY-MM-DD
 
 **States:**
 
-```
+```markdown
 HOT    — active, producing output
 WARM   — idle but has context, can resume
 COLD   — no output for >1 work session, pending items should be redistributed

@@ -90,6 +90,6 @@ A prior Claude instance (not the current Claude Code, not the Abhorsen). A temp 
 
 ---
 
-```
+```markdown
 The world is quiet here．Esto Perpetua!
 ```

@@ -99,6 +99,6 @@ The books hold these **open on purpose**:
 
 ---
 
-```
+```markdown
 The world is quiet here．Esto Perpetua!
 ```

@@ -81,7 +81,7 @@ The Paradigm funding signals this as a decentralized infrastructure play, not me
 
 ### The Core Loop
 
-```
+```markdown
 do → learn → improve
 ```
 

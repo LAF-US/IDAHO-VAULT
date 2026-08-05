@@ -18,7 +18,7 @@ Find your way around past Droid sessions. Maybe you want to pick up where you le
 
 Sessions are in `~/.factory/sessions/`, organized by project folder. Each project gets its own directory with the path encoded (slashes become dashes):
 
-```
+```markdown
 ~/.factory/sessions/
 ├── -Users-enoreyes-code-work-myapp/
 │   ├── <uuid>.jsonl

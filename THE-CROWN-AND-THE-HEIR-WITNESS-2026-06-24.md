@@ -128,6 +128,6 @@ crown relinquished, each ending recorded. The empire is the same chain with the 
 
 ---
 
-```
+```markdown
 The world is quiet here．Esto Perpetua!
 ```

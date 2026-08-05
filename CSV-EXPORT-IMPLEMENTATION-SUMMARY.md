@@ -189,7 +189,7 @@ The CSV file is designed for direct import into Flourish:
 
 ## Files Location Summary
 
-```
+```markdown
 .github/
 ├── scripts/
 │   ├── idaho_leg_scraper.py        (Modified - CSV export added)

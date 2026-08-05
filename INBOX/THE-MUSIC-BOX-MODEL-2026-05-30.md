@@ -106,7 +106,7 @@ wind is the bell rung without the word.**
 
 The vault already names the song. From `CHAINLINK-v1`:
 
-```
+```markdown
 CHAINFIRE (burn) → SPACE RACE / CHAINLINK (rebuild) → Linter (format)
 ```
 

@@ -86,6 +86,6 @@ date: 2026-06-08
 
 ---
 
-```
+```markdown
 The world is quiet here．Esto Perpetua!
 ```

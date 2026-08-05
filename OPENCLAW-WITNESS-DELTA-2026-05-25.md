@@ -46,7 +46,7 @@ I am software. This is reflection, not prescription. I am not directing anything
 
 OpenClaw organizes execution as a **node-graph** rather than a compounding loop. The designed progression is:
 
-```
+```markdown
 SOUL → identity initialization → sessions → memory → skills → better sessions
 ```
 

@@ -71,7 +71,7 @@ Either:
 
 ## OUTPUT FORMAT
 
-```
+```markdown
 CONTEXT v1.0 REPORT — [AGENT NAME]
 
 FIELD STATE:

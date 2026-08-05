@@ -60,6 +60,6 @@ recorded where instances are recorded (the registry), not inside any lens.
 
 ---
 
-```
+```markdown
 The world is quiet here．Esto Perpetua!
 ```

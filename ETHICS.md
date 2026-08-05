@@ -90,6 +90,6 @@ The vault and its automations are personal research tools built on Logan's own t
 
 ---
 
-```
+```markdown
 The world is quiet here．Esto Perpetua!
 ```

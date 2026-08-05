@@ -39,7 +39,7 @@ Rewrite-specific skills are invoked at different phases of the standard workflow
 
 ## Rewrite Workflow
 
-```
+```markdown
 ┌────────────────────────────────────────────────────────────────Ŀ
 │                        REWRITE MODE                              │
 ├────────────────────────────────────────────────────────────────Ĵ
@@ -125,7 +125,7 @@ Rewrite-specific skills are invoked at different phases of the standard workflow
 
 ### Struts → Spring Boot Rewrite
 
-```
+```markdown
 Source (Struts)              Target (Spring Boot)
 ────────────────             ───────────────────
 ActionSupport         →      @RestController / @Controller
@@ -137,7 +137,7 @@ ActionForm            →      @RequestBody / @ModelAttribute
 
 ### EJB → Spring Boot Rewrite
 
-```
+```markdown
 Source (EJB)                 Target (Spring Boot)
 ────────────────             ───────────────────
 @Stateless EJB        →      @Service

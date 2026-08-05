@@ -174,7 +174,7 @@ This document consolidates all agented plugin documentation, surfaces the discre
 
 ## Triage Route
 
-```
+```markdown
 
 START
 

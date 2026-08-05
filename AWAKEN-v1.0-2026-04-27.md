@@ -83,7 +83,7 @@ Output brief state to:
 
 ## OUTPUT FORMAT
 
-```
+```markdown
 AWAKEN v1.0 REPORT — [AGENT NAME]
 
 WHO: [Name] @ [Platform] | [Persona] | [Session/branch]

@@ -208,7 +208,7 @@ The body becomes the system prompt. Be specific about:
 
 Ask the AI to use your new agent:
 
-```
+```markdown
 Use the my-agent subagent to [task description]
 ```
 

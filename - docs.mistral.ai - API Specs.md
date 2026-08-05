@@ -299,7 +299,7 @@ Successful Response
 
 Test the endpoints **live**
 
-```
+```markdown
 import { Mistral } from "@mistralai/mistralai";
 
 const mistral = new Mistral({
@@ -323,7 +323,7 @@ async function run() {
 run();
 ```
 
-```
+```markdown
 import { Mistral } from "@mistralai/mistralai";
 
 const mistral = new Mistral({
@@ -347,7 +347,7 @@ async function run() {
 run();
 ```
 
-```
+```markdown
 from mistralai import Mistral
 import os
 
@@ -366,7 +366,7 @@ with Mistral(
     print(res)
 ```
 
-```
+```markdown
 from mistralai import Mistral
 import os
 
@@ -385,7 +385,7 @@ with Mistral(
     print(res)
 ```
 
-```
+```markdown
 curl https://api.mistral.ai/v1/chat/completions \
  -X POST \
  -H 'Authorization: Bearer YOUR_APIKEY_HERE' \
@@ -400,7 +400,7 @@ curl https://api.mistral.ai/v1/chat/completions \
 }'
 ```
 
-```
+```markdown
 curl https://api.mistral.ai/v1/chat/completions \
  -X POST \
  -H 'Authorization: Bearer YOUR_APIKEY_HERE' \
@@ -419,7 +419,7 @@ curl https://api.mistral.ai/v1/chat/completions \
 
 200 (text/event-stream)
 
-```
+```markdown
 {
   "choices": [
     {
@@ -436,7 +436,7 @@ curl https://api.mistral.ai/v1/chat/completions \
 }
 ```
 
-```
+```markdown
 {
   "choices": [
     {
@@ -453,11 +453,11 @@ curl https://api.mistral.ai/v1/chat/completions \
 }
 ```
 
-```
+```markdown
 null
 ```
 
-```
+```markdown
 null
 ```
 

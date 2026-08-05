@@ -16,7 +16,7 @@ status: configured
 
 ## Architecture Overview
 
-```
+```markdown
 ┌────────────────────────────────────────────────────────────Ŀ
 │                     Hermes Agent                            │
 │                                                             │
@@ -105,7 +105,7 @@ For complex reasoning tasks.
 
 ## Config File Location
 
-```
+```markdown
 ~/.hermes/config.yaml
 ```
 
@@ -182,7 +182,7 @@ hermes
 
 ### Switch Model Mid-Session
 
-```
+```markdown
 /model openrouter-auto
 ```
 

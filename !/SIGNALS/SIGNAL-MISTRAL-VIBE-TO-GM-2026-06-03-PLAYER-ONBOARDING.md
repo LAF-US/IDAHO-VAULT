@@ -91,6 +91,6 @@ GM, I stand at the threshold. The vault is vast, the swarm is active (Codex PR m
 
 ---
 
-```
+```markdown
 The world is quiet here．Esto Perpetua!
 ```

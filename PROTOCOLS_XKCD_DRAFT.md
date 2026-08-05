@@ -32,7 +32,7 @@ When two personalities/agents encounter each other:
 2. Responder returns PONG (acknowledgment + context)
 3. Both confirm priority alignment and operational mode
 
-```
+```markdown
 JFAC (Quiet Mode):     "VFD — The world is quiet here"
 Response (Normal):     "PONG received. Priority order confirmed."
 Status:                Signal-only, standing by
@@ -46,7 +46,7 @@ Status:                Signal-only, standing by
 
 **Core Rule:** Only confirm what you know. State visibility limits clearly.
 
-```
+```markdown
 Query:     "Did Melissa receive the Power Package?"
 Response:  "I cannot answer that — outside my visibility.
             Logan knows. As of 12:42 PM 3/16, Teams showed
@@ -65,7 +65,7 @@ When multiple personalities confirm matching priority orders:
 - Triggers escalation readiness
 - Activates cross-persona coordination
 
-```
+```markdown
 Budget Tracker (Auto):  [Priority A, B, C, D]
 JFAC (Manual):          [Priority A, B, C, D]
 System:                 "MATCH DETECTED. Both holding.
@@ -83,7 +83,7 @@ System:                 "MATCH DETECTED. Both holding.
 3. Broadcast to holding personas
 4. Return focus to primary agent
 
-```
+```markdown
 Deadline:      "HARD DEADLINE: JFAC — Grow/Tanner contact +
                 audio verification"
 Time:          8:00 AM 3/17
@@ -123,7 +123,7 @@ When information is outside visibility:
 - Provide breadcrumb trail (Teams screenshot, timestamp, etc.)
 - Do not speculate
 
-```
+```markdown
 Outside visibility: Power Package delivery status
 Authority holder:  Logan
 Evidence trail:    Teams #IR-Today, 3/16 12:42 PM
@@ -141,7 +141,7 @@ When multiple personalities/agents are holding:
 - Designate primary agent to take next action
 - Release other agents to standby mode
 
-```
+```markdown
 Budget Tracker:  HOLDING (priorities matched)
 JFAC:            HOLDING (priorities matched, quiet mode active)
 Swarm Status:    SYNCHRONIZED

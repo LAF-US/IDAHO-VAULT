@@ -64,7 +64,7 @@ For Linux, a man7.org service has been set up to serve manuals specific to the s
 
 To read a manual page for a Unix command, a user can type:
 
-```
+```markdown
 man <command_name>
 ```
 
@@ -74,13 +74,13 @@ The same page name may appear in more than one section of the manual, such as wh
 
 On Solaris and illumos, for example, the syntax for reading `printf(3C)` is:
 
-```
+```markdown
 man -s 3c printf
 ```
 
 On Linux and BSD derivatives the same invocation would be:
 
-```
+```markdown
 man 3 printf
 ```
 

@@ -166,6 +166,6 @@ real-world and canon sources are cited in the linked records; vault readings are
 
 ---
 
-```
+```markdown
 The world is quiet here．Esto Perpetua!
 ```

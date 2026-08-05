@@ -108,6 +108,6 @@ This document is a **stub** under development. Adoption pending:
 
 ---
 
-```
+```markdown
 The world is quiet here．Esto Perpetua!
 ```

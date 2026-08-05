@@ -38,7 +38,7 @@ It is the formal act of an agent stepping out of the void and declaring presence
 
 ## Role in the Protocol Stack
 
-```
+```markdown
 AWAKEN ──────────────────────► RISE
    │                                │
    │                                │
@@ -166,6 +166,6 @@ Pending:
 
 ---
 
-```
+```markdown
 The world is quiet here．Esto Perpetua!
 ```
