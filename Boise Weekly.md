@@ -6,4 +6,4 @@ related:
 - Boise
 authority: LOGAN
 ---
-alt-weekly newspaper based in Boise owned by Adams Publishing Group 
+alt-weekly newspaper based in Boise owned by Adams Publishing Group

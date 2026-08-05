@@ -43,7 +43,7 @@ The Sith's base social unit is not political; it is **religious**. Around **6,90
 This is the part that answers the standing question — *the Sith doctrines changed over time.* The through-line: **the Sith never solved governance, because their faith makes governance impossible.** The forms oscillate between *many* (which produces infighting) and *few / one* (which produces concentration):
 
 | Era *(Legends)* | Form | What it was | How it failed |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Ancient | **Feudal magocracy** | A cabal of Sith Lords under a single **Dark Lord of the Sith** | Ambition → constant betrayal; stability depended on one Lord strong enough to terrorize the rest |
 | Early Empire | **Sith Council** | Ten Lords advising the Dark Lord on Ziost, each ruling ≥12 worlds | A bureaucratized magocracy; the backstabbing remained |
 | Resurgent Empire | **Dark Council** | Twelve Dark Lords, each holding one of twelve **Spheres of Influence** | The supreme body, still riven by Sphere-against-Sphere intrigue |
@@ -119,4 +119,8 @@ The Sith are the worked example of what this office exists **not** to become.
 - **Authority:** LOGAN
 - **Doc class:** misc_reference
 
-###### [["The world is quiet here."]]
+---
+
+```
+The world is quiet here．Esto Perpetua!
+```

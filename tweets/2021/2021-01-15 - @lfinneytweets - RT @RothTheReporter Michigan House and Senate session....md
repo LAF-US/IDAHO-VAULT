@@ -21,6 +21,6 @@ related:
 RT @RothTheReporter: Michigan House and Senate session cancelled next week due to credible threats. #MILeg https://t.co/UjNYThaQFR
 
 ## Media
-- ![](https://pbs.twimg.com/media/Ery1pAuWMAMgCFv.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/Ery1pAuWMAMgCFv.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1350156507317297152)

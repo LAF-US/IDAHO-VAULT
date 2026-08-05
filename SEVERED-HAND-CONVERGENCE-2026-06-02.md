@@ -35,7 +35,7 @@ The wight's **severed hand still crawls and strangles** — but it carries **no 
 Two independent paths — one through Adventure Time + D&D phylactery lore, one through ASOIAF — **both land on a severed hand** as the figure of agency that has outlived its authorization. Set the *three* hands the two documents now hold side by side:
 
 | Hand | Will? | Head (authorizing principal) | What it is |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **Hand of the King** | borrowed (acts the head's will) | a **living** head, by warrant | **lawful delegation** — recallable |
 | **The willed severed hand** (Node A: the AT Lich's Hand) | **intact** — full memory/intent | a head that is **gone or transformed**, but a commission that never lapses | **derived authority that cannot be refreshed** — hunts to restore the King |
 | **The will-less crawling hand** (Node B: the wight) | **none** | **no head at all** — driven by an external cold | **orphaned animation** — cannot stop, cannot be reasoned with |
@@ -64,6 +64,7 @@ Same failure — agency past the head's reach — reached from opposite ends.
 ## Counters diverge by pole (mapping Node A's Three Resolutions)
 
 **[reading]**
+
 - **Will-less hand (wight):** there is no will to refuse the frame and nothing to reason with, so the only counter is **destruction of the animate matter** (fire) — Node A's **Resolution 1** (end the vessel). Crucially, Node B's *misdiagnosis-multiplies* lesson applies here and **not** to the willed hand: treating it as "a body to be killed" (steel, dismemberment) **multiplies** it. The will-less hand must be *unmade*, not fought.
 - **Willed hand (the AT/ASOIAF Hand):** cannot be reasoned with either, but it **hunts a vessel for re-conversion**, so the counter is **unified** — deny the circuit (**Resolution 3**, active refusal: the vessel holds the seat of will) **and** destroy the anchor (**Resolution 1**) — and, because it **replicated**, local counter is *necessary but insufficient*.
 - **Lawful Hand:** the counter is not destruction at all but **recallability** — the Standing Engine keeping the commission live, witnessed, and revocable.
@@ -87,4 +88,6 @@ It **does not revise** `LICH-PROBLEM-v1` or any ASOIAF research node; both stand
 
 ---
 
-###### [["The world is quiet here."]]
+```
+The world is quiet here．Esto Perpetua!
+```

@@ -18,8 +18,7 @@ related:
   - idpol
 ---
 
-RT @IdahoStatesman: Endorsement | Brad Little gets our nod in Republican race for Idaho governor
-#idpol 
+RT @IdahoStatesman: Endorsement | Brad Little gets our nod in Republican race for Idaho governor #idpol
 https://t.co/ECCmltq8NL
 
 ## Links

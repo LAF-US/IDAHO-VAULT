@@ -56,6 +56,7 @@ public class UserController {
 ```
 
 **Wildcard mapping conversion:**
+
 - `action/*` → Multiple `@GetMapping` methods or `@PathVariable`
 - `{1}` parameter → `@PathVariable` or separate methods
 
@@ -72,6 +73,7 @@ public class UserController {
 **Steps:**
 
 1. **Remove Struts filter (DELETE from web.xml or delete file):**
+
 ```xml
 <!-- DELETE -->
 <filter>
@@ -84,7 +86,8 @@ public class UserController {
 </filter-mapping>
 ```
 
-2. **Convert custom filters to Spring beans:**
+1. **Convert custom filters to Spring beans:**
+
 ```java
 @Component
 public class MyFilter implements Filter {
@@ -110,7 +113,8 @@ public class FilterConfig {
 }
 ```
 
-3. **Convert listeners to Spring:**
+1. **Convert listeners to Spring:**
+
 ```java
 // Context listener → @EventListener or ApplicationListener
 @Component

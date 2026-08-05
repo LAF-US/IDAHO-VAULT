@@ -11,6 +11,7 @@ related:
 **Primary:** Mr. Trouble-Bubble Curtis Gonzalez-Finney the Doodle
 
 **Lineage:**
+
 - **Parents:** Ally and Prince
 - **Siblings:** Teddy, Osito, Peaches
 - **House:** GONZALEZ-FINNEY
@@ -19,4 +20,7 @@ related:
 **Profile:** White poodle pup with curly coat and observant co-pilot energy.
 
 ---
-###### "The world is quiet here."
+
+```
+The world is quiet here．Esto Perpetua!
+```

@@ -16,9 +16,9 @@ related:
   - idpol
 ---
 
-#idpol https://t.co/VSPCMv2TCR
+\#idpol https://t.co/VSPCMv2TCR
 
 ## Media
-- ![](https://pbs.twimg.com/media/E4XfrPTVcAAKwZf.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/E4XfrPTVcAAKwZf.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1406776444273848320)

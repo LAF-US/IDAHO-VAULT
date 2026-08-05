@@ -21,9 +21,9 @@ The account @realDonaldTrump has been permanently suspended under Twitter's Glor
 - https://x.com/Safety/status/1347684877634838528
 
 ## Media
-- ![](https://pbs.twimg.com/media/ErP0kY3UUAAyOFW.jpg)
-- ![](https://pbs.twimg.com/media/ErP0kkEUYAEDsdN.jpg)
-- ![](https://pbs.twimg.com/media/ErP0kwHUUAEbp17.jpg)
-- ![](https://pbs.twimg.com/media/ErP0k8jVEAAuoOK.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/ErP0kY3UUAAyOFW.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/ErP0kkEUYAEDsdN.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/ErP0kwHUUAEbp17.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/ErP0k8jVEAAuoOK.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1347689631106560001)

@@ -70,7 +70,7 @@ its type-number and its constituent motif-codes.
 ATU divides all tale-types into **seven categories** by number range:
 
 | Range | Category |
-|---|---|
+| --- | --- |
 | **1–299** | Animal Tales |
 | **300–749** | **Tales of Magic** (fairy tales proper) |
 | **750–849** | Religious Tales |
@@ -142,13 +142,14 @@ register is a lantern, not the sky). Adopt the structure; inherit the humility.
 - **`[mapping]` / `*` (§6):** my reading, offered as discipline, ruled by no one here.
 
 ### Sources `[research]`
-- Aarne–Thompson–Uther Index — Wikipedia: https://en.wikipedia.org/wiki/Aarne%E2%80%93Thompson%E2%80%93Uther_Index
-- Motif-Index of Folk-Literature — Wikipedia: https://en.wikipedia.org/wiki/Motif-Index_of_Folk-Literature
-- What is the Aarne–Thompson Index? — Book Riot: https://bookriot.com/aarne-thompson-index/
-- Folktale Classification and Structure — Harvard Library Research Guide: https://guides.library.harvard.edu/folk_and_myth/indices
-- Tales of Magic 300–559 — U. Missouri Library Guide: https://libraryguides.missouri.edu/c.php?g=1039894&p=7610331
-- Animal Tales 1–299 — U. Missouri Library Guide: https://libraryguides.missouri.edu/c.php?g=1039894&p=7609090
-- The Uses and Limitations of the Folklorist's Toolkit for Fiction (R.B. Lemberg) — Strange Horizons: https://strangehorizons.com/wordpress/non-fiction/articles/the-uses-and-limitations-of-the-folklorists-toolkit-for-fiction/
+
+- Aarne–Thompson–Uther Index — Wikipedia: <https://en.wikipedia.org/wiki/Aarne%E2%80%93Thompson%E2%80%93Uther_Index>
+- Motif-Index of Folk-Literature — Wikipedia: <https://en.wikipedia.org/wiki/Motif-Index_of_Folk-Literature>
+- What is the Aarne–Thompson Index? — Book Riot: <https://bookriot.com/aarne-thompson-index/>
+- Folktale Classification and Structure — Harvard Library Research Guide: <https://guides.library.harvard.edu/folk_and_myth/indices>
+- Tales of Magic 300–559 — U. Missouri Library Guide: <https://libraryguides.missouri.edu/c.php?g=1039894&p=7610331>
+- Animal Tales 1–299 — U. Missouri Library Guide: <https://libraryguides.missouri.edu/c.php?g=1039894&p=7609090>
+- The Uses and Limitations of the Folklorist's Toolkit for Fiction (R.B. Lemberg) — Strange Horizons: <https://strangehorizons.com/wordpress/non-fiction/articles/the-uses-and-limitations-of-the-folklorists-toolkit-for-fiction/>
 
 ## Signature
 
@@ -160,4 +161,6 @@ left it where it lies. Author named; authority not assumed as Logan; no office c
 
 ---
 
-###### [["The world is quiet here."]]
+```
+The world is quiet here．Esto Perpetua!
+```

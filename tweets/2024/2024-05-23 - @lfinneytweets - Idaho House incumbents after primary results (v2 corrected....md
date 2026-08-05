@@ -19,7 +19,7 @@ related:
 Idaho House incumbents after primary results (v2 corrected thread) #idleg https://t.co/aVpJkLxISX
 
 ## Media
-- ![](https://pbs.twimg.com/media/GOTLDpraoAEvuSY.jpg)
-- ![](https://pbs.twimg.com/media/GOTLDrGbUAAAcOh.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/GOTLDpraoAEvuSY.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/GOTLDrGbUAAAcOh.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1793781818203971693)

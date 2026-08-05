@@ -130,10 +130,12 @@ The **deep-cut framing** is the address Logan brought into the conversation ("Ic
 ## Sources
 
 ### Vault internal
+
 - [[RESEARCH_Icemark-Chronicles-2026-06-03]] — factual research brief
 - [[RESEARCH_Icemark-Lore-Compendium-2026-06-03]] — in-universe lore reference
 
 ### External
+
 - Stuart Hill — *The Cry of the Icemark* (2005), *Blade of Fire* (2006), *Last Battle of the Icemark* (2008), *Prince of the Icemark* (2013); Chicken House
 - [Stuart Hill (author) — Wikipedia](https://en.wikipedia.org/wiki/Stuart_Hill_(author)) — for the Newcastle Classics-and-Ancient-History training
 - [Hill, Stuart 1958– — Encyclopedia.com](https://www.encyclopedia.com/children/scholarly-magazines/hill-stuart-1958) — for Hill's self-stated influences

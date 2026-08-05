@@ -16,6 +16,6 @@ related:
 ERROR: There was an error. Try clicking our 'Learn how to fix' button for a list of every possible error it could be. https://t.co/fIvSrWomyH
 
 ## Media
-- ![](https://pbs.twimg.com/media/GdVG54RaoAEzMES.png)
+- ![alt text needed](https://pbs.twimg.com/media/GdVG54RaoAEzMES.png)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1861472142837325945)

@@ -79,6 +79,7 @@ class UvDependencySubmissionTest(unittest.TestCase):
             "pkg:pypi/huggingface-hub@",
             "pkg:pypi/requests-oauthlib@",
             "pkg:pypi/honcho-ai@",
+            "pkg:pypi/pygit2@",
         ):
             match = [v for k, v in self.resolved.items() if k.startswith(purl)]
             self.assertTrue(match, f"missing direct dependency {purl}")
@@ -109,17 +110,22 @@ class UvDependencySubmissionTest(unittest.TestCase):
             )
 
     def test_multi_version_packages_are_both_kept(self) -> None:
-        # uv's universal lock pins numpy and onnxruntime at two versions each
-        # (the exact case pip-compile cannot resolve). Keying by purl keeps both.
+        # uv's universal lock pins numpy at three versions and onnxruntime at two
+        # (the exact case pip-compile cannot resolve). Keying by purl keeps all.
         numpy = sorted(k for k in self.resolved if k.startswith("pkg:pypi/numpy@"))
         onnx = sorted(k for k in self.resolved if k.startswith("pkg:pypi/onnxruntime@"))
-        self.assertEqual(len(numpy), 2, numpy)
+        self.assertEqual(len(numpy), 3, numpy)
         self.assertEqual(len(onnx), 2, onnx)
 
     def test_resolved_count_matches_non_local_versioned_packages(self) -> None:
-        # 149 [[package]] entries in uv.lock, minus the single editable local
-        # project, all registry packages versioned -> 148 distinct purls.
-        self.assertEqual(len(self.resolved), 148)
+        # 165 [[package]] entries in uv.lock (163 + pygit2, added in #891 to
+        # read Git's tracked index directly via libgit2 bindings instead of
+        # shelling out to the git binary; pygit2 appears as two version-split
+        # entries -- 1.18.2 for Python 3.10, 1.19.3 for 3.11+ -- the same
+        # multi-version pattern as numpy/onnxruntime below), minus the single
+        # editable local project, all registry packages versioned -> 164
+        # distinct purls.
+        self.assertEqual(len(self.resolved), 164)
 
 
 if __name__ == "__main__":

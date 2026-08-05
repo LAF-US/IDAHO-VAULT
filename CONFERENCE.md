@@ -17,7 +17,9 @@ related:
 # PROTOCOL — CONFERENCE
 
 ## Status: Draft
+
 ## Version: 0.1
+
 ## Authority: Loganic Swarm
 
 ---
@@ -43,7 +45,7 @@ ORIENT ◄──── LEVELSET ───────► REPORT
 ```
 
 | Transition | Protocol |
-|------------|----------|
+| ------------ | ---------- |
 | Session Start | AWAKEN |
 | Session Briefing | LEVELSET |
 | New External Agent | ORIENT |
@@ -77,7 +79,7 @@ CONFERENCE is invoked:
 ## Integration Points
 
 | Document | Relationship |
-|---|---|
+| --- | --- |
 | `CONFERENCE.md` (this file) | Protocol definition — what CONFERENCE is and does |
 | `CONFERENCE-v1.0-2026-04-27.md` | Full approved protocol — complete specification |
 | `CONVENE.md` | Agent acknowledgment protocol — part of CONFERENCE flow |
@@ -93,6 +95,7 @@ CONFERENCE is invoked:
 ### Phase 1: CALL (Logan)
 
 Logan declares the CONFERENCE:
+
 ```
 CONFERENCE CALL
 DATE: YYYY-MM-DD
@@ -106,6 +109,7 @@ RECORDING AGENT: [agent]
 ### Phase 2: CONVENE (Agents)
 
 Each invited agent acknowledges:
+
 ```
 CONVENE RECEIVED
 AGENT: [Name + persona]
@@ -124,6 +128,7 @@ Consolidated output committed to CONFERENCE RECORD artifact.
 ### Phase 5: DISMISS (Logan)
 
 Logan formally closes:
+
 ```
 CONFERENCE CLOSED
 DATE: YYYY-MM-DD
@@ -136,7 +141,7 @@ DISMISSED: [agents]
 ## Core Principles
 
 | Principle | Meaning |
-|---|---|
+| --- | --- |
 | Logan Chairs | No agent self-convenes or self-promotes to Chair |
 | Quorum is Logan-defined | Logan names participants; quorum = those named |
 | One Agenda, One Record | Every CONFERENCE produces exactly one CONFERENCE RECORD |
@@ -150,6 +155,7 @@ DISMISSED: [agents]
 Location: `!/CONFERENCE-RECORD-[YYYY-MM-DD]-[TOPIC-SLUG].md`
 
 Structure includes:
+
 - Agenda
 - Item outcomes (COMPLETE / HOLD / DEFERRED)
 - FLAGs Raised
@@ -162,7 +168,7 @@ Structure includes:
 ## Outputs
 
 | Output | Location | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | CONFERENCE CALL | Logan's signal | Declares session |
 | CONVENE ACKs | agent responses | Confirms participation |
 | CONFERENCE RECORD | `!/` | Durable artifact of session |
@@ -184,6 +190,7 @@ Structure includes:
 This document is a **stub** under development. Full specification exists in `CONFERENCE-v1.0-2026-04-27.md`.
 
 Pending:
+
 - [ ] Logan review and approval
 - [ ] Open questions resolution (record location, async support, automation, numbering)
 - [ ] Constitutional codification update
@@ -200,4 +207,6 @@ Pending:
 
 ---
 
-###### [["The world is quiet here."]]
+```
+The world is quiet here．Esto Perpetua!
+```

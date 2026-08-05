@@ -22,6 +22,6 @@ related:
 RT @IdahoReports: June 18, 2021, Weekly #IdahoCOVID19 Update | @IdahoPTV https://t.co/7zYboLrjgB
 
 ## Media
-- ![](https://pbs.twimg.com/amplify_video_thumb/1406008788168048642/img/juSevbgVobHgc-LH.jpg)
+- ![alt text needed](https://pbs.twimg.com/amplify_video_thumb/1406008788168048642/img/juSevbgVobHgc-LH.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1406024177493045249)

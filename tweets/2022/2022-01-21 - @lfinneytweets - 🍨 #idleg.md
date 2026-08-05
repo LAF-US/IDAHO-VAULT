@@ -22,6 +22,6 @@ related:
 - https://x.com/lfinneytweets/status/1483931968588824576
 
 ## Media
-- ![](https://pbs.twimg.com/media/FJmkYS-VIAAt2vn.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/FJmkYS-VIAAt2vn.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1484398398744653824)

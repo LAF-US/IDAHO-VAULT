@@ -21,6 +21,6 @@ RT @IDHSAA: Find the entire guide to safely re-opening sports and activities thi
 - https://idhsaa.org/asset/HOME%20PAGE/IHSAA%20Fall%20Sport%20COVID%20Guidelines.pdf
 
 ## Media
-- ![](https://pbs.twimg.com/media/EdEylBSUYAA6vDS.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EdEylBSUYAA6vDS.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1283952983206580224)

@@ -25,20 +25,20 @@ The Gmail + trick uses what’s called “plus addressing” to quickly create u
 
 All you have to do is add a "+" symbol and any word or combination of characters after your username and before the "@" symbol. Gmail will deliver messages sent to each variation in your main inbox. It's like having a bunch of virtual doors leading to the same room.
 
-For instance, if your email is janedoe@gmail.com, you can create numerous aliases serving different functions, such as:
+For instance, if your email is <janedoe@gmail.com>, you can create numerous aliases serving different functions, such as:
 
-- **For personal matters:** janedoe+friends@gmail.com and/or janedoe+family@gmail.com
-- **For professional communications:** janedoe+work@gmail.com
-- **For finances:** janedoe+banking@gmail.com
-- **For online purchases:** janedoe+shopping@gmail.com
-- **For recurring paid services:** janedoe+subscriptions@gmail.com
+- **For personal matters:** <janedoe+friends@gmail.com> and/or <janedoe+family@gmail.com>
+- **For professional communications:** <janedoe+work@gmail.com>
+- **For finances:** <janedoe+banking@gmail.com>
+- **For online purchases:** <janedoe+shopping@gmail.com>
+- **For recurring paid services:** <janedoe+subscriptions@gmail.com>
 ![An illustration of the top details of an email showing the sender, recipient, date,and the email subject](https://cdn.prod.website-files.com/680a93d128c5b2a854b57c98/68ba0a6fd39a17dfc9b427d8_65dcdaadfc9d8bcafc3cfdaf_TnO1hKlufaa5fIwSszo1mWPl_ZK6aB9H-nuXmNT_4IX6I9hAB7_JTCyx46fnW3jfyfUD_Hvw7CxFSIRKuFQrTcpdfMCdbaRPy8YIsh6-I_ILoWKcSHqSWnUsC6_SzMtz4bFvmGvI8k08Lf6cnIHbUNg.avif)
 
 An illustration of the top details of an email showing the sender, recipient, date,and the email subject
 
 There are infinite opportunities.
 
-Alternatively, you can create aliases for specific service providers you expect to receive regular emails from (ex., janedoe+salliemae@gmail.com) and even utilize the feature for customer management for your business, which we’ll delve into later. Keep in mind that only your username can be changed. The **@gmail.com** must remain as is.
+Alternatively, you can create aliases for specific service providers you expect to receive regular emails from (ex., <janedoe+salliemae@gmail.com>) and even utilize the feature for customer management for your business, which we’ll delve into later. Keep in mind that only your username can be changed. The **@gmail.com** must remain as is.
 
 ## The benefits of Gmail plus addressing
 
@@ -72,7 +72,7 @@ According to [MailModo](https://www.mailmodo.com/guides/email-spam-statistics/),
 
 Ever wonder how businesses you’ve never even engaged with got your email address? The truth is that many websites sell and leak our data, sometimes because we’ve gotten accustomed to accepting privacy policies without much consideration. However, there are actions we can take.
 
-If you’re concerned about data privacy, the Gmail alias trick aids in tracking who is sharing your information with third parties without your explicit consent. If you sign up for a rewards program through Home Depot with janedoe+hdrewards@gmail.com and suddenly start getting spam sent to that email address, you’ll know where it originated.
+If you’re concerned about data privacy, the Gmail alias trick aids in tracking who is sharing your information with third parties without your explicit consent. If you sign up for a rewards program through Home Depot with <janedoe+hdrewards@gmail.com> and suddenly start getting spam sent to that email address, you’ll know where it originated.
 
 If a specific alias starts getting sketchy emails, create a filter, mark it as junk, unsubscribe, and your problem will be solved. You could also remove your email from the original program or email list.
 
@@ -92,7 +92,7 @@ The Gmail + trick is a great way to track a small number of customers or clients
 
 Tools like [Streak](http://www.streak.com/) help you automatically track interactions with contacts and leads in pipelines inside your Gmail inbox.
 
-![](https://www.youtube.com/watch?v=4UXjqi8z6W8)
+![alt text needed](https://www.youtube.com/watch?v=4UXjqi8z6W8)
 
 For each lead, you can:
 
@@ -110,9 +110,9 @@ For each lead, you can:
 
 Another subtle yet effective method for email customization is the Gmail dot trick. This involves placing dots within your email address without affecting the delivery of emails to your primary inbox.
 
-For instance, janedoe@gmail.com can also be written jane.doe@gmail.com. Gmail will treat these variations as identical addresses, but you can use them to categorize and filter emails.
+For instance, <janedoe@gmail.com> can also be written <jane.doe@gmail.com>. Gmail will treat these variations as identical addresses, but you can use them to categorize and filter emails.
 
-Wondering how this helps? Well, it's perfect for organizing your inbox. You may decide to sign up for newsletters with jane.doe@gmail.com and use janedoe@gmail.com for work. It's an easy way to sort your messages and spot the purpose of each email at a glance.
+Wondering how this helps? Well, it's perfect for organizing your inbox. You may decide to sign up for newsletters with <jane.doe@gmail.com> and use <janedoe@gmail.com> for work. It's an easy way to sort your messages and spot the purpose of each email at a glance.
 
 Keep in mind that Gmail features and functionalities may change over time, so it's a good idea to check the latest documentation or settings within your Gmail account for the most up-to-date information.
 

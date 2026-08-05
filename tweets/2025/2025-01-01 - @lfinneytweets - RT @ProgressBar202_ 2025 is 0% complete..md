@@ -18,6 +18,6 @@ related:
 RT @ProgressBar202_: 2025 is 0% complete. https://t.co/l0xhiBn4nt
 
 ## Media
-- ![](https://pbs.twimg.com/media/GgKnW-yXsAA4NXh.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/GgKnW-yXsAA4NXh.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1874367206865428823)

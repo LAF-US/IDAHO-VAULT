@@ -16,7 +16,7 @@ related:
   - IdahoCOVID19
 ---
 
-#IdahoCOVID19 https://t.co/tWgi4Ma5Ii
+\#IdahoCOVID19 https://t.co/tWgi4Ma5Ii
 
 ## Links
 - https://x.com/LewistonTribune/status/1440325191603658756

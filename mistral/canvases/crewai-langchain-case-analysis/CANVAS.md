@@ -24,12 +24,14 @@ authority: LOGAN
 ## 📊 Production Deployment Patterns
 
 ### Pattern 1: Hybrid Stack (Most Common)
+
 **Architecture**: CrewAI for orchestration + LangChain for tooling/RAG
 
 **Case Example: IBM Consulting**
+
 - **Use Case**: Federal eligibility determinations
 - **Stack**: CrewAI agents + WatsonX foundation models + legacy system coordination
-- **Results**: 
+- **Results**:
   - Faster eligibility determinations vs. legacy RPA
   - Reduced manual coordination across disparate systems
   - Successful pilot → full production deployment
@@ -40,9 +42,11 @@ authority: LOGAN
 ---
 
 ### Pattern 2: Prototype-to-Production Pipeline
+
 **Architecture**: CrewAI for rapid prototyping → LangGraph for production
 
 **Case Example: Enterprise Workflow Automation**
+
 - **Phase 1 (Prototype)**: CrewAI with role-based agents (Researcher, Analyst, Writer)
   - ~20-25 lines of code
   - Fast iteration, easy debugging
@@ -59,15 +63,18 @@ authority: LOGAN
 ---
 
 ### Pattern 3: Complementary Layers
+
 **Architecture**: LangChain for data/RAG + CrewAI for agent coordination
 
 **Case Example: AI Research Pipeline (Venugopal Adep, Jio)**
+
 - **Stack**: CrewAI agents + LangChain tools (Tavily search, OpenAI)
-- **Workflow**: 
+- **Workflow**:
   1. Researcher agent (CrewAI) uses LangChain's TavilySearchResults tool
   2. Writer agent (CrewAI) processes results
   3. Sequential CrewAI process passes context between agents
 - **Code Pattern**:
+
   ```python
   from crewai import Agent, Task, Crew
   from langchain_community.tools import TavilySearchResults
@@ -86,9 +93,11 @@ authority: LOGAN
 ---
 
 ### Pattern 4: Enterprise Multi-Agent Orchestration
+
 **Architecture**: LangGraph for complex stateful workflows + CrewAI for role-based teams
 
 **Case Example: Multi-Agent Customer Support**
+
 - **Use Case**: Enterprise customer support with escalation paths
 - **Stack**: LangGraph StateGraph + CrewAI for agent roles
 - **Workflow**:
@@ -104,68 +113,74 @@ authority: LOGAN
 ## 🏗️ Integration Architectures
 
 ### Architecture A: CrewAI with LangChain Tools (Simplest)
+
 ```
-┌─────────────────────────────────────────────┐
+┌────────────────────────────────────────────Ŀ
 │                 CrewAI Crew                   │
-│  ┌─────────────┐  ┌─────────────┐          │
+│  ┌────────────Ŀ  ┌────────────Ŀ          │
 │  │   Agent 1   │  │   Agent 2   │          │
 │  └──────┬──────┘  └──────┬──────┘          │
 │         │                 │                  │
 │         ▼                 ▼                  │
-│  ┌─────────────────────────────────────┐   │
+│  ┌────────────────────────────────────Ŀ   │
 │  │         LangChain Tools               │   │
 │  │  (Search, RAG, APIs, Validators)       │   │
 │  └─────────────────────────────────────┘   │
 └─────────────────────────────────────────────┘
 ```
+
 **Use When**: Fast prototyping, role-based workflows, existing LangChain tool investments
 
 ---
 
 ### Architecture B: LangGraph Orchestration with CrewAI Teams
+
 ```
-┌─────────────────────────────────────────────┐
+┌────────────────────────────────────────────Ŀ
 │              LangGraph StateGraph             │
-│  ┌─────────────┐  ┌─────────────┐          │
+│  ┌────────────Ŀ  ┌────────────Ŀ          │
 │  │   Node A    │  │   Node B    │          │
 │  │ (CrewAI     │  │ (CrewAI     │          │
 │  │  Crew)      │  │  Crew)      │          │
 │  └──────┬──────┘  └──────┬──────┘          │
 │         │                 │                  │
 │         ▼                 ▼                  │
-│  ┌─────────────────────────────────────┐   │
+│  ┌────────────────────────────────────Ŀ   │
 │  │           Shared State                 │   │
 │  └─────────────────────────────────────┘   │
 └─────────────────────────────────────────────┘
 ```
+
 **Use When**: Complex workflows with conditional branching, durable execution, explicit state control
 
 ---
 
 ### Architecture C: Hybrid Pipeline
+
 ```
-┌─────────────────────────────────────────────┐
+┌────────────────────────────────────────────Ŀ
 │              Input Layer                      │
 └─────────────────────┬───────────────────────┘
                       │
                       ▼
-┌─────────────────────────────────────────────┐
+┌────────────────────────────────────────────Ŀ
 │           LangChain Layer                     │
 │  (RAG, Document Processing, Embeddings)       │
 └─────────────────────┬───────────────────────┘
                       │
                       ▼
-┌─────────────────────────────────────────────┐
+┌────────────────────────────────────────────Ŀ
 │           CrewAI Layer                        │
 │  (Multi-Agent Orchestration, Role-Based)      │
 └─────────────────────┬───────────────────────┘
                       │
                       ▼
-┌─────────────────────────────────────────────┐
+┌────────────────────────────────────────────Ŀ
 │           LangGraph Layer                     │
 │  (State Management, Persistence, Recovery)   │
 └─────────────────────────────────────────────┘
 ```
+
 **Use When**: Full enterprise production with all requirements (RAG + orchestration + durability)
 
 ---
@@ -173,12 +188,14 @@ authority: LOGAN
 ## 🔧 Implementation Patterns for IDAHO-VAULT
 
 ### Pattern 1: CrewAI Agents with LangChain Tools
+
 **Applies to**: five_wizards lanes (Who, What, When, Where, Why)
 
 **Current State**: Custom Python with no CrewAI
 **Proposed**: Convert each lane to a CrewAI Agent
 
 **Example**: Who Lane as CrewAI Agent
+
 ```python
 from crewai import Agent, Task
 from langchain_community.tools import TavilySearchResults
@@ -199,6 +216,7 @@ who_task = Task(
 ```
 
 **Benefits**:
+
 - Reuse existing LangChain tools without modification
 - Built-in context passing between agents
 - Standardized agent interface
@@ -206,12 +224,14 @@ who_task = Task(
 ---
 
 ### Pattern 2: LangGraph Threshold Workflow
+
 **Applies to**: five_wizards threshold runner
 
 **Current State**: `src/idaho_vault/five_wizards/threshold_runner.py`
 **Proposed**: LangGraph StateGraph with CrewAI nodes
 
 **Example**: Threshold as LangGraph Workflow
+
 ```python
 from langgraph.graph import StateGraph
 from crewai import Crew
@@ -243,6 +263,7 @@ workflow.add_conditional_edges(
 ```
 
 **Benefits**:
+
 - Explicit control over workflow
 - Persistent state across runs
 - Checkpointing for recovery
@@ -251,12 +272,14 @@ workflow.add_conditional_edges(
 ---
 
 ### Pattern 3: Hybrid Validation Shard
+
 **Applies to**: crew.py bootstrap validation
 
 **Current State**: CrewAI only
 **Proposed**: CrewAI + LangChain LangSmith for observability
 
 **Example**: Enhanced Bootstrap with LangSmith
+
 ```python
 from crewai import Crew
 from langsmith import Client
@@ -271,6 +294,7 @@ client.log_run(result)  # Or use LangChain callback handler
 ```
 
 **Benefits**:
+
 - Production monitoring
 - Cost tracking
 - Debugging capabilities
@@ -281,7 +305,7 @@ client.log_run(result)  # Or use LangChain callback handler
 ## 📋 Decision Matrix for IDAHO-VAULT
 
 | Component | Current | Recommended | Rationale |
-|-----------|---------|-------------|-----------|
+| ----------- | --------- | ------------- | ----------- |
 | **`src/idaho_vault/crew.py`** | CrewAI | CrewAI + LangSmith | Add observability |
 | **five_wizards lanes** | Custom Python | CrewAI Agents | Role-based orchestration |
 | **`src/idaho_vault/five_wizards/threshold_runner.py`** | Custom Python | LangGraph | Explicit state control |
@@ -294,38 +318,47 @@ client.log_run(result)  # Or use LangChain callback handler
 ## 🎯 Specific Recommendations
 
 ### 1. five_wizards Framework
+
 **Action**: Rebuild as CrewAI crew with LangChain tools
+
 - Each lane (Who, What, When, Where, Why) = CrewAI Agent
 - How lane = CrewAI Manager agent
 - Tools: Reuse existing validation tools as LangChain tools
 - Process: Sequential CrewAI process
 
 **Migration Path**:
+
 1. Keep existing lane logic as tool implementations
 2. Wrap each lane in CrewAI Agent
 3. Replace custom orchestration with CrewAI Crew
 4. Add LangSmith for observability
 
 ### 2. Threshold Workflow
+
 **Action**: Migrate to LangGraph StateGraph
+
 - Nodes: 5W CrewAI crews + validation gates
 - State: ThresholdState with claim + all dimensions + gate state
 - Edges: Conditional routing based on validation results
 - Checkpoints: Persist state at each gate
 
 **Benefits**:
+
 - Survives crashes (durable execution)
 - Explicit recovery paths
 - Human intervention points
 - Audit trail
 
 ### 3. Tool Layer
+
 **Action**: Standardize on LangChain tool interface
+
 - Wrap all existing tools (validators, search, etc.) as LangChain tools
 - Makes them reusable by CrewAI, LangGraph, and LangChain
 - Enables future framework swaps
 
 **Example**:
+
 ```python
 from langchain_core.tools import BaseTool
 
@@ -339,7 +372,9 @@ class AdjudicateClaimTool(BaseTool):
 ```
 
 ### 4. Observability
+
 **Action**: Integrate LangSmith across all components
+
 - CrewAI crews: Use LangChain callback handler
 - LangGraph workflows: Native LangSmith integration
 - Custom tools: Instrument with LangSmith
@@ -381,17 +416,14 @@ class AdjudicateClaimTool(BaseTool):
 **Risk**: Low (frameworks are designed to interoperate)
 **ROI**: Significant improvement in maintainability, observability, and production readiness
 
-
 ---
-
-
 
 ---
 
 ## DOCUMENT METADATA
 
 | Field | Value |
-|-------|-------|
+| ------- | ------- |
 | Created | 2026-06-23 |
 | Last Updated | 2026-06-23 |
 | Status | active |

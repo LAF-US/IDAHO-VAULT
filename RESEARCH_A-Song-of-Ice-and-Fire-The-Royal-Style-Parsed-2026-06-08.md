@@ -32,7 +32,7 @@ date: 2026-06-08
 ## Component by component
 
 | Clause | Register | What the styling does |
-|---|---|---|
+| --- | --- | --- |
 | **of House [Name]** | dynastic | the blood-claim — the line that holds the throne |
 | **the [Nth] of His Name** | regnal number | asserts an **unbroken succession**; stamped even on usurpers and boy-kings (Joffrey, Tommen — each "First of His Name") to *manufacture* the continuity the throne lacks |
 | **King of the Andals, the Rhoynar, and the First Men** | **peoples** | kingship over the **three founding stocks** — Andals (the Faith-bearing south), Rhoynar (Dorne), First Men (the North): "king of *all of you, however you came here*" |
@@ -42,6 +42,7 @@ date: 2026-06-08
 ## Where the fossil shows its joints
 
 **[reading]**
+
 - **The frozen seven.** "Seven Kingdoms" preserved across **nine regions** — a count kept for tradition and the **Faith of the Seven**'s resonance (sept = seven; Aegon was anointed "Lord of the Seven Kingdoms" by the High Septon with seven oils). A number fossilized after its facts changed.
 - **The Rhoynar layer.** That clause *is* **Dorne** — the realm joined **last, by marriage** (187 AC). The show **drops "the Rhoynar,"** a styling shedding a historical layer for a modern audience. *(⚠️ Canon is debated on whether Targaryen kings claimed "the Rhoynar" **before** Dorne actually joined — a dominion asserted ahead of the fact; flagged, not asserted.)*
 - **King of peoples / Lord of kingdoms.** Two registers stitched in one breath: a **king** over peoples who is only a **lord** over realms — the conqueror's compromise, encoding that the kingdoms kept their identity beneath one suzerain.
@@ -50,6 +51,7 @@ date: 2026-06-08
 ## Contested & living stylings
 
 **[reading]**
+
 - **Rival crowns are rival *titles*.** Robb's **"King in the North"** revives a buried style; the **kraken kings** of the Iron Islands, **Stannis** claiming the whole Iron-Throne style, **Renly** — each counter-styling is a sovereignty-claim. The realm's unity is contested at the level of the *name*.
 - **Daenerys is the anti-fossil.** Her style **accretes**: *earned* epithets (**Stormborn, the Unburnt, Mother of Dragons, Breaker of Chains**) layered with *claimed* dominions (**Rightful Queen of the Andals and the First Men, Protector of the Seven Kingdoms**) asserted from **Essos, before she holds Westeros**. The inversion of the frozen Iron-Throne style — a title that **grows with deeds and ambitions** — and it cleanly separates the two kinds of styling: the **earned moniker** vs. the **claimed sovereignty**.
 
@@ -65,4 +67,6 @@ date: 2026-06-08
 
 ---
 
-###### [["The world is quiet here."]]
+```
+The world is quiet here．Esto Perpetua!
+```

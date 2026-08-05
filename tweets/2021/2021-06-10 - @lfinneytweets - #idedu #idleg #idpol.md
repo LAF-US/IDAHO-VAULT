@@ -20,7 +20,7 @@ related:
   - idpol
 ---
 
-#idedu #idleg #idpol https://t.co/vqvbRks2BE
+\#idedu #idleg #idpol https://t.co/vqvbRks2BE
 
 ## Links
 - https://x.com/apalermotweets/status/1402828832168579083

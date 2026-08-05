@@ -111,7 +111,7 @@ This is the most important transition in the whole class, because the moment an
 instrument acquires a will, **every question changes:**
 
 | | Instrument (Hugo before) | Awakened (Hugo after) |
-|---|---|---|
+| --- | --- | --- |
 | Diagnose by | The holder | The servant itself |
 | Can refuse a bad order? | No | Yes — now possible |
 | Accountable? | No — the holder is | Now itself, in part |
@@ -182,4 +182,8 @@ come from somewhere with a will.
 5. **Where does the "no" live?** If your only safeguard is an instrument, you
    have no safeguard. Site the refusal in something with a will.
 
-###### [["The world is quiet here."]]
+---
+
+```
+The world is quiet here．Esto Perpetua!
+```

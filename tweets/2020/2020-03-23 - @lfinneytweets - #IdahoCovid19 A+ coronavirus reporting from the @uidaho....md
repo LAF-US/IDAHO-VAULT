@@ -19,7 +19,7 @@ related:
   - IdahoCovid19
 ---
 
-#IdahoCovid19 A+ coronavirus reporting from the @uidaho @uiargonaut team. Way to go, Vandals ✌️ https://t.co/2D234uJi4Z
+\#IdahoCovid19 A+ coronavirus reporting from the @uidaho @uiargonaut team. Way to go, Vandals ✌️ https://t.co/2D234uJi4Z
 
 ## Links
 - https://x.com/uiargonaut/status/1241931023195111426

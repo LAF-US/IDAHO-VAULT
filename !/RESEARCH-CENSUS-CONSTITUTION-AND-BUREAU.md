@@ -26,6 +26,7 @@ The Constitution's census requirement appears in Article I, which establishes th
 > Representatives and direct Taxes shall be apportioned among the several States which may be included within this Union, according to their respective Numbers, which shall be determined by adding to the whole Number of free Persons, including those bound to Service for a Term of Years, and excluding Indians not taxed, three fifths of all other Persons. The actual Enumeration shall be made within three Years after the first Meeting of the Congress of the United States, and within every subsequent Term of ten Years, in such Manner as they shall by Law direct.
 
 Key structural elements:
+
 - **Apportionment linkage**: representation and taxation both tied to population
 - **Three-fifths compromise**: enslaved persons counted as 3/5 for apportionment (struck by later amendments)
 - **Decennial cadence**: every 10 years, starting within 3 years of first Congress
@@ -39,6 +40,7 @@ Ratified after the Civil War, Section 2 of the Fourteenth Amendment replaced the
 > Representatives shall be apportioned among the several States according to their respective numbers, counting the whole number of persons in each State, excluding Indians not taxed.
 
 Three critical changes:
+
 - **Eliminated the three-fifths compromise**: now "the whole number of persons"
 - **Removed the direct-tax linkage**: income taxes would later be separately authorized by the Sixteenth Amendment (1913)
 - **Added a penalty clause**: a state's representation could be reduced if it abridged the male citizen's right to vote (never enforced in practice)
@@ -59,6 +61,7 @@ The census is thus fundamentally about **apportionment of political power** — 
 ### 1.4 Legal Framework
 
 **Title 13, U.S. Code** codifies the Census Bureau's authority and constraints:
+
 - Authorizes and requires the decennial census and other surveys
 - Imposes absolute confidentiality protections (13 U.S.C. § 9)
 - Establishes penalties for disclosure: up to $250,000 fine or 5 years imprisonment
@@ -74,7 +77,7 @@ The census is thus fundamentally about **apportionment of political power** — 
 ### 2.1 Establishment and History
 
 | Date | Event |
-|------|-------|
+| ------ | ------- |
 | 1790 | First decennial census conducted by U.S. Marshals |
 | 1840 | Census Act establishes a temporary central Census Office |
 | 1902 | Permanent Census Office established under Dept. of Interior |
@@ -101,7 +104,7 @@ The Census Bureau is thus over 120 years old as a permanent agency (1902), but t
 Major divisions:
 
 | Division | Function |
-|----------|----------|
+| ---------- | ---------- |
 | **Decennial Census Programs** | The constitutional count — decennial census, ACS, geography |
 | **Demographic Programs** | Population estimates, income, poverty, housing statistics |
 | **Economic Programs** | Over 60 monthly/quarterly/annual economic surveys |
@@ -115,7 +118,7 @@ Major divisions:
 ### 2.4 Key Programs
 
 | Program | Cadence | Purpose |
-|---------|---------|---------|
+| --------- | --------- | --------- |
 | **Decennial Census** | Every 10 years (years ending in 0) | Constitutional population count for apportionment |
 | **American Community Survey** | Continuous/Annual | Replaced long-form census — detailed demographic, social, economic, housing data |
 | **Economic Census** | Every 5 years (years ending in 2 and 7) | Comprehensive measure of American business and economy |
@@ -155,6 +158,7 @@ The four regions — Northeast, Midwest, South, West — with nine subdivisions 
 ### 2.7 Confidentiality and Data Stewardship
 
 The Census Bureau operates under the most stringent privacy protections in the federal government due to Title 13:
+
 - Responses cannot be shared with any other agency (including law enforcement, immigration, tax authorities)
 - Individual records are sealed for 72 years
 - All employees sign lifetime non-disclosure affidavits
@@ -199,4 +203,8 @@ The census is not a count of citizens. It is a count of persons. That distinctio
 - USAFacts, "What does the Census Bureau do?" (FY 2024 data)
 - Brennan Center for Justice, "Accounting for the Census Clause" (2009)
 
-###### [["The world is quiet here."]]
+---
+
+```
+The world is quiet here．Esto Perpetua!
+```

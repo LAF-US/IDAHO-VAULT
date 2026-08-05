@@ -20,9 +20,7 @@ related:
   - idleg
 ---
 
-RT @CKomatsoulis: What an argument over colleges and DEI shows about this powerful group of Idaho lawmakers
-
-#idpol #idleg
+RT @CKomatsoulis: What an argument over colleges and DEI shows about this powerful group of Idaho lawmakers #idpol #idleg
 https://t.co/wU4…
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1907890773502341410)

@@ -21,6 +21,6 @@ RT @samjmintz: Amtrak confirms it will restore daily long-distance service, star
 - https://x.com/samjmintz/status/1369737791811239939
 
 ## Media
-- ![](https://pbs.twimg.com/media/EwJic-BWQAAkoUA.png)
+- ![alt text needed](https://pbs.twimg.com/media/EwJic-BWQAAkoUA.png)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1369771560374996993)

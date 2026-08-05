@@ -26,15 +26,20 @@ date: 2026-06-07
 > **Provenance.** Web-verified 2026-06-07 (Deltora Quest Wiki, Wikipedia). **[canon-per-series].** Paraphrased.
 
 ## Geography
+
 - **[canon]** A vast, restless desert in the **upper reaches of Lapis Lazuli territory**, west of the **Rithmere Road**. The "sands" are not truly sand: the whole expanse **is** the **[[RESEARCH_Deltora-The-Hive-2026-06-07\|Hive]]**, a colony of microscopic creatures so great it reads as a desert.
 
 ## The gem & its guardian
+
 - **[canon]** The **Lapis Lazuli** was carried into the Hive's central **pyramid** and built into its structure, supporting the egg-tower — retrieved only by swapping in a wooden bird to keep the tower from collapsing.
 
 ## Cross-references & sources
+
 `[[RESEARCH_Deltora-The-Gem-Guardians-2026-06-07]]` · `[[RESEARCH_Deltora-The-Hive-2026-06-07]]` · `[[RESEARCH_Deltora-The-Seven-Tribes-and-their-Lands-2026-06-04]]`
 [Shifting Sands](https://deltoraquest.fandom.com/wiki/Shifting_Sands_(location)) · [The Shifting Sands — Wikipedia](https://en.wikipedia.org/wiki/The_Shifting_Sands)
 
 ---
 
-###### [["The world is quiet here."]]
+```
+The world is quiet here．Esto Perpetua!
+```

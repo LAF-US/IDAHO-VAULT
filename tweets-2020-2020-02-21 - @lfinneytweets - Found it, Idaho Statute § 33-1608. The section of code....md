@@ -21,10 +21,11 @@ related:
   - idpol
 ---
 
-@clarkcorbin Found it, Idaho Statute § 33-1608. The section of code authorizing sex education in schools appears to have been adopted in 1970. #idleg #idpol https://t.co/bma99UauRi
+@clarkcorbin Found it, Idaho Statute § 33-1608. The section of code authorizing sex education in schools appears to have been adopted in 1970. #idleg #idpol <https://t.co/bma99UauRi>
 
 ## Media
-- ![](https://pbs.twimg.com/media/ERURvzCU4AAjk3j.png)
+
+- ![alt text needed](https://pbs.twimg.com/media/ERURvzCU4AAjk3j.png)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 
