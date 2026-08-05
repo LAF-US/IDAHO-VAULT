@@ -1,4 +1,4 @@
-<img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" style="height:64px;margin-right:32px"/>
+<img alt="alt text needed" src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" style="height:64px;margin-right:32px"/>
 
 # CHECK CLAIM: "Mandaeism is relatively obscure to most people outside the Middle East or religious studies circles, even though it's one of the few surviving Gnostic traditions from antiquity"
 
