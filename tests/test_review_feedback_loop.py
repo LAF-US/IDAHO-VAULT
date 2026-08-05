@@ -814,15 +814,69 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         with mock.patch.object(review_feedback_loop, "ensure_labels"), mock.patch.object(
             review_feedback_loop,
             "_fetch_pr",
-            return_value=_pr(labels=()),
-        ), mock.patch.object(review_feedback_loop, "_edit_label") as edit_label, mock.patch.object(
-            review_feedback_loop, "_comment"
-        ) as comment:
+        ) as fetch_pr, mock.patch.object(
+            review_feedback_loop.gh_cli,
+            "pr_view",
+            return_value=SimpleNamespace(stdout='{"labels": []}'),
+        ) as pr_view, mock.patch.object(
+            review_feedback_loop, "_edit_label"
+        ) as edit_label, mock.patch.object(review_feedback_loop, "_comment") as comment:
             result = review_feedback_loop.acknowledge_apply(args)
 
         self.assertEqual(result, 0)
         edit_label.assert_called_once_with(41, add=review_feedback_loop.DEFAULT_PENDING_LABEL)
         comment.assert_called_once()
+        # Labels are all this path reads, so it must NOT reach for the review-thread
+        # graph: `_fetch_pr` bills ~100 rate-limit points for up to 10k nodes, `gh pr
+        # view --json labels` bills one REST point for the list actually used.
+        fetch_pr.assert_not_called()
+        self.assertEqual(pr_view.call_args.kwargs["json_fields"], "labels")
+
+    def test_acknowledge_apply_reads_a_populated_gh_label_payload(self) -> None:
+        # The label list arrives from `gh pr view --json labels` as a FLAT array,
+        # where the GraphQL `_fetch_pr` nested it under `labels.nodes`. A misread of
+        # that shape does not raise — it yields an empty label set, which sends every
+        # apply request down the "not labelled yet" branch and posts a duplicate
+        # acknowledgement comment, forever, silently.
+        #
+        # The empty-label test above cannot catch that: an unparsed payload and a
+        # genuinely unlabelled PR both produce `set()` and the same calls. Only a
+        # PR that is ALREADY labelled distinguishes them, so this asserts the quiet
+        # branch — no label edit, no comment — against a realistic gh payload.
+        args = SimpleNamespace(
+            owner="LAF-US",
+            repo="IDAHO-VAULT",
+            pr_number=41,
+            comment_author="loganf",
+            author_association="OWNER",
+            comment_body="@copilot apply changes",
+        )
+        payload = json.dumps(
+            {
+                "labels": [
+                    {"id": "LA_1", "name": "risk:docs", "description": "", "color": "ededed"},
+                    {
+                        "id": "LA_2",
+                        "name": review_feedback_loop.DEFAULT_PENDING_LABEL,
+                        "description": "",
+                        "color": "d4c5f9",
+                    },
+                ]
+            }
+        )
+
+        with mock.patch.object(review_feedback_loop, "ensure_labels"), mock.patch.object(
+            review_feedback_loop.gh_cli,
+            "pr_view",
+            return_value=SimpleNamespace(stdout=payload),
+        ), mock.patch.object(
+            review_feedback_loop, "_edit_label"
+        ) as edit_label, mock.patch.object(review_feedback_loop, "_comment") as comment:
+            result = review_feedback_loop.acknowledge_apply(args)
+
+        self.assertEqual(result, 0)
+        edit_label.assert_not_called()
+        comment.assert_not_called()
 
     def test_sync_pr_clears_pending_only_for_allowed_completion_actors(self) -> None:
         args = SimpleNamespace(
@@ -864,9 +918,12 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         resolve_outdated.assert_called_once()
         self.assertIsNone(resolve_outdated.call_args.args[1])
         self.assertEqual(resolve_outdated.call_args.kwargs["apply"], True)
-        # Two of three results applied -> resolved_count == 2 (> 0) -> PR re-fetched once
-        # more (initial fetch + the post-resolve re-fetch).
-        self.assertEqual(fetch_pr.call_count, 2)
+        # One fetch per sync, whatever the resolve pass does. Two of three results
+        # applied here; the old code answered that by re-running `_fetch_pr` to watch
+        # `isResolved` flip, paying a second ~100-point graph fetch for one boolean
+        # that `attest_and_resolve` already knows. It now writes the flag on the
+        # thread it just resolved, so the second fetch has nothing left to learn.
+        self.assertEqual(fetch_pr.call_count, 1)
 
     def test_enable_auto_merge_refuses_to_arm_when_derived_state_is_blocking(self) -> None:
         args = SimpleNamespace(
@@ -1724,6 +1781,9 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertTrue(result["eligible"])
         self.assertFalse(result["applied"])
         self.assertIn(review_feedback_loop.LOOK_ATTESTATION_MARKER, result["attestation"])
+        # A dry run resolved nothing, so it must not mark the thread resolved either.
+        # Callers now trust this flag instead of re-fetching the PR to check it.
+        self.assertFalse(thread.get("isResolved"))
 
     def test_attest_and_resolve_apply_resolves_then_attests(self) -> None:
         thread = _thread(authors=("coderabbitai",), author_type="Bot")
@@ -1743,6 +1803,12 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             [mock.call.resolve("THREAD_1"), mock.call.reply("THREAD_1", mock.ANY)]
         )
         self.assertTrue(result["applied"])
+        # The caller's copy of the thread now matches GitHub. sync_pr and the
+        # reconciliation walk depend on this: both dropped a second full-graph
+        # `_fetch_pr` whose only job was to observe this flag flip. Lose the write
+        # and they would evaluate a resolved thread as still unresolved — which
+        # blocks merges — so this assertion is what keeps that fetch deletable.
+        self.assertTrue(thread["isResolved"])
 
     def test_attest_and_resolve_no_false_witness_when_resolve_forbidden(self) -> None:
         # The live #398 boundary: resolveReviewThread is FORBIDDEN for the integration
