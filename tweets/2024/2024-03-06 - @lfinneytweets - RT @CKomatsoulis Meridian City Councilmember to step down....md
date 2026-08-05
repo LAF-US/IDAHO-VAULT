@@ -18,9 +18,7 @@ related:
   - idpol
 ---
 
-RT @CKomatsoulis: Meridian City Councilmember to step down following judicial appointment
-
-#idpol
+RT @CKomatsoulis: Meridian City Councilmember to step down following judicial appointment #idpol
 https://t.co/n078f7kFMX
 
 ## Links

@@ -697,7 +697,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         state = review_feedback_loop.evaluate_review_state(
             _pr(
                 created_at=datetime(2026, 4, 16, 1, 0, tzinfo=timezone.utc),
-                labels=("agent-review-pending",),
+                labels=(review_feedback_loop.DEFAULT_REVIEW_PENDING_LABEL,),
                 threads=(_thread(authors=("human-reviewer",)),),
             ),
             now=datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc),

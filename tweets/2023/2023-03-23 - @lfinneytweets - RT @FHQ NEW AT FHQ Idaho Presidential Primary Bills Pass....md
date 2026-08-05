@@ -22,6 +22,6 @@ https://t.co/9OQugTsiC1 https://t.co/t08vMfsQsY
 - https://www.frontloadinghq.com/2023/03/idaho-presidential-primary-bills-pass.html
 
 ## Media
-- ![](https://pbs.twimg.com/media/Fr8MEGwWYAEXnYF.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/Fr8MEGwWYAEXnYF.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1639042606620635136)

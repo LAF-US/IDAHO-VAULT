@@ -22,7 +22,7 @@ Superintendent Ybarra is before JFAC this morning to present the public schools 
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/EO-q3vaU4AE1REL.jpg)
-- ![](https://pbs.twimg.com/media/EO-q4t2U8AA2mSW.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EO-q3vaU4AE1REL.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EO-q4t2U8AA2mSW.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1220381941553221632)

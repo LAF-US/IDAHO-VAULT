@@ -26,6 +26,6 @@ RT @kkruesi: “The girl”
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/DaMctEZV4AAfzos.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/DaMctEZV4AAfzos.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/982894740042432512)

@@ -18,6 +18,6 @@ related:
 @KevinRichert @CSRichert https://t.co/WarN1FIuC6
 
 ## Media
-- ![](https://pbs.twimg.com/tweet_video_thumb/FTAepn4UAAAhkM9.jpg)
+- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/FTAepn4UAAAhkM9.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1526753980084236288)

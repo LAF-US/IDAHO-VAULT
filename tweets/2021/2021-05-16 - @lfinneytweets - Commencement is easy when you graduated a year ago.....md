@@ -21,6 +21,6 @@ related:
 Commencement is easy when you graduated a year ago. #VandalGrad #Graduation2020 https://t.co/nYMSg7PV4x
 
 ## Media
-- ![](https://pbs.twimg.com/media/E1g1jfQUYAAkCd7.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/E1g1jfQUYAAkCd7.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1393922970599387137)

@@ -22,8 +22,6 @@ related:
   - mtpol
 ---
 
-RT @MtnStatesPolicy: The neighborhood competition is getting fierce. Who will have the lowest state income tax rate?
-
-#idpol #idleg #mtpol…
+RT @MtnStatesPolicy: The neighborhood competition is getting fierce. Who will have the lowest state income tax rate? #idpol #idleg #mtpol…
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1593740318028926978)

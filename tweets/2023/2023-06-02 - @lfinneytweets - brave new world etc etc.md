@@ -16,6 +16,6 @@ related:
 brave new world etc etc https://t.co/hD4wzTKuQT
 
 ## Media
-- ![](https://pbs.twimg.com/media/FxozLTXacAYVxw-.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/FxozLTXacAYVxw-.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1664699456971853825)

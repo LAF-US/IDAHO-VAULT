@@ -20,7 +20,7 @@ related:
   - idpol
 ---
 
-#idleg #IdahoCOVID19 #idpol https://t.co/naYQoLmR7I
+\#idleg #IdahoCOVID19 #idpol https://t.co/naYQoLmR7I
 
 ## Links
 - https://x.com/EastIDNews/status/1286723575689306118

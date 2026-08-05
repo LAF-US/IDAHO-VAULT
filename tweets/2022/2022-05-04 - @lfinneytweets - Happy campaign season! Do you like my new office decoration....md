@@ -21,6 +21,6 @@ related:
 Happy campaign season! Do you like my new office decoration? #idleg #idpol https://t.co/pVYtSIq6ux
 
 ## Media
-- ![](https://pbs.twimg.com/media/FR8pa88VgAANKzV.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/FR8pa88VgAANKzV.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1521981204718706688)

@@ -23,9 +23,9 @@ related:
 Here is the new Senate resolution introduced this morning intended to end the #IdahoCOVID19 health order. #idleg #idpol https://t.co/1Zu6aaixvu
 
 ## Media
-- ![](https://pbs.twimg.com/media/Es6_DDuU4AAneHD.png)
-- ![](https://pbs.twimg.com/media/Es6_EJwUYAEOIiY.png)
-- ![](https://pbs.twimg.com/media/Es6_HhtVkAAJ6ye.png)
-- ![](https://pbs.twimg.com/media/Es6_IluUUAAzQYW.png)
+- ![alt text needed](https://pbs.twimg.com/media/Es6_DDuU4AAneHD.png)
+- ![alt text needed](https://pbs.twimg.com/media/Es6_EJwUYAEOIiY.png)
+- ![alt text needed](https://pbs.twimg.com/media/Es6_HhtVkAAJ6ye.png)
+- ![alt text needed](https://pbs.twimg.com/media/Es6_IluUUAAzQYW.png)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1355230845309599744)

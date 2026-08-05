@@ -23,6 +23,6 @@ related:
 INBOX: @reclaimID has gathered over 4,000 electronic signatures for their voter initiative since Monday, with the highest turnout in Ada and Idaho counties. #idpol #idleg https://t.co/8SvYXJAp4T
 
 ## Media
-- ![](https://pbs.twimg.com/media/Ec6RlABUYAIuwOn.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/Ec6RlABUYAIuwOn.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1283123015945826304)

@@ -18,8 +18,7 @@ related:
   - idleg
 ---
 
-RT @IdahoPTV: Pro-tip for watching the legislature on IdahoPTV's Idaho in Session, https://t.co/k19Wqt2six. 
-#idleg https://t.co/sH0owWdxak
+RT @IdahoPTV: Pro-tip for watching the legislature on IdahoPTV's Idaho in Session, https://t.co/k19Wqt2six. #idleg https://t.co/sH0owWdxak
 
 ## Links
 - https://www.idahoptv.org/shows/idahoinsession/Legislature/

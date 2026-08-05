@@ -18,6 +18,6 @@ related:
 RT @KirkSiegler: Signs in a downtown Orofino, Idaho storefront include: stop the COVID testing bullshit. https://t.co/ZmccGU4eSQ
 
 ## Media
-- ![](https://pbs.twimg.com/media/EwtBfvXVcAAFlk6.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EwtBfvXVcAAFlk6.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1372263914847698944)

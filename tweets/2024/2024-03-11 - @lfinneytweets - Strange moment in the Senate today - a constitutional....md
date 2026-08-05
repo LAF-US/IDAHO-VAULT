@@ -27,6 +27,6 @@ https://t.co/fHAOPjULIi https://t.co/ChU6bzDqt5
 - https://legislature.idaho.gov/statutesrules/jointrules/
 
 ## Media
-- ![](https://pbs.twimg.com/media/GIbIKIbbUAAHj4l.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/GIbIKIbbUAAHj4l.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1767319983061897359)

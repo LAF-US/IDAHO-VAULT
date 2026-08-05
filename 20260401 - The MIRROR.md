@@ -969,7 +969,7 @@ Tuesday • Boise
 
 Temperature Precipitation Wind
 
-![](https://www.gstatic.com/weather/conditions/v1/svg/cloudy_light.svg)
+![alt text needed](https://www.gstatic.com/weather/conditions/v1/svg/cloudy_light.svg)
 
 50
 
@@ -981,7 +981,7 @@ High: 58° Low: 43° Precip: 45%
 
 8 PM
 
-![](https://www.gstatic.com/weather/conditions/v1/svg/cloudy_light.svg)
+![alt text needed](https://www.gstatic.com/weather/conditions/v1/svg/cloudy_light.svg)
 
 0%
 
@@ -989,7 +989,7 @@ High: 58° Low: 43° Precip: 45%
 
 9 PM
 
-![](https://www.gstatic.com/weather/conditions/v1/svg/drizzle_light.svg)
+![alt text needed](https://www.gstatic.com/weather/conditions/v1/svg/drizzle_light.svg)
 
 29%
 
@@ -997,7 +997,7 @@ High: 58° Low: 43° Precip: 45%
 
 10 PM
 
-![](https://www.gstatic.com/weather/conditions/v1/svg/drizzle_light.svg)
+![alt text needed](https://www.gstatic.com/weather/conditions/v1/svg/drizzle_light.svg)
 
 17%
 
@@ -1005,7 +1005,7 @@ High: 58° Low: 43° Precip: 45%
 
 11 PM
 
-![](https://www.gstatic.com/weather/conditions/v1/svg/cloudy_light.svg)
+![alt text needed](https://www.gstatic.com/weather/conditions/v1/svg/cloudy_light.svg)
 
 6%
 
@@ -1013,7 +1013,7 @@ High: 58° Low: 43° Precip: 45%
 
 12 AM
 
-![](https://www.gstatic.com/weather/conditions/v1/svg/cloudy_light.svg)
+![alt text needed](https://www.gstatic.com/weather/conditions/v1/svg/cloudy_light.svg)
 
 9%
 
@@ -1021,7 +1021,7 @@ High: 58° Low: 43° Precip: 45%
 
 1 AM
 
-![](https://www.gstatic.com/weather/conditions/v1/svg/cloudy_light.svg)
+![alt text needed](https://www.gstatic.com/weather/conditions/v1/svg/cloudy_light.svg)
 
 12%
 
@@ -1029,7 +1029,7 @@ High: 58° Low: 43° Precip: 45%
 
 2 AM
 
-![](https://www.gstatic.com/weather/conditions/v1/svg/mostly_cloudy_night_light.svg)
+![alt text needed](https://www.gstatic.com/weather/conditions/v1/svg/mostly_cloudy_night_light.svg)
 
 11%
 
@@ -1037,7 +1037,7 @@ High: 58° Low: 43° Precip: 45%
 
 3 AM
 
-![](https://www.gstatic.com/weather/conditions/v1/svg/cloudy_light.svg)
+![alt text needed](https://www.gstatic.com/weather/conditions/v1/svg/cloudy_light.svg)
 
 10%
 
@@ -1045,7 +1045,7 @@ High: 58° Low: 43° Precip: 45%
 
 4 AM
 
-![](https://www.gstatic.com/weather/conditions/v1/svg/mostly_cloudy_night_light.svg)
+![alt text needed](https://www.gstatic.com/weather/conditions/v1/svg/mostly_cloudy_night_light.svg)
 
 9%
 
@@ -1053,7 +1053,7 @@ High: 58° Low: 43° Precip: 45%
 
 5 AM
 
-![](https://www.gstatic.com/weather/conditions/v1/svg/mostly_cloudy_night_light.svg)
+![alt text needed](https://www.gstatic.com/weather/conditions/v1/svg/mostly_cloudy_night_light.svg)
 
 8%
 
@@ -1061,7 +1061,7 @@ High: 58° Low: 43° Precip: 45%
 
 6 AM
 
-![](https://www.gstatic.com/weather/conditions/v1/svg/partly_cloudy_night_light.svg)
+![alt text needed](https://www.gstatic.com/weather/conditions/v1/svg/partly_cloudy_night_light.svg)
 
 7%
 
@@ -1069,7 +1069,7 @@ High: 58° Low: 43° Precip: 45%
 
 7 AM
 
-![](https://www.gstatic.com/weather/conditions/v1/svg/partly_cloudy_night_light.svg)
+![alt text needed](https://www.gstatic.com/weather/conditions/v1/svg/partly_cloudy_night_light.svg)
 
 7%
 
@@ -1077,7 +1077,7 @@ High: 58° Low: 43° Precip: 45%
 
 8 AM
 
-![](https://www.gstatic.com/weather/conditions/v1/svg/sunny_light.svg)
+![alt text needed](https://www.gstatic.com/weather/conditions/v1/svg/sunny_light.svg)
 
 15%
 
@@ -1085,7 +1085,7 @@ High: 58° Low: 43° Precip: 45%
 
 9 AM
 
-![](https://www.gstatic.com/weather/conditions/v1/svg/partly_cloudy_light.svg)
+![alt text needed](https://www.gstatic.com/weather/conditions/v1/svg/partly_cloudy_light.svg)
 
 15%
 
@@ -1093,7 +1093,7 @@ High: 58° Low: 43° Precip: 45%
 
 10 AM
 
-![](https://www.gstatic.com/weather/conditions/v1/svg/drizzle_light.svg)
+![alt text needed](https://www.gstatic.com/weather/conditions/v1/svg/drizzle_light.svg)
 
 20%
 
@@ -1101,7 +1101,7 @@ High: 58° Low: 43° Precip: 45%
 
 11 AM
 
-![](https://www.gstatic.com/weather/conditions/v1/svg/drizzle_light.svg)
+![alt text needed](https://www.gstatic.com/weather/conditions/v1/svg/drizzle_light.svg)
 
 20%
 
@@ -1109,7 +1109,7 @@ High: 58° Low: 43° Precip: 45%
 
 12 PM
 
-![](https://www.gstatic.com/weather/conditions/v1/svg/drizzle_light.svg)
+![alt text needed](https://www.gstatic.com/weather/conditions/v1/svg/drizzle_light.svg)
 
 35%
 
@@ -1117,7 +1117,7 @@ High: 58° Low: 43° Precip: 45%
 
 1 PM
 
-![](https://www.gstatic.com/weather/conditions/v1/svg/drizzle_light.svg)
+![alt text needed](https://www.gstatic.com/weather/conditions/v1/svg/drizzle_light.svg)
 
 25%
 
@@ -1125,7 +1125,7 @@ High: 58° Low: 43° Precip: 45%
 
 2 PM
 
-![](https://www.gstatic.com/weather/conditions/v1/svg/drizzle_light.svg)
+![alt text needed](https://www.gstatic.com/weather/conditions/v1/svg/drizzle_light.svg)
 
 35%
 
@@ -1133,7 +1133,7 @@ High: 58° Low: 43° Precip: 45%
 
 3 PM
 
-![](https://www.gstatic.com/weather/conditions/v1/svg/rain_showers_light.svg)
+![alt text needed](https://www.gstatic.com/weather/conditions/v1/svg/rain_showers_light.svg)
 
 65%
 
@@ -1141,7 +1141,7 @@ High: 58° Low: 43° Precip: 45%
 
 4 PM
 
-![](https://www.gstatic.com/weather/conditions/v1/svg/drizzle_light.svg)
+![alt text needed](https://www.gstatic.com/weather/conditions/v1/svg/drizzle_light.svg)
 
 35%
 
@@ -1149,7 +1149,7 @@ High: 58° Low: 43° Precip: 45%
 
 5 PM
 
-![](https://www.gstatic.com/weather/conditions/v1/svg/drizzle_light.svg)
+![alt text needed](https://www.gstatic.com/weather/conditions/v1/svg/drizzle_light.svg)
 
 25%
 
@@ -1157,7 +1157,7 @@ High: 58° Low: 43° Precip: 45%
 
 6 PM
 
-![](https://www.gstatic.com/weather/conditions/v1/svg/rain_showers_light.svg)
+![alt text needed](https://www.gstatic.com/weather/conditions/v1/svg/rain_showers_light.svg)
 
 75%
 
@@ -1165,7 +1165,7 @@ High: 58° Low: 43° Precip: 45%
 
 7 PM
 
-![](https://www.gstatic.com/weather/conditions/v1/svg/drizzle_light.svg)
+![alt text needed](https://www.gstatic.com/weather/conditions/v1/svg/drizzle_light.svg)
 
 25%
 
@@ -1173,7 +1173,7 @@ High: 58° Low: 43° Precip: 45%
 
 8 PM
 
-![](https://www.gstatic.com/weather/conditions/v1/svg/drizzle_light.svg)
+![alt text needed](https://www.gstatic.com/weather/conditions/v1/svg/drizzle_light.svg)
 
 40%
 

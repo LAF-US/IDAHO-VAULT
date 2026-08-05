@@ -18,6 +18,6 @@ related:
 RT @rachelwalexande: adding notes in your own story like https://t.co/gXHXk2D1R8
 
 ## Media
-- ![](https://pbs.twimg.com/media/Fj9wxIwaAAADQki.png)
+- ![alt text needed](https://pbs.twimg.com/media/Fj9wxIwaAAADQki.png)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1603127789003370496)

@@ -18,7 +18,6 @@ related:
   - IDLEG
 ---
 
-RT @IDHouseCaucus: Speaker of the House Scott Bedke is excited to announce the formation of the House Historical Working Group!
-#IDLEG #IDP…
+RT @IDHouseCaucus: Speaker of the House Scott Bedke is excited to announce the formation of the House Historical Working Group! #IDLEG #IDP…
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1357778730366558213)

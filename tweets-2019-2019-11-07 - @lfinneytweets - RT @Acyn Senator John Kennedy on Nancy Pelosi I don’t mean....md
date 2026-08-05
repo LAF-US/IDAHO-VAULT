@@ -19,6 +19,6 @@ RT @Acyn: Senator John Kennedy on Nancy Pelosi: I don’t mean any disrespect bu
 
 ## Media
 
-- ![](https://pbs.twimg.com/ext_tw_video_thumb/1192268701845749761/pu/img/iBuHGSXytq24EDjf.jpg)
+- ![alt text needed](https://pbs.twimg.com/ext_tw_video_thumb/1192268701845749761/pu/img/iBuHGSXytq24EDjf.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1192312264277123072)

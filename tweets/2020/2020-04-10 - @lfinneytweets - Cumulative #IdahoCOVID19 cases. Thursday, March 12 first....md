@@ -22,7 +22,7 @@ Thursday, March 12: first confirmed case
 Thursday, April 9 (week four): 1,353 https://t.co/ZQeHB94IFn
 
 ## Media
-- ![](https://pbs.twimg.com/media/EVN138mUMAIkn04.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EVN138mUMAIkn04.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

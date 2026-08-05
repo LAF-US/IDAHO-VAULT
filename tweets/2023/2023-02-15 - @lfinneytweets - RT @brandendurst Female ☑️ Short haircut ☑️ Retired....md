@@ -28,8 +28,6 @@ Short haircut? ☑️
 "Retired educator"? ☑️
 Liberal? ☑️
 
-Must be a @reclaimID clone!
-
-#idpol #idleg #idedu
+Must be a @reclaimID clone! #idpol #idleg #idedu
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1625996525540376576)

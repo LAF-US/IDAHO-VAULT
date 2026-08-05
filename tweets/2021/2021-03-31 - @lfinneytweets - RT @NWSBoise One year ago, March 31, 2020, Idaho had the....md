@@ -18,7 +18,6 @@ related:
   - earthquake
 ---
 
-RT @NWSBoise: One year ago, March 31, 2020, Idaho had the biggest 
-#earthquake in the state in 37 years. The earthquake was a 6.5M originat…
+RT @NWSBoise: One year ago, March 31, 2020, Idaho had the biggest #earthquake in the state in 37 years. The earthquake was a 6.5M originat…
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1377371761998618624)

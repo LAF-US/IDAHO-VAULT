@@ -16,7 +16,7 @@ related:
   - IdahoCOVID19
 ---
 
-#IdahoCOVID19 https://t.co/0D6LsdcWMg
+\#IdahoCOVID19 https://t.co/0D6LsdcWMg
 
 ## Links
 - https://x.com/DailyBee/status/1244340332466040832

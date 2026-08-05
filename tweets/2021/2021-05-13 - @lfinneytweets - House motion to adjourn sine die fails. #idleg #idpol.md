@@ -21,6 +21,6 @@ related:
 House motion to adjourn sine die fails. #idleg #idpol https://t.co/BDAgGULkOd
 
 ## Media
-- ![](https://pbs.twimg.com/media/E1Po_wVUYAAmxEs.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/E1Po_wVUYAAmxEs.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1392712969201479681)

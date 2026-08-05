@@ -17,7 +17,7 @@ related:
 Lovely advertisement, too https://t.co/TygZcN8Hxz
 
 ## Media
-- ![](https://pbs.twimg.com/media/EWEYcLRUcAE3jiV.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EWEYcLRUcAE3jiV.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

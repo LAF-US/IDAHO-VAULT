@@ -18,7 +18,7 @@ related:
   - idpol
 ---
 
-#idahocovid19 #idpol https://t.co/m3BdemLpUU
+\#idahocovid19 #idpol https://t.co/m3BdemLpUU
 
 ## Links
 - https://x.com/IdahoPubRadio/status/1247747450640580612

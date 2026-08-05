@@ -26,6 +26,6 @@ Younger respondents and those with children under 18 were more likely to rate Id
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/EPUai1PUUAEhHQ4.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EPUai1PUUAEhHQ4.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1221912997087440896)

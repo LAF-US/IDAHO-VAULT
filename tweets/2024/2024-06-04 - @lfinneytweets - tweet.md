@@ -19,7 +19,7 @@ related:
 @ReversVinc82189 https://t.co/lyeqtu3tbD
 
 ## Media
-- ![](https://pbs.twimg.com/tweet_video_thumb/GPPl0gqacAUQrbF.jpg)
+- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/GPPl0gqacAUQrbF.jpg)
 
 *In reply to [@ReversVinc82189](https://twitter.com/ReversVinc82189)*
 
