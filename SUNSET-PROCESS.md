@@ -102,7 +102,7 @@ This document defines the structured process for managing the lifecycle of non-p
 1. Logan reviews all flagged agents in AGENT-REGISTRY.md
 2. Logan issues deletion order in format:
 
-   ```
+   ```text
    DELETE: <Agent Name>
    Reason: [brief rationale]
    Approved: Logan

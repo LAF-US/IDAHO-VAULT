@@ -88,6 +88,6 @@ bell was never mine.
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

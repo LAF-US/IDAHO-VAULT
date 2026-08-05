@@ -108,6 +108,6 @@ the entire difference, and it is not a metaphor. Bank it before the two taps.
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

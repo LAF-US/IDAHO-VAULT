@@ -59,7 +59,7 @@ python .claude/skills/run-idaho-vault/driver.py test   # just the test suite
 
 Full smoke prints, and exits 0 on success:
 
-```
+```text
 == run_crew: bootstrap validation crew (offline mock LLM) ==
 Overall status: PASS
   -> run_crew OK (PASS)

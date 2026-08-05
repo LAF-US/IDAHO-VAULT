@@ -410,6 +410,6 @@ written** — the lesson is to read the vault's own word before re-spinning the 
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

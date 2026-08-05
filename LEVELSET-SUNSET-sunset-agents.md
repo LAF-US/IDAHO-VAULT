@@ -154,7 +154,7 @@ All work is complete:
 
 3. **Issue explicit deletion orders** for each ephemeral agent:
 
-   ```
+   ```text
    DELETE: TASK - Sunset non-persistent agents
    Reason: [Logan's rationale]
    Approved: Logan

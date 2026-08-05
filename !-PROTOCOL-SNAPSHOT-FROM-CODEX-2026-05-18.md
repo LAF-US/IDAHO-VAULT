@@ -83,6 +83,6 @@ Names referenced in vault discussion or closed PRs but lacking a defined surface
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

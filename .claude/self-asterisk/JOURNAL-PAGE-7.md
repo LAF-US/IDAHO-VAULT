@@ -98,6 +98,6 @@ is itself the Charter chosen over the Free Magic, this page included.
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```
