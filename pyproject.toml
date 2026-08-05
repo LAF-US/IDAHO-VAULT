@@ -4,8 +4,8 @@ version = "0.1.0"
 description = "The world is quiet here．Esto Perpetua!"
 authors = [{ name = "Logan Finney" }, { name = "Unified Swarm" }]
 # Without this, uv resolves against its own default of >=3.13 — which silently
-# drops every 3.10 resolution from uv.lock while smoke-tests.yml still runs the
-# suite on 3.10. Measured: removing it collapsed pygit2 from two version-split
+# drops every 3.10 resolution from uv.lock while cross-platform-smoke.yml still
+# runs the suite on 3.10. Measured: removing it collapsed pygit2 from two version-split
 # entries (1.18.2 for 3.10, 1.19.3 for 3.11+) to one, and left the lock claiming
 # 3.13-only for a project CI exercises on 3.10.
 requires-python = ">=3.10,<3.14"
