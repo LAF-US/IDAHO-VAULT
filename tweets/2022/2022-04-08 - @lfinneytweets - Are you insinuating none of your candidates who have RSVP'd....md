@@ -1,4 +1,5 @@
 ---
+title: "Are you insinuating none of your candidates who have RSVP'd..."
 date: 2022-04-08
 time: 23:26:16
 tweet_id: "1512572563536289792"

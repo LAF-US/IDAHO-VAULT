@@ -1,4 +1,5 @@
 ---
+title: "I think it's fair to say TECM bonds are the wonkiest..."
 date: 2023-03-27
 time: 20:32:46
 tweet_id: "1640451820287057920"

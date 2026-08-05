@@ -1,4 +1,5 @@
 ---
+title: "I asked @IDHW for more detail on vaccine waste. Their spox..."
 date: 2021-01-08
 time: 02:39:32
 tweet_id: "1347372334731071488"

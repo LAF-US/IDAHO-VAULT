@@ -1,4 +1,5 @@
 ---
+title: "Finally publishing this piece at the intersection of all my..."
 date: 2021-09-30
 time: 18:45:05
 tweet_id: "1443648108768858128"

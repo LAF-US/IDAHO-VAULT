@@ -1,4 +1,5 @@
 ---
+title: "Reported deaths by day."
 date: 2020-04-10
 time: 04:51:42
 tweet_id: "1248473708286464006"

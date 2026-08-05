@@ -1,4 +1,5 @@
 ---
+title: "I had a fabulous time today talking with these whipsmart..."
 date: 2022-02-26
 time: 01:14:41
 tweet_id: "1497379558751813633"

@@ -1,4 +1,5 @@
 ---
+title: "Idaho's @RepRussFulcher standing behind Scalise's shoulder"
 date: 2019-10-23
 time: 21:01:57
 tweet_id: "1187111942059511809"

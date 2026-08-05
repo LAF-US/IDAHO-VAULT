@@ -1,4 +1,5 @@
 ---
+title: "RT @EastIDNews Local drag queen reading time attracts a..."
 date: 2023-02-13
 time: 18:48:03
 tweet_id: "1625205176142528512"

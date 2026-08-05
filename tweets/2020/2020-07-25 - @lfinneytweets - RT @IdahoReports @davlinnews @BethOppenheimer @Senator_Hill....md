@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports @davlinnews @BethOppenheimer @Senator_Hill..."
 date: 2020-07-25
 time: 02:04:08
 tweet_id: "1286844655309475841"

@@ -1,4 +1,5 @@
 ---
+title: "This news just broke as we finished taping tonight's..."
 date: 2020-03-13
 time: 22:45:02
 tweet_id: "1238596962699448321"

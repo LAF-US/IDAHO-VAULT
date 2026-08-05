@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Gov. Brad Little shared his plans for..."
 date: 2026-01-15
 time: 02:07:56
 tweet_id: "2011621340818866251"

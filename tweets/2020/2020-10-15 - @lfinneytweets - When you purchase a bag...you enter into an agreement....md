@@ -1,4 +1,5 @@
 ---
+title: "When you purchase a bag...you enter into an agreement..."
 date: 2020-10-15
 time: 15:23:45
 tweet_id: "1316761690172661761"

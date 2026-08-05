@@ -1,4 +1,5 @@
 ---
+title: "Fire crews at Trestle Creek are scheduled to wrap the Lunch..."
 date: 2021-07-16
 time: 16:06:03
 tweet_id: "1416066607814615041"

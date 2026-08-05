@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise School funding initiative..."
 date: 2022-04-19
 time: 02:09:05
 tweet_id: "1516237420232011776"

@@ -1,4 +1,5 @@
 ---
+title: "Both chambers of the Idaho Legislature approved their last..."
 date: 2025-04-04
 time: 03:02:52
 tweet_id: "1907992237767790946"

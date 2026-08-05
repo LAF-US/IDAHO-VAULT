@@ -1,4 +1,5 @@
 ---
+title: "RT @idahofreedom Rep. Fred Wood Idaho Freedom Index ratings..."
 date: 2020-03-09
 time: 19:35:04
 tweet_id: "1237099604849479681"

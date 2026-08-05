@@ -1,4 +1,5 @@
 ---
+title: "Thought the Idaho legislative session would end today..."
 date: 2024-03-29
 time: 17:23:44
 tweet_id: "1773762982691975517"

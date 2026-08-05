@@ -1,4 +1,5 @@
 ---
+title: "I crunched some numbers over on the @IdahoReports blog. Go..."
 date: 2020-11-06
 time: 18:46:36
 tweet_id: "1324785269124464640"

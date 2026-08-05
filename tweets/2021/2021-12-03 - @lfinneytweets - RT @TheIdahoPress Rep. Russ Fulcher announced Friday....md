@@ -1,4 +1,5 @@
 ---
+title: "RT @TheIdahoPress Rep. Russ Fulcher announced Friday..."
 date: 2021-12-03
 time: 22:44:31
 tweet_id: "1466901187651784707"

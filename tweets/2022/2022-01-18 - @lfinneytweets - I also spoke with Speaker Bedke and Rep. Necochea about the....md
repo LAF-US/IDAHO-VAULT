@@ -1,4 +1,5 @@
 ---
+title: "I also spoke with Speaker Bedke and Rep. Necochea about the..."
 date: 2022-01-18
 time: 16:05:35
 tweet_id: "1483470632918470657"

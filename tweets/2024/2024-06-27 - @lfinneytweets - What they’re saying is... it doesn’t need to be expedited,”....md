@@ -1,4 +1,5 @@
 ---
+title: "What they\u2019re saying is... it doesn\u2019t need to be expedited,\u201d..."
 date: 2024-06-27
 time: 18:51:45
 tweet_id: "1806400039880892815"

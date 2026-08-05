@@ -1,4 +1,5 @@
 ---
+title: "Because of the coronavirus pandemic, the typical corporate..."
 date: 2020-06-08
 time: 18:36:41
 tweet_id: "1270062207666024450"

@@ -1,4 +1,5 @@
 ---
+title: "Idaho House votes down @IDSecOfState budget as well. #idleg..."
 date: 2020-03-09
 time: 17:45:15
 tweet_id: "1237071967318151169"

@@ -1,4 +1,5 @@
 ---
+title: "RT @TheInlander As Spokane use of curfew power raises..."
 date: 2020-06-10
 time: 02:08:49
 tweet_id: "1270538379529052161"

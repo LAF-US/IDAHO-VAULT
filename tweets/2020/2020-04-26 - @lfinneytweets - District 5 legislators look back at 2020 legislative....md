@@ -1,4 +1,5 @@
 ---
+title: "District 5 legislators look back at 2020 legislative..."
 date: 2020-04-26
 time: 18:14:11
 tweet_id: "1254473866358878208"

@@ -1,4 +1,5 @@
 ---
+title: "Marilyn Monroe c. 1951"
 date: 2024-07-15
 time: 22:20:35
 tweet_id: "1812975576057278709"

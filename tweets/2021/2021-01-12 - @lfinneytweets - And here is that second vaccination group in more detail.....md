@@ -1,4 +1,5 @@
 ---
+title: "And here is that second vaccination group in more detail...."
 date: 2021-01-12
 time: 22:10:13
 tweet_id: "1349116501228359681"

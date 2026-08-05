@@ -1,4 +1,5 @@
 ---
+title: "RT @BoiseDev Live in an HOA The Idaho legislature quietly..."
 date: 2022-04-19
 time: 20:29:54
 tweet_id: "1516514446134312963"

@@ -1,4 +1,5 @@
 ---
+title: "Tuesday #idpol reminder Keep your campaigning at least 250..."
 date: 2024-05-20
 time: 20:06:08
 tweet_id: "1792648020888039568"

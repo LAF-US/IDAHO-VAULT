@@ -1,4 +1,5 @@
 ---
+title: "Rubel as case numbers increase, Ada County housing..."
 date: 2020-03-19
 time: 22:49:34
 tweet_id: "1240772431217709057"

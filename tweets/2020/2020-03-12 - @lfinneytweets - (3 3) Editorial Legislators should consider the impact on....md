@@ -1,4 +1,5 @@
 ---
+title: "(3 3) Editorial Legislators should consider the impact on..."
 date: 2020-03-12
 time: 19:05:47
 tweet_id: "1238179399096078336"

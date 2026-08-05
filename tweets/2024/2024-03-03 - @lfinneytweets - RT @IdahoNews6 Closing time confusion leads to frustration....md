@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoNews6 Closing time confusion leads to frustration..."
 date: 2024-03-03
 time: 01:58:10
 tweet_id: "1764107969506259233"

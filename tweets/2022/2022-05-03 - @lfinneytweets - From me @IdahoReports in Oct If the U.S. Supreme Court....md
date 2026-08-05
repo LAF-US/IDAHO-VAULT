@@ -1,4 +1,5 @@
 ---
+title: "From me @IdahoReports in Oct If the U.S. Supreme Court..."
 date: 2022-05-03
 time: 01:45:28
 tweet_id: "1521304903536152576"

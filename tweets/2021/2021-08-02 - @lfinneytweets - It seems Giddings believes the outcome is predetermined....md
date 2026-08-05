@@ -1,4 +1,5 @@
 ---
+title: "It seems Giddings believes the outcome is predetermined..."
 date: 2021-08-02
 time: 16:58:33
 tweet_id: "1422240416284372993"

@@ -1,4 +1,5 @@
 ---
+title: "Individual senators have a lot of power under the rules!..."
 date: 2026-03-02
 time: 21:54:52
 tweet_id: "2028589882994728986"

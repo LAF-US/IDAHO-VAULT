@@ -1,4 +1,5 @@
 ---
+title: "Yesterday, @IdahoITD said they would keep Hwy 95 south of..."
 date: 2020-07-10
 time: 16:53:18
 tweet_id: "1281632603351552001"

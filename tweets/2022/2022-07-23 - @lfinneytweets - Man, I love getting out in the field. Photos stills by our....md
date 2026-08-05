@@ -1,4 +1,5 @@
 ---
+title: "Man, I love getting out in the field. Photos stills by our..."
 date: 2022-07-23
 time: 01:55:15
 tweet_id: "1550660782286811136"

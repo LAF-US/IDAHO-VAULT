@@ -1,4 +1,5 @@
 ---
+title: "The bill itself is available here, and is embedded at the..."
 date: 2022-09-01
 time: 16:21:02
 tweet_id: "1565374181063110657"

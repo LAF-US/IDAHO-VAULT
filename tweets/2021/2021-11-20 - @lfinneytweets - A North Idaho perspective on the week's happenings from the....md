@@ -1,4 +1,5 @@
 ---
+title: "A North Idaho perspective on the week's happenings from the..."
 date: 2021-11-20
 time: 23:49:45
 tweet_id: "1462206563649613826"

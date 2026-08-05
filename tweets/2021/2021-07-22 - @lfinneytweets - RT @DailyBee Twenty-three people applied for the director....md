@@ -1,4 +1,5 @@
 ---
+title: "RT @DailyBee Twenty-three people applied for the director..."
 date: 2021-07-22
 time: 18:43:32
 tweet_id: "1418280566265286657"

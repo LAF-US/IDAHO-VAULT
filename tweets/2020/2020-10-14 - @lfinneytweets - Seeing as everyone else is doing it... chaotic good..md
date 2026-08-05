@@ -1,4 +1,5 @@
 ---
+title: "Seeing as everyone else is doing it... chaotic good."
 date: 2020-10-14
 time: 23:51:47
 tweet_id: "1316527153245118465"

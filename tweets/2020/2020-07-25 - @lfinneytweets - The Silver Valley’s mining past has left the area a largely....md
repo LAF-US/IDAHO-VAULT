@@ -1,4 +1,5 @@
 ---
+title: "The Silver Valley\u2019s mining past has left the area a largely..."
 date: 2020-07-25
 time: 01:59:33
 tweet_id: "1286843499954860032"

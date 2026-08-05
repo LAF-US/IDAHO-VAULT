@@ -1,4 +1,5 @@
 ---
+title: "thanks reddit #idpol"
 date: 2025-01-24
 time: 19:38:30
 tweet_id: "1882875643945476301"

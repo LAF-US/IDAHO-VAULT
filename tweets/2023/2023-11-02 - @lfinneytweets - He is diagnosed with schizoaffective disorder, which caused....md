@@ -1,4 +1,5 @@
 ---
+title: "He is diagnosed with schizoaffective disorder, which caused..."
 date: 2023-11-02
 time: 22:47:01
 tweet_id: "1720210933023486283"

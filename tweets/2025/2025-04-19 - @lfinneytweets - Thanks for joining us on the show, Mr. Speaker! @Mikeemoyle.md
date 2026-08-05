@@ -1,4 +1,5 @@
 ---
+title: "Thanks for joining us on the show, Mr. Speaker! @Mikeemoyle"
 date: 2025-04-19
 time: 00:39:26
 tweet_id: "1913391958258843776"

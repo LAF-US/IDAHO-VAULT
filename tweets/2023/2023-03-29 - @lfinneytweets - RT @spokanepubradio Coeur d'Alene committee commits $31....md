@@ -1,4 +1,5 @@
 ---
+title: "RT @spokanepubradio Coeur d'Alene committee commits $31..."
 date: 2023-03-29
 time: 15:48:35
 tweet_id: "1641105078940516354"

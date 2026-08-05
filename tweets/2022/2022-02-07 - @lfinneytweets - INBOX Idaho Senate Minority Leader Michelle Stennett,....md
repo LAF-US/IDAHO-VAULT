@@ -1,4 +1,5 @@
 ---
+title: "INBOX Idaho Senate Minority Leader Michelle Stennett,..."
 date: 2022-02-07
 time: 17:30:31
 tweet_id: "1490739766513471488"

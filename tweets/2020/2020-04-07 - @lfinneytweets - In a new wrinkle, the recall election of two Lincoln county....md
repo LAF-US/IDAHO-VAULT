@@ -1,4 +1,5 @@
 ---
+title: "In a new wrinkle, the recall election of two Lincoln county..."
 date: 2020-04-07
 time: 00:15:50
 tweet_id: "1247317121408724995"

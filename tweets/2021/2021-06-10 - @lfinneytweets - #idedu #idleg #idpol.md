@@ -1,4 +1,5 @@
 ---
+title: "#idedu #idleg #idpol"
 date: 2021-06-10
 time: 05:06:54
 tweet_id: "1402854766523293696"

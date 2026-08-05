@@ -1,4 +1,5 @@
 ---
+title: "RT @kridler House panel OKs Idaho bill to ban transgender..."
 date: 2020-02-20
 time: 17:03:20
 tweet_id: "1230538436722847745"

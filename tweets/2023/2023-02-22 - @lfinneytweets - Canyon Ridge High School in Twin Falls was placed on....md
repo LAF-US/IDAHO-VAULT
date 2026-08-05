@@ -1,4 +1,5 @@
 ---
+title: "Canyon Ridge High School in Twin Falls was placed on..."
 date: 2023-02-22
 time: 22:23:40
 tweet_id: "1628520929927249920"

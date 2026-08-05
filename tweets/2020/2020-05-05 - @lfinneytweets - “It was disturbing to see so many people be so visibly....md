@@ -1,4 +1,5 @@
 ---
+title: "\u201cIt was disturbing to see so many people be so visibly..."
 date: 2020-05-05
 time: 22:08:43
 tweet_id: "1257794380481495040"

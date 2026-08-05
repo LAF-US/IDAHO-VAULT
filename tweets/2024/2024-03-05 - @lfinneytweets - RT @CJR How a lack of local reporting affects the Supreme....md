@@ -1,4 +1,5 @@
 ---
+title: "RT @CJR How a lack of local reporting affects the Supreme..."
 date: 2024-03-05
 time: 16:13:16
 tweet_id: "1765047938341068915"

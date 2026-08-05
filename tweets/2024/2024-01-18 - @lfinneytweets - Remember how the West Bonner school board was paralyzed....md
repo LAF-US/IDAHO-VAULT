@@ -1,4 +1,5 @@
 ---
+title: "Remember how the West Bonner school board was paralyzed..."
 date: 2024-01-18
 time: 23:27:22
 tweet_id: "1748124955987112245"

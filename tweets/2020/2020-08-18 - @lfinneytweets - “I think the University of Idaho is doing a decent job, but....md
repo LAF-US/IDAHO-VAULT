@@ -1,4 +1,5 @@
 ---
+title: "\u201cI think the University of Idaho is doing a decent job, but..."
 date: 2020-08-18
 time: 17:24:56
 tweet_id: "1295773687988117504"

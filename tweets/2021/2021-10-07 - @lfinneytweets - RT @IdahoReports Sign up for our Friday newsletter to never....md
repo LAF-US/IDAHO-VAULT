@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Sign up for our Friday newsletter to never..."
 date: 2021-10-07
 time: 21:56:36
 tweet_id: "1446233020516634624"

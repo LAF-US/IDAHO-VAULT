@@ -1,4 +1,5 @@
 ---
+title: "New Poll Shows How Varied The Experiences Of The LGBTQ..."
 date: 2018-06-13
 time: 22:29:44
 tweet_id: "1007027266973388801"

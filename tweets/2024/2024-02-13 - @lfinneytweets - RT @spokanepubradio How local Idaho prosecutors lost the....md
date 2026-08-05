@@ -1,4 +1,5 @@
 ---
+title: "RT @spokanepubradio How local Idaho prosecutors lost the..."
 date: 2024-02-13
 time: 20:00:58
 tweet_id: "1757495099037221291"

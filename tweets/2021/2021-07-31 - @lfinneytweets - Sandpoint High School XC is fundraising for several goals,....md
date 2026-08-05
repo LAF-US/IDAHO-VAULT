@@ -1,4 +1,5 @@
 ---
+title: "Sandpoint High School XC is fundraising for several goals,..."
 date: 2021-07-31
 time: 18:03:36
 tweet_id: "1421532007566241800"

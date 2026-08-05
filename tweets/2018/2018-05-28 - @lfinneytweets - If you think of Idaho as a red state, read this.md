@@ -1,4 +1,5 @@
 ---
+title: "If you think of Idaho as a red state, read this"
 date: 2018-05-28
 time: 01:07:04
 tweet_id: "1000906267634819072"

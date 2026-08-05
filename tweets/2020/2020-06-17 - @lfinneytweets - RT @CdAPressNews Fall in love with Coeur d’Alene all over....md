@@ -1,4 +1,5 @@
 ---
+title: "RT @CdAPressNews Fall in love with Coeur d\u2019Alene all over..."
 date: 2020-06-17
 time: 16:44:08
 tweet_id: "1273295371993616385"

@@ -1,4 +1,5 @@
 ---
+title: "RT @LewistonTribune The Trib\u2019s @pete_caster had a picture..."
 date: 2021-07-13
 time: 20:21:27
 tweet_id: "1415043720865480706"

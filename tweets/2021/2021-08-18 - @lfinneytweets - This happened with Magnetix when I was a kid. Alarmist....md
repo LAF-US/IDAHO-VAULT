@@ -1,4 +1,5 @@
 ---
+title: "This happened with Magnetix when I was a kid. Alarmist..."
 date: 2021-08-18
 time: 05:09:18
 tweet_id: "1427860133195894785"

@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoStatesman North Idaho senator yells \u2018go back to..."
 date: 2024-10-04
 time: 02:20:48
 tweet_id: "1842027058643534333"

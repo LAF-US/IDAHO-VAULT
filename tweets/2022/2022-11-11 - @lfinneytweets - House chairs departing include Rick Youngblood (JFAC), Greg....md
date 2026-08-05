@@ -1,4 +1,5 @@
 ---
+title: "House chairs departing include Rick Youngblood (JFAC), Greg..."
 date: 2022-11-11
 time: 04:08:08
 tweet_id: "1590919277523398657"

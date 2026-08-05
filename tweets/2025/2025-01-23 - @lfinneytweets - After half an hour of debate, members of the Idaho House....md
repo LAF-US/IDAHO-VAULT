@@ -1,4 +1,5 @@
 ---
+title: "After half an hour of debate, members of the Idaho House..."
 date: 2025-01-23
 time: 19:28:01
 tweet_id: "1882510618311479358"

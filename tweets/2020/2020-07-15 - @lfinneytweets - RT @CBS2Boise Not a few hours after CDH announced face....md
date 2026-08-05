@@ -1,4 +1,5 @@
 ---
+title: "RT @CBS2Boise Not a few hours after CDH announced face..."
 date: 2020-07-15
 time: 03:32:15
 tweet_id: "1283242950009384961"

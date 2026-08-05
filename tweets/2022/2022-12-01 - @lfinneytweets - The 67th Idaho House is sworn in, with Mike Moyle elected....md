@@ -1,4 +1,5 @@
 ---
+title: "The 67th Idaho House is sworn in, with Mike Moyle elected..."
 date: 2022-12-01
 time: 16:17:26
 tweet_id: "1598350569470853125"

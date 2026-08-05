@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio .@IDHW says the statewide COVID-19..."
 date: 2020-06-27
 time: 21:04:01
 tweet_id: "1276984652918427648"

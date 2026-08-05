@@ -1,4 +1,5 @@
 ---
+title: "#IdahoCOVID19 @RepHeatherScott"
 date: 2020-04-27
 time: 18:18:02
 tweet_id: "1254837224392126473"

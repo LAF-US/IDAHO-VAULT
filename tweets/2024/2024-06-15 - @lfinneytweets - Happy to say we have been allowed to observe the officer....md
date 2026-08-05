@@ -1,4 +1,5 @@
 ---
+title: "Happy to say we have been allowed to observe the officer..."
 date: 2024-06-15
 time: 21:12:39
 tweet_id: "1802086846341820541"

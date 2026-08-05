@@ -1,4 +1,5 @@
 ---
+title: "same comparison but in video"
 date: 2024-12-10
 time: 19:59:30
 tweet_id: "1866573477454680163"

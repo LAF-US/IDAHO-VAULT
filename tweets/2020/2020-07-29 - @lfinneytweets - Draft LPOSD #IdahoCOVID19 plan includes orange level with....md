@@ -1,4 +1,5 @@
 ---
+title: "Draft LPOSD #IdahoCOVID19 plan includes orange level with..."
 date: 2020-07-29
 time: 15:35:17
 tweet_id: "1288498339462279170"

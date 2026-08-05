@@ -1,4 +1,5 @@
 ---
+title: "Plenty of national political voices blamed the media for..."
 date: 2024-06-07
 time: 16:49:50
 tweet_id: "1799121602170286483"

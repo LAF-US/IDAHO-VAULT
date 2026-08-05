@@ -1,4 +1,5 @@
 ---
+title: "#SpeakerOfTheHouseVote Rep. Mike Simpson votes Scalise."
 date: 2023-10-17
 time: 17:34:33
 tweet_id: "1714334093348126740"

@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Tonight, @KevinRichert of @idahoednews..."
 date: 2020-06-26
 time: 17:14:31
 tweet_id: "1276564512863162369"

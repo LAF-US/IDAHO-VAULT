@@ -1,4 +1,5 @@
 ---
+title: "The @nypost article ( is also a summary of a @DailyMail..."
 date: 2021-08-02
 time: 13:08:23
 tweet_id: "1422182493118078979"

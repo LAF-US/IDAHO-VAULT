@@ -1,4 +1,5 @@
 ---
+title: "The reviews for Logan's Budget Tracker\u2122 are in \u2b50 amazing! \u2b50..."
 date: 2025-04-01
 time: 02:03:44
 tweet_id: "1906890192264581619"

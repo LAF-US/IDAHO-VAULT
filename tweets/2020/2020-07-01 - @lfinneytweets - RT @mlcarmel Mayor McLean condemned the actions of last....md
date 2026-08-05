@@ -1,4 +1,5 @@
 ---
+title: "RT @mlcarmel Mayor McLean condemned the actions of last..."
 date: 2020-07-01
 time: 15:58:25
 tweet_id: "1278357300915220480"

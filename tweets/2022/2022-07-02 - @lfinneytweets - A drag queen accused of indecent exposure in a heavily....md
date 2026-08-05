@@ -1,4 +1,5 @@
 ---
+title: "A drag queen accused of indecent exposure in a heavily..."
 date: 2022-07-02
 time: 23:21:13
 tweet_id: "1543374263905751041"

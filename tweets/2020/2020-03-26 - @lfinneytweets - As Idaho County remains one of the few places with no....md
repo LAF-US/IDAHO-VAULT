@@ -1,4 +1,5 @@
 ---
+title: "As Idaho County remains one of the few places with no..."
 date: 2020-03-26
 time: 20:13:13
 tweet_id: "1243269797703323648"

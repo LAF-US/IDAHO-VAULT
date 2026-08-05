@@ -1,4 +1,5 @@
 ---
+title: "\u201cI felt a severe pain in my nose, and with the maturity of..."
 date: 2024-08-01
 time: 20:12:00
 tweet_id: "1819103812021637629"

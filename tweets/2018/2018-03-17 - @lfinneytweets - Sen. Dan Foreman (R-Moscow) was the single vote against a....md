@@ -1,4 +1,5 @@
 ---
+title: "Sen. Dan Foreman (R-Moscow) was the single vote against a..."
 date: 2018-03-17
 time: 04:24:12
 tweet_id: "974863950771712001"

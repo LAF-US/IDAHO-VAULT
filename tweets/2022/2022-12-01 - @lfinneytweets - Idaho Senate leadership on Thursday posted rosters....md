@@ -1,4 +1,5 @@
 ---
+title: "Idaho Senate leadership on Thursday posted rosters..."
 date: 2022-12-01
 time: 21:01:31
 tweet_id: "1598422062170656768"

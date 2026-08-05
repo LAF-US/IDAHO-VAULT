@@ -1,4 +1,5 @@
 ---
+title: "RT @KTVB Rural Idaho hospitals and clinics fear return of..."
 date: 2022-01-18
 time: 07:47:53
 tweet_id: "1483345385435254788"

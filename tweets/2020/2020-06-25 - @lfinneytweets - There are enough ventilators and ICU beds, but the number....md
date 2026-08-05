@@ -1,4 +1,5 @@
 ---
+title: "There are enough ventilators and ICU beds, but the number..."
 date: 2020-06-25
 time: 18:15:46
 tweet_id: "1276217538200743936"

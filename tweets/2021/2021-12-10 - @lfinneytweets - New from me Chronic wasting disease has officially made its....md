@@ -1,4 +1,5 @@
 ---
+title: "New from me Chronic wasting disease has officially made its..."
 date: 2021-12-10
 time: 20:40:29
 tweet_id: "1469406687555584000"

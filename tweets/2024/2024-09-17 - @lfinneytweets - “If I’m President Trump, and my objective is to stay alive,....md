@@ -1,4 +1,5 @@
 ---
+title: "\u201cIf I\u2019m President Trump, and my objective is to stay alive,..."
 date: 2024-09-17
 time: 22:18:30
 tweet_id: "1836167877025841503"

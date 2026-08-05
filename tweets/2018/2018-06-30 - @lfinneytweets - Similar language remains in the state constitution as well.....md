@@ -1,4 +1,5 @@
 ---
+title: "Similar language remains in the state constitution as well...."
 date: 2018-06-30
 time: 22:04:04
 tweet_id: "1013181399761735681"

@@ -1,4 +1,5 @@
 ---
+title: "RT @KeithRidler Idaho Power cuts coal by 2028 in plan to..."
 date: 2022-01-05
 time: 19:11:51
 tweet_id: "1478806466396000258"

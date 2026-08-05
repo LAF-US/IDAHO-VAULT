@@ -1,4 +1,5 @@
 ---
+title: "RT @elijah_nicholas Heat wave kills fish on Priest River,..."
 date: 2021-07-07
 time: 21:08:44
 tweet_id: "1412881291037401089"

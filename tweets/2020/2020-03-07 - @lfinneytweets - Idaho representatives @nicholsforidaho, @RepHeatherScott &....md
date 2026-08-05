@@ -1,4 +1,5 @@
 ---
+title: "Idaho representatives @nicholsforidaho, @RepHeatherScott &..."
 date: 2020-03-07
 time: 20:03:50
 tweet_id: "1236382065899327500"

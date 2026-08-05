@@ -1,4 +1,5 @@
 ---
+title: "RT @Aminboise From Idaho"
 date: 2021-01-07
 time: 02:45:20
 tweet_id: "1347011405711433728"

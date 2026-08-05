@@ -1,4 +1,5 @@
 ---
+title: "OK, who built a Joe Biden animatronic and left the remote..."
 date: 2021-01-15
 time: 00:33:28
 tweet_id: "1349877324238385154"

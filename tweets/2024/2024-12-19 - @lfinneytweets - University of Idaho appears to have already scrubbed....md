@@ -1,4 +1,5 @@
 ---
+title: "University of Idaho appears to have already scrubbed..."
 date: 2024-12-19
 time: 22:05:26
 tweet_id: "1869866656643854683"

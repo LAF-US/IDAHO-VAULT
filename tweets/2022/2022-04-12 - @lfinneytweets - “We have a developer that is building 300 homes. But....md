@@ -1,4 +1,5 @@
 ---
+title: "\u201cWe have a developer that is building 300 homes. But..."
 date: 2022-04-12
 time: 16:54:29
 tweet_id: "1513923520983560194"

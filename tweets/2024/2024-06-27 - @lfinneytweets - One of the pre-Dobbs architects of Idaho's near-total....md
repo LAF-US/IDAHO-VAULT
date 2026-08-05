@@ -1,4 +1,5 @@
 ---
+title: "One of the pre-Dobbs architects of Idaho's near-total..."
 date: 2024-06-27
 time: 18:47:32
 tweet_id: "1806398978420015174"

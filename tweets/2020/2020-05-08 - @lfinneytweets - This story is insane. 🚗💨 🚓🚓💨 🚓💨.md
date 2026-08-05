@@ -1,4 +1,5 @@
 ---
+title: "This story is insane. \ud83d\ude97\ud83d\udca8 \ud83d\ude93\ud83d\ude93\ud83d\udca8 \ud83d\ude93\ud83d\udca8"
 date: 2020-05-08
 time: 19:54:11
 tweet_id: "1258847686565875712"

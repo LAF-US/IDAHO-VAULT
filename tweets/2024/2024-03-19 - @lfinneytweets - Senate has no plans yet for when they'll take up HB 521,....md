@@ -1,4 +1,5 @@
 ---
+title: "Senate has no plans yet for when they'll take up HB 521,..."
 date: 2024-03-19
 time: 18:11:22
 tweet_id: "1770151089733603405"

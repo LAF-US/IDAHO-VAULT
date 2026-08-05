@@ -1,4 +1,5 @@
 ---
+title: "Students, teachers, and parents told @BuzzFeedNews they..."
 date: 2020-08-06
 time: 23:11:28
 tweet_id: "1291512240927997953"

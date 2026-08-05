@@ -1,4 +1,5 @@
 ---
+title: "RT @MollyHarbarger As the protests have gone, the chanting..."
 date: 2020-08-08
 time: 06:07:04
 tweet_id: "1291979219669413888"

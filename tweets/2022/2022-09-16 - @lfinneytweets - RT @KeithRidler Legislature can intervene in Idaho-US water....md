@@ -1,4 +1,5 @@
 ---
+title: "RT @KeithRidler Legislature can intervene in Idaho-US water..."
 date: 2022-09-16
 time: 01:09:10
 tweet_id: "1570580518160441344"

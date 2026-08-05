@@ -1,4 +1,5 @@
 ---
+title: "RT @statesman Here's what 10 of Gov. Abbott's fellow..."
 date: 2021-10-06
 time: 00:57:46
 tweet_id: "1445553838811856897"

@@ -1,4 +1,5 @@
 ---
+title: "Idaho senators SPOTTED The state pairs walking together is..."
 date: 2024-07-24
 time: 19:16:25
 tweet_id: "1816190721935978802"

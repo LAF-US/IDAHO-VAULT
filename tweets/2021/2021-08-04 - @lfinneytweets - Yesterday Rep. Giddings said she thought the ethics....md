@@ -1,4 +1,5 @@
 ---
+title: "Yesterday Rep. Giddings said she thought the ethics..."
 date: 2021-08-04
 time: 01:38:44
 tweet_id: "1422733712626569218"

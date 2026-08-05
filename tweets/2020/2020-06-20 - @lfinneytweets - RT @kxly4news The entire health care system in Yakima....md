@@ -1,4 +1,5 @@
 ---
+title: "RT @kxly4news The entire health care system in Yakima..."
 date: 2020-06-20
 time: 01:35:21
 tweet_id: "1274153835951296512"

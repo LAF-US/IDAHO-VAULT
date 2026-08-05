@@ -1,4 +1,5 @@
 ---
+title: "Geez, thanks @outsidemagazine \ud83d\ude44 'the low-key ranching..."
 date: 2021-07-08
 time: 16:41:13
 tweet_id: "1413176355928174599"

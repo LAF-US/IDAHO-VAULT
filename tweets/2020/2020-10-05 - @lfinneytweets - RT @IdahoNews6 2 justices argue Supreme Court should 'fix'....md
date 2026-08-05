@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoNews6 2 justices argue Supreme Court should 'fix'..."
 date: 2020-10-05
 time: 21:15:26
 tweet_id: "1313226315781341190"

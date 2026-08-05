@@ -1,4 +1,5 @@
 ---
+title: "RT @chaddcripe Idaho's current 14-day average for ICU cases..."
 date: 2021-02-02
 time: 18:07:39
 tweet_id: "1356665599951134720"

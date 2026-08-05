@@ -1,4 +1,5 @@
 ---
+title: "Lawmakers believe the Idaho Division of Vocational..."
 date: 2024-04-12
 time: 21:51:58
 tweet_id: "1778903913439354974"

@@ -1,4 +1,5 @@
 ---
+title: "Time has come for a southwestern Idaho congressional..."
 date: 2021-09-18
 time: 19:58:42
 tweet_id: "1439317981721346048"

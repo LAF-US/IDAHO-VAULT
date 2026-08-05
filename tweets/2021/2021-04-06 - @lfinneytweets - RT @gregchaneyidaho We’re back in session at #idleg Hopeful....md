@@ -1,4 +1,5 @@
 ---
+title: "RT @gregchaneyidaho We\u2019re back in session at #idleg Hopeful..."
 date: 2021-04-06
 time: 18:17:00
 tweet_id: "1379498387817435136"

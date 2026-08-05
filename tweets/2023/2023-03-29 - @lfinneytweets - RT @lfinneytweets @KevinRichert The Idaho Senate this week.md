@@ -1,4 +1,5 @@
 ---
+title: "RT @lfinneytweets @KevinRichert The Idaho Senate this week"
 date: 2023-03-29
 time: 18:03:11
 tweet_id: "1641138952257118210"

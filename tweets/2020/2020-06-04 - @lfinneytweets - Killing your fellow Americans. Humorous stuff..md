@@ -1,4 +1,5 @@
 ---
+title: "Killing your fellow Americans. Humorous stuff."
 date: 2020-06-04
 time: 21:12:16
 tweet_id: "1268651808789893127"

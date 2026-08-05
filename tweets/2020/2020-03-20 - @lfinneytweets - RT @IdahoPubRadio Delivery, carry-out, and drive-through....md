@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio Delivery, carry-out, and drive-through..."
 date: 2020-03-20
 time: 23:39:27
 tweet_id: "1241147370781327360"

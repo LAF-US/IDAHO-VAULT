@@ -1,4 +1,5 @@
 ---
+title: "RT @thelocalhistory The children in the photo were Spokane,..."
 date: 2021-07-13
 time: 07:28:45
 tweet_id: "1414849261359927300"

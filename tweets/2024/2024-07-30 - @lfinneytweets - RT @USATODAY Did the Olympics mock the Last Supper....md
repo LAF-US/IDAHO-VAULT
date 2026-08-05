@@ -1,4 +1,5 @@
 ---
+title: "RT @USATODAY Did the Olympics mock the Last Supper..."
 date: 2024-07-30
 time: 17:57:15
 tweet_id: "1818345124201734447"

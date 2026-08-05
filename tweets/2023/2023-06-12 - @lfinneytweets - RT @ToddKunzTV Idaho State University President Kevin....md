@@ -1,4 +1,5 @@
 ---
+title: "RT @ToddKunzTV Idaho State University President Kevin..."
 date: 2023-06-12
 time: 22:09:35
 tweet_id: "1668380050432069632"

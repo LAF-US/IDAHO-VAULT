@@ -1,4 +1,5 @@
 ---
+title: "RT @KeithRidler Drought declaration issued for 34 of..."
 date: 2022-04-29
 time: 22:32:59
 tweet_id: "1520169301679910913"

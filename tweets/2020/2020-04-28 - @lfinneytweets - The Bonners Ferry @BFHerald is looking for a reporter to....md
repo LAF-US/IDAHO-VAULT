@@ -1,4 +1,5 @@
 ---
+title: "The Bonners Ferry @BFHerald is looking for a reporter to..."
 date: 2020-04-28
 time: 21:37:08
 tweet_id: "1255249717409316868"

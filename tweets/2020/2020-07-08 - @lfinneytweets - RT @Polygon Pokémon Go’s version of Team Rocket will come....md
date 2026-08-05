@@ -1,4 +1,5 @@
 ---
+title: "RT @Polygon Pok\u00e9mon Go\u2019s version of Team Rocket will come..."
 date: 2020-07-08
 time: 00:44:54
 tweet_id: "1280664118114938880"

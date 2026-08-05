@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports @IdahoPTV @Concordia_Law @clarkcorbin..."
 date: 2020-06-20
 time: 02:05:34
 tweet_id: "1274161438878097408"

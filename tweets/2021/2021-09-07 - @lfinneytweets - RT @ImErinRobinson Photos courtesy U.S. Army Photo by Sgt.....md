@@ -1,4 +1,5 @@
 ---
+title: "RT @ImErinRobinson Photos courtesy U.S. Army Photo by Sgt...."
 date: 2021-09-07
 time: 22:14:16
 tweet_id: "1435365831156776964"

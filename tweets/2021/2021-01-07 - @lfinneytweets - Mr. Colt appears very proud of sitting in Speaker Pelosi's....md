@@ -1,4 +1,5 @@
 ---
+title: "Mr. Colt appears very proud of sitting in Speaker Pelosi's..."
 date: 2021-01-07
 time: 04:53:37
 tweet_id: "1347043692499013634"

@@ -1,4 +1,5 @@
 ---
+title: "RT @TheOnion Third Amendment Rights Group Celebrates..."
 date: 2024-11-22
 time: 15:54:59
 tweet_id: "1859988958253596792"

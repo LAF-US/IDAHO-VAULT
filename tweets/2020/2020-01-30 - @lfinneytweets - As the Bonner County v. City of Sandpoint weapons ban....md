@@ -1,4 +1,5 @@
 ---
+title: "As the Bonner County v. City of Sandpoint weapons ban..."
 date: 2020-01-30
 time: 19:19:50
 tweet_id: "1222962645331955712"

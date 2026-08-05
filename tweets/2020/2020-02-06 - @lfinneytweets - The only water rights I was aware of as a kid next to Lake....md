@@ -1,4 +1,5 @@
 ---
+title: "The only water rights I was aware of as a kid next to Lake..."
 date: 2020-02-06
 time: 17:56:00
 tweet_id: "1225478260261191680"

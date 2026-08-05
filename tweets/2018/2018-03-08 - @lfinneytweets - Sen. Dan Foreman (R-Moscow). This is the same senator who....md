@@ -1,4 +1,5 @@
 ---
+title: "Sen. Dan Foreman (R-Moscow). This is the same senator who..."
 date: 2018-03-08
 time: 22:10:09
 tweet_id: "971870716290154496"

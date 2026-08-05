@@ -1,4 +1,5 @@
 ---
+title: "\u201cWe\u2019ve heard some county sheriffs say they\u2019re going to..."
 date: 2020-04-30
 time: 00:57:18
 tweet_id: "1255662478744104960"

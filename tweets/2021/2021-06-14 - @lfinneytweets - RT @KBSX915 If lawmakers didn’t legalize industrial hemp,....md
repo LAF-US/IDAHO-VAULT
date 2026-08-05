@@ -1,4 +1,5 @@
 ---
+title: "RT @KBSX915 If lawmakers didn\u2019t legalize industrial hemp,..."
 date: 2021-06-14
 time: 20:17:45
 tweet_id: "1404533539559731200"

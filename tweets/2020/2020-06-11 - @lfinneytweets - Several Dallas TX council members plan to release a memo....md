@@ -1,4 +1,5 @@
 ---
+title: "Several Dallas TX council members plan to release a memo..."
 date: 2020-06-11
 time: 02:12:27
 tweet_id: "1270901678833676288"

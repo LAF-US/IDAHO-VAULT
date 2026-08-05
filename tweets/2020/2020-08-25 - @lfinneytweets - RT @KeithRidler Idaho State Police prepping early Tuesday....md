@@ -1,4 +1,5 @@
 ---
+title: "RT @KeithRidler Idaho State Police prepping early Tuesday..."
 date: 2020-08-25
 time: 14:15:33
 tweet_id: "1298262745804976128"

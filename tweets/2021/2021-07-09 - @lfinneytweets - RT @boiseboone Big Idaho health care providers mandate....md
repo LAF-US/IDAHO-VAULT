@@ -1,4 +1,5 @@
 ---
+title: "RT @boiseboone Big Idaho health care providers mandate..."
 date: 2021-07-09
 time: 00:29:09
 tweet_id: "1413294115597414403"

@@ -1,4 +1,5 @@
 ---
+title: "A group of @uidaho architecture students are traveling to..."
 date: 2019-05-15
 time: 18:16:12
 tweet_id: "1128725785756364800"

@@ -1,4 +1,5 @@
 ---
+title: "I know it's semantics but election day determines electoral..."
 date: 2020-11-04
 time: 17:28:48
 tweet_id: "1324040913815965697"

@@ -1,4 +1,5 @@
 ---
+title: "An LGBTQ perspective on Trump's potential Supreme Court..."
 date: 2018-06-29
 time: 06:01:06
 tweet_id: "1012576671973572608"

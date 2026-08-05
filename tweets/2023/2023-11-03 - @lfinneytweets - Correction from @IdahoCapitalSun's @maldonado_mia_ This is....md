@@ -1,4 +1,5 @@
 ---
+title: "Correction from @IdahoCapitalSun's @maldonado_mia_ This is..."
 date: 2023-11-03
 time: 00:08:33
 tweet_id: "1720231452900819009"

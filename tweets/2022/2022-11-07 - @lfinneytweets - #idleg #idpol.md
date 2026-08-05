@@ -1,4 +1,5 @@
 ---
+title: "#idleg #idpol"
 date: 2022-11-07
 time: 04:13:44
 tweet_id: "1589471136148258816"

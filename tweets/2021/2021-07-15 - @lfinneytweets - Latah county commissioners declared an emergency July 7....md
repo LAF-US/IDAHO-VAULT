@@ -1,4 +1,5 @@
 ---
+title: "Latah county commissioners declared an emergency July 7..."
 date: 2021-07-15
 time: 15:35:27
 tweet_id: "1415696520918175748"

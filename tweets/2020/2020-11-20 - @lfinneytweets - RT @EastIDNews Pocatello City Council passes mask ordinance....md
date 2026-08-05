@@ -1,4 +1,5 @@
 ---
+title: "RT @EastIDNews Pocatello City Council passes mask ordinance..."
 date: 2020-11-20
 time: 03:09:20
 tweet_id: "1329622829029965825"

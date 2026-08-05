@@ -1,4 +1,5 @@
 ---
+title: "The threshold to qualify a voter initiative in 2022 is a..."
 date: 2022-02-02
 time: 23:10:56
 tweet_id: "1489013494766727175"

@@ -1,4 +1,5 @@
 ---
+title: "Student president @uidaho, one of first voices behind what..."
 date: 2023-04-09
 time: 16:32:55
 tweet_id: "1645102500410978305"

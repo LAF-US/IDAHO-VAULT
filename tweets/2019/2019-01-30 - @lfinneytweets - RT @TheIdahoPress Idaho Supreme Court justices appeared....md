@@ -1,4 +1,5 @@
 ---
+title: "RT @TheIdahoPress Idaho Supreme Court justices appeared..."
 date: 2019-01-30
 time: 17:03:59
 tweet_id: "1090656884653092866"

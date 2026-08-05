@@ -1,4 +1,5 @@
 ---
+title: "RT @KeithRidler Canadian mining company sues US over Idaho..."
 date: 2020-08-19
 time: 21:26:41
 tweet_id: "1296196915021746176"

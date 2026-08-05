@@ -1,4 +1,5 @@
 ---
+title: "Context you don't get from a screenshot of an Instagram..."
 date: 2021-08-02
 time: 13:08:23
 tweet_id: "1422182491809452034"

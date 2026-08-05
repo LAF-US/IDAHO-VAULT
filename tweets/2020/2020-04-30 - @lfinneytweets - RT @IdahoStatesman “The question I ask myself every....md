@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoStatesman \u201cThe question I ask myself every..."
 date: 2020-04-30
 time: 04:34:39
 tweet_id: "1255717177052676096"

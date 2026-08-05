@@ -1,4 +1,5 @@
 ---
+title: "OSHA opened investigations into six Amazon warehouses last..."
 date: 2023-02-02
 time: 01:16:07
 tweet_id: "1620954181111791616"

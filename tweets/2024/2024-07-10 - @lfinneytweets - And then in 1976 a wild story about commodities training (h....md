@@ -1,4 +1,5 @@
 ---
+title: "And then in 1976 a wild story about commodities training (h..."
 date: 2024-07-10
 time: 05:41:01
 tweet_id: "1810912088707236157"

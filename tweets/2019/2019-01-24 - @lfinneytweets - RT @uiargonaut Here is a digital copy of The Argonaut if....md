@@ -1,4 +1,5 @@
 ---
+title: "RT @uiargonaut Here is a digital copy of The Argonaut if..."
 date: 2019-01-24
 time: 20:46:43
 tweet_id: "1088538611044179968"

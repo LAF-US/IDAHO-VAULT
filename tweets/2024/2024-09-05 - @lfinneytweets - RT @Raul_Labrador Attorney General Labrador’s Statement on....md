@@ -1,4 +1,5 @@
 ---
+title: "RT @Raul_Labrador Attorney General Labrador\u2019s Statement on..."
 date: 2024-09-05
 time: 20:43:08
 tweet_id: "1831795223086915957"

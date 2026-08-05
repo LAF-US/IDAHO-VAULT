@@ -1,4 +1,5 @@
 ---
+title: "Results from Latah County are still trickling in,..."
 date: 2020-11-04
 time: 07:34:04
 tweet_id: "1323891246004252672"

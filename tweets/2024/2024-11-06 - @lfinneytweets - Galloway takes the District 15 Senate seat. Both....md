@@ -1,4 +1,5 @@
 ---
+title: "Galloway takes the District 15 Senate seat. Both..."
 date: 2024-11-06
 time: 10:38:21
 tweet_id: "1854111068551082314"

@@ -1,4 +1,5 @@
 ---
+title: "(@apalermooo, @uiargonaut) Armed groups took to downtown..."
 date: 2020-06-08
 time: 19:38:32
 tweet_id: "1270077773185335303"

@@ -1,4 +1,5 @@
 ---
+title: "Ladies and gentlemen, your 2025 #idleg budgetwriters."
 date: 2024-12-16
 time: 21:02:09
 tweet_id: "1868763567119647048"

@@ -1,4 +1,5 @@
 ---
+title: "RT @AbbyDavisKTVB Lawmakers raise questions about..."
 date: 2024-03-01
 time: 18:24:41
 tweet_id: "1763631459846541550"

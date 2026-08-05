@@ -1,4 +1,5 @@
 ---
+title: "Laura Van Voorhees, a member of Lt. Gov. @JaniceMcGeachin's..."
 date: 2022-02-09
 time: 18:33:25
 tweet_id: "1491480370398724096"

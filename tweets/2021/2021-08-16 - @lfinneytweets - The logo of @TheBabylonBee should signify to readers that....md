@@ -1,4 +1,5 @@
 ---
+title: "The logo of @TheBabylonBee should signify to readers that..."
 date: 2021-08-16
 time: 18:04:32
 tweet_id: "1427330448401715203"

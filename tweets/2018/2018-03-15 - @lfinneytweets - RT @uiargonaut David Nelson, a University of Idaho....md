@@ -1,4 +1,5 @@
 ---
+title: "RT @uiargonaut David Nelson, a University of Idaho..."
 date: 2018-03-15
 time: 16:31:37
 tweet_id: "974322236768186369"

@@ -1,4 +1,5 @@
 ---
+title: "RT @boiseboone Supreme Court rejects Republican attack on..."
 date: 2020-12-11
 time: 23:52:35
 tweet_id: "1337545849493078017"

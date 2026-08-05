@@ -1,4 +1,5 @@
 ---
+title: "RT @KMVTNews Boise police remove \u2018Proud Boys\u2019 flags from..."
 date: 2021-08-01
 time: 20:14:55
 tweet_id: "1421927444567650304"

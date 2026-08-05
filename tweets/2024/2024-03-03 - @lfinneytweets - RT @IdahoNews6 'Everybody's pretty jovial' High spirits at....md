@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoNews6 'Everybody's pretty jovial' High spirits at..."
 date: 2024-03-03
 time: 01:50:54
 tweet_id: "1764106143327256957"

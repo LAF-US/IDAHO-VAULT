@@ -1,4 +1,5 @@
 ---
+title: "RT @qz Marijuana is going corporate, and the government..."
 date: 2018-08-22
 time: 07:16:31
 tweet_id: "1032164598776922112"

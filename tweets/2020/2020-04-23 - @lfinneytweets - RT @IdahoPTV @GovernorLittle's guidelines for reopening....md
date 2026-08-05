@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPTV @GovernorLittle's guidelines for reopening..."
 date: 2020-04-23
 time: 21:25:20
 tweet_id: "1253434807956078593"

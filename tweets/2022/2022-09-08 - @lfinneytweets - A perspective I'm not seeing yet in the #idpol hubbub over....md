@@ -1,4 +1,5 @@
 ---
+title: "A perspective I'm not seeing yet in the #idpol hubbub over..."
 date: 2022-09-08
 time: 23:51:06
 tweet_id: "1568024158378008577"

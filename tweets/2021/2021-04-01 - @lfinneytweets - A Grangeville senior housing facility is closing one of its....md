@@ -1,4 +1,5 @@
 ---
+title: "A Grangeville senior housing facility is closing one of its..."
 date: 2021-04-01
 time: 16:09:36
 tweet_id: "1377654390601879555"

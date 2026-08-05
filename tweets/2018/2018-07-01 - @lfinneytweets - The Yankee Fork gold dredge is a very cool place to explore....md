@@ -1,4 +1,5 @@
 ---
+title: "The Yankee Fork gold dredge is a very cool place to explore..."
 date: 2018-07-01
 time: 22:58:15
 tweet_id: "1013557421850021890"

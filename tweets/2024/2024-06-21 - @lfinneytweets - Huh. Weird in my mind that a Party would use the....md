@@ -1,4 +1,5 @@
 ---
+title: "Huh. Weird in my mind that a Party would use the..."
 date: 2024-06-21
 time: 18:21:47
 tweet_id: "1804218169701339472"

@@ -1,4 +1,5 @@
 ---
+title: "Amendment 2 is adopted. That'll show up on the HB193 bill..."
 date: 2023-03-22
 time: 23:16:44
 tweet_id: "1638681141598363649"

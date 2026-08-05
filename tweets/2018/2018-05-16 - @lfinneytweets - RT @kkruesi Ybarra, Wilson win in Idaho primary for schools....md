@@ -1,4 +1,5 @@
 ---
+title: "RT @kkruesi Ybarra, Wilson win in Idaho primary for schools..."
 date: 2018-05-16
 time: 06:42:40
 tweet_id: "996642067311816705"

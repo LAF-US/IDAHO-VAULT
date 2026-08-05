@@ -1,4 +1,5 @@
 ---
+title: "RT @uiargonaut The university does not have any plans to..."
 date: 2020-04-27
 time: 23:19:40
 tweet_id: "1254913132213833728"

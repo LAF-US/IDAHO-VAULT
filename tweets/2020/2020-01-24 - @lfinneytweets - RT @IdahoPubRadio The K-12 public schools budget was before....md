@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio The K-12 public schools budget was before..."
 date: 2020-01-24
 time: 00:46:11
 tweet_id: "1220508055437099008"

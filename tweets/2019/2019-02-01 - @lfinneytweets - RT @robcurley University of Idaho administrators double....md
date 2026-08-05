@@ -1,4 +1,5 @@
 ---
+title: "RT @robcurley University of Idaho administrators double..."
 date: 2019-02-01
 time: 20:02:17
 tweet_id: "1091426533200130048"

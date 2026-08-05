@@ -1,4 +1,5 @@
 ---
+title: "Lawmakers re-entering the chamber after going out into the..."
 date: 2020-06-24
 time: 04:50:35
 tweet_id: "1275652516336762880"

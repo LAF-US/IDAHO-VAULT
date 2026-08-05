@@ -1,4 +1,5 @@
 ---
+title: "RT @ChristinaLords Interested in covering state politics..."
 date: 2023-01-25
 time: 02:10:15
 tweet_id: "1618068701475147776"

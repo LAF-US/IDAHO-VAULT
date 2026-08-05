@@ -1,4 +1,5 @@
 ---
+title: "RT @NateBrownNews Found an #idpol tidbit in the Wikipedia..."
 date: 2020-01-23
 time: 18:00:13
 tweet_id: "1220405891096137728"

@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise LewTrib Fulcher banking on..."
 date: 2020-01-15
 time: 19:44:32
 tweet_id: "1217533043662917632"

@@ -1,4 +1,5 @@
 ---
+title: "All of my joints have simultaneously informed me that these..."
 date: 2024-10-16
 time: 19:53:30
 tweet_id: "1846640632594681908"

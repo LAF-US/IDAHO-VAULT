@@ -1,4 +1,5 @@
 ---
+title: "It was a bruising night for Idaho Democrats - but Taylor..."
 date: 2024-11-07
 time: 04:13:23
 tweet_id: "1854376578270261572"

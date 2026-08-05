@@ -1,4 +1,5 @@
 ---
+title: "My latest for @uiargonaut School shootings are a sad but..."
 date: 2019-05-03
 time: 18:21:27
 tweet_id: "1124378452117708800"

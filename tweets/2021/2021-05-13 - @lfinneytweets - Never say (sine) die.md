@@ -1,4 +1,5 @@
 ---
+title: "Never say (sine) die"
 date: 2021-05-13
 time: 03:59:18
 tweet_id: "1392690893472239616"

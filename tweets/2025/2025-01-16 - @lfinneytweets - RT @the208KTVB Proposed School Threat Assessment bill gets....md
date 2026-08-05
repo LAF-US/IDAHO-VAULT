@@ -1,4 +1,5 @@
 ---
+title: "RT @the208KTVB Proposed School Threat Assessment bill gets..."
 date: 2025-01-16
 time: 03:02:13
 tweet_id: "1879725819859530210"

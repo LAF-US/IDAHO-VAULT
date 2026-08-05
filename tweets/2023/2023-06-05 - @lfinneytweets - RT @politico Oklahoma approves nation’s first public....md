@@ -1,4 +1,5 @@
 ---
+title: "RT @politico Oklahoma approves nation\u2019s first public..."
 date: 2023-06-05
 time: 22:39:50
 tweet_id: "1665850947887853568"

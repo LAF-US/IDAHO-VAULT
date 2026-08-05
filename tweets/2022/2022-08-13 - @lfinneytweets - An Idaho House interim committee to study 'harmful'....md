@@ -1,4 +1,5 @@
 ---
+title: "An Idaho House interim committee to study 'harmful'..."
 date: 2022-08-13
 time: 21:08:09
 tweet_id: "1558561064752541696"

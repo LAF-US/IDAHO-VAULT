@@ -1,4 +1,5 @@
 ---
+title: "Haring was diagnosed with AIDS in 1988. He then established..."
 date: 2018-06-13
 time: 07:08:50
 tweet_id: "1006795514195701762"

@@ -1,4 +1,5 @@
 ---
+title: "RT @KTVB Senate Education Committee passes financial..."
 date: 2023-02-24
 time: 03:04:45
 tweet_id: "1628954053941288965"

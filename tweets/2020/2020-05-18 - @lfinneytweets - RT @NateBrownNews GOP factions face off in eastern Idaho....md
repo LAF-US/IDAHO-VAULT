@@ -1,4 +1,5 @@
 ---
+title: "RT @NateBrownNews GOP factions face off in eastern Idaho..."
 date: 2020-05-18
 time: 04:50:32
 tweet_id: "1262244154953752577"

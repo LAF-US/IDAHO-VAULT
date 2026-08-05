@@ -1,4 +1,5 @@
 ---
+title: "As more Idahoans complain about Washington residents coming..."
 date: 2020-04-20
 time: 18:51:56
 tweet_id: "1252309039066673152"

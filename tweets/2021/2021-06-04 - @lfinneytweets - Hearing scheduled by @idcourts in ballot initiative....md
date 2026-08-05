@@ -1,4 +1,5 @@
 ---
+title: "Hearing scheduled by @idcourts in ballot initiative..."
 date: 2021-06-04
 time: 17:15:49
 tweet_id: "1400863877122838532"

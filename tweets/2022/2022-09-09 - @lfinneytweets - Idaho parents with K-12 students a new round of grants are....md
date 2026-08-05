@@ -1,4 +1,5 @@
 ---
+title: "Idaho parents with K-12 students a new round of grants are..."
 date: 2022-09-09
 time: 01:01:11
 tweet_id: "1568041796474908673"

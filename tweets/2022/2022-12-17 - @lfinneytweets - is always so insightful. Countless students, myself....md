@@ -1,4 +1,5 @@
 ---
+title: "is always so insightful. Countless students, myself..."
 date: 2022-12-17
 time: 21:41:28
 tweet_id: "1604230323663167488"

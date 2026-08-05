@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise @CdAPressNews Rep. Amador to..."
 date: 2021-04-01
 time: 17:13:32
 tweet_id: "1377670476298821637"

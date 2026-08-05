@@ -1,4 +1,5 @@
 ---
+title: "Have fun with the evening committee. I'm out of here. #idleg"
 date: 2021-11-16
 time: 00:52:50
 tweet_id: "1460410497858109443"

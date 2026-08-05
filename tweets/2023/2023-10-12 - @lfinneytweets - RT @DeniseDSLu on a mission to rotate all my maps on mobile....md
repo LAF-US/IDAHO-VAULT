@@ -1,4 +1,5 @@
 ---
+title: "RT @DeniseDSLu on a mission to rotate all my maps on mobile..."
 date: 2023-10-12
 time: 21:48:27
 tweet_id: "1712586051318087986"

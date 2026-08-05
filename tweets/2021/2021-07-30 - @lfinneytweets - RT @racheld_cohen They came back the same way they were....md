@@ -1,4 +1,5 @@
 ---
+title: "RT @racheld_cohen They came back the same way they were..."
 date: 2021-07-30
 time: 15:21:12
 tweet_id: "1421128752239505408"

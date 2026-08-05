@@ -1,4 +1,5 @@
 ---
+title: "Interesting replies to this tweet from ruby-red Idaho"
 date: 2018-10-31
 time: 03:46:51
 tweet_id: "1057478985049755648"

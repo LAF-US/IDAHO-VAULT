@@ -1,4 +1,5 @@
 ---
+title: "Not a collapse if it wasn't there to start."
 date: 2022-04-18
 time: 18:16:00
 tweet_id: "1516118362899636225"

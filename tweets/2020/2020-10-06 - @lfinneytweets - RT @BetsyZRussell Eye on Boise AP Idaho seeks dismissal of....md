@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise AP Idaho seeks dismissal of..."
 date: 2020-10-06
 time: 23:03:10
 tweet_id: "1313615814742867968"

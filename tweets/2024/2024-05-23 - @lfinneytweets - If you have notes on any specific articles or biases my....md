@@ -1,4 +1,5 @@
 ---
+title: "If you have notes on any specific articles or biases my..."
 date: 2024-05-23
 time: 04:09:07
 tweet_id: "1793494343128625616"

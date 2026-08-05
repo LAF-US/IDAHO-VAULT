@@ -1,4 +1,5 @@
 ---
+title: "RT @RuthBrownNews Boise's mask-burning protest in March..."
 date: 2021-12-28
 time: 23:35:52
 tweet_id: "1475973805122097155"

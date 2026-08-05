@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Highest number of eviction..."
 date: 2020-08-18
 time: 17:40:18
 tweet_id: "1295777556059181057"

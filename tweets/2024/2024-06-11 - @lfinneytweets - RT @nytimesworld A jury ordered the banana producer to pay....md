@@ -1,4 +1,5 @@
 ---
+title: "RT @nytimesworld A jury ordered the banana producer to pay..."
 date: 2024-06-11
 time: 17:05:18
 tweet_id: "1800575046550958112"

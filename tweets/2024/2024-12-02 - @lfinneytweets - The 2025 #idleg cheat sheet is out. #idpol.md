@@ -1,4 +1,5 @@
 ---
+title: "The 2025 #idleg cheat sheet is out. #idpol"
 date: 2024-12-02
 time: 21:02:03
 tweet_id: "1863690114062487830"

@@ -1,4 +1,5 @@
 ---
+title: "Panhandle Health District @phdidaho currently lists all..."
 date: 2020-08-06
 time: 23:41:18
 tweet_id: "1291519750107828225"

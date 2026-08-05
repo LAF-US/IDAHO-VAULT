@@ -1,4 +1,5 @@
 ---
+title: "@UniversityofKY and @OregonState, both of which have hemp..."
 date: 2020-01-31
 time: 17:50:52
 tweet_id: "1223302642618626049"

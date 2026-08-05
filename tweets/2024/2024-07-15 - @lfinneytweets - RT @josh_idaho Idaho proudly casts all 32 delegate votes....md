@@ -1,4 +1,5 @@
 ---
+title: "RT @josh_idaho Idaho proudly casts all 32 delegate votes..."
 date: 2024-07-15
 time: 20:42:33
 tweet_id: "1812950907224748140"

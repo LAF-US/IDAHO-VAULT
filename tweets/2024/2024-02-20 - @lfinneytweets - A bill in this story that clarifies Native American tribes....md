@@ -1,4 +1,5 @@
 ---
+title: "A bill in this story that clarifies Native American tribes..."
 date: 2024-02-20
 time: 18:50:11
 tweet_id: "1760013998706307325"

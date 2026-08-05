@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise @KBSX915 Blaine County to..."
 date: 2020-04-09
 time: 19:15:38
 tweet_id: "1248328738846027778"

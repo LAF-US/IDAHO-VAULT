@@ -1,4 +1,5 @@
 ---
+title: "Ok, so a move to adjourn WAS out of order while Zito had..."
 date: 2022-02-02
 time: 19:45:50
 tweet_id: "1488961882132135938"

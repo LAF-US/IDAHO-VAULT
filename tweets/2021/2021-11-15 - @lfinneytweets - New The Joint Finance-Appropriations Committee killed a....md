@@ -1,4 +1,5 @@
 ---
+title: "New The Joint Finance-Appropriations Committee killed a..."
 date: 2021-11-15
 time: 22:26:03
 tweet_id: "1460373557544820739"

@@ -1,4 +1,5 @@
 ---
+title: "Rep. Mike Moyle is sworn in once again as Speaker of the..."
 date: 2024-12-05
 time: 16:23:23
 tweet_id: "1864707150444179938"

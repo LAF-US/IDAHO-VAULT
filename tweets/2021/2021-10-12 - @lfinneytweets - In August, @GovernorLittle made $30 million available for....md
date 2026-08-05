@@ -1,4 +1,5 @@
 ---
+title: "In August, @GovernorLittle made $30 million available for..."
 date: 2021-10-12
 time: 22:08:42
 tweet_id: "1448048006452834307"

@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise My Sun. column Why stay-home..."
 date: 2020-04-27
 time: 01:01:34
 tweet_id: "1254576386787827712"

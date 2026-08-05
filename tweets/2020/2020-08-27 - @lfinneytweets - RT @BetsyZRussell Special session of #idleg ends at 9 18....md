@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Special session of #idleg ends at 9 18..."
 date: 2020-08-27
 time: 03:47:30
 tweet_id: "1298829467045920769"

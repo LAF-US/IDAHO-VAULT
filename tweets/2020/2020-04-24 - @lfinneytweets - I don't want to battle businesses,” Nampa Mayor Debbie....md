@@ -1,4 +1,5 @@
 ---
+title: "I don't want to battle businesses,\u201d Nampa Mayor Debbie..."
 date: 2020-04-24
 time: 21:45:00
 tweet_id: "1253802143800266755"

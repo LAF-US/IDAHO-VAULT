@@ -1,4 +1,5 @@
 ---
+title: "When we landed in Boise, it reminded me of when I first..."
 date: 2021-07-07
 time: 19:07:31
 tweet_id: "1412850785684049920"

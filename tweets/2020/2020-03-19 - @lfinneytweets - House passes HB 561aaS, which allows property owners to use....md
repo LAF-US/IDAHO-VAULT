@@ -1,4 +1,5 @@
 ---
+title: "House passes HB 561aaS, which allows property owners to use..."
 date: 2020-03-19
 time: 00:09:10
 tweet_id: "1240430075918430208"

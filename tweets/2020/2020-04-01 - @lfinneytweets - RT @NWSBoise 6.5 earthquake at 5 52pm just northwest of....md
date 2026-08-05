@@ -1,4 +1,5 @@
 ---
+title: "RT @NWSBoise 6.5 earthquake at 5 52pm just northwest of..."
 date: 2020-04-01
 time: 00:15:14
 tweet_id: "1245142641458569216"

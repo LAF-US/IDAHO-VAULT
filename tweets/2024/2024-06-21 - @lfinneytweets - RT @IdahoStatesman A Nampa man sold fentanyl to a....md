@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoStatesman A Nampa man sold fentanyl to a..."
 date: 2024-06-21
 time: 16:12:43
 tweet_id: "1804185689929716164"

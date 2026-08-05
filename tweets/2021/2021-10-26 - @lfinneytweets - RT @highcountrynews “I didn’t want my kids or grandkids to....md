@@ -1,4 +1,5 @@
 ---
+title: "RT @highcountrynews \u201cI didn\u2019t want my kids or grandkids to..."
 date: 2021-10-26
 time: 19:34:54
 tweet_id: "1453082731164831744"

@@ -1,4 +1,5 @@
 ---
+title: "I\u2019m going home to the bunker. Tune in to the Governor\u2019s..."
 date: 2020-03-19
 time: 23:07:30
 tweet_id: "1240776945140240384"

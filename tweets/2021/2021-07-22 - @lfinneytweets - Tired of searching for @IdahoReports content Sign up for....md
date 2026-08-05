@@ -1,4 +1,5 @@
 ---
+title: "Tired of searching for @IdahoReports content Sign up for..."
 date: 2021-07-22
 time: 18:58:50
 tweet_id: "1418284420532871174"

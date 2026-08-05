@@ -1,4 +1,5 @@
 ---
+title: "This week's @TheInlander cover story by @danielwinlander In..."
 date: 2020-02-06
 time: 18:39:59
 tweet_id: "1225489331961372680"

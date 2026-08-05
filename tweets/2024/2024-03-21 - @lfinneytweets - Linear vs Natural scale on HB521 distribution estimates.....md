@@ -1,4 +1,5 @@
 ---
+title: "Linear vs Natural scale on HB521 distribution estimates...."
 date: 2024-03-21
 time: 19:45:59
 tweet_id: "1770899677300367374"

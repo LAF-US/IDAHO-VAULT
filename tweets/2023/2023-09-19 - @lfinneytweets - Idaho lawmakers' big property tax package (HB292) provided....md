@@ -1,4 +1,5 @@
 ---
+title: "Idaho lawmakers' big property tax package (HB292) provided..."
 date: 2023-09-19
 time: 21:39:04
 tweet_id: "1704248767300702661"

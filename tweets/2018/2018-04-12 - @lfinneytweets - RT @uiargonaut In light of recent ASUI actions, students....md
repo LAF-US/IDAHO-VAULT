@@ -1,4 +1,5 @@
 ---
+title: "RT @uiargonaut In light of recent ASUI actions, students..."
 date: 2018-04-12
 time: 21:22:03
 tweet_id: "984542184354410496"

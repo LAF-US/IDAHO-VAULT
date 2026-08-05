@@ -1,4 +1,5 @@
 ---
+title: "Try Trump suggests season suspension as punishment for NFL..."
 date: 2018-07-22
 time: 06:23:32
 tweet_id: "1020917238675591169"

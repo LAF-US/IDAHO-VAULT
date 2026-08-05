@@ -1,4 +1,5 @@
 ---
+title: "RT @BoiseDev Idaho takes action against crypto firm, which..."
 date: 2022-08-05
 time: 20:26:40
 tweet_id: "1555651523757031424"

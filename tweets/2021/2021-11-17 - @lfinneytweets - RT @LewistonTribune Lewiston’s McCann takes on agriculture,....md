@@ -1,4 +1,5 @@
 ---
+title: "RT @LewistonTribune Lewiston\u2019s McCann takes on agriculture,..."
 date: 2021-11-17
 time: 21:11:50
 tweet_id: "1461079659269931008"

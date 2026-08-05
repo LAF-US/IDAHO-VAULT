@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoStatesman \u201cThis little dispute between two tiny..."
 date: 2022-02-23
 time: 17:41:19
 tweet_id: "1496540691513880577"

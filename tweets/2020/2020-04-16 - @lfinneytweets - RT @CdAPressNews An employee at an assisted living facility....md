@@ -1,4 +1,5 @@
 ---
+title: "RT @CdAPressNews An employee at an assisted living facility..."
 date: 2020-04-16
 time: 16:48:03
 tweet_id: "1250828313783758848"

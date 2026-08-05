@@ -1,4 +1,5 @@
 ---
+title: "The Idaho Legislature's interim Property Tax Committee is..."
 date: 2021-08-27
 time: 15:12:05
 tweet_id: "1431273316761804808"

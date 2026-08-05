@@ -1,4 +1,5 @@
 ---
+title: "RT @MtnStatesPolicy For the record, Idaho and Washington..."
 date: 2026-01-21
 time: 19:41:20
 tweet_id: "2014060763099578405"

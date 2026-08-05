@@ -1,4 +1,5 @@
 ---
+title: "Vanguard\u2019s oversized influence on Tesla is not a one-off...."
 date: 2024-06-17
 time: 16:24:13
 tweet_id: "1802739031798947993"

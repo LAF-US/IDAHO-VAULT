@@ -1,4 +1,5 @@
 ---
+title: "RT @fay_trevor Emmett Middle School will be closed tomorrow..."
 date: 2020-12-04
 time: 05:09:55
 tweet_id: "1334726606485524483"

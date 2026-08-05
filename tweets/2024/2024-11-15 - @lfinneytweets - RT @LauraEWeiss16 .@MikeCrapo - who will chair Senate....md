@@ -1,4 +1,5 @@
 ---
+title: "RT @LauraEWeiss16 .@MikeCrapo - who will chair Senate..."
 date: 2024-11-15
 time: 00:20:34
 tweet_id: "1857217092237602841"

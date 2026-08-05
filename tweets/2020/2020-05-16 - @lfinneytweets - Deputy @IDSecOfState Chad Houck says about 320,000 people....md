@@ -1,4 +1,5 @@
 ---
+title: "Deputy @IDSecOfState Chad Houck says about 320,000 people..."
 date: 2020-05-16
 time: 20:59:18
 tweet_id: "1261763176468672512"

@@ -1,4 +1,5 @@
 ---
+title: "Great move by UI here. Every one of my freshman peers HATED..."
 date: 2024-11-14
 time: 16:15:34
 tweet_id: "1857095035961196697"

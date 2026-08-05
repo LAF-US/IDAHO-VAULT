@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell The socially distanced hearing room for..."
 date: 2020-08-26
 time: 15:01:30
 tweet_id: "1298636696263647233"

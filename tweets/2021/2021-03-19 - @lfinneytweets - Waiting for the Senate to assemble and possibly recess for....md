@@ -1,4 +1,5 @@
 ---
+title: "Waiting for the Senate to assemble and possibly recess for..."
 date: 2021-03-19
 time: 15:41:52
 tweet_id: "1372936369173983233"

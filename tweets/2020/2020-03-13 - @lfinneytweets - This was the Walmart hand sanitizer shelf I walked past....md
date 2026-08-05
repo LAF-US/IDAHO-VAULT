@@ -1,4 +1,5 @@
 ---
+title: "This was the Walmart hand sanitizer shelf I walked past..."
 date: 2020-03-13
 time: 20:54:55
 tweet_id: "1238569248663822337"

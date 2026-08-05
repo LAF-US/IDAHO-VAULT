@@ -1,4 +1,5 @@
 ---
+title: "Ken Howard and Christie Wood, two @NorthIdaho trustees,..."
 date: 2022-04-08
 time: 22:42:43
 tweet_id: "1512561606168702976"

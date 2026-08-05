@@ -1,4 +1,5 @@
 ---
+title: "Senate State Affairs is taking testimony on an emergency..."
 date: 2021-01-19
 time: 15:28:46
 tweet_id: "1351552187101396998"

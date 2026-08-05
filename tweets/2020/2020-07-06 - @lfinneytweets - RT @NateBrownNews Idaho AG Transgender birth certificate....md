@@ -1,4 +1,5 @@
 ---
+title: "RT @NateBrownNews Idaho AG Transgender birth certificate..."
 date: 2020-07-06
 time: 20:51:18
 tweet_id: "1280242945271099392"

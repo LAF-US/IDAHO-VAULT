@@ -1,4 +1,5 @@
 ---
+title: "Thanks to the candidates and panelists for their time..."
 date: 2022-04-26
 time: 04:45:33
 tweet_id: "1518813508976013313"

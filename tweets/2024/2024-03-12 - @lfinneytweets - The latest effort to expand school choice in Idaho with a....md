@@ -1,4 +1,5 @@
 ---
+title: "The latest effort to expand school choice in Idaho with a..."
 date: 2024-03-12
 time: 18:23:31
 tweet_id: "1767617431995125882"

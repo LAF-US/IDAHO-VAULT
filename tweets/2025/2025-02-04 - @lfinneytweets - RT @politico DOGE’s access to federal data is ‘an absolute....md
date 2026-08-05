@@ -1,4 +1,5 @@
 ---
+title: "RT @politico DOGE\u2019s access to federal data is \u2018an absolute..."
 date: 2025-02-04
 time: 06:53:22
 tweet_id: "1886669360032571806"

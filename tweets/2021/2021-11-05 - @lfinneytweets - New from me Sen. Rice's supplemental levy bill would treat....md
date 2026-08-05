@@ -1,4 +1,5 @@
 ---
+title: "New from me Sen. Rice's supplemental levy bill would treat..."
 date: 2021-11-05
 time: 14:30:01
 tweet_id: "1456629882184601601"

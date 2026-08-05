@@ -1,4 +1,5 @@
 ---
+title: "We said, 'we will work with you, we will not use eminent..."
 date: 2022-01-05
 time: 19:08:38
 tweet_id: "1478805656664625156"

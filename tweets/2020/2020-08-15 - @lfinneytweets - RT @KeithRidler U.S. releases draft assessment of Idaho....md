@@ -1,4 +1,5 @@
 ---
+title: "RT @KeithRidler U.S. releases draft assessment of Idaho..."
 date: 2020-08-15
 time: 00:44:03
 tweet_id: "1294434646248189952"

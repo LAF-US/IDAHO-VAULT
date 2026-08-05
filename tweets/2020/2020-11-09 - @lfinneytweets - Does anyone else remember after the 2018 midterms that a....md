@@ -1,4 +1,5 @@
 ---
+title: "Does anyone else remember after the 2018 midterms that a..."
 date: 2020-11-09
 time: 01:58:57
 tweet_id: "1325618852038729730"

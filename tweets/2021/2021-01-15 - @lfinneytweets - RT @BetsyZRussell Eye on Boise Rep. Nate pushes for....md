@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Rep. Nate pushes for..."
 date: 2021-01-15
 time: 23:52:41
 tweet_id: "1350229451607470081"

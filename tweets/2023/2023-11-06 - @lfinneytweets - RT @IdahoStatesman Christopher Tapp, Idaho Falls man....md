@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoStatesman Christopher Tapp, Idaho Falls man..."
 date: 2023-11-06
 time: 23:40:33
 tweet_id: "1721673959312359913"

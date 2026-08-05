@@ -1,4 +1,5 @@
 ---
+title: "RT @ftworldnews The booming business of Trump\u2019s deportation..."
 date: 2025-09-05
 time: 21:18:17
 tweet_id: "1964075639364817096"

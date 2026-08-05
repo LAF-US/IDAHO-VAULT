@@ -1,4 +1,5 @@
 ---
+title: "RT @mcgraneforidaho The Democrats weren't the only ones to..."
 date: 2018-05-16
 time: 19:12:17
 tweet_id: "996830714938114049"

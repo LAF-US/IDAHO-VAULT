@@ -1,4 +1,5 @@
 ---
+title: ".@IdahoPTV head Ron Pisaneschi on our station's efforts to..."
 date: 2020-06-12
 time: 23:33:14
 tweet_id: "1271586389386072064"

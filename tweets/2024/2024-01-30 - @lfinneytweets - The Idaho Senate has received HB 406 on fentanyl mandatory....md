@@ -1,4 +1,5 @@
 ---
+title: "The Idaho Senate has received HB 406 on fentanyl mandatory..."
 date: 2024-01-30
 time: 18:35:00
 tweet_id: "1752400031486030067"

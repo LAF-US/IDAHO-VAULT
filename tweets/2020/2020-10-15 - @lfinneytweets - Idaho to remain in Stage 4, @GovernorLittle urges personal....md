@@ -1,4 +1,5 @@
 ---
+title: "Idaho to remain in Stage 4, @GovernorLittle urges personal..."
 date: 2020-10-15
 time: 19:23:16
 tweet_id: "1316821963835281408"

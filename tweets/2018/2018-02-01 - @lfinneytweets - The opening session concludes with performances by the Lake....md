@@ -1,4 +1,5 @@
 ---
+title: "The opening session concludes with performances by the Lake..."
 date: 2018-02-01
 time: 18:51:29
 tweet_id: "959137141149261824"

@@ -1,4 +1,5 @@
 ---
+title: "RT @uiargonaut Check out this week's political cartoon by..."
 date: 2019-04-18
 time: 19:33:17
 tweet_id: "1118960710833229824"

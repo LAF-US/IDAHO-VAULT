@@ -1,4 +1,5 @@
 ---
+title: "RT @CBS2Boise Senator Jim Risch on coronavirus, Supreme..."
 date: 2020-10-15
 time: 05:19:19
 tweet_id: "1316609580193910784"

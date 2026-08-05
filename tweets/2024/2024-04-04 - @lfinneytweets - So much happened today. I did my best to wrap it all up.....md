@@ -1,4 +1,5 @@
 ---
+title: "So much happened today. I did my best to wrap it all up...."
 date: 2024-04-04
 time: 02:40:33
 tweet_id: "1775715046842392926"

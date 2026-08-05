@@ -1,4 +1,5 @@
 ---
+title: "RT @SPRlocalnews Idaho lawmakers tweak crisis standards of..."
 date: 2022-03-25
 time: 19:42:39
 tweet_id: "1507442859120553984"

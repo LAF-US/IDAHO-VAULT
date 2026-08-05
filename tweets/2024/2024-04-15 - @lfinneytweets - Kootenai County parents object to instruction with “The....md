@@ -1,4 +1,5 @@
 ---
+title: "Kootenai County parents object to instruction with \u201cThe..."
 date: 2024-04-15
 time: 16:48:51
 tweet_id: "1779914795476811817"

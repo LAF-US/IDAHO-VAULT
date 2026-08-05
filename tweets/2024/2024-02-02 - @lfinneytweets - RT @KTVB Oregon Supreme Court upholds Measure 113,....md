@@ -1,4 +1,5 @@
 ---
+title: "RT @KTVB Oregon Supreme Court upholds Measure 113,..."
 date: 2024-02-02
 time: 01:28:07
 tweet_id: "1753228774408360193"

@@ -1,4 +1,5 @@
 ---
+title: "RT @KTVB Governor Little bans TikTok on all state-issued..."
 date: 2022-12-15
 time: 02:55:57
 tweet_id: "1603222302388531200"

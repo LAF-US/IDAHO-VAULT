@@ -1,4 +1,5 @@
 ---
+title: "From one of the founders"
 date: 2020-06-08
 time: 17:16:41
 tweet_id: "1270042073496875009"

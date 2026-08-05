@@ -1,4 +1,5 @@
 ---
+title: "District 26 House GOP ousts minority caucus chair Ned..."
 date: 2024-11-07
 time: 03:09:11
 tweet_id: "1854360421022744995"

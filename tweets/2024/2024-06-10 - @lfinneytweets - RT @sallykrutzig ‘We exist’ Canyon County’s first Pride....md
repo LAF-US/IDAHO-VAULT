@@ -1,4 +1,5 @@
 ---
+title: "RT @sallykrutzig \u2018We exist\u2019 Canyon County\u2019s first Pride..."
 date: 2024-06-10
 time: 14:35:19
 tweet_id: "1800174911228661857"

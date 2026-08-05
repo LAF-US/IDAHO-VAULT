@@ -1,4 +1,5 @@
 ---
+title: "Idaho lawmakers last year hired a Utah tech company to..."
 date: 2023-08-25
 time: 16:06:17
 tweet_id: "1695105322468405320"

@@ -1,4 +1,5 @@
 ---
+title: "RT @_AlexHirsch Journalism...the 4th Estate"
 date: 2019-03-04
 time: 05:18:34
 tweet_id: "1102438160632442881"

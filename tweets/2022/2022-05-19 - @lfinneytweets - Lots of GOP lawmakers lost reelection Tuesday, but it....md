@@ -1,4 +1,5 @@
 ---
+title: "Lots of GOP lawmakers lost reelection Tuesday, but it..."
 date: 2022-05-19
 time: 19:05:17
 tweet_id: "1527364789906747400"

@@ -1,4 +1,5 @@
 ---
+title: "RT @jason_koebler CRT is a big problem and is poisoning our..."
 date: 2021-06-30
 time: 23:55:22
 tweet_id: "1410386510931578883"

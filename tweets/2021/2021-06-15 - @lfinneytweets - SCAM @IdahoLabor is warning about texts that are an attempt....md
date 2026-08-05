@@ -1,4 +1,5 @@
 ---
+title: "SCAM @IdahoLabor is warning about texts that are an attempt..."
 date: 2021-06-15
 time: 20:33:25
 tweet_id: "1404899869379088387"

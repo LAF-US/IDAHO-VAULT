@@ -1,4 +1,5 @@
 ---
+title: "RT @spokanepubradio NW House Republicans criticize secret..."
 date: 2023-12-14
 time: 00:16:03
 tweet_id: "1735091243041120350"

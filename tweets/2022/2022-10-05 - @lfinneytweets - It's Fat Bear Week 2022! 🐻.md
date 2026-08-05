@@ -1,4 +1,5 @@
 ---
+title: "It's Fat Bear Week 2022! \ud83d\udc3b"
 date: 2022-10-05
 time: 22:25:31
 tweet_id: "1577787091903467520"

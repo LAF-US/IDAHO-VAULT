@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoStatesman Boise-area hospital leaders say they\u2019re..."
 date: 2020-07-08
 time: 00:43:50
 tweet_id: "1280663852128993280"

@@ -1,4 +1,5 @@
 ---
+title: "RT @fay_trevor City council meeting at Twin Falls to..."
 date: 2020-11-10
 time: 00:59:17
 tweet_id: "1325966222815453184"

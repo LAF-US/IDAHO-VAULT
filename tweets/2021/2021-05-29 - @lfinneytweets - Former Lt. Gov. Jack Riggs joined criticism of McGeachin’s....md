@@ -1,4 +1,5 @@
 ---
+title: "Former Lt. Gov. Jack Riggs joined criticism of McGeachin\u2019s..."
 date: 2021-05-29
 time: 22:05:00
 tweet_id: "1398762322374447106"

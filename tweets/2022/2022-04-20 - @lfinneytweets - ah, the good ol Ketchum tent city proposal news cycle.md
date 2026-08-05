@@ -1,4 +1,5 @@
 ---
+title: "ah, the good ol Ketchum tent city proposal news cycle"
 date: 2022-04-20
 time: 22:06:42
 tweet_id: "1516901194920493056"

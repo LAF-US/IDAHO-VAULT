@@ -1,4 +1,5 @@
 ---
+title: "Patronizing a prostitute is a misdemeanor under Idaho law...."
 date: 2020-02-24
 time: 19:36:40
 tweet_id: "1232026577023557632"

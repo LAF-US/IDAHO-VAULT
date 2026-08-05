@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise 3rd time's the charm JFAC..."
 date: 2020-03-16
 time: 20:09:33
 tweet_id: "1239644997101563904"

@@ -1,4 +1,5 @@
 ---
+title: "RT @KTVB Over 20 Idaho beef plant workers sickened with..."
 date: 2020-05-09
 time: 22:55:51
 tweet_id: "1259255794844852224"

@@ -1,4 +1,5 @@
 ---
+title: "Both groups remained peaceful, but some feel the armed..."
 date: 2020-06-06
 time: 18:44:27
 tweet_id: "1269339384437850112"

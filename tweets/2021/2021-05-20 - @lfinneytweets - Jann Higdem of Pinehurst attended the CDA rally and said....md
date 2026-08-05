@@ -1,4 +1,5 @@
 ---
+title: "Jann Higdem of Pinehurst attended the CDA rally and said..."
 date: 2021-05-20
 time: 14:48:10
 tweet_id: "1395390899232804868"

@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoStatesman Racist global underworld Boise man..."
 date: 2024-09-10
 time: 22:52:50
 tweet_id: "1833639798848032945"

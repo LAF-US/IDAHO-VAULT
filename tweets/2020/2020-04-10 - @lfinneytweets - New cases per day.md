@@ -1,4 +1,5 @@
 ---
+title: "New cases per day"
 date: 2020-04-10
 time: 04:48:06
 tweet_id: "1248472802136428544"

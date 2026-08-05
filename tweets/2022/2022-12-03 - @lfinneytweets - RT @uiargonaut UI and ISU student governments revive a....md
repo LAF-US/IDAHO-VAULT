@@ -1,4 +1,5 @@
 ---
+title: "RT @uiargonaut UI and ISU student governments revive a..."
 date: 2022-12-03
 time: 03:30:19
 tweet_id: "1598882296245145601"

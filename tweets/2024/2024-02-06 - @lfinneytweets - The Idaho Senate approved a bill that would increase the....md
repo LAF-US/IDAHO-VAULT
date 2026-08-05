@@ -1,4 +1,5 @@
 ---
+title: "The Idaho Senate approved a bill that would increase the..."
 date: 2024-02-06
 time: 19:22:38
 tweet_id: "1754948736315424954"

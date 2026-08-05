@@ -1,4 +1,5 @@
 ---
+title: "RT @AdaElections Precincts are beginning to arrive at..."
 date: 2022-05-18
 time: 03:31:30
 tweet_id: "1526767408966381568"

@@ -1,4 +1,5 @@
 ---
+title: "RT @GovernorLittle My proclamation detailing how Idaho\u2019s..."
 date: 2020-04-02
 time: 00:56:09
 tweet_id: "1245515328915828736"

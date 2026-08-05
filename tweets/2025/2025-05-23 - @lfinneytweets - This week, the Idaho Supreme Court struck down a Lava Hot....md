@@ -1,4 +1,5 @@
 ---
+title: "This week, the Idaho Supreme Court struck down a Lava Hot..."
 date: 2025-05-23
 time: 18:45:34
 tweet_id: "1925986479517405687"

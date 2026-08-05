@@ -1,4 +1,5 @@
 ---
+title: "RT @CBS2Boise Idaho hospitals brace for more Covid patients"
 date: 2020-11-10
 time: 01:21:28
 tweet_id: "1325971804544925697"

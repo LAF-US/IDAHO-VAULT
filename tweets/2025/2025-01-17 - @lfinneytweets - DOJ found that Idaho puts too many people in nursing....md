@@ -1,4 +1,5 @@
 ---
+title: "DOJ found that Idaho puts too many people in nursing..."
 date: 2025-01-17
 time: 23:49:45
 tweet_id: "1880402158132293756"

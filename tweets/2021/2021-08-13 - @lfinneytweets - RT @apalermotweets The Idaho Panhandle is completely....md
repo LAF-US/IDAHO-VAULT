@@ -1,4 +1,5 @@
 ---
+title: "RT @apalermotweets The Idaho Panhandle is completely..."
 date: 2021-08-13
 time: 17:56:47
 tweet_id: "1426241336240328707"

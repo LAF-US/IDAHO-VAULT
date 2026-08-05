@@ -1,4 +1,5 @@
 ---
+title: "House committee assignments Dems lose one seat on JFAC...."
 date: 2022-12-02
 time: 16:40:16
 tweet_id: "1598718703784595457"

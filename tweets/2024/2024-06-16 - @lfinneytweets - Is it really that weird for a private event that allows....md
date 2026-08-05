@@ -1,4 +1,5 @@
 ---
+title: "Is it really that weird for a private event that allows..."
 date: 2024-06-16
 time: 15:56:12
 tweet_id: "1802369595950641221"

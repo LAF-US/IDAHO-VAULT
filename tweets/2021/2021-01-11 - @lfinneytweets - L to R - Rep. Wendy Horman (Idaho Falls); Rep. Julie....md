@@ -1,4 +1,5 @@
 ---
+title: "L to R - Rep. Wendy Horman (Idaho Falls); Rep. Julie..."
 date: 2021-01-11
 time: 17:19:02
 tweet_id: "1348680832811102209"

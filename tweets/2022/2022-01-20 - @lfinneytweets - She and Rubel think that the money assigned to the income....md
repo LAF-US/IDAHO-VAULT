@@ -1,4 +1,5 @@
 ---
+title: "She and Rubel think that the money assigned to the income..."
 date: 2022-01-20
 time: 19:38:42
 tweet_id: "1484249041844072448"

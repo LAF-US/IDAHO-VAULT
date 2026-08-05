@@ -1,4 +1,5 @@
 ---
+title: "The only bill not yet acted on is HB340, which lets a CDA..."
 date: 2020-03-31
 time: 00:19:28
 tweet_id: "1244781320233877504"

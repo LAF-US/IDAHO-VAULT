@@ -1,4 +1,5 @@
 ---
+title: "RT @uidaho Happy birthday #Idaho, the 43rd state. Together,..."
 date: 2023-07-03
 time: 15:24:37
 tweet_id: "1675888282360741888"

@@ -1,4 +1,5 @@
 ---
+title: "RT @DailyBee Bonner County resident Dan Rose has launched..."
 date: 2024-04-12
 time: 23:06:17
 tweet_id: "1778922618630107229"

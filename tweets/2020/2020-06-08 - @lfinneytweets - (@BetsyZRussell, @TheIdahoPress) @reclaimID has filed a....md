@@ -1,4 +1,5 @@
 ---
+title: "(@BetsyZRussell, @TheIdahoPress) @reclaimID has filed a..."
 date: 2020-06-08
 time: 17:14:57
 tweet_id: "1270041638874705920"

@@ -1,4 +1,5 @@
 ---
+title: "If you're a more professional stats person than I who is..."
 date: 2020-04-10
 time: 04:54:03
 tweet_id: "1248474301398781954"

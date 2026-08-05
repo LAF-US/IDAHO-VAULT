@@ -1,4 +1,5 @@
 ---
+title: "RT @nytgraphics Today's front page, with a chart showing..."
 date: 2020-07-12
 time: 03:08:58
 tweet_id: "1282149925879332864"

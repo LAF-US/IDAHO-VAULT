@@ -1,4 +1,5 @@
 ---
+title: "Winder moves to introduce and print all 7 RS bills, Anthon..."
 date: 2021-11-15
 time: 15:58:18
 tweet_id: "1460275977078984707"

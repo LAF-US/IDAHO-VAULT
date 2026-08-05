@@ -1,4 +1,5 @@
 ---
+title: "Boogaloo gear and unofficial Aloha shirt 'uniforms' showed..."
 date: 2020-06-12
 time: 15:47:45
 tweet_id: "1271469244488617987"

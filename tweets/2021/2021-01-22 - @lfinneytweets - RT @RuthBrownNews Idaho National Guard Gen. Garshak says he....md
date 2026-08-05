@@ -1,4 +1,5 @@
 ---
+title: "RT @RuthBrownNews Idaho National Guard Gen. Garshak says he..."
 date: 2021-01-22
 time: 19:18:58
 tweet_id: "1352697281867374592"

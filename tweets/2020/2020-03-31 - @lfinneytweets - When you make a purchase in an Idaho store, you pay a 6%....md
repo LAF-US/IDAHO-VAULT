@@ -1,4 +1,5 @@
 ---
+title: "When you make a purchase in an Idaho store, you pay a 6%..."
 date: 2020-03-31
 time: 14:02:52
 tweet_id: "1244988536228462592"

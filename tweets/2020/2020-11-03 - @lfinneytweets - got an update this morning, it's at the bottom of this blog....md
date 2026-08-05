@@ -1,4 +1,5 @@
 ---
+title: "got an update this morning, it's at the bottom of this blog..."
 date: 2020-11-03
 time: 06:57:25
 tweet_id: "1323519635078012928"

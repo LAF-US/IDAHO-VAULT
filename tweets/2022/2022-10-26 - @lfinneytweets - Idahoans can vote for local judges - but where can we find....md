@@ -1,4 +1,5 @@
 ---
+title: "Idahoans can vote for local judges - but where can we find..."
 date: 2022-10-26
 time: 17:32:23
 tweet_id: "1585323469771718656"

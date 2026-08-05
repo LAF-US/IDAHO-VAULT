@@ -1,4 +1,5 @@
 ---
+title: "People want to know what\u2019s going on; they just don\u2019t know..."
 date: 2021-10-05
 time: 17:49:55
 tweet_id: "1445446163256078340"

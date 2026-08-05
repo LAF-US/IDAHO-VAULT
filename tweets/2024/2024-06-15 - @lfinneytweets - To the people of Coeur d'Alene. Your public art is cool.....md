@@ -1,4 +1,5 @@
 ---
+title: "To the people of Coeur d'Alene. Your public art is cool...."
 date: 2024-06-15
 time: 01:02:47
 tweet_id: "1801782373270638863"

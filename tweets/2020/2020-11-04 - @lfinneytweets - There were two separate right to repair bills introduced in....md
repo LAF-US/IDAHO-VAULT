@@ -1,4 +1,5 @@
 ---
+title: "There were two separate right to repair bills introduced in..."
 date: 2020-11-04
 time: 20:31:17
 tweet_id: "1324086837762088961"

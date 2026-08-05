@@ -1,4 +1,5 @@
 ---
+title: "RT @KMVTNews Twin Falls School District to offer full day..."
 date: 2022-04-03
 time: 20:06:56
 tweet_id: "1510710462828072962"

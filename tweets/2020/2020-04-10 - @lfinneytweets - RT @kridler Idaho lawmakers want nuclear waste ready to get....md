@@ -1,4 +1,5 @@
 ---
+title: "RT @kridler Idaho lawmakers want nuclear waste ready to get..."
 date: 2020-04-10
 time: 19:20:33
 tweet_id: "1248692362609430529"

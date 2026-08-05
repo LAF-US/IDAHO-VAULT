@@ -1,4 +1,5 @@
 ---
+title: "RT @the208KTVB Black Lives Matter Boise relocate Tuesday's..."
 date: 2020-07-21
 time: 03:55:41
 tweet_id: "1285423173693931520"

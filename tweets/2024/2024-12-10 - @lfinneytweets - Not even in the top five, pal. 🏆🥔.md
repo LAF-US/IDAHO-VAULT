@@ -1,4 +1,5 @@
 ---
+title: "Not even in the top five, pal. \ud83c\udfc6\ud83e\udd54"
 date: 2024-12-10
 time: 00:57:56
 tweet_id: "1866286192687513693"

@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPTV Get the latest scoop on Idaho news with the..."
 date: 2021-09-27
 time: 21:00:14
 tweet_id: "1442594958288949258"

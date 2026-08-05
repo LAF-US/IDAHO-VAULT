@@ -1,4 +1,5 @@
 ---
+title: "RT @clarkcorbin It's Friday! @KevinRichert and I just..."
 date: 2020-04-24
 time: 22:32:18
 tweet_id: "1253814046479904768"

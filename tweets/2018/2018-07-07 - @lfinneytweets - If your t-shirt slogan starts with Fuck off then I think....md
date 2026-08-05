@@ -1,4 +1,5 @@
 ---
+title: "If your t-shirt slogan starts with Fuck off then I think..."
 date: 2018-07-07
 time: 06:28:58
 tweet_id: "1015482790983262208"

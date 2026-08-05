@@ -1,4 +1,5 @@
 ---
+title: "Sam Rowland, an Army veteran who showed up to support Black..."
 date: 2020-07-17
 time: 05:43:34
 tweet_id: "1284000771176984576"

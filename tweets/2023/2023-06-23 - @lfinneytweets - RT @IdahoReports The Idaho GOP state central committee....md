@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports The Idaho GOP state central committee..."
 date: 2023-06-23
 time: 16:58:44
 tweet_id: "1672288086821318656"

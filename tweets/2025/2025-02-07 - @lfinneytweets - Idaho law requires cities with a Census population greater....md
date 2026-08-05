@@ -1,4 +1,5 @@
 ---
+title: "Idaho law requires cities with a Census population greater..."
 date: 2025-02-07
 time: 00:47:52
 tweet_id: "1887664541447954644"

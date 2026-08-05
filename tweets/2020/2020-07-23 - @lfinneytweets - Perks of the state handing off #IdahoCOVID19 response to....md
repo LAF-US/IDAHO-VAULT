@@ -1,4 +1,5 @@
 ---
+title: "Perks of the state handing off #IdahoCOVID19 response to..."
 date: 2020-07-23
 time: 16:27:31
 tweet_id: "1286337156861120518"

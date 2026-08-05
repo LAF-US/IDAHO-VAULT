@@ -1,4 +1,5 @@
 ---
+title: "Very helpful resource for determining which indeterminate..."
 date: 2020-07-17
 time: 16:41:29
 tweet_id: "1284166344208838663"

@@ -1,4 +1,5 @@
 ---
+title: "We've got more deer with spongy brain disease, people. #CWD..."
 date: 2023-11-08
 time: 22:39:08
 tweet_id: "1722383276592255328"

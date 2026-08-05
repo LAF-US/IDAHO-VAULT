@@ -1,4 +1,5 @@
 ---
+title: "RT @RadioDawson About 19,000 more votes cast this election..."
 date: 2018-05-16
 time: 06:45:55
 tweet_id: "996642888476909569"

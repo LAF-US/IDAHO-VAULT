@@ -1,4 +1,5 @@
 ---
+title: "Idahoans are amazing people."
 date: 2019-01-10
 time: 16:39:38
 tweet_id: "1083402998892486657"

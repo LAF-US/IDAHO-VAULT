@@ -1,4 +1,5 @@
 ---
+title: "At Tuesday's townhall call, @lawrencewasden said there have..."
 date: 2020-06-17
 time: 16:12:45
 tweet_id: "1273287477940219904"

@@ -1,4 +1,5 @@
 ---
+title: "RT @dbnelson PSA Medicaid expansion got a higher vote share..."
 date: 2018-11-08
 time: 23:54:20
 tweet_id: "1060681960232693760"

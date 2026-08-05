@@ -1,4 +1,5 @@
 ---
+title: "RT @KeithRidler Idaho National Guard leader dismisses lt...."
 date: 2021-10-05
 time: 21:40:09
 tweet_id: "1445504107259650052"

@@ -1,4 +1,5 @@
 ---
+title: "JFAC unanimously passes trailer bill funding for the CTE..."
 date: 2020-03-12
 time: 22:09:53
 tweet_id: "1238225729201954816"

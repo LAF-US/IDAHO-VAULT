@@ -1,4 +1,5 @@
 ---
+title: "RT @Oregonian Portland to consider letting voters decide on..."
 date: 2020-07-25
 time: 16:29:35
 tweet_id: "1287062450886516737"

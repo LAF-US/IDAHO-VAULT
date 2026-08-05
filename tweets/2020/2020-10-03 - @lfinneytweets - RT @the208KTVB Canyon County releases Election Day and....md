@@ -1,4 +1,5 @@
 ---
+title: "RT @the208KTVB Canyon County releases Election Day and..."
 date: 2020-10-03
 time: 00:18:13
 tweet_id: "1312185150193635328"

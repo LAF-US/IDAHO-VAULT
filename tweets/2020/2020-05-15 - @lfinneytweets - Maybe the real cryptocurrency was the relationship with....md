@@ -1,4 +1,5 @@
 ---
+title: "Maybe the real cryptocurrency was the relationship with..."
 date: 2020-05-15
 time: 22:54:05
 tweet_id: "1261429675118612481"

@@ -1,4 +1,5 @@
 ---
+title: "RT @kkruesi After Nashville bombing, new concerns about the..."
 date: 2020-12-31
 time: 15:31:08
 tweet_id: "1344667413011316740"

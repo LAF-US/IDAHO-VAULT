@@ -1,4 +1,5 @@
 ---
+title: "RT @KirkSiegler Signs in a downtown Orofino, Idaho..."
 date: 2021-03-17
 time: 19:09:47
 tweet_id: "1372263914847698944"

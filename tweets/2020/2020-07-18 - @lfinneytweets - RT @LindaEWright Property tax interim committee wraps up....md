@@ -1,4 +1,5 @@
 ---
+title: "RT @LindaEWright Property tax interim committee wraps up..."
 date: 2020-07-18
 time: 01:11:49
 tweet_id: "1284294774497804288"

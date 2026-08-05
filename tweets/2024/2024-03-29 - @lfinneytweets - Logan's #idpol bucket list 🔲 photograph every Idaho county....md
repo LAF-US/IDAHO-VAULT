@@ -1,4 +1,5 @@
 ---
+title: "Logan's #idpol bucket list \ud83d\udd32 photograph every Idaho county..."
 date: 2024-03-29
 time: 02:11:21
 tweet_id: "1773533373861896253"

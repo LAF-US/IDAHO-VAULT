@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoCapitalSun Idaho\u2019s Republican Sens. Mike Crapo and..."
 date: 2022-11-17
 time: 00:04:39
 tweet_id: "1593032329101856768"

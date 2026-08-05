@@ -1,4 +1,5 @@
 ---
+title: "RT @starsandstripes To the rest of the world, he\u2019s..."
 date: 2023-02-22
 time: 00:40:41
 tweet_id: "1628193022633717760"

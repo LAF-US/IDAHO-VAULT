@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio Full statement from @uidaho."
 date: 2020-03-19
 time: 19:05:23
 tweet_id: "1240716013554958337"

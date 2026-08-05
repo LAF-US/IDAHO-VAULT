@@ -1,4 +1,5 @@
 ---
+title: "RT @KeithRidler Idaho to receive $35.8 million in federal..."
 date: 2022-06-23
 time: 16:44:52
 tweet_id: "1540013025842712576"

@@ -1,4 +1,5 @@
 ---
+title: "Gem County average property value increase - Ag forestry..."
 date: 2021-06-08
 time: 22:57:58
 tweet_id: "1402399532084699136"

@@ -1,4 +1,5 @@
 ---
+title: "Idaho District 1 Reps. Dixon & Scott are not so different..."
 date: 2020-02-11
 time: 21:23:55
 tweet_id: "1227342524823429121"

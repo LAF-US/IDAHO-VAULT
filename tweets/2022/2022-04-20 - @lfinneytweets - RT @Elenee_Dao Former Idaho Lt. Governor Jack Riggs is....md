@@ -1,4 +1,5 @@
 ---
+title: "RT @Elenee_Dao Former Idaho Lt. Governor Jack Riggs is..."
 date: 2022-04-20
 time: 22:13:52
 tweet_id: "1516902998307311617"

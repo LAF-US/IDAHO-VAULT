@@ -1,4 +1,5 @@
 ---
+title: "Idaho lawmakers call on @phdidaho to rescind its mask..."
 date: 2020-10-02
 time: 22:27:56
 tweet_id: "1312157397306146816"

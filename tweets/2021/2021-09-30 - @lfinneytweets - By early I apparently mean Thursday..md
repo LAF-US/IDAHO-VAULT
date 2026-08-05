@@ -1,4 +1,5 @@
 ---
+title: "By early I apparently mean Thursday."
 date: 2021-09-30
 time: 18:53:59
 tweet_id: "1443650347478618123"

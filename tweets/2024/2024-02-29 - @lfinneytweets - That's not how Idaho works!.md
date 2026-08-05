@@ -1,4 +1,5 @@
 ---
+title: "That's not how Idaho works!"
 date: 2024-02-29
 time: 22:28:22
 tweet_id: "1763330398388699232"

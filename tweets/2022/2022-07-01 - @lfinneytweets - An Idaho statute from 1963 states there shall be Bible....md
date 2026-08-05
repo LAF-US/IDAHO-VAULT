@@ -1,4 +1,5 @@
 ---
+title: "An Idaho statute from 1963 states there shall be Bible..."
 date: 2022-07-01
 time: 22:00:36
 tweet_id: "1542991589328297984"

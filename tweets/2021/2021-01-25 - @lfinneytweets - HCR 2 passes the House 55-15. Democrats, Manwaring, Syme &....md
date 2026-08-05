@@ -1,4 +1,5 @@
 ---
+title: "HCR 2 passes the House 55-15. Democrats, Manwaring, Syme &..."
 date: 2021-01-25
 time: 19:28:03
 tweet_id: "1353786731267387392"

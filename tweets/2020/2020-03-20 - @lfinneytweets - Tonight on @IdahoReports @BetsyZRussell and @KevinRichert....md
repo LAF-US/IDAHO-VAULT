@@ -1,4 +1,5 @@
 ---
+title: "Tonight on @IdahoReports @BetsyZRussell and @KevinRichert..."
 date: 2020-03-20
 time: 21:10:22
 tweet_id: "1241109852358725632"

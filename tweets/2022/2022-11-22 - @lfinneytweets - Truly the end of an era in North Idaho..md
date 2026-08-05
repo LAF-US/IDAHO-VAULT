@@ -1,4 +1,5 @@
 ---
+title: "Truly the end of an era in North Idaho."
 date: 2022-11-22
 time: 18:39:19
 tweet_id: "1595124785108770818"

@@ -1,4 +1,5 @@
 ---
+title: "Idaho Primary Election Results 2024 (Classic) #idleg #idpol"
 date: 2024-05-21
 time: 19:44:56
 tweet_id: "1793005072554831889"

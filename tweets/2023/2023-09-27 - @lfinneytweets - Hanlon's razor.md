@@ -1,4 +1,5 @@
 ---
+title: "Hanlon's razor"
 date: 2023-09-27
 time: 06:48:51
 tweet_id: "1706923842999095746"

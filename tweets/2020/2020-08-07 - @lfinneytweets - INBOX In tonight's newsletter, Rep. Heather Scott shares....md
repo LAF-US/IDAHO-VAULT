@@ -1,4 +1,5 @@
 ---
+title: "INBOX In tonight's newsletter, Rep. Heather Scott shares..."
 date: 2020-08-07
 time: 01:38:55
 tweet_id: "1291549349210492928"

@@ -1,4 +1,5 @@
 ---
+title: "RT @NateBrownNews Crapo, Risch laud #AmyConeyBarrett..."
 date: 2020-10-27
 time: 05:46:30
 tweet_id: "1320965075201474560"

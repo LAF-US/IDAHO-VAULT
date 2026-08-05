@@ -1,4 +1,5 @@
 ---
+title: "RT @gazettedotcom Cedar Rapids man arrested after being..."
 date: 2020-06-08
 time: 18:20:49
 tweet_id: "1270058213635809281"

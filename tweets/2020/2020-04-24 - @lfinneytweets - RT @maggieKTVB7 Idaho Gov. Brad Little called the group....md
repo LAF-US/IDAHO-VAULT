@@ -1,4 +1,5 @@
 ---
+title: "RT @maggieKTVB7 Idaho Gov. Brad Little called the group..."
 date: 2020-04-24
 time: 23:39:06
 tweet_id: "1253830860203102208"

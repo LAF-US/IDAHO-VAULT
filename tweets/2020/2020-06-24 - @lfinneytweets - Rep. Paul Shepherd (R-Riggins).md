@@ -1,4 +1,5 @@
 ---
+title: "Rep. Paul Shepherd (R-Riggins)"
 date: 2020-06-24
 time: 04:50:43
 tweet_id: "1275652552382611464"

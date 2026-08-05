@@ -1,4 +1,5 @@
 ---
+title: "RT @DailyBee A panel of Idaho lawmakers has advanced a bill..."
 date: 2022-02-17
 time: 19:08:32
 tweet_id: "1494388311179235328"

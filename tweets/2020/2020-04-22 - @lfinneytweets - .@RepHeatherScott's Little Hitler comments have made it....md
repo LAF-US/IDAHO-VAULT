@@ -1,4 +1,5 @@
 ---
+title: ".@RepHeatherScott's Little Hitler comments have made it..."
 date: 2020-04-22
 time: 16:52:20
 tweet_id: "1253003718766690304"

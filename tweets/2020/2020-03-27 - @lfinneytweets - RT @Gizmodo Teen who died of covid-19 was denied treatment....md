@@ -1,4 +1,5 @@
 ---
+title: "RT @Gizmodo Teen who died of covid-19 was denied treatment..."
 date: 2020-03-27
 time: 14:35:39
 tweet_id: "1243547235951894529"

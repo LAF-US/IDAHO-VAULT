@@ -1,4 +1,5 @@
 ---
+title: "RT @CBS2Boise Live Blog Rep. Zito says no traction in Idaho..."
 date: 2020-02-06
 time: 20:51:17
 tweet_id: "1225522374054797312"

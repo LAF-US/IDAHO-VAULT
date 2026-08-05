@@ -1,4 +1,5 @@
 ---
+title: "RT @uiargonaut UI journalism professor placed on..."
 date: 2019-01-26
 time: 06:37:06
 tweet_id: "1089049572725280768"

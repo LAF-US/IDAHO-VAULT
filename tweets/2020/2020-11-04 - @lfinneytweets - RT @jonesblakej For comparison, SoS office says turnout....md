@@ -1,4 +1,5 @@
 ---
+title: "RT @jonesblakej For comparison, SoS office says turnout..."
 date: 2020-11-04
 time: 03:26:42
 tweet_id: "1323828995062820865"

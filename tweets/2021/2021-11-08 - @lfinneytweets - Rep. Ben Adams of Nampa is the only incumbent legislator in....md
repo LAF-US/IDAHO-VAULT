@@ -1,4 +1,5 @@
 ---
+title: "Rep. Ben Adams of Nampa is the only incumbent legislator in..."
 date: 2021-11-08
 time: 23:45:15
 tweet_id: "1457856775982510084"

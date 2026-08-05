@@ -1,4 +1,5 @@
 ---
+title: "Statement by @GovernorLittle regarding capitol mall..."
 date: 2024-05-09
 time: 15:47:56
 tweet_id: "1788596776595050670"

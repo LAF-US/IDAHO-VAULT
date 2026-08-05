@@ -1,4 +1,5 @@
 ---
+title: "Tomorrow @GovernorLittle is making an #IdahoCOVID19..."
 date: 2020-10-25
 time: 19:04:36
 tweet_id: "1320441144535252992"

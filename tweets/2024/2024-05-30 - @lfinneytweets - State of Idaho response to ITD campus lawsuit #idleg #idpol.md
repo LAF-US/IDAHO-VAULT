@@ -1,4 +1,5 @@
 ---
+title: "State of Idaho response to ITD campus lawsuit #idleg #idpol"
 date: 2024-05-30
 time: 20:43:00
 tweet_id: "1796281176631730667"

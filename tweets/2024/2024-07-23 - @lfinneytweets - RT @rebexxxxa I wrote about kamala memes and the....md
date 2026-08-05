@@ -1,4 +1,5 @@
 ---
+title: "RT @rebexxxxa I wrote about kamala memes and the..."
 date: 2024-07-23
 time: 16:03:00
 tweet_id: "1815779657041788932"

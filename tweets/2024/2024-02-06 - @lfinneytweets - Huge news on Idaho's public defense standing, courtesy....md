@@ -1,4 +1,5 @@
 ---
+title: "Huge news on Idaho's public defense standing, courtesy..."
 date: 2024-02-06
 time: 19:36:31
 tweet_id: "1754952228476272715"

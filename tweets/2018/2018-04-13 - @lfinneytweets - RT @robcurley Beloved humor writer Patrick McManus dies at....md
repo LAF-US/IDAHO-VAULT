@@ -1,4 +1,5 @@
 ---
+title: "RT @robcurley Beloved humor writer Patrick McManus dies at..."
 date: 2018-04-13
 time: 19:09:25
 tweet_id: "984871193114103808"

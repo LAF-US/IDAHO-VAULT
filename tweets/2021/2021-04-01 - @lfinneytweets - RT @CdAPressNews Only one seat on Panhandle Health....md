@@ -1,4 +1,5 @@
 ---
+title: "RT @CdAPressNews Only one seat on Panhandle Health..."
 date: 2021-04-01
 time: 16:26:36
 tweet_id: "1377658668359938048"

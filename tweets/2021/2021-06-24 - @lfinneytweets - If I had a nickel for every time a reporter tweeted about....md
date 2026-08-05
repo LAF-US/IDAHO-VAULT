@@ -1,4 +1,5 @@
 ---
+title: "If I had a nickel for every time a reporter tweeted about..."
 date: 2021-06-24
 time: 23:05:39
 tweet_id: "1408199672699580419"

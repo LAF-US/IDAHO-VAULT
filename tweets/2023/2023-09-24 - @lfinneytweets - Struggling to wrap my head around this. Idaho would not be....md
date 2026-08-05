@@ -1,4 +1,5 @@
 ---
+title: "Struggling to wrap my head around this. Idaho would not be..."
 date: 2023-09-24
 time: 04:37:15
 tweet_id: "1705803558837444933"

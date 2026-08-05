@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoStatesman Ever wonder what that old schoolhouse is..."
 date: 2024-06-06
 time: 16:53:16
 tweet_id: "1798760077257789522"

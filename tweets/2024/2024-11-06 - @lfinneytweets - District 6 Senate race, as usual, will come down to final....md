@@ -1,4 +1,5 @@
 ---
+title: "District 6 Senate race, as usual, will come down to final..."
 date: 2024-11-06
 time: 09:29:57
 tweet_id: "1854093856184431042"

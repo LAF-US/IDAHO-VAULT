@@ -1,4 +1,5 @@
 ---
+title: "RT @jacobhfries and ICYMI, Steve Smith, a previous SR..."
 date: 2021-01-24
 time: 19:22:07
 tweet_id: "1353422848803524608"

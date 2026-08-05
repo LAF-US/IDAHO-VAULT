@@ -1,4 +1,5 @@
 ---
+title: "1,509 votes separate Foreman and Parker. At least 3,844..."
 date: 2024-11-06
 time: 09:37:20
 tweet_id: "1854095713413853447"

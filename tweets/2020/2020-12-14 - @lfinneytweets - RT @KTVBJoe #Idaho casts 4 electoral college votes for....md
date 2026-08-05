@@ -1,4 +1,5 @@
 ---
+title: "RT @KTVBJoe #Idaho casts 4 electoral college votes for..."
 date: 2020-12-14
 time: 20:44:35
 tweet_id: "1338585702376775680"

@@ -1,4 +1,5 @@
 ---
+title: "BREAKING Bryan Kohberger has been granted a change of..."
 date: 2024-09-09
 time: 15:57:26
 tweet_id: "1833172875878281263"

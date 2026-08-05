@@ -1,4 +1,5 @@
 ---
+title: "RT @DailyBee Arson is to blame for a July 4 fire that..."
 date: 2024-07-09
 time: 19:58:39
 tweet_id: "1810765530179227715"

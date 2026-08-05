@@ -1,4 +1,5 @@
 ---
+title: "RT @the208KTVB 'Oh, I don\u2019t want to go this far' Pam..."
 date: 2022-07-09
 time: 01:13:37
 tweet_id: "1545576878555090945"

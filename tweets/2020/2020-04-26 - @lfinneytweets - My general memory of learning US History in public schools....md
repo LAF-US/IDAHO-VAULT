@@ -1,4 +1,5 @@
 ---
+title: "My general memory of learning US History in public schools..."
 date: 2020-04-26
 time: 17:11:56
 tweet_id: "1254458202990600192"

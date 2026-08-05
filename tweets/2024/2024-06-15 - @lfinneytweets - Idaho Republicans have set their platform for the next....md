@@ -1,4 +1,5 @@
 ---
+title: "Idaho Republicans have set their platform for the next..."
 date: 2024-06-15
 time: 22:05:17
 tweet_id: "1802100089986637997"

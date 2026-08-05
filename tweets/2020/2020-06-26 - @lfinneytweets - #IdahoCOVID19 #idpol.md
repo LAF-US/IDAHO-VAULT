@@ -1,4 +1,5 @@
 ---
+title: "#IdahoCOVID19 #idpol"
 date: 2020-06-26
 time: 02:05:58
 tweet_id: "1276335865141182464"

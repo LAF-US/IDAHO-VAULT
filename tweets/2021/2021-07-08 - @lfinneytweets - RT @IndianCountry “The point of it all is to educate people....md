@@ -1,4 +1,5 @@
 ---
+title: "RT @IndianCountry \u201cThe point of it all is to educate people..."
 date: 2021-07-08
 time: 02:14:36
 tweet_id: "1412958266582204418"

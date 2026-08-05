@@ -1,4 +1,5 @@
 ---
+title: "Key to this case The Idaho Supreme Court held that the..."
 date: 2025-01-23
 time: 03:10:07
 tweet_id: "1882264520485392681"

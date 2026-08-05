@@ -1,4 +1,5 @@
 ---
+title: "Idaho Forest Group indefinitely suspending operations by..."
 date: 2021-08-31
 time: 16:00:10
 tweet_id: "1432734970523512834"

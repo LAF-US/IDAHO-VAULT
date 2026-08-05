@@ -1,4 +1,5 @@
 ---
+title: "RT @sallykrutzig Full story Rep says Little is \u201cin full..."
 date: 2021-01-21
 time: 20:00:58
 tweet_id: "1352345464205574144"

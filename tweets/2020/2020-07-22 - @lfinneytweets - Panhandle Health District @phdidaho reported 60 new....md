@@ -1,4 +1,5 @@
 ---
+title: "Panhandle Health District @phdidaho reported 60 new..."
 date: 2020-07-22
 time: 16:27:25
 tweet_id: "1285974742998999040"

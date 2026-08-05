@@ -1,4 +1,5 @@
 ---
+title: "Pretty full crowd in the Lincoln Auditorium this morning..."
 date: 2023-08-07
 time: 15:04:40
 tweet_id: "1688566837502681088"

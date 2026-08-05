@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio The latest U.S. Drought Monitor for Idaho."
 date: 2024-06-13
 time: 15:07:34
 tweet_id: "1801270192288444500"

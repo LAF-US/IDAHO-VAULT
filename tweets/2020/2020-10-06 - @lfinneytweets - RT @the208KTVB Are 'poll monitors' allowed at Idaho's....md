@@ -1,4 +1,5 @@
 ---
+title: "RT @the208KTVB Are 'poll monitors' allowed at Idaho's..."
 date: 2020-10-06
 time: 23:37:01
 tweet_id: "1313624334074695680"

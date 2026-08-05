@@ -1,4 +1,5 @@
 ---
+title: "Senate chairs Jeff Agenbroad (JFAC), Steven Thayn..."
 date: 2022-11-11
 time: 04:08:15
 tweet_id: "1590919309886656513"

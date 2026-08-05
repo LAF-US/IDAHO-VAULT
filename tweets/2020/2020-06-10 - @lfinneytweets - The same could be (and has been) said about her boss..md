@@ -1,4 +1,5 @@
 ---
+title: "The same could be (and has been) said about her boss."
 date: 2020-06-10
 time: 21:18:23
 tweet_id: "1270827674928205825"

@@ -1,4 +1,5 @@
 ---
+title: "Lt. Gov. Janice McGeachin\u2019s new indoctrination task force..."
 date: 2021-04-23
 time: 16:05:57
 tweet_id: "1385626003850993666"

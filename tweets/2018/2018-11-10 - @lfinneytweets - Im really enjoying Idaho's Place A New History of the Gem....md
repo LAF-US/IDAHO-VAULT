@@ -1,4 +1,5 @@
 ---
+title: "Im really enjoying Idaho's Place A New History of the Gem..."
 date: 2018-11-10
 time: 20:22:45
 tweet_id: "1061353487844294656"

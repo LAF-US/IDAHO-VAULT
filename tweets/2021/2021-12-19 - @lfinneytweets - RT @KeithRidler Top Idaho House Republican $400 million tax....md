@@ -1,4 +1,5 @@
 ---
+title: "RT @KeithRidler Top Idaho House Republican $400 million tax..."
 date: 2021-12-19
 time: 00:08:55
 tweet_id: "1472358246551724032"

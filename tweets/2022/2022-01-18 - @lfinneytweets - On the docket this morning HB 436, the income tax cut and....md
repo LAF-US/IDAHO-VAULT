@@ -1,4 +1,5 @@
 ---
+title: "On the docket this morning HB 436, the income tax cut and..."
 date: 2022-01-18
 time: 16:05:34
 tweet_id: "1483470631312060417"

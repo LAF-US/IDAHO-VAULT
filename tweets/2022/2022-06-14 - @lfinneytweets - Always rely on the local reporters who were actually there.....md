@@ -1,4 +1,5 @@
 ---
+title: "Always rely on the local reporters who were actually there...."
 date: 2022-06-14
 time: 18:57:25
 tweet_id: "1536784894449266688"

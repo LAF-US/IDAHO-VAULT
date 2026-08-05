@@ -1,4 +1,5 @@
 ---
+title: "The state covered nearly 90% of an Idaho family\u2019s higher..."
 date: 2021-10-12
 time: 02:11:33
 tweet_id: "1447746731148410886"

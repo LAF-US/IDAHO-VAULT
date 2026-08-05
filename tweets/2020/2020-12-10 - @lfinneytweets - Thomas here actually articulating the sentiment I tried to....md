@@ -1,4 +1,5 @@
 ---
+title: "Thomas here actually articulating the sentiment I tried to..."
 date: 2020-12-10
 time: 19:32:59
 tweet_id: "1337118132624793600"

@@ -1,4 +1,5 @@
 ---
+title: "During the private discussion, which an Idaho Capital Sun..."
 date: 2026-03-04
 time: 01:38:38
 tweet_id: "2029008584156299333"

@@ -1,4 +1,5 @@
 ---
+title: "RT @BoiseDev \u2018Razor-thin\u2019 Judge hears arguments in Arnold\u2019s..."
 date: 2020-12-12
 time: 01:34:29
 tweet_id: "1337571492318474241"

@@ -1,4 +1,5 @@
 ---
+title: "The @IdahoGOP is campaigning strongly against the..."
 date: 2024-01-08
 time: 18:13:31
 tweet_id: "1744422093733974182"

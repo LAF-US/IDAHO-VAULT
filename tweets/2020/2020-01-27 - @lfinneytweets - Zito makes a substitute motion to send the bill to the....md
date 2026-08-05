@@ -1,4 +1,5 @@
 ---
+title: "Zito makes a substitute motion to send the bill to the..."
 date: 2020-01-27
 time: 17:30:46
 tweet_id: "1221848031579926528"

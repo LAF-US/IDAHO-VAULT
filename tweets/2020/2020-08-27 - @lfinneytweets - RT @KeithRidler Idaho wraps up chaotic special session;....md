@@ -1,4 +1,5 @@
 ---
+title: "RT @KeithRidler Idaho wraps up chaotic special session;..."
 date: 2020-08-27
 time: 03:47:41
 tweet_id: "1298829511841050625"

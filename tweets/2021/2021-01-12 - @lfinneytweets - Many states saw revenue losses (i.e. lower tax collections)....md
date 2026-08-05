@@ -1,4 +1,5 @@
 ---
+title: "Many states saw revenue losses (i.e. lower tax collections)..."
 date: 2021-01-12
 time: 20:07:51
 tweet_id: "1349085705226440705"

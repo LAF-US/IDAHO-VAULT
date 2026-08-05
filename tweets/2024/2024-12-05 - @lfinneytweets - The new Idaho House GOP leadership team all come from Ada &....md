@@ -1,4 +1,5 @@
 ---
+title: "The new Idaho House GOP leadership team all come from Ada &..."
 date: 2024-12-05
 time: 05:35:37
 tweet_id: "1864544133567905900"

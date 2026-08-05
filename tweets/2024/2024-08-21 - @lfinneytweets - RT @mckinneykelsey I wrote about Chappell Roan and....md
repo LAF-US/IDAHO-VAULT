@@ -1,4 +1,5 @@
 ---
+title: "RT @mckinneykelsey I wrote about Chappell Roan and..."
 date: 2024-08-21
 time: 16:38:38
 tweet_id: "1826297872452841587"

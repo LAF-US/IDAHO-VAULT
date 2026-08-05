@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports The Idaho Legislature adjourned sine die..."
 date: 2025-04-06
 time: 02:34:08
 tweet_id: "1908709782279905539"

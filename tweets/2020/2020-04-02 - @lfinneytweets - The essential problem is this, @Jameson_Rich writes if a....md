@@ -1,4 +1,5 @@
 ---
+title: "The essential problem is this, @Jameson_Rich writes if a..."
 date: 2020-04-02
 time: 03:25:31
 tweet_id: "1245552918138220544"

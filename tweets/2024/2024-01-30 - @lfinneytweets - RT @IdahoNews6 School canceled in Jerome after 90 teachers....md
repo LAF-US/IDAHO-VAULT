@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoNews6 School canceled in Jerome after 90 teachers..."
 date: 2024-01-30
 time: 17:37:12
 tweet_id: "1752385484997943388"

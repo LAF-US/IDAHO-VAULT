@@ -1,4 +1,5 @@
 ---
+title: "RT @highcountrynews Despite political affiliation, Idaho..."
 date: 2020-07-16
 time: 20:53:44
 tweet_id: "1283867437071360001"

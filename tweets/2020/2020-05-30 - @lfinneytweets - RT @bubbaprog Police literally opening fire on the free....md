@@ -1,4 +1,5 @@
 ---
+title: "RT @bubbaprog Police literally opening fire on the free..."
 date: 2020-05-30
 time: 22:11:18
 tweet_id: "1266854728404615168"

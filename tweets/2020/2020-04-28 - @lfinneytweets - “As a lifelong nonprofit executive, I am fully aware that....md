@@ -1,4 +1,5 @@
 ---
+title: "\u201cAs a lifelong nonprofit executive, I am fully aware that..."
 date: 2020-04-28
 time: 16:55:41
 tweet_id: "1255178885357899777"

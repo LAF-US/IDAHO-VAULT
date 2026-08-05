@@ -1,4 +1,5 @@
 ---
+title: "RT @idahofreedom Rep. Judy Boyle and the Common Core..."
 date: 2020-02-05
 time: 17:53:33
 tweet_id: "1225115259184111616"

@@ -1,4 +1,5 @@
 ---
+title: "RT @KeithRidler Idaho governor will wait turn to get..."
 date: 2020-12-15
 time: 20:06:34
 tweet_id: "1338938523307536384"

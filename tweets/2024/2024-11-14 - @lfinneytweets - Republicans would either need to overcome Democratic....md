@@ -1,4 +1,5 @@
 ---
+title: "Republicans would either need to overcome Democratic..."
 date: 2024-11-14
 time: 05:02:38
 tweet_id: "1856925688810602781"

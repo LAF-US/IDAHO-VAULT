@@ -1,4 +1,5 @@
 ---
+title: "RT @AmadorforIdaho You know it is time to go home when..."
 date: 2020-03-17
 time: 23:10:58
 tweet_id: "1240053038603091968"

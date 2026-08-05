@@ -1,4 +1,5 @@
 ---
+title: "Six pieces of legislation received @GovernorLittle\u2019s veto..."
 date: 2020-04-03
 time: 19:41:31
 tweet_id: "1246160924643221505"

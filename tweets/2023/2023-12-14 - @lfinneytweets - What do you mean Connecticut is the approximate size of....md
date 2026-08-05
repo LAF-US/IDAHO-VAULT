@@ -1,4 +1,5 @@
 ---
+title: "What do you mean Connecticut is the approximate size of..."
 date: 2023-12-14
 time: 00:12:43
 tweet_id: "1735090404423614963"

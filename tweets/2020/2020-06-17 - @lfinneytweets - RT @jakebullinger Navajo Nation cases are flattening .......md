@@ -1,4 +1,5 @@
 ---
+title: "RT @jakebullinger Navajo Nation cases are flattening ......"
 date: 2020-06-17
 time: 17:26:12
 tweet_id: "1273305960350507013"

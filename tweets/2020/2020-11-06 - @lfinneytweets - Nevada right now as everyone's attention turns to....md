@@ -1,4 +1,5 @@
 ---
+title: "Nevada right now as everyone's attention turns to..."
 date: 2020-11-06
 time: 08:53:25
 tweet_id: "1324635989193617408"

@@ -1,4 +1,5 @@
 ---
+title: "RT @KBSX915 \ud83d\udc3bFAT\ud83d\udc3bBEAR\ud83d\udc3bWEEK\ud83d\udc3bSTARTS\ud83d\udc3bTOMORROW\ud83d\udc3b"
 date: 2022-10-04
 time: 23:16:44
 tweet_id: "1577437595189284864"

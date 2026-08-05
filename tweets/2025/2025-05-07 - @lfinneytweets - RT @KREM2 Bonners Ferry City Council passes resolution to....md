@@ -1,4 +1,5 @@
 ---
+title: "RT @KREM2 Bonners Ferry City Council passes resolution to..."
 date: 2025-05-07
 time: 08:45:29
 tweet_id: "1920037259719381232"

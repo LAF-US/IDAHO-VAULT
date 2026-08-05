@@ -1,4 +1,5 @@
 ---
+title: "I started my degree during the infamous pivot to video at..."
 date: 2021-07-26
 time: 17:18:47
 tweet_id: "1419708793022128130"

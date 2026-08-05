@@ -1,4 +1,5 @@
 ---
+title: "I'll admit I'm no early ed policy wonk, but why no push for..."
 date: 2019-02-21
 time: 16:15:59
 tweet_id: "1098617338008465414"

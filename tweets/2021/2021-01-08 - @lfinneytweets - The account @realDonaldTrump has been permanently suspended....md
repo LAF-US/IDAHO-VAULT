@@ -1,4 +1,5 @@
 ---
+title: "The account @realDonaldTrump has been permanently suspended..."
 date: 2021-01-08
 time: 23:40:21
 tweet_id: "1347689631106560001"

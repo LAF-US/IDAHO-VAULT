@@ -1,4 +1,5 @@
 ---
+title: "Its formal name is C 2022 E3 and it's described as a fuzzy,..."
 date: 2023-01-24
 time: 17:29:58
 tweet_id: "1617937769770389504"

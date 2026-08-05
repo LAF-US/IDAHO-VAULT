@@ -1,4 +1,5 @@
 ---
+title: "Was grateful to join the #idleg JFAC budget writers on a..."
 date: 2023-11-11
 time: 02:47:56
 tweet_id: "1723170668139950341"

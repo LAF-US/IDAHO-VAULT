@@ -1,4 +1,5 @@
 ---
+title: "Latah just dropped. McCann AND Foreman survive. #idleg"
 date: 2024-05-22
 time: 08:59:49
 tweet_id: "1793205111881363654"

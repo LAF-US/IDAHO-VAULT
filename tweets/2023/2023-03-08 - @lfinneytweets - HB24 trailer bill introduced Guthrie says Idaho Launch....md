@@ -1,4 +1,5 @@
 ---
+title: "HB24 trailer bill introduced Guthrie says Idaho Launch..."
 date: 2023-03-08
 time: 15:19:52
 tweet_id: "1633487705723260928"

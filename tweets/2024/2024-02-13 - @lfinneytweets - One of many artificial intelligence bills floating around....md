@@ -1,4 +1,5 @@
 ---
+title: "One of many artificial intelligence bills floating around..."
 date: 2024-02-13
 time: 22:59:33
 tweet_id: "1757540037074591781"

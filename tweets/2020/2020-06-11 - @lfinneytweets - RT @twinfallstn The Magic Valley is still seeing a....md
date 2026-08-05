@@ -1,4 +1,5 @@
 ---
+title: "RT @twinfallstn The Magic Valley is still seeing a..."
 date: 2020-06-11
 time: 01:54:32
 tweet_id: "1270897170518904833"

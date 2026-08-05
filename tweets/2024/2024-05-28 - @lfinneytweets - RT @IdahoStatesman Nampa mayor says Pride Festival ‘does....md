@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoStatesman Nampa mayor says Pride Festival \u2018does..."
 date: 2024-05-28
 time: 23:02:23
 tweet_id: "1795591479412592706"

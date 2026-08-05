@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Politico Labrador leaves..."
 date: 2018-06-16
 time: 05:38:21
 tweet_id: "1007859907620581377"

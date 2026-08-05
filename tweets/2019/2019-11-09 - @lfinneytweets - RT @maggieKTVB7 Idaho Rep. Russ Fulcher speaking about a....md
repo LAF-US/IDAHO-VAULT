@@ -1,4 +1,5 @@
 ---
+title: "RT @maggieKTVB7 Idaho Rep. Russ Fulcher speaking about a..."
 date: 2019-11-09
 time: 00:08:13
 tweet_id: "1192957026814414848"

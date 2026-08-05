@@ -1,4 +1,5 @@
 ---
+title: "A bill that would help protect electric utility companies..."
 date: 2025-03-26
 time: 22:34:56
 tweet_id: "1905025705337057398"

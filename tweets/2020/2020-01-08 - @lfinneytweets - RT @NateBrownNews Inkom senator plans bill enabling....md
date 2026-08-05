@@ -1,4 +1,5 @@
 ---
+title: "RT @NateBrownNews Inkom senator plans bill enabling..."
 date: 2020-01-08
 time: 18:34:53
 tweet_id: "1214978799109984256"

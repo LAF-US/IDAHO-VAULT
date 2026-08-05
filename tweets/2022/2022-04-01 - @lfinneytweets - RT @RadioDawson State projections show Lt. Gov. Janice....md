@@ -1,4 +1,5 @@
 ---
+title: "RT @RadioDawson State projections show Lt. Gov. Janice..."
 date: 2022-04-01
 time: 20:34:32
 tweet_id: "1509992633988395013"

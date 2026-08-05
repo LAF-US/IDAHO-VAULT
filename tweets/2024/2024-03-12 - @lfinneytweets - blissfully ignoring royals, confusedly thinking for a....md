@@ -1,4 +1,5 @@
 ---
+title: "blissfully ignoring royals, confusedly thinking for a..."
 date: 2024-03-12
 time: 04:32:04
 tweet_id: "1767408192588517522"

@@ -1,4 +1,5 @@
 ---
+title: "RT @JaredWalczak"
 date: 2025-10-08
 time: 17:37:38
 tweet_id: "1975978911143166388"

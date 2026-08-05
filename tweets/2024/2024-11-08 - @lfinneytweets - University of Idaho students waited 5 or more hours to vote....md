@@ -1,4 +1,5 @@
 ---
+title: "University of Idaho students waited 5 or more hours to vote..."
 date: 2024-11-08
 time: 15:51:09
 tweet_id: "1854914563172598211"

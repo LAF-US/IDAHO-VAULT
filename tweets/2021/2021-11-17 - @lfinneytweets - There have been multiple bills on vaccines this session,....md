@@ -1,4 +1,5 @@
 ---
+title: "There have been multiple bills on vaccines this session,..."
 date: 2021-11-17
 time: 22:00:33
 tweet_id: "1461091917081415682"

@@ -1,4 +1,5 @@
 ---
+title: ".@clarkcorbin explained the increased pay for veteran..."
 date: 2020-03-12
 time: 22:22:18
 tweet_id: "1238228854969257987"

@@ -1,4 +1,5 @@
 ---
+title: "RT @CMcCurdyPDX I get emotional about potatoes on a normal..."
 date: 2020-03-21
 time: 01:06:34
 tweet_id: "1241169297449222144"

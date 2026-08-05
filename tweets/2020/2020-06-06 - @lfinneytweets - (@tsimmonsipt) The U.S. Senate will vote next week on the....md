@@ -1,4 +1,5 @@
 ---
+title: "(@tsimmonsipt) The U.S. Senate will vote next week on the..."
 date: 2020-06-06
 time: 01:45:25
 tweet_id: "1269082937695203328"

@@ -1,4 +1,5 @@
 ---
+title: "The redistricting commission is holding another public..."
 date: 2021-09-17
 time: 01:04:59
 tweet_id: "1438670281707458564"

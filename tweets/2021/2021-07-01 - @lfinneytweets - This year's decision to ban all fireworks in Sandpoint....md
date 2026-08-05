@@ -1,4 +1,5 @@
 ---
+title: "This year's decision to ban all fireworks in Sandpoint..."
 date: 2021-07-01
 time: 21:40:20
 tweet_id: "1410714914541297665"

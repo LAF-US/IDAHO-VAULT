@@ -1,4 +1,5 @@
 ---
+title: "eternal wisdom from @xkcd"
 date: 2024-12-11
 time: 20:57:40
 tweet_id: "1866950500849160351"

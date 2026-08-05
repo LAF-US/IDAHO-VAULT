@@ -1,4 +1,5 @@
 ---
+title: "\u201cThe sad fact is, if we could magically snap our fingers..."
 date: 2021-06-10
 time: 20:06:04
 tweet_id: "1403081047802220544"

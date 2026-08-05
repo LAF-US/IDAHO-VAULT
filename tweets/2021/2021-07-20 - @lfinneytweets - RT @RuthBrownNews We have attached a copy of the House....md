@@ -1,4 +1,5 @@
 ---
+title: "RT @RuthBrownNews We have attached a copy of the House..."
 date: 2021-07-20
 time: 23:43:15
 tweet_id: "1417631219626377219"

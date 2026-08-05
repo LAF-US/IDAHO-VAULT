@@ -1,4 +1,5 @@
 ---
+title: "Thanks @KTVB @KTVBJoe @MorganRomeroTV @DougPetcashKTVB for..."
 date: 2022-10-26
 time: 01:18:25
 tweet_id: "1585078360044371968"

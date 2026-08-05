@@ -1,4 +1,5 @@
 ---
+title: "Internet provider Spectrum is resisting @GovernorLittle's..."
 date: 2020-09-11
 time: 19:27:20
 tweet_id: "1304501801043914752"

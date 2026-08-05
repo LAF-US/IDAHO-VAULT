@@ -1,4 +1,5 @@
 ---
+title: "Sen. Lee speaking in favor of the bill. She points out that..."
 date: 2020-03-17
 time: 00:17:05
 tweet_id: "1239707292833996800"

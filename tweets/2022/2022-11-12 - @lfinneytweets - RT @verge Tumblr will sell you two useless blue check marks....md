@@ -1,4 +1,5 @@
 ---
+title: "RT @verge Tumblr will sell you two useless blue check marks..."
 date: 2022-11-12
 time: 22:13:01
 tweet_id: "1591554684208443393"

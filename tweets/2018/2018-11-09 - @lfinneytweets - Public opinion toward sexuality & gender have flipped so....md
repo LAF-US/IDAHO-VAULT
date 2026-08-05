@@ -1,4 +1,5 @@
 ---
+title: "Public opinion toward sexuality & gender have flipped so..."
 date: 2018-11-09
 time: 05:05:58
 tweet_id: "1060760386733932544"

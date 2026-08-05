@@ -1,4 +1,5 @@
 ---
+title: "Former governor Otter on @GovernorLittle's job performance...."
 date: 2020-07-01
 time: 16:01:44
 tweet_id: "1278358134931636224"

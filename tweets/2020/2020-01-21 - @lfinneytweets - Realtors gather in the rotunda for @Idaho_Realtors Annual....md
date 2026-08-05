@@ -1,4 +1,5 @@
 ---
+title: "Realtors gather in the rotunda for @Idaho_Realtors Annual..."
 date: 2020-01-21
 time: 16:44:16
 tweet_id: "1219662001422643200"

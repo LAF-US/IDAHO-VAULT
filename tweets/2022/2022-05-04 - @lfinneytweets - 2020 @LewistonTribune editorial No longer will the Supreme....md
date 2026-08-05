@@ -1,4 +1,5 @@
 ---
+title: "2020 @LewistonTribune editorial No longer will the Supreme..."
 date: 2022-05-04
 time: 01:27:38
 tweet_id: "1521662806294106112"

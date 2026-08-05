@@ -1,4 +1,5 @@
 ---
+title: "Even though my phone didn't go off during today's emergency..."
 date: 2021-08-11
 time: 22:49:01
 tweet_id: "1425590105046093825"

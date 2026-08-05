@@ -1,4 +1,5 @@
 ---
+title: "RT @kkruesi I just want everyone to read this piece by..."
 date: 2018-07-23
 time: 22:51:33
 tweet_id: "1021528272285270016"

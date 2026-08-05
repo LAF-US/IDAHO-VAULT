@@ -1,4 +1,5 @@
 ---
+title: "Gas prices $1.999-$2.299 last night in Kuna #IdahoCOVID19"
 date: 2020-04-10
 time: 18:51:39
 tweet_id: "1248685091523645440"

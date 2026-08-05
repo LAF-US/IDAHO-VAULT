@@ -1,4 +1,5 @@
 ---
+title: "RT @EastIDNews Four votes. After a recount, Rep. Julianne..."
 date: 2024-06-28
 time: 01:36:00
 tweet_id: "1806501773840199726"

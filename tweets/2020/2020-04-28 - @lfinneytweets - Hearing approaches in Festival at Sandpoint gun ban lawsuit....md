@@ -1,4 +1,5 @@
 ---
+title: "Hearing approaches in Festival at Sandpoint gun ban lawsuit..."
 date: 2020-04-28
 time: 19:05:33
 tweet_id: "1255211568100372480"

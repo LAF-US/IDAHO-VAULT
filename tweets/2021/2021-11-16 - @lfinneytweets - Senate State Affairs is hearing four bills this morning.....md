@@ -1,4 +1,5 @@
 ---
+title: "Senate State Affairs is hearing four bills this morning...."
 date: 2021-11-16
 time: 15:08:09
 tweet_id: "1460625744938237953"

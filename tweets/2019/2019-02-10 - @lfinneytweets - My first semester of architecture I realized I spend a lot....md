@@ -1,4 +1,5 @@
 ---
+title: "My first semester of architecture I realized I spend a lot..."
 date: 2019-02-10
 time: 22:29:30
 tweet_id: "1094725072676253697"

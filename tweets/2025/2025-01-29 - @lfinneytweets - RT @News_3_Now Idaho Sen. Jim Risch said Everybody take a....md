@@ -1,4 +1,5 @@
 ---
+title: "RT @News_3_Now Idaho Sen. Jim Risch said Everybody take a..."
 date: 2025-01-29
 time: 01:05:05
 tweet_id: "1884407385391071638"

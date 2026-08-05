@@ -1,4 +1,5 @@
 ---
+title: "RT @BoiseDev Glitch with ballots impacts tight race for..."
 date: 2021-11-15
 time: 16:26:31
 tweet_id: "1460283078413209602"

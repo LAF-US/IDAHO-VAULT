@@ -1,4 +1,5 @@
 ---
+title: "RT @Oregonian Mitt Romney proposes giving every American..."
 date: 2020-03-16
 time: 19:13:55
 tweet_id: "1239630996711952387"

@@ -1,4 +1,5 @@
 ---
+title: "Rep. Jason Monks has been elected the new Idaho House..."
 date: 2024-02-12
 time: 19:11:22
 tweet_id: "1757120225068351748"

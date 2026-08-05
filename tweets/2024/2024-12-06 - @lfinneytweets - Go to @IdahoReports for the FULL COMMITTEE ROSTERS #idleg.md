@@ -1,4 +1,5 @@
 ---
+title: "Go to @IdahoReports for the FULL COMMITTEE ROSTERS #idleg"
 date: 2024-12-06
 time: 01:40:26
 tweet_id: "1864847335916007522"

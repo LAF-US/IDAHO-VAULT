@@ -1,4 +1,5 @@
 ---
+title: "RT @audreydutton The latest in Idaho's governor's race,..."
 date: 2022-03-25
 time: 19:38:14
 tweet_id: "1507441747361640448"

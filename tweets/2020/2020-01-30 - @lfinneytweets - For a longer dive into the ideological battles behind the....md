@@ -1,4 +1,5 @@
 ---
+title: "For a longer dive into the ideological battles behind the..."
 date: 2020-01-30
 time: 19:32:02
 tweet_id: "1222965715482767361"

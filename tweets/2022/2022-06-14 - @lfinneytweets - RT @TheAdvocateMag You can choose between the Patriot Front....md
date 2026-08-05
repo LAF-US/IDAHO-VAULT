@@ -1,4 +1,5 @@
 ---
+title: "RT @TheAdvocateMag You can choose between the Patriot Front..."
 date: 2022-06-14
 time: 21:45:06
 tweet_id: "1536827094985953280"

@@ -1,4 +1,5 @@
 ---
+title: "I just now checked the Senate agendas and kicked myself for..."
 date: 2021-02-12
 time: 16:39:29
 tweet_id: "1360267290982244352"

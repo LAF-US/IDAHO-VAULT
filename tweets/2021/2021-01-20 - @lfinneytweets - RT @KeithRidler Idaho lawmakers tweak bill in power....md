@@ -1,4 +1,5 @@
 ---
+title: "RT @KeithRidler Idaho lawmakers tweak bill in power..."
 date: 2021-01-20
 time: 21:27:51
 tweet_id: "1352004942433714178"

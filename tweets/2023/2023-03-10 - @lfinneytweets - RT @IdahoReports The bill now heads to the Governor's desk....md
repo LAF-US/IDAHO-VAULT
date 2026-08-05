@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports The bill now heads to the Governor's desk..."
 date: 2023-03-10
 time: 03:37:13
 tweet_id: "1634035652735168512"

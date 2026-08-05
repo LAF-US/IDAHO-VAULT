@@ -1,4 +1,5 @@
 ---
+title: "RT @pfannyyy New report finds the average Idaho renter..."
 date: 2018-06-14
 time: 04:03:32
 tweet_id: "1007111268010872832"

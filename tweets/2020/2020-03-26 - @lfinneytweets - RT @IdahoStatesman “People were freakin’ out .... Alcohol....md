@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoStatesman \u201cPeople were freakin\u2019 out .... Alcohol..."
 date: 2020-03-26
 time: 23:38:17
 tweet_id: "1243321405040517125"

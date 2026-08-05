@@ -1,4 +1,5 @@
 ---
+title: "RT @NateBrownNews July 4 parade in Idaho Falls canceled via..."
 date: 2020-04-30
 time: 01:24:41
 tweet_id: "1255669370572795905"

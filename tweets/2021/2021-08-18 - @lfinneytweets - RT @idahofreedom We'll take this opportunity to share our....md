@@ -1,4 +1,5 @@
 ---
+title: "RT @idahofreedom We'll take this opportunity to share our..."
 date: 2021-08-18
 time: 22:27:38
 tweet_id: "1428121435348688898"

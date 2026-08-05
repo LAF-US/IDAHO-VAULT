@@ -1,4 +1,5 @@
 ---
+title: "I am happy to share that I\u2019m losing the Associate tag from..."
 date: 2025-11-05
 time: 02:33:36
 tweet_id: "1985898263254556674"

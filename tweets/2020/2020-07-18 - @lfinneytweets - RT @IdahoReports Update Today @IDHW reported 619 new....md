@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Update Today @IDHW reported 619 new..."
 date: 2020-07-18
 time: 00:46:49
 tweet_id: "1284288480386772992"

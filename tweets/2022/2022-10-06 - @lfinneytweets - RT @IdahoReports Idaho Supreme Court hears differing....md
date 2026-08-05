@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Idaho Supreme Court hears differing..."
 date: 2022-10-06
 time: 19:51:38
 tweet_id: "1578110754959462408"

@@ -1,4 +1,5 @@
 ---
+title: "RT @kkruesi Idaho bill seeks to deter domestic abusers from..."
 date: 2018-03-02
 time: 21:45:28
 tweet_id: "969690174757093376"

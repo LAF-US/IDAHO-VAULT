@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio .@IdahoSDE is curating a map of outdoor..."
 date: 2020-05-13
 time: 22:47:58
 tweet_id: "1260703360287555584"

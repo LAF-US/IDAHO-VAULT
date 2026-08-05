@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoStatesman Endorsement Paulette Jordan gets our nod..."
 date: 2018-05-11
 time: 16:54:37
 tweet_id: "994984131091038208"

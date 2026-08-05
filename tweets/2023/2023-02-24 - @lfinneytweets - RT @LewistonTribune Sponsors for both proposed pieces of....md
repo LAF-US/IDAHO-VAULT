@@ -1,4 +1,5 @@
 ---
+title: "RT @LewistonTribune Sponsors for both proposed pieces of..."
 date: 2023-02-24
 time: 22:59:15
 tweet_id: "1629254660103061504"

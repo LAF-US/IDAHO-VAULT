@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoNews6 Can Idaho college students from out-of-state..."
 date: 2020-09-30
 time: 15:44:10
 tweet_id: "1311331010236133376"

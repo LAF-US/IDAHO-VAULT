@@ -1,4 +1,5 @@
 ---
+title: "Sandpoint's Scott Rhodes is back in the news again."
 date: 2018-09-03
 time: 06:04:13
 tweet_id: "1036495055823953920"

@@ -1,4 +1,5 @@
 ---
+title: "First time I've ever had a media pass that keeps me OUT of..."
 date: 2024-06-15
 time: 17:22:33
 tweet_id: "1802028937675194449"

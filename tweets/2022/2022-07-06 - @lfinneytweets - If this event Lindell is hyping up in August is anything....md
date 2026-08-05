@@ -1,4 +1,5 @@
 ---
+title: "If this event Lindell is hyping up in August is anything..."
 date: 2022-07-06
 time: 03:29:18
 tweet_id: "1544523857838559233"

@@ -1,4 +1,5 @@
 ---
+title: "BRB, moving to become a hermit in the woods where the..."
 date: 2021-08-31
 time: 19:59:25
 tweet_id: "1432795178520121345"

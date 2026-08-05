@@ -1,4 +1,5 @@
 ---
+title: "RT @courtneyrozen Tech company claimed that fraudsters..."
 date: 2022-11-17
 time: 16:24:34
 tweet_id: "1593278934400933893"

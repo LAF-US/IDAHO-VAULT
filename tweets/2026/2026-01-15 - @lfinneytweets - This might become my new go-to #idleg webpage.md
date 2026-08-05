@@ -1,4 +1,5 @@
 ---
+title: "This might become my new go-to #idleg webpage"
 date: 2026-01-15
 time: 02:06:31
 tweet_id: "2011620985527812481"

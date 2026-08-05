@@ -1,4 +1,5 @@
 ---
+title: "RT @Oregonian Oregon lawmakers conclude unprecedented..."
 date: 2020-06-27
 time: 15:41:52
 tweet_id: "1276903584706117632"

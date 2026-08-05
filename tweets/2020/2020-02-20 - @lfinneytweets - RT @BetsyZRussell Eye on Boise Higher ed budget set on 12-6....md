@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Higher ed budget set on 12-6..."
 date: 2020-02-20
 time: 16:45:10
 tweet_id: "1230533867410354177"

@@ -1,4 +1,5 @@
 ---
+title: "Uh oh. Thanks @davlinnews. I hope y'all like dumb jokes and..."
 date: 2020-06-23
 time: 18:48:14
 tweet_id: "1275500932977946624"

@@ -1,4 +1,5 @@
 ---
+title: "Rep. Priscilla Giddings (R-White Bird)"
 date: 2020-06-24
 time: 04:50:45
 tweet_id: "1275652558414139397"

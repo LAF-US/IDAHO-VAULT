@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Yes, Gov. Little can legally..."
 date: 2020-03-30
 time: 15:46:46
 tweet_id: "1244652293825236992"

@@ -1,4 +1,5 @@
 ---
+title: "RT @ObsoleteDogma Toys R Us as a metaphor for our overly..."
 date: 2018-03-17
 time: 07:42:51
 tweet_id: "974913941305356289"

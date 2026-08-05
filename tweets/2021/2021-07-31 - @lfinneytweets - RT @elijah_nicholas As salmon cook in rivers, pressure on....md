@@ -1,4 +1,5 @@
 ---
+title: "RT @elijah_nicholas As salmon cook in rivers, pressure on..."
 date: 2021-07-31
 time: 20:05:05
 tweet_id: "1421562582503104515"

@@ -1,4 +1,5 @@
 ---
+title: "Actually spending the public defense funding coming in a..."
 date: 2023-03-29
 time: 23:22:13
 tweet_id: "1641219239016013824"

@@ -1,4 +1,5 @@
 ---
+title: "RT @Polygon \u2018Martin Scorsese\u2019s lost film\u2019 Goncharov (1973),..."
 date: 2022-11-23
 time: 04:29:40
 tweet_id: "1595273350259277825"

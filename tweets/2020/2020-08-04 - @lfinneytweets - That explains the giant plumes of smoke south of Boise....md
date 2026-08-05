@@ -1,4 +1,5 @@
 ---
+title: "That explains the giant plumes of smoke south of Boise..."
 date: 2020-08-04
 time: 05:24:58
 tweet_id: "1290519072912715776"

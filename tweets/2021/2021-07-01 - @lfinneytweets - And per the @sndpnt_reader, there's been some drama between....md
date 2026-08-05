@@ -1,4 +1,5 @@
 ---
+title: "And per the @sndpnt_reader, there's been some drama between..."
 date: 2021-07-01
 time: 22:03:38
 tweet_id: "1410720777989550085"

@@ -1,4 +1,5 @@
 ---
+title: "RT @kxly4news Kootenai County Sheriff Bob Norris brought a..."
 date: 2023-09-27
 time: 06:47:30
 tweet_id: "1706923502480294160"
