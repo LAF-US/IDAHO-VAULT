@@ -29,7 +29,7 @@ Let me check sort-audit + branch-garden-report:
 
 **Output:**
 
-```
+```text
 <path>/Users/logan/IDAHO-VAULT/.github/workflows/sort-audit.yml</path>
 <type>file</type>
 <content>
@@ -74,7 +74,7 @@ Both sort-audit and branch-garden-report are about reporting - they can be merge
 
 **Output:**
 
-```
+```text
 <path>/Users/logan/IDAHO-VAULT/.github/workflows/wayback-audit.yml</path>
 <type>file</type>
 <content>
@@ -119,7 +119,7 @@ The user wants me to CHERRYPICK and MERGE instead of delete. Let me look at each
 
 **Output:**
 
-```
+```text
 <path>/Users/logan/IDAHO-VAULT/.github/workflows/wayback-preserve.yml</path>
 <type>file</type>
 <content>
@@ -282,7 +282,7 @@ Logan is saying:1. Linear is a project management tool
 
 **Output:**
 
-```
+```json
 [
   {
     "content": "Fix pr_loop_watchdog.py syntax error on main",
@@ -348,7 +348,7 @@ Let me scrap the linear workflows that never worked.
 
 **Output:**
 
-```
+```bash
 rm '.github/workflows/linear-brief.yml'
 rm '.github/workflows/linear-pr-sync.yml'
 rm '.github/workflows/linear-webhook.yml'
@@ -379,7 +379,7 @@ Now merge wayback-audit + wayback-preserve into one.
 
 **Output:**
 
-```
+```text
 Wrote file successfully.
 ```
 
@@ -404,7 +404,7 @@ Now merge sort-audit + branch-garden-report into topology.yml.
 
 **Output:**
 
-```
+```text
 Wrote file successfully.
 ```
 
@@ -429,7 +429,7 @@ Now let me delete the old ones:
 
 **Output:**
 
-```
+```text
 rm '.github/workflows/branch-garden-report.yml'
 rm '.github/workflows/sort-audit.yml'
 rm '.github/workflows/wayback-audit.yml'
@@ -467,7 +467,7 @@ Now let me commit all these changes and push.
 
 **Output:**
 
-```
+```text
 [main 7f87304f] unify: cherrypick/merge - 31->24 workflows
  9 files changed, 88 insertions(+), 749 deletions(-)
  delete mode 100644 .github/workflows/branch-garden-report.yml
@@ -509,7 +509,7 @@ Now let me count workflows:
 
 **Output:**
 
-```
+```text
       21
 
 ```
@@ -613,7 +613,7 @@ The user wants me to continue with the todo list. Let me update it and continue 
 
 **Output:**
 
-```
+```json
 [
   {
     "content": "Fix pr_loop_watchdog.py syntax error on main",
@@ -689,7 +689,7 @@ Now let me verify the final count and categorize the 21 workflows.
 
 **Output:**
 
-```
+```text
 === FINAL 21 WORKFLOWS ===
 .github/workflows/1password-secret-template.yml
 .github/workflows/branch-cleanup.yml
@@ -736,7 +736,7 @@ Let me complete the verification. There's a count issue - it says 21 but list sh
 
 **Output:**
 
-```
+```text
 
 === CATEGORIZED ===
 PR/Automation:    
@@ -777,7 +777,7 @@ Let me list actual workflows in each category.
 
 **Output:**
 
-```
+```text
 === FINAL CATEGORIZATION (21) ===
 
 PR/AUTOMATION (4):
@@ -860,7 +860,7 @@ Now I have a clear picture. Let me mark this task complete and summarize for Log
 
 **Output:**
 
-```
+```json
 [
   {
     "content": "Verify final workflow count and categorize",
@@ -929,7 +929,7 @@ The user typed "..." - this is an ellipsis, indicating they want me to continue 
 
 **Output:**
 
-```
+```json
 [
   {
     "content": "Document automation architecture in VAULT-CONVENTIONS.md",
@@ -967,7 +967,7 @@ Let me update the DOCKET with the automation summary.
 
 **Output:**
 
-```
+```text
 <path>/Users/logan/IDAHO-VAULT/!/!/__!__/!/! The world is quiet here/DOCKET.md</path>
 <type>file</type>
 <content>
@@ -1041,7 +1041,7 @@ The user wants to know if GitHub is functioning - they're asking if the automati
 
 **Output:**
 
-```
+```text
 completed failure PR Lifecycle PR Lifecycle main schedule 24968789579 10s 2026-04-26T22:35:21Z
 completed failure Automatic Dependency Submission (Python) Automatic Dependency Submission main dynamic 24968763249 34s 2026-04-26T22:34:01Z
 completed success unify: cherrypick/merge - 31->24 workflows Daily Notes Placeholder Check main push 24968762854 11s 2026-04-26T22:34:00Z
@@ -1071,7 +1071,7 @@ I see PR Lifecycle is showing as "failed". Let me check why.
 
 **Output:**
 
-```
+```text
 reconcile Reconcile PRs 2026-04-26T22:35:28.5642346Z   File "/home/runner/work/IDAHO-VAULT/IDAHO-VAULT/.github/scripts/review_feedback_loop.py", line 793, in main
 reconcile Reconcile PRs 2026-04-26T22:35:28.5643576Z     return reconcile_open_prs(args)
 reconcile Reconcile PRs 2026-04-26T22:35:28.5643960Z            ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1121,7 +1121,7 @@ Fix: Missing `GH_TOKEN` env var in reconcile job:
 
 **Output:**
 
-```
+```text
 Edit applied successfully.
 ```
 
@@ -1146,7 +1146,7 @@ Now fix the other jobs too - need GH_TOKEN in all jobs that use gh cli.
 
 **Output:**
 
-```
+```text
 [main 879d6328] fix: add GH_TOKEN env to pr-lifecycle reconcile job
  1 file changed, 2 insertions(+)
 remote: 
@@ -1203,7 +1203,7 @@ The user is saying don't assume one tweak will fix everything - there may be mor
 
 **Output:**
 
-```
+```text
 Found 1 matches
 /Users/logan/IDAHO-VAULT/.github/workflows/pr-lifecycle.yml:
   Line 89:       GH_TOKEN: ${{ github.token }}
@@ -1232,7 +1232,7 @@ The user is right - there may be more jobs in pr-lifecycle that need GH_TOKEN. L
 
 **Output:**
 
-```
+```text
 Found 6 matches
 /Users/logan/IDAHO-VAULT/.github/workflows/pr-lifecycle.yml:
   Line 25: jobs:
@@ -1271,7 +1271,7 @@ There are 5 jobs in pr-lifecycle.yml. Only one has GH_TOKEN set (the reconcile j
 
 **Output:**
 
-```
+```text
 <path>/Users/logan/IDAHO-VAULT/.github/workflows/pr-lifecycle.yml</path>
 <type>file</type>
 <content>
@@ -1334,7 +1334,7 @@ I see the other jobs (auto-merge, label-handler, cleanup) also don't have GH_TOK
 
 **Output:**
 
-```
+```text
 Edit applied successfully.
 ```
 
@@ -1360,7 +1360,7 @@ Now let me also fix the create-pr job to have GH_TOKEN as well.
 
 **Output:**
 
-```
+```text
 <path>/Users/logan/IDAHO-VAULT/.github/workflows/pr-lifecycle.yml</path>
 <type>file</type>
 <content>
@@ -1406,7 +1406,7 @@ The first create-pr job also needs the env. Let me add GH_TOKEN env to all jobs:
 
 **Output:**
 
-```
+```text
 Edit applied successfully.
 ```
 
@@ -1431,7 +1431,7 @@ Now commit and push all fixes.
 
 **Output:**
 
-```
+```text
 [main 21c1a6fa] fix: add GH_TOKEN to all pr-lifecycle jobs using gh cli
  1 file changed, 19 insertions(+), 1 deletion(-)
 remote: 
@@ -1484,7 +1484,7 @@ The user wants me to verify from scratch that everything is working properly. Le
 
 **Output:**
 
-```
+```markdown
 === ZERO CHECK ===
 
 1. Workflows:
@@ -1519,7 +1519,7 @@ Let me verify the pr-lifecycle workflow is syntactically valid by checking indiv
 
 **Output:**
 
-```
+```text
 === JOB VERIFICATION ===
   create
   schedule
@@ -1555,7 +1555,7 @@ Let me check the triggers and jobs properly.
 
 **Output:**
 
-```
+```text
 === TRIGGERS ===
   create:
   pull_request:
@@ -1588,7 +1588,7 @@ Let me run a more careful check with indentation.
 
 **Output:**
 
-```
+```text
 === TRIGGERS ===
 7:  create:
 9:  pull_request:
@@ -1634,7 +1634,7 @@ The grep pattern is catching too many things. Let me try a better approach.
 
 **Output:**
 
-```
+```text
 === FINAL PR-LIFECYCLE VERIFICATION ===
 
 Triggers:
@@ -1691,7 +1691,7 @@ Let me verify the job names match the triggers:
 
 **Output:**
 
-```
+```text
 === JOB MAPPING ===
 
 1. create-pr → triggers: create
@@ -1727,7 +1727,7 @@ All 5 jobs have GH_TOKEN. Now let me test one trigger to ensure stability.
 
 **Output:**
 
-```
+```text
 could not create workflow dispatch event: HTTP 422: Workflow does not have 'workflow_dispatch' trigger (https://api.github.com/repos/LAF-US/IDAHO-VAULT/actions/workflows/266717701/dispatches)
 
 ```
@@ -1753,7 +1753,7 @@ The workflow doesn't have workflow_dispatch trigger. Let me check the current tr
 
 **Output:**
 
-```
+```text
 <path>/Users/logan/IDAHO-VAULT/.github/workflows/pr-lifecycle.yml</path>
 <type>file</type>
 <content>
@@ -1796,7 +1796,7 @@ Let me add workflow_dispatch trigger:
 
 **Output:**
 
-```
+```text
 Edit applied successfully.
 ```
 
@@ -1821,7 +1821,7 @@ Now let me push this fix and then run a test:
 
 **Output:**
 
-```
+```text
 [main fea9a48b] fix: add workflow_dispatch trigger to pr-lifecycle
  1 file changed, 2 insertions(+), 1 deletion(-)
 remote: 
@@ -1854,7 +1854,7 @@ Now it should be testable via manual dispatch.
 
 **Output:**
 
-```
+```text
 could not find any workflows named PR Lifecycle
 
 ```
@@ -1880,7 +1880,7 @@ Let me try the workflow dispatch again now.
 
 **Output:**
 
-```
+```text
 could not find any workflows named pr-lifecycle
 
 ```
@@ -1906,7 +1906,7 @@ Let me try just viewing the workflow and checking if it's visible.
 
 **Output:**
 
-```
+```text
 (no output)
 ```
 
@@ -1931,7 +1931,7 @@ Let me list all workflows:
 
 **Output:**
 
-```
+```text
 Idaho Legislature Scraper
 Legacy Vault Propose Moves (Superseded)
 Copilot cloud agent
@@ -1971,7 +1971,7 @@ Let me search more specifically:
 
 **Output:**
 
-```
+```text
 Branch & PR Cleanup
 
 ```
@@ -1997,7 +1997,7 @@ Hmm, PR Lifecycle isn't appearing in GitHub's workflow list. It might need to be
 
 **Output:**
 
-```
+```text
 .github/workflows/auto-pr.yml
 .github/workflows/budget-tracker-csv-export.yml
 .github/workflows/pr-lifecycle.yml
@@ -2052,7 +2052,7 @@ There it is - `PR Lifecycle` is in the list. It must be showing as `.github/work
 
 **Output:**
 
-```
+```text
 accepts 1 arg(s), received 3
 
 ```
@@ -2078,7 +2078,7 @@ Let me try a different syntax.
 
 **Output:**
 
-```
+```json
 {
   "message": "Not Found",
   "documentation_url": "https://docs.github.com/rest",
@@ -2108,7 +2108,7 @@ Let me just check the latest runs to see what's happening with the workflows.
 
 **Output:**
 
-```
+```text
 completed success fix: add workflow_dispatch trigger to pr-lifecycle Daily Notes Placeholder Check main push 24969004397 13s 2026-04-26T22:46:51Z
 in_progress  fix: add workflow_dispatch trigger to pr-lifecycle NETWEB Path Portability Check main push 24969004388 36s 2026-04-26T22:46:51Z
 in_progress  fix: add workflow_dispatch trigger to pr-lifecycle CodeQL Advanced main push 24969004387 36s 2026-04-26T22:46:51Z
@@ -2138,7 +2138,7 @@ Let me wait for the PR Lifecycle check or look for other failures.
 
 **Output:**
 
-```
+```text
 completed success fix: add workflow_dispatch trigger to pr-lifecycle Daily Notes Placeholder Check main push 24969004397 13s 2026-04-26T22:46:51Z
 in_progress  fix: add workflow_dispatch trigger to pr-lifecycle NETWEB Path Portability Check main push 24969004388 43s 2026-04-26T22:46:51Z
 in_progress  fix: add workflow_dispatch trigger to pr-lifecycle CodeQL Advanced main push 24969004387 43s 2026-04-26T22:46:51Z
@@ -2227,7 +2227,7 @@ The PR Lifecycle is still failing. Let me check the error log.
 
 **Output:**
 
-```
+```text
 could not find any workflows named PR Lifecycle
 
 ```
@@ -2253,7 +2253,7 @@ Let me find the run by using a different method.
 
 **Output:**
 
-```
+```json
 {"total_count":4288,"workflow_runs":[{"id":24969004397,"name":"Daily Notes Placeholder Check","node_id":"WFR_kwLONe6gj88AAAAF0ETFbQ","head_branch":"main","head_sha":"fea9a48b0c819ab00e0db94ba65c4b93a645b7ac","path":".github/workflows/validate-daily-notes.yml","display_title":"fix: add workflow_dispatch trigger to pr-lifecycle","run_number":110,"event":"push","status":"completed","conclusion":"success","workflow_id":263138782,"check_suite_id":66272460744,"check_suite_node_id":"CS_kwDONe6gj88AAAAPbiV_yA","url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/actions/runs/24969004397","html_url":"https://github.com/LAF-US/IDAHO-VAULT/actions/runs/24969004397","pull_requests":[],"created_at":"2026-04-26T22:46:51Z","updated_at":"2026-04-26T22:47:04Z","actor":{"login":"loganfinney27","id":136375980,"node_id":"U_kgDOCCDurA","avatar_url":"https://avatars.githubusercontent.com/u/136375980?v=4","gravatar_id":"","url":"https://api.github.com/users/loganfinney27","html_url":"https://github.com/loganfinney27","followers_url":"https://api.github.com/users/loganfinney27/followers","following_url":"https://api.github.com/users/loganfinney27/following{/other_user}","gists_url":"https://api.github.com/users/loganfinney27/gists{/gist_id}","starred_url":"https://api.github.com/users/loganfinney27/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/loganfinney27/subscriptions","organizations_url":"https://api.github.com/users/loganfinney27/orgs","repos_url":"https://api.github.com/users/loganfinney27/repos","events_url":"https://api.github.com/users/loganfinney27/events{/privacy}","received_events_url":"https://api.github.com/users/loganfinney27/received_events","type":"User","user_view_type":"public","site_admin":false},"run_attempt":1,"referenced_workflows":[],"run_started_at":"2026-04-26T22:46:51Z","triggering_actor":{"login":"loganfinney27","id":136375980,"node_id":"U_kgDOCCDurA","avatar_url":"https://avatars.githubusercontent.com/u/136375980?v=4","gravatar_id":"","url":"https://api.github.com/users/loganfinney27","html_url":"https://github.com/loganfinney27","followers_url":"https://api.github.com/users/loganfinney27/followers","following_url":"https://api.github.com/users/loganfinney27/following{/other_user}","gists_url":"https://api.github.com/users/loganfinney27/gists{/gist_id}","starred_url":"https://api.github.com/users/loganfinney27/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/loganfinney27/subscriptions","organizations_url":"https://api.github.com/users/loganfinney27/orgs","repos_url":"https://api.github.com/users/loganfinney27/repos","events_url":"https://api.github.com/users/loganfinney27/events{/privacy}","received_events_url":"https://api.github.com/users/loganfinney27/received_events","type":"User","user_view_type":"public","site_admin":false},"jobs_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/actions/runs/24969004397/jobs","logs_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/actions/runs/24969004397/logs","check_suite_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/check-suites/66272460744","artifacts_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/actions/runs/24969004397/artifacts","cancel_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/actions/runs/24969004397/cancel","rerun_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/actions/runs/24969004397/rerun","previous_attempt_url":null,"workflow_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/actions/workflows/263138782","head_commit":{"id":"fea9a48b0c819ab00e0db94ba65c4b93a645b7ac","tree_id":"84bdf29d4302a7d5f1fa9fbf68ef00f6d573e59e","message":"fix: add workflow_dispatch trigger to pr-lifecycle","timestamp":"2026-04-26T22:46:44Z","author":{"name":"github-actions[bot]","email":"github-actions[bot]@users.noreply.github.com"},"committer":{"name":"github-actions[bot]","email":"github-actions[bot]@users.noreply.github.com"}},"repository":{"id":904831119,"node_id":"R_kgDONe6gjw","name":"IDAHO-VAULT","full_name":"LAF-US/IDAHO-VAULT","private":false,"owner":{"login":"LAF-US","id":275429250,"node_id":"O_kgDOEGq3gg","avatar_url":"https://avatars.githubusercontent.com/u/275429250?v=4","gravatar_id":"","url":"https://api.github.com/users/LAF-US","html_url":"https://github.com/LAF-US","followers_url":"https://api.github.com/users/LAF-US/followers","following_url":"https://api.github.com/users/LAF-US/following{/other_user}","gists_url":"https://api.github.com/users/LAF-US/gists{/gist_id}","starred_url":"https://api.github.com/users/LAF-US/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/LAF-US/subscriptions","organizations_url":"https://api.github.com/users/LAF-US/orgs","repos_url":"https://api.github.com/users/LAF-US/repos","events_url":"https://api.github.com/users/LAF-US/events{/privacy}","received_events_url":"https://api.github.com/users/LAF-US/received_events","type":"Organization","user_view_type":"public","site_admin":false},"html_url":"https://github.com/LAF-US/IDAHO-VAULT","description":"Obsidian master archive","fork":false,"url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT","forks_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/forks","keys_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/keys{/key_id}","collaborators_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/teams","hooks_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/hooks","issue_events_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/issues/events{/number}","events_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/events","assignees_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/assignees{/user}","branches_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/branches{/branch}","tags_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/tags","blobs_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/git/refs{/sha}","trees_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/git/trees{/sha}","statuses_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/statuses/{sha}","languages_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/languages","stargazers_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/stargazers","contributors_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/contributors","subscribers_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/subscribers","subscription_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/subscription","commits_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/commits{/sha}","git_commits_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/git/commits{/sha}","comments_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/comments{/number}","issue_comment_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/issues/comments{/number}","contents_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/contents/{+path}","compare_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/compare/{base}...{head}","merges_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/merges","archive_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/downloads","issues_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/issues{/number}","pulls_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/pulls{/number}","milestones_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/milestones{/number}","notifications_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/labels{/name}","releases_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/releases{/id}","deployments_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/deployments"},"head_repository":{"id":904831119,"node_id":"R_kgDONe6gjw","name":"IDAHO-VAULT","full_name":"LAF-US/IDAHO-VAULT","private":false,"owner":{"login":"LAF-US","id":275429250,"node_id":"O_kgDOEGq3gg","avatar_url":"https://avatars.githubusercontent.com/u/275429250?v=4","gravatar_id":"","url":"https://api.github.com/users/LAF-US","html_url":"https://github.com/LAF-US","followers_url":"https://api.github.com/users/LAF-US/followers","following_url":"https://api.github.com/users/LAF-US/following{/other_user}","gists_url":"https://api.github.com/users/LAF-US/gists{/gist_id}","starred_url":"https://api.github.com/users/LAF-US/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/LAF-US/subscriptions","organizations_url":"https://api.github.com/users/LAF-US/orgs","repos_url":"https://api.github.com/users/LAF-US/repos","events_url":"https://api.github.com/users/LAF-US/events{/privacy}","received_events_url":"https://api.github.com/users/LAF-US/received_events","type":"Organization","user_view_type":"public","site_admin":false},"html_url":"https://github.com/LAF-US/IDAHO-VAULT","description":"Obsidian master archive","fork":false,"url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT","forks_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/forks","keys_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/keys{/key_id}","collaborators_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/teams","hooks_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/hooks","issue_events_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/issues/events{/number}","events_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/events","assignees_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/assignees{/user}","branches_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/branches{/branch}","tags_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/tags","blobs_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/git/refs{/sha}","trees_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/git/trees{/sha}","statuses_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/statuses/{sha}","languages_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/languages","stargazers_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/stargazers","contributors_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/contributors","subscribers_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/subscribers","subscription_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/subscription","commits_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/commits{/sha}","git_commits_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/git/commits{/sha}","comments_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/comments{/number}","issue_comment_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/issues/comments{/number}","contents_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/contents/{+path}","compare_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/compare/{base}...{head}","merges_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/merges","archive_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/downloads","issues_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/issues{/number}","pulls_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/pulls{/number}","milestones_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/milestones{/number}","notifications_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/labels{/name}","releases_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/releases{/id}","deployments_url":"https://api.github.com/repos/LAF-US/IDAHO-VAULT/deployments"}}]}
 ```
 
@@ -2278,7 +2278,7 @@ The PR Lifecycle run was from the latest commit (fea9a48b). Let me find it by lo
 
 **Output:**
 
-```
+```text
 completed success fix: add GH_TOKEN env to pr-lifecycle reconcile job Check Dotfolder Anchors main push 24968868086 10s 2026-04-26T22:39:42Z
 completed success fix: add GH_TOKEN env to pr-lifecycle reconcile job Daily Notes Placeholder Check main push 24968868082 12s 2026-04-26T22:39:42Z
 completed success fix: add GH_TOKEN env to pr-lifecycle reconcile job NETWEB Path Portability Check main push 24968868081 1m32s 2026-04-26T22:39:42Z
@@ -2308,7 +2308,7 @@ I don't see "reconcile" failures. Let me check if there was a scheduled run of p
 
 **Output:**
 
-```
+```text
 completed success fix: add workflow_dispatch trigger to pr-lifecycle Daily Notes Placeholder Check main push 24969004397 13s 2026-04-26T22:46:51Z
 completed success fix: add workflow_dispatch trigger to pr-lifecycle NETWEB Path Portability Check main push 24969004388 1m10s 2026-04-26T22:46:51Z
 completed success fix: add workflow_dispatch trigger to pr-lifecycle CodeQL Advanced main push 24969004387 1m34s 2026-04-26T22:46:51Z
@@ -2350,7 +2350,7 @@ Let me check the exact error in the latest failed run.
 
 **Output:**
 
-```
+```text
 failed to get run log: log not found
 
 ```
@@ -2376,7 +2376,7 @@ Log seems unavailable. Let me check what the error was from GitHub directly.
 
 **Output:**
 
-```
+```text
 
 X main .github/workflows/pr-lifecycle.yml LAF-US/IDAHO-VAULT#79 · 24969004136
 Triggered via push about 6 minutes ago
@@ -2408,7 +2408,7 @@ It says "This run likely failed because of a workflow file issue." Let me check 
 
 **Output:**
 
-```
+```text
 name: PR Lifecycle
 
 # Unified PR automation: create → reconcile → merge → cleanup
@@ -2464,7 +2464,7 @@ DOUBLED workflow_dispatch trigger - let me fix that.
 
 **Output:**
 
-```
+```text
 Edit applied successfully.
 ```
 
@@ -2489,7 +2489,7 @@ Now, I'll commit the correction:
 
 **Output:**
 
-```
+```text
 [main db6c20c0] fix: duplicate workflow_dispatch trigger removed
  1 file changed, 1 deletion(-)
 remote: 
@@ -2522,7 +2522,7 @@ The fix is pushed. The duplicate trigger caused the workflow to fail at parse ti
 
 **Output:**
 
-```
+```text
 in_progress  Automatic Dependency Submission (Python) Automatic Dependency Submission main dynamic 24969132262 9s 2026-04-26T22:53:52Z
 in_progress  fix: duplicate workflow_dispatch trigger removed NETWEB Path Portability Check main push 24969132243 9s 2026-04-26T22:53:52Z
 in_progress  fix: duplicate workflow_dispatch trigger removed Daily Notes Placeholder Check main push 24969132223 9s 2026-04-26T22:53:52Z
@@ -2556,7 +2556,7 @@ The user is getting 7 failed workflow run emails. This is overwhelming. Let me c
 
 **Output:**
 
-```
+```text
 completed failure fix: duplicate workflow_dispatch trigger removed .github/workflows/budget-tracker-csv-export.yml main push 24969131896 0s 2026-04-26T22:53:52Z
 completed failure fix: duplicate workflow_dispatch trigger removed .github/workflows/pr-lifecycle.yml main push 24969131786 0s 2026-04-26T22:53:51Z
 
@@ -2583,7 +2583,7 @@ Let me check the pr-lifecycle.yml failure - there was an error in the file that 
 
 **Output:**
 
-```
+```text
 
 X main .github/workflows/pr-lifecycle.yml LAF-US/IDAHO-VAULT#79 · 24969131786
 Triggered via push less than a minute ago
@@ -2615,7 +2615,7 @@ The workflow file itself has an issue. Looking at the YAML, I see there's still 
 
 **Output:**
 
-```
+```text
 6:on:
 
 ```
@@ -2641,7 +2641,7 @@ I added "on:" twice - line 6 is where I added the trigger after line 5's blank, 
 
 **Output:**
 
-```
+```text
 name: PR Lifecycle
 
 # Unified PR automation: create → reconcile → merge → cleanup
@@ -2696,7 +2696,7 @@ The YAML looks correct. Let me check if there's another issue - maybe the GitHub
 
 **Output:**
 
-```
+```text
       21
 workflows
 
@@ -2732,7 +2732,7 @@ Let me check that failure separately.
 
 **Output:**
 
-```
+```text
 failed to get run log: log not found
 
 ```
@@ -2758,7 +2758,7 @@ Let me check more context. The issue might be permissions or something else in t
 
 **Output:**
 
-```
+```text
 <path>/Users/logan/IDAHO-VAULT/.github/workflows/budget-tracker-csv-export.yml</path>
 <type>file</type>
 <content>
@@ -2810,7 +2810,7 @@ Let me check if there's a failure in the YAML validation in general:
 
 **Output:**
 
-```
+```bash
 zsh:1: command not found: jq
 
 ```
@@ -2836,7 +2836,7 @@ Let me check the system without jq.
 
 **Output:**
 
-```
+```markdown
 === SYSTEM STATE ===
 
 1. Workflows: 21
@@ -2902,7 +2902,7 @@ Logan is asking me to verify if the system is actually fixed. Let me check the c
 
 **Output:**
 
-```
+```text
 completed failure Automatic Dependency Submission (Python) Automatic Dependency Submission main dynamic 24969132262 38s 2026-04-26T22:53:52Z
 completed success fix: duplicate workflow_dispatch trigger removed NETWEB Path Portability Check main push 24969132243 1m33s 2026-04-26T22:53:52Z
 completed success fix: duplicate workflow_dispatch trigger removed Daily Notes Placeholder Check main push 24969132223 11s 2026-04-26T22:53:52Z
@@ -2932,7 +2932,7 @@ The pr-lifecycle.yml is not in the run list anymore - which means it's no longer
 
 **Output:**
 
-```
+```text
 submit-pypi validate-project 2026-04-26T22:54:27.1685043Z     is_resolved = self._do_resolve(
 submit-pypi validate-project 2026-04-26T22:54:27.1685274Z         resolver=resolver,
 submit-pypi validate-project 2026-04-26T22:54:27.1685587Z         compatible_existing_constraints=compatible_existing_constraints,
@@ -2977,7 +2977,7 @@ Dependency conflict. This is a GitHub dependency submission issue, not a workflo
 
 **Output:**
 
-```
+```text
 completed failure fix: duplicate workflow_dispatch trigger removed .github/workflows/pr-lifecycle.yml main push 24969131786 0s 2026-04-26T22:53:51Z
 completed success fix: add workflow_dispatch trigger to pr-lifecycle Daily Notes Placeholder Check main push 24969004397 13s 2026-04-26T22:46:51Z
 completed success fix: add workflow_dispatch trigger to pr-lifecycle NETWEB Path Portability Check main push 24969004388 1m10s 2026-04-26T22:46:51Z
@@ -3005,7 +3005,7 @@ I see that pr-lifecycle.yml still failed - it ran from the commit fea9a48b which
 
 **Output:**
 
-```
+```text
 (no output)
 ```
 
@@ -3030,7 +3030,7 @@ No recent PR Lifecycle runs. This means either:1. The workflow file is still inv
 
 **Output:**
 
-```
+```text
 .github/workflows/pr-lifecycle.yml
 .github/workflows/pr-lifecycle.yml
 active
@@ -3062,7 +3062,7 @@ Let me wait a bit and check if the current push is passing.
 
 **Output:**
 
-```
+```text
 completed failure Automatic Dependency Submission (Python) Automatic Dependency Submission main dynamic 24969132262 38s 2026-04-26T22:53:52Z
 completed success fix: duplicate workflow_dispatch trigger removed NETWEB Path Portability Check main push 24969132243 1m33s 2026-04-26T22:53:52Z
 completed success fix: duplicate workflow_dispatch trigger removed Daily Notes Placeholder Check main push 24969132223 11s 2026-04-26T22:53:52Z
@@ -3094,7 +3094,7 @@ Let me check if there's still an issue with the file by looking at recent runs o
 
 **Output:**
 
-```
+```text
 completed failure fix: duplicate workflow_dispatch trigger removed .github/workflows/pr-lifecycle.yml main push 24969131786 0s 2026-04-26T22:53:51Z
 completed failure fix: add workflow_dispatch trigger to pr-lifecycle .github/workflows/pr-lifecycle.yml main push 24969004136 0s 2026-04-26T22:46:50Z
 
@@ -3127,7 +3127,7 @@ completed failure fix: add workflow_dispatch trigger to pr-lifecycle .github/wor
 
 **Output:**
 
-```
+```text
 failed to get run log: log not found
 
 ```

@@ -167,6 +167,6 @@ Filed at the fruit-tree hostel looking back at the Hinterlands, May 15th, 2026. 
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

@@ -156,6 +156,6 @@ authority is absent, **`*`** stands.
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

@@ -243,6 +243,6 @@ adopted as canon**. Where authority — or a founding act — is absent, **`*`**
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

@@ -42,7 +42,7 @@ The IDAHO-VAULT AI personal assistant agentic swarm system has been successfully
 
 ## Files Created
 
-```
+```text
 !/
 ├── STABILIZATION-PLAN.md        # Original stabilization plan
 ├── STABILIZATION-REPORT.md      # Detailed implementation report

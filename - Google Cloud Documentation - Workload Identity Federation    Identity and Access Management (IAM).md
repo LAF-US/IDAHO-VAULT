@@ -64,19 +64,19 @@ The following list provides attribute mapping examples:
 
 - Assign the assertion attribute `sub` to `google.subject`:
 
- ```
+ ```text
  google.subject=assertion.sub
  ```
 
 - Concatenate multiple assertion attributes:
 
- ```
+ ```text
  google.subject='myprovider::' + assertion.aud + '::' + assertion.sub
  ```
 
 - Map a GUID-valued assertion attribute `workload_id` to a name, and assign the result to a custom attribute named `attribute.my_display_name`:
 
- ```
+ ```text
  attribute.my_display_name={
    "8bb39bdb-1cc5-4447-b7db-a19e920eb111": "Workload1",
    "55d36609-9bcf-48e0-a366-a3cf19027d2a": "Workload2"
@@ -85,25 +85,25 @@ The following list provides attribute mapping examples:
 
 - Use CEL [logical operators and functions](https://github.com/google/cel-spec/blob/master/doc/langdef.md#list-of-standard-definitions) to set a custom attribute named `attribute.environment` to either `prod` or `test`, depending on the identity's Amazon Resource Name (ARN):
 
- ```
+ ```text
  attribute.environment=assertion.arn.contains(":instance-profile/Production") ? "prod" : "test"
  ```
 
 - Use the [`extract` function](https://docs.cloud.google.com/iam/docs/conditions-attribute-reference#extract) to populate a custom attribute `aws_role` with the name of the assumed role or, if no role has been assumed, with the identity's ARN.
 
- ```
+ ```text
  attribute.aws_role=assertion.arn.contains('assumed-role') ? assertion.arn.extract('{account_arn}assumed-role/') + 'assumed-role/' + assertion.arn.extract('assumed-role/{role_name}/') : assertion.arn
  ```
 
 - Use the [`split` function](https://pkg.go.dev/github.com/google/cel-go/ext#readme-split) splits a string on the provided separator value. For example, to extract the attribute `username` from an email address attribute by splitting its value at the `@` and using the first string, use the following attribute mapping:
 
- ```
+ ```text
  attribute.username=assertion.email.split("@")[0]
  ```
 
 - [`join` function](https://pkg.go.dev/github.com/google/cel-go/ext#readme-join) joins a list of strings on the provided separator value. For example, to populate the custom attribute `department` by concatenating a list of strings with `.` as a separator, use the following attribute mapping:
 
- ```
+ ```text
  attribute.department=assertion.department.join(".")
  ```
 
@@ -130,7 +130,7 @@ The attribute condition for a workload identity pool provider can use the `asser
 
 The following example only allows requests from identities that have a specific AWS role:
 
-```
+```text
 attribute.aws_role == "ROLE_MAPPING"
 ```
 

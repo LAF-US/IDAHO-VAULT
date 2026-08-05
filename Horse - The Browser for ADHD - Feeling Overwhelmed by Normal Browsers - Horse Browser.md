@@ -176,7 +176,7 @@ British shorthairs
 
 \=
 
-```
+```text
 .
                          .OO
                        .OOOO

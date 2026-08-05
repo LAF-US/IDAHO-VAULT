@@ -10,7 +10,7 @@ created: 2026-04-17
 
 There are two free
 
-```
+```text
 Spanish-English dictionaries
 ```
 
@@ -24,7 +24,7 @@ WordReference has two of its own dictionaries plus those of Collins. [The French
 
 The WordReference
 
-```
+```text
 language forum
 ```
 
