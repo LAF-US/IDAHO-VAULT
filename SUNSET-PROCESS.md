@@ -48,7 +48,7 @@ This document defines the structured process for managing the lifecycle of non-p
 **Steps:**
 
 1. Agent completes its assigned work (deliverables complete, no pending tasks)
-2. Agent creates final LEVELSET-SUNSET-<agent-name>.md synthesis report (see template below)
+2. Agent creates final `LEVELSET-SUNSET-<agent-name>.md` synthesis report (see template below)
 3. Agent updates AGENT-REGISTRY.md to mark status as "FLAGGED_FOR_SUNSET"
 4. Agent commits with session URL and clear message
 5. Agent pushes to its branch
@@ -58,7 +58,7 @@ This document defines the structured process for managing the lifecycle of non-p
 
 **Output:**
 
-- LEVELSET-SUNSET-<agent-name>.md synthesis document
+- `LEVELSET-SUNSET-<agent-name>.md` synthesis document
 - Updated AGENT-REGISTRY.md entry
 - Commit in git history with session tracking
 
@@ -82,7 +82,7 @@ This document defines the structured process for managing the lifecycle of non-p
 
 **Input:**
 
-- LEVELSET-SUNSET-<agent-name>.md reports
+- `LEVELSET-SUNSET-<agent-name>.md` reports
 - AGENT-REGISTRY.md
 - Git history and branch state
 
@@ -134,7 +134,7 @@ This document defines the structured process for managing the lifecycle of non-p
 - [ ] Remove agent entries from configuration files (`.gitignore`, etc.) if safe
 - [ ] Update AGENT-REGISTRY.md to "DELETION_PENDING_ARTIFACTS_REMOVED"
 - [ ] Commit deletion cleanup
-- [ ] Create LEVELSET-DELETE-<agent>.md final report (see template below)
+- [ ] Create `LEVELSET-DELETE-<agent>.md` final report (see template below)
 - [ ] Update AGENT-REGISTRY.md to "DELETED"
 - [ ] Push final commit
 
@@ -143,7 +143,7 @@ This document defines the structured process for managing the lifecycle of non-p
 **Output:**
 
 - Removed branches and artifacts
-- LEVELSET-DELETE-<agent>.md final report
+- `LEVELSET-DELETE-<agent>.md` final report
 - Clean AGENT-REGISTRY.md
 
 ---
@@ -154,7 +154,7 @@ This document defines the structured process for managing the lifecycle of non-p
 
 **Steps:**
 
-1. Create LEVELSET-DELETE-<agent>.md report (template provided below)
+1. Create `LEVELSET-DELETE-<agent>.md` report (template provided below)
 2. Document:
    - Agent identity and dates of operation
    - All commits/branches created
@@ -169,7 +169,7 @@ This document defines the structured process for managing the lifecycle of non-p
 
 **Output:**
 
-- LEVELSET-DELETE-<agent>.md report in git history
+- `LEVELSET-DELETE-<agent>.md` report in git history
 - AGENT-REGISTRY.md marked DELETED
 - Immutable audit trail
 
@@ -177,7 +177,7 @@ This document defines the structured process for managing the lifecycle of non-p
 
 ## Document Templates
 
-### LEVELSET-SUNSET-<agent-name>.md Template
+### `LEVELSET-SUNSET-<agent-name>.md` Template
 
 ```markdown
 ---
@@ -228,7 +228,7 @@ This agent is ready for sunset. All work is complete and committed.
 Authorization to delete this agent's artifacts upon completion of other pending synthesis tasks.
 ```
 
-### LEVELSET-DELETE-<agent-name>.md Template
+### `LEVELSET-DELETE-<agent-name>.md` Template
 
 ```markdown
 ---
