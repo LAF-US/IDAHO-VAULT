@@ -4,6 +4,8 @@ version = "0.1.0"
 description = "The world is quiet here．Esto Perpetua!"
 authors = [{ name = "Logan Finney" }, { name = "Unified Swarm" }]
 dependencies = [
-    "packaging"
+    "packaging",
+    "pytest",
+    "uv"
 ]
 # Just like a .gitignore file, don't fiddle with this willy-nilly.
