@@ -20,7 +20,7 @@ My streak survived the @nytimes-ocalypse 🙏
 
 Wordle 237 5/6
 
-This puzzle gave me an _ _ _ _ _ .
+This puzzle gave me an \_ \_ \_ \_ \_ .
 
 ⬛🟨⬛⬛⬛
 ⬛🟨⬛⬛⬛

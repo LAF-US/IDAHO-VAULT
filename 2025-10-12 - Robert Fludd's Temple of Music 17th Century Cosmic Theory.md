@@ -60,4 +60,4 @@ In the centre building, the two doorways are surrounded by musical instruments: 
 
 It’s an amazing construction, particularly how Fludd is able to include so many different elements of music into the image, including quite complex scales in the hexachords. What’s in your temple of music?
 
-*For more of the best in classical music, [sign up](#) for our E-Newsletter*
+*For more of the best in classical music, sign up for our E-Newsletter*

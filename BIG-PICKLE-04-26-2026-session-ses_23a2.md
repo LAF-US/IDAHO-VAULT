@@ -156,12 +156,14 @@ _Thinking:_
 | sort-audit | schedule (Mon 6am) | Vault topology census |
 | branch-garden-report | schedule (Mon 10am) | Branch garden reporting |wayback-audit vs wayback-preserve:- wayback-audit: Weekly scheduled audit of dead URLs- wayback-preserve: Push-triggered preservation of new URLs**CHERRYPICKING DECISION:**
 
-| Pair | Assessment | Action | |
-| --- | --- | --- | --- |
+| Pair | Assessment | Action |
+| --- | --- | --- |
 | review-feedback-loop + review-response | Different triggers, different purposes | KEEP separate |
 | sort-audit + branch-garden-report | Different schedule + purpose | MERGE into one "Reporting" |
 | linear-brief + linear-pr-sync + linear-webhook | Already distinct | KEEP |
-| wayback-audit + wayback-preserve | Different triggers | MERGE into one | **DECISION NEEDED FROM LOGAN:**
+| wayback-audit + wayback-preserve | Different triggers | MERGE into one |
+
+**DECISION NEEDED FROM LOGAN:**
 
 1. These are distinct - keep as-is: review flows, Linear workflows
 2. Merge: sort-audit + branch-garden-report = "Reporting" workflow

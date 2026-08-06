@@ -62,7 +62,7 @@ A screenshot of the dropdown menu under the Gmail search bar at the far left cor
 
 Organize Gmail with Streak: automatically sort emails with your contacts and track conversations for each deal or opportunity with pipelines in Gmail. [Try it free](https://www.streak.com/request-trial?utm_medium=blog-cta&utm_source=gmail-plus-addressing-trick) for 14 days.
 
-[Chat with us](#)
+Chat with us
 
 ### See who’s sharing your data
 
