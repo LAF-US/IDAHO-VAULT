@@ -24,6 +24,6 @@ Idaho House votes down @IDSecOfState budget as well. #idleg #idpol <https://t.co
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/ESr2ZBXWoAIrhS5.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/ESr2ZBXWoAIrhS5.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1237071967318151169)

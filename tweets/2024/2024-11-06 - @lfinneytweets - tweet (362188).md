@@ -16,9 +16,9 @@ related:
 https://t.co/B0sORrvYZh
 
 ## Media
-- ![](https://pbs.twimg.com/media/Gbsw2MbacAALQpw.jpg)
-- ![](https://pbs.twimg.com/media/Gbsw2MabkAALWMG.jpg)
-- ![](https://pbs.twimg.com/media/Gbsw2McbAAAz0Cu.jpg)
-- ![](https://pbs.twimg.com/media/Gbsw2MebQAAoATY.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/Gbsw2MbacAALQpw.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/Gbsw2MabkAALWMG.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/Gbsw2McbAAAz0Cu.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/Gbsw2MebQAAoATY.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1854129426365362188)

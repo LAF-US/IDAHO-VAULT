@@ -18,7 +18,7 @@ related:
 Good to know the @AP has a time machine. https://t.co/KMouubeR8O
 
 ## Media
-- ![](https://pbs.twimg.com/media/El88R5TU4AALf0O.jpg)
-- ![](https://pbs.twimg.com/media/El88TDAVoAIPKw3.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/El88R5TU4AALf0O.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/El88TDAVoAIPKw3.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1323843129573736448)

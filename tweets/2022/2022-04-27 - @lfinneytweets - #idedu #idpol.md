@@ -18,7 +18,7 @@ related:
   - idpol
 ---
 
-#idedu #idpol https://t.co/WclRNeRspU
+\#idedu #idpol https://t.co/WclRNeRspU
 
 ## Links
 - https://x.com/apalermotweets/status/1519372279313944582

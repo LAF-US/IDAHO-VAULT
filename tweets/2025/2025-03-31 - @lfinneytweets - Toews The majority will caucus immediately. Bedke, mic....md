@@ -17,7 +17,6 @@ related:
 ---
 
 Toews: "The majority will caucus immediately." 
-Bedke, mic still hot: "What are the rest of us going to do?" 
-#idleg
+Bedke, mic still hot: "What are the rest of us going to do?" #idleg
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1906851825950900594)

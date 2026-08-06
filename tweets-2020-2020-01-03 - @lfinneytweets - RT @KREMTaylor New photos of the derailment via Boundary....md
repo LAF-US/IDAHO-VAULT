@@ -19,7 +19,7 @@ RT @KREMTaylor: New photos of the derailment via Boundary County Emergency Manag
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/ENUPG6vWoAM8Xmw.jpg)
-- ![](https://pbs.twimg.com/media/ENUPG9nX0AAFEQl.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/ENUPG6vWoAM8Xmw.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/ENUPG9nX0AAFEQl.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1212924226778173441)

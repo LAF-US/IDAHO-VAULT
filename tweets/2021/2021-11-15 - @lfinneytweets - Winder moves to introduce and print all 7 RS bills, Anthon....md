@@ -22,7 +22,7 @@ related:
 Winder moves to introduce and print all 7 RS bills, Anthon seconds. Passes on a unanimous voice vote. #idleg #idpol https://t.co/LO5o1svcjq
 
 ## Media
-- ![](https://pbs.twimg.com/media/FEPxO74VcAQ0cCV.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/FEPxO74VcAQ0cCV.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

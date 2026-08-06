@@ -20,6 +20,6 @@ https://t.co/breaZqoX0d https://t.co/jO1q5Dn35b https://t.co/6tTXJlaHHD
 - https://x.com/thehill/status/1417680983348764679
 
 ## Media
-- ![](https://pbs.twimg.com/tweet_video_thumb/E61JrvaVgAEqVHX.jpg)
+- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/E61JrvaVgAEqVHX.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1417870480761974784)

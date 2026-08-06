@@ -20,8 +20,7 @@ related:
   - IdahoCOVID19
 ---
 
-"The messaging on masks could have been better the past few months, but we have more evidence now: If you must be out and about, please wear a mask. Masks are part of the solution, not a strategy in and of themselves." –@HCTriage 
-#MaskUp #IdahoCOVID19 
+"The messaging on masks could have been better the past few months, but we have more evidence now: If you must be out and about, please wear a mask. Masks are part of the solution, not a strategy in and of themselves." –@HCTriage #MaskUp #IdahoCOVID19
 https://t.co/TjQfBO3eqa
 
 ## Links

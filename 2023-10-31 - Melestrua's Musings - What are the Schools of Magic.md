@@ -23,7 +23,7 @@ Representative spells: Blade Ward, Absorb Elements, Alarm, Armour of Agathys, Pr
 
 So: protection, and removal of bad effects.
 
-![](https://i0.wp.com/melestrua.net/wp-content/uploads/2023/10/InsectPlague.png?w=320&ssl=1)
+![alt text needed](https://i0.wp.com/melestrua.net/wp-content/uploads/2023/10/InsectPlague.png?w=320&ssl=1)
 
 ## Conjuration
 
@@ -45,7 +45,7 @@ Representative spells: Clairvoyance, Comprehend Languages, Contact Other Plane, 
 
 So: finding things out.
 
-![](https://i0.wp.com/melestrua.net/wp-content/uploads/2023/10/SleepBECMI.png?w=736&ssl=1)
+![alt text needed](https://i0.wp.com/melestrua.net/wp-content/uploads/2023/10/SleepBECMI.png?w=736&ssl=1)
 
 ## Enchantment
 
@@ -57,7 +57,7 @@ Representative spells: Animal Friendship, Bless, Command, Compulsion, Confusion,
 
 So: mind control (interesting that Hold Person and Power Word Kill fall into this category)
 
-![](https://i0.wp.com/melestrua.net/wp-content/uploads/2023/10/ScorchingRay.png?w=300&ssl=1)
+![alt text needed](https://i0.wp.com/melestrua.net/wp-content/uploads/2023/10/ScorchingRay.png?w=300&ssl=1)
 
 ## Evocation
 
@@ -79,7 +79,7 @@ Representative spells: Dancing Lights, Illusory Script, Blur, Invisibility, Phan
 
 I think this one is actually pretty clear
 
-![](https://i0.wp.com/melestrua.net/wp-content/uploads/2023/10/MirrorImageBECMI.png?w=2046&ssl=1)
+![alt text needed](https://i0.wp.com/melestrua.net/wp-content/uploads/2023/10/MirrorImageBECMI.png?w=2046&ssl=1)
 
 ## Necromancy
 
@@ -93,7 +93,7 @@ Representative spells: Animate Dead, Bestow Curse, Blight, Blindness/Deafness, C
 
 So: managing the lines between life and death
 
-![](https://i0.wp.com/melestrua.net/wp-content/uploads/2023/10/Barkskin.png?w=315&ssl=1)
+![alt text needed](https://i0.wp.com/melestrua.net/wp-content/uploads/2023/10/Barkskin.png?w=315&ssl=1)
 
 ## Transmutation
 

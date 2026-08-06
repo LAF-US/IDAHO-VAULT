@@ -21,6 +21,6 @@ related:
 Idaho did not meet all of the criteria to advance in reopening. The state will stay in Stage 4 for at least two more weeks. #IdahoCOVID19 #idpol https://t.co/JHlhuNMdSc
 
 ## Media
-- ![](https://pbs.twimg.com/media/EbYGYXbUYAAx56W.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EbYGYXbUYAAx56W.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1276214562543464448)

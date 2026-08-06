@@ -31,7 +31,7 @@ related:
 - self
 authority: LOGAN
 ---
-![](https://www.youtube.com/watch?v=bDvkbXp3ujY)
+![alt text needed](https://www.youtube.com/watch?v=bDvkbXp3ujY)
 
 What Idaho is doing to restore and maintain protections for property owners against arbitrary government intrusion as envisioned by our Founding Fathers.
 

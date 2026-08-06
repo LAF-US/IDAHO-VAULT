@@ -29,6 +29,6 @@ https://t.co/PTh7y6AsOO https://t.co/jtqH0d3GXz
 - https://idfg.idaho.gov/article/spring-2024-cwd-management-action-wrap
 
 ## Media
-- ![](https://pbs.twimg.com/media/GKrEDNbaoAQrGfE.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/GKrEDNbaoAQrGfE.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1777451590158537104)

@@ -18,6 +18,6 @@ related:
 RT @MollyHarbarger: As the protests have gone, the chanting has gotten much more interesting rhythmically. https://t.co/OHfUlGKSsZ
 
 ## Media
-- ![](https://pbs.twimg.com/ext_tw_video_thumb/1291957070875385860/pu/img/-5a2V2ZNYK6D2mwV.jpg)
+- ![alt text needed](https://pbs.twimg.com/ext_tw_video_thumb/1291957070875385860/pu/img/-5a2V2ZNYK6D2mwV.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1291979219669413888)
