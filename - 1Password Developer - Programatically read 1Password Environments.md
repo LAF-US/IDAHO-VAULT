@@ -83,7 +83,7 @@ Before you get started, install the [latest beta build of 1Password CLI](https:/
 
 To read environment variables from a 1Password Environment, use `op environment read` with the [Environment's ID](#get-an-environments-id). 1Password CLI will return a list of environment variables for the Environment formatted as key-value pairs.
 
-op environment read <environmentID>
+`op environment read <environmentID>`
 
 #### Examples
 
@@ -107,7 +107,7 @@ op environment read blgexucrwfr2dtsxe2q4uu7dp4 | grep DB\_
 
 To pass environment variables from a 1Password Environment to an application or script, use [`op run`](https://developer.1password.com/docs/cli/reference/commands/run) with the `--environment` flag and the [Environment's ID](#get-an-environments-id), then pass the results to the application or script. 1Password CLI runs the application or script as a subprocess with your secrets loaded into the environment for the duration of the process.
 
-op run --environment <environmentID> -- <command>
+`op run --environment <environmentID> -- <command>`
 
 > [!-secondary] -secondary
 > note

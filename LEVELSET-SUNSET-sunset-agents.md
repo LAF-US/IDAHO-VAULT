@@ -166,7 +166,7 @@ All work is complete:
 Once authorized, deletion executor will:
 
 - Delete branches and artifacts
-- Create LEVELSET-DELETE-<agent>.md final reports
+- Create `LEVELSET-DELETE-<agent>.md` final reports
 - Update AGENT-REGISTRY.md to "DELETED"
 - Commit final audit trail
 
