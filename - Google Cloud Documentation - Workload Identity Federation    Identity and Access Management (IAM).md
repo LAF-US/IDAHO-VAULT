@@ -142,7 +142,7 @@ The token exchange flow returns a federated access token. You can use this feder
 
 You can use this access token to provide IAM access.
 
-We recommend that you use Workload Identity Federation to provide access [directly to a Google Cloud resource](#direct-resource-access). Although most Google Cloud APIs support Workload Identity Federation, some APIs have [limitations](https://docs.cloud.google.com/iam/docs/federated-identity-supported-services). As an alternative, you can use [service account impersonation](#impersonation).
+We recommend that you use Workload Identity Federation to provide access [directly to a Google Cloud resource](#direct-resource-access). Although most Google Cloud APIs support Workload Identity Federation, some APIs have [limitations](https://docs.cloud.google.com/iam/docs/federated-identity-supported-services). As an alternative, you can use [service account impersonation](#alternative-service-account-impersonation).
 
 The short-lived access token lets you call any Google Cloud APIs that the resource or service account has access to.
 
