@@ -87,7 +87,7 @@ crewai-core==1.15.7
     # via
     #   crewai
     #   crewai-cli
-cryptography==49.0.0
+cryptography==50.0.0
     # via
     #   crewai-cli
     #   crewai-core
