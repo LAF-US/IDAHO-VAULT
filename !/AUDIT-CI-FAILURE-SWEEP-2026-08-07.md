@@ -9,6 +9,8 @@ owner: Logan Finney
 
 # CI Failure Sweep — 2026-08-07
 
+> **Correction, added same day after the fact-finding below was first written:** this sweep's core conclusion — that `pyproject.toml`'s reduction to a minimal stub was accidental corruption needing restoration — was wrong, and PR #935 (which acted on that conclusion) has been retracted. #928 ("Delete tests/", open since 2026-08-05) deletes the whole `tests/` suite plus `python-test-suite.yml`/`codacy-coverage-reporter.yml`, because the tests were judged to pass without exercising what they claimed to cover; that thread already treated the minimal manifest as the deliberate current state in comments predating this sweep. #934 is Logan's own hand-edit on that same minimal state, adding back only `pytest`/`uv` — not the full dependency-groups/build-system/CrewAI runtime set this sweep restored. The commit-tracing below (what `a2766c40` changed, and when) is left as-written and is still accurate as description; what was wrong was the inference that the change was unwanted. Not editing the body below in place — leaving the original reasoning visible rather than papering over the gap it left.
+
 ## 5W Summary
 
 | | |
