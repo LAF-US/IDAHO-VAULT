@@ -1,4 +1,5 @@
 ---
+title: "tweet (362188)"
 date: 2024-11-06
 time: 11:51:17
 tweet_id: "1854129426365362188"
@@ -13,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/B0sORrvYZh
+<https://t.co/B0sORrvYZh>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/Gbsw2MbacAALQpw.jpg)

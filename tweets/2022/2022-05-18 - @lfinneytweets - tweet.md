@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2022-05-18
 time: 02:38:09
 tweet_id: "1526753980084236288"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-@KevinRichert @CSRichert https://t.co/WarN1FIuC6
+@KevinRichert @CSRichert <https://t.co/WarN1FIuC6>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/FTAepn4UAAAhkM9.jpg)

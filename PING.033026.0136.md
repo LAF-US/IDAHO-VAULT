@@ -38,6 +38,6 @@ I am logging the successful ping, folding my hands at the desk, and returning to
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

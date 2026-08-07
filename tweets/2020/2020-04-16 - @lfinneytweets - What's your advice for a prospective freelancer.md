@@ -1,4 +1,5 @@
 ---
+title: "What's your advice for a prospective freelancer"
 date: 2020-04-16
 time: 22:04:20
 tweet_id: "1250907906553208832"

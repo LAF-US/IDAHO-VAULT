@@ -1,4 +1,5 @@
 ---
+title: "tweet (528960)"
 date: 2020-01-22
 time: 19:01:41
 tweet_id: "1220058971647528960"
@@ -16,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-@IdahoPubRadio https://t.co/wzg7IYcsmj
+@IdahoPubRadio <https://t.co/wzg7IYcsmj>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EO6FKghUEAAPP0l.jpg)

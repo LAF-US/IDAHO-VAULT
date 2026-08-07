@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2021-07-09
 time: 21:12:41
 tweet_id: "1413607061598834689"
@@ -16,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-@sidnuncio @davlinnews https://t.co/OMWCcoMu0c
+@sidnuncio @davlinnews <https://t.co/OMWCcoMu0c>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/E54kILcVUAEwyN4.jpg)

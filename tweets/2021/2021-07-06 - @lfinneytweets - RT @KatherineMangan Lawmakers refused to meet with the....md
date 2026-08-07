@@ -1,4 +1,5 @@
 ---
+title: "RT @KatherineMangan Lawmakers refused to meet with the..."
 date: 2021-07-06
 time: 18:15:17
 tweet_id: "1412475254811680769"

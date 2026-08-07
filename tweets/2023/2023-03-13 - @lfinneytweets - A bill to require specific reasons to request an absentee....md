@@ -1,4 +1,5 @@
 ---
+title: "A bill to require specific reasons to request an absentee..."
 date: 2023-03-13
 time: 18:08:32
 tweet_id: "1635342090598232065"
@@ -18,7 +19,7 @@ related:
   - idpol
 ---
 
-A bill to require specific reasons to request an absentee ballot has failed in the Idaho House. #idleg #idpol https://t.co/mktLKHkiZX
+A bill to require specific reasons to request an absentee ballot has failed in the Idaho House. #idleg #idpol <https://t.co/mktLKHkiZX>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FrHm9wjaIAEaQBa.jpg)

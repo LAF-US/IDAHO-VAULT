@@ -95,6 +95,6 @@ Introduces a cross-system **concept** (like the Mage, Wights, and Stylings nodes
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

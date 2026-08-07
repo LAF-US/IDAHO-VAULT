@@ -1,4 +1,5 @@
 ---
+title: "Gil got me one too!"
 date: 2019-05-11
 time: 01:03:58
 tweet_id: "1127016464127447040"
@@ -16,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-@ryannoyance Gil got me one too! https://t.co/UXabWDDjq8
+@ryannoyance Gil got me one too! <https://t.co/UXabWDDjq8>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/D6P3fkjUEAAnD7K.jpg)

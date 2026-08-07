@@ -1,4 +1,5 @@
 ---
+title: "First day #idleg notebook dump - @IdahoGOP supports..."
 date: 2024-01-09
 time: 00:55:42
 tweet_id: "1744523307591102668"

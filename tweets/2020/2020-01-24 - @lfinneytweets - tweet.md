@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2020-01-24
 time: 06:31:41
 tweet_id: "1220595004499881985"
@@ -13,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-@Sharp208 https://t.co/ckgDgcCViW
+@Sharp208 <https://t.co/ckgDgcCViW>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/ext_tw_video_thumb/1220594947922857984/pu/img/3_9u99NHXw70bx_i.jpg)

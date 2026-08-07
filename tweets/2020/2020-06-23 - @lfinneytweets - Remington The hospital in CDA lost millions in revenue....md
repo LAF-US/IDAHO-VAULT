@@ -1,4 +1,5 @@
 ---
+title: "Remington The hospital in CDA lost millions in revenue..."
 date: 2020-06-23
 time: 15:26:32
 tweet_id: "1275450171518640130"

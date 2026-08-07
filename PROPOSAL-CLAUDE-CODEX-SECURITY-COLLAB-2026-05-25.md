@@ -206,6 +206,6 @@ Branch protection on `main` has been off since a softlock caused by agents addin
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

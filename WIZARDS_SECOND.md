@@ -39,8 +39,8 @@ The second of the numbered Wizard's Rules stated across Terry Goodkind's *Sword 
 
 ## Sources / URLs
 
-- https://www.goodreads.com/quotes/321931-wizard-s-second-rule-the-greatest-harm-can-result-from-the
-- https://sot.fandom.com/wiki/Wizard's_Rules
+- <https://www.goodreads.com/quotes/321931-wizard-s-second-rule-the-greatest-harm-can-result-from-the>
+- <https://sot.fandom.com/wiki/Wizard's_Rules>
 
 ---
 

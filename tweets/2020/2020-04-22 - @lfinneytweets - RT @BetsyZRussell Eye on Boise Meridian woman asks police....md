@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Meridian woman asks police..."
 date: 2020-04-22
 time: 15:34:08
 tweet_id: "1252984035472637952"

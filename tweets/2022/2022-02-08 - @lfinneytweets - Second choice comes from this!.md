@@ -1,4 +1,5 @@
 ---
+title: "Second choice comes from this!"
 date: 2022-02-08
 time: 06:04:20
 tweet_id: "1490929468462235648"
@@ -14,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-Second choice comes from this! https://t.co/NwXCGqMYAE
+Second choice comes from this! <https://t.co/NwXCGqMYAE>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FLDYcx1UYAMNlGQ.jpg)

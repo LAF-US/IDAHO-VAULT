@@ -1,4 +1,5 @@
 ---
+title: "RT @AdaElections Precincts are beginning to arrive at..."
 date: 2022-05-18
 time: 03:31:30
 tweet_id: "1526767408966381568"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @AdaElections: Precincts are beginning to arrive at election headquarters. https://t.co/WhgQSk66Ff
+RT @AdaElections: Precincts are beginning to arrive at election headquarters. <https://t.co/WhgQSk66Ff>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/ext_tw_video_thumb/1526757841159106561/pu/img/00YGSQmlFvG37hv8.jpg)

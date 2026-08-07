@@ -1,4 +1,5 @@
 ---
+title: "Idaho's counties make more sense when you look at seats... (110898)"
 date: 2024-04-09
 time: 22:53:39
 tweet_id: "1777832273209110898"
@@ -17,7 +18,7 @@ related:
   - idpol
 ---
 
-Idaho's counties make more sense when you look at seats instead of boundaries. (2/2) #idpol https://t.co/GfSSWd0zQW
+Idaho's counties make more sense when you look at seats instead of boundaries. (2/2) #idpol <https://t.co/GfSSWd0zQW>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GKwhB8kb0AAUAoc.jpg)

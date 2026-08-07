@@ -87,6 +87,6 @@ search-synthesized extracts of the Spy Kids Wiki / Wikipedia / TV Tropes.)*
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

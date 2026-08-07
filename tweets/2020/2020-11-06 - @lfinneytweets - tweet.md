@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2020-11-06
 time: 20:45:50
 tweet_id: "1324815278220341248"
@@ -13,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/CW7m2NKedD
+<https://t.co/CW7m2NKedD>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EmKweXOVMAEWPJB.jpg)

@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports 30 minutes to show time! #IdahoCOVID19"
 date: 2021-08-27
 time: 01:31:25
 tweet_id: "1431066790029709312"
@@ -18,7 +19,7 @@ related:
   - IdahoCOVID19
 ---
 
-RT @IdahoReports: 30 minutes to show time! #IdahoCOVID19 https://t.co/nTCINzDWSJ
+RT @IdahoReports: 30 minutes to show time! #IdahoCOVID19 <https://t.co/nTCINzDWSJ>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/E9wpPGkVUAIddLO.jpg)

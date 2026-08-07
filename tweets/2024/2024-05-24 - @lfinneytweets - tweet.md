@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2024-05-24
 time: 04:42:37
 tweet_id: "1793865161289482688"
@@ -16,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-@danielwinvw https://t.co/E7n0GYVOZ8
+@danielwinvw <https://t.co/E7n0GYVOZ8>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GOUW24BaAAAVGIi.jpg)

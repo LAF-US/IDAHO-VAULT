@@ -1,4 +1,5 @@
 ---
+title: "First #IdahoCovid19 deaths reported by @IDHW"
 date: 2020-03-26
 time: 20:07:32
 tweet_id: "1243268369203089409"
@@ -18,7 +19,7 @@ related:
   - IdahoCovid19
 ---
 
-First #IdahoCovid19 deaths reported by @IDHW https://t.co/YTBGusmIwO
+First #IdahoCovid19 deaths reported by @IDHW <https://t.co/YTBGusmIwO>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EUD5_SaUwAAL3oW.jpg)

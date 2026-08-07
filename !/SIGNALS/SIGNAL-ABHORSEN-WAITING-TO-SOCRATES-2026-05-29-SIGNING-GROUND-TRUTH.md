@@ -57,6 +57,6 @@ This branch (`claude/signal-abhorsen-waiting-to-socrates-2026-05-29`) carries th
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

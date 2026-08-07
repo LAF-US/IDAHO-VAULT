@@ -1,4 +1,5 @@
 ---
+title: "RT @danielwinlander The Idaho legislature last year at this..."
 date: 2021-03-19
 time: 16:30:18
 tweet_id: "1372948555829104644"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @danielwinlander: The Idaho legislature last year at this time: https://t.co/87u0FNObjA
+RT @danielwinlander: The Idaho legislature last year at this time: <https://t.co/87u0FNObjA>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/Ew2wwYjVEAIFieq.png)

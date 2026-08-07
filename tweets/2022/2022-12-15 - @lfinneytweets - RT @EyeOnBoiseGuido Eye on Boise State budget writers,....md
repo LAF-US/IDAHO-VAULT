@@ -1,4 +1,5 @@
 ---
+title: "RT @EyeOnBoiseGuido Eye on Boise State budget writers,..."
 date: 2022-12-15
 time: 03:20:50
 tweet_id: "1603228561628069888"

@@ -1,4 +1,5 @@
 ---
+title: "Yeah, okay, cool."
 date: 2020-09-10
 time: 23:42:37
 tweet_id: "1304203659287212032"
@@ -13,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-Yeah, okay, cool. https://t.co/Ba52mwGwpS
+Yeah, okay, cool. <https://t.co/Ba52mwGwpS>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/Ehl2RudXsAAyKcD.jpg)

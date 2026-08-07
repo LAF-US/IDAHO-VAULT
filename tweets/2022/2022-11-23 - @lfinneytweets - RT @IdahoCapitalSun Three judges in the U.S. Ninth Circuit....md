@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoCapitalSun Three judges in the U.S. Ninth Circuit..."
 date: 2022-11-23
 time: 03:16:45
 tweet_id: "1595255000166719488"

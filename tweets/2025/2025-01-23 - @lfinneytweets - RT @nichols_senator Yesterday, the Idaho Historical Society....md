@@ -1,4 +1,5 @@
 ---
+title: "RT @nichols_senator Yesterday, the Idaho Historical Society..."
 date: 2025-01-23
 time: 17:08:29
 tweet_id: "1882475502243659892"

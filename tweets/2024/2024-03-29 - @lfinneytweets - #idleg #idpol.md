@@ -1,4 +1,5 @@
 ---
+title: "#idleg #idpol"
 date: 2024-03-29
 time: 22:18:32
 tweet_id: "1773837172405366882"
@@ -18,7 +19,7 @@ related:
   - idpol
 ---
 
-\#idleg #idpol https://t.co/gDZwgAdjqE
+\#idleg #idpol <https://t.co/gDZwgAdjqE>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/ext_tw_video_thumb/1773837137789739008/pu/img/vmpDGi8tqAt2o7Um.jpg)

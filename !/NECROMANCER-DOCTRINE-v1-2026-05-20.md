@@ -480,6 +480,6 @@ direction, the sanction, and the relationship to the order being served.
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

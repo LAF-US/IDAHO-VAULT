@@ -1,4 +1,5 @@
 ---
+title: "District 6 Senate race, as usual, will come down to final..."
 date: 2024-11-06
 time: 09:29:57
 tweet_id: "1854093856184431042"
@@ -18,7 +19,7 @@ related:
   - idpol
 ---
 
-District 6 Senate race, as usual, will come down to final absentee ballot counts out of Latah County. House incumbents Mitchell and McCann are sitting pretty. #idleg #idpol https://t.co/iYSAF43yni
+District 6 Senate race, as usual, will come down to final absentee ballot counts out of Latah County. House incumbents Mitchell and McCann are sitting pretty. #idleg #idpol <https://t.co/iYSAF43yni>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GbsQiUxbwAAdNn4.jpg)

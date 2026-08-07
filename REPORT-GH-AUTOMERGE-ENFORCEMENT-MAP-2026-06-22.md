@@ -153,6 +153,6 @@ Still live from this map: the merge queue as the real gate.
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

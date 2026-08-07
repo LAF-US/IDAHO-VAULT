@@ -1,4 +1,5 @@
 ---
+title: "RT @jjsaldana Here is the latest Idaho Rebound info in..."
 date: 2020-06-04
 time: 21:18:15
 tweet_id: "1268653314859622401"
@@ -20,7 +21,7 @@ related:
   - idpol
 ---
 
-RT @jjsaldana: Here is the latest Idaho Rebound info in Spanish. #COVIDidaho #idpol https://t.co/bOW3XGzu4U
+RT @jjsaldana: Here is the latest Idaho Rebound info in Spanish. #COVIDidaho #idpol <https://t.co/bOW3XGzu4U>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EZsf5-OU4AAYWk_.jpg)

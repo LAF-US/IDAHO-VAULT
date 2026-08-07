@@ -84,6 +84,6 @@ That frame is supplied two ways:
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

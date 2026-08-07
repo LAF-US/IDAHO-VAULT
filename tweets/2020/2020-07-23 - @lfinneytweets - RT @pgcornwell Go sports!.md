@@ -1,4 +1,5 @@
 ---
+title: "RT @pgcornwell Go sports!"
 date: 2020-07-23
 time: 16:41:02
 tweet_id: "1286340558806491136"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @pgcornwell: Go sports! https://t.co/7CcGViyqCV
+RT @pgcornwell: Go sports! <https://t.co/7CcGViyqCV>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/Edn-qtKU0AEyoVo.jpg)

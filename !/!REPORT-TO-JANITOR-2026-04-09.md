@@ -260,6 +260,6 @@ The vault appears to be building toward a system where:
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

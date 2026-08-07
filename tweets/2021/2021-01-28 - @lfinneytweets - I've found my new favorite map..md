@@ -1,4 +1,5 @@
 ---
+title: "I've found my new favorite map."
 date: 2021-01-28
 time: 03:45:09
 tweet_id: "1354636606464946178"
@@ -13,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-I've found my new favorite map. https://t.co/HF5U3iWbs3
+I've found my new favorite map. <https://t.co/HF5U3iWbs3>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/Esyi0J2U0AI38hZ.jpg)

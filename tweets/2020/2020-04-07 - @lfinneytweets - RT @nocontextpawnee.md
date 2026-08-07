@@ -1,4 +1,5 @@
 ---
+title: "RT @nocontextpawnee"
 date: 2020-04-07
 time: 05:49:14
 tweet_id: "1247401025826250752"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @nocontextpawnee: https://t.co/Xd1Wj9c8yS
+RT @nocontextpawnee: <https://t.co/Xd1Wj9c8yS>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EU-DnMfUwEAtyh7.jpg)

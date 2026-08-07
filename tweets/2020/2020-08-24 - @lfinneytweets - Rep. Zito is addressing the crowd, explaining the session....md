@@ -1,4 +1,5 @@
 ---
+title: "Rep. Zito is addressing the crowd, explaining the session..."
 date: 2020-08-24
 time: 16:03:01
 tweet_id: "1297927401565876224"
@@ -14,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-Rep. Zito is addressing the crowd, explaining the session gallery rules. "No flags, no signs, no booing," she says. The crowd lets out a round of applause for the gallery being open. https://t.co/k65LCejAzR
+Rep. Zito is addressing the crowd, explaining the session gallery rules. "No flags, no signs, no booing," she says. The crowd lets out a round of applause for the gallery being open. <https://t.co/k65LCejAzR>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EgMqF6cU0AcO6ee.jpg)

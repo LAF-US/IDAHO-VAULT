@@ -104,6 +104,6 @@ work: a "seven" is a count/relationship, not a thing.)
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

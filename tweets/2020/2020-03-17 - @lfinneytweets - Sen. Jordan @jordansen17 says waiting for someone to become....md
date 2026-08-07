@@ -1,4 +1,5 @@
 ---
+title: "Sen. Jordan @jordansen17 says waiting for someone to become..."
 date: 2020-03-17
 time: 20:53:24
 tweet_id: "1240018419254087680"
@@ -21,7 +22,7 @@ related:
   - IdahoCovid19
 ---
 
-Sen. Jordan @jordansen17 says waiting for someone to become symptomatic isn’t the time to act. She’s out of here. #idleg #idpol #IdahoCovid19 https://t.co/suj7QdGwlB
+Sen. Jordan @jordansen17 says waiting for someone to become symptomatic isn’t the time to act. She’s out of here. #idleg #idpol #IdahoCovid19 <https://t.co/suj7QdGwlB>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/ETVuFjGUUAA-fdv.jpg)

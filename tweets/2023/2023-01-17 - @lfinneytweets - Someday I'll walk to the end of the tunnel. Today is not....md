@@ -1,4 +1,5 @@
 ---
+title: "Someday I'll walk to the end of the tunnel. Today is not..."
 date: 2023-01-17
 time: 21:24:43
 tweet_id: "1615460131210420224"
@@ -16,7 +17,7 @@ related:
   - idleg
 ---
 
-Someday I'll walk to the end of the tunnel. Today is not that day. #idleg https://t.co/cLsxsxB48q
+Someday I'll walk to the end of the tunnel. Today is not that day. #idleg <https://t.co/cLsxsxB48q>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FmtEa1KakAUiExE.jpg)

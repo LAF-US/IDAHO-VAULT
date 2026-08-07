@@ -1,4 +1,5 @@
 ---
+title: "The meeting notice did say that in-person attendance would..."
 date: 2020-07-16
 time: 15:50:06
 tweet_id: "1283791023601115136"
@@ -16,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-@DonLDay @davlinnews The meeting notice did say that in-person attendance would be limited to board and staff members. https://t.co/fcd3Gjzy1n
+@DonLDay @davlinnews The meeting notice did say that in-person attendance would be limited to board and staff members. <https://t.co/fcd3Gjzy1n>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EdDw7ukU4AA0KeF.png)

@@ -1,4 +1,5 @@
 ---
+title: "RT @lfinneytweets 1967 #MLKDay"
 date: 2025-01-20
 time: 20:53:01
 tweet_id: "1881444844448747981"
@@ -19,10 +20,10 @@ related:
 ---
 
 RT @lfinneytweets: 1967 #MLKDay 
-https://t.co/jMyQT8qaQj https://t.co/mCvE8QaZAi
+<https://t.co/jMyQT8qaQj> <https://t.co/mCvE8QaZAi>
 
 ## Links
-- https://www.truthorfiction.com/mlk-birmingham-news-cartoon/
+- <https://www.truthorfiction.com/mlk-birmingham-news-cartoon/>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FJVuUjUUYAMJa1m.jpg)

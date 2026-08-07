@@ -90,6 +90,6 @@ The Bene Gesserit occupy the same quadrant as eugenics, but with key differences
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

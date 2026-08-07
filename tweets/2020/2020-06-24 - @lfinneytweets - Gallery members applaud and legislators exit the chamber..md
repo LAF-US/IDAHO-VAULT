@@ -1,4 +1,5 @@
 ---
+title: "Gallery members applaud and legislators exit the chamber."
 date: 2020-06-24
 time: 04:50:46
 tweet_id: "1275652564382560256"
@@ -14,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-Gallery members applaud and legislators exit the chamber. https://t.co/TkhQ2VIT9n
+Gallery members applaud and legislators exit the chamber. <https://t.co/TkhQ2VIT9n>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EbQGLncXgAQ9eev.jpg)

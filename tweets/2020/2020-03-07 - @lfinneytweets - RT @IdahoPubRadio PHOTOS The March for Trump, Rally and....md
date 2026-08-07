@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio PHOTOS The March for Trump, Rally and..."
 date: 2020-03-07
 time: 20:07:47
 tweet_id: "1236383061606047744"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoPubRadio: PHOTOS: The March for Trump, Rally and Flag Wave, Idaho State Capitol, this morning. https://t.co/BoUVjuzTUk
+RT @IdahoPubRadio: PHOTOS: The March for Trump, Rally and Flag Wave, Idaho State Capitol, this morning. <https://t.co/BoUVjuzTUk>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EShbt4pUMAA6PrE.jpg)

@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports The Idaho Senate rejected a bill to create..."
 date: 2024-03-01
 time: 02:27:40
 tweet_id: "1763390618590654719"

@@ -1,4 +1,5 @@
 ---
+title: "At House Enviro, Energy & Tech for a presentation on..."
 date: 2020-02-04
 time: 21:25:45
 tweet_id: "1224806269669629952"
@@ -18,7 +19,7 @@ related:
   - idpol
 ---
 
-At House Enviro, Energy & Tech for a presentation on findings and recommendations from the governor's Broadband Taskforce. #idleg #idpol https://t.co/le2LqXK0Jc
+At House Enviro, Energy & Tech for a presentation on findings and recommendations from the governor's Broadband Taskforce. #idleg #idpol <https://t.co/le2LqXK0Jc>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EP9izxdU0AACjZI.jpg)

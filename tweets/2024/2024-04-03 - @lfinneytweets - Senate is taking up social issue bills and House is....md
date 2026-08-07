@@ -1,4 +1,5 @@
 ---
+title: "Senate is taking up social issue bills and House is..."
 date: 2024-04-03
 time: 00:04:52
 tweet_id: "1775313481782510036"
@@ -16,7 +17,7 @@ related:
   - idleg
 ---
 
-Senate is taking up social issue bills and House is reconvening at 7pm. They could actually do it tonight... #idleg https://t.co/CsqqVsuWzo
+Senate is taking up social issue bills and House is reconvening at 7pm. They could actually do it tonight... #idleg <https://t.co/CsqqVsuWzo>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/GKMuM0Xb0AAc6E9.jpg)

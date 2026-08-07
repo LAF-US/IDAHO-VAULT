@@ -1,4 +1,5 @@
 ---
+title: "RT @CBS2Boise Boise AP US Supreme Court rules Idaho group..."
 date: 2020-07-30
 time: 23:12:54
 tweet_id: "1288975887061250048"

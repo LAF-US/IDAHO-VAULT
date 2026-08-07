@@ -1,4 +1,5 @@
 ---
+title: "Scott's call defeated pretty solidly. She says she will..."
 date: 2020-02-28
 time: 17:55:31
 tweet_id: "1233450674026729473"
@@ -19,7 +20,7 @@ related:
   - idleg
 ---
 
-Scott's call defeated pretty solidly. She says she will move to assign the abortion bill to the State Affairs committee sometime later. #idpol #idleg https://t.co/tr6Ce7QIq4
+Scott's call defeated pretty solidly. She says she will move to assign the abortion bill to the State Affairs committee sometime later. #idpol #idleg <https://t.co/tr6Ce7QIq4>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/ER4Y2OAXsAAq7H0.jpg)

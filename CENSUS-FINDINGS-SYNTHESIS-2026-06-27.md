@@ -231,6 +231,6 @@ Logan's to set.
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

@@ -7,7 +7,7 @@ created: 2026-04-14
 ---
 | “ | *He who hesitates is lost.* | ” |
 | --- | --- | --- |
-| | — Widdershins' personal philosophy [^1] |
+| | — Widdershins' personal philosophy [^1] | |
 
 **Captain Widdershins** is the captain of the *[Queequeg](https://snicket.fandom.com/wiki/Queequeg "Queequeg")* and a [V.F.D.](https://snicket.fandom.com/wiki/V.F.D. "V.F.D.") Volunteer.
 
@@ -31,7 +31,7 @@ At some point, Widdershins was recruited into [VFD](https://snicket.fandom.com/w
 
 | “ | *That sounds like apprenticeship to me. None of us are certain of anything.* | ” |
 | --- | --- | --- |
-| | — Widdershins, *[When Did You See Her Last?](https://snicket.fandom.com/wiki/When_Did_You_See_Her_Last%3F "When Did You See Her Last?")* |
+| | — Widdershins, *[When Did You See Her Last?](https://snicket.fandom.com/wiki/When_Did_You_See_Her_Last%3F "When Did You See Her Last?")* | |
 
 ![Snicket climbs the statue.](https://static.wikia.nocookie.net/snicket/images/f/fc/LemonyClimbing.png/revision/latest/scale-to-width-down/271?cb=20200408044248)
 

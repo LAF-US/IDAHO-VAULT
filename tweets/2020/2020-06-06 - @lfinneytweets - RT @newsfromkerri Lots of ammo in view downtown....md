@@ -1,4 +1,5 @@
 ---
+title: "RT @newsfromkerri Lots of ammo in view downtown..."
 date: 2020-06-06
 time: 18:53:27
 tweet_id: "1269341651022999552"
@@ -18,7 +19,7 @@ related:
   - LewistonProtest
 ---
 
-RT @newsfromkerri: Lots of ammo in view downtown #LewistonProtest https://t.co/iYOWBkRQDF
+RT @newsfromkerri: Lots of ammo in view downtown #LewistonProtest <https://t.co/iYOWBkRQDF>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EZ2bDUdUMAAEqCl.jpg)

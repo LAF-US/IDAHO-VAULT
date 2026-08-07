@@ -1,4 +1,5 @@
 ---
+title: "RT @CynthiaSewell Idaho's @Raul_Labrador received $1,000...."
 date: 2018-03-13
 time: 23:09:57
 tweet_id: "973697703451361281"

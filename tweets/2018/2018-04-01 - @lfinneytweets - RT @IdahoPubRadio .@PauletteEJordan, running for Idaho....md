@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio .@PauletteEJordan, running for Idaho..."
 date: 2018-04-01
 time: 20:53:00
 tweet_id: "980548607412547584"
@@ -17,7 +18,7 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoPubRadio: .@PauletteEJordan, running for Idaho governor, opened a campaign office in @CityofMoscowId today. https://t.co/PFWQWH3LFa
+RT @IdahoPubRadio: .@PauletteEJordan, running for Idaho governor, opened a campaign office in @CityofMoscowId today. <https://t.co/PFWQWH3LFa>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/DZo-k_jVMAAzEaf.jpg)

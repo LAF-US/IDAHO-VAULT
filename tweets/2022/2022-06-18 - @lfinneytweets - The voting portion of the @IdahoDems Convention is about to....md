@@ -1,4 +1,5 @@
 ---
+title: "The voting portion of the @IdahoDems Convention is about to..."
 date: 2022-06-18
 time: 21:15:54
 tweet_id: "1538269296761004032"
@@ -20,7 +21,7 @@ related:
   - idpol
 ---
 
-The voting portion of the @IdahoDems Convention is about to get underway in Boise. #idleg #idpol https://t.co/aP0BB3HrVl
+The voting portion of the @IdahoDems Convention is about to get underway in Boise. #idleg #idpol <https://t.co/aP0BB3HrVl>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FVkHxKDUcAAtEfw.jpg)

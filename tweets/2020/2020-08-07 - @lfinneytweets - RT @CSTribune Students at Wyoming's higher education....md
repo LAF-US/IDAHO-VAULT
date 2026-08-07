@@ -1,4 +1,5 @@
 ---
+title: "RT @CSTribune Students at Wyoming's higher education..."
 date: 2020-08-07
 time: 22:54:14
 tweet_id: "1291870295326777345"

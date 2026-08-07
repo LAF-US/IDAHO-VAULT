@@ -1,4 +1,5 @@
 ---
+title: "RT @Hayley__Harding Photos from @IdahoStatesman's Darin..."
 date: 2020-12-09
 time: 00:40:25
 tweet_id: "1336470721321582593"
@@ -16,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-RT @Hayley__Harding: Photos from @IdahoStatesman's Darin Oswald of tonight's protest https://t.co/HuKszecXtz
+RT @Hayley__Harding: Photos from @IdahoStatesman's Darin Oswald of tonight's protest <https://t.co/HuKszecXtz>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EowYuaLUcAIM0xo.jpg)

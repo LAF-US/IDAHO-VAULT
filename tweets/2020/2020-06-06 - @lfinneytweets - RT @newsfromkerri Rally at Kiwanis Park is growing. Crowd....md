@@ -1,4 +1,5 @@
 ---
+title: "RT @newsfromkerri Rally at Kiwanis Park is growing. Crowd..."
 date: 2020-06-06
 time: 18:53:50
 tweet_id: "1269341748146274304"
@@ -18,7 +19,7 @@ related:
   - LewistonProtest
 ---
 
-RT @newsfromkerri: Rally at Kiwanis Park is growing. Crowd estimated at 700 by a community member. #LewistonProtest https://t.co/S177taEJkM
+RT @newsfromkerri: Rally at Kiwanis Park is growing. Crowd estimated at 700 by a community member. #LewistonProtest <https://t.co/S177taEJkM>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EZ2YKs1U8AIBI-d.jpg)

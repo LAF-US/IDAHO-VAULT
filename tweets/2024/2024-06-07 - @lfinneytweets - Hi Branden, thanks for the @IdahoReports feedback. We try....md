@@ -1,4 +1,5 @@
 ---
+title: "Hi Branden, thanks for the @IdahoReports feedback. We try..."
 date: 2024-06-07
 time: 17:48:42
 tweet_id: "1799136417366548836"
@@ -18,7 +19,7 @@ related:
   - lfinneytweets
 ---
 
-@brandendurst @McKayCunningh Hi Branden, thanks for the @IdahoReports feedback. We try to include a wide range of voices and perspectives in our program. https://t.co/2WvIN1SZXT
+@brandendurst @McKayCunningh Hi Branden, thanks for the @IdahoReports feedback. We try to include a wide range of voices and perspectives in our program. <https://t.co/2WvIN1SZXT>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GPfQyK2aIAA_zeK.jpg)

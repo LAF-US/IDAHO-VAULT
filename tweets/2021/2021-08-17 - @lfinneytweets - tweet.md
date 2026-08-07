@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2021-08-17
 time: 22:51:38
 tweet_id: "1427765090904731651"
@@ -16,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-@HDruzin https://t.co/DRziZVUSp5
+@HDruzin <https://t.co/DRziZVUSp5>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/E9BwpBzVcAEk5If.jpg)
