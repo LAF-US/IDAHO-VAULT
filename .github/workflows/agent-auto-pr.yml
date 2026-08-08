@@ -111,21 +111,21 @@ jobs:
 
           RESULT=$(echo "$CHANGED" | python3 trusted-main/.github/scripts/classify_paths.py)
           TIER=$(echo "$RESULT" | python3 -c "import sys,json; print(json.load(sys.stdin)['tier'])")
-          # tier4 is the 4-state verdict (clear|low|med|high) off the 3x3 matrix of label
+          # tier4 is the 5-state read (clear|low|med|high|nope) off the 3x3 matrix of label
           # pairs. The binary `tier` collapses the `—/—` pair down to `low`, so it is only
           # visible on tier4 — the producer needs it for the legacy sparse marker.
           TIER4=$(echo "$RESULT" | python3 -c "import sys,json; print(json.load(sys.stdin)['tier4'])")
           # The two independent analyses — the lane IS this label pair.
           FILETYPE=$(echo "$RESULT" | python3 -c "import sys,json; print(json.load(sys.stdin)['filetype'] or '—')")
-          DEPTH=$(echo "$RESULT" | python3 -c "import sys,json; print(json.load(sys.stdin)['depth'] or '—')")
+          FILEDEPTH=$(echo "$RESULT" | python3 -c "import sys,json; print(json.load(sys.stdin)['filedepth'] or '—')")
           echo "tier=$TIER" >> "$GITHUB_OUTPUT"
           echo "tier4=$TIER4" >> "$GITHUB_OUTPUT"
           echo "filetype=$FILETYPE" >> "$GITHUB_OUTPUT"
-          echo "depth=$DEPTH" >> "$GITHUB_OUTPUT"
+          echo "filedepth=$FILEDEPTH" >> "$GITHUB_OUTPUT"
 
           echo "### Changed files" >> "$GITHUB_STEP_SUMMARY"
           echo "$CHANGED" >> "$GITHUB_STEP_SUMMARY"
-          echo "### Lane: {filetype: $FILETYPE, filedepth: $DEPTH} (tier: $TIER, tier4: $TIER4)" >> "$GITHUB_STEP_SUMMARY"
+          echo "### Lane: {filetype: $FILETYPE, filedepth: $FILEDEPTH} (tier: $TIER, tier4: $TIER4)" >> "$GITHUB_STEP_SUMMARY"
 
       - name: Check for existing PR
         if: steps.gate.outputs.skip != 'true' && steps.classify.outputs.skip != 'true'
@@ -160,7 +160,7 @@ jobs:
           RISK_TIER: ${{ steps.classify.outputs.tier }}
           RISK_TIER4: ${{ steps.classify.outputs.tier4 }}
           RISK_FILETYPE: ${{ steps.classify.outputs.filetype }}
-          RISK_DEPTH: ${{ steps.classify.outputs.depth }}
+          RISK_FILEDEPTH: ${{ steps.classify.outputs.filedepth }}
           BRANCH_NAME: ${{ steps.gate.outputs.branch_name }}
         shell: bash
         run: |
@@ -177,21 +177,29 @@ jobs:
           AGENT=$(echo "$BRANCH_NAME" | sed 's|/.*||')
           DIFFSTAT=$(git diff --stat origin/main...HEAD)
 
-          # Flat 4-value risk schema: stamp the fired axes only. The filetype axis fires
-          # risk/low | risk/med; the filedepth axis fires risk/high | risk/nope. An axis
-          # whose classifier value is the em-dash (—) fires NOTHING (no label). `—/—`
-          # (no risk/* label at all) becomes eligible to arm once the grace window elapses;
-          # a fired flag routes the PR into its review lane and is removed when that review completes.
+          # Flat risk schema: stamp the fired axes, and stamp `risk/—` when neither fires.
+          # The filetype axis fires risk/low | risk/med; the filedepth axis fires
+          # risk/high | risk/nope. An axis whose classifier value is the em-dash (—) fires
+          # nothing of its own. The `—/—` cell carries `risk/—`, which becomes eligible to
+          # arm once the grace window elapses; a fired flag routes the PR into its review
+          # lane and is removed when that review completes.
           FT_LABEL=""
-          DP_LABEL=""
+          FD_LABEL=""
           case "$RISK_FILETYPE" in
             low) FT_LABEL="risk/low" ;;
             med) FT_LABEL="risk/med" ;;
           esac
-          case "$RISK_DEPTH" in
-            high) DP_LABEL="risk/high" ;;
-            nope) DP_LABEL="risk/nope" ;;
+          case "$RISK_FILEDEPTH" in
+            high) FD_LABEL="risk/high" ;;
+            nope) FD_LABEL="risk/nope" ;;
           esac
+          # Stamped at creation, not left for the first sync to backfill: a PR carrying no
+          # risk label at all reads as UNCLASSIFIED and holds, so the clear cell has to say
+          # clear out loud or it is indistinguishable from never having been looked at.
+          CLEAR_LABEL=""
+          if [ -z "$FT_LABEL" ] && [ -z "$FD_LABEL" ]; then
+            CLEAR_LABEL="risk/—"
+          fi
           # review/pending is the low-risk lane's review marker (tier4 == low).
           if [ "$RISK_TIER4" = "low" ]; then
             LABEL="review/pending"
@@ -233,8 +241,11 @@ jobs:
           if [ -n "$FT_LABEL" ]; then
             CREATE_ARGS+=(--label "$FT_LABEL")
           fi
-          if [ -n "$DP_LABEL" ]; then
-            CREATE_ARGS+=(--label "$DP_LABEL")
+          if [ -n "$FD_LABEL" ]; then
+            CREATE_ARGS+=(--label "$FD_LABEL")
+          fi
+          if [ -n "$CLEAR_LABEL" ]; then
+            CREATE_ARGS+=(--label "$CLEAR_LABEL")
           fi
           if [ -n "$LABEL" ]; then
             CREATE_ARGS+=(--label "$LABEL")
@@ -279,7 +290,7 @@ jobs:
           python3 trusted-main/.github/scripts/pr_lifecycle.py set-state --pr-number "$PR_NUM" --state staged
 
       - name: Log grace period start
-        # Only a true machine-doc low verdict (tier4 == 'low') carries review/pending. The
+        # Only a true machine-doc low read (tier4 == 'low') carries review/pending. The
         # binary tier collapses the clear pair to 'low' too, so gate on tier4 to avoid
         # claiming review/pending on a clear PR that carries no risk/* label at all.
         if: steps.gate.outputs.skip != 'true' && steps.classify.outputs.skip != 'true' && steps.check-pr.outputs.pr_exists != 'true' && steps.classify.outputs.tier4 == 'low'
@@ -295,4 +306,4 @@ jobs:
         shell: bash
         run: |
           echo "Lifecycle set to \`lifecycle/staged\`." >> "$GITHUB_STEP_SUMMARY"
-          echo "Clear pair (\`—/—\`): no risk/* label stamped; eligible for auto-merge once the grace window elapses." >> "$GITHUB_STEP_SUMMARY"
+          echo "Clear pair (\`—/—\`): \`risk/—\` stamped as classified-clear; eligible for auto-merge once the grace window elapses." >> "$GITHUB_STEP_SUMMARY"
