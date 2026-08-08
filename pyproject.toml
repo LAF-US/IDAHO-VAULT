@@ -5,9 +5,11 @@ description = "The world is quiet here．Esto Perpetua!"
 authors = [{ name = "Logan Finney" }, { name = "Unified Swarm" }]
 dependencies = [
     "beautifulsoup4",
+    "cryptography",
     "jupyter",
     "jupytext",
     "packaging",
+    "pandas",
     "pytest",
     "uv"
 ]
