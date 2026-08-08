@@ -125,6 +125,6 @@ The seer-position is granted by Logan only for the act of reading what is on dis
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

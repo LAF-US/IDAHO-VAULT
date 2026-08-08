@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports The bill now heads to the Governor's desk..."
 date: 2023-03-10
 time: 03:37:13
 tweet_id: "1634035652735168512"
@@ -20,9 +21,9 @@ related:
   - idpol
 ---
 
-RT @IdahoReports: The bill now heads to the Governor's desk for signature. #idleg #idpol https://t.co/N9djNVPCpj
+RT @IdahoReports: The bill now heads to the Governor's desk for signature. #idleg #idpol <https://t.co/N9djNVPCpj>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2023/03/09/senate-passes-bill-to-prohibit-the-use-of-student-ids-at-polls/
+- <https://blog.idahoreports.idahoptv.org/2023/03/09/senate-passes-bill-to-prohibit-the-use-of-student-ids-at-polls/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1634035652735168512)

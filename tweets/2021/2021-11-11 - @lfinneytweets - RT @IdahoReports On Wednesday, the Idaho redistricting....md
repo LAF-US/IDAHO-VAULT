@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports On Wednesday, the Idaho redistricting..."
 date: 2021-11-11
 time: 21:14:20
 tweet_id: "1458905960848637962"

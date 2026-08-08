@@ -1,4 +1,5 @@
 ---
+title: "RT @clarkcorbin Little's press release says Idaho narrowly..."
 date: 2020-06-11
 time: 16:04:20
 tweet_id: "1271111032597970945"

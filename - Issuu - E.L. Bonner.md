@@ -19,25 +19,25 @@ After a long journey through the Panama Canal, Edward arrived on the West Coast 
 
 When the gold rush to the Wild Horse mines in British Columbia began in 1863, Bonner and two others “purchased the right to build and operate a ferry on the Kootenai river from old Chief Abraham of the Kootenai tribe,” providing a service that prospectors had little choice but to accept. His ferry and the accompanying trading post were the first business enterprise of the settler era in what is now Boundary County. During the gold rush years, it was a “remunerative investment” for him. Although it’s his name that’s remembered, Bonner was just the moneyman for the venture, moving on within months and leaving John Walton to run the ferry.
 
-![](https://assets.isu.pub/document-structure/230518231939-439065e206d13f2d2716e15518e26b36/v1/158f86ee17ef44e93342e34c9fccdcc3.jpeg?width=720&quality=85%2C50)
+![alt text needed](https://assets.isu.pub/document-structure/230518231939-439065e206d13f2d2716e15518e26b36/v1/158f86ee17ef44e93342e34c9fccdcc3.jpeg?width=720&quality=85%2C50)
 
-![](https://assets.isu.pub/document-structure/230518231939-439065e206d13f2d2716e15518e26b36/v1/6564aedc60698435209341ec79ca576b.jpeg?width=720&quality=85%2C50)
+![alt text needed](https://assets.isu.pub/document-structure/230518231939-439065e206d13f2d2716e15518e26b36/v1/6564aedc60698435209341ec79ca576b.jpeg?width=720&quality=85%2C50)
 
-![](https://assets.isu.pub/document-structure/230518231939-439065e206d13f2d2716e15518e26b36/v1/8b71f590478300d12de37d59da65ae4a.jpeg?width=720&quality=85%2C50)
+![alt text needed](https://assets.isu.pub/document-structure/230518231939-439065e206d13f2d2716e15518e26b36/v1/8b71f590478300d12de37d59da65ae4a.jpeg?width=720&quality=85%2C50)
 
-![](https://assets.isu.pub/document-structure/230518231939-439065e206d13f2d2716e15518e26b36/v1/95d0a2ff3d755882e82896b3d39bfe2a.jpeg?width=720&quality=85%2C50)
+![alt text needed](https://assets.isu.pub/document-structure/230518231939-439065e206d13f2d2716e15518e26b36/v1/95d0a2ff3d755882e82896b3d39bfe2a.jpeg?width=720&quality=85%2C50)
 
-![](https://assets.isu.pub/document-structure/230518231939-439065e206d13f2d2716e15518e26b36/v1/6b97c9633edc2d73c6e8335b4891aeb5.jpeg?width=720&quality=85%2C50)
+![alt text needed](https://assets.isu.pub/document-structure/230518231939-439065e206d13f2d2716e15518e26b36/v1/6b97c9633edc2d73c6e8335b4891aeb5.jpeg?width=720&quality=85%2C50)
 
-![](https://assets.isu.pub/document-structure/230518231939-439065e206d13f2d2716e15518e26b36/v1/a9743a41e8358ad9e577722c64c827b9.jpeg?width=720&quality=85%2C50)
+![alt text needed](https://assets.isu.pub/document-structure/230518231939-439065e206d13f2d2716e15518e26b36/v1/a9743a41e8358ad9e577722c64c827b9.jpeg?width=720&quality=85%2C50)
 
-![](https://assets.isu.pub/document-structure/230518231939-439065e206d13f2d2716e15518e26b36/v1/efea9f78773d590d47e7e8a09fc0c9f3.jpeg?width=720&quality=85%2C50)
+![alt text needed](https://assets.isu.pub/document-structure/230518231939-439065e206d13f2d2716e15518e26b36/v1/efea9f78773d590d47e7e8a09fc0c9f3.jpeg?width=720&quality=85%2C50)
 
-![](https://assets.isu.pub/document-structure/230518231939-439065e206d13f2d2716e15518e26b36/v1/cd5d06ef0301a08fafa23f014b1421be.jpeg?width=720&quality=85%2C50)
+![alt text needed](https://assets.isu.pub/document-structure/230518231939-439065e206d13f2d2716e15518e26b36/v1/cd5d06ef0301a08fafa23f014b1421be.jpeg?width=720&quality=85%2C50)
 
 In 1866, at age 32, he had moved on to Missoula and set down firmer roots. His Missoula Mercantile Company did so well he could build a family mansion that would be worth around $3 million today. He was instrumental in advocating for railroad development throughout Montana and was regularly pressured to run for Governor, though he never did.
 
-![](https://assets.isu.pub/document-structure/230518231939-439065e206d13f2d2716e15518e26b36/v1/5f1352fbc27e10bcdc62218a8edb3473.jpeg?width=720&quality=85%2C50)
+![alt text needed](https://assets.isu.pub/document-structure/230518231939-439065e206d13f2d2716e15518e26b36/v1/5f1352fbc27e10bcdc62218a8edb3473.jpeg?width=720&quality=85%2C50)
 
 Edward L Bonner was remembered as a loyal friend, “gentle in his manner and habits of speech.” At his death, which occurred in 1902 while driving one of Missoula’s first automobiles around town, the local newspaper called him one of the best known men in the state.
 
@@ -47,10 +47,10 @@ The only mystery left is whether E.L. Bonner ever actually operated the “Bonne
 
 The Bonner County History Museum at 611 S. Ella Ave., Sandpoint, welcomes visitors Tuesday-Friday, 10 a.m. to 4 p.m. It’s also open the first Saturday each month from 10 a.m. to 2 p.m. with free admission. 208-263-2344, <www.bonnercountyhistory.org>
 
-![](https://assets.isu.pub/document-structure/230518231939-439065e206d13f2d2716e15518e26b36/v1/d54fcc295ad4eabec601ee3eef32f349.jpeg?width=720&quality=85%2C50)
+![alt text needed](https://assets.isu.pub/document-structure/230518231939-439065e206d13f2d2716e15518e26b36/v1/d54fcc295ad4eabec601ee3eef32f349.jpeg?width=720&quality=85%2C50)
 
-![](https://assets.isu.pub/document-structure/230518231939-439065e206d13f2d2716e15518e26b36/v1/b5ec0c321c6f5dd79e717b9897a70c8c.jpeg?width=720&quality=85%2C50)
+![alt text needed](https://assets.isu.pub/document-structure/230518231939-439065e206d13f2d2716e15518e26b36/v1/b5ec0c321c6f5dd79e717b9897a70c8c.jpeg?width=720&quality=85%2C50)
 
-![](https://assets.isu.pub/document-structure/230518231939-439065e206d13f2d2716e15518e26b36/v1/37d7bad84f91a005095e2823d324c95e.jpeg?width=720&quality=85%2C50)
+![alt text needed](https://assets.isu.pub/document-structure/230518231939-439065e206d13f2d2716e15518e26b36/v1/37d7bad84f91a005095e2823d324c95e.jpeg?width=720&quality=85%2C50)
 
-![](https://assets.isu.pub/document-structure/230518231939-439065e206d13f2d2716e15518e26b36/v1/bd82521c1e3c3e50dd5c5b3e5b487929.jpeg?width=720&quality=85%2C50)
+![alt text needed](https://assets.isu.pub/document-structure/230518231939-439065e206d13f2d2716e15518e26b36/v1/bd82521c1e3c3e50dd5c5b3e5b487929.jpeg?width=720&quality=85%2C50)

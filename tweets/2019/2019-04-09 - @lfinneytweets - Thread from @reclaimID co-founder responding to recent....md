@@ -1,4 +1,5 @@
 ---
+title: "Thread from @reclaimID co-founder responding to recent..."
 date: 2019-04-09
 time: 20:08:27
 tweet_id: "1115708072385601536"
@@ -16,9 +17,9 @@ related:
   - lfinneytweets
 ---
 
-Thread from @reclaimID co-founder responding to recent claims by @IdahoFreedom Foundation chair https://t.co/1vEsM0Kyz4
+Thread from @reclaimID co-founder responding to recent claims by @IdahoFreedom Foundation chair <https://t.co/1vEsM0Kyz4>
 
 ## Links
-- https://x.com/lukemayville/status/1115324938154647553
+- <https://x.com/lukemayville/status/1115324938154647553>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1115708072385601536)

@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPTV Have questions for @GovernorLittle and Idaho..."
 date: 2020-06-25
 time: 15:53:02
 tweet_id: "1276181619234099201"

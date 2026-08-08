@@ -1,4 +1,5 @@
 ---
+title: "RT @CongMikeSimpson \ud83d\udea8 My statement on voting to impeach..."
 date: 2024-02-14
 time: 01:08:47
 tweet_id: "1757572560336855249"
@@ -15,6 +16,6 @@ related:
   - lfinneytweets
 ---
 
-RT @CongMikeSimpson: 🚨 My statement on voting to impeach Department of Homeland Security Secretary Alejandro Mayorkas: https://t.co/g6fol1R…
+RT @CongMikeSimpson: 🚨 My statement on voting to impeach Department of Homeland Security Secretary Alejandro Mayorkas: <https://t.co/g6fol1R…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1757572560336855249)

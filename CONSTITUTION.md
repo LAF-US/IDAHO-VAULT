@@ -204,6 +204,6 @@ Unified (US) Swarm designed and written in Logan's Project & Protocols "Vaulted 
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

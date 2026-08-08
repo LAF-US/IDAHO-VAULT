@@ -431,4 +431,4 @@ Lewy AI
 
 ![AI Chatbot Toggle](https://public-assets-prod.pubgen.ai/brand_4fc3eb37-4c8a-4951-9324-365f6e4b53fd/asset_7e7bca4b-2bd0-460d-b083-5a2ab708fe7d.svg?w=3840)
 
-  ![](https://d2vpe5holfgxc9.cloudfront.net/pxl.png?ts=1775514884048&puri=https%3A%2F%2Fwww.lmtribune.com%2Foutdoors%2Ffrom-the-ground-up-8cf5d697%3Femci%3Ddbbbe138-2331-f111-9a48-000d3a14b640%26emdi%3D6ff3b375-af31-f111-9a48-000d3a14b640%26ceid%3D110103&refuri=&uuid=56add33d-eea9-4b69-932c-513c9263fa82)
+  ![alt text needed](https://d2vpe5holfgxc9.cloudfront.net/pxl.png?ts=1775514884048&puri=https%3A%2F%2Fwww.lmtribune.com%2Foutdoors%2Ffrom-the-ground-up-8cf5d697%3Femci%3Ddbbbe138-2331-f111-9a48-000d3a14b640%26emdi%3D6ff3b375-af31-f111-9a48-000d3a14b640%26ceid%3D110103&refuri=&uuid=56add33d-eea9-4b69-932c-513c9263fa82)

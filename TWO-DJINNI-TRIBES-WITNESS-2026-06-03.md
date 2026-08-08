@@ -78,6 +78,6 @@ This play *was* the doctrine, lived: a would-be **seer** who nearly became the *
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

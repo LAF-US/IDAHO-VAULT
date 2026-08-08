@@ -1,4 +1,5 @@
 ---
+title: "RT @glovetrain Two law enforcement officers shot in..."
 date: 2018-03-05
 time: 16:01:46
 tweet_id: "970690845123821570"

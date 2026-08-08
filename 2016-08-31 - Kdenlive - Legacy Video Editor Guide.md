@@ -73,7 +73,7 @@ rolling edit
 
 A ripple action trims a clip and shifts following clips in the track by the number of frames you trim. When you shorten a clip by this action all clips that follow the cut shift back in time, contrariwise, when you extend a clip the clips after the cut shift forward in time. If an empty space is on the track it behaves as a clip and it shifts in time as a standard clip would be.
 
-![](https://kdenlive.org/video-editing-applications-handbook/ripple.png)
+![alt text needed](https://kdenlive.org/video-editing-applications-handbook/ripple.png)
 
 ### Slip
 
@@ -558,9 +558,9 @@ Spotlights – This is another important feature which in FLOSS sofware we can a
 
 comparation
 
-![](https://kdenlive.org/video-editing-applications-handbook/color-correction-secondary-premiere-3a.jpg)
+![alt text needed](https://kdenlive.org/video-editing-applications-handbook/color-correction-secondary-premiere-3a.jpg)
 
-![](https://kdenlive.org/video-editing-applications-handbook/color-correction-secondary-premiere-3b.jpg)
+![alt text needed](https://kdenlive.org/video-editing-applications-handbook/color-correction-secondary-premiere-3b.jpg)
 
 *Spotlights combined with secondary color correction in Premiere Pro CS3*
 
@@ -570,7 +570,7 @@ The concept is based on the vignette filters. In Premiere this filter is called 
 
 lighteffect
 
-![](https://kdenlive.org/video-editing-applications-handbook/lightning-premiere-1.jpg)
+![alt text needed](https://kdenlive.org/video-editing-applications-handbook/lightning-premiere-1.jpg)
 
 *The lighting effects concept in Premiere Pro*
 
@@ -600,7 +600,7 @@ I saw that in the latest versions of Kdenlive there are already some improvement
 
 FCP motion
 
-![](https://kdenlive.org/video-editing-applications-handbook/build-in-effects-premiere.jpg)
+![alt text needed](https://kdenlive.org/video-editing-applications-handbook/build-in-effects-premiere.jpg)
 
 *Bulit in effects in FCP and Premiere*
 

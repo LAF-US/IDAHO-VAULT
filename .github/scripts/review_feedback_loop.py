@@ -643,6 +643,12 @@ def attest_and_resolve(
     # post on the recovery path (the attestation is already present from a prior run).
     if not already_looked:
         _add_thread_reply(thread_id, body)
+    # GitHub now says this thread is resolved; say so in the caller's copy too. The
+    # callers below used to re-run `_fetch_pr` after a resolve pass purely to observe
+    # this one boolean flip — a second full graph fetch to learn something already
+    # known here. `evaluate_review_state` reads `isResolved` first and skips the
+    # thread, so the in-memory view and a re-fetched one agree.
+    thread["isResolved"] = True
     result["applied"] = True
     result["reason"] = (
         "existing attested look; thread resolved"
@@ -1245,8 +1251,6 @@ def _build_reconciliation_report(
         outdated_results = _resolve_outdated_resolvable_threads(pr, looker, apply=True)
         resolved_count = sum(1 for r in outdated_results if r.get("applied"))
         total_resolved_outdated_threads += resolved_count
-        if resolved_count:
-            pr = _fetch_pr(owner, repo, pr_number)
 
         try:
             state = evaluate_review_state(
@@ -1391,8 +1395,17 @@ def acknowledge_apply(args: argparse.Namespace) -> int:
         )
         return 0
 
-    pr = _fetch_pr(args.owner, args.repo, args.pr_number)
-    labels = {node["name"] for node in (pr.get("labels") or {}).get("nodes") or []}
+    # Label names are the only thing this path reads. `_fetch_pr` would answer that
+    # with `reviewThreads(first:100){comments(first:100)}` — up to 10k nodes, which
+    # GitHub's GraphQL limiter bills by node count, for a list `gh pr view` returns
+    # for one REST point.
+    pr = json.loads(
+        gh_cli.pr_view(
+            args.pr_number, owner=args.owner, repo=args.repo, json_fields="labels"
+        ).stdout
+        or "{}"
+    )
+    labels = {node["name"] for node in pr.get("labels") or [] if node.get("name")}
 
     if DEFAULT_PENDING_LABEL not in labels:
         _edit_label(args.pr_number, add=DEFAULT_PENDING_LABEL)
@@ -1433,8 +1446,6 @@ def sync_pr(args: argparse.Namespace) -> int:
         pr, getattr(args, "looker", None), apply=True
     )
     resolved_count = sum(1 for r in outdated_results if r.get("applied"))
-    if resolved_count:
-        pr = _fetch_pr(args.owner, args.repo, args.pr_number)
 
     state = evaluate_review_state(
         pr,

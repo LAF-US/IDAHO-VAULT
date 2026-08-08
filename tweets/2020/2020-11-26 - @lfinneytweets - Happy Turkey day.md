@@ -1,4 +1,5 @@
 ---
+title: "Happy Turkey day"
 date: 2020-11-26
 time: 14:18:21
 tweet_id: "1331965522032742403"
@@ -14,9 +15,9 @@ related:
 ---
 
 Happy Turkey day 
-https://t.co/fhbnilLOnO
+<https://t.co/fhbnilLOnO>
 
 ## Links
-- https://youtu.be/pbfXZ1a86jw
+- <https://youtu.be/pbfXZ1a86jw>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1331965522032742403)

@@ -1,4 +1,5 @@
 ---
+title: "There is a large shield around the Clerk's desk too."
 date: 2020-08-24
 time: 16:11:27
 tweet_id: "1297929525309841409"

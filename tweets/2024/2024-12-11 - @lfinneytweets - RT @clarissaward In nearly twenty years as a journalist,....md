@@ -1,4 +1,5 @@
 ---
+title: "RT @clarissaward In nearly twenty years as a journalist,..."
 date: 2024-12-11
 time: 23:43:26
 tweet_id: "1866992217631625402"
@@ -17,6 +18,6 @@ related:
 
 RT @clarissaward: In nearly twenty years as a journalist, this was one of the most extraordinary moments I have witnessed. 
 
-https://t.co/r…
+<https://t.co/r…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1866992217631625402)

@@ -88,6 +88,6 @@ It **does not revise** `LICH-PROBLEM-v1` or any ASOIAF research node; both stand
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

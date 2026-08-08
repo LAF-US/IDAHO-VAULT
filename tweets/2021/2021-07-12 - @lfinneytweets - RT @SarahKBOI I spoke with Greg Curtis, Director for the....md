@@ -1,4 +1,5 @@
 ---
+title: "RT @SarahKBOI I spoke with Greg Curtis, Director for the..."
 date: 2021-07-12
 time: 00:01:05
 tweet_id: "1414374214950277120"

@@ -1,4 +1,5 @@
 ---
+title: "Unironically one of the cooler towns in the state"
 date: 2024-06-04
 time: 18:43:41
 tweet_id: "1798063088773812468"

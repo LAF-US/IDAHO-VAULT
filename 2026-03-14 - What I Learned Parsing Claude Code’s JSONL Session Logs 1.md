@@ -24,11 +24,11 @@ There’s no spec for Claude Code’s JSONL format. Every field was discovered b
 
 The \`message.content\` field is a polymorphic array — each element can be \`text\`, \`thinking\`, \`tool\_use\`, or \`tool\_result\`, each with a different shape. You don’t know what you’re getting until you inspect the \`type\` field of each block.
 
-**Lesson:** When working with an undocumented format, build your parser defensively. Every field is optional, every shape is a maybe. I used Rust’s \`Option<T>\` everywhere and it saved me repeatedly.
+**Lesson:** When working with an undocumented format, build your parser defensively. Every field is optional, every shape is a maybe. I used Rust’s `Option<T>` everywhere and it saved me repeatedly.
 
 ## 1st Challenge — Streaming vs. Complete Entries
 
-![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*MQTF8LZzb5th87k3ngJJpg.png)
+![alt text needed](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*MQTF8LZzb5th87k3ngJJpg.png)
 
 Claude Code writes JSONL lines **as it streams** its response. This means you’ll see partial entries without a \`stop\_reason\`, with understated token counts, appearing as multiple lines that logically represent one AI response.
 
@@ -54,7 +54,7 @@ This worked for simple sessions but missed a critical case: **background Bash co
 
 ## 3rd Challenge — The Orphan Agent Lifecycle
 
-![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*hGL7TnjZQ45D8H9MozCHog.png)
+![alt text needed](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*hGL7TnjZQ45D8H9MozCHog.png)
 
 This one is my favourite because it captures a pattern I haven’t seen written about much: **entities that are born parentless and adopted mid-flight**.
 
@@ -186,6 +186,6 @@ My parser initially showed these as empty tool results. The fix was detecting th
 
 5\. **Most JSONL entry types are noise** — start by filtering aggressively, then add back what users actually need to see
 
-![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*v08hVPr7dUmjPz7I28r3_w.png)
+![alt text needed](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*v08hVPr7dUmjPz7I28r3_w.png)
 
 The format will likely keep evolving as Claude Code adds features. The parser is stable today, but I expect more edge cases as new tool types, agent patterns, and session structures emerge. The architecture — entry parsing → classification → chunk building → status analysis → display conversion — has held up well through all of these challenges, and that pipeline design is probably the most important lesson of all.

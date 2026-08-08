@@ -1,4 +1,5 @@
 ---
+title: "RT @ChristinaLords Menges said before the lawsuits he saw..."
 date: 2021-05-12
 time: 16:14:49
 tweet_id: "1392513602863570944"

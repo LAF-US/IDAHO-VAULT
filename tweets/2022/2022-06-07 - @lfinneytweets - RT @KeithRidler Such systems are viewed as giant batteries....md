@@ -1,4 +1,5 @@
 ---
+title: "RT @KeithRidler Such systems are viewed as giant batteries..."
 date: 2022-06-07
 time: 18:08:13
 tweet_id: "1534235796844077056"

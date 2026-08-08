@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Friday, April 17 #IdahoCOVID19 Update..."
 date: 2020-04-18
 time: 00:45:28
 tweet_id: "1251310846275248129"

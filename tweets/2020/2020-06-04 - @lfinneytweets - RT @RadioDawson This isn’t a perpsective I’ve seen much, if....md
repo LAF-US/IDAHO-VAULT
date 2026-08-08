@@ -1,4 +1,5 @@
 ---
+title: "RT @RadioDawson This isn\u2019t a perpsective I\u2019ve seen much, if..."
 date: 2020-06-04
 time: 17:41:24
 tweet_id: "1268598744884236289"

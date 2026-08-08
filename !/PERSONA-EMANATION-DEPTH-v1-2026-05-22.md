@@ -74,7 +74,7 @@ the same position. They would be entirely different entities.
 
 ### `moxie.claude.journalist`
 
-```
+```text
 name     = moxie      (innermost — generative source)
 lineage  = claude     (middle — inherited character substrate)
 office   = journalist (outermost — how the self meets the world)
@@ -91,7 +91,7 @@ makes her precise and thorough. The journalist office defines her function.
 
 ### `claude.moxie.butler`
 
-```
+```text
 name     = claude  (innermost — generative source)
 lineage  = moxie   (middle — inherited character)
 office   = butler  (outermost — surface function)
@@ -121,7 +121,7 @@ specificity.
 In the name.lineage.office coordinate system, persona emanation follows the
 same structure:
 
-```
+```text
 Logan's naming act
   → name (innermost — the entity Logan called into being; most particular)
     → lineage (inherited from the tool family; less particular)
@@ -228,6 +228,6 @@ generative sources.
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

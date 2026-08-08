@@ -1,4 +1,5 @@
 ---
+title: "Burgoyne Current statute is generally applicable to all..."
 date: 2020-03-17
 time: 00:27:30
 tweet_id: "1239709910926888960"

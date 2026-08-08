@@ -1,4 +1,5 @@
 ---
+title: "RT @RadioDawson The House just rejected AG..."
 date: 2020-03-11
 time: 17:24:53
 tweet_id: "1237791618670850054"
@@ -21,9 +22,9 @@ related:
   - idleg
 ---
 
-RT @RadioDawson: The House just rejected AG @lawrencewasden’s budget with no debate #idpol #idleg https://t.co/TnQFY5h7jS
+RT @RadioDawson: The House just rejected AG @lawrencewasden’s budget with no debate #idpol #idleg <https://t.co/TnQFY5h7jS>
 
 ## Media
-- ![](https://pbs.twimg.com/media/ES2EauZU0AE2uNZ.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/ES2EauZU0AE2uNZ.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1237791618670850054)

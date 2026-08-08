@@ -22,6 +22,6 @@ Amended homeowner's exemption bill carries in the House. Now back to the Senate 
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/ETQGalcXkAAgwF5.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/ETQGalcXkAAgwF5.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1239622859414073344)

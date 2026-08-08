@@ -92,6 +92,6 @@ in custody and **nowhere else** on the grid.
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```
