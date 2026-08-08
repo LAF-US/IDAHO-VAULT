@@ -1,4 +1,5 @@
 ---
+title: "Best newsletter in the biz. Y'all do good work. \ud83d\udc99"
 date: 2024-04-12
 time: 23:04:19
 tweet_id: "1778922121282126246"

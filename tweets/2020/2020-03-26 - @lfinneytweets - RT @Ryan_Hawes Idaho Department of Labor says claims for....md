@@ -1,4 +1,5 @@
 ---
+title: "RT @Ryan_Hawes Idaho Department of Labor says claims for..."
 date: 2020-03-26
 time: 20:39:08
 tweet_id: "1243276319808311298"

@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports One death was reported today in Nez Perce..."
 date: 2020-09-11
 time: 00:16:35
 tweet_id: "1304212203571015680"

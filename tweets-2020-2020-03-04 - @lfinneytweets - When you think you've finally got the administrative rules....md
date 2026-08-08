@@ -21,11 +21,12 @@ related:
   - idpol
 ---
 
-@NateBrownNews When you think you've finally got the administrative rules situation under control #idleg #idpol 
-https://t.co/t7jBj1EPqJ
+@NateBrownNews When you think you've finally got the administrative rules situation under control #idleg #idpol
+<https://t.co/t7jBj1EPqJ>
 
 ## Links
-- https://x.com/yuqheis/status/1234216618613526530
+
+- <https://x.com/yuqheis/status/1234216618613526530>
 
 *In reply to [@NateBrownNews](https://twitter.com/NateBrownNews)*
 

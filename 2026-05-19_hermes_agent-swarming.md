@@ -33,6 +33,7 @@
 ### What is Agentic Swarming?
 
 **Agentic Swarming** is a **multi-agent AI system architecture** where:
+
 - Multiple **autonomous, specialized agents** collaborate toward shared objectives
 - **No centralized controller** dictates behavior (decentralized coordination)
 - **Emergent intelligence** arises from local interactions and simple rules
@@ -41,7 +42,7 @@
 ### Agent vs. Traditional AI
 
 | Aspect | Traditional AI | Agentic AI | Agentic Swarm |
-|--------|---------------|------------|----------------|
+| -------- | --------------- | ------------ | ---------------- |
 | **Control Flow** | Linear (query → response) | Cyclical (plan → act → observe → adapt) | Parallel + Decentralized |
 | **Autonomy** | None (stateless) | Partial (maintains context) | Full (self-directing) |
 | **Specialization** | General-purpose | Task-specific | Role-specialized |
@@ -69,10 +70,10 @@
 
 ### Components of a Swarm Agent
 
-```
-┌─────────────────────────────────┐
+```text
+┌────────────────────────────────Ŀ
 │           SWARM AGENT             │
-├─────────────────────────────────┤
+├────────────────────────────────Ĵ
 │  📡 Sensor:                       │
 │     - Perceives environment      │
 │     - Text, images, data inputs  │
@@ -100,19 +101,23 @@
 Based on research from Milvus and swarm intelligence literature:
 
 #### 1. Stigmergy (Indirect Communication)
+
 **Definition:** Agents communicate by modifying a shared environment, not through direct messaging.
 
 **Mechanism:**
+
 - Agents leave "digital pheromones" or signals in a shared space
 - Other agents sense and react to these environmental changes
 - No direct agent-to-agent communication required
 
 **Examples:**
+
 - Ant pheromone trails guiding others to food sources
 - Digital markers in optimization algorithms (e.g., graphs, blackboards)
 - The **SBP (Stigmergic Blackboard Protocol)** formalizes this approach
 
 **Advantages:**
+
 - ✅ Extremely scalable (no point-to-point messaging overhead)
 - ✅ Robust (no single point of failure)
 - ✅ Decoupled (agents don't need to know about each other)
@@ -120,40 +125,49 @@ Based on research from Milvus and swarm intelligence literature:
 **Implementation:** SBP protocol with signal intensity and decay curves
 
 #### 2. Direct Communication
+
 **Definition:** Agents explicitly share information with each other.
 
 **Mechanism:**
+
 - Message passing between known agents
 - Can be peer-to-peer or through a message broker
 - Requires discovery mechanism (registry, directory)
 
 **Examples:**
+
 - **ACP (Agent Communication Protocol)** - REST-based agent messaging
 - **A2A (Agent-to-Agent Protocol)** - Peer-to-peer task delegation
 - Chat-based group collaborations
 
 **Advantages:**
+
 - ✅ Precise coordination for complex tasks
 - ✅ Explicit intent and negotiation
 - ✅ Faster for known agent collaborations
 
 **Disadvantages:**
+
 - ⚠️ Scales poorly with agent count (O(n²) complexity)
 - ⚠️ Creates coupling between agents
 
 #### 3. Environmental Sensing
+
 **Definition:** Agents react to shared conditions in their environment.
 
 **Mechanism:**
+
 - Agents perceive and respond to global state
 - Shared conditions influence behavior
 
 **Examples:**
+
 - Robots adjusting to shared physical environment
 - Agents responding to system-wide metrics (load, temperature, etc.)
 - Particle Swarm Optimization (PSO) algorithms
 
 **Advantages:**
+
 - ✅ Simple and natural for embodied agents
 - ✅ Enables collective adaptation
 
@@ -162,9 +176,11 @@ Based on research from Milvus and swarm intelligence literature:
 ## Swarm Architecture Patterns
 
 ### 1. Decentralized Blackboard Architecture
+
 **Concept:** Agents read from and write to a shared blackboard. Coordination emerges from shared state.
 
 **Characteristics:**
+
 - No central orchestrator
 - Agents have sensing and actuation capabilities
 - Blackboard contains: tasks, partial solutions, signals, metadata
@@ -172,16 +188,19 @@ Based on research from Milvus and swarm intelligence literature:
 **Protocol:** SBP (Stigmergic Blackboard Protocol)
 
 **Best For:**
+
 - Non-linear workflows
 - Dynamic task pickup
 - Fault-tolerant systems
 - Scalable coordination
 
 ### 2. Hierarchical Swarm
+
 **Concept:** Agents organized in layers, with higher-level agents coordinating lower-level ones.
 
 **Structure:**
-```
+
+```text
           Master Agent
          /    |    \
    Coordinator  Coordinator  Coordinator
@@ -190,14 +209,17 @@ Worker Worker Worker Worker Worker Worker
 ```
 
 **Best For:**
+
 - Enterprise task delegation
 - Specialized agent teams
 - Complex workflows requiring oversight
 
 ### 3. Role-Based Teams
+
 **Concept:** Specialized agents with defined roles collaborate on tasks.
 
 **Example Roles:**
+
 - **Researcher:** Gathers information
 - **Architect:** Designs systems
 - **Coder:** Implements solutions
@@ -207,21 +229,26 @@ Worker Worker Worker Worker Worker Worker
 **Frameworks:** CrewAI, Strands Agents SDK
 
 ### 4. Mesh/Widget Topology
+
 **Concept:** Fully connected agents that can communicate with any other agent.
 
 **Characteristics:**
+
 - Every agent can potentially interact with every other
 - High flexibility
 - Complex coordination patterns
 
 **Best For:**
+
 - Emergent behavior discovery
 - Research and experimentation
 
 ### 5. Parallel Worker Pools
+
 **Concept:** Multiple agents work on independent tasks simultaneously.
 
 **Characteristics:**
+
 - Task queue or work-stealing model
 - Agents pull tasks autonomously
 - Minimal coordination overhead
@@ -235,7 +262,7 @@ Worker Worker Worker Worker Worker Worker
 ### Production-Grade Frameworks
 
 | Framework | Creator | Primary Use Case | Key Features | Status |
-|-----------|---------|------------------|--------------|--------|
+| ----------- | --------- | ------------------ | -------------- | -------- |
 | **AutoGen** | Microsoft | Multi-agent conversation | Layered API, Code execution, Web browsing | ✅ Production |
 | **CrewAI** | - | Role-based agent teams | Process management, Shared insights | ✅ Production |
 | **LangGraph** | LangChain | Stateful agent graphs | Cyclical graphs, Persistent state, Human-in-the-loop | ✅ Production |
@@ -248,7 +275,7 @@ Worker Worker Worker Worker Worker Worker
 ### Framework Comparison
 
 | Criteria | CrewAI | LangGraph | AutoGen | Swarm (OpenAI) |
-|----------|--------|-----------|---------|----------------|
+| ---------- | -------- | ----------- | --------- | ---------------- |
 | **Task Complexity** | ⭐⭐⭐⭐⭐ High | ⭐⭐⭐⭐⭐ High | ⭐⭐⭐⭐ Medium-High | ⭐⭐ Medium |
 | **Customizability** | ⭐⭐⭐⭐ Role-based | ⭐⭐⭐⭐⭐ Low-level | ⭐⭐⭐⭐ Layered APIs | ⭐⭐ Basic |
 | **Scalability** | ⭐⭐⭐⭐⭐ Production | ⭐⭐⭐⭐⭐ Cloud/Self-host | ⭐⭐⭐⭐ Scalable | ❌ Limited |
@@ -260,7 +287,7 @@ Worker Worker Worker Worker Worker Worker
 ### Selection Guidance
 
 | Use Case | Recommended Framework | Rationale |
-|----------|----------------------|-----------|
+| ---------- | ---------------------- | ----------- |
 | Production-grade, role-specific agents | **CrewAI** | Structured workflows, role-based agents |
 | Stateful, fine-grained control | **LangGraph** | Cyclical graphs, persistent state |
 | Versatile, scalable systems | **AutoGen** | Layered APIs, Microsoft-backed |
@@ -279,6 +306,7 @@ Worker Worker Worker Worker Worker Worker
 **Key Contribution:** Replacing hard-coded agent logic with LLM-driven prompts in traditional agent-based modeling (ABM) systems.
 
 #### Experiment 1: Ant Colony Foraging
+
 - **Setup:** 10 ants, 3 food patches, 1000 steps
 - **Comparison:** Pure rule-based vs. LLM-driven vs. Hybrid
 - **Results:**
@@ -289,6 +317,7 @@ Worker Worker Worker Worker Worker Worker
 - **Insight:** LLM ants were more consistent (lower std dev) but slower in exploration
 
 #### Experiment 2: Bird Flocking (Boids Model)
+
 - **Setup:** 30 birds (25 rule-based + 5 LLM-driven)
 - **Principles:** Separation, Alignment, Cohesion
 - **Results:**
@@ -306,18 +335,20 @@ Worker Worker Worker Worker Worker Worker
 **Key Principles from Nature (Applicable to AI):**
 
 | Principle | In Nature | In AI Agents |
-|-----------|-----------|---------------|
+| ----------- | ----------- | --------------- |
 | **Decentralized** | No single ant leads | Agents operate independently |
 | **Local Interactions** | Pheromones (nearby ants) | Defined protocols (peer communication) |
 | **Emergence** | Complex behaviors from simple rules | Sophisticated capabilities from basic interactions |
 | **Robustness** | Swarm survives individual failures | Fault-tolerant agent networks |
 
 **What Transfers Directly:**
+
 - Scalable communication protocols
 - Role specialization
 - Fault tolerance
 
 **What Needs Adaptation:**
+
 - Centralized → Decentralized decision-making
 - Physical → Computational constraints
 - Simple reactive rules → Complex reasoning (LLMs)
@@ -351,17 +382,20 @@ Worker Worker Worker Worker Worker Worker
 ### Coordination Strategies
 
 #### For Small Swarms (< 20 agents)
+
 - **Direct messaging** (ACP/A2A) works well
 - Simple registry for discovery
 - Centralized orchestrator acceptable
 
 #### For Medium Swarms (20-100 agents)
+
 - **Hybrid approach** recommended
 - Role-based teams with specialized functions
 - Decentralized within teams, coordinated between teams
 - Blackboard for shared state
 
 #### For Large Swarms (> 100 agents)
+
 - **Stigmergic coordination** (SBP) essential
 - Purely decentralized approaches needed
 - Hierarchical structures for efficiency
@@ -370,21 +404,25 @@ Worker Worker Worker Worker Worker Worker
 ### Performance Optimization
 
 #### 1. Task Decomposition
+
 - Divide complex tasks into subtasks
 - Match subtasks to specialized agents
 - Parallel execution where possible
 
 #### 2. Load Balancing
+
 - Work-stealing model for idle agents
 - Priority-based task assignment
 - Dynamic workload redistribution
 
 #### 3. Communication Minimization
+
 - Use stigmergy where possible
 - Batch messages to reduce overhead
 - Cache frequently accessed information
 
 #### 4. Memory Management
+
 - Context window optimization
 - Summary compressions for long histories
 - Selective forgetting of irrelevant information
@@ -397,33 +435,33 @@ Worker Worker Worker Worker Worker Worker
 
 Based on your existing AGENTS.md structure and the protocol research, here's a tailored recommendation:
 
-```
+```text
 IDAHO-VAULT Swarm Architecture
-├─────────────────────────────────────┐
+├────────────────────────────────────Ŀ
 │           COORDINATION LAYER          │
-│  ┌─────────────┐  ┌─────────────┐    │
+│  ┌────────────Ŀ  ┌────────────Ŀ    │
 │  │   ACP       │  │    SBP      │    │
 │  │ (Direct)    │  │ (Stigmergic)│    │
 │  └─────────────┘  └─────────────┘    │
 │           ↑       ↑           ↑        │
 └───────────────────┼───────────────┘        │
                     │                              │
-┌───────────────────▼───────────────┐        │
+┌───────────────────▼──────────────Ŀ        │
 │         AGENT POOL                 │        │
-│  ┌─────────┐ ┌─────────┐ ┌─────────┐  │        │
+│  ┌────────Ŀ ┌────────Ŀ ┌────────Ŀ  │        │
 │  │ Research│ │Architect│ │  Coder  │  │        │
 │  └─────────┘ └─────────┘ └─────────┘  │        │
-│  ┌─────────┐ ┌─────────┐ ┌─────────┐  │        │
+│  ┌────────Ŀ ┌────────Ŀ ┌────────Ŀ  │        │
 │  │ Tester  │ │Document │ │ Analyst │  │        │
 │  └─────────┘ └─────────┘ └─────────┘  │        │
 └───────────────────┬───────────────┘        │
                     │                              │
-┌───────────────────▼───────────────┐        │
+┌───────────────────▼──────────────Ŀ        │
 │        TOOL INTEGRATION            │        │
-│  ┌─────────┐ ┌─────────┐ ┌─────────┐  │        │
+│  ┌────────Ŀ ┌────────Ŀ ┌────────Ŀ  │        │
 │  │  MCP    │ │  GitHub │ │ Terminal│  │        │
 │  └─────────┘ └─────────┘ └─────────┘  │        │
-│  ┌─────────┐ ┌─────────┐              │        │
+│  ┌────────Ŀ ┌────────Ŀ              │        │
 │  │ WhatsApp│ │Telegram │              │        │
 │  └─────────┘ └─────────┘              │        │
 └─────────────────────────────────────┘
@@ -432,6 +470,7 @@ IDAHO-VAULT Swarm Architecture
 ### Phase 1: Foundation (Immediate)
 
 **Components:**
+
 1. **ACP for Direct Communication**
    - Enable agent-to-agent messaging
    - Use for explicit task handoffs
@@ -453,6 +492,7 @@ IDAHO-VAULT Swarm Architecture
 ### Phase 2: Swarm Intelligence (Next)
 
 **Components:**
+
 1. **SBP Blackboard**
    - Implement shared blackboard for stigmergic coordination
    - Add signal intensity and decay mechanisms
@@ -474,6 +514,7 @@ IDAHO-VAULT Swarm Architecture
 ### Phase 3: Advanced Capabilities (Future)
 
 **Components:**
+
 1. **Evolutionary Mechanisms**
    - Agent performance tracking
    - Dynamic role reassignment
@@ -494,7 +535,7 @@ IDAHO-VAULT Swarm Architecture
 ### Protocol Integration Strategy
 
 | Protocol | Use Case | Priority | Notes |
-|----------|----------|----------|-------|
+| ---------- | ---------- | ---------- | ------- |
 | **ACP** | Direct agent communication | Phase 1 | REST-based, production-ready |
 | **MCP** | Tool integration | Phase 1 | Standardized, widely adopted |
 | **SBP** | Decentralized coordination | Phase 2 | Complements ACP perfectly |
@@ -503,7 +544,7 @@ IDAHO-VAULT Swarm Architecture
 
 ### Implementation Roadmap
 
-```
+```text
 Phase 1 (Weeks 1-2): Foundation
 ├── Set up ACP infrastructure
 ├── Integrate MCP tools
@@ -534,6 +575,7 @@ Phase 4 (Ongoing): Optimization
 ## Success Metrics
 
 ### Technical Metrics
+
 - **Task Completion Rate:** % of tasks completed successfully
 - **Task Completion Time:** Average time to complete tasks
 - **Resource Utilization:** CPU, memory, token usage efficiency
@@ -541,12 +583,14 @@ Phase 4 (Ongoing): Optimization
 - **Fault Tolerance:** Recovery time from agent failures
 
 ### Quality Metrics
+
 - **Output Quality:** Human evaluation of agent outputs
 - **Consistency:** Variability in results across similar tasks
 - **Adaptability:** Performance on novel, unseen tasks
 - **Collaboration Effectiveness:** Improvement from multi-agent vs. single-agent
 
 ### Business Metrics
+
 - **Time to Value:** Time from task submission to useful output
 - **Cost Effectiveness:** Value delivered per unit cost
 - **Scalability:** Performance as system scales
@@ -557,45 +601,55 @@ Phase 4 (Ongoing): Optimization
 ## Challenges and Mitigations
 
 ### Challenge 1: Coordination Overhead
+
 **Symptoms:** Agents spend more time communicating than working
 
 **Mitigations:**
+
 - Use stigmergy (SBP) instead of direct messaging where possible
 - Implement message batching
 - Use local interactions (agents communicate with nearby/related agents)
 - Cache frequently accessed information
 
 ### Challenge 2: Context Fragmentation
+
 **Symptoms:** Agents lack necessary context to make decisions
 
 **Mitigations:**
+
 - Shared blackboard with relevant information
 - Context propagation in task handoffs
 - Summary mechanisms for long conversations
 - Selective context sharing based on relevance
 
 ### Challenge 3: Agent Specialization vs. Flexibility
+
 **Symptoms:** Agents are either too specialized (can't adapt) or too general (ineffective)
 
 **Mitigations:**
+
 - Hybrid specialization (agents have primary role + secondary capabilities)
 - Dynamic role adaptation based on need
 - General-purpose agents for novel tasks
 - Specialized agents for known, recurring tasks
 
 ### Challenge 4: Performance Variability
+
 **Symptoms:** Inconsistent performance across tasks
 
 **Mitigations:**
+
 - Performance tracking and metrics
 - Agent selection based on past performance
 - Fallback mechanisms to alternative agents
 - Continuous improvement through feedback
 
 ### Challenge 5: System Complexity
+
 **Symptoms:** Difficulty understanding and debugging the swarm
 
 **Mitigations:**
+
 - Comprehensive logging and tracing
 - Visualization tools for swarm state
 - Gradual deployment (start small, expand)
@@ -606,34 +660,40 @@ Phase 4 (Ongoing): Optimization
 ## Best Practices
 
 ### 1. Start Small, Iterate Fast
+
 - Begin with 3-5 well-defined agents
 - Test coordination patterns before scaling
 - Gradually add complexity and agents
 
 ### 2. Define Clear Protocols
+
 - Standardize message formats
 - Define interaction patterns
 - Establish error handling conventions
 
 ### 3. Implement Comprehensive Monitoring
+
 - Track all agent actions
 - Monitor system health metrics
 - Log coordination events
 - Alert on anomalies
 
 ### 4. Design for Failure
+
 - Assume agents will fail
 - Implement timeout mechanisms
 - Design graceful degradation
 - Enable automatic recovery
 
 ### 5. Optimize for Observability
+
 - Human-readable agent states
 - Visualization of swarm activity
 - Explanation of agent decisions
 - Audit trails for all actions
 
 ### 6. Focus on Emergence
+
 - Design simple local rules
 - Enable rich interactions
 - Allow complexity to emerge
@@ -644,35 +704,40 @@ Phase 4 (Ongoing): Optimization
 ## References & Resources
 
 ### Academic Papers
-- Frontiers in AI (2025): "Multi-agent systems powered by large language models: applications in swarm intelligence" - https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1593017/full
-- arXiv Survey: "A Survey of Agent Interoperability Protocols: MCP, ACP, A2A, ANP" - https://arxiv.org/abs/2505.02279v1
-- NetLogo + LLM Integration: https://github.com/crjimene/swarm_gpt
+
+- Frontiers in AI (2025): "Multi-agent systems powered by large language models: applications in swarm intelligence" - <https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2025.1593017/full>
+- arXiv Survey: "A Survey of Agent Interoperability Protocols: MCP, ACP, A2A, ANP" - <https://arxiv.org/abs/2505.02279v1>
+- NetLogo + LLM Integration: <https://github.com/crjimene/swarm_gpt>
 
 ### Frameworks & Tools
-- **AutoGen:** https://github.com/microsoft/autogen
-- **CrewAI:** https://docs.crewai.com/
-- **LangGraph:** https://langchain-ai.github.io/langgraph/
-- **AgentScope:** https://github.com/agentscope-ai/agentscope
-- **EvoMap:** https://github.com/EvoMap/evolver
-- **Strands Agents SDK:** https://strandsagents.com/
-- **OpenAI Swarm:** https://github.com/openai/swarm
-- **Awesome Agent Swarm:** https://github.com/EvoMap/awesome-agent-swarm
+
+- **AutoGen:** <https://github.com/microsoft/autogen>
+- **CrewAI:** <https://docs.crewai.com/>
+- **LangGraph:** <https://langchain-ai.github.io/langgraph/>
+- **AgentScope:** <https://github.com/agentscope-ai/agentscope>
+- **EvoMap:** <https://github.com/EvoMap/evolver>
+- **Strands Agents SDK:** <https://strandsagents.com/>
+- **OpenAI Swarm:** <https://github.com/openai/swarm>
+- **Awesome Agent Swarm:** <https://github.com/EvoMap/awesome-agent-swarm>
 
 ### Protocols
-- **ACP (Agent Communication Protocol):** https://agentcommunicationprotocol.dev/
-- **SBP (Stigmergic Blackboard Protocol):** https://github.com/AdviceNXT/sbp
-- **MCP (Model Context Protocol):** https://modelcontextprotocol.io/
+
+- **ACP (Agent Communication Protocol):** <https://agentcommunicationprotocol.dev/>
+- **SBP (Stigmergic Blackboard Protocol):** <https://github.com/AdviceNXT/sbp>
+- **MCP (Model Context Protocol):** <https://modelcontextprotocol.io/>
 - **A2A (Agent-to-Agent Protocol):** Linux Foundation
 - **ANP (Agent Network Protocol):** Emerging
 
 ### Tutorials & Guides
-- Tribe AI: "The Agentic AI Future" - https://www.tribe.ai/applied-ai/the-agentic-ai-future-understanding-ai-agents-swarm-intelligence-and-multi-agent-systems
-- Milvus: "How do agents interact in swarm intelligence?" - https://milvus.io/ai-quick-reference/how-do-agents-interact-in-swarm-intelligence
-- Strands Agents: Swarm Multi-Agent Pattern - https://strandsagents.com/docs/user-guide/concepts/multi-agent/swarm/
+
+- Tribe AI: "The Agentic AI Future" - <https://www.tribe.ai/applied-ai/the-agentic-ai-future-understanding-ai-agents-swarm-intelligence-and-multi-agent-systems>
+- Milvus: "How do agents interact in swarm intelligence?" - <https://milvus.io/ai-quick-reference/how-do-agents-interact-in-swarm-intelligence>
+- Strands Agents: Swarm Multi-Agent Pattern - <https://strandsagents.com/docs/user-guide/concepts/multi-agent/swarm/>
 
 ### Research Projects
-- NetLogo + LLM Swarm Intelligence: https://github.com/crjimene/swarm_gpt
-- Google ADK (Agent Development Kit): https://github.com/google/adk-python
+
+- NetLogo + LLM Swarm Intelligence: <https://github.com/crjimene/swarm_gpt>
+- Google ADK (Agent Development Kit): <https://github.com/google/adk-python>
 - TEMM1E v3.0.0 (Stigmergic Swarm Intelligence): Mentioned in research communities
 
 ---
@@ -680,7 +745,7 @@ Phase 4 (Ongoing): Optimization
 ## Glossary
 
 | Term | Definition |
-|------|------------|
+| ------ | ------------ |
 | **Agent** | Autonomous entity with purpose, autonomy, and adaptability |
 | **Agentic AI** | AI systems that plan, act, observe, and adapt |
 | **Swarm Intelligence** | Collective behavior of decentralized, self-organized systems |

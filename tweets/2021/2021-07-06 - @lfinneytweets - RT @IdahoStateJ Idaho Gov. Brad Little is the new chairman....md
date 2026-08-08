@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoStateJ Idaho Gov. Brad Little is the new chairman..."
 date: 2021-07-06
 time: 18:53:16
 tweet_id: "1412484812661673988"

@@ -25,9 +25,7 @@ Copilot is "The Clerk" — inline Obsidian markdown & syntax. Use for formatting
 
 ## Swarm Coordination
 
-Read THE DOCKET to orient: `!/__!__/!/! The world is quiet here/DOCKET.md`
-
-That file is the live status board. Update it when you start or finish work. Task assignment flows through GitHub Issues (`agent:*` labels). Linear mirrors from GitHub. Slack carries breadcrumbs. The vault is the record.
+![[DOCKET-POSTURE]]
 
 ---
 
@@ -86,6 +84,7 @@ This vault uses multiple AI tools. All agents share vault conventions defined in
 **Coordination workflow:** Logan assigns tasks via GitHub Issues with agent labels (`agent:claude-code`, `agent:codex`, `agent:copilot`, `agent:gemini`). Each agent works on its own branch. PRs are the deliverable. Logan reviews and merges from GitHub.
 
 See also:
+
 - `VAULT-CONVENTIONS.md` — Shared vault conventions for all agents
 - `.claude/CLAUDE.md` — Operational instructions for Claude Code (Anthropic)
 - `.gemini/GEMINI.md` — Operational instructions for Gemini agents (Google)

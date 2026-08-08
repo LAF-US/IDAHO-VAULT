@@ -3,7 +3,7 @@ name: Validate Agent Content
 on:
   push:
     branches:
-      - 'agent/**'
+      - "agent/**"
 
 jobs:
   validate:
@@ -15,18 +15,35 @@ jobs:
 
     steps:
       - name: Checkout vault
-        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
-          fetch-depth: 2
+          fetch-depth: 0
 
       - name: Set up Python
-        uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
       - name: Install dependencies
         run: pip install pyyaml
 
       - name: Run content validation
+        shell: bash
         run: |
-          python3 .github/scripts/validate_content.py --base HEAD^
+          set -eo pipefail  # a failed git diff must fail the step, not feed the validator empty stdin
+          # Diff the whole push (not just its last commit) against known-good SHAs from the
+          # push event -- github.event.before/github.sha, never attacker-shaped -- mirroring
+          # check-portable-paths.yml. --diff-filter=ACMR matches the portability checks:
+          # Deleted paths were kept in for validate_content.py's deletion guard, which has
+          # since been removed, so a deleted path now reaches only validate_directory (a
+          # no-op at the default `all` scope) and validate_file_size (a no-op on a missing
+          # file) before being skipped. Feeding them in bought nothing.
+          before="${{ github.event.before }}"
+          after="${{ github.sha }}"
+          if [[ "$before" == "0000000000000000000000000000000000000000" ]]; then
+            git -c core.quotePath=false ls-tree -r --name-only "$after" |
+              python3 .github/scripts/validate_content.py --paths-from-stdin
+          else
+            git -c core.quotePath=false diff --name-only --diff-filter=ACMR "$before" "$after" |
+              python3 .github/scripts/validate_content.py --paths-from-stdin
+          fi

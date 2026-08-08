@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Before going to court, @idcourts..."
 date: 2021-08-13
 time: 18:52:16
 tweet_id: "1426255299699040258"

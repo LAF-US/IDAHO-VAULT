@@ -1,4 +1,5 @@
 ---
+title: "That\u2019s two of the seven Senate Democrats."
 date: 2020-03-17
 time: 20:57:49
 tweet_id: "1240019530325168128"

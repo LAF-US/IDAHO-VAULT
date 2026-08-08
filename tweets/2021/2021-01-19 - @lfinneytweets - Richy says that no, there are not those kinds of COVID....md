@@ -1,4 +1,5 @@
 ---
+title: "Richy says that no, there are not those kinds of COVID..."
 date: 2021-01-19
 time: 15:34:46
 tweet_id: "1351553697575174144"

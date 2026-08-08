@@ -10,5 +10,5 @@ related:
 - school board
 authority: LOGAN
 ---
-- Reclaim Idaho volunteer 
-- ran for Lake Pend Oreille school board, endorsed Scott Wood 
+- Reclaim Idaho volunteer
+- ran for Lake Pend Oreille school board, endorsed Scott Wood

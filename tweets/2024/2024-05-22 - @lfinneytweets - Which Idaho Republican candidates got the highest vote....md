@@ -1,4 +1,5 @@
 ---
+title: "Which Idaho Republican candidates got the highest vote..."
 date: 2024-05-22
 time: 19:22:31
 tweet_id: "1793361820360859771"

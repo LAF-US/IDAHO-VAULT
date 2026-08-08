@@ -1,4 +1,5 @@
 ---
+title: "RT @MaherKXLY I just had a chance to interview @GovInslee..."
 date: 2020-04-15
 time: 00:07:22
 tweet_id: "1250214095426478080"

@@ -1,4 +1,5 @@
 ---
+title: "#IdahoCOVID19 by 1,000 cases (@IDHW data). First case 3 12..."
 date: 2020-07-08
 time: 23:21:21
 tweet_id: "1281005482199531520"
@@ -18,7 +19,7 @@ related:
   - IdahoCOVID19
 ---
 
-#IdahoCOVID19 by 1,000 cases (@IDHW data). 
+\#IdahoCOVID19 by 1,000 cases (@IDHW data). 
 First case: 3/12 
 1k:   4/3   (22 days) 
 2k:   4/30   (27 days) 

@@ -33,21 +33,24 @@ A drag reading group received this year’s Human and Civil Rights award from th
 
 The city’s Human Relations Advisory Committee consists of community members that address local civil rights issues and advise the mayor and city council on civil rights concerns. Each year, the committee recognizes an individual or group that has worked to improve civil rights issues in Pocatello. Previous winners include educators, coaches, behavioral health advocates, among others.
 
-This year, Reading Time with the Queens, a nonprofits whose mission is to have drag performers read stories that teach acceptance and self love, received the award. 
+This year, Reading Time with the Queens, a nonprofits whose mission is to have drag performers read stories that teach acceptance and self love, received the award.
 
-Each month, the nonprofit organizes a 45-minute program where drag artists read picture books, sing songs, teach sign language and create crafts with children and families in Pocatello and Idaho Falls. 
+Each month, the nonprofit organizes a 45-minute program where drag artists read picture books, sing songs, teach sign language and create crafts with children and families in Pocatello and Idaho Falls.
 
 According to the city’s website, the committee “strives to improve relations among all members of the community regardless of their race, color, national origin, ancestry, religion, creed, sex, age, marital or familial status, physical or mental disability, sexual orientation, gender identity or expression.”
+
 ## Award comes after anti-LGBTQ+ backlash
-The reading group previously hosted its events at the Marshall Public Library in Pocatello, but after receiving protesters from Mass Resistance, a national anti-LGBTQ+ group, the nonprofit had to move its programs to different private venues out of safety concerns. 
+
+The reading group previously hosted its events at the Marshall Public Library in Pocatello, but after receiving protesters from Mass Resistance, a national anti-LGBTQ+ group, the nonprofit had to move its programs to different private venues out of safety concerns.
 
 As reported by East Idaho News, religious protesters arrived early to a Reading Time event in February and took up the available space in the library room, preventing parents and children who came for the event from entering the space.
 
-Rowan Smith, a board member of the nonprofit, told the Idaho Capital Sun that while he is grateful for the award, it feels surreal since the success of the program has come at the expense of its board members worrying for their safety. 
+Rowan Smith, a board member of the nonprofit, told the Idaho Capital Sun that while he is grateful for the award, it feels surreal since the success of the program has come at the expense of its board members worrying for their safety.
 
 “We were really fortunate to be in a community where we have had magnitudes more support than we have had adversity,” Smith said. “We put in so much for every program to pull this off, and it’s all volunteers. It is all people who just choose to come and spend their time with us.”
 
 ## Drag nonprofit inspired by diverse communities in Idaho
+
 Jodi Dunn, known as Mr. Buster at Reading Time events, is the treasurer of the group. In a phone interview, he said the program has evolved from being a “once in a while” event into a monthly nonprofit program.
 
 “Reading Time is a very creative way for a group of diverse individuals to read stories, sing songs, learn sign language and do crafts with children of elementary school age, or younger children,” he said.
@@ -57,6 +60,7 @@ Dunn said that even though the nonprofit primarily consists of drag artists, its
 “Reading Time is a great way for children to see adults be creative and funny and goofy,” he said. “We read books to showcase the diversity of people that you could interact with. A big part of this program is talking about inclusivity, self love and self care.”
 
 ## ‘Drag performers want to invest in their community,’ board member talks drag misconceptions
+
 Dunn, a transgender man, said that before transitioning, he thought drag would be the only way that he could express himself as a masculine individual.
 
 “The trans community wasn’t really spoken about in the early 2000s, and there just wasn’t enough language for the trans community in medical and professional work,” he said. “Drag allowed me to dive into my own gender identity and really understand what I was going through internally.”
@@ -65,11 +69,12 @@ Dunn said he was surprised upon the group receiving the award, but he acknowledg
 
 “The common misconception is that drag is always for adult audiences or very sexualized and something you wouldn’t want a child to see,” Dunn said. “But drag can be very child and family friendly. Drag performers understand that the audience is the most important piece of their performance, and so when we’re in a bar performing for adults, it’s a different setting compared to in our library or in a park.”
 
-Dunn said another misconception drag performers have to face is the idea that they are trying to harm or influence children. 
+Dunn said another misconception drag performers have to face is the idea that they are trying to harm or influence children.
 
 “Drag performers just want to invest in their community,” he said. “I think it’s very important for LGBTQ+ children to see LGBTQ+ adults living their lives, and then knowing that drag is also an art form that can be for everybody.”
 
 ## It’s more than reading books, co-founder says
+
 Justin Rold, or known as Mr. Zae in the programs, is a board member and co-founder of the program. He told the Idaho Capital Sun that the program began as a community service requirement that he and his colleague, Miss Cali, had for a drag pageant titleholder requirement.
 
 “We wanted to do something fun and something that we wished we had when we were younger,” he said. “I, as a Deaf child, never had that kind of opportunity where I had Deaf adults read or sign books to me on a regular basis, so having an American Sign Language component in this program was and still is important to me.”

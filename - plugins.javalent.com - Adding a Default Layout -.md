@@ -7,7 +7,7 @@ created: 2026-04-18
 ## Adding a default layout
 
 > [!success] By following these steps, you are committing to help maintain your layout and ensure that any necessary updates are made when Obsidian or Fantasy Statblocks releases new versions that may cause issues or conflicts.
-> 
+>
 
 Before beginning, start by reading the [Contributing.md](https://github.com/javalent/fantasy-statblocks/blob/main/CONTRIBUTING.md) file, which contains additional information on this process.
 
@@ -24,7 +24,7 @@ Before beginning, start by reading the [Contributing.md](https://github.com/java
 | Folder | File | Purpose |
 | --- | --- | --- |
 | / | `your-layout.ts` | This file is where you will end up pasting the contents of your layout.json, which you made in [Fantasy Statblocks/Editing Layouts/Editing Layouts](https://plugins.javalent.com/statblocks/layout/editor). |
-| Callbacks |  | This folder is where you would place your `.js` files containing the callbacks used in your layout. Soon\* you will be able to import directly from these files into your layout. |
+| Callbacks | | This folder is where you would place your `.js` files containing the callbacks used in your layout. Soon\* you will be able to import directly from these files into your layout. |
 | Other | \- | This folder is for other files that are unrelated to the existing folders. Build scripts, your normal `layout.json`, reference materials, etc. |
 | Publish | \- | This Folder is for any documentation you need to explain on how to use your statblock. This will be posted on the [Integrated Layouts](https://plugins.javalent.com/statblock/layouts/integrated) section of the documentation site. |
 | Publish | `sample-readme.me` | This file is where you would write your readme for your layout, similar to the ones found in [Fantasy Statblocks/Integrated Layouts/Integrated Layouts](https://plugins.javalent.com/statblock/layouts/integrated). |
@@ -58,6 +58,7 @@ If your IDE is showing errors in the code, don't worry, it's normal. You can ign
 ### Importing your layout.json
 
 > [!code]- Example of Start of Pasting Json Code
+>
 > ```typescript
 > export const Layout13thAgeMonster: DefaultLayout = {
 >     blocks: [
@@ -123,7 +124,7 @@ export const DefaultLayouts = [
 
 Navigate to `/src/styles.css` and open the file. As of writing, the file has the following contents:
 
-```
+```text
 @import "./main.css";
 @import "./settings/settings.css";
 @import "./layouts/pathfinder 2e/xCSS/pf2e.css";
@@ -132,7 +133,7 @@ Navigate to `/src/styles.css` and open the file. As of writing, the file has the
 
 Add your own `@import` line at the end of this file, after the last existing `@import` line.
 
-```
+```text
 @import "./main.css";
 @import "./settings/settings.css";
 @import "./layouts/pathfinder 2e/xCSS/pf2e.css";

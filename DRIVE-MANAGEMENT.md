@@ -1,7 +1,7 @@
 ---
 title: "DRIVE-MANAGEMENT — Strategy & Tooling for the Drive Fleet"
 created: 2026-06-22
-updated: 2026-06-22
+updated: 2026-06-23
 status: draft
 doc_class: misc_reference
 authority: LOGAN
@@ -38,6 +38,35 @@ tools and strategy for managing that fleet holistically. It does not restate the
 
 ---
 
+## Decision (2026-06-23) — gocatcli + restic, not git-annex
+
+**Resolved (Logan, 2026-06-23):** the inventory + redundancy stack is
+**[gocatcli](https://github.com/deadc0de6/gocatcli)** — an offline catalog (the maintained Go
+successor to catcli) answering "which drive holds what" without mounting — paired with
+**restic → Backblaze B2** for the encrypted, deduped, integrity-checked copy. **git-annex was
+considered and declined.** This supersedes the "git-annex as the interim spine" framing in the
+opening note and the Layer-1 section below, which are retained as the considered alternative and
+its reasoning.
+
+Why git-annex was declined **for this fleet**:
+
+- The drives are **exFAT for cross-OS portability** (Logan, firsthand). exFAT/Windows can't use
+  git-annex's symlinks, forcing its fiddlier unlocked/pointer mode as the *default* — its roughest
+  corner becomes the norm, not the exception.
+- git-annex's native **Windows port is beta**; the clean route is WSL (friction Logan is weighing
+  separately).
+- Its real cost is a **conceptual curve** (files-as-pointers; locked/unlocked modes; get/drop/copy
+  across tracked remotes; special-remote setup) — not worth it for a five-drive personal fleet.
+- gocatcli (single cross-platform Go binary) + restic cover the same need. The **only** git-annex
+  capability foregone is *enforced* `numcopies` (refusing to drop the last copy); on restic that
+  becomes a discipline/scripting habit instead.
+
+**Still gated on observation:** this resolves *tooling*, not execution. Nothing is stood up until
+**Step 0 — a fresh read of the drives at the machine** (tracked in issue #648). Every per-drive
+specific below remains the **2026-05-08 account** — unverified and ~46 days stale.
+
+---
+
 ## The reframe: not RAID — a tracked, checksummed, location-aware archive
 
 The drives were assembled aspirationally as a "poor man's RAID/NAS." But the fleet's actual shape
@@ -57,12 +86,12 @@ different tool category, and one option fits the vault's git-native habits almos
 
 | Phase | Trigger | Approach | What carries forward |
 | --- | --- | --- | --- |
-| **Phase 1 — NOW** | current budget, existing bus-powered fleet | **git-annex** spine + **Backblaze B2/restic** off-site + **checksums** for cold drives | the location DB + checksums + numcopies discipline |
-| **Phase 2 — LATER** | budget for a **mini-PC / homelab server** | always-on host with real pooling/redundancy (NAS / DAS + SnapRAID+DrivePool, or TrueNAS) | git-annex can **stay as the catalog/location layer** on top of the pool; B2 stays the off-site leg |
+| **Phase 1 — NOW** | current budget, existing bus-powered fleet | **gocatcli** catalog + **restic → Backblaze B2** off-site + **checksums** for cold drives *(git-annex declined — see Decision)* | the catalog + checksums + a ≥2-copies discipline |
+| **Phase 2 — LATER** | budget for a **mini-PC / homelab server** | always-on host with real pooling/redundancy (NAS / DAS + SnapRAID+DrivePool, or TrueNAS) | the catalog (gocatcli) **stays the location layer** on top of the pool; B2 stays the off-site leg |
 
-The key continuity: **Phase 1 is not throwaway.** git-annex's location tracking, content
-checksums, and copy-count discipline remain useful as the catalog layer even after a server
-exists — the homelab becomes *one more (always-on, redundant) annex remote*, not a replacement.
+The key continuity: **Phase 1 is not throwaway.** The gocatcli catalog and the restic/B2 history
+remain useful even after a server exists — the homelab becomes *one more (always-on, redundant)
+backup target*, not a replacement for the catalog or the off-site copy.
 
 ---
 
@@ -72,7 +101,12 @@ exists — the homelab becomes *one more (always-on, redundant) annex remote*, n
 2. **Redundancy / 3-2-1** — anything irreplaceable on ≥2 devices, ≥1 off-site/offline.
 3. **Integrity** — detect (and ideally repair) silent bit-rot on cold drives.
 
-### Layer 1 — Inventory: git-annex (the chosen spine)
+### Layer 1 — Inventory: gocatcli (chosen); git-annex considered & declined
+
+> **Per the Decision (2026-06-23) above:** the chosen inventory tool is **gocatcli** (see the
+> caveat at the end of this section). The git-annex write-up immediately below is retained as the
+> **considered-and-declined alternative** — its capabilities are real, but exFAT/cross-OS plus the
+> conceptual curve ruled it out for this five-drive fleet.
 
 [git-annex](https://git-annex.branchable.com/location_tracking/) tracks file *content* across many
 repositories (each drive = a repo) while keeping only lightweight pointers in git. Why it fits
@@ -91,11 +125,13 @@ repositories (each drive = a repo) while keeping only lightweight pointers in gi
 - **It is git.** The vault already *is* a git repo with a hardware register; DRIVE-REGISTRY is the
   human-readable companion to a git-annex location database. Cross-platform (Mac + Windows).
 
-**Cost / caveat:** real learning curve, CLI habit. Lighter non-git substitute if that stalls: a
-disk-catalog app — [NeoFinder](https://www.cdfinder.de/) (Mac; indexes offline disks across
-exFAT/APFS/NTFS) or [catcli](https://github.com/deadc0de6/catcli) (cross-platform CLI). Those
-answer "what's on the shelved drive?" but do **not** track copy-count or verify integrity, so
-they must be paired with Layers 2–3 below.
+**Cost / caveat:** real learning curve, CLI habit — and per the **Decision (2026-06-23)** above,
+that curve is *why* git-annex was declined for this fleet. The chosen cataloger is
+**[gocatcli](https://github.com/deadc0de6/gocatcli)** (the maintained Go successor to
+[catcli](https://github.com/deadc0de6/catcli); single cross-platform binary, reads catcli
+catalogs); [NeoFinder](https://www.cdfinder.de/) (Mac; exFAT/APFS/NTFS) is a GUI alternative. A
+catalog answers "what's on the shelved drive?" but does **not** track copy-count or verify
+integrity, so it is paired with Layers 2–3 below (restic/B2 + checksums).
 
 ### Layer 2 — Redundancy / 3-2-1: Backblaze **B2 + restic** (not Personal Backup)
 
@@ -213,8 +249,10 @@ one more always-on, redundant annex remote; **B2 stays the off-site leg.**
 
 ## Open decisions / next actions
 
-- [ ] **Adopt git-annex** for the fleet (decision), or fall back to NeoFinder/catcli + manual
-      Layers 2–3 if the CLI curve is unwanted.
+- [x] **Inventory/redundancy tooling — DECIDED 2026-06-23:** **gocatcli** (offline catalog) +
+      **restic→B2**, *not* git-annex (see the Decision section up top). git-annex declined —
+      exFAT/cross-OS forces its unlocked mode, the Windows port is beta, and the conceptual curve
+      isn't worth it for a five-drive fleet; only enforced `numcopies` is foregone.
 - [ ] **Stand up restic → B2** for the encrypted versioned history (the chosen history layer over
       bup; retire any reliance on Personal Backup for shelved drives).
 - [ ] **Encrypt every drive volume** (FileVault / BitLocker / VeraCrypt) — the foundation layer,
@@ -242,8 +280,8 @@ plane) · [[WITNESS-PENDING-NOT-DONE-2026-06-21]] (the durable-copy gap this str
 ## DOCUMENT METADATA
 
 - **Created:** 2026-06-22
-- **Last Updated:** 2026-06-22
+- **Last Updated:** 2026-06-23
 - **Status:** Draft
 - **Authority:** LOGAN
 - **Authors:** Claude Code CLI
-- **Change Note:** First storage-management doctrine note, sibling to DRIVE-REGISTRY (hardware) — records the 2026-06-22 research pass. Core finding: the bus-powered single-purpose fleet wants a tracked/checksummed/location-aware archive (git-annex), not RAID pooling. Captures Logan's two-phase framing (git-annex + B2 + checksums now; mini-PC/homelab with real pooling later, git-annex surviving as the catalog layer), the three-layer model (inventory / 3-2-1 / integrity), the exFAT-no-journaling caveat, and a per-drive mapping that prioritizes the `Expansion` journalism-archive sole-copy risk. Staged `doc_class: misc_reference` pending a doctrine/strategy class decision. Phase-2 hardware options are placeholders (`*`), not a purchase survey. **Encryption pass 2026-06-22:** added a dedicated three-layer encryption model (volume / restic-repo / git-annex encrypted off-site), recorded the **restic-over-bup** decision (bup has no native encryption and is Windows-via-WSL only; restic encrypts by default and is natively cross-platform), and the 1Password (`op`) key-management tie-in — keys partly in `op` already, same secrets mechanism as the redacted serials. **GPG-posture pass 2026-06-22:** surveyed existing vault signing/encryption deployment and found the **current implementation** is **SSH-format** commit signing (`gpg.format=ssh`; the 1Password SSH agent is one way to hold the key, not a settled solution — the `allowed_signers` verification is a known gap) with **no GPG keyring stood up yet**, and **no documented decision to avoid GPG**, so this is a stage, not a GPG-free *design*. Revised the off-site layer to stay GPG-free *at this stage* (restic AES + an `rclone crypt` special remote, not git-annex's GPG `encryption=hybrid`) to avoid a net-new dependency for now, while explicitly leaving `encryption=hybrid` on the table if/when GPG is deployed vault-wide.
+- **Change Note:** First storage-management doctrine note, sibling to DRIVE-REGISTRY (hardware) — records the 2026-06-22 research pass. Core finding: the bus-powered single-purpose fleet wants a tracked/checksummed/location-aware archive (tool-agnostic; git-annex was the original candidate, **declined 2026-06-23** — see the decision note below), not RAID pooling. Captures Logan's two-phase framing (a catalog + B2 + checksums now; mini-PC/homelab with real pooling later, the catalog layer surviving), the three-layer model (inventory / 3-2-1 / integrity), the exFAT-no-journaling caveat, and a per-drive mapping that prioritizes the `Expansion` journalism-archive sole-copy risk. Staged `doc_class: misc_reference` pending a doctrine/strategy class decision. Phase-2 hardware options are placeholders (`*`), not a purchase survey. **Encryption pass 2026-06-22:** added a dedicated three-layer encryption model (volume / restic-repo / git-annex encrypted off-site), recorded the **restic-over-bup** decision (bup has no native encryption and is Windows-via-WSL only; restic encrypts by default and is natively cross-platform), and the 1Password (`op`) key-management tie-in — keys partly in `op` already, same secrets mechanism as the redacted serials. **GPG-posture pass 2026-06-22:** surveyed existing vault signing/encryption deployment and found the **current implementation** is **SSH-format** commit signing (`gpg.format=ssh`; the 1Password SSH agent is one way to hold the key, not a settled solution — the `allowed_signers` verification is a known gap) with **no GPG keyring stood up yet**, and **no documented decision to avoid GPG**, so this is a stage, not a GPG-free *design*. Revised the off-site layer to stay GPG-free *at this stage* (restic AES + an `rclone crypt` special remote, not git-annex's GPG `encryption=hybrid`) to avoid a net-new dependency for now, while explicitly leaving `encryption=hybrid` on the table if/when GPG is deployed vault-wide. **Tooling decision 2026-06-23 (issue #648):** resolved the open inventory-tool fork in favor of **gocatcli (offline catalog) + restic→B2**, declining **git-annex** — exFAT/cross-OS forces git-annex's unlocked mode, its native Windows port is beta, and the conceptual curve (files-as-pointers, locked/unlocked, get/drop/copy across remotes) isn't justified for a five-drive fleet; the only capability foregone is *enforced* `numcopies`. Corrected the stale `catcli` reference to its maintained Go successor **gocatcli**. The decision is *tooling only* — execution stays gated on **Step 0** (a fresh at-the-machine drive read); all per-drive specifics remain the unverified, ~46-day-old 2026-05-08 account.

@@ -1,4 +1,5 @@
 ---
+title: "Shattered glass from one of the gallery doors. Not sure..."
 date: 2020-08-24
 time: 16:00:28
 tweet_id: "1297926758730100737"
@@ -14,10 +15,10 @@ related:
   - lfinneytweets
 ---
 
-Shattered glass from one of the gallery doors. Not sure what the story is there. https://t.co/OJwd93wBxe
+Shattered glass from one of the gallery doors. Not sure what the story is there. <https://t.co/OJwd93wBxe>
 
 ## Media
-- ![](https://pbs.twimg.com/media/EgMpgMJVoAAmU1j.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EgMpgMJVoAAmU1j.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

@@ -1,4 +1,5 @@
 ---
+title: "RT @NinjaEconomics Netflix surpasses TV."
 date: 2018-04-05
 time: 17:27:09
 tweet_id: "981946357559607296"
@@ -15,9 +16,9 @@ related:
   - lfinneytweets
 ---
 
-RT @NinjaEconomics: Netflix surpasses TV. https://t.co/xaANM4H7T8
+RT @NinjaEconomics: Netflix surpasses TV. <https://t.co/xaANM4H7T8>
 
 ## Media
-- ![](https://pbs.twimg.com/media/DQqiWSLVwAAPN-O.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/DQqiWSLVwAAPN-O.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/981946357559607296)

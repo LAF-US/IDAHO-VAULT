@@ -1,4 +1,5 @@
 ---
+title: "People's attitudes and beliefs aren't binary Sounds fake..."
 date: 2021-09-01
 time: 16:39:41
 tweet_id: "1433107304719675392"

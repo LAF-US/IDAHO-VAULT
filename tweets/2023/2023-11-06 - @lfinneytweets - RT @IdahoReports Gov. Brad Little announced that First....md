@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Gov. Brad Little announced that First..."
 date: 2023-11-06
 time: 21:20:55
 tweet_id: "1721638819509023175"
