@@ -1,4 +1,5 @@
 ---
+title: "He\u2019s also referenced SB1068 which passed the Senate..."
 date: 2021-02-17
 time: 16:18:26
 tweet_id: "1362073933999054849"

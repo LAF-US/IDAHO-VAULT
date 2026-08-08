@@ -476,7 +476,7 @@ Python's core philosophy remains unchanged:
 
 ## Appendix: Python Version Timeline
 
-```
+```text
 1989  │ Development begins (December)
 1991  │ Python 0.9.0 released (February 20)
 1994  │ Python 1.0 released

@@ -7,7 +7,7 @@ created: 2026-04-14
 ---
 | “ | *We take of our own. We Snickets take care of own.* | ” |
 | --- | --- | --- |
-| | |
+| | | |
 
 The **Snicket Family** (or **Snicket Clan** [^2]) is a family largely involved in the secret organization [V.F.D.](https://snicket.fandom.com/wiki/Volunteer_Fire_Department "Volunteer Fire Department").
 
@@ -81,7 +81,7 @@ Following the more plausible theories - the Anwhistle and Caliban theories - the
 
 ## Gallery
 
- [![](https://static.wikia.nocookie.net/snicket/images/e/ee/Snicketfamilytree.PNG/revision/latest/scale-to-width-down/185?cb=20190912161545 "Snicketfamilytree.PNG (6.04 MB)") ![](https://static.wikia.nocookie.net/snicket/images/e/ee/Snicketfamilytree.PNG/revision/latest/scale-to-width-down/185?cb=20190912161545 "Snicketfamilytree.PNG (6.04 MB)")](https://snicket.fandom.com/wiki/File:Snicketfamilytree.PNG "Snicketfamilytree.PNG (6.04 MB)")
+ [![alt text needed](https://static.wikia.nocookie.net/snicket/images/e/ee/Snicketfamilytree.PNG/revision/latest/scale-to-width-down/185?cb=20190912161545 "Snicketfamilytree.PNG (6.04 MB)") ![alt text needed](https://static.wikia.nocookie.net/snicket/images/e/ee/Snicketfamilytree.PNG/revision/latest/scale-to-width-down/185?cb=20190912161545 "Snicketfamilytree.PNG (6.04 MB)")](https://snicket.fandom.com/wiki/File:Snicketfamilytree.PNG "Snicketfamilytree.PNG (6.04 MB)")
 
 [![Jacques, Lemony, and Kit.](https://static.wikia.nocookie.net/snicket/images/e/e0/Snicket_Siblings.jpg/revision/latest/scale-to-width-down/185?cb=20200828221641 "Snicket Siblings.jpg (90 KB)")](https://snicket.fandom.com/wiki/File:Snicket_Siblings.jpg "Snicket Siblings.jpg (90 KB)")
 

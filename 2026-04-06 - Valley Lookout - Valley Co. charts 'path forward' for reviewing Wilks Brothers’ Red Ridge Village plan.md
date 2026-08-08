@@ -10,7 +10,7 @@ date modified: Tuesday, April 7th 2026, 11:08:39 pm
 
 ## Valley Co. charts ‘path forward’ for reviewing Wilks Brothers’ Red Ridge Village plan
 
-![](https://valleylookout.com/wp-content/uploads/sites/2/2026/01/valleylookout.com-wilks-brothers-submit-new-plans-for-700-homes-near-mccall-screenshot-2026-01-13-at-12.50.18-pm.jpeg)
+![alt text needed](https://valleylookout.com/wp-content/uploads/sites/2/2026/01/valleylookout.com-wilks-brothers-submit-new-plans-for-700-homes-near-mccall-screenshot-2026-01-13-at-12.50.18-pm.jpeg)
 
 An aerial view of the 2,250-acre property southwest of McCall on which Red Ridge Village is proposed by DF Development. Screenshot: via dfdevelopmentllc.com
 
@@ -46,7 +46,7 @@ Valley Lookout house - Drew
 
 Final plans for each phase of development would require additional public hearings and county approval before construction could begin.
 
-![](https://valleylookout.com/wp-content/uploads/sites/2/2026/03/valleylookout.com-we-have-a-lot-of-work-to-do-valley-co-begins-red-ridge-village-review-screenshot-2026-03-02-at-2.30.34-pm.jpeg)
+![alt text needed](https://valleylookout.com/wp-content/uploads/sites/2/2026/03/valleylookout.com-we-have-a-lot-of-work-to-do-valley-co-begins-red-ridge-village-review-screenshot-2026-03-02-at-2.30.34-pm.jpeg)
 
 A site map for the proposed Red Ridge Village development southwest of McCall. Map: Via DF Development
 
@@ -88,7 +88,7 @@ Improvements are expected to include two new stoplights at the intersections of 
 
 A southbound turn lane would be added on Third Street (Idaho 55) at its intersection with Deinhard Lane. The timing of the existing stoplight could also be adjusted to account for Red Ridge traffic.
 
-![](https://valleylookout.com/wp-content/uploads/sites/2/2025/03/valleylookout.com-red-ridge-village-plans-to-be-re-submitted-with-minimal-changes-screenshot-2025-03-07-at-4.07.56pm.jpeg)
+![alt text needed](https://valleylookout.com/wp-content/uploads/sites/2/2025/03/valleylookout.com-red-ridge-village-plans-to-be-re-submitted-with-minimal-changes-screenshot-2025-03-07-at-4.07.56pm.jpeg)
 
 A map of DF Development’s acreage subject to the Red Ridge Village proposal (shown in red). The City of McCall is shown in purple, while other DF lands are shown in orange. Map: Via GSBS Architects
 

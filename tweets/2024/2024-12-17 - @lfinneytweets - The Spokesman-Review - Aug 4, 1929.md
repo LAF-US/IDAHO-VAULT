@@ -1,4 +1,5 @@
 ---
+title: "The Spokesman-Review - Aug 4, 1929"
 date: 2024-12-17
 time: 18:55:13
 tweet_id: "1869094014567477609"
@@ -13,9 +14,9 @@ related:
   - lfinneytweets
 ---
 
-The Spokesman-Review - Aug 4, 1929 https://t.co/9VfSdpVQjP
+The Spokesman-Review - Aug 4, 1929 <https://t.co/9VfSdpVQjP>
 
 ## Media
-- ![](https://pbs.twimg.com/media/GfBajfOawAA1hyO.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/GfBajfOawAA1hyO.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1869094014567477609)

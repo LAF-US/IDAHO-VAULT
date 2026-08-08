@@ -297,6 +297,6 @@ Prioritized. The Abhorsen identifies; Logan decides.
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

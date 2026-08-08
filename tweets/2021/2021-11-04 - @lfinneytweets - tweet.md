@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2021-11-04
 time: 03:57:16
 tweet_id: "1456108255759925255"
@@ -17,10 +18,10 @@ related:
   - lfinneytweets
 ---
 
-@bivlo @IdahoReports https://t.co/z4dhQW0hBc
+@bivlo @IdahoReports <https://t.co/z4dhQW0hBc>
 
 ## Media
-- ![](https://pbs.twimg.com/tweet_video_thumb/FDUivJaUcAAY55q.jpg)
+- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/FDUivJaUcAAY55q.jpg)
 
 *In reply to [@bivlo](https://twitter.com/bivlo)*
 

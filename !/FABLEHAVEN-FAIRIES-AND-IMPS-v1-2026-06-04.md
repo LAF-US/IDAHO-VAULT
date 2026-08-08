@@ -197,6 +197,6 @@ Mistaking one for the other wastes the repair or insults the wronged further.
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

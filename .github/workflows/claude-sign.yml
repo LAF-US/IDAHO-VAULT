@@ -94,7 +94,7 @@ jobs:
       #   item, or a newly-created "GitHub SSH Key").
       - name: Load signing key from 1Password
         if: env.OP_SERVICE_ACCOUNT_TOKEN != ''
-        uses: 1password/load-secrets-action@92467eb28f72e8255933372f1e0707c567ce2259 # v4
+        uses: 1password/load-secrets-action@e544b780808654ba8ceba5fb2fe2897103d92ff4 # v4
         with:
           export-env: true
         env:

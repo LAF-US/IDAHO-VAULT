@@ -1,4 +1,5 @@
 ---
+title: "He says that determining minimum bids in an open session..."
 date: 2020-02-20
 time: 15:11:05
 tweet_id: "1230510189012348928"

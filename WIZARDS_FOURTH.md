@@ -39,8 +39,8 @@ The fourth of the numbered Wizard's Rules stated across Terry Goodkind's *Sword 
 
 ## Sources / URLs
 
-- https://www.goodreads.com/quotes/321936-wizard-s-fourth-rule-there-is-magic-in-sincere-forgiveness-in
-- https://sot.fandom.com/wiki/Wizard's_Rules
+- <https://www.goodreads.com/quotes/321936-wizard-s-fourth-rule-there-is-magic-in-sincere-forgiveness-in>
+- <https://sot.fandom.com/wiki/Wizard's_Rules>
 
 ---
 

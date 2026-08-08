@@ -23,6 +23,24 @@ class WorkflowSecurityInvariantsTest(unittest.TestCase):
         self.assertNotIn('BRANCH_NAME="${{ github.event.ref }}"', gate_script)
         self.assertIn('[[ "$BRANCH_NAME" =~ ^[A-Za-z0-9._/-]+$ ]]', gate_script)
 
+    def test_merge_queue_branches_are_excluded_from_auto_pr(self) -> None:
+        # gh-readonly-queue/<base>/pr-<n>-<sha> is GitHub's own ephemeral merge-queue
+        # branch: slash-namespaced like a real work branch, so it used to slip past the
+        # generic `*/*` case and reach `gh pr create`, which rejects it outright ("Head
+        # must not be a merge queue branch") -- CI sweep 2026-08-03, runs 30782704220 and
+        # six others on gh-readonly-queue/main/pr-562-*, gh-readonly-queue/main/pr-857-*.
+        workflow = (WORKFLOWS / "agent-auto-pr.yml").read_text(encoding="utf-8")
+        gate_script = workflow.split("- name: Gate on supported branch events", 1)[1].split(
+            "- name: Checkout repo", 1
+        )[0]
+        merge_queue_case = gate_script.split("gh-readonly-queue/*)", 1)
+        self.assertEqual(len(merge_queue_case), 2, "gh-readonly-queue/*) case must exist")
+        case_body = merge_queue_case[1].split(";;", 1)[0]
+        self.assertIn('echo "skip=true"', case_body)
+        # Bash `case` takes the first match, so the exclusion must be written before
+        # the generic `*/*)` pattern or it is dead code.
+        self.assertLess(gate_script.index("gh-readonly-queue/*)"), gate_script.index("*/*)"))
+
     def test_scheduled_mutations_open_prs_instead_of_pushing_main(self) -> None:
         for name in ("sync-dependencies.yml", "daily-rollover.yml"):
             workflow = (WORKFLOWS / name).read_text(encoding="utf-8")
@@ -93,12 +111,12 @@ class WorkflowSecurityInvariantsTest(unittest.TestCase):
         )
 
     def test_merge_method_is_the_queues_alone(self) -> None:
-        # K5/#631 (norm set by Logan, 2026-07-06): the merge QUEUE's configured method is
+        # Norm set by Logan, 2026-07-06: the merge QUEUE's configured method is
         # the single merge-method norm. gh syntax forces a method flag on every
         # `gh pr merge`, but on a merge-queue repo the queue overrides it — so the one
         # canonical, inert spelling is `--merge`. This goes red the moment any workflow
         # or script grows its own divergent method opinion (--squash/--rebase), which is
-        # exactly the two-prescriptions-no-norm drift K5 names.
+        # exactly the two-prescriptions-no-norm drift this guards against.
         scripts = ROOT / ".github" / "scripts"
         offenders: list[str] = []
         for path in sorted(list(WORKFLOWS.glob("*.yml")) + list(scripts.glob("*.py"))):

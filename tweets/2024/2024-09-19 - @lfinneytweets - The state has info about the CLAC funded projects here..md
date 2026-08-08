@@ -1,4 +1,5 @@
 ---
+title: "The state has info about the CLAC funded projects here."
 date: 2024-09-19
 time: 18:20:17
 tweet_id: "1836832701514666134"
@@ -18,10 +19,10 @@ related:
 ---
 
 @LocksDonald @IdahoReports The state has info about the CLAC funded projects here. 
-https://t.co/Bma0wTqVW4
+<https://t.co/Bma0wTqVW4>
 
 ## Links
-- https://storymaps.arcgis.com/stories/f468b20be7ef4661bc1ac1ee0e169406
+- <https://storymaps.arcgis.com/stories/f468b20be7ef4661bc1ac1ee0e169406>
 
 *In reply to [@LocksDonald](https://twitter.com/LocksDonald)*
 

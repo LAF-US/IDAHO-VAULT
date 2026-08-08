@@ -1,4 +1,5 @@
 ---
+title: "RT @RadioDawson An Idaho state senator went to the capitol..."
 date: 2022-02-04
 time: 23:56:48
 tweet_id: "1489749815302909952"

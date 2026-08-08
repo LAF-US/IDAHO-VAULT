@@ -1,4 +1,5 @@
 ---
+title: "Even without the old station license \ud83d\ude25"
 date: 2020-07-08
 time: 05:22:13
 tweet_id: "1280733908464615425"
@@ -17,10 +18,10 @@ related:
 ---
 
 @RadioDawson Even without the old station license 😥 
-https://t.co/M93mjei688
+<https://t.co/M93mjei688>
 
 ## Links
-- https://en.m.wikipedia.org/wiki/KRFA-FM
+- <https://en.m.wikipedia.org/wiki/KRFA-FM>
 
 *In reply to [@RadioDawson](https://twitter.com/RadioDawson)*
 

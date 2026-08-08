@@ -23,6 +23,6 @@ Moscow folks: Want to make an extra $10-$20 every Thursday and help get @uiargon
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/DzE9vFNXQAApzRH.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/DzE9vFNXQAApzRH.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1094724244267708416)

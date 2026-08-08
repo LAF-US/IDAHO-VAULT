@@ -1,4 +1,5 @@
 ---
+title: "RT @RadioDawson A new bill from Rep. Blanksma would allow..."
 date: 2021-04-23
 time: 15:51:46
 tweet_id: "1385622433680420865"

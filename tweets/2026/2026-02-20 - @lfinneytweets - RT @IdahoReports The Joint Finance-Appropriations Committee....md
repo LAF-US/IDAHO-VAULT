@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports The Joint Finance-Appropriations Committee..."
 date: 2026-02-20
 time: 22:46:07
 tweet_id: "2024978903673286923"

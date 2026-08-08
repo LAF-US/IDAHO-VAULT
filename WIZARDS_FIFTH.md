@@ -39,8 +39,8 @@ The fifth of the numbered Wizard's Rules stated across Terry Goodkind's *Sword o
 
 ## Sources / URLs
 
-- https://quotepark.com/quotes/662948-terry-goodkind-wizards-fifth-rule-mind-what-people-do-not-on/
-- https://sot.fandom.com/wiki/Wizard's_Rules
+- <https://quotepark.com/quotes/662948-terry-goodkind-wizards-fifth-rule-mind-what-people-do-not-on/>
+- <https://sot.fandom.com/wiki/Wizard's_Rules>
 
 ---
 

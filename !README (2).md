@@ -31,6 +31,6 @@ This is Logan A. Finney's internal Obsidian.md vault. Agents must follow all fra
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

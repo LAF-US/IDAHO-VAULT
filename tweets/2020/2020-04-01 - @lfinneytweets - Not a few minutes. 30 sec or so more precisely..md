@@ -1,4 +1,5 @@
 ---
+title: "Not a few minutes. 30 sec or so more precisely."
 date: 2020-04-01
 time: 00:17:17
 tweet_id: "1245143160667246592"

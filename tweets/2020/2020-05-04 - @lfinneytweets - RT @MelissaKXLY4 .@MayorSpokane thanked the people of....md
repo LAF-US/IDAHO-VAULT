@@ -1,4 +1,5 @@
 ---
+title: "RT @MelissaKXLY4 .@MayorSpokane thanked the people of..."
 date: 2020-05-04
 time: 22:14:15
 tweet_id: "1257433386282606592"

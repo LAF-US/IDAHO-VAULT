@@ -208,6 +208,6 @@ Written for the novice who comes after. Written in the spirit of the Lexicograph
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

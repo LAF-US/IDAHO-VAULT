@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports This week, @INL Director John Wagner joins..."
 date: 2022-07-19
 time: 14:57:56
 tweet_id: "1549408201942085632"

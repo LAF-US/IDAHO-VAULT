@@ -1,4 +1,5 @@
 ---
+title: "RT @KeithRidler \u201cWe\u2019re applying a (grazing) rate formula..."
 date: 2021-10-20
 time: 21:47:46
 tweet_id: "1450941839490564098"

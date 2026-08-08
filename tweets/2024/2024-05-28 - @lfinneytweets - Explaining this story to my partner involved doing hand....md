@@ -1,4 +1,5 @@
 ---
+title: "Explaining this story to my partner involved doing hand..."
 date: 2024-05-28
 time: 18:44:04
 tweet_id: "1795526471198609621"

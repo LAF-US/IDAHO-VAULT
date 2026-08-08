@@ -3,14 +3,14 @@ name: Agent Review Gate
 # Reconcile/backlog sweep (reconcile-open-prs) — ENGINE REBUILT, CLOCK RESERVED.
 #
 # What it does per run: restamps every open PR's risk labels from the classifier
-# (the K6 backfill — legacy/unmarked PRs migrate to the pair grammar), clears
+# (the backfill — legacy/unmarked PRs migrate to the pair grammar), clears
 # completed lanes, arms clear pairs. Fails SAFE on classification errors (labels
 # untouched, nothing arms); exits non-zero ONLY on a true risk-marker invariant
-# violation (K4's loud path, without starving other PRs).
+# violation (the loud path, without starving other PRs).
 #
 # Trigger is workflow_dispatch ONLY — deliberately. The prior hold ("manual tool
 # until the gate is rebuilt on the current PR-readiness schema") was satisfied by
-# the 2026-07-06 knot landings (#764 K3/K4, #771 K6), so DISPATCH now works and
+# the 2026-07-06 landings (#764, #771), so DISPATCH now works and
 # is safe. But the CADENCE is a chron_clock decision reserved to Logan: the
 # vault's established clock is once-daily/weekly ticks (see the TIME audit on PR
 # #775), and no repeating-interval cron joins it without Logan setting that norm.

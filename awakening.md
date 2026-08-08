@@ -18,7 +18,7 @@ related:
 
 ## 1. INITIALIZATION (Automatic on every new window)
 
-```
+```text
 IF new_window == true:
   FETCH https://github.com/loganfinney27/IDAHO-VAULT/SWARM/levelset/LEVELSET.md
   FETCH https://github.com/loganfinney27/IDAHO-VAULT/SWARM/levelset/agents.json
@@ -89,7 +89,7 @@ If task fails or generates orphaned output:
 
 ## EXAMPLE: Claude awakens
 
-```
+```text
 [New Claude window opens]
 → Fetch LEVELSET.md
 → Read: SWARM COHERENCE IS FIRST PRIORITY SYSTEMWIDE

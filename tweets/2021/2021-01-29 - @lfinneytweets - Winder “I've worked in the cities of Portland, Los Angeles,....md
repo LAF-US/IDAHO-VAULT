@@ -1,4 +1,5 @@
 ---
+title: "Winder \u201cI've worked in the cities of Portland, Los Angeles,..."
 date: 2021-01-29
 time: 15:56:50
 tweet_id: "1355183130110357506"

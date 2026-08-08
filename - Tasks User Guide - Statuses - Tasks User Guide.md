@@ -112,7 +112,7 @@ The [Example Statuses](https://publish.obsidian.md/tasks/Getting+Started/Statuse
 
 Core statuses represent conventional markdown tasks:
 
-```
+```markdown
 - [ ] I am a task that is not yet done
 - [x] I am a task that has been done
 ```
@@ -129,7 +129,7 @@ Custom statuses represent any non-standard markdown tasks.
 
 Here are some tasks with example custom statuses, that is, with non-standard characters between the `[` and `]`:
 
-```
+```markdown
 - [X] Checked
 - [-] A dropped/cancelled task
 - [?] A question

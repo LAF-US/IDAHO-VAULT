@@ -1,4 +1,5 @@
 ---
+title: "Senate Education chairman Sen. Dave Lent says we have about..."
 date: 2023-02-15
 time: 23:25:15
 tweet_id: "1625999710694809603"

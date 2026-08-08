@@ -1,4 +1,5 @@
 ---
+title: "Rep. Remington leads a closing prayer."
 date: 2020-06-24
 time: 04:50:45
 tweet_id: "1275652561865973760"
@@ -14,10 +15,10 @@ related:
   - lfinneytweets
 ---
 
-Rep. Remington leads a closing prayer. https://t.co/gWv46FWtyR
+Rep. Remington leads a closing prayer. <https://t.co/gWv46FWtyR>
 
 ## Media
-- ![](https://pbs.twimg.com/media/EbQGDSsWoAExZA9.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EbQGDSsWoAExZA9.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

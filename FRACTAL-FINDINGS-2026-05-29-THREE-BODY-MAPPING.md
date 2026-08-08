@@ -158,6 +158,6 @@ Location: External observation post
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```
