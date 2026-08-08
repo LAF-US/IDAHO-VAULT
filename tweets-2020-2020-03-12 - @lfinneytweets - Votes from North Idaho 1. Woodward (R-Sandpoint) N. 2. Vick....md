@@ -26,8 +26,7 @@ Votes from North Idaho:
 4. Souza (R-CDA) Y.
 5. Nelson (D-Moscow) N.
 6. Johnson (R-Lewiston) N.
-7. Crabtree (R-Grangeville) Y.
-# idleg #idpol <https://t.co/cpbw5Yr6Rx>
+7. Crabtree (R-Grangeville) Y. #idleg #idpol <https://t.co/cpbw5Yr6Rx>
 
 ## Links
 

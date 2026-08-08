@@ -1,4 +1,5 @@
 ---
+title: "Rep. Chad Christensen (R-Ammon)"
 date: 2020-06-24
 time: 04:50:39
 tweet_id: "1275652533688717312"
@@ -14,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-Rep. Chad Christensen (R-Ammon) https://t.co/ZoaXsDSwvs
+Rep. Chad Christensen (R-Ammon) <https://t.co/ZoaXsDSwvs>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EbQEt6GXYAIp0KQ.jpg)

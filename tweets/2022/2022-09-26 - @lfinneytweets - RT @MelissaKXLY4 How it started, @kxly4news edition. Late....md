@@ -1,4 +1,5 @@
 ---
+title: "RT @MelissaKXLY4 How it started, @kxly4news edition. Late..."
 date: 2022-09-26
 time: 22:42:19
 tweet_id: "1574529829579665408"
@@ -17,7 +18,7 @@ related:
 ---
 
 RT @MelissaKXLY4: How it started, @kxly4news edition.
-Late 1970s —> Now https://t.co/PgN7PgN6FV
+Late 1970s —> Now <https://t.co/PgN7PgN6FV>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FdnZ-XiaAAA7yqi.jpg)

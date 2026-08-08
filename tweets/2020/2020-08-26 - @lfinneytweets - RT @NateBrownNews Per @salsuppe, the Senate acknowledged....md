@@ -1,4 +1,5 @@
 ---
+title: "RT @NateBrownNews Per @salsuppe, the Senate acknowledged..."
 date: 2020-08-26
 time: 17:25:59
 tweet_id: "1298673055149862912"

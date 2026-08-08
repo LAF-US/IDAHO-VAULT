@@ -1,4 +1,5 @@
 ---
+title: "The hallway 15 minutes before House hearing on the private..."
 date: 2025-02-05
 time: 16:20:28
 tweet_id: "1887174463554490385"
@@ -18,7 +19,7 @@ related:
   - idpol
 ---
 
-The hallway 15 minutes before House hearing on the private education tax credit bill, full of people signing up to testify. #idleg #idpol https://t.co/jz5dIWcycQ
+The hallway 15 minutes before House hearing on the private education tax credit bill, full of people signing up to testify. #idleg #idpol <https://t.co/jz5dIWcycQ>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GjCXLGvakAA76HJ.jpg)

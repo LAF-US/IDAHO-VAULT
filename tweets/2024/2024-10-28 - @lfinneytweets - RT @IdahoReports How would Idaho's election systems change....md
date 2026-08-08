@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports How would Idaho's election systems change..."
 date: 2024-10-28
 time: 19:31:58
 tweet_id: "1850983869069283350"
@@ -18,7 +19,7 @@ related:
   - idpol
 ---
 
-RT @IdahoReports: How would Idaho's election systems change if voters pass Proposition One? #idpol https://t.co/wd6PZEhX75
+RT @IdahoReports: How would Idaho's election systems change if voters pass Proposition One? #idpol <https://t.co/wd6PZEhX75>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/ext_tw_video_thumb/1849954095584460800/pu/img/qRIFFzlPrbsDk73F.jpg)

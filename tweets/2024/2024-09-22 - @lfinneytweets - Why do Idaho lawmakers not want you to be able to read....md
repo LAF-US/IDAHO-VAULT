@@ -1,4 +1,5 @@
 ---
+title: "Why do Idaho lawmakers not want you to be able to read..."
 date: 2024-09-22
 time: 22:59:38
 tweet_id: "1837990164205125821"
@@ -18,7 +19,7 @@ related:
   - idpol
 ---
 
-Why do Idaho lawmakers not want you to be able to read about them in the official state voter guide? #idleg #idpol https://t.co/EzmQBv5yxN
+Why do Idaho lawmakers not want you to be able to read about them in the official state voter guide? #idleg #idpol <https://t.co/EzmQBv5yxN>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GYHaStiaEAEuHvd.jpg)

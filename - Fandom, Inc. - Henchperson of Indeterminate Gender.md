@@ -7,7 +7,7 @@ created: 2026-04-14
 ---
 | “ | *I just think, even in changing context, that marriage is an inherently patriarchal construction that is likely to further the hegemonic juggernaut that's problematizing a lot of genders.* | ” |
 | --- | --- | --- |
-| | — The Henchperson of Indeterminate Gender, " [The Bad Beginning: Part Two](https://snicket.fandom.com/wiki/The_Bad_Beginning:_Part_Two "The Bad Beginning: Part Two") " |
+| | — The Henchperson of Indeterminate Gender, " [The Bad Beginning: Part Two](https://snicket.fandom.com/wiki/The_Bad_Beginning:_Part_Two "The Bad Beginning: Part Two") " | |
 
 The **Henchperson of Indeterminate Gender**, also known as the " **Enormous Androgynous Person** " and **the one who looked like neither a man nor a woman** in the books, is a sinister androgynous individual.
 

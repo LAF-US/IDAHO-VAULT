@@ -39,8 +39,8 @@ The third of the numbered Wizard's Rules stated across Terry Goodkind's *Sword o
 
 ## Sources / URLs
 
-- https://quotefancy.com/quote/1211193/Terry-Goodkind-Wizard-s-Third-Rule-Passion-rules-reason-for-better-or-for-worse
-- https://sot.fandom.com/wiki/Wizard's_Rules
+- <https://quotefancy.com/quote/1211193/Terry-Goodkind-Wizard-s-Third-Rule-Passion-rules-reason-for-better-or-for-worse>
+- <https://sot.fandom.com/wiki/Wizard's_Rules>
 
 ---
 

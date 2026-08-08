@@ -1,4 +1,5 @@
 ---
+title: "tweet (633285)"
 date: 2024-05-22
 time: 23:40:21
 tweet_id: "1793426704494633285"
@@ -17,7 +18,7 @@ related:
   - lfinneytweets
 ---
 
-@currevive @GabeOsterhout https://t.co/0gjFjcnnIN
+@currevive @GabeOsterhout <https://t.co/0gjFjcnnIN>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/GOOIE2JbAAEm5uV.jpg)

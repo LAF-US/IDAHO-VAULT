@@ -1,4 +1,5 @@
 ---
+title: "#Boise folks the Walgreens on Orchard & Overland had some..."
 date: 2022-01-15
 time: 18:45:25
 tweet_id: "1482423694299254785"

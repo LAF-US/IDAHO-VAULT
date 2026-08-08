@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell #idleg #idpol"
 date: 2020-03-19
 time: 19:35:26
 tweet_id: "1240723573901160449"
@@ -20,7 +21,7 @@ related:
   - idpol
 ---
 
-RT @BetsyZRussell: #idleg #idpol https://t.co/TSYnKigulP
+RT @BetsyZRussell: #idleg #idpol <https://t.co/TSYnKigulP>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/ETfvTZrUwAEu7NT.jpg)

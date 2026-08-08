@@ -398,6 +398,6 @@ For journalism use. Verify each before publication.
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

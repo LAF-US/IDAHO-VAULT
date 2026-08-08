@@ -1,4 +1,5 @@
 ---
+title: "The committee left in the provision that allows bag..."
 date: 2020-01-13
 time: 17:02:12
 tweet_id: "1216767413967937536"

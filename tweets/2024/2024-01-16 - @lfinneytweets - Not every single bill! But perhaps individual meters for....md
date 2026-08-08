@@ -1,4 +1,5 @@
 ---
+title: "Not every single bill! But perhaps individual meters for..."
 date: 2024-01-16
 time: 21:44:31
 tweet_id: "1747374296425697336"

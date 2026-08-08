@@ -99,7 +99,7 @@ CONFERENCE CALL does **not** replace:
 
 ### The CALL Signal
 
-```
+```text
 CONFERENCE CALL
 DATE: YYYY-MM-DD
 CHAIR: Logan
@@ -113,7 +113,7 @@ RECORDING AGENT: [agent]
 
 Each invited agent responds in plain language. The form below is a convenience, not ritual syntax:
 
-```
+```text
 CONVENE RECEIVED
 AGENT: [Name + persona]
 LEVELSET: [brief summary]
@@ -164,7 +164,7 @@ status: open | closed | partial
 
 Logan closes:
 
-```
+```text
 CONFERENCE CLOSED
 DATE: YYYY-MM-DD
 RECORD: [file path]
@@ -194,6 +194,6 @@ DISMISSED: [agents]
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

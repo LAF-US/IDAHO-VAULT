@@ -1,4 +1,5 @@
 ---
+title: "RT @gemstatebrian The committee voted to hold S1252,..."
 date: 2024-03-18
 time: 20:39:53
 tweet_id: "1769826079970103332"

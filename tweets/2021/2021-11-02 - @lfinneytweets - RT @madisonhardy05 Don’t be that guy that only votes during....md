@@ -1,4 +1,5 @@
 ---
+title: "RT @madisonhardy05 Don\u2019t be that guy that only votes during..."
 date: 2021-11-02
 time: 21:12:45
 tweet_id: "1455644072006152193"
@@ -19,7 +20,7 @@ related:
 ---
 
 RT @madisonhardy05: Don’t be that guy that only votes during presidential elections.
-Nobody likes that guy #vote https://t.co/Tvxgh4VgGE
+Nobody likes that guy #vote <https://t.co/Tvxgh4VgGE>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FDNTC5YUUAMeCX6.jpg)

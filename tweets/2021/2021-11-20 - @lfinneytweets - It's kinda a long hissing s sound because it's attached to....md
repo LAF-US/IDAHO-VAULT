@@ -1,4 +1,5 @@
 ---
+title: "It's kinda a long hissing s sound because it's attached to..."
 date: 2021-11-20
 time: 22:34:06
 tweet_id: "1462187524281958410"

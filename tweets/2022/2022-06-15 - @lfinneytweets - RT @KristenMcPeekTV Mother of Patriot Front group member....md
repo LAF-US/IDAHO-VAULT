@@ -1,4 +1,5 @@
 ---
+title: "RT @KristenMcPeekTV Mother of Patriot Front group member..."
 date: 2022-06-15
 time: 18:15:32
 tweet_id: "1537136741122920448"
@@ -15,10 +16,10 @@ related:
   - lfinneytweets
 ---
 
-RT @KristenMcPeekTV: Mother of Patriot Front group member speaks out after son's arrest https://t.co/0ukml6g4iS https://t.co/hiw6nXlSzb
+RT @KristenMcPeekTV: Mother of Patriot Front group member speaks out after son's arrest <https://t.co/0ukml6g4iS> <https://t.co/hiw6nXlSzb>
 
 ## Links
-- https://bit.ly/3mOZeGO
+- <https://bit.ly/3mOZeGO>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/ext_tw_video_thumb/1537135897103069184/pu/img/RVtV5xb-8LQoiHlL.jpg)

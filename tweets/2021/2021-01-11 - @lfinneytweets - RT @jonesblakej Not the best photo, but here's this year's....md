@@ -1,4 +1,5 @@
 ---
+title: "RT @jonesblakej Not the best photo, but here's this year's..."
 date: 2021-01-11
 time: 17:26:34
 tweet_id: "1348682728464519170"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @jonesblakej: Not the best photo, but here's this year's "Idaho Conservative Agenda." https://t.co/nEDuppAgT2
+RT @jonesblakej: Not the best photo, but here's this year's "Idaho Conservative Agenda." <https://t.co/nEDuppAgT2>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/Erd6zxzVkAAAGVn.jpg)

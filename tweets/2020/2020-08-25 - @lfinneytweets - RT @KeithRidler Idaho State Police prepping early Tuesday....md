@@ -1,4 +1,5 @@
 ---
+title: "RT @KeithRidler Idaho State Police prepping early Tuesday..."
 date: 2020-08-25
 time: 14:15:33
 tweet_id: "1298262745804976128"
@@ -20,7 +21,7 @@ related:
   - idleg
 ---
 
-RT @KeithRidler: Idaho State Police prepping early Tuesday at Idaho Statehouse. #idpol #idleg https://t.co/v7SRy3jUEH
+RT @KeithRidler: Idaho State Police prepping early Tuesday at Idaho Statehouse. #idpol #idleg <https://t.co/v7SRy3jUEH>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EgRXqjCUYAYtZpp.jpg)

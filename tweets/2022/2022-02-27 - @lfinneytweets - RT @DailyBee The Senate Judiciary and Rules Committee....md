@@ -1,4 +1,5 @@
 ---
+title: "RT @DailyBee The Senate Judiciary and Rules Committee..."
 date: 2022-02-27
 time: 01:28:59
 tweet_id: "1497745547574140929"

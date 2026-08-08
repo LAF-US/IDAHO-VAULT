@@ -1,4 +1,5 @@
 ---
+title: "You love to see it. #idpol"
 date: 2020-11-04
 time: 16:32:45
 tweet_id: "1324026810279972869"
@@ -16,7 +17,7 @@ related:
   - idpol
 ---
 
-You love to see it. #idpol https://t.co/ckjbfBdf48
+You love to see it. #idpol <https://t.co/ckjbfBdf48>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/El_jVo8VkAET6ES.jpg)

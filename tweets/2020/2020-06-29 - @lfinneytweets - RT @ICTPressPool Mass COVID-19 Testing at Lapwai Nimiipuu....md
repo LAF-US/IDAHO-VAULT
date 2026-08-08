@@ -1,4 +1,5 @@
 ---
+title: "RT @ICTPressPool Mass COVID-19 Testing at Lapwai Nimiipuu..."
 date: 2020-06-29
 time: 17:48:54
 tweet_id: "1277660326855454720"

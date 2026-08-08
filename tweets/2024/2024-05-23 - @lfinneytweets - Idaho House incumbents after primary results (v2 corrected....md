@@ -1,4 +1,5 @@
 ---
+title: "Idaho House incumbents after primary results (v2 corrected..."
 date: 2024-05-23
 time: 23:11:26
 tweet_id: "1793781818203971693"
@@ -16,7 +17,7 @@ related:
   - idleg
 ---
 
-Idaho House incumbents after primary results (v2 corrected thread) #idleg https://t.co/aVpJkLxISX
+Idaho House incumbents after primary results (v2 corrected thread) #idleg <https://t.co/aVpJkLxISX>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GOTLDpraoAEvuSY.jpg)

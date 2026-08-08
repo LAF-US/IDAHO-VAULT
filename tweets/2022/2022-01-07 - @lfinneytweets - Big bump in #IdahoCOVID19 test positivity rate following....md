@@ -1,4 +1,5 @@
 ---
+title: "Big bump in #IdahoCOVID19 test positivity rate following..."
 date: 2022-01-07
 time: 23:31:55
 tweet_id: "1479596689996455936"
@@ -16,10 +17,10 @@ related:
   - IdahoCOVID19
 ---
 
-Big bump in #IdahoCOVID19 test positivity rate following Christmas. https://t.co/I9QVfTS5bR https://t.co/4do6McYsjr
+Big bump in #IdahoCOVID19 test positivity rate following Christmas. <https://t.co/I9QVfTS5bR> <https://t.co/4do6McYsjr>
 
 ## Links
-- https://x.com/IdahoReports/status/1479593056680636419
+- <https://x.com/IdahoReports/status/1479593056680636419>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FIiVRpRVEAIocAc.jpg)

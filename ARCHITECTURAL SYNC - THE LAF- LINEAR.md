@@ -29,6 +29,7 @@ In the Linear architecture, LAF is the workspace identifier (Logan Alvan Finney)
 | LAF-* | Linear Workspace | The "Source of Truth" for task management and project state. |
 | LAF-13 | Specific Issue | The "Agentic Lensing" or "Identity Consolidation" ticket. |
 | 2d1a6a7 | GitHub Hash | The physical manifestation of the code/vault at that ticket's state. |
+
 II. THE FRICTION: THE "ORPHANED" SYNC
 The 7 orphaned branches and the "identity drift" (Nebula, Maester) occurred because the Sync-to-Linear failed.
 

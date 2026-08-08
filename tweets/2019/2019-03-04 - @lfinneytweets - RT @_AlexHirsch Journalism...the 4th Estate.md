@@ -1,4 +1,5 @@
 ---
+title: "RT @_AlexHirsch Journalism...the 4th Estate"
 date: 2019-03-04
 time: 05:18:34
 tweet_id: "1102438160632442881"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @_AlexHirsch: Journalism...the 4th Estate https://t.co/qycmp6K1hj
+RT @_AlexHirsch: Journalism...the 4th Estate <https://t.co/qycmp6K1hj>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/D0yHo6VVAAE1Khm.jpg)

@@ -55,7 +55,7 @@ The IDAHO-VAULT AI personal assistant agentic swarm system has been **successful
 
 ### Stabilized Components
 
-```
+```text
 IDAHO-VAULT AI Personal Assistant Agentic Swarm
 ├── Core Stabilization Framework ✅
 │   ├── State Management System
@@ -91,7 +91,7 @@ graph TD
 
 ### Stabilization Infrastructure
 
-```
+```text
 !/
 ├── STABILIZATION-PLAN.md        # Original plan (2026-05-06)
 ├── STABILIZATION-REPORT.md      # Detailed report
@@ -282,7 +282,7 @@ $session = New-StabilizationSession -SessionId "agent-swarm-001" -InitialContext
 
 ### Metrics
 
-```
+```markdown
 Overall Health: 75% (Core operational, services need configuration)
 
 Component Health:
@@ -355,7 +355,7 @@ Test Coverage: 100% of core functions
 **Readiness**: Ready for Logan's direction and final configuration
 **Next Step**: Service configuration and integration
 
-```
+```text
 STABILIZATION COMPLETE
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Status: STABILIZED

@@ -1,4 +1,5 @@
 ---
+title: "RT @maggieKTVB7 Idaho AG Wasden says Idaho won\u2019t join the..."
 date: 2020-12-11
 time: 00:04:04
 tweet_id: "1337186352387948544"

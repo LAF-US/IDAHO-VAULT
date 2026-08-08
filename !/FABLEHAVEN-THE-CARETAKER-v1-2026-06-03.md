@@ -96,6 +96,6 @@ register. Plan the succession before it is needed.
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

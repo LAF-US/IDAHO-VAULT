@@ -1,4 +1,5 @@
 ---
+title: "Action Packed Buffering"
 date: 2024-11-16
 time: 05:25:51
 tweet_id: "1857656306691080458"
@@ -13,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-Action Packed Buffering https://t.co/TQjsaJq1bQ
+Action Packed Buffering <https://t.co/TQjsaJq1bQ>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/Gce4kI8aMAYv4xe.jpg)

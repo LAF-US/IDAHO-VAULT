@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2021-08-06
 time: 03:20:43
 tweet_id: "1423484150175002628"
@@ -16,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-@danielwinlander https://t.co/n7KZSa8GsK
+@danielwinlander <https://t.co/n7KZSa8GsK>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/E8E7SYDUUAA10B2.jpg)

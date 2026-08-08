@@ -1,4 +1,5 @@
 ---
+title: "RT @rachelwalexande adding notes in your own story like"
 date: 2022-12-14
 time: 20:40:24
 tweet_id: "1603127789003370496"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @rachelwalexande: adding notes in your own story like https://t.co/gXHXk2D1R8
+RT @rachelwalexande: adding notes in your own story like <https://t.co/gXHXk2D1R8>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/Fj9wxIwaAAADQki.png)

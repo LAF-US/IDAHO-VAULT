@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2021-01-07
 time: 06:29:09
 tweet_id: "1347067734362779648"
@@ -13,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-@bychadsokol https://t.co/FszQ7VHVOG
+@bychadsokol <https://t.co/FszQ7VHVOG>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/ErG-90FVkAQ8Tan.jpg)

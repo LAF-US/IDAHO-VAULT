@@ -1,4 +1,5 @@
 ---
+title: "RT @GovernorLittle I will be rescinding and reversing any..."
 date: 2021-10-05
 time: 22:31:15
 tweet_id: "1445516965355810823"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @GovernorLittle: I will be rescinding and reversing any actions taken by the Lt. Governor when I return. https://t.co/iBuQqX1R5i
+RT @GovernorLittle: I will be rescinding and reversing any actions taken by the Lt. Governor when I return. <https://t.co/iBuQqX1R5i>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FA948g1WYAAa2XC.jpg)

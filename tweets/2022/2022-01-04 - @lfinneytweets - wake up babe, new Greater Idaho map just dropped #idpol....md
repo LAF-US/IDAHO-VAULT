@@ -1,4 +1,5 @@
 ---
+title: "wake up babe, new Greater Idaho map just dropped #idpol..."
 date: 2022-01-04
 time: 05:46:33
 tweet_id: "1478241420653707265"
@@ -18,7 +19,7 @@ related:
   - attentionidahoreporters
 ---
 
-wake up babe, new Greater Idaho map just dropped #idpol #attentionidahoreporters https://t.co/W491UQWFo9
+wake up babe, new Greater Idaho map just dropped #idpol #attentionidahoreporters <https://t.co/W491UQWFo9>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FIPEvPAVgAEa7tG.jpg)

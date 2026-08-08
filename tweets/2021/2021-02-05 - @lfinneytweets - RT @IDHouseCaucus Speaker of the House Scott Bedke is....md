@@ -1,4 +1,5 @@
 ---
+title: "RT @IDHouseCaucus Speaker of the House Scott Bedke is..."
 date: 2021-02-05
 time: 19:50:50
 tweet_id: "1357778730366558213"

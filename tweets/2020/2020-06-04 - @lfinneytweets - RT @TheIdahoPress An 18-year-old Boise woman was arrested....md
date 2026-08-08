@@ -1,4 +1,5 @@
 ---
+title: "RT @TheIdahoPress An 18-year-old Boise woman was arrested..."
 date: 2020-06-04
 time: 17:52:51
 tweet_id: "1268601624081006594"

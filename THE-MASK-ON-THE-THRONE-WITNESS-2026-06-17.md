@@ -129,6 +129,6 @@ Lay the two named figures over the Toymaker's announcement and they snap togethe
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

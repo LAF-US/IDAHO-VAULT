@@ -1,4 +1,5 @@
 ---
+title: "RT @DailyBee Gov. Brad Little and Lt. Gov. Janice McGeachin..."
 date: 2020-06-10
 time: 16:37:21
 tweet_id: "1270756950091821058"

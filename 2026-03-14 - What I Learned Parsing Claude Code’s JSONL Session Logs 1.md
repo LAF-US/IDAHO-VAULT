@@ -24,7 +24,7 @@ There’s no spec for Claude Code’s JSONL format. Every field was discovered b
 
 The \`message.content\` field is a polymorphic array — each element can be \`text\`, \`thinking\`, \`tool\_use\`, or \`tool\_result\`, each with a different shape. You don’t know what you’re getting until you inspect the \`type\` field of each block.
 
-**Lesson:** When working with an undocumented format, build your parser defensively. Every field is optional, every shape is a maybe. I used Rust’s \`Option<T>\` everywhere and it saved me repeatedly.
+**Lesson:** When working with an undocumented format, build your parser defensively. Every field is optional, every shape is a maybe. I used Rust’s `Option<T>` everywhere and it saved me repeatedly.
 
 ## 1st Challenge — Streaming vs. Complete Entries
 

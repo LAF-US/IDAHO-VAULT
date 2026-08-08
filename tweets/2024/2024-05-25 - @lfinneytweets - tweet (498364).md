@@ -1,4 +1,5 @@
 ---
+title: "tweet (498364)"
 date: 2024-05-25
 time: 22:02:29
 tweet_id: "1794489240522498364"
@@ -13,10 +14,10 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/SB4QJES3wN https://t.co/eZze8yohpR
+<https://t.co/SB4QJES3wN> <https://t.co/eZze8yohpR>
 
 ## Links
-- https://x.com/lfinneytweets/status/1794169565146231273
+- <https://x.com/lfinneytweets/status/1794169565146231273>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GOdOdG3a4AMBswf.jpg)

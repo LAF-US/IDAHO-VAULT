@@ -1,4 +1,5 @@
 ---
+title: "Lawmakers re-entering the chamber after going out into the..."
 date: 2020-06-24
 time: 04:50:35
 tweet_id: "1275652516336762880"
@@ -14,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-Lawmakers re-entering the chamber after going out into the hallway, gathering chairs to sit in the well. https://t.co/k9TUmT7JIi
+Lawmakers re-entering the chamber after going out into the hallway, gathering chairs to sit in the well. <https://t.co/k9TUmT7JIi>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EbQDojlWAAAAsys.jpg)

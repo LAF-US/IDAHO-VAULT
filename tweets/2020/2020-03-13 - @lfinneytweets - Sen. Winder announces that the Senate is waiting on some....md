@@ -1,4 +1,5 @@
 ---
+title: "Sen. Winder announces that the Senate is waiting on some..."
 date: 2020-03-13
 time: 18:21:22
 tweet_id: "1238530609988788226"

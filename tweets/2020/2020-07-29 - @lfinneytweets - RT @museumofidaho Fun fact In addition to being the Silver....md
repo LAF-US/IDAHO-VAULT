@@ -1,4 +1,5 @@
 ---
+title: "RT @museumofidaho Fun fact In addition to being the Silver..."
 date: 2020-07-29
 time: 19:14:58
 tweet_id: "1288553621685014528"

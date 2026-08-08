@@ -1,4 +1,5 @@
 ---
+title: "Idaho House approves SB 1350a to require a funding source..."
 date: 2020-03-16
 time: 22:07:50
 tweet_id: "1239674764815286272"
@@ -18,7 +19,7 @@ related:
   - idleg
 ---
 
-Idaho House approves SB 1350a to require a funding source and fiscal note for ballot initiatives. #idpol #idleg https://t.co/SaBqYM6o28
+Idaho House approves SB 1350a to require a funding source and fiscal note for ballot initiatives. #idpol #idleg <https://t.co/SaBqYM6o28>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/ETQ1g4gU8AA19WQ.jpg)

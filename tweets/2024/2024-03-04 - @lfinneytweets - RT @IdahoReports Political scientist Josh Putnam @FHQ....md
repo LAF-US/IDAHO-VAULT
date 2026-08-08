@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Political scientist Josh Putnam @FHQ..."
 date: 2024-03-04
 time: 22:47:35
 tweet_id: "1764784782922154233"

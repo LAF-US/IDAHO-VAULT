@@ -1,4 +1,5 @@
 ---
+title: "New @IDHW data, 5 p.m. today ( \u2014 1,170 confirmed..."
 date: 2020-04-06
 time: 23:19:18
 tweet_id: "1247302895256535040"
@@ -18,7 +19,7 @@ related:
   - IdahoCOVID19
 ---
 
-New @IDHW data, 5 p.m. today (https://t.co/nxIWTF7aiy):
+New @IDHW data, 5 p.m. today (<https://t.co/nxIWTF7aiy>):
 — 1,170 confirmed #IdahoCOVID19 cases 
 — 69 newly reported today
 — 11,246 tested
@@ -26,6 +27,6 @@ New @IDHW data, 5 p.m. today (https://t.co/nxIWTF7aiy):
 — 13 deaths
 
 ## Links
-- http://coronavirus.idaho.gov
+- <http://coronavirus.idaho.gov>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1247302895256535040)

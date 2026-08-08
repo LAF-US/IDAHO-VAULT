@@ -1,4 +1,5 @@
 ---
+title: "The @IdahoStateJ followed up later in the week with an..."
 date: 2021-08-28
 time: 02:25:21
 tweet_id: "1431442751485190145"
@@ -16,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-The @IdahoStateJ followed up later in the week with an article on the local psychiatrist who sponsored the ad, who admitted he wasn't familiar with the approach to sex education in Pocatello schools. https://t.co/oWAyVKUGiz
+The @IdahoStateJ followed up later in the week with an article on the local psychiatrist who sponsored the ad, who admitted he wasn't familiar with the approach to sex education in Pocatello schools. <https://t.co/oWAyVKUGiz>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/E92BmLmUYA0JSzq.jpg)

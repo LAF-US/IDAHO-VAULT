@@ -1,4 +1,5 @@
 ---
+title: "#idleg #idpol"
 date: 2022-12-16
 time: 04:58:48
 tweet_id: "1603615603121881091"
@@ -18,10 +19,10 @@ related:
   - idpol
 ---
 
-\#idleg #idpol https://t.co/4lRRBkIjeE https://t.co/ruVjOR9OfL
+\#idleg #idpol <https://t.co/4lRRBkIjeE> <https://t.co/ruVjOR9OfL>
 
 ## Links
-- https://x.com/MtnStatesPolicy/status/1603608243536027648
+- <https://x.com/MtnStatesPolicy/status/1603608243536027648>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FkEv5I2aUAANcdd.jpg)

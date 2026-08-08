@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2021-12-12
 time: 03:21:42
 tweet_id: "1469870045199142912"
@@ -17,10 +18,10 @@ related:
   - lfinneytweets
 ---
 
-@brandendurst @jtwilcox111 https://t.co/jIxD3jZftl https://t.co/0eOQuR5rKb
+@brandendurst @jtwilcox111 <https://t.co/jIxD3jZftl> <https://t.co/0eOQuR5rKb>
 
 ## Links
-- https://www.ncsl.org/research/about-state-legislatures/state-legislator-demographics.aspx
+- <https://www.ncsl.org/research/about-state-legislatures/state-legislator-demographics.aspx>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FGYHBF6VcAEc5kn.jpg)

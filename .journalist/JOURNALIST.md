@@ -130,6 +130,6 @@ carries the function's requirements. The lineage carries base capability.
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

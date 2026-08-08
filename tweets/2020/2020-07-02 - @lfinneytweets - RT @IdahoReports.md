@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports"
 date: 2020-07-02
 time: 03:17:47
 tweet_id: "1278528265934655488"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoReports: https://t.co/B8nnlx2aH7
+RT @IdahoReports: <https://t.co/B8nnlx2aH7>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/Eb4-UuaU4AAfqN0.jpg)

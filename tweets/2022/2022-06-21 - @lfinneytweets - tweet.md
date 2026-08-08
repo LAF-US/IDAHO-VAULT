@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2022-06-21
 time: 05:32:45
 tweet_id: "1539119110012944385"
@@ -16,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-@idahofreedom https://t.co/usYO2AnWMi
+@idahofreedom <https://t.co/usYO2AnWMi>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FVwMrH_X0AI2Pgq.jpg)

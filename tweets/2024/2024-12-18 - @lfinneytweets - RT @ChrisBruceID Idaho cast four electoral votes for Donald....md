@@ -1,4 +1,5 @@
 ---
+title: "RT @ChrisBruceID Idaho cast four electoral votes for Donald..."
 date: 2024-12-18
 time: 00:13:20
 tweet_id: "1869174069356372104"

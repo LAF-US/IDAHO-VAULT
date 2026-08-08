@@ -1,4 +1,5 @@
 ---
+title: "RT @BFHerald Commissioners approve spending for remote..."
 date: 2020-11-20
 time: 17:06:07
 tweet_id: "1329833413751103488"
@@ -15,9 +16,9 @@ related:
   - lfinneytweets
 ---
 
-RT @BFHerald: Commissioners approve spending for remote emergency dispatch system. https://t.co/ntG2ss9ogN
+RT @BFHerald: Commissioners approve spending for remote emergency dispatch system. <https://t.co/ntG2ss9ogN>
 
 ## Links
-- https://buff.ly/3pFQAe6
+- <https://buff.ly/3pFQAe6>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1329833413751103488)

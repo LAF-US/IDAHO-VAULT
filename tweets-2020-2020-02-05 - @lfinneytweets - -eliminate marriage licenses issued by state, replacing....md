@@ -21,7 +21,7 @@ related:
 
 -eliminate marriage licenses issued by state, replacing them with marriage certificates recorded by the state
 -detail whose consent must be obtained in adoptions (separating child adoptees and adult adoptees into two distinct categories)
-#idleg #idpol
+\#idleg #idpol
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

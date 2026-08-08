@@ -1,4 +1,5 @@
 ---
+title: "Rep. Mark Sauter, R-Sandpoint, and Rep. Jack Nelsen,..."
 date: 2024-03-06
 time: 17:52:00
 tweet_id: "1765435174186320360"
@@ -20,7 +21,7 @@ related:
   - idpol
 ---
 
-Rep. Mark Sauter, R-Sandpoint, and Rep. Jack Nelsen, R-Jerome, file to run for reelection at the Idaho Secretary of State's Office alongside students from McCall-Donnelly High School registering to vote. #idleg #idpol @IDSecOfState https://t.co/77CuUxVbCj
+Rep. Mark Sauter, R-Sandpoint, and Rep. Jack Nelsen, R-Jerome, file to run for reelection at the Idaho Secretary of State's Office alongside students from McCall-Donnelly High School registering to vote. #idleg #idpol @IDSecOfState <https://t.co/77CuUxVbCj>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GIAV71aagAAtZlV.jpg)

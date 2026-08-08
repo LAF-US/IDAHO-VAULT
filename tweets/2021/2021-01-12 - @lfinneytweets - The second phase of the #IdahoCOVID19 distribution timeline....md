@@ -1,4 +1,5 @@
 ---
+title: "The second phase of the #IdahoCOVID19 distribution timeline..."
 date: 2021-01-12
 time: 21:53:14
 tweet_id: "1349112224967655424"
@@ -16,10 +17,10 @@ related:
   - IdahoCOVID19
 ---
 
-The second phase of the #IdahoCOVID19 distribution timeline has been updated. The full timeline is available here: https://t.co/zLfZuSCT28 https://t.co/P3hctoh28B
+The second phase of the #IdahoCOVID19 distribution timeline has been updated. The full timeline is available here: <https://t.co/zLfZuSCT28> <https://t.co/P3hctoh28B>
 
 ## Links
-- https://coronavirus.idaho.gov/wp-content/uploads/2021/01/When-can-I-get-a-COVID-vaccine-in-Idaho-011221-5.pdf
+- <https://coronavirus.idaho.gov/wp-content/uploads/2021/01/When-can-I-get-a-COVID-vaccine-in-Idaho-011221-5.pdf>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/ErkBVq3UYAAHM6H.jpg)

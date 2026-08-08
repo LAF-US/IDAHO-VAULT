@@ -1,4 +1,5 @@
 ---
+title: "RT @sethogilvie The House of Representatives voted 357-22..."
 date: 2019-01-23
 time: 05:57:55
 tweet_id: "1087952550266134528"

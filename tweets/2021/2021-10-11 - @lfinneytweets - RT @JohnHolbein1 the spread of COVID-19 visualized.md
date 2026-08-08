@@ -1,4 +1,5 @@
 ---
+title: "RT @JohnHolbein1 the spread of COVID-19 visualized"
 date: 2021-10-11
 time: 21:51:54
 tweet_id: "1447681388354830338"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @JohnHolbein1: the spread of COVID-19 visualized https://t.co/zIaSkQrqr2
+RT @JohnHolbein1: the spread of COVID-19 visualized <https://t.co/zIaSkQrqr2>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/ext_tw_video_thumb/1446951909512945665/pu/img/wgQgvczqyZowTjgz.jpg)

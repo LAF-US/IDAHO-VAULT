@@ -1,4 +1,5 @@
 ---
+title: "Oh no this doesn't bode well"
 date: 2023-06-02
 time: 18:46:20
 tweet_id: "1664705020275707906"
@@ -14,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-Oh no this doesn't bode well https://t.co/AY86cV1PLZ
+Oh no this doesn't bode well <https://t.co/AY86cV1PLZ>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/Fxo4ZI9aIAAkV7c.jpg)
