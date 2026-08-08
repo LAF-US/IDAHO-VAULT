@@ -16,6 +16,7 @@ related:
 ---
 
 RT @idahomolly: Key takeaways from new poll on SB 1159:
+
 - 69% of Idahoans polled oppose the bill
 - 89% believe the ballot initiative proces…
 

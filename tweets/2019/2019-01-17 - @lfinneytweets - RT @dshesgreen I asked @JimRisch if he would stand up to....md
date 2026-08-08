@@ -1,4 +1,5 @@
 ---
+title: "RT @dshesgreen I asked @JimRisch if he would stand up to..."
 date: 2019-01-17
 time: 07:19:18
 tweet_id: "1085798704500506625"

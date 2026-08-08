@@ -1,4 +1,5 @@
 ---
+title: "RT @brandendurst Female \u2611\ufe0f Short haircut \u2611\ufe0f Retired..."
 date: 2023-02-15
 time: 23:12:35
 tweet_id: "1625996525540376576"
@@ -28,8 +29,6 @@ Short haircut? ☑️
 "Retired educator"? ☑️
 Liberal? ☑️
 
-Must be a @reclaimID clone!
-
-#idpol #idleg #idedu
+Must be a @reclaimID clone! #idpol #idleg #idedu
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1625996525540376576)

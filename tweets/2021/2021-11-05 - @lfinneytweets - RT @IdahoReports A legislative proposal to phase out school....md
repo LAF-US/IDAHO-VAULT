@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports A legislative proposal to phase out school..."
 date: 2021-11-05
 time: 16:48:54
 tweet_id: "1456664834305527816"

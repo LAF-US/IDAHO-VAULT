@@ -15,9 +15,9 @@ related:
 
 # WITNESS — The PR-Pipeline Constellation (#398 · #399)
 
-*A map, not a verdict. Logan asked me to chart the constellation that issues #398 and
-#399 belong to. I did. This node describes structure and cites its sources; it assigns
-no malignancy diagnostics — whether any mechanism here is a Lich, a counterfeit, or
+*A map, not a verdict. Logan asked me to chart the constellation that issues #398 and #399
+belong to. I did. This node describes structure and cites its sources; it assigns no
+malignancy diagnostics — whether any mechanism here is a Lich, a counterfeit, or
 lawful is held out by instruction and left to Logan.* **Discovery is not adoption.**
 
 ---
@@ -142,6 +142,7 @@ hold at once. The user-token identity (`loganfinney27`) *can* resolve (proven on
 that is the identity we decline to forge.
 
 ### Fix A — proposed in PR #540 (open, not yet on `main`): resolve-first, no false witness
+
 Because the engine posted the attestation *before* attempting the resolve, the failed run
 left 34 threads carrying a `github-actions[bot]` comment claiming the thread was "cleared"
 when it was not — a false witness. PR #540 reorders `attest_and_resolve` to **resolve
@@ -152,6 +153,7 @@ mint a false "cleared" attestation. (Cleanup of the 34 already-posted false atte
 a separate follow-up.)
 
 ### Fix B — REVISED 2026-06-17: agent-driven resolve works; the App is SHELVED
+
 **Empirical correction (tested, grounded):** both `resolveReviewThread` *and*
 `unresolveReviewThread` **succeed under the agent/user token** (`loganfinney27`) — verified by
 a net-zero `unresolve → re-resolve` round-trip on a #540 thread, plus the thread resolutions
@@ -178,6 +180,7 @@ wanted. It is not a blocker and is not being built now. (The earlier admin check
 permissions, and `review-resolver-app-*` credential names are retired with this decision.)
 
 **Path forward (agent-driven, no App) — queue-script work in `review_feedback_loop.py`:**
+
 - Run the engine's resolve/disposition logic as the directed agent (token), with transparent
   attestation — not via the `github-actions[bot]` workflow.
 - Default the attestation `looker` to the authenticated actor (`_viewer_login()`), so the
@@ -196,4 +199,8 @@ blind auto-resolver "Liches" — that was a rhetorical compression, not the type
 `!/LICH-PROBLEM-v1` defines, and Logan corrected it. The classification of any mechanism
 here as Lich / counterfeit / lawful is withheld and left to Logan.
 
-###### [["The world is quiet here."]]
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

@@ -32,12 +32,20 @@ def run_syntax_checks(python_executable: str = sys.executable) -> int:
         return 0
 
     for file_path in syntax_files:
-        result = subprocess.run(
-            [python_executable, "-m", "py_compile", file_path],
-            cwd=REPO_ROOT,
-            capture_output=True,
-            text=True,
-        )
+        try:
+            result = subprocess.run(
+                [python_executable, "-m", "py_compile", file_path],
+                cwd=REPO_ROOT,
+                capture_output=True,
+                text=True,
+                encoding="utf-8",
+                errors="replace",
+                timeout=30,
+                check=False,
+            )
+        except subprocess.TimeoutExpired:
+            print(f"ERROR: py_compile timed out after 30s on {file_path}")
+            return 1
         if result.returncode != 0:
             print(f"ERROR in {file_path}:")
             print(result.stderr)
@@ -48,12 +56,20 @@ def run_syntax_checks(python_executable: str = sys.executable) -> int:
 
 
 def run_pytest(python_executable: str = sys.executable) -> int:
-    result = subprocess.run(
-        [python_executable, "-m", "pytest", *TEST_FILES, "-v"],
-        cwd=REPO_ROOT,
-        capture_output=True,
-        text=True,
-    )
+    try:
+        result = subprocess.run(
+            [python_executable, "-m", "pytest", *TEST_FILES, "-v"],
+            cwd=REPO_ROOT,
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+            errors="replace",
+            timeout=300,
+            check=False,
+        )
+    except subprocess.TimeoutExpired:
+        print("ERROR: pytest timed out after 300s")
+        return 1
     print(result.stdout)
     if result.stderr:
         print(result.stderr)

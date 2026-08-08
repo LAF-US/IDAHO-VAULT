@@ -1,4 +1,5 @@
 ---
+title: "RT @DailyBee Rising temperatures and lower humidity are..."
 date: 2021-08-13
 time: 18:04:38
 tweet_id: "1426243312994832387"

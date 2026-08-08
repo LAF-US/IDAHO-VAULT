@@ -1,4 +1,5 @@
 ---
+title: "So this happened"
 date: 2023-03-08
 time: 00:27:46
 tweet_id: "1633263202271395845"
@@ -13,9 +14,9 @@ related:
   - lfinneytweets
 ---
 
-So this happened https://t.co/foRDX7XUJY
+So this happened <https://t.co/foRDX7XUJY>
 
 ## Links
-- https://x.com/IdahoReports/status/1633263128036384768
+- <https://x.com/IdahoReports/status/1633263128036384768>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1633263202271395845)

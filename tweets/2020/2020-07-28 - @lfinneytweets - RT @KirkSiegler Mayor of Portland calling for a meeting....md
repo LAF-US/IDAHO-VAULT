@@ -1,4 +1,5 @@
 ---
+title: "RT @KirkSiegler Mayor of Portland calling for a meeting..."
 date: 2020-07-28
 time: 04:01:14
 tweet_id: "1287961288396509184"

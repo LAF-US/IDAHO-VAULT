@@ -28,7 +28,7 @@ GitHub Copilot offers several distinct customization mechanisms, each designed t
 
 > [!-info] -info
 > info
-> 
+>
 > All customization files are Markdown-based with YAML frontmatter. They can be committed to your repository and shared with your entire team through version control. Exceptions are MCP servers and hooks which are JSON.
 
 ## 2\. Custom Instructions
@@ -96,12 +96,12 @@ Instructions are the right choice when you need:
 
 > [!-success] -success
 > tip
-> 
+>
 > To generate a `copilot-instructions.md` file tailored to your project, click the **Configure Chat** gear icon in the Chat view and select **Generate Chat Instructions**. Review the generated file and make any necessary edits to match your team's standards.
 
 > [!-secondary] -secondary
 > note
-> 
+>
 > Custom instructions do NOT affect inline suggestions as you type in the editor. They only apply to chat interactions (Ask, Plan, Agent, and custom modes).
 
 ### Agentic Memory
@@ -171,7 +171,7 @@ Requirements:
 
 > [!-success] -success
 > tip
-> 
+>
 > Prompt files can reference custom instructions via Markdown links, avoiding duplication. For example: `[coding standards](../docs/standards.md)`
 
 ## 4\. Custom Agents
@@ -230,7 +230,7 @@ Handoffs are a powerful feature that lets you chain agents together. When a user
 
 > [!-secondary] -secondary
 > note
-> 
+>
 > Custom agents define the session-level operating context. They work best as the outermost "wrapper" around a workflow. Combine them with instructions (for standards) and skills (for specialized tasks) for maximum effectiveness.
 
 ## 5\. Agent Skills
@@ -306,7 +306,7 @@ This means you can install many skills without bloating the context window.
 
 > [!-success] -success
 > tip
-> 
+>
 > Skills are an open standard. A skill you create for GitHub Copilot in VS Code also works with GitHub Copilot CLI, the Copilot coding agent, and Claude Code.
 
 ## 6\. MCP Servers
@@ -361,7 +361,7 @@ Beyond the gallery, you can also find MCP servers by looking at registries. For 
 
 > [!-warning] -warning
 > warning
-> 
+>
 > Local MCP servers run arbitrary code on your machine. Only add servers from trusted sources and review the code and configuration before starting. VS Code prompts you to confirm trust when starting a server for the first time.
 
 ### Configuration Scopes
@@ -410,7 +410,7 @@ Sandboxed servers only access explicitly permitted paths and domains, and their 
 
 > [!-info] -info
 > important
-> 
+>
 > Organizations can centrally manage which MCP servers are allowed via GitHub policies. If you are unsure of your organizations policies around MCP server usage, check with your GitHub Copilot administrators before adding new servers.
 
 ## 7\. Agent Hooks
@@ -419,7 +419,7 @@ Agent hooks let you execute custom shell commands at specific lifecycle points d
 
 > [!-secondary] -secondary
 > note
-> 
+>
 > Agent hooks are currently in Preview. Your organization may have disabled hook usage via enterprise policies.
 
 ### How They Work
@@ -469,7 +469,7 @@ You can also configure hooks through the UI: type `/hooks` in chat, use **Chat: 
 
 > [!-info] -info
 > info
-> 
+>
 > For the full reference including input/output schemas, OS-specific command overrides, agent-scoped hooks, and security considerations, see the [VS Code hooks documentation](https://code.visualstudio.com/docs/copilot/customization/hooks).
 
 ## 8\. Agentic Workflows
@@ -528,7 +528,7 @@ All workflow outputs (prompts, patches, logs) are preserved as downloadable arti
 
 > [!-info] -info
 > info
-> 
+>
 > For full documentation including setup, patterns, and reference material, see the [GitHub Agentic Workflows docs](https://github.github.com/gh-aw/).
 
 ## 9\. How Context is Built
@@ -549,7 +549,7 @@ When you type a message in Copilot Chat, here is what happens behind the scenes:
 
 > [!-info] -info
 > info
-> 
+>
 > If multiple types of customization files exist in your project, VS Code combines them all. Use the diagnostics view (right-click in Chat → Diagnostics) to see all loaded customization files and troubleshoot issues.
 
 ### Context Priority for Tools
@@ -601,7 +601,7 @@ These features are not mutually exclusive — they are designed to work together
 
 > [!-secondary] -secondary
 > note
-> 
+>
 > MCP servers are a separate extension point for connecting to external systems. Use them when you need capabilities beyond what can be included in skills or agents.
 
 ## 12\. Sharing Customizations with Plugins
@@ -659,7 +659,7 @@ my-plugin/
 
 A marketplace is a repository that hosts one or more plugins. To create a marketplace, simply create a GitHub repository, add your plugins to the `plugins/` directory, and then create a `.github/plugin/marketplace.json` file containing metadata about your marketplace.
 
-#### File Structure:
+#### File Structure
 
 ```markdown
 .github/
@@ -670,7 +670,7 @@ plugins/
 ├── my-next-plugin/
 ```
 
-#### marketplace.json Anatomy:
+#### marketplace.json Anatomy
 
 ```json
 {
@@ -726,5 +726,5 @@ plugins/
 
 > [!-info] -info
 > info
-> 
+>
 > For more community-contributed examples of instructions, prompts, agents, and skills, visit the **[github/awesome-copilot](https://github.com/github/awesome-copilot)** repository on GitHub.

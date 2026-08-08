@@ -1,4 +1,5 @@
 ---
+title: "RT @DailyBee Bonner County has installed a new camera..."
 date: 2020-11-12
 time: 18:14:04
 tweet_id: "1326951411754528768"

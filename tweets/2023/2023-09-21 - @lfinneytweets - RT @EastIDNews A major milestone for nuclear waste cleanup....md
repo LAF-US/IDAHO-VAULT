@@ -1,4 +1,5 @@
 ---
+title: "RT @EastIDNews A major milestone for nuclear waste cleanup..."
 date: 2023-09-21
 time: 21:46:26
 tweet_id: "1704975396897431941"
@@ -15,6 +16,6 @@ related:
   - lfinneytweets
 ---
 
-RT @EastIDNews: A major milestone for nuclear waste cleanup at the Idaho Environmental Coalition was just reached.     https://t.co/AUemQYm…
+RT @EastIDNews: A major milestone for nuclear waste cleanup at the Idaho Environmental Coalition was just reached.     <https://t.co/AUemQYm…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1704975396897431941)

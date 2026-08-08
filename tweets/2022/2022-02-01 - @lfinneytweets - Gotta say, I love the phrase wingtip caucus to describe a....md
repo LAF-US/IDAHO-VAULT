@@ -1,4 +1,5 @@
 ---
+title: "Gotta say, I love the phrase wingtip caucus to describe a..."
 date: 2022-02-01
 time: 18:36:02
 tweet_id: "1488581928131305472"

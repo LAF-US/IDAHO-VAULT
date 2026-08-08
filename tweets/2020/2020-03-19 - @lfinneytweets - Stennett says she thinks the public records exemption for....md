@@ -1,4 +1,5 @@
 ---
+title: "Stennett says she thinks the public records exemption for..."
 date: 2020-03-19
 time: 22:55:39
 tweet_id: "1240773963216633857"

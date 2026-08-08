@@ -1,4 +1,5 @@
 ---
+title: "RT @CSTribune Gov. Mark Gordon told about 100 protesters he..."
 date: 2020-04-20
 time: 22:46:38
 tweet_id: "1252368102861402122"

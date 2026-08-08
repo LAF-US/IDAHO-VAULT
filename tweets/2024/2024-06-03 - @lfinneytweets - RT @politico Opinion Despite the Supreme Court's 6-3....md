@@ -1,4 +1,5 @@
 ---
+title: "RT @politico Opinion Despite the Supreme Court's 6-3..."
 date: 2024-06-03
 time: 03:07:58
 tweet_id: "1797465220958572815"

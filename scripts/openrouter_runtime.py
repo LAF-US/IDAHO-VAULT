@@ -53,16 +53,35 @@ def ensure_op_available() -> None:
 
 
 def ensure_op_signed_in() -> None:
-    result = subprocess.run(
-        ["op", "whoami"],
-        stdout=subprocess.DEVNULL,
-        stderr=subprocess.DEVNULL,
-        check=False,
-    )
+    try:
+        result = subprocess.run(
+            ["op", "whoami"],
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+            check=False,
+            timeout=15,
+        )
+    except subprocess.TimeoutExpired as exc:
+        raise SystemExit("1Password CLI 'op whoami' timed out after 15s.") from exc
+    except OSError as exc:
+        raise SystemExit(f"1Password CLI 'op whoami' could not run: {exc}") from exc
     if result.returncode != 0:
         raise SystemExit(
             "1Password CLI is not signed in. Run 'op signin' or unlock desktop integration first."
         )
+
+
+def _env_file_keys_with_values(content: str) -> set[str]:
+    """Parse KEY=value lines and return the keys whose value is non-empty."""
+    keys = set()
+    for line in content.splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, _, value = line.partition("=")
+        if value.strip():
+            keys.add(key.strip())
+    return keys
 
 
 def ensure_env_file(agent: str) -> Path:
@@ -74,10 +93,18 @@ def ensure_env_file(agent: str) -> Path:
     needs_refresh = not ENV_FILE.exists()
     if not needs_refresh:
         content = ENV_FILE.read_text(encoding="utf-8")
-        needs_refresh = any(f"{key}=" not in content for key in required_keys)
+        populated = _env_file_keys_with_values(content)
+        needs_refresh = any(key not in populated for key in required_keys)
 
     if needs_refresh:
-        subprocess.run([sys.executable, str(RESOLVER)], check=True)
+        try:
+            subprocess.run([sys.executable, str(RESOLVER)], check=True, timeout=60)
+        except subprocess.TimeoutExpired as exc:
+            raise SystemExit(f"{RESOLVER.name} timed out after 60s.") from exc
+        except subprocess.CalledProcessError as exc:
+            raise SystemExit(f"{RESOLVER.name} failed (exit {exc.returncode}).") from exc
+        except OSError as exc:
+            raise SystemExit(f"{RESOLVER.name} could not run: {exc}") from exc
 
     return ENV_FILE
 
@@ -88,6 +115,7 @@ def exec_agent(agent: str, cli_name: str, args: list[str]) -> int:
     if resolved_cli is None:
         raise SystemExit(f"Could not find '{cli_name}' on PATH.")
 
+    # timeout: interactive
     result = subprocess.run([resolved_cli, *args], env=env, check=False)
     return result.returncode
 
@@ -119,6 +147,7 @@ def launch_agent(agent: str, cli_name: str, args: list[str]) -> int:
         cli_name,
         *args,
     ]
+    # timeout: interactive
     result = subprocess.run(command, check=False)
     return result.returncode
 

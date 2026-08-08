@@ -1,4 +1,5 @@
 ---
+title: "#IdahoCOVID19"
 date: 2020-04-22
 time: 20:28:44
 tweet_id: "1253058176733212672"
@@ -16,9 +17,9 @@ related:
   - IdahoCOVID19
 ---
 
-#IdahoCOVID19 https://t.co/wvZTnuAMPy
+\#IdahoCOVID19 <https://t.co/wvZTnuAMPy>
 
 ## Links
-- https://x.com/annehelen/status/1253046747212832769
+- <https://x.com/annehelen/status/1253046747212832769>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1253058176733212672)

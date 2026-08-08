@@ -1,4 +1,5 @@
 ---
+title: "RT @boiseboone Wowza. Lame-duck Idaho Lt. Gov...."
 date: 2022-07-13
 time: 03:29:56
 tweet_id: "1547060732193169409"

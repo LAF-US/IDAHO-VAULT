@@ -143,16 +143,26 @@ def main(argv: list[str] | None = None) -> int:
         print(f"Skipped (duplicate): {len(skipped_dup)}")
 
     if args.git_add and moved_paths and not args.dry_run:
-        result = subprocess.run(
-            ["git", "add", *[str(path) for path in moved_paths]],
-            cwd=str(vault_root),
-            capture_output=True,
-            text=True,
-        )
-        if result.returncode == 0:
-            print(f"Staged {len(moved_paths)} ingested file(s) for commit")
+        try:
+            result = subprocess.run(
+                ["git", "add", "--", *[str(path) for path in moved_paths]],
+                cwd=str(vault_root),
+                capture_output=True,
+                text=True,
+                encoding="utf-8",
+                errors="replace",
+                timeout=30,
+                check=False,
+            )
+        except subprocess.TimeoutExpired:
+            print("git add timed out after 30s; files were moved but not staged")
+        except OSError as exc:
+            print(f"git add could not run ({exc}); files were moved but not staged")
         else:
-            print(f"git add failed: {result.stderr}")
+            if result.returncode == 0:
+                print(f"Staged {len(moved_paths)} ingested file(s) for commit")
+            else:
+                print(f"git add failed: {result.stderr}")
 
     return 0
 

@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports This week's Idaho Reports podcast takes a..."
 date: 2022-09-07
 time: 19:07:30
 tweet_id: "1567590400424300545"

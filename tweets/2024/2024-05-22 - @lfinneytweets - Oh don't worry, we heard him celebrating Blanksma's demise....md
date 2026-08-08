@@ -1,4 +1,5 @@
 ---
+title: "Oh don't worry, we heard him celebrating Blanksma's demise..."
 date: 2024-05-22
 time: 23:28:31
 tweet_id: "1793423729588109717"

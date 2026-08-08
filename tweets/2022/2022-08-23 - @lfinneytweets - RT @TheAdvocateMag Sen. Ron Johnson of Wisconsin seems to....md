@@ -1,4 +1,5 @@
 ---
+title: "RT @TheAdvocateMag Sen. Ron Johnson of Wisconsin seems to..."
 date: 2022-08-23
 time: 19:59:57
 tweet_id: "1562167782724157440"

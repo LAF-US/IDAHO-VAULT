@@ -1,4 +1,5 @@
 ---
+title: "RT @AndrewBaertlein The scene at Ammon Elementary right..."
 date: 2021-10-14
 time: 21:05:22
 tweet_id: "1448756840620179472"

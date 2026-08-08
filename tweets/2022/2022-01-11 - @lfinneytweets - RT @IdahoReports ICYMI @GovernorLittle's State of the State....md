@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports ICYMI @GovernorLittle's State of the State..."
 date: 2022-01-11
 time: 16:05:13
 tweet_id: "1480933828256432129"

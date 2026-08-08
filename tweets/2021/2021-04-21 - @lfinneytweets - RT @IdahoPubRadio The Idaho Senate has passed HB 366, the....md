@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio The Idaho Senate has passed HB 366, the..."
 date: 2021-04-21
 time: 21:31:16
 tweet_id: "1384983094088802311"

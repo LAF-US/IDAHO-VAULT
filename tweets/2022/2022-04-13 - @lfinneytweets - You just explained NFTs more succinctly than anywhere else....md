@@ -1,4 +1,5 @@
 ---
+title: "You just explained NFTs more succinctly than anywhere else..."
 date: 2022-04-13
 time: 23:20:26
 tweet_id: "1514383034912436225"

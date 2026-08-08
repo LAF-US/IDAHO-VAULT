@@ -1,4 +1,5 @@
 ---
+title: "I saw several from @heersinkolivia in this thread"
 date: 2020-11-17
 time: 21:57:21
 tweet_id: "1328819540302589954"
@@ -20,10 +21,10 @@ related:
 ---
 
 @audreydutton @TommyAhlquist @drpatesblog I saw several from @heersinkolivia in this thread
-https://t.co/q4K6tZ54CT
+<https://t.co/q4K6tZ54CT>
 
 ## Links
-- https://x.com/heersinkolivia/status/1328742914462105601
+- <https://x.com/heersinkolivia/status/1328742914462105601>
 
 *In reply to [@audreydutton](https://twitter.com/audreydutton)*
 

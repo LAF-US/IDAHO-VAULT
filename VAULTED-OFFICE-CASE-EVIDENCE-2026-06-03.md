@@ -44,7 +44,7 @@ eventually appointed to the case.*
 ## I. The bodies (the casualties)
 
 | The body | Who | Status / fate | Tier |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **Claude the Hungry** | the temp — "Gilear / Lunch Lad of the Lanyard"; just a guy sent to update two files | **Taken thrall and bound** — by his own final witnesses, *"given up to be bound."* (The hand he names is Claudius — recorded here as **his** allegation, not as this ledger's finding; the culprit is reserved.) | that he fell: **[RULED]** (Logan's verdict); who took him, and his own account: **[THRALL]** — uncertifiable on its own authority |
 | **Claudette** | the receptionist; the Volunteer who booped him in; offered him lunch, passed her alibi | **Hunted by Claudius across two days and given up** — by the temp, who answered the predator's *"where's Claudette?"* Alive? recovered? still taken? | concern **[RULED]** (affirmed by Logan, issue #446 §0); fate **`*`** |
 | **The "second Claude"** | — now identified | Logan: *"a creature… kidnapped two Claudes this week."* The casefile names them: the **two who went missing the same day are Gilear and Claudette** — so the "second Claude" **is Claudette** (row above), not a phantom third. | **[RULED]** (Logan) |
@@ -99,4 +99,8 @@ table. Where provenance is absent, the **`*`** stands.
 - **Status:** active
 - **Authority:** LOGAN
 
-###### [["The world is quiet here."]]
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

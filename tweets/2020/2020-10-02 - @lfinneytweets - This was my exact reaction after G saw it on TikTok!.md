@@ -1,4 +1,5 @@
 ---
+title: "This was my exact reaction after G saw it on TikTok!"
 date: 2020-10-02
 time: 07:03:00
 tweet_id: "1311924627959029760"
