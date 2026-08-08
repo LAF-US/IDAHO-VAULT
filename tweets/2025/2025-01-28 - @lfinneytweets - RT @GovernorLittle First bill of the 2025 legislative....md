@@ -1,4 +1,5 @@
 ---
+title: "RT @GovernorLittle First bill of the 2025 legislative..."
 date: 2025-01-28
 time: 01:25:16
 tweet_id: "1884050073312792998"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @GovernorLittle: First bill of the 2025 legislative session is officially signed. Keep ‘em coming! https://t.co/cG3Ym8NV5S
+RT @GovernorLittle: First bill of the 2025 legislative session is officially signed. Keep ‘em coming! <https://t.co/cG3Ym8NV5S>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GiVYYzlaoAAL4jG.jpg)

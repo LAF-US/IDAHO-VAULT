@@ -1,4 +1,5 @@
 ---
+title: "RT @MrOlmos Photo on the left by @SmileItsNathan On the..."
 date: 2021-08-09
 time: 20:58:30
 tweet_id: "1424837516289474561"
@@ -19,7 +20,7 @@ related:
 
 RT @MrOlmos: Photo on the left by @SmileItsNathan 
 
-On the right by @PDocumentarians https://t.co/MpHqSQNUBa
+On the right by @PDocumentarians <https://t.co/MpHqSQNUBa>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/E8YDK-bVEA0W4eg.jpg)

@@ -1,4 +1,5 @@
 ---
+title: "State of the Idaho GOP in one image #idpol"
 date: 2024-06-16
 time: 15:58:54
 tweet_id: "1802370273389482445"
@@ -16,7 +17,7 @@ related:
   - idpol
 ---
 
-State of the Idaho GOP in one image #idpol https://t.co/jgtllMX12b
+State of the Idaho GOP in one image #idpol <https://t.co/jgtllMX12b>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GQNONmVawAAuqoy.jpg)

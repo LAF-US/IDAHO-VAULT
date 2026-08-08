@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise PostReg Arizona group asks..."
 date: 2020-09-17
 time: 20:05:40
 tweet_id: "1306685775208013825"

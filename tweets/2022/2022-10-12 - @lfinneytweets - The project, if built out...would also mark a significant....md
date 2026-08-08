@@ -1,4 +1,5 @@
 ---
+title: "The project, if built out...would also mark a significant..."
 date: 2022-10-12
 time: 18:23:57
 tweet_id: "1580263017865891841"
@@ -18,9 +19,9 @@ related:
   - idpol
 ---
 
-"The project, if built out...would also mark a significant shift in the Treasure Valley’s development pattern, which for decades has expanded westward from Boise. The new project would mark a major turn to the east." #idleg #idpol https://t.co/p9qDNpw2ed
+"The project, if built out...would also mark a significant shift in the Treasure Valley’s development pattern, which for decades has expanded westward from Boise. The new project would mark a major turn to the east." #idleg #idpol <https://t.co/p9qDNpw2ed>
 
 ## Links
-- https://x.com/DonLDay/status/1580217512285081601
+- <https://x.com/DonLDay/status/1580217512285081601>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1580263017865891841)

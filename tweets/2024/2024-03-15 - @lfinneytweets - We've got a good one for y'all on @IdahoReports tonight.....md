@@ -1,4 +1,5 @@
 ---
+title: "We've got a good one for y'all on @IdahoReports tonight...."
 date: 2024-03-15
 time: 19:44:25
 tweet_id: "1768724956698009669"
@@ -18,7 +19,7 @@ related:
   - idpol
 ---
 
-We've got a good one for y'all on @IdahoReports tonight. #idpol https://t.co/wC1rAY5a8s
+We've got a good one for y'all on @IdahoReports tonight. #idpol <https://t.co/wC1rAY5a8s>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GIvF9O8bQAA7mh5.jpg)

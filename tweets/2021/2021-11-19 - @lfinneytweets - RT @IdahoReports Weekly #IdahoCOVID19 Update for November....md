@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Weekly #IdahoCOVID19 Update for November..."
 date: 2021-11-19
 time: 22:14:11
 tweet_id: "1461820124529401870"
@@ -19,7 +20,7 @@ related:
   - IdahoCOVID19
 ---
 
-RT @IdahoReports: Weekly #IdahoCOVID19 Update for November 19, 2021 | @IdahoPTV https://t.co/1DJweaZALW
+RT @IdahoReports: Weekly #IdahoCOVID19 Update for November 19, 2021 | @IdahoPTV <https://t.co/1DJweaZALW>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/amplify_video_thumb/1461819856689324033/img/9EUS7qWAT2kaVm6I.jpg)

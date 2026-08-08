@@ -1,4 +1,5 @@
 ---
+title: "RT @idahoednews He was 67."
 date: 2021-10-10
 time: 20:56:06
 tweet_id: "1447304957669957632"
@@ -16,9 +17,9 @@ related:
 ---
 
 RT @idahoednews: He was 67. 
-https://t.co/iwGOkBiXPT
+<https://t.co/iwGOkBiXPT>
 
 ## Links
-- https://www.idahoednews.org/news/coulson-indoctrination-task-force-member-dies-of-covid/
+- <https://www.idahoednews.org/news/coulson-indoctrination-task-force-member-dies-of-covid/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1447304957669957632)

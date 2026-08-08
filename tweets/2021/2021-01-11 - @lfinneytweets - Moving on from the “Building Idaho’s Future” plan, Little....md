@@ -1,4 +1,5 @@
 ---
+title: "Moving on from the \u201cBuilding Idaho\u2019s Future\u201d plan, Little..."
 date: 2021-01-11
 time: 20:29:58
 tweet_id: "1348728883906924544"

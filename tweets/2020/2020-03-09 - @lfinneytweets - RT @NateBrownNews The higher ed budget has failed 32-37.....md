@@ -1,4 +1,5 @@
 ---
+title: "RT @NateBrownNews The higher ed budget has failed 32-37...."
 date: 2020-03-09
 time: 17:19:46
 tweet_id: "1237065555497988097"
@@ -20,7 +21,7 @@ related:
   - idpol
 ---
 
-RT @NateBrownNews: The higher ed budget has failed 32-37. #idleg #idpol https://t.co/N7KiHkmjJn
+RT @NateBrownNews: The higher ed budget has failed 32-37. #idleg #idpol <https://t.co/N7KiHkmjJn>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/ESrwbM3VAAcG2OE.jpg)

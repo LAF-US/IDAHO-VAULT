@@ -1,4 +1,5 @@
 ---
+title: "House Health and Welfare committee chair Rep. Fred Wood..."
 date: 2021-03-13
 time: 01:45:43
 tweet_id: "1370551615900450817"
@@ -20,7 +21,7 @@ related:
   - medicalcannabis
 ---
 
-House Health and Welfare committee chair Rep. Fred Wood told @davlinnews this morning that he isn't going to hold a hearing this session for proposed medical marijuana legislation. "There's simply not the votes." #idleg #idpol #medicalcannabis https://t.co/8fc3btNqdJ
+House Health and Welfare committee chair Rep. Fred Wood told @davlinnews this morning that he isn't going to hold a hearing this session for proposed medical marijuana legislation. "There's simply not the votes." #idleg #idpol #medicalcannabis <https://t.co/8fc3btNqdJ>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/ext_tw_video_thumb/1370549888157552641/pu/img/Hr28mIX5eJKjQV-u.jpg)

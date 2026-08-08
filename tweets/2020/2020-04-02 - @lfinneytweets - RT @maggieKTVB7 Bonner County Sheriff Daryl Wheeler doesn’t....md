@@ -1,4 +1,5 @@
 ---
+title: "RT @maggieKTVB7 Bonner County Sheriff Daryl Wheeler doesn\u2019t..."
 date: 2020-04-02
 time: 22:47:38
 tweet_id: "1245845373572108288"

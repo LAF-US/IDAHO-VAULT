@@ -1,4 +1,5 @@
 ---
+title: "RT @KTVBJoe Here is a clip of the confrontation at..."
 date: 2020-07-16
 time: 19:46:07
 tweet_id: "1283850418779348993"

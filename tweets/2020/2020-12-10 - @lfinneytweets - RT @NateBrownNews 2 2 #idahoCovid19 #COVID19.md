@@ -1,4 +1,5 @@
 ---
+title: "RT @NateBrownNews 2 2 #idahoCovid19 #COVID19"
 date: 2020-12-10
 time: 19:11:22
 tweet_id: "1337112690452393984"
@@ -20,7 +21,7 @@ related:
   - COVID19
 ---
 
-RT @NateBrownNews: 2/2 #idahoCovid19 #COVID19 https://t.co/6gvEpg8ljq
+RT @NateBrownNews: 2/2 #idahoCovid19 #COVID19 <https://t.co/6gvEpg8ljq>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/Eo5gqsGUcAExCsb.jpg)

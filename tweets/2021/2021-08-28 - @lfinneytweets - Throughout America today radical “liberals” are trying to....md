@@ -1,4 +1,5 @@
 ---
+title: "Throughout America today radical \u201cliberals\u201d are trying to..."
 date: 2021-08-28
 time: 02:14:05
 tweet_id: "1431439914361446410"

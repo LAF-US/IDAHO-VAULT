@@ -1,4 +1,5 @@
 ---
+title: "RT @uiargonaut The mask mandate @uidaho will continue into..."
 date: 2022-01-04
 time: 16:17:24
 tweet_id: "1478400177698488324"

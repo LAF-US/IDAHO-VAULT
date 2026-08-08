@@ -161,6 +161,6 @@ left it where it lies. Author named; authority not assumed as Logan; no office c
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

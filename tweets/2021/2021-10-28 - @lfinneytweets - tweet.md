@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2021-10-28
 time: 21:29:10
 tweet_id: "1453836263035850754"
@@ -13,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/TyN6GpynO2
+<https://t.co/TyN6GpynO2>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FC0QUxTVkAMgwe3.jpg)

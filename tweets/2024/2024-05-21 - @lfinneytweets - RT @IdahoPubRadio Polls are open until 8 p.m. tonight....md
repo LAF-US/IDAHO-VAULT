@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio Polls are open until 8 p.m. tonight..."
 date: 2024-05-21
 time: 22:04:51
 tweet_id: "1793040282260242591"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoPubRadio: Polls are open until 8 p.m. tonight across the state for the Idaho Primary Election. https://t.co/Ko9BcSySK2
+RT @IdahoPubRadio: Polls are open until 8 p.m. tonight across the state for the Idaho Primary Election. <https://t.co/Ko9BcSySK2>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GOIn3VaXMAARpTV.jpg)

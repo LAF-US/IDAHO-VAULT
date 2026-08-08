@@ -190,6 +190,6 @@ in `VAULT-CONVENTIONS.md`).
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

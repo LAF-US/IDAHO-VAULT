@@ -1,4 +1,5 @@
 ---
+title: "Why yes I would love to read the draft bill and get ready..."
 date: 2022-08-23
 time: 20:00:44
 tweet_id: "1562167976802930688"
@@ -13,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-Why yes I would love to read the draft bill and get ready for a special session, but unfortunately this is a live look at my current non-legislative workload https://t.co/xMq86lbSHG
+Why yes I would love to read the draft bill and get ready for a special session, but unfortunately this is a live look at my current non-legislative workload <https://t.co/xMq86lbSHG>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/Fa3vfSdVsAYsyqD.jpg)

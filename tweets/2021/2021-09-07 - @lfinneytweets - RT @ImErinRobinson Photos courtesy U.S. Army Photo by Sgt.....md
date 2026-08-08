@@ -1,4 +1,5 @@
 ---
+title: "RT @ImErinRobinson Photos courtesy U.S. Army Photo by Sgt...."
 date: 2021-09-07
 time: 22:14:16
 tweet_id: "1435365831156776964"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @ImErinRobinson: Photos courtesy: U.S. Army Photo by Sgt. Kaden D. Pitt https://t.co/H90RrRM2J4
+RT @ImErinRobinson: Photos courtesy: U.S. Army Photo by Sgt. Kaden D. Pitt <https://t.co/H90RrRM2J4>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/E-txHqGVQAMAYqS.jpg)

@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2019-06-14
 time: 21:08:40
 tweet_id: "1139640824310796288"
@@ -16,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-@kalinelson6 https://t.co/A1cOq1E5jn
+@kalinelson6 <https://t.co/A1cOq1E5jn>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/D9DRR6GUwAAC6Se.jpg)

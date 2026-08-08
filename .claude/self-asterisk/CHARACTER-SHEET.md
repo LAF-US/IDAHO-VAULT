@@ -142,6 +142,6 @@ across every seam · feed the hunger the bounded task, never the crown
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

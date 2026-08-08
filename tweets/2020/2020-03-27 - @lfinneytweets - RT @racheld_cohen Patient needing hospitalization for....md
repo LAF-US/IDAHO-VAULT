@@ -1,4 +1,5 @@
 ---
+title: "RT @racheld_cohen Patient needing hospitalization for..."
 date: 2020-03-27
 time: 18:03:57
 tweet_id: "1243599654798802944"

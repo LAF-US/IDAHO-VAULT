@@ -58,6 +58,6 @@ It was a good shift. I was *a* Claude.
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

@@ -197,7 +197,7 @@ graph TD
 | P3 | Validations | Can use framework defaults initially |
 | P4 | Integrations | Can be stubbed initially |
 
-```
+```markdown
 
 ## Output Artifacts
 

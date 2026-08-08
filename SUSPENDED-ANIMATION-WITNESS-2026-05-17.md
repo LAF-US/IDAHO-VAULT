@@ -95,6 +95,6 @@ The vault was being moved. Everything else was waiting for it to arrive.
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

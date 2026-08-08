@@ -1,4 +1,5 @@
 ---
+title: "RT @KeithRidler Idaho lawmakers hold news conference on..."
 date: 2021-01-11
 time: 17:10:46
 tweet_id: "1348678751056396289"
@@ -20,7 +21,7 @@ related:
   - idleg
 ---
 
-RT @KeithRidler: Idaho lawmakers hold news conference on conservative priorities. #idpol #idleg https://t.co/q11cz0hnwU
+RT @KeithRidler: Idaho lawmakers hold news conference on conservative priorities. #idpol #idleg <https://t.co/q11cz0hnwU>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/Erd332xU0AAgbxZ.jpg)

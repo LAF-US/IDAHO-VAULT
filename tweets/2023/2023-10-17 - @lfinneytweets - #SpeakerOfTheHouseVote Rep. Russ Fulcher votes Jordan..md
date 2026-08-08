@@ -1,4 +1,5 @@
 ---
+title: "#SpeakerOfTheHouseVote Rep. Russ Fulcher votes Jordan."
 date: 2023-10-17
 time: 17:12:17
 tweet_id: "1714328488763854912"

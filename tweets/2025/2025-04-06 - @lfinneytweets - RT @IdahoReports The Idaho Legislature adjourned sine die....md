@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports The Idaho Legislature adjourned sine die..."
 date: 2025-04-06
 time: 02:34:08
 tweet_id: "1908709782279905539"
@@ -18,7 +19,7 @@ related:
   - idleg
 ---
 
-RT @IdahoReports: The Idaho Legislature adjourned sine die (end of session) on April 4, 2025. #idleg https://t.co/TtkftiD0ba
+RT @IdahoReports: The Idaho Legislature adjourned sine die (end of session) on April 4, 2025. #idleg <https://t.co/TtkftiD0ba>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GnuekMdbcAAesL5.jpg)

@@ -1,4 +1,5 @@
 ---
+title: "Waiting for the Senate to assemble and possibly recess for..."
 date: 2021-03-19
 time: 15:41:52
 tweet_id: "1372936369173983233"
@@ -18,7 +19,7 @@ related:
   - idpol
 ---
 
-Waiting for the Senate to assemble and possibly recess for two weeks. The House comes to the floor at 10:30. #idleg #idpol https://t.co/r0JeNU9egY
+Waiting for the Senate to assemble and possibly recess for two weeks. The House comes to the floor at 10:30. #idleg #idpol <https://t.co/r0JeNU9egY>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/Ew2l5L0VgAgcco6.jpg)

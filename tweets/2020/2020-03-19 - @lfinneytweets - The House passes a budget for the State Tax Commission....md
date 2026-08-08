@@ -1,4 +1,5 @@
 ---
+title: "The House passes a budget for the State Tax Commission..."
 date: 2020-03-19
 time: 02:09:26
 tweet_id: "1240460340934201349"
@@ -18,7 +19,7 @@ related:
   - idpol
 ---
 
-The House passes a budget for the State Tax Commission 58-8. #idleg #idpol https://t.co/MB42e6N3Oo
+The House passes a budget for the State Tax Commission 58-8. #idleg #idpol <https://t.co/MB42e6N3Oo>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/ETcAEubU8AA9LiY.jpg)

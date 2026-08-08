@@ -1,4 +1,5 @@
 ---
+title: "tweet (668781)"
 date: 2025-04-04
 time: 01:38:13
 tweet_id: "1907970931483668781"
@@ -13,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/v8WCZsqfTS
+<https://t.co/v8WCZsqfTS>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/Gnp5coPa0AAiNVW.jpg)

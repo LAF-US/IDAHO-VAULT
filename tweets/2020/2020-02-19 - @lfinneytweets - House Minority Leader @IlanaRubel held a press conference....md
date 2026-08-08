@@ -1,4 +1,5 @@
 ---
+title: "House Minority Leader @IlanaRubel held a press conference..."
 date: 2020-02-19
 time: 21:32:46
 tweet_id: "1230243855124983809"
@@ -21,7 +22,7 @@ related:
   - idpol
 ---
 
-House Minority Leader @IlanaRubel held a press conference this afternoon on the property tax problem. @IdahoDems say there are several Democrat-authored and bipartisan bills that would help address the issue but have not received committee hearings. #idleg #idpol https://t.co/6DGcfvaoxW
+House Minority Leader @IlanaRubel held a press conference this afternoon on the property tax problem. @IdahoDems say there are several Democrat-authored and bipartisan bills that would help address the issue but have not received committee hearings. #idleg #idpol <https://t.co/6DGcfvaoxW>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/ERK0QtQUwAAmz55.jpg)

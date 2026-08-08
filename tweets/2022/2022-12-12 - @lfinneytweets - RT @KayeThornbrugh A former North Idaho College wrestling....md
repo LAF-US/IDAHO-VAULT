@@ -1,4 +1,5 @@
 ---
+title: "RT @KayeThornbrugh A former North Idaho College wrestling..."
 date: 2022-12-12
 time: 17:27:56
 tweet_id: "1602354580029075456"

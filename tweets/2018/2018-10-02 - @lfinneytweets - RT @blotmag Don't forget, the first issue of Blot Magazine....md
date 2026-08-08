@@ -1,4 +1,5 @@
 ---
+title: "RT @blotmag Don't forget, the first issue of Blot Magazine..."
 date: 2018-10-02
 time: 20:28:36
 tweet_id: "1047221836402982912"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @blotmag: Don't forget, the first issue of Blot Magazine hits stands Oct. 8. https://t.co/nLEPmBzoDK
+RT @blotmag: Don't forget, the first issue of Blot Magazine hits stands Oct. 8. <https://t.co/nLEPmBzoDK>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/Dod-XVpU8AARuJ-.jpg)

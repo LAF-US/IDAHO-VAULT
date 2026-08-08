@@ -1,4 +1,5 @@
 ---
+title: "INBOX @IDSecOfState announces list of presidential..."
 date: 2024-09-04
 time: 20:34:17
 tweet_id: "1831430605072167251"
@@ -18,7 +19,7 @@ related:
   - idpol
 ---
 
-INBOX: @IDSecOfState announces list of presidential candidates who have qualified to appear on the November 5th Idaho General Election ballot. #idpol https://t.co/h6RVnDpAoz
+INBOX: @IDSecOfState announces list of presidential candidates who have qualified to appear on the November 5th Idaho General Election ballot. #idpol <https://t.co/h6RVnDpAoz>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GWqMDFPa8AE-rBg.png)

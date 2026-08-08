@@ -1,4 +1,5 @@
 ---
+title: "It appears the Idaho Senate will not take up the veto vote..."
 date: 2023-03-29
 time: 00:53:28
 tweet_id: "1640879814398574596"
@@ -18,10 +19,10 @@ related:
   - idpol
 ---
 
-It appears the Idaho Senate will not take up the veto vote tonight, leaving the property tax bill hanging. Expect more politics tomorrow. #idleg #idpol https://t.co/nyYUqVGMdz https://t.co/cHNnOJFLWT
+It appears the Idaho Senate will not take up the veto vote tonight, leaving the property tax bill hanging. Expect more politics tomorrow. #idleg #idpol <https://t.co/nyYUqVGMdz> <https://t.co/cHNnOJFLWT>
 
 ## Links
-- https://x.com/IdahoReports/status/1640847766099296260
+- <https://x.com/IdahoReports/status/1640847766099296260>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/FsWTfcRWcAEwv9y.jpg)

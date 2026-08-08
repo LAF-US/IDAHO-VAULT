@@ -39,7 +39,7 @@ For enhanced coverage, we also scanned using:
 
 **Findings:**
 
-```
+```markdown
 - Documentation - Discord - OAuth2 1.md:399  [generic_secret_assignment]
 - Documentation - Discord - OAuth2.md:399  [generic_secret_assignment]
 - .claude/plugins/marketplaces/claude-plugins-official/external_plugins/discord/.npmrc  [secret_path]

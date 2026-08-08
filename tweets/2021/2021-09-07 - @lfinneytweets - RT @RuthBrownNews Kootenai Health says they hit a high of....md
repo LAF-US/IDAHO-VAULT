@@ -1,4 +1,5 @@
 ---
+title: "RT @RuthBrownNews Kootenai Health says they hit a high of..."
 date: 2021-09-07
 time: 20:53:03
 tweet_id: "1435345393114513411"

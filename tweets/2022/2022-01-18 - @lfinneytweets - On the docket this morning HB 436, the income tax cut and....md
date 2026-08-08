@@ -1,4 +1,5 @@
 ---
+title: "On the docket this morning HB 436, the income tax cut and..."
 date: 2022-01-18
 time: 16:05:34
 tweet_id: "1483470631312060417"
@@ -21,10 +22,10 @@ related:
 ---
 
 On the docket this morning: HB 436, the income tax cut and rebate. I covered the bill's introduction last week on the @IdahoReports blog. #idleg #idpol 
-https://t.co/6X4EhPuT5W https://t.co/oedo6n99Dd
+<https://t.co/6X4EhPuT5W> <https://t.co/oedo6n99Dd>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2022/01/12/tax-relief-bill-introduced-in-house-committee/
+- <https://blog.idahoreports.idahoptv.org/2022/01/12/tax-relief-bill-introduced-in-house-committee/>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FJZXmBhVEAEYOD7.jpg)

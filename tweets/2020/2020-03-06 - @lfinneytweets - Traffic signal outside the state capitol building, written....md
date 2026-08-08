@@ -1,4 +1,5 @@
 ---
+title: "Traffic signal outside the state capitol building, written..."
 date: 2020-03-06
 time: 19:35:11
 tweet_id: "1236012469199519745"
@@ -20,7 +21,7 @@ related:
   - idleg
 ---
 
-Traffic signal outside the state capitol building, written on a USPS label. Senate State Affairs to continue #HB500 hearing on transgender women in sports, Monday 8am. #idpol #idleg https://t.co/EC5WZazUvH
+Traffic signal outside the state capitol building, written on a USPS label. Senate State Affairs to continue #HB500 hearing on transgender women in sports, Monday 8am. #idpol #idleg <https://t.co/EC5WZazUvH>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EScyx14WsAEhmJT.jpg)

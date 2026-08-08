@@ -1,4 +1,5 @@
 ---
+title: "RT @gemstatebrian I wrote about the impasse in the..."
 date: 2024-04-03
 time: 03:58:17
 tweet_id: "1775372225270731104"

@@ -1,4 +1,5 @@
 ---
+title: "So, how long do we think it'll be until a Grangeville..."
 date: 2024-06-17
 time: 16:59:02
 tweet_id: "1802747795105104111"
@@ -16,7 +17,7 @@ related:
   - idpol
 ---
 
-So, how long do we think it'll be until a Grangeville bypass on Highway 95? #idpol https://t.co/mVH03JzQxR
+So, how long do we think it'll be until a Grangeville bypass on Highway 95? #idpol <https://t.co/mVH03JzQxR>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GQSlkOsaQAAjtgy.jpg)

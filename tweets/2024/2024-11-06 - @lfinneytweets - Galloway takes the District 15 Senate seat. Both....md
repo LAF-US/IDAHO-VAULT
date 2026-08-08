@@ -1,4 +1,5 @@
 ---
+title: "Galloway takes the District 15 Senate seat. Both..."
 date: 2024-11-06
 time: 10:38:21
 tweet_id: "1854111068551082314"
@@ -16,7 +17,7 @@ related:
   - idleg
 ---
 
-Galloway takes the District 15 Senate seat. Both incumbents. Healey is reelected by 1,780 votes and Berch by just 227.  #idleg https://t.co/BIJQdpihvN
+Galloway takes the District 15 Senate seat. Both incumbents. Healey is reelected by 1,780 votes and Berch by just 227.  #idleg <https://t.co/BIJQdpihvN>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GbsfJrDbkAElYwu.png)

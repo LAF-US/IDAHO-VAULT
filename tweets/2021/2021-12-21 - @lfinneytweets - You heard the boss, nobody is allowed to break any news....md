@@ -1,4 +1,5 @@
 ---
+title: "You heard the boss, nobody is allowed to break any news..."
 date: 2021-12-21
 time: 19:59:03
 tweet_id: "1473382526559289346"
@@ -13,10 +14,10 @@ related:
   - lfinneytweets
 ---
 
-You heard the boss, nobody is allowed to break any news until the new year. https://t.co/odc1zzJcvr https://t.co/gRceKzryMO
+You heard the boss, nobody is allowed to break any news until the new year. <https://t.co/odc1zzJcvr> <https://t.co/gRceKzryMO>
 
 ## Links
-- https://t.co/odc1zzJcvr
+- <https://t.co/odc1zzJcvr>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/FHKBmLrUcAEMkcG.jpg)

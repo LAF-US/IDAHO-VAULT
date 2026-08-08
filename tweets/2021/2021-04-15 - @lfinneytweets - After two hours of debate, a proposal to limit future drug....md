@@ -1,4 +1,5 @@
 ---
+title: "After two hours of debate, a proposal to limit future drug..."
 date: 2021-04-15
 time: 19:55:59
 tweet_id: "1382784790106054656"
@@ -18,7 +19,7 @@ related:
   - idpol
 ---
 
-After two hours of debate, a proposal to limit future drug legalizations has failed to pass the House. As a constitutional amendment, the measure needed 47 votes to advance to the Senate before appearing on the ballot. #idleg #idpol https://t.co/CQ8kmO1P0v
+After two hours of debate, a proposal to limit future drug legalizations has failed to pass the House. As a constitutional amendment, the measure needed 47 votes to advance to the Senate before appearing on the ballot. #idleg #idpol <https://t.co/CQ8kmO1P0v>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EzChhHvUcAAkdZw.jpg)

@@ -1,4 +1,5 @@
 ---
+title: "RT @brandendurst For Immediate Release #idpol #idleg #idedu"
 date: 2023-09-25
 time: 19:26:42
 tweet_id: "1706389783805825209"
@@ -22,7 +23,7 @@ related:
   - idedu
 ---
 
-RT @brandendurst: For Immediate Release: #idpol #idleg #idedu https://t.co/idSEjTGMny
+RT @brandendurst: For Immediate Release: #idpol #idleg #idedu <https://t.co/idSEjTGMny>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/F65JHyHaEAAXYE8.jpg)

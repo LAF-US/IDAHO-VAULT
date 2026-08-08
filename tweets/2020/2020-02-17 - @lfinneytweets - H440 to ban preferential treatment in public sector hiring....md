@@ -1,4 +1,5 @@
 ---
+title: "H440 to ban preferential treatment in public sector hiring..."
 date: 2020-02-17
 time: 18:45:26
 tweet_id: "1229476967084216320"
@@ -18,7 +19,7 @@ related:
   - idleg
 ---
 
-H440 to ban preferential treatment in public sector hiring (aka affirmative action) has passed the Idaho House 55-15 and now heads to the Senate. #idpol #idleg https://t.co/yFLcFTTv8p
+H440 to ban preferential treatment in public sector hiring (aka affirmative action) has passed the Idaho House 55-15 and now heads to the Senate. #idpol #idleg <https://t.co/yFLcFTTv8p>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EQ_6qtQUcAALnfE.jpg)

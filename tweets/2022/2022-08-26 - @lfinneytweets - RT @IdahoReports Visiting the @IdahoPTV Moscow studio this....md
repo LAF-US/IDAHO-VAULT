@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Visiting the @IdahoPTV Moscow studio this..."
 date: 2022-08-26
 time: 23:05:32
 tweet_id: "1563301649309134848"
@@ -17,7 +18,7 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoReports: Visiting the @IdahoPTV Moscow studio this week with some @uidaho journalism students! https://t.co/fbjNppJF7u
+RT @IdahoReports: Visiting the @IdahoPTV Moscow studio this week with some @uidaho journalism students! <https://t.co/fbjNppJF7u>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FbH2fxAUYAETuDr.jpg)

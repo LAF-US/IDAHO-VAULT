@@ -39,8 +39,8 @@ The tenth of the numbered Wizard's Rules stated across Terry Goodkind's *Sword o
 
 ## Sources / URLs
 
-- https://www.goodreads.com/quotes/tag/wizard-s-rules
-- https://sot.fandom.com/wiki/Wizard's_Rules
+- <https://www.goodreads.com/quotes/tag/wizard-s-rules>
+- <https://sot.fandom.com/wiki/Wizard's_Rules>
 
 ---
 

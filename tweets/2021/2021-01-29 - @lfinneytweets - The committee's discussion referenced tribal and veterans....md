@@ -1,4 +1,5 @@
 ---
+title: "The committee's discussion referenced tribal and veterans..."
 date: 2021-01-29
 time: 16:45:18
 tweet_id: "1355195325179334657"

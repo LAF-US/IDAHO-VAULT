@@ -1,4 +1,5 @@
 ---
+title: "#idleg #idpol"
 date: 2021-02-13
 time: 00:36:05
 tweet_id: "1360387233493078016"
@@ -18,9 +19,9 @@ related:
   - idpol
 ---
 
-\#idleg #idpol https://t.co/pW5t7B0dg5
+\#idleg #idpol <https://t.co/pW5t7B0dg5>
 
 ## Links
-- https://x.com/maggieKTVB7/status/1360384868308320258
+- <https://x.com/maggieKTVB7/status/1360384868308320258>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1360387233493078016)

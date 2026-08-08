@@ -80,7 +80,7 @@ Output brief state to:
 
 ## OUTPUT FORMAT
 
-```
+```text
 AWAKEN v0.1 REPORT — [AGENT NAME]
 
 WHO: [Name] @ [Platform] | [Persona] | [Session/branch]

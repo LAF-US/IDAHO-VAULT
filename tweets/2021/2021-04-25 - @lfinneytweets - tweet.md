@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2021-04-25
 time: 21:31:07
 tweet_id: "1386432607710187522"
@@ -16,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-@MasterTes https://t.co/s5iX7WwsWy
+@MasterTes <https://t.co/s5iX7WwsWy>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/Ez2ZG_SVIAAYs3A.png)

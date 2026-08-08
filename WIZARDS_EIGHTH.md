@@ -39,8 +39,8 @@ The eighth of the numbered Wizard's Rules stated across Terry Goodkind's *Sword 
 
 ## Sources / URLs
 
-- https://quotepark.com/quotes/1522499-terry-goodkind-wizards-eighth-rule-talga-vassternich-deserve-v/
-- https://sot.fandom.com/wiki/Wizard's_Rules
+- <https://quotepark.com/quotes/1522499-terry-goodkind-wizards-eighth-rule-talga-vassternich-deserve-v/>
+- <https://sot.fandom.com/wiki/Wizard's_Rules>
 
 ---
 

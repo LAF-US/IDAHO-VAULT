@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2022-06-29
 time: 01:25:25
 tweet_id: "1541955965938872321"
@@ -16,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-@LPNational @ChubbyPrimate https://t.co/8RvZRcp1Yf
+@LPNational @ChubbyPrimate <https://t.co/8RvZRcp1Yf>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/FWYgxqhVEAAOpBX.jpg)

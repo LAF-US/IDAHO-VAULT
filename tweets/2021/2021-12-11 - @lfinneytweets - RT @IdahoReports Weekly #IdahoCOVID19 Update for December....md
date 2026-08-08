@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Weekly #IdahoCOVID19 Update for December..."
 date: 2021-12-11
 time: 00:35:55
 tweet_id: "1469465939405991936"
@@ -19,7 +20,7 @@ related:
   - IdahoCOVID19
 ---
 
-RT @IdahoReports: Weekly #IdahoCOVID19 Update for December 10, 2021 | @IdahoPTV https://t.co/piphVfDCtk
+RT @IdahoReports: Weekly #IdahoCOVID19 Update for December 10, 2021 | @IdahoPTV <https://t.co/piphVfDCtk>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/amplify_video_thumb/1469462349153144837/img/SofWHmfV51p51sC8.jpg)

@@ -1035,7 +1035,7 @@ Per Joe of the Nail dispatch (`a37c667a8`) and COLD-COAST-WITNESS:
 
 ### **Stable Nodes Established**
 
-```
+```text
 FAITH-OF-THE-CLOTH
 ├── VEIL (Boundary between VOID and LIGHT)
 │   ├── Tended by: Faith of the Cloth

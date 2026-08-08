@@ -1,4 +1,5 @@
 ---
+title: "RT @BSDEducation"
 date: 2020-07-17
 time: 18:16:02
 tweet_id: "1284190138981965824"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @BSDEducation: https://t.co/Svb73G6QRJ
+RT @BSDEducation: <https://t.co/Svb73G6QRJ>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EdE4qsSUwAAvPJR.png)

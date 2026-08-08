@@ -47,8 +47,8 @@ None at this time.
 
 ## Sources / URLs
 
-- Archived snapshot: https://web.archive.org/web/20251105203533/https://visualfindings.blogspot.com/2007/11/terry-goodkinds-grace.html
-- Original post: https://visualfindings.blogspot.com/2007/11/terry-goodkinds-grace.html
+- Archived snapshot: <https://web.archive.org/web/20251105203533/https://visualfindings.blogspot.com/2007/11/terry-goodkinds-grace.html>
+- Original post: <https://visualfindings.blogspot.com/2007/11/terry-goodkinds-grace.html>
 
 ---
 

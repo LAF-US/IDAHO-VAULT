@@ -1,4 +1,5 @@
 ---
+title: "INBOX Gov. Brad Little appoints Bellevue mayor Ned Burns to..."
 date: 2021-12-23
 time: 17:53:46
 tweet_id: "1474075775196303365"
@@ -21,7 +22,7 @@ related:
   - idpol
 ---
 
-INBOX: Gov. Brad Little appoints Bellevue mayor Ned Burns to the District 26 House seat vacated by Muffy Davis (press releases via @GovernorLittle & @idahodlcc). #idleg #idpol https://t.co/hevj6lt7C8
+INBOX: Gov. Brad Little appoints Bellevue mayor Ned Burns to the District 26 House seat vacated by Muffy Davis (press releases via @GovernorLittle & @idahodlcc). #idleg #idpol <https://t.co/hevj6lt7C8>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FHT333UVEA4_ni3.jpg)

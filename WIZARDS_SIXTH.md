@@ -39,8 +39,8 @@ The sixth of the numbered Wizard's Rules stated across Terry Goodkind's *Sword o
 
 ## Sources / URLs
 
-- https://becomingthemuse.net/2021/11/21/wizard-s-rules-sword-of-truth-terry-goodkind/
-- https://sot.fandom.com/wiki/Wizard's_Rules
+- <https://becomingthemuse.net/2021/11/21/wizard-s-rules-sword-of-truth-terry-goodkind/>
+- <https://sot.fandom.com/wiki/Wizard's_Rules>
 
 ---
 

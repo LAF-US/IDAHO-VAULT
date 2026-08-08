@@ -7,7 +7,7 @@ created: 2026-04-14
 ---
 | “ | *We didn't lose our family. Only our parents.* | ” |
 | --- | --- | --- |
-| | |
+| | | |
 
 **The Baudelaire Family** is a family that is central in *[A Series of Unfortunate Events](https://snicket.fandom.com/wiki/A_Series_of_Unfortunate_Events "A Series of Unfortunate Events")* and associated with [VFD](https://snicket.fandom.com/wiki/Volunteer_Fire_Department "Volunteer Fire Department").
 

@@ -1,4 +1,5 @@
 ---
+title: "At the @IdahoPress Club breakfast with Governor Brad Little..."
 date: 2020-02-19
 time: 15:46:52
 tweet_id: "1230156804383895552"
@@ -22,7 +23,7 @@ related:
   - idleg
 ---
 
-At the @IdahoPress Club breakfast with Governor Brad Little taking questions from reporters. Issues this morning have included transportation, education initiatives, cannabis bills, and property taxes. #idpol #idedu #idleg https://t.co/wvIzyWBtW1
+At the @IdahoPress Club breakfast with Governor Brad Little taking questions from reporters. Issues this morning have included transportation, education initiatives, cannabis bills, and property taxes. #idpol #idedu #idleg <https://t.co/wvIzyWBtW1>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/ERJlFlKU8AEuher.jpg)

@@ -1,4 +1,5 @@
 ---
+title: "Now we're talking"
 date: 2023-12-16
 time: 01:32:14
 tweet_id: "1735835189363016078"
@@ -17,7 +18,7 @@ related:
   - lfinneytweets
 ---
 
-@tjnunamaker @Lemommeringue Now we're talking https://t.co/11jybQCUiF
+@tjnunamaker @Lemommeringue Now we're talking <https://t.co/11jybQCUiF>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GBbszGqboAAHz3-.jpg)

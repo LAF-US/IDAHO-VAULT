@@ -116,7 +116,7 @@ code snippet 4
 2\. There is another element to this
 
 - Something must have already decided that the string returned by the model is valid JSON and have parsed it.
-- In case that **z.output<T> extends string**, something somewhere must have already decided that string is an acceptable input format for the tool, and we do not need to parse JSON. (A string by itself is not valid JSON, **JSON.parse("foo")** will result in a SyntaxError).
+- In case that **`z.output<T>` extends string**, something somewhere must have already decided that string is an acceptable input format for the tool, and we do not need to parse JSON. (A string by itself is not valid JSON, **JSON.parse("foo")** will result in a SyntaxError).
 
 ## Introducing the OutputParser class
 

@@ -1,4 +1,5 @@
 ---
+title: "Ever since our Greater Idaho story on @IdahoReports, I..."
 date: 2023-12-14
 time: 00:08:37
 tweet_id: "1735089370762547548"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-Ever since our Greater Idaho story on @IdahoReports, I cannot stop thinking about how small the eastern states are... https://t.co/fRep78RMNz
+Ever since our Greater Idaho story on @IdahoReports, I cannot stop thinking about how small the eastern states are... <https://t.co/fRep78RMNz>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GBRGc4abAAEhJB5.jpg)

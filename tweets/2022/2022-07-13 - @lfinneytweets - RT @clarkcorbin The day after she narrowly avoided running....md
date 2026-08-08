@@ -1,4 +1,5 @@
 ---
+title: "RT @clarkcorbin The day after she narrowly avoided running..."
 date: 2022-07-13
 time: 22:50:54
 tweet_id: "1547352900350779392"

@@ -299,7 +299,7 @@ Successful Response
 
 Test the endpoints **live**
 
-```
+```text
 import { Mistral } from "@mistralai/mistralai";
 
 const mistral = new Mistral({
@@ -323,7 +323,7 @@ async function run() {
 run();
 ```
 
-```
+```text
 import { Mistral } from "@mistralai/mistralai";
 
 const mistral = new Mistral({
@@ -347,7 +347,7 @@ async function run() {
 run();
 ```
 
-```
+```text
 from mistralai import Mistral
 import os
 
@@ -366,7 +366,7 @@ with Mistral(
     print(res)
 ```
 
-```
+```text
 from mistralai import Mistral
 import os
 
@@ -385,7 +385,7 @@ with Mistral(
     print(res)
 ```
 
-```
+```text
 curl https://api.mistral.ai/v1/chat/completions \
  -X POST \
  -H 'Authorization: Bearer YOUR_APIKEY_HERE' \
@@ -400,7 +400,7 @@ curl https://api.mistral.ai/v1/chat/completions \
 }'
 ```
 
-```
+```text
 curl https://api.mistral.ai/v1/chat/completions \
  -X POST \
  -H 'Authorization: Bearer YOUR_APIKEY_HERE' \
@@ -419,7 +419,7 @@ curl https://api.mistral.ai/v1/chat/completions \
 
 200 (text/event-stream)
 
-```
+```json
 {
   "choices": [
     {
@@ -436,7 +436,7 @@ curl https://api.mistral.ai/v1/chat/completions \
 }
 ```
 
-```
+```json
 {
   "choices": [
     {
@@ -453,11 +453,11 @@ curl https://api.mistral.ai/v1/chat/completions \
 }
 ```
 
-```
+```text
 null
 ```
 
-```
+```text
 null
 ```
 

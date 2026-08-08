@@ -1,4 +1,5 @@
 ---
+title: "RT @idahofreedom Idaho residents have been clamoring for..."
 date: 2023-03-29
 time: 22:52:17
 tweet_id: "1641211704783560705"

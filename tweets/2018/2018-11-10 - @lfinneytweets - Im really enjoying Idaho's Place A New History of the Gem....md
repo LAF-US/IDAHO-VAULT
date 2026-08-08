@@ -1,4 +1,5 @@
 ---
+title: "Im really enjoying Idaho's Place A New History of the Gem..."
 date: 2018-11-10
 time: 20:22:45
 tweet_id: "1061353487844294656"
@@ -16,10 +17,10 @@ related:
   - lfinneytweets
 ---
 
-@annehelen Im really enjoying Idaho's Place: A New History of the Gem State https://t.co/EeaaLHXwNP
+@annehelen Im really enjoying Idaho's Place: A New History of the Gem State <https://t.co/EeaaLHXwNP>
 
 ## Links
-- https://www.amazon.com/dp/0295995564/ref=cm_sw_r_cp_apa_d3Z5Bb840GF49
+- <https://www.amazon.com/dp/0295995564/ref=cm_sw_r_cp_apa_d3Z5Bb840GF49>
 
 *In reply to [@annehelen](https://twitter.com/annehelen)*
 
