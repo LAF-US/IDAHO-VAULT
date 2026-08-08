@@ -13,7 +13,7 @@
 #
 # (Intentionally no global pairing default — pairing lives in each notebook's own metadata.)
 
-# Do not record the writing tool's own version inside the twin.
+# This setting keeps the writing tool's own version out of the twin.
 #
 # jupytext stamps `jupytext.text_representation.jupytext_version` into every twin it
 # writes. That value is not a compatibility key — `format_version` is the one jupytext
