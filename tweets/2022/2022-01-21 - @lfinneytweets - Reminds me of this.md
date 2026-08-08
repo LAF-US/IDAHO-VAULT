@@ -1,4 +1,5 @@
 ---
+title: "Reminds me of this"
 date: 2022-01-21
 time: 16:02:23
 tweet_id: "1484556994841174018"
@@ -16,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-@nicoleMfoy Reminds me of this https://t.co/O3aFGqU9TF
+@nicoleMfoy Reminds me of this <https://t.co/O3aFGqU9TF>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FJo0t2mVUAIMOfr.jpg)

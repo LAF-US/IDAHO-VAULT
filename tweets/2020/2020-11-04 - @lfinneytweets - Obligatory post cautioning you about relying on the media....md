@@ -1,4 +1,5 @@
 ---
+title: "Obligatory post cautioning you about relying on the media..."
 date: 2020-11-04
 time: 02:00:38
 tweet_id: "1323807336108945408"
@@ -13,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-Obligatory post cautioning you about relying on "the media" to call election results https://t.co/5i29bsEaoK
+Obligatory post cautioning you about relying on "the media" to call election results <https://t.co/5i29bsEaoK>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/El8bwZnVoAAZMKG.jpg)

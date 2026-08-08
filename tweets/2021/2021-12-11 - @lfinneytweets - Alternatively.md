@@ -1,4 +1,5 @@
 ---
+title: "Alternatively"
 date: 2021-12-11
 time: 06:43:43
 tweet_id: "1469558496353914881"
@@ -14,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-@KelcieMMorris Alternatively https://t.co/DwZDf9bT55
+@KelcieMMorris Alternatively <https://t.co/DwZDf9bT55>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/FGTro2NUcAETdUf.jpg)

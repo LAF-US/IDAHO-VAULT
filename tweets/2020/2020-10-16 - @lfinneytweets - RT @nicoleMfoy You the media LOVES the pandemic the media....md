@@ -1,4 +1,5 @@
 ---
+title: "RT @nicoleMfoy You the media LOVES the pandemic the media..."
 date: 2020-10-16
 time: 16:40:37
 tweet_id: "1317143421757263872"
@@ -17,7 +18,7 @@ related:
 
 RT @nicoleMfoy: You: the media LOVES the pandemic
 
-the media by Friday, every time: https://t.co/jEwftQKeuh
+the media by Friday, every time: <https://t.co/jEwftQKeuh>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/EkdsobGU8AECGqi.jpg)

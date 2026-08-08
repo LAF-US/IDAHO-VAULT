@@ -1,4 +1,5 @@
 ---
+title: "Perspectives from Latah County, ID, where Democrats were..."
 date: 2024-11-10
 time: 22:09:13
 tweet_id: "1855734484936831442"
@@ -18,7 +19,7 @@ related:
   - idleg
 ---
 
-Perspectives from Latah County, ID, where Democrats were unable to retake any North Idaho seats in the state legislature and President-elect Donald Trump was the first GOP presidential candidate to win the county since George Bush. #idpol #idleg https://t.co/EfImrmPnYT
+Perspectives from Latah County, ID, where Democrats were unable to retake any North Idaho seats in the state legislature and President-elect Donald Trump was the first GOP presidential candidate to win the county since George Bush. #idpol #idleg <https://t.co/EfImrmPnYT>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/ext_tw_video_thumb/1855734366976258048/pu/img/Q-qZ-bGrDB4Q5HQh.jpg)

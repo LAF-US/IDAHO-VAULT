@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports As Idaho sits on a nearly billion-dollar..."
 date: 2021-10-20
 time: 20:08:20
 tweet_id: "1450916815903723520"

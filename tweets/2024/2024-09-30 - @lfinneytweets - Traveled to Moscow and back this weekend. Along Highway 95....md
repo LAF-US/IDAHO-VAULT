@@ -1,4 +1,5 @@
 ---
+title: "Traveled to Moscow and back this weekend. Along Highway 95..."
 date: 2024-09-30
 time: 17:26:27
 tweet_id: "1840805421080330247"
@@ -16,7 +17,7 @@ related:
   - idpol
 ---
 
-Traveled to Moscow and back this weekend. Along Highway 95 I saw approximately 5 "Vote No" signs for every "Vote Yes" on Proposition 1. #idpol https://t.co/Vo7thsh7vw
+Traveled to Moscow and back this weekend. Along Highway 95 I saw approximately 5 "Vote No" signs for every "Vote Yes" on Proposition 1. #idpol <https://t.co/Vo7thsh7vw>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GYvavMhaEAAImph.jpg)

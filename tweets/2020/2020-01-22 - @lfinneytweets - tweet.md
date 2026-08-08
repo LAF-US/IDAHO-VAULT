@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2020-01-22
 time: 18:23:37
 tweet_id: "1220049395522998272"
@@ -13,10 +14,10 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/8GnGizlWkY https://t.co/Nxf7xmytUb
+<https://t.co/8GnGizlWkY> <https://t.co/Nxf7xmytUb>
 
 ## Links
-- https://x.com/clarkcorbin/status/1220038531424243712
+- <https://x.com/clarkcorbin/status/1220038531424243712>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EO58dSNUcAA2uLY.jpg)

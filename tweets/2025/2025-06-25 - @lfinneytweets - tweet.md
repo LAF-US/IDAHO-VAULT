@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2025-06-25
 time: 23:09:27
 tweet_id: "1938011686994383059"
@@ -16,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-@kissphoria https://t.co/TkAHioLgye
+@kissphoria <https://t.co/TkAHioLgye>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/GuUzWv6aQAAMxkr.jpg)

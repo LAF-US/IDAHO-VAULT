@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2021-01-06
 time: 23:29:50
 tweet_id: "1346962207557382144"
@@ -13,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/kOCo1rGEK7
+<https://t.co/kOCo1rGEK7>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/ErFe_NfVcAAaI_a.jpg)

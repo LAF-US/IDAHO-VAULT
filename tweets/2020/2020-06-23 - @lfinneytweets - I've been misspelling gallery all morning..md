@@ -1,4 +1,5 @@
 ---
+title: "I've been misspelling gallery all morning."
 date: 2020-06-23
 time: 20:41:04
 tweet_id: "1275529328642584576"
@@ -13,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-I've been misspelling "gallery" all morning. https://t.co/jHxt5n1xrE
+I've been misspelling "gallery" all morning. <https://t.co/jHxt5n1xrE>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/EbOXKDEU0AIE-jc.jpg)

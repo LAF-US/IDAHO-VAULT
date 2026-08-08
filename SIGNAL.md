@@ -66,7 +66,7 @@ This conversation found something significant that other conversations should kn
 
 Every signal follows this structure:
 
-```
+```text
 SIGNAL: [TYPE]
 FROM: [conversation name] — [tier]
 TO: [target conversation, tier, or "ALL" / "LOGAN"]
@@ -128,7 +128,7 @@ A signal emitted between LEVELSET cycles should be referenced in the next LEVELS
 
 ### ESCALATE — TASK finds something bigger
 
-```
+```text
 SIGNAL: ESCALATE
 FROM: TASK: LEVELSET reports
 TO: PERSISTENT: ADMINISTRATION
@@ -149,7 +149,7 @@ DECISIONS.md: 2026-03-14 entry confirms promotion
 
 ### COLLISION — concurrent file edits
 
-```
+```text
 SIGNAL: COLLISION
 FROM: STORY: JFAC Open Meetings
 TO: PERMANENT: CODE AUTHORITY
@@ -170,7 +170,7 @@ CODE AUTHORITY branch: claude/levelset-multi-conversation-zWxJc
 
 ### BLOCK — waiting on external input
 
-```
+```text
 SIGNAL: BLOCK
 FROM: PROJECT: 2026 Budget Tracker
 TO: LOGAN
@@ -189,7 +189,7 @@ None — requesting source material.
 
 ### DISCOVERY — found a connection
 
-```
+```text
 SIGNAL: DISCOVERY
 FROM: INQUIRY: campaign finance
 TO: STORY: JFAC Open Meetings

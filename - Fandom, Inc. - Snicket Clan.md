@@ -7,7 +7,7 @@ created: 2026-04-14
 ---
 | “ | *We take of our own. We Snickets take care of own.* | ” |
 | --- | --- | --- |
-| | |
+| | | |
 
 The **Snicket Family** (or **Snicket Clan** [^2]) is a family largely involved in the secret organization [V.F.D.](https://snicket.fandom.com/wiki/Volunteer_Fire_Department "Volunteer Fire Department").
 

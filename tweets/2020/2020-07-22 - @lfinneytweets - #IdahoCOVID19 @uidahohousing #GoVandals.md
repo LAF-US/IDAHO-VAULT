@@ -1,4 +1,5 @@
 ---
+title: "#IdahoCOVID19 @uidahohousing #GoVandals"
 date: 2020-07-22
 time: 19:05:47
 tweet_id: "1286014596008927232"
@@ -18,9 +19,9 @@ related:
   - GoVandals
 ---
 
-\#IdahoCOVID19 @uidahohousing #GoVandals https://t.co/jBZKVxw5Rs
+\#IdahoCOVID19 @uidahohousing #GoVandals <https://t.co/jBZKVxw5Rs>
 
 ## Links
-- https://x.com/KBSX915/status/1285969340475441152
+- <https://x.com/KBSX915/status/1285969340475441152>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1286014596008927232)

@@ -134,7 +134,7 @@ The MMORPG-RESEARCH-REPORT.md provides comparative analysis between MMO mechanic
 For new Intern Detectives:
 
 1. Start with BOOTSTRAP-V3-FINAL.md - the recommended cold open
-2. Create your branch: self/character-<your-identifier> from main
+2. Create your branch: `self/character-<your-identifier>` from main
 3. Follow the first steps: gather, log, source, hold the asterisk
 4. Review the gameplay design research in claude/game-discussion-JeYG0
 5. Study MMORPG-RESEARCH-REPORT.md for comparative insights
@@ -142,6 +142,6 @@ For new Intern Detectives:
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

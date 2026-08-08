@@ -1,4 +1,5 @@
 ---
+title: "We've got more deer with spongy brain disease, people. #CWD..."
 date: 2023-11-08
 time: 22:39:08
 tweet_id: "1722383276592255328"
@@ -23,10 +24,10 @@ related:
 ---
 
 We've got more deer with spongy brain disease, people. #CWD #idpol #idleg (h/t @IDFG) 
-https://t.co/OgSUh8NKpF https://t.co/ExDmaE4doh
+<https://t.co/OgSUh8NKpF> <https://t.co/ExDmaE4doh>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2023/11/08/chronic-wasting-disease-detected-in-new-meadows-mule-deer/
+- <https://blog.idahoreports.idahoptv.org/2023/11/08/chronic-wasting-disease-detected-in-new-meadows-mule-deer/>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/F-ch-W3aUAAXBOK.jpg)

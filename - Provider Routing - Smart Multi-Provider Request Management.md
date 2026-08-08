@@ -71,7 +71,7 @@ The three sort options are:
 - `"throughput"`: prioritize highest throughput
 - `"latency"`: prioritize lowest latency
 
-```
+```text
 1import { OpenRouter } from '@openrouter/sdk';
 2
 3const openRouter = new OpenRouter({
@@ -96,7 +96,7 @@ To *always* prioritize low latency, and not apply any load balancing, set `sort`
 
 You can append `:nitro` to any model slug as a shortcut to sort by throughput. This is exactly equivalent to setting `provider.sort` to `"throughput"`.
 
-```
+```text
 1import { OpenRouter } from '@openrouter/sdk';
 2
 3const openRouter = new OpenRouter({
@@ -114,7 +114,7 @@ You can append `:nitro` to any model slug as a shortcut to sort by throughput. T
 
 You can append `:floor` to any model slug as a shortcut to sort by price. This is exactly equivalent to setting `provider.sort` to `"price"`.
 
-```
+```text
 1import { OpenRouter } from '@openrouter/sdk';
 2
 3const openRouter = new OpenRouter({
@@ -147,7 +147,7 @@ To explicitly use the default behavior, set `partition: "model"`. For more detai
 
 When you have multiple acceptable models and want to use whichever has the best performance right now, use `partition: "none"` with throughput or latency sorting. This is useful when you care more about speed than using a specific model.
 
-```
+```text
 1import { OpenRouter } from '@openrouter/sdk';
 2
 3const openRouter = new OpenRouter({
@@ -208,7 +208,7 @@ Percentile-based routing is useful when you need predictable performance charact
 
 Combine `partition: "none"` with performance thresholds to find the cheapest option across multiple models that meets your performance requirements. This is useful when you have a performance floor but want to minimize costs.
 
-```
+```text
 1import { OpenRouter } from '@openrouter/sdk';
 2
 3const openRouter = new OpenRouter({
@@ -239,7 +239,7 @@ In this example, OpenRouter will find the cheapest model and provider across all
 
 You can also use `preferred_max_latency` to set a maximum acceptable latency:
 
-```
+```text
 1import { OpenRouter } from '@openrouter/sdk';
 2
 3const openRouter = new OpenRouter({
@@ -269,7 +269,7 @@ You can also use `preferred_max_latency` to set a maximum acceptable latency:
 
 You can specify multiple percentile cutoffs to set both typical and worst-case performance requirements. All specified cutoffs must be met for a model and provider to be in the preferred group.
 
-```
+```text
 1import { OpenRouter } from '@openrouter/sdk';
 2
 3const openRouter = new OpenRouter({
@@ -298,7 +298,7 @@ You can specify multiple percentile cutoffs to set both typical and worst-case p
 
 If you use [Bring Your Own Key (BYOK)](https://openrouter.ai/docs/guides/overview/auth/byok) and want to maximize usage of your own API keys, `partition: "none"` can help. When your primary model doesn’t have a BYOK provider available, OpenRouter can route to a fallback model that does support BYOK.
 
-```
+```text
 1import { OpenRouter } from '@openrouter/sdk';
 2
 3const openRouter = new OpenRouter({
@@ -344,7 +344,7 @@ OpenRouter will try them one at a time and proceed to other providers if none ar
 
 This example skips over OpenAI (which doesn’t host Mixtral), tries Together, and then falls back to the normal list of providers on OpenRouter:
 
-```
+```text
 1import { OpenRouter } from '@openrouter/sdk';
 2
 3const openRouter = new OpenRouter({
@@ -365,7 +365,7 @@ This example skips over OpenAI (which doesn’t host Mixtral), tries Together, a
 
 Here’s an example with `allow_fallbacks` set to `false` that skips over OpenAI (which doesn’t host Mixtral), tries Together, and then fails if Together fails:
 
-```
+```text
 1import { OpenRouter } from '@openrouter/sdk';
 2
 3const openRouter = new OpenRouter({
@@ -409,7 +409,7 @@ For example, DeepInfra offers DeepSeek R1 through multiple endpoints:
 
 By copying the exact provider slug and using it in your request’s `order` array, you can ensure your request is routed to the specific endpoint you want:
 
-```
+```text
 1import { OpenRouter } from '@openrouter/sdk';
 2
 3const openRouter = new OpenRouter({
@@ -445,7 +445,7 @@ With the default routing strategy, providers that don’t support all the [LLM p
 
 For example, to only use providers that support JSON formatting:
 
-```
+```text
 1import { OpenRouter } from '@openrouter/sdk';
 2
 3const openRouter = new OpenRouter({
@@ -483,7 +483,7 @@ This is also available as an account-wide setting in [your privacy settings](htt
 
 To exclude providers that don’t comply with your data policies, set `data_collection` to `deny`:
 
-```
+```text
 1import { OpenRouter } from '@openrouter/sdk';
 2
 3const openRouter = new OpenRouter({
@@ -517,7 +517,7 @@ This is also available as an account-wide setting in [your privacy settings](htt
 
 To ensure a request only uses ZDR endpoints, set `zdr` to `true`:
 
-```
+```text
 1import { OpenRouter } from '@openrouter/sdk';
 2
 3const openRouter = new OpenRouter({
@@ -552,7 +552,7 @@ This parameter is useful for applications that need to ensure their requests onl
 
 To ensure a request only uses models that allow text distillation, set `enforce_distillable_text` to `true`:
 
-```
+```text
 1import { OpenRouter } from '@openrouter/sdk';
 2
 3const openRouter = new OpenRouter({
@@ -575,7 +575,7 @@ To guarantee that your request is only served by the top (lowest-cost) provider,
 
 This is combined with the `order` field from [Ordering Specific Providers](https://openrouter.ai/docs/guides/routing/provider-selection#ordering-specific-providers) to restrict the providers that OpenRouter will prioritize to just your chosen list.
 
-```
+```text
 1import { OpenRouter } from '@openrouter/sdk';
 2
 3const openRouter = new OpenRouter({
@@ -611,7 +611,7 @@ Note that when you allow providers for a specific request, the list of allowed p
 
 Here’s an example that will only use Azure for a request calling GPT-4 Omni:
 
-```
+```text
 1import { OpenRouter } from '@openrouter/sdk';
 2
 3const openRouter = new OpenRouter({
@@ -648,7 +648,7 @@ Note that when you ignore providers for a specific request, the list of ignored 
 
 Here’s an example that will ignore DeepInfra for a request calling Llama 3.3 70b:
 
-```
+```text
 1import { OpenRouter } from '@openrouter/sdk';
 2
 3const openRouter = new OpenRouter({
@@ -695,7 +695,7 @@ By default, requests are load-balanced across all available providers, ordered b
 
 Here’s an example that will only use providers that support FP8 quantization:
 
-```
+```text
 1import { OpenRouter } from '@openrouter/sdk';
 2
 3const openRouter = new OpenRouter({
@@ -747,7 +747,7 @@ For **strict tool use** (`strict: true` on tools), you must explicitly pass the 
 
 #### Example: Enabling Fine-Grained Tool Streaming
 
-```
+```text
 1import { OpenRouter } from '@openrouter/sdk';
 2
 3const openRouter = new OpenRouter({
@@ -786,7 +786,7 @@ For **strict tool use** (`strict: true` on tools), you must explicitly pass the 
 
 #### Example: Enabling Interleaved Thinking
 
-```
+```text
 1import { OpenRouter } from '@openrouter/sdk';
 2
 3const openRouter = new OpenRouter({

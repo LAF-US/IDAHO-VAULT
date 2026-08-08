@@ -1,4 +1,5 @@
 ---
+title: "RT @clarkcorbin The Idaho House has adjourned until 1 30..."
 date: 2021-04-29
 time: 21:33:53
 tweet_id: "1387882856731447298"

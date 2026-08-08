@@ -1,4 +1,5 @@
 ---
+title: "Rendering a video + trying to open Photoshop = laptop crash..."
 date: 2020-07-10
 time: 23:33:07
 tweet_id: "1281733217435783169"

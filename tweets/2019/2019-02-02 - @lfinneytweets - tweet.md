@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2019-02-02
 time: 07:36:45
 tweet_id: "1091601300045754369"
@@ -14,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/t528VdSzEj
+<https://t.co/t528VdSzEj>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/DyYllzZWkAATVjv.jpg)

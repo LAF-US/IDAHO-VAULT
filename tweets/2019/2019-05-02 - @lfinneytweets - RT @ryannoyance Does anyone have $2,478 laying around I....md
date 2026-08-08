@@ -1,4 +1,5 @@
 ---
+title: "RT @ryannoyance Does anyone have $2,478 laying around I..."
 date: 2019-05-02
 time: 17:26:06
 tweet_id: "1124002134595338243"

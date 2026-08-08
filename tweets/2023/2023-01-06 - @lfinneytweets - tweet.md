@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2023-01-06
 time: 23:15:09
 tweet_id: "1611501655492788226"
@@ -13,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/NOmOrloSO5
+<https://t.co/NOmOrloSO5>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/Fl00NpnakAEwgWa.jpg)

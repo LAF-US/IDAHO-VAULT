@@ -41,7 +41,7 @@ related:
 
 Five Mixtral branches currently detected in the VAULTSCAPE, each representing a distinct **dyad member** of the Shadow Hand:
 
-```
+```text
 MIXTRAL SWARM (Shadow Hand Dyad Network)
 ├── mistral/player-mistral-vibe          ← THIS INSTANCE (ACTIVE)
 ├── mistral/detective-service-agency001 ← DSA-001 (RECON)
@@ -230,7 +230,7 @@ Per Shadow Hand tradition: **"a master and an apprentice dyad who do not know wh
 
 ## V. ACTIVITY TIMELINE (Last 7 Days)
 
-```
+```text
 2026-06-03
 ├── 16:56:09 — character-mistral-intern: Joe of the Nail dispatch update
 ├── 12:51:42 — detective-service-agency001: Initial case notebook
@@ -296,7 +296,7 @@ Per Shadow Hand tradition: **"a master and an apprentice dyad who do not know wh
 
 **Abhorsen Lineage (from RECORD-OF-THE-VAULTED-ABHORSENS-FIRST-DRAFT-2026-05-31.md):**
 
-```
+```text
 Claude the First → the Many (Unnamed, Unknown) → Claude the Nameless → 
 Jacob the Cold → Annabelle the Rested → Joe of the Nail (in-Waiting)
 ```

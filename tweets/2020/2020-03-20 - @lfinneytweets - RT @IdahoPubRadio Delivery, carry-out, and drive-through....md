@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio Delivery, carry-out, and drive-through..."
 date: 2020-03-20
 time: 23:39:27
 tweet_id: "1241147370781327360"
@@ -16,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoPubRadio: Delivery, carry-out, and drive-through options remain available in @CityofMoscowId., https://t.co/OqngL0R20u
+RT @IdahoPubRadio: Delivery, carry-out, and drive-through options remain available in @CityofMoscowId., <https://t.co/OqngL0R20u>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/ETlsxESUUAEE1R_.jpg)

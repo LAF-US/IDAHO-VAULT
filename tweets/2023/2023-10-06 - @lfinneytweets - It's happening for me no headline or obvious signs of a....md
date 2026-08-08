@@ -1,4 +1,5 @@
 ---
+title: "It's happening for me no headline or obvious signs of a..."
 date: 2023-10-06
 time: 16:57:56
 tweet_id: "1710338612074856822"
@@ -13,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-It's happening for me: no headline or obvious signs of a link vs. photo - aside from url in lower right corner - at least on desktop. https://t.co/Z5l9eF45AO
+It's happening for me: no headline or obvious signs of a link vs. photo - aside from url in lower right corner - at least on desktop. <https://t.co/Z5l9eF45AO>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/F7xXEIJbkAAb_AV.jpg)

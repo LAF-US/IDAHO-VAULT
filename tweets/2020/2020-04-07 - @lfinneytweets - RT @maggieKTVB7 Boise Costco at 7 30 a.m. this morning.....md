@@ -1,4 +1,5 @@
 ---
+title: "RT @maggieKTVB7 Boise Costco at 7 30 a.m. this morning...."
 date: 2020-04-07
 time: 18:47:40
 tweet_id: "1247596925311791105"
@@ -17,7 +18,7 @@ related:
 
 RT @maggieKTVB7: Boise Costco at 7:30 a.m. this morning. 
 
-Photo: Ken Levy https://t.co/kzFzv85Opr
+Photo: Ken Levy <https://t.co/kzFzv85Opr>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EVBSmouUMAA4w_b.jpg)

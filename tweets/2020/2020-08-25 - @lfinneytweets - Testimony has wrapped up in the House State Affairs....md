@@ -1,4 +1,5 @@
 ---
+title: "Testimony has wrapped up in the House State Affairs..."
 date: 2020-08-25
 time: 01:12:20
 tweet_id: "1298065642042454017"

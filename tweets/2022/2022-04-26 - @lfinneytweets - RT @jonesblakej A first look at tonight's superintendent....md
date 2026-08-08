@@ -1,4 +1,5 @@
 ---
+title: "RT @jonesblakej A first look at tonight's superintendent..."
 date: 2022-04-26
 time: 05:40:13
 tweet_id: "1518827264816783361"
@@ -19,9 +20,9 @@ related:
 ---
 
 RT @jonesblakej: A first look at tonight's superintendent debate: #idedu 
-https://t.co/RnBy4cZJmx
+<https://t.co/RnBy4cZJmx>
 
 ## Links
-- https://www.idahoednews.org/news/superintendent-candidates-verbally-dueled-for-gop-nomination/
+- <https://www.idahoednews.org/news/superintendent-candidates-verbally-dueled-for-gop-nomination/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1518827264816783361)

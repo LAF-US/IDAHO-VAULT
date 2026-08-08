@@ -1,4 +1,5 @@
 ---
+title: "Mail call! I'm super excited to read this one. @TomRisen..."
 date: 2024-11-20
 time: 22:30:34
 tweet_id: "1859363735967760448"
@@ -18,7 +19,7 @@ related:
   - idpol
 ---
 
-Mail call! I'm super excited to read this one. @TomRisen #idpol https://t.co/gsGgvScmtN
+Mail call! I'm super excited to read this one. @TomRisen #idpol <https://t.co/gsGgvScmtN>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/Gc3JdriagAAsAna.jpg)

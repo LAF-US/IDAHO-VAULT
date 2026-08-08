@@ -1,4 +1,5 @@
 ---
+title: "A handful of @IdahoSenateGOP members have made their way to..."
 date: 2021-03-19
 time: 16:16:02
 tweet_id: "1372944967027490817"
@@ -20,7 +21,7 @@ related:
   - idleg
 ---
 
-A handful of @IdahoSenateGOP members have made their way to the floor. #idpol #idleg https://t.co/DmKDArLZiI
+A handful of @IdahoSenateGOP members have made their way to the floor. #idpol #idleg <https://t.co/DmKDArLZiI>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/Ew2t6RxVkAAAFOJ.jpg)

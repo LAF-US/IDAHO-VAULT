@@ -16,8 +16,7 @@ related:
   - AttentionIdahoReporters
 ---
 
-When someone asks for a Flustered Richert gif 😐
-# AttentionIdahoReporters <https://t.co/GXj6DtM5Uk>
+When someone asks for a Flustered Richert gif 😐 #AttentionIdahoReporters <https://t.co/GXj6DtM5Uk>
 
 ## Media
 

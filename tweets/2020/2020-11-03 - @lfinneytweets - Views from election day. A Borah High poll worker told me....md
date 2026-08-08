@@ -1,4 +1,5 @@
 ---
+title: "Views from election day. A Borah High poll worker told me..."
 date: 2020-11-03
 time: 17:01:28
 tweet_id: "1323671647379861504"
@@ -20,7 +21,7 @@ related:
   - idpol
 ---
 
-Views from election day. A Borah High poll worker told me that things were running smoothly this morning, though the system for registering new voters was taking some time. #IVoted #idpol @AdaElections https://t.co/u6eZzxIjjV
+Views from election day. A Borah High poll worker told me that things were running smoothly this morning, though the system for registering new voters was taking some time. #IVoted #idpol @AdaElections <https://t.co/u6eZzxIjjV>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/El6fpwyVkAADfLX.jpg)

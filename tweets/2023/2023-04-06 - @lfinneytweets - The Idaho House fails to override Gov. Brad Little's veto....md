@@ -1,4 +1,5 @@
 ---
+title: "The Idaho House fails to override Gov. Brad Little's veto..."
 date: 2023-04-06
 time: 18:23:00
 tweet_id: "1644043040217255936"
@@ -18,7 +19,7 @@ related:
   - idpol
 ---
 
-The Idaho House fails to override Gov. Brad Little's veto on a bill regarding library materials for minors. #idleg #idpol https://t.co/cOr8iurUEo
+The Idaho House fails to override Gov. Brad Little's veto on a bill regarding library materials for minors. #idleg #idpol <https://t.co/cOr8iurUEo>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FtDQUNnakAAUk1x.jpg)

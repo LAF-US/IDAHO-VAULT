@@ -1,4 +1,5 @@
 ---
+title: "George and Jane Jetson are Gen Z"
 date: 2021-06-09
 time: 02:09:58
 tweet_id: "1402447852706488327"
@@ -13,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-George and Jane Jetson are Gen Z https://t.co/8lVf2P2uKb
+George and Jane Jetson are Gen Z <https://t.co/8lVf2P2uKb>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/E3Z-4tKVUAIjlWS.jpg)

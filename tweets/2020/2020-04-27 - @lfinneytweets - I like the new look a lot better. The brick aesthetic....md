@@ -1,4 +1,5 @@
 ---
+title: "I like the new look a lot better. The brick aesthetic..."
 date: 2020-04-27
 time: 15:43:20
 tweet_id: "1254798291058876416"

@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise While House is locked in..."
 date: 2021-03-02
 time: 19:31:44
 tweet_id: "1366833621584158721"

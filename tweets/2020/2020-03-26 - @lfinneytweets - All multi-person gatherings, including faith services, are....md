@@ -1,4 +1,5 @@
 ---
+title: "All multi-person gatherings, including faith services, are..."
 date: 2020-03-26
 time: 00:42:36
 tweet_id: "1242975205418393600"
@@ -14,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-All multi-person gatherings, including faith services, are suspended. (page 4) https://t.co/6NJ2KC0ZGW
+All multi-person gatherings, including faith services, are suspended. (page 4) <https://t.co/6NJ2KC0ZGW>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/ET_t_qxU4AA8Mln.png)

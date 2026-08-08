@@ -1,4 +1,5 @@
 ---
+title: "It looks like leaders Winder and Stennett are talking by..."
 date: 2021-03-19
 time: 16:27:18
 tweet_id: "1372947799336132609"
@@ -16,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-@IdahoSenateGOP It looks like leaders Winder and Stennett are talking by the chamber door. We’ll see if things get moving anytime soon. https://t.co/geVseourOB
+@IdahoSenateGOP It looks like leaders Winder and Stennett are talking by the chamber door. We’ll see if things get moving anytime soon. <https://t.co/geVseourOB>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/Ew2wlCbVEAAsTAS.jpg)

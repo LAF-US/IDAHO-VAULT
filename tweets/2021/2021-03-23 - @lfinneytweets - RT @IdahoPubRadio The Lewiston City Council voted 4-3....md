@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio The Lewiston City Council voted 4-3..."
 date: 2021-03-23
 time: 19:11:18
 tweet_id: "1374438622745686016"

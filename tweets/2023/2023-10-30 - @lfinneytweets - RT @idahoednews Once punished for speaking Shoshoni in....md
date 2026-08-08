@@ -1,4 +1,5 @@
 ---
+title: "RT @idahoednews Once punished for speaking Shoshoni in..."
 date: 2023-10-30
 time: 20:18:56
 tweet_id: "1719086503475999102"

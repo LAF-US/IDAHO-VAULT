@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2023-03-24
 time: 00:41:23
 tweet_id: "1639064833307078658"
@@ -14,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-@verified https://t.co/drMJ3cvecy
+@verified <https://t.co/drMJ3cvecy>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/Fr8gxZqaYAALx8V.jpg)

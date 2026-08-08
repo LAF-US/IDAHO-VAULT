@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2025-12-31
 time: 21:57:48
 tweet_id: "2006484963257102397"
@@ -13,10 +14,10 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/cR3L6KDiln https://t.co/slggvHIwiQ
+<https://t.co/cR3L6KDiln> <https://t.co/slggvHIwiQ>
 
 ## Links
-- https://x.com/IdahoReports/status/2006484648705065029
+- <https://x.com/IdahoReports/status/2006484648705065029>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/G9h3cDoaMAAUY_e.jpg)

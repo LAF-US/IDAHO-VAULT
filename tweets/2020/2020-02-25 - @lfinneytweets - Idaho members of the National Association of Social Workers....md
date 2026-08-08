@@ -1,4 +1,5 @@
 ---
+title: "Idaho members of the National Association of Social Workers..."
 date: 2020-02-25
 time: 19:49:09
 tweet_id: "1232392106796371968"
@@ -20,7 +21,7 @@ related:
   - idpol
 ---
 
-Idaho members of the National Association of Social Workers @naswidaho stand outside the House Floor doors to greet members and urge them to oppose bills they say target the vulnerable population of transgender Idahoans. #idleg #idpol https://t.co/wSUErLowjH
+Idaho members of the National Association of Social Workers @naswidaho stand outside the House Floor doors to greet members and urge them to oppose bills they say target the vulnerable population of transgender Idahoans. #idleg #idpol <https://t.co/wSUErLowjH>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/ERpWFZkU4AAEqHa.jpg)

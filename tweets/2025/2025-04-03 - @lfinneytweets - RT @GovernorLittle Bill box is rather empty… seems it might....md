@@ -1,4 +1,5 @@
 ---
+title: "RT @GovernorLittle Bill box is rather empty\u2026 seems it might..."
 date: 2025-04-03
 time: 19:37:43
 tweet_id: "1907880208306417674"
@@ -18,7 +19,7 @@ related:
   - SineDie
 ---
 
-RT @GovernorLittle: Bill box is rather empty… seems it might be time to #SineDie ?! https://t.co/mpPe2SCTpA
+RT @GovernorLittle: Bill box is rather empty… seems it might be time to #SineDie ?! <https://t.co/mpPe2SCTpA>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GnoK3v5a8AEaAn9.jpg)

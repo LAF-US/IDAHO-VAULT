@@ -1446,7 +1446,7 @@ related:
 
 ## Document Structure
 
-```
+```text
 EXTERNAL CANON LAYER (Factual Nodes)
 ├── Djinn System (Marid/Ifrit/Jinn)
 ├── Zelda System (Sheikah/Hylians/Gorons/Zora/Gerudo/Rito/Korok)

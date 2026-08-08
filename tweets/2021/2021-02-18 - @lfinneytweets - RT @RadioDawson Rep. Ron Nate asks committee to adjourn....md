@@ -1,4 +1,5 @@
 ---
+title: "RT @RadioDawson Rep. Ron Nate asks committee to adjourn..."
 date: 2021-02-18
 time: 01:06:29
 tweet_id: "1362206819658076162"

@@ -1,4 +1,5 @@
 ---
+title: "Obligatory 'journalist with too many tabs open' tweet"
 date: 2021-09-18
 time: 03:26:13
 tweet_id: "1439068212809793538"
@@ -14,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-Obligatory 'journalist with too many tabs open' tweet https://t.co/jOEvKuRgzN
+Obligatory 'journalist with too many tabs open' tweet <https://t.co/jOEvKuRgzN>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/E_iY5zKVcAM53OU.jpg)

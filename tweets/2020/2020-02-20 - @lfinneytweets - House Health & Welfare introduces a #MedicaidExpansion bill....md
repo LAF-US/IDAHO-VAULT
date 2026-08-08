@@ -1,4 +1,5 @@
 ---
+title: "House Health & Welfare introduces a #MedicaidExpansion bill..."
 date: 2020-02-20
 time: 16:17:59
 tweet_id: "1230527026097844224"

@@ -1,4 +1,5 @@
 ---
+title: "#IdahoCOVID19 @IDHW says residents can order free at-home..."
 date: 2021-06-15
 time: 20:41:40
 tweet_id: "1404901945073037315"
@@ -18,7 +19,7 @@ related:
   - IdahoCOVID19
 ---
 
-\#IdahoCOVID19: @IDHW says residents can order free at-home coronavirus saliva tests by calling 2-1-1. https://t.co/KkqwEmqwUv
+\#IdahoCOVID19: @IDHW says residents can order free at-home coronavirus saliva tests by calling 2-1-1. <https://t.co/KkqwEmqwUv>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/E3821uyVgAMSErz.jpg)

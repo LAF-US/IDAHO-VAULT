@@ -1,4 +1,5 @@
 ---
+title: "Former Gov. Butch Otter is giving opening remarks...."
 date: 2021-05-27
 time: 16:02:08
 tweet_id: "1397946231318405125"
@@ -19,7 +20,7 @@ related:
   - idleg
 ---
 
-Former Gov. Butch Otter is giving opening remarks. Supporters of candidate Priscilla Giddings have grouped behind the podium. #idpol #idleg https://t.co/A1Y43Cbz0k
+Former Gov. Butch Otter is giving opening remarks. Supporters of candidate Priscilla Giddings have grouped behind the podium. #idpol #idleg <https://t.co/A1Y43Cbz0k>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/E2aAsDhVIAMQQuY.jpg)

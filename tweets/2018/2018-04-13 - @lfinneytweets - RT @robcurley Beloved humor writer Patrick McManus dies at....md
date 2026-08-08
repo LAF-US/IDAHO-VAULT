@@ -1,4 +1,5 @@
 ---
+title: "RT @robcurley Beloved humor writer Patrick McManus dies at..."
 date: 2018-04-13
 time: 19:09:25
 tweet_id: "984871193114103808"
@@ -15,10 +16,10 @@ related:
   - lfinneytweets
 ---
 
-RT @robcurley: Beloved humor writer Patrick McManus dies at age 84 https://t.co/MdkBVLQV2j https://t.co/XXugF4UjJB
+RT @robcurley: Beloved humor writer Patrick McManus dies at age 84 <https://t.co/MdkBVLQV2j> <https://t.co/XXugF4UjJB>
 
 ## Links
-- https://buff.ly/2HznM1o
+- <https://buff.ly/2HznM1o>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/DarkS5UUwAESof9.jpg)

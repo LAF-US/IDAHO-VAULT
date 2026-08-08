@@ -1,4 +1,5 @@
 ---
+title: "So what are you going to do after your internship"
 date: 2020-02-21
 time: 02:37:52
 tweet_id: "1230683022187384832"
@@ -13,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-So what are you going to do after your internship? https://t.co/wOH6vTk2uy
+So what are you going to do after your internship? <https://t.co/wOH6vTk2uy>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/ERRDr6ZU4AAsC1v.jpg)

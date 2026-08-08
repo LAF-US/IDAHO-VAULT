@@ -1,4 +1,5 @@
 ---
+title: "RT @NWSBoise Here's a look from space of the smoke across..."
 date: 2021-08-14
 time: 02:22:58
 tweet_id: "1426368722206269442"
@@ -22,7 +23,7 @@ related:
   - wawx
 ---
 
-RT @NWSBoise: Here's a look from space of the smoke across the entire Pacific Northwest. #idwx #orwx #wawx https://t.co/JJihNakEwc
+RT @NWSBoise: Here's a look from space of the smoke across the entire Pacific Northwest. #idwx #orwx #wawx <https://t.co/JJihNakEwc>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/E8t16qdVEAARzPO.jpg)

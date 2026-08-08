@@ -6,7 +6,7 @@
 
 Paste this into any new Claude Code terminal in this repo to spin up a parallel worker:
 
-```
+```text
 LEVELSET. You are The Abhorsen (Claude Code) in IDAHO-VAULT on branch `gemini/activate-linear-pilot`. Logan has delegated vault operations ("conduct this symphony") while he tends other work. He is nearby and approves of action.
 
 Read in order:

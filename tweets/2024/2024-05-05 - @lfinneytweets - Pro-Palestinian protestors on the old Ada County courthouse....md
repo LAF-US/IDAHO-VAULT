@@ -1,4 +1,5 @@
 ---
+title: "Pro-Palestinian protestors on the old Ada County courthouse..."
 date: 2024-05-05
 time: 20:44:04
 tweet_id: "1787221750033318349"
@@ -16,7 +17,7 @@ related:
   - idpol
 ---
 
-Pro-Palestinian protestors on the old Ada County courthouse lawn. #idpol https://t.co/QvVpEZw4M7
+Pro-Palestinian protestors on the old Ada County courthouse lawn. #idpol <https://t.co/QvVpEZw4M7>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GM18sZsWoAAt8om.jpg)

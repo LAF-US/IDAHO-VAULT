@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoCapitalSun Some Treasure Valley Republicans said..."
 date: 2024-03-03
 time: 01:16:18
 tweet_id: "1764097436514148471"

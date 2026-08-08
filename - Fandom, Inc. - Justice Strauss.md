@@ -7,7 +7,7 @@ created: 2026-04-14
 ---
 | “ | *I don't blame you for having doubts, [Baudelaires](https://snicket.fandom.com/wiki/Baudelaire_Family "Baudelaire Family"). [Count Olaf](https://snicket.fandom.com/wiki/Count_Olaf "Count Olaf") fooled me once, and I will never forgive myself, but there are [two ot](https://snicket.fandom.com/wiki/Man_with_a_Beard_but_No_Hair "Man with a Beard but No Hair") [her judges](https://snicket.fandom.com/wiki/Woman_with_Hair_but_No_Beard "Woman with Hair but No Beard") on the High Court, and I've known them for years, and they've always been very concerned whenever I've reported on your case. I hope you can forgive me, Baudelaires, and trust me. But if not, you can trust the law.* | ” |
 | --- | --- | --- |
-| | — Justice Strauss to the Baudelaires in " [The Penultimate Peril: Part Two](https://snicket.fandom.com/wiki/The_Penultimate_Peril:_Part_Two "The Penultimate Peril: Part Two") " |
+| | — Justice Strauss to the Baudelaires in " [The Penultimate Peril: Part Two](https://snicket.fandom.com/wiki/The_Penultimate_Peril:_Part_Two "The Penultimate Peril: Part Two") " | |
 
 **Justice Strauss** is a high court judge who lives right across the street from [Count Olaf](https://snicket.fandom.com/wiki/Count_Olaf "Count Olaf") 's [house](https://snicket.fandom.com/wiki/Count_Olaf%27s_house "Count Olaf's house"). "Justice" is a title; her first name is unknown. In *[The Bad Beginning](https://snicket.fandom.com/wiki/The_Bad_Beginning "The Bad Beginning")*, she desired to become the Baudelaire's guardian, which they gladly accepted, but she was unable to adopt them because of the clause in their parents' wills appointing their "closest relative", geographically, as their legal guardian. Her regret over her naïve actions motivated her to begin a challenging crusade to bring Olaf to justice for good and hopefully be able to legally adopt the Baudelaire orphans.
 
@@ -15,7 +15,7 @@ created: 2026-04-14
 
 | “ | *I'm afraid this dreadful nonsense is the law.* | ” |
 | --- | --- | --- |
-| | — Justice Strauss, regarding Violet's marriage to Count Olaf |
+| | — Justice Strauss, regarding Violet's marriage to Count Olaf | |
 
 Justice Strauss is a kind and well-intentioned woman. She is often seen inviting the Baudelaires to spend time with her, allows them to borrow and read books from her library, and desired to adopt them.
 

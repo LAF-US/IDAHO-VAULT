@@ -1,4 +1,5 @@
 ---
+title: "I spoke with Dave Powell from Death Penalty Action on the..."
 date: 2024-02-28
 time: 17:44:47
 tweet_id: "1762896643853312277"
@@ -18,7 +19,7 @@ related:
   - idpol
 ---
 
-I spoke with Dave Powell from Death Penalty Action on the capitol steps while we await word from the prison. Idaho can "achieve the goals of justice and safety" without further violence and cost to taxpayers, he said, via life without parole rather than executions. #idleg #idpol https://t.co/KKu3kbr0r8
+I spoke with Dave Powell from Death Penalty Action on the capitol steps while we await word from the prison. Idaho can "achieve the goals of justice and safety" without further violence and cost to taxpayers, he said, via life without parole rather than executions. #idleg #idpol <https://t.co/KKu3kbr0r8>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GHcP7JMa4AE2lYr.jpg)

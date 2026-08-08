@@ -1,4 +1,5 @@
 ---
+title: "RT @ASUIDAHO THE RESULTS ARE IN... Meet the newly elected..."
 date: 2020-04-16
 time: 16:44:51
 tweet_id: "1250827507521040386"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @ASUIDAHO: THE RESULTS ARE IN... Meet the newly elected ASUI President, Vice-Presidents, and Senators! https://t.co/E2DNgX8Nph
+RT @ASUIDAHO: THE RESULTS ARE IN... Meet the newly elected ASUI President, Vice-Presidents, and Senators! <https://t.co/E2DNgX8Nph>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EVvT6keU0AExFFQ.jpg)

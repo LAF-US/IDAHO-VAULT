@@ -1,4 +1,5 @@
 ---
+title: "RT @LatahCoHistory Two horsedrawn combines and car full of..."
 date: 2021-04-06
 time: 21:15:19
 tweet_id: "1379543266157191169"

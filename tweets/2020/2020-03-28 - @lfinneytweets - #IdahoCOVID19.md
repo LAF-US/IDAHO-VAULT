@@ -1,4 +1,5 @@
 ---
+title: "#IdahoCOVID19"
 date: 2020-03-28
 time: 20:43:25
 tweet_id: "1244002175090446341"
@@ -16,9 +17,9 @@ related:
   - IdahoCOVID19
 ---
 
-\#IdahoCOVID19 https://t.co/A7kSvyZHEv
+\#IdahoCOVID19 <https://t.co/A7kSvyZHEv>
 
 ## Links
-- https://x.com/ByRachelRoberts/status/1243966814146584577
+- <https://x.com/ByRachelRoberts/status/1243966814146584577>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1244002175090446341)

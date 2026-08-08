@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio The forecast sunshine with a touch of..."
 date: 2020-05-07
 time: 19:55:39
 tweet_id: "1258485667119525888"
@@ -16,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoPubRadio: The forecast: sunshine with a touch of @uidaho Kibbie Dome. https://t.co/6LuOMgIaYQ
+RT @IdahoPubRadio: The forecast: sunshine with a touch of @uidaho Kibbie Dome. <https://t.co/6LuOMgIaYQ>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EXb89lSUYAIEIed.jpg)

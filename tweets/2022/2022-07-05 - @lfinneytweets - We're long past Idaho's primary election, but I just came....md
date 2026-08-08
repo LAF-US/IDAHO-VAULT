@@ -1,4 +1,5 @@
 ---
+title: "We're long past Idaho's primary election, but I just came..."
 date: 2022-07-05
 time: 20:56:02
 tweet_id: "1544424892241625088"
@@ -20,7 +21,7 @@ related:
   - idpol
 ---
 
-We're long past Idaho's primary election, but I just came across the total write-in votes on @IDSecOfState's website. #idleg #idpol https://t.co/hqSUXLYB5z
+We're long past Idaho's primary election, but I just came across the total write-in votes on @IDSecOfState's website. #idleg #idpol <https://t.co/hqSUXLYB5z>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FW7lnpiUsAA5Q5s.jpg)

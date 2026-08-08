@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPTV Attention creative Gem State teens raise your..."
 date: 2022-12-17
 time: 20:34:04
 tweet_id: "1604213357913182208"

@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise State epidemiologist Dr...."
 date: 2020-04-13
 time: 05:45:32
 tweet_id: "1249574419988492288"

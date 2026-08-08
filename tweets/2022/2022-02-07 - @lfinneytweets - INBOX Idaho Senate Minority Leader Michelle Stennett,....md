@@ -1,4 +1,5 @@
 ---
+title: "INBOX Idaho Senate Minority Leader Michelle Stennett,..."
 date: 2022-02-07
 time: 17:30:31
 tweet_id: "1490739766513471488"
@@ -18,7 +19,7 @@ related:
   - idpol
 ---
 
-INBOX: Idaho Senate Minority Leader Michelle Stennett, D-Ketchum, announces she will not seek reelection. That opens up the Senate seat in the newly configured District 26 (Blaine, Lincoln, Jerome counties). #idleg #idpol https://t.co/ucMOPNEfkM
+INBOX: Idaho Senate Minority Leader Michelle Stennett, D-Ketchum, announces she will not seek reelection. That opens up the Senate seat in the newly configured District 26 (Blaine, Lincoln, Jerome counties). #idleg #idpol <https://t.co/ucMOPNEfkM>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FLArZY_VcAgd4mk.jpg)

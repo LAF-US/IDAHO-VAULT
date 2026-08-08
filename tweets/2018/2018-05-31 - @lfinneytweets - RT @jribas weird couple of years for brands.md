@@ -1,4 +1,5 @@
 ---
+title: "RT @jribas weird couple of years for brands"
 date: 2018-05-31
 time: 17:23:35
 tweet_id: "1002239180259311616"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @jribas: weird couple of years for brands https://t.co/sFgw7mV5am
+RT @jribas: weird couple of years for brands <https://t.co/sFgw7mV5am>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/DedAdgnWkAYIWF8.jpg)

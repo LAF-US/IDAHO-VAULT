@@ -1,4 +1,5 @@
 ---
+title: "Man, I love getting out in the field. Photos stills by our..."
 date: 2022-07-23
 time: 01:55:15
 tweet_id: "1550660782286811136"
@@ -20,7 +21,7 @@ related:
   - idpol
 ---
 
-Man, I love getting out in the field. Photos/stills by our fantastic @IdahoReports videographer Morgan as we film a story that I'm producing and will air later this year. #idleg #idpol https://t.co/dj4NAQ4b1S
+Man, I love getting out in the field. Photos/stills by our fantastic @IdahoReports videographer Morgan as we film a story that I'm producing and will air later this year. #idleg #idpol <https://t.co/dj4NAQ4b1S>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FYUNwRCWQAIG8Pq.jpg)

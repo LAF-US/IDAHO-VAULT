@@ -1,4 +1,5 @@
 ---
+title: "RT @tatecurtis Advice for young reporters 1. Cover a city..."
 date: 2019-03-30
 time: 00:15:54
 tweet_id: "1111784077504331777"

@@ -1,4 +1,5 @@
 ---
+title: "So many beautiful and alluring women on the internet..."
 date: 2024-05-23
 time: 04:20:30
 tweet_id: "1793497207125189081"
@@ -13,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-So many beautiful and alluring women on the internet desperately want my opinions and credit card information https://t.co/dEIFgNUsOU
+So many beautiful and alluring women on the internet desperately want my opinions and credit card information <https://t.co/dEIFgNUsOU>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GOPINMgbEAAfT5R.jpg)

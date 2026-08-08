@@ -1,4 +1,5 @@
 ---
+title: "Rep. Tony Wisniewski (R-Post Falls)"
 date: 2020-06-24
 time: 04:50:42
 tweet_id: "1275652548591071232"
@@ -14,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-Rep. Tony Wisniewski (R-Post Falls) https://t.co/zywYH006FE
+Rep. Tony Wisniewski (R-Post Falls) <https://t.co/zywYH006FE>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EbQFVswXsAEniun.jpg)

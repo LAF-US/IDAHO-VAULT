@@ -1,4 +1,5 @@
 ---
+title: "Dakota lives!"
 date: 2024-04-06
 time: 05:33:13
 tweet_id: "1776483276397723861"
@@ -16,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-@sanford_nate Dakota lives! https://t.co/jaVtR8e2gp
+@sanford_nate Dakota lives! <https://t.co/jaVtR8e2gp>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GKdWICfaYAAbKiu.jpg)

@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2022-06-06
 time: 21:00:23
 tweet_id: "1533916738592514048"
@@ -14,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/yAI3rd9yS8
+<https://t.co/yAI3rd9yS8>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FUmRIu9VUAAMNMk.jpg)

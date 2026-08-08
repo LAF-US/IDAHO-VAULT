@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports May 21, 2021, Weekly #IdahoCOVID19 Update..."
 date: 2021-05-22
 time: 00:33:21
 tweet_id: "1395900555327803394"
@@ -19,7 +20,7 @@ related:
   - IdahoCOVID19
 ---
 
-RT @IdahoReports: May 21, 2021, Weekly #IdahoCOVID19 Update | @IdahoPTV https://t.co/qNws2L9BLH
+RT @IdahoReports: May 21, 2021, Weekly #IdahoCOVID19 Update | @IdahoPTV <https://t.co/qNws2L9BLH>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/amplify_video_thumb/1395892437181075456/img/ifzmiOMKWRhTY-Ro.jpg)

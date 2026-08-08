@@ -1,4 +1,5 @@
 ---
+title: "RT @KTVBJoe #Idaho casts 4 electoral college votes for..."
 date: 2020-12-14
 time: 20:44:35
 tweet_id: "1338585702376775680"
@@ -19,7 +20,7 @@ related:
   - Idaho
 ---
 
-RT @KTVBJoe: #Idaho casts 4 electoral college votes for @realDonaldTrump https://t.co/DjC4JEhhM1
+RT @KTVBJoe: #Idaho casts 4 electoral college votes for @realDonaldTrump <https://t.co/DjC4JEhhM1>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EpOIAwnUYAA86hI.jpg)

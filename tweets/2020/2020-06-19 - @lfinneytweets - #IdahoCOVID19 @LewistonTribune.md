@@ -1,4 +1,5 @@
 ---
+title: "#IdahoCOVID19 @LewistonTribune"
 date: 2020-06-19
 time: 21:28:53
 tweet_id: "1274091810415996929"
@@ -18,9 +19,9 @@ related:
   - IdahoCOVID19
 ---
 
-\#IdahoCOVID19 @LewistonTribune https://t.co/jpPPPyhHRD
+\#IdahoCOVID19 @LewistonTribune <https://t.co/jpPPPyhHRD>
 
 ## Links
-- https://x.com/ezebarker/status/1274086507679109120
+- <https://x.com/ezebarker/status/1274086507679109120>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1274091810415996929)

@@ -1,4 +1,5 @@
 ---
+title: "Story updated with links to printed legislation. #idleg"
 date: 2023-01-16
 time: 19:27:20
 tweet_id: "1615068201691516928"
@@ -16,9 +17,9 @@ related:
   - idleg
 ---
 
-Story updated with links to printed legislation. #idleg https://t.co/MTIctBu89b
+Story updated with links to printed legislation. #idleg <https://t.co/MTIctBu89b>
 
 ## Links
-- https://x.com/RuthBrownNews/status/1615049673622040576
+- <https://x.com/RuthBrownNews/status/1615049673622040576>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1615068201691516928)

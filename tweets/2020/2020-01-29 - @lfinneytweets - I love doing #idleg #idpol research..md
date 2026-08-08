@@ -1,4 +1,5 @@
 ---
+title: "I love doing #idleg #idpol research."
 date: 2020-01-29
 time: 22:05:13
 tweet_id: "1222641875510689793"
@@ -19,10 +20,10 @@ related:
 ---
 
 I love doing #idleg/#idpol research. 
-https://t.co/jfsduX3zQj https://t.co/b3ILqBR9JM
+<https://t.co/jfsduX3zQj> <https://t.co/b3ILqBR9JM>
 
 ## Links
-- https://www.snopes.com/fact-check/my-dynamite-idaho/
+- <https://www.snopes.com/fact-check/my-dynamite-idaho/>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EPeyRf0UEAAzU74.png)

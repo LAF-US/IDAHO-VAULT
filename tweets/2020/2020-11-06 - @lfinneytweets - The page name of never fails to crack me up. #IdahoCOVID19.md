@@ -1,4 +1,5 @@
 ---
+title: "The page name of never fails to crack me up. #IdahoCOVID19"
 date: 2020-11-06
 time: 23:58:20
 tweet_id: "1324863719361323008"
@@ -16,10 +17,10 @@ related:
   - IdahoCOVID19
 ---
 
-The page name of https://t.co/nxIWTF7aiy never fails to crack me up. #IdahoCOVID19 https://t.co/as5vzqNMIl
+The page name of <https://t.co/nxIWTF7aiy> never fails to crack me up. #IdahoCOVID19 <https://t.co/as5vzqNMIl>
 
 ## Links
-- http://coronavirus.idaho.gov
+- <http://coronavirus.idaho.gov>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EmLcfehU8AAru8-.png)

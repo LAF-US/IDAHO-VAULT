@@ -124,7 +124,7 @@ export const DefaultLayouts = [
 
 Navigate to `/src/styles.css` and open the file. As of writing, the file has the following contents:
 
-```
+```text
 @import "./main.css";
 @import "./settings/settings.css";
 @import "./layouts/pathfinder 2e/xCSS/pf2e.css";
@@ -133,7 +133,7 @@ Navigate to `/src/styles.css` and open the file. As of writing, the file has the
 
 Add your own `@import` line at the end of this file, after the last existing `@import` line.
 
-```
+```text
 @import "./main.css";
 @import "./settings/settings.css";
 @import "./layouts/pathfinder 2e/xCSS/pf2e.css";
