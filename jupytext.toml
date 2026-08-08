@@ -12,3 +12,19 @@
 # the .md first. See NOTEBOOKS.md for the full convention.
 #
 # (Intentionally no global pairing default — pairing lives in each notebook's own metadata.)
+
+# Do not record the writing tool's own version inside the twin.
+#
+# jupytext stamps `jupytext.text_representation.jupytext_version` into every twin it
+# writes. That value is not a compatibility key — `format_version` is the one jupytext
+# gates on when deciding whether a file is safe to read. The stamp exists only so an
+# error message can name a version to install.
+#
+# Recorded inside the file, it changes every time the tool is upgraded, so the paired
+# check reports elapsed time as content drift, and CI has to pin an exact version to
+# avoid rewriting it. That pin is what breaks when a lockfile stops carrying jupytext.
+# Filtering the stamp removes the coupling: any jupytext version writes the same bytes.
+#
+# Config-level so a *newly* paired notebook inherits it without anyone remembering.
+# It is not a pairing default and does not reintroduce the --sync footgun above.
+notebook_metadata_filter = "-jupytext.text_representation.jupytext_version"
