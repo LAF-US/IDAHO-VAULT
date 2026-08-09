@@ -40,3 +40,10 @@ dev = [
     # codacy-coverage-reporter.yml -> `uv run coverage run -m pytest` / `uv run coverage xml`
     "coverage>=7.6,<8",
 ]
+
+[tool.coverage.report]
+skip_empty = true
+exclude_also = [
+    "pragma: no cover",
+    "if __name__ == .__main__.:",
+]
