@@ -50,17 +50,18 @@ def _labels(*names: str) -> dict[str, list[dict[str, str]]]:
     return {"nodes": [{"name": name} for name in names]}
 
 
-def _grid_labels(ft: str | None, dp: str | None) -> tuple[str, ...]:
+def _grid_labels(ft: str | None, fd: str | None) -> tuple[str, ...]:
     """Stamp one risk grid cell in the flat schema."""
-    # A fired axis stamps one label; `—` on an axis stamps nothing, so the `—/—`
-    # cell comes back empty.
+    # A fired axis stamps one label; `—` on an axis stamps nothing of its own, and the
+    # `—/—` cell — neither axis fired — stamps `risk/—`. No cell comes back empty.
     ft_label = {"low": review_feedback_loop.RISK_LOW_LABEL,
                 "med": review_feedback_loop.RISK_MED_LABEL}
-    dp_label = {"high": review_feedback_loop.RISK_HIGH_LABEL,
+    fd_label = {"high": review_feedback_loop.RISK_HIGH_LABEL,
                 "nope": review_feedback_loop.RISK_NOPE_LABEL}
-    return tuple(
-        label for label in (ft_label.get(ft or ""), dp_label.get(dp or "")) if label
+    fired = tuple(
+        label for label in (ft_label.get(ft or ""), fd_label.get(fd or "")) if label
     )
+    return fired or (review_feedback_loop.RISK_CLEAR_LABEL,)
 
 
 def _thread(
@@ -123,29 +124,19 @@ def _pr(
 
 
 def _grid_states(
-    ft: str | None, dp: str | None, *, now: datetime, created_at: datetime
+    ft: str | None, fd: str | None, *, now: datetime, created_at: datetime
 ) -> tuple[dict[str, object], dict[str, object]]:
     """Evaluate one risk grid cell twice: unreviewed, then APPROVED."""
-    flat = _grid_labels(ft, dp)
-    if flat:
-        return (
-            review_feedback_loop.evaluate_review_state(
-                _pr(created_at=created_at, labels=flat), now=now
-            ),
-            review_feedback_loop.evaluate_review_state(
-                _pr(created_at=created_at, labels=flat, review_decision="APPROVED"), now=now
-            ),
-        )
-    # The `—/—` cell carries NO labels, so nothing can be derived from them; its clear
-    # state is affirmed by the classified lane, mirroring how sync_pr calls
-    # evaluate_review_state post-classify.
+    # Every cell including `—/—` carries a label, so every cell is read the same way —
+    # off the labels, with no classified_lane passed in. That the clear cell needs no
+    # special case here IS the change: the label carries its own affirmation.
+    flat = _grid_labels(ft, fd)
     return (
         review_feedback_loop.evaluate_review_state(
-            _pr(created_at=created_at, labels=()), now=now, classified_lane=(None, None)
+            _pr(created_at=created_at, labels=flat), now=now
         ),
         review_feedback_loop.evaluate_review_state(
-            _pr(created_at=created_at, labels=(), review_decision="APPROVED"),
-            now=now, classified_lane=(None, None),
+            _pr(created_at=created_at, labels=flat, review_decision="APPROVED"), now=now
         ),
     )
 
@@ -203,14 +194,15 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertTrue(ready_state["eligible_for_auto_merge"])
 
     def test_nine_cell_grid_routing_is_the_single_source(self) -> None:
-        # The risk grid (WITNESS-THE-KEYS-ARE-THE-LEVERS-2026-06-21) is DERIVED from this
-        # engine, not a hand-assigned table: the (filetype, depth) label pair routes each PR
-        # into exactly one of three lanes. This pins all nine cells so the settled grid cannot
+        # The risk grid (WITNESS-THE-KEYS-ARE-THE-LEVERS-2026-06-21): the
+        # (filetype, filedepth) label pair routes each PR into exactly one of three lanes.
+        # `grid` below is a hand-assigned expectation table asserted against the engine — it
+        # is not derived from it. This pins all nine cells so the settled grid cannot
         # silently drift. Lanes:
         #   auto            : —/—  → eligible on grace alone (no review lane)
-        #   review-hold     : any fired flag with depth != nope → eligible once its review lane
+        #   review-hold     : any fired flag with filedepth != nope → eligible once its review lane
         #                     completes (APPROVED + threads clear) AND grace elapses; holds otherwise
-        #   sovereign/never : any depth == nope → never eligible, even fully approved
+        #   sovereign/never : any filedepth == nope → never eligible, even fully approved
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
         past_grace = now - timedelta(minutes=45)
         AUTO, HOLD, NEVER = "auto", "review-hold", "never"
@@ -225,9 +217,9 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             ("med", "high"): HOLD,
             ("med", "nope"): NEVER,
         }
-        for (ft, dp), lane in grid.items():
-            with self.subTest(cell=f"ft={ft}/dp={dp}", lane=lane):
-                unreviewed, approved = _grid_states(ft, dp, now=now, created_at=past_grace)
+        for (ft, fd), lane in grid.items():
+            with self.subTest(cell=f"ft={ft}/fd={fd}", lane=lane):
+                unreviewed, approved = _grid_states(ft, fd, now=now, created_at=past_grace)
                 if lane == AUTO:
                     self.assertTrue(
                         unreviewed["eligible_for_auto_merge"],
@@ -246,7 +238,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
                     self.assertFalse(unreviewed["eligible_for_auto_merge"])
                     self.assertFalse(
                         approved["eligible_for_auto_merge"],
-                        "depth=nope is the sovereign's hand — never auto, even approved",
+                        "filedepth=nope is the sovereign's hand — never auto, even approved",
                     )
         # The converse of the AUTO cell above — a PR with no labels and no classified
         # lane reads `unknown` and HOLDS — is pinned by
@@ -308,15 +300,15 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         # ANY risk/* flag is present.
         rfl = review_feedback_loop
         # No flags at all -> nothing to read; NOT classified from labels alone.
-        ft, dp, classified = rfl._risk_pair_for_pr(set())
-        self.assertEqual((ft, dp, classified), (None, None, False))
-        ft, dp, classified = rfl._risk_pair_for_pr({"risk/med", "risk/high"})
-        self.assertEqual((ft, dp, classified), ("med", "high", True))
-        ft, dp, classified = rfl._risk_pair_for_pr({"risk/low", "risk/nope"})
-        self.assertEqual((ft, dp, classified), ("low", "nope", True))
+        ft, fd, classified = rfl._risk_pair_for_pr(set())
+        self.assertEqual((ft, fd, classified), (None, None, False))
+        ft, fd, classified = rfl._risk_pair_for_pr({"risk/med", "risk/high"})
+        self.assertEqual((ft, fd, classified), ("med", "high", True))
+        ft, fd, classified = rfl._risk_pair_for_pr({"risk/low", "risk/nope"})
+        self.assertEqual((ft, fd, classified), ("low", "nope", True))
         # One axis fired, the other absent -> the fired flag is read; classified is True.
-        ft, dp, classified = rfl._risk_pair_for_pr({"risk/med"})
-        self.assertEqual((ft, dp, classified), ("med", None, True))
+        ft, fd, classified = rfl._risk_pair_for_pr({"risk/med"})
+        self.assertEqual((ft, fd, classified), ("med", None, True))
 
     def test_pair_axis_exclusion_fails_loud(self) -> None:
         # Per-axis mutual exclusion: an axis carries AT MOST one value. Two values on one
@@ -345,7 +337,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertEqual(rfl._tier_from_pair(None, None, False), "unknown")
 
     def test_restamp_risk_pair_rejects_out_of_vocab_flags(self) -> None:
-        # restamp indexes FILETYPE_RISK_LABELS/DEPTH_RISK_LABELS by flag; an out-of-vocab
+        # restamp indexes FILETYPE_RISK_LABELS/FILEDEPTH_RISK_LABELS by flag; an out-of-vocab
         # flag must raise RiskMarkerInvariantError (deterministic, domain-specific) rather
         # than a raw KeyError — matching _tier_from_pair's fail-loud behavior.
         rfl = review_feedback_loop
@@ -431,7 +423,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             labels = {"risk/high"}  # stale filedepth flag, to be replaced
             actions = review_feedback_loop.restamp_risk_pair(22, labels, "low", "high")
         self.assertIn("add:risk/low", actions)
-        # risk/high already present for the depth axis -> no re-add, no removal.
+        # risk/high already present for the filedepth axis -> no re-add, no removal.
         self.assertNotIn("remove:risk/high", actions)
         self.assertEqual(labels, {"risk/low", "risk/high"})
 
@@ -445,9 +437,11 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         # where the namespace contract is pinned; this one does not pin it alone.
         #
         # Non-risk labels stay untouched throughout.
+        # Bare `risk/—` is NOT in this set: it is live vocabulary, the `—/—` cell's own
+        # label. Only the prefixed forms were the transitional scheme #854 replaced.
         retired = {
             "filetype:risk/low", "filetype:risk/med", "filetype:risk/—",
-            "depth:risk/high", "depth:risk/nope", "depth:risk/—", "risk/—",
+            "depth:risk/high", "depth:risk/nope", "depth:risk/—",
         }
         with mock.patch.object(review_feedback_loop, "_edit_label"):
             labels = set(retired) | {"review/pending", "agent:claude-code"}
@@ -458,20 +452,20 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertIn("add:risk/high", actions)
         self.assertEqual(labels, {"risk/med", "risk/high", "review/pending", "agent:claude-code"})
 
-        # A `—/—` lane strips the retired vocabulary too, stamping nothing in its place.
+        # A `—/—` lane strips the retired vocabulary and stamps `risk/—` in its place.
         with mock.patch.object(review_feedback_loop, "_edit_label"):
             labels = set(retired) | {"review/pending"}
             review_feedback_loop.restamp_risk_pair(32, labels, None, None)
-        self.assertEqual(labels, {"review/pending"})
+        self.assertEqual(labels, {"review/pending", review_feedback_loop.RISK_CLEAR_LABEL})
 
     def test_restamp_sweeps_a_vocabulary_the_code_has_never_seen(self) -> None:
         # The test above enumerates the seven strings #854 retired, which a seven-case lookup
         # table would satisfy just as well — it cannot tell a namespace rule from a hardcoded
         # list. These labels appear nowhere in the codebase, so only a rule sweeps them, and a
         # list would leave every one behind. This is the case that distinguishes the two.
-        # `newaxis:risk/—` keeps the em dash (U+2014) ON PURPOSE: three labels in the live
-        # retired vocabulary carry it — `filetype:risk/—`, `depth:risk/—`, `risk/—`. Swapping
-        # it for an ASCII stand-in would stop exercising the character the real labels use.
+        # `newaxis:risk/—` keeps the em dash (U+2014) ON PURPOSE: the live vocabulary uses
+        # it — `risk/—` itself, plus the retired `filetype:risk/—` and `depth:risk/—`.
+        # Swapping it for an ASCII stand-in would stop exercising the real character.
         unseen = {"scope:risk/whatever", "tier:risk/x", "newaxis:risk/—", "risk/anything"}
         with mock.patch.object(review_feedback_loop, "_edit_label"):
             labels = set(unseen) | {"review/pending"}
@@ -481,15 +475,18 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertEqual(labels, {"risk/low", "review/pending"})
 
     def test_restamp_leaves_names_that_only_resemble_the_namespace(self) -> None:
-        # The boundary the rule must NOT cross, kept separate from the sweep above so a
+        # The boundary the pattern must NOT cross, kept separate from the sweep above so a
         # failure says which half broke. `riskier/thing` and `notrisk/low` are not risk
         # labels; a sloppy pattern (a bare `risk/` substring search) would eat both.
+        # What this test asserts is that NOTHING is removed — not that nothing happens. The
+        # `—/—` lane below stamps `risk/—`, and that add is expected; asserting `actions ==
+        # []` would make this test fail for a reason it is not about.
         near_misses = {"riskier/thing", "notrisk/low", "review/pending"}
         with mock.patch.object(review_feedback_loop, "_edit_label"):
             labels = set(near_misses)
             actions = review_feedback_loop.restamp_risk_pair(34, labels, None, None)
-        self.assertEqual(actions, [])
-        self.assertEqual(labels, near_misses)
+        self.assertEqual([a for a in actions if a.startswith("remove:")], [])
+        self.assertEqual(labels, near_misses | {review_feedback_loop.RISK_CLEAR_LABEL})
 
     def test_sync_pr_restamps_unmarked_pr_from_classifier(self) -> None:
         # Backfill-by-automation: an unmarked in-flight PR gets its pair stamped from
@@ -602,9 +599,85 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             edit_label.call_args_list,
         )
 
+    def test_restamp_removes_before_it_adds(self) -> None:
+        # Ordering is load-bearing, not cosmetic. Each _edit_label is a separate API call,
+        # so the PR is observable in between. On clear -> fired, adding first would leave
+        # `risk/—` and `risk/med` on the PR simultaneously, and an evaluate landing in that
+        # window raises RiskMarkerInvariantError. Removing first leaves a window with no
+        # risk label, which reads `unknown` and holds.
+        with mock.patch.object(review_feedback_loop, "_edit_label"):
+            labels = {review_feedback_loop.RISK_CLEAR_LABEL}
+            actions = review_feedback_loop.restamp_risk_pair(42, labels, "med", None)
+        removes = [i for i, a in enumerate(actions) if a.startswith("remove:")]
+        adds = [i for i, a in enumerate(actions) if a.startswith("add:")]
+        self.assertTrue(removes and adds, actions)
+        self.assertLess(max(removes), min(adds), actions)
+        # And the reverse transition, fired -> clear, for the same reason.
+        with mock.patch.object(review_feedback_loop, "_edit_label"):
+            labels = {"risk/med"}
+            actions = review_feedback_loop.restamp_risk_pair(43, labels, None, None)
+        removes = [i for i, a in enumerate(actions) if a.startswith("remove:")]
+        adds = [i for i, a in enumerate(actions) if a.startswith("add:")]
+        self.assertTrue(removes and adds, actions)
+        self.assertLess(max(removes), min(adds), actions)
+
+    def test_clear_label_is_registered_for_creation(self) -> None:
+        # restamp stamps it, so ensure_labels has to be able to create it. A label the
+        # engine adds but never declares is one the repo may not have.
+        self.assertIn(
+            review_feedback_loop.RISK_CLEAR_LABEL, review_feedback_loop.LABEL_SPECS
+        )
+
+    def test_clear_cell_stamps_its_own_label(self) -> None:
+        # The `—/—` cell is the only one that stamps `risk/—`, and it stamps nothing else.
+        with mock.patch.object(review_feedback_loop, "_edit_label"):
+            labels: set[str] = set()
+            actions = review_feedback_loop.restamp_risk_pair(40, labels, None, None)
+        self.assertEqual(actions, [f"add:{review_feedback_loop.RISK_CLEAR_LABEL}"])
+        self.assertEqual(labels, {review_feedback_loop.RISK_CLEAR_LABEL})
+
+    def test_a_fired_axis_removes_the_clear_label(self) -> None:
+        # Clear -> fired: `risk/—` asserted that nothing fired, so once something does it is
+        # no longer true and must come off in the same restamp that stamps the flag.
+        with mock.patch.object(review_feedback_loop, "_edit_label"):
+            labels = {review_feedback_loop.RISK_CLEAR_LABEL, "review/pending"}
+            actions = review_feedback_loop.restamp_risk_pair(41, labels, "med", None)
+        self.assertIn(f"remove:{review_feedback_loop.RISK_CLEAR_LABEL}", actions)
+        self.assertEqual(labels, {"risk/med", "review/pending"})
+
+    def test_clear_label_alone_reads_clear_and_arms_after_grace(self) -> None:
+        # The point of the label: a PR wearing `risk/—` and nothing else reads as
+        # affirmatively clear off its LABELS, with no classified_lane passed in — which is
+        # what a later pass (a sweep, a re-evaluate) has to work from.
+        now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
+        state = review_feedback_loop.evaluate_review_state(
+            _pr(
+                created_at=now - timedelta(minutes=45),
+                labels=(review_feedback_loop.RISK_CLEAR_LABEL,),
+            ),
+            now=now,
+        )
+        self.assertEqual(state["risk_tier"], "clear")
+        self.assertTrue(state["is_clear"])
+        self.assertTrue(state["eligible_for_auto_merge"])
+
+    def test_clear_label_beside_a_fired_flag_fails_loud(self) -> None:
+        # `risk/—` says nothing fired. Alongside a flag that did, the pair is a
+        # contradiction — a producer bug — and must raise rather than pick a winner.
+        now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
+        with self.assertRaises(review_feedback_loop.RiskMarkerInvariantError):
+            review_feedback_loop.evaluate_review_state(
+                _pr(
+                    created_at=now - timedelta(minutes=45),
+                    labels=(review_feedback_loop.RISK_CLEAR_LABEL, "risk/high"),
+                ),
+                now=now,
+            )
+
     def test_unclassified_pr_without_a_classified_lane_never_arms(self) -> None:
-        # Safety: absence of a risk label is NOT clear. Without a classified lane, an
-        # all-absent PR is `unknown` and HOLDS — it must never be armed for auto-merge.
+        # Safety: absence of a risk label is NOT clear — `risk/—` is what says clear, and
+        # this PR does not carry it. With no label and no classified lane the PR is
+        # `unknown` and HOLDS; it must never be armed for auto-merge.
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
         state = review_feedback_loop.evaluate_review_state(
             _pr(created_at=now - timedelta(minutes=45), labels=()),
@@ -616,7 +689,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
 
     def test_unmarked_pr_holds_and_is_not_clear(self) -> None:
         # Absence of a marker is NOT classified-clear. An unmarked PR resolves
-        # to "unknown" and never arms — only a classified `—/—` lane does.
+        # to "unknown" and never arms — `risk/—` is what says otherwise.
         now = datetime(2026, 4, 16, 3, 0, tzinfo=timezone.utc)
         state = review_feedback_loop.evaluate_review_state(
             _pr(created_at=now - timedelta(minutes=45), labels=(), body="## No marker\n"),
