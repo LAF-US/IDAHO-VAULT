@@ -21,16 +21,10 @@ on:
 permissions:
   contents: read
 
-# Supersede, don't stack: a second push to the same branch cancels the still-running
-# check for the previous commit, which nobody is waiting on. The final state of the
-# branch is still checked in full, so no coverage is lost.
-#
-# `github.event_name` is in the group key on purpose: it keeps the push-event run and
-# the pull_request-event run of the same branch in SEPARATE groups. Collapsing them
-# would let a push run cancel a required PR check, and a cancelled required check
-# blocks the PR.
-#
-# merge_group is never cancelled — cancelling a merge-queue check breaks the queue.
+# Supersede, don't stack. This workflow runs on pull_request and workflow_dispatch
+# only — no push, no merge_group — so the group key is just the ref, and a newer run
+# for the same PR replaces an older one. A PR run scans the notebook set as it stands,
+# not a delta, so nothing is lost by superseding.
 concurrency:
   group: ${{ github.workflow }}-${{ github.event_name }}-${{ github.head_ref || github.ref }}
   cancel-in-progress: ${{ github.event_name != 'merge_group' }}

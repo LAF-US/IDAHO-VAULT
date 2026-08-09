@@ -14,16 +14,13 @@ on:
       - ".github/scripts/laf_usb_manifest.py"
       - ".github/workflows/laf-usb-manifest-policy.yml"
 
-# Supersede, don't stack: a second push to the same branch cancels the still-running
-# check for the previous commit, which nobody is waiting on. The final state of the
-# branch is still checked in full, so no coverage is lost.
+# Supersede, don't stack: a newer run for the same branch replaces the still-running
+# one, which nobody is waiting on. This check reads the manifest as it stands rather
+# than a per-push delta, so the replacement run sees everything the cancelled one would.
 #
-# `github.event_name` is in the group key on purpose: it keeps the push-event run and
-# the pull_request-event run of the same branch in SEPARATE groups. Collapsing them
-# would let a push run cancel a required PR check, and a cancelled required check
-# blocks the PR.
-#
-# merge_group is never cancelled — cancelling a merge-queue check breaks the queue.
+# `github.event_name` is in the group key on purpose: it keeps push-event and
+# pull_request-event runs of one branch in SEPARATE groups, so a push run cannot
+# cancel a required PR check. This workflow has no merge_group trigger.
 concurrency:
   group: ${{ github.workflow }}-${{ github.event_name }}-${{ github.head_ref || github.ref }}
   cancel-in-progress: ${{ github.event_name != 'merge_group' }}

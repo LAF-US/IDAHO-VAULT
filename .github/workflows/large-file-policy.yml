@@ -7,16 +7,6 @@ on:
   merge_group:
   workflow_dispatch:
 
-# Supersede, don't stack: a second push to the same branch cancels the still-running
-# check for the previous commit, which nobody is waiting on. The final state of the
-# branch is still checked in full, so no coverage is lost.
-#
-# `github.event_name` is in the group key on purpose: it keeps the push-event run and
-# the pull_request-event run of the same branch in SEPARATE groups. Collapsing them
-# would let a push run cancel a required PR check, and a cancelled required check
-# blocks the PR.
-#
-# merge_group is never cancelled — cancelling a merge-queue check breaks the queue.
 concurrency:
   # Push groups are SHA-specific, so push runs never cancel each other.
   # These checks scan only the push's own before..after delta, so a cancelled
