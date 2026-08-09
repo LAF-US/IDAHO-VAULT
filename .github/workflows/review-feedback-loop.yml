@@ -58,23 +58,6 @@ jobs:
       group: sweep-review-threads-${{ github.event_name }}-${{ github.event.pull_request.number }}
       cancel-in-progress: true
     runs-on: ubuntu-latest
-    # This job is the repository's single largest consumer of the GraphQL rate
-    # limit. It fires on `synchronize` — every push to every open PR — and each
-    # run issues `reviewThreads(first: 100) { comments(first: 100) }`, which GitHub
-    # prices at roughly 100 points. The 5,000 points/hour budget is therefore about
-    # 50 sweeps, and an agent pushing a few times across a few branches exhausts it;
-    # `sweep-review-threads` then fails on every PR in the repo with
-    # "API rate limit already exceeded".
-    #
-    # Cancelling a superseded sweep is safe *because sync-pr is a sync*: it drives
-    # labels and thread state toward whatever the PR currently looks like. A run
-    # interrupted halfway is corrected by the next run, which reads current state
-    # rather than resuming. The only run whose verdict matters is the last one.
-    #
-    # Job-level, not workflow-level, so the issue_comment jobs are untouched.
-    concurrency:
-      group: review-feedback-loop-sweep-${{ github.event.pull_request.number }}
-      cancel-in-progress: true
     permissions:
       # contents: write is required to enable merge-queue auto-merge
       # (enablePullRequestAutoMerge is gated like resolveReviewThread, #546). sync-pr
