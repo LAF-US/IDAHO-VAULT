@@ -1,5 +1,26 @@
 # The *default* assumption for the VAULT is that things need to be tracked. The *only* exceptions to that sole assumption are **secrets** and **exhaust**. Tread lightly here.
 
+# ── SECRETS — classes, not specimens, and scoped to the tool dotfolders where they
+# live. No global name-shape rules: this vault tracks real files named
+# "Precincts_133 (2).csv" and ".claude/settings (2).json" on purpose, so whether a
+# salvage-looking name is junk is a human call, never a pattern's. ──
+.env
+.env.*
+*.env
+.mcp.json
+.*/id_*
+.*/*cred*
+.*/*token*
+.*/auth.json*
+.ssh/**
+
+# ── EXHAUST — regenerable byproducts. ──
+__pycache__/
+*.py[cod]
+
+# ── ANCHORS — always visible. ──
+!.gitignore
+!/.*/stub.txt
 !**.md
 
 # ESTO PERPETUA!
