@@ -1,21 +1,7 @@
 {
   "permissions": {
     "allow": [
-      "Bash",
-      "Edit",
-      "Read",
-      "Glob",
-      "Grep",
-      "Agent",
-      "PowerShell(rclone lsd *)",
-      "PowerShell(rclone size *)",
-      "PowerShell(rclone about *)",
-      "PowerShell(rclone ls *)",
-      "PowerShell(rclone lsjson *)",
-      "PowerShell(rclone lsf *)",
-      "PowerShell(Get-ChildItem *)",
-      "PowerShell(Get-Process *)",
-      "PowerShell(Get-Content *)"
+      "Read"
     ]
   }
 }
