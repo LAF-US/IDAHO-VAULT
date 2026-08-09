@@ -16,7 +16,13 @@ on:
 #
 # merge_group is never cancelled — cancelling a merge-queue check breaks the queue.
 concurrency:
-  group: ${{ github.workflow }}-${{ github.event_name }}-${{ github.head_ref || github.ref }}
+  # Push groups are SHA-specific, so push runs never cancel each other.
+  # These checks scan only the push's own before..after delta, so a cancelled
+  # push run loses that delta's coverage for good: push A adds a violation,
+  # push B touches an unrelated file and cancels A, and B then scans only its
+  # own files while A's remain on the branch, unexamined. pull_request runs
+  # scan base..head, which is cumulative, so superseding one loses nothing.
+  group: ${{ github.workflow }}-${{ github.event_name }}-${{ github.head_ref || github.ref }}-${{ github.event_name == 'push' && github.sha || 'shared' }}
   cancel-in-progress: ${{ github.event_name != 'merge_group' }}
 
 jobs:
