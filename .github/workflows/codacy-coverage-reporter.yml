@@ -1,1 +1,104 @@
-IyBUaGlzIHdvcmtmbG93IHVzZXMgYWN0aW9ucyB0aGF0IGFyZSBub3QgY2VydGlmaWVkIGJ5IEdpdEh1Yi4KIyBUaGV5IGFyZSBwcm92aWRlZCBieSBhIHRoaXJkLXBhcnR5IGFuZCBhcmUgZ292ZXJuZWQgYnkKIyBzZXBhcmF0ZSB0ZXJtcyBvZiBzZXJ2aWNlLCBwcml2YWN5IHBvbGljeSwgYW5kIHN1cHBvcnQKIyBkb2N1bWVudGF0aW9uLgoKIyBSdW5zIHRoZSBzYW1lIHRlc3Qgc3VpdGUgcHl0aG9uLXRlc3Qtc3VpdGUueW1sIHJ1bnMsIHVuZGVyIGBjb3ZlcmFnZWAsIGFuZAojIHVwbG9hZHMgdGhlIHJlc3VsdGluZyByZXBvcnQgdG8gQ29kYWN5IHNvIGNvdmVyYWdlIGlzIHRyYWNrZWQgaW4gdGhlIENvZGFjeQojIFVJIC8gUFIgY2hlY2tzLiBLZXB0IGFzIGl0cyBvd24gd29ya2Zsb3cgKHJhdGhlciB0aGFuIGEgc3RlcCBib2x0ZWQgb250bwojIHB5dGhvbi10ZXN0LXN1aXRlLnltbCkgdG8gbWlycm9yIGNvZGFjeS55bWwncyBzZXBhcmF0aW9uIG9mIGNvbmNlcm5zIGFuZAojIENvZGFjeSdzIG93biBkb2N1bWVudGVkIGNvbnZlbnRpb24gZm9yIHRoaXMgYWN0aW9uOgojIGh0dHBzOi8vZ2l0aHViLmNvbS9jb2RhY3kvY29kYWN5LWNvdmVyYWdlLXJlcG9ydGVyLWFjdGlvbgojCiMgVGhlIHJlcG9ydC1nZW5lcmF0aW9uIGFuZCB1cGxvYWQgc3RlcHMgcnVuIHdoZW5ldmVyIHRoZSB0ZXN0IHN0ZXAgd2FzCiMgYWN0dWFsbHkgcmVhY2hlZCAocGFzcyBvciBmYWlsKSAtLSB2aWEgYGlkOiB0ZXN0c2AgKwojIGAhY2FuY2VsbGVkKCkgJiYgc3RlcHMudGVzdHMuY29uY2x1c2lvbiAhPSAnc2tpcHBlZCdgIC0tIHNvIGEgY292ZXJhZ2UKIyBudW1iZXIgc3RpbGwgZ2V0cyByZXBvcnRlZCBldmVuIG9uIGEgcnVuIHdoZXJlIGEgdGVzdCBmYWlsZWQgKGNvdmVyYWdlCiMgdHJlbmQgdHJhY2tpbmcgaXMgaW5kZXBlbmRlbnQgb2YgcGFzcy9mYWlsLCBhbmQgYSByZWQgdGVzdCBydW4gbG9zaW5nIGl0cwojIGNvdmVyYWdlIGRhdGEgdG9vIHdvdWxkIG1ha2UgdGhlIENvZGFjeSBoaXN0b3J5IGdhcHB5IGZvciBubyByZWFzb24pLCBidXQKIyBOT1Qgd2hlbiB0aGUgd29ya2Zsb3cgaXMgY2FuY2VsbGVkIG9yIGEgcHJpb3Igc2V0dXAgc3RlcCAoY2hlY2tvdXQsIHV2CiMgc3luYykgZmFpbGVkIGFuZCB0aGUgdGVzdCBzdGVwIG5ldmVyIHJhbiBhdCBhbGwgLS0gYXZvaWRzIGEgY29uZnVzaW5nCiMgY2FzY2FkaW5nIGZhaWx1cmUgZnJvbSBgY292ZXJhZ2UgeG1sYC90aGUgdXBsb2FkIHRyeWluZyB0byBydW4gYWdhaW5zdCBhbgojIGVudmlyb25tZW50IG9yIGNvdmVyYWdlIGRhdGEgdGhhdCB3YXMgbmV2ZXIgcHJvZHVjZWQuCgpuYW1lOiBDb2RhY3kgQ292ZXJhZ2UgUmVwb3J0ZXIKCm9uOgogIHB1c2g6CiAgICBicmFuY2hlczogWyAibWFpbiIgXQogIHB1bGxfcmVxdWVzdDoKICAgIGJyYW5jaGVzOiBbICJtYWluIiBdCgpwZXJtaXNzaW9uczoKICBjb250ZW50czogcmVhZAoKam9iczoKICBjb3ZlcmFnZToKICAgIHJ1bnMtb246IHVidW50dS1sYXRlc3QKICAgIGVudjoKICAgICAgQ1JFV0FJX0RJU0FCTEVfVEVMRU1FVFJZOiAidHJ1ZSIKICAgICAgT1RFTF9TREtfRElTQUJMRUQ6ICJ0cnVlIgogICAgc3RlcHM6CiAgICAgIC0gdXNlczogYWN0aW9ucy9jaGVja291dEAzZDNjNDJlNWFhYzViYTgwNWQyNWRhNzY0MTBjMTgxMjczYmE5MGIxICMgdjcuMC4xCgogICAgICAtIHVzZXM6IGFjdGlvbnMvc2V0dXAtcHl0aG9uQDVmZGEzYjk1YTRlYTkxMjk5YTM0ZTg5NDU4M2MzODYyMTUzZTRlOTcgIyB2Ny4wLjAKICAgICAgICB3aXRoOgogICAgICAgICAgcHl0aG9uLXZlcnNpb24tZmlsZTogLnB5dGhvbi12ZXJzaW9uCgogICAgICAtIHVzZXM6IGFzdHJhbC1zaC9zZXR1cC11dkBjNzcxYTcwZTYyNzdjMGE5OWY2MTdjN2E4MDZmZmVkYWNhMjM1ZmY5ICMgdjkuMC4wCgogICAgICAtIG5hbWU6IHV2IHN5bmMgKGluc3RhbGxzIHB5cHJvamVjdCArIGRldiBncm91cCBwZXIgdXYubG9jaykKICAgICAgICBydW46IHV2IHN5bmMKCiAgICAgIC0gbmFtZTogUnVuIHRlc3Qgc3VpdGUgdW5kZXIgY292ZXJhZ2UKICAgICAgICBpZDogdGVzdHMKICAgICAgICBydW46IHV2IHJ1biBjb3ZlcmFnZSBydW4gLW0gcHl0ZXN0IHRlc3RzIC12CgogICAgICAtIG5hbWU6IEdlbmVyYXRlIGNvdmVyYWdlIFhNTCByZXBvcnQKICAgICAgICBpZjogJHt7ICFjYW5jZWxsZWQoKSAmJiBzdGVwcy50ZXN0cy5jb25jbHVzaW9uICE9ICdza2lwcGVkJyB9fQogICAgICAgIHJ1bjogdXYgcnVuIGNvdmVyYWdlIHhtbAoKICAgICAgIyBGaXJzdC1wYXJ0eSBjb3ZlcmFnZSB2aXNpYmlsaXR5IHRoYXQgZGVwZW5kcyBvbiBub3RoaW5nIGJ1dCB0aGlzCiAgICAgICMgam9iOiB3cml0dGVuIHN0cmFpZ2h0IHRvIHRoZSBBY3Rpb25zIHJ1bidzIG93biBzdGVwIHN1bW1hcnksIHNvCiAgICAgICMgY292ZXJhZ2UgbnVtYmVycyBhcmUgdmlzaWJsZSBldmVuIGlmIHRoZSBDb2RhY3kgdXBsb2FkIHN0ZXAgYmVsb3cKICAgICAgIyBmYWlscyBvciBpcyBza2lwcGVkIC0tIGFuIGV4cGlyZWQvbWlzc2luZyBDT0RBQ1lfUFJPSkVDVF9UT0tFTiwgYQogICAgICAjIENvZGFjeSBvdXRhZ2UsIG9yIGEgbGFwc2VkIGFjY291bnQgKHRoaXMgcmVwbyBoYXMgYWxyZWFkeSBzZWVuIGEKICAgICAgIyBkaWZmZXJlbnQgcGFpZCByZXZpZXcgdmVuZG9yIGdvIGRhcmsgbWlkLVBSIG9uIGEgYmlsbGluZyBsYXBzZToKICAgICAgIyB0ZW5raS1yZXZpZXdlcltib3RdLCBQUiAjNTg3KSBzaG91bGRuJ3QgbWVhbiB0aGUgcmVwbyBoYXMgemVybwogICAgICAjIGNvdmVyYWdlIHZpc2liaWxpdHkgdW50aWwgc29tZW9uZSBub3RpY2VzIGFuZCBmaXhlcyB0aGUgdmVuZG9yCiAgICAgICMgcmVsYXRpb25zaGlwLiBTYW1lIGNvbmRpdGlvbiBhcyB0aGUgc3RlcHMgYXJvdW5kIGl0OiBydW5zIHdoZW5ldmVyCiAgICAgICMgdGhlIHRlc3Qgc3RlcCB3YXMgcmVhY2hlZCwgaW5kZXBlbmRlbnQgb2YgdGhlIENvZGFjeSBzdGVwJ3Mgb3V0Y29tZS4KICAgICAgLSBuYW1lOiBQdWJsaXNoIGNvdmVyYWdlIHN1bW1hcnkgdG8gam9iIHN1bW1hcnkgKG5vIGV4dGVybmFsIGRlcGVuZGVuY3kpCiAgICAgICAgaWY6ICR7eyAhY2FuY2VsbGVkKCkgJiYgc3RlcHMudGVzdHMuY29uY2x1c2lvbiAhPSAnc2tpcHBlZCcgfX0KICAgICAgICBydW46IHwKICAgICAgICAgIHsKICAgICAgICAgICAgZWNobyAiIyMgQ292ZXJhZ2UgcmVwb3J0IgogICAgICAgICAgICBlY2hvCiAgICAgICAgICAgIGVjaG8gJ2BgYHRleHQnCiAgICAgICAgICAgIHV2IHJ1biBjb3ZlcmFnZSByZXBvcnQgLW0KICAgICAgICAgICAgZWNobyAnYGBgJwogICAgICAgICAgfSA+PiAiJEdJVEhVQl9TVEVQX1NVTU1BUlkiCgogICAgICAjIFVwbG9hZHMgd2l0aCBhIHBpbm5lZCwgY2hlY2tzdW0tdmVyaWZpZWQgcmVwb3J0ZXIgYmluYXJ5IGluc3RlYWQgb2YKICAgICAgIyBjb2RhY3kvY29kYWN5LWNvdmVyYWdlLXJlcG9ydGVyLWFjdGlvbjogdGhhdCBhY3Rpb24gcGlwZXMgYW4KICAgICAgIyB1bnBpbm5lZCBgbWFzdGVyYCBnZXQuc2ggZnJvbSByYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tIHN0cmFpZ2h0CiAgICAgICMgaW50byBiYXNoIGF0IHJ1bnRpbWUgKHR3aWNlKSwgYSBzdXBwbHktY2hhaW4gaG9sZSB0aGUgb3JnIEFjdGlvbnMKICAgICAgIyBwaW4gcG9saWN5IGNhbm5vdCBzZWUgYmVjYXVzZSBpdCBzaXRzIGluc2lkZSB0aGUgY29tcG9zaXRlIGFjdGlvbidzCiAgICAgICMgcnVuIHN0ZXAgcmF0aGVyIHRoYW4gYSBgdXNlczpgIHJlZmVyZW5jZS4gU2FtZSByZW1lZGlhdGlvbiBwYXR0ZXJuCiAgICAgICMgYXMgY29kYWN5LnltbC4gVGhlIGV4cGVjdGVkIFNIQS01MTIgaXMgQ29kYWN5J3Mgb3duIHB1Ymxpc2hlZAogICAgICAjIGNoZWNrc3VtIGZvciByZXBvcnRlciAxNC4xLjMsIGFzIHByaW50ZWQgYnkgZ2V0LnNoIGluIHRoaXMgcmVwbydzCiAgICAgICMgQ0kgbG9ncyAocnVuIDMwMDU2OTg1MzI1KS4gVGhlIHRva2VuIHRyYXZlbHMgb25seSBhcyB0aGUKICAgICAgIyBDT0RBQ1lfUFJPSkVDVF9UT0tFTiBlbnYgdmFyLCB3aGljaCB0aGUgcmVwb3J0ZXIgcmVhZHMgbmF0aXZlbHkuCiAgICAgICMgQSBzaW5nbGUgcmVwb3J0IG5lZWRzIG5vIC0tcGFydGlhbC9maW5hbCBwYWlyLgogICAgICAtIG5hbWU6IFVwbG9hZCBjb3ZlcmFnZSB0byBDb2RhY3kKICAgICAgICBpZjogJHt7ICFjYW5jZWxsZWQoKSAmJiBzdGVwcy50ZXN0cy5jb25jbHVzaW9uICE9ICdza2lwcGVkJyB9fQogICAgICAgIGVudjoKICAgICAgICAgIENPREFDWV9QUk9KRUNUX1RPS0VOOiAke3sgc2VjcmV0cy5DT0RBQ1lfUFJPSkVDVF9UT0tFTiB9fQogICAgICAgICAgUkVQT1JURVJfVkVSU0lPTjogIjE0LjEuMyIKICAgICAgICAgIFJFUE9SVEVSX1NIQTUxMjogIjczYTZjOTNmYzVkYjUwOWZkMDQyM2Q2ZTU0NTc1OWMzZjYxZDgzNjBlZTEyMDU0ZTMyYTkyNzdkYWFiNmFkZDBkYTZjNjYzOTI0OGY2ZWQ2YzAwNDIzNjY0NDAyOTNlYmMwYjYxNDQzMjVhZWY1MmM1ZDNkNGIyMzBkNjVlYjE3IgogICAgICAgIHNoZWxsOiBiYXNoCiAgICAgICAgcnVuOiB8CiAgICAgICAgICBjdXJsIC1mc1NMICJodHRwczovL2FydGlmYWN0cy5jb2RhY3kuY29tL2Jpbi9jb2RhY3ktY292ZXJhZ2UtcmVwb3J0ZXIvJHtSRVBPUlRFUl9WRVJTSU9OfS9jb2RhY3ktY292ZXJhZ2UtcmVwb3J0ZXItbGludXgiIC1vIGNvZGFjeS1jb3ZlcmFnZS1yZXBvcnRlcgogICAgICAgICAgZWNobyAiJHtSRVBPUlRFUl9TSEE1MTJ9ICBjb2RhY3ktY292ZXJhZ2UtcmVwb3J0ZXIiIHwgc2hhNTEyc3VtIC1jIC0KICAgICAgICAgIGNobW9kICt4IGNvZGFjeS1jb3ZlcmFnZS1yZXBvcnRlcgogICAgICAgICAgLi9jb2RhY3ktY292ZXJhZ2UtcmVwb3J0ZXIgcmVwb3J0IC1yIGNvdmVyYWdlLnhtbAo=
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+# Runs the same test suite python-test-suite.yml runs, under `coverage`, and
+# uploads the resulting report to Codacy so coverage is tracked in the Codacy
+# UI / PR checks. Kept as its own workflow (rather than a step bolted onto
+# python-test-suite.yml) to mirror codacy.yml's separation of concerns and
+# Codacy's own documented convention for this action:
+# https://github.com/codacy/codacy-coverage-reporter-action
+#
+# The report-generation and upload steps run whenever the test step was
+# actually reached (pass or fail) -- via `id: tests` +
+# `!cancelled() && steps.tests.conclusion != 'skipped'` -- so a coverage
+# number still gets reported even on a run where a test failed (coverage
+# trend tracking is independent of pass/fail, and a red test run losing its
+# coverage data too would make the Codacy history gappy for no reason), but
+# NOT when the workflow is cancelled or a prior setup step (checkout, uv
+# sync) failed and the test step never ran at all -- avoids a confusing
+# cascading failure from `coverage xml`/the upload trying to run against an
+# environment or coverage data that was never produced.
+
+name: Codacy Coverage Reporter
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+permissions:
+  contents: read
+
+jobs:
+  coverage:
+    runs-on: ubuntu-latest
+    env:
+      CREWAI_DISABLE_TELEMETRY: "true"
+      OTEL_SDK_DISABLED: "true"
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version-file: .python-version
+
+      - uses: astral-sh/setup-uv@c771a70e6277c0a99b617c7a806ffedaca235ff9 # v9.0.0
+
+      - name: uv sync (installs pyproject + dev group per uv.lock)
+        run: uv sync
+
+      - name: Run test suite under coverage
+        id: tests
+        run: uv run coverage run -m pytest tests -v
+
+      - name: Generate coverage XML report
+        if: ${{ !cancelled() && steps.tests.conclusion != 'skipped' }}
+        run: uv run coverage xml
+
+      # First-party coverage visibility that depends on nothing but this
+      # job: written straight to the Actions run's own step summary, so
+      # coverage numbers are visible even if the Codacy upload step below
+      # fails or is skipped -- an expired/missing CODACY_PROJECT_TOKEN, a
+      # Codacy outage, or a lapsed account (this repo has already seen a
+      # different paid review vendor go dark mid-PR on a billing lapse:
+      # tenki-reviewer[bot], PR #587) shouldn't mean the repo has zero
+      # coverage visibility until someone notices and fixes the vendor
+      # relationship. Same condition as the steps around it: runs whenever
+      # the test step was reached, independent of the Codacy step's outcome.
+      - name: Publish coverage summary to job summary (no external dependency)
+        if: ${{ !cancelled() && steps.tests.conclusion != 'skipped' }}
+        run: |
+          {
+            echo "## Coverage report"
+            echo
+            echo '```text'
+            uv run coverage report -m
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      # Uploads with a pinned, checksum-verified reporter binary instead of
+      # codacy/codacy-coverage-reporter-action: that action pipes an
+      # unpinned `master` get.sh from raw.githubusercontent.com straight
+      # into bash at runtime (twice), a supply-chain hole the org Actions
+      # pin policy cannot see because it sits inside the composite action's
+      # run step rather than a `uses:` reference. Same remediation pattern
+      # as codacy.yml. The expected SHA-512 is Codacy's own published
+      # checksum for reporter 14.1.3, as printed by get.sh in this repo's
+      # CI logs (run 30056985325). The token travels only as the
+      # CODACY_PROJECT_TOKEN env var, which the reporter reads natively.
+      # A single report needs no --partial/final pair.
+      - name: Upload coverage to Codacy
+        if: ${{ !cancelled() && steps.tests.conclusion != 'skipped' }}
+        env:
+          CODACY_PROJECT_TOKEN: ${{ secrets.CODACY_PROJECT_TOKEN }}
+          REPORTER_VERSION: "14.1.3"
+          REPORTER_SHA512: "73a6c93fc5db509fd0423d6e545759c3f61d8360ee12054e32a9277daab6add0da6c6639248f6ed6c0042366440293ebc0b6144325aef52c5d3d4b230d65eb17"
+        shell: bash
+        run: |
+          curl -fsSL "https://artifacts.codacy.com/bin/codacy-coverage-reporter/${REPORTER_VERSION}/codacy-coverage-reporter-linux" -o codacy-coverage-reporter
+          echo "${REPORTER_SHA512}  codacy-coverage-reporter" | sha512sum -c -
+          chmod +x codacy-coverage-reporter
+          ./codacy-coverage-reporter report -r coverage.xml
