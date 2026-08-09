@@ -6,7 +6,7 @@
 #       Machine Documentation (.json/.yaml/...; inert assets) -> "low"
 #       Computer Code (.py/.sh/...)                 -> "med"
 #       unrecognized extension                      -> "med" (conservative)
-#   * filedepth — WHERE the file sits, by its literal directory prefix (see placement_flag):
+#   * filedepth — WHERE the file sits, by its literal directory prefix (see filedepth_flag):
 #       repo root (not under "!/")                  -> None
 #       inside "!/" (above the inner prefix)        -> "high"
 #       inside "!/!/__!__/!/" and below             -> "nope"
@@ -20,9 +20,9 @@
 #     "tier":  "low"|"high",                       # binary: SAFE_TIERS -> low, everything riskier -> high
 #     "tier4": "clear"|"low"|"med"|"high"|"nope",  # composed read (nope>high>med>low>clear)
 #     "filetype": None|"low"|"med",                # riskiest filetype across the changeset
-#     "depth":    None|"high"|"nope",              # riskiest placement across the changeset (JSON key "depth")
+#     "filedepth": None|"high"|"nope",             # riskiest filedepth across the changeset
 #     "subtier":  None,                            # not implemented
-#     "by_file":  [{"path","filetype","depth"}, ...],
+#     "by_file":  [{"path","filetype","filedepth"}, ...],
 #     "high_risk_files": [...], "low_risk_files": [...],
 #   }
 import json
@@ -69,7 +69,7 @@ def filetype_flag(path: str) -> str | None:
     return FILETYPE_UNKNOWN_DEFAULT
 
 
-def placement_flag(path: str) -> str | None:
+def filedepth_flag(path: str) -> str | None:
     """Return "nope" | "high" | None for a path, by its literal directory prefix."""
     if path.startswith(NOPE_PREFIX):
         return "nope"
@@ -79,11 +79,11 @@ def placement_flag(path: str) -> str | None:
 
 
 def classify_file(path: str) -> tuple:
-    """Return (filetype_flag, placement_flag) for one path — two independent scores."""
-    # Windows-style separators are normalized to '/' first so the placement prefixes match
+    """Return (filetype_flag, filedepth_flag) for one path — two independent scores."""
+    # Windows-style separators are normalized to '/' first so the filedepth prefixes match
     # regardless of input source (git/gh emit '/', but local/tooling input may use '\\').
     path = path.replace("\\", "/")
-    return (filetype_flag(path), placement_flag(path))
+    return (filetype_flag(path), filedepth_flag(path))
 
 
 def riskiest(*flags) -> str | None:
@@ -93,33 +93,33 @@ def riskiest(*flags) -> str | None:
     return min(present, key=TIER_PRECEDENCE.index) if present else None
 
 
-def combine(filetype, depth) -> str:
-    """Collapse the (filetype, depth) pair to one tier by TIER_PRECEDENCE (riskiest wins)."""
+def combine(filetype, filedepth) -> str:
+    """Collapse the (filetype, filedepth) pair to one tier by TIER_PRECEDENCE (riskiest wins)."""
     # "clear" when both are None.
-    return riskiest(filetype, depth) or CLEAR_TIER
+    return riskiest(filetype, filedepth) or CLEAR_TIER
 
 
 def main():
     paths = [line.strip() for line in sys.stdin if line.strip()]
     by_file = []
     for p in paths:
-        ft, dp = classify_file(p)
-        by_file.append({"path": p, "filetype": ft, "depth": dp})
+        ft, fd = classify_file(p)
+        by_file.append({"path": p, "filetype": ft, "filedepth": fd})
 
     # Aggregate each axis to its riskiest reach across the changeset.
     filetype = riskiest(*(b["filetype"] for b in by_file))
-    depth = riskiest(*(b["depth"] for b in by_file))
-    tier4 = combine(filetype, depth)            # nope|high|med|low|clear
+    filedepth = riskiest(*(b["filedepth"] for b in by_file))
+    tier4 = combine(filetype, filedepth)        # nope|high|med|low|clear
     tier = "low" if tier4 in SAFE_TIERS else "high"
 
-    high_risk = [b["path"] for b in by_file if combine(b["filetype"], b["depth"]) not in SAFE_TIERS]
-    low_risk = [b["path"] for b in by_file if combine(b["filetype"], b["depth"]) in SAFE_TIERS]
+    high_risk = [b["path"] for b in by_file if combine(b["filetype"], b["filedepth"]) not in SAFE_TIERS]
+    low_risk = [b["path"] for b in by_file if combine(b["filetype"], b["filedepth"]) in SAFE_TIERS]
 
     print(json.dumps({
         "tier": tier,
         "tier4": tier4,
         "filetype": filetype,
-        "depth": depth,
+        "filedepth": filedepth,
         "subtier": None,
         "by_file": by_file,
         "high_risk_files": high_risk,
