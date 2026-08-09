@@ -5,25 +5,22 @@ on:
     branches:
       - "agent/**"
 
-# Supersede, don't stack: a second push to the same branch cancels the still-running
-# check for the previous commit, which nobody is waiting on. The final state of the
-# branch is still checked in full, so no coverage is lost.
+# No concurrency guard here, deliberately.
 #
-# `github.event_name` is in the group key on purpose: it keeps the push-event run and
-# the pull_request-event run of the same branch in SEPARATE groups. Collapsing them
-# would let a push run cancel a required PR check, and a cancelled required check
-# blocks the PR.
+# This workflow fires on `push` and nothing else, and it scans only that push's
+# own before..after delta. Those two facts together rule out every option:
 #
-# merge_group is never cancelled — cancelling a merge-queue check breaks the queue.
-concurrency:
-  # Push groups are SHA-specific, so push runs never cancel each other.
-  # These checks scan only the push's own before..after delta, so a cancelled
-  # push run loses that delta's coverage for good: push A adds a violation,
-  # push B touches an unrelated file and cancels A, and B then scans only its
-  # own files while A's remain on the branch, unexamined. pull_request runs
-  # scan base..head, which is cumulative, so superseding one loses nothing.
-  group: ${{ github.workflow }}-${{ github.event_name }}-${{ github.head_ref || github.ref }}-${{ github.event_name == 'push' && github.sha || 'shared' }}
-  cancel-in-progress: ${{ github.event_name != 'merge_group' }}
+#   - Grouping by branch would let a later push cancel an earlier one, and the
+#     earlier push's files would then never be scanned by anything — the next
+#     push's `before` is the cancelled run's `after`. Coverage lost for good.
+#   - Grouping by SHA makes every run unique, so nothing is ever superseded and
+#     the block does nothing at all. Config that reads as a guard but is inert
+#     is worse than no config, because it invites being counted as one.
+#
+# So this check is genuinely unguardable as written. Making it safely
+# cancellable means making a replacement run validate cumulative branch state
+# rather than one push's delta; until someone does that, the honest thing is
+# an empty space and this note.
 
 jobs:
   validate:
