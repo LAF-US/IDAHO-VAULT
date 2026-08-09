@@ -1,10 +1,6 @@
 ---
 date created: Sunday, March 29th 2026, 10:48:49 am
-<<<<<<< Updated upstream
 date modified: Wednesday, April 1st 2026, 11:00:09 pm
-=======
-date modified: Sunday, March 29th 2026, 10:49:49 am
->>>>>>> Stashed changes
 ---
 
 # Greeting
@@ -1387,12 +1383,7 @@ Here’s the gentle, safe Sunday swarm mode I’d run.
   * blockers
   * true incidents
   * anything asking for approval
-<<<<<<< Updated upstream
 * leave merges and secret provisioning for later unless something is truly [on fire](<on fire.md>)
-=======
-* leave merges and secret provisioning for later unless something is truly [on fire](<on%20fire>)
-
->>>>>>> Stashed changes
 
 \-Linear (today's project foreman)
 

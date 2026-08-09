@@ -12,10 +12,6 @@ aliases:
 linter-yaml-title-alias: VAULT-CONVENTIONS
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-
 ## Wikilinks
 
 
@@ -698,11 +694,5 @@ Filenames within any single directory **must be case-unique**. `Act.md` and `ACT
 
 - [Microsoft: Naming Files, Paths, and Namespaces](https://learn.microsoft.com/en-us/windows/win32/fileio/naming-a-file)
 - [Apple File System Guide](https://developer.apple.com/documentation/foundation/file_system)
-=======
-# VAULT-CONVENTIONS
->>>>>>> 4d3d06e2fac5b12be035d897a4635d9be5baf1bd
-=======
-# VAULT-CONVENTIONS
->>>>>>> 4d3d06e2fac5b12be035d897a4635d9be5baf1bd
 
 #idaho
