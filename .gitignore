@@ -44,19 +44,6 @@ Network Trash Folder
 Temporary Items
 
 # ---------------------------------------------------------------
-# Build Packages
-# ---------------------------------------------------------------
-**/build/**
-**/cache/**
-**/dist/**
-**/env/**
-**/node_modules/**
-**/skills/**
-**/vendor/**
-**/venv/**
-.venv
-
-# ---------------------------------------------------------------
 # Large Stores
 # ---------------------------------------------------------------
 .cache/codex-runtimes/codex-primary-runtime/**
@@ -80,6 +67,7 @@ Temporary Items
 .obsidian/plugins/obsidian-local-rest-api/data.json
 .obsidian/plugins/phone-to-roam-to-obsidian/data.json
 .obsidian/plugins/todoist-context-bridge/data.json
+.venv
 id_ed25519
 id_ed25519.pub
 known_hosts
