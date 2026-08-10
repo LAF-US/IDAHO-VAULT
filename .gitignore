@@ -1,53 +1,28 @@
-<<<<<<< Updated upstream
-# The *default* assumption for the VAULT is that things need to be tracked. The *only* exceptions to that sole assumption are **secrets** and **exhaust**. Tread lightly here.
+# THE VAULT tracks everything by default. Two narrow classes escape:
+#
+#   SECRETS — credential material. NON-.md ONLY: Markdown is force-tracked at
+#             the bottom, so a secret pasted into prose is the scanner's job
+#             (.github/scripts/check_secret_patterns.py), never this file's.
+#             Name secrets exactly or by safe extension — NOT unanchored
+#             substring globs (`*_keys*` eats "monkeys", `id_*` eats "identity").
+#
+#   EXHAUST — machine-generated files that never held human authorship AND
+#             regenerate if deleted: OS droppings, build output, caches, runtime
+#             state. NOTE: a bare `dir/` ignore is a Markdown blind spot —
+#             `!/**.md` CANNOT rescue prose under an excluded directory (git:
+#             "no matter where they are defined"). For a dir that may hold prose,
+#             ignore its contents not the dir: `dir/**` + `!dir/**/` + `!dir/**/*.md`
 
-# Keep markdown and dotstubs
-
-!**.md
-!**/stub.txt
-
-# Plaintext secret file
-
-/.cache_ggshield
-/.claude/.credentials.json
-/.obsidian/plugins/obsidian-local-rest-api/data.json
-/.obsidian/plugins/phone-to-roam-to-obsidian/data.json
-/.ssh/id_ed25519
-/.ssh/id_ed25519.pub
-/.ssh/known_hosts
-
-# Large media bytestore
-
-/.ollama/models/blobs
-
-# ESTO PERPETUA!
-.obsidian/plugins/mcp-tools/bin/mcp-server.exe
-.ollama/id_ed25519
-.ollama/id_ed25519.pub
-.obsidian/plugins/ai-image-analyzer/data.json
-.obsidian/plugins/ai-templater/data.json
-.obsidian/plugins/todoist-context-bridge/data.json
-=======
-# The *default* assumption for the VAULT is that things need to be tracked. 
-# The *only* exceptions to that assumption are **secrets** and **exhaust**.
-# Tread lightly here.
-
-# -------------------------------------------------------------------
-# OS System Files
-# -------------------------------------------------------------------
-
-## General
+# ---------------------------------------------------------------
+# EXHAUST — OS system files
+# ---------------------------------------------------------------
 ._*
 Icon?
-
-## Linux
 ~*
 .fuse_hidden*
 .directory
 .Trash-*
 .nfs*
-
-## Windows
 Thumbs.db
 Thumbs.db:encryptable
 ehthumbs.db
@@ -55,8 +30,6 @@ ehthumbs_vista.db
 [Dd]esktop.ini
 .stackdump
 $RECYCLE.BIN/
-
-## macOS
 .DS_Store
 .AppleDouble
 .AppleDB
@@ -74,50 +47,59 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 
-# -------------------------------------------------------------------
-# Packages & Builds
-# -------------------------------------------------------------------
-/cache/
+# ---------------------------------------------------------------
+# EXHAUST — packages, builds, environments (never-content names only)
+# ---------------------------------------------------------------
 /build/
-/blobs/
-/dependencies/
 /dist/
-/marketplaces/
 /node_modules/
 /vendor/
+/env/
+/venv/
+.venv
+/cache/
 
-# -------------------------------------------------------------------
-# Environment & Secrets
-# -------------------------------------------------------------------
-credentials
-credstore
-id_*
-*_hosts*
-*_keys*
+# ---------------------------------------------------------------
+# EXHAUST — large model/media stores + agent runtime state (exact paths)
+# ---------------------------------------------------------------
+.ollama/models/blobs
+/.cache/codex-runtimes/codex-primary-runtime
+/.claude/plugins/marketplaces
+/.claude/file-history
+/.codex/.tmp/bundled-marketplaces
+/.codex/plugins/.remote-plugin-install-staging
+/.codex/plugins/cache
+/.codex/skills/.system
+.aikido/config
+
+# ---------------------------------------------------------------
+# SECRETS — non-.md credential material, named not guessed
+# ---------------------------------------------------------------
 .cache_ggshield
 .env
-.env.local
-.pem
-.venv
-/env/
-/private/
-/venv/
+.env.*
+*.pem
+id_ed25519
+id_ed25519.pub
+known_hosts
+.claude/.credentials.json
 
+# ---------------------------------------------------------------
+# SECRETS — Obsidian plugin data.json (ENUMERATED, never globbed:
+# a *-wildcard here sweeps load-bearing plugin config and broke the install)
+# ---------------------------------------------------------------
 .obsidian/plugins/ai-templater/data.json
 .obsidian/plugins/ai-image-analyzer/data.json
 .obsidian/plugins/obsidian-local-rest-api/data.json
 .obsidian/plugins/phone-to-roam-to-obsidian/data.json
 .obsidian/plugins/todoist-context-bridge/data.json
+.obsidian/plugins/mcp-tools/bin/mcp-server.exe
 
-# -------------------------------------------------------------------
-# Ignorefile Exclusions
-# -------------------------------------------------------------------
-
+# ---------------------------------------------------------------
+# KEEP — re-include tracked-by-default surfaces (MUST be last)
+# ---------------------------------------------------------------
 !.gitignore
 !/.*/stub.txt
 !/**.md
 
-# -------------------------------------------------------------------
 # THE WORLD IS QUIET HERE．ESTO PERPETUA!
-# -------------------------------------------------------------------
->>>>>>> Stashed changes
