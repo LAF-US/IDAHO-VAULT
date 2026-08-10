@@ -172,11 +172,17 @@ def main() -> int:
     if mode not in {"all", "run", "test"}:
         print("usage: driver.py [all|run|test]")
         return 2
+    # `test` is dispatched BEFORE ensure_env() on purpose. It needs no venv and
+    # no console scripts, and ensure_env() exits non-zero when `run_crew` is
+    # missing — which it currently is, because pyproject.toml declares no
+    # [project.scripts]. Setting up an environment to print "nothing to run"
+    # would be work for no reason, and running it first made the documented
+    # "exits 0" false on exactly the checkouts where it is most likely invoked.
+    if mode == "test":
+        return run_tests()
     ensure_env()
     if mode == "run":
         return run_crew()
-    if mode == "test":
-        return run_tests()
     ok = 0
     ok |= run_crew()
     ok |= drive_entrypoints()
