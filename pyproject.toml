@@ -1,60 +1,49 @@
 [project]
 name = "idaho-vault"
 version = "0.1.0"
-description = "CrewAI deployment-validation shard for IDAHO-VAULT"
-authors = [{ name = "Logan Finney" }]
+description = "The world is quiet here．Esto Perpetua!"
+authors = [{ name = "Logan Finney" }, { name = "Unified Swarm" }]
+# Without this, uv resolves against its own default of >=3.13 — which silently
+# drops every 3.10 resolution from uv.lock while cross-platform-smoke.yml still
+# runs the suite on 3.10. Measured: removing it collapsed pygit2 from two version-split
+# entries (1.18.2 for 3.10, 1.19.3 for 3.11+) to one, and left the lock claiming
+# 3.13-only for a project CI exercises on 3.10.
 requires-python = ">=3.10,<3.14"
 dependencies = [
-    "crewai>=1.9.3,<2",
-    "flask>=3.0.0,<4",
+    "packaging",
+    # Each entry names a file that imports it and the run that proved it. All three
+    # were smoked out by `uv run pytest tests` on e3ec9e414, which stopped with
+    # "Interrupted: 6 errors during collection" and named them one at a time.
+    #
+    # src/idaho_vault/five_wizards/models.py:5 -> test_five_wizards,
+    # test_threshold_runner, test_civic_scaffold
     "pydantic~=2.11.9",
-    "huggingface-hub>=0.0,<2",
-    "requests-oauthlib>=0.0,<3",
-    "honcho-ai>=2.1.2,<3",
+    # .github/scripts/metadata_survey.py:28 -> test_metadata_survey;
+    # tests/test_workflow_security_invariants.py:6 imports it directly.
+    # NOTE: PyYAML was never declared here. It has been arriving as a transitive
+    # dependency of something else, which is why nothing noticed when it stopped.
+    "pyyaml>=6.0,<7",
+    # tests/test_sync_obsidian_plugin_registry.py:17
+    "pygit2>=1.18.2,<2",
 ]
-
-[project.scripts]
-idaho_vault = "idaho_vault.main:run"
-run_crew = "idaho_vault.main:run"
-train = "idaho_vault.main:train"
-replay = "idaho_vault.main:replay"
-test = "idaho_vault.main:test"
-run_with_trigger = "idaho_vault.main:run_with_trigger"
-five_wizards_threshold = "idaho_vault.main:run_five_wizards_threshold"
-civic_scaffold = "idaho_vault.main:run_civic_scaffold"
-metadata_survey = "idaho_vault.main:run_metadata_survey"
-
-[build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
-
-[tool.hatch.build.targets.wheel]
-packages = ["src/idaho_vault"]
-
-[tool.uv]
-cache-dir = ".uv-cache"
-python-downloads = "manual"
-python-preference = "system"
-override-dependencies = [
-    "mcp>=1.27.2",
-]
-
-[tool.crewai]
-type = "crew"
-
-[tool.ruff]
-line-length = 100
-target-version = "py310"
-
-[tool.pytest.ini_options]
-# Make the CI scripts dir an import root so test modules (which load the scripts
-# by file path) can resolve the shared lib (gh_cli, etc.). Production runs the
-# scripts directly, which already puts this dir on sys.path[0].
-pythonpath = [".github/scripts"]
+# Just like a .gitignore file, don't fiddle with this willy-nilly.
 
 [dependency-groups]
+# Every entry names the workflow that spawns it. Nothing lives here that CI does not
+# actually invoke through uv — those are the only two workflows that use uv at all.
+# Deliberately NOT here: jupytext (check-notebooks-paired.yml pip-installs it at the
+# version it reads out of uv.lock, never through uv) and ruff (no workflow invokes it;
+# Codacy runs its own). Both were in the group before and neither was feeding anything.
 dev = [
+    # python-test-suite.yml -> `uv run pytest tests -v`
     "pytest>=9.0.3,<10",
-    "ruff>=0.15.12,<1",
-    "jupytext>=1.16,<2",
+    # codacy-coverage-reporter.yml -> `uv run coverage run -m pytest` / `uv run coverage xml`
+    "coverage>=7.6,<8",
+]
+
+[tool.coverage.report]
+skip_empty = true
+exclude_also = [
+    "pragma: no cover",
+    "if __name__ == .__main__.:",
 ]

@@ -1,4 +1,5 @@
 ---
+title: "Democrats on the committee posit that allowing another bond..."
 date: 2020-01-27
 time: 16:23:12
 tweet_id: "1221831030560018433"

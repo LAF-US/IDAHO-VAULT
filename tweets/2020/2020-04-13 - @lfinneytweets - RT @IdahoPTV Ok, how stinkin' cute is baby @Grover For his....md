@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPTV Ok, how stinkin' cute is baby @Grover For his..."
 date: 2020-04-13
 time: 20:21:12
 tweet_id: "1249794790138368000"

@@ -1,4 +1,5 @@
 ---
+title: "General question for my education folks how much granular..."
 date: 2020-03-16
 time: 17:07:59
 tweet_id: "1239599302596411393"

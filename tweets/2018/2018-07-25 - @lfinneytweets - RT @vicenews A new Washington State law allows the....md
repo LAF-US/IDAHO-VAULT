@@ -1,4 +1,5 @@
 ---
+title: "RT @vicenews A new Washington State law allows the..."
 date: 2018-07-25
 time: 22:14:58
 tweet_id: "1022243839266906112"

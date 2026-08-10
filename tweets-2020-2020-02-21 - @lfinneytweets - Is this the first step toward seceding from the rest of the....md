@@ -19,7 +19,7 @@ related:
   - idpol
 ---
 
-"Is this the first step toward seceding from the rest of the state?" joked Sen. Winder. #idleg #idpol 
+"Is this the first step toward seceding from the rest of the state?" joked Sen. Winder. #idleg #idpol
 
 Vick says that all seven of the northern senators have expressed support of the bill. The change would put the entire state on the same clock time for 8 months of the year.
 

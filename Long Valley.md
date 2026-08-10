@@ -14,11 +14,12 @@ related:
 authority: LOGAN
 ---
 Western Valley County
+
 - McCall
 - Donnelly
 - Cascade
 - Alpha
-Drainage Payette River 
+Drainage Payette River
 - Cascade Reservoir
 - Payette Lake
-- Little Payette Lake 
+- Little Payette Lake

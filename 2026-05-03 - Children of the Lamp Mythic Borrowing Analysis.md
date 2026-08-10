@@ -153,4 +153,3 @@ The literature is borrowing from real mythos the way a good engineering system b
 - reorganize the pieces into a stable executable model
 
 That is why these books are useful to the vault. They show how to convert myth into a system without flattening it into generic fantasy noise.
-

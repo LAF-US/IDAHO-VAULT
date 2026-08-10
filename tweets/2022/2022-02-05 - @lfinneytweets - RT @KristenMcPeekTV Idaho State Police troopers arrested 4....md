@@ -1,4 +1,5 @@
 ---
+title: "RT @KristenMcPeekTV Idaho State Police troopers arrested 4..."
 date: 2022-02-05
 time: 00:28:31
 tweet_id: "1489757797164060673"

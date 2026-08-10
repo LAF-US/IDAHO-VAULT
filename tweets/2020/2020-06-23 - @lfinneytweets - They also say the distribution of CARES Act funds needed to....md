@@ -1,4 +1,5 @@
 ---
+title: "They also say the distribution of CARES Act funds needed to..."
 date: 2020-06-23
 time: 15:18:55
 tweet_id: "1275448256311353346"

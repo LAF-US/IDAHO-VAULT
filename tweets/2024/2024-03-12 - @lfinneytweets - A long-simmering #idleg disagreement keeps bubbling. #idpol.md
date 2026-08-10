@@ -1,4 +1,5 @@
 ---
+title: "A long-simmering #idleg disagreement keeps bubbling. #idpol"
 date: 2024-03-12
 time: 00:48:00
 tweet_id: "1767351804860494037"
@@ -19,9 +20,9 @@ related:
 ---
 
 A long-simmering #idleg disagreement keeps bubbling. #idpol 
-https://t.co/AUCiesJKYx
+<https://t.co/AUCiesJKYx>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2024/03/11/senate-pushes-to-re-adopt-jfac-rules/
+- <https://blog.idahoreports.idahoptv.org/2024/03/11/senate-pushes-to-re-adopt-jfac-rules/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1767351804860494037)

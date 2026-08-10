@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Attorney General Ra\u00fal Labrador is accusing..."
 date: 2023-03-28
 time: 21:33:34
 tweet_id: "1640829508721733635"
