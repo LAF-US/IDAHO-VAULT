@@ -96,11 +96,18 @@ uv run civic_scaffold --format json      # emits civic-scaffold JSON
 deleted in #928. The mode is kept so callers and scripts do not break on an
 unknown argument.
 
-If a suite ever returns, hold each test to a standard the deleted one was not:
-neuter what it guards and confirm it goes red. The old suite failed that two
-ways — some tests could not fail at all (one passed against a `.gitignore` that
-ignored nothing), and some failed for the wrong reason (one asserted a redundant
-API call, so removing the redundancy read as a regression).
+If a suite ever returns, check each test this way before trusting it: break the
+behaviour the test is supposed to protect, run the test, and confirm it fails.
+If it still passes, it is not testing that behaviour.
+
+The deleted suite failed this check in two different ways:
+
+- **Could not fail.** One test asserted that `.gitignore` mentions `.mcp.json`
+  by grepping the file's text. It passed against a `.gitignore` that ignored
+  nothing at all, because it checked for a description rather than the effect.
+- **Failed for the wrong reason.** One test asserted an API was called twice,
+  documenting a redundant second call as intended. Removing the redundancy —
+  an improvement — made the test fail, so it defended the defect.
 
 ## Gotchas (battle scars)
 
