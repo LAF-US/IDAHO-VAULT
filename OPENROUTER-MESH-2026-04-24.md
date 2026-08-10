@@ -47,7 +47,7 @@ Local Ollama remains installed but is not active in OpenClaw routing; allowed lo
 
 ## Mesh Topology
 
-```
+```text
                     ┌────────────────────────────────────Ŀ
                     │         OpenRouter.ai                 │
                     │    openrouter.ai/api/v1 = unified   │
@@ -151,4 +151,8 @@ Current runtime helpers:
 - Health log: `!/MONITORING/health-log.md`
 - SSH/Git signing guidance remains separate in the harvested 1Password SSH agent docs.
 
-###### [["The world is quiet here."]]
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

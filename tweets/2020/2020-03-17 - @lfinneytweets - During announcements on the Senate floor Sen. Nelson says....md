@@ -1,4 +1,5 @@
 ---
+title: "During announcements on the Senate floor Sen. Nelson says..."
 date: 2020-03-17
 time: 18:24:39
 tweet_id: "1239980987838169095"

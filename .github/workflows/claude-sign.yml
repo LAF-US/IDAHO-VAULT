@@ -77,7 +77,7 @@ jobs:
           exit 1
 
       - name: Checkout target branch
-        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           ref: ${{ inputs.target_branch }}
           fetch-depth: 0  # full history for re-sign operations
@@ -94,7 +94,7 @@ jobs:
       #   item, or a newly-created "GitHub SSH Key").
       - name: Load signing key from 1Password
         if: env.OP_SERVICE_ACCOUNT_TOKEN != ''
-        uses: 1password/load-secrets-action@92467eb28f72e8255933372f1e0707c567ce2259 # v4
+        uses: 1password/load-secrets-action@e544b780808654ba8ceba5fb2fe2897103d92ff4 # v4
         with:
           export-env: true
         env:

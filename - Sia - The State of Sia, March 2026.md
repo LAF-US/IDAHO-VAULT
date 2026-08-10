@@ -4,7 +4,7 @@ author:
 published:
 created: 2026-04-23
 ---
-![](https://sia.tech/_next/image?url=%2Fapi%2Fmedia%2Ffile%2FThe%2520State%2520of%2520Sia%252C%2520March%25202026%3F2026-04-21T21%3A15%3A13.752Z&w=3840&q=100)
+![alt text needed](https://sia.tech/_next/image?url=%2Fapi%2Fmedia%2Ffile%2FThe%2520State%2520of%2520Sia%252C%2520March%25202026%3F2026-04-21T21%3A15%3A13.752Z&w=3840&q=100)
 
 March was a strong month for Sia across product, infrastructure, and ecosystem development. The Foundation’s content and messaging stayed focused on one of Sia’s clearest market differentiators: privacy by design. Social content this month highlighted the [risks of surveillance](https://www.instagram.com/reel/DVZjb07DTgY/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==), [the importance of protecting user-generated content online](https://www.tiktok.com/@sia.network/video/7616439821573147917), and the concrete guarantee that [Sia is trustless by design](https://www.tiktok.com/@sia.network/video/7621602522137890061).
 
@@ -26,7 +26,7 @@ On the development side, March brought meaningful momentum across the ecosystem:
 
 ## Development Updates
 
-![](https://sia.tech/_next/image?url=%2Fapi%2Fmedia%2Ffile%2FThe%2520State%2520of%2520Sia%2520Blog%2520-%2520Development%2520Updates%3F2025-07-16T11%3A02%3A06.980Z&w=3840&q=100)
+![alt text needed](https://sia.tech/_next/image?url=%2Fapi%2Fmedia%2Ffile%2FThe%2520State%2520of%2520Sia%2520Blog%2520-%2520Development%2520Updates%3F2025-07-16T11%3A02%3A06.980Z&w=3840&q=100)
 
 #### Sia Storage App: Faster, Smoother, and Preparing for More Platforms
 
@@ -94,7 +94,7 @@ Work on `s3d` continued to improve compatibility with common S3-style workflows 
 
 ## Grant Program Updates
 
-![](https://sia.tech/_next/image?url=%2Fapi%2Fmedia%2Ffile%2FThe%2520State%2520of%2520Sia%2520Blog%2520-%2520Grants%2520Program%3F2025-07-16T11%3A02%3A44.014Z&w=3840&q=100)
+![alt text needed](https://sia.tech/_next/image?url=%2Fapi%2Fmedia%2Ffile%2FThe%2520State%2520of%2520Sia%2520Blog%2520-%2520Grants%2520Program%3F2025-07-16T11%3A02%3A44.014Z&w=3840&q=100)
 
 #### Newly Approved Grants
 

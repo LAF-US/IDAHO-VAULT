@@ -127,4 +127,32 @@ by **three separate mechanisms that must agree but can drift**, and the real mer
 - Sequence the staged migration above into reviewable increments.
 - Decide whether the sync-bot lane folds into the unified model or stays a separate contract.
 
-###### [["The world is quiet here."]]
+---
+
+**Addendum — 2026-07-19 (what has since resolved — this map is now partly historical).**
+*Appended by Claude Code, session `…01Fipj4vEJ5ADPuunn9ed5Hd`; proposed, Logan inscribes.*
+Several knots this map named are closed, so it no longer describes the live wiring in full:
+
+- **K1 / K2 — resolved.** The three drifting risk re-derivations collapsed: the classifier's
+  placement axis + CODEOWNERS are now the single source. `review_feedback_loop.py`'s
+  `PROTECTED_PATH_PATTERNS` / `_pr_touches_protected_path` (cited in §1, K1) **no longer exist**.
+- **K5 — resolved.** One merge method (`--merge`), enforced by
+  `tests/test_workflow_security_invariants.py::test_merge_method_is_the_queues_alone`.
+- **The second lane (§4) + the held sync-bot question — decided.** `auto-merge-rhythm.yml` and
+  `dependabot-rhythm.yml` were retired 2026-07-19 (`PREFIX-FREE-ROUTING-2026-07-19.md`): bot PRs now
+  flow through the one review-gated engine, no author fast-path.
+- **The grid's six open cells — now derived,** not open: read off the converged engine and recorded in
+  `WITNESS-THE-KEYS-ARE-THE-LEVERS-2026-06-21.md` (2026-07-20 addendum), pinned by
+  `test_review_feedback_loop.py::test_nine_cell_grid_routing_is_the_single_source`.
+- **K6 label vocabulary — flattened (2026-07-20).** The drifted 9-string scheme (prefixed
+  `filetype:risk/*` + `depth:risk/*` + a lossy legacy `risk/{—,low,high}` trio) collapsed to the four
+  flat labels `risk/{low,med,high,nope}` (filetype fires low/med, filedepth fires high/nope, `—` =
+  absence) — Logan's ruling. **K4 — resolved without a label:** `—/—` is absence, and the engine arms
+  it only on the classifier's affirmative verdict, never from missing labels.
+Still live from this map: the merge queue as the real gate.
+
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

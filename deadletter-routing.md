@@ -23,7 +23,7 @@ Create file: `/SWARM/deadletters/{TIMESTAMP}-{SOURCE}-{ISSUE}.md`
 
 Example:
 
-```
+```text
 /SWARM/deadletters/2026-03-16T2127-claude-orphan-cry.md
 ```
 

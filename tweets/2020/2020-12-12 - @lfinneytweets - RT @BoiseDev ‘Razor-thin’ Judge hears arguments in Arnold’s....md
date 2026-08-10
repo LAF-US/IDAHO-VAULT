@@ -1,4 +1,5 @@
 ---
+title: "RT @BoiseDev \u2018Razor-thin\u2019 Judge hears arguments in Arnold\u2019s..."
 date: 2020-12-12
 time: 01:34:29
 tweet_id: "1337571492318474241"
@@ -18,9 +19,9 @@ related:
   - BoiseDev
 ---
 
-RT @BoiseDev: ‘Razor-thin’: Judge hears arguments in Arnold’s ACHD recount appeal #BoiseDev https://t.co/tc9z4pg2yl
+RT @BoiseDev: ‘Razor-thin’: Judge hears arguments in Arnold’s ACHD recount appeal #BoiseDev <https://t.co/tc9z4pg2yl>
 
 ## Links
-- https://boisedev.com/news/2020/12/11/razor-thin-ada-county-judge-hears-arguments-in-arnold-recount-appeal/
+- <https://boisedev.com/news/2020/12/11/razor-thin-ada-county-judge-hears-arguments-in-arnold-recount-appeal/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1337571492318474241)

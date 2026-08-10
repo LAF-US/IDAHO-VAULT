@@ -19,7 +19,7 @@ related:
 ---
 
 RT @IdahoStatesman: Endorsement | Paulette Jordan gets our nod in Democrat race for Idaho governor
-# idpol
+\#idpol
 <https://t.co/8ls6daGNAm>
 
 ## Links

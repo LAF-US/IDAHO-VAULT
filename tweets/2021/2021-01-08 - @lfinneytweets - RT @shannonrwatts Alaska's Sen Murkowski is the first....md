@@ -1,4 +1,5 @@
 ---
+title: "RT @shannonrwatts Alaska's Sen Murkowski is the first..."
 date: 2021-01-08
 time: 23:12:15
 tweet_id: "1347682557400207362"

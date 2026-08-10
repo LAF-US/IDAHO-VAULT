@@ -42,7 +42,7 @@ Use the AskQuestion tool when available to gather this efficiently.
 
 Rules are `.mdc` files in `.cursor/rules/` with YAML frontmatter:
 
-```
+```text
 .cursor/rules/
   typescript-standards.mdc
   react-patterns.mdc

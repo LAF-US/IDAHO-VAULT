@@ -1,4 +1,5 @@
 ---
+title: "RT @gretelkauffman Blaine County commissioners have passed..."
 date: 2020-06-30
 time: 19:38:05
 tweet_id: "1278050190478340096"

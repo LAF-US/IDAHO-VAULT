@@ -1,4 +1,5 @@
 ---
+title: "It was fine for a while. The trouble started after puberty,..."
 date: 2024-06-04
 time: 17:13:18
 tweet_id: "1798040342207541705"

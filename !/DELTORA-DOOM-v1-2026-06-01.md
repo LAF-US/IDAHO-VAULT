@@ -171,4 +171,8 @@ and the vault's own watchword about unreliable narrators — shown as both its
 wisdom and its wound. The man named for a mood is healed by being given back his
 name.*
 
-###### [["The world is quiet here."]]
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

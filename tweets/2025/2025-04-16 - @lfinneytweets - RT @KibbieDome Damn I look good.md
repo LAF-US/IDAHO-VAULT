@@ -1,4 +1,5 @@
 ---
+title: "RT @KibbieDome Damn I look good"
 date: 2025-04-16
 time: 02:27:26
 tweet_id: "1912331972267110643"

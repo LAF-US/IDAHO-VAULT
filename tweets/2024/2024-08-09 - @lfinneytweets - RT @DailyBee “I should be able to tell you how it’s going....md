@@ -1,4 +1,5 @@
 ---
+title: "RT @DailyBee \u201cI should be able to tell you how it\u2019s going..."
 date: 2024-08-09
 time: 19:45:08
 tweet_id: "1821996153468285183"

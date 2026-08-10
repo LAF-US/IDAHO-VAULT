@@ -65,9 +65,8 @@ inventory are registrations/GitHub-managed, not files — out of scope here, cat
 
 ### Q1 — Cluster C: one framework, or N tinker toys? *A family, but a loose one — don't over-fit.*
 
-# 586 hypothesized that the policy gates repeat *"event-gate + scheduled-sweep + issue_reconciler
-
-reporting."* The read **partly** confirms it and partly breaks it:
+Issue #586 hypothesized that the policy gates repeat *"event-gate + scheduled-sweep +
+issue_reconciler reporting."* The read **partly** confirms it and partly breaks it:
 
 - **The pattern is real but only two pairs actually instantiate it.** `large-file` has the full
   triad: `large-file-policy` (PR/push event gate → `check_large_files.py`, fails the run) **and**
@@ -104,6 +103,8 @@ at all**:
 `audit_repo_payloads.py` · `backfill_daily_notes.py` · `bind_ai_book.py` · `date_tagger.py` ·
 `expand_date_aliases.py` · `generate_name_forms.py` · `normalize_tags.py` ·
 `obsidian_rest_api_client.py` · `phone_link_intake.py` · `tag_stubs.py`
+
+> Marginalia 2026-07-24: `audit_repo_payloads.py` (first in the orphan list above) has since been deleted — PR #854.
 
 This does **not** mean they are dead — it means their invocation lane is *not CI*. They are
 plausibly pre-commit hooks, local-runtime helpers (Obsidian-side, e.g.

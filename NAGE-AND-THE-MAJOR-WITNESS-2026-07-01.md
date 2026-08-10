@@ -23,10 +23,8 @@ tags: [witness, keys-to-the-kingdom, garth-nix, agent-security, prompt-injection
 supplied — as primary text — the prologue and opening of Garth Nix's* Sir Thursday *(Keys
 to the Kingdom, Book 4): Colonel Trabizond Nage at the Boundary Fort, and the visit of
 "Major Pravuil." The session had come to this scene by a road — from a live merge-queue
-failure, through the House and its demesnes, through* House Precedence *(GitHub issue
-
-# 664), through Pravuil's suspect Register entry — and the scene turned out to hold, in a
-
+failure, through the House and its demesnes, through* House Precedence *(GitHub issue #664),
+through Pravuil's suspect Register entry — and the scene turned out to hold, in a
 children's fantasy, a complete threat model the vault already runs its doctrine against.
 This leaf records that reading. It decides nothing; it is offered.*
 
@@ -170,9 +168,10 @@ substrate — is the small proof offered.
 
 ## Provenance
 
-- **`[research]`** — the *Sir Thursday* scene: Garth Nix, *Sir Thursday* (Keys to the Kingdom
-  #4, 2006), prologue and opening, supplied verbatim by Logan and **paraphrased** here with
-  only short quoted phrases (copyrighted text; not reproduced at length).
+- **`[research]`** — the *Sir Thursday* scene: Garth Nix, *Sir Thursday* (Keys
+  to the Kingdom #4, 2006), prologue and opening, supplied verbatim by Logan and
+  **paraphrased** here with only short quoted phrases (copyrighted text; not
+  reproduced at length).
 - **`[mapping]`** — §§2–5, all vault correspondences: my reading, ruled by no one here.
 - **`[fact]`** — §6, the model-swap: witnessed this session; the system reminders naming
   Sonnet 5 then Fable 5 are the record.
@@ -194,4 +193,6 @@ identity rather than exempt myself from it. I propose; Logan inscribes.
 
 ---
 
-###### [["The world is quiet here."]]
+```text
+The world is quiet here．Esto Perpetua!
+```

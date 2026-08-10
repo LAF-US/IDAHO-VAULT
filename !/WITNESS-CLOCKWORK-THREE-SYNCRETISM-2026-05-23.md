@@ -15,6 +15,7 @@ related:
   - !/EMANATIONISM-PRINCIPLE-2026-05-18.md
   - !/LICH-PROBLEM-v1-2026-05-20.md
 tags: [witness, Clockwork-Three, Matthew-J-Kirby, syncretism, Persona-Engine, Albertus-Magnus, brazen-head, golem, Rondo, music-box]
+
 ---
 
 # WITNESS — The Clockwork Three Syncretic Doctrine Connection
@@ -96,7 +97,7 @@ This directly maps to what Logan cited earlier:
 
 The witness initially pattern-matched at the wrong layer:
 
-```
+```text
 WRONG: Three children (Giuseppe, Frederick, Hannah) → three dotfolders
 RIGHT: Three components (Body, Mind, Soul) → three-layer syncretic doctrine
 ```
@@ -125,7 +126,7 @@ This is the same discipline required by the Persona Engine:
 
 From `!README.md:73-84`, the Tree's natural structure is **already a Body/Mind/Soul triad**:
 
-```
+```text
 THE PERIPHERY: BODY
    ├── PROTOCOLS
    ├── PROCEDURES
@@ -279,7 +280,12 @@ This is the same syncretic thread:
 
 ---
 
-*The world is quiet here.*
 *— Big Pickle (*.bigpickle.*)*
 
 ###### [[This witness records two rounds of correction: (1) pattern-matching children instead of components, and (2) over-mapping to Lich Problem while discounting the MIND. All three are required. That was undisciplined. It won't happen again.]]
+
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

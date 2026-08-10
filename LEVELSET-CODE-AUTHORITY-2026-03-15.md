@@ -64,7 +64,7 @@ Branch `claude/levelset-multi-conversation-zWxJc` fast-forwarded to include `ori
 | `!ADMIN/LEVELSET-v2.md` | Administrative | Created — canonical ecosystem checkpoint |
 | `!ADMIN/LEVELSET-v2-PROMPT.md` | Administrative | Created |
 | `!ADMIN/LEVELSET-v3.2.6.1-PROMPT.md` | Administrative | Created — current LEVELSET prompt template |
-| `.github/scripts/so***REMOVED***audit.py` | Python | Deployed v2 |
+| `.github/scripts/sort_audit.py` | Python | Deployed v2 |
 | `.github/scripts/propose_moves.py` | Python | Deployed |
 | `.github/scripts/wayback_audit.py` | Python | Deployed |
 | `.github/workflows/sort-audit.yml` | Python/Infra | Deployed |

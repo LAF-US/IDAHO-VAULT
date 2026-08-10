@@ -24,6 +24,6 @@ Traffic signal outside the state capitol building, written on a USPS label. Sena
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/EScyx14WsAEhmJT.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EScyx14WsAEhmJT.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1236012469199519745)

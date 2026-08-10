@@ -156,4 +156,8 @@ a string runs into the dark, **`*`** stands.
 - **Status:** active
 - **Authority:** LOGAN
 
-###### [["The world is quiet here."]]
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

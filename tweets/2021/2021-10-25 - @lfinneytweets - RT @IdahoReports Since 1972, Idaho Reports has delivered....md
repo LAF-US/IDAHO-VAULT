@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Since 1972, Idaho Reports has delivered..."
 date: 2021-10-25
 time: 20:52:38
 tweet_id: "1452739905554055169"

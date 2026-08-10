@@ -1,4 +1,5 @@
 ---
+title: "RT @CPRNews Colorado's great daylight saving debate lives..."
 date: 2020-02-16
 time: 21:33:32
 tweet_id: "1229156884038352897"
@@ -21,9 +22,9 @@ related:
 
 RT @CPRNews: Colorado's great daylight saving debate lives on...and on and on and on. 
 
-https://t.co/Xgnmmg1PdT via @AndyKnny #copolitics
+<https://t.co/Xgnmmg1PdT> via @AndyKnny #copolitics
 
 ## Links
-- https://buff.ly/2OHuPJQ
+- <https://buff.ly/2OHuPJQ>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1229156884038352897)

@@ -22,7 +22,7 @@ related:
 
 ## I. CONFIRMED STATE
 
-```
+```bash
 gh api graphql branchProtectionRules → nodes: []
 ```
 
@@ -56,7 +56,7 @@ The entire review/merge/risk-classification pipeline is advisory. It functions a
 
 ### For agent branches (`claude/*`, `codex/*`, `gemini/*`, `copilot/*`, `perplexity/*`, `grok/*`, `serena/*`)
 
-```
+```text
 1. Agent pushes to qualifying branch prefix
         │
         ▼
@@ -106,7 +106,7 @@ The entire review/merge/risk-classification pipeline is advisory. It functions a
 
 ### For Dependabot PRs
 
-```
+```text
 1. Dependabot opens PR for pip or github-actions ecosystem
         │
         ▼
@@ -151,7 +151,7 @@ The classifier is the heart of the gate system. It reads changed file paths from
 
 **High-risk exact matches:**
 
-```
+```text
 AGENTS.md, CLAUDE.md, CONSTITUTION.md, DECISIONS.md, LEVELSET.md,
 VAULT-CONVENTIONS.md, swarm.json, .gitignore, .github/CODEOWNERS,
 .github/copilot-instructions.md
@@ -159,13 +159,13 @@ VAULT-CONVENTIONS.md, swarm.json, .gitignore, .github/CODEOWNERS,
 
 **High-risk prefixes:**
 
-```
+```text
 !/          .github/workflows/          .github/scripts/
 ```
 
 **Low-risk prefixes:**
 
-```
+```text
 SOURCES/    TOPICS/     PEOPLE/     PLACES/
 ORGANIZATIONS/  GOVERNMENTS/    ATTACHMENTS/
 .github/swarm/  !/swarm/
@@ -173,7 +173,7 @@ ORGANIZATIONS/  GOVERNMENTS/    ATTACHMENTS/
 
 **Probe/example override (low regardless):**
 
-```
+```text
 .github/workflows/probe-*   .github/workflows/example-*
 .github/scripts/probe-*     .github/scripts/example-*
 ```
@@ -471,4 +471,8 @@ When Logan decides to re-enable branch protection, the minimal required set shou
 *Report filed: 2026-05-25 by Claude Code (Windows session), on Logan's direction.*
 *Feeds into: Claude–Codex Security Collaboration Proposal (same session).*
 
-###### "The world is quiet here."
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

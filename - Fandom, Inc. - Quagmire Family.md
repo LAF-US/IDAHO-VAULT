@@ -7,7 +7,7 @@ created: 2026-04-14
 ---
 | “ | *Don't worry, [Baudelaires](https://snicket.fandom.com/wiki/Baudelaire_Family "Baudelaire Family"), don't feel disgrace;   The Quagmire triplets are on the case!* | ” |
 | --- | --- | --- |
-| | — Isadora Quagmire, *[The Austere Academy](https://snicket.fandom.com/wiki/The_Austere_Academy "The Austere Academy")* |
+| | — Isadora Quagmire, *[The Austere Academy](https://snicket.fandom.com/wiki/The_Austere_Academy "The Austere Academy")* | |
 
 The **Quagmire family** is made up of [Duncan](https://snicket.fandom.com/wiki/Duncan_Quagmire "Duncan Quagmire"), [Isadora](https://snicket.fandom.com/wiki/Isadora_Quagmire "Isadora Quagmire") and [Quigley](https://snicket.fandom.com/wiki/Quigley_Quagmire "Quigley Quagmire") (the triplets) with their parents, [Mr.](https://snicket.fandom.com/wiki/Mr._Quagmire "Mr. Quagmire") and [Mrs. Quagmire](https://snicket.fandom.com/wiki/Mrs._Quagmire "Mrs. Quagmire").
 

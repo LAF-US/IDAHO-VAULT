@@ -1,4 +1,5 @@
 ---
+title: "RT @NinaRobin7 A bill extending medical amnesty in Idaho..."
 date: 2018-03-12
 time: 21:51:33
 tweet_id: "973315585839788032"

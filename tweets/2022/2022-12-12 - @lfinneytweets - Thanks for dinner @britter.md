@@ -1,4 +1,5 @@
 ---
+title: "Thanks for dinner @britter"
 date: 2022-12-12
 time: 00:35:53
 tweet_id: "1602099888338382848"
@@ -15,9 +16,9 @@ related:
   - lfinneytweets
 ---
 
-Thanks for dinner @britter https://t.co/g7hLmvhldT
+Thanks for dinner @britter <https://t.co/g7hLmvhldT>
 
 ## Media
-- ![](https://pbs.twimg.com/media/FjvNW4fagAAmHkJ.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/FjvNW4fagAAmHkJ.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1602099888338382848)

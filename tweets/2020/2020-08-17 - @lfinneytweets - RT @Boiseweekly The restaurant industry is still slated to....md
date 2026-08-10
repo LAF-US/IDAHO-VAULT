@@ -1,4 +1,5 @@
 ---
+title: "RT @Boiseweekly The restaurant industry is still slated to..."
 date: 2020-08-17
 time: 16:33:13
 tweet_id: "1295398288355553287"

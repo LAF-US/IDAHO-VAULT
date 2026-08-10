@@ -1,4 +1,5 @@
 ---
+title: "No, I wish we could have though! They go old school and..."
 date: 2024-04-15
 time: 23:17:28
 tweet_id: "1780012593849196555"

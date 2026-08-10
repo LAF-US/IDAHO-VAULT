@@ -8,6 +8,7 @@ aliases:
   - <% d.format("MMMM Do, YYYY") %>
   - <% d.format("D MMMM YYYY") %>
   - <% d.format("dddd, MMMM D, YYYY") %>
+period: day
 linter-yaml-title-alias: <% d.format("YYYY-MM-DD") %>
 yesterday: <% d.clone().subtract(1,"d").format("YYYY-MM-DD") %>
 tomorrow: <% d.clone().add(1,"d").format("YYYY-MM-DD") %>

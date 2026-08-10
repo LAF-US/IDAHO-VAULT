@@ -24,6 +24,6 @@ The Idaho Senate included #AddTheWords in today’s new bill introductions. #idl
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/EOQ48bXUUAAxowt.png)
+- ![alt text needed](https://pbs.twimg.com/media/EOQ48bXUUAAxowt.png)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1217162227423166464)

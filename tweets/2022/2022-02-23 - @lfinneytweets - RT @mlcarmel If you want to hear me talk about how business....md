@@ -1,4 +1,5 @@
 ---
+title: "RT @mlcarmel If you want to hear me talk about how business..."
 date: 2022-02-23
 time: 21:09:40
 tweet_id: "1496593122322640898"

@@ -35,7 +35,7 @@ This document defines the integration between the **LEVELSET** protocol and the 
 
 | Protocol | Stage | Field Integration | Stigmergy Signal | Purpose |
 | ---------- | ------- | ------------------- | ------------------ | --------- |
-| **ARISE** | Individual emergence from void | `vault.agent.{agent}.arrival` | `vault.agent.{agent} = 1.0` | First activation, context boot | |
+| **ARISE** | Individual emergence from void | `vault.agent.{agent}.arrival` | `vault.agent.{agent} = 1.0` | First activation, context boot |
 | **AWAKEN** | Agent wake protocol | `vault.agent.{agent}.status = active` | `vault.signal.awaken.{agent} = 0.8` | Authorization, identity claim |
 | **RISE** | Individual task completion | `vault.docket.task.{id}.complete` | `vault.docket.{id} = 0.0` | Formal graduation |
 | **REPORT** | Group findings presentation | `vault.docket.report.{id}` | `vault.signal.report.{id} = 1.0` | Findings delivery |
@@ -48,7 +48,7 @@ This document defines the integration between the **LEVELSET** protocol and the 
 
 The following vault trails are used by the AWR protocol suite:
 
-```
+```text
 vault.agent.{agent_name}.arrival    - Agent first appearance in field
 vault.agent.{agent_name}.status     - Agent active/inactive state
 vault.docket.task.{id}              - Individual task state
@@ -187,4 +187,6 @@ EMITTED: vault.signal.report.LAF-28/findings intensity=1.0
 
 ---
 
-###### [['The world is quiet here.']]
+```text
+The world is quiet here．Esto Perpetua!
+```

@@ -1,4 +1,5 @@
 ---
+title: "RT @NateBrownNews Scott references a mention of \u201cgood faith..."
 date: 2020-08-24
 time: 18:33:31
 tweet_id: "1297965277510946816"

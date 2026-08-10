@@ -20,6 +20,6 @@ Realtors gather in the rotunda for @Idaho_Realtors Annual Day at the Capitol. Me
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/EO0cHdNUcAEL49S.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EO0cHdNUcAEL49S.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1219662001422643200)

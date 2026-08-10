@@ -228,4 +228,8 @@ own discipline; "we took it out of production" is the start, not the finish.
    that maker is the responsible agent, and the label will lie to you about all
    three.
 
-###### [["The world is quiet here."]]
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

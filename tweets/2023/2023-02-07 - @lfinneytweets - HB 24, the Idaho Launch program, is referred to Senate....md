@@ -1,4 +1,5 @@
 ---
+title: "HB 24, the Idaho Launch program, is referred to Senate..."
 date: 2023-02-07
 time: 20:08:32
 tweet_id: "1623051104102776832"

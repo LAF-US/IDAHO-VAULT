@@ -103,6 +103,7 @@ def run_git(repo_root: Path, args: list[str]) -> subprocess.CompletedProcess[str
         errors="replace",
         capture_output=True,
         check=False,
+        timeout=30,
     )
 
 

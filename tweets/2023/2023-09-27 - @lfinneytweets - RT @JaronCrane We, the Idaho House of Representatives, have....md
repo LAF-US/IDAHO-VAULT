@@ -1,4 +1,5 @@
 ---
+title: "RT @JaronCrane We, the Idaho House of Representatives, have..."
 date: 2023-09-27
 time: 03:32:49
 tweet_id: "1706874507384750085"
