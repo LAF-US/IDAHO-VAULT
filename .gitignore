@@ -46,11 +46,6 @@ Temporary Items
 # ---------------------------------------------------------------
 # Large Stores
 # ---------------------------------------------------------------
-.cache/codex-runtimes/codex-primary-runtime/**
-.claude/plugins/marketplaces/**
-.claude/file-history/**
-.codex/.tmp/**
-.codex/plugins/**
 .obsidian/plugins/mcp-tools/bin/mcp-server.exe
 .ollama/models/blobs/**
 
