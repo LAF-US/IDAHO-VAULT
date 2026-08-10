@@ -63,6 +63,7 @@ Temporary Items
 .obsidian/plugins/todoist-context-bridge/data.json
 id_ed25519
 id_ed25519.pub
+obsidian-recovery-codes.txt
 *.pem
 
 # ---------------------------------------------------------------
