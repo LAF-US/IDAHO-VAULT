@@ -1,4 +1,5 @@
 # ---------------------------------------------------------------
+#
 # THE VAULT tracks everything by default. Two narrow exceptions are gitignored:
 #
 #   SECRETS — credential material. NON-.md ONLY: Markdown is force-tracked at
@@ -9,6 +10,7 @@
 #             regenerate if deleted: OS droppings, build output, runtime
 #             state. For a dir that may hold prose, ignore its contents 
 #             not the dir, e.g. `dir/**` + `!dir/**/` + `!dir/**/*.md`.
+#
 # ---------------------------------------------------------------
 ._*
 Icon?
@@ -44,45 +46,44 @@ Temporary Items
 # ---------------------------------------------------------------
 # Build Packages
 # ---------------------------------------------------------------
-/build/**
-/cache/**
-/dist/**
-/env/**
-/node_modules/**
-/vendor/**
-/venv/**
+**/build/**
+**/cache/**
+**/dist/**
+**/env/**
+**/node_modules/**
+**/skills/**
+**/vendor/**
+**/venv/**
 .venv
 
 # ---------------------------------------------------------------
 # Large Stores
 # ---------------------------------------------------------------
+.cache/codex-runtimes/codex-primary-runtime/**
+.claude/plugins/marketplaces/**
+.claude/file-history/**
+.codex/.tmp/**
+.codex/plugins/**
+.obsidian/plugins/mcp-tools/bin/mcp-server.exe
 .ollama/models/blobs/**
-/.cache/codex-runtimes/codex-primary-runtime/**
-/.claude/plugins/marketplaces/**
-/.claude/file-history/**
-/.codex/.tmp/bundled-marketplaces/**
-/.codex/plugins/.remote-plugin-install-staging/**
-/.codex/plugins/cache/**
-/.codex/skills/.system/**
 
 # ---------------------------------------------------------------
 # Plaintext Secrets
 # ---------------------------------------------------------------
 .aikido/config
 .cache_ggshield
+.claude/.credentials.json
 .env
 .env.*
-*.pem
-id_ed25519
-id_ed25519.pub
-known_hosts
-.claude/.credentials.json
-.obsidian/plugins/ai-templater/data.json
 .obsidian/plugins/ai-image-analyzer/data.json
+.obsidian/plugins/ai-templater/data.json
 .obsidian/plugins/obsidian-local-rest-api/data.json
 .obsidian/plugins/phone-to-roam-to-obsidian/data.json
 .obsidian/plugins/todoist-context-bridge/data.json
-.obsidian/plugins/mcp-tools/bin/mcp-server.exe
+id_ed25519
+id_ed25519.pub
+known_hosts
+*.pem
 
 # ---------------------------------------------------------------
 # Ignore Exceptions
