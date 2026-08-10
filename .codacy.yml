@@ -19,17 +19,26 @@
 # one (if any) is the actual trigger, since none belong in a security
 # scan's scope either way.
 #
-# This is NOT verified to fix the crash — only the next Codacy run on
-# this branch (or main, once merged) can confirm that. If it doesn't
-# help, the crash is coming from a file not in this list, or from
-# tool-generated intermediate output rather than a repo file at all (the
-# original #822 diagnosis considered both).
+# UPDATE (same day): this did NOT fix the crash. Re-ran with this file in
+# place — identical crash, identical timeout. The verbose CLI log shows it
+# fetched its configuration from Codacy's remote API
+# ("/project/analysis/configuration"), not from this file — CODACY_PROJECT_TOKEN
+# being set appears to make the CLI prefer remote (dashboard-driven) config
+# over a local .codacy.yml. This file is very likely inert as shipped. Left
+# in place as a documented, correct starting point (real next step is either
+# Codacy dashboard access to configure "Ignored files" there, or finding a
+# way to make the CLI use local config instead of remote — neither was
+# achieved in this session). See !/AUDIT-CI-FAILURE-SWEEP-2026-08-10.md,
+# Incident A, for the full trail.
 #
-# IMPORTANT: per Codacy's own docs, adding this file means any "Ignored
-# files" configured through the Codacy web UI STOP applying — this file
-# becomes the only source of truth for exclusions. Whoever has Codacy
-# dashboard access should check for UI-configured ignores before trusting
-# this file as complete.
+# The "disables the web UI's Ignored files" warning below turned out to be
+# backwards for this run — remote config took priority over this file, not
+# the other way around. Left for context, not asserted as fact anymore.
+#
+# IMPORTANT: per Codacy's own docs, adding this file is DOCUMENTED to mean
+# "Ignored files" configured through the Codacy web UI stop applying — but
+# that didn't match what was observed here. Whoever has Codacy dashboard
+# access should check directly rather than trust either claim.
 exclude_paths:
   - ".serena/**"
   - "backup-compare-temp/**"
@@ -46,4 +55,4 @@ exclude_paths:
   - "io5ujgpo.a4y"
   - "wrvjr3p2.ky4"
   - "xmlh0dpb.gri"
-  - "minidata*.csv"
+  - "**/minidata*.csv"
