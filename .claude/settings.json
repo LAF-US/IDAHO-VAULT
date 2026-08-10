@@ -2,6 +2,9 @@
   "permissions": {
     "allow": [
       "Read"
+      "WebFetch"
     ]
-  }
+  },
+  "agentPushNotifEnabled": true,
+  "inputNeededNotifEnabled": true
 }
