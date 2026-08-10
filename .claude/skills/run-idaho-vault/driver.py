@@ -153,23 +153,17 @@ def drive_entrypoints() -> int:
 
 
 def run_tests() -> int:
-    print("== test suite (unittest discovery) ==")
-    fixture = "tests/_tmp_topology_census_case/"
-    # The suite deletes tracked fixtures under `fixture`. Auto-restore them after
-    # the run — but ONLY if the developer had no pre-existing uncommitted edits
-    # there, so the cleanup never clobbers unrelated work.
-    pre = run(["git", "status", "--porcelain", "--", fixture],
-              capture_output=True, text=True)
-    fixture_was_clean = (pre.returncode == 0 and not pre.stdout.strip())
-    p = run([vpy(), "-m", "unittest", "discover", "-s", "tests", "-p", "test_*.py"],
-            capture_output=True, text=True)
-    print("\n".join((p.stdout + p.stderr).splitlines()[-4:]))
-    if fixture_was_clean:
-        run(["git", "checkout", "--", fixture], capture_output=True)
-    else:
-        print(f"  -> note: skipped fixture auto-restore ({fixture} had "
-              "uncommitted changes before the run; left as-is).", file=sys.stderr)
-    return p.returncode
+    """No suite to run — tests/ was deleted.
+
+    Kept as a named no-op rather than removed so `driver.py test` keeps its
+    documented interface instead of failing with a usage error. It returns 0
+    because "there is nothing to run" is not a failure; a stub that returned
+    non-zero would make every smoke run red for a directory that is gone on
+    purpose.
+    """
+    print("== test suite ==")
+    print("  -> no tests/ directory; nothing to run")
+    return 0
 
 
 def main() -> int:
@@ -185,7 +179,9 @@ def main() -> int:
     ok = 0
     ok |= run_crew()
     ok |= drive_entrypoints()
-    run_tests()  # reported, not gating: 2 known pre-existing failures
+    # No-op since tests/ was deleted; still called so the smoke output keeps
+    # its shape.
+    run_tests()
     print()
     print("SMOKE PASS — validation crew + offline entrypoints OK" if ok == 0 else "SMOKE FAIL")
     return ok
