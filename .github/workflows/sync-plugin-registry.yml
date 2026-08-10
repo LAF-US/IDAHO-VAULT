@@ -10,14 +10,8 @@ on:
       - "swarm.json"
 
 jobs:
-  # logan/obsidian is Logan's live-edit branch, synced directly from the
-  # Obsidian desktop app -- nothing in that path runs --write before
-  # pushing, so the fail-closed check below was red for 5+ days straight
-  # (tracked in issue #822 / AUDIT-CI-FAILURE-SWEEP-2026-07-08). Self-heal
-  # there instead of just reporting the drift every push.
   check-plugin-registry:
     name: Verify plugin registry blocks are current
-    if: github.ref != 'refs/heads/logan/obsidian'
     runs-on: ubuntu-latest
 
     permissions:
@@ -35,51 +29,3 @@ jobs:
       - name: Check plugin registry is in sync
         run: |
           python3 .github/scripts/sync_obsidian_plugin_registry.py --check
-
-  self-heal-plugin-registry:
-    name: Auto-fix plugin registry drift on logan/obsidian
-    # Disabled 2026-07-10 per Logan's direct instruction: "anything currently
-    # writing swarm.json is eligible to be disabled." This job's `git add
-    # manifest.json swarm.json` push races the sync-agents-bootstrap.yml
-    # self-heal job on the same swarm.json-triggered push -- both jobs check
-    # out the same branch tip and push back, so the second push can be
-    # rejected non-fast-forward, leaving one artifact stale (flagged
-    # independently by Sourcery and GitHub Copilot on PR #831/#834, which
-    # were proposing this same job -- unaware it had already landed here).
-    # Left in place rather than deleted so the code is available if someone
-    # wants to fix the race (e.g. a shared concurrency group) and re-enable.
-    if: false
-    runs-on: ubuntu-latest
-    concurrency:
-      group: sync-plugin-registry-logan-obsidian
-      cancel-in-progress: false
-
-    permissions:
-      contents: write
-
-    steps:
-      - name: Checkout vault
-        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-        with:
-          ref: logan/obsidian
-
-      - name: Set up Python
-        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
-        with:
-          python-version: "3.11"
-
-      - name: Regenerate plugin registry
-        run: |
-          python3 .github/scripts/sync_obsidian_plugin_registry.py --write
-
-      - name: Commit and push if drift was corrected
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add manifest.json swarm.json
-          if git diff --cached --quiet; then
-            echo "Plugin registry already in sync"
-            exit 0
-          fi
-          git commit -m "chore(sync): auto-heal plugin registry drift on logan/obsidian"
-          git push origin HEAD:logan/obsidian
