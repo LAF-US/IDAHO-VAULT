@@ -179,8 +179,9 @@ def main() -> int:
     ok = 0
     ok |= run_crew()
     ok |= drive_entrypoints()
-    run_tests()  # no-op since tests/ was deleted; still called so the
-                 # smoke output keeps its shape
+    # No-op since tests/ was deleted; still called so the smoke output keeps
+    # its shape.
+    run_tests()
     print()
     print("SMOKE PASS — validation crew + offline entrypoints OK" if ok == 0 else "SMOKE FAIL")
     return ok
