@@ -6,11 +6,14 @@ authors = [{ name = "Logan Finney" }, { name = "Unified Swarm" }]
 dependencies = [
     "beautifulsoup4",
     "cryptography",
+    "geopandas",
     "jupyter",
     "jupytext",
+    "numpy",
     "packaging",
     "pandas",
+    "pydantic",
     "pytest",
+    "requests",
     "uv"
 ]
-# Just like a .gitignore file, don't fiddle with this willy-nilly.
