@@ -1,6 +1,6 @@
 ---
 name: run-idaho-vault
-description: Build, run, smoke-test, and validate the idaho_vault CrewAI deployment-validation shard — run the bootstrap validation crew, drive its CLI entrypoints, and run the test suite, all offline with no API keys. Use when asked to run / start / build / test / smoke / validate idaho_vault, the CrewAI bootstrap, or src/idaho_vault.
+description: Build, run, smoke-test, and validate the idaho_vault CrewAI deployment-validation shard — run the bootstrap validation crew and drive its CLI entrypoints, all offline with no API keys. Use when asked to run / start / build / test / smoke / validate idaho_vault, the CrewAI bootstrap, or src/idaho_vault.
 ---
 
 # Run: idaho_vault (CrewAI deployment-validation shard)
@@ -15,8 +15,8 @@ Drive it with the committed smoke script. **All paths below are relative to the
 repo root** (the unit).
 
 > Agent path first: **`python .claude/skills/run-idaho-vault/driver.py`** builds
-> the env if needed, runs the crew, drives the offline entrypoints, and runs the
-> tests. Start there.
+> the env if needed, runs the crew, and drives the offline entrypoints. Start
+> there.
 >
 > **Portability:** `driver.py` is pure-stdlib Python — it runs natively on
 > Linux, macOS, and **Windows PowerShell/cmd** (no Git-Bash / WSL), resolving
@@ -54,7 +54,7 @@ uv pip install -e .
 ```bash
 python .claude/skills/run-idaho-vault/driver.py        # full smoke (build if needed)
 python .claude/skills/run-idaho-vault/driver.py run    # just the validation crew
-python .claude/skills/run-idaho-vault/driver.py test   # just the test suite
+python .claude/skills/run-idaho-vault/driver.py test   # no-op, exits 0 (see Test)
 ```
 
 Full smoke prints, and exits 0 on success:
@@ -67,16 +67,16 @@ Overall status: PASS
 ...
 == civic_scaffold --format json (checkout-only; validate JSON) ==
   -> valid JSON
-== test suite (unittest discovery) ==
-Ran 149 tests in ~1.4s   (2 known pre-existing failures — see Gotchas)
+== test suite ==
+  -> no tests/ directory; nothing to run
 SMOKE PASS — validation crew + offline entrypoints OK
 ```
 
-The driver sets the CrewAI telemetry-off env vars and restores test-deleted
-fixtures for you (see Gotchas). `all` mode exits 0 on a healthy checkout (the
-2 known test failures don't gate it); **`test` mode propagates the suite's real
-exit status** — so it currently exits non-zero because of those 2 pre-existing
-failures, and will surface any genuine regression rather than mask it.
+The driver sets the CrewAI telemetry-off env vars for you. `all` mode exits 0
+on a healthy checkout. **`test` mode is now a no-op that exits 0** — `tests/`
+was deleted in #928, and "nothing to run" is not a failure. The mode is kept so
+the documented interface still works rather than erroring on an unknown
+argument.
 
 ## Direct invocation (single entrypoints)
 
@@ -90,26 +90,15 @@ uv run five_wizards_threshold --dry-run  # gate/council preview, no writes
 uv run civic_scaffold --format json      # emits civic-scaffold JSON
 ```
 
-Run one test module (tests put `src/` on `sys.path` themselves). The venv
-interpreter is `.venv/bin/python` on POSIX and `.venv\Scripts\python.exe` on
-Windows — or just let the driver resolve it (`driver.py test`):
-
-```bash
-.venv/bin/python -m unittest tests.test_main_cli           # POSIX
-.venv\Scripts\python.exe -m unittest tests.test_main_cli   # Windows
-```
-
 ## Test
 
-```bash
-.venv/bin/python -m unittest discover -s tests -p 'test_*.py'        # POSIX
-.venv\Scripts\python.exe -m unittest discover -s tests -p test_*.py  # Windows
-```
+There is no test suite. `tests/` was deleted in #928 — every test examined
+could not fail: one passed against a `.gitignore` that ignored nothing, another
+asserted a redundant API call as intended behaviour.
 
-149 tests. **2 fail on a clean checkout, unrelated to setup** (data/pin drift):
-
-- `test_check_secret_patterns … test_allow_marker_does_not_suppress_dedicated_token` — expects a `github_token` rule; resolves to an empty set.
-- `test_workflow_security_invariants … _dependabot_auto_merge_…` — asserts a stale pinned SHA for `dependabot/fetch-metadata` (the action was bumped; the test wasn't).
+`driver.py test` still exists and exits 0, so callers and scripts do not break.
+If a suite returns, hold it to the standard the deleted one never met: neuter
+what a test guards and confirm it goes red.
 
 ## Gotchas (battle scars)
 
@@ -124,12 +113,11 @@ Windows — or just let the driver resolve it (`driver.py test`):
   via `exec_module` **without inserting it into `sys.modules`**, so a `@dataclass`
   field-type check does `sys.modules.get(cls.__module__).__dict__` on `None` →
   `AttributeError: 'NoneType' object has no attribute '__dict__'`. The *logic* is
-  fine — `tests.test_metadata_survey` passes by importing the module normally. To
-  demo a `_load_repo_script_module` entrypoint, use **`civic_scaffold --format json`**
+  fine — importing the module normally works; only the `exec_module` path fails.
+  (A test used to demonstrate that; it went with `tests/` in #928, so this is now
+  an unverified claim about the cause, not about the symptom, which reproduces.)
+  To demo a `_load_repo_script_module` entrypoint, use **`civic_scaffold --format json`**
   (works). Don't put `metadata_survey` in a smoke path.
-- **The full test suite deletes tracked fixtures** under
-  `tests/_tmp_topology_census_case/`, dirtying the tree. Restore with
-  `git checkout -- tests/_tmp_topology_census_case/` (the driver does this).
 - **Checkout-only entrypoints** (`metadata_survey`, `civic_scaffold`,
   `five_wizards_threshold`, `test`) `SystemExit` unless run from a repo root
   containing `AGENTS.md` + `CONSTITUTION.md`.
@@ -143,4 +131,3 @@ Windows — or just let the driver resolve it (`driver.py test`):
 | Run stalls ~30s, then a `telemetry.crewai.com … timed out` line | set `CREWAI_DISABLE_TELEMETRY=true OTEL_SDK_DISABLED=true` |
 | `metadata_survey`: `AttributeError: 'NoneType' object has no attribute '__dict__'` | known-broken entrypoint; use `civic_scaffold --format json` |
 | `… is checkout-only and must run from an IDAHO-VAULT repository root` | `cd` to the repo root before invoking |
-| `git status` shows deleted `tests/_tmp_topology_census_case/*` after tests | `git checkout -- tests/_tmp_topology_census_case/` |
