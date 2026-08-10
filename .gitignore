@@ -1,20 +1,14 @@
-# THE VAULT tracks everything by default. Two narrow classes escape:
+# ---------------------------------------------------------------
+# THE VAULT tracks everything by default. Two narrow exceptions are gitignored:
 #
 #   SECRETS — credential material. NON-.md ONLY: Markdown is force-tracked at
-#             the bottom, so a secret pasted into prose is the scanner's job
-#             (.github/scripts/check_secret_patterns.py), never this file's.
-#             Name secrets exactly or by safe extension — NOT unanchored
-#             substring globs (`*_keys*` eats "monkeys", `id_*` eats "identity").
+#             the bottom, so a secret pasted into prose is the scanner's job.
+#             Use exact secret filenames or filepaths — NOT by unanchored globs.
 #
 #   EXHAUST — machine-generated files that never held human authorship AND
-#             regenerate if deleted: OS droppings, build output, caches, runtime
-#             state. NOTE: a bare `dir/` ignore is a Markdown blind spot —
-#             `!/**.md` CANNOT rescue prose under an excluded directory (git:
-#             "no matter where they are defined"). For a dir that may hold prose,
-#             ignore its contents not the dir: `dir/**` + `!dir/**/` + `!dir/**/*.md`
-
-# ---------------------------------------------------------------
-# EXHAUST — OS system files
+#             regenerate if deleted: OS droppings, build output, runtime
+#             state. For a dir that may hold prose, ignore its contents 
+#             not the dir, e.g. `dir/**` + `!dir/**/` + `!dir/**/*.md`.
 # ---------------------------------------------------------------
 ._*
 Icon?
@@ -48,33 +42,33 @@ Network Trash Folder
 Temporary Items
 
 # ---------------------------------------------------------------
-# EXHAUST — packages, builds, environments (never-content names only)
+# Build Packages
 # ---------------------------------------------------------------
-/build/
-/dist/
-/node_modules/
-/vendor/
-/env/
-/venv/
+/build/**
+/cache/**
+/dist/**
+/env/**
+/node_modules/**
+/vendor/**
+/venv/**
 .venv
-/cache/
 
 # ---------------------------------------------------------------
-# EXHAUST — large model/media stores + agent runtime state (exact paths)
+# Large Stores
 # ---------------------------------------------------------------
-.ollama/models/blobs
-/.cache/codex-runtimes/codex-primary-runtime
-/.claude/plugins/marketplaces
-/.claude/file-history
-/.codex/.tmp/bundled-marketplaces
-/.codex/plugins/.remote-plugin-install-staging
-/.codex/plugins/cache
-/.codex/skills/.system
+.ollama/models/blobs/**
+/.cache/codex-runtimes/codex-primary-runtime/**
+/.claude/plugins/marketplaces/**
+/.claude/file-history/**
+/.codex/.tmp/bundled-marketplaces/**
+/.codex/plugins/.remote-plugin-install-staging/**
+/.codex/plugins/cache/**
+/.codex/skills/.system/**
+
+# ---------------------------------------------------------------
+# Plaintext Secrets
+# ---------------------------------------------------------------
 .aikido/config
-
-# ---------------------------------------------------------------
-# SECRETS — non-.md credential material, named not guessed
-# ---------------------------------------------------------------
 .cache_ggshield
 .env
 .env.*
@@ -83,11 +77,6 @@ id_ed25519
 id_ed25519.pub
 known_hosts
 .claude/.credentials.json
-
-# ---------------------------------------------------------------
-# SECRETS — Obsidian plugin data.json (ENUMERATED, never globbed:
-# a *-wildcard here sweeps load-bearing plugin config and broke the install)
-# ---------------------------------------------------------------
 .obsidian/plugins/ai-templater/data.json
 .obsidian/plugins/ai-image-analyzer/data.json
 .obsidian/plugins/obsidian-local-rest-api/data.json
@@ -96,10 +85,12 @@ known_hosts
 .obsidian/plugins/mcp-tools/bin/mcp-server.exe
 
 # ---------------------------------------------------------------
-# KEEP — re-include tracked-by-default surfaces (MUST be last)
+# Ignore Exceptions
 # ---------------------------------------------------------------
 !.gitignore
 !/.*/stub.txt
 !/**.md
 
+# ---------------------------------------------------------------
 # THE WORLD IS QUIET HERE．ESTO PERPETUA!
+# ---------------------------------------------------------------
