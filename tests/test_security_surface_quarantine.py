@@ -48,9 +48,12 @@ class SecuritySurfaceQuarantineTest(unittest.TestCase):
             "session-export-1779427275139",
         ):
             self.assertFalse((ROOT / relative_path).exists(), relative_path)
-        gitignore = (ROOT / ".gitignore").read_text(encoding="utf-8")
-        for ignored in (".mcp.json", "session-export-*/", "gpg-agent.conf"):
-            self.assertIn(ignored, gitignore)
+        # This test used to also assert three literal patterns were present in
+        # .gitignore. That was a substring grep on a config file — the same
+        # species as the retired bootstrap-contract token checks — and it
+        # enforced the pre-2026-08-03 .gitignore against Logan's deliberate cut.
+        # The quarantine question this test answers is the existence check
+        # above: the removed surfaces must not return to the tree.
 
     def test_platform_metadata_remains_os_neutral(self) -> None:
         metadata = (ROOT / "pyproject.toml").read_text(encoding="utf-8")

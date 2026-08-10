@@ -31,33 +31,33 @@ class FiletypeTest(unittest.TestCase):
         self.assertEqual(cp.classify_file("mystery.q3z"), ("med", None))
 
 
-class PlacementTest(unittest.TestCase):
+class FiledepthTest(unittest.TestCase):
     def test_root_is_none(self):
         # A path under neither prefix scores None -- including flattened "!-…" root files,
         # which physically sit at repo root (their "-"-encoded name is not a directory path).
-        self.assertIsNone(cp.placement_flag("essay.md"))
-        self.assertIsNone(cp.placement_flag("! README.md"))
-        self.assertIsNone(cp.placement_flag("!README.md"))
-        self.assertIsNone(cp.placement_flag("!-!-__!__-reflection_essay.md"))
+        self.assertIsNone(cp.filedepth_flag("essay.md"))
+        self.assertIsNone(cp.filedepth_flag("! README.md"))
+        self.assertIsNone(cp.filedepth_flag("!README.md"))
+        self.assertIsNone(cp.filedepth_flag("!-!-__!__-reflection_essay.md"))
         self.assertIsNone(
-            cp.placement_flag("!-!-__!__-!-! The world is quiet here-Esto Perpetua!-!README.md")
+            cp.filedepth_flag("!-!-__!__-!-! The world is quiet here-Esto Perpetua!-!README.md")
         )
 
     def test_inside_nest_is_high(self):
         # Inside "!/", above the inner prefix.
-        self.assertEqual(cp.placement_flag("!/AGENTS.md"), "high")
-        self.assertEqual(cp.placement_flag("!/!/README.md"), "high")
-        self.assertEqual(cp.placement_flag("!/!/__!__/report.md"), "high")
-        self.assertEqual(cp.placement_flag("!/swarm/tools/state_manager.py"), "high")
+        self.assertEqual(cp.filedepth_flag("!/AGENTS.md"), "high")
+        self.assertEqual(cp.filedepth_flag("!/!/README.md"), "high")
+        self.assertEqual(cp.filedepth_flag("!/!/__!__/report.md"), "high")
+        self.assertEqual(cp.filedepth_flag("!/swarm/tools/state_manager.py"), "high")
 
     def test_inner_and_below_is_nope(self):
         # The inner prefix "!/!/__!__/!/" and everything below it.
-        self.assertEqual(cp.placement_flag("!/!/__!__/!/x.md"), "nope")
+        self.assertEqual(cp.filedepth_flag("!/!/__!__/!/x.md"), "nope")
         self.assertEqual(
-            cp.placement_flag("!/!/__!__/!/! The world is quiet here/y.md"), "nope"
+            cp.filedepth_flag("!/!/__!__/!/! The world is quiet here/y.md"), "nope"
         )
         self.assertEqual(
-            cp.placement_flag(
+            cp.filedepth_flag(
                 "!/!/__!__/!/! The world is quiet here/Esto Perpetua!/README.md"
             ),
             "nope",
@@ -66,32 +66,32 @@ class PlacementTest(unittest.TestCase):
     def test_file_named_bang_inside_region_four_stays_high(self):
         # A file "!README.md" inside "!/!/__!__/" is not the "!/" directory below it; the
         # trailing slash in NOPE_PREFIX keeps it "high", not "nope".
-        self.assertEqual(cp.placement_flag("!/!/__!__/!README.md"), "high")
+        self.assertEqual(cp.filedepth_flag("!/!/__!__/!README.md"), "high")
 
     def test_dotfolders_and_governance_score_none(self):
-        # No file or folder is special-cased on placement. Dotfolders (".github" is a
+        # No file or folder is special-cased on filedepth. Dotfolders (".github" is a
         # dotfolder like the rest) and root governance files are not under "!/" -> None.
-        self.assertIsNone(cp.placement_flag(".github/workflows/deploy.yml"))
-        self.assertIsNone(cp.placement_flag(".github/scripts/tool.py"))
-        self.assertIsNone(cp.placement_flag(".claude/CLAUDE.md"))
-        self.assertIsNone(cp.placement_flag(".op/secrets.template.md"))
-        self.assertIsNone(cp.placement_flag("CONSTITUTION.md"))
-        self.assertIsNone(cp.placement_flag("swarm.json"))
+        self.assertIsNone(cp.filedepth_flag(".github/workflows/deploy.yml"))
+        self.assertIsNone(cp.filedepth_flag(".github/scripts/tool.py"))
+        self.assertIsNone(cp.filedepth_flag(".claude/CLAUDE.md"))
+        self.assertIsNone(cp.filedepth_flag(".op/secrets.template.md"))
+        self.assertIsNone(cp.filedepth_flag("CONSTITUTION.md"))
+        self.assertIsNone(cp.filedepth_flag("swarm.json"))
 
     def test_axes_are_independent(self):
-        # filetype and placement score separately; a code file in the nest carries both.
+        # filetype and filedepth score separately; a code file in the nest carries both.
         self.assertEqual(cp.classify_file("!/swarm/run.sh"), ("med", "high"))
         self.assertEqual(cp.classify_file("!/essay.md"), (None, "high"))
         self.assertEqual(cp.classify_file(".github/workflows/deploy.yml"), ("low", None))
         self.assertEqual(cp.classify_file(".github/scripts/tool.py"), ("med", None))
 
-    def test_lockfiles_are_placement_clear(self):
+    def test_lockfiles_are_filedepth_clear(self):
         for path in ("requirements.txt", "uv.lock"):
             with self.subTest(path=path):
-                self.assertIsNone(cp.placement_flag(path))
+                self.assertIsNone(cp.filedepth_flag(path))
 
     def test_windows_separators_are_normalized(self):
-        # classify_file normalizes '\\' to '/' so placement prefixes match regardless of
+        # classify_file normalizes '\\' to '/' so filedepth prefixes match regardless of
         # separator style (git/gh emit '/', but local/tooling input may use '\\').
         self.assertEqual(cp.classify_file("!\\AGENTS.md"), (None, "high"))
         self.assertEqual(cp.classify_file("!\\!\\__!__\\!\\x.md"), (None, "nope"))
@@ -126,7 +126,7 @@ class ChangesetTest(unittest.TestCase):
         r = self._run(["research-a.md", "research-b.md"])
         self.assertEqual(r["tier4"], "clear")
         self.assertIsNone(r["filetype"])
-        self.assertIsNone(r["depth"])
+        self.assertIsNone(r["filedepth"])
         self.assertEqual(r["tier"], "low")
         self.assertIsNone(r["subtier"])
 
@@ -141,12 +141,12 @@ class ChangesetTest(unittest.TestCase):
         self.assertEqual(r["tier4"], "med")
         self.assertEqual(r["tier"], "high")
         self.assertEqual(r["filetype"], "med")
-        self.assertIsNone(r["depth"])
+        self.assertIsNone(r["filedepth"])
 
     def test_mixed_pr_carries_both_flags(self):
         r = self._run(["note.md", "scripts/x.py", "!/DOCKET.md"])
         self.assertEqual(r["filetype"], "med")
-        self.assertEqual(r["depth"], "high")
+        self.assertEqual(r["filedepth"], "high")
         self.assertEqual(r["tier"], "high")
         self.assertEqual(r["tier4"], "high")
 
