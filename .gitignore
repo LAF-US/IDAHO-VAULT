@@ -1,20 +1,17 @@
-# ---------------------------------------------------------------
-#
 # THE VAULT tracks everything by default. Two narrow exceptions are gitignored:
 #
 #   SECRETS — credential material. NON-.md ONLY: Markdown is force-tracked at
 #             the bottom, so a secret pasted into prose is the scanner's job.
-#             Use exact secret filenames or filepaths — NOT by unanchored globs.
 #
 #   EXHAUST — machine-generated files that never held human authorship AND
-#             regenerate if deleted: OS droppings, build output, runtime
-#             state. For a dir that may hold prose, ignore its contents 
-#             not the dir, e.g. `dir/**` + `!dir/**/` + `!dir/**/*.md`.
+#             regenerate automatically: OS, build, runtime state, et cetera.
 #
+
+# ---------------------------------------------------------------
+# OS Duff
 # ---------------------------------------------------------------
 ._*
 Icon?
-~*
 .fuse_hidden*
 .directory
 .Trash-*
@@ -69,7 +66,7 @@ known_hosts
 *.pem
 
 # ---------------------------------------------------------------
-# Ignore Exceptions
+# Gitignore Exceptions
 # ---------------------------------------------------------------
 !.gitignore
 !/.*/stub.txt
