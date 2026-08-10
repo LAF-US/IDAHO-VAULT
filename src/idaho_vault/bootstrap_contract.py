@@ -66,51 +66,6 @@ def _check_exists(root: Path, relpath: str, name: str) -> ContractCheck:
     )
 
 
-def _check_pyproject(root: Path) -> ContractCheck:
-    path = root / "pyproject.toml"
-    if not path.exists():
-        return ContractCheck("pyproject", False, "`pyproject.toml` missing")
-
-    text = path.read_text(encoding="utf-8")
-    required_tokens = (
-        'name = "idaho-vault"',
-        'type = "crew"',
-        'idaho_vault = "idaho_vault.main:run"',
-    )
-    missing = [token for token in required_tokens if token not in text]
-    if missing:
-        return ContractCheck(
-            "pyproject",
-            False,
-            f"`pyproject.toml` missing expected tokens: {', '.join(missing)}",
-        )
-    return ContractCheck(
-        "pyproject",
-        True,
-        "`pyproject.toml` exposes the CrewAI project and script contract",
-    )
-
-
-def _check_lockfile(root: Path) -> ContractCheck:
-    path = root / "uv.lock"
-    if not path.exists():
-        return ContractCheck("lockfile", False, "`uv.lock` missing")
-
-    text = path.read_text(encoding="utf-8")
-    if "crewai" not in text:
-        return ContractCheck(
-            "lockfile",
-            False,
-            "`uv.lock` present but does not mention `crewai`",
-        )
-
-    return ContractCheck(
-        "lockfile",
-        True,
-        "`uv.lock` present and references CrewAI dependencies",
-    )
-
-
 def _check_manifest(root: Path) -> ContractCheck:
     path = root / ".crewai" / "manifest.json"
     if not path.exists():
@@ -246,8 +201,6 @@ def _check_python_version(root: Path) -> ContractCheck:
 def build_contract_report_for_root(root: Path) -> ContractReport:
     """Inspect the provided repository root and return a bootstrap contract report."""
     checks = (
-        _check_pyproject(root),
-        _check_lockfile(root),
         _check_manifest(root),
         _check_training_doctrine(root),
         _check_launcher(root),

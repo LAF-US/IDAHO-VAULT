@@ -21,6 +21,14 @@ on:
 permissions:
   contents: read
 
+# Supersede, don't stack. This workflow runs on pull_request and workflow_dispatch
+# only — no push, no merge_group — so the group key is just the ref, and a newer run
+# for the same PR replaces an older one. A PR run scans the notebook set as it stands,
+# not a delta, so nothing is lost by superseding.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event_name }}-${{ github.head_ref || github.ref }}
+  cancel-in-progress: ${{ github.event_name != 'merge_group' }}
+
 jobs:
   paired:
     runs-on: ubuntu-latest
@@ -31,14 +39,26 @@ jobs:
       - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         with:
           python-version: "3.11"
-      - name: Install jupytext (pinned to uv.lock so CI matches the committed twins)
+      - name: Install jupytext
         run: |
-          # The twins stamp the jupytext version that wrote them; a newer jupytext on the
-          # runner would rewrite that stamp and fail the drift check. Install the EXACT
-          # version uv.lock pins, not a floating range that resolves to whatever is newest.
-          version=$(python -c "import tomllib; lock = tomllib.load(open('uv.lock', 'rb')); print(next(p['version'] for p in lock['package'] if p['name'] == 'jupytext'))")
-          echo "jupytext $version (pinned by uv.lock)"
-          python -m pip install --quiet "jupytext==$version"
+          # No version pin, on purpose. The pin existed because the twins recorded the
+          # jupytext version that wrote them, so a different version on the runner
+          # rewrote that line and the drift check below called it content drift. The
+          # twins no longer record it — `notebook_metadata_filter` in jupytext.toml and
+          # in each paired notebook drops the stamp — so any version writes the same
+          # bytes. Measured across 1.18.1 and 1.19.5: byte-identical with the filter,
+          # and the stamp rewritten without it.
+          #
+          # The pin also read that version out of uv.lock with `next(...)` and no
+          # default. When uv.lock stopped carrying jupytext, that raised a bare
+          # StopIteration and took every PR touching **/*.md or **/*.ipynb red. A check
+          # about notebook pairing should not fail on the contents of a lockfile.
+          #
+          # Real drift is still caught: `format_version` — the field jupytext actually
+          # gates compatibility on — is not filtered, so a genuine format change fails
+          # the job as it should.
+          python -m pip install --quiet jupytext
+          python -c "import jupytext; print('jupytext', jupytext.__version__)"
       - name: Sync every paired notebook and fail on drift
         run: |
           # Sync ONLY notebooks that declare a pairing (explicit opt-in). A sync error on a
