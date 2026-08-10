@@ -43,7 +43,11 @@ A dedicated **GitHub App** per agent (same kind of thing as `dependabot[bot]`,
 `coderabbitai[bot]`, `codacy-production[bot]` — all already installed on this
 repo). When a GitHub App creates a commit through GitHub's REST API using its
 own installation token, GitHub marks that commit verified automatically —
-server-side, no local key, nothing that can lock or expire.
+server-side, no local key. App installation tokens are themselves short-lived
+(normally ~1 hour) and can be revoked/rotated, same as any credential — the
+workflow avoids the 1Password-style lock failure not because the token never
+expires, but because it mints a fresh one per run (`actions/create-github-app-token`)
+instead of depending on one long-lived session.
 
 ## Current state, verified today (not carried forward from old comments)
 
@@ -55,10 +59,12 @@ server-side, no local key, nothing that can lock or expire.
   path yet.
 - **No GitHub App has been confirmed to exist for any of the 4 agents.**
   PR #471's original body (2026-06-04) claimed the `opencode-agent` App
-  "already exists" — a global GitHub user search for that exact name returns
-  zero results as of this writing, so that claim doesn't currently hold up.
-  Not independently confirmed either way for the other three; this session's
-  tooling can't see what's installed on the `LAF-US` org.
+  "already exists." A global GitHub user search for that exact name returns
+  zero results as of this writing, but that's **inconclusive, not
+  disproof** — a privately-installed App isn't guaranteed to surface in
+  general user search. Not independently confirmed either way for any of
+  the four; this session's tooling can't see what's actually installed on
+  the `LAF-US` org. The next section's step 1 is how to actually check.
 - **Nothing has been proven yet.** No proof run has produced a
   `verified: true` result on issue #398.
 
