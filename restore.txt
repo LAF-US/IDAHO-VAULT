@@ -1,0 +1,31 @@
+:(literal) (2).gcloudignore
+:(literal).claude/CLAUDE.md
+:(literal).claude/settings.json
+:(literal).claude/stub.txt
+:(literal).codex/stub.txt
+:(literal).config/stub.txt
+:(literal).gitignore
+:(literal).jupyter/stub.txt
+:(literal).last-cleanup
+:(literal).local/stub.txt
+:(literal).sbx-denybin/stub.txt
+:(literal).ssh/stub.txt
+:(literal)2026-04-29 - Model Context Protocol (MCP) Server for Agentic Access.md
+:(literal)AGENTIC SWARM SYSTEMS — CAPABILITIES, LIMITS, AND TRADEOFFS (2).md
+:(literal)AI-AUTOMATION TOOL LANDSCAPE (2024–2026) (2).md
+:(literal)CONSTITUTION 1 (2).md
+:(literal)GEMINI 2.md
+:(literal)GEMINI 3.md
+:(literal)IDAHO-VAULT — END-TO-END JOURNALISM WORKFLOW (AI-ASSISTED, LOCAL-FIRST)v0.1 (2).md
+:(literal)IDAHO-VAULT — SYSTEM CONTEXT (2).md
+:(literal)IDAHO-VAULT — WORKFLOW (2).md
+:(literal)JOURNALISM INDUSTRY (2024–2026) — AI-ML STATE, IMPACTS, AND TRADEOFFS (2).md
+:(literal)Kano Play - Surprising Evolution of Text-based RPG Games (2).md
+:(literal)LEVELSET-EXTERNAL-AGENT-PROMPT (2).md
+:(literal)LEVELSET-STEP-0-EXTERNAL-AGENT (2).md
+:(literal)MEMORY.md
+:(literal)SWARM-LOOP (2).md
+:(literal)THREAT-MODEL (2).md
+:(literal)VAULT-ZONES (2).md
+:(literal)manifest (2).json
+:(literal)⚒️.md
