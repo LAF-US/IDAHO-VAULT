@@ -52,6 +52,7 @@ Temporary Items
 .aikido/config
 .cache_ggshield
 .claude/.credentials.json
+.codex/auth.json
 .env
 .env.*
 .gsutil/credstore*
@@ -62,7 +63,6 @@ Temporary Items
 .obsidian/plugins/todoist-context-bridge/data.json
 id_ed25519
 id_ed25519.pub
-known_hosts
 *.pem
 
 # ---------------------------------------------------------------
