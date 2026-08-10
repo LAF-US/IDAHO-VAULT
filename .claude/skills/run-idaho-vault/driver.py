@@ -8,13 +8,14 @@ natively wherever Python does — Linux, macOS, and **Windows PowerShell/cmd**
 
     python .claude/skills/run-idaho-vault/driver.py            # full smoke
     python .claude/skills/run-idaho-vault/driver.py run        # validation crew
-    python .claude/skills/run-idaho-vault/driver.py test       # test suite
+    python .claude/skills/run-idaho-vault/driver.py test       # no-op, exits 0
 
-Exit: `all` -> 0 when the crew reports PASS and the offline entrypoints run
-(the suite's 2 known pre-existing failures do NOT fail `all`). `run`/`test`
-propagate their real status, so a broken checkout is never masked. Environment
-setup (`ensure_env`) fails fast and loudly if `uv` errors, so a missing package
-never surfaces later as a cryptic "console script not found".
+Exit: `all` -> 0 when the crew reports PASS and the offline entrypoints run.
+`run` propagates its real status, so a broken checkout is never masked. `test`
+always returns 0 — `tests/` was deleted in #928 and the mode is kept only so
+callers do not break. Environment setup (`ensure_env`) fails fast and loudly if
+`uv` errors, so a missing package never surfaces later as a cryptic "console
+script not found".
 """
 from __future__ import annotations
 
@@ -161,7 +162,7 @@ def run_tests() -> int:
     non-zero would make every smoke run red for a directory that is gone on
     purpose.
     """
-    print("== test suite ==")
+    print("== test mode ==")
     print("  -> no tests/ directory; nothing to run")
     return 0
 
@@ -171,11 +172,17 @@ def main() -> int:
     if mode not in {"all", "run", "test"}:
         print("usage: driver.py [all|run|test]")
         return 2
+    # `test` is dispatched BEFORE ensure_env() on purpose. It needs no venv and
+    # no console scripts, and ensure_env() exits non-zero when `run_crew` is
+    # missing — which it currently is, because pyproject.toml declares no
+    # [project.scripts]. Setting up an environment to print "nothing to run"
+    # would be work for no reason, and running it first made the documented
+    # "exits 0" false on exactly the checkouts where it is most likely invoked.
+    if mode == "test":
+        return run_tests()
     ensure_env()
     if mode == "run":
         return run_crew()
-    if mode == "test":
-        return run_tests()
     ok = 0
     ok |= run_crew()
     ok |= drive_entrypoints()
