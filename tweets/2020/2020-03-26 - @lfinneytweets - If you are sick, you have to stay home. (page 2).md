@@ -1,4 +1,5 @@
 ---
+title: "If you are sick, you have to stay home. (page 2)"
 date: 2020-03-26
 time: 00:42:36
 tweet_id: "1242975204256518144"
@@ -14,10 +15,10 @@ related:
   - lfinneytweets
 ---
 
-If you are sick, you have to stay home. (page 2) https://t.co/22DHStoEJu
+If you are sick, you have to stay home. (page 2) <https://t.co/22DHStoEJu>
 
 ## Media
-- ![](https://pbs.twimg.com/media/ET_s5gmUEAE2zqn.png)
+- ![alt text needed](https://pbs.twimg.com/media/ET_s5gmUEAE2zqn.png)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

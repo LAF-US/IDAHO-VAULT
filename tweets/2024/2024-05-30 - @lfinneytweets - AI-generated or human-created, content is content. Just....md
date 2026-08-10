@@ -1,4 +1,5 @@
 ---
+title: "AI-generated or human-created, content is content. Just..."
 date: 2024-05-30
 time: 01:50:43
 tweet_id: "1795996228062200080"

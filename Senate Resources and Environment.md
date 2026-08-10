@@ -12,7 +12,9 @@ related:
 authority: LOGAN
 ---
 # Roster
+
 ## 2023 Members
+
 - Van Burtenshaw Chair
 - Ben Adams Vice Chair
 - Jim Guthrie

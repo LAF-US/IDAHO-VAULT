@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Thanks @DougPetcashKTVB, @KTVBJoe &..."
 date: 2022-04-27
 time: 06:16:21
 tweet_id: "1519198746076008453"

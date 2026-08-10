@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio A few looks from the Joint Finance..."
 date: 2020-01-20
 time: 16:45:22
 tweet_id: "1219299892918534144"

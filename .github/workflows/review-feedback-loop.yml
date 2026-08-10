@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout trusted workflow surfaces
-        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           ref: ${{ github.event.repository.default_branch }}
 
@@ -27,11 +27,12 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           COMMENT_BODY: ${{ github.event.comment.body }}
+          REPO_NAME: ${{ github.event.repository.name }}
         run: |
           python3 .github/scripts/review_feedback_loop.py \
             acknowledge-apply \
             --owner "${{ github.repository_owner }}" \
-            --repo "${{ github.event.repository.name }}" \
+            --repo "$REPO_NAME" \
             --pr-number "${{ github.event.issue.number }}" \
             --comment-author "${{ github.event.comment.user.login }}" \
             --author-association "${{ github.event.comment.author_association }}" \
@@ -39,6 +40,23 @@ jobs:
 
   sweep-review-threads:
     if: github.event_name == 'pull_request_target'
+    # One run per PR, newest wins -- same reasoning as sync-review-state in
+    # review-response.yml. `synchronize` fires on every push, so a branch pushed
+    # three times in a minute paid for three full `_fetch_pr` graph fetches, of
+    # which only the last described the branch as it actually stood.
+    #
+    # Cancelling is safe: `_resolve_outdated_resolvable_threads` walks whatever
+    # is unresolved-and-outdated right now and skips anything already handled,
+    # so a partially-completed sweep is not a corrupt one -- the next run picks
+    # up the remainder. Arming auto-merge is likewise a function of current
+    # state, not of the event that triggered it.
+    # `github.event_name` is in the key deliberately: this workflow also fires on
+    # `issue_comment`, where `pull_request.number` is empty and `issue.number`
+    # would be the SAME number for a PR comment. Without the namespace, a comment
+    # event could contend with -- and cancel -- a live sweep for that PR.
+    concurrency:
+      group: sweep-review-threads-${{ github.event_name }}-${{ github.event.pull_request.number }}
+      cancel-in-progress: true
     runs-on: ubuntu-latest
     permissions:
       # contents: write is required to enable merge-queue auto-merge
@@ -47,21 +65,26 @@ jobs:
       # scoped to this job only; outside this job, `contents` stays read-only at the
       # workflow level (the other jobs do not get write access).
       contents: write
+      issues: write
       pull-requests: write
     steps:
       - name: Checkout trusted workflow surfaces
-        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           ref: ${{ github.event.repository.default_branch }}
 
       - name: Sweep outdated advisory threads after PR updates
+        # The arm actor becomes the future enqueue actor, and GITHUB_TOKEN-actored
+        # events never dispatch workflow runs (GitHub anti-recursion) — prefer the
+        # user-scoped MERGE_QUEUE_TOKEN so armed PRs enqueue with a dispatching actor.
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.MERGE_QUEUE_TOKEN || secrets.GITHUB_TOKEN }}
+          REPO_NAME: ${{ github.event.repository.name }}
         run: |
           python3 .github/scripts/review_feedback_loop.py \
             sync-pr \
             --owner "${{ github.repository_owner }}" \
-            --repo "${{ github.event.repository.name }}" \
+            --repo "$REPO_NAME" \
             --pr-number "${{ github.event.pull_request.number }}" \
             --sync-actor "${{ github.actor }}"
 
@@ -78,7 +101,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout trusted workflow surfaces
-        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           ref: ${{ github.event.repository.default_branch }}
 
@@ -86,12 +109,12 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           COMMENT_BODY: ${{ github.event.comment.body }}
+          REPO_NAME: ${{ github.event.repository.name }}
         run: |
           python3 .github/scripts/review_feedback_loop.py \
             verify-claim \
             --owner "${{ github.repository_owner }}" \
-            --repo "${{ github.event.repository.name }}" \
+            --repo "$REPO_NAME" \
             --pr-number "${{ github.event.issue.number }}" \
             --comment-author "${{ github.event.comment.user.login }}" \
             --comment-body "$COMMENT_BODY"
-

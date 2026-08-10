@@ -1,0 +1,158 @@
+{
+  "alpha_cohesion_full": 0.392241379310345,
+  "alpha_cohesion_full_CI": [
+    0.1422855313700384,
+    0.5779816513761468
+  ],
+  "alpha_cohesion_core": 0.2789634146341463,
+  "alpha_cohesion_core_CI": [
+    0.04840236686390553,
+    0.46551120448179273
+  ],
+  "alpha_alignment": -0.016304347826086918,
+  "verb_tally": {
+    "govern": 9,
+    "chronicle": 1,
+    "coordinate": 1,
+    "document": 1,
+    "witness": 1
+  },
+  "govern_n": 9,
+  "record_n": 4,
+  "convergence": {
+    "Logan (sole human authority)": 13,
+    "CONSTITUTION.md (binding law)": 13,
+    "The named multi-agent Swarm": 13,
+    "The Swarmic Nest (!/)": 9,
+    "Dotfolder persona chambers (.*)": 8,
+    "Idaho journalism / legislature corpus": 8,
+    "The Touchstone Tree (MIND/BODY/SOUL/NEST)": 6,
+    "The DOCKET / Courtroom": 5,
+    "Lich Problem / GEMINIAEUS matter": 4,
+    "Standing / Personae Engine doctrine": 3,
+    "swarm.json (machine registry)": 2,
+    "Canon Core / Esto Perpetua": 2,
+    "Fablehaven / Fandom lore-as-doctrine": 2,
+    "Operational toolchain (GH/Linear/Slack)": 2,
+    "The Witness practice": 1,
+    "CHAINFIRE / CHAINLINK cycle": 1
+  },
+  "centroid": [
+    "CONSTITUTION.md (binding law)",
+    "Dotfolder persona chambers (.*)",
+    "Idaho journalism / legislature corpus",
+    "Logan (sole human authority)",
+    "The Swarmic Nest (!/)",
+    "The named multi-agent Swarm"
+  ],
+  "mean_masi_to_centroid": 0.6835673585673586,
+  "mean_coverage_jaccard": 0.2450617967538404,
+  "mean_entity_separation": 0.8132608132608132,
+  "r_coverage_vs_separation": -0.2081625851820339,
+  "grid": [
+    {
+      "reader": "Lodestar",
+      "door": "!README (root touchstone)",
+      "verb": "govern",
+      "align": "GOVERN",
+      "sep_from_core": 0.429,
+      "core_recall": 1.0
+    },
+    {
+      "reader": "Sextant",
+      "door": "CONSTITUTION.md",
+      "verb": "govern",
+      "align": "GOVERN",
+      "sep_from_core": 0.429,
+      "core_recall": 1.0
+    },
+    {
+      "reader": "Augur",
+      "door": "SHALL-ROME-WITNESS",
+      "verb": "witness",
+      "align": "RECORD",
+      "sep_from_core": 0.9,
+      "core_recall": 0.5
+    },
+    {
+      "reader": "Lantern",
+      "door": "FABLEHAVEN-QUIET-BOX",
+      "verb": "govern",
+      "align": "GOVERN",
+      "sep_from_core": 0.867,
+      "core_recall": 0.667
+    },
+    {
+      "reader": "Metronome",
+      "door": "THE-MUSIC-BOX-MODEL",
+      "verb": "govern",
+      "align": "GOVERN",
+      "sep_from_core": 0.852,
+      "core_recall": 0.667
+    },
+    {
+      "reader": "Cog",
+      "door": ".crewai/MANIFEST.md",
+      "verb": "govern",
+      "align": "GOVERN",
+      "sep_from_core": 0.792,
+      "core_recall": 0.833
+    },
+    {
+      "reader": "Beacon",
+      "door": "!/SIGNALS/README*",
+      "verb": "govern",
+      "align": "GOVERN",
+      "sep_from_core": 0.762,
+      "core_recall": 0.833
+    },
+    {
+      "reader": "Tally",
+      "door": "!/AGENTS.md",
+      "verb": "chronicle",
+      "align": "RECORD",
+      "sep_from_core": 0.5,
+      "core_recall": 1.0
+    },
+    {
+      "reader": "Mummer",
+      "door": ".abhorsen/ABHORSEN.md",
+      "verb": "govern",
+      "align": "GOVERN",
+      "sep_from_core": 0.852,
+      "core_recall": 0.667
+    },
+    {
+      "reader": "Stringer",
+      "door": "William Borah.md",
+      "verb": "document",
+      "align": "RECORD",
+      "sep_from_core": 0.833,
+      "core_recall": 0.667
+    },
+    {
+      "reader": "Magpie",
+      "door": "Dario Amodei clipping",
+      "verb": "govern",
+      "align": "GOVERN",
+      "sep_from_core": 0.815,
+      "core_recall": 0.833
+    },
+    {
+      "reader": "Cairn",
+      "door": "THE TRIPTYCH 0401.md",
+      "verb": "coordinate",
+      "align": "RECORD",
+      "sep_from_core": 0.429,
+      "core_recall": 1.0
+    },
+    {
+      "reader": "Tabula",
+      "door": "COLD ROOT DROP (control)",
+      "verb": "govern",
+      "align": "GOVERN",
+      "sep_from_core": 0.429,
+      "core_recall": 1.0
+    }
+  ]
+}

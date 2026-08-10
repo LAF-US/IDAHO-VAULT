@@ -1,4 +1,5 @@
 ---
+title: "RT @CKomatsoulis \u201cI was furious,\u201d she said, \u201cand I told..."
 date: 2024-02-06
 time: 20:09:46
 tweet_id: "1754960598771576867"
@@ -20,8 +21,6 @@ related:
   - idleg
 ---
 
-RT @CKomatsoulis: “I was furious,” she said, “and I told them I didn’t want my kids to be in this system.”
-
-#idpol #idleg @EyeOnBoiseGuido…
+RT @CKomatsoulis: “I was furious,” she said, “and I told them I didn’t want my kids to be in this system.” #idpol #idleg @EyeOnBoiseGuido…
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1754960598771576867)

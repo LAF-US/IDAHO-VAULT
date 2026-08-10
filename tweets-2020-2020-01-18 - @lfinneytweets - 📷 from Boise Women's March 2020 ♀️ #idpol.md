@@ -16,12 +16,13 @@ related:
   - idpol
 ---
 
-📷 from Boise Women's March 2020 ♀️ #idpol https://t.co/k1ovZb37vY
+📷 from Boise Women's March 2020 ♀️ #idpol <https://t.co/k1ovZb37vY>
 
 ## Media
-- ![](https://pbs.twimg.com/media/EOmAYmVU4AAr11M.jpg)
-- ![](https://pbs.twimg.com/media/EOmAZMYUwAAPXxt.jpg)
-- ![](https://pbs.twimg.com/media/EOmAZznU8AA4rcz.jpg)
-- ![](https://pbs.twimg.com/media/EOmAaXEUYAMy3b2.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/EOmAYmVU4AAr11M.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EOmAZMYUwAAPXxt.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EOmAZznU8AA4rcz.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EOmAaXEUYAMy3b2.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1218646372238290944)

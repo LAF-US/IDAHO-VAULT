@@ -5,4 +5,4 @@ related:
 - magistrate court
 ---
 
-magistrate court Jefferson County courthouse 
+magistrate court Jefferson County courthouse

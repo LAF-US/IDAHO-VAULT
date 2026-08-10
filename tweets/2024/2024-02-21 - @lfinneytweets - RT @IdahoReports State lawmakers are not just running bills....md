@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports State lawmakers are not just running bills..."
 date: 2024-02-21
 time: 20:56:36
 tweet_id: "1760408199914725554"

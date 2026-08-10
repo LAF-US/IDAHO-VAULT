@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2024-07-15
 time: 14:43:51
 tweet_id: "1812860633861525530"
@@ -16,10 +17,10 @@ related:
   - lfinneytweets
 ---
 
-@gregapruett https://t.co/jlqR0gtQ0o
+@gregapruett <https://t.co/jlqR0gtQ0o>
 
 ## Links
-- https://www.idahostatesman.com/news/business/article277939698.html
+- <https://www.idahostatesman.com/news/business/article277939698.html>
 
 *In reply to [@gregapruett](https://twitter.com/gregapruett)*
 

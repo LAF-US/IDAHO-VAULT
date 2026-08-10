@@ -1,4 +1,5 @@
 ---
+title: "Another licensing bill, this one HB 422 is for driving..."
 date: 2020-03-17
 time: 21:31:06
 tweet_id: "1240027906199281664"

@@ -1,4 +1,5 @@
 ---
+title: "The state absolutely could take on the responsibility. It..."
 date: 2023-04-17
 time: 18:08:21
 tweet_id: "1648025621472354304"

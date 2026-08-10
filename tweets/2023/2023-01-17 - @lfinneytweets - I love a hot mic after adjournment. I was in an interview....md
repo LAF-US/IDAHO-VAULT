@@ -1,4 +1,5 @@
 ---
+title: "I love a hot mic after adjournment. I was in an interview..."
 date: 2023-01-17
 time: 18:33:03
 tweet_id: "1615416929312989184"

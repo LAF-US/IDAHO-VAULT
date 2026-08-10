@@ -1,4 +1,5 @@
 ---
+title: "RT @chadforidaho The Idaho Secretary of State Office is..."
 date: 2020-03-19
 time: 01:28:08
 tweet_id: "1240449945200541697"

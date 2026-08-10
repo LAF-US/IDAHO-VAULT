@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoStatesman Endorsement Luke Malek has the makings..."
 date: 2018-05-11
 time: 06:04:23
 tweet_id: "994820496888909824"
@@ -15,6 +16,6 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoStatesman: Endorsement: Luke Malek has the makings of a good representative for Idaho's 1st Congressional District https://t.co/uZ…
+RT @IdahoStatesman: Endorsement: Luke Malek has the makings of a good representative for Idaho's 1st Congressional District <https://t.co/uZ…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/994820496888909824)

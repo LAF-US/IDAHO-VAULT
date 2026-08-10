@@ -1,4 +1,5 @@
 ---
+title: "(to the theme of JAWS) jfac... jfac... jfac jfaC jfAC..."
 date: 2023-03-29
 time: 02:34:56
 tweet_id: "1640905347446771713"
@@ -19,9 +20,9 @@ related:
 ---
 
 (to the theme of JAWS) 
-jfac... jfac... jfac jfaC jfAC jFAC..... JFAC!!!!!! #idleg #idpol https://t.co/rl6277d0hu
+jfac... jfac... jfac jfaC jfAC jFAC..... JFAC!!!!!! #idleg #idpol <https://t.co/rl6277d0hu>
 
 ## Links
-- https://t.co/rl6277d0hu
+- <https://t.co/rl6277d0hu>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1640905347446771713)

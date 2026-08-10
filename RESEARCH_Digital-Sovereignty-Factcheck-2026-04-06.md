@@ -95,7 +95,7 @@ Gemini built a compelling conceptual framework around "Digital Sovereignty" — 
 ## VERIFIED CORRECT
 
 | # | Claim | Status | Notes |
-|---|-------|--------|-------|
+| --- | ------- | -------- | ------- |
 | 11 | TSA ConfirmID $45 fee (Feb 1, 2026) | Verified | 10-day travel window for non-REAL ID passengers |
 | 12 | House v. NCAA: ~$20.5M/yr revenue sharing cap | Verified | Settlement approved June 6, 2025; ~22% of avg Power Five revenue |
 | 13 | NIL Go: $600+ deals reported within 5 business days | Verified | Operated by College Sports Commission (not NCAA directly); Deloitte supports |

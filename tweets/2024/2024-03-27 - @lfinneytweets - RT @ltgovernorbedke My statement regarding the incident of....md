@@ -1,4 +1,5 @@
 ---
+title: "RT @ltgovernorbedke My statement regarding the incident of..."
 date: 2024-03-27
 time: 02:09:12
 tweet_id: "1772808057946533967"

@@ -1,4 +1,5 @@
 ---
+title: "RT @OPB Portland's mayor and police chief defend Tuesday..."
 date: 2020-06-03
 time: 21:57:23
 tweet_id: "1268300775605714944"

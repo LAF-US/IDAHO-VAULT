@@ -1,4 +1,5 @@
 ---
+title: "RT @mlcarmel SCOOP Idaho\u2019s Building Code Board will..."
 date: 2022-08-05
 time: 20:25:23
 tweet_id: "1555651202385264642"

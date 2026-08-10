@@ -64,7 +64,7 @@ MCP is a transport/interface layer. Coordination remains manifest-driven.
   },
   "mcp": {
     "enabled": false,
-    "mode": "transpo***REMOVED***only",
+    "mode": "transport_only",
     "server": null,
     "notes": "Enable after endpoint + controls validation"
   },
@@ -78,7 +78,6 @@ MCP is a transport/interface layer. Coordination remains manifest-driven.
   "entries": {}
 }
 ```
-
 
 ## Machine Validation
 
@@ -153,6 +152,7 @@ Soft-locks are advisory but required by protocol.
 When lock contention exists, no parallel writes to same `file_path` are allowed.
 
 Winner priority:
+
 1. Existing active lock holder
 2. If simultaneous creation, lexicographic lowest `lock_id`
 

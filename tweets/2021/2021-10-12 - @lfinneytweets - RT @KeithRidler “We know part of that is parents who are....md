@@ -1,4 +1,5 @@
 ---
+title: "RT @KeithRidler \u201cWe know part of that is parents who are..."
 date: 2021-10-12
 time: 21:57:46
 tweet_id: "1448045251919159296"

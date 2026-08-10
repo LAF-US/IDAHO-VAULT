@@ -5,4 +5,4 @@ related:
 - Twin Falls County
 authority: LOGAN
 ---
-Murtaugh, Twin Falls County 
+Murtaugh, Twin Falls County

@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Senators moved quickly on Monday to..."
 date: 2023-03-27
 time: 21:22:54
 tweet_id: "1640464434266255360"

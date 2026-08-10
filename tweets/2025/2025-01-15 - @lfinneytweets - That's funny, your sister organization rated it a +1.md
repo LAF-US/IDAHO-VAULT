@@ -1,4 +1,5 @@
 ---
+title: "That's funny, your sister organization rated it a +1"
 date: 2025-01-15
 time: 04:45:52
 tweet_id: "1879389513333735486"
@@ -17,10 +18,10 @@ related:
 ---
 
 @IdahoFreedomPAC That's funny, your sister organization rated it a +1
-https://t.co/kpRxX8jyxm
+<https://t.co/kpRxX8jyxm>
 
 ## Links
-- https://idahofreedom.org/senate-bill-1377-petitions-paid-signature-gatherers/
+- <https://idahofreedom.org/senate-bill-1377-petitions-paid-signature-gatherers/>
 
 *In reply to [@IdahoFreedomPAC](https://twitter.com/IdahoFreedomPAC)*
 

@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Sen. Patti Anne Lodge told @lfinneytweets..."
 date: 2021-11-17
 time: 00:37:35
 tweet_id: "1460769048363294728"

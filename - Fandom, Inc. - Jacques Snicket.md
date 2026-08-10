@@ -7,7 +7,7 @@ created: 2026-04-14
 ---
 | “ | *I do not know when I will see [you](https://snicket.fandom.com/wiki/Lemony_Snicket "Lemony Snicket") again. Someday, perhaps, the world will indeed be quiet once more, but until the fires have been extinguished we must go our separate ways and risk our separate lives.* | ” |
 | --- | --- | --- |
-|  | — Jacques Snicket, *[Lemony Snicket: The Unauthorized Autobiography](https://snicket.fandom.com/wiki/Lemony_Snicket:_The_Unauthorized_Autobiography "Lemony Snicket: The Unauthorized Autobiography")* |
+| | — Jacques Snicket, *[Lemony Snicket: The Unauthorized Autobiography](https://snicket.fandom.com/wiki/Lemony_Snicket:_The_Unauthorized_Autobiography "Lemony Snicket: The Unauthorized Autobiography")* | |
 
 **Jacques Snicket** was the older brother of [Lemony Snicket](https://snicket.fandom.com/wiki/Lemony_Snicket "Lemony Snicket"), twin of [Kit Snicket](https://snicket.fandom.com/wiki/Kit_Snicket "Kit Snicket"), and known [V.F.D.](https://snicket.fandom.com/wiki/V.F.D. "V.F.D.") member.
 
@@ -17,7 +17,7 @@ created: 2026-04-14
 
 | “ | *My brother insists that he was allowed to finish his tea before his departure but this has been disputed over the years.* | ” |
 | --- | --- | --- |
-|  |  |
+| | | |
 
 As a young child, Jacques Snicket was recruited into [VFD](https://snicket.fandom.com/wiki/V.F.D. "V.F.D.") when his brother, [Lemony](https://snicket.fandom.com/wiki/Lemony_Snicket "Lemony Snicket"), was just an infant, on February 26.[^1] His sister, [Kit](https://snicket.fandom.com/wiki/Kit_Snicket "Kit Snicket"), was also recruited at this time. The siblings were drinking tea before their recruitment, and Jacques insisted that he was allowed to finish his cup, though Lemony does not believe this.[^3]
 
@@ -35,7 +35,7 @@ At some point, Jacques became friends with [Jerome](https://snicket.fandom.com/w
 
 | “ | *Your review of [Funcoot](https://snicket.fandom.com/wiki/Al_Funcoot "Al Funcoot") 's play has changed everything. [O](https://snicket.fandom.com/wiki/Count_Olaf "Count Olaf") is more dastardly than we ever could have imagined, and it will no longer be possible for you to communicate with us through* [The Daily Punctilio](https://snicket.fandom.com/wiki/The_Daily_Punctilio "The Daily Punctilio")*.* | ” |
 | --- | --- | --- |
-|  | — Jacques Snicket, *[Lemony Snicket: The Unauthorized Autobiography](https://snicket.fandom.com/wiki/Lemony_Snicket:_The_Unauthorized_Autobiography "Lemony Snicket: The Unauthorized Autobiography")* |
+| | — Jacques Snicket, *[Lemony Snicket: The Unauthorized Autobiography](https://snicket.fandom.com/wiki/Lemony_Snicket:_The_Unauthorized_Autobiography "Lemony Snicket: The Unauthorized Autobiography")* | |
 
 Jacques is presumed to be one of the people labeled *J* in the transcription of a VFD meeting, and possibly interrupted R while she was describing VFD recruitment, claiming that they received permission before taking children. Another letter is addressed to a *J* in the book, describing a possible recruit and including attached photos, having been taken in secret.
 
@@ -67,7 +67,7 @@ He visited [Olivia Caliban](https://snicket.fandom.com/wiki/Madame_Lulu "Madame 
 
 | “ | *He was looking for you. He showed me a picture of all three of you, waiting at [the dock on some lake](https://snicket.fandom.com/wiki/Damocles_Dock "Damocles Dock"), and asked me if I'd seen you anywhere. He knew that you'd been placed in Count Olaf's care, and all the terrible things that had happened there. He knew that you had gone to live with [Dr. Montgomery](https://snicket.fandom.com/wiki/Montgomery_Montgomery "Montgomery Montgomery"). He even knew about some of the inventions you made, [Violet](https://snicket.fandom.com/wiki/Violet_Baudelaire "Violet Baudelaire"), and the research you did, [Klaus](https://snicket.fandom.com/wiki/Klaus_Baudelaire "Klaus Baudelaire"), and some of [Sunny](https://snicket.fandom.com/wiki/Sunny_Baudelaire "Sunny Baudelaire") 's tooth-related exploits. He wanted to find you before it was too late.* | ” |
 | --- | --- | --- |
-|  |  |
+| | | |
 
 Jacques attempted to track the Baudelaire orphans and stopped at the presumably abandoned home of [Dr. Montgomery Montgomery](https://snicket.fandom.com/wiki/Montgomery_Montgomery "Montgomery Montgomery"), where he found [Quigley Quagmire](https://snicket.fandom.com/wiki/Quigley_Quagmire "Quigley Quagmire"), who had escaped from his house being set on fire into a tunnel that led to the home. Jacques was overjoyed at finding the triplet alive and told him that he'd known his parents and that he was at Montgomery's house to find an important file hidden on the premises. He also explained to Quigley that the Quagmire parents and he were a part of VFD, which had gone through a schism, though he wouldn't explain very much else to him.
 
@@ -77,7 +77,7 @@ Jacques asked Quigley if he had seen the Baudelaires, showing him a picture that
 
 | “ | *But I'm innocent! Please listen to me, I beg of you! I'm not Count Olaf! My name is Jacques! Oh, Baudelaires, I am so relieved to see that you are alive. Your parents-* | ” |
 | --- | --- | --- |
-|  | — Jacques Snicket's last words, *[The Vile Village](https://snicket.fandom.com/wiki/The_Vile_Village "The Vile Village")* |
+| | — Jacques Snicket's last words, *[The Vile Village](https://snicket.fandom.com/wiki/The_Vile_Village "The Vile Village")* | |
 
 !["Olaf" (Jacques) captured at the stake.](https://static.wikia.nocookie.net/snicket/images/2/2e/Burning_at_the_Stake.jpg/revision/latest?cb=20180101123401)
 
@@ -95,15 +95,15 @@ The next day, however, the Baudelaires find a crowd gathered around his body out
 
 | “ | *When meeting a volunteer in the field, you may determine their allegiance with the use of a code phrase: "The world is quiet here." This might sound to you like a curious statement, like the motto of a secret organization, or something a stranger might say when he picks you up in his taxi and invites you to use your talents for the benefit of the world. There'll be losses along the way. We may never triumph, not completely. We may be defeated, at least for a time. But we will never disappear. Not so long as there are noble, well-read people to take up the torch.* | ” |
 | --- | --- | --- |
-|  | — Jacques Snicket, " [The Carnivorous Carnival: Part Two](https://snicket.fandom.com/wiki/The_Carnivorous_Carnival:_Pa***REMOVED***Two "The Carnivorous Carnival: Part Two") " |
+| | — Jacques Snicket, " [The Carnivorous Carnival: Part Two](https://snicket.fandom.com/wiki/The_Carnivorous_Carnival:_Part_Two "The Carnivorous Carnival: Part Two") " | |
 
-Jacques appears much more frequently in the Netflix adaptation. He presumably went to [Prufrock Preparatory School](https://snicket.fandom.com/wiki/Prufrock_Preparatory_School "Prufrock Preparatory School") with the other Volunteers, and is noted to have driven the taxi when Lemony escaped the opera night in *[The Penultimate Peril: Part Two](https://snicket.fandom.com/wiki/The_Penultimate_Peril:_Pa***REMOVED***Two "The Penultimate Peril: Part Two")*. He seems to be a taxi driver and recruiter for the organization. He also meets with Lemony at some point after the Opera at a Masquerade party in VFD Headquarters.
+Jacques appears much more frequently in the Netflix adaptation. He presumably went to [Prufrock Preparatory School](https://snicket.fandom.com/wiki/Prufrock_Preparatory_School "Prufrock Preparatory School") with the other Volunteers, and is noted to have driven the taxi when Lemony escaped the opera night in *[The Penultimate Peril: Part Two](https://snicket.fandom.com/wiki/The_Penultimate_Peril:_Part_Two "The Penultimate Peril: Part Two")*. He seems to be a taxi driver and recruiter for the organization. He also meets with Lemony at some point after the Opera at a Masquerade party in VFD Headquarters.
 
 ![ rescued by Jacques Snicket.](https://static.wikia.nocookie.net/snicket/images/7/7d/Jacques_and_Larry.png/revision/latest/scale-to-width-down/250?cb=20180529030112)
 
 Larry Your-Waiter rescued by Jacques Snicket.
 
-In *[The Austere Academy: Part Two](https://snicket.fandom.com/wiki/The_Austere_Academy:_Pa***REMOVED***Two "The Austere Academy: Part Two")*, at the request from [Jacquelyn Scieszka](https://snicket.fandom.com/wiki/Jacquelyn_Scieszka "Jacquelyn Scieszka"), he arrives at Prufrock to rescue [Larry Your-Waiter](https://snicket.fandom.com/wiki/Larry_Your-Waiter "Larry Your-Waiter") from the freezer he was thrown into. Upon being confronted by Carmelita, he informs her that he works for an organization that keeps an eye on "children of interest" and insults her before leaving with Larry and calling Jacquelyn to inform her of the situation.
+In *[The Austere Academy: Part Two](https://snicket.fandom.com/wiki/The_Austere_Academy:_Part_Two "The Austere Academy: Part Two")*, at the request from [Jacquelyn Scieszka](https://snicket.fandom.com/wiki/Jacquelyn_Scieszka "Jacquelyn Scieszka"), he arrives at Prufrock to rescue [Larry Your-Waiter](https://snicket.fandom.com/wiki/Larry_Your-Waiter "Larry Your-Waiter") from the freezer he was thrown into. Upon being confronted by Carmelita, he informs her that he works for an organization that keeps an eye on "children of interest" and insults her before leaving with Larry and calling Jacquelyn to inform her of the situation.
 
 In *The Ersatz Elevator* episodes, Jacquelyn calls him to recruit [Olivia Caliban](https://snicket.fandom.com/wiki/Olivia_Caliban "Olivia Caliban") into VFD after observing her with [The Incomplete History of Secret Organizations](https://snicket.fandom.com/wiki/The_Incomplete_History_of_Secret_Organizations "The Incomplete History of Secret Organizations"). Jacques manages to earn her trust and the two of them head to 667 Dark Avenue to search for the kidnapped Quagmire triplets. They fail to find them in the building, but find out about the In Auction and storm in to try to rescue the triplets, only to be caught by the henchpeople and then lost in the crowd. They leave town to follow the Baudelaires and Count Olaf.
 
@@ -119,7 +119,7 @@ Jacques Snicket's body being carried away.
 
 Jacques offers once again to help Olaf join the Volunteer side, but Esmé knocks him down with a book and Olaf kills him with a crowbar. The next day, the Baudelaires witness his body being carried away. The Baudelaires are then framed for his murder.
 
-Later, recordings of him are seen in *The Hostile Hospital* and *[The Carnivorous Carnival](https://snicket.fandom.com/wiki/The_Carnivorous_Carnival:_Pa***REMOVED***Two "The Carnivorous Carnival: Part Two")*. In the former, the [Snicket File](https://snicket.fandom.com/wiki/Snicket_File "Snicket File") is now a video Jacques recorded discussing Count Olaf, arson, and a possible survivor of the fire. In the latter, he is seen in Olivia's videos from VFD, one of which discussing the code "The world is quiet here," the other talking about how there will always be noble people to take up the torch. He is portrayed by [Nathan Fillion](https://snicket.fandom.com/wiki/Nathan_Fillion "Nathan Fillion").
+Later, recordings of him are seen in *The Hostile Hospital* and *[The Carnivorous Carnival](https://snicket.fandom.com/wiki/The_Carnivorous_Carnival:_Part_Two "The Carnivorous Carnival: Part Two")*. In the former, the [Snicket File](https://snicket.fandom.com/wiki/Snicket_File "Snicket File") is now a video Jacques recorded discussing Count Olaf, arson, and a possible survivor of the fire. In the latter, he is seen in Olivia's videos from VFD, one of which discussing the code "The world is quiet here," the other talking about how there will always be noble people to take up the torch. He is portrayed by [Nathan Fillion](https://snicket.fandom.com/wiki/Nathan_Fillion "Nathan Fillion").
 
 ## Trivia
 
@@ -175,7 +175,7 @@ Burned at the stake.
 
 [!["The Vile Village: Part One" Concept Art.](https://static.wikia.nocookie.net/snicket/images/3/35/Jacquestvvconcept.jpg/revision/latest/scale-to-width-down/120?cb=20200217030402 "Jacquestvvconcept.jpg (503 KB)")](https://snicket.fandom.com/wiki/File:Jacquestvvconcept.jpg "Jacquestvvconcept.jpg (503 KB)")
 
-" [The Vile Village: Part One](https://snicket.fandom.com/wiki/The_Vile_Village:_Pa***REMOVED***One "The Vile Village: Part One") " Concept Art.
+" [The Vile Village: Part One](https://snicket.fandom.com/wiki/The_Vile_Village:_Part_One "The Vile Village: Part One") " Concept Art.
 
 [![Jacques at a V.F.D. party before the series.](https://static.wikia.nocookie.net/snicket/images/a/a6/E63EB442-1346-49F0-9D44-CAD942AD6C40.png/revision/latest/scale-to-width-down/160?cb=20180330085242 "E63EB442-1346-49F0-9D44-CAD942AD6C40.png (1.23 MB)")](https://snicket.fandom.com/wiki/File:E63EB442-1346-49F0-9D44-CAD942AD6C40.png "E63EB442-1346-49F0-9D44-CAD942AD6C40.png (1.23 MB)")
 

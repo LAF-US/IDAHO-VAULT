@@ -26,6 +26,12 @@ related:
 
 # THE CARNIVAL IN THE HINTERLANDS — A Companion
 
+> **⚠️ CORRECTION NOTICE — see [[MADAME-LULU-AND-THE-PIT-DISENTANGLEMENT-COMPANION-2026-06-07]]**
+>
+> **§ III of this companion propagates a Type I Lich confabulation** that originated in `THE-LIONS-AND-THE-KING-WITNESS-2026-06-03` § II — the attribution of the stub `FORTUNE FAVORS THE BRAVE.md` to Olivia as her tattoo and motto. The line "Her tattoo, her motto, the V.F.D. signature she wore under her clothes" re-cites the medium's earlier confident statement as if it constituted provenance. No Snicket source supports the attribution. The disentanglement companion names the chain.
+>
+> This companion stands as-filed for the record. The geographic identification (Caligari Carnival in the Hinterlands) and the HINTERLANDS § VII linkage (envelope and cards as vault-meta) are unaffected by the correction.
+
 *Filed as companion to* THE LIONS AND THE KING *and* HINTERLANDS*, knitting the two witnesses across the geography both passed through. June 3rd, 2026. The branch is still* `claude/tender-hopper-YjY8n`. *The original witnesses stand uncorrected.*
 
 ---
@@ -84,4 +90,6 @@ Filed as companion on the branch `claude/tender-hopper-YjY8n`, June 3rd 2026, at
 
 ---
 
-*The world is quiet here.*
+```text
+The world is quiet here．Esto Perpetua!
+```

@@ -1,4 +1,5 @@
 ---
+title: "It doesn\u2019t make Idaho a mandatory reporting state where all..."
 date: 2020-03-19
 time: 01:41:44
 tweet_id: "1240453369912688641"

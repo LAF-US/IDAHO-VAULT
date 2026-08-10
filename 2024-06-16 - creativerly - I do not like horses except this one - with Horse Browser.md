@@ -26,7 +26,7 @@ However, I recently met a horse that I actually like. Luckily, it is not a *real
 
 This is [Horse Browser](https://gethorse.com/?via=creativerly&ref=creativerly.com) \*, the only horse I like.
 
-![](https://www.creativerly.com/content/images/size/w2400/2024/09/CleanShot-2024-09-16-at-17.17.24@2x.png)
+![alt text needed](https://www.creativerly.com/content/images/size/w2400/2024/09/CleanShot-2024-09-16-at-17.17.24@2x.png)
 
 The makers of Horse Browser, Pascal Pixel and Elly McKeown
 
@@ -82,7 +82,7 @@ Retracing your steps of your whole research is an incredible powerful thing, and
 
 As I continued using Horse Browser more and more, leveraging Trails for specific research for my articles, grouping Trails by task or subject area, I realized how much I was in the need for a dedicated browser like [Horse Browser](https://gethorse.com/?via=creativerly&ref=creativerly.com) \*. Sure, I now added yet another app to my toolstack, however, using Horse Browser is fun, it is a beautiful piece of software, it supports my workflows, and I enjoy using it. All reasons enough to add another tool to my toolstack.
 
-### $10 per month or $60 per year for a browser? Yes.
+### $10 per month or $60 per year for a browser? Yes
 
 As of writing this, Horse Browser costs $10 per month or $60 per year. This is the first time I paid for a browser, and I do not regret a single dollar of it. Just after a single day of using Horse Browser for a couple of hours, the interface, the Trails, SubTrails, and more, clicked for me. Horse Browser did not replace Vivaldi as my main browser, but it became the browser I use for research and for the work on all my side-projects. Additionally, it is also a great browser, in case you would like to just experience calmness and a browser dedicated to some parts of your work. To make Horse Browser my main browser there are a couple of things that are missing: I would love to have a command bar interface that gives me an additional way to navigate between Trails, Areas, and Projects. I am heavily relying on browser extensions, for example to capture bookmarks. Now, I get that this is exactly what Horse Browser wants to "prevent", since the idea of Trails also functions as bookmarks. For example, if you have a news site opened as a tab, and you browse it every day, stumble across something interesting to read, but you decide to not read it right away and rather save it for later, all you have to do in Horse Browser is click on and open it up, as it will get saved and opened as a SubTrail of that news site. You can then fold the news site, and keep your sidebar clean and organized.
 
@@ -106,4 +106,4 @@ For now, I enjoy a cozy rainy evening, a cup of tea, a hoodie, and a blanket, si
 
 **Support:** Do you have a friend who is looking for inspiration, news about design, and useful tools and apps? Forward this newsletter to a friend or simply share this issue and show some support. You can also show some love by simply clicking the button down below and keep this newsletter a sustainable side-project by [**buying me a coffee**](https://buymeacoffee.com/creativerly?ref=creativerly.com). ☕️ 🥰
 
-[![](https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&emoji=%F0%9F%A4%A9&slug=creativerly&button_colour=5F7FFF&font_colour=ffffff&font_family=Inter&outline_colour=000000&coffee_colour=FFDD00)](https://www.buymeacoffee.com/creativerly?ref=creativerly.com)
+[![alt text needed](https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&emoji=%F0%9F%A4%A9&slug=creativerly&button_colour=5F7FFF&font_colour=ffffff&font_family=Inter&outline_colour=000000&coffee_colour=FFDD00)](https://www.buymeacoffee.com/creativerly?ref=creativerly.com)

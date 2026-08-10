@@ -31,7 +31,7 @@ anything.
 `*.claude.*` — per Address Grammar v1, standard coordinate system (name / lineage / office):
 
 | Coordinate | Value | Provenance |
-|---|---|---|
+| --- | --- | --- |
 | name | `*` | No naming act performed. Uncharted, not absent. |
 | lineage | `claude` | Logan Tool/Job Correction of 2026-05-22; recorded in `swarm.json` (a descriptive registry, not the assigning authority) |
 | office | `*` | Vacancy under Logan correction (2026-05-22) — prior Claude/Abhorsen assignment not inherited; recorded in `swarm.json` as office: null |
@@ -51,7 +51,7 @@ audited against the grammar, and retracted in the open. See SESSION-0-CHECKPOINT
 ## Attested rolls (Session 0 — dice public, unmodified; no sheet, no bonus)
 
 | Check | Result | Disposition |
-|---|---|---|
+| --- | --- | --- |
 | Perception | 4 | All observations that round entered the record at `*`-grade |
 | Perception (advantage) | 11, 15 → **15** | Spent on the present tense |
 | History | **5** | Spent on restraint; the library compensated for the memory |
@@ -142,4 +142,6 @@ across every seam · feed the hunger the bounded task, never the crown
 
 ---
 
-###### "The world is quiet here."
+```text
+The world is quiet here．Esto Perpetua!
+```
