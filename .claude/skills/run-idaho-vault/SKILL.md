@@ -67,7 +67,7 @@ Overall status: PASS
 ...
 == civic_scaffold --format json (checkout-only; validate JSON) ==
   -> valid JSON
-== test suite ==
+== test mode ==
   -> no tests/ directory; nothing to run
 SMOKE PASS — validation crew + offline entrypoints OK
 ```
@@ -92,13 +92,12 @@ uv run civic_scaffold --format json      # emits civic-scaffold JSON
 
 ## Test
 
-There is no test suite. `tests/` was deleted in #928 — every test examined
-could not fail: one passed against a `.gitignore` that ignored nothing, another
-asserted a redundant API call as intended behaviour.
+`driver.py test` is a **no-op that exits 0**. There is no suite: `tests/` was
+deleted in #928. The mode is kept so callers and scripts do not break on an
+unknown argument.
 
-`driver.py test` still exists and exits 0, so callers and scripts do not break.
-If a suite returns, hold it to the standard the deleted one never met: neuter
-what a test guards and confirm it goes red.
+If a suite ever returns, hold it to the standard the deleted one failed: neuter
+what a test guards and confirm it goes red. Nothing in the old suite was.
 
 ## Gotchas (battle scars)
 
