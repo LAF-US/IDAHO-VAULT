@@ -1,4 +1,5 @@
 /* Named Hours — the day-shape frame for Full Calendar (fullcalendar.io) */
+
 /*
  * Paints the ten named blocks of the working day as colored background bands
  * across the Full Calendar time grid, so every day view carries the same
@@ -28,7 +29,7 @@
   --nh-yan: #d85c79;
   --nh-tan: #db793a;
   --nh-tethera: #d8bd63;
-  --nh-noon: #888888;
+  --nh-noon: #888;
   --nh-methera: #5aaf81;
   --nh-pits: #6b8bdd;
   --nh-sethera: #a47cb0;
@@ -42,13 +43,25 @@
 
 /* ---------------------------------------------------------------- bands -- */
 
+/* The lane is the band: it carries the fill and anchors the ::after label.
+ *
+ * Two background-color declarations, deliberately. The flat one lands first
+ * for engines without color-mix() (older Obsidian mobile WebViews), where the
+ * band reads at full saturation; color-mix() then takes over where it is
+ * supported and makes --nh-band-strength live. */
 .workspace-leaf-content[data-type^="full-calendar"]
   .fc-timegrid-slot-lane[data-time] {
   position: relative;
+  background-color: var(--nh-band);
+  background-color: color-mix(
+    in srgb,
+    var(--nh-band) var(--nh-band-strength),
+    transparent
+  );
 }
 
 /* Each band is declared once as a custom property on its slots, so the fill
- * and the label below both read from a single source. */
+ * above and the label below both read from a single source. */
 
 .workspace-leaf-content[data-type^="full-calendar"]
   .fc-timegrid-slot-lane[data-time="06:00:00"],
@@ -134,25 +147,13 @@
   --nh-band: var(--nh-dusk);
 }
 
-/* Fill. The flat rgba fallback lands first for engines without color-mix()
- * (older Obsidian mobile WebViews); color-mix() then takes over where it is
- * supported and makes --nh-band-strength live. */
-.workspace-leaf-content[data-type^="full-calendar"]
-  .fc-timegrid-slot-lane[data-time] {
-  background-color: var(--nh-band);
-  background-color: color-mix(
-    in srgb,
-    var(--nh-band) var(--nh-band-strength),
-    transparent
-  );
-}
-
 /* Slots outside 06:00–19:30 have no --nh-band, so var() resolves to nothing
  * and the declaration is invalid-at-computed-value-time — the lane falls back
  * to the theme's own background. Stated here because it looks like an
  * omission and is not one. */
 
 /* --------------------------------------------------------------- labels -- */
+
 /*
  * The block's name, set once at the top of each band. Delete this section if
  * the bare color bands are enough.
@@ -176,38 +177,47 @@
   .fc-timegrid-slot-lane[data-time="06:00:00"]::after {
   content: "Dawn";
 }
+
 .workspace-leaf-content[data-type^="full-calendar"]
   .fc-timegrid-slot-lane[data-time="07:00:00"]::after {
   content: "Yan";
 }
+
 .workspace-leaf-content[data-type^="full-calendar"]
   .fc-timegrid-slot-lane[data-time="08:30:00"]::after {
   content: "Tan";
 }
+
 .workspace-leaf-content[data-type^="full-calendar"]
   .fc-timegrid-slot-lane[data-time="10:00:00"]::after {
   content: "Tethera";
 }
+
 .workspace-leaf-content[data-type^="full-calendar"]
   .fc-timegrid-slot-lane[data-time="11:30:00"]::after {
   content: "Noon";
 }
+
 .workspace-leaf-content[data-type^="full-calendar"]
   .fc-timegrid-slot-lane[data-time="12:30:00"]::after {
   content: "Methera";
 }
+
 .workspace-leaf-content[data-type^="full-calendar"]
   .fc-timegrid-slot-lane[data-time="14:00:00"]::after {
   content: "Pits";
 }
+
 .workspace-leaf-content[data-type^="full-calendar"]
   .fc-timegrid-slot-lane[data-time="15:30:00"]::after {
   content: "Sethera";
 }
+
 .workspace-leaf-content[data-type^="full-calendar"]
   .fc-timegrid-slot-lane[data-time="17:00:00"]::after {
   content: "Azer";
 }
+
 .workspace-leaf-content[data-type^="full-calendar"]
   .fc-timegrid-slot-lane[data-time="18:30:00"]::after {
   content: "Dusk";
