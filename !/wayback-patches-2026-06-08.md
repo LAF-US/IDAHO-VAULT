@@ -5,7 +5,7 @@ Insert the `wayback:` line directly after the `URL:` field.
 
 ---
 
-### `2019-09-12 - Sandpoint Reader - Sound and fury.md`
+## `2019-09-12 - Sandpoint Reader - Sound and fury.md`
 
 ```
 URL: https://sandpointreader.com/sound-and-fury/
