@@ -19,11 +19,11 @@ date: 1938-03-26
 
 ---
 
-[^1] The Theodore Roosevelt Collection, University of Idaho Library Digital Collections, [https://www.lib.uidaho.edu/digital/troosevelt/](https://www.lib.uidaho.edu/digital/troosevelt/) 
+[^1] The Theodore Roosevelt Collection, University of Idaho Library Digital Collections, [https://www.lib.uidaho.edu/digital/troosevelt/](https://www.lib.uidaho.edu/digital/troosevelt/)
 
 [^2] Clifford M. Ott Collection, PG 90, University of Idaho Library Special Collections and Archives, [https://www.lib.uidaho.edu/digital/ott/](https://www.lib.uidaho.edu/digital/ott/)
 
 ---
 
-- [[1938 E Roosevelt - My Day]] 
-- [[Borah - University of Idaho]] 
+- [[1938 E Roosevelt - My Day]]
+- [[Borah - University of Idaho]]

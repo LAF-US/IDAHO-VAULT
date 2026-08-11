@@ -5,5 +5,6 @@ related:
 authority: LOGAN
 ---
 Residence: Boise
+
 - Legislative District 17
-- 
+-

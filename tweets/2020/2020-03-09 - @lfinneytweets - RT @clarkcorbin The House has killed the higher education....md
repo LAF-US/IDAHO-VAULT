@@ -1,4 +1,5 @@
 ---
+title: "RT @clarkcorbin The House has killed the higher education..."
 date: 2020-03-09
 time: 17:21:24
 tweet_id: "1237065964497383426"

@@ -17,10 +17,11 @@ related:
   - Millennials
 ---
 
-Also featuring my favorite #Millennials correction https://t.co/SkIKDTawbA
+Also featuring my favorite #Millennials correction <https://t.co/SkIKDTawbA>
 
 ## Media
-- ![](https://pbs.twimg.com/media/DapoaySVQAAl3R3.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/DapoaySVQAAl3R3.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

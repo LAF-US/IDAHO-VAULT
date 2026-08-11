@@ -1,4 +1,5 @@
 ---
+title: "RT @twinfallstn RUPERT \u2014 Minidoka Memorial Hospital is..."
 date: 2021-08-13
 time: 18:02:03
 tweet_id: "1426242662118477826"

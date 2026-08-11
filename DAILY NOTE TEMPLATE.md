@@ -1,4 +1,5 @@
 <%* const d = moment(tp.file.title, "YYYY-MM-DD") -%>
+
 ---
 title: <% d.format("YYYY-MM-DD") %>
 aliases:
@@ -7,6 +8,7 @@ aliases:
   - <% d.format("MMMM Do, YYYY") %>
   - <% d.format("D MMMM YYYY") %>
   - <% d.format("dddd, MMMM D, YYYY") %>
+period: day
 linter-yaml-title-alias: <% d.format("YYYY-MM-DD") %>
 yesterday: <% d.clone().subtract(1,"d").format("YYYY-MM-DD") %>
 tomorrow: <% d.clone().add(1,"d").format("YYYY-MM-DD") %>
@@ -20,6 +22,7 @@ tags:
   - dailynote
 date created: <% d.format("dddd, MMMM Do YYYY, h:mm:ss a") %>
 date modified: <% d.format("dddd, MMMM Do YYYY, h:mm:ss a") %>
+
 ---
 
 [[TO DO LIST]]

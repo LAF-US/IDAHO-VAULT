@@ -1,4 +1,5 @@
 ---
+title: "RT @MelissaKXLY4 Gov Inslee says -Social distancing has to..."
 date: 2020-04-15
 time: 23:50:45
 tweet_id: "1250572300560162816"

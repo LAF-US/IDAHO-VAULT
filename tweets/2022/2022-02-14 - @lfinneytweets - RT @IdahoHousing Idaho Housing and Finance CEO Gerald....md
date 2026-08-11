@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoHousing Idaho Housing and Finance CEO Gerald..."
 date: 2022-02-14
 time: 23:26:28
 tweet_id: "1493366058819850240"

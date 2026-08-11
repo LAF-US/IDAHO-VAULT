@@ -1,4 +1,5 @@
 ---
+title: "RT @Polygon \u2018Martin Scorsese\u2019s lost film\u2019 Goncharov (1973),..."
 date: 2022-11-23
 time: 04:29:40
 tweet_id: "1595273350259277825"
@@ -15,12 +16,12 @@ related:
   - lfinneytweets
 ---
 
-RT @Polygon: ‘Martin Scorsese’s lost film’ Goncharov (1973), explained https://t.co/9eV65qiPZC https://t.co/Kjiyo9h4ym
+RT @Polygon: ‘Martin Scorsese’s lost film’ Goncharov (1973), explained <https://t.co/9eV65qiPZC> <https://t.co/Kjiyo9h4ym>
 
 ## Links
-- https://www.polygon.com/23471749/goncharov-1973-explained-tumblr-meme?utm_campaign=polygon&utm_content=chorus&utm_medium=social&utm_source=twitter
+- <https://www.polygon.com/23471749/goncharov-1973-explained-tumblr-meme?utm_campaign=polygon&utm_content=chorus&utm_medium=social&utm_source=twitter>
 
 ## Media
-- ![](https://pbs.twimg.com/media/FiHhdxTWIBALFgK.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/FiHhdxTWIBALFgK.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1595273350259277825)

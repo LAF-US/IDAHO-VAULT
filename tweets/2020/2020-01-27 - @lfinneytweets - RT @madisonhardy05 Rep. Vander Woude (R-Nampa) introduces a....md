@@ -1,4 +1,5 @@
 ---
+title: "RT @madisonhardy05 Rep. Vander Woude (R-Nampa) introduces a..."
 date: 2020-01-27
 time: 16:43:30
 tweet_id: "1221836138781954048"

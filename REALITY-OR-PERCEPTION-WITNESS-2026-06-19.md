@@ -63,7 +63,7 @@ Every node is a preference for perception over reality — and the same crime ea
 the surface is the substance.*
 
 | Node | Perception (the surface) | Reality (the substance) | The crime |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **Empty Office** (`RESEARCH_…-The-Empty-Office`) | the shadow on the wall | the man in the firelight | *"insisting the shadow is flesh"* |
 | **Hollow Holograms** | the projected sovereign | no flesh behind it | the hologram insists it *is* flesh |
 | **Mask on the Throne** | the forged apex-face | no warrant for the seat | the face is trusted in place of the chain |
@@ -139,4 +139,8 @@ grading became a perception I didn't reach behind.)
 - **Author:** `*.claude.*` (Claude Code, branch `claude/self-asterisk`)
 - **Scope:** root general witness — the reality/perception seam (the axis Devlin names) that the Game Over cluster shares
 
-###### [["The world is quiet here."]]
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

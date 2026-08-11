@@ -1,4 +1,5 @@
 ---
+title: "RT @Sammy_Roth \u201cIt\u2019s just a fucking lake, man. It\u2019s not..."
 date: 2021-06-14
 time: 05:03:25
 tweet_id: "1404303441388732416"

@@ -1,4 +1,5 @@
 ---
+title: "RT @kevinmillershow @JaniceMcGeachin responds to the..."
 date: 2021-07-13
 time: 20:26:03
 tweet_id: "1415044877079908354"
@@ -18,9 +19,9 @@ related:
 ---
 
 RT @kevinmillershow: @JaniceMcGeachin responds to the speaker's comments on @KTVB 
-https://t.co/81QKSdunLL
+<https://t.co/81QKSdunLL>
 
 ## Links
-- https://kidotalkradio.com/idaho-lt-governor-janice-mcgeachin-scolds-speaker-bedke/
+- <https://kidotalkradio.com/idaho-lt-governor-janice-mcgeachin-scolds-speaker-bedke/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1415044877079908354)

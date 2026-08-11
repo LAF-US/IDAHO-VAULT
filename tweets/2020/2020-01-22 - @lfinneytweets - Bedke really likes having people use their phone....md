@@ -1,4 +1,5 @@
 ---
+title: "Bedke really likes having people use their phone..."
 date: 2020-01-22
 time: 16:05:39
 tweet_id: "1220014671962370048"

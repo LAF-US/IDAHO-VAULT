@@ -1,4 +1,5 @@
 ---
+title: "The KUID bureau is strong."
 date: 2023-03-29
 time: 03:04:50
 tweet_id: "1640912875727519745"

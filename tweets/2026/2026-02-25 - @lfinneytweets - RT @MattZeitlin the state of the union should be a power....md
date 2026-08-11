@@ -1,4 +1,5 @@
 ---
+title: "RT @MattZeitlin the state of the union should be a power..."
 date: 2026-02-25
 time: 19:39:04
 tweet_id: "2026743768729469203"

@@ -1,4 +1,5 @@
 ---
+title: "Sen. Thayne walked by the press desk earlier and joked that..."
 date: 2021-11-15
 time: 17:16:43
 tweet_id: "1460295713498152966"

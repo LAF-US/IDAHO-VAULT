@@ -9,4 +9,4 @@ related:
 - Shoshone County
 authority: LOGAN
 ---
-river in Shoshone County and Kootenai County that flows into Lake Coeur d'Alene 
+river in Shoshone County and Kootenai County that flows into Lake Coeur d'Alene

@@ -1,4 +1,5 @@
 ---
+title: "Congratulations @ChristinaLords! #GoVandals"
 date: 2020-09-25
 time: 17:03:55
 tweet_id: "1309539140040491008"
@@ -18,9 +19,9 @@ related:
   - GoVandals
 ---
 
-Congratulations @ChristinaLords! #GoVandals https://t.co/euXXLknS8n
+Congratulations @ChristinaLords! #GoVandals <https://t.co/euXXLknS8n>
 
 ## Links
-- https://x.com/uidaho/status/1309538401239085062
+- <https://x.com/uidaho/status/1309538401239085062>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1309539140040491008)

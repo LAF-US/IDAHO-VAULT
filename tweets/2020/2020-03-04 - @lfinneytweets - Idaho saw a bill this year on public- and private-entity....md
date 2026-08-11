@@ -1,4 +1,5 @@
 ---
+title: "Idaho saw a bill this year on public- and private-entity..."
 date: 2020-03-04
 time: 19:25:15
 tweet_id: "1235285193801551874"

@@ -1,4 +1,5 @@
 ---
+title: "RT @kkruesi Polls open at 8 am and close at 8 pm. Results..."
 date: 2018-05-15
 time: 16:29:41
 tweet_id: "996427408092774400"

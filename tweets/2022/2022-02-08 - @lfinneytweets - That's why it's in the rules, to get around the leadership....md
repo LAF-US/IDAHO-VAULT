@@ -1,4 +1,5 @@
 ---
+title: "That's why it's in the rules, to get around the leadership..."
 date: 2022-02-08
 time: 19:18:28
 tweet_id: "1491129318759493633"

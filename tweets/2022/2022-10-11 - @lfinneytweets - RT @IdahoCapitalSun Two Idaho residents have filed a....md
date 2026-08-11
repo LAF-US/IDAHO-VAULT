@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoCapitalSun Two Idaho residents have filed a..."
 date: 2022-10-11
 time: 16:14:27
 tweet_id: "1579868038546849793"

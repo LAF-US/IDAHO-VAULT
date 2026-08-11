@@ -1,4 +1,5 @@
 ---
+title: "RT @uidaho The #uidaho Moscow campus is slowly warming as..."
 date: 2023-11-11
 time: 02:11:27
 tweet_id: "1723161483327230364"

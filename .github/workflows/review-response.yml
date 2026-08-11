@@ -15,10 +15,24 @@ permissions:
 
 jobs:
   sync-review-state:
+    # One run per PR, newest wins. Every review-comment REPLY submits its own
+    # review, so answering N threads fires N `submitted` events, and each run
+    # calls `_fetch_pr` -- `reviewThreads(first: 100) { comments(first: 100) }`,
+    # up to 10k nodes, which GitHub's GraphQL limiter bills by node count. Three
+    # replies on #904 cost three full graph fetches within 27 seconds and all
+    # three failed `RATE_LIMIT` once the account's hourly budget was spent.
+    #
+    # Cancelling is safe because this job RECOMPUTES derived state from the PR
+    # as it currently stands -- it does not consume the review event's payload
+    # as a delta. A cancelled run's work is redone, from fresher input, by the
+    # run that replaced it. That is exactly the shape cancel-in-progress is for.
+    concurrency:
+      group: sync-review-state-${{ github.event.pull_request.number }}
+      cancel-in-progress: true
     runs-on: ubuntu-latest
     steps:
       - name: Checkout trusted workflow surfaces
-        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           ref: ${{ github.event.repository.default_branch }}
 

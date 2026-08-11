@@ -1,4 +1,5 @@
 ---
+title: "Senate approves Criminal Justice Integrated Data System..."
 date: 2020-03-17
 time: 22:46:59
 tweet_id: "1240047005033852929"

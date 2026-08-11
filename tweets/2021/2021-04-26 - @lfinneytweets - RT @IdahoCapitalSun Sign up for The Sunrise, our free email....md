@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoCapitalSun Sign up for The Sunrise, our free email..."
 date: 2021-04-26
 time: 21:44:57
 tweet_id: "1386798478408380420"

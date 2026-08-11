@@ -1,4 +1,5 @@
 ---
+title: "RT @CdAPressNews Worries about critical race theory, global..."
 date: 2022-06-09
 time: 01:15:36
 tweet_id: "1534705740392243201"

@@ -4,7 +4,7 @@ author:
 published: 2026-04-17
 created: 2026-04-23
 ---
-[Contents](#)
+Contents
 
 EventSub subscriptions let your application listen for events that happen on Twitch. When an event occurs for one of your subscriptions, Twitch sends you a notification. For example, you can receive a notification when:
 
