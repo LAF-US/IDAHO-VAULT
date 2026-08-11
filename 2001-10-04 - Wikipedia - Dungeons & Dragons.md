@@ -35,7 +35,7 @@ In 2004, *D&D* remained the best-known,[^21] and best-selling,[^22] role-playing
 
 [^11]: Kogod, Theo (September 30, 2020). ["11 Ways Dungeons & Dragons Influenced Video Games"](https://www.thegamer.com/ways-dungeons-dragons-influenced-video-games/). *TheGamer*. Retrieved August 6, 2022.
 
-[^12]: ["The influence of role-playing in video games"](http://www.gametopiastudios.com/beyond/article/03/2019/18/influence-role-playing-in-videogames). *www.gametopiastudios.com*. [Archived](https://web.archive.org/web/20220806185634/http://www.gametopiastudios.com/beyond/article/03/2019/18/influence-role-playing-in-videogames) from the original on August 6, 2022. Retrieved August 6, 2022.
+[^12]: ["The influence of role-playing in video games"](http://www.gametopiastudios.com/beyond/article/03/2019/18/influence-role-playing-in-videogames). *<www.gametopiastudios.com>*. [Archived](https://web.archive.org/web/20220806185634/http://www.gametopiastudios.com/beyond/article/03/2019/18/influence-role-playing-in-videogames) from the original on August 6, 2022. Retrieved August 6, 2022.
 
 [^13]: ["The Influence of Dungeons and Dragons on Video Games"](https://www.museumofplay.org/blog/the-influence-of-dungeons-and-dragons-on-video-games/). *The Strong National Museum of Play*. May 6, 2011. Retrieved August 6, 2022.
 
@@ -297,7 +297,7 @@ In 2004, *D&D* remained the best-known,[^21] and best-selling,[^22] role-playing
 
 [^142]: Vlessing, Etan (April 13, 2022). ["Hasbro Buys D&D Beyond for $146.3M in Gaming Expansion"](https://www.hollywoodreporter.com/business/business-news/hasbro-buys-dd-beyond-for-146-3m-in-gaming-expansion-1235129523/). *The Hollywood Reporter*. [Archived](https://web.archive.org/web/20220417093724/https://www.hollywoodreporter.com/business/business-news/hasbro-buys-dd-beyond-for-146-3m-in-gaming-expansion-1235129523/) from the original on April 17, 2022. Retrieved April 14, 2022.
 
-[^143]: Vanjani, Karishma. ["Hasbro Pushes for Digital Growth of Dungeons & Dragons With $146M Acquisition"](https://www.barrons.com/articles/hasbro-stock-dungeons-dragons-beyond-acquisition-51649875679). *www.barrons.com*. [Archived](https://web.archive.org/web/20220419153244/https://www.barrons.com/articles/hasbro-stock-dungeons-dragons-beyond-acquisition-51649875679) from the original on April 19, 2022. Retrieved April 14, 2022.
+[^143]: Vanjani, Karishma. ["Hasbro Pushes for Digital Growth of Dungeons & Dragons With $146M Acquisition"](https://www.barrons.com/articles/hasbro-stock-dungeons-dragons-beyond-acquisition-51649875679). *<www.barrons.com>*. [Archived](https://web.archive.org/web/20220419153244/https://www.barrons.com/articles/hasbro-stock-dungeons-dragons-beyond-acquisition-51649875679) from the original on April 19, 2022. Retrieved April 14, 2022.
 
 [^144]: ["Change of D&D Beyond Ownership"](https://www.dndbeyond.com/posts/1234-change-of-d-d-beyond-ownership). *D&D Beyond* ([Press release](https://en.wikipedia.org/wiki/Press_release "Press release")). April 22, 2022. [Archived](https://web.archive.org/web/20220514224222/https://www.dndbeyond.com/posts/1234-change-of-d-d-beyond-ownership) from the original on May 14, 2022. Retrieved May 11, 2022.
 

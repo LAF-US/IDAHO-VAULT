@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise 'Surprisingly historic' More..."
 date: 2020-05-21
 time: 02:57:03
 tweet_id: "1263302760029540352"

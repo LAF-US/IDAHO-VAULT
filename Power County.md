@@ -12,4 +12,4 @@ authority: LOGAN
 ---
 Seat: American Falls
 Municipalities: Rockland, Pocatello
-Communities: Arbon Valley, Arbon, Neeley, Pauline, Roy 
+Communities: Arbon Valley, Arbon, Neeley, Pauline, Roy

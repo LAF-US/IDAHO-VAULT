@@ -16,9 +16,10 @@ related:
   - lfinneytweets
 ---
 
-@idahomea just started the 2018 IMEA All-State Inservice Conference with welcoming remarks and  introductions by IMEA President Wayne Millet. Keynote speaker Camille Blackburn led the audience in singing Idaho's state song (and @uidaho alma mater) "Here We Have Idaho" https://t.co/zqkZ3xqXuf
+@idahomea just started the 2018 IMEA All-State Inservice Conference with welcoming remarks and  introductions by IMEA President Wayne Millet. Keynote speaker Camille Blackburn led the audience in singing Idaho's state song (and @uidaho alma mater) "Here We Have Idaho" <https://t.co/zqkZ3xqXuf>
 
 ## Media
-- ![](https://pbs.twimg.com/ext_tw_video_thumb/959125339636051968/pu/img/t0AxtXroutCjVAQT.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/ext_tw_video_thumb/959125339636051968/pu/img/t0AxtXroutCjVAQT.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/959125738283679744)

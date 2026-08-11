@@ -3,4 +3,4 @@ related:
 - counties
 authority: LOGAN
 ---
-counties death 
+counties death

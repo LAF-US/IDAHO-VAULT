@@ -1,4 +1,5 @@
 ---
+title: "RT @MorganRomeroTV Ada Co Sheriff's Office says it doesn't..."
 date: 2024-09-12
 time: 21:10:45
 tweet_id: "1834338885935178127"

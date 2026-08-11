@@ -1,4 +1,5 @@
 ---
+title: "Sen. Bair presents the Senate bill with authorizing..."
 date: 2020-03-19
 time: 01:20:51
 tweet_id: "1240448113950617602"

@@ -1,4 +1,5 @@
 ---
+title: "#idpol #idleg"
 date: 2020-06-24
 time: 04:50:36
 tweet_id: "1275652523181867008"
@@ -19,10 +20,10 @@ related:
   - idleg
 ---
 
-#idpol #idleg https://t.co/NCDtYAr0NV
+\#idpol #idleg <https://t.co/NCDtYAr0NV>
 
 ## Media
-- ![](https://pbs.twimg.com/media/EbQEBabWAAoViA3.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EbQEBabWAAoViA3.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

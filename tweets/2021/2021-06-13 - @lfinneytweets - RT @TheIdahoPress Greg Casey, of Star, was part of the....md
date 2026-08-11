@@ -1,4 +1,5 @@
 ---
+title: "RT @TheIdahoPress Greg Casey, of Star, was part of the..."
 date: 2021-06-13
 time: 17:21:54
 tweet_id: "1404126899211694084"

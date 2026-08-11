@@ -1,4 +1,5 @@
 ---
+title: "RT @EastIDNews If any of the elected officials continue to..."
 date: 2023-12-20
 time: 00:52:39
 tweet_id: "1737274780913750314"

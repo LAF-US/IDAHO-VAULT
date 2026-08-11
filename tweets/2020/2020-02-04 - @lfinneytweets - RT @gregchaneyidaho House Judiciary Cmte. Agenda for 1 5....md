@@ -1,4 +1,5 @@
 ---
+title: "RT @gregchaneyidaho House Judiciary Cmte. Agenda for 1 5..."
 date: 2020-02-04
 time: 23:54:34
 tweet_id: "1224843722669445121"
@@ -22,6 +23,6 @@ related:
   - idpol
 ---
 
-RT @gregchaneyidaho: House Judiciary Cmte. Agenda for 1/5/2020...a characteristically light day for #Hjud  #idleg #idpol https://t.co/TZRFm…
+RT @gregchaneyidaho: House Judiciary Cmte. Agenda for 1/5/2020...a characteristically light day for #Hjud  #idleg #idpol <https://t.co/TZRFm…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1224843722669445121)

@@ -1,4 +1,5 @@
 ---
+title: "RT @KayeThornbrugh After an election cycle marked by sharp..."
 date: 2022-11-10
 time: 22:12:13
 tweet_id: "1590829709394206721"

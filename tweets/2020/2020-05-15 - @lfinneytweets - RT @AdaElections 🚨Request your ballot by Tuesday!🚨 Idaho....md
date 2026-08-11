@@ -1,4 +1,5 @@
 ---
+title: "RT @AdaElections \ud83d\udea8Request your ballot by Tuesday!\ud83d\udea8 Idaho..."
 date: 2020-05-15
 time: 22:56:58
 tweet_id: "1261430399168700416"

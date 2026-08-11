@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports August 6, 2021, Weekly #IdahoCOVID19..."
 date: 2021-08-07
 time: 01:23:22
 tweet_id: "1423817009112834048"
@@ -20,9 +21,9 @@ related:
 ---
 
 RT @IdahoReports: August 6, 2021, Weekly #IdahoCOVID19 Update | @IdahoPTV 
-https://t.co/WMoVEPmwfv
+<https://t.co/WMoVEPmwfv>
 
 ## Links
-- https://youtu.be/GKZlJvPNaOQ
+- <https://youtu.be/GKZlJvPNaOQ>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1423817009112834048)

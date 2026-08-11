@@ -1,4 +1,5 @@
 ---
+title: "RT @DailyInterLake Congressional Republicans from the..."
 date: 2021-05-06
 time: 22:59:18
 tweet_id: "1390441066503966722"

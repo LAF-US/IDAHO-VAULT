@@ -1,3 +1,3 @@
 ---
 ---
-UIdaho WWAMI director and SHAMP dean 
+UIdaho WWAMI director and SHAMP dean

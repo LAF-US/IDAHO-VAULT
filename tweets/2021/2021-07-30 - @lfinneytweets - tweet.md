@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2021-07-30
 time: 23:29:31
 tweet_id: "1421251639462154244"
@@ -17,10 +18,10 @@ related:
   - lfinneytweets
 ---
 
-@VoteMorales @davlinnews @IdahoReports @pocketcasts https://t.co/6qSBjDJAwX
+@VoteMorales @davlinnews @IdahoReports @pocketcasts <https://t.co/6qSBjDJAwX>
 
 ## Media
-- ![](https://pbs.twimg.com/tweet_video_thumb/E7lM1K6VcAAPpsn.jpg)
+- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/E7lM1K6VcAAPpsn.jpg)
 
 *In reply to [@JordanRMorales](https://twitter.com/JordanRMorales)*
 

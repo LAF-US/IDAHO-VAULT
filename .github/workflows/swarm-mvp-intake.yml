@@ -32,7 +32,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout trusted workflow surface
-        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v4
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v4
         with:
           ref: ${{ github.event.repository.default_branch }}
 
@@ -157,19 +157,29 @@ jobs:
       - name: Create draft PR
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RUN_ID: ${{ github.run_id }}
+          RUN_ATTEMPT: ${{ github.run_attempt }}
+          COMMAND: ${{ github.event.inputs.command }}
+          OUTPUT_PATH: ${{ steps.meta.outputs.output_path }}
+          LOCK_ID: ${{ steps.manifest_entry.outputs.lock_id }}
+          VERSION: ${{ steps.manifest_entry.outputs.version }}
+          GITHUB_ISSUE: ${{ github.event.inputs.github_issue || 'none' }}
+          LINEAR_REF: ${{ github.event.inputs.linear_ref || 'none' }}
+          BRANCH: ${{ steps.meta.outputs.branch }}
+          RUN_TOKEN: ${{ steps.meta.outputs.run_token }}
         run: |
           cat > pr-body.md <<'EOF'
           ## Swarm MVP Intake
 
-          **Run:** `${{ github.run_id }}`
-          **Run attempt:** `${{ github.run_attempt }}`
-          **Command:** `${{ github.event.inputs.command }}`
-          **Output:** `${{ steps.meta.outputs.output_path }}`
-          **Manifest lock:** `${{ steps.manifest_entry.outputs.lock_id }}`
-          **Manifest version:** `${{ steps.manifest_entry.outputs.version }}`
+          **Run:** `$RUN_ID`
+          **Run attempt:** `$RUN_ATTEMPT`
+          **Command:** `$COMMAND`
+          **Output:** `$OUTPUT_PATH`
+          **Manifest lock:** `$LOCK_ID`
+          **Manifest version:** `$VERSION`
           **Validation:** `validate_content.py --scope inbox` passed
-          **GitHub issue:** `${{ github.event.inputs.github_issue || 'none' }}`
-          **Linear ref:** `${{ github.event.inputs.linear_ref || 'none' }}`
+          **GitHub issue:** `$GITHUB_ISSUE`
+          **Linear ref:** `$LINEAR_REF`
 
           This PR is draft-only. Logan remains the merge gate.
           EOF
@@ -177,6 +187,6 @@ jobs:
           gh pr create \
             --draft \
             --base main \
-            --head "${{ steps.meta.outputs.branch }}" \
-            --title "swarm mvp intake ${{ steps.meta.outputs.run_token }}" \
+            --head "$BRANCH" \
+            --title "swarm mvp intake $RUN_TOKEN" \
             --body-file pr-body.md
