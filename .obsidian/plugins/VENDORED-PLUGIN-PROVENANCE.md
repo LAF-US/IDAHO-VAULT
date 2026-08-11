@@ -22,16 +22,19 @@ Line-ending normalization (Copilot's catch, verified 2026-08-11): the repo's
 `.gitattributes` normalizes JS to LF on check-in, and four upstream assets ship
 with MIXED line endings, so their tracked bytes differ from the release bytes
 by CR removal only. Proven by re-downloading each release asset and comparing
-its CR-stripped bytes to the tracked file — equal in all four cases. For those
-four, the table's hash is the upstream-release asset; the tracked-file hash is
-listed here:
+its CR-stripped bytes to the tracked file — equal in all four cases. The main
+table below records the TRACKED file for every row — that is what `sha256sum`
+verifies on a checkout, including the four normalized rows. The upstream
+release assets those four were cut from are recorded in full here, so the
+release source stays verifiable too (download the asset, hash it against this
+table, strip CRs, hash against the main table):
 
-| plugin | upstream CRLF lines | tracked bytes | tracked sha256(16) |
+| plugin | upstream CRLF lines | upstream bytes | upstream sha256 |
 | --- | ---: | ---: | --- |
-| habit-calendar | 23 | 15180 | `efa59ca200313d33` |
-| handwritten-notes | 28 | 307388 | `ca267f18b2cc1527` |
-| obsidian-footnotes | 471 | 96689 | `fb39a9469ffaef01` |
-| obsidian-icon-folder | 30 | 1003719 | `b0e6dfaf820b12cd` |
+| habit-calendar | 23 | 15203 | `7a986f8301f2a3f1ab74dcd7d5822ab87ae88e341f737cbd2dc33b08d84cf13c` |
+| handwritten-notes | 28 | 307416 | `1178f9d834f980591ccd838f3021801c840f8042dc73bc5d2b91fecb25c9c28d` |
+| obsidian-footnotes | 471 | 97160 | `cf0d39ade7da5e7ce9b6d35e7eb2f65ef2417d9c99b71a65d67be6e1e779f0ef` |
+| obsidian-icon-folder | 30 | 1003749 | `ada0b009706556c98101f953a6a87f5cafd3001085df593d3be28eeeea218201` |
 
 Every other file's tracked bytes equal its release bytes exactly; "verbatim"
 means byte-identical modulo this recorded LF normalization and nothing else.
