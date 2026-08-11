@@ -1,10 +1,33 @@
-// ESLint legacy config — INERT against the ESLint this repo installs.
+// ESLint legacy config — NOT MERELY INERT. IT BREAKS MODERN ESLINT RUNS.
 //
 // Measured on eslint 10.8.1 (pinned in package.json): eslint.config.js is the
 // only format read. Move it aside and ESLint refuses to run — "couldn't find
 // an eslint.config.(js|mjs|cjs) file" — rather than falling back here. The
 // ESLINT_USE_FLAT_CONFIG=false escape hatch is gone, and `eslint --help` lists
 // no eslintrc options.
+//
+// THE COST IS NOT ZERO, and an earlier version of this header said it was.
+// "Inert" is only true while nothing points ESLint at this file. The moment
+// something does, the whole run dies:
+//
+//     $ eslint --config .eslintrc.js <anything>
+//     A config object is using the "root" key, which is not supported in
+//     flat config system.
+//
+// Not one bad key, either — removing `root` moves the error to `env`, and
+// after that would come `extends`, `overrides`, `ignorePatterns`. This is an
+// eslintrc file; ESLint 10 cannot load it at all, by design.
+//
+// This is not hypothetical. CodeRabbit's ESLint integration detects this file,
+// points ESLint 10.8.1 at it, and fails — so its ESLint tool currently reports
+// nothing on this repo, on every PR, because this file exists. Reproduced
+// locally with the exact error above.
+//
+// So the trade is real and worth stating plainly: this file buys a config for
+// Codacy's ESLint-8 toggle (a tool nobody has enabled, for an ESLint that went
+// EOL in October 2024) and costs a working ESLint in any modern tool that
+// finds it. Deleting it is a one-line change and probably the right call —
+// Logan's, not this file's.
 //
 // Kept because CODACY TREATS THE TWO AS SEPARATE TOOLS, and its supported-files
 // table maps them by filename:
