@@ -17,3 +17,6 @@ dependencies = [
     "requests",
     "uv"
 ]
+
+[project.urls]
+Repository = "https://github.com/LAF-US/IDAHO-VAULT"
