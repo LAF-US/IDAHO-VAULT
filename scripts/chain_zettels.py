@@ -15,6 +15,11 @@ Safety / correctness:
     is placed immediately after the closing frontmatter fence (or at the top
     if there is no frontmatter), followed by exactly one newline, then the
     original body untouched.
+  - Atomic per-file write. --apply writes each file's new content to a
+    sibling temp file, fsyncs it, then os.replace()s it over the original —
+    never truncates the original in place. An interruption or disk-full
+    error mid-write leaves the source note exactly as it was, not empty or
+    partial.
   - Idempotent by position, not substring. A file is only treated as already
     chained if the chain is exactly the first non-blank body line. A chain
     present elsewhere (e.g. appended at EOF by an earlier, buggy run) is
@@ -45,6 +50,7 @@ import argparse
 import os
 import re
 import sys
+import tempfile
 
 STEM_RE = re.compile(r"^[A-Za-z0-9]+$")
 
@@ -152,8 +158,23 @@ def main(argv=None) -> int:
 
     written = 0
     for name, new in to_change:
-        with open(os.path.join(args.root, name), "w", encoding="utf-8", newline="") as fh:
-            fh.write(new)
+        path = os.path.join(args.root, name)
+        try:
+            mode = os.stat(path).st_mode & 0o777
+        except FileNotFoundError:
+            mode = None  # new file: keep mkstemp's default (umask-restricted) mode
+        fd, tmp_path = tempfile.mkstemp(dir=args.root, prefix=f".{name}.", suffix=".tmp")
+        try:
+            if mode is not None:
+                os.chmod(tmp_path, mode)
+            with os.fdopen(fd, "w", encoding="utf-8", newline="") as fh:
+                fh.write(new)
+                fh.flush()
+                os.fsync(fh.fileno())
+            os.replace(tmp_path, path)
+        except BaseException:
+            os.unlink(tmp_path)
+            raise
         written += 1
     print(f"\n  WROTE {written} file(s).")
     return 0
