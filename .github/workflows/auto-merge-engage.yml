@@ -28,10 +28,10 @@ name: Auto-merge on PR events
 
 on:
   pull_request_target:
-    # `labeled` is load-bearing: the job below gates on the `auto-merge` label, but without
+    # `labeled` is load-bearing: the job below gates on the `merge/auto` label, but without
     # a `labeled` trigger, *applying* that label fires no event — so a PR labeled after its
     # last open/sync sat armed-but-unqueued until a manual dispatch (the #720 symptom). With
-    # `labeled`, adding `auto-merge` engages the arm+enqueue directly. Any other label event
+    # `labeled`, adding `merge/auto` engages the arm+enqueue directly. Any other label event
     # runs the job too, then the `if` skips it — harmless, and the concurrency group dedupes.
     types: [opened, reopened, ready_for_review, synchronize, labeled]
 
@@ -48,14 +48,21 @@ concurrency:
 
 jobs:
   engage:
-    # Arm/enqueue only on an explicit human signal: the `auto-merge` label. Marking a PR
+    # Arm/enqueue only on an explicit arming signal: the `merge/auto` label. Marking a PR
     # ready-for-review (draft == false) is NOT consent to merge -- it invites review. Gating
     # on the label decouples "please review" from "ship it" and closes the race where simply
     # un-drafting a PR merged it out from under review (human and bot). Drafts stay unarmed;
-    # a maintainer adds `auto-merge` when a PR is actually cleared to land.
+    # a maintainer (or the auto-pr workflow, for the grid's —/— clear cell) adds `merge/auto`
+    # when a PR is actually cleared to land.
+    #
+    # `merge/auto` is the vault's ONE arming label: declared in LABEL_SPECS, created by
+    # ensure-labels, read and written by review_feedback_loop. This gate previously keyed on
+    # an invented `auto-merge` name that nothing declared — the drift #763 was opened to
+    # kill: two names for one signal, with the engine stamping one and this gate reading
+    # the other, so an engine-armed PR never engaged.
     if: >
       github.event.pull_request.draft == false &&
-      contains(github.event.pull_request.labels.*.name, 'auto-merge')
+      contains(github.event.pull_request.labels.*.name, 'merge/auto')
     runs-on: ubuntu-latest
     steps:
       - name: Checkout trusted workflow surfaces
