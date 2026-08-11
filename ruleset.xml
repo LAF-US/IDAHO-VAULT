@@ -1,39 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  PMD ruleset — Codacy toggle, ON.
+  PMD ruleset — Codacy toggle.
 
-  NAME COLLISION, READ FIRST. This is a PMD ruleset, which is what a bare
-  `ruleset.xml` at a repo root means by convention. It is NOT a GitHub
-  repository ruleset — those are branch and tag protection rules, they are
-  JSON, they are configured in the repository settings UI or via the API, and
-  nothing in a file named ruleset.xml has any effect on them. The vault holds
-  reference notes on GitHub rulesets ("GitHub Docs - About rulesets.md",
-  "Creating rulesets for a repository.md"); this file is unrelated to those and
-  changing it will not protect a branch.
+  NOT a GitHub repository ruleset. Those are branch and tag protection rules,
+  they are JSON, and they live in repository settings. Editing this file will
+  not protect a branch. The vault's notes on GitHub rulesets are unrelated to
+  it.
 
-  The two categories referenced below ship inside PMD itself — no plugin, no
-  download, nothing to resolve.
+  Both categories ship inside PMD. Reach is zero: PMD analyses Java, and this
+  repo's code is Python, shell and Markdown.
 
-  REACH TODAY IS ZERO. PMD analyses Java, Apex and a few other JVM-family
-  languages; this repo's code is Python, shell and Markdown. These rules match
-  nothing and cost nothing. They are armed for the first Java file rather than
-  switched on after one exists, which is the useful order — the rules people
-  resent most are the ones applied to code that is already written.
-
-  Two categories, not five. `errorprone` and `bestpractices` are the ones that
-  find defects. `codestyle` and `design` are largely taste, and `documentation`
-  demands Javadoc on everything; adding them to an empty repo would guarantee
-  that the first Java file ever committed arrives buried in complaints about
-  brace placement.
-
-  To take a single rule back out, keep the category ref and exclude by name:
-
-    <rule ref="category/java/errorprone.xml">
-      <exclude name="MissingSerialVersionUID"/>
-    </rule>
-
-  If you find yourself excluding half a category, the category was the wrong
-  starting point — reference the individual rules instead.
+  errorprone and bestpractices only — those find defects. codestyle and design
+  are largely taste, and documentation demands Javadoc on everything.
 -->
 <ruleset name="idaho-vault"
          xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
@@ -41,9 +19,8 @@
          xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
 
   <description>
-    Defect-finding baseline for IDAHO-VAULT: PMD's built-in errorprone and
-    bestpractices categories. Matches nothing today — this repo has no Java.
-    Not a GitHub repository ruleset; see the comment above.
+    Defect-finding baseline: PMD's errorprone and bestpractices categories.
+    Matches nothing today — no Java here. Not a GitHub repository ruleset.
   </description>
 
   <rule ref="category/java/errorprone.xml"/>

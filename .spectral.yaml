@@ -1,24 +1,7 @@
-# Spectral (OpenAPI / AsyncAPI / JSON-Schema linter) ruleset — Codacy toggle, ON.
+# Spectral — Codacy toggle. `spectral:oas` is built in, no package needed.
+# Quoted because an unquoted colon is ambiguous inside a YAML flow sequence.
 #
-# `spectral:oas` is built into Spectral — no package to install, nothing to
-# resolve. Pairing it with `recommended` selects the recommended severity tier
-# rather than every rule the ruleset defines.
-#
-# The quoting is not stylistic. `spectral:oas` contains a colon, and unquoted
-# inside a YAML flow sequence that is ambiguous with a mapping key. Quoted, it
-# is unambiguously the string Spectral expects.
-#
-# NOTE ON REACH: this repo has no OpenAPI or AsyncAPI document today, so this
-# ruleset currently matches nothing and costs nothing. It is armed for the
-# first API description that lands rather than switched on after the fact —
-# which is the useful order, because the rules people resent most are the ones
-# applied to a file that already exists.
-#
-# When something does land and a rule is wrong for it, switch that one rule off
-# by name in the `rules` block below with the reason beside it. Severities are
-# error | warn | info | hint | off; write `off` explicitly rather than deleting
-# the line, so the ruleset keeps a record of what was considered and declined.
+# No OpenAPI or AsyncAPI document here yet, so reach is zero. Armed for the
+# first one rather than switched on after it exists.
 
 extends: [["spectral:oas", "recommended"]]
-
-rules: {}

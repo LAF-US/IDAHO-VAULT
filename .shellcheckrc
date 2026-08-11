@@ -1,31 +1,9 @@
-# ShellCheck configuration — Codacy toggle, ON.
+# ShellCheck — Codacy toggle. No directives, which for ShellCheck means every
+# check runs: its defaults ARE the baseline. eslint, stylelint, remark and
+# biome are the opposite — empty means no rules there.
 #
-# No directives, and for ShellCheck that means every check runs at default
-# severity: its own defaults are the baseline, so an empty config is the
-# enabled state. This is the opposite of eslint, stylelint and remark, where an
-# empty config means no rules at all. Do not reason about the two the same way.
+# Reach here is near zero: this vault's shell lives in workflow `run:` blocks,
+# and ShellCheck does not parse YAML.
 #
-# WHAT IT ACTUALLY REACHES. The vault's shell does not live in .sh files —
-# almost all of it is `run:` blocks inside .github/workflows/*.yml. ShellCheck
-# does not parse YAML, so those blocks are invisible to it unless a tool
-# extracts them first (actionlint does exactly that, and is not wired up here).
-# So this toggle is close to inert today by accident of where the shell lives,
-# not by design. The gap is worth knowing about: the repo's most consequential
-# shell — the secret-scan and portability checks — is the shell ShellCheck
-# cannot see.
-#
-# Do not add `disable=` lines to make one script pass. That inverts what the
-# file is for: it turns a repo-wide standard into a per-annoyance escape hatch,
-# and every later reader inherits the exemption without the argument for it.
-# Fix the script, or write the exemption where the offending line is
-# (`# shellcheck disable=SCxxxx  # reason`) so it stays next to its reason.
-#
-# Syntax when this stops being defaults-only — one directive per line, no
-# sections:
-#   severity=warning
-#   enable=require-variable-braces
-#   disable=SC2154
-#
-# `enable=` is worth knowing about: it turns on optional checks that are OFF by
-# default even though everything else is on. `require-variable-braces` and
-# `quote-safe-variables` are the two most likely to earn their keep here.
+# Exempt at the offending line (`# shellcheck disable=SCxxxx  # reason`), not
+# repo-wide.

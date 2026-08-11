@@ -1,25 +1,8 @@
-# hadolint (Dockerfile linter) configuration — Codacy toggle, ON.
+# hadolint — Codacy toggle. `ignored: []` suppresses nothing, and keeps the
+# file a valid mapping; a comments-only file parses as null, which hadolint
+# rejects. No Dockerfile here yet, so reach is zero.
 #
-# `ignored: []` suppresses nothing, so every rule runs at its default severity.
-# hadolint's own defaults are the baseline, so this is the enabled state. The
-# empty list is not decoration either: hadolint parses this file as a YAML
-# mapping, and a comments-only file parses as null, which it rejects.
-#
-# REACH TODAY IS ZERO — this repo has no Dockerfile. The toggle is armed for
-# the first one rather than switched on after it exists, which is the useful
-# order: the rules people resent most are the ones applied to a file that is
-# already written and already working.
-#
-# Keys for when a Dockerfile lands:
-#   ignored: [DL3008, ...]         rule codes to suppress repo-wide
-#   failure-threshold: warning      error | warning | info | style | ignore
-#   trustedRegistries: [ghcr.io]    registries FROM may pull from
-#   override: {error: [...], ...}   re-rank individual rules
-#
-# `trustedRegistries` is the one to reach for first. It turns "where did this
-# base image come from" from a question someone has to remember to ask in
-# review into a check that fails. It also has a sharp edge: setting it at all
-# means every registry NOT listed is rejected, so it is an allowlist, not an
-# addition — the same shape as Checkov's `check:` key next door.
+# `trustedRegistries` is the one worth adding first, and it is an allowlist:
+# setting it rejects every registry not listed.
 
 ignored: []

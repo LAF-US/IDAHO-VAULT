@@ -1,48 +1,31 @@
-# Semgrep rules — Codacy toggle, ON.
+# Semgrep — Codacy toggle.
 #
-# TWO RULE SURFACES SHARE THIS TOOL'S NAME. Read this before adding a rule.
+# The `semgrep-cloud-platform/scan` check runs on every PR and does NOT read
+# this file; it pulls its ruleset from the Semgrep platform. Codacy's semgrep
+# and a bare `semgrep scan` do read it. Rules added here therefore do not
+# tighten the PR gate.
 #
-#   - `semgrep-cloud-platform/scan` runs on every PR and pulls its ruleset from
-#     the Semgrep AppSec Platform. It does NOT read this file.
-#   - Codacy's semgrep, and a local `semgrep scan` with no --config, DO read a
-#     root `.semgrep.yaml`.
+# Semgrep has no `extends` — a rules file holds literal rules, so there is no
+# baseline to reference. These three target what this repo actually does.
 #
-# So a rule added here does not tighten the platform scan, and a rule added to
-# the platform does not appear here. If a rule belongs in one and not the
-# other, say which in its comment — otherwise the next reader assumes the PR
-# gate enforces it.
-#
-# Semgrep has no `extends`. A rules file holds literal rules, so there is no
-# "recommended baseline" to reference — registry packs like `p/default` are
-# --config values, not something a ruleset file can pull in. The three rules
-# below are therefore written out: each targets something this repo actually
-# does (it drives git and uv through subprocess, and parses YAML in
-# .github/scripts/), rather than being a generic starter set.
-#
-# UNVERIFIED: semgrep is not installed in the environment these were written
-# in, so the syntax is written to the documented schema but has not been run.
-# Whoever first runs semgrep here should confirm all three load, and say so.
-#
-# `message` is what a human reads at 2am — state the consequence, not the rule
-# name.
+# Unverified: semgrep is not installed in the environment this was written in.
+# The rules parse and match the documented schema but have not been run.
 
 rules:
   - id: subprocess-shell-true
     languages: [python]
     severity: WARNING
     message: >-
-      subprocess called with shell=True: the command string is handed to a
-      shell, so any interpolated value becomes executable syntax. Pass a list
-      of arguments instead and the shell never sees it.
+      shell=True hands the command to a shell, so any interpolated value
+      becomes executable syntax. Pass a list of arguments instead.
     pattern: subprocess.$FUNC(..., shell=True, ...)
 
   - id: yaml-load-without-safe-loader
     languages: [python]
     severity: ERROR
     message: >-
-      yaml.load() can construct arbitrary Python objects from the document it
-      reads, so parsing an untrusted file is code execution. Use
-      yaml.safe_load().
+      yaml.load() can construct arbitrary Python objects, so parsing an
+      untrusted file is code execution. Use yaml.safe_load().
     pattern-either:
       - pattern: yaml.load($DATA)
       - pattern: yaml.load($DATA, Loader=yaml.Loader)
@@ -53,7 +36,6 @@ rules:
     languages: [python]
     severity: WARNING
     message: >-
-      os.system() runs its argument through a shell and gives back only an exit
-      code — no stdout, no stderr, no way to tell a failure from a crash. Use
-      subprocess.run with a list of arguments.
+      os.system() returns only an exit code — no stdout, no stderr, no way to
+      tell a failure from a crash. Use subprocess.run with a list.
     pattern: os.system(...)

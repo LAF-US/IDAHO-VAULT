@@ -1,43 +1,13 @@
-# Pylint configuration — Codacy toggle, ON.
+# Pylint — Codacy toggle. Empty config means every check runs: pylint's
+# defaults ARE its baseline. It also pins config resolution, so a run inside
+# the vault cannot inherit a parent .pylintrc from someone's machine.
 #
-# The section below is empty, and for pylint that means every check is on:
-# pylint's own defaults are its baseline, so an empty config is the enabled
-# state rather than the disabled one. This is the opposite of how eslint,
-# stylelint and remark behave, where an empty config means no rules at all.
-# Do not reason about the two the same way.
+# Overlaps ruff.toml on unused-import / unused-variable / undefined-name. The
+# pylint-only classes are where the noise will be — expect C0114-C0116
+# (missing docstring) across ~50 files. Unverified: pylint is not installed
+# in the environment this was written in.
 #
-# It also pins config resolution. Pylint searches upward from the file it is
-# checking and stops at the first .pylintrc; having one at the repo root means
-# a run inside the vault cannot silently inherit settings from a parent
-# directory on someone's machine.
-#
-# OVERLAP WITH RUFF, which is also on (ruff.toml). The two are not redundant
-# and neither subsumes the other:
-#
-#   both        unused-import, unused-variable, undefined-name
-#   ruff only   f-string-missing-placeholders and the rest of pyflakes' set,
-#               at a speed that makes it usable as a pre-commit check
-#   pylint only missing-docstring, invalid-name, too-many-arguments and the
-#               rest of the convention/refactor classes ruff.toml does not
-#               select
-#
-# The pylint-only set is where the noise lives. Expect the first run to be
-# dominated by C0114/C0115/C0116 (missing module/class/function docstring)
-# across ~50 Python files. That is a real backlog, not a misconfiguration —
-# decide whether the vault wants docstrings before reaching for `disable=`.
-#
-# Do not paste a large `disable=` list here to make existing code pass. Silence
-# a specific finding at the line that earns it (`# pylint: disable=...`) so the
-# exemption travels with its reason.
-#
-# UNVERIFIED: pylint is not installed in the environment this file was written
-# in, so the expectation above is read off the code, not measured. Whoever runs
-# it first should replace this note with the count.
-#
-# Sections that matter when this stops being defaults-only:
-#   [MAIN]              py-version, ignore-paths, load-plugins
-#   [MESSAGES CONTROL]  disable=, enable=
-#   [FORMAT]            max-line-length
+# Exempt at the line (`# pylint: disable=...`), not repo-wide.
 
 [MAIN]
 ignore-paths=^THE-GEMSTONE/.*$,^\.venv/.*$,^\.uv-cache/.*$

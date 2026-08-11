@@ -1,43 +1,25 @@
-# Ruff configuration — Codacy toggle, ON.
-#
-# Standalone ruff.toml rather than a [tool.ruff] table in pyproject.toml, so
-# Python lint policy is not entangled with packaging metadata. Ruff reads
-# whichever it finds; if a [tool.ruff] table is ever added to pyproject.toml,
-# THIS FILE WINS and that table is ignored silently. Pick one.
+# Ruff — Codacy toggle. Standalone rather than a [tool.ruff] table in
+# pyproject.toml. If both ever exist, THIS FILE WINS and the table is ignored
+# silently; pick one.
 
 target-version = "py310"
 
 [lint]
-# This is ruff's own default set, written out rather than left implicit so a
-# reader can see what is on without knowing ruff's defaults:
+# Ruff's own default set, written out so it can be read without knowing the
+# defaults. Measured on this repo at ruff 0.15.8:
 #
-#   E4  imports        E7  statements       E9  syntax/IO errors
-#   F   pyflakes       (undefined names, unused imports, f-string mistakes)
+#   ["E4","E7","E9","F"]  ->    61 findings,  8 in live code
+#   ["E","F"]             -> 1,368 findings, 785 in live code
 #
-# Measured on this repo at ruff 0.15.8:
+# The 1,307 difference is E501 line-too-long alone — thirteen hundred
+# complaints about line width, in a repo that runs no Python formatter, on top
+# of eight real defects.
 #
-#   select = ["E4", "E7", "E9", "F"]   ->    61 findings repo-wide,  8 in live code
-#   select = ["E", "F"]                -> 1,368 findings repo-wide, 785 in live code
-#
-# The 1,307-finding difference is E501 line-too-long, alone. Turning on full
-# pycodestyle would bury eight real defects under thirteen hundred complaints
-# about line width in a repo that runs no Python formatter. E1/E2/E3 are left
-# off for the same reason ruff leaves them off by default: they are a
-# formatter's job, and this repo has not chosen one for Python.
-#
-# "Live code" above means src/, .github/scripts/, run_checks.py and
-# .claude/skills/. The rest of the 61 sit in root-level flattened NETWEB alias
-# copies (tests-test_five_wizards.py alone carries 14) and in two notebooks
-# ruff cannot parse. Those are pre-existing and are NOT excluded here —
-# excluding them would tune the linter to the mess instead of recording it.
+# Nothing is excluded. The 53 findings outside live code sit in root-level
+# flattened NETWEB alias copies and two unparseable notebooks; excluding them
+# would tune the linter to the mess. Ruff's built-in excludes already cover
+# .venv and node_modules — verified identical counts with and without.
 select = ["E4", "E7", "E9", "F"]
 
-# No `ignore` list. Adding one here silences a rule everywhere; silence it at
-# the line that earns it (`# noqa: F401 - re-export`) so the exemption keeps
-# its reason. An `ignore` entry that outlives its cause is invisible.
-
-# No `exclude` either: ruff's built-in defaults already skip .venv,
-# node_modules, .git and friends. Verified — running with and without an
-# explicit exclude for THE-GEMSTONE/node_modules/.venv/.uv-cache gives the
-# identical count of 61, because THE-GEMSTONE holds no .py file outside
-# node_modules.
+# No `ignore`. Silence at the line (`# noqa: F401 - re-export`), where the
+# exemption keeps its reason.
