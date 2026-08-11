@@ -15,7 +15,7 @@
 
 module.exports = {
   root: true,
-  env: { node: true, browser: true, es2024: true },
+  env: { node: true, es2024: true },
   parserOptions: { ecmaVersion: 2024, sourceType: "script" },
   extends: ["eslint:recommended"],
   ignorePatterns: [
@@ -27,6 +27,13 @@ module.exports = {
   overrides: [
     {
       // Mirrors the flat config's ESM block; see eslint.config.js.
+      // Electron renderer: browser globals ON TOP of node. Scoped here rather
+      // than set at the root, so a stray `window` in a non-plugin script is
+      // still reported. Mirrors the flat config's per-path block.
+      files: [".obsidian/plugins/**/*.js"],
+      env: { browser: true },
+    },
+    {
       files: [".codex/skills/codex-primary-runtime/slides/templates/*.js"],
       parserOptions: { sourceType: "module" },
       globals: {

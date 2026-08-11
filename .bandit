@@ -9,4 +9,4 @@
 # Unverified: bandit is not installed in the environment this was written in.
 
 [bandit]
-exclude = /THE-GEMSTONE,/node_modules,/.venv,/.uv-cache,/.git
+exclude = THE-GEMSTONE,node_modules,.venv,.uv-cache,.git

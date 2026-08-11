@@ -17,5 +17,8 @@
     "remark-preset-lint-recommended": "^7.0.1",
     "stylelint": "^17.14.1",
     "stylelint-config-standard": "^40.0.0"
+  },
+  "engines": {
+    "node": ">=20.19.0"
   }
 }

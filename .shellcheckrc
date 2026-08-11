@@ -1,6 +1,7 @@
-# ShellCheck — Codacy toggle. No directives, which for ShellCheck means every
-# check runs: its defaults ARE the baseline. eslint, stylelint, remark and
-# biome are the opposite — empty means no rules there.
+# ShellCheck — Codacy toggle. No directives, so ShellCheck's DEFAULT checks
+# run at default severity. That is not the same as every check: optional ones
+# stay off until named with `enable=` (see `shellcheck --list-optional`).
+# eslint, stylelint, remark and biome are the opposite — empty means no rules.
 #
 # REACH IS NOT NEAR-ZERO. An earlier version of this file claimed the vault's
 # shell lives only in workflow `run:` blocks that ShellCheck cannot parse.

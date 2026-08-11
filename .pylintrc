@@ -10,4 +10,9 @@
 # Exempt at the line (`# pylint: disable=...`), not repo-wide.
 
 [MAIN]
-ignore-paths=^THE-GEMSTONE/.*$,^\.venv/.*$,^\.uv-cache/.*$
+# Without this pylint targets whatever interpreter runs it (3.11 here), so
+# diagnostics move when the runner does. The project floor is 3.10.
+py-version=3.10
+# Regex against the full path, both separators, unanchored at the front so a
+# checkout at any absolute location still matches.
+ignore-paths=(^|.*/)THE-GEMSTONE/.*$,(^|.*/)\.venv/.*$,(^|.*/)\.uv-cache/.*$

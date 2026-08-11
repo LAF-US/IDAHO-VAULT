@@ -26,11 +26,23 @@ rules:
     message: >-
       yaml.load() can construct arbitrary Python objects, so parsing an
       untrusted file is code execution. Use yaml.safe_load().
+    # Enumerated per loader rather than matched broadly, because a blanket
+    # `yaml.load_all(...)` would also flag SafeLoader, which is the correct
+    # call. CLoader is the libyaml build of the unsafe Loader, not a safe one.
     pattern-either:
       - pattern: yaml.load($DATA)
       - pattern: yaml.load($DATA, Loader=yaml.Loader)
       - pattern: yaml.load($DATA, Loader=yaml.UnsafeLoader)
       - pattern: yaml.load($DATA, Loader=yaml.FullLoader)
+      - pattern: yaml.load($DATA, Loader=yaml.CLoader)
+      - pattern: yaml.unsafe_load($DATA)
+      - pattern: yaml.full_load($DATA)
+      - pattern: yaml.load_all($DATA)
+      - pattern: yaml.load_all($DATA, Loader=yaml.Loader)
+      - pattern: yaml.load_all($DATA, Loader=yaml.UnsafeLoader)
+      - pattern: yaml.load_all($DATA, Loader=yaml.CLoader)
+      - pattern: yaml.unsafe_load_all($DATA)
+      - pattern: yaml.full_load_all($DATA)
 
   - id: os-system-call
     languages: [python]
