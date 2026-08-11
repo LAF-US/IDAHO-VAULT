@@ -73,9 +73,19 @@ rules:
     # CVE-2020-1747, CVE-2020-14343 — but not in the pinned range.) Reviewers on
     # this PR flagged it repeatedly and were right.
     #
-    # CLoader is kept on faith, not on evidence: it is the libyaml build of the
-    # unsafe Loader, but libyaml is absent here so `yaml.CLoader` does not exist
-    # in this interpreter and could not be exercised. Unverified, retained.
+    # The C loaders are kept on source-reading, not on execution: libyaml is
+    # absent in this interpreter, so none of the `yaml.C*` names exist here and
+    # none could be exercised. Read out of PyYAML's own cyaml.py instead —
+    #
+    #   class CUnsafeLoader(CParser, UnsafeConstructor, Resolver)   UNSAFE
+    #   class CLoader(CParser, Constructor, Resolver)               UNSAFE
+    #   class CFullLoader(CParser, FullConstructor, Resolver)       safe
+    #   class CSafeLoader(CParser, SafeConstructor, Resolver)       safe
+    #
+    # — which is why CUnsafeLoader and CLoader are listed and CFullLoader and
+    # CSafeLoader are not. CUnsafeLoader was missing until a reviewer caught it:
+    # it is a distinct class, not an alias of CLoader, so it slipped both the
+    # keyword and positional patterns. Constructor-class evidence, not a run.
     #
     # Both call forms are listed. `Loader` is the second POSITIONAL parameter of
     # yaml.load, not keyword-only, so `yaml.load(data, yaml.Loader)` is legal and
@@ -87,16 +97,20 @@ rules:
       - pattern: yaml.load($DATA, Loader=yaml.Loader)
       - pattern: yaml.load($DATA, Loader=yaml.UnsafeLoader)
       - pattern: yaml.load($DATA, Loader=yaml.CLoader)
+      - pattern: yaml.load($DATA, Loader=yaml.CUnsafeLoader)
       - pattern: yaml.load($DATA, yaml.Loader)
       - pattern: yaml.load($DATA, yaml.UnsafeLoader)
       - pattern: yaml.load($DATA, yaml.CLoader)
+      - pattern: yaml.load($DATA, yaml.CUnsafeLoader)
       - pattern: yaml.unsafe_load($DATA)
       - pattern: yaml.load_all($DATA, Loader=yaml.Loader)
       - pattern: yaml.load_all($DATA, Loader=yaml.UnsafeLoader)
       - pattern: yaml.load_all($DATA, Loader=yaml.CLoader)
+      - pattern: yaml.load_all($DATA, Loader=yaml.CUnsafeLoader)
       - pattern: yaml.load_all($DATA, yaml.Loader)
       - pattern: yaml.load_all($DATA, yaml.UnsafeLoader)
       - pattern: yaml.load_all($DATA, yaml.CLoader)
+      - pattern: yaml.load_all($DATA, yaml.CUnsafeLoader)
       - pattern: yaml.unsafe_load_all($DATA)
 
   - id: yaml-load-missing-loader
