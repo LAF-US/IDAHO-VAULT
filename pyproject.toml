@@ -25,6 +25,7 @@ dependencies = [
     "pyyaml>=6.0,<7",
     # tests/test_sync_obsidian_plugin_registry.py:17
     "pygit2>=1.18.2,<2",
+    "posthog>=7.38.4",
 ]
 # Just like a .gitignore file, don't fiddle with this willy-nilly.
 

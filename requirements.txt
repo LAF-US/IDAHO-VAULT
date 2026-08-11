@@ -17,6 +17,8 @@ packaging==26.3
     #   pytest
 pluggy==1.6.0
     # via pytest
+posthog==7.38.4
+    # via idaho-vault
 pycparser==3.0 ; implementation_name != 'PyPy'
     # via cffi
 pydantic==2.11.10
