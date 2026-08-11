@@ -3,8 +3,8 @@
 #   SECRETS — credential material. NON-.md ONLY: Markdown is force-tracked at
 #             the bottom, so a secret pasted into prose is the scanner's job.
 #
-#   EXHAUST — machine-generated files that never held human authorship AND
-#             regenerate automatically: OS, build, runtime state, et cetera.
+#   CHURNS — machine-generated material. Never holds human authorship AND
+#             regenerates automatically: OS, build, runtime state, et cetera.
 #
 
 # ---------------------------------------------------------------
@@ -61,6 +61,7 @@ Temporary Items
 .obsidian/plugins/obsidian-local-rest-api/data.json
 .obsidian/plugins/phone-to-roam-to-obsidian/data.json
 .obsidian/plugins/todoist-context-bridge/data.json
+credstore*
 id_ed25519
 id_ed25519.pub
 obsidian-recovery-codes.txt

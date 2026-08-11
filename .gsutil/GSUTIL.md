@@ -1,11 +1,3 @@
 ---
-authority: LOGAN
-related:
-  - GSUTIL
-  - imported_software
-  - runtime
+title: GSUTIL
 ---
-
-**.gsutil** — Imported software runtime persona.
-
-gsutil runtime and configuration.

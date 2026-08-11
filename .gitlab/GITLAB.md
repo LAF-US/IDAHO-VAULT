@@ -1,11 +1,3 @@
 ---
-authority: LOGAN
-related:
-  - GITLAB
-  - imported_software
-  - runtime
+title: GITLAB
 ---
-
-**.gitlab** — Imported software runtime persona.
-
-gitlab runtime and configuration.
