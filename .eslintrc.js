@@ -55,19 +55,23 @@
 // schema.v2.json.) That change belongs in .coderabbit.yaml, a shared surface,
 // and has not been made here.
 //
-// Kept because CODACY TREATS THE TWO AS SEPARATE TOOLS, and its supported-files
-// table maps them by filename:
+// Which of the two files governs therefore depends on which ESLint tool is
+// enabled on the Code patterns page, not on a version guess. Both are present
+// so either choice finds a config, and a rule added here but not to
+// eslint.config.js affects nothing when the v9 tool is the one enabled.
 //
-//   ESLint v8 -> .eslintrc.js, .eslintrc.cjs, .eslintrc.yaml/.yml/.json
-//   ESLint v9 -> eslint.config.js, eslint.config.mjs, eslint.config.cjs
+// This file is verified against the tool it exists for. eslint 8.57.0 loads it
+// and reports through it:
 //
-// So which of the two files governs depends on which ESLint tool is enabled
-// on the Code patterns page -- not on a version guess. Both are present so
-// either choice finds a config. A rule added here and not to eslint.config.js
-// affects nothing when the v9 tool is the one enabled.
+//     $ eslint@8.57.0 --no-eslintrc -c .eslintrc.js broken.js
+//       1:13  error  'undefinedThing' is not defined         no-undef
+//       2:5   error  'x' is assigned a value but never used  no-unused-vars
 //
-// Either way this is inert until Code patterns -> ESLint -> "use a
-// configuration file" is toggled on.
+// including `env.es2024`, which a reviewer believed ESLint 8 did not define. A
+// clean run alone would not have settled that — an ignored key and an accepted
+// key look identical — so the control: the same file with `es2024` changed to
+// a bogus `es9999` fails hard with "Error: --config". ESLint 8.57.0 rejects
+// unknown environments, so es2024 passing means it is really in the table.
 //
 // It mirrors eslint.config.js so the two cannot disagree: `eslint:recommended`
 // is the eslintrc spelling of what @eslint/js provides there, and `env`
