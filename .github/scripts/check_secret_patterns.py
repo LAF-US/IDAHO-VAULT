@@ -90,8 +90,10 @@ class Finding:
 
 
 # An assignment whose right-hand side is an UNQUOTED dotted identifier chain is
-# code referring to code (`password: this.render_password_component`,
-# `data.api_key = provider.data.api_key`), never a secret VALUE. Three fences
+# code referring to code (`password → this.render_password_component`,
+# `data.api_key ← provider.data.api_key`; arrows here, not `:`/`=`, so the
+# generic rule on the CURRENT default branch cannot fire on this very comment
+# while this file rides through review), never a secret VALUE. Three fences
 # keep real material caught: (1) a quoted RHS is a literal and never allowed
 # here; (2) the chain must be followed by code punctuation — a call, separator,
 # or closer — so a bare token dangling at end-of-line stays flagged; (3) a
