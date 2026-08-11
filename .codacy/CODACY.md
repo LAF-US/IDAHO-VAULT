@@ -1,5 +1,7 @@
 ---
 title: CODACY
+updated: 2026-08-11
+status: active
 authority: LOGAN
 related:
   - .github/workflows/codacy.yml
