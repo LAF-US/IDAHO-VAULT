@@ -6,8 +6,19 @@
 // ESLINT_USE_FLAT_CONFIG=false escape hatch is gone, and `eslint --help` lists
 // no eslintrc options.
 //
-// Kept only for a Codacy image shipping ESLint 8 or older. A rule added here
-// and not to eslint.config.js affects nothing in this repo.
+// Kept because CODACY TREATS THE TWO AS SEPARATE TOOLS, and its supported-files
+// table maps them by filename:
+//
+//   ESLint v8 -> .eslintrc.js, .eslintrc.cjs, .eslintrc.yaml/.yml/.json
+//   ESLint v9 -> eslint.config.js, eslint.config.mjs, eslint.config.cjs
+//
+// So which of the two files governs depends on which ESLint tool is enabled
+// on the Code patterns page -- not on a version guess. Both are present so
+// either choice finds a config. A rule added here and not to eslint.config.js
+// affects nothing when the v9 tool is the one enabled.
+//
+// Either way this is inert until Code patterns -> ESLint -> "use a
+// configuration file" is toggled on.
 //
 // It mirrors eslint.config.js so the two cannot disagree: `eslint:recommended`
 // is the eslintrc spelling of what @eslint/js provides there, and `env`

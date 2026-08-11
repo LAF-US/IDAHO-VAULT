@@ -1,9 +1,14 @@
 # Semgrep — Codacy toggle.
 #
-# The `semgrep-cloud-platform/scan` check runs on every PR and does NOT read
-# this file; it pulls its ruleset from the Semgrep platform. Codacy's semgrep
-# and a bare `semgrep scan` do read it. Rules added here therefore do not
-# tighten the PR gate.
+# THIS FILE IS INERT UNTIL SOMEONE FLIPS A SWITCH IN CODACY'S UI. Codacy
+# detects `.semgrep.yaml` -- under the tool name **Opengrep**, its fork of
+# Semgrep -- but only uses it after Code patterns -> Opengrep -> "use a
+# configuration file" is turned on. Until then Codacy applies its own default
+# pattern subset and never reads a line of this.
+#
+# The `semgrep-cloud-platform/scan` PR check is a separate thing again: it
+# pulls from the Semgrep platform and does not read this file at all. A bare
+# `semgrep scan` does.
 #
 # Semgrep has no `extends` — a rules file holds literal rules, so there is no
 # baseline to reference. These three target what this repo actually does.
