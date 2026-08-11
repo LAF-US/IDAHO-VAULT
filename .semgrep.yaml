@@ -73,19 +73,23 @@ rules:
     # CVE-2020-1747, CVE-2020-14343 — but not in the pinned range.) Reviewers on
     # this PR flagged it repeatedly and were right.
     #
-    # The C loaders are kept on source-reading, not on execution: libyaml is
-    # absent in this interpreter, so none of the `yaml.C*` names exist here and
-    # none could be exercised. Read out of PyYAML's own cyaml.py instead —
+    # The C loaders are EXECUTED too, not classified from their class bases.
+    # An earlier version of this note said libyaml was "absent here" and read
+    # cyaml.py instead. That was the gap being excused rather than closed —
+    # libyaml-dev was already installed on the machine, and PyPI's manylinux
+    # wheel ships the compiled `_yaml` extension, so the C loaders were always
+    # one `pip install` away. Same payload, libyaml-backed PyYAML 6.0.1:
     #
-    #   class CUnsafeLoader(CParser, UnsafeConstructor, Resolver)   UNSAFE
-    #   class CLoader(CParser, Constructor, Resolver)               UNSAFE
-    #   class CFullLoader(CParser, FullConstructor, Resolver)       safe
-    #   class CSafeLoader(CParser, SafeConstructor, Resolver)       safe
+    #   CLoader        -> constructed; the command ran     UNSAFE
+    #   CUnsafeLoader  -> constructed; the command ran     UNSAFE
+    #   CFullLoader    -> ConstructorError                 safe
+    #   CSafeLoader    -> ConstructorError                 safe
     #
-    # — which is why CUnsafeLoader and CLoader are listed and CFullLoader and
-    # CSafeLoader are not. CUnsafeLoader was missing until a reviewer caught it:
-    # it is a distinct class, not an alias of CLoader, so it slipped both the
-    # keyword and positional patterns. Constructor-class evidence, not a run.
+    # and `yaml.load(d, yaml.CLoader)` / `yaml.load(d, yaml.CUnsafeLoader)` —
+    # the positional forms — executed as well. So CUnsafeLoader and CLoader are
+    # listed; CFullLoader and CSafeLoader are deliberately not. CUnsafeLoader
+    # was missing until a reviewer caught it: a distinct class, not an alias of
+    # CLoader, so it slipped both the keyword and positional patterns.
     #
     # Both call forms are listed. `Loader` is the second POSITIONAL parameter of
     # yaml.load, not keyword-only, so `yaml.load(data, yaml.Loader)` is legal and

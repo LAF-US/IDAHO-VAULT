@@ -9,10 +9,24 @@
 # builds it (`docker build`, with `Dockerfile` in the workflow's path filter).
 # So this toggle applies to a live deployment artifact, not a hypothetical one.
 #
-# UNMEASURED. hadolint is a native binary and could not be obtained in the
-# environment this was written in, so the finding count against that Dockerfile
-# is unknown. That is a gap, not a zero — whoever runs it first should record
-# the number here.
+# MEASURED — hadolint 2.15.1, against that Dockerfile, with this config:
+#
+#   Dockerfile:24  DL3066  info: Non-numeric user-id may not be resolvable by
+#                                host system
+#
+# One finding, informational. Nothing at warning or error level.
+#
+# An earlier version of this note said hadolint "could not be obtained in the
+# environment this was written in." It could: it is a single static binary
+# published on its own releases page, and fetching it took one curl. Declaring
+# a tool unobtainable without trying is how a gap gets recorded as if it were
+# a result — the same move as silencing a check rather than fixing what it is
+# pointing at (AGENTS.md, "Fix Errors - Do NOT Disable").
+#
+# The count is trustworthy only because the binary was proven to analyse first:
+# run against a deliberately bad Dockerfile (untagged FROM, unpinned apt-get,
+# ADD of a tarball) it returned DL3006, DL3008 and DL3015. A tool that silently
+# does nothing also reports one finding on a file it never read.
 #
 # `trustedRegistries` is the one worth adding next, and it is an allowlist:
 # setting it rejects every registry not listed.

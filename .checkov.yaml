@@ -14,8 +14,31 @@
 # that gates merges. The Dockerfile surface is guarded by nothing else, which
 # makes it the part of this toggle that actually earns its keep.
 #
-# UNMEASURED. Checkov could not be obtained in the environment this was written
-# in, so the baseline over either surface is unknown. A gap, not a zero.
+# MEASURED — checkov 3.3.10, both surfaces, with this config:
+#
+#   .github/workflows/    1039 passed, 25 failed
+#                           16  CKV2_GHA_1  top-level permissions set to
+#                                           write-all
+#                            9  CKV_GHA_7   build output can be affected by
+#                                           user parameters
+#   Dockerfile              51 passed,  1 failed
+#                            1  CKV_DOCKER_2  no HEALTHCHECK instruction
+#
+# The 16 write-all findings are the ones to look at first, and they are the
+# kind the two existing workflow guards do not catch: action-pin-policy.yml
+# checks SHA pinning, not permission scope.
+#
+# NOTE ON INVOCATION: `-d .github/workflows -f Dockerfile` in one run silently
+# reports only the github_actions framework — the Dockerfile is dropped without
+# a word. The two numbers above come from two separate runs. A single combined
+# run would have looked complete and quietly omitted half the surface.
+#
+# An earlier version of this note said checkov "could not be obtained in the
+# environment this was written in." It could: the pip install fails only
+# because it cannot uninstall a system PyJWT, and a venv sidesteps that
+# entirely. The obstacle was real and thirty seconds deep; recording it as an
+# unknown baseline made a gap look like a finding (AGENTS.md, "Fix Errors - Do
+# NOT Disable").
 #
 # `check:` is exclusive, not additive: setting one id disables every other
 # check while reading like you enabled something. `skip-check:` is the additive
