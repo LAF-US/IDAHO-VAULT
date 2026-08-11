@@ -1,34 +1,40 @@
-// ESLint legacy (eslintrc) config — Codacy toggle, ON.
+// ESLint legacy (eslintrc) config — INERT against the ESLint this repo installs.
 //
-// ONLY ONE OF THESE TWO FILES IS EVER READ:
+// MEASURED, not assumed. package.json pins eslint ^10.8.1. On 10.8.1:
 //
-//   eslint.config.js   -- flat config, used by ESLint >= 9
-//   .eslintrc.js       (this file) -- legacy config, used by ESLint <= 8
+//   - eslint.config.js is the only config format read.
+//   - Moving eslint.config.js aside does NOT make ESLint fall back to this
+//     file. It refuses to run: "ESLint couldn't find an
+//     eslint.config.(js|mjs|cjs) file", plus a pointer to the migration guide.
+//   - The ESLINT_USE_FLAT_CONFIG=false escape hatch from the v9 era is gone.
+//   - `eslint --help` lists no eslintrc options at all.
 //
-// They are not layered and they do not merge. ESLint 9 reads eslint.config.js
-// and ignores this file entirely; ESLint 8 does the reverse. Which one governs
-// depends on whichever ESLint runs — Codacy's, a global CLI, or an editor
-// extension shipping its own copy. Both files exist here because both were
-// asked for, and both are set to the SAME baseline so that whichever wins, the
-// answer is the same. If you change a rule, change it in both or the two
-// halves drift apart silently.
+// So this is not "the other half of a coin flip" — against the installed
+// toolchain it is dead weight. It governs only if something runs ESLint 8 or
+// older, which nothing here does. Codacy is the one plausible caller, if its
+// image ships an older ESLint.
 //
-// `eslint:recommended` is built into ESLint itself — no plugin package, no
-// npm install, nothing to resolve. That is why it is the baseline here rather
-// than a shareable config like `airbnb` or `standard`: those are packages, and
-// a config naming a package that the runner does not have does not fall back
-// to defaults, it errors.
+// It is kept, rather than deleted, because it costs nothing and covers that
+// one case. But do not treat it as a live rule surface: a rule added here and
+// not to eslint.config.js will have no effect on anything in this repo.
 //
-// `root: true` stops ESLint searching upward for parent .eslintrc files, so a
-// run inside the vault cannot inherit config from someone's home directory.
+// It mirrors eslint.config.js's baseline so the two cannot disagree:
+// `eslint:recommended` is the eslintrc spelling of the same rule set that
+// eslint.config.js gets from @eslint/js. `env` supplies the globals that flat
+// config supplies through the `globals` package — the two files reach the same
+// place by different routes, which is the single clearest reason they cannot
+// be copy-pasted between each other.
 //
-// `ignorePatterns` is load-bearing, not tidiness: node_modules is COMMITTED
-// under THE-GEMSTONE. Without these lines ESLint lints thousands of vendored
-// files and the real findings are unreachable.
+// `root: true` stops the upward search for parent .eslintrc files, so a run
+// inside the vault cannot inherit config from someone's home directory.
+//
+// `ignorePatterns` is load-bearing: node_modules is COMMITTED under
+// THE-GEMSTONE, and installing the devDependencies creates a second one at the
+// repo root.
 
 module.exports = {
   root: true,
-  env: { node: true, es2024: true },
+  env: { node: true, browser: true, es2024: true },
   parserOptions: { ecmaVersion: 2024, sourceType: "script" },
   extends: ["eslint:recommended"],
   ignorePatterns: [

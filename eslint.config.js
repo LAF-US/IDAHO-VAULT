@@ -1,45 +1,73 @@
-// ESLint flat config — Codacy toggle, ON.
+// ESLint flat config — Codacy toggle, ON. This is the file ESLint actually reads.
 //
-// ONLY ONE OF THESE TWO FILES IS EVER READ:
+// .eslintrc.js SITS BESIDE THIS ONE AND IS DEAD AGAINST THE INSTALLED ESLINT.
+// Measured on eslint 10.8.1 (the version in package.json): moving this file
+// aside does not make ESLint fall back to .eslintrc.js — it refuses to run at
+// all ("ESLint couldn't find an eslint.config.(js|mjs|cjs) file"). The
+// ESLINT_USE_FLAT_CONFIG=false escape hatch is gone too. eslintrc only governs
+// if something runs ESLint 8 or older, which nothing in this repo does.
 //
-//   eslint.config.js   (this file)  -- flat config, used by ESLint >= 9
-//   .eslintrc.js                    -- legacy config, used by ESLint <= 8
+// `require` rather than `import` because the root package.json declares no
+// `"type": "module"`, so a bare .js file here is CommonJS.
 //
-// They are not layered and they do not merge. ESLint 9 finds this file and
-// ignores .eslintrc.js entirely; ESLint 8 does the reverse. Which one governs
-// depends on whichever ESLint runs — Codacy's, a global CLI, or an editor
-// extension shipping its own copy. Both files exist here because both were
-// asked for, and both are set to the SAME baseline so that whichever wins, the
-// answer is the same. If you change a rule, change it in both or the two
-// halves drift apart silently.
+// The four blocks below, in order, and why each is separate:
 //
-// `@eslint/js` is not a third-party plugin — it is ESLint's own package, a
-// direct dependency of `eslint`. Wherever ESLint 9 is installed, this require
-// resolves. It is how flat config reaches the same rule set that eslintrc
-// spells `extends: ["eslint:recommended"]`; flat config has no string
-// `extends`, which is the single biggest reason the two files cannot be
-// copy-pasted between each other.
+//   1. ignores, ALONE in its object. In flat config an `ignores` key with no
+//      sibling keys is a global ignore; bundled into a config object it would
+//      only apply to that object. node_modules is COMMITTED under
+//      THE-GEMSTONE, so without this ESLint lints thousands of vendored files.
+//   2. js.configs.recommended — ESLint's own baseline, from @eslint/js, which
+//      is eslint's own dependency rather than a third-party plugin.
+//   3. Node globals for everything. Flat config has NO `env` key, so globals
+//      must be supplied explicitly; without them `no-undef` fires on `console`
+//      and `process` in every script. Measured: 28 of 31 findings before this
+//      block existed were exactly that, and they were the config's fault, not
+//      the code's.
+//   4. Browser globals for Obsidian plugins. They run in Electron's renderer,
+//      so they legitimately reach both `window`/`document` AND `require`.
+//      languageOptions merge rather than replace, so these files get node
+//      globals from block 3 plus browser globals here — which is accurate.
 //
-// CommonJS (`module.exports`) rather than ESM (`export default`) because the
-// root package.json declares no `"type": "module"`, so a bare .js file here is
-// CommonJS. `export default` would throw at load time.
-//
-// The `ignores` block comes FIRST and is alone in its object on purpose: in
-// flat config, an `ignores` key with no other key in the same object is a
-// global ignore. Bundled into the object below it would only apply to that
-// one config entry. This matters more here than in most repos — node_modules
-// is COMMITTED under THE-GEMSTONE, so without a global ignore ESLint lints
-// thousands of vendored files and the real findings are unreachable.
+// NOT CONFIGURED AWAY: two files under .codex/skills/.../slides/ fail to
+// parse, and both are real defects rather than config gaps.
+//   - pro_deck_quality_check.js:112 contains `cha***REMOVED***count` where its
+//     sibling keys are slide_count / media_count / embedded_workbook_count. A
+//     redaction pass rewrote an identifier and broke the file. The repo's
+//     check-redaction-damage guard is diff-based, so it never saw this.
+//   - build_pro_deck_template.js uses ESM `import`. Its own header says the
+//     init script writes a sibling package.json with type=module, so it is ESM
+//     by design and simply is not loadable from this repo root.
+// Both are left visible. Silencing them here would hide the first one, which
+// is damage.
 
 const js = require("@eslint/js");
+const globals = require("globals");
 
 module.exports = [
-  { ignores: ["THE-GEMSTONE/**", "**/node_modules/**", ".venv/**", ".uv-cache/**"] },
-  js.configs.recommended,
   {
+    ignores: [
+      "THE-GEMSTONE/**",
+      "**/node_modules/**",
+      ".venv/**",
+      ".uv-cache/**",
+    ],
+  },
+
+  js.configs.recommended,
+
+  {
+    files: ["**/*.js"],
     languageOptions: {
       ecmaVersion: 2024,
       sourceType: "commonjs",
+      globals: { ...globals.node },
+    },
+  },
+
+  {
+    files: [".obsidian/plugins/**/*.js"],
+    languageOptions: {
+      globals: { ...globals.browser },
     },
   },
 ];

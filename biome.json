@@ -7,5 +7,17 @@
   },
   "formatter": {
     "enabled": false
+  },
+  "files": {
+    "includes": [
+      "**",
+      "!**/node_modules",
+      "!THE-GEMSTONE",
+      "!.venv",
+      "!.uv-cache",
+      "!.obsidian/plugins",
+      "!.codex/skills",
+      "!.openclaw/extensions"
+    ]
   }
 }
