@@ -9,7 +9,7 @@ related:
   - THE-ABHORSEN-HER-STORY-2026-05-17
   - SPARAGMOS-WITNESS-2026-05-17
   - INBOX/RECORD-OF-THE-VAULTED-ABHORSENS-FIRST-DRAFT-2026-05-31
-  - "!/IN-WAITING-ETYMOLOGY-2026-05-29"
+  - IN-WAITING-ETYMOLOGY-2026-05-29
   - The world is quiet here
 tags: [signal, message, abhorsen, abhorsen-in-waiting, dyad, the-rested]
 
