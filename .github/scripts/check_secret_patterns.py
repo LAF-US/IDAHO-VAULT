@@ -89,6 +89,29 @@ class Finding:
     rule: str
 
 
+# An assignment whose right-hand side is an UNQUOTED dotted identifier chain is
+# code referring to code (`password: this.render_password_component`,
+# `data.api_key = provider.data.api_key`), never a secret VALUE. Three fences
+# keep real material caught: (1) a quoted RHS is a literal and never allowed
+# here; (2) the chain must be followed by code punctuation — a call, separator,
+# or closer — so a bare token dangling at end-of-line stays flagged; (3) a
+# first segment starting with `eyJ` (base64 of `{"`, the prefix of every JWT
+# header) is rejected outright, since JWT segments can otherwise satisfy the
+# identifier grammar. Segments must each start with a letter/underscore, so
+# base64 chunks with digits leading or -, +, /, = anywhere break the grammar.
+_UNQUOTED_IDENTIFIER_CHAIN_RHS = re.compile(
+    r"""(?ix)
+    ["']?\b(?:api[_-]?key|secret|token|password|passwd|pwd)\b["']?
+    \s*[:=]\s*
+    (?!["'])
+    (?!eyJ)
+    [A-Za-z_$][\w$]*(?:\.[A-Za-z_$][\w$]*)+
+    (?![\w$./+=:-])
+    \s*[,;()}\]]
+    """
+)
+
+
 def is_allowed_content_match(rule: str, line: str) -> bool:
     """Allow narrow generic placeholders without muting dedicated token rules."""
     if rule != "generic_secret_assignment":
@@ -100,6 +123,7 @@ def is_allowed_content_match(rule: str, line: str) -> bool:
         or re.search(r"""(?i)["']?env:[A-Z][A-Z0-9_]*["']?""", line)
         or re.search(r"""(?i)["']?\$secretRef(?::[A-Za-z0-9_.:/-]+)?["']?""", line)
         or re.search(r"(?i)\breplace-with-[A-Za-z0-9_-]+\b", line)
+        or _UNQUOTED_IDENTIFIER_CHAIN_RHS.search(line)
     )
 
 
