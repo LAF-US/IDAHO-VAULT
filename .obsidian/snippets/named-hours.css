@@ -43,31 +43,42 @@
 
 /* ---------------------------------------------------------------- bands -- */
 
-/* The lane is the band: it carries the fill and anchors the ::after label.
+/* Anchor only. Every lane gets position: relative so a band's ::after label
+ * has something to sit in; nothing is painted here.
  *
- * Two background-color declarations, deliberately. The flat one lands first
- * for engines without color-mix() (older Obsidian mobile WebViews), where the
- * band reads at full saturation; color-mix() then takes over where it is
- * supported and makes --nh-band-strength live. */
+ * The fill lives in the band rules below, NOT in this catch-all, and that is
+ * load-bearing. A `background-color: var(--nh-band)` here would match slots
+ * that have no band, where the var() is invalid-at-computed-value-time. IACVT
+ * does not fall through to the theme's declaration — this rule still wins the
+ * cascade and then computes to the initial value, transparent. That would
+ * erase whatever the theme paints on out-of-range lanes. Painting only where
+ * a band exists makes "has a band" and "gets painted" the same condition. */
 .workspace-leaf-content[data-type^="full-calendar"]
   .fc-timegrid-slot-lane[data-time] {
   position: relative;
-  background-color: var(--nh-band);
-  background-color: color-mix(
-    in srgb,
-    var(--nh-band) var(--nh-band-strength),
-    transparent
-  );
 }
 
-/* Each band is declared once as a custom property on its slots, so the fill
- * above and the label below both read from a single source. */
+/* Each band names itself once and paints itself in the same rule, so a slot
+ * cannot have a colour without getting it, or get one it was never given. The
+ * label below reads the same --nh-band.
+ *
+ * Two background-color declarations, deliberately: the flat one lands first
+ * for engines without color-mix() (older Obsidian mobile WebViews), where the
+ * band reads at full saturation; color-mix() takes over where supported and
+ * makes --nh-band-strength live. */
 
 .workspace-leaf-content[data-type^="full-calendar"]
   .fc-timegrid-slot-lane[data-time="06:00:00"],
 .workspace-leaf-content[data-type^="full-calendar"]
   .fc-timegrid-slot-lane[data-time="06:30:00"] {
   --nh-band: var(--nh-dawn);
+
+  background-color: var(--nh-band);
+  background-color: color-mix(
+    in srgb,
+    var(--nh-band) var(--nh-band-strength),
+    transparent
+  );
 }
 
 .workspace-leaf-content[data-type^="full-calendar"]
@@ -77,6 +88,13 @@
 .workspace-leaf-content[data-type^="full-calendar"]
   .fc-timegrid-slot-lane[data-time="08:00:00"] {
   --nh-band: var(--nh-yan);
+
+  background-color: var(--nh-band);
+  background-color: color-mix(
+    in srgb,
+    var(--nh-band) var(--nh-band-strength),
+    transparent
+  );
 }
 
 .workspace-leaf-content[data-type^="full-calendar"]
@@ -86,6 +104,13 @@
 .workspace-leaf-content[data-type^="full-calendar"]
   .fc-timegrid-slot-lane[data-time="09:30:00"] {
   --nh-band: var(--nh-tan);
+
+  background-color: var(--nh-band);
+  background-color: color-mix(
+    in srgb,
+    var(--nh-band) var(--nh-band-strength),
+    transparent
+  );
 }
 
 .workspace-leaf-content[data-type^="full-calendar"]
@@ -95,6 +120,13 @@
 .workspace-leaf-content[data-type^="full-calendar"]
   .fc-timegrid-slot-lane[data-time="11:00:00"] {
   --nh-band: var(--nh-tethera);
+
+  background-color: var(--nh-band);
+  background-color: color-mix(
+    in srgb,
+    var(--nh-band) var(--nh-band-strength),
+    transparent
+  );
 }
 
 .workspace-leaf-content[data-type^="full-calendar"]
@@ -102,6 +134,13 @@
 .workspace-leaf-content[data-type^="full-calendar"]
   .fc-timegrid-slot-lane[data-time="12:00:00"] {
   --nh-band: var(--nh-noon);
+
+  background-color: var(--nh-band);
+  background-color: color-mix(
+    in srgb,
+    var(--nh-band) var(--nh-band-strength),
+    transparent
+  );
 }
 
 .workspace-leaf-content[data-type^="full-calendar"]
@@ -111,6 +150,13 @@
 .workspace-leaf-content[data-type^="full-calendar"]
   .fc-timegrid-slot-lane[data-time="13:30:00"] {
   --nh-band: var(--nh-methera);
+
+  background-color: var(--nh-band);
+  background-color: color-mix(
+    in srgb,
+    var(--nh-band) var(--nh-band-strength),
+    transparent
+  );
 }
 
 .workspace-leaf-content[data-type^="full-calendar"]
@@ -120,6 +166,13 @@
 .workspace-leaf-content[data-type^="full-calendar"]
   .fc-timegrid-slot-lane[data-time="15:00:00"] {
   --nh-band: var(--nh-pits);
+
+  background-color: var(--nh-band);
+  background-color: color-mix(
+    in srgb,
+    var(--nh-band) var(--nh-band-strength),
+    transparent
+  );
 }
 
 .workspace-leaf-content[data-type^="full-calendar"]
@@ -129,6 +182,13 @@
 .workspace-leaf-content[data-type^="full-calendar"]
   .fc-timegrid-slot-lane[data-time="16:30:00"] {
   --nh-band: var(--nh-sethera);
+
+  background-color: var(--nh-band);
+  background-color: color-mix(
+    in srgb,
+    var(--nh-band) var(--nh-band-strength),
+    transparent
+  );
 }
 
 .workspace-leaf-content[data-type^="full-calendar"]
@@ -138,6 +198,13 @@
 .workspace-leaf-content[data-type^="full-calendar"]
   .fc-timegrid-slot-lane[data-time="18:00:00"] {
   --nh-band: var(--nh-azer);
+
+  background-color: var(--nh-band);
+  background-color: color-mix(
+    in srgb,
+    var(--nh-band) var(--nh-band-strength),
+    transparent
+  );
 }
 
 .workspace-leaf-content[data-type^="full-calendar"]
@@ -145,12 +212,21 @@
 .workspace-leaf-content[data-type^="full-calendar"]
   .fc-timegrid-slot-lane[data-time="19:00:00"] {
   --nh-band: var(--nh-dusk);
+
+  background-color: var(--nh-band);
+  background-color: color-mix(
+    in srgb,
+    var(--nh-band) var(--nh-band-strength),
+    transparent
+  );
 }
 
-/* Slots outside 06:00–19:30 have no --nh-band, so var() resolves to nothing
- * and the declaration is invalid-at-computed-value-time — the lane falls back
- * to the theme's own background. Stated here because it looks like an
- * omission and is not one. */
+/* Slots outside 06:00–19:30 are named by no rule above, so this snippet sets
+ * no background-color on them at all and the theme's own lane background is
+ * left untouched. Stated here because it looks like an omission and is not
+ * one. Note the span 06:00–19:30 is realised as slots 06:00 through 19:00: a
+ * slot is labelled by its START, so data-time="19:00:00" IS 19:00–19:30. A
+ * 19:30 slot would be 19:30–20:00, past Dusk, and is correctly unstyled. */
 
 /* --------------------------------------------------------------- labels -- */
 
@@ -168,7 +244,8 @@
   font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--nh-band, var(--text-muted));
+  color: var(--text-muted);
+  color: color-mix(in srgb, var(--text-muted) 65%, var(--nh-band, transparent));
   opacity: 0.9;
   pointer-events: none;
 }

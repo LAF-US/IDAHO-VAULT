@@ -21,7 +21,7 @@ related:
 
 # NAMED HOURS — The Day Shape in Full Calendar
 
-The working day is cut into ten named blocks. Eight of them carry a
+The working day is cut into ten named blocks. Seven of them carry a
 shepherd's-count name — **Yan, Tan, Tethera, Methera, Pits, Sethera, Azer** —
 and the three hinges are plain: **Dawn**, **Noon**, **Dusk**. The count is the
 point: a block is named by its position in the day, not by what happens to be
@@ -79,8 +79,9 @@ FullCalendar v5, whose time grid emits a `data-time` attribute on every slot
 (`<td class="fc-timegrid-slot-lane" data-time="07:00:00">`). A stylesheet can
 therefore paint 07:00–08:30 without any plugin knowing what "Yan" is. That is
 what `named-hours.css` does: the day-shape is a background frame, drawn by the
-theme layer, present in every view, and unaffected if the plugin's own data
-is lost.
+theme layer, present in every **time-grid** view — day and week — and
+unaffected if the plugin's own data is lost. Month and list views have no slot
+lanes, so they carry no frame.
 
 The alternative — writing the ten blocks into each daily note as events — was
 rejected. Full Calendar assigns color **per calendar**, not per event, so ten
