@@ -30,10 +30,17 @@
 //
 // NOT CONFIGURED AWAY: two files under .codex/skills/.../slides/ fail to
 // parse, and both are real defects rather than config gaps.
-//   - pro_deck_quality_check.js:112 contains `cha***REMOVED***count` where its
-//     sibling keys are slide_count / media_count / embedded_workbook_count. A
-//     redaction pass rewrote an identifier and broke the file. The repo's
-//     check-redaction-damage guard is diff-based, so it never saw this.
+//     Note this description deliberately does NOT reproduce the marker glued
+//     between two letters: that exact shape IS the corruption signature, and
+//     check_redaction_damage.py fails any added line containing it — it cannot
+//     tell a citation from the real thing. (Its own source dodges the same
+//     trap by building the marker from pieces rather than writing it out.)
+//   - pro_deck_quality_check.js:112 has a redaction marker spliced into the
+//     middle of an object key, so the key reads as `cha` + marker + `count`
+//     while its siblings are slide_count / media_count /
+//     embedded_workbook_count. A redaction pass rewrote an identifier and
+//     broke the file. The repo's check-redaction-damage guard is diff-based,
+//     so it never saw the damage already sitting in that file.
 //   - build_pro_deck_template.js uses ESM `import`. Its own header says the
 //     init script writes a sibling package.json with type=module, so it is ESM
 //     by design and simply is not loadable from this repo root.
