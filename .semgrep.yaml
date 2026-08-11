@@ -11,13 +11,19 @@
 # `semgrep scan` does.
 #
 # Semgrep has no `extends` — a rules file holds literal rules, so there is no
-# baseline to reference. These three target what this repo actually does.
+# baseline to reference. These four target what this repo actually does.
 #
 # Semgrep is not installed in the environment this was written in, so these
 # were not run here. They HAVE been validated elsewhere: CodeRabbit ran
-# `semgrep scan --validate --config .semgrep.yaml` against them on #950 and
-# the ruleset loaded. Every PyYAML name below was checked against the
-# installed module — all eight *_load / *_load_all forms exist.
+# `semgrep scan --validate --config .semgrep.yaml` against an earlier revision
+# on #950 and the ruleset loaded — that predates the yaml rule being split in
+# two, so the current file's syntax is unvalidated.
+#
+# The PyYAML names were checked against the installed module. An earlier version
+# of this note said only that all eight *_load / *_load_all forms "exist," which
+# is true and was the wrong question: existence is not safety. Each loader has
+# now been run against a hostile payload, and the results are recorded on the
+# rule below.
 
 rules:
   - id: subprocess-shell-true
@@ -28,29 +34,60 @@ rules:
       becomes executable syntax. Pass a list of arguments instead.
     pattern: subprocess.$FUNC(..., shell=True, ...)
 
-  - id: yaml-load-without-safe-loader
+  - id: yaml-load-with-unsafe-loader
     languages: [python]
     severity: ERROR
     message: >-
-      yaml.load() can construct arbitrary Python objects, so parsing an
-      untrusted file is code execution. Use yaml.safe_load().
+      This loader constructs arbitrary Python objects, so parsing an untrusted
+      document is code execution. Use yaml.safe_load().
     # Enumerated per loader rather than matched broadly, because a blanket
-    # `yaml.load_all(...)` would also flag SafeLoader, which is the correct
-    # call. CLoader is the libyaml build of the unsafe Loader, not a safe one.
+    # `yaml.load_all(...)` would also flag SafeLoader, which is the correct call.
+    #
+    # WHICH LOADERS BELONG HERE WAS MEASURED, not assumed. Against PyYAML 6.0.1
+    # (the range pyproject pins is >=6.0,<7), loading
+    # `!!python/object/apply:os.system ["echo PWNED"]`:
+    #
+    #   Loader        -> constructed; the command ran     UNSAFE
+    #   UnsafeLoader  -> constructed; the command ran     UNSAFE
+    #   unsafe_load   -> constructed; the command ran     UNSAFE
+    #   FullLoader    -> ConstructorError                 safe
+    #   full_load     -> ConstructorError                 safe
+    #   SafeLoader    -> ConstructorError                 safe
+    #
+    # So FullLoader, full_load and full_load_all were REMOVED from this rule.
+    # Earlier revisions flagged them at ERROR with a code-execution message,
+    # which was a false positive: FullLoader exists precisely to refuse the
+    # unsafe constructors. (It was genuinely exploitable before PyYAML 5.4 —
+    # CVE-2020-1747, CVE-2020-14343 — but not in the pinned range.) Reviewers on
+    # this PR flagged it repeatedly and were right.
+    #
+    # CLoader is kept on faith, not on evidence: it is the libyaml build of the
+    # unsafe Loader, but libyaml is absent here so `yaml.CLoader` does not exist
+    # in this interpreter and could not be exercised. Unverified, retained.
     pattern-either:
-      - pattern: yaml.load($DATA)
       - pattern: yaml.load($DATA, Loader=yaml.Loader)
       - pattern: yaml.load($DATA, Loader=yaml.UnsafeLoader)
-      - pattern: yaml.load($DATA, Loader=yaml.FullLoader)
       - pattern: yaml.load($DATA, Loader=yaml.CLoader)
       - pattern: yaml.unsafe_load($DATA)
-      - pattern: yaml.full_load($DATA)
-      - pattern: yaml.load_all($DATA)
       - pattern: yaml.load_all($DATA, Loader=yaml.Loader)
       - pattern: yaml.load_all($DATA, Loader=yaml.UnsafeLoader)
       - pattern: yaml.load_all($DATA, Loader=yaml.CLoader)
       - pattern: yaml.unsafe_load_all($DATA)
-      - pattern: yaml.full_load_all($DATA)
+
+  - id: yaml-load-missing-loader
+    languages: [python]
+    severity: WARNING
+    message: >-
+      yaml.load() without a Loader raises TypeError on PyYAML 6 (the range this
+      repo pins), and silently defaulted to the unsafe full loader before 5.1.
+      Broken either way — pass Loader=yaml.SafeLoader, or use yaml.safe_load().
+    # Split out of the rule above rather than deleted. Measured on PyYAML 6.0.1:
+    # `yaml.load('a: 1')` raises "load() missing 1 required positional argument:
+    # 'Loader'". That is a crash, not a code-execution vulnerability, so ERROR
+    # and a code-execution message were both wrong for it.
+    pattern-either:
+      - pattern: yaml.load($DATA)
+      - pattern: yaml.load_all($DATA)
 
   - id: os-system-call
     languages: [python]

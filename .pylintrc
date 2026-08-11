@@ -13,6 +13,12 @@
 # Without this pylint targets whatever interpreter runs it (3.11 here), so
 # diagnostics move when the runner does. The project floor is 3.10.
 py-version=3.10
-# Regex against the full path, both separators, unanchored at the front so a
-# checkout at any absolute location still matches.
-ignore-paths=(^|.*/)THE-GEMSTONE/.*$,(^|.*/)\.venv/.*$,(^|.*/)\.uv-cache/.*$
+# Regex against the full path, unanchored at the front so a checkout at any
+# absolute location still matches.
+#
+# `[/\\]` and not `/`: the comment here used to claim "both separators" while
+# the pattern only ever contained a forward slash. On Windows pylint receives
+# native paths with backslashes, so THE-GEMSTONE, .venv and .uv-cache were
+# linted anyway — and this vault runs on Windows (VAULT-CONVENTIONS.md NETWEB).
+# The claim and the regex now agree.
+ignore-paths=(^|.*[/\\])THE-GEMSTONE[/\\].*$,(^|.*[/\\])\.venv[/\\].*$,(^|.*[/\\])\.uv-cache[/\\].*$
