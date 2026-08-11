@@ -1,4 +1,5 @@
 ---
+title: "RT @wintrow4idaho @GovernorLittle I have seen peaceful..."
 date: 2020-08-25
 time: 03:06:50
 tweet_id: "1298094456978038785"

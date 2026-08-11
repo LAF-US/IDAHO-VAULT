@@ -5,4 +5,4 @@ related:
 - RIGHT
 ---
 
-RIGHT QUESTIONS 
+RIGHT QUESTIONS

@@ -1,4 +1,5 @@
 ---
+title: "The Idaho Senate is adjourned sine die. #idleg #idpol"
 date: 2023-04-06
 time: 18:31:42
 tweet_id: "1644045230516371457"

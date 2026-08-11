@@ -1,4 +1,5 @@
 ---
+title: "RT @clarkcorbin Idaho senators are arriving to the House..."
 date: 2022-01-10
 time: 19:53:00
 tweet_id: "1480628765021532160"

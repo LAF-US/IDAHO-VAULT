@@ -1,3 +1,3 @@
 ---
 ---
-media with graphic depictions of sex 
+media with graphic depictions of sex

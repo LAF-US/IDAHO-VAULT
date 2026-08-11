@@ -1,4 +1,5 @@
 ---
+title: "RT @Raul_Labrador Attorney General Labrador\u2019s Statement on..."
 date: 2024-09-05
 time: 20:43:08
 tweet_id: "1831795223086915957"
@@ -15,9 +16,9 @@ related:
   - lfinneytweets
 ---
 
-RT @Raul_Labrador: Attorney General Labrador’s Statement on District Court Ruling on the Open Primaries Initiative https://t.co/P35AoYCniS
+RT @Raul_Labrador: Attorney General Labrador’s Statement on District Court Ruling on the Open Primaries Initiative <https://t.co/P35AoYCniS>
 
 ## Media
-- ![](https://pbs.twimg.com/media/GWvN2FaWcAAU4jW.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/GWvN2FaWcAAU4jW.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1831795223086915957)

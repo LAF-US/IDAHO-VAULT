@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports The Idaho Senate sent a bill to Gov. Brad..."
 date: 2023-03-20
 time: 20:16:43
 tweet_id: "1637911065198731264"

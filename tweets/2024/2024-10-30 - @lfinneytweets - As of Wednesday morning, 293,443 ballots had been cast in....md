@@ -1,4 +1,5 @@
 ---
+title: "As of Wednesday morning, 293,443 ballots had been cast in..."
 date: 2024-10-30
 time: 17:04:15
 tweet_id: "1851671471523004693"

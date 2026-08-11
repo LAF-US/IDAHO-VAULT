@@ -86,7 +86,7 @@ He touted the state’s AAA credit rating, which was recently upgraded.
 
 Little was re-elected in 2022 with 358,598 votes, receiving support from more than 60% of voters and winning in 43 out of 44 counties, the statement said.
 
-In its June 24 summer meeting in Challis, the state GOP Central Committee, led by Chairwoman Dorothy Moon, approved a vote of no confidence in Little and 14 Republican legislators for vetoing and failing to override the veto for H.B. 314. 
+In its June 24 summer meeting in Challis, the state GOP Central Committee, led by Chairwoman Dorothy Moon, approved a vote of no confidence in Little and 14 Republican legislators for vetoing and failing to override the veto for H.B. 314.
 
 H.B. 314 would have allowed individuals to file legal action against libraries for $2,500 for disseminating material deemed “harmful to minors.”
 

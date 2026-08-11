@@ -1,4 +1,5 @@
 ---
+title: "After signature teams dispersed, @SamSandmire talks..."
 date: 2021-08-28
 time: 17:26:20
 tweet_id: "1431669491138588674"
@@ -20,10 +21,10 @@ related:
   - idpol
 ---
 
-After signature teams dispersed, @SamSandmire talks strategy with another @reclaimID volunteer leader. #idpol https://t.co/ODEvFl5Sdx
+After signature teams dispersed, @SamSandmire talks strategy with another @reclaimID volunteer leader. #idpol <https://t.co/ODEvFl5Sdx>
 
 ## Media
-- ![](https://pbs.twimg.com/media/E95PAGZVQAI5w6T.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/E95PAGZVQAI5w6T.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

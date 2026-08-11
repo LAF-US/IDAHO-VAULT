@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPTV Watch the hourlong debate between Scott Bedke..."
 date: 2022-10-28
 time: 21:47:55
 tweet_id: "1586112553310048256"

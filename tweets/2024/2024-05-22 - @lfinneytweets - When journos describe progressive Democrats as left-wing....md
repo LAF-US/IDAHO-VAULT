@@ -1,4 +1,5 @@
 ---
+title: "When journos describe progressive Democrats as left-wing..."
 date: 2024-05-22
 time: 18:52:46
 tweet_id: "1793354330797662552"

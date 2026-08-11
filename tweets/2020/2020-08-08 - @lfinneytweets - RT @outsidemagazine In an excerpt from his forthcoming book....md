@@ -1,4 +1,5 @@
 ---
+title: "RT @outsidemagazine In an excerpt from his forthcoming book..."
 date: 2020-08-08
 time: 03:52:11
 tweet_id: "1291945275779473410"

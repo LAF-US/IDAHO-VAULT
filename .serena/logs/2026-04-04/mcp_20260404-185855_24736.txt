@@ -109,7 +109,7 @@ provide feedback as needed.
 
 
 You have hereby read the 'Serena Instructions Manual' and do not need to read it again.
-INFO  2026-04-04 18:58:56,305 [MainThread] serena.cli:sta***REMOVED***mcp_server:301 - Starting MCP server …
+INFO  2026-04-04 18:58:56,305 [MainThread] serena.cli:sta***REMOVED***mcp_server:301 - Starting MCP server â€¦
 INFO  2026-04-04 18:58:56,347 [MainThread] serena.mcp:_set_mcp_tools:261 - Starting MCP server with 28 tools: ['read_file', 'create_text_file', 'list_dir', 'find_file', 'replace_content', 'search_for_pattern', 'get_symbols_overview', 'find_symbol', 'find_referencing_symbols', 'replace_symbol_body', 'inse***REMOVED***after_symbol', 'inse***REMOVED***before_symbol', 'rename_symbol', 'safe_delete_symbol', 'write_memory', 'read_memory', 'list_memories', 'delete_memory', 'rename_memory', 'edit_memory', 'execute_shell_command', 'activate_project', 'switch_modes', 'get_current_config', 'check_onboarding_performed', 'onboarding', 'prepare_for_new_conversation', 'initial_instructions']
 INFO  2026-04-04 18:58:56,348 [MainThread] serena.mcp:server_lifespan:343 - MCP server lifetime setup complete
 INFO  2026-04-04 18:58:56,355 [MainThread] mcp.server.lowlevel.server:_handle_request:720 - Processing request of type ListToolsRequest
@@ -119,7 +119,7 @@ INFO  2026-04-04 19:51:31,127 [MainThread] mcp.server.lowlevel.server:_handle_re
 INFO  2026-04-04 19:51:31,128 [MainThread] serena.task_executor:issue_task:192 - Scheduling Task-1:ReadFileTool
 INFO  2026-04-04 19:51:31,194 [SerenaAgentTaskExecutor] serena.task_executor:_process_task_queue:123 - Starting execution of Task-1:ReadFileTool
 INFO  2026-04-04 19:51:31,195 [Task-1:ReadFileTool] serena.task_executor:start:329 - Task-1:ReadFileTool starting ...
-INFO  2026-04-04 19:51:31,195 [Task-1:ReadFileTool] serena.tools.tools_base:_log_tool_application:235 - read_file: relative_path='BIG IFS — UNIFIED SWARM.md', sta***REMOVED***line=0, end_line=None, max_answer_chars=-1
+INFO  2026-04-04 19:51:31,195 [Task-1:ReadFileTool] serena.tools.tools_base:_log_tool_application:235 - read_file: relative_path='BIG IFS â€” UNIFIED SWARM.md', sta***REMOVED***line=0, end_line=None, max_answer_chars=-1
 INFO  2026-04-04 19:51:31,195 [Task-1:ReadFileTool] serena.task_executor:stop:336 - Task-1:ReadFileTool completed in 0.001 seconds
 INFO  2026-04-04 19:51:31,297 [MainThread] mcp.server.lowlevel.server:_handle_request:720 - Processing request of type CallToolRequest
 INFO  2026-04-04 19:51:31,297 [MainThread] serena.task_executor:issue_task:192 - Scheduling Task-2:ReadFileTool
@@ -143,7 +143,7 @@ INFO  2026-04-04 19:52:01,367 [MainThread] mcp.server.lowlevel.server:_handle_re
 INFO  2026-04-04 19:52:01,367 [MainThread] serena.task_executor:issue_task:192 - Scheduling Task-5:ReadFileTool
 INFO  2026-04-04 19:52:01,441 [SerenaAgentTaskExecutor] serena.task_executor:_process_task_queue:123 - Starting execution of Task-5:ReadFileTool
 INFO  2026-04-04 19:52:01,441 [Task-5:ReadFileTool] serena.task_executor:start:329 - Task-5:ReadFileTool starting ...
-INFO  2026-04-04 19:52:01,442 [Task-5:ReadFileTool] serena.tools.tools_base:_log_tool_application:235 - read_file: relative_path='BIG IFS — UNIFIED SWARM.md', sta***REMOVED***line=0, end_line=None, max_answer_chars=-1
+INFO  2026-04-04 19:52:01,442 [Task-5:ReadFileTool] serena.tools.tools_base:_log_tool_application:235 - read_file: relative_path='BIG IFS â€” UNIFIED SWARM.md', sta***REMOVED***line=0, end_line=None, max_answer_chars=-1
 INFO  2026-04-04 19:52:01,442 [Task-5:ReadFileTool] serena.task_executor:stop:336 - Task-5:ReadFileTool completed in 0.000 seconds
 INFO  2026-04-04 19:52:01,444 [MainThread] mcp.server.lowlevel.server:_handle_request:720 - Processing request of type CallToolRequest
 INFO  2026-04-04 19:52:01,444 [MainThread] serena.task_executor:issue_task:192 - Scheduling Task-6:ReadFileTool

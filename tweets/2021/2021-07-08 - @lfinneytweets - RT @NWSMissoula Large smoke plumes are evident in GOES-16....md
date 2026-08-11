@@ -1,4 +1,5 @@
 ---
+title: "RT @NWSMissoula Large smoke plumes are evident in GOES-16..."
 date: 2021-07-08
 time: 04:15:15
 tweet_id: "1412988629421486080"

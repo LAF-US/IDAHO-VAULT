@@ -7,7 +7,7 @@ created: 2026-04-06
 ---
 ![A person flies a transgender pride flag outside the Idaho Capitol in Boise during a Trans Day of Visibility rally on March 31, 2026.](https://www.idahostatesman.com/public/latest-news/umc0c/picture315257128/alternates/LANDSCAPE_1140/BOI_033104transvisibility.JPG)
 
-A person flies a transgender pride flag outside the Idaho Capitol in Boise during a Trans Day of Visibility rally on March 31, 2026. smiller@idahostatesman.com
+A person flies a transgender pride flag outside the Idaho Capitol in Boise during a Trans Day of Visibility rally on March 31, 2026. <smiller@idahostatesman.com>
 
 Listen to this article
 

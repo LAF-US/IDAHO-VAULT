@@ -1,4 +1,5 @@
 ---
+title: "Free hotdogs and burgers for all Sounds like socialism to..."
 date: 2022-07-08
 time: 00:56:24
 tweet_id: "1545210155721142272"

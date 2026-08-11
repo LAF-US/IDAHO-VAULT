@@ -9,6 +9,6 @@ related:
 - counties
 authority: LOGAN
 ---
-Shoshone-Bannock Tribes lands in Bannock, Bingham, Power & Caribou counties 
+Shoshone-Bannock Tribes lands in Bannock, Bingham, Power & Caribou counties
 
-Fort Hall, Arbon Valley, Gibson 
+Fort Hall, Arbon Valley, Gibson
