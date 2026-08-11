@@ -97,25 +97,34 @@ rules:
     # the payload, as did `yaml.load_all(data, yaml.UnsafeLoader)`. The
     # keyword-only patterns missed both, and the WARNING rule below did not
     # catch them either — it matches a single argument. A reviewer caught it.
+    #
+    # THE STREAM ARGUMENT IS MATCHED WITH `...`, NOT `$DATA`. An earlier
+    # revision pinned the stream to the first positional slot, which meant
+    # `yaml.load(stream=data, Loader=yaml.Loader)` — legal, and verified here
+    # to execute the payload — matched NOTHING. Three such calls scored zero
+    # against the old patterns. Caught by a reviewer. `...` matches any
+    # argument sequence, so the keyword-Loader patterns below now hold however
+    # the stream is passed. The all-positional form still needs its own
+    # pattern, since `Loader=` cannot match a positional argument.
     pattern-either:
-      - pattern: yaml.load($DATA, Loader=yaml.Loader)
-      - pattern: yaml.load($DATA, Loader=yaml.UnsafeLoader)
-      - pattern: yaml.load($DATA, Loader=yaml.CLoader)
-      - pattern: yaml.load($DATA, Loader=yaml.CUnsafeLoader)
+      - pattern: yaml.load(..., Loader=yaml.Loader)
+      - pattern: yaml.load(..., Loader=yaml.UnsafeLoader)
+      - pattern: yaml.load(..., Loader=yaml.CLoader)
+      - pattern: yaml.load(..., Loader=yaml.CUnsafeLoader)
       - pattern: yaml.load($DATA, yaml.Loader)
       - pattern: yaml.load($DATA, yaml.UnsafeLoader)
       - pattern: yaml.load($DATA, yaml.CLoader)
       - pattern: yaml.load($DATA, yaml.CUnsafeLoader)
-      - pattern: yaml.unsafe_load($DATA)
-      - pattern: yaml.load_all($DATA, Loader=yaml.Loader)
-      - pattern: yaml.load_all($DATA, Loader=yaml.UnsafeLoader)
-      - pattern: yaml.load_all($DATA, Loader=yaml.CLoader)
-      - pattern: yaml.load_all($DATA, Loader=yaml.CUnsafeLoader)
+      - pattern: yaml.load_all(..., Loader=yaml.Loader)
+      - pattern: yaml.load_all(..., Loader=yaml.UnsafeLoader)
+      - pattern: yaml.load_all(..., Loader=yaml.CLoader)
+      - pattern: yaml.load_all(..., Loader=yaml.CUnsafeLoader)
       - pattern: yaml.load_all($DATA, yaml.Loader)
       - pattern: yaml.load_all($DATA, yaml.UnsafeLoader)
       - pattern: yaml.load_all($DATA, yaml.CLoader)
       - pattern: yaml.load_all($DATA, yaml.CUnsafeLoader)
-      - pattern: yaml.unsafe_load_all($DATA)
+      - pattern: yaml.unsafe_load(...)
+      - pattern: yaml.unsafe_load_all(...)
 
   - id: yaml-load-missing-loader
     languages: [python]
@@ -128,9 +137,15 @@ rules:
     # `yaml.load('a: 1')` raises "load() missing 1 required positional argument:
     # 'Loader'". That is a crash, not a code-execution vulnerability, so ERROR
     # and a code-execution message were both wrong for it.
+    # Both spellings of the sole argument. `yaml.load(stream=d)` raises the
+    # same TypeError and was missed while only the positional form was listed.
+    # `...` is deliberately NOT used here: it would match every well-formed
+    # call too, including yaml.load(d, Loader=yaml.SafeLoader).
     pattern-either:
       - pattern: yaml.load($DATA)
+      - pattern: yaml.load(stream=$DATA)
       - pattern: yaml.load_all($DATA)
+      - pattern: yaml.load_all(stream=$DATA)
 
   - id: os-system-call
     languages: [python]
