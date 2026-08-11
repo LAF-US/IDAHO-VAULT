@@ -26,7 +26,8 @@ Not vendored, and why:
 - `mcp-tools`, `phone-to-roam-to-obsidian` — side-loaded, not in the community
   registry; vendoring them is a separate trust decision, held for Logan.
 
-Proposed for `DECISIONS.md` (authority: LOGAN — proposed here, not inscribed):
+Proposed vault policy (Logan inscribes it wherever doctrine of this kind
+belongs, if anywhere — no destination is presumed):
 *Community-plugin executables are tracked, vendored verbatim from official
 registry-resolved releases at manifest-pinned versions, with integrity recorded
 in this file. Upstream bugs in vendored artifacts are reported upstream, never
