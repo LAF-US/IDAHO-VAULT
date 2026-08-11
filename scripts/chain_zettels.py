@@ -39,10 +39,14 @@ Safety / correctness:
   - Dry-run by default. Writes nothing until --apply. --samples shows real
     before/after previews so the insertion can be inspected before any write.
 
-This supersedes an earlier, unrelated same-named script (landed via #780,
-never wired into any workflow, unguarded rglob + unconditional write, and
-never actually run against the vault — no coordinate file on main carries a
-chain). That version is replaced here rather than kept alongside it.
+This supersedes an earlier same-named script that already lived at this path
+on main: PR #573, "Add idempotent Zettel component link chainer script" —
+opened the same day as this PR (2026-06-19) and merged ~15 minutes later, a
+parallel attempt at the same feature that landed first. Never wired into any
+workflow, unguarded `rglob` + unconditional write, no dry-run — and never
+actually run against the vault (no coordinate file on `main` carries a
+chain, checked directly). That version is replaced here rather than kept
+alongside it.
 """
 from __future__ import annotations
 
@@ -60,6 +64,7 @@ EXCLUDE_STEMS = {"CLAUDE", "CORE", "DECISIONS", "BOOTSTRAP"}
 
 
 def chain_for(stem: str) -> str:
+    """Return the per-character wikilink chain for a filename stem, e.g. "AB" -> "[[A]][[B]]"."""
     return "".join(f"[[{ch}]]" for ch in stem)
 
 
@@ -99,6 +104,8 @@ def transform(content: str, links: str):
 
 
 def coordinate_files(root: str):
+    """Yield (filename, stem) for each root-level .md file eligible as a coordinate
+    note: pure-alphanumeric stem, length >= 2, not in EXCLUDE_STEMS. Non-recursive."""
     for entry in os.scandir(root):
         if entry.is_file() and entry.name.endswith(".md"):
             stem = entry.name[:-3]
@@ -107,6 +114,8 @@ def coordinate_files(root: str):
 
 
 def main(argv=None) -> int:
+    """CLI entry point: scan --root for coordinate files, report their chain status,
+    and (only with --apply) write the missing ones atomically. See module docstring."""
     ap = argparse.ArgumentParser(
         description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--root", default=".")
