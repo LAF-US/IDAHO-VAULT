@@ -15,9 +15,10 @@
 // plugins get browser globals on top of node: they run in Electron's renderer
 // and legitimately reach both. languageOptions merge rather than replace.
 //
-// Two files still fail to parse, and both are real defects, left visible:
-//   - build_pro_deck_template.js is ESM by design (its header says the init
-//     script writes a sibling package.json with type=module).
+// ONE file still fails to parse, and it is a real defect, left visible.
+// (This used to say two. The second was build_pro_deck_template.js, which the
+// slides-templates block below now parses as ESM — that was never a defect in
+// the file, only in this config, and the header outlived the fix.)
 //   - pro_deck_quality_check.js:112 has a redaction marker spliced into an
 //     object key, which reads as `cha` + marker + `count` where its siblings
 //     are slide_count and media_count. This description avoids pasting the

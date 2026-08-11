@@ -64,14 +64,27 @@ rules:
     # CLoader is kept on faith, not on evidence: it is the libyaml build of the
     # unsafe Loader, but libyaml is absent here so `yaml.CLoader` does not exist
     # in this interpreter and could not be exercised. Unverified, retained.
+    #
+    # Both call forms are listed. `Loader` is the second POSITIONAL parameter of
+    # yaml.load, not keyword-only, so `yaml.load(data, yaml.Loader)` is legal and
+    # executes exactly the same constructors. Verified on 6.0.1: that call ran
+    # the payload, as did `yaml.load_all(data, yaml.UnsafeLoader)`. The
+    # keyword-only patterns missed both, and the WARNING rule below did not
+    # catch them either — it matches a single argument. A reviewer caught it.
     pattern-either:
       - pattern: yaml.load($DATA, Loader=yaml.Loader)
       - pattern: yaml.load($DATA, Loader=yaml.UnsafeLoader)
       - pattern: yaml.load($DATA, Loader=yaml.CLoader)
+      - pattern: yaml.load($DATA, yaml.Loader)
+      - pattern: yaml.load($DATA, yaml.UnsafeLoader)
+      - pattern: yaml.load($DATA, yaml.CLoader)
       - pattern: yaml.unsafe_load($DATA)
       - pattern: yaml.load_all($DATA, Loader=yaml.Loader)
       - pattern: yaml.load_all($DATA, Loader=yaml.UnsafeLoader)
       - pattern: yaml.load_all($DATA, Loader=yaml.CLoader)
+      - pattern: yaml.load_all($DATA, yaml.Loader)
+      - pattern: yaml.load_all($DATA, yaml.UnsafeLoader)
+      - pattern: yaml.load_all($DATA, yaml.CLoader)
       - pattern: yaml.unsafe_load_all($DATA)
 
   - id: yaml-load-missing-loader

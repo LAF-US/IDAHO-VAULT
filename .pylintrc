@@ -1,11 +1,41 @@
-# Pylint — Codacy toggle. Empty config means every check runs: pylint's
-# defaults ARE its baseline. It also pins config resolution, so a run inside
-# the vault cannot inherit a parent .pylintrc from someone's machine.
+# Pylint — Codacy toggle. An empty config keeps pylint's DEFAULT message set,
+# which is its baseline. Not "every check": measured on pylint 4.0.7 against
+# this file, 377 messages are enabled and 12 are disabled by default (the
+# I0001-I0021 reporting messages, useless-suppression, and the two
+# use-implicit-booleaness-not-comparison-to-* checks). An earlier version of
+# this note claimed every check runs; a reviewer was right that it does not.
+# This file also pins config resolution, so a run inside the vault cannot
+# inherit a parent .pylintrc from someone's machine.
 #
-# Overlaps ruff.toml on unused-import / unused-variable / undefined-name. The
-# pylint-only classes are where the noise will be — expect C0114-C0116
-# (missing docstring) across ~50 files. Unverified: pylint is not installed
-# in the environment this was written in.
+# Overlaps ruff.toml on unused-import / unused-variable / undefined-name.
+#
+# MEASURED, no longer a guess — pylint 4.0.7 over all 136 tracked .py files
+# (none of which the ignore-paths below exclude): **1,763 findings.**
+#
+#   1,402 convention   532 missing-function-docstring, 335 trailing-whitespace,
+#                      307 line-too-long, 100 missing-class-docstring
+#     222 refactor     48 duplicate-code, 36 too-many-locals
+#     104 warning      38 broad-exception-caught
+#      31 error        26 import-error, 3 undefined-variable, 2 no-name-in-module
+#       4 fatal        unresolvable module paths (a `1/tools/...` path; a
+#                      `copy.py` that shadows the stdlib module)
+#
+# Most import-errors are optional deps absent here (PIL, defusedxml,
+# tree_sitter) rather than defects. One is not: see below.
+#
+# NO RULES ARE DISABLED IN RESPONSE TO THIS. The count is recorded so the
+# number is known before the toggle goes on, not to justify silencing it —
+# what to do about 1,174 docstring/whitespace/line-length findings is a
+# decision for Logan, not something to pre-empt from a config header.
+#
+# It already earned its place. Two real defects in one file,
+# `.github/scripts/generate_name_forms.py`, neither previously reported:
+#   - it imports `plant_epithets`, which is not a tracked file anywhere in the
+#     repo, so the module cannot be imported at all; and
+#   - `print_table` reads `h` at lines 57-59, which are plain list elements
+#     outside the `for h in headers[:1]` comprehension that binds it — a
+#     NameError waiting on the first call, if the import is ever fixed.
+# Both are left for a separate change; this PR does not touch that file.
 #
 # Exempt at the line (`# pylint: disable=...`), not repo-wide.
 
