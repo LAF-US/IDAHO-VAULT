@@ -4,7 +4,7 @@ author:
 published: 2022-07-11
 created: 2026-04-20
 ---
-## We support journalism that improves lives — and fights misinformation.
+## We support journalism that improves lives — and fights misinformation
 
 Core Beliefs
 

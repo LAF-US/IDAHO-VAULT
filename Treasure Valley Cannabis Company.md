@@ -5,4 +5,4 @@ related:
 - cannabis
 authority: LOGAN
 ---
-Ontario, Oregon based cannabis company 
+Ontario, Oregon based cannabis company

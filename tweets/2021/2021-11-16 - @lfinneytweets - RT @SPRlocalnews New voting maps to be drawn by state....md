@@ -1,4 +1,5 @@
 ---
+title: "RT @SPRlocalnews New voting maps to be drawn by state..."
 date: 2021-11-16
 time: 21:21:30
 tweet_id: "1460719701818937344"
@@ -15,9 +16,9 @@ related:
   - lfinneytweets
 ---
 
-RT @SPRlocalnews: New voting maps to be drawn by state Supreme Court — a first in Washington history https://t.co/IFkGCRAugf
+RT @SPRlocalnews: New voting maps to be drawn by state Supreme Court — a first in Washington history <https://t.co/IFkGCRAugf>
 
 ## Links
-- https://tinyurl.com/yfzy692n
+- <https://tinyurl.com/yfzy692n>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1460719701818937344)

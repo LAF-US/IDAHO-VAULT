@@ -1,4 +1,5 @@
 ---
+title: "#idleg #idpol"
 date: 2020-02-07
 time: 01:26:44
 tweet_id: "1225591692574654465"
@@ -18,12 +19,12 @@ related:
   - idpol
 ---
 
-#idleg #idpol https://t.co/qwHlq9PTuL https://t.co/oVAOqYHFWI
+\#idleg #idpol <https://t.co/qwHlq9PTuL> <https://t.co/oVAOqYHFWI>
 
 ## Links
-- https://x.com/gregchaneyidaho/status/1225569788480626695
+- <https://x.com/gregchaneyidaho/status/1225569788480626695>
 
 ## Media
-- ![](https://pbs.twimg.com/tweet_video_thumb/EQItJSkUwAAqAhY.jpg)
+- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/EQItJSkUwAAqAhY.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1225591692574654465)

@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Tonight, @davlinnews talks with..."
 date: 2020-07-24
 time: 23:03:34
 tweet_id: "1286799213636939776"

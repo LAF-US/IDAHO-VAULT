@@ -6,4 +6,4 @@ related:
 - magistrate court
 ---
 
-magistrate court Lemhi County courthouse 
+magistrate court Lemhi County courthouse

@@ -1,4 +1,5 @@
 ---
+title: "does this mean you and I have to have a preemptive talk I..."
 date: 2020-10-26
 time: 08:29:14
 tweet_id: "1320643639240847361"

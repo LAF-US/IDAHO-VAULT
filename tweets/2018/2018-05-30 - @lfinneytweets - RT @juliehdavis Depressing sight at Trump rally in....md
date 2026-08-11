@@ -1,4 +1,5 @@
 ---
+title: "RT @juliehdavis Depressing sight at Trump rally in..."
 date: 2018-05-30
 time: 19:24:56
 tweet_id: "1001907327262380034"

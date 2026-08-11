@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports After the election dust settled Wednesday,..."
 date: 2022-11-10
 time: 17:24:34
 tweet_id: "1590757321411817474"

@@ -1,4 +1,5 @@
 ---
+title: "RT @KTVBTerhune The whole point of pubic service is to give..."
 date: 2022-04-07
 time: 19:46:46
 tweet_id: "1512154940327673861"

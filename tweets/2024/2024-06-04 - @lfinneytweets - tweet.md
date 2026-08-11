@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2024-06-04
 time: 16:45:36
 tweet_id: "1798033373040185495"
@@ -16,10 +17,10 @@ related:
   - lfinneytweets
 ---
 
-@ReversVinc82189 https://t.co/lyeqtu3tbD
+@ReversVinc82189 <https://t.co/lyeqtu3tbD>
 
 ## Media
-- ![](https://pbs.twimg.com/tweet_video_thumb/GPPl0gqacAUQrbF.jpg)
+- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/GPPl0gqacAUQrbF.jpg)
 
 *In reply to [@ReversVinc82189](https://twitter.com/ReversVinc82189)*
 

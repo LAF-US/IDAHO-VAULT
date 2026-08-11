@@ -43,11 +43,11 @@ An effective way to lower the risk of leaking service account keys is to reduce 
 
 **Best practices**:
 
-[Provide alternatives to creating service account keys](#alternatives).  
+[Provide alternatives to creating service account keys](#provide-alternatives-to-creating-service-account-keys).  
 [Use organization policy constraints to limit which projects can create service account keys](#orgpolicy-constraints).  
 [Don't leave service account keys in temporary locations](#temp-locations).  
 [Don't pass service account keys between users](#pass-between-users).  
-[Don't submit service account keys to source code repositories](#code-repositories).  
+[Don't submit service account keys to source code repositories](#dont-submit-service-account-keys-to-source-code-repositories).  
 [Don't embed service account keys in program binaries](#embed-in-binaries).  
 [Use insights and metrics to identify unused service account keys](#insights).  
 [Rotate service account keys to reduce security risk caused by leaked keys](#rotate-keys).  
@@ -187,12 +187,12 @@ The following sections describe best practices for protecting service account ke
 
 **Best practices**:
 
-[Avoid storing keys on a file system](#file-system).  
-[Use an HSM or TPM to store keys](#tpm).  
+[Avoid storing keys on a file system](#avoid-storing-keys-on-a-file-system).  
+[Use an HSM or TPM to store keys](#use-an-hsm-or-tpm-to-store-keys).  
 [Use a software-based key store](#software-keystore).  
 [Don't store keys in Secret Manager or other cloud-based secret stores](#secret-manager).  
 [Don't use the Editor role in projects that allow service account key creation or upload](#editor-role).  
-[Avoid using service account keys for domain-wide delegation](#domain-wide-delegation).
+[Avoid using service account keys for domain-wide delegation](#avoid-using-service-account-keys-for-domain-wide-delegation).
 
 ### Avoid storing keys on a file system
 

@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2019-01-31
 time: 06:10:33
 tweet_id: "1090854830430597121"
@@ -16,10 +17,10 @@ related:
   - lfinneytweets
 ---
 
-@EmmaTakatori https://t.co/W8Id717zld
+@EmmaTakatori <https://t.co/W8Id717zld>
 
 ## Links
-- https://x.com/uiargonaut/status/1090853733334867968
+- <https://x.com/uiargonaut/status/1090853733334867968>
 
 *In reply to [@EmmaTakatori](https://twitter.com/EmmaTakatori)*
 

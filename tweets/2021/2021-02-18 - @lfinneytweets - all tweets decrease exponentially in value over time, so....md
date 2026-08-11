@@ -1,4 +1,5 @@
 ---
+title: "all tweets decrease exponentially in value over time, so..."
 date: 2021-02-18
 time: 02:53:39
 tweet_id: "1362233789582217217"

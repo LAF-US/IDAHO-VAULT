@@ -11,7 +11,6 @@ from __future__ import annotations
 import argparse
 import filecmp
 import hashlib
-import datetime as dt
 import json
 import re
 import shutil
@@ -24,6 +23,7 @@ from typing import Any
 
 REPO_ROOT = Path(__file__).resolve().parent
 CACHE_PATH = REPO_ROOT / "!-dotfolder-hashcache.json"
+DEFAULT_CONTAINMENT_MANIFEST = Path(".tmp/dotfolder-containment/manifest.local.json")
 STUB_TEXT = "¿!?"
 MAX_CONTENT_SCAN_BYTES = 1024 * 1024
 SECRET_PATTERNS = tuple(
@@ -127,7 +127,8 @@ class ReconcileResult:
     unique_to_vault: int = 0
     identical: int = 0
     conflicts: int = 0
-    refused_paths: int = 0
+    sensitive_paths: int = 0
+    unavailable_paths: int = 0
     scan_seconds: float = 0.0
     error: str | None = None
 
@@ -276,16 +277,20 @@ def is_publishable_path(dotfolder: str, rel_path: str, *, size: int) -> bool:
 def git_ignored_paths(vault_root: Path, rel_paths: list[str]) -> set[str]:
     if not rel_paths or not (vault_root / ".git").exists():
         return set()
-    result = subprocess.run(
-        ["git", "check-ignore", "--stdin"],
-        cwd=vault_root,
-        input="\n".join(rel_paths),
-        text=True,
-        encoding="utf-8",
-        errors="replace",
-        check=False,
-        capture_output=True,
-    )
+    try:
+        result = subprocess.run(
+            ["git", "check-ignore", "--stdin"],
+            cwd=vault_root,
+            input="\n".join(rel_paths),
+            text=True,
+            encoding="utf-8",
+            errors="replace",
+            check=False,
+            capture_output=True,
+            timeout=30,
+        )
+    except (subprocess.TimeoutExpired, OSError):
+        return set()
     if result.returncode not in {0, 1}:
         return set()
     return set(result.stdout.splitlines())
@@ -316,7 +321,7 @@ def iter_dotfolder_files(vault_root: Path, *, include_ignored: bool) -> list[tup
     for dotfolder in sorted(vault_root.iterdir(), key=lambda item: item.name.lower()):
         if not dotfolder.is_dir() or not dotfolder.name.startswith("."):
             continue
-        if dotfolder.name in {".git", ".pytest_cache"}:
+        if dotfolder.name in {".git", ".pytest_cache", ".tmp"}:
             continue
         if dotfolder.name in RUNTIME_DOTFOLDERS:
             files.append((dotfolder.name, dotfolder))
@@ -384,7 +389,6 @@ def containment_summary(report: ContainmentReport) -> dict[str, Any]:
 def containment_manifest(report: ContainmentReport) -> dict[str, Any]:
     return {
         "version": 1,
-        "generated_at": dt.datetime.now(dt.timezone.utc).isoformat().replace("+00:00", "Z"),
         "vault_root": str(report.vault_root),
         "include_ignored": report.include_ignored,
         "summary": containment_summary(report),
@@ -401,7 +405,21 @@ def containment_manifest(report: ContainmentReport) -> dict[str, Any]:
     }
 
 
-def print_containment_report(report: ContainmentReport, *, quiet: bool) -> None:
+def write_containment_manifest(report: ContainmentReport, path: Path) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(
+        json.dumps(containment_manifest(report), indent=2, sort_keys=True) + "\n",
+        encoding="utf-8",
+    )
+
+
+def default_containment_manifest_path(vault_root: Path) -> Path:
+    return vault_root / DEFAULT_CONTAINMENT_MANIFEST
+
+
+def print_containment_report(
+    report: ContainmentReport, *, quiet: bool, show_secret_findings: bool = True
+) -> None:
     summary = containment_summary(report)
     print("DOTFOLDER CONTAINMENT REPORT")
     print(f"  VAULT:           {report.vault_root}")
@@ -415,25 +433,51 @@ def print_containment_report(report: ContainmentReport, *, quiet: bool) -> None:
         rendered = ", ".join(f"{key}={value}" for key, value in sorted(counts.items()))
         print(f"  {dotfolder}: {rendered}")
     secrets = [entry for entry in report.entries if entry.classification == "secret"]
-    if secrets:
+    if secrets and show_secret_findings:
         print(f"-- SECRET FINDINGS ({len(secrets)}) --")
         for entry in secrets:
             print(f"  {entry.path} [{', '.join(entry.rules)}]")
-    elif not quiet:
+    elif secrets:
+        print(f"[WARN] containment found {len(secrets)} secret-classified file(s); details suppressed")
+    elif not quiet and show_secret_findings:
         print("-- SECRET FINDINGS (0) --")
 
-def relative_file_map(root: Path) -> dict[str, FileEntry]:
+def note_unavailable_path(root: Path, path: Path, unavailable: list[str] | None) -> None:
+    if unavailable is None:
+        return
+    try:
+        rel = path.relative_to(root).as_posix()
+    except ValueError:
+        rel = path.as_posix()
+    unavailable.append(rel or ".")
+
+
+def relative_file_map(root: Path, unavailable: list[str] | None = None) -> dict[str, FileEntry]:
     if not root.exists():
         return {}
     files: dict[str, FileEntry] = {}
-    for path in root.rglob("*"):
-        if not path.is_file():
+    pending = [root]
+    while pending:
+        current = pending.pop()
+        try:
+            children = sorted(current.iterdir(), key=lambda item: item.name.lower())
+        except OSError:
+            note_unavailable_path(root, current, unavailable)
             continue
-        stat = path.stat()
-        rel = path.relative_to(root).as_posix()
-        files[rel] = FileEntry(path=path, size=stat.st_size, mtime_ns=stat.st_mtime_ns)
+        for path in children:
+            try:
+                if path.is_dir():
+                    pending.append(path)
+                    continue
+                if not path.is_file():
+                    continue
+                stat = path.stat()
+            except OSError:
+                note_unavailable_path(root, path, unavailable)
+                continue
+            rel = path.relative_to(root).as_posix()
+            files[rel] = FileEntry(path=path, size=stat.st_size, mtime_ns=stat.st_mtime_ns)
     return files
-
 
 def write_stub_files(dot: str, vault_dir: Path, *, quiet: bool) -> list[str]:
     created: list[str] = []
@@ -497,6 +541,19 @@ def files_match(left: Path, right: Path) -> bool:
         return False
 
 
+def preservation_target(src: Path, preferred: Path) -> Path:
+    if not preferred.exists() or files_match(src, preferred):
+        return preferred
+
+    digest = hashlib.sha256()
+    with src.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(chunk)
+    candidate = preferred.with_name(f"{preferred.name}.{digest.hexdigest()[:12]}")
+    if candidate.exists() and not files_match(src, candidate):
+        raise FileExistsError(f"Refusing to overwrite existing destination: {candidate}")
+    return candidate
+
 def copy_or_move(src: Path, dst: Path, *, snapshot: bool) -> None:
     dst.parent.mkdir(parents=True, exist_ok=True)
     if dst.exists():
@@ -548,21 +605,18 @@ def reconcile_dot(
             print(f"[SKIP] {home_dir} does not exist.")
         return ReconcileResult(dot=dot, scan_seconds=time.monotonic() - start)
 
-    home_files = relative_file_map(home_dir)
-    vault_files = relative_file_map(vault_dir)
+    unavailable_paths: list[str] = []
+    home_files = relative_file_map(home_dir, unavailable=unavailable_paths)
+    vault_files = relative_file_map(vault_dir, unavailable=unavailable_paths)
     rel_paths = sorted(set(home_files) | set(vault_files))
     unique_home: list[str] = []
     unique_vault: list[str] = []
     identical: list[str] = []
     conflicts: list[str] = []
-    refused_paths: list[str] = []
-
+    sensitive_paths: list[str] = []
     for rel in rel_paths:
         if is_secret_path(rel):
-            refused_paths.append(rel)
-            if force and not quiet:
-                print("  [DENIED] credential-like path refused; details suppressed")
-            continue
+            sensitive_paths.append(rel)
 
         in_home = rel in home_files
         in_vault = rel in vault_files
@@ -573,8 +627,12 @@ def reconcile_dot(
         elif home_files[rel].size != vault_files[rel].size:
             conflicts.append(rel)
         else:
-            home_hash = cache.sha256(home_files[rel].path, f"home/{dot}/{rel}")
-            vault_hash = cache.sha256(vault_files[rel].path, f"vault/{dot}/{rel}")
+            try:
+                home_hash = cache.sha256(home_files[rel].path, f"home/{dot}/{rel}")
+                vault_hash = cache.sha256(vault_files[rel].path, f"vault/{dot}/{rel}")
+            except OSError:
+                unavailable_paths.append(rel)
+                continue
             if home_hash == vault_hash:
                 identical.append(rel)
             else:
@@ -588,11 +646,12 @@ def reconcile_dot(
         unique_to_vault=len(unique_vault),
         identical=len(identical),
         conflicts=len(conflicts),
-        refused_paths=len(refused_paths),
+        sensitive_paths=len(sensitive_paths),
+        unavailable_paths=len(unavailable_paths),
         scan_seconds=time.monotonic() - start,
     )
 
-    print_summary(result, unique_home, unique_vault, identical, conflicts, refused_paths, quiet=quiet)
+    print_summary(result, unique_home, unique_vault, identical, conflicts, sensitive_paths, unavailable_paths, quiet=quiet)
     if not apply:
         if unique_home or (identical and not snapshot) or conflicts:
             hint = "--snapshot --apply" if snapshot else "--retire --apply"
@@ -605,25 +664,40 @@ def reconcile_dot(
 
     for rel in conflicts:
         home_src = home_files[rel].path
-        home_dst = vault_dir / f"{rel}.home"
-        if not quiet:
-            action = "COPY" if snapshot else "MOVE"
-            print(f"  PRESERVE vault version in place: {rel}")
-            print(f"  {action} home version: {rel}.home")
-        copy_or_move(home_src, home_dst, snapshot=snapshot)
+        try:
+            home_dst = preservation_target(home_src, vault_dir / f"{rel}.home")
+            display_dst = home_dst.relative_to(vault_dir).as_posix()
+            if not quiet:
+                action = "COPY" if snapshot else "MOVE"
+                print(f"  PRESERVE vault version in place: {rel}")
+                print(f"  {action} home version: {display_dst}")
+            copy_or_move(home_src, home_dst, snapshot=snapshot)
+        except OSError:
+            unavailable_paths.append(rel)
+            if not quiet:
+                print(f"  [SKIP] unavailable home version: {rel}")
 
     for rel in unique_home:
         if not quiet:
             print(f"  {'COPY' if snapshot else 'MOVE'} {rel}")
-        copy_or_move(home_files[rel].path, vault_dir / rel, snapshot=snapshot)
+        try:
+            copy_or_move(home_files[rel].path, vault_dir / rel, snapshot=snapshot)
+        except OSError:
+            unavailable_paths.append(rel)
+            if not quiet:
+                print(f"  [SKIP] unavailable home file: {rel}")
 
     if not snapshot:
         for rel in identical:
             if not quiet:
                 print(f"  DELETE identical home file {rel}")
-            home_files[rel].path.unlink()
+            try:
+                home_files[rel].path.unlink()
+            except OSError:
+                unavailable_paths.append(rel)
+                if not quiet:
+                    print(f"  [SKIP] unavailable identical home file: {rel}")
         remove_empty_dirs(home_dir)
-
     if prune and not snapshot and home_dir.exists():
         try:
             home_dir.rmdir()
@@ -633,6 +707,7 @@ def reconcile_dot(
             if not quiet:
                 print(f"  [SKIP] {home_dir} is not empty")
 
+    result.unavailable_paths = len(set(unavailable_paths))
     print("--- DONE ---")
     return result
 
@@ -655,7 +730,8 @@ def print_summary(
     unique_vault: list[str],
     identical: list[str],
     conflicts: list[str],
-    refused_paths: list[str],
+    sensitive_paths: list[str],
+    unavailable_paths: list[str],
     *,
     quiet: bool,
 ) -> None:
@@ -669,11 +745,15 @@ def print_summary(
     print_group("IDENTICAL", identical, "=", quiet=quiet)
     print_group("CONFLICT", conflicts, "!", quiet=quiet)
     print_group("UNIQUE TO VAULT", unique_vault, "-", quiet=quiet)
-    if refused_paths:
-        print(f"-- REFUSED PATHS ({len(refused_paths)}) --")
-        print("  Details suppressed because the filenames match credential-like patterns.")
+    if sensitive_paths:
+        print(f"-- SENSITIVE PATHS ({len(sensitive_paths)}) --")
+        print("  Names suppressed; these paths are reconciled but must stay out of Git unless explicitly cleared.")
         print()
-    if not (unique_home or identical or conflicts or refused_paths):
+    if unavailable_paths:
+        print(f"-- UNAVAILABLE PATHS ({len(set(unavailable_paths))}) --")
+        print("  Some files could not be read or copied, usually because they are live locks or protected runtime state.")
+        print()
+    if not (unique_home or identical or conflicts or sensitive_paths or unavailable_paths):
         print(f"  Nothing to reconcile for .{result.dot}.")
 
 
@@ -714,6 +794,12 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--containment-report", action="store_true", help="Classify hydrated vault dotfolder cargo without mutating files.")
     parser.add_argument("--include-ignored", action="store_true", help="Include Git-ignored files in --containment-report.")
     parser.add_argument("--manifest", type=Path, help="Optional JSON manifest path for --containment-report.")
+    parser.add_argument("--no-containment", action="store_true", help="Skip automatic containment after snapshot/retire runs.")
+    parser.add_argument(
+        "--containment-manifest",
+        type=Path,
+        help="Override automatic containment manifest path; aliases --manifest for --containment-report.",
+    )
     return parser
 
 
@@ -721,6 +807,8 @@ def main(argv: list[str] | None = None) -> int:
     args = build_parser().parse_args(argv)
     if args.snapshot and args.retire:
         raise SystemExit("--snapshot and --retire cannot be combined")
+    if args.manifest and args.containment_manifest:
+        raise SystemExit("--manifest and --containment-manifest cannot be combined")
     if args.manifest and not args.containment_report:
         raise SystemExit("--manifest requires --containment-report")
     if args.containment_report and args.apply:
@@ -732,14 +820,10 @@ def main(argv: list[str] | None = None) -> int:
     if args.containment_report:
         report = build_containment_report(args.vault_root, include_ignored=args.include_ignored)
         print_containment_report(report, quiet=args.quiet)
-        if args.manifest:
-            args.manifest.parent.mkdir(parents=True, exist_ok=True)
-            args.manifest.write_text(
-                json.dumps(containment_manifest(report), indent=2, sort_keys=True),
-                encoding="utf-8",
-            )
+        manifest_path = args.manifest or args.containment_manifest
+        if manifest_path:
+            write_containment_manifest(report, manifest_path)
         return 1 if any(entry.classification == "secret" for entry in report.entries) else 0
-
     cache = HashCache(args.cache_path, disabled=args.no_cache, read_only=not args.apply)
     cache.load()
     results: list[ReconcileResult] = []
@@ -783,10 +867,19 @@ def main(argv: list[str] | None = None) -> int:
             print(
                 f"  .{result.dot}: {result.files_home} home, {result.files_vault} vault, "
                 f"{result.unique_to_home} to-sync, {result.conflicts} conflicts, "
-                f"{result.refused_paths} refused, {result.scan_seconds:.1f}s{suffix}"
+                f"{result.sensitive_paths} sensitive, {result.unavailable_paths} unavailable, "
+                f"{result.scan_seconds:.1f}s{suffix}"
             )
-    return 1 if any(result.error for result in results) else 0
+    if not args.no_containment:
+        report = build_containment_report(args.vault_root, include_ignored=True)
+        print_containment_report(report, quiet=args.quiet, show_secret_findings=False)
+        if args.apply:
+            manifest_path = args.containment_manifest or default_containment_manifest_path(args.vault_root)
+            write_containment_manifest(report, manifest_path)
+            if not args.quiet:
+                print(f"  MANIFEST: {manifest_path}")
 
+    return 1 if any(result.error for result in results) else 0
 
 if __name__ == "__main__":
     raise SystemExit(main())

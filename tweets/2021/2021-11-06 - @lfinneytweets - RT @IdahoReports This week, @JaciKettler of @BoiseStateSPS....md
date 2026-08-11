@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports This week, @JaciKettler of @BoiseStateSPS..."
 date: 2021-11-06
 time: 21:03:55
 tweet_id: "1457091398834876419"

@@ -1,4 +1,5 @@
 ---
+title: "RT @EastIDNews Long-serving Bonneville County coroner Rick..."
 date: 2024-11-13
 time: 18:54:58
 tweet_id: "1856772762477736150"

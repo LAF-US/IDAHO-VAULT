@@ -43,7 +43,7 @@ Logan is speaking. I'm delivering a TOSS dump from a conversation that is being 
 
 5. **HANDSHAKE** — After vaulting and integration, produce a HANDSHAKE confirmation:
 
-```
+```text
 HANDSHAKE: CODE AUTHORITY ← [Source Conversation Name]
 Date: [today]
 Status: VAULTED
@@ -58,6 +58,3 @@ Safe to delete source: YES/NO
 ---
 
 ## ✂️ — STOP COPYING HERE — PASTE TOSS DUMP AFTER THIS — ✂️
-
-
-[[B]][[O]][[O]][[T]][[S]][[T]][[R]][[A]][[P]]

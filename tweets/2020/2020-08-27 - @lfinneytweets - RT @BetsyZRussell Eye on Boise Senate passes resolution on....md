@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Senate passes resolution on..."
 date: 2020-08-27
 time: 00:33:33
 tweet_id: "1298780659108831232"

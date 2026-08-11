@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Tonight (April 3rd)\u2019s #IdahoCOVID19 update..."
 date: 2020-04-04
 time: 00:49:11
 tweet_id: "1246238351046242309"
@@ -19,6 +20,6 @@ related:
 ---
 
 RT @IdahoReports: Tonight (April 3rd)’s #IdahoCOVID19 update with @davlinnews: 
-https://t.co/0mLVJI7RgT
+<https://t.co/0mLVJI7RgT>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1246238351046242309)

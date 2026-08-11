@@ -13,7 +13,7 @@
 # Recovered from #227 (closed 2026-04-12, antigravity/pullman-oidc-pipeline).
 # Adaptations to current vault state:
 # - SHA-pinned all actions per Logan ruling (vault policy from PR #378)
-# - Added merge_group: trigger (pattern from PR #390)
+# - merge_group: trigger removed (was startup_failure on every queue entry; deploy only needed on push to main)
 # - Lifted SYNODS hold on OP_SERVICE_ACCOUNT_TOKEN (now ratified per CLAUDE.md)
 # - References repo vars GCP_WORKLOAD_IDENTITY_PROVIDER + GCP_SERVICE_ACCOUNT
 #   (set 2026-05-28 via gh api during T1.4b prep)
@@ -27,14 +27,13 @@ on:
   push:
     branches: [main]
     paths:
-      - 'Dockerfile'
-      - '.github/workflows/cloud-run-deploy.yml'
-  merge_group:
+      - "Dockerfile"
+      - ".github/workflows/cloud-run-deploy.yml"
   workflow_dispatch:
 
 permissions:
   contents: read
-  id-token: write      # Required for OIDC token generation
+  id-token: write # Required for OIDC token generation
 
 env:
   REGION: us-central1
@@ -51,14 +50,14 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
       # ── 1PASSWORD SECRET INJECTION ────────────────────────────────────────
       - name: Install 1Password CLI
         uses: 1password/install-cli-action@a5215d3a7f75c1629216c465ea9ab3ab399c4b71 # v4.0.0
 
       - name: Load runtime secrets via op
-        uses: 1password/load-secrets-action@92467eb28f72e8255933372f1e0707c567ce2259 # v4
+        uses: 1password/load-secrets-action@e544b780808654ba8ceba5fb2fe2897103d92ff4 # v4
         with:
           export-env: true
         env:

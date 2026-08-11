@@ -2,12 +2,15 @@ name: Engage Outdated — attest-resolve outdated review threads
 
 # The first "engage" step of the look-then-resolve engine (#399). Logan's model: the
 # queue runs by default and reviewer comments are what keep a PR hanging. This engages the
-# NARROWEST safe slice — it attest-resolves ONLY bot-only, GitHub-outdated review threads
-# (the commented lines no longer exist in the diff), each with a recorded
-# github-actions[bot] attestation, so it is a witnessed resolution, NOT the disabled blind
-# reconciler. It never touches needs-fix (the reviewer gate), apply-suggestion, or human
-# threads, and it NEVER merges — if clearing a PR's last thread lets an armed PR flow, that
-# is GitHub's auto-merge, by design.
+# NARROWEST safe slice — it attest-resolves ONLY bot-only review threads GitHub itself has
+# flagged outdated (the lines a comment was anchored to have since changed or been removed
+# from the diff), each with a recorded attestation
+# (the looker defaults to whoever GH_TOKEN authenticates as — github-actions[bot] on the
+# GITHUB_TOKEN fallback, or the MERGE_QUEUE_TOKEN account when present — so the witness
+# always names the actor that actually ran it), so it is a witnessed resolution, NOT the
+# disabled blind reconciler. It never touches needs-fix (the reviewer gate),
+# apply-suggestion, or human threads, and it NEVER merges — if clearing a PR's last thread
+# lets an armed PR flow, that is GitHub's auto-merge, by design.
 #
 # Dry-run by default. Dispatch with apply=true to engage. (A schedule is a deliberate
 # follow-up once this is proven on the live backlog.)
@@ -16,17 +19,17 @@ on:
   workflow_dispatch:
     inputs:
       apply:
-        description: 'true = post attestations and resolve; false = dry-run (report only)'
+        description: "true = post attestations and resolve; false = dry-run (report only)"
         required: false
-        default: 'false'
+        default: "false"
         type: choice
         options:
-          - 'false'
-          - 'true'
+          - "false"
+          - "true"
       pr:
-        description: 'Optional single PR number to scope the pass to (blank = every open PR)'
+        description: "Optional single PR number to scope the pass to (blank = every open PR)"
         required: false
-        default: ''
+        default: ""
         type: string
 
 permissions:
@@ -43,7 +46,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout trusted workflow surfaces
-        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           ref: ${{ github.event.repository.default_branch }}
           persist-credentials: false
@@ -51,9 +54,11 @@ jobs:
       - name: Engage outdated-only resolution
         # All ${{ }} values pass through env, never interpolated into the run script
         # (apply and pr are user-controllable dispatch inputs — direct expansion would be a
-        # template-injection vector). github-actions[bot] is the looker identity.
+        # template-injection vector). resolveReviewThread has a documented history of being
+        # FORBIDDEN for the integration token (the #398 boundary) — prefer the user-scoped
+        # MERGE_QUEUE_TOKEN; the looker identity (see header) follows whichever is active.
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.MERGE_QUEUE_TOKEN || secrets.GITHUB_TOKEN }}
           OWNER: ${{ github.repository_owner }}
           REPO: ${{ github.event.repository.name }}
           APPLY: ${{ github.event.inputs.apply }}

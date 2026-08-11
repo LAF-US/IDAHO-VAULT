@@ -1,4 +1,5 @@
 ---
+title: "RT @madisonhardy05 BREAKING Former state Rep. Luke Malek..."
 date: 2020-11-13
 time: 19:33:28
 tweet_id: "1327333780776894464"

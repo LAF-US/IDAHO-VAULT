@@ -1,4 +1,5 @@
 ---
+title: "RT @RuthBrownNews The House just killed a bill, S1087, that..."
 date: 2021-04-06
 time: 20:43:36
 tweet_id: "1379535283725557760"

@@ -1,4 +1,5 @@
 ---
+title: "RT @JesseLehrich Idaho, Utah, & Nebraska all expanded..."
 date: 2018-11-07
 time: 06:33:43
 tweet_id: "1060057693816152064"

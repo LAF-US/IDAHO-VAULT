@@ -10,14 +10,34 @@ means: insert one line in the right place; never delete or replace existing
 content or frontmatter.
 
 Safety / correctness:
-  - Pure insertion. Existing frontmatter and body are preserved byte-for-byte;
-    the chain is placed immediately after the closing frontmatter fence (or at
-    the top if there is no frontmatter).
-  - Idempotent. If the file already contains its chain, it is left unchanged.
+  - Pure insertion. Existing frontmatter and body are preserved byte-for-byte
+    (read/write use newline="" so CRLF files round-trip unchanged); the chain
+    is placed immediately after the closing frontmatter fence (or at the top
+    if there is no frontmatter), followed by exactly one newline, then the
+    original body untouched.
+  - Idempotent by position, not substring. A file is only treated as already
+    chained if the chain is exactly the first non-blank body line. A chain
+    present elsewhere (e.g. appended at EOF by an earlier, buggy run) is
+    reported as MISPLACED and left alone rather than silently re-inserted
+    (which would duplicate it) or auto-relocated (which would no longer be
+    pure insertion).
+  - Governance/functional files are excluded outright, not just skipped when
+    already chained: CLAUDE, CORE, DECISIONS, BOOTSTRAP. These match the
+    coordinate-stem pattern by accident of naming (short, alphanumeric) but
+    are vault doctrine/ledger/scratch files, not address-space entities — see
+    PR #572 review discussion. Extend EXCLUDE_STEMS if more such collisions
+    turn up; do not widen the coordinate predicate to guess semantically.
   - Root-only by default (the address grid lives at the vault root); does NOT
-    recurse into subdirectories. (#572's rglob walk was over-broad.)
+    recurse into subdirectories. (#572's rglob walk was over-broad, and is
+    also why this file's own path — scripts/chain_zettels.py — was never at
+    risk of self-matching.)
   - Dry-run by default. Writes nothing until --apply. --samples shows real
     before/after previews so the insertion can be inspected before any write.
+
+This supersedes an earlier, unrelated same-named script (landed via #780,
+never wired into any workflow, unguarded rglob + unconditional write, and
+never actually run against the vault — no coordinate file on main carries a
+chain). That version is replaced here rather than kept alongside it.
 """
 from __future__ import annotations
 
@@ -27,6 +47,10 @@ import re
 import sys
 
 STEM_RE = re.compile(r"^[A-Za-z0-9]+$")
+
+# Filenames that match the coordinate-stem pattern but are governance/scratch
+# files, not address-space entities. See module docstring.
+EXCLUDE_STEMS = {"CLAUDE", "CORE", "DECISIONS", "BOOTSTRAP"}
 
 
 def chain_for(stem: str) -> str:
@@ -44,23 +68,35 @@ def split_frontmatter(content: str):
     return None, content
 
 
+def chain_status(content: str, links: str) -> str:
+    """Classify a file's relationship to its chain: 'placed' (correct, first
+    non-blank body line), 'missing' (not present at all), or 'misplaced'
+    (present somewhere else in the content)."""
+    _, body = split_frontmatter(content)
+    first_line = next((ln for ln in body.splitlines() if ln.strip()), None)
+    if first_line == links:
+        return "placed"
+    if links in content:
+        return "misplaced"
+    return "missing"
+
+
 def transform(content: str, links: str):
-    """Return new content with the chain inserted, or None if no change needed."""
-    if links in content:                       # idempotent: already chained
-        return None
+    """Return new content with the chain inserted as the first body line.
+    Caller must only call this when chain_status(content, links) == 'missing'."""
     prefix, body = split_frontmatter(content)
     if prefix is not None:
         if not prefix.endswith("\n"):
             prefix += "\n"
-        return prefix + links + ("\n\n" + body if body.strip() else "\n")
-    return links + ("\n\n" + content if content.strip() else "\n")
+        return prefix + links + "\n" + body
+    return links + "\n" + content
 
 
 def coordinate_files(root: str):
     for entry in os.scandir(root):
         if entry.is_file() and entry.name.endswith(".md"):
             stem = entry.name[:-3]
-            if STEM_RE.match(stem) and len(stem) >= 2:
+            if STEM_RE.match(stem) and len(stem) >= 2 and stem not in EXCLUDE_STEMS:
                 yield entry.name, stem
 
 
@@ -74,26 +110,34 @@ def main(argv=None) -> int:
                     help="before/after previews to print (default 3)")
     args = ap.parse_args(argv)
 
-    to_change, already, previews = [], 0, []
+    to_change, already, misplaced, previews = [], 0, [], []
     for name, stem in sorted(coordinate_files(args.root)):
         path = os.path.join(args.root, name)
         try:
-            with open(path, "r", encoding="utf-8") as fh:
+            with open(path, "r", encoding="utf-8", newline="") as fh:
                 content = fh.read()
         except (OSError, UnicodeDecodeError):
             continue
-        new = transform(content, chain_for(stem))
-        if new is None:
+        links = chain_for(stem)
+        status = chain_status(content, links)
+        if status == "placed":
             already += 1
             continue
+        if status == "misplaced":
+            misplaced.append(name)
+            continue
+        new = transform(content, links)
         to_change.append((name, new))
         if len(previews) < args.samples:
             previews.append((name, content, new))
 
     mode = "APPLY" if args.apply else "DRY-RUN"
     print(f"[{mode}] root={os.path.abspath(args.root)}")
-    print(f"  coordinate files needing the chain : {len(to_change)}")
-    print(f"  already chained (skipped, idempotent): {already}")
+    print(f"  coordinate files needing the chain   : {len(to_change)}")
+    print(f"  already chained, correctly placed    : {already}")
+    print(f"  chain present but MISPLACED (skipped): {len(misplaced)}")
+    for name in misplaced:
+        print(f"    ! {name}")
     for name, before, after in previews:
         print(f"\n  --- {name} (BEFORE, first 5 lines) ---")
         for ln in before.splitlines()[:5] or ["(empty)"]:
@@ -108,7 +152,7 @@ def main(argv=None) -> int:
 
     written = 0
     for name, new in to_change:
-        with open(os.path.join(args.root, name), "w", encoding="utf-8") as fh:
+        with open(os.path.join(args.root, name), "w", encoding="utf-8", newline="") as fh:
             fh.write(new)
         written += 1
     print(f"\n  WROTE {written} file(s).")

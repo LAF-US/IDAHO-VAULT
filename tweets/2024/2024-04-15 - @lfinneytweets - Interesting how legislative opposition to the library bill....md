@@ -1,4 +1,5 @@
 ---
+title: "Interesting how legislative opposition to the library bill..."
 date: 2024-04-15
 time: 18:55:58
 tweet_id: "1779946786104443183"
@@ -19,9 +20,9 @@ related:
 ---
 
 Interesting how legislative opposition to the library bill fell geographically. #idleg #idpol 
-https://t.co/ybllNiGnJy
+<https://t.co/ybllNiGnJy>
 
 ## Links
-- https://www.datawrapper.de/_/XhL3J/
+- <https://www.datawrapper.de/_/XhL3J/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1779946786104443183)

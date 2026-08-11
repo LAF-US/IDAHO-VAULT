@@ -1,4 +1,5 @@
 ---
+title: "RT @DailyBee The former attorney for North Idaho College is..."
 date: 2022-12-17
 time: 22:16:41
 tweet_id: "1604239184830812161"

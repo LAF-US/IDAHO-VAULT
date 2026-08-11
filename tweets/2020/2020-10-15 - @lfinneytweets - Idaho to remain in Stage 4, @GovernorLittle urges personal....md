@@ -1,4 +1,5 @@
 ---
+title: "Idaho to remain in Stage 4, @GovernorLittle urges personal..."
 date: 2020-10-15
 time: 19:23:16
 tweet_id: "1316821963835281408"
@@ -20,11 +21,11 @@ related:
   - idpol
 ---
 
-Idaho to remain in Stage 4, @GovernorLittle urges personal responsibility to slow spread of virus and prevent healthcare system overload. #IdahoCOVID19 #idpol https://t.co/uCvpq4RFT0
+Idaho to remain in Stage 4, @GovernorLittle urges personal responsibility to slow spread of virus and prevent healthcare system overload. #IdahoCOVID19 #idpol <https://t.co/uCvpq4RFT0>
 
 ## Media
-- ![](https://pbs.twimg.com/media/EkZKl1RU4AAcJ2Q.jpg)
-- ![](https://pbs.twimg.com/media/EkZKmByVoAE5IWB.jpg)
-- ![](https://pbs.twimg.com/media/EkZKmPBU0AAKAwy.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EkZKl1RU4AAcJ2Q.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EkZKmByVoAE5IWB.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EkZKmPBU0AAKAwy.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1316821963835281408)
