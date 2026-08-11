@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Idahoans looking for help for themselves..."
 date: 2022-07-06
 time: 21:49:40
 tweet_id: "1544800774776950784"

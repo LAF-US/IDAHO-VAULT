@@ -1,4 +1,5 @@
 ---
+title: "RT @RuthBrownNews .@GovernorLittle calls this a shameful..."
 date: 2021-01-22
 time: 19:07:48
 tweet_id: "1352694470983053312"

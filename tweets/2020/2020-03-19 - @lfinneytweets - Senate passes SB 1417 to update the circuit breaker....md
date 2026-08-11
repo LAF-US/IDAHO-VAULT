@@ -1,4 +1,5 @@
 ---
+title: "Senate passes SB 1417 to update the circuit breaker..."
 date: 2020-03-19
 time: 02:23:57
 tweet_id: "1240463992834777088"

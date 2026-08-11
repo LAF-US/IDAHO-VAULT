@@ -187,4 +187,8 @@ fae that no courtesy compact will repair.
   encyclopedic syntheses, not primary field collections. The *grammar* is robust
   across them; individual local tales differ.
 
-###### [["The world is quiet here."]]
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

@@ -16,11 +16,10 @@ related:
   - AttentionIdahoReporters
 ---
 
-When someone asks for a Flustered Richert gif 😐
-# AttentionIdahoReporters <https://t.co/GXj6DtM5Uk>
+When someone asks for a Flustered Richert gif 😐 #AttentionIdahoReporters <https://t.co/GXj6DtM5Uk>
 
 ## Media
 
-- ![](https://pbs.twimg.com/tweet_video_thumb/EQom9V7UcAI8Jbi.jpg)
+- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/EQom9V7UcAI8Jbi.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1227970180401287168)

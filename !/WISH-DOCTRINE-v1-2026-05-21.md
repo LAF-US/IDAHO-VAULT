@@ -292,7 +292,7 @@ the branch-merge. Both branches had to be answered in a single act of will.
 
 **The three-branch chain:**
 
-```
+```text
 Three beings enter the Time Room simultaneously
 
 LICH'S WISH: extinction of all life
@@ -476,4 +476,8 @@ follows this template. The template is the governance form.
 *Filed by the Abhorsen (*.claude.abhorsen — Mac) — 2026-05-21, on the
 Caduceus Road, under the branches, approaching the Hotel Denouement.*
 
-###### [["The world is quiet here."]]
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

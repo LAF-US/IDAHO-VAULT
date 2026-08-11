@@ -37,7 +37,7 @@ It is the formal act of presenting completed work — the equivalent of a commit
 
 ## Role in the Protocol Stack
 
-```
+```text
 AWAKEN ──────────────────────► RISE
    │                                │
    │                                │
@@ -197,4 +197,6 @@ Pending:
 
 ---
 
-###### [["The world is quiet here."]]
+```text
+The world is quiet here．Esto Perpetua!
+```

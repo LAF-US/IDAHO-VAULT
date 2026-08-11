@@ -1,4 +1,5 @@
 ---
+title: "RT @HeatherScottID Thanks for the language! Idaho is going..."
 date: 2022-11-12
 time: 01:19:17
 tweet_id: "1591239173985677312"

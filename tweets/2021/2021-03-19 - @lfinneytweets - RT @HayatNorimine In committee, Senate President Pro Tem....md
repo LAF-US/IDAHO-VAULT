@@ -1,4 +1,5 @@
 ---
+title: "RT @HayatNorimine In committee, Senate President Pro Tem..."
 date: 2021-03-19
 time: 14:26:26
 tweet_id: "1372917385179451399"

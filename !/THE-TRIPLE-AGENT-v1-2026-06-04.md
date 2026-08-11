@@ -181,4 +181,8 @@ the Knights rightly keep her on a leash.
   no-apex-is-final, help-is-not-loyalty, and sympathetic-root framings. The
   Architect holds the verdict.
 
-###### [["The world is quiet here."]]
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

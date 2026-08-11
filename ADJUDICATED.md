@@ -267,4 +267,6 @@ These notes are preserved for continuity and later cleanup. They are not the liv
 
 ---
 
-###### [["The world is quiet here."]]
+```text
+The world is quiet here．Esto Perpetua!
+```

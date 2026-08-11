@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Growth, politics and budget..."
 date: 2021-08-30
 time: 19:28:57
 tweet_id: "1432425123995283458"

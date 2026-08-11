@@ -1,4 +1,5 @@
 ---
+title: "I may or may not be creating a competing organization, the..."
 date: 2021-02-26
 time: 21:25:21
 tweet_id: "1365412660271964162"

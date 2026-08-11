@@ -17,6 +17,6 @@ related:
 
 ## Media
 
-- ![](https://pbs.twimg.com/ext_tw_video_thumb/1220594947922857984/pu/img/3_9u99NHXw70bx_i.jpg)
+- ![alt text needed](https://pbs.twimg.com/ext_tw_video_thumb/1220594947922857984/pu/img/3_9u99NHXw70bx_i.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1220595004499881985)

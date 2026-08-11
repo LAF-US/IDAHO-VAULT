@@ -19,6 +19,6 @@ RT @uiargonaut: The Moscow community march to East City Park. <https://t.co/OcBt
 
 ## Media
 
-- ![](https://pbs.twimg.com/ext_tw_video_thumb/1086732821337583618/pu/img/5EKppdqV9OdoIZ_T.jpg)
+- ![alt text needed](https://pbs.twimg.com/ext_tw_video_thumb/1086732821337583618/pu/img/5EKppdqV9OdoIZ_T.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1086770872872923136)

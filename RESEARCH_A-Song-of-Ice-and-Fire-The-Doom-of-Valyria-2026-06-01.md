@@ -110,4 +110,6 @@ In *A Clash of Kings*, the pyromancer Hallyne recalls that "magic had begun to g
 
 ---
 
-###### [["The world is quiet here."]]
+```text
+The world is quiet here．Esto Perpetua!
+```

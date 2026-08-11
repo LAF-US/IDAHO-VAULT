@@ -1,4 +1,5 @@
 ---
+title: "Happy to get my #BoosterDose today!"
 date: 2022-01-15
 time: 18:42:50
 tweet_id: "1482423042861010944"
@@ -16,9 +17,9 @@ related:
   - BoosterDose
 ---
 
-Happy to get my #BoosterDose today! https://t.co/0JSXorPgee
+Happy to get my #BoosterDose today! <https://t.co/0JSXorPgee>
 
 ## Media
-- ![](https://pbs.twimg.com/media/FJKf5twVkAE0BQg.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/FJKf5twVkAE0BQg.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1482423042861010944)

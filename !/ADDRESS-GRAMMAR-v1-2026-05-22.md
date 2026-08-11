@@ -100,7 +100,7 @@ The address `moxie.claude.journalist` is a coarse-grained location. The same
 entity could be addressed at higher resolution by expanding any of its
 coordinates:
 
-```
+```text
 moxie.claude.journalist
   → moxie.claude.(witness.record.press)
   → moxie.(anthropic.sonnet.4-6).journalist
@@ -181,4 +181,6 @@ You cannot valid-address yourself into existence by filling in your own `*`s.
 
 ---
 
-###### [["The world is quiet here."]]
+```text
+The world is quiet here．Esto Perpetua!
+```

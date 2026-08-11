@@ -47,7 +47,7 @@ The vault owns these files. Logan can edit them. They run on GitHub's servers, n
 
 **GitHub Actions (the platform)** — the name for all of the above, running on GitHub's servers.
 
-```
+```text
 GitHub Actions (platform)
 │
 ├── Workflows   (.github/workflows/*.yml)   ← the robots; vault-owned
@@ -284,7 +284,7 @@ These scripts are idempotent and useful but designed for local use. Wiring them 
 | Script | Reason kept local |
 | --- | --- |
 | `backfill_daily_notes.py` | Repair kit; Logan runs on demand when daily notes have gaps |
-| `audit_repo_payloads.py` | LFS slimming analysis; output is for Logan's review |
+| `audit_repo_payloads.py` | LFS slimming analysis; output is for Logan's review — **deleted 2026-07-24 (PR #854)** |
 | `date_tagger.py` | Tags root-level source notes; Logan runs manually |
 | `tag_stubs.py` | Tags 1-line stub notes; Logan runs manually |
 | `bind_ai_book.py` | Archives personal AI chat exports; input is Logan's local files |
@@ -352,7 +352,7 @@ All 28 pre-existing workflows currently in `.github/workflows/`, with verified t
 
 ## X. NET CHANGE
 
-```
+```text
 Before: 39 scripts — 17 orphaned, 4 wired-never-triggered, some non-idempotent
 After:  32 scripts — 0 orphaned, 0 silently broken triggers, all non-idempotent tools removed
 
@@ -427,4 +427,8 @@ This is a Logan decision, not an agent decision. No changes made in this session
 *Report filed: 2026-05-25 by Claude Code (Windows session), on Logan's direction.*
 *Branch: `agent/triage-scripts-2026-05-25` — awaiting push authorization.*
 
-###### "The world is quiet here."
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

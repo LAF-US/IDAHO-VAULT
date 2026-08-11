@@ -1,4 +1,5 @@
 ---
+title: "Higher ed budget vote changes #idleg #idedu Voted yes on..."
 date: 2020-03-16
 time: 21:42:12
 tweet_id: "1239668312130248704"

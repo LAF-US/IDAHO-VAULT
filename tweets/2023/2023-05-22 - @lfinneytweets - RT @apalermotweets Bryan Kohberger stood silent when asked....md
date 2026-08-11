@@ -1,4 +1,5 @@
 ---
+title: "RT @apalermotweets Bryan Kohberger stood silent when asked..."
 date: 2023-05-22
 time: 16:55:57
 tweet_id: "1660690975071797248"

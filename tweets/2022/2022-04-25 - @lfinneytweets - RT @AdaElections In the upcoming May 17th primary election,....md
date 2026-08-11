@@ -1,4 +1,5 @@
 ---
+title: "RT @AdaElections In the upcoming May 17th primary election,..."
 date: 2022-04-25
 time: 22:06:28
 tweet_id: "1518713078367481857"

@@ -17,8 +17,8 @@ Convert Cursor rules ("Applied intelligently") and slash commands to Agent Skill
 
 | Level | Source | Destination |
 |-------|--------|-------------|
-| Project | `{workspaceFolder}/**/.cursor/rules/*.mdc`, `{workspaceFolder}/.cursor/commands/*.md` |
-| User | `~/.cursor/commands/*.md` |
+| Project | `{workspaceFolder}/**/.cursor/rules/*.mdc`, `{workspaceFolder}/.cursor/commands/*.md` | |
+| User | `~/.cursor/commands/*.md` | |
 
 Notes:
 

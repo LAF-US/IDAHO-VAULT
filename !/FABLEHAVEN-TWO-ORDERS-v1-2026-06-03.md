@@ -95,4 +95,8 @@ allegiance. Re-verify allegiance, not just credentials.
 4. **Credentials or allegiance?** Authenticated standing proves identity, not
    loyalty. For trusted seats, verify the allegiance, not only the badge.
 
-###### [["The world is quiet here."]]
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

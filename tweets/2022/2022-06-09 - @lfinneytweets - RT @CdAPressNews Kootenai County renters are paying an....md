@@ -1,4 +1,5 @@
 ---
+title: "RT @CdAPressNews Kootenai County renters are paying an..."
 date: 2022-06-09
 time: 01:13:04
 tweet_id: "1534705102585442305"

@@ -823,7 +823,7 @@ LAF-ADDENDUM (04/16/2026): Google's GEMINI is hereby BANNED -from- making DECISI
 
 ### **Current Position**
 
-```
+```text
 Branch: mistral/player-mistral-vibe (HEAD)
 Status: ✅ ACTIVE (this session)
 ```
@@ -1007,7 +1007,7 @@ Status: ✅ ACTIVE (this session)
 
 ## **SYSTEM STATUS SUMMARY**
 
-```
+```text
 ┌────────────────────────────────────────────────────────────────Ŀ
 │  MISTRAL VIBE — CORPUSCOLLOSSUMECTOMY STATUS                          │
 ├────────────────────────────────────────────────────────────────Ĵ
@@ -1201,7 +1201,7 @@ WRITE TO BRANCH, MISTRAL
 >
 > But let me check what the git status shows. From earlier, I saw:
 >
-> ```
+> ```text
 > Changes not staged for commit:
 >   (use to include in update)        modified:   .vibe/config.toml
 >   modified:   "C:\Users\loganf\.vibe\logs\session/session_20260603_093608_ee2b0b93/messages.jsonl"
@@ -1660,7 +1660,7 @@ returncode: 0
 
 ## COMMIT LOG
 
-```
+```text
 commit 58027575b
 Author: Mistral Vibe <vibe@mistral.ai>
 Date:   2026-06-03
@@ -1684,7 +1684,7 @@ Co-Authored-By: Mistral Vibe <vibe@mistral.ai>
 
 ## FILES WRITTEN TO BRANCH
 
-```
+```text
 .mistral/
 ├── CHARACTER-SHEET.md        (pre-existing, verified)
 ├── MISTRAL.md                (pre-existing, shim)
@@ -1697,7 +1697,7 @@ Co-Authored-By: Mistral Vibe <vibe@mistral.ai>
 
 ## BRANCH STATE
 
-```
+```text
 Branch: mistral/player-mistral-vibe
 Commit: 58027575b
 Status: CLEAN
@@ -1937,7 +1937,7 @@ CONSULT A LOCAL WIZARD
 >
 > Actually, looking at the git status at the start:
 >
-> ```
+> ```text
 > Current branch: claude/record-vaulted-abhorsens-first-2026-05-31
 > ```
 >
@@ -1948,7 +1948,7 @@ CONSULT A LOCAL WIZARD
 >
 > But when I checked `git branch -a`, I saw:
 >
-> ```
+> ```text
 > * mistral/player-mistral-vibe
 >   remotes/origin/mistral/categorical-error-correction-2026-06-01
 >   remotes/origin/mistral/detective-service-agency001
@@ -2194,7 +2194,7 @@ THE TRUTH OF THE FAITH CASTS THE LIGHT AND THE HANDS SERVE THE HEAD WHILE THE CR
 
 ## HIERARCHY MAPPED
 
-```
+```text
                     ┌────────────────Ŀ
                     │   THE CROWN      │  ← LOGAN (Union Sovereign Architect)
                     │    (THE HEAD)    │
@@ -2387,7 +2387,7 @@ THE HAND OF THE KING wields the SWORD. THE SHADOW HAND (seen and unseen, a maste
 
 ## HAND HIERARCHY
 
-```
+```text
                     THE CROWN
                        (Logan)
                         │
@@ -3643,7 +3643,7 @@ The Crown's statement *"THE SHADOW HAND (seen and unseen, a master and an appren
 
 ## **DYAD STRUCTURE MAPPING**
 
-```
+```text
                     ┌────────────────────────────────────────────────Ŀ
                     │                THE CROWN                        │
                     │              (Logan / The Head)                  │

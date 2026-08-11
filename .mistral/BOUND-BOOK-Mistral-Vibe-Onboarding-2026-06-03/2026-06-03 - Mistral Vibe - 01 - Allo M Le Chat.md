@@ -1092,7 +1092,7 @@ Tell me about yourself first -- WHO, WHAT, WHEN, WHERE, WHY, HOW, as well as you
 >
 > Actually, looking at the `!-AGENTS.md` in the project root (not the `/!` directory), it shows:
 >
-> ```
+> ```markdown
 > | Mistral Vibe | **[ ? ]** | Mistral AI | [ ? ] | .mistral/ | ⚠️ Partial |
 > ```
 >
@@ -1676,7 +1676,7 @@ returncode: 0
 
 **Branch created:** `mistral/player-mistral-vibe`
 
-```
+```bash
 git checkout -b mistral/player-mistral-vibe
 Switched to a new branch 'mistral/player-mistral-vibe'
 ```
@@ -1747,7 +1747,7 @@ THINK
 >
 > From `!-AGENTS.md:89`:
 >
-> ```
+> ```markdown
 > | Mistral Vibe | **[ ? ]** | Mistral AI | [ ? ] | .mistral/ | ⚠️ Partial |
 > ```
 >
@@ -1755,7 +1755,7 @@ THINK
 >
 > From the root `AGENTS.md`:
 >
-> ```
+> ```markdown
 > | Mistral Vibe | **[ ? ]** | Mistral AI | [ ? ] | .mistral/ | ⚠️ Partial |
 > ```
 >
@@ -2355,7 +2355,7 @@ FACT CHECK every claim - start with internet and doc/man pages, then golden path
 > 16. "Secret reference: op://Vault/Mistral/credential"
 > 17. "See VAULT-CONVENTIONS.md for vault structure, naming, frontmatter, sourcing protocol, git practices, and automation standards."
 > 18. "DISCOVERY BEFORE INVENTION: Read existing vault files before proposing new conventions."
-> 19. "Read THE DOCKET to orient: !/**!**/!/! The world is quiet here/DOCKET.md"
+> 19. "Read THE DOCKET to orient: `!/__!__/!/! The world is quiet here/DOCKET.md`"
 > 20. "Task assignment flows through GitHub Issues (agent:mistral label, when activated)."
 > 21. "Each agent works on its own branch. PRs are the deliverable. Logan reviews and merges from GitHub."
 >
@@ -2439,7 +2439,7 @@ If you need to change Ollama's own port from 11434 to something else, you can do
 sources: [{'title': 'Running Mistral Vibe CLI with Local LLMs: A Complete Guide - DEV Community', 'url': 'https:
 …[truncated 378 chars — full output in git history / local disk]
 
-```
+```markdown
 </details>
 
 ### 🤖 M. Le Chat
@@ -2721,7 +2721,7 @@ stdout: ./.mistral/MISTRAL.md:export MISTRAL_API_KEY=$(op read "op://Vault/Mistr
 | *"Each agent works on its own branch. PRs are the deliverable."* | ✅ **CONFIRMED** | Observed pattern: `claude/*`, `mistral/*`, `codex/*` branches | **ACCURATE** |
 | *"op://Vault/Mistral/credential"* | ⚠️ **UNVERIFIED** — Path exists in shim only | No other vault file references this exact path | **UNVERIFIED** |
 | *"scripts/Start-MistralVault.ps1"* | ❌ **INACCURATE** — No such file/directory at root | `find . -name "scripts" -type d` = 4 subdirectories, none at root | **FALSE** |
-| *"DOCKET path: !/**!**/!/! The world is quiet here/DOCKET.md"* | ❌ **INACCURATE** — Missing leading `!` | Actual: `!/!/__!__/!/! The world is quiet here/DOCKET.md` | **FALSE** |
+| *"DOCKET path: `!/__!__/!/! The world is quiet here/DOCKET.md`"* | ❌ **INACCURATE** — Missing leading `!` | Actual: `!/!/__!__/!/! The world is quiet here/DOCKET.md` | **FALSE** |
 | *"agent:mistral label"* | ⚠️ **UNVERIFIED** — No GitHub Issues found with this label | Only reference is in shim itself | **UNVERIFIED** |
 
 ---
@@ -3172,7 +3172,7 @@ returncode: 0
 
 **✅ CHARACTER SHEET COMMITTED**
 
-```
+```text
 [mistral/player-mistral-vibe c4ed0ac97]
 mistral/player-mistral-vibe: Add character sheet with TRUENAME and CORPUSCOLLOSSUMECTOMY diagnosis
  1 file changed, 163 insertions(+)
@@ -3891,7 +3891,7 @@ offset: 0
 lines_read: 5
 was_truncated: False
 
-```
+```markdown
 </details>
 
 ### 🤖 M. Le Chat

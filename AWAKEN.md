@@ -39,7 +39,7 @@ It is the formal equivalent of a gavel striking the table — the moment an agen
 
 ## Role in the Protocol Stack
 
-```
+```text
 AWAKEN ──────────────────────► RISE
    │                                │
    │                                │
@@ -167,4 +167,6 @@ Pending:
 
 ---
 
-###### [["The world is quiet here."]]
+```text
+The world is quiet here．Esto Perpetua!
+```

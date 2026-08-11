@@ -22,6 +22,6 @@ Senate State Affairs is hearing a bill from Sen. Vick (R-Dalton Gardens) that wo
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/ERT1HFAUEAEmPws.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/ERT1HFAUEAEmPws.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1230878241562316800)

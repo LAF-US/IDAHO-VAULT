@@ -25,6 +25,6 @@ RT @uiargonaut: Make sure to vote in this year's Best of Moscow survey:
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/DYTM4PkWAAA_Z6_.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/DYTM4PkWAAA_Z6_.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/974414760727871489)

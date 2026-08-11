@@ -1,4 +1,5 @@
 ---
+title: "RT @DonLDay \u201cOne thing is for sure, if you are involved in..."
 date: 2024-07-18
 time: 18:18:39
 tweet_id: "1814001857335087114"

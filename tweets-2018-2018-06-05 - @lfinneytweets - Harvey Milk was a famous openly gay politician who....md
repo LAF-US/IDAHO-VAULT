@@ -17,6 +17,6 @@ Harvey Milk was a famous openly gay politician who represented The Castro distri
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/De6c6eRVAAABC6x.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/De6c6eRVAAABC6x.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1003912538415747072)

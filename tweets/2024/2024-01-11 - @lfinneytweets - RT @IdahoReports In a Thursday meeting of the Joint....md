@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports In a Thursday meeting of the Joint..."
 date: 2024-01-11
 time: 19:06:38
 tweet_id: "1745522624997024239"

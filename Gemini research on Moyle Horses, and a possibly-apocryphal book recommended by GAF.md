@@ -839,7 +839,7 @@ The March 2017 issue of _Horses and People Magazine_ contains the definitive art
 
 - **The Mink Ranch Influence:** The text highlights how Rex applied the rigorous nutritional and husbandry standards from the family's mink ranching business to optimize the horses' performance.
 
-[![Horses and People Magazine March 2017 Moyle Horse Idaho article, AI generated](https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQprGt7-o-hyg8-7l_LDGZUuEZ4S3yjiElW8MvkNL8DD3FJcGsLNTv0jGfaak4q)Opens in a new window](https://www.academia.edu/34434571/Horses_and_People_Magazine_at_BULLET_The_Moyle_Horse_of_Idaho)[![](https://encrypted-tbn3.gstatic.com/favicon-tbn?q=tbn:ANd9GcR9hWgxJQlIVCM9wr5z13OVSidnI33ikYKPz3zM-a3cQ4MHybyhApCrKUUohM9562qxFd2cChgEXyxqgXXqFWOiFMfNAiPR2cJ6RA)www.academia.edu](https://www.academia.edu/34434571/Horses_and_People_Magazine_at_BULLET_The_Moyle_Horse_of_Idaho)
+[![Horses and People Magazine March 2017 Moyle Horse Idaho article, AI generated](https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQprGt7-o-hyg8-7l_LDGZUuEZ4S3yjiElW8MvkNL8DD3FJcGsLNTv0jGfaak4q)Opens in a new window](https://www.academia.edu/34434571/Horses_and_People_Magazine_at_BULLET_The_Moyle_Horse_of_Idaho)[![alt text needed](https://encrypted-tbn3.gstatic.com/favicon-tbn?q=tbn:ANd9GcR9hWgxJQlIVCM9wr5z13OVSidnI33ikYKPz3zM-a3cQ4MHybyhApCrKUUohM9562qxFd2cChgEXyxqgXXqFWOiFMfNAiPR2cJ6RA)www.academia.edu](https://www.academia.edu/34434571/Horses_and_People_Magazine_at_BULLET_The_Moyle_Horse_of_Idaho)
 
 This article is essentially the "white paper" for the Moyle Horse. Since you are building the **IDAHO-VAULT**, this is the most reliable external source to cite alongside the private family manuscripts like Marjorie's book.
 

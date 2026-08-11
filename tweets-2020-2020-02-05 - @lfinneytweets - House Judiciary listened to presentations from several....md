@@ -24,6 +24,6 @@ To save time, the committee gave unanimous consent at the beginning of the meeti
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/EQCuB8WUwAEqOVi.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EQCuB8WUwAEqOVi.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1225170499052818432)
