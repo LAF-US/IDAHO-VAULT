@@ -1,4 +1,5 @@
 ---
+title: "But here's the irony Surplus says he and other Idahoans..."
 date: 2020-07-17
 time: 05:43:34
 tweet_id: "1284000773102166017"

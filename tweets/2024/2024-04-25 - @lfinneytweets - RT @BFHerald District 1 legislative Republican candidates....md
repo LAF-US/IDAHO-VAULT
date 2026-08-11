@@ -1,4 +1,5 @@
 ---
+title: "RT @BFHerald District 1 legislative Republican candidates..."
 date: 2024-04-25
 time: 17:15:50
 tweet_id: "1783545465092612516"

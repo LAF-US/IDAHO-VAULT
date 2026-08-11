@@ -1,4 +1,5 @@
 ---
+title: "RT @RachelSpacek Watching the Senate Ag Committee as they..."
 date: 2021-01-19
 time: 16:34:33
 tweet_id: "1351568739687272449"

@@ -1,4 +1,5 @@
 ---
+title: "RT @lfinneytweets Obligatory post cautioning you about..."
 date: 2024-11-05
 time: 19:17:52
 tweet_id: "1853879423021601057"
@@ -15,9 +16,9 @@ related:
   - lfinneytweets
 ---
 
-RT @lfinneytweets: Obligatory post cautioning you about relying on "the media" to call election results https://t.co/5i29bsEaoK
+RT @lfinneytweets: Obligatory post cautioning you about relying on "the media" to call election results <https://t.co/5i29bsEaoK>
 
 ## Media
-- ![](https://pbs.twimg.com/media/El8bwZnVoAAZMKG.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/El8bwZnVoAAZMKG.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1853879423021601057)

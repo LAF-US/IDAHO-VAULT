@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports The inauguration of statewide officials..."
 date: 2023-01-06
 time: 18:51:27
 tweet_id: "1611435292514476034"

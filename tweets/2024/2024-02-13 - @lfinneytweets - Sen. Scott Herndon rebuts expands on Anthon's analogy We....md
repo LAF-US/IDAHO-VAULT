@@ -1,4 +1,5 @@
 ---
+title: "Sen. Scott Herndon rebuts expands on Anthon's analogy We..."
 date: 2024-02-13
 time: 00:12:20
 tweet_id: "1757195969677148572"

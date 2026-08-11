@@ -1,4 +1,5 @@
 ---
+title: "RT @uiargonaut BREAKING An 18-year-old University of Idaho..."
 date: 2020-04-02
 time: 02:27:20
 tweet_id: "1245538273763549184"

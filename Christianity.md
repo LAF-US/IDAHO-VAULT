@@ -4,4 +4,4 @@ related:
 - religion
 authority: LOGAN
 ---
-religion - Catholic and Orthodox and Protestant churches 
+religion - Catholic and Orthodox and Protestant churches

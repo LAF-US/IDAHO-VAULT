@@ -1,4 +1,5 @@
 ---
+title: "RT @statesnewsroom Idaho is one of 10 states where there is..."
 date: 2021-08-31
 time: 22:06:08
 tweet_id: "1432827068417335308"

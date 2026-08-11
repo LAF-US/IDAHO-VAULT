@@ -1,4 +1,5 @@
 ---
+title: "Vick goes back to the senators\u2019 packet, pointing to letters..."
 date: 2020-03-17
 time: 00:30:57
 tweet_id: "1239710782725582848"

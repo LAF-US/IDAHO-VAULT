@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2018-07-01
 time: 23:02:34
 tweet_id: "1013558510490021888"
@@ -14,10 +15,10 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/PfFXJIU27B
+<https://t.co/PfFXJIU27B>
 
 ## Links
-- http://yankeeforkdredge.com/
+- <http://yankeeforkdredge.com/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

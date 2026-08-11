@@ -1,4 +1,5 @@
 ---
+title: "Stennet \u201cThe Idaho constitution does not differentiate..."
 date: 2021-01-29
 time: 15:49:47
 tweet_id: "1355181353092796416"

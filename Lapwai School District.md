@@ -4,4 +4,4 @@ related:
 - Nez Perce County
 authority: LOGAN
 ---
-Lapwai, Nez Perce County 
+Lapwai, Nez Perce County

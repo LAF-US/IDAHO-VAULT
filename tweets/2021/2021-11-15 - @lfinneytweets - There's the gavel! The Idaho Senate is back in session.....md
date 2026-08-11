@@ -1,4 +1,5 @@
 ---
+title: "There's the gavel! The Idaho Senate is back in session...."
 date: 2021-11-15
 time: 17:35:39
 tweet_id: "1460300475832537090"

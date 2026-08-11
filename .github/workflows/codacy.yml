@@ -31,29 +31,162 @@ jobs:
       actions: read # only required for a private repository by github/codeql-action/upload-sarif to get the Action run status
     name: Codacy Security Scan
     runs-on: ubuntu-latest
+    # Successful runs take 11.4-15.2 min (measured across main's push runs and 27
+    # completed pull_request runs on other branches); failures die in under a
+    # minute. 25 is ~1.6x the slowest observed success.
+    #
+    # This bounds a specific failure mode rather than hiding one. The CLI can
+    # complete its analysis and then throw while serialising -- Sarif.scala:149,
+    # Files.readAllLines on a matched issue's source file -- and the step does
+    # not exit afterwards: job cleanup shows the docker child orphaned, holding
+    # the runner until GitHub's 6h ceiling. Observed on job 90888934294, which
+    # threw at 11 min and was killed at 6h 00m 08s. The crash still surfaces in
+    # full; it surfaces in minutes instead of occupying a runner for an
+    # afternoon. Nothing is excluded from analysis by this.
+    timeout-minutes: 25
     steps:
       # Checkout the repository to the GitHub Actions runner
       - name: Checkout code
-        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
-      # Execute Codacy Analysis CLI and generate a SARIF output with the security issues identified during the analysis
+      # Execute Codacy Analysis CLI and generate a SARIF output with the security issues identified during the analysis.
+      #
+      # Invoked directly rather than via codacy/codacy-analysis-cli-action:
+      # every action release new enough to bundle a CLI that parses Codacy's
+      # "High" severity level (>= v4.4.0, CLI 7.9.x) internally references
+      # unpinned actions/setup-go@v3, which this repo's Actions policy
+      # rejects ("all actions must be pinned to a full-length commit SHA"),
+      # while every policy-compliant release (<= v4.3.0) pins CLI 7.6.4,
+      # which hard-fails deserializing that severity ("High not a member of
+      # Level"). These steps reproduce the action's own invocation (see
+      # action.yml at v4.4.7) with the fixed CLI version pinned explicitly.
+      # The script URL is pinned to the commit SHA of tag 7.9.25 (tags are
+      # retaggable; commits are not) — same immutability standard the
+      # Actions pin policy enforces for `uses:` references — and the
+      # downloaded content is verified against a pinned SHA-256 before it
+      # is made executable, so a corrupted or substituted download fails
+      # closed instead of running.
+      - name: Download Codacy Analysis CLI script (7.9.25)
+        shell: bash
+        run: |
+          wget -O codacy-analysis-cli.sh "https://raw.githubusercontent.com/codacy/codacy-analysis-cli/aba65e1e961d6f220002ddc6bd57ccd8a8d36c6d/bin/codacy-analysis-cli.sh"
+          echo "76e958c3dd7bc2491b6d3261fece4a118516986e07c8e5e5daa2e59c0a701e16  codacy-analysis-cli.sh" | sha256sum -c -
+          chmod +x codacy-analysis-cli.sh
       - name: Run Codacy Analysis CLI
-        uses: codacy/codacy-analysis-cli-action@d840f886c4bd4edc059706d09c6a1586111c540b
-        with:
-          # Check https://github.com/codacy/codacy-analysis-cli#project-token to get your project token from your Codacy repository
-          # You can also omit the token and run the tools that support default configurations
-          project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
-          verbose: true
-          output: results.sarif
-          format: sarif
-          # Adjust severity of non-security issues
-          gh-code-scanning-compat: true
-          # Force 0 exit code to allow SARIF file generation
-          # This will handover control about PR rejection to the GitHub side
-          max-allowed-issues: 2147483647
+        env:
+          # The wrapper passes this value straight into the image reference
+          # (codacy/codacy-analysis-cli:${CODACY_ANALYSIS_CLI_VERSION}), and
+          # Docker's name:tag@digest form makes the digest authoritative —
+          # so this pins the analyzer image itself, not just the wrapper
+          # script, closing the last mutable link (tags can be retagged;
+          # digests cannot). Digest of tag 7.9.25 per Docker Hub.
+          CODACY_ANALYSIS_CLI_VERSION: "7.9.25@sha256:339e0103e28804f9d76aff34503e505440e5d5b42f5dd70dae73b592ea87826a"
+          CODACY_PROJECT_TOKEN: ${{ secrets.CODACY_PROJECT_TOKEN }}
+          # On pull_request events GITHUB_SHA is the synthetic merge commit;
+          # results must be associated with the PR head, as the upstream
+          # action does.
+          COMMIT_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+        # --max-allowed-issues forces a 0 exit code so the SARIF file is
+        # always generated; PR rejection stays on the GitHub side.
+        # The project token travels only as the CODACY_PROJECT_TOKEN env
+        # var, which the CLI reads natively — no --project-token flag, so
+        # the secret never appears in process listings, and forked PRs
+        # (empty secret) still analyze with default configurations.
+        shell: bash
+        run: |
+          ./codacy-analysis-cli.sh \
+            analyze \
+            --skip-commit-uuid-validation \
+            --commit-uuid "$COMMIT_SHA" \
+            --verbose \
+            --format sarif \
+            --output results.sarif \
+            --max-allowed-issues 2147483647 \
+            --gh-code-scanning-compat
+
+      # GitHub code scanning rejects Codacy's raw SARIF twice over: runs
+      # sharing a category are refused (July 2025 policy), and a file may
+      # carry at most 20 runs while Codacy emits one run per tool
+      # invocation (39 observed). Merging runs by tool driver fixes both —
+      # each tool becomes one run with a distinct automationDetails.id.
+      # Results are rekeyed from positional ruleIndex to ruleId before
+      # merging so rule references survive; an overflow guard folds the
+      # least-populated tools into one composite run if distinct tools
+      # ever exceed the cap. The dockerized CLI writes results.sarif as
+      # root, so the runner user can read but not overwrite it — the
+      # processed SARIF goes to a new runner-owned file.
+      - name: Merge SARIF runs per tool
+        shell: bash
+        run: |
+          python3 - <<'EOF'
+          import json
+
+          MAX_RUNS = 20
+
+          with open("results.sarif") as fh:
+              sarif = json.load(fh)
+
+          merged = {}
+          order = []
+          for run in sarif.get("runs", []):
+              driver = run.setdefault("tool", {}).setdefault("driver", {})
+              name = driver.get("name", "codacy")
+              rules = driver.get("rules") or []
+              results = run.get("results") or []
+              for res in results:
+                  # Positional indexes cannot survive the rules-array union, so
+                  # they are always dropped; ruleId is set only when it
+                  # resolves to a real id (never null).
+                  idx = res.pop("ruleIndex", None)
+                  if "rule" in res and isinstance(res["rule"], dict):
+                      res["rule"].pop("index", None)
+                  if "ruleId" not in res and idx is not None and 0 <= idx < len(rules):
+                      rid = rules[idx].get("id")
+                      if rid:
+                          res["ruleId"] = rid
+              if name not in merged:
+                  driver["rules"] = list(rules)
+                  run["results"] = list(results)
+                  run.setdefault("automationDetails", {})["id"] = f"codacy-{name}/"
+                  merged[name] = run
+                  order.append(name)
+              else:
+                  target = merged[name]
+                  tdriver = target["tool"]["driver"]
+                  tdriver.setdefault("rules", [])
+                  known = {r.get("id") for r in tdriver["rules"]}
+                  for rule in rules:
+                      if rule.get("id") not in known:
+                          tdriver["rules"].append(rule)
+                          known.add(rule.get("id"))
+                  target.setdefault("results", []).extend(results)
+
+          runs = [merged[n] for n in order]
+          if len(runs) > MAX_RUNS:
+              runs.sort(key=lambda r: len(r.get("results", [])), reverse=True)
+              keep, spill = runs[: MAX_RUNS - 1], runs[MAX_RUNS - 1 :]
+              base = spill[0]
+              bdriver = base["tool"]["driver"]
+              bdriver["name"] = "codacy-other"
+              bdriver.setdefault("rules", [])
+              known = {r.get("id") for r in bdriver["rules"]}
+              for extra in spill[1:]:
+                  for rule in extra["tool"]["driver"].get("rules", []):
+                      if rule.get("id") not in known:
+                          bdriver["rules"].append(rule)
+                          known.add(rule.get("id"))
+                  base.setdefault("results", []).extend(extra.get("results", []))
+              base.setdefault("automationDetails", {})["id"] = "codacy-other/"
+              runs = keep + [base]
+
+          sarif["runs"] = runs
+          with open("results-categorized.sarif", "w") as fh:
+              json.dump(sarif, fh)
+          print(f"SARIF runs after merge: {len(runs)}")
+          EOF
 
       # Upload the SARIF file generated in the previous step
       - name: Upload SARIF results file
         uses: github/codeql-action/upload-sarif@54f647b7e1bb85c95cddabcd46b0c578ec92bc1a # v4.36.3
         with:
-          sarif_file: results.sarif
+          sarif_file: results-categorized.sarif

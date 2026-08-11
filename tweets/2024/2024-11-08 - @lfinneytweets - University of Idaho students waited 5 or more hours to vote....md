@@ -1,4 +1,5 @@
 ---
+title: "University of Idaho students waited 5 or more hours to vote..."
 date: 2024-11-08
 time: 15:51:09
 tweet_id: "1854914563172598211"
@@ -18,9 +19,9 @@ related:
   - idleg
 ---
 
-University of Idaho students waited 5 or more hours to vote on campus Tuesday, per the Argonaut student newspaper. Delays caused by a bottleneck registering new voters with electronic poll books. #idpol #idleg https://t.co/XBneXHf91w
+University of Idaho students waited 5 or more hours to vote on campus Tuesday, per the Argonaut student newspaper. Delays caused by a bottleneck registering new voters with electronic poll books. #idpol #idleg <https://t.co/XBneXHf91w>
 
 ## Media
-- ![](https://pbs.twimg.com/media/Gb369bHbwAMnTUg.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/Gb369bHbwAMnTUg.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1854914563172598211)

@@ -104,15 +104,21 @@ def is_allowed_content_match(rule: str, line: str) -> bool:
 
 
 def run_git(args: list[str]) -> subprocess.CompletedProcess[str]:
-    return subprocess.run(
-        ["git", *args],
-        cwd=REPO_ROOT,
-        text=True,
-        encoding="utf-8",
-        errors="replace",
-        capture_output=True,
-        check=False,
-    )
+    try:
+        return subprocess.run(
+            ["git", *args],
+            cwd=REPO_ROOT,
+            text=True,
+            encoding="utf-8",
+            errors="replace",
+            capture_output=True,
+            check=False,
+            timeout=30,
+        )
+    except subprocess.TimeoutExpired as exc:
+        raise RuntimeError(f"git {args[0]} timed out after 30s") from exc
+    except OSError as exc:
+        raise RuntimeError(f"git {args[0]} could not run: {exc}") from exc
 
 
 def staged_paths() -> list[str]:
@@ -167,12 +173,18 @@ def path_findings(path: str) -> list[Finding]:
     return []
 
 def staged_file_bytes(path: str) -> bytes | None:
-    result = subprocess.run(
-        ["git", "show", f":{path}"],
-        cwd=REPO_ROOT,
-        capture_output=True,
-        check=False,
-    )
+    try:
+        result = subprocess.run(
+            ["git", "show", f":{path}"],
+            cwd=REPO_ROOT,
+            capture_output=True,
+            check=False,
+            timeout=30,
+        )
+    except subprocess.TimeoutExpired as exc:
+        raise RuntimeError(f"git show timed out after 30s ({path})") from exc
+    except OSError as exc:
+        raise RuntimeError(f"git show could not run: {exc}") from exc
     if result.returncode != 0:
         return None
     return result.stdout
@@ -217,8 +229,12 @@ def main() -> int:
     if args.staged and args.paths_from_stdin:
         parser.error("--staged and --paths-from-stdin are mutually exclusive")
 
-    paths = stdin_paths() if args.paths_from_stdin else staged_paths()
-    findings = findings_for_paths(paths, staged=args.staged)
+    try:
+        paths = stdin_paths() if args.paths_from_stdin else staged_paths()
+        findings = findings_for_paths(paths, staged=args.staged)
+    except RuntimeError as exc:
+        print(f"secret-pattern guard: {exc}", file=sys.stderr)
+        return 1
 
     if not findings:
         print("secret-pattern guard: OK")

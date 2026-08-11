@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoMtExpress This sign, which Ketchum resident Nick..."
 date: 2021-06-20
 time: 20:17:37
 tweet_id: "1406707834465636352"

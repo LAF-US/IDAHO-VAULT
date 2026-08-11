@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2020-05-01
 time: 18:21:58
 tweet_id: "1256287762824654848"
@@ -16,10 +17,10 @@ related:
   - lfinneytweets
 ---
 
-@ryannoyance https://t.co/cTSM4Cwev2
+@ryannoyance <https://t.co/cTSM4Cwev2>
 
 ## Media
-- ![](https://pbs.twimg.com/tweet_video_thumb/EW87DwAVcAAG2h3.jpg)
+- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/EW87DwAVcAAG2h3.jpg)
 
 *In reply to [@ryannoyance](https://twitter.com/ryannoyance)*
 

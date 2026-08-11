@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports \u201cWe are causing so much havoc,\u201d says..."
 date: 2025-06-19
 time: 01:28:22
 tweet_id: "1935509932222398613"

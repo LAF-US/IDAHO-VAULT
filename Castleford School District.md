@@ -5,4 +5,4 @@ related:
 - Twin Falls County
 authority: LOGAN
 ---
-Castleford, Twin Falls County 
+Castleford, Twin Falls County

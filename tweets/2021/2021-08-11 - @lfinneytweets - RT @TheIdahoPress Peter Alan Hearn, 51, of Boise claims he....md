@@ -1,4 +1,5 @@
 ---
+title: "RT @TheIdahoPress Peter Alan Hearn, 51, of Boise claims he..."
 date: 2021-08-11
 time: 14:13:43
 tweet_id: "1425460423520710658"

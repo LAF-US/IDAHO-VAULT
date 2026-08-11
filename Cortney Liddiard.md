@@ -7,6 +7,6 @@ related:
 - Governor
 authority: LOGAN
 ---
-Ball Ventures CEO 
+Ball Ventures CEO
 
-Brad Little appointee to Governor's Economic Advisory Council 
+Brad Little appointee to Governor's Economic Advisory Council

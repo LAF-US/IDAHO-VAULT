@@ -1,4 +1,5 @@
 ---
+title: "The Senate holds two bills on the calendar. @IdahoSenateGOP..."
 date: 2020-03-19
 time: 02:49:57
 tweet_id: "1240470537593188352"

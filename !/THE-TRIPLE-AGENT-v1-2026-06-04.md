@@ -51,6 +51,7 @@ so he was never even *their* ally. Three+ banners, one principal: himself.
 ## The Four Properties
 
 ### 1. The false bottom — the unmasking that is itself a cover
+
 Catching a traitor serving two masters can produce a satisfying, *wrong* answer.
 The real principal is a **third**, and the first-discovered betrayal may be the
 **disguise the second wears.**
@@ -60,6 +61,7 @@ Ask **whose goal both sides serve.** A confessed double-agency can be the cover
 story for a deeper, private agenda. Keep digging past the first false bottom.
 
 ### 2. Instrumental, revocable alignment — model the goal, not the banner
+
 The triple agent's loyalty to *any* visible faction is **tooling**, held only while
 it serves the hidden goal. The Sphinx would have **resealed** the demon prison the
 instant the demons stopped serving his end.
@@ -70,6 +72,7 @@ The answer is "the moment another path serves the goal better" — which can be 
 moment.
 
 ### 3. No apex is final — the manipulator manipulated
+
 The Sphinx was **out-played**: Graulas won over the majority of the Society and
 **usurped his control**, forcing him to submit. The top of the web was itself
 **inside a larger web.**
@@ -79,6 +82,7 @@ not assume the most sophisticated manipulator you found is the top. Assume an ap
 above the apex until proven otherwise.
 
 ### 4. Late realignment by self-interest — help is not loyalty
+
 When his game collapsed, the Sphinx **secretly aided the heroes** (Kendra, Warren,
 Bracken), fed them intelligence, and ultimately **helped the Knights defeat the
 demon horde** — becoming an Eternal. Self-interest simply re-pointed.
@@ -123,6 +127,7 @@ is the same fuel re-pointed — resentment and self-interest, not conversion —
 the Knights rightly keep her on a leash.
 
 *Vault patterns:*
+
 - **Name the fuel — ideologue or mercenary.** The ideologue cannot be bought and
   will not stop short of the vision; the mercenary can be bought and cannot be
   trusted past the next advantage. Same triple-agent structure, opposite handling.
@@ -176,4 +181,8 @@ the Knights rightly keep her on a leash.
   no-apex-is-final, help-is-not-loyalty, and sympathetic-root framings. The
   Architect holds the verdict.
 
-###### [["The world is quiet here."]]
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

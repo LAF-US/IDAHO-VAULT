@@ -10,19 +10,19 @@
 
 ## Summary of Value Retained
 
-1. 
-2. 
-3. 
+1.
+2.
+3.
 
 ## What This Replaced
 
-- 
-- 
+-
+-
 
 ## Trail / Handoff Notes
 
-- 
-- 
+-
+-
 
 ---
 

@@ -23,7 +23,7 @@ related:
 - format
 authority: LOGAN
 ---
-BOISE – Republican Gov. Jim Risch on Friday rejected an invitation from Idaho Public Television and the League of Women Voters to appear in a Nov. 1 statewide televised debate with Larry LaRocco, his Democratic rival in the Lieutenant Governor’s race. 
+BOISE – Republican Gov. Jim Risch on Friday rejected an invitation from Idaho Public Television and the League of Women Voters to appear in a Nov. 1 statewide televised debate with Larry LaRocco, his Democratic rival in the Lieutenant Governor’s race.
 
 Instead, Risch, who had expressed concern over the format of the league event, has agreed to square off against LaRocco during an Oct. 10 debate, to be televised by NBC-TV affiliate KTVB, which broadcasts in the Boise region.
 

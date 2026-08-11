@@ -1,4 +1,5 @@
 ---
+title: "RT @BoiseDev \u2018Ridiculous situation\u2019 More than a dozen..."
 date: 2023-10-26
 time: 18:14:45
 tweet_id: "1717605702838153388"
