@@ -8,8 +8,11 @@
 # Semgrep has no `extends` — a rules file holds literal rules, so there is no
 # baseline to reference. These three target what this repo actually does.
 #
-# Unverified: semgrep is not installed in the environment this was written in.
-# The rules parse and match the documented schema but have not been run.
+# Semgrep is not installed in the environment this was written in, so these
+# were not run here. They HAVE been validated elsewhere: CodeRabbit ran
+# `semgrep scan --validate --config .semgrep.yaml` against them on #950 and
+# the ruleset loaded. Every PyYAML name below was checked against the
+# installed module — all eight *_load / *_load_all forms exist.
 
 rules:
   - id: subprocess-shell-true
