@@ -1,12 +1,49 @@
-# Bandit — Codacy toggle. INI, which is the form bandit reads from a file
-# named `.bandit`; a YAML config uses different key names and needs `-c`.
+# Bandit — Codacy toggle. INI. Read with `bandit --ini .bandit <targets>`.
 #
-# No `skips`: every test runs. Expect B404/B603 first — this repo drives git
-# and uv through subprocess. Those are probably fine (literal argument lists,
-# never shell strings), but that is a judgement to record per call site with
-# `# nosec B603 - reason`, not to assume repo-wide.
+# NOT `-c .bandit`: that flag parses YAML and dies on line 12 with
+# "expected '<document start>', but found '<scalar>'". And there is no
+# auto-discovery — plain `bandit -r .` from this directory never reads this
+# file. An earlier version of this header said INI "is the form bandit reads
+# from a file named .bandit", which skipped the part that matters: WHICH flag.
+# Measured on bandit 1.9.4.
 #
-# Unverified: bandit is not installed in the environment this was written in.
+# No `skips`: every test bandit enables by default runs.
+#
+# MEASURED — 156 findings over 136 files / 26,238 LOC, with the exclusion
+# below actually working:
+#
+#     0 HIGH · 13 MEDIUM · 143 LOW
+#    47 B603 subprocess_without_shell_equals_true
+#    30 B404 blacklist (import subprocess)
+#    29 B607 start_process_with_partial_path
+#    23 B101 assert_used
+#     7 B310 urlopen audit · 6 B105 hardcoded_password_string
+#
+# B404/B603 lead, as predicted — this repo drives git and uv through
+# subprocess. Those are probably fine (literal argument lists, never shell
+# strings), but that is a judgement to record per call site with
+# `# nosec B603 - reason`, not to assume repo-wide. The 13 MEDIUMs are worth
+# a real look: B310 urlopen without scheme restriction in wayback_audit.py,
+# janitor_sweep.py and obsidian_rest_api_client.py; B314 XML parsing in
+# build_knowledge_graph.py; B108 temp-file usage in codex_work_guard.py;
+# B104 bind-all-interfaces in main.py.
+#
+# THE EXCLUDE FORM IS LOAD-BEARING. Bare directory names DO NOT MATCH.
+# Measured over the same tree:
+#
+#     -x .venv        ->  987 findings, 831 of them inside .venv   (inert)
+#     -x ./.venv      ->  156 findings, 0 inside .venv             (works)
+#     -x '*/.venv/*'  ->  156 findings, 0 inside .venv             (works)
+#
+# This file previously read `exclude = THE-GEMSTONE,node_modules,.venv,...`,
+# which excluded nothing: 84% of the findings came from .venv, the very
+# directory it named. The other four names looked like they worked only
+# because none of them contains any Python. Globs are used here rather than
+# `./` prefixes so the match holds however bandit is invoked.
+#
+# `.git` is dropped from the list — bandit excludes it by default, along with
+# .svn, CVS, .bzr, .hg, __pycache__, .tox, .eggs and *.egg. Naming it here
+# added nothing and made the list look more load-bearing than it was.
 
 [bandit]
-exclude = THE-GEMSTONE,node_modules,.venv,.uv-cache,.git
+exclude = */THE-GEMSTONE/*,*/node_modules/*,*/.venv/*,*/.uv-cache/*
