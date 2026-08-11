@@ -16,10 +16,10 @@ You **MUST** consider the user input before proceeding (if not empty).
 
    > `$KIT_ROOT` is provided by the calling agent.
 
-   - Bash example: `$KIT_ROOT/skills/scripts/bash/setup-plan.sh --json` 
+   - Bash example: `$KIT_ROOT/skills/scripts/bash/setup-plan.sh --json`
    - PowerShell example: `$KIT_ROOT/skills/scripts/powershell/setup-plan.ps1 -Json`
 
-2. **Load context**: 
+2. **Load context**:
    1. Read FEATURE_SPEC and `$APPMOD_DIR/constitution.md`. Load IMPL_PLAN template (already copied).
    2. Read KNOWLEDGE_GRAPH
 
@@ -53,7 +53,8 @@ You **MUST** consider the user input before proceeding (if not empty).
    - Calculate coverage percentage
 
 7. **Validate Checkpoint**:
-   ```
+
+   ```markdown
    CRITICAL ERRORS (must fix before proceeding):
    - Any requirement with status: "missing"
    - Coverage percentage < 100%
@@ -113,7 +114,7 @@ You **MUST** consider the user input before proceeding (if not empty).
 
 #### API Contracts
 
-2. **Generate API contracts** from functional requirements:
+1. **Generate API contracts** from functional requirements:
    - For each user action → endpoint
    - Use standard REST/GraphQL patterns
    - Output OpenAPI/GraphQL schema to `/contracts/`
@@ -173,6 +174,7 @@ After plan.md is complete, generate the traceability checkpoint:
 1. **Create checkpoint directory**: `FEATURE_DIR/checkpoints/` (if not exists)
 
 2. **Extract requirement inventory from spec**:
+
    ```yaml
    # Scan spec for REQ-XXX patterns
    requirements_found:
@@ -183,6 +185,7 @@ After plan.md is complete, generate the traceability checkpoint:
    ```
 
 3. **Extract plan item inventory from plan.md**:
+
    ```yaml
    # Scan plan for phase items
    plan_items_found:
@@ -199,6 +202,7 @@ After plan.md is complete, generate the traceability checkpoint:
    - Mark plan items as: traced | orphan
 
 5. **Generate checkpoint YAML**:
+
    ```yaml
    # checkpoints/spec-to-plan.yaml
    metadata:
@@ -234,7 +238,7 @@ After plan.md is complete, generate the traceability checkpoint:
    ```
 
 6. **Validation Gate**:
-   - If `validation.passed == false`: 
+   - If `validation.passed == false`:
      - Display missing requirements
      - Ask user to either:
        a) Update plan to cover missing requirements

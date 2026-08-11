@@ -1,4 +1,5 @@
 ---
+title: "RT @KBSX915 Perpetua Resources (formerly Midas Gold) will..."
 date: 2021-07-22
 time: 18:50:05
 tweet_id: "1418282216254107649"

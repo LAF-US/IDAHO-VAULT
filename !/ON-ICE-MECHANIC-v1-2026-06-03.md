@@ -94,7 +94,7 @@ dangerous capability inert by *condition*, not by removal.
 **Contrast within the containment family** (this is the on-ice entry):
 
 | Type | Holds by | Upkeep | Failure mode |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **Sealed Evil** (founding seal) | a permanent binding | seal integrity / readiness to re-contain | **release on breach** — heavy to breach, but the threat is freed if the binding is undone (Bahumat/Muriel) |
 | **The Knots** (Muriel) | a finite set of seals | none | spent open, one favor at a time |
 | **The Quiet Box** | suspended isolation | none | blind release on swap |
@@ -136,4 +136,8 @@ is a pause, not a prison.
 - **Honest limit:** Kerr gives the *rule* (cold pacifies djinn), not a deep
   *why.* The mechanic generalizes the rule; it does not explain it.
 
-###### [["The world is quiet here."]]
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

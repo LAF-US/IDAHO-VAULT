@@ -1,4 +1,5 @@
 ---
+title: "RT @racheld_cohen .@IDHW said it would release a COVID-19..."
 date: 2021-01-08
 time: 18:07:59
 tweet_id: "1347605987239235584"

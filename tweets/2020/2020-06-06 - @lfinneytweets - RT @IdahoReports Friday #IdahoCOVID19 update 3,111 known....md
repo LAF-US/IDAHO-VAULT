@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Friday #IdahoCOVID19 update 3,111 known..."
 date: 2020-06-06
 time: 01:15:13
 tweet_id: "1269075339319185409"

@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports This week, @ruthbrownnews explores Idaho\u2019s..."
 date: 2024-11-23
 time: 01:15:25
 tweet_id: "1860129997962498315"

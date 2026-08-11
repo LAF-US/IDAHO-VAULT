@@ -59,7 +59,7 @@ crewai train -n 3 -f trained_agents_data.pkl
 ```
 
 | Parameter | Required | Description |
-|---|---|---|
+| --- | --- | --- |
 | `-n` / `--n_iterations` | Yes | Number of training iterations (positive integer) |
 | `-f` / `--filename` | No | Output `.pkl` filename (default: `trained_agents_data.pkl`) |
 
@@ -70,7 +70,7 @@ Known issue: filename must end with `.pkl` or the CLI raises `ValueError`.
 ## What Training Produces
 
 | File | Contents | Persistence |
-|---|---|---|
+| --- | --- | --- |
 | `training_data.pkl` | Raw human feedback + task output per iteration | Ephemeral - gitignored |
 | `trained_agents_data.pkl` | LLM summary of all training interactions | Durable - commit only with Logan approval |
 
@@ -93,7 +93,7 @@ and Logan approves the behavioral baseline.
 ## Crew Readiness States
 
 | State | Meaning | Can run | Can train |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Registered | Present in `.crewai/MANIFEST.md` with a declared purpose | Yes | Not necessarily |
 | Runnable | Executes successfully through a supported runner | Yes | Not necessarily |
 | Training-ready | Has live config, human-feedback task design, and approved credential posture | Yes | Yes |
@@ -107,7 +107,7 @@ training target.
 ## Current Crewing Census
 
 | Crew | Status | Agent(s) | Task(s) | Training posture |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | `idaho_vault.bootstrap` | Active | `bootstrap_validator` | `deployment_probe` | Not training-ready; validation shard only |
 | JFAC Parser | Historical / retired harbor | Budget Scout, Legislative Tracker, H911 Parser | Historical WHO/WHAT/WHEN/WHERE/WHY pattern | Not live |
 | Task-to-Code Bridge | Stub only | Task-to-Code Agent | Pending | Not live |
@@ -164,7 +164,7 @@ Bartimaeus, The Volunteer, anchors this table as witness to whether
 assignments are actually kept.
 
 | Vault Agent | Persona | Crew | Crew Role | Status |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | - | Bootstrap Validator | `idaho_vault.bootstrap` | Deployment-contract validator | Active, but validation-only |
 | - | Budget Scout | JFAC Parser | Researcher: budget extraction | Pending crew re-foundation |
 | - | Legislative Tracker | JFAC Parser | Researcher: bill/vote tracking | Pending crew re-foundation |
@@ -212,7 +212,7 @@ Aim for 3-5 iterations minimum once a crew is truly training-ready.
 ## Blocked Items
 
 | Blocker | Priority | Gate |
-|---|---|---|
+| --- | --- | --- |
 | Live model credentials for future non-mock crews | HIGH | Hard gate - no credentialed training runs without credits and explicit approval |
 | Crew re-foundation beyond bootstrap | HIGH | Bootstrap is live, but no broader crew is training-ready yet |
 | Bartimaeus capability tier decision | MEDIUM | Awaiting Logan |
@@ -232,4 +232,6 @@ Aim for 3-5 iterations minimum once a crew is truly training-ready.
 
 ---
 
-###### The world is quiet here.
+```text
+The world is quiet here．Esto Perpetua!
+```

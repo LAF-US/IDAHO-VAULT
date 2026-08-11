@@ -1,4 +1,5 @@
 ---
+title: "RT @NWPBroadcasting Moscow, Idaho today \u2b07\ufe0f\u2b07\ufe0f\u2b07\ufe0f"
 date: 2020-06-03
 time: 22:02:30
 tweet_id: "1268302065098358785"

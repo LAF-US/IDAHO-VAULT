@@ -22,7 +22,7 @@ Throughout the book, many V.F.D. codes are explained, such as:
 - "Well young lady, have you been good to your mother?", used by an elderly man in a flowery shirt, striped tie, tweed coat, and plaid slacks with sharp creases and shined shoes. The correct response to the question would be "The question is, has she been good to me?"
 - Mozart's 14th symphony, when whistled, is said to be a code.
 
-## The Pony Party!
+## The Pony Party
 
 ![The Pony Party! reversible cover](https://static.wikia.nocookie.net/snicket/images/9/90/Snicketfull_1288x500.jpg/revision/latest/scale-to-width-down/250?cb=20160108085750)
 
@@ -301,28 +301,28 @@ The scraps include:
 - The passage from *The Reptile Room* in which Klaus reads about the Mamba du Mal.
 - A passage about the Mamba du Mal written by Monty, from *[The Mamba du Mal: A Snake That Will Never Kill Me](https://snicket.fandom.com/wiki/The_Mamba_du_Mal:_A_Snake_That_Will_Never_Kill_Me "The Mamba du Mal: A Snake That Will Never Kill Me"),* mentioning that certain specimens of the snake have been trained to recite codes. He notes that the only other animal trained to do such is the common grass cricket.
 - A page from " [The Three Languages](https://en.wikipedia.org/wiki/The_Three_Languages) " from *Grimm's Fairy Tales,* telling the story of a Count's dimwitted son who learned the language of the dogs, the birds, and the crickets.
-	- Note: while the excerpt contained in this segment says that the boy has learned the language of the crickets, the original fairy tale has him learn the language of the frogs. This could presumably be a signal, similar to Verse Fluctuation Declaration, to draw attention to crickets, which are known to send V.F.D codes.
+  - Note: while the excerpt contained in this segment says that the boy has learned the language of the crickets, the original fairy tale has him learn the language of the frogs. This could presumably be a signal, similar to Verse Fluctuation Declaration, to draw attention to crickets, which are known to send V.F.D codes.
 - A segment from *Little House in the Big Woods* where Laura hears howls of wolves at night, coming closer to the house, and a bit from *For Esmé, with Love and Squalor,* reading, "It happens to be a wedding I'd give a lot to be able to get to and when the invitation firs arrived, I thought it might just be possible for me to make the trip..."
-	- The excerpt from *Little House in the Big Woods* is also given the notation: "Found Tangled in the branches of [Nevermore Tree](https://snicket.fandom.com/wiki/Nevermore_Tree "Nevermore Tree")."
+  - The excerpt from *Little House in the Big Woods* is also given the notation: "Found Tangled in the branches of [Nevermore Tree](https://snicket.fandom.com/wiki/Nevermore_Tree "Nevermore Tree")."
 - A rhyme about bells from Edgar Allen Poe's *The Bells,* and a bit from *The History of Lucky Smells Lumbermill* describing how Sir used to use special "emerald lumber" to construct V.F.D headquarters and for a few homes, including mansions constructed by the Snicket, Quagmire and Baudelaire families.
 - A segment from [Carmelita Spats](https://snicket.fandom.com/wiki/Carmelita_Spats "Carmelita Spats") 's book, *[Me: The Completely Authorized Autobiography of the Prettiest, Smartest, Most Darling Girl in the Whole Wide World](https://snicket.fandom.com/wiki/Me_\(The_Completely_Authorized_Autobiography\) "Me (The Completely Authorized Autobiography)")*, where she goes to the library. The V.F.D librarian tries to give her a message, to which she responds, "Go away, creep."
 - Part of *Charlotte's Web,* describing how the crickets sang of summer's ending. (Note: Monty mentioned that "Summer is" was a code to be sent by the crickets/Mamba du Mal to communicate that enemies were nearby.)
 - A passage from *Green Mansions* describing a darkened chamber, and a second passage from *The Bells.*
 - A passage from *[The Littlest Elf](https://snicket.fandom.com/wiki/The_Littlest_Elf "The Littlest Elf")* by Monty Kensicle, about how the little elf loves the sound of bells.
 - A list of Olaf's potential associates, deciding that there are at least 25 and possibly more than 41. This list includes:
-	- The Bald Man with a Long Nose
-		- [White-Faced Women](https://snicket.fandom.com/wiki/White-Faced_Women "White-Faced Women")
-		- [Hook-Handed Man](https://snicket.fandom.com/wiki/Fernald "Fernald")
-		- [Henchperson of Indeterminate Gender](https://snicket.fandom.com/wiki/Henchperson_of_Indeterminate_Gender "Henchperson of Indeterminate Gender")
-		- "Assortment of people the children could not see." (7?)
-		- [Ivan Lachrymose](https://snicket.fandom.com/wiki/Ivan_Lachrymose "Ivan Lachrymose")
-		- Esmé Squalor Fan Club (14) *(+who took the photo?)*
-		- "Enemies are nearby" (6?)
-		- Old Count
-		- An only son
-		- Professors (3)
-		- Lena Pukalie
-		- "a man's life" (1?)
+  - The Bald Man with a Long Nose
+    - [White-Faced Women](https://snicket.fandom.com/wiki/White-Faced_Women "White-Faced Women")
+    - [Hook-Handed Man](https://snicket.fandom.com/wiki/Fernald "Fernald")
+    - [Henchperson of Indeterminate Gender](https://snicket.fandom.com/wiki/Henchperson_of_Indeterminate_Gender "Henchperson of Indeterminate Gender")
+    - "Assortment of people the children could not see." (7?)
+    - [Ivan Lachrymose](https://snicket.fandom.com/wiki/Ivan_Lachrymose "Ivan Lachrymose")
+    - Esmé Squalor Fan Club (14) *(+who took the photo?)*
+    - "Enemies are nearby" (6?)
+    - Old Count
+    - An only son
+    - Professors (3)
+    - Lena Pukalie
+    - "a man's life" (1?)
 
 Next is a letter from [Babs](https://snicket.fandom.com/wiki/Babs "Babs") to [Hal](https://snicket.fandom.com/wiki/Hal "Hal"), saying that the enclosed papers are to be filed under Baudelaire even though they are marked Snicket; the contest appear to be "various attempts to compose an opening sentence for a rather ruesome-sounding children's book."
 
@@ -431,7 +431,7 @@ Snicket's burial.
 
 Verse One - Little Snicket Lad
 
- [![](https://static.wikia.nocookie.net/snicket/images/3/3d/Verydeadlylake.PNG/revision/latest/scale-to-width-down/150?cb=20190912224108 "Verydeadlylake.PNG (316 KB)") ![](https://static.wikia.nocookie.net/snicket/images/3/3d/Verydeadlylake.PNG/revision/latest/scale-to-width-down/150?cb=20190912224108 "Verydeadlylake.PNG (316 KB)")](https://snicket.fandom.com/wiki/File:Verydeadlylake.PNG "Verydeadlylake.PNG (316 KB)")
+ [![alt text needed](https://static.wikia.nocookie.net/snicket/images/3/3d/Verydeadlylake.PNG/revision/latest/scale-to-width-down/150?cb=20190912224108 "Verydeadlylake.PNG (316 KB)") ![alt text needed](https://static.wikia.nocookie.net/snicket/images/3/3d/Verydeadlylake.PNG/revision/latest/scale-to-width-down/150?cb=20190912224108 "Verydeadlylake.PNG (316 KB)")](https://snicket.fandom.com/wiki/File:Verydeadlylake.PNG "Verydeadlylake.PNG (316 KB)")
 
 [![Chorus - Little Snicket Lad](https://static.wikia.nocookie.net/snicket/images/f/f0/Littlesnicketlad2.PNG/revision/latest/scale-to-width-down/109?cb=20190912152203 "Littlesnicketlad2.PNG (452 KB)")](https://snicket.fandom.com/wiki/File:Littlesnicketlad2.PNG "Littlesnicketlad2.PNG (452 KB)")
 
@@ -787,27 +787,27 @@ Valorous Farms Dairy.
 
 Snicket family tree.
 
- [![](https://static.wikia.nocookie.net/snicket/images/e/e9/Tua13-1.png/revision/latest/scale-to-width-down/150?cb=20190912205041 "Tua13-1.png (943 KB)") ![](https://static.wikia.nocookie.net/snicket/images/e/e9/Tua13-1.png/revision/latest/scale-to-width-down/150?cb=20190912205041 "Tua13-1.png (943 KB)")](https://snicket.fandom.com/wiki/File:Tua13-1.png "Tua13-1.png (943 KB)")
+ [![alt text needed](https://static.wikia.nocookie.net/snicket/images/e/e9/Tua13-1.png/revision/latest/scale-to-width-down/150?cb=20190912205041 "Tua13-1.png (943 KB)") ![alt text needed](https://static.wikia.nocookie.net/snicket/images/e/e9/Tua13-1.png/revision/latest/scale-to-width-down/150?cb=20190912205041 "Tua13-1.png (943 KB)")](https://snicket.fandom.com/wiki/File:Tua13-1.png "Tua13-1.png (943 KB)")
 
- [![](https://static.wikia.nocookie.net/snicket/images/7/7f/Tua13-2.png/revision/latest/scale-to-width-down/150?cb=20190912205026 "Tua13-2.png (539 KB)") ![](https://static.wikia.nocookie.net/snicket/images/7/7f/Tua13-2.png/revision/latest/scale-to-width-down/150?cb=20190912205026 "Tua13-2.png (539 KB)")](https://snicket.fandom.com/wiki/File:Tua13-2.png "Tua13-2.png (539 KB)")
+ [![alt text needed](https://static.wikia.nocookie.net/snicket/images/7/7f/Tua13-2.png/revision/latest/scale-to-width-down/150?cb=20190912205026 "Tua13-2.png (539 KB)") ![alt text needed](https://static.wikia.nocookie.net/snicket/images/7/7f/Tua13-2.png/revision/latest/scale-to-width-down/150?cb=20190912205026 "Tua13-2.png (539 KB)")](https://snicket.fandom.com/wiki/File:Tua13-2.png "Tua13-2.png (539 KB)")
 
 [![Great(?) Britain](https://static.wikia.nocookie.net/snicket/images/5/54/Tua13-3.png/revision/latest/scale-to-width-down/150?cb=20190912205011 "Tua13-3.png (1.06 MB)")](https://snicket.fandom.com/wiki/File:Tua13-3.png "Tua13-3.png (1.06 MB)")
 
 Great(?) Britain
 
- [![](https://static.wikia.nocookie.net/snicket/images/d/de/Tua13-4.png/revision/latest/scale-to-width-down/150?cb=20190912204956 "Tua13-4.png (856 KB)") ![](https://static.wikia.nocookie.net/snicket/images/d/de/Tua13-4.png/revision/latest/scale-to-width-down/150?cb=20190912204956 "Tua13-4.png (856 KB)")](https://snicket.fandom.com/wiki/File:Tua13-4.png "Tua13-4.png (856 KB)")
+ [![alt text needed](https://static.wikia.nocookie.net/snicket/images/d/de/Tua13-4.png/revision/latest/scale-to-width-down/150?cb=20190912204956 "Tua13-4.png (856 KB)") ![alt text needed](https://static.wikia.nocookie.net/snicket/images/d/de/Tua13-4.png/revision/latest/scale-to-width-down/150?cb=20190912204956 "Tua13-4.png (856 KB)")](https://snicket.fandom.com/wiki/File:Tua13-4.png "Tua13-4.png (856 KB)")
 
 [![I arrived too late--they'd already removed it.](https://static.wikia.nocookie.net/snicket/images/6/6f/Tua13-5.png/revision/latest/scale-to-width-down/150?cb=20190912204944 "Tua13-5.png (975 KB)")](https://snicket.fandom.com/wiki/File:Tua13-5.png "Tua13-5.png (975 KB)")
 
 I arrived too late--they'd already removed it.
 
- [![](https://static.wikia.nocookie.net/snicket/images/8/8b/Tua13-6.png/revision/latest/scale-to-width-down/150?cb=20190912204934 "Tua13-6.png (791 KB)") ![](https://static.wikia.nocookie.net/snicket/images/8/8b/Tua13-6.png/revision/latest/scale-to-width-down/150?cb=20190912204934 "Tua13-6.png (791 KB)")](https://snicket.fandom.com/wiki/File:Tua13-6.png "Tua13-6.png (791 KB)")
+ [![alt text needed](https://static.wikia.nocookie.net/snicket/images/8/8b/Tua13-6.png/revision/latest/scale-to-width-down/150?cb=20190912204934 "Tua13-6.png (791 KB)") ![alt text needed](https://static.wikia.nocookie.net/snicket/images/8/8b/Tua13-6.png/revision/latest/scale-to-width-down/150?cb=20190912204934 "Tua13-6.png (791 KB)")](https://snicket.fandom.com/wiki/File:Tua13-6.png "Tua13-6.png (791 KB)")
 
 [![It turned out there was a floor above the penthouse.](https://static.wikia.nocookie.net/snicket/images/2/23/Tua13-7.png/revision/latest/scale-to-width-down/150?cb=20190912204925 "Tua13-7.png (932 KB)")](https://snicket.fandom.com/wiki/File:Tua13-7.png "Tua13-7.png (932 KB)")
 
 It turned out there was a floor above the penthouse.
 
- [![](https://static.wikia.nocookie.net/snicket/images/2/26/Tua13-8.png/revision/latest/scale-to-width-down/122?cb=20190912204911 "Tua13-8.png (749 KB)") ![](https://static.wikia.nocookie.net/snicket/images/2/26/Tua13-8.png/revision/latest/scale-to-width-down/122?cb=20190912204911 "Tua13-8.png (749 KB)")](https://snicket.fandom.com/wiki/File:Tua13-8.png "Tua13-8.png (749 KB)")
+ [![alt text needed](https://static.wikia.nocookie.net/snicket/images/2/26/Tua13-8.png/revision/latest/scale-to-width-down/122?cb=20190912204911 "Tua13-8.png (749 KB)") ![alt text needed](https://static.wikia.nocookie.net/snicket/images/2/26/Tua13-8.png/revision/latest/scale-to-width-down/122?cb=20190912204911 "Tua13-8.png (749 KB)")](https://snicket.fandom.com/wiki/File:Tua13-8.png "Tua13-8.png (749 KB)")
 
 [![...did not stop weeping for nine days.](https://static.wikia.nocookie.net/snicket/images/3/38/Tua13-9.png/revision/latest/scale-to-width-down/141?cb=20190912204903 "Tua13-9.png (1.04 MB)")](https://snicket.fandom.com/wiki/File:Tua13-9.png "Tua13-9.png (1.04 MB)")
 
@@ -821,33 +821,33 @@ It turned out there was a floor above the penthouse.
 
 Very fast delivery.
 
- [![](https://static.wikia.nocookie.net/snicket/images/3/32/Tua13-12.png/revision/latest/scale-to-width-down/150?cb=20190912204838 "Tua13-12.png (867 KB)") ![](https://static.wikia.nocookie.net/snicket/images/3/32/Tua13-12.png/revision/latest/scale-to-width-down/150?cb=20190912204838 "Tua13-12.png (867 KB)")](https://snicket.fandom.com/wiki/File:Tua13-12.png "Tua13-12.png (867 KB)")
+ [![alt text needed](https://static.wikia.nocookie.net/snicket/images/3/32/Tua13-12.png/revision/latest/scale-to-width-down/150?cb=20190912204838 "Tua13-12.png (867 KB)") ![alt text needed](https://static.wikia.nocookie.net/snicket/images/3/32/Tua13-12.png/revision/latest/scale-to-width-down/150?cb=20190912204838 "Tua13-12.png (867 KB)")](https://snicket.fandom.com/wiki/File:Tua13-12.png "Tua13-12.png (867 KB)")
 
 [![...could not possibly have been at the same time.](https://static.wikia.nocookie.net/snicket/images/e/e1/Tua13-13.png/revision/latest/scale-to-width-down/150?cb=20190912204828 "Tua13-13.png (951 KB)")](https://snicket.fandom.com/wiki/File:Tua13-13.png "Tua13-13.png (951 KB)")
 
 ...could not possibly have been at the same time.
 
- [![](https://static.wikia.nocookie.net/snicket/images/5/50/Tua13-14.png/revision/latest/scale-to-width-down/150?cb=20190912204805 "Tua13-14.png (887 KB)") ![](https://static.wikia.nocookie.net/snicket/images/5/50/Tua13-14.png/revision/latest/scale-to-width-down/150?cb=20190912204805 "Tua13-14.png (887 KB)")](https://snicket.fandom.com/wiki/File:Tua13-14.png "Tua13-14.png (887 KB)")
+ [![alt text needed](https://static.wikia.nocookie.net/snicket/images/5/50/Tua13-14.png/revision/latest/scale-to-width-down/150?cb=20190912204805 "Tua13-14.png (887 KB)") ![alt text needed](https://static.wikia.nocookie.net/snicket/images/5/50/Tua13-14.png/revision/latest/scale-to-width-down/150?cb=20190912204805 "Tua13-14.png (887 KB)")](https://snicket.fandom.com/wiki/File:Tua13-14.png "Tua13-14.png (887 KB)")
 
 [![After the schism,](https://static.wikia.nocookie.net/snicket/images/7/79/Tua13-15.png/revision/latest/scale-to-width-down/150?cb=20190912204756 "Tua13-15.png (1.06 MB)")](https://snicket.fandom.com/wiki/File:Tua13-15.png "Tua13-15.png (1.06 MB)")
 
 After the schism,
 
- [![](https://static.wikia.nocookie.net/snicket/images/3/30/Tua13-16.png/revision/latest/scale-to-width-down/150?cb=20190912204746 "Tua13-16.png (587 KB)") ![](https://static.wikia.nocookie.net/snicket/images/3/30/Tua13-16.png/revision/latest/scale-to-width-down/150?cb=20190912204746 "Tua13-16.png (587 KB)")](https://snicket.fandom.com/wiki/File:Tua13-16.png "Tua13-16.png (587 KB)")
+ [![alt text needed](https://static.wikia.nocookie.net/snicket/images/3/30/Tua13-16.png/revision/latest/scale-to-width-down/150?cb=20190912204746 "Tua13-16.png (587 KB)") ![alt text needed](https://static.wikia.nocookie.net/snicket/images/3/30/Tua13-16.png/revision/latest/scale-to-width-down/150?cb=20190912204746 "Tua13-16.png (587 KB)")](https://snicket.fandom.com/wiki/File:Tua13-16.png "Tua13-16.png (587 KB)")
 
 [![I thought one of the cars was behaving strangely.](https://static.wikia.nocookie.net/snicket/images/0/00/Tua13-17.png/revision/latest/scale-to-width-down/150?cb=20190912204736 "Tua13-17.png (1.02 MB)")](https://snicket.fandom.com/wiki/File:Tua13-17.png "Tua13-17.png (1.02 MB)")
 
 I thought one of the cars was behaving strangely.
 
- [![](https://static.wikia.nocookie.net/snicket/images/4/46/Tua13-18.png/revision/latest/scale-to-width-down/150?cb=20190912204727 "Tua13-18.png (841 KB)") ![](https://static.wikia.nocookie.net/snicket/images/4/46/Tua13-18.png/revision/latest/scale-to-width-down/150?cb=20190912204727 "Tua13-18.png (841 KB)")](https://snicket.fandom.com/wiki/File:Tua13-18.png "Tua13-18.png (841 KB)")
+ [![alt text needed](https://static.wikia.nocookie.net/snicket/images/4/46/Tua13-18.png/revision/latest/scale-to-width-down/150?cb=20190912204727 "Tua13-18.png (841 KB)") ![alt text needed](https://static.wikia.nocookie.net/snicket/images/4/46/Tua13-18.png/revision/latest/scale-to-width-down/150?cb=20190912204727 "Tua13-18.png (841 KB)")](https://snicket.fandom.com/wiki/File:Tua13-18.png "Tua13-18.png (841 KB)")
 
 [![If there's nothing out there,](https://static.wikia.nocookie.net/snicket/images/a/ac/Tua13-19.png/revision/latest/scale-to-width-down/141?cb=20190912204714 "Tua13-19.png (785 KB)")](https://snicket.fandom.com/wiki/File:Tua13-19.png "Tua13-19.png (785 KB)")
 
 If there's nothing out there,
 
- [![](https://static.wikia.nocookie.net/snicket/images/1/13/Tua13-20.png/revision/latest/scale-to-width-down/150?cb=20190912204704 "Tua13-20.png (590 KB)") ![](https://static.wikia.nocookie.net/snicket/images/1/13/Tua13-20.png/revision/latest/scale-to-width-down/150?cb=20190912204704 "Tua13-20.png (590 KB)")](https://snicket.fandom.com/wiki/File:Tua13-20.png "Tua13-20.png (590 KB)")
+ [![alt text needed](https://static.wikia.nocookie.net/snicket/images/1/13/Tua13-20.png/revision/latest/scale-to-width-down/150?cb=20190912204704 "Tua13-20.png (590 KB)") ![alt text needed](https://static.wikia.nocookie.net/snicket/images/1/13/Tua13-20.png/revision/latest/scale-to-width-down/150?cb=20190912204704 "Tua13-20.png (590 KB)")](https://snicket.fandom.com/wiki/File:Tua13-20.png "Tua13-20.png (590 KB)")
 
- [![](https://static.wikia.nocookie.net/snicket/images/c/c6/Tua13-21.png/revision/latest/scale-to-width-down/150?cb=20190912204654 "Tua13-21.png (690 KB)") ![](https://static.wikia.nocookie.net/snicket/images/c/c6/Tua13-21.png/revision/latest/scale-to-width-down/150?cb=20190912204654 "Tua13-21.png (690 KB)")](https://snicket.fandom.com/wiki/File:Tua13-21.png "Tua13-21.png (690 KB)")
+ [![alt text needed](https://static.wikia.nocookie.net/snicket/images/c/c6/Tua13-21.png/revision/latest/scale-to-width-down/150?cb=20190912204654 "Tua13-21.png (690 KB)") ![alt text needed](https://static.wikia.nocookie.net/snicket/images/c/c6/Tua13-21.png/revision/latest/scale-to-width-down/150?cb=20190912204654 "Tua13-21.png (690 KB)")](https://snicket.fandom.com/wiki/File:Tua13-21.png "Tua13-21.png (690 KB)")
 
 ## Sources
 

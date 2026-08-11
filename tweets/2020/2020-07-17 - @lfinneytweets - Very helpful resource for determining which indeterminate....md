@@ -1,4 +1,5 @@
 ---
+title: "Very helpful resource for determining which indeterminate..."
 date: 2020-07-17
 time: 16:41:29
 tweet_id: "1284166344208838663"
@@ -14,10 +15,10 @@ related:
   - lfinneytweets
 ---
 
-Very helpful resource for determining which indeterminate concept of a city you live under:  https://t.co/FHwRNn8Cy0
+Very helpful resource for determining which indeterminate concept of a city you live under:  <https://t.co/FHwRNn8Cy0>
 
 ## Links
-- http://opendata.cityofboise.org/datasets/boise::ada-county-city-limits
+- <http://opendata.cityofboise.org/datasets/boise::ada-county-city-limits>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

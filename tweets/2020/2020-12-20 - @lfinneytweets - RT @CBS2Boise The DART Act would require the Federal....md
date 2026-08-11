@@ -1,4 +1,5 @@
 ---
+title: "RT @CBS2Boise The DART Act would require the Federal..."
 date: 2020-12-20
 time: 19:29:00
 tweet_id: "1340741006434525184"

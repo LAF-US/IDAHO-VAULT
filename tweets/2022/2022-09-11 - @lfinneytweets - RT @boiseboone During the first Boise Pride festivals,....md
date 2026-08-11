@@ -1,4 +1,5 @@
 ---
+title: "RT @boiseboone During the first Boise Pride festivals,..."
 date: 2022-09-11
 time: 02:51:39
 tweet_id: "1568794368995393537"

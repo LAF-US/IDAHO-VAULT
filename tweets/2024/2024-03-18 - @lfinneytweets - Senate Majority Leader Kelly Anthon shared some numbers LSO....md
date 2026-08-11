@@ -1,4 +1,5 @@
 ---
+title: "Senate Majority Leader Kelly Anthon shared some numbers LSO..."
 date: 2024-03-18
 time: 18:10:33
 tweet_id: "1769788497005514823"

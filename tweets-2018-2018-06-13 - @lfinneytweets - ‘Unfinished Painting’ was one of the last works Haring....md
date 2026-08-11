@@ -14,10 +14,11 @@ related:
   - lfinneytweets
 ---
 
-‘Unfinished Painting’ was one of the last works Haring completed before  his death from AIDS at the age of 31. The painting is left intentionally incomplete to symbolize the lives cut short by the AIDS virus. https://t.co/q29phjjKvZ
+‘Unfinished Painting’ was one of the last works Haring completed before  his death from AIDS at the age of 31. The painting is left intentionally incomplete to symbolize the lives cut short by the AIDS virus. <https://t.co/q29phjjKvZ>
 
 ## Media
-- ![](https://pbs.twimg.com/media/Dfje1jJW0AAIc7s.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/Dfje1jJW0AAIc7s.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

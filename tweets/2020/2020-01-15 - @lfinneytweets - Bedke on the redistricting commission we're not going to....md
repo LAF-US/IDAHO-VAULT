@@ -1,4 +1,5 @@
 ---
+title: "Bedke on the redistricting commission we're not going to..."
 date: 2020-01-15
 time: 21:40:43
 tweet_id: "1217562280285462528"

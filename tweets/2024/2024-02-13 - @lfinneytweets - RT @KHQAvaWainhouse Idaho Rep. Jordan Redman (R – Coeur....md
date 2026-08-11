@@ -1,4 +1,5 @@
 ---
+title: "RT @KHQAvaWainhouse Idaho Rep. Jordan Redman (R \u2013 Coeur..."
 date: 2024-02-13
 time: 19:58:48
 tweet_id: "1757494551642820669"

@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2020-04-10
 time: 04:54:25
 tweet_id: "1248474392234831873"
@@ -14,10 +15,10 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/3hsfM9kPNj
+<https://t.co/3hsfM9kPNj>
 
 ## Links
-- https://x.com/lfinneytweets/status/1248472794616098818
+- <https://x.com/lfinneytweets/status/1248472794616098818>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports #IdahoCOVID19 update for April 6th"
 date: 2020-04-07
 time: 00:51:13
 tweet_id: "1247326024838176768"
@@ -19,9 +20,9 @@ related:
 ---
 
 RT @IdahoReports: #IdahoCOVID19 update for April 6th 
-https://t.co/ZVtpTwmVIf
+<https://t.co/ZVtpTwmVIf>
 
 ## Links
-- https://www.youtube.com/watch?v=XOPJqwnPdHY
+- <https://www.youtube.com/watch?v=XOPJqwnPdHY>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1247326024838176768)

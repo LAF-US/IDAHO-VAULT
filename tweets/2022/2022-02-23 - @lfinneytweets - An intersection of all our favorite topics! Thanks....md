@@ -1,4 +1,5 @@
 ---
+title: "An intersection of all our favorite topics! Thanks..."
 date: 2022-02-23
 time: 21:09:30
 tweet_id: "1496593082053054465"
@@ -15,9 +16,9 @@ related:
   - lfinneytweets
 ---
 
-An intersection of all our favorite topics! Thanks @mlcarmel for joining me this morning. https://t.co/uxJvcyukRa
+An intersection of all our favorite topics! Thanks @mlcarmel for joining me this morning. <https://t.co/uxJvcyukRa>
 
 ## Links
-- https://x.com/IdahoReports/status/1496592546000039936
+- <https://x.com/IdahoReports/status/1496592546000039936>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1496593082053054465)

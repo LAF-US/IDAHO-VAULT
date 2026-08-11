@@ -5,4 +5,4 @@ related:
 - Pocatello
 authority: LOGAN
 ---
-Pocatello/Chubbuck, Bannock County 
+Pocatello/Chubbuck, Bannock County

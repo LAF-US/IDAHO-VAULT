@@ -43,11 +43,11 @@ related:
 - West Ada School District
 authority: LOGAN
 ---
-commissioned by Gov. Butch Otter and continued by Brad Little 
+commissioned by Gov. Butch Otter and continued by Brad Little
 
-https://boardofed.idaho.gov/education-initiatives/our-kids-idahos-future/
+<https://boardofed.idaho.gov/education-initiatives/our-kids-idahos-future/>
 
-| Name | Affiliation |
+|Name|Affiliation|
 |---|---|
 |**Debbie Critchfield, Co-Chair**|**President, Idaho State Board of Education**|
 |**Bill Gilbert, Co-Chair**|**Co-Founder and Managing Director, Caprock, Boise**|

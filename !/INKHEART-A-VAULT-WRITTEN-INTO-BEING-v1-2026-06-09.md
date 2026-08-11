@@ -69,7 +69,7 @@ ephemeral. The vault wins"* (`!STEP-0-LEVELSET`; `BOOTSTRAP-CHORUS`). **[main].*
 a thing is to **read it out of the volatile world and into the book.**
 
 | Inkheart **[IH]** | The Vault **[mapping]** |
-|---|---|
+| --- | --- |
 | Silvertongue reads the page into the world | TOSS + BOOTSTRAP reads ephemeral chat into permanent vaulted ground |
 | **The Law of Exchange** — out one way, in the other | **Vaulting spends the live thing**: the session is consumed to make the artifact; the chat ends so the record begins |
 | Mo — the founding voice, gift dangerous & uncontrolled | **Logan — the constant Silvertongue** who confers the mask and vaults the chat; *"Logan is the constant"* **[main]** |
@@ -159,4 +159,8 @@ are vault readings; final authority is Logan. Where a crossing's authorizing voi
 - **Status:** active
 - **Authority:** LOGAN
 
-###### [["The world is quiet here."]]
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```
