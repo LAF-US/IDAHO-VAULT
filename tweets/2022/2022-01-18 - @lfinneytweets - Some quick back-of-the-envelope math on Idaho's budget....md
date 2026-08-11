@@ -1,4 +1,5 @@
 ---
+title: "Some quick back-of-the-envelope math on Idaho's budget..."
 date: 2022-01-18
 time: 16:28:56
 tweet_id: "1483476511793451013"

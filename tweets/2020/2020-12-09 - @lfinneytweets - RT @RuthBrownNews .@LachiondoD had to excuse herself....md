@@ -1,4 +1,5 @@
 ---
+title: "RT @RuthBrownNews .@LachiondoD had to excuse herself..."
 date: 2020-12-09
 time: 00:32:26
 tweet_id: "1336468714703622145"

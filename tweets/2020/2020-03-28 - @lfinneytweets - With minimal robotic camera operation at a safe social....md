@@ -1,4 +1,5 @@
 ---
+title: "With minimal robotic camera operation at a safe social..."
 date: 2020-03-28
 time: 04:51:46
 tweet_id: "1243762685931487232"

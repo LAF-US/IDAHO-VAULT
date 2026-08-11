@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Winder Senate will keep..."
 date: 2020-03-17
 time: 21:03:50
 tweet_id: "1240021046792577025"

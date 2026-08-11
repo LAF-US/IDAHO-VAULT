@@ -29,10 +29,11 @@ related:
 - Teton Valley News
 ---
 
-regional newspaper company 
+regional newspaper company
 
 Idaho
-- Idaho Press 
+
+- Idaho Press
 - Post Register
 - Idaho State Journal
 - Rexburg Standard Journal

@@ -1,4 +1,5 @@
 ---
+title: "RT @SpokesmanReview What pandemic To travel from Spokane to..."
 date: 2020-12-08
 time: 20:15:55
 tweet_id: "1336404160049078272"

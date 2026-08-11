@@ -14,10 +14,11 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/PfFXJIU27B
+<https://t.co/PfFXJIU27B>
 
 ## Links
-- http://yankeeforkdredge.com/
+
+- <http://yankeeforkdredge.com/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

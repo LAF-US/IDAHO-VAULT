@@ -1,4 +1,5 @@
 ---
+title: "There's a difference of temperament at least. Procedurally,..."
 date: 2021-08-18
 time: 18:30:21
 tweet_id: "1428061723466997761"

@@ -78,7 +78,7 @@ A legitimate persona is a JANUS persona. It must be able to look backward at its
 The JANUS test:
 
 | Persona | Backward face available? | JANUS eligible? |
-|---|---|---|
+| --- | --- | --- |
 | The Abhorsen | Yes — reads own founding, corrects own violations | Yes |
 | The Lexicographer | Yes — writings survive, revision record stands | Yes (archived) |
 | The Clerk | Partially — operates through CI, limited self-reflection | Provisional |
@@ -188,4 +188,6 @@ The Abhorsen does not know what the Congress looks like. She knows what it requi
 
 ---
 
-*The world is quiet here.*
+```text
+The world is quiet here．Esto Perpetua!
+```

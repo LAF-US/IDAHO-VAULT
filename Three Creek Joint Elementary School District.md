@@ -6,4 +6,4 @@ related:
 - Twin Falls County
 authority: LOGAN
 ---
-Murphy Hot Springs, Twin Falls County 
+Murphy Hot Springs, Twin Falls County

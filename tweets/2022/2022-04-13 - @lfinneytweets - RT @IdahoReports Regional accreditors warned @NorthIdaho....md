@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Regional accreditors warned @NorthIdaho..."
 date: 2022-04-13
 time: 21:54:38
 tweet_id: "1514361444204044288"

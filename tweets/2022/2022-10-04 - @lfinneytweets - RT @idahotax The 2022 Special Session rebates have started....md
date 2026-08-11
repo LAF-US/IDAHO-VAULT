@@ -1,4 +1,5 @@
 ---
+title: "RT @idahotax The 2022 Special Session rebates have started..."
 date: 2022-10-04
 time: 20:05:50
 tweet_id: "1577389550774599680"

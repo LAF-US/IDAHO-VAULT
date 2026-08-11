@@ -5,4 +5,4 @@ related:
 - Idaho County
 authority: LOGAN
 ---
-eastern Clearwater County, northern Idaho County 
+eastern Clearwater County, northern Idaho County

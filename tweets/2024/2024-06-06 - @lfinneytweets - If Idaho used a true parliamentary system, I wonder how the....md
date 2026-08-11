@@ -1,4 +1,5 @@
 ---
+title: "If Idaho used a true parliamentary system, I wonder how the..."
 date: 2024-06-06
 time: 15:59:27
 tweet_id: "1798746534592610476"

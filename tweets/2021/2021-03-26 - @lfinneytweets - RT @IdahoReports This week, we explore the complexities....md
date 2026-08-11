@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports This week, we explore the complexities..."
 date: 2021-03-26
 time: 23:19:06
 tweet_id: "1375588149116559361"

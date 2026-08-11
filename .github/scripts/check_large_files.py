@@ -18,23 +18,17 @@ from pathlib import Path
 
 def _repo_root() -> Path:
     # In CI this script executes from the trusted base-branch checkout
-    # (trusted-main/), while the changed-file list is computed against the
-    # primary workspace (PR head / merge-group tree). Sizes and .gitattributes
-    # LFS filters must be read from that workspace, not from the script's own
-    # checkout — otherwise newly added files are silently skipped and grown
-    # files are measured at their base size. Local (pre-commit) runs have no
-    # GITHUB_WORKSPACE and fall back to the script's own repository.
-    # Trust GITHUB_WORKSPACE only under a real Actions run (GITHUB_ACTIONS is
-    # set by the runner): a stale GITHUB_WORKSPACE in a developer shell could
-    # point at some other real directory, silently scanning the wrong tree.
+    # (trusted-main/), while the content under test is the PRIMARY checkout —
+    # which is exactly the run step's working directory: every policy workflow
+    # invokes this script with cwd at the primary checkout and never sets a
+    # working-directory override. Using the process cwd keeps the
+    # trusted-validator split (trusted code, PR-head content) without deriving
+    # any filesystem path from environment data — there is no tainted-path
+    # flow left for a scanner to model, and no hard-coded runner path to break
+    # on self-hosted runners or a repo rename. Local (pre-commit) runs fall
+    # back to the script's own repository.
     if os.environ.get("GITHUB_ACTIONS") == "true":
-        workspace = os.environ.get("GITHUB_WORKSPACE", "")
-        root = Path(workspace).resolve() if workspace else None
-        if root is None or not root.is_dir():
-            # Fail closed: a bogus workspace would make every scanned path
-            # resolve nonexistent and be silently skipped — a false pass.
-            raise SystemExit(f"GITHUB_WORKSPACE is not a directory: {workspace!r}")
-        return root
+        return Path.cwd()
     return Path(__file__).resolve().parents[2]
 
 
@@ -57,15 +51,21 @@ class Candidate:
 
 
 def run_git(args: list[str]) -> subprocess.CompletedProcess[str]:
-    return subprocess.run(
-        ["git", *args],
-        cwd=REPO_ROOT,
-        text=True,
-        encoding="utf-8",
-        errors="replace",
-        capture_output=True,
-        check=False,
-    )
+    try:
+        return subprocess.run(
+            ["git", *args],
+            cwd=REPO_ROOT,
+            text=True,
+            encoding="utf-8",
+            errors="replace",
+            capture_output=True,
+            check=False,
+            timeout=30,
+        )
+    except subprocess.TimeoutExpired as exc:
+        raise RuntimeError(f"git {args[0]} timed out after 30s") from exc
+    except OSError as exc:
+        raise RuntimeError(f"git {args[0]} could not run: {exc}") from exc
 
 
 def parse_porcelain_line(line: str) -> tuple[str, str] | None:
@@ -176,22 +176,26 @@ def main() -> int:
     if mode_count > 1:
         parser.error("--staged, --all-tracked, and --paths-from-stdin are mutually exclusive")
 
-    if args.all_tracked:
-        candidates = git_ls_files_candidates()
-    elif args.paths_from_stdin:
-        candidates = stdin_path_candidates()
-    else:
-        candidates = changed_candidates(staged_only=args.staged)
+    try:
+        if args.all_tracked:
+            candidates = git_ls_files_candidates()
+        elif args.paths_from_stdin:
+            candidates = stdin_path_candidates()
+        else:
+            candidates = changed_candidates(staged_only=args.staged)
 
-    too_large: list[Candidate] = []
-    missing_lfs: list[Candidate] = []
+        too_large: list[Candidate] = []
+        missing_lfs: list[Candidate] = []
 
-    for candidate in candidates:
-        if candidate.size > lfs_max:
-            too_large.append(candidate)
-            continue
-        if candidate.size > lfs_required and lfs_filter_for(candidate.path) != "lfs":
-            missing_lfs.append(candidate)
+        for candidate in candidates:
+            if candidate.size > lfs_max:
+                too_large.append(candidate)
+                continue
+            if candidate.size > lfs_required and lfs_filter_for(candidate.path) != "lfs":
+                missing_lfs.append(candidate)
+    except RuntimeError as exc:
+        print(f"large-file guard: {exc}", file=sys.stderr)
+        return 1
 
     if not too_large and not missing_lfs:
         print("large-file guard: OK")

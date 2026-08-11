@@ -1,4 +1,5 @@
 ---
+title: "RT @EastIDNews Idaho borrowers reported their interest..."
 date: 2018-11-26
 time: 20:50:16
 tweet_id: "1067158621979459584"

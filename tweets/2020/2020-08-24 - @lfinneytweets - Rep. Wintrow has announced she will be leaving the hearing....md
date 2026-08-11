@@ -1,4 +1,5 @@
 ---
+title: "Rep. Wintrow has announced she will be leaving the hearing..."
 date: 2020-08-24
 time: 17:50:33
 tweet_id: "1297954464200941568"

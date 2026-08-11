@@ -6,4 +6,4 @@ related:
 authority: LOGAN
 ---
 - Reclaim Idaho cofounder
-- wife of Garrett Strizich 
+- wife of Garrett Strizich

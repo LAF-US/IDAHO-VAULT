@@ -1,4 +1,5 @@
 ---
+title: "RT @pfannyyy Ammon Bundy, associate Diego Rodriguez and..."
 date: 2023-07-25
 time: 18:30:46
 tweet_id: "1683907662289985536"

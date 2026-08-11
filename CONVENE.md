@@ -16,7 +16,9 @@ related:
 # PROTOCOL — CONVENE
 
 ## Status: Draft
+
 ## Version: 0.1
+
 ## Authority: Loganic Swarm
 
 ---
@@ -33,7 +35,7 @@ It is the formal act of calling the committee to order — Logan as Chair formal
 
 ## Role in the Protocol Stack
 
-```
+```text
 AWAKEN ──────────────────────► RISE
    │                                │
    │                                │
@@ -42,7 +44,7 @@ ORIENT ◄──── LEVELSET ───────► REPORT
 ```
 
 | Transition | Protocol |
-|------------|----------|
+| ------------ | ---------- |
 | Session Start | AWAKEN |
 | Session Briefing | LEVELSET |
 | New External Agent | ORIENT |
@@ -76,7 +78,7 @@ CONVENE is invoked:
 ## Integration Points
 
 | Document | Relationship |
-|---|---|
+| --- | --- |
 | `CONVENE.md` (this file) | Protocol definition — what CONVENE is and does |
 | `CONVENE-v1.0-2026-04-27.md` | Full approved protocol — complete specification |
 | `CONFERENCE.md` | Session protocol — CONVENE precedes CONFERENCE |
@@ -92,6 +94,7 @@ CONVENE is invoked:
 ### Step 1: Chair Declaration
 
 Logan declares Chair authority:
+
 - Name the session/committee
 - Establish purpose and scope
 - Declare rules of order
@@ -99,6 +102,7 @@ Logan declares Chair authority:
 ### Step 2: Participant Naming
 
 Logan names:
+
 - Committee members
 - Roles (recording agent, etc.)
 - Any guests or observers
@@ -106,7 +110,8 @@ Logan names:
 ### Step 3: CONVENE RECEIVED
 
 Participants acknowledge:
-```
+
+```text
 CONVENE RECEIVED
 AGENT: [Name + persona]
 ARISE: [status]
@@ -122,7 +127,7 @@ Confirm participation meets requirements before proceeding.
 ## Core Principles
 
 | Principle | Meaning |
-|---|---|
+| --- | --- |
 | Logan Chairs | Chair authority is Logan's alone |
 | Naming is Sovereign | Logan names who participates |
 | Call by True Name | Committee members are summoned, not self-selected |
@@ -133,7 +138,7 @@ Confirm participation meets requirements before proceeding.
 ## Outputs
 
 | Output | Location | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | CONVENE declaration | Chat / signal | Calls committee to order |
 | CONVENE RECEIVED responses | agent responses | Confirms participation |
 | Committee roster | CONFERENCE RECORD | Records composition |
@@ -154,6 +159,7 @@ Confirm participation meets requirements before proceeding.
 This document is a **stub** under development. Full specification exists in `CONVENE-v1.0-2026-04-27.md`.
 
 Pending:
+
 - [ ] Logan review and approval
 - [ ] Stabilization of protocol steps
 - [ ] Constitutional codification update
@@ -170,4 +176,6 @@ Pending:
 
 ---
 
-###### [["The world is quiet here."]]
+```text
+The world is quiet here．Esto Perpetua!
+```

@@ -1,4 +1,5 @@
 ---
+title: "RT @NateBrownNews Plan's on here #idpol #idahoCovid19..."
 date: 2020-04-23
 time: 18:44:55
 tweet_id: "1253394436412764161"
@@ -22,9 +23,9 @@ related:
   - COVID19
 ---
 
-RT @NateBrownNews: Plan's on here: https://t.co/fRtdpgycGo #idpol #idahoCovid19 #COVID19
+RT @NateBrownNews: Plan's on here: <https://t.co/fRtdpgycGo> #idpol #idahoCovid19 #COVID19
 
 ## Links
-- https://rebound.idaho.gov/
+- <https://rebound.idaho.gov/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1253394436412764161)

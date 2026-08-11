@@ -1,4 +1,5 @@
 ---
+title: "RT @idahoednews We know what the headwinds are if you\u2019re..."
 date: 2024-12-05
 time: 04:17:33
 tweet_id: "1864524485170499854"

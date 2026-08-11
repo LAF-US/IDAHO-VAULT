@@ -1,4 +1,5 @@
 ---
+title: "RT @nytimes Idaho has become the first state in the U.S. to..."
 date: 2020-04-02
 time: 03:55:27
 tweet_id: "1245560451431190528"

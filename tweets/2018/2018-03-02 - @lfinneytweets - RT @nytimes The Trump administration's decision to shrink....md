@@ -1,4 +1,5 @@
 ---
+title: "RT @nytimes The Trump administration's decision to shrink..."
 date: 2018-03-02
 time: 21:45:08
 tweet_id: "969690091693076480"

@@ -1,4 +1,5 @@
 ---
+title: "Rep. Monks is introducing an update to the sales tax..."
 date: 2020-02-04
 time: 16:19:13
 tweet_id: "1224729128441499649"
