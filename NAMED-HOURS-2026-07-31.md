@@ -52,7 +52,8 @@ it. `.obsidian/snippets/named-hours.css` renders what it describes;
 | 7 | Azer | 17:00 | 18:30 | 1h30 | `#aa61bb` |
 | — | Dusk | 18:30 | 19:30 | 1h00 | `#707070` |
 
-Dawn to Dusk is 13h30. The three unnamed hinges are one hour each; the seven
+Dawn to Dusk is 13h30. The three hinges are one hour each — they carry names, they are
+just outside the shepherd's count; the seven
 counted blocks are ninety minutes each. Noon is centered on 12:00 rather than
 starting there — it is the hinge, not the afternoon's first block.
 

@@ -1,5 +1,13 @@
 # cron_clock — the master clock
 #
+# NOT AN INSTALLABLE CRONTAB. Do not pipe this to `crontab`. It borrows cron's
+# five time fields as a notation for WHEN, and the sixth column is a NAME, not
+# a command. Real cron treats everything after field five as a shell command,
+# so `Monday's Dawn` would be executed and would fail on the unmatched
+# apostrophe — `sh: Syntax error: Unterminated quoted string` — on all seventy
+# lines. Nothing here fires, by design: what runs in a span is undecided, and
+# the vault's schedule-trigger ban is still in force.
+#
 # {Monday..Sunday}'s {Noon, Dawn, Dusk} & {Yan, Tan, Tethera, Methera, Pits, Sethera, Azer}
 # 7 days x 10 named spans = 70 addresses. One shape, all seven days.
 #
