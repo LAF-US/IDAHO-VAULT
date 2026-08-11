@@ -50,7 +50,7 @@ is in the audit tooling's URL extraction, not in these two files.
 | `2023-12-18 - BoiseDev - Ada County looking to run jail bond again, timeline TBD.md` | https://boisedev.com/news/2023/12/18/ada-county-looking-to-run-jail-bond-again-t | 403 |
 | `2023-12-18 - BoiseDev - Plans for Ada County broadband network on hold after state turns down grant application.md` | https://boisedev.com/news/2023/12/18/ada-county-broadband-declined/ | 403 |
 | `2024-04-02 - Idaho Reports - JFAC puts forward new ITD budget but keeps State Street language (2).md` | https://blog.idahoreports.idahoptv.org/2024/04/02/jfac-puts-forward-new-itd-budg | 404 |
-| `2024-04-02 - Idaho Reports - JFAC puts forward new ITD budget but keeps State Street language.md` | https://blog.idahoreports.idahoptv.org/2024/04/02/jfac-puts-forward-new-itd-budg | 404 |
+| `2024-04-02 - Idaho Reports - JFAC puts forward new ITD budget but keeps State Street language.md` | <https://blog.idahoreports.idahoptv.org/2024/04/02/jfac-puts-forward-new-itd-budg> | 404 |
 | `2024-04-02 - Idaho Reports - JFAC puts forward new ITD budget but keeps State Street language__src_scratch-folder__1375cf91.md` | https://blog.idahoreports.idahoptv.org/2024/04/02/jfac-puts-forward-new-itd-budg | 404 |
 | `2024-05-21 - BoiseDev - AG Labrador files brief in Hawkins’ ITD suit without sign-off from fellow state leaders.md` | https://boisedev.com/news/2024/05/21/labrador-brief-itd/ | 403 |
 | `2024-05-24 - BoiseDev - New outside lawyers replace Labrador on ITD campus case, make change in legal argument.md` | https://boisedev.com/2024/05/23/itd-department-of-admin-hire-outside-lawyer-afte | 403 |
