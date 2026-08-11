@@ -4,7 +4,7 @@ aliases:
   - NAMED HOURS
   - Named Hours
   - Day Shape
-updated: 2026-07-31
+updated: 2026-08-11
 status: draft
 authority: "Proposed by Claude Code, session_013ie6MP332hZgSgAiSkyPZ7. Authority NOT assumed as LOGAN.
   This note is unratified and governs nothing. The original `authority: LOGAN`
@@ -21,8 +21,6 @@ related:
   - DAILY NOTE TEMPLATE
   - TO DO LIST
 ---
-
-# NAMED HOURS — The Day Shape in Full Calendar
 
 The working day is cut into ten named blocks. Seven of them carry a
 shepherd's-count name — **Yan, Tan, Tethera, Methera, Pits, Sethera, Azer** —
