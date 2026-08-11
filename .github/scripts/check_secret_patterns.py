@@ -114,18 +114,28 @@ _UNQUOTED_IDENTIFIER_CHAIN_RHS = re.compile(
 )
 
 
-def is_allowed_content_match(rule: str, line: str) -> bool:
-    """Allow narrow generic placeholders without muting dedicated token rules."""
+def is_allowed_content_match(rule: str, line: str, match: re.Match | None = None) -> bool:
+    """Allow narrow generic placeholders without muting dedicated token rules.
+
+    The identifier-chain allowance is SPAN-TIED: it clears only the specific
+    generic-assignment match whose own start it reproduces, never the whole
+    line. On a minified one-line bundle, a benign `password: this.component,`
+    must not make a real `token="..."` elsewhere on the same line invisible —
+    each match is judged where it stands. (The older placeholder shapes below
+    predate this and remain line-scoped; their RHS shapes are non-values by
+    construction, so the same laundering does not arise from them.)
+    """
     if rule != "generic_secret_assignment":
         return False
     if "secret-pattern: allow" in line:
+        return True
+    if match is not None and _UNQUOTED_IDENTIFIER_CHAIN_RHS.match(line, match.start()):
         return True
     return bool(
         re.search(r"\bprocess\.env\.[A-Z0-9_]+\b", line)
         or re.search(r"""(?i)["']?env:[A-Z][A-Z0-9_]*["']?""", line)
         or re.search(r"""(?i)["']?\$secretRef(?::[A-Za-z0-9_.:/-]+)?["']?""", line)
         or re.search(r"(?i)\breplace-with-[A-Za-z0-9_-]+\b", line)
-        or _UNQUOTED_IDENTIFIER_CHAIN_RHS.search(line)
     )
 
 
@@ -228,10 +238,14 @@ def content_findings(path: str, data: bytes) -> list[Finding]:
     findings: list[Finding] = []
     for line_number, line in enumerate(text.splitlines(), start=1):
         for rule, pattern in SECRET_CONTENT_PATTERNS.items():
-            if pattern.search(line):
-                if is_allowed_content_match(rule, line):
+            # Judge every match on the line, not just the first: a line is
+            # clean only if each match is individually allowed. One finding
+            # per rule per line, as before.
+            for match in pattern.finditer(line):
+                if is_allowed_content_match(rule, line, match):
                     continue
                 findings.append(Finding(path=path, line=line_number, rule=rule))
+                break
     return findings
 
 

@@ -18,6 +18,24 @@ Verify any file against this record:
 
     sha256sum .obsidian/plugins/<id>/main.js
 
+Line-ending normalization (Copilot's catch, verified 2026-08-11): the repo's
+`.gitattributes` normalizes JS to LF on check-in, and four upstream assets ship
+with MIXED line endings, so their tracked bytes differ from the release bytes
+by CR removal only. Proven by re-downloading each release asset and comparing
+its CR-stripped bytes to the tracked file — equal in all four cases. For those
+four, the table's hash is the upstream-release asset; the tracked-file hash is
+listed here:
+
+| plugin | upstream CRLF lines | tracked bytes | tracked sha256(16) |
+| --- | ---: | ---: | --- |
+| habit-calendar | 23 | 15180 | `efa59ca200313d33` |
+| handwritten-notes | 28 | 307388 | `ca267f18b2cc1527` |
+| obsidian-footnotes | 471 | 96689 | `fb39a9469ffaef01` |
+| obsidian-icon-folder | 30 | 1003719 | `b0e6dfaf820b12cd` |
+
+Every other file's tracked bytes equal its release bytes exactly; "verbatim"
+means byte-identical modulo this recorded LF normalization and nothing else.
+
 Not vendored, and why:
 
 - `roygbiv-day-accent` — locally authored; its `main.js` was already tracked.
