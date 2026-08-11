@@ -93,23 +93,28 @@ class Finding:
 # code referring to code (`password → this.render_password_component`,
 # `data.api_key ← provider.data.api_key`; arrows here, not `:`/`=`, so the
 # generic rule on the CURRENT default branch cannot fire on this very comment
-# while this file rides through review), never a secret VALUE. Four fences
-# keep real material caught: (1) a quoted RHS is a literal and never allowed
-# here; (2) the chain must be followed by code punctuation — a call, separator,
-# or closer — so a bare token dangling at end-of-line stays flagged; (3) a
-# first segment starting with `eyJ` (base64 of `{"`, the prefix of every JWT
-# header) is rejected outright, since JWT segments can otherwise satisfy the
-# identifier grammar; (4) the chain must carry identifier MORPHOLOGY — at
-# least one underscore, `$`, or capital letter — because a dotted run of bare
-# lowercase letters is indistinguishable from a data scalar, and YAML flow
-# mappings (`{key → scalar, …}`) hand exactly that shape the trailing comma
-# fence (2) would otherwise accept (caught by Copilot review on #956). Any
-# code reference long enough to trip the generic rule's 24-char floor names
-# things, and names carry word boundaries: camelCase, snake_case, or a `$`.
-# Digits deliberately do NOT count as morphology — secrets are digit-rich,
-# and `\w` already admits digits inside segments. Segments must each start
-# with a letter/underscore, so base64 chunks with digits leading or -, +, /,
-# = anywhere break the grammar.
+# while this file rides through review), never a secret VALUE — but only in a
+# file whose format actually parses an unquoted RHS as an expression. The
+# allowance is therefore PATH-GATED to expression-language sources (the
+# JS/TS family, where every verified false positive lives); in YAML, JSON,
+# Markdown, and every other format an unquoted dotted string is a data
+# scalar, and no string-level fence can tell the two apart because YAML flow
+# syntax mirrors JS object literals exactly (Copilot's third-round catch on
+# #957: capital-and-underscore-bearing scalars defeat morphology alone).
+# Within expression files, four fences keep real material caught:
+# (1) a quoted RHS is a literal and never allowed here; (2) the chain must
+# be followed by code punctuation — a call, separator, or closer — so a bare
+# token dangling at end-of-line stays flagged; (3) a first segment starting
+# with `eyJ` (base64 of `{"`, the prefix of every JWT header) is rejected
+# outright, since JWT segments can otherwise satisfy the identifier grammar;
+# (4) the chain must carry identifier MORPHOLOGY — at least one underscore,
+# `$`, or capital letter — because long code references name things, and
+# names carry word boundaries (camelCase, snake_case, or a `$`). Digits
+# deliberately do NOT count as morphology — secrets are digit-rich, and `\w`
+# already admits digits inside segments. Segments must each start with a
+# letter/underscore, so base64 chunks with digits leading or -, +, /, =
+# anywhere break the grammar.
+_EXPRESSION_SOURCE_SUFFIXES = (".js", ".mjs", ".cjs", ".jsx", ".ts", ".tsx")
 _UNQUOTED_IDENTIFIER_CHAIN_RHS = re.compile(
     r"""(?ix)
     ["']?\b(?:api[_-]?key|secret|token|password|passwd|pwd)\b["']?
@@ -124,7 +129,9 @@ _UNQUOTED_IDENTIFIER_CHAIN_RHS = re.compile(
 )
 
 
-def is_allowed_content_match(rule: str, line: str, match: re.Match | None = None) -> bool:
+def is_allowed_content_match(
+    rule: str, line: str, match: re.Match | None = None, path: str | None = None
+) -> bool:
     """Allow narrow generic placeholders without muting dedicated token rules.
 
     Every allowance except the explicit inline directive is SPAN-TIED: it
@@ -133,17 +140,26 @@ def is_allowed_content_match(rule: str, line: str, match: re.Match | None = None
     this.component,` — or an innocent `process.env.NAME` reference — must not
     make a real `token="..."` elsewhere on the same line invisible; each match
     is judged where it stands. The identifier-chain shape is re-anchored at
-    the match's own start; the placeholder shapes are searched within the
-    matched text itself (keyword, separator, and RHS), which is strictly
-    narrower than the line scope they used to get. Only `secret-pattern:
-    allow` stays line-scoped — it is a deliberate human directive, not a
-    shape heuristic.
+    the match's own start (positional, on the full line: its trailing
+    code-punctuation fence must see the character AFTER the generic match,
+    which lies outside the match text) and applies only when `path` names an
+    expression-language source file. The placeholder shapes are searched
+    within the matched text itself (keyword, separator, and RHS), which is
+    strictly narrower than the line scope they used to get, and are
+    path-independent — they are placeholder conventions, not syntax. Only
+    `secret-pattern: allow` stays line-scoped — it is a deliberate human
+    directive, not a shape heuristic.
     """
     if rule != "generic_secret_assignment":
         return False
     if "secret-pattern: allow" in line:
         return True
-    if match is not None and _UNQUOTED_IDENTIFIER_CHAIN_RHS.match(line, match.start()):
+    if (
+        match is not None
+        and path is not None
+        and path.lower().endswith(_EXPRESSION_SOURCE_SUFFIXES)
+        and _UNQUOTED_IDENTIFIER_CHAIN_RHS.match(line, match.start())
+    ):
         return True
     scope = match.group(0) if match is not None else line
     return bool(
@@ -257,7 +273,7 @@ def content_findings(path: str, data: bytes) -> list[Finding]:
             # clean only if each match is individually allowed. One finding
             # per rule per line, as before.
             for match in pattern.finditer(line):
-                if is_allowed_content_match(rule, line, match):
+                if is_allowed_content_match(rule, line, match, path):
                     continue
                 findings.append(Finding(path=path, line=line_number, rule=rule))
                 break
