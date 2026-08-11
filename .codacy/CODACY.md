@@ -2,24 +2,19 @@
 title: CODACY
 authority: LOGAN
 related:
-  - CODACY
-  - imported_software
-  - runtime
   - .github/workflows/codacy.yml
   - The world is quiet here
 ---
 
-**.codacy** — Imported software runtime persona.
+Codacy analyzes every pull request in this repository. Its workflow is
+`.github/workflows/codacy.yml`.
 
-Codacy runtime and configuration. Codacy analyzes every pull request in this
-repository; this chamber is its anchor in the tree.
+Two facts about this folder, established 2026-08-11, so the next reader does
+not have to work them out again:
 
-Two things about the surface, so the next reader does not have to rediscover
-them:
-
-- The Codacy Analysis CLI writes its own scratch here — a `.gitignore`
-  carrying `generated/`, and a `generated/` tree beneath it. That output is
-  tool residue, not vault content.
+- The Codacy Analysis CLI writes `generated/` here, and a `.gitignore`
+  alongside it. Both appear untracked after any local run. Both are tool
+  residue, not vault content — do not commit them.
 - A committed Codacy config governs **local** analysis only. Per Codacy's own
   documentation, `.codacy/codacy.config.json` has no effect on Codacy Cloud
   unless it is explicitly imported (`codacy tools --import`). Cloud rule
