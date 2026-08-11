@@ -1,4 +1,5 @@
 ---
+title: ".@KeithRidler asks if Idaho is getting enough doses to meet..."
 date: 2021-01-05
 time: 22:03:30
 tweet_id: "1346578093884915712"

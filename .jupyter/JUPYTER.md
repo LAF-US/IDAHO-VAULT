@@ -6,6 +6,6 @@ related:
   - runtime
 ---
 
-**.jupyter** — Imported software runtime persona.
+**.jupyter** â€” Imported software runtime persona.
 
 jupyter runtime and configuration.

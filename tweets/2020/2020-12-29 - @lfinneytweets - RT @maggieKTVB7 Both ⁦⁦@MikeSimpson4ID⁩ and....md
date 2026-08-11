@@ -1,4 +1,5 @@
 ---
+title: "RT @maggieKTVB7 Both \u2066\u2066@MikeSimpson4ID\u2069 and..."
 date: 2020-12-29
 time: 01:05:47
 tweet_id: "1343724864893435904"

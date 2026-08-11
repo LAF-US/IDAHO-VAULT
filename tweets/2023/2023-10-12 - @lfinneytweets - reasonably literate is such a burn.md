@@ -1,4 +1,5 @@
 ---
+title: "reasonably literate is such a burn"
 date: 2023-10-12
 time: 21:42:39
 tweet_id: "1712584591251570908"

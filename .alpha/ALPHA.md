@@ -6,6 +6,6 @@ related:
   - runtime
 ---
 
-**.alpha** — Imported software runtime persona.
+**.alpha** â€” Imported software runtime persona.
 
 alpha runtime and configuration.

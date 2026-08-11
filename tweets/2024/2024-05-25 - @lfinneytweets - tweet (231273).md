@@ -1,4 +1,5 @@
 ---
+title: "tweet (231273)"
 date: 2024-05-25
 time: 00:52:13
 tweet_id: "1794169565146231273"
@@ -14,10 +15,10 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/gR57UN35TZ
+<https://t.co/gR57UN35TZ>
 
 ## Links
-- https://cdapress.com/news/2024/may/23/drag-performance-defamation-trial-continues/
+- <https://cdapress.com/news/2024/may/23/drag-performance-defamation-trial-continues/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

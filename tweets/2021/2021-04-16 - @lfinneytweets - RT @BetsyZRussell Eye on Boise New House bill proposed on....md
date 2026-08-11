@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise New House bill proposed on..."
 date: 2021-04-16
 time: 16:41:06
 tweet_id: "1383098133589073926"

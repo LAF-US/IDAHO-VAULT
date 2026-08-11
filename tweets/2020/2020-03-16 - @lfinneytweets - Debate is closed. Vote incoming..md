@@ -1,4 +1,5 @@
 ---
+title: "Debate is closed. Vote incoming."
 date: 2020-03-16
 time: 23:39:23
 tweet_id: "1239697803347025920"

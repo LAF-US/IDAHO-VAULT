@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Wednesday update @IDHW added 671 new cases..."
 date: 2020-10-07
 time: 23:48:58
 tweet_id: "1313989729155641352"

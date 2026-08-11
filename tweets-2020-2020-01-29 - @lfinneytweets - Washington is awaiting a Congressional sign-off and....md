@@ -19,9 +19,10 @@ related:
 ---
 
 "Washington is awaiting a Congressional sign-off and Oregon’s bill won’t go into effect unless Washington and California make the switch."
-@RHaunID covers the latest #idleg attempts to get off daylight savings time. #idpol https://t.co/631c45P6X1
+@RHaunID covers the latest #idleg attempts to get off daylight savings time. #idpol <https://t.co/631c45P6X1>
 
 ## Links
-- https://x.com/IdahoPubRadio/status/1222654748861427714
+
+- <https://x.com/IdahoPubRadio/status/1222654748861427714>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1222656215043280898)

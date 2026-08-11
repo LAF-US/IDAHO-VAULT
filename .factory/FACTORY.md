@@ -6,6 +6,6 @@ related:
   - runtime
 ---
 
-**.factory** — Imported software runtime persona.
+**.factory** â€” Imported software runtime persona.
 
 factory runtime and configuration.

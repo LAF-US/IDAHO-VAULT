@@ -1,4 +1,5 @@
 ---
+title: "RT @KirkSiegler Garrett Ostler, owner of the Madison Hotel..."
 date: 2020-05-12
 time: 18:02:36
 tweet_id: "1260269158660337664"

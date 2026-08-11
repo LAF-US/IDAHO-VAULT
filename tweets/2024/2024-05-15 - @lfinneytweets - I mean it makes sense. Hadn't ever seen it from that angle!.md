@@ -1,4 +1,5 @@
 ---
+title: "I mean it makes sense. Hadn't ever seen it from that angle!"
 date: 2024-05-15
 time: 00:30:38
 tweet_id: "1790540255969624225"

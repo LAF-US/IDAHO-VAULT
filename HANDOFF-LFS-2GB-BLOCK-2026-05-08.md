@@ -22,6 +22,7 @@ These files were added to git tracking in commit `7a63a629` (`.gitignore refacto
 ## Governance Policy
 
 `.github/scripts/check_large_files.py` enforces:
+
 - **>100 MB** — must have LFS attributes (enforced by pre-commit hook)
 - **>2 GB** — cannot be committed to GitHub LFS (amended from 5 GB to match GitHub's platform limit)
 
@@ -35,7 +36,7 @@ Run the check: `python .github/scripts/check_large_files.py --all-tracked`
 
 ## The 38 Files (Governance-Flagged >2 GB)
 
-```
+```text
  21.03 GB  XD4_6602.MXF
  19.35 GB  XD4_6594.MXF
   9.10 GB  251106_jfac_0800AM-Meeting.mp4
@@ -94,7 +95,7 @@ All LFS objects exist locally in `.git/lfs/objects/`.
 
 ## Current Repo State
 
-```
+```text
 fe00b4f7 Record sanitized local storage inventory
 e514704a Add portability linting and formatting checks
 0a729a7c Update test-llm-router.py
@@ -138,7 +139,7 @@ f3af3d85 document universal sync bus framework
 ## Key Reference Files
 
 | File | Purpose |
-|------|---------|
+| ------ | --------- |
 | `.github/scripts/check_large_files.py` | Governance policy (100 MB min / 2 GB max) |
 | `.githooks/pre-push` | Runs `git lfs pre-push "$@"` |
 | `.githooks/pre-commit` | Calls `check_large_files.py --staged` |

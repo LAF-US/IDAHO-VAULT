@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPTV Are you a new(ish) resident to the Gem State..."
 date: 2022-09-21
 time: 22:44:54
 tweet_id: "1572718539525730305"

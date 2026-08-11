@@ -1,4 +1,5 @@
 ---
+title: "Appropriation for the Department of Environmental Quality..."
 date: 2023-03-28
 time: 16:46:05
 tweet_id: "1640757161197199360"

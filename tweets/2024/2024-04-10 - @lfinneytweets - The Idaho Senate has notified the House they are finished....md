@@ -1,4 +1,5 @@
 ---
+title: "The Idaho Senate has notified the House they are finished..."
 date: 2024-04-10
 time: 20:38:42
 tweet_id: "1778160700348842189"
@@ -18,9 +19,9 @@ related:
   - idpol
 ---
 
-The Idaho Senate has notified the House they are finished with business. #idleg #idpol https://t.co/dcJV52ynrd
+The Idaho Senate has notified the House they are finished with business. #idleg #idpol <https://t.co/dcJV52ynrd>
 
 ## Media
-- ![](https://pbs.twimg.com/ext_tw_video_thumb/1778160666370777090/pu/img/P8f05z1vridpcOdl.jpg)
+- ![alt text needed](https://pbs.twimg.com/ext_tw_video_thumb/1778160666370777090/pu/img/P8f05z1vridpcOdl.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1778160700348842189)

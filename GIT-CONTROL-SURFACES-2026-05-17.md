@@ -110,4 +110,8 @@ The safe direction is to narrow those rules so future source material remains
 visible by default. That cleanup should be committed only with this chronology
 in mind.
 
-###### The world is quiet here.
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```
