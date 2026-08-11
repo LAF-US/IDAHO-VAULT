@@ -76,3 +76,10 @@ obsidian-recovery-codes.txt
 # ---------------------------------------------------------------
 # THE WORLD IS QUIET HERE．ESTO PERPETUA!
 # ---------------------------------------------------------------
+
+# Oversized media — exceed GitHub's 2GB LFS per-file cap; kept local only
+/260303_schr_0130PM-Meeting.mp4
+/260309_hjud_0130PM-Meeting.mp4
+/260313_jloc_1215PM-Meeting.mp4
+/SenateChambers03-02-2026.mp4
+/SenateChambers03-25-2026.mp4
