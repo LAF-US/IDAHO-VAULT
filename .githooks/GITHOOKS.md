@@ -1,11 +1,3 @@
 ---
-authority: LOGAN
-related:
-  - GITHOOKS
-  - imported_software
-  - runtime
+title: GITHOOKS
 ---
-
-**.githooks** — Imported software runtime persona.
-
-githooks runtime and configuration.
