@@ -26,14 +26,14 @@ module.exports = {
   ],
   overrides: [
     {
-      // Mirrors the flat config's ESM block; see eslint.config.js.
       // Electron renderer: browser globals ON TOP of node. Scoped here rather
       // than set at the root, so a stray `window` in a non-plugin script is
-      // still reported. Mirrors the flat config's per-path block.
+      // still reported. Mirrors the flat config's per-path globals block.
       files: [".obsidian/plugins/**/*.js"],
       env: { browser: true },
     },
     {
+      // Mirrors the flat config's ESM block; see eslint.config.js.
       files: [".codex/skills/codex-primary-runtime/slides/templates/*.js"],
       parserOptions: { sourceType: "module" },
       globals: {
