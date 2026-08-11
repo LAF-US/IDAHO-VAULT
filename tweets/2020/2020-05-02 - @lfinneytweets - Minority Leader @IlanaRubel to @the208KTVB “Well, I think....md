@@ -1,4 +1,5 @@
 ---
+title: "Minority Leader @IlanaRubel to @the208KTVB \u201cWell, I think..."
 date: 2020-05-02
 time: 01:23:47
 tweet_id: "1256393918519767041"

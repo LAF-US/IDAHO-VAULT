@@ -33,17 +33,17 @@ This note records sources used and local Vault anchors. It is not doctrine.
 ## External Sources Used
 
 1. Online Etymology Dictionary, "codex".
-   - URL: https://www.etymonline.com/word/codex
+   - URL: <https://www.etymonline.com/word/codex>
    - Used for the English `codex` entry, Latin `codex`, earlier `caudex`,
      "tree trunk", wooden wax tablets, and later `code` semantic branches.
 
 2. Merriam-Webster, "codex".
-   - URL: https://www.merriam-webster.com/dictionary/codex
+   - URL: <https://www.merriam-webster.com/dictionary/codex>
    - Used for modern English definition, plural `codices`, first-known-use
      note, and book-history summary.
 
 3. Encyclopaedia Britannica, "codex".
-   - URL: https://www.britannica.com/topic/codex-manuscript
+   - URL: <https://www.britannica.com/topic/codex-manuscript>
    - Used for the book-history account: stitched pages, replacement of scrolls,
      advantages over rolls, Christian adoption, parchment and paper, and later
      use for named standard collections.
@@ -58,4 +58,3 @@ This note records sources used and local Vault anchors. It is not doctrine.
   instructions.
 - In the Vault, `Corpus` is the safer governance term; `Codex` remains an
   agent/tool lineage term.
-

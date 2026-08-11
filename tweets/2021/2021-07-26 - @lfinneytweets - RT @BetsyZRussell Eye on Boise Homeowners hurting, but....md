@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Homeowners hurting, but..."
 date: 2021-07-26
 time: 20:27:32
 tweet_id: "1419756294072766479"

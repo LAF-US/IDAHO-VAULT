@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports SJR 102, the constitutional amendment..."
 date: 2022-11-04
 time: 21:04:31
 tweet_id: "1588638343679467521"

@@ -8,7 +8,7 @@ Eugen Rochko
 
 Strategy & Product Advisor, Founder
 
-![](https://cdn-images-1.medium.com/max/2000/1*thnUPTnBOJX30rBroH3Jzw.jpeg)
+![alt text needed](https://cdn-images-1.medium.com/max/2000/1*thnUPTnBOJX30rBroH3Jzw.jpeg)
 
 Isn’t it a bit strange that the entire world has to [wait on the CEO of Twitter to come around on what constitutes healthy discourse](https://twitter.com/jack/status/969234275420655616)? I am not talking about it being too little, too late. Rather, my issue is with “instant, public, global messaging and conversation” being entirely dependent on one single privately held company’s whims. Perhaps they want to go in the right direction right now for once, but who’s to say how their opinion changes in the future? Who is Twitter really accountable to except their board of directors?
 

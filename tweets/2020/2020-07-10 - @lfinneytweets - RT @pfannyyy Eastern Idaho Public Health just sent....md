@@ -1,4 +1,5 @@
 ---
+title: "RT @pfannyyy Eastern Idaho Public Health just sent..."
 date: 2020-07-10
 time: 16:48:26
 tweet_id: "1281631375330689024"

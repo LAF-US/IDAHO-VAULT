@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2020-02-12
 time: 16:32:29
 tweet_id: "1227631569940013057"
@@ -13,9 +14,9 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/xS9EI5aEXm
+<https://t.co/xS9EI5aEXm>
 
 ## Media
-- ![](https://pbs.twimg.com/media/EQlsWsvU4AE7_qi.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EQlsWsvU4AE7_qi.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1227631569940013057)

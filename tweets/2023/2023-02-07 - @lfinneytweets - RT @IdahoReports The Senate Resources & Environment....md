@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports The Senate Resources & Environment..."
 date: 2023-02-07
 time: 19:35:02
 tweet_id: "1623042671572029440"

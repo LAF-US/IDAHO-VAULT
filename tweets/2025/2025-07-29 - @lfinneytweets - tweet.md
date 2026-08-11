@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2025-07-29
 time: 23:34:21
 tweet_id: "1950339141943660752"
@@ -16,10 +17,10 @@ related:
   - lfinneytweets
 ---
 
-@brianalmon https://t.co/aZ582CRgSi
+@brianalmon <https://t.co/aZ582CRgSi>
 
 ## Links
-- https://www.youtube.com/watch?v=pklr0UD9eSo
+- <https://www.youtube.com/watch?v=pklr0UD9eSo>
 
 *In reply to [@brianalmon](https://twitter.com/brianalmon)*
 

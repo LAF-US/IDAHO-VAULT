@@ -1,4 +1,5 @@
 ---
+title: "Sen. Lee asks whether the nationally declared emergency..."
 date: 2021-01-19
 time: 15:55:26
 tweet_id: "1351558899174830080"

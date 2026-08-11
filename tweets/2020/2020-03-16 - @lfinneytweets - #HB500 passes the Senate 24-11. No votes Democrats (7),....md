@@ -1,4 +1,5 @@
 ---
+title: "#HB500 passes the Senate 24-11. No votes Democrats (7),..."
 date: 2020-03-16
 time: 23:44:56
 tweet_id: "1239699199408476161"
@@ -21,7 +22,7 @@ related:
   - idpol
 ---
 
-#HB500 passes the Senate 24-11.
+\#HB500 passes the Senate 24-11.
 No votes: Democrats (7), Guthrie, Johnson, Lee, Woodward. #idleg #idpol
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

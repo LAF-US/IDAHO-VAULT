@@ -1,4 +1,5 @@
 ---
+title: "RT @nicoleMfoy since critical race theory & ELL education..."
 date: 2021-06-24
 time: 22:50:21
 tweet_id: "1408195820055191552"

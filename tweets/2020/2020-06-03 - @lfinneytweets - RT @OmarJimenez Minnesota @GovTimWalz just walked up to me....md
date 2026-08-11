@@ -1,4 +1,5 @@
 ---
+title: "RT @OmarJimenez Minnesota @GovTimWalz just walked up to me..."
 date: 2020-06-03
 time: 21:55:10
 tweet_id: "1268300219751391233"

@@ -1,4 +1,5 @@
 ---
+title: "dude"
 date: 2024-11-13
 time: 02:29:27
 tweet_id: "1856524749134049464"
@@ -18,10 +19,10 @@ related:
 ---
 
 @gemstatebrian @HeatherScottID dude 
-https://t.co/qiBZqGOmEH
+<https://t.co/qiBZqGOmEH>
 
 ## Links
-- https://www.adl.org/resources/hate-symbol/1488
+- <https://www.adl.org/resources/hate-symbol/1488>
 
 *In reply to [@brianalmon](https://twitter.com/brianalmon)*
 

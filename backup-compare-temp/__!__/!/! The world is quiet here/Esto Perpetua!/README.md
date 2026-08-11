@@ -5,7 +5,7 @@ date created: 2026-04-04
 authority: "[[LOGAN]]"
 ---
 
-# Esto Perpetua!
+# Esto Perpetua
 
 *"Let it be perpetual."* — Idaho State Motto
 
@@ -26,6 +26,7 @@ Files committed here are permanent record. They do not move. They do not expire.
 The canon core holds documents that must endure. Not operational. Not ephemeral. Not proposals. Permanent.
 
 Candidates for this layer:
+
 - Core governance (CONSTITUTION — the will that directs)
 - Permanent decisions (when confirmed and sealed)
 - Mythic foundation documents (GRIMOIRE entries of lasting authority)
@@ -37,7 +38,7 @@ Candidates for this layer:
 
 This location is the innermost triangle — the one that remains when you recurse all the way down.
 
-```
+```text
 VAULT (root)
   └─ ! (UNIFIED SWARM)
        └─ !/__!__/! (the descent)
@@ -45,4 +46,8 @@ VAULT (root)
                  └─ Esto Perpetua! [ ! ] (the still point)
 ```
 
-*The world is quiet here.*
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

@@ -40,7 +40,7 @@ control** — and in every case the powerful **fear and hunt it.**
 ## The three instances
 
 | Canon | The immune | Power it escapes | Mechanism |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **Dune** (Herbert) | **Siona** — *invisible to prescience* | prescient vision | bred over millennia by the **Golden Path** to be unseeable by any oracle — *so no single entity, Leto included, could ever own the future* |
 | **Sword of Truth** (Goodkind) | **the Pillars of Creation** — *pristinely ungifted* (Jennsen, Oba) | magic / the gift | born *without a single spark of the gift* — *"holes in the world,"* imperceptible to magic; the trait passes to every child; the gifted fear they will *"destroy magic forever"* |
 | **Bartimaeus** (Stroud) | **Kitty Jones** & the Resistance — *resistant to magic* | the magicians' power | natural **resilience** — magic that burns others leaves them unharmed; the cycle ends when *commoners gain resistance and overthrow the magicians* |

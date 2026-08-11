@@ -1,4 +1,5 @@
 ---
+title: "Gannon says the attorney general\u2019s office has told him..."
 date: 2022-02-07
 time: 16:12:15
 tweet_id: "1490720071068487681"

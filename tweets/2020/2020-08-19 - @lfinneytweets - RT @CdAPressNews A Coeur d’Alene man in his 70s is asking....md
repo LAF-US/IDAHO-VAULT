@@ -1,4 +1,5 @@
 ---
+title: "RT @CdAPressNews A Coeur d\u2019Alene man in his 70s is asking..."
 date: 2020-08-19
 time: 16:20:22
 tweet_id: "1296119827212320768"
