@@ -7,20 +7,20 @@ scope: GitHub Actions workflow runs, laf-us/idaho-vault, 2026-07-28T12:06Z to 20
 owner: Logan Finney
 ---
 
-# CI Failure Sweep — 2026-07-29
+## CI Failure Sweep — 2026-07-29
 
 ## Context
 
-Scheduled 24-hour review. Read `CONSTITUTION.md`, the prior sweeps in this thread (`-07-27.md`, `-07-28.md`, issue #822/Linear LAF-72), and the six still-open prior "audit(ci)" PRs (#838, #859, #861, #862, #866, #872, #877) before starting, specifically to avoid re-filing what they already found. Every distinct failing workflow name in-window was checked against actual job logs (`get_job_logs`, `failed_only`), not inferred from run titles.
+Scheduled 24-hour review. Read `CONSTITUTION.md`, the prior sweeps in this thread (`-07-27.md`, `-07-28.md`, issue #822/Linear LAF-72), and the seven still-open prior "audit(ci)" PRs (#838, #859, #861, #862, #866, #872, #877) before starting, specifically to avoid re-filing what they already found. Every distinct failing workflow name in-window was checked against actual job logs (`get_job_logs`, `failed_only`), not inferred from run titles.
 
-**`main` is green** at head `ca667a5d` — zero failing runs on `main` itself in-window; nothing blocks a merge or deploy.
+**Nothing on `main` blocks a merge or deploy in-window** — the earlier draft of this sentence claimed "zero failing runs on `main`," which was wrong: item 9 below is a `main`-branch run (`Enqueue on checks complete`) that did fail, from a retriable rate limit rather than a genuine break. Correcting the blanket claim here rather than letting it stand next to the item that contradicts it.
 
 ## 5W Summary
 
 | | |
 |---|---|
 | **Who** | GitHub Actions runners on `laf-us/idaho-vault`; Claude Code (this session, scheduled). No human-caused breakage. |
-| **What** | 10 distinct failing workflow names in-window, collapsing to 7 root causes — 6 already root-caused in prior sweeps (fix written but sitting unmerged in most cases), 1 genuinely new. |
+| **What** | 10 distinct failing workflow names in-window, collapsing to 8 distinct root causes (items 4, 5, and 9 share one cause — the rate-limit family — the other 7 findings are each their own): 6 already understood (accepted-red, tracked, or already root-caused elsewhere), 1 unresolved gap (item 7), 1 genuinely new (item 10). |
 | **When** | 2026-07-28T12:06Z – 2026-07-29T12:06Z |
 | **Where** | Branches `claude/apply-patch-fixes-9gesn5` (PR #875), `claude/shall-rome-lyrics-ok9049` (PR #854), `claude/poka-yoke-player-qzt7le` (PR #873), `claude/practical-cerf-hxkg1p` (PR #866), `bot/topology-census-2026-06-08` (PR #498), `test/subtle-alien-landing` (PR #470), and `main`'s own `Enqueue on checks complete` job. |
 | **Why** | Per item below — verbatim log lines, not paraphrase. |
