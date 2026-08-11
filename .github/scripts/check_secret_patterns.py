@@ -93,20 +93,30 @@ class Finding:
 # code referring to code (`password → this.render_password_component`,
 # `data.api_key ← provider.data.api_key`; arrows here, not `:`/`=`, so the
 # generic rule on the CURRENT default branch cannot fire on this very comment
-# while this file rides through review), never a secret VALUE. Three fences
+# while this file rides through review), never a secret VALUE. Four fences
 # keep real material caught: (1) a quoted RHS is a literal and never allowed
 # here; (2) the chain must be followed by code punctuation — a call, separator,
 # or closer — so a bare token dangling at end-of-line stays flagged; (3) a
 # first segment starting with `eyJ` (base64 of `{"`, the prefix of every JWT
 # header) is rejected outright, since JWT segments can otherwise satisfy the
-# identifier grammar. Segments must each start with a letter/underscore, so
-# base64 chunks with digits leading or -, +, /, = anywhere break the grammar.
+# identifier grammar; (4) the chain must carry identifier MORPHOLOGY — at
+# least one underscore, `$`, or capital letter — because a dotted run of bare
+# lowercase letters is indistinguishable from a data scalar, and YAML flow
+# mappings (`{key → scalar, …}`) hand exactly that shape the trailing comma
+# fence (2) would otherwise accept (caught by Copilot review on #956). Any
+# code reference long enough to trip the generic rule's 24-char floor names
+# things, and names carry word boundaries: camelCase, snake_case, or a `$`.
+# Digits deliberately do NOT count as morphology — secrets are digit-rich,
+# and `\w` already admits digits inside segments. Segments must each start
+# with a letter/underscore, so base64 chunks with digits leading or -, +, /,
+# = anywhere break the grammar.
 _UNQUOTED_IDENTIFIER_CHAIN_RHS = re.compile(
     r"""(?ix)
     ["']?\b(?:api[_-]?key|secret|token|password|passwd|pwd)\b["']?
     \s*[:=]\s*
     (?!["'])
     (?!eyJ)
+    (?-i:(?=[\w$.]*[_$A-Z]))
     [A-Za-z_$][\w$]*(?:\.[A-Za-z_$][\w$]*)+
     (?![\w$./+=:-])
     \s*[,;()}\]]
@@ -117,13 +127,17 @@ _UNQUOTED_IDENTIFIER_CHAIN_RHS = re.compile(
 def is_allowed_content_match(rule: str, line: str, match: re.Match | None = None) -> bool:
     """Allow narrow generic placeholders without muting dedicated token rules.
 
-    The identifier-chain allowance is SPAN-TIED: it clears only the specific
-    generic-assignment match whose own start it reproduces, never the whole
-    line. On a minified one-line bundle, a benign `password: this.component,`
-    must not make a real `token="..."` elsewhere on the same line invisible —
-    each match is judged where it stands. (The older placeholder shapes below
-    predate this and remain line-scoped; their RHS shapes are non-values by
-    construction, so the same laundering does not arise from them.)
+    Every allowance except the explicit inline directive is SPAN-TIED: it
+    clears only the specific generic-assignment match it inspects, never the
+    whole line. On a minified one-line bundle, a benign `password:
+    this.component,` — or an innocent `process.env.NAME` reference — must not
+    make a real `token="..."` elsewhere on the same line invisible; each match
+    is judged where it stands. The identifier-chain shape is re-anchored at
+    the match's own start; the placeholder shapes are searched within the
+    matched text itself (keyword, separator, and RHS), which is strictly
+    narrower than the line scope they used to get. Only `secret-pattern:
+    allow` stays line-scoped — it is a deliberate human directive, not a
+    shape heuristic.
     """
     if rule != "generic_secret_assignment":
         return False
@@ -131,11 +145,12 @@ def is_allowed_content_match(rule: str, line: str, match: re.Match | None = None
         return True
     if match is not None and _UNQUOTED_IDENTIFIER_CHAIN_RHS.match(line, match.start()):
         return True
+    scope = match.group(0) if match is not None else line
     return bool(
-        re.search(r"\bprocess\.env\.[A-Z0-9_]+\b", line)
-        or re.search(r"""(?i)["']?env:[A-Z][A-Z0-9_]*["']?""", line)
-        or re.search(r"""(?i)["']?\$secretRef(?::[A-Za-z0-9_.:/-]+)?["']?""", line)
-        or re.search(r"(?i)\breplace-with-[A-Za-z0-9_-]+\b", line)
+        re.search(r"\bprocess\.env\.[A-Z0-9_]+\b", scope)
+        or re.search(r"""(?i)["']?env:[A-Z][A-Z0-9_]*["']?""", scope)
+        or re.search(r"""(?i)["']?\$secretRef(?::[A-Za-z0-9_.:/-]+)?["']?""", scope)
+        or re.search(r"(?i)\breplace-with-[A-Za-z0-9_-]+\b", scope)
     )
 
 
