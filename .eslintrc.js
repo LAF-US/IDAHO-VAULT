@@ -24,4 +24,17 @@ module.exports = {
     ".venv/",
     ".uv-cache/",
   ],
+  overrides: [
+    {
+      // Mirrors the flat config's ESM block; see eslint.config.js.
+      files: [".codex/skills/codex-primary-runtime/slides/templates/*.js"],
+      parserOptions: { sourceType: "module" },
+      globals: {
+        __DECK_ID_JSON__: "readonly",
+        __OUT_DIR_JSON__: "readonly",
+        __REFERENCE_DIR_JSON__: "readonly",
+        __SLIDES_JSON__: "readonly",
+      },
+    },
+  ],
 };

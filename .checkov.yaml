@@ -1,13 +1,24 @@
 # Checkov — Codacy toggle. `skip-check: []` suppresses nothing, and keeps the
 # file a valid mapping.
 #
-# The only surface here is .github/workflows/, already guarded twice: by
-# action-pin-policy.yml and by CodeQL's `actions` analysis. When the three
-# disagree, the repo's own policy workflow wins — it is the one that gates
-# merges.
+# TWO SURFACES, not one. An earlier version of this file said workflows were
+# the only one — written without looking:
+#
+#   .github/workflows/   CKV_GHA_* checks
+#   Dockerfile           root, FROM python:3.12-slim, built by
+#                        .github/workflows/cloud-run-deploy.yml
+#
+# The workflow surface is already guarded twice, by
+# .github/workflows/action-pin-policy.yml and by CodeQL's `actions` analysis.
+# When the three disagree, the repo's own policy workflow wins — it is the one
+# that gates merges. The Dockerfile surface is guarded by nothing else, which
+# makes it the part of this toggle that actually earns its keep.
+#
+# UNMEASURED. Checkov could not be obtained in the environment this was written
+# in, so the baseline over either surface is unknown. A gap, not a zero.
 #
 # `check:` is exclusive, not additive: setting one id disables every other
-# check while reading like you enabled something. `skip-check:` is the
-# additive one.
+# check while reading like you enabled something. `skip-check:` is the additive
+# one.
 
 skip-check: []

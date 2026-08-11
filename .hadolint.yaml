@@ -1,8 +1,20 @@
-# hadolint — Codacy toggle. `ignored: []` suppresses nothing, and keeps the
-# file a valid mapping; a comments-only file parses as null, which hadolint
-# rejects. No Dockerfile here yet, so reach is zero.
+# hadolint — Codacy toggle. `ignored: []` suppresses nothing, so every rule
+# runs at default severity; hadolint's own defaults are the baseline. The empty
+# list also keeps the file a valid mapping — a comments-only file parses as
+# null, which hadolint rejects.
 #
-# `trustedRegistries` is the one worth adding first, and it is an allowlist:
+# REACH IS NOT ZERO. An earlier version of this file said "no Dockerfile here
+# yet" — written without looking. There is a root `Dockerfile`
+# (`FROM python:3.12-slim`), and `.github/workflows/cloud-run-deploy.yml`
+# builds it (`docker build`, with `Dockerfile` in the workflow's path filter).
+# So this toggle applies to a live deployment artifact, not a hypothetical one.
+#
+# UNMEASURED. hadolint is a native binary and could not be obtained in the
+# environment this was written in, so the finding count against that Dockerfile
+# is unknown. That is a gap, not a zero — whoever runs it first should record
+# the number here.
+#
+# `trustedRegistries` is the one worth adding next, and it is an allowlist:
 # setting it rejects every registry not listed.
 
 ignored: []

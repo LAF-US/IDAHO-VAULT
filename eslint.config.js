@@ -55,4 +55,25 @@ module.exports = [
       globals: { ...globals.browser },
     },
   },
+
+  {
+    // ESM by design — the file's own header says the init script writes a
+    // sibling package.json with type=module. Parsing it as CommonJS produced a
+    // permanent "Unexpected token import" in the baseline: a config artifact,
+    // not a defect in the file.
+    files: [".codex/skills/codex-primary-runtime/slides/templates/**/*.js"],
+    languageOptions: {
+      sourceType: "module",
+      // Substitution placeholders. The init script replaces each with a JSON
+      // literal before the template is ever executed, so they are defined at
+      // run time and only look undefined to a linter reading the template
+      // form. Enumerated from the file, not guessed.
+      globals: {
+        __DECK_ID_JSON__: "readonly",
+        __OUT_DIR_JSON__: "readonly",
+        __REFERENCE_DIR_JSON__: "readonly",
+        __SLIDES_JSON__: "readonly",
+      },
+    },
+  },
 ];

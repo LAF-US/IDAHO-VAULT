@@ -2,8 +2,30 @@
 # check runs: its defaults ARE the baseline. eslint, stylelint, remark and
 # biome are the opposite — empty means no rules there.
 #
-# Reach here is near zero: this vault's shell lives in workflow `run:` blocks,
-# and ShellCheck does not parse YAML.
+# REACH IS NOT NEAR-ZERO. An earlier version of this file claimed the vault's
+# shell lives only in workflow `run:` blocks that ShellCheck cannot parse.
+# Written without looking. There are 81 tracked `.sh` files outside
+# THE-GEMSTONE:
+#
+#   66  .claude/shell-snapshots/     generated session snapshots
+#   15  everything else              scripts/git-guard.sh, scripts/export-dropbox.sh,
+#                                    install_dependencies.sh, .ghcp-appmod/skills/
+#                                    scripts/bash/*, launcher scripts at root
+#
+# The workflow-`run:`-block point still stands as a GAP — the secret-scan and
+# portability checks are shell that ShellCheck genuinely cannot see, and
+# actionlint would be the tool for that. But it is not the whole story, and
+# stating it as the whole story understated this toggle by 81 files.
+#
+# UNMEASURED, and worth saying why: an `npm i shellcheck` attempt here reported
+# success and then produced "0 findings" on all 81 files. That was a false
+# green — the package downloads a native binary post-install, and the download
+# returned 403 through this environment's proxy, so ShellCheck never ran. Zero
+# from a tool that did not execute looks exactly like zero from a clean tree.
+#
+# If the 66 generated snapshots dominate the real baseline, exclude that
+# directory rather than lowering `severity` — generated files are not a reason
+# to lint hand-written scripts less strictly.
 #
 # Exempt at the offending line (`# shellcheck disable=SCxxxx  # reason`), not
 # repo-wide.

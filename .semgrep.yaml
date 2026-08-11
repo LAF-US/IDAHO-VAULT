@@ -36,6 +36,8 @@ rules:
     languages: [python]
     severity: WARNING
     message: >-
-      os.system() returns only an exit code — no stdout, no stderr, no way to
-      tell a failure from a crash. Use subprocess.run with a list.
+      os.system() runs its argument through a shell, so any interpolated value
+      becomes executable syntax, and it gives back only a wait status — stdout
+      and stderr go straight to the parent's streams and cannot be captured or
+      inspected. Use subprocess.run with a list of arguments.
     pattern: os.system(...)
