@@ -62,9 +62,8 @@ Temporary Items
 .obsidian/plugins/phone-to-roam-to-obsidian/data.json
 .obsidian/plugins/todoist-context-bridge/data.json
 credstore*
-id_ed25519
-id_ed25519.pub
-obsidian-recovery-codes.txt
+id_ed*
+pubring*
 *.pem
 
 # ---------------------------------------------------------------
