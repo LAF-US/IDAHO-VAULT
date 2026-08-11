@@ -27,17 +27,3 @@
 #
 # Syntax is Java glob, per the same page: `test/**` covers everything under
 # test, `**.resource` covers that extension repo-wide.
-
-# Measured against the tracked tree rather than copied out of the per-tool
-# configs. THE-GEMSTONE is 214 tracked files and every one is markdown — it is
-# a Quartz site committed whole, 49 of those files being vendored docs under
-# its own node_modules/. markdownlint and remark-lint would report on all 214.
-#
-# Deliberately NOT listed: node_modules, .venv, .uv-cache. Codacy analyzes what
-# is committed, and `git ls-files` returns zero for each of them outside
-# THE-GEMSTONE. The per-tool configs still name all three because those tools
-# run against a working tree, which can hold all three; this file does not.
-# Listing them here would pad it with entries that match nothing and make it
-# look like it were doing more than it is.
-exclude_paths:
-  - "THE-GEMSTONE/**"
