@@ -39,7 +39,7 @@ is in the audit tooling's URL extraction, not in these two files.
 | `2017-11-03 - Brown Political Review - All Blaine, No Gain.md` | https://brownpoliticalreview.org/2017/11/blaine-no-gain/ | 404 |
 | `2018-01-04 - Sandpoint Reader - Person of interest in racist CD distribution at SHS also investigated in Virginia for similar actions.md` | https://sandpointreader.com/person-interest-racist-cd-distribution-shs-also-inve | 403 |
 | `2018-05-11 - Moscow-Pullman Daily News - Candidate Heath; A fugitive for 10 years.md` | https://dnews.com/local/candidate-heath-a-fugitive-for-10-years/article_f0c5a1ab | 403 |
-| `2023-05-10 - Lewiston Tribune - In Idaho County, unconnected or unfriendly residents can make sizing up properties difficult.md` | https://www.lmtribune.com/northwest/in-idaho-county-unconnected-or-unfriendly-re | 403 |
+| `2023-05-10 - Lewiston Tribune - In Idaho County, unconnected or unfriendly residents can make sizing up properties difficult.md` | <https://www.lmtribune.com/northwest/in-idaho-county-unconnected-or-unfriendly-re> | 403 |
 | `2023-06-15 - New York Times - Oregon Town's Marijuana Boom Yields Envy in Idaho.md` | https://www.nytimes.com/2023/06/15/business/economy/oregon-idaho-marijuana.html | 403 |
 | `2023-06-29 - Sandpoint Reader - ID Supreme Court affirms Festival’s right to ban guns at War Memorial Field.md` | https://sandpointreader.com/id-supreme-court-affirms-festivals-right-to-ban-guns | 403 |
 | `2023-08-13 - Sandpoint Reader - Woodward will seek Dist. 1 Senate seat.md` | https://sandpointreader.com/woodward-will-seek-dist-1-senate-seat/ | 403 |
