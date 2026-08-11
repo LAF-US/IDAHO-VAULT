@@ -1,4 +1,5 @@
 ---
+title: "I always tell my coworkers I'm an expert with red string..."
 date: 2022-12-02
 time: 06:11:11
 tweet_id: "1598560388454486017"

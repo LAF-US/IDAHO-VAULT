@@ -1,4 +1,5 @@
 ---
+title: "gotta detect that je ne sais quoi"
 date: 2024-06-25
 time: 22:56:56
 tweet_id: "1805736964949418417"

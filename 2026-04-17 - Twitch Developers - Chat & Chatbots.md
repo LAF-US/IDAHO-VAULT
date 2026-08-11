@@ -4,7 +4,7 @@ author:
 published: 2026-04-17
 created: 2026-04-23
 ---
-[Contents](#)
+Contents
 
 ## Twitch Chat & Chatbots
 

@@ -242,7 +242,7 @@ def _fields_from_args(args: argparse.Namespace) -> Dict[str, Optional[str]]:
 
 
 def _print_request(payload: dict) -> None:
-    print(json.dumps(payload, indent=2, so***REMOVED***keys=True))
+    print(json.dumps(payload, indent=2, sort_keys=True))
 
 
 def _decode_and_write(images: List[str], outputs: List[Path], force: bool) -> None:

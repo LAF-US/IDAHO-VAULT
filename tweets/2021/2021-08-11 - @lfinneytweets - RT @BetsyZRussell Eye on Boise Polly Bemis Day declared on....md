@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Polly Bemis Day declared on..."
 date: 2021-08-11
 time: 15:08:59
 tweet_id: "1425474333439238144"

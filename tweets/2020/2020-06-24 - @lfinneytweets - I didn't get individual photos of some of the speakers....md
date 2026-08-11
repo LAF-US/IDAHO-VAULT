@@ -1,4 +1,5 @@
 ---
+title: "I didn't get individual photos of some of the speakers..."
 date: 2020-06-24
 time: 05:35:12
 tweet_id: "1275663744752914434"

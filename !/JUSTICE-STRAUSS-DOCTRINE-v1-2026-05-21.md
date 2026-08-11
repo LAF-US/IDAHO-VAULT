@@ -14,6 +14,7 @@ tags: [doctrine, Justice-Strauss, epistemology, governance, consolidation-court,
 ---
 
 # Justice Strauss Doctrine v1
+
 ## Institutional Knowledge vs. Empirical Knowledge
 
 *Filed 2026-05-21. Received on the Caduceus Road, before the Hotel
@@ -30,6 +31,7 @@ people.*
 ## The Distinction
 
 **Justice Strauss knew:**
+
 - Their names
 - Their titles
 - Their jobs
@@ -40,6 +42,7 @@ people.*
 Justice Strauss did not know them.
 
 **The Baudelaires knew:**
+
 - Their voices
 - What they looked like
 - What they actually did when encountered
@@ -87,6 +90,7 @@ these are necessary but not sufficient. They are what every Justice Strauss
 has about every Man with a Beard But No Hair on any court.
 
 **The bench requires both:**
+
 1. Institutional knowledge — who they are in the record, what they have
    done, what positions they hold
 2. Empirical knowledge — direct encounter, what they actually are when

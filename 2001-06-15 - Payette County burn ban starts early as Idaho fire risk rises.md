@@ -12,7 +12,7 @@ date modified: Monday, June 15th 2026, 9:26:00 pm
 
 The annual burn ban was implemented in response to increasingly dry, windy and hot temps in Idaho.
 
-![](https://media.ktvb.com/assets/KTVB/images/c375c607-3818-4c82-aa2e-cab79a6e8b34/20260615T183020/c375c607-3818-4c82-aa2e-cab79a6e8b34_1920x1080.jpg)
+![alt text needed](https://media.ktvb.com/assets/KTVB/images/c375c607-3818-4c82-aa2e-cab79a6e8b34/20260615T183020/c375c607-3818-4c82-aa2e-cab79a6e8b34_1920x1080.jpg)
 
 Credit: Payette Fire Department | Facebook
 

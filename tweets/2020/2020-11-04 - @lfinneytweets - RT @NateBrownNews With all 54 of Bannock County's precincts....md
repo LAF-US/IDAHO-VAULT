@@ -1,4 +1,5 @@
 ---
+title: "RT @NateBrownNews With all 54 of Bannock County's precincts..."
 date: 2020-11-04
 time: 08:24:01
 tweet_id: "1323903815704170496"

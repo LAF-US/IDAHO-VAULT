@@ -1,4 +1,5 @@
 ---
+title: "RT @sprdougnad ICYMI Idaho @GovernorLittle signs an..."
 date: 2021-04-19
 time: 16:44:47
 tweet_id: "1384186222449356810"

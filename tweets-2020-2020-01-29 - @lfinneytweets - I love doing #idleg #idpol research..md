@@ -18,13 +18,15 @@ related:
   - idpol
 ---
 
-I love doing #idleg/#idpol research. 
-https://t.co/jfsduX3zQj https://t.co/b3ILqBR9JM
+I love doing #idleg/#idpol research.
+<https://t.co/jfsduX3zQj> <https://t.co/b3ILqBR9JM>
 
 ## Links
-- https://www.snopes.com/fact-check/my-dynamite-idaho/
+
+- <https://www.snopes.com/fact-check/my-dynamite-idaho/>
 
 ## Media
-- ![](https://pbs.twimg.com/media/EPeyRf0UEAAzU74.png)
+
+- ![alt text needed](https://pbs.twimg.com/media/EPeyRf0UEAAzU74.png)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1222641875510689793)

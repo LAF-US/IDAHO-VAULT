@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2024-06-25
 time: 23:16:08
 tweet_id: "1805741799283343551"
@@ -13,9 +14,9 @@ related:
   - lfinneytweets
 ---
 
-@dugganreports https://t.co/B1EjEUByqi
+@dugganreports <https://t.co/B1EjEUByqi>
 
 ## Media
-- ![](https://pbs.twimg.com/tweet_video_thumb/GQ9Il_MboAAWmWM.jpg)
+- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/GQ9Il_MboAAWmWM.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1805741799283343551)

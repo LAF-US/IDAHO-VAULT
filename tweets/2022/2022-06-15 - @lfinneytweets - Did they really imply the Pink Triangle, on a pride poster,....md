@@ -1,4 +1,5 @@
 ---
+title: "Did they really imply the Pink Triangle, on a pride poster,..."
 date: 2022-06-15
 time: 03:20:07
 tweet_id: "1536911402773843970"

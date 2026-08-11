@@ -1,4 +1,5 @@
 ---
+title: "Rather than evenly distributing power across the state, the..."
 date: 2021-08-24
 time: 01:01:11
 tweet_id: "1429972019412574212"

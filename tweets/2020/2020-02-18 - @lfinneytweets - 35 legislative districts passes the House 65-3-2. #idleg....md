@@ -1,4 +1,5 @@
 ---
+title: "35 legislative districts passes the House 65-3-2. #idleg..."
 date: 2020-02-18
 time: 18:23:33
 tweet_id: "1229833849196040192"

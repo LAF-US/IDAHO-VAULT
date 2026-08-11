@@ -1,4 +1,5 @@
 ---
+title: "Tuesday #idpol reminder Keep your campaigning at least 250..."
 date: 2024-05-20
 time: 20:06:08
 tweet_id: "1792648020888039568"
@@ -19,9 +20,9 @@ related:
 ---
 
 Tuesday #idpol reminder: Keep your campaigning at least 250 feet away from polling places. #idleg 
-https://t.co/QiWq46eUsw
+<https://t.co/QiWq46eUsw>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2024/02/06/senate-passes-electioneering-boundary-bill/
+- <https://blog.idahoreports.idahoptv.org/2024/02/06/senate-passes-electioneering-boundary-bill/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1792648020888039568)

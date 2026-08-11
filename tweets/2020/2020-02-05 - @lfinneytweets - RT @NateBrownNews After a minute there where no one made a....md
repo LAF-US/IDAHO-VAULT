@@ -1,4 +1,5 @@
 ---
+title: "RT @NateBrownNews After a minute there where no one made a..."
 date: 2020-02-05
 time: 20:35:50
 tweet_id: "1225156098488852480"

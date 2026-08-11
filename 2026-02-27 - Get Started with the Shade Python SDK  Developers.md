@@ -15,7 +15,7 @@ Shade offers a full-featured python SDK that enables you to access any part of y
 
 Our SDK supports Python 3.8+. Once you have successfully installed Python on your machine, you can install below:
 
-```
+```bash
 pip install shade-python-sdk
 ```
 
@@ -25,7 +25,7 @@ You can obtain an API key for the Shade Python SDK from your workspace and gener
 
 Please keep in mind that this is a secret key and should not be shared publically or stored in a public repository.
 
-![](https://academy.shade.inc/~gitbook/image?url=https%3A%2F%2F2149326901-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F78QKMeD8RCfROVEmgJMO%252Fuploads%252FjcCy3xf0wHIzeACc9Qc3%252FScreenshot%25202025-02-12%2520at%25203.52.23%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D3fb3bd6d-2ccb-4630-ae0e-12a934e27f36&width=768&dpr=3&quality=100&sign=568e4763&sv=2)
+![alt text needed](https://academy.shade.inc/~gitbook/image?url=https%3A%2F%2F2149326901-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F78QKMeD8RCfROVEmgJMO%252Fuploads%252FjcCy3xf0wHIzeACc9Qc3%252FScreenshot%25202025-02-12%2520at%25203.52.23%25E2%2580%25AFPM.png%3Falt%3Dmedia%26token%3D3fb3bd6d-2ccb-4630-ae0e-12a934e27f36&width=768&dpr=3&quality=100&sign=568e4763&sv=2)
 
 You can access your API Keys by going to Settings > API Keys
 
@@ -33,7 +33,7 @@ You can access your API Keys by going to Settings > API Keys
 
 You can easily initialize the Shade SDK by initializing a Shade object. This will authenticate and authorize as your user - whatever you have access to, the object will have access to.
 
-```
+```text
 API_KEY = 'sk....'
 REMOTE_URL = 'https://api.shade.inc'
 shade = Shade(remote_url=REMOTE_URL, api_key=API_KEY)

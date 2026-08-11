@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports On this week's podcast, @KeithRidler of..."
 date: 2021-09-22
 time: 19:23:31
 tweet_id: "1440758679431630851"

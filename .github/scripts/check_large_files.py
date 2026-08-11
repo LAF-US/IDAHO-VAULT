@@ -16,7 +16,23 @@ from dataclasses import dataclass
 from pathlib import Path
 
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
+def _repo_root() -> Path:
+    # In CI this script executes from the trusted base-branch checkout
+    # (trusted-main/), while the content under test is the PRIMARY checkout —
+    # which is exactly the run step's working directory: every policy workflow
+    # invokes this script with cwd at the primary checkout and never sets a
+    # working-directory override. Using the process cwd keeps the
+    # trusted-validator split (trusted code, PR-head content) without deriving
+    # any filesystem path from environment data — there is no tainted-path
+    # flow left for a scanner to model, and no hard-coded runner path to break
+    # on self-hosted runners or a repo rename. Local (pre-commit) runs fall
+    # back to the script's own repository.
+    if os.environ.get("GITHUB_ACTIONS") == "true":
+        return Path.cwd()
+    return Path(__file__).resolve().parents[2]
+
+
+REPO_ROOT = _repo_root()
 MB = 1024 * 1024
 GB = 1024 * MB
 
@@ -35,15 +51,21 @@ class Candidate:
 
 
 def run_git(args: list[str]) -> subprocess.CompletedProcess[str]:
-    return subprocess.run(
-        ["git", *args],
-        cwd=REPO_ROOT,
-        text=True,
-        encoding="utf-8",
-        errors="replace",
-        capture_output=True,
-        check=False,
-    )
+    try:
+        return subprocess.run(
+            ["git", *args],
+            cwd=REPO_ROOT,
+            text=True,
+            encoding="utf-8",
+            errors="replace",
+            capture_output=True,
+            check=False,
+            timeout=30,
+        )
+    except subprocess.TimeoutExpired as exc:
+        raise RuntimeError(f"git {args[0]} timed out after 30s") from exc
+    except OSError as exc:
+        raise RuntimeError(f"git {args[0]} could not run: {exc}") from exc
 
 
 def parse_porcelain_line(line: str) -> tuple[str, str] | None:
@@ -154,22 +176,26 @@ def main() -> int:
     if mode_count > 1:
         parser.error("--staged, --all-tracked, and --paths-from-stdin are mutually exclusive")
 
-    if args.all_tracked:
-        candidates = git_ls_files_candidates()
-    elif args.paths_from_stdin:
-        candidates = stdin_path_candidates()
-    else:
-        candidates = changed_candidates(staged_only=args.staged)
+    try:
+        if args.all_tracked:
+            candidates = git_ls_files_candidates()
+        elif args.paths_from_stdin:
+            candidates = stdin_path_candidates()
+        else:
+            candidates = changed_candidates(staged_only=args.staged)
 
-    too_large: list[Candidate] = []
-    missing_lfs: list[Candidate] = []
+        too_large: list[Candidate] = []
+        missing_lfs: list[Candidate] = []
 
-    for candidate in candidates:
-        if candidate.size > lfs_max:
-            too_large.append(candidate)
-            continue
-        if candidate.size > lfs_required and lfs_filter_for(candidate.path) != "lfs":
-            missing_lfs.append(candidate)
+        for candidate in candidates:
+            if candidate.size > lfs_max:
+                too_large.append(candidate)
+                continue
+            if candidate.size > lfs_required and lfs_filter_for(candidate.path) != "lfs":
+                missing_lfs.append(candidate)
+    except RuntimeError as exc:
+        print(f"large-file guard: {exc}", file=sys.stderr)
+        return 1
 
     if not too_large and not missing_lfs:
         print("large-file guard: OK")

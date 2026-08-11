@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio .@uidaho has announced that all classes..."
 date: 2020-03-11
 time: 18:44:58
 tweet_id: "1237811773593366529"

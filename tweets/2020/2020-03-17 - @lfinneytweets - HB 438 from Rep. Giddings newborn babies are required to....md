@@ -1,4 +1,5 @@
 ---
+title: "HB 438 from Rep. Giddings newborn babies are required to..."
 date: 2020-03-17
 time: 22:06:08
 tweet_id: "1240036724174028801"

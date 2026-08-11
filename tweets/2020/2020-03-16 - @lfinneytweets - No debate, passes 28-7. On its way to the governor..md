@@ -1,4 +1,5 @@
 ---
+title: "No debate, passes 28-7. On its way to the governor."
 date: 2020-03-16
 time: 17:32:52
 tweet_id: "1239605568332939268"
