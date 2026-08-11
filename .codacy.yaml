@@ -1,0 +1,43 @@
+---
+# Codacy configuration file — the vault-side half of Codacy's control surface.
+#
+# WHAT IT CAN AND CANNOT DO. Codacy's docs are explicit: the configuration file
+# "lets you configure tools, but you can't enable or disable them. A tool can
+# only be enabled or disabled on the Code patterns page." That same page also
+# holds each tool's "use a configuration file" switch — the switch that makes
+# the repo's .bandit, ruff.toml, eslint.config.js, .semgrep.yaml, .remarkrc,
+# .stylelintrc and the rest take effect at all. None of that is settable from
+# here. This file governs exclusions, languages, and per-engine settings.
+# Everything else stays in the UI, and no file in this repository can move it.
+#
+# IT IS READ FROM THE DEFAULT BRANCH. "Codacy always uses the configuration
+# file in the default branch." Additions made by a pull request are also
+# considered for that pull request's own analysis, but main's copy takes
+# precedence — so a path *removed* here keeps being excluded until this merges.
+#
+# ADDING IT TURNS OFF THE UI'S IGNORED-FILES SETTINGS. Codacy: "If your
+# repository has a Codacy configuration file, the Ignored files settings
+# defined on the Codacy UI don't apply and you must ignore files using the
+# configuration file instead." That trade is the reason to have the file — the
+# vault holds the list, not a vendor console — but it is a trade, and it is
+# one-way while the file exists. Anything ignored *only* in the UI stops being
+# ignored the moment this reaches main, and has to be written in below instead.
+# Nobody with UI access has confirmed to this session what is set there, so
+# treat that list as unread rather than empty.
+#
+# Syntax is Java glob, per the same page: `test/**` covers everything under
+# test, `**.resource` covers that extension repo-wide.
+
+# Measured against the tracked tree rather than copied out of the per-tool
+# configs. THE-GEMSTONE is 214 tracked files and every one is markdown — it is
+# a Quartz site committed whole, 49 of those files being vendored docs under
+# its own node_modules/. markdownlint and remark-lint would report on all 214.
+#
+# Deliberately NOT listed: node_modules, .venv, .uv-cache. Codacy analyzes what
+# is committed, and `git ls-files` returns zero for each of them outside
+# THE-GEMSTONE. The per-tool configs still name all three because those tools
+# run against a working tree, which can hold all three; this file does not.
+# Listing them here would pad it with entries that match nothing and make it
+# look like it were doing more than it is.
+exclude_paths:
+  - "THE-GEMSTONE/**"
