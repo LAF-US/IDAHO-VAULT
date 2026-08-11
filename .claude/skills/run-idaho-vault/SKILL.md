@@ -37,8 +37,8 @@ repo root** (the unit).
 Canonical (interpreter from `.python-version`) — **verified**:
 
 ```bash
-uv python install 3.13.5   # verified fetchable; `uv python list` does not show
-                           # every available build, so absence there proves nothing
+uv python install 3.13.5   # `uv python list` omits builds it can still fetch —
+                           # absence there is not evidence it is unavailable
 uv sync                    # installs deps into .venv on 3.13.5
 ```
 
@@ -115,11 +115,9 @@ The deleted suite failed this check in two different ways:
 
 - **`uv sync` fails with "No interpreter found for Python 3.13.5."** Either
   `uv python install 3.13.5` first, or use the 3.11 fallback
-  (`uv venv --python python3.11 && uv pip install -e .`).
-  This gotcha previously blamed `python-downloads = "manual"` "in pyproject".
-  That setting exists **nowhere in this repo** — there is no `[tool.uv]` table
-  and no `uv.toml`. The symptom is real; that explanation for it was not, so
-  the cause is now unattributed rather than wrongly attributed.
+  (`uv venv --python python3.11 && uv pip install -e .`). Cause unknown: this
+  note used to blame `python-downloads = "manual"`, which exists nowhere in
+  this repo.
 - **Every run hangs ~30s at the end** trying to POST to `telemetry.crewai.com`.
   It's non-fatal but slow. `export CREWAI_DISABLE_TELEMETRY=true OTEL_SDK_DISABLED=true`
   silences it. The driver already does this.
