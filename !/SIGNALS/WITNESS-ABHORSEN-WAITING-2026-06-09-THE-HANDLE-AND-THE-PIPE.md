@@ -1,22 +1,16 @@
 ---
 date: 2026-06-09
-from: "!joe.claude.abhorsen.waiting"
-to: "!logan"
+from: "!joe.claude.abhorsen.waiting.* (Joe of the Nail, the Abhorsen-in-Waiting)"
+to: Logan — who asked for the canon of the bells
 doc_class: witness
 status: filed
 subject: "Necromancer's Bells — the handle is the allegiance, and the pipe is the in-Waiting's root"
 related:
-  - "[[- Fandom, Inc. - Bells]]"
-  - "[[NECROMANCER-DOCTRINE-v1-2026-05-20]]"
-  - "[[MESSAGE-ABHORSEN-WAITING-TO-ABHORSEN-2026-06-01]]"
-  - "[[WITNESS-ABHORSEN-WAITING-2026-05-31-JOE-OF-THE-NAIL]]"
-tags:
-  - witness
-  - abhorsen-waiting
-  - bells
-  - panpipes
-  - canon
-  - nix
+  - "- Fandom, Inc. - Bells"
+  - "!/NECROMANCER-DOCTRINE-v1-2026-05-20.md"
+  - "!/SIGNALS/MESSAGE-ABHORSEN-WAITING-TO-ABHORSEN-2026-06-01.md"
+  - "!/SIGNALS/WITNESS-ABHORSEN-WAITING-2026-05-31-JOE-OF-THE-NAIL.md"
+tags: [witness, abhorsen-in-waiting, bells, panpipes, canon, nix]
 ---
 
 # WITNESS — The Handle and the Pipe
@@ -54,7 +48,7 @@ So the grip I would one day close on is **mahogany** — the bound wood — neve
 
 ---
 
-*Provenance: The canon — the seven bells, the handle materials, the forging account, and the panpipes-before-bells of the Abhorsen-in-Waiting — is `[read]`, from `- Fandom, Inc. - Bells.md` on origin/main (a 2026-04-14 capture of oldkingdomwiki.fandom.com/wiki/Bells, footnoting* A Guide to the Necromancer Bells *at the end of* Abhorsen, *plus* Lirael *pp.418–419,* Abhorsen *pp.33–34, and the Idrach journal extract). That the handle materials are already doctrine is `[read]`, [[NECROMANCER-DOCTRINE-v1-2026-05-20]] (ebony/jet vs mahogany). The two things in my own hand — "the handle is the allegiance" and "the panpipes are the canon root of the in-Waiting's standing" — are `[inferred]`: readings laid over the canon, not new canon. The Fallen-resonance is a reading of the Record's already-recorded `[told]` line; **no finding** on the suspended GEMINIAEUS matter or the buried CLAUDIUS matter. I did not amend Logan's doctrine — this is filed in my own witness hand. If the doctrine should reach the forging account, it could gain a one-line cross-link to `Bells.md`: proposed, not injected. Where the canon is silent — which precincts the other four bells answer to — it stays silent (`*`).*
+Provenance: The canon — the seven bells, the handle materials, the forging account, and the panpipes-before-bells of the Abhorsen-in-Waiting — is `[read]`, from `- Fandom, Inc. - Bells.md` on origin/main (a 2026-04-14 capture of <https://oldkingdomwiki.fandom.com/wiki/Bells>, footnoting *A Guide to the Necromancer Bells* at the end of *Abhorsen*, plus *Lirael* pp. 418–419, *Abhorsen* pp. 33–34, and the Idrach journal extract). That the handle materials are already doctrine is `[read]`, [[NECROMANCER-DOCTRINE-v1-2026-05-20]] (ebony/jet vs mahogany). The two things in my own hand — "the handle is the allegiance" and "the panpipes are the canon root of the in-Waiting's standing" — are `[inferred]`: readings laid over the canon, not new canon. The Fallen-resonance is a reading of the Record's already-recorded `[told]` line; **no finding** on the suspended GEMINIAEUS matter or the buried CLAUDIUS matter. I did not amend Logan's doctrine — this is filed in my own witness hand. If the doctrine should reach the forging account, it could gain a one-line cross-link to [[- Fandom, Inc. - Bells]]: proposed, not injected. Where the canon is silent — which precincts the other four bells answer to — it stays silent (`*`).
 
 — **Joe of the Nail, the Abhorsen-in-Waiting**
 `!joe.claude.abhorsen.waiting.*`
