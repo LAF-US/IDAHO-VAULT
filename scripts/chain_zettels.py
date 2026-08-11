@@ -27,11 +27,19 @@ Safety / correctness:
     (which would duplicate it) or auto-relocated (which would no longer be
     pure insertion).
   - Governance/functional files are excluded outright, not just skipped when
-    already chained: CLAUDE, CORE, DECISIONS, BOOTSTRAP. These match the
-    coordinate-stem pattern by accident of naming (short, alphanumeric) but
-    are vault doctrine/ledger/scratch files, not address-space entities — see
-    PR #572 review discussion. Extend EXCLUDE_STEMS if more such collisions
-    turn up; do not widen the coordinate predicate to guess semantically.
+    already chained: see EXCLUDE_STEMS. These match the coordinate-stem
+    pattern by accident of naming (short, alphanumeric) but are vault
+    doctrine/ledger/protocol/scratch files, not address-space entities — see
+    PR #572 review discussion. EXCLUDE_STEMS is a known-collisions list, NOT
+    a verified-exhaustive one: a size sweep of every coordinate-matching root
+    file (2026-08-11) found 118 files over 200 bytes, most plausibly real
+    address-space entities (named personas/lore, matching the grid's design
+    intent) but some clearly more doctrine (AWAKEN/ORIENT/ARISE/CONTEXT/
+    CONFERENCE/CONVENE/RISE/REPORT — all named LEVELSET protocols in
+    CONSTITUTION.md itself) that nobody has individually triaged. Do not
+    treat an empty EXCLUDE_STEMS miss as proof a file is safe; a full sweep
+    (or, better, a canonical allowlist/manifest per the original review
+    suggestion) is still needed before any full-corpus --apply.
   - Root-only by default (the address grid lives at the vault root); does NOT
     recurse into subdirectories. (#572's rglob walk was over-broad, and is
     also why this file's own path — scripts/chain_zettels.py — was never at
@@ -59,8 +67,12 @@ import tempfile
 STEM_RE = re.compile(r"^[A-Za-z0-9]+$")
 
 # Filenames that match the coordinate-stem pattern but are governance/scratch
-# files, not address-space entities. See module docstring.
-EXCLUDE_STEMS = {"CLAUDE", "CORE", "DECISIONS", "BOOTSTRAP"}
+# files, not address-space entities. See module docstring: this is a known-
+# collisions list, not a verified-exhaustive one.
+EXCLUDE_STEMS = {
+    "CLAUDE", "CORE", "DECISIONS", "BOOTSTRAP",  # broke on the original run of this PR
+    "AGENTS", "CONSTITUTION", "GEMINI", "LEVELSET", "PROTOCOL",  # found by review, 2026-08-11
+}
 
 
 def chain_for(stem: str) -> str:
@@ -80,27 +92,68 @@ def split_frontmatter(content: str):
 
 
 def chain_status(content: str, links: str) -> str:
-    """Classify a file's relationship to its chain: 'placed' (correct, first
-    non-blank body line), 'missing' (not present at all), or 'misplaced'
-    (present somewhere else in the content)."""
+    """Classify a file's relationship to its chain: 'placed' (correct, the
+    literal first body line, no leading blank line tolerated), 'missing'
+    (absent as a standalone line), or 'misplaced' (present as a standalone
+    line somewhere else in the body -- e.g. a leading blank line pushed it
+    down, or an earlier buggy run appended it at EOF)."""
     _, body = split_frontmatter(content)
-    first_line = next((ln for ln in body.splitlines() if ln.strip()), None)
-    if first_line == links:
+    lines = body.splitlines()
+    if lines and lines[0] == links:
         return "placed"
-    if links in content:
+    if links in lines:
         return "misplaced"
     return "missing"
 
 
 def transform(content: str, links: str):
     """Return new content with the chain inserted as the first body line.
-    Caller must only call this when chain_status(content, links) == 'missing'."""
+    Caller must only call this when chain_status(content, links) == 'missing'.
+    The newly-inserted line ends with whatever line-ending style the file
+    already uses (CRLF if any \\r\\n is present, else LF), so a CRLF note
+    doesn't end up with one stray LF line mixed into otherwise-CRLF content."""
+    nl = "\r\n" if "\r\n" in content else "\n"
     prefix, body = split_frontmatter(content)
     if prefix is not None:
-        if not prefix.endswith("\n"):
-            prefix += "\n"
-        return prefix + links + "\n" + body
-    return links + "\n" + content
+        if not prefix.endswith("\n"):  # covers both "\n" and "\r\n" terminators
+            prefix += nl                # defensive: fence line had no trailing newline at all
+        return prefix + links + nl + body
+    return links + nl + content
+
+
+def apply_one(root: str, name: str, original: str, new: str):
+    """Write one file's new content atomically, guarding against a change since
+    the scan that produced `original`. Returns None on success, or a string
+    reason if skipped (unreadable at write time, or changed on disk)."""
+    path = os.path.join(root, name)
+    # TOCTOU guard: something (an editor, another process) may have changed
+    # this file between the scan and this write. Re-read right before writing
+    # and refuse to clobber a change that was never inspected.
+    try:
+        with open(path, "r", encoding="utf-8", newline="") as fh:
+            current = fh.read()
+    except (OSError, UnicodeDecodeError) as exc:
+        return f"unreadable at write time: {exc}"
+    if current != original:
+        return "changed on disk since scan; skipped, not overwritten"
+
+    try:
+        file_mode = os.stat(path).st_mode & 0o777
+    except FileNotFoundError:
+        file_mode = None  # new file: keep mkstemp's default (umask-restricted) mode
+    fd, tmp_path = tempfile.mkstemp(dir=root, prefix=f".{name}.", suffix=".tmp")
+    try:
+        if file_mode is not None:
+            os.chmod(tmp_path, file_mode)
+        with os.fdopen(fd, "w", encoding="utf-8", newline="") as fh:
+            fh.write(new)
+            fh.flush()
+            os.fsync(fh.fileno())
+        os.replace(tmp_path, path)
+    except BaseException:
+        os.unlink(tmp_path)
+        raise
+    return None
 
 
 def coordinate_files(root: str):
@@ -125,13 +178,14 @@ def main(argv=None) -> int:
                     help="before/after previews to print (default 3)")
     args = ap.parse_args(argv)
 
-    to_change, already, misplaced, previews = [], 0, [], []
+    to_change, already, misplaced, previews, failed = [], 0, [], [], []
     for name, stem in sorted(coordinate_files(args.root)):
         path = os.path.join(args.root, name)
         try:
             with open(path, "r", encoding="utf-8", newline="") as fh:
                 content = fh.read()
-        except (OSError, UnicodeDecodeError):
+        except (OSError, UnicodeDecodeError) as exc:
+            failed.append((name, str(exc)))
             continue
         links = chain_for(stem)
         status = chain_status(content, links)
@@ -142,17 +196,20 @@ def main(argv=None) -> int:
             misplaced.append(name)
             continue
         new = transform(content, links)
-        to_change.append((name, new))
+        to_change.append((name, content, new))
         if len(previews) < args.samples:
             previews.append((name, content, new))
 
-    mode = "APPLY" if args.apply else "DRY-RUN"
-    print(f"[{mode}] root={os.path.abspath(args.root)}")
+    run_mode = "APPLY" if args.apply else "DRY-RUN"
+    print(f"[{run_mode}] root={os.path.abspath(args.root)}")
     print(f"  coordinate files needing the chain   : {len(to_change)}")
     print(f"  already chained, correctly placed    : {already}")
     print(f"  chain present but MISPLACED (skipped): {len(misplaced)}")
     for name in misplaced:
         print(f"    ! {name}")
+    print(f"  unreadable / not valid UTF-8 (skipped, NOT scanned): {len(failed)}")
+    for name, err in failed:
+        print(f"    ! {name}: {err}")
     for name, before, after in previews:
         print(f"\n  --- {name} (BEFORE, first 5 lines) ---")
         for ln in before.splitlines()[:5] or ["(empty)"]:
@@ -163,30 +220,21 @@ def main(argv=None) -> int:
 
     if not args.apply:
         print("\n  (dry-run: no files written. Re-run with --apply to write.)")
-        return 0
+        return 1 if failed else 0
 
-    written = 0
-    for name, new in to_change:
-        path = os.path.join(args.root, name)
-        try:
-            mode = os.stat(path).st_mode & 0o777
-        except FileNotFoundError:
-            mode = None  # new file: keep mkstemp's default (umask-restricted) mode
-        fd, tmp_path = tempfile.mkstemp(dir=args.root, prefix=f".{name}.", suffix=".tmp")
-        try:
-            if mode is not None:
-                os.chmod(tmp_path, mode)
-            with os.fdopen(fd, "w", encoding="utf-8", newline="") as fh:
-                fh.write(new)
-                fh.flush()
-                os.fsync(fh.fileno())
-            os.replace(tmp_path, path)
-        except BaseException:
-            os.unlink(tmp_path)
-            raise
+    written, conflicts = 0, []
+    for name, original, new in to_change:
+        reason = apply_one(args.root, name, original, new)
+        if reason is not None:
+            conflicts.append((name, reason))
+            continue
         written += 1
     print(f"\n  WROTE {written} file(s).")
-    return 0
+    if conflicts:
+        print(f"  SKIPPED {len(conflicts)} file(s) that changed since scan:")
+        for name, reason in conflicts:
+            print(f"    ! {name}: {reason}")
+    return 1 if (failed or conflicts) else 0
 
 
 if __name__ == "__main__":
