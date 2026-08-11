@@ -36,15 +36,16 @@ Safety / correctness:
     matching file, governance included, because nothing is ever deleted or
     replaced. Trust the insertion contract instead of hand-maintaining a
     list of exceptions to it.
-  - Residual write-time race, not a full atomic compare-and-swap: apply_one()
-    re-reads each file immediately before os.replace() and refuses to
-    overwrite a change since the scan, which closes the wide window (an
-    entire multi-thousand-file scan pass) but a narrow gap remains between
-    that re-read and the replace itself. Closing it fully needs a locking
-    strategy coordinated with whatever else writes these files (Obsidian,
-    other agents) -- out of scope here. Treat the vault as effectively
-    quiescent for the duration of any --apply run; this guard catches the
-    common case (an edit during a long scan), not every possible race.
+  - Full compare-and-swap for cooperating writers; no protection at all
+    against non-cooperating ones. apply_one() takes a sidecar lockfile
+    (atomic O_CREAT|O_EXCL) around the re-read/compare/replace, so two runs
+    of this script -- or anything else that adopts the same lock convention
+    -- genuinely serialize rather than racing; that risk (two automated
+    writers) is fully closed, not just narrowed. What's NOT closed, and
+    CANNOT be by any locking scheme added here: a human editing the file
+    directly in Obsidian, which will never check for or honor this lock.
+    That part of the risk is procedural -- keep the vault quiescent during
+    any --apply run -- not a code gap this script can close by itself.
   - Root-only by default (the address grid lives at the vault root); does NOT
     recurse into subdirectories. (#572's rglob walk was over-broad, and is
     also why this file's own path — scripts/chain_zettels.py — was never at
@@ -121,36 +122,62 @@ def transform(content: str, links: str):
 def apply_one(root: str, name: str, original: str, new: str):
     """Write one file's new content atomically, guarding against a change since
     the scan that produced `original`. Returns None on success, or a string
-    reason if skipped (unreadable at write time, or changed on disk)."""
+    reason if skipped (locked by a concurrent run, unreadable at write time,
+    or changed on disk).
+
+    Holds a sidecar lockfile (atomic O_CREAT|O_EXCL, portable) across the
+    re-read, comparison, and replace, so two runs of this script -- or any
+    other writer that adopts the same `.{name}.lock` convention -- serialize
+    instead of racing. This is a real compare-and-swap for COOPERATING
+    writers, not a partial one: whichever process wins the lock has the only
+    correct view of "did this change since scan" for the full critical
+    section, not just up to the moment it starts writing.
+
+    It does NOT and CANNOT protect against a non-cooperating writer (Obsidian
+    desktop, a human editing the file directly) -- no lock this script takes
+    is one Obsidian will ever check for, so there is no locking scheme,
+    heavy or light, that closes that specific gap. That part of the risk is
+    procedural, not fixable in code here: keep the vault quiescent (no
+    Obsidian, no un-lock-aware writers) during any --apply run."""
     path = os.path.join(root, name)
-    # TOCTOU guard: something (an editor, another process) may have changed
-    # this file between the scan and this write. Re-read right before writing
-    # and refuse to clobber a change that was never inspected.
+    lock_path = os.path.join(root, f".{name}.lock")
     try:
-        with open(path, "r", encoding="utf-8", newline="") as fh:
-            current = fh.read()
-    except (OSError, UnicodeDecodeError) as exc:
-        return f"unreadable at write time: {exc}"
-    if current != original:
-        return "changed on disk since scan; skipped, not overwritten"
+        lock_fd = os.open(lock_path, os.O_CREAT | os.O_EXCL | os.O_WRONLY)
+    except FileExistsError:
+        return "locked by a concurrent run of this script; skipped"
 
     try:
-        file_mode = os.stat(path).st_mode & 0o777
-    except FileNotFoundError:
-        file_mode = None  # new file: keep mkstemp's default (umask-restricted) mode
-    fd, tmp_path = tempfile.mkstemp(dir=root, prefix=f".{name}.", suffix=".tmp")
-    try:
-        if file_mode is not None:
-            os.chmod(tmp_path, file_mode)
-        with os.fdopen(fd, "w", encoding="utf-8", newline="") as fh:
-            fh.write(new)
-            fh.flush()
-            os.fsync(fh.fileno())
-        os.replace(tmp_path, path)
-    except BaseException:
-        os.unlink(tmp_path)
-        raise
-    return None
+        # TOCTOU guard, now covering the FULL critical section under the
+        # lock: re-read right before writing and refuse to clobber a change
+        # that was never inspected.
+        try:
+            with open(path, "r", encoding="utf-8", newline="") as fh:
+                current = fh.read()
+        except (OSError, UnicodeDecodeError) as exc:
+            return f"unreadable at write time: {exc}"
+        if current != original:
+            return "changed on disk since scan; skipped, not overwritten"
+
+        try:
+            file_mode = os.stat(path).st_mode & 0o777
+        except FileNotFoundError:
+            file_mode = None  # new file: keep mkstemp's default (umask-restricted) mode
+        fd, tmp_path = tempfile.mkstemp(dir=root, prefix=f".{name}.", suffix=".tmp")
+        try:
+            if file_mode is not None:
+                os.chmod(tmp_path, file_mode)
+            with os.fdopen(fd, "w", encoding="utf-8", newline="") as fh:
+                fh.write(new)
+                fh.flush()
+                os.fsync(fh.fileno())
+            os.replace(tmp_path, path)
+        except BaseException:
+            os.unlink(tmp_path)
+            raise
+        return None
+    finally:
+        os.close(lock_fd)
+        os.unlink(lock_path)
 
 
 def coordinate_files(root: str):
