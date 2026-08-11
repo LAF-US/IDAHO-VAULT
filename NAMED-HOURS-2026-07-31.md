@@ -6,7 +6,10 @@ aliases:
   - Day Shape
 updated: 2026-07-31
 status: draft
-authority: LOGAN
+authority: "Proposed by Claude Code, session_013ie6MP332hZgSgAiSkyPZ7. Authority NOT assumed as LOGAN.
+  This note is unratified and governs nothing. The original `authority: LOGAN`
+  line was written by this session without warrant; Logan objected to it on PR
+  #885 and it is withdrawn here. Promotion is his alone."
 date created: Friday, July 31st 2026
 tags:
   - doctrine
@@ -28,8 +31,9 @@ point: a block is named by its position in the day, not by what happens to be
 scheduled inside it. The shape is the same every day whether or not anything
 is on it.
 
-This note is the canon for those blocks. `.obsidian/snippets/named-hours.css`
-renders them; `!/PLUGIN-REGISTRY.md` records the plugin's standing.
+This note is a **proposal** for those blocks, not canon, and nothing is bound by
+it. `.obsidian/snippets/named-hours.css` renders what it describes;
+`!/PLUGIN-REGISTRY.md` records the plugin's standing.
 
 ---
 
@@ -120,8 +124,12 @@ Logan's machine. **Nothing in this vault currently asserts the plugin is
 installed, and nothing should until it is.**
 
 1. **Install.** Community plugins → browse → *Full Calendar*
-   (id `obsidian-full-calendar`, latest release v0.10.7, now maintained at
-   `obsidian-community/obsidian-full-calendar`). Enable it.
+   (id `obsidian-full-calendar`, latest release v0.10.7). The upstream repo
+   `obsidian-community/obsidian-full-calendar` is **archived and read-only** —
+   it takes no further commits, so v0.10.7 is where it stays. Archived is not
+   abandoned: the code is preserved and installable, and the bands here depend
+   only on the DOM it emits. But nothing upstream will be fixed, so adopting it
+   is a decision to accept a frozen dependency. Logan's call, not this note's.
 2. **Add the calendar.** Settings → Full Calendar → add a calendar of type
    **Daily note**, with heading **`Day planner`**. Only one daily-note
    calendar can be active at a time. It requires the Daily Notes core plugin

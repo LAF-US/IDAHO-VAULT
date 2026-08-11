@@ -5,7 +5,8 @@
  * across the Full Calendar time grid, so every day view carries the same
  * shape whether or not anything is scheduled in it.
  *
- * Canon:  NAMED-HOURS-2026-07-31.md  (block names, times, provenance)
+ * Proposal: NAMED-HOURS-2026-07-31.md  (block names, times, provenance).
+ *           Unratified — it describes this file, it does not govern it.
  * Plugin: obsidian-full-calendar (Full Calendar, fullcalendar.io) — bundles
  *         FullCalendar v5, which emits data-time on every timegrid slot.
  *         The bands are pure CSS; they need no per-event support and survive
