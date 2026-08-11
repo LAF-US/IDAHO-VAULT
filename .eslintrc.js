@@ -1,4 +1,4 @@
-// ESLint legacy (eslintrc) config — STUB.
+// ESLint legacy (eslintrc) config — Codacy toggle, ON.
 //
 // ONLY ONE OF THESE TWO FILES IS EVER READ:
 //
@@ -7,38 +7,34 @@
 //
 // They are not layered and they do not merge. ESLint 9 reads eslint.config.js
 // and ignores this file entirely; ESLint 8 does the reverse. Which one governs
-// is decided by whatever ESLint version happens to run — the installed
-// dependency, a globally installed CLI, an editor extension shipping its own
-// copy, or Codacy's. Both files exist here because both were asked for, but a
-// rule written in one is invisible to the other half of the time. If you add a
-// real rule, add it to BOTH or delete the file you are not using.
+// depends on whichever ESLint runs — Codacy's, a global CLI, or an editor
+// extension shipping its own copy. Both files exist here because both were
+// asked for, and both are set to the SAME baseline so that whichever wins, the
+// answer is the same. If you change a rule, change it in both or the two
+// halves drift apart silently.
 //
-// `root: true` is the one setting that is not inert, and it is here on
-// purpose: it stops ESLint's upward search for parent .eslintrc files, so a
+// `eslint:recommended` is built into ESLint itself — no plugin package, no
+// npm install, nothing to resolve. That is why it is the baseline here rather
+// than a shareable config like `airbnb` or `standard`: those are packages, and
+// a config naming a package that the runner does not have does not fall back
+// to defaults, it errors.
+//
+// `root: true` stops ESLint searching upward for parent .eslintrc files, so a
 // run inside the vault cannot inherit config from someone's home directory.
-// `rules: {}` applies nothing.
 //
-// Nothing invokes ESLint in this repo: it is not in package.json's
-// devDependencies (prettier is the only JS tool there), and no workflow calls
-// it. Codacy may run its own copy and honor this file.
-//
-// Shape when this stops being a stub -- eslintrc uses `env` and `extends`,
-// neither of which exists in flat config, which is why the two files cannot be
-// copy-pasted between each other:
-//
-//   module.exports = {
-//     root: true,
-//     env: { node: true, es2024: true },
-//     extends: ["eslint:recommended"],
-//     ignorePatterns: ["node_modules/", "THE-GEMSTONE/"],
-//     rules: { "no-unused-vars": "warn" },
-//   };
-//
-// `ignorePatterns` matters more here than in most repos: node_modules is
-// committed under THE-GEMSTONE, so a config without it will lint thousands of
-// vendored files.
+// `ignorePatterns` is load-bearing, not tidiness: node_modules is COMMITTED
+// under THE-GEMSTONE. Without these lines ESLint lints thousands of vendored
+// files and the real findings are unreachable.
 
 module.exports = {
   root: true,
-  rules: {},
+  env: { node: true, es2024: true },
+  parserOptions: { ecmaVersion: 2024, sourceType: "script" },
+  extends: ["eslint:recommended"],
+  ignorePatterns: [
+    "THE-GEMSTONE/",
+    "node_modules/",
+    ".venv/",
+    ".uv-cache/",
+  ],
 };

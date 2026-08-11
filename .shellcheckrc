@@ -1,24 +1,31 @@
-# ShellCheck configuration — STUB.
+# ShellCheck configuration — Codacy toggle, ON.
 #
-# This file is a placeholder. It sets nothing, so ShellCheck behaves exactly as
-# it does with no config at all: default severity, every check enabled.
+# No directives, and for ShellCheck that means every check runs at default
+# severity: its own defaults are the baseline, so an empty config is the
+# enabled state. This is the opposite of eslint, stylelint and remark, where an
+# empty config means no rules at all. Do not reason about the two the same way.
 #
-# It exists so the repo has one obvious place to put shell-lint policy when
-# someone decides what that policy is. Until then, an empty config is the
-# honest state — it does not silence anything, and it does not claim a standard
-# nobody has ruled on.
+# WHAT IT ACTUALLY REACHES. The vault's shell does not live in .sh files —
+# almost all of it is `run:` blocks inside .github/workflows/*.yml. ShellCheck
+# does not parse YAML, so those blocks are invisible to it unless a tool
+# extracts them first (actionlint does exactly that, and is not wired up here).
+# So this toggle is close to inert today by accident of where the shell lives,
+# not by design. The gap is worth knowing about: the repo's most consequential
+# shell — the secret-scan and portability checks — is the shell ShellCheck
+# cannot see.
 #
-# Do not add `disable=` lines to make an existing script pass. That inverts what
-# the file is for: it would turn a repo-wide standard into a per-annoyance
-# escape hatch, and every later reader would inherit the exemption without the
-# argument for it. Fix the script, or write the exemption where the offending
-# line is (`# shellcheck disable=SCxxxx`) so it stays next to its reason.
+# Do not add `disable=` lines to make one script pass. That inverts what the
+# file is for: it turns a repo-wide standard into a per-annoyance escape hatch,
+# and every later reader inherits the exemption without the argument for it.
+# Fix the script, or write the exemption where the offending line is
+# (`# shellcheck disable=SCxxxx  # reason`) so it stays next to its reason.
 #
-# Syntax when this stops being a stub (one directive per line, no sections):
+# Syntax when this stops being defaults-only — one directive per line, no
+# sections:
 #   severity=warning
 #   enable=require-variable-braces
 #   disable=SC2154
 #
-# No shell script in this repo is linted by CI today. Adding a rule here does
-# not create a gate; it only changes what a human or Codacy sees when they run
-# ShellCheck by hand.
+# `enable=` is worth knowing about: it turns on optional checks that are OFF by
+# default even though everything else is on. `require-variable-braces` and
+# `quote-safe-variables` are the two most likely to earn their keep here.

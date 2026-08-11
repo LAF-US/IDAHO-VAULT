@@ -1,22 +1,25 @@
-# hadolint (Dockerfile linter) configuration — STUB.
+# hadolint (Dockerfile linter) configuration — Codacy toggle, ON.
 #
-# `ignored: []` is not decoration. hadolint parses this file as a YAML mapping;
-# a file containing only comments parses as null and hadolint rejects it. An
-# empty ignore list is the smallest thing that is both valid and inert: no rule
-# is suppressed, no threshold is lowered.
+# `ignored: []` suppresses nothing, so every rule runs at its default severity.
+# hadolint's own defaults are the baseline, so this is the enabled state. The
+# empty list is not decoration either: hadolint parses this file as a YAML
+# mapping, and a comments-only file parses as null, which it rejects.
 #
-# There is no Dockerfile in this repo today. That is precisely why this is a
-# stub and not a policy — writing rules for a surface that does not exist would
-# be guessing at what the first Dockerfile will need.
+# REACH TODAY IS ZERO — this repo has no Dockerfile. The toggle is armed for
+# the first one rather than switched on after it exists, which is the useful
+# order: the rules people resent most are the ones applied to a file that is
+# already written and already working.
 #
-# Keys available when this stops being a stub:
-#   ignored: [DL3008, ...]        rule codes to suppress repo-wide
-#   failure-threshold: warning     error | warning | info | style | ignore
-#   trustedRegistries: [ghcr.io]   registries FROM may pull from
-#   override: {error: [...], ...}  re-rank individual rules
+# Keys for when a Dockerfile lands:
+#   ignored: [DL3008, ...]         rule codes to suppress repo-wide
+#   failure-threshold: warning      error | warning | info | style | ignore
+#   trustedRegistries: [ghcr.io]    registries FROM may pull from
+#   override: {error: [...], ...}   re-rank individual rules
 #
-# `trustedRegistries` is the one worth reaching for first if a Dockerfile
-# arrives: it turns "where did this base image come from" from a review
-# question into a check.
+# `trustedRegistries` is the one to reach for first. It turns "where did this
+# base image come from" from a question someone has to remember to ask in
+# review into a check that fails. It also has a sharp edge: setting it at all
+# means every registry NOT listed is rejected, so it is an allowlist, not an
+# addition — the same shape as Checkov's `check:` key next door.
 
 ignored: []

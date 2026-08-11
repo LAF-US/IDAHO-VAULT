@@ -1,0 +1,28 @@
+# Bandit configuration — Codacy toggle, ON.
+#
+# INI format with a [bandit] section, which is the form bandit reads from a
+# file named `.bandit`. A YAML config is a different thing with different key
+# names (`exclude_dirs` rather than `exclude`) and is passed explicitly with
+# `-c`; do not mix the two vocabularies in this file.
+#
+# Every test is enabled. There is no `skips` line, on purpose: bandit's whole
+# value is the B-numbered checks it ships with, and a repo that starts by
+# skipping some of them has bought nothing. If a specific finding is wrong,
+# mark it at the line (`# nosec B404 - argv is a literal list, never a shell
+# string`) with the reason attached, rather than switching the test off for
+# every file at once.
+#
+# What bandit will most likely find here first: this repo drives git and uv
+# through `subprocess` in .github/scripts/ and .claude/skills/, which trips
+# B404 (import subprocess) and B603 (subprocess call). Those are almost
+# certainly fine — the argument lists are literals, not interpolated strings —
+# but "almost certainly fine" is a judgement to record per call site, not to
+# assume repo-wide.
+#
+# Unverified: bandit is not installed in the environment this file was written
+# in, so unlike ruff.toml the numbers above are a prediction from reading the
+# code, not a measurement. Whoever first runs it should replace this paragraph
+# with the real count.
+
+[bandit]
+exclude = /THE-GEMSTONE,/node_modules,/.venv,/.uv-cache,/.git

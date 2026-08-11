@@ -1,4 +1,4 @@
-// ESLint flat config — STUB.
+// ESLint flat config — Codacy toggle, ON.
 //
 // ONLY ONE OF THESE TWO FILES IS EVER READ:
 //
@@ -7,38 +7,39 @@
 //
 // They are not layered and they do not merge. ESLint 9 finds this file and
 // ignores .eslintrc.js entirely; ESLint 8 does the reverse. Which one governs
-// is decided by whatever ESLint version happens to run — the installed
-// dependency, a globally installed CLI, an editor extension shipping its own
-// copy, or Codacy's. Both files exist here because both were asked for, but a
-// rule written in one is invisible to the other half of the time. If you add a
-// real rule, add it to BOTH or delete the file you are not using.
+// depends on whichever ESLint runs — Codacy's, a global CLI, or an editor
+// extension shipping its own copy. Both files exist here because both were
+// asked for, and both are set to the SAME baseline so that whichever wins, the
+// answer is the same. If you change a rule, change it in both or the two
+// halves drift apart silently.
 //
-// This config is an empty array: no language options, no plugins, no rules.
-// ESLint reads it, finds nothing to apply, and reports nothing.
+// `@eslint/js` is not a third-party plugin — it is ESLint's own package, a
+// direct dependency of `eslint`. Wherever ESLint 9 is installed, this require
+// resolves. It is how flat config reaches the same rule set that eslintrc
+// spells `extends: ["eslint:recommended"]`; flat config has no string
+// `extends`, which is the single biggest reason the two files cannot be
+// copy-pasted between each other.
 //
 // CommonJS (`module.exports`) rather than ESM (`export default`) because the
-// root package.json declares no `"type": "module"`, so a bare .js file in this
-// repo is CommonJS. Writing `export default` here would throw at load time.
+// root package.json declares no `"type": "module"`, so a bare .js file here is
+// CommonJS. `export default` would throw at load time.
 //
-// Nothing invokes ESLint in this repo: it is not in package.json's
-// devDependencies (prettier is the only JS tool there), and no workflow calls
-// it. Codacy may run its own copy and honor this file.
-//
-// Shape when this stops being a stub -- note that flat config has no `env` or
-// `extends`; globals come from the `globals` package and shared configs are
-// spread into the array:
-//
-//   module.exports = [
-//     {
-//       files: ["**/*.js"],
-//       ignores: ["**/node_modules/**", "THE-GEMSTONE/**"],
-//       languageOptions: { ecmaVersion: 2024, sourceType: "commonjs" },
-//       rules: { "no-unused-vars": "warn" },
-//     },
-//   ];
-//
-// `ignores` matters more here than in most repos: node_modules is committed
-// under THE-GEMSTONE, so a config without it will lint thousands of vendored
-// files.
+// The `ignores` block comes FIRST and is alone in its object on purpose: in
+// flat config, an `ignores` key with no other key in the same object is a
+// global ignore. Bundled into the object below it would only apply to that
+// one config entry. This matters more here than in most repos — node_modules
+// is COMMITTED under THE-GEMSTONE, so without a global ignore ESLint lints
+// thousands of vendored files and the real findings are unreachable.
 
-module.exports = [];
+const js = require("@eslint/js");
+
+module.exports = [
+  { ignores: ["THE-GEMSTONE/**", "**/node_modules/**", ".venv/**", ".uv-cache/**"] },
+  js.configs.recommended,
+  {
+    languageOptions: {
+      ecmaVersion: 2024,
+      sourceType: "commonjs",
+    },
+  },
+];

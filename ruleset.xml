@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  PMD ruleset — STUB.
+  PMD ruleset — Codacy toggle, ON.
 
   NAME COLLISION, READ FIRST. This is a PMD ruleset, which is what a bare
   `ruleset.xml` at a repo root means by convention. It is NOT a GitHub
@@ -11,28 +11,29 @@
   "Creating rulesets for a repository.md"); this file is unrelated to those and
   changing it will not protect a branch.
 
-  It declares no rules, so a PMD run against it reports nothing. That is the
-  intended state: PMD analyzes Java, Apex, and a handful of other languages,
-  and this repo's code is Python, shell, and Markdown. There is nothing here
-  for PMD to read.
+  The two categories referenced below ship inside PMD itself — no plugin, no
+  download, nothing to resolve.
 
-  It exists as the one obvious place to put PMD policy if Java ever arrives —
-  and, more usefully today, as the place this note lives so the next person to
-  see `ruleset.xml` in a file listing does not mistake it for branch
-  protection.
+  REACH TODAY IS ZERO. PMD analyses Java, Apex and a few other JVM-family
+  languages; this repo's code is Python, shell and Markdown. These rules match
+  nothing and cost nothing. They are armed for the first Java file rather than
+  switched on after one exists, which is the useful order — the rules people
+  resent most are the ones applied to code that is already written.
 
-  Shape when this stops being a stub:
+  Two categories, not five. `errorprone` and `bestpractices` are the ones that
+  find defects. `codestyle` and `design` are largely taste, and `documentation`
+  demands Javadoc on everything; adding them to an empty repo would guarantee
+  that the first Java file ever committed arrives buried in complaints about
+  brace placement.
 
-    <rule ref="category/java/bestpractices.xml/UnusedPrivateField"/>
+  To take a single rule back out, keep the category ref and exclude by name:
 
     <rule ref="category/java/errorprone.xml">
       <exclude name="MissingSerialVersionUID"/>
     </rule>
 
-  A `<rule ref>` pointing at a whole category file pulls in every rule in it;
-  the `<exclude>` form is how you take one back out. Referencing a category and
-  then excluding half of it is usually a sign the category was the wrong
-  starting point.
+  If you find yourself excluding half a category, the category was the wrong
+  starting point — reference the individual rules instead.
 -->
 <ruleset name="idaho-vault"
          xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
@@ -40,8 +41,12 @@
          xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
 
   <description>
-    Stub ruleset for IDAHO-VAULT. Declares no rules on purpose — see the
-    comment above. Not a GitHub repository ruleset.
+    Defect-finding baseline for IDAHO-VAULT: PMD's built-in errorprone and
+    bestpractices categories. Matches nothing today — this repo has no Java.
+    Not a GitHub repository ruleset; see the comment above.
   </description>
+
+  <rule ref="category/java/errorprone.xml"/>
+  <rule ref="category/java/bestpractices.xml"/>
 
 </ruleset>

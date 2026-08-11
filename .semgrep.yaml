@@ -1,33 +1,59 @@
-# Semgrep rules — STUB.
+# Semgrep rules — Codacy toggle, ON.
 #
-# An empty rule list. Nothing is scanned by this file, and nothing is
-# suppressed by it either.
+# TWO RULE SURFACES SHARE THIS TOOL'S NAME. Read this before adding a rule.
 #
-# READ THIS BEFORE ADDING A RULE. Semgrep already runs on every PR here as the
-# `semgrep-cloud-platform/scan` check, and that check does NOT read this file —
-# it pulls its ruleset from the Semgrep AppSec Platform. A rule added here
-# therefore does not tighten CI. It only affects a local `semgrep scan`, which
-# picks up a root `.semgrep.yaml` as its default config when no --config is
-# passed.
+#   - `semgrep-cloud-platform/scan` runs on every PR and pulls its ruleset from
+#     the Semgrep AppSec Platform. It does NOT read this file.
+#   - Codacy's semgrep, and a local `semgrep scan` with no --config, DO read a
+#     root `.semgrep.yaml`.
 #
-# So there are two rule surfaces with one name between them. If a rule belongs
-# in CI it goes in the platform ruleset; if it belongs here, say in its comment
-# why it is here and not there, or the next reader will assume CI enforces it.
+# So a rule added here does not tighten the platform scan, and a rule added to
+# the platform does not appear here. If a rule belongs in one and not the
+# other, say which in its comment — otherwise the next reader assumes the PR
+# gate enforces it.
 #
-# Rule shape when this stops being a stub:
+# Semgrep has no `extends`. A rules file holds literal rules, so there is no
+# "recommended baseline" to reference — registry packs like `p/default` are
+# --config values, not something a ruleset file can pull in. The three rules
+# below are therefore written out: each targets something this repo actually
+# does (it drives git and uv through subprocess, and parses YAML in
+# .github/scripts/), rather than being a generic starter set.
 #
-#   rules:
-#     - id: no-bare-except
-#       languages: [python]
-#       severity: WARNING
-#       message: Bare `except:` swallows KeyboardInterrupt and SystemExit.
-#       pattern: |
-#         try:
-#           ...
-#         except:
-#           ...
+# UNVERIFIED: semgrep is not installed in the environment these were written
+# in, so the syntax is written to the documented schema but has not been run.
+# Whoever first runs semgrep here should confirm all three load, and say so.
 #
-# `id` must be unique across the whole ruleset, and `message` is what a human
-# sees at 2am — write the consequence, not the rule name.
+# `message` is what a human reads at 2am — state the consequence, not the rule
+# name.
 
-rules: []
+rules:
+  - id: subprocess-shell-true
+    languages: [python]
+    severity: WARNING
+    message: >-
+      subprocess called with shell=True: the command string is handed to a
+      shell, so any interpolated value becomes executable syntax. Pass a list
+      of arguments instead and the shell never sees it.
+    pattern: subprocess.$FUNC(..., shell=True, ...)
+
+  - id: yaml-load-without-safe-loader
+    languages: [python]
+    severity: ERROR
+    message: >-
+      yaml.load() can construct arbitrary Python objects from the document it
+      reads, so parsing an untrusted file is code execution. Use
+      yaml.safe_load().
+    pattern-either:
+      - pattern: yaml.load($DATA)
+      - pattern: yaml.load($DATA, Loader=yaml.Loader)
+      - pattern: yaml.load($DATA, Loader=yaml.UnsafeLoader)
+      - pattern: yaml.load($DATA, Loader=yaml.FullLoader)
+
+  - id: os-system-call
+    languages: [python]
+    severity: WARNING
+    message: >-
+      os.system() runs its argument through a shell and gives back only an exit
+      code — no stdout, no stderr, no way to tell a failure from a crash. Use
+      subprocess.run with a list of arguments.
+    pattern: os.system(...)

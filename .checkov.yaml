@@ -1,27 +1,35 @@
-# Checkov (infrastructure-as-code scanner) configuration — STUB.
+# Checkov (infrastructure-as-code scanner) configuration — Codacy toggle, ON.
 #
-# `skip-check: []` keeps the file a valid YAML mapping while suppressing
-# nothing. Checkov expects a mapping; a comments-only file parses as null.
+# `skip-check: []` suppresses nothing, so every check runs. Checkov's own
+# defaults are the baseline, so this is the enabled state. The empty list also
+# keeps the file a valid YAML mapping; a comments-only file parses as null.
 #
-# Checkov scans Terraform, CloudFormation, Kubernetes manifests, Helm charts,
-# Dockerfiles, and GitHub Actions workflows. The last of those is the only one
-# this repo has — and it is already covered: action pinning is enforced by
-# .github/workflows/action-pin-policy.yml, and CodeQL runs an `actions` analysis
-# on every PR. So a Checkov run today would either duplicate those or report
-# nothing.
+# WHAT IT REACHES HERE. Checkov scans Terraform, CloudFormation, Kubernetes,
+# Helm, Dockerfiles and GitHub Actions workflows. This repo has exactly one of
+# those — .github/workflows/ — so the CKV_GHA_* checks are the whole of its
+# surface today.
 #
-# That overlap is the reason this stays a stub. Turning Checkov on for workflows
-# means deciding which of the three checks is authoritative when they disagree,
-# and nobody has ruled on that.
+# THAT SURFACE IS ALREADY GUARDED TWICE, which is the thing to know before
+# acting on a Checkov finding:
 #
-# Keys available when this stops being a stub:
+#   - action pinning is enforced by .github/workflows/action-pin-policy.yml
+#   - CodeQL runs an `actions` analysis on every PR
+#
+# Three tools on one directory will not agree. When they disagree, the repo's
+# own policy workflow is the authority — it is the one that gates merges, and
+# it encodes decisions made here rather than defaults shipped elsewhere. A
+# Checkov finding that contradicts it is a prompt to check whether the policy
+# is still right, not a reason to change a workflow.
+#
+# Keys for later:
 #   framework: [github_actions]    limit what is scanned; default is everything
 #   skip-check: [CKV_GHA_1, ...]   suppress by check id
-#   check: [CKV_GHA_2, ...]        run ONLY these — a whitelist, not an addition
+#   check: [CKV_GHA_2, ...]        run ONLY these
 #   soft-fail: true                report without failing the run
 #   quiet: true                    suppress passed-check output
 #
 # `check:` is the sharp edge: it is exclusive, not additive. Setting it to one
-# id silently disables every other check, which reads like enabling something.
+# id silently disables every other check while reading like you enabled
+# something. `skip-check:` is the additive one.
 
 skip-check: []
