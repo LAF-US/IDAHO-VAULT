@@ -23,11 +23,37 @@
 // nothing on this repo, on every PR, because this file exists. Reproduced
 // locally with the exact error above.
 //
-// So the trade is real and worth stating plainly: this file buys a config for
-// Codacy's ESLint-8 toggle (a tool nobody has enabled, for an ESLint that went
-// EOL in October 2024) and costs a working ESLint in any modern tool that
-// finds it. Deleting it is a one-line change and probably the right call —
-// Logan's, not this file's.
+// WHY THE FILE STAYS ANYWAY. Codacy runs two separate ESLint tools, and each
+// reads a different filename:
+//
+//     Codacy ESLint 8.57.0  ->  .eslintrc.js, .eslintrc.cjs, .eslintrc.{yaml,yml,json}
+//     Codacy ESLint 9.39.5  ->  eslint.config.js, eslint.config.mjs, eslint.config.cjs
+//
+// So this file is the config for a toggle that is available to enable, not a
+// relic. An earlier version of this header argued the opposite — that upstream
+// ESLint 8 going EOL in October 2024 made the file dead weight. That is a fact
+// about upstream and says nothing about which tools Codacy offers; deleting
+// the file would silently remove one of the two options.
+//
+// Note also that Codacy's v9 is 9.39.5, NOT the 10.8.1 pinned in package.json.
+// eslint.config.js is verified against 9.39.5 as well: it loads, applies
+// js.configs.recommended, and correctly leaves `document` undefined outside
+// .obsidian/plugins/** — checked against fixtures, since a clean exit and "no
+// files matched" produce identical output.
+//
+// The CodeRabbit breakage is therefore not an argument for deleting this file.
+// It is an argument for telling CodeRabbit not to run its own ESLint, which is
+// duplicating Codacy and currently reporting nothing:
+//
+//     # .coderabbit.yaml
+//     reviews:
+//       tools:
+//         eslint:
+//           enabled: false
+//
+// (`reviews.tools.eslint.enabled` confirmed against CodeRabbit's published
+// schema.v2.json.) That change belongs in .coderabbit.yaml, a shared surface,
+// and has not been made here.
 //
 // Kept because CODACY TREATS THE TWO AS SEPARATE TOOLS, and its supported-files
 // table maps them by filename:
