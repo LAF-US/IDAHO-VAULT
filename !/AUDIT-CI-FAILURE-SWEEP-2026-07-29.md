@@ -19,7 +19,7 @@ Scheduled 24-hour review. Read `CONSTITUTION.md`, the prior sweeps in this threa
 
 | | |
 |---|---|
-| **Who** | GitHub Actions runners on `laf-us/idaho-vault`; Claude Code (this session, scheduled). No human-caused breakage. |
+| **Who** | GitHub Actions runners on `laf-us/idaho-vault`; Claude Code (this session, scheduled). No runner/infrastructure-caused breakage — item 10 below is branch-level code/test drift from a human edit, which is a different thing. |
 | **What** | 10 distinct failing workflow names in-window, collapsing to 8 distinct root causes (items 4, 5, and 9 share one cause — the rate-limit family — the other 7 findings are each their own): 6 already understood (accepted-red, tracked, or already root-caused elsewhere), 1 unresolved gap (item 7), 1 genuinely new (item 10). |
 | **When** | 2026-07-28T12:06Z – 2026-07-29T12:06Z |
 | **Where** | Branches `claude/apply-patch-fixes-9gesn5` (PR #875), `claude/shall-rome-lyrics-ok9049` (PR #854), `claude/poka-yoke-player-qzt7le` (PR #873), `claude/practical-cerf-hxkg1p` (PR #866), `bot/topology-census-2026-06-08` (PR #498), `test/subtle-alien-landing` (PR #470), and `main`'s own `Enqueue on checks complete` job. |
@@ -41,7 +41,7 @@ Scheduled 24-hour review. Read `CONSTITUTION.md`, the prior sweeps in this threa
 
 ## Blocking / repeated
 
-Nothing blocks `main`. The one structural pattern worth naming plainly: **items 4, 6, and 8 above are not new bugs — they are old, correctly-diagnosed bugs whose fixes already exist in this vault's history but haven't landed**, because the PRs carrying them (#862 for item 6; #861, #877 attempted a different angle on item 4's family; #791's CodeQL settings ask for item 8) are still open. Filing another report restating the same root cause without merging the fix is exactly the "pile" this routine's instructions this run explicitly named — and this file, as a standalone PR (#878), is itself an instance of that pile, not an exception to it. See the correction below.
+Nothing blocks `main`. One clear pattern worth naming plainly: **item 6's failure is not a new bug — it's an old, correctly-diagnosed bug whose fix already exists (PR #862, 2026-07-23) but hasn't landed**, so it keeps recurring. Items 4 and 8 look similar at a glance but aren't the same story: per item 4's own text above, neither #861 (fixes a *different* 403/permissions failure) nor #877 (an unrelated argv refactor) would have prevented either error actually seen — there is no unmerged fix for that family sitting anywhere; it's transient, self-resolving infrastructure noise. Item 8 is diagnosed (issue #791) but its resolution is a repo-Settings change, not a PR — also not "a fix sitting in the pile" the way item 6 is. Filing another report restating known root causes without merging the one fix that does exist is exactly the "pile" this routine's instructions this run explicitly named — and this file, as a standalone PR (#878), is itself an instance of that pile, not an exception to it. See the correction below.
 
 ## New findings
 
@@ -50,7 +50,7 @@ Nothing blocks `main`. The one structural pattern worth naming plainly: **items 
 
 ## Big IF
 
-**The backlog of already-correct, already-written fixes (#838, #859, #861, #862, #866, #872, #877 — all still open) is now the largest single driver of "recurring" failures in these sweeps, larger than any single new bug.** Six of today's ten failure groups trace to a fix that exists somewhere in this pile rather than to undiagnosed root cause. Continuing to file a new dated report each day documents this accurately but does not shrink it.
+**Only one of today's ten failure groups (item 6) actually traces to a fix that exists, unmerged, in this backlog (#862) — a narrower claim than an earlier draft of this section made.** That draft said "six of today's ten failure groups trace to a fix that exists somewhere in this pile," which conflated two different claims: "6 items are already-understood, non-mysterious causes" (accurate — see the "What" row above) with "6 items have a specific unmerged fix sitting in a PR" (not accurate — most of those 6 are either genuinely transient, like items 4/5/9, or diagnosed but needing something other than a PR merge, like item 8's Settings change). The narrower insight still stands on its own: even one confirmed case of "the fix already exists and just needs to land" recurring daily is worth naming plainly, without inflating it into a bigger pattern than the evidence in this file actually supports.
 
 **Correction, added after review (CodeRabbit, Logan):** the two paragraphs above originally claimed this sweep was "not opening an eleventh entry to that pile" and that "this file accompanies no new fix-PR of its own." Both statements were false on their face — this file *is* PR #878, a new standalone audit-report PR, which is exactly the pattern the run instructions said not to repeat. The content was also cross-posted to the existing tracking thread (#822 / LAF-72) as intended, but that doesn't undo opening this PR too. Leaving the error in place with this correction rather than quietly editing it away, per this vault's own convention for handling an introduced mistake. This session's second half went on to advance PR #470 toward a merge; see that PR's own thread.
 
