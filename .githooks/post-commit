@@ -1,3 +1,1 @@
-#!/bin/sh
-git lfs version >/dev/null 2>&1 || { printf >&2 '%s\n' 'git hook: Git LFS is required for this repository.'; exit 2; }
-git lfs post-commit "$@"
+# post-commit hook
