@@ -21,11 +21,12 @@ Safety / correctness:
     error mid-write leaves the source note exactly as it was, not empty or
     partial.
   - Idempotent by position, not substring. A file is only treated as already
-    chained if the chain is exactly the first non-blank body line. A chain
-    present elsewhere (e.g. appended at EOF by an earlier, buggy run) is
-    reported as MISPLACED and left alone rather than silently re-inserted
-    (which would duplicate it) or auto-relocated (which would no longer be
-    pure insertion).
+    chained if the chain is exactly the literal first body line -- a leading
+    blank line before an otherwise-correct chain does NOT count as placed,
+    it's reported MISPLACED, same as a chain appended at EOF by an earlier,
+    buggy run. MISPLACED files are left alone rather than silently
+    re-inserted (which would duplicate the chain) or auto-relocated (which
+    would no longer be pure insertion).
   - Governance/functional files are excluded outright, not just skipped when
     already chained: see EXCLUDE_STEMS. These match the coordinate-stem
     pattern by accident of naming (short, alphanumeric) but are vault
@@ -34,12 +35,20 @@ Safety / correctness:
     a verified-exhaustive one: a size sweep of every coordinate-matching root
     file (2026-08-11) found 118 files over 200 bytes, most plausibly real
     address-space entities (named personas/lore, matching the grid's design
-    intent) but some clearly more doctrine (AWAKEN/ORIENT/ARISE/CONTEXT/
-    CONFERENCE/CONVENE/RISE/REPORT — all named LEVELSET protocols in
-    CONSTITUTION.md itself) that nobody has individually triaged. Do not
-    treat an empty EXCLUDE_STEMS miss as proof a file is safe; a full sweep
-    (or, better, a canonical allowlist/manifest per the original review
-    suggestion) is still needed before any full-corpus --apply.
+    intent) but some clearly more doctrine that nobody has individually
+    triaged. Do not treat an empty EXCLUDE_STEMS miss as proof a file is
+    safe; a full sweep (or, better, a canonical allowlist/manifest per the
+    original review suggestion) is still needed before any full-corpus
+    --apply.
+  - Residual write-time race, not a full atomic compare-and-swap: apply_one()
+    re-reads each file immediately before os.replace() and refuses to
+    overwrite a change since the scan, which closes the wide window (an
+    entire multi-thousand-file scan pass) but a narrow gap remains between
+    that re-read and the replace itself. Closing it fully needs a locking
+    strategy coordinated with whatever else writes these files (Obsidian,
+    other agents) -- out of scope here. Treat the vault as effectively
+    quiescent for the duration of any --apply run; this guard catches the
+    common case (an edit during a long scan), not every possible race.
   - Root-only by default (the address grid lives at the vault root); does NOT
     recurse into subdirectories. (#572's rglob walk was over-broad, and is
     also why this file's own path — scripts/chain_zettels.py — was never at
@@ -72,6 +81,10 @@ STEM_RE = re.compile(r"^[A-Za-z0-9]+$")
 EXCLUDE_STEMS = {
     "CLAUDE", "CORE", "DECISIONS", "BOOTSTRAP",  # broke on the original run of this PR
     "AGENTS", "CONSTITUTION", "GEMINI", "LEVELSET", "PROTOCOL",  # found by review, 2026-08-11
+    # Named, versioned LEVELSET protocols in CONSTITUTION.md itself (its
+    # "CORE WORKING-SWARM PROTOCOLS TODAY" section) -- same category as
+    # LEVELSET/PROTOCOL above, found by review, 2026-08-11:
+    "AWAKEN", "ORIENT", "ARISE", "CONTEXT", "CONFERENCE", "CONVENE", "RISE", "REPORT",
 }
 
 
