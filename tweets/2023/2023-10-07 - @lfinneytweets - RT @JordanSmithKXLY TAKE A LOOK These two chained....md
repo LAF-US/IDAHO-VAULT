@@ -1,4 +1,5 @@
 ---
+title: "RT @JordanSmithKXLY TAKE A LOOK These two chained..."
 date: 2023-10-07
 time: 02:08:32
 tweet_id: "1710477174648819807"

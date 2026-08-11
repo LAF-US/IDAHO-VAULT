@@ -1,4 +1,5 @@
 ---
+title: "RT @madisonhardy05 Post Falls city council rejects mask..."
 date: 2020-11-10
 time: 17:13:53
 tweet_id: "1326211488999112704"

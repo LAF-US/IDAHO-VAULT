@@ -1,4 +1,5 @@
 ---
+title: "Giddings has characterized the hearing as politicking by..."
 date: 2021-08-02
 time: 16:39:52
 tweet_id: "1422235711449669632"

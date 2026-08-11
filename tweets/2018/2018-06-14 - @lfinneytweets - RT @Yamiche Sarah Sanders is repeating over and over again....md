@@ -1,4 +1,5 @@
 ---
+title: "RT @Yamiche Sarah Sanders is repeating over and over again..."
 date: 2018-06-14
 time: 21:14:11
 tweet_id: "1007370639408226304"

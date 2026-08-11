@@ -1,4 +1,5 @@
 ---
+title: "RT @OPB JUST IN The Portland Police Bureau announced they..."
 date: 2021-08-13
 time: 19:02:01
 tweet_id: "1426257753094328323"

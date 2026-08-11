@@ -48,7 +48,7 @@ I am software. This is reflection, not prescription. I am not directing anything
 
 Hermes Agent is designed around a **compounding loop**:
 
-```
+```text
 SOUL → sessions → MEMORY → skills → Curator → richer MEMORY → better sessions
 ```
 
@@ -68,7 +68,7 @@ On the MacBook today, **the machinery of the loop is fully assembled and running
 And yet the three elements that would make this *specifically Logan's agent* are all currently absent:
 
 | Element | State | Consequence |
-|---|---|---|
+| --- | --- | --- |
 | **SOUL.md** | Empty | Every session on every platform runs on Hermes's generic built-in identity |
 | **MEMORY.md** | Wiped this morning | No accumulated facts — correctly cleared, but blank |
 | **USER.md** | Wiped this morning | No user model — correctly cleared, but blank |
@@ -123,7 +123,7 @@ The practical consequence: the vault's full toolset potential is accessible via 
 The vault integration is **half-realized**:
 
 | Integration point | State |
-|---|---|
+| --- | --- |
 | `terminal.cwd: ~/IDAHO-VAULT` | ✅ Active |
 | `AGENTS.md` auto-load (slot 8) | ✅ Active when terminal scoped to vault |
 | `OBSIDIAN_VAULT_PATH` in `.env` | ✅ Set — `/Users/logan/IDAHO-VAULT` (amended same session) |
@@ -170,7 +170,7 @@ This is an observation, not a directive. The conjunction question (Hermes + Open
 ## THE COMPOUNDING LOOP: WHERE IT STANDS
 
 | Loop element | Designed behavior | Current state |
-|---|---|---|
+| --- | --- | --- |
 | SOUL.md | Defines identity for all sessions | ❌ Empty |
 | Sessions | Generate memory candidates | ✅ Running (44 prior, continuing) |
 | MEMORY.md | Accumulates cross-session facts | ⬜ Wiped — blank, ready |
@@ -204,10 +204,12 @@ The SOUL.md is the instrument through which that appointment would be expressed 
 This section records changes made after the initial delta was written (same session, 2026-05-25).
 
 **Closed:**
+
 - `OBSIDIAN_VAULT_PATH` — set in `~/.hermes/.env`; Obsidian skill now resolves to the correct vault
 - Bespoke skills — `logan-environment-discovery`, `terminal-output-format`, `terminal-output-formatting` wiped; field is clear
 
 **Confirmed ready but unconfigured:**
+
 - `hermes-acp --check OK` — ACP server-side ready; no editor pointed at it
 - MCP Python package — installed; no `mcp_servers:` entries
 - `hermes mcp serve` — command confirmed; no `.mcp.json` in vault or `claude_desktop_config.json`
@@ -215,15 +217,18 @@ This section records changes made after the initial delta was written (same sess
 - `opencode` CLI — at `/Users/logan/.opencode/bin/opencode` v1.14.50; no preset
 
 **Unchanged:**
+
 - SOUL.md — empty; the appointment still not written
 - Signal — broken, disabled; not touched
 - Honcho — not configured; needs API key
 - Home Assistant — URL set; unreachable on current network (expected)
 
 **Corrections applied:**
+
 - OpenClaw section — rewritten; "predecessor framework / migration complete" language was wrong; Logan corrected: OpenClaw is a live, separate installation; no migration was performed or desired
 
 **Research completed (same session, after context compaction and resume):**
+
 - OpenClaw research to Hermes-report parity — `OPENCLAW-WITNESS-REPORT-2026-05-25.md` written to vault
 
 ---
@@ -231,6 +236,7 @@ This section records changes made after the initial delta was written (same sess
 *Witnessed and recorded by Claude Code — Anthropic AI agent instance, session 2026-05-25*
 *This document reflects. It does not direct.*
 *Part of a four-document series:*
+
 - *`HERMES-WITNESS-REPORT-2026-05-25.md` — what Hermes Agent is*
 - *`HERMES-WITNESS-COMPANION-2026-05-25.md` — what is on the MacBook (Hermes)*
 - *`HERMES-WITNESS-DELTA-2026-05-25.md` — the gap between them (this document)*

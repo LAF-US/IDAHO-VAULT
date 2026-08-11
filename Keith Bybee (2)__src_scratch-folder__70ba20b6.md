@@ -9,7 +9,7 @@ source: commit
 ## Basic Info
 
 - **Role:** LSO Staff Director, Budget and Policy Analysis
-- **Email:** JBybee@lso.idaho.gov
+- **Email:** <JBybee@lso.idaho.gov>
 - **Committees staffed:** [[Joint Finance-Appropriations Committee|JFAC]] and [[Executive Office of Revenue and Administration Committee|EORAC]]
 
 ## Bybee Incident (March 2024)

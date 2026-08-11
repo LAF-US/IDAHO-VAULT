@@ -1,4 +1,5 @@
 ---
+title: "RT @reportertracy Been working on this story for months!..."
 date: 2019-11-07
 time: 03:25:19
 tweet_id: "1192281851282374656"

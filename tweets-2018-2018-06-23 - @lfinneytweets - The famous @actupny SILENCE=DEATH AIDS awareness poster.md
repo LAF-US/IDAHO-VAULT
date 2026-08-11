@@ -16,10 +16,11 @@ related:
   - lfinneytweets
 ---
 
-The famous @actupny SILENCE=DEATH AIDS awareness poster https://t.co/ENAgYHbPou
+The famous @actupny SILENCE=DEATH AIDS awareness poster <https://t.co/ENAgYHbPou>
 
 ## Media
-- ![](https://pbs.twimg.com/media/DgaDfENVAAA6N54.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/DgaDfENVAAA6N54.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

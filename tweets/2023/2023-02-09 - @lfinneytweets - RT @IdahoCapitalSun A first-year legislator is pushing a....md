@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoCapitalSun A first-year legislator is pushing a..."
 date: 2023-02-09
 time: 21:54:23
 tweet_id: "1623802517703348224"

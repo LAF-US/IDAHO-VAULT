@@ -1,4 +1,5 @@
 ---
+title: "RT @DailyBee \u201cThis is a red state,\u201d said Secretary of State..."
 date: 2024-04-12
 time: 00:47:05
 tweet_id: "1778585597193711878"

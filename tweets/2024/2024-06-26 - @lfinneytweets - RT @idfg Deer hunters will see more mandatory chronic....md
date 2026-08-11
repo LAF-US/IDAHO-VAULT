@@ -1,4 +1,5 @@
 ---
+title: "RT @idfg Deer hunters will see more mandatory chronic..."
 date: 2024-06-26
 time: 15:49:18
 tweet_id: "1805991738978500860"

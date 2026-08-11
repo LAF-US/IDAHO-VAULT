@@ -1,4 +1,5 @@
 ---
+title: "RT @DavidBegnaud Watch POTUS heard about..."
 date: 2020-09-19
 time: 01:47:54
 tweet_id: "1307134287628636161"

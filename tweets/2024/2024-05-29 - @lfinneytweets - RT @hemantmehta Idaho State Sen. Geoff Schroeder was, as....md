@@ -1,4 +1,5 @@
 ---
+title: "RT @hemantmehta Idaho State Sen. Geoff Schroeder was, as..."
 date: 2024-05-29
 time: 20:40:56
 tweet_id: "1795918270442188905"

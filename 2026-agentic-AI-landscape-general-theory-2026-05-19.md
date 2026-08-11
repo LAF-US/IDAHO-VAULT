@@ -27,7 +27,7 @@ This document synthesizes the **general landscape of agentic AI design in 2026**
 ### 1.2 Spectrum of Agentic Intelligence
 
 | Agent Type | Autonomy Level | Tool Use Capability | Memory Pattern | Execution Horizon | 2026 Maturity |
-|------------|----------------|---------------------|----------------|-------------------|---------------|
+| ------------ | ---------------- | --------------------- | ---------------- | ------------------- | --------------- |
 | **LLM Agents** | Medium | Basic | Stateless to Episodic | Minutes to Hours | Stable |
 | **Agentic Orchestrators** | High | Full | Episodic to Persistent | Hours to Days | **Enterprise dominant** |
 | **Swarm Systems** | Very High | Distributed | Collective Blackboard | Days to Weeks | **Cutting edge** |
@@ -42,6 +42,7 @@ This document synthesizes the **general landscape of agentic AI design in 2026**
 **Primary Design Pattern:** Hierarchical **Dee Learning Orchestration**
 
 Hierarchy of agent roles:
+
 - **Orchestrator Agent:** Task assignment and workflow management
 - **Specialist Agents:** Code writer, tester, reviewer, architect, documenter
 - **Tool Integration:** Compiler, debugger, version control, issue management
@@ -55,12 +56,14 @@ Master Agent assigns:
 ```
 
 **Key Factors for Success:**
+
 - Task decomposition accuracy through context engineering
 - Sandbox restrictions by default, expanded by configuration
 - Human-in-the-loop checkpoints for high-impact decisions
 - Persistent session memory connecting multiple agent interactions
 
 **Enterprise Realities:**
+
 - Teams prefer default-deny security over flexibility
 - Cost justification through measured productivity (500K+ hours saved is common)
 - **Shift:** Engineers from implementers to orchestrators
@@ -72,18 +75,21 @@ Master Agent assigns:
 **Primary Design Pattern:** **Federated Multi-Agent Systems**
 
 Enterprise workflows decompose into autonomous agents:
+
 - **Procurement Agent:** Autonomous contracting and negotiation
 - **Finance Agent:** Fraud detection, portfolio optimization, compliance checking
 - **Customer Service Agent:** Complex ticket resolution (auto-rebook flight, process refund)
 - **Research Agent:** Literature reviews, market analysis, experimental design
 
 **Integration Stack:**
+
 - **CRM/ERP Integration:** Real-time data access without copying
 - **Orchestration Layer:** Centralized control plane managing agent handoffs
 - **Governance Engine:** Hardwired compliance checking at infrastructure level (Least privilege access, policy engines)
 - **Observability:** Full audit trails with explanation generation for compliance
 
 **Security Model Evolution:**
+
 - Agents now treated as **"silicon workforce"** with full operational scope
 - **Governance-as-code** embeds policy rules directly into agent DNA
 - **Human-in-the-loop by design** for high-consequence actions
@@ -96,6 +102,7 @@ Enterprise workflows decompose into autonomous agents:
 **Primary Design Pattern:** **Swarm Intelligence for Experimentation**
 
 Research workflows shift from human-directed to agent-orchestrated:
+
 - **Hypothesis Generator Agent:** Based on literature review and gaps
 - **Experiment Design Agent:** Adaptive trial protocols considering constraints
 - **Data Collection Agent:** Intelligent instrument querying with minimal human oversight
@@ -125,11 +132,13 @@ External Memory Layer → Agentic Orchestration → Model Context
 ```
 
 **Critical Bottlenecks Identified:**
+
 1. **Hallucinations from stale data** (+35% error rates when using outdated information)
 2. **Context window limits** (performance drops at 32K tokens)
 3. **Collection and retrieval costs** (retraining vs. real-time access trade-offs)
 
 **Emerging Solutions:**
+
 - **Zero-copy architectures:** Agents query data directly where it lives
 - **Ontology-based integration:** Structured semantic understanding reduces ambiguity
 - **Recursive language models:** Native reasoning chains reduce context pollution
@@ -152,22 +161,26 @@ Compliance Layer — Audit and Kill Switches
 ### 4.2 Security Architecture Principles
 
 **1. Default Deny Everything**
+
 - Agents start with minimal privileges
 - Expanded only through explicit configuration and user action
 - **Guardrails:** Policy engines hardwired into infrastructure
 
 **2. Human-in-the-Loop by Design**
+
 - **High-impact decisions** -> Human approval required
 - **Checkpoint systems:** Automatic pauses at configured alert thresholds
 - **Security monitoring:** Agent quality control reviewing AI output for compliance
 
 **3. Continuous Control**
+
 - **Kill switches** architected into infrastructure layers
 - **Versioned agent deployments** with immediate rollback capability
 - **Observability by default** (explanations generated for every action)
 - **Sand-box isolation** (non-main sessions restricted to essential tools only)
 
 **4. Governance-as-Code**
+
 - Policy rules travel with agents (real-time checks)
 - **Least privilege access** enforced through infrastructure
 - **Transparency requirements** built into core architecture (not added later)
@@ -185,11 +198,12 @@ Compliance Layer — Audit and Kill Switches
 
 ### 5.2 Scale Formula Identified
 
-```
+```text
 Scale = (Agent Capability × Orchestration × Integration)² ÷ Governance Complexity
 ```
 
 **Curated deployment leads to compounding value:**
+
 - Dedicated orchestration platforms with versioning
 - Centralized agent lifecycle management
 - Governance frameworks integrated from phase 0
@@ -198,6 +212,7 @@ Scale = (Agent Capability × Orchestration × Integration)² ÷ Governance Compl
 ### 5.3 Integration Depth Requirements
 
 **Stable Integration Layers:**
+
 1. **Tool Integration:** Compiler, version control, package management, testing frameworks
 2. **API Integration:** Real-time data access to enterprise systems
 3. **Protocol Integration:** Cross-framework communication standards
@@ -205,6 +220,7 @@ Scale = (Agent Capability × Orchestration × Integration)² ÷ Governance Compl
 5. **Governance Integration:** Policy engines and audit systems
 
 **Failure Points:**
+
 - **~60% of agent failures** stem from tool integration issues, not model limitations
 - **Context integration** becomes primary bottleneck at scale
 - **Data quality** matters more than model performance at planning stage
@@ -216,12 +232,14 @@ Scale = (Agent Capability × Orchestration × Integration)² ÷ Governance Compl
 ### 6.1 Terminal-First Revolution
 
 **Shift from GUI agents to CLI-native agents:**
+
 - **200 tokens/command** (CLI) vs **32K-82K tokens** (MCP) for context
 - **Cost saving:** 30x reduction in API costs through efficient context
 - **Autonomy:** Atomic operations enable autonomous retry logic
 - **Composability:** Text-native architecture enables Unix pipe integration
 
 **Developer preference:** Terminal-native orchestration over IDE plugins
+
 - Hacker News and Reddit communities documenting IDE agent abandonment
 - **"Context pollution"** from open files, schemas, complete history becomes limiting factor
 - **CLI agents don't replace developers** — they amplify experienced engineers and lower barriers for juniors
@@ -229,6 +247,7 @@ Scale = (Agent Capability × Orchestration × Integration)² ÷ Governance Compl
 ### 6.2 Framework Adoption Landscape
 
 **Dominant Patterns (2026):**
+
 1. **CrewAI:** Role-based agent teams, process management, optimal for business workflows
 2. **LangGraph:** Stateful agent graphs, persistent state, fine-grained control, best for complex interaction patterns
 3. **AutoGen:** Layered conversation framework, rapid prototyping, Microsoft ecosystem support
@@ -236,6 +255,7 @@ Scale = (Agent Capability × Orchestration × Integration)² ÷ Governance Compl
 5. **LangChain Ecosystem:** De-facto standard tooling layer for agent infrastructure
 
 **Selection Factors Determined:**
+
 - **Context requirements:** LangGraph/Swarm when stateful interactions needed
 - **Team structure:** CrewAI when role-based teams are primary concern
 - **Prototyping speed:** AutoGen for rapid iteration cycles
@@ -250,13 +270,14 @@ Scale = (Agent Capability × Orchestration × Integration)² ÷ Governance Compl
 **Risk-Based Classification:**
 
 | Risk Level | Regulation | Agentic AI Impact | 2026 Reality |
-|------------|------------|-------------------|--------------|
+| ------------ | ------------ | ------------------- | -------------- |
 | **Unacceptable Risk** | Banned (limited exceptions) | Severe restrictions | Minimal compliance burden |
 | **High Risk** | Heavy regulation | Union system required | Common enterprise burden |
 | **Limited Risk** | Transparency required | AI documentation relevant | Primary burden class |
 | **Minimal Risk** | No regulation | Innovation freedom | Full implementation scope |
 
 **Global Influence:**
+
 - EU AI Act shaping regulations worldwide (**"Brussels Effect"**)
 - Other frameworks (UK AI Safety Summit, Council of Europe) aligning with EU approach
 - Requirement for **transparency by design** filtering into enterprise agent architecture
@@ -277,12 +298,14 @@ Scale = (Agent Capability × Orchestration × Integration)² ÷ Governance Compl
 **Pre-2025:** More features, faster execution through better prompts
 
 **2026:**
+
 - **Productivity patterns:** 27% of "AI-assisted work" = tasks **not done otherwise**
 - **Faster time-to-market:** Days vs months for previously unviable projects
 - **Cost optimization:** 200 tokens/command vs 32K tokens for terminal-native agents
 - **Workforce transformation:** Human engineers become orchestrators, evaluators, strategists rather than implementers
 
 **Enterprise Metrics:**
+
 - TELUS: 500K+ hours saved, 13K+ custom AI solutions deployed
 - Rakuten: 7-hour autonomous implementations (complex systems), 30% faster decisions
 - CRED: 2x execution speed through agents handling routine work
@@ -295,6 +318,7 @@ Scale = (Agent Capability × Orchestration × Integration)² ÷ Governance Compl
 ### 9.1 Enterprise Scale Requirements (What Actually Runs in Production)
 
 **Must-Have Infrastructure:**
+
 1. **Centralized orchestration platform** with versioning and deployment management
 2. **Observability stack** integrated from phase 0 (not added after pilots fail)
 3. **Governance framework** with real-time policy enforcement
@@ -304,12 +328,14 @@ Scale = (Agent Capability × Orchestration × Integration)² ÷ Governance Compl
 7. **Performance metrics** tied to enterprise KPIs (not just "did the agent run?")
 
 **Common Implementation Patterns:**
+
 - **Start small:** Single controlled workflow with hero metrics
 - **Prove scalability:** Curated deployment allows compounding knowledge
 - **Add complexity:** Role-based teams, persistent goals, tool orchestration
 - **Enterprise adoption:** Redesign workflows to enable mechanical agent participation
 
 **Critical Failure Factors:**
+
 - Agent sprawl without central control plane (individual teams creating rogue agents)
 - Tool integration failures (+60% of agent failures stem from this)
 - Over-reliance on expensive general-purpose models (cost becomes prohibitive)
@@ -347,11 +373,13 @@ Scale = (Agent Capability × Orchestration × Integration)² ÷ Governance Compl
 ### 11.1 Context Engineering Over Prompt Engineering
 
 **Focus Shift:**
+
 - From: Better prompts, ideal wording
 - To: **Better context integration**, real-time data access, structured semantic understanding
 - Impact: 35% error reduction when fresh data is available vs stale information
 
 **Key Investment Areas:**
+
 - Zero-copy architectures (agents query data where it lives)
 - Ontology development (structured context for enterprise data)
 - Memory system design (persistent state across sessions)
@@ -362,6 +390,7 @@ Scale = (Agent Capability × Orchestration × Integration)² ÷ Governance Compl
 **Principle:** Security must be designed into agent architecture from day 0, not bolted on.
 
 **Critical Components:**
+
 - Governance engines integrated into infrastructure
 - Default-deny tool models with explicit escalation paths
 - Human-in-the-loop checkpoints for high-consequence actions
@@ -371,10 +400,11 @@ Scale = (Agent Capability × Orchestration × Integration)² ÷ Governance Compl
 
 ### 11.3 Workflow-First Thinking
 
-**Pattern:** 
+**Pattern:**
 Rethink workflows before deploying agents.
 
 **Enterprise Realities:**
+
 - Redesigning processes enables 10x more value than optimizing tools
 - Curated deployment leads to compounding knowledge and scalability
 - Pilot success stories require full workflow redesigns to scale (not just tool additions)
@@ -385,6 +415,7 @@ Rethink workflows before deploying agents.
 **Pattern:** Once agents can act autonomously, every action requires explanation.
 
 **Must-Have Elements:**
+
 - Full audit trails of agent decisions and actions
 - Real-time monitoring with configurable alerts
 - Explanation generation for every output (compliance requirement)
@@ -398,22 +429,27 @@ Rethink workflows before deploying agents.
 ### 12.1 What Doesn't Scale (Common Pilot Pitfalls)
 
 **Anti-Pattern 1: Tool-first deployment**
+
 - Deploying agents with full tool access without considering use cases
 - **Outcome:** Rogue agents, security failures, cost explosion
 
 **Anti-Pattern 2: Sprawling agent creation**
+
 - Teams creating agents without centralized control plane
 - **Outcome:** Siloed knowledge, fractured governance, measurement impossibility
 
 **Anti-Pattern 3: Blind automation**
+
 - "Make everything autonomous" without process redesign
 - **Outcome:** Technique in search of a problem, no measurable enterprise value
 
 **Anti-Pattern 4: Prompt-driven engineering**
+
 - Relying solely on clever prompting rather than infrastructure and context
 - **Outcome:** Performance ceiling hit, inability to scale capabilities
 
 **Anti-Pattern 5: Ignoring data quality**
+
 - Treating data as just "more stuff to train on" rather than agent infrastructure
 - **Outcome:** Hallucinations, wasted computation, fundamental unreliability
 
@@ -426,22 +462,26 @@ Based on the general landscape, these integration opportunities emerge:
 ### 13.1 Hermetic Integration Patterns
 
 **1. Protocol Bridge Architecture (ACP + SBP Core)**
+
 - ACP: Direct agent communication for explicit coordination
 - SBP: Blackboard-based stigmergic coordination for decentralized teamwork
 - **Hermes Role:** Convert architectural patterns into executable protocols
 
 **2. Multi-Channel Message Gateway (OpenClaw Mature Pattern)**
+
 - Single control plane routing across messaging platforms
 - Agent delivery systems with guaranteed delivery guarantees
 - **Hermes Role:** Channel abstraction layer enabling protocol integration
 
 **3. Memory System Interoperability**
+
 - Local-first memory patterns aligning with persistent state systems
 - Context engineering as architectural requirement rather than afterthought
 
 ### 13.2 Security Model Convergence
 
 **1. Security as Infrastructure**
+
 - Governance engines as first-class requirements
 - Default-deny tool models with explicit escalation paths
 - Kill switches architected into orchestration platform
@@ -449,6 +489,7 @@ Based on the general landscape, these integration opportunities emerge:
 ### 13.3 Workflow-First Pattern Matching
 
 **1. Process Redesign Patterns**
+
 - Characterization of workflow evolution requirements
 - Curated deployment for compounding knowledge systems
 - Agentic quality control through monitoring and review infrastructure
@@ -458,12 +499,14 @@ Based on the general landscape, these integration opportunities emerge:
 ## 14. Conceptual Framework, Not Implementation Guide
 
 **This document deliberately avoids:**
+
 - Prescriptive setup instructions
 - Step-by-step deployment guides
 - Specific tool configurations
 - Prescribed organizational structures
 
 **Instead, it provides:**
+
 - Conceptual understanding of where agentic design stands in 2026
 - Identification of dominant patterns across domains
 - Critical success factors and failure modes based on field research
@@ -477,15 +520,18 @@ Based on the general landscape, these integration opportunities emerge:
 ## 15. References and Source Material
 
 ### Academic Research
-- OECD (2026): "The agentic AI landscape and its conceptual foundations" - https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/02/the-agentic-ai-landscape-and-its-conceptual-foundations_a9d4b451/396cf758-en.pdf
+
+- OECD (2026): "The agentic AI landscape and its conceptual foundations" - <https://www.oecd.org/content/dam/oecd/en/publications/reports/2026/02/the-agentic-ai-landscape-and-its-conceptual-foundations_a9d4b451/396cf758-en.pdf>
 
 ### Industry Reports
+
 - Anthropic (2026): "2026 Agentic Coding Trends Report" - Internal research referenced
-- Firecrawl (2026): "Top 11 Agentic AI Trends to Watch" - https://www.firecrawl.dev/blog/agentic-ai-trends
-- Naviant (2026): "2026 AI & Agentic Automation Trends" - https://naviant.com/blog/ai-agentic-automation-trends
+- Firecrawl (2026): "Top 11 Agentic AI Trends to Watch" - <https://www.firecrawl.dev/blog/agentic-ai-trends>
+- Naviant (2026): "2026 AI & Agentic Automation Trends" - <https://naviant.com/blog/ai-agentic-automation-trends>
 - LinkedIn Analysis (2025): "AI Trends Into 2026: The Dawn of Agentic Intelligence"
 
 ### Real-World Deployments Documented
+
 - TELUS internal agent deployment statistics
 - Rakuten vLLM implementation timeline
 - CRED workflow transformation results

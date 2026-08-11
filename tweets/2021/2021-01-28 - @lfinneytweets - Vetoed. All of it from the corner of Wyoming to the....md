@@ -1,4 +1,5 @@
 ---
+title: "Vetoed. All of it from the corner of Wyoming to the..."
 date: 2021-01-28
 time: 01:50:22
 tweet_id: "1354607721652187139"
