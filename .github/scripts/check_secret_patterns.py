@@ -134,6 +134,8 @@ def _chain_allowance_applies(line: str, match: re.Match, path: str) -> bool:
     if _JS_NONCODE_PREFIX.search(line[: match.start()]):
         return False
     return bool(_UNQUOTED_IDENTIFIER_CHAIN_RHS.match(line, match.start()))
+
+
 # The key is either BARE or a PAIRED-quoted object key (`"password":`) —
 # independent optional quotes would let the OPENING quote of a plain string
 # literal (`"password: …`) be absorbed into the match, hiding it from the
@@ -262,6 +264,7 @@ def path_findings(path: str) -> list[Finding]:
     ):
         return [Finding(path=path, line=None, rule="secret_path")]
     return []
+
 
 def staged_file_bytes(path: str) -> bytes | None:
     try:
