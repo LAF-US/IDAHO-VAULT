@@ -27,19 +27,15 @@ Safety / correctness:
     buggy run. MISPLACED files are left alone rather than silently
     re-inserted (which would duplicate the chain) or auto-relocated (which
     would no longer be pure insertion).
-  - Governance/functional files are excluded outright, not just skipped when
-    already chained: see EXCLUDE_STEMS. These match the coordinate-stem
-    pattern by accident of naming (short, alphanumeric) but are vault
-    doctrine/ledger/protocol/scratch files, not address-space entities — see
-    PR #572 review discussion. EXCLUDE_STEMS is a known-collisions list, NOT
-    a verified-exhaustive one: a size sweep of every coordinate-matching root
-    file (2026-08-11) found 118 files over 200 bytes, most plausibly real
-    address-space entities (named personas/lore, matching the grid's design
-    intent) but some clearly more doctrine that nobody has individually
-    triaged. Do not treat an empty EXCLUDE_STEMS miss as proof a file is
-    safe; a full sweep (or, better, a canonical allowlist/manifest per the
-    original review suggestion) is still needed before any full-corpus
-    --apply.
+  - No filename-based exclusion list. An earlier version of this script hard-
+    coded a growing EXCLUDE_STEMS blocklist of root governance files
+    (CLAUDE, CONSTITUTION, the LEVELSET protocol names, etc.) that happened
+    to match the coordinate-stem pattern. Logan's own direct instruction on
+    PR #572 (2026-08-11): that's disallowed, and unnecessary -- the whole
+    point of nondestructive insertion is that it's safe to run on ANY
+    matching file, governance included, because nothing is ever deleted or
+    replaced. Trust the insertion contract instead of hand-maintaining a
+    list of exceptions to it.
   - Residual write-time race, not a full atomic compare-and-swap: apply_one()
     re-reads each file immediately before os.replace() and refuses to
     overwrite a change since the scan, which closes the wide window (an
@@ -74,18 +70,6 @@ import sys
 import tempfile
 
 STEM_RE = re.compile(r"^[A-Za-z0-9]+$")
-
-# Filenames that match the coordinate-stem pattern but are governance/scratch
-# files, not address-space entities. See module docstring: this is a known-
-# collisions list, not a verified-exhaustive one.
-EXCLUDE_STEMS = {
-    "CLAUDE", "CORE", "DECISIONS", "BOOTSTRAP",  # broke on the original run of this PR
-    "AGENTS", "CONSTITUTION", "GEMINI", "LEVELSET", "PROTOCOL",  # found by review, 2026-08-11
-    # Named, versioned LEVELSET protocols in CONSTITUTION.md itself (its
-    # "CORE WORKING-SWARM PROTOCOLS TODAY" section) -- same category as
-    # LEVELSET/PROTOCOL above, found by review, 2026-08-11:
-    "AWAKEN", "ORIENT", "ARISE", "CONTEXT", "CONFERENCE", "CONVENE", "RISE", "REPORT",
-}
 
 
 def chain_for(stem: str) -> str:
@@ -171,11 +155,11 @@ def apply_one(root: str, name: str, original: str, new: str):
 
 def coordinate_files(root: str):
     """Yield (filename, stem) for each root-level .md file eligible as a coordinate
-    note: pure-alphanumeric stem, length >= 2, not in EXCLUDE_STEMS. Non-recursive."""
+    note: pure-alphanumeric stem, length >= 2. Non-recursive."""
     for entry in os.scandir(root):
         if entry.is_file() and entry.name.endswith(".md"):
             stem = entry.name[:-3]
-            if STEM_RE.match(stem) and len(stem) >= 2 and stem not in EXCLUDE_STEMS:
+            if STEM_RE.match(stem) and len(stem) >= 2:
                 yield entry.name, stem
 
 
