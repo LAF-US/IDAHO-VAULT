@@ -52,8 +52,11 @@ jobs:
     # ready-for-review (draft == false) is NOT consent to merge -- it invites review. Gating
     # on the label decouples "please review" from "ship it" and closes the race where simply
     # un-drafting a PR merged it out from under review (human and bot). Drafts stay unarmed;
-    # a maintainer (or the auto-pr workflow, for the grid's —/— clear cell) adds `merge/auto`
-    # when a PR is actually cleared to land.
+    # `merge/auto` arrives from a maintainer's hand, or from review_feedback_loop when the
+    # grid's clear lane becomes eligible ON GRACE — never at PR creation. (An earlier
+    # revision of this PR stamped it on open; Copilot caught the race: the engine's
+    # projection strips premature arming until grace elapses, by design. The engine is the
+    # sole automated writer of this label.)
     #
     # `merge/auto` is the vault's ONE arming label: declared in LABEL_SPECS, created by
     # ensure-labels, read and written by review_feedback_loop. This gate previously keyed on

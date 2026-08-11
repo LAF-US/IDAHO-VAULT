@@ -246,12 +246,6 @@ jobs:
           fi
           if [ -n "$CLEAR_LABEL" ]; then
             CREATE_ARGS+=(--label "$CLEAR_LABEL")
-            # The —/— clear cell is the grid's auto-on-open lane: neither sorter
-            # fired, so the PR arms without a review lane. Stamp the canonical
-            # merge/auto (LABEL_SPECS; the same label review_feedback_loop reads
-            # and writes) so the engage gate arms and enqueues on open. Only the
-            # clear cell gets this — any fired flag, and this branch is not taken.
-            CREATE_ARGS+=(--label "merge/auto")
           fi
           if [ -n "$LABEL" ]; then
             CREATE_ARGS+=(--label "$LABEL")
