@@ -101,7 +101,7 @@ class Finding:
 # scalar, and no string-level fence can tell the two apart because YAML flow
 # syntax mirrors JS object literals exactly (Copilot's third-round catch on
 # #957: capital-and-underscore-bearing scalars defeat morphology alone).
-# Within expression files, four fences keep real material caught:
+# Within expression files, five fences keep real material caught:
 # (1) a quoted RHS is a literal and never allowed here; (2) the chain must
 # be followed by code punctuation — a call, separator, or closer — so a bare
 # token dangling at end-of-line stays flagged; (3) a first segment starting
@@ -113,11 +113,39 @@ class Finding:
 # deliberately do NOT count as morphology — secrets are digit-rich, and `\w`
 # already admits digits inside segments. Segments must each start with a
 # letter/underscore, so base64 chunks with digits leading or -, +, /, =
-# anywhere break the grammar.
+# anywhere break the grammar. (5) the line PREFIX before the match must be
+# plain code: any earlier quote, backtick, `//`, `/*`, or a leading `*`
+# (JSDoc continuation) rejects the allowance, because the match may then sit
+# inside comment or string TEXT, where a pasted credential is characters,
+# not a code reference (Copilot's fourth-round catch on #957). The prefix
+# check is deliberately parity-free and conservative — a CLOSED string
+# earlier on the line also rejects, and noise is the correct direction for
+# a secret gate to fail. Residual, documented: a line in the BODY of a
+# multi-line template literal or block comment carries no marker of its own;
+# closing that needs a real JS lexer, out of proportion for this guard.
 _EXPRESSION_SOURCE_SUFFIXES = (".js", ".mjs", ".cjs", ".jsx", ".ts", ".tsx")
+_JS_NONCODE_PREFIX = re.compile(r"""^\s*\*|["'`]|//|/\*""")
+
+
+def _chain_allowance_applies(line: str, match: re.Match, path: str) -> bool:
+    """True when this generic match is an identifier-chain code reference."""
+    if not path.lower().endswith(_EXPRESSION_SOURCE_SUFFIXES):
+        return False
+    if _JS_NONCODE_PREFIX.search(line[: match.start()]):
+        return False
+    return bool(_UNQUOTED_IDENTIFIER_CHAIN_RHS.match(line, match.start()))
+# The key is either BARE or a PAIRED-quoted object key (`"password":`) —
+# independent optional quotes would let the OPENING quote of a plain string
+# literal (`"password: …`) be absorbed into the match, hiding it from the
+# prefix fence; requiring the close-quote before the separator is what
+# separates a quoted key from string text.
 _UNQUOTED_IDENTIFIER_CHAIN_RHS = re.compile(
     r"""(?ix)
-    ["']?\b(?:api[_-]?key|secret|token|password|passwd|pwd)\b["']?
+    (?:
+      (?P<q>["'])(?:api[_-]?key|secret|token|password|passwd|pwd)(?P=q)
+      |
+      \b(?:api[_-]?key|secret|token|password|passwd|pwd)\b
+    )
     \s*[:=]\s*
     (?!["'])
     (?!eyJ)
@@ -143,23 +171,19 @@ def is_allowed_content_match(
     the match's own start (positional, on the full line: its trailing
     code-punctuation fence must see the character AFTER the generic match,
     which lies outside the match text) and applies only when `path` names an
-    expression-language source file. The placeholder shapes are searched
-    within the matched text itself (keyword, separator, and RHS), which is
-    strictly narrower than the line scope they used to get, and are
-    path-independent — they are placeholder conventions, not syntax. Only
-    `secret-pattern: allow` stays line-scoped — it is a deliberate human
-    directive, not a shape heuristic.
+    expression-language source file whose line prefix is plain code — see
+    `_chain_allowance_applies`. The placeholder shapes are searched within
+    the matched text itself (keyword, separator, and RHS), which is strictly
+    narrower than the line scope they used to get, and are path-independent
+    — they are placeholder conventions, not syntax. Only `secret-pattern:
+    allow` stays line-scoped — it is a deliberate human directive, not a
+    shape heuristic.
     """
     if rule != "generic_secret_assignment":
         return False
     if "secret-pattern: allow" in line:
         return True
-    if (
-        match is not None
-        and path is not None
-        and path.lower().endswith(_EXPRESSION_SOURCE_SUFFIXES)
-        and _UNQUOTED_IDENTIFIER_CHAIN_RHS.match(line, match.start())
-    ):
+    if match is not None and path is not None and _chain_allowance_applies(line, match, path):
         return True
     scope = match.group(0) if match is not None else line
     return bool(
