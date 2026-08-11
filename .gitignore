@@ -77,3 +77,8 @@ obsidian-recovery-codes.txt
 # THE WORLD IS QUIET HERE．ESTO PERPETUA!
 # ---------------------------------------------------------------
 
+/.cache
+/.codex
+/.local
+/.claude
+/.copilot
