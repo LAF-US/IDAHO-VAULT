@@ -13,11 +13,23 @@
 # Semgrep has no `extends` — a rules file holds literal rules, so there is no
 # baseline to reference. These four target what this repo actually does.
 #
-# Semgrep is not installed in the environment this was written in, so these
-# were not run here. They HAVE been validated elsewhere: CodeRabbit ran
-# `semgrep scan --validate --config .semgrep.yaml` against an earlier revision
-# on #950 and the ruleset loaded — that predates the yaml rule being split in
-# two, so the current file's syntax is unvalidated.
+# MEASURED on semgrep 1.172.0 (it installs here after all — the earlier claim
+# that it does not was an assumption, never an attempt).
+#
+#   `semgrep --validate` -> "Configuration is valid - 0 configuration
+#   error(s), and 4 rule(s)", so the split yaml rule below parses.
+#
+#   Repo scan -> **0 findings** over 134 Python files, 0 errors. This repo
+#   does not use shell=True, os.system(), or an unsafe YAML loader anywhere.
+#
+# Zero from a tool that ran and zero from a tool that silently did nothing
+# look identical, so the rules were checked against fixtures rather than
+# trusted. A positive fixture returned 7 findings — 4 unsafe-loader (keyword
+# form, positional form, load_all positional, unsafe_load), 1 missing-loader,
+# 1 shell=True, 1 os.system. A negative fixture holding yaml.safe_load,
+# Loader=yaml.SafeLoader, yaml.full_load and Loader=yaml.FullLoader returned
+# **0**, which is what confirms the FullLoader false positive is really gone
+# rather than merely edited out of the pattern list.
 #
 # The PyYAML names were checked against the installed module. An earlier version
 # of this note said only that all eight *_load / *_load_all forms "exist," which
