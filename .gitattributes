@@ -108,3 +108,17 @@
 *.csv -text
 *.tsv text eol=lf
 *.mdx text eol=lf
+
+# Tool configs with no extension, plus one XML that needs naming individually.
+# check_character_conformity.py judges only files whose `text` attribute is
+# set; anything unspecified is skipped and counted as a gap. Without these,
+# the configs added in #950 join that bucket.
+#
+# NOT `*.xml`: RSS.xml is committed with CRLF, and a blanket `text eol=lf`
+# would rewrite its line endings as a side effect of declaring a config file.
+.bandit text eol=lf
+.pylintrc text eol=lf
+.remarkrc text eol=lf
+.shellcheckrc text eol=lf
+.stylelintrc text eol=lf
+ruleset.xml text eol=lf
