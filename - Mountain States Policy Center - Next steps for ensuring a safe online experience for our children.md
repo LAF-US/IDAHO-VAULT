@@ -17,7 +17,7 @@ related:
 - systems
 authority: LOGAN
 ---
-![](https://static.wixstatic.com/media/09a46f_8ca8d4b6e22445e0877b0eabf90afa45~mv2.png/v1/fill/w_925,h_616,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/09a46f_8ca8d4b6e22445e0877b0eabf90afa45~mv2.png)
+![alt text needed](https://static.wixstatic.com/media/09a46f_8ca8d4b6e22445e0877b0eabf90afa45~mv2.png/v1/fill/w_925,h_616,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/09a46f_8ca8d4b6e22445e0877b0eabf90afa45~mv2.png)
 
 Earlier this year, [Mountain States Policy Center published details on the tools available for parents to keep their children safe on the internet](https://www.mountainstatespolicy.org/_files/ugd/f1dfe7_5317762e8c824534b07a1ac174544a8a.pdf). That study focused on the value of giving power to families to make choices that are best for them, instead of using government mandates. It discussed the expansive amount of parental controls now integrated into devices like smartphones, tablets, game consoles, and even smart speakers.
 

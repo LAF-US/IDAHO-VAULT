@@ -22,6 +22,6 @@ related:
 
 ## Media
 
-- ![](https://pbs.twimg.com/ext_tw_video_thumb/1239644772072972288/pu/img/iV687N6M_1newTM1.jpg)
+- ![alt text needed](https://pbs.twimg.com/ext_tw_video_thumb/1239644772072972288/pu/img/iV687N6M_1newTM1.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1239644885608574982)

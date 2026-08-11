@@ -126,7 +126,7 @@ Automatically selects a free model based on request requirements (vision, tools,
 
 ### Endpoint
 
-```
+```text
 POST https://openrouter.ai/api/v1/chat/completions
 ```
 
@@ -345,7 +345,7 @@ fallback_providers: [ollama-light, openrouter-free]
 
 ### OpenRouter ENV Variable
 
-```
+```text
 OPENROUTER_API_KEY=sk-or-v1-xxx  # Set in ~/.hermes/.env
 ```
 

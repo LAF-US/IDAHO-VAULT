@@ -1,4 +1,5 @@
 ---
+title: "Rep Wintrow is introducing a bill allowing the State..."
 date: 2020-01-13
 time: 21:28:32
 tweet_id: "1216834439252070400"

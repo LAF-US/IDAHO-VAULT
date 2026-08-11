@@ -1,4 +1,5 @@
 ---
+title: "RT @dirquez New A video appears to show Rep. Mike Nearman..."
 date: 2021-06-05
 time: 01:07:20
 tweet_id: "1400982538605133826"

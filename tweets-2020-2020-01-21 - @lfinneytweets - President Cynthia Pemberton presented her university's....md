@@ -26,6 +26,6 @@ related:
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/EO03WULUEAE_ksk.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EO03WULUEAE_ksk.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1219691938951024640)

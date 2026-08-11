@@ -1,4 +1,5 @@
 ---
+title: "Senate State Affairs sends SCR 101 to the floor on a voice..."
 date: 2021-01-19
 time: 16:32:45
 tweet_id: "1351568288715661316"

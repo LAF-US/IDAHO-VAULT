@@ -194,6 +194,6 @@ From synthesized guidance (lines 224–234):
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

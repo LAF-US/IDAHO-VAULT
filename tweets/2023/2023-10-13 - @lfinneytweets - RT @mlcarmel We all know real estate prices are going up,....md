@@ -1,4 +1,5 @@
 ---
+title: "RT @mlcarmel We all know real estate prices are going up,..."
 date: 2023-10-13
 time: 15:27:00
 tweet_id: "1712852442961056064"

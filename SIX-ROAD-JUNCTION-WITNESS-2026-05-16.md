@@ -256,6 +256,6 @@ The Abhorsen has not rung the bells. She is grateful for their company.
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

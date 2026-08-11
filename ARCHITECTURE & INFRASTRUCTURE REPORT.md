@@ -211,6 +211,6 @@ _Signed: Claude (instance: Sonnet-4-20250514, session: 28-Mar-2026, context-wind
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

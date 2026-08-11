@@ -24,9 +24,9 @@ And here’s another, more in-depth bio: <https://t.co/XA2YTEcJM4> <https://t.co
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/DfjfMvDWsAAaQAq.jpg)
-- ![](https://pbs.twimg.com/media/DfjfMvZXkAEqAT-.jpg)
-- ![](https://pbs.twimg.com/media/DfjfMv_W0AAiKvp.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/DfjfMvDWsAAaQAq.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/DfjfMvZXkAEqAT-.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/DfjfMv_W0AAiKvp.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

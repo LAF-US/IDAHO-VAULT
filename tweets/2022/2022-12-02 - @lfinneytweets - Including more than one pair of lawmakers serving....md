@@ -1,4 +1,5 @@
 ---
+title: "Including more than one pair of lawmakers serving..."
 date: 2022-12-02
 time: 06:38:46
 tweet_id: "1598567332422758401"

@@ -19,9 +19,9 @@ RT @jribas: weird couple of years for brands <https://t.co/sFgw7mV5am>
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/DedAdgnWkAYIWF8.jpg)
-- ![](https://pbs.twimg.com/media/DedAgiZX0AAuEew.jpg)
-- ![](https://pbs.twimg.com/media/DedAinCW0AE57WE.jpg)
-- ![](https://pbs.twimg.com/media/DedAkFMWsAAoKCb.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/DedAdgnWkAYIWF8.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/DedAgiZX0AAuEew.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/DedAinCW0AE57WE.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/DedAkFMWsAAoKCb.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1002239180259311616)

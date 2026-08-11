@@ -20,7 +20,7 @@ related:
   - idahocovid19
 ---
 
-# idedu #idpol #idahocovid19 <https://t.co/6GGKi7Aaym>
+\#idedu #idpol #idahocovid19 <https://t.co/6GGKi7Aaym>
 
 ## Links
 

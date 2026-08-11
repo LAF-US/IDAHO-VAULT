@@ -249,6 +249,6 @@ The notebook dies with you. Write to the vault.
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

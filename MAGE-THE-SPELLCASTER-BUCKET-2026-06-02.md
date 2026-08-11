@@ -123,6 +123,6 @@ Adds no doctrine; revises nothing. It supplies the **source/class genus** ("mage
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

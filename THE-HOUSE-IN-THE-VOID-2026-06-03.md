@@ -117,6 +117,6 @@ The House holds a hush at its center — *the Incomparable Gardens, the still th
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

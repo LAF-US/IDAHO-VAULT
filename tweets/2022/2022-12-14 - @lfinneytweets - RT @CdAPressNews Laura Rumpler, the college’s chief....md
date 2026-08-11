@@ -1,4 +1,5 @@
 ---
+title: "RT @CdAPressNews Laura Rumpler, the college\u2019s chief..."
 date: 2022-12-14
 time: 18:46:39
 tweet_id: "1603099164854091776"

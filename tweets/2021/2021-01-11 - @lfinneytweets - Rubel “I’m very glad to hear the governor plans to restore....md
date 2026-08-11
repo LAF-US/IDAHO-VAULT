@@ -1,4 +1,5 @@
 ---
+title: "Rubel \u201cI\u2019m very glad to hear the governor plans to restore..."
 date: 2021-01-11
 time: 22:31:19
 tweet_id: "1348759423628398593"

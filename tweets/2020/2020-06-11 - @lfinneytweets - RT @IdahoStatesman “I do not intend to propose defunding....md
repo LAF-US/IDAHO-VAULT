@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoStatesman \u201cI do not intend to propose defunding..."
 date: 2020-06-11
 time: 02:10:53
 tweet_id: "1270901286037098496"

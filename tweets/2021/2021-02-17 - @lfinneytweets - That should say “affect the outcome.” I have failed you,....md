@@ -1,4 +1,5 @@
 ---
+title: "That should say \u201caffect the outcome.\u201d I have failed you,..."
 date: 2021-02-17
 time: 17:25:07
 tweet_id: "1362090713224081412"

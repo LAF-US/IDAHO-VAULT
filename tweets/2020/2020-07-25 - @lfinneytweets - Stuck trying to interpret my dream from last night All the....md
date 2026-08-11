@@ -1,4 +1,5 @@
 ---
+title: "Stuck trying to interpret my dream from last night All the..."
 date: 2020-07-25
 time: 16:16:50
 tweet_id: "1287059244701736961"

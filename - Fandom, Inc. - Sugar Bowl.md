@@ -7,7 +7,7 @@ created: 2026-04-14
 ---
 | “ | *Tea should be bitter as wormwood, and as sharp as a two-edged sword.* | ” |
 | --- | --- | --- |
-| | — [V.F.D.](https://snicket.fandom.com/wiki/Volunteer_Fire_Department "Volunteer Fire Department") proverb |
+| | — [V.F.D.](https://snicket.fandom.com/wiki/Volunteer_Fire_Department "Volunteer Fire Department") proverb | |
 
 The **Sugar Bowl**, also known as the **Vessel For Disaccharides**, is a mysterious yet prominent object that was mentioned repeatedly in *[A Series of Unfortunate Events](https://snicket.fandom.com/wiki/A_Series_of_Unfortunate_Events "A Series of Unfortunate Events").*
 

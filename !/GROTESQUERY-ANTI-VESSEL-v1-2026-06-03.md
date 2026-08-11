@@ -230,6 +230,6 @@ phylactery. The capstone is the crossing-point.
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

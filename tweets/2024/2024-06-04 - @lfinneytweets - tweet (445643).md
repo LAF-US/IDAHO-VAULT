@@ -1,4 +1,5 @@
 ---
+title: "tweet (445643)"
 date: 2024-06-04
 time: 18:45:24
 tweet_id: "1798063521915445643"
@@ -16,10 +17,10 @@ related:
   - lfinneytweets
 ---
 
-@Lemommeringue https://t.co/FwCbgz7i8z
+@Lemommeringue <https://t.co/FwCbgz7i8z>
 
 ## Links
-- https://cdapress.com/news/2010/may/02/the-man-who-saved-wallace-5/
+- <https://cdapress.com/news/2010/may/02/the-man-who-saved-wallace-5/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

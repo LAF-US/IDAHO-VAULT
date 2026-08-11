@@ -18,7 +18,7 @@ related:
 RT @idahofreedom: Rep. Fred Wood: Idaho Freedom Index ratings are "unwelcome visitors" in the Idaho Statehouse:
 <https://t.co/2DxPFHeG2x>
 
-#…
+\#…
 
 ## Links
 

@@ -1,4 +1,5 @@
 ---
+title: "Rep. Judy Boyle (R-Midvale)"
 date: 2020-06-24
 time: 04:50:37
 tweet_id: "1275652527984386050"
@@ -14,10 +15,10 @@ related:
   - lfinneytweets
 ---
 
-Rep. Judy Boyle (R-Midvale) https://t.co/ZtlOZLrqIB
+Rep. Judy Boyle (R-Midvale) <https://t.co/ZtlOZLrqIB>
 
 ## Media
-- ![](https://pbs.twimg.com/media/EbQEcpWX0AA2FNC.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EbQEcpWX0AA2FNC.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

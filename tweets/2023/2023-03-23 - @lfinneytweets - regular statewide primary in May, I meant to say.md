@@ -1,4 +1,5 @@
 ---
+title: "regular statewide primary in May, I meant to say"
 date: 2023-03-23
 time: 22:56:44
 tweet_id: "1639038496777326592"

@@ -18,7 +18,7 @@ related:
   - idpol
 ---
 
-# idleg #idpol <https://t.co/qwHlq9PTuL> <https://t.co/oVAOqYHFWI>
+\#idleg #idpol <https://t.co/qwHlq9PTuL> <https://t.co/oVAOqYHFWI>
 
 ## Links
 
@@ -26,6 +26,6 @@ related:
 
 ## Media
 
-- ![](https://pbs.twimg.com/tweet_video_thumb/EQItJSkUwAAqAhY.jpg)
+- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/EQItJSkUwAAqAhY.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1225591692574654465)
