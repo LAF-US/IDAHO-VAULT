@@ -1,0 +1,27 @@
+# Checkov (infrastructure-as-code scanner) configuration — STUB.
+#
+# `skip-check: []` keeps the file a valid YAML mapping while suppressing
+# nothing. Checkov expects a mapping; a comments-only file parses as null.
+#
+# Checkov scans Terraform, CloudFormation, Kubernetes manifests, Helm charts,
+# Dockerfiles, and GitHub Actions workflows. The last of those is the only one
+# this repo has — and it is already covered: action pinning is enforced by
+# .github/workflows/action-pin-policy.yml, and CodeQL runs an `actions` analysis
+# on every PR. So a Checkov run today would either duplicate those or report
+# nothing.
+#
+# That overlap is the reason this stays a stub. Turning Checkov on for workflows
+# means deciding which of the three checks is authoritative when they disagree,
+# and nobody has ruled on that.
+#
+# Keys available when this stops being a stub:
+#   framework: [github_actions]    limit what is scanned; default is everything
+#   skip-check: [CKV_GHA_1, ...]   suppress by check id
+#   check: [CKV_GHA_2, ...]        run ONLY these — a whitelist, not an addition
+#   soft-fail: true                report without failing the run
+#   quiet: true                    suppress passed-check output
+#
+# `check:` is the sharp edge: it is exclusive, not additive. Setting it to one
+# id silently disables every other check, which reads like enabling something.
+
+skip-check: []

@@ -1,0 +1,23 @@
+# Spectral (OpenAPI / AsyncAPI / JSON-Schema linter) ruleset — STUB.
+#
+# `rules: {}` is an empty ruleset: valid, and it lints nothing.
+#
+# Note what is NOT here. The usual first line of a Spectral config is
+# `extends: [spectral:oas]`, which pulls in the whole OpenAPI ruleset. That is
+# deliberately absent — this repo has no OpenAPI or AsyncAPI document, so
+# extending a ruleset would arm a linter against a surface that does not exist
+# and produce either silence or noise depending on what lands first.
+#
+# When an API description does arrive, `extends` is the line to add, and the
+# choice between `spectral:oas` and `spectral:asyncapi` is the whole decision:
+#
+#   extends: [[spectral:oas, recommended]]
+#   rules:
+#     operation-description: error   # raise a built-in rule's severity
+#     info-contact: off              # or switch one off, with a reason
+#
+# Severities are error | warn | info | hint | off. `off` is the one to write
+# out in full rather than deleting the rule, so the ruleset keeps a record of
+# what was considered and declined.
+
+rules: {}

@@ -1,0 +1,33 @@
+# Semgrep rules — STUB.
+#
+# An empty rule list. Nothing is scanned by this file, and nothing is
+# suppressed by it either.
+#
+# READ THIS BEFORE ADDING A RULE. Semgrep already runs on every PR here as the
+# `semgrep-cloud-platform/scan` check, and that check does NOT read this file —
+# it pulls its ruleset from the Semgrep AppSec Platform. A rule added here
+# therefore does not tighten CI. It only affects a local `semgrep scan`, which
+# picks up a root `.semgrep.yaml` as its default config when no --config is
+# passed.
+#
+# So there are two rule surfaces with one name between them. If a rule belongs
+# in CI it goes in the platform ruleset; if it belongs here, say in its comment
+# why it is here and not there, or the next reader will assume CI enforces it.
+#
+# Rule shape when this stops being a stub:
+#
+#   rules:
+#     - id: no-bare-except
+#       languages: [python]
+#       severity: WARNING
+#       message: Bare `except:` swallows KeyboardInterrupt and SystemExit.
+#       pattern: |
+#         try:
+#           ...
+#         except:
+#           ...
+#
+# `id` must be unique across the whole ruleset, and `message` is what a human
+# sees at 2am — write the consequence, not the rule name.
+
+rules: []

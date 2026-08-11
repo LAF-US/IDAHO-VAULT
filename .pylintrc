@@ -1,0 +1,27 @@
+# Pylint configuration — STUB.
+#
+# The section below is empty on purpose. Pylint reads this file, finds no
+# overrides, and applies its own defaults — the same result as having no
+# .pylintrc at all.
+#
+# Why the file exists anyway: pylint searches upward from the file it is
+# checking and stops at the first .pylintrc it finds. Having one at the repo
+# root pins that search to this repo, so a run inside the vault can never
+# silently inherit a config from a parent directory on someone's machine.
+#
+# Do not paste a large `disable=` list in here to make existing code pass. The
+# vault's Python is ~50 files under src/ and .github/scripts/; a blanket
+# disable would hide the same defects everywhere to spare a handful of lines.
+# Silence a specific finding at the line that earns it (`# pylint: disable=...`)
+# so the exemption travels with its reason.
+#
+# Format is INI. Sections that matter when this stops being a stub:
+#   [MAIN]        py-version, ignore-paths, load-plugins
+#   [MESSAGES CONTROL]  disable=, enable=
+#   [FORMAT]      max-line-length
+#
+# No workflow runs pylint. Codacy may run its own copy and honor this file, so
+# a rule added here changes what Codacy reports even though nothing in
+# .github/workflows/ invokes pylint directly.
+
+[MAIN]

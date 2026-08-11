@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  PMD ruleset — STUB.
+
+  NAME COLLISION, READ FIRST. This is a PMD ruleset, which is what a bare
+  `ruleset.xml` at a repo root means by convention. It is NOT a GitHub
+  repository ruleset — those are branch and tag protection rules, they are
+  JSON, they are configured in the repository settings UI or via the API, and
+  nothing in a file named ruleset.xml has any effect on them. The vault holds
+  reference notes on GitHub rulesets ("GitHub Docs - About rulesets.md",
+  "Creating rulesets for a repository.md"); this file is unrelated to those and
+  changing it will not protect a branch.
+
+  It declares no rules, so a PMD run against it reports nothing. That is the
+  intended state: PMD analyzes Java, Apex, and a handful of other languages,
+  and this repo's code is Python, shell, and Markdown. There is nothing here
+  for PMD to read.
+
+  It exists as the one obvious place to put PMD policy if Java ever arrives —
+  and, more usefully today, as the place this note lives so the next person to
+  see `ruleset.xml` in a file listing does not mistake it for branch
+  protection.
+
+  Shape when this stops being a stub:
+
+    <rule ref="category/java/bestpractices.xml/UnusedPrivateField"/>
+
+    <rule ref="category/java/errorprone.xml">
+      <exclude name="MissingSerialVersionUID"/>
+    </rule>
+
+  A `<rule ref>` pointing at a whole category file pulls in every rule in it;
+  the `<exclude>` form is how you take one back out. Referencing a category and
+  then excluding half of it is usually a sign the category was the wrong
+  starting point.
+-->
+<ruleset name="idaho-vault"
+         xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
+
+  <description>
+    Stub ruleset for IDAHO-VAULT. Declares no rules on purpose — see the
+    comment above. Not a GitHub repository ruleset.
+  </description>
+
+</ruleset>

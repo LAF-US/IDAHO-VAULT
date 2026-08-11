@@ -1,0 +1,22 @@
+# hadolint (Dockerfile linter) configuration — STUB.
+#
+# `ignored: []` is not decoration. hadolint parses this file as a YAML mapping;
+# a file containing only comments parses as null and hadolint rejects it. An
+# empty ignore list is the smallest thing that is both valid and inert: no rule
+# is suppressed, no threshold is lowered.
+#
+# There is no Dockerfile in this repo today. That is precisely why this is a
+# stub and not a policy — writing rules for a surface that does not exist would
+# be guessing at what the first Dockerfile will need.
+#
+# Keys available when this stops being a stub:
+#   ignored: [DL3008, ...]        rule codes to suppress repo-wide
+#   failure-threshold: warning     error | warning | info | style | ignore
+#   trustedRegistries: [ghcr.io]   registries FROM may pull from
+#   override: {error: [...], ...}  re-rank individual rules
+#
+# `trustedRegistries` is the one worth reaching for first if a Dockerfile
+# arrives: it turns "where did this base image come from" from a review
+# question into a check.
+
+ignored: []

@@ -1,0 +1,24 @@
+# ShellCheck configuration — STUB.
+#
+# This file is a placeholder. It sets nothing, so ShellCheck behaves exactly as
+# it does with no config at all: default severity, every check enabled.
+#
+# It exists so the repo has one obvious place to put shell-lint policy when
+# someone decides what that policy is. Until then, an empty config is the
+# honest state — it does not silence anything, and it does not claim a standard
+# nobody has ruled on.
+#
+# Do not add `disable=` lines to make an existing script pass. That inverts what
+# the file is for: it would turn a repo-wide standard into a per-annoyance
+# escape hatch, and every later reader would inherit the exemption without the
+# argument for it. Fix the script, or write the exemption where the offending
+# line is (`# shellcheck disable=SCxxxx`) so it stays next to its reason.
+#
+# Syntax when this stops being a stub (one directive per line, no sections):
+#   severity=warning
+#   enable=require-variable-braces
+#   disable=SC2154
+#
+# No shell script in this repo is linted by CI today. Adding a rule here does
+# not create a gate; it only changes what a human or Codacy sees when they run
+# ShellCheck by hand.
