@@ -1,0 +1,8 @@
+---
+# Vendored third-party plugin executables and stylesheets are verbatim official
+# release artifacts (see .obsidian/plugins/VENDORED-PLUGIN-PROVENANCE.md).
+# Linting them produces findings only upstream can act on; they are excluded so
+# analysis reflects code this vault actually authors. Nothing else is excluded.
+exclude_paths:
+  - ".obsidian/plugins/*/main.js"
+  - ".obsidian/plugins/*/styles.css"
