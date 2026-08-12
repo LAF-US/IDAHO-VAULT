@@ -191,6 +191,43 @@ class PhoneLinkContractTest(unittest.TestCase):
             self.assertEqual(collisions[0].read_text(encoding="utf-8"), "incoming")
             self.assertIn("MOVED (collision): sample.txt", log.read_text(encoding="utf-8"))
 
+    def test_python_watcher_creates_default_source_only_when_omitted(self) -> None:
+        module = _load_module(
+            "phone_link_auto_sweep_default_source_test_module",
+            ".github/scripts/phone_link_auto_sweep.py",
+        )
+
+        with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as workspace:
+            root = Path(workspace)
+            vault_root = root / "vault"
+            vault_root.mkdir()
+            default_source = root / "default-source"
+
+            with unittest.mock.patch.object(module, "DEFAULT_SOURCE", default_source):
+                exit_code = module.main(["--vault-root", str(vault_root), "--once"])
+
+            self.assertEqual(exit_code, 0)
+            self.assertTrue(default_source.is_dir())
+
+    def test_python_watcher_does_not_create_explicit_missing_source(self) -> None:
+        module = _load_module(
+            "phone_link_auto_sweep_explicit_source_test_module",
+            ".github/scripts/phone_link_auto_sweep.py",
+        )
+
+        with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as workspace:
+            root = Path(workspace)
+            vault_root = root / "vault"
+            vault_root.mkdir()
+            explicit_source = root / "explicit-source-does-not-exist"
+
+            exit_code = module.main(
+                ["--vault-root", str(vault_root), "--source", str(explicit_source), "--once"]
+            )
+
+            self.assertEqual(exit_code, 1)
+            self.assertFalse(explicit_source.exists())
+
 
 if __name__ == "__main__":
     unittest.main()

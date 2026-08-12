@@ -90,23 +90,27 @@ def is_ignored(path: Path) -> bool:
 
 
 def is_unlocked(path: Path, attempts: int = 20, delay_seconds: float = 0.3) -> bool:
-    """True once `path` is openable for shared read AND its size has stopped
-    changing across two consecutive checks -- shared-read access alone
-    succeeds while a producer is still writing, so size stability is the
-    signal that the file is actually done."""
-    previous_size: int | None = None
+    """True once `path` is openable for shared read AND its size+mtime have
+    stopped changing across two consecutive checks -- shared-read access
+    alone succeeds while a producer is still writing, so stability is the
+    signal that the file is actually done. Two checks 0.3s apart is a
+    per-file spot check, not a durable completion guarantee across polling
+    cycles -- see PR discussion for why that stronger version isn't in this
+    pass."""
+    previous_stat: tuple[int, float] | None = None
     for _ in range(attempts):
         try:
             with path.open("rb"):
                 pass
-            current_size = path.stat().st_size
+            stat_result = path.stat()
+            current_stat = (stat_result.st_size, stat_result.st_mtime)
         except OSError:
-            previous_size = None
+            previous_stat = None
             time.sleep(delay_seconds)
             continue
-        if previous_size is not None and current_size == previous_size:
+        if previous_stat is not None and current_stat == previous_stat:
             return True
-        previous_size = current_size
+        previous_stat = current_stat
         time.sleep(delay_seconds)
     return False
 
@@ -183,7 +187,13 @@ def sweep_once(source_dir: Path, target_dir: Path, log_path: Path) -> int:
 
 def watch(source_dir: Path, target_dir: Path, log_path: Path, poll_seconds: float) -> None:
     while True:
-        sweep_once(source_dir, target_dir, log_path)
+        try:
+            sweep_once(source_dir, target_dir, log_path)
+        except OSError as exc:
+            # source_dir itself can become temporarily unreachable (drive
+            # unplugged, folder renamed); log and keep polling instead of
+            # letting one bad cycle kill the watcher permanently.
+            write_log(log_path, f"SWEEP FAILED (will retry): {exc}")
         time.sleep(poll_seconds)
 
 
@@ -198,11 +208,15 @@ def main(argv: list[str] | None = None) -> int:
     if not args.once and not (math.isfinite(args.poll_seconds) and args.poll_seconds > 0):
         parser.error("--poll-seconds must be a finite value greater than 0")
 
-    target_dir, root_source = resolve_vault_root(args.vault_root)
-    if args.source is None:
-        args.source = DEFAULT_SOURCE
-        args.source.mkdir(parents=True, exist_ok=True)
-    source_dir = require_existing_dir(args.source, "Phone Link source")
+    try:
+        target_dir, root_source = resolve_vault_root(args.vault_root)
+        if args.source is None:
+            args.source = DEFAULT_SOURCE
+            args.source.mkdir(parents=True, exist_ok=True)
+        source_dir = require_existing_dir(args.source, "Phone Link source")
+    except RuntimeError as exc:
+        print(f"Configuration error: {exc}", file=sys.stderr)
+        return 1
     log_path = target_dir / "!" / "INBOX" / "_phone-link-watcher.log"
 
     with single_instance() as acquired:
