@@ -10,8 +10,9 @@ related:
 
 Codacy CLI v2 runtime and configuration.
 
-`codacy.yaml` here is the **local CLI's** manifest: which language runtimes and
-which tool versions `.github/workflows/codacy.yml` installs and runs.
+`codacy.yaml` here is the **local CLI's** manifest, specifying which language
+runtimes and which tool versions `.github/workflows/codacy.yml` installs and
+runs.
 
 It is not the same file as the repository-root `.codacy.yaml`, which is **Codacy
 Cloud's** configuration — exclusions, languages, per-engine settings, read from
