@@ -49,17 +49,20 @@ The primary instructions file lives at `.github/copilot-instructions.md` in your
 # Project Guidelines
 
 ## Architecture
+
 - This is a React 18 + TypeScript monorepo
 - Use the Repository pattern for data access
 - All API calls go through the /services layer
 
 ## Code Style
+
 - Use arrow functions for React components
 - Prefer const over let; never use var
 - Always include TypeScript type annotations
 - Use descriptive variable names (no abbreviations)
 
 ## References
+
 - [Architecture](../ARCHITECTURE.md)
 - [Contributing Guide](../CONTRIBUTING.md)
 ```
@@ -134,11 +137,11 @@ Your goal is to generate a new React form component.
 Ask for the form name and fields if not provided.
 
 Requirements:
-* Use form design system components:
+- Use form design system components:
   [design-system/Form.md](../docs/design-system/Form.md)
 \`react-hook-form\`
 \`yup\`
-* Always define TypeScript types for form data
+- Always define TypeScript types for form data
 ```
 
 ### Scopes
@@ -203,10 +206,10 @@ You are in planning mode. Your task is to generate
 an implementation plan. Don't make any code edits.
 
 The plan should include:
-* Overview of the feature or refactoring task
-* Step-by-step implementation approach
-* Files that need to be created or modified
-* Testing strategy
+- Overview of the feature or refactoring task
+- Step-by-step implementation approach
+- Files that need to be created or modified
+- Testing strategy
 ```
 
 ### Key Capabilities
@@ -270,11 +273,13 @@ description: >
 # Web Application Testing with Playwright
 
 ## When to use this skill
+
 - Create new Playwright tests for web apps
 - Debug failing browser tests
 - Set up test infrastructure
 
 ## Creating tests
+
 1. Always use the Page Object Model pattern
 2. Reference the test template:
    [test-template.js](./test-template.js)
