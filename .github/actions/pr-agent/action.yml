@@ -37,9 +37,12 @@ description: >-
 #    `# v0.41.1` marker. A local `./` action is not tracked, and Dependabot
 #    would not read an `image:` inside an action.yml even if docker were
 #    enabled. BOTH the version and the digest are now manual.
-# 2. `check_action_pins.py:62` skips refs starting with `./` or `docker://`, so
-#    neither the workflow line nor the line below is covered by the guard. This
-#    file is the only thing holding the digest. Nothing will fail if it drifts.
+# 2. The digest IS enforced, as of the same PR that added this file.
+#    check_action_pins.py originally skipped `./` and `docker://` outright,
+#    which is how a mutable tag got past a 40-char pin in the first place. It
+#    now also reads `image:` lines in workflows and actions and requires
+#    `@sha256:<64 hex>`, and holds `uses: docker://` to the same rule. Change
+#    the digest below to a tag and CI fails.
 # 3. Because the wiring below is a copy, upstream changes to `action.yaml` —
 #    new inputs, new env — are not picked up. Re-copy it when bumping.
 #

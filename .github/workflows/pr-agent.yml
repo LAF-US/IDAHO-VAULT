@@ -22,9 +22,9 @@ name: PR-Agent
 # │ 4. DONE — a repo SHA does not pin the code that runs: upstream's           │
 # │    action.yaml builds `FROM pragent/pr-agent:github_action`, a MUTABLE     │
 # │    tag. Now runs `./.github/actions/pr-agent` — that same action.yaml,     │
-# │    image pinned by digest. Costs Dependabot tracking, and                  │
-# │    check_action_pins.py skips `./` and `docker://`, so NOTHING enforces    │
-# │    the digest. Read that file's header before bumping.                     │
+# │    image pinned by digest, and check_action_pins.py now checks `image:`    │
+# │    lines so the digest is enforced. Still costs Dependabot tracking:       │
+# │    the version is manual. Read that file's header before bumping.          │
 # └───────────────────────────────────────────────────────────────────────────┘
 #
 # Augment, don't replace: this runs ALONGSIDE the hosted Qodo app. Once it is

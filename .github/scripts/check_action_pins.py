@@ -44,6 +44,15 @@ ACTION_GLOBS = (".github/actions/*/action.yml", ".github/actions/*/action.yaml")
 USES_PATTERN = re.compile(r"^\s*(?:-\s*)?uses:\s*(\S+)\s*(?:#.*)?$")
 FULL_SHA_PATTERN = re.compile(r"^[0-9a-f]{40}$")
 
+# A `uses:` SHA pins the repository, not the container that repository builds.
+# A Docker action can name its image directly, and a tag there is mutable —
+# which is exactly how `the-pr-agent/pr-agent` slipped a mutable
+# `pragent/pr-agent:github_action` past a 40-char pin (see
+# .github/actions/pr-agent/action.yml). So `image:` gets checked too, and for a
+# digest rather than a SHA: registries address content by sha256, not by commit.
+IMAGE_PATTERN = re.compile(r"""^\s*image:\s*['"]?(\S+?)['"]?\s*(?:#.*)?$""")
+IMAGE_DIGEST_PATTERN = re.compile(r"@sha256:[0-9a-f]{64}$")
+
 
 def scan_targets() -> list[Path]:
     paths: list[Path] = []
@@ -59,7 +68,13 @@ def unpinned_refs(path: Path) -> list[tuple[int, str]]:
         if not match:
             continue
         ref = match.group(1)
-        if ref.startswith("./") or ref.startswith("docker://"):
+        if ref.startswith("./"):
+            continue
+        if ref.startswith("docker://"):
+            # Skipped as a `uses:` ref, but still a container: hold it to the
+            # same digest rule as an `image:` line rather than waving it past.
+            if not IMAGE_DIGEST_PATTERN.search(ref):
+                findings.append((lineno, f"{ref} (docker ref needs @sha256:<64 hex>)"))
             continue
         if "@" not in ref:
             findings.append((lineno, ref))
@@ -67,6 +82,18 @@ def unpinned_refs(path: Path) -> list[tuple[int, str]]:
         _, _, sha = ref.rpartition("@")
         if not FULL_SHA_PATTERN.match(sha):
             findings.append((lineno, ref))
+
+    for lineno, line in enumerate(path.read_text(encoding="utf-8").splitlines(), start=1):
+        match = IMAGE_PATTERN.match(line)
+        if not match:
+            continue
+        image = match.group(1)
+        # A Dockerfile path (`image: Dockerfile`) builds from the repo and is
+        # covered by the `uses:` pin; only registry references float.
+        if not image.startswith("docker://") and "/" not in image and ":" not in image:
+            continue
+        if not IMAGE_DIGEST_PATTERN.search(image):
+            findings.append((lineno, f"{image} (image needs @sha256:<64 hex>)"))
     return findings
 
 
