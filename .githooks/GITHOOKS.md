@@ -18,6 +18,19 @@ git config core.hooksPath .githooks
 
 Without it, git reads `.git/hooks/` and **none of these gates run**.
 
+The `pre-push` trufflehog leg full-clones the repo to a temp dir; on this vault
+(84k files, ~200-char filenames) that checkout fails without long-path support.
+Enable it once, per machine:
+
+```
+git config --global core.longpaths true
+```
+
+Without it the clone errors and `pre-push` **fails closed** (blocks the push) —
+safe, but every push is blocked until this is set. (The hook itself already
+sets `GIT_LFS_SKIP_SMUDGE=1` so the clone copies LFS pointers, not 13 GB of
+media.)
+
 ## What runs here
 
 | hook | job |
