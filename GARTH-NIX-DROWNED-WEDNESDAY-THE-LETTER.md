@@ -26,7 +26,7 @@ Arthur is aboard a Raised Rat submersible, going to diving stations. Suzy Turquo
 - **The salutation** — Arthur is addressed with the full inventory of demesnes he is Master of, most of which he does not hold. The form asserts the claim; the facts have not caught up
 - **Distrust, downward** — "We are not pleased that you have chosen to make alliance with Drowned Wednesday, as we fear that she clouds her true purpose. Do not trust her!"
 - **Denial of service by paperwork** — "We are currently besieged by papers, as the Morrow Days seek to render us immobile and ineffective under a deluge of administrative tasks — a clever tactic made easier for them by Monday's many millennia of sloth"
-- **The Pit's rehabilitation rate** — "Rehabilitation of the Far Reaches has begun, with the Pit already **0.00002%** filled in." Reported as progress
+- **The Pit's reported progress** — "Rehabilitation of the Far Reaches has begun, with the Pit already **0.00002%** filled in." An amount completed, offered as good news; the passage gives no elapsed time
 - **The Rats, and the instruction** — "you must be wary in your dealings with them… **Do not answer their questions!** Their curiosity knows no bounds and they always seek knowledge forbidden to them. Unlike the Piper's children, **no effective means has been found to wash between their ears**, so they have gathered far too many secrets"
 - **What Arthur works out** — that this is what was done to Suzy. "She got washed between the ears and Dame Primus let it happen! Or made it happen." He bites back the retort; Suzy gives him "that fake smile" and says Dame Primus requested he read the letter most carefully
 - **The one credit given** — "One thing may be said for the Raised Rats. They do keep their agreements. One must merely be careful what one agrees with them"
@@ -48,9 +48,9 @@ The letter's complaint about the Rats and its confession about Suzy are the same
 
 Dame Primus signs as Parts One and Two, "comprising Paragraphs Three to Thirteen." She is a composite that states its own composition and will state a larger one after each recovery. The identity is an inventory, and it grows by accretion rather than by change — which is why the missing laurel wreath on the seal is worth Arthur noticing.
 
-### Progress reported at a rate that cannot arrive
+### The number chosen to be reported
 
-"The Pit already 0.00002% filled in" is offered as good news, in a letter otherwise complaining of being buried in administration. At that rate the work does not finish; reporting it as progress is the point. (For what the Pit is and why filling it is the wrong motion, see [[GARTH-NIX-GRIM-TUESDAY-THE-PIT]].)
+"The Pit already 0.00002% filled in" is offered as good news, in a letter otherwise complaining of being buried in administration. It is an amount completed, not a rate — the passage supplies no elapsed time, so it supports no projection about finishing, and this note should not make one. What it does show is which figure Dame Primus selected as evidence that rehabilitation "has begun." (For what the Pit is and why filling it is the wrong motion, see [[GARTH-NIX-GRIM-TUESDAY-THE-PIT]].)
 
 ### Agreements versus intentions
 
@@ -74,7 +74,7 @@ Dame Primus signs as Parts One and Two, "comprising Paragraphs Three to Thirteen
 
 ### [[GARTH-NIX-GRIM-TUESDAY-THE-PIT]]
 
-- **Direct link**: the 0.00002% figure is the Far Reaches Pit of book 2, being filled in rather than dug. Same hole, opposite motion, equally unfinishable
+- **Direct link**: the 0.00002% figure is the Far Reaches Pit of book 2, being filled in rather than dug. Same hole, opposite motion — and the two passages together are the whole of what the vault has on it
 - **Contrast in authority**: Grim Tuesday is handed a manufactured legal instrument and signs it without reading it closely; Dame Primus manufactures a legitimate-looking instruction and Arthur reads it very closely indeed
 
 ### [[GARTH-NIX-SUPERIOR-SATURDAY-TOWER]]

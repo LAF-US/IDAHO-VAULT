@@ -72,6 +72,29 @@ jobs:
     env:
       OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
     steps:
+      # A local `./` action has to exist on disk, so this job now needs a
+      # checkout it never needed while `uses:` pointed at a remote repo.
+      #
+      # It must be the BASE revision, not the default merge ref. On
+      # `pull_request` the merge ref contains the contributor's changes — and
+      # this is a PUBLIC repo, so a fork could rewrite
+      # `.github/actions/pr-agent/action.yml` and the step below would hand its
+      # own container the OpenRouter key and a write-capable token. Checking out
+      # base means the action that runs is the one already reviewed and merged.
+      #
+      # PR-Agent reads the diff through the GitHub API, not the working tree, so
+      # it loses nothing by not having the PR's files on disk.
+      - name: Check out the trusted base revision
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: >-
+            ${{ github.event_name == 'pull_request'
+                && github.event.pull_request.base.sha
+                || github.event.repository.default_branch }}
+          # The third-party container inherits the workspace; don't leave a
+          # usable credential in .git/config for it.
+          persist-credentials: false
+
       - name: Load OpenRouter key from 1Password
         id: op
         if: env.OP_SERVICE_ACCOUNT_TOKEN != ''
