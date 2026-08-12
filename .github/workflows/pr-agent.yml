@@ -51,15 +51,24 @@ jobs:
     # after the SHA pin + OpenRouter secret ref are in place, or this errors on
     # every PR repo-wide (the opencode.yml failure mode).
     #
-    # PR events run (reviewing bot-authored PRs is intentional per .pr_agent.toml
-    # `ignore_pr_author_bot = false`). Comment events run only on PR comments from
-    # a non-bot sender, so the agent's own replies can't loop.
+    # PR events run unrestricted (reviewing bot-authored PRs is intentional per
+    # .pr_agent.toml `ignore_pr_author_bot = false`).
+    #
+    # Comment events are gated harder. This is a PUBLIC repo, and a slash-command
+    # run spends the OpenRouter credential and posts with a write-capable token,
+    # so without an author gate any outside account could drain the key and speak
+    # as the bot by commenting `/review` (or editing a comment, since `edited`
+    # fires too). Trust set mirrors TRUSTED_COMMENT_ASSOCIATIONS in
+    # .github/scripts/review_feedback_loop.py, which defaults to the same three.
+    # The non-bot check stays so the agent's own replies can't loop.
     if: >
       vars.PR_AGENT_ENABLED == 'true' && (
         github.event_name == 'pull_request' ||
         (github.event_name == 'issue_comment' &&
          github.event.issue.pull_request != null &&
-         github.event.sender.type != 'Bot')
+         github.event.sender.type != 'Bot' &&
+         contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'),
+                  github.event.comment.author_association))
       )
     runs-on: ubuntu-latest
     env:
