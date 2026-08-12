@@ -44,7 +44,12 @@ WORKFLOW_GLOBS = (".github/workflows/*.yml", ".github/workflows/*.yaml")
 # glob left it unscanned.
 ACTION_GLOBS = (".github/actions/**/action.yml", ".github/actions/**/action.yaml")
 
-USES_PATTERN = re.compile(r"^\s*(?:-\s*)?uses:\s*(\S+)\s*(?:#.*)?$")
+# Capture the whole value, not `\S+`. A value containing spaces —
+# `uses: ${{ matrix.action }}` — failed to match the old pattern at all, and an
+# unmatched line was treated as safe. Anything this guard cannot resolve to a
+# literal must be reported, not skipped.
+USES_PATTERN = re.compile(r"^\s*(?:-\s*)?uses:\s*(.+?)\s*$")
+EXPRESSION_PATTERN = re.compile(r"\$\{\{")
 FULL_SHA_PATTERN = re.compile(r"^[0-9a-f]{40}$")
 
 # A `uses:` SHA pins the repository, not the container that repository builds.
@@ -53,7 +58,7 @@ FULL_SHA_PATTERN = re.compile(r"^[0-9a-f]{40}$")
 # `pragent/pr-agent:github_action` past a 40-char pin (see
 # .github/actions/pr-agent/action.yml). So `image:` gets checked too, and for a
 # digest rather than a SHA: registries address content by sha256, not by commit.
-IMAGE_PATTERN = re.compile(r"""^\s*image:\s*['"]?(\S+?)['"]?\s*(?:#.*)?$""")
+IMAGE_PATTERN = re.compile(r"""^\s*image:\s*(.+?)\s*$""")
 IMAGE_DIGEST_PATTERN = re.compile(r"@sha256:[0-9a-f]{64}$")
 # `FROM <base> [AS <stage>]`, case-insensitive, --platform= flags tolerated.
 FROM_PATTERN = re.compile(
@@ -75,7 +80,10 @@ def unpinned_refs(path: Path) -> list[tuple[int, str]]:
         match = USES_PATTERN.match(line)
         if not match:
             continue
-        ref = match.group(1)
+        ref = _scalar(match.group(1))
+        if EXPRESSION_PATTERN.search(ref):
+            findings.append((lineno, f"{ref} (expression; cannot be resolved to a pinned ref)"))
+            continue
         if ref.startswith("./"):
             continue
         if ref.startswith("docker://"):
@@ -95,7 +103,10 @@ def unpinned_refs(path: Path) -> list[tuple[int, str]]:
         match = IMAGE_PATTERN.match(line)
         if not match:
             continue
-        image = match.group(1)
+        image = _scalar(match.group(1))
+        if EXPRESSION_PATTERN.search(image):
+            findings.append((lineno, f"{image} (expression; cannot be resolved to a digest)"))
+            continue
         if _looks_like_dockerfile(image):
             # NOT a free pass. `image: Dockerfile.github_action_dockerhub` is
             # how the original hole worked: a repository SHA freezes the
@@ -107,6 +118,19 @@ def unpinned_refs(path: Path) -> list[tuple[int, str]]:
         if not IMAGE_DIGEST_PATTERN.search(image):
             findings.append((lineno, f"{image} (image needs @sha256:<64 hex>)"))
     return findings
+
+
+def _scalar(raw: str) -> str:
+    """The literal value of a `uses:`/`image:` line, minus trailing comment.
+
+    Only a comment introduced by whitespace is stripped, so a `#` inside the
+    value survives. Digests and action refs contain no `#`, so this is exact
+    for everything the guard evaluates.
+    """
+    value = re.split(r"\s+#", raw, maxsplit=1)[0].strip()
+    if len(value) >= 2 and value[0] == value[-1] and value[0] in "\"'":
+        value = value[1:-1]
+    return value
 
 
 def _logical_lines(text: str) -> list[tuple[int, str]]:
