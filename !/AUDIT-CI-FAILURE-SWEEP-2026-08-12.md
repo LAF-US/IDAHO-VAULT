@@ -89,4 +89,4 @@ Also noted but not counted as a failure: Validate Agent Content (run 31457472663
 - **The audit-PR pile is the known risk here, and this sweep chose not to grow it silently.** Per the 2026-08-03 sweep's own Big IF, only 3 of the daily sweep PRs opened since 2026-07-08 have ever merged to `main`; most sit open. This sweep's own PR is documentation-only (zero workflow/script changes) specifically so it's trivial to merge — and the two real, fixable findings (Incidents D and F) were deliberately routed to a single new tracking issue (#967) rather than a second report-shaped PR, so the backlog gets one small actionable item instead of one more audit artifact.
 
 ---
-Cross-posted: GitHub issue #398 (comment, Incident A), GitHub issue #967 (new, Incidents D + F), Linear (this sweep), Slack, Discord (via Zapier — see sweep PR for confirmation of which channels were reachable).
+Cross-posted: GitHub issue #398 (comment, Incident A), GitHub issue #967 (new, Incidents D + F), Linear LAF-78, Slack #all-logan-finney, Discord #ledger (via Zapier).
