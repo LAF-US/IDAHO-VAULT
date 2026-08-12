@@ -221,6 +221,18 @@ jobs:
           for run in runs:
               name = run.get("tool", {}).get("driver", {}).get("name", "codacy")
               run.setdefault("automationDetails", {})["id"] = f"codacy-{name}/"
+              # Codacy emits `"rules": null` when a tool component carries no
+              # rule metadata. SARIF types `rules` as an array, so upload-sarif
+              # rejects the ENTIRE file over it:
+              #   instance.runs[0].tool.driver.rules is not of a type(s) array
+              # The key is optional, so drop it rather than substitute []:
+              # absent says "not supplied", [] would assert "no rules exist".
+              # driver and extensions are both toolComponent, same rule.
+              tool = run.get("tool", {})
+              components = [tool.get("driver")] + list(tool.get("extensions") or [])
+              for comp in components:
+                  if isinstance(comp, dict) and not isinstance(comp.get("rules"), list):
+                      comp.pop("rules", None)
           sarif["runs"] = runs
 
           with open("results-normalised.sarif", "w") as fh:
