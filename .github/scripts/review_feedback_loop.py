@@ -504,9 +504,20 @@ def _build_attestation(
     # `attest_and_resolve` records the look and resolves the thread, and the
     # backfill path only ever witnesses a resolve the looker itself performed
     # (it refuses another identity's, above). "Looked by" named the attestation
-    # rather than its effect. The `looked:` marker below is unchanged — it is
-    # the machine-read half and `_thread_has_attested_look` matches on it.
-    return f"Resolved by looker `{looker}` — **{decision}**. {rationale}\n\n{marker}"
+    # rather than its effect.
+    #
+    # The login is deliberately NOT printed. This is a bot action, and naming a
+    # human in the visible line reads as though that person opened the thread
+    # and formed a judgement about it. They did not — the automation swept it.
+    # Attributing machine work to a person is a provenance error in the
+    # direction that matters: it manufactures intent that was never exercised.
+    #
+    # The identity is still recorded in the `looked:` marker below, which is
+    # the machine-read half `_thread_has_attested_look` matches on, and which
+    # `by=` grammar still validates. Provenance is kept where it is used rather
+    # than where it misleads; the marker is unchanged so already-posted
+    # attestations keep round-tripping.
+    return f"Resolved by looker — **{decision}**. {rationale}\n\n{marker}"
 
 
 # Layer B2 (#399): the guarded disposition core. `attest_and_resolve` is the ONLY
