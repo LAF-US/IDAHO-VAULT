@@ -26,7 +26,7 @@ no `core.longpaths`, and no LFS smudge.
 | hook | job |
 |---|---|
 | `pre-commit` | gitleaks scan of the staged set — secrets never enter a commit. Fails closed if gitleaks is missing. |
-| `pre-push` | per-ref: gitleaks scans the full outgoing commit range (offline backstop); trufflehog scans the range's changed files in filesystem mode (verified mode, gates on verified+unknown), then chains `git lfs pre-push`. Fails closed on missing engine or scan error. |
+| `pre-push` | per-ref, in order: **(0) size gate** — blocks files GitHub would reject (non-LFS >100 MiB, LFS >2 GiB on Free/Pro; warns >50 MiB), scoped to the range's new objects; **(1) gitleaks** scans the full outgoing commit range (offline); **(2) trufflehog** scans the range's changed files in filesystem mode (verified, gates on verified+unknown); then chains `git lfs pre-push`. Fails closed on oversized file, missing engine, or scan error. |
 | `post-checkout` / `post-commit` / `post-merge` | stock Git LFS shims (smudge/maintenance). |
 | `*.sample` | git's stock templates, kept deliberately as inert reference seeds. |
 
