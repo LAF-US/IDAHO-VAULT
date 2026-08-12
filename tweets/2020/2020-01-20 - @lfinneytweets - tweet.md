@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2020-01-20
 time: 16:24:43
 tweet_id: "1219294695999672320"
@@ -19,7 +20,7 @@ related:
   - lfinneytweets
 ---
 
-@LCSC @IdahoStateU @BoiseState @uidaho https://t.co/SFlmXBEzkE
+@LCSC @IdahoStateU @BoiseState @uidaho <https://t.co/SFlmXBEzkE>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EOvOBSqU8AY_hzw.jpg)

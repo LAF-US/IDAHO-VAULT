@@ -20,9 +20,7 @@ related:
   - idpol
 ---
 
-RT @idahofreedom: Rep. Judy Boyle and the Common Core standards.
-
-# idleg #idpol <https://t.co/eIShcnZnJt>
+RT @idahofreedom: Rep. Judy Boyle and the Common Core standards. #idleg #idpol <https://t.co/eIShcnZnJt>
 
 ## Media
 

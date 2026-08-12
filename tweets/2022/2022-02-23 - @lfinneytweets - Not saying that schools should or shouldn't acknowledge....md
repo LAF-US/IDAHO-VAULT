@@ -1,4 +1,5 @@
 ---
+title: "Not saying that schools should or shouldn't acknowledge..."
 date: 2022-02-23
 time: 19:07:02
 tweet_id: "1496562263007895560"

@@ -1,4 +1,5 @@
 ---
+title: "Or maybe it's more relevant to our audiences because the..."
 date: 2024-05-22
 time: 19:05:31
 tweet_id: "1793357540526534696"
@@ -17,7 +18,7 @@ related:
   - lfinneytweets
 ---
 
-@currevive @danielwinvw Or maybe it's more relevant to our audiences because the right wing of the GOP has more influence than the left wing of the Dems? Especially here in Idaho where the Democratic party is barely big enough to have one wing https://t.co/fh6UXzhRxK
+@currevive @danielwinvw Or maybe it's more relevant to our audiences because the right wing of the GOP has more influence than the left wing of the Dems? Especially here in Idaho where the Democratic party is barely big enough to have one wing <https://t.co/fh6UXzhRxK>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GONJHWXbMAAnvV6.jpg)

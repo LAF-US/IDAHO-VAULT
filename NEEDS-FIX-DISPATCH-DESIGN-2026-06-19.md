@@ -152,6 +152,6 @@ output. Proposed conservative rollout:
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

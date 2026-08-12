@@ -1,4 +1,5 @@
 ---
+title: "Defeated by challenger (163426)"
 date: 2024-05-23
 time: 23:27:55
 tweet_id: "1793785962625163426"
@@ -14,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-Defeated by challenger https://t.co/BlFY377Sbx
+Defeated by challenger <https://t.co/BlFY377Sbx>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GOTO036bsAA-o0-.jpg)

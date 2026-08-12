@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2025-04-03
 time: 19:40:24
 tweet_id: "1907880884017180808"
@@ -16,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-@tucker_id https://t.co/HDIRTFyXWn
+@tucker_id <https://t.co/HDIRTFyXWn>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/GnonjKhaoAAtdzB.jpg)

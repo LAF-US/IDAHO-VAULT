@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Candidates for Superintendent of Public..."
 date: 2022-10-25
 time: 22:22:25
 tweet_id: "1585034069758599168"

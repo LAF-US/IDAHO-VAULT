@@ -1,4 +1,5 @@
 ---
+title: "Important to keep in mind that Senate Education is taking..."
 date: 2020-02-05
 time: 17:25:47
 tweet_id: "1225108270181842945"

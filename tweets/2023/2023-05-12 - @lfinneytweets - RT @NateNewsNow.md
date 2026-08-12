@@ -1,4 +1,5 @@
 ---
+title: "RT @NateNewsNow"
 date: 2023-05-12
 time: 19:16:04
 tweet_id: "1657102360425164800"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @NateNewsNow: https://t.co/gZskuoNftB
+RT @NateNewsNow: <https://t.co/gZskuoNftB>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/Fv8zo1waIAARgJ0.jpg)

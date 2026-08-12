@@ -1,4 +1,5 @@
 ---
+title: "Haring was diagnosed with AIDS in 1988. He then established..."
 date: 2018-06-13
 time: 07:08:50
 tweet_id: "1006795514195701762"
@@ -14,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-Haring was diagnosed with AIDS in 1988. He then established the Keith Haring Foundation to further AIDS education and research. He died in 1990 due to AIDS-related complications. https://t.co/ZjWtR2P3ww
+Haring was diagnosed with AIDS in 1988. He then established the Keith Haring Foundation to further AIDS education and research. He died in 1990 due to AIDS-related complications. <https://t.co/ZjWtR2P3ww>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/DfjbFIqXkAA1UEa.jpg)

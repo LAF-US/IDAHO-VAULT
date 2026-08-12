@@ -1,4 +1,5 @@
 ---
+title: "RT @kxly4news BREAKING Spokane Valley Rep. Matt Shea did..."
 date: 2020-05-16
 time: 02:27:45
 tweet_id: "1261483446007853056"

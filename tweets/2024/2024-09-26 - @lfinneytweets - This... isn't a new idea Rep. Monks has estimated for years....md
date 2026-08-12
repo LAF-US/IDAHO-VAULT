@@ -1,4 +1,5 @@
 ---
+title: "This... isn't a new idea Rep. Monks has estimated for years..."
 date: 2024-09-26
 time: 16:39:50
 tweet_id: "1839344139613475111"

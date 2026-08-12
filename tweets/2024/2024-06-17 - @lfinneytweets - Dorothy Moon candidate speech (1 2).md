@@ -1,4 +1,5 @@
 ---
+title: "Dorothy Moon candidate speech (1 2)"
 date: 2024-06-17
 time: 17:39:23
 tweet_id: "1802757948818743427"
@@ -16,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-@Boise1932 Dorothy Moon candidate speech (1/2) https://t.co/gWVFACvIfO
+@Boise1932 Dorothy Moon candidate speech (1/2) <https://t.co/gWVFACvIfO>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/ext_tw_video_thumb/1802757895895035904/pu/img/f8y-G0ahTNzKUxaj.jpg)

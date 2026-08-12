@@ -1,4 +1,5 @@
 ---
+title: "RT @chazhutton Thought I\u2019d draw a more accurate calendar..."
 date: 2020-04-26
 time: 17:03:38
 tweet_id: "1254456110364323840"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @chazhutton: Thought I’d draw a more accurate calendar for 2020 so far.... https://t.co/hWB9W4PIAH
+RT @chazhutton: Thought I’d draw a more accurate calendar for 2020 so far.... <https://t.co/hWB9W4PIAH>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EWYDRgqWsAE1yLM.jpg)

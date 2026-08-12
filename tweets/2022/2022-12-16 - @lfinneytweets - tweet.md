@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2022-12-16
 time: 22:22:31
 tweet_id: "1603878262941569024"
@@ -17,7 +18,7 @@ related:
   - lfinneytweets
 ---
 
-@brandendurst @NorthIdaho https://t.co/L40UtfYrqX
+@brandendurst @NorthIdaho <https://t.co/L40UtfYrqX>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/FkIexttaUAIObOD.jpg)

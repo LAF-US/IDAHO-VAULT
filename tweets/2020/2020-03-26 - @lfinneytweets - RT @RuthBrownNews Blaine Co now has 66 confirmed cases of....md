@@ -1,4 +1,5 @@
 ---
+title: "RT @RuthBrownNews Blaine Co now has 66 confirmed cases of..."
 date: 2020-03-26
 time: 16:33:12
 tweet_id: "1243214429774180352"

@@ -1,4 +1,5 @@
 ---
+title: "RT @BeschlossDC \u201cWear a Mask,\u201d says Portland, Oregon,..."
 date: 2020-06-25
 time: 16:02:36
 tweet_id: "1276184026479501312"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @BeschlossDC: “Wear a Mask,” says Portland, Oregon, during the 1918-1919 influenza pandemic: https://t.co/orr3dBbmul
+RT @BeschlossDC: “Wear a Mask,” says Portland, Oregon, during the 1918-1919 influenza pandemic: <https://t.co/orr3dBbmul>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EbXlX3vXgAEWfn-.jpg)

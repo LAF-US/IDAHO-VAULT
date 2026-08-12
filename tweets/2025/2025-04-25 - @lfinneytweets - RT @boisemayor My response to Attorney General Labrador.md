@@ -1,4 +1,5 @@
 ---
+title: "RT @boisemayor My response to Attorney General Labrador"
 date: 2025-04-25
 time: 00:01:41
 tweet_id: "1915556786716971290"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @boisemayor: My response to Attorney General Labrador https://t.co/hZqjRuhPXX
+RT @boisemayor: My response to Attorney General Labrador <https://t.co/hZqjRuhPXX>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GpUsIt1awAADsmA.jpg)

@@ -1,4 +1,5 @@
 ---
+title: "Case numbers have continued to rise over the last two..."
 date: 2020-06-25
 time: 18:12:07
 tweet_id: "1276216616573743105"
@@ -17,7 +18,7 @@ related:
   - IdahoCOVID19
 ---
 
-Case numbers have continued to rise over the last two weeks, and test results have creeped above 5% positive. #IdahoCOVID19 https://t.co/9acDkx6Y0Q
+Case numbers have continued to rise over the last two weeks, and test results have creeped above 5% positive. #IdahoCOVID19 <https://t.co/9acDkx6Y0Q>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EbYIE6ZUwAAoYYn.jpg)

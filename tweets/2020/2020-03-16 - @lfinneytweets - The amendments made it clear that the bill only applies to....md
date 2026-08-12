@@ -1,4 +1,5 @@
 ---
+title: "The amendments made it clear that the bill only applies to..."
 date: 2020-03-16
 time: 22:18:00
 tweet_id: "1239677321998557184"

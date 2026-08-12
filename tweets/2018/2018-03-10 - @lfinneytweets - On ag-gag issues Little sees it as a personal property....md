@@ -1,4 +1,5 @@
 ---
+title: "On ag-gag issues Little sees it as a personal property..."
 date: 2018-03-10
 time: 23:28:42
 tweet_id: "972615256286552064"

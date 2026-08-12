@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports July 9, 2021, Weekly #IdahoCOVID19 Update..."
 date: 2021-07-09
 time: 23:20:22
 tweet_id: "1413639192609918979"
@@ -19,7 +20,7 @@ related:
   - IdahoCOVID19
 ---
 
-RT @IdahoReports: July 9, 2021, Weekly #IdahoCOVID19 Update | @IdahoPTV https://t.co/tMRDY8iJFE
+RT @IdahoReports: July 9, 2021, Weekly #IdahoCOVID19 Update | @IdahoPTV <https://t.co/tMRDY8iJFE>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/amplify_video_thumb/1413633429653004292/img/ybgupTl6ZJ_avMLz.jpg)

@@ -1,4 +1,5 @@
 ---
+title: "Thanks to the candidates and panelists for their time..."
 date: 2022-04-26
 time: 04:45:33
 tweet_id: "1518813508976013313"
@@ -24,7 +25,7 @@ related:
   - idedu
 ---
 
-Thanks to the candidates and panelists for their time before Idaho voters tonight! A great night of education policy on @IdahoPTV. #Elections2022 #idleg #idpol #idedu https://t.co/c6ym9cJr4H
+Thanks to the candidates and panelists for their time before Idaho voters tonight! A great night of education policy on @IdahoPTV. #Elections2022 #idleg #idpol #idedu <https://t.co/c6ym9cJr4H>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FRPo1XRVIAAj_p_.jpg)

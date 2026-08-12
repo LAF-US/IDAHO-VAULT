@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports The second stage of @GovernorLittle's..."
 date: 2020-04-15
 time: 18:42:59
 tweet_id: "1250494848055951360"

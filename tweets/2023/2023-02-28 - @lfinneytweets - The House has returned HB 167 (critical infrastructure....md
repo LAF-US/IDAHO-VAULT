@@ -1,4 +1,5 @@
 ---
+title: "The House has returned HB 167 (critical infrastructure..."
 date: 2023-02-28
 time: 18:52:37
 tweet_id: "1630642142355013633"
@@ -18,7 +19,7 @@ related:
   - idpol
 ---
 
-The House has returned HB 167 (critical infrastructure trespass) to committee. Members of the Idaho Second Amendment Alliance were present today expressing concerns about it. "We have a replacement bill coming," Rep. Blanksma said. #idleg #idpol https://t.co/IDPTLuPwmZ
+The House has returned HB 167 (critical infrastructure trespass) to committee. Members of the Idaho Second Amendment Alliance were present today expressing concerns about it. "We have a replacement bill coming," Rep. Blanksma said. #idleg #idpol <https://t.co/IDPTLuPwmZ>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FqE0YqPaAAAHw8_.jpg)

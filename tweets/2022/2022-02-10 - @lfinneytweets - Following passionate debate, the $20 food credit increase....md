@@ -1,4 +1,5 @@
 ---
+title: "Following passionate debate, the $20 food credit increase..."
 date: 2022-02-10
 time: 19:16:14
 tweet_id: "1491853532412071947"
@@ -18,7 +19,7 @@ related:
   - idpol
 ---
 
-Following passionate debate, the $20 food credit increase passes the House. It moves to the Senate. #idleg #idpol https://t.co/DASH9VUqtz
+Following passionate debate, the $20 food credit increase passes the House. It moves to the Senate. #idleg #idpol <https://t.co/DASH9VUqtz>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FLQgsKPVkAAuE5P.jpg)

@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2021-12-31
 time: 00:11:03
 tweet_id: "1476707438850035713"
@@ -16,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-@KeithRidler https://t.co/sk0w8TJI9D
+@KeithRidler <https://t.co/sk0w8TJI9D>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/FH5RliCVkBQLuFZ.jpg)

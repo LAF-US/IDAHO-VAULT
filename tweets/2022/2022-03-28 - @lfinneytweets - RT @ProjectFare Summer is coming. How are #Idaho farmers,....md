@@ -1,4 +1,5 @@
 ---
+title: "RT @ProjectFare Summer is coming. How are #Idaho farmers,..."
 date: 2022-03-28
 time: 18:44:54
 tweet_id: "1508515492582940672"

@@ -1,4 +1,5 @@
 ---
+title: "RT @idahoednews All candidates for #idaho governor agreed..."
 date: 2018-03-23
 time: 20:50:03
 tweet_id: "977286374138159104"

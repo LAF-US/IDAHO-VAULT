@@ -1,4 +1,5 @@
 ---
+title: "RT @GlennMosley1 .@lfinneytweets, @IdahoReports. @UIMcClure..."
 date: 2020-03-21
 time: 22:20:35
 tweet_id: "1241489913863753728"
@@ -22,7 +23,7 @@ related:
   - journalismmatters
 ---
 
-RT @GlennMosley1: .@lfinneytweets, @IdahoReports. @UIMcClure @uidaho #journalismmatters https://t.co/jsH3PICfjn
+RT @GlennMosley1: .@lfinneytweets, @IdahoReports. @UIMcClure @uidaho #journalismmatters <https://t.co/jsH3PICfjn>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/ETnFBdlVAAUPXuF.jpg)

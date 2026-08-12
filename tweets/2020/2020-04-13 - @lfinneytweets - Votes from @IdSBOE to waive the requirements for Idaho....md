@@ -1,4 +1,5 @@
 ---
+title: "Votes from @IdSBOE to waive the requirements for Idaho..."
 date: 2020-04-13
 time: 21:49:10
 tweet_id: "1249816924982145024"

@@ -226,6 +226,6 @@ the family: *every other vessel's failure mode is worse when its manifest is unk
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

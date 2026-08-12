@@ -1,4 +1,5 @@
 ---
+title: "RT @heersinkolivia An audience member was almost removed..."
 date: 2020-07-23
 time: 16:36:22
 tweet_id: "1286339382165856257"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @heersinkolivia: An audience member was almost removed from the audience. https://t.co/vFfVivjfa8
+RT @heersinkolivia: An audience member was almost removed from the audience. <https://t.co/vFfVivjfa8>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/ext_tw_video_thumb/1286338366531764230/pr/img/lT5ROTbkl1j-CsuR.jpg)

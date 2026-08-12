@@ -1,4 +1,5 @@
 ---
+title: "INBOX @IDHW says Idaho will begin requiring proof of..."
 date: 2021-02-23
 time: 19:12:43
 tweet_id: "1364292119947452416"
@@ -20,7 +21,7 @@ related:
   - COVID19vaccines
 ---
 
-INBOX: @IDHW says Idaho will begin requiring proof of residency  or work for vaccine appointments. #IdahoCOVID19 #COVID19vaccines https://t.co/WTFozBWi5E
+INBOX: @IDHW says Idaho will begin requiring proof of residency  or work for vaccine appointments. #IdahoCOVID19 #COVID19vaccines <https://t.co/WTFozBWi5E>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/Eu7v4geUYAAtDkr.png)

@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Some legislators have wanted the power to..."
 date: 2022-10-22
 time: 02:11:00
 tweet_id: "1583642042990985216"

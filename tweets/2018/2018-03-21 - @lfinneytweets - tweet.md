@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2018-03-21
 time: 08:13:45
 tweet_id: "976371269506486274"
@@ -17,7 +18,7 @@ related:
   - lfinneytweets
 ---
 
-@gretelkauffman @Pfannyyy  https://t.co/DjD8Gmcg0s
+@gretelkauffman @Pfannyyy  <https://t.co/DjD8Gmcg0s>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/DYzEfNgV4AEY7CO.jpg)

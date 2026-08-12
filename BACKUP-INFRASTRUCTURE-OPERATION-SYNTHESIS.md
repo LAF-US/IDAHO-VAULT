@@ -46,7 +46,7 @@ The old model: **Single cloud provider = single point of failure**
 
 The new model: **Distributed verification nodes**
 
-```
+```text
 You ──▶ Multiple independent providers
         │
         ├── Google (4.9 TiB)
@@ -89,7 +89,7 @@ Each provider is a **verification node** — consensus requires agreement across
 
 ### Data Flow
 
-```
+```text
 1. LOCAL (Obsidian vault)
        │
        ├─▶ rclone sync → google-drive:    (hot, active)
@@ -104,7 +104,7 @@ Each provider is a **verification node** — consensus requires agreement across
 
 ### Restore Flow
 
-```
+```text
 Any provider ──▶ Local restore
        │
        Example: rclone copy google-drive: ./vault --dry-run
@@ -112,7 +112,7 @@ Any provider ──▶ Local restore
 
 ### Verification Flow
 
-```
+```text
 rclone check <source:> <target:>
        │
        Output: Differences: 0, Hashes matched

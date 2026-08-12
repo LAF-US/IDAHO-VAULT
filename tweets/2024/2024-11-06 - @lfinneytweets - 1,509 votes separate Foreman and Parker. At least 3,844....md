@@ -1,4 +1,5 @@
 ---
+title: "1,509 votes separate Foreman and Parker. At least 3,844..."
 date: 2024-11-06
 time: 09:37:20
 tweet_id: "1854095713413853447"
@@ -17,7 +18,7 @@ related:
   - idleg
 ---
 
-1,509 votes separate Foreman and Parker. At least 3,844 absentee ballots were returned in Latah County, which typically lean Democratic - but who knows! #idleg https://t.co/sVk7VzQ5rM
+1,509 votes separate Foreman and Parker. At least 3,844 absentee ballots were returned in Latah County, which typically lean Democratic - but who knows! #idleg <https://t.co/sVk7VzQ5rM>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GbsSOdFbcAA1f4T.jpg)

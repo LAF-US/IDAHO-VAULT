@@ -1,4 +1,5 @@
 ---
+title: "RT @DroughtGov Western Drought Status Update for July 2022..."
 date: 2022-07-25
 time: 15:17:56
 tweet_id: "1551587561369260032"

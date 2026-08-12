@@ -1,4 +1,5 @@
 ---
+title: "\ud83c\udf68 #idleg"
 date: 2022-01-21
 time: 05:32:11
 tweet_id: "1484398398744653824"
@@ -16,10 +17,10 @@ related:
   - idleg
 ---
 
-🍨 #idleg https://t.co/1cMydQ5ViK https://t.co/lZAY0oltnc
+🍨 #idleg <https://t.co/1cMydQ5ViK> <https://t.co/lZAY0oltnc>
 
 ## Links
-- https://x.com/lfinneytweets/status/1483931968588824576
+- <https://x.com/lfinneytweets/status/1483931968588824576>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FJmkYS-VIAAt2vn.jpg)

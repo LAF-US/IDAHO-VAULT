@@ -1,4 +1,5 @@
 ---
+title: "The system would be pick your single favorite candidate in..."
 date: 2024-09-09
 time: 19:23:47
 tweet_id: "1833224803370872863"

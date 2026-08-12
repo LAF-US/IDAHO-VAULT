@@ -1,4 +1,5 @@
 ---
+title: "RT @brian_lenney Here's how much Idaho college Presidents..."
 date: 2024-06-17
 time: 18:48:27
 tweet_id: "1802775329326653872"
@@ -20,7 +21,7 @@ related:
   - idpol
 ---
 
-RT @brian_lenney: Here's how much Idaho college Presidents make... #idaho #idpol https://t.co/3dKInZzmsL
+RT @brian_lenney: Here's how much Idaho college Presidents make... #idaho #idpol <https://t.co/3dKInZzmsL>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GQS-Uo-bAAAPYpl.png)

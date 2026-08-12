@@ -1,4 +1,5 @@
 ---
+title: "#idleg #idpol"
 date: 2022-04-05
 time: 18:13:46
 tweet_id: "1511406760594092034"
@@ -18,10 +19,10 @@ related:
   - idpol
 ---
 
-\#idleg #idpol https://t.co/GsrO843HOg https://t.co/W5W2lYZqcp
+\#idleg #idpol <https://t.co/GsrO843HOg> <https://t.co/W5W2lYZqcp>
 
 ## Links
-- https://x.com/IdahoCapitalSun/status/1511356289456250885
+- <https://x.com/IdahoCapitalSun/status/1511356289456250885>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FPmYV2lVQAUKGt8.jpg)

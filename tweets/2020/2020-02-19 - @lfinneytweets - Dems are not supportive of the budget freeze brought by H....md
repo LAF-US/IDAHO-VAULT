@@ -1,4 +1,5 @@
 ---
+title: "Dems are not supportive of the budget freeze brought by H..."
 date: 2020-02-19
 time: 21:36:40
 tweet_id: "1230244835371520000"

@@ -291,7 +291,7 @@ git add docs/architecture/
 
 ## File Structure Expectations
 
-```
+```text
 project/
 ├── pom.xml (Maven)
 │   └── <modules> detected → multi-module

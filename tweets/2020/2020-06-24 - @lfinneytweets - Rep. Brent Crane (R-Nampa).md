@@ -1,4 +1,5 @@
 ---
+title: "Rep. Brent Crane (R-Nampa)"
 date: 2020-06-24
 time: 04:50:41
 tweet_id: "1275652542958120965"
@@ -14,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-Rep. Brent Crane (R-Nampa) https://t.co/FQqmjQMouM
+Rep. Brent Crane (R-Nampa) <https://t.co/FQqmjQMouM>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EbQFHwQXQAAejtL.jpg)

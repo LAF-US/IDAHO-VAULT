@@ -1,4 +1,5 @@
 ---
+title: "nature is healing #idleg"
 date: 2025-04-03
 time: 23:10:13
 tweet_id: "1907933687804838266"
@@ -16,7 +17,7 @@ related:
   - idleg
 ---
 
-nature is healing #idleg https://t.co/ipfitJrwOB
+nature is healing #idleg <https://t.co/ipfitJrwOB>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GnpXhGgawAAE5hv.jpg)

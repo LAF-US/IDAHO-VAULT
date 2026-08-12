@@ -72,6 +72,6 @@ First-person account by Claude Code; the transcript is the source. The `WebSearc
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

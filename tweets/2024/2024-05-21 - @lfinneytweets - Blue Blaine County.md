@@ -1,4 +1,5 @@
 ---
+title: "Blue Blaine County"
 date: 2024-05-21
 time: 20:48:31
 tweet_id: "1793021074290225177"
@@ -16,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-@IDSecOfState "Blue" Blaine County https://t.co/WvFnlhNGPW
+@IDSecOfState "Blue" Blaine County <https://t.co/WvFnlhNGPW>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GOIXI7-aYAACfEj.jpg)

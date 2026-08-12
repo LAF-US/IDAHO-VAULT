@@ -1,4 +1,5 @@
 ---
+title: "Amended homeowner's exemption bill carries in the House...."
 date: 2020-03-16
 time: 18:41:35
 tweet_id: "1239622859414073344"
@@ -18,7 +19,7 @@ related:
   - idpol
 ---
 
-Amended homeowner's exemption bill carries in the House. Now back to the Senate to see if they agree with the amendment. #idleg #idpol https://t.co/b1iFSr26gk
+Amended homeowner's exemption bill carries in the House. Now back to the Senate to see if they agree with the amendment. #idleg #idpol <https://t.co/b1iFSr26gk>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/ETQGalcXkAAgwF5.jpg)

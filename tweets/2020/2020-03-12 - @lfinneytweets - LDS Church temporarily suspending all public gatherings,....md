@@ -1,4 +1,5 @@
 ---
+title: "LDS Church temporarily suspending all public gatherings,..."
 date: 2020-03-12
 time: 23:01:33
 tweet_id: "1238238730185396224"
@@ -16,9 +17,9 @@ related:
   - COVID19
 ---
 
-LDS Church temporarily suspending all public gatherings, including regular sacrament meetings. #COVID19 https://t.co/uC3ZDRhfLk
+LDS Church temporarily suspending all public gatherings, including regular sacrament meetings. #COVID19 <https://t.co/uC3ZDRhfLk>
 
 ## Links
-- https://x.com/Ch_JesusChrist/status/1238235191572705280
+- <https://x.com/Ch_JesusChrist/status/1238235191572705280>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1238238730185396224)

@@ -1,4 +1,5 @@
 ---
+title: "Rep. Terry Gestrin (R-Donnelly)"
 date: 2020-06-24
 time: 04:50:40
 tweet_id: "1275652539590094848"
@@ -14,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-Rep. Terry Gestrin (R-Donnelly) https://t.co/mKqPL9U8yw
+Rep. Terry Gestrin (R-Donnelly) <https://t.co/mKqPL9U8yw>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EbQE9BYWsAM0J6p.jpg)

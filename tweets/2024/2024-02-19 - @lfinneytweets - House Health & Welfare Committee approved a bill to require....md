@@ -1,4 +1,5 @@
 ---
+title: "House Health & Welfare Committee approved a bill to require..."
 date: 2024-02-19
 time: 19:44:35
 tweet_id: "1759665300990271628"
@@ -19,9 +20,9 @@ related:
 ---
 
 House Health & Welfare Committee approved a bill to require legislative approval of any future Medicaid waivers for Idaho. “We have seen over the years that the Legislature needs to be more active in its oversight,” Rep. Megan Blanksma said. #idleg #idpol 
-https://t.co/tzpMBghcEU
+<https://t.co/tzpMBghcEU>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2024/02/19/bill-would-require-legislative-approval-for-future-medicaid-waivers/
+- <https://blog.idahoreports.idahoptv.org/2024/02/19/bill-would-require-legislative-approval-for-future-medicaid-waivers/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1759665300990271628)

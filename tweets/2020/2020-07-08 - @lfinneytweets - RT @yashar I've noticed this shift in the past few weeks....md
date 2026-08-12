@@ -1,4 +1,5 @@
 ---
+title: "RT @yashar I've noticed this shift in the past few weeks..."
 date: 2020-07-08
 time: 00:31:25
 tweet_id: "1280660727095676934"

@@ -38,6 +38,6 @@ Current live status is maintained in **THE DOCKET**: `!/__!__/!/! The world is q
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

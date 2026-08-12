@@ -1,4 +1,5 @@
 ---
+title: "Now that our initiative rights are restored, it's time to..."
 date: 2021-08-28
 time: 17:26:15
 tweet_id: "1431669470485893121"
@@ -22,7 +23,7 @@ related:
   - idpol
 ---
 
-"Now that our initiative rights are restored, it's time to exercise them," @lukemayville said, referring to Monday's @idcourts decision. #idleg #idpol https://t.co/iY2pbVsqhT
+"Now that our initiative rights are restored, it's time to exercise them," @lukemayville said, referring to Monday's @idcourts decision. #idleg #idpol <https://t.co/iY2pbVsqhT>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/E95OxfrVUAQ8qYj.jpg)

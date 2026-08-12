@@ -652,6 +652,6 @@ adoption, accuracy, authority, or current standing.
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

@@ -1,4 +1,5 @@
 ---
+title: "RT @mmfa CNN's new political editor is a former Trump..."
 date: 2019-02-21
 time: 06:20:11
 tweet_id: "1098467399752273920"

@@ -1,4 +1,5 @@
 ---
+title: "RT @MtnStatesPolicy But while the sales tax has brought in..."
 date: 2023-06-21
 time: 21:24:48
 tweet_id: "1671630270527852544"

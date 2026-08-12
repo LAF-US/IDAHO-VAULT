@@ -1,4 +1,5 @@
 ---
+title: "Members of the House of Representatives are sworn in for..."
 date: 2024-12-05
 time: 16:18:51
 tweet_id: "1864706009010520517"
@@ -16,7 +17,7 @@ related:
   - idleg
 ---
 
-Members of the House of Representatives are sworn in for the 68th Idaho Legislature. #idleg https://t.co/Ww48lkXVRE
+Members of the House of Representatives are sworn in for the 68th Idaho Legislature. #idleg <https://t.co/Ww48lkXVRE>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GeDEO6kbYAE-gmh.jpg)

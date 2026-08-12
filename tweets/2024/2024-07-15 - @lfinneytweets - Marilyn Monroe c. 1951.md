@@ -1,4 +1,5 @@
 ---
+title: "Marilyn Monroe c. 1951"
 date: 2024-07-15
 time: 22:20:35
 tweet_id: "1812975576057278709"
@@ -13,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-Marilyn Monroe c. 1951 https://t.co/5AKlPejoP9
+Marilyn Monroe c. 1951 <https://t.co/5AKlPejoP9>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GSj7rZRbIAUpVeE.jpg)

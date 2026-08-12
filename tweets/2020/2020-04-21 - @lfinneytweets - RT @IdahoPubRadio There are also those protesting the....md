@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio There are also those protesting the..."
 date: 2020-04-21
 time: 01:36:54
 tweet_id: "1252410951980048384"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoPubRadio: There are also those protesting the event. 3/3 https://t.co/CIx7dZR9XO
+RT @IdahoPubRadio: There are also those protesting the event. 3/3 <https://t.co/CIx7dZR9XO>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EWF03P9UMAE84lo.jpg)

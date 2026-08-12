@@ -1,4 +1,5 @@
 ---
+title: "Here's a relatively clean picture of where lawmakers are..."
 date: 2023-03-29
 time: 23:31:10
 tweet_id: "1641221491986518019"
@@ -18,7 +19,7 @@ related:
   - idpol
 ---
 
-Here's a relatively clean picture of where lawmakers are getting the funding for property tax relief in HB 292. #idleg #idpol https://t.co/49eWegtPCF
+Here's a relatively clean picture of where lawmakers are getting the funding for property tax relief in HB 292. #idleg #idpol <https://t.co/49eWegtPCF>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FsbKOtKWYAAg8qW.jpg)
