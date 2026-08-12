@@ -103,14 +103,35 @@ jobs:
           # "Do not re-add it" — the exclusion made the problem look handled
           # while the defect sat untouched. So this does not re-add a list.
           #
-          # UNVERIFIED HERE, ON PURPOSE, AND SAY SO: docker is unavailable in
-          # the environment this was written in, so whether 7.10.1 fixes
-          # Sarif.scala could not be tested locally. CI is the test. If the
-          # next run of this workflow still throws MalformedInputException,
-          # this bump is disproved and the remaining levers are dropping
-          # --format sarif, or retiring this workflow because the separate
-          # "Codacy Static Code Analysis" cloud check already passes on every
-          # PR and posts independently of it.
+          # THE BUMP DID NOT WORK. This was written as a hypothesis — docker
+          # is unavailable in the environment it was written in, so CI was
+          # named as the test. CI ran it. 7.10.1 crashes identically:
+          #
+          #   7.9.25  (job 93687391765)  crash 05:44:59  cancelled 05:59:05
+          #   7.10.1  (job 93967219019)  crash 00:17:05  cancelled 00:30:42
+          #
+          # Same stack, same orphaned docker child, same 25-minute timeout.
+          # Eight months of releases did not touch Sarif.scala. The version
+          # stays only because 7.10.1 is newer and digest-pinned and no worse
+          # — it is NOT the fix, and nothing here should be read as one.
+          #
+          # Nor is this reachable by locale or -Dfile.encoding:
+          # better.files.File.lines calls the no-charset overload of
+          # Files.readAllLines, which is hardcoded UTF-8.
+          #
+          # What is actually left, none of it decided here:
+          #   1. repair the repo side — convert the convertible text files and
+          #      untrack the junk, the only option that removes the cause;
+          #   2. emit --format json and convert to SARIF in this workflow,
+          #      keeping the code-scanning upload while routing around the one
+          #      broken component;
+          #   3. retire this workflow — "Codacy Static Code Analysis", the
+          #      cloud check, returned success with 0 issues at 00:12:16 on the
+          #      very run where this CLI died, and posts independently of it.
+          #
+          # Not an option, per 846472e34: re-adding a hand-maintained exclusion
+          # list. It matched all 21 non-UTF-8 files and the crash happened
+          # anyway.
           #
           # The wrapper script stays pinned at the 7.9.25 commit deliberately.
           # It is version-agnostic: line 46 interpolates
