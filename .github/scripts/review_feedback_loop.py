@@ -528,35 +528,6 @@ def _add_thread_reply(thread_id: str, body: str) -> None:
     }
     """
     _graphql(mutation, threadId=thread_id, body=body)
-
-
-def _fetch_thread(thread_id: str) -> dict | None:
-    """Fetch one review thread node directly by GraphQL ID."""
-    # A fallback for when an explicit target thread sits beyond `_fetch_pr`'s
-    # `reviewThreads(first: 100)` window (a PR with >100 threads), so a valid id is
-    # not falsely reported missing. Returns the same node shape as the PR query.
-    query = """
-    query($id: ID!) {
-      node(id: $id) {
-        ... on PullRequestReviewThread {
-          id
-          isResolved
-          isOutdated
-          comments(first: 100) {
-            pageInfo { hasNextPage }
-            nodes { author { login __typename } body url }
-          }
-        }
-      }
-    }
-    """
-    data = _graphql(query, id=thread_id)
-    node = data.get("node") or {}
-    # A node id that exists but is not a review thread yields {} (the inline fragment
-    # doesn't apply) — treat that as missing, not as a thread with no id.
-    return node if node.get("id") else None
-
-
 def attest_and_resolve(
     pr: dict,
     thread: dict,
@@ -1790,19 +1761,6 @@ def verify_claim(args: argparse.Namespace) -> int:
     _comment(args.pr_number, "\n".join(body_lines))
     print(f"Posted verify-claim divergence comment on PR #{args.pr_number}.")
     return 0
-
-
-def _thread_belongs_to_pr(thread: dict, owner: str, repo: str, pr_number: int) -> bool:
-    """Report whether a thread's comment links place it on owner/repo PR #pr_number."""
-    # `_fetch_thread` resolves a *global* node id, so a stray or hostile id could point at
-    # a thread on a different PR/repo; membership is verified before acting on it.
-    expected = f"/{owner}/{repo}/pull/{pr_number}".lower()
-    for comment in (thread.get("comments") or {}).get("nodes") or []:
-        if expected in (comment.get("url") or "").lower():
-            return True
-    return False
-
-
 def _positive_int(value: str) -> int:
     """Parse a strictly positive integer for an argparse option (e.g. --stale-days)."""
     # A non-positive staleness window misclassifies every PR (<=0 marks all stale,
