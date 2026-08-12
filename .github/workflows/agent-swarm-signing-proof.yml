@@ -31,6 +31,7 @@ on:
 permissions:
   contents: read
   issues: write
+  administration: read
 
 jobs:
   proof:
@@ -42,9 +43,9 @@ jobs:
           REPO: ${{ github.repository }}
         run: |
           set -euo pipefail
-          rulesets="$(gh api "repos/$REPO/rulesets" --jq '.[] | select(.name=="Main Ruleset") | .id')"
+          rulesets="$(gh api "repos/$REPO/rulesets" --jq '.[] | select(.name=="Main Ruleset" and .enforcement=="active") | .id')"
           if [ -z "$rulesets" ]; then
-            echo "Main Ruleset was not found." >&2
+            echo "Main Ruleset was not found (or is not active)." >&2
             exit 1
           fi
           matched="false"
@@ -255,7 +256,7 @@ jobs:
           gh api "repos/$REPO/commits/$COMMIT_SHA" --jq '.commit.verification' > verification.json
           verified="$(jq -r '.verified' verification.json)"
           reason="$(jq -r '.reason' verification.json)"
-          if ! gh pr checks "$PR_NUMBER" --repo "$REPO" --json name,state,conclusion,detailsUrl > checks.json; then
+          if ! gh pr checks "$PR_NUMBER" --repo "$REPO" --json name,state,bucket,link > checks.json; then
             rm -f checks.json
           elif [ ! -s checks.json ]; then
             rm -f checks.json
@@ -332,6 +333,18 @@ jobs:
           PR_NUMBER: ${{ steps.pr.outputs.number }}
         run: |
           gh pr close "$PR_NUMBER" --repo "$REPO" --delete-branch --comment "Closing failed signing proof: commit verification did not return verified: true."
+
+      - name: Clean up orphaned proof branch
+        # Covers the case a PR-close --delete-branch can't: the branch was created
+        # (steps.proof ran) but the contents write or `gh pr create` failed before a
+        # PR ever existed, so there's nothing for the step above to close.
+        if: ${{ always() && steps.proof.outputs.branch != '' && steps.pr.outputs.number == '' }}
+        env:
+          GH_TOKEN: ${{ steps.app.outputs.token || secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+          BRANCH: ${{ steps.proof.outputs.branch }}
+        run: |
+          gh api "repos/$REPO/git/refs/heads/$BRANCH" --method DELETE || true
 
       - name: Fail if proof commit is not verified
         if: ${{ steps.verify.outputs.verified != 'true' }}

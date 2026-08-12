@@ -6,14 +6,8 @@ on:
       - "swarm.json"
 
 jobs:
-  # logan/obsidian is Logan's live-edit branch, synced directly from the
-  # Obsidian desktop app -- nothing in that path regenerates the index before
-  # pushing, so the fail-closed check below recurs chronically (tracked in
-  # issue #822 / AUDIT-CI-FAILURE-SWEEP-2026-07-08). Self-heal there instead
-  # of just reporting the drift every push.
   check-bootstrap:
     name: Verify agent discovery index is current
-    if: github.ref != 'refs/heads/logan/obsidian'
     runs-on: ubuntu-latest
 
     permissions:
