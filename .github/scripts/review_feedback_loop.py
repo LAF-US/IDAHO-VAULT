@@ -205,6 +205,15 @@ LABEL_SPECS: dict[str, tuple[str, str]] = {
     ),
 }
 
+# Labels created ad hoc and later superseded by canon: `ensure_labels` deletes
+# these on sight, so a retired name cannot be reached for again. Deleting a repo
+# label also strips it from any PR still wearing it — that is the point.
+# `auto-merge` was the engage gate's undeclared second name for the one arming
+# signal (the drift #763 kills); DEFAULT_AUTO_MERGE_LABEL is the canon. This
+# runs from the default branch's checkout, so the deletion cannot fire before
+# the gate that stops reading the retired name has itself landed on main.
+RETIRED_LABELS: tuple[str, ...] = ("auto-merge",)
+
 
 def _auto_merge_state(owner: str, repo: str, pr_number: int) -> tuple[bool, bool]:
     """Return ``(auto_merge_enabled, in_merge_queue)`` for the PR."""
@@ -743,9 +752,13 @@ def _ensure_label(name: str, color: str, description: str) -> None:
 
 
 def ensure_labels() -> None:
-    """Create or update the labels used by the review lifecycle."""
+    """Create or update the lifecycle labels; delete retired ones on sight."""
     for label, (color, description) in LABEL_SPECS.items():
         _ensure_label(label, color, description)
+    for label in RETIRED_LABELS:
+        # check=False: an already-absent retired label exits non-zero, and
+        # absence is exactly the state this enforces — idempotent by design.
+        gh_cli.label_delete(label, check=False)
 
 
 def _num(value: int) -> str:
