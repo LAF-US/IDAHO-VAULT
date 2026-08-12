@@ -504,12 +504,18 @@ def _build_attestation(
     # thread, and the backfill path witnesses only a resolve this looker itself
     # performed (it refuses another identity's).
     #
-    # The login is deliberately NOT printed: naming a human on a reply the
-    # automation posted reads as that person's judgement, which was never
-    # exercised. Do not add it back. The identity stays in the `looked:` marker
-    # above -- machine-read by _thread_has_attested_look, validated by the `by=`
-    # grammar, and unchanged so already-posted attestations still round-trip.
-    return f"Resolved by looker — **{decision}**. {rationale}\n\n{marker}"
+    # The visible line carries the resolution and the stamp, nothing else.
+    # Neither the login nor the decision is printed. Do not add either back.
+    #
+    #   login: naming a human on a reply the automation posted reads as that
+    #   person's judgement, which was never exercised.
+    #   decision: announcing "**advisory**" has the automation insisting on a
+    #   disposition it did not weigh. The stamp already says what happened.
+    #
+    # Both stay in the `looked:` marker above -- machine-read by
+    # _thread_has_attested_look, `by=` validated by the grammar guard, and
+    # unchanged so already-posted attestations still round-trip.
+    return f"Resolved by looker — {rationale}\n\n{marker}"
 
 
 # Layer B2 (#399): the guarded disposition core. `attest_and_resolve` is the ONLY
