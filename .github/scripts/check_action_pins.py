@@ -39,7 +39,10 @@ WORKFLOW_GLOBS = (".github/workflows/*.yml", ".github/workflows/*.yaml")
 # the action's root (never a different filename), matched explicitly rather
 # than "any *.yml" to avoid both false coverage of unrelated files and any
 # ambiguity about whether the standard filenames are actually scanned.
-ACTION_GLOBS = (".github/actions/*/action.yml", ".github/actions/*/action.yaml")
+# Recursive: a nested action (.github/actions/vendor/pr-agent/action.yml) is
+# just as capable of naming a mutable image as a top-level one, and a one-level
+# glob left it unscanned.
+ACTION_GLOBS = (".github/actions/**/action.yml", ".github/actions/**/action.yaml")
 
 USES_PATTERN = re.compile(r"^\s*(?:-\s*)?uses:\s*(\S+)\s*(?:#.*)?$")
 FULL_SHA_PATTERN = re.compile(r"^[0-9a-f]{40}$")
@@ -67,7 +70,8 @@ def scan_targets() -> list[Path]:
 
 def unpinned_refs(path: Path) -> list[tuple[int, str]]:
     findings = []
-    for lineno, line in enumerate(path.read_text(encoding="utf-8").splitlines(), start=1):
+    lines = path.read_text(encoding="utf-8").splitlines()
+    for lineno, line in enumerate(lines, start=1):
         match = USES_PATTERN.match(line)
         if not match:
             continue
@@ -87,7 +91,7 @@ def unpinned_refs(path: Path) -> list[tuple[int, str]]:
         if not FULL_SHA_PATTERN.match(sha):
             findings.append((lineno, ref))
 
-    for lineno, line in enumerate(path.read_text(encoding="utf-8").splitlines(), start=1):
+    for lineno, line in enumerate(lines, start=1):
         match = IMAGE_PATTERN.match(line)
         if not match:
             continue
@@ -105,6 +109,46 @@ def unpinned_refs(path: Path) -> list[tuple[int, str]]:
     return findings
 
 
+def _resolve_in_repo(base: Path, rel: str) -> Path | None:
+    """Resolve `rel` against `base`, refusing anything outside the repository.
+
+    These paths come out of YAML that lives in the repo, so this is not a trust
+    boundary in the usual sense. It is still wrong for a guard to be pointable
+    at an arbitrary file by an `image:` line — `image: ../../../../etc/passwd`
+    satisfies the Dockerfile heuristic — so containment is checked rather than
+    assumed.
+    """
+    try:
+        candidate = (base / rel).resolve()
+        candidate.relative_to(REPO_ROOT)
+    except (ValueError, OSError):
+        return None
+    return candidate
+
+
+def local_action_files(path: Path) -> list[Path]:
+    """Action metadata reachable through `uses: ./…` from this file.
+
+    `./` refs are skipped as pin targets — a path in this repo has no SHA to
+    pin — but the action they point at can still name a mutable image, and it
+    may sit outside ACTION_GLOBS entirely. Follow them instead of trusting them.
+    Note `uses: ./x` is resolved from the REPOSITORY ROOT, not the caller.
+    """
+    found: list[Path] = []
+    for line in path.read_text(encoding="utf-8").splitlines():
+        match = USES_PATTERN.match(line)
+        if not match or not match.group(1).startswith("./"):
+            continue
+        target = _resolve_in_repo(REPO_ROOT, match.group(1))
+        if target is None:
+            continue
+        for name in ("action.yml", "action.yaml"):
+            candidate = target / name
+            if candidate.is_file():
+                found.append(candidate)
+    return found
+
+
 def _looks_like_dockerfile(image: str) -> bool:
     """A build context path rather than a registry reference."""
     if image.startswith("docker://"):
@@ -120,7 +164,9 @@ def _unpinned_from_lines(
     Exceptions, both legitimate: `scratch` (the empty base, which has no
     digest) and a reference to an earlier build stage declared with `AS`.
     """
-    dockerfile = (action_path.parent / image).resolve()
+    dockerfile = _resolve_in_repo(action_path.parent, image)
+    if dockerfile is None:
+        return [(image_lineno, f"{image} (path escapes the repository)")]
     try:
         text = dockerfile.read_text(encoding="utf-8")
     except OSError:
@@ -154,10 +200,21 @@ def main() -> int:
         return 2
 
     findings: list[str] = []
-    for path in targets:
+    # Worklist rather than a flat pass: a scanned file can point at a local
+    # action that ACTION_GLOBS does not reach, and that action can point at
+    # another. `seen` keeps a cycle (a -> b -> a) from spinning.
+    queue = list(targets)
+    seen: set[Path] = set()
+    while queue:
+        path = queue.pop()
+        if path in seen:
+            continue
+        seen.add(path)
+        queue.extend(local_action_files(path))
         for lineno, ref in unpinned_refs(path):
             rel = path.relative_to(REPO_ROOT).as_posix()
             findings.append(f"{rel}:{lineno}: {ref}")
+    findings.sort()
 
     if findings:
         print(
