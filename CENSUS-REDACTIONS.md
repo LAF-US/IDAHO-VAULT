@@ -7,7 +7,7 @@ note itself stays clean). Except the tool-result path, each was the **vault's ow
 configuration**, quoted verbatim by a cold reader — not sandbox infra.
 
 | file | class removed | replaced with | source |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | machinery/Dipswitch.md | a private RFC-1918 (10/8 block) IP + its UNC share host | `[internal-ip redacted]` | vault `.gitconfig` safe-directory entry |
 | machinery/Sieve.md | a loopback Obsidian-REST endpoint + port | `localhost:<redacted-port>` | vault `obsidian_rest_api_client.py` (loopback; non-sensitive) |
 | lore/D03-Augur.md | a sandbox tool-result file path | `[tool-result file, path redacted]` | this run's sandbox (genuine infra residue) |

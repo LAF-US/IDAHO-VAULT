@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Tuesday update @IDHW added 1,607 new cases..."
 date: 2020-12-02
 time: 01:35:41
 tweet_id: "1333947916486987776"

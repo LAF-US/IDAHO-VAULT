@@ -17,7 +17,8 @@ related:
 authority: LOGAN
 ---
 > ## Documentation Index
-> Fetch the complete documentation index at: https://code.claude.com/docs/llms.txt
+>
+> Fetch the complete documentation index at: <https://code.claude.com/docs/llms.txt>
 > Use this file to discover all available pages before exploring further.
 
 # Claude Code on Google Vertex AI

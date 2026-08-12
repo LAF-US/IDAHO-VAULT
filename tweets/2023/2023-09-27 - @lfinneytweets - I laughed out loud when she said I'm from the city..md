@@ -1,4 +1,5 @@
 ---
+title: "I laughed out loud when she said I'm from the city."
 date: 2023-09-27
 time: 03:42:26
 tweet_id: "1706876928668684510"

@@ -1,4 +1,5 @@
 ---
+title: "Rubel is opposing the bill. She cites the pending work..."
 date: 2020-03-16
 time: 19:32:01
 tweet_id: "1239635552384630784"

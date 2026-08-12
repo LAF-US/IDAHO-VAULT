@@ -1,4 +1,5 @@
 ---
+title: "RT @hankgreen If you see a bunch of people hating me on the..."
 date: 2022-01-11
 time: 03:55:49
 tweet_id: "1480750268408950785"

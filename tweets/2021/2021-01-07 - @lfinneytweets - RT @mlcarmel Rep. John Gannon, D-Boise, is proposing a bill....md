@@ -1,4 +1,5 @@
 ---
+title: "RT @mlcarmel Rep. John Gannon, D-Boise, is proposing a bill..."
 date: 2021-01-07
 time: 17:48:14
 tweet_id: "1347238629907722243"

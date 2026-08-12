@@ -1,4 +1,5 @@
 ---
+title: "RT @Ximena_Bustillo Drive-up testing and screening are now..."
 date: 2020-03-17
 time: 21:31:56
 tweet_id: "1240028117227278336"

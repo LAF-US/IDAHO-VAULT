@@ -1,4 +1,5 @@
 ---
+title: "The Idaho State Board of Education today approved a..."
 date: 2024-12-18
 time: 18:49:42
 tweet_id: "1869455010779795928"

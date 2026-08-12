@@ -1,4 +1,5 @@
 ---
+title: "Recently introduced #idleg Senate bills of note -..."
 date: 2021-01-26
 time: 00:50:21
 tweet_id: "1353867840340672512"

@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2022-11-25
 time: 16:41:03
 tweet_id: "1596182187610894337"
@@ -15,9 +16,9 @@ related:
   - lfinneytweets
 ---
 
-@HollyCookID https://t.co/PBJNGum84B
+@HollyCookID <https://t.co/PBJNGum84B>
 
 ## Media
-- ![](https://pbs.twimg.com/media/FibHPWhacAAoaUm.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/FibHPWhacAAoaUm.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1596182187610894337)

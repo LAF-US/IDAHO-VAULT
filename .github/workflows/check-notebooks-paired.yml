@@ -2,9 +2,9 @@ name: check-notebooks-paired
 
 # The "middle" guardrail: every explicitly-paired Jupyter notebook must stay in sync with its
 # Markdown twin. Mirrors the repo's other check-* workflows. Installs jupytext at the exact
-# version pinned in requirements.txt (parsed at run time, not duplicated as a literal here) so
-# CI can never install a version that doesn't match what's actually committed. Actions are
-# pinned to full SHAs per repo policy.
+# version uv.lock pins (the single source of truth), so the runner matches the version that
+# wrote the committed twins and can't rewrite their stamp. Actions are pinned to full SHAs
+# per repo policy.
 
 on:
   pull_request:
@@ -16,15 +16,18 @@ on:
       # enforcement script or this workflow can't land without running the check they implement.
       - ".github/scripts/jupytext_sync_paired.py"
       - ".github/workflows/check-notebooks-paired.yml"
-      # The jupytext version is parsed from this file at run time (see the install step below).
-      # Without it here, a PR that only bumps the jupytext== pin would skip this workflow
-      # entirely, and the mismatched pin could reach main undetected until the next unrelated
-      # PR touching a *.md/*.ipynb file surfaced it.
-      - "requirements.txt"
   workflow_dispatch:
 
 permissions:
   contents: read
+
+# Supersede, don't stack. This workflow runs on pull_request and workflow_dispatch
+# only — no push, no merge_group — so the group key is just the ref, and a newer run
+# for the same PR replaces an older one. A PR run scans the notebook set as it stands,
+# not a delta, so nothing is lost by superseding.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event_name }}-${{ github.head_ref || github.ref }}
+  cancel-in-progress: ${{ github.event_name != 'merge_group' }}
 
 jobs:
   paired:
@@ -32,24 +35,30 @@ jobs:
     permissions:
       contents: read
     steps:
-      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
-      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         with:
           python-version: "3.11"
       - name: Install jupytext
-        # Version sourced from requirements.txt itself (not a separate hardcoded pin, not a
-        # floating range): a hardcoded literal here can silently drift from whatever's actually
-        # pinned there, and a floating install picks up whatever PyPI ships at run time — both
-        # stamp synced twins' frontmatter with a version that doesn't match what's committed,
-        # failing this check on any PR touching a *.md/*.ipynb file with no real content drift
-        # involved. See !/AUDIT-CI-FAILURE-SWEEP-2026-07-23.md.
         run: |
-          version="$(sed -n 's/^jupytext==\([^[:space:]#]*\).*/\1/p' requirements.txt)"
-          if [ -z "$version" ]; then
-            echo "::error::No 'jupytext==X.Y.Z' pin found in requirements.txt — cannot install a matching jupytext for this check."
-            exit 1
-          fi
-          python -m pip install --quiet "jupytext==${version}"
+          # No version pin, on purpose. The pin existed because the twins recorded the
+          # jupytext version that wrote them, so a different version on the runner
+          # rewrote that line and the drift check below called it content drift. The
+          # twins no longer record it — `notebook_metadata_filter` in jupytext.toml and
+          # in each paired notebook drops the stamp — so any version writes the same
+          # bytes. Measured across 1.18.1 and 1.19.5: byte-identical with the filter,
+          # and the stamp rewritten without it.
+          #
+          # The pin also read that version out of uv.lock with `next(...)` and no
+          # default. When uv.lock stopped carrying jupytext, that raised a bare
+          # StopIteration and took every PR touching **/*.md or **/*.ipynb red. A check
+          # about notebook pairing should not fail on the contents of a lockfile.
+          #
+          # Real drift is still caught: `format_version` — the field jupytext actually
+          # gates compatibility on — is not filtered, so a genuine format change fails
+          # the job as it should.
+          python -m pip install --quiet jupytext
+          python -c "import jupytext; print('jupytext', jupytext.__version__)"
       - name: Sync every paired notebook and fail on drift
         run: |
           # Sync ONLY notebooks that declare a pairing (explicit opt-in). A sync error on a

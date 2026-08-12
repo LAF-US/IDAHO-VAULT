@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio PHOTO In the Idaho Senate on Thursday,..."
 date: 2024-01-12
 time: 01:39:15
 tweet_id: "1745621430501580885"

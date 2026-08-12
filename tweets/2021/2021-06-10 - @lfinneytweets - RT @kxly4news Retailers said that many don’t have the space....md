@@ -1,4 +1,5 @@
 ---
+title: "RT @kxly4news Retailers said that many don\u2019t have the space..."
 date: 2021-06-10
 time: 19:50:32
 tweet_id: "1403077137947512833"

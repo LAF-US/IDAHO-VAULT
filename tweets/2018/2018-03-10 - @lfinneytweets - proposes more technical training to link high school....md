@@ -1,4 +1,5 @@
 ---
+title: "proposes more technical training to link high school..."
 date: 2018-03-10
 time: 23:02:23
 tweet_id: "972608634608693248"

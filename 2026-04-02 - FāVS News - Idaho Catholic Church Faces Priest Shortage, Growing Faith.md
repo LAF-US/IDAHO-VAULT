@@ -35,8 +35,6 @@ Our Sponsors
 
 Owen Keith, 16, carries the processional cross leaving Coeur d’ Alene St. Thomas the Apostle Catholic Church in the first ever youth-led Catholic Eucharistic Procession in North Idaho last May. Over 300 area Catholics, including 60 youth, joined him in this historic faith walk (Sentimental Impression Photography-Jeremy Williams) Contributed.
 
-  
-
 **By Lisa Ormond | FāVS News Reporter**
 
 In the State of Idaho, Catholic priests are a precious commodity especially when the number of converts is steadily rising but the supply of priests in the pipeline ready to meet this growing demand is lagging.
@@ -133,7 +131,7 @@ Cintra’s travels these past months to local parish communities opened doors an
 
 One of Cintra’s strategic pillars for priest cultivation is to establish the [Sons of St. Joseph](https://idahovocations.com/joseph/?fbclid=IwY2xjawQwaOFleHRuA2FlbQIxMABicmlkETFSRXUzczBSQzltV21BVUJsc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHogj7nRJ7ADePtbRnNl1ij-AW65H-EXlZgZrvmW0gTQAlJeojMA7AWh5cC4S_aem_XCaQNL9wsm7azH217rxCCg), a year-round, priest-focused program with two cohorts: one for “younger brothers” (ages 13-18) and a second for “older brothers” (19+).
 
-![](https://www.youtube.com/watch?v=R_Y7cxj8AaQ)
+![alt text needed](https://www.youtube.com/watch?v=R_Y7cxj8AaQ)
 
 “There currently is no track or dedicated effort available to these men into seminary,” Cintra said.
 

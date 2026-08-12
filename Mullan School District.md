@@ -5,4 +5,4 @@ related:
 - Shoshone County
 authority: LOGAN
 ---
-Mullan, Shoshone County 
+Mullan, Shoshone County

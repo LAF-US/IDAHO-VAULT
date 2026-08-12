@@ -1,4 +1,5 @@
 ---
+title: "Like most internet terms, doxxing lost a lot of nuance and..."
 date: 2022-12-18
 time: 22:11:01
 tweet_id: "1604600147169927168"

@@ -1,4 +1,5 @@
 ---
+title: "RT @GovernorLittle Thank you to @ISPHeadquarters, @BoisePD,..."
 date: 2020-08-25
 time: 01:10:00
 tweet_id: "1298065052893769728"

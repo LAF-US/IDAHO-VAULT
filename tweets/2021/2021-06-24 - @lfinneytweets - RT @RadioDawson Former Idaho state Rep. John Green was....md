@@ -1,4 +1,5 @@
 ---
+title: "RT @RadioDawson Former Idaho state Rep. John Green was..."
 date: 2021-06-24
 time: 18:51:16
 tweet_id: "1408135652760195072"
