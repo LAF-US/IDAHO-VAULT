@@ -76,6 +76,9 @@ jobs:
       - name: Run PR-Agent
         if: env.OPENROUTER_API_KEY != ''
         # Docker action: action.yaml (not .yml) builds Dockerfile.github_action_dockerhub.
+        # The pin is maintained by Dependabot (github-actions ecosystem, daily,
+        # .github/dependabot.yml) — it reads the trailing `# v0.41.1` marker to
+        # track the version, so keep that comment in step with the SHA.
         uses: the-pr-agent/pr-agent@743f52d80f3513193dfc7626f778c73478df6d0a # v0.41.1
         env:
           # `OPENAI_KEY` — single underscore. github_action_runner.py:87 reads
