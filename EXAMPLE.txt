@@ -1,0 +1,7 @@
+EXAMPLE
+
+for VAULT with `.foo` and '.bar'
+
+check file existence `.foo/FOO.md` `FOO.md` `.bar/BAR.md` `BAR.md`
+
+check file existence *and contents* `.foo/stub.txt` `.bar/stub.txt`

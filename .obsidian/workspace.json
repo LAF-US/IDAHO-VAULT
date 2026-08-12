@@ -21,8 +21,21 @@
               "icon": "lucide-file",
               "title": "2026-08-03"
             }
+          },
+          {
+            "id": "c77619fd5fc00f6b",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.13.6"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.13.6"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -250,13 +263,10 @@
       "obsidian42-brat:BRAT": true,
       "desk:Create new desk": true,
       "obsidian-5e-statblocks:Open Creature pane": true,
-      "handwritten-notes:Create empty handwritten note": true,
-      "map-of-content:Update Map of Content": false,
-      "periodic-notes:Open today": false,
-      "calendarium:Open Calendarium": false
+      "handwritten-notes:Create empty handwritten note": true
     }
   },
-  "active": "040a6ca42d7b6230",
+  "active": "c77619fd5fc00f6b",
   "lastOpenFiles": [
     "2026-08-11.md",
     "__pycache__/importlib.cpython-312.pyc",
