@@ -8,6 +8,7 @@ import hashlib
 import math
 import os
 import shutil
+import sys
 import tempfile
 import time
 from contextlib import contextmanager
@@ -77,9 +78,11 @@ def resolve_destination(source: Path, target_dir: Path) -> tuple[Path | None, st
 
 
 def is_ignored(path: Path) -> bool:
-    name = path.name
+    # Windows filenames are case-insensitive; casefold so DESKTOP.INI,
+    # foo.CRDOWNLOAD, etc. are still caught.
+    name = path.name.casefold()
     return (
-        name in {"desktop.ini", "Thumbs.db"}
+        name in {"desktop.ini", "thumbs.db"}
         or name.startswith("~$")
         or name.endswith(".tmp")
         or name.endswith(".crdownload")
@@ -109,10 +112,16 @@ def is_unlocked(path: Path, attempts: int = 20, delay_seconds: float = 0.3) -> b
 
 
 def write_log(log_path: Path, message: str) -> None:
-    log_path.parent.mkdir(parents=True, exist_ok=True)
+    """Best-effort log write. The vault (an external drive, per this script's
+    own contract) can go away mid-run; a log write failing must not be able
+    to escape and kill the long-running watcher -- fall back to stderr."""
     line = f"{datetime.now().isoformat(timespec='seconds')}  {message}"
-    with log_path.open("a", encoding="utf-8") as handle:
-        handle.write(line + "\n")
+    try:
+        log_path.parent.mkdir(parents=True, exist_ok=True)
+        with log_path.open("a", encoding="utf-8") as handle:
+            handle.write(line + "\n")
+    except OSError as exc:
+        print(f"[phone-link-sweep] log write failed ({exc}): {line}", file=sys.stderr)
 
 
 def move_one(source: Path, target_dir: Path, log_path: Path) -> bool:
