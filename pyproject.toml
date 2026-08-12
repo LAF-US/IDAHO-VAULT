@@ -28,6 +28,9 @@ dependencies = [
 ]
 # Just like a .gitignore file, don't fiddle with this willy-nilly.
 
+[project.urls]
+Repository = "https://github.com/LAF-US/IDAHO-VAULT"
+
 [dependency-groups]
 # Every entry names the workflow that spawns it. Nothing lives here that CI does not
 # actually invoke through uv — those are the only two workflows that use uv at all.

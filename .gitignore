@@ -159,3 +159,19 @@ desktop.ini
 !*.md
 
 # ESTO PERPETUA!
+
+# === ROOT node_modules IS A BUILD ARTIFACT =================================
+# Last rule in the file, and it must stay last: git takes the LAST matching
+# pattern, so this has to come after the markdown re-include above to beat it.
+#
+# The markdown rule is right for THE-GEMSTONE/node_modules, which is vendored
+# CONTENT this vault tracks on purpose (49 .md files). It is wrong for a root
+# node_modules, which npm regenerates from package-lock.json and which nobody
+# should ever commit.
+#
+# Measured with `git add --dry-run node_modules/`: 2 files leak with main's
+# dependencies today (prettier only), 466 with the eight devDependencies #950
+# adds. Both are vendored README files nobody wants in the vault.
+#
+# Leading slash = root only. THE-GEMSTONE/node_modules is untouched.
+/node_modules/**
