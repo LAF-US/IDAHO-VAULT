@@ -181,15 +181,18 @@ def _unpinned_from_lines(
         if not match:
             continue
         base, stage = match.group(1), match.group(2)
+        # Classify the base BEFORE registering this line's own alias. Adding it
+        # first lets a stage exempt itself: `FROM alpine AS alpine` would match
+        # `base in stages` and skip the digest check on a mutable image. Only
+        # aliases from EARLIER FROM lines are real stage references.
+        if base.lower() != "scratch" and base.lower() not in stages:
+            if not IMAGE_DIGEST_PATTERN.search(base):
+                rel = dockerfile.relative_to(REPO_ROOT).as_posix()
+                findings.append(
+                    (image_lineno, f"{image} -> {rel}:{lineno} FROM {base} (needs @sha256:<64 hex>)")
+                )
         if stage:
             stages.add(stage.lower())
-        if base.lower() == "scratch" or base.lower() in stages:
-            continue
-        if not IMAGE_DIGEST_PATTERN.search(base):
-            rel = dockerfile.relative_to(REPO_ROOT).as_posix()
-            findings.append(
-                (image_lineno, f"{image} -> {rel}:{lineno} FROM {base} (needs @sha256:<64 hex>)")
-            )
     return findings
 
 
