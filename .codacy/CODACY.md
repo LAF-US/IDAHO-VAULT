@@ -1,8 +1,14 @@
 ---
 title: CODACY
-updated: 2026-08-11
+updated: 2026-08-12
 status: active
 authority: LOGAN
+authors:
+  - Claude Code CLI
+source: "Created at Logan's instruction on PR #885 (\"add the stub.txt and
+  title: CODACY personadir anchors\"), written by session
+  013ie6MP332hZgSgAiSkyPZ7. Authorship is recorded here; `authority` records
+  who has final say, per VAULT-METADATA-STANDARD.md line 130."
 related:
   - .github/workflows/codacy.yml
   - The world is quiet here
