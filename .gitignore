@@ -1,12 +1,8 @@
-# THE VAULT tracks everything by default. Two narrow exceptions are gitignored:
+# THE VAULT tracks *everything* by default. One narrow exception is gitignored:
 #
-#   SECRETS — credential material. NON-.md ONLY: Markdown is force-tracked at
-#             the bottom, so a secret pasted into prose is the scanner's job.
+#   SECRETS — credential material. NON-MARKDOWN ONLY: Markdown is force-tracked
+#             at the bottom, so a secret pasted into prose is the scanner's job.
 #
-#   CHURNS — machine-generated material. Never holds human authorship AND
-#             regenerates automatically: OS, build, runtime state, et cetera.
-#
-
 # ---------------------------------------------------------------
 # OS Duff
 # ---------------------------------------------------------------
@@ -39,12 +35,6 @@ $RECYCLE.BIN/
 *.icloud
 Network Trash Folder
 Temporary Items
-
-# ---------------------------------------------------------------
-# Large Stores
-# ---------------------------------------------------------------
-.obsidian/plugins/mcp-tools/bin/mcp-server.exe
-.ollama/models/blobs/**
 
 # ---------------------------------------------------------------
 # Plaintext Secrets
