@@ -109,6 +109,52 @@ def unpinned_refs(path: Path) -> list[tuple[int, str]]:
     return findings
 
 
+def _logical_lines(text: str) -> list[tuple[int, str]]:
+    """Dockerfile instructions with continuations joined.
+
+    `FROM alpine:latest \\` + `AS build` is one instruction to Docker and two
+    physical lines to a regex, so matching physical lines skipped the base
+    entirely — fail-open on a mutable image. Honours the `# escape=` parser
+    directive, which may only appear before any instruction and only sets `\\`
+    or a backtick.
+    """
+    lines = text.splitlines()
+    escape = "\\"
+    for line in lines:
+        stripped = line.strip()
+        if not stripped:
+            continue
+        if not stripped.startswith("#"):
+            break
+        directive = re.match(r"#\s*escape\s*=\s*(\S)\s*$", stripped, re.IGNORECASE)
+        if directive and directive.group(1) in ("\\", "`"):
+            escape = directive.group(1)
+            break
+
+    out: list[tuple[int, str]] = []
+    buffer = ""
+    start = 0
+    for lineno, line in enumerate(lines, start=1):
+        # A comment carries no instruction, and must not be treated as
+        # continued — the `# escape=\`` directive line ends with the escape
+        # character itself, which would otherwise swallow the FROM after it.
+        if not buffer and line.strip().startswith("#"):
+            continue
+        if not buffer:
+            start = lineno
+        body = line
+        continued = body.rstrip().endswith(escape)
+        if continued:
+            body = body.rstrip()[: -len(escape)]
+        buffer = f"{buffer} {body.strip()}" if buffer else body.strip()
+        if not continued:
+            out.append((start, buffer))
+            buffer = ""
+    if buffer:
+        out.append((start, buffer))
+    return out
+
+
 def _resolve_in_repo(base: Path, rel: str) -> Path | None:
     """Resolve `rel` against `base`, refusing anything outside the repository.
 
@@ -176,7 +222,7 @@ def _unpinned_from_lines(
 
     findings: list[tuple[int, str]] = []
     stages: set[str] = set()
-    for lineno, line in enumerate(text.splitlines(), start=1):
+    for lineno, line in _logical_lines(text):
         match = FROM_PATTERN.match(line)
         if not match:
             continue
