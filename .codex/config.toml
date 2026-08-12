@@ -1,0 +1,92 @@
+notify = [ "C:\\Users\\loganf\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\23828fd353da361d\\bin\\node_modules\\@oai\\sky\\bin\\windows\\codex-computer-use.exe", "turn-ended" ]
+sandbox_mode = "workspace-write"
+web_search = "indexed"
+
+[desktop]
+followUpQueueMode = "queue"
+external-agent-import-sync-enabled = true
+usePointerCursors = true
+enabled-reasoning-efforts = ["low", "medium", "high", "xhigh", "ultra", "max"]
+open-link-in-target-preference = "in-app-browser"
+browser-download-directory = 'C:\Users\loganf\Documents\IDAHO-VAULT'
+keepRemoteControlAwakeWhilePluggedIn = true
+git-worktree-root = 'C:\Users\loganf\Documents\IDAHO-VAULT\.codex'
+
+[features]
+js_repl = false
+
+[mcp_servers.node_repl]
+args = []
+command = "C:\\Users\\loganf\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\23828fd353da361d\\bin\\node_repl.exe"
+startup_timeout_sec = 120
+
+[mcp_servers.node_repl.env]
+NODE_REPL_NATIVE_PIPE_CONNECT_TIMEOUT_MS = "1000"
+NODE_REPL_NODE_MODULE_DIRS = "C:\\Users\\loganf\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\23828fd353da361d\\bin\\node_modules"
+NODE_REPL_NODE_PATH = "C:\\Users\\loganf\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\23828fd353da361d\\bin\\node.exe"
+NODE_REPL_TRUSTED_CODE_PATHS = "C:\\Users\\loganf\\.codex;C:\\Users\\loganf\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\23828fd353da361d\\bin\\node_modules"
+CODEX_HOME = "C:\\Users\\loganf\\.codex"
+NODE_REPL_TRUSTED_BROWSER_CLIENT_SHA256S = "8676faca28eddb6424d4b54116fe8305e2da6a0ca4e5271e8758fc3c55c3b8fc"
+BROWSER_USE_AVAILABLE_BACKENDS = "chrome,iab"
+NODE_REPL_INSTRUCTIONS_USE_CASE_BROWSER = "Control the in-app browser in conjunction with the Browser Plugin."
+NODE_REPL_INSTRUCTIONS_USE_CASE_CHROME = "Control the Chrome browser in conjunction with the Chrome Plugin. Prefer this method of controlling Chrome over alternatives (such as Computer Use) unless the user explicitly mentions an alternative."
+BROWSER_USE_CODEX_APP_BUILD_FLAVOR = "prod"
+BROWSER_USE_CODEX_APP_VERSION = "26.803.81509"
+SKY_CUA_NATIVE_PIPE = "1"
+SKY_CUA_NATIVE_PIPE_DIRECTORY = "\\\\.\\pipe\\codex-computer-use-2ee3f4ac-9b85-463d-a382-14f4b22dd2b9"
+CODEX_CLI_PATH = "C:\\Users\\loganf\\AppData\\Local\\OpenAI\\Codex\\bin\\8e8bf206e63ac436\\codex.exe"
+
+[mcp_servers.obsidian-mcp-tools]
+enabled = true
+command = "C:\\Users\\loganf\\Documents\\IDAHO-VAULT\\.obsidian\\plugins\\mcp-tools\\bin\\mcp-server.exe"
+
+[mcp_servers.obsidian-mcp-tools.env]
+OBSIDIAN_API_KEY = "9a637b0754f5b56fa73fb538f1240672f23cea37520ce7cdd221b5747746db2a"
+
+[shell_environment_policy.set]
+BROWSER_USE_AVAILABLE_BACKENDS = "chrome,iab"
+NODE_REPL_TRUSTED_BROWSER_CLIENT_SHA256S = "8676faca28eddb6424d4b54116fe8305e2da6a0ca4e5271e8758fc3c55c3b8fc"
+NODE_REPL_TRUSTED_CODE_PATHS = "C:\\Users\\loganf\\.codex;C:\\Users\\loganf\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\23828fd353da361d\\bin\\node_modules"
+
+[windows]
+sandbox = "unelevated"
+
+[marketplaces.openai-bundled]
+last_updated = "2026-08-12T17:21:34Z"
+source_type = "local"
+source = "\\\\?\\C:\\Users\\loganf\\Documents\\IDAHO-VAULT\\.codex\\.tmp\\bundled-marketplaces\\openai-bundled"
+
+[marketplaces.openai-primary-runtime]
+last_updated = "2026-08-12T20:25:23Z"
+source_type = "local"
+source = '\\?\C:\Users\loganf\Documents\IDAHO-VAULT\.cache\codex-runtimes\codex-primary-runtime\plugins\openai-primary-runtime'
+
+[plugins."chrome@openai-bundled"]
+enabled = true
+
+[plugins."browser@openai-bundled"]
+enabled = true
+
+[plugins."computer-use@openai-bundled"]
+enabled = false
+
+[plugins."visualize@openai-bundled"]
+enabled = true
+
+[plugins."documents@openai-primary-runtime"]
+enabled = true
+
+[plugins."pdf@openai-primary-runtime"]
+enabled = true
+
+[plugins."spreadsheets@openai-primary-runtime"]
+enabled = true
+
+[plugins."presentations@openai-primary-runtime"]
+enabled = true
+
+[plugins."template-creator@openai-primary-runtime"]
+enabled = true
+
+[sandbox_workspace_write]
+network_access = true
