@@ -184,7 +184,27 @@ jobs:
               return uri.lstrip("/")
 
           kept_total = dropped_total = 0
-          for run in sarif.get("runs", []):
+          repairs = []
+          for i, run in enumerate(sarif.get("runs", [])):
+              # CLI v2 emits "rules": null when it has no rule metadata, and
+              # code scanning rejects the whole document for it:
+              #   instance.runs[0].tool.driver.rules is not of a type(s) array
+              # The SARIF schema makes the property optional but typed, so an
+              # explicit null is invalid where an absent key is fine.
+              #
+              # The raw value is recorded before it is overwritten, and printed
+              # below. Without that, this repair is invisible: the validation
+              # pass further down runs AFTER this line, so it can only ever see
+              # the coerced value and could never report what was actually
+              # wrong. A silent repair of a null is how the null got shipped in
+              # the first place.
+              driver = run.setdefault("tool", {}).setdefault("driver", {})
+              raw_rules = driver.get("rules")
+              if not isinstance(raw_rules, list):
+                  repairs.append(
+                      f"runs[{i}].tool.driver.rules was {type(raw_rules).__name__}, coerced to []"
+                  )
+                  driver["rules"] = []
               kept = []
               for res in run.get("results", []):
                   excluded = False
@@ -222,6 +242,41 @@ jobs:
               name = run.get("tool", {}).get("driver", {}).get("name", "codacy")
               run.setdefault("automationDetails", {})["id"] = f"codacy-{name}/"
           sarif["runs"] = runs
+
+          for r in repairs:
+              print(f"repaired: {r}")
+
+          # Fail here rather than letting upload-sarif reject the document.
+          # The first run of this workflow died at the uploader on
+          # `"rules": null`; the local check that was supposed to catch it
+          # printed len(rules or []) and reported "0", so the instrumentation
+          # hid the very defect it was watching for.
+          #
+          # These assert the POST-normalisation state -- they are a tripwire
+          # for the normalisation above being reordered or removed, not a
+          # detector of what the analyser emitted. The rules check in
+          # particular cannot fire while the coercion above stands; what
+          # surfaces an emitted null is the "repaired:" line, not this. Said
+          # plainly because the earlier version of this comment claimed these
+          # "read the raw values", which was false and would have made a dead
+          # assertion look like live cover.
+          problems = []
+          for i, run in enumerate(runs):
+              rules = run.get("tool", {}).get("driver", {}).get("rules")
+              if not isinstance(rules, list):
+                  problems.append(f"runs[{i}].tool.driver.rules is {type(rules).__name__}, not list")
+              if not run.get("tool", {}).get("driver", {}).get("name"):
+                  problems.append(f"runs[{i}].tool.driver.name is missing")
+              for j, res in enumerate(run.get("results", [])):
+                  for loc in res.get("locations", []):
+                      uri = loc.get("physicalLocation", {}).get("artifactLocation", {}).get("uri", "")
+                      if uri.startswith(("/", "file:")):
+                          problems.append(f"runs[{i}].results[{j}] still absolute: {uri}")
+          if problems:
+              print("SARIF failed pre-upload validation:", file=sys.stderr)
+              for p in problems[:20]:
+                  print(f"  {p}", file=sys.stderr)
+              raise SystemExit(1)
 
           with open("results-normalised.sarif", "w") as fh:
               json.dump(sarif, fh)
