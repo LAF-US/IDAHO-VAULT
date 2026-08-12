@@ -1,0 +1,27 @@
+# rclone filter rules for PULLMAN vault sync → GCS
+# Included: canonical vault artifacts and processed outputs
+# Excluded: local tooling, secrets, private worktrees, binary blobs
+
+# INCLUDE — canonical vault layers
++ /!/**
++ /.github/workflows/**
++ /.github/scripts/**
++ /swarm.json
++ /AGENTS.md
++ /README.md
+
+# EXCLUDE — private, local, and binary paths
+- /_private/**
+- /.gemini/**
+- /.obsidian/**
+- /.venv/**
+- /.crewai/**
+- /node_modules/**
+- /.git/**
+- /**/*.pyc
+- /**/__pycache__/**
+- /**/*.DS_Store
+- /Thumbs.db
+
+# Exclude everything else not explicitly included
+- /**

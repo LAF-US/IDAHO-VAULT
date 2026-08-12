@@ -1,0 +1,52 @@
+name: Issue Triage
+
+on:
+  issues:
+    types: [opened, reopened, closed]
+  issue_comment:
+    types: [created]
+
+permissions: {}
+
+concurrency:
+  group: triage-${{ github.event.issue.number }}
+  cancel-in-progress: false
+
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      contents: read
+      issues: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - uses: withastro/triagebot-action@0e37f3db18d8f5b3e8b310c52cdcc9cf2b5d22b1 # v0.4.0
+        with:
+          # MERGE_QUEUE_TOKEN is the Vault's established write credential for
+          # agent-driven GitHub operations. ANTHROPIC_API_KEY must be configured
+          # separately; no existing LLM secret is known to be Anthropic-compatible.
+          read-token: ${{ secrets.GITHUB_TOKEN }}
+          write-token: ${{ secrets.MERGE_QUEUE_TOKEN }}
+          anthropic-api-key: ${{ secrets.ANTHROPIC_API_KEY }}
+          triage-skill: .triagebot/skills/triage
+          pr-skill: .triagebot/skills/pr-writer
+          auto-pr-on-fix: false
+          bot-logins: ""
+          
+          # Label customization - using defaults for now
+          label-needs-triage: 'triage: needs triage'
+          label-not-actionable: 'triage: not actionable'
+          label-needs-reproduction: 'triage: needs reproduction'
+          label-skipped: 'triage: skipped'
+          label-unable-to-reproduce: 'triage: unable to reproduce'
+          label-unable-to-fix: 'triage: unable to fix'
+          label-failed: 'triage: failed'
+          label-fix-pending: 'triage: fix pending'
+          label-fix-rejected: 'triage: fix rejected'
+          label-fix-verified: 'triage: fix verified'
+          pr-label-fix-verified: 'fix verified'
