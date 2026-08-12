@@ -2,6 +2,9 @@
 name = "idaho-vault"
 version = "0.1.0"
 
+[project.urls]
+Repository = "https://github.com/LAF-US/IDAHO-VAULT"
+
 [build-system]
 requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
