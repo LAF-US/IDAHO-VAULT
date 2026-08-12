@@ -14,8 +14,11 @@ if ! command -v gitleaks >/dev/null 2>&1; then
 fi
 
 # Scan only what is staged. gitleaks exits non-zero when it finds secrets.
-if ! gitleaks git --staged --redact --no-banner; then
+# --verbose names the offending File / Line / RuleID for each hit; --redact keeps the
+# secret values out of the output; --no-color keeps it clean in GUIs and logs.
+if ! gitleaks git --staged --redact --verbose --no-color --no-banner; then
   printf >&2 '%s\n' 'pre-commit: secrets detected in staged changes — commit blocked.'
-  printf >&2 '%s\n' '            remove them, or annotate a false positive with a gitleaks:allow comment.'
+  printf >&2 '%s\n' '            the offending File / Line / RuleID are listed above (secret values redacted).'
+  printf >&2 '%s\n' '            remove them, or annotate a confirmed false positive with a gitleaks:allow comment.'
   exit 1
 fi

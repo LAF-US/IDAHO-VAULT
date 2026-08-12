@@ -1,0 +1,200 @@
+fast-import crash report:
+    fast-import process: 33080
+    parent process     : 1
+    at 2026-05-05 04:05:19 +0000
+
+fatal: invalid path 'GitHub Docs - Why are my commits linked to the wrong user?.md'
+
+Most Recent Commands Before Crash
+---------------------------------
+  mark :59
+  author github-actions[bot] <github-actions[bot]@users.noreply.github.com> 1777217804 -0600
+  committer github-actions[bot] <github-actions[bot]@users.noreply.github.com> 1777217804 -0600
+  data 209
+  from :58
+  M 100644 d1231783e4950d76bdb25f5123537c35f861a576 DAILY NOTE TEMPLATE.md
+  
+  get-mark :59
+  commit refs/heads/main
+  mark :60
+  author Logan A. Finney <136375980+loganfinney27@users.noreply.github.com> 1777228666 -0600
+  committer GitHub <noreply@github.com> 1777228666 -0600
+  data 239
+  from :59
+  M 100644 2c83b5050702d382758d1e786a2f1c6852c79d1f !/LEVELSET-REPORT-BIG-PICKLE-2026-04-26.md
+  M 100644 039cfd9849b6e39c4e2a6f6ea8adb648feede579 .github/scripts/pr_loop_watchdog.py
+  M 100644 a8fbb6010eb20a044323a5b91687e7d0f74e1f6a .github/workflows/agent-auto-pr.yml
+  M 100644 cc36a6e3e267c6316330b1eb943f7d92a63837ad BIG-PICKLE-TEST-LOOP.md
+  M 100755 fe0e2f1b1883ca0531f8263bf04f7dd9cc4c95ab scripts/vault-charter-scanner.sh
+  M 100755 5170e8e32ec962cfe35d26b07e487ee293908fb5 scripts/vault-dispatch.sh
+  M 100755 249f1f09ff144ab20b1c0e057ce0e683ca53d0fa scripts/vault-openclaw-bridge.sh
+  M 100755 6e82771cd778514375457c678cba58c3f63d0bc0 scripts/vault-pre-exec-hook.sh
+  
+  get-mark :60
+  commit refs/heads/main
+  mark :61
+  author github-actions[bot] <github-actions[bot]@users.noreply.github.com> 1777229035 -0600
+  committer github-actions[bot] <github-actions[bot]@users.noreply.github.com> 1777229035 -0600
+  data 67
+  from :60
+  D .github/workflows/dependabot-rhythm.yml
+  
+  get-mark :61
+  commit refs/heads/main
+  mark :62
+  author github-actions[bot] <github-actions[bot]@users.noreply.github.com> 1777229213 -0600
+  committer github-actions[bot] <github-actions[bot]@users.noreply.github.com> 1777229213 -0600
+  data 55
+  from :61
+  M 100644 864699f92dcf0deadf0c97117c9a0abc38366fe8 !/!/__!__/!/! The world is quiet here/DOCKET.md
+  M 100644 1bb42c001a600ad1561d65fe4ea1d9cd3f38d3b2 !/AGENTS.md
+  M 100644 f9962c42f875d5b51ea6d8fa49eaa4a8a3913b59 !/MAC-SETUP-STATUS-2026-04-26.md
+  M 100644 ea0a5306109a7754e6ed5a5443a4af8c5a23da76 !/OPENROUTER-CROSS-PLATFORM.md
+  M 100644 0967ef424bce6791893e9a57bb952f80fd536e93 !/sbp-blackboard.json
+  M 100644 b870010046d4def0ae1f71e3c6a0bc8fe0dc1b6c .github/deprecation-notice-template.md
+  M 100644 29a59302bfaecb42afd4484cbf6f8b4af752dc53 .github/pull_request_template.md
+  M 100644 e7debed9b4a26ae70769efc6bfaec945b392fd88 .obsidian/daily-notes.json
+  M 100644 39ddeab8a38c33fcb71aa4615c3b0b3ee3963965 2026-04-26.md
+  M 100644 416798b342986394ffbac8d229ff08ca86b04fa1 TOUCHSTONE-TREE-EXPLORER-COMPANION-2026-04-26.md
+  
+  get-mark :62
+  commit refs/heads/main
+  mark :63
+  author github-actions[bot] <github-actions[bot]@users.noreply.github.com> 1777229278 -0600
+  committer github-actions[bot] <github-actions[bot]@users.noreply.github.com> 1777229278 -0600
+  data 184
+  from :62
+  M 100644 2d7254cab2fcaf94e2b9171779c866830bedf930 .github/workflows/branch-cleanup.yml
+  D .github/workflows/stale-bot-prs.yml
+  
+  get-mark :63
+  commit refs/heads/main
+  mark :64
+  author github-actions[bot] <github-actions[bot]@users.noreply.github.com> 1777229364 -0600
+  committer github-actions[bot] <github-actions[bot]@users.noreply.github.com> 1777229364 -0600
+  data 62
+  from :63
+  M 100644 e468538e7fee1b30b7434171bfc7c97a1a30f5a5 !/!/__!__/!/! The world is quiet here/DOCKET.md
+  
+  get-mark :64
+  commit refs/heads/main
+  mark :65
+  author github-actions[bot] <github-actions[bot]@users.noreply.github.com> 1777229412 -0600
+  committer github-actions[bot] <github-actions[bot]@users.noreply.github.com> 1777229412 -0600
+  data 55
+  from :64
+  M 100644 520a99b76bdbfe25fcc0453ff26f58a5e5bf0309 !/!/__!__/!/! The world is quiet here/DOCKET.md
+  M 100644 df26e1bc2910d3df6bafa1958907f6c8a7ea905b !/sbp-blackboard.json
+  
+  get-mark :65
+  commit refs/heads/main
+  mark :66
+  author github-actions[bot] <github-actions[bot]@users.noreply.github.com> 1777229436 -0600
+  committer github-actions[bot] <github-actions[bot]@users.noreply.github.com> 1777229436 -0600
+  data 53
+  from :65
+  M 100644 a18445433d12eed73bbfb0469fe94b258a137efc !/!/__!__/!/! The world is quiet here/DOCKET.md
+  
+  get-mark :66
+  commit refs/heads/main
+  mark :67
+  author github-actions[bot] <github-actions[bot]@users.noreply.github.com> 1777229908 -0600
+  committer github-actions[bot] <github-actions[bot]@users.noreply.github.com> 1777229908 -0600
+  data 306
+  from :66
+  D .github/workflows/agent-auto-pr.yml
+  D .github/workflows/agent-review-gate.yml
+  D .github/workflows/auto-merge.yml
+  M 100644 72f33f3666d3dc556770ab8023897072098ff632 .github/workflows/pr-lifecycle.yml
+* M 100644 2df6fb2d518c5e1e21fb13cb61851d04c3f16b3d GitHub Docs - Why are my commits linked to the wrong user?.md
+
+Active Branch LRU
+-----------------
+    active_branches = 1 cur, 5 max
+
+  pos  clock name
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   1)      7 refs/heads/main
+
+Inactive Branches
+-----------------
+refs/heads/main:
+  status      : active loaded dirty
+  tip commit  : d3a1d1766a36cbb11ffe48811f66533fc986a224
+  old tree    : 3d15d0bb0941875780c570ea5c1f67b6b728f5fc
+  cur tree    : 0000000000000000000000000000000000000000
+  commit clock: 7
+  last pack   : 0
+
+
+Marks
+-----
+:1 046d6058ba71b016eb13ab09866955dfcae150ed
+:2 25b1bb171238aa41b80db8b41608ca5e507fbf07
+:3 8018ad887c1f7b2c8c26821b7920f49f44ea51f7
+:4 262f1a380978583f4e0126a4d68a3b821769e2c1
+:5 ead987f3a0d7212a6d1e8d8a3fdc68a9322e5dd6
+:6 ea733b97404346fb81db8fe6ce29957d2e258e44
+:7 86d68fee06a657f9abf7e4a54e3f872531f4d178
+:8 67bf6e71d273daf499232adb7e83c7ec3ee96897
+:9 33d62f53101997d9e771af3abb227c0c933b6587
+:10 a3c8173ca99434f9c2bc25665990aa9e8572502c
+:11 c797bd6a3414cc89f347e38296bb2dd5fb9a8979
+:12 9c035450c00e5965ce5a29269957f564f9683356
+:13 451904763704c395fc732433558628a274d80a49
+:14 ed45d7aaee8e55f9c4e4eb0664daff3c8af25fa5
+:15 cfb565102c3e39e361de475f7417e81ced17f280
+:16 a8a3890b765ec30b3ab2b8a2824bc7113f610d96
+:17 d30f62b8a0b9ccbe1c7c4599609b93ba72a8081f
+:18 44960dae19c5de81d15e7b927c50501825263308
+:19 56d3f40f4a64da665b46e45a925318e5f24c63bd
+:20 f9842454042d49655a21b27f56dd1de36cf4a109
+:21 275deaf183ac0ea20985b82c18d30fadfc965828
+:22 9586542d6d79b52dbcc941c1f5fc384e6211a0cf
+:23 f360842deb3557420764ecf5ac533b44b53fe804
+:24 6492d9b60bfe8e22faa354b525bbf0f51c437aa0
+:25 8a0be724299be6e038109654c4a8bad68cb152cb
+:26 fd1a09f362835c276d025665c4814e33f40ac984
+:27 7e06a76d02428d19b12f05c39a8c456996acc91c
+:28 4e244779e49f4a1b21ef31db23a82328c6d8ff02
+:29 d49140e08c7217d809386f03fe4d2f68a2b23a20
+:30 d121324553634fd30c00a2f346438a2cf10041fb
+:31 5a3bfbd19aca4a286e8f1a1aac30f657def666b4
+:32 9eb9c70359968d8e1006ead1a83df964c4f05aed
+:33 9976a9c2050f75b089517d9611b31e393469dcdd
+:34 aaf8390b22bd8015e665163e142d20d148bd2e32
+:35 711e3ff72dd41f1a5b90adf58159213f5be394f0
+:36 9fc0a5ab9df880482122aaaee563e1992a2d20b3
+:37 e982ef7f4a26fda9c3b7061f3907de9fe043150c
+:38 c4fb4cec54a917bed763260393e9def16d676a3c
+:39 e47d6f25663b97012f2ba92c95579aa41e05264e
+:40 c1dcbc701e67f7138eb09fac67a5bc30ce0bbffb
+:41 1906cb144fef975d6d1e4c76653132ca941d6e7d
+:42 389bdf50a78158aa8a99b9c9e6bb468359286b21
+:43 2eada6d2b72b08e0f33e09372a2765588c424e19
+:44 ba4618cde9cd30c4ce7b4c5fdabd814ff0600461
+:45 af4cef53e19399e37faa569a6f805e5b9637cfcc
+:46 f76fac5b3fea7a88e793bf356e5e42b999b69972
+:47 a126863b4b6894ed994efb20b8a90ceff02e7e63
+:48 d1151f0b930304cf0a60458b7d6af7fe8b9d21c9
+:49 c0f43322349d50c23467e52f81dbd74932c22a2e
+:50 b2796664192c3de8a27447308626406eaf887fa8
+:51 4a0e56c42ec4f00fc46ef934dc1613b3e0ed0fca
+:52 73ca239f3d72c0c4cd15948f11a8875270d985c0
+:53 a71c82b17ea9e50323a63a0d16f6476cf1bf5f84
+:54 194d7e3480f7b802cfa8657934c4221753167016
+:55 d6a8792a31264c15b9d2557fe4eb5a17f16691b5
+:56 709a36d68a929738c5cdf47ea1ee50ebb5cad542
+:57 83f9624ad751dea6855df05dcaa9693d071e9164
+:58 c3d00314305c5e41803f2c426854d7ae02956b38
+:59 1e442d3c11df34de9bf1d69bc901d6f0363d5f79
+:60 28016b61bdecdfe587b68ee10d598793030e1464
+:61 a6ccb1746e3cec9738a54a6f4c49bc20faede124
+:62 991a6b86b080c44ad33ae0d7f69e2f5e9e2e2a6e
+:63 61054bd663ef518487bf9c1e73f160cf723cbcfa
+:64 d543f81c8c827f0e0a0cae7ea05c4ece084a7493
+:65 43e4a53f86cae783ee26a46c873d9017fa6b77a6
+:66 d3a1d1766a36cbb11ffe48811f66533fc986a224
+
+-------------------
+END OF CRASH REPORT
