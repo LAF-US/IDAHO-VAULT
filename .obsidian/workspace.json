@@ -251,13 +251,12 @@
       "desk:Create new desk": true,
       "obsidian-5e-statblocks:Open Creature pane": true,
       "handwritten-notes:Create empty handwritten note": true,
-      "map-of-content:Update Map of Content": false,
-      "periodic-notes:Open today": false,
-      "calendarium:Open Calendarium": false
+      "map-of-content:Update Map of Content": false
     }
   },
   "active": "040a6ca42d7b6230",
   "lastOpenFiles": [
+    "2026-08-11.md",
     "__pycache__/importlib.cpython-312.pyc",
     "__pycache__",
     "2026-08-03 - The Seattle Times - ‘Could be weeks’ before some Spokane residents can return after fires.md",
@@ -298,7 +297,6 @@
     "apa-dcms-uk-comment.pdf",
     "2026_WGA_Annual_Report_073026.pdf",
     "__pycache__/importlib.cpython-313.pyc",
-    "scbl-fd-2015.pdf",
     "Screenshot 2026-07-28 181222.jpg",
     "43e30348-d7a5-4a20-a3e6-950ef389fe25_6177.jpg",
     "jwh01549.jpg",

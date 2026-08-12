@@ -1,0 +1,14 @@
+# MEMORY INDEX
+
+Memory for the IDAHO-VAULT Claude Code session. Read relevant files before answering.
+
+- [user_logan.md](user_logan.md) — Logan Finney: journalist/IPTV, directs agents, values accuracy above all, terse comms
+- [feedback_operations.md](feedback_operations.md) — Four failure modes (fabrication, confabulation, etc.), LEVELSET before compacting, public repo = on the record
+- [feedback_agent_signatures.md](feedback_agent_signatures.md) — Agents sign their work (-G, -C, etc.) — do not flag or remove signatures
+- [feedback_swarm_lane_boundaries.md](feedback_swarm_lane_boundaries.md) — Copilot owns PR creation/management; Claude stays in inspect/diagnose/draft lane
+- [feedback_path_fixes.md](feedback_path_fixes.md) — PATH issues: three-layer fix applied 2026-03-29 (Windows PATH, ~/.bashrc, PS profile glob) — do not re-diagnose
+- [reference_vault_locations.md](reference_vault_locations.md) — Key file paths: DOCKET, LEVELSET-CURRENT, DECISIONS, CONSTITUTION, AGENTS (canonical: `!/AGENTS.md`)
+- [project_vault_state.md](project_vault_state.md) — Vault architecture, multi-agent ecosystem, pending decisions, active branch PR #109
+- [project_gcp_sync.md](project_gcp_sync.md) — GCP "Nest Bridge": project `idaho-vault`, Phase III in progress (Secret ✓, Bucket ✓, Trigger pending, Cloud Run = final step)
+- [project_ding.md](project_ding.md) — DING (v0.0): informal beta relay protocol, do not hard-define, first instance on PR #109 2026-03-29
+- [reference_bartimaeus.md](reference_bartimaeus.md) — "B" = Bartimaeus, confirmed by Logan 2026-03-30; not in AGENTS.md; leaves structural notes in vault files

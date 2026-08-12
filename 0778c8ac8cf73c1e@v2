@@ -1,0 +1,108 @@
+name: 1Password Secret Injection Template
+
+# This is a TEMPLATE workflow showing how to use 1Password CLI
+# in GitHub Actions. Copy and adapt for specific jobs.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  use-1password-secrets:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      # Step 1: Install 1Password CLI in CI environment
+      - name: Install 1Password CLI
+        run: |
+          sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 3FEF9748469ADBE15DA7CA80AC2D62742012EA22
+          echo "deb https://apt.agilebits.com/ubuntu focal main" | sudo tee /etc/apt/sources.list.d/1password.list
+          sudo apt update
+          sudo apt install -y 1password-cli
+          op --version
+
+      # Step 2: Authenticate to 1Password using service account token
+      - name: Authenticate 1Password
+        run: |
+          echo "${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}" | op signin --raw
+        env:
+          OP_FORMAT: json
+
+      # Step 3: Fetch secrets from 1Password vault
+      - name: Load Secrets from 1Password
+        run: |
+          # Fetch GitHub PAT
+          GITHUB_PAT=$(op item get "GitHub Personal Access Token" --fields password 2>/dev/null || echo "")
+          if [ -z "$GITHUB_PAT" ]; then
+            echo "⚠️ GitHub PAT not found in 1Password"
+          else
+            echo "::add-mask::$GITHUB_PAT"
+            echo "GITHUB_PAT=$GITHUB_PAT" >> $GITHUB_ENV
+          fi
+
+          # Fetch Linear API Key
+          LINEAR_KEY=$(op item get "Linear API Key" --fields password 2>/dev/null || echo "")
+          if [ -z "$LINEAR_KEY" ]; then
+            echo "⚠️ Linear API Key not found in 1Password"
+          else
+            echo "::add-mask::$LINEAR_KEY"
+            echo "LINEAR_API_KEY=$LINEAR_KEY" >> $GITHUB_ENV
+          fi
+
+          # Add more secrets as needed
+          # ANOTHER_SECRET=$(op item get "Secret Name" --fields password)
+          # echo "::add-mask::$ANOTHER_SECRET"
+          # echo "ANOTHER_SECRET=$ANOTHER_SECRET" >> $GITHUB_ENV
+        continue-on-error: true  # Don't fail if optional secrets are missing
+
+      # Step 4: Use secrets in subsequent steps
+      - name: Example API Call with Secrets
+        if: env.GITHUB_PAT != ''
+        run: |
+          # Use GitHub PAT (masked in logs)
+          curl -s -H "Authorization: token ${{ env.GITHUB_PAT }}" \
+            https://api.github.com/user \
+            | head -20
+
+      # Step 5: Sign out from 1Password (cleanup)
+      - name: Logout 1Password
+        if: always()
+        run: |
+          op signout
+
+# ============================================================================
+# NOTES FOR IMPLEMENTATION:
+# ============================================================================
+#
+# 1. GitHub Secrets Required:
+#    - OP_SERVICE_ACCOUNT_TOKEN: Service account token from 1Password
+#
+# 2. 1Password Items Expected:
+#    - "GitHub Personal Access Token" (password field)
+#    - "Linear API Key" (password field)
+#    - Add more items as needed
+#
+# 3. Error Handling:
+#    - Using `continue-on-error: true` makes optional secrets non-blocking
+#    - Check for empty variables before use
+#    - Secrets are masked in logs via `::add-mask::`
+#
+# 4. Best Practices:
+#    - Always use `::add-mask::` for secrets in GitHub Actions logs
+#    - Authenticate/logout to minimize 1Password session duration
+#    - Use specific secret names to avoid typos
+#    - Document which secrets each workflow requires
+#
+# 5. Testing:
+#    - Manually test 1Password access from your machine:
+#      `op item get "GitHub Personal Access Token" --fields password`
+#    - Add a workflow dispatch trigger for manual test runs
+#
+# 6. Security:
+#    - OP_SERVICE_ACCOUNT_TOKEN is the only GitHub Secret
+#    - All other secrets fetched via `op item get` at runtime
+#    - Never log secrets; use `::add-mask::`
+#    - Rotate OP_SERVICE_ACCOUNT_TOKEN regularly (90 days)

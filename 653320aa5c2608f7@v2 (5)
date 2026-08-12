@@ -1,0 +1,31 @@
+---
+name: windows-machine-setup
+description: "Windows workstation hardware, software, and constraints"
+metadata: 
+  node_type: memory
+  type: reference
+  originSessionId: 991fb72a-b8d3-4d86-96cc-83f5f5363a83
+---
+
+**Hardware:** Samsung SSD 990 PRO 2TB (C:), LaCie Rugged USB-C 2TB (D: / Vault label, exFAT, currently empty)
+**OS:** Windows 11 Pro 24H2, no admin rights (IT-managed)
+
+**Key constraints:**
+- No admin = can't assign drive letters, install system-level software, use diskpart, enable WSL
+- Drive letter changes require IT; `subst` works for session-level aliases but isn't persistent
+- LaCie is D: on this machine (Windows assigns per-device, should be stable)
+
+**Installed (via scoop, no admin needed):**
+- scoop (package manager, user-level): `C:\Users\loganf\scoop\`
+- rclone v1.73.5: `C:\Users\loganf\scoop\apps\rclone\current\rclone.exe`
+- git: `C:\Users\loganf\AppData\Local\Programs\Git\`
+
+**Notable home directory contents:**
+- `Documents/` — IDAHO-VAULT git repos + agent-stashed debris (see [[project-idaho-vault]])
+- `Desktop/SCRATCH FOLDER/` — active working scratch, mix of real assets and project leftovers
+- `OneDrive - Idaho Public Television/` — work M365 OneDrive, already synced locally
+- `Creative Cloud Files .../` — Adobe CC assets, work account (avid4@idahoptv.org)
+- `node_modules/`, `scoop/`, `openclaw_env/` — rebuildable, exclude from backups
+- `.sbx-denybin/`, `.ollama/` — tool artifacts, exclude from backups
+
+**Phantom filesystem entries:** Two hidden folders (`!!!!!3975697888`, `!!!!!4106573108`) exist in `C:\Users\loganf\Documents` — visible to rclone but not to Windows Explorer, cmd, or PowerShell. Likely ghost NTFS entries from a crashed agent session on 2026-04-30. Contents were synthetic test fixtures (round file sizes, XORXOR/JLPyELZ/ZZZZZ/!!!!! naming). Purged from Google Drive INGEST; rclone does not appear to be uploading real content from them.

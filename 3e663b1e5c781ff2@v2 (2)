@@ -1,0 +1,27 @@
+---
+name: rclone-remotes
+description: "All configured rclone remotes, accounts, and storage sizes"
+metadata: 
+  node_type: memory
+  type: reference
+  originSessionId: 991fb72a-b8d3-4d86-96cc-83f5f5363a83
+---
+
+Config file: `C:\Users\loganf\scoop\apps\rclone\current\rclone.conf`
+
+| Remote | Account | Type | Storage |
+|---|---|---|---|
+| `gdrive-personal:` | loganfinney27@gmail.com | Google Drive (paid Google One) | 5TB total, 526GB used |
+| `gdrive-ptv:` | logan.finney@idahoptv.org | Google Workspace Drive | 100TB pool, ~1GB used |
+| `onedrive:` | personal Microsoft account | OneDrive personal | 1TB total, 145GB used |
+| `dropbox:` | personal Dropbox | Dropbox | 2TB total, 309GB used |
+| `gcs:` | idaho-vault GCP project | Google Cloud Storage | IDAHO-VAULT infra |
+| `the-ledger-bucket:` | idaho-vault GCP project | Google Cloud Storage | IDAHO-VAULT infra |
+| `archive:` | — | Internet Archive | — |
+| `box:` | — | Box | — |
+
+**Note:** `google-drive:` was renamed to `gdrive-personal:` during the 2026-05-12 session (rename watcher script ran automatically after transfers finished).
+
+**IDAHO-VAULT remotes** (`gcs:`, `the-ledger-bucket:`) are project infrastructure — exclude from personal backup/consolidation. See [[project-idaho-vault]].
+
+**Work M365 OneDrive** (`OneDrive - Idaho Public Television`) is synced locally to `C:\Users\loganf\OneDrive - Idaho Public Television\` but no dedicated rclone remote exists for it yet.

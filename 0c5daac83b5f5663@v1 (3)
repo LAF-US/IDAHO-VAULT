@@ -1,0 +1,20 @@
+---
+name: PATH fixes — do not re-diagnose, just fix
+description: Logan has had to tell multiple agents to fix standing PATH issues; do not re-investigate or ask, just apply the known fix
+type: feedback
+---
+
+Logan has explicitly said PATH issues are a recurring annoyance across agents — do not re-diagnose or ask him about them.
+
+**Known fix already applied (2026-03-29):**
+1. Added to **Windows user PATH** via PowerShell (required for VS Code terminal shell resolution):
+
+   ```text
+   C:\Users\loganf\.vscode\extensions\anthropic.claude-code-2.1.87-win32-x64\resources\native-binary
+   ```
+
+2. Also added to `~/.bashrc` for bash sessions.
+
+**Why:** VS Code resolves terminal shell executables (e.g. Qodo's "Resolve via Claude CLI") from the **Windows PATH**, not bash PATH. `~/.bashrc` alone is insufficient — the Windows user PATH must be set via `[Environment]::SetEnvironmentVariable(..., 'User')`.
+
+**How to apply:** If a PATH issue surfaces for any CLI tool, check Windows user PATH first via PowerShell, apply the fix silently, and move on. Do not ask Logan to confirm — he's already confirmed this pattern is correct and is tired of re-explaining it.

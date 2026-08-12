@@ -1,0 +1,5 @@
+{
+  "// note": "Slack CLI project hooks configuration. See .slack/SLACK.md for governance.",
+  "// docs": "https://api.slack.com/automation/cli/hooks",
+  "hooks": {}
+}

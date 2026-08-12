@@ -1,0 +1,58 @@
+# Plan: Move `swarm/` into `!`
+
+## Context
+
+The `swarm/` folder (runtime state persistence layer for the multi-agent swarm) lives at the vault root alongside `!`, `.github`, etc. Logan's governance intent is that all swarm infrastructure lives inside `!`. This moves `swarm/` to `!/swarm/` and updates all references.
+
+**Secondary finding (not acted on here):** A skeleton `.github/swarm/` also exists — an earlier, simpler version with empty template files. It's already in `.github/` (system infrastructure zone), not the vault root, so it's a separate cleanup task.
+
+---
+
+## Files to Change
+
+### 1. Git move — the folder itself
+```
+git mv swarm "!/swarm"
+```
+`state_manager.py` uses `Path(__file__).resolve().parents[1]` (relative to its own location), so it continues to work with no code changes after the move.
+
+### 2. `.gitignore`
+**Critical:** gitignore treats a leading `!` as negation, so literal `!` in paths must be escaped with `\`.
+
+| Old | New |
+|---|---|
+| `swarm/logs/*` | `\!/swarm/logs/*` |
+| `!swarm/logs/.gitkeep` | `!\!/swarm/logs/.gitkeep` |
+
+### 3. `.github/scripts/classify_paths.py` — line 42
+Add `"!/swarm/"` to `LOW_RISK_PREFIXES` alongside `.github/swarm/`.
+
+### 4. `!/VAULT-ZONES.md` — lines 20 and 43
+Update path references from `swarm/` to `!/swarm/`.
+
+---
+
+## Files NOT Changed
+
+- `swarm/tools/state_manager.py` — paths are self-relative, no hardcoding to fix
+- `swarm/state/stabilization_plan.md` — internal doc, not a config file; will move with folder
+- `!/!/BRANCH-TRIAGE-2026-03-22.md`, `sort-audit-2026-03-23.md` — historical records, leave as-is
+
+---
+
+## Execution Order
+
+1. `git mv swarm "!/swarm"` (must be first — git tracks the rename)
+2. Edit `.gitignore`
+3. Edit `classify_paths.py`
+4. Edit `VAULT-ZONES.md`
+5. Commit all changes together on a `claude/contain-swarm-to-bang` branch
+
+---
+
+## Verification
+
+- `git status` shows clean rename of all `swarm/*` → `!/swarm/*`
+- `git check-ignore -v "!/swarm/logs/test.log"` confirms the new ignore rule fires
+- `python "!/swarm/tools/state_manager.py" read` succeeds from vault root
+- No remaining references to root-level `swarm/` in .gitignore or classify_paths.py

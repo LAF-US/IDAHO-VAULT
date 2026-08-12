@@ -1,0 +1,7 @@
+  -f, --report-format string          output format (json, csv, junit, sarif, template)
+  -r, --report-path string            report file (use "-" for stdout)
+      --report-template string        template file used to generate the report (implies --report-format=template)
+      --timeout int                   set a timeout for gitleaks commands in seconds (default "0", no timeout is set)
+  -v, --verbose                       show verbose output from scan
+
+

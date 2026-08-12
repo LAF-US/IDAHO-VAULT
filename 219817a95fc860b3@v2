@@ -1,0 +1,8 @@
+# CodeRabbit review configuration (auto-loaded by CodeRabbit)
+# See !/VAULT-CONVENTIONS.md for vault governance conventions
+
+reviews:
+  auto_review:
+    enabled: true
+  # Vault governance note: PRs touching !/ require Logan's approval
+  # All committed content is on the record (public repo)

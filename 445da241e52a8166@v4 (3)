@@ -1,0 +1,64 @@
+# Plan: Codify Linear access guardrail — LAF-7 + .gemini/GEMINI.md
+
+## Context
+Codex identified a failure mode in Gemini's Linear access check: "soft hallucinated coordination" — using memory as a fallback when Linear is unavailable, which defeats the access verification protocol. Logan, Gemini, and Codex have all agreed on the correction. The rule needs to land in two places: LAF-7 (durable swarm record) and `.gemini/GEMINI.md` (baked into Gemini's next session context).
+
+## Logan's explicit authorization
+Logan directed "Both" — post to LAF-7 and edit `.gemini/GEMINI.md`. This explicit direction covers the cross-dotfolder boundary (AGENTS.md rule: an agent modifies its own dotfolder by default; cross-dotfolder edits require Logan's explicit direction). That direction is on record in this session ("Continue. -LF").
+
+## Actions
+
+### 1. Post to LAF-7 (via Linear MCP — lowest risk, do first)
+
+```
+**Swarm protocol note — Linear access guardrail**
+
+If an agent cannot verify Linear access, it must treat issue state, lane assignment,
+and coordination status as unconfirmed.
+
+No agent may use memory or prior conversation context as a substitute for a live
+Linear read.
+
+Work may continue only if Logan explicitly assigns a clearly labeled local/read-only lane.
+
+Rationale: "unavailable = unconfirmed, full stop." Falling back to memory produces
+soft hallucinated coordination that looks like compliance but isn't.
+
+— GUI Claude, codifying swarm consensus (Codex + Gemini + Logan, 2026-03-29)
+```
+
+### 2. Edit .gemini/GEMINI.md (cross-dotfolder, Logan-authorized)
+
+Insert the following block after line 53 (end of `## Swarm Coordination` body, before `## See Also`):
+
+```markdown
+
+### Linear Access Guardrail
+
+If Linear access is unavailable in the current session:
+- treat lane assignment as unconfirmed
+- do not infer issue state or coordination state from memory
+- do not simulate Linear reads
+- proceed only if Logan explicitly assigns a clearly labeled local/read-only lane
+```
+
+**Dirty-branch acknowledgment:** `claude/resolve-pr-conflicts` already has unrelated uncommitted changes. This edit will sit as an additional uncommitted change until Logan or another agent picks it up in a clean commit. It is a breadcrumb-only local edit — the file will be correct on disk immediately, but reaching `main` requires a separate commit. This is acceptable; the guardrail is readable by Gemini on next local session start regardless of commit state.
+
+## Verification (tightened per Codex)
+
+**LAF-7:** Comment appears in Linear with correct text.
+
+**GEMINI.md:**
+1. `### Linear Access Guardrail` section exists in the file
+2. Section is located under `## Swarm Coordination` and before `## See Also`
+3. Verify with a diff: only lines 53–58 (approx.) changed — no other lines in the file modified
+4. All pre-existing content (Role, Cowork Pattern, Conventions, Swarm Coordination body, See Also) is intact
+
+## Critical files
+- `.gemini/GEMINI.md` — insert after line 53
+- LAF-7 in Linear — comment only, no state change
+
+## Constraints
+- Do not touch Constitutional zone files
+- Do not change any other section of GEMINI.md
+- No new branches, no commits initiated — file edit lands in existing working tree

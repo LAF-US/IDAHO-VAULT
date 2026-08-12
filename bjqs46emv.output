@@ -1,0 +1,7 @@
+secret-pattern guard: possible secret material detected.
+No secret values are shown below; inspect the files locally.
+  - Documentation - Discord - OAuth2 (2).md:399  [generic_secret_assignment]
+  - Documentation - Discord - OAuth2 1 (2).md:399  [generic_secret_assignment]
+  - Find Adventures Near You, Track Your Progress, Share.md:61  [google_api_key]
+  - Tug Boats & City Scape in Coeur d'Alene, ID.md:41  [google_api_key]
+Move secrets to 1Password or environment variables before committing.
