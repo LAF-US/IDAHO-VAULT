@@ -18,6 +18,6 @@ related:
 RT @jonesblakej: Not the best photo, but here's this year's "Idaho Conservative Agenda." https://t.co/nEDuppAgT2
 
 ## Media
-- ![](https://pbs.twimg.com/media/Erd6zxzVkAAAGVn.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/Erd6zxzVkAAAGVn.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1348682728464519170)

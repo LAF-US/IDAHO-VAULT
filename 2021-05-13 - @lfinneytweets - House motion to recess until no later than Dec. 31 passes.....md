@@ -22,7 +22,7 @@ related:
 House motion to recess until no later than Dec. 31 passes. See you all sometime later this year? #idleg #idpol https://t.co/LT0beXbm4i
 
 ## Media
-- ![](https://pbs.twimg.com/media/E1PpMM6VcAIBpvd.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/E1PpMM6VcAIBpvd.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

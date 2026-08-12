@@ -5,4 +5,4 @@ related:
 - Richfield
 authority: LOGAN
 ---
-Richfield, Lincoln County 
+Richfield, Lincoln County

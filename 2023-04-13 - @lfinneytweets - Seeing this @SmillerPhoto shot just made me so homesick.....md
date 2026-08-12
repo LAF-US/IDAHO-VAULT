@@ -30,6 +30,6 @@ Seeing this @SmillerPhoto shot just made me so homesick. Great piece @IdahoState
 - https://x.com/propublica/status/1646439824780304385
 
 ## Media
-- ![](https://pbs.twimg.com/media/Ftm-VdpaYAEJZdk.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/Ftm-VdpaYAEJZdk.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1646556968331644929)

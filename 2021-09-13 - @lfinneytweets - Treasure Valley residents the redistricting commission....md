@@ -27,6 +27,6 @@ https://t.co/goidAIvXC7 #idpol https://t.co/eSUH78kTvI
 - https://blog.idahoreports.idahoptv.org/2021/09/13/treasure-valley-public-input-sought-in-redistricting-meetings/
 
 ## Media
-- ![](https://pbs.twimg.com/media/E_MkOq_VUAMvu_E.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/E_MkOq_VUAMvu_E.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1437536476137332737)

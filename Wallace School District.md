@@ -5,4 +5,4 @@ related:
 - Wallace
 authority: LOGAN
 ---
-Wallace, Shoshone County 
+Wallace, Shoshone County

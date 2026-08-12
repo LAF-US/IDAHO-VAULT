@@ -80,7 +80,7 @@ On the MacBook today, **the machinery of the loop is fully assembled and running
 And yet the three elements that would make this *specifically Logan's agent* are all currently absent:
 
 | Element | State | Consequence |
-|---|---|---|
+| --- | --- | --- |
 | **SOUL.md** | Empty | Every session on every platform runs on Hermes's generic built-in identity |
 | **MEMORY.md** | Wiped this morning | No accumulated facts — correctly cleared, but blank |
 | **USER.md** | Wiped this morning | No user model — correctly cleared, but blank |
@@ -135,7 +135,7 @@ The practical consequence: the vault's full toolset potential is accessible via 
 The vault integration is **half-realized**:
 
 | Integration point | State |
-|---|---|
+| --- | --- |
 | `terminal.cwd: ~/IDAHO-VAULT` | ✅ Active |
 | `AGENTS.md` auto-load (slot 8) | ✅ Active when terminal scoped to vault |
 | `OBSIDIAN_VAULT_PATH` in `.env` | ✅ Set — `/Users/logan/IDAHO-VAULT` (amended same session) |
@@ -182,7 +182,7 @@ This is an observation, not a directive. The conjunction question (Hermes + Open
 ## THE COMPOUNDING LOOP: WHERE IT STANDS
 
 | Loop element | Designed behavior | Current state |
-|---|---|---|
+| --- | --- | --- |
 | SOUL.md | Defines identity for all sessions | ❌ Empty |
 | Sessions | Generate memory candidates | ✅ Running (44 prior, continuing) |
 | MEMORY.md | Accumulates cross-session facts | ⬜ Wiped — blank, ready |

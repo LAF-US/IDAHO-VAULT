@@ -18,6 +18,6 @@ related:
 RT @FarnoushAmiri: AP lede for the history books: https://t.co/zZi8op2KoN
 
 ## Media
-- ![](https://pbs.twimg.com/media/GbsgujOaAAAhO4g.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/GbsgujOaAAAhO4g.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1854119668522582434)

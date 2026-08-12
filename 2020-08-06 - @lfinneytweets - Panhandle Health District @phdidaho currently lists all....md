@@ -19,6 +19,6 @@ related:
 Panhandle Health District @phdidaho currently lists all five northern counties under Category 2 for school reopening. Plans vary between school districts, but generally speaking that would put fully traditional instruction off the table if schools opened today. #IdahoCOVID19 https://t.co/GMUjnVLT7m
 
 ## Media
-- ![](https://pbs.twimg.com/media/EexlNQxUEAE-Wpf.png)
+- ![alt text needed](https://pbs.twimg.com/media/EexlNQxUEAE-Wpf.png)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1291519750107828225)

@@ -16,6 +16,6 @@ related:
 Same dude https://t.co/wj2UgWCijC
 
 ## Media
-- ![](https://pbs.twimg.com/media/GjzAJgjacAASO1h.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/GjzAJgjacAASO1h.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1890597214784762056)

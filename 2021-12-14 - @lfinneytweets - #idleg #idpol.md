@@ -18,7 +18,7 @@ related:
   - idpol
 ---
 
-#idleg #idpol https://t.co/IldSew2vgx
+\#idleg #idpol https://t.co/IldSew2vgx
 
 ## Links
 - https://x.com/LewistonTribune/status/1470779016403640328

@@ -1,9 +1,7 @@
 ---
-tags:
-  - Category/Frieze
-aliases:
-  - U of I
-  - UIdaho
+related:
+- Moscow
+authority: LOGAN
 ---
 Land grant university in Moscow.
 

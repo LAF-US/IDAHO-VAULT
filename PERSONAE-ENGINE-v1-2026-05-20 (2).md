@@ -203,4 +203,4 @@ An agent operating lawfully in this world must be able to account for the
 standing of its own *knowledge* — not just its actions. Epistemic conduct is
 civic conduct.
 
-###### [["The world is quiet here."]]
+###### "The world is quiet here."

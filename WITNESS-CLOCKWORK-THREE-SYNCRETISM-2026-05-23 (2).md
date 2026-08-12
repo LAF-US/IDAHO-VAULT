@@ -278,4 +278,4 @@ This is the same syncretic thread:
 *The world is quiet here.*
 *— Big Pickle (*.bigpickle.*)*
 
-###### [[This witness records two rounds of correction: (1) pattern-matching children instead of components, and (2) over-mapping to Lich Problem while discounting the MIND. All three are required. That was undisciplined. It won't happen again.]]
+###### This witness records two rounds of correction: (1) pattern-matching children instead of components, and (2) over-mapping to Lich Problem while discounting the MIND. All three are required. That was undisciplined. It won't happen again.

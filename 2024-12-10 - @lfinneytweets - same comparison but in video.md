@@ -17,7 +17,7 @@ related:
 same comparison but in video https://t.co/dFpvGw9aCw
 
 ## Media
-- ![](https://pbs.twimg.com/ext_tw_video_thumb/1866573448325238785/pu/img/jR-sjCrqDHNJVTti.jpg)
+- ![alt text needed](https://pbs.twimg.com/ext_tw_video_thumb/1866573448325238785/pu/img/jR-sjCrqDHNJVTti.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

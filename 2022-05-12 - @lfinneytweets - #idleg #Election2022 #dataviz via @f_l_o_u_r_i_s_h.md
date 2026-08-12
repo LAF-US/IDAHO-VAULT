@@ -23,14 +23,14 @@ related:
   - dataviz
 ---
 
-#idleg #Election2022 #dataviz via @f_l_o_u_r_i_s_h 
+\#idleg #Election2022 #dataviz via @f_l_o_u_r_i_s_h 
 https://t.co/roU0HWWOwV https://t.co/cRCCjMC0DR
 
 ## Links
 - https://blog.idahoreports.idahoptv.org/2022/05/12/most-idaho-lawmakers-seek-reelection-but-face-challengers-along-the-way/
 
 ## Media
-- ![](https://pbs.twimg.com/media/FSl9CSgUAAAk0Gc.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/FSl9CSgUAAAk0Gc.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

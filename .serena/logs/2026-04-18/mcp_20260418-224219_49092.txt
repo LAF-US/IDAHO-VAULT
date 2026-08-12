@@ -104,7 +104,7 @@ provide feedback as needed.
 
 
 You have hereby read the 'Serena Instructions Manual' and do not need to read it again.
-INFO  2026-04-18 22:42:20,392 [MainThread] serena.cli:sta***REMOVED***mcp_server:367 - Starting MCP server …
+INFO  2026-04-18 22:42:20,392 [MainThread] serena.cli:sta***REMOVED***mcp_server:367 - Starting MCP server â€¦
 INFO  2026-04-18 22:42:20,436 [MainThread] serena.mcp:_set_mcp_tools:261 - Starting MCP server with 26 tools: ['read_file', 'create_text_file', 'list_dir', 'find_file', 'replace_content', 'search_for_pattern', 'get_symbols_overview', 'find_symbol', 'find_referencing_symbols', 'replace_symbol_body', 'inse***REMOVED***after_symbol', 'inse***REMOVED***before_symbol', 'rename_symbol', 'safe_delete_symbol', 'write_memory', 'read_memory', 'list_memories', 'delete_memory', 'rename_memory', 'edit_memory', 'execute_shell_command', 'activate_project', 'get_current_config', 'check_onboarding_performed', 'onboarding', 'initial_instructions']
 INFO  2026-04-18 22:42:20,437 [MainThread] serena.mcp:server_lifespan:350 - MCP server lifetime setup complete
 INFO  2026-04-18 22:42:20,443 [MainThread] mcp.server.lowlevel.server:_handle_request:720 - Processing request of type ListToolsRequest

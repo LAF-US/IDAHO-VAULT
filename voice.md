@@ -4,4 +4,4 @@ related:
 - vocal
 ---
 
-vocal 
+vocal

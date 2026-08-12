@@ -4,7 +4,7 @@ author:
 published: 2025-09-10
 created: 2026-04-06
 ---
-![](https://www.wassmuthcenter.org/wp-content/uploads/2025/11/IMG_2659-2048x1465.jpeg)
+![alt text needed](https://www.wassmuthcenter.org/wp-content/uploads/2025/11/IMG_2659-2048x1465.jpeg)
 
 ## Powerful Practices
 
@@ -24,4 +24,4 @@ The Wassmuth Powerful Practices form a comprehensive human rights framework made
 
 Through these six practices, individuals and communities can reduce harm, challenge inequity, repair relationships, and strengthen systems that honor the dignity of all people. This framework helps people understand how everyday choices determine whether human rights are upheld or violated. The Wassmuth Powerful Practices turn human rights from abstract ideals into concrete, daily actions that empower people to create a more just and joyful world, one choice at a time.
 
-![](https://www.wassmuthcenter.org/wp-content/uploads/2026/01/Wassmuth-Powerful-Practices-1-scaled.png)
+![alt text needed](https://www.wassmuthcenter.org/wp-content/uploads/2026/01/Wassmuth-Powerful-Practices-1-scaled.png)

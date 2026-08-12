@@ -18,9 +18,7 @@ related:
   - idpol
 ---
 
-RT @CKomatsoulis: Private schools file suit to challenge ‘government interference’ of Idaho library law
-
-#idpol 
+RT @CKomatsoulis: Private schools file suit to challenge ‘government interference’ of Idaho library law #idpol
 
 https://t.co/6EYZRuQTDJ
 

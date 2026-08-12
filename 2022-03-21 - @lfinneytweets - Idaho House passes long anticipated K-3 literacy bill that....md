@@ -23,6 +23,6 @@ related:
 Idaho House passes long anticipated K-3 literacy bill that school districts could use to fund all-day kindergarten. Heads to the Senate. #idleg #idpol #idedu https://t.co/0waiWzmWT6
 
 ## Media
-- ![](https://pbs.twimg.com/media/FOZ8eibVsAAfsfp.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/FOZ8eibVsAAfsfp.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1506027991012306944)

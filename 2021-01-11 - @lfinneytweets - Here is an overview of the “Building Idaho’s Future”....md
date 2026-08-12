@@ -26,7 +26,7 @@ related:
 @GovernorLittle @IdahoController Here is an overview of the “Building Idaho’s Future” infrastructure plan from @GovernorLittle. #idpol #idleg https://t.co/w8Wwgkri8B
 
 ## Media
-- ![](https://pbs.twimg.com/media/EreoLoBUYAIqUX5.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EreoLoBUYAIqUX5.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

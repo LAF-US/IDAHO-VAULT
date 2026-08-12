@@ -1,8 +1,10 @@
 ---
-tags:
-  - Category/Inlay
+related:
+- '250'
+- money
+authority: LOGAN
 ---
-![[INLAY-01-04.jpg]]
+!INLAY-01-04.jpg
 # (Profitable)
 ## New This Year:
 ### a lot of data on a lot of money.

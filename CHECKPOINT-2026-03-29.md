@@ -29,6 +29,7 @@ Reporting agent / session: GitHub Copilot
 ---
 
 DONE THIS SESSION
+
 - Created `!/!/PROMPTS/CHECKPOINT.md` — mid-session status template (commit 1f44a26)
 - Revised CHECKPOINT.md with all five Linear-requested improvements (commit e671b41):
   - Destination table (three-column: Destination / Purpose / Expected response)
@@ -38,23 +39,29 @@ DONE THIS SESSION
   - DECISION NEEDED field split from NEEDS FROM LOGAN
 
 IN PROGRESS
+
 - PR #96 is open as a draft and awaiting Logan's review and merge decision
 
 BLOCKED ON
+
 - None from the agent side. PR #96 requires Logan to mark it ready and merge (or approve auto-merge).
 
 SCOPE CHANGES
+
 - None. Both commits were directly in scope of the Linear feedback on the CHECKPOINT prompt.
 
 NEXT STEPS
+
 - Logan reviews PR #96 diff and merges to main
 - Logan fills in the CHECKPOINT template for the first real session usage
 
 DECISION NEEDED
+
 - Should PR #96 be marked ready for review (remove draft status)?
 - Should auto-merge be enabled for this PR, or does Logan want to review the diff manually?
 
 NEEDS FROM LOGAN (other)
+
 - The specific LAF Linear issue number was not provided in the problem statement; agent inferred context from branch name and team label (-LAF). Confirm which Linear issue this work maps to.
 
 RESUME POINT
