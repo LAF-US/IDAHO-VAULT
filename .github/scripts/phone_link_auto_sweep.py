@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import math
 import os
 import shutil
 import tempfile
@@ -86,12 +87,24 @@ def is_ignored(path: Path) -> bool:
 
 
 def is_unlocked(path: Path, attempts: int = 20, delay_seconds: float = 0.3) -> bool:
+    """True once `path` is openable for shared read AND its size has stopped
+    changing across two consecutive checks -- shared-read access alone
+    succeeds while a producer is still writing, so size stability is the
+    signal that the file is actually done."""
+    previous_size: int | None = None
     for _ in range(attempts):
         try:
             with path.open("rb"):
-                return True
+                pass
+            current_size = path.stat().st_size
         except OSError:
+            previous_size = None
             time.sleep(delay_seconds)
+            continue
+        if previous_size is not None and current_size == previous_size:
+            return True
+        previous_size = current_size
+        time.sleep(delay_seconds)
     return False
 
 
@@ -110,13 +123,12 @@ def move_one(source: Path, target_dir: Path, log_path: Path) -> bool:
         write_log(log_path, f"SKIP (locked): {source.name}")
         return False
 
-    destination, disposition = resolve_destination(source, target_dir)
-    if destination is None:
-        write_log(log_path, f"SKIP (duplicate): {source.name}")
-        return False
-
-    destination.parent.mkdir(parents=True, exist_ok=True)
     try:
+        destination, disposition = resolve_destination(source, target_dir)
+        if destination is None:
+            write_log(log_path, f"SKIP (duplicate): {source.name}")
+            return False
+        destination.parent.mkdir(parents=True, exist_ok=True)
         shutil.move(str(source), str(destination))
     except OSError as exc:
         write_log(log_path, f"SKIP (move failed: {exc}): {source.name}")
@@ -168,14 +180,18 @@ def watch(source_dir: Path, target_dir: Path, log_path: Path, poll_seconds: floa
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="Phone Link autosweep")
-    parser.add_argument("--source", type=Path, default=DEFAULT_SOURCE, help="Phone Link folder path")
+    parser.add_argument("--source", type=Path, default=None, help="Phone Link folder path")
     parser.add_argument("--vault-root", type=Path, help="Destination vault root")
     parser.add_argument("--poll-seconds", type=float, default=5.0, help="Polling interval")
     parser.add_argument("--once", action="store_true", help="Run one sweep and exit")
     args = parser.parse_args(argv)
 
+    if not args.once and not (math.isfinite(args.poll_seconds) and args.poll_seconds > 0):
+        parser.error("--poll-seconds must be a finite value greater than 0")
+
     target_dir, root_source = resolve_vault_root(args.vault_root)
-    if args.source == DEFAULT_SOURCE:
+    if args.source is None:
+        args.source = DEFAULT_SOURCE
         args.source.mkdir(parents=True, exist_ok=True)
     source_dir = require_existing_dir(args.source, "Phone Link source")
     log_path = target_dir / "!" / "INBOX" / "_phone-link-watcher.log"

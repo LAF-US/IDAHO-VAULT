@@ -2,7 +2,7 @@ param(
     [string]$SourceDir,
     [string]$VaultDir,
     [Parameter(ValueFromRemainingArguments = $true)]
-    [string[]]$Args
+    [string[]]$RemainingArgs
 )
 
 $ErrorActionPreference = 'Stop'
@@ -27,7 +27,7 @@ if (-not $python) {
 $pythonArgs = @()
 if ($SourceDir) { $pythonArgs += @('--source', $SourceDir) }
 if ($VaultDir) { $pythonArgs += @('--vault-root', $VaultDir) }
-$pythonArgs += $Args
+$pythonArgs += $RemainingArgs
 
 & $python.Path $pythonScript @pythonArgs
 exit $LASTEXITCODE

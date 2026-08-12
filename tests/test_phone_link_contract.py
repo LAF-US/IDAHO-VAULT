@@ -58,12 +58,11 @@ class PhoneLinkContractTest(unittest.TestCase):
             ".github/scripts/phone_link_auto_sweep.py",
         )
 
-        missing_root = PROJECT_ROOT / "missing-vault-root"
-        if missing_root.exists():
-            self.fail(f"Test setup expected missing path: {missing_root}")
+        with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as workspace:
+            missing_root = Path(workspace) / "missing-vault-root"
 
-        with self.assertRaisesRegex(RuntimeError, "Vault root does not exist"):
-            module.resolve_vault_root(missing_root)
+            with self.assertRaisesRegex(RuntimeError, "Vault root does not exist"):
+                module.resolve_vault_root(missing_root)
 
     def test_launcher_uses_python_not_powershell(self) -> None:
         launcher = (PROJECT_ROOT / "START-PHONE-LINK-SWEEP.cmd").read_text(encoding="utf-8")
@@ -71,6 +70,7 @@ class PhoneLinkContractTest(unittest.TestCase):
 
         self.assertIn("phone_link_auto_sweep.py", launcher)
         self.assertIn("python", launcher.lower())
+        self.assertIn("%~dp0", launcher)
         self.assertNotIn("powershell", launcher.lower())
         self.assertIn("WScript.ScriptFullName", vbs)
         self.assertNotIn("powershell", vbs.lower())
@@ -81,6 +81,8 @@ class PhoneLinkContractTest(unittest.TestCase):
 
         self.assertIn("phone_link_auto_sweep.py", wrapper)
         self.assertIn("python", wrapper.lower())
+        self.assertIn("--source", wrapper)
+        self.assertIn("--vault-root", wrapper)
         self.assertNotIn(r"C:\Users\loganf\Documents\IDAHO-VAULT", wrapper)
 
     def test_python_intake_prefers_explicit_vault_root_argument(self) -> None:
@@ -113,12 +115,11 @@ class PhoneLinkContractTest(unittest.TestCase):
             ".github/scripts/phone_link_intake.py",
         )
 
-        missing_root = PROJECT_ROOT / "missing-intake-vault-root"
-        if missing_root.exists():
-            self.fail(f"Test setup expected missing path: {missing_root}")
+        with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as workspace:
+            missing_root = Path(workspace) / "missing-intake-vault-root"
 
-        with self.assertRaisesRegex(RuntimeError, "Vault root does not exist"):
-            module.get_vault_root(missing_root)
+            with self.assertRaisesRegex(RuntimeError, "Vault root does not exist"):
+                module.get_vault_root(missing_root)
 
     def test_python_watcher_moves_file_once_into_vault_root(self) -> None:
         module = _load_module(

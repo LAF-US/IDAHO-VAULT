@@ -101,7 +101,11 @@ def main(argv: list[str] | None = None) -> int:
         print(f"Source is not a directory: {source}")
         return 1
 
-    vault_root = get_vault_root(args.vault_root)
+    try:
+        vault_root = get_vault_root(args.vault_root)
+    except RuntimeError as exc:
+        print(f"Vault root error: {exc}")
+        return 1
     files = sorted(f for f in source.iterdir() if f.is_file())
 
     if not files:
