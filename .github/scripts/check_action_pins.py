@@ -185,12 +185,12 @@ def _unpinned_from_lines(
         # first lets a stage exempt itself: `FROM alpine AS alpine` would match
         # `base in stages` and skip the digest check on a mutable image. Only
         # aliases from EARLIER FROM lines are real stage references.
-        if base.lower() != "scratch" and base.lower() not in stages:
-            if not IMAGE_DIGEST_PATTERN.search(base):
-                rel = dockerfile.relative_to(REPO_ROOT).as_posix()
-                findings.append(
-                    (image_lineno, f"{image} -> {rel}:{lineno} FROM {base} (needs @sha256:<64 hex>)")
-                )
+        exempt = base.lower() == "scratch" or base.lower() in stages
+        if not exempt and not IMAGE_DIGEST_PATTERN.search(base):
+            rel = dockerfile.relative_to(REPO_ROOT).as_posix()
+            findings.append(
+                (image_lineno, f"{image} -> {rel}:{lineno} FROM {base} (needs @sha256:<64 hex>)")
+            )
         if stage:
             stages.add(stage.lower())
     return findings
