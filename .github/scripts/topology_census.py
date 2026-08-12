@@ -217,9 +217,14 @@ def _make_citation(relpath: str, line_number: int, line: str) -> dict[str, objec
     }
 
 
+# Shared with _line_mentions_dotfolder()'s boundary rule below: characters that
+# count as part of the same identifier, so a match must NOT be adjacent to one.
+_IDENTIFIER_CHARS = "A-Za-z0-9_.-"
+
+
 def _loose_token_pattern(token: str) -> re.Pattern[str]:
     """Compile a boundary-safe pattern; rejects hits inside `*.copilot.clerk`-style identifiers."""
-    return re.compile(rf"(?<![A-Za-z0-9_.-]){re.escape(token)}(?![A-Za-z0-9_.-])")
+    return re.compile(rf"(?<![{_IDENTIFIER_CHARS}]){re.escape(token)}(?![{_IDENTIFIER_CHARS}])")
 
 
 def _find_citations(
@@ -323,7 +328,7 @@ def _dotfolder_citations(
 
 
 def _line_mentions_dotfolder(dotfolder: str, line: str) -> bool:
-    pattern = rf"(?<![A-Za-z0-9_.-]){re.escape(dotfolder)}/?(?![A-Za-z0-9_.-])"
+    pattern = rf"(?<![{_IDENTIFIER_CHARS}]){re.escape(dotfolder)}/?(?![{_IDENTIFIER_CHARS}])"
     return re.search(pattern, line) is not None
 
 
