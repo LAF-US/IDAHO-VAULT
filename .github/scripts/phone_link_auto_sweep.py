@@ -116,7 +116,11 @@ def move_one(source: Path, target_dir: Path, log_path: Path) -> bool:
         return False
 
     destination.parent.mkdir(parents=True, exist_ok=True)
-    shutil.move(str(source), str(destination))
+    try:
+        shutil.move(str(source), str(destination))
+    except OSError as exc:
+        write_log(log_path, f"SKIP (move failed: {exc}): {source.name}")
+        return False
     write_log(log_path, f"MOVED ({disposition}): {source.name} -> {destination}")
     return True
 

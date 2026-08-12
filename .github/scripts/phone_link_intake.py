@@ -49,7 +49,7 @@ def get_vault_root(explicit_root: Path | None = None) -> Path:
         return require_existing_dir(Path(env_root), "IDAHO_VAULT_ROOT")
 
     script_dir = Path(__file__).resolve().parent
-    vault_root = script_dir.parent.parent
+    vault_root = require_existing_dir(script_dir.parent.parent, "Fallback vault root")
     if not (vault_root / ".git").exists():
         print(f"Warning: no .git found at {vault_root}, proceeding anyway")
     return vault_root

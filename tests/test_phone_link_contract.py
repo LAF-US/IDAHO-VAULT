@@ -14,8 +14,9 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 def _load_module(module_name: str, relative_path: str):
     script_path = PROJECT_ROOT / relative_path
     spec = importlib.util.spec_from_file_location(module_name, script_path)
+    if spec is None or spec.loader is None:
+        raise ImportError(f"Could not load module spec for {module_name} at {script_path}")
     module = importlib.util.module_from_spec(spec)
-    assert spec.loader is not None
     spec.loader.exec_module(module)
     return module
 
@@ -27,13 +28,14 @@ class PhoneLinkContractTest(unittest.TestCase):
             ".github/scripts/phone_link_auto_sweep.py",
         )
 
-        explicit_root = PROJECT_ROOT / "explicit-vault-root"
-        explicit_root.mkdir(exist_ok=True)
-        with unittest.mock.patch.dict(os.environ, {"IDAHO_VAULT_ROOT": r"C:\ignored"}, clear=False):
-            root, source = module.resolve_vault_root(explicit_root)
+        with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as workspace:
+            explicit_root = Path(workspace) / "explicit-vault-root"
+            explicit_root.mkdir()
+            with unittest.mock.patch.dict(os.environ, {"IDAHO_VAULT_ROOT": r"C:\ignored"}, clear=False):
+                root, source = module.resolve_vault_root(explicit_root)
 
-        self.assertEqual(root, explicit_root.resolve())
-        self.assertEqual(source, "argument")
+            self.assertEqual(root, explicit_root.resolve())
+            self.assertEqual(source, "argument")
 
     def test_python_watcher_uses_env_vault_root_when_no_argument_is_supplied(self) -> None:
         module = _load_module(
@@ -41,13 +43,14 @@ class PhoneLinkContractTest(unittest.TestCase):
             ".github/scripts/phone_link_auto_sweep.py",
         )
 
-        env_root = PROJECT_ROOT / "env-vault-root"
-        env_root.mkdir(exist_ok=True)
-        with unittest.mock.patch.dict(os.environ, {"IDAHO_VAULT_ROOT": str(env_root)}, clear=False):
-            root, source = module.resolve_vault_root()
+        with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as workspace:
+            env_root = Path(workspace) / "env-vault-root"
+            env_root.mkdir()
+            with unittest.mock.patch.dict(os.environ, {"IDAHO_VAULT_ROOT": str(env_root)}, clear=False):
+                root, source = module.resolve_vault_root()
 
-        self.assertEqual(root, env_root.resolve())
-        self.assertEqual(source, "IDAHO_VAULT_ROOT")
+            self.assertEqual(root, env_root.resolve())
+            self.assertEqual(source, "IDAHO_VAULT_ROOT")
 
     def test_python_watcher_rejects_missing_configured_vault_root(self) -> None:
         module = _load_module(
@@ -86,10 +89,11 @@ class PhoneLinkContractTest(unittest.TestCase):
             ".github/scripts/phone_link_intake.py",
         )
 
-        explicit_root = PROJECT_ROOT / "explicit-vault-root"
-        explicit_root.mkdir(exist_ok=True)
-        with unittest.mock.patch.dict(os.environ, {"IDAHO_VAULT_ROOT": r"C:\ignored"}, clear=False):
-            self.assertEqual(module.get_vault_root(explicit_root), explicit_root.resolve())
+        with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as workspace:
+            explicit_root = Path(workspace) / "explicit-vault-root"
+            explicit_root.mkdir()
+            with unittest.mock.patch.dict(os.environ, {"IDAHO_VAULT_ROOT": r"C:\ignored"}, clear=False):
+                self.assertEqual(module.get_vault_root(explicit_root), explicit_root.resolve())
 
     def test_python_intake_uses_env_vault_root_when_no_argument_is_supplied(self) -> None:
         module = _load_module(
@@ -97,10 +101,11 @@ class PhoneLinkContractTest(unittest.TestCase):
             ".github/scripts/phone_link_intake.py",
         )
 
-        env_root = PROJECT_ROOT / "env-vault-root"
-        env_root.mkdir(exist_ok=True)
-        with unittest.mock.patch.dict(os.environ, {"IDAHO_VAULT_ROOT": str(env_root)}, clear=False):
-            self.assertEqual(module.get_vault_root(), env_root.resolve())
+        with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as workspace:
+            env_root = Path(workspace) / "env-vault-root"
+            env_root.mkdir()
+            with unittest.mock.patch.dict(os.environ, {"IDAHO_VAULT_ROOT": str(env_root)}, clear=False):
+                self.assertEqual(module.get_vault_root(), env_root.resolve())
 
     def test_python_intake_rejects_missing_configured_vault_root(self) -> None:
         module = _load_module(

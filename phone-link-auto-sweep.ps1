@@ -1,4 +1,6 @@
 param(
+    [string]$SourceDir,
+    [string]$VaultDir,
     [Parameter(ValueFromRemainingArguments = $true)]
     [string[]]$Args
 )
@@ -20,5 +22,12 @@ if (-not $python) {
     throw 'Python was not found on PATH.'
 }
 
-& $python.Source $pythonScript @Args
+# Translate the legacy -SourceDir/-VaultDir contract to the Python watcher's
+# --source/--vault-root options before appending any remaining arguments.
+$pythonArgs = @()
+if ($SourceDir) { $pythonArgs += @('--source', $SourceDir) }
+if ($VaultDir) { $pythonArgs += @('--vault-root', $VaultDir) }
+$pythonArgs += $Args
+
+& $python.Path $pythonScript @pythonArgs
 exit $LASTEXITCODE
