@@ -22,6 +22,14 @@ refs=$(cat)
 top=$(git rev-parse --show-toplevel)
 if command -v cygpath >/dev/null 2>&1; then top=$(cygpath -m "$top"); fi
 
+# trufflehog's `git` source clones the repo to a temp dir. Two settings keep
+# that survivable on this vault (84k files, 13GB LFS, ~200-char filenames):
+#   - GIT_LFS_SKIP_SMUDGE=1 (below): clone copies LFS *pointers*, not media.
+#   - core.longpaths=true (per-machine, see GITHOOKS.md): the temp checkout
+#     dies on long filenames without it. If absent, the clone errors and this
+#     hook fails closed (blocks the push) rather than skipping the scan.
+export GIT_LFS_SKIP_SMUDGE=1
+
 blocked=0
 while IFS=' ' read -r local_ref local_oid remote_ref remote_oid; do
   [ -n "$local_ref" ] || continue
