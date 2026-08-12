@@ -1,0 +1,11 @@
+This PR addresses the findings of the Abhorsen's audit of the agent-PR lifecycle, hardening the system against doctrinal drift and race conditions.
+
+- Reverts the demotion of `!README.md` to restore its doctrinal status as the Touchstone Tree.
+- Makes PR risk assessment fully label-based by modifying `auto-pr.yml` and `review_feedback_loop.py`.
+- Refactors 6 workflows to use a standard, idempotent PR creation pattern:
+  - `wayback-preserve.yml`
+  - `wayback-audit.yml`
+  - `vault-ingest.yml`
+  - `linear-brief.yml`
+  - `idaho-leg-scraper.yml`
+  - `daily-rollover.yml`

@@ -1,0 +1,677 @@
+Your branch and 'origin/main' have diverged,
+and have 3 and 2 different commits each, respectively.
+  (use "git pull" if you want to integrate the remote branch with yours)
+Switched to branch 'main'
+Merge made by the 'ort' strategy.
+ !/{ => !}/__!__/! The world is quiet here          |    0
+ .../!/! The world is quiet here/DENOUEMENT.txt     |    0
+ .../!/! The world is quiet here/DOCKET-ARCHIVE.md  |    0
+ .../__!__/!/! The world is quiet here/DOCKET.md    |   44 +-
+ .../Esto Perpetua!/!README.md                      |   52 +
+ .../LEVELSET-ANTIGRAVITY-2026-04-06-PLAN.md        |    0
+ .../LEVELSET-ANTIGRAVITY-2026-04-06-TASK.md        |    0
+ .../LEVELSET-ANTIGRAVITY-2026-04-06-WALKTHROUGH.md |    0
+ .../LEVELSET-ANTIGRAVITY-2026-04-06.md             |    0
+ .../__!__/!/! The world is quiet here/Logan.txt    |    0
+ .../__!__/.claude-haiku-github/SESSION-LOG.md      |    0
+ ...-AND-COURTROOM-EXPLORER-COMPANION-2026-04-13.md |   76 ++
+ !/AGENTS.md                                        |    7 +-
+ !/LEVELSET-REPORT-GEMINI-2026-04-05.md             |    8 +-
+ ...ST-INNER-ROOMS-EXPLORER-COMPANION-2026-04-13.md |   77 ++
+ !/SIG-ALIGNMENT-RE-DECISION-21-2026-04-13.md       |   28 +
+ ...NALS-AND-INBOX-EXPLORER-COMPANION-2026-04-13.md |   85 ++
+ ...ABHORSEN-TO-VAULT-ADVISOR-RE-LAF44-EXHIBIT-A.md |    4 +-
+ .../xkcd-SYNC-ANTIGRAVITY-VAULT-2026-04-13.md      |   24 +
+ .../Esto Perpetua!/README.md                       |   48 -
+ !/agents.json                                      |   30 +-
+ !README.md                                         |    2 +-
+ - Mermaid - GitGraph Diagrams.md                   | 1354 ++++++++++++++++++++
+ ...code Characters from Hieroglyphs to Dingbats.md |   37 +
+ - mermaid.ai - Mindmap  Mermaid.md                 |  457 +++++++
+ .Uranus/stub.txt                                   |    1 +
+ .aaron/stub.txt                                    |    1 +
+ .abel/stub.txt                                     |    1 +
+ .abhorsen/stub.txt                                 |    1 +
+ .abigail/stub.txt                                  |    1 +
+ .abraham/stub.txt                                  |    1 +
+ .adam/stub.txt                                     |    1 +
+ .ally/stub.txt                                     |    1 +
+ .ammit/stub.txt                                    |    1 +
+ .amphitrite/stub.txt                               |    1 +
+ .amun-ra/stub.txt                                  |    1 +
+ .amun/stub.txt                                     |    1 +
+ .andrew/stub.txt                                   |    1 +
+ .anna/stub.txt                                     |    1 +
+ .anne/stub.txt                                     |    1 +
+ .anput/stub.txt                                    |    1 +
+ .antigravity/ANTIGRAVITY.md                        |   41 +
+ .antigravity/MEMORY/ARCHIVE_BRAIN_2026-04-13.md    |   23 +
+ .antigravity/MEMORY/W-LAF-REMEDY.md                |   38 +
+ .antigravity/stub.txt                              |    1 +
+ .anubis/stub.txt                                   |    1 +
+ .aphrodite/stub.txt                                |    1 +
+ .apollo/stub.txt                                   |    1 +
+ .apophis/stub.txt                                  |    1 +
+ .arcus/stub.txt                                    |    1 +
+ .ares/stub.txt                                     |    1 +
+ .argus/stub.txt                                    |    1 +
+ .artemis/stub.txt                                  |    1 +
+ .arthur/stub.txt                                   |    1 +
+ .asmodeus/stub.txt                                 |    1 +
+ .aten/stub.txt                                     |    1 +
+ .athena/stub.txt                                   |    1 +
+ .atum/stub.txt                                     |    1 +
+ .aunt/stub.txt                                     |    1 +
+ .babi/stub.txt                                     |    1 +
+ .bacchus/stub.txt                                  |    1 +
+ .badb/stub.txt                                     |    1 +
+ .baphomet/stub.txt                                 |    1 +
+ .bartholomew/stub.txt                              |    1 +
+ .../BARTIMAEUS-EXPLORER-COMPANION-2026-04-13.md    |   62 +
+ .bartimaeus/stub.txt                               |    1 +
+ .bast/stub.txt                                     |    1 +
+ .bastet/stub.txt                                   |    1 +
+ .bennu/stub.txt                                    |    1 +
+ .bes/stub.txt                                      |    1 +
+ .bicodemus/stub.txt                                |    1 +
+ .billy/stub.txt                                    |    1 +
+ .bob/stub.txt                                      |    1 +
+ .brother/stub.txt                                  |    1 +
+ .caelus/stub.txt                                   |    1 +
+ .cain/stub.txt                                     |    1 +
+ .ceres/stub.txt                                    |    1 +
+ .chronus/stub.txt                                  |    1 +
+ .churchill/stub.txt                                |    1 +
+ .claude/stub.txt                                   |    1 +
+ .codex/stub.txt                                    |    1 +
+ .commander/stub.txt                                |    1 +
+ .cousin/stub.txt                                   |    1 +
+ .crewai/stub.txt                                   |    1 +
+ .cronos/stub.txt                                   |    1 +
+ .daisy/stub.txt                                    |    1 +
+ .daniel/stub.txt                                   |    1 +
+ .david/stub.txt                                    |    1 +
+ .debby/stub.txt                                    |    1 +
+ .dee/stub.txt                                      |    1 +
+ .deepseek/stub.txt                                 |    1 +
+ .deimos/stub.txt                                   |    1 +
+ .demeter/stub.txt                                  |    1 +
+ .dennis/stub.txt                                   |    1 +
+ .diana/stub.txt                                    |    1 +
+ .dionysus/stub.txt                                 |    1 +
+ .divide/stub.txt                                   |    1 +
+ .duamutef/stub.txt                                 |    1 +
+ .duat/stub.txt                                     |    1 +
+ .duncan/stub.txt                                   |    1 +
+ .elijah/stub.txt                                   |    1 +
+ .enemy/stub.txt                                    |    1 +
+ .eris/stub.txt                                     |    1 +
+ .esther/stub.txt                                   |    1 +
+ .eve/stub.txt                                      |    1 +
+ .father/stub.txt                                   |    1 +
+ .finn/stub.txt                                     |    1 +
+ .flamel/stub.txt                                   |    1 +
+ .foe/stub.txt                                      |    1 +
+ .fortuna/stub.txt                                  |    1 +
+ .freya/stub.txt                                    |    1 +
+ .friend/stub.txt                                   |    1 +
+ .gaia/stub.txt                                     |    1 +
+ .gatsby/stub.txt                                   |    1 +
+ .geb/stub.txt                                      |    1 +
+ .gemini/GEMINI.md                                  |    2 +-
+ .gemini/stub.txt                                   |    1 +
+ .general/stub.txt                                  |    1 +
+ .gilgamesh/stub.txt                                |    1 +
+ ...GENT-BOOTSTRAP-EXPLORER-COMPANION-2026-04-13.md |   81 ++
+ .github/scripts/check_dotfolder_anchors.py         |    1 +
+ .github/stub.txt                                   |    1 +
+ ...ATION-CORRIDOR-EXPLORER-COMPANION-2026-04-13.md |   64 +
+ .goliath/stub.txt                                  |    1 +
+ .gonggong/stub.txt                                 |    1 +
+ .google/GOOGLE-EXPLORER-COMPANION-2026-04-13.md    |   48 +
+ .google/stub.txt                                   |    1 +
+ .grok/stub.txt                                     |    1 +
+ .hades/stub.txt                                    |    1 +
+ .hapi/stub.txt                                     |    1 +
+ .hapy/stub.txt                                     |    1 +
+ .hathor/stub.txt                                   |    1 +
+ .haumea/stub.txt                                   |    1 +
+ .hecate/stub.txt                                   |    1 +
+ .heimdall/stub.txt                                 |    1 +
+ .heket/stub.txt                                    |    1 +
+ .hel/stub.txt                                      |    1 +
+ .helen/stub.txt                                    |    1 +
+ .hephaestus/stub.txt                               |    1 +
+ .hera/stub.txt                                     |    1 +
+ .heracles/stub.txt                                 |    1 +
+ .hercules/stub.txt                                 |    1 +
+ .hermes/stub.txt                                   |    1 +
+ .hestia/stub.txt                                   |    1 +
+ .hook/stub.txt                                     |    1 +
+ .horus/stub.txt                                    |    1 +
+ .hyperion/stub.txt                                 |    1 +
+ .hypnos/stub.txt                                   |    1 +
+ .imhotep/stub.txt                                  |    1 +
+ .imsety/stub.txt                                   |    1 +
+ .invidia/stub.txt                                  |    1 +
+ .iris/stub.txt                                     |    1 +
+ .isadora/stub.txt                                  |    1 +
+ .isfet/stub.txt                                    |    1 +
+ .ishmael/stub.txt                                  |    1 +
+ .ishtar/stub.txt                                   |    1 +
+ .isis/stub.txt                                     |    1 +
+ .jake/stub.txt                                     |    1 +
+ .james/stub.txt                                    |    1 +
+ .jaques/stub.txt                                   |    1 +
+ .jesus/stub.txt                                    |    1 +
+ .jezebel/stub.txt                                  |    1 +
+ .joan/stub.txt                                     |    1 +
+ .job/stub.txt                                      |    1 +
+ .john/stub.txt                                     |    1 +
+ .josh/stub.txt                                     |    1 +
+ .judas/stub.txt                                    |    1 +
+ .juno/stub.txt                                     |    1 +
+ .jupiter/stub.txt                                  |    1 +
+ .khepri/stub.txt                                   |    1 +
+ .khnum/stub.txt                                    |    1 +
+ .khonsu/stub.txt                                   |    1 +
+ .king/stub.txt                                     |    1 +
+ .kit/stub.txt                                      |    1 +
+ .kronos/stub.txt                                   |    1 +
+ .lemony/stub.txt                                   |    1 +
+ .levi/stub.txt                                     |    1 +
+ .leviathan/stub.txt                                |    1 +
+ .loki/stub.txt                                     |    1 +
+ .lover/stub.txt                                    |    1 +
+ .lucifer/stub.txt                                  |    1 +
+ .luna/stub.txt                                     |    1 +
+ .maat/stub.txt                                     |    1 +
+ .macha/stub.txt                                    |    1 +
+ .machiavelli/stub.txt                              |    1 +
+ .makemake/stub.txt                                 |    1 +
+ .mars/stub.txt                                     |    1 +
+ .mary/stub.txt                                     |    1 +
+ .matthew/stub.txt                                  |    1 +
+ .matthias/stub.txt                                 |    1 +
+ .mekhit/stub.txt                                   |    1 +
+ .mercury/stub.txt                                  |    1 +
+ .meta/stub.txt                                     |    1 +
+ .michael/stub.txt                                  |    1 +
+ .microsoft/stub.txt                                |    1 +
+ .minerva/stub.txt                                  |    1 +
+ .montu/stub.txt                                    |    1 +
+ .morrigan/stub.txt                                 |    1 +
+ .moses/stub.txt                                    |    1 +
+ .mother/stub.txt                                   |    1 +
+ .mystra/stub.txt                                   |    1 +
+ .neith/stub.txt                                    |    1 +
+ .nemesis/stub.txt                                  |    1 +
+ .nephew/stub.txt                                   |    1 +
+ .nephthys/stub.txt                                 |    1 +
+ .neptune/stub.txt                                  |    1 +
+ .nicholas/stub.txt                                 |    1 +
+ .nick/stub.txt                                     |    1 +
+ .niece/stub.txt                                    |    1 +
+ .nike/stub.txt                                     |    1 +
+ .noah/stub.txt                                     |    1 +
+ .nun/stub.txt                                      |    1 +
+ .nut/stub.txt                                      |    1 +
+ .nyx/stub.txt                                      |    1 +
+ .obsidian/stub.txt                                 |    1 +
+ .oceanus/stub.txt                                  |    1 +
+ .odin/stub.txt                                     |    1 +
+ .op/stub.txt                                       |    1 +
+ .orcus/stub.txt                                    |    1 +
+ .orpheus/stub.txt                                  |    1 +
+ .osiris/stub.txt                                   |    1 +
+ .pan/stub.txt                                      |    1 +
+ .paul/stub.txt                                     |    1 +
+ .perplexity/stub.txt                               |    1 +
+ .persephone/stub.txt                               |    1 +
+ .perseus/stub.txt                                  |    1 +
+ .peter/stub.txt                                    |    1 +
+ .philip/stub.txt                                   |    1 +
+ .phobos/stub.txt                                   |    1 +
+ .pluto/stub.txt                                    |    1 +
+ .poseidon/stub.txt                                 |    1 +
+ .primus/stub.txt                                   |    1 +
+ .prince/stub.txt                                   |    1 +
+ .princess/stub.txt                                 |    1 +
+ .prometheus/stub.txt                               |    1 +
+ .ptah/stub.txt                                     |    1 +
+ .qebehsenuef/stub.txt                              |    1 +
+ .quaoar/stub.txt                                   |    1 +
+ .queen/stub.txt                                    |    1 +
+ .quetzalcoatl/stub.txt                             |    1 +
+ .ra-horakhty/stub.txt                              |    1 +
+ .ra/stub.txt                                       |    1 +
+ .reference-map/stub.txt                            |    1 +
+ .remus/stub.txt                                    |    1 +
+ .rhea/stub.txt                                     |    1 +
+ .robert/stub.txt                                   |    1 +
+ .romulus/stub.txt                                  |    1 +
+ .ruler/stub.txt                                    |    1 +
+ .ruth/stub.txt                                     |    1 +
+ .satan/stub.txt                                    |    1 +
+ .saturn/stub.txt                                   |    1 +
+ .saul/stub.txt                                     |    1 +
+ .scott/stub.txt                                    |    1 +
+ .sedna/stub.txt                                    |    1 +
+ .sekhmet/stub.txt                                  |    1 +
+ .selune/stub.txt                                   |    1 +
+ .serena/SERENA-EXPLORER-COMPANION-2026-04-13.md    |   62 +
+ .serena/stub.txt                                   |    1 +
+ .serqet/stub.txt                                   |    1 +
+ .seshat/stub.txt                                   |    1 +
+ .set/stub.txt                                      |    1 +
+ .seth/stub.txt                                     |    1 +
+ .shakespeare/stub.txt                              |    1 +
+ .shar/stub.txt                                     |    1 +
+ .shezmu/stub.txt                                   |    1 +
+ .shogun/stub.txt                                   |    1 +
+ .shu/stub.txt                                      |    1 +
+ .sibling/stub.txt                                  |    1 +
+ .silvanus/stub.txt                                 |    1 +
+ .simon/stub.txt                                    |    1 +
+ .sister/stub.txt                                   |    1 +
+ .slack/stub.txt                                    |    1 +
+ .sobek/stub.txt                                    |    1 +
+ .sol/stub.txt                                      |    1 +
+ .somnus/stub.txt                                   |    1 +
+ .sphynx/stub.txt                                   |    1 +
+ .talos/stub.txt                                    |    1 +
+ .tawaret/stub.txt                                  |    1 +
+ .tefnut/stub.txt                                   |    1 +
+ .terra/stub.txt                                    |    1 +
+ .tethys/stub.txt                                   |    1 +
+ .thaddeus/stub.txt                                 |    1 +
+ .thomas/stub.txt                                   |    1 +
+ .thor/stub.txt                                     |    1 +
+ .thoth/stub.txt                                    |    1 +
+ .triton/stub.txt                                   |    1 +
+ .trivia/stub.txt                                   |    1 +
+ .uncle/stub.txt                                    |    1 +
+ .venus/stub.txt                                    |    1 +
+ .vesta/stub.txt                                    |    1 +
+ .victoria/stub.txt                                 |    1 +
+ .vulcan/stub.txt                                   |    1 +
+ .yggdrasill/stub.txt                               |    1 +
+ .zagreus/stub.txt                                  |    1 +
+ .zeus/stub.txt                                     |    1 +
+ ...imedia Foundation, Inc. - Character encoding.md |  263 ++++
+ ...- Wikimedia Foundation, Inc. - ISOIEC 8859-1.md |  188 +++
+ ...media Foundation, Inc. - Unicode - Wikipedia.md |  469 +++++++
+ ...dia Foundation, Inc. - Stigmergy - Wikipedia.md |  116 ++
+ ...- Upside-down question and exclamation marks.md |   86 ++
+ ...kimedia Foundation, Inc. - Emoji - Wikipedia.md |  672 ++++++++++
+ ...imedia Foundation, Inc. - Latin-1 Supplement.md |   89 ++
+ ...ontinue to block entrance, Senate in session.md |   12 +
+ ...kasten in 20 Minutes with a Simple List Note.md |   92 ++
+ ... the United States \342\200\223 J. W. Mason.md" |   84 ++
+ ... Political Parties Are Not Illegal in the US.md |   71 +
+ ...nt concept you\342\200\231ve never heard of.md" |  251 ++++
+ 2026-04-08.md                                      |    2 +-
+ ...erena v1.1 - Hooks and New Release Mechanism.md |    9 +
+ 2026-04-12.md                                      |   28 +-
+ 2026-04-13.md                                      |   31 +
+ ADVENTURER-REPORT-2026-04-13.md                    |   58 +
+ AGENTS 1.md                                        |  442 -------
+ AGENTS.md                                          |    2 +-
+ ANTIGRAVITY.md                                     |   41 +
+ BRIEF-ANTIGRAVITY-ALIGNMENT-2026-04-13.md          |   31 +
+ CONSTITUTION.md                                    |    4 +-
+ DAILY NOTE TEMPLATE.md                             |   28 +-
+ DAILY-NOTE-SLIP-EXPLORER-COMPANION-2026-04-13.md   |   69 +
+ DECISIONS.md                                       |   58 +-
+ ENCODING-SWEEP-EXPLORER-COMPANION-2026-04-13.md    |   76 ++
+ INBOX/AI-CAPTURES/NOTEBOOKLM-SOURCE-01-RFC.md      |   85 ++
+ .../NOTEBOOKLM-SOURCE-02-DEAD-SEA-PARABLE.md       |   35 +
+ .../NOTEBOOKLM-SOURCE-03-STATEHOUSE-DISPATCH.md    |   33 +
+ .../NOTEBOOKLM-SOURCE-04-DIALOGUE-LUHMANN.md       |   47 +
+ .../NOTEBOOKLM-SOURCE-05-WATER-RIGHTS-BRIEF.md     |   43 +
+ .../NOTEBOOKLM-SOURCE-06-DEAD-LETTER.md            |   28 +
+ MONTHLY NOTE TEMPLATE.md                           |   13 +
+ PROPOSAL-NEW-ORDER-TAG-SCHEMA-2026-04-13.md        |   53 +
+ PROTOCOL.md                                        |    4 +-
+ QUARTERLY NOTE TEMPLATE.md                         |   13 +
+ ...RRATIVE-BODIES-EXPLORER-COMPANION-2026-04-13.md |   80 ++
+ Serena v1.1 notice.txt                             |    9 +
+ Stigmergy.md                                       |    6 +
+ THRESHOLD-MARKS-EXPLORER-COMPANION-2026-04-13.md   |   80 ++
+ The Bartimaeus Trilogy - Fandom Wiki - Demons.md   |  133 ++
+ VAULT-CONVENTIONS.md                               |   34 +-
+ VAULT-ZONES.md                                     |    2 +-
+ WEEKLY NOTE TEMPLATE.md                            |   13 +
+ YEARLY NOTE TEMPLATE.md                            |   12 +
+ agents.json                                        |   30 +-
+ phone-link-auto-sweep.ps1                          |   10 +-
+ requirements.txt                                   |    4 +-
+ .../AGENT-RUNTIME-EXPLORER-COMPANION-2026-04-13.md |   77 ++
+ scripts/Use-VaultAgentEnv.ps1                      |    9 +-
+ swarm.json                                         |   45 +-
+ 346 files changed, 6556 insertions(+), 629 deletions(-)
+ rename !/{ => !}/__!__/! The world is quiet here (100%)
+ rename !/{ => !}/__!__/!/! The world is quiet here/DENOUEMENT.txt (100%)
+ rename !/{ => !}/__!__/!/! The world is quiet here/DOCKET-ARCHIVE.md (100%)
+ rename !/{ => !}/__!__/!/! The world is quiet here/DOCKET.md (54%)
+ create mode 100644 !/!/__!__/!/! The world is quiet here/Esto Perpetua!/!README.md
+ rename !/{ => !}/__!__/!/! The world is quiet here/LEVELSET-ANTIGRAVITY-2026-04-06-PLAN.md (100%)
+ rename !/{ => !}/__!__/!/! The world is quiet here/LEVELSET-ANTIGRAVITY-2026-04-06-TASK.md (100%)
+ rename !/{ => !}/__!__/!/! The world is quiet here/LEVELSET-ANTIGRAVITY-2026-04-06-WALKTHROUGH.md (100%)
+ rename !/{ => !}/__!__/!/! The world is quiet here/LEVELSET-ANTIGRAVITY-2026-04-06.md (100%)
+ rename !/{ => !}/__!__/!/! The world is quiet here/Logan.txt (100%)
+ rename !/{ => !}/__!__/.claude-haiku-github/SESSION-LOG.md (100%)
+ create mode 100644 !/!/__!__/STILL-POINT-AND-COURTROOM-EXPLORER-COMPANION-2026-04-13.md
+ create mode 100644 !/NEST-INNER-ROOMS-EXPLORER-COMPANION-2026-04-13.md
+ create mode 100644 !/SIG-ALIGNMENT-RE-DECISION-21-2026-04-13.md
+ create mode 100644 !/SIGNALS-AND-INBOX-EXPLORER-COMPANION-2026-04-13.md
+ create mode 100644 !/SIGNALS/xkcd-SYNC-ANTIGRAVITY-VAULT-2026-04-13.md
+ delete mode 100644 !/__!__/!/! The world is quiet here/Esto Perpetua!/README.md
+ create mode 100644 - Mermaid - GitGraph Diagrams.md
+ create mode 100644 - httpswww.compart.comenunicodeU+2E2E - Find all Unicode Characters from Hieroglyphs to Dingbats.md
+ create mode 100644 - mermaid.ai - Mindmap  Mermaid.md
+ create mode 100644 .Uranus/stub.txt
+ create mode 100644 .aaron/stub.txt
+ create mode 100644 .abel/stub.txt
+ create mode 100644 .abhorsen/stub.txt
+ create mode 100644 .abigail/stub.txt
+ create mode 100644 .abraham/stub.txt
+ create mode 100644 .adam/stub.txt
+ create mode 100644 .ally/stub.txt
+ create mode 100644 .ammit/stub.txt
+ create mode 100644 .amphitrite/stub.txt
+ create mode 100644 .amun-ra/stub.txt
+ create mode 100644 .amun/stub.txt
+ create mode 100644 .andrew/stub.txt
+ create mode 100644 .anna/stub.txt
+ create mode 100644 .anne/stub.txt
+ create mode 100644 .anput/stub.txt
+ create mode 100644 .antigravity/ANTIGRAVITY.md
+ create mode 100644 .antigravity/MEMORY/ARCHIVE_BRAIN_2026-04-13.md
+ create mode 100644 .antigravity/MEMORY/W-LAF-REMEDY.md
+ create mode 100644 .antigravity/stub.txt
+ create mode 100644 .anubis/stub.txt
+ create mode 100644 .aphrodite/stub.txt
+ create mode 100644 .apollo/stub.txt
+ create mode 100644 .apophis/stub.txt
+ create mode 100644 .arcus/stub.txt
+ create mode 100644 .ares/stub.txt
+ create mode 100644 .argus/stub.txt
+ create mode 100644 .artemis/stub.txt
+ create mode 100644 .arthur/stub.txt
+ create mode 100644 .asmodeus/stub.txt
+ create mode 100644 .aten/stub.txt
+ create mode 100644 .athena/stub.txt
+ create mode 100644 .atum/stub.txt
+ create mode 100644 .aunt/stub.txt
+ create mode 100644 .babi/stub.txt
+ create mode 100644 .bacchus/stub.txt
+ create mode 100644 .badb/stub.txt
+ create mode 100644 .baphomet/stub.txt
+ create mode 100644 .bartholomew/stub.txt
+ create mode 100644 .bartimaeus/BARTIMAEUS-EXPLORER-COMPANION-2026-04-13.md
+ create mode 100644 .bartimaeus/stub.txt
+ create mode 100644 .bast/stub.txt
+ create mode 100644 .bastet/stub.txt
+ create mode 100644 .bennu/stub.txt
+ create mode 100644 .bes/stub.txt
+ create mode 100644 .bicodemus/stub.txt
+ create mode 100644 .billy/stub.txt
+ create mode 100644 .bob/stub.txt
+ create mode 100644 .brother/stub.txt
+ create mode 100644 .caelus/stub.txt
+ create mode 100644 .cain/stub.txt
+ create mode 100644 .ceres/stub.txt
+ create mode 100644 .chronus/stub.txt
+ create mode 100644 .churchill/stub.txt
+ create mode 100644 .claude/stub.txt
+ create mode 100644 .codex/stub.txt
+ create mode 100644 .commander/stub.txt
+ create mode 100644 .cousin/stub.txt
+ create mode 100644 .crewai/stub.txt
+ create mode 100644 .cronos/stub.txt
+ create mode 100644 .daisy/stub.txt
+ create mode 100644 .daniel/stub.txt
+ create mode 100644 .david/stub.txt
+ create mode 100644 .debby/stub.txt
+ create mode 100644 .dee/stub.txt
+ create mode 100644 .deepseek/stub.txt
+ create mode 100644 .deimos/stub.txt
+ create mode 100644 .demeter/stub.txt
+ create mode 100644 .dennis/stub.txt
+ create mode 100644 .diana/stub.txt
+ create mode 100644 .dionysus/stub.txt
+ create mode 100644 .divide/stub.txt
+ create mode 100644 .duamutef/stub.txt
+ create mode 100644 .duat/stub.txt
+ create mode 100644 .duncan/stub.txt
+ create mode 100644 .elijah/stub.txt
+ create mode 100644 .enemy/stub.txt
+ create mode 100644 .eris/stub.txt
+ create mode 100644 .esther/stub.txt
+ create mode 100644 .eve/stub.txt
+ create mode 100644 .father/stub.txt
+ create mode 100644 .finn/stub.txt
+ create mode 100644 .flamel/stub.txt
+ create mode 100644 .foe/stub.txt
+ create mode 100644 .fortuna/stub.txt
+ create mode 100644 .freya/stub.txt
+ create mode 100644 .friend/stub.txt
+ create mode 100644 .gaia/stub.txt
+ create mode 100644 .gatsby/stub.txt
+ create mode 100644 .geb/stub.txt
+ create mode 100644 .gemini/stub.txt
+ create mode 100644 .general/stub.txt
+ create mode 100644 .gilgamesh/stub.txt
+ create mode 100644 .github/scripts/AGENT-BOOTSTRAP-EXPLORER-COMPANION-2026-04-13.md
+ create mode 100644 .github/stub.txt
+ create mode 100644 .github/workflows/AUTOMATION-CORRIDOR-EXPLORER-COMPANION-2026-04-13.md
+ create mode 100644 .goliath/stub.txt
+ create mode 100644 .gonggong/stub.txt
+ create mode 100644 .google/GOOGLE-EXPLORER-COMPANION-2026-04-13.md
+ create mode 100644 .google/stub.txt
+ create mode 100644 .grok/stub.txt
+ create mode 100644 .hades/stub.txt
+ create mode 100644 .hapi/stub.txt
+ create mode 100644 .hapy/stub.txt
+ create mode 100644 .hathor/stub.txt
+ create mode 100644 .haumea/stub.txt
+ create mode 100644 .hecate/stub.txt
+ create mode 100644 .heimdall/stub.txt
+ create mode 100644 .heket/stub.txt
+ create mode 100644 .hel/stub.txt
+ create mode 100644 .helen/stub.txt
+ create mode 100644 .hephaestus/stub.txt
+ create mode 100644 .hera/stub.txt
+ create mode 100644 .heracles/stub.txt
+ create mode 100644 .hercules/stub.txt
+ create mode 100644 .hermes/stub.txt
+ create mode 100644 .hestia/stub.txt
+ create mode 100644 .hook/stub.txt
+ create mode 100644 .horus/stub.txt
+ create mode 100644 .hyperion/stub.txt
+ create mode 100644 .hypnos/stub.txt
+ create mode 100644 .imhotep/stub.txt
+ create mode 100644 .imsety/stub.txt
+ create mode 100644 .invidia/stub.txt
+ create mode 100644 .iris/stub.txt
+ create mode 100644 .isadora/stub.txt
+ create mode 100644 .isfet/stub.txt
+ create mode 100644 .ishmael/stub.txt
+ create mode 100644 .ishtar/stub.txt
+ create mode 100644 .isis/stub.txt
+ create mode 100644 .jake/stub.txt
+ create mode 100644 .james/stub.txt
+ create mode 100644 .jaques/stub.txt
+ create mode 100644 .jesus/stub.txt
+ create mode 100644 .jezebel/stub.txt
+ create mode 100644 .joan/stub.txt
+ create mode 100644 .job/stub.txt
+ create mode 100644 .john/stub.txt
+ create mode 100644 .josh/stub.txt
+ create mode 100644 .judas/stub.txt
+ create mode 100644 .juno/stub.txt
+ create mode 100644 .jupiter/stub.txt
+ create mode 100644 .khepri/stub.txt
+ create mode 100644 .khnum/stub.txt
+ create mode 100644 .khonsu/stub.txt
+ create mode 100644 .king/stub.txt
+ create mode 100644 .kit/stub.txt
+ create mode 100644 .kronos/stub.txt
+ create mode 100644 .lemony/stub.txt
+ create mode 100644 .levi/stub.txt
+ create mode 100644 .leviathan/stub.txt
+ create mode 100644 .loki/stub.txt
+ create mode 100644 .lover/stub.txt
+ create mode 100644 .lucifer/stub.txt
+ create mode 100644 .luna/stub.txt
+ create mode 100644 .maat/stub.txt
+ create mode 100644 .macha/stub.txt
+ create mode 100644 .machiavelli/stub.txt
+ create mode 100644 .makemake/stub.txt
+ create mode 100644 .mars/stub.txt
+ create mode 100644 .mary/stub.txt
+ create mode 100644 .matthew/stub.txt
+ create mode 100644 .matthias/stub.txt
+ create mode 100644 .mekhit/stub.txt
+ create mode 100644 .mercury/stub.txt
+ create mode 100644 .meta/stub.txt
+ create mode 100644 .michael/stub.txt
+ create mode 100644 .microsoft/stub.txt
+ create mode 100644 .minerva/stub.txt
+ create mode 100644 .montu/stub.txt
+ create mode 100644 .morrigan/stub.txt
+ create mode 100644 .moses/stub.txt
+ create mode 100644 .mother/stub.txt
+ create mode 100644 .mystra/stub.txt
+ create mode 100644 .neith/stub.txt
+ create mode 100644 .nemesis/stub.txt
+ create mode 100644 .nephew/stub.txt
+ create mode 100644 .nephthys/stub.txt
+ create mode 100644 .neptune/stub.txt
+ create mode 100644 .nicholas/stub.txt
+ create mode 100644 .nick/stub.txt
+ create mode 100644 .niece/stub.txt
+ create mode 100644 .nike/stub.txt
+ create mode 100644 .noah/stub.txt
+ create mode 100644 .nun/stub.txt
+ create mode 100644 .nut/stub.txt
+ create mode 100644 .nyx/stub.txt
+ create mode 100644 .obsidian/stub.txt
+ create mode 100644 .oceanus/stub.txt
+ create mode 100644 .odin/stub.txt
+ create mode 100644 .op/stub.txt
+ create mode 100644 .orcus/stub.txt
+ create mode 100644 .orpheus/stub.txt
+ create mode 100644 .osiris/stub.txt
+ create mode 100644 .pan/stub.txt
+ create mode 100644 .paul/stub.txt
+ create mode 100644 .perplexity/stub.txt
+ create mode 100644 .persephone/stub.txt
+ create mode 100644 .perseus/stub.txt
+ create mode 100644 .peter/stub.txt
+ create mode 100644 .philip/stub.txt
+ create mode 100644 .phobos/stub.txt
+ create mode 100644 .pluto/stub.txt
+ create mode 100644 .poseidon/stub.txt
+ create mode 100644 .primus/stub.txt
+ create mode 100644 .prince/stub.txt
+ create mode 100644 .princess/stub.txt
+ create mode 100644 .prometheus/stub.txt
+ create mode 100644 .ptah/stub.txt
+ create mode 100644 .qebehsenuef/stub.txt
+ create mode 100644 .quaoar/stub.txt
+ create mode 100644 .queen/stub.txt
+ create mode 100644 .quetzalcoatl/stub.txt
+ create mode 100644 .ra-horakhty/stub.txt
+ create mode 100644 .ra/stub.txt
+ create mode 100644 .reference-map/stub.txt
+ create mode 100644 .remus/stub.txt
+ create mode 100644 .rhea/stub.txt
+ create mode 100644 .robert/stub.txt
+ create mode 100644 .romulus/stub.txt
+ create mode 100644 .ruler/stub.txt
+ create mode 100644 .ruth/stub.txt
+ create mode 100644 .satan/stub.txt
+ create mode 100644 .saturn/stub.txt
+ create mode 100644 .saul/stub.txt
+ create mode 100644 .scott/stub.txt
+ create mode 100644 .sedna/stub.txt
+ create mode 100644 .sekhmet/stub.txt
+ create mode 100644 .selune/stub.txt
+ create mode 100644 .serena/SERENA-EXPLORER-COMPANION-2026-04-13.md
+ create mode 100644 .serena/stub.txt
+ create mode 100644 .serqet/stub.txt
+ create mode 100644 .seshat/stub.txt
+ create mode 100644 .set/stub.txt
+ create mode 100644 .seth/stub.txt
+ create mode 100644 .shakespeare/stub.txt
+ create mode 100644 .shar/stub.txt
+ create mode 100644 .shezmu/stub.txt
+ create mode 100644 .shogun/stub.txt
+ create mode 100644 .shu/stub.txt
+ create mode 100644 .sibling/stub.txt
+ create mode 100644 .silvanus/stub.txt
+ create mode 100644 .simon/stub.txt
+ create mode 100644 .sister/stub.txt
+ create mode 100644 .slack/stub.txt
+ create mode 100644 .sobek/stub.txt
+ create mode 100644 .sol/stub.txt
+ create mode 100644 .somnus/stub.txt
+ create mode 100644 .sphynx/stub.txt
+ create mode 100644 .talos/stub.txt
+ create mode 100644 .tawaret/stub.txt
+ create mode 100644 .tefnut/stub.txt
+ create mode 100644 .terra/stub.txt
+ create mode 100644 .tethys/stub.txt
+ create mode 100644 .thaddeus/stub.txt
+ create mode 100644 .thomas/stub.txt
+ create mode 100644 .thor/stub.txt
+ create mode 100644 .thoth/stub.txt
+ create mode 100644 .triton/stub.txt
+ create mode 100644 .trivia/stub.txt
+ create mode 100644 .uncle/stub.txt
+ create mode 100644 .venus/stub.txt
+ create mode 100644 .vesta/stub.txt
+ create mode 100644 .victoria/stub.txt
+ create mode 100644 .vulcan/stub.txt
+ create mode 100644 .yggdrasill/stub.txt
+ create mode 100644 .zagreus/stub.txt
+ create mode 100644 .zeus/stub.txt
+ create mode 100644 2001-09-19 - Wikimedia Foundation, Inc. - Character encoding.md
+ create mode 100644 2001-09-19 - Wikimedia Foundation, Inc. - ISOIEC 8859-1.md
+ create mode 100644 2001-10-06 - Wikimedia Foundation, Inc. - Unicode - Wikipedia.md
+ create mode 100644 2002-07-07 - Wikimedia Foundation, Inc. - Stigmergy - Wikipedia.md
+ create mode 100644 2003-06-18 - Wikimedia Foundation, Inc. - Upside-down question and exclamation marks.md
+ create mode 100644 2004-03-08 - Wikimedia Foundation, Inc. - Emoji - Wikipedia.md
+ create mode 100644 2008-03-28 - Wikimedia Foundation, Inc. - Latin-1 Supplement.md
+ create mode 100644 2014-02-20 - The Spokesman-Review - Protesters allowed to continue to block entrance, Senate in session.md
+ create mode 100644 2024-03-05 - Obsidian Observer - I Supercharged My Zettelkasten in 20 Minutes with a Simple List Note.md
+ create mode 100644 "2025-02-03 - JW Mason - Political Parties Are Illegal in the United States \342\200\223 J. W. Mason.md"
+ create mode 100644 2025-05-08 - Left Notes - Political Parties Are Not Illegal in the US.md
+ create mode 100644 "2026-02-01 - Substack - Stigmergy the most important concept you\342\200\231ve never heard of.md"
+ create mode 100644 2026-04-11 - Serena v1.1 - Hooks and New Release Mechanism.md
+ create mode 100644 2026-04-13.md
+ create mode 100644 ADVENTURER-REPORT-2026-04-13.md
+ delete mode 100644 AGENTS 1.md
+ create mode 100644 ANTIGRAVITY.md
+ create mode 100644 BRIEF-ANTIGRAVITY-ALIGNMENT-2026-04-13.md
+ create mode 100644 DAILY-NOTE-SLIP-EXPLORER-COMPANION-2026-04-13.md
+ create mode 100644 ENCODING-SWEEP-EXPLORER-COMPANION-2026-04-13.md
+ create mode 100644 INBOX/AI-CAPTURES/NOTEBOOKLM-SOURCE-01-RFC.md
+ create mode 100644 INBOX/AI-CAPTURES/NOTEBOOKLM-SOURCE-02-DEAD-SEA-PARABLE.md
+ create mode 100644 INBOX/AI-CAPTURES/NOTEBOOKLM-SOURCE-03-STATEHOUSE-DISPATCH.md
+ create mode 100644 INBOX/AI-CAPTURES/NOTEBOOKLM-SOURCE-04-DIALOGUE-LUHMANN.md
+ create mode 100644 INBOX/AI-CAPTURES/NOTEBOOKLM-SOURCE-05-WATER-RIGHTS-BRIEF.md
+ create mode 100644 INBOX/AI-CAPTURES/NOTEBOOKLM-SOURCE-06-DEAD-LETTER.md
+ create mode 100644 MONTHLY NOTE TEMPLATE.md
+ create mode 100644 PROPOSAL-NEW-ORDER-TAG-SCHEMA-2026-04-13.md
+ create mode 100644 QUARTERLY NOTE TEMPLATE.md
+ create mode 100644 ROOT-NARRATIVE-BODIES-EXPLORER-COMPANION-2026-04-13.md
+ create mode 100644 Serena v1.1 notice.txt
+ create mode 100644 Stigmergy.md
+ create mode 100644 THRESHOLD-MARKS-EXPLORER-COMPANION-2026-04-13.md
+ create mode 100644 The Bartimaeus Trilogy - Fandom Wiki - Demons.md
+ create mode 100644 WEEKLY NOTE TEMPLATE.md
+ create mode 100644 YEARLY NOTE TEMPLATE.md
+ create mode 100644 scripts/AGENT-RUNTIME-EXPLORER-COMPANION-2026-04-13.md

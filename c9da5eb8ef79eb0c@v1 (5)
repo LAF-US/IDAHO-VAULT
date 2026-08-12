@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project-specific
+.env
+*.vault.json
+
+# Local machine secrets
+.obsidian/plugins/obsidian-local-rest-api/data.json
+# Swarm state archive (local only)
+.github/swarm/state/archive/
+
+# Swarm operational logs (ephemeral)
+swarm/logs/*
+!swarm/logs/.gitkeep
+.obsidian/plugins/recent-files-obsidian/data.json
+.obsidian/workspace.json
+.obsidian/workspace*.json
+.obsidian/graph.json
+.obsidian/types.json
+
+# Daily notes (ephemeral, personal)
+DAILYNOTES/

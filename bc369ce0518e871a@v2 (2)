@@ -1,0 +1,35 @@
+---
+name: project-windows-ingest
+description: Active rclone push from Windows machine to gdrive-personal:INGEST/windows-2026-05-12 — status as of 2026-05-12 ~09:40
+metadata: 
+  node_type: memory
+  type: project
+  originSessionId: 991fb72a-b8d3-4d86-96cc-83f5f5363a83
+---
+
+Pushing selected folders from C:\Users\loganf to `gdrive-personal:INGEST/windows-2026-05-12/` for archaeology and consolidation on the MacBook 5TB drive.
+
+**Why:** Logan is consolidating scattered digital life across 5 cloud services (~2.3TB total). MacBook Claude will pull everything down to the 5TB drive and do the archaeology/organization work.
+
+**Transfer status as of ~09:40 2026-05-12:**
+| Folder | Status | Notes |
+|---|---|---|
+| `.ssh` | Done | 2 files |
+| `Downloads` | Done | 103 files — HR/FMLA docs, resume |
+| `Documents` | Running | 317GB — VAULT repos + agent debris |
+| `Desktop-SCRATCH` | Running | ~38GB — real assets + scratch |
+| `Videos` | Running | 8.6GB |
+| `Creative-Cloud-Files` | Running | 6.4GB — work Adobe assets |
+
+**Log files:** `D:\rclone-logs\[folder].log`
+
+**Total to push:** ~362GB
+**Destination:** `gdrive-personal:INGEST/windows-2026-05-12/`
+
+**Known issues in INGEST:**
+- Agent-stashed debris throughout Documents (XORXOR/JLPyELZ/ZZZZZ/!!!!! files from April 30 — phantom entries, not uploading real content, purged from Drive)
+- Codex session files in Documents\Codex\ (should be in VAULT repo)
+- IDAHO-VAULT git repos included in full (intentional — gitignore was for public repos only)
+- Multiple duplicate INGEST folders were created and purged during session (race condition when launching parallel rclone jobs — fixed by pre-creating destination before launching jobs)
+
+**How to apply:** If resuming this work, check transfer logs on D:\rclone-logs\ and verify INGEST structure looks clean before MacBook pulls it down.

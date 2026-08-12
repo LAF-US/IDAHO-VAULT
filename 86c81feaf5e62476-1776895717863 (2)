@@ -1,0 +1,21 @@
+{
+  "pheromones": {
+    "vault.agent.opencode/heartbeat": {
+      "trail": "vault.agent.opencode",
+      "type": "heartbeat",
+      "initial_intensity": 0.8,
+      "current_intensity": 0.8,
+      "last_reinforced": 1776895403.8280506,
+      "emitted_at": 1776895403.8280506,
+      "payload": {
+        "agent": "opencode",
+        "timestamp": 1776895403,
+        "status": "active"
+      },
+      "decay_seconds": 300
+    }
+  },
+  "trails": [
+    "vault.agent.opencode"
+  ]
+}

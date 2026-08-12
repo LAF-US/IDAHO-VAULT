@@ -1,0 +1,31 @@
+pre-push: no upstream configured; checking all files reachable from HEAD
+pre-push: checking secret patterns for commits not on upstream
+secret-pattern guard: possible secret material detected.
+No secret values are shown below; inspect the files locally.
+  - Documentation - Discord - OAuth2 (2).md:399  [generic_secret_assignment]
+  - Documentation - Discord - OAuth2 1 (2).md:399  [generic_secret_assignment]
+  - Documentation - Discord - OAuth2 1.md:399  [generic_secret_assignment]
+  - Documentation - Discord - OAuth2.md:399  [generic_secret_assignment]
+  - Find Adventures Near You, Track Your Progress, Share.md:61  [google_api_key]
+  - Tug Boats & City Scape in Coeur d'Alene, ID.md:41  [google_api_key]
+  .claude/plugins/marketplaces/claude-plugins-official/external_plugins/discord/.npmrc  [secret_path]
+  .claude/plugins/marketplaces/claude-plugins-official/external_plugins/fakechat/.npmrc  [secret_path]
+  .claude/plugins/marketplaces/claude-plugins-official/external_plugins/imessage/.npmrc  [secret_path]
+  .claude/plugins/marketplaces/claude-plugins-official/external_plugins/telegram/.npmrc  [secret_path]
+  .factory/certs/factory-ai-root.pem  [secret_path]
+  .serena/news_read.pkl  [high_entropy_binary]
+  idaho-vault-pre-push.1lnR5r  [high_entropy_binary]
+  idaho-vault-pre-push.4aAokO  [high_entropy_binary]
+  idaho-vault-pre-push.6eFHWQ  [high_entropy_binary]
+  idaho-vault-pre-push.Arey8m  [high_entropy_binary]
+  idaho-vault-pre-push.CZVPXh  [high_entropy_binary]
+  idaho-vault-pre-push.QhSfSC  [high_entropy_binary]
+  idaho-vault-pre-push.Wd4Vad  [high_entropy_binary]
+  idaho-vault-pre-push.e2U1LH  [high_entropy_binary]
+  idaho-vault-pre-push.i5JLJH  [high_entropy_binary]
+  idaho-vault-pre-push.xyDOB0  [high_entropy_binary]
+  index  [high_entropy_binary]
+  logs - Shortcut.lnk  [high_entropy_binary]
+  msgstore-increment-1.db.crypt14  [high_entropy_binary]
+Move secrets to 1Password or environment variables before committing.
+error: failed to push some refs to 'https://github.com/LAF-US/IDAHO-VAULT.git'

@@ -1,0 +1,19 @@
+---
+name: project-idaho-vault
+description: IDAHO-VAULT is a deliberate metaproject with dedicated GCS buckets — do not include in personal file consolidation
+metadata: 
+  node_type: memory
+  type: project
+  originSessionId: 991fb72a-b8d3-4d86-96cc-83f5f5363a83
+originSessionId: 991fb72a-b8d3-4d86-96cc-83f5f5363a83
+---
+IDAHO-VAULT is a multi-agent orchestration metaproject at `C:\Users\loganf\Documents\IDAHO-VAULT\` (git repo, GitHub: LAF-US/IDAHO-VAULT). GCS remotes in rclone (`gcs:`, `the-ledger-bucket:`) are its infrastructure — never include in personal backup consolidation.
+
+The project is designing "Vaulted Syntax" — a universal agent handoff protocol inspired by USB's device descriptor pattern, layering MCP (tool connectivity) + A2A Agent Cards (agent identity) + ATProto Lexicon (typed vocabulary). Internal architecture: CANON / DRIVE / RUNTIME / ARCHIVE layers, capability tiers, lane rules, swarm.json registry, signal protocol for agent status/threading.
+
+The MacBook + 5TB drive managed by a Claude instance is VAULT infrastructure, not just personal file organization. Windows machine pushes to Google Drive as the handoff point.
+
+**Git state as of 2026-05-12:**
+- Local `main` branch: ~31 commits ahead of `origin/main`
+- Push blocked: GitHub LFS budget exceeded (3,525 LFS files). Fix: buy LFS data pack at github.com/settings/billing → "Git LFS Data" ($5/mo), then `PATH="/c/Users/loganf/scoop/apps/python/current:$PATH" git push origin main`
+- `defrag-map-share` branch: pushed to origin, contains DEFRAG-MAP.md for MacBook Claude coordination

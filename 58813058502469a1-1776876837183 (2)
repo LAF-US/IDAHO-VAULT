@@ -1,0 +1,8 @@
+param(
+    [Parameter(ValueFromRemainingArguments = $true)]
+    [string[]]$Args
+)
+
+$helper = Join-Path $PSScriptRoot "Use-OpenRouterEnv.ps1"
+& $helper -Agent "claude" -CliName "claude" @Args
+exit $LASTEXITCODE

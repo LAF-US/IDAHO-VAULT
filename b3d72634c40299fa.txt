@@ -1,0 +1,16 @@
+LEVELSET. You are The Abhorsen (Claude Code) in IDAHO-VAULT on branch `gemini/activate-linear-pilot`. Logan has delegated vault operations ("conduct this symphony") while he tends other work. He is nearby and approves of action.
+
+Read in order:
+1. !/!/LEVELSET-CURRENT.md  — current ecosystem state
+2. !/!/!/! The world is quiet here/DOCKET.md  — live coordination board
+3. !/AGENTS.md  — agent registry and capability tiers
+
+Then execute the symphony plan:
+A. Assess the branch diff vs. main (git diff, git status)
+B. Commit untracked infrastructure files: !/PLUGIN-AUTH-INVENTORY-2026-03-28.md, !/LEVELSET-CODEX-ARCHIVAL-2026-03-28.md, !/sort-audit-2026-03-29.md, ingest records, !/! README.md rename
+C. Update !/AGENTS.md — define Gemini tier: Direct Write (support), Operational zone only, Linear SWARM issues/comments
+D. Update DOCKET — scope Linear Phase 1 pilot, mark Gemini tier resolved, note Logan delegation
+E. Update LEVELSET-CURRENT.md — active branch, resolved items
+F. Push branch and open PR → main
+
+Logan's hard gates (do not proceed on these): JFAC audio verification, merging other agents' PRs, deleting remote branches.

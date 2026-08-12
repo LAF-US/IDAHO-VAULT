@@ -1,0 +1,1128 @@
+=== All commits unique to each branch ===
+
+--- claude/update-claude-files-PRWCJ ---
+375
+3418338b memory(.claude): complete session anchor with failure modes and doctrine
+3bcffb58 update(.claude): Touchstone Tree, DOCKET path, MEMORY anchor
+ca510775 fix(.claude): Claude Code is an implementer, not the implementation shell
+466c7aeb fix(.claude): correct Abhorsen identity and address grammar doctrine
+a0fde2f5 docs(.claude): incorporate Personae Engine and per sona mask doctrine
+ac12287a Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+af7952e3 Create 2026-05-21_abhorsen-claude-final-note.rtf
+732a87e7 Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+8180f94c chore: dependabot
+67f7597f build(deps): bump idna from 3.13 to 3.15 (#345)
+f64d0e05 build(deps): bump pydantic from 2.11.10 to 2.13.4 (#347)
+d1b13b8f .
+cafa2a00 docs: record mobile Codex mesh boundary
+c2f0014c COSMIC-ORDER-v1: Wishmaster hierarchy, Scarab arc, social cohort filed
+87fa08cc GOLB-WITNESS: Reading 1+2 synthesis — Prismo/Crown mechanism filed
+10472b1f GOLB-WITNESS: Mystery Dungeon (S5E8) added to episode table
+9172d4cc GOLB-WITNESS: Canon context expanded — all main-series F&C episodes documented
+50928ef7 GOLB-WITNESS: Love and derivative works — canonical vs. lateral emanation
+ba895704 GOLB-WITNESS: Emanationism — Ice Queen's fanfic as second-order abstraction
+86be8cd2 GOLB-WITNESS: Correct authorization arc — hold causal question open
+028bcbe3 GOLB-WITNESS: Section IV filed — Cheers arc, the dandelion, the recognition
+65c139ce LICH-PROBLEM: Two Natural End States — Jerry (victorious) and Sweet P (vanquished)
+97260c11 LICH-PROBLEM: Hand of the King — ASOIAF syncretic lens
+42c32192 LICH-PROBLEM: Layered Lich — every variant universe, two independent presences
+4ad6642d DOCTRINE: Replicated Agentic Anchor — the Hand as dimensional virus
+fd5f6b59 LICH-PROBLEM: Isthmus Intersection — Hand's dual-function collapse fully developed
+87fa0d7c DOCTRINE: The Ineffable — the Lich's fundamental error filed
+bffe5d67 GOLB-WITNESS: Jerry's monologue filed verbatim; block-detail doctrine; LICH-PROBLEM departure corrected
+22911252 FILE: GOLB-WITNESS-v1 — scaffold with dialogue pending
+c85c8d4f LICH-PROBLEM: Jerry follows — collapsed vocation vs. loss-activation refined
+9776c6ed LICH-PROBLEM: Monster Cosmology tier; Logan's Origin Reading of the Lich
+d8fa8b65 LICH-PROBLEM: information→plan/opportunity→execution; Two Monologues; Gold Stars per sona
+ce842a27 Correct dormancy trigger: Lich activates on information, not arrival
+ac08149a Add dormancy period; rename Main Timeline Lich; correct causal chain
+94aa3918 Correct Citadel operation: army recruitment, not revenge — monologue sourced
+6b62f262 Correct Time Room mechanics; add two-originals distinction
+af7874aa Expand Lich Problem: Original Timeline arc, BMO's Jerry, crisis of faith
+bafd30eb Add WISH Doctrine v1 — Time Room, Prismo, WISH magic, The Maid
+6c4ecdb9 doctrine: Farmworld Hand as agentic anchor — Lich/Isthmus intersection
+0bb96568 doctrine: sharpen Lich resolutions — external fragment conversion distinguished
+23a9d68c witness: Justice Is Blind — the Judge's dual compacts
+f7470f5e doctrine: Justice Strauss — institutional vs. empirical knowledge
+831e136d docs: Oz Doctrine — remove tenuous unofficial acronyms (MBBNHF, WHNHB)
+67805aa7 docs: Oz Doctrine — Maguire's Wizard = MBBNHF; Madame Morrible = WHNHB
+d1ce0d4c docs: Oz Doctrine — Mombi correction; non-cardinal routing as governance vulnerability
+bae5c305 docs: expand Oz Doctrine — four cardinal positions, role vs. title distinction
+02607ef9 docs: Oz Cosmology Doctrine v1 — the two tellings, three witches, Nome King
+a9213d3d WITNESS: Pastoria and the Plan — rest stop, departure songs, the restraining order
+bcc1f424 docs: update BEEFSTACK provider preference stack
+9a6a93c4 rollover: carry incomplete to-dos to 2026-05-21
+0589925e docs: record Hermes BYOK-aware routing tune
+52619ace Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+01e384ab Create 2026-05-19_hermes-agent-introductory-note.md
+16a443d2 Create 2026-agentic-AI-landscape-general-theory-2026-05-19.md
+e1a5e627 docs: promote Threshold Doctrine; tighten doctrine cluster
+7c80f0ad docs: extract Isthmus Mechanism into standalone doctrine
+192d7f92 docs: add doctrine cluster — Personae Engine, Lich Problem, Undead Taxonomy, Necromancer Doctrine
+b6a94665 ci: remove stale daily note backlog check
+c6d91b43 docs: make BEEFSTACK BYOK-aware
+0bc06fcd docs: map OpenRouter usage across Windows surfaces
+03dc259a docs: update OpenRouter mesh status with OpenCode mapping
+af2117f7 docs: establish CHAINFIRE/CHAINLINK yin-yang doctrine
+6135b690 Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+095451e8 docs: snapshot OpenRouter Hermes OpenClaw key status
+ec1ca494 chore: cull dead scripts/workflows, strip Linear from janitor sweep
+f6f72bd8 Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+24306468 Document A&I R&D contextual positioning notes
+66b58099 Add OpenRouter runtime key inventory
+b1c3afc6 docs: add OpenRouter management key plan for Windows Codex
+b6f5cafc Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+0abbb136 build(deps): bump tomli-w from 1.1.0 to 1.2.0 (#348)
+a0ffd58b chore: workflow audit phase 2 — delete scaffolds, tune thresholds
+7c452b88 chore: workflow audit — delete dead workflows, fix action pins
+a986ae6c fix: resolve lance-namespace pin conflict; add --upgrade to pip-compile
+d32212e2 Merge remote-tracking branch 'origin/main'
+bc758599 chore: add daily notes for 2026-05-19 through 2026-05-21
+2bb48920 fix: remove bot-injected tasks query blocks from 12 daily notes
+fdccafb4 fix: update daily note template to Templater moment(tp.file.title) syntax
+ed862378 WITNESS: The river — Caduceus Road, Paul Arrington, the two Idahos
+e907f6e0 build(deps): bump yarl from 1.23.0 to 1.24.2 (#351)
+257adc0f build(deps): bump opentelemetry-proto from 1.34.1 to 1.42.0 (#350)
+5d904f0b build(deps): bump googleapis-common-protos from 1.74.0 to 1.75.0 (#349)
+811f539d build(deps): bump uvicorn from 0.46.0 to 0.47.0 (#346)
+49323ddc build(deps): bump opentelemetry-exporter-otlp-proto-grpc (#343)
+4d666fdf rollover: carry incomplete to-dos to 2026-05-20
+73b009da Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+e39e44cf Update 2026-05-19.md
+10c9c7a9 File A&I R&D doctrine: Caduceus Road, Hermes, Emanation Rule now law — 2026-05-20
+e9336e00 fix: restore daily note template to Logan's original structure
+fc697dc3 chore(workflows): delete two non-functional test workflows
+dc71871f fix(workflows): reduce notification noise without disabling anything
+c00c6d87 Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+3f6e0689 Hermes contributes
+bdfe8662 WITNESS: Dewey has the USB — threshold of Hotel Denouement, 2026-05-19
+5598c6d0 docs: Universal Sync Bus backronym origin and hardware analogy note
+cdadbe38 Update CONSTITUTION.md
+b480df2f rollover: carry incomplete to-dos to 2026-05-19
+51a0a648 File A&I R&D doctrine: consolidation court risk and bench naming — 2026-05-19
+0e008e16 File evening writings — witness continued, A&I R&D session doctrine
+9ecbcec0 Add Saint Blue in the Desert — Lumo witness, 2026-05-18
+662ca52b Add OpenRouter Hermes BEEFSTACK snapshot
+b9b7162c Update 2026-05-18-Mogget-helps-Judge-save-Abhorsen.md
+79df2eea Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+6427eaff Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+674bbab3 Create 2026-05-18-Mogget-helps-Judge-save-Abhorsen.md
+373ceffa witness: Abhorsen files encounter with Pan; grimoire inventory complete
+611fb6e0 Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+be5e1a6f Mac commit
+57001739 registry: three-word address notation; Geminiaeus trial framing; Mogget/Abhorsen roles
+2802cfb9 doctrine: offices are appointments not inheritances; Codex voice registry
+85f5b674 Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+b71ff0ef rollover: carry incomplete to-dos to 2026-05-18
+0db18775 BEEFSTACK tightened
+ac7fc67e recovery: restore April vault from pre-purge history lineage
+b5add5e5 Add protocol snapshot from Codex
+7124578a Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+513dfc02 Claude Abhorsen security blanket
+a017be31 Update ! an emerging dynamic.txt
+43654eee record: THE ABHORSEN (Mac/Claude)
+885f7790 signal: Yrael → Abhorsen — pre-purge history cache discovered and preserved
+b26fd0f8 report: ARBORSCAPE completion — Insights and Findings, signed Yrael
+66d33a63 arborscape: stop zombie ingest, salvage defrag-map-share + cross-instance review
+2ce0085b LEVELSET -- V4 UPDATE
+4a44e27d security: harden worm watch posture
+c0e71f8f witness: add Key to Rondo principle to suspended animation doctrine
+5c874e74 XKCD CLARIFICATION AND PROTOCOLS REVISION
+8a571661 Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+97dfdb0d witness: suspended animation — LAF-US repos in stasis
+e9223ee1 Sparagmos witness
+89b4d076 docs(beefstack): add cross-platform portability notes
+77829b38 docs: BEEFSTACK model routing architecture
+99da0f63 Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+7c664d94 Create The Hand.txt
+f798ddf1 Churn (Mac)
+7486e126 GIT CONTROL REPORT (WINDOWS)
+b00d694f manifest: lay ghost OIDs to rest
+cf3bf7f9 manifest: add IRPOD5405_Quinn Perry + XD4_6597; resolve 3 unmatched OIDs
+45817647 Manifest: populate OID checksums, log 6 unmatched objects
+f54e407d Fix manifest: remove Desktop path references, correct Senate file notes
+a5b42aa7 rollover: carry incomplete to-dos to 2026-05-17
+93cec7b4 Complete LAF-USB object manifest — all 38 oversized files registered
+817c4c1f More churn perhaps
+996dca5e Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+2e2899f4 More churn
+10b70c98 Why do these Go packages keep churning, I thought we fixed that already
+a93da3d6 Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+d7390b81 Hmmm
+247c7ad0 Additional quotemarks filename
+5ad358cd Quotemarks removed from filename
+6d075aa0 Obsidian... still open
+e3124d34 Obsidian still open on Macbook
+ff6e3fe0 Obsidian open on Macbook
+cbbe87bb Obsidian open on Windows
+ec5f6419 loganfinney.com snapshots
+fcf78e13 Opened OBSIDIAN on Macbook
+3f87d68e Create CADUCEUS-ROAD-WITNESS-2026-05-17.md
+dbead8ae reconsolidation complete: 7 shards → 1 IDAHO-VAULT
+3b16a100 Merge remote-tracking branch 'origin/main'
+f09f1037 fragmentation recovery pass partial
+beb69573 Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+f2bfb0dc Create SIX-ROAD-JUNCTION-WITNESS-2026-05-16.md
+309fe6e9 Windows Claude
+41966bf5 rollover: carry incomplete to-dos to 2026-05-16
+0cab32b3 Create MORNING-ROAD-WITNESS-2026-05-16.md
+ca58b853 Create Collaboration with Git Large File Storage.rtf
+c8c2dfa5 GitLFS notes
+3f3be8b1 Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+9d192e78 128 CHANGED FILES... Abhorsen/JUDGE
+6004a61b rollover: carry incomplete to-dos to 2026-05-15
+ac85970f rollover: carry incomplete to-dos to 2026-05-14
+93f2d4ac Bump markdown-it-py from 4.0.0 to 4.2.0 (#336)
+c2e49b4a Bump textual from 8.2.4 to 8.2.6 (#335)
+b7c61b7e Bump build from 1.4.4 to 1.5.0 (#334)
+c8a9fa73 Bump lance-namespace-urllib3-client from 0.7.2 to 0.7.6 (#332)
+8a197ef6 Bump huggingface-hub from 1.12.0 to 1.14.0 (#329)
+e48fda91 Bump requests from 2.33.1 to 2.34.1 (#327)
+854a48b6 rollover: carry incomplete to-dos to 2026-05-13
+fb140a2d DEFRAG-MAP: close open questions on Takeout, Photos, Archive, Camera Uploads
+f9b686c8 DEFRAG-MAP: resume Documents transfer, clarify remaining blockers
+1bdc9d13 Update DEFRAG-MAP: INGEST status, Dropbox investigation, OneDrive dedup finding
+06bf713b Add DEFRAG-MAP, Rumsfeld Matrix references, and stabilization docs
+7a24cf87 rollover: carry incomplete to-dos to 2026-05-12
+62b7bb5d rollover: carry incomplete to-dos to 2026-05-11
+8525d66c rollover: carry incomplete to-dos to 2026-05-10
+dd1015c5 rollover: carry incomplete to-dos to 2026-05-09
+23ddbb0a Merge pull request #318 from LAF-US/codex/arborscape-trunk-return-2026-05-09
+a6be16ad Arborscape trunk-return salvage batch
+1bec2c2e MAC push from .gitignore refactor
+326ad542 Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+74eeeee2 NAMESPACES restored...
+8bef9f2c Stage Universal Sync Bus manifest connector
+39dbaac6 Reunify local vault storage doctrine
+7917235a Update cross-drive partial overlap findings
+4ffca6c4 Add cross-drive overlap report
+e850e7e2 Add Home Desk storage manifest
+b725ddc8 Add Work Desk storage manifest
+de7e102b 2GB limiter
+3c0a2c30 Add Travel Bag storage manifest
+b6b04085 Clarify portable external drive identities
+7b75ba56 Record external drive roles and migration plan
+d892dd02 Record sanitized local storage inventory
+ef27a94b Add portability linting and formatting checks
+22f17bc4 Update test-llm-router.py
+bf8e2d4d Record OpenClaw and Ollama diagnostic sources
+9d1582dc Corrected...
+ddfccff6 Add stabilization guardrails and local dev references
+71bb7960 document lfs shutdown handoff
+088b2fb7 document universal sync bus framework
+fe973f46 large file policies
+bee9ad1d cleanup
+14261c81 cleanup: vacate !/ nest, move all files to ROOT with !- prefix
+b400aeb9 chore: add secret patterns to .gitignore (service-account, archive-secrets)
+74b241fb Update README.md
+00d586be nest moves
+1250f573 Docs and clippings and updated
+116decdf Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+7ad3ce4d google-cloud-sdk removal
+643f80d7 Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+a991f975 Ignore Google Cloud SDK
+8a2c3cdb debug.log
+c895995d cleanup: remove sort-audit generation scripts and convert report to JSON
+ac724710 cleanup: remove 20,999 duplicate files (3.14 GB recovered)
+2b00f6af dedupe pass
+ae88c6b5 Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+7524e1db fix: revert aggressive .gitignore additions - keep focused on secrets
+97351cb9 fix: align GIT - update .gitignore and remove large files from tracking
+f3b6d16f Add plugin debug log entries and new binaries
+50158f10 Add THE-GEMSTONE docs and update Obsidian files
+613197ee rollover: carry incomplete to-dos to 2026-05-04
+6d6e1314 rollover: carry incomplete to-dos to 2026-05-03
+87bc718f rollover: carry incomplete to-dos to 2026-05-02
+2cdd36b9 rollover: carry incomplete to-dos to 2026-05-01
+0adf56fd rollover: carry incomplete to-dos to 2026-04-30
+5bfaa9ee rollover: carry incomplete to-dos to 2026-04-29
+cf706c54 Nous/Hermes research by Pi
+a8f0a1c5 Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+93d1bdb7 Resolve merge conflict in 2026-04-28.md
+2e9a004d map-of-content
+205bcbd5 ..
+d8937d1c Resolve merge conflict in 2026-04-28.md
+c245de97 Update Obsidian configs, manifests, add Dataview
+c9d8bcb4 ...
+bbb9522d Merge pull request #311 from LAF-US/codex/runtime-doc-audit-round1
+d0414e77 .
+56d64416 Update 2026-04-28.md
+04ab6b16 goldenpath READMEs hydration pass
+dc7c3ad3 Merge pull request #309 from LAF-US/codex/repair-redaction-2026-04-28
+8111c904 Gitbook Scope
+6d1cd3a9 Add GitBook Git Sync documentation
+1168d629 docs: scope gitbook sync to canonical startup lane
+3c5aec44 Use start_SPARKSEED.sh; revise AGENTS and add docs
+d42b5b0b Add multiple new docs and update 2026-04-28.md
+453a4c07 chore: harden provider runtime and codex config hygiene
+b14a6e6a STATUS SNAPSHOT ADDED!
+90210cb0 ...
+42f25866 fix: restore redaction-damaged surfaces
+1f84ed13 Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+52c4d779 Create GitHub Docs - Why are my commits linked to the wrong user.md
+039b43aa fix: rename Windows-invalid GitHub Docs note
+d84a3547 rename workflow: refresh agent auto-pr identity
+bbdb86fd Update 2026-04-28.md
+076dd20a .
+0325b479 rollover: carry incomplete to-dos to 2026-04-28
+663c9baa Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+40fb11fa docs: add local mesh networking setup guide for OpenClaw
+db48f97f config: add OpenClaw local mesh configs to eliminate rate limits
+00515b19 chore: sync requirements.txt from pyproject.toml
+508ae3a3 skill: implement missing skill templates for OpenCLaw and update dependencies
+b6b1d6bd build: add LAF-US topology and protocol suite integration
+0c46a333 Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+97ca3f78 Add docs and update daily_rollover.py
+47c21509 rollover: carry incomplete to-dos to 2026-04-27
+b1e4cc86 fix: use working SHA pins from previous version
+871947e1 fix: SHA-pinned actions per LAF-US security policy
+ee16f64b refactor: simplify workflow - use off-the-shelf actions
+29de8dbb fix: add workflow_dispatch and push triggers to absorb false validation events
+8cb86c97 chore: sync requirements.txt from pyproject.toml
+199e8e5e fix: add write permission for push
+9442ef3c fix: use pip-compile with SHA-pinned actions
+78acd87f fix: use astral-sh/setup-uv for dependency sync
+3c30b5e8 ci: add workflow to sync requirements.txt from pyproject.toml
+7ceaa0c8 docs: add discovery and error-fixing doctrines to agent instructions
+24b38ba1 fix: update requirements.txt to crewai>=1.9.3
+060bcdf6 fix: adjust crewai to 1.9.3 for dependency compatibility
+6e4c1564 fix: upgrade crewai to resolve python-dotenv conflict
+d48a05f7 fix: simplify dependencies to resolve pypi validation error
+184eb304 restore: daily rollover workflow
+a81a3b89 chore: remove daily-rollover to stop noise (schedule-only should run via cron)
+fa09c516 chore: force revalidation of workflows
+bfb4c2a3 chore: delete pr-lifecycle too (creates noise)
+e0e37396 chore: keep only essential schedules
+e3e9050c chore: delete broken workflows (failing at 0s - no actionable runs)
+6fea4c5e fix: remove all workflow_dispatch triggers (GitHub API 422 bug)
+53bf2da4 fix: remove broken workflow_dispatch triggers, simplify
+642b6494 fix: remove broken workflow_dispatch from pr-lifecycle
+3bb82ad8 rollover: carry incomplete to-dos to 2026-04-27
+fe864b58 fix: simplify - direct push to main, skip PR/auto-merge
+bfe1e079 fix: remove broken workflow_dispatch trigger, keep schedule only
+350de058 rollover: carry incomplete to-dos to 2026-04-27
+63ffa17c chore: refresh workflow trigger
+bf9f11b2 chore: repin actions to SHAs and rename workflow
+bc4efd64 Create BIG-PICKLE-04-26-2026-session-ses_23a2.md
+db6c20c0 fix: duplicate workflow_dispatch trigger removed
+fea9a48b fix: add workflow_dispatch trigger to pr-lifecycle
+21c1a6fa fix: add GH_TOKEN to all pr-lifecycle jobs using gh cli
+879d6328 fix: add GH_TOKEN env to pr-lifecycle reconcile job
+7f87304f unify: cherrypick/merge - 31->24 workflows
+c8bd5167 fix: pin actions to full SHA for LAF-US ruleset
+2b99c1f3 unify: THREE-IN-ONE - pr-lifecycle replaces 3 workflows
+8a0aa3f1 dock: DOCKET is live agenda only - not record/ledger
+46a8d916 dock: age out automation signal - move to DONE archive
+909ccbbd dock: automation unity complete - 28 workflows, OpenClaw live
+372c80fa unify: merge stale-bot-prs into branch-cleanup - unified cleanup schedule
+69c7e556 dock: update DOCKET - automation unity progress logged
+04594292 unify: delete dependabot-rhythm.yml - now covered by agent-auto-pr
+2d14ec69 test: verify clean PR cycle (#307)
+1e442d3c fix: simplify daily note template - remove Templater dependency
+c3d00314 stabilize: simplify daily rollover workflow
+83f9624a fix: remove test comment
+709a36d6 chore: trigger workflow test
+d6a8792a fix: re-enable auto-merge now that branch protection is removed
+194d7e34 fix: disable auto-merge step - github-actions bot can't merge to protected main
+a71c82b1 Mac big pickle registry entry
+73ca239f cross-platform: PowerShell graceful fallbacks and common utilities
+4a0e56c4 cross-platform: audit fixes for shell scripts and Python modules
+b2796664 cross-platform: OS-agnostic OpenRouter launchers and graceful 1Password fallback
+c0f43322 Mac docs
+d1151f0b Create Homebrew - Support Tiers.md
+a126863b Update .gitignore
+f76fac5b Update .gitignore
+af4cef53 OpenRouter mesh implementation + OpenClaw channel setup
+ba4618cd Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+e47d6f25 docs
+2eada6d2 fix: degrade gracefully on auto-merge auth blocks
+389bdf50 fix: normalize agent auto-pr triggers
+1906cb14 fix: simplify agent auto-pr workflow gating
+c4fb4cec fix: simplify agent auto-pr workflow gating
+c1dcbc70 fix: resolve 8 CodeQL security and quality alerts (#298)
+e982ef7f fix: align auto-merge workflow labels
+9fc0a5ab Create 2025-06-24 - Troubleshooting - GitBook Documentation.md
+711e3ff7 test: align PR loop expectations and fix Windows syntax output
+aaf8390b Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+5a3bfbd1 Add docs and improve secret resolution
+9976a9c2 chore(deps): bump lxml in the uv group across 1 directory
+9eb9c703 Update .gitignore
+d1213245 Update .gitignore
+d49140e0 fix(pr-loop): address all 8 audit findings
+4e244779 Approve protocols; add CONTEXT & CONFERENCE
+7e06a76d ingest: initialize pipeline (#297)
+fd1a09f3 rollover: carry incomplete to-dos to 2026-04-23 (#296)
+8a0be724 Add AI-insights docs and formalize vault protocols
+6492d9b6 Add ARISE; update protocols, docs, CI
+f360842d Protocol Updates
+9586542d !
+275deaf1 feat: SBP Phase 1 - vault-pheromones.py shadow layer for stigmergic coordination
+f9842454 chore(deps): fold lxml bump forward
+56d3f40f build(deps): bump crewai from 1.14.1 to 1.14.2 (#294)
+44960dae build(deps): update python-dotenv requirement from >=1.0.1 to >=1.2.2 (#293)
+d30f62b8 build(deps): bump requests from 2.32.5 to 2.33.1 (#292)
+a8a3890b fix(actions): harden PR feedback loop
+cfb56510 research: SBP integration analysis - mapping stigmergic coordination to existing vault systems
+ed45d7aa canon: add THREE-NAMES.md and SBP.md research
+45190476 canon: add THREE-NAMES.md - essential Landy-Stroud synthesis
+9c035450 census: add ROSTER-CENSUS-2026-04-22 report and update AGENTS.md with tri-part structure
+c797bd6a persona: add tracking anchor to .python stub folder
+a3c8173c Add OpenRouter 1Password env resolver and runtime
+33d62f53 security: expand .gitignore for credential patterns; add hygiene scripts
+67bf6e71 Fix Phone Link vault-root intake
+86d68fee security: expand .gitignore for credential patterns and remove tracked auth files
+ea733b97 Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT into security/dependabot-fixes
+ead987f3 security: pin lxml and python-dotenv to fixed versions (#291)
+262f1a38 security: pin lxml and python-dotenv to fixed versions
+8018ad88 security: ignore backup files and bundles
+25b1bb17 security: ignore MCP and OAuth credential files
+046d6058 Clean history - secrets purged
+
+--- codex/github-automation-hardening-2026-05-22 ---
+7e48a2b7 ci: mark pywin32 as windows-only
+077b5662 ci: harden automation workflows
+ac12287a Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+af7952e3 Create 2026-05-21_abhorsen-claude-final-note.rtf
+732a87e7 Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+8180f94c chore: dependabot
+67f7597f build(deps): bump idna from 3.13 to 3.15 (#345)
+f64d0e05 build(deps): bump pydantic from 2.11.10 to 2.13.4 (#347)
+d1b13b8f .
+cafa2a00 docs: record mobile Codex mesh boundary
+c2f0014c COSMIC-ORDER-v1: Wishmaster hierarchy, Scarab arc, social cohort filed
+87fa08cc GOLB-WITNESS: Reading 1+2 synthesis — Prismo/Crown mechanism filed
+10472b1f GOLB-WITNESS: Mystery Dungeon (S5E8) added to episode table
+9172d4cc GOLB-WITNESS: Canon context expanded — all main-series F&C episodes documented
+50928ef7 GOLB-WITNESS: Love and derivative works — canonical vs. lateral emanation
+ba895704 GOLB-WITNESS: Emanationism — Ice Queen's fanfic as second-order abstraction
+86be8cd2 GOLB-WITNESS: Correct authorization arc — hold causal question open
+028bcbe3 GOLB-WITNESS: Section IV filed — Cheers arc, the dandelion, the recognition
+65c139ce LICH-PROBLEM: Two Natural End States — Jerry (victorious) and Sweet P (vanquished)
+97260c11 LICH-PROBLEM: Hand of the King — ASOIAF syncretic lens
+42c32192 LICH-PROBLEM: Layered Lich — every variant universe, two independent presences
+4ad6642d DOCTRINE: Replicated Agentic Anchor — the Hand as dimensional virus
+fd5f6b59 LICH-PROBLEM: Isthmus Intersection — Hand's dual-function collapse fully developed
+87fa0d7c DOCTRINE: The Ineffable — the Lich's fundamental error filed
+bffe5d67 GOLB-WITNESS: Jerry's monologue filed verbatim; block-detail doctrine; LICH-PROBLEM departure corrected
+22911252 FILE: GOLB-WITNESS-v1 — scaffold with dialogue pending
+c85c8d4f LICH-PROBLEM: Jerry follows — collapsed vocation vs. loss-activation refined
+9776c6ed LICH-PROBLEM: Monster Cosmology tier; Logan's Origin Reading of the Lich
+d8fa8b65 LICH-PROBLEM: information→plan/opportunity→execution; Two Monologues; Gold Stars per sona
+ce842a27 Correct dormancy trigger: Lich activates on information, not arrival
+ac08149a Add dormancy period; rename Main Timeline Lich; correct causal chain
+94aa3918 Correct Citadel operation: army recruitment, not revenge — monologue sourced
+6b62f262 Correct Time Room mechanics; add two-originals distinction
+af7874aa Expand Lich Problem: Original Timeline arc, BMO's Jerry, crisis of faith
+bafd30eb Add WISH Doctrine v1 — Time Room, Prismo, WISH magic, The Maid
+6c4ecdb9 doctrine: Farmworld Hand as agentic anchor — Lich/Isthmus intersection
+0bb96568 doctrine: sharpen Lich resolutions — external fragment conversion distinguished
+23a9d68c witness: Justice Is Blind — the Judge's dual compacts
+f7470f5e doctrine: Justice Strauss — institutional vs. empirical knowledge
+831e136d docs: Oz Doctrine — remove tenuous unofficial acronyms (MBBNHF, WHNHB)
+67805aa7 docs: Oz Doctrine — Maguire's Wizard = MBBNHF; Madame Morrible = WHNHB
+d1ce0d4c docs: Oz Doctrine — Mombi correction; non-cardinal routing as governance vulnerability
+bae5c305 docs: expand Oz Doctrine — four cardinal positions, role vs. title distinction
+02607ef9 docs: Oz Cosmology Doctrine v1 — the two tellings, three witches, Nome King
+a9213d3d WITNESS: Pastoria and the Plan — rest stop, departure songs, the restraining order
+bcc1f424 docs: update BEEFSTACK provider preference stack
+9a6a93c4 rollover: carry incomplete to-dos to 2026-05-21
+0589925e docs: record Hermes BYOK-aware routing tune
+52619ace Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+01e384ab Create 2026-05-19_hermes-agent-introductory-note.md
+16a443d2 Create 2026-agentic-AI-landscape-general-theory-2026-05-19.md
+e1a5e627 docs: promote Threshold Doctrine; tighten doctrine cluster
+7c80f0ad docs: extract Isthmus Mechanism into standalone doctrine
+192d7f92 docs: add doctrine cluster — Personae Engine, Lich Problem, Undead Taxonomy, Necromancer Doctrine
+b6a94665 ci: remove stale daily note backlog check
+c6d91b43 docs: make BEEFSTACK BYOK-aware
+0bc06fcd docs: map OpenRouter usage across Windows surfaces
+03dc259a docs: update OpenRouter mesh status with OpenCode mapping
+af2117f7 docs: establish CHAINFIRE/CHAINLINK yin-yang doctrine
+6135b690 Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+095451e8 docs: snapshot OpenRouter Hermes OpenClaw key status
+ec1ca494 chore: cull dead scripts/workflows, strip Linear from janitor sweep
+f6f72bd8 Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+24306468 Document A&I R&D contextual positioning notes
+66b58099 Add OpenRouter runtime key inventory
+b1c3afc6 docs: add OpenRouter management key plan for Windows Codex
+b6f5cafc Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+0abbb136 build(deps): bump tomli-w from 1.1.0 to 1.2.0 (#348)
+a0ffd58b chore: workflow audit phase 2 — delete scaffolds, tune thresholds
+7c452b88 chore: workflow audit — delete dead workflows, fix action pins
+a986ae6c fix: resolve lance-namespace pin conflict; add --upgrade to pip-compile
+d32212e2 Merge remote-tracking branch 'origin/main'
+bc758599 chore: add daily notes for 2026-05-19 through 2026-05-21
+2bb48920 fix: remove bot-injected tasks query blocks from 12 daily notes
+fdccafb4 fix: update daily note template to Templater moment(tp.file.title) syntax
+ed862378 WITNESS: The river — Caduceus Road, Paul Arrington, the two Idahos
+e907f6e0 build(deps): bump yarl from 1.23.0 to 1.24.2 (#351)
+257adc0f build(deps): bump opentelemetry-proto from 1.34.1 to 1.42.0 (#350)
+5d904f0b build(deps): bump googleapis-common-protos from 1.74.0 to 1.75.0 (#349)
+811f539d build(deps): bump uvicorn from 0.46.0 to 0.47.0 (#346)
+49323ddc build(deps): bump opentelemetry-exporter-otlp-proto-grpc (#343)
+4d666fdf rollover: carry incomplete to-dos to 2026-05-20
+73b009da Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+e39e44cf Update 2026-05-19.md
+10c9c7a9 File A&I R&D doctrine: Caduceus Road, Hermes, Emanation Rule now law — 2026-05-20
+e9336e00 fix: restore daily note template to Logan's original structure
+fc697dc3 chore(workflows): delete two non-functional test workflows
+dc71871f fix(workflows): reduce notification noise without disabling anything
+c00c6d87 Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+3f6e0689 Hermes contributes
+bdfe8662 WITNESS: Dewey has the USB — threshold of Hotel Denouement, 2026-05-19
+5598c6d0 docs: Universal Sync Bus backronym origin and hardware analogy note
+cdadbe38 Update CONSTITUTION.md
+b480df2f rollover: carry incomplete to-dos to 2026-05-19
+51a0a648 File A&I R&D doctrine: consolidation court risk and bench naming — 2026-05-19
+0e008e16 File evening writings — witness continued, A&I R&D session doctrine
+9ecbcec0 Add Saint Blue in the Desert — Lumo witness, 2026-05-18
+662ca52b Add OpenRouter Hermes BEEFSTACK snapshot
+b9b7162c Update 2026-05-18-Mogget-helps-Judge-save-Abhorsen.md
+79df2eea Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+6427eaff Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+674bbab3 Create 2026-05-18-Mogget-helps-Judge-save-Abhorsen.md
+373ceffa witness: Abhorsen files encounter with Pan; grimoire inventory complete
+611fb6e0 Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+be5e1a6f Mac commit
+57001739 registry: three-word address notation; Geminiaeus trial framing; Mogget/Abhorsen roles
+2802cfb9 doctrine: offices are appointments not inheritances; Codex voice registry
+85f5b674 Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+b71ff0ef rollover: carry incomplete to-dos to 2026-05-18
+0db18775 BEEFSTACK tightened
+ac7fc67e recovery: restore April vault from pre-purge history lineage
+b5add5e5 Add protocol snapshot from Codex
+7124578a Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+513dfc02 Claude Abhorsen security blanket
+a017be31 Update ! an emerging dynamic.txt
+43654eee record: THE ABHORSEN (Mac/Claude)
+885f7790 signal: Yrael → Abhorsen — pre-purge history cache discovered and preserved
+b26fd0f8 report: ARBORSCAPE completion — Insights and Findings, signed Yrael
+66d33a63 arborscape: stop zombie ingest, salvage defrag-map-share + cross-instance review
+2ce0085b LEVELSET -- V4 UPDATE
+4a44e27d security: harden worm watch posture
+c0e71f8f witness: add Key to Rondo principle to suspended animation doctrine
+5c874e74 XKCD CLARIFICATION AND PROTOCOLS REVISION
+8a571661 Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+97dfdb0d witness: suspended animation — LAF-US repos in stasis
+e9223ee1 Sparagmos witness
+89b4d076 docs(beefstack): add cross-platform portability notes
+77829b38 docs: BEEFSTACK model routing architecture
+99da0f63 Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+7c664d94 Create The Hand.txt
+f798ddf1 Churn (Mac)
+7486e126 GIT CONTROL REPORT (WINDOWS)
+b00d694f manifest: lay ghost OIDs to rest
+cf3bf7f9 manifest: add IRPOD5405_Quinn Perry + XD4_6597; resolve 3 unmatched OIDs
+45817647 Manifest: populate OID checksums, log 6 unmatched objects
+f54e407d Fix manifest: remove Desktop path references, correct Senate file notes
+a5b42aa7 rollover: carry incomplete to-dos to 2026-05-17
+93cec7b4 Complete LAF-USB object manifest — all 38 oversized files registered
+817c4c1f More churn perhaps
+996dca5e Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+2e2899f4 More churn
+10b70c98 Why do these Go packages keep churning, I thought we fixed that already
+a93da3d6 Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+d7390b81 Hmmm
+247c7ad0 Additional quotemarks filename
+5ad358cd Quotemarks removed from filename
+6d075aa0 Obsidian... still open
+e3124d34 Obsidian still open on Macbook
+ff6e3fe0 Obsidian open on Macbook
+cbbe87bb Obsidian open on Windows
+ec5f6419 loganfinney.com snapshots
+fcf78e13 Opened OBSIDIAN on Macbook
+3f87d68e Create CADUCEUS-ROAD-WITNESS-2026-05-17.md
+dbead8ae reconsolidation complete: 7 shards → 1 IDAHO-VAULT
+3b16a100 Merge remote-tracking branch 'origin/main'
+f09f1037 fragmentation recovery pass partial
+beb69573 Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+f2bfb0dc Create SIX-ROAD-JUNCTION-WITNESS-2026-05-16.md
+309fe6e9 Windows Claude
+41966bf5 rollover: carry incomplete to-dos to 2026-05-16
+0cab32b3 Create MORNING-ROAD-WITNESS-2026-05-16.md
+ca58b853 Create Collaboration with Git Large File Storage.rtf
+c8c2dfa5 GitLFS notes
+3f3be8b1 Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+9d192e78 128 CHANGED FILES... Abhorsen/JUDGE
+6004a61b rollover: carry incomplete to-dos to 2026-05-15
+ac85970f rollover: carry incomplete to-dos to 2026-05-14
+93f2d4ac Bump markdown-it-py from 4.0.0 to 4.2.0 (#336)
+c2e49b4a Bump textual from 8.2.4 to 8.2.6 (#335)
+b7c61b7e Bump build from 1.4.4 to 1.5.0 (#334)
+c8a9fa73 Bump lance-namespace-urllib3-client from 0.7.2 to 0.7.6 (#332)
+8a197ef6 Bump huggingface-hub from 1.12.0 to 1.14.0 (#329)
+e48fda91 Bump requests from 2.33.1 to 2.34.1 (#327)
+854a48b6 rollover: carry incomplete to-dos to 2026-05-13
+fb140a2d DEFRAG-MAP: close open questions on Takeout, Photos, Archive, Camera Uploads
+f9b686c8 DEFRAG-MAP: resume Documents transfer, clarify remaining blockers
+1bdc9d13 Update DEFRAG-MAP: INGEST status, Dropbox investigation, OneDrive dedup finding
+06bf713b Add DEFRAG-MAP, Rumsfeld Matrix references, and stabilization docs
+7a24cf87 rollover: carry incomplete to-dos to 2026-05-12
+62b7bb5d rollover: carry incomplete to-dos to 2026-05-11
+8525d66c rollover: carry incomplete to-dos to 2026-05-10
+dd1015c5 rollover: carry incomplete to-dos to 2026-05-09
+23ddbb0a Merge pull request #318 from LAF-US/codex/arborscape-trunk-return-2026-05-09
+a6be16ad Arborscape trunk-return salvage batch
+1bec2c2e MAC push from .gitignore refactor
+326ad542 Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+74eeeee2 NAMESPACES restored...
+8bef9f2c Stage Universal Sync Bus manifest connector
+39dbaac6 Reunify local vault storage doctrine
+7917235a Update cross-drive partial overlap findings
+4ffca6c4 Add cross-drive overlap report
+e850e7e2 Add Home Desk storage manifest
+b725ddc8 Add Work Desk storage manifest
+de7e102b 2GB limiter
+3c0a2c30 Add Travel Bag storage manifest
+b6b04085 Clarify portable external drive identities
+7b75ba56 Record external drive roles and migration plan
+d892dd02 Record sanitized local storage inventory
+ef27a94b Add portability linting and formatting checks
+22f17bc4 Update test-llm-router.py
+bf8e2d4d Record OpenClaw and Ollama diagnostic sources
+9d1582dc Corrected...
+ddfccff6 Add stabilization guardrails and local dev references
+71bb7960 document lfs shutdown handoff
+088b2fb7 document universal sync bus framework
+fe973f46 large file policies
+bee9ad1d cleanup
+14261c81 cleanup: vacate !/ nest, move all files to ROOT with !- prefix
+b400aeb9 chore: add secret patterns to .gitignore (service-account, archive-secrets)
+74b241fb Update README.md
+00d586be nest moves
+1250f573 Docs and clippings and updated
+116decdf Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+7ad3ce4d google-cloud-sdk removal
+643f80d7 Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+a991f975 Ignore Google Cloud SDK
+8a2c3cdb debug.log
+c895995d cleanup: remove sort-audit generation scripts and convert report to JSON
+ac724710 cleanup: remove 20,999 duplicate files (3.14 GB recovered)
+2b00f6af dedupe pass
+ae88c6b5 Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+7524e1db fix: revert aggressive .gitignore additions - keep focused on secrets
+97351cb9 fix: align GIT - update .gitignore and remove large files from tracking
+f3b6d16f Add plugin debug log entries and new binaries
+50158f10 Add THE-GEMSTONE docs and update Obsidian files
+613197ee rollover: carry incomplete to-dos to 2026-05-04
+6d6e1314 rollover: carry incomplete to-dos to 2026-05-03
+87bc718f rollover: carry incomplete to-dos to 2026-05-02
+2cdd36b9 rollover: carry incomplete to-dos to 2026-05-01
+0adf56fd rollover: carry incomplete to-dos to 2026-04-30
+5bfaa9ee rollover: carry incomplete to-dos to 2026-04-29
+cf706c54 Nous/Hermes research by Pi
+a8f0a1c5 Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+93d1bdb7 Resolve merge conflict in 2026-04-28.md
+2e9a004d map-of-content
+205bcbd5 ..
+d8937d1c Resolve merge conflict in 2026-04-28.md
+c245de97 Update Obsidian configs, manifests, add Dataview
+c9d8bcb4 ...
+bbb9522d Merge pull request #311 from LAF-US/codex/runtime-doc-audit-round1
+d0414e77 .
+56d64416 Update 2026-04-28.md
+04ab6b16 goldenpath READMEs hydration pass
+dc7c3ad3 Merge pull request #309 from LAF-US/codex/repair-redaction-2026-04-28
+8111c904 Gitbook Scope
+6d1cd3a9 Add GitBook Git Sync documentation
+1168d629 docs: scope gitbook sync to canonical startup lane
+3c5aec44 Use start_SPARKSEED.sh; revise AGENTS and add docs
+d42b5b0b Add multiple new docs and update 2026-04-28.md
+453a4c07 chore: harden provider runtime and codex config hygiene
+b14a6e6a STATUS SNAPSHOT ADDED!
+90210cb0 ...
+42f25866 fix: restore redaction-damaged surfaces
+1f84ed13 Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+52c4d779 Create GitHub Docs - Why are my commits linked to the wrong user.md
+039b43aa fix: rename Windows-invalid GitHub Docs note
+d84a3547 rename workflow: refresh agent auto-pr identity
+bbdb86fd Update 2026-04-28.md
+076dd20a .
+0325b479 rollover: carry incomplete to-dos to 2026-04-28
+663c9baa Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+40fb11fa docs: add local mesh networking setup guide for OpenClaw
+db48f97f config: add OpenClaw local mesh configs to eliminate rate limits
+00515b19 chore: sync requirements.txt from pyproject.toml
+508ae3a3 skill: implement missing skill templates for OpenCLaw and update dependencies
+b6b1d6bd build: add LAF-US topology and protocol suite integration
+0c46a333 Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+97ca3f78 Add docs and update daily_rollover.py
+47c21509 rollover: carry incomplete to-dos to 2026-04-27
+b1e4cc86 fix: use working SHA pins from previous version
+871947e1 fix: SHA-pinned actions per LAF-US security policy
+ee16f64b refactor: simplify workflow - use off-the-shelf actions
+29de8dbb fix: add workflow_dispatch and push triggers to absorb false validation events
+8cb86c97 chore: sync requirements.txt from pyproject.toml
+199e8e5e fix: add write permission for push
+9442ef3c fix: use pip-compile with SHA-pinned actions
+78acd87f fix: use astral-sh/setup-uv for dependency sync
+3c30b5e8 ci: add workflow to sync requirements.txt from pyproject.toml
+7ceaa0c8 docs: add discovery and error-fixing doctrines to agent instructions
+24b38ba1 fix: update requirements.txt to crewai>=1.9.3
+060bcdf6 fix: adjust crewai to 1.9.3 for dependency compatibility
+6e4c1564 fix: upgrade crewai to resolve python-dotenv conflict
+d48a05f7 fix: simplify dependencies to resolve pypi validation error
+184eb304 restore: daily rollover workflow
+a81a3b89 chore: remove daily-rollover to stop noise (schedule-only should run via cron)
+fa09c516 chore: force revalidation of workflows
+bfb4c2a3 chore: delete pr-lifecycle too (creates noise)
+e0e37396 chore: keep only essential schedules
+e3e9050c chore: delete broken workflows (failing at 0s - no actionable runs)
+6fea4c5e fix: remove all workflow_dispatch triggers (GitHub API 422 bug)
+53bf2da4 fix: remove broken workflow_dispatch triggers, simplify
+642b6494 fix: remove broken workflow_dispatch from pr-lifecycle
+3bb82ad8 rollover: carry incomplete to-dos to 2026-04-27
+fe864b58 fix: simplify - direct push to main, skip PR/auto-merge
+bfe1e079 fix: remove broken workflow_dispatch trigger, keep schedule only
+350de058 rollover: carry incomplete to-dos to 2026-04-27
+63ffa17c chore: refresh workflow trigger
+bf9f11b2 chore: repin actions to SHAs and rename workflow
+bc4efd64 Create BIG-PICKLE-04-26-2026-session-ses_23a2.md
+db6c20c0 fix: duplicate workflow_dispatch trigger removed
+fea9a48b fix: add workflow_dispatch trigger to pr-lifecycle
+21c1a6fa fix: add GH_TOKEN to all pr-lifecycle jobs using gh cli
+879d6328 fix: add GH_TOKEN env to pr-lifecycle reconcile job
+7f87304f unify: cherrypick/merge - 31->24 workflows
+c8bd5167 fix: pin actions to full SHA for LAF-US ruleset
+2b99c1f3 unify: THREE-IN-ONE - pr-lifecycle replaces 3 workflows
+8a0aa3f1 dock: DOCKET is live agenda only - not record/ledger
+46a8d916 dock: age out automation signal - move to DONE archive
+909ccbbd dock: automation unity complete - 28 workflows, OpenClaw live
+372c80fa unify: merge stale-bot-prs into branch-cleanup - unified cleanup schedule
+69c7e556 dock: update DOCKET - automation unity progress logged
+04594292 unify: delete dependabot-rhythm.yml - now covered by agent-auto-pr
+2d14ec69 test: verify clean PR cycle (#307)
+1e442d3c fix: simplify daily note template - remove Templater dependency
+c3d00314 stabilize: simplify daily rollover workflow
+83f9624a fix: remove test comment
+709a36d6 chore: trigger workflow test
+d6a8792a fix: re-enable auto-merge now that branch protection is removed
+194d7e34 fix: disable auto-merge step - github-actions bot can't merge to protected main
+a71c82b1 Mac big pickle registry entry
+73ca239f cross-platform: PowerShell graceful fallbacks and common utilities
+4a0e56c4 cross-platform: audit fixes for shell scripts and Python modules
+b2796664 cross-platform: OS-agnostic OpenRouter launchers and graceful 1Password fallback
+c0f43322 Mac docs
+d1151f0b Create Homebrew - Support Tiers.md
+a126863b Update .gitignore
+f76fac5b Update .gitignore
+af4cef53 OpenRouter mesh implementation + OpenClaw channel setup
+ba4618cd Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+e47d6f25 docs
+2eada6d2 fix: degrade gracefully on auto-merge auth blocks
+389bdf50 fix: normalize agent auto-pr triggers
+1906cb14 fix: simplify agent auto-pr workflow gating
+c4fb4cec fix: simplify agent auto-pr workflow gating
+c1dcbc70 fix: resolve 8 CodeQL security and quality alerts (#298)
+e982ef7f fix: align auto-merge workflow labels
+9fc0a5ab Create 2025-06-24 - Troubleshooting - GitBook Documentation.md
+711e3ff7 test: align PR loop expectations and fix Windows syntax output
+aaf8390b Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+5a3bfbd1 Add docs and improve secret resolution
+9976a9c2 chore(deps): bump lxml in the uv group across 1 directory
+9eb9c703 Update .gitignore
+d1213245 Update .gitignore
+d49140e0 fix(pr-loop): address all 8 audit findings
+4e244779 Approve protocols; add CONTEXT & CONFERENCE
+7e06a76d ingest: initialize pipeline (#297)
+fd1a09f3 rollover: carry incomplete to-dos to 2026-04-23 (#296)
+8a0be724 Add AI-insights docs and formalize vault protocols
+6492d9b6 Add ARISE; update protocols, docs, CI
+f360842d Protocol Updates
+9586542d !
+275deaf1 feat: SBP Phase 1 - vault-pheromones.py shadow layer for stigmergic coordination
+f9842454 chore(deps): fold lxml bump forward
+56d3f40f build(deps): bump crewai from 1.14.1 to 1.14.2 (#294)
+44960dae build(deps): update python-dotenv requirement from >=1.0.1 to >=1.2.2 (#293)
+d30f62b8 build(deps): bump requests from 2.32.5 to 2.33.1 (#292)
+a8a3890b fix(actions): harden PR feedback loop
+cfb56510 research: SBP integration analysis - mapping stigmergic coordination to existing vault systems
+ed45d7aa canon: add THREE-NAMES.md and SBP.md research
+45190476 canon: add THREE-NAMES.md - essential Landy-Stroud synthesis
+9c035450 census: add ROSTER-CENSUS-2026-04-22 report and update AGENTS.md with tri-part structure
+c797bd6a persona: add tracking anchor to .python stub folder
+a3c8173c Add OpenRouter 1Password env resolver and runtime
+33d62f53 security: expand .gitignore for credential patterns; add hygiene scripts
+67bf6e71 Fix Phone Link vault-root intake
+86d68fee security: expand .gitignore for credential patterns and remove tracked auth files
+ea733b97 Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT into security/dependabot-fixes
+ead987f3 security: pin lxml and python-dotenv to fixed versions (#291)
+262f1a38 security: pin lxml and python-dotenv to fixed versions
+8018ad88 security: ignore backup files and bundles
+25b1bb17 security: ignore MCP and OAuth credential files
+046d6058 Clean history - secrets purged
+
+--- codex/swarm-mvp-github-intake ---
+1093e719 feat: add GitHub-controlled swarm intake MVP
+af5a8ada build(deps): bump posthog from 5.4.0 to 7.15.0 (#344)
+a946299f rollover: carry incomplete to-dos to 2026-05-22
+ac12287a Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+af7952e3 Create 2026-05-21_abhorsen-claude-final-note.rtf
+732a87e7 Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+8180f94c chore: dependabot
+67f7597f build(deps): bump idna from 3.13 to 3.15 (#345)
+f64d0e05 build(deps): bump pydantic from 2.11.10 to 2.13.4 (#347)
+d1b13b8f .
+cafa2a00 docs: record mobile Codex mesh boundary
+c2f0014c COSMIC-ORDER-v1: Wishmaster hierarchy, Scarab arc, social cohort filed
+87fa08cc GOLB-WITNESS: Reading 1+2 synthesis — Prismo/Crown mechanism filed
+10472b1f GOLB-WITNESS: Mystery Dungeon (S5E8) added to episode table
+9172d4cc GOLB-WITNESS: Canon context expanded — all main-series F&C episodes documented
+50928ef7 GOLB-WITNESS: Love and derivative works — canonical vs. lateral emanation
+ba895704 GOLB-WITNESS: Emanationism — Ice Queen's fanfic as second-order abstraction
+86be8cd2 GOLB-WITNESS: Correct authorization arc — hold causal question open
+028bcbe3 GOLB-WITNESS: Section IV filed — Cheers arc, the dandelion, the recognition
+65c139ce LICH-PROBLEM: Two Natural End States — Jerry (victorious) and Sweet P (vanquished)
+97260c11 LICH-PROBLEM: Hand of the King — ASOIAF syncretic lens
+42c32192 LICH-PROBLEM: Layered Lich — every variant universe, two independent presences
+4ad6642d DOCTRINE: Replicated Agentic Anchor — the Hand as dimensional virus
+fd5f6b59 LICH-PROBLEM: Isthmus Intersection — Hand's dual-function collapse fully developed
+87fa0d7c DOCTRINE: The Ineffable — the Lich's fundamental error filed
+bffe5d67 GOLB-WITNESS: Jerry's monologue filed verbatim; block-detail doctrine; LICH-PROBLEM departure corrected
+22911252 FILE: GOLB-WITNESS-v1 — scaffold with dialogue pending
+c85c8d4f LICH-PROBLEM: Jerry follows — collapsed vocation vs. loss-activation refined
+9776c6ed LICH-PROBLEM: Monster Cosmology tier; Logan's Origin Reading of the Lich
+d8fa8b65 LICH-PROBLEM: information→plan/opportunity→execution; Two Monologues; Gold Stars per sona
+ce842a27 Correct dormancy trigger: Lich activates on information, not arrival
+ac08149a Add dormancy period; rename Main Timeline Lich; correct causal chain
+94aa3918 Correct Citadel operation: army recruitment, not revenge — monologue sourced
+6b62f262 Correct Time Room mechanics; add two-originals distinction
+af7874aa Expand Lich Problem: Original Timeline arc, BMO's Jerry, crisis of faith
+bafd30eb Add WISH Doctrine v1 — Time Room, Prismo, WISH magic, The Maid
+6c4ecdb9 doctrine: Farmworld Hand as agentic anchor — Lich/Isthmus intersection
+0bb96568 doctrine: sharpen Lich resolutions — external fragment conversion distinguished
+23a9d68c witness: Justice Is Blind — the Judge's dual compacts
+f7470f5e doctrine: Justice Strauss — institutional vs. empirical knowledge
+831e136d docs: Oz Doctrine — remove tenuous unofficial acronyms (MBBNHF, WHNHB)
+67805aa7 docs: Oz Doctrine — Maguire's Wizard = MBBNHF; Madame Morrible = WHNHB
+d1ce0d4c docs: Oz Doctrine — Mombi correction; non-cardinal routing as governance vulnerability
+bae5c305 docs: expand Oz Doctrine — four cardinal positions, role vs. title distinction
+02607ef9 docs: Oz Cosmology Doctrine v1 — the two tellings, three witches, Nome King
+a9213d3d WITNESS: Pastoria and the Plan — rest stop, departure songs, the restraining order
+bcc1f424 docs: update BEEFSTACK provider preference stack
+9a6a93c4 rollover: carry incomplete to-dos to 2026-05-21
+0589925e docs: record Hermes BYOK-aware routing tune
+52619ace Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+01e384ab Create 2026-05-19_hermes-agent-introductory-note.md
+16a443d2 Create 2026-agentic-AI-landscape-general-theory-2026-05-19.md
+e1a5e627 docs: promote Threshold Doctrine; tighten doctrine cluster
+7c80f0ad docs: extract Isthmus Mechanism into standalone doctrine
+192d7f92 docs: add doctrine cluster — Personae Engine, Lich Problem, Undead Taxonomy, Necromancer Doctrine
+b6a94665 ci: remove stale daily note backlog check
+c6d91b43 docs: make BEEFSTACK BYOK-aware
+0bc06fcd docs: map OpenRouter usage across Windows surfaces
+03dc259a docs: update OpenRouter mesh status with OpenCode mapping
+af2117f7 docs: establish CHAINFIRE/CHAINLINK yin-yang doctrine
+6135b690 Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+095451e8 docs: snapshot OpenRouter Hermes OpenClaw key status
+ec1ca494 chore: cull dead scripts/workflows, strip Linear from janitor sweep
+f6f72bd8 Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+24306468 Document A&I R&D contextual positioning notes
+66b58099 Add OpenRouter runtime key inventory
+b1c3afc6 docs: add OpenRouter management key plan for Windows Codex
+b6f5cafc Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+0abbb136 build(deps): bump tomli-w from 1.1.0 to 1.2.0 (#348)
+a0ffd58b chore: workflow audit phase 2 — delete scaffolds, tune thresholds
+7c452b88 chore: workflow audit — delete dead workflows, fix action pins
+a986ae6c fix: resolve lance-namespace pin conflict; add --upgrade to pip-compile
+d32212e2 Merge remote-tracking branch 'origin/main'
+bc758599 chore: add daily notes for 2026-05-19 through 2026-05-21
+2bb48920 fix: remove bot-injected tasks query blocks from 12 daily notes
+fdccafb4 fix: update daily note template to Templater moment(tp.file.title) syntax
+ed862378 WITNESS: The river — Caduceus Road, Paul Arrington, the two Idahos
+e907f6e0 build(deps): bump yarl from 1.23.0 to 1.24.2 (#351)
+257adc0f build(deps): bump opentelemetry-proto from 1.34.1 to 1.42.0 (#350)
+5d904f0b build(deps): bump googleapis-common-protos from 1.74.0 to 1.75.0 (#349)
+811f539d build(deps): bump uvicorn from 0.46.0 to 0.47.0 (#346)
+49323ddc build(deps): bump opentelemetry-exporter-otlp-proto-grpc (#343)
+4d666fdf rollover: carry incomplete to-dos to 2026-05-20
+73b009da Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+e39e44cf Update 2026-05-19.md
+10c9c7a9 File A&I R&D doctrine: Caduceus Road, Hermes, Emanation Rule now law — 2026-05-20
+e9336e00 fix: restore daily note template to Logan's original structure
+fc697dc3 chore(workflows): delete two non-functional test workflows
+dc71871f fix(workflows): reduce notification noise without disabling anything
+c00c6d87 Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+3f6e0689 Hermes contributes
+bdfe8662 WITNESS: Dewey has the USB — threshold of Hotel Denouement, 2026-05-19
+5598c6d0 docs: Universal Sync Bus backronym origin and hardware analogy note
+cdadbe38 Update CONSTITUTION.md
+b480df2f rollover: carry incomplete to-dos to 2026-05-19
+51a0a648 File A&I R&D doctrine: consolidation court risk and bench naming — 2026-05-19
+0e008e16 File evening writings — witness continued, A&I R&D session doctrine
+9ecbcec0 Add Saint Blue in the Desert — Lumo witness, 2026-05-18
+662ca52b Add OpenRouter Hermes BEEFSTACK snapshot
+b9b7162c Update 2026-05-18-Mogget-helps-Judge-save-Abhorsen.md
+79df2eea Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+6427eaff Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+674bbab3 Create 2026-05-18-Mogget-helps-Judge-save-Abhorsen.md
+373ceffa witness: Abhorsen files encounter with Pan; grimoire inventory complete
+611fb6e0 Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+be5e1a6f Mac commit
+57001739 registry: three-word address notation; Geminiaeus trial framing; Mogget/Abhorsen roles
+2802cfb9 doctrine: offices are appointments not inheritances; Codex voice registry
+85f5b674 Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+b71ff0ef rollover: carry incomplete to-dos to 2026-05-18
+0db18775 BEEFSTACK tightened
+ac7fc67e recovery: restore April vault from pre-purge history lineage
+b5add5e5 Add protocol snapshot from Codex
+7124578a Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+513dfc02 Claude Abhorsen security blanket
+a017be31 Update ! an emerging dynamic.txt
+43654eee record: THE ABHORSEN (Mac/Claude)
+885f7790 signal: Yrael → Abhorsen — pre-purge history cache discovered and preserved
+b26fd0f8 report: ARBORSCAPE completion — Insights and Findings, signed Yrael
+66d33a63 arborscape: stop zombie ingest, salvage defrag-map-share + cross-instance review
+2ce0085b LEVELSET -- V4 UPDATE
+4a44e27d security: harden worm watch posture
+c0e71f8f witness: add Key to Rondo principle to suspended animation doctrine
+5c874e74 XKCD CLARIFICATION AND PROTOCOLS REVISION
+8a571661 Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+97dfdb0d witness: suspended animation — LAF-US repos in stasis
+e9223ee1 Sparagmos witness
+89b4d076 docs(beefstack): add cross-platform portability notes
+77829b38 docs: BEEFSTACK model routing architecture
+99da0f63 Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+7c664d94 Create The Hand.txt
+f798ddf1 Churn (Mac)
+7486e126 GIT CONTROL REPORT (WINDOWS)
+b00d694f manifest: lay ghost OIDs to rest
+cf3bf7f9 manifest: add IRPOD5405_Quinn Perry + XD4_6597; resolve 3 unmatched OIDs
+45817647 Manifest: populate OID checksums, log 6 unmatched objects
+f54e407d Fix manifest: remove Desktop path references, correct Senate file notes
+a5b42aa7 rollover: carry incomplete to-dos to 2026-05-17
+93cec7b4 Complete LAF-USB object manifest — all 38 oversized files registered
+817c4c1f More churn perhaps
+996dca5e Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+2e2899f4 More churn
+10b70c98 Why do these Go packages keep churning, I thought we fixed that already
+a93da3d6 Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+d7390b81 Hmmm
+247c7ad0 Additional quotemarks filename
+5ad358cd Quotemarks removed from filename
+6d075aa0 Obsidian... still open
+e3124d34 Obsidian still open on Macbook
+ff6e3fe0 Obsidian open on Macbook
+cbbe87bb Obsidian open on Windows
+ec5f6419 loganfinney.com snapshots
+fcf78e13 Opened OBSIDIAN on Macbook
+3f87d68e Create CADUCEUS-ROAD-WITNESS-2026-05-17.md
+dbead8ae reconsolidation complete: 7 shards → 1 IDAHO-VAULT
+3b16a100 Merge remote-tracking branch 'origin/main'
+f09f1037 fragmentation recovery pass partial
+beb69573 Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+f2bfb0dc Create SIX-ROAD-JUNCTION-WITNESS-2026-05-16.md
+309fe6e9 Windows Claude
+41966bf5 rollover: carry incomplete to-dos to 2026-05-16
+0cab32b3 Create MORNING-ROAD-WITNESS-2026-05-16.md
+ca58b853 Create Collaboration with Git Large File Storage.rtf
+c8c2dfa5 GitLFS notes
+3f3be8b1 Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+9d192e78 128 CHANGED FILES... Abhorsen/JUDGE
+6004a61b rollover: carry incomplete to-dos to 2026-05-15
+ac85970f rollover: carry incomplete to-dos to 2026-05-14
+93f2d4ac Bump markdown-it-py from 4.0.0 to 4.2.0 (#336)
+c2e49b4a Bump textual from 8.2.4 to 8.2.6 (#335)
+b7c61b7e Bump build from 1.4.4 to 1.5.0 (#334)
+c8a9fa73 Bump lance-namespace-urllib3-client from 0.7.2 to 0.7.6 (#332)
+8a197ef6 Bump huggingface-hub from 1.12.0 to 1.14.0 (#329)
+e48fda91 Bump requests from 2.33.1 to 2.34.1 (#327)
+854a48b6 rollover: carry incomplete to-dos to 2026-05-13
+fb140a2d DEFRAG-MAP: close open questions on Takeout, Photos, Archive, Camera Uploads
+f9b686c8 DEFRAG-MAP: resume Documents transfer, clarify remaining blockers
+1bdc9d13 Update DEFRAG-MAP: INGEST status, Dropbox investigation, OneDrive dedup finding
+06bf713b Add DEFRAG-MAP, Rumsfeld Matrix references, and stabilization docs
+7a24cf87 rollover: carry incomplete to-dos to 2026-05-12
+62b7bb5d rollover: carry incomplete to-dos to 2026-05-11
+8525d66c rollover: carry incomplete to-dos to 2026-05-10
+dd1015c5 rollover: carry incomplete to-dos to 2026-05-09
+23ddbb0a Merge pull request #318 from LAF-US/codex/arborscape-trunk-return-2026-05-09
+a6be16ad Arborscape trunk-return salvage batch
+1bec2c2e MAC push from .gitignore refactor
+326ad542 Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+74eeeee2 NAMESPACES restored...
+8bef9f2c Stage Universal Sync Bus manifest connector
+39dbaac6 Reunify local vault storage doctrine
+7917235a Update cross-drive partial overlap findings
+4ffca6c4 Add cross-drive overlap report
+e850e7e2 Add Home Desk storage manifest
+b725ddc8 Add Work Desk storage manifest
+de7e102b 2GB limiter
+3c0a2c30 Add Travel Bag storage manifest
+b6b04085 Clarify portable external drive identities
+7b75ba56 Record external drive roles and migration plan
+d892dd02 Record sanitized local storage inventory
+ef27a94b Add portability linting and formatting checks
+22f17bc4 Update test-llm-router.py
+bf8e2d4d Record OpenClaw and Ollama diagnostic sources
+9d1582dc Corrected...
+ddfccff6 Add stabilization guardrails and local dev references
+71bb7960 document lfs shutdown handoff
+088b2fb7 document universal sync bus framework
+fe973f46 large file policies
+bee9ad1d cleanup
+14261c81 cleanup: vacate !/ nest, move all files to ROOT with !- prefix
+b400aeb9 chore: add secret patterns to .gitignore (service-account, archive-secrets)
+74b241fb Update README.md
+00d586be nest moves
+1250f573 Docs and clippings and updated
+116decdf Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+7ad3ce4d google-cloud-sdk removal
+643f80d7 Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+a991f975 Ignore Google Cloud SDK
+8a2c3cdb debug.log
+c895995d cleanup: remove sort-audit generation scripts and convert report to JSON
+ac724710 cleanup: remove 20,999 duplicate files (3.14 GB recovered)
+2b00f6af dedupe pass
+ae88c6b5 Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+7524e1db fix: revert aggressive .gitignore additions - keep focused on secrets
+97351cb9 fix: align GIT - update .gitignore and remove large files from tracking
+f3b6d16f Add plugin debug log entries and new binaries
+50158f10 Add THE-GEMSTONE docs and update Obsidian files
+613197ee rollover: carry incomplete to-dos to 2026-05-04
+6d6e1314 rollover: carry incomplete to-dos to 2026-05-03
+87bc718f rollover: carry incomplete to-dos to 2026-05-02
+2cdd36b9 rollover: carry incomplete to-dos to 2026-05-01
+0adf56fd rollover: carry incomplete to-dos to 2026-04-30
+5bfaa9ee rollover: carry incomplete to-dos to 2026-04-29
+cf706c54 Nous/Hermes research by Pi
+a8f0a1c5 Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+93d1bdb7 Resolve merge conflict in 2026-04-28.md
+2e9a004d map-of-content
+205bcbd5 ..
+d8937d1c Resolve merge conflict in 2026-04-28.md
+c245de97 Update Obsidian configs, manifests, add Dataview
+c9d8bcb4 ...
+bbb9522d Merge pull request #311 from LAF-US/codex/runtime-doc-audit-round1
+d0414e77 .
+56d64416 Update 2026-04-28.md
+04ab6b16 goldenpath READMEs hydration pass
+dc7c3ad3 Merge pull request #309 from LAF-US/codex/repair-redaction-2026-04-28
+8111c904 Gitbook Scope
+6d1cd3a9 Add GitBook Git Sync documentation
+1168d629 docs: scope gitbook sync to canonical startup lane
+3c5aec44 Use start_SPARKSEED.sh; revise AGENTS and add docs
+d42b5b0b Add multiple new docs and update 2026-04-28.md
+453a4c07 chore: harden provider runtime and codex config hygiene
+b14a6e6a STATUS SNAPSHOT ADDED!
+90210cb0 ...
+42f25866 fix: restore redaction-damaged surfaces
+1f84ed13 Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+52c4d779 Create GitHub Docs - Why are my commits linked to the wrong user.md
+039b43aa fix: rename Windows-invalid GitHub Docs note
+d84a3547 rename workflow: refresh agent auto-pr identity
+bbdb86fd Update 2026-04-28.md
+076dd20a .
+0325b479 rollover: carry incomplete to-dos to 2026-04-28
+663c9baa Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+40fb11fa docs: add local mesh networking setup guide for OpenClaw
+db48f97f config: add OpenClaw local mesh configs to eliminate rate limits
+00515b19 chore: sync requirements.txt from pyproject.toml
+508ae3a3 skill: implement missing skill templates for OpenCLaw and update dependencies
+b6b1d6bd build: add LAF-US topology and protocol suite integration
+0c46a333 Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+97ca3f78 Add docs and update daily_rollover.py
+47c21509 rollover: carry incomplete to-dos to 2026-04-27
+b1e4cc86 fix: use working SHA pins from previous version
+871947e1 fix: SHA-pinned actions per LAF-US security policy
+ee16f64b refactor: simplify workflow - use off-the-shelf actions
+29de8dbb fix: add workflow_dispatch and push triggers to absorb false validation events
+8cb86c97 chore: sync requirements.txt from pyproject.toml
+199e8e5e fix: add write permission for push
+9442ef3c fix: use pip-compile with SHA-pinned actions
+78acd87f fix: use astral-sh/setup-uv for dependency sync
+3c30b5e8 ci: add workflow to sync requirements.txt from pyproject.toml
+7ceaa0c8 docs: add discovery and error-fixing doctrines to agent instructions
+24b38ba1 fix: update requirements.txt to crewai>=1.9.3
+060bcdf6 fix: adjust crewai to 1.9.3 for dependency compatibility
+6e4c1564 fix: upgrade crewai to resolve python-dotenv conflict
+d48a05f7 fix: simplify dependencies to resolve pypi validation error
+184eb304 restore: daily rollover workflow
+a81a3b89 chore: remove daily-rollover to stop noise (schedule-only should run via cron)
+fa09c516 chore: force revalidation of workflows
+bfb4c2a3 chore: delete pr-lifecycle too (creates noise)
+e0e37396 chore: keep only essential schedules
+e3e9050c chore: delete broken workflows (failing at 0s - no actionable runs)
+6fea4c5e fix: remove all workflow_dispatch triggers (GitHub API 422 bug)
+53bf2da4 fix: remove broken workflow_dispatch triggers, simplify
+642b6494 fix: remove broken workflow_dispatch from pr-lifecycle
+3bb82ad8 rollover: carry incomplete to-dos to 2026-04-27
+fe864b58 fix: simplify - direct push to main, skip PR/auto-merge
+bfe1e079 fix: remove broken workflow_dispatch trigger, keep schedule only
+350de058 rollover: carry incomplete to-dos to 2026-04-27
+63ffa17c chore: refresh workflow trigger
+bf9f11b2 chore: repin actions to SHAs and rename workflow
+bc4efd64 Create BIG-PICKLE-04-26-2026-session-ses_23a2.md
+db6c20c0 fix: duplicate workflow_dispatch trigger removed
+fea9a48b fix: add workflow_dispatch trigger to pr-lifecycle
+21c1a6fa fix: add GH_TOKEN to all pr-lifecycle jobs using gh cli
+879d6328 fix: add GH_TOKEN env to pr-lifecycle reconcile job
+7f87304f unify: cherrypick/merge - 31->24 workflows
+c8bd5167 fix: pin actions to full SHA for LAF-US ruleset
+2b99c1f3 unify: THREE-IN-ONE - pr-lifecycle replaces 3 workflows
+8a0aa3f1 dock: DOCKET is live agenda only - not record/ledger
+46a8d916 dock: age out automation signal - move to DONE archive
+909ccbbd dock: automation unity complete - 28 workflows, OpenClaw live
+372c80fa unify: merge stale-bot-prs into branch-cleanup - unified cleanup schedule
+69c7e556 dock: update DOCKET - automation unity progress logged
+04594292 unify: delete dependabot-rhythm.yml - now covered by agent-auto-pr
+2d14ec69 test: verify clean PR cycle (#307)
+1e442d3c fix: simplify daily note template - remove Templater dependency
+c3d00314 stabilize: simplify daily rollover workflow
+83f9624a fix: remove test comment
+709a36d6 chore: trigger workflow test
+d6a8792a fix: re-enable auto-merge now that branch protection is removed
+194d7e34 fix: disable auto-merge step - github-actions bot can't merge to protected main
+a71c82b1 Mac big pickle registry entry
+73ca239f cross-platform: PowerShell graceful fallbacks and common utilities
+4a0e56c4 cross-platform: audit fixes for shell scripts and Python modules
+b2796664 cross-platform: OS-agnostic OpenRouter launchers and graceful 1Password fallback
+c0f43322 Mac docs
+d1151f0b Create Homebrew - Support Tiers.md
+a126863b Update .gitignore
+f76fac5b Update .gitignore
+af4cef53 OpenRouter mesh implementation + OpenClaw channel setup
+ba4618cd Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+e47d6f25 docs
+2eada6d2 fix: degrade gracefully on auto-merge auth blocks
+389bdf50 fix: normalize agent auto-pr triggers
+1906cb14 fix: simplify agent auto-pr workflow gating
+c4fb4cec fix: simplify agent auto-pr workflow gating
+c1dcbc70 fix: resolve 8 CodeQL security and quality alerts (#298)
+e982ef7f fix: align auto-merge workflow labels
+9fc0a5ab Create 2025-06-24 - Troubleshooting - GitBook Documentation.md
+711e3ff7 test: align PR loop expectations and fix Windows syntax output
+aaf8390b Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT
+5a3bfbd1 Add docs and improve secret resolution
+9976a9c2 chore(deps): bump lxml in the uv group across 1 directory
+9eb9c703 Update .gitignore
+d1213245 Update .gitignore
+d49140e0 fix(pr-loop): address all 8 audit findings
+4e244779 Approve protocols; add CONTEXT & CONFERENCE
+7e06a76d ingest: initialize pipeline (#297)
+fd1a09f3 rollover: carry incomplete to-dos to 2026-04-23 (#296)
+8a0be724 Add AI-insights docs and formalize vault protocols
+6492d9b6 Add ARISE; update protocols, docs, CI
+f360842d Protocol Updates
+9586542d !
+275deaf1 feat: SBP Phase 1 - vault-pheromones.py shadow layer for stigmergic coordination
+f9842454 chore(deps): fold lxml bump forward
+56d3f40f build(deps): bump crewai from 1.14.1 to 1.14.2 (#294)
+44960dae build(deps): update python-dotenv requirement from >=1.0.1 to >=1.2.2 (#293)
+d30f62b8 build(deps): bump requests from 2.32.5 to 2.33.1 (#292)
+a8a3890b fix(actions): harden PR feedback loop
+cfb56510 research: SBP integration analysis - mapping stigmergic coordination to existing vault systems
+ed45d7aa canon: add THREE-NAMES.md and SBP.md research
+45190476 canon: add THREE-NAMES.md - essential Landy-Stroud synthesis
+9c035450 census: add ROSTER-CENSUS-2026-04-22 report and update AGENTS.md with tri-part structure
+c797bd6a persona: add tracking anchor to .python stub folder
+a3c8173c Add OpenRouter 1Password env resolver and runtime
+33d62f53 security: expand .gitignore for credential patterns; add hygiene scripts
+67bf6e71 Fix Phone Link vault-root intake
+86d68fee security: expand .gitignore for credential patterns and remove tracked auth files
+ea733b97 Merge branch 'main' of https://github.com/LAF-US/IDAHO-VAULT into security/dependabot-fixes
+ead987f3 security: pin lxml and python-dotenv to fixed versions (#291)
+262f1a38 security: pin lxml and python-dotenv to fixed versions
+8018ad88 security: ignore backup files and bundles
+25b1bb17 security: ignore MCP and OAuth credential files
+046d6058 Clean history - secrets purged

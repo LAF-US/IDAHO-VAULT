@@ -1,0 +1,1216 @@
+{
+    "generated_at":  "2026-04-21T21:19:44",
+    "mode":  "strict",
+    "groups":  [
+                   {
+                       "key":  "login|pbs.org|logan.finney@idahoptv.org",
+                       "count":  4,
+                       "items":  [
+                                     {
+                                         "status":  "current-candidate",
+                                         "id":  "6rv6wfhd3uvcjlgd4hbqgtpw2e",
+                                         "vault":  "Work",
+                                         "title":  "pbs.org",
+                                         "username":  "logan.finney@idahoptv.org",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "rl5uz6cm3dgqqfwnzxhcc7o26u",
+                                         "vault":  "Work",
+                                         "title":  "pbs.org",
+                                         "username":  "logan.finney@idahoptv.org",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "gqpmyqtchozifhz6xgz6iy3plq",
+                                         "vault":  "Work",
+                                         "title":  "pbs.org",
+                                         "username":  "logan.finney@idahoptv.org",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "okfio2d72nnyaw3mu3oclhsua4",
+                                         "vault":  "Work",
+                                         "title":  "pbs.org",
+                                         "username":  "logan.finney@idahoptv.org",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     }
+                                 ]
+                   },
+                   {
+                       "key":  "login|bcidaho.com|loganfinney27@gmail.com",
+                       "count":  3,
+                       "items":  [
+                                     {
+                                         "status":  "current-candidate",
+                                         "id":  "xebo2vugn235ldwda76lr22u2i",
+                                         "vault":  "Personal",
+                                         "title":  "bcidaho.com",
+                                         "username":  "loganfinney27@gmail.com",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "cmqcvile5z6aboas2bx3lw2phe",
+                                         "vault":  "Personal",
+                                         "title":  "bcidaho.com",
+                                         "username":  "loganfinney27@gmail.com",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "2necymuzexqa6ib6dm2r3rhrwy",
+                                         "vault":  "Personal",
+                                         "title":  "bcidaho.com",
+                                         "username":  "loganfinney27@gmail.com",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     }
+                                 ]
+                   },
+                   {
+                       "key":  "login|chime.com|loganfinney27@gmail.com",
+                       "count":  3,
+                       "items":  [
+                                     {
+                                         "status":  "current-candidate",
+                                         "id":  "hjg25ji5phrii7nscpwxwdbc6u",
+                                         "vault":  "Personal",
+                                         "title":  "chime.com",
+                                         "username":  "loganfinney27@gmail.com",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "ieepo4djypgh3gmzpgjnuglmh4",
+                                         "vault":  "Personal",
+                                         "title":  "chime.com",
+                                         "username":  "loganfinney27@gmail.com",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "wpcjazmhmcjspfcqzc63jnk6tq",
+                                         "vault":  "Wallet",
+                                         "title":  "chime.com",
+                                         "username":  "loganfinney27@gmail.com",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     }
+                                 ]
+                   },
+                   {
+                       "key":  "login|genius.com|loganfinney27@gmail.com",
+                       "count":  3,
+                       "items":  [
+                                     {
+                                         "status":  "current-candidate",
+                                         "id":  "nfca7us5vstsym7bziieyrc6cm",
+                                         "vault":  "Personal",
+                                         "title":  "genius.com",
+                                         "username":  "loganfinney27@gmail.com",
+                                         "updated_at":  "2026-03-23T00:16:33"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "funi26xwqv4kxqyjwwmlto3xce",
+                                         "vault":  "Personal",
+                                         "title":  "genius.com",
+                                         "username":  "loganfinney27@gmail.com",
+                                         "updated_at":  "2026-03-23T00:16:33"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "4azbvkh34in2qraqzgvm4neibi",
+                                         "vault":  "Personal",
+                                         "title":  "genius.com",
+                                         "username":  "loganfinney27@gmail.com",
+                                         "updated_at":  "2026-03-23T00:16:33"
+                                     }
+                                 ]
+                   },
+                   {
+                       "key":  "login|idaho.gov|loganfinney27@gmail.com",
+                       "count":  3,
+                       "items":  [
+                                     {
+                                         "status":  "current-candidate",
+                                         "id":  "hppdhaglhuwc5ha5fwm3x7zjrq",
+                                         "vault":  "Personal",
+                                         "title":  "idaho.gov",
+                                         "username":  "loganfinney27@gmail.com",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "jqb4wckrgdkckpgt2xybpo2co4",
+                                         "vault":  "Personal",
+                                         "title":  "idaho.gov",
+                                         "username":  "loganfinney27@gmail.com",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "2fuuzgegw3mhvzzb4yqbh4xoxa",
+                                         "vault":  "Personal",
+                                         "title":  "idaho.gov",
+                                         "username":  "loganfinney27@gmail.com",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     }
+                                 ]
+                   },
+                   {
+                       "key":  "login|libsyn.com|logan.finney@idahoptv.org",
+                       "count":  3,
+                       "items":  [
+                                     {
+                                         "status":  "current-candidate",
+                                         "id":  "pzm5topp5bp5orxfbwx4yiy3ii",
+                                         "vault":  "Work",
+                                         "title":  "libsyn.com",
+                                         "username":  "logan.finney@idahoptv.org",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "5vhcabgs27yo56ocwxw6b55aye",
+                                         "vault":  "Work",
+                                         "title":  "libsyn.com",
+                                         "username":  "logan.finney@idahoptv.org",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "ga6gjnpleiizdweamlbnysxxty",
+                                         "vault":  "Work",
+                                         "title":  "libsyn.com",
+                                         "username":  "logan.finney@idahoptv.org",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     }
+                                 ]
+                   },
+                   {
+                       "key":  "login|live.com|logan.finney@idahoptv.org",
+                       "count":  3,
+                       "items":  [
+                                     {
+                                         "status":  "current-candidate",
+                                         "id":  "sgslpgfcp2mglhjpyx455ikkle",
+                                         "vault":  "Work",
+                                         "title":  "live.com",
+                                         "username":  "logan.finney@idahoptv.org",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "6j5xhreesx2cixpi2rvj4uwoka",
+                                         "vault":  "Work",
+                                         "title":  "live.com",
+                                         "username":  "logan.finney@idahoptv.org",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "ncefknsf3okwtq4joejc23xkgu",
+                                         "vault":  "Work",
+                                         "title":  "live.com",
+                                         "username":  "logan.finney@idahoptv.org",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     }
+                                 ]
+                   },
+                   {
+                       "key":  "login|remarkable|signs in with google",
+                       "count":  3,
+                       "items":  [
+                                     {
+                                         "status":  "current-candidate",
+                                         "id":  "uy2og2frpxcr2uf7gsbs2cuudy",
+                                         "vault":  "Personal",
+                                         "title":  "ReMarkable",
+                                         "username":  "Signs in with Google",
+                                         "updated_at":  "2026-04-03T11:48:15"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "uioap6hnt3y6gkdo3mbk25uhjy",
+                                         "vault":  "Personal",
+                                         "title":  "ReMarkable",
+                                         "username":  "Signs in with Google",
+                                         "updated_at":  "2026-03-23T12:00:45"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "s4voky6drmblv3ohlceaiegqoy",
+                                         "vault":  "Personal",
+                                         "title":  "ReMarkable",
+                                         "username":  "Signs in with Google",
+                                         "updated_at":  "2026-03-23T11:56:07"
+                                     }
+                                 ]
+                   },
+                   {
+                       "key":  "login|steampowered.com|lfidaho",
+                       "count":  3,
+                       "items":  [
+                                     {
+                                         "status":  "current-candidate",
+                                         "id":  "zijydh4wzwffpjhqfzisaoaq7u",
+                                         "vault":  "Personal",
+                                         "title":  "steampowered.com",
+                                         "username":  "LFIdaho",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "wdaxkyv2gemus3trxs3it4ufxa",
+                                         "vault":  "Personal",
+                                         "title":  "steampowered.com",
+                                         "username":  "LFIdaho",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "jz3bsdbtggjmesx452idaidbv4",
+                                         "vault":  "Personal",
+                                         "title":  "steampowered.com",
+                                         "username":  "LFIdaho",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     }
+                                 ]
+                   },
+                   {
+                       "key":  "login|uidaho.edu|finn9028@vandals.uidaho.edu",
+                       "count":  3,
+                       "items":  [
+                                     {
+                                         "status":  "current-candidate",
+                                         "id":  "ovbsksjahvxdp7ippfnegztjh4",
+                                         "vault":  "Personal",
+                                         "title":  "uidaho.edu",
+                                         "username":  "finn9028@vandals.uidaho.edu",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "mjvzdq5pcgaxuskctzbpvcm2qm",
+                                         "vault":  "Personal",
+                                         "title":  "uidaho.edu",
+                                         "username":  "finn9028@vandals.uidaho.edu",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "c2ahufk33xu55z7di3kjdpgqqi",
+                                         "vault":  "Personal",
+                                         "title":  "uidaho.edu",
+                                         "username":  "finn9028@vandals.uidaho.edu",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     }
+                                 ]
+                   },
+                   {
+                       "key":  "login|accounts.google.com|finney.logan@lposd.org",
+                       "count":  2,
+                       "items":  [
+                                     {
+                                         "status":  "current-candidate",
+                                         "id":  "nkfukhwwbartrzaja4gdjiu7wi",
+                                         "vault":  "Personal",
+                                         "title":  "accounts.google.com",
+                                         "username":  "finney.logan@lposd.org",
+                                         "updated_at":  "2026-03-23T00:16:33"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "5jll44kityccg332k2g7lcyk3u",
+                                         "vault":  "Personal",
+                                         "title":  "accounts.google.com",
+                                         "username":  "finney.logan@lposd.org",
+                                         "updated_at":  "2026-03-23T00:16:33"
+                                     }
+                                 ]
+                   },
+                   {
+                       "key":  "login|acorns.com|loganfinney27@gmail.com",
+                       "count":  2,
+                       "items":  [
+                                     {
+                                         "status":  "current-candidate",
+                                         "id":  "oqxir5gug27tu3mxdq2d3yke4y",
+                                         "vault":  "Personal",
+                                         "title":  "acorns.com",
+                                         "username":  "loganfinney27@gmail.com",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "fqtfwojhjsk5iikp3ua6sgxhwi",
+                                         "vault":  "Personal",
+                                         "title":  "acorns.com",
+                                         "username":  "loganfinney27@gmail.com",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     }
+                                 ]
+                   },
+                   {
+                       "key":  "login|alaskaair.com|324374982",
+                       "count":  2,
+                       "items":  [
+                                     {
+                                         "status":  "current-candidate",
+                                         "id":  "gzqiinq3vzuq4agouyfs6m7atq",
+                                         "vault":  "Personal",
+                                         "title":  "alaskaair.com",
+                                         "username":  "324374982",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "2sgvws5mua2nhb7uzb2pkjajye",
+                                         "vault":  "Personal",
+                                         "title":  "alaskaair.com",
+                                         "username":  "324374982",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     }
+                                 ]
+                   },
+                   {
+                       "key":  "login|apple.com|lfinney@imaxmail.net",
+                       "count":  2,
+                       "items":  [
+                                     {
+                                         "status":  "current-candidate",
+                                         "id":  "qspvvdo3kxynkbnlq5udvtczt4",
+                                         "vault":  "Personal",
+                                         "title":  "apple.com",
+                                         "username":  "lfinney@imaxmail.net",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "inm6im35jggqc7nhniyqxeza5i",
+                                         "vault":  "Personal",
+                                         "title":  "apple.com",
+                                         "username":  "lfinney@imaxmail.net",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     }
+                                 ]
+                   },
+                   {
+                       "key":  "login|apscore.collegeboard.org|loganfinney",
+                       "count":  2,
+                       "items":  [
+                                     {
+                                         "status":  "current-candidate",
+                                         "id":  "n3c5jxcxppd2zuhhicexfydokm",
+                                         "vault":  "Personal",
+                                         "title":  "apscore.collegeboard.org",
+                                         "username":  "loganfinney",
+                                         "updated_at":  "2026-03-23T00:16:33"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "3ys6z7ojhqi6qxgom6tiw22igi",
+                                         "vault":  "Personal",
+                                         "title":  "apscore.collegeboard.org",
+                                         "username":  "loganfinney",
+                                         "updated_at":  "2026-03-23T00:16:33"
+                                     }
+                                 ]
+                   },
+                   {
+                       "key":  "login|bookshop.org|loganfinney27@gmail.com",
+                       "count":  2,
+                       "items":  [
+                                     {
+                                         "status":  "current-candidate",
+                                         "id":  "rogxiswk3pz5hb6xcjlzqddb6a",
+                                         "vault":  "Personal",
+                                         "title":  "bookshop.org",
+                                         "username":  "loganfinney27@gmail.com",
+                                         "updated_at":  "2026-03-23T00:16:33"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "sf67a2bdknkr5v52ws3rzmpsxi",
+                                         "vault":  "Personal",
+                                         "title":  "bookshop.org",
+                                         "username":  "loganfinney27@gmail.com",
+                                         "updated_at":  "2026-03-23T00:16:33"
+                                     }
+                                 ]
+                   },
+                   {
+                       "key":  "login|doublescorpio.com|loganfinney27@gmail.com",
+                       "count":  2,
+                       "items":  [
+                                     {
+                                         "status":  "current-candidate",
+                                         "id":  "ecsaq2vfutmyduggigs4i3icuy",
+                                         "vault":  "Personal",
+                                         "title":  "doublescorpio.com",
+                                         "username":  "loganfinney27@gmail.com",
+                                         "updated_at":  "2026-03-23T00:16:33"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "cswkso3bwa2iwmuvrdckun6st4",
+                                         "vault":  "Personal",
+                                         "title":  "www.doublescorpio.com",
+                                         "username":  "loganfinney27@gmail.com",
+                                         "updated_at":  "2026-03-23T00:16:33"
+                                     }
+                                 ]
+                   },
+                   {
+                       "key":  "login|envato.com|idahoptv",
+                       "count":  2,
+                       "items":  [
+                                     {
+                                         "status":  "current-candidate",
+                                         "id":  "xsuvfzupsjlr25ot7fxfieg4ym",
+                                         "vault":  "Personal",
+                                         "title":  "envato.com",
+                                         "username":  "idahoptv",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "mglfjkhug3vxecyy545rbzzfym",
+                                         "vault":  "Personal",
+                                         "title":  "envato.com",
+                                         "username":  "idahoptv",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     }
+                                 ]
+                   },
+                   {
+                       "key":  "login|flickr.com|loganfinney27@gmail.com",
+                       "count":  2,
+                       "items":  [
+                                     {
+                                         "status":  "current-candidate",
+                                         "id":  "wnd4zhryvinagudq4emmwv7jdy",
+                                         "vault":  "Personal",
+                                         "title":  "flickr.com",
+                                         "username":  "loganfinney27@gmail.com",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "pegrtqmy7w6jxkhubommp22jk4",
+                                         "vault":  "Personal",
+                                         "title":  "flickr.com",
+                                         "username":  "loganfinney27@gmail.com",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     }
+                                 ]
+                   },
+                   {
+                       "key":  "login|gladly.io|loganfinney27@gmail.com",
+                       "count":  2,
+                       "items":  [
+                                     {
+                                         "status":  "current-candidate",
+                                         "id":  "efetm2ovybbk6dz24drqma3kr4",
+                                         "vault":  "Personal",
+                                         "title":  "gladly.io",
+                                         "username":  "loganfinney27@gmail.com",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "oou2gxqglfybgchnkuqe56dxka",
+                                         "vault":  "Personal",
+                                         "title":  "gladly.io",
+                                         "username":  "loganfinney27@gmail.com",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     }
+                                 ]
+                   },
+                   {
+                       "key":  "login|goodblock.gladly.io|loganfinney27@gmail.com",
+                       "count":  2,
+                       "items":  [
+                                     {
+                                         "status":  "current-candidate",
+                                         "id":  "z3kaely744zktez2umadi4trcm",
+                                         "vault":  "Personal",
+                                         "title":  "goodblock.gladly.io",
+                                         "username":  "loganfinney27@gmail.com",
+                                         "updated_at":  "2026-03-23T00:16:33"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "tljkjho7mr3vdbrp4tlexc7w24",
+                                         "vault":  "Personal",
+                                         "title":  "goodblock.gladly.io",
+                                         "username":  "loganfinney27@gmail.com",
+                                         "updated_at":  "2026-03-23T00:16:33"
+                                     }
+                                 ]
+                   },
+                   {
+                       "key":  "login|google.com|finney.logan@lposd.org",
+                       "count":  2,
+                       "items":  [
+                                     {
+                                         "status":  "current-candidate",
+                                         "id":  "saraijlda4dtamqb5sk5kuyj7u",
+                                         "vault":  "Personal",
+                                         "title":  "google.com",
+                                         "username":  "finney.logan@lposd.org",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "p5aeob2mzye6jtpqotd4jqoz3i",
+                                         "vault":  "Personal",
+                                         "title":  "google.com",
+                                         "username":  "finney.logan@lposd.org",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     }
+                                 ]
+                   },
+                   {
+                       "key":  "login|hulu.com|gilbertogonzalez06@gmail.com",
+                       "count":  2,
+                       "items":  [
+                                     {
+                                         "status":  "current-candidate",
+                                         "id":  "w6rzbmtpbrj4fbvnnag3j46piy",
+                                         "vault":  "Personal",
+                                         "title":  "hulu.com",
+                                         "username":  "gilbertogonzalez06@gmail.com",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "5g7uve7nbv6ffbab4ntwetctgq",
+                                         "vault":  "Personal",
+                                         "title":  "hulu.com",
+                                         "username":  "gilbertogonzalez06@gmail.com",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     }
+                                 ]
+                   },
+                   {
+                       "key":  "login|idaho.gov|logan finney",
+                       "count":  2,
+                       "items":  [
+                                     {
+                                         "status":  "current-candidate",
+                                         "id":  "q7ttehwrkrpbe3rfwlr7wenzwa",
+                                         "vault":  "Personal",
+                                         "title":  "idaho.gov",
+                                         "username":  "Logan Finney",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "6bvvvcwibpxt2sulmn4ks34idy",
+                                         "vault":  "Personal",
+                                         "title":  "idaho.gov",
+                                         "username":  "Logan Finney",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     }
+                                 ]
+                   },
+                   {
+                       "key":  "login|idaho.gov|loganfinney27",
+                       "count":  2,
+                       "items":  [
+                                     {
+                                         "status":  "current-candidate",
+                                         "id":  "s6gehea3bob4rjgysumiobhalq",
+                                         "vault":  "Personal",
+                                         "title":  "idaho.gov",
+                                         "username":  "loganfinney27",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "roisegculi2pf2ffgq4gv5clnu",
+                                         "vault":  "Personal",
+                                         "title":  "idaho.gov",
+                                         "username":  "loganfinney27",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     }
+                                 ]
+                   },
+                   {
+                       "key":  "login|idahopower.com|loganfinney27@gmail.com",
+                       "count":  2,
+                       "items":  [
+                                     {
+                                         "status":  "current-candidate",
+                                         "id":  "iskm6j5kq3glcrlkm4zutp3zpu",
+                                         "vault":  "Personal",
+                                         "title":  "idahopower.com",
+                                         "username":  "loganfinney27@gmail.com",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "ke2mb4l255hsmmvpuvb67xy3ja",
+                                         "vault":  "Personal",
+                                         "title":  "idahopower.com",
+                                         "username":  "loganfinney27@gmail.com",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     }
+                                 ]
+                   },
+                   {
+                       "key":  "login|irobotapi.com|loganfinney27@gmail.com",
+                       "count":  2,
+                       "items":  [
+                                     {
+                                         "status":  "current-candidate",
+                                         "id":  "uicb6bxwbif3pgy5kpobtpj5ui",
+                                         "vault":  "Personal",
+                                         "title":  "irobotapi.com",
+                                         "username":  "loganfinney27@gmail.com",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "egcvhk6c4g4wi2puxlottfa2yu",
+                                         "vault":  "Personal",
+                                         "title":  "irobotapi.com",
+                                         "username":  "loganfinney27@gmail.com",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     }
+                                 ]
+                   },
+                   {
+                       "key":  "login|jacobinmag.com|loganfinney27@gmail.com",
+                       "count":  2,
+                       "items":  [
+                                     {
+                                         "status":  "current-candidate",
+                                         "id":  "n4xkehk7y3hrjw3uqlb6s6lv6i",
+                                         "vault":  "Personal",
+                                         "title":  "www.jacobinmag.com",
+                                         "username":  "loganfinney27@gmail.com",
+                                         "updated_at":  "2026-03-23T00:16:33"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "7qph3a6ct2xi4p2nz3zqoo7ubm",
+                                         "vault":  "Personal",
+                                         "title":  "jacobinmag.com",
+                                         "username":  "loganfinney27@gmail.com",
+                                         "updated_at":  "2026-03-23T00:16:33"
+                                     }
+                                 ]
+                   },
+                   {
+                       "key":  "login|live.com|finn9028@alumni.uidaho.edu",
+                       "count":  2,
+                       "items":  [
+                                     {
+                                         "status":  "current-candidate",
+                                         "id":  "ilb7zh7xtqx7bwz447vzhmczpq",
+                                         "vault":  "Personal",
+                                         "title":  "live.com",
+                                         "username":  "finn9028@alumni.uidaho.edu",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "ccrlggcdpqvez5fyqj5rgbnhey",
+                                         "vault":  "Personal",
+                                         "title":  "live.com",
+                                         "username":  "finn9028@alumni.uidaho.edu",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     }
+                                 ]
+                   },
+                   {
+                       "key":  "login|login.microsoftonline.com|finn9028@alumni.uidaho.edu",
+                       "count":  2,
+                       "items":  [
+                                     {
+                                         "status":  "current-candidate",
+                                         "id":  "chijctkfb2ayceujma2m534jku",
+                                         "vault":  "Personal",
+                                         "title":  "login.microsoftonline.com",
+                                         "username":  "finn9028@alumni.uidaho.edu",
+                                         "updated_at":  "2026-03-23T00:16:33"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "bfcqptxpuyhtz6klaembqehal4",
+                                         "vault":  "Personal",
+                                         "title":  "login.microsoftonline.com",
+                                         "username":  "finn9028@alumni.uidaho.edu",
+                                         "updated_at":  "2026-03-23T00:16:33"
+                                     }
+                                 ]
+                   },
+                   {
+                       "key":  "login|login.microsoftonline.com|logan.finney@idahoptv.org",
+                       "count":  2,
+                       "items":  [
+                                     {
+                                         "status":  "current-candidate",
+                                         "id":  "ycychdjwsg4ek2btopg3apocwu",
+                                         "vault":  "Work",
+                                         "title":  "login.microsoftonline.com",
+                                         "username":  "logan.finney@idahoptv.org",
+                                         "updated_at":  "2026-03-23T00:16:33"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "6ljtqwneumpuom3c6n4vz765vq",
+                                         "vault":  "Work",
+                                         "title":  "login.microsoftonline.com",
+                                         "username":  "logan.finney@idahoptv.org",
+                                         "updated_at":  "2026-03-23T00:16:33"
+                                     }
+                                 ]
+                   },
+                   {
+                       "key":  "login|lso.legislature.idaho.gov|loganfinney27@gmail.com",
+                       "count":  2,
+                       "items":  [
+                                     {
+                                         "status":  "current-candidate",
+                                         "id":  "tan3lsodziphajlkffsmya6gdi",
+                                         "vault":  "Personal",
+                                         "title":  "lso.legislature.idaho.gov",
+                                         "username":  "loganfinney27@gmail.com",
+                                         "updated_at":  "2026-03-23T00:16:33"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "m4iu3filhzh7zztygwdqyr52xa",
+                                         "vault":  "Personal",
+                                         "title":  "lso.legislature.idaho.gov",
+                                         "username":  "loganfinney27@gmail.com",
+                                         "updated_at":  "2026-03-23T00:16:33"
+                                     }
+                                 ]
+                   },
+                   {
+                       "key":  "login|m.alaskaair.com|324374982",
+                       "count":  2,
+                       "items":  [
+                                     {
+                                         "status":  "current-candidate",
+                                         "id":  "kivqrbsawrvh5dbaug6yicqesi",
+                                         "vault":  "Personal",
+                                         "title":  "m.alaskaair.com",
+                                         "username":  "324374982",
+                                         "updated_at":  "2026-03-23T00:16:33"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "5axbau3rnrjh2eilk2znbvxecm",
+                                         "vault":  "Personal",
+                                         "title":  "m.alaskaair.com",
+                                         "username":  "324374982",
+                                         "updated_at":  "2026-03-23T00:16:33"
+                                     }
+                                 ]
+                   },
+                   {
+                       "key":  "login|modpizza.com|loganfinney27@gmail.com",
+                       "count":  2,
+                       "items":  [
+                                     {
+                                         "status":  "current-candidate",
+                                         "id":  "vjy7zauzxiezh3go4uig6tn4zq",
+                                         "vault":  "Personal",
+                                         "title":  "modpizza.com",
+                                         "username":  "loganfinney27@gmail.com",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "25mtxtioywvzuqz5wgdgxf6qay",
+                                         "vault":  "Personal",
+                                         "title":  "modpizza.com",
+                                         "username":  "loganfinney27@gmail.com",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     }
+                                 ]
+                   },
+                   {
+                       "key":  "login|moneylion.com|loganfinney27@gmail.com",
+                       "count":  2,
+                       "items":  [
+                                     {
+                                         "status":  "current-candidate",
+                                         "id":  "gsqidb6ebrdlat4tt5rlbf67de",
+                                         "vault":  "Wallet",
+                                         "title":  "moneylion.com",
+                                         "username":  "loganfinney27@gmail.com",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "kpbtaluxt7xecgcewyliheqxem",
+                                         "vault":  "Wallet",
+                                         "title":  "moneylion.com",
+                                         "username":  "loganfinney27@gmail.com",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     }
+                                 ]
+                   },
+                   {
+                       "key":  "login|myid.care|loganfinney27",
+                       "count":  2,
+                       "items":  [
+                                     {
+                                         "status":  "current-candidate",
+                                         "id":  "ruzu5eqdxbav7ut2rvsjuritfa",
+                                         "vault":  "Personal",
+                                         "title":  "myid.care",
+                                         "username":  "loganfinney27",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "3jh4exdr5yu2xxnzjj3uqyasmq",
+                                         "vault":  "Personal",
+                                         "title":  "myid.care",
+                                         "username":  "loganfinney27",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     }
+                                 ]
+                   },
+                   {
+                       "key":  "login|myresman.com|loganfinney27",
+                       "count":  2,
+                       "items":  [
+                                     {
+                                         "status":  "current-candidate",
+                                         "id":  "tr2iqkctpgsvcmsqvlsyzpxrly",
+                                         "vault":  "Personal",
+                                         "title":  "myresman.com",
+                                         "username":  "loganfinney27",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "2ilrmj56p5mblsjvwv3nu2z4ba",
+                                         "vault":  "Personal",
+                                         "title":  "myresman.com",
+                                         "username":  "loganfinney27",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     }
+                                 ]
+                   },
+                   {
+                       "key":  "login|nike.com|loganfinney27@gmail.com",
+                       "count":  2,
+                       "items":  [
+                                     {
+                                         "status":  "current-candidate",
+                                         "id":  "jyu2ng5wa7k5ncr6eqnpn2w7km",
+                                         "vault":  "Personal",
+                                         "title":  "nike.com",
+                                         "username":  "loganfinney27@gmail.com",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "4b3e6pue76mkma5zcjwyay34uu",
+                                         "vault":  "Personal",
+                                         "title":  "nike.com",
+                                         "username":  "loganfinney27@gmail.com",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     }
+                                 ]
+                   },
+                   {
+                       "key":  "login|orders.modpizza.com|loganfinney27@gmail.com",
+                       "count":  2,
+                       "items":  [
+                                     {
+                                         "status":  "current-candidate",
+                                         "id":  "ywlascwgxqpxil4zmg3cceirii",
+                                         "vault":  "Personal",
+                                         "title":  "orders.modpizza.com",
+                                         "username":  "loganfinney27@gmail.com",
+                                         "updated_at":  "2026-03-23T00:16:33"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "gjzvx7vke66oykehqeclxs2xqa",
+                                         "vault":  "Personal",
+                                         "title":  "orders.modpizza.com",
+                                         "username":  "loganfinney27@gmail.com",
+                                         "updated_at":  "2026-03-23T00:16:33"
+                                     }
+                                 ]
+                   },
+                   {
+                       "key":  "login|securecafe.com|loganfinney27@gmail.com",
+                       "count":  2,
+                       "items":  [
+                                     {
+                                         "status":  "current-candidate",
+                                         "id":  "vygzltpnzieiit7lkgcsh7yk7y",
+                                         "vault":  "Personal",
+                                         "title":  "securecafe.com",
+                                         "username":  "loganfinney27@gmail.com",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "hmwqoyuwe7h3vyme5jlvdh2miu",
+                                         "vault":  "Personal",
+                                         "title":  "securecafe.com",
+                                         "username":  "loganfinney27@gmail.com",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     }
+                                 ]
+                   },
+                   {
+                       "key":  "login|shsxc.com|loganfinney27",
+                       "count":  2,
+                       "items":  [
+                                     {
+                                         "status":  "current-candidate",
+                                         "id":  "ydyxmvcn73kmh4b43mdywmwwei",
+                                         "vault":  "Personal",
+                                         "title":  "shsxc.com",
+                                         "username":  "loganfinney27",
+                                         "updated_at":  "2026-03-23T00:16:33"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "n3ns3klz32oouigkfvq45nkw6y",
+                                         "vault":  "Personal",
+                                         "title":  "www.shsxc.com",
+                                         "username":  "loganfinney27",
+                                         "updated_at":  "2026-03-23T00:16:33"
+                                     }
+                                 ]
+                   },
+                   {
+                       "key":  "login|slader.com|loganfinney27@gmail.com",
+                       "count":  2,
+                       "items":  [
+                                     {
+                                         "status":  "current-candidate",
+                                         "id":  "xdxjcyhsijgh6epg3jlm6ksbxa",
+                                         "vault":  "Personal",
+                                         "title":  "www.slader.com",
+                                         "username":  "loganfinney27@gmail.com",
+                                         "updated_at":  "2026-03-23T00:16:33"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "5abep22qpcyjr2wq4pjmf3walu",
+                                         "vault":  "Personal",
+                                         "title":  "www.slader.com",
+                                         "username":  "loganfinney27@gmail.com",
+                                         "updated_at":  "2026-03-23T00:16:33"
+                                     }
+                                 ]
+                   },
+                   {
+                       "key":  "login|soundcloud.com|idaho-reports",
+                       "count":  2,
+                       "items":  [
+                                     {
+                                         "status":  "current-candidate",
+                                         "id":  "wzxmacclzc2jwvsipyrkhaszqi",
+                                         "vault":  "Personal",
+                                         "title":  "soundcloud.com",
+                                         "username":  "idaho-reports",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "66dvr2wljjsrw7hu6f4qj6hrly",
+                                         "vault":  "Personal",
+                                         "title":  "soundcloud.com",
+                                         "username":  "idaho-reports",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     }
+                                 ]
+                   },
+                   {
+                       "key":  "login|spotify.com|gilberto.gonzalez06@gmail.com",
+                       "count":  2,
+                       "items":  [
+                                     {
+                                         "status":  "current-candidate",
+                                         "id":  "ywtjs6mafkvujzfrjqwf3blxja",
+                                         "vault":  "Personal",
+                                         "title":  "spotify.com",
+                                         "username":  "gilberto.gonzalez06@gmail.com",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "cq224qehobeiprj43pzgf3ca5a",
+                                         "vault":  "Personal",
+                                         "title":  "spotify.com",
+                                         "username":  "gilberto.gonzalez06@gmail.com",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     }
+                                 ]
+                   },
+                   {
+                       "key":  "login|starbucks.com|loganfinney27@gmail.com",
+                       "count":  2,
+                       "items":  [
+                                     {
+                                         "status":  "current-candidate",
+                                         "id":  "43yelbsbkljedp4p7j6b5g6azu",
+                                         "vault":  "Personal",
+                                         "title":  "www.starbucks.com",
+                                         "username":  "loganfinney27@gmail.com",
+                                         "updated_at":  "2026-03-23T00:16:33"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "5kuoot6w43btolpedzoyu3zmrm",
+                                         "vault":  "Personal",
+                                         "title":  "www.starbucks.com",
+                                         "username":  "loganfinney27@gmail.com",
+                                         "updated_at":  "2026-03-23T00:16:33"
+                                     }
+                                 ]
+                   },
+                   {
+                       "key":  "login|sts.uidaho.edu|finn9028@vandals.uidaho.edu",
+                       "count":  2,
+                       "items":  [
+                                     {
+                                         "status":  "current-candidate",
+                                         "id":  "x6y2u2mytg4gbkeoqbf4k23dri",
+                                         "vault":  "Personal",
+                                         "title":  "sts.uidaho.edu",
+                                         "username":  "finn9028@vandals.uidaho.edu",
+                                         "updated_at":  "2026-03-23T00:16:33"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "lrftjd2uycegmhrinplmmz5jxa",
+                                         "vault":  "Personal",
+                                         "title":  "sts.uidaho.edu",
+                                         "username":  "finn9028@vandals.uidaho.edu",
+                                         "updated_at":  "2026-03-23T00:16:33"
+                                     }
+                                 ]
+                   },
+                   {
+                       "key":  "login|studyblue.com|finney.logan@lposd.org",
+                       "count":  2,
+                       "items":  [
+                                     {
+                                         "status":  "current-candidate",
+                                         "id":  "nuivnjmkdnfi472qpv3uszbyrm",
+                                         "vault":  "Personal",
+                                         "title":  "www.studyblue.com",
+                                         "username":  "finney.logan@lposd.org",
+                                         "updated_at":  "2026-03-23T00:16:33"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "5w2okbrdvoimnwqjwwzoah6mku",
+                                         "vault":  "Personal",
+                                         "title":  "www.studyblue.com",
+                                         "username":  "finney.logan@lposd.org",
+                                         "updated_at":  "2026-03-23T00:16:33"
+                                     }
+                                 ]
+                   },
+                   {
+                       "key":  "login|submittable.com|loganfinney27@gmail.com",
+                       "count":  2,
+                       "items":  [
+                                     {
+                                         "status":  "current-candidate",
+                                         "id":  "znygjvyerqxgnrgnddypsngrne",
+                                         "vault":  "Personal",
+                                         "title":  "submittable.com",
+                                         "username":  "loganfinney27@gmail.com",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "ea5ogomz3m5mtxmw4rwym5cb2i",
+                                         "vault":  "Personal",
+                                         "title":  "submittable.com",
+                                         "username":  "loganfinney27@gmail.com",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     }
+                                 ]
+                   },
+                   {
+                       "key":  "login|twitter.com|idahoreports",
+                       "count":  2,
+                       "items":  [
+                                     {
+                                         "status":  "current-candidate",
+                                         "id":  "yrgscyd7vvncsalzthlbpann6e",
+                                         "vault":  "Work",
+                                         "title":  "twitter.com",
+                                         "username":  "idahoreports",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "oekmowlztlszpuwodarorueqlm",
+                                         "vault":  "Work",
+                                         "title":  "twitter.com",
+                                         "username":  "IdahoReports",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     }
+                                 ]
+                   },
+                   {
+                       "key":  "login|uscourts.gov|loganfinney",
+                       "count":  2,
+                       "items":  [
+                                     {
+                                         "status":  "current-candidate",
+                                         "id":  "dblvi3cfgtka6hdcezyebyc3uy",
+                                         "vault":  "Personal",
+                                         "title":  "uscourts.gov",
+                                         "username":  "loganfinney",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "7224fassl7zsgzx3cka36vvbgm",
+                                         "vault":  "Personal",
+                                         "title":  "uscourts.gov",
+                                         "username":  "loganfinney",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     }
+                                 ]
+                   },
+                   {
+                       "key":  "login|usps.com|loganfinney27",
+                       "count":  2,
+                       "items":  [
+                                     {
+                                         "status":  "current-candidate",
+                                         "id":  "r3pbsh2lovznyitm7tsbb6we3i",
+                                         "vault":  "Personal",
+                                         "title":  "usps.com",
+                                         "username":  "loganfinney27",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     },
+                                     {
+                                         "status":  "stale-candidate",
+                                         "id":  "fuvo52zvbxlbh6mh5jz7nqnvpm",
+                                         "vault":  "Personal",
+                                         "title":  "usps.com",
+                                         "username":  "loganfinney27",
+                                         "updated_at":  "2026-03-22T21:03:26"
+                                     }
+                                 ]
+                   }
+               ]
+}

@@ -1,0 +1,4 @@
+@echo off
+setlocal
+
+python "%~dp0..\scripts\start_codex_openrouter.py" %*
