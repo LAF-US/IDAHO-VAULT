@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoCapitalSun \u201cOur elections went very smoothly in..."
 date: 2021-04-01
 time: 14:52:35
 tweet_id: "1377635004797177860"

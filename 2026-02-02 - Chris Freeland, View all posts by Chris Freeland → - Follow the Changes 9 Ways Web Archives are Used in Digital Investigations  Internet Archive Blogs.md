@@ -43,7 +43,7 @@ authority: LOGAN
 
 ---
 
-![](https://blog.archive.org/wp-content/uploads/2024/02/wayback_logo-2048x906.jpg)
+![alt text needed](https://blog.archive.org/wp-content/uploads/2024/02/wayback_logo-2048x906.jpg)
 
 Digital journalists increasingly turn to web archives like the Wayback Machine to follow how things on the Internet break, change or disappear – from deleted posts to quietly edited pages.
 
@@ -67,13 +67,13 @@ Shifting political alliances are a common driver of online footprint erasure. De
 
 Unannounced takedowns of collections or site sections on government websites often prompt investigations using archival snapshots. Examples include removed editions of [presidential newsletters](https://qz.com/1388315/the-trump-white-house-deleted-the-whole-archive-of-its-daily-newsletters/amp) and [deleted staff contact lists](https://sunlightfoundation.com/2018/08/14/orr-quietly-removes-entire-staff-directory-webpage/) for services supporting vulnerable groups, signaling access-to-information breaches.
 
-![](https://blog.archive.org/wp-content/uploads/2026/01/1-2048x1406.png)
+![alt text needed](https://blog.archive.org/wp-content/uploads/2026/01/1-2048x1406.png)
 
 The removal of official publications also enticed further contextualisation, revealing cases in which information was deleted due to being [incomplete](https://www.nytimes.com/2019/02/11/climate/green-new-deal-faq.html), [inaccurate](https://www.forbes.com/sites/mattnovak/2023/10/05/president-biden-deletes-tweet-touting-cap-of-2000-per-month-on-prescriptions/?sh=34f461987c3a) or [inconveniently timed](https://www.snopes.com/fact-check/children-post-deleted-netanyahu/).
 
 Beyond politics, erasing on corporate websites highlights commercial and reputational pressures, such as deleted statements on [forced labour](https://www.wsj.com/business/retail/north-face-owner-pulled-xinjiang-criticism-then-reinstated-it-11624200384), [product safety](https://web.archive.org/web/20230725023652/https://finance.yahoo.com/news/tesla-deletes-page-listing-full-170400991.html) and [climate deception](https://whowhatwhy.org/science/environment/why-did-exxon-take-down-a-webpage-attacking-its-critics/).
 
-![](https://blog.archive.org/wp-content/uploads/2026/02/2-2048x1404.png)
+![alt text needed](https://blog.archive.org/wp-content/uploads/2026/02/2-2048x1404.png)
 
 **2\. following what has been altered**
 
@@ -81,7 +81,7 @@ Subtle alterations on webpages can also reveal a plain-to-see effort to reshape 
 
 Reporting based on archived pages shows how wording edits can move in opposite directions: from [hardening language](https://imprintnews.org/analysis/website-changes-foreshadowed-trump-changes-to-unaccompanied-minors-program) on migration ahead of a policy announcement to [softening controversial statements](https://www.vice.com/en/article/trumps-would-be-new-spy-chief-tried-to-delete-his-internet-history-and-it-went-about-how-youd-expect/) in view of a political nomination, or [erasing customer protection](https://www.vice.com/en/article/trumps-would-be-new-spy-chief-tried-to-delete-his-internet-history-and-it-went-about-how-youd-expect/) promises prior to a bankruptcy filing.
 
-![](https://blog.archive.org/wp-content/uploads/2026/02/3-2048x1403.png)
+![alt text needed](https://blog.archive.org/wp-content/uploads/2026/02/3-2048x1403.png)
 
 In other cases, small additions to online content have proved just as revealing. A before and after snapshot of a blog post showed how a supposed early warning about a virus threat was [added only after the pandemic](https://www.theguardian.com/politics/2020/may/26/dominic-cummings-faces-questions-over-claim-he-warned-last-year-of-virus-threat) began. Similarly, changes to a social media platform’s [API rules appeared shortly after](https://mashable.com/article/twitter-third-party-client-api-rules) third-party apps were banned, subtly reframing the policy to align with new restrictions.
 
@@ -91,7 +91,7 @@ Sometimes removals are deliberate, often at the request of companies seeking to 
 
 Reports from media investigations highlight how such bans can affect games ([here](https://mynintendonews.com/2022/03/25/nintendo-requests-takedown-of-scans-for-1996-super-mario-64-strategy-guide-from-internet-archive/), [here](https://arstechnica.com/gaming/2022/03/new-york-times-takes-down-third-party-wordle-archive/), [here](https://kotaku.com/undetectable-console-cheat-youtube-ad-taken-down-by-ac-1847259571) and [here](https://techcrunch.com/2022/04/13/club-penguin-rewritten-shut-down-disney/)), [apps](https://www.worldtrademarkreview.com/article/clubhouse-spat-1-billion-social-network-labelled-bully-over-app-takedowns) and [technical reviews](https://www.theverge.com/2019/4/25/18516875/ifixit-takedown-samsung-galaxy-fold-teardown).
 
-![](https://blog.archive.org/wp-content/uploads/2026/01/4-2048x1407.png)
+![alt text needed](https://blog.archive.org/wp-content/uploads/2026/01/4-2048x1407.png)
 
 In some cases, the bans intersect with political pressures, such as Hong Kong [news outlets being shuttered](https://www.rfi.fr/en/international/20220103-another-hong-kong-news-outlet-shut-down-as-pro-beijing-lawmakers-sworn-in) under pro‑Beijing pressure, and [disinformation networks being taken down](https://web.archive.org/web/20210226225328/https://cyber.fsi.stanford.edu/io/news/february-2021-twitter-takedowns) due to links to state actors.
 
@@ -107,7 +107,7 @@ In another case, a major [technical glitch](https://www.premiumtimesng.com/news/
 
 Compromised versions of hacked websites and social media accounts present another form of using archived snapshots as traceable historical record.
 
-![](https://blog.archive.org/wp-content/uploads/2026/02/5-2048x1407.png)
+![alt text needed](https://blog.archive.org/wp-content/uploads/2026/02/5-2048x1407.png)
 
 For example, past screenshots of Twitter’s bio page revealed inconsistencies in claims about an [alleged takeover](https://www.vice.com/en/article/twitter-trump-hack-evidence/) of the US president’s social media account. In other cases, such snapshots helped surface a forensic trail and distinguish unauthorised activity carried out by activists ([here](https://www.tpr.org/technology-entrepreneurship/2021-09-11/texas-gop-website-hacked-by-activists-protesting-abortion-law) and [here](https://techstory.in/anonymous-welcomes-nancy-pelosi-to-taiwan-on-hacked-chinese-government-website/)) from the ones linked to cybercriminal groups ([here](https://gizmodo.com/hackers-took-over-the-british-armys-youtube-and-twitter-1849140726)).
 
@@ -115,11 +115,11 @@ For example, past screenshots of Twitter’s bio page revealed inconsistencies i
 
 Archived web data often uncovers unexpected linkages between domains’ ownership that appear unrelated on the surface.
 
-![](https://blog.archive.org/wp-content/uploads/2026/01/6-2048x1404.png)
+![alt text needed](https://blog.archive.org/wp-content/uploads/2026/01/6-2048x1404.png)
 
 For example, journalists used analytics codes of copies of sites maintained by the Wayback Machine to uncover [disinformation networks](https://www.bellingcat.com/resources/2024/01/09/using-the-wayback-machine-and-google-analytics-to-uncover-disinformation-networks/). In another investigation, archived records verified that a [website redirect](https://mashable.com/article/antifa-joe-biden-trump) to Joe Biden’s presidential campaign was unrelated to him, debunking conspiracy theories about the domain’s ownership.
 
-![](https://blog.archive.org/wp-content/uploads/2026/01/7-2048x1407.png)
+![alt text needed](https://blog.archive.org/wp-content/uploads/2026/01/7-2048x1407.png)
 
 Snapshots of a [fake Black Lives Matter Facebook page](https://gijn.org/stories/how-we-proved-that-the-biggest-black-lives-matter-page-on-facebook-was-fake/) and its associated websites allowed reporters to trace the individuals behind the operation. Similarly, archived versions of [Amazon storefronts](https://www.nytimes.com/interactive/2018/11/27/style/what-is-inside-this-internet-rabbit-hole.html#ch-5) exposed networks of accounts generating affiliate revenue from coordinated product listings.
 
@@ -129,7 +129,7 @@ Archived web pages have proven vital for tracing how stories are presented acros
 
 Investigations have examined archived versions of individual pages, such as [headline coverage](https://www.niemanlab.org/2023/10/the-new-york-times-offers-a-limited-mea-culpa-for-how-it-initially-presented-news-of-the-gaza-hospital-blast/) relying heavily on unverified claims, a [news agency editorial](https://www.bbc.co.uk/news/technology-60562240) premature assessment, or the [unflagging of a branded content](https://www.thestreet.com/investing/teen-vogue-publishes-positive-facebook-article-takes-it-down).
 
-![](https://blog.archive.org/wp-content/uploads/2026/01/8-2048x1401.png)
+![alt text needed](https://blog.archive.org/wp-content/uploads/2026/01/8-2048x1401.png)
 
 In another case, snapshots of the Google homepage captured during the 2018 State of the Union speech disproved a [viral claim that Google ignored](https://www.checkyourfact.com/2018/08/31/fact-check-google-trump-sotu-obama/#google_vignette) Donald Trump’s address in favour of Barack Obama.
 

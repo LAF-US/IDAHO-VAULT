@@ -1,4 +1,5 @@
 ---
+title: "RT @blotmag Blot Magazine won 1st place in General..."
 date: 2020-04-26
 time: 05:13:36
 tweet_id: "1254277428588900356"

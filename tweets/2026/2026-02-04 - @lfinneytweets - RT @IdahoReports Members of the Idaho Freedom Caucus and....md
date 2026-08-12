@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Members of the Idaho Freedom Caucus and..."
 date: 2026-02-04
 time: 03:46:35
 tweet_id: "2018893926279848376"

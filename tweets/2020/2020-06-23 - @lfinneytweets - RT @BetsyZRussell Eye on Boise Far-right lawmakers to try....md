@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Far-right lawmakers to try..."
 date: 2020-06-23
 time: 02:05:13
 tweet_id: "1275248516235845638"

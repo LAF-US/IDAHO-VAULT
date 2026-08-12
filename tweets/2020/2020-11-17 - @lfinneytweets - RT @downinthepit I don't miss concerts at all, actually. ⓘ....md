@@ -1,4 +1,5 @@
 ---
+title: "RT @downinthepit I don't miss concerts at all, actually. \u24d8..."
 date: 2020-11-17
 time: 18:31:27
 tweet_id: "1328767724286140417"

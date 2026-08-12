@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Bill would authorize cities..."
 date: 2022-02-07
 time: 17:00:28
 tweet_id: "1490732203281580034"

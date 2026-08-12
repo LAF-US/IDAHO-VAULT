@@ -60,6 +60,6 @@ governing surfaces remains witnessed and recorded through Logan's authority.
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

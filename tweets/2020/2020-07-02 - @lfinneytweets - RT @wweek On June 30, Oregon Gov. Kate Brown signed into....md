@@ -1,4 +1,5 @@
 ---
+title: "RT @wweek On June 30, Oregon Gov. Kate Brown signed into..."
 date: 2020-07-02
 time: 20:15:18
 tweet_id: "1278784332371386368"

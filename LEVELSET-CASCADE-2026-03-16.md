@@ -132,7 +132,7 @@ authority: LOGAN
 
 *Logan: paste this section into the PERSISTENT: ADMINISTRATION conversation.*
 
-```
+```markdown
 LEVELSET CASCADE: CODE AUTHORITY → ADMINISTRATION
 Date: 2026-03-16
 From: PERMANENT: AUTHORITY: CODE
@@ -206,7 +206,7 @@ Standing by for your acknowledgment (HANDSHAKE).
 
 *Logan: paste this section into the GitHub Copilot conversation.*
 
-```
+```markdown
 LEVELSET CASCADE: CODE AUTHORITY → GITHUB COPILOT
 Date: 2026-03-16
 From: PERMANENT: AUTHORITY: CODE (via Logan relay)
@@ -300,7 +300,7 @@ Standing by for your HANDSHAKE acknowledgment.
 
 *Logan: paste this section into the Gemini conversation on your Pixel.*
 
-```
+```markdown
 LEVELSET CASCADE: CODE AUTHORITY → GEMINI
 Date: 2026-03-16
 From: PERMANENT: AUTHORITY: CODE (via Logan relay)
@@ -379,7 +379,7 @@ Standing by for your HANDSHAKE.
 
 ### 4A: TASK: LEVELSET reports
 
-```
+```markdown
 LEVELSET CASCADE: CODE AUTHORITY → TASK: LEVELSET
 Date: 2026-03-16
 Purpose: Status update — you are on hold but your context may be stale
@@ -399,7 +399,7 @@ No action required unless Logan reactivates you.
 
 ### 4B: STORY: JFAC Open Meetings
 
-```
+```markdown
 LEVELSET CASCADE: CODE AUTHORITY → STORY: JFAC
 Date: 2026-03-16
 Purpose: Status update — JFAC story is time-sensitive
@@ -425,7 +425,7 @@ it should FLAG CODE AUTHORITY before committing.
 
 ### 4C: PERSISTENT: IMPLEMENTATION
 
-```
+```markdown
 LEVELSET CASCADE: CODE AUTHORITY → IMPLEMENTATION
 Date: 2026-03-16
 Purpose: Final status — this conversation is closed

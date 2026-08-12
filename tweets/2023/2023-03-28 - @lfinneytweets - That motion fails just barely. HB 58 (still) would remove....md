@@ -1,4 +1,5 @@
 ---
+title: "That motion fails just barely. HB 58 (still) would remove..."
 date: 2023-03-28
 time: 20:05:36
 tweet_id: "1640807372028366853"

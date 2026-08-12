@@ -220,6 +220,6 @@ Knowledge did not save him because he acted against it. That is the difference b
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

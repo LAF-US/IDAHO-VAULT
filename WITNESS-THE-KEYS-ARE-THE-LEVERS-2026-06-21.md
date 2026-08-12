@@ -302,6 +302,6 @@ Whatever protects those surfaces is a separate mechanism (e.g. CODEOWNERS), not 
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

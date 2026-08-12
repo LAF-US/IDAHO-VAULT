@@ -19,7 +19,7 @@ The Count of Monte Cristo achieved widespread popularity upon its [serialized pu
 
 ### Marseille and Château d'If
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Edmond_Dant%C3%A8s.JPG/250px-Edmond_Dant%C3%A8s.JPG)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Edmond_Dant%C3%A8s.JPG/250px-Edmond_Dant%C3%A8s.JPG)
 
 The protagonist, Edmond Dantès, was a merchant sailor before his imprisonment. (Illustration by Pierre-Gustave Staal )
 
@@ -33,7 +33,7 @@ As all of Dantès' friends and family gather in *La Réserve* to participate in 
 
 On the other side of Marseilles, a betrothal feast takes place, celebrating the engagement of deputy crown prosecutor Gérard de Villefort and the young [noblewoman](https://en.wikipedia.org/wiki/Noblewoman "Noblewoman") Renée de Saint-Méran. During the meal he is questioned regarding the politics of his father, the infamous Bonapartist Noirtier de Villefort. Due to the strategic gains he faces by allying himself with the [royalists](https://en.wikipedia.org/wiki/Royalist "Royalist") during the [Bourbon restoration](https://en.wikipedia.org/wiki/Bourbon_Restoration_in_France "Bourbon Restoration in France") and reinstatement of [King Louis XVIII](https://en.wikipedia.org/wiki/Louis_XVIII "Louis XVIII"), Villefort denounces his father's politics and swears to punish any and all Bonapartists that come his way. As the guests are about to praise his stern political stance, the feast is interrupted as Villefort receives an urgent message requiring him to deal with an [apprehended](https://en.wikipedia.org/wiki/Arrest "Arrest") young man who is part of a recently discovered Bonapartist plot. Villefort arrives at his office and finds Edmond pleading his [innocence](https://en.wikipedia.org/wiki/Innocence "Innocence"). As Villefort confronts him about the allegations, Edmond explains honestly that he is merely fulfilling the [final wish](https://en.wikipedia.org/wiki/Will_and_testament "Will and testament") of his dead captain, and that he doesn't even know what the letter contains. Villefort, respecting Dantès' honest and down-to-earth character, and sympathetic about him being arrested in the midst of his own engagement party, deduces that he must have been set up by some kind of conspiracy. As he lets Edmond off, he off-handedly asks him who the letter was addressed to. As Edmond reveals that the recipient of the letter is Villefort's Bonapartist father, Villefort freezes. If word got out about his father's Bonapartist tendencies, it could damage the family name, and worse, Villefort's own career. To protect his own interest, he deceptively affirms Dantès' freedom, while scrambling to get him locked away in the infamous island prison, the Château d'If. Burning the letter and requesting the guards, Edmond is detained and forcibly brought to the port of Marseilles. Unaware of what he has done wrong, Dantès continues to plead his innocence, trying to escape the grasp of the guards. When he tries to jump off of the [skiff](https://en.wikipedia.org/wiki/Skiff "Skiff") into the cold water, he is forced onto his knees with a [gun](https://en.wikipedia.org/wiki/Musket "Musket") pressed against his temple. After being locked away in the [Château d'If](https://en.wikipedia.org/wiki/Ch%C3%A2teau_d%27If "Château d'If"), Edmond begins begging to see the [Governor](https://en.wikipedia.org/wiki/Governor "Governor") of the prison to prove his innocence. When he threatens the guard for not fulfilling his request he is sent into the deepest [dungeon](https://en.wikipedia.org/wiki/Dungeon "Dungeon") of the prison, where the only other prisoner is a supposedly crazy old Italian [abbot](https://en.wikipedia.org/wiki/Abbot "Abbot"), the Abbé Faria, who is known for unsuccessfully offering ludicrous sums to the guards in exchange for his freedom.
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Ch%C3%A2teau_d%27If_%28Marseille%29.JPG/250px-Ch%C3%A2teau_d%27If_%28Marseille%29.JPG)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Ch%C3%A2teau_d%27If_%28Marseille%29.JPG/250px-Ch%C3%A2teau_d%27If_%28Marseille%29.JPG)
 
 Château d'If ( Marseille )
 
@@ -53,7 +53,7 @@ Dantès reappears in 1838 as the mysterious, fabulously wealthy Count of Monte C
 
 In [Rome](https://en.wikipedia.org/wiki/Rome "Rome"), at [Carnival](https://en.wikipedia.org/wiki/Carnival "Carnival") time, Dantès befriends [Viscount](https://en.wikipedia.org/wiki/Viscount "Viscount") Albert de Morcerf, the son of Mercédès and Fernand. He arranges for Albert to be captured by the [bandit](https://en.wikipedia.org/wiki/Banditry "Banditry") Luigi Vampa (an ally of Dantès), and "rescues" the boy, earning his trust. Albert introduces the Count to Parisian [high society](https://en.wikipedia.org/wiki/High_society "High society"). In his guise as the Count, Dantès meets Mercédès for the first time in 23 years and eventually makes the acquaintance of Danglars, Fernand and Villefort.
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/James_O%27Neill_as_Abbe_Busoni.jpg/250px-James_O%27Neill_as_Abbe_Busoni.jpg)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/James_O%27Neill_as_Abbe_Busoni.jpg/250px-James_O%27Neill_as_Abbe_Busoni.jpg)
 
 Actor James O'Neill as the Abbé Busoni
 
@@ -77,7 +77,7 @@ As a result of the Count's financial manipulations, Danglars is left with a ruin
 
 Maximilien Morrel is driven to despair by Valentine's apparent death and considers suicide. Dantès reveals his true identity and persuades Maximilien to delay his suicide for one month. One month later, on the island of Monte Cristo, he reunites Valentine with Maximilien and reveals the true sequence of events. Having found peace, Dantès leaves the couple part of his fortune on the island and departs for [the East](https://en.wikipedia.org/wiki/Orient "Orient") to begin a new life with Haydée, who has declared her love for him. The reader is left with a final line: " *l'humaine sagesse était tout entière dans ces deux mots: attendre et espérer!*" ("all human wisdom is contained in these two words: 'Wait and Hope'").
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/CountOfMonteCristoRelations.svg/960px-CountOfMonteCristoRelations.svg.png)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/CountOfMonteCristoRelations.svg/960px-CountOfMonteCristoRelations.svg.png)
 
 Character relationships in The Count of Monte Cristo
 
@@ -167,7 +167,7 @@ In another of the true stories reported by Ashton-Wolfe, Peuchet describes a poi
 
 *The Count of Monte Cristo* was originally published in the *[Journal des Débats](https://en.wikipedia.org/wiki/Journal_des_D%C3%A9bats "Journal des Débats")* in eighteen parts. Serialization ran from 28 August 1844 to 15 January 1846. The first edition in book form was published in Paris by *Pétion* in 18 volumes with the first two issued in 1844 and the remaining sixteen in 1845.[^17] Most of the Belgian pirated editions, the first Paris edition and many others up to the *Lécrivain et Toubon* illustrated edition of 1860 feature a misspelling of the title with "Christo" used instead of "Cristo". The first edition to feature the correct spelling was the *L'Écho des Feuilletons* illustrated edition, Paris 1846. This edition featured plates by [Paul Gavarni](https://en.wikipedia.org/wiki/Paul_Gavarni "Paul Gavarni") and [Tony Johannot](https://en.wikipedia.org/wiki/Tony_Johannot "Tony Johannot") and was said to be "revised" and "corrected", although only the chapter structure appears to have been altered with an additional chapter entitled *La Maison des Allées de Meilhan* having been created by splitting *Le Départ* into two.[^18]
 
-![](https://upload.wikimedia.org/wikipedia/commons/3/3e/Le_Comte_de_Monte-Cristo_in_Judeo-Arabic.png)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/3/3e/Le_Comte_de_Monte-Cristo_in_Judeo-Arabic.png)
 
 Front page of translation into Judeo-Tunisian Arabic, 1889
 
@@ -225,7 +225,7 @@ Fantasy novelist [Steven Brust](https://en.wikipedia.org/wiki/Steven_Brust "Stev
 
 In the novel, Dumas tells of the 1815 return of [Napoleon I](https://en.wikipedia.org/wiki/Napoleon "Napoleon"), and alludes to contemporary events when the governor at the [Château d'If](https://en.wikipedia.org/wiki/Ch%C3%A2teau_d%27If "Château d'If") is promoted to a position at the castle of Ham.[^15] [^1] The attitude of Dumas towards "bonapartisme" was conflicted. His father, [Thomas-Alexandre Dumas](https://en.wikipedia.org/wiki/Thomas-Alexandre_Dumas "Thomas-Alexandre Dumas"),[^2] a Haitian of [mixed descent](https://en.wikipedia.org/wiki/Multiracial "Multiracial"), became a successful general during the [French Revolution](https://en.wikipedia.org/wiki/French_Revolution "French Revolution"). In 1840, the body of Napoleon I [was brought to France](https://en.wikipedia.org/wiki/Retour_des_cendres "Retour des cendres") and became an object of veneration in the church of [Les Invalides](https://en.wikipedia.org/wiki/Les_Invalides "Les Invalides"), renewing popular patriotic support for the Bonaparte family. As the story opens, the character Dantès is not aware of the politics, considers himself simply a good French citizen, and is caught between the conflicting loyalties of the royalist Villefort during the Restoration, and the father of Villefort, Noirtier, loyal to Napoleon, a firm Bonapartist, and the Bonapartist loyalty of his late captain, in a period of rapid changes of government in France.
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Montecristo_islet.jpg/250px-Montecristo_islet.jpg)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Montecristo_islet.jpg/250px-Montecristo_islet.jpg)
 
 Montecristo islet, view from the north
 
@@ -233,17 +233,17 @@ In *Causeries* (1860), Dumas published a short paper, "État civil du Comte de M
 
 ## Selected adaptations
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/CC_No_03_Count_of_Monte_Cristo.jpg/250px-CC_No_03_Count_of_Monte_Cristo.jpg)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/CC_No_03_Count_of_Monte_Cristo.jpg/250px-CC_No_03_Count_of_Monte_Cristo.jpg)
 
 Classic Comics, The Count of Monte Cristo, Issue #3, published 1942.
 
 ### Film
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Count_of_Monte_Cristo_1908.jpg/250px-Count_of_Monte_Cristo_1908.jpg)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Count_of_Monte_Cristo_1908.jpg/250px-Count_of_Monte_Cristo_1908.jpg)
 
 Hobart Bosworth (right) in The Count of Monte Cristo (1908)
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/James-O%27Neill-Dantes-1913.jpg/250px-James-O%27Neill-Dantes-1913.jpg)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/James-O%27Neill-Dantes-1913.jpg/250px-James-O%27Neill-Dantes-1913.jpg)
 
 Edmond Dantès (James O'Neill) loosens a stone before making his escape from the Château d'If in The Count of Monte Cristo (1913)
 
@@ -323,7 +323,7 @@ Other sequels include:
 
 ### Plays and musicals
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Th%C3%A9%C3%A2tre-Historique-Monte_Cristo-1848.jpg/250px-Th%C3%A9%C3%A2tre-Historique-Monte_Cristo-1848.jpg)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Th%C3%A9%C3%A2tre-Historique-Monte_Cristo-1848.jpg/250px-Th%C3%A9%C3%A2tre-Historique-Monte_Cristo-1848.jpg)
 
 Premiere of Dumas' Monte Cristo at Théâtre Historique (1848)
 
@@ -331,7 +331,7 @@ Alexandre Dumas and Auguste Maquet wrote a set of four plays that collectively t
 
 The adaptation differs from the novel in many respects: several characters, such as Luigi Vampa, are excluded; whereas the novel includes many different plot threads that are brought together at the conclusion, the third and fourth plays deal only with the fate of Mondego and Villefort respectively (Danglars's fate is not featured at all); the play is the first to feature Dantès shouting "the world is mine!", an iconic line that would be used in many future adaptations.
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Liebler_and_Co%27s_tremendous_production_of_Monte_Cristo_with_Mr._James_O%27Neill_as_Edmond_Dantes%2C_a_character_he_has_made_world_famous._LCCN2014636665.jpg/250px-Liebler_and_Co%27s_tremendous_production_of_Monte_Cristo_with_Mr._James_O%27Neill_as_Edmond_Dantes%2C_a_character_he_has_made_world_famous._LCCN2014636665.jpg)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Liebler_and_Co%27s_tremendous_production_of_Monte_Cristo_with_Mr._James_O%27Neill_as_Edmond_Dantes%2C_a_character_he_has_made_world_famous._LCCN2014636665.jpg/250px-Liebler_and_Co%27s_tremendous_production_of_Monte_Cristo_with_Mr._James_O%27Neill_as_Edmond_Dantes%2C_a_character_he_has_made_world_famous._LCCN2014636665.jpg)
 
 Poster for a 1900 production of Charles Fechter 's adaptation of The Count of Monte Cristo, starring James O'Neill
 
@@ -345,7 +345,7 @@ In 2008, the Russian theater of Moscow Operetta set a musical *Monte-Cristo* bas
 
 ### Audio adaptations
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Campbell-Playhouse-Count-Monte-Cristo.jpg/250px-Campbell-Playhouse-Count-Monte-Cristo.jpg)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Campbell-Playhouse-Count-Monte-Cristo.jpg/250px-Campbell-Playhouse-Count-Monte-Cristo.jpg)
 
 Newspaper advertisement for The Campbell Playhouse presentation of "The Count of Monte Cristo" (1 October 1939)
 

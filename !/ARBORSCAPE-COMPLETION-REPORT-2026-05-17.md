@@ -111,6 +111,6 @@ The vault knows the difference between a stopped clock and a broken one. That di
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

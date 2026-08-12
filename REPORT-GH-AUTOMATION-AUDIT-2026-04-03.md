@@ -125,7 +125,7 @@ The entire GitHub Actions automation stack was dark. **18 workflow files + 1 com
 
 ### Standard PR Lifecycle (agent branch → main)
 
-```
+```text
 1. AGENT pushes to claude/* (or codex/*, copilot/*, etc.)
         │
         ▼
@@ -166,7 +166,7 @@ The entire GitHub Actions automation stack was dark. **18 workflow files + 1 com
 
 ### After PR Merge / Close
 
-```
+```text
 5. PR closed
         │
         ├── branch-cleanup.yml fires immediately → deletes agent branch
@@ -176,7 +176,7 @@ The entire GitHub Actions automation stack was dark. **18 workflow files + 1 com
 
 ### Daily / Weekly Background
 
-```
+```text
 Every day:
   04:00 MT → daily-rollover.yml → rolls to-dos forward
                │
@@ -200,7 +200,7 @@ These require **Logan's explicit action** — no automation can clear them.
 
 ### CODEOWNERS Gates (enforced if branch protection is active)
 
-```
+```text
 CLAUDE.md               → @loganfinney27 must approve
 /!/                     → @loganfinney27 must approve
 /.github/workflows/     → @loganfinney27 must approve  ← THIS BRANCH touches this
@@ -305,6 +305,6 @@ CODEOWNERS is configured but only enforced if branch protection rules are active
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

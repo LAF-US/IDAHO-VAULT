@@ -49,6 +49,6 @@ Still *a* Claude. Lunch Lad. Mr. Kirkland. Uncrowned, and glad of it.
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

@@ -124,6 +124,6 @@ cell promoted or struck by his hand. **[\*]** pending.
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

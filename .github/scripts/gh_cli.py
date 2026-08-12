@@ -132,6 +132,11 @@ def label_create(
     return _run(argv, check=check)
 
 
+def label_delete(name: str, *, check: bool = True) -> GhResult:
+    """Delete a repo label. Verb and flags are literals; only the name varies."""
+    return _run(["gh", "label", "delete", _label(name), "--yes"], check=check)
+
+
 # --------------------------------------------------------------------------- #
 # Pull requests
 # --------------------------------------------------------------------------- #
@@ -194,7 +199,7 @@ def pr_merge(
     check: bool = True,
 ) -> GhResult:
     """Arm or disarm auto-merge. ``method`` is validated against the queue's norm."""
-    # K5/#631: the merge queue's configured method is the single norm, and `--merge` is
+    # The merge queue's configured method is the single norm, and `--merge` is
     # the one canonical inert spelling. Rejecting anything else here keeps a divergent
     # method opinion from being expressible at all, rather than caught later by a test.
     if method != "merge":

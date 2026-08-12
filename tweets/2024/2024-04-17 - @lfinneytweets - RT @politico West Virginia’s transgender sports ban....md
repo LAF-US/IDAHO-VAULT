@@ -1,4 +1,5 @@
 ---
+title: "RT @politico West Virginia\u2019s transgender sports ban..."
 date: 2024-04-17
 time: 16:31:32
 tweet_id: "1780635214756315323"

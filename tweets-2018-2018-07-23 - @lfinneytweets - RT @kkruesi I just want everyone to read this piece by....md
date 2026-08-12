@@ -34,6 +34,6 @@ RT @kkruesi: I just want everyone to read this piece by @sethogilvie <https://t.
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/Di0PwSMVsAEBoES.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/Di0PwSMVsAEBoES.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1021528272285270016)

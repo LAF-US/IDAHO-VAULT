@@ -1,4 +1,5 @@
 ---
+title: "Would take an #idleg resolution to change the joint rules!"
 date: 2024-06-21
 time: 19:11:54
 tweet_id: "1804230785295356148"

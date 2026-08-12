@@ -83,7 +83,7 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 | Publication gatekeeping | JFAC quote audio verification and publication blocking checks | Logan | Blocked | *(create child issue)* | Keep evidence gate work separate from coordination docket |
 | Signal intake - Bartimaeus | Normalize LAF-17 signal into actionable workflow disposition | Codex | Completed | LAF-17 | Filed brief `!/BRIEF-LAF-17-2026-03-30.md` with recommended merge-gate checks for LAF-13/LAF-14 |
 | Gemini Architecture - LAF-18 | **Framework Staged**; Courier Workflow Ready | Gemini | In progress | LAF-18 | `vault-courier` automation scripts + GitHub Actions fixed; ready for secret provisioning. |
-| **Address Space Discovery** | Gemini | **Complete** | — | **SUCCESS**. 2,622 nodes hydrated + performance stabilization pass. Metadata-structural phase finished. |
+| **Address Space Discovery** | Gemini | **Complete** | — | **SUCCESS**. 2,622 nodes hydrated + performance stabilization pass. Metadata-structural phase finished. | |
 
 ## RECENTLY COMPLETED
 
@@ -170,6 +170,6 @@ This is the live coordination board. Any agent arriving at THE COURTROOM reads t
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

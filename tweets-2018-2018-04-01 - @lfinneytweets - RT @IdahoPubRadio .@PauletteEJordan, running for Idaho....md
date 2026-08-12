@@ -21,6 +21,6 @@ RT @IdahoPubRadio: .@PauletteEJordan, running for Idaho governor, opened a campa
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/DZo-k_jVMAAzEaf.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/DZo-k_jVMAAzEaf.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/980548607412547584)

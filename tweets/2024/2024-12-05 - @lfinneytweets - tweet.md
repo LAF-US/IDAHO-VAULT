@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2024-12-05
 time: 06:34:53
 tweet_id: "1864559046872977736"
@@ -16,10 +17,10 @@ related:
   - lfinneytweets
 ---
 
-@Lemommeringue https://t.co/akSItyP28w
+@Lemommeringue <https://t.co/akSItyP28w>
 
 ## Media
-- ![](https://pbs.twimg.com/tweet_video_thumb/GeA-jeka8AAUa5j.jpg)
+- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/GeA-jeka8AAUa5j.jpg)
 
 *In reply to [@Lemommeringue](https://twitter.com/Lemommeringue)*
 

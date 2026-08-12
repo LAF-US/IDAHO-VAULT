@@ -13,7 +13,7 @@ created: 2026-04-17
 
 We build Enterprise AI. We teach what we learn. Join 100K+ AI practitioners on Towards AI Academy. Free: 6-day Agentic AI Engineering Email Guide: [https://email-course.towardsai.net/](https://email-course.towardsai.net/)
 
-![](https://miro.medium.com/v2/resize:fit:1400/format:webp/0*lDGYbpJINKYyPx44)
+![alt text needed](https://miro.medium.com/v2/resize:fit:1400/format:webp/0*lDGYbpJINKYyPx44)
 
 Photo by Jona on Unsplash
 
@@ -29,7 +29,7 @@ So I did what any reasonable person would do. I blocked out a weekend, installed
 
 Here’s what I found — and it’s not what the fanboys on either side want to hear.
 
-![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*7J66QD70oyw9bJMEaBYquA.png)
+![alt text needed](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*7J66QD70oyw9bJMEaBYquA.png)
 
 Running AI agents in terminals (Screenshot captured by author)
 

@@ -6,6 +6,20 @@ on:
   pull_request:
   merge_group:
 
+# Supersede, don't stack: a second push to the same branch cancels the still-running
+# check for the previous commit, which nobody is waiting on. The final state of the
+# branch is still checked in full, so no coverage is lost.
+#
+# `github.event_name` is in the group key on purpose: it keeps the push-event run and
+# the pull_request-event run of the same branch in SEPARATE groups. Collapsing them
+# would let a push run cancel a required PR check, and a cancelled required check
+# blocks the PR.
+#
+# merge_group is never cancelled — cancelling a merge-queue check breaks the queue.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event_name }}-${{ github.head_ref || github.ref }}
+  cancel-in-progress: ${{ github.event_name != 'merge_group' }}
+
 jobs:
   check-dotfolder-anchors:
     runs-on: ubuntu-latest
@@ -16,7 +30,7 @@ jobs:
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
       - name: Set up Python
-        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         with:
           python-version: "3.13"
 

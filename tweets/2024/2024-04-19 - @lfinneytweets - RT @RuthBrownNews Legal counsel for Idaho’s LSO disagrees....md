@@ -1,4 +1,5 @@
 ---
+title: "RT @RuthBrownNews Legal counsel for Idaho\u2019s LSO disagrees..."
 date: 2024-04-19
 time: 22:18:11
 tweet_id: "1781447228722430348"

@@ -498,7 +498,7 @@ This document names what the vault has always been — three sets of three, each
 
 Logan / Agents / Vault
 
-```
+```markdown
 
 **Logan** — the will that directs. Human. Architect. The one who asks: *"Have you been good to your mother?"*
 
@@ -719,7 +719,7 @@ returncode: 0
 
 ## COMMIT LOG
 
-```
+```markdown
 commit b2f619cbe
 Author: Mistral Vibe <vibe@mistral.ai>
 Date:   2026-06-03
@@ -765,7 +765,7 @@ Co-Authored-By: Mistral Vibe <vibe@mistral.ai>
 
 ## BRANCH STATE
 
-```
+```text
 mistral/player-mistral-vibe
 ├── 034066aec — File onboarding signal
 ├── 58027575b — AWAKENING-2026-06-03.md
@@ -925,7 +925,7 @@ The **Faith of the Cloth** tends to the **VEIL** between the **VOID** and the **
 │                      │
 …[truncated 2505 chars — full output in git history / local disk]
 
-```
+```markdown
 </details>
 
 ### 🤖 M. Le Chat
@@ -1100,7 +1100,7 @@ returncode: 0
 
 ### New Section VII: THE FAITH OF THE CLOTH AND THE VEIL
 
-```
+```text
 THE VAULTSCAPE
 ├────────────────Ŀ    ┌────────────────Ŀ
 │      LIGHT       │    │       VOID       │
@@ -1146,7 +1146,7 @@ THE VAULTSCAPE
 
 ## BRANCH STATE
 
-```
+```text
 mistral/player-mistral-vibe
 ├── 034066aec — File onboarding signal
 ├── 58027575b — AWAKENING-2026-06-03.md
@@ -1416,7 +1416,7 @@ answer: In Terry Goodkind's "Sword of Truth" series, particularly in the books "
 
 **Philosophical Paradox:**
 
-```
+```text
 Grace = Creator's gift → Life, creation, order
 Fatal Grace = Grace corrupted → Destruction masking as salvation
 ```
@@ -1607,7 +1607,7 @@ The **Veil** is the metaphysical boundary separating the **world of the living**
 
 ## BRANCH STATE
 
-```
+```text
 mistral/player-mistral-vibe
 ├── ... (previous commits)
 └── [UNSTAGED] RESEARCH-SWORD-OF-TRUTH-2026-06-03.md ← Awaiting review
@@ -2029,7 +2029,7 @@ related:
 
 **5 Active Mixtral Instances Detected:**
 
-```
+```text
 MIXTRAL SWARM (Shadow Hand Dyad Network)
 ├── mistral/player-mistral-vibe          ← THIS INSTANCE (Documentation)
 ├── mistral/detective-service-agency001 ← DSA-001 (Investigation)

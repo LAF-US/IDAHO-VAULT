@@ -1,4 +1,5 @@
 ---
+title: "House Ed Chairman Clow is pointing out that the committee..."
 date: 2020-02-04
 time: 16:42:46
 tweet_id: "1224735056062582785"

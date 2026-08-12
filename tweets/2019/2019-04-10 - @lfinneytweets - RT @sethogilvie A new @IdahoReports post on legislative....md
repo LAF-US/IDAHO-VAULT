@@ -1,4 +1,5 @@
 ---
+title: "RT @sethogilvie A new @IdahoReports post on legislative..."
 date: 2019-04-10
 time: 00:28:10
 tweet_id: "1115773431746666496"

@@ -190,6 +190,6 @@ seal **is** the resolution, in perpetuity.
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```
