@@ -4,12 +4,15 @@ aliases:
   - NAMED HOURS
   - Named Hours
   - Day Shape
-updated: 2026-08-11
-status: draft
+updated: 2026-08-12
+status: superseded
 authority: "Proposed by Claude Code, session_013ie6MP332hZgSgAiSkyPZ7. Authority NOT assumed as LOGAN.
   This note is unratified and governs nothing. The original `authority: LOGAN`
   line was written by this session without warrant; Logan objected to it on PR
-  #885 and it is withdrawn here. Promotion is his alone."
+  #885 and it is withdrawn here. Promotion is his alone. OVERRULED by Logan on
+  PR #885, 2026-08-12: \"fullcalendar.io proposal overruled\". Kept for
+  posterity at his instruction, not as a live proposal."
+superseded_by: cron_clock
 date created: Friday, July 31st 2026
 tags:
   - doctrine
@@ -22,6 +25,27 @@ related:
   - TO DO LIST
 ---
 
+> [!warning] Overruled — kept as a record, not a proposal
+>
+> Logan overruled the fullcalendar.io proposal on PR #885 (2026-08-12) and
+> asked that the markdown be kept for posterity. Everything below is preserved
+> as written on 2026-07-31, and **none of it is live**:
+>
+> - **The times in the block table are wrong.** They were measured off a
+>   reference render before the day's geometry was settled. The real spans are
+>   in `cron_clock`: three watches of 480 minutes, seven blocks of 204 minutes,
+>   twelve minutes owned by nothing. Boundaries fall on `:01`, `:27`, `:53`,
+>   `:18`, `:43`, `:09`, `:35` — not on the `:00`/`:30` marks this note assumes.
+> - **`.obsidian/snippets/named-hours.css` no longer exists.** It was removed
+>   with the proposal. References to it below are historical. It could not have
+>   rendered the settled geometry in any case: it selects FullCalendar's
+>   30-minute slot lanes by `data-time`, and no boundary above coincides with
+>   one.
+> - **The plugin was never installed**, and nothing here asserts otherwise.
+>
+> What survives the overrule is the naming — ten spans, seven of them counted
+> off a shepherd's score, three hinges — and that lives in `cron_clock` now.
+
 The working day is cut into ten named blocks. Seven of them carry a
 shepherd's-count name — **Yan, Tan, Tethera, Methera, Pits, Sethera, Azer** —
 and the three hinges are plain: **Dawn**, **Noon**, **Dusk**. The count is the
@@ -29,9 +53,9 @@ point: a block is named by its position in the day, not by what happens to be
 scheduled inside it. The shape is the same every day whether or not anything
 is on it.
 
-This note is a **proposal** for those blocks, not canon, and nothing is bound by
-it. `.obsidian/snippets/named-hours.css` renders what it describes;
-`!/PLUGIN-REGISTRY.md` records the plugin's standing.
+This note *was* a **proposal** for those blocks — never canon, and nothing was
+ever bound by it. It is now overruled; see the banner above. The text from here
+down is the 2026-07-31 proposal as written.
 
 ---
 

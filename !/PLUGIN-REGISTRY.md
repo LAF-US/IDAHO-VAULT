@@ -165,16 +165,15 @@ That means:
 | `obsidian-day-planner` | Workflow-adjacent | Configured and potentially useful, but no tracked template, doctrine surface, or automation currently depends on its timeline UI |
 | `nldates-obsidian` | Input convenience | Helps with typing dates, but the time system does not rely on it to remain lawful |
 
-### Proposed for time/workflow, not yet installed
+### Proposed for time/workflow and overruled
 
 | Plugin ID | Standing | Notes |
 | --- | --- | --- |
-| `obsidian-full-calendar` | Proposed / not installed | Obsidian integration for fullcalendar.io. Its *daily note* calendar type reads events as list items under a heading in the daily note, so it renders the existing file-first loop rather than replacing it with a separate event store. The day-shape it would display is *proposed* — not canon — in `NAMED-HOURS-2026-07-31.md`; the block frame ships as the tracked CSS snippet `.obsidian/snippets/named-hours.css`, which is version-controlled here rather than held in plugin data, so it survives the plugin losing its events — but every rule in it is scoped to a Full Calendar leaf, so it paints nothing unless the plugin is installed and enabled. **Not installed as of 2026-07-31** — plugin binaries are gitignored, so installation is a desktop action, pending Logan. |
+| `obsidian-full-calendar` | Overruled / never installed | Obsidian integration for fullcalendar.io, proposed on PR #885 and **overruled by Logan on 2026-08-12**. It never got past a proposal on a branch — plugin binaries are gitignored, so nothing here ever installed it. The day-shape it was meant to display is kept, superseded, in `NAMED-HOURS-2026-07-31.md`; the CSS snippet that would have painted it was removed with the proposal. Do not re-propose it as a way of rendering the named spans: those spans live in `cron_clock`, and their boundaries do not land on the 30-minute slot marks FullCalendar's time grid exposes. |
 
-Nothing in this repository should be read as evidence that this plugin is
-installed or enabled. When it is, move the row into the enabled inventory with
-a real version and size, and record whether it earns standing above
-`obsidian-day-planner`, whose timeline UI it overlaps.
+The row is kept so the decision stays discoverable, not because the plugin has
+standing. Nothing in this repository should be read as evidence that it is
+installed or enabled.
 
 ### Explicitly out of current time/workflow scope
 
