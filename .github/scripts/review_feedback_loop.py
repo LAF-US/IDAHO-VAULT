@@ -500,23 +500,15 @@ def _build_attestation(
         moment = moment.replace(tzinfo=timezone.utc)
     stamp = moment.astimezone(timezone.utc).isoformat().replace("+00:00", "Z")
     marker = f"<!-- looked: by={looker}; at={stamp}; decision={decision}; v=1 -->"
-    # Prose says "Resolved by looker" because that is what both call sites do:
-    # `attest_and_resolve` records the look and resolves the thread, and the
-    # backfill path only ever witnesses a resolve the looker itself performed
-    # (it refuses another identity's, above). "Looked by" named the attestation
-    # rather than its effect.
+    # "Resolved" because both callers resolve: attest_and_resolve resolves the
+    # thread, and the backfill path witnesses only a resolve this looker itself
+    # performed (it refuses another identity's).
     #
-    # The login is deliberately NOT printed. This is a bot action, and naming a
-    # human in the visible line reads as though that person opened the thread
-    # and formed a judgement about it. They did not — the automation swept it.
-    # Attributing machine work to a person is a provenance error in the
-    # direction that matters: it manufactures intent that was never exercised.
-    #
-    # The identity is still recorded in the `looked:` marker below, which is
-    # the machine-read half `_thread_has_attested_look` matches on, and which
-    # `by=` grammar still validates. Provenance is kept where it is used rather
-    # than where it misleads; the marker is unchanged so already-posted
-    # attestations keep round-tripping.
+    # The login is deliberately NOT printed: naming a human on a reply the
+    # automation posted reads as that person's judgement, which was never
+    # exercised. Do not add it back. The identity stays in the `looked:` marker
+    # above -- machine-read by _thread_has_attested_look, validated by the `by=`
+    # grammar, and unchanged so already-posted attestations still round-trip.
     return f"Resolved by looker — **{decision}**. {rationale}\n\n{marker}"
 
 
