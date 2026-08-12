@@ -1,0 +1,359 @@
+CAESAR: Brutus!
+
+CAESAR: Shouldn't you be celebrating?
+
+CAESAR: Pompey's dead and gone;
+
+CAESAR: And Rome can finally move on!
+
+ROMAN: Caesar speaks!
+
+ROMANS: Hush up for Caesar!
+
+ROMAN: Rome is free!
+
+ROMANS: And all thanks to Caesar!
+
+CAESAR: Look at where we are;
+
+CAESAR: The war is won!
+
+CAESAR: Oh, won't you take it in?
+
+CAESAR: And let the festival begin!
+
+ROMAN: Caesar speaks!
+
+ROMANS: We live for Caesar!
+
+ROMAN: Lupercalia!
+
+ROMANS: Three cheers for Caesar!
+
+BRUTUS: You know I fought under Pompey;
+
+CAESAR: And I forgive you!
+
+ROMANS: Isn't he generous?
+
+BRUTUS: And... There's so much;
+
+BRUTUS: We must discuss.
+
+CAESAR: Hmh. Believe mе, I'm aware.
+
+BRUTUS: Are you alright, with this attention?
+
+ROMAN: Caеsar, the bringer of victory!
+
+CAESAR: Today... I think that it's a plus.
+
+ROMAN: Caesar for justice!
+
+ROMANS: He fights for us!
+
+CAESAR: Brutus, can I say?
+
+CAESAR: I really missed my friend.
+
+CAESAR: It's our turn, to finally change the tide;
+
+CAESAR: Don't you think that Rome deserves a new direction?
+
+BRUTUS: But Caesar...
+
+CAESAR: Brutus, can't you try to pick the winning side?
+
+ROMAN: Say all that you will about Caesar;
+
+ROMANS: I think Brutus ought to decide.
+
+ROMANS: Come on, Brutus;
+
+ROMANS: Caesar's the victor!
+
+ROMANS: You heard us;
+
+ROMANS: Choose the right side!
+
+CASSIUS: No pressure though...
+
+BRUTUS: Cassius!
+
+CASSIUS: ...Brutus.
+
+CASSIUS: What a morning this has turned out to be;
+
+CASSIUS: I can see you and Caesar have been reacquainted.
+
+BRUTUS: Indeed...
+
+CASSIUS: So that's why you seem so... elated.
+
+CASSIUS: Are you running in the games?
+
+BRUTUS: The games?
+
+CASSIUS: Yes, the games.
+
+CASSIUS: Are you running in the race?
+
+BRUTUS: No way! I'm not Mark Antony.
+
+CASSIUS: Ugh. Good gods;
+
+BOTH: Mark Antony...
+
+MARK ANTONY: Let the people take the streets!
+
+ROMANS: Antony, Mark Antony!
+
+MARK ANTONY: Let the trumpets sound for Caesar!
+
+ROMANS: Antony, Mark Antony!
+
+MARK ANTONY: How glorious is this day?
+
+MARK ANTONY: These are moments that good men pray for;
+
+MARK ANTONY: And I know they can never stay for long.
+
+MARK ANTONY: So let's go dancing!
+
+ROMANS: Let's go dancing!
+
+MARK ANTONY: The song's begun!
+
+MARK ANTONY: Friends, Romans, countrymen;
+
+MARK ANTONY: Today, we chase the setting sun;
+
+ROMANS: Countrymen!
+
+MARK ANTONY: So let's be joyful, everyone!
+
+MARK ANTONY: Caesar has been loyal to us;
+
+MARK ANTONY: Whatever Caesar says, it will be done!
+
+CASSIUS: What do they see in him?
+
+ROMANS: So noble and kind!
+
+CASSIUS: He's a sycophant!
+
+ROMANS: Sound heart and sound mind!
+
+BRUTUS: He's just charming.
+
+CASSIUS: I have doubts.
+
+BRUTUS: He's innocent.
+
+CASSIUS: Yeah right, for now!
+
+BRUTUS: He's a true Roman!
+
+CASSIUS: Tell me how.
+
+MARK ANTONY: Hello, friends!
+
+CASSIUS: Antony!
+
+MARK ANTONY: What are we talking about?
+
+BRUTUS: ...The games.
+
+MARK ANTONY: The games?
+
+CASSIUS: You heard him.
+
+MARK ANTONY: Oho, the games!
+
+MARK ANTONY: I just can't wait!
+
+MARK ANTONY: We all deserve to celebrate!
+
+MARK ANTONY: And Brutus! You know;
+
+MARK ANTONY: It's not too late to join!
+
+BRUTUS: You make me laugh, Mark Antony.
+
+MARK ANTONY: I do?
+
+CASSIUS: You make everyone laugh.
+
+BRUTUS: Cassius!
+
+CASSIUS: What makes you think:
+
+CASSIUS: That you look serious;
+
+CASSIUS: Next to Caesar?
+
+MARK ANTONY: I am serious!
+
+CASSIUS: So am I.
+
+CASSIUS: But you don't see me:
+
+CASSIUS: Mingling with cobblers or poets;
+
+CASSIUS: The lowest among us;
+
+CASSIUS: I know, it's because:
+
+CASSIUS: You are young.
+
+MARK ANTONY: I am young!
+
+MARK ANTONY: But I am wise!
+
+CASSIUS: Caesar treats you like some prize.
+
+MARK ANTONY: He doesn't!
+
+CASSIUS: So go on! Tell me why:
+
+CASSIUS: This day has been politicized!
+
+CAESAR: Lupercalia, a day of many blessings;
+
+CAESAR: Including senators getting along.
+
+CAESAR: Though, there's one more thing;
+
+CAESAR: In need of some addressing:
+
+CAESAR: Antony is true;
+
+CAESAR: And if you think otherwise;
+
+CAESAR: Then you'd be wrong.
+
+MARK ANTONY: Thank you, sir!
+
+CAESAR: No thanks necessary;
+
+CAESAR: I'm just standing by my friend.
+
+CAESAR: I'm sticking with you till the end!
+
+ROMANS: Caesar speaks!
+
+ROMAN: Hush up for Caesar!
+
+ROMANS: Rome is free!
+
+ROMAN: And all thanks to Caesar!
+
+CAESAR: Now where's my wife, Calphurnia?
+
+CAESAR: I was with her a minute ago;
+
+CAESAR: Nonetheless, I miss her so!
+
+ROMANS: Caesar speaks!
+
+ROMAN: How sweet is Caesar!
+
+ROMANS: Lupercalia!
+
+ROMAN: Feast day, for Caesar!
+
+CALPHURNIA: Here I am!
+
+CAESAR: Oh, there you are;
+
+CAESAR: Isn't this something?
+
+CALPHURNIA: This is wonderful, of course!
+
+CALPHURNIA: But, there is one thing;
+
+CALPHURNIA: Perhaps you should consider:
+
+CALPHURNIA: Even half a day of rest.
+
+CAESAR: Well, let me think...
+
+CALPHURNIA: Caesar!
+
+CAESAR: Hmh, nope.
+
+CALPHURNIA: (Sigh.)
+
+CALPHURNIA: I tried my best.
+
+CAESAR: Just look at us;
+
+CAESAR: All together again.
+
+CAESAR: Now, Mark.
+
+MARK ANTONY: Yes, sir?
+
+CAESAR: The elders;
+
+CAESAR: The men who have run this race;
+
+CAESAR: Created a sacred tradition;
+
+CAESAR: And I have a mission, for you.
+
+MARK ANTONY: Whatever you say, it's done!
+
+CAESAR: Now, Antony, when you run;
+
+CAESAR: Make sure you touch Calphurnia's hand;
+
+CAESAR: It's important, please understand.
+
+CAESAR: If Calphurnia stands in your way;
+
+CAESAR: In this race of fertility;
+
+CAESAR: She would be barren no longer.
+
+BRUTUS: ...Caesar?
+
+CAESAR: I want to be a father.
+
+ROMAN: A father...
+
+MARK ANTONY: I promise, I'll make you proud!
+
+ROMANS: A father...
+
+CAESAR: I trust you won't let me down.
+
+BRUTUS: A... child?
+
+ROMANS: A father!
+
+BRUTUS: You've gone too far...
+
+ROMAN: Make way for Caesar!
+
+BRUTUS: You've enough to take care of...
+
+ROMANS: Make way for Caesar!
+
+CAESAR: Imagine, a mini-me running around!
+
+MARK ANTONY: A father!
+
+ROMANS: Caesar! Make way for Caesar!
+
+BRUTUS: You know it's more than that;
+
+BRUTUS: A father must be there!
+
+CAESAR: Brutus!
+
+BRUTUS: No, you don't want to have a son;
+
+ROMANS: Caesar! Make way for Caesar!
+
+BRUTUS: You wish to sire an heir...
