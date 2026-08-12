@@ -1,0 +1,12 @@
+{
+  "foldersToScan": [],
+  "ignoredFolders": [],
+  "disableAutomaticUpdates": false,
+  "showRefreshButton": true,
+  "foldersToForceUpdate": [],
+  "showErrorNotifications": true,
+  "debugLogging": true,
+  "addTrailingNewline": true,
+  "linkFormat": "shortest",
+  "enableDataviewJS": true
+}
