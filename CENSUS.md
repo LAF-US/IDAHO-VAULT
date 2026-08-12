@@ -50,7 +50,7 @@ Those are [[CROSSFRAMING]] operations.
 | --- | --- |
 | Nest (`!/`) | Collective routing surfaces, DOCKET entries, bootstrap files |
 | Persona chambers (`.*/`) | Dotfolders with tri-anchor presence |
-| Root | Top-level root folders (per `topology_census.py`'s `root.iterdir()` scan) |
+| Root | Top-level root folders and their contents |
 | Git refs | Named branches, PR refs, orphan lineages (see [[ARCHIPELAGO]]) |
 
 ### The Tri-Anchor Status Matrix
