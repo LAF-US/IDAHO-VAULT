@@ -1,21 +1,24 @@
 name: PR-Agent
 
-# Self-hosted Qodo PR-Agent (OSS) — augments the hosted Qodo app (#675).
+# Self-hosted PR-Agent (OSS) — augments the hosted Qodo app (#675).
 # Describes/reviews PRs and answers slash-commands using the vault's OWN LLM key
 # (OpenRouter, fetched from 1Password at runtime). Review config lives in
 # `.pr_agent.toml`.
 #
+# Qodo donated PR-Agent to the community: the project now lives at
+# `the-pr-agent/pr-agent` (docs.pr-agent.ai), not `qodo-ai/pr-agent`. Qodo's
+# commercial line continued separately as Qodo 2.0, so the hosted app this
+# augments and the OSS action below are no longer the same codebase.
+#
 # ┌─ STATUS: SCAFFOLDING — inert (job SKIPPED) until the switch below is on ─Ŀ
 # │ 0. MASTER SWITCH: set repo variable PR_AGENT_ENABLED = 'true'. Until then  │
 # │    the job skips cleanly (no run, no red on other PRs). Flip LAST.         │
-# │ 1. Pin `qodo-ai/pr-agent` to a real release commit SHA. The repo requires │
-# │    full-length SHA pins, so the zero-SHA below is deliberately inert.      │
+# │ 1. DONE — pinned to v0.41.1 (743f52d8), resolved via `git ls-remote`.      │
+# │    Lightweight tag, so that SHA is the commit itself.                      │
 # │ 2. Set the OpenRouter 1Password ref (`OPENROUTER_API_KEY` op:// below) to  │
 # │    the real item, and confirm OP_SERVICE_ACCOUNT_TOKEN can read it.        │
 # │    (see `.op/openrouter.env.template`)                                     │
-# │ 3. Validate the PR-Agent env keys against the pinned version's docs — the  │
-# │    OpenRouter override keys below are the documented nested form but        │
-# │    should be confirmed against that release.                               │
+# │ 3. DONE — key form corrected against the pinned source. See the env block. │
 # └───────────────────────────────────────────────────────────────────────────┘
 #
 # Augment, don't replace: this runs ALONGSIDE the hosted Qodo app. Once it is
@@ -72,13 +75,20 @@ jobs:
 
       - name: Run PR-Agent
         if: env.OPENROUTER_API_KEY != ''
-        # TODO(pin): replace the zero-SHA with a real qodo-ai/pr-agent release SHA.
-        # Until then this step is inert (the repo blocks non-SHA-pinned actions).
-        uses: qodo-ai/pr-agent@0000000000000000000000000000000000000000 # TODO vX.Y.Z
+        # Docker action: action.yaml (not .yml) builds Dockerfile.github_action_dockerhub.
+        uses: the-pr-agent/pr-agent@743f52d80f3513193dfc7626f778c73478df6d0a # v0.41.1
         env:
-          # OpenRouter via PR-Agent's OpenAI-compatible client. PR-Agent maps a
-          # config `section.key` to env `SECTION__KEY` (double underscore).
-          OPENAI__KEY: ${{ env.OPENROUTER_API_KEY }}
+          # `OPENAI_KEY` — single underscore. github_action_runner.py:87 reads
+          # `OPENAI_KEY` or `OPENAI.KEY` and nothing else; the nested
+          # `OPENAI__KEY` form used here before is never checked there.
+          #
+          # WARNING: when the key is absent the runner prints "OPENAI_KEY not
+          # set" and CONTINUES (it allows non-OpenAI providers), so a wrong key
+          # name yields a silent no-op review rather than a failed check.
+          # Confirm the first enabled run actually posts before trusting it.
+          OPENAI_KEY: ${{ env.OPENROUTER_API_KEY }}
+          # No explicit handling in the runner; these reach Dynaconf's env
+          # loader, which maps `SECTION__KEY` to `section.key`.
           OPENAI__API_BASE: https://openrouter.ai/api/v1
           CONFIG__MODEL: openrouter/auto
           CONFIG__GIT_PROVIDER: github
