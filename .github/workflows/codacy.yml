@@ -5,11 +5,8 @@
 
 # This workflow checks out code, performs a Codacy security scan
 # and integrates the results with the
-# GitHub Advanced Security code scanning feature.  For more information on
-# the Codacy security scan action usage and parameters, see
-# https://github.com/codacy/codacy-analysis-cli-action.
-# For more information on Codacy Analysis CLI in general, see
-# https://github.com/codacy/codacy-analysis-cli.
+# GitHub Advanced Security code scanning feature. For more information on
+# Codacy CLI v2, see https://github.com/codacy/codacy-cli-v2.
 
 name: Codacy Security Scan
 
@@ -31,162 +28,265 @@ jobs:
       actions: read # only required for a private repository by github/codeql-action/upload-sarif to get the Action run status
     name: Codacy Security Scan
     runs-on: ubuntu-latest
-    # Successful runs take 11.4-15.2 min (measured across main's push runs and 27
-    # completed pull_request runs on other branches); failures die in under a
-    # minute. 25 is ~1.6x the slowest observed success.
-    #
-    # This bounds a specific failure mode rather than hiding one. The CLI can
-    # complete its analysis and then throw while serialising -- Sarif.scala:149,
-    # Files.readAllLines on a matched issue's source file -- and the step does
-    # not exit afterwards: job cleanup shows the docker child orphaned, holding
-    # the runner until GitHub's 6h ceiling. Observed on job 90888934294, which
-    # threw at 11 min and was killed at 6h 00m 08s. The crash still surfaces in
-    # full; it surfaces in minutes instead of occupying a runner for an
-    # afternoon. Nothing is excluded from analysis by this.
-    timeout-minutes: 25
+    # The old Scala CLI needed 25 minutes because it ran ~39 dockerised tools.
+    # Codacy CLI v2 runs the tools named in .codacy/codacy.yaml as native
+    # processes; measured end to end on this repository (38,492 tracked files)
+    # at well under a minute. 10 leaves generous headroom without parking a
+    # runner for a quarter of an hour when something wedges.
+    timeout-minutes: 10
     steps:
       # Checkout the repository to the GitHub Actions runner
       - name: Checkout code
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
-      # Execute Codacy Analysis CLI and generate a SARIF output with the security issues identified during the analysis.
+      # WHY THIS IS CODACY CLI v2 AND NOT codacy-analysis-cli.
       #
-      # Invoked directly rather than via codacy/codacy-analysis-cli-action:
-      # every action release new enough to bundle a CLI that parses Codacy's
-      # "High" severity level (>= v4.4.0, CLI 7.9.x) internally references
-      # unpinned actions/setup-go@v3, which this repo's Actions policy
-      # rejects ("all actions must be pinned to a full-length commit SHA"),
-      # while every policy-compliant release (<= v4.3.0) pins CLI 7.6.4,
-      # which hard-fails deserializing that severity ("High not a member of
-      # Level"). These steps reproduce the action's own invocation (see
-      # action.yml at v4.4.7) with the fixed CLI version pinned explicitly.
-      # The script URL is pinned to the commit SHA of tag 7.9.25 (tags are
-      # retaggable; commits are not) — same immutability standard the
-      # Actions pin policy enforces for `uses:` references — and the
-      # downloaded content is verified against a pinned SHA-256 before it
-      # is made executable, so a corrupted or substituted download fails
-      # closed instead of running.
-      - name: Download Codacy Analysis CLI script (7.9.25)
+      # codacy-analysis-cli is Codacy's legacy analyser and is no longer the
+      # actively developed one. Every run of it against this repository died
+      # after analysis had already succeeded:
+      #
+      #   java.nio.charset.MalformedInputException: Input length = 1
+      #     at java.nio.file.Files.readAllLines(Files.java:3205)
+      #     at ...formatter.Sarif.$anonfun$createResults$3(Sarif.scala:149)
+      #
+      # Sarif.scala:149 is `executionDirectory./(fileName).lines` — it reads
+      # every file an issue was reported on, purely to compute a location
+      # hash, and better.files routes that through the no-charset overload of
+      # Files.readAllLines, which decodes as UTF-8 unconditionally. This
+      # repository has 21 tracked files that are not valid UTF-8 (13 true
+      # binaries, plus cp1252/utf-16 text; re-counted against 38,492 tracked
+      # files). One undecodable byte killed the run, the JVM exited without
+      # reaping its docker child, and the job hung until the timeout cancelled
+      # it. A cancelled check is not a passing one, which is why every PR sat
+      # un-mergeable.
+      #
+      # Verified, not assumed: Sarif.scala is byte-identical between tags
+      # 7.9.25 and 7.10.1 (`git diff` between the tags is empty), which is why
+      # bumping the version could not have helped — and CI proved it did not
+      # (job 93687391765 on 7.9.25, job 93967219019 on 7.10.1: same stack).
+      # Nor was it reachable by locale or -Dfile.encoding, for the same
+      # hardcoded-UTF-8 reason.
+      #
+      # CLI v2 is a Go program. Go's encoding/json substitutes U+FFFD for
+      # invalid UTF-8 rather than raising, so this entire failure class is
+      # structurally absent. Measured on this repository before this workflow
+      # was written: exit 0, a valid 9.2 MB SARIF 2.1.0 document, 13,284
+      # results — on the same tree, with the same 21 files present.
+      #
+      # It is invoked directly rather than through codacy/codacy-cli-v2-action
+      # for one reason: that action installs the CLI with
+      # `curl -Ls .../main/codacy-cli.sh`, unpinned and unverified. Pinning the
+      # installer to a commit (tags are retaggable; commits are not) and
+      # checking its SHA-256 before making it executable is the standard this
+      # repository already holds `uses:` references to, and dropping to the
+      # action would give that up. Note the action needs no `uses:` of its own,
+      # so the old objection to codacy-analysis-cli-action — it pulled an
+      # unpinned actions/setup-go@v3 — does not apply to v2.
+      - name: Download Codacy CLI v2 installer
         shell: bash
         run: |
-          wget -O codacy-analysis-cli.sh "https://raw.githubusercontent.com/codacy/codacy-analysis-cli/aba65e1e961d6f220002ddc6bd57ccd8a8d36c6d/bin/codacy-analysis-cli.sh"
-          echo "76e958c3dd7bc2491b6d3261fece4a118516986e07c8e5e5daa2e59c0a701e16  codacy-analysis-cli.sh" | sha256sum -c -
-          chmod +x codacy-analysis-cli.sh
-      - name: Run Codacy Analysis CLI
-        env:
-          # The wrapper passes this value straight into the image reference
-          # (codacy/codacy-analysis-cli:${CODACY_ANALYSIS_CLI_VERSION}), and
-          # Docker's name:tag@digest form makes the digest authoritative —
-          # so this pins the analyzer image itself, not just the wrapper
-          # script, closing the last mutable link (tags can be retagged;
-          # digests cannot). Digest of tag 7.9.25 per Docker Hub.
-          CODACY_ANALYSIS_CLI_VERSION: "7.9.25@sha256:339e0103e28804f9d76aff34503e505440e5d5b42f5dd70dae73b592ea87826a"
-          CODACY_PROJECT_TOKEN: ${{ secrets.CODACY_PROJECT_TOKEN }}
-          # On pull_request events GITHUB_SHA is the synthetic merge commit;
-          # results must be associated with the PR head, as the upstream
-          # action does.
-          COMMIT_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
-        # --max-allowed-issues forces a 0 exit code so the SARIF file is
-        # always generated; PR rejection stays on the GitHub side.
-        # The project token travels only as the CODACY_PROJECT_TOKEN env
-        # var, which the CLI reads natively — no --project-token flag, so
-        # the secret never appears in process listings, and forked PRs
-        # (empty secret) still analyze with default configurations.
-        shell: bash
-        run: |
-          ./codacy-analysis-cli.sh \
-            analyze \
-            --skip-commit-uuid-validation \
-            --commit-uuid "$COMMIT_SHA" \
-            --verbose \
-            --format sarif \
-            --output results.sarif \
-            --max-allowed-issues 2147483647 \
-            --gh-code-scanning-compat
+          wget -O codacy-cli.sh "https://raw.githubusercontent.com/codacy/codacy-cli-v2/5448b2421762757edd08a66df6d5b1904081f087/codacy-cli.sh"
+          echo "1bb82234e74e5385ae6a6e93cb61cbc3356fdffdeb36f907686b88679c0cd82c  codacy-cli.sh" | sha256sum -c -
+          chmod +x codacy-cli.sh
 
-      # GitHub code scanning rejects Codacy's raw SARIF twice over: runs
-      # sharing a category are refused (July 2025 policy), and a file may
-      # carry at most 20 runs while Codacy emits one run per tool
-      # invocation (39 observed). Merging runs by tool driver fixes both —
-      # each tool becomes one run with a distinct automationDetails.id.
-      # Results are rekeyed from positional ruleIndex to ruleId before
-      # merging so rule references survive; an overflow guard folds the
-      # least-populated tools into one composite run if distinct tools
-      # ever exceed the cap. The dockerized CLI writes results.sarif as
-      # root, so the runner user can read but not overwrite it — the
-      # processed SARIF goes to a new runner-owned file.
-      - name: Merge SARIF runs per tool
+      # The installer resolves "latest" through api.github.com; pinning
+      # CODACY_CLI_V2_VERSION skips that lookup, so the analyser version is
+      # fixed here rather than being whatever shipped this morning.
+      #
+      # No token is passed. `analyze` and `init` accept only --api-token (an
+      # account-level token, with --provider/--organization/--repository) to
+      # fetch remote configuration; --project-token belongs to `upload`, which
+      # this workflow does not call — results go to GitHub code scanning, not
+      # back to Codacy, and the hosted "Codacy Static Code Analysis" check
+      # already reports independently. So the tool set comes from
+      # .codacy/codacy.yaml in this repository.
+      - name: Install Codacy CLI v2 and its tools
+        env:
+          CODACY_CLI_V2_VERSION: "1.0.0-main.380.sha.27e119a"
+        shell: bash
+        run: ./codacy-cli.sh install
+
+      - name: Run Codacy analysis
+        env:
+          CODACY_CLI_V2_VERSION: "1.0.0-main.380.sha.27e119a"
+        shell: bash
+        run: ./codacy-cli.sh analyze --format sarif -o results.sarif
+
+      # Two fixes, both measured against a real local run of the command above.
+      #
+      # 1. PATHS. CLI v2 emits absolute artifact URIs
+      #    (file:///home/runner/work/.../file.js). Code scanning needs
+      #    repo-relative paths or nothing maps to a file in the diff; all 47
+      #    result URIs in the local run were absolute. Codacy's own action does
+      #    the same rewrite, but only on the branch that uploads to Codacy —
+      #    doing it unconditionally is the point here.
+      #
+      # 2. EXCLUSIONS. The analyser does not apply the root .codacy.yaml, which
+      #    is Codacy Cloud's config file, not CLI v2's. Unfiltered, 13,195 of
+      #    the 13,284 results — 99% — were vendored plugin bundles under
+      #    .obsidian/plugins/, which that file exists to exclude. Uploading
+      #    those would bury ~50 real findings under thirteen thousand alerts.
+      #
+      #    The exclusion list is READ FROM .codacy.yaml rather than restated
+      #    here. That file is the single place this repository declares what is
+      #    excluded; a second hand-maintained copy in this workflow is exactly
+      #    the thing 846472e34 forbade, and it would drift. If .codacy.yaml is
+      #    absent or declares nothing, nothing is filtered and the count is
+      #    reported as-is — this never silently drops findings.
+      - name: Normalise SARIF for code scanning
         shell: bash
         run: |
           python3 - <<'EOF'
-          import json
+          import json, os, re, sys
 
           MAX_RUNS = 20
+          root = os.getcwd()
+
+          def glob_to_re(pattern):
+              # Java/Codacy glob semantics: ** crosses directory separators,
+              # a single * does not. fnmatch cannot express that distinction.
+              out, i = [], 0
+              while i < len(pattern):
+                  c = pattern[i]
+                  if c == "*":
+                      if pattern[i:i + 2] == "**":
+                          out.append(".*")
+                          i += 2
+                          continue
+                      out.append("[^/]*")
+                  elif c == "?":
+                      out.append("[^/]")
+                  else:
+                      out.append(re.escape(c))
+                  i += 1
+              return re.compile("^" + "".join(out) + "$")
+
+          excludes = []
+          try:
+              import yaml
+              with open(".codacy.yaml") as fh:
+                  cfg = yaml.safe_load(fh) or {}
+              excludes = [glob_to_re(p) for p in (cfg.get("exclude_paths") or [])]
+              print(f"exclude_paths from .codacy.yaml: {cfg.get('exclude_paths') or []}")
+          except FileNotFoundError:
+              print("no .codacy.yaml — nothing excluded")
+          except Exception as exc:                       # noqa: BLE001
+              print(f"could not read .codacy.yaml ({exc}) — nothing excluded")
 
           with open("results.sarif") as fh:
               sarif = json.load(fh)
 
-          merged = {}
-          order = []
-          for run in sarif.get("runs", []):
-              driver = run.setdefault("tool", {}).setdefault("driver", {})
-              name = driver.get("name", "codacy")
-              rules = driver.get("rules") or []
-              results = run.get("results") or []
-              for res in results:
-                  # Positional indexes cannot survive the rules-array union, so
-                  # they are always dropped; ruleId is set only when it
-                  # resolves to a real id (never null).
-                  idx = res.pop("ruleIndex", None)
-                  if "rule" in res and isinstance(res["rule"], dict):
-                      res["rule"].pop("index", None)
-                  if "ruleId" not in res and idx is not None and 0 <= idx < len(rules):
-                      rid = rules[idx].get("id")
-                      if rid:
-                          res["ruleId"] = rid
-              if name not in merged:
-                  driver["rules"] = list(rules)
-                  run["results"] = list(results)
-                  run.setdefault("automationDetails", {})["id"] = f"codacy-{name}/"
-                  merged[name] = run
-                  order.append(name)
-              else:
-                  target = merged[name]
-                  tdriver = target["tool"]["driver"]
-                  tdriver.setdefault("rules", [])
-                  known = {r.get("id") for r in tdriver["rules"]}
-                  for rule in rules:
-                      if rule.get("id") not in known:
-                          tdriver["rules"].append(rule)
-                          known.add(rule.get("id"))
-                  target.setdefault("results", []).extend(results)
+          def relativise(uri):
+              for prefix in (f"file://{root}/", f"file://{root}", "file://"):
+                  if uri.startswith(prefix):
+                      uri = uri[len(prefix):]
+                      break
+              return uri.lstrip("/")
 
-          runs = [merged[n] for n in order]
+          kept_total = dropped_total = 0
+          repairs = []
+          for i, run in enumerate(sarif.get("runs", [])):
+              # CLI v2 emits "rules": null when it has no rule metadata, and
+              # code scanning rejects the whole document for it:
+              #   instance.runs[0].tool.driver.rules is not of a type(s) array
+              # The SARIF schema makes the property optional but typed, so an
+              # explicit null is invalid where an absent key is fine.
+              #
+              # The raw value is recorded before it is overwritten, and printed
+              # below. Without that, this repair is invisible: the validation
+              # pass further down runs AFTER this line, so it can only ever see
+              # the coerced value and could never report what was actually
+              # wrong. A silent repair of a null is how the null got shipped in
+              # the first place.
+              driver = run.setdefault("tool", {}).setdefault("driver", {})
+              raw_rules = driver.get("rules")
+              if not isinstance(raw_rules, list):
+                  repairs.append(
+                      f"runs[{i}].tool.driver.rules was {type(raw_rules).__name__}, coerced to []"
+                  )
+                  driver["rules"] = []
+              kept = []
+              for res in run.get("results", []):
+                  excluded = False
+                  for loc in res.get("locations", []):
+                      art = loc.get("physicalLocation", {}).get("artifactLocation", {})
+                      if "uri" in art:
+                          art["uri"] = relativise(art["uri"])
+                          # index points into run.artifacts, which is not
+                          # rewritten here; drop it rather than leave it wrong.
+                          art.pop("index", None)
+                          if any(rx.match(art["uri"]) for rx in excludes):
+                              excluded = True
+                  if excluded:
+                      dropped_total += 1
+                  else:
+                      kept.append(res)
+              run["results"] = kept
+              kept_total += len(kept)
+              for art in run.get("artifacts", []) or []:
+                  loc = art.get("location", {})
+                  if "uri" in loc:
+                      loc["uri"] = relativise(loc["uri"])
+
+          runs = sarif.get("runs", [])
           if len(runs) > MAX_RUNS:
               runs.sort(key=lambda r: len(r.get("results", [])), reverse=True)
-              keep, spill = runs[: MAX_RUNS - 1], runs[MAX_RUNS - 1 :]
-              base = spill[0]
-              bdriver = base["tool"]["driver"]
-              bdriver["name"] = "codacy-other"
-              bdriver.setdefault("rules", [])
-              known = {r.get("id") for r in bdriver["rules"]}
-              for extra in spill[1:]:
-                  for rule in extra["tool"]["driver"].get("rules", []):
-                      if rule.get("id") not in known:
-                          bdriver["rules"].append(rule)
-                          known.add(rule.get("id"))
+              print(f"WARNING: {len(runs)} runs exceeds the {MAX_RUNS} code-scanning cap; "
+                    f"folding the {len(runs) - MAX_RUNS + 1} smallest into one")
+              base = runs[MAX_RUNS - 1]
+              base["tool"]["driver"]["name"] = "codacy-other"
+              for extra in runs[MAX_RUNS:]:
                   base.setdefault("results", []).extend(extra.get("results", []))
-              base.setdefault("automationDetails", {})["id"] = "codacy-other/"
-              runs = keep + [base]
-
+              runs = runs[: MAX_RUNS - 1] + [base]
+          for run in runs:
+              name = run.get("tool", {}).get("driver", {}).get("name", "codacy")
+              run.setdefault("automationDetails", {})["id"] = f"codacy-{name}/"
           sarif["runs"] = runs
-          with open("results-categorized.sarif", "w") as fh:
+
+          for r in repairs:
+              print(f"repaired: {r}")
+
+          # Fail here rather than letting upload-sarif reject the document.
+          # The first run of this workflow died at the uploader on
+          # `"rules": null`; the local check that was supposed to catch it
+          # printed len(rules or []) and reported "0", so the instrumentation
+          # hid the very defect it was watching for.
+          #
+          # These assert the POST-normalisation state -- they are a tripwire
+          # for the normalisation above being reordered or removed, not a
+          # detector of what the analyser emitted. The rules check in
+          # particular cannot fire while the coercion above stands; what
+          # surfaces an emitted null is the "repaired:" line, not this. Said
+          # plainly because the earlier version of this comment claimed these
+          # "read the raw values", which was false and would have made a dead
+          # assertion look like live cover.
+          problems = []
+          for i, run in enumerate(runs):
+              rules = run.get("tool", {}).get("driver", {}).get("rules")
+              if not isinstance(rules, list):
+                  problems.append(f"runs[{i}].tool.driver.rules is {type(rules).__name__}, not list")
+              if not run.get("tool", {}).get("driver", {}).get("name"):
+                  problems.append(f"runs[{i}].tool.driver.name is missing")
+              for j, res in enumerate(run.get("results", [])):
+                  for loc in res.get("locations", []):
+                      uri = loc.get("physicalLocation", {}).get("artifactLocation", {}).get("uri", "")
+                      if uri.startswith(("/", "file:")):
+                          problems.append(f"runs[{i}].results[{j}] still absolute: {uri}")
+          if problems:
+              print("SARIF failed pre-upload validation:", file=sys.stderr)
+              for p in problems[:20]:
+                  print(f"  {p}", file=sys.stderr)
+              raise SystemExit(1)
+
+          with open("results-normalised.sarif", "w") as fh:
               json.dump(sarif, fh)
-          print(f"SARIF runs after merge: {len(runs)}")
+          print(f"runs: {len(runs)}  kept: {kept_total}  excluded: {dropped_total}")
+          if kept_total == 0 and dropped_total == 0:
+              print("no results at all — check the analyse step", file=sys.stderr)
           EOF
 
       # Upload the SARIF file generated in the previous step
       - name: Upload SARIF results file
         uses: github/codeql-action/upload-sarif@54f647b7e1bb85c95cddabcd46b0c578ec92bc1a # v4.36.3
         with:
-          sarif_file: results-categorized.sarif
+          sarif_file: results-normalised.sarif

@@ -5,6 +5,11 @@ Structural replacement for one branch of the deleted VERSION-TRANSITIONS.md
 ledger: instead of asking a human to remember and hand-attest that a
 `.python-version` bump is still compatible with the package's declared
 `requires-python` range, this derives the fact and checks it on every run.
+
+If pyproject.toml declares no `requires-python`, there is no range to satisfy
+and the check is skipped with an explicit message and exit 0 — see
+read_requires_python(). Exit codes: 0 pass or skip, 1 pin violates the declared
+range, 2 the guard could not run (unreadable file, unparseable version or clause).
 """
 
 from __future__ import annotations
@@ -78,10 +83,21 @@ def compare(pinned: tuple[int, ...], operator: str, constraint: tuple[int, ...])
     return OPERATORS[operator](pinned, constraint)
 
 
-def read_requires_python(pyproject_text: str) -> str:
+def read_requires_python(pyproject_text: str) -> str | None:
+    # Absence is not a violation. This guard exists to catch a `.python-version`
+    # bump that leaves the declared range behind; with no range declared there is
+    # no constraint for the pin to contradict, so there is nothing to check and
+    # nothing to fail. Returning None (rather than raising) keeps that case out
+    # of main()'s error path, which reports 2 for a guard that could not run.
+    #
+    # This deliberately does NOT assert that requires-python must exist. Nothing
+    # delegated that to this script, and inventing the requirement here would put
+    # a range back by the side door — the same move the file's own history is a
+    # record of going wrong. The skip is announced on stdout rather than silent,
+    # so an accidental removal is visible in the log instead of reading as OK.
     match = REQUIRES_PYTHON_PATTERN.search(pyproject_text)
     if not match:
-        raise RuntimeError("pyproject.toml has no requires-python declaration")
+        return None
     return match.group(1)
 
 
@@ -107,6 +123,13 @@ def main() -> int:
         pinned_text = PYTHON_VERSION_PATH.read_text(encoding="utf-8").strip()
         pinned = parse_version(pinned_text)
         requires_python = read_requires_python(PYPROJECT_PATH.read_text(encoding="utf-8"))
+        if requires_python is None:
+            print(
+                "python-version-pin guard: SKIPPED — pyproject.toml declares no "
+                f"requires-python, so .python-version ({pinned_text}) has no range "
+                "to satisfy. Nothing to check."
+            )
+            return 0
         unsatisfied = unsatisfied_clauses(pinned, requires_python)
     except (OSError, ValueError, RuntimeError) as exc:
         print(f"python-version-pin guard: {exc}", file=sys.stderr)
