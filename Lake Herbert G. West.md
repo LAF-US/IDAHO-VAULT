@@ -5,4 +5,4 @@ related:
 - Washington
 authority: LOGAN
 ---
-reservoir on the Snake River in Washington created by Lower Monumental dam 
+reservoir on the Snake River in Washington created by Lower Monumental dam

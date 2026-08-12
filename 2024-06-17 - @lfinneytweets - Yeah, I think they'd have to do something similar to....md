@@ -19,7 +19,7 @@ related:
 @gregapruett Yeah, I think they'd have to do something similar to Lawyers Canyon over the creek to make it worth it. Rather than reroute back to (and upgrade) Johnston or route the highway right smack next to Tolo. https://t.co/jMN1q46BOm
 
 ## Media
-- ![](https://pbs.twimg.com/media/GQS5FHZbYAAMlXV.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/GQS5FHZbYAAMlXV.jpg)
 
 *In reply to [@gregapruett](https://twitter.com/gregapruett)*
 

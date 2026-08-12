@@ -19,6 +19,6 @@ related:
 RT @GBH: PSA: @sesamestreet is on TikTok and their first video is absolute perfection. https://t.co/cgddKKm8Ts
 
 ## Media
-- ![](https://pbs.twimg.com/media/Fa7IWj7XoAAR3nn.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/Fa7IWj7XoAAR3nn.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1562699613471391744)

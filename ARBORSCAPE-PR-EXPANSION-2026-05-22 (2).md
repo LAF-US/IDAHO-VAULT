@@ -85,7 +85,7 @@ Four PRs were analyzed under the expanded scope. No merges, edits, branch work, 
 ### PR #354 — Cloud Claude `.claude` updates (ambiguous status PR)
 - **Branch**: `claude/update-claude-files-PRWCJ` — active development, age 0d
 - **PR state**: `mergeable: UNKNOWN / mergeStateStatus: UNKNOWN`
-- **Self-witness**: YES — `.claude/MEMORY/SESSION-2026-05-22.md` self-anchors with explicit failures, corrections, and doctrine-not-yet-filed
+- **Self-witness**: YES — `.claude/MEMORY/CLAUDE-SESSION-2026-05-22.md` self-anchors with explicit failures, corrections, and doctrine-not-yet-filed
 - **Substantive doctrine content**: persona layers, Type I Lich naming, Epistemological Operating Rules table — would affect every future Claude session by modifying `.claude/CLAUDE.md`
 - **Disposition**: needs (a) check-status resolution (re-trigger or wait for GitHub to recompute), (b) doctrinal review separate from mechanical merge; substantive content warrants Aquinas-time even when CI is green
 
@@ -109,7 +109,7 @@ Lesson: *Workflow queue items waiting on human action are part of the orchard no
 
 ### IF 9 — Self-witnessing lives in session discipline, not agent identity
 
-Cloud Claude on PR #354 included a session anchor (`.claude/MEMORY/SESSION-2026-05-22.md`) explicitly documenting its session's failures, corrections, and doctrine-in-progress. Codex on PR #356 did not include any equivalent artifact. Both are competent agents producing PRs the same day.
+Cloud Claude on PR #354 included a session anchor (`.claude/MEMORY/CLAUDE-SESSION-2026-05-22.md`) explicitly documenting its session's failures, corrections, and doctrine-in-progress. Codex on PR #356 did not include any equivalent artifact. Both are competent agents producing PRs the same day.
 
 The discipline that produced Cloud Claude's anchor was session-specific: Logan corrected the agent earlier in the session, and that correction propagated into the agent's PR-construction reflex. Codex was not corrected the same way, and its PR contains no equivalent self-witness.
 

@@ -11,4 +11,4 @@ authority: LOGAN
 University of Idaho
 Boise State University
 Idaho State University
-Lewis-Clark State College 
+Lewis-Clark State College

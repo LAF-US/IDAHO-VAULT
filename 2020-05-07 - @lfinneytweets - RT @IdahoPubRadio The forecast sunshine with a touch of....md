@@ -19,6 +19,6 @@ related:
 RT @IdahoPubRadio: The forecast: sunshine with a touch of @uidaho Kibbie Dome. https://t.co/6LuOMgIaYQ
 
 ## Media
-- ![](https://pbs.twimg.com/media/EXb89lSUYAIEIed.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EXb89lSUYAIEIed.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1258485667119525888)

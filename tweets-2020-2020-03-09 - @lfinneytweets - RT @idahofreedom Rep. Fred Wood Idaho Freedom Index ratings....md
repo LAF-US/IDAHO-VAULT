@@ -15,12 +15,13 @@ related:
   - lfinneytweets
 ---
 
-RT @idahofreedom: Rep. Fred Wood: Idaho Freedom Index ratings are "unwelcome visitors" in the Idaho Statehouse: 
-https://t.co/2DxPFHeG2x
+RT @idahofreedom: Rep. Fred Wood: Idaho Freedom Index ratings are "unwelcome visitors" in the Idaho Statehouse:
+<https://t.co/2DxPFHeG2x>
 
 #…
 
 ## Links
-- https://youtu.be/A0ajCOq_A9Y
+
+- <https://youtu.be/A0ajCOq_A9Y>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1237099604849479681)

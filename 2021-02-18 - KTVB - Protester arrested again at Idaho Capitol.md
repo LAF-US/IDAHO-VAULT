@@ -15,7 +15,7 @@ related:
 - warrants
 authority: LOGAN
 ---
-BOISE, Idaho — An Eagle man who showed up at the Idaho Capitol Wednesday was arrested on outstanding warrants. 
+BOISE, Idaho — An Eagle man who showed up at the Idaho Capitol Wednesday was arrested on outstanding warrants.
 
 David Pettinger, 44, was taken into custody by Idaho State Police troopers on misdemeanor charges of obstructing officers and assault on an officer.
 

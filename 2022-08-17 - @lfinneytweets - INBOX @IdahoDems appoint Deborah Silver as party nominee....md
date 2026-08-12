@@ -23,6 +23,6 @@ related:
 INBOX: @IdahoDems appoint Deborah Silver as party nominee for Idaho Treasurer. #idleg #idpol https://t.co/7ZlJ31fOJG
 
 ## Media
-- ![](https://pbs.twimg.com/media/FaZWFZkVEAAaefX.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/FaZWFZkVEAAaefX.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1560028979657986049)

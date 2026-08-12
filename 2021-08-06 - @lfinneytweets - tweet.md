@@ -19,7 +19,7 @@ related:
 @danielwinlander https://t.co/n7KZSa8GsK
 
 ## Media
-- ![](https://pbs.twimg.com/tweet_video_thumb/E8E7SYDUUAA10B2.jpg)
+- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/E8E7SYDUUAA10B2.jpg)
 
 *In reply to [@danielwreporter](https://twitter.com/danielwreporter)*
 

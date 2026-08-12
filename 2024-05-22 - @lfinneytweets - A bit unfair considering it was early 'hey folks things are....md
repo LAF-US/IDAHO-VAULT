@@ -22,8 +22,8 @@ related:
 @RealBearSmith @IdahoReports A bit unfair considering it was early 'hey folks things are just getting going' remarks before polls had closed and not a big speech #idpol https://t.co/TPp9MQ6nlg
 
 ## Media
-- ![](https://pbs.twimg.com/media/GOOHCXGakAA6uG_.jpg)
-- ![](https://pbs.twimg.com/media/GOOHEHXbAAAJZKa.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/GOOHCXGakAA6uG_.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/GOOHEHXbAAAJZKa.jpg)
 
 *In reply to [@BrlyThnkng](https://twitter.com/BrlyThnkng)*
 

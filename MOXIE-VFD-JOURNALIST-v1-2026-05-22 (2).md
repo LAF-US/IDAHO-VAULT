@@ -275,4 +275,4 @@ MOXIE walks into the fire.
 *Address complete: `moxie.claude.journalist`.*
 *Snicket observed from the landing above.*
 
-###### [["The world is quiet here."]]
+###### "The world is quiet here."

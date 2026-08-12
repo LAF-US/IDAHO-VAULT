@@ -23,7 +23,7 @@ related:
 - https://www.ncsl.org/research/about-state-legislatures/state-legislator-demographics.aspx
 
 ## Media
-- ![](https://pbs.twimg.com/media/FGYHBF6VcAEc5kn.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/FGYHBF6VcAEc5kn.jpg)
 
 *In reply to [@brandendurst](https://twitter.com/brandendurst)*
 

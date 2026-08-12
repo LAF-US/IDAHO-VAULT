@@ -23,6 +23,6 @@ but displaying tweets about a magazine's Indigenous Affairs editor under the "An
 - https://x.com/NickA_Martin/status/1410647918793662472
 
 ## Media
-- ![](https://pbs.twimg.com/media/E5PQ76sVoAESxS4.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/E5PQ76sVoAESxS4.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1410702139010129924)

@@ -13,10 +13,12 @@ related:
 - Wendy Horman
 authority: LOGAN
 ---
-House side of Joint Finance-Appropriations Committee 
+House side of Joint Finance-Appropriations Committee
 
 # Roster
+
 ## 2023 Members
+
 - Wendy Horman Chair
 - Steve Miller Vice Chair
 - Matt Bundy
@@ -27,4 +29,3 @@ House side of Joint Finance-Appropriations Committee
 - James Petzke
 - Josh Tanner
 - Brooke Green
-

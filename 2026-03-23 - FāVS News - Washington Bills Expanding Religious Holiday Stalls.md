@@ -35,11 +35,9 @@ Our Sponsors
 
 Idaho legislature (Logan Finney/ FāVS News).
 
-  
-
 **By John McCallum | FāVs News Reporter**
 
-![](https://www.youtube.com/watch?v=E_JFg7OZbeQ)
+![alt text needed](https://www.youtube.com/watch?v=E_JFg7OZbeQ)
 
 Two bills establishing several new unpaid holidays for public employees failed to advance to their respective chamber floors for votes this past session — with one sponsor vowing to bring that bill back in 2027.
 

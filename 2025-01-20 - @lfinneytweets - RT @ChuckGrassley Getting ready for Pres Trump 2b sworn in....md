@@ -20,6 +20,6 @@ RT @ChuckGrassley: Getting ready for Pres Trump 2b sworn in
 Thx Booker for photo https://t.co/Zve5nTFUl0
 
 ## Media
-- ![](https://pbs.twimg.com/media/Ghv50ymWEAA9E5m.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/Ghv50ymWEAA9E5m.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1881419156098261124)

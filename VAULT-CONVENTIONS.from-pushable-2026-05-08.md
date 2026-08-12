@@ -672,9 +672,9 @@ When both devices edit the same config file between syncs, Obsidian creates a `(
 
 Emojis are **first-class vault syntax** as of 2026-04-02 (Logan, superseding prior ASCII-only directive).
 
-- Authority: [Unicode Consortium](https://unicode.org) â€” the canonical source for emoji definitions, codepoints, and names (see [full emoji list](https://unicode.org/emoji/charts/full-emoji-list.html))
+- Authority: [Unicode Consortium](https://unicode.org) — the canonical source for emoji definitions, codepoints, and names (see [full emoji list](https://unicode.org/emoji/charts/full-emoji-list.html))
 - Emojis may appear in note titles, frontmatter, body text, DOCKET entries, and commit messages
-- Use semantically â€” emojis carry meaning and should reinforce, not decorate
+- Use semantically — emojis carry meaning and should reinforce, not decorate
 
 ---
 

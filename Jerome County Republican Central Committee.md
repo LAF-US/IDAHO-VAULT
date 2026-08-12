@@ -6,4 +6,4 @@ related:
 - Jerome County
 authority: LOGAN
 ---
-Local Idaho Republican Party precinct committee for Jerome County 
+Local Idaho Republican Party precinct committee for Jerome County

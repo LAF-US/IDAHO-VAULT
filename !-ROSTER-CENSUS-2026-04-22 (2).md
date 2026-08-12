@@ -1,7 +1,9 @@
 ---
 date: 2026-04-22
+updated: 2026-06-10
 authority: LOGAN
 type: census
+status: archived
 related:
 - ROSTER
 - AGENTS.md
@@ -11,6 +13,13 @@ related:
 ---
 
 # ROSTER CENSUS — 2026-04-22
+
+> [!CAUTION]
+> **Dated evidence, not present state.** Terms such as "ACTIVE PERSONAS" below
+> report the vocabulary and conclusions of the 2026-04-22 census. They do not
+> establish that any agent, voice, office, runtime, or task remains active now.
+> Use `CONSTITUTION.md`, `!/WAKEUP.md`, and present runtime evidence for current
+> work; do not use this census as a population or occupancy registry.
 
 ## Executive Summary
 
@@ -200,5 +209,5 @@ Each dotfolder can be activated as a **prismatic layer** by stacking:
 
 ---
 
-###### [["The world is quiet here."]]
+###### "The world is quiet here."
 ###### [ Maiden : Mother : Crone ]

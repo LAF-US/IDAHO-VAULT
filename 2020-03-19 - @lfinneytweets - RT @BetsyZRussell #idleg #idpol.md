@@ -23,6 +23,6 @@ related:
 RT @BetsyZRussell: #idleg #idpol https://t.co/TSYnKigulP
 
 ## Media
-- ![](https://pbs.twimg.com/media/ETfvTZrUwAEu7NT.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/ETfvTZrUwAEu7NT.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1240723573901160449)

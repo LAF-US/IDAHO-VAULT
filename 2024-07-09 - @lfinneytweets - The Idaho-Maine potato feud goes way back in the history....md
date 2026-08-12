@@ -22,6 +22,6 @@ The Idaho-Maine potato feud goes way back in the history books. Here's our senat
 - https://x.com/chelliepingree/status/1810755321972789270
 
 ## Media
-- ![](https://pbs.twimg.com/media/GSFIK4SaUAE9gW1.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/GSFIK4SaUAE9gW1.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1810810412910399840)

@@ -17,7 +17,7 @@
   },
   "mcp": {
     "enabled": false,
-    "mode": "transpo***REMOVED***only",
+    "mode": "transport_only",
     "server": null,
     "notes": "Enable after Obsidian MCP Tools endpoint and write controls are validated."
   },
@@ -802,7 +802,7 @@
     "signal_root": "!/SIGNALS/",
     "live_board": "!/__!__/!/! The world is quiet here/DOCKET.md",
     "status": "active",
-    "transpo***REMOVED***model": "vault_native_async_signal_bus",
+    "transport_model": "vault_native_async_signal_bus",
     "authority_boundary": "Signal protocol lives in !/SIGNALS/README.md; live visibility lives in the Courtroom DOCKET; execution state remains in GitHub and Linear.",
     "entrypoints": [
       {

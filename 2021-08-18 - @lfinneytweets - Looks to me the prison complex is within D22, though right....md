@@ -21,9 +21,9 @@ related:
 @slfisher @amyoz75 @ScottMcIntosh12 Looks to me the prison complex is within D22, though right on the edge. Kuna city limits go right up to the 22/21 border but the city looks to be fully in 22. https://t.co/XOMuFvCIZC
 
 ## Media
-- ![](https://pbs.twimg.com/media/E9Gpev-VoAMjZr7.jpg)
-- ![](https://pbs.twimg.com/media/E9GpfV0VoAI-jKv.jpg)
-- ![](https://pbs.twimg.com/media/E9Gpf3_UYAQb6lQ.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/E9Gpev-VoAMjZr7.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/E9GpfV0VoAI-jKv.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/E9Gpf3_UYAQb6lQ.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

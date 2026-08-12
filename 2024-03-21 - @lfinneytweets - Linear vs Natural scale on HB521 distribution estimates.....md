@@ -19,7 +19,7 @@ related:
 Linear vs Natural scale on HB521 distribution estimates. #idleg https://t.co/4syD8b3VIm
 
 ## Media
-- ![](https://pbs.twimg.com/media/GJN_vh3akAAY0mX.jpg)
-- ![](https://pbs.twimg.com/media/GJN_v9RaYAAbvJI.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/GJN_vh3akAAY0mX.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/GJN_v9RaYAAbvJI.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1770899677300367374)

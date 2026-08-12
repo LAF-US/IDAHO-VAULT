@@ -18,6 +18,6 @@ related:
 RT @Tylerjoelb: Headline during the Lyndon Johnson administration: https://t.co/fJWFc73oaQ
 
 ## Media
-- ![](https://pbs.twimg.com/media/E60tJwvXEAcYiKa.png)
+- ![alt text needed](https://pbs.twimg.com/media/E60tJwvXEAcYiKa.png)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1417934917242032130)
