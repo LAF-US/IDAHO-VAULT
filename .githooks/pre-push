@@ -18,55 +18,46 @@ command -v git-lfs    >/dev/null 2>&1 || fail 'git-lfs not on PATH - LFS transfe
 refs=$(cat)
 [ -n "$refs" ] || exit 0    # nothing to push
 
-# trufflehog is a native Windows exe: needs C:/ style paths, not /c/ style.
-top=$(git rev-parse --show-toplevel)
-if command -v cygpath >/dev/null 2>&1; then top=$(cygpath -m "$top"); fi
-
-# trufflehog's `git` source clones the repo to a temp dir. Two settings keep
-# that survivable on this vault (84k files, 13GB LFS, ~200-char filenames):
-#   - GIT_LFS_SKIP_SMUDGE=1 (below): clone copies LFS *pointers*, not media.
-#   - core.longpaths=true (per-machine, see GITHOOKS.md): the temp checkout
-#     dies on long filenames without it. If absent, the clone errors and this
-#     hook fails closed (blocks the push) rather than skipping the scan.
-export GIT_LFS_SKIP_SMUDGE=1
-
 blocked=0
 while IFS=' ' read -r local_ref local_oid remote_ref remote_oid; do
   [ -n "$local_ref" ] || continue
   [ "$local_oid" = "$ZERO" ] && continue   # deleting a remote ref: nothing to scan
 
   if [ "$remote_oid" = "$ZERO" ] || ! git cat-file -e "$remote_oid^{commit}" 2>/dev/null; then
+    # New remote ref (or remote tip unknown locally): bound by origin refs.
     logopts="$local_oid --not --remotes=origin"
-    default=$(git symbolic-ref --quiet refs/remotes/origin/HEAD || echo refs/remotes/origin/main)
-    since=$(git merge-base "$local_oid" "$default" 2>/dev/null) || since=
+    default=$(git symbolic-ref --quiet refs/remotes/origin/HEAD 2>/dev/null || echo refs/remotes/origin/main)
+    base=$(git merge-base "$local_oid" "$default" 2>/dev/null || echo "$default")
   else
     logopts="$remote_oid..$local_oid"
-    since=$remote_oid
+    base=$remote_oid
   fi
 
-  # --- Gate 1: gitleaks range scan (offline backstop) -------------------
+  # --- Gate 1: gitleaks scans the full outgoing commit RANGE (offline) ---
   if ! gitleaks git --log-opts "$logopts" --redact --verbose --no-color --no-banner; then
     printf >&2 'pre-push: gitleaks flagged %s (range: %s). Values redacted above.\n' "$local_ref" "$logopts"
     blocked=1
   fi
 
-  # --- Gate 2: trufflehog, verified mode (gate on verified + unknown) ---
-  # Exit 183 = findings (--fail). Any other nonzero = scan/verification
-  # error = fail closed (offline verification counts as blocked).
-  if [ -n "$since" ]; then
-    trufflehog git "file://$top" --since-commit "$since" --branch "$local_ref" \
-      --results=verified,unknown --fail --no-update
-  else
-    printf >&2 'pre-push: no merge-base for %s; trufflehog scanning full ref history.\n' "$local_ref"
-    trufflehog git "file://$top" --branch "$local_ref" \
-      --results=verified,unknown --fail --no-update
-  fi
-  rc=$?
-  if [ "$rc" -eq 183 ]; then
-    printf >&2 'pre-push: trufflehog found verified/unknown secrets on %s.\n' "$local_ref"
+  # --- Gate 2: trufflehog verified, FILESYSTEM mode over the changed files -
+  # `trufflehog git` clones this 84k-file/13GB repo per run (5 min+, proven
+  # non-viable); filesystem mode scans the CHANGED files' tip content in ~1s
+  # and still verifies against provider APIs. Gate 1 already covers the full
+  # history, so a secret that appeared then vanished mid-range is still caught
+  # by gitleaks. We gate on verified (live) + unknown (verification errored /
+  # offline = fail closed). Findings are detected by emitted JSON (not exit
+  # code); --fail-on-scan-errors makes only genuine scan errors non-zero,
+  # which we treat as fail-closed. -z/xargs -0 keeps space/unicode paths safe.
+  th_out=$(git diff -z --name-only --diff-filter=ACMRT "$base" "$local_oid" 2>/dev/null \
+    | xargs -0 -r trufflehog filesystem --results=verified,unknown --json \
+        --no-update --fail-on-scan-errors 2>/dev/null)
+  th_rc=$?
+  if [ "$th_rc" -ne 0 ]; then
+    printf >&2 'pre-push: trufflehog scan error (exit %s) on %s - fail closed.\n' "$th_rc" "$local_ref"
     blocked=1
-  elif [ "$rc" -ne 0 ]; then
-    printf >&2 'pre-push: trufflehog scan error (exit %s) on %s - fail closed.\n' "$rc" "$local_ref"
+  elif printf '%s' "$th_out" | grep -q '"DetectorName"'; then
+    printf >&2 'pre-push: trufflehog found verified/unknown secret(s) on %s:\n' "$local_ref"
+    printf '%s\n' "$th_out" | grep -oiE '"file":"[^"]*"' | sort -u | sed 's/^/  /' >&2
     blocked=1
   fi
 done <<EOF

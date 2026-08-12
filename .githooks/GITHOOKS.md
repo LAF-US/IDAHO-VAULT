@@ -16,27 +16,17 @@ machine / fresh clone, bootstrap once (idempotent):
 git config core.hooksPath .githooks
 ```
 
-Without it, git reads `.git/hooks/` and **none of these gates run**.
-
-The `pre-push` trufflehog leg full-clones the repo to a temp dir; on this vault
-(84k files, ~200-char filenames) that checkout fails without long-path support.
-Enable it once, per machine:
-
-```
-git config --global core.longpaths true
-```
-
-Without it the clone errors and `pre-push` **fails closed** (blocks the push) —
-safe, but every push is blocked until this is set. (The hook itself already
-sets `GIT_LFS_SKIP_SMUDGE=1` so the clone copies LFS pointers, not 13 GB of
-media.)
+Without it, git reads `.git/hooks/` and **none of these gates run**. That is the
+only per-machine wiring required — the `pre-push` trufflehog leg runs in
+**filesystem mode** (scans the changed files directly), so it needs no clone,
+no `core.longpaths`, and no LFS smudge.
 
 ## What runs here
 
 | hook | job |
 |---|---|
 | `pre-commit` | gitleaks scan of the staged set — secrets never enter a commit. Fails closed if gitleaks is missing. |
-| `pre-push` | per-ref outgoing-range scan: gitleaks (offline backstop) + trufflehog (verified mode, gates on verified+unknown), then chains `git lfs pre-push`. Fails closed on missing engine or scan error. |
+| `pre-push` | per-ref: gitleaks scans the full outgoing commit range (offline backstop); trufflehog scans the range's changed files in filesystem mode (verified mode, gates on verified+unknown), then chains `git lfs pre-push`. Fails closed on missing engine or scan error. |
 | `post-checkout` / `post-commit` / `post-merge` | stock Git LFS shims (smudge/maintenance). |
 | `*.sample` | git's stock templates, kept deliberately as inert reference seeds. |
 
