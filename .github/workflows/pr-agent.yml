@@ -19,14 +19,12 @@ name: PR-Agent
 # │    the real item, and confirm OP_SERVICE_ACCOUNT_TOKEN can read it.        │
 # │    (see `.op/openrouter.env.template`)                                     │
 # │ 3. DONE — key form corrected against the pinned source. See the env block. │
-# │ 4. OPEN — the SHA pin does NOT pin the code that runs. That action's       │
-# │    action.yaml builds Dockerfile.github_action_dockerhub, which is         │
-# │    `FROM pragent/pr-agent:github_action` — a MUTABLE tag upstream can      │
-# │    repoint at any time, and check_action_pins.py only reads the `uses:`    │
-# │    line, never a nested image. Decide before step 0: accept it, or fork    │
-# │    the Dockerfile with the image pinned by digest. Digest as reviewed      │
-# │    on #960: sha256:b81235c3bddc551939a1feca8926f4b6e8abcec2ae5bf46204      │
-# │    24f8f56dd9cb93                                                          │
+# │ 4. DONE — a repo SHA does not pin the code that runs: upstream's           │
+# │    action.yaml builds `FROM pragent/pr-agent:github_action`, a MUTABLE     │
+# │    tag. Now runs `./.github/actions/pr-agent` — that same action.yaml,     │
+# │    image pinned by digest. Costs Dependabot tracking, and                  │
+# │    check_action_pins.py skips `./` and `docker://`, so NOTHING enforces    │
+# │    the digest. Read that file's header before bumping.                     │
 # └───────────────────────────────────────────────────────────────────────────┘
 #
 # Augment, don't replace: this runs ALONGSIDE the hosted Qodo app. Once it is
@@ -92,11 +90,18 @@ jobs:
 
       - name: Run PR-Agent
         if: env.OPENROUTER_API_KEY != ''
-        # Docker action: action.yaml (not .yml) builds Dockerfile.github_action_dockerhub.
-        # The pin is maintained by Dependabot (github-actions ecosystem, daily,
-        # .github/dependabot.yml) — it reads the trailing `# v0.41.1` marker to
-        # track the version, so keep that comment in step with the SHA.
-        uses: the-pr-agent/pr-agent@743f52d80f3513193dfc7626f778c73478df6d0a # v0.41.1
+        # Local action, NOT `the-pr-agent/pr-agent@<sha>` directly. Upstream's
+        # action.yaml builds a one-line Dockerfile that is `FROM
+        # pragent/pr-agent:github_action` — a mutable tag, so the repo SHA pin
+        # did not pin the running code. `.github/actions/pr-agent/action.yml`
+        # is upstream's action.yaml at 743f52d8 with the image pinned by
+        # digest instead; read its header before bumping.
+        #
+        # Dependabot no longer tracks this. It watched the `uses:` ref and its
+        # trailing `# v0.41.1` marker; a `./` ref is not tracked, and there is
+        # no `docker` ecosystem in .github/dependabot.yml. Version and digest
+        # are both manual now — the local action's header says how to refresh.
+        uses: ./.github/actions/pr-agent # the-pr-agent/pr-agent v0.41.1 (743f52d8)
         env:
           # Job-level env reaches every step, and a Docker action receives the
           # step's env inside the container — so without this the 1Password
