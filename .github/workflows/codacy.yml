@@ -88,10 +88,11 @@ jobs:
           #     at java.nio.file.Files.readAllLines(Files.java:3205)
           #     at ...formatter.Sarif.$anonfun$createResults$3(Sarif.scala:149)
           #
-          # Sarif.createResults reads each matched issue's source file with the
-          # JVM default charset to compute a location hash. This repository has
-          # 21 tracked files that are not valid UTF-8 (13 true binaries, plus
-          # cp1252/utf-16 text). One undecodable byte in a file some tool
+          # Sarif.createResults reads each matched issue's source file to
+          # compute a location hash, and it decodes that file as UTF-8 with no
+          # way to say otherwise (see the locale note below). This repository
+          # has 21 tracked files that are not valid UTF-8 (13 true binaries,
+          # plus cp1252/utf-16 text). One undecodable byte in a file some tool
           # reported an issue on kills the whole run AFTER analysis succeeded —
           # and the JVM exits without reaping the docker child, so the job then
           # hangs until the 25-minute timeout cancels it. A cancelled check is
