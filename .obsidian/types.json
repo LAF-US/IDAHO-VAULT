@@ -2,7 +2,7 @@
   "types": {
     "aliases": "aliases",
     "cssclasses": "multitext",
-    "tags": "multitext",
+    "tags": "tags",
     "outlet": "multitext",
     "author": "multitext",
     "cmte": "multitext",

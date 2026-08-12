@@ -1,0 +1,15 @@
+{
+  "MovieDirectory": "/",
+  "SeriesDirectory": "/",
+  "OMDb_API_Key": "",
+  "YouTube_API_Key": "",
+  "SwitchToCreatedNote": true,
+  "MovieTemplatePath": "",
+  "SeriesTemplatePath": "",
+  "PlotLength": "full",
+  "FilenameTemplateMovie": "{{Title}}",
+  "FilenameTemplateSeries": "{{Title}}",
+  "enablePosterImageSave": true,
+  "posterImagePath": "",
+  "RottenTomatoes": true
+}
