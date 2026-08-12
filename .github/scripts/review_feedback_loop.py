@@ -500,7 +500,13 @@ def _build_attestation(
         moment = moment.replace(tzinfo=timezone.utc)
     stamp = moment.astimezone(timezone.utc).isoformat().replace("+00:00", "Z")
     marker = f"<!-- looked: by={looker}; at={stamp}; decision={decision}; v=1 -->"
-    return f"Looked by `{looker}` — **{decision}**. {rationale}\n\n{marker}"
+    # Prose says "Resolved by looker" because that is what both call sites do:
+    # `attest_and_resolve` records the look and resolves the thread, and the
+    # backfill path only ever witnesses a resolve the looker itself performed
+    # (it refuses another identity's, above). "Looked by" named the attestation
+    # rather than its effect. The `looked:` marker below is unchanged — it is
+    # the machine-read half and `_thread_has_attested_look` matches on it.
+    return f"Resolved by looker `{looker}` — **{decision}**. {rationale}\n\n{marker}"
 
 
 # Layer B2 (#399): the guarded disposition core. `attest_and_resolve` is the ONLY
