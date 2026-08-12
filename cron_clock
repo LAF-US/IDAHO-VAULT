@@ -11,9 +11,10 @@
 # {Monday..Sunday}'s {Noon, Dawn, Dusk} & {Yan, Tan, Tethera, Methera, Pits, Sethera, Azer}
 # 7 days x 10 named spans = 70 addresses. One shape, all seven days.
 #
-# A watch runs 480 minutes; a block runs 204 minutes. Each line is a span's
-# START. Ends are start + length, so they are not written down twice.
-# The 12 minutes no block owns are what lies between an end and the next start.
+# Dawn, Noon and Dusk run 480 minutes each; Yan through Azer run 204 each.
+# Each line is a span's START. Ends are start + length, so they are not
+# written down twice. The 12 minutes Yan..Azer do not cover are what lies
+# between an end and the next start.
 #
 # Times are local wall-clock. Weekday names, never digits: cron counts the week
 # from Sunday and this clock counts it from Monday.

@@ -31,11 +31,12 @@ related:
 > asked that the markdown be kept for posterity. Everything below is preserved
 > as written on 2026-07-31, and **none of it is live**:
 >
-> - **The times in the block table are wrong.** They were measured off a
+> - **The times in the table below are wrong.** They were measured off a
 >   reference render before the day's geometry was settled. The real spans are
->   in `cron_clock`: three watches of 480 minutes, seven blocks of 204 minutes,
->   twelve minutes owned by nothing. Boundaries fall on `:01`, `:27`, `:53`,
->   `:18`, `:43`, `:09`, `:35` — not on the `:00`/`:30` marks this note assumes.
+>   in `cron_clock`: Dawn, Noon and Dusk at 480 minutes each, Yan through Azer
+>   at 204 each, twelve minutes owned by nothing. Boundaries fall on `:01`,
+>   `:27`, `:53`, `:18`, `:43`, `:09`, `:35` — not on the `:00`/`:30` marks
+>   this note assumes.
 > - **`.obsidian/snippets/named-hours.css` no longer exists.** It was removed
 >   with the proposal. References to it below are historical. It could not have
 >   rendered the settled geometry in any case: it selects FullCalendar's
