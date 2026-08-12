@@ -19,6 +19,13 @@ name: PR-Agent
 # │    the real item, and confirm OP_SERVICE_ACCOUNT_TOKEN can read it.        │
 # │    (see `.op/openrouter.env.template`)                                     │
 # │ 3. DONE — key form corrected against the pinned source. See the env block. │
+# │ 4. OPEN — the SHA pin does NOT pin the running code. That action's       │
+# │    action.yaml builds Dockerfile.github_action_dockerhub, which is       │
+# │    `FROM pragent/pr-agent:github_action` — a MUTABLE tag upstream can    │
+# │    repoint at any time. check_action_pins.py does not see nested images. │
+# │    Decide before step 0: accept, or fork the Dockerfile with the image   │
+# │    pinned by digest. (CodeRabbit, #960; digest at time of review:        │
+# │    sha256:b81235c3bddc551939a1feca8926f4b6e8abcec2ae5bf4620424f8f56dd9cb93) │
 # └───────────────────────────────────────────────────────────────────────────┘
 #
 # Augment, don't replace: this runs ALONGSIDE the hosted Qodo app. Once it is
@@ -81,7 +88,14 @@ jobs:
         # track the version, so keep that comment in step with the SHA.
         uses: the-pr-agent/pr-agent@743f52d80f3513193dfc7626f778c73478df6d0a # v0.41.1
         env:
-          # `OPENAI_KEY` — single underscore. github_action_runner.py:87 reads
+          # Job-level env reaches every step, and a Docker action receives the
+          # step's env inside the container — so without this the 1Password
+          # service-account token would be handed to third-party code that has
+          # no use for it. Blanked here only; the guard and load steps above
+          # still read the job-level value.
+          OP_SERVICE_ACCOUNT_TOKEN: ''
+          # `OPENAI_KEY` — single underscore. `run_action` in
+          # pr_agent/servers/github_action_runner.py:87 reads
           # `OPENAI_KEY` or `OPENAI.KEY` and nothing else; the nested
           # `OPENAI__KEY` form used here before is never checked there.
           #
