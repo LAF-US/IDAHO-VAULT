@@ -185,6 +185,15 @@ jobs:
 
           kept_total = dropped_total = 0
           for run in sarif.get("runs", []):
+              # CLI v2 emits "rules": null when it has no rule metadata, and
+              # code scanning rejects the whole document for it:
+              #   instance.runs[0].tool.driver.rules is not of a type(s) array
+              # The SARIF schema makes the property optional but typed, so an
+              # explicit null is invalid where an absent key is fine. Coerce
+              # anything that is not a list to an empty list.
+              driver = run.setdefault("tool", {}).setdefault("driver", {})
+              if not isinstance(driver.get("rules"), list):
+                  driver["rules"] = []
               kept = []
               for res in run.get("results", []):
                   excluded = False
@@ -222,6 +231,30 @@ jobs:
               name = run.get("tool", {}).get("driver", {}).get("name", "codacy")
               run.setdefault("automationDetails", {})["id"] = f"codacy-{name}/"
           sarif["runs"] = runs
+
+          # Fail here, with the offending value, rather than letting
+          # upload-sarif reject the document. The first run of this workflow
+          # died at the uploader on `"rules": null`; the local check that was
+          # supposed to catch it printed len(rules or []) and reported "0",
+          # so the instrumentation hid the very defect it was watching for.
+          # These assertions read the raw values.
+          problems = []
+          for i, run in enumerate(runs):
+              rules = run.get("tool", {}).get("driver", {}).get("rules")
+              if not isinstance(rules, list):
+                  problems.append(f"runs[{i}].tool.driver.rules is {type(rules).__name__}, not list")
+              if not run.get("tool", {}).get("driver", {}).get("name"):
+                  problems.append(f"runs[{i}].tool.driver.name is missing")
+              for j, res in enumerate(run.get("results", [])):
+                  for loc in res.get("locations", []):
+                      uri = loc.get("physicalLocation", {}).get("artifactLocation", {}).get("uri", "")
+                      if uri.startswith(("/", "file:")):
+                          problems.append(f"runs[{i}].results[{j}] still absolute: {uri}")
+          if problems:
+              print("SARIF failed pre-upload validation:", file=sys.stderr)
+              for p in problems[:20]:
+                  print(f"  {p}", file=sys.stderr)
+              raise SystemExit(1)
 
           with open("results-normalised.sarif", "w") as fh:
               json.dump(sarif, fh)
