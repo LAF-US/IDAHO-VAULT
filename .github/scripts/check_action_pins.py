@@ -52,6 +52,10 @@ FULL_SHA_PATTERN = re.compile(r"^[0-9a-f]{40}$")
 # digest rather than a SHA: registries address content by sha256, not by commit.
 IMAGE_PATTERN = re.compile(r"""^\s*image:\s*['"]?(\S+?)['"]?\s*(?:#.*)?$""")
 IMAGE_DIGEST_PATTERN = re.compile(r"@sha256:[0-9a-f]{64}$")
+# `FROM <base> [AS <stage>]`, case-insensitive, --platform= flags tolerated.
+FROM_PATTERN = re.compile(
+    r"^\s*FROM\s+(?:--\S+\s+)*(\S+)(?:\s+AS\s+(\S+))?\s*$", re.IGNORECASE
+)
 
 
 def scan_targets() -> list[Path]:
@@ -88,12 +92,58 @@ def unpinned_refs(path: Path) -> list[tuple[int, str]]:
         if not match:
             continue
         image = match.group(1)
-        # A Dockerfile path (`image: Dockerfile`) builds from the repo and is
-        # covered by the `uses:` pin; only registry references float.
-        if not image.startswith("docker://") and "/" not in image and ":" not in image:
+        if _looks_like_dockerfile(image):
+            # NOT a free pass. `image: Dockerfile.github_action_dockerhub` is
+            # how the original hole worked: a repository SHA freezes the
+            # Dockerfile TEXT, and that text says `FROM <mutable tag>`, which
+            # resolves at build time to whatever the tag points at today. So
+            # follow the file and hold its FROM lines to the digest rule.
+            findings.extend(_unpinned_from_lines(path, image, lineno))
             continue
         if not IMAGE_DIGEST_PATTERN.search(image):
             findings.append((lineno, f"{image} (image needs @sha256:<64 hex>)"))
+    return findings
+
+
+def _looks_like_dockerfile(image: str) -> bool:
+    """A build context path rather than a registry reference."""
+    if image.startswith("docker://"):
+        return False
+    return "Dockerfile" in image or image.startswith("./") or image.startswith("../")
+
+
+def _unpinned_from_lines(
+    action_path: Path, image: str, image_lineno: int
+) -> list[tuple[int, str]]:
+    """Every FROM in the referenced Dockerfile must name a digest.
+
+    Exceptions, both legitimate: `scratch` (the empty base, which has no
+    digest) and a reference to an earlier build stage declared with `AS`.
+    """
+    dockerfile = (action_path.parent / image).resolve()
+    try:
+        text = dockerfile.read_text(encoding="utf-8")
+    except OSError:
+        # Fail closed: an action pointing at a Dockerfile we cannot read is
+        # not something to wave through.
+        return [(image_lineno, f"{image} (Dockerfile not readable; cannot verify FROM)")]
+
+    findings: list[tuple[int, str]] = []
+    stages: set[str] = set()
+    for lineno, line in enumerate(text.splitlines(), start=1):
+        match = FROM_PATTERN.match(line)
+        if not match:
+            continue
+        base, stage = match.group(1), match.group(2)
+        if stage:
+            stages.add(stage.lower())
+        if base.lower() == "scratch" or base.lower() in stages:
+            continue
+        if not IMAGE_DIGEST_PATTERN.search(base):
+            rel = dockerfile.relative_to(REPO_ROOT).as_posix()
+            findings.append(
+                (image_lineno, f"{image} -> {rel}:{lineno} FROM {base} (needs @sha256:<64 hex>)")
+            )
     return findings
 
 
@@ -110,7 +160,12 @@ def main() -> int:
             findings.append(f"{rel}:{lineno}: {ref}")
 
     if findings:
-        print("action-pin guard: unpinned action reference (require a full 40-char SHA):", file=sys.stderr)
+        print(
+            "action-pin guard: unpinned reference "
+            "(actions need a full 40-char SHA; images and Dockerfile FROM lines "
+            "need @sha256:<64 hex>):",
+            file=sys.stderr,
+        )
         for finding in findings:
             print(f"  {finding}", file=sys.stderr)
         return 1
