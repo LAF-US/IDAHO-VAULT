@@ -1,0 +1,11 @@
+{
+  "defaultEndpoint": "https://openrouter.ai/api/v1",
+  "defaultModel": "mistral-small-latest",
+  "defaultApiKey": "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",
+  "defaultMaxOutgoingCharacters": 4096,
+  "defaultMaxNumTokens": 1024,
+  "debugToConsole": true,
+  "displayTokenUsageDesktop": false,
+  "displayTokenUsageMobile": false,
+  "defaultSystemMessage": "Hello World!"
+}
