@@ -19,7 +19,7 @@ related:
 You love to see it. #idpol https://t.co/ckjbfBdf48
 
 ## Media
-- ![](https://pbs.twimg.com/media/El_jVo8VkAET6ES.jpg)
-- ![](https://pbs.twimg.com/media/El_jWy3UcAAruv2.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/El_jVo8VkAET6ES.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/El_jWy3UcAAruv2.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1324026810279972869)

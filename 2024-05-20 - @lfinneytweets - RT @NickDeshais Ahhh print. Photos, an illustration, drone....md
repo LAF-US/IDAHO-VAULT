@@ -18,7 +18,7 @@ related:
 RT @NickDeshais: Ahhh print. Photos, an illustration, drone shot. The works! https://t.co/WRlWT9jTSI
 
 ## Media
-- ![](https://pbs.twimg.com/media/GODNNCca4AAJ15_.jpg)
-- ![](https://pbs.twimg.com/media/GODNNCYaIAAeL0O.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/GODNNCca4AAJ15_.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/GODNNCYaIAAeL0O.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1792679289407885650)

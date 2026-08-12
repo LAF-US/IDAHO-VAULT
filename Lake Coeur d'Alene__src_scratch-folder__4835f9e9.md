@@ -4,9 +4,10 @@ tags:
 aliases:
   - Lake CDA
 ---
-Water body in [[Kootenai County]]. 
+Water body in [[Kootenai County]].
 
 Lakeshore communities:
+
 - [[Coeur d'Alene]]
 - [[Wolf Lodge]]
 - [[Harrison]]
@@ -14,4 +15,4 @@ Lakeshore communities:
 - [[Peedee]]
 - [[Rockford Bay]]
 
-Southern third of lake managed by the [[Coeur d'Alene Tribe]]. 
+Southern third of lake managed by the [[Coeur d'Alene Tribe]].

@@ -20,6 +20,6 @@ https://t.co/tEe1Zl0z4R https://t.co/57wl5InvLw
 - https://www.atlasobscura.com/articles/strange-maps-the-disunited-states
 
 ## Media
-- ![](https://pbs.twimg.com/media/F28-W0KasAA5itF.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/F28-W0KasAA5itF.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1688637028509036545)

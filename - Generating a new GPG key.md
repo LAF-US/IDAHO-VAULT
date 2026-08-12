@@ -10,7 +10,7 @@ date created: Monday, April 20th 2026, 12:49:21 pm
 date modified: Monday, April 20th 2026, 12:53:45 pm
 ---
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Sed_stream_editor_%28cropped%29.jpg/250px-Sed_stream_editor_%28cropped%29.jpg)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Sed_stream_editor_%28cropped%29.jpg/250px-Sed_stream_editor_%28cropped%29.jpg)
 
 The man page for the sed utility, as seen in various Linux distributions
 
@@ -22,11 +22,11 @@ Man pages are often referred to as an *[online](https://en.wikipedia.org/wiki/On
 
 ## History
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Screenshot_of_%22Xman%22_program.png/250px-Screenshot_of_%22Xman%22_program.png)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Screenshot_of_%22Xman%22_program.png/250px-Screenshot_of_%22Xman%22_program.png)
 
 xman, an early X11 application for viewing manual pages
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/OpenBSD_Manpages_Section_8_Intro.png/250px-OpenBSD_Manpages_Section_8_Intro.png)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/OpenBSD_Manpages_Section_8_Intro.png/250px-OpenBSD_Manpages_Section_8_Intro.png)
 
 OpenBSD section 8 intro man page, displaying in a text console
 
@@ -42,7 +42,7 @@ There was a hidden [Easter egg](https://en.wikipedia.org/wiki/Easter_egg_\(media
 
 ## Formatting
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/FreeBSD_typeset_man_page.png/250px-FreeBSD_typeset_man_page.png)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/FreeBSD_typeset_man_page.png/250px-FreeBSD_typeset_man_page.png)
 
 Part of the FreeBSD man(1) manual page, typeset into PDF format
 
@@ -190,7 +190,7 @@ In addition, some Unix [GUI](https://en.wikipedia.org/wiki/Graphical_user_interf
 
 [^12]: Pali, Gabor, ed. (12 May 2013). ["FreeBSD Quarterly Status Report, January-March 2013"](http://www.freebsd.org/news/status/report-2013-01-2013-03.html#mdoc.su-%E2%80%94-Short-Manual-Page-URLs). [FreeBSD](https://en.wikipedia.org/wiki/FreeBSD "FreeBSD"). [Archived](https://web.archive.org/web/20141222022258/http://www.freebsd.org/news/status/report-2013-01-2013-03.html#mdoc.su-%E2%80%94-Short-Manual-Page-URLs) from the original on 22 December 2014. Retrieved 25 December 2014.
 
-[^13]: Murenin, Constantine A. (19 February 2013). ["announcing mdoc.su, short manual page URLs"](http://lists.freebsd.org/pipermail/freebsd-doc/2013-February/021465.html). *freebsd-doc@freebsd.org* (Mailing list). [Archived](https://web.archive.org/web/20140807051219/http://lists.freebsd.org/pipermail/freebsd-doc/2013-February/021465.html) from the original on 7 August 2014. Retrieved 25 December 2014.
+[^13]: Murenin, Constantine A. (19 February 2013). ["announcing mdoc.su, short manual page URLs"](http://lists.freebsd.org/pipermail/freebsd-doc/2013-February/021465.html). *<freebsd-doc@freebsd.org>* (Mailing list). [Archived](https://web.archive.org/web/20140807051219/http://lists.freebsd.org/pipermail/freebsd-doc/2013-February/021465.html) from the original on 7 August 2014. Retrieved 25 December 2014.
 
 [^14]: Murenin, Constantine A. (23 February 2013). ["mdoc.su — Short manual page URLs for FreeBSD, OpenBSD, NetBSD and DragonFly BSD"](http://mdoc.su/). [Archived](https://web.archive.org/web/20141217170726/http://mdoc.su/) from the original on 17 December 2014. Retrieved 25 December 2014.
 
@@ -204,11 +204,11 @@ In addition, some Unix [GUI](https://en.wikipedia.org/wiki/Graphical_user_interf
 
 [^19]: ["Manual Pages for Research Unix Eighth Edition"](http://man.cat-v.org/unix_8th/). *man.cat-v.org*. [Archived](https://web.archive.org/web/20200630215702/http://man.cat-v.org/unix_8th/) from the original on 2020-06-30. Retrieved 2020-05-06.
 
-[^20]: ["Unix Programmer's Manual - Introduction"](https://www.bell-labs.com/usr/dmr/www/manintro.html). *www.bell-labs.com*. November 3, 1971. [Archived](https://web.archive.org/web/20200601064923/https://www.bell-labs.com/usr/dmr/www/manintro.html) from the original on June 1, 2020. Retrieved May 6, 2020.
+[^20]: ["Unix Programmer's Manual - Introduction"](https://www.bell-labs.com/usr/dmr/www/manintro.html). *<www.bell-labs.com>*. November 3, 1971. [Archived](https://web.archive.org/web/20200601064923/https://www.bell-labs.com/usr/dmr/www/manintro.html) from the original on June 1, 2020. Retrieved May 6, 2020.
 
 [^21]: ["System V release 4 manuals"](http://bitsavers.trailing-edge.com/pdf/att/unix/System_V_Release_4/). *bitsavers.trailing-edge.com*. [Archived](https://web.archive.org/web/20200803205815/http://bitsavers.trailing-edge.com/pdf/att/unix/System_V_Release_4/) from the original on 2020-08-03. Retrieved 2020-05-06.
 
-[^22]: ["lapack (l) - Linux Man Pages"](https://www.systutorials.com/docs/linux/man/l-lapack/). *www.systutorials.com*. [Archived](https://web.archive.org/web/20230311130845/https://www.systutorials.com/docs/linux/man/l-lapack/) from the original on 2023-03-11. Retrieved 2021-05-29.
+[^22]: ["lapack (l) - Linux Man Pages"](https://www.systutorials.com/docs/linux/man/l-lapack/). *<www.systutorials.com>*. [Archived](https://web.archive.org/web/20230311130845/https://www.systutorials.com/docs/linux/man/l-lapack/) from the original on 2023-03-11. Retrieved 2021-05-29.
 
 [^23]: `mdoc(7)` – [FreeBSD](https://en.wikipedia.org/wiki/FreeBSD "FreeBSD") Miscellaneous Information Manual
 
@@ -216,7 +216,7 @@ In addition, some Unix [GUI](https://en.wikipedia.org/wiki/Graphical_user_interf
 
 [^25]: `man(7)` – [Linux](https://en.wikipedia.org/wiki/Linux "Linux") Miscellanea Manual from ManKier.com
 
-[^26]: ["Groff Mission Statement - 2014"](https://www.gnu.org/software/groff/groff-mission-statement.html). *www.gnu.org*. [Archived](https://web.archive.org/web/20201203121306/https://www.gnu.org/software/groff/groff-mission-statement.html) from the original on 2020-12-03. Retrieved 2021-01-02. Concurrent with work on man(7), mdoc(7) will be actively supported and its use promoted.
+[^26]: ["Groff Mission Statement - 2014"](https://www.gnu.org/software/groff/groff-mission-statement.html). *<www.gnu.org>*. [Archived](https://web.archive.org/web/20201203121306/https://www.gnu.org/software/groff/groff-mission-statement.html) from the original on 2020-12-03. Retrieved 2021-01-02. Concurrent with work on man(7), mdoc(7) will be actively supported and its use promoted.
 
 [^27]: ["man"](https://www.gnu.org/software/groff/manual/html_node/man.html). *The GNU Troff Manual*. [Archived](https://web.archive.org/web/20191224124039/https://www.gnu.org/software/groff/manual/html_node/man.html) from the original on 24 December 2019. Retrieved 31 December 2019.
 
@@ -226,7 +226,7 @@ In addition, some Unix [GUI](https://en.wikipedia.org/wiki/Graphical_user_interf
 
 [^30]: ["help2man Reference Manual"](https://www.gnu.org/software/help2man). [Archived](https://web.archive.org/web/20230306093151/https://www.gnu.org/software/help2man/) from the original on 6 March 2023. Retrieved 5 March 2023.
 
-[^31]: ["Man Pages (GNU Coding Standards)"](https://www.gnu.org/prep/standards/html_node/Man-Pages.html). *www.gnu.org*. [Archived](https://web.archive.org/web/20230305170922/https://www.gnu.org/prep/standards/html_node/Man-Pages.html) from the original on 2023-03-05. Retrieved 2023-03-05.
+[^31]: ["Man Pages (GNU Coding Standards)"](https://www.gnu.org/prep/standards/html_node/Man-Pages.html). *<www.gnu.org>*. [Archived](https://web.archive.org/web/20230305170922/https://www.gnu.org/prep/standards/html_node/Man-Pages.html) from the original on 2023-03-05. Retrieved 2023-03-05.
 
 [^32]: Ingo Schwarze. ["New mandoc -mdoc -T markdown converter"](https://undeadly.org/cgi?action=article&sid=20170304230520). *undeadly.org*. [Archived](https://web.archive.org/web/20230305170920/https://undeadly.org/cgi?action=article&sid=20170304230520) from the original on 2023-03-05. Retrieved 2023-03-05. – for specific complaints by the author, see Ingo Schwarze (28 February 2014). ["Re: Groff man pages (tangential to Future Redux)"](https://lists.gnu.org/archive/html/groff/2014-02/msg00109.html). *Groff* (Mailing list). [Archived](https://web.archive.org/web/20230305171936/https://lists.gnu.org/archive/html/groff/2014-02/msg00109.html) from the original on 2023-03-05.
 

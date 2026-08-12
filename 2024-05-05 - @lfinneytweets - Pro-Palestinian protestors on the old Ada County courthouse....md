@@ -19,7 +19,7 @@ related:
 Pro-Palestinian protestors on the old Ada County courthouse lawn. #idpol https://t.co/QvVpEZw4M7
 
 ## Media
-- ![](https://pbs.twimg.com/media/GM18sZsWoAAt8om.jpg)
-- ![](https://pbs.twimg.com/media/GM18sbdWgAAuiE-.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/GM18sZsWoAAt8om.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/GM18sbdWgAAuiE-.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1787221750033318349)

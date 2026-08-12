@@ -1,0 +1,11 @@
+[2026-08-03 10:31:27:0875] Adobe ARM 1.824.460.1149 logging started
+[2026-08-03 10:31:27:0891] Command line: /ProcessRequestInUserContext /PRODUCT:Acrobat /LANG:ENU
+[2026-08-03 10:32:58:0543] UCB Request registered: ProcessResult
+[2026-08-03 10:32:58:0748] UCB Request registered: SafeCleanup
+[2026-08-03 10:32:58:0779] ProcessResultCmndLine registered: /ProcessResult /PRODUCT:Acrobat /LANG:ENU
+[2026-08-03 10:32:59:0892] ProductCode: {AC76BA86-1033-FFFF-7760-BC15014EA700}
+[2026-08-03 10:32:59:0892] ProductName: Adobe Acrobat (64-bit)
+[2026-08-03 10:32:59:0892] ProductVersion: 26.001.21771
+[2026-08-03 10:32:59:0892] ProductUACPatching: enabled
+[2026-08-03 10:32:59:0937] ARM returns ERROR_SUCCESS
+[2026-08-03 10:32:59:0937] Adobe ARM 1.824.460.1149 logging finished.

@@ -15,7 +15,7 @@ Idaho has joined other states resisting similar requests from the feds, who have
 
 The justification: ensuring election integrity and verifying voter eligibility.
 
-![](https://www.idahoednews.org/wp-content/uploads/2025/11/IMG_2179-2.jpg)
+![alt text needed](https://www.idahoednews.org/wp-content/uploads/2025/11/IMG_2179-2.jpg)
 
 Secretary of State Phil McGrane shows a ballot to the crowd of observers during a recount on Monday, Nov. 24, 2025, at the Elk’s Lodge in Mountain Home. (Sean Dolan/EdNews)
 
@@ -37,6 +37,6 @@ The outcome could determine how much control states retain over voter data — a
 
 Here’s the lawsuit:
 
-<iframe src="https://www.scribd.com/embeds/1021106200/content?sta***REMOVED***page=1&amp;view_mode&amp;access_key=key-f6FA3z3qWTj627vOpy1a" width="100%" height="500" frameborder="0"></iframe>
+<iframe src="https://www.scribd.com/embeds/1021106200/content?start_page=1&amp;view_mode&amp;access_key=key-f6FA3z3qWTj627vOpy1a" width="100%" height="500" frameborder="0"></iframe>
 
 [View this document on Scribd](https://www.scribd.com/doc/1021106200)

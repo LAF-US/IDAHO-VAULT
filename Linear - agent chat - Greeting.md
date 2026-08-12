@@ -1,10 +1,6 @@
 ---
 date created: Sunday, March 29th 2026, 10:48:49 am
-<<<<<<< Updated upstream
 date modified: Wednesday, April 1st 2026, 11:00:09 pm
-=======
-date modified: Sunday, March 29th 2026, 10:49:49 am
->>>>>>> Stashed changes
 ---
 
 # Greeting
@@ -917,7 +913,7 @@ If you want, I can turn this into:
 
 ## User
 
-I'd like to commit agent review suggestions at https://github.com/loganfinney27/IDAHO-VAULT/pull/96#pullrequestreview-4026464896
+I'd like to commit agent review suggestions at <https://github.com/loganfinney27/IDAHO-VAULT/pull/96#pullrequestreview-4026464896>
 
 ## Assistant
 
@@ -954,7 +950,7 @@ If you want, I can turn that into:
 
 ## User
 
-PR Synch workflow confirmed failing 
+PR Synch workflow confirmed failing
 
 ## Assistant
 
@@ -1054,7 +1050,7 @@ Do not duplicate implementation work unless you find a clearly separate fix that
 Optimize for diagnosis, validation, and merge safety.
 ```
 
-2. **Claude 2 → project triage / secretary support**
+1. **Claude 2 → project triage / secretary support**
    * keep the rest of the board from drifting while others code
 
 ```text
@@ -1260,8 +1256,8 @@ Agent signatures — already convention; reinforced as the fastest triage signal
 
 of this failing)
 
-6. PRs as the handoff unit — branch-only work is invisible
-7. Sequence-sensitive issues blocked in Linear, not just described in prose
+1. PRs as the handoff unit — branch-only work is invisible
+2. Sequence-sensitive issues blocked in Linear, not just described in prose
 
 The LAF-9/LAF-11 overlap is called out by name as a live example of 7.
 
@@ -1387,11 +1383,7 @@ Here’s the gentle, safe Sunday swarm mode I’d run.
   * blockers
   * true incidents
   * anything asking for approval
-<<<<<<< Updated upstream
 * leave merges and secret provisioning for later unless something is truly [on fire](<on fire.md>)
-=======
-* leave merges and secret provisioning for later unless something is truly [on fire](<on%20fire>)
->>>>>>> Stashed changes
 
 \-Linear (today's project foreman)
 

@@ -20,8 +20,8 @@ And here is that second vaccination group in more detail. That document is here:
 - https://coronavirus.idaho.gov/wp-content/uploads/2021/01/Prioritization-Groups-1-and-2-FINAL.pdf
 
 ## Media
-- ![](https://pbs.twimg.com/media/ErkGJHRVEAELzWE.jpg)
-- ![](https://pbs.twimg.com/media/ErkGKwgVcAAwRTW.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/ErkGJHRVEAELzWE.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/ErkGKwgVcAAwRTW.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

@@ -16,6 +16,6 @@ related:
 I've been misspelling "gallery" all morning. https://t.co/jHxt5n1xrE
 
 ## Media
-- ![](https://pbs.twimg.com/tweet_video_thumb/EbOXKDEU0AIE-jc.jpg)
+- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/EbOXKDEU0AIE-jc.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1275529328642584576)

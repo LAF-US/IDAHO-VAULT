@@ -17,7 +17,7 @@ status: configured
 ## Architecture Overview
 
 ```
-┌─────────────────────────────────────────────────────────────┐
+┌────────────────────────────────────────────────────────────Ŀ
 │                     Hermes Agent                            │
 │                                                             │
 │  Primary: Ollama Local (qwen3.5, phi3, qwen2.5, +more)     │
@@ -39,17 +39,19 @@ status: configured
 ### Primary: Ollama Local
 
 | Setting | Value |
-|---------|-------|
+| --------- | ------- |
 | Endpoint | `http://127.0.0.1:11434/v1` |
 | Default Model | `qwen3.5:latest` |
 | API Key | `ollama` (placeholder) |
 
 **Models (installed):**
+
 - `qwen3.5:latest` — 9.7B, best quality, 6.6 GB
 - `phi3:mini` — 3.8B, lightweight, 2.2 GB
 - `qwen2.5:3b` — 3.1B, minimal, 1.9 GB
 
 **Models (pending):**
+
 - `codestral:latest` — Code generation
 - `devstral:latest` — Code understanding
 - `mistral-large:latest` — Complex reasoning
@@ -66,7 +68,7 @@ Quick local fallback for lightweight tasks.
 ### Fallback 2: OpenRouter Auto (Best Quality)
 
 | Setting | Value |
-|---------|-------|
+| --------- | ------- |
 | Endpoint | `https://openrouter.ai/api/v1` |
 | API Key | `env:OPENROUTER_API_KEY` |
 | Default Model | `openrouter/auto` |
@@ -76,12 +78,13 @@ Routes to best available model for your request. Uses paid tier credits.
 ### Fallback 3: OpenRouter Free
 
 | Setting | Value |
-|---------|-------|
+| --------- | ------- |
 | Endpoint | `https://openrouter.ai/api/v1` |
 | API Key | `env:OPENROUTER_API_KEY` |
 | Default Model | `nvidia/nemotron-3-super-120b-a12b:free` |
 
 **Available Free Models:**
+
 - NVIDIA Nemotron 3 Super (120B, 1M context)
 - Meta Llama 3.2 3B Instruct
 - Google Gemma 4 31B
@@ -91,7 +94,7 @@ Routes to best available model for your request. Uses paid tier credits.
 ### Fallback 4: OpenRouter Reasoning
 
 | Setting | Value |
-|---------|-------|
+| --------- | ------- |
 | Endpoint | `https://openrouter.ai/api/v1` |
 | API Key | `env:OPENROUTER_API_KEY` |
 | Default Model | `deepseek/deepseek-r1:free` |
@@ -157,7 +160,7 @@ OPENROUTER_API_KEY=sk-or-v1-xxx
 ## Model Selection Strategy
 
 | Task Type | Recommended Provider | Model |
-|-----------|---------------------|-------|
+| ----------- | --------------------- | ------- |
 | General chat | Ollama Local | `qwen3.5:latest` |
 | Quick/simple tasks | Ollama Light | `phi3:mini` |
 | Code generation | Ollama Coding | `codestral:latest` |
@@ -172,21 +175,25 @@ OPENROUTER_API_KEY=sk-or-v1-xxx
 ## Usage
 
 ### Start Hermes
+
 ```bash
 hermes
 ```
 
 ### Switch Model Mid-Session
+
 ```
 /model openrouter-auto
 ```
 
 ### Check Status
+
 ```bash
 hermes doctor
 ```
 
 ### View Config
+
 ```bash
 hermes config
 ```

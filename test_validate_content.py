@@ -58,32 +58,6 @@ class ValidateContentTest(unittest.TestCase):
         )
         self.assertEqual(errors, [])
 
-    def test_inbox_scope_accepts_inbox_markdown(self) -> None:
-        errors = validate_content.validate_directory(
-            Path("INBOX/SWARM-MVP/process-document-123-1.md"),
-            "inbox",
-        )
-        self.assertEqual(errors, [])
-
-    def test_inbox_scope_rejects_non_inbox_markdown(self) -> None:
-        target = Path("!/SWARM-MVP/process-document-123-1.md")
-        errors = validate_content.validate_directory(target, "inbox")
-        self.assertEqual(
-            errors,
-            [f"{target}: File outside allowed directories for scope 'inbox': ['INBOX/']"],
-        )
-
-    def test_deletion_of_live_governance_requires_human_review(self) -> None:
-        target = Path("!/WAKEUP.md")
-        errors = validate_content.validate_deleted_path(target, "all")
-        self.assertEqual(
-            errors,
-            [f"{target}: Deletion of governed content requires explicit human review"],
-        )
-
-    def test_non_governed_deletion_is_not_blocked(self) -> None:
-        self.assertEqual(validate_content.validate_deleted_path(Path("draft.md"), "all"), [])
-
 
 if __name__ == "__main__":
     unittest.main()

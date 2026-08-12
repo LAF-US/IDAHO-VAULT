@@ -20,13 +20,13 @@ related:
   - idpol
 ---
 
-#IdahoCOVID19 data visualization time, courtesy of @BoiseState_HCRI. Two threads: Cases & Deaths #idpol 
+\#IdahoCOVID19 data visualization time, courtesy of @BoiseState_HCRI. Two threads: Cases & Deaths #idpol 
 https://t.co/U8hHfjuf0H https://t.co/lZhxQkxNOf
 
 ## Links
 - https://boisestate.maps.arcgis.com/apps/opsdashboard/index.html#/2d27bfd0cb8144438679cb1d0fade2f4
 
 ## Media
-- ![](https://pbs.twimg.com/media/EVN1tadVAAIH1Pa.png)
+- ![alt text needed](https://pbs.twimg.com/media/EVN1tadVAAIH1Pa.png)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1248472794616098818)

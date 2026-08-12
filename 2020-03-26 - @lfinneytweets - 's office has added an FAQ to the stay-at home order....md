@@ -27,6 +27,6 @@ https://t.co/NOX5sO0Mmv https://t.co/9VjVYHgc16
 - https://coronavirus.idaho.gov/wp-content/uploads/sites/127/2020/03/032520_Order-FAQ.pdf
 
 ## Media
-- ![](https://pbs.twimg.com/media/ET_-4UPVAAEu8xD.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/ET_-4UPVAAEu8xD.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1242994234090606592)

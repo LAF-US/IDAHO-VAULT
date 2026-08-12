@@ -14,11 +14,12 @@ related:
   - lfinneytweets
 ---
 
-(3/3) Editorial: Legislators should consider the impact on the transgender community 
-https://t.co/ckVXaPB8M6
+(3/3) Editorial: Legislators should consider the impact on the transgender community
+<https://t.co/ckVXaPB8M6>
 
 ## Links
-- https://www.uiargonaut.com/2020/03/12/opinion-house-bill-500-focused-on-transgender-women-in-athletics-should-raise-concern/
+
+- <https://www.uiargonaut.com/2020/03/12/opinion-house-bill-500-focused-on-transgender-women-in-athletics-should-raise-concern/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

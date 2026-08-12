@@ -1,0 +1,56 @@
+name: Metadata Survey
+
+# Scheduled scan of markdown frontmatter health against VAULT-METADATA-STANDARD.
+# Advances issue #252 (metadata/frontmatter standardization debt and schema enforcement)
+# per the doctrine plan at !/ARBORSCAPE-PR-EXPANSION-2026-05-22.md (Phase 1d).
+# Runs the existing metadata_survey.py scanner (no Python authored here) and syncs
+# a recurring issue via issue_reconciler.py, matching the branch-garden-report pattern.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+  pull-requests: read
+
+jobs:
+  survey:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 1
+
+      - name: Set up Python
+        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install pyyaml
+
+      - name: Run metadata survey
+        id: survey
+        run: |
+          python .github/scripts/metadata_survey.py \
+            --format markdown \
+            --output metadata-survey-report.md
+          # metadata_survey.py does not emit has_findings; metadata debt is structurally
+          # always present per issue #252 ("not a demand to retrofit the entire historical
+          # corpus in one pass"). Treat the report as a persistent visibility surface.
+          echo "has_findings=true" >> "$GITHUB_OUTPUT"
+
+      - name: Publish summary
+        run: cat metadata-survey-report.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Sync recurring issue
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python .github/scripts/issue_reconciler.py \
+            --title "[Metadata Survey] Weekly report" \
+            --body-file metadata-survey-report.md \
+            --has-findings "${{ steps.survey.outputs.has_findings }}" \
+            --resolved-comment "Resolved automatically: the latest metadata survey found no debt."

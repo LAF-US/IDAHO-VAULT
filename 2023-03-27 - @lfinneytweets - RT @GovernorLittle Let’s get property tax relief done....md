@@ -21,6 +21,6 @@ RT @GovernorLittle: Let’s get property tax relief done right. Read my full sta
 - https://gov.idaho.gov/pressrelease/gov-little-lets-get-property-tax-relief-done-right/
 
 ## Media
-- ![](https://pbs.twimg.com/ext_tw_video_thumb/1640426020733059072/pu/img/CBqhvw8FrmzHd6EG.jpg)
+- ![alt text needed](https://pbs.twimg.com/ext_tw_video_thumb/1640426020733059072/pu/img/CBqhvw8FrmzHd6EG.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1640473181378187264)

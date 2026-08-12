@@ -31,9 +31,9 @@ related:
 - website
 authority: LOGAN
 ---
-https://www.eastidahonews.com/2023/02/drag-queen-reading-time-attracts-a-packed-house-but-those-present-werent-fans/
+<https://www.eastidahonews.com/2023/02/drag-queen-reading-time-attracts-a-packed-house-but-those-present-werent-fans/>
 
-Emily Thornton & Nate Sunderland, East Idaho News 
+Emily Thornton & Nate Sunderland, East Idaho News
 
 POCATELLO — It’s become a custom for many families at Marshall Public Library.
 

@@ -25,24 +25,23 @@ Would you like a very short “LangChain vs LlamaIndex” comparison?
 
 <div align="center">⁂</div>
 
-[^1_1]: https://cloud.google.com/use-cases/langchain
+[^1_1]: <https://cloud.google.com/use-cases/langchain>
 
-[^1_2]: https://aws.amazon.com/what-is/langchain/
+[^1_2]: <https://aws.amazon.com/what-is/langchain/>
 
-[^1_3]: https://www.ibm.com/think/topics/langchain
+[^1_3]: <https://www.ibm.com/think/topics/langchain>
 
-[^1_4]: https://www.geeksforgeeks.org/artificial-intelligence/introduction-to-langchain/
+[^1_4]: <https://www.geeksforgeeks.org/artificial-intelligence/introduction-to-langchain/>
 
-[^1_5]: https://www.youtube.com/watch?v=xTmU8ZImUO8
+[^1_5]: <https://www.youtube.com/watch?v=xTmU8ZImUO8>
 
-[^1_6]: https://docs.langchain.com/oss/python/langchain/overview
+[^1_6]: <https://docs.langchain.com/oss/python/langchain/overview>
 
-[^1_7]: https://www.reddit.com/r/LangChain/comments/1n0qam7/can_someone_explain_langchain_in_a_simple_manner/
+[^1_7]: <https://www.reddit.com/r/LangChain/comments/1n0qam7/can_someone_explain_langchain_in_a_simple_manner/>
 
-[^1_8]: https://www.langchain.com
+[^1_8]: <https://www.langchain.com>
 
-[^1_9]: https://www.youtube.com/watch?v=1bUy-1hGZpI
-
+[^1_9]: <https://www.youtube.com/watch?v=1bUy-1hGZpI>
 
 ---
 
@@ -59,7 +58,6 @@ LangChain is the broader, more modular framework for building LLM applications t
 - Use **LangChain** when you want maximum flexibility, lots of integrations, or a retrieval-heavy app like a knowledge base assistant [^2_11][^2_12][^2_7].
 - Use **CrewAI** when your app is naturally a team of agents, such as researcher/writer/reviewer pipelines, and you want faster setup with less orchestration code [^2_1][^2_3][^2_6].
 
-
 ## Using them together
 
 A common pattern is to use LangChain for tools, retrieval, and model wrappers, then use CrewAI to coordinate the agents that call those tools [^2_3][^2_8]. That gives you LangChain’s ecosystem plus CrewAI’s cleaner multi-agent structure [^2_3][^2_7].
@@ -73,32 +71,31 @@ I can also sketch a small architecture for “LangChain + CrewAI” in one diagr
 
 <div align="center">⁂</div>
 
-[^2_1]: https://draftnrun.com/en/compare/crewai-vs-langchain/
+[^2_1]: <https://draftnrun.com/en/compare/crewai-vs-langchain/>
 
-[^2_2]: https://community.latenode.com/t/should-i-choose-crewai-or-langchain-for-ai-development/39058
+[^2_2]: <https://community.latenode.com/t/should-i-choose-crewai-or-langchain-for-ai-development/39058>
 
-[^2_3]: https://www.nxcode.io/resources/news/crewai-vs-langchain-ai-agent-framework-comparison-2026
+[^2_3]: <https://www.nxcode.io/resources/news/crewai-vs-langchain-ai-agent-framework-comparison-2026>
 
-[^2_4]: https://www.linkedin.com/pulse/battle-frameworks-langchain-vs-autogen-crewai-multi-agent-7pmjc
+[^2_4]: <https://www.linkedin.com/pulse/battle-frameworks-langchain-vs-autogen-crewai-multi-agent-7pmjc>
 
-[^2_5]: https://www.instinctools.com/blog/autogen-vs-langchain-vs-crewai/
+[^2_5]: <https://www.instinctools.com/blog/autogen-vs-langchain-vs-crewai/>
 
-[^2_6]: https://www.scalekit.com/blog/langchain-vs-crewai-multi-agent-workflows
+[^2_6]: <https://www.scalekit.com/blog/langchain-vs-crewai-multi-agent-workflows>
 
-[^2_7]: https://orq.ai/blog/langchain-vs-crewai
+[^2_7]: <https://orq.ai/blog/langchain-vs-crewai>
 
-[^2_8]: https://www.leanware.co/insights/crewai-vs-langchain-complete-developer-comparison
+[^2_8]: <https://www.leanware.co/insights/crewai-vs-langchain-complete-developer-comparison>
 
-[^2_9]: https://www.reddit.com/r/AI_Agents/comments/1orpjic/langchain_vs_crewai_which_one_do_you_like_for/
+[^2_9]: <https://www.reddit.com/r/AI_Agents/comments/1orpjic/langchain_vs_crewai_which_one_do_you_like_for/>
 
-[^2_10]: https://www.youtube.com/watch?v=X5bo2YVi2tA
+[^2_10]: <https://www.youtube.com/watch?v=X5bo2YVi2tA>
 
-[^2_11]: https://cloud.google.com/use-cases/langchain
+[^2_11]: <https://cloud.google.com/use-cases/langchain>
 
-[^2_12]: https://aws.amazon.com/what-is/langchain/
+[^2_12]: <https://aws.amazon.com/what-is/langchain/>
 
-[^2_13]: https://docs.langchain.com/oss/python/langchain/overview
-
+[^2_13]: <https://docs.langchain.com/oss/python/langchain/overview>
 
 ---
 
@@ -112,7 +109,6 @@ Yes — in Python, the two most relevant “tools” for this combo are usually 
 - **CrewAI**: use it to assign tools to agents and coordinate multi-agent workflows [^3_3][^3_4].
 - **Together**: you can wrap LangChain utilities as tools inside CrewAI, so one framework handles plumbing and the other handles collaboration [^3_3][^3_5].
 
-
 ## Common Python libraries
 
 - `langchain` and provider packages like `langchain-openai` or other `langchain-<provider>` integrations [^3_2].
@@ -120,14 +116,12 @@ Yes — in Python, the two most relevant “tools” for this combo are usually 
 - `langchain_community` for many third-party utilities and tool wrappers [^3_3].
 - Supporting libraries often used with both: `pydantic`, `python-dotenv`, `requests`, `pandas`, `faiss` or other vector stores, depending on the app [^3_3][^3_6].
 
-
 ## Typical use cases
 
 - Search/research agents that call web search tools [^3_3].
 - RAG apps that retrieve from documents and summarize results [^3_1][^3_2].
 - Multi-agent pipelines where one agent researches, another writes, and another reviews [^3_7][^3_5].
 - Data analysis workflows, where LangChain can provide the data/tool layer and CrewAI manages the agent sequence [^3_6][^3_5].
-
 
 ## One simple stack
 
@@ -148,28 +142,27 @@ Would you like a minimal Python example showing LangChain tools inside CrewAI?
 
 <div align="center">⁂</div>
 
-[^3_1]: https://docs.langchain.com/oss/python/integrations/providers/all_providers
+[^3_1]: <https://docs.langchain.com/oss/python/integrations/providers/all_providers>
 
-[^3_2]: https://docs.langchain.com/oss/python/integrations/providers/overview
+[^3_2]: <https://docs.langchain.com/oss/python/integrations/providers/overview>
 
-[^3_3]: https://docs.crewai.com/en/tools/ai-ml/langchaintool
+[^3_3]: <https://docs.crewai.com/en/tools/ai-ml/langchaintool>
 
-[^3_4]: https://pypi.org/project/crewai/
+[^3_4]: <https://pypi.org/project/crewai/>
 
-[^3_5]: https://www.scalekit.com/blog/unified-tool-calling-architecture-langchain-crewai-mcp
+[^3_5]: <https://www.scalekit.com/blog/unified-tool-calling-architecture-langchain-crewai-mcp>
 
-[^3_6]: https://ai.plainenglish.io/crewai-integrating-3rd-party-tools-from-langchain-and-even-those-that-not-officially-supported-9a6b41e477db
+[^3_6]: <https://ai.plainenglish.io/crewai-integrating-3rd-party-tools-from-langchain-and-even-those-that-not-officially-supported-9a6b41e477db>
 
-[^3_7]: https://www.nxcode.io/resources/news/crewai-vs-langchain-ai-agent-framework-comparison-2026
+[^3_7]: <https://www.nxcode.io/resources/news/crewai-vs-langchain-ai-agent-framework-comparison-2026>
 
-[^3_8]: https://www.reddit.com/r/LangChain/comments/1sfn3kg/built_a_langchaincrewai_tool_that_lets_your_ai/
+[^3_8]: <https://www.reddit.com/r/LangChain/comments/1sfn3kg/built_a_langchaincrewai_tool_that_lets_your_ai/>
 
-[^3_9]: https://www.linkedin.com/posts/analytics-vidhya_analyticsvidhya-genai-aiagents-activity-7358096889709285377-DkTs
+[^3_9]: <https://www.linkedin.com/posts/analytics-vidhya_analyticsvidhya-genai-aiagents-activity-7358096889709285377-DkTs>
 
-[^3_10]: https://www.youtube.com/watch?v=fzqSP3vTZ4E
+[^3_10]: <https://www.youtube.com/watch?v=fzqSP3vTZ4E>
 
-[^3_11]: https://www.reddit.com/r/LocalLLaMA/comments/1chkl62/langchain_vs_llamaindex_vs_crewai_vs_custom_which/
-
+[^3_11]: <https://www.reddit.com/r/LocalLLaMA/comments/1chkl62/langchain_vs_llamaindex_vs_crewai_vs_custom_which/>
 
 ---
 
@@ -198,36 +191,35 @@ I can also show how RAG, LangChain, CrewAI, and a vector DB fit together in one 
 
 <div align="center">⁂</div>
 
-[^4_1]: https://objectbox.io/retrieval-augmented-generation-rag-with-vector-databases-expanding-ai-capabilities/
+[^4_1]: <https://objectbox.io/retrieval-augmented-generation-rag-with-vector-databases-expanding-ai-capabilities/>
 
-[^4_2]: https://writer.com/engineering/rag-vector-database/
+[^4_2]: <https://writer.com/engineering/rag-vector-database/>
 
-[^4_3]: https://learnopencv.com/vector-db-and-rag-pipeline-for-document-rag/
+[^4_3]: <https://learnopencv.com/vector-db-and-rag-pipeline-for-document-rag/>
 
-[^4_4]: https://coralogix.com/ai-blog/best-vector-dbs-for-retrieval-augmented-generation-rag/
+[^4_4]: <https://coralogix.com/ai-blog/best-vector-dbs-for-retrieval-augmented-generation-rag/>
 
-[^4_5]: https://apxml.com/posts/top-vector-databases-for-rag
+[^4_5]: <https://apxml.com/posts/top-vector-databases-for-rag>
 
-[^4_6]: https://www.zenml.io/blog/vector-databases-for-rag
+[^4_6]: <https://www.zenml.io/blog/vector-databases-for-rag>
 
-[^4_7]: https://www.linkedin.com/pulse/ais-new-powerhouse-llms-rag-autogen-vector-databases-take-kesharwani-mgqse
+[^4_7]: <https://www.linkedin.com/pulse/ais-new-powerhouse-llms-rag-autogen-vector-databases-take-kesharwani-mgqse>
 
-[^4_8]: https://www.reddit.com/r/Rag/comments/1lczwkv/should_i_use_rag_vectordb_or_a_relational_data/
+[^4_8]: <https://www.reddit.com/r/Rag/comments/1lczwkv/should_i_use_rag_vectordb_or_a_relational_data/>
 
-[^4_9]: https://www.meilisearch.com/blog/vector-dbs-rag
+[^4_9]: <https://www.meilisearch.com/blog/vector-dbs-rag>
 
-[^4_10]: https://www.aimon.ai/posts/comparison-of-vector-databases-for-retrieval-augmented-generation-rag-systems/
+[^4_10]: <https://www.aimon.ai/posts/comparison-of-vector-databases-for-retrieval-augmented-generation-rag-systems/>
 
-[^4_11]: https://www.reddit.com/r/Rag/comments/1iw80yj/what_is_the_vector_store_and_why_i_need_one_for/
+[^4_11]: <https://www.reddit.com/r/Rag/comments/1iw80yj/what_is_the_vector_store_and_why_i_need_one_for/>
 
-[^4_12]: https://www.digitalocean.com/community/tutorials/beyond-vector-databases-rag-without-embeddings
+[^4_12]: <https://www.digitalocean.com/community/tutorials/beyond-vector-databases-rag-without-embeddings>
 
-[^4_13]: https://community.openai.com/t/best-vector-database-to-use-with-rag/615350
+[^4_13]: <https://community.openai.com/t/best-vector-database-to-use-with-rag/615350>
 
-[^4_14]: https://docs.sisense.com/main/SisenseLinux/vdb-embedding.htm?TocPath=Sisense+Intelligence|Data+Handling+-+Securing+AI+in+Sisense+Intelligence|_____2
+[^4_14]: <https://docs.sisense.com/main/SisenseLinux/vdb-embedding.htm?TocPath=Sisense+Intelligence|Data+Handling+-+Securing+AI+in+Sisense+Intelligence|_____2>
 
-[^4_15]: https://www.youtube.com/watch?v=sKcfJwjLiuA
-
+[^4_15]: <https://www.youtube.com/watch?v=sKcfJwjLiuA>
 
 ---
 
@@ -263,22 +255,21 @@ One simple rule is enough to start: write one idea per note and link it to somet
 
 <div align="center">⁂</div>
 
-[^5_1]: https://www.reddit.com/r/ObsidianMD/comments/12f48tx/i_want_to_get_started_in_obsidian_w_zettelkasten/
+[^5_1]: <https://www.reddit.com/r/ObsidianMD/comments/12f48tx/i_want_to_get_started_in_obsidian_w_zettelkasten/>
 
-[^5_2]: https://mattgiaro.com/obsidian-zettelkasten/
+[^5_2]: <https://mattgiaro.com/obsidian-zettelkasten/>
 
-[^5_3]: https://www.youtube.com/watch?v=GRA_fwbdrtc
+[^5_3]: <https://www.youtube.com/watch?v=GRA_fwbdrtc>
 
-[^5_4]: https://forum.obsidian.md/t/setup-zettelkasten-but-how/85224
+[^5_4]: <https://forum.obsidian.md/t/setup-zettelkasten-but-how/85224>
 
-[^5_5]: https://bryanhogan.com/blog/obsidian-zettelkasten
+[^5_5]: <https://bryanhogan.com/blog/obsidian-zettelkasten>
 
-[^5_6]: https://forum.obsidian.md/t/provide-structure-how-do-you-use-zettelkasten-in-obsidian/35008
+[^5_6]: <https://forum.obsidian.md/t/provide-structure-how-do-you-use-zettelkasten-in-obsidian/35008>
 
-[^5_7]: https://forum.obsidian.md/t/simple-zettelkasten-guide/3054
+[^5_7]: <https://forum.obsidian.md/t/simple-zettelkasten-guide/3054>
 
-[^5_8]: https://forum.obsidian.md/t/obsidian-zettelkasten-starter-kit/51090
-
+[^5_8]: <https://forum.obsidian.md/t/obsidian-zettelkasten-starter-kit/51090>
 
 ---
 
@@ -291,7 +282,6 @@ Une **synthèse** est un texte ou une démarche qui rassemble plusieurs idées e
 - **But** : dégager les idées principales d’un ou plusieurs documents [^6_2][^6_3].
 - **Style** : neutre, précis, concis [^6_6][^6_8].
 - **Méthode** : regrouper, hiérarchiser, reformuler [^6_2][^6_9].
-
 
 ## Pour faire une bonne synthèse
 
@@ -309,26 +299,25 @@ Si vous voulez, je peux aussi faire une **synthèse de tous les sujets qu’on v
 
 <div align="center">⁂</div>
 
-[^6_1]: https://www.linternaute.fr/dictionnaire/fr/definition/synthese/
+[^6_1]: <https://www.linternaute.fr/dictionnaire/fr/definition/synthese/>
 
-[^6_2]: https://www.dictionnaire-academie.fr/article/A9S3938
+[^6_2]: <https://www.dictionnaire-academie.fr/article/A9S3938>
 
-[^6_3]: https://www.larousse.fr/dictionnaires/francais/synthèse/76220
+[^6_3]: <https://www.larousse.fr/dictionnaires/francais/synthèse/76220>
 
-[^6_4]: https://www.alloprof.qc.ca/zonedentraide/discussion/2589/question
+[^6_4]: <https://www.alloprof.qc.ca/zonedentraide/discussion/2589/question>
 
-[^6_5]: https://lapausefutee.fr/comment-faire-une-synthese/
+[^6_5]: <https://lapausefutee.fr/comment-faire-une-synthese/>
 
-[^6_6]: https://www.lesformations.fr/medias/files/dalf-re-diger-synthe-se-documents.pdf
+[^6_6]: <https://www.lesformations.fr/medias/files/dalf-re-diger-synthe-se-documents.pdf>
 
-[^6_7]: https://www.merci-app.com/article/synthese
+[^6_7]: <https://www.merci-app.com/article/synthese>
 
-[^6_8]: https://www.redacteur.com/blog/rediger-une-synthese/
+[^6_8]: <https://www.redacteur.com/blog/rediger-une-synthese/>
 
-[^6_9]: https://dictionnaire.lerobert.com/definition/synthese
+[^6_9]: <https://dictionnaire.lerobert.com/definition/synthese>
 
-[^6_10]: https://www.adobe.com/fr/acrobat/resources/studying/synthesis-essay.html
-
+[^6_10]: <https://www.adobe.com/fr/acrobat/resources/studying/synthesis-essay.html>
 
 ---
 
@@ -343,7 +332,6 @@ Here’s the concise synthesis: the AI Python landscape is a layered stack, not 
 - **LLM application layer**: LangChain provides retrieval, tools, and workflow plumbing, and CrewAI focuses more on multi-agent orchestration [^7_4].
 - **Retrieval infrastructure**: RAG pipelines usually pair embeddings with vector databases such as Pinecone, Weaviate, Milvus, Qdrant, Chroma, Redis, or pgvector [^7_11][^7_12][^7_13].
 - **Operational tooling**: evaluation, monitoring, and deployment have become first-class concerns, with growing use of testing and observability packages in the Python AI stack [^7_2][^7_3].
-
 
 ## What’s changing now
 
@@ -368,32 +356,31 @@ I can turn this into a compact **decision tree** for choosing between PyTorch, s
 
 <div align="center">⁂</div>
 
-[^7_1]: https://www.addwebsolution.com/blog/python-in-2026-why-this-35-year-old-language-still-leads-the-ai-revolution
+[^7_1]: <https://www.addwebsolution.com/blog/python-in-2026-why-this-35-year-old-language-still-leads-the-ai-revolution>
 
-[^7_2]: https://www.tredence.com/blog/10-python-libraries-for-data-scientists-2026
+[^7_2]: <https://www.tredence.com/blog/10-python-libraries-for-data-scientists-2026>
 
-[^7_3]: https://www.linkedin.com/pulse/future-ai-python-10-trends-defining-scalable-real-world-intelligence-jauwf
+[^7_3]: <https://www.linkedin.com/pulse/future-ai-python-10-trends-defining-scalable-real-world-intelligence-jauwf>
 
-[^7_4]: https://us.pycon.org/2026/tracks/ai/
+[^7_4]: <https://us.pycon.org/2026/tracks/ai/>
 
-[^7_5]: https://www.kdnuggets.com/12-python-libraries-you-need-to-try-in-2026
+[^7_5]: <https://www.kdnuggets.com/12-python-libraries-you-need-to-try-in-2026>
 
-[^7_6]: https://localaimaster.com/models/best-ai-python-development
+[^7_6]: <https://localaimaster.com/models/best-ai-python-development>
 
-[^7_7]: https://www.linkedin.com/pulse/2026-ai-landscape-six-trends-actually-matter-why-you-dhaliwal-mba-2r73e
+[^7_7]: <https://www.linkedin.com/pulse/2026-ai-landscape-six-trends-actually-matter-why-you-dhaliwal-mba-2r73e>
 
-[^7_8]: https://ai.plainenglish.io/5-essential-python-libraries-every-ai-developer-needs-in-2026-f5ed3151a326
+[^7_8]: <https://ai.plainenglish.io/5-essential-python-libraries-every-ai-developer-needs-in-2026-f5ed3151a326>
 
-[^7_9]: https://www.98thpercentile.com/blog/how-python-shaping-in-ai
+[^7_9]: <https://www.98thpercentile.com/blog/how-python-shaping-in-ai>
 
-[^7_10]: https://python.plainenglish.io/the-8-best-ai-tools-for-python-code-generation-in-2026-a-developers-deep-dive-bbd023c6dbe4
+[^7_10]: <https://python.plainenglish.io/the-8-best-ai-tools-for-python-code-generation-in-2026-a-developers-deep-dive-bbd023c6dbe4>
 
-[^7_11]: https://learnopencv.com/vector-db-and-rag-pipeline-for-document-rag/
+[^7_11]: <https://learnopencv.com/vector-db-and-rag-pipeline-for-document-rag/>
 
-[^7_12]: https://objectbox.io/retrieval-augmented-generation-rag-with-vector-databases-expanding-ai-capabilities/
+[^7_12]: <https://objectbox.io/retrieval-augmented-generation-rag-with-vector-databases-expanding-ai-capabilities/>
 
-[^7_13]: https://www.zenml.io/blog/vector-databases-for-rag
-
+[^7_13]: <https://www.zenml.io/blog/vector-databases-for-rag>
 
 ---
 
@@ -406,7 +393,6 @@ I can turn this into a compact **decision tree** for choosing between PyTorch, s
 - **Agentic**: the system can plan, act, observe, and adapt instead of just replying once [^8_10].
 - **Swarming**: multiple agents split work, exchange signals, and converge on a solution through collaboration [^8_1][^8_2].
 - **Decentralized**: no single agent needs full control or full visibility, which improves resilience and parallelism [^8_1][^8_9].
-
 
 ## Why it matters
 
@@ -425,28 +411,27 @@ Would you like a **distinction between agentic swarming, multi-agent systems, an
 
 <div align="center">⁂</div>
 
-[^8_1]: https://codewave.com/insights/future-agentic-ai-swarms/
+[^8_1]: <https://codewave.com/insights/future-agentic-ai-swarms/>
 
-[^8_2]: https://www.youtube.com/watch?v=cw-h-GdHYtQ
+[^8_2]: <https://www.youtube.com/watch?v=cw-h-GdHYtQ>
 
-[^8_3]: https://www.ultralytics.com/blog/what-is-swarm-intelligence-exploring-its-role-in-vision-ai
+[^8_3]: <https://www.ultralytics.com/blog/what-is-swarm-intelligence-exploring-its-role-in-vision-ai>
 
-[^8_4]: https://arxiv.org/abs/2506.15672
+[^8_4]: <https://arxiv.org/abs/2506.15672>
 
-[^8_5]: https://aclanthology.org/2025.emnlp-main.93/
+[^8_5]: <https://aclanthology.org/2025.emnlp-main.93/>
 
-[^8_6]: https://unanimous.ai/what-is-si/
+[^8_6]: <https://unanimous.ai/what-is-si/>
 
-[^8_7]: https://www.augmentcode.com/guides/what-is-agentic-swarm-coding-definition-architecture-and-use-cases
+[^8_7]: <https://www.augmentcode.com/guides/what-is-agentic-swarm-coding-definition-architecture-and-use-cases>
 
-[^8_8]: https://builder.aws.com/content/2z6EP3GKsOBO7cuo8i1WdbriRDt/enterprise-swarm-intelligence-building-resilient-multi-agent-ai-systems
+[^8_8]: <https://builder.aws.com/content/2z6EP3GKsOBO7cuo8i1WdbriRDt/enterprise-swarm-intelligence-building-resilient-multi-agent-ai-systems>
 
-[^8_9]: https://www.burrus.com/articles/what-is-swarm-intelligence/
+[^8_9]: <https://www.burrus.com/articles/what-is-swarm-intelligence/>
 
-[^8_10]: https://www.tribe.ai/applied-ai/the-agentic-ai-future-understanding-ai-agents-swarm-intelligence-and-multi-agent-systems
+[^8_10]: <https://www.tribe.ai/applied-ai/the-agentic-ai-future-understanding-ai-agents-swarm-intelligence-and-multi-agent-systems>
 
-[^8_11]: https://us.pycon.org/2026/tracks/ai/
-
+[^8_11]: <https://us.pycon.org/2026/tracks/ai/>
 
 ---
 
@@ -475,24 +460,23 @@ Would you like a one-paragraph intuition, a formal mathematical statement, or a 
 
 <div align="center">⁂</div>
 
-[^9_1]: https://www.datacamp.com/tutorial/law-of-large-numbers
+[^9_1]: <https://www.datacamp.com/tutorial/law-of-large-numbers>
 
-[^9_2]: https://www.ebsco.com/research-starters/mathematics/law-large-numbers
+[^9_2]: <https://www.ebsco.com/research-starters/mathematics/law-large-numbers>
 
-[^9_3]: https://en.wikipedia.org/wiki/Law_of_large_numbers
+[^9_3]: <https://en.wikipedia.org/wiki/Law_of_large_numbers>
 
-[^9_4]: https://digitate.com/blog/law-of-large-numbers/
+[^9_4]: <https://digitate.com/blog/law-of-large-numbers/>
 
-[^9_5]: https://www.probabilitycourse.com/chapter7/7_1_1_law_of_large_numbers.php
+[^9_5]: <https://www.probabilitycourse.com/chapter7/7_1_1_law_of_large_numbers.php>
 
-[^9_6]: https://math.uchicago.edu/~may/VIGRE/VIGRE2008/REUPapers/Schwartz.pdf
+[^9_6]: <https://math.uchicago.edu/~may/VIGRE/VIGRE2008/REUPapers/Schwartz.pdf>
 
-[^9_7]: https://www.youtube.com/watch?v=0VoRWJMt6mk
+[^9_7]: <https://www.youtube.com/watch?v=0VoRWJMt6mk>
 
-[^9_8]: https://www.reddit.com/r/explainlikeimfive/comments/177rxp4/eli5_whats_the_law_of_large_numbers/
+[^9_8]: <https://www.reddit.com/r/explainlikeimfive/comments/177rxp4/eli5_whats_the_law_of_large_numbers/>
 
-[^9_9]: https://www.investopedia.com/terms/l/lawoflargenumbers.asp
-
+[^9_9]: <https://www.investopedia.com/terms/l/lawoflargenumbers.asp>
 
 ---
 
@@ -523,30 +507,29 @@ The Python landscape we discussed earlier glues these together: LangChain orches
 
 <div align="center">⁂</div>
 
-[^10_1]: https://arxiv.org/html/2406.04276v1
+[^10_1]: <https://arxiv.org/html/2406.04276v1>
 
-[^10_2]: https://futureagi.com/blog/llm-vs-gpt/
+[^10_2]: <https://futureagi.com/blog/llm-vs-gpt/>
 
-[^10_3]: https://www.keystride.com/blog/difference-between-gpt-and-llm/
+[^10_3]: <https://www.keystride.com/blog/difference-between-gpt-and-llm/>
 
-[^10_4]: https://labs.lamatic.ai/p/gpt-vs-llm/
+[^10_4]: <https://labs.lamatic.ai/p/gpt-vs-llm/>
 
-[^10_5]: https://toloka.ai/blog/difference-between-ai-ml-llm-and-generative-ai/
+[^10_5]: <https://toloka.ai/blog/difference-between-ai-ml-llm-and-generative-ai/>
 
-[^10_6]: https://milvus.io/ai-quick-reference/what-is-the-difference-between-gpt-and-other-llms
+[^10_6]: <https://milvus.io/ai-quick-reference/what-is-the-difference-between-gpt-and-other-llms>
 
-[^10_7]: https://www.geeksforgeeks.org/artificial-intelligence/llm-vs-gpt-comparing-large-language-models-and-gpt/
+[^10_7]: <https://www.geeksforgeeks.org/artificial-intelligence/llm-vs-gpt-comparing-large-language-models-and-gpt/>
 
-[^10_8]: https://www.neuralconcept.com/post/ml-vs-llm-key-differences-applications-engineering-impact
+[^10_8]: <https://www.neuralconcept.com/post/ml-vs-llm-key-differences-applications-engineering-impact>
 
-[^10_9]: https://milvus.io/ai-quick-reference/what-are-the-key-components-of-an-llm
+[^10_9]: <https://milvus.io/ai-quick-reference/what-are-the-key-components-of-an-llm>
 
-[^10_10]: https://www.linkedin.com/pulse/making-ai-your-own-custom-gpts-vs-training-llms-explained-sheera-eby-qxahc
+[^10_10]: <https://www.linkedin.com/pulse/making-ai-your-own-custom-gpts-vs-training-llms-explained-sheera-eby-qxahc>
 
-[^10_11]: https://cloud.google.com/use-cases/langchain
+[^10_11]: <https://cloud.google.com/use-cases/langchain>
 
-[^10_12]: https://www.nxcode.io/resources/news/crewai-vs-langchain-ai-agent-framework-comparison-2026
-
+[^10_12]: <https://www.nxcode.io/resources/news/crewai-vs-langchain-ai-agent-framework-comparison-2026>
 
 ---
 
@@ -578,7 +561,6 @@ The Python landscape we discussed earlier glues these together: LangChain orches
 - **gpt-oss-120B/20B** (OpenAI open-weight): First OpenAI open models since GPT-2, mixture-of-experts for reasoning/agent tasks [^11_2][^11_7].
 - **GLM-5.1**: Chinese leader in agentic workflows and coding .
 
-
 ## Python integration
 
 All run via `transformers`, `llama.cpp`, `vLLM`, or `Ollama`. LangChain/CrewAI have native support. Start with Llama 3.1 70B or Mistral 8x22B for most agentic/RAG workflows [^11_3].
@@ -588,22 +570,21 @@ All run via `transformers`, `llama.cpp`, `vLLM`, or `Ollama`. LangChain/CrewAI h
 
 <div align="center">⁂</div>
 
-[^11_1]: https://www.syncfusion.com/blogs/post/best-5-open-source-llms
+[^11_1]: <https://www.syncfusion.com/blogs/post/best-5-open-source-llms>
 
-[^11_2]: https://zapier.com/blog/best-llm/
+[^11_2]: <https://zapier.com/blog/best-llm/>
 
-[^11_3]: https://www.linkedin.com/pulse/10-best-open-source-chatgpt-alternatives-run-100-locally-tigmaminds-jk3nf
+[^11_3]: <https://www.linkedin.com/pulse/10-best-open-source-chatgpt-alternatives-run-100-locally-tigmaminds-jk3nf>
 
-[^11_4]: https://www.datacamp.com/blog/top-open-source-llms
+[^11_4]: <https://www.datacamp.com/blog/top-open-source-llms>
 
-[^11_5]: https://www.instaclustr.com/education/open-source-ai/top-10-open-source-llms-for-2025/
+[^11_5]: <https://www.instaclustr.com/education/open-source-ai/top-10-open-source-llms-for-2025/>
 
-[^11_6]: https://budibase.com/blog/ai-agents/open-source-llms/
+[^11_6]: <https://budibase.com/blog/ai-agents/open-source-llms/>
 
-[^11_7]: https://www.techtarget.com/whatis/feature/12-of-the-best-large-language-models
+[^11_7]: <https://www.techtarget.com/whatis/feature/12-of-the-best-large-language-models>
 
-[^11_8]: https://www.reddit.com/r/LocalLLaMA/comments/1nd3291/whats_the_best_opensource_model_comparable_to/
-
+[^11_8]: <https://www.reddit.com/r/LocalLLaMA/comments/1nd3291/whats_the_best_opensource_model_comparable_to/>
 
 ---
 
@@ -617,14 +598,13 @@ All run via `transformers`, `llama.cpp`, `vLLM`, or `Ollama`. LangChain/CrewAI h
 | :-- | :-- | :-- | :-- |
 | **Mistral Large 3** | 41B active / 675B total | Multimodal (text+image), reasoning, 40+ languages | 256K tokens [^12_1][^12_10] |
 | **Mixtral 8x22B** | 39B active / 141B total | Cost-efficient MoE, math/coding | 128K tokens [^12_3][^12_6] |
-| **Mistral 7B** | 7B | Lightweight, outperforms larger Llama 2 [^12_4][^12_8] |  |
+| **Mistral 7B** | 7B | Lightweight, outperforms larger Llama 2 [^12_4][^12_8] | |
 
 ## Why it stands out
 
 - **Apache 2.0 license** on most models (fully open for commercial use) [^12_5].
 - **MoE efficiency**: activates only ~2 experts per token, so Mixtral 8x22B runs like a 40B dense model but thinks like something much larger [^12_3][^12_6].
 - **Agent-ready**: native tools API for search, code execution, document processing [^12_1].
-
 
 ## Python integration
 
@@ -643,30 +623,29 @@ LangChain/CrewAI have excellent Mistral support. Mixtral 8x22B fits on a single 
 
 <div align="center">⁂</div>
 
-[^12_1]: https://www.mindstudio.ai/blog/mistral/
+[^12_1]: <https://www.mindstudio.ai/blog/mistral/>
 
-[^12_2]: https://encord.com/blog/mistral-large-explained/
+[^12_2]: <https://encord.com/blog/mistral-large-explained/>
 
-[^12_3]: https://apxml.com/models/mixtral-8x22b-v0-1
+[^12_3]: <https://apxml.com/models/mixtral-8x22b-v0-1>
 
-[^12_4]: https://builtin.com/articles/mistral-ai
+[^12_4]: <https://builtin.com/articles/mistral-ai>
 
-[^12_5]: https://intuitionlabs.ai/articles/mistral-large-3-moe-llm-explained
+[^12_5]: <https://intuitionlabs.ai/articles/mistral-large-3-moe-llm-explained>
 
-[^12_6]: https://mistral.ai/news/mixtral-8x22b
+[^12_6]: <https://mistral.ai/news/mixtral-8x22b>
 
-[^12_7]: https://aws.amazon.com/bedrock/mistral/
+[^12_7]: <https://aws.amazon.com/bedrock/mistral/>
 
-[^12_8]: https://huggingface.co/mistralai/Mistral-7B-v0.1
+[^12_8]: <https://huggingface.co/mistralai/Mistral-7B-v0.1>
 
-[^12_9]: https://aws.amazon.com/blogs/machine-learning/mixtral-8x22b-is-now-available-in-amazon-sagemaker-jumpstart/
+[^12_9]: <https://aws.amazon.com/blogs/machine-learning/mixtral-8x22b-is-now-available-in-amazon-sagemaker-jumpstart/>
 
-[^12_10]: https://mistral.ai/models
+[^12_10]: <https://mistral.ai/models>
 
-[^12_11]: https://www.syncfusion.com/blogs/post/best-5-open-source-llms
+[^12_11]: <https://www.syncfusion.com/blogs/post/best-5-open-source-llms>
 
-[^12_12]: https://www.datacamp.com/blog/top-open-source-llms
-
+[^12_12]: <https://www.datacamp.com/blog/top-open-source-llms>
 
 ---
 
@@ -739,28 +718,27 @@ This gives Mistral's efficiency with LangChain's ecosystem and CrewAI's multi-ag
 
 <div align="center">⁂</div>
 
-[^13_1]: https://docs.langchain.com/oss/javascript/integrations/chat/mistral
+[^13_1]: <https://docs.langchain.com/oss/javascript/integrations/chat/mistral>
 
-[^13_2]: https://docs.langchain.com/oss/python/integrations/chat/mistralai
+[^13_2]: <https://docs.langchain.com/oss/python/integrations/chat/mistralai>
 
-[^13_3]: https://zilliz.com/tutorials/rag/langchain-and-langchain-vector-store-and-mistral-ai-mistral-7b-and-mistral-embed
+[^13_3]: <https://zilliz.com/tutorials/rag/langchain-and-langchain-vector-store-and-mistral-ai-mistral-7b-and-mistral-embed>
 
-[^13_4]: https://composio.dev/toolkits/mistral_ai/framework/crew-ai
+[^13_4]: <https://composio.dev/toolkits/mistral_ai/framework/crew-ai>
 
-[^13_5]: https://community.crewai.com/t/memory-embedder-integration-with-hugging-face-and-mistral/4987
+[^13_5]: <https://community.crewai.com/t/memory-embedder-integration-with-hugging-face-and-mistral/4987>
 
-[^13_6]: https://community.latenode.com/t/building-ai-applications-using-mistral-models-with-langchain-and-ollama-integration/39015
+[^13_6]: <https://community.latenode.com/t/building-ai-applications-using-mistral-models-with-langchain-and-ollama-integration/39015>
 
-[^13_7]: https://www.linkedin.com/pulse/unleashing-ai-agents-langchain-crewai-camel-mistral-systems-makwana-31jge
+[^13_7]: <https://www.linkedin.com/pulse/unleashing-ai-agents-langchain-crewai-camel-mistral-systems-makwana-31jge>
 
-[^13_8]: https://mistral.ai/models
+[^13_8]: <https://mistral.ai/models>
 
-[^13_9]: https://zapier.com/apps/crewai/integrations/mistral-ai
+[^13_9]: <https://zapier.com/apps/crewai/integrations/mistral-ai>
 
-[^13_10]: https://docs.langchain.com/oss/javascript/integrations/llms/mistral
+[^13_10]: <https://docs.langchain.com/oss/javascript/integrations/llms/mistral>
 
-[^13_11]: https://github.com/crewAIInc/crewAI/issues/2200
-
+[^13_11]: <https://github.com/crewAIInc/crewAI/issues/2200>
 
 ---
 
@@ -780,7 +758,6 @@ This diagram shows three chained blocks where each contains the previous block's
 - **Decentralized**: No single authority controls the ledger [^14_2].
 - **Transparent**: All nodes see the same transaction history [^14_3].
 
-
 ## Beyond crypto
 
 While Bitcoin popularized it, blockchain now supports supply chains, identity verification, smart contracts, and tokenized assets [^14_1][^14_5]. Enterprise versions like Hyperledger focus on permissioned networks for business [^14_1].
@@ -794,24 +771,23 @@ In AI workflows, blockchain provides verifiable logs for agent actions, decentra
 
 <div align="center">⁂</div>
 
-[^14_1]: https://www.ibm.com/think/topics/blockchain
+[^14_1]: <https://www.ibm.com/think/topics/blockchain>
 
-[^14_2]: https://mitsloan.mit.edu/ideas-made-to-matter/blockchain-explained
+[^14_2]: <https://mitsloan.mit.edu/ideas-made-to-matter/blockchain-explained>
 
-[^14_3]: https://aws.amazon.com/what-is/blockchain/
+[^14_3]: <https://aws.amazon.com/what-is/blockchain/>
 
-[^14_4]: https://en.wikipedia.org/wiki/Blockchain
+[^14_4]: <https://en.wikipedia.org/wiki/Blockchain>
 
-[^14_5]: https://www.fidelity.com/learning-center/trading-investing/what-is-blockchain
+[^14_5]: <https://www.fidelity.com/learning-center/trading-investing/what-is-blockchain>
 
-[^14_6]: https://www.coresite.com/blog/what-is-blockchain
+[^14_6]: <https://www.coresite.com/blog/what-is-blockchain>
 
-[^14_7]: https://www.youtube.com/watch?v=w_Q9Ska_DLw
+[^14_7]: <https://www.youtube.com/watch?v=w_Q9Ska_DLw>
 
-[^14_8]: https://www.investopedia.com/terms/b/blockchain.asp
+[^14_8]: <https://www.investopedia.com/terms/b/blockchain.asp>
 
-[^14_9]: https://www.blockchain.com
-
+[^14_9]: <https://www.blockchain.com>
 
 ---
 
@@ -835,7 +811,6 @@ In AI workflows, blockchain provides verifiable logs for agent actions, decentra
 - **cosmospy**: Cosmos SDK chains
 - **terra-sdk**: Terra blockchain
 
-
 ## With AI/ML stacks
 
 For agentic workflows (Mistral + LangChain/CrewAI), wrap Web3.py functions as LangChain tools:
@@ -852,7 +827,6 @@ def get_eth_balance(address: str) -> float:
     return w3.eth.get_balance(address) / 1e18
 ```
 
-
 ## Quick stack
 
 **Production**: web3.py + eth-account (signing) + requests
@@ -866,20 +840,19 @@ def get_eth_balance(address: str) -> float:
 
 <div align="center">⁂</div>
 
-[^15_1]: https://metamask.io/news/top-three-libraries-for-web3-developers
+[^15_1]: <https://metamask.io/news/top-three-libraries-for-web3-developers>
 
-[^15_2]: https://docs.chainstack.com/docs/web3-development-frameworks-and-libraries-glossary
+[^15_2]: <https://docs.chainstack.com/docs/web3-development-frameworks-and-libraries-glossary>
 
-[^15_3]: https://tailwebs.com/blogs/python-for-blockchain-development-exploring/
+[^15_3]: <https://tailwebs.com/blogs/python-for-blockchain-development-exploring/>
 
-[^15_4]: https://www.reddit.com/r/ethdev/comments/17ko8bs/pythereum_an_extremely_fast_opensource/
+[^15_4]: <https://www.reddit.com/r/ethdev/comments/17ko8bs/pythereum_an_extremely_fast_opensource/>
 
-[^15_5]: https://hashlock.com/blog/top-web3-libraries-for-evm-non-evm-developers
+[^15_5]: <https://hashlock.com/blog/top-web3-libraries-for-evm-non-evm-developers>
 
-[^15_6]: https://github.com/ahmet/awesome-web3
+[^15_6]: <https://github.com/ahmet/awesome-web3>
 
-[^15_7]: https://www.alchemy.com/dapps/best/web3-libraries
-
+[^15_7]: <https://www.alchemy.com/dapps/best/web3-libraries>
 
 ---
 
@@ -895,7 +868,6 @@ Likely **open-source CI/CD tools** for automating rclone backups or blockchain n
 - **GitLab CI** (built-in pipelines)
 - **Woodpecker CI** (Docker-based, self-hosted)
 - **Drone CI** (lightweight, container-native)
-
 
 ## Personal blockchain setup
 
@@ -934,7 +906,6 @@ rclone config  # Add Sia remote (needs siad daemon)
 rclone sync ~/obsidian sia:personal-vault --crypt
 ```
 
-
 ## Agentic tie-in
 
 In CrewAI/LangChain + Mistral:
@@ -950,26 +921,25 @@ Personal blockchain achieved: your notes/research on-chain, synced via open CI [
 
 <div align="center">⁂</div>
 
-[^16_1]: https://rclone.org
+[^16_1]: <https://rclone.org>
 
-[^16_2]: https://rclone.org/sia/
+[^16_2]: <https://rclone.org/sia/>
 
-[^16_3]: https://forum.rclone.org/t/best-way-to-backup-web-3-0-blockchain-node-data-using-rclone/53569
+[^16_3]: <https://forum.rclone.org/t/best-way-to-backup-web-3-0-blockchain-node-data-using-rclone/53569>
 
-[^16_4]: https://en.wikipedia.org/wiki/Rclone
+[^16_4]: <https://en.wikipedia.org/wiki/Rclone>
 
-[^16_5]: https://github.com/ncw/rclone/issues/737
+[^16_5]: <https://github.com/ncw/rclone/issues/737>
 
-[^16_6]: https://www.reddit.com/r/rclone/comments/1nh2k7c/i_am_a_complete_beginner_i_just_got_to_know_about/
+[^16_6]: <https://www.reddit.com/r/rclone/comments/1nh2k7c/i_am_a_complete_beginner_i_just_got_to_know_about/>
 
-[^16_7]: https://grafana.com/docs/grafana-cloud/monitor-infrastructure/integrations/integration-reference/integration-rclone/
+[^16_7]: <https://grafana.com/docs/grafana-cloud/monitor-infrastructure/integrations/integration-reference/integration-rclone/>
 
-[^16_8]: https://news.ycombinator.com/item?id=22791036
+[^16_8]: <https://news.ycombinator.com/item?id=22791036>
 
-[^16_9]: https://www.tigrisdata.com/docs/quickstarts/rclone/
+[^16_9]: <https://www.tigrisdata.com/docs/quickstarts/rclone/>
 
-[^16_10]: https://rclone.org/changelog/
-
+[^16_10]: <https://rclone.org/changelog/>
 
 ---
 
@@ -984,7 +954,6 @@ Personal blockchain achieved: your notes/research on-chain, synced via open CI [
 - **Watchtower**: Scans for breached sites, weak/reused passwords across your 50+ services.
 - **Secure sharing**: Family vault for wife (inheritance planning), team vaults for collaborators.
 - **Biometrics + TOTP**: Face ID + one-time passwords replace SMS 2FA everywhere.
-
 
 ## Pricing (2026)
 
@@ -1005,7 +974,6 @@ op item create --title "Alchemy RPC" --vault Private --notes "Web3.py endpoint"
 export MISTRAL_API_KEY=$(op read op://Private/Mistral/API)
 rclone sync ~/obsidian sia:vault --config-from-secret op://Private/rclone
 ```
-
 
 ## Agentic workflow
 
@@ -1033,26 +1001,25 @@ def get_api_key(service: str) -> str:
 
 <div align="center">⁂</div>
 
-[^17_1]: https://1password.com/features
+[^17_1]: <https://1password.com/features>
 
-[^17_2]: https://www.cloudeagle.ai/blogs/1password-pricing-guide
+[^17_2]: <https://www.cloudeagle.ai/blogs/1password-pricing-guide>
 
-[^17_3]: https://allaboutcookies.org/1password-alternatives
+[^17_3]: <https://allaboutcookies.org/1password-alternatives>
 
-[^17_4]: https://minorco.com/blog/1password-features/
+[^17_4]: <https://minorco.com/blog/1password-features/>
 
-[^17_5]: https://www.reddit.com/r/PasswordManagers/comments/1reu4an/1password_increasing_individual_plan_price_from/
+[^17_5]: <https://www.reddit.com/r/PasswordManagers/comments/1reu4an/1password_increasing_individual_plan_price_from/>
 
-[^17_6]: https://www.wizcase.com/blog/best-1password-alternatives/
+[^17_6]: <https://www.wizcase.com/blog/best-1password-alternatives/>
 
-[^17_7]: https://www.securden.com/blog/1password-pricing-review.html
+[^17_7]: <https://www.securden.com/blog/1password-pricing-review.html>
 
-[^17_8]: https://1password.com/pricing/password-manager
+[^17_8]: <https://1password.com/pricing/password-manager>
 
-[^17_9]: https://www.reddit.com/r/PasswordManagers/comments/1hy5vly/alternatives_to_1password/
+[^17_9]: <https://www.reddit.com/r/PasswordManagers/comments/1hy5vly/alternatives_to_1password/>
 
-[^17_10]: https://1password.com/resources/guides/why-1password-is-worth-paying-for/
-
+[^17_10]: <https://1password.com/resources/guides/why-1password-is-worth-paying-for/>
 
 ---
 
@@ -1085,7 +1052,6 @@ llm_api_key = op.read("op://Private/Mistral/API")
 rpc_url = op.read("op://Private/Alchemy/URL")
 ```
 
-
 ## Risk mitigations built-in
 
 - **Secret inheritance**: Emergency access for wife if incapacitated
@@ -1093,7 +1059,6 @@ rpc_url = op.read("op://Private/Alchemy/URL")
 - **Audit logs**: Track which agents accessed which keys
 - **Watchtower**: Flags compromised APIs/wallet addresses
 - **PBKDF2**: Account password takes decades to brute-force [^18_2]
-
 
 ## Better than alternatives for your stack
 
@@ -1109,24 +1074,23 @@ rpc_url = op.read("op://Private/Alchemy/URL")
 
 <div align="center">⁂</div>
 
-[^18_1]: https://www.zdnet.com/finance/blockchain/lose-your-keys-to-your-phantom-crypto-wallet-1password-has-you-covered/
+[^18_1]: <https://www.zdnet.com/finance/blockchain/lose-your-keys-to-your-phantom-crypto-wallet-1password-has-you-covered/>
 
-[^18_2]: https://support.1password.com/1password-security/
+[^18_2]: <https://support.1password.com/1password-security/>
 
-[^18_3]: https://www.prnewswire.com/news-releases/eliminating-crypto-headaches-1password-and-phantom-join-forces-to-make-crypto-security-human-centric-301488365.html
+[^18_3]: <https://www.prnewswire.com/news-releases/eliminating-crypto-headaches-1password-and-phantom-join-forces-to-make-crypto-security-human-centric-301488365.html>
 
-[^18_4]: https://betakit.com/1password-expands-into-crypto-offering-protection-to-crypto-wallet-users/
+[^18_4]: <https://betakit.com/1password-expands-into-crypto-offering-protection-to-crypto-wallet-users/>
 
-[^18_5]: https://www.youtube.com/watch?v=MR1N7p2fKAo
+[^18_5]: <https://www.youtube.com/watch?v=MR1N7p2fKAo>
 
-[^18_6]: https://1password.com/blog/secure-developer-credentials
+[^18_6]: <https://1password.com/blog/secure-developer-credentials>
 
-[^18_7]: https://www.1password.community/blog/developer-blog/keep-your-cryptocurrency-wallet-keys-out-of-env-files/161384
+[^18_7]: <https://www.1password.community/blog/developer-blog/keep-your-cryptocurrency-wallet-keys-out-of-env-files/161384>
 
-[^18_8]: https://www.youtube.com/watch?v=yaUcH-E1d60
+[^18_8]: <https://www.youtube.com/watch?v=yaUcH-E1d60>
 
-[^18_9]: https://1password.com
-
+[^18_9]: <https://1password.com>
 
 ---
 
@@ -1142,7 +1106,6 @@ Perfect for your **research-heavy** stack (AI agents, blockchain, Obsidian Zette
 - **Source citations**: Every claim links back—ideal for academic/journalism work
 - **Thread memory**: Builds on conversation context (like our LangChain → blockchain thread)
 - **Code generation**: Generates Python snippets for rclone configs, agent tools, etc.
-
 
 ## Key 2026 features
 
@@ -1179,26 +1142,25 @@ This conversation itself demonstrates Perplexity's strength: threading complex t
 
 <div align="center">⁂</div>
 
-[^19_1]: https://www.reddit.com/r/perplexity_ai/comments/1dmcf20/what_are_some_use_cases_for_perplexity_ai/
+[^19_1]: <https://www.reddit.com/r/perplexity_ai/comments/1dmcf20/what_are_some_use_cases_for_perplexity_ai/>
 
-[^19_2]: https://blueinteractiveagency.com/seo-blog/2025/08/how-does-perplexity-ai-differ-from-traditional-search-engines/
+[^19_2]: <https://blueinteractiveagency.com/seo-blog/2025/08/how-does-perplexity-ai-differ-from-traditional-search-engines/>
 
-[^19_3]: https://culibraries.creighton.edu/c.php?g=1334271\&p=10213131
+[^19_3]: <https://culibraries.creighton.edu/c.php?g=1334271\&p=10213131>
 
-[^19_4]: https://www.luminodigital.com/blog/how-does-perplexity-ai-differ-from-traditional-search-engines
+[^19_4]: <https://www.luminodigital.com/blog/how-does-perplexity-ai-differ-from-traditional-search-engines>
 
-[^19_5]: https://www.getguru.com/reference/what-is-perplexity-ai-and-how-to-use-it
+[^19_5]: <https://www.getguru.com/reference/what-is-perplexity-ai-and-how-to-use-it>
 
-[^19_6]: https://zapier.com/blog/perplexity-vs-chatgpt/
+[^19_6]: <https://zapier.com/blog/perplexity-vs-chatgpt/>
 
-[^19_7]: https://en.wikipedia.org/wiki/Perplexity_AI
+[^19_7]: <https://en.wikipedia.org/wiki/Perplexity_AI>
 
-[^19_8]: https://www.reddit.com/r/perplexity_ai/comments/1k51p2r/perplexity_vs_other_ai_search_engines_how_it/
+[^19_8]: <https://www.reddit.com/r/perplexity_ai/comments/1k51p2r/perplexity_vs_other_ai_search_engines_how_it/>
 
-[^19_9]: https://www.perplexity.ai/hub/getting-started
+[^19_9]: <https://www.perplexity.ai/hub/getting-started>
 
-[^19_10]: https://seranking.com/blog/chatgpt-vs-perplexity-vs-google-vs-bing-comparison-research/
-
+[^19_10]: <https://seranking.com/blog/chatgpt-vs-perplexity-vs-google-vs-bing-comparison-research/>
 
 ---
 
@@ -1214,7 +1176,6 @@ Researcher Agent → RAG (Mistral + vector DB) → Writer Agent → Reviewer Age
 
 - **Claygent pattern**: Researcher queries Perplexity/web → extracts via LangChain → Writer synthesizes in Obsidian format → Reviewer checks citations
 - **30% faster literature review**, blockchain/AI papers auto-linked [^20_1]
-
 
 ## Blockchain Research Swarm
 
@@ -1236,7 +1197,6 @@ Researcher Agent → RAG (Mistral + vector DB) → Writer Agent → Reviewer Age
 - Designs next experiments autonomously
 - **3x throughput** in chemical compound screening [^20_8]
 
-
 ## IT Support (ServiceNow)
 
 ```
@@ -1253,7 +1213,6 @@ Web3.py tools (blockchain) → rclone (Sia backup) →
 1Password CLI (secrets) → Obsidian (Zettelkasten)
 ```
 
-
 ## Mental Model
 
 **Single agent**: "Write Python code"
@@ -1266,26 +1225,25 @@ Web3.py tools (blockchain) → rclone (Sia backup) →
 
 <div align="center">⁂</div>
 
-[^20_1]: https://weaviate.io/blog/what-are-agentic-workflows
+[^20_1]: <https://weaviate.io/blog/what-are-agentic-workflows>
 
-[^20_2]: https://blog.workday.com/en-us/top-ai-agent-examples-and-industry-use-cases.html
+[^20_2]: <https://blog.workday.com/en-us/top-ai-agent-examples-and-industry-use-cases.html>
 
-[^20_3]: https://www.enthought.com/blog/agentic-ai-is-ready-to-solve-scientific-rds-hard-problems
+[^20_3]: <https://www.enthought.com/blog/agentic-ai-is-ready-to-solve-scientific-rds-hard-problems>
 
-[^20_4]: https://www.exabeam.com/explainers/ai-cyber-security/agentic-ai-how-it-works-and-7-real-world-use-cases/
+[^20_4]: <https://www.exabeam.com/explainers/ai-cyber-security/agentic-ai-how-it-works-and-7-real-world-use-cases/>
 
-[^20_5]: https://www.evidentlyai.com/blog/ai-agents-examples
+[^20_5]: <https://www.evidentlyai.com/blog/ai-agents-examples>
 
-[^20_6]: https://www.mckinsey.com/industries/life-sciences/our-insights/the-synthesis/agentic-ai-unlocking-peak-performance-in-biopharma-development
+[^20_6]: <https://www.mckinsey.com/industries/life-sciences/our-insights/the-synthesis/agentic-ai-unlocking-peak-performance-in-biopharma-development>
 
-[^20_7]: https://www.moveworks.com/us/en/resources/blog/agentic-ai-examples-use-cases
+[^20_7]: <https://www.moveworks.com/us/en/resources/blog/agentic-ai-examples-use-cases>
 
-[^20_8]: https://www.databricks.com/blog/ai-agent-examples-shaping-business-landscape
+[^20_8]: <https://www.databricks.com/blog/ai-agent-examples-shaping-business-landscape>
 
-[^20_9]: https://www.sapiosciences.com/blog/agentic-ai-for-scientific-research-autonomous-agents-transforming-experiment-design/
+[^20_9]: <https://www.sapiosciences.com/blog/agentic-ai-for-scientific-research-autonomous-agents-transforming-experiment-design/>
 
-[^20_10]: https://www.jadasquad.com/blog/top-5-use-cases-for-agentic-workflows
-
+[^20_10]: <https://www.jadasquad.com/blog/top-5-use-cases-for-agentic-workflows>
 
 ---
 
@@ -1351,7 +1309,6 @@ researcher = Agent(
 w3.eth.send_transaction({...})  # Logs agent decision
 ```
 
-
 ## Key Insight
 
 **Blockchain solves agentic AI's trust problem**: Single source of truth for "what did the agent do and why?" Essential for DeFi, compliance, research reproducibility.
@@ -1363,22 +1320,21 @@ This is **your exact workflow**: Perplexity research → Mistral reasoning → W
 
 <div align="center">⁂</div>
 
-[^21_1]: https://www.linkedin.com/pulse/agentic-ai-meets-blockchain-transparent-auditable-automation-qqj8c
+[^21_1]: <https://www.linkedin.com/pulse/agentic-ai-meets-blockchain-transparent-auditable-automation-qqj8c>
 
-[^21_2]: https://www.blockchain-council.org/guide/agentic-ai-guide/
+[^21_2]: <https://www.blockchain-council.org/guide/agentic-ai-guide/>
 
-[^21_3]: https://www.chainalysis.com/blog/ai-and-crypto-agentic-payments/
+[^21_3]: <https://www.chainalysis.com/blog/ai-and-crypto-agentic-payments/>
 
-[^21_4]: https://www.smartcat.com/ai-agents/crypto/
+[^21_4]: <https://www.smartcat.com/ai-agents/crypto/>
 
-[^21_5]: https://www.coinbase.com/developer-platform/discover/launches/agentic-commerce
+[^21_5]: <https://www.coinbase.com/developer-platform/discover/launches/agentic-commerce>
 
-[^21_6]: https://blog.startupstash.com/the-rise-of-agentic-ai-and-blockchain-a-game-changer-for-business-owners-7c8fc94885be
+[^21_6]: <https://blog.startupstash.com/the-rise-of-agentic-ai-and-blockchain-a-game-changer-for-business-owners-7c8fc94885be>
 
-[^21_7]: https://www.reddit.com/r/AI_Agents/comments/1k0hocm/should_ai_agents_be_integrated_with_blockchain/
+[^21_7]: <https://www.reddit.com/r/AI_Agents/comments/1k0hocm/should_ai_agents_be_integrated_with_blockchain/>
 
-[^21_8]: https://beincrypto.com/learn/agentic-finance-explained/
-
+[^21_8]: <https://beincrypto.com/learn/agentic-finance-explained/>
 
 ---
 
@@ -1423,14 +1379,12 @@ blockchain_researcher = Agent(
 )
 ```
 
-
 ## Pricing Sweet Spots
 
 - **Vertex AI**: \$0.10/1M input tokens (Mistral) vs OpenAI's \$5+
 - **Cloud Run**: Free tier 180K vCPU-seconds/mo
 - **BigQuery**: First 1TB queries/mo free
 - **\$300 free credits** for new accounts
-
 
 ## Ties to Your Stack
 
@@ -1449,26 +1403,25 @@ rclone (backup to Sia)
 
 <div align="center">⁂</div>
 
-[^22_1]: https://en.wikipedia.org/wiki/Google_Cloud_Platform
+[^22_1]: <https://en.wikipedia.org/wiki/Google_Cloud_Platform>
 
-[^22_2]: https://www.flexera.com/blog/finops/google-cloud-pricing-the-complete-guide/
+[^22_2]: <https://www.flexera.com/blog/finops/google-cloud-pricing-the-complete-guide/>
 
-[^22_3]: https://www.geeksforgeeks.org/devops/features-of-google-cloud-platform/
+[^22_3]: <https://www.geeksforgeeks.org/devops/features-of-google-cloud-platform/>
 
-[^22_4]: https://www.geeksforgeeks.org/devops/google-cloud-platform-gcp/
+[^22_4]: <https://www.geeksforgeeks.org/devops/google-cloud-platform-gcp/>
 
-[^22_5]: https://cloud.google.com/pricing
+[^22_5]: <https://cloud.google.com/pricing>
 
-[^22_6]: https://docs.cloud.google.com/docs/product-list
+[^22_6]: <https://docs.cloud.google.com/docs/product-list>
 
-[^22_7]: https://play.google.com/store/apps/details?id=com.google.android.apps.cloudconsole\&hl=en_US
+[^22_7]: <https://play.google.com/store/apps/details?id=com.google.android.apps.cloudconsole\&hl=en_US>
 
-[^22_8]: https://cast.ai/blog/google-cloud-pricing-what-you-need-to-know/
+[^22_8]: <https://cast.ai/blog/google-cloud-pricing-what-you-need-to-know/>
 
-[^22_9]: https://cloud.google.com/terms/services
+[^22_9]: <https://cloud.google.com/terms/services>
 
-[^22_10]: https://mind-core.com/blogs/cloud/google-cloud-services-an-overview-and-comparison/
-
+[^22_10]: <https://mind-core.com/blogs/cloud/google-cloud-services-an-overview-and-comparison/>
 
 ---
 
@@ -1503,14 +1456,12 @@ w3 = Web3(Web3.HTTPProvider("https://your-gcp-node-endpoint"))
 balance = w3.eth.get_balance("vitalik.eth")
 ```
 
-
 ## Production Advantages
 
 - **99.99% uptime** vs self-hosted nodes
 - **Auto-scaling** for agent swarms (1000s of concurrent RPC calls)
 - **VPC + Cloud Armor** secures your blockchain research
 - **\$200K credits** for Web3 startups (apply now)
-
 
 ## Ties to Your Full Stack
 
@@ -1539,24 +1490,23 @@ This eliminates your biggest Web3 pain points: node sync crashes, RPC rate limit
 
 <div align="center">⁂</div>
 
-[^23_1]: https://www.youtube.com/watch?v=Bj0EdEKniMM
+[^23_1]: <https://www.youtube.com/watch?v=Bj0EdEKniMM>
 
-[^23_2]: https://bizsoltech.com/google-clouds-web3-solutions/
+[^23_2]: <https://bizsoltech.com/google-clouds-web3-solutions/>
 
-[^23_3]: https://dev.to/favebs/what-is-google-cloud-for-web3-3139
+[^23_3]: <https://dev.to/favebs/what-is-google-cloud-for-web3-3139>
 
-[^23_4]: https://discuss.google.dev/t/web-3-for-gcp/152611
+[^23_4]: <https://discuss.google.dev/t/web-3-for-gcp/152611>
 
-[^23_5]: https://cloud.google.com/web3
+[^23_5]: <https://cloud.google.com/web3>
 
-[^23_6]: https://www.googlecloudpresscorner.com/2022-10-11-Google-Cloud-and-Coinbase-Launch-New-Strategic-Partnership-to-Drive-Web3-Innovation
+[^23_6]: <https://www.googlecloudpresscorner.com/2022-10-11-Google-Cloud-and-Coinbase-Launch-New-Strategic-Partnership-to-Drive-Web3-Innovation>
 
-[^23_7]: https://cloud.google.com/startup/web3
+[^23_7]: <https://cloud.google.com/startup/web3>
 
-[^23_8]: https://docs.cloud.google.com/blockchain-node-engine/docs
+[^23_8]: <https://docs.cloud.google.com/blockchain-node-engine/docs>
 
-[^23_9]: https://cloud.google.com/application/web3/
-
+[^23_9]: <https://cloud.google.com/application/web3/>
 
 ---
 
@@ -1569,23 +1519,22 @@ From the patterns we've built:
 ## Your Architecture (The Vault)
 
 ```
-┌─────────────────────────────────────────────────────────────┐
+┌────────────────────────────────────────────────────────────Ŀ
 │                    ARCHITECT'S VAULT                        │
-├─────────────────┬───────────────────────────────────────────┤
+├─────────────────┬──────────────────────────────────────────Ĵ
 │   KNOWLEDGE     │  Obsidian Zettelkasten + RAG (pgvector)   │
 │   STORAGE       │  → Mistral embeddings → Vector DB        │
-├─────────────────┼───────────────────────────────────────────┤
+├─────────────────┼──────────────────────────────────────────Ĵ
 │   RESEARCH      │  Perplexity → CrewAI swarm →             │
 │   AGENTS        │  LangChain tools (Web3.py, rclone)       │
-├─────────────────┼───────────────────────────────────────────┤
+├─────────────────┼──────────────────────────────────────────Ĵ
 │   BLOCKCHAIN    │  GCP Node Engine → Web3.py → Sia backup  │
 │   LAYER         │  Immutable audit trail of all decisions  │
-├─────────────────┼───────────────────────────────────────────┤
+├─────────────────┼──────────────────────────────────────────Ĵ
 │   SECRETS       │  1Password CLI → Service accounts        │
 │   MANAGEMENT    │  API rotation, inheritance planning      │
 └─────────────────┴───────────────────────────────────────────┘
 ```
-
 
 ## Core Principles
 
@@ -1610,26 +1559,25 @@ The vault exists. It's architected. Ready to build. 🏛️
 
 <div align="center">⁂</div>
 
-[^24_1]: https://www.reddit.com/r/VaultHuntersMinecraft/comments/12sfvcr/architect_vault/
+[^24_1]: <https://www.reddit.com/r/VaultHuntersMinecraft/comments/12sfvcr/architect_vault/>
 
-[^24_2]: https://www.hashicorp.com/en/resources/vault-platform-enterprise-blockchain
+[^24_2]: <https://www.hashicorp.com/en/resources/vault-platform-enterprise-blockchain>
 
-[^24_3]: https://www.antiersolutions.com/blogs/why-defi-vault-infrastructure-is-becoming-core-to-web3-business-models/
+[^24_3]: <https://www.antiersolutions.com/blogs/why-defi-vault-infrastructure-is-becoming-core-to-web3-business-models/>
 
-[^24_4]: https://roguepedia.net/w/Architect's_Vault
+[^24_4]: <https://roguepedia.net/w/Architect's_Vault>
 
-[^24_5]: https://www.youtube.com/watch?v=_2CG3_6gcs0
+[^24_5]: <https://www.youtube.com/watch?v=_2CG3_6gcs0>
 
-[^24_6]: https://www.youtube.com/watch?v=oJ3cHtGNDQo
+[^24_6]: <https://www.youtube.com/watch?v=oJ3cHtGNDQo>
 
-[^24_7]: https://vault.com/professions/architects
+[^24_7]: <https://vault.com/professions/architects>
 
-[^24_8]: https://vault.com/professions/blockchain-developers
+[^24_8]: <https://vault.com/professions/blockchain-developers>
 
-[^24_9]: https://defiprime.com/defi-vaults-guide
+[^24_9]: <https://defiprime.com/defi-vaults-guide>
 
-[^24_10]: https://en.wikipedia.org/wiki/Vault_(architecture)
-
+[^24_10]: <https://en.wikipedia.org/wiki/Vault_(architecture)>
 
 ---
 
@@ -1655,7 +1603,6 @@ The vault exists. It's architected. Ready to build. 🏛️
 - \$2.15B assets, Maryland-based
 - **Financial services, not Web3**
 
-
 ## Your ARCHITECT'S VAULT Context
 
 Given our thread (agentic workflows → blockchain → GCP → 1Password), **LAF-US** is probably:
@@ -1669,13 +1616,12 @@ Given our thread (agentic workflows → blockchain → GCP → 1Password), **LAF
 - "US" = Boise, Idaho operations base
 ```
 
-
 ## Proposed LAF-US Architecture
 
 ```
-┌─ LAF-US (Local Agent Framework) ──────────────────────────┐
+┌─ LAF-US (Local Agent Framework) ─────────────────────────Ŀ
 │  Boise, ID | Agentic Blockchain Research Vault           │
-├─ Agents ──────────────────┬─ Storage ───────────────────┤
+├─ Agents ──────────────────┬─ Storage ──────────────────Ĵ
 │ CrewAI Swarm             │ Obsidian + pgvector (GCP)    │
 │ Mistral Large 3          │ Sia (rclone encrypted)       │
 │ Web3.py tools            │ BigQuery (agent logs)        │
@@ -1689,30 +1635,29 @@ If public org, share more context (GitHub, website) for precise identification. 
 
 <div align="center">⁂</div>
 
-[^25_1]: https://families.lafayette.edu/2017/11/07/what-is-the-lafayette-activities-fourm/
+[^25_1]: <https://families.lafayette.edu/2017/11/07/what-is-the-lafayette-activities-fourm/>
 
-[^25_2]: https://lb.usembassy.gov/us-security-cooperation-with-lebanon/
+[^25_2]: <https://lb.usembassy.gov/us-security-cooperation-with-lebanon/>
 
-[^25_3]: https://en.wikipedia.org/wiki/Lafayette_Federal_Credit_Union
+[^25_3]: <https://en.wikipedia.org/wiki/Lafayette_Federal_Credit_Union>
 
-[^25_4]: https://obamawhitehouse.archives.gov/the-press-office/2013/09/24/fact-sheet-us-security-assistance-lebanon
+[^25_4]: <https://obamawhitehouse.archives.gov/the-press-office/2013/09/24/fact-sheet-us-security-assistance-lebanon>
 
-[^25_5]: https://learningandfamilies.org/what-is-laf/
+[^25_5]: <https://learningandfamilies.org/what-is-laf/>
 
-[^25_6]: https://lb.usembassy.gov/us-security-cooperation-lebanon-2021/
+[^25_6]: <https://lb.usembassy.gov/us-security-cooperation-lebanon-2021/>
 
-[^25_7]: https://spiritofamerica.org/project/assisting-lebanese-armed-forces-laf
+[^25_7]: <https://spiritofamerica.org/project/assisting-lebanese-armed-forces-laf>
 
-[^25_8]: https://www.lebarmy.gov.lb/en/content/us-military-assistance-lebanon-equipping-laf-not-transforming-it
+[^25_8]: <https://www.lebarmy.gov.lb/en/content/us-military-assistance-lebanon-equipping-laf-not-transforming-it>
 
-[^25_9]: https://qifanabki.com/2010/01/12/u-s-military-assistance-and-the-laf/
+[^25_9]: <https://qifanabki.com/2010/01/12/u-s-military-assistance-and-the-laf/>
 
-[^25_10]: https://www.washingtoninstitute.org/policy-analysis/reassessing-us-military-assistance-lebanon
-
+[^25_10]: <https://www.washingtoninstitute.org/policy-analysis/reassessing-us-military-assistance-lebanon>
 
 ---
 
-# https://github.com/LAF-US/PUBLIC
+# <https://github.com/LAF-US/PUBLIC>
 
 **No public GitHub organization or repository exists at `https://github.com/LAF-US/PUBLIC`.**
 
@@ -1730,7 +1675,6 @@ LAF-US = Local Agent Framework - United States (Boise, ID)
 ├── rclone → Sia decentralized backup
 └── Perplexity research integration
 ```
-
 
 ## This conversation IS the blueprint
 
@@ -1761,24 +1705,23 @@ git init
 
 <div align="center">⁂</div>
 
-[^26_1]: https://github.com/IOActive/laf
+[^26_1]: <https://github.com/IOActive/laf>
 
-[^26_2]: https://github.com/labring/laf/security
+[^26_2]: <https://github.com/labring/laf/security>
 
-[^26_3]: https://github.com/mgarin/weblaf
+[^26_3]: <https://github.com/mgarin/weblaf>
 
-[^26_4]: https://github.com/labring/laf/releases
+[^26_4]: <https://github.com/labring/laf/releases>
 
-[^26_5]: https://johnstawinski.com/2024/01/11/playing-with-fire-how-we-executed-a-critical-supply-chain-attack-on-pytorch/
+[^26_5]: <https://johnstawinski.com/2024/01/11/playing-with-fire-how-we-executed-a-critical-supply-chain-attack-on-pytorch/>
 
-[^26_6]: https://github.com/topics/laf?l=c%2B%2B\&o=asc\&s=stars
+[^26_6]: <https://github.com/topics/laf?l=c%2B%2B\&o=asc\&s=stars>
 
-[^26_7]: https://github.com/SSESLab/laf/blob/master/README.md
+[^26_7]: <https://github.com/SSESLab/laf/blob/master/README.md>
 
-[^26_8]: https://www.reddit.com/r/programming/comments/1btc7gw/performance_obsessed_dev_caught_xz_utils_backdoor/
+[^26_8]: <https://www.reddit.com/r/programming/comments/1btc7gw/performance_obsessed_dev_caught_xz_utils_backdoor/>
 
-[^26_9]: https://securityledger.com/2026/03/exposed-developer-secrets-surge-ai-drives-34-increase-in-2025/
-
+[^26_9]: <https://securityledger.com/2026/03/exposed-developer-secrets-surge-ai-drives-34-increase-in-2025/>
 
 ---
 
@@ -1802,7 +1745,6 @@ LAF-US (Your Organization)
 └── DOCS/                      # Architecture decisions
 ```
 
-
 ## Current Status
 
 ✅ **Architecture complete** - Mistral + CrewAI + Web3.py + GCP + 1Password + rclone
@@ -1824,22 +1766,21 @@ LAF-US (Your Organization)
 
 <div align="center">⁂</div>
 
-[^27_1]: https://amistad-finding-aids.tulane.edu/repositories/2/archival_objects/144160
+[^27_1]: <https://amistad-finding-aids.tulane.edu/repositories/2/archival_objects/144160>
 
-[^27_2]: https://acsopenscience.org/customers/acs-sponsored-read-publish-for-puis/
+[^27_2]: <https://acsopenscience.org/customers/acs-sponsored-read-publish-for-puis/>
 
-[^27_3]: https://www.financialresearch.gov/short-term-funding-monitor/datasets/repo/
+[^27_3]: <https://www.financialresearch.gov/short-term-funding-monitor/datasets/repo/>
 
-[^27_4]: https://www.cftc.gov/IndustryOversight/DataRepositories/index.htm
+[^27_4]: <https://www.cftc.gov/IndustryOversight/DataRepositories/index.htm>
 
-[^27_5]: https://www.airforcespecialtactics.af.mil/Portals/80/prototype/assets/joint-pub-jpub-5-0-joint-planning.pdf
+[^27_5]: <https://www.airforcespecialtactics.af.mil/Portals/80/prototype/assets/joint-pub-jpub-5-0-joint-planning.pdf>
 
-[^27_6]: https://data.hrsa.gov/topics/health-workforce/ahrf
+[^27_6]: <https://data.hrsa.gov/topics/health-workforce/ahrf>
 
-[^27_7]: https://www.search.org/resources/isp-list/
+[^27_7]: <https://www.search.org/resources/isp-list/>
 
-[^27_8]: https://www.esd.whs.mil/Portals/54/Documents/FOID/Reading Room/Joint_Staff/18-F-1152_JP_5-0_Joint_Planning_2020.pdf
-
+[^27_8]: <https://www.esd.whs.mil/Portals/54/Documents/FOID/Reading> Room/Joint_Staff/18-F-1152_JP_5-0_Joint_Planning_2020.pdf
 
 ---
 
@@ -1853,7 +1794,6 @@ LAF-US (Your Organization)
 Current: Perplexity → Mistral/CrewAI → Web3.py → Obsidian/Sia
 + Voice: ElevenLabs Agent → Voice commands → Text-to-Agent → Blockchain research → Voice response
 ```
-
 
 ## Key capabilities for your use case
 
@@ -1879,7 +1819,6 @@ voice_agent = ElevenLabsAgent(
 # → Voice parses → CrewAI executes → Spoken summary
 ```
 
-
 ## Production Integration
 
 ```
@@ -1895,7 +1834,6 @@ voice_agent = ElevenLabsAgent(
 ↓
 6. Obsidian (text backup with audio links)
 ```
-
 
 ## Perfect for your Architect's Vault
 
@@ -1926,26 +1864,25 @@ Your vault now speaks. 🗣️🏛️
 
 <div align="center">⁂</div>
 
-[^28_1]: https://elevenlabs.io/agents
+[^28_1]: <https://elevenlabs.io/agents>
 
-[^28_2]: https://elevenlabs.io
+[^28_2]: <https://elevenlabs.io>
 
-[^28_3]: https://www.youtube.com/watch?v=3yMmz56gczg
+[^28_3]: <https://www.youtube.com/watch?v=3yMmz56gczg>
 
-[^28_4]: https://elevenlabs.io/blog/conversational-ai-2-0
+[^28_4]: <https://elevenlabs.io/blog/conversational-ai-2-0>
 
-[^28_5]: https://www.youtube.com/watch?v=0wwDZ5CxZJs
+[^28_5]: <https://www.youtube.com/watch?v=0wwDZ5CxZJs>
 
-[^28_6]: https://www.twilio.com/en-us/blog/developers/tutorials/integrations/build-twilio-voice-elevenlabs-agents-integration
+[^28_6]: <https://www.twilio.com/en-us/blog/developers/tutorials/integrations/build-twilio-voice-elevenlabs-agents-integration>
 
-[^28_7]: https://www.youtube.com/watch?v=x5q02lmUhVM
+[^28_7]: <https://www.youtube.com/watch?v=x5q02lmUhVM>
 
-[^28_8]: https://www.youtube.com/watch?v=dH_rPldsUKw
+[^28_8]: <https://www.youtube.com/watch?v=dH_rPldsUKw>
 
-[^28_9]: https://elevenlabs.io/docs/eleven-agents/overview
+[^28_9]: <https://elevenlabs.io/docs/eleven-agents/overview>
 
-[^28_10]: https://elevenlabs.io/agents/integrations
-
+[^28_10]: <https://elevenlabs.io/agents/integrations>
 
 ---
 
@@ -1997,7 +1934,6 @@ services:
     image: vaultwarden/server:latest
 ```
 
-
 ## Cost Breakdown: \$0/mo
 
 ```
@@ -2010,7 +1946,6 @@ services:
 ✅ rclone + Sia: Free (storage costs ~$2/TB)
 ✅ Obsidian: Free (local Markdown)
 ```
-
 
 ## Perfect LAF-US/PUBLIC Repo Structure
 
@@ -2028,7 +1963,6 @@ LAF-US/PUBLIC/
 │   └── mistral-ollama.yaml
 └── README.md (this exact spec)
 ```
-
 
 ## The Architect's Desire Achieved
 
@@ -2049,24 +1983,23 @@ docker compose up -d
 
 <div align="center">⁂</div>
 
-[^29_1]: https://www.itfirms.co/free-open-source-architecture-software-solutions/
+[^29_1]: <https://www.itfirms.co/free-open-source-architecture-software-solutions/>
 
-[^29_2]: https://www.goodfirms.co/architecture-software/blog/best-free-open-source-architecture-software-solutions
+[^29_2]: <https://www.goodfirms.co/architecture-software/blog/best-free-open-source-architecture-software-solutions>
 
-[^29_3]: https://www.actitime.com/software-for-architects/free-architecture-software
+[^29_3]: <https://www.actitime.com/software-for-architects/free-architecture-software>
 
-[^29_4]: https://www.umake.com/resources/guides/architect-design-software-free
+[^29_4]: <https://www.umake.com/resources/guides/architect-design-software-free>
 
-[^29_5]: https://www.youtube.com/watch?v=9BCX1dT1FTo
+[^29_5]: <https://www.youtube.com/watch?v=9BCX1dT1FTo>
 
-[^29_6]: https://www.cerbos.dev/blog/best-open-source-tools-software-architects
+[^29_6]: <https://www.cerbos.dev/blog/best-open-source-tools-software-architects>
 
-[^29_7]: https://archademia.com/blog/best-free-architecture-software-in-2026/
+[^29_7]: <https://archademia.com/blog/best-free-architecture-software-in-2026/>
 
-[^29_8]: https://www.reddit.com/r/architecture/comments/1823xlk/freeone_purchase_alternatives_to_sketchup_or_revit/
+[^29_8]: <https://www.reddit.com/r/architecture/comments/1823xlk/freeone_purchase_alternatives_to_sketchup_or_revit/>
 
-[^29_9]: https://archiverse27.com/best-free-architecture-software-for-students/
-
+[^29_9]: <https://archiverse27.com/best-free-architecture-software-for-students/>
 
 ---
 
@@ -2081,4 +2014,3 @@ If you want, I can help you interpret what the organization layout suggests, or 
 <div align="center">⁂</div>
 
 [^30_1]: 40596.jpeg
-

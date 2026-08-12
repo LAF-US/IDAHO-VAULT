@@ -24,6 +24,6 @@ Guidance on outdoor recreation under the statewide stay-home order from @Governo
 - https://coronavirus.idaho.gov/recreate-responsibly/
 
 ## Media
-- ![](https://pbs.twimg.com/media/EVv_avxUcAUdKZb.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EVv_avxUcAUdKZb.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1250874769869660160)

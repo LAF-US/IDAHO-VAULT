@@ -16,6 +16,6 @@ related:
 Cooking https://t.co/6jVPibpYsi
 
 ## Media
-- ![](https://pbs.twimg.com/media/GaiCujoboAAbzUr.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/GaiCujoboAAbzUr.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1848871386712051869)

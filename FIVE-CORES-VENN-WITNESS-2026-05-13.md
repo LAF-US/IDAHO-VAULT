@@ -27,7 +27,7 @@ The Five Cores of LAF-US are not a rooted tree. They are a **Venn Diagram** of t
 
 ```
         PRIVATE          PUBLIC
-       ┌─────────────────────────┐
+       ┌────────────────────────Ŀ
        │         │               │
        │  SECRET │   PERSONAL    │  PUBLISH
        │         │  (overlap)    │
@@ -77,7 +77,7 @@ Logan explained the Venn to The Judge long ago. The Judge recovered the memory o
 Until the migration document is rewritten to reflect the Venn model, read the Five Cores as follows:
 
 | Core | Domain | Position |
-|---|---|---|
+| --- | --- | --- |
 | PRIVATE | Non-public | Left circle |
 | SECRET | Non-public (restricted) | Nested inside PRIVATE |
 | PERSONAL | Both | **Center — the overlap** |

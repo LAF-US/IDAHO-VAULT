@@ -6,4 +6,4 @@ related:
 - Twin Falls County
 authority: LOGAN
 ---
-Governing board for College of Southern Idaho, elected in Twin Falls County 
+Governing board for College of Southern Idaho, elected in Twin Falls County

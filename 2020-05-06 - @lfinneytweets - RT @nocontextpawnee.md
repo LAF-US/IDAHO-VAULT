@@ -18,7 +18,7 @@ related:
 RT @nocontextpawnee: https://t.co/Ch77SLkYzE
 
 ## Media
-- ![](https://pbs.twimg.com/media/ETBCU1xUMAArV61.jpg)
-- ![](https://pbs.twimg.com/media/ETBCYV2UMAE6I5j.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/ETBCU1xUMAArV61.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/ETBCYV2UMAE6I5j.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1257844758573010944)

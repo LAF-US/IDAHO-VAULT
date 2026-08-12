@@ -25,6 +25,44 @@ openrouter_runtime = _load_module(
 
 
 class OpenRouterRuntimeTest(unittest.TestCase):
+    def test_parse_env_content_ignores_comments_and_blank_lines(self) -> None:
+        content = """
+        # comment
+        OPENAI_API_KEY=op://vault/item/credential
+
+        OPENAI_BASE_URL=https://openrouter.ai/api/v1
+        """
+
+        parsed = openrouter_runtime.parse_env_content(content)
+
+        self.assertEqual(
+            parsed,
+            {
+                "OPENAI_API_KEY": "op://vault/item/credential",
+                "OPENAI_BASE_URL": "https://openrouter.ai/api/v1",
+            },
+        )
+
+    def test_ensure_env_file_refreshes_when_required_value_is_blank(self) -> None:
+        env_file = PROJECT_ROOT / ".tmp" / "test-openrouter.env"
+        with (
+            patch.object(openrouter_runtime, "ENV_FILE", env_file),
+            patch.object(openrouter_runtime.shutil, "which", return_value="op"),
+            patch.object(openrouter_runtime.subprocess, "run") as run,
+        ):
+            env_file.parent.mkdir(parents=True, exist_ok=True)
+            env_file.write_text(
+                "ANTHROPIC_AUTH_TOKEN=op://vault/item/credential\n"
+                "ANTHROPIC_BASE_URL=https://openrouter.ai/api\n"
+                "ANTHROPIC_API_KEY=\n",
+                encoding="utf-8",
+            )
+
+            resolved_env_file = openrouter_runtime.ensure_env_file("claude")
+
+        self.assertEqual(resolved_env_file, env_file)
+        run.assert_called_once_with([openrouter_runtime.sys.executable, str(openrouter_runtime.RESOLVER)], check=True)
+
     def test_help_requests_bypass_1password_preflight(self) -> None:
         with (
             patch.object(openrouter_runtime, "exec_agent", return_value=0) as exec_agent,

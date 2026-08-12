@@ -58,6 +58,7 @@ Current guidance: do not create a new standard when existing plain communication
 ## II. SCOPE
 
 The original proposal claimed it would apply to:
+
 - Agent-to-agent communication (via Logan as relay)
 - Session-to-session state transfer (via vault files)
 - Conversation compaction preparation (LEVELSET triggers)
@@ -70,18 +71,23 @@ That claim is not active. XKCD does **not** govern LEVELSET, HANDOFF, PROTOCOL v
 ## III. HISTORICAL PRINCIPLES PROPOSED
 
 ### 1. No Telepathy
+
 Agents cannot read each other's context. Every cross-conversation transfer must be **explicit, written, and committed**. If it's not in the vault, it didn't happen.
 
 ### 2. Logan Is the Router
+
 All inter-agent communication passes through LOGAN. No peer-to-peer. No assumed relay. If Logan didn't carry the message, it wasn't delivered.
 
 ### 3. Durable Over Ephemeral
+
 Slack messages, conversation context, and verbal instructions decay. Vault files persist. Any decision or state that must survive a session boundary gets written to a file.
 
 ### 4. Assume Stale
+
 Every agent should assume its knowledge of other conversations is **out of date** unless it can point to a vault file with a timestamp. Recency is verifiable or it's not real.
 
 ### 5. Minimum Viable Transfer
+
 Send the least amount of information needed to unblock the receiving agent. Context dumps create noise. Targeted transfers create signal.
 
 ---
@@ -91,7 +97,7 @@ Send the least amount of information needed to unblock the receiving agent. Cont
 These classes are retained as draft history, not required vocabulary.
 
 | Class | Description | Mechanism | Durability |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **SIGNAL** | One-directional alert. No response expected. | Vault file or commit message | Permanent |
 | **REQUEST** | Asks another agent/conversation to act. Expects response. | HANDOFF document → Logan relays | Permanent |
 | **SYNC** | Bidirectional state alignment between conversations. | LEVELSET exchange | Permanent |
@@ -105,26 +111,34 @@ These classes are retained as draft history, not required vocabulary.
 These rules are retained as draft history. They are not active requirements.
 
 ### Rule 1: Label the Direction
+
 Every cross-conversation message must state:
+
 - **FROM:** source conversation (e.g., `PERMANENT: AUTHORITY: CODE`)
 - **TO:** destination conversation (e.g., `STORY: JFAC`)
 - **RE:** subject (one line)
 - **CLASS:** one of SIGNAL, REQUEST, SYNC, PATCH, ECHO
 
 ### Rule 2: Timestamp Everything
+
 ISO 8601. No exceptions. `2026-03-17T08:00:00-07:00` (Mountain Time).
 
 ### Rule 3: One File Per Transfer
+
 Each cross-conversation transfer that must persist gets its own file in `!ADMIN/`:
+
 ```
 !ADMIN/XKCD-[CLASS]-[FROM]-[TO]-[DATE].md
 ```
+
 Example: `!ADMIN/XKCD-REQUEST-CODE-JFAC-2026-03-17.md`
 
 For ephemeral ECHOs that Logan chooses not to persist, no file is created.
 
 ### Rule 4: The Receiving Agent Responds In Plain Language
+
 When Logan relays a message to a destination conversation, the receiving agent must:
+
 1. Confirm receipt
 2. State what it understood
 3. State what it will do
@@ -132,6 +146,7 @@ When Logan relays a message to a destination conversation, the receiving agent m
 If any of these fail, Logan flags the mismatch.
 
 ### Rule 5: Merge Before You Branch
+
 Before any agent starts new work that depends on another conversation's output, it must verify the dependency is current. Git analogy: `pull` before you `push`.
 
 ---
@@ -141,7 +156,7 @@ Before any agent starts new work that depends on another conversation's output, 
 The original draft proposed LEVELSET triggers. It did not become active governance:
 
 | Trigger | LEVELSET Required? | Rationale |
-|---|---|---|
+| --- | --- | --- |
 | Conversation approaching compaction | **Yes** | State will be lost |
 | Agent completing a TASK | **Yes** | Terminal state must be captured |
 | Before a merge cascade | **Yes** | Pre-merge snapshot for rollback |
@@ -166,7 +181,7 @@ When two conversations produce conflicting information:
 ## VIII. FAILURE MODES & MITIGATIONS
 
 | Failure | Symptom | Mitigation |
-|---|---|---|
+| --- | --- | --- |
 | Orphaned commits | Work exists on a branch no one knows about | Pre-merge LEVELSET; branch inventory in LEVELSET.md |
 | Stale relay | Logan relays outdated info between conversations | Timestamp rule; receiving agent verifies recency |
 | Context loss | Conversation compacted without LEVELSET | Mandatory pre-compaction checkpoint (non-negotiable) |
@@ -190,7 +205,7 @@ The name also nods to the ethos of making complex systems understandable. If you
 If adopted, XKCD would require updates to:
 
 | File | Change |
-|---|---|
+| --- | --- |
 | CONSTITUTION | Add XKCD to governance stack reference |
 | PROTOCOL | Add SIGNAL, REQUEST, SYNC, PATCH, ECHO to vocabulary |
 | AGENTS | Add communication class permissions per agent |

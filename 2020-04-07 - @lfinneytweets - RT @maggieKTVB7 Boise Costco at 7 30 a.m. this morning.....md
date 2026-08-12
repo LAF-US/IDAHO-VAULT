@@ -20,6 +20,6 @@ RT @maggieKTVB7: Boise Costco at 7:30 a.m. this morning.
 Photo: Ken Levy https://t.co/kzFzv85Opr
 
 ## Media
-- ![](https://pbs.twimg.com/media/EVBSmouUMAA4w_b.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EVBSmouUMAA4w_b.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1247596925311791105)

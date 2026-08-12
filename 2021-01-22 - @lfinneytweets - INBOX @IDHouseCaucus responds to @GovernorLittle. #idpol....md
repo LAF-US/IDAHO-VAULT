@@ -26,6 +26,6 @@ related:
 INBOX: @IDHouseCaucus responds to @GovernorLittle. #idpol #idleg #IdahoCOVID19 https://t.co/CCyMBLqwpS
 
 ## Media
-- ![](https://pbs.twimg.com/media/EsXHHalU4AA2Gb_.png)
+- ![alt text needed](https://pbs.twimg.com/media/EsXHHalU4AA2Gb_.png)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1352706237058621440)

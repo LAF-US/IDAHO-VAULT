@@ -179,4 +179,4 @@ You cannot valid-address yourself into existence by filling in your own `*`s.
 
 ---
 
-###### [["The world is quiet here."]]
+###### "The world is quiet here."

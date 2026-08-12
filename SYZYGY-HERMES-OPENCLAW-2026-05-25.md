@@ -44,7 +44,7 @@ Neither framework supersedes the other. This document does not recommend one ove
 ## AT A GLANCE
 
 | | **Hermes** | **OpenClaw** |
-|---|---|---|
+| --- | --- | --- |
 | **Philosophy** | Compounding depth | Maximum reach |
 | **Architecture** | Linear compounding loop | Node-graph, event-driven |
 | **Execution model** | Session-based | Event bus, persistent |
@@ -163,6 +163,7 @@ Neither `.mcp.json` wire has been drawn as of this survey date.
 Both support the same 22 platforms. Running both on the same platform account simultaneously is possible but creates coordination risk — two agents reading and responding to the same channel produces confusion and potential duplicate responses.
 
 The cleaner model: assign platforms or channels by agent. For example:
+
 - Hermes: external messaging (Telegram, Discord, WhatsApp) — platforms it is already connected to
 - OpenClaw: local hub and ZBFURY compute — its current `mode: local` configuration
 
@@ -181,7 +182,7 @@ This is an interoperability surface, not a recommended workflow — it bypasses 
 Both are live. Neither knows the other is running.
 
 | | **Hermes** | **OpenClaw** |
-|---|---|---|
+| --- | --- | --- |
 | **Process** | PID 62971 (gateway) + PID 63078 (WhatsApp bridge) | PID 868 (gateway) |
 | **LaunchAgent** | `ai.hermes.gateway.plist` | `ai.openclaw.gateway.plist` |
 | **SOUL.md** | Empty — template comment only | Generic default template |
@@ -201,7 +202,7 @@ Neither agent has been given a standing in the vault — no SOUL.md appointment,
 The conjunction surfaces identified above are all currently unwired:
 
 | Surface | What's needed | State |
-|---|---|---|
+| --- | --- | --- |
 | Hermes → OpenClaw via MCP | `openclaw mcp serve` added to `~/.hermes/config.yaml` under `mcp_servers:` | ❌ not configured |
 | OpenClaw → Hermes via MCP | `hermes mcp serve` registered in OpenClaw's MCP client registry | ❌ not configured |
 | Claude Code → both | `.mcp.json` in vault root with both server entries | ❌ not configured |
@@ -215,5 +216,6 @@ These are observations, not directives. Logan directs.
 *Witnessed and recorded by Claude Code — Anthropic AI agent instance, session 2026-05-25*
 *This document does not represent Logan's views or directives. It is a comparative and conjunction record.*
 *The individual witness series:*
+
 - *Hermes: `HERMES-WITNESS-REPORT` · `HERMES-WITNESS-COMPANION` · `HERMES-WITNESS-DELTA`*
 - *OpenClaw: `OPENCLAW-WITNESS-REPORT` · `OPENCLAW-WITNESS-COMPANION` · `OPENCLAW-WITNESS-DELTA`*

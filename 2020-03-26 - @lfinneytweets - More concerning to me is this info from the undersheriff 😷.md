@@ -20,7 +20,7 @@ related:
 @RadioDawson @LewistonTribune More concerning to me is this info from the undersheriff 😷 https://t.co/sHpfaHZsKI
 
 ## Media
-- ![](https://pbs.twimg.com/media/EUD9wEaU4AAgxyH.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EUD9wEaU4AAgxyH.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 
