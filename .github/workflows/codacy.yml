@@ -79,8 +79,44 @@ jobs:
           # Docker's name:tag@digest form makes the digest authoritative —
           # so this pins the analyzer image itself, not just the wrapper
           # script, closing the last mutable link (tags can be retagged;
-          # digests cannot). Digest of tag 7.9.25 per Docker Hub.
-          CODACY_ANALYSIS_CLI_VERSION: "7.9.25@sha256:339e0103e28804f9d76aff34503e505440e5d5b42f5dd70dae73b592ea87826a"
+          # digests cannot). Digest of tag 7.10.1 per Docker Hub.
+          #
+          # BUMPED FROM 7.9.25 TO CHASE THE SARIF CRASH. 7.9.25 died on every
+          # run of this workflow — 100% of them — like this:
+          #
+          #   java.nio.charset.MalformedInputException: Input length = 1
+          #     at java.nio.file.Files.readAllLines(Files.java:3205)
+          #     at ...formatter.Sarif.$anonfun$createResults$3(Sarif.scala:149)
+          #
+          # Sarif.createResults reads each matched issue's source file with the
+          # JVM default charset to compute a location hash. This repository has
+          # 21 tracked files that are not valid UTF-8 (13 true binaries, plus
+          # cp1252/utf-16 text). One undecodable byte in a file some tool
+          # reported an issue on kills the whole run AFTER analysis succeeded —
+          # and the JVM exits without reaping the docker child, so the job then
+          # hangs until the 25-minute timeout cancels it. A cancelled check is
+          # not a passing one, which is why every PR sat un-mergeable.
+          #
+          # Excluding those files was tried before, in .codacy.yml, and did not
+          # work: the list matched all 21 and the crash happened anyway
+          # (846472e34). That file was deleted at Logan's direction, ending
+          # "Do not re-add it" — the exclusion made the problem look handled
+          # while the defect sat untouched. So this does not re-add a list.
+          #
+          # UNVERIFIED HERE, ON PURPOSE, AND SAY SO: docker is unavailable in
+          # the environment this was written in, so whether 7.10.1 fixes
+          # Sarif.scala could not be tested locally. CI is the test. If the
+          # next run of this workflow still throws MalformedInputException,
+          # this bump is disproved and the remaining levers are dropping
+          # --format sarif, or retiring this workflow because the separate
+          # "Codacy Static Code Analysis" cloud check already passes on every
+          # PR and posts independently of it.
+          #
+          # The wrapper script stays pinned at the 7.9.25 commit deliberately.
+          # It is version-agnostic: line 46 interpolates
+          # CODACY_ANALYSIS_CLI_VERSION into the image reference and nothing
+          # else, and its pinned SHA-256 still matches. No skew.
+          CODACY_ANALYSIS_CLI_VERSION: "7.10.1@sha256:d412b2a84e72d0b541e29dd6cdffa78a73afcf35d8aa546988cd2a44edaab15c"
           CODACY_PROJECT_TOKEN: ${{ secrets.CODACY_PROJECT_TOKEN }}
           # On pull_request events GITHUB_SHA is the synthetic merge commit;
           # results must be associated with the PR head, as the upstream
