@@ -216,7 +216,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 470.5
+    "width": 365.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -251,7 +251,9 @@
       "desk:Create new desk": true,
       "obsidian-5e-statblocks:Open Creature pane": true,
       "handwritten-notes:Create empty handwritten note": true,
-      "map-of-content:Update Map of Content": false
+      "map-of-content:Update Map of Content": false,
+      "periodic-notes:Open today": false,
+      "calendarium:Open Calendarium": false
     }
   },
   "active": "040a6ca42d7b6230",
