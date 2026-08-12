@@ -1,9 +1,11 @@
 ---
 authority: LOGAN
 related:
-- .codacy/codacy.yaml
-- .codacy.yml
-- .github/workflows/codacy.yml
+  - CODACY
+  - imported_software
+  - runtime
 ---
 
-[ ? ]
+**.codacy** — Imported software runtime persona.
+
+codacy runtime and configuration.
