@@ -75,3 +75,4 @@ pubring*
 !.gitignore
 !/.*/stub.txt
 !/**.md
+.copilot/data.db-wal
