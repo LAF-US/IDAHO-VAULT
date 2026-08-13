@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "629bcb4b680c8def",
+        "id": "b69275dfc07389f4",
         "type": "tabs",
         "children": [
           {
-            "id": "017004727d6458c0",
+            "id": "a0cd341b107567fb",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -36,7 +36,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "byModifiedTime",
+                "sortOrder": "alphabetical",
                 "autoReveal": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -172,7 +172,7 @@
             "state": {
               "type": "Strange New Worlds",
               "state": {},
-              "icon": "file-digit",
+              "icon": "lucide-ghost",
               "title": "Strange New Worlds"
             }
           },
@@ -182,8 +182,8 @@
             "state": {
               "type": "map-of-content",
               "state": {},
-              "icon": "stacked-levels",
-              "title": "Map of Content"
+              "icon": "lucide-ghost",
+              "title": "map-of-content"
             }
           },
           {
@@ -192,8 +192,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "icon": "lucide-ghost",
+              "title": "git-view"
             }
           },
           {
@@ -202,8 +202,8 @@
             "state": {
               "type": "DICE_ROLLER_VIEW",
               "state": {},
-              "icon": "dices",
-              "title": "Dice Tray"
+              "icon": "lucide-ghost",
+              "title": "DICE_ROLLER_VIEW"
             }
           }
         ],
@@ -215,13 +215,8 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "smart-connections:Smart Connections: Open connections view": true,
-      "smart-connections:Toggle Footer Connections": true,
-      "smart-connections:Smart Connections: Open random connection": true,
       "daily-notes:Open today's daily note": true,
       "switcher:Open quick switcher": false,
-      "omnisearch:Omnisearch": false,
-      "smart-lookup:Smart Lookup: Open lookup view": false,
       "command-palette:Open command palette": false,
       "graph:Open graph view": false,
       "random-note:Open random note": false,
@@ -232,27 +227,12 @@
       "templates:Insert template": false,
       "audio-recorder:Start/stop recording": false,
       "bases:Create new base": true,
-      "zk-prefixer:Create new unique note": false,
-      "obisidian-note-linker:Note Linker": true,
-      "homepage:Open homepage": true,
-      "obsidian-kanban:Create new board": true,
-      "templater-obsidian:Templater": true,
-      "obsidian-git:Open Git source control": true,
-      "vault-inspector:Run scan": true,
-      "obsidian-full-calendar:Open Full Calendar": true,
-      "obsidian-advanced-slides:Show Slide Preview": true,
-      "table-editor-obsidian:Advanced Tables Toolbar": true,
-      "obsidian42-brat:BRAT": true,
-      "desk:Create new desk": true,
-      "obsidian-5e-statblocks:Open Creature pane": true,
-      "handwritten-notes:Create empty handwritten note": true,
-      "map-of-content:Update Map of Content": false,
-      "periodic-notes:Open today": false,
-      "calendarium:Open Calendarium": false
+      "zk-prefixer:Create new unique note": false
     }
   },
-  "active": "017004727d6458c0",
+  "active": "d2f54bd4617e6d08",
   "lastOpenFiles": [
+    "2026-08-12.md",
     "Jackson Lake dam (5).md",
     "Jackson Hole (3).md",
     "Jack Riggs (3).md",
@@ -281,7 +261,6 @@
     "IZM (3).md",
     "IZL (3).md",
     "IZK (3).md",
-    "IZJ (3).md",
     "item (4).pitem",
     "ITD-Address (3).pdf",
     "IRWEB (3).txt",

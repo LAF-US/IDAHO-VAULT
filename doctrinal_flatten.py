@@ -264,7 +264,7 @@ def main() -> int:
     parser.add_argument("--repo-root", default=".", help="Path to the vault root")
     parser.add_argument(
         "--manifest",
-        default=f"!/RESTRUCTURE-MANIFEST-{date.today().isoformat()}.jsonl",
+        default=f"RESTRUCTURE-MANIFEST-{date.today().isoformat()}.jsonl",
         help="Manifest path relative to repo root",
     )
     args = parser.parse_args()
