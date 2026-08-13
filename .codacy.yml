@@ -1,6 +1,6 @@
 ---
-# The vendored SRD is an immutable, attributed CC BY 4.0 reference snapshot.
-# It is not repository-maintained application source and must not be reformatted
-# to satisfy Markdown style analysis.
-exclude_paths:
-  - "DND-SRD-5.2.1/**"
+# The Vault is primarily a knowledge corpus. Markdown quality style is managed
+# through its own curation and repository checks rather than Codacy analysis.
+languages:
+  markdown:
+    enabled: false
