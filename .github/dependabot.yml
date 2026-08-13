@@ -7,14 +7,14 @@ updates:
   # and opens a review PR; leaf-by-leaf updates can break resolved CrewAI,
   # click, mcp, and OpenTelemetry dependency families.
 
-  # Dependabot's cron parser supports the Fugit modulo extension: mon%2 means
-  # every second Monday. This is a proposal-only lane; normal review and branch
+  # Dependabot's cron parser supports the Fugit modulo extension: thu%2 means
+  # every second Thursday. This is a proposal-only lane; normal review and branch
   # protection remain the authorization boundary.
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "cron"
-      cronjob: "0 9 * * mon%2"
+      cronjob: "0 12 * * thu%2"
       timezone: "America/Denver"
     open-pull-requests-limit: 5
     allow:
@@ -26,6 +26,6 @@ updates:
     directory: "/"
     schedule:
       interval: "cron"
-      cronjob: "0 9 * * mon%2"
+      cronjob: "0 12 * * thu%2"
       timezone: "America/Denver"
     open-pull-requests-limit: 1

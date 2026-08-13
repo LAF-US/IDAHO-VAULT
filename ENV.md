@@ -31,6 +31,6 @@ uv venv .venv
 uv sync
 ```
 
-The scheduled dependency workflow runs `uv lock --upgrade`, then regenerates `requirements.txt` with `uv export`. It opens a review PR when either artifact changes. Dependabot maintains GitHub Actions and Git submodule pins on a biweekly proposal cadence; a submodule PR advances only its gitlink and does not replace a vendored reference snapshot. Review and branch protections remain the authority for accepting any proposed update.
+The scheduled dependency workflow runs `uv lock --upgrade`, then regenerates `requirements.txt` with `uv export`. It opens a review PR when either artifact changes. Dependabot maintains GitHub Actions and Git submodule pins every other Thursday at noon America/Denver; a submodule PR advances only its gitlink and does not replace a vendored reference snapshot. Review and branch protections remain the authority for accepting any proposed update.
 
 Keep real API keys out of tracked files. Prefer `op://...` 1Password references in `.op/openrouter.env`.
