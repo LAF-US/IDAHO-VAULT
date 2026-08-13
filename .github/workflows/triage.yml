@@ -19,27 +19,25 @@ jobs:
     permissions:
       contents: read
       issues: read
-      id-token: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           fetch-depth: 0
           persist-credentials: false
 
-      - uses: withastro/triagebot-action@v1
+      - uses: withastro/triagebot-action@0e37f3db18d8f5b3e8b310c52cdcc9cf2b5d22b1 # v0.4.0
         with:
-          # NOTE: Secret names can be renamed to match existing repository secrets.
-          # Current names: BOT_GITHUB_TOKEN, ANTHROPIC_API_KEY
-          # Existing alternatives in this repo: GITHUB_TOKEN, MERGE_QUEUE_TOKEN,
-          # CLAUDE_APP_PRIVATE_KEY, CODEX_APP_PRIVATE_KEY, MISTRAL_APP_PRIVATE_KEY, OPENCODE_API_KEY
+          # MERGE_QUEUE_TOKEN is the Vault's established write credential for
+          # agent-driven GitHub operations. ANTHROPIC_API_KEY must be configured
+          # separately; no existing LLM secret is known to be Anthropic-compatible.
           read-token: ${{ secrets.GITHUB_TOKEN }}
-          write-token: ${{ secrets.BOT_GITHUB_TOKEN }}
+          write-token: ${{ secrets.MERGE_QUEUE_TOKEN }}
           anthropic-api-key: ${{ secrets.ANTHROPIC_API_KEY }}
-          triage-skill: .agents/skills/triage
-          pr-skill: .agents/skills/pr-writer
+          triage-skill: .triagebot/skills/triage
+          pr-skill: .triagebot/skills/pr-writer
           auto-pr-on-fix: false
           bot-logins: ""
-          
+
           # Label customization - using defaults for now
           label-needs-triage: 'triage: needs triage'
           label-not-actionable: 'triage: not actionable'
