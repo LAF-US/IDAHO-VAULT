@@ -1,0 +1,4 @@
+---
+title: _TEMPLATE_NOTE_DAILY
+template: _TEMPLATE_NOTE_DAILY
+---
