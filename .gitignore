@@ -81,3 +81,14 @@ Temporary Items
 
 # 
 
+/.scoop/apps
+/.vscode/cli/servers
+/.scoop/shims
+/.scoop/cache
+/.vscode/extensions
+/.vscode/cli
+/.vscode-shared
+/.codex/plugins/cache
+/.codex/tmp
+/.codex/cache
+/.vscode-shared/sharedStorage

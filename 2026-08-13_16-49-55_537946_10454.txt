@@ -1,0 +1,206 @@
+# Terminal Full Output
+# Terminal: pr_971_monitor
+# Command: gh pr view 971 --repo LAF-US/IDAHO-VAULT --json url,state,updatedAt,mergeStateStatus,reviewDecision,comments,reviews,statusCheckRollup --jq '{url,state,updatedAt,mergeStateStatus,reviewDecision,comments: [.comments[] | {author: .author.login, createdAt, body}], reviews: [.reviews[] | {author: .author.login, state, submittedAt, body}], checks: [.statusCheckRollup[] | {name, status, conclusion}]}'
+# PID: 10454
+# Timestamp: 2026-08-13_16-49-55.537946
+# Original Length: 28902 characters
+# ----------------------------------------
+
+[32mubuntu@sandbox:~$ [0mgh pr view 971 --repo LAF-US/IDAHO-VAULT --json url,state,updatedAt,mergeStateStatus,reviewDecision,comments,reviews,statusCheckRollup --jq '{url,state,updatedAt,mergeStateStatus,reviewDecision,comments: [.comments[] | {author: .author.login, createdAt, body}], reviews: [.reviews[] | {author: .author.login, state, submittedAt, body}], checks: [.statusCheckRollup[] | {name, status, conclusion}]}'
+[0m^[]11;rgb:0000/0000/0000^[\^[]11;rgb:0000/0000/0101^G^[[9;1R[1;38m{
+[m  [1;34m"checks"[m[1;38m:[m [1;38m[
+[m    [1;38m{
+[m      [1;34m"conclusion"[m[1;38m:[m [32m"FAILURE"[m[1;38m,
+[m      [1;34m"name"[m[1;38m:[m [32m"Analyze (javascript-typescript)"[m[1;38m,
+[m      [1;34m"status"[m[1;38m:[m [32m"COMPLETED"
+[m    [1;38m}[m[1;38m,
+[m    [1;38m{
+[m      [1;34m"conclusion"[m[1;38m:[m [32m"SKIPPED"[m[1;38m,
+[m      [1;34m"name"[m[1;38m:[m [32m"engage"[m[1;38m,
+[m      [1;34m"status"[m[1;38m:[m [32m"COMPLETED"
+[m    [1;38m}[m[1;38m,
+[m    [1;38m{
+[m      [1;34m"conclusion"[m[1;38m:[m [32m"SKIPPED"[m[1;38m,
+[m      [1;34m"name"[m[1;38m:[m [32m"engage"[m[1;38m,
+[m      [1;34m"status"[m[1;38m:[m [32m"COMPLETED"
+[m    [1;38m}[m[1;38m,
+[m    [1;38m{
+[m      [1;34m"conclusion"[m[1;38m:[m [32m"SKIPPED"[m[1;38m,
+[m      [1;34m"name"[m[1;38m:[m [32m"engage"[m[1;38m,
+[m      [1;34m"status"[m[1;38m:[m [32m"COMPLETED"
+[m    [1;38m}[m[1;38m,
+[m    [1;38m{
+[m      [1;34m"conclusion"[m[1;38m:[m [32m"SKIPPED"[m[1;38m,
+[m      [1;34m"name"[m[1;38m:[m [32m"acknowledge-copilot-apply"[m[1;38m,
+[m      [1;34m"status"[m[1;38m:[m [32m"COMPLETED"
+[m    [1;38m}[m[1;38m,
+[m    [1;38m{
+[m      [1;34m"conclusion"[m[1;38m:[m [32m"SUCCESS"[m[1;38m,
+[m      [1;34m"name"[m[1;38m:[m [32m"Analyze (actions)"[m[1;38m,
+[m      [1;34m"status"[m[1;38m:[m [32m"COMPLETED"
+[m    [1;38m}[m[1;38m,
+[m    [1;38m{
+[m      [1;34m"conclusion"[m[1;38m:[m [32m"FAILURE"[m[1;38m,
+[m      [1;34m"name"[m[1;38m:[m [32m"Analyze (javascript-typescript)"[m[1;38m,
+[m      [1;34m"status"[m[1;38m:[m [32m"COMPLETED"
+[m    [1;38m}[m[1;38m,
+[m    [1;38m{
+[m      [1;34m"conclusion"[m[1;38m:[m [32m"SUCCESS"[m[1;38m,
+[m      [1;34m"name"[m[1;38m:[m [32m"Analyze (python)"[m[1;38m,
+[m      [1;34m"status"[m[1;38m:[m [32m"COMPLETED"
+[m    [1;38m}[m[1;38m,
+[m    [1;38m{
+[m      [1;34m"conclusion"[m[1;38m:[m [32m"SUCCESS"[m[1;38m,
+[m      [1;34m"name"[m[1;38m:[m [32m"Analyze (python)"[m[1;38m,
+[m      [1;34m"status"[m[1;38m:[m [32m"COMPLETED"
+[m    [1;38m}[m[1;38m,
+[m    [1;38m{
+[m      [1;34m"conclusion"[m[1;38m:[m [32m"SUCCESS"[m[1;38m,
+[m      [1;34m"name"[m[1;38m:[m [32m"sweep-review-threads"[m[1;38m,
+[m      [1;34m"status"[m[1;38m:[m [32m"COMPLETED"
+[m    [1;38m}[m[1;38m,
+[m    [1;38m{
+[m      [1;34m"conclusion"[m[1;38m:[m [32m"SKIPPED"[m[1;38m,
+[m      [1;34m"name"[m[1;38m:[m [32m"verify-agent-claims"[m[1;38m,
+[m      [1;34m"status"[m[1;38m:[m [32m"COMPLETED"
+[m    [1;38m}[m[1;38m,
+[m    [1;38m{
+[m      [1;34m"conclusion"[m[1;38m:[m [32m"ACTION_REQUIRED"[m[1;38m,
+[m      [1;34m"name"[m[1;38m:[m [32m"Codacy Static Code Analysis"[m[1;38m,
+[m      [1;34m"status"[m[1;38m:[m [32m"COMPLETED"
+[m    [1;38m}[m[1;38m,
+[m    [1;38m{
+[m      [1;34m"conclusion"[m[1;38m:[m [36mnull[m[1;38m,
+[m      [1;34m"name"[m[1;38m:[m [36mnull[m[1;38m,
+[m      [1;34m"status"[m[1;38m:[m [36mnull
+[m    [1;38m}[m[1;38m,
+[m    [1;38m{
+[m      [1;34m"conclusion"[m[1;38m:[m [32m"NEUTRAL"[m[1;38m,
+[m      [1;34m"name"[m[1;38m:[m [32m"CodeQL"[m[1;38m,
+[m      [1;34m"status"[m[1;38m:[m [32m"COMPLETED"
+[m    [1;38m}[m[1;38m,
+[m    [1;38m{
+[m      [1;34m"conclusion"[m[1;38m:[m [32m"SKIPPED"[m[1;38m,
+[m      [1;34m"name"[m[1;38m:[m [32m"Sourcery review"[m[1;38m,
+[m      [1;34m"status"[m[1;38m:[m [32m"COMPLETED"
+[m    [1;38m}[m[1;38m,
+[m    [1;38m{
+[m      [1;34m"conclusion"[m[1;38m:[m [32m"SUCCESS"[m[1;38m,
+[m      [1;34m"name"[m[1;38m:[m [32m".github/dependabot.yml"[m[1;38m,
+[m      [1;34m"status"[m[1;38m:[m [32m"COMPLETED"
+[m    [1;38m}[m[1;38m,
+[m    [1;38m{
+[m      [1;34m"conclusion"[m[1;38m:[m [32m"SUCCESS"[m[1;38m,
+[m      [1;34m"name"[m[1;38m:[m [32m"Aikido Security: check code"[m[1;38m,
+[m      [1;34m"status"[m[1;38m:[m [32m"COMPLETED"
+[m    [1;38m}[m[1;38m,
+[m    [1;38m{
+[m      [1;34m"conclusion"[m[1;38m:[m [32m"SUCCESS"[m[1;38m,
+[m      [1;34m"name"[m[1;38m:[m [32m"GitGuardian Security Checks"[m[1;38m,
+[m      [1;34m"status"[m[1;38m:[m [32m"COMPLETED"
+[m    [1;38m}[m[1;38m,
+[m    [1;38m{
+[m      [1;34m"conclusion"[m[1;38m:[m [36mnull[m[1;38m,
+[m      [1;34m"name"[m[1;38m:[m [36mnull[m[1;38m,
+[m      [1;34m"status"[m[1;38m:[m [36mnull
+[m    [1;38m}[m[1;38m,
+[m    [1;38m{
+[m      [1;34m"conclusion"[m[1;38m:[m [32m"SUCCESS"[m[1;38m,
+[m      [1;34m"name"[m[1;38m:[m [32m"semgrep-cloud-platform/scan"[m[1;38m,
+[m      [1;34m"status"[m[1;38m:[m [32m"COMPLETED"
+[m    [1;38m}
+[m  [1;38m][m[1;38m,
+[m  [1;34m"comments"[m[1;38m:[m [1;38m[
+[m    [1;38m{
+[m      [1;34m"author"[m[1;38m:[m [32m"tenki-reviewer"[m[1;38m,
+[m      [1;34m"body"[m[1;38m:[m [32m"Insufficient balance to process this code review. Please add funds or upgrade your plan in [billing](https://app.tenki.cloud/billing)."[m[1;38m,
+[m      [1;34m"createdAt"[m[1;38m:[m [32m"2026-08-13T16:43:15Z"
+[m    [1;38m}[m[1;38m,
+[m    [1;38m{
+[m      [1;34m"author"[m[1;38m:[m [32m"qodo-code-review"[m[1;38m,
+[m      [1;34m"body"[m[1;38m:[m [32m"<!-- qodo:billing-blocked -->\n\n**ⓘ Qodo reviews are paused because the subscription is no longer active.** Ask your workspace admin to reactivate the subscription to resume reviews. [Manage billing](https://app.qodo.ai/account/billing/manage-subscription?traffic_source=pr_comment)"[m[1;38m,
+[m      [1;34m"createdAt"[m[1;38m:[m [32m"2026-08-13T16:43:19Z"
+[m    [1;38m}[m[1;38m,
+[m    [1;38m{
+[m      [1;34m"author"[m[1;38m:[m [32m"sourcery-ai"[m[1;38m,
+[m      [1;34m"body"[m[1;38m:[m [32m"<!-- Generated by sourcery-ai[bot]: start review_guide -->\n\n## Reviewer's Guide\n\nThis PR replaces the bootstrap CrewAI shard with a 5Wizards Council crew wired via agents/tasks YAML, simplifies the CLI entrypoint to run that council, and introduces D&D SRD 5.2.1 as a vendored markdown reference with governance, dependency-contract documentation, and biweekly Dependabot/submodule update automation.\n\n#### Sequence diagram for 5Wizards Council CLI execution\n\n```mermaid\nseque
+nceDiagram\n    actor Operator\n    participant cli_main as idaho_vault_main\n    participant council as FiveWizardsCouncil\n    participant crew as Crew\n\n    Operator->>cli_main: run()\n    cli_main->>council: FiveWizardsCouncil()\n    cli_main->>council: crew()\n    council->>crew: construct Crew(agents,tasks,Process.hierarchical,manager_agent)\n    cli_main->>crew: kickoff(inputs)\n    crew-->>Operator: inquiry and adjudication output\n```\n\n### File-Level Changes\n\n| Change | Details | F
+iles |\n| ------ | ------- | ----- |\n| Replace the bootstrap validation crew with a 5Wizards Council CrewAI project wired through agents and tasks configuration files. | <ul><li>Remove the IdahoVaultBootstrapCrew implementation and StaticValidationLLM usage.</li><li>Introduce a @CrewBase FiveWizardsCouncil class with agent and task factory methods.</li><li>Wire agents and tasks via config/agents.yaml and config/tasks.yaml instead of hard-coded definitions.</li><li>Configure hierarchical crew pr
+ocess with a manager agent (how_wizard) and council agents.</li><li>Update crew topology documentation in the CrewAI manifest to mention the new dependency and update model.</li></ul> | `src/idaho_vault/crew.py`<br/>`src/idaho_vault/config/agents.yaml`<br/>`src/idaho_vault/config/tasks.yaml`<br/>`.crewai/MANIFEST.md` |\n| Simplify the CLI entrypoint to invoke the 5Wizards Council on a fixed topic, removing earlier multi-command bootstrap/test tooling. | <ul><li>Strip out argparse-based subcomman
+ds (test, five_wizards_threshold, civic_scaffold, metadata_survey, etc.).</li><li>Remove Windows UTF-8 stdio forcing, vault runtime configuration, and bootstrap contract/report wiring.</li><li>Define a minimal run() function that builds inputs and kicks off FiveWizardsCouncil().crew().kickoff.</li><li>Ensure __main__ guard invokes the new run() entrypoint.</li></ul> | `src/idaho_vault/main.py` |\n| Vendor the D&D SRD 5.2.1 content locally as markdown and document it along with upstream traceabil
+ity and governance. | <ul><li>Add a large Monsters A–Z markdown snapshot under DND-SRD-5.2.1/ as CC BY 4.0 content.</li><li>Add gameplay toolbox and changelog markdown files describing mechanics and SRD packaging.</li><li>Add a first-congress/framework governance note aligning AI frameworks with vault institutions.</li><li>Declare a git submodule for DND-SRD-5.2.1-UPSTREAM in .gitmodules, pinning upstream provenance.</li></ul> | `DND-SRD-5.2.1/monsters-A-Z.md`<br/>`DND-SRD-5.2.1/gameplay-toolbox
+.md`<br/>`DND-SRD-5.2.1/CHANGELOG.md`<br/>`!/FIRST-CONGRESS-AND-EXPANDED-FRAMEWORKS.md`<br/>`.gitmodules` |\n| Clarify the Python dependency contract and align documentation and automation with uv-centered workflow and scheduled updates. | <ul><li>Document pyproject.toml as the source of truth for direct dependencies, uv.lock as the canonical resolved graph, and requirements.txt as a generated export in ENV.md and the CrewAI manifest.</li><li>Describe the scheduled dependency workflow that runs 
+uv lock --upgrade and uv export, opening PRs for changes.</li><li>Update Dependabot configuration to use biweekly cron-based proposals for GitHub Actions and gitsubmodule ecosystems on America/Denver Thursdays.</li><li>Note that no update PRs auto-merge and that submodule proposals move only the gitlink, not the vendored SRD snapshot.</li></ul> | `ENV.md`<br/>`.crewai/MANIFEST.md`<br/>`.github/dependabot.yml` |\n\n---\n\n<details>\n<summary>Tips and commands</summary>\n\n#### Interacting with So
+urcery\n\n- **Trigger a new review:** Comment `@sourcery-ai review` on the pull request.\n- **Continue discussions:** Reply directly to Sourcery's review comments.\n- **Generate a GitHub issue from a review comment:** Ask Sourcery to create an\n  issue from a review comment by replying to it. You can also reply to a\n  review comment with `@sourcery-ai issue` to create an issue from it.\n- **Generate a pull request title:** Write `@sourcery-ai` anywhere in the pull\n  request title to generate a
+ title at any time. You can also comment\n  `@sourcery-ai title` on the pull request to (re-)generate the title at any time.\n- **Generate a pull request summary:** Write `@sourcery-ai summary` anywhere in\n  the pull request body to generate a PR summary at any time exactly where you\n  want it. You can also comment `@sourcery-ai summary` on the pull request to\n  (re-)generate the summary at any time.\n- **Generate reviewer's guide:** Comment `@sourcery-ai guide` on the pull\n  request to (re-
+)generate the reviewer's guide at any time.\n- **Resolve all Sourcery comments:** Comment `@sourcery-ai resolve` on the\n  pull request to resolve all Sourcery comments. Useful if you've already\n  addressed all the comments and don't want to see them anymore.\n- **Dismiss all Sourcery reviews:** Comment `@sourcery-ai dismiss` on the pull\n  request to dismiss all existing Sourcery reviews. Especially useful if you\n  want to start fresh with a new review - don't forget to comment\n  `@sourcery-
+ai review` to trigger a new review!\n\n#### Customizing Your Experience\n\nAccess your [dashboard](https://app.sourcery.ai) to:\n- Enable or disable review features such as the Sourcery-generated pull request\n  summary, the reviewer's guide, and others.\n- Change the review language.\n- Add, remove or edit custom review instructions.\n- Adjust other review settings.\n\n#### Getting Help\n\n- [Contact our support team](mailto:support@sourcery.ai) for questions or feedback.\n- Visit our [document
+ation](https://docs.sourcery.ai) for detailed guides and information.\n- Keep in touch with the Sourcery team by following us on [X/Twitter](https://x.com/SourceryAI), [LinkedIn](https://www.linkedin.com/company/sourcery-ai/) or [GitHub](https://github.com/sourcery-ai).\n\n</details>\n\n<!-- Generated by sourcery-ai[bot]: end review_guide -->"[m[1;38m,
+[m      [1;34m"createdAt"[m[1;38m:[m [32m"2026-08-13T16:44:09Z"
+[m    [1;38m}[m[1;38m,
+[m    [1;38m{
+[m      [1;34m"author"[m[1;38m:[m [32m"coderabbitai"[m[1;38m,
+[m      [1;34m"body"[m[1;38m:[m [32m"<!-- This is an auto-generated comment: summarize by coderabbit.ai -->\n<!-- review_stack_entry_start -->\n\n[![Review Change Stack](https://storage.googleapis.com/coderabbit_public_assets/review-stack-in-coderabbit-ui.svg)](https://app.coderabbit.ai/change-stack/LAF-US/IDAHO-VAULT/pull/971?utm_source=github_walkthrough&utm_medium=github&utm_campaign=change_stack)\n\n<!-- review_stack_entry_end -->\n<!-- This is an auto-generated comment: review in progress by coderabbit.ai -->\n\
+n> [!NOTE]\n> Currently processing new changes in this PR. This may take a few minutes, please wait...\n> \n> <details>\n> <summary>⚙️ Run configuration</summary>\n> \n> **Configuration used**: Path: .coderabbit.yaml\n> \n> **Review profile**: CHILL\n> \n> **Plan**: Pro Plus\n> \n> **Run ID**: `d0615f46-5554-4d43-b2c5-3dba0f68f7cc`\n> \n> </details>\n> \n> <details>\n> <summary>📥 Commits</summary>\n> \n> Reviewing files that changed from the base of the PR and between 2e5356f6d8f8b97c00a3c02a222
+f8cc3dace2f17 and 5c2be040b073ec133a1e2de0c218907f17bdf69b.\n> \n> </details>\n> \n> <details>\n> <summary>📒 Files selected for processing (61)</summary>\n> \n> * `!/FIRST-CONGRESS-AND-EXPANDED-FRAMEWORKS.md`\n> * `!/VAULT-RESEARCH-SUMMARY.md`\n> * `.crewai/MANIFEST.md`\n> * `.github/dependabot.yml`\n> * `.gitmodules`\n> * `5HOW.md`\n> * `5W-ANSWERS.md`\n> * `5WHAT.md`\n> * `5WHEN.md`\n> * `5WHERE.md`\n> * `5WHO.md`\n> * `5WHY.md`\n> * `A&I-RD-5WIZARDS-COMPOSED-ARCHITECTURE-2026-08-13.md`\n> * `
+CREWAI-DESIGN.md`\n> * `DND-SRD-5.2.1-UPSTREAM`\n> * `DND-SRD-5.2.1/CHANGELOG.md`\n> * `DND-SRD-5.2.1/CONTRIBUTING.md`\n> * `DND-SRD-5.2.1/LICENSE`\n> * `DND-SRD-5.2.1/README.md`\n> * `DND-SRD-5.2.1/SOURCE.md`\n> * `DND-SRD-5.2.1/animals.md`\n> * `DND-SRD-5.2.1/character-creation.md`\n> * `DND-SRD-5.2.1/character-origins.md`\n> * `DND-SRD-5.2.1/classes.md`\n> * `DND-SRD-5.2.1/equipment.md`\n> * `DND-SRD-5.2.1/feats.md`\n> * `DND-SRD-5.2.1/gameplay-toolbox.md`\n> * `DND-SRD-5.2.1/magic-items.md`\
+n> * `DND-SRD-5.2.1/monsters-A-Z.md`\n> * `DND-SRD-5.2.1/monsters.md`\n> * `DND-SRD-5.2.1/playing-the-game.md`\n> * `DND-SRD-5.2.1/rules-glossary.md`\n> * `DND-SRD-5.2.1/spells.md`\n> * `ENV.md`\n> * `MUD-MUSH-ARCHITECTURE.md`\n> * `src/idaho_vault/__init__.py`\n> * `src/idaho_vault/bootstrap_contract.py`\n> * `src/idaho_vault/civic_scaffold.py`\n> * `src/idaho_vault/config/agents.yaml`\n> * `src/idaho_vault/config/tasks.yaml`\n> * `src/idaho_vault/crew.py`\n> * `src/idaho_vault/five_wizards/__i
+nit__.py`\n> * `src/idaho_vault/five_wizards/enums.py`\n> * `src/idaho_vault/five_wizards/lane_runner.py`\n> * `src/idaho_vault/five_wizards/models.py`\n> * `src/idaho_vault/five_wizards/pipelines.py`\n> * `src/idaho_vault/five_wizards/renderers.py`\n> * `src/idaho_vault/five_wizards/service.py`\n> * `src/idaho_vault/five_wizards/staging.py`\n> * `src/idaho_vault/five_wizards/threshold_runner.py`\n> * `src/idaho_vault/five_wizards/validators.py`\n> * `src/idaho_vault/five_wizards/what_lane.py`\n
+> * `src/idaho_vault/five_wizards/when_lane.py`\n> * `src/idaho_vault/five_wizards/where_lane.py`\n> * `src/idaho_vault/five_wizards/who_lane.py`\n> * `src/idaho_vault/five_wizards/why_lane.py`\n> * `src/idaho_vault/five_wizards/workflow.py`\n> * `src/idaho_vault/main.py`\n> * `src/idaho_vault/mock_llm.py`\n> * `src/idaho_vault/operator_context.py`\n> * `src/idaho_vault/runtime.py`\n> \n> </details>\n> \n> ```ascii\n>  _______________________________________________\n> < Your code has more branc
+hes than a windstorm. >\n>  -----------------------------------------------\n>   \\\n>    \\   \\\n>         \\ /\\\n>         ( )\n>       .( o ).\n> ```\n\n<!-- end of auto-generated comment: review in progress by coderabbit.ai -->\n\n<!-- finishing_touch_checkbox_start -->\n\n<details>\n<summary>✨ Finishing Touches 💡 1</summary>\n\n<!-- finishing_touch_suggestion:resolve_merge_conflict -->\n<details open>\n<summary>⚔️ Resolve merge conflicts 💡</summary>\n\n- [ ] <!-- {\"checkboxId\": \"c3a5b2
+e1-4d7f-4a8c-b9d6-e1f2c3d4a5b6\"} --> Resolve merge conflict in branch `manus/self-testing`\n\n</details>\n<details>\n<summary>📝 Generate docstrings</summary>\n\n- [ ] <!-- {\"checkboxId\": \"7962f53c-55bc-4827-bfbf-6a18da830691\"} --> Create stacked PR\n- [ ] <!-- {\"checkboxId\": \"3e1879ae-f29b-4d0d-8e06-d12b7ba33d98\"} --> Commit on current branch\n\n</details>\n<details>\n<summary>🧪 Generate unit tests (beta)</summary>\n\n- [ ] <!-- {\"checkboxId\": \"f47ac10b-58cc-4372-a567-0e02b2c3d479\",
+ \"radioGroupId\": \"utg-output-choice-group-unknown_comment_id\"} -->   Create PR with unit tests\n- [ ] <!-- {\"checkboxId\": \"6ba7b810-9dad-11d1-80b4-00c04fd430c8\", \"radioGroupId\": \"utg-output-choice-group-unknown_comment_id\"} -->   Commit unit tests in branch `manus/self-testing`\n\n</details>\n\n</details>\n\n<!-- finishing_touch_checkbox_end -->\n<!-- tips_start -->\n\n---\n\nThanks for using [CodeRabbit](https://coderabbit.ai?utm_source=oss&utm_medium=github&utm_campaign=LAF-US/IDAH
+O-VAULT&utm_content=971)! It's free for OSS, and your support helps us grow. If you like it, consider giving us a shout-out.\n\n<details>\n<summary>❤️ Share</summary>\n\n- [X](https://twitter.com/intent/tweet?text=I%20just%20used%20%40coderabbitai%20for%20my%20code%20review%2C%20and%20it%27s%20fantastic%21%20It%27s%20free%20for%20OSS%20and%20offers%20a%20free%20trial%20for%20the%20proprietary%20code.%20Check%20it%20out%3A&url=https%3A//coderabbit.ai)\n- [Mastodon](https://mastodon.social/share?t
+ext=I%20just%20used%20%40coderabbitai%20for%20my%20code%20review%2C%20and%20it%27s%20fantastic%21%20It%27s%20free%20for%20OSS%20and%20offers%20a%20free%20trial%20for%20the%20proprietary%20code.%20Check%20it%20out%3A%20https%3A%2F%2Fcoderabbit.ai)\n- [Reddit](https://www.reddit.com/submit?title=Great%20tool%20for%20code%20review%20-%20CodeRabbit&text=I%20just%20used%20CodeRabbit%20for%20my%20code%20review%2C%20and%20it%27s%20fantastic%21%20It%27s%20free%20for%20OSS%20and%20offers%20a%20free%20tri
+al%20for%20proprietary%20code.%20Check%20it%20out%3A%20https%3A//coderabbit.ai)\n- [LinkedIn](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fcoderabbit.ai&mini=true&title=Great%20tool%20for%20code%20review%20-%20CodeRabbit&summary=I%20just%20used%20CodeRabbit%20for%20my%20code%20review%2C%20and%20it%27s%20fantastic%21%20It%27s%20free%20for%20OSS%20and%20offers%20a%20free%20trial%20for%20proprietary%20code)\n\n</details>\n\n\n<sub>Comment `@coderabbitai help` to get the list of
+ available commands.</sub>\n\n<!-- tips_end -->"[m[1;38m,
+[m      [1;34m"createdAt"[m[1;38m:[m [32m"2026-08-13T16:44:45Z"
+[m    [1;38m}[m[1;38m,
+[m    [1;38m{
+[m      [1;34m"author"[m[1;38m:[m [32m"codacy-production"[m[1;38m,
+[m      [1;34m"body"[m[1;38m:[m [32m"## Not up to standards ⛔\n<details><summary><strong>🔴 Issues</strong>  <code>18 high · 6 medium · 76 minor</code></summary>\n\n> <br/>\n>\n> \n> **Alerts:**\n> ⚠ 100 issues (≤ 0 issues of at least minor severity)\n> \n>\n> **Results:**\n> `100` new issues\n>\n> | Category | Results |\n> | ------------- | ------------- |\n> | UnusedCode | `3` medium  | \n > | BestPractice | `61` minor  | \n > | Documentation | `2` minor  | \n > | ErrorProne | `18` high  | \n > | CodeStyle | `12` mi
+nor  | \n > | Performance | `3` medium  | \n > | Comprehensibility | `1` minor  |\n>\n>\n> [View in Codacy](https://app.codacy.com/gh/LAF-US/IDAHO-VAULT/pull-requests/971/issues)\n> <br/>\n</details>\n\n<details><summary><strong>🟢 Metrics</strong>  <code>11 complexity</code></summary>\n\n> <br/>\n>\n> | Metric | Results |\n> | ------------- | ------------- |\n> | Complexity |  **11** |\n>\n>\n> [View in Codacy](https://app.codacy.com/gh/LAF-US/IDAHO-VAULT/pull-requests/971/files)\n> <br/>\n</det
+ails>\n\n\n\n\n\n<sub>`NEW` Get contextual insights on your PRs based on Codacy's metrics, along with PR and Jira context, without leaving GitHub. [Enable AI reviewer](https://app.codacy.com/organizations/gh/LAF-US/integrations/provider)</sub>\n<sub>`TIP` This summary will be updated as you push new changes.</sub>\n\n<!-- a1b2c3d4-e5f6-7890-abcd-ef1234567890 -->"[m[1;38m,
+[m      [1;34m"createdAt"[m[1;38m:[m [32m"2026-08-13T16:47:26Z"
+[m    [1;38m}
+[m  [1;38m][m[1;38m,
+[m  [1;34m"mergeStateStatus"[m[1;38m:[m [32m"DIRTY"[m[1;38m,
+[m  [1;34m"reviewDecision"[m[1;38m:[m [32m""[m[1;38m,
+[m  [1;34m"reviews"[m[1;38m:[m [1;38m[
+[m    [1;38m{
+[m      [1;34m"author"[m[1;38m:[m [32m"sourcery-ai"[m[1;38m,
+[m      [1;34m"body"[m[1;38m:[m [32m"Sorry @loganfinney27, your pull request is larger than the review limit of 150000 diff characters"[m[1;38m,
+[m      [1;34m"state"[m[1;38m:[m [32m"COMMENTED"[m[1;38m,
+[m      [1;34m"submittedAt"[m[1;38m:[m [32m"2026-08-13T16:43:18Z"
+[m    [1;38m}[m[1;38m,
+[m    [1;38m{
+[m      [1;34m"author"[m[1;38m:[m [32m"github-code-quality"[m[1;38m,
+[m      [1;34m"body"[m[1;38m:[m [32m""[m[1;38m,
+[m      [1;34m"state"[m[1;38m:[m [32m"COMMENTED"[m[1;38m,
+[m      [1;34m"submittedAt"[m[1;38m:[m [32m"2026-08-13T16:44:36Z"
+[m    [1;38m}[m[1;38m,
+[m    [1;38m{
+[m      [1;34m"author"[m[1;38m:[m [32m"copilot-pull-request-reviewer"[m[1;38m,
+[m      [1;34m"body"[m[1;38m:[m [32m"## Pull request overview\n\nAdds a vendored D&D SRD reference and dependency-update governance while substantially replacing the existing deterministic 5Wizards runtime.\n\n**Changes:**\n- Vendors SRD 5.2.1 and declares an upstream submodule.\n- Adds biweekly Dependabot schedules and documents the uv dependency contract.\n- Replaces the bootstrap and deterministic 5Wizards implementation with a hierarchical CrewAI crew and supporting architecture notes.\n\n### Reviewed changes\n\n
+Copilot reviewed 50 out of 61 changed files in this pull request and generated 9 comments.\n\n<details>\n<summary>Show a summary per file</summary>\n\n| File | Description |\r\n| ---- | ----------- |\r\n| `src/idaho_vault/runtime.py` | Removes runtime containment. |\r\n| `src/idaho_vault/operator_context.py` | Removes operator context handling. |\r\n| `src/idaho_vault/mock_llm.py` | Removes the credential-free mock LLM. |\r\n| `src/idaho_vault/main.py` | Replaces CLI entrypoints with council kic
+koff. |\r\n| `src/idaho_vault/five_wizards/workflow.py` | Removes deterministic workflow orchestration. |\r\n| `src/idaho_vault/five_wizards/why_lane.py` | Removes WHY lane API. |\r\n| `src/idaho_vault/five_wizards/who_lane.py` | Removes WHO lane API. |\r\n| `src/idaho_vault/five_wizards/where_lane.py` | Removes WHERE lane API. |\r\n| `src/idaho_vault/five_wizards/when_lane.py` | Removes WHEN lane API. |\r\n| `src/idaho_vault/five_wizards/what_lane.py` | Removes WHAT lane API. |\r\n| `src/idaho_
+vault/five_wizards/validators.py` | Removes claim and gate validation. |\r\n| `src/idaho_vault/five_wizards/threshold_runner.py` | Removes threshold staging runner. |\r\n| `src/idaho_vault/five_wizards/staging.py` | Removes artifact materialization. |\r\n| `src/idaho_vault/five_wizards/service.py` | Removes workflow service layer. |\r\n| `src/idaho_vault/five_wizards/renderers.py` | Removes artifact renderers. |\r\n| `src/idaho_vault/five_wizards/pipelines.py` | Removes reporting pipelines. |\r\
+n| `src/idaho_vault/five_wizards/models.py` | Removes structured 5W models. |\r\n| `src/idaho_vault/five_wizards/lane_runner.py` | Removes generic lane execution. |\r\n| `src/idaho_vault/five_wizards/enums.py` | Removes canonical mappings and enums. |\r\n| `src/idaho_vault/five_wizards/__init__.py` | Removes public 5W package API. |\r\n| `src/idaho_vault/crew.py` | Introduces hierarchical council crew. |\r\n| `src/idaho_vault/config/tasks.yaml` | Defines inquiry and adjudication tasks. |\r\n| `s
+rc/idaho_vault/config/agents.yaml` | Defines six wizard agents. |\r\n| `src/idaho_vault/civic_scaffold.py` | Removes civic scaffold implementation. |\r\n| `src/idaho_vault/bootstrap_contract.py` | Removes bootstrap validation contract. |\r\n| `src/idaho_vault/__init__.py` | Removes package metadata exports. |\r\n| `MUD-MUSH-ARCHITECTURE.md` | Adds persistent-world architecture proposal. |\r\n| `ENV.md` | Documents uv and update workflows. |\r\n| `DND-SRD-5.2.1/SOURCE.md` | Records SRD provenance
+. |\r\n| `DND-SRD-5.2.1/README.md` | Adds upstream SRD overview. |\r\n| `DND-SRD-5.2.1/character-creation.md` | Vendors character-creation rules. |\r\n| `DND-SRD-5.2.1/character-origins.md` | Vendors backgrounds and species. |\r\n| `DND-SRD-5.2.1/classes.md` | Vendors class rules. |\r\n| `DND-SRD-5.2.1/equipment.md` | Vendors equipment rules. |\r\n| `DND-SRD-5.2.1/feats.md` | Vendors feat rules. |\r\n| `DND-SRD-5.2.1/spells.md` | Vendors spell rules. |\r\n| `DND-SRD-5.2.1/magic-items.md` | Vendo
+rs magic-item rules. |\r\n| `DND-SRD-5.2.1/playing-the-game.md` | Vendors core gameplay rules. |\r\n| `DND-SRD-5.2.1/gameplay-toolbox.md` | Vendors gameplay guidance. |\r\n| `DND-SRD-5.2.1/monsters.md` | Vendors monster rules. |\r\n| `DND-SRD-5.2.1/monsters-A-Z.md` | Vendors monster stat blocks. |\r\n| `DND-SRD-5.2.1/animals.md` | Vendors animal stat blocks. |\r\n| `DND-SRD-5.2.1/rules-glossary.md` | Vendors the rules glossary. |\r\n| `DND-SRD-5.2.1/LICENSE` | Adds SRD licensing terms. |\r\n| `D
+ND-SRD-5.2.1/CONTRIBUTING.md` | Adds upstream contribution guidance. |\r\n| `DND-SRD-5.2.1/CHANGELOG.md` | Adds upstream release history. |\r\n| `CREWAI-DESIGN.md` | Describes proposed council design. |\r\n| `A&I-RD-5WIZARDS-COMPOSED-ARCHITECTURE-2026-08-13.md` | Adds composed inquiry architecture. |\r\n| `5WHY.md` | Adds an empty WHY surface. |\r\n| `5WHO.md` | Adds an empty WHO surface. |\r\n| `5WHERE.md` | Adds an empty WHERE surface. |\r\n| `5WHEN.md` | Adds an empty WHEN surface. |\r\n| `5W
+HAT.md` | Adds an empty WHAT surface. |\r\n| `5HOW.md` | Adds an empty HOW surface. |\r\n| `5W-ANSWERS.md` | Records a prior 5W inquiry. |\r\n| `.gitmodules` | Declares the SRD upstream submodule. |\r\n| `.github/dependabot.yml` | Adds biweekly proposal schedules. |\r\n| `.crewai/MANIFEST.md` | Documents dependency governance. |\r\n| `!/VAULT-RESEARCH-SUMMARY.md` | Summarizes vault research and lore. |\r\n| `!/FIRST-CONGRESS-AND-EXPANDED-FRAMEWORKS.md` | Adds governance and framework strategy. |
+\n</details>\n\n\n\n\n\n<details>\n<summary>Suppressed comments (1)</summary>\n\n**src/idaho_vault/five_wizards/__init__.py:1**\n* Removing this package surface and all of its modules leaves the tracked suite uncollectable: `tests/test_five_wizards.py`, `tests/test_threshold_runner.py`, and `tests/test_civic_scaffold.py` still import `idaho_vault.five_wizards.*`. Either retain the covered implementation or migrate/remove those consumers and tests as part of this change.\n</details>\n\n\n\n---\n\
+n💡 <a href=\"/LAF-US/IDAHO-VAULT/new/main?filename=.github/skills/code-review/SKILL.md\" class=\"Link--inTextBlock\" target=\"_blank\" rel=\"noopener noreferrer\">Add a `code-review` agent skill</a> or configure MCP servers for context-aware, tailored reviews. <a href=\"https://docs.github.com/en/copilot/how-tos/use-copilot-agents/request-a-code-review/use-code-review#mcp-servers-and-agent-skills\" class=\"Link--inTextBlock\" target=\"_blank\" rel=\"noopener noreferrer\">Learn more in the docs.<
+/a>"[m[1;38m,
+[m      [1;34m"state"[m[1;38m:[m [32m"COMMENTED"[m[1;38m,
+[m      [1;34m"submittedAt"[m[1;38m:[m [32m"2026-08-13T16:47:57Z"
+[m    [1;38m}
+[m  [1;38m][m[1;38m,
+[m  [1;34m"state"[m[1;38m:[m [32m"OPEN"[m[1;38m,
+[m  [1;34m"updatedAt"[m[1;38m:[m [32m"2026-08-13T16:47:58Z"[m[1;38m,
+[m  [1;34m"url"[m[1;38m:[m [32m"https://github.com/LAF-US/IDAHO-VAULT/pull/971"
+[m[1;38m}
+[mubuntu@sandbox:~$ 11;rgb:0000/0000/000011;rgb:0000/0000/0101;1R
+[32mubuntu@sandbox:~$ [0m
