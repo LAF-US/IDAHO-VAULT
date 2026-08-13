@@ -41,3 +41,21 @@ ehthumbs.db
 **/hostkeys
 
 # ESTO PERPETUA!
+
+# --- secret-bearing agent-runtime state (added 2026-08-13 after secret-scanning incident) ---
+# Agent homes carry .env files, auth tokens, and session logs that record API calls.
+# These classes never belong in a public repo; gitleaks pre-commit gate enforces the rest.
+.env
+.env.*
+*.env
+**/.env.bak*
+.hermes/
+.vibe/
+**/state-snapshots/
+**/archived_sessions/
+rollout-20*.jsonl
+session-20*.jsonl
+.claude.json
+.claude.json.*
+.claude.json*backup*
+.claude/backups/
