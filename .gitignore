@@ -43,8 +43,7 @@ Temporary Items
 *.secret
 .aikido/config
 .cache_ggshield
-.claude/.credentials.json
-.codex/auth.json
+.credentials.json
 .env
 .env.*
 .gsutil/credstore*
@@ -53,7 +52,11 @@ Temporary Items
 .obsidian/plugins/obsidian-local-rest-api/data.json
 .obsidian/plugins/phone-to-roam-to-obsidian/data.json
 .obsidian/plugins/todoist-context-bridge/data.json
+adbkey*
+auth.json
 credstore*
+honcho.json
+hostkeys*
 id_ed*
 pubring*
 
@@ -67,3 +70,4 @@ pubring*
 # ---------------------------------------------------------------
 # THE WORLD IS QUIET HERE．ESTO PERPETUA!
 # ---------------------------------------------------------------
+.ollama/models/blobs/
