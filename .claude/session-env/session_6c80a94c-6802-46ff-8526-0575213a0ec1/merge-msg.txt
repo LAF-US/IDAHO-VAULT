@@ -1,0 +1,23 @@
+Merge origin/logan/obsidian: reunify Mac and Windows vault lines
+
+Two machines diverged from merge-base 709965f1 (2026-05-26): the Mac
+line (1,919 commits) and the Windows line via origin (2,028 commits,
+main-tracked through 2026-08-04). Both lines are preserved in full per
+Logan's policy:
+
+- byte-identical duplicates under different names: both copies kept
+- same-name files with differing content: both kept, the Windows copy
+  suffixed " (WIN)" (under .github/workflows/ the WIN copy is named
+  *.yml.txt so Actions never executes a forked workflow)
+- modify/delete and rename/delete: the surviving content is kept
+- filenames with invalid UTF-8 bytes sanitized, and APFS/NTFS case or
+  normalization collisions aliased per the NETWEB portable-path
+  standard (VAULT-CONVENTIONS.md)
+
+Built object-level in a temporary index (git merge-tree + policy
+fixups + lossless blob gate); no working-tree merge was performed.
+Every suffixed, sanitized, or aliased path is listed in
+MERGE-MANIFEST-2026-08-12.md.
+
+Claude-Session: https://claude.ai/code/session_6c80a94c-6802-46ff-8526-0575213a0ec1
+Co-Authored-By: Claude Fable 5 <noreply@anthropic.com>
