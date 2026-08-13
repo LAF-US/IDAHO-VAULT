@@ -2,6 +2,38 @@
 #
 #   SECRETS — credential material. NON-MARKDOWN ONLY: Markdown is force-tracked
 #             at the bottom, so a secret pasted into prose is the scanner's job.
+# ---------------------------------------------------------------
+*.pem
+*.secret
+.aikido/config
+.cache_ggshield
+.credentials.json
+.copilot/data.db*
+.copilot/repos
+.copilot/run/ws.*
+.copilot/session-store.db*
+.codex/*.sqlite*
+.codex/.codex-global-state.json*
+.codex/models_cache.json*
+.env
+.env.*
+.gsutil/credstore*
+.obsidian/plugins/ai-image-analyzer/data.json
+.obsidian/plugins/ai-templater/data.json
+.obsidian/plugins/obsidian-local-rest-api/data.json
+.obsidian/plugins/phone-to-roam-to-obsidian/data.json
+.obsidian/plugins/todoist-context-bridge/data.json
+.ollama/models/blobs/**/*
+.vscode/cli/*tunnel*.*
+.vscode-shared/sharedStorage/state.vscdb.backup
+.vscode-shared/sharedStorage/state.vscdb
+adbkey*
+auth.json
+credstore*
+honcho.json
+hostkeys*
+id_ed*
+pubring*
 
 # ---------------------------------------------------------------
 # operating system
@@ -37,43 +69,11 @@ Network Trash Folder
 Temporary Items
 
 # ---------------------------------------------------------------
-# VAULT SECRETS
-# ---------------------------------------------------------------
-*.pem
-*.secret
-.aikido/config
-.cache_ggshield
-.credentials.json
-.copilot/data.db*
-.copilot/repos
-.copilot/run/ws.*
-.copilot/session-store.db*
-.codex/*.sqlite*
-.codex/.codex-global-state.json*
-.codex/models_cache.json*
-.env
-.env.*
-.gsutil/credstore*
-.obsidian/plugins/ai-image-analyzer/data.json
-.obsidian/plugins/ai-templater/data.json
-.obsidian/plugins/obsidian-local-rest-api/data.json
-.obsidian/plugins/phone-to-roam-to-obsidian/data.json
-.obsidian/plugins/todoist-context-bridge/data.json
-.ollama/models/blobs/**/*
-.vscode/cli/*tunnel*.*
-.vscode-shared/sharedStorage/state.vscdb.backup
-.vscode-shared/sharedStorage/state.vscdb
-adbkey*
-auth.json
-credstore*
-honcho.json
-hostkeys*
-id_ed*
-pubring*
-
-# ---------------------------------------------------------------
 # THE WORLD IS QUIET HERE．ESTO PERPETUA!
 # ---------------------------------------------------------------
+
 !.gitignore
 !/.*/stub.txt
 !/**.md
+
+# 

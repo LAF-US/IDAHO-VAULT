@@ -1,0 +1,9 @@
+[submodule "!\\!\\_loganfinney.com"]
+    path = !\\!\\_loganfinney.com
+    url = https://github.com/LAF-US/loganfinney.git
+    branch = main
+
+[submodule "!\\_SRD"]
+    path = !\\_SRD
+    url = https://github.com/downfallx/dnd-5e-srd-markdown.git
+    branch = main
