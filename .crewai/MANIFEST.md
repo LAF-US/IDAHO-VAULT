@@ -1,7 +1,7 @@
 ---
 title: "CrewAI Python Layer Manifest"
 date created: "2026-04-04"
-date updated: "2026-04-12"
+date updated: "2026-08-13"
 authority: crewai
 doc_class: manifest
 status: active
@@ -65,6 +65,14 @@ machine, path, or runtime container.
 | Output staging | `!/CREWAI/` (live staging / output) |
 | Runtime class | Vault-contained local runtime slice |
 | Promotion gate | Logan approval required before staged output enters canon |
+
+---
+
+## Dependency and Update Model
+
+`pyproject.toml` declares direct Python requirements, and `uv.lock` is the canonical resolved dependency graph. The standard local bootstrap is `uv sync`; `requirements.txt` is a generated pip-compatible export rather than an independently managed lockfile. The scheduled dependency workflow refreshes the lock with `uv lock --upgrade`, exports `requirements.txt`, and opens a review PR for any resulting change.
+
+Dependabot proposes GitHub Actions and Git submodule pin updates every second Monday at 09:00 America/Denver. A submodule proposal advances only the recorded gitlink; it does not modify any vendored snapshot or provenance record. Every proposal remains subject to the existing review and promotion boundaries.
 
 ---
 
