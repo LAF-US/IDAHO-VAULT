@@ -3,7 +3,6 @@ name = "idaho-vault"
 version = "0.1.0"
 requires-python = ">=3.13"
 dependencies = [
-  "crewai[anthropic,tools]>=1.14.1",
   "flask>=3.1.0",
   "pygit2>=1.18.2",
   "pyyaml>=6.0.3",
@@ -14,8 +13,6 @@ dev = [
   "pytest>=9.1.1",
 ]
 
-[project.scripts]
-idaho-vault = "idaho_vault.main:run"
 
 [project.urls]
 Repository = "https://github.com/LAF-US/IDAHO-VAULT"

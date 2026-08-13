@@ -38,7 +38,7 @@ This note relies on several materials with distinct dates, authorities, and stat
 
 | Source | Date / status stated by source | What it contributes | What it does **not** establish |
 |---|---|---|---|
-| `.crewai/MANIFEST.md` | Created 2026-04-04; updated 2026-08-13; `status: active` | The CrewAI layer’s declared live doctrine and topology: a bounded 5Wizards Council is registered and runnable; outputs stage to `!/CREWAI/`; promotion requires Logan approval. | That Familiar roles, LangGraph, AutoGen, or human-feedback training are implemented or approved. |
+| `.crewai/MANIFEST.md` | Created 2026-04-04; updated 2026-08-13; `status: retired` | The record of the CrewAI dependency-removal decision: no CrewAI runtime, crew, or runner remains registered. | That the six-question concept, Familiar roles, LangGraph, AutoGen, or human-feedback training has been rejected as future design work. |
 | `.crewai/5WIZARDS-DRAFT.md` | 2026-04-15; `status: draft`; `phase: concept-refinement` | The most detailed 5Wizards design: six inquiry lanes, paired Wizard/Familiar roles, atomic claims, validation gates, a Council, and staged outputs. | Live topology, registered agents, or an approved implementation plan. |
 | `!/SENIOR-GAME-DEV-NOTE-CONNECTOR-POSTURE-2026-04-16.md` | 2026-04-16; recommendation note | A caution that CrewAI should be an adapter around a proven core, not the sole location of system truth; it names LangGraph as a possible later graph-runtime fit. | A requirement that no additional framework can ever be used. |
 | `!/DRAFT-MAP-TOOL-LANES-FOR-ONE-LIVE-LOOP-V2-2026-04-17.md` | 2026-04-17; draft map | A narrow routing rule: one driver lane per individual step, chosen for live status, reviewability, low hidden state, and lack of duplicate authority. | A rule that the entire House must use only one framework. |
@@ -215,7 +215,7 @@ The following are design decisions for Logan rather than assumptions for an impl
 
 This note does **not** claim that:
 
-- the registered 5Wizards CrewAI topology fully implements this composed proposal;
+- any CrewAI 5Wizards topology is currently registered or runnable;
 - current Python code accurately implements Familiar roles, LangGraph state, AutoGen hearings, or all deterministic validation described here;
 - LangGraph or AutoGen is installed, configured, approved, or required;
 - metaphorical offices alone create permissions;
@@ -246,4 +246,4 @@ That division permits rich, MUD/MUSH-like social and narrative expression withou
 5. `2026-agentic-AI-landscape-general-theory-2026-05-19.md` — 2026-05-19; non-prescriptive theory documentation.
 6. `INBOX/THE-MUSIC-BOX-MODEL-2026-05-30.md` — 2026-05-30; model explicitly stated as a lens rather than canon.
 
-*Prepared by Manus AI for Architect review. No implementation, registration, or promotion follows from this note without further instruction.*
+*Prepared by Manus AI for Architect review. The prior experimental CrewAI implementation was removed after dependency review; no implementation, registration, or promotion follows from this note without further instruction.*

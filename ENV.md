@@ -7,7 +7,6 @@ Tracked scaffold:
 - `.env.example` documents safe local defaults.
 - `.venv/.gitkeep` preserves the repo-local Python environment directory.
 - `.cache/.gitkeep`, `.state/.gitkeep`, `.tmp/.gitkeep`, and `.agent-home/.gitkeep` preserve vault-local runtime containment directories.
-- `.crewai/logs/.gitkeep` preserves the CrewAI log directory.
 - `.op/openrouter.env.template` documents the OpenRouter/1Password env-file shape.
 
 Local-only files:

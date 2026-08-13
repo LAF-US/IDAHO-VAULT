@@ -22,7 +22,7 @@ The vault's "magic system" is **Standing**—local, witnessed, scoped, and revoc
 
 ## 4. Technical Framework Posture
 The vault has a clear hierarchy for orchestration tools:
-- **CrewAI**: The Adapter. Best for role-playing and task orchestration within the "Towers."
+- **CrewAI**: A previously evaluated adapter for role-playing and task orchestration within the "Towers." Its experimental runtime was removed after dependency review; it is not an installed or active framework.
 - **LangGraph**: The Runtime. Best for complex, cyclic state management (Gossip phase, Jekyll/Hyde transformation).
 - **LangChain**: The Utility. Narrowly used for model abstraction and tool wrappers.
 - **Skepticism**: Avoid "rigid high-level abstractions" that hide details or create "abstractions on top of abstractions" (OctoClaw critique).

@@ -1,31 +1,13 @@
 {
-  "// note": "Machine-readable registry for the CrewAI layer in IDAHO-VAULT.",
-  "// status": "CrewAI is active as a re-foundation with a bounded 5Wizards Council inquiry crew. Internal topology and doctrine live in .crewai/MANIFEST.md.",
-  "version": "0.4.0",
+  "// note": "Historical registry for the retired CrewAI layer in IDAHO-VAULT.",
+  "// status": "No CrewAI package, runner, or crew is active. See .crewai/MANIFEST.md for the dependency-removal decision.",
+  "version": "0.5.0",
   "vault": "github.com/LAF-US/IDAHO-VAULT",
-  "status": "refoundation",
+  "status": "retired",
   "manifest_path": ".crewai/MANIFEST.md",
   "output_dir": "!/CREWAI/",
-  "runtime_class": "vault-contained local runtime slice",
-  "authority_boundary": "swarm.json registers the layer; live CrewAI topology and promotion rules live in .crewai/MANIFEST.md.",
-  "active_runners": [
-    {
-      "id": "package-entrypoint",
-      "command": "uv run idaho-vault",
-      "status": "active"
-    },
-    {
-      "id": "module-entrypoint",
-      "command": "uv run python -m idaho_vault.main",
-      "status": "active"
-    }
-  ],
-  "crews": [
-    {
-      "id": "five-wizards-council",
-      "path": "src/idaho_vault/crew.py",
-      "status": "registered-runnable-not-training-ready",
-      "purpose": "Run a bounded WHO/WHAT/WHEN/WHERE/WHY inquiry and prepare a HOW synthesis recommendation for human review."
-    }
-  ]
+  "runtime_class": "none",
+  "authority_boundary": "Historical design material does not establish a live agent topology or promotion path.",
+  "active_runners": [],
+  "crews": []
 }
