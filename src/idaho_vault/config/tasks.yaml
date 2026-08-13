@@ -1,0 +1,17 @@
+inquiry_task:
+  description: >
+    Perform a comprehensive inquiry into the provided {topic}. 
+    Each wizard must analyze the topic from their specific perspective 
+    (Who, What, When, Where, Why).
+  expected_output: >
+    A structured report containing the specific findings for each of the five lanes.
+  agent: how_wizard
+
+final_adjudication_task:
+  description: >
+    Review the findings from all five lanes. Resolve any tensions or 
+    contradictions. Synthesize the final record for the vault.
+  expected_output: >
+    A final Markdown document that serves as the official record of the inquiry, 
+    formatted according to the vault's 5W standards.
+  agent: how_wizard
