@@ -1,11 +1,3 @@
 ---
-authority: LOGAN
-related:
-  - FACTORY
-  - imported_software
-  - runtime
+title: FACTORY
 ---
-
-**.factory** — Imported software runtime persona.
-
-factory runtime and configuration.
