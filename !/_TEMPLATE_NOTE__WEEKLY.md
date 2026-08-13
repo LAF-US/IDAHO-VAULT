@@ -1,4 +1,0 @@
----
-title: _TEMPLATE_NOTE__WEEKLY
-template: _TEMPLATE_NOTE__WEEKLY
----

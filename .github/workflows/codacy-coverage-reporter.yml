@@ -1,0 +1,49 @@
+name: Codacy Coverage Reporter
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  coverage:
+    runs-on: ubuntu-latest
+    env:
+      CREWAI_DISABLE_TELEMETRY: "true"
+      OTEL_SDK_DISABLED: "true"
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
+        with:
+          python-version-file: .python-version
+
+      - uses: astral-sh/setup-uv@f98e06938123ccabd21905ea5d0069192241f9f1 # v8.3.1
+
+      - name: Install test dependencies
+        run: uv sync
+
+      - name: Run test suite under coverage
+        id: tests
+        run: uv run coverage run -m pytest tests -v
+
+      - name: Generate coverage XML report
+        if: ${{ !cancelled() && steps.tests.conclusion != 'skipped' }}
+        run: uv run coverage xml
+
+      # GitHub does not expose repository secrets to pull requests from forks.
+      # Those PRs still run the tests and generate coverage; only the upload is
+      # skipped. Missing secrets on trusted branches remain a visible failure.
+      - name: Upload coverage to Codacy
+        if: ${{ !cancelled() && steps.tests.conclusion != 'skipped' && (github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository) }}
+        env:
+          CODACY_API_TOKEN: ${{ secrets.CODACY_API_TOKEN }}
+          CODACY_ORGANIZATION_PROVIDER: gh
+          CODACY_USERNAME: LAF-US
+          CODACY_PROJECT_NAME: IDAHO-VAULT
+        shell: bash
+        run: bash <(curl -fsSL https://coverage.codacy.com/get.sh) report -r coverage.xml

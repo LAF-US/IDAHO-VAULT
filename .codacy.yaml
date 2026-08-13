@@ -1,0 +1,12 @@
+---
+# Vendored third-party plugin executables and stylesheets are verbatim official
+# release artifacts (see .obsidian/plugins/VENDORED-PLUGIN-PROVENANCE.md).
+# Linting them produces findings only upstream can act on; they are excluded.
+# The wildcard ALSO excludes the one locally authored plugin
+# (roygbiv-day-accent, ~3KB) — accepted, not accidental: a per-plugin
+# enumeration is the specimen-list ratchet this vault keeps removing, and that
+# file is reviewed by its author in PRs like any other change. If the local
+# plugin count grows, revisit. Nothing outside these two globs is excluded.
+exclude_paths:
+  - ".obsidian/plugins/*/main.js"
+  - ".obsidian/plugins/*/styles.css"
