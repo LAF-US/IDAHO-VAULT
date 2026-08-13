@@ -12,6 +12,12 @@ browser-download-directory = 'C:\Users\loganf\Documents\IDAHO-VAULT'
 keepRemoteControlAwakeWhilePluggedIn = true
 git-worktree-root = 'C:\Users\loganf\Documents\IDAHO-VAULT\.codex'
 
+[desktop.open-in-target-preferences]
+global = "githubDesktop"
+
+[desktop.open-in-target-preferences.perPath]
+'C:\Users\loganf\Documents\IDAHO-VAULT' = "githubDesktop"
+
 [features]
 js_repl = false
 
