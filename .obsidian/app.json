@@ -4,5 +4,7 @@
   "alwaysUpdateLinks": true,
   "showUnsupportedFiles": true,
   "uriCallbacks": true,
-  "trashOption": "local"
+  "trashOption": "local",
+  "strictLineBreaks": true,
+  "showLineNumber": true
 }
