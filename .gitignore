@@ -44,6 +44,13 @@ Temporary Items
 .aikido/config
 .cache_ggshield
 .credentials.json
+.copilot/data.db*
+.copilot/repos
+.copilot/run/ws.*
+.copilot/session-store.db*
+.codex/*.sqlite*
+.codex/.codex-global-state.json*
+.codex/models_cache.json*
 .env
 .env.*
 .gsutil/credstore*
@@ -52,6 +59,8 @@ Temporary Items
 .obsidian/plugins/obsidian-local-rest-api/data.json
 .obsidian/plugins/phone-to-roam-to-obsidian/data.json
 .obsidian/plugins/todoist-context-bridge/data.json
+.ollama/models/blobs/**/*
+.vscode/cli/*tunnel*.*
 adbkey*
 auth.json
 credstore*
@@ -61,16 +70,8 @@ id_ed*
 pubring*
 
 # ---------------------------------------------------------------
-# gitignore exceptions
+# THE WORLD IS QUIET HERE．ESTO PERPETUA!
 # ---------------------------------------------------------------
-.ollama/models/blobs/
-.copilot/repos
-.codex/*.sqlite*
-.codex/models_cache.json
 !.gitignore
 !/.*/stub.txt
 !/**.md
-
-# ---------------------------------------------------------------
-# THE WORLD IS QUIET HERE．ESTO PERPETUA!
-# ---------------------------------------------------------------
