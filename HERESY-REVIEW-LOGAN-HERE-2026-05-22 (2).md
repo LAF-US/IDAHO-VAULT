@@ -587,8 +587,4 @@ are true doctrine wearing a corrupted shell.
 The repair should not be amnesia. It should be annotation, adjudication, and
 then automation.
 
----
-
-```
-The world is quiet here．Esto Perpetua!
-```
+The world is quiet here.

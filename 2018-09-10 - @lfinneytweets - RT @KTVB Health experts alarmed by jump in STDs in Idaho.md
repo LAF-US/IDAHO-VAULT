@@ -21,6 +21,6 @@ RT @KTVB: Health experts alarmed by jump in STDs in Idaho https://t.co/B1lfy10Qg
 - https://on.ktvb.com/2oVZSVi
 
 ## Media
-- ![alt text needed](https://pbs.twimg.com/media/DmtaI6BX4AAQxiF.jpg)
+- ![](https://pbs.twimg.com/media/DmtaI6BX4AAQxiF.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1039036034145640448)

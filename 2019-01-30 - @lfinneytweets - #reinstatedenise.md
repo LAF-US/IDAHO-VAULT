@@ -16,7 +16,7 @@ related:
   - reinstatedenise
 ---
 
-\#reinstatedenise https://t.co/OdrTKQ2Wlq
+#reinstatedenise https://t.co/OdrTKQ2Wlq
 
 ## Links
 - https://x.com/uiargonaut/status/1090388178609950720

@@ -21,10 +21,17 @@ Codex supports MCP servers in both the CLI and the IDE extension.
 ## Supported MCP features
 
 - **STDIO servers**: Servers that run as a local process (started by a command).
+<<<<<<< HEAD
   - Environment variables
 - **Streamable HTTP servers**: Servers that you access at an address.
   - Bearer token authentication
     - OAuth authentication (run `codex mcp login <server-name>` for servers that support OAuth)
+=======
+	- Environment variables
+- **Streamable HTTP servers**: Servers that you access at an address.
+	- Bearer token authentication
+		- OAuth authentication (run `codex mcp login <server-name>` for servers that support OAuth)
+>>>>>>> 684896b8a3040118f438cf44b6f39191676d9845
 
 ## Connect Codex to an MCP server
 
@@ -105,20 +112,29 @@ args = ["-y", "@upstash/context7-mcp"]
 [mcp_servers.context7.env]
 MY_ENV_VAR = "MY_ENV_VALUE"
 ```
+<<<<<<< HEAD
 
+=======
+>>>>>>> 684896b8a3040118f438cf44b6f39191676d9845
 ```toml
 # Optional MCP OAuth callback overrides (used by \`codex mcp login\`)
 mcp_oauth_callback_port = 5555
 mcp_oauth_callback_url = "https://devbox.example.internal/callback"
 ```
+<<<<<<< HEAD
 
+=======
+>>>>>>> 684896b8a3040118f438cf44b6f39191676d9845
 ```toml
 [mcp_servers.figma]
 url = "https://mcp.figma.com/mcp"
 bearer_token_env_var = "FIGMA_OAUTH_TOKEN"
 http_headers = { "X-Figma-Region" = "us-east-1" }
 ```
+<<<<<<< HEAD
 
+=======
+>>>>>>> 684896b8a3040118f438cf44b6f39191676d9845
 ```toml
 [mcp_servers.chrome_devtools]
 url = "http://localhost:3000/mcp"
@@ -139,4 +155,8 @@ The list of MCP servers keeps growing. Here are a few common ones:
 - [Playwright](https://www.npmjs.com/package/@playwright/mcp): Control and inspect a browser using Playwright.
 - [Chrome Developer Tools](https://github.com/ChromeDevTools/chrome-devtools-mcp/): Control and inspect Chrome.
 - [Sentry](https://docs.sentry.io/product/sentry-mcp/#codex): Access Sentry logs.
+<<<<<<< HEAD
 - [GitHub](https://github.com/github/github-mcp-server): Manage GitHub beyond what `git` supports (for example, pull requests and issues).
+=======
+- [GitHub](https://github.com/github/github-mcp-server): Manage GitHub beyond what `git` supports (for example, pull requests and issues).
+>>>>>>> 684896b8a3040118f438cf44b6f39191676d9845

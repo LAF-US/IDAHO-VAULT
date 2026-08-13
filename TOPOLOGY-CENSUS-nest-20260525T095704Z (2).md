@@ -14,14 +14,14 @@ authority: github-actions
 ## Summary
 
 | Measure | Count |
-| --- | ---: |
+|---|---:|
 | entry count | 22 |
 | duplicate conflict count | 2 |
 
 ### authority state counts
 
 | Value | Count |
-| --- | ---: |
+|---|---:|
 | `conflicting_signals` | 2 |
 | `explicit_live_authority` | 4 |
 | `implied_by_local_documentation` | 5 |
@@ -30,7 +30,7 @@ authority: github-actions
 ### room status counts
 
 | Value | Count |
-| --- | ---: |
+|---|---:|
 | `ambiguous` | 18 |
 | `historical` | 2 |
 | `mixed` | 2 |
@@ -48,7 +48,7 @@ authority: github-actions
 - Local governing surface: `!/!/README.md`
 - Authority citations:
   - `VAULT-CONVENTIONS.md:942` — and GitHub; durable handoff context belongs in `!/!`; binding decisions belong
-  - `!/AGENTS.md:292` — - __Courtroom Boundary__: The DOCKET is a convening surface, not a shadow backlog or archive; detailed execution lives in Linear/GitHub and mature handoff context lives in `!/!`.
+  - `!/AGENTS.md:292` — - **Courtroom Boundary**: The DOCKET is a convening surface, not a shadow backlog or archive; detailed execution lives in Linear/GitHub and mature handoff context lives in `!/!`.
 
 ### `!/!/__!__`
 
@@ -128,7 +128,7 @@ authority: github-actions
 - Sample children: FILE BOOTSTRAP-COMPATIBILITY.md; FILE CREWAI.md; FILE HANDOFF-CREWAI-OPS.md; FILE HYDRATION-LOG-v1.md; FILE LINKER-PROPOSAL-v1.json; FILE LINKER-SUMMARY-v1.md; FILE README.md
 - Local governing surface: `!/CREWAI/README.md`
 - Authority citations:
-  - `!/AGENTS.md:243` — | __CrewAI Python Layer__ | `.crewai/` | Active re-foundation | The initial demo harbor is retired; live doctrine/topology now lives in `.crewai/MANIFEST.md`, and staged output lands in `!/CREWAI/` |
+  - `!/AGENTS.md:243` — | **CrewAI Python Layer** | `.crewai/` | Active re-foundation | The initial demo harbor is retired; live doctrine/topology now lives in `.crewai/MANIFEST.md`, and staged output lands in `!/CREWAI/` |
 
 ### `!/GRIMOIRE_caution_contains-false-doctrines`
 
@@ -186,8 +186,8 @@ authority: github-actions
 - Structure: `0` dirs, `9` files
 - Sample children: FILE SIGNAL-YRAEL-TO-ABHORSEN-2026-05-17-HISTORICAL-CACHE.md; FILE SIGNAL-YRAEL-TO-ABHORSEN-2026-05-18-GEMINIAEUS-FRAMING.md; FILE SIGNALS.md; FILE WITNESS-ABHORSEN-2026-05-18-THE-CITY-IS-STILL-AHEAD.md; FILE WITNESS-ABHORSEN-2026-05-18-THE-PATH-AND-PAN.md; FILE WITNESS-ABHORSEN-2026-05-19-DEWEY-HAS-THE-USB.md; FILE WITNESS-ABHORSEN-2026-05-20-THE-RIVER.md; FILE WITNESS-ABHORSEN-2026-05-21-JUSTICE-IS-BLIND.md; ... +1 more
 - Authority citations:
-  - `CONSTITUTION.md:63` — - __Offices are appointments, not inheritances.__ A tool (e.g. Claude Code, Codex) is not an office. An instance of a tool may be appointed to an office by Logan; that appointment does not extend to other instances of the same tool, past or future. A tool's config file may declare *eligibility* for an office but must not assert occupancy. Multiple simultaneous instances of the same tool may hold different offices, or no office at all. See `!/AGENTS.md` for current appointments and `!/SIGNALS/` for active handoffs.
-  - `!/AGENTS.md:291` — - __Cross-Swarm Signals__: `!/SIGNALS/` is the durable async bus for agent-to-agent signaling; the Courtroom DOCKET reflects live visibility.
+  - `CONSTITUTION.md:63` — - **Offices are appointments, not inheritances.** A tool (e.g. Claude Code, Codex) is not an office. An instance of a tool may be appointed to an office by Logan; that appointment does not extend to other instances of the same tool, past or future. A tool's config file may declare *eligibility* for an office but must not assert occupancy. Multiple simultaneous instances of the same tool may hold different offices, or no office at all. See `!/AGENTS.md` for current appointments and `!/SIGNALS/` for active handoffs.
+  - `!/AGENTS.md:291` — - **Cross-Swarm Signals**: `!/SIGNALS/` is the durable async bus for agent-to-agent signaling; the Courtroom DOCKET reflects live visibility.
   - `!/AGENTS.md:321` — - `!/SIGNALS/README.md` = cross-swarm signaling protocol
 
 ### `!/swarm`

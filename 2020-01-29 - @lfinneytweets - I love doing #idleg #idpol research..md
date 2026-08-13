@@ -25,6 +25,6 @@ https://t.co/jfsduX3zQj https://t.co/b3ILqBR9JM
 - https://www.snopes.com/fact-check/my-dynamite-idaho/
 
 ## Media
-- ![alt text needed](https://pbs.twimg.com/media/EPeyRf0UEAAzU74.png)
+- ![](https://pbs.twimg.com/media/EPeyRf0UEAAzU74.png)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1222641875510689793)

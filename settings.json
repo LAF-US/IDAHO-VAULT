@@ -1,4 +1,54 @@
 {
+  "permissions": {
+    "allow": [
+      "Bash(system_profiler SPHardwareDataType *)",
+      "Bash(rclone version *)",
+      "Bash(rclone listremotes *)",
+      "Bash(rclone config *)",
+      "Bash(rclone lsd *)",
+      "Bash(rclone size *)",
+      "Bash(diskutil rename *)",
+      "Bash(diskutil info *)",
+      "Bash(rsync *)",
+      "Bash(pkill -f \"rsync.*iTunes\")",
+      "Bash(md5 *)",
+      "Bash(rclone ls *)",
+      "Bash(rclone copy *)",
+      "WebSearch",
+      "WebFetch(domain:thegemstone.org)",
+      "Bash(xargs -I{} basename {})",
+      "WebFetch(domain:yu-wenhao.com)",
+      "WebFetch(domain:sot.fandom.com)",
+      "WebFetch(domain:genius.com)",
+      "Bash(curl -s http://localhost:18789/health)",
+      "Bash(grep \"\\\\.md$\")",
+      "WebFetch(domain:killedbygoogle.com)",
+      "WebFetch(domain:gcemetery.co)",
+      "WebFetch(domain:andonlabs.com)",
+      "WebFetch(domain:intuitionlabs.ai)",
+      "WebFetch(domain:ecosistemastartup.com)",
+      "WebFetch(domain:the-decoder.com)",
+      "WebFetch(domain:gizmodo.com)",
+      "WebFetch(domain:adventuretime.fandom.com)",
+      "WebFetch(domain:breezewiki.com)",
+      "WebFetch(domain:tvtropes.org)",
+      "WebFetch(domain:overmental.com)",
+      "Bash(git fetch *)",
+      "Bash(grep -v \"^commit\\\\|^Author\\\\|^Date\\\\|^$\\\\|^    \")"
+    ],
+    "defaultMode": "acceptEdits"
+  },
+  "advisorModel": "opus",
+  "autoUpdatesChannel": "stable",
+  "minimumVersion": "2.1.126",
+  "voice": {
+    "enabled": true,
+    "mode": "hold"
+  },
+  "theme": "auto",
+  "verbose": true,
+  "inputNeededNotifEnabled": true,
   "agentPushNotifEnabled": true,
-  "inputNeededNotifEnabled": true
+  "voiceEnabled": true,
+  "remoteControlAtStartup": true
 }

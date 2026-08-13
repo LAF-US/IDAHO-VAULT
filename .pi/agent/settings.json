@@ -1,8 +1,9 @@
 {
-  "defaultModel": "kimi-k2.5:cloud",
-  "defaultProvider": "ollama",
-  "lastChangelogVersion": "0.67.68",
+  "defaultModel": "openrouter/free",
+  "defaultProvider": "openrouter",
   "packages": [
     "npm:@ollama/pi-web-search"
-  ]
+  ],
+  "lastChangelogVersion": "0.70.6",
+  "defaultThinkingLevel": "medium"
 }

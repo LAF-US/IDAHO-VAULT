@@ -1,0 +1,16 @@
+=== broader: individual distinctive words, all file types, case-insensitive ===
+./.cache/uv/git-v0/checkouts/e903c55c1a2aaf5f/c20c852/environments/intern_bootcamp/internbootcamp_lib/internbootcamp/libs/wordladder/words/resources/dictionary-9-letter-words.txt
+./.cache/uv/git-v0/checkouts/e903c55c1a2aaf5f/c20c852/environments/intern_bootcamp/internbootcamp_lib/internbootcamp/libs/wordladder/words/resources/dictionary-8-letter-words.txt
+./.cache/uv/git-v0/checkouts/e903c55c1a2aaf5f/c20c852/environments/intern_bootcamp/internbootcamp_lib/internbootcamp/libs/data/words_alpha_370000.txt
+./.cache/uv/git-v0/checkouts/e903c55c1a2aaf5f/c20c852/environments/reasoning_gym_environment/reasoning-gym/reasoning_gym/data/anagrams.jsonl
+./.cache/uv/git-v0/checkouts/e903c55c1a2aaf5f/c20c852/environments/community/bleuberi/bleuberi-repo/eval/arena-hard-v2.0/data/arena-hard-v2.0/model_answer/qwen3b_SFT_1ref-gold_5k_5e-6_checkpoint-156.jsonl
+./.cache/uv/git-v0/checkouts/e903c55c1a2aaf5f/c20c852/environments/community/bleuberi/bleuberi-repo/eval/arena-hard-v2.0/data/arena-hard-v2.0/model_answer/qwen3b_BLEU_1ref-gold_5k_random_checkpoint-1250.jsonl
+./.cache/uv/git-v0/checkouts/e903c55c1a2aaf5f/c20c852/environments/community/bleuberi/bleuberi-repo/eval/arena-hard-v2.0/data/arena-hard-v2.0/model_answer/qwen7b_RM_1k_random_fixed_checkpoint-250.jsonl
+./.cache/uv/git-v0/checkouts/e903c55c1a2aaf5f/c20c852/environments/community/bleuberi/bleuberi-repo/eval/arena-hard-v2.0/data/arena-hard-v2.0/model_judgment/gpt-4.1-mini/qwen3b_SFT_1ref-gold_5k_5e-6_checkpoint-156.jsonl
+./.cache/uv/git-v0/checkouts/e903c55c1a2aaf5f/c20c852/environments/community/bleuberi/bleuberi-repo/eval/arena-hard-v2.0/data/arena-hard-v2.0/model_judgment/gpt-4.1-mini/qwen3b_BLEU_1ref-gold_5k_random_checkpoint-1250.jsonl
+./.cache/uv/git-v0/checkouts/e903c55c1a2aaf5f/c20c852/environments/community/bleuberi/bleuberi-repo/eval/arena-hard-v2.0/data/arena-hard-v2.0/model_judgment/gpt-4.1-mini/qwen7b_RM_1k_random_fixed_checkpoint-250.jsonl
+---
+=== git log / commit messages ===
+=== github issues/PRs ===
+[]
+[]

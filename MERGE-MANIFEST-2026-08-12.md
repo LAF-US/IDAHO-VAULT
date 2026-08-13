@@ -1,0 +1,636 @@
+# MERGE MANIFEST — 2026-08-12 Mac/Windows reunification
+
+Merge of `origin/logan/obsidian` (Windows line, main-tracked) into
+`logan/obsidian` (MacBook line), diverged since merge-base `709965f1`
+(2026-05-26). Policy: preserve everything from both sides.
+
+- Parents: Mac `526b9757`, Windows `6b6ce454`
+- Same-name/different-content pairs split (Windows copy suffixed): 572
+- Invalid-UTF-8 filenames sanitized: 0
+- Case/normalization collisions aliased (NETWEB `_` prefix): 1
+- Pre-existing Mac-line case collisions (untouched, flagged): 1
+- Lossless-gate restorations (content ort would have dropped): 4
+- Paths renamed for filesystem compatibility (APFS-rejected names): 28
+
+## Split pairs (Mac version at original path)
+
+- `! copy 10.md.md` → WIN copy `! copy 10.md (WIN).md`
+- `! copy 11.md.md` → WIN copy `! copy 11.md (WIN).md`
+- `! copy 12.md.md` → WIN copy `! copy 12.md (WIN).md`
+- `! copy 13.md.md` → WIN copy `! copy 13.md (WIN).md`
+- `! copy 14.md.md` → WIN copy `! copy 14.md (WIN).md`
+- `! copy 15.md.md` → WIN copy `! copy 15.md (WIN).md`
+- `! copy 16.md.md` → WIN copy `! copy 16.md (WIN).md`
+- `! copy 17.md.md` → WIN copy `! copy 17.md (WIN).md`
+- `! copy 18.md.md` → WIN copy `! copy 18.md (WIN).md`
+- `! copy 19.md.md` → WIN copy `! copy 19.md (WIN).md`
+- `! copy 2.md.md` → WIN copy `! copy 2.md (WIN).md`
+- `! copy 20.md.md` → WIN copy `! copy 20.md (WIN).md`
+- `! copy 21.md.md` → WIN copy `! copy 21.md (WIN).md`
+- `! copy 22.md.md` → WIN copy `! copy 22.md (WIN).md`
+- `! copy 23.md.md` → WIN copy `! copy 23.md (WIN).md`
+- `! copy 24.md.md` → WIN copy `! copy 24.md (WIN).md`
+- `! copy 25.md.md` → WIN copy `! copy 25.md (WIN).md`
+- `! copy 26.md.md` → WIN copy `! copy 26.md (WIN).md`
+- `! copy 27.md.md` → WIN copy `! copy 27.md (WIN).md`
+- `! copy 3.md.md` → WIN copy `! copy 3.md (WIN).md`
+- `! copy 4.md.md` → WIN copy `! copy 4.md (WIN).md`
+- `! copy 5.md.md` → WIN copy `! copy 5.md (WIN).md`
+- `! copy 6.md.md` → WIN copy `! copy 6.md (WIN).md`
+- `! copy 7.md.md` → WIN copy `! copy 7.md (WIN).md`
+- `! copy 8.md.md` → WIN copy `! copy 8.md (WIN).md`
+- `! copy 9.md.md` → WIN copy `! copy 9.md (WIN).md`
+- `! copy.md` → WIN copy `! copy (WIN).md`
+- `! copy.md.md` → WIN copy `! copy.md (WIN).md`
+- `!-!-AUDIT-AGENTIC-VOICES-2026-04-03 (2).md` → WIN copy `!-!-AUDIT-AGENTIC-VOICES-2026-04-03 (2) (WIN).md`
+- `!-!-__!__-reflection_essay (2).md` → WIN copy `!-!-__!__-reflection_essay (2) (WIN).md`
+- `!-!REPORT-TO-JANITOR-2026-04-09 (2).md` → WIN copy `!-!REPORT-TO-JANITOR-2026-04-09 (2) (WIN).md`
+- `!-!REPORT-TO-JANITOR-CANONICAL-README-2026-04-09 (2).md` → WIN copy `!-!REPORT-TO-JANITOR-CANONICAL-README-2026-04-09 (2) (WIN).md`
+- `!-AI-CAPTURES-README (2).md` → WIN copy `!-AI-CAPTURES-README (2) (WIN).md`
+- `!-ARBORSCAPING-REPORT-2026-04-16 (2).md` → WIN copy `!-ARBORSCAPING-REPORT-2026-04-16 (2) (WIN).md`
+- `!-AUDIT-PR-LOOP-2026-04-19 (2).md` → WIN copy `!-AUDIT-PR-LOOP-2026-04-19 (2) (WIN).md`
+- `!-Arborscaping-Census-2026-04-12 (2).md` → WIN copy `!-Arborscaping-Census-2026-04-12 (2) (WIN).md`
+- `!-BOOKS-OF-NAMES-AND-THE-PRESS-2026-04-17 (2).md` → WIN copy `!-BOOKS-OF-NAMES-AND-THE-PRESS-2026-04-17 (2) (WIN).md`
+- `!-CONSTELLATION-MAP-2026-04-17 (2).md` → WIN copy `!-CONSTELLATION-MAP-2026-04-17 (2) (WIN).md`
+- `!-CREWAI-HANDOFF-CREWAI-OPS (2).md` → WIN copy `!-CREWAI-HANDOFF-CREWAI-OPS (2) (WIN).md`
+- `!-CREWAI-HYDRATION-LOG-v1 (2).md` → WIN copy `!-CREWAI-HYDRATION-LOG-v1 (2) (WIN).md`
+- `!-CREWAI-LINKER-SUMMARY-v1 (2).md` → WIN copy `!-CREWAI-LINKER-SUMMARY-v1 (2) (WIN).md`
+- `!-GRIMOIRE_caution_contains-false-doctrines-BARTIMAEUS-CREWAI-ALIGNMENT-BRIEF (2).md` → WIN copy `!-GRIMOIRE_caution_contains-false-doctrines-BARTIMAEUS-CREWAI-ALIGNMENT-BRIEF (2) (WIN).md`
+- `!-GRIMOIRE_caution_contains-false-doctrines-BRIEF-BARTIMAEUS-CREWAI-ERA (2).md` → WIN copy `!-GRIMOIRE_caution_contains-false-doctrines-BRIEF-BARTIMAEUS-CREWAI-ERA (2) (WIN).md`
+- `!-GRIMOIRE_caution_contains-false-doctrines-HANDOFF-CLAUDE-TO-ANTIGRAVITY-2026-04-04 (2).md` → WIN copy `!-GRIMOIRE_caution_contains-false-doctrines-HANDOFF-CLAUDE-TO-ANTIGRAVITY-2026-04-04 (2) (WIN).md`
+- `!-GRIMOIRE_caution_contains-false-doctrines-HANDOFF-CREWAI-IGNITION-2026-04-04 (2).md` → WIN copy `!-GRIMOIRE_caution_contains-false-doctrines-HANDOFF-CREWAI-IGNITION-2026-04-04 (2) (WIN).md`
+- `!-GRIMOIRE_caution_contains-false-doctrines-NETWEB-CREWAI-ALIGNMENT (2).md` → WIN copy `!-GRIMOIRE_caution_contains-false-doctrines-NETWEB-CREWAI-ALIGNMENT (2) (WIN).md`
+- `!-LEVELSET-ANTIGRAVITY-2026-04-06-PLAN (2).md` → WIN copy `!-LEVELSET-ANTIGRAVITY-2026-04-06-PLAN (2) (WIN).md`
+- `!-LEVELSET-ANTIGRAVITY-2026-04-06-WALKTHROUGH (2).md` → WIN copy `!-LEVELSET-ANTIGRAVITY-2026-04-06-WALKTHROUGH (2) (WIN).md`
+- `!-LEVELSET-REPORT-CLAUDE-2026-04-03 (2).md` → WIN copy `!-LEVELSET-REPORT-CLAUDE-2026-04-03 (2) (WIN).md`
+- `!-LEVELSET-REPORT-GEMINI-2026-04-05 (2).md` → WIN copy `!-LEVELSET-REPORT-GEMINI-2026-04-05 (2) (WIN).md`
+- `!-NAME-FORMS-TABLE-2026-04-17 (2).md` → WIN copy `!-NAME-FORMS-TABLE-2026-04-17 (2) (WIN).md`
+- `!-PLUGIN-REGISTRY (2).md` → WIN copy `!-PLUGIN-REGISTRY (2) (WIN).md`
+- `!-README (4).md` → WIN copy `!-README (4) (WIN).md`
+- `!-README (5).md` → WIN copy `!-README (5) (WIN).md`
+- `!-REPO-SLIMMING-PROTOCOL (2).md` → WIN copy `!-REPO-SLIMMING-PROTOCOL (2) (WIN).md`
+- `!-REPORT-GAME-REVIEW-2026-04-18 (2).md` → WIN copy `!-REPORT-GAME-REVIEW-2026-04-18 (2) (WIN).md`
+- `!-REPORT-STIGMERGIC-IMPLEMENTATION-PATHS-2026-04-22 (2).md` → WIN copy `!-REPORT-STIGMERGIC-IMPLEMENTATION-PATHS-2026-04-22 (2) (WIN).md`
+- `!-ROSTER-CENSUS-2026-04-22 (2).md` → WIN copy `!-ROSTER-CENSUS-2026-04-22 (2) (WIN).md`
+- `!-SBP-INTEGRATION-2026-04-22 (2).md` → WIN copy `!-SBP-INTEGRATION-2026-04-22 (2) (WIN).md`
+- `!-SIG-001-FROM-ABHORSEN-TO-VAULT-ADVISOR-RE-LAF44-EXHIBIT-A (2).md` → WIN copy `!-SIG-001-FROM-ABHORSEN-TO-VAULT-ADVISOR-RE-LAF44-EXHIBIT-A (2) (WIN).md`
+- `!-SIG-002-FROM-LEXICOGRAPHER-TO-SWARM-RE-CROSSFRAMING-US (2).md` → WIN copy `!-SIG-002-FROM-LEXICOGRAPHER-TO-SWARM-RE-CROSSFRAMING-US (2) (WIN).md`
+- `!-SIG-ALIGNMENT-RE-DECISION-21-2026-04-13 (2).md` → WIN copy `!-SIG-ALIGNMENT-RE-DECISION-21-2026-04-13 (2) (WIN).md`
+- `!-TRIAGE-REPORT-COPILOT-LAF-35-2026-04-08 (2).md` → WIN copy `!-TRIAGE-REPORT-COPILOT-LAF-35-2026-04-08 (2) (WIN).md`
+- `!-docs (2).md` → WIN copy `!-docs (2) (WIN).md`
+- `!-swarm 1-NOTE TO ADMIN (2).md` → WIN copy `!-swarm 1-NOTE TO ADMIN (2) (WIN).md`
+- `!-swarm 1-stabilization_plan (2).md` → WIN copy `!-swarm 1-stabilization_plan (2) (WIN).md`
+- `!-wayback-audit-2026-04-13 (2).md` → WIN copy `!-wayback-audit-2026-04-13 (2) (WIN).md`
+- `!-wayback-preserve-2026-04-03 (2).md` → WIN copy `!-wayback-preserve-2026-04-03 (2) (WIN).md`
+- `!.md (10) (2).md` → WIN copy `!.md (10) (2) (WIN).md`
+- `!.md (10).md` → WIN copy `!.md (10) (WIN).md`
+- `!.md (11) (2).md` → WIN copy `!.md (11) (2) (WIN).md`
+- `!.md (11).md` → WIN copy `!.md (11) (WIN).md`
+- `!.md (12) (2).md` → WIN copy `!.md (12) (2) (WIN).md`
+- `!.md (12).md` → WIN copy `!.md (12) (WIN).md`
+- `!.md (13).md` → WIN copy `!.md (13) (WIN).md`
+- `!.md (2) (2) (2) (2) (2) (2) (2).md` → WIN copy `!.md (2) (2) (2) (2) (2) (2) (2) (WIN).md`
+- `!.md (2) (2) (2) (2) (2) (2).md` → WIN copy `!.md (2) (2) (2) (2) (2) (2) (WIN).md`
+- `!.md (2) (2) (2) (2) (2).md` → WIN copy `!.md (2) (2) (2) (2) (2) (WIN).md`
+- `!.md (2) (2) (2) (2).md` → WIN copy `!.md (2) (2) (2) (2) (WIN).md`
+- `!.md (2) (2) (2) (3).md` → WIN copy `!.md (2) (2) (2) (3) (WIN).md`
+- `!.md (2) (2) (2).md` → WIN copy `!.md (2) (2) (2) (WIN).md`
+- `!.md (2) (2) (3) (2) (2).md` → WIN copy `!.md (2) (2) (3) (2) (2) (WIN).md`
+- `!.md (2) (2) (3) (2).md` → WIN copy `!.md (2) (2) (3) (2) (WIN).md`
+- `!.md (2) (2) (3).md` → WIN copy `!.md (2) (2) (3) (WIN).md`
+- `!.md (2) (2) (4) (2).md` → WIN copy `!.md (2) (2) (4) (2) (WIN).md`
+- `!.md (2) (2) (4).md` → WIN copy `!.md (2) (2) (4) (WIN).md`
+- `!.md (2) (2).md` → WIN copy `!.md (2) (2) (WIN).md`
+- `!.md (2) (3) (2) (2).md` → WIN copy `!.md (2) (3) (2) (2) (WIN).md`
+- `!.md (2) (3) (2).md` → WIN copy `!.md (2) (3) (2) (WIN).md`
+- `!.md (2) (3) (3) (2).md` → WIN copy `!.md (2) (3) (3) (2) (WIN).md`
+- `!.md (2) (3) (3).md` → WIN copy `!.md (2) (3) (3) (WIN).md`
+- `!.md (2) (3).md` → WIN copy `!.md (2) (3) (WIN).md`
+- `!.md (2) (4) (2) (2).md` → WIN copy `!.md (2) (4) (2) (2) (WIN).md`
+- `!.md (2) (4) (2).md` → WIN copy `!.md (2) (4) (2) (WIN).md`
+- `!.md (2) (4) (3).md` → WIN copy `!.md (2) (4) (3) (WIN).md`
+- `!.md (2) (4).md` → WIN copy `!.md (2) (4) (WIN).md`
+- `!.md (2) (5).md` → WIN copy `!.md (2) (5) (WIN).md`
+- `!.md (2) (6).md` → WIN copy `!.md (2) (6) (WIN).md`
+- `!.md (2).md` → WIN copy `!.md (2) (WIN).md`
+- `!.md (3) (2) (2) (2) (2) (2) (2).md` → WIN copy `!.md (3) (2) (2) (2) (2) (2) (2) (WIN).md`
+- `!.md (3) (2) (2) (2) (2) (2).md` → WIN copy `!.md (3) (2) (2) (2) (2) (2) (WIN).md`
+- `!.md (3) (2) (2) (2) (2).md` → WIN copy `!.md (3) (2) (2) (2) (2) (WIN).md`
+- `!.md (3) (2) (2) (2).md` → WIN copy `!.md (3) (2) (2) (2) (WIN).md`
+- `!.md (3) (2) (2).md` → WIN copy `!.md (3) (2) (2) (WIN).md`
+- `!.md (3) (2) (3) (2).md` → WIN copy `!.md (3) (2) (3) (2) (WIN).md`
+- `!.md (3) (2) (3).md` → WIN copy `!.md (3) (2) (3) (WIN).md`
+- `!.md (3) (2).md` → WIN copy `!.md (3) (2) (WIN).md`
+- `!.md (3) (3) (2) (2).md` → WIN copy `!.md (3) (3) (2) (2) (WIN).md`
+- `!.md (3) (3) (2).md` → WIN copy `!.md (3) (3) (2) (WIN).md`
+- `!.md (3) (3).md` → WIN copy `!.md (3) (3) (WIN).md`
+- `!.md (3) (4).md` → WIN copy `!.md (3) (4) (WIN).md`
+- `!.md (3).md` → WIN copy `!.md (3) (WIN).md`
+- `!.md (4) (2) (2) (2).md` → WIN copy `!.md (4) (2) (2) (2) (WIN).md`
+- `!.md (4) (2) (2).md` → WIN copy `!.md (4) (2) (2) (WIN).md`
+- `!.md (4) (2) (3) (2).md` → WIN copy `!.md (4) (2) (3) (2) (WIN).md`
+- `!.md (4) (2) (3).md` → WIN copy `!.md (4) (2) (3) (WIN).md`
+- `!.md (4) (2).md` → WIN copy `!.md (4) (2) (WIN).md`
+- `!.md (4) (3) (2).md` → WIN copy `!.md (4) (3) (2) (WIN).md`
+- `!.md (4) (3).md` → WIN copy `!.md (4) (3) (WIN).md`
+- `!.md (4) (4).md` → WIN copy `!.md (4) (4) (WIN).md`
+- `!.md (4).md` → WIN copy `!.md (4) (WIN).md`
+- `!.md (5) (2) (2) (2).md` → WIN copy `!.md (5) (2) (2) (2) (WIN).md`
+- `!.md (5) (2) (2).md` → WIN copy `!.md (5) (2) (2) (WIN).md`
+- `!.md (5) (2) (3) (2).md` → WIN copy `!.md (5) (2) (3) (2) (WIN).md`
+- `!.md (5) (2) (3).md` → WIN copy `!.md (5) (2) (3) (WIN).md`
+- `!.md (5) (2).md` → WIN copy `!.md (5) (2) (WIN).md`
+- `!.md (5) (3) (2).md` → WIN copy `!.md (5) (3) (2) (WIN).md`
+- `!.md (5) (3).md` → WIN copy `!.md (5) (3) (WIN).md`
+- `!.md (5).md` → WIN copy `!.md (5) (WIN).md`
+- `!.md (6) (2) (2) (2).md` → WIN copy `!.md (6) (2) (2) (2) (WIN).md`
+- `!.md (6) (2) (2).md` → WIN copy `!.md (6) (2) (2) (WIN).md`
+- `!.md (6) (2).md` → WIN copy `!.md (6) (2) (WIN).md`
+- `!.md (6) (3).md` → WIN copy `!.md (6) (3) (WIN).md`
+- `!.md (6).md` → WIN copy `!.md (6) (WIN).md`
+- `!.md (7) (2) (2) (2).md` → WIN copy `!.md (7) (2) (2) (2) (WIN).md`
+- `!.md (7) (2) (2).md` → WIN copy `!.md (7) (2) (2) (WIN).md`
+- `!.md (7) (2).md` → WIN copy `!.md (7) (2) (WIN).md`
+- `!.md (7) (3).md` → WIN copy `!.md (7) (3) (WIN).md`
+- `!.md (7).md` → WIN copy `!.md (7) (WIN).md`
+- `!.md (8) (2) (2) (2).md` → WIN copy `!.md (8) (2) (2) (2) (WIN).md`
+- `!.md (8) (2) (2).md` → WIN copy `!.md (8) (2) (2) (WIN).md`
+- `!.md (8) (2).md` → WIN copy `!.md (8) (2) (WIN).md`
+- `!.md (8).md` → WIN copy `!.md (8) (WIN).md`
+- `!.md (9) (2) (2).md` → WIN copy `!.md (9) (2) (2) (WIN).md`
+- `!.md (9) (2).md` → WIN copy `!.md (9) (2) (WIN).md`
+- `!.md (9).md` → WIN copy `!.md (9) (WIN).md`
+- `!.md.md` → WIN copy `!.md (WIN).md`
+- `!README (4).md` → WIN copy `!README (4) (WIN).md`
+- `!README (6).md` → WIN copy `!README (6) (WIN).md`
+- `- 2025.10.84 - Jonathan Ochi is a Japanese-American born in Idaho Falls in 1947, whose parents were both children of Japanese immigrants. His father, Fred Ochi, was a graphic artist and watercolor painter who faced.md` → WIN copy `- 2025.10.84 - Jonathan Ochi is a Japanese-American born in Idaho Falls in 1947, whose parents were both children of Japanese immigrants. His father, Fred Ochi, was a graphic artist and watercolor painter who faced (WIN).md`
+- `- Documentation - Discord - OAuth2 (2).md` → WIN copy `- Documentation - Discord - OAuth2 (2) (WIN).md`
+- `- Documentation - Discord - OAuth2 1 (2).md` → WIN copy `- Documentation - Discord - OAuth2 1 (2) (WIN).md`
+- `- Mary Hallock Foote Paintings & Artwork for Sale _ Mary Hallock Foote Art Value Price Guide.md` → WIN copy `- Mary Hallock Foote Paintings & Artwork for Sale _ Mary Hallock Foote Art Value Price Guide (WIN).md`
+- `- Mountain States Policy Center - Idaho is preparing students and educators for an AI-driven future (2).md` → WIN copy `- Mountain States Policy Center - Idaho is preparing students and educators for an AI-driven future (2) (WIN).md`
+- `- Mullen Books, ABAA - Art Across America_ Two Centuries of Regional Painting, 1710-1920 _ Volume 3 (The Far Midwest, Rocky Mountain West, Southwest, Pacific) by Gerdts, William H._ VG_VG Hardcover (1990) First edi.md` → WIN copy `- Mullen Books, ABAA - Art Across America_ Two Centuries of Regional Painting, 1710-1920 _ Volume 3 (The Far Midwest, Rocky Mountain West, Southwest, Pacific) by Gerdts, William H._ VG_VG Hardcover (1990) First edi (WIN).md`
+- `.claude/CLAUDE.md` → WIN copy `.claude/CLAUDE (WIN).md`
+- `.codex/skills/.system/openai-docs/SKILL.md` → WIN copy `.codex/skills/.system/openai-docs/SKILL (WIN).md`
+- `.config/scoop/config.json` → WIN copy `.config/scoop/config (WIN).json`
+- `.dropbox/Crashpad/settings.dat` → WIN copy `.dropbox/Crashpad/settings (WIN).dat`
+- `.dropbox/apex.sqlite3` → WIN copy `.dropbox/apex (WIN).sqlite3`
+- `.dropbox/apex.sqlite3-shm` → WIN copy `.dropbox/apex (WIN).sqlite3-shm`
+- `.dropbox/apex.sqlite3-wal` → WIN copy `.dropbox/apex (WIN).sqlite3-wal`
+- `.dropbox/boot_marker.dbx` → WIN copy `.dropbox/boot_marker (WIN).dbx`
+- `.dropbox/events/store` → WIN copy `.dropbox/events/store (WIN)`
+- `.dropbox/info.json` → WIN copy `.dropbox/info (WIN).json`
+- `.dropbox/instance1/config.dbx` → WIN copy `.dropbox/instance1/config (WIN).dbx`
+- `.dropbox/instance1/photo.dbx` → WIN copy `.dropbox/instance1/photo (WIN).dbx`
+- `.dropbox/instance_db/instance.dbx` → WIN copy `.dropbox/instance_db/instance (WIN).dbx`
+- `.dropbox/metrics/store.bin` → WIN copy `.dropbox/metrics/store (WIN).bin`
+- `.githooks/GITHOOKS.md` → WIN copy `.githooks/GITHOOKS (WIN).md`
+- `.githooks/pre-commit` → WIN copy `.githooks/pre-commit (WIN)`
+- `.githooks/stub.txt` → WIN copy `.githooks/stub (WIN).txt`
+- `.gitignore` → WIN copy `.gitignore (WIN)`
+- `.gitlab/GITLAB.md` → WIN copy `.gitlab/GITLAB (WIN).md`
+- `.gsutil/GSUTIL.md` → WIN copy `.gsutil/GSUTIL (WIN).md`
+- `.makemd/MAKEMD.md` → WIN copy `.makemd/MAKEMD (WIN).md`
+- `.obsidian/plugins/ai-image-analyzer/cache/03f45f30c94bd7cc77defcf386c82981.json` → WIN copy `.obsidian/plugins/ai-image-analyzer/cache/03f45f30c94bd7cc77defcf386c82981 (WIN).json`
+- `.obsidian/plugins/ai-image-analyzer/cache/0d7f959d6547541ebd528530dd595ee1.json` → WIN copy `.obsidian/plugins/ai-image-analyzer/cache/0d7f959d6547541ebd528530dd595ee1 (WIN).json`
+- `.obsidian/plugins/ai-image-analyzer/cache/3345cdcb628741512bfb16b82e82a0dc.json` → WIN copy `.obsidian/plugins/ai-image-analyzer/cache/3345cdcb628741512bfb16b82e82a0dc (WIN).json`
+- `.obsidian/plugins/ai-image-analyzer/cache/3d3eb58db055bf1bfd9aeac1d96b9978.json` → WIN copy `.obsidian/plugins/ai-image-analyzer/cache/3d3eb58db055bf1bfd9aeac1d96b9978 (WIN).json`
+- `.obsidian/plugins/ai-image-analyzer/cache/4012a62aa1185bff20a4a330476620d7.json` → WIN copy `.obsidian/plugins/ai-image-analyzer/cache/4012a62aa1185bff20a4a330476620d7 (WIN).json`
+- `.obsidian/plugins/ai-image-analyzer/cache/49aa483a392dffe77dea9f824b514e9b.json` → WIN copy `.obsidian/plugins/ai-image-analyzer/cache/49aa483a392dffe77dea9f824b514e9b (WIN).json`
+- `.obsidian/plugins/ai-image-analyzer/cache/4ac73167327e392f3bb361b972d371a0.json` → WIN copy `.obsidian/plugins/ai-image-analyzer/cache/4ac73167327e392f3bb361b972d371a0 (WIN).json`
+- `.obsidian/plugins/ai-image-analyzer/cache/4b486c446ad205527e78402eb3214d67.json` → WIN copy `.obsidian/plugins/ai-image-analyzer/cache/4b486c446ad205527e78402eb3214d67 (WIN).json`
+- `.obsidian/plugins/ai-image-analyzer/cache/50cc70396075f0c264d6be6dc38104a4.json` → WIN copy `.obsidian/plugins/ai-image-analyzer/cache/50cc70396075f0c264d6be6dc38104a4 (WIN).json`
+- `.obsidian/plugins/ai-image-analyzer/cache/780f580f19873054032fc101dcb73c16.json` → WIN copy `.obsidian/plugins/ai-image-analyzer/cache/780f580f19873054032fc101dcb73c16 (WIN).json`
+- `.obsidian/plugins/ai-image-analyzer/cache/9c724a7310afc9c1865035990ef0cadb.json` → WIN copy `.obsidian/plugins/ai-image-analyzer/cache/9c724a7310afc9c1865035990ef0cadb (WIN).json`
+- `.obsidian/plugins/ai-image-analyzer/cache/ab0ae04d6559eee3dbc79fd87e3e063c.json` → WIN copy `.obsidian/plugins/ai-image-analyzer/cache/ab0ae04d6559eee3dbc79fd87e3e063c (WIN).json`
+- `.obsidian/plugins/ai-image-analyzer/cache/b3777a1afc39346bbc43ee595c258fbd.json` → WIN copy `.obsidian/plugins/ai-image-analyzer/cache/b3777a1afc39346bbc43ee595c258fbd (WIN).json`
+- `.obsidian/plugins/ai-image-analyzer/cache/eb77f42e4f09e5ff8a4bca8426c9d6f1.json` → WIN copy `.obsidian/plugins/ai-image-analyzer/cache/eb77f42e4f09e5ff8a4bca8426c9d6f1 (WIN).json`
+- `.obsidian/plugins/ai-image-analyzer/cache/f12ca83b1aabd5cc1db4f178feb6ab00.json` → WIN copy `.obsidian/plugins/ai-image-analyzer/cache/f12ca83b1aabd5cc1db4f178feb6ab00 (WIN).json`
+- `.obsidian/plugins/ai-image-analyzer/cache/f89623bc75e0e0f07ab75bd96f72e098.json` → WIN copy `.obsidian/plugins/ai-image-analyzer/cache/f89623bc75e0e0f07ab75bd96f72e098 (WIN).json`
+- `.obsidian/plugins/ai-image-analyzer/cache/f9da93d3c79467762dd3d2616bb08368.json` → WIN copy `.obsidian/plugins/ai-image-analyzer/cache/f9da93d3c79467762dd3d2616bb08368 (WIN).json`
+- `.obsidian/plugins/ai-image-analyzer/cache/fd38da717dedc40d0b34e5ae0f16db17.json` → WIN copy `.obsidian/plugins/ai-image-analyzer/cache/fd38da717dedc40d0b34e5ae0f16db17 (WIN).json`
+- `.obsidian/plugins/breadcrumbs/manifest.json` → WIN copy `.obsidian/plugins/breadcrumbs/manifest (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/03f45f30c94bd7cc77defcf386c82981.json` → WIN copy `.obsidian/plugins/text-extractor/cache/03f45f30c94bd7cc77defcf386c82981 (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/0d7f959d6547541ebd528530dd595ee1.json` → WIN copy `.obsidian/plugins/text-extractor/cache/0d7f959d6547541ebd528530dd595ee1 (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/151869f2f17c627b10c05da4d86c4c2b.json` → WIN copy `.obsidian/plugins/text-extractor/cache/151869f2f17c627b10c05da4d86c4c2b (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/2883182381449664d3b339407dadb31b.json` → WIN copy `.obsidian/plugins/text-extractor/cache/2883182381449664d3b339407dadb31b (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/29da90f84f7ee052657525524b853de3.json` → WIN copy `.obsidian/plugins/text-extractor/cache/29da90f84f7ee052657525524b853de3 (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/32c3cff65bd8cae0d3a04af4f64ae624.json` → WIN copy `.obsidian/plugins/text-extractor/cache/32c3cff65bd8cae0d3a04af4f64ae624 (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/3345cdcb628741512bfb16b82e82a0dc.json` → WIN copy `.obsidian/plugins/text-extractor/cache/3345cdcb628741512bfb16b82e82a0dc (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/38336efa1dae62d2b2f938d12219cecd.json` → WIN copy `.obsidian/plugins/text-extractor/cache/38336efa1dae62d2b2f938d12219cecd (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/3d3eb58db055bf1bfd9aeac1d96b9978.json` → WIN copy `.obsidian/plugins/text-extractor/cache/3d3eb58db055bf1bfd9aeac1d96b9978 (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/4012a62aa1185bff20a4a330476620d7.json` → WIN copy `.obsidian/plugins/text-extractor/cache/4012a62aa1185bff20a4a330476620d7 (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/49aa483a392dffe77dea9f824b514e9b.json` → WIN copy `.obsidian/plugins/text-extractor/cache/49aa483a392dffe77dea9f824b514e9b (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/4b1575ae4fe916ce59c180452fbe1921.json` → WIN copy `.obsidian/plugins/text-extractor/cache/4b1575ae4fe916ce59c180452fbe1921 (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/4b486c446ad205527e78402eb3214d67.json` → WIN copy `.obsidian/plugins/text-extractor/cache/4b486c446ad205527e78402eb3214d67 (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/4c70b46547d02907069635a45fd90818.json` → WIN copy `.obsidian/plugins/text-extractor/cache/4c70b46547d02907069635a45fd90818 (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/4e947bf0b0b55779a6bcdb0fd80c4ba3.json` → WIN copy `.obsidian/plugins/text-extractor/cache/4e947bf0b0b55779a6bcdb0fd80c4ba3 (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/50cc70396075f0c264d6be6dc38104a4.json` → WIN copy `.obsidian/plugins/text-extractor/cache/50cc70396075f0c264d6be6dc38104a4 (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/51601d0244c7dec5cf43c1f7b7179e0d.json` → WIN copy `.obsidian/plugins/text-extractor/cache/51601d0244c7dec5cf43c1f7b7179e0d (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/51934ebcec21c55d4351602f593d6a68.json` → WIN copy `.obsidian/plugins/text-extractor/cache/51934ebcec21c55d4351602f593d6a68 (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/67da8cc43303410d95d06d6fb94a6459.json` → WIN copy `.obsidian/plugins/text-extractor/cache/67da8cc43303410d95d06d6fb94a6459 (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/6b46ff63624f97e470d7105b43916e3f.json` → WIN copy `.obsidian/plugins/text-extractor/cache/6b46ff63624f97e470d7105b43916e3f (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/6c45f24229442cc3b10df6fa5f23d86f.json` → WIN copy `.obsidian/plugins/text-extractor/cache/6c45f24229442cc3b10df6fa5f23d86f (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/6f199bd4fe6a25a8fb9699b61e0b8602.json` → WIN copy `.obsidian/plugins/text-extractor/cache/6f199bd4fe6a25a8fb9699b61e0b8602 (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/6f5876103306b5a663b2ffdd17b6c3b3.json` → WIN copy `.obsidian/plugins/text-extractor/cache/6f5876103306b5a663b2ffdd17b6c3b3 (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/743cc1da9bc63fd29c10e56c607df79e.json` → WIN copy `.obsidian/plugins/text-extractor/cache/743cc1da9bc63fd29c10e56c607df79e (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/780f580f19873054032fc101dcb73c16.json` → WIN copy `.obsidian/plugins/text-extractor/cache/780f580f19873054032fc101dcb73c16 (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/7b1b4f30c4f576788128bf8dffdadf2e.json` → WIN copy `.obsidian/plugins/text-extractor/cache/7b1b4f30c4f576788128bf8dffdadf2e (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/870dbc55361e67fa7fde88ab20bbc54b.json` → WIN copy `.obsidian/plugins/text-extractor/cache/870dbc55361e67fa7fde88ab20bbc54b (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/8f790205f78a2d12db84555c4b7b98e8.json` → WIN copy `.obsidian/plugins/text-extractor/cache/8f790205f78a2d12db84555c4b7b98e8 (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/95f26722169383d7df5da56121b2b582.json` → WIN copy `.obsidian/plugins/text-extractor/cache/95f26722169383d7df5da56121b2b582 (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/993b50a6f570d32b3622774b5a78265c.json` → WIN copy `.obsidian/plugins/text-extractor/cache/993b50a6f570d32b3622774b5a78265c (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/9bdd0b5a0cb4c64b4b53fefd565844de.json` → WIN copy `.obsidian/plugins/text-extractor/cache/9bdd0b5a0cb4c64b4b53fefd565844de (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/9c724a7310afc9c1865035990ef0cadb.json` → WIN copy `.obsidian/plugins/text-extractor/cache/9c724a7310afc9c1865035990ef0cadb (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/9df5c16bc89e9c2ddf15bed292520645.json` → WIN copy `.obsidian/plugins/text-extractor/cache/9df5c16bc89e9c2ddf15bed292520645 (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/9eecee23747321c0041c5fa65392e645.json` → WIN copy `.obsidian/plugins/text-extractor/cache/9eecee23747321c0041c5fa65392e645 (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/a538d65ae1c97a513ad0b3338a33dcb2.json` → WIN copy `.obsidian/plugins/text-extractor/cache/a538d65ae1c97a513ad0b3338a33dcb2 (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/a5732ffb4c9d1deb422797d59d136560.json` → WIN copy `.obsidian/plugins/text-extractor/cache/a5732ffb4c9d1deb422797d59d136560 (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/a5b7d77516942d4c3300af41f6631ecd.json` → WIN copy `.obsidian/plugins/text-extractor/cache/a5b7d77516942d4c3300af41f6631ecd (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/ab0ae04d6559eee3dbc79fd87e3e063c.json` → WIN copy `.obsidian/plugins/text-extractor/cache/ab0ae04d6559eee3dbc79fd87e3e063c (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/afe90d1ac715ba45fd0c985f4c167371.json` → WIN copy `.obsidian/plugins/text-extractor/cache/afe90d1ac715ba45fd0c985f4c167371 (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/b3777a1afc39346bbc43ee595c258fbd.json` → WIN copy `.obsidian/plugins/text-extractor/cache/b3777a1afc39346bbc43ee595c258fbd (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/b3ea571aed57480ee67e0d8a99769848.json` → WIN copy `.obsidian/plugins/text-extractor/cache/b3ea571aed57480ee67e0d8a99769848 (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/c0ee3d7d220aa61a7dd2739161e70060.json` → WIN copy `.obsidian/plugins/text-extractor/cache/c0ee3d7d220aa61a7dd2739161e70060 (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/c613167a427cf952fdcc86132c291229.json` → WIN copy `.obsidian/plugins/text-extractor/cache/c613167a427cf952fdcc86132c291229 (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/c693b2894d881e21dbbd9c202d4b0c43.json` → WIN copy `.obsidian/plugins/text-extractor/cache/c693b2894d881e21dbbd9c202d4b0c43 (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/ca20cf7fc07166d2b22ab34dacde3a77.json` → WIN copy `.obsidian/plugins/text-extractor/cache/ca20cf7fc07166d2b22ab34dacde3a77 (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/cacfb029dcd7335de6d03c9532f16130.json` → WIN copy `.obsidian/plugins/text-extractor/cache/cacfb029dcd7335de6d03c9532f16130 (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/cf0819c37eb4ce609e98ba231d89cd82.json` → WIN copy `.obsidian/plugins/text-extractor/cache/cf0819c37eb4ce609e98ba231d89cd82 (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/d8dd603cb1ee37b2077a5fb32a1bd926.json` → WIN copy `.obsidian/plugins/text-extractor/cache/d8dd603cb1ee37b2077a5fb32a1bd926 (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/dc1ee2b595bb81b2ce3985110adc0bdd.json` → WIN copy `.obsidian/plugins/text-extractor/cache/dc1ee2b595bb81b2ce3985110adc0bdd (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/dee6d6ec519aab4326948c95540da6af.json` → WIN copy `.obsidian/plugins/text-extractor/cache/dee6d6ec519aab4326948c95540da6af (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/e0a9401eb32daeade0dc6c19fd2241e8.json` → WIN copy `.obsidian/plugins/text-extractor/cache/e0a9401eb32daeade0dc6c19fd2241e8 (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/e21594521de10abcce63444f93389ef5.json` → WIN copy `.obsidian/plugins/text-extractor/cache/e21594521de10abcce63444f93389ef5 (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/e702bf27ac9ff68015887d69c11de7b2.json` → WIN copy `.obsidian/plugins/text-extractor/cache/e702bf27ac9ff68015887d69c11de7b2 (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/e9f6293946fe39ab9d27a132b8328de3.json` → WIN copy `.obsidian/plugins/text-extractor/cache/e9f6293946fe39ab9d27a132b8328de3 (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/eb77f42e4f09e5ff8a4bca8426c9d6f1.json` → WIN copy `.obsidian/plugins/text-extractor/cache/eb77f42e4f09e5ff8a4bca8426c9d6f1 (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/f12ca83b1aabd5cc1db4f178feb6ab00.json` → WIN copy `.obsidian/plugins/text-extractor/cache/f12ca83b1aabd5cc1db4f178feb6ab00 (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/f1f23cfe48f68610ed58193f17397026.json` → WIN copy `.obsidian/plugins/text-extractor/cache/f1f23cfe48f68610ed58193f17397026 (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/f8d0b3944088c2853d074d7a8818c231.json` → WIN copy `.obsidian/plugins/text-extractor/cache/f8d0b3944088c2853d074d7a8818c231 (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/f9da93d3c79467762dd3d2616bb08368.json` → WIN copy `.obsidian/plugins/text-extractor/cache/f9da93d3c79467762dd3d2616bb08368 (WIN).json`
+- `.obsidian/plugins/text-extractor/cache/fd38da717dedc40d0b34e5ae0f16db17.json` → WIN copy `.obsidian/plugins/text-extractor/cache/fd38da717dedc40d0b34e5ae0f16db17 (WIN).json`
+- `.obsidian/plugins/vault-inspector/manifest.json` → WIN copy `.obsidian/plugins/vault-inspector/manifest (WIN).json`
+- `.obsidian/types.json` → WIN copy `.obsidian/types (WIN).json`
+- `.obsidian/workspace.json` → WIN copy `.obsidian/workspace (WIN).json`
+- `.ollama/config.json` → WIN copy `.ollama/config (WIN).json`
+- `.pip-cache/PIP-CACHE.md` → WIN copy `.pip-cache/PIP-CACHE (WIN).md`
+- `.smart-env/embedding_models/embedding_models.ajson` → WIN copy `.smart-env/embedding_models/embedding_models (WIN).ajson`
+- `.smart-env/event_logs/event_logs.ajson` → WIN copy `.smart-env/event_logs/event_logs (WIN).ajson`
+- `.smart-env/multi/stub_txt.ajson` → WIN copy `.smart-env/multi/stub_txt (WIN).ajson`
+- `0.0.4.md` → WIN copy `0.0.4 (WIN).md`
+- `0.1.24.md` → WIN copy `0.1.24 (WIN).md`
+- `0.1.29.md` → WIN copy `0.1.29 (WIN).md`
+- `0.1.31.md` → WIN copy `0.1.31 (WIN).md`
+- `0.1.48.md` → WIN copy `0.1.48 (WIN).md`
+- `0.1.5.md` → WIN copy `0.1.5 (WIN).md`
+- `0.1.50-2470779139f2.md` → WIN copy `0.1.50-2470779139f2 (WIN).md`
+- `0.1.7-2841cf9749ae.md` → WIN copy `0.1.7-2841cf9749ae (WIN).md`
+- `0.1.7.md` → WIN copy `0.1.7 (WIN).md`
+- `0.1.8.md` → WIN copy `0.1.8 (WIN).md`
+- `01 (2).md` → WIN copy `01 (2) (WIN).md`
+- `01.md` → WIN copy `01 (WIN).md`
+- `02 (2) (2).md` → WIN copy `02 (2) (2) (WIN).md`
+- `02 (2).md` → WIN copy `02 (2) (WIN).md`
+- `02 (3).md` → WIN copy `02 (3) (WIN).md`
+- `02 (4).md` → WIN copy `02 (4) (WIN).md`
+- `02.md` → WIN copy `02 (WIN).md`
+- `03 (2) (2).md` → WIN copy `03 (2) (2) (WIN).md`
+- `03 (2).md` → WIN copy `03 (2) (WIN).md`
+- `03 (3).md` → WIN copy `03 (3) (WIN).md`
+- `03.md` → WIN copy `03 (WIN).md`
+- `04 (2) (2).md` → WIN copy `04 (2) (2) (WIN).md`
+- `04 (2).md` → WIN copy `04 (2) (WIN).md`
+- `04 (3).md` → WIN copy `04 (3) (WIN).md`
+- `04 (4).md` → WIN copy `04 (4) (WIN).md`
+- `04.md` → WIN copy `04 (WIN).md`
+- `05 (2) (2).md` → WIN copy `05 (2) (2) (WIN).md`
+- `05 (2).md` → WIN copy `05 (2) (WIN).md`
+- `1921 Borah - Necessity for Naval Disarmament copy.md` → WIN copy `1921 Borah - Necessity for Naval Disarmament copy (WIN).md`
+- `1password-resolver.md` → WIN copy `1password-resolver (WIN).md`
+- `2018-02-01 - @lfinneytweets - The opening session concludes with performances by the Lake....md` → WIN copy `2018-02-01 - @lfinneytweets - The opening session concludes with performances by the Lake... (WIN).md`
+- `2018-02-01 - @lfinneytweets - just started the 2018 IMEA All-State Inservice Conference....md` → WIN copy `2018-02-01 - @lfinneytweets - just started the 2018 IMEA All-State Inservice Conference... (WIN).md`
+- `2018-02-09 - @lfinneytweets - RT @mattdpearce The Los Angeles Times' new owner, Patrick....md` → WIN copy `2018-02-09 - @lfinneytweets - RT @mattdpearce The Los Angeles Times' new owner, Patrick... (WIN).md`
+- `2018-03-05 - @lfinneytweets - Had a great time experiencing the #Oscars90 tonight with....md` → WIN copy `2018-03-05 - @lfinneytweets - Had a great time experiencing the #Oscars90 tonight with... (WIN).md`
+- `2018-03-09 - @lfinneytweets - RT @robcurley Shawn Vestal WSU students step up, fund....md` → WIN copy `2018-03-09 - @lfinneytweets - RT @robcurley Shawn Vestal WSU students step up, fund... (WIN).md`
+- `2018-03-15 - @lfinneytweets - RT @uiargonaut Make sure to vote in this year's Best of....md` → WIN copy `2018-03-15 - @lfinneytweets - RT @uiargonaut Make sure to vote in this year's Best of... (WIN).md`
+- `2018-03-17 - @lfinneytweets - RT @ObsoleteDogma Toys R Us as a metaphor for our overly....md` → WIN copy `2018-03-17 - @lfinneytweets - RT @ObsoleteDogma Toys R Us as a metaphor for our overly... (WIN).md`
+- `2018-03-21 - @lfinneytweets - tweet.md` → WIN copy `2018-03-21 - @lfinneytweets - tweet (WIN).md`
+- `2018-03-25 - @lfinneytweets - RT @Pfannyyy Huge turnout at the #MarchForOurLives in Boise..md` → WIN copy `2018-03-25 - @lfinneytweets - RT @Pfannyyy Huge turnout at the #MarchForOurLives in Boise. (WIN).md`
+- `2018-03-25 - @lfinneytweets - RT @savannahlcardon Palouse #MarchForOurLives protesters....md` → WIN copy `2018-03-25 - @lfinneytweets - RT @savannahlcardon Palouse #MarchForOurLives protesters... (WIN).md`
+- `2018-04-01 - @lfinneytweets - RT @IdahoPubRadio .@PauletteEJordan, running for Idaho....md` → WIN copy `2018-04-01 - @lfinneytweets - RT @IdahoPubRadio .@PauletteEJordan, running for Idaho... (WIN).md`
+- `2018-04-05 - @lfinneytweets - Lunch from @moscowfoodcoop and this week's @uiargonaut....md` → WIN copy `2018-04-05 - @lfinneytweets - Lunch from @moscowfoodcoop and this week's @uiargonaut... (WIN).md`
+- `2018-04-05 - @lfinneytweets - RT @NinjaEconomics Netflix surpasses TV..md` → WIN copy `2018-04-05 - @lfinneytweets - RT @NinjaEconomics Netflix surpasses TV. (WIN).md`
+- `2018-04-09 - @lfinneytweets - RT @ASUIDAHO.md` → WIN copy `2018-04-09 - @lfinneytweets - RT @ASUIDAHO (WIN).md`
+- `2018-04-12 - @lfinneytweets - RT @UofILibrary More than a hundred years of @uiargonaut in....md` → WIN copy `2018-04-12 - @lfinneytweets - RT @UofILibrary More than a hundred years of @uiargonaut in... (WIN).md`
+- `2018-04-13 - @lfinneytweets - Also featuring my favorite #Millennials correction.md` → WIN copy `2018-04-13 - @lfinneytweets - Also featuring my favorite #Millennials correction (WIN).md`
+- `2018-04-13 - @lfinneytweets - RT @robcurley Beloved humor writer Patrick McManus dies at....md` → WIN copy `2018-04-13 - @lfinneytweets - RT @robcurley Beloved humor writer Patrick McManus dies at... (WIN).md`
+- `2018-04-25 - @lfinneytweets - I'm so happy right now because I'm using three highlighter....md` → WIN copy `2018-04-25 - @lfinneytweets - I'm so happy right now because I'm using three highlighter... (WIN).md`
+- `2018-05-06 - @lfinneytweets - tweet.md` → WIN copy `2018-05-06 - @lfinneytweets - tweet (WIN).md`
+- `2018-05-11 - @lfinneytweets - RT @IdahoStatesman Endorsement Brad Little gets our nod in....md` → WIN copy `2018-05-11 - @lfinneytweets - RT @IdahoStatesman Endorsement Brad Little gets our nod in... (WIN).md`
+- `2018-05-11 - @lfinneytweets - RT @IdahoStatesman Endorsement Paulette Jordan gets our nod....md` → WIN copy `2018-05-11 - @lfinneytweets - RT @IdahoStatesman Endorsement Paulette Jordan gets our nod... (WIN).md`
+- `2018-05-17 - @lfinneytweets - RT @clarkcorbin Republican unity rally. Maybe the crowd is....md` → WIN copy `2018-05-17 - @lfinneytweets - RT @clarkcorbin Republican unity rally. Maybe the crowd is... (WIN).md`
+- `2018-05-22 - @lfinneytweets - RT @abrunelle Well this settles it. Largest turnout ever....md` → WIN copy `2018-05-22 - @lfinneytweets - RT @abrunelle Well this settles it. Largest turnout ever... (WIN).md`
+- `2018-05-31 - @lfinneytweets - RT @jribas weird couple of years for brands.md` → WIN copy `2018-05-31 - @lfinneytweets - RT @jribas weird couple of years for brands (WIN).md`
+- `2018-06-02 - @lfinneytweets - June is LGBTQ+ Pride Month! This is the original #pride....md` → WIN copy `2018-06-02 - @lfinneytweets - June is LGBTQ+ Pride Month! This is the original #pride... (WIN).md`
+- `2018-06-05 - @lfinneytweets - Harvey Milk was a famous openly gay politician who....md` → WIN copy `2018-06-05 - @lfinneytweets - Harvey Milk was a famous openly gay politician who... (WIN).md`
+- `2018-06-07 - @lfinneytweets - Gilbert Baker created a mile-long rainbow flag in 1994 for....md` → WIN copy `2018-06-07 - @lfinneytweets - Gilbert Baker created a mile-long rainbow flag in 1994 for... (WIN).md`
+- `2018-06-13 - @lfinneytweets - Haring was diagnosed with AIDS in 1988. He then established....md` → WIN copy `2018-06-13 - @lfinneytweets - Haring was diagnosed with AIDS in 1988. He then established... (WIN).md`
+- `2018-06-13 - @lfinneytweets - In addition to his cartoonish style, Haring was known for....md` → WIN copy `2018-06-13 - @lfinneytweets - In addition to his cartoonish style, Haring was known for... (WIN).md`
+- `2018-06-13 - @lfinneytweets - Keith Haring was a painter and pop artist whose rose to....md` → WIN copy `2018-06-13 - @lfinneytweets - Keith Haring was a painter and pop artist whose rose to... (WIN).md`
+- `2018-06-18 - @lfinneytweets - RT @IdahoStatesman I can't believe the rainbow flag is all....md` → WIN copy `2018-06-18 - @lfinneytweets - RT @IdahoStatesman I can't believe the rainbow flag is all... (WIN).md`
+- `2018-06-23 - @lfinneytweets - Ignorance = Fear Keith Haring, 1989..md` → WIN copy `2018-06-23 - @lfinneytweets - Ignorance = Fear Keith Haring, 1989. (WIN).md`
+- `2018-06-23 - @lfinneytweets - The famous @actupny SILENCE=DEATH AIDS awareness poster.md` → WIN copy `2018-06-23 - @lfinneytweets - The famous @actupny SILENCE=DEATH AIDS awareness poster (WIN).md`
+- `2018-06-27 - @lfinneytweets - Gem State Crystals sees your man bites dog headline and....md` → WIN copy `2018-06-27 - @lfinneytweets - Gem State Crystals sees your man bites dog headline and... (WIN).md`
+- `2018-07-23 - @lfinneytweets - RT @kkruesi I just want everyone to read this piece by....md` → WIN copy `2018-07-23 - @lfinneytweets - RT @kkruesi I just want everyone to read this piece by... (WIN).md`
+- `2018-09-10 - @lfinneytweets - RT @KTVB Health experts alarmed by jump in STDs in Idaho.md` → WIN copy `2018-09-10 - @lfinneytweets - RT @KTVB Health experts alarmed by jump in STDs in Idaho (WIN).md`
+- `2018-10-02 - @lfinneytweets - RT @blotmag Don't forget, the first issue of Blot Magazine....md` → WIN copy `2018-10-02 - @lfinneytweets - RT @blotmag Don't forget, the first issue of Blot Magazine... (WIN).md`
+- `2018-10-11 - @lfinneytweets - RT @uiargonaut Think you know your Argonaut history Go to....md` → WIN copy `2018-10-11 - @lfinneytweets - RT @uiargonaut Think you know your Argonaut history Go to... (WIN).md`
+- `2019-01-19 - @lfinneytweets - RT @uiargonaut The Moscow community march to East City Park..md` → WIN copy `2019-01-19 - @lfinneytweets - RT @uiargonaut The Moscow community march to East City Park. (WIN).md`
+- `2019-01-30 - @lfinneytweets - #reinstatedenise.md` → WIN copy `2019-01-30 - @lfinneytweets - #reinstatedenise (WIN).md`
+- `2019-01-31 - @lfinneytweets - #reinstatedenise.md` → WIN copy `2019-01-31 - @lfinneytweets - #reinstatedenise (WIN).md`
+- `2019-01-31 - @lfinneytweets - Official statement from Students for Denise regarding....md` → WIN copy `2019-01-31 - @lfinneytweets - Official statement from Students for Denise regarding... (WIN).md`
+- `2019-01-31 - @lfinneytweets - RT @EllamaeBurnell Protesters are standing in silence....md` → WIN copy `2019-01-31 - @lfinneytweets - RT @EllamaeBurnell Protesters are standing in silence... (WIN).md`
+- `2019-02-02 - @lfinneytweets - tweet.md` → WIN copy `2019-02-02 - @lfinneytweets - tweet (WIN).md`
+- `2019-02-10 - @lfinneytweets - Moscow folks Want to make an extra $10-$20 every Thursday....md` → WIN copy `2019-02-10 - @lfinneytweets - Moscow folks Want to make an extra $10-$20 every Thursday... (WIN).md`
+- `2019-02-20 - @lfinneytweets - tweet.md` → WIN copy `2019-02-20 - @lfinneytweets - tweet (WIN).md`
+- `2019-02-26 - @lfinneytweets - #idpol.md` → WIN copy `2019-02-26 - @lfinneytweets - #idpol (WIN).md`
+- `2019-03-02 - @lfinneytweets - RT @blotmag Get ready for six brand new stories, on stands....md` → WIN copy `2019-03-02 - @lfinneytweets - RT @blotmag Get ready for six brand new stories, on stands... (WIN).md`
+- `2019-03-04 - @lfinneytweets - RT @_AlexHirsch Journalism...the 4th Estate.md` → WIN copy `2019-03-04 - @lfinneytweets - RT @_AlexHirsch Journalism...the 4th Estate (WIN).md`
+- `2019-03-04 - @lfinneytweets - Watch my new teaser for @blotmag and check out the print....md` → WIN copy `2019-03-04 - @lfinneytweets - Watch my new teaser for @blotmag and check out the print... (WIN).md`
+- `2019-04-09 - @lfinneytweets - RT @GovernorLittle My in basket is empty.md` → WIN copy `2019-04-09 - @lfinneytweets - RT @GovernorLittle My in basket is empty (WIN).md`
+- `2019-04-10 - @lfinneytweets - whistled out loud reading this kicker.md` → WIN copy `2019-04-10 - @lfinneytweets - whistled out loud reading this kicker (WIN).md`
+- `2019-04-17 - @lfinneytweets - Behind the scenes of @KUOIFM The Vandal Scoreboard with....md` → WIN copy `2019-04-17 - @lfinneytweets - Behind the scenes of @KUOIFM The Vandal Scoreboard with... (WIN).md`
+- `2019-04-17 - @lfinneytweets - tweet.md` → WIN copy `2019-04-17 - @lfinneytweets - tweet (WIN).md`
+- `2019-04-18 - @lfinneytweets - RT @uiargonaut Check out this week's political cartoon by....md` → WIN copy `2019-04-18 - @lfinneytweets - RT @uiargonaut Check out this week's political cartoon by... (WIN).md`
+- `2019-04-26 - @lfinneytweets - I do...on occasion. My circadian rhythm has been varying....md` → WIN copy `2019-04-26 - @lfinneytweets - I do...on occasion. My circadian rhythm has been varying... (WIN).md`
+- `2019-04-26 - @lfinneytweets - tweet.md` → WIN copy `2019-04-26 - @lfinneytweets - tweet (WIN).md`
+- `2019-05-02 - @lfinneytweets - RT @ryannoyance Does anyone have $2,478 laying around I....md` → WIN copy `2019-05-02 - @lfinneytweets - RT @ryannoyance Does anyone have $2,478 laying around I... (WIN).md`
+- `2019-05-04 - @lfinneytweets - Films start in 15 minutes! @KenworthyPAC.md` → WIN copy `2019-05-04 - @lfinneytweets - Films start in 15 minutes! @KenworthyPAC (WIN).md`
+- `2019-05-11 - @lfinneytweets - Gil got me one too!.md` → WIN copy `2019-05-11 - @lfinneytweets - Gil got me one too! (WIN).md`
+- `2019-06-06 - @lfinneytweets - Found this oasis in a comment thread once.md` → WIN copy `2019-06-06 - @lfinneytweets - Found this oasis in a comment thread once (WIN).md`
+- `2019-06-14 - @lfinneytweets - tweet.md` → WIN copy `2019-06-14 - @lfinneytweets - tweet (WIN).md`
+- `2019-12-11 - @lfinneytweets - See you in January, @UIMcClure!.md` → WIN copy `2019-12-11 - @lfinneytweets - See you in January, @UIMcClure! (WIN).md`
+- `2020-01-03 - @lfinneytweets - Behind the scenes in the @IdahoPTV studio for the first....md` → WIN copy `2020-01-03 - @lfinneytweets - Behind the scenes in the @IdahoPTV studio for the first... (WIN).md`
+- `2020-01-03 - @lfinneytweets - RT @KREMTaylor New photos of the derailment via Boundary....md` → WIN copy `2020-01-03 - @lfinneytweets - RT @KREMTaylor New photos of the derailment via Boundary... (WIN).md`
+- `2020-01-06 - @lfinneytweets - RT @madisonhardy05 Q&A with @GovernorLittle after the....md` → WIN copy `2020-01-06 - @lfinneytweets - RT @madisonhardy05 Q&A with @GovernorLittle after the... (WIN).md`
+- `2020-01-09 - @lfinneytweets - My takeaway from two weeks on the platform the youth are....md` → WIN copy `2020-01-09 - @lfinneytweets - My takeaway from two weeks on the platform the youth are... (WIN).md`
+- `2020-01-09 - @lfinneytweets - Rep. Melissa Wintrow, Rep. Sally Toone and Sen. Jim....md` → WIN copy `2020-01-09 - @lfinneytweets - Rep. Melissa Wintrow, Rep. Sally Toone and Sen. Jim... (WIN).md`
+- `2020-01-10 - @lfinneytweets - tweet.md` → WIN copy `2020-01-10 - @lfinneytweets - tweet (WIN).md`
+- `2020-01-13 - @lfinneytweets - tweet.md` → WIN copy `2020-01-13 - @lfinneytweets - tweet (WIN).md`
+- `2020-01-14 - @lfinneytweets - Sen. Martin is taking time while the Senate is at ease to....md` → WIN copy `2020-01-14 - @lfinneytweets - Sen. Martin is taking time while the Senate is at ease to... (WIN).md`
+- `2020-01-16 - @lfinneytweets - After a lengthy majority caucus meeting, the Idaho House....md` → WIN copy `2020-01-16 - @lfinneytweets - After a lengthy majority caucus meeting, the Idaho House... (WIN).md`
+- `2020-01-16 - @lfinneytweets - Thanks to @UIMcClure for bringing us along to the Idaho....md` → WIN copy `2020-01-16 - @lfinneytweets - Thanks to @UIMcClure for bringing us along to the Idaho... (WIN).md`
+- `2020-01-16 - @lfinneytweets - is presenting rules to the House Environment committee....md` → WIN copy `2020-01-16 - @lfinneytweets - is presenting rules to the House Environment committee... (WIN).md`
+- `2020-01-20 - @lfinneytweets - Live from the @UIMcClure intern office.md` → WIN copy `2020-01-20 - @lfinneytweets - Live from the @UIMcClure intern office (WIN).md`
+- `2020-01-20 - @lfinneytweets - tweet.md` → WIN copy `2020-01-20 - @lfinneytweets - tweet (WIN).md`
+- `2020-01-21 - @lfinneytweets - President Cynthia Pemberton presented her university's....md` → WIN copy `2020-01-21 - @lfinneytweets - President Cynthia Pemberton presented her university's... (WIN).md`
+- `2020-01-21 - @lfinneytweets - Realtors gather in the rotunda for @Idaho_Realtors Annual....md` → WIN copy `2020-01-21 - @lfinneytweets - Realtors gather in the rotunda for @Idaho_Realtors Annual... (WIN).md`
+- `2020-01-22 - @lfinneytweets - #idpol.md` → WIN copy `2020-01-22 - @lfinneytweets - #idpol (WIN).md`
+- `2020-01-22 - @lfinneytweets - tweet (528960).md` → WIN copy `2020-01-22 - @lfinneytweets - tweet (528960) (WIN).md`
+- `2020-01-22 - @lfinneytweets - tweet.md` → WIN copy `2020-01-22 - @lfinneytweets - tweet (WIN).md`
+- `2020-01-23 - @lfinneytweets - RT @NateBrownNews Found an #idpol tidbit in the Wikipedia....md` → WIN copy `2020-01-23 - @lfinneytweets - RT @NateBrownNews Found an #idpol tidbit in the Wikipedia... (WIN).md`
+- `2020-01-23 - @lfinneytweets - Superintendent Ybarra is before JFAC this morning to....md` → WIN copy `2020-01-23 - @lfinneytweets - Superintendent Ybarra is before JFAC this morning to... (WIN).md`
+- `2020-01-24 - @lfinneytweets - tweet.md` → WIN copy `2020-01-24 - @lfinneytweets - tweet (WIN).md`
+- `2020-01-27 - @lfinneytweets - Joint House & Senate Judiciary meeting today for a....md` → WIN copy `2020-01-27 - @lfinneytweets - Joint House & Senate Judiciary meeting today for a... (WIN).md`
+- `2020-01-28 - @lfinneytweets - RT @BetsyZRussell Eye on Boise House defeats daycare....md` → WIN copy `2020-01-28 - @lfinneytweets - RT @BetsyZRussell Eye on Boise House defeats daycare... (WIN).md`
+- `2020-01-29 - @lfinneytweets - I love doing #idleg #idpol research..md` → WIN copy `2020-01-29 - @lfinneytweets - I love doing #idleg #idpol research. (WIN).md`
+- `2020-02-03 - @lfinneytweets - tweet.md` → WIN copy `2020-02-03 - @lfinneytweets - tweet (WIN).md`
+- `2020-02-04 - @lfinneytweets - At House Enviro, Energy & Tech for a presentation on....md` → WIN copy `2020-02-04 - @lfinneytweets - At House Enviro, Energy & Tech for a presentation on... (WIN).md`
+- `2020-02-04 - @lfinneytweets - Passed the House today #idleg #idpol.md` → WIN copy `2020-02-04 - @lfinneytweets - Passed the House today #idleg #idpol (WIN).md`
+- `2020-02-04 - @lfinneytweets - RT @kridler Republican Rep. Terry Gestrin donates blood at....md` → WIN copy `2020-02-04 - @lfinneytweets - RT @kridler Republican Rep. Terry Gestrin donates blood at... (WIN).md`
+- `2020-02-05 - @lfinneytweets - -eliminate marriage licenses issued by state, replacing....md` → WIN copy `2020-02-05 - @lfinneytweets - -eliminate marriage licenses issued by state, replacing... (WIN).md`
+- `2020-02-05 - @lfinneytweets - House Judiciary listened to presentations from several....md` → WIN copy `2020-02-05 - @lfinneytweets - House Judiciary listened to presentations from several... (WIN).md`
+- `2020-02-05 - @lfinneytweets - RT @idahofreedom Rep. Judy Boyle and the Common Core....md` → WIN copy `2020-02-05 - @lfinneytweets - RT @idahofreedom Rep. Judy Boyle and the Common Core... (WIN).md`
+- `2020-02-06 - @lfinneytweets - The only water rights I was aware of as a kid next to Lake....md` → WIN copy `2020-02-06 - @lfinneytweets - The only water rights I was aware of as a kid next to Lake... (WIN).md`
+- `2020-02-06 - @lfinneytweets - This week's @TheInlander cover story by @danielwinlander In....md` → WIN copy `2020-02-06 - @lfinneytweets - This week's @TheInlander cover story by @danielwinlander In... (WIN).md`
+- `2020-02-07 - @lfinneytweets - #idleg #idpol.md` → WIN copy `2020-02-07 - @lfinneytweets - #idleg #idpol (WIN).md`
+- `2020-02-12 - @lfinneytweets - tweet (444481).md` → WIN copy `2020-02-12 - @lfinneytweets - tweet (444481) (WIN).md`
+- `2020-02-12 - @lfinneytweets - tweet.md` → WIN copy `2020-02-12 - @lfinneytweets - tweet (WIN).md`
+- `2020-02-17 - @lfinneytweets - H440 to ban preferential treatment in public sector hiring....md` → WIN copy `2020-02-17 - @lfinneytweets - H440 to ban preferential treatment in public sector hiring... (WIN).md`
+- `2020-02-18 - @lfinneytweets - Specialty @IdahoITD license plate day at #idleg with dual....md` → WIN copy `2020-02-18 - @lfinneytweets - Specialty @IdahoITD license plate day at #idleg with dual... (WIN).md`
+- `2020-02-19 - @lfinneytweets - At the @IdahoPress Club breakfast with Governor Brad Little....md` → WIN copy `2020-02-19 - @lfinneytweets - At the @IdahoPress Club breakfast with Governor Brad Little... (WIN).md`
+- `2020-02-19 - @lfinneytweets - Documents were signed today to officially establish the....md` → WIN copy `2020-02-19 - @lfinneytweets - Documents were signed today to officially establish the... (WIN).md`
+- `2020-02-19 - @lfinneytweets - House Minority Leader @IlanaRubel held a press conference....md` → WIN copy `2020-02-19 - @lfinneytweets - House Minority Leader @IlanaRubel held a press conference... (WIN).md`
+- `2020-02-19 - @lfinneytweets - Moyle posits the freeze as an incentive to bring local....md` → WIN copy `2020-02-19 - @lfinneytweets - Moyle posits the freeze as an incentive to bring local... (WIN).md`
+- `2020-02-19 - @lfinneytweets - Time to write that article....md` → WIN copy `2020-02-19 - @lfinneytweets - Time to write that article... (WIN).md`
+- `2020-02-21 - @lfinneytweets - CORRECTION Clocks would match statewide during the 4 winter....md` → WIN copy `2020-02-21 - @lfinneytweets - CORRECTION Clocks would match statewide during the 4 winter... (WIN).md`
+- `2020-02-21 - @lfinneytweets - Sales tax exemption for custom meat processing passes the....md` → WIN copy `2020-02-21 - @lfinneytweets - Sales tax exemption for custom meat processing passes the... (WIN).md`
+- `2020-02-21 - @lfinneytweets - Senate State Affairs is hearing a bill from Sen. Vick....md` → WIN copy `2020-02-21 - @lfinneytweets - Senate State Affairs is hearing a bill from Sen. Vick... (WIN).md`
+- `2020-02-21 - @lfinneytweets - So what are you going to do after your internship.md` → WIN copy `2020-02-21 - @lfinneytweets - So what are you going to do after your internship (WIN).md`
+- `2020-02-21 - @lfinneytweets - Specifically UTC-7.md` → WIN copy `2020-02-21 - @lfinneytweets - Specifically UTC-7 (WIN).md`
+- `2020-02-25 - @lfinneytweets - Idaho members of the National Association of Social Workers....md` → WIN copy `2020-02-25 - @lfinneytweets - Idaho members of the National Association of Social Workers... (WIN).md`
+- `2020-02-28 - @lfinneytweets - #idpol #idleg.md` → WIN copy `2020-02-28 - @lfinneytweets - #idpol #idleg (WIN).md`
+- `2020-02-28 - @lfinneytweets - I asked them if the Legislature does a good job of....md` → WIN copy `2020-02-28 - @lfinneytweets - I asked them if the Legislature does a good job of... (WIN).md`
+- `2020-02-28 - @lfinneytweets - Rep. Heather Scott is calling her abortion ban bill forward....md` → WIN copy `2020-02-28 - @lfinneytweets - Rep. Heather Scott is calling her abortion ban bill forward... (WIN).md`
+- `2020-02-28 - @lfinneytweets - Scott's call defeated pretty solidly. She says she will....md` → WIN copy `2020-02-28 - @lfinneytweets - Scott's call defeated pretty solidly. She says she will... (WIN).md`
+- `2020-02-28 - @lfinneytweets - Teens crowd the third floor of the rotunda in protest of....md` → WIN copy `2020-02-28 - @lfinneytweets - Teens crowd the third floor of the rotunda in protest of... (WIN).md`
+- `2020-03-03 - @lfinneytweets - Shoutout to the Bonner County elections office for helping....md` → WIN copy `2020-03-03 - @lfinneytweets - Shoutout to the Bonner County elections office for helping... (WIN).md`
+- `2020-03-04 - @lfinneytweets - Candidates have begun to file with @IDSecOfState for the....md` → WIN copy `2020-03-04 - @lfinneytweets - Candidates have begun to file with @IDSecOfState for the... (WIN).md`
+- `2020-03-06 - @lfinneytweets - Traffic signal outside the state capitol building, written....md` → WIN copy `2020-03-06 - @lfinneytweets - Traffic signal outside the state capitol building, written... (WIN).md`
+- `2020-03-07 - @lfinneytweets - Idaho representatives @nicholsforidaho, @RepHeatherScott &....md` → WIN copy `2020-03-07 - @lfinneytweets - Idaho representatives @nicholsforidaho, @RepHeatherScott &... (WIN).md`
+- `2020-03-07 - @lfinneytweets - RT @IdahoPubRadio PHOTOS The March for Trump, Rally and....md` → WIN copy `2020-03-07 - @lfinneytweets - RT @IdahoPubRadio PHOTOS The March for Trump, Rally and... (WIN).md`
+- `2020-03-09 - @lfinneytweets - Idaho House votes down @IDSecOfState budget as well. #idleg....md` → WIN copy `2020-03-09 - @lfinneytweets - Idaho House votes down @IDSecOfState budget as well. #idleg... (WIN).md`
+- `2020-03-09 - @lfinneytweets - RT @NateBrownNews The higher ed budget has failed 32-37.....md` → WIN copy `2020-03-09 - @lfinneytweets - RT @NateBrownNews The higher ed budget has failed 32-37.... (WIN).md`
+- `2020-03-09 - @lfinneytweets - RT @SamSykesSwears communicating with people on twitter dot....md` → WIN copy `2020-03-09 - @lfinneytweets - RT @SamSykesSwears communicating with people on twitter dot... (WIN).md`
+- `2020-03-10 - @lfinneytweets - #idleg does anything The Twitterverse.md` → WIN copy `2020-03-10 - @lfinneytweets - #idleg does anything The Twitterverse (WIN).md`
+- `2020-03-11 - @lfinneytweets - As soon as polls closed in Mississippi and Missouri at 8....md` → WIN copy `2020-03-11 - @lfinneytweets - As soon as polls closed in Mississippi and Missouri at 8... (WIN).md`
+- `2020-03-11 - @lfinneytweets - RT @RadioDawson The House just rejected AG....md` → WIN copy `2020-03-11 - @lfinneytweets - RT @RadioDawson The House just rejected AG... (WIN).md`
+- `2020-03-11 - @lfinneytweets - What did I JUST say.md` → WIN copy `2020-03-11 - @lfinneytweets - What did I JUST say (WIN).md`
+- `2020-03-12 - @lfinneytweets - #COVID19 response funds passed unanimously by both the....md` → WIN copy `2020-03-12 - @lfinneytweets - #COVID19 response funds passed unanimously by both the... (WIN).md`
+- `2020-03-12 - @lfinneytweets - Hefty agenda for #idleg Senate State Affairs tomorrow....md` → WIN copy `2020-03-12 - @lfinneytweets - Hefty agenda for #idleg Senate State Affairs tomorrow... (WIN).md`
+- `2020-03-12 - @lfinneytweets - House is going into recess until 2pm. JFAC meets at 3pm.....md` → WIN copy `2020-03-12 - @lfinneytweets - House is going into recess until 2pm. JFAC meets at 3pm.... (WIN).md`
+- `2020-03-12 - @lfinneytweets - The Joint Finance-Appropriations Committee meets again to....md` → WIN copy `2020-03-12 - @lfinneytweets - The Joint Finance-Appropriations Committee meets again to... (WIN).md`
+- `2020-03-12 - @lfinneytweets - Votes from North Idaho 1. Woodward (R-Sandpoint) N. 2. Vick....md` → WIN copy `2020-03-12 - @lfinneytweets - Votes from North Idaho 1. Woodward (R-Sandpoint) N. 2. Vick... (WIN).md`
+- `2020-03-13 - @lfinneytweets - A packed press conference this morning where....md` → WIN copy `2020-03-13 - @lfinneytweets - A packed press conference this morning where... (WIN).md`
+- `2020-03-13 - @lfinneytweets - This was the Walmart hand sanitizer shelf I walked past....md` → WIN copy `2020-03-13 - @lfinneytweets - This was the Walmart hand sanitizer shelf I walked past... (WIN).md`
+- `2020-03-16 - @lfinneytweets - #AttentionIdahoReporters.md` → WIN copy `2020-03-16 - @lfinneytweets - #AttentionIdahoReporters (WIN).md`
+- `2020-03-16 - @lfinneytweets - #HB500 passes the Senate 24-11. No votes Democrats (7),....md` → WIN copy `2020-03-16 - @lfinneytweets - #HB500 passes the Senate 24-11. No votes Democrats (7),... (WIN).md`
+- `2020-03-16 - @lfinneytweets - #idedu #idpol #idahocovid19.md` → WIN copy `2020-03-16 - @lfinneytweets - #idedu #idpol #idahocovid19 (WIN).md`
+- `2020-03-16 - @lfinneytweets - Amended homeowner's exemption bill carries in the House.....md` → WIN copy `2020-03-16 - @lfinneytweets - Amended homeowner's exemption bill carries in the House.... (WIN).md`
+- `2020-03-16 - @lfinneytweets - Idaho House approves SB 1350a to require a funding source....md` → WIN copy `2020-03-16 - @lfinneytweets - Idaho House approves SB 1350a to require a funding source... (WIN).md`
+- `2020-03-16 - @lfinneytweets - Idaho House votes down the budget for public colleges and....md` → WIN copy `2020-03-16 - @lfinneytweets - Idaho House votes down the budget for public colleges and... (WIN).md`
+- `2020-03-16 - @lfinneytweets - RT @Oregonian Mitt Romney proposes giving every American....md` → WIN copy `2020-03-16 - @lfinneytweets - RT @Oregonian Mitt Romney proposes giving every American... (WIN).md`
+- `2020-03-16 - @lfinneytweets - Senate amendments to the affirmative action bill approved....md` → WIN copy `2020-03-16 - @lfinneytweets - Senate amendments to the affirmative action bill approved... (WIN).md`
+- `2020-03-16 - @lfinneytweets - tweet.md` → WIN copy `2020-03-16 - @lfinneytweets - tweet (WIN).md`
+- `2020-03-17 - @lfinneytweets - RT @AmadorforIdaho You know it is time to go home when....md` → WIN copy `2020-03-17 - @lfinneytweets - RT @AmadorforIdaho You know it is time to go home when... (WIN).md`
+- `2020-03-17 - @lfinneytweets - Rep. John Ganon (D-Boise) just came by the press room with....md` → WIN copy `2020-03-17 - @lfinneytweets - Rep. John Ganon (D-Boise) just came by the press room with... (WIN).md`
+- `2026-04-16 (2).md` → WIN copy `2026-04-16 (2) (WIN).md`
+- `2026-04-28 (2).md` → WIN copy `2026-04-28 (2) (WIN).md`
+- `2026-06-20.md` → WIN copy `2026-06-20 (WIN).md`
+- `2026-06-21.md` → WIN copy `2026-06-21 (WIN).md`
+- `2026-07-09.md` → WIN copy `2026-07-09 (WIN).md`
+- `2026-07-13.md` → WIN copy `2026-07-13 (WIN).md`
+- `2026-07-21.md` → WIN copy `2026-07-21 (WIN).md`
+- `2026-07-27.md` → WIN copy `2026-07-27 (WIN).md`
+- `2026-07-31.md` → WIN copy `2026-07-31 (WIN).md`
+- `5.0.0 (2).md` → WIN copy `5.0.0 (2) (WIN).md`
+- `A&I-RD-SESSION-DOCTRINE-2026-05-18 (2).md` → WIN copy `A&I-RD-SESSION-DOCTRINE-2026-05-18 (2) (WIN).md`
+- `A&I-RD-SESSION-DOCTRINE-2026-05-19 (2).md` → WIN copy `A&I-RD-SESSION-DOCTRINE-2026-05-19 (2) (WIN).md`
+- `A&I-RD-SESSION-DOCTRINE-2026-05-20 (2).md` → WIN copy `A&I-RD-SESSION-DOCTRINE-2026-05-20 (2) (WIN).md`
+- `ADDRESS-GRAMMAR-v1-2026-05-22 (2).md` → WIN copy `ADDRESS-GRAMMAR-v1-2026-05-22 (2) (WIN).md`
+- `AGENTS (72).md` → WIN copy `AGENTS (72) (WIN).md`
+- `ARBORSCAPE-COMPLETION-REPORT-2026-05-17 (2).md` → WIN copy `ARBORSCAPE-COMPLETION-REPORT-2026-05-17 (2) (WIN).md`
+- `ARBORSCAPE-PR-EXPANSION-2026-05-22 (2).md` → WIN copy `ARBORSCAPE-PR-EXPANSION-2026-05-22 (2) (WIN).md`
+- `BEEFSTACK-MODEL-ROUTING-2026-05-17 (2).md` → WIN copy `BEEFSTACK-MODEL-ROUTING-2026-05-17 (2) (WIN).md`
+- `CHAINLINK-v1-2026-05-20 (2).md` → WIN copy `CHAINLINK-v1-2026-05-20 (2) (WIN).md`
+- `COSMIC-ORDER-v1-2026-05-21 (2).md` → WIN copy `COSMIC-ORDER-v1-2026-05-21 (2) (WIN).md`
+- `EMANATIONISM-PRINCIPLE-2026-05-18 (2).md` → WIN copy `EMANATIONISM-PRINCIPLE-2026-05-18 (2) (WIN).md`
+- `GEMINI (2).md` → WIN copy `GEMINI (2) (WIN).md`
+- `GEMINIAEUS (2).md` → WIN copy `GEMINIAEUS (2) (WIN).md`
+- `HANDOFF-ANTIGRAVITY-TO-CLAUDE-2026-04-05 (2).md` → WIN copy `HANDOFF-ANTIGRAVITY-TO-CLAUDE-2026-04-05 (2) (WIN).md`
+- `HEAD` → WIN copy `HEAD (WIN)`
+- `HEAD copy` → WIN copy `HEAD copy (WIN)`
+- `HERESY-REVIEW-LOGAN-HERE-2026-05-22 (2).md` → WIN copy `HERESY-REVIEW-LOGAN-HERE-2026-05-22 (2) (WIN).md`
+- `INBOX copy.md` → WIN copy `INBOX copy (WIN).md`
+- `INBOX-README (2).md` → WIN copy `INBOX-README (2) (WIN).md`
+- `INBOX.md` → WIN copy `INBOX (WIN).md`
+- `ISTHMUS-MECHANISM-v1-2026-05-21 (2).md` → WIN copy `ISTHMUS-MECHANISM-v1-2026-05-21 (2) (WIN).md`
+- `Idaho copy.md` → WIN copy `Idaho copy (WIN).md`
+- `Idaho.md` → WIN copy `Idaho (WIN).md`
+- `JUSTICE-STRAUSS-DOCTRINE-v1-2026-05-21 (2).md` → WIN copy `JUSTICE-STRAUSS-DOCTRINE-v1-2026-05-21 (2) (WIN).md`
+- `LEVELSET-BIG-PICKLE-2026-04-25 (2).md` → WIN copy `LEVELSET-BIG-PICKLE-2026-04-25 (2) (WIN).md`
+- `LICH-PROBLEM-v1-2026-05-20 (2).md` → WIN copy `LICH-PROBLEM-v1-2026-05-20 (2) (WIN).md`
+- `Linear - agent chat - Greeting (2).md` → WIN copy `Linear - agent chat - Greeting (2) (WIN).md`
+- `Logan Finney.md` → WIN copy `Logan Finney (WIN).md`
+- `MAC-SETUP-STATUS-2026-04-26 (2).md` → WIN copy `MAC-SETUP-STATUS-2026-04-26 (2) (WIN).md`
+- `MOXIE-VFD-JOURNALIST-v1-2026-05-22 (2).md` → WIN copy `MOXIE-VFD-JOURNALIST-v1-2026-05-22 (2) (WIN).md`
+- `NECROMANCER-DOCTRINE-v1-2026-05-20 (2).md` → WIN copy `NECROMANCER-DOCTRINE-v1-2026-05-20 (2) (WIN).md`
+- `OPENROUTER-2026-04-28 (2).md` → WIN copy `OPENROUTER-2026-04-28 (2) (WIN).md`
+- `OPENROUTER-CROSS-PLATFORM (2).md` → WIN copy `OPENROUTER-CROSS-PLATFORM (2) (WIN).md`
+- `OPENROUTER-KEYS-WINDOWS-CODEX-REPORT-2026-05-20 (2).md` → WIN copy `OPENROUTER-KEYS-WINDOWS-CODEX-REPORT-2026-05-20 (2) (WIN).md`
+- `OPENROUTER-MANAGEMENT-KEY-USAGE-GUIDE-2026-05-23 (2).md` → WIN copy `OPENROUTER-MANAGEMENT-KEY-USAGE-GUIDE-2026-05-23 (2) (WIN).md`
+- `OZ-COSMOLOGY-DOCTRINE-v1-2026-05-21 (2).md` → WIN copy `OZ-COSMOLOGY-DOCTRINE-v1-2026-05-21 (2) (WIN).md`
+- `PERSONA-EMANATION-DEPTH-v1-2026-05-22 (2).md` → WIN copy `PERSONA-EMANATION-DEPTH-v1-2026-05-22 (2) (WIN).md`
+- `PERSONAE-ENGINE-v1-2026-05-20 (2).md` → WIN copy `PERSONAE-ENGINE-v1-2026-05-20 (2) (WIN).md`
+- `PLAN-OPENROUTER-MANAGEMENT-KEY-WINDOWS-CODEX-2026-05-20 (2).md` → WIN copy `PLAN-OPENROUTER-MANAGEMENT-KEY-WINDOWS-CODEX-2026-05-20 (2) (WIN).md`
+- `PROTOCOL-SUITE-AWR (3).md` → WIN copy `PROTOCOL-SUITE-AWR (3) (WIN).md`
+- `README copy 6.md` → WIN copy `README copy 6 (WIN).md`
+- `RECOVERY-HERMES-CONFIG-2026-05-23 (2).md` → WIN copy `RECOVERY-HERMES-CONFIG-2026-05-23 (2) (WIN).md`
+- `SESSION-BROTHER-SISTER-BRIDGE-2026-05-23 (2).md` → WIN copy `SESSION-BROTHER-SISTER-BRIDGE-2026-05-23 (2) (WIN).md`
+- `SIGNAL-YRAEL-TO-ABHORSEN-2026-05-18-GEMINIAEUS-FRAMING (2).md` → WIN copy `SIGNAL-YRAEL-TO-ABHORSEN-2026-05-18-GEMINIAEUS-FRAMING (2) (WIN).md`
+- `SKILL copy 3.md` → WIN copy `SKILL copy 3 (WIN).md`
+- `SKILL copy 4.md` → WIN copy `SKILL copy 4 (WIN).md`
+- `SNAPSHOT-BEEFSTACK-DIAGNOSTIC-OPencode-2026-05-23 (2).md` → WIN copy `SNAPSHOT-BEEFSTACK-DIAGNOSTIC-OPencode-2026-05-23 (2) (WIN).md`
+- `SNAPSHOT-OPENROUTER-HERMES-OPENCLAW-KEYS-2026-05-20 (2).md` → WIN copy `SNAPSHOT-OPENROUTER-HERMES-OPENCLAW-KEYS-2026-05-20 (2) (WIN).md`
+- `SPACE-RACE-v1-2026-04-18 (2).md` → WIN copy `SPACE-RACE-v1-2026-04-18 (2) (WIN).md`
+- `THRESHOLD-DOCTRINE-v1-2026-05-21 (2).md` → WIN copy `THRESHOLD-DOCTRINE-v1-2026-05-21 (2) (WIN).md`
+- `TOPOLOGY-CENSUS-INDEX-20260525T095704Z (2).md` → WIN copy `TOPOLOGY-CENSUS-INDEX-20260525T095704Z (2) (WIN).md`
+- `TOPOLOGY-CENSUS-dotfolders-20260525T095704Z (2).md` → WIN copy `TOPOLOGY-CENSUS-dotfolders-20260525T095704Z (2) (WIN).md`
+- `TOPOLOGY-CENSUS-nest-20260525T095704Z (2).md` → WIN copy `TOPOLOGY-CENSUS-nest-20260525T095704Z (2) (WIN).md`
+- `TOPOLOGY-CENSUS-root-20260525T095704Z (2).md` → WIN copy `TOPOLOGY-CENSUS-root-20260525T095704Z (2) (WIN).md`
+- `TRIUNE-TRIPTYCH-TRIUMVIRATE (2).md` → WIN copy `TRIUNE-TRIPTYCH-TRIUMVIRATE (2) (WIN).md`
+- `UNDEAD-TAXONOMY-v1-2026-05-20 (2).md` → WIN copy `UNDEAD-TAXONOMY-v1-2026-05-20 (2) (WIN).md`
+- `University of Idaho copy.md` → WIN copy `University of Idaho copy (WIN).md`
+- `VAULT-CONVENTIONS.md` → WIN copy `VAULT-CONVENTIONS (WIN).md`
+- `Vol. 01 Issue 04 - (Profitable) copy.md` → WIN copy `Vol. 01 Issue 04 - (Profitable) copy (WIN).md`
+- `Vol. 01 Issue 06 - Members of the Celebrity Movement copy.md` → WIN copy `Vol. 01 Issue 06 - Members of the Celebrity Movement copy (WIN).md`
+- `Vol. 01 Issue 07 - Hate in the News copy.md` → WIN copy `Vol. 01 Issue 07 - Hate in the News copy (WIN).md`
+- `Vol. 01 Issue 08 - unite against the world of conflict copy.md` → WIN copy `Vol. 01 Issue 08 - unite against the world of conflict copy (WIN).md`
+- `Vol. 01 Issue 13 - Informed Decisions copy.md` → WIN copy `Vol. 01 Issue 13 - Informed Decisions copy (WIN).md`
+- `Vol. 01 Issue 14 - Our New (Old) Debate copy.md` → WIN copy `Vol. 01 Issue 14 - Our New (Old) Debate copy (WIN).md`
+- `WISH-DOCTRINE-v1-2026-05-21 (2).md` → WIN copy `WISH-DOCTRINE-v1-2026-05-21 (2) (WIN).md`
+- `WITNESS-ABHORSEN-2026-05-19-DEWEY-HAS-THE-USB (2).md` → WIN copy `WITNESS-ABHORSEN-2026-05-19-DEWEY-HAS-THE-USB (2) (WIN).md`
+- `WITNESS-CLOCKWORK-THREE-SYNCRETISM-2026-05-23 (2).md` → WIN copy `WITNESS-CLOCKWORK-THREE-SYNCRETISM-2026-05-23 (2) (WIN).md`
+- `_templates-_templates (2).md` → WIN copy `_templates-_templates (2) (WIN).md`
+- `applypatch-msg.sample` → WIN copy `applypatch-msg (WIN).sample`
+- `changelog.md` → WIN copy `changelog (WIN).md`
+- `cheerful-baking-valley.md` → WIN copy `cheerful-baking-valley (WIN).md`
+- `codex-network.md` → WIN copy `codex-network (WIN).md`
+- `commit-msg.sample` → WIN copy `commit-msg (WIN).sample`
+- `config` → WIN copy `config (WIN)`
+- `config.json` → WIN copy `config (WIN).json`
+- `default.rules` → WIN copy `default (WIN).rules`
+- `description` → WIN copy `description (WIN)`
+- `exclude` → WIN copy `exclude (WIN)`
+- `federated-mixing-lemon.md` → WIN copy `federated-mixing-lemon (WIN).md`
+- `fsmonitor-watchman.sample` → WIN copy `fsmonitor-watchman (WIN).sample`
+- `graceful-strolling-eagle.md` → WIN copy `graceful-strolling-eagle (WIN).md`
+- `greedy-stirring-hickey.md` → WIN copy `greedy-stirring-hickey (WIN).md`
+- `hosting.md` → WIN copy `hosting (WIN).md`
+- `indexed-petting-hippo.md` → WIN copy `indexed-petting-hippo (WIN).md`
+- `jazzy-seeking-crescent.md` → WIN copy `jazzy-seeking-crescent (WIN).md`
+- `jiggly-skipping-sun-agent-a4055ba3201243be2.md` → WIN copy `jiggly-skipping-sun-agent-a4055ba3201243be2 (WIN).md`
+- `jiggly-skipping-sun.md` → WIN copy `jiggly-skipping-sun (WIN).md`
+- `mellow-drifting-quill.md` → WIN copy `mellow-drifting-quill (WIN).md`
+- `mossy-weaving-dusk.md` → WIN copy `mossy-weaving-dusk (WIN).md`
+- `post-update.sample` → WIN copy `post-update (WIN).sample`
+- `pre-applypatch.sample` → WIN copy `pre-applypatch (WIN).sample`
+- `pre-commit.sample` → WIN copy `pre-commit (WIN).sample`
+- `pre-merge-commit.sample` → WIN copy `pre-merge-commit (WIN).sample`
+- `pre-push.sample` → WIN copy `pre-push (WIN).sample`
+- `pre-rebase.sample` → WIN copy `pre-rebase (WIN).sample`
+- `prepare-commit-msg.sample` → WIN copy `prepare-commit-msg (WIN).sample`
+- `prompting.md` → WIN copy `prompting (WIN).md`
+- `review-feedback-loop.yml` → WIN copy `review-feedback-loop (WIN).yml`
+- `run_state (2).md` → WIN copy `run_state (2) (WIN).md`
+- `run_state copy 2.md` → WIN copy `run_state copy 2 (WIN).md`
+- `sample-prompts.md` → WIN copy `sample-prompts (WIN).md`
+- `secret-pattern-policy (2).yml` → WIN copy `secret-pattern-policy (2) (WIN).yml`
+- `secrets.template.md` → WIN copy `secrets.template (WIN).md`
+- `service-compat-validator.md` → WIN copy `service-compat-validator (WIN).md`
+- `service-health-monitor.md` → WIN copy `service-health-monitor (WIN).md`
+- `settings.json` → WIN copy `settings (WIN).json`
+- `sort-audit (9).yml` → WIN copy `sort-audit (9) (WIN).yml`
+- `stale-bot-prs.yml` → WIN copy `stale-bot-prs (WIN).yml`
+- `swarm-mvp-intake.yml` → WIN copy `swarm-mvp-intake (WIN).yml`
+- `sync-dependencies.yml` → WIN copy `sync-dependencies (WIN).yml`
+- `test_branch_garden_report.py` → WIN copy `test_branch_garden_report (WIN).py`
+- `test_check_secret_patterns.py` → WIN copy `test_check_secret_patterns (WIN).py`
+- `test_classify_paths.py` → WIN copy `test_classify_paths (WIN).py`
+- `test_issue_reconciler.py` → WIN copy `test_issue_reconciler (WIN).py`
+- `test_openrouter_runtime.py` → WIN copy `test_openrouter_runtime (WIN).py`
+- `test_phone_link_intake.py` → WIN copy `test_phone_link_intake (WIN).py`
+- `test_validate_content.py` → WIN copy `test_validate_content (WIN).py`
+- `tests-test_topology_census (2).py` → WIN copy `tests-test_topology_census (2) (WIN).py`
+- `upcoming features.md` → WIN copy `upcoming features (WIN).md`
+- `wayback-audit-2026-05-25 (2).md` → WIN copy `wayback-audit-2026-05-25 (2) (WIN).md`
+- `wayback-audit.yml` → WIN copy `wayback-audit (WIN).yml`
+- `xkcd-SYNC-ANTIGRAVITY-VAULT-2026-04-13 (2).md` → WIN copy `xkcd-SYNC-ANTIGRAVITY-VAULT-2026-04-13 (2) (WIN).md`
+
+## Sanitized filenames
+
+
+## Case-collision aliases
+
+- `MEDIA.md` → `_MEDIA.md`
+
+## Lossless-gate restorations
+
+- [Mac] `.github/scripts/topology_census.py` (restored in place)
+- [Mac] `.op/SETUP.md` (restored in place)
+- [Mac] `.openclaw/1PASSWORD-QUICKSTART.md` (restored in place)
+- [Mac] `978aba5bfa35d1a3.txt` → `978aba5bfa35d1a3 (MAC).txt`
+
+## Filesystem-compatibility renames
+
+- `🛘.md` → `U+1F6D8.md`
+- `🛜.md` → `U+1F6DC.md`
+- `🩵.md` → `U+1FA75.md`
+- `🩶.md` → `U+1FA76.md`
+- `🩷.md` → `U+1FA77.md`
+- `🪇.md` → `U+1FA87.md`
+- `🪈.md` → `U+1FA88.md`
+- `🪉.md` → `U+1FA89.md`
+- `🪏.md` → `U+1FA8F.md`
+- `🪭.md` → `U+1FAAD.md`
+- `🪮.md` → `U+1FAAE.md`
+- `🪯.md` → `U+1FAAF.md`
+- `🪻.md` → `U+1FABB.md`
+- `🪼.md` → `U+1FABC.md`
+- `🪽.md` → `U+1FABD.md`
+- `🪾.md` → `U+1FABE.md`
+- `🪿.md` → `U+1FABF.md`
+- `🫆.md` → `U+1FAC6.md`
+- `🫎.md` → `U+1FACE.md`
+- `🫏.md` → `U+1FACF.md`
+- `🫚.md` → `U+1FADA.md`
+- `🫛.md` → `U+1FADB.md`
+- `🫜.md` → `U+1FADC.md`
+- `🫟.md` → `U+1FADF.md`
+- `🫨.md` → `U+1FAE8.md`
+- `🫩.md` → `U+1FAE9.md`
+- `🫷.md` → `U+1FAF7.md`
+- `🫸.md` → `U+1FAF8.md`
+
+---
+Claude-Session: https://claude.ai/code/session_6c80a94c-6802-46ff-8526-0575213a0ec1

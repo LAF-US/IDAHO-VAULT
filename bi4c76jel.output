@@ -1,0 +1,16 @@
+=== 0. stop the doomed background push ===
+  killed
+=== 1. confirm tip is the rescue commit ===
+d4d632943 rescue(orphans): salvage stranded payload from orphan-root lineages + May-2 stash
+=== 2. what exactly is in the poster folder ===
+total 589960
+drwxr-xr-x      4 logan  staff        128 Jul  8 00:59 .
+drwxr-xr-x  37708 logan  staff    1206656 Jul  8 00:59 ..
+-rw-r--r--      1 logan  staff         46 Jul  8 01:10 personal day movie poster.md
+-rw-r--r--      1 logan  staff  289179663 Jul  8 00:59 personal-day.pxm
+=== 3. soft-reset, excise pxm + .env.example, recommit ===
+ create mode 100644 session-ses_2335.md
+ create mode 100644 update_hermes_config.py
+=== 4. push (pack is now small) ===
+fatal: could not read Username for 'https://github.com': Device not configured
+## logan/obsidian...origin/logan/obsidian [ahead 3]

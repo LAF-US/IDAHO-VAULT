@@ -18,6 +18,6 @@ related:
 Films start in 15 minutes! @KenworthyPAC https://t.co/qYuzUDEYub
 
 ## Media
-- ![alt text needed](https://pbs.twimg.com/media/D5r3QVxUYAEXGMj.jpg)
+- ![](https://pbs.twimg.com/media/D5r3QVxUYAEXGMj.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1124482935950675969)

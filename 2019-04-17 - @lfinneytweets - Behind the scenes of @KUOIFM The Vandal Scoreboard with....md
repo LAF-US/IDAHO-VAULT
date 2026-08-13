@@ -19,6 +19,6 @@ related:
 Behind the scenes of @KUOIFM The Vandal Scoreboard with @kellogg_zack & @BCainSports this morning! https://t.co/jyF2C8mptu
 
 ## Media
-- ![alt text needed](https://pbs.twimg.com/media/D4YYJOaU4AAf4Qw.jpg)
+- ![](https://pbs.twimg.com/media/D4YYJOaU4AAf4Qw.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1118608111026094080)

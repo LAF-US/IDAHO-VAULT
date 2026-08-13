@@ -25,6 +25,6 @@ Read the whole statement here: https://t.co/VQ2IkrxLHe https://t.co/YumZCbQ0GO
 - http://reinstatedenise.com/statement
 
 ## Media
-- ![alt text needed](https://pbs.twimg.com/media/DyMyHJ7UcAIqXWk.jpg)
+- ![](https://pbs.twimg.com/media/DyMyHJ7UcAIqXWk.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1090770641119150081)

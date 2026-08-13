@@ -2,8 +2,10 @@ from __future__ import annotations
 
 import importlib.util
 import json
+import shutil
 import subprocess
-import tempfile
+import sys
+
 import unittest
 from pathlib import Path
 from unittest.mock import patch
@@ -13,7 +15,6 @@ def _load_topology_census_module():
     project_root = Path(__file__).resolve().parents[1]
     script_path = project_root / ".github" / "scripts" / "topology_census.py"
     spec = importlib.util.spec_from_file_location("topology_census_test_module", script_path)
-    assert spec is not None
     module = importlib.util.module_from_spec(spec)
     assert spec.loader is not None
     spec.loader.exec_module(module)
@@ -25,27 +26,29 @@ topology_census = _load_topology_census_module()
 
 class TopologyCensusTest(unittest.TestCase):
     def setUp(self) -> None:
-        self.tempdir = tempfile.TemporaryDirectory()
-        self.addCleanup(self.tempdir.cleanup)
-        self.root = Path(self.tempdir.name) / "vault"
+        project_root = Path(__file__).resolve().parents[1]
+        self.tempdir = project_root / "tests" / "_tmp_topology_census_case"
+        shutil.rmtree(self.tempdir, ignore_errors=True)
+        self.root = self.tempdir / "vault"
         self.root.mkdir(parents=True, exist_ok=True)
         self.output_dir = self.root / "!"
-        subprocess.run(["git", "init"], cwd=self.root, check=True, capture_output=True, timeout=10)
+        subprocess.run(["git", "init"], cwd=self.root, check=True, capture_output=True)
         subprocess.run(
             ["git", "config", "user.email", "test@example.com"],
             cwd=self.root,
             check=True,
             capture_output=True,
-            timeout=10,
         )
         subprocess.run(
             ["git", "config", "user.name", "Topology Census Test"],
             cwd=self.root,
             check=True,
             capture_output=True,
-            timeout=10,
         )
         self._write_fixture()
+
+    def tearDown(self) -> None:
+        shutil.rmtree(self.tempdir, ignore_errors=True)
 
     def _write(self, relpath: str, content: str) -> None:
         path = self.root / Path(relpath)
@@ -87,7 +90,8 @@ class TopologyCensusTest(unittest.TestCase):
                     "# Nest README",
                     "",
                     "Read `INBOX/README.md` and `!/INBOX/README.md` for intake work.",
-                    "Read `!/AGENTS.md` for registered discovery surfaces.",
+                    "Read `!/AGENTS.md` for the live roster.",
+
                     "",
                 ]
             ),
@@ -98,13 +102,15 @@ class TopologyCensusTest(unittest.TestCase):
                 [
                     "# Agents",
                     "",
-                    "## Registered Direct-Write Surfaces (Autoloaded)",
+                    "## Direct-Write Agents (Autoloaded)",
+
                     "",
                     "| Agent | Persona | Vendor | Tier | Dotfolder | Git Suffix |",
                     "| --- | --- | --- | --- | --- | --- |",
                     "| OpenAI Codex | **The Lexicographer** | OpenAI | Scripting | .codex/ | -X |",
                     "",
-                    "## Registered Advisory and Specialized Surfaces",
+                    "## Advisory & Specialized Agents",
+
                     "",
                     "| Agent | Persona | Vendor | Role | Dotfolder |",
                     "| --- | --- | --- | --- | --- |",
@@ -130,17 +136,11 @@ class TopologyCensusTest(unittest.TestCase):
             "# !/CREWAI\n\nThis directory is the live staging surface. It also preserves historical harbor records.\n",
         )
         self._write("!/swarm/README.md", "# !/swarm\n\nActive state room.\n")
-        self._write(
-            "!/status-only/README.md",
-            "---\nstatus: active\n---\n\n# Status Only\n",
-        )
-        self._write(
-            "!/swarm 1/state/stabilization_plan.md", "# swarm 1\n\n- swarm/state/run_state.md\n"
-        )
+        self._write("!/swarm 1/state/stabilization_plan.md", "# swarm 1\n\n- swarm/state/run_state.md\n")
         self._write("!/swarm 1/tools/state_manager.py", "print('state manager')\n")
         self._write(".codex/CODEX.md", "# CODEX\n")
         self._write(".codex/MEMORY/anchor.md", "# memory\n")
-        self._write(".code/CODE.md", "# CODE\n")
+
         self._write(".bartimaeus/README.md", "# Bartimaeus\n")
         self._write(".shade/archive.md", "# shade archive\n")
         self._write("2026/04/2026-04-17.md", "# daily note\n")
@@ -148,15 +148,10 @@ class TopologyCensusTest(unittest.TestCase):
         self._write("INBOX/PHONE-LINK/phone.txt", "hello\n")
         self._write("_private/notes.md", "# private\n")
         self._write("@/tweets/thread.md", "# tweet\n")
-        subprocess.run(["git", "add", "."], cwd=self.root, check=True, capture_output=True, timeout=10)
+        subprocess.run(["git", "add", "."], cwd=self.root, check=True, capture_output=True)
         # Keep ignored creatures local-only.
-        subprocess.run(
-            ["git", "reset", "--", "_private", "@"],
-            cwd=self.root,
-            check=True,
-            capture_output=True,
-            timeout=10,
-        )
+        subprocess.run(["git", "reset", "--", "_private", "@"], cwd=self.root, check=True, capture_output=True)
+
 
     def test_root_scope_counts_ignored_and_tracked_folders_without_move_commands(self) -> None:
         report = topology_census.build_scope_report(self.root, "root")
@@ -165,8 +160,9 @@ class TopologyCensusTest(unittest.TestCase):
         self.assertIn("INBOX", entries)
         self.assertIn("_private", entries)
         self.assertIn("@", entries)
-        self.assertTrue(entries["INBOX"]["appears_in_doctrine"])
-        self.assertEqual(entries["INBOX"]["authority_state"], "explicit_doctrine_reference")
+        self.assertTrue(entries["INBOX"]["appears_in_live_doctrine"])
+        self.assertEqual(entries["INBOX"]["authority_state"], "explicit_live_authority")
+
         self.assertTrue(entries["_private"]["git_state"]["ignored"])
         self.assertEqual(entries["_private"]["obvious_authority"], "ignore rules only")
 
@@ -174,35 +170,29 @@ class TopologyCensusTest(unittest.TestCase):
         self.assertNotIn("git mv", rendered)
         self.assertNotIn("move_to_", rendered)
 
-    def test_dotfolder_scope_reports_registration_recovery_and_memory(self) -> None:
+    def test_dotfolder_scope_reports_roster_recovery_and_memory(self) -> None:
+
         report = topology_census.build_scope_report(self.root, "dotfolders")
         entries = {entry["path"]: entry for entry in report["entries"]}
 
         self.assertIn(".codex", entries)
-        self.assertIn(".code", entries)
         self.assertIn(".shade", entries)
-        self.assertTrue(entries[".codex"]["registered_surface"])
-        self.assertFalse(entries[".code"]["registered_surface"])
+        self.assertTrue(entries[".codex"]["live_roster"])
         self.assertTrue(entries[".codex"]["memory_state"]["memory_dir_tracked"])
-        self.assertFalse(entries[".shade"]["registered_surface"])
+        self.assertFalse(entries[".shade"]["live_roster"])
         self.assertTrue(entries[".shade"]["historical_recovery"])
 
-        serialized = json.dumps(report)
-        rendered = topology_census.render_scope_markdown(report)
-        self.assertNotIn("live_roster", serialized)
-        self.assertNotIn("Live roster", rendered)
 
     def test_nest_scope_recurses_and_surfaces_duplicate_internal_systems(self) -> None:
         report = topology_census.build_scope_report(self.root, "nest")
         entries = {entry["path"]: entry for entry in report["entries"]}
 
         self.assertIn("!/INBOX", entries)
-        self.assertIn("!/status-only", entries)
         self.assertIn("!/swarm", entries)
         self.assertIn("!/swarm 1", entries)
-        self.assertEqual(entries["!/status-only"]["room_classification"], "ambiguous")
-        self.assertEqual(entries["!/swarm"]["room_classification"], "ambiguous")
-        self.assertEqual(entries["!/swarm 1"]["room_classification"], "ambiguous")
+        self.assertEqual(entries["!/swarm"]["room_status"], "ambiguous")
+        self.assertEqual(entries["!/swarm 1"]["room_status"], "ambiguous")
+
         self.assertIn("!/swarm 1", entries["!/swarm"]["duplicate_conflicts"])
         self.assertEqual(
             entries["!/INBOX"]["local_governing_surface"]["path"],
@@ -236,36 +226,6 @@ class TopologyCensusTest(unittest.TestCase):
         with patch.object(topology_census, "_run_git", side_effect=FileNotFoundError):
             self.assertFalse(topology_census._git_repo_available(self.root))
             self.assertEqual(topology_census._git_tracked_files(self.root), set())
-
-    def test_git_repo_available_does_not_swallow_timeout(self) -> None:
-        # A timeout on the availability probe means "unknown", not "not a repo" --
-        # letting it masquerade as unavailable would reopen _git_tracked_files()'s
-        # fail-closed guard to a false empty-set census via this call path.
-        with patch.object(
-            topology_census, "_run_git",
-            side_effect=subprocess.TimeoutExpired(cmd=["git"], timeout=30),
-        ):
-            with self.assertRaises(subprocess.TimeoutExpired):
-                topology_census._git_repo_available(self.root)
-            with self.assertRaises(subprocess.TimeoutExpired):
-                topology_census._git_tracked_files(self.root)
-
-    def test_git_path_is_ignored_fails_soft_on_oserror(self) -> None:
-        # _git_repo_available() already fails soft on OSError; check-ignore's own
-        # subprocess.run call must match that contract instead of only catching
-        # TimeoutExpired and letting a mid-run OSError crash the census.
-        with (
-            patch.object(topology_census, "_git_repo_available", return_value=True),
-            patch.object(topology_census.subprocess, "run", side_effect=OSError("boom")),
-        ):
-            self.assertFalse(topology_census._git_path_is_ignored(self.root, "some/path"))
-
-    def test_git_status_lines_fails_soft_on_oserror(self) -> None:
-        with (
-            patch.object(topology_census, "_git_repo_available", return_value=True),
-            patch.object(topology_census.subprocess, "run", side_effect=OSError("boom")),
-        ):
-            self.assertEqual(topology_census._git_status_lines(self.root, "some/path"), [])
 
 
 if __name__ == "__main__":

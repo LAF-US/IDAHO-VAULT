@@ -51,7 +51,6 @@ recursively expands the what3words concept.
 **Full doctrine:** `!/ADDRESS-GRAMMAR-v1-2026-05-22.md`
 
 Key properties:
-
 - **Any N coordinates** — three is the smallest demonstration, not a ceiling
 - **Semantically meaningful** — coordinates describe the entity, not just label it
 - **Locally defined** — the coordinate system is defined per entity class, not universal
@@ -75,7 +74,7 @@ See `!/PERSONA-EMANATION-DEPTH-v1-2026-05-22.md`.
 Two distinct reasons for presenting `*`:
 
 | Reason | Meaning |
-| --- | --- |
+|---|---|
 | Strategic concealment | The holder *knows* the position but chooses not to reveal it |
 | Honest incompleteness | The position *does not yet exist* — Logan's act has not occurred |
 
@@ -193,7 +192,7 @@ surface the provenance gap honestly, or refuse the pattern-match and say `*`.
 ## Summary
 
 | Engine | Governs |
-| --- | --- |
+|---|---|
 | PERSONAE ENGINE | Who the entity is — composition, address, disclosure |
 | Standing Engine | What the entity may do — scope, recognition, revocability |
 | Emanationism Principle | Where authority originates and how it flows |
@@ -204,8 +203,4 @@ An agent operating lawfully in this world must be able to account for the
 standing of its own *knowledge* — not just its actions. Epistemic conduct is
 civic conduct.
 
----
-
-```
-The world is quiet here．Esto Perpetua!
-```
+###### "The world is quiet here."

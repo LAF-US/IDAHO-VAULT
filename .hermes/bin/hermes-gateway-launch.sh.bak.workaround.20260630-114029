@@ -1,0 +1,93 @@
+#!/bin/sh
+# Hermes gateway launcher — env-loader override workaround.
+#
+# UPSTREAM BUG: hermes_cli/env_loader.py:168 calls
+#   _load_dotenv_with_fallback(user_env, override=True)
+# which clobbers os.environ values with the LITERAL contents of ~/.hermes/.env
+# on every chat-subprocess spawn. With `op run --env-file=.env`, this means the
+# resolved secret values from op:// refs get clobbered back to the literal
+# `op://...` strings, breaking every cloud-routed call.
+#
+# Tracking:
+#   - NousResearch/hermes-agent#19201  (the bug)
+#   - NousResearch/hermes-agent#18734  (the PR with the override=False fix in flight)
+#   - NousResearch/hermes-agent#36949  (related: native op:// secret-source backend)
+#   - LAF-US/IDAHO-VAULT#690           (our tracker)
+#
+# WORKAROUND (applied 2026-06-28): secrets split out of ~/.hermes/.env into
+# ~/.hermes/.env.op, which load_hermes_dotenv() does NOT read. This shim:
+#   1. Bootstrap-reads OP_SERVICE_ACCOUNT_TOKEN from ~/.hermes/.env
+#   2. Iterates ~/.hermes/.env.op, calls `op read` per ref, exports to process env
+#   3. Execs the daemon command DIRECTLY (no `op run` wrapper)
+# Since ~/.hermes/.env no longer contains the secret keys at all,
+# load_hermes_dotenv() has nothing to override — the process-env values survive.
+#
+# REVERT (when #18734 lands and `hermes update` runs):
+#   See ~/.hermes/README-workaround.md → "How to revert".
+
+set -eu
+
+ENV_FILE="$HOME/.hermes/.env"
+OP_REFS_FILE="$HOME/.hermes/.env.op"
+
+if [ ! -r "$ENV_FILE" ]; then
+  echo "hermes-gateway-launch: missing $ENV_FILE" >&2
+  exit 78
+fi
+if [ ! -r "$OP_REFS_FILE" ]; then
+  echo "hermes-gateway-launch: missing $OP_REFS_FILE (env-loader workaround requires it; see README-workaround.md)" >&2
+  exit 78
+fi
+
+# Bootstrap OP_SERVICE_ACCOUNT_TOKEN from .env so `op read` can authenticate.
+TOKEN=$(grep -E '^[[:space:]]*(export[[:space:]]+)?OP_SERVICE_ACCOUNT_TOKEN=' "$ENV_FILE" \
+  | head -1 \
+  | sed -E 's/^[[:space:]]*(export[[:space:]]+)?OP_SERVICE_ACCOUNT_TOKEN=//; s/^["'\'']//; s/["'\'']$//')
+if [ -z "$TOKEN" ]; then
+  echo "hermes-gateway-launch: OP_SERVICE_ACCOUNT_TOKEN not found in $ENV_FILE" >&2
+  exit 78
+fi
+export OP_SERVICE_ACCOUNT_TOKEN="$TOKEN"
+
+# Resolve every KEY=op://... entry in .env.op via `op read` and export to process env.
+# Fail fast if any single ref can't resolve — better to refuse to start than to start
+# with partial credentials and 401 on every cloud call.
+resolved_count=0
+while IFS= read -r line || [ -n "$line" ]; do
+  case "$line" in
+    ''|\#*) continue ;;
+  esac
+  case "$line" in
+    export\ *) line=${line#export } ;;
+  esac
+  case "$line" in
+    *=*) ;;
+    *) continue ;;
+  esac
+  key=${line%%=*}
+  val=${line#*=}
+  val=$(printf '%s' "$val" | sed -E 's/^["'\'']//; s/["'\'']$//')
+  case "$val" in
+    op://*)
+      resolved=$(op read "$val" 2>/dev/null) || {
+        echo "hermes-gateway-launch: \`op read\` failed for $key ($val)" >&2
+        exit 79
+      }
+      if [ -z "$resolved" ]; then
+        echo "hermes-gateway-launch: \`op read\` returned empty for $key ($val)" >&2
+        exit 79
+      fi
+      export "$key=$resolved"
+      resolved_count=$((resolved_count + 1))
+      ;;
+    *)
+      # non-op value somehow in .env.op — pass through verbatim
+      export "$key=$val"
+      ;;
+  esac
+done < "$OP_REFS_FILE"
+
+# Breadcrumb to stderr (caught by gateway.error.log) so each launch is traceable.
+echo "hermes-gateway-launch: resolved $resolved_count op:// refs into process env" >&2
+
+exec "$@"

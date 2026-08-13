@@ -24,6 +24,6 @@ related:
 RT @RadioDawson: The House just rejected AG @lawrencewasden’s budget with no debate #idpol #idleg https://t.co/TnQFY5h7jS
 
 ## Media
-- ![alt text needed](https://pbs.twimg.com/media/ES2EauZU0AE2uNZ.jpg)
+- ![](https://pbs.twimg.com/media/ES2EauZU0AE2uNZ.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1237791618670850054)

@@ -394,9 +394,9 @@ When the user navigates to this URL, they will be prompted to select a channel i
   "webhook": {
     "application_id": "310954232226357250",
     "name": "testwebhook",
-    "url": "https://discord.com/api/webhooks/347114750880120863/REDACTED-EXAMPLE-TOKEN",
+    "url": "https://discord.com/api/webhooks/347114750880120863/kKDdjXa1g9tKNs0-_yOwLyALC9gydEWP6gr9sHabuK1vuofjhQDDnlOclJeRIvYK-pj_",
     "channel_id": "345626669224982402",
-    "token": "REDACTED-EXAMPLE-TOKEN",
+    "token": "kKDdjXa1g9tKNs0-_yOwLyALC9gydEWP6gr9sHabuK1vuofjhQDDnlOclJeRIvYK-pj_",
     "type": 1,
     "avatar": null,
     "guild_id": "290926792226357250",

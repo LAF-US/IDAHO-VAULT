@@ -28,7 +28,7 @@ The provider preferences sit on top of that stool. The goal is to keep work movi
 Logan's canonical agentic LLM provider rankings, in order of preference:
 
 | Rank | Provider(s) | Notes |
-| ------ | ------------- | ------- |
+|------|-------------|-------|
 | 1 | **Mistral** / **Claude** (Anthropic) | Top preferred voices/providers. |
 | 2 | **ChatGPT·Codex** (OpenAI) | Preferred coding/frontier fallback after Mistral/Claude. |
 | 3 | **Grok** (xAI) / **Perplexity** | Frontier alternate plus search-augmented research lane. |
@@ -40,7 +40,6 @@ Logan's canonical agentic LLM provider rankings, in order of preference:
 | — | Phi / Qwen / Gemma | Disliked; exclude from defaults and fallbacks unless Logan explicitly overrides |
 
 **Governing principles:**
-
 - Prefer local models when possible — data stays on-device, no retention, no tracking
 - Robust cloud fallbacks required for resilience
 - Control over data retention and tracking takes priority over convenience
@@ -79,7 +78,7 @@ The stool should be portable across macOS, Windows, and Linux. Individual model 
 OpenRouter is the cloud routing leg, but it is not a single uniform failure domain. It can carry several distinct lanes:
 
 | Lane | Meaning | Failure mode |
-| ------ | --------- | -------------- |
+|------|---------|--------------|
 | OpenRouter shared capacity | OpenRouter-hosted provider access billed through OpenRouter. | OpenRouter credit, workspace, or shared-provider routing limits. |
 | OpenRouter BYOK | OpenRouter request brokered through Logan's own provider key. | The upstream provider key's rate limits, spend limits, or provider policy. |
 | Direct provider API | Hermes/OpenCode/etc. call Mistral, Anthropic, OpenAI, or another provider without OpenRouter. | That provider key's direct limit, independent of OpenRouter transport. |
@@ -221,7 +220,6 @@ The Management Key reference lives in `.op/openrouter.env` alongside the inferen
 As of 2026-05-18, the MacBook runtime contract is:
 
 **OpenClaw**
-
 - Primary: `ollama/devstral:latest`
 - Fallbacks:
   - `openrouter/mistralai/mistral-medium-3-5`
@@ -232,7 +230,6 @@ As of 2026-05-18, the MacBook runtime contract is:
 - Windows-ZBFURY reaches the Mac gateway through an SSH tunnel, not public gateway exposure.
 
 **Hermes Agent**
-
 - Universal doctrine: local-first remains the desired system posture.
 - MacBook operational override: primary is `openrouter` / `mistralai/mistral-medium-3-5` because this hardware has repeatedly hung on local `devstral:latest` calls.
 - Fallback chain as of 2026-05-21:
@@ -249,14 +246,12 @@ As of 2026-05-18, the MacBook runtime contract is:
 - Direct Mistral remains configured, but it is now late in the chain as an OpenRouter transport/account contingency rather than the immediate fallback after a Mistral BYOK rate limit.
 
 **OpenCode**
-
 - OpenCode is the third leg as a coding/agent execution interface.
 - Do not configure Hermes to call `http://127.0.0.1:3000/v1` as an OpenCode model endpoint unless an actual `opencode serve` OpenAI-compatible endpoint is running there.
 - On the MacBook, port `3000` is currently used by the Hermes WhatsApp bridge, so it must not be treated as an OpenCode LLM provider.
 - OpenCode has its own provider credential store and can use both OpenRouter and direct provider keys. Treat those as separate routing surfaces but not automatically separate rate-limit buckets if they point at the same BYOK upstream provider.
 
 To inspect the live stack (any OS):
-
 ```bash
 openclaw models list
 hermes fallback list
@@ -264,7 +259,6 @@ opencode --version
 ```
 
 To validate after any edit (any OS):
-
 ```bash
 openclaw config validate
 openclaw gateway restart
@@ -276,7 +270,7 @@ hermes doctor
 **Gateway service name varies by OS:**
 
 | OS | Service mechanism |
-| ---- | ------------------- |
+|----|-------------------|
 | macOS | launchd (`~/Library/LaunchAgents/ai.openclaw.gateway.plist`) |
 | Windows | Startup folder login item (`%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\OpenClaw Gateway.cmd`) |
 | Linux | systemd (`openclaw-gateway.service`) |
@@ -292,7 +286,7 @@ Ollama models are portable — `ollama pull <model>` works identically on macOS,
 The table below is the desired portable BEEFSTACK catalog, not a guarantee that every machine currently has every model installed.
 
 | Model | Size | Status |
-| ------- | ------ | -------- |
+|-------|------|--------|
 | ollama/magistral:latest | 14 GB | Preferred local reasoner |
 | ollama/devstral:latest | 14 GB | Preferred local coder |
 | ollama/mistral-small:latest | 14 GB | Local fast/light |
@@ -310,7 +304,7 @@ The table below is the desired portable BEEFSTACK catalog, not a guarantee that 
 MacBook live inventory as of 2026-05-18:
 
 | Model | Status |
-| ------- | -------- |
+|-------|--------|
 | `devstral:latest` | Primary local Hermes/OpenClaw route |
 | `mistral-large:latest` | Deep local anchor; heavy |
 | `codestral:latest` | Mistral-family coding candidate; not currently in fallback chain |
@@ -319,7 +313,6 @@ MacBook live inventory as of 2026-05-18:
 | `qwen2.5:3b` | Disliked; installed but unrouted |
 
 To replicate the local model stack on a new machine:
-
 ```bash
 ollama pull magistral
 ollama pull devstral

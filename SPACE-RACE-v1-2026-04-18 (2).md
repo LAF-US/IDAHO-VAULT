@@ -49,7 +49,7 @@ what gets built.
 `SPACE RACE` exists as the counter to CHAINFIRE.
 
 | Protocol | Direction | Operation |
-| --- | --- | --- |
+|---|---|---|
 | `CHAINFIRE` | Subtractive | Burns tags, aliases, wikilinks from vault |
 | `CHAINLINK` | Additive | Rebuilds relational structure via staged proposals |
 
@@ -57,7 +57,6 @@ what gets built.
 CHAINFIRE. The agency is the program; the operation is the mission.
 
 Neither protocol is safe to run alone:
-
 - CHAINFIRE without a committed CHAINLINK operation is permanent damage.
 - CHAINLINK without a prior CHAINFIRE burn is junk relinking on top of drift.
 

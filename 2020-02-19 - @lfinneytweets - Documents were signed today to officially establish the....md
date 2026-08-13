@@ -20,6 +20,6 @@ Documents were signed today to officially establish the Idaho Behavioral Health 
 Pictured from left: @GovernorLittle, Rep. Megan Blanksma, and ID Chief Justice Roger Burdick. https://t.co/cqxcgEu6FZ
 
 ## Media
-- ![alt text needed](https://pbs.twimg.com/media/ERLBS2yU8AIFa1m.jpg)
+- ![](https://pbs.twimg.com/media/ERLBS2yU8AIFa1m.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1230259113948405760)

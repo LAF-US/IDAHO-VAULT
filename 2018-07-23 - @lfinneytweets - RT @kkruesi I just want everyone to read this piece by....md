@@ -32,6 +32,6 @@ RT @kkruesi: I just want everyone to read this piece by @sethogilvie https://t.c
 - https://idahoreports.blogs.idahoptv.org/2018/07/21/come-as-you-are-as-i-want-you-to-be/
 
 ## Media
-- ![alt text needed](https://pbs.twimg.com/media/Di0PwSMVsAEBoES.jpg)
+- ![](https://pbs.twimg.com/media/Di0PwSMVsAEBoES.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1021528272285270016)

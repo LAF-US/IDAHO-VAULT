@@ -7,7 +7,8 @@ created: 2026-07-17
 description: "Explore Mary Hallock Foote's past auction results and sold artwork prices. Research and compare historical data while shopping upcoming Mary Hallock Foote's sales on Invaluable.com."
 ---
 
-# Mary Hallock Foote Sold at Auction Prices
+
+## Mary Hallock Foote Sold at Auction Prices
 
 #### Wood cutter, Illustrator, Painter, b. 1847 - d. 1938
 
@@ -118,7 +119,3 @@ Sort By:
 	View sold prices
 	Old Lady signed 'Mary Foote' (lower left) oil on canvas 36 1/2 x 25 1/4 in. (92.7 x 64.1 cm.)
 	Christie's
-
-**View Available Lots**
-
-See upcoming lots that are currently available for bidding!

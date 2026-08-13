@@ -1,4 +1,10 @@
+authority: LOGAN
+related:
+  - GITHOOKS
+  - Git
+  - runtime
 ---
+<<<<<<< HEAD
 title: GITHOOKS
 authority: LOGAN
 related:
@@ -82,3 +88,14 @@ them to make a blocked operation succeed.
 # ---------------------------------------------------------------
 # THE WORLD IS QUIET HERE．ESTO PERPETUA!
 # ---------------------------------------------------------------
+=======
+
+**.githooks** — Git hook runtime persona.
+
+Tracked anchor for VAULT hook files and hook-adjacent notes.
+
+This anchor is not a setup contract. It does not declare coordination state,
+office, checkout activation, or operational status.
+
+Read the hook files themselves for implementation details.
+>>>>>>> 684896b8a3040118f438cf44b6f39191676d9845
