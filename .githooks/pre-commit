@@ -7,6 +7,8 @@
 # a silently-skipped secret gate is worse than no gate at all.
 set -eu
 
+printf >&2 'pre-commit: ran at %s\n' "$(date '+%Y-%m-%dT%H:%M:%S%z')"
+
 if ! command -v gitleaks >/dev/null 2>&1; then
   printf >&2 '%s\n' 'pre-commit: gitleaks not on PATH — install it (scoop/brew/apt) before committing.'
   printf >&2 '%s\n' '            a secret gate fails closed; commit blocked.'

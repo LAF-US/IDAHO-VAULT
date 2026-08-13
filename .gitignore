@@ -1,10 +1,10 @@
-# THE VAULT tracks *everything* by default. One narrow exception is gitignored:
+# THE VAULT tracks *everything* by default. Only one exception is gitignored:
 #
 #   SECRETS — credential material. NON-MARKDOWN ONLY: Markdown is force-tracked
 #             at the bottom, so a secret pasted into prose is the scanner's job.
 #
 # ---------------------------------------------------------------
-# OS Duff
+# operating system
 # ---------------------------------------------------------------
 ._*
 Icon?
@@ -37,8 +37,10 @@ Network Trash Folder
 Temporary Items
 
 # ---------------------------------------------------------------
-# Plaintext Secrets
+# VAULT SECRETS
 # ---------------------------------------------------------------
+*.pem
+*.secret
 .aikido/config
 .cache_ggshield
 .claude/.credentials.json
@@ -54,10 +56,9 @@ Temporary Items
 credstore*
 id_ed*
 pubring*
-*.pem
 
 # ---------------------------------------------------------------
-# Gitignore Exceptions
+# gitignore exceptions
 # ---------------------------------------------------------------
 !.gitignore
 !/.*/stub.txt
