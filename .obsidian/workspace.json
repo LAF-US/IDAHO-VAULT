@@ -4,22 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "1288754c138f6e4c",
+        "id": "9083bf58322b1634",
         "type": "tabs",
         "children": [
           {
-            "id": "fbbcdef6bd9004e0",
+            "id": "cfb9a067ce8fa544",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2026-08-13.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "2026-08-13"
+              "title": "New tab"
             }
           }
         ]
@@ -41,7 +36,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical",
+                "sortOrder": "byModifiedTime",
                 "autoReveal": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -84,7 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 259.8999938964844
   },
   "right": {
     "id": "7f8b1131e111e374",
@@ -118,7 +113,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2026-08-13.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               },
@@ -202,8 +196,9 @@
       "bases:Create new base": false
     }
   },
-  "active": "fbbcdef6bd9004e0",
+  "active": "cfb9a067ce8fa544",
   "lastOpenFiles": [
+    "2026-08-13.md",
     "!/_TEMPLATE.md",
     "!/_TEMPLATE_NOTE.md",
     "!/_TEMPLATE_NOTE__.md"
