@@ -28,8 +28,8 @@
 .openclaw/openclaw.json*
 .openclaw/secrets/
 .vscode/cli/*tunnel*.*
-.vscode-shared/sharedStorage/state.vscdb.backup
 .vscode-shared/sharedStorage/state.vscdb
+.vscode-shared/sharedStorage/state.vscdb.backup
 adbkey*
 auth.json
 credstore*
@@ -80,3 +80,4 @@ Temporary Items
 !/**.md
 
 # 
+
