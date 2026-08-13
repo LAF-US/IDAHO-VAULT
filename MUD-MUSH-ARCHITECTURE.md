@@ -107,6 +107,12 @@ Object
 
 Objects should have stable identifiers even when their displayed names change. This permits aliasing, renaming, and narrative presentation without breaking references or obscuring history.
 
+### 4.4 Canonical state and history
+
+A single append-only **world ledger** is the canonical source for room, object, actor, capability, and scene history. Current room contents, object properties, aliases, and locations are derived projections keyed by stable object IDs; a room-local `event_log` or an object's `event_history` is therefore a filtered view of the same ledger, not an independently writable copy.
+
+Each committed event carries an event ID, command ID, actor ID, affected entity IDs, prior and resulting state versions, timestamp, authorization decision, and payload hash. A projection may be rebuilt from the ledger, and a historical question is answered by replaying the relevant committed events rather than by trusting mutable descriptive text.
+
 ## 5. Hard code and soft code
 
 The system separates **hard code** from **soft code** without treating either as inferior.
@@ -118,18 +124,26 @@ The system separates **hard code** from **soft code** without treating either as
 
 Hard code prevents the world from becoming an unbounded improvisation engine. Soft code prevents the engine from becoming an inert database. The architecture needs both: a reliable stage and content that can meaningfully change what happens on it.
 
+### 5.1 Record retention and access
+
+Durable records carry an explicit **access class** and **retention class**. The event ledger, capability grants, authorization decisions, and promotion or administrative records are append-only audit material; they may be superseded by a later event but are not silently rewritten. Private, restricted, or sealed records are readable only through a capability check performed before a projection or export is rendered. Public narrative or scene artifacts may have a documented archival or deletion disposition, but the disposition itself is recorded durably.
+
+The retention policy must name the steward, access class, review cadence, and lawful disposal path for each record class. No actor, including an automated agent, may delete, reclassify, or export a durable record without a command whose capability and resulting ledger event are independently inspectable.
+
 ## 6. Command model
 
 Each player or agent action should resolve through a clear command contract.
 
 ```text
 COMMAND
+  → assign a unique command_id and capture expected state version(s)
   → parse intent
   → identify actor, room, and referenced objects
   → check visibility and capabilities
-  → evaluate local and global rules
-  → emit an event or a proposal
-  → update state only if authorized
+  → evaluate local and global rules in deterministic order
+  → create a proposal record, or prepare an authorized state event
+  → atomically commit authorization, state mutation, and ledger append
+  → replay duplicate command_id values idempotently rather than applying twice
   → render an in-world response and an inspectable record
 ```
 
@@ -141,7 +155,7 @@ Commands fall into three categories:
 | **Interact** | `say`, `ask`, `give`, `take`, `open`, `move`, `use` | May alter location, inventory, relationship state, or a scene. |
 | **Administer** | `build`, `create`, `set`, `grant`, `archive`, `approve` | Alters world structure or permissions; always requires an explicit capability and durable record. |
 
-Natural-language input may be accepted, but it should compile into one or more named commands before it changes state. This preserves the expressive quality of a MUSH while retaining the accountability of a MUD engine.
+Natural-language input may be accepted, but it should compile into one or more named commands before it changes state. This preserves the expressive quality of a MUSH while retaining the accountability of a MUD engine. A proposal is not a state event: a proposal records a requested transition for later review, while only an authorized commit may update projections and append the corresponding canonical ledger event. The command handler rejects stale expected versions or applies a documented conflict rule, so concurrent commands and crash retries cannot leave state and history out of sync.
 
 ## 7. Keys, capabilities, and authority
 
