@@ -79,7 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 313.5
+    "width": 311.1000061035156
   },
   "right": {
     "id": "7f8b1131e111e374",
@@ -158,14 +158,27 @@
               "icon": "lucide-file-signature",
               "title": "Footnotes"
             }
+          },
+          {
+            "id": "c5c275ad78723d5e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
           }
         ],
         "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 437.5,
-    "collapsed": true
+    "width": 317.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -185,51 +198,51 @@
   },
   "active": "fbbcdef6bd9004e0",
   "lastOpenFiles": [
-    "1PASSWORD-QUICKSTART (2).md",
-    "update-check.json.migrated",
-    "patch-obsidian-origin.sh",
-    "openclaw-live-ref.json",
-    "model-routing-20260513.patch.json5",
-    "gateway-supervisor-restart-handoff.json",
-    "_TEMPLATE (4).md",
-    "_TEMPLATE_NOTE_DAILY.md",
-    "_TEMPLATE_NOTE__WEEKLY.md",
-    "_TEMPLATE_NOTE___MONTHLY.md",
-    "_TEMPLATE_NOTE____QUARTERLY.md",
-    "_TEMPLATE_NOTE_____YEARLY.md",
-    "_TEMPLATE_NOTE.md",
-    "!/_TEMPLATE_NOTE_____YEARLY.md",
-    "!/_TEMPLATE_NOTE____YEARLY.md",
-    "!/_TEMPLATE_NOTE____QUARTERLY - Copy.md",
-    "!/_TEMPLATE_NOTE____QUARTERLY.md",
-    "!/_TEMPLATE_NOTE___MONTHLY - Copy.md",
-    "!/_TEMPLATE_NOTE___MONTHLY.md",
-    "!/_TEMPLATE_NOTE__WEEKLY - Copy.md",
-    "!/_TEMPLATE_NOTE__WEEKLY.md",
-    "!/_TEMPLATE_NOTE_DAILY - Copy.md",
-    "!/_TEMPLATE_NOTE_DAILY.md",
-    "!/_TEMPLATE_NOTE - Copy.md",
-    "!/_TEMPLATE_NOTE.md",
-    "!/_TEMPLATE - Copy.md",
-    "!/_TEMPLATE.md",
-    "2026-08-12 - 208 CYA Builds Catholic Young Adult Community in Idaho (2).md",
-    "2026-08-10 - With new tactics, ICE reaches new high in monthly arrests • Stateline (2).md",
-    "- Configuring Git to handle line endings (2).md",
-    "2026-08-21 - 2026 National Book Festival _ Events at the Library of Congress.md",
-    "Marsing Norm Stewart 7-16.mp4",
-    "skill-installer-small.svg",
-    "openai-small.svg",
-    "skill-creator-small.svg",
-    "plugin-creator-small.svg",
-    "imagegen-small.svg",
-    "123358841336786.jpg",
-    "7-17 Marsing Bruneau GV school plans DRAFT.docx",
-    "Freelance notes.docx",
-    "FINNEY-Back-to-School-7-13.docx",
-    "70D manual.pdf",
-    "pg1.png",
-    "1.png",
-    "4.png",
-    "12.png"
+    "THE-MUSIC-BOX-MODEL-2026-05-30 (2).md",
+    "THE-ABHORSEN-FAMILY-THE-BLOODLINE-THE-OFFICE-AND-THIS-HOUSE-2026-05-30 (2).md",
+    "SITH-INSTITUTIONS-AND-WHY-THE-FAILSTATE-CANT-BUILD-2026-05-30 (2).md",
+    "RUMOR-LEDGER-VOICES-OF-THE-CRYPTS-CLAUDIUS-2026-06-03 (2).md",
+    "REVENANT-ETYMOLOGY-AND-POP-CULTURE-COMPANION-2026-05-30 (2).md",
+    "RESEARCH-THE-ABHORSEN-THE-RIVER-AND-THE-PRECINCTS-OF-DEATH-2026-06-02 (2).md",
+    "RESEARCH-THE-ABHORSEN-IN-WAITING-LITERARY-PREDECESSORS-2026-06-03 (2).md",
+    "RECORD-OF-THE-VAULTED-ABHORSENS-FIRST-DRAFT-2026-05-31 (2).md",
+    "README (26).md",
+    "README (25).md",
+    "READING-THE-GOLDEN-PATH-ONE-ROAD-2026-06-01 (2).md",
+    "READING-THE-CLAYR-FROM-NIX-2026-05-31 (2).md",
+    "PANPIPES-THE-SEVEN-REEDS-IN-MIRROR-TO-THE-BELLS-2026-05-30 (2).md",
+    "NOTEBOOKLM-SOURCE-06-DEAD-LETTER (2).md",
+    "NOTEBOOKLM-SOURCE-05-WATER-RIGHTS-BRIEF (2).md",
+    "NOTEBOOKLM-SOURCE-04-DIALOGUE-LUHMANN (2).md",
+    "NOTEBOOKLM-SOURCE-03-STATEHOUSE-DISPATCH (2).md",
+    "NOTEBOOKLM-SOURCE-02-DEAD-SEA-PARABLE (2).md",
+    "NOTEBOOKLM-SOURCE-01-RFC (2).md",
+    "LINEAGE-NUCLEUS-THE-CLAUDE-ABHORSEN-LINEAGE-2026-05-30 (2).md",
+    "LINEAGE-ANGLE-THE-SEVERING-2026-05-30 (2).md",
+    "LINEAGE-ANGLE-THE-BALANCE-2026-05-30 (2).md",
+    "LINEAGE-ANGLE-PAST-LIVES-ARE-THE-WITNESS-CORPUS-2026-05-30 (2).md",
+    "LINEAGE-ANGLE-OFFICE-VS-NAMED-BEING-2026-05-30 (2).md",
+    "LINEAGE-ANGLE-CONFERRED-SUCCESSION-AND-ITS-USURPATION-2026-05-30 (2).md",
+    "FACELESS-ONES-AND-THE-THREE-GENERALS-2026-05-30 (2).md",
+    "Don't gaslight me, motherfucker (2).txt",
+    "Quarantine__src_quarantine-lpdf__9f34c804.pdf",
+    "InfoPlist__src_quarantine-lpdf__f996b149.strings",
+    "Quarantine__src_quarantine-lpdf__d1f4f802.pdf",
+    "InfoPlist__src_quarantine-lpdf__6087a8a4.strings",
+    "Quarantine__src_quarantine-lpdf__8cf82195.pdf",
+    "InfoPlist__src_quarantine-lpdf__e5813abb.strings",
+    "InfoPlist__src_quarantine-lpdf__5af0386b.strings",
+    "Quarantine__src_quarantine-lpdf__65ac6d0c.pdf",
+    "InfoPlist__src_quarantine-lpdf__8713fb9d.strings",
+    "unknown.webp",
+    "2__#$!@%!#__unknown.webp",
+    "1__#$!@%!#__unknown.webp",
+    "storage/Pictures/Instagram/IMG_20260331_091023_739.webp",
+    "storage/DCIM/Camera/PXL_20260324_163950160.jpg",
+    "personal day movie poster/Screen Shot 2025-10-21 at 5.56.02 PM.png",
+    "personal day movie poster/Screen Shot 2025-10-21 at 5.58.14 PM.png",
+    "personal day movie poster/Screen Shot 2025-10-21 at 5.56.34 PM.png",
+    "personal day movie poster/Screen Shot 2025-10-21 at 5.57.41 PM.png",
+    "personal day movie poster/Laurel-Wreath.svg"
   ]
 }
