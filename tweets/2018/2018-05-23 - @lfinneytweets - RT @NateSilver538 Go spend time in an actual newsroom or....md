@@ -1,4 +1,5 @@
 ---
+title: "RT @NateSilver538 Go spend time in an actual newsroom or..."
 date: 2018-05-23
 time: 23:24:15
 tweet_id: "999430840848302081"

@@ -7,4 +7,4 @@ related:
 authority: LOGAN
 ---
 Seat: Gooding
-Municipalities: Bliss, Hagerman, Wendell 
+Municipalities: Bliss, Hagerman, Wendell

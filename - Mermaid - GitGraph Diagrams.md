@@ -10,9 +10,9 @@ These kind of diagram are particularly helpful to developers and devops teams to
 
 Mermaid can render Git diagrams
 
-##### Code:
+##### Code
 
-```
+```text
 mermaid---
 title: Example Git diagram
 ---
@@ -54,9 +54,9 @@ You make use of ***commit*** keyword to register a commit on the current branch.
 
 A simple gitgraph showing three commits on the default (***main***) branch:
 
-##### Code:
+##### Code
 
-```
+```mermaid
 mermaid    gitGraph
        commit
        commit
@@ -73,9 +73,9 @@ For a given commit you may specify a custom ID at the time of declaring it using
 
 Let us see how this works with the help of the following diagram:
 
-##### Code:
+##### Code
 
-```
+```mermaid
 mermaid    gitGraph
        commit id: "Alpha"
        commit id: "Beta"
@@ -100,9 +100,9 @@ NOTE: If no commit type is specified, `NORMAL` is picked as default.
 
 Let us see how these different commit type look with the help of the following diagram:
 
-##### Code:
+##### Code
 
-```
+```mermaid
 mermaid    gitGraph
        commit id: "Normal"
        commit
@@ -122,9 +122,9 @@ For a given commit you may decorate it as a **tag**, similar to the concept of t
 
 Let us see how this works with the help of the following diagram:
 
-##### Code:
+##### Code
 
-```
+```mermaid
 mermaid    gitGraph
        commit
        commit id: "Normal" tag: "v1.0.0"
@@ -147,9 +147,9 @@ When Mermaid, reads the `branch` keyword, it creates a new branch and sets it as
 
 Let see this in an example:
 
-##### Code:
+##### Code
 
-```
+```mermaid
 mermaid    gitGraph
        commit
        commit
@@ -171,9 +171,9 @@ When Mermaid, reads the `checkout` keyword, it finds the given branch and sets i
 
 Let see modify our previous example:
 
-##### Code:
+##### Code
 
-```
+```mermaid
 mermaid    gitGraph
        commit
        commit
@@ -200,9 +200,9 @@ When Mermaid, reads the `merge` keyword, it finds the given branch and its head 
 
 Let us modify our previous example to merge our two branches:
 
-##### Code:
+##### Code
 
-```
+```mermaid
 mermaid    gitGraph
        commit
        commit
@@ -232,9 +232,9 @@ And you can choose to use none, some or all of these attributes together. For ex
 
 Let us see how this works with the help of the following diagram:
 
-##### Code:
+##### Code
 
-```
+```mermaid
 mermaid    gitGraph
        commit id: "1"
        commit id: "2"
@@ -281,9 +281,9 @@ A few important rules to note here are:
 
 Let see an example:
 
-##### Code:
+##### Code
 
-```
+```mermaid
 mermaid    gitGraph
         commit id: "ZERO"
         branch develop
@@ -323,9 +323,9 @@ Sometimes you may want to hide the branch names and lines from the diagram. You 
 
 Usage example:
 
-##### Code:
+##### Code
 
-```
+```text
 mermaid---
 config:
   logLevel: 'debug'
@@ -387,9 +387,9 @@ You can change the layout of the commit labels by using the `rotateCommitLabel` 
 
 Usage example: Rotated commit labels
 
-##### Code:
+##### Code
 
-```
+```text
 mermaid---
 config:
   logLevel: 'debug'
@@ -418,9 +418,9 @@ gitGraph
 
 Usage example: Horizontal commit labels
 
-##### Code:
+##### Code
 
-```
+```text
 mermaid---
 config:
   logLevel: 'debug'
@@ -453,9 +453,9 @@ Sometimes you may want to hide the commit labels from the diagram. You can do th
 
 Usage example:
 
-##### Code:
+##### Code
 
-```
+```text
 mermaid---
 config:
   logLevel: 'debug'
@@ -514,9 +514,9 @@ Sometimes you may want to customize the name of the main/default branch. You can
 
 Usage example:
 
-##### Code:
+##### Code
 
-```
+```text
 mermaid---
 config:
   logLevel: 'debug'
@@ -568,9 +568,9 @@ To fully control the order of all the branches, you must define `order` for all 
 
 Usage example:
 
-##### Code:
+##### Code
 
-```
+```text
 mermaid---
 config:
   logLevel: 'debug'
@@ -592,9 +592,9 @@ Look at the diagram, all the branches are following the order defined.
 
 Usage example:
 
-##### Code:
+##### Code
 
-```
+```text
 mermaid---
 config:
   logLevel: 'debug'
@@ -634,9 +634,9 @@ However, you can set this explicitly with `LR:` after `gitGraph`.
 
 Usage example:
 
-##### Code:
+##### Code
 
-```
+```mermaid
 mermaid    gitGraph LR:
        commit
        commit
@@ -661,9 +661,9 @@ To orient the graph this way, you need to add `TB:` after gitGraph.
 
 Usage example:
 
-##### Code:
+##### Code
 
-```
+```mermaid
 mermaid    gitGraph TB:
        commit
        commit
@@ -688,9 +688,9 @@ To orient the graph this way, you need to add `BT:` after gitGraph.
 
 Usage example:
 
-##### Code:
+##### Code
 
-```
+```mermaid
 mermaid    gitGraph BT:
        commit
        commit
@@ -713,9 +713,9 @@ Commits in Mermaid display temporal information in gitgraph by default. For exam
 
 ### Temporal Commits (default, parallelCommits: false)
 
-##### Code:
+##### Code
 
-```
+```text
 mermaid---
 config:
   gitGraph:
@@ -735,9 +735,9 @@ gitGraph:
 
 ### Parallel commits (parallelCommits: true)
 
-##### Code:
+##### Code
 
-```
+```text
 mermaid---
 config:
   gitGraph:
@@ -771,9 +771,9 @@ The following are the different pre-defined theme options:
 
 ### Base Theme
 
-##### Code:
+##### Code
 
-```
+```text
 mermaid---
 config:
   logLevel: 'debug'
@@ -827,9 +827,9 @@ config:
 
 ### Forest Theme
 
-##### Code:
+##### Code
 
-```
+```text
 mermaid---
 config:
   logLevel: 'debug'
@@ -883,9 +883,9 @@ config:
 
 ### Default Theme
 
-##### Code:
+##### Code
 
-```
+```text
 mermaid---
 config:
   logLevel: 'debug'
@@ -939,9 +939,9 @@ config:
 
 ### Dark Theme
 
-##### Code:
+##### Code
 
-```
+```text
 mermaid---
 config:
   logLevel: 'debug'
@@ -995,9 +995,9 @@ config:
 
 ### Neutral Theme
 
-##### Code:
+##### Code
 
-```
+```text
 mermaid---
 config:
   logLevel: 'debug'
@@ -1057,9 +1057,9 @@ For understanding let us take a sample diagram with theme `default`, the default
 
 See how the default theme is used to set the colors for the branches:
 
-##### Code:
+##### Code
 
-```
+```text
 mermaid---
 config:
   logLevel: 'debug'
@@ -1081,8 +1081,8 @@ config:
 
 <svg id="mermaid-531" width="100%" xmlns="http://www.w3.org/2000/svg" style="max-width: 532.4781494140625px;" viewBox="-124.4781265258789 -21.199999809265137 532.4781494140625 264.4385986328125" role="graphics-document document" aria-roledescription="gitGraph"><g></g><g></g><g><line x1="0" y1="-2" x2="400" y2="-2" stroke="currentColor" stroke-opacity="0.2"></line><rect style="" rx="4" ry="4" x="-69" y="0.8000001907348633" width="53" height="22.399999618530273" transform="translate(-19, -14)" fill="none" stroke="currentColor"></rect><g><g transform="translate(-79, -13.199999809265137)"><text><tspan xml:space="preserve" dy="1em" x="0" fill="currentColor">main</tspan></text></g></g> <line x1="0" y1="88" x2="400" y2="88" stroke="currentColor" stroke-opacity="0.2"></line><rect style="" rx="4" ry="4" x="-90.42499923706055" y="0.8000001907348633" width="74.42499923706055" height="22.399999618530273" transform="translate(-19, 76)" fill="none" stroke="currentColor"></rect><g><g transform="translate(-100.42499923706055, 76.80000019073486)"><text><tspan xml:space="preserve" dy="1em" x="0" fill="currentColor">develop</tspan></text></g></g> <line x1="0" y1="178" x2="400" y2="178" stroke="currentColor" stroke-opacity="0.2"></line><rect style="" rx="4" ry="4" x="-97.4781265258789" y="0.8000001907348633" width="81.4781265258789" height="22.399999618530273" transform="translate(-19, 166)" fill="none" stroke="currentColor"></rect><g><g transform="translate(-107.4781265258789, 166.80000019073486)"><text><tspan xml:space="preserve" dy="1em" x="0" fill="currentColor">featureA</tspan></text></g></g></g><g><path d="M 10 -2 L 10 68 A 20 20, 0, 0, 0, 30 88 L 60 88" fill="none" stroke="currentColor"></path><path d="M 60 88 L 110 88" fill="none" stroke="currentColor"></path><path d="M 10 -2 L 160 -2" fill="none" stroke="currentColor"></path><path d="M 160 -2 L 210 -2" fill="none" stroke="currentColor"></path><path d="M 210 -2 L 260 -2" fill="none" stroke="currentColor"></path><path d="M 110 88 L 240 88 A 20 20, 0, 0, 0, 260 68 L 260 -2" fill="none" stroke="currentColor"></path><path d="M 260 -2 L 310 -2" fill="none" stroke="currentColor"></path><path d="M 310 -2 L 310 158 A 20 20, 0, 0, 0, 330 178 L 360 178" fill="none" stroke="currentColor"></path></g><g><circle cx="10" cy="-2" r="10" fill="none" stroke="currentColor"></circle><circle cx="60" cy="88" r="10" fill="none" stroke="currentColor"></circle><circle cx="110" cy="88" r="10" fill="none" stroke="currentColor"></circle><rect x="150" y="-12" width="20" height="20" fill="none" stroke="currentColor"></rect><rect x="154" y="-8" width="12" height="12" fill="none" stroke="currentColor"></rect><circle cx="210" cy="-2" r="10" fill="none" stroke="currentColor"></circle><circle cx="260" cy="-2" r="10" fill="none" stroke="currentColor"></circle><circle cx="260" cy="-2" r="6" fill="none" stroke="currentColor"></circle><circle cx="310" cy="-2" r="10" fill="none" stroke="currentColor"></circle><circle cx="360" cy="178" r="10" fill="none" stroke="currentColor"></circle></g></svg>
 
-> #### IMPORTANT:
-> 
+> #### IMPORTANT
+>
 > Mermaid supports the theme variables to override the default values for **up to 8 branches**, i.e., you can set the color/styling of up to 8 branches using theme variables. After this threshold of 8 branches, the theme variables are reused in the cyclic manner, i.e. the 9th branch will use the color/styling of the 1st branch, or the branch at index position '8' will use the color/styling of the branch at index position '0'. *More on this in the next section. See examples on **Customizing branch label colors** below*
 
 ### Customizing branch colors
@@ -1095,9 +1095,9 @@ Example:
 
 Now let's override the default values for the `git0` to `git3` variables:
 
-##### Code:
+##### Code
 
-```
+```text
 mermaid---
 config:
   logLevel: 'debug'
@@ -1138,9 +1138,9 @@ Lets see how the default theme is used to set the colors for the branch labels:
 
 Now let's override the default values for the `gitBranchLabel0` to `gitBranchLabel2` variables:
 
-##### Code:
+##### Code
 
-```
+```text
 mermaid---
 config:
   logLevel: 'debug'
@@ -1182,9 +1182,9 @@ You can customize commit using the `commitLabelColor` and `commitLabelBackground
 
 Example: Now let's override the default values for the `commitLabelColor` to `commitLabelBackground` variables:
 
-##### Code:
+##### Code
 
-```
+```text
 mermaid---
 config:
   logLevel: 'debug'
@@ -1217,9 +1217,9 @@ You can customize commit using the `commitLabelFontSize` theme variables for cha
 
 Example: Now let's override the default values for the `commitLabelFontSize` variable:
 
-##### Code:
+##### Code
 
-```
+```text
 mermaid---
 config:
   logLevel: 'debug'
@@ -1253,9 +1253,9 @@ You can customize commit using the `tagLabelFontSize` theme variables for changi
 
 Example: Now let's override the default values for the `tagLabelFontSize` variable:
 
-##### Code:
+##### Code
 
-```
+```text
 mermaid---
 config:
   logLevel: 'debug'
@@ -1287,9 +1287,9 @@ See how the tag label font size changed.
 
 You can customize tag using the `tagLabelColor`,`tagLabelBackground` and `tagLabelBorder` theme variables for changes in the tag label color,tag label background color and tag label border respectively. Example: Now let's override the default values for the `tagLabelColor`, `tagLabelBackground` and to `tagLabelBorder` variables:
 
-##### Code:
+##### Code
 
-```
+```text
 mermaid---
 config:
   logLevel: 'debug'
@@ -1325,9 +1325,9 @@ Example:
 
 Now let's override the default values for the `git0` to `git3` variables:
 
-##### Code:
+##### Code
 
-```
+```text
 mermaid---
 config:
   logLevel: 'debug'

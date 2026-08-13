@@ -5,7 +5,7 @@ author:
 published:
 created: 2026-04-14
 ---
-![Geometric interpretation of Charter Marks.](https://static.wikia.nocookie.net/oldkingdomwiki/images/a/a3/Cha***REMOVED***marks_I.PNG/revision/latest/scale-to-width-down/180?cb=20100926191043)
+![Geometric interpretation of Charter Marks.](https://static.wikia.nocookie.net/oldkingdomwiki/images/a/a3/Charter_marks_I.PNG/revision/latest/scale-to-width-down/180?cb=20100926191043)
 
 Geometric interpretation of Charter Marks.
 

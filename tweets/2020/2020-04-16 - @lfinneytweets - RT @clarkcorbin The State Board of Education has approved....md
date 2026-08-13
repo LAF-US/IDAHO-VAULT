@@ -1,4 +1,5 @@
 ---
+title: "RT @clarkcorbin The State Board of Education has approved..."
 date: 2020-04-16
 time: 17:29:06
 tweet_id: "1250838640604770305"

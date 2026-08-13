@@ -29,7 +29,7 @@ reintroduced here on purpose.
 ## Layer Boundaries
 
 | Surface | Role | Authority |
-|---|---|---|
+| --- | --- | --- |
 | `swarm.json` | Cross-agent registration of the CrewAI layer | Durable control-plane facts only |
 | `.crewai/MANIFEST.md` | Live doctrine, topology, and promotion rules | Current CrewAI truth |
 | `!/CREWAI/` | Staged output surface | Live staging, on-record but not canonical |
@@ -40,7 +40,7 @@ reintroduced here on purpose.
 ## Layered Model
 
 | Layer | Meaning | Writable By | Promotion Rule |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | `CANON` | Durable promoted authority in the vault | Logan or explicitly approved promotion paths | Canon changes require Logan approval |
 | `DRIVE` | Active working surface for code, config, and human edits | Logan and assigned agents | Working changes become durable only when committed and promoted |
 | `RUNTIME` | Disposable CrewAI execution slice | Local or remote runners | Runtime artifacts do not self-promote |
@@ -54,7 +54,7 @@ machine, path, or runtime container.
 ## Current State
 
 | Key | Value |
-|---|---|
+| --- | --- |
 | Package | `crewai[tools,anthropic]>=1.14.1` |
 | Python | 3.13+ |
 | Environment | `.venv/` (repo-local, uv-managed) |
@@ -93,7 +93,7 @@ Dependabot proposes GitHub Actions and Git submodule pin updates every second Th
 ### Active runners
 
 | Runner | Invocation | Purpose | Status |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | CrewAI CLI | `uv run crewai run` | Canonical local bootstrap validation run | Active |
 | Package entrypoint | `uv run idaho_vault` | Direct invocation of the same bootstrap shard | Active |
 | Threshold slice runner | `uv run five_wizards_threshold` | Root-first local `5Wizards` threshold run that stages only to `!/CREWAI/` and leaves promotion to Logan | Active |
@@ -103,7 +103,7 @@ Dependabot proposes GitHub Actions and Git submodule pin updates every second Th
 ### Writable surfaces
 
 | Surface | Purpose | Persistence |
-|---|---|---|
+| --- | --- | --- |
 | `.crewai/` | CrewAI registry, manifests, and training surfaces | Durable in git |
 | `src/idaho_vault/` | CrewAI Python package, bootstrap crew, and runtime containment code | Durable in git |
 | `!/CREWAI/` | Staged CrewAI outputs | Durable in git, not canonical by default |

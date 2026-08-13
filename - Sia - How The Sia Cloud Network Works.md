@@ -4,7 +4,7 @@ author:
 published:
 created: 2026-04-23
 ---
-## See what powers the Sia network.
+## See what powers the Sia network
 
 Sia makes some bold claims — because no other cloud storage has our design. See for yourself.
 
@@ -42,7 +42,7 @@ Instead of forcing users to entrust their data to a centralized cloud storage ne
 
 At its foundation is a blockchain layer that supports the software above it. This software uses smart contracts to automatically distribute fragmented, encrypted data across a global network of independent storage providers. Data is never stored on the blockchain. Users pay providers for storage using Siacoin.
 
-![](https://sia.tech/api/media/file/contract-diagram-1.svg?2025-05-21T19:50:29.607Z)
+![alt text needed](https://sia.tech/api/media/file/contract-diagram-1.svg?2025-05-21T19:50:29.607Z)
 
 ## Non-Profit Model
 

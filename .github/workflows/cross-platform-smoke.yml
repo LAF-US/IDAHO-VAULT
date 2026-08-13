@@ -20,6 +20,20 @@ on:
 permissions:
   contents: read
 
+# Supersede, don't stack: a second push to the same branch cancels the still-running
+# check for the previous commit, which nobody is waiting on. The final state of the
+# branch is still checked in full, so no coverage is lost.
+#
+# `github.event_name` is in the group key on purpose: it keeps the push-event run and
+# the pull_request-event run of the same branch in SEPARATE groups. Collapsing them
+# would let a push run cancel a required PR check, and a cancelled required check
+# blocks the PR.
+#
+# merge_group is never cancelled — cancelling a merge-queue check breaks the queue.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event_name }}-${{ github.head_ref || github.ref }}
+  cancel-in-progress: ${{ github.event_name != 'merge_group' }}
+
 jobs:
   smoke:
     strategy:
@@ -30,9 +44,9 @@ jobs:
     runs-on: ${{ matrix.os }}
 
     steps:
-      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
-      - uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         with:
           python-version: ${{ matrix.python }}
 
@@ -49,6 +63,9 @@ jobs:
 
       - name: MESHNETWEB portability check (report)
         run: python .github/scripts/meshnetweb_portability_check.py
+
+      - name: Codex work surface guard
+        run: python .github/scripts/codex_work_guard.py
 
       - name: MESHNETWEB portability check (strict on PR)
         if: github.event_name == 'pull_request' || github.event_name == 'merge_group'

@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports If Idaho voters pass Proposition 1, the..."
 date: 2022-07-25
 time: 23:39:13
 tweet_id: "1551713713337405440"

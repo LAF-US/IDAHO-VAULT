@@ -1,4 +1,5 @@
 ---
+title: "RT @uidaho We Vandals are brave and bold, especially when..."
 date: 2022-04-05
 time: 18:17:47
 tweet_id: "1511407770842460160"

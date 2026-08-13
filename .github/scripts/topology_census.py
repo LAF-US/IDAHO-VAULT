@@ -19,7 +19,7 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 OUTPUT_DIR = REPO_ROOT / "!"
-LIVE_DOCTRINE_PATHS = (
+DOCTRINE_PATHS = (
     "CONSTITUTION.md",
     "VAULT-CONVENTIONS.md",
     "!/WAKEUP.md",
@@ -33,11 +33,8 @@ GOVERNING_FILENAMES = (
     "MANIFEST.md",
     "DOCKET.md",
 )
-NEST_STATUS_LIVE_HINTS = (
-    "status: active",
+NEST_OPERATIONAL_HINTS = (
     "current truth",
-    "is the live",
-    "live staging",
     "durable async bus",
     "intake automation layer",
     "file drop zone",
@@ -71,11 +68,18 @@ def _run_git(root: Path, *args: str) -> str:
         encoding="utf-8",
         errors="replace",
         check=True,
+        timeout=30,
     )
     return result.stdout
 
 
 def _git_repo_available(root: Path) -> bool:
+    # OSError (git not installed) and CalledProcessError (git ran and said "not
+    # a repository") are decisive "no" signals. TimeoutExpired is deliberately
+    # NOT caught here: a timeout on this probe means we don't know whether it's
+    # a repo, not that it isn't one -- treating it as "not available" would let
+    # _git_tracked_files() fall into its fail-closed guard's own blind spot and
+    # silently return an empty set instead of crashing.
     try:
         _run_git(root, "rev-parse", "--is-inside-work-tree")
     except (OSError, subprocess.CalledProcessError):
@@ -84,34 +88,52 @@ def _git_repo_available(root: Path) -> bool:
 
 
 def _git_tracked_files(root: Path) -> set[str]:
+    # Deliberately fail-closed (unlike the sibling git helpers below): this
+    # feeds _tracked_prefix_exists() for every entry in the census, so a
+    # swallowed failure here doesn't just degrade one field -- it silently
+    # marks the *entire vault* untracked, and that report gets auto-committed
+    # by sort-audit.yml. Only "not a git repo at all" (_git_repo_available)
+    # is a legitimate reason to return an empty set; any other failure past
+    # that point should crash the run rather than produce a false census.
     if not _git_repo_available(root):
         return set()
-    return {line for line in _run_git(root, "ls-files").splitlines() if line}
+    output = _run_git(root, "ls-files")
+    return {line for line in output.splitlines() if line}
 
 
 def _git_path_is_ignored(root: Path, relpath: str) -> bool:
     if not _git_repo_available(root):
         return False
-    result = subprocess.run(
-        ["git", "-C", str(root), "check-ignore", relpath],
-        capture_output=True,
-        text=True,
-        encoding="utf-8",
-        errors="replace",
-    )
+    try:
+        result = subprocess.run(
+            ["git", "-C", str(root), "check-ignore", "--", relpath],
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+            errors="replace",
+            timeout=30,
+            check=False,
+        )
+    except (OSError, subprocess.TimeoutExpired):
+        return False
     return result.returncode == 0
 
 
 def _git_status_lines(root: Path, relpath: str) -> list[str]:
     if not _git_repo_available(root):
         return []
-    result = subprocess.run(
-        ["git", "-C", str(root), "status", "--short", "--ignored", "--", relpath],
-        capture_output=True,
-        text=True,
-        encoding="utf-8",
-        errors="replace",
-    )
+    try:
+        result = subprocess.run(
+            ["git", "-C", str(root), "status", "--short", "--ignored", "--", relpath],
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+            errors="replace",
+            timeout=30,
+            check=False,
+        )
+    except (OSError, subprocess.TimeoutExpired):
+        return []
     return [line.rstrip() for line in result.stdout.splitlines() if line.strip()]
 
 
@@ -124,9 +146,9 @@ def _load_text(path: Path) -> str:
     return path.read_text(encoding="utf-8", errors="replace") if path.exists() else ""
 
 
-def _load_live_doctrine(root: Path) -> dict[str, list[str]]:
+def _load_doctrine(root: Path) -> dict[str, list[str]]:
     doctrine: dict[str, list[str]] = {}
-    for relpath in LIVE_DOCTRINE_PATHS:
+    for relpath in DOCTRINE_PATHS:
         path = root / Path(relpath)
         doctrine[relpath] = _load_text(path).splitlines()
     return doctrine
@@ -154,7 +176,9 @@ def _find_heading_range(lines: list[str], heading: str) -> tuple[int, int] | Non
 
 def _sample_children(path: Path) -> tuple[dict[str, object], list[str]]:
     try:
-        children = sorted(path.iterdir(), key=lambda child: (not child.is_dir(), child.name.lower()))
+        children = sorted(
+            path.iterdir(), key=lambda child: (not child.is_dir(), child.name.lower())
+        )
     except OSError as exc:
         return (
             {
@@ -249,7 +273,7 @@ def _authority_state(
     if conflict_signal:
         return "conflicting_signals"
     if doctrine_citations:
-        return "explicit_live_authority"
+        return "explicit_doctrine_reference"
     if local_governing_surface is not None:
         return "implied_by_local_documentation"
     return "no_discernible_authority"
@@ -262,7 +286,7 @@ def _obvious_authority_label(
     ignored: bool,
 ) -> str:
     if doctrine_citations:
-        return "live doctrine"
+        return "canonical doctrine reference"
     if local_governing_surface is not None:
         return f"local governing surface ({local_governing_surface['path']})"
     if ignored:
@@ -270,7 +294,9 @@ def _obvious_authority_label(
     return "none found"
 
 
-def _root_folder_citations(name: str, doctrine_lines: dict[str, list[str]]) -> list[dict[str, object]]:
+def _root_folder_citations(
+    name: str, doctrine_lines: dict[str, list[str]]
+) -> list[dict[str, object]]:
     return _find_citations(
         doctrine_lines,
         exact_tokens=[f"`{name}/`", f"`{name}`"],
@@ -278,7 +304,9 @@ def _root_folder_citations(name: str, doctrine_lines: dict[str, list[str]]) -> l
     )
 
 
-def _dotfolder_citations(name: str, doctrine_lines: dict[str, list[str]]) -> list[dict[str, object]]:
+def _dotfolder_citations(
+    name: str, doctrine_lines: dict[str, list[str]]
+) -> list[dict[str, object]]:
     return _find_citations(
         doctrine_lines,
         exact_tokens=[f"`{name}/`", f"`{name}`"],
@@ -286,32 +314,37 @@ def _dotfolder_citations(name: str, doctrine_lines: dict[str, list[str]]) -> lis
     )
 
 
-def _dotfolder_roster_signals(root: Path, dotfolder: str) -> dict[str, object]:
+def _line_mentions_dotfolder(dotfolder: str, line: str) -> bool:
+    pattern = rf"(?<![A-Za-z0-9_.-]){re.escape(dotfolder)}/?(?![A-Za-z0-9_.-])"
+    return re.search(pattern, line) is not None
+
+
+def _dotfolder_registry_signals(root: Path, dotfolder: str) -> dict[str, object]:
     agents_path = root / "!" / "AGENTS.md"
     lines = _load_text(agents_path).splitlines()
-    roster_range = _find_heading_range(lines, "Direct-Write Agents (Autoloaded)")
-    advisory_range = _find_heading_range(lines, "Advisory & Specialized Agents")
+    roster_range = _find_heading_range(lines, "Registered Direct-Write Surfaces (Autoloaded)")
+    advisory_range = _find_heading_range(lines, "Registered Advisory and Specialized Surfaces")
     recovery_range = _find_heading_range(lines, "Narrative Recovery Layer")
 
-    live_roster_citations: list[dict[str, object]] = []
+    registry_citations: list[dict[str, object]] = []
     recovery_citations: list[dict[str, object]] = []
 
-    live_ranges = [section for section in (roster_range, advisory_range) if section is not None]
-    for start, end in live_ranges:
+    registry_ranges = [section for section in (roster_range, advisory_range) if section is not None]
+    for start, end in registry_ranges:
         for idx in range(start, end):
-            if dotfolder in lines[idx]:
-                live_roster_citations.append(_make_citation("!/AGENTS.md", idx + 1, lines[idx]))
+            if _line_mentions_dotfolder(dotfolder, lines[idx]):
+                registry_citations.append(_make_citation("!/AGENTS.md", idx + 1, lines[idx]))
 
     if recovery_range is not None:
         start, end = recovery_range
         for idx in range(start, end):
-            if dotfolder in lines[idx]:
+            if _line_mentions_dotfolder(dotfolder, lines[idx]):
                 recovery_citations.append(_make_citation("!/AGENTS.md", idx + 1, lines[idx]))
 
     return {
-        "appears_in_live_roster": bool(live_roster_citations),
+        "appears_in_registered_surface": bool(registry_citations),
         "appears_in_recovery_layer": bool(recovery_citations),
-        "live_roster_citations": live_roster_citations[:6],
+        "registry_citations": registry_citations[:6],
         "recovery_citations": recovery_citations[:6],
     }
 
@@ -349,7 +382,9 @@ def _dotfolder_surface_signals(path: Path) -> dict[str, list[str]]:
     }
 
 
-def _dotfolder_memory_state(root: Path, dotfolder: str, tracked_files: set[str]) -> dict[str, object]:
+def _dotfolder_memory_state(
+    root: Path, dotfolder: str, tracked_files: set[str]
+) -> dict[str, object]:
     memory_rel = f"{dotfolder}/MEMORY"
     memory_path = root / Path(memory_rel)
     tracked_memory = any(path.startswith(f"{memory_rel}/") for path in tracked_files)
@@ -382,7 +417,7 @@ def _compute_nest_conflicts(root: Path) -> dict[str, list[str]]:
     return conflicts
 
 
-def _nest_room_status(
+def _nest_room_classification(
     *,
     text: str,
     duplicate_conflicts: list[str],
@@ -392,14 +427,14 @@ def _nest_room_status(
         return "ambiguous"
 
     lowered = text.casefold()
-    has_live = any(token in lowered for token in NEST_STATUS_LIVE_HINTS)
+    has_operational = any(token in lowered for token in NEST_OPERATIONAL_HINTS)
     has_historical = any(token in lowered for token in NEST_STATUS_HISTORICAL_HINTS)
-    if has_live and has_historical:
+    if has_operational and has_historical:
         return "mixed"
     if has_historical:
         return "historical"
-    if has_live:
-        return "live"
+    if has_operational:
+        return "operationally_described"
 
     sample = " ".join(structure_sample.get("sample_children", [])).casefold()
     if "handoff" in sample or "audit" in sample or "levelset" in sample or "report" in sample:
@@ -407,13 +442,17 @@ def _nest_room_status(
     return "ambiguous"
 
 
-def _gather_root_entries(root: Path, doctrine_lines: dict[str, list[str]], tracked_files: set[str]) -> list[dict[str, object]]:
+def _gather_root_entries(
+    root: Path, doctrine_lines: dict[str, list[str]], tracked_files: set[str]
+) -> list[dict[str, object]]:
     entries: list[dict[str, object]] = []
     for path in sorted(
         (
             child
             for child in root.iterdir()
-            if child.is_dir() and child.name != ROOT_EXCLUDED_NAME and not child.name.startswith(".")
+            if child.is_dir()
+            and child.name != ROOT_EXCLUDED_NAME
+            and not child.name.startswith(".")
         ),
         key=lambda item: item.name.lower(),
     ):
@@ -435,7 +474,7 @@ def _gather_root_entries(root: Path, doctrine_lines: dict[str, list[str]], track
             },
             "structure": structure,
             "access_errors": access_errors,
-            "appears_in_live_doctrine": bool(doctrine_citations),
+            "appears_in_doctrine": bool(doctrine_citations),
             "appears_in_ignore_rules": ignored,
             "local_governing_surface": local_governing_surface,
             "authority_state": _authority_state(
@@ -451,14 +490,18 @@ def _gather_root_entries(root: Path, doctrine_lines: dict[str, list[str]], track
             "notes": [],
         }
         if ignored and doctrine_citations:
-            entry["notes"].append("Folder appears in live doctrine and also has ignore-based local signals.")
+            entry["notes"].append(
+                "Folder appears in canonical doctrine and also has ignore-based local signals."
+            )
         if access_errors:
             entry["notes"].append("Folder could not be fully inspected.")
         entries.append(entry)
     return entries
 
 
-def _gather_dotfolder_entries(root: Path, doctrine_lines: dict[str, list[str]], tracked_files: set[str]) -> list[dict[str, object]]:
+def _gather_dotfolder_entries(
+    root: Path, doctrine_lines: dict[str, list[str]], tracked_files: set[str]
+) -> list[dict[str, object]]:
     entries: list[dict[str, object]] = []
     for path in sorted(
         (child for child in root.iterdir() if child.is_dir() and child.name.startswith(".")),
@@ -471,7 +514,7 @@ def _gather_dotfolder_entries(root: Path, doctrine_lines: dict[str, list[str]], 
         tracked = _tracked_prefix_exists(relpath, tracked_files)
         doctrine_citations = _dotfolder_citations(path.name, doctrine_lines)
         local_governing_surface = _governing_surface_summary(root, path)
-        roster = _dotfolder_roster_signals(root, path.name)
+        registry = _dotfolder_registry_signals(root, path.name)
         memory = _dotfolder_memory_state(root, path.name, tracked_files)
         surface_signals = _dotfolder_surface_signals(path)
         entry = {
@@ -485,7 +528,7 @@ def _gather_dotfolder_entries(root: Path, doctrine_lines: dict[str, list[str]], 
             },
             "structure": structure,
             "access_errors": access_errors,
-            "appears_in_live_doctrine": bool(doctrine_citations),
+            "appears_in_doctrine": bool(doctrine_citations),
             "local_governing_surface": local_governing_surface,
             "authority_state": _authority_state(
                 doctrine_citations=doctrine_citations,
@@ -497,18 +540,23 @@ def _gather_dotfolder_entries(root: Path, doctrine_lines: dict[str, list[str]], 
                 ignored=ignored,
             ),
             "authority_citations": doctrine_citations[:6],
-            "live_roster": roster["appears_in_live_roster"],
-            "historical_recovery": roster["appears_in_recovery_layer"],
-            "live_roster_citations": roster["live_roster_citations"],
-            "historical_recovery_citations": roster["recovery_citations"],
+            "registered_surface": registry["appears_in_registered_surface"],
+            "historical_recovery": registry["appears_in_recovery_layer"],
+            "registry_citations": registry["registry_citations"],
+            "historical_recovery_citations": registry["recovery_citations"],
             "surface_signals": surface_signals,
             "memory_state": memory,
             "notes": [],
         }
         if access_errors:
             entry["notes"].append("Dotfolder could not be fully inspected.")
-        if not roster["appears_in_live_roster"] and not roster["appears_in_recovery_layer"]:
-            entry["notes"].append("Dotfolder does not appear in the live roster or recovery layer.")
+        if (
+            not registry["appears_in_registered_surface"]
+            and not registry["appears_in_recovery_layer"]
+        ):
+            entry["notes"].append(
+                "Dotfolder does not appear in the registered discovery or recovery surfaces."
+            )
         entries.append(entry)
     return entries
 
@@ -518,13 +566,17 @@ def _walk_nest_rooms(root: Path) -> list[Path]:
     rooms: list[Path] = []
     if not nest_root.exists():
         return rooms
-    for path in sorted(nest_root.rglob("*"), key=lambda item: _normalize(item.relative_to(root)).lower()):
+    for path in sorted(
+        nest_root.rglob("*"), key=lambda item: _normalize(item.relative_to(root)).lower()
+    ):
         if path.is_dir():
             rooms.append(path)
     return rooms
 
 
-def _gather_nest_entries(root: Path, doctrine_lines: dict[str, list[str]], tracked_files: set[str]) -> list[dict[str, object]]:
+def _gather_nest_entries(
+    root: Path, doctrine_lines: dict[str, list[str]], tracked_files: set[str]
+) -> list[dict[str, object]]:
     entries: list[dict[str, object]] = []
     duplicate_conflicts = _compute_nest_conflicts(root)
     for path in _walk_nest_rooms(root):
@@ -543,7 +595,7 @@ def _gather_nest_entries(root: Path, doctrine_lines: dict[str, list[str]], track
         if local_governing_surface is not None:
             local_text = _load_text(root / Path(local_governing_surface["path"]))
         duplicate_paths = duplicate_conflicts.get(relpath, [])
-        room_status = _nest_room_status(
+        room_classification = _nest_room_classification(
             text=local_text,
             duplicate_conflicts=duplicate_paths,
             structure_sample=structure,
@@ -572,14 +624,12 @@ def _gather_nest_entries(root: Path, doctrine_lines: dict[str, list[str]], track
                 ignored=ignored,
             ),
             "authority_citations": doctrine_citations[:6],
-            "room_status": room_status,
+            "room_classification": room_classification,
             "duplicate_conflicts": duplicate_paths,
             "notes": [],
         }
         if duplicate_paths:
-            entry["notes"].append(
-                "Room has a competing sibling path with the same normalized key."
-            )
+            entry["notes"].append("Room has a competing sibling path with the same normalized key.")
         if access_errors:
             entry["notes"].append("Room could not be fully inspected.")
         entries.append(entry)
@@ -592,14 +642,16 @@ def _scope_summary(scope: str, entries: list[dict[str, object]]) -> dict[str, ob
         "authority_state_counts": dict(Counter(entry["authority_state"] for entry in entries)),
     }
     if scope == "root":
-        summary["appears_in_live_doctrine_count"] = sum(
-            1 for entry in entries if entry["appears_in_live_doctrine"]
+        summary["appears_in_doctrine_count"] = sum(
+            1 for entry in entries if entry["appears_in_doctrine"]
         )
         summary["appears_in_ignore_rules_count"] = sum(
             1 for entry in entries if entry["appears_in_ignore_rules"]
         )
     elif scope == "dotfolders":
-        summary["live_roster_count"] = sum(1 for entry in entries if entry["live_roster"])
+        summary["registered_surface_count"] = sum(
+            1 for entry in entries if entry["registered_surface"]
+        )
         summary["historical_recovery_count"] = sum(
             1 for entry in entries if entry["historical_recovery"]
         )
@@ -607,7 +659,9 @@ def _scope_summary(scope: str, entries: list[dict[str, object]]) -> dict[str, ob
             1 for entry in entries if entry["memory_state"]["memory_dir_tracked"]
         )
     elif scope == "nest":
-        summary["room_status_counts"] = dict(Counter(entry["room_status"] for entry in entries))
+        summary["room_classification_counts"] = dict(
+            Counter(entry["room_classification"] for entry in entries)
+        )
         summary["duplicate_conflict_count"] = sum(
             1 for entry in entries if entry["duplicate_conflicts"]
         )
@@ -615,7 +669,7 @@ def _scope_summary(scope: str, entries: list[dict[str, object]]) -> dict[str, ob
 
 
 def build_scope_report(root: Path, scope: str) -> dict[str, object]:
-    doctrine_lines = _load_live_doctrine(root)
+    doctrine_lines = _load_doctrine(root)
     tracked_files = _git_tracked_files(root)
     if scope == "root":
         entries = _gather_root_entries(root, doctrine_lines, tracked_files)
@@ -630,7 +684,7 @@ def build_scope_report(root: Path, scope: str) -> dict[str, object]:
         "scope": scope,
         "generated_at": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
         "repo_root": str(root),
-        "doctrine_sources": list(LIVE_DOCTRINE_PATHS),
+        "doctrine_sources": list(DOCTRINE_PATHS),
         "summary": _scope_summary(scope, entries),
         "entries": entries,
     }
@@ -707,7 +761,7 @@ def render_scope_markdown(report: dict[str, object]) -> str:
         lines.append("")
         lines.append(f"- Authority state: `{entry['authority_state']}`")
         if scope == "nest":
-            lines.append(f"- Room status: `{entry['room_status']}`")
+            lines.append(f"- Room classification: `{entry['room_classification']}`")
         lines.append(f"- Obvious authority: {entry['obvious_authority']}")
         lines.append(f"- Git state: {_render_git_state(entry['git_state'])}")
         structure = entry["structure"]
@@ -716,20 +770,18 @@ def render_scope_markdown(report: dict[str, object]) -> str:
                 f"- Structure: `{structure['dir_count']}` dirs, `{structure['file_count']}` files"
             )
             if structure["sample_children"]:
-                lines.append(
-                    "- Sample children: " + "; ".join(structure["sample_children"])
-                )
+                lines.append("- Sample children: " + "; ".join(structure["sample_children"]))
         else:
             lines.append("- Structure: inaccessible during census")
         if scope == "root":
-            lines.append(
-                f"- Live doctrine mention: `{'yes' if entry['appears_in_live_doctrine'] else 'no'}`"
-            )
+            lines.append(f"- Doctrine mention: `{'yes' if entry['appears_in_doctrine'] else 'no'}`")
             lines.append(
                 f"- Ignore-rule signal: `{'yes' if entry['appears_in_ignore_rules'] else 'no'}`"
             )
         elif scope == "dotfolders":
-            lines.append(f"- Live roster: `{'yes' if entry['live_roster'] else 'no'}`")
+            lines.append(
+                f"- Registered discovery surface: `{'yes' if entry['registered_surface'] else 'no'}`"
+            )
             lines.append(
                 f"- Historical recovery layer: `{'yes' if entry['historical_recovery'] else 'no'}`"
             )
@@ -745,12 +797,11 @@ def render_scope_markdown(report: dict[str, object]) -> str:
             )
         elif scope == "nest" and entry["duplicate_conflicts"]:
             lines.append(
-                "- Duplicate conflicts: " + ", ".join(f"`{path}`" for path in entry["duplicate_conflicts"])
+                "- Duplicate conflicts: "
+                + ", ".join(f"`{path}`" for path in entry["duplicate_conflicts"])
             )
         if entry["local_governing_surface"] is not None:
-            lines.append(
-                f"- Local governing surface: `{entry['local_governing_surface']['path']}`"
-            )
+            lines.append(f"- Local governing surface: `{entry['local_governing_surface']['path']}`")
         if entry["notes"]:
             lines.append("- Notes:")
             for note in entry["notes"]:
@@ -758,9 +809,9 @@ def render_scope_markdown(report: dict[str, object]) -> str:
         if entry["authority_citations"]:
             lines.append("- Authority citations:")
             lines.extend(f"  {line}" for line in _render_citations(entry["authority_citations"]))
-        if scope == "dotfolders" and entry["live_roster_citations"]:
-            lines.append("- Live roster citations:")
-            lines.extend(f"  {line}" for line in _render_citations(entry["live_roster_citations"]))
+        if scope == "dotfolders" and entry["registry_citations"]:
+            lines.append("- Registry citations:")
+            lines.extend(f"  {line}" for line in _render_citations(entry["registry_citations"]))
         if scope == "dotfolders" and entry["historical_recovery_citations"]:
             lines.append("- Recovery-layer citations:")
             lines.extend(
@@ -794,9 +845,7 @@ def render_index_markdown(run_id: str, generated: list[dict[str, str]]) -> str:
         "|---|---|---|",
     ]
     for row in generated:
-        lines.append(
-            f"| `{row['scope']}` | `{row['markdown']}` | `{row['json']}` |"
-        )
+        lines.append(f"| `{row['scope']}` | `{row['markdown']}` | `{row['json']}` |")
     return "\n".join(lines).rstrip() + "\n"
 
 
@@ -864,14 +913,17 @@ def main(argv: list[str] | None = None) -> int:
         output_dir=output_dir,
         scopes=_resolve_scopes(args.scope),
     )
-    sys.stdout.write(json.dumps(
-        {
-            "run_id": result["run_id"],
-            "index": result["index"],
-            "generated": result["generated"],
-        },
-        indent=2,
-    ) + "\n")
+    sys.stdout.write(
+        json.dumps(
+            {
+                "run_id": result["run_id"],
+                "index": result["index"],
+                "generated": result["generated"],
+            },
+            indent=2,
+        )
+        + "\n"
+    )
     return 0
 
 

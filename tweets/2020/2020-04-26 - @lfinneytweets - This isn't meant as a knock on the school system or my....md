@@ -1,4 +1,5 @@
 ---
+title: "This isn't meant as a knock on the school system or my..."
 date: 2020-04-26
 time: 17:14:43
 tweet_id: "1254458901623267328"

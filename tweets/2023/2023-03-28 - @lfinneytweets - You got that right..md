@@ -1,4 +1,5 @@
 ---
+title: "You got that right."
 date: 2023-03-28
 time: 17:36:09
 tweet_id: "1640769758881628161"
@@ -17,10 +18,10 @@ related:
 ---
 
 @mlcarmel You got that right. 
-https://t.co/BnIbNBahyf
+<https://t.co/BnIbNBahyf>
 
 ## Links
-- https://x.com/aliforidaho/status/1640760329826123777
+- <https://x.com/aliforidaho/status/1640760329826123777>
 
 *In reply to [@mlcarmel](https://twitter.com/mlcarmel)*
 

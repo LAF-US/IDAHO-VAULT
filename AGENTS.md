@@ -30,7 +30,7 @@ before interpreting lore, historical notes, or older branch residue.
 
 Tree logic governs orientation: `!/*` is the Nest/Hive of the Unified Swarm personae, while `.*/` dotfolders are the persona chambers of individual agents.
 
-This repository sits inside the broader `LAF-US` organization structure. The 
+This repository sits inside the broader `LAF-US` organization structure. The
 larger model includes both chambered repo anchors and separate GitHub team
 topology; this root file remains only a pointer into that fuller picture.
 
@@ -51,7 +51,7 @@ Before proposing builds, new packages, or invention: discover and read existing 
 
 When code throws errors, the error means something needs fixed. Do not disable security checks, linters, or validators to silence errors. Fix the underlying issue that is causing the fire rather than lazily turn off the smoke detector.
 
-When live surfaces disagree, follow this order:
+When governing surfaces disagree, follow this order:
 
 1. Logan's direct instruction
 2. `CONSTITUTION.md` file
@@ -74,9 +74,10 @@ Root governance files remain authoritative: `CONSTITUTION.md`, `LEVELSET.md`, an
 ## LAF-US Organization & IDAHO-VAULT Placement
 
 ### Five Cores Model
+
 The `LAF-US` organization uses a **Five Cores model** for repository and team topology in a Venn Diagram arrangement, with PRIVATE and PUBLIC containing SECRET, PUBLISH, and PERSONAL:
 
-```
+```text
 LAF-US (Organization)
 ├── PRIVATE
 │   ├── SECRET
@@ -91,4 +92,8 @@ LAF-US (Organization)
 
 Manually revised by Logan A. Finney on 05/25/2026
 
-###### [["The world is quiet here."]]
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

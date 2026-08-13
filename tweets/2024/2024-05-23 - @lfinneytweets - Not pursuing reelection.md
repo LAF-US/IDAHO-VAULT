@@ -1,4 +1,5 @@
 ---
+title: "Not pursuing reelection"
 date: 2024-05-23
 time: 23:11:29
 tweet_id: "1793781826814988692"
@@ -14,10 +15,10 @@ related:
   - lfinneytweets
 ---
 
-Not pursuing reelection https://t.co/KL2i7wO5nK
+Not pursuing reelection <https://t.co/KL2i7wO5nK>
 
 ## Media
-- ![](https://pbs.twimg.com/media/GOTLEJ8aUAATqmr.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/GOTLEJ8aUAATqmr.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

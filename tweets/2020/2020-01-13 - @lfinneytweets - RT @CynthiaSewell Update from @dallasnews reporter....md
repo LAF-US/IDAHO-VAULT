@@ -1,4 +1,5 @@
 ---
+title: "RT @CynthiaSewell Update from @dallasnews reporter..."
 date: 2020-01-13
 time: 23:36:38
 tweet_id: "1216866673912733696"

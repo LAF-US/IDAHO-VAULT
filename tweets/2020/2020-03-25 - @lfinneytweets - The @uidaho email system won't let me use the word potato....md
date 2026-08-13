@@ -1,4 +1,5 @@
 ---
+title: "The @uidaho email system won't let me use the word potato..."
 date: 2020-03-25
 time: 21:27:29
 tweet_id: "1242926102508523520"

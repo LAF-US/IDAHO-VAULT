@@ -1,4 +1,5 @@
 ---
+title: "RT @idahoednews Idaho immunization opt-out rates are at an..."
 date: 2019-02-28
 time: 22:58:17
 tweet_id: "1101255297320939520"

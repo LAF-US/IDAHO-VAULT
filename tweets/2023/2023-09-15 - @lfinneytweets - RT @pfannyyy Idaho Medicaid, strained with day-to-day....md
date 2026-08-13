@@ -1,4 +1,5 @@
 ---
+title: "RT @pfannyyy Idaho Medicaid, strained with day-to-day..."
 date: 2023-09-15
 time: 21:24:02
 tweet_id: "1702795432957767778"

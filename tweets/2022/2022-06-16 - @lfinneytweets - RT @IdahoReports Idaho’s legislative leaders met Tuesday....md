@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Idaho\u2019s legislative leaders met Tuesday..."
 date: 2022-06-16
 time: 21:18:44
 tweet_id: "1537545233155600384"

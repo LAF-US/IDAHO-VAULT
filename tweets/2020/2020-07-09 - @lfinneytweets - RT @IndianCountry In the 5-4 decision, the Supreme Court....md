@@ -1,4 +1,5 @@
 ---
+title: "RT @IndianCountry In the 5-4 decision, the Supreme Court..."
 date: 2020-07-09
 time: 15:24:02
 tweet_id: "1281247748080058368"

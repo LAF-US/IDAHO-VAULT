@@ -1,50 +1,85 @@
-*.m4a filter=lfs diff=lfs merge=lfs -text
-*.mp3 filter=lfs diff=lfs merge=lfs -text
-*.mp4 filter=lfs diff=lfs merge=lfs -text
-*.mov filter=lfs diff=lfs merge=lfs -text
-*.avi filter=lfs diff=lfs merge=lfs -text
-*.mkv filter=lfs diff=lfs merge=lfs -text
-*.wav filter=lfs diff=lfs merge=lfs -text
-*.aac filter=lfs diff=lfs merge=lfs -text
-*.flac filter=lfs diff=lfs merge=lfs -text
-*.ogg filter=lfs diff=lfs merge=lfs -text
-*.wma filter=lfs diff=lfs merge=lfs -text
-*.jpg filter=lfs diff=lfs merge=lfs -text
-*.jpeg filter=lfs diff=lfs merge=lfs -text
-*.png filter=lfs diff=lfs merge=lfs -text
-*.gif filter=lfs diff=lfs merge=lfs -text
-*.webp filter=lfs diff=lfs merge=lfs -text
-*.bmp filter=lfs diff=lfs merge=lfs -text
-*.tiff filter=lfs diff=lfs merge=lfs -text
-*.tif filter=lfs diff=lfs merge=lfs -text
-*.heic filter=lfs diff=lfs merge=lfs -text
-*.heif filter=lfs diff=lfs merge=lfs -text
-*.svg filter=lfs diff=lfs merge=lfs -text
-*.pdf filter=lfs diff=lfs merge=lfs -text
-*.doc filter=lfs diff=lfs merge=lfs -text
-*.docx filter=lfs diff=lfs merge=lfs -text
-*.xls filter=lfs diff=lfs merge=lfs -text
-*.xlsx filter=lfs diff=lfs merge=lfs -text
-*.ppt filter=lfs diff=lfs merge=lfs -text
-*.pptx filter=lfs diff=lfs merge=lfs -text
-*.geojson filter=lfs diff=lfs merge=lfs -text
-*.kml filter=lfs diff=lfs merge=lfs -text
-*.kmz filter=lfs diff=lfs merge=lfs -text
-*.shp filter=lfs diff=lfs merge=lfs -text
-*.gpx filter=lfs diff=lfs merge=lfs -text
-*.zip filter=lfs diff=lfs merge=lfs -text
-*.tar filter=lfs diff=lfs merge=lfs -text
-*.gz filter=lfs diff=lfs merge=lfs -text
-*.7z filter=lfs diff=lfs merge=lfs -text
-*.rar filter=lfs diff=lfs merge=lfs -text
-*.dmg filter=lfs diff=lfs merge=lfs -text
-*.exe filter=lfs diff=lfs merge=lfs -text
-*.bin filter=lfs diff=lfs merge=lfs -text
-*.db filter=lfs diff=lfs merge=lfs -text
-*.sqlite filter=lfs diff=lfs merge=lfs -text
-*.sqlite3 filter=lfs diff=lfs merge=lfs -text
-*.msg filter=lfs diff=lfs merge=lfs -text
-*.eml filter=lfs diff=lfs merge=lfs -text
+# Git LFS tracking for binary/media types.
+#
+# IMPORTANT: .gitattributes pattern matching is CASE-SENSITIVE. A bare `*.mov`
+# does NOT match `CLIP.MOV`, and cameras/decks/phones routinely write UPPERCASE
+# extensions (XD4_6602.MXF, MVI_1487.MOV). To avoid that gap, every extension
+# below uses character classes — `*.[Mm][Oo][Vv]` — so all case permutations
+# (mov / MOV / Mov / …) are tracked. When adding a new binary type, follow the
+# same case-folding form. See VAULT-MEDIA-STORAGE.md § Enforcement.
+#
+# This is the first line of defense only; .github/scripts/check_large_files.py
+# is the case-agnostic backstop that blocks any >100 MB file lacking LFS
+# attributes and any file over the 2 GB GitHub ceiling.
+
+# Audio / video
+*.[Mm]4[Aa] filter=lfs diff=lfs merge=lfs -text
+*.[Mm][Pp]3 filter=lfs diff=lfs merge=lfs -text
+*.[Mm][Pp]4 filter=lfs diff=lfs merge=lfs -text
+*.[Mm][Oo][Vv] filter=lfs diff=lfs merge=lfs -text
+*.[Aa][Vv][Ii] filter=lfs diff=lfs merge=lfs -text
+*.[Mm][Kk][Vv] filter=lfs diff=lfs merge=lfs -text
+*.[Mm][Xx][Ff] filter=lfs diff=lfs merge=lfs -text
+# AVCHD camera containers are written UPPERCASE (.MTS / .M2TS). `.mts`
+# (lowercase) is the TypeScript module-source extension, so the .MTS LFS rule is
+# intentionally UPPERCASE-ONLY — lowercase `.mts`/`.cts` are normalized as text
+# in the normalization section below, and no filter override is needed. A stray
+# lowercase camera `.mts` is still caught by check_large_files.py. .M2TS has no
+# source-format collision, so it stays case-folded.
+*.MTS filter=lfs diff=lfs merge=lfs -text
+*.[Mm]2[Tt][Ss] filter=lfs diff=lfs merge=lfs -text
+*.[Ww][Aa][Vv] filter=lfs diff=lfs merge=lfs -text
+*.[Aa][Aa][Cc] filter=lfs diff=lfs merge=lfs -text
+*.[Ff][Ll][Aa][Cc] filter=lfs diff=lfs merge=lfs -text
+*.[Oo][Gg][Gg] filter=lfs diff=lfs merge=lfs -text
+*.[Ww][Mm][Aa] filter=lfs diff=lfs merge=lfs -text
+
+# Images
+*.[Jj][Pp][Gg] filter=lfs diff=lfs merge=lfs -text
+*.[Jj][Pp][Ee][Gg] filter=lfs diff=lfs merge=lfs -text
+*.[Pp][Nn][Gg] filter=lfs diff=lfs merge=lfs -text
+*.[Gg][Ii][Ff] filter=lfs diff=lfs merge=lfs -text
+*.[Ww][Ee][Bb][Pp] filter=lfs diff=lfs merge=lfs -text
+*.[Bb][Mm][Pp] filter=lfs diff=lfs merge=lfs -text
+*.[Tt][Ii][Ff][Ff] filter=lfs diff=lfs merge=lfs -text
+*.[Tt][Ii][Ff] filter=lfs diff=lfs merge=lfs -text
+*.[Hh][Ee][Ii][Cc] filter=lfs diff=lfs merge=lfs -text
+*.[Hh][Ee][Ii][Ff] filter=lfs diff=lfs merge=lfs -text
+*.[Cc][Rr]2 filter=lfs diff=lfs merge=lfs -text
+*.[Pp][Ss][Dd] filter=lfs diff=lfs merge=lfs -text
+*.[Ss][Vv][Gg] filter=lfs diff=lfs merge=lfs -text
+
+# Documents
+*.[Pp][Dd][Ff] filter=lfs diff=lfs merge=lfs -text
+*.[Dd][Oo][Cc] filter=lfs diff=lfs merge=lfs -text
+*.[Dd][Oo][Cc][Xx] filter=lfs diff=lfs merge=lfs -text
+*.[Xx][Ll][Ss] filter=lfs diff=lfs merge=lfs -text
+*.[Xx][Ll][Ss][Xx] filter=lfs diff=lfs merge=lfs -text
+*.[Pp][Pp][Tt] filter=lfs diff=lfs merge=lfs -text
+*.[Pp][Pp][Tt][Xx] filter=lfs diff=lfs merge=lfs -text
+
+# Geospatial
+*.[Gg][Ee][Oo][Jj][Ss][Oo][Nn] filter=lfs diff=lfs merge=lfs -text
+*.[Kk][Mm][Ll] filter=lfs diff=lfs merge=lfs -text
+*.[Kk][Mm][Zz] filter=lfs diff=lfs merge=lfs -text
+*.[Ss][Hh][Pp] filter=lfs diff=lfs merge=lfs -text
+*.[Gg][Pp][Xx] filter=lfs diff=lfs merge=lfs -text
+
+# Archives
+*.[Zz][Ii][Pp] filter=lfs diff=lfs merge=lfs -text
+*.[Tt][Aa][Rr] filter=lfs diff=lfs merge=lfs -text
+*.[Gg][Zz] filter=lfs diff=lfs merge=lfs -text
+*.7[Zz] filter=lfs diff=lfs merge=lfs -text
+*.[Rr][Aa][Rr] filter=lfs diff=lfs merge=lfs -text
+
+# Binaries / databases / mail
+*.[Dd][Mm][Gg] filter=lfs diff=lfs merge=lfs -text
+*.[Ee][Xx][Ee] filter=lfs diff=lfs merge=lfs -text
+*.[Bb][Ii][Nn] filter=lfs diff=lfs merge=lfs -text
+*.[Dd][Bb] filter=lfs diff=lfs merge=lfs -text
+*.[Ss][Qq][Ll][Ii][Tt][Ee] filter=lfs diff=lfs merge=lfs -text
+*.[Ss][Qq][Ll][Ii][Tt][Ee]3 filter=lfs diff=lfs merge=lfs -text
+*.[Mm][Ss][Gg] filter=lfs diff=lfs merge=lfs -text
+*.[Ee][Mm][Ll] filter=lfs diff=lfs merge=lfs -text
 
 # Text file normalization — enforce LF line endings across platforms
 *.md text eol=lf
@@ -58,6 +93,10 @@
 *.css text eol=lf
 *.js text eol=lf
 *.ts text eol=lf
+# TypeScript .mts/.cts module sources (lowercase). The .MTS media rule above is
+# uppercase-only, so these are plain text and never LFS — no filter override needed.
+*.mts text eol=lf
+*.cts text eol=lf
 *.ps1 text eol=lf
 *.psm1 text eol=lf
 *.psd1 text eol=lf
@@ -69,3 +108,26 @@
 *.csv -text
 *.tsv text eol=lf
 *.mdx text eol=lf
+
+# Tool configs with no extension, plus one XML that needs naming individually.
+# check_character_conformity.py judges only files whose `text` attribute is
+# set; anything unspecified is skipped and counted as a gap. Without these,
+# the configs added in #950 join that bucket.
+#
+# Leading slashes anchor these to the repo root. Without one, a .gitattributes
+# pattern with no slash is a BASENAME match at any depth -- the same rule as
+# .gitignore -- so a bare `.pylintrc` would also claim any nested one.
+#
+# NOT `*.xml`: RSS.xml is committed with CRLF, and a blanket `text eol=lf`
+# would rewrite its line endings as a side effect of declaring a config file.
+/.bandit text eol=lf
+/.pylintrc text eol=lf
+/.remarkrc text eol=lf
+/.shellcheckrc text eol=lf
+/.stylelintrc text eol=lf
+/ruleset.xml text eol=lf
+
+# iCalendar. RFC 5545 § 3.1 mandates CRLF between content lines, so .ics is the
+# one text format here that must NOT be normalized to LF. `-text` leaves the
+# bytes alone in both directions, on every platform.
+*.[Ii][Cc][Ss] -text

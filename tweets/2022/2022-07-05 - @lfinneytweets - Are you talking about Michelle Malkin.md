@@ -1,4 +1,5 @@
 ---
+title: "Are you talking about Michelle Malkin"
 date: 2022-07-05
 time: 23:44:27
 tweet_id: "1544467272546152450"

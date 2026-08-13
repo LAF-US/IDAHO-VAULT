@@ -1,4 +1,5 @@
 ---
+title: "Sen. Vick has a map he\u2019s given the committee and says that..."
 date: 2021-02-17
 time: 16:25:21
 tweet_id: "1362075674702323715"
