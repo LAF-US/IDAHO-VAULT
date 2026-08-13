@@ -1,0 +1,15 @@
+id: 72b29058-acaa-4591-8115-62d25985b50a
+cwd: C:\Users\loganf\.copilot\repos\IDAHO-VAULT\.worktrees\copilot-bookish-bassoon
+git_root: C:\Users\loganf\Documents\IDAHO-VAULT\.copilot\repos\IDAHO-VAULT\.worktrees\copilot-bookish-bassoon
+repository: LAF-US/IDAHO-VAULT
+host_type: github
+branch: copilot/bookish-bassoon
+client_name: github/autopilot
+name: Hello, `Bookish Bassoon`, please merge this branch with `main` through the merge queue please!
+user_named: false
+summary_count: 0
+created_at: 2026-08-13T04:46:42.119Z
+updated_at: 2026-08-13T04:46:45.179Z
+remote_steerable: true
+mc_task_id: 18d72626-c356-48ab-aad0-04ce63498320
+mc_session_id: bb6d26a7-a252-40a1-9f13-0fb476eb66fc
