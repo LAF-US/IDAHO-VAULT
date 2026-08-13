@@ -42,20 +42,55 @@ ehthumbs.db
 
 # ESTO PERPETUA!
 
-# --- secret-bearing agent-runtime state (added 2026-08-13 after secret-scanning incident) ---
-# Agent homes carry .env files, auth tokens, and session logs that record API calls.
-# These classes never belong in a public repo; gitleaks pre-commit gate enforces the rest.
+# --- credential files (narrow; added 2026-08-13 after secret-scanning incident) ---
+# Only files whose entire content is secrets. Session logs and agent state stay
+# versioned; the gitleaks pre-commit gate blocks any commit carrying live tokens.
 .env
 .env.*
-*.env
 **/.env.bak*
-.hermes/
-.vibe/
-**/state-snapshots/
-**/archived_sessions/
-rollout-20*.jsonl
-session-20*.jsonl
-.claude.json
-.claude.json.*
-.claude.json*backup*
-.claude/backups/
+**/auth.json
+state_5.sqlite
+state_5.sqlite-shm
+state_5.sqlite-wal
+/.gradle/caches
+/.local/state/startup-cleanup
+/.openclaw/agents
+/.openclaw/npm
+/.android/cache
+/.cache/gh
+/.cargo/registry/cache
+/.cargo/registry/index
+/.cargo/registry/src
+.codex/models_cache.json
+/.codex/plugins/cache
+/.codex/skills/.system
+/.colima/_lima
+/.config/gcloud/legacy_credentials
+/.config/gcloud
+/.dropbox/instance1
+/.gradle/jdks
+/.gradle/wrapper
+/.gradle/native
+/.gradle/daemon
+/.hermes/sessions
+/.hermes/skills
+/.hermes/whatsapp/session
+/.local/opt
+/.local/share/opencode
+/.local/share/signal-cli
+/.local/state/tirith
+/.openclaw/tmp
+/.codex/cache
+/.codex/tmp
+.config/rclone/rclone.conf
+/.gnupg/public-keys.d
+/.hermes/logs
+/.hermes/state-snapshots
+/.local/pipx
+/.local/bin
+/.local/share
+/.local/state
+/.hermes/whatsapp
+/.ollama/models/blobs
+/.openclaw/state
+/.pi/agent/sessions
