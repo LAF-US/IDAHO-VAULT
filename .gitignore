@@ -24,6 +24,9 @@
 .obsidian/plugins/phone-to-roam-to-obsidian/data.json
 .obsidian/plugins/todoist-context-bridge/data.json
 .ollama/models/blobs/**/*
+.openclaw/memory/main.sqlite
+.openclaw/openclaw.json*
+.openclaw/secrets/
 .vscode/cli/*tunnel*.*
 .vscode-shared/sharedStorage/state.vscdb.backup
 .vscode-shared/sharedStorage/state.vscdb
