@@ -17,15 +17,15 @@ js_repl = false
 
 [mcp_servers.node_repl]
 args = []
-command = "C:\\Users\\loganf\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\23828fd353da361d\\bin\\node_repl.exe"
+command = 'C:\Users\loganf\AppData\Local\OpenAI\Codex\runtimes\cua_node\23828fd353da361d\bin\node_repl.exe'
 startup_timeout_sec = 120
 
 [mcp_servers.node_repl.env]
 NODE_REPL_NATIVE_PIPE_CONNECT_TIMEOUT_MS = "1000"
-NODE_REPL_NODE_MODULE_DIRS = "C:\\Users\\loganf\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\23828fd353da361d\\bin\\node_modules"
-NODE_REPL_NODE_PATH = "C:\\Users\\loganf\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\23828fd353da361d\\bin\\node.exe"
-NODE_REPL_TRUSTED_CODE_PATHS = "C:\\Users\\loganf\\.codex;C:\\Users\\loganf\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\23828fd353da361d\\bin\\node_modules"
-CODEX_HOME = "C:\\Users\\loganf\\.codex"
+NODE_REPL_NODE_MODULE_DIRS = 'C:\Users\loganf\AppData\Local\OpenAI\Codex\runtimes\cua_node\23828fd353da361d\bin\node_modules'
+NODE_REPL_NODE_PATH = 'C:\Users\loganf\AppData\Local\OpenAI\Codex\runtimes\cua_node\23828fd353da361d\bin\node.exe'
+NODE_REPL_TRUSTED_CODE_PATHS = 'C:\Users\loganf\.codex;C:\Users\loganf\AppData\Local\OpenAI\Codex\runtimes\cua_node\23828fd353da361d\bin\node_modules'
+CODEX_HOME = 'C:\Users\loganf\.codex'
 NODE_REPL_TRUSTED_BROWSER_CLIENT_SHA256S = "8676faca28eddb6424d4b54116fe8305e2da6a0ca4e5271e8758fc3c55c3b8fc"
 BROWSER_USE_AVAILABLE_BACKENDS = "chrome,iab"
 NODE_REPL_INSTRUCTIONS_USE_CASE_BROWSER = "Control the in-app browser in conjunction with the Browser Plugin."
@@ -33,8 +33,8 @@ NODE_REPL_INSTRUCTIONS_USE_CASE_CHROME = "Control the Chrome browser in conjunct
 BROWSER_USE_CODEX_APP_BUILD_FLAVOR = "prod"
 BROWSER_USE_CODEX_APP_VERSION = "26.803.81509"
 SKY_CUA_NATIVE_PIPE = "1"
-SKY_CUA_NATIVE_PIPE_DIRECTORY = "\\\\.\\pipe\\codex-computer-use-2ee3f4ac-9b85-463d-a382-14f4b22dd2b9"
-CODEX_CLI_PATH = "C:\\Users\\loganf\\AppData\\Local\\OpenAI\\Codex\\bin\\8e8bf206e63ac436\\codex.exe"
+SKY_CUA_NATIVE_PIPE_DIRECTORY = '\\.\pipe\codex-computer-use-a0f8c5af-5a8b-46c7-8ad1-222da37759d1'
+CODEX_CLI_PATH = 'C:\Users\loganf\AppData\Local\OpenAI\Codex\bin\8e8bf206e63ac436\codex.exe'
 
 [mcp_servers.obsidian-mcp-tools]
 enabled = true
@@ -52,9 +52,9 @@ NODE_REPL_TRUSTED_CODE_PATHS = "C:\\Users\\loganf\\.codex;C:\\Users\\loganf\\App
 sandbox = "unelevated"
 
 [marketplaces.openai-bundled]
-last_updated = "2026-08-12T17:21:34Z"
+last_updated = "2026-08-13T05:53:50Z"
 source_type = "local"
-source = "\\\\?\\C:\\Users\\loganf\\Documents\\IDAHO-VAULT\\.codex\\.tmp\\bundled-marketplaces\\openai-bundled"
+source = '\\?\C:\Users\loganf\Documents\IDAHO-VAULT\.codex\.tmp\bundled-marketplaces\openai-bundled'
 
 [marketplaces.openai-primary-runtime]
 last_updated = "2026-08-12T20:25:23Z"
