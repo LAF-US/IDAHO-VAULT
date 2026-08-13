@@ -26,7 +26,9 @@ related:
 
 @IlanaRubel @IdahoDems @IdahoPubRadio Moyle posits the freeze as an incentive to bring local governments to the table and work on solutions. 
 
-Today Rubel said it’s actually the @IdahoGOP members who need to come to the table and hold hearings on the Dem bills that are sitting in committee drawers. #idleg #idpol
+Today Rubel said it’s actually the @IdahoGOP members who need to come to the table and hold hearings on the Dem bills that are sitting in committee drawers. 
+
+#idleg #idpol
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

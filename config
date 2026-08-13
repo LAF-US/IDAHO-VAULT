@@ -3,6 +3,9 @@
 	filemode = true
 	bare = false
 	logallrefupdates = true
+<<<<<<< Updated upstream
 	symlinks = true
+=======
+>>>>>>> Stashed changes
 	ignorecase = true
 	precomposeunicode = true

@@ -19,7 +19,7 @@ related:
 @ryannoyance https://t.co/CIk1OJxW11
 
 ## Media
-- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/EP1VvqoU8AAWUaL.jpg)
+- ![](https://pbs.twimg.com/tweet_video_thumb/EP1VvqoU8AAWUaL.jpg)
 
 *In reply to [@ryannoyance](https://twitter.com/ryannoyance)*
 

@@ -26,6 +26,6 @@ Candidates have begun to file with @IDSecOfState for the May statewide #idleg pr
 - https://sos.idaho.gov/elections-division/2020-primary-candidate-list/
 
 ## Media
-- ![alt text needed](https://pbs.twimg.com/media/ESOqaNLWAAILNdZ.jpg)
+- ![](https://pbs.twimg.com/media/ESOqaNLWAAILNdZ.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1235018099210022914)

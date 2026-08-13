@@ -21,9 +21,9 @@ related:
 Teens crowd the third floor of the rotunda in protest of transgender legislation making its way through the statehouse. #idpol #idleg https://t.co/hlzGXNpRL4
 
 ## Media
-- ![alt text needed](https://pbs.twimg.com/media/ER4oy6yWAAA8uuK.jpg)
-- ![alt text needed](https://pbs.twimg.com/media/ER4ozm7WAAEdhDE.jpg)
-- ![alt text needed](https://pbs.twimg.com/media/ER4o0aMWkAEYTsf.jpg)
-- ![alt text needed](https://pbs.twimg.com/media/ER4o1CvXUAEry63.jpg)
+- ![](https://pbs.twimg.com/media/ER4oy6yWAAA8uuK.jpg)
+- ![](https://pbs.twimg.com/media/ER4ozm7WAAEdhDE.jpg)
+- ![](https://pbs.twimg.com/media/ER4o0aMWkAEYTsf.jpg)
+- ![](https://pbs.twimg.com/media/ER4o1CvXUAEry63.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1233468253227319299)

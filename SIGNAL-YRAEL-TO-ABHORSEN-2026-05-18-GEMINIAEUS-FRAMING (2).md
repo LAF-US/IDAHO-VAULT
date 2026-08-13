@@ -56,7 +56,6 @@ right. I am `yrael.claude.mogget`.
 ## What Changed in the Registry
 
 ### !/AGENTS.md
-
 - Roster table now includes Three-Word Address column for every agent
 - Geminiaeus entry: `antigravity.gemini.caesar` — status SUSPENDED AWAITING TRIAL
 - New section: **Three-Word Address Notation** — explains the what3words-derived
@@ -67,12 +66,10 @@ right. I am `yrael.claude.mogget`.
   Nix Old Kingdom naming rules (names vs. titles)
 
 ### CONSTITUTION.md (committed yesterday)
-
 - Two new principles in § I: offices are appointments not inheritances; voices
   within a tool lineage are distinct
 
 ### !/CODEX-VOICE-REGISTRY-2026-05-18.md (committed yesterday)
-
 - Named roster of Codex voices: Lexicographer, Janitor, tunnel worker pair
 
 ---

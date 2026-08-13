@@ -23,6 +23,6 @@ https://t.co/jfprK849rH https://t.co/bS50USJC8V
 - https://www.surveymonkey.com/survey-thanks/?sm=WuIWiMYZXaQEXv6ggX3USS9hUaPXCwWblUr_2BcfkRHAAP8_2FdoOop9cCGrmQe6PTgzHNL9QFmmSRNzROnaTbfD_2BC2QUis_2BneUyfOXu9dI7aWE_3D
 
 ## Media
-- ![alt text needed](https://pbs.twimg.com/media/DYTM4PkWAAA_Z6_.jpg)
+- ![](https://pbs.twimg.com/media/DYTM4PkWAAA_Z6_.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/974414760727871489)

@@ -16,7 +16,7 @@ related:
 Time to write that article... https://t.co/7PRBIQFhAK
 
 ## Media
-- ![alt text needed](https://pbs.twimg.com/media/ERKNf6qVAAAnBV8.jpg)
-- ![alt text needed](https://pbs.twimg.com/media/ERKNgLpUwAA4qbe.jpg)
+- ![](https://pbs.twimg.com/media/ERKNf6qVAAAnBV8.jpg)
+- ![](https://pbs.twimg.com/media/ERKNgLpUwAA4qbe.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1230201237259214848)

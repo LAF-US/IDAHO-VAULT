@@ -19,7 +19,7 @@ related:
 @kalinelson6 https://t.co/A1cOq1E5jn
 
 ## Media
-- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/D9DRR6GUwAAC6Se.jpg)
+- ![](https://pbs.twimg.com/tweet_video_thumb/D9DRR6GUwAAC6Se.jpg)
 
 *In reply to [@kalinelson6](https://twitter.com/kalinelson6)*
 

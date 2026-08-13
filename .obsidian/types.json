@@ -1,9 +1,21 @@
 {
   "types": {    
     "aliases": "aliases",
+<<<<<<< HEAD
     "tags": "tags",
     "created": "datetime",
     "updated": "datetime",
+=======
+    "cssclasses": "multitext",
+    "tags": "tags",
+    "outlet": "multitext",
+    "author": "multitext",
+    "cmte": "multitext",
+    "sponsor": "multitext",
+    "visibility": "text",
+    "year": "number",
+    "tomorrow": "date",
+>>>>>>> 684896b8a3040118f438cf44b6f39191676d9845
     "yesterday": "date",
     "today": "date",
     "tomorrow": "date",

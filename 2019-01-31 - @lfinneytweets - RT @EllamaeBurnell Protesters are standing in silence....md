@@ -18,6 +18,6 @@ related:
 RT @EllamaeBurnell: Protesters are standing in silence outside of the Admin. https://t.co/70z2XEu5v6
 
 ## Media
-- ![alt text needed](https://pbs.twimg.com/media/DyNKgPqUcAEwBuU.jpg)
+- ![](https://pbs.twimg.com/media/DyNKgPqUcAEwBuU.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1090824235449147394)

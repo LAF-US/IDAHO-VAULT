@@ -16,7 +16,7 @@ related:
   - reinstatedenise
 ---
 
-\#reinstatedenise https://t.co/lXWoeAe5Dr
+#reinstatedenise https://t.co/lXWoeAe5Dr
 
 ## Links
 - https://x.com/EmmaTakatori/status/1090853463628537856

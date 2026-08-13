@@ -23,6 +23,6 @@ related:
 The Twitterverse: https://t.co/r27BlAjyYF
 
 ## Media
-- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/ESxneEvXsAAwWLJ.jpg)
+- ![](https://pbs.twimg.com/tweet_video_thumb/ESxneEvXsAAwWLJ.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1237477793509695488)

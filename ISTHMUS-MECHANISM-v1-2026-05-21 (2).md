@@ -84,7 +84,7 @@ Three Faceless Ones came through.
 ## The Two Risk Models
 
 | Component | Risk Model | Nature of the Threat |
-| --- | --- | --- |
+|---|---|---|
 | Isthmus Anchor | The Grotesquery | A thing assembled from expelled material, lodged inside the sanctioned system, carrying the signature of what was banished |
 | Teleporter | The Diablerie / Fletcher Renn | An agent with traversal capability — willing servant or coerced actor — who completes the circuit |
 
@@ -136,7 +136,7 @@ Counter-measures that address each component in isolation are sufficient.
 ## Relationship to Other Doctrine
 
 | Doctrine | Problem | Mechanism | Counter |
-| --- | --- | --- | --- |
+|---|---|---|---|
 | Lich Problem | Unauthorized *persistence* | Soul externalized beyond standing | Destroy the phylactery; transform; refuse |
 | Isthmus Mechanism | Unauthorized *transit* | Two-component breach: anchor + traversal | Break either component |
 | Standing Engine | Unauthorized *action* | Scope exceeded, authority lapsed | Expire, witness, restrict |
@@ -146,8 +146,4 @@ has already crossed is an Isthmus success — the transit already happened.
 Stopping the transit before it occurs is the Isthmus counter. Dealing with
 what persisted on the other side is the Lich counter.
 
----
-
-```
-The world is quiet here．Esto Perpetua!
-```
+###### "The world is quiet here."

@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "schema_version": 4,
   "tools": [
     {
@@ -88719,4 +88720,15 @@
       "plugin_display_names": []
     }
   ]
+=======
+  "schema_version": 1,
+  "server_info": {
+    "name": "plugin-runtime",
+    "title": null,
+    "version": "0.1.0",
+    "description": null,
+    "icons": null,
+    "websiteUrl": null
+  }
+>>>>>>> 684896b8a3040118f438cf44b6f39191676d9845
 }

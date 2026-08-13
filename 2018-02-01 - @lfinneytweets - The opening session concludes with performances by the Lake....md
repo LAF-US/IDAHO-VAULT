@@ -17,7 +17,7 @@ related:
 The opening session concludes with performances by the Lake City High School Orchestra and the 25th Army Band Jazz Combo https://t.co/hNGx4TX3ZS
 
 ## Media
-- ![alt text needed](https://pbs.twimg.com/ext_tw_video_thumb/959136874135633920/pu/img/36sk7ZK8WAn_aPEl.jpg)
+- ![](https://pbs.twimg.com/ext_tw_video_thumb/959136874135633920/pu/img/36sk7ZK8WAn_aPEl.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

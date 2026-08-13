@@ -24,6 +24,6 @@ related:
 RT @madisonhardy05: Q&A with @GovernorLittle after the S.O.T.S address in the Lincoln Auditorium. #idleg #idpol https://t.co/zJdMjOLePA
 
 ## Media
-- ![alt text needed](https://pbs.twimg.com/media/ENoKXtGU4AENdoL.jpg)
+- ![](https://pbs.twimg.com/media/ENoKXtGU4AENdoL.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1214294593451151360)

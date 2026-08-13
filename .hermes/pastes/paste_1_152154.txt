@@ -1,0 +1,306 @@
+Last login: Sat May  9 14:59:48 on ttys001
+hermes /set-home
+logan@Logans-MBP ~ % hermes /set-home
+usage: hermes [-h] [--version] [-z PROMPT] [-m MODEL] [--provider PROVIDER]
+              [-t TOOLSETS] [--resume SESSION] [--continue [SESSION_NAME]]
+              [--worktree] [--accept-hooks] [--skills SKILLS] [--yolo]
+              [--pass-session-id] [--ignore-user-config] [--ignore-rules]
+              [--tui] [--dev]
+              {chat,model,fallback,gateway,setup,whatsapp,slack,login,logout,auth,status,cron,webhook,kanban,hooks,doctor,dump,debug,backup,checkpoints,import,config,pairing,skills,plugins,curator,memory,tools,mcp,sessions,insights,claw,version,update,uninstall,acp,profile,completion,dashboard,logs}
+              ...
+hermes: error: argument command: invalid choice: '/set-home' (choose from 'chat', 'model', 'fallback', 'gateway', 'setup', 'whatsapp', 'slack', 'login', 'logout', 'auth', 'status', 'cron', 'webhook', 'kanban', 'hooks', 'doctor', 'dump', 'debug', 'backup', 'checkpoints', 'import', 'config', 'pairing', 'skills', 'plugins', 'curator', 'memory', 'tools', 'mcp', 'sessions', 'insights', 'claw', 'version', 'update', 'uninstall', 'acp', 'profile', 'completion', 'dashboard', 'logs')
+logan@Logans-MBP ~ % hermes setup
+
+┌─────────────────────────────────────────────────────────┐
+│             ⚕ Hermes Agent Setup Wizard                │
+├─────────────────────────────────────────────────────────┤
+│  Let's configure your Hermes Agent installation.       │
+│  Press Ctrl+C at any time to exit.                     │
+└─────────────────────────────────────────────────────────┘
+
+
+◆ Reconfigure
+✓ You already have Hermes configured.
+  Running the full wizard — each prompt shows your current value.
+  Press Enter to keep it, or type a new value to change it.
+  
+  Tip: jump straight to a section with 'hermes setup model|terminal|
+       gateway|tools|agent', or fill only missing items with --quick.
+
+◆ Configuration Location
+  Config file:  /Users/logan/.hermes/config.yaml
+  Secrets file: /Users/logan/.hermes/.env
+  Data folder:  /Users/logan/.hermes
+  Install dir:  /Users/logan/.hermes/hermes-agent
+
+  You can edit these files directly or use 'hermes config edit'
+
+◆ Inference Provider
+  Choose how to connect to your main chat model.
+     Guide: https://hermes-agent.nousresearch.com/docs/integrations/providers
+
+
+  Current model:    openai/gpt-5.5-pro
+  Active provider:  OpenRouter
+
+
+Select default model:                                                           
+                                                   In      Out  Cache  /Mtok    
+     openai/gpt-5.3-codex                       $1.75   $14.00  $0.17           
+     google/gemini-3-flash-preview              $0.50    $3.00  $0.05           
+     google/gemini-3.1-pro-preview              $2.00   $12.00  $0.20           
+     google/gemini-3.1-flash-lite-preview       $0.25    $1.50  $0.02           
+     qwen/qwen3.5-plus-02-15                    $0.26    $1.56                  
+     qwen/qwen3.5-35b-a3b                       $0.14    $1.00  $0.05           
+     stepfun/step-3.5-flash                     $0.10    $0.30                  
+     minimax/minimax-m2.7                       $0.30    $1.20                  
+     minimax/minimax-m2.5                       $0.15    $1.15                  
+     minimax/minimax-m2.5:free                   free     free                  
+     z-ai/glm-5.1                               $1.05    $3.50  $0.52           
+     z-ai/glm-5v-turbo                          $1.20    $4.00  $0.24           
+     z-ai/glm-5-turbo                           $1.20    $4.00  $0.24           
+     x-ai/grok-4.20                             $1.25    $2.50  $0.20           
+     x-ai/grok-4.3                              $1.25    $2.50  $0.20           
+     nvidia/nemotron-3-super-120b-a12b          $0.09    $0.45                  
+     nvidia/nemotron-3-super-120b-a12b:free      free     free                  
+     arcee-ai/trinity-large-thinking            $0.22    $0.85  $0.06           
+     openai/gpt-5.4-nano                        $0.20    $1.25  $0.02           
+     deepseek/deepseek-v4-pro                   $0.43    $0.87  $0.00           
+     Enter custom model name                                                    
+->   Skip (keep current)                                                        
+
+No change.
+
+
+◆ Same-Provider Fallback & Rotation
+  Hermes can keep multiple credentials for one provider and rotate between
+  them when a credential is exhausted or rate-limited. This preserves
+  your primary provider while reducing interruptions from quota issues.
+
+  Current pooled credentials for openrouter: 1 (0 manual, 1 auto-detected from env/shared auth)
+Add another credential for same-provider fallback? [y/N]: 
+
+
+◆ Text-to-Speech Provider (optional)
+  Current: Google Gemini TTS
+
+    Skipped (keeping current)
+
+
+◆ Terminal Backend
+  Choose where Hermes runs shell commands and code.
+  This affects tool execution, file access, and isolation.
+     Guide: https://hermes-agent.nousresearch.com/docs/developer-guide/environments
+
+    Skipped (keeping current)
+
+  Keeping current backend: docker
+
+◆ Agent Settings
+     Guide: https://hermes-agent.nousresearch.com/docs/user-guide/configuration
+
+  Maximum tool-calling iterations per conversation.
+  Higher = more complex tasks, but costs more tokens.
+  Press Enter to keep 90. Use 90 for most tasks or 150+ for open exploration.
+Max iterations [90]: 
+✓ Max iterations set to 90
+  
+  Tool Progress Display
+  Controls how much tool activity is shown (CLI and messaging).
+    off     — Silent, just the final response
+    new     — Show tool name only when it changes (less noise)
+    all     — Show every tool call with a short preview
+    verbose — Full args, results, and debug logs
+Tool progress mode [all]: 
+✓ Tool progress set to: all
+
+◆ Context Compression
+  Automatically summarizes old messages when context gets too long.
+  Higher threshold = compress later (use more context). Lower = compress sooner.
+Compression threshold (0.5-0.95) [0.67]: 
+✓ Context compression threshold set to 0.67
+
+◆ Session Reset Policy
+  Messaging sessions (Telegram, Discord, etc.) accumulate context over time.
+  Each message adds to the conversation history, which means growing API costs.
+  
+  To manage this, sessions can automatically reset after a period of inactivity
+  or at a fixed time each day. When a reset happens, the agent saves important
+  things to its persistent memory first — but the conversation context is cleared.
+  
+  You can also manually reset anytime by typing /reset in chat.
+  
+    Skipped (keeping current)
+
+  Inactivity timeout (minutes) [960]: 
+  Daily reset hour (0-23, local time) [4]: 
+✓ Sessions reset after 960 min idle or daily at 4:00
+
+◆ Messaging Platforms
+  Connect to messaging platforms to chat with Hermes from anywhere.
+  Toggle with Space, confirm with Enter.
+
+  No platforms selected. Run 'hermes setup gateway' later to configure.
+
+⚕ Hermes Tool Configuration
+  Enable or disable tools per platform.
+  Tools that need API keys will be configured when enabled.
+  Guide: https://hermes-agent.nousresearch.com/docs/user-guide/features/tools
+
+
+  Tool configuration saved to ~/.hermes/config.yaml
+  Changes take effect on next 'hermes' or gateway restart.
+
+  Previous config backed up to: /Users/logan/.hermes/config.yaml.bak.20260509_152014
+  If setup changed a value you customized, restore it with:
+    cp /Users/logan/.hermes/config.yaml.bak.20260509_152014 /Users/logan/.hermes/config.yaml
+
+
+◆ Tool Availability Summary
+  9/11 tool categories available:
+
+   ✓ Vision (image analysis)
+   ✓ Mixture of Agents
+   ✓ Web Search & Extract (firecrawl)
+   ✓ Browser Automation (Local browser)
+   ✗ Image Generation (missing FAL_KEY or OPENAI_API_KEY)
+   ✓ Text-to-Speech (Google Gemini)
+   ✓ RL Training (Tinker)
+   ✗ Skills Hub (GitHub) (missing GITHUB_TOKEN)
+   ✓ Terminal/Commands
+   ✓ Task Planning (todo)
+   ✓ Skills (view, create, edit)
+
+⚠ Some tools are disabled. Run 'hermes setup tools' to configure them,
+⚠ or edit ~/.hermes/.env directly to add the missing API keys.
+
+
+┌─────────────────────────────────────────────────────────┐
+│              ✓ Setup Complete!                          │
+└─────────────────────────────────────────────────────────┘
+
+📁 All your files are in ~/.hermes/:
+
+   Settings:  /Users/logan/.hermes/config.yaml
+   API Keys:  /Users/logan/.hermes/.env
+   Data:      /Users/logan/.hermes/cron/, sessions/, logs/
+
+────────────────────────────────────────────────────────────
+
+📝 To edit your configuration:
+
+   hermes setup          Re-run the full wizard
+   hermes setup model    Change model/provider
+   hermes setup terminal Change terminal backend
+   hermes setup gateway  Configure messaging
+   hermes setup tools    Configure tool providers
+
+   hermes config         View current settings
+   hermes config edit    Open config in your editor
+   hermes config set <key> <value>
+                          Set a specific value
+
+   Or edit the files directly:
+   nano /Users/logan/.hermes/config.yaml
+   nano /Users/logan/.hermes/.env
+
+────────────────────────────────────────────────────────────
+
+🚀 Ready to go!
+
+   hermes              Start chatting
+   hermes gateway      Start messaging gateway
+   hermes doctor       Check for issues
+
+
+Launch hermes chat now? [Y/n]: n
+logan@Logans-MBP ~ % hermes config
+
+┌─────────────────────────────────────────────────────────┐
+│              ⚕ Hermes Configuration                    │
+└─────────────────────────────────────────────────────────┘
+
+◆ Paths
+  Config:       /Users/logan/.hermes/config.yaml
+  Secrets:      /Users/logan/.hermes/.env
+  Install:      /Users/logan/.hermes/hermes-agent
+
+◆ API Keys
+  OpenRouter     sk-o...6cf2
+  OpenAI (STT/TTS) (not set)
+  Exa            (not set)
+  Parallel       (not set)
+  Firecrawl      fc-f...cce3
+  Tavily         (not set)
+  Browserbase    (not set)
+  Browser Use    (not set)
+  FAL            (not set)
+  Anthropic      (not set)
+
+◆ Model
+  Model:        {'default': 'openai/gpt-5.5-pro', 'provider': 'openrouter', 'base_url': ''}
+  Max turns:    90
+
+◆ Display
+  Personality:  kawaii
+  Reasoning:    off
+  Bell:         off
+  User preview: first 2 line(s), last 2 line(s)
+
+◆ Terminal
+  Backend:      docker
+  Working dir:  ~/IDAHO-VAULT
+  Timeout:      180s
+  Docker image: nikolaik/python-nodejs:python3.11-nodejs20
+
+◆ Timezone
+  Timezone:     (server-local)
+
+◆ Context Compression
+  Enabled:      yes
+  Threshold:    67%
+  Target ratio: 20% of threshold preserved
+  Protect last: 20 messages
+  Model:        (auto)
+
+◆ Messaging Platforms
+  Telegram:     configured
+  Discord:      configured
+
+────────────────────────────────────────────────────────────
+  hermes config edit     # Edit config file
+  hermes config set <key> <value>
+  hermes setup           # Run setup wizard
+
+logan@Logans-MBP ~ % hermes auth
+Credential Pool Status
+==================================================
+copilot (1 credentials):
+  #1  gh auth token        api_key gh_cli ←
+
+custom:ollama-local (1 credentials):
+  #1  ollama-local         api_key config:ollama-local ←
+
+gemini (1 credentials):
+  #1  api-key-2            api_key manual ←
+
+openrouter (1 credentials):
+  #1  OPENROUTER_API_KEY   api_key env:OPENROUTER_API_KEY ←
+
+
+What would you like to do?
+  1. Add a credential
+  2. Remove a credential
+  3. Reset cooldowns for a provider
+  4. Set rotation strategy for a provider
+  5. Exit
+
+Choice: 5
+logan@Logans-MBP ~ % hermes config set home
+Usage: hermes config set <key> <value>
+
+Examples:
+  hermes config set model anthropic/claude-sonnet-4
+  hermes config set terminal.backend docker
+  hermes config set OPENROUTER_API_KEY sk-or-...
+logan@Logans-MBP ~ % 

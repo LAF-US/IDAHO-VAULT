@@ -19,7 +19,7 @@ related:
 @BridgerPutnam @KirkSiegler This was the Walmart hand sanitizer shelf I walked past yesterday. https://t.co/yGYrIG30Kl
 
 ## Media
-- ![alt text needed](https://pbs.twimg.com/media/ETBIKRvXkAAPoXP.jpg)
+- ![](https://pbs.twimg.com/media/ETBIKRvXkAAPoXP.jpg)
 
 *In reply to [@idabikeboi](https://twitter.com/idabikeboi)*
 

@@ -19,7 +19,8 @@ related:
   - idleg
 ---
 
-I asked them if the Legislature does a good job of representing younger Idahoans. Their answer was a resounding"no." #idpol #idleg
+I asked them if the Legislature does a good job of representing younger Idahoans. Their answer was a resounding"no." 
+#idpol #idleg
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

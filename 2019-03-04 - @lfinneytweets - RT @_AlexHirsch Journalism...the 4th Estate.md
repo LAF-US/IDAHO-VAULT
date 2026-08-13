@@ -18,6 +18,6 @@ related:
 RT @_AlexHirsch: Journalism...the 4th Estate https://t.co/qycmp6K1hj
 
 ## Media
-- ![alt text needed](https://pbs.twimg.com/media/D0yHo6VVAAE1Khm.jpg)
+- ![](https://pbs.twimg.com/media/D0yHo6VVAAE1Khm.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1102438160632442881)

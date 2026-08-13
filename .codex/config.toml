@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 notify = [ "C:\\Users\\loganf\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\23828fd353da361d\\bin\\node_modules\\@oai\\sky\\bin\\windows\\codex-computer-use.exe", "turn-ended" ]
 sandbox_mode = "workspace-write"
 web_search = "indexed"
@@ -96,3 +97,10 @@ enabled = true
 
 [sandbox_workspace_write]
 network_access = true
+=======
+[projects."/Users/logan/IDAHO-VAULT"]
+trust_level = "trusted"
+
+[tui.model_availability_nux]
+"gpt-5.6-sol" = 1
+>>>>>>> 684896b8a3040118f438cf44b6f39191676d9845

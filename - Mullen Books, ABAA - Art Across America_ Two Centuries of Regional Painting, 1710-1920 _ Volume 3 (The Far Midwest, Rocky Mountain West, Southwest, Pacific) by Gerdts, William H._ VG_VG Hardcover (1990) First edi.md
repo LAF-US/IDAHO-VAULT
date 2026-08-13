@@ -93,3 +93,5 @@ Delivery times are set by sellers and vary by carrier and location. Orders passi
 #### Payment Methods
 
 Check Money Order Cash PayPal Cash on Delivery (COD) Bank Draft Bank/Wire Transfer
+
+#idaho

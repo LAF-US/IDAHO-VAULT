@@ -1,0 +1,14 @@
+The correct sequence of commands to configure OpenRouter using the OpenROUTER MANAGEMENT KEY is:       
+                                                                                                                                                                                     
+     1. List the available metrics for your OpenRouter instance:                                                                                                                     
+     hermes terminal(command='curl -s -X POST "https://openrouter.ai/api/v1/metrics" -H "Content-Type: application/json" -d \'{\"metrics\": [\"openrouter_api_key_balance\",         
+     \"openrouter_api_key_frozen\", \"openrouter_api_key_pending\"]}\''                                                                                                              
+                                                                                                                                                                                     
+     2. Check the health of your OpenRouter instance:                                                                                                                                
+     hermes terminal(command='curl -s -X GET "https://openrouter.ai/api/v1/health" -H "Content-Type: application/json"')                                                             
+                                                                                                                                                                                     
+     3. List all available models for your OpenRouter instance:                                                                                                                      
+     hermes terminal(command='curl -s -X POST "https://openrouter.ai/api/v1/models" -H "Content-Type: application/json" -d \'{\"models\": []}\''                                     
+                                                                                                                                                                                     
+     4. Check the status of your OpenRouter instance:                                                                                                                                
+     hermes terminal(command='curl -s -X GET "https://openrouter.ai/api/v1/status" -H "Content-Type: application/json"')        

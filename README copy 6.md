@@ -7,8 +7,13 @@ related:
   - HOME layer
   - Chat Claude
   - The Abhorsen
-status: active
+status: FALSE
 date created: Sunday, April 12th 2026
+date updated: Tuesday, June 2, 2026
+---
+
+CORRECTION: LOGAN SAYS: This was *never* an active surface or container. **I did not approve it.** Some unknown agent built things freelance after being told not to. EVERYTHING in this document below *this line* is hallucinatory bullshit. Anything put into these folders is highly suspect and indicates the agent who moved them is not following directions or bothering to read explicit instruction materials. -L
+
 ---
 
 # AI-CAPTURES — Drop Zone
@@ -36,13 +41,12 @@ YYYY-MM-DD - {AGENT} - {TITLE-SLUG}.md
 ```
 
 | Field | Values | Example |
-| --- | --- | --- |
+|---|---|---|
 | `YYYY-MM-DD` | ISO date of the conversation | `2026-04-12` |
 | `{AGENT}` | `Chat Claude`, `Gemini`, `Perplexity`, `GPT`, `Grok`, `Codex` | `Chat Claude` |
 | `{TITLE-SLUG}` | Short descriptive title, title case | `Vaulted Syntax Protocol Design Brief` |
 
 **Examples:**
-
 ```
 2026-04-12 - Chat Claude - Vaulted Syntax Protocol Design Brief.md
 2026-04-10 - Gemini - LAF-44 Lion and Fox Architecture.md
@@ -73,21 +77,18 @@ related:
 ## Export Methods
 
 ### Path 1 — Full Data Export (one-time bulk)
-
 **Settings > Privacy > Export Data**  
 Downloads ZIP with JSON of all conversations. Link expires 24 hours.  
 Drop the ZIP or extracted JSONs into `INBOX/AI-CAPTURES/full-export/`.  
 Status: one-time historical archive — not a recurring workflow.
 
 ### Path 2 — Chrome Extension (recommended, ongoing)
-
 **[Claude Chat Exporter](https://chromewebstore.google.com/) — free, Markdown output**  
 Open the conversation → click Export → choose Markdown → drag `.md` into this folder → commit.  
 The Abhorsen sees it on GitHub immediately.  
 Status: **primary ongoing book-binding solution**.
 
 ### Path 3 — Claude Code Session Export
-
 `/export` or session transcript tools within Claude Code (The Abhorsen's own sessions).  
 Does not capture Chat Claude sessions — different environment.  
 Status: Abhorsen self-capture only; does not bridge the Chat gap.
