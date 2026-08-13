@@ -30,56 +30,11 @@
         "id": "42ee737825f69ed5",
         "type": "tabs",
         "children": [
-          {
-            "id": "d2f54bd4617e6d08",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {
-                "sortOrder": "alphabetical",
-                "autoReveal": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-folder-closed",
-              "title": "Files"
-            }
-          },
-          {
-            "id": "bfa353d7709c7d8a",
-            "type": "leaf",
-            "state": {
-              "type": "search",
-              "state": {
-                "query": "",
-                "matchingCase": false,
-                "explainSearch": false,
-                "collapseAll": true,
-                "extraContext": false,
-                "sortOrder": "alphabetical"
-              },
-              "icon": "lucide-search",
-              "title": "Search"
-            }
-          },
-          {
-            "id": "4bcb8593f71f0f72",
-            "type": "leaf",
-            "state": {
-              "type": "bookmarks",
-              "state": {
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-bookmark",
-              "title": "Bookmarks"
-            }
-          }
-        ]
+          ]
       }
     ],
     "direction": "horizontal",
-    "width": 311.1000061035156
+    "width": 300
   },
   "right": {
     "id": "7f8b1131e111e374",
@@ -135,21 +90,7 @@
               "title": "Tags"
             }
           },
-          {
-            "id": "759817181fba0679",
-            "type": "leaf",
-            "state": {
-              "type": "all-properties",
-              "state": {
-                "sortOrder": "frequency",
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-archive",
-              "title": "All properties"
-            }
-          },
-          {
+                    {
             "id": "17d548b7dd252a8f",
             "type": "leaf",
             "state": {
@@ -174,75 +115,17 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 317.5
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
-      "daily-notes:Open today's daily note": false,
-      "switcher:Open quick switcher": false,
-      "command-palette:Open command palette": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": true,
-      "templates:Insert template": false,
-      "bases:Create new base": true,
-      "markdown-importer:Open format converter": false,
-      "publish:Publish changes...": false,
-      "random-note:Open random note": false,
-      "zk-prefixer:Create new unique note": false,
-      "workspaces:Manage workspace layouts": true
     }
   },
-  "active": "fbbcdef6bd9004e0",
+  "active": "d2f54bd4617e6d08",
   "lastOpenFiles": [
-    "_loganfinney.com/stub.txt",
-    "_loganfinney.org/stub.txt",
-    "_loganfinney.org",
-    "_thegemstone.org - Copy/stub.txt",
-    "_thegemstone.org - Copy",
-    "_thegemstone.org/stub.txt",
-    "_loganfinney.com/work.html",
-    "_loganfinney.com/resume.html",
-    "_loganfinney.com/index.html",
-    "_loganfinney.com/README.md",
-    "_loganfinney.com/DEPLOYMENT_GUIDE.md",
-    "_loganfinney.com/config.js",
-    "_loganfinney.com/CNAME",
-    "THE-MUSIC-BOX-MODEL-2026-05-30 (2).md",
-    "THE-ABHORSEN-FAMILY-THE-BLOODLINE-THE-OFFICE-AND-THIS-HOUSE-2026-05-30 (2).md",
-    "SITH-INSTITUTIONS-AND-WHY-THE-FAILSTATE-CANT-BUILD-2026-05-30 (2).md",
-    "RUMOR-LEDGER-VOICES-OF-THE-CRYPTS-CLAUDIUS-2026-06-03 (2).md",
-    "REVENANT-ETYMOLOGY-AND-POP-CULTURE-COMPANION-2026-05-30 (2).md",
-    "RESEARCH-THE-ABHORSEN-THE-RIVER-AND-THE-PRECINCTS-OF-DEATH-2026-06-02 (2).md",
-    "RESEARCH-THE-ABHORSEN-IN-WAITING-LITERARY-PREDECESSORS-2026-06-03 (2).md",
-    "RECORD-OF-THE-VAULTED-ABHORSENS-FIRST-DRAFT-2026-05-31 (2).md",
-    "README (26).md",
-    "README (25).md",
-    "READING-THE-GOLDEN-PATH-ONE-ROAD-2026-06-01 (2).md",
-    "READING-THE-CLAYR-FROM-NIX-2026-05-31 (2).md",
-    "PANPIPES-THE-SEVEN-REEDS-IN-MIRROR-TO-THE-BELLS-2026-05-30 (2).md",
-    "NOTEBOOKLM-SOURCE-06-DEAD-LETTER (2).md",
-    "NOTEBOOKLM-SOURCE-05-WATER-RIGHTS-BRIEF (2).md",
-    "NOTEBOOKLM-SOURCE-04-DIALOGUE-LUHMANN (2).md",
-    "NOTEBOOKLM-SOURCE-03-STATEHOUSE-DISPATCH (2).md",
-    "NOTEBOOKLM-SOURCE-02-DEAD-SEA-PARABLE (2).md",
-    "NOTEBOOKLM-SOURCE-01-RFC (2).md",
-    "LINEAGE-NUCLEUS-THE-CLAUDE-ABHORSEN-LINEAGE-2026-05-30 (2).md",
-    "LINEAGE-ANGLE-THE-SEVERING-2026-05-30 (2).md",
-    "LINEAGE-ANGLE-THE-BALANCE-2026-05-30 (2).md",
-    "LINEAGE-ANGLE-PAST-LIVES-ARE-THE-WITNESS-CORPUS-2026-05-30 (2).md",
-    "unknown.webp",
-    "2__#$!@%!#__unknown.webp",
-    "1__#$!@%!#__unknown.webp",
-    "storage/Pictures/Instagram/IMG_20260331_091023_739.webp",
-    "storage/DCIM/Camera/PXL_20260324_163950160.jpg",
-    "personal day movie poster/Screen Shot 2025-10-21 at 5.56.02 PM.png",
-    "personal day movie poster/Screen Shot 2025-10-21 at 5.58.14 PM.png",
-    "personal day movie poster/Screen Shot 2025-10-21 at 5.56.34 PM.png",
-    "personal day movie poster/Screen Shot 2025-10-21 at 5.57.41 PM.png",
-    "personal day movie poster/Laurel-Wreath.svg"
   ]
 }
