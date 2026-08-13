@@ -20,8 +20,8 @@ updates:
     allow:
       - dependency-type: "all"
 
-  # Follow the upstream gitlink biweekly. This updates only the submodule pin;
-  # it does not alter the vendored DND-SRD-5.2.1 snapshot or its provenance.
+  # Follow the upstream SRD module biweekly. This updates only the pinned
+  # submodule commit; the upstream module retains its own CC BY 4.0 attribution.
   - package-ecosystem: "gitsubmodule"
     directory: "/"
     schedule:
