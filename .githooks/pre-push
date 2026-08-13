@@ -1,13 +1,16 @@
 #!/usr/bin/env sh
-# .githooks/pre-push — size gate + secret range-gate (gitleaks + trufflehog)
-# then LFS transfer. Fails CLOSED: missing engine, scan error, oversized file,
-# or secret finding all block.
+# .githooks/pre-push — over the outgoing push, run three checks then hand off
+# the LFS transfer: file sizes vs GitHub's limits; gitleaks over the commit
+# range; trufflehog (verified) over the changed files; then git-lfs. Fails
+# CLOSED: missing engine, scan error, oversized file, or secret finding all block.
 #
 # Protocol: git feeds lines "<local ref> <local oid> <remote ref> <remote oid>"
 # on stdin. `git lfs pre-push` consumes the SAME stdin format, so stdin is
 # buffered once here and replayed for LFS at the end. A remote oid of all
 # zeros means the remote ref is being created.
 set -u
+
+printf >&2 'pre-push: ran at %s\n' "$(date '+%Y-%m-%dT%H:%M:%S%z')"
 
 ZERO=0000000000000000000000000000000000000000
 TAB=$(printf '\t')
@@ -35,7 +38,7 @@ while IFS=' ' read -r local_ref local_oid remote_ref remote_oid; do
     base=$remote_oid
   fi
 
-  # --- Gate 0: GitHub size walls -----------------------------------------
+  # --- file sizes vs GitHub's limits -------------------------------------
   # GitHub blocks non-LFS files >100 MiB and rejects LFS files >2 GiB on
   # Free/Pro (docs: about-large-files-on-github; about-git-large-file-storage).
   # Scoped to the NEW objects in the push range. Non-LFS sizes come straight
@@ -68,21 +71,21 @@ while IFS=' ' read -r local_ref local_oid remote_ref remote_oid; do
   fi
   printf '%s\n' "$sz_report" | grep '^WARN' | sed 's/^WARN  /pre-push warning: /' >&2 2>/dev/null || :
 
-  # --- Gate 1: gitleaks scans the full outgoing commit RANGE (offline) ---
+  # --- gitleaks: secret scan of the outgoing commit range (offline) ------
   if ! gitleaks git --log-opts "$logopts" --redact --verbose --no-color --no-banner; then
     printf >&2 'pre-push: gitleaks flagged %s (range: %s). Values redacted above.\n' "$local_ref" "$logopts"
     blocked=1
   fi
 
-  # --- Gate 2: trufflehog verified, FILESYSTEM mode over the changed files -
+  # --- trufflehog: verified secret scan of the changed files (filesystem) -
   # `trufflehog git` clones this 84k-file/13GB repo per run (5 min+, proven
   # non-viable); filesystem mode scans the CHANGED files' tip content in ~1s
-  # and still verifies against provider APIs. Gate 1 already covers the full
-  # history, so a secret that appeared then vanished mid-range is still caught
-  # by gitleaks. We gate on verified (live) + unknown (verification errored /
-  # offline = fail closed). Findings are detected by emitted JSON (not exit
-  # code); --fail-on-scan-errors makes only genuine scan errors non-zero,
-  # which we treat as fail-closed. -z/xargs -0 keeps space/unicode paths safe.
+  # and still verifies against provider APIs. gitleaks already covers the full
+  # history, so a secret that appeared then vanished mid-range is still caught.
+  # We gate on verified (live) + unknown (verification errored / offline = fail
+  # closed). Findings are detected by emitted JSON (not exit code);
+  # --fail-on-scan-errors makes only genuine scan errors non-zero, which we
+  # treat as fail-closed. -z/xargs -0 keeps space/unicode paths safe.
   th_out=$(git diff -z --name-only --diff-filter=ACMRT "$base" "$local_oid" 2>/dev/null \
     | xargs -0 -r trufflehog filesystem --results=verified,unknown --json \
         --no-update --fail-on-scan-errors 2>/dev/null)
@@ -99,8 +102,8 @@ done <<EOF
 $refs
 EOF
 
-[ "$blocked" -eq 0 ] || fail 'gate(s) failed - push blocked. Fix findings; do not bypass hooks.'
+[ "$blocked" -eq 0 ] || fail 'one or more checks failed - push blocked. Fix findings; do not bypass hooks.'
 
-# --- Gate 3: LFS object transfer (replay the original stdin) ------------
+# --- git-lfs: object transfer (replay the original stdin) ---------------
 printf '%s\n' "$refs" | git lfs pre-push "$@"
 exit $?

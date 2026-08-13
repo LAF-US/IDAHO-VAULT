@@ -1,0 +1,150 @@
+---
+title: "208 CYA Builds Catholic Young Adult Community in Idaho"
+source: "https://favs.news/208-cya-catholic-young-adults-north-idaho/?mc_cid=c78d014447&mc_eid=3d9119f76a"
+author:
+  - "[[Lisa Ormond]]"
+published: 2026-08-12
+created: 2026-08-12
+description: "A new Catholic young adult group in North Idaho is bringing 18- to 30-year-olds together through faith, friendship, fun and community."
+---
+## A new North Idaho Catholic young adult ministry goes live building faith and connection for its generation
+
+Date:
+
+Related stories
+
+[Commentary](https://favs.news/commentary/)
+
+After losing his home in Spokane’s Old Trails Fire, Matthew Kincanon reflects on faith, forgiveness, community and rebuilding his life.
+
+[News](https://favs.news/news/)
+
+Jewish game developer Aviva Schecterson builds community and advocates against antisemitism in the gaming industry after Oct. 7.
+
+[Ask](https://favs.news/commentary/ask/)
+
+Explore Eastern Orthodox teachings on prayer, the prayer of the heart, discernment and the practice of living continuously in God’s presence.
+
+Our Sponsors
+
+Building friendships and having fun, 208 Catholic Young Adult (CYA) members gathered for an indoor rock-climbing day in May (Contributed by Malia Kenner).
+
+## A new North Idaho Catholic young adult ministry goes live building faith and connection for its generation
+
+### 208 Catholic Young Adults brings North Idaho’s 18–30-year-olds together for faith, friendship and fun, filling a community need through events, fellowship and spiritual growth.
+
+COEUR D’ALENE, Idaho — In Northern Idaho, a new community for young adult Catholics has come to life bringing with it a much-needed place for 18- to 30-year-old believers to find God and fellowship among its generation.
+
+Its purpose is straightforward.
+
+“The 208 Catholic Young Adults (CYA) exists to offer a place to unplug, laugh, build genuine friendships and spend time with people who are walking the same road of faith,” said 208 CYA co-peer leader Thomas Schlader, 20, of Post Falls.
+
+Malia Kenner, 21, of Coeur d’Alene is Schlader’s partner on this spiritual venture. She shared her big picture view about its mission.
+
+“This community is here to connect and unite the body of Christ so that by our friendship and faith we can walk the narrow way towards the arm of our Father in heaven and bring heaven to Earth,” Kenner said.
+
+## Sowing seeds
+
+Last October, Kenner had the idea to start the region-wide Catholic group. It was on her heart and mind to do.
+
+“I wanted to bring us (young adults) together and foster community in our beautiful home. We are so blessed to live in such an abundantly Christian community, but we didn’t even know the other young adults in our hometown,” she said.
+
+Kenner recognized that across the North Idaho Catholic church landscape a young adult group was clearly missing. This glaring void prompted her to take action.
+
+“I began to dream about what this group could look like and the good it could do,” Kenner said.
+
+She met with a trusted local youth minister for guidance and then began to formulate a vision for its rise.
+
+“Amazing people have walked with me and supported me step-by-step. I couldn’t be more grateful for their love and support,” Kenner said.
+
+In her mind, a top priority for the group was its sustainability.
+
+“My biggest prayer and goal for this group is that we can create a community that continues for years and years,” Kenner said. “I just pray that God gives us all the graces and blessings we need to build a strong foundation for this group.”
+
+Early spring, Kenner took an important next step in creating that foundation by asking Schlader to partner with her. “I was so grateful he agreed to come on board,” she said.
+
+![catholic](https://favs.news/wp-content/uploads/2026/08/20244CEB-F0EC-427A-AF72-B617DC150BCD.png)
+
+Malia Kenner and Thomas Schlader are leaders of a newly formed Catholic young adult community in Northern Idaho called 208 CYA. “We are doing events to bring people together to give them a place to find like-minded people, balancing fun and faith,” said Schlader (Lisa Ormond/FāVS News).
+
+Both are youth ministers at [St. Pius X](https://www.stpiuscda.org/) and parish members of [St. Thomas the Apostle](https://stthomascda.org/) in Coeur d’Alene.
+
+“We do see it as a ministry. It’s just not just a social club,” Schlader explained. “We want to help others strengthen their bond with Christ and get to heaven. That is our bread and butter.”
+
+## Generationally-driven
+
+208 CYA is leaning into its purpose and quickly gaining momentum and members. With over 200 followers on Instagram, young adults are hearing about the group and joining.
+
+“This group is a great addition to the local Catholic community,” said 208 CYA member Ben Lowman, 21. He and his wife Maggie joined right away when it launched in May. They have attended several sponsored activities.
+
+“I would say we have a solid group of about 50 people generally coming to events from Coeur d’Alene and the North Idaho sphere that includes Rathdrum, Hayden, Post Falls and Spirit Lake,” Kenner said. “Spokane (Washington) young adults are also joining us.”
+
+“Similar groups have come around but not stuck or been like this one,” Lowman said. “What is different is their approach and programming offered that aligns and matches with this generation’s wants, ways and needs.”
+
+## Leaning in and listening
+
+As leaders, Kenner and Schlader are placing their own generational stamp on this new ministry in terms of activity selection and communication.
+
+“You have to change with the times,” said Schlader in reference to the 208 model being offered. “You can’t run a young adult group the way you did even 10 years ago.”
+
+Members have appreciated Kenner and Schlader’s awareness and attentiveness to this fact.
+
+“The leaders do a good job planning events, but at the same time you can always text the whole group, also, to plan an outing,” Lowman said. “It’s great for all young people married, dating or single. Basically, anyone who wants to get out a little more or change up their social scene, this is a great group to join.”
+
+## What’s offered
+
+208 CYA events offer lots of variety like volleyball and swimming, rock-climbing and hiking, guest speakers, praise and worship gatherings and social get-togethers at local concerts and country swing nights.
+
+![catholic](https://favs.news/wp-content/uploads/2026/08/6BC26EDE-A76E-4485-8D6F-FB4CF348CEF5.png)
+
+Last week, 208 Catholic Young Adults (CYA) sponsored a four-hour swing dance night social in Coeur d’ Alene (Contributed by Thomas Schlader).
+
+Also, Kenner said the community “definitely has strong desires” to go deeper about their faith’s doctrine.
+
+“Many of our members have expressed a strong desire in learning as much as they can about [apologetics](https://www.catholic.com/tract/apologetics-what-is-christian-or-catholic-apologetics),” she said. “We hope to start both bible and apologetics studies in the fall and winter this year.”
+
+Generally, activities are not held at churches. “Our philosophy is to really mix things up,” Kenner said.
+
+“Unlike other past young adult groups, this one keeps it fun and low on commitment,” Lowman said. “It’s easy to just pop by or come to a gathering every once in a while. The schedule is not rigid. They (organizers) don’t repeat the same activity every week.”
+
+Members recognize and appreciate this new community and are showing up.
+
+“On average, we have between 20-80 in attendance depending on the promotion,” Schlader said. “I feel great about it.”
+
+Another unique aspect of 208 CYA is how information is shared. Primarily, this is accomplished through Instagram and a cloud-based group chat app called Telegram. Schlader said phone calls and personal contacts still happen but digital is the #1 method of distribution.
+
+“Our generation generally spends four to five hours on their phone per day, so we might as well get the information to them where they’ll see it,”said Schlader.
+
+## Finding its way
+
+Still in its beginning stages, this newly formed Catholic community emphasizes relationship building over transactional outcomes.
+
+“I’ve seen firsthand how life-changing it can be simply to have people who show up for you,” Schlader said.
+
+Mya Reynoldson, 19, lives in Spirit Lake. She became aware of the group while volunteering as a youth leader at St. Pius X. Her favorite activity so far has been the volleyball-swim-froyo get-togethers.
+
+“It’s an amazing group and the unifying friendship is really beautiful,” she said. “It’s definitely filling a need that wasn’t being met. Being able to connect with people who believe the same as me and are in the same chapter of life is refreshing.”
+
+## All for his kingdom
+
+Now that 208 CYA is a reality, Kenner hopes and prays it continues to thrive.
+
+“If I could make just one person feel seen, known and loved by coming to just one event, I will be content,” she said.
+
+Schlader shared that 208’s presence has true importance beyond what is happening on paper.
+
+“The defining battle of our generation is not a world war. It is a spiritual one. It is a battle for our attention, our relationships, our identity and ultimately our souls,” Schlader said. “Our culture tells us to live for ourselves. The gospel calls us to live for God and one another.”
+
+And according to Schlader, the first step in fighting that battle is surprisingly simple.
+
+“Connect with the people God has placed in your life. That’s what the message of 208 CYA is all about: ‘You are not alone,’” he said. “We are sons and daughters of God created with dignity, purpose and a calling.”
+
+*For more info and/or to join, contact:*
+
+- **Instagram: @208cya**
+- **Email:** [**cdacya208@gmail.com**](mailto:cdacya208@gmail.com)
+- **Phone: 208-210-6108**
+
+---
+
+[***FāVS News***](https://favs.news/newsletters/) ***uses*** [***professional journalists***](https://favs.news/news/) ***and*** [***thoughtful commentary***](https://favs.news/commentary/) ***to explore faith, values and ethics. Support journalism like this by making a tax-deductible*** [***donation***](https://favs.news/donate-to-favs-news/)***. FāVS is a 501(c)(3) nonprofit. © FāVS News. All rights reserved. Reproduction permitted only to authorized media partners or with written permission.***
