@@ -1,6 +1,0 @@
----
-# The Vault is primarily a knowledge corpus. Markdown quality style is managed
-# through its own curation and repository checks rather than Codacy analysis.
-languages:
-  markdown:
-    enabled: false
