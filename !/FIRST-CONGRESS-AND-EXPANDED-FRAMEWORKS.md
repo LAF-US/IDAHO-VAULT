@@ -1,6 +1,7 @@
 # First Congress and Expanded AI Framework Strategy
 
 ## 1. The First Congress: From Theory to Governance
+
 The **First Congress** is the legislative complement to the vault's judicial framework. It marks the transition from a theoretical Constitution to operational governance through live institutions [1]. 
 
 ### 1.1 Key Principles of the Congress

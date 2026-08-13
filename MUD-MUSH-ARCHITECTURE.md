@@ -8,8 +8,6 @@ status: draft
 tags: [MUD, MUSH, MOO, world-model, multi-agent, architecture]
 ---
 
-# MUD–MUSH World Architecture
-
 ## A Text-First, Persistent, Multi-User World Model
 
 > **Design premise:** A MUD–MUSH world is not merely a chat interface with fictional names. It is a persistent place in which rooms, objects, actors, permissions, memory, and consequences are explicit enough to be inspected, revised, and played.
