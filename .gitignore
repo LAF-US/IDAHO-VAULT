@@ -71,4 +71,9 @@ pubring*
 # THE WORLD IS QUIET HERE．ESTO PERPETUA!
 # ---------------------------------------------------------------
 .ollama/models/blobs/
-/.copilot/repos
+.copilot/repos
+.codex/logs_2.sqlite
+.codex/logs_2.sqlite-wal
+.codex/models_cache.json
+.codex/state_5.sqlite
+.codex/state_5.sqlite-wal
