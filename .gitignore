@@ -2,7 +2,7 @@
 #
 #   SECRETS — credential material. NON-MARKDOWN ONLY: Markdown is force-tracked
 #             at the bottom, so a secret pasted into prose is the scanner's job.
-#
+
 # ---------------------------------------------------------------
 # operating system
 # ---------------------------------------------------------------
@@ -63,6 +63,10 @@ pubring*
 # ---------------------------------------------------------------
 # gitignore exceptions
 # ---------------------------------------------------------------
+.ollama/models/blobs/
+.copilot/repos
+.codex/*.sqlite*
+.codex/models_cache.json
 !.gitignore
 !/.*/stub.txt
 !/**.md
@@ -70,7 +74,3 @@ pubring*
 # ---------------------------------------------------------------
 # THE WORLD IS QUIET HERE．ESTO PERPETUA!
 # ---------------------------------------------------------------
-.ollama/models/blobs/
-.copilot/repos
-.codex/*.sqlite*
-.codex/models_cache.json
