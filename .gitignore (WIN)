@@ -23,6 +23,12 @@ ehthumbs_vista.db
 [Dd]esktop.ini
 .stackdump
 $RECYCLE.BIN/
+~$*.doc
+~$*.docx
+~$*.xls
+~$*.xlsx
+~$*.ppt
+~$*.pptx
 .DS_Store
 .AppleDouble
 .AppleDB
