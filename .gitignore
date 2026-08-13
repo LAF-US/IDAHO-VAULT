@@ -72,8 +72,5 @@ pubring*
 # ---------------------------------------------------------------
 .ollama/models/blobs/
 .copilot/repos
-.codex/logs_2.sqlite
-.codex/logs_2.sqlite-wal
+.codex/*.sqlite*
 .codex/models_cache.json
-.codex/state_5.sqlite
-.codex/state_5.sqlite-wal
