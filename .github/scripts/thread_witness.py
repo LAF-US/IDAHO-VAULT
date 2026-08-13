@@ -9,7 +9,7 @@
 # / would-cascade / needs-human) plus a stale flag.
 # - render-worklist: render a looker-walk JSON report as a markdown triage surface.
 #
-# The write side (attest-resolve / engage-outdated / reconcile-witness) and the shared
+# The write side (engage-outdated / reconcile-witness) and the shared
 # plumbing still live in review_feedback_loop.py; this module imports the three engine-side
 # helpers it needs (`_list_open_pr_numbers`, `_parse_iso_datetime`, `_positive_int`)
 # one-directionally, so there is no import cycle. Consolidating the shared plumbing into a
@@ -253,9 +253,17 @@ def looker_walk(args: argparse.Namespace) -> int:
     # Layer C of the look-then-resolve design (#399): turns the open-PR backlog into a
     # classified worklist (clear / machine-disposable / would-cascade / needs-human, plus a
     # stale/abandonment flag) so the backlog drains *with* judgment. This command WRITES
-    # NOTHING; the guarded disposition path is `attest-resolve` (B2), gated separately. The
-    # `safe_to_drain` list names the PRs a deterministic apply pass could clear without a
-    # cascade or touching a human thread.
+    # NOTHING; the only path that resolves anything is `engage-outdated`, gated
+    # separately. The `safe_to_drain` list names the PRs a deterministic apply pass
+    # could clear without a cascade or touching a human thread.
+    #
+    # CAVEAT, and it is not new: BARE_RESOLVABLE_DISPOSITIONS is {outdated-resolvable,
+    # looked}, while engage-outdated acts on outdated-resolvable ONLY. A PR whose
+    # threads are all `looked` is therefore reported safe_to_drain with nothing able
+    # to drain it. That gap predates the removal of the unrun `attest-resolve`
+    # command -- nothing ever invoked it, so `looked` threads have never had a live
+    # clearing path. Narrowing the set, or teaching engage-outdated to clear `looked`,
+    # is a behaviour decision and is deliberately NOT made here.
     now = datetime.now(timezone.utc)
     reports = [
         _classify_pr_for_looker(
@@ -321,7 +329,7 @@ def _worklist_header(report: dict) -> list[str]:
         "## Looker Worklist — review-thread triage (read-only)",
         "",
         "> Deterministic census of open PRs. **No threads resolved, no PRs merged.**",
-        "> The gated apply pass (`attest-resolve --apply`) is a separate decision.",
+        "> The gated apply pass (`engage-outdated --apply`) is a separate decision.",
         "",
         f"- **Open PRs:** {open_prs} · **stale:** {stale}",
         f"- **By lane:** {_fmt_counts(report.get('by_lane') or {})}",
