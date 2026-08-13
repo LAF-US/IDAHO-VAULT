@@ -61,6 +61,8 @@ Temporary Items
 .obsidian/plugins/todoist-context-bridge/data.json
 .ollama/models/blobs/**/*
 .vscode/cli/*tunnel*.*
+.vscode-shared/sharedStorage/state.vscdb.backup
+.vscode-shared/sharedStorage/state.vscdb
 adbkey*
 auth.json
 credstore*
