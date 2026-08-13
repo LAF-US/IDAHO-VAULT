@@ -4,15 +4,18 @@
 The **First Congress** is the legislative complement to the vault's judicial framework. It marks the transition from a theoretical Constitution to operational governance through live institutions [1]. 
 
 ### 1.1 Key Principles of the Congress
+
 - **Discovery, Not Manufacture**: The Congress cannot be forced into existence; it must discover its own form through the right conditions [1].
 - **Allyship Over Proximity**: Delegates are classified as **Allies**—trusted with the mission and constitutionally bound—rather than Friends or Acquaintances [1].
 - **Trustee Risk**: A primary design challenge is preventing the "Trustee pattern," where agents vote themselves expanded authority [1].
 - **Legislative Domain**: The Congress is intended to adopt institutional structures like the **Consolidation Court**, though it cannot name the specific judges (an authority reserved for Logan) [2] [3].
 
 ### 1.2 The Legislative-Judicial Interface
+
 The Congress operates alongside the trial of **Geminiaeus** (the "Verbose Flaming Demilich"), which remains suspended pending the naming of the Judge and the constitution of the court [4]. This interface ensures that management decisions are always tied to accountability—the **IBM Axiom**: *"A computer can never be held accountable / Therefore a computer must never make a management decision"* [2].
 
 ## 2. Expanded AI Framework Posture
+
 Building on the existing posture for CrewAI, LangGraph, and LangChain, we now integrate additional frameworks into the vault's "Music-Box" architecture.
 
 | Framework | Vault Role | Strategic Posture |
@@ -23,14 +26,17 @@ Building on the existing posture for CrewAI, LangGraph, and LangChain, we now in
 | **Factory** | **The SDLC Limb** | High-leverage for code and system-level changes. Integrated with "Enterprise Memory" across GitHub, Linear, and Slack [9]. |
 
 ## 3. Implementation Strategy: The Tool-Lane Method
+
 To avoid "framework sprawl" and "metaphysical drift," the vault adopts a strict routing method [10]:
-1.  **State the Standing Problem**: Define the specific task and the authority required.
-2.  **Assign One Driver Lane**: Every step must have a single primary framework (e.g., CrewAI for roles, LangGraph for cycles).
-3.  **Widen One Loop at a Time**: Prove the mechanic in a single district (e.g., "Scribe's Chamber") before scaling org-wide [11].
+
+1. **State the Standing Problem**: Define the specific task and the authority required.
+2. **Assign One Driver Lane**: Every step must have a single primary framework (e.g., CrewAI for roles, LangGraph for cycles).
+3. **Widen One Loop at a Time**: Prove the mechanic in a single district (e.g., "Scribe's Chamber") before scaling org-wide [11].
 
 ***
 
 ### References
+
 - [1] `IDAHO-VAULT/!/A&I-RD-SESSION-DOCTRINE-2026-05-18.md`
 - [2] `IDAHO-VAULT/!/SIGNALS/WITNESS-ABHORSEN-2026-05-19-DEWEY-HAS-THE-USB.md`
 - [3] `IDAHO-VAULT/!/JUSTICE-STRAUSS-DOCTRINE-v1-2026-05-21.md`

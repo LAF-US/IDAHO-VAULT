@@ -20,6 +20,7 @@ tags: [A&I, R&D, 5Wizards, CrewAI, LangGraph, AutoGen, inquiry, governance, arch
 ---
 
 # A&I R&D — 5Wizards as a Composed Inquiry Architecture
+
 ## 2026-08-13 | Draft for Architect Review
 
 > **Status statement:** This is an R&D synthesis, not a topology declaration. It does not alter `.crewai/MANIFEST.md`, register a crew, grant a role, authorize a runtime, or promote any artifact. It records a design interpretation for review.
