@@ -112,6 +112,8 @@ A single append-only **world ledger** is the canonical source for room, object, 
 
 Each committed event carries an event ID, command ID, actor ID, affected entity IDs, prior and resulting state versions, timestamp, authorization decision, and payload hash. A projection may be rebuilt from the ledger, and a historical question is answered by replaying the relevant committed events rather than by trusting mutable descriptive text.
 
+When a connector or MCP command produces a vault audit artifact, its immutable `correlation_id` identifies the exact `(command_id, event_id)` pair of a committed ledger event. The artifact is a projection or transactional-outbox delivery record for that event, not a second state mutation. The command commits the ledger and retains a retryable outbox record; if audit delivery fails, recovery replays the artifact idempotently from the committed event without reconstructing or changing authority.
+
 ## 5. Hard code and soft code
 
 The system separates **hard code** from **soft code** without treating either as inferior.
@@ -179,6 +181,12 @@ Artificial participants should enter the world as actors with role cards, tool b
 
 ```text
 AgentSession
+├── session_id
+├── actor_id
+├── issued_at
+├── expires_at
+├── revocation_state
+├── audit_correlation_id
 ├── mission
 ├── allowed rooms
 ├── allowed objects
@@ -191,6 +199,8 @@ AgentSession
 ```
 
 An agent can investigate, converse, draft, challenge, or propose. A state-changing action becomes effective only when the relevant command, capability, and validation rule permit it.
+
+Every state-changing command binds to an active `AgentSession`. Before authorization or commit, the handler verifies the session identifier, actor binding, issuance and expiry window, revocation state, token/turn/time budgets, and stop conditions. A failed check rejects the command without mutation and records the associated audit correlation; an expired, revoked, exhausted, or stopped session cannot continue by replay or retry.
 
 ### 8.2 Roles, conversations, and state machines
 

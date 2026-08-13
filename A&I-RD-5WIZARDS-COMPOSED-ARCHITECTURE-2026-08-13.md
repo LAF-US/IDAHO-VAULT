@@ -11,8 +11,8 @@ subject: Reassessment of 5Wizards as a bounded inquiry chamber composed from Cre
 related:
   - .crewai/5WIZARDS-DRAFT.md
   - .crewai/MANIFEST.md
-  - !/SENIOR-GAME-DEV-NOTE-CONNECTOR-POSTURE-2026-04-16.md
-  - !/DRAFT-MAP-TOOL-LANES-FOR-ONE-LIVE-LOOP-V2-2026-04-17.md
+  - "!/SENIOR-GAME-DEV-NOTE-CONNECTOR-POSTURE-2026-04-16.md"
+  - "!/DRAFT-MAP-TOOL-LANES-FOR-ONE-LIVE-LOOP-V2-2026-04-17.md"
   - 2026-agentic-AI-landscape-general-theory-2026-05-19.md
   - INBOX/THE-MUSIC-BOX-MODEL-2026-05-30.md
   - CONSTITUTION.md
@@ -238,7 +238,7 @@ That division permits rich, MUD/MUSH-like social and narrative expression withou
 
 ### Source references
 
-1. `.crewai/MANIFEST.md` — created 2026-04-04; updated 2026-08-13; `status: active`.
+1. `.crewai/MANIFEST.md` — created 2026-04-04; updated 2026-08-13; `status: retired`.
 2. `.crewai/5WIZARDS-DRAFT.md` — created/updated 2026-04-15; `status: draft`; `phase: concept-refinement`.
 3. `!/SENIOR-GAME-DEV-NOTE-CONNECTOR-POSTURE-2026-04-16.md` — 2026-04-16.
 4. `!/DRAFT-MAP-TOOL-LANES-FOR-ONE-LIVE-LOOP-V2-2026-04-17.md` — 2026-04-17; draft.
