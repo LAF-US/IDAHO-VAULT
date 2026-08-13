@@ -11,7 +11,7 @@ The 5W Council is a group of in-fiction Wizards (Who, What, When, Where, Why) an
 - **Wizard Class**: Learned, studied, and inhabiting individualized "Towers" for R&D.
 - **Familiar Class**: Skeptical challengers who "duke it out" with Wizards to ensure grounding.
 - **The Wild/Gossip**: Familiars meet in the wild to share notes informally before reconvening.
-- **How Mode**: The WHY Wizard transforms into "HOW"—a Jekyll/Hyde avatar that adjudicates the final report with absolute authority.
+- **How Mode**: The WHY Wizard’s HOW mode is a Jekyll/Hyde-style synthesis avatar that identifies tensions and prepares a staged recommendation; human review retains authority over promotion and canonical standing.
 
 ## 3. Epistemic Law: Standing & Liches
 The vault's "magic system" is **Standing**—local, witnessed, scoped, and revocable recognition.

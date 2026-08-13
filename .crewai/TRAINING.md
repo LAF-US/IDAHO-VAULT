@@ -1,7 +1,7 @@
 ---
 title: "CrewAI Training and Crewing Doctrine"
 date created: "2026-04-11"
-date updated: "2026-04-12"
+date updated: "2026-08-13"
 authority: crewai
 doc_class: doctrine
 status: active
@@ -22,15 +22,14 @@ production runs.
 
 Current posture:
 
-- One bootstrap crew is live: `idaho_vault.bootstrap`.
-- No crew is training-ready yet.
-- Legacy crew ideas remain historical or pending until re-founded on purpose.
+- One bounded inquiry crew is registered: `idaho_vault.crew.FiveWizardsCouncil`.
+- The council is runnable with an explicitly configured model provider, but it is not training-ready yet.
+- Legacy bootstrap and deterministic crew ideas remain historical or pending until re-founded on purpose.
 
 Hard gate distinction:
 
-- Bootstrap validation runs do not require external model credits.
-- Human-feedback training for future credentialed crews does require live model
-  credentials and Logan's explicit go-ahead.
+- Council runs and human-feedback training require an explicitly configured live model provider.
+- Human-feedback training additionally requires Logan's explicit go-ahead and an interactive terminal.
 
 ---
 
@@ -108,15 +107,13 @@ training target.
 
 | Crew | Status | Agent(s) | Task(s) | Training posture |
 | --- | --- | --- | --- | --- |
-| `idaho_vault.bootstrap` | Active | `bootstrap_validator` | `deployment_probe` | Not training-ready; validation shard only |
+| `idaho_vault.crew.FiveWizardsCouncil` | Registered / runnable | `who_wizard`, `what_wizard`, `when_wizard`, `where_wizard`, `why_wizard`, `how_wizard` | Five direct inquiry tasks plus `council_synthesis_task` | Not training-ready; requires an approved feedback protocol and credential posture |
 | JFAC Parser | Historical / retired harbor | Budget Scout, Legislative Tracker, H911 Parser | Historical WHO/WHAT/WHEN/WHERE/WHY pattern | Not live |
 | Task-to-Code Bridge | Stub only | Task-to-Code Agent | Pending | Not live |
 | Vault Custodian | Stub only | Vault Custodian | Pending | Not live |
 | Crawler Crew | Pending Logan decision | Bartimaeus / The Cartographer | Pending | Not live |
 
-The active bootstrap crew is intentionally narrow. It proves runtime shape and
-package wiring; it does not yet carry the broader narrative volunteers into
-live operation.
+The registered council is intentionally bounded. It produces lane packets and a staged synthesis recommendation; it does not promote output, create offices, or carry out autonomous follow-on work.
 
 ---
 
@@ -130,8 +127,7 @@ live operation.
 6. `human_input: true` set on all tasks intended for training.
 7. Interactive terminal session available - training blocks on stdin and does not belong in CI.
 
-`idaho_vault.bootstrap` currently fails the training-ready test on purpose: it
-uses the mock-LLM validation path and has no human-feedback task design.
+`idaho_vault.crew.FiveWizardsCouncil` is not training-ready: its current task configuration does not yet define a Logan-approved human-feedback protocol, and its credential posture must be explicitly established before training.
 
 ---
 
