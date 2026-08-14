@@ -1,0 +1,10 @@
+2026-06-27T21:02:20.173Z [INFO] Shell completions: no supported shell detected, skipping
+2026-06-27T21:02:20.174Z [INFO] Starting CLI in server mode (stdio)
+2026-06-27T21:02:20.176Z [INFO] Starting CLI in stdio mode (Rust JSON-RPC engine)
+2026-06-27T21:02:21.048Z [INFO] CLI server ready (stdio mode, Rust JSON-RPC engine)
+2026-06-27T21:02:21.048Z [INFO] Server started, waiting for requests
+2026-06-27T21:02:21.415Z [ERROR] [rust:runtime::auth_manager_orchestration] Failed to validate SDK token (403): GitHub returned: API rate limit exceeded for user ID 136375980. If you reach out to GitHub Support for help, please include the request ID D989:2F34C3:7441E:419425:6A403A5D and timestamp 2026-06-27 21:02:21 UTC. For …
+2026-06-27T21:02:21.431Z [INFO] Preparing runtime for graceful shutdown
+2026-06-27T21:02:21.431Z [INFO] Starting graceful shutdown of CLI server
+2026-06-27T21:02:21.432Z [INFO] Destroying 0 active sessions
+2026-06-27T21:02:21.432Z [INFO] CLI server prepared for shutdown; transport remains open for RPC response
