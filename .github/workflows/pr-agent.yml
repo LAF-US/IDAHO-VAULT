@@ -124,7 +124,7 @@ jobs:
         # trailing `# v0.41.1` marker; a `./` ref is not tracked, and there is
         # no `docker` ecosystem in .github/dependabot.yml. Version and digest
         # are both manual now — the local action's header says how to refresh.
-        uses: ./.github/actions/pr-agent # the-pr-agent/pr-agent v0.41.1 (743f52d8)
+        uses: ./.github/actions/pr-agent # the-pr-agent/pr-agent v0.42.0 (f6af7d77)
         env:
           # Job-level env reaches every step, and a Docker action receives the
           # step's env inside the container — so without this the 1Password

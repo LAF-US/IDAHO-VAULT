@@ -1,11 +1,11 @@
 name: 'PR-Agent (digest-pinned)'
 description: >-
-  the-pr-agent/pr-agent v0.41.1, with its Docker Hub image pinned by digest
+  the-pr-agent/pr-agent v0.42.0, with its Docker Hub image pinned by digest
   instead of the mutable tag upstream builds from.
 
 # WHY THIS FILE EXISTS
 #
-# `uses: the-pr-agent/pr-agent@743f52d8` pins the *repository* but not the code
+# `uses: the-pr-agent/pr-agent@<sha>` pins the *repository* but not the code
 # that actually runs. Upstream's `action.yaml` is a Docker action whose image is
 # `Dockerfile.github_action_dockerhub`, and that Dockerfile is one line:
 #
@@ -16,11 +16,13 @@ description: >-
 # does not provide. This was raised on #960 and merged still open as step 4;
 # this action closes it.
 #
-# Everything below is a verbatim copy of `action.yaml` at 743f52d8 EXCEPT the
+# Everything below is a verbatim copy of `action.yaml` at f6af7d77 (v0.42.0)
+# EXCEPT the
 # `image:` line. Instead of building the one-line Dockerfile, we reference the
 # image directly by digest, which is what the Dockerfile would have resolved to.
 #
-# Digest resolved 2026-08-12 against registry-1.docker.io:
+# Digest re-resolved 2026-08-14 against registry-1.docker.io, on the v0.42.0
+# bump:
 #
 #     GET /v2/pragent/pr-agent/manifests/github_action
 #     -> application/vnd.oci.image.index.v1+json
@@ -34,7 +36,8 @@ description: >-
 # 1. Dependabot no longer tracks any of it. The `github-actions` ecosystem
 #    (.github/dependabot.yml, the only ecosystem configured — there is no
 #    `docker` entry) tracked the workflow's `uses:` line and its trailing
-#    `# v0.41.1` marker. A local `./` action is not tracked, and Dependabot
+#    `# v0.41.1` marker (it has since bumped main to v0.42.0). A local `./` action
+#    is not tracked, and Dependabot
 #    would not read an `image:` inside an action.yml even if docker were
 #    enabled. BOTH the version and the digest are now manual.
 # 2. The digest IS enforced, as of the same PR that added this file.

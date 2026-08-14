@@ -53,9 +53,6 @@ def _thread_has_attested_look(thread: dict) -> bool:
 # every author is a bot (advisory OR signal — no denylist), never a human-authored
 # thread, and never on a CHANGES_REQUESTED review. The PR-level CHANGES_REQUESTED
 # guard belongs with the future resolve path; bot-only eligibility lives here.
-ATTESTATION_DECISIONS: frozenset[str] = frozenset({"addressed", "advisory", "wontfix"})
-
-
 def _author_is_bot(author: dict) -> bool:
     """True when a review-comment author is a GitHub App / bot actor, not a human."""
     if (author.get("__typename") or "") == "Bot":
