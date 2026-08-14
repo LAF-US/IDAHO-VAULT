@@ -4,41 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "c12d1b9f24f20bc3",
+        "id": "728d0694e92f8514",
         "type": "tabs",
         "children": [
           {
-            "id": "e0e3edac80b521bf",
+            "id": "08856fcdd2777787",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2026-07-31.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "2026-07-31"
-            }
-          },
-          {
-            "id": "b1f3a334fb7a1db4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2026-08-12.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "icon": "lucide-file",
-              "title": "2026-08-12"
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -100,7 +79,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 313.5
+    "width": 255.09234619140625
   },
   "right": {
     "id": "7f8b1131e111e374",
@@ -116,7 +95,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2026-08-12.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -178,72 +156,25 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Idaho_Experience-Pioneering_Artists_wt.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Idaho_Experience-Pioneering_Artists_wt"
-            }
-          },
-          {
-            "id": "cb6ab4d75a12f0d4",
-            "type": "leaf",
-            "state": {
-              "type": "Strange New Worlds",
-              "state": {},
-              "icon": "file-digit",
-              "title": "Strange New Worlds"
-            }
-          },
-          {
-            "id": "d03112876e4f9741",
-            "type": "leaf",
-            "state": {
-              "type": "map-of-content",
-              "state": {},
-              "icon": "stacked-levels",
-              "title": "Map of Content"
-            }
-          },
-          {
-            "id": "86987daab199315e",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
-            }
-          },
-          {
-            "id": "4c366c39599ec0d8",
-            "type": "leaf",
-            "state": {
-              "type": "DICE_ROLLER_VIEW",
-              "state": {},
-              "icon": "dices",
-              "title": "Dice Tray"
+              "title": "Outline"
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 470.5
+    "width": 296.36114501953125
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-full-calendar:Open Full Calendar": false,
-      "smart-connections:Smart Connections: Open connections view": true,
-      "smart-connections:Toggle Footer Connections": true,
-      "smart-connections:Smart Connections: Open random connection": true,
-      "daily-notes:Open today's daily note": true,
+      "daily-notes:Open today's daily note": false,
       "switcher:Open quick switcher": false,
-      "omnisearch:Omnisearch": false,
-      "smart-lookup:Smart Lookup: Open lookup view": false,
       "command-palette:Open command palette": false,
       "graph:Open graph view": false,
       "random-note:Open random note": false,
@@ -254,66 +185,52 @@
       "templates:Insert template": false,
       "audio-recorder:Start/stop recording": false,
       "bases:Create new base": true,
-      "zk-prefixer:Create new unique note": false,
-      "obisidian-note-linker:Note Linker": true,
-      "homepage:Open homepage": true,
-      "obsidian-kanban:Create new board": true,
-      "templater-obsidian:Templater": true,
-      "obsidian-git:Open Git source control": true,
-      "obsidian-advanced-slides:Show Slide Preview": true,
-      "table-editor-obsidian:Advanced Tables Toolbar": true,
-      "obsidian42-brat:BRAT": true,
-      "desk:Create new desk": true,
-      "obsidian-5e-statblocks:Open Creature pane": true,
-      "handwritten-notes:Create empty handwritten note": true,
-      "map-of-content:Update Map of Content": false,
-      "periodic-notes:Open today": false,
-      "calendarium:Open Calendarium": false
+      "zk-prefixer:Create new unique note": false
     }
   },
-  "active": "b1f3a334fb7a1db4",
+  "active": "d2f54bd4617e6d08",
   "lastOpenFiles": [
-    "2026-08-11.md",
-    "2026-08-12.md",
-    "2026-08-10.md",
-    "- Mary Hallock Foote Paintings & Artwork for Sale _ Mary Hallock Foote Art Value Price Guide.md",
-    "2026-07-31.md",
-    "2026-08-09.md",
-    "2026-08-08.md",
-    "2026-08-07.md",
-    "2026-08-06.md",
-    "2026-08-05.md",
-    "2026-08-04.md",
-    "2026-08-03.md",
-    "2026-08-02.md",
-    "2026-08-01.md",
-    "2026-07-30.md",
-    "be1a7dc1-1214-4496-80cc-26dd6a0dd2cfOriginal.txt",
+    "2026-08-13.md",
+    "11__src_2026__2d32eff7.md",
+    "!/!/_loganfinney.org",
+    "!/!/_loganfinney.com",
+    "!/!/_thegemstone.org",
+    "!/_SRD",
+    "check_secret_patterns copy.py",
+    "review_feedback_loop copy.py",
+    "phone_link_auto_sweep copy.py",
+    "classify_paths copy.py",
+    "topology_census copy.py",
+    "test_check_secret_patterns copy.py",
+    "-  - Model Context Protocol – Codex  OpenAI Developers (2).md",
+    "AGENTS (79).md",
+    "Reddit (3).md",
+    "voiced (3).md",
+    "README (22).md",
+    "sheep (3).md",
+    "!README (9).md",
+    "website (4).md",
+    "currency (3).md",
+    "at (3).md",
+    "ampersand (3).md",
+    "- 1Password Developer - 1Password app integration security (3).md",
+    "- About status checks (2).md",
+    "580 (3).md",
+    "581 (3).md",
+    "582 (3).md",
+    "583 (3).md",
+    "584 (3).md",
+    "585 (3).md",
+    "586 (3).md",
+    "587 (3).md",
+    "588 (3).md",
+    "589 (3).md",
+    "590 (3).md",
     "be1a7dc1-1214-4496-80cc-26dd6a0dd2cfOriginal.jpg",
-    "5e73ef9c-88fb-447d-9e34-5b66c7a8a5ccOriginal.txt",
     "5e73ef9c-88fb-447d-9e34-5b66c7a8a5ccOriginal.jpg",
-    "48297732-5381-43bc-a1fb-5893d9f0fa2fOriginal.txt",
     "48297732-5381-43bc-a1fb-5893d9f0fa2fOriginal.jpg",
-    "29a06054-223b-4784-bd5e-1e3e01d39edbOriginal.txt",
     "29a06054-223b-4784-bd5e-1e3e01d39edbOriginal.jpg",
-    "!/YEARLY_NOTE_TEMPLATE.md",
-    "!/QUARTERLY_NOTE_TEMPLATE.md",
-    "!/MONTHLY_NOTE_TEMPLATE.md",
-    "!/WEEKLY_NOTE_TEMPLATE.md",
-    "!/DAILY_NOTE_TEMPLATE.md",
-    "!/_NOTE_TEMPLATE.md.md",
-    "202607311256.md",
-    "HOUSE-CLOCK-WITNESS-RD-2026-07-31.md",
     "House_Time.jpg",
-    "2026-07-27 - AG Labrador Responds to Kohberger's Post-Conviction Relief Petition.md",
-    "2026-07-24 - Labrador Letter_ Defending Federal Rule Blocking Illegal Immigrants from Obtaining Commercial Drivers Licenses.md",
-    "2026-07-24 - Labrador Defends Rule Blocking Illegal Immigrants from Obtaining CDLs.md",
-    "video-000104-1415310121.mp4",
-    "apa-dcms-uk-comment.pdf",
-    "2026_WGA_Annual_Report_073026.pdf",
-    "__pycache__/importlib.cpython-313.pyc",
-    "__pycache__",
-    "scbl-fd-2015.pdf",
     "Screenshot 2026-07-28 181222.jpg",
     "43e30348-d7a5-4a20-a3e6-950ef389fe25_6177.jpg",
     "jwh01549.jpg",
