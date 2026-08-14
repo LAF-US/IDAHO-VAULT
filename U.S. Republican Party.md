@@ -1,3 +1,0 @@
----
----
-American political party

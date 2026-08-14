@@ -1,8 +1,0 @@
-{
-  "assistantActiveTimeMs": 0,
-  "model": "claude-opus-4-7",
-  "reasoningEffort": "high",
-  "interactionMode": "auto",
-  "autonomyLevel": "off",
-  "autonomyMode": "normal"
-}

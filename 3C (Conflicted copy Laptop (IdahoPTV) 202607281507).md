@@ -1,1 +1,0 @@
-[[Caribou County]] ([[Soda Springs]])  

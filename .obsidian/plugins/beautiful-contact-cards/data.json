@@ -1,9 +1,0 @@
-{
-  "birthdayDayFormat": "2-digit",
-  "birthdayMonthFormat": "short",
-  "birthdayYearFormat": "numeric",
-  "discordClient": true,
-  "renderFromProperties": true,
-  "hideProperties": true,
-  "lastSeenVersion": "2.0.1"
-}

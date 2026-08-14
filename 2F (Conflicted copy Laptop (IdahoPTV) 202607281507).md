@@ -1,1 +1,0 @@
-[[Fremont County]] ([[St. Anthony]]) 

@@ -1,8 +1,0 @@
-# Memory Index
-
-- [User profile](user_profile.md) — Logan Finney, Idaho PTV journalist, ADHD, consolidating digital life across machines/services
-- [Windows machine setup](windows_machine_setup.md) — Hardware, no-admin constraints, installed tools, notable folders, phantom filesystem entries
-- [rclone remotes](rclone_remotes.md) — All configured remotes with accounts and storage sizes
-- [Windows INGEST transfer](project_windows_ingest.md) — Active push to gdrive-personal:INGEST/windows-2026-05-12, status + known issues
-- [IDAHO-VAULT project](project_idaho_vault.md) — Multi-agent orchestration metaproject designing "Vaulted Syntax" protocol; GCS buckets + MacBook Claude + 5TB drive are infrastructure, not personal files
-- [Agent stashing feedback](feedback_agent_stashing.md) — Agents must keep work inside IDAHO-VAULT project dir, not scatter files across Documents/home

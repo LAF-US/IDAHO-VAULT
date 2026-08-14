@@ -1,3 +1,0 @@
----
----
-country north of America

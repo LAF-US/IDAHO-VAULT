@@ -1,9 +1,0 @@
-{
-  "defaultModel": "openrouter/free",
-  "defaultProvider": "openrouter",
-  "packages": [
-    "npm:@ollama/pi-web-search"
-  ],
-  "lastChangelogVersion": "0.70.6",
-  "defaultThinkingLevel": "medium"
-}

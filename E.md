@@ -1,1 +1,0 @@
-[[Elmore County]] ([[Mountain Home]])  

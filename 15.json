@@ -1,9 +1,0 @@
-{
-  "id": "15",
-  "subject": "[L2·now] Sync hostname → logans-mbp across Secrets.kt + witnesses",
-  "description": "Node was renamed to logans-mbp after the OSS-daemon switch. Update the stale logans-macbook-pro-1 host refs: ~/StudioProjects/VisionClaw/.../Secrets.kt (host only; token stays Logan's), VISIONCLAW-WITNESS-COMPANION-2026-07-01.md, README 3.md final-values. Leave UPSTREAM-DRAFTS-2026-07-01.md (historical record). Verify: grep -rn logans-macbook-pro returns only the drafts file. Non-sudo; wraps L0 and feeds every L2 client.",
-  "activeForm": "Syncing hostname refs to logans-mbp",
-  "status": "completed",
-  "blocks": [],
-  "blockedBy": []
-}

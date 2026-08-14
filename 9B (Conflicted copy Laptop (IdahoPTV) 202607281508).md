@@ -1,1 +1,0 @@
-[[Boundary County]] ([[Bonners Ferry]])  

@@ -1,8 +1,0 @@
-{
-  "id": "26",
-  "subject": "[chore] Fix committed merge-conflict markers in OPENROUTER-2026-04-28.md",
-  "description": "DONE 2026-07-07 (session 4f03d270): resolved the committed stash-collision markers in OPENROUTER-2026-04-28.md frontmatter — kept the fuller \"Stashed changes\" variant (adds date created/date modified Obsidian fields the other side lacked; tags content identical either way). Verified 0 conflict markers remain, frontmatter well-formed. Committed b13262a30, pushed clean.",
-  "status": "completed",
-  "blocks": [],
-  "blockedBy": []
-}

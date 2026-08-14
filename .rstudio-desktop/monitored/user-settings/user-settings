@@ -1,7 +1,0 @@
-contextIdentifier="F1E2CAC9"
-cranMirrorCountry="us"
-cranMirrorHost="RStudio"
-cranMirrorName="Global (CDN)"
-cranMirrorUrl="https://cran.rstudio.com/"
-errorHandlerType="1"
-uiPrefs="{\n    \"export_plot_options\" : {\n        \"copyAsMetafile\" : false,\n        \"format\" : \"jpeg\",\n        \"height\" : 600,\n        \"keepRatio\" : false,\n        \"viewAfterSave\" : true,\n        \"width\" : 800\n    }\n}"

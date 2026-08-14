@@ -1,1 +1,0 @@
-[[Bannock County]] ([[Pocatello]])  

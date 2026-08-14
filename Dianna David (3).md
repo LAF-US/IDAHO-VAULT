@@ -1,3 +1,0 @@
----
----
-former Treasurer candidate

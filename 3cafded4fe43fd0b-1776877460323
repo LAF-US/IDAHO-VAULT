@@ -1,8 +1,0 @@
-param(
-    [Parameter(ValueFromRemainingArguments = $true)]
-    [string[]]$Args
-)
-
-$script = Join-Path $PSScriptRoot "resolve_openrouter_secret.py"
-python $script @Args
-exit $LASTEXITCODE

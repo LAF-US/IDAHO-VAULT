@@ -1,1 +1,0 @@
-[[Camas County]] ([[Fairfield]])  

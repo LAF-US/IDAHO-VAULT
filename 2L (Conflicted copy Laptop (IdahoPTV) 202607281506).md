@@ -1,1 +1,0 @@
-[[Lemhi County]] ([[Salmon]])  

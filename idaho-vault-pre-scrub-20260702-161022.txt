@@ -1,4 +1,0 @@
-branch: logan/obsidian
-pre-scrub HEAD: 5f65ae76e13319e2210332bd4c3e088d7ad7fb54
-origin: https://github.com/LAF-US/IDAHO-VAULT.git
-recovery: origin retains un-rewritten history until force-push

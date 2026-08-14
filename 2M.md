@@ -1,1 +1,0 @@
-[[Minidoka County]] ([[Rupert]])  

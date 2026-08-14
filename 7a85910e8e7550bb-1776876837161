@@ -1,5 +1,0 @@
-@echo off
-setlocal
-
-set "SCRIPT=%~dp0..\scripts\Start-CodexOpenRouter.ps1"
-powershell -ExecutionPolicy Bypass -File "%SCRIPT%" %*

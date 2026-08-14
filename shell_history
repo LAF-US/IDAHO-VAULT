@@ -1,8 +1,0 @@
-gcloud -h
-Hello, Gemini.
-cd ..
-ls
-cd ~/
-afplay /tmp/jabberwocky.wav
-open ~/tmp/jabberwocky.wav
-afplay /tmp/jabberwocky_fixed.wav

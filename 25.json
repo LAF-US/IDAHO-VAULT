@@ -1,8 +1,0 @@
-{
-  "id": "25",
-  "subject": "[L2·now] Restore OpenClaw model route — OpenRouter 402, credits drained",
-  "description": "DONE 2026-07-06 (session 4f03d270): checkpoint met — HERMES_RESPONDS_OK (hermes -z) + OPENCLAW_RESPONDS_OK (openclaw agent, fresh session, status:ok, answered by primary mistral-medium-3-5 on remaining ~$0.10). Route hardened per ABCD/BEEFSTACK: Direct-Mistral escape bucket wired (models.providers.mistral + SecretRef→mistral_resolver exec→.op/mistral.env 0600; .op/*.env gitignore belt added; resolver clone at vault root), chain now 6 rungs with mistral/mistral-small-latest first fallback + llama-3.3:free tail (free rungs mostly 404 on account data-policy guardrails — NOT loosened). Caveats: (1) plugin session agent:main:main still pinned to openrouter/anthropic/claude-haiku-4.5 — Logan must /model reset or /new (pins bypass the chain); (2) mistral rung armed but not yet fired in-gateway; (3) paid pool at ~$0.10 — top-up remains Logan's optional lever. Backup: openclaw.json.bak.premistralbucket.20260706-231219. Vault artifacts for Logan's commit: .gitignore (M), resolve_mistral_secret.py (new). Test session checkpoint-proof-20260706 created.",
-  "status": "completed",
-  "blocks": [],
-  "blockedBy": []
-}

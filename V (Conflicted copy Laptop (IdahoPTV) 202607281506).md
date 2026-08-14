@@ -1,1 +1,0 @@
-[[Valley County]] ([[Cascade]])  

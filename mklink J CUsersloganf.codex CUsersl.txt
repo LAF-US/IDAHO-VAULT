@@ -1,1 +1,0 @@
-mklink /J "C:\Users\loganf\.codex" "C:\Users\loganf\Documents\IDAHO-VAULT\.codex"

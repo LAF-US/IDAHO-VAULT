@@ -1,8 +1,0 @@
-{
-  "model": "grok-4.1",
-  "status": "running",
-  "log": {
-    "path": "models/grok-4.1.log"
-  },
-  "startedAt": "2026-04-29T05:40:52.901Z"
-}

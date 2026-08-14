@@ -1,1 +1,0 @@
-[[Custer County]] ([[Challis]])  

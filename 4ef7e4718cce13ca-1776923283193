@@ -1,3 +1,0 @@
-name: "IDAHO-VAULT CodeQL Config"
-paths-ignore:
-  - .antigravity/extensions/**

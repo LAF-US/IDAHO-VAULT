@@ -1,1 +1,0 @@
-[[Bonner County]] ([[Sandpoint]])  

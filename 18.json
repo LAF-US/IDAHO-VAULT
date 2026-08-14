@@ -1,9 +1,0 @@
-{
-  "id": "18",
-  "subject": "[L1·closeout] Delete stale console nodes + prove serve restart-persistence",
-  "description": "DONE: Logan deleted both stale console nodes (logans-macbook-pro, logans-macbook-pro-1), freeing the clean name. Serve-persistence proven the hard way — the laptop crashed ~03:00 and tailscaled + serve + gateway all auto-recovered with the SAME file-based identity (node key stable, no keychain churn). Node settled as logans-macbook-pro; logans-mbp is dead.",
-  "activeForm": "Closing out Tailscale L1",
-  "status": "completed",
-  "blocks": [],
-  "blockedBy": []
-}

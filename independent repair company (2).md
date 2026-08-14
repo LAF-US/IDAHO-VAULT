@@ -1,1 +1,0 @@
-repair shop not authorized by original equipment manufacturers 

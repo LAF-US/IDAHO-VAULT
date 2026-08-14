@@ -1,3 +1,0 @@
----
----
-military installation in Elmore

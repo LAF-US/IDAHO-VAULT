@@ -1,1 +1,0 @@
-[[Bonneville County]] ([[Idaho Falls]])  

@@ -1,8 +1,0 @@
----
-authority: LOGAN
-related:
-- DEVELOPMENT
-- RESEARCH
----
-
-RESEARCH & DEVELOPMENT

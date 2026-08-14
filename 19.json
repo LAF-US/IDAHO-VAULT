@@ -1,9 +1,0 @@
-{
-  "id": "19",
-  "subject": "[spine] Migrate gateway.auth.token → SecretRef",
-  "description": "The last doctor security warning: plaintext gateway.auth.token in openclaw.json. openclaw secrets configure (interactive, Logan-driven; cancelled once already). Cross-cutting: the token value is shared by VisionClaw, obsidianclaw, Android app — migrating storage doesn't change the resolved value clients use.",
-  "activeForm": "Migrating gateway token to SecretRef",
-  "status": "pending",
-  "blocks": [],
-  "blockedBy": []
-}

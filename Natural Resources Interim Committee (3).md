@@ -1,3 +1,0 @@
----
----
-interim committee

@@ -1,9 +1,0 @@
-{
-  "id": "16",
-  "subject": "[L2·now] Connect the Obsidian OpenClaw plugin (folder obsidianclaw)",
-  "description": "DONE — live message send + agent response confirmed inside Obsidian GUI. Four stacked blockers resolved in order: (1) reachability (Tailscale serve + wss + /etc/hosts); (2) Ed25519 device identity (Obsidian installer update Chrome 124→142); (3) ORIGIN rejection — app://obsidian.md opaque/null origin: fixed via `openclaw config set gateway.controlUi.allowedOrigins` (+app://obsidian.md, kept 2 LAN origins) AND raw-origin fallback injected into ~/node_modules/openclaw/dist/auth-CFLQRf7X.js (backups: openclaw.json.bak-origin-*, auth-*.obsidianclaw.bak); (4) token retrieved by Logan via `openclaw config get gateway.auth.token` + wss://logans-macbook-pro.tail7453f8.ts.net. Active plugin folder = openclaw/ (renamed from obsidianclaw/ on update). OPEN CAVEATS: (a) code patch #3 wiped by `openclaw update` — re-apply 4 lines after updates (durable local re-patch script offered, not yet created); (b) old obsidianclaw/ folder is defunct + holds a stale plaintext token in data.json — cleanup offered; (c) origin bug is a real upstream-report candidate (OpenClaw rejects opaque app:// origins; oscarhenrycollins/obsidianclaw ships the patch + tracks upstream).",
-  "activeForm": "Configuring obsidianclaw",
-  "status": "completed",
-  "blocks": [],
-  "blockedBy": []
-}

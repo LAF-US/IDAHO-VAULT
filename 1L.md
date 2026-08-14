@@ -1,1 +1,0 @@
-[[Latah County]] ([[Moscow]])  

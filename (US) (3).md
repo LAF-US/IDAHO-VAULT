@@ -1,9 +1,0 @@
----
-authority: LOGAN
-related:
-- HORIZON
-- PROJECT
-- UNIFIED
----
-
-PROJECT HORIZON : UNIFIED SWARM

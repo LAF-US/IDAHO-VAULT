@@ -1,9 +1,0 @@
-{
-  "id": "17",
-  "subject": "[L2·now] Task IV — pair Pixel/VisionClaw against serve endpoint",
-  "description": "Pair Pixel/VisionClaw against wss://logans-mbp.tail7453f8.ts.net (Serve endpoint). Unblocked since L0/L1 closed 07-02 but not actively worked — reset from stale in_progress 2026-07-06. Needs Secrets.kt final values + gateway token (Logan retrieves), then rebuild + pair.",
-  "activeForm": "Pairing Pixel/VisionClaw",
-  "status": "pending",
-  "blocks": [],
-  "blockedBy": []
-}

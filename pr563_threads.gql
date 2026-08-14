@@ -1,1 +1,0 @@
-{ repository(owner: "LAF-US", name: "IDAHO-VAULT") { pullRequest(number: 563) { reviewThreads(first: 250) { nodes { isResolved id path line comments(last:1) { nodes { databaseId body author { login } } } } } } }

@@ -1,1 +1,0 @@
-[[Clark County]] ([[Dubois]])  

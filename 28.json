@@ -1,8 +1,0 @@
-{
-  "id": "28",
-  "subject": "[L2·now] reply-session-init conflict recurred on agent:main:main — investigate root trigger",
-  "description": "Recurred 2026-07-07 20:42:53/57 (same signature as 07-03): \"Error: reply session initialization conflicted for agent:main:main\" — two fast failures (28ms/42ms, not a hang) via webchat, right after /reset created session 47625175-d520-4513-9332-e79e144f97c9. Preceding session (cedfff18, answering PING/HEARTBEAT_OK cleanly minutes earlier) may have left a stale write-lock the new session's compare-and-swap can never clear — theory, not confirmed. FIX APPLIED: gateway restart (the only lever — no scoped unlock/cancel command exists in openclaw CLI: checked sessions/agent/root --help, none). CORRECTION FOR THE RECORD: /tmp/openclaw/openclaw-<date>.log is NOT mere CLI noise as I noted in #27 — it carries real structured ERROR-level entries (subsystem=diagnostic) that gateway.log misses entirely, because the launchd plist redirects StandardErrorPath to /dev/null and this error class apparently logs via stderr, not the file logger. Cross-check BOTH logs on any future \"silent failure\" report. OPEN: does this recur again under normal use (not just /reset-adjacent), and is /reset specifically the trigger? Needs a live user-side repro attempt to confirm the /reset correlation before filing upstream.",
-  "status": "pending",
-  "blocks": [],
-  "blockedBy": []
-}

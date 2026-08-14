@@ -1,4 +1,0 @@
----
-title: _TEMPLATE_NOTE___MONTHLY
-template: _TEMPLATE_NOTE___MONTHLY
----

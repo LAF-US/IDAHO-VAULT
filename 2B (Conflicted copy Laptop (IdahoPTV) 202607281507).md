@@ -1,1 +1,0 @@
-[[Bear Lake County]] ([[Paris]])  

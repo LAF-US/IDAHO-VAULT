@@ -1,2 +1,0 @@
-user_guid:DDA757E0625402C70A495C8C@e4414b67625402c6495ffe.e
-state:OptedIn

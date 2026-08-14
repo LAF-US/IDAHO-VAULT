@@ -1,4 +1,0 @@
-{
-  "//": "The scripts in .github/scripts are standalone modules, not a package: tests reach them by inserting that directory on sys.path at import time. Pyright cannot follow that dynamic insertion, so it is declared here instead — otherwise every sibling import in tests/ resolves as missing and type inference collapses across the suite.",
-  "extraPaths": [".github/scripts", ".github/swarm/tools"]
-}
