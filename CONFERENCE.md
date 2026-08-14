@@ -13,6 +13,7 @@ related:
   - LEVELSET
   - CONFERENCE-v1.0-2026-04-27
 ---
+[[C]][[O]][[N]][[F]][[E]][[R]][[E]][[N]][[C]][[E]]
 
 # PROTOCOL — CONFERENCE
 
