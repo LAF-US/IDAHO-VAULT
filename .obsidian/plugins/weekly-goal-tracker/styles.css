@@ -1,0 +1,13 @@
+.weeklyStatusBarButton {
+    padding : 0px 3px;
+    margin : 0px 3px;
+}
+
+.dailyStatusBarButton {
+    padding : 0px 3px;
+    margin : 0px 3px;
+}
+
+.container {
+    border-width: 5px;
+}

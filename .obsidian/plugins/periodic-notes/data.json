@@ -4,31 +4,31 @@
   "hasMigratedWeeklyNoteSettings": false,
   "daily": {
     "format": "",
-    "template": "!/DAILY_NOTE_TEMPLATE.md",
+    "template": "!/_TEMPLATE_NOTE_____DAILY.md",
     "folder": "",
     "enabled": true
   },
   "weekly": {
     "format": "",
-    "template": "!/WEEKLY_NOTE_TEMPLATE.md",
+    "template": "!/!/_TEMPLATE_NOTE____WEEKLY.md",
     "folder": "",
     "enabled": true
   },
   "monthly": {
     "format": "",
-    "template": "!/MONTHLY_NOTE_TEMPLATE.md",
+    "template": "!/!/_TEMPLATE_NOTE___MONTHLY.md",
     "folder": "",
     "enabled": true
   },
   "quarterly": {
     "format": "",
-    "template": "!/QUARTERLY_NOTE_TEMPLATE.md",
+    "template": "!/!/_TEMPLATE_NOTE__QUARTERLY.md",
     "folder": "",
     "enabled": true
   },
   "yearly": {
     "format": "",
-    "template": "!/YEARLY_NOTE_TEMPLATE.md",
+    "template": "!/!/_TEMPLATE_NOTE_YEARLY.md",
     "folder": "",
     "enabled": true
   }
