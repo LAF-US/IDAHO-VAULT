@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "821ee6d7cef453b9",
+        "id": "f1f0152388aa9816",
         "type": "tabs",
         "children": [
           {
-            "id": "339c2ba8b5ee82e7",
+            "id": "2a0c766abeb304d6",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -156,7 +156,6 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2026-08-14.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -186,34 +185,27 @@
       "random-note:Open random note": true,
       "daily-notes:Open today's daily note": true,
       "publish:Publish changes...": true,
-      "audio-recorder:Start/stop recording": false,
-      "periodic-notes:Open today": false,
-      "tasknotes:Open mini calendar view": false,
-      "tasknotes:Open calendar view": false,
-      "tasknotes:Open tasks view": false,
-      "tasknotes:Open agenda view": false,
-      "tasknotes:Open Kanban board": false,
-      "tasknotes:Open Pomodoro timer": false,
-      "tasknotes:Open Pomodoro statistics": false,
-      "tasknotes:Create new task": false
+      "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "d2f54bd4617e6d08",
+  "active": "2a0c766abeb304d6",
   "lastOpenFiles": [
+    "2026-07-18.md",
+    "DRAFT.md",
+    "flow-focus-data/focus.md",
+    "flow-focus-data",
+    "2026-08-14.md",
+    "node_modules/prettier/internal",
+    "node_modules/prettier/plugins",
+    "node_modules/prettier/bin",
+    "node_modules/prettier",
+    "node_modules",
     "2026/08",
     "2026/07",
     "2026/06",
     "2026/05",
-    "2026/04",
-    "2026/03",
-    "2026/02",
-    "2026/01",
-    "2026",
     "TaskNotes/Start Here.md",
-    "TaskNotes/Views/relationships.base",
-    "TaskNotes/Views/pomodoro-stats.base",
     "2026/01/02 -.md",
-    "2026-08-14.md",
     "Variables.md",
     "2026-08-13.md",
     "11__src_2026__2d32eff7.md",
@@ -234,8 +226,6 @@
     "581 (3).md",
     "582 (3).md",
     "583 (3).md",
-    "584 (3).md",
-    "585 (3).md",
     "be1a7dc1-1214-4496-80cc-26dd6a0dd2cfOriginal.jpg",
     "5e73ef9c-88fb-447d-9e34-5b66c7a8a5ccOriginal.jpg",
     "48297732-5381-43bc-a1fb-5893d9f0fa2fOriginal.jpg",
