@@ -43,4 +43,4 @@ Build Boise Display Ad 3 (1).png
 
 Franklin Sensors President David Dorrough said the company has not decided what it will do with its current building on the north side of Chinden after it moves into the new one.
 
-<iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=REDACTED_GOOGLE_API_KEY&amp;zoom=15&amp;maptype=roadmap&amp;q=43.662078%2C+-116.471805+" title="Google map of 43.662078, -116.471805 "></iframe>
+<iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&amp;zoom=15&amp;maptype=roadmap&amp;q=43.662078%2C+-116.471805+" title="Google map of 43.662078, -116.471805 "></iframe>

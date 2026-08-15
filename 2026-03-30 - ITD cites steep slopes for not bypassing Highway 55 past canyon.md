@@ -27,7 +27,7 @@ Since 1974, ITD has earmarked this section of roadway for improvements. It langu
 
 ITD began an analysis in 2000 that identified 25 alternatives for making the highway safer. This list was eventually narrowed to 11 ideas, including pitches to widen Highway 55 at different speeds, rebuild the historic Rainbow Bridge, and construct routes bypassing the canyon to the east or west. It was then narrowed to eight possible routes, including an option to maintain the status quo.
 
-<iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=REDACTED_GOOGLE_API_KEY&amp;zoom=11&amp;maptype=roadmap&amp;q=Rainbow+Bridge%2C+Idaho" title="Google map of Rainbow Bridge, Idaho"></iframe>
+<iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&amp;zoom=11&amp;maptype=roadmap&amp;q=Rainbow+Bridge%2C+Idaho" title="Google map of Rainbow Bridge, Idaho"></iframe>
 
 ITD studied the problem for eight years before deciding to improve the existing highway rather than reroute, according to one of multiple study reports obtained by Valley Lookout. ITD arrived at this conclusion and stuck to it for a number of reasons, including the steep grades of the Forest Service roads through mountains outside of the canyon, sensitive environmental areas, and buried archeological sites from Indigenous people pre-dating western settlers arriving in the area.
 

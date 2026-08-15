@@ -67,4 +67,4 @@ But building a signal proved difficult due to a need for the landowner to acquir
 
 Weather with Sarah - Idaho Power
 
-<iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=REDACTED_GOOGLE_API_KEY&amp;zoom=15&amp;maptype=roadmap&amp;q=9474+W.+State+St.%2C+Boise" title="Google map of 9474 W. State St., Boise"></iframe>
+<iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&amp;zoom=15&amp;maptype=roadmap&amp;q=9474+W.+State+St.%2C+Boise" title="Google map of 9474 W. State St., Boise"></iframe>

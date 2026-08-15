@@ -63,4 +63,4 @@ City of McCall - Visiting? 2:1
 
 The Scott family purchased a majority ownership share of Shore Lodge in 2008. The lodge on the shores of Payette Lake was known for a time as Whitetail Lodge after ownership by San Diego developer Doug Manchester. The Scott family returned the hotel to its historic Shore Lodge name and went about a multi-year project to update the property. Alscott also owns the nearby Whitetail Golf Club and housing development.
 
-<iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=REDACTED_GOOGLE_API_KEY&amp;zoom=12&amp;maptype=satellite&amp;q=2306+Eastside+Drive%2C+McCall%2C+Idaho" title="Google map of 2306 Eastside Drive, McCall, Idaho"></iframe>
+<iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&amp;zoom=12&amp;maptype=satellite&amp;q=2306+Eastside+Drive%2C+McCall%2C+Idaho" title="Google map of 2306 Eastside Drive, McCall, Idaho"></iframe>

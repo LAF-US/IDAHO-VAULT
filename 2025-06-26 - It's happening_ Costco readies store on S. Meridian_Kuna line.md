@@ -45,4 +45,4 @@ This would be the fourth Costco in the Treasure Valley, with others located in N
 
 Freeform - Invested in Boise - 2:1
 
-<iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=REDACTED_GOOGLE_API_KEY&amp;zoom=13&amp;maptype=roadmap&amp;q=++43%C2%B032%2744.8%22N+116%C2%B023%2730.7%22W" title="Google map of   43°32'44.8&quot;N 116°23'30.7&quot;W"></iframe>
+<iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&amp;zoom=13&amp;maptype=roadmap&amp;q=++43%C2%B032%2744.8%22N+116%C2%B023%2730.7%22W" title="Google map of   43°32'44.8&quot;N 116°23'30.7&quot;W"></iframe>

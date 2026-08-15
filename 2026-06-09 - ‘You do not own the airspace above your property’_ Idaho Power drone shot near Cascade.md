@@ -61,4 +61,4 @@ Berg admitted it is “hard to identify” who drones belong to while they’re 
 
 “When Idaho Power employees or contractors operate drones, the pilots will be near the drone,” Berg said. “Contractors’ vehicles are marked with graphics identifying them as Idaho Power contractors. The pilots wear safety vests and carry letters from Idaho Power.”
 
-<iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=REDACTED_GOOGLE_API_KEY&amp;zoom=12&amp;maptype=roadmap&amp;q=Dorian+Drive%2C+Cascade%2C+Idaho" title="Google map of Dorian Drive, Cascade, Idaho"></iframe>
+<iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&amp;zoom=12&amp;maptype=roadmap&amp;q=Dorian+Drive%2C+Cascade%2C+Idaho" title="Google map of Dorian Drive, Cascade, Idaho"></iframe>

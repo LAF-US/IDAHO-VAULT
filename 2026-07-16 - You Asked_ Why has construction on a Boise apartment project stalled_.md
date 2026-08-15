@@ -45,4 +45,4 @@ One reader thought the project was listed for sale due to a sign posted on the p
 
 Kimball, who developed the Aspen Lofts in Downtown Boise nearly 20 years ago, [told BoiseDev in 2024](https://boisedev.com/news/2024/11/04/787-parkcenter-boise-kimball/) that he plans to live on the property and keep the project long-term.
 
-<iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=REDACTED_GOOGLE_API_KEY&amp;zoom=15&amp;maptype=roadmap&amp;q=787+E.+ParkCenter+Blvd.%2C+Boise%2C+ID" title="Google map of 787 E. ParkCenter Blvd., Boise, ID"></iframe>
+<iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&amp;zoom=15&amp;maptype=roadmap&amp;q=787+E.+ParkCenter+Blvd.%2C+Boise%2C+ID" title="Google map of 787 E. ParkCenter Blvd., Boise, ID"></iframe>

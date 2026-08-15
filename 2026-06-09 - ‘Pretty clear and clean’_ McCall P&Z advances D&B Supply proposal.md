@@ -83,4 +83,4 @@ St. Luke's Health Plan - 2026 2:1
 
 The city’s limitation on formula businesses excludes gas stations and grocery stores.
 
-<iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=REDACTED_GOOGLE_API_KEY&amp;zoom=14&amp;maptype=roadmap&amp;q=411+E.+Deinhard+Ln.+McCall%2C+Idaho" title="Google map of 411 E. Deinhard Ln. McCall, Idaho"></iframe>
+<iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&amp;zoom=14&amp;maptype=roadmap&amp;q=411+E.+Deinhard+Ln.+McCall%2C+Idaho" title="Google map of 411 E. Deinhard Ln. McCall, Idaho"></iframe>

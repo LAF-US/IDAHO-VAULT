@@ -113,6 +113,6 @@ It’s unclear what role urban renewal will play in the project. Earlier this ye
 
 Ford-Squyres said “discussion is still ongoing at this time, and MDC, nor the city, has made any formal determinations related to that district.”
 
-<iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=REDACTED_GOOGLE_API_KEY&amp;zoom=16&amp;maptype=roadmap&amp;q=632+N+Main+St%2C+Meridian%2C+Idaho%2C+USA" title="Google map of 632 N Main St, Meridian, Idaho, USA"></iframe>
+<iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&amp;zoom=16&amp;maptype=roadmap&amp;q=632+N+Main+St%2C+Meridian%2C+Idaho%2C+USA" title="Google map of 632 N Main St, Meridian, Idaho, USA"></iframe>
 
 ---

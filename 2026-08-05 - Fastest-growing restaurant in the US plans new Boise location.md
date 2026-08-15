@@ -39,4 +39,4 @@ This will be Wingstop’s second Boise location, with the first opening on Milwa
 
 [QSR Magazine reported](https://www.qsrmagazine.com/story/wingstop-was-the-fastest-growing-restaurant-in-america-last-year/) that Wingstop opened more locations in the U.S. last year than any other chain, with 382 sites welcoming wing lovers in 2025, beating out Chipotle’s 294 new restaurants. Wingstop now has more than 3,000 locations.
 
-<iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=REDACTED_GOOGLE_API_KEY&amp;zoom=15&amp;maptype=roadmap&amp;q=1129+S.+Broadway+Ave.%2C+Boise%2C+ID" title="Google map of 1129 S. Broadway Ave., Boise, ID"></iframe>
+<iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&amp;zoom=15&amp;maptype=roadmap&amp;q=1129+S.+Broadway+Ave.%2C+Boise%2C+ID" title="Google map of 1129 S. Broadway Ave., Boise, ID"></iframe>

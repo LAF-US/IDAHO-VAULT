@@ -39,4 +39,4 @@ The announcement comes as Albertsons shared plans earlier this year to add [two 
 
 Meanwhile, to the west, another grocery store is also in the works at Karcher Rd. and Indiana Ave. Colliers Associate Logan Wheeler told BoiseDev that plans are still moving along there with an unnamed grocer. While contract signing could come in the next month, the exact timing on that is not set in stone, he said.
 
-<iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=REDACTED_GOOGLE_API_KEY&amp;zoom=15&amp;maptype=roadmap&amp;q=43%C2%B036%2720.5%22N+116%C2%B039%2717.1%22W" title="Google map of 43°36'20.5&quot;N 116°39'17.1&quot;W"></iframe>
+<iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&amp;zoom=15&amp;maptype=roadmap&amp;q=43%C2%B036%2720.5%22N+116%C2%B039%2717.1%22W" title="Google map of 43°36'20.5&quot;N 116°39'17.1&quot;W"></iframe>

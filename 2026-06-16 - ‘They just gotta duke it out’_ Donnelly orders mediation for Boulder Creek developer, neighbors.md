@@ -61,7 +61,7 @@ The east-west portion of the rebuilt road would be paved and upgraded with curb,
 
 The north-south portion of Eld Lane would also be rebuilt, but with a gravel surface. All the roadwork, including leveling out the intersection of Eld Lane with Idaho 55, would be funded by Critchfield and Ortega.
 
-<iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=REDACTED_GOOGLE_API_KEY&amp;zoom=17&amp;maptype=roadmap&amp;q=203+Eld+Ln." title="Google map of 203 Eld Ln."></iframe>
+<iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&amp;zoom=17&amp;maptype=roadmap&amp;q=203+Eld+Ln." title="Google map of 203 Eld Ln."></iframe>
 
 Neighbors, however, remained unconvinced that the road improvements would soften the impacts of 741 daily vehicle trips that Boulder Creek would add to Eld Lane, according to a traffic study.
 

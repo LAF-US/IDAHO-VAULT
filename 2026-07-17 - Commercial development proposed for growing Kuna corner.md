@@ -35,4 +35,4 @@ The approximately 20-acre parcel on the corner of Linder Rd. and Columbia Rd. is
 
 The application is set to go before Kuna’s city council on August 18th. The council will make the ultimate decision on Northlake’s future. If the project’s annexation application does get approval, it will have to go through a separate design review process with the city. Black said this would happen once the developer has tenants for the property.
 
-<iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=REDACTED_GOOGLE_API_KEY&amp;zoom=15&amp;maptype=roadmap&amp;q=43.533010%2C+-116.416804+" title="Google map of 43.533010, -116.416804 "></iframe>
+<iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&amp;zoom=15&amp;maptype=roadmap&amp;q=43.533010%2C+-116.416804+" title="Google map of 43.533010, -116.416804 "></iframe>

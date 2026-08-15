@@ -33,4 +33,4 @@ In addition to renting the space, creators have access to on-site gear rentals a
 
 For more information, visit [Visionkit Studio’s website](http://visionkitstudio.com/) or follow @visionkitstudio on Instagram and LinkedIn.
 
-<iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=REDACTED_GOOGLE_API_KEY&amp;zoom=15&amp;maptype=roadmap&amp;q=111+W.+34th+St.+Garden+City%2C+ID" title="Google map of 111 W. 34th St. Garden City, ID"></iframe>
+<iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&amp;zoom=15&amp;maptype=roadmap&amp;q=111+W.+34th+St.+Garden+City%2C+ID" title="Google map of 111 W. 34th St. Garden City, ID"></iframe>

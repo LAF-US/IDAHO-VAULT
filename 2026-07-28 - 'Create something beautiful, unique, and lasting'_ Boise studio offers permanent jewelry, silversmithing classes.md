@@ -41,4 +41,4 @@ To book a workshop, event, or studio visit, visit SLVR 72’s website.
 
 Freeform - Invested in Boise - 2:1
 
-<iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=REDACTED_GOOGLE_API_KEY&amp;zoom=15&amp;maptype=roadmap&amp;q=3910+W.+Hill+Road+Boise%2C+ID+83703" title="Google map of 3910 W. Hill Road Boise, ID 83703"></iframe>
+<iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&amp;zoom=15&amp;maptype=roadmap&amp;q=3910+W.+Hill+Road+Boise%2C+ID+83703" title="Google map of 3910 W. Hill Road Boise, ID 83703"></iframe>

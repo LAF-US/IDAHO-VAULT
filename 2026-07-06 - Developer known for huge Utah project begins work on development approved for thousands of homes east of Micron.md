@@ -77,4 +77,4 @@ In addition to multiple neighborhoods being broken up over 14 planning areas, th
 
 Crowder said more detailed site plans will be finalized in the coming months.
 
-<iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=REDACTED_GOOGLE_API_KEY&amp;zoom=10&amp;maptype=roadmap&amp;q=%7B43.380897%2C-115.9%7D" title="Google map of {43.380897,-115.9}"></iframe>
+<iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&amp;zoom=10&amp;maptype=roadmap&amp;q=%7B43.380897%2C-115.9%7D" title="Google map of {43.380897,-115.9}"></iframe>

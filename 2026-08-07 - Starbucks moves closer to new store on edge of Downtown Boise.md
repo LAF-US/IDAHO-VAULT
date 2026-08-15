@@ -33,4 +33,4 @@ Valley Lookout house - generic
 
 The location will give Starbucks a new location on the edge of the Downtown Boise core. The chain also operates a store at 17th St. and State St. on the border of downtown and the North End, but does not have a full cafe in the main part of the downtown area. A former Starbucks store at Idaho St. and Capitol Blvd was open in the early 2000s, but later closed. Starbucks coffee items are served from a kiosk at the AC Hotel by Marriott on Grove St. under a license agreement.
 
-<iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=REDACTED_GOOGLE_API_KEY&amp;zoom=16&amp;maptype=roadmap&amp;q=226+S.+Broadway+Ave.%2C+Boise%2C+ID" title="Google map of 226 S. Broadway Ave., Boise, ID"></iframe>
+<iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&amp;zoom=16&amp;maptype=roadmap&amp;q=226+S.+Broadway+Ave.%2C+Boise%2C+ID" title="Google map of 226 S. Broadway Ave., Boise, ID"></iframe>

@@ -51,6 +51,6 @@ One of the pads on the site plan shows a large, two-lane drive-thru, but Mansfie
 
 Because a development agreement already exists on the site, this site plan would not have to go through the City of Meridian’s planning and zoning process or city council approval should Hawkins finalize a deal with the interested business. All needed approvals for the site will be made at a city staff level.
 
-<iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=REDACTED_GOOGLE_API_KEY&amp;zoom=15&amp;maptype=roadmap&amp;q=160+W+Waltman+Ln+Meridian%2C+ID" title="Google map of 160 W Waltman Ln Meridian, ID"></iframe>
+<iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&amp;zoom=15&amp;maptype=roadmap&amp;q=160+W+Waltman+Ln+Meridian%2C+ID" title="Google map of 160 W Waltman Ln Meridian, ID"></iframe>
 
 ---

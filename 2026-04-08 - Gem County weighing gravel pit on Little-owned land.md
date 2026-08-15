@@ -71,4 +71,4 @@ Twilight Crit 2026 - 2:1
 
 “I have nothing against corporate growth or someone being able to operate a business, but not at the cost of the community,” nearby resident David Moody testified, likening the gravel pits near Emmett to craters you’d see in a “war zone.”
 
-<iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=REDACTED_GOOGLE_API_KEY&amp;zoom=15&amp;maptype=roadmap&amp;q=2595+Sales+Yard+Road" title="Google map of 2595 Sales Yard Road"></iframe>
+<iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&amp;zoom=15&amp;maptype=roadmap&amp;q=2595+Sales+Yard+Road" title="Google map of 2595 Sales Yard Road"></iframe>

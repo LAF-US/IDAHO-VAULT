@@ -43,4 +43,4 @@ Build Idaho - 2:1
 
 The area Storyrock is planned for has several other neighborhoods — both ones built out and planned — like Brundge Estates, [Shafer View Terrace](https://boisedev.com/news/2021/03/10/shafer-view-terrace/), Patriot Ridge Estates, Jessica Condos, [Briar Ridge](https://boisedev.com/news/2021/07/13/briar-ridge/), and [Syringa Crossing.](https://boisedev.com/news/2026/06/17/a-developer-made-changes-to-a-proposed-400-home-mixed-use-project-meridian-gives-commission-another-vote-on-it/)
 
-<iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=REDACTED_GOOGLE_API_KEY&amp;zoom=15&amp;maptype=roadmap&amp;q=453+W+Amity+Rd.%2C+Meridian%2C+ID" title="Google map of 453 W Amity Rd., Meridian, ID"></iframe>
+<iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&amp;zoom=15&amp;maptype=roadmap&amp;q=453+W+Amity+Rd.%2C+Meridian%2C+ID" title="Google map of 453 W Amity Rd., Meridian, ID"></iframe>

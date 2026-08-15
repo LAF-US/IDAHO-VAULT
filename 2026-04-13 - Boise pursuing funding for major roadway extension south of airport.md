@@ -71,4 +71,4 @@ Watkins Carter - 2:1
 
 Some leaders present at the meeting said that the Idaho Transportation Department is exploring other ways to relieve congestion on I-84. As BoiseDev reported, the state is considering the possibility of [adding major perimeter roads, or beltways, to offset traffic on the interstate](https://boisedev.com/news/2025/06/04/treasure-valley-betway-routes-kuna-meridian-i-84-boise-highway-16/).
 
-<iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=REDACTED_GOOGLE_API_KEY&amp;zoom=12&amp;maptype=roadmap&amp;q=43.541860%2C+-116.254066" title="Google map of 43.541860, -116.254066"></iframe>
+<iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&amp;zoom=12&amp;maptype=roadmap&amp;q=43.541860%2C+-116.254066" title="Google map of 43.541860, -116.254066"></iframe>

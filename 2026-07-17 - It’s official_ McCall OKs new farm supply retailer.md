@@ -71,6 +71,6 @@ None of the businesses included in the analysis qualify as formula businesses, w
 
 The city’s limitation on formula businesses excludes gas stations and grocery stores.
 
-<iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=REDACTED_GOOGLE_API_KEY&amp;zoom=16&amp;maptype=satellite&amp;q=411+E.+Deinhard+Lane" title="Google map of 411 E. Deinhard Lane"></iframe>
+<iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&amp;zoom=16&amp;maptype=satellite&amp;q=411+E.+Deinhard+Lane" title="Google map of 411 E. Deinhard Lane"></iframe>
 
 #idaho

@@ -27,7 +27,7 @@ Before long, I began contemplating a reenactment of Limbert’s 1920 trek. It tu
 
 Our party met on a brisk and sunny April morning. Heading out into the unknown with Ted and me was Dan Buckley, Craters’ superintendent and our trip leader; Michael Mancuso, a Boise-based botanist; Brian Bean, owner of Lava Lake Lamb Ranch; and Allison Konkowski, a zoologist and Student Conservation Association volunteer.
 
-![](https://maps.googleapis.com/maps/api/staticmap?center=North+America&key=REDACTED_GOOGLE_API_KEY&maptype=roadmap&markers=color%3A0x00714A%7CCraters+of+the+Moon+National+Monument%2C+Arco%2C+ID+83213%2C+USA&size=200x200&zoom=1) 
+![](https://maps.googleapis.com/maps/api/staticmap?center=North+America&key=AIzaSyDO0gNvHmXVI4miwjVmjvewPjHO4Nwfruc&maptype=roadmap&markers=color%3A0x00714A%7CCraters+of+the+Moon+National+Monument%2C+Arco%2C+ID+83213%2C+USA&size=200x200&zoom=1) 
 
 April is the prime month to backpack into the wilderness sections of the park, because cooler days and freezing nights keep snow and ice in the deepest of cracks and caves—the only source of water available. But the winter had been unusually mild, and the April snowpack was meager. So before our departure, we dropped off water caches on two remote dirt roads we knew we would pass.
 

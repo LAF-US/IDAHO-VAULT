@@ -33,4 +33,4 @@ The new location is open seasonally from April through October, Monday through S
 
 ICCU - August 2026 - 2:1
 
-<iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=REDACTED_GOOGLE_API_KEY&amp;zoom=15&amp;maptype=roadmap&amp;q=4278+W+Old+Valley+Rd%2C+Eagle%2C+ID" title="Google map of 4278 W Old Valley Rd, Eagle, ID"></iframe>
+<iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&amp;zoom=15&amp;maptype=roadmap&amp;q=4278+W+Old+Valley+Rd%2C+Eagle%2C+ID" title="Google map of 4278 W Old Valley Rd, Eagle, ID"></iframe>
