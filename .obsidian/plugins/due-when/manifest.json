@@ -1,0 +1,14 @@
+{
+	"id": "due-when",
+	"name": "Due When",
+	"version": "1.0.8",
+	"minAppVersion": "0.15.0",
+	"description": "This adds shortcuts to insert due dates for end of this week or end of next week.",
+	"author": "Andy Baxter",
+	"authorUrl": "https://andybaxter.me",
+	"fundingUrl": {
+		"Buy me a coffee": "https://www.buymeacoffee.com/andybaxter",
+		"Ko-Fi": "https://ko-fi.com/andybaxter"
+	},
+	"isDesktopOnly": false
+}
