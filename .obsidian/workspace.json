@@ -37,7 +37,7 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "byModifiedTime",
-                "autoReveal": false,
+                "autoReveal": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
@@ -188,11 +188,11 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "2a0c766abeb304d6",
+  "active": "d2f54bd4617e6d08",
   "lastOpenFiles": [
     "2026-07-18.md",
     "DRAFT.md",
-    "flow-focus-data/focus.md",
+    "focus 1.md",
     "flow-focus-data",
     "2026-08-14.md",
     "node_modules/prettier/internal",
