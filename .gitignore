@@ -94,3 +94,5 @@ state_5.sqlite-wal
 /.ollama/models/blobs
 /.openclaw/state
 /.pi/agent/sessions
+/.openclaw/secrets
+/.openclaw/identity
