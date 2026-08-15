@@ -1,4 +1,0 @@
-__pycache__/obsidian_rest_api_client.cpython-312.pyc
-__pycache__/obsidian_rest_api_client.cpython-313.pyc
-__pycache__/sync_obsidian_plugin_registry.cpython-312.pyc
-__pycache__/sync_obsidian_plugin_registry.cpython-313.pyc
