@@ -1,4 +1,8 @@
 {
+  "name": "idaho-vault",
+  "version": "0.0.0",
+  "private": true,
+  "files": [],
   "scripts": {
     "format": "prettier --write package.json .github/workflows/*.yml .github/actions/**/*.yml",
     "format:check": "prettier --check package.json .github/workflows/*.yml .github/actions/**/*.yml"
