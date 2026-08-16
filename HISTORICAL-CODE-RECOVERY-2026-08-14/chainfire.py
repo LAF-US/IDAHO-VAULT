@@ -195,8 +195,8 @@ def process_file(filepath, vault_root, execute=False):
         # Skip 0-byte files.
         if filepath.stat().st_size == 0:
             return None
-    except OSError as e:
-        return {"error": str(e)}
+    except OSError as error:
+        return {"error": f"filesystem read failed ({type(error).__name__})"}
 
     try:
         with open(filepath, "r", encoding="utf-8") as f:
@@ -269,11 +269,13 @@ def process_file(filepath, vault_root, execute=False):
                 try:
                     os.close(descriptor)
                 except OSError:
+                    # Preserve the primary write failure if descriptor cleanup also fails.
                     pass
             if temporary_path is not None:
                 try:
                     os.unlink(temporary_path)
                 except OSError:
+                    # Preserve the primary write failure if temporary cleanup also fails.
                     pass
             return {"error": f"filesystem write failed ({type(error).__name__})"}
 
@@ -330,8 +332,18 @@ def main():
             skipped_excluded += 1
             continue
 
+        # A file may have been removed or become inaccessible after discovery.
+        try:
+            file_size = filepath.stat().st_size
+        except OSError as error:
+            errors.append({
+                "path": str(filepath),
+                "error": f"filesystem stat failed ({type(error).__name__})",
+            })
+            continue
+
         # Skip empty files
-        if filepath.stat().st_size == 0:
+        if file_size == 0:
             skipped_empty += 1
             continue
 
