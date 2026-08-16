@@ -27,12 +27,13 @@
 .openclaw/memory/main.sqlite
 .openclaw/openclaw.json*
 .openclaw/secrets/
+.vibe/logs/vibe.log
 .vscode/cli/*tunnel*.*
 .vscode-shared/sharedStorage/state.vscdb
 .vscode-shared/sharedStorage/state.vscdb.backup
 .zshrc
 adbkey*
-auth.json
+auth*.json
 credstore*
 honcho.json
 hostkeys*
