@@ -3,12 +3,9 @@
 # This deliberately uses read-only safety checks.  pre-commit.ci may report
 # findings, but it may not rewrite pull-request branches automatically.
 #
-# The existing root-level `-LAF.md` legacy path must not be passed as a hook
-# argument because Unix command parsers interpret a leading hyphen as an option.
-# This is an argument-compatibility boundary, not a secret allowlist; the
-# repository policy workflow still scans changed paths through its canonical
-# secret-pattern checker.
-exclude: ^-.*$
+# The upstream hook receives an explicit argument delimiter so every path,
+# including the existing root-level `-LAF.md`, is parsed as a filename rather
+# than as a command-line option.
 
 ci:
   autofix_prs: false
@@ -21,6 +18,7 @@ repos:
     rev: v6.0.0
     hooks:
       - id: check-merge-conflict
+        args: ["--"]
       - id: check-symlinks
       # The repository's canonical secret-pattern policy scans all changed
       # paths. This lightweight detector covers actual key-container files
