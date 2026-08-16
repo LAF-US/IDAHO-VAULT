@@ -44,16 +44,16 @@ jest.config.js
 babel.config.js
 
 # Environment
-**/.env
-**/.env.local
-**/.env.*.local
-**/.env.production
-**/.env.staging
-**/.env.development
-**/.env.test
-**/.env.backup
-**/.env.*
-**/.envrc
+.env
+.env.local
+.env.*.local
+.env.production
+.env.staging
+.env.development
+.env.test
+.env.backup
+.env.*
+.envrc
 
 # Git
 .git/
