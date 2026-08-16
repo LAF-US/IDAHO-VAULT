@@ -15,6 +15,7 @@ related:
   - REPORT
   - ARISE-v1.0-2026-04-27
 ---
+[[A]][[R]][[I]][[S]][[E]]
 
 # PROTOCOL — ARISE
 
