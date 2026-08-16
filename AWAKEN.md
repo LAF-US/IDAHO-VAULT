@@ -16,6 +16,7 @@ related:
   - REPORT
   - AWAKEN-v1.0-2026-04-27
 ---
+[[A]][[W]][[A]][[K]][[E]][[N]]
 
 # PROTOCOL — AWAKEN
 

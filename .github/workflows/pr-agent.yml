@@ -1,21 +1,32 @@
 name: PR-Agent
 
-# Self-hosted Qodo PR-Agent (OSS) — augments the hosted Qodo app (#675).
+# Self-hosted PR-Agent (OSS) — augments the hosted Qodo app (#675).
 # Describes/reviews PRs and answers slash-commands using the vault's OWN LLM key
 # (OpenRouter, fetched from 1Password at runtime). Review config lives in
 # `.pr_agent.toml`.
 #
+# Qodo donated PR-Agent to the community: the project now lives at
+# `the-pr-agent/pr-agent` (docs.pr-agent.ai), not `qodo-ai/pr-agent`. Qodo's
+# commercial line continued separately as Qodo 2.0, so the hosted app this
+# augments and the OSS action below are no longer the same codebase.
+#
 # ┌─ STATUS: SCAFFOLDING — inert (job SKIPPED) until the switch below is on ─Ŀ
 # │ 0. MASTER SWITCH: set repo variable PR_AGENT_ENABLED = 'true'. Until then  │
 # │    the job skips cleanly (no run, no red on other PRs). Flip LAST.         │
-# │ 1. Pin `qodo-ai/pr-agent` to a real release commit SHA. The repo requires │
-# │    full-length SHA pins, so the zero-SHA below is deliberately inert.      │
+# │ 1. DONE — pinned to v0.41.1 (743f52d8), resolved via `git ls-remote`.      │
+# │    Lightweight tag, so that SHA is the commit itself.                      │
 # │ 2. Set the OpenRouter 1Password ref (`OPENROUTER_API_KEY` op:// below) to  │
 # │    the real item, and confirm OP_SERVICE_ACCOUNT_TOKEN can read it.        │
 # │    (see `.op/openrouter.env.template`)                                     │
-# │ 3. Validate the PR-Agent env keys against the pinned version's docs — the  │
-# │    OpenRouter override keys below are the documented nested form but        │
-# │    should be confirmed against that release.                               │
+# │ 3. DONE — key form corrected against the pinned source. See the env block. │
+# │ 4. OPEN — the SHA pin does NOT pin the code that runs. That action's       │
+# │    action.yaml builds Dockerfile.github_action_dockerhub, which is         │
+# │    `FROM pragent/pr-agent:github_action` — a MUTABLE tag upstream can      │
+# │    repoint at any time, and check_action_pins.py only reads the `uses:`    │
+# │    line, never a nested image. Decide before step 0: accept it, or fork    │
+# │    the Dockerfile with the image pinned by digest. Digest as reviewed      │
+# │    on #960: sha256:b81235c3bddc551939a1feca8926f4b6e8abcec2ae5bf46204      │
+# │    24f8f56dd9cb93                                                          │
 # └───────────────────────────────────────────────────────────────────────────┘
 #
 # Augment, don't replace: this runs ALONGSIDE the hosted Qodo app. Once it is
@@ -40,15 +51,24 @@ jobs:
     # after the SHA pin + OpenRouter secret ref are in place, or this errors on
     # every PR repo-wide (the opencode.yml failure mode).
     #
-    # PR events run (reviewing bot-authored PRs is intentional per .pr_agent.toml
-    # `ignore_pr_author_bot = false`). Comment events run only on PR comments from
-    # a non-bot sender, so the agent's own replies can't loop.
+    # PR events run unrestricted (reviewing bot-authored PRs is intentional per
+    # .pr_agent.toml `ignore_pr_author_bot = false`).
+    #
+    # Comment events are gated harder. This is a PUBLIC repo, and a slash-command
+    # run spends the OpenRouter credential and posts with a write-capable token,
+    # so without an author gate any outside account could drain the key and speak
+    # as the bot by commenting `/review` (or editing a comment, since `edited`
+    # fires too). Trust set mirrors TRUSTED_COMMENT_ASSOCIATIONS in
+    # .github/scripts/review_feedback_loop.py, which defaults to the same three.
+    # The non-bot check stays so the agent's own replies can't loop.
     if: >
       vars.PR_AGENT_ENABLED == 'true' && (
         github.event_name == 'pull_request' ||
         (github.event_name == 'issue_comment' &&
          github.event.issue.pull_request != null &&
-         github.event.sender.type != 'Bot')
+         github.event.sender.type != 'Bot' &&
+         contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'),
+                  github.event.comment.author_association))
       )
     runs-on: ubuntu-latest
     env:
@@ -72,13 +92,30 @@ jobs:
 
       - name: Run PR-Agent
         if: env.OPENROUTER_API_KEY != ''
-        # TODO(pin): replace the zero-SHA with a real qodo-ai/pr-agent release SHA.
-        # Until then this step is inert (the repo blocks non-SHA-pinned actions).
-        uses: qodo-ai/pr-agent@0000000000000000000000000000000000000000 # TODO vX.Y.Z
+        # Docker action: action.yaml (not .yml) builds Dockerfile.github_action_dockerhub.
+        # The pin is maintained by Dependabot (github-actions ecosystem, daily,
+        # .github/dependabot.yml) — it reads the trailing `# v0.41.1` marker to
+        # track the version, so keep that comment in step with the SHA.
+        uses: the-pr-agent/pr-agent@f6af7d77554ff8d26adffded077e6461329e92fa # v0.42.0
         env:
-          # OpenRouter via PR-Agent's OpenAI-compatible client. PR-Agent maps a
-          # config `section.key` to env `SECTION__KEY` (double underscore).
-          OPENAI__KEY: ${{ env.OPENROUTER_API_KEY }}
+          # Job-level env reaches every step, and a Docker action receives the
+          # step's env inside the container — so without this the 1Password
+          # service-account token would be handed to third-party code that has
+          # no use for it. Blanked here only; the guard and load steps above
+          # still read the job-level value.
+          OP_SERVICE_ACCOUNT_TOKEN: ''
+          # `OPENAI_KEY` — single underscore. `run_action` in
+          # pr_agent/servers/github_action_runner.py:87 reads
+          # `OPENAI_KEY` or `OPENAI.KEY` and nothing else; the nested
+          # `OPENAI__KEY` form used here before is never checked there.
+          #
+          # WARNING: when the key is absent the runner prints "OPENAI_KEY not
+          # set" and CONTINUES (it allows non-OpenAI providers), so a wrong key
+          # name yields a silent no-op review rather than a failed check.
+          # Confirm the first enabled run actually posts before trusting it.
+          OPENAI_KEY: ${{ env.OPENROUTER_API_KEY }}
+          # No explicit handling in the runner; these reach Dynaconf's env
+          # loader, which maps `SECTION__KEY` to `section.key`.
           OPENAI__API_BASE: https://openrouter.ai/api/v1
           CONFIG__MODEL: openrouter/auto
           CONFIG__GIT_PROVIDER: github

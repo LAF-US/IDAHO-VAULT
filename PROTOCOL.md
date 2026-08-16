@@ -23,6 +23,7 @@ related:
 date created: Sunday, April 12th 2026, 4:00:33 am
 date modified: Sunday, April 12th 2026, 5:55:08 pm
 ---
+[[P]][[R]][[O]][[T]][[O]][[C]][[O]][[L]]
 
 > [!DANGER]
 > HERESY REVIEW PENDING - Faith of the Cloth

@@ -132,6 +132,11 @@ def label_create(
     return _run(argv, check=check)
 
 
+def label_delete(name: str, *, check: bool = True) -> GhResult:
+    """Delete a repo label. Verb and flags are literals; only the name varies."""
+    return _run(["gh", "label", "delete", _label(name), "--yes"], check=check)
+
+
 # --------------------------------------------------------------------------- #
 # Pull requests
 # --------------------------------------------------------------------------- #
