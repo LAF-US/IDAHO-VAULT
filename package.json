@@ -1,4 +1,5 @@
 {
+  "private": true,
   "scripts": {
     "format": "prettier --write package.json .github/workflows/*.yml .github/actions/**/*.yml",
     "format:check": "prettier --check package.json .github/workflows/*.yml .github/actions/**/*.yml"
