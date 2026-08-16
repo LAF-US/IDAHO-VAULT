@@ -205,15 +205,28 @@ jobs:
               container[key] = {}
               return container[key]
 
-          def _sub(container, key):
+          def _sub(container, key, label=None):
               """A nested object, never something `.get` cannot be called on.
 
               `loc.get("physicalLocation", {})` defaults only when the key is
               ABSENT. A present-but-non-object value comes straight back, and
               the chained `.get("artifactLocation")` raises on it.
+
+              With a label, a present-but-invalid value is REPAIRED in place and
+              recorded — returning `{}` while leaving `"location": null` in the
+              document is the `rules: null` failure again, read smoothly here
+              and rejected at the uploader. Without a label the container is
+              only read, which is what the pre-upload validator needs: it must
+              judge the document, not quietly mend it.
               """
               value = container.get(key)
-              return value if isinstance(value, dict) else {}
+              if isinstance(value, dict):
+                  return value
+              if label and key in container:
+                  repairs.append(f"{label} was {type(value).__name__}, replaced with an empty object")
+                  container[key] = {}
+                  return container[key]
+              return {}
 
           def _objects(container, key, label):
               """The objects in container[key], dropping whatever is not one.
@@ -330,7 +343,11 @@ jobs:
               for res in _objects(run, "results", f"runs[{i}].results"):
                   excluded = False
                   for loc in _objects(res, "locations", f"runs[{i}].results[].locations"):
-                      art = _sub(_sub(loc, "physicalLocation"), "artifactLocation")
+                      art = _sub(
+                          _sub(loc, "physicalLocation", f"runs[{i}].results[].physicalLocation"),
+                          "artifactLocation",
+                          f"runs[{i}].results[].artifactLocation",
+                      )
                       if "uri" in art:
                           art["uri"] = relativise(art["uri"])
                           # index points into run.artifacts, which is not
@@ -342,10 +359,14 @@ jobs:
                       dropped_total += 1
                   else:
                       kept.append(res)
-              run["results"] = kept
+              # Only write back a key the document actually had, matching
+              # _objects: inventing `results: []` on a run that never reported
+              # one is not a repair.
+              if kept or "results" in run:
+                  run["results"] = kept
               kept_total += len(kept)
               for art in _objects(run, "artifacts", f"runs[{i}].artifacts"):
-                  loc = _sub(art, "location")
+                  loc = _sub(art, "location", f"runs[{i}].artifacts[].location")
                   if "uri" in loc:
                       loc["uri"] = relativise(loc["uri"])
 
@@ -393,16 +414,23 @@ jobs:
                   problems.append(f"runs[{i}].tool.driver.rules is {type(rules).__name__}, not list")
               if not driver.get("name"):
                   problems.append(f"runs[{i}].tool.driver.name is missing")
+              # `results` is optional on a run, so ABSENT is valid and only a
+              # present-but-wrong value is a problem. Flagging the absence made
+              # a clean document fail.
               results = run.get("results")
-              if not isinstance(results, list):
+              if "results" in run and not isinstance(results, list):
                   problems.append(f"runs[{i}].results is {type(results).__name__}, not list")
+              if not isinstance(results, list):
                   results = []
               for j, res in enumerate(results):
                   if not isinstance(res, dict):
                       problems.append(f"runs[{i}].results[{j}] is {type(res).__name__}, not object")
                       continue
+                  # No `is not None` tolerance: normalisation coerces a null
+                  # away, so a null still here means normalisation did not run
+                  # -- exactly what this tripwire exists to catch.
                   locations = res.get("locations")
-                  if locations is not None and not isinstance(locations, list):
+                  if "locations" in res and not isinstance(locations, list):
                       problems.append(f"runs[{i}].results[{j}].locations is {type(locations).__name__}, not list")
                       continue
                   for loc in locations or []:
