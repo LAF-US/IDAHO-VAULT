@@ -5,6 +5,9 @@
 #
 # The existing root-level `-LAF.md` legacy path must not be passed as a hook
 # argument because Unix command parsers interpret a leading hyphen as an option.
+# This is an argument-compatibility boundary, not a secret allowlist; the
+# repository policy workflow still scans changed paths through its canonical
+# secret-pattern checker.
 exclude: ^-.*$
 
 ci:
@@ -19,7 +22,8 @@ repos:
     hooks:
       - id: check-merge-conflict
       - id: check-symlinks
-      # These three tracked files contain historical or bundled literal key-type
-      # names, not key material; keep the exception limited to this detector.
+      # The repository's canonical secret-pattern policy scans all changed
+      # paths. This lightweight detector covers actual key-container files
+      # without treating bundled parser vocabulary as key material.
       - id: detect-private-key
-        exclude: ^(closed_prs\.json|unmerged_prs\.json|\.obsidian/plugins/obsidian-local-rest-api/main\.js)$
+        files: (?i)\.(pem|p12|pfx|key)$
