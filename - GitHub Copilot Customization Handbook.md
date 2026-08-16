@@ -5,8 +5,8 @@ author:
 published:
 created: 2026-06-03
 description: "Instructions, Prompts, Agents, and Skills — a comprehensive guide to tailoring GitHub Copilot to your team's workflows"
-date created: Wednesday, June 3rd 2026, 2:30:36 pm
-date modified: Wednesday, June 3rd 2026, 2:37:33 pm
+created: 2026-06-03
+updated: 2026-06-03
 ---
 
 This handbook provides a comprehensive overview of the various customization mechanisms available for GitHub Copilot, including Custom Instructions, Prompt Files, Custom Agents, and Agent Skills. Each section explains what the feature is, how it works, when to use it, and best practices for implementation. By understanding these tools, you can tailor GitHub Copilot to fit your team's unique workflows and coding standards, maximizing productivity and consistency across your projects.
@@ -26,9 +26,7 @@ GitHub Copilot offers several distinct customization mechanisms, each designed t
 | Plugins | Extend Copilot functionality with additional features | Installed and configured by user | `.github/plugins/*.plugin.md` |
 | Agentic Workflows | Repository Automation with strong guardrails | Any GitHub Actions Trigger | `.github/workflows/*.md` |
 
-> [!-info] -info
-> info
->
+> [!info]
 > All customization files are Markdown-based with YAML frontmatter. They can be committed to your repository and shared with your entire team through version control. Exceptions are MCP servers and hooks which are JSON.
 
 ## 2\. Custom Instructions

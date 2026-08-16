@@ -5,10 +5,11 @@ author:
   - "[[Allison]]"
 published: 2025-07-02
 created: 2026-06-03
-description: "GitHub Copilot coding agent, available in public preview, now has access to a web
-browser out of the box, powered by the Playwright MCP server. This feature is in public…"
-date created: Wednesday, June 3rd 2026, 2:28:15 pm
-date modified: Wednesday, June 3rd 2026, 2:30:43 pm
+description: >
+  GitHub Copilot coding agent, available in public preview, now has access to a web
+  browser out of the box, powered by the Playwright MCP server. This feature is in public…
+created: 2026-06-03
+updated: 2026-06-03
 ---
 
 [GitHub Copilot coding agent](https://docs.github.com/copilot/using-github-copilot/coding-agent), available in public preview, now has access to a web browser out of the box, powered by the [Playwright MCP server](https://github.com/microsoft/playwright-mcp). This feature is in public preview.
