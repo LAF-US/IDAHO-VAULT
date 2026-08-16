@@ -36,7 +36,6 @@ import sys
 from datetime import datetime, timezone
 
 from pr_threads import (  # shared thread-analysis vocabulary (#600 §5)
-    ATTESTATION_DECISIONS,
     _count_committable_suggestion_threads,
     _thread_authors,
     _thread_has_attested_look,
@@ -463,7 +462,7 @@ def _resolve_thread(thread_id: str) -> None:
 # Look-then-resolve design (#399): nothing is dismissed or resolved until a
 # looker (agent or human) has looked. A looker records the look as an in-thread
 # attestation comment of this canonical shape:
-#   <!-- looked: by=<login>; at=<iso8601>; decision=<addressed|advisory|wontfix>; v=1 -->
+#   <!-- looked: by=<login>; at=<iso8601>; v=1 -->
 # Detection requires the structured marker AND that `by` matches the comment's
 # own author, so a pasted or forged marker attributed to someone else cannot
 # fake a look. This layer RESOLVES NOTHING.
@@ -472,7 +471,6 @@ LOOK_ATTESTATION_MARKER = "<!-- looked:"
 
 def _build_attestation(
     looker: str,
-    decision: str,
     rationale: str,
     *,
     now: datetime | None = None,
@@ -485,10 +483,6 @@ def _build_attestation(
     # (`github-actions[bot]`) are accepted (the B2 standing/identity decision: a looker
     # may sign under its native CI identity). A malformed login is rejected here rather
     # than producing an attestation the detector can never match.
-    if decision not in ATTESTATION_DECISIONS:
-        raise ValueError(
-            f"decision {decision!r} is not one of {sorted(ATTESTATION_DECISIONS)}"
-        )
     if not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9-]*(?:\[bot\])?", looker):
         raise ValueError(
             f"looker {looker!r} must match the attestation grammar "
@@ -499,8 +493,17 @@ def _build_attestation(
     if moment.tzinfo is None:  # treat a naive datetime as UTC, never as local
         moment = moment.replace(tzinfo=timezone.utc)
     stamp = moment.astimezone(timezone.utc).isoformat().replace("+00:00", "Z")
-    marker = f"<!-- looked: by={looker}; at={stamp}; decision={decision}; v=1 -->"
-    return f"Looked by `{looker}` — **{decision}**. {rationale}\n\n{marker}"
+    marker = f"<!-- looked: by={looker}; at={stamp}; v=1 -->"
+    # "Resolved" because both callers resolve: attest_and_resolve resolves the
+    # thread, and the backfill path witnesses only a resolve this looker itself
+    # performed (it refuses another identity's).
+    #
+    # The visible line carries the resolution and the stamp, nothing else. No
+    # login, no disposition label. Do not add either back: this is an automated
+    # looker, and naming a human or announcing a judgement claims an intent that
+    # was never exercised. The `looked:` marker above keeps `by=` (machine-read by
+    # _thread_has_attested_look, validated by the grammar guard) and the stamp.
+    return f"Resolved by looker — {rationale}\n\n{marker}"
 
 
 # Layer B2 (#399): the guarded disposition core. `attest_and_resolve` is the ONLY
@@ -525,40 +528,10 @@ def _add_thread_reply(thread_id: str, body: str) -> None:
     }
     """
     _graphql(mutation, threadId=thread_id, body=body)
-
-
-def _fetch_thread(thread_id: str) -> dict | None:
-    """Fetch one review thread node directly by GraphQL ID."""
-    # A fallback for when an explicit target thread sits beyond `_fetch_pr`'s
-    # `reviewThreads(first: 100)` window (a PR with >100 threads), so a valid id is
-    # not falsely reported missing. Returns the same node shape as the PR query.
-    query = """
-    query($id: ID!) {
-      node(id: $id) {
-        ... on PullRequestReviewThread {
-          id
-          isResolved
-          isOutdated
-          comments(first: 100) {
-            pageInfo { hasNextPage }
-            nodes { author { login __typename } body url }
-          }
-        }
-      }
-    }
-    """
-    data = _graphql(query, id=thread_id)
-    node = data.get("node") or {}
-    # A node id that exists but is not a review thread yields {} (the inline fragment
-    # doesn't apply) — treat that as missing, not as a thread with no id.
-    return node if node.get("id") else None
-
-
 def attest_and_resolve(
     pr: dict,
     thread: dict,
     looker: str,
-    decision: str,
     rationale: str,
     *,
     apply: bool = False,
@@ -617,8 +590,8 @@ def attest_and_resolve(
     # (attested AND resolved) is already short-circuited by the isResolved guard above.
     already_looked = _thread_has_attested_look(thread)
 
-    # Build (and thereby validate looker/decision) before any write.
-    body = _build_attestation(looker, decision, rationale, now=now)
+    # Build (and thereby validate the looker) before any write.
+    body = _build_attestation(looker, rationale, now=now)
     result["eligible"] = True
     result["attestation"] = body
     if not apply:
@@ -681,7 +654,7 @@ def backfill_witness(
     # leaves a thread *resolved with no recorded look* — exactly the blind resolution the
     # engine exists to prevent. This repairs that ONE case and only that case:
     #
-    # - the thread is already resolved (otherwise use `attest-resolve`/`engage-outdated`);
+    # - the thread is already resolved (otherwise use `engage-outdated`);
     # - it carries NO attestation yet (nothing to repair otherwise);
     # - every author is a bot, proven from a complete comment page;
     # - and `resolvedBy` is the looker itself — *we* resolved it.
@@ -703,7 +676,7 @@ def backfill_witness(
         result["reason"] = "thread has no id"
         return result
     if not thread.get("isResolved"):
-        result["reason"] = "thread is not resolved (nothing to backfill; use attest-resolve)"
+        result["reason"] = "thread is not resolved (nothing to backfill; use engage-outdated)"
         return result
     if _thread_has_attested_look(thread):
         result["reason"] = "thread already carries an attested look"
@@ -723,9 +696,9 @@ def backfill_witness(
         )
         return result
 
-    # Build (and thereby validate looker) before any write. The decision is `advisory`:
-    # the look records that the resolution stands, not that a fix was applied.
-    body = _build_attestation(looker, "advisory", rationale, now=now)
+    # Build (and thereby validate the looker) before any write. The look records
+    # that the resolution stands, not that a fix was applied.
+    body = _build_attestation(looker, rationale, now=now)
     result["eligible"] = True
     result["attestation"] = body
     if not apply:
@@ -1208,7 +1181,6 @@ def _resolve_outdated_resolvable_threads(
                 pr,
                 thread,
                 looker,
-                "advisory",
                 "Outdated: the commented lines no longer exist in the current diff; "
                 "bot-only thread cleared under the outdated-only engaged policy.",
                 apply=apply,
@@ -1218,7 +1190,7 @@ def _resolve_outdated_resolvable_threads(
             # it on stderr too (not only in the returned dict) so sync-driven failures are
             # observable in workflow logs, not just to the JSON report consumer.
             print(
-                f"Failed to attest-resolve outdated thread {thread.get('id')}: {exc}",
+                f"Failed to resolve outdated thread {thread.get('id')}: {exc}",
                 file=sys.stderr,
             )
             result = {
@@ -1789,62 +1761,6 @@ def verify_claim(args: argparse.Namespace) -> int:
     _comment(args.pr_number, "\n".join(body_lines))
     print(f"Posted verify-claim divergence comment on PR #{args.pr_number}.")
     return 0
-
-
-def _thread_belongs_to_pr(thread: dict, owner: str, repo: str, pr_number: int) -> bool:
-    """Report whether a thread's comment links place it on owner/repo PR #pr_number."""
-    # `_fetch_thread` resolves a *global* node id, so a stray or hostile id could point at
-    # a thread on a different PR/repo; membership is verified before acting on it.
-    expected = f"/{owner}/{repo}/pull/{pr_number}".lower()
-    for comment in (thread.get("comments") or {}).get("nodes") or []:
-        if expected in (comment.get("url") or "").lower():
-            return True
-    return False
-
-
-def attest_resolve(args: argparse.Namespace) -> int:
-    """Disposition one explicit bot-authored thread (Layer B2). Dry-run unless --apply."""
-    # Bounded by design: targets a single PR + thread id, so it cannot walk the backlog
-    # or cascade. The deterministic walk + cascade-safety orchestration is Layer C.
-    pr = _fetch_pr(args.owner, args.repo, args.pr_number)
-    threads = (pr.get("reviewThreads") or {}).get("nodes") or []
-    thread = next((t for t in threads if t.get("id") == args.thread_id), None)
-    if thread is None:
-        # Beyond _fetch_pr's first-100 window. node(id:) is global, so confirm the
-        # fetched thread is actually on THIS PR before touching it.
-        fetched = _fetch_thread(args.thread_id)
-        if fetched is not None and _thread_belongs_to_pr(
-            fetched, args.owner, args.repo, args.pr_number
-        ):
-            thread = fetched
-    if thread is None:
-        print(
-            json.dumps(
-                {
-                    "thread_id": args.thread_id,
-                    "eligible": False,
-                    "applied": False,
-                    "reason": "thread not found on PR",
-                }
-            )
-        )
-        return 1
-    # Default the looker to the authenticated actor, so the recorded witness always names
-    # whoever actually ran the resolve (agent-driven or CI-bot), and the self-attestation
-    # actor-match check in attest_and_resolve is satisfied by construction.
-    looker = args.looker or _viewer_login()
-    result = attest_and_resolve(
-        pr,
-        thread,
-        looker,
-        args.decision,
-        args.rationale,
-        apply=args.apply,
-    )
-    print(json.dumps(result))
-    return 0
-
-
 def _positive_int(value: str) -> int:
     """Parse a strictly positive integer for an argparse option (e.g. --stale-days)."""
     # A non-positive staleness window misclassifies every PR (<=0 marks all stale,
@@ -1894,7 +1810,7 @@ def engage_outdated(args: argparse.Namespace) -> int:
                 f"--pr {only_pr} is {pr.get('state')!r}, not OPEN; engage-outdated "
                 "acts only on the open queue."
             )
-        # Same narrowest-safe slice as the on-push sync path (shared helper): attest-resolve
+        # Same narrowest-safe slice as the on-push sync path (shared helper): resolve
         # every outdated-resolvable thread, witnessed by the looker.
         for result in _resolve_outdated_resolvable_threads(pr, looker, apply=args.apply):
             considered.append({"pr": pr_number, **result})
@@ -2022,25 +1938,6 @@ def build_parser() -> argparse.ArgumentParser:
     verify.add_argument("--comment-body", default="")
 
 
-    attest = subparsers.add_parser("attest-resolve")
-    attest.add_argument("--owner", required=True)
-    attest.add_argument("--repo", required=True)
-    attest.add_argument("--pr-number", required=True, type=int)
-    attest.add_argument("--thread-id", required=True)
-    attest.add_argument(
-        "--looker",
-        default=None,
-        help="attesting identity recorded in the look marker; default: the authenticated "
-        "actor (whoever the token posts as), so the witness always names who actually ran it",
-    )
-    attest.add_argument("--decision", required=True, choices=sorted(ATTESTATION_DECISIONS))
-    attest.add_argument("--rationale", default="")
-    attest.add_argument(
-        "--apply",
-        action="store_true",
-        help="actually post the attestation and resolve (default: dry-run)",
-    )
-
     engage = subparsers.add_parser("engage-outdated")
     engage.add_argument("--owner", required=True)
     engage.add_argument("--repo", required=True)
@@ -2107,8 +2004,6 @@ def main() -> int:
         return reconcile_open_prs(args)
     if args.command == "verify-claim":
         return verify_claim(args)
-    if args.command == "attest-resolve":
-        return attest_resolve(args)
     if args.command == "engage-outdated":
         return engage_outdated(args)
     if args.command == "reconcile-witness":

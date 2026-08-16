@@ -54,7 +54,7 @@ jobs:
 
       # ── 1PASSWORD SECRET INJECTION ────────────────────────────────────────
       - name: Install 1Password CLI
-        uses: 1password/install-cli-action@a5215d3a7f75c1629216c465ea9ab3ab399c4b71 # v4.0.0
+        uses: 1password/install-cli-action@1a3160d5e9de1ae0803eaa08a88746f5ae3daa50 # v4.1.0
 
       - name: Load runtime secrets via op
         uses: 1password/load-secrets-action@e544b780808654ba8ceba5fb2fe2897103d92ff4 # v4
