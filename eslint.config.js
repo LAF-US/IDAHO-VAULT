@@ -72,6 +72,28 @@ module.exports = [
   },
 
   {
+    // The two config files carry `/* global module, require */` because CODACY
+    // generates its own ESLint config with no globals, and without the
+    // directive its run draws no-undef on both identifiers (reproduced: strip
+    // the directive and eslint 8.57.0 under a globals-free config reports
+    // exactly the four alerts code scanning filed).
+    //
+    // THIS config supplies globals.node, so under it the same directive is a
+    // redeclaration and js.configs.recommended fires no-redeclare -- 3 errors,
+    // on the config files themselves. Caught in review; verified with
+    // `eslint eslint.config.js .eslintrc.js`.
+    //
+    // The two runs want opposite things and both are right about their own
+    // environment, so the directive stays for Codacy and the rule is turned off
+    // HERE, for these two paths only. This is not a silenced finding: `module`
+    // and `require` genuinely exist in both files at run time, which is why the
+    // directive is true and the redeclaration is harmless. Every other file
+    // keeps no-redeclare armed.
+    files: ["eslint.config.js", ".eslintrc.js"],
+    rules: { "no-redeclare": "off" },
+  },
+
+  {
     files: [".obsidian/plugins/**/*.js"],
     languageOptions: {
       globals: { ...globals.browser },
