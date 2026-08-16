@@ -109,8 +109,23 @@ def _read(path: Path) -> tuple[str | None, str]:
 
 
 def unpinned_refs(path: Path, text: str) -> list[tuple[int, str]]:
-    findings = []
+    """Every unpinned reference in one file: `uses:`, `image:`, and metadata.
+
+    Three separate scans, kept as three functions. As one they were a single
+    15-branch body doing unrelated work, which is what Codacy, Revieko and
+    Repowise were each pointing at from different angles.
+    """
     lines = text.splitlines()
+    return [
+        *_uses_findings(lines),
+        *_image_findings(path, lines),
+        *_unreadable_docker_metadata(path, lines),
+    ]
+
+
+def _uses_findings(lines: list[str]) -> list[tuple[int, str]]:
+    """`uses:` refs that are not pinned to a full 40-char commit SHA."""
+    findings: list[tuple[int, str]] = []
     for lineno, line in enumerate(lines, start=1):
         match = USES_PATTERN.match(line)
         if not match:
@@ -119,12 +134,18 @@ def unpinned_refs(path: Path, text: str) -> list[tuple[int, str]]:
             # this reader cannot resolve is unverified, not absent.
             if FLOW_USES_PATTERN.search(_outside_strings(line)):
                 findings.append(
-                    (lineno, "uses: in a flow mapping (unsupported YAML form; ref unverified)")
+                    (
+                        lineno,
+                        "uses: in a flow mapping "
+                        "(unsupported YAML form; ref unverified)",
+                    )
                 )
             continue
         ref = _scalar(match.group(1))
         if EXPRESSION_PATTERN.search(ref):
-            findings.append((lineno, f"{ref} (expression; cannot be resolved to a pinned ref)"))
+            findings.append(
+                (lineno, f"{ref} (expression; cannot be resolved to a pinned ref)")
+            )
             continue
         if ref.startswith("./"):
             continue
@@ -140,14 +161,21 @@ def unpinned_refs(path: Path, text: str) -> list[tuple[int, str]]:
         _, _, sha = ref.rpartition("@")
         if not FULL_SHA_PATTERN.match(sha):
             findings.append((lineno, ref))
+    return findings
 
+
+def _image_findings(path: Path, lines: list[str]) -> list[tuple[int, str]]:
+    """`image:` values that name a mutable container or an unverified build."""
+    findings: list[tuple[int, str]] = []
     for lineno, line in enumerate(lines, start=1):
         match = IMAGE_PATTERN.match(line)
         if not match:
             continue
         image = _scalar(match.group(1))
         if EXPRESSION_PATTERN.search(image):
-            findings.append((lineno, f"{image} (expression; cannot be resolved to a digest)"))
+            findings.append(
+                (lineno, f"{image} (expression; cannot be resolved to a digest)")
+            )
             continue
         if _looks_like_dockerfile(image, path):
             # NOT a free pass. `image: Dockerfile.github_action_dockerhub` is
@@ -159,7 +187,6 @@ def unpinned_refs(path: Path, text: str) -> list[tuple[int, str]]:
             continue
         if not IMAGE_DIGEST_PATTERN.search(image):
             findings.append((lineno, f"{image} (image needs @sha256:<64 hex>)"))
-    findings.extend(_unreadable_docker_metadata(path, lines))
     return findings
 
 
@@ -225,6 +252,28 @@ def _scalar(raw: str) -> str:
     return value
 
 
+def _escape_char(lines: list[str]) -> str:
+    """The Dockerfile's escape character, per its `# escape=` parser directive.
+
+    Docker stops looking for parser directives at the first blank line,
+    instruction, or comment that is not itself a directive. Skipping blanks and
+    reading past ordinary comments honoured an `# escape=` Docker would ignore,
+    joined continuations with the wrong character, and so missed the FROM — a
+    false negative in a supply-chain guard. `# syntax=` before `# escape=` is
+    fine: both are directives, so the scan continues through it.
+    """
+    for line in lines:
+        stripped = line.strip()
+        if not stripped.startswith("#"):
+            return "\\"
+        directive = re.match(r"#\s*(\w+)\s*=\s*(\S+)\s*$", stripped)
+        if not directive:
+            return "\\"
+        if directive.group(1).lower() == "escape":
+            return directive.group(2) if directive.group(2) in ("\\", "`") else "\\"
+    return "\\"
+
+
 def _logical_lines(text: str) -> list[tuple[int, str]]:
     """Dockerfile instructions with continuations joined.
 
@@ -235,23 +284,7 @@ def _logical_lines(text: str) -> list[tuple[int, str]]:
     or a backtick.
     """
     lines = text.splitlines()
-    escape = "\\"
-    for line in lines:
-        stripped = line.strip()
-        # Docker stops looking for parser directives at the first blank line,
-        # instruction, or comment that is not itself a directive. Skipping
-        # blanks and reading past ordinary comments honoured an `# escape=`
-        # Docker would ignore, joined continuations with the wrong character,
-        # and so missed the FROM — a false negative in a supply-chain guard.
-        if not stripped.startswith("#"):
-            break
-        directive = re.match(r"#\s*(\w+)\s*=\s*(\S+)\s*$", stripped)
-        if not directive:
-            break
-        if directive.group(1).lower() == "escape":
-            if directive.group(2) in ("\\", "`"):
-                escape = directive.group(2)
-            break
+    escape = _escape_char(lines)
 
     out: list[tuple[int, str]] = []
     buffer = ""
@@ -365,7 +398,7 @@ def _looks_like_dockerfile(image: str, path: Path) -> bool:
         return False
     if image.startswith("docker://"):
         return False
-    return "Dockerfile" in image or image.startswith("./") or image.startswith("../")
+    return "Dockerfile" in image or image.startswith(("./", "../"))
 
 
 def _unpinned_from_lines(
@@ -400,7 +433,11 @@ def _unpinned_from_lines(
         if not exempt and not IMAGE_DIGEST_PATTERN.search(base):
             rel = dockerfile.relative_to(REPO_ROOT).as_posix()
             findings.append(
-                (image_lineno, f"{image} -> {rel}:{lineno} FROM {base} (needs @sha256:<64 hex>)")
+                (
+                    image_lineno,
+                    f"{image} -> {rel}:{lineno} FROM {base} "
+                    "(needs @sha256:<64 hex>)",
+                )
             )
         if stage:
             stages.add(stage.lower())
