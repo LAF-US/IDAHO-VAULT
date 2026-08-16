@@ -1,0 +1,97 @@
+name: Update open PR branches from main
+
+on:
+  workflow_dispatch:
+    inputs:
+      apply:
+        description: "Perform native GitHub branch updates (default is dry-run)"
+        required: true
+        default: false
+        type: boolean
+      base_branch:
+        description: "Base branch to merge into open PR heads"
+        required: true
+        default: main
+        type: string
+      exclude_prs:
+        description: "Comma-separated PR numbers never to update"
+        required: true
+        default: "980"
+        type: string
+      exclude_branches:
+        description: "Comma-separated exact source branches never to update"
+        required: true
+        default: "logan/obsidian"
+        type: string
+      include_drafts:
+        description: "Include draft PRs"
+        required: true
+        default: false
+        type: boolean
+      include_forks:
+        description: "Include fork-based PRs"
+        required: true
+        default: false
+        type: boolean
+
+# Prevent overlapping dispatches from racing on the same PR heads.
+concurrency:
+  group: update-open-pr-branches-${{ github.repository }}-${{ inputs.base_branch }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update-open-pr-branches:
+    name: Native PR branch update loop
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the workflow definition
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      - name: Install jq
+        run: sudo apt-get update && sudo apt-get install --yes jq
+
+      - name: Run native update-branch loop
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          BASE: ${{ inputs.base_branch }}
+          APPLY: ${{ inputs.apply }}
+          EXCLUDE_PRS: ${{ inputs.exclude_prs }}
+          EXCLUDE_BRANCHES: ${{ inputs.exclude_branches }}
+          INCLUDE_DRAFTS: ${{ inputs.include_drafts }}
+          INCLUDE_FORKS: ${{ inputs.include_forks }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          args=(--repo "$REPO" --base "$BASE")
+          [[ "$APPLY" == "true" ]] && args+=(--apply)
+          [[ "$INCLUDE_DRAFTS" == "true" ]] && args+=(--include-drafts)
+          [[ "$INCLUDE_FORKS" == "true" ]] && args+=(--include-forks)
+
+          IFS=',' read -r -a pr_list <<< "$EXCLUDE_PRS"
+          for pr in "${pr_list[@]}"; do
+            pr="${pr//[[:space:]]/}"
+            [[ -n "$pr" ]] && args+=(--exclude-pr "$pr")
+          done
+
+          IFS=',' read -r -a branch_list <<< "$EXCLUDE_BRANCHES"
+          for branch in "${branch_list[@]}"; do
+            branch="${branch#"${branch%%[![:space:]]*}"}"
+            branch="${branch%"${branch##*[![:space:]]}"}"
+            [[ -n "$branch" ]] && args+=(--exclude-branch "$branch")
+          done
+
+          bash ./update-open-pr-branches-from-main.sh "${args[@]}" | tee update-summary.txt
+          cat update-summary.txt >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload update summary
+        uses: actions/upload-artifact@65c4c4a1ddee5b72f698fdd19549f0f0fb45cf08 # v4.6.0
+        with:
+          name: update-open-pr-branches-summary
+          path: update-summary.txt
+          if-no-files-found: error
