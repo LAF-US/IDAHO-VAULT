@@ -265,6 +265,7 @@ def process_file(filepath, vault_root, execute=False):
             try:
                 os.unlink(temporary_path)
             except FileNotFoundError:
+                # A failed replace may already have removed the temporary path.
                 pass
             raise
 
