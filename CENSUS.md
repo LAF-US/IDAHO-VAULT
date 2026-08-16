@@ -55,7 +55,7 @@ Those are [[CROSSFRAMING]] operations.
 
 ### The Tri-Anchor Status Matrix
 
-Each persona chamber is assessed for three anchors per [[PERSONAE ENGINE]]:
+Each persona chamber is assessed for three anchors per [[!/PERSONAE-ENGINE-v1-2026-05-20|PERSONAE ENGINE]]:
 
 1. **ENTITY-RUNTIME** — actual runtime/config payload, present only for
    software-imported chambers (per [[STUB-PERSONAFOLDERS-2026-05-03]]); a pure

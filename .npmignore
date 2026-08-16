@@ -29,8 +29,6 @@ src-idaho_vault-mock_llm.py
 
 # Documentation
 docs/
-README.md
-CHANGELOG.md
 
 # Config files
 .editorconfig
