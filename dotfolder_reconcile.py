@@ -171,7 +171,12 @@ class HashCache:
         if self.disabled or not self.path.exists():
             return
         try:
-            raw = json.loads(self.path.read_text(encoding="utf-8-sig"))
+            if self.path.is_symlink() or not self.path.is_file():
+                raise OSError("cache path is not a regular file")
+            if self.path.stat().st_size > 32 * 1024 * 1024:
+                raise OSError("cache exceeds the 32 MiB safety limit")
+            with self.path.open("r", encoding="utf-8-sig") as cache_file:
+                raw = json.load(cache_file)
         except (OSError, json.JSONDecodeError) as exc:
             # Silence here is what hid the problem for the life of the file.
             # A missing cache is normal and returns above; one that exists and
