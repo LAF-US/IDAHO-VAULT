@@ -1,3 +1,6 @@
+---
+title: "Recovery Manifest — Book of GEMINIAEUS Export"
+---
 # Recovery Manifest — Book of GEMINIAEUS Export
 
 ## Recovery status
