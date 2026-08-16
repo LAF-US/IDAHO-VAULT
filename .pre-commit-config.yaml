@@ -1,0 +1,25 @@
+# Repository control for pre-commit and pre-commit.ci.
+#
+# This deliberately uses read-only safety checks.  pre-commit.ci may report
+# findings, but it may not rewrite pull-request branches automatically.
+#
+# The existing root-level `-LAF.md` legacy path must not be passed as a hook
+# argument because Unix command parsers interpret a leading hyphen as an option.
+exclude: ^-.*$
+
+ci:
+  autofix_prs: false
+  autoupdate_schedule: quarterly
+  submodules: false
+  skip: []
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: check-merge-conflict
+      - id: check-symlinks
+      # These three tracked files contain historical or bundled literal key-type
+      # names, not key material; keep the exception limited to this detector.
+      - id: detect-private-key
+        exclude: ^(closed_prs\.json|unmerged_prs\.json|\.obsidian/plugins/obsidian-local-rest-api/main\.js)$
