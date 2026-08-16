@@ -234,8 +234,15 @@ def _outside_strings(line: str) -> str:
     fail on a comment describing the very form being rejected. Both were
     checked and both matched before this. Quoted spans go first so that a `#`
     inside a string is not read as starting a comment.
+
+    The `(?!\\s*:)` is load-bearing, not tidiness. Stripping EVERY quoted span
+    also deleted quoted KEYS, so `- {'uses': actions/checkout@v4}` lost the
+    very token FLOW_USES_PATTERN looks for and sailed through unreported — the
+    comma fix reopened, in the flow form, exactly the hole the flow check was
+    added to close. A quoted span followed by `:` is a key and survives; one
+    that is not is a value and goes.
     """
-    without_strings = re.sub(r"'[^']*'|\"[^\"]*\"", "", line)
+    without_strings = re.sub(r"""('[^']*'|"[^"]*")(?!\s*:)""", "", line)
     return re.split(r"(?:^|\s)#", without_strings, maxsplit=1)[0]
 
 
