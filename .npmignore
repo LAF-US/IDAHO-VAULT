@@ -16,9 +16,17 @@ build/
 # Testing
 coverage/
 test/
+tests/
 __tests__/
 *.test.js
 *.spec.js
+*.test.py
+test_*.py
+*_test.py
+backup-compare-temp/
+src/idaho_vault/mock_llm.py
+src-idaho_vault-mock_llm.py
+!/tests/
 
 # Documentation
 docs/
@@ -86,3 +94,8 @@ tmp/
 .codex/
 .gemini/
 .perplexity/
+
+# Generated documentation from node_modules
+THE-GEMSTONE-*.md
+node_modules/
+**/node_modules/
