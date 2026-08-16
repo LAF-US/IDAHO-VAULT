@@ -52,20 +52,21 @@ LINUX }!{ — targets Linux-native execution (WSL, Git Bash, CI runners).
 import argparse
 import os
 import re
+import stat
 import sys
+import tempfile
 from pathlib import Path
 
 
 def find_vault_root():
-    """Walk up from script location to find vault root (has CLAUDE.md or .git)."""
+    """Walk up from script location to find the Git worktree root."""
     script_dir = Path(__file__).resolve().parent
     candidate = script_dir
     for _ in range(10):
         if (candidate / ".git").exists():
             return candidate
         candidate = candidate.parent
-    # Fallback: two levels up from .github/scripts/
-    return script_dir.parent.parent
+    raise RuntimeError("Unable to locate a Git worktree root for CHAINFIRE")
 
 
 def parse_frontmatter(content):
@@ -78,7 +79,7 @@ def parse_frontmatter(content):
         return "", content, False
 
     # Find the closing ---
-    end_match = re.search(r"\n---\s*\n", content[3:])
+    end_match = re.search(r"\n---\s*(?:\n|$)", content[3:])
     if not end_match:
         # No closing --- found
         return "", content, False
@@ -117,7 +118,7 @@ def remove_yaml_key(frontmatter, key):
 
         if skip_block:
             # Continue skipping indented continuation lines (list items)
-            if line.startswith("  ") or line.startswith("\t"):
+            if line.startswith((" ", "\t", "- ")) or line == "":
                 removed_lines.append(line)
                 continue
             else:
@@ -145,9 +146,9 @@ def strip_wikilinks(text):
     Handles nested content carefully — non-greedy matching.
     """
     # First: piped wikilinks [[target|display]] → display
-    text = re.sub(r"\[\[([^\[\]|]+)\|([^\[\]]+)\]\]", r"\2", text)
+    text = re.sub(r"!?\[\[([^\[\]|]+)\|([^\[\]]+)\]\]", r"\2", text)
     # Then: simple wikilinks [[target]] → target (including empty [[]])
-    text = re.sub(r"\[\[([^\[\]]*)\]\]", r"\1", text)
+    text = re.sub(r"!?\[\[([^\[\]]*)\]\]", r"\1", text)
     return text
 
 
@@ -165,7 +166,7 @@ def is_in_exclusion_zone(filepath, vault_root):
             if part.startswith("!"):
                 return True
     except ValueError:
-        pass
+        return False
     return False
 
 
@@ -181,15 +182,21 @@ def is_excluded_directory(filepath, vault_root):
             if part in skip_dirs:
                 return True
     except ValueError:
-        pass
+        return False
     return False
 
 
 def process_file(filepath, vault_root, execute=False):
     """Process a single .md file. Returns dict of changes or None if no changes."""
-    # Skip 0-byte files
-    if filepath.stat().st_size == 0:
+    # Never follow a repository-controlled link outside the vault.
+    if filepath.is_symlink():
         return None
+    try:
+        # Skip 0-byte files.
+        if filepath.stat().st_size == 0:
+            return None
+    except OSError as e:
+        return {"error": str(e)}
 
     try:
         with open(filepath, "r", encoding="utf-8") as f:
@@ -231,7 +238,7 @@ def process_file(filepath, vault_root, execute=False):
         wikilink_count = len(re.findall(r"\[\[[^\[\]]*\]\]", body))
         if wikilink_count > 0:
             body = strip_wikilinks(body)
-            changes["wikilinks_stripped"] = wikilink_count
+            changes["wikilinks_stripped"] += wikilink_count
 
     # Reassemble
     new_content = frontmatter + body if has_fm else body
@@ -243,8 +250,23 @@ def process_file(filepath, vault_root, execute=False):
     changes["changed"] = True
 
     if execute:
-        with open(filepath, "w", encoding="utf-8") as f:
-            f.write(new_content)
+        original_mode = stat.S_IMODE(filepath.stat().st_mode)
+        descriptor, temporary_path = tempfile.mkstemp(
+            prefix=f".{filepath.name}.", suffix=".tmp", dir=filepath.parent
+        )
+        try:
+            with os.fdopen(descriptor, "w", encoding="utf-8") as f:
+                f.write(new_content)
+                f.flush()
+                os.fsync(f.fileno())
+            os.chmod(temporary_path, original_mode)
+            os.replace(temporary_path, filepath)
+        except OSError:
+            try:
+                os.unlink(temporary_path)
+            except FileNotFoundError:
+                pass
+            raise
 
     return changes
 
@@ -287,11 +309,15 @@ def main():
     total_aliases_removed = 0
     total_wikilinks_stripped = 0
     errors = []
-    change_log = []
 
     for filepath in md_files:
         # Skip excluded directories
         if is_excluded_directory(filepath, vault_root):
+            skipped_excluded += 1
+            continue
+
+        # Never follow a link that could escape the vault.
+        if filepath.is_symlink():
             skipped_excluded += 1
             continue
 
@@ -310,7 +336,6 @@ def main():
             continue
 
         files_changed += 1
-        change_log.append(result)
 
         if result.get("tags_removed"):
             total_tags_removed += 1

@@ -47,7 +47,15 @@ Its SHA-256 digest is:
 40733a8eba4c7aafd5644d04044a785371a5a1b1b616461527af99ed8ea8cc6d
 ```
 
-The per-artifact SHA-256 inventory is retained in `artifacts.sha256`. The source archive digest is also retained beside the archive in `source-archive/IDAHO-VAULT-d59502e6.tar.gz.sha256`.
+The per-artifact SHA-256 inventory is retained in `artifacts.sha256`. The source archive digest is also retained in `archive.sha256` and beside the archive in `source-archive/IDAHO-VAULT-d59502e6.tar.gz.sha256`.
+
+From this bundle directory, verify the preserved bytes with:
+
+```bash
+sha256sum -c artifacts.sha256
+sha256sum -c archive.sha256
+(cd source-archive && sha256sum -c IDAHO-VAULT-d59502e6.tar.gz.sha256)
+```
 
 ## Explicit boundary
 
@@ -66,6 +74,7 @@ This recovery does **not**:
 ```text
 RECOVERY-MANIFEST.md
 artifacts.sha256
+archive.sha256
 original-tree/
   !/MIND/BOOK-OF-GEMINIAEUS/
     INDEX.md
