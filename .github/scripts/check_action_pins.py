@@ -117,7 +117,7 @@ def unpinned_refs(path: Path, text: str) -> list[tuple[int, str]]:
             # Fail closed on the flow form rather than skip it, the same way
             # `runs: {using: docker, image: …}` is handled below: a `uses` key
             # this reader cannot resolve is unverified, not absent.
-            if not line.lstrip().startswith("#") and FLOW_USES_PATTERN.search(line):
+            if FLOW_USES_PATTERN.search(_outside_strings(line)):
                 findings.append(
                     (lineno, "uses: in a flow mapping (unsupported YAML form; ref unverified)")
                 )
@@ -195,6 +195,21 @@ def _unreadable_docker_metadata(path: Path, lines: list[str]) -> list[tuple[int,
                 )
             ]
     return []
+
+
+def _outside_strings(line: str) -> str:
+    """The line with quoted scalars and any comment removed.
+
+    FLOW_USES_PATTERN keys off `{` or `,`, and both are ordinary characters
+    inside a YAML string, so matching the raw line invents findings:
+    `- name: "step, uses: something"` contains `, uses:` and would fail CI on
+    a step whose name happens to hold a comma, and `key: v  # {uses: x}` would
+    fail on a comment describing the very form being rejected. Both were
+    checked and both matched before this. Quoted spans go first so that a `#`
+    inside a string is not read as starting a comment.
+    """
+    without_strings = re.sub(r"'[^']*'|\"[^\"]*\"", "", line)
+    return re.split(r"(?:^|\s)#", without_strings, maxsplit=1)[0]
 
 
 def _scalar(raw: str) -> str:
