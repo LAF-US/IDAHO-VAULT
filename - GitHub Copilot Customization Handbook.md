@@ -94,13 +94,11 @@ Instructions are the right choice when you need:
 - Language or file-type specific rules (e.g., different styles for `.tsx` vs `.py` files)
 - Team conventions that every developer should follow consistently
 
-> [!-success] -success
-> tip
+> [!TIP]
 >
 > To generate a `copilot-instructions.md` file tailored to your project, click the **Configure Chat** gear icon in the Chat view and select **Generate Chat Instructions**. Review the generated file and make any necessary edits to match your team's standards.
 
-> [!-secondary] -secondary
-> note
+> [!NOTE]
 >
 > Custom instructions do NOT affect inline suggestions as you type in the editor. They only apply to chat interactions (Ask, Plan, Agent, and custom modes).
 
@@ -169,8 +167,7 @@ Requirements:
 - Team-standard workflows that all developers should follow consistently
 - Complex multi-step tasks that benefit from detailed, pre-written instructions
 
-> [!-success] -success
-> tip
+> [!TIP]
 >
 > Prompt files can reference custom instructions via Markdown links, avoiding duplication. For example: `[coding standards](../docs/standards.md)`
 
@@ -228,8 +225,7 @@ Handoffs are a powerful feature that lets you chain agents together. When a user
 - Different team members work in different modes (planning vs. implementing vs. reviewing)
 - You want to enforce that certain operations use specific, high-capability models
 
-> [!-secondary] -secondary
-> note
+> [!NOTE]
 >
 > Custom agents define the session-level operating context. They work best as the outermost "wrapper" around a workflow. Combine them with instructions (for standards) and skills (for specialized tasks) for maximum effectiveness.
 
@@ -306,8 +302,7 @@ This means you can install many skills without bloating the context window.
 | Portability | VS Code specific | Open standard across agents |
 | Best for | Coding standards, architecture context | Specialized workflows, tools, procedures |
 
-> [!-success] -success
-> tip
+> [!TIP]
 >
 > Skills are an open standard. A skill you create for GitHub Copilot in VS Code also works with GitHub Copilot CLI, the Copilot coding agent, and Claude Code.
 
@@ -361,8 +356,7 @@ Beyond the gallery, you can also find MCP servers by looking at registries. For 
 - [GitHub MCP Registry](https://github.com/mcp)
 - [Official MCP Registry](https://registry.modelcontextprotocol.io/)
 
-> [!-warning] -warning
-> warning
+> [!WARNING]
 >
 > Local MCP servers run arbitrary code on your machine. Only add servers from trusted sources and review the code and configuration before starting. VS Code prompts you to confirm trust when starting a server for the first time.
 
@@ -410,8 +404,7 @@ Sandboxed servers only access explicitly permitted paths and domains, and their 
 - You want to give Copilot **browser automation** (Playwright), **search** (Brave, Google), or other specialized abilities
 - You're building a **custom integration** — MCP SDKs are available in Python, TypeScript, Java, C#, and more
 
-> [!-info] -info
-> important
+> [!INFO]
 >
 > Organizations can centrally manage which MCP servers are allowed via GitHub policies. If you are unsure of your organizations policies around MCP server usage, check with your GitHub Copilot administrators before adding new servers.
 
@@ -419,8 +412,7 @@ Sandboxed servers only access explicitly permitted paths and domains, and their 
 
 Agent hooks let you execute custom shell commands at specific lifecycle points during agent sessions. Unlike instructions or prompts that guide behavior through natural language, hooks run your code with deterministic, guaranteed outcomes — ideal for enforcing policies, automating quality gates, and creating audit trails.
 
-> [!-secondary] -secondary
-> note
+> [!NOTE]
 >
 > Agent hooks are currently in Preview. Your organization may have disabled hook usage via enterprise policies.
 
@@ -469,8 +461,7 @@ Create `.github/hooks/format.json` to auto-format files after every edit:
 
 You can also configure hooks through the UI: type `/hooks` in chat, use **Chat: Configure Hooks** from the Command Palette, or type `/create-hook` to have AI generate one for you.
 
-> [!-info] -info
-> info
+> [!INFO]
 >
 > For the full reference including input/output schemas, OS-specific command overrides, agent-scoped hooks, and security considerations, see the [VS Code hooks documentation](https://code.visualstudio.com/docs/copilot/customization/hooks).
 
@@ -528,8 +519,7 @@ Agentic workflows implement a layered security architecture that protects agains
 
 All workflow outputs (prompts, patches, logs) are preserved as downloadable artifacts. Use `gh aw logs` for cost monitoring, `gh aw audit` for failure investigation, and `gh aw status` for workflow health.
 
-> [!-info] -info
-> info
+> [!INFO]
 >
 > For full documentation including setup, patterns, and reference material, see the [GitHub Agentic Workflows docs](https://github.github.com/gh-aw/).
 
@@ -549,8 +539,7 @@ When you type a message in Copilot Chat, here is what happens behind the scenes:
 6. **Prompt file content:** If you triggered a prompt file via `/command`, its instructions are added to the context.
 7. **Your message:** Finally, your actual message text is added as the user prompt.
 
-> [!-info] -info
-> info
+> [!INFO]
 >
 > If multiple types of customization files exist in your project, VS Code combines them all. Use the diagnostics view (right-click in Chat → Diagnostics) to see all loaded customization files and troubleshoot issues.
 
@@ -601,8 +590,7 @@ These features are not mutually exclusive — they are designed to work together
 - **Layer 3 — Custom Agents:** Define agents for distinct operational modes (planning, implementing, reviewing). Use handoffs to chain agents into multi-step workflows.
 - **Layer 4 — Agent Skills:** Build skills for specialized, self-contained capabilities that include scripts, templates, or examples. Let them auto-activate when relevant.
 
-> [!-secondary] -secondary
-> note
+> [!NOTE]
 >
 > MCP servers are a separate extension point for connecting to external systems. Use them when you need capabilities beyond what can be included in skills or agents.
 
@@ -726,7 +714,6 @@ plugins/
 - Document your customization strategy in CONTRIBUTING.md so new team members onboard quickly
 - Iterate continuously — review Copilot's outputs and refine your customization files accordingly
 
-> [!-info] -info
-> info
+> [!INFO]
 >
 > For more community-contributed examples of instructions, prompts, agents, and skills, visit the **[github/awesome-copilot](https://github.com/github/awesome-copilot)** repository on GitHub.

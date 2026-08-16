@@ -76,9 +76,13 @@ CROSSFRAMING produces the delta analysis.
 
 ---
 
+## About This Stub
+
+This is a seed document replacing prior content that did not meet governance standards. The prior doctrine described enumeration mechanisms but lacked the authority framework required by [[CONSTITUTION]]. This stub preserves the CHARTER's Enumeration Clause reference while the mechanism is reconsidered. Logan authorized this replacement via PR #820.
+
 ## Seed
 
-This document is a seed. It will grow into the full census mechanism:
+This document will grow into the full census mechanism:
 
 - Schema definition for census output rows
 - Per-scope enumeration procedures
