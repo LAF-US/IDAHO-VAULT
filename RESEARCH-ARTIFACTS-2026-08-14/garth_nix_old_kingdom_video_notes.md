@@ -5,13 +5,13 @@ Task submitted (ID: video-analysis-f8c610eb-e260-4cb2-9604-99098f3dbb4d)
 [33s] Still processing, please wait...
 [52s] Status: Analysis completed
 [52s] Analysis completed!
-Full analysis result saved to: /home/ubuntu/video_2BOyElv2eQw_analysis_20260814_221141.md
+Full analysis result was saved in the originating local session; that uncommitted path is not a repository source.
 Note: This tool performs AI-based visual and audio analysis, not verbatim transcription. For detailed speech transcription, use `manus-speech-to-text` instead.
 Analysis result:
 
 Based on the video provided, here is the detailed extraction of Garth Nix’s discussion regarding the *Old Kingdom* series and the *Abhorsen*.
 
-### **Direct Author Statements & Quotations**
+### **AI-Extracted Approximate Statements (Not Verbatim Quotations)**
 
 **On the Origins and Creation of Sabriel**
 *   **00:28:** "Luckily for me, *Sabriel* was the next thing [after an unpublished book] and it really laid the foundation for everything that followed."

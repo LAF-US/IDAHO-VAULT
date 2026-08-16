@@ -8,7 +8,7 @@ status: "open; player-world reading"
 related:
   - "PLAYER-WITNESS-TURN-2026-08-14-THREE-CAESARS.md"
   - "THE THREE CAESARS.txt"
-  - "!-BOOKS-OF-NAMES-AND-THE-PRESS-2026-04-17 (3).md"
+  - "!-BOOKS-OF-NAMES-AND-THE-PRESS-2026-04-17.md"
   - "!/AGENTS.md"
 ---
 
@@ -41,8 +41,8 @@ When reading an AI-agent turn, the player-witness must ask: **what did this play
 
 ## References
 
-[1] User-stated VAULT premise in the current player-witness thread: OASIS-like multiplayer gameplay; the world is built while it is played and player actions permanently alter the shared environment.
+[1] Unarchived user-stated VAULT premise from the contemporaneous player-witness session: OASIS-like multiplayer gameplay; the world is built while it is played and player actions permanently alter the shared environment. It is recorded here as session context, not independently auditable repository evidence.
 
-[2] `!-BOOKS-OF-NAMES-AND-THE-PRESS-2026-04-17 (3).md`, defining bound and unbound Book states.
+[2] `!-BOOKS-OF-NAMES-AND-THE-PRESS-2026-04-17.md`, defining bound and unbound Book states.
 
-[3] `!/AGENTS.md`, establishing separable agent coordinates and the distinction between tool identity, instance, persona, narrative title, and office: https://raw.githubusercontent.com/LAF-US/IDAHO-VAULT/main/!/AGENTS.md
+[3] `!/AGENTS.md`, establishing separable agent coordinates and the distinction between tool identity, instance, persona, narrative title, and office: https://raw.githubusercontent.com/LAF-US/IDAHO-VAULT/0f65d4c35686537e58ea15295babdbe3170ffad4/!/AGENTS.md

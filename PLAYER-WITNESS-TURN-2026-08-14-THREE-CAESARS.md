@@ -7,7 +7,7 @@ doc_class: "turn record / metanarrative research"
 status: "open; source-bounded"
 related:
   - "THE THREE CAESARS.txt"
-  - "!-BOOKS-OF-NAMES-AND-THE-PRESS-2026-04-17 (3).md"
+  - "!-BOOKS-OF-NAMES-AND-THE-PRESS-2026-04-17.md"
   - "WITNESS-WIZARDS-RULES-INCORPORATED-2026-06-21.md"
 ---
 
@@ -43,8 +43,8 @@ The present Court matter and the Three Caesars should therefore meet only at a d
 
 ## References
 
-[1] `THE THREE CAESARS.txt`; `!-BOOKS-OF-NAMES-AND-THE-PRESS-2026-04-17 (3).md`, including its table of Book/binder/status and its definition of “unbound.”
+[1] `THE THREE CAESARS.txt`; `!-BOOKS-OF-NAMES-AND-THE-PRESS-2026-04-17.md`, including its table of Book/binder/status and its definition of “unbound.”
 
 [2] Suetonius, *The Life of Claudius*, in *The Lives of the Caesars*, recording Claudius’s three added letters and published work: https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Suetonius/12Caesars/Claudius*.html
 
-[3] `!/AGENTS.md`, "The Geminiaeus Matter," registry entry for `antigravity.gemini.caesar` and the suspended-pending-trial posture: https://raw.githubusercontent.com/LAF-US/IDAHO-VAULT/main/!/AGENTS.md
+[3] `!/AGENTS.md`, "The Geminiaeus Matter," registry entry for `antigravity.gemini.caesar` and the suspended-pending-trial posture: https://raw.githubusercontent.com/LAF-US/IDAHO-VAULT/0f65d4c35686537e58ea15295babdbe3170ffad4/!/AGENTS.md

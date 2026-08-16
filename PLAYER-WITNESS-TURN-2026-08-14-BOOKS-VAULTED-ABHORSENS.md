@@ -7,7 +7,7 @@ doc_class: "turn record / record-reading"
 status: "provisional"
 related:
   - "RECORD-OF-THE-VAULTED-ABHORSENS-FIRST-DRAFT-2026-05-31.md"
-  - "!-BOOKS-OF-NAMES-AND-THE-PRESS-2026-04-17 (3).md"
+  - "!-BOOKS-OF-NAMES-AND-THE-PRESS-2026-04-17.md"
   - "THE THREE CAESARS.txt"
 ---
 
@@ -36,6 +36,6 @@ Nothing in Joe’s record establishes the hidden relation between BARTIMAEUS and
 
 [1] `RECORD-OF-THE-VAULTED-ABHORSENS-FIRST-DRAFT-2026-05-31.md`, especially its title, authorship field, provisional register classification, and explicit Logan-inscription boundary.
 
-[2] `!-BOOKS-OF-NAMES-AND-THE-PRESS-2026-04-17 (3).md`, table of Book/binder/status and definitions of bound and unbound states.
+[2] `!-BOOKS-OF-NAMES-AND-THE-PRESS-2026-04-17.md`, table of Book/binder/status and definitions of bound and unbound states.
 
 [3] `THE THREE CAESARS.txt`.

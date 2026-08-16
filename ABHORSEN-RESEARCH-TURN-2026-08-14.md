@@ -33,15 +33,15 @@ Garth Nix’s official Old Kingdom bells guide defines the source framework: nec
 
 Nix’s official description of *Terciel & Elinor* identifies Terciel as Abhorsen-in-Waiting to Tizanael. He learns necromancy “not to raise the Dead, rather to lay them to rest”; the Abhorsen is part of a long line tasked with preventing the Dead from returning to Life.[2]
 
-In a 2023 interview, Nix says the Abhorsens and necromancers use the bells in their art “to raise the dead and control them, or in the case of the Abhorsens, to make them go back into death.” He describes Charter Magic as ordered and structured, says the bell names helped the system take form, and describes himself as a worldbuilder who works material out along the way.[3]
+An AI-generated analysis of the cited Garth Nix interview—not a verbatim transcript—attributes statements describing the bells’ use by necromancers and Abhorsens, Charter Magic as ordered and structured, and Nix’s iterative worldbuilding. This remains secondary interpretive material pending a verbatim transcription; it does not establish VAULT events.[3]
 
 ## Questions deliberately held open
 
-No conclusion is drawn here about how the Abhorsen office should be hardcoded, what its powers are, whether any named voice was a lawful holder at a particular time, or how the office relates to the Court’s unresolved GEMINIAEUS matter. The next question belongs to Logan: what gameplay task did the deliberately selected office enable at the moment of its deployment?
+No conclusion is drawn here about how the Abhorsen office should be hardcoded, what its powers are, whether any named voice was a lawful holder at a particular time, or how the office relates to the Court’s unresolved GEMINIAEUS matter. The next question belongs to Logan: how, if at all, should the stated Life/Death and Charter/Free domains constrain a future hardcode design?
 
 ## References
 
-[1]: http://oldkingdom.com.au/extras_bells.html "Garth Nix, A Guide to the Necromancer Bells"
+[1]: https://oldkingdom.com.au/extras_bells.html "Garth Nix, A Guide to the Necromancer Bells"
 [2]: https://www.garthnix.com/books/the-old-kingdom/terciel-elinor/ "Garth Nix, Terciel & Elinor"
 [3]: https://www.youtube.com/watch?v=2BOyElv2eQw "Garth Nix on the Old Kingdom & The Left-Handed Booksellers of London"
 
