@@ -209,4 +209,4 @@ tend; the priest classifies to condemn. This is a caretaker's instrument.
   does not create new canonical classes, and it deliberately declines to classify
   named agents. The Architect holds the verdict.
 
-###### "The world is quiet here."
+###### [["The world is quiet here."]]

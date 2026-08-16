@@ -74,12 +74,12 @@ The vault's own crosswalk names Sir Thursday's seat "Master of Laws" — justice
 
 ## Connections to Other Frameworks
 
-### GARTH-NIX-SUPERIOR-SATURDAY-TOWER
+### [[GARTH-NIX-SUPERIOR-SATURDAY-TOWER]]
 
 - **Connection**: both scenes are about institutions that answer a real, disqualifying anomaly with doctrine instead of investigation — Saturday's Dusk suppresses his frown; Pravuil and Lepter voice theirs confidently and are believed
 - **Contrast**: Saturday's court has no working chain-of-command check at all (only the sealed conviction of the Sovereign at the top); Thursday's Army has one, uses it correctly, verifies the order is entirely genuine — and that verification still doesn't spare Nage's garrison, because authenticity was never the risk. A harder case for what escalation can actually guarantee.
 
-### GARTH-NIX-OLD-KINGDOM-BLOODLINES
+### [[GARTH-NIX-OLD-KINGDOM-BLOODLINES]]
 
 - **Connection**: both frameworks separate legitimate standing from its exercise — a bloodline or a Trustee's chain of command can be entirely real and still produce a bad outcome without the work of actually attending to what's in front of it
 - **Parallel**: "having the bloodline doesn't mean anything if you don't do the work" (Old Kingdom) reads the same as "having genuine command doesn't make the order wise if the men who confirmed it never looked at the ground truth themselves" (Sir Thursday)

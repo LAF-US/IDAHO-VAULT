@@ -80,4 +80,4 @@ All share the census stamp **`20260525T095704Z`** (a UTC **timestamp**, not a ba
 
 ---
 
-###### "The world is quiet here."
+###### [["The world is quiet here."]]

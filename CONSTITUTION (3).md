@@ -76,7 +76,7 @@ The five documentary C's align all work: capture, collect, collate, catalogue, [
 
 ## VI. KNOWN COLLISIONS & COORDINATION
 
-- **[[Idaho]] Legislation directory:**  — format must be `(YYYY) Type Number.md`
+- **Idaho Legislation directory:**  — format must be `(YYYY) Type Number.md`
 - **Legislative Sessions directory:** — dynamic session note creation active
 - **`.github/workflows/`** — check for schedule trigger conflicts before adding new workflows
 - **`.gitignore`** — created in Idaho Legislature Scraper session; additions must be additive
@@ -121,6 +121,4 @@ Unified (US) Swarm designed and written in [[Logan's Project & Protocols]] synta
 
 [^1] If we're tracking them in a separate decision docket, why keep them in a difficult-to-agentically-amend core governance document? -B
 
-###### "The world is quiet here."
-
-#idaho
+###### [["The world is quiet here."]]

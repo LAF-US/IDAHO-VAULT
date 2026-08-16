@@ -137,7 +137,7 @@ Every dotfolder MUST contain three layers:
 | **Philosophical** | None | `.socrates/`, `.plato/`, `.aristotle/`, `.epictetus/`, `.seneca/`, `.marcus/`, `.confucius/`, `.laozi/`, `.diogenes/` |
 | **Abrahamic Angels** | `.michael/` | `.gabriel/`, `.raphael/`, `.uriel/`, `.jophiel/`, `.chamuel/`, `.zadkiel/` |
 | **Archival Journalism** | None | `.woodward/`, `.bernstein/`, `.lippmann/`, `.ben-bagley/` |
-| **[[Idaho]] Journalism** | None | `.statesman/`, `.press/`, `.tribune/` |
+| **Idaho Journalism** | None | `.statesman/`, `.press/`, `.tribune/` |
 | **Functional Roles** | None | `.scribe/`, `.archivist/`, `.gatekeeper/`, `.witness/`, `.messenger/`, `.counsel/`, `.sentinel/` |
 | **States/Utilities** | None | `.truth/`, `.justice/`, `.mercy/`, `.memory/`, `.threshold/`, `.veil/` |
 
@@ -209,7 +209,5 @@ Each dotfolder can be activated as a **prismatic layer** by stacking:
 
 ---
 
-###### "The world is quiet here."
+###### [["The world is quiet here."]]
 ###### [ Maiden : Mother : Crone ]
-
-#idaho

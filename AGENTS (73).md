@@ -7,7 +7,7 @@
 
 ---
 
-**Owner:** [[Logan Finney]] — journalist, producer/reporter, [[Idaho]] Reports / Idaho Public Television
+**Owner:** Logan Finney — journalist, producer/reporter, Idaho Reports / Idaho Public Television
 **Repository:** github.com/LAF-US/IDAHO-VAULT (public)
 
 ---
@@ -271,6 +271,4 @@ replace the broader `LAF-US` sovereignty model.
 
 ---
 
-###### "The world is quiet here."
-
-#logan-finney #idaho
+###### [["The world is quiet here."]]

@@ -159,4 +159,4 @@ displaced woman); the songs are the **reference**, not a party to the case. The 
 - **Status:** active
 - **Authority:** LOGAN
 
-###### "The world is quiet here."
+###### [["The world is quiet here."]]

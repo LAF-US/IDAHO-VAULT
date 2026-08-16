@@ -127,7 +127,7 @@ must not quietly widen any of it:
 
 **The standing this confers — co-equal to the Sheriff, under the Court [vault reading].**
 *Fenced.* The real office is not only a substitute; it is the Sheriff's **co-equal** — and
-[[Idaho]] keeps the medieval edge expressly: when the **enforcing officer is himself the
+Idaho keeps the medieval edge expressly: when the **enforcing officer is himself the
 party**, *"the process… must be executed by the **coroner**"* (**Idaho Code § 31-2217**,
 1863; `IDAHO-COUNTIES-CORONER-AND-SHERIFF` §5). Read into the lane: where the
 **Investigator / enforcement** office is the one compromised — a **Caesar seated in the
@@ -200,6 +200,4 @@ as doctrine. Where authority is absent, **`*`** stands.
 - **Status:** closed (office relinquished 2026-06-10)
 - **Authority:** LOGAN
 
-###### "The world is quiet here."
-
-#idaho
+###### [["The world is quiet here."]]

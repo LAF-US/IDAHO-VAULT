@@ -3557,7 +3557,7 @@ Let me verify some key workflow files to ensure they're properly configured.
 name: Daily To-Do Rollover
 
 # Carries incomplete to-do items from yesterday's daily note into today's.
-# Runs at 4 AM MT (10:00 UTC), a liminal hour. See The 4 a.m. Mystery by Rives.
+# Runs at 4 AM MT (10:00 UTC), a liminal hour. See [[The 4 a.m. Mystery]] by [[Rives]].
 # Can also be triggered manually from the Actions tab.
 
 on:

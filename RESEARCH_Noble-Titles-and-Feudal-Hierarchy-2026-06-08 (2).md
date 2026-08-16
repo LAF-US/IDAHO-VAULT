@@ -70,4 +70,4 @@ So **rank** (who outranks whom) and **tenure** (who holds what land, of whom, wi
 
 ---
 
-###### "The world is quiet here."
+###### [["The world is quiet here."]]

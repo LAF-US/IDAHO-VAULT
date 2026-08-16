@@ -116,4 +116,4 @@ is already living.
 4. **Local autonomy, common charter — both present?** Decisions local,
    legitimacy shared. Missing either, the network frays or calcifies.
 
-###### "The world is quiet here."
+###### [["The world is quiet here."]]

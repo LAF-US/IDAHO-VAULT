@@ -161,4 +161,4 @@ real-world and canon sources are cited in the linked records; vault readings are
 - **Status:** active
 - **Authority:** LOGAN
 
-###### "The world is quiet here."
+###### [["The world is quiet here."]]

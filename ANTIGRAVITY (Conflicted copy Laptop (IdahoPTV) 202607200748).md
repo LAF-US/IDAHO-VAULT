@@ -2,7 +2,7 @@
 
 **Load mechanism:** Auto-loaded via root `ANTIGRAVITY.md` and durable identity chamber `.antigravity/ANTIGRAVITY.md`.
 
-**Owner:** [[Logan Finney]] — journalist, producer/reporter, [[Idaho]] Reports / Idaho Public Television
+**Owner:** Logan Finney — journalist, producer/reporter, Idaho Reports / Idaho Public Television
 **Repository:** github.com/LAF-US/IDAHO-VAULT (public)
 
 ---
@@ -38,6 +38,4 @@ Current live status is maintained in **THE DOCKET**: `!/!/__!__/!/! The world is
 
 ---
 
-###### "The world is quiet here."
-
-#logan-finney #idaho
+###### [["The world is quiet here."]]

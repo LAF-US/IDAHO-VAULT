@@ -59,4 +59,4 @@ No file content across any of the four orphan-root branches is uniquely at risk.
 
 Nothing prunable is recommended, nothing here is a task. The branches stay exactly where they are — not by default, not by neglect, but because their state is now known, written down, and durable. `!/` remains unlocked per the 2026-07-07 office-day request; relocking is a separate, later call.
 
-###### "The world is quiet here."
+###### [["The world is quiet here."]]

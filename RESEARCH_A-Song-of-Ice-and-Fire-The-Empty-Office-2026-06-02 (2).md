@@ -100,4 +100,4 @@ Martin's world has no confirmed god and no office with intrinsic power — only 
 
 ---
 
-###### "The world is quiet here."
+###### [["The world is quiet here."]]

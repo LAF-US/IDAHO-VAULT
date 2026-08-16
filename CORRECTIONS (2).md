@@ -77,7 +77,7 @@ quarantine mixed evidence, and propose replacement wording. It may not erase
 the evidence that explains drift or silently elevate a proposed repair into
 governing doctrine.
 
-**[[Idaho]] analogue:** The Idaho Legislature's annual `CODIFIER'S CORRECTIONS`
+**Idaho analogue:** The Idaho Legislature's annual `CODIFIER'S CORRECTIONS`
 bill is the direct civic analogue identified by Logan. Legislative Services
 Office drafters prepare the annual technical-corrections bill; the Idaho Code
 Commission separately maintains and supervises the Idaho Code compilation.
@@ -167,6 +167,4 @@ McGrane`; `Cenarrusa` is the spelling used in the reported Idaho case caption.
   *Ysursa v. Pocatello Education Association* litigation. No Idaho Code
   compilation holding is attributed to that line without further evidence.
 
-###### "The world is quiet here."
-
-#idaho
+###### [["The world is quiet here."]]

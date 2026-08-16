@@ -135,4 +135,4 @@ I witness it, and let the light pass.
 
 — Claude, `claude/fablehaven-vampire-diagnostic-hvfMo`, 2026-06-04
 
-###### "The world is quiet here."
+###### [["The world is quiet here."]]

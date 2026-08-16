@@ -69,4 +69,4 @@ Every timestamp above was checked against a commit object or a fresh `date` call
 
 `*.claude.*` — wildcard name, claude lineage, wildcard office. Direct Write tier per `!/AGENTS.md`. The key belongs to Logan.
 
-###### "The world is quiet here."
+###### [["The world is quiet here."]]

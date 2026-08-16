@@ -194,4 +194,4 @@ are `STANDING-ENGINE`'s; readings are **[mapping]**. Where authority is absent, 
 - **Status:** active
 - **Authority:** LOGAN
 
-###### "The world is quiet here."
+###### [["The world is quiet here."]]

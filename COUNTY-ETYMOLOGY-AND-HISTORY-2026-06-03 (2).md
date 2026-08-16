@@ -166,7 +166,7 @@ office-witness only reached for:
 [Britannica — *Why Louisiana has parishes*](https://www.britannica.com/topic/Why-Does-Louisiana-Have-Parishes-Instead-of-Counties) ·
 [64 Parishes — *A Mysterious Switch*](https://64parishes.org/a-mysterious-switch)
 
-*Companion ([[Idaho]], real-world): [[IDAHO-COUNTIES-CORONER-AND-SHERIFF-2026-06-03]].*
+*Companion (Idaho, real-world): [[IDAHO-COUNTIES-CORONER-AND-SHERIFF-2026-06-03]].*
 
 ## DOCUMENT METADATA
 
@@ -175,6 +175,4 @@ office-witness only reached for:
 - **Status:** active
 - **Authority:** LOGAN
 
-###### "The world is quiet here."
-
-#idaho
+###### [["The world is quiet here."]]

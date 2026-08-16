@@ -183,4 +183,4 @@ seal **is** the resolution, in perpetuity.
 6. **If it breaks out, who and where re-seals it?** Re-containment needs a higher
    authority and a changed domain. Know both *before* the seal fails, not after.
 
-###### "The world is quiet here."
+###### [["The world is quiet here."]]

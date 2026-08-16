@@ -103,4 +103,4 @@ Revises nothing — not the doctrinal nodes, not the convergence doc. It is the 
 
 ---
 
-###### "The world is quiet here."
+###### [["The world is quiet here."]]

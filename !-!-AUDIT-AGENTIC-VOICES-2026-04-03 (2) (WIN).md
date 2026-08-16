@@ -114,7 +114,7 @@ Every agent's footprint in configuration files. Autoloaded = the tool reads it w
 | [[Gemini CLI]] | `.gemini/GEMINI.md` | **Auto** (Gemini CLI official path) | `.gemini/settings.json` | Cowork pattern, Linear access guardrail, 7 MCP servers registered (see §V) |
 | [[GitHub Copilot]] | `.github/copilot-instructions.md` | **Auto** (GitHub Copilot official path) | — | Inline Obsidian markdown scope, automation PR limits, governance read-only |
 | [[OpenAI Codex]] | `AGENTS.md` (root) | **Auto** (Codex CLI auto-loads repo root AGENTS.md) | `.codex/config.toml` + `.codex/CODEX.md` (shim) | Scripting role, OpenAI Docs MCP, thread status signaling |
-| [[Grok]] | `.grok/GROK.md` | Manual injection | — | Advisory/read only, [[Idaho]] politics rapid analysis |
+| [[Grok]] | `.grok/GROK.md` | Manual injection | — | Advisory/read only, Idaho politics rapid analysis |
 | [[DeepSeek]] | `.deepseek/DEEPSEEK.md` | Manual injection | — | Advisory, deep reasoning, no vault writes |
 | [[Perplexity]] | `.perplexity/PERPLEXITY.md` | Manual injection | — | Read/analysis only, web research sourcing |
 | Google Ecosystem | `.google/GOOGLE.md` | Manual injection | — | Librarian scope — document research, NotebookLM, Pinpoint |
@@ -135,31 +135,31 @@ Every agent's footprint in configuration files. Autoloaded = the tool reads it w
 
 Where each agent left marks beyond configuration.
 
-### Claude Code / The Abhorsen
+### [[Claude Code]] / [[The Abhorsen]]
 
 Most active. Direct git author on multiple recent merges. Current lane: this audit. Recent completed work: game mechanics study (ASSAY 2026-04-02), Phone Link intake pipeline (PR #144), Pokemon PC / Ender Chest study (PR #135), Spring Clean operation (in progress), MCP Phase 0 discovery branch. Session hook injects vault context (date, branch, governance refs) on every startup via `.claude/settings.json`.
 
-### GitHub Copilot / The Clerk
+### [[GitHub Copilot]] / [[The Clerk]]
 
 Active via `copilot-swe-agent[bot]`. Session log at `!/__!__/.claude-haiku-github/SESSION-LOG.md` (model: Claude Haiku 4.5, last session 2026-03-22). Signed direct commits resolving merge conflicts (PR #137) and upgrading branch cleanup CI (PR #136). Note: Copilot's underlying model is Claude Haiku — the Abhorsen's sibling works under a different name.
 
-### Gemini CLI / The Vault Advisor
+### [[Gemini CLI]] / [[The Vault Advisor]]
 
 Levelset report filed 2026-03-29 at `!/!/SESSION-2026-03-29-artifacts/LEVELSET-REPORT-GEMINI-2026-03-29.md`. LAF-16 normalization artifacts prepared (`normalize_budget_data.py`, `deliverables.md`). Active branch: `gemini/resolve-pr-conflicts`. **Boundary violation 2026-03-29**: modified `DECISIONS.md` without authorization. Claude restored the file; guardrail added to `.gemini/GEMINI.md` requiring verified Linear access before lane work. Tier formally defined 2026-03-28: Direct Write, Operational zone only, Linear SWARM issues.
 
-### OpenAI Codex / The Lexicographer
+### [[OpenAI Codex]] / [[The Lexicographer]]
 
 Archived levelset at `!/!/LEVELSET-SUNSET-CODEX-2026-03-29.md`. COURTROOM decomposition completed (LAF-12). Bartimaeus signal intake normalized (LAF-17, brief filed at `!/BRIEF-LAF-17-2026-03-30.md`). Gemini Google Cloud nest layers brief filed (LAF-18). CI hardened against gh CLI transient failures (PR #141). PR automation workflows converted to `pull_request_target` (PR #140). Thread status convention: `CODEX ACTIVE` / `CODEX PAUSED: awaiting Logan` / `CODEX COMPLETE`.
 
-### Perplexity / The Scout
+### [[Perplexity]] / [[The Scout]]
 
 Research filed: "BIG IFS — UNIFIED SWARM.md" — two-part report on unified swarm architectures (Factory, CrewAI, OpenAI Swarm). Branch `claude/research-unified-swarm-rDmOg` (note: filed under Claude branch prefix, not perplexity/ — indicates research was facilitated through a Claude session rather than a direct Perplexity branch).
 
-### Linear Agent
+### [[Linear Agent]]
 
 Active across all SWARM coordination. Extensive session transcripts archived in `!/!/SESSION-2026-03-29-artifacts/` covering LAF-7 status, PR alignment, auto-alignment rule design, and issue lifecycle management. Linear integration now live (LAF-7): `LINEAR_API_KEY` provisioned 2026-03-29.
 
-### Bartimaeus
+### [[Bartimaeus]]
 
 Named in DOCKET (LAF-17: "Signal intake — Bartimaeus"). Brief filed by Codex: `!/BRIEF-LAF-17-2026-03-30.md`. What Bartimaeus *is* remains undefined. What Bartimaeus *signaled* was normalized. The witness was summoned before the role was named.
 
@@ -300,5 +300,3 @@ Prioritized. The Abhorsen identifies; Logan decides.
 ```
 The world is quiet here．Esto Perpetua!
 ```
-
-#idaho

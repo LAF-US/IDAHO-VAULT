@@ -45,7 +45,7 @@ the office is the **reach of one officer over one ground**, the **same office-ti
 many at once — one per county.**
 
 - **Office-types (per Logan's enumeration):** **Count · Judge · Coroner · Sheriff · Cleric**,
-  *etc.* — and, in the real [[Idaho]] frame this rhymes with, the elected county officers
+  *etc.* — and, in the real Idaho frame this rhymes with, the elected county officers
   (Sheriff, Coroner, Assessor, Treasurer, Commissioners; `IDAHO-COUNTIES-CORONER-AND-SHERIFF`).
 - **Cardinality:** **many concurrent** — Claude County's Coroner and another county's Coroner
   are *both* Coroners, neither one the other.
@@ -150,6 +150,4 @@ authority is absent, **`*`** stands.
 - **Status:** active
 - **Authority:** LOGAN
 
-###### "The world is quiet here."
-
-#idaho
+###### [["The world is quiet here."]]

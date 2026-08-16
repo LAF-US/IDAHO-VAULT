@@ -27,7 +27,7 @@ reads rather than reports; the events are **[RECORD]** (the PR history).*
 Across the session the external reviewer (Codex) caught four distinct kinds of
 defect, and naming them honestly matters more than tallying them:
 
-1. **Live facts I could not have known.** [[Idaho]] **repealed § 31-2809** in **2025
+1. **Live facts I could not have known.** Idaho **repealed § 31-2809** in **2025
    S1101** and moved coroner-deputy authority to § 31-3107; Idaho moved **indigent
    public defense to the State Public Defender on Oct 1, 2024.** These are
    **post-cutoff** changes to live law. No amount of careful reasoning from training
@@ -124,6 +124,4 @@ vault's. Where authority is absent, **`*`** stands.
 - **Status:** active
 - **Authority:** LOGAN
 
-###### "The world is quiet here."
-
-#idaho
+###### [["The world is quiet here."]]

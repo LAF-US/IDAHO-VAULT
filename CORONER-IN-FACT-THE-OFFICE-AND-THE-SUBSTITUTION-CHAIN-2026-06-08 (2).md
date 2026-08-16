@@ -16,7 +16,7 @@ tags: [reference, coroner, sheriff, elisor, medical-examiner, idaho-code, common
 # The Coroner in Fact — the Office, and the Sheriff → Coroner → Elisor Substitution Chain
 
 *Compiled 2026-06-08 by Claude Code at Logan's direction — real-world research for the
-home ground ([[Idaho]] Reports / Idaho Public Television), written up from a working
+home ground (Idaho Reports / Idaho Public Television), written up from a working
 exchange. **[history]**, **[statute]**, **[constitution]**, and **[common-law]** are
 sourced inline; **[practice]** is marked structural (not county-by-county); the closing
 **[vault reading]** is fenced as interpretation. **Real law is not vault canon; it is
@@ -167,6 +167,4 @@ disciplines at once:
 - **Status:** active
 - **Authority:** LOGAN
 
-###### "The world is quiet here."
-
-#idaho
+###### [["The world is quiet here."]]

@@ -169,4 +169,4 @@ the office down — the standing answer to the Triumvirate.
   win-condition. Logan named the goal; I derived toward it. The Architect holds the
   verdict.
 
-###### "The world is quiet here."
+###### [["The world is quiet here."]]

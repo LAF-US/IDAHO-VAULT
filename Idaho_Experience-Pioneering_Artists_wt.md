@@ -24,37 +24,37 @@ As the photographs, drawings, and paintings from four western scientific expedit
 
 #### Characters
 
-##### Thomas Moran
+##### [[Thomas Moran]]
 
 - Becomes one of the famous American names in painting; expedition photos
 - Digital copies of paintings in the public domain (Smithsonian, Getty)
 
-##### Timothy O'Sullivan
+##### [[Timothy O'Sullivan]]
 
 - Expedition survey photographer, compared Shoshone Falls to [[Niagara Falls]]
 - Digital copies of photographs in the public domain (Smithsonian, [[U.S. Geological Survey|USGS]])
 
-##### William Henry Jackson
+##### [[William Henry Jackson]]
 
 - Civil War veteran, photographer, business, pro Native Americans, painter
 - Digital copies of photographs in the public domain (Smithsonian, USGS)
 - Digital copies of paintings (300 dpi) available from [[National Parks Service]]
 
-#### Art/Culture/History Interviews
+#### [[Art]]/[[Culture]]/[[History]] [[Interviews]]
 
-##### Nicole Inghilterra
+##### [[Nicole Inghilterra]]
 
 - [[Idaho State Historical Society]]
 
-##### Nakia Williamson-Cloud
+##### [[Nakia Williamson-Cloud]]
 
 - [[Nez Perce Tribe]]
 
-##### Beth Erdey
+##### [[Beth Erdey]]
 
 - National Parks Service
 
-### Settlement in Idaho Territory
+### Settlement in [[Idaho Territory]]
 
  The [[Oregon Trail]] and the [[California Gold Rush]] brought people out west to the coast… People then came east into the mountains, seeking the same things they sought "out west," namely freedom and an opportunity. [[Charles Ostner]] was a wanderer and prolific professionally trained artist who chased opportunities across the country. [[James Castle]] was a self-taught artist who depicted his home. These two men lived in [[Garden Valley]]/[[Boise]] but stand as individual segments.
 
@@ -76,30 +76,30 @@ As the photographs, drawings, and paintings from four western scientific expedit
 
 - Idaho State Historical Society
 
-##### Melanie Fales
+##### [[Melanie Fales]]
 
 - Boise Art Museum
 
-### The Tail End of the Wild West
+### The Tail End of the [[Wild West]]
 
 As the folks living in burgeoning western towns and cities reminisce about the glory days, people are very self-aware during this era about the disappearance of the frontier. Just like the country, Idaho was maturing and figuring out what it wanted to be when it grows up. These two women work best as individual segments, but it may be fun to contrast how much Hallock Foote hated living in Idaho/Boise and how much Edwards Green loved it there.
 
 #### Characters
 
-##### Mary Hallock Foote
+##### [[Mary Hallock Foote]]
 
 - Writer and illustrator, depicted herself as "a Victorian Gentlewoman in the Far West"
 - Homesite at [[Lucky Peak Dam]] with park supported by [[Morrison-Knudsen Foundation]]
 - Digital copies of illustrations in the public domain; "Angle of Repose" book controversy
 
-##### Emma Edwards Green
+##### [[Emma Edwards Green]]
 
 - Illustrator and artist who creates the [[Idaho State Seal]], Boisean
 - Physical works available at Idaho State Archives and some digital copies
 
 #### Art/Culture/History Interviews
 
-##### Stacey Guill
+##### [[Stacey Guill]]
 
 - [[PhD]] author
 
@@ -127,7 +127,7 @@ Just like the still cameras of the years before, the motion picture cameras of [
 
 #### Art/Culture/History Interviews
 
-##### Colin Mannex
+##### [[Colin Mannex]]
 
 - Kenworthy Performing Arts Center
 
@@ -135,11 +135,11 @@ Just like the still cameras of the years before, the motion picture cameras of [
 
 - Nez Perce Tribe
 
-##### Alex Meregaglia
+##### [[Alex Meregaglia]]
 
 - Boise State University
 
-##### Gwyn Hervochon
+##### [[Gwyn Hervochon]]
 
 - Boise State University
 
@@ -149,18 +149,18 @@ Even as new technologies change the world, the tried-and-true methods still stic
 
 #### Characters
 
-##### Joe Breckenridge
+##### [[Joe Breckenridge]]
 
 - Rodeo cowboy, painter and muralist, known for painting as "payment" for beer
 - Physical works at [[Museum of North Idaho]] and real world sites ([[Enaville]], [[Boville]], etc.)
 
-##### Fred Ochi
+##### [[Fred Ochi]]
 
 - Nisei artist and sign painter who avoided EO9066 internment in [[Idaho Falls]]
 - Opened sign-lettering business, faced discrimination, descendants active in the art scene
 - Physical works at [[Museum of Idaho]], digital copies from [[The Art Museum of Eastern Idaho]]
 
-##### Rose Frank
+##### [[Rose Frank]]
 
 - Cornhusk weaving flat bags, [[Columbia Plateau]] practice influenced by settlement
 - Learned practice, [[National Endowment for the Arts]] 1991 Heritage Fellow
@@ -168,11 +168,11 @@ Even as new technologies change the world, the tried-and-true methods still stic
 
 #### Art/Culture/History Interviews
 
-##### Britt Thurman
+##### [[Britt Thurman]]
 
 - Museum of North Idaho
 
-##### Pauli Ochi
+##### [[Pauli Ochi]]
 
 - [[OCHI Gallery]]
 - Fred's granddaughter

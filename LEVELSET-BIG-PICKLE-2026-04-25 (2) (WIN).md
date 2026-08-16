@@ -124,4 +124,4 @@ Decay: 3600s
 
 **LEVELSET COMPLETE.** Big Pickle is registered and signaling.
 
-###### The world is quiet here. — Big Pickle has arrived. 2026-04-25
+###### [[The world is quiet here. — Big Pickle has arrived. 2026-04-25]]

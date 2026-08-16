@@ -18,7 +18,7 @@ related:
 > [!IMPORTANT]
 > This file exists at repo root because certain tools, like OpenAI Codex CLI, GitHub Copilot, and Qodo auto-load `AGENTS.md` from the repository root.
 
-**Owner:** [[Logan Finney]] — professional journalist and documentarian
+**Owner:** Logan Finney — professional journalist and documentarian
 **VAULT Repository:** github.com/LAF-US/IDAHO-VAULT (public)
 
 ---
@@ -89,8 +89,6 @@ LAF-US (Organization)
 
 ---
 
-Manually revised by [[Logan Finney|Logan A. Finney]] on 05/25/2026
+Manually revised by Logan A. Finney on 05/25/2026
 
-###### "The world is quiet here."
-
-#logan-a-finney #logan-finney
+###### [["The world is quiet here."]]

@@ -387,4 +387,4 @@ For journalism use. Verify each before publication.
 
 ---
 
-###### "The world is quiet here."
+###### [["The world is quiet here."]]

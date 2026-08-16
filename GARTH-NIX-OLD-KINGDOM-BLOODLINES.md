@@ -111,31 +111,31 @@ This triple positioning makes Old Kingdom bloodlines distinct from purely geneal
 
 The Charter bloodline system connects to multiple lineage and power frameworks. *(Note: the headings below use Obsidian `[[wikilink]]` syntax, which resolves inside the vault's Obsidian renderer but not in plain GitHub Markdown.)*
 
-### BREED-REPORT
+### [[BREED-REPORT]]
 
 - **Connection**: Prescriptive aspect of bloodlines determining roles and abilities
 - **Parallel**: Like selective breeding programs, Charter bloodlines are cultivated for specific magical purposes
 - **Difference**: Charter bloodlines have magical validation (Charter Marks, abilities) beyond mere genetics
 
-### ROYALTY
+### [[ROYALTY]]
 
 - **Connection**: Royal bloodlines share the prescriptive function of determining rulership
 - **Parallel**: Both systems use bloodline to validate authority. The Royal bloodline (Dyrim) is one of the Four Great Charter Bloodlines
 - **Difference**: Charter bloodlines have active magical components and cosmic connections, not just symbolic heredity
 
-### HERALDRY
+### [[HERALDRY]]
 
 - **Connection**: Charter marks function as heraldic symbols
 - **Parallel**: Both use visual markers to identify lineage and status
 - **Difference**: Charter marks are **magical symbols drawn at birth** that validate Charter Mage status, not merely decorative heraldry
 
-### BENE-GESSERIT
+### [[BENE-GESSERIT]]
 
 - **Connection**: Both are prescriptive systems with specific goals
 - **Parallel**: Long-term planning and selective cultivation to produce desired outcomes (Abhorsen training, Clayr Sight development)
 - **Difference**: Bene Gesserit is human-controlled eugenics; Charter bloodlines are guided by the Charter itself and the sacrifice of the Bright Shiners
 
-### TROUBLE-BUBBLE
+### [[TROUBLE-BUBBLE]]
 
 - **Connection**: The **Disreputable Dog is Kibeth**, one of the **Nine Bright Shiners** (specifically, the Walker). Kibeth retained consciousness and appears as a dog
 - **Parallel**: Mr. Trouble-Bubble Curtis Gonzalez-Finney the Doodle represents a similar concept of immense power in an unexpected, unassuming form

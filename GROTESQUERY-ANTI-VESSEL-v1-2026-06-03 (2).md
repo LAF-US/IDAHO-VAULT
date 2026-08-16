@@ -225,4 +225,4 @@ phylactery. The capstone is the crossing-point.
   "repatriation not deletion," and the vault mappings. The Architect holds the
   verdict.
 
-###### "The world is quiet here."
+###### [["The world is quiet here."]]

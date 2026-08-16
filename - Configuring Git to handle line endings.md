@@ -3,7 +3,7 @@ title: "Configuring Git to handle line endings"
 source: "https://docs.github.com/en/get-started/git-basics/configuring-git-to-handle-line-endings"
 author:
 published:
-created: 2026-08-12
+created: 2026-08-10
 description: "To avoid problems in your diffs, you can configure Git to properly handle line endings."
 ---
 ## About line endings
