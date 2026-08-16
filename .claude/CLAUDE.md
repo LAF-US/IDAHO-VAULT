@@ -1,3 +1,6 @@
+---
+title: CLAUDE
+---
 # CLAUDE.md — IDAHO-VAULT
 
 ---

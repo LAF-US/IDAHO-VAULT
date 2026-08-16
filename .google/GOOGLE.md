@@ -1,3 +1,6 @@
+---
+title: GOOGLE
+---
 # GOOGLE.md — IDAHO-VAULT
 
 **Load mechanism:** This file is NOT auto-loaded by any Google product. It must be manually provided by Logan — pasted into a chat session. It is the designated governance shim for Google ecosystem tools working on IDAHO-VAULT tasks.

@@ -1,4 +1,5 @@
 ---
+title: IPYNB_CHECKPOINTS
 authority: LOGAN
 related:
   - IPYNB_CHECKPOINTS
@@ -6,6 +7,6 @@ related:
   - runtime
 ---
 
-**.ipynb_checkpoints** — Imported software runtime persona.
+**.ipynb_checkpoints** ï¿½ Imported software runtime persona.
 
 ipynb_checkpoints runtime and configuration.

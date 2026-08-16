@@ -1,4 +1,5 @@
 ---
+title: WAITING
 authority: LOGAN
 related:
   - CONSTITUTION

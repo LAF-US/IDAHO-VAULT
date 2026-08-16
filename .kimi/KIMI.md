@@ -1,4 +1,5 @@
 ---
+title: KIMI
 authority: LOGAN
 related:
   - KIMI
@@ -6,6 +7,6 @@ related:
   - runtime
 ---
 
-**.kimi** — Imported software runtime persona.
+**.kimi** ï¿½ Imported software runtime persona.
 
 kimi runtime and configuration.

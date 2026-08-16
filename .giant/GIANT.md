@@ -1,4 +1,5 @@
 ---
+title: GIANT
 authority: LOGAN
 related:
   - GIANT
@@ -6,6 +7,6 @@ related:
   - runtime
 ---
 
-**.giant** — Imported software runtime persona.
+**.giant** ï¿½ Imported software runtime persona.
 
 giant runtime and configuration.

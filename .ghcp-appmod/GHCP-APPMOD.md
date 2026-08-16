@@ -1,4 +1,5 @@
 ---
+title: GHCP-APPMOD
 authority: LOGAN
 related:
   - GHCP-APPMOD
@@ -6,6 +7,6 @@ related:
   - runtime
 ---
 
-**.ghcp-appmod** — Imported software runtime persona.
+**.ghcp-appmod** ï¿½ Imported software runtime persona.
 
 ghcp-appmod runtime and configuration.
