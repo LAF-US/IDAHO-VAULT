@@ -433,7 +433,9 @@ jobs:
                   if "locations" in res and not isinstance(locations, list):
                       problems.append(f"runs[{i}].results[{j}].locations is {type(locations).__name__}, not list")
                       continue
-                  for loc in locations or []:
+                  # Not `locations or []`: that leaves the loop's safety
+                  # resting on the `continue` above rather than on structure.
+                  for loc in (locations if isinstance(locations, list) else []):
                       if not isinstance(loc, dict):
                           problems.append(f"runs[{i}].results[{j}].locations has a {type(loc).__name__}")
                           continue

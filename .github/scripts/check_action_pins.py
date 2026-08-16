@@ -149,7 +149,7 @@ def unpinned_refs(path: Path, text: str) -> list[tuple[int, str]]:
         if EXPRESSION_PATTERN.search(image):
             findings.append((lineno, f"{image} (expression; cannot be resolved to a digest)"))
             continue
-        if _looks_like_dockerfile(image):
+        if _looks_like_dockerfile(image, path):
             # NOT a free pass. `image: Dockerfile.github_action_dockerhub` is
             # how the original hole worked: a repository SHA freezes the
             # Dockerfile TEXT, and that text says `FROM <mutable tag>`, which
@@ -350,8 +350,19 @@ def local_action_files(text: str) -> list[Path]:
     return found
 
 
-def _looks_like_dockerfile(image: str) -> bool:
-    """A build context path rather than a registry reference."""
+def _looks_like_dockerfile(image: str, path: Path) -> bool:
+    """A build context path rather than a registry reference.
+
+    Only ACTION METADATA can name a Dockerfile: `runs.image` is the sole place
+    GitHub builds an image from the repository. A workflow's `container:` or
+    `services:` `image:` is always a registry reference, and Docker tags may
+    contain uppercase — so `image: myorg/app:Dockerfile-base` is a legal
+    registry ref that this heuristic read as a path, then reported as
+    unreadable. Scoping to action.yml/action.yaml removes that whole class;
+    workflow images fall through to the digest rule, which is what they need.
+    """
+    if path.name not in ("action.yml", "action.yaml"):
+        return False
     if image.startswith("docker://"):
         return False
     return "Dockerfile" in image or image.startswith("./") or image.startswith("../")

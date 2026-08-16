@@ -74,7 +74,7 @@ jobs:
       OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
     steps:
       # A local `./` action has to exist on disk, so this job now needs a
-      # checkout it never needed while `uses:` pointed at a remote repo.
+      # a checkout it never needed while `uses:` pointed at a remote repo.
       #
       # It must be the BASE revision, not the default merge ref. On
       # `pull_request` the merge ref contains the contributor's changes — and
