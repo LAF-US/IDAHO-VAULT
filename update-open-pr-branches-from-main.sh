@@ -120,13 +120,13 @@ while IFS=$'\t' read -r number base_ref draft head_sha head_ref head_repo head_l
     continue
   fi
 
-  head_key="${head_repo}:${head_ref}"
-  if is_excluded "$head_key" "${seen_heads[@]}"; then
+  head_identity="${head_repo}:${head_ref}"
+  if is_excluded "$head_identity" "${seen_heads[@]}"; then
     printf '#%-6s %-48s %-25s %s\n' "$number" "$head_ref" '-' 'SKIP: shared source branch'
     ((skipped += 1))
     continue
   fi
-  seen_heads+=("$head_key")
+  seen_heads+=("$head_identity")
 
   compare_head="$head_ref"
   [[ "$head_repo" != "$REPO" ]] && compare_head="$head_label"
