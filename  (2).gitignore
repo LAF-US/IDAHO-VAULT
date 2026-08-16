@@ -1,40 +1,3 @@
-<<<<<<< HEAD
-# The *default* assumption for the VAULT is that things need to be tracked. The *only* exceptions to that sole assumption are **secrets** and **exhaust**. Tread lightly here.
-
-# ---------------------------------------------------------------------------
-# HOW THIS FILE IS SHAPED, AND WHY IT LOOKS ODD
-#
-# Two rules of git that this file is built around:
-#
-#   1. A tracked file is NEVER ignored. Nothing below untracks anything that is
-#      already committed; these patterns govern what can be added from here on.
-#
-#   2. Git does not descend into an excluded DIRECTORY, so a later `!` cannot
-#      rescue a file inside one. `node_modules/` followed by `!**/*.md` loses
-#      the markdown — silently.
-#
-# Rule 2 is why exhaust below is written `dir/**` (contents) plus `!dir/**/`
-# (keep descending into subdirectories) instead of the usual `dir/`. That shape
-# is what lets the markdown re-include at the bottom actually work. 49 markdown
-# files are tracked inside node_modules today; the vault tracks markdown
-# everywhere, and that is preserved deliberately.
-#
-# Verify a change here, do not eyeball it:
-#
-#     git check-ignore --no-index -v <path>     # why is this ignored?
-#     git status --porcelain                    # did anything stop being seen?
-#
-# `--no-index` matters: without it, an already-tracked file always reports as
-# NOT ignored, which makes a broken pattern look like it works.
-# ---------------------------------------------------------------------------
-
-
-# === SECRETS ===============================================================
-# File patterns only — never a bare directory — so nothing here can shadow a
-# markdown file by making git skip a whole tree.
-
-# Environment files
-=======
 # IDAHO-VAULT gitignore
 #
 # First principle: the vault is the record. Markdown notes, structured
@@ -50,18 +13,11 @@
 # ---------------------------------------------------------------------------
 # Secrets and credentials
 # ---------------------------------------------------------------------------
->>>>>>> 684896b8a3040118f438cf44b6f39191676d9845
 .env
 .env.*
 !.env.example
 !.env.template
 .envrc
-<<<<<<< HEAD
-*.env
-!**/*.example.env
-
-# Private keys and certificates
-=======
 
 .op/openrouter.env
 .op/reports/
@@ -79,32 +35,12 @@ oauth*.json
 client_secret*.json
 
 # Private key material and local certificate/key stores.
->>>>>>> 684896b8a3040118f438cf44b6f39191676d9845
 *.pem
 *.key
 *.p12
 *.pfx
 id_rsa
 id_rsa.*
-<<<<<<< HEAD
-id_ecdsa
-id_ecdsa.*
-id_ed25519
-id_ed25519.*
-*.ppk
-
-# Credential and token files
-credentials.json
-.credentials.json
-application_default_credentials.json
-token.json
-tokens.json
-oauth*.json
-client_secret*.json
-auth.json
-.netrc
-.pgpass
-=======
 id_ed25519
 id_ed25519.*
 known_hosts
@@ -127,77 +63,10 @@ Google Passwords.csv
 **/passwords*.csv
 *recovery-codes*
 *recovery_codes*
->>>>>>> 684896b8a3040118f438cf44b6f39191676d9845
 
 # Tool auth state
 .claude/.credentials.json
 .codex/auth.json
-<<<<<<< HEAD
-.mcp.json
-.mcp-auth/
-.op/*.env
-.aws/credentials
-.ssh/id_*
-!.ssh/id_*.pub
-
-# Bulk secret exports and recovery codes must never enter the public record.
-secrets/
-archive-secrets-*.json
-*recovery-codes*
-*.kdbx
-
-
-# === EXHAUST ===============================================================
-# Machine churn: dependency installs, caches, build output, local runtime state.
-# Written as `dir/**` + `!dir/**/` so git keeps descending and the markdown
-# re-include at the bottom still applies. See the note at the top.
-
-# A pattern containing a slash is anchored to THIS directory, so `node_modules/**`
-# would only match a copy at the repo root — `THE-GEMSTONE/node_modules/` would
-# escape it. Tool directories therefore get a `**/` prefix to match at any depth.
-#
-# Names that are ALSO ordinary vault folders (build, dist, logs, tmp, .cache —
-# 83 tracked files live under such paths) are anchored with a leading `/` to the
-# repo root instead. Track-by-default means a note folder called `logs` three
-# levels down is content, not exhaust.
-
-# Dependency installs — unambiguous, any depth
-**/node_modules/**
-!**/node_modules/**/
-**/.venv/**
-!**/.venv/**/
-**/venv/**
-!**/venv/**/
-
-# Python caches — unambiguous, any depth
-**/__pycache__/**
-!**/__pycache__/**/
-*.py[cod]
-**/*.egg-info/**
-!**/*.egg-info/**/
-**/.pytest_cache/**
-!**/.pytest_cache/**/
-**/.mypy_cache/**
-!**/.mypy_cache/**/
-**/.ruff_cache/**
-!**/.ruff_cache/**/
-**/htmlcov/**
-!**/htmlcov/**/
-.coverage
-.coverage.*
-coverage.xml
-
-# Build output — root only; `build`/`dist` are also legitimate vault folder names
-/dist/**
-!/dist/**/
-/build/**
-!/build/**/
-
-# OS and editor droppings
-.DS_Store
-Thumbs.db
-desktop.ini
-=======
 .codex/.codex-global-state.json
 .pi/agent/auth.json
 .gemini/oauth_creds.json
@@ -511,35 +380,10 @@ logs/
 !.vscode/mcp.json
 
 .idea/
->>>>>>> 684896b8a3040118f438cf44b6f39191676d9845
 *.swp
 *.swo
 *~
 
-<<<<<<< HEAD
-# Logs and local runtime state — root only, same reason as build/dist
-*.log
-/logs/**
-!/logs/**/
-/.cache/**
-!/.cache/**/
-/tmp/**
-!/tmp/**/
-
-
-# === THE VAULT'S OWN RULE ==================================================
-# Markdown is the vault. It is tracked wherever it lives, including inside the
-# exhaust above. This is the last word on purpose — in git, the last matching
-# pattern wins, so this overrides everything before it.
-#
-# It cannot rescue a file from an excluded *directory*, which is exactly why no
-# rule above excludes a bare directory. Do not "simplify" `dir/**` + `!dir/**/`
-# back to `dir/` without re-running the check-ignore commands at the top.
-!**/*.md
-!*.md
-
-# ESTO PERPETUA!
-=======
 .DS_Store
 Thumbs.db
 desktop.ini
@@ -656,4 +500,3 @@ idaho-vault-48b78ec18835.json
 
 # Jupyter checkpoint autosaves (regenerable; never the source of truth)
 .ipynb_checkpoints/
->>>>>>> 684896b8a3040118f438cf44b6f39191676d9845

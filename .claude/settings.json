@@ -1,10 +1,11 @@
 {
   "permissions": {
     "allow": [
-      "Read"
+      "Read",
       "WebFetch"
     ]
   },
+  "inputNeededNotifEnabled": true,
   "agentPushNotifEnabled": true,
-  "inputNeededNotifEnabled": true
+  "tui": "fullscreen"
 }

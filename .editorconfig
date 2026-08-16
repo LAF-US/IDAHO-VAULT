@@ -8,22 +8,3 @@ trim_trailing_whitespace = true
 
 [*.md]
 trim_trailing_whitespace = false
-
-# .gitattributes says *.cmd -text (bytes preserved; cmd.exe label/goto
-# scanning misbehaves on bare LF). Editors write CRLF; git won't touch it.
-[*.cmd]
-end_of_line = crlf
-
-# .gitattributes says *.csv -text (data fidelity; RFC 4180 endings).
-[*.csv]
-end_of_line = unset
-insert_final_newline = unset
-trim_trailing_whitespace = unset
-
-# Binary store: never let an editor normalize anything under .ollama
-# (model-blob corruption incident, 2026-08-11). Mirrors /.ollama/** -text.
-[.ollama/**]
-charset = unset
-end_of_line = unset
-insert_final_newline = unset
-trim_trailing_whitespace = unset
