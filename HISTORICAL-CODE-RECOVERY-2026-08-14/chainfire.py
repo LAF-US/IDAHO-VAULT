@@ -250,24 +250,32 @@ def process_file(filepath, vault_root, execute=False):
     changes["changed"] = True
 
     if execute:
-        original_mode = stat.S_IMODE(filepath.stat().st_mode)
-        descriptor, temporary_path = tempfile.mkstemp(
-            prefix=f".{filepath.name}.", suffix=".tmp", dir=filepath.parent
-        )
+        descriptor = None
+        temporary_path = None
         try:
+            original_mode = stat.S_IMODE(filepath.stat().st_mode)
+            descriptor, temporary_path = tempfile.mkstemp(
+                prefix=f".{filepath.name}.", suffix=".tmp", dir=filepath.parent
+            )
             with os.fdopen(descriptor, "w", encoding="utf-8") as f:
+                descriptor = None
                 f.write(new_content)
                 f.flush()
                 os.fsync(f.fileno())
             os.chmod(temporary_path, original_mode)
             os.replace(temporary_path, filepath)
-        except OSError:
-            try:
-                os.unlink(temporary_path)
-            except FileNotFoundError:
-                # A failed replace may already have removed the temporary path.
-                pass
-            raise
+        except OSError as error:
+            if descriptor is not None:
+                try:
+                    os.close(descriptor)
+                except OSError:
+                    pass
+            if temporary_path is not None:
+                try:
+                    os.unlink(temporary_path)
+                except OSError:
+                    pass
+            return {"error": str(error)}
 
     return changes
 
