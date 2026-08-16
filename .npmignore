@@ -30,6 +30,9 @@ src/idaho_vault/mock_llm.py
 
 # Documentation
 docs/
+# Clipped reference documents (not part of package distribution)
+*- *.md
+2025-*.md
 
 # Config files
 .editorconfig
