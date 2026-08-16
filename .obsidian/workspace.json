@@ -76,23 +76,6 @@
             }
           },
           {
-            "id": "5c9b200e5b80475c",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2026-08-15.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "pinned": true,
-              "icon": "lucide-file",
-              "title": "2026-08-15"
-            }
-          },
-          {
             "id": "5a3b9c3aeab43929",
             "type": "leaf",
             "pinned": true,
@@ -110,7 +93,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -168,8 +151,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -208,7 +190,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2026.md",
+                "file": "2026-08-15.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               },
@@ -237,7 +219,7 @@
             "state": {
               "type": "footnotes",
               "state": {
-                "file": "2026.md"
+                "file": "2026-08-15.md"
               },
               "icon": "lucide-file-signature",
               "title": "Footnotes"
@@ -286,8 +268,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 360,
-    "collapsed": true
+    "width": 360
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -309,7 +290,7 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "5a3b9c3aeab43929",
+  "active": "68fa3574cdd22001",
   "lastOpenFiles": [
     "hast-util-from-dom",
     "glob/dist/commonjs",
