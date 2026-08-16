@@ -275,7 +275,7 @@ def process_file(filepath, vault_root, execute=False):
                     os.unlink(temporary_path)
                 except OSError:
                     pass
-            return {"error": str(error)}
+            return {"error": f"filesystem write failed ({type(error).__name__})"}
 
     return changes
 
