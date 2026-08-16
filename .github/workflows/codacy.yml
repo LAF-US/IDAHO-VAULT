@@ -205,6 +205,41 @@ jobs:
               container[key] = {}
               return container[key]
 
+          def _sub(container, key):
+              """A nested object, never something `.get` cannot be called on.
+
+              `loc.get("physicalLocation", {})` defaults only when the key is
+              ABSENT. A present-but-non-object value comes straight back, and
+              the chained `.get("artifactLocation")` raises on it.
+              """
+              value = container.get(key)
+              return value if isinstance(value, dict) else {}
+
+          def _objects(container, key, label):
+              """The objects in container[key], dropping whatever is not one.
+
+              `x.get(k, []) or []` looks defensive and is not: a present dict or
+              string is truthy, so it survives, gets iterated -- yielding keys
+              or characters -- and the `.get` inside the loop raises. Every
+              array this script walks goes through here instead.
+              """
+              value = container.get(key)
+              if value is None:
+                  return []
+              if not isinstance(value, list):
+                  repairs.append(f"{label} was {type(value).__name__}, treated as empty")
+                  container[key] = []
+                  return []
+              usable = [item for item in value if isinstance(item, dict)]
+              if len(usable) != len(value):
+                  repairs.append(f"{label} dropped {len(value) - len(usable)} non-object entries")
+                  # Write back, not just filter: returning a clean list while
+                  # leaving the junk in the document means the uploader still
+                  # rejects it, and anything downstream that re-reads the key
+                  # gets the junk again.
+                  container[key] = usable
+              return usable
+
           # Same reasoning one level up: `runs` itself, and each entry in it,
           # are read with `.get`/`.setdefault` below and would crash on a
           # non-object just as surely.
@@ -284,20 +319,10 @@ jobs:
                       )
                       comp["rules"] = []
               kept = []
-              # Same fail-safe as above: a non-list `results` would make this
-              # `for` raise, and a non-object entry would break `.get` inside.
-              raw_results = run.get("results")
-              if raw_results is not None and not isinstance(raw_results, list):
-                  repairs.append(f"runs[{i}].results was {type(raw_results).__name__}, coerced to []")
-                  raw_results = []
-              for res in raw_results or []:
-                  if not isinstance(res, dict):
-                      repairs.append(f"runs[{i}].results dropped a {type(res).__name__} entry")
-                      dropped_total += 1
-                      continue
+              for res in _objects(run, "results", f"runs[{i}].results"):
                   excluded = False
-                  for loc in res.get("locations", []) or []:
-                      art = loc.get("physicalLocation", {}).get("artifactLocation", {})
+                  for loc in _objects(res, "locations", f"runs[{i}].results[].locations"):
+                      art = _sub(_sub(loc, "physicalLocation"), "artifactLocation")
                       if "uri" in art:
                           art["uri"] = relativise(art["uri"])
                           # index points into run.artifacts, which is not
@@ -311,8 +336,8 @@ jobs:
                       kept.append(res)
               run["results"] = kept
               kept_total += len(kept)
-              for art in run.get("artifacts", []) or []:
-                  loc = art.get("location", {})
+              for art in _objects(run, "artifacts", f"runs[{i}].artifacts"):
+                  loc = _sub(art, "location")
                   if "uri" in loc:
                       loc["uri"] = relativise(loc["uri"])
 
@@ -348,17 +373,36 @@ jobs:
           # plainly because the earlier version of this comment claimed these
           # "read the raw values", which was false and would have made a dead
           # assertion look like live cover.
+          # Reached via _sub, so a malformed document that slipped the
+          # normalisation is REPORTED here rather than raising. A validator
+          # that crashes on the input it exists to judge tells you nothing
+          # about the input.
           problems = []
           for i, run in enumerate(runs):
-              rules = run.get("tool", {}).get("driver", {}).get("rules")
+              driver = _sub(_sub(run, "tool"), "driver")
+              rules = driver.get("rules")
               if not isinstance(rules, list):
                   problems.append(f"runs[{i}].tool.driver.rules is {type(rules).__name__}, not list")
-              if not run.get("tool", {}).get("driver", {}).get("name"):
+              if not driver.get("name"):
                   problems.append(f"runs[{i}].tool.driver.name is missing")
-              for j, res in enumerate(run.get("results", [])):
-                  for loc in res.get("locations", []):
-                      uri = loc.get("physicalLocation", {}).get("artifactLocation", {}).get("uri", "")
-                      if uri.startswith(("/", "file:")):
+              results = run.get("results")
+              if not isinstance(results, list):
+                  problems.append(f"runs[{i}].results is {type(results).__name__}, not list")
+                  results = []
+              for j, res in enumerate(results):
+                  if not isinstance(res, dict):
+                      problems.append(f"runs[{i}].results[{j}] is {type(res).__name__}, not object")
+                      continue
+                  locations = res.get("locations")
+                  if locations is not None and not isinstance(locations, list):
+                      problems.append(f"runs[{i}].results[{j}].locations is {type(locations).__name__}, not list")
+                      continue
+                  for loc in locations or []:
+                      if not isinstance(loc, dict):
+                          problems.append(f"runs[{i}].results[{j}].locations has a {type(loc).__name__}")
+                          continue
+                      uri = _sub(_sub(loc, "physicalLocation"), "artifactLocation").get("uri", "")
+                      if isinstance(uri, str) and uri.startswith(("/", "file:")):
                           problems.append(f"runs[{i}].results[{j}] still absolute: {uri}")
           if problems:
               print("SARIF failed pre-upload validation:", file=sys.stderr)
