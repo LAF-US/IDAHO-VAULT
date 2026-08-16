@@ -191,13 +191,19 @@ def _logical_lines(text: str) -> list[tuple[int, str]]:
     escape = "\\"
     for line in lines:
         stripped = line.strip()
-        if not stripped:
-            continue
+        # Docker stops looking for parser directives at the first blank line,
+        # instruction, or comment that is not itself a directive. Skipping
+        # blanks and reading past ordinary comments honoured an `# escape=`
+        # Docker would ignore, joined continuations with the wrong character,
+        # and so missed the FROM — a false negative in a supply-chain guard.
         if not stripped.startswith("#"):
             break
-        directive = re.match(r"#\s*escape\s*=\s*(\S)\s*$", stripped, re.IGNORECASE)
-        if directive and directive.group(1) in ("\\", "`"):
-            escape = directive.group(1)
+        directive = re.match(r"#\s*(\w+)\s*=\s*(\S+)\s*$", stripped)
+        if not directive:
+            break
+        if directive.group(1).lower() == "escape":
+            if directive.group(2) in ("\\", "`"):
+                escape = directive.group(2)
             break
 
     out: list[tuple[int, str]] = []
@@ -368,8 +374,13 @@ def main() -> int:
         if readable is None:
             findings.append(f"{rel}: {reason}")
             continue
-        queue.extend(local_action_files(path))
-        for lineno, ref in unpinned_refs(path):
+        # Read the path that was VERIFIED, not the one that was named. They
+        # denote the same file here, but handing the readers `path` left the
+        # check and the read describing two different objects, which is how a
+        # later edit quietly drifts one away from the other. `rel` still comes
+        # from `path`, so findings name the file as the repository sees it.
+        queue.extend(local_action_files(readable))
+        for lineno, ref in unpinned_refs(readable):
             findings.append(f"{rel}:{lineno}: {ref}")
     findings.sort()
 
