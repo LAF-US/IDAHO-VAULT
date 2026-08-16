@@ -31,3 +31,4 @@ Sun **Virgo** · Moon **Scorpio** · Rising **Scorpio** — a "double Scorpio"
 #idaho
 
  #logan-finney
+ #logan-a-finney

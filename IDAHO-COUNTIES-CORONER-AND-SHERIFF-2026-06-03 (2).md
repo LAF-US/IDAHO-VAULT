@@ -15,7 +15,7 @@ tags: [reference, idaho, counties, coroner, sheriff, idaho-code, real-world, jou
 # Idaho — Counties, and the Coroner & the Sheriff
 
 *Compiled 2026-06-03 by Claude Code at Logan's direction — real-world research on the
-home ground (Idaho Reports / Idaho Public Television). **[history]**, **[statute]**,
+home ground ([[Idaho]] Reports / Idaho Public Television). **[history]**, **[statute]**,
 and **[constitution]** are sourced inline; **[practice]** is marked as structural (not
 county-by-county), and the **[vault reading]** is fenced as interpretation. The
 companion `COUNTY-ETYMOLOGY-AND-HISTORY` carries the deep etymology this note builds
@@ -270,4 +270,6 @@ Execute; do not reign.**
 - **Status:** active
 - **Authority:** LOGAN
 
-###### [["The world is quiet here."]]
+###### "The world is quiet here."
+
+#idaho

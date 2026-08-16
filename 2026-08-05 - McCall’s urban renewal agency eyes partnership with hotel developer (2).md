@@ -103,4 +103,4 @@ City of McCall - Visiting? 2:1
 
 Manchester planned to build a 150-room hotel and convention center called the Payette Lake Lodge to kickstart the district’s tax increment collections. Instead, he sold the property, which later was subdivided into the Mill Park Subdivision near Mile High Marina.
 
-<iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=REDACTED_GOOGLE_API_KEY&amp;zoom=16&amp;maptype=roadmap&amp;q=400+N.+Third+St.%2C+McCall%2C+ID" title="Google map of 400 N. Third St., McCall, ID"></iframe>
+<iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&amp;zoom=16&amp;maptype=roadmap&amp;q=400+N.+Third+St.%2C+McCall%2C+ID" title="Google map of 400 N. Third St., McCall, ID"></iframe>

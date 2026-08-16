@@ -92,4 +92,4 @@ The defense is the same the parent node names: hold separation against the Caesa
 
 ---
 
-###### [["The world is quiet here."]]
+###### "The world is quiet here."

@@ -3,7 +3,7 @@ tags:
   - Category/Facet/Speeches
 date: 1937-09-27
 ---
-# [[Franklin Roosevelt|Franklin D. Roosevelt]], 32nd President of the United States,  Remarks at Boise, Idaho
+# Franklin D. Roosevelt, 32nd President of the United States,  Remarks at Boise, Idaho
 
 *September 27, 1937*
 
@@ -19,7 +19,7 @@ There is something about children and trees that makes me think of permanence an
 
 One reason why a President of the United States ought to travel throughout the country and become familiar with every State is that he has a great obligation to think about the days when he will no longer be President, to think about the next generation and the generation after that.
 
-That is one reason why I am particularly glad on this trip to see a part of Idaho which I have never seen before. I had travelled through the eastern part of the State and the northern part of the State and now I am seeing something new, something that makes me very proud of this part of the country.
+That is one reason why I am particularly glad on this trip to see a part of [[Idaho]] which I have never seen before. I had travelled through the eastern part of the State and the northern part of the State and now I am seeing something new, something that makes me very proud of this part of the country.
 
 And in these travels I am not just thinking of the- what shall I call them?—the more or less petty problems of the day, the quarrels, the disputes of the moment. I am trying to think about the bigger objectives of American life, to think about planning.
 
@@ -34,3 +34,5 @@ I wish I could physically take the time to spend more days and more weeks going 
 ---
 
 - [[1937 FDR - Boise Motorcade]]
+
+#idaho

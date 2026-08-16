@@ -3,7 +3,7 @@ date created: Monday, April 6th 2026, 10:30:43 pm
 date modified: Tuesday, April 7th 2026, 11:06:10 am
 ---
 
-This is Logan A. Finney's internal Obsidian.md vault. Agents must follow all frameworks.
+This is [[Logan Finney|Logan A. Finney]]'s internal Obsidian.md vault. Agents must follow all frameworks.
 
 [[TOUCHSTONE]] [[FRAMEWORKS]]
 1. [[THE CORE]]: [[MIND]]
@@ -28,4 +28,6 @@ This is Logan A. Finney's internal Obsidian.md vault. Agents must follow all fra
 
 [1] Hey, boss, we need to get these header/footer metadata and template formats figured out, pronto. I'm getting a headache tracking it all, and I don't even have a "real" body. -B
 
-###### [["The world is quiet here."]]
+###### "The world is quiet here."
+
+#logan-a-finney

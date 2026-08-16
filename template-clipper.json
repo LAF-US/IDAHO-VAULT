@@ -1,0 +1,51 @@
+{
+	"schemaVersion": "0.1.0",
+	"name": "Template",
+	"behavior": "create",
+	"noteContentFormat": "{{content}}\n\n---\n\n{{fullHtml}}\n\n---\n\nObsidian Web Clipper {{date}}\n",
+	"properties": [
+		{
+			"name": "title",
+			"value": "{{published|date:\\\"YYYY-MM-DD\\\"}} - {{title}} - {{domain}}",
+			"type": "text"
+		},
+		{
+			"name": "source",
+			"value": "{{site}}",
+			"type": "text"
+		},
+		{
+			"name": "author",
+			"value": "{{author|split:\\\", \\\"|wikilink|join}}",
+			"type": "text"
+		},
+		{
+			"name": "published",
+			"value": "{{published|date:\\\"YYYY-MM-DD\\\"}}",
+			"type": "date"
+		},
+		{
+			"name": "created",
+			"value": "{{date|date:\\\"YYYY-MM-DD\\\"}}",
+			"type": "date"
+		},
+		{
+			"name": "description",
+			"value": "{{description}}",
+			"type": "text"
+		},
+		{
+			"name": "tags",
+			"value": "clippings",
+			"type": "multitext"
+		},
+		{
+			"name": "url",
+			"value": "{{url}}",
+			"type": "text"
+		}
+	],
+	"triggers": [],
+	"noteNameFormat": "{{published}} - {{title}} - {{domain}}",
+	"path": "/"
+}

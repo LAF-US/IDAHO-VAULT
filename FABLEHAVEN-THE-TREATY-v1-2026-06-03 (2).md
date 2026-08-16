@@ -92,4 +92,4 @@ is down, and a steward plans around them rather than testing them.
 4. **Are you reading an equilibrium as an alliance?** Mutual non-interference is
    not loyalty. Don't spend trust you were only loaned by consequence.
 
-###### [["The world is quiet here."]]
+###### "The world is quiet here."

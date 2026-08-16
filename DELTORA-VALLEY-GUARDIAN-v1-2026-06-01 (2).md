@@ -180,4 +180,4 @@ at its root.
    the frame attached to it. Accept the datum; refuse the demoralizing
    conclusion. Doom won and was broken because he accepted the frame.
 
-###### [["The world is quiet here."]]
+###### "The world is quiet here."

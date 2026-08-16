@@ -65,4 +65,4 @@ The Willises plan to stay in Smith’s Ferry. Willis said he will continue to wo
 
 St. Luke's Health Plan - 2026 2:1
 
-<iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=REDACTED_GOOGLE_API_KEY&amp;zoom=11&amp;maptype=roadmap&amp;q=Cougar+Mountain+Lodge%2C+Smiths+Ferry%2C+Idaho" title="Google map of Cougar Mountain Lodge, Smiths Ferry, Idaho"></iframe>
+<iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&amp;zoom=11&amp;maptype=roadmap&amp;q=Cougar+Mountain+Lodge%2C+Smiths+Ferry%2C+Idaho" title="Google map of Cougar Mountain Lodge, Smiths Ferry, Idaho"></iframe>

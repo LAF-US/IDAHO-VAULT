@@ -71,6 +71,6 @@ The project is largely allowed by the city’s zoning code to move forward with 
 
 Regence - 2:1 - Business Grow
 
-<iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=REDACTED_GOOGLE_API_KEY&amp;zoom=16&amp;maptype=roadmap&amp;q=2850+W.+Fletcher+St.%2C+Boise%2C+ID" title="Google map of 2850 W. Fletcher St., Boise, ID"></iframe>
+<iframe width="100%" height="100%" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBAM2o7PiQqwk15LC1XRH2e_KJ-jUa7KYk&amp;zoom=16&amp;maptype=roadmap&amp;q=2850+W.+Fletcher+St.%2C+Boise%2C+ID" title="Google map of 2850 W. Fletcher St., Boise, ID"></iframe>
 
 ---

@@ -118,4 +118,4 @@ Logan.*
 - **Status:** active
 - **Authority:** LOGAN
 
-###### [["The world is quiet here."]]
+###### "The world is quiet here."

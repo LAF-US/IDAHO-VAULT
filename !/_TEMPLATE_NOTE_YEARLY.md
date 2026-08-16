@@ -1,4 +1,10 @@
 ---
-title: _TEMPLATE_NOTE_YEARLY
+title: "{{title}}"
 template: _TEMPLATE_NOTE_YEARLY
 ---
+
+---
+
+```text
+The world is quiet here．
+```

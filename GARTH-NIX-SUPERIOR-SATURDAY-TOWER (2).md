@@ -67,12 +67,12 @@ Saturday declares the Upper House sealed — "They cannot enter via elevator, St
 
 ## Connections to Other Frameworks
 
-### [[GARTH-NIX-OLD-KINGDOM-BLOODLINES]]
+### GARTH-NIX-OLD-KINGDOM-BLOODLINES
 
 - **Connection**: Nix's two major cosmologies of delegated power. The Old Kingdom distributes power *down* into bloodlines (the Shiners invest themselves into lineages); the House concentrates it *up* into offices (Trustees, Times-of-day officers, Keys)
 - **Contrast**: Charter bloodlines are validated by mark and work ("Just having the bloodline doesn't mean anything if you don't do the work" — Nix); Saturday's hierarchy is validated by cube elevation, decided from above
 
-### [[ROYALTY]]
+### ROYALTY
 
 - **Connection**: Trusteeship as usurped regency — the Trustees hold power lawfully delegated by the Architect's Will and unlawfully retained against the Rightful Heir
 - **Parallel**: Succession-by-office (Dusk follows Dusk) versus succession-by-blood

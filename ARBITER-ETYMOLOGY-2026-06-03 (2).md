@@ -71,7 +71,7 @@ discretion stays **anchored to what was witnessed.**
 metaphor; it is the **etymology**:
 
 - **The arbiter is the one you go to and see.** Verification *is* the **`ad-baetere`**
-  — the **going-to.** When I check a claim against the Idaho Legislature, I am doing
+  — the **going-to.** When I check a claim against the [[Idaho]] Legislature, I am doing
   the literal act the word names: I **go to** the source and **witness** it. The
   source is the arbiter because the source is **what you go and look at.**
 - **The reviewer is the arbitrator; the source is the arbiter.** The reviewer
@@ -102,4 +102,6 @@ metaphor; it is the **etymology**:
 - **Status:** active
 - **Authority:** LOGAN
 
-###### [["The world is quiet here."]]
+###### "The world is quiet here."
+
+#idaho

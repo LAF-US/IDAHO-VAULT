@@ -240,4 +240,4 @@ and the session id is the constant:
 Not a ruling. Not an amendment. A discrepancy, placed where the Architect can
 see it.
 
-###### [["The world is quiet here."]]
+###### "The world is quiet here."

@@ -1,0 +1,1867 @@
+---
+title: "2026-08-14T06:30:00-07:00 - Northwest Faith News: Wildfires, Schools & Community Aid - favs.news"
+source: "FāVS News"
+author:
+  - "[[FāVS News]]"
+published: 2026-08-14
+created: 2026-08-14
+description: "Catch up on Northwest faith news, including wildfire relief, LGBTQ+ services, back-to-school resources and Christian education."
+tags:
+  - "clippings"
+url: "https://favs.news/northwest-faith-news-wildfires-community-aid/?mc_cid=20db6df612&mc_eid=3d9119f76a"
+---
+## FāVS Religion News Roundup: Aug. 14
+
+Date:
+
+Related stories
+
+[Commentary](https://favs.news/commentary/)
+
+Learn how to support wildfire survivors through grief, recovery and rebuilding, with practical ways to offer care, patience, prayer and hope.
+
+[Eastern Washington](https://favs.news/news/eastern-washington/)
+
+Spokane-area teens postponed a Montana backpacking trip to help neighbors clear debris and recover from the devastating Fairview Fire.
+
+[Eastern Washington](https://favs.news/news/eastern-washington/)
+
+A historic 1904 church in Quincy, Washington, has found new life as a place of worship, community events and local history.
+
+Our Sponsors
+
+***Eastern Washington***
+
+## Churches among properties lost, spared in Old Trails fire
+
+Several churches and faith-affiliated properties were among the more than 900 structures destroyed, damaged or threatened by the wind-driven Old Trails fire burning near Spokane since Aug. 1, according to the Spokesman-Review. Riverside Real Life, on Nine Mile Road, was destroyed, with only brick pillars, metal poles and the foundation left standing. Pastor Kelly Armstrong has told the congregation in video updates that the church “is not a building,” and Real Life is working with an international relief agency on long-term recovery. Fairmount Memorial Park lost its maintenance building and an irrigation pump house, and its mausoleum sustained smoke damage and broken windows, though headstones and crypts appeared largely unaffected.
+
+Two other congregations had closer calls but came through unharmed. New Horizons Community Church was untouched even as nearby fields burned, and Assumption Parish Catholic School and Church also escaped damage, though its principal said many families connected to the parish have been affected by the broader wildfires.
+
+The full extent of the damage remains unknown, the Spokesman-Review [reported](https://www.spokesman.com/stories/2026/aug/09/rifle-club-church-destroyed-in-old-trails-fire-oth/), as the fire continues burning and Level 3 evacuation orders stay in effect.
+
+## Church sends three semitrucks of aid to Eastern Washington wildfire evacuees
+
+The Church of Jesus Christ of Latter-day Saints is sending three semitrucks of relief supplies to Spokane as wildfires across eastern Washington force thousands of residents to evacuate. One truck will carry water, while two will deliver food. Church members and local leaders are also coordinating temporary housing, meals, pastoral care and other assistance for displaced families.
+
+The Spokane Wildfire Complex, including the Old Trails, Autumn Lane and Fairview fires, has destroyed more than buildings and prompted more than 67,000 evacuations. Church leaders expressed gratitude to first responders, volunteers and community organizations supporting the recovery. Members have opened homes and meetinghouses to evacuees and are assisting with relief efforts. Church officials encourage residents to follow evacuation orders, pray and seek opportunities.
+
+***Western Washington***
+
+## Seattle Council considers $300K for LGBTQ+ service groups
+
+Seattle City Council is considering a $300,000 allocation to support LGBTQ+ organizations responding to an increase in queer and transgender people relocating to the city after facing hostility elsewhere. The council’s Finance, Native Communities & Tribal Governments Committee approved the proposed budget amendment Aug. 4, directing JumpStart Fund money to the Seattle Human Services Department.
+
+If approved by the full council, the funding could help organizations provide emergency shelter, housing, employment assistance, food support and other essential services. LGBTQ+ advocates have urged Seattle officials to provide more resources, saying local groups lack capacity to meet growing demand. Some have also called for a state of emergency, but city officials have rejected that proposal while exploring alternatives with the Seattle LGBTQ Commission. The council is expected to decide on the funding.
+
+***Central Washington***
+
+## Tri-Cities Back-to-School Bash to Provide Free Haircuts, Supplies and Health Services
+
+Tri-Cities families can access free back-to-school services Monday, Aug. 17, at the HAPO Center in Pasco. Lutheran Community Services Northwest, Communities in Schools Benton-Franklin and SOZO Church expect about 2,500 students at the seventh annual event. From 4 to 6:30 p.m., students of all ages can receive free backpacks, school supplies, haircuts, dental care, health screenings, vaccines, sports physicals, books and family resources. No registration or identification is required.
+
+Organizers say rising school-supply costs and medical expenses can prevent children from participating in school activities, making the event a one-stop resource for families. Other [local back-to-school events](https://www.newsbreak.com/tri-city-herald-1592585/4823288098664-free-haircuts-school-supplies-more-at-biggest-back-to-school-bash-in-tri-cities) include free backpacks from Tri-Cities Community Health, a school festival by Domestic Violence Services and activities at Columbia Center Mall. Additional supply giveaways are planned later in August.
+
+***Idaho***
+
+## Idaho Supreme Court dismisses lawsuit against Diocese of Boise
+
+The Idaho Supreme Court [dismissed a lawsuit](https://www.ncwlife.com/news/northwest/idaho-supreme-court-boise-diocese-abuse-lawsuit-dismissed/article_50810dd1-9707-5ce0-9c54-bc32e0fcdc38.html) against the Roman Catholic Diocese of Boise and St. Mary’s Catholic Church in Moscow on Tuesday, finding insufficient evidence of constructive fraud in an alleged 1968 sexual abuse case, according to ncwlife.com. Peter Steven Leriget alleged he was assaulted at age 9 by the Rev. Patrick O’Sullivan, a priest at St. Mary’s, while O’Sullivan was babysitting him; O’Sullivan died in 1993, and Leriget first disclosed the allegations to a therapist in 2019 before filing suit in 2021.
+
+Leriget argued the diocese committed fraud by presenting priests as universally “holy, safe and trustworthy,” creating a relationship of trust that O’Sullivan exploited, the outlet reported. The court found no evidence Leriget had a heightened relationship with the church, such as serving as an altar boy, or that the diocese sponsored O’Sullivan’s visits to the family home or endorsed babysitting as a priestly duty. Citing a lack of evidence the diocese knew of abuse by O’Sullivan or other priests before 1985, the court upheld the lower court’s summary judgment ruling.
+
+## North Idaho school turns rural community into a Christian mission field
+
+Foundations School in Naples, Idaho, is transforming a former greenhouse into a K-12 Christian school focused on helping struggling students develop practical skills and spiritual foundations. Founded by Charli Turner three years ago with 18 students, the school has grown to about 60 and now serves families from across North Idaho and into Canada.
+
+The school emphasizes individualized learning, trade exposure and faith-based education. Students visit local businesses such as sawmills and meatpacking plants while participating in prayer and Christian activities. Tuition is $6,000 annually, with financial assistance available for some families.
+
+Turner and principal Julie Montgomery see the school as a local mission serving children facing academic, emotional and family challenges. The school also operates worship gatherings, a daycare and plans for a mercantile and coffee business to support students and fund its mission. Read more here at [ReligionUnplugged](https://religionunplugged.com/news/2026/8/7/idaho-christian-school-religion-education).
+
+---
+
+[***FāVS News***](https://favs.news/newsletters/) ***uses*** [***professional journalists***](https://favs.news/news/) ***and*** [***thoughtful commentary***](https://favs.news/commentary/) ***to explore faith, values and ethics. Support journalism like this by making a tax-deductible*** [***donation***](https://favs.news/donate-to-favs-news/)***. FāVS is a 501(c)(3) nonprofit. © FāVS News. All rights reserved. Reproduction permitted only to authorized media partners or with written permission.***
+
+---
+
+<html lang="en-US" prefix="og: https://ogp.me/ns#" class=" td-md-is-chrome" data-scribe-recorder-ready="true"><head><meta http-equiv="origin-trial" content="A7vZI3v+Gz7JfuRolKNM4Aff6zaGuT7X0mf3wtoZTnKv6497cVMnhy03KDqX7kBz/q/iidW7srW31oQbBt4VhgoAAACUeyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGUuY29tOjQ0MyIsImZlYXR1cmUiOiJEaXNhYmxlVGhpcmRQYXJ0eVN0b3JhZ2VQYXJ0aXRpb25pbmczIiwiZXhwaXJ5IjoxNzU3OTgwODAwLCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ==">
+<title>Northwest Faith News: Wildfires, Schools &amp; Community Aid</title>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="pingback" href="https://favs.news/xmlrpc.php">
+    
+            
+        
+            
+        <link rel="icon" type="image/png" href="https://favs.wdwstaging.com/wp-content/uploads/2023/08/SimpleMark_Color.png">
+<!-- Search Engine Optimization by Rank Math PRO - https://rankmath.com/ -->
+<meta name="description" content="Catch up on Northwest faith news, including wildfire relief, LGBTQ+ services, back-to-school resources and Christian education.">
+<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
+<link rel="canonical" href="https://favs.news/northwest-faith-news-wildfires-community-aid/">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Northwest Faith News: Wildfires, Schools &amp; Community Aid">
+<meta property="og:description" content="Catch up on Northwest faith news, including wildfire relief, LGBTQ+ services, back-to-school resources and Christian education.">
+<meta property="og:url" content="https://favs.news/northwest-faith-news-wildfires-community-aid/">
+<meta property="og:site_name" content="FāVS News">
+<meta property="article:publisher" content="https://www.facebook.com/FAVSNews">
+<meta property="article:tag" content="faith">
+<meta property="article:tag" content="idaho">
+<meta property="article:tag" content="news">
+<meta property="article:tag" content="oregon">
+<meta property="article:tag" content="religion">
+<meta property="article:tag" content="religion news">
+<meta property="article:tag" content="seattle">
+<meta property="article:tag" content="spokane">
+<meta property="article:tag" content="washington">
+<meta property="article:section" content="Featured">
+<meta property="fb:admins" content="100068160098605">
+<meta property="og:image" content="https://favs.news/wp-content/uploads/2025/05/Religion-News-Roundup-1030x687.jpg">
+<meta property="og:image:secure_url" content="https://favs.news/wp-content/uploads/2025/05/Religion-News-Roundup-1030x687.jpg">
+<meta property="og:image:width" content="696">
+<meta property="og:image:height" content="464">
+<meta property="og:image:alt" content="FāVS news roundup spokane">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="article:published_time" content="2026-08-14T06:30:00-07:00">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Northwest Faith News: Wildfires, Schools &amp; Community Aid">
+<meta name="twitter:description" content="Catch up on Northwest faith news, including wildfire relief, LGBTQ+ services, back-to-school resources and Christian education.">
+<meta name="twitter:site" content="@spokanefavs">
+<meta name="twitter:creator" content="@spokanefavs">
+<meta name="twitter:image" content="https://favs.news/wp-content/uploads/2025/05/Religion-News-Roundup-1030x687.jpg">
+<meta name="twitter:label1" content="Written by">
+<meta name="twitter:data1" content="FāVS News">
+<meta name="twitter:label2" content="Time to read">
+<meta name="twitter:data2" content="5 minutes">
+
+<!-- /Rank Math WordPress SEO plugin -->
+
+<link rel="dns-prefetch" href="//flux.broadstreet.ai">
+<link rel="dns-prefetch" href="//cdn.broadstreetads.com">
+<link rel="dns-prefetch" href="//fd.cleantalk.org">
+<link rel="dns-prefetch" href="//www.google.com">
+
+<link rel="dns-prefetch" href="//www.googletagmanager.com">
+<link rel="alternate" type="application/rss+xml" title="FāVS News » Feed" href="https://favs.news/feed/">
+<link rel="alternate" type="application/rss+xml" title="FāVS News » Comments Feed" href="https://favs.news/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="FāVS News » FāVS Religion News Roundup: Aug. 14 Comments Feed" href="https://favs.news/northwest-faith-news-wildfires-community-aid/feed/">
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://favs.news/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ffavs.news%2Fnorthwest-faith-news-wildfires-community-aid%2F">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://favs.news/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ffavs.news%2Fnorthwest-faith-news-wildfires-community-aid%2F&amp;format=xml">
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" id="automatic-youtube-gallery-public-css" href="https://favs.news/wp-content/plugins/automatic-youtube-gallery/public/assets/css/public.min.css?ver=2.9.0" media="all">
+<link rel="stylesheet" id="cleantalk-public-css-css" href="https://favs.news/wp-content/plugins/cleantalk-spam-protect/css/cleantalk-public.min.css?ver=6.85_1785948312" media="all">
+<link rel="stylesheet" id="cleantalk-email-decoder-css-css" href="https://favs.news/wp-content/plugins/cleantalk-spam-protect/css/cleantalk-email-decoder.min.css?ver=6.85_1785948312" media="all">
+<link rel="stylesheet" id="cleantalk-trp-css-css" href="https://favs.news/wp-content/plugins/cleantalk-spam-protect/css/cleantalk-trp.min.css?ver=6.85_1785948312" media="all">
+<link rel="stylesheet" id="dntplgn_style-css" href="https://favs.news/wp-content/plugins/recurring-donation/css/style.css?ver=7.0.4" media="all">
+<link rel="stylesheet" id="jquery_ui_style-css" href="https://favs.news/wp-content/plugins/recurring-donation/css/jquery-ui-styles.css?ver=7.0.4" media="all">
+<link rel="stylesheet" id="td-plugin-multi-purpose-css" href="https://favs.news/wp-content/plugins/td-composer/td-multi-purpose/style.css?ver=24bdf165210ee140fe39121d607795ed" media="all">
+<link rel="stylesheet" id="google-fonts-style-css" href="https://fonts.googleapis.com/css?family=Chivo:400,500,700|Ubuntu:400,500,700|Open+Sans:400,600,700,500|Roboto:400,600,700,500|Ubuntu:700,500,600,900,400|Chivo:900,600,400,500,700|Red%20Hat%20Display:500,400&amp;display=swap&amp;ver=12.7.6" media="all">
+<link rel="stylesheet" id="searchwp-live-search-css" href="https://favs.news/wp-content/plugins/searchwp-live-ajax-search/assets/styles/style.min.css?ver=1.8.8" media="all">
+
+<link rel="stylesheet" id="wpdiscuz-frontend-css-css" href="https://favs.news/wp-content/plugins/wpdiscuz/themes/default/style.css?ver=7.6.63" media="all">
+
+<link rel="stylesheet" id="wpdiscuz-fa-css" href="https://favs.news/wp-content/plugins/wpdiscuz/assets/third-party/font-awesome-5.13.0/css/fa.min.css?ver=7.6.63" media="all">
+<link rel="stylesheet" id="wpdiscuz-combo-css-css" href="https://favs.news/wp-content/plugins/wpdiscuz/assets/css/wpdiscuz-combo.min.css?ver=7.0.4" media="all">
+<link rel="stylesheet" id="td-theme-css" href="https://favs.news/wp-content/themes/Newspaper/style.css?ver=12.7.6" media="all">
+
+<link rel="stylesheet" id="td-theme-child-css" href="https://favs.news/wp-content/themes/Favs-news-child/style.css?ver=12.7.6c" media="all">
+
+<link rel="stylesheet" id="td-legacy-framework-front-style-css" href="https://favs.news/wp-content/plugins/td-composer/legacy/Newspaper/assets/css/td_legacy_main.css?ver=24bdf165210ee140fe39121d607795ed" media="all">
+<link rel="stylesheet" id="tdb_style_cloud_templates_front-css" href="https://favs.news/wp-content/plugins/td-cloud-library/assets/css/tdb_main.css?ver=8280ce6b395b9467b91f1ab93b09b985" media="all">
+
+
+
+
+
+
+
+
+
+
+<link rel="https://api.w.org/" href="https://favs.news/wp-json/"><link rel="alternate" title="JSON" type="application/json" href="https://favs.news/wp-json/wp/v2/posts/106578"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://favs.news/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 7.0.4">
+<link rel="shortlink" href="https://favs.news/?p=106578">
+<meta name="generator" content="Site Kit by Google 1.185.0">    
+    
+    
+
+    
+	            
+            
+<!-- JS generated by theme -->
+
+
+
+
+<!-- Header style compiled by theme -->
+
+
+
+<!-- Google tag (gtag.js) -->
+
+
+
+<link rel="icon" href="https://favs.news/wp-content/uploads/2023/11/SimpleMark_Color-80x80.png" sizes="32x32">
+<link rel="icon" href="https://favs.news/wp-content/uploads/2023/11/SimpleMark_Color.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://favs.news/wp-content/uploads/2023/11/SimpleMark_Color.png">
+<meta name="msapplication-TileImage" content="https://favs.news/wp-content/uploads/2023/11/SimpleMark_Color.png">
+
+
+<!-- Button style compiled by theme -->
+
+
+
+	<link rel="stylesheet" href="chrome-extension://cnjifjpddelmedmihgijeibhnjfabmlf/highlighter.css"></head>
+
+<body class="wp-singular post-template-default single single-post postid-106578 single-format-standard wp-theme-Newspaper wp-child-theme-Favs-news-child northwest-faith-news-wildfires-community-aid global-block-template-1 tdb_template_85901 tdb-template tdc-header-template tdc-footer-template td-animation-stack-type0 td-boxed-layout wpdiscuz_7.6.63 td-js-loaded" itemscope="itemscope" itemtype="https://schema.org/WebPage">
+
+    <div class="td-scroll-up" data-style="style1"><i class="td-icon-menu-up"></i></div>
+    <div class="td-menu-background"></div>
+<div id="td-mobile-nav">
+    <div class="td-mobile-container">
+        <!-- mobile menu top section -->
+        <div class="td-menu-socials-wrap">
+            <!-- socials -->
+            <div class="td-menu-socials">
+                            </div>
+            <!-- close button -->
+            <div class="td-mobile-close">
+                <span><i class="td-icon-close-mobile"></i></span>
+            </div>
+        </div>
+
+        <!-- login section -->
+                    <div class="td-menu-login-section">
+                
+    <div class="td-guest-wrap">
+        <div class="td-menu-login"><a id="login-link-mob">Sign in</a></div>
+    </div>
+            </div>
+        
+        <!-- menu section -->
+        <div class="td-mobile-content">
+            <div class="menu-mobile-menu-container"><ul id="menu-mobile-menu" class="td-mobile-main-menu"><li id="menu-item-86437" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-first menu-item-has-children menu-item-86437 td_mobile_submenu td_mobile_elem_with_submenu_0"><a href="https://favs.news/news/" class="td-link-element-after">News<i class="td-icon-menu-right td-element-after"></i></a>
+<ul class="sub-menu">
+	<li class="menu-item-0"><a href="https://favs.news/news/central-washington/">Central Washington</a></li>
+	<li class="menu-item-0"><a href="https://favs.news/news/eastern-washington/">Eastern Washington</a></li>
+	<li class="menu-item-0"><a href="https://favs.news/news/national-news/">National News</a></li>
+	<li class="menu-item-0"><a href="https://favs.news/news/north-central-idaho/">North Central Idaho</a></li>
+	<li class="menu-item-0"><a href="https://favs.news/news/north-idaho/">North Idaho</a></li>
+	<li class="menu-item-0"><a href="https://favs.news/news/southwest-idaho/">Southwest Idaho</a></li>
+	<li class="menu-item-0"><a href="https://favs.news/news/western-washington/">Western Washington</a></li>
+</ul>
+</li>
+<li id="menu-item-86438" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-86438 td_mobile_submenu td_mobile_elem_with_submenu_1"><a href="https://favs.news/commentary/" class="td-link-element-after">Commentary<i class="td-icon-menu-right td-element-after"></i></a>
+<ul class="sub-menu">
+	<li id="menu-item-86439" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-86439"><a href="https://favs.news/commentary/ask/">Ask</a></li>
+</ul>
+</li>
+<li id="menu-item-86440" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-86440"><a href="https://favs.news/events/">Calendar</a></li>
+<li id="menu-item-86441" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86441"><a href="https://favs.news/get-involved/">Get Involved</a></li>
+<li id="menu-item-86442" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-86442 td_mobile_submenu td_mobile_elem_with_submenu_2"><a href="https://favs.news/about-favs-news/" class="td-link-element-after">About FāVS News<i class="td-icon-menu-right td-element-after"></i></a>
+<ul class="sub-menu">
+	<li id="menu-item-86443" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86443"><a href="https://favs.news/about-favs-news/board/">Board of Trustees</a></li>
+	<li id="menu-item-86444" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86444"><a href="https://favs.news/about-favs-news/favs-staff/">Meet the FāVS Staff</a></li>
+	<li id="menu-item-86448" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86448"><a href="https://favs.news/reporters/">Reporters</a></li>
+	<li id="menu-item-86449" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86449"><a href="https://favs.news/columnists/">Columnists</a></li>
+</ul>
+</li>
+<li id="menu-item-86446" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86446"><a href="https://favs.news/become-a-favs-sponsor/">Become a FāVS Sponsor</a></li>
+<li id="menu-item-86447" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86447"><a href="https://favs.news/newsletters/">Newsletter</a></li>
+<li id="menu-item-86445" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86445"><a href="https://favs.news/contact-us/">Contact Us</a></li>
+</ul></div>        </div>
+    </div>
+
+    <!-- register/login section -->
+            <div id="login-form-mobile" class="td-register-section">
+            
+            <div id="td-login-mob" class="td-login-animation td-login-hide-mob">
+            	<!-- close button -->
+	            <div class="td-login-close">
+	                <span class="td-back-button"><i class="td-icon-read-down"></i></span>
+	                <div class="td-login-title">Sign in</div>
+	                <!-- close button -->
+		            <div class="td-mobile-close">
+		                <span><i class="td-icon-close-mobile"></i></span>
+		            </div>
+	            </div>
+	            <form class="td-login-form-wrap" action="#" method="post">
+	                <div class="td-login-panel-title"><span>Welcome!</span>Log into your account</div>
+	                <div class="td_display_err"></div>
+	                <div class="td-login-inputs"><input class="td-login-input" autocomplete="username" type="text" name="login_email" id="login_email-mob" value="" required=""><label for="login_email-mob">your username</label></div>
+	                <div class="td-login-inputs"><input class="td-login-input" autocomplete="current-password" type="password" name="login_pass" id="login_pass-mob" value="" required=""><label for="login_pass-mob">your password</label></div>
+	                <input type="button" name="login_button" id="login_button-mob" class="td-login-button" value="LOG IN">
+	                
+					
+	                <div class="td-login-info-text">
+	                <a href="#" id="forgot-pass-link-mob">Forgot your password?</a>
+	                </div>
+	                <div class="td-login-register-link">
+	                
+	                </div>
+	                
+	                <div class="td-login-info-text"><a class="privacy-policy-link" href="https://favs.news/about-favs-news/privacy-policy/">Privacy Policy</a></div>
+
+                <input type="hidden" id="apbct_visible_fields_0" name="apbct_visible_fields" value="eyIwIjp7InZpc2libGVfZmllbGRzIjoiIiwidmlzaWJsZV9maWVsZHNfY291bnQiOjAsImludmlzaWJsZV9maWVsZHMiOiJsb2dpbl9lbWFpbCBsb2dpbl9wYXNzIGxvZ2luX2J1dHRvbiBjdF9ub19jb29raWVfaGlkZGVuX2ZpZWxkIiwiaW52aXNpYmxlX2ZpZWxkc19jb3VudCI6NH19"><input name="ct_no_cookie_hidden_field" value="_ct_no_cookie_data_eyJjdF9zY3JlZW5faW5mbyI6IntcImZ1bGxXaWR0aFwiOjE2OTIsXCJmdWxsSGVpZ2h0XCI6NzcwOSxcInZpc2libGVXaWR0aFwiOjE2OTIsXCJ2aXNpYmxlSGVpZ2h0XCI6OTQ5fSIsImN0X3BvaW50ZXJfZGF0YSI6IltbODAsNCwxMDk5MjVdLFs4MCwyMTMsMTA5OTY4XSxbNzIsODM5LDExMDExOV1dIiwiY3RfbW91c2VfbW92ZWQiOnRydWUsImFwYmN0X3BhZ2VfaGl0cyI6MSwiY3RfY2hlY2tqcyI6MTU5Mjg4NDgwNSwiY3RfdGltZXpvbmUiOi02LCJjdF9oYXNfc2Nyb2xsZWQiOnRydWUsImN0X2Nvb2tpZXNfdHlwZSI6Im5vbmUiLCJhcGJjdF9leGlzdGluZ192aXNpdG9yIjoxLCJhcGJjdF92aXNpYmxlX2ZpZWxkcyI6IjAiLCJjdF9wc190aW1lc3RhbXAiOjE3ODY3MjcxODQsImFwYmN0X2hlYWRsZXNzIjpmYWxzZSwiY3RfZmtwX3RpbWVzdGFtcCI6IjAiLCJjdF9jaGVja2VkX2VtYWlsc19leGlzdCI6IjAiLCJjdF9nYXRoZXJpbmdfbG9hZGVkIjp0cnVlLCJjdF9jaGVja2VkX2VtYWlscyI6IjAiLCJhcGJjdF9zZXNzaW9uX2lkIjoidmlhaWsiLCJhcGJjdF9zZXNzaW9uX2N1cnJlbnRfcGFnZSI6Imh0dHBzOi8vZmF2cy5uZXdzL25vcnRod2VzdC1mYWl0aC1uZXdzLXdpbGRmaXJlcy1jb21tdW5pdHktYWlkLz9tY19jaWQ9MjBkYjZkZjYxMiZtY19laWQ9M2Q5MTE5Zjc2YSIsInR5cG8iOltdLCJjb2xsZWN0aW5nX3VzZXJfYWN0aXZpdHlfZGF0YSI6W119" type="hidden" class="apbct_special_field ct_no_cookie_hidden_field"></form>
+            </div>
+
+            
+            
+            
+            
+            <div id="td-forgot-pass-mob" class="td-login-animation td-login-hide-mob">
+                <!-- close button -->
+	            <div class="td-forgot-pass-close">
+	                <a href="#" aria-label="Back" class="td-back-button"><i class="td-icon-read-down"></i></a>
+	                <div class="td-login-title">Password recovery</div>
+	            </div>
+	            <div class="td-login-form-wrap">
+	                <div class="td-login-panel-title">Recover your password</div>
+	                <div class="td_display_err"></div>
+	                <div class="td-login-inputs"><input class="td-login-input" type="text" name="forgot_email" id="forgot_email-mob" value="" required=""><label for="forgot_email-mob">your email</label></div>
+	                <input type="button" name="forgot_button" id="forgot_button-mob" class="td-login-button" value="Send My Pass">
+                </div>
+            </div>
+        </div>
+    </div><div class="td-search-background"></div>
+<div class="td-search-wrap-mob">
+	<div class="td-drop-down-search">
+		<form method="get" class="td-search-form" action="https://favs.news/">
+			<!-- close button -->
+			<div class="td-search-close">
+				<span><i class="td-icon-close-mobile"></i></span>
+			</div>
+			<div role="search" class="td-search-input">
+				<span>Search</span>
+				<input id="td-header-search-mob" type="text" value="" name="s" autocomplete="off">
+			</div>
+		</form>
+		<div id="td-aj-search-mob" class="td-ajax-search-flex"></div>
+	</div>
+</div>
+    <div id="td-outer-wrap" class="td-theme-wrap">
+
+                    <div class="td-header-template-wrap" role="banner">
+                                <div class="td-header-mobile-wrap ">
+                    <div id="tdi_1" class="tdc-zone"><div class="tdc_zone tdi_2  wpb_row td-pb-row tdc-element-style">
+
+<div class="tdi_1_rand_style td-element-style"></div><div id="tdi_3" class="tdc-row"><div class="vc_row tdi_4  wpb_row td-pb-row">
+<div class="vc_column tdi_6  wpb_column vc_column_container tdc-column td-pb-span4">
+<div class="wpb_wrapper"><div class="td_block_wrap tdb_mobile_menu tdi_7 td-pb-border-top td_block_template_1 tdb-header-align" data-td-block-uid="tdi_7">
+
+<div class="tdb-block-inner td-fix-index"><span class="tdb-mobile-menu-button"><i class="tdb-mobile-menu-icon td-icon-mobile"></i></span></div></div> <!-- ./block --></div></div><div class="vc_column tdi_9  wpb_column vc_column_container tdc-column td-pb-span4">
+<div class="wpb_wrapper"><div class="td_block_wrap tdb_header_logo tdi_10 td-pb-border-top td_block_template_1 tdb-header-align" data-td-block-uid="tdi_10">
+
+<div class="tdb-block-inner td-fix-index"><a class="tdb-logo-a" href="https://favs.news/"><span class="tdb-logo-img-wrap"><img class="tdb-logo-img" src="https://favs.news/wp-content/uploads/2023/11/Variation_Indigo-Dye.png" alt="Logo" title="" width="897" height="227"></span><span class="tdb-logo-text-wrap"><span class="tdb-logo-text-title">Favs News</span></span></a></div></div> <!-- ./block --></div></div><div class="vc_column tdi_12  wpb_column vc_column_container tdc-column td-pb-span4">
+<div class="wpb_wrapper"><div class="td_block_wrap tdb_mobile_search tdi_13 td-pb-border-top td_block_template_1 tdb-header-align" data-td-block-uid="tdi_13">
+
+<div class="tdb-block-inner td-fix-index"><span class="tdb-header-search-button-mob dropdown-toggle" data-toggle="dropdown"><span class="tdb-mobile-search-icon tdb-mobile-search-icon-svg"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><path d="M980.152 934.368l-189.747-189.747c60.293-73.196 90.614-163 90.552-252.58 0.061-101.755-38.953-203.848-116.603-281.498-77.629-77.67-179.732-116.664-281.446-116.603-101.765-0.061-203.848 38.932-281.477 116.603-77.65 77.629-116.664 179.743-116.623 281.467-0.041 101.755 38.973 203.848 116.623 281.436 77.629 77.64 179.722 116.654 281.477 116.593 89.569 0.061 179.395-30.249 252.58-90.501l189.737 189.757 54.927-54.927zM256.358 718.519c-62.669-62.659-93.839-144.394-93.86-226.509 0.020-82.094 31.191-163.85 93.86-226.54 62.669-62.638 144.425-93.809 226.55-93.839 82.084 0.031 163.84 31.201 226.509 93.839 62.638 62.659 93.809 144.445 93.829 226.57-0.020 82.094-31.191 163.84-93.829 226.478-62.669 62.628-144.404 93.798-226.509 93.829-82.125-0.020-163.881-31.191-226.55-93.829z"></path></svg></span></span></div></div> <!-- ./block --></div></div></div></div></div></div>                </div>
+                
+                <div class="td-header-desktop-wrap ">
+                    <div id="tdi_14" class="tdc-zone"><div class="tdc_zone tdi_15  wpb_row td-pb-row tdc-element-style">
+
+<div class="tdi_14_rand_style td-element-style"></div><div id="tdi_16" class="tdc-row stretch_row_1400 td-stretch-content"><div class="vc_row tdi_17  wpb_row td-pb-row tdc-element-style">
+
+<div class="tdi_16_rand_style td-element-style"></div><div class="vc_column tdi_19  wpb_column vc_column_container tdc-column td-pb-span4">
+<div class="wpb_wrapper"><div class="td_block_wrap tdb_header_weather tdi_20 td-pb-border-top td_block_template_1 tdb-header-align" data-td-block-uid="tdi_20">
+<div class="tdb-block-inner td-fix-index"><!-- td weather source: cache -->        <i class="td-icons clear-sky-d"></i>
+        <div class="tdb-weather-deg-wrap" data-block-uid="tdb_header_weather_uid">
+            <span class="tdb-weather-deg">54.7</span>
+            <span class="tdb-weather-unit">F</span>
+        </div>
+        <div class="tdb-weather-city">Spokane</div>
+        </div></div> <!-- ./block --><div class="td_block_wrap tdb_header_date tdi_21 td-pb-border-top td_block_template_1 tdb-header-align" data-td-block-uid="tdi_21">
+<div class="tdb-block-inner td-fix-index"><div class="tdb-head-date-txt">Friday, August 14, 2026</div></div></div> <!-- ./block --></div></div><div class="vc_column tdi_23  wpb_column vc_column_container tdc-column td-pb-span8">
+<div class="wpb_wrapper"><div class="td_block_wrap tdb_header_menu tdi_24 tds_menu_active3 tds_menu_sub_active1 td-pb-border-top td_block_template_1 tdb-header-align" data-td-block-uid="tdi_24">
+
+
+<div id="tdi_24" class="td_block_inner td-fix-index"><div class="tdb-main-sub-icon-fake"><i class="tdb-sub-menu-icon td-icon-down tdb-main-sub-menu-icon"></i></div><div class="tdb-sub-icon-fake"><i class="tdb-sub-menu-icon td-icon-right-arrow"></i></div><ul id="menu-top-menu-1" class="tdb-block-menu tdb-menu tdb-menu-items-visible"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-first tdb-menu-item-button tdb-menu-item tdb-normal-menu menu-item-72264"><a href="https://favs.news/about-favs-news/"><div class="tdb-menu-item-text">About FāVS News</div><i class="tdb-sub-menu-icon td-icon-down tdb-main-sub-menu-icon"></i></a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page tdb-menu-item tdb-normal-menu menu-item-72266"><a href="https://favs.news/about-favs-news/board/"><div class="tdb-menu-item-text">Board of Trustees</div></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page tdb-menu-item tdb-normal-menu menu-item-72269"><a href="https://favs.news/about-favs-news/favs-staff/"><div class="tdb-menu-item-text">Meet the FāVS Staff</div></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page tdb-menu-item tdb-normal-menu menu-item-72267"><a href="https://favs.news/reporters/"><div class="tdb-menu-item-text">Reporters</div></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page tdb-menu-item tdb-normal-menu menu-item-86450"><a href="https://favs.news/columnists/"><div class="tdb-menu-item-text">Columnists</div></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page tdb-menu-item tdb-normal-menu menu-item-100553"><a href="https://favs.news/get-involved/"><div class="tdb-menu-item-text">Get Involved</div></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children tdb-menu-item-button tdb-menu-item tdb-normal-menu menu-item-90487"><a href="https://favs.news/donate-to-favs-news/"><div class="tdb-menu-item-text">Donate to FāVS News</div><i class="tdb-sub-menu-icon td-icon-down tdb-main-sub-menu-icon"></i></a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page tdb-menu-item tdb-normal-menu menu-item-99148"><a href="https://favs.news/favs-news-donors/"><div class="tdb-menu-item-text">FāVS News donors</div></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page tdb-menu-item tdb-normal-menu menu-item-94954"><a href="https://favs.news/order-favs-news-shirts/"><div class="tdb-menu-item-text">FāVS News Shirts</div></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page tdb-menu-item-button tdb-menu-item tdb-normal-menu menu-item-86249"><a href="https://favs.news/become-a-favs-sponsor/"><div class="tdb-menu-item-text">Become a FāVS Sponsor</div></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page tdb-menu-item-button tdb-menu-item tdb-normal-menu menu-item-72270"><a href="https://favs.news/contact-us/"><div class="tdb-menu-item-text">Contact Us</div></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page tdb-menu-item-button tdb-menu-item tdb-normal-menu menu-item-101484"><a href="https://favs.news/use-our-content-religion/"><div class="tdb-menu-item-text">Use Our Content!</div></a></li>
+</ul></div></div></div></div></div></div><div id="tdi_27" class="tdc-row stretch_row_1400 td-stretch-content"><div class="vc_row tdi_28  wpb_row td-pb-row tdc-element-style tdc-row-content-vert-center">
+
+<div class="tdi_27_rand_style td-element-style"></div><div class="vc_column tdi_30  wpb_column vc_column_container tdc-column td-pb-span4">
+<div class="wpb_wrapper"><div class="td_block_wrap tdb_header_logo tdi_31 td-pb-border-top td_block_template_1 tdb-header-align" data-td-block-uid="tdi_31">
+
+<div class="tdb-block-inner td-fix-index"><a class="tdb-logo-a" href="https://favs.news/"><span class="tdb-logo-img-wrap"><img class="tdb-logo-img" src="https://favs.news/wp-content/uploads/2023/11/Variation_White.png" alt="Logo" title="" width="897" height="227"></span><span class="tdb-logo-text-wrap"><span class="tdb-logo-text-title">Favs News</span></span></a></div></div> <!-- ./block --></div></div><div class="vc_column tdi_33  wpb_column vc_column_container tdc-column td-pb-span4">
+<div class="wpb_wrapper"><div class="td_block_wrap tdb_header_menu tdi_34 tds_menu_active1 tds_menu_sub_active1 tdb-head-menu-inline td-pb-border-top td_block_template_1 tdb-header-align" data-td-block-uid="tdi_34">
+
+
+<div id="tdi_34" class="td_block_inner td-fix-index"><div class="tdb-main-sub-icon-fake"><i class="tdb-sub-menu-icon td-icon-down tdb-main-sub-menu-icon"></i></div><div class="tdb-sub-icon-fake"><i class="tdb-sub-menu-icon td-icon-right-arrow"></i></div><ul id="menu-main-menu-2" class="tdb-block-menu tdb-menu tdb-menu-items-visible"><li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-first tdb-menu-item-button tdb-menu-item tdb-mega-menu tdb-mega-menu-cat tdb-mega-menu-cats-first menu-item-54026"><a href="https://favs.news/news/"><div class="tdb-menu-item-text">News</div><i class="tdb-sub-menu-icon td-icon-down tdb-main-sub-menu-icon"></i></a>
+<ul class="sub-menu">
+	<li class="menu-item-0"><div class="tdb-menu-item-text"><div class="tdb_header_mega_menu tdi_35 td_with_ajax_pagination td-pb-border-top td_block_template_1" data-td-block-uid="tdi_35">
+<div class="block-mega-child-cats"><a class="cur-sub-cat mega-menu-sub-cat-tdi_35" id="tdi_36" data-td_block_id="tdi_35" data-td_filter_value="" href="https://favs.news/news/">All</a><a class="mega-menu-sub-cat-tdi_35" id="tdi_37" data-td_block_id="tdi_35" data-td_filter_value="52736" href="https://favs.news/news/central-washington/">Central Washington</a><a class="mega-menu-sub-cat-tdi_35" id="tdi_38" data-td_block_id="tdi_35" data-td_filter_value="52361" href="https://favs.news/news/eastern-washington/">Eastern Washington</a><a class="mega-menu-sub-cat-tdi_35" id="tdi_39" data-td_block_id="tdi_35" data-td_filter_value="45200" href="https://favs.news/news/national-news/">National News</a><a class="mega-menu-sub-cat-tdi_35" id="tdi_40" data-td_block_id="tdi_35" data-td_filter_value="52362" href="https://favs.news/news/north-central-idaho/">North Central Idaho</a><a class="mega-menu-sub-cat-tdi_35" id="tdi_41" data-td_block_id="tdi_35" data-td_filter_value="52363" href="https://favs.news/news/north-idaho/">North Idaho</a><a class="mega-menu-sub-cat-tdi_35" id="tdi_42" data-td_block_id="tdi_35" data-td_filter_value="52364" href="https://favs.news/news/southwest-idaho/">Southwest Idaho</a><a class="mega-menu-sub-cat-tdi_35" id="tdi_43" data-td_block_id="tdi_35" data-td_filter_value="52365" href="https://favs.news/news/western-washington/">Western Washington</a></div><div class="tdb-mega-modules-wrap"><div id="tdi_35" class="td_block_inner">
+        <div class="tdb_module_header tdb_module_mm td_module_wrap td-animation-stack td-cpt-post">
+            <div class="td-module-container td-category-pos-image">
+                                    <div class="td-image-container">
+                        <a href="https://favs.news/news/" class="td-post-category">News</a>                        <div class="td-module-thumb"><a href="https://favs.news/northwest-faith-news-wildfires-community-aid/" rel="bookmark" class="td-image-wrap " title="FāVS Religion News Roundup: Aug. 14"><span class="entry-thumb td-thumb-css td-animation-stack-type0-2" data-type="css_image" data-img-url="https://favs.news/wp-content/uploads/2025/05/Religion-News-Roundup-324x400.jpg"></span></a></div>                                            </div>
+                
+                <div class="td-module-meta-info">
+                                        
+                    <h3 class="entry-title td-module-title"><a href="https://favs.news/northwest-faith-news-wildfires-community-aid/" rel="bookmark" title="FāVS Religion News Roundup: Aug. 14">FāVS Religion News Roundup: Aug. 14</a></h3>
+                    
+                    
+                    
+                                    </div>
+            </div>
+        </div>
+
+        
+        <div class="tdb_module_header tdb_module_mm td_module_wrap td-animation-stack td-cpt-post">
+            <div class="td-module-container td-category-pos-image">
+                                    <div class="td-image-container">
+                        <a href="https://favs.news/news/eastern-washington/" class="td-post-category">Eastern Washington</a>                        <div class="td-module-thumb"><a href="https://favs.news/spokane-teens-help-wildfire-victims-fairview-fire/" rel="bookmark" class="td-image-wrap " title="Spokane-area teens postpone backpacking trip to help neighbors after wildfire"><span class="entry-thumb td-thumb-css td-animation-stack-type0-2" data-type="css_image" data-img-url="https://favs.news/wp-content/uploads/2026/08/Sanders-Fire214-324x400.jpg"></span></a></div>                                            </div>
+                
+                <div class="td-module-meta-info">
+                                        
+                    <h3 class="entry-title td-module-title"><a href="https://favs.news/spokane-teens-help-wildfire-victims-fairview-fire/" rel="bookmark" title="Spokane-area teens postpone backpacking trip to help neighbors after wildfire">Spokane-area teens postpone backpacking trip to help neighbors after wildfire</a></h3>
+                    
+                    
+                    
+                                    </div>
+            </div>
+        </div>
+
+        
+        <div class="tdb_module_header tdb_module_mm td_module_wrap td-animation-stack td-cpt-post">
+            <div class="td-module-container td-category-pos-image">
+                                    <div class="td-image-container">
+                        <a href="https://favs.news/news/eastern-washington/" class="td-post-category">Eastern Washington</a>                        <div class="td-module-thumb"><a href="https://favs.news/historic-pioneer-church-quincy-washington/" rel="bookmark" class="td-image-wrap " title="Quincy Pioneer Church brings history to life, one prayer at a time"><span class="entry-thumb td-thumb-css td-animation-stack-type0-2" data-type="css_image" data-img-url="https://favs.news/wp-content/uploads/2026/08/IMG_3825-324x400.jpeg"></span></a></div>                                            </div>
+                
+                <div class="td-module-meta-info">
+                                        
+                    <h3 class="entry-title td-module-title"><a href="https://favs.news/historic-pioneer-church-quincy-washington/" rel="bookmark" title="Quincy Pioneer Church brings history to life, one prayer at a time">Quincy Pioneer Church brings history to life, one prayer at a time</a></h3>
+                    
+                    
+                    
+                                    </div>
+            </div>
+        </div>
+
+        
+        <div class="tdb_module_header tdb_module_mm td_module_wrap td-animation-stack td-cpt-post">
+            <div class="td-module-container td-category-pos-image">
+                                    <div class="td-image-container">
+                        <a href="https://favs.news/news/" class="td-post-category">News</a>                        <div class="td-module-thumb"><a href="https://favs.news/208-cya-catholic-young-adults-north-idaho/" rel="bookmark" class="td-image-wrap " title="A new North Idaho Catholic young adult ministry goes live building faith and connection for its generation&nbsp;"><span class="entry-thumb td-thumb-css td-animation-stack-type0-2" data-type="css_image" data-img-url="https://favs.news/wp-content/uploads/2026/08/ABF657D6-5FC6-486C-A772-0485D614005C-324x400.png"></span></a></div>                                            </div>
+                
+                <div class="td-module-meta-info">
+                                        
+                    <h3 class="entry-title td-module-title"><a href="https://favs.news/208-cya-catholic-young-adults-north-idaho/" rel="bookmark" title="A new North Idaho Catholic young adult ministry goes live building faith and connection for its generation&nbsp;">A new North Idaho Catholic young adult ministry goes live building faith and connection for its generation&nbsp;</a></h3>
+                    
+                    
+                    
+                                    </div>
+            </div>
+        </div>
+
+        </div><div class="td-next-prev-wrap"><a href="#" class="td-ajax-prev-page ajax-page-disabled" aria-label="prev-page" id="prev-page-tdi_35" data-td_block_id="tdi_35"><i class="td-next-prev-icon td-icon-font td-icon-menu-left"></i></a><a href="#" class="td-ajax-next-page" aria-label="next-page" id="next-page-tdi_35" data-td_block_id="tdi_35"><i class="td-next-prev-icon td-icon-font td-icon-menu-right"></i></a></div></div></div> <!-- ./block1 --></div></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children tdb-menu-item-button tdb-menu-item tdb-normal-menu menu-item-54027"><a href="https://favs.news/commentary/"><div class="tdb-menu-item-text">Commentary</div><i class="tdb-sub-menu-icon td-icon-down tdb-main-sub-menu-icon"></i></a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page tdb-menu-item tdb-normal-menu menu-item-102780"><a href="https://favs.news/ask-favs-faith-questions/"><div class="tdb-menu-item-text">Many faiths. Endless questions. Ask FāVS.</div></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page tdb-menu-item-button tdb-menu-item tdb-normal-menu menu-item-101483"><a href="https://favs.news/newsletters/"><div class="tdb-menu-item-text">Newsletter</div></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom tdb-menu-item-button tdb-menu-item tdb-normal-menu menu-item-103996"><a href="https://www.youtube.com/@favsnews/shorts"><div class="tdb-menu-item-text">Video</div></a></li>
+<li class="menu_donate menu_button menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children tdb-menu-item-button tdb-menu-item tdb-normal-menu menu-item-93521"><a target="_blank" href="https://favs-news.fundjournalism.org/supportfavs/"><div class="tdb-menu-item-text">Donate</div><i class="tdb-sub-menu-icon td-icon-down tdb-main-sub-menu-icon"></i></a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page tdb-menu-item tdb-normal-menu menu-item-99147"><a href="https://favs.news/favs-news-donors/"><div class="tdb-menu-item-text">FāVS News donors</div></a></li>
+</ul>
+</li>
+</ul></div></div></div></div><div class="vc_column tdi_47  wpb_column vc_column_container tdc-column td-pb-span4">
+<div class="wpb_wrapper"><div class="td_block_wrap tdb_header_search tdi_48 tdb-header-search-trigger-enabled td-pb-border-top td_block_template_1 tdb-header-align" data-td-block-uid="tdi_48">
+
+<div class="tdb-block-inner td-fix-index"><div class="tdb-drop-down-search" aria-labelledby="td-header-search-button"><div class="tdb-drop-down-search-inner"><form method="get" class="tdb-search-form" action="https://favs.news/"><div class="tdb-search-form-inner"><input class="tdb-head-search-form-input" placeholder=" " type="text" value="" name="s" autocomplete="off"><button class="wpb_button wpb_btn-inverse btn tdb-head-search-form-btn" title="Search" type="submit" aria-label="Search"><span>Search</span></button></div></form><div class="tdb-aj-search"></div></div></div><a href="#" role="button" aria-label="Search" class="tdb-head-search-btn dropdown-toggle" data-toggle="dropdown"><span class="tdb-search-icon tdb-search-icon-svg"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><path d="M980.152 934.368l-189.747-189.747c60.293-73.196 90.614-163 90.552-252.58 0.061-101.755-38.953-203.848-116.603-281.498-77.629-77.67-179.732-116.664-281.446-116.603-101.765-0.061-203.848 38.932-281.477 116.603-77.65 77.629-116.664 179.743-116.623 281.467-0.041 101.755 38.973 203.848 116.623 281.436 77.629 77.64 179.722 116.654 281.477 116.593 89.569 0.061 179.395-30.249 252.58-90.501l189.737 189.757 54.927-54.927zM256.358 718.519c-62.669-62.659-93.839-144.394-93.86-226.509 0.020-82.094 31.191-163.85 93.86-226.54 62.669-62.638 144.425-93.809 226.55-93.839 82.084 0.031 163.84 31.201 226.509 93.839 62.638 62.659 93.809 144.445 93.829 226.57-0.020 82.094-31.191 163.84-93.829 226.478-62.669 62.628-144.404 93.798-226.509 93.829-82.125-0.020-163.881-31.191-226.55-93.829z"></path></svg></span></a></div></div> <!-- ./block --></div></div></div></div></div></div>                </div>
+                                    <div class="td-header-desktop-sticky-wrap tdc-zone-sticky-invisible tdc-zone-sticky-inactive">
+                        <div id="tdi_49" class="tdc-zone"><div class="tdc_zone tdi_50  wpb_row td-pb-row tdc-element-style" data-sticky-offset="0">
+
+<div class="tdi_49_rand_style td-element-style"></div><div id="tdi_51" class="tdc-row stretch_row_1400 td-stretch-content"><div class="vc_row tdi_52  wpb_row td-pb-row tdc-element-style">
+
+<div class="tdi_51_rand_style td-element-style"></div><div class="vc_column tdi_54  wpb_column vc_column_container tdc-column td-pb-span3">
+<div class="wpb_wrapper"><div class="td_block_wrap tdb_header_logo tdi_55 td-pb-border-top td_block_template_1 tdb-header-align" data-td-block-uid="tdi_55">
+
+<div class="tdb-block-inner td-fix-index"><a class="tdb-logo-a" href="https://favs.news/"><span class="tdb-logo-img-wrap"><img class="tdb-logo-img" src="https://favs.news/wp-content/uploads/2023/11/Variation_White.png" alt="Logo" title="" width="897" height="227"></span><span class="tdb-logo-text-wrap"><span class="tdb-logo-text-title">Favs News</span></span></a></div></div> <!-- ./block --></div></div><div class="vc_column tdi_57  wpb_column vc_column_container tdc-column td-pb-span6">
+<div class="wpb_wrapper"><div class="td_block_wrap tdb_header_menu tdi_58 tds_menu_active1 tds_menu_sub_active1 tdb-head-menu-inline td-pb-border-top td_block_template_1 tdb-header-align" data-td-block-uid="tdi_58">
+
+
+<div id="tdi_58" class="td_block_inner td-fix-index"><div class="tdb-main-sub-icon-fake"><i class="tdb-sub-menu-icon td-icon-down tdb-main-sub-menu-icon"></i></div><div class="tdb-sub-icon-fake"><i class="tdb-sub-menu-icon td-icon-right-arrow"></i></div><ul id="menu-main-menu-3" class="tdb-block-menu tdb-menu tdb-menu-items-visible"><li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-first tdb-menu-item-button tdb-menu-item tdb-mega-menu tdb-mega-menu-cat tdb-mega-menu-cats-first menu-item-54026"><a href="https://favs.news/news/"><div class="tdb-menu-item-text">News</div><i class="tdb-sub-menu-icon td-icon-down tdb-main-sub-menu-icon"></i></a>
+<ul class="sub-menu">
+	<li class="menu-item-0"><div class="tdb-menu-item-text"><div class="tdb_header_mega_menu tdi_59 td_with_ajax_pagination td-pb-border-top td_block_template_1" data-td-block-uid="tdi_59">
+<div class="block-mega-child-cats"><a class="cur-sub-cat mega-menu-sub-cat-tdi_59" id="tdi_60" data-td_block_id="tdi_59" data-td_filter_value="" href="https://favs.news/news/">All</a><a class="mega-menu-sub-cat-tdi_59" id="tdi_61" data-td_block_id="tdi_59" data-td_filter_value="52736" href="https://favs.news/news/central-washington/">Central Washington</a><a class="mega-menu-sub-cat-tdi_59" id="tdi_62" data-td_block_id="tdi_59" data-td_filter_value="52361" href="https://favs.news/news/eastern-washington/">Eastern Washington</a><a class="mega-menu-sub-cat-tdi_59" id="tdi_63" data-td_block_id="tdi_59" data-td_filter_value="45200" href="https://favs.news/news/national-news/">National News</a><a class="mega-menu-sub-cat-tdi_59" id="tdi_64" data-td_block_id="tdi_59" data-td_filter_value="52362" href="https://favs.news/news/north-central-idaho/">North Central Idaho</a><a class="mega-menu-sub-cat-tdi_59" id="tdi_65" data-td_block_id="tdi_59" data-td_filter_value="52363" href="https://favs.news/news/north-idaho/">North Idaho</a><a class="mega-menu-sub-cat-tdi_59" id="tdi_66" data-td_block_id="tdi_59" data-td_filter_value="52364" href="https://favs.news/news/southwest-idaho/">Southwest Idaho</a><a class="mega-menu-sub-cat-tdi_59" id="tdi_67" data-td_block_id="tdi_59" data-td_filter_value="52365" href="https://favs.news/news/western-washington/">Western Washington</a></div><div class="tdb-mega-modules-wrap"><div id="tdi_59" class="td_block_inner">
+        <div class="tdb_module_header tdb_module_mm td_module_wrap td-animation-stack td-cpt-post">
+            <div class="td-module-container td-category-pos-image">
+                                    <div class="td-image-container">
+                        <a href="https://favs.news/news/" class="td-post-category">News</a>                        <div class="td-module-thumb"><a href="https://favs.news/northwest-faith-news-wildfires-community-aid/" rel="bookmark" class="td-image-wrap " title="FāVS Religion News Roundup: Aug. 14"><span class="entry-thumb td-thumb-css td-animation-stack-type0-2" data-type="css_image" data-img-url="https://favs.news/wp-content/uploads/2025/05/Religion-News-Roundup-324x400.jpg"></span></a></div>                                            </div>
+                
+                <div class="td-module-meta-info">
+                                        
+                    <h3 class="entry-title td-module-title"><a href="https://favs.news/northwest-faith-news-wildfires-community-aid/" rel="bookmark" title="FāVS Religion News Roundup: Aug. 14">FāVS Religion News Roundup: Aug. 14</a></h3>
+                    
+                    
+                    
+                                    </div>
+            </div>
+        </div>
+
+        
+        <div class="tdb_module_header tdb_module_mm td_module_wrap td-animation-stack td-cpt-post">
+            <div class="td-module-container td-category-pos-image">
+                                    <div class="td-image-container">
+                        <a href="https://favs.news/news/eastern-washington/" class="td-post-category">Eastern Washington</a>                        <div class="td-module-thumb"><a href="https://favs.news/spokane-teens-help-wildfire-victims-fairview-fire/" rel="bookmark" class="td-image-wrap " title="Spokane-area teens postpone backpacking trip to help neighbors after wildfire"><span class="entry-thumb td-thumb-css td-animation-stack-type0-2" data-type="css_image" data-img-url="https://favs.news/wp-content/uploads/2026/08/Sanders-Fire214-324x400.jpg"></span></a></div>                                            </div>
+                
+                <div class="td-module-meta-info">
+                                        
+                    <h3 class="entry-title td-module-title"><a href="https://favs.news/spokane-teens-help-wildfire-victims-fairview-fire/" rel="bookmark" title="Spokane-area teens postpone backpacking trip to help neighbors after wildfire">Spokane-area teens postpone backpacking trip to help neighbors after wildfire</a></h3>
+                    
+                    
+                    
+                                    </div>
+            </div>
+        </div>
+
+        
+        <div class="tdb_module_header tdb_module_mm td_module_wrap td-animation-stack td-cpt-post">
+            <div class="td-module-container td-category-pos-image">
+                                    <div class="td-image-container">
+                        <a href="https://favs.news/news/eastern-washington/" class="td-post-category">Eastern Washington</a>                        <div class="td-module-thumb"><a href="https://favs.news/historic-pioneer-church-quincy-washington/" rel="bookmark" class="td-image-wrap " title="Quincy Pioneer Church brings history to life, one prayer at a time"><span class="entry-thumb td-thumb-css td-animation-stack-type0-2" data-type="css_image" data-img-url="https://favs.news/wp-content/uploads/2026/08/IMG_3825-324x400.jpeg"></span></a></div>                                            </div>
+                
+                <div class="td-module-meta-info">
+                                        
+                    <h3 class="entry-title td-module-title"><a href="https://favs.news/historic-pioneer-church-quincy-washington/" rel="bookmark" title="Quincy Pioneer Church brings history to life, one prayer at a time">Quincy Pioneer Church brings history to life, one prayer at a time</a></h3>
+                    
+                    
+                    
+                                    </div>
+            </div>
+        </div>
+
+        
+        <div class="tdb_module_header tdb_module_mm td_module_wrap td-animation-stack td-cpt-post">
+            <div class="td-module-container td-category-pos-image">
+                                    <div class="td-image-container">
+                        <a href="https://favs.news/news/" class="td-post-category">News</a>                        <div class="td-module-thumb"><a href="https://favs.news/208-cya-catholic-young-adults-north-idaho/" rel="bookmark" class="td-image-wrap " title="A new North Idaho Catholic young adult ministry goes live building faith and connection for its generation&nbsp;"><span class="entry-thumb td-thumb-css td-animation-stack-type0-2" data-type="css_image" data-img-url="https://favs.news/wp-content/uploads/2026/08/ABF657D6-5FC6-486C-A772-0485D614005C-324x400.png"></span></a></div>                                            </div>
+                
+                <div class="td-module-meta-info">
+                                        
+                    <h3 class="entry-title td-module-title"><a href="https://favs.news/208-cya-catholic-young-adults-north-idaho/" rel="bookmark" title="A new North Idaho Catholic young adult ministry goes live building faith and connection for its generation&nbsp;">A new North Idaho Catholic young adult ministry goes live building faith and connection for its generation&nbsp;</a></h3>
+                    
+                    
+                    
+                                    </div>
+            </div>
+        </div>
+
+        </div><div class="td-next-prev-wrap"><a href="#" class="td-ajax-prev-page ajax-page-disabled" aria-label="prev-page" id="prev-page-tdi_59" data-td_block_id="tdi_59"><i class="td-next-prev-icon td-icon-font td-icon-menu-left"></i></a><a href="#" class="td-ajax-next-page" aria-label="next-page" id="next-page-tdi_59" data-td_block_id="tdi_59"><i class="td-next-prev-icon td-icon-font td-icon-menu-right"></i></a></div></div></div> <!-- ./block1 --></div></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children tdb-menu-item-button tdb-menu-item tdb-normal-menu menu-item-54027"><a href="https://favs.news/commentary/"><div class="tdb-menu-item-text">Commentary</div><i class="tdb-sub-menu-icon td-icon-down tdb-main-sub-menu-icon"></i></a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page tdb-menu-item tdb-normal-menu menu-item-102780"><a href="https://favs.news/ask-favs-faith-questions/"><div class="tdb-menu-item-text">Many faiths. Endless questions. Ask FāVS.</div></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page tdb-menu-item-button tdb-menu-item tdb-normal-menu menu-item-101483"><a href="https://favs.news/newsletters/"><div class="tdb-menu-item-text">Newsletter</div></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom tdb-menu-item-button tdb-menu-item tdb-normal-menu menu-item-103996"><a href="https://www.youtube.com/@favsnews/shorts"><div class="tdb-menu-item-text">Video</div></a></li>
+<li class="menu_donate menu_button menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children tdb-menu-item-button tdb-menu-item tdb-normal-menu menu-item-93521"><a target="_blank" href="https://favs-news.fundjournalism.org/supportfavs/"><div class="tdb-menu-item-text">Donate</div><i class="tdb-sub-menu-icon td-icon-down tdb-main-sub-menu-icon"></i></a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page tdb-menu-item tdb-normal-menu menu-item-99147"><a href="https://favs.news/favs-news-donors/"><div class="tdb-menu-item-text">FāVS News donors</div></a></li>
+</ul>
+</li>
+</ul></div></div></div></div><div class="vc_column tdi_71  wpb_column vc_column_container tdc-column td-pb-span3">
+<div class="wpb_wrapper"><div class="td_block_wrap tdb_header_search tdi_72 tdb-header-search-trigger-enabled td-pb-border-top td_block_template_1 tdb-header-align" data-td-block-uid="tdi_72">
+
+<div class="tdb-block-inner td-fix-index"><div class="tdb-drop-down-search" aria-labelledby="td-header-search-button"><div class="tdb-drop-down-search-inner"><form method="get" class="tdb-search-form" action="https://favs.news/"><div class="tdb-search-form-inner"><input class="tdb-head-search-form-input" placeholder=" " type="text" value="" name="s" autocomplete="off"><button class="wpb_button wpb_btn-inverse btn tdb-head-search-form-btn" title="Search" type="submit" aria-label="Search"><span>Search</span></button></div></form><div class="tdb-aj-search"></div></div></div><a href="#" role="button" aria-label="Search" class="tdb-head-search-btn dropdown-toggle" data-toggle="dropdown"><span class="tdb-search-icon tdb-search-icon-svg"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><path d="M980.152 934.368l-189.747-189.747c60.293-73.196 90.614-163 90.552-252.58 0.061-101.755-38.953-203.848-116.603-281.498-77.629-77.67-179.732-116.664-281.446-116.603-101.765-0.061-203.848 38.932-281.477 116.603-77.65 77.629-116.664 179.743-116.623 281.467-0.041 101.755 38.973 203.848 116.623 281.436 77.629 77.64 179.722 116.654 281.477 116.593 89.569 0.061 179.395-30.249 252.58-90.501l189.737 189.757 54.927-54.927zM256.358 718.519c-62.669-62.659-93.839-144.394-93.86-226.509 0.020-82.094 31.191-163.85 93.86-226.54 62.669-62.638 144.425-93.809 226.55-93.839 82.084 0.031 163.84 31.201 226.509 93.839 62.638 62.659 93.809 144.445 93.829 226.57-0.020 82.094-31.191 163.84-93.829 226.478-62.669 62.628-144.404 93.798-226.509 93.829-82.125-0.020-163.881-31.191-226.55-93.829z"></path></svg></span></a></div></div> <!-- ./block --></div></div></div></div></div></div>                    </div>
+                            </div>
+                <div id="tdb-autoload-article" data-autoload="off" data-autoload-org-post-id="106578" data-autoload-tpl-id="85901" data-autoload-type="" data-autoload-count="5" data-autoload-scroll-percent="50">
+    
+
+        <div class="td-main-content-wrap td-container-wrap" role="main">
+            <div class="tdc-content-wrap">
+                <article id="template-id-85901" class="post-85901 tdb_templates type-tdb_templates status-publish post" itemscope="" itemtype="https://schema.org/Article">
+	                                    <div id="tdi_73" class="tdc-zone"><div class="tdc_zone tdi_74  wpb_row td-pb-row">
+<div id="tdi_75" class="tdc-row"><div class="vc_row tdi_76  wpb_row td-pb-row">
+<div class="vc_column tdi_78  wpb_column vc_column_container tdc-column td-pb-span12">
+<div class="wpb_wrapper"><div class="td-block td-a-rec td-a-rec-id-custom-spot tdi_79 td_block_template_1">
+<!-- Leaderboard  -->
+<broadstreet-zone zone-id="183544"></broadstreet-zone>
+     </div></div></div></div></div><div id="tdi_80" class="tdc-row stretch_row_1800 td-stretch-content"><div class="vc_row tdi_81  wpb_row td-pb-row tdc-element-style">
+
+<div class="tdi_80_rand_style td-element-style"><div class="td-element-style-before"></div></div><div class="vc_column tdi_83  wpb_column vc_column_container tdc-column td-pb-span12">
+<div class="wpb_wrapper"><div class="td_block_wrap tdb_breadcrumbs tdi_84 td-pb-border-top td_block_template_1 tdb-breadcrumbs " data-td-block-uid="tdi_84">
+
+<div class="tdb-block-inner td-fix-index"><span><a title="" class="tdb-entry-crumb" href="https://favs.news/">Home</a></span><i class="tdb-bread-sep td-icon-right"></i><span><a title="View all posts in News" class="tdb-entry-crumb" href="https://favs.news/news/">News</a></span><i class="tdb-bread-sep tdb-bred-no-url-last td-icon-right"></i><span class="tdb-bred-no-url-last">FāVS Religion News Roundup: Aug. 14</span></div></div><div class="td_block_wrap tdb_single_categories tdi_85 td-pb-border-top td_block_template_1 " data-td-block-uid="tdi_85">
+
+<div class="tdb-category td-fix-index"><a class="tdb-entry-category" href="https://favs.news/news/"><span class="tdb-cat-bg"></span>News</a><i class="tdb-cat-sep td-icon-vertical-line"></i></div></div><div class="td_block_wrap tdb_title tdi_86 tdb-single-title td-pb-border-top td_block_template_1" data-td-block-uid="tdi_86">
+
+<div class="tdb-block-inner td-fix-index"><h1 class="tdb-title-text">FāVS Religion News Roundup: Aug. 14</h1><div></div><div class="tdb-title-line"></div></div></div><div class="vc_row_inner tdi_88  vc_row vc_inner wpb_row td-pb-row">
+<div class="vc_column_inner tdi_90  wpb_column vc_column_container tdc-inner-column td-pb-span12">
+<div class="vc_column-inner"><div class="wpb_wrapper"><div class="td_block_wrap tdb_single_author tdi_91 td-pb-border-top td_block_template_1 tdb-post-meta" data-td-block-uid="tdi_91">
+
+<div class="tdb-block-inner td-fix-index"><div class="tdb-author-name-wrap"><span class="tdb-author-by">By: </span> <a class="tdb-author-name" href="https://favs.news/author/favsnews/">FāVS News</a></div></div></div><div class="tdm_block td_block_wrap tdm_block_inline_text tdi_92 tdm-inline-block td-pb-border-top td_block_template_1" data-td-block-uid="tdi_92">
+
+<p class="tdm-descr">Date:</p></div><div class="td_block_wrap tdb_single_date tdi_93 td-pb-border-top td_block_template_1 tdb-post-meta" data-td-block-uid="tdi_93">
+
+<div class="tdb-block-inner td-fix-index"><time class="entry-date updated td-module-date" datetime="2026-08-14T06:30:00-07:00">August 14, 2026</time></div></div> <!-- ./block --></div></div></div></div><div class="td_block_wrap tdb_single_post_share tdi_94  td-pb-border-top td_block_template_1" data-td-block-uid="tdi_94">
+
+<div id="tdi_94" class="td-post-sharing tdb-block td-ps-dark-bg td-ps-notext td-post-sharing-style14 ">
+		
+
+		<div class="td-post-sharing-visible"><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-facebook" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Ffavs.news%2Fnorthwest-faith-news-wildfires-community-aid%2F" title="Facebook"><div class="td-social-but-icon"><i class="td-icon-facebook"></i></div><div class="td-social-but-text">Facebook</div></a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-twitter" href="https://x.com/intent/post?text=F%C4%81VS+Religion+News+Roundup%3A+Aug.+14&amp;url=https%3A%2F%2Ffavs.news%2Fnorthwest-faith-news-wildfires-community-aid%2F&amp;via=F%C4%81VS+News" title="X"><div class="td-social-but-icon"><i class="td-icon-twitter"></i></div><div class="td-social-but-text">X</div></a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-pinterest" href="https://pinterest.com/pin/create/button/?url=https://favs.news/northwest-faith-news-wildfires-community-aid/&amp;media=https://favs.news/wp-content/uploads/2025/05/Religion-News-Roundup-scaled.jpg&amp;description=F%C4%81VS+Religion+News+Roundup%3A+Aug.+14" title="Pinterest"><div class="td-social-but-icon"><i class="td-icon-pinterest"></i></div><div class="td-social-but-text">Pinterest</div></a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-whatsapp" href="https://api.whatsapp.com/send?text=F%C4%81VS+Religion+News+Roundup%3A+Aug.+14 %0A%0A https://favs.news/northwest-faith-news-wildfires-community-aid/" title="WhatsApp"><div class="td-social-but-icon"><i class="td-icon-whatsapp"></i></div><div class="td-social-but-text">WhatsApp</div></a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://favs.news/northwest-faith-news-wildfires-community-aid/&amp;title=F%C4%81VS+Religion+News+Roundup%3A+Aug.+14" title="Linkedin"><div class="td-social-but-icon"><i class="td-icon-linkedin"></i></div><div class="td-social-but-text">Linkedin</div></a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-mail" href="mailto:?subject=F%C4%81VS%20Religion%20News%20Roundup:%20Aug.%2014&amp;body=https://favs.news/northwest-faith-news-wildfires-community-aid/" title="Email"><div class="td-social-but-icon"><i class="td-icon-mail"></i></div><div class="td-social-but-text">Email</div></a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-print" href="#" title="Print"><div class="td-social-but-icon"><i class="td-icon-print"></i></div><div class="td-social-but-text">Print</div></a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-telegram" href="https://telegram.me/share/url?url=https://favs.news/northwest-faith-news-wildfires-community-aid/&amp;text=F%C4%81VS+Religion+News+Roundup%3A+Aug.+14" title="Telegram"><div class="td-social-but-icon"><i class="td-icon-telegram"></i></div><div class="td-social-but-text">Telegram</div></a></div><div class="td-social-sharing-hidden"><ul class="td-pulldown-filter-list"></ul><a class="td-social-sharing-button td-social-handler td-social-expand-tabs" href="#" data-block-uid="tdi_94" title="More">
+                                    <div class="td-social-but-icon"><i class="td-icon-plus td-social-expand-tabs-icon"></i></div>
+                                </a></div></div></div></div></div></div></div><div id="tdi_95" class="tdc-row stretch_row_1800 td-stretch-content"><div class="vc_row tdi_96  wpb_row td-pb-row">
+<div class="vc_column tdi_98  wpb_column vc_column_container tdc-column td-pb-span3">
+<div class="wpb_wrapper"><div class="vc_row_inner tdi_100  vc_row vc_inner wpb_row td-pb-row">
+<div class="vc_column_inner tdi_102  wpb_column vc_column_container tdc-inner-column td-pb-span12">
+<div class="vc_column-inner"><div class="wpb_wrapper"><div class="tdm_block td_block_wrap tdm_block_inline_text tdi_103 td-pb-border-top td_block_template_1" data-td-block-uid="tdi_103">
+<p class="tdm-descr">Related stories</p></div></div></div></div></div><div class="td_block_wrap td_flex_block_1 tdi_104 td-pb-border-top td_block_template_1 td_flex_block" data-td-block-uid="tdi_104">
+
+<div class="td-block-title-wrap"></div><div id="tdi_104" class="td_block_inner td-mc1-wrap">
+        <div class="td_module_flex td_module_flex_1 td_module_wrap td-animation-stack td-cpt-post">
+            <div class="td-module-container td-category-pos-above">
+                                    <div class="td-image-container">
+                                                <div class="td-module-thumb"><a href="https://favs.news/support-spokane-wildfire-survivors/" rel="bookmark" class="td-image-wrap " title="How to support a wildfire survivor, according to someone who’s done it for 9 years"><span class="entry-thumb td-thumb-css td-animation-stack-type0-2" data-type="css_image" data-img-url="https://favs.news/wp-content/uploads/2026/08/Spokane-River_Corbin-Park_Post-Falls-696x522.jpg"></span></a></div>                                                                    </div>
+                
+                <div class="td-module-meta-info">
+                                        <a href="https://favs.news/commentary/" class="td-post-category">Commentary</a>
+                    <h3 class="entry-title td-module-title"><a href="https://favs.news/support-spokane-wildfire-survivors/" rel="bookmark" title="How to support a wildfire survivor, according to someone who’s done it for 9 years">How to support a wildfire survivor, according to someone who’s done it for 9 years</a></h3>
+                    
+                    
+                    <div class="td-excerpt">Learn how to support wildfire survivors through grief, recovery and rebuilding, with practical ways to offer care, patience, prayer and hope.</div>
+                    
+                                    </div>
+            </div>
+        </div>
+
+        
+        <div class="td_module_flex td_module_flex_1 td_module_wrap td-animation-stack td-cpt-post">
+            <div class="td-module-container td-category-pos-above">
+                                    <div class="td-image-container">
+                                                <div class="td-module-thumb"><a href="https://favs.news/spokane-teens-help-wildfire-victims-fairview-fire/" rel="bookmark" class="td-image-wrap " title="Spokane-area teens postpone backpacking trip to help neighbors after wildfire"><span class="entry-thumb td-thumb-css td-animation-stack-type0-2" data-type="css_image" data-img-url="https://favs.news/wp-content/uploads/2026/08/Sanders-Fire214-696x522.jpg"></span></a></div>                                                                    </div>
+                
+                <div class="td-module-meta-info">
+                                        <a href="https://favs.news/news/eastern-washington/" class="td-post-category">Eastern Washington</a>
+                    <h3 class="entry-title td-module-title"><a href="https://favs.news/spokane-teens-help-wildfire-victims-fairview-fire/" rel="bookmark" title="Spokane-area teens postpone backpacking trip to help neighbors after wildfire">Spokane-area teens postpone backpacking trip to help neighbors after wildfire</a></h3>
+                    
+                    
+                    <div class="td-excerpt">Spokane-area teens postponed a Montana backpacking trip to help neighbors clear debris and recover from the devastating Fairview Fire.</div>
+                    
+                                    </div>
+            </div>
+        </div>
+
+        
+        <div class="td_module_flex td_module_flex_1 td_module_wrap td-animation-stack td-cpt-post">
+            <div class="td-module-container td-category-pos-above">
+                                    <div class="td-image-container">
+                                                <div class="td-module-thumb"><a href="https://favs.news/historic-pioneer-church-quincy-washington/" rel="bookmark" class="td-image-wrap " title="Quincy Pioneer Church brings history to life, one prayer at a time"><span class="entry-thumb td-thumb-css td-animation-stack-type0-1" data-type="css_image" data-img-url="https://favs.news/wp-content/uploads/2026/08/IMG_3825-696x522.jpeg"></span></a></div>                                                                    </div>
+                
+                <div class="td-module-meta-info">
+                                        <a href="https://favs.news/news/eastern-washington/" class="td-post-category">Eastern Washington</a>
+                    <h3 class="entry-title td-module-title"><a href="https://favs.news/historic-pioneer-church-quincy-washington/" rel="bookmark" title="Quincy Pioneer Church brings history to life, one prayer at a time">Quincy Pioneer Church brings history to life, one prayer at a time</a></h3>
+                    
+                    
+                    <div class="td-excerpt">A historic 1904 church in Quincy, Washington, has found new life as a place of worship, community events and local history.</div>
+                    
+                                    </div>
+            </div>
+        </div>
+
+        </div></div><div class="vc_row_inner tdi_106  vc_row vc_inner wpb_row td-pb-row">
+<div class="vc_column_inner tdi_108  wpb_column vc_column_container tdc-inner-column td-pb-span12">
+<div class="vc_column-inner"><div class="wpb_wrapper"><div class="tdm_block td_block_wrap tdm_block_inline_text tdi_109 td-pb-border-top td_block_template_1" data-td-block-uid="tdi_109">
+
+<p class="tdm-descr">Our Sponsors</p></div></div></div></div></div><div class="td-block td-a-rec td-a-rec-id-custom-spot tdi_110 td_block_template_1">
+<!-- Internal Sidebar -->
+<broadstreet-zone zone-id="183758"></broadstreet-zone>
+     </div><div class="td-block td-a-rec td-a-rec-id-custom-spot tdi_111 td_block_template_1">
+<!-- Internal Sidebar -->
+<broadstreet-zone zone-id="183758"></broadstreet-zone>
+     </div></div></div><div class="vc_column tdi_113  wpb_column vc_column_container tdc-column td-pb-span6">
+<div class="wpb_wrapper"><div class="clearfix"></div><div class="td_block_wrap tdb_single_bg_featured_image tdi_114 tdb-content-horiz-left td-pb-border-top td_block_template_1" data-td-block-uid="tdi_114">
+
+<div class="tdb-featured-image-bg"></div></div><div class="td_block_wrap tdb_single_content tdi_115 td-pb-border-top td_block_template_1 td-post-content tagdiv-type" data-td-block-uid="tdi_115">
+
+<div class="tdb-block-inner td-fix-index"><span class="span-reading-time rt-reading-time"><span class="rt-label rt-prefix">Reading Time: </span> <span class="rt-time"> 4</span> <span class="rt-label rt-postfix">minutes</span></span>
+<br>
+
+
+
+<p class="wp-block-paragraph"><strong>By FāVS News Staff</strong>
+
+
+
+
+
+</p><p class="wp-block-paragraph"><em><strong>Eastern Washington</strong></em>
+
+
+
+
+
+</p><h2 class="wp-block-heading"><strong>Churches among properties lost, spared in Old Trails fire</strong></h2>
+
+
+
+<p class="wp-block-paragraph">Several churches and faith-affiliated properties were among the more than 900 structures destroyed, damaged or threatened by the wind-driven Old Trails fire burning near Spokane since Aug. 1, according to the Spokesman-Review. Riverside Real Life, on Nine Mile Road, was destroyed, with only brick pillars, metal poles and the foundation left standing. Pastor Kelly Armstrong has told the congregation in video updates that the church “is not a building,” and Real Life is working with an international relief agency on long-term recovery. Fairmount Memorial Park lost its maintenance building and an irrigation pump house, and its mausoleum sustained smoke damage and broken windows, though headstones and crypts appeared largely unaffected.
+
+
+
+
+
+</p><p class="wp-block-paragraph">Two other congregations had closer calls but came through unharmed. New Horizons Community Church was untouched even as nearby fields burned, and Assumption Parish Catholic School and Church also escaped damage, though its principal said many families connected to the parish have been affected by the broader wildfires.
+
+</p><div id="zone_load_1721240921"><broadstreet-zone place="0" callback="zone_load_1721240921" zone-id="183543" keywords="not_home_page,not_landing_page,is_article_page,featured,news,northwest-faith-news-wildfires-community-aid,post" soft-keywords="true" zone-alias=""></broadstreet-zone></div>
+
+
+
+
+
+<p class="wp-block-paragraph">The full extent of the damage remains unknown, the Spokesman-Review <a href="https://www.spokesman.com/stories/2026/aug/09/rifle-club-church-destroyed-in-old-trails-fire-oth/" target="_blank" rel="noopener">reported</a>, as the fire continues burning and Level 3 evacuation orders stay in effect.
+
+
+
+
+
+</p><h2 class="wp-block-heading"><strong>Church sends three semitrucks of aid to Eastern Washington wildfire evacuees</strong></h2>
+
+
+
+<p class="wp-block-paragraph">The Church of Jesus Christ of Latter-day Saints is sending three semitrucks of relief supplies to Spokane as wildfires across eastern Washington force thousands of residents to evacuate. One truck will carry water, while two will deliver food. Church members and local leaders are also coordinating temporary housing, meals, pastoral care and other assistance for displaced families.
+
+
+
+
+
+</p><p class="wp-block-paragraph">The Spokane Wildfire Complex, including the Old Trails, Autumn Lane and Fairview fires, has destroyed more than buildings and prompted more than 67,000 evacuations. Church leaders expressed gratitude to first responders, volunteers and community organizations supporting the recovery. Members have opened homes and meetinghouses to evacuees and are assisting with relief efforts. Church officials encourage residents to follow evacuation orders, pray and seek opportunities.
+
+
+
+
+
+</p><p class="wp-block-paragraph"><em><strong>Western Washington</strong></em>
+
+
+
+
+
+</p><h2 class="wp-block-heading"><strong>Seattle Council considers $300K for LGBTQ+ service groups</strong></h2>
+
+
+
+<p class="wp-block-paragraph">Seattle City Council is considering a $300,000 allocation to support LGBTQ+ organizations responding to an increase in queer and transgender people relocating to the city after facing hostility elsewhere. The council’s Finance, Native Communities &amp; Tribal Governments Committee approved the proposed budget amendment Aug. 4, directing JumpStart Fund money to the Seattle Human Services Department.&nbsp;
+
+
+
+
+
+</p><p class="wp-block-paragraph">If approved by the full council, the funding could help organizations provide emergency shelter, housing, employment assistance, food support and other essential services. LGBTQ+ advocates have urged Seattle officials to provide more resources, saying local groups lack capacity to meet growing demand. Some have also called for a state of emergency, but city officials have rejected that proposal while exploring alternatives with the Seattle LGBTQ Commission. The council is expected to decide on the funding.
+
+
+
+
+
+</p><p class="wp-block-paragraph"><em><strong>Central Washington</strong></em>
+
+
+
+
+
+</p><h2 class="wp-block-heading"><strong>Tri-Cities Back-to-School Bash to Provide Free Haircuts, Supplies and Health Services</strong></h2>
+
+
+
+<p class="wp-block-paragraph">Tri-Cities families can access free back-to-school services Monday, Aug. 17, at the HAPO Center in Pasco. Lutheran Community Services Northwest, Communities in Schools Benton-Franklin and SOZO Church expect about 2,500 students at the seventh annual event. From 4 to 6:30 p.m., students of all ages can receive free backpacks, school supplies, haircuts, dental care, health screenings, vaccines, sports physicals, books and family resources. No registration or identification is required.&nbsp;
+
+
+
+
+
+</p><p class="wp-block-paragraph">Organizers say rising school-supply costs and medical expenses can prevent children from participating in school activities, making the event a one-stop resource for families. Other <a href="https://www.newsbreak.com/tri-city-herald-1592585/4823288098664-free-haircuts-school-supplies-more-at-biggest-back-to-school-bash-in-tri-cities" target="_blank" rel="noopener">local back-to-school events</a> include free backpacks from Tri-Cities Community Health, a school festival by Domestic Violence Services and activities at Columbia Center Mall. Additional supply giveaways are planned later in August.
+
+
+
+
+
+</p><p class="wp-block-paragraph"><em><strong>Idaho</strong></em>
+
+
+
+
+
+</p><h2 class="wp-block-heading"><strong>Idaho Supreme Court dismisses lawsuit against Diocese of Boise</strong></h2>
+
+
+
+<p class="wp-block-paragraph">The Idaho Supreme Court <a href="https://www.ncwlife.com/news/northwest/idaho-supreme-court-boise-diocese-abuse-lawsuit-dismissed/article_50810dd1-9707-5ce0-9c54-bc32e0fcdc38.html" target="_blank" rel="noopener">dismissed a lawsuit</a> against the Roman Catholic Diocese of Boise and St. Mary’s Catholic Church in Moscow on Tuesday, finding insufficient evidence of constructive fraud in an alleged 1968 sexual abuse case, according to ncwlife.com. Peter Steven Leriget alleged he was assaulted at age 9 by the Rev. Patrick O’Sullivan, a priest at St. Mary’s, while O’Sullivan was babysitting him; O’Sullivan died in 1993, and Leriget first disclosed the allegations to a therapist in 2019 before filing suit in 2021.
+
+
+
+
+
+</p><p class="wp-block-paragraph">Leriget argued the diocese committed fraud by presenting priests as universally “holy, safe and trustworthy,” creating a relationship of trust that O’Sullivan exploited, the outlet reported. The court found no evidence Leriget had a heightened relationship with the church, such as serving as an altar boy, or that the diocese sponsored O’Sullivan’s visits to the family home or endorsed babysitting as a priestly duty. Citing a lack of evidence the diocese knew of abuse by O’Sullivan or other priests before 1985, the court upheld the lower court’s summary judgment ruling.
+
+
+
+
+
+</p><h2 class="wp-block-heading"><strong>North Idaho school turns rural community into a Christian mission field</strong></h2>
+
+
+
+<p class="wp-block-paragraph">Foundations School in Naples, Idaho, is transforming a former greenhouse into a K-12 Christian school focused on helping struggling students develop practical skills and spiritual foundations. Founded by Charli Turner three years ago with 18 students, the school has grown to about 60 and now serves families from across North Idaho and into Canada.
+
+
+
+
+
+</p><p class="wp-block-paragraph">The school emphasizes individualized learning, trade exposure and faith-based education. Students visit local businesses such as sawmills and meatpacking plants while participating in prayer and Christian activities. Tuition is $6,000 annually, with financial assistance available for some families.
+
+
+
+
+
+</p><p class="wp-block-paragraph">Turner and principal Julie Montgomery see the school as a local mission serving children facing academic, emotional and family challenges. The school also operates worship gatherings, a daycare and plans for a mercantile and coffee business to support students and fund its mission. Read more here at <a href="https://religionunplugged.com/news/2026/8/7/idaho-christian-school-religion-education" target="_blank" rel="noopener">ReligionUnplugged</a>.
+
+
+
+
+
+</p><hr class="wp-block-separator has-alpha-channel-opacity">
+
+
+
+<p class="wp-block-paragraph"><a href="https://favs.news/newsletters/"><strong><em>FāVS News</em></strong></a><strong><em> uses </em></strong><a href="https://favs.news/news/"><strong><em>professional journalists</em></strong></a><strong><em> and </em></strong><a href="https://favs.news/commentary/"><strong><em>thoughtful commentary</em></strong></a><strong><em> to explore faith, values and ethics. Support journalism like this by making a tax-deductible </em></strong><a href="https://favs.news/donate-to-favs-news/"><strong><em>donation</em></strong></a><strong><em>. FāVS is a 501(c)(3) nonprofit. © FāVS News. All rights reserved. Reproduction permitted only to authorized media partners or with written permission.</em></strong>
+
+
+</p><div id="zone_load_800302026"><broadstreet-zone callback="zone_load_800302026" zone-id="183548" keywords="not_home_page,not_landing_page,is_article_page,featured,news,northwest-faith-news-wildfires-community-aid,post" soft-keywords="true" zone-alias=""></broadstreet-zone></div><span></span></div></div><div class="td_block_wrap tdb_single_tags tdi_116 td-pb-border-top td_block_template_1" data-td-block-uid="tdi_116">
+
+<div class="tdb-block-inner td-fix-index"><ul class="tdb-tags"><li><span>Tags</span></li><li><a href="https://favs.news/tag/faith/">faith</a></li><li><a href="https://favs.news/tag/idaho/">idaho</a></li><li><a href="https://favs.news/tag/news/">news</a></li><li><a href="https://favs.news/tag/oregon/">oregon</a></li><li><a href="https://favs.news/tag/religion/">religion</a></li><li><a href="https://favs.news/tag/religion-news/">religion news</a></li><li><a href="https://favs.news/tag/seattle/">seattle</a></li><li><a href="https://favs.news/tag/spokane/">spokane</a></li><li><a href="https://favs.news/tag/washington/">washington</a></li></ul></div></div><div class="tdb-author-box td_block_wrap tdb_single_author_box tdi_117 tdb-content-vert-center td-pb-border-top td_block_template_1" data-td-block-uid="tdi_117">
+
+
+<div class="tdi_117_rand_style td-element-style"></div><div class="tdb-block-inner td-fix-index"><a href="https://favs.news/author/favsnews/" class="tdb-author-photo" title="FāVS News"><img alt="FāVS News" src="https://favs.news/wp-content/uploads/2024/02/cropped-Mark_DarkBlueSky-96x96.jpg" class="avatar avatar-96 photo td-animation-stack-type0-1" height="96" width="96" loading="lazy" decoding="async" srcset="https://favs.news/wp-content/uploads/2024/02/cropped-Mark_DarkBlueSky-96x96.jpg 2x"></a><div class="tdb-author-info"><a href="https://favs.news/author/favsnews/" class="tdb-author-name">FāVS News</a><a href="https://favs.news/" class="tdb-author-url">https://favs.news/</a><div class="tdb-author-descr">FāVS News informs and builds faith and non-faith community through digital journalism and online and offline engagement opportunities.</div><div class="tdb-author-social"></div></div></div></div><div class="clearfix"></div></div></div><div class="vc_column tdi_119  wpb_column vc_column_container tdc-column td-pb-span3 td-is-sticky">
+<div class="wpb_wrapper" data-sticky-enabled-on="W3RydWUsdHJ1ZSx0cnVlLHRydWVd" data-sticky-offset="20" data-sticky-is-width-auto="W3RydWUsZmFsc2UsZmFsc2UsZmFsc2Vd"><div class="clearfix"></div><div class="td-block td-a-rec td-a-rec-id-custom-spot tdi_120 td_block_template_1">
+<!-- Internal Sidebar -->
+<broadstreet-zone zone-id="183758"></broadstreet-zone>
+     </div><div class="td-block td-a-rec td-a-rec-id-custom-spot tdi_121 td_block_template_1">
+<!-- Internal Sidebar -->
+<broadstreet-zone zone-id="183758"></broadstreet-zone>
+     </div><div class="td-block td-a-rec td-a-rec-id-custom-spot tdi_122 td_block_template_1">
+<!-- Internal Sidebar -->
+<broadstreet-zone zone-id="183758"></broadstreet-zone>
+     </div><div class="td-block td-a-rec td-a-rec-id-custom-spot tdi_123 td_block_template_1">
+<!-- Internal Sidebar -->
+<broadstreet-zone zone-id="183758"></broadstreet-zone>
+     </div><div class="vc_row_inner tdi_125  vc_row vc_inner wpb_row td-pb-row">
+
+<div class="tdi_124_rand_style td-element-style"></div><div class="vc_column_inner tdi_127  wpb_column vc_column_container tdc-inner-column td-pb-span12">
+<div class="vc_column-inner"><div class="wpb_wrapper"></div></div></div></div><div class="vc_row_inner tdi_129  vc_row vc_inner wpb_row td-pb-row">
+
+<div class="tdi_128_rand_style td-element-style"></div><div class="vc_column_inner tdi_131  wpb_column vc_column_container tdc-inner-column td-pb-span12">
+<div class="vc_column-inner"><div class="wpb_wrapper"></div></div></div></div><div class="clearfix"></div></div></div></div></div><div id="tdi_132" class="tdc-row"><div class="vc_row tdi_133  wpb_row td-pb-row tdc-element-style">
+
+<div class="tdi_132_rand_style td-element-style"><div class="td-element-style-before"></div></div><div class="vc_column tdi_135  wpb_column vc_column_container tdc-column td-pb-span12">
+<div class="wpb_wrapper"><div class="td_block_wrap tdb_single_next_prev tdi_136 td-animation-stack td-pb-border-top td_block_template_1" data-td-block-uid="tdi_136">
+
+<div class="tdb-block-inner td-fix-index"><div class="tdb-next-post tdb-next-post-bg tdb-post-prev"><span>Previous article</span><div class="td-module-container"><div class="next-prev-title"><a href="https://favs.news/support-spokane-wildfire-survivors/">How to support a wildfire survivor, according to someone who’s done it for 9 years</a></div></div></div></div></div>
+
+
+
+<div class="td_block_wrap tdb_single_comments tdi_137 tdb-comm-layout2 td-pb-border-top td_block_template_2" data-td-block-uid="tdi_137">
+
+<div class="tdb-block-inner td-fix-index"><div class="comments" id="comments">    <div class="wpdiscuz_top_clearing"></div>
+    <div id="comments" class="comments-area"><div id="respond"></div><div id="wpd-post-rating" class="wpd-not-rated">
+            <div class="wpd-rating-wrap">
+            <div class="wpd-rating-left"></div>
+            <div class="wpd-rating-data">
+                <div class="wpd-rating-value">
+                    <span class="wpdrv">0</span>
+                    <span class="wpdrc">0</span>
+                    <span class="wpdrt">votes</span></div>
+                <div class="wpd-rating-title">Article Rating</div>
+                <div class="wpd-rating-stars"><svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><path class="wpd-star" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg><svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><path class="wpd-star" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg><svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><path class="wpd-star" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg><svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><path class="wpd-star" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg><svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><path class="wpd-star" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></div><div class="wpd-rate-starts"><svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><path class="wpd-star" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg><svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><path class="wpd-star" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg><svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><path class="wpd-star" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg><svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><path class="wpd-star" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg><svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><path class="wpd-star" d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path><path d="M0 0h24v24H0z" fill="none"></path></svg></div></div>
+            <div class="wpd-rating-right"></div></div></div>    <div id="wpdcom" class="wpdiscuz_unauth wpd-default wpd-layout-1 wpd-comments-open">
+                    <div class="wc_social_plugin_wrapper">
+                            </div>
+            <div class="wpd-form-wrap">
+                <div class="wpd-form-head">
+                                            <div class="wpd-sbs-toggle">
+                            <i class="far fa-envelope"></i> <span class="wpd-sbs-title">Subscribe</span>
+                            <i class="fas fa-caret-down"></i>
+                        </div>
+                                            <div class="wpd-auth">
+                                                <div class="wpd-login">
+                                                    </div>
+                    </div>
+                </div>
+                                                    <div class="wpdiscuz-subscribe-bar wpdiscuz-hidden">
+                                                    <form action="https://favs.news/wp-admin/admin-ajax.php?action=wpdAddSubscription" method="post" id="wpdiscuz-subscribe-form">
+                                <div class="wpdiscuz-subscribe-form-intro">Notify of </div>
+                                <div class="wpdiscuz-subscribe-form-option">
+                                    <select class="wpdiscuz_select" name="wpdiscuzSubscriptionType">
+                                                                                    <option value="post">new follow-up comments</option>
+                                                                                                                                <option value="all_comment">new replies to my comments</option>
+                                                                                </select>
+                                </div>
+                                                                    <div class="wpdiscuz-item wpdiscuz-subscribe-form-email">
+                                        <input class="email" type="email" name="wpdiscuzSubscriptionEmail" required="required" value="" placeholder="Email">
+                                    </div>
+                                                                    <div class="wpdiscuz-subscribe-form-button">
+                                    <input id="wpdiscuz_subscription_button" class="wpd-prim-button wpd_not_clicked" type="submit" value="›" name="wpdiscuz_subscription_button">
+                                </div>
+                                <input type="hidden" id="wpdiscuz_subscribe_form_nonce" name="wpdiscuz_subscribe_form_nonce" value="fffd2fd97a"><input type="hidden" name="_wp_http_referer" value="/northwest-faith-news-wildfires-community-aid/">                            <input type="hidden" id="apbct_visible_fields_4" name="apbct_visible_fields" value="eyIwIjp7InZpc2libGVfZmllbGRzIjoid3BkaXNjdXpTdWJzY3JpcHRpb25UeXBlIHdwZGlzY3V6U3Vic2NyaXB0aW9uRW1haWwiLCJ2aXNpYmxlX2ZpZWxkc19jb3VudCI6MiwiaW52aXNpYmxlX2ZpZWxkcyI6IndwZGlzY3V6X3N1YnNjcmliZV9mb3JtX25vbmNlIF93cF9odHRwX3JlZmVyZXIgY3Rfbm9fY29va2llX2hpZGRlbl9maWVsZCIsImludmlzaWJsZV9maWVsZHNfY291bnQiOjN9fQ=="><input name="ct_no_cookie_hidden_field" value="_ct_no_cookie_data_eyJjdF9zY3JlZW5faW5mbyI6IntcImZ1bGxXaWR0aFwiOjE2OTIsXCJmdWxsSGVpZ2h0XCI6NzcwOSxcInZpc2libGVXaWR0aFwiOjE2OTIsXCJ2aXNpYmxlSGVpZ2h0XCI6OTQ5fSIsImN0X3BvaW50ZXJfZGF0YSI6IltbODAsNCwxMDk5MjVdLFs4MCwyMTMsMTA5OTY4XSxbNzIsODM5LDExMDExOV1dIiwiY3RfbW91c2VfbW92ZWQiOnRydWUsImFwYmN0X3BhZ2VfaGl0cyI6MSwiY3RfY2hlY2tqcyI6MTU5Mjg4NDgwNSwiY3RfdGltZXpvbmUiOi02LCJjdF9oYXNfc2Nyb2xsZWQiOnRydWUsImN0X2Nvb2tpZXNfdHlwZSI6Im5vbmUiLCJhcGJjdF9leGlzdGluZ192aXNpdG9yIjoxLCJhcGJjdF92aXNpYmxlX2ZpZWxkcyI6IjAiLCJjdF9wc190aW1lc3RhbXAiOjE3ODY3MjcxODQsImFwYmN0X2hlYWRsZXNzIjpmYWxzZSwiY3RfZmtwX3RpbWVzdGFtcCI6IjAiLCJjdF9jaGVja2VkX2VtYWlsc19leGlzdCI6IjAiLCJjdF9nYXRoZXJpbmdfbG9hZGVkIjp0cnVlLCJjdF9jaGVja2VkX2VtYWlscyI6IjAiLCJhcGJjdF9zZXNzaW9uX2lkIjoidmlhaWsiLCJhcGJjdF9zZXNzaW9uX2N1cnJlbnRfcGFnZSI6Imh0dHBzOi8vZmF2cy5uZXdzL25vcnRod2VzdC1mYWl0aC1uZXdzLXdpbGRmaXJlcy1jb21tdW5pdHktYWlkLz9tY19jaWQ9MjBkYjZkZjYxMiZtY19laWQ9M2Q5MTE5Zjc2YSIsInR5cG8iOltdLCJjb2xsZWN0aW5nX3VzZXJfYWN0aXZpdHlfZGF0YSI6W119" type="hidden" class="apbct_special_field ct_no_cookie_hidden_field"></form>
+                                                </div>
+                            <div class="wpd-form wpd-form-wrapper wpd-main-form-wrapper" id="wpd-main-form-wrapper-0_0">
+                                        <form method="post" enctype="multipart/form-data" data-uploading="false" class="wpd_comm_form wpd_main_comm_form">
+                                        <div class="wpd-field-comment">
+                        <div class="wpdiscuz-item wc-field-textarea">
+                            <div class="wpdiscuz-textarea-wrap ">
+                                                                                                        <div class="wpd-avatar">
+                                        <img alt="guest" src="https://secure.gravatar.com/avatar/b692e431de54e1782b0264aad58f8dacb877184b26e6412a44ae47e26d6836e5?s=56&amp;d=mm&amp;r=g" class="avatar avatar-56 photo td-animation-stack-type0-1" height="56" width="56" decoding="async" srcset="https://secure.gravatar.com/avatar/b692e431de54e1782b0264aad58f8dacb877184b26e6412a44ae47e26d6836e5?s=112&amp;d=mm&amp;r=g 2x">                                    </div>
+                                                <div id="wpd-editor-wraper-0_0">
+                
+                <label for="wc-textarea-0_0">Label</label>
+                
+                <div id="wpd-editor-0_0" class="ql-container ql-snow"><div class="ql-editor ql-blank" data-gramm="false" contenteditable="true" data-placeholder="Be the First to Comment!"><p><br></p></div><div class="ql-clipboard" contenteditable="true" tabindex="-1"></div><div class="ql-tooltip ql-hidden"><a class="ql-preview" target="_blank" href="about:blank"></a><input type="text" data-formula="e=mc^2" data-link="https://quilljs.com" data-video="Embed URL"><a class="ql-action"></a><a class="ql-remove"></a></div><div class="ql-texteditor"><textarea id="wc-textarea-0_0" name="wc_comment" class="wc_comment wpd-field"></textarea></div></div>
+                        <div id="wpd-editor-toolbar-0_0" class="ql-toolbar ql-snow">
+                            <button title="Bold" class="ql-bold" type="button"><svg viewBox="0 0 18 18"> <path class="ql-stroke" d="M5,4H9.5A2.5,2.5,0,0,1,12,6.5v0A2.5,2.5,0,0,1,9.5,9H5A0,0,0,0,1,5,9V4A0,0,0,0,1,5,4Z"></path> <path class="ql-stroke" d="M5,9h5.5A2.5,2.5,0,0,1,13,11.5v0A2.5,2.5,0,0,1,10.5,14H5a0,0,0,0,1,0,0V9A0,0,0,0,1,5,9Z"></path> </svg></button>
+                                <button title="Italic" class="ql-italic" type="button"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="7" x2="13" y1="4" y2="4"></line> <line class="ql-stroke" x1="5" x2="11" y1="14" y2="14"></line> <line class="ql-stroke" x1="8" x2="10" y1="14" y2="4"></line> </svg></button>
+                                <button title="Underline" class="ql-underline" type="button"><svg viewBox="0 0 18 18"> <path class="ql-stroke" d="M5,3V9a4.012,4.012,0,0,0,4,4H9a4.012,4.012,0,0,0,4-4V3"></path> <rect class="ql-fill" height="1" rx="0.5" ry="0.5" width="12" x="3" y="15"></rect> </svg></button>
+                                <button title="Strike" class="ql-strike" type="button"><svg viewBox="0 0 18 18"> <line class="ql-stroke ql-thin" x1="15.5" x2="2.5" y1="8.5" y2="9.5"></line> <path class="ql-fill" d="M9.007,8C6.542,7.791,6,7.519,6,6.5,6,5.792,7.283,5,9,5c1.571,0,2.765.679,2.969,1.309a1,1,0,0,0,1.9-.617C13.356,4.106,11.354,3,9,3,6.2,3,4,4.538,4,6.5a3.2,3.2,0,0,0,.5,1.843Z"></path> <path class="ql-fill" d="M8.984,10C11.457,10.208,12,10.479,12,11.5c0,0.708-1.283,1.5-3,1.5-1.571,0-2.765-.679-2.969-1.309a1,1,0,1,0-1.9.617C4.644,13.894,6.646,15,9,15c2.8,0,5-1.538,5-3.5a3.2,3.2,0,0,0-.5-1.843Z"></path> </svg></button>
+                                <button title="Ordered List" class="ql-list" value="ordered" type="button"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="7" x2="15" y1="4" y2="4"></line> <line class="ql-stroke" x1="7" x2="15" y1="9" y2="9"></line> <line class="ql-stroke" x1="7" x2="15" y1="14" y2="14"></line> <line class="ql-stroke ql-thin" x1="2.5" x2="4.5" y1="5.5" y2="5.5"></line> <path class="ql-fill" d="M3.5,6A0.5,0.5,0,0,1,3,5.5V3.085l-0.276.138A0.5,0.5,0,0,1,2.053,3c-0.124-.247-0.023-0.324.224-0.447l1-.5A0.5,0.5,0,0,1,4,2.5v3A0.5,0.5,0,0,1,3.5,6Z"></path> <path class="ql-stroke ql-thin" d="M4.5,10.5h-2c0-.234,1.85-1.076,1.85-2.234A0.959,0.959,0,0,0,2.5,8.156"></path> <path class="ql-stroke ql-thin" d="M2.5,14.846a0.959,0.959,0,0,0,1.85-.109A0.7,0.7,0,0,0,3.75,14a0.688,0.688,0,0,0,.6-0.736,0.959,0.959,0,0,0-1.85-.109"></path> </svg></button>
+                                <button title="Unordered List" class="ql-list" value="bullet" type="button"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="6" x2="15" y1="4" y2="4"></line> <line class="ql-stroke" x1="6" x2="15" y1="9" y2="9"></line> <line class="ql-stroke" x1="6" x2="15" y1="14" y2="14"></line> <line class="ql-stroke" x1="3" x2="3" y1="4" y2="4"></line> <line class="ql-stroke" x1="3" x2="3" y1="9" y2="9"></line> <line class="ql-stroke" x1="3" x2="3" y1="14" y2="14"></line> </svg></button>
+                                <button title="Blockquote" class="ql-blockquote" type="button"><svg viewBox="0 0 18 18"> <rect class="ql-fill ql-stroke" height="3" width="3" x="4" y="5"></rect> <rect class="ql-fill ql-stroke" height="3" width="3" x="11" y="5"></rect> <path class="ql-even ql-fill ql-stroke" d="M7,8c0,4.031-3,5-3,5"></path> <path class="ql-even ql-fill ql-stroke" d="M14,8c0,4.031-3,5-3,5"></path> </svg></button>
+                                <button title="Code Block" class="ql-code-block" type="button"><svg viewBox="0 0 18 18"> <polyline class="ql-even ql-stroke" points="5 7 3 9 5 11"></polyline> <polyline class="ql-even ql-stroke" points="13 7 15 9 13 11"></polyline> <line class="ql-stroke" x1="10" x2="8" y1="5" y2="13"></line> </svg></button>
+                                <button title="Link" class="ql-link" type="button"><svg viewBox="0 0 18 18"> <line class="ql-stroke" x1="7" x2="11" y1="7" y2="11"></line> <path class="ql-even ql-stroke" d="M8.9,4.577a3.476,3.476,0,0,1,.36,4.679A3.476,3.476,0,0,1,4.577,8.9C3.185,7.5,2.035,6.4,4.217,4.217S7.5,3.185,8.9,4.577Z"></path> <path class="ql-even ql-stroke" d="M13.423,9.1a3.476,3.476,0,0,0-4.679-.36,3.476,3.476,0,0,0,.36,4.679c1.392,1.392,2.5,2.542,4.679.36S14.815,10.5,13.423,9.1Z"></path> </svg></button>
+                                <button title="Source Code" class="ql-sourcecode" data-wpde_button_name="sourcecode" type="button">{}</button>
+                                <button title="Spoiler" class="ql-spoiler" data-wpde_button_name="spoiler" type="button">[+]</button>
+                            <div class="wpd-editor-buttons-right">
+                <span class="wmu-upload-wrap" wpd-tooltip="Attach an image to this comment" wpd-tooltip-position="left"><label class="wmu-add"><i class="far fa-image"></i><input class="wmu-add-files" type="file" name="wmu_files" accept="image/*"></label></span>            </div>
+        </div>
+                    </div>
+                                        </div>
+                        </div>
+                    </div>
+                    <div class="wpd-form-foot">
+                        <div class="wpdiscuz-textarea-foot">
+                                                        <div class="wpdiscuz-button-actions"><div class="wmu-action-wrap"><div class="wmu-tabs wmu-images-tab wmu-hide"></div><div class="wmu-tabs wmu-videos-tab wmu-hide"></div><div class="wmu-tabs wmu-files-tab wmu-hide"></div></div></div>
+                        </div>
+                                <div class="wpd-form-row">
+                    <div class="wpd-form-col-left">
+                        <div class="wpdiscuz-item wc_name-wrapper wpd-has-icon">
+                                    <div class="wpd-field-icon"><i class="fas fa-user"></i>
+                    </div>
+                                    <input id="wc_name-0_0" value="" required="required" aria-required="true" class="wc_name wpd-field" type="text" name="wc_name" placeholder="Name*" maxlength="50" pattern=".{3,50}" title="">
+                <label for="wc_name-0_0" class="wpdlb">Name*</label>
+                            </div>
+                        <div class="wpdiscuz-item wc_email-wrapper wpd-has-icon">
+                                    <div class="wpd-field-icon"><i class="fas fa-at"></i>
+                    </div>
+                                    <input id="wc_email-0_0" value="" required="required" aria-required="true" class="wc_email wpd-field" type="email" name="wc_email" placeholder="Email*">
+                <label for="wc_email-0_0" class="wpdlb">Email*</label>
+                            </div>
+                            <div class="wpdiscuz-item wc_website-wrapper wpd-has-icon">
+                                            <div class="wpd-field-icon"><i class="fas fa-link"></i>
+                        </div>
+                                        <input id="wc_website-0_0" value="" class="wc_website wpd-field" type="text" name="wc_website" placeholder="Website">
+                    <label for="wc_website-0_0" class="wpdlb">Website</label>
+                                    </div>
+                        </div>
+                <div class="wpd-form-col-right">
+                        <div class="wpd-field-captcha wpdiscuz-item">
+                <div class="wpdiscuz-recaptcha" id="wpdiscuz-recaptcha-0_0"><div><div><iframe title="reCAPTCHA" width="304" height="78" role="presentation" name="a-pkn8xvhst90" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LfwsHEjAAAAABziFJj9aqZH6vOmI6tw7WKKdciG&amp;co=aHR0cHM6Ly9mYXZzLm5ld3M6NDQz&amp;hl=en&amp;v=XOqlk8PL_yVx6IdpLbpXdiLy&amp;theme=light&amp;size=normal&amp;anchor-ms=20000&amp;execute-ms=30000&amp;cb=na4xavdnv9il"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response"></textarea></div><iframe></iframe></div>
+                <input id="wpdiscuz-recaptcha-field-0_0" type="hidden" name="wc_captcha" value="" required="required" aria-required="true" class="wpdiscuz_reset">
+                <div class="clearfix"></div>
+            </div>
+                    <div class="wc-field-submit">
+                                                <label class="wpd_label" wpd-tooltip="Notify of new replies to this comment">
+                        <input id="wc_notification_new_comment-0_0" class="wc_notification_new_comment-0_0 wpd_label__checkbox" value="comment" type="checkbox" name="wpdiscuz_notification_type" checked="checked">
+                        <span class="wpd_label__text">
+                                <span class="wpd_label__check">
+                                    <i class="fas fa-bell wpdicon wpdicon-on"></i>
+                                    <i class="fas fa-bell-slash wpdicon wpdicon-off"></i>
+                                </span>
+                            </span>
+                    </label>
+                            <input id="wpd-field-submit-0_0" class="wc_comm_submit wpd_not_clicked wpd-prim-button" type="submit" name="submit" value="Post Comment" aria-label="Post Comment">
+        </div>
+                </div>
+                    <div class="clearfix"></div>
+        </div>
+                            </div>
+                                        <input type="hidden" class="wpdiscuz_unique_id" value="0_0" name="wpdiscuz_unique_id">
+                    <input type="hidden" id="ct_checkjs_f718499c1c8cef6730f9fd03c8125cab" name="ct_checkjs" value="1592884805">                <input type="hidden" id="apbct_visible_fields_5" name="apbct_visible_fields" value="eyIwIjp7InZpc2libGVfZmllbGRzIjoid2NfbmFtZSB3Y19lbWFpbCB3Y193ZWJzaXRlIiwidmlzaWJsZV9maWVsZHNfY291bnQiOjMsImludmlzaWJsZV9maWVsZHMiOiJ3Y19jb21tZW50IHdtdV9maWxlcyBnLXJlY2FwdGNoYS1yZXNwb25zZSB3Y19jYXB0Y2hhIHdwZGlzY3V6X3VuaXF1ZV9pZCBjdF9ub19jb29raWVfaGlkZGVuX2ZpZWxkIiwiaW52aXNpYmxlX2ZpZWxkc19jb3VudCI6Nn19"><input name="ct_no_cookie_hidden_field" value="_ct_no_cookie_data_eyJjdF9zY3JlZW5faW5mbyI6IntcImZ1bGxXaWR0aFwiOjE2OTIsXCJmdWxsSGVpZ2h0XCI6NzcwOSxcInZpc2libGVXaWR0aFwiOjE2OTIsXCJ2aXNpYmxlSGVpZ2h0XCI6OTQ5fSIsImN0X3BvaW50ZXJfZGF0YSI6IltbODAsNCwxMDk5MjVdLFs4MCwyMTMsMTA5OTY4XSxbNzIsODM5LDExMDExOV1dIiwiY3RfbW91c2VfbW92ZWQiOnRydWUsImFwYmN0X3BhZ2VfaGl0cyI6MSwiY3RfY2hlY2tqcyI6MTU5Mjg4NDgwNSwiY3RfdGltZXpvbmUiOi02LCJjdF9oYXNfc2Nyb2xsZWQiOnRydWUsImN0X2Nvb2tpZXNfdHlwZSI6Im5vbmUiLCJhcGJjdF9leGlzdGluZ192aXNpdG9yIjoxLCJhcGJjdF92aXNpYmxlX2ZpZWxkcyI6IjAiLCJjdF9wc190aW1lc3RhbXAiOjE3ODY3MjcxODQsImFwYmN0X2hlYWRsZXNzIjpmYWxzZSwiY3RfZmtwX3RpbWVzdGFtcCI6IjAiLCJjdF9jaGVja2VkX2VtYWlsc19leGlzdCI6IjAiLCJjdF9nYXRoZXJpbmdfbG9hZGVkIjp0cnVlLCJjdF9jaGVja2VkX2VtYWlscyI6IjAiLCJhcGJjdF9zZXNzaW9uX2lkIjoidmlhaWsiLCJhcGJjdF9zZXNzaW9uX2N1cnJlbnRfcGFnZSI6Imh0dHBzOi8vZmF2cy5uZXdzL25vcnRod2VzdC1mYWl0aC1uZXdzLXdpbGRmaXJlcy1jb21tdW5pdHktYWlkLz9tY19jaWQ9MjBkYjZkZjYxMiZtY19laWQ9M2Q5MTE5Zjc2YSIsInR5cG8iOltdLCJjb2xsZWN0aW5nX3VzZXJfYWN0aXZpdHlfZGF0YSI6W119" type="hidden" class="apbct_special_field ct_no_cookie_hidden_field"></form>
+                        </div>
+                <div id="wpdiscuz_hidden_secondary_form">
+                    <div class="wpd-form wpd-form-wrapper wpd-secondary-form-wrapper" id="wpd-secondary-form-wrapper-wpdiscuzuniqueid">
+                            <div class="wpd-secondary-forms-social-content"></div>
+                <div class="clearfix"></div>
+                                        <form method="post" enctype="multipart/form-data" data-uploading="false" class="wpd_comm_form wpd-secondary-form-wrapper">
+                                        <div class="wpd-field-comment">
+                        <div class="wpdiscuz-item wc-field-textarea">
+                            <div class="wpdiscuz-textarea-wrap ">
+                                                                                                        <div class="wpd-avatar">
+                                        <img alt="guest" src="https://secure.gravatar.com/avatar/beb83cc537e6fe520f5d07e2f39caabf7d0a79f3a0cb09e782099fc3579c946a?s=56&amp;d=mm&amp;r=g" class="avatar avatar-56 photo td-animation-stack-type0-2" height="56" width="56" decoding="async" srcset="https://secure.gravatar.com/avatar/beb83cc537e6fe520f5d07e2f39caabf7d0a79f3a0cb09e782099fc3579c946a?s=112&amp;d=mm&amp;r=g 2x">                                    </div>
+                                                <div id="wpd-editor-wraper-wpdiscuzuniqueid">
+                <div id="wpd-editor-char-counter-wpdiscuzuniqueid" class="wpd-editor-char-counter"></div>
+                <label for="wc-textarea-wpdiscuzuniqueid">Label</label>
+                <textarea id="wc-textarea-wpdiscuzuniqueid" name="wc_comment" class="wc_comment wpd-field"></textarea>
+                <div id="wpd-editor-wpdiscuzuniqueid"></div>
+                        <div id="wpd-editor-toolbar-wpdiscuzuniqueid">
+                            <button title="Bold" class="ql-bold"></button>
+                                <button title="Italic" class="ql-italic"></button>
+                                <button title="Underline" class="ql-underline"></button>
+                                <button title="Strike" class="ql-strike"></button>
+                                <button title="Ordered List" class="ql-list" value="ordered"></button>
+                                <button title="Unordered List" class="ql-list" value="bullet"></button>
+                                <button title="Blockquote" class="ql-blockquote"></button>
+                                <button title="Code Block" class="ql-code-block"></button>
+                                <button title="Link" class="ql-link"></button>
+                                <button title="Source Code" class="ql-sourcecode" data-wpde_button_name="sourcecode">{}</button>
+                                <button title="Spoiler" class="ql-spoiler" data-wpde_button_name="spoiler">[+]</button>
+                            <div class="wpd-editor-buttons-right">
+                <span class="wmu-upload-wrap" wpd-tooltip="Attach an image to this comment" wpd-tooltip-position="left"><label class="wmu-add"><i class="far fa-image"></i><input class="wmu-add-files" type="file" name="wmu_files" accept="image/*"></label></span>            </div>
+        </div>
+                    </div>
+                                        </div>
+                        </div>
+                    </div>
+                    <div class="wpd-form-foot">
+                        <div class="wpdiscuz-textarea-foot">
+                                                        <div class="wpdiscuz-button-actions"><div class="wmu-action-wrap"><div class="wmu-tabs wmu-images-tab wmu-hide"></div><div class="wmu-tabs wmu-videos-tab wmu-hide"></div><div class="wmu-tabs wmu-files-tab wmu-hide"></div></div></div>
+                        </div>
+                                <div class="wpd-form-row">
+                    <div class="wpd-form-col-left">
+                        <div class="wpdiscuz-item wc_name-wrapper wpd-has-icon">
+                                    <div class="wpd-field-icon"><i class="fas fa-user"></i>
+                    </div>
+                                    <input id="wc_name-wpdiscuzuniqueid" value="" required="required" aria-required="true" class="wc_name wpd-field" type="text" name="wc_name" placeholder="Name*" maxlength="50" pattern=".{3,50}" title="">
+                <label for="wc_name-wpdiscuzuniqueid" class="wpdlb">Name*</label>
+                            </div>
+                        <div class="wpdiscuz-item wc_email-wrapper wpd-has-icon">
+                                    <div class="wpd-field-icon"><i class="fas fa-at"></i>
+                    </div>
+                                    <input id="wc_email-wpdiscuzuniqueid" value="" required="required" aria-required="true" class="wc_email wpd-field" type="email" name="wc_email" placeholder="Email*">
+                <label for="wc_email-wpdiscuzuniqueid" class="wpdlb">Email*</label>
+                            </div>
+                            <div class="wpdiscuz-item wc_website-wrapper wpd-has-icon">
+                                            <div class="wpd-field-icon"><i class="fas fa-link"></i>
+                        </div>
+                                        <input id="wc_website-wpdiscuzuniqueid" value="" class="wc_website wpd-field" type="text" name="wc_website" placeholder="Website">
+                    <label for="wc_website-wpdiscuzuniqueid" class="wpdlb">Website</label>
+                                    </div>
+                        </div>
+                <div class="wpd-form-col-right">
+                        <div class="wpd-field-captcha wpdiscuz-item">
+                <div class="wpdiscuz-recaptcha" id="wpdiscuz-recaptcha-wpdiscuzuniqueid"></div>
+                <input id="wpdiscuz-recaptcha-field-wpdiscuzuniqueid" type="hidden" name="wc_captcha" value="" required="required" aria-required="true" class="wpdiscuz_reset">
+                <div class="clearfix"></div>
+            </div>
+                    <div class="wc-field-submit">
+                                                <label class="wpd_label" wpd-tooltip="Notify of new replies to this comment">
+                        <input id="wc_notification_new_comment-wpdiscuzuniqueid" class="wc_notification_new_comment-wpdiscuzuniqueid wpd_label__checkbox" value="comment" type="checkbox" name="wpdiscuz_notification_type" checked="checked">
+                        <span class="wpd_label__text">
+                                <span class="wpd_label__check">
+                                    <i class="fas fa-bell wpdicon wpdicon-on"></i>
+                                    <i class="fas fa-bell-slash wpdicon wpdicon-off"></i>
+                                </span>
+                            </span>
+                    </label>
+                            <input id="wpd-field-submit-wpdiscuzuniqueid" class="wc_comm_submit wpd_not_clicked wpd-prim-button" type="submit" name="submit" value="Post Comment" aria-label="Post Comment">
+        </div>
+                </div>
+                    <div class="clearfix"></div>
+        </div>
+                            </div>
+                                        <input type="hidden" class="wpdiscuz_unique_id" value="wpdiscuzuniqueid" name="wpdiscuz_unique_id">
+                    <input type="hidden" id="ct_checkjs_819f46e52c25763a55cc642422644317" name="ct_checkjs" value="1592884805">                <input type="hidden" id="apbct_visible_fields_6" name="apbct_visible_fields" value="eyIwIjp7InZpc2libGVfZmllbGRzIjoid2NfY29tbWVudCB3Y19uYW1lIHdjX2VtYWlsIHdjX3dlYnNpdGUiLCJ2aXNpYmxlX2ZpZWxkc19jb3VudCI6NCwiaW52aXNpYmxlX2ZpZWxkcyI6IndtdV9maWxlcyB3Y19jYXB0Y2hhIHdwZGlzY3V6X3VuaXF1ZV9pZCBjdF9ub19jb29raWVfaGlkZGVuX2ZpZWxkIiwiaW52aXNpYmxlX2ZpZWxkc19jb3VudCI6NH19"><input name="ct_no_cookie_hidden_field" value="_ct_no_cookie_data_eyJjdF9zY3JlZW5faW5mbyI6IntcImZ1bGxXaWR0aFwiOjE2OTIsXCJmdWxsSGVpZ2h0XCI6NzcwOSxcInZpc2libGVXaWR0aFwiOjE2OTIsXCJ2aXNpYmxlSGVpZ2h0XCI6OTQ5fSIsImN0X3BvaW50ZXJfZGF0YSI6IltbODAsNCwxMDk5MjVdLFs4MCwyMTMsMTA5OTY4XSxbNzIsODM5LDExMDExOV1dIiwiY3RfbW91c2VfbW92ZWQiOnRydWUsImFwYmN0X3BhZ2VfaGl0cyI6MSwiY3RfY2hlY2tqcyI6MTU5Mjg4NDgwNSwiY3RfdGltZXpvbmUiOi02LCJjdF9oYXNfc2Nyb2xsZWQiOnRydWUsImN0X2Nvb2tpZXNfdHlwZSI6Im5vbmUiLCJhcGJjdF9leGlzdGluZ192aXNpdG9yIjoxLCJhcGJjdF92aXNpYmxlX2ZpZWxkcyI6IjAiLCJjdF9wc190aW1lc3RhbXAiOjE3ODY3MjcxODQsImFwYmN0X2hlYWRsZXNzIjpmYWxzZSwiY3RfZmtwX3RpbWVzdGFtcCI6IjAiLCJjdF9jaGVja2VkX2VtYWlsc19leGlzdCI6IjAiLCJjdF9nYXRoZXJpbmdfbG9hZGVkIjp0cnVlLCJjdF9jaGVja2VkX2VtYWlscyI6IjAiLCJhcGJjdF9zZXNzaW9uX2lkIjoidmlhaWsiLCJhcGJjdF9zZXNzaW9uX2N1cnJlbnRfcGFnZSI6Imh0dHBzOi8vZmF2cy5uZXdzL25vcnRod2VzdC1mYWl0aC1uZXdzLXdpbGRmaXJlcy1jb21tdW5pdHktYWlkLz9tY19jaWQ9MjBkYjZkZjYxMiZtY19laWQ9M2Q5MTE5Zjc2YSIsInR5cG8iOltdLCJjb2xsZWN0aW5nX3VzZXJfYWN0aXZpdHlfZGF0YSI6W119" type="hidden" class="apbct_special_field ct_no_cookie_hidden_field"></form>
+                        </div>
+                </div>
+                    </div>
+                        <div id="wpd-threads" class="wpd-thread-wrapper">
+                <div class="wpd-thread-head">
+                    <div class="wpd-thread-info " data-comments-count="0">
+                        <span class="wpdtc" title="0">0</span> Comments                    </div>
+                                        <div class="wpd-space"></div>
+                    <div class="wpd-thread-filter">
+                                                    <div class="wpd-filter wpdf-reacted wpd_not_clicked wpdiscuz-hidden" data-filter-type="most_reacted" wpd-tooltip="Most reacted comment">
+                                <i class="fas fa-bolt"></i></div>
+                                                        <div class="wpd-filter wpdf-hottest wpd_not_clicked wpdiscuz-hidden" data-filter-type="hottest_thread" wpd-tooltip="Hottest comment thread">
+                                <i class="fas fa-fire"></i></div>
+                                                        <div class="wpd-filter wpdf-sorting wpdiscuz-hidden">
+                                                                        <span class="wpdiscuz-sort-button wpdiscuz-date-sort-asc wpdiscuz-sort-button-active" data-sorting="oldest">Oldest</span>
+                                                                        <i class="fas fa-sort-down"></i>
+                                <div class="wpdiscuz-sort-buttons">
+                                                                            <span class="wpdiscuz-sort-button wpdiscuz-date-sort-desc" data-sorting="newest">Newest</span>
+                                                                                <span class="wpdiscuz-sort-button wpdiscuz-vote-sort-up" data-sorting="by_vote">Most Voted</span>
+                                                                        </div>
+                            </div>
+                                                </div>
+                    <div class="wpd-filter-container wpdiscuz-hidden"></div>
+                </div>
+                                <div class="wpd-thread-list">
+                    <!-- // From wpDiscuz's Caches // -->                    <div class="wpdiscuz-comment-pagination">
+                                            </div>
+                </div>
+            </div>
+                </div>
+        </div>
+    <div id="wpdiscuz-loading-bar" class="wpdiscuz-loading-bar-unauth"></div>
+    <div id="wpdiscuz-comment-message" class="wpdiscuz-comment-message-unauth"></div>
+    </div></div></div></div></div></div></div></div></div>                    <span class="td-page-meta" itemprop="author" itemscope="" itemtype="https://schema.org/Person"><meta itemprop="name" content="FāVS News"><meta itemprop="url" content="https://favs.news/author/favsnews/"></span><meta itemprop="datePublished" content="2026-08-14T06:30:00-07:00"><meta itemprop="dateModified" content="2026-08-13T19:13:49-07:00"><meta itemscope="" itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="https://favs.news/northwest-faith-news-wildfires-community-aid/"><span class="td-page-meta" itemprop="publisher" itemscope="" itemtype="https://schema.org/Organization"><span class="td-page-meta" itemprop="logo" itemscope="" itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://favs.wdwstaging.com/wp-content/uploads/2023/08/Variation_Indigo-Dye.png"></span><meta itemprop="name" content="FāVS News"></span><meta itemprop="headline" content="FāVS Religion News Roundup: Aug. 14"><span class="td-page-meta" itemprop="image" itemscope="" itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://favs.news/wp-content/uploads/2025/05/Religion-News-Roundup-scaled.jpg"><meta itemprop="width" content="2560"><meta itemprop="height" content="1707"></span>                </article>
+            </div>
+        </div>
+        
+    </div> <!-- #tdb-autoload-article -->
+
+
+    <div class="td-footer-template-wrap" role="contentinfo">
+                <div class="td-footer-wrap ">
+            <div id="tdi_138" class="tdc-zone"><div class="tdc_zone tdi_139  wpb_row td-pb-row tdc-element-style">
+
+<div class="tdi_138_rand_style td-element-style"></div><div id="tdi_140" class="tdc-row stretch_row_1400 td-stretch-content"><div class="vc_row tdi_141  wpb_row td-pb-row tdc-element-style">
+
+<div class="tdi_140_rand_style td-element-style"><div class="td-element-style-before"></div></div><div class="vc_column tdi_143  wpb_column vc_column_container tdc-column td-pb-span12">
+<div class="wpb_wrapper"><div class="vc_row_inner tdi_145  vc_row vc_inner wpb_row td-pb-row">
+<div class="vc_column_inner tdi_147  wpb_column vc_column_container tdc-inner-column td-pb-span12">
+<div class="vc_column-inner"><div class="wpb_wrapper"><div class="td_block_wrap tdb_header_logo tdi_148 td-pb-border-top td_block_template_1 tdb-header-align" data-td-block-uid="tdi_148">
+
+<div class="tdb-block-inner td-fix-index"><a class="tdb-logo-a" href="https://favs.news/"><span class="tdb-logo-img-wrap"><img class="tdb-logo-img" src="https://favs.news/wp-content/uploads/2023/11/Variation_White.png" alt="Logo" title="" width="897" height="227"></span><span class="tdb-logo-text-wrap"><span class="tdb-logo-text-title">Favs News</span></span></a></div></div> <!-- ./block --><div class="tdm_block td_block_wrap tdm_block_socials tdi_149 tdm-inline-block tdm-content-horiz-right td-pb-border-top td_block_template_1" data-td-block-uid="tdi_149">
+
+
+<div class="tdm-social-wrapper tds-social3 tdi_150"><div class="tdm-social-item-wrap"><a href="https://www.facebook.com/FAVSNews" target="_blank" title="Facebook" class="tdm-social-item"><i class="td-icon-font td-icon-facebook"></i><span>Facebook</span></a></div><div class="tdm-social-item-wrap"><a href="https://www.instagram.com/favsnews" target="_blank" title="Instagram" class="tdm-social-item"><i class="td-icon-font td-icon-instagram"></i><span>Instagram</span></a></div><div class="tdm-social-item-wrap"><a href="https://www.linkedin.com/company/f%C4%81vs-news/" target="_blank" title="Linkedin" class="tdm-social-item"><i class="td-icon-font td-icon-linkedin"></i><span>Linkedin</span></a></div><div class="tdm-social-item-wrap"><a href="https://www.tiktok.com/@favs_news" target="_blank" title="TikTok" class="tdm-social-item"><i class="td-icon-font td-icon-tiktok"></i><span>TikTok</span></a></div><div class="tdm-social-item-wrap"><a href="https://www.youtube.com/@favsnews" target="_blank" title="Youtube" class="tdm-social-item"><i class="td-icon-font td-icon-youtube"></i><span>Youtube</span></a></div></div></div><div class="td_block_wrap td_block_list_menu tdi_151 td-blm-display-horizontal td-pb-border-top td_block_template_1 widget" data-td-block-uid="tdi_151">
+
+<div class="td-block-title-wrap"></div><div id="tdi_151" class="td_block_inner td-fix-index"><div class="menu-top-menu-container"><ul id="menu-top-menu-2" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-72264"><a href="https://favs.news/about-favs-news/"><span class="td-blm-menu-item-txt">About FāVS News</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-90487"><a href="https://favs.news/donate-to-favs-news/"><span class="td-blm-menu-item-txt">Donate to FāVS News</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86249"><a href="https://favs.news/become-a-favs-sponsor/"><span class="td-blm-menu-item-txt">Become a FāVS Sponsor</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-72270"><a href="https://favs.news/contact-us/"><span class="td-blm-menu-item-txt">Contact Us</span></a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101484"><a href="https://favs.news/use-our-content-religion/"><span class="td-blm-menu-item-txt">Use Our Content!</span></a></li>
+</ul></div></div></div></div></div></div></div><div class="vc_row_inner tdi_153  vc_row vc_inner wpb_row td-pb-row">
+<div class="vc_column_inner tdi_155  wpb_column vc_column_container tdc-inner-column td-pb-span3">
+<div class="vc_column-inner"><div class="wpb_wrapper"></div></div></div><div class="vc_column_inner tdi_157  wpb_column vc_column_container tdc-inner-column td-pb-span3">
+<div class="vc_column-inner"><div class="wpb_wrapper"><div class="tdm_block td_block_wrap tdm_block_column_title tdi_158 tdm-content-horiz-left td-pb-border-top td_block_template_1" data-td-block-uid="tdi_158">
+<div class="td-block-row"><div class="td-block-span12 tdm-col">
+<div class="tds-title tds-title1 td-fix-index tdi_159 "><h3 class="tdm-title tdm-title-sm">Mission Statement</h3></div></div></div></div><div class="tdm_block td_block_wrap tdm_block_inline_text tdi_160 td-pb-border-top td_block_template_1" data-td-block-uid="tdi_160">
+
+<p class="tdm-descr">FāVS News informs and builds faith and non-faith community through digital journalism and online and offline engagement opportunities.</p></div></div></div></div><div class="vc_column_inner tdi_162  wpb_column vc_column_container tdc-inner-column td-pb-span3">
+<div class="vc_column-inner"><div class="wpb_wrapper"><div class="tdm_block td_block_wrap tdm_block_column_title tdi_163 tdm-content-horiz-left td-pb-border-top td_block_template_1" data-td-block-uid="tdi_163"><div class="td-block-row"><div class="td-block-span12 tdm-col">
+<div class="tds-title tds-title1 td-fix-index tdi_164 "><h3 class="tdm-title tdm-title-sm">Sitemap</h3></div></div></div></div><div class="td_block_wrap td_block_list_menu tdi_165 td-blm-display-vertical td-pb-border-top td_block_template_1 widget" data-td-block-uid="tdi_165">
+
+<div class="td-block-title-wrap"></div><div id="tdi_165" class="td_block_inner td-fix-index"><div class="menu-footer-navigation-container"><ul id="menu-footer-navigation" class="menu"><li id="menu-item-72271" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-72271"><a href="https://favs.news/about-favs-news/user-agreement/"><span class="td-blm-menu-item-txt">User Agreement</span></a></li>
+<li id="menu-item-72272" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-72272"><a href="https://favs.news/about-favs-news/privacy-policy/"><span class="td-blm-menu-item-txt">Privacy Policy</span></a></li>
+<li id="menu-item-100159" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-100159"><a href="https://favs.news/ai-policy/"><span class="td-blm-menu-item-txt">AI Policy</span></a></li>
+<li id="menu-item-72273" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-72273"><a href="https://favs.news/about-favs-news/fundraising-and-donor-policy/"><span class="td-blm-menu-item-txt">Fundraising and Donor Policy for FāVS News</span></a></li>
+<li id="menu-item-72274" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-72274"><a href="https://favs.news/about-favs-news/editorial-independence-policy/"><span class="td-blm-menu-item-txt">Editorial Independence Policy</span></a></li>
+<li id="menu-item-72275" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-72275"><a href="https://favs.news/about-favs-news/comments-policy/"><span class="td-blm-menu-item-txt">Comments Policy</span></a></li>
+<li id="menu-item-100153" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-100153"><a href="https://favs.news/favs-blog/"><span class="td-blm-menu-item-txt">Blog</span></a></li>
+</ul></div></div></div></div></div></div><div class="vc_column_inner tdi_167  wpb_column vc_column_container tdc-inner-column td-pb-span3">
+<div class="vc_column-inner"><div class="wpb_wrapper"></div></div></div></div></div></div></div></div><div id="tdi_168" class="tdc-row stretch_row"><div class="vc_row tdi_169  wpb_row td-pb-row tdc-element-style">
+
+<div class="tdi_168_rand_style td-element-style"></div><div class="vc_column tdi_171  wpb_column vc_column_container tdc-column td-pb-span12">
+<div class="wpb_wrapper"><div class="tdm_block td_block_wrap tdm_block_inline_text tdi_172 td-pb-border-top td_block_template_1" data-td-block-uid="tdi_172">
+<p class="tdm-descr">© Copyright 2025, All Rights Reserved | Website By: <a href="https://welldressedwalrus.com/" rel="“nofollow”">WELL DRESSED WALRUS</a></p></div></div></div></div></div></div></div>        </div>
+
+    </div>
+    
+
+
+
+</div><!--close td-outer-wrap-->
+
+
+
+
+    <!--
+
+        Theme: Newspaper by tagDiv.com 2026
+        Version: 12.7.6 (rara)
+        Deploy mode: deploy
+        
+        uid: 6a7f1b47e8a0e
+    -->
+
+    
+<!-- Custom css from theme panel -->
+
+
+        
+                
+        <span id="wpdUserContentInfoAnchor" rel="#wpdUserContentInfo" data-wpd-lity="">wpDiscuz</span><div id="wpdUserContentInfo" class="lity-hide"></div><div id="wpd-bubble-wrapper" class="wpd-left-corner"><span id="wpd-bubble-all-comments-count" title="0">0</span><div id="wpd-bubble-count"><svg xmlns="https://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path class="wpd-bubble-count-first" d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"></path><path class="wpd-bubble-count-second" d="M0 0h24v24H0z"></path></svg><span class="wpd-new-comments-count">0</span></div><div id="wpd-bubble"><svg xmlns="https://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path class="wpd-bubble-plus-first" d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"></path><path class="wpd-bubble-plus-second" d="M0 0h24v24H0z"></path></svg><div id="wpd-bubble-add-message">Would love your thoughts, please comment.<span id="wpd-bubble-add-message-close"><a href="#">x</a></span></div></div><div id="wpd-bubble-notification"><svg xmlns="https://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path class="wpd-bubble-notification-first" d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"></path><path class="wpd-bubble-notification-second" d="M0 0h24v24H0z"></path></svg><div id="wpd-bubble-notification-message"><div id="wpd-bubble-author"><div><span id="wpd-bubble-author-avatar"></span><span id="wpd-bubble-author-name"></span><span id="wpd-bubble-comment-date">(<span class="wpd-bubble-spans"></span>)</span></div><span id="wpd-bubble-comment-close"><a href="#">x</a></span></div><div id="wpd-bubble-comment"><span id="wpd-bubble-comment-text"></span><span id="wpd-bubble-comment-reply-link">| <a href="#">Reply</a></span></div></div></div></div><div id="wpd-editor-source-code-wrapper-bg"></div><div id="wpd-editor-source-code-wrapper"><textarea id="wpd-editor-source-code"></textarea><button id="wpd-insert-source-code">Insert</button><input type="hidden" id="wpd-editor-uid"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- JS generated by theme -->
+
+
+
+
+
+
+<iframe height="1" width="1"></iframe>
+
+
+<div id="cboxOverlay"></div><div id="colorbox" class="" role="dialog" tabindex="-1"><div id="cboxWrapper"><div><div id="cboxTopLeft"></div><div id="cboxTopCenter"></div><div id="cboxTopRight"></div></div><div><div id="cboxMiddleLeft"></div><div id="cboxContent"><div id="cboxTitle"></div><div id="cboxCurrent"></div><button type="button" id="cboxPrevious"></button><button type="button" id="cboxNext"></button><button type="button" id="cboxSlideshow"></button><div id="cboxLoadingOverlay"></div><div id="cboxLoadingGraphic"></div></div><div id="cboxMiddleRight"></div></div><div><div id="cboxBottomLeft"></div><div id="cboxBottomCenter"></div><div id="cboxBottomRight"></div></div></div><div></div></div><scribe-shadow id="crxjs-ext" data-crx="okfkdaglfjjjfefdcppliegebpoegaii" data-defuddle-shadow="&lt;div id=&quot;root-scribe-elem&quot; style=&quot;position: fixed; width: 0px; height: 0px; top: 0px; left: 0px; overflow: visible; color: var(--text-default); pointer-events: none;&quot;&gt;&lt;div id=&quot;scribe-react-root&quot;&gt;&lt;div class=&quot;brand-refresh brand-refresh-tokens&quot; data-theme=&quot;light&quot; style=&quot;display: contents;&quot;&gt;&lt;div class=&quot;scribe-hit-test&quot;&gt;&lt;/div&gt;&lt;div class=&quot;scribe-hit-test&quot;&gt;&lt;/div&gt;&lt;div class=&quot;scribe-hit-test&quot;&gt;&lt;div role=&quot;region&quot; aria-label=&quot;Notifications (F8)&quot; tabindex=&quot;-1&quot; style=&quot;pointer-events: none;&quot;&gt;&lt;ol tabindex=&quot;-1&quot; class=&quot;fixed bottom-auto right-0 top-0 z-[999999] flex max-h-screen w-[400px] max-w-full p-4 pointer-events-none&quot;&gt;&lt;/ol&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div id=&quot;scribe-portal-root&quot; class=&quot;scribe-hit-test&quot; style=&quot;position: fixed; width: 0px; height: 0px; top: 0px; left: 0px; overflow: visible;&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;chrome-extension://okfkdaglfjjjfefdcppliegebpoegaii/assets/style.css&quot;&gt;"></scribe-shadow><div><div></div><div class="g-recaptcha-bubble-arrow"></div><div class="g-recaptcha-bubble-arrow"></div><div><iframe title="recaptcha challenge expires in two minutes" name="c-pkn8xvhst90" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation" src="https://www.google.com/recaptcha/api2/bframe?hl=en&amp;v=XOqlk8PL_yVx6IdpLbpXdiLy&amp;k=6LfwsHEjAAAAABziFJj9aqZH6vOmI6tw7WKKdciG&amp;bft=0dAFcWeA7F4zC032kPVkpZSjFD2QS8DI7LpnoYcLzMZkiQM8QZpm_2DaPoMpFKsU1FuL9vH-rk0TsQPQhEn3u4Igylw0dxQ8JLNQ"></iframe></div></div><div id="obsidian-clipper-container" class="is-open"><iframe id="obsidian-clipper-iframe" allow="clipboard-write; web-share" src="chrome-extension://cnjifjpddelmedmihgijeibhnjfabmlf/side-panel.html?context=iframe"></iframe><div class="obsidian-clipper-resize-handle obsidian-clipper-resize-handle-w"></div><div class="obsidian-clipper-resize-handle obsidian-clipper-resize-handle-s"></div><div class="obsidian-clipper-resize-handle obsidian-clipper-resize-handle-sw"></div></div><div id="aiFabShadowRoot" data-fab-type="react" data-defuddle-shadow="&lt;div id=&quot;fab-react-root&quot;&gt;&lt;div class=&quot;fab-root&quot;&gt;&lt;div class=&quot;acrobat-button-container &quot; style=&quot;bottom: 36px;&quot;&gt;&lt;div class=&quot;acrobat-button &quot; role=&quot;button&quot; aria-label=&quot;Get summaries and key insights using AI Assistant&quot;&gt;&lt;button class=&quot;close-btn  &quot;&gt;&lt;svg class=&quot;close-icon&quot; width=&quot;14&quot; height=&quot;14&quot; viewBox=&quot;0 0 14 14&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;mask id=&quot;mask0_8552_7892&quot; maskUnits=&quot;userSpaceOnUse&quot; x=&quot;0&quot; y=&quot;0&quot; width=&quot;14&quot; height=&quot;14&quot; style=&quot;mask-type: alpha;&quot;&gt;&lt;path d=&quot;M7.82482 7.00034L10.6374 4.18778C10.7893 4.03592 10.7893 3.78969 10.6374 3.63783L10.3625 3.36292C10.2106 3.21106 9.96446 3.21106 9.81255 3.36292L6.99995 6.17548L4.18734 3.36292C4.03543 3.21106 3.78933 3.21106 3.63743 3.36292L3.36247 3.63783C3.21056 3.78969 3.21056 4.03592 3.36247 4.18778L6.17507 7.00034L3.36247 9.81295C3.21056 9.96481 3.21056 10.2111 3.36247 10.3629L3.63743 10.6378C3.78933 10.7897 4.03543 10.7897 4.18734 10.6378L6.99995 7.82526L9.81255 10.6378C9.96446 10.7897 10.2106 10.7897 10.3625 10.6378L10.6374 10.3629C10.7893 10.2111 10.7893 9.96481 10.6374 9.81295L7.82482 7.00034Z&quot; fill=&quot;#222222&quot;&gt;&lt;/path&gt;&lt;/mask&gt;&lt;g mask=&quot;url(#mask0_8552_7892)&quot;&gt;&lt;rect width=&quot;14&quot; height=&quot;14&quot;&gt;&lt;/rect&gt;&lt;/g&gt;&lt;/svg&gt;&lt;svg class=&quot;burger-icon&quot; width=&quot;21&quot; height=&quot;17&quot; viewBox=&quot;0 0 21 17&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;mask id=&quot;mask0_12188_28876&quot; maskUnits=&quot;userSpaceOnUse&quot; x=&quot;3&quot; y=&quot;3&quot; width=&quot;15&quot; height=&quot;14&quot; style=&quot;mask-type: alpha;&quot;&gt;&lt;path d=&quot;M15.1285 12.8008H6.37852C6.08867 12.8008 5.85352 13.0359 5.85352 13.3258C5.85352 13.6156 6.08867 13.8508 6.37852 13.8508H15.1285C15.4184 13.8508 15.6535 13.6156 15.6535 13.3258C15.6535 13.0359 15.4184 12.8008 15.1285 12.8008Z&quot; fill=&quot;#292929&quot;&gt;&lt;/path&gt;&lt;path d=&quot;M6.37852 6.85078H15.1285C15.4184 6.85078 15.6535 6.61562 15.6535 6.32578C15.6535 6.03594 15.4184 5.80078 15.1285 5.80078H6.37852C6.08867 5.80078 5.85352 6.03594 5.85352 6.32578C5.85352 6.61562 6.08867 6.85078 6.37852 6.85078Z&quot; fill=&quot;#292929&quot;&gt;&lt;/path&gt;&lt;path d=&quot;M15.1285 9.30078H6.37852C6.08867 9.30078 5.85352 9.53594 5.85352 9.82578C5.85352 10.1156 6.08867 10.3508 6.37852 10.3508H15.1285C15.4184 10.3508 15.6535 10.1156 15.6535 9.82578C15.6535 9.53594 15.4184 9.30078 15.1285 9.30078Z&quot; fill=&quot;#292929&quot;&gt;&lt;/path&gt;&lt;/mask&gt;&lt;g mask=&quot;url(#mask0_12188_28876)&quot;&gt;&lt;rect x=&quot;3.75391&quot; y=&quot;3&quot; width=&quot;14&quot; height=&quot;14&quot; fill=&quot;#464646&quot;&gt;&lt;/rect&gt;&lt;/g&gt;&lt;/svg&gt;&lt;/button&gt;&lt;div class=&quot;icon-container&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;Open AI Assistant&quot;&gt;&lt;svg id=&quot;ImportedIcons&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;22&quot; height=&quot;22&quot; viewBox=&quot;0 0 22 22&quot; class=&quot;fab-svg-icon&quot;&gt;&lt;path d=&quot;m6.21661,16.39534c-1.35034,2.23499-2.67933,3.64758-3.45616,3.64758-.12795.00539-.25276-.04056-.34667-.12762-.14818-.12483-.21629-.32065-.17758-.5105.14764-.80079,1.68628-1.95576,3.98041-3.00946Zm6.49075-3.19656c-.57993.12528-1.1792.27056-1.78689.43544-.4366.11893-.87951.24862-1.32255.38729.23541-.4949.4515-.98554.6398-1.452.24831-.6159.48156-1.232.69564-1.83456.18831.30354.38304.59839.58195.88207.39375.56092.81787,1.09736,1.19205,1.58176Zm-2.99822-10.63684c.08814-.18001.26644-.29855.46653-.31016.51149,0,.62276.63358.62276,1.1638-.06787,1.25011-.29293,2.48669-.66988,3.68055-.85816-2.33642-.73831-3.97319-.41942-4.53419h.00001Zm9.60883,12.20974c-.13359.4402-.56725.71808-1.023.6555-.15594-.00061-.3112-.02054-.46224-.05933-1.07834-.28263-2.07953-.80363-2.92976-1.5246.71719-.11267,1.44198-.17001,2.16797-.17149.48402-.00813.96771.03017,1.44442.11438.43447.09244.92449.33873.80261.98554Zm1.45515-1.0537c-1.01837-.83309-2.33117-1.21735-3.63802-1.06487-.98482.00983-1.96732.09739-2.93836.26187-.62354-.62512-1.19003-1.30467-1.69272-2.03054-.38314-.54455-.73672-1.10931-1.05923-1.69182.54287-1.57384.85986-3.2167.94151-4.87953,0-1.49369-.57564-3.09087-2.19132-3.09087-.56296.01952-1.07528.33036-1.35261.82066-.68906,1.2165-.41298,3.72002.68705,6.26756-.38306,1.17041-.80046,2.31007-1.31196,3.57265-.43687,1.08123-.93191,2.13803-1.48293,3.16579-1.64775.68213-5.15115,2.33642-5.48494,4.16456-.10306.53569.0783,1.08658.47942,1.45629.39145.35044.90217.53779,1.42737.5236,2.10998,0,4.21366-3.003,5.63044-5.58789.80461-.2816,1.62641-.53671,2.44391-.759.8967-.24407,1.76345-.44427,2.58082-.594,1.39014,1.39224,3.25004,2.21523,5.21531,2.30773,1.36751,0,1.87887-.60942,2.06516-1.122.20733-.5893.08589-1.24438-.3189-1.72019Z&quot; fill=&quot;var(--iconRed, #d31510)&quot; fill-rule=&quot;evenodd&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;tooltip-text fab-home-tooltip &quot;&gt;&lt;svg class=&quot;fab-home-tooltip-icon&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;16&quot; height=&quot;16&quot; viewBox=&quot;0 0 22 22&quot; aria-hidden=&quot;true&quot; focusable=&quot;false&quot;&gt;&lt;path d=&quot;m6.21661,16.39534c-1.35034,2.23499-2.67933,3.64758-3.45616,3.64758-.12795.00539-.25276-.04056-.34667-.12762-.14818-.12483-.21629-.32065-.17758-.5105.14764-.80079,1.68628-1.95576,3.98041-3.00946Zm6.49075-3.19656c-.57993.12528-1.1792.27056-1.78689.43544-.4366.11893-.87951.24862-1.32255.38729.23541-.4949.4515-.98554.6398-1.452.24831-.6159.48156-1.232.69564-1.83456.18831.30354.38304.59839.58195.88207.39375.56092.81787,1.09736,1.19205,1.58176Zm-2.99822-10.63684c.08814-.18001.26644-.29855.46653-.31016.51149,0,.62276.63358.62276,1.1638-.06787,1.25011-.29293,2.48669-.66988,3.68055-.85816-2.33642-.73831-3.97319-.41942-4.53419h.00001Zm9.60883,12.20974c-.13359.4402-.56725.71808-1.023.6555-.15594-.00061-.3112-.02054-.46224-.05933-1.07834-.28263-2.07953-.80363-2.92976-1.5246.71719-.11267,1.44198-.17001,2.16797-.17149.48402-.00813.96771.03017,1.44442.11438.43447.09244.92449.33873.80261.98554Zm1.45515-1.0537c-1.01837-.83309-2.33117-1.21735-3.63802-1.06487-.98482.00983-1.96732.09739-2.93836.26187-.62354-.62512-1.19003-1.30467-1.69272-2.03054-.38314-.54455-.73672-1.10931-1.05923-1.69182.54287-1.57384.85986-3.2167.94151-4.87953,0-1.49369-.57564-3.09087-2.19132-3.09087-.56296.01952-1.07528.33036-1.35261.82066-.68906,1.2165-.41298,3.72002.68705,6.26756-.38306,1.17041-.80046,2.31007-1.31196,3.57265-.43687,1.08123-.93191,2.13803-1.48293,3.16579-1.64775.68213-5.15115,2.33642-5.48494,4.16456-.10306.53569.0783,1.08658.47942,1.45629.39145.35044.90217.53779,1.42737.5236,2.10998,0,4.21366-3.003,5.63044-5.58789.80461-.2816,1.62641-.53671,2.44391-.759.8967-.24407,1.76345-.44427,2.58082-.594,1.39014,1.39224,3.25004,2.21523,5.21531,2.30773,1.36751,0,1.87887-.60942,2.06516-1.122.20733-.5893.08589-1.24438-.3189-1.72019Z&quot; fill=&quot;#D6373F&quot; fill-rule=&quot;evenodd&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;span class=&quot;tooltip-text-content&quot;&gt;Check out Acrobat's new home in your browser&lt;/span&gt;&lt;/div&gt;&lt;div class=&quot;draggable-handle &quot;&gt;&lt;svg width=&quot;14&quot; height=&quot;15&quot; viewBox=&quot;0 0 14 15&quot; fill=&quot;none&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;&gt;&lt;path d=&quot;M4.60039 13.0699C5.26313 13.0699 5.80039 12.5327 5.80039 11.8699C5.80039 11.2072 5.26313 10.6699 4.60039 10.6699C3.93765 10.6699 3.40039 11.2072 3.40039 11.8699C3.40039 12.5327 3.93765 13.0699 4.60039 13.0699Z&quot; fill=&quot;#292929&quot;&gt;&lt;/path&gt;&lt;path d=&quot;M4.60039 8.27109C5.26313 8.27109 5.80039 7.73384 5.80039 7.07109C5.80039 6.40835 5.26313 5.87109 4.60039 5.87109C3.93765 5.87109 3.40039 6.40835 3.40039 7.07109C3.40039 7.73384 3.93765 8.27109 4.60039 8.27109Z&quot; fill=&quot;#292929&quot;&gt;&lt;/path&gt;&lt;path d=&quot;M4.60039 3.47031C5.26313 3.47031 5.80039 2.93305 5.80039 2.27031C5.80039 1.60757 5.26313 1.07031 4.60039 1.07031C3.93765 1.07031 3.40039 1.60757 3.40039 2.27031C3.40039 2.93305 3.93765 3.47031 4.60039 3.47031Z&quot; fill=&quot;#292929&quot;&gt;&lt;/path&gt;&lt;path d=&quot;M9.4002 13.0699C10.0629 13.0699 10.6002 12.5327 10.6002 11.8699C10.6002 11.2072 10.0629 10.6699 9.4002 10.6699C8.73745 10.6699 8.2002 11.2072 8.2002 11.8699C8.2002 12.5327 8.73745 13.0699 9.4002 13.0699Z&quot; fill=&quot;#292929&quot;&gt;&lt;/path&gt;&lt;path d=&quot;M9.4002 8.27109C10.0629 8.27109 10.6002 7.73384 10.6002 7.07109C10.6002 6.40835 10.0629 5.87109 9.4002 5.87109C8.73745 5.87109 8.2002 6.40835 8.2002 7.07109C8.2002 7.73384 8.73745 8.27109 9.4002 8.27109Z&quot; fill=&quot;#292929&quot;&gt;&lt;/path&gt;&lt;path d=&quot;M9.4002 3.47031C10.0629 3.47031 10.6002 2.93305 10.6002 2.27031C10.6002 1.60757 10.0629 1.07031 9.4002 1.07031C8.73745 1.07031 8.2002 1.60757 8.2002 2.27031C8.2002 2.93305 8.73745 3.47031 9.4002 3.47031Z&quot; fill=&quot;#292929&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;style&gt;
+    .acrobat-button-container {
+        position: fixed;
+        right: 0;
+        bottom: 36px;
+        z-index: 2147483646;
+        visibility: visible !important;
+        pointer-events: all;
+        opacity: 1;
+        display: flex;
+        align-items: center;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    @media print {
+        .acrobat-button-container {
+            display: none !important;
+        }
+    }
+
+    .acrobat-button {
+        position: relative;
+        background: white;
+        display: flex;
+        align-items: center;
+        pointer-events: all;
+        touch-action: none;
+        box-shadow: 0px 2px 8px 0px #00000029;
+        height: 34px;
+        width: 34px;
+        border: 1px solid transparent;
+        background-clip: padding-box, border-box;
+        background-origin: border-box;
+        background-image: linear-gradient(white, white),
+                        linear-gradient(95.85deg, #D73220 0%, #D92361 33%, #7155FA 100%);
+        border-radius: 18px;
+        justify-content: right;
+        margin-right: var(--fab-margin-right, 28px);
+        overflow: hidden;
+    }
+
+    .acrobat-button-container-transparent {
+        opacity: 0.4 !important;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    .acrobat-button-container-transparent:hover,
+    .acrobat-button-container-transparent:focus,
+    .acrobat-button-container-transparent:active {
+        opacity: 1;
+    }
+
+    .acrobat-button &gt; svg {
+        flex-shrink: 0;
+        margin: 4px 5px 5px 5px;
+        width: 22px;
+        height: 22px;
+        pointer-events: none;
+        fill: #b40000;
+    }
+    .acrobat-button:has(.close-btn.open),
+    .expand-acrobat-button {
+        width: 64px;
+    }
+
+    .disabled {
+        background: #B1B1B1;
+    }
+
+    .tooltip-text {
+        width: 160px;
+        visibility: hidden;
+        opacity: 0;
+        background-color: #FFFFFF;
+        color: #292929;
+        border-radius: 7px;
+        padding: 4px 1px 5px 9px;
+        position: absolute;
+        z-index: 1;
+        right: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-right: 10px;
+        transition: opacity 0.3s, visibility 0s linear 2s;
+        font-size: 12px;
+        line-height: 15px;
+        font-family: 'adobe-clean', Adobe Clean, sans-serif;
+        filter: drop-shadow(0px 1px 6px rgba(0, 0, 0, 0.12));
+    }
+
+    .tooltip-text::after {
+       content: '';
+       position: absolute;
+       top: 50%;
+       left: 100%;
+       transform: translateY(-50%);
+       border-width: 6px;
+       border-style: solid;
+       border-color: transparent transparent transparent #fff;
+    }
+
+    .show-tooltip {
+        visibility: visible;
+        opacity: 1;
+        line-height: 1.5;
+        font-family: 'adobe-clean', Adobe Clean, sans-serif;
+        transition: opacity 0.3s;
+        transition-delay: 500ms;
+    }
+
+    .close-btn {
+        position: relative;
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .close-btn svg {
+        fill: #464646;
+    }
+
+    .close-btn.showCloseButton {
+        opacity: 1;
+        display: flex;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        padding: 2px;
+    }
+
+    .fab-view-settings-dialog {
+        display: none;
+        position: absolute;
+        bottom: 40px;
+        z-index: 1;
+    }
+
+    .close-btn:hover {
+        background: #E6E6E6;
+        border-radius: 50%; /* Keep original circular hover */
+        cursor: pointer;
+    }
+
+    .fab-view-settings-dialog.showDialog {
+        display: block;
+    }
+    .close-btn .burger-icon {
+        display: inline;
+        margin-bottom: 2px;
+    }
+    .close-btn .close-icon {
+        display: none;
+    }
+    .close-btn.open .burger-icon {
+        display: none;
+    }
+    .close-btn.open .close-icon {
+        display: inline;
+    }
+    .tooltip-text .tooltip-text-content {
+        font-weight: bold;
+    }
+    .tooltip-text .tooltip-sub-text-text {
+        font-style: italic;
+        font-size: 11px;
+    }
+
+    /* Home tooltip FTE — icon + layout overrides */
+    .fab-home-tooltip {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        width: 183px;
+        border-radius: 8px;
+        padding: 6px 8px 8px 12px;
+        font-family: 'adobe-clean', Adobe Clean, sans-serif;
+        box-shadow: 0px 2px 4px rgba(0,0,0,0.08), 0px 1px 2px rgba(0,0,0,0.04), 0px 0px 1px rgba(0,0,0,0.08), 0px 3px 5px rgba(116,23,208,0.07);
+    }
+    .fab-home-tooltip .tooltip-text-content {
+        font-family: 'adobe-clean', Adobe Clean, sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        color: #292929;
+        white-space: normal;
+        word-wrap: break-word;
+        width: 145px;
+    }
+    .fab-home-tooltip-icon {
+        flex-shrink: 0;
+        display: block;
+        width: 16px;
+        height: 16px;
+    }
+
+    /* Icon container styles - replaces iframe */
+    .icon-container {
+        width: 33px;
+        height: 34px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: grab;
+        pointer-events: all;
+        flex-shrink: 0;
+        background: transparent;
+        border: none;
+    }
+
+    .icon-container:active {
+        cursor: grabbing;
+    }
+
+    .fab-svg-icon {
+        width: 22px;
+        height: 22px;
+        padding: 5px 5px 5px 6px;
+        pointer-events: none;
+        fill: #b40000;
+    }
+
+    .draggable-handle {
+        display: none;
+        position: absolute;
+        right: var(--drag-handle-right, 12px);
+        cursor: grab;
+    }
+    .draggable-handle-visible {
+        display: flex;
+    }
+
+    /* Font face declarations - for proper font loading in Shadow DOM */
+    @font-face {
+        font-family: 'adobe-clean';
+        font-weight: 400;
+        src: url('chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/browser/css/fonts/AdobeClean-Regular.otf') format('opentype');
+    }
+    @font-face {
+        font-family: 'adobe-clean';
+        font-weight: 700;
+        src: url('chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/browser/css/fonts/AdobeClean-Bold.otf') format('opentype');
+    }
+    @font-face {
+        font-family: 'AdobeClean-Regular';
+        src: url('chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/browser/css/fonts/AdobeClean-Regular.otf') format('opentype');
+    }
+    @font-face {
+        font-family: 'AdobeClean-Bold';
+        src: url('chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/browser/css/fonts/AdobeClean-Bold.otf') format('opentype');
+    }
+    body {
+        font-family: 'AdobeClean-Regular', adobe-clean, &quot;Adobe Clean&quot;, sans-serif;
+    }
+
+    .dialog-container {
+        width: 166px;
+        background-color: #ffffff;
+        border-radius: 4px;
+        border: 1px solid #B1B1B1;
+        box-shadow: 0px 1px 4px 0px #00000026;
+        z-index: 1000;
+        padding: 4px;
+        position: relative;
+        margin: 4px 0px;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu .menu_item {
+        cursor: pointer;
+        font-family: 'AdobeClean-Regular', adobe-clean, &quot;Adobe Clean&quot;, sans-serif;
+        align-content: center;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18.2px;
+        text-align: left;
+        color: #222222;
+        padding: 0px 12px;
+        height: 32px;
+        width: 140px;
+    }
+
+    .menu .menu_item:hover {
+        background-color: #eaeaea;
+    }
+
+    .preferences {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18.2px;
+        text-align: left;
+        color: #464646;
+    }
+
+    .divider {
+        border-top: 1px solid #E6E6E6;
+    }
+
+    /* React-specific wrappers - minimal */
+    .fab-root {
+        font-family: 'adobe-clean', Adobe Clean, sans-serif;
+    }
+
+    button.close-btn {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        z-index: 10; /* Ensure clickable above all other elements */
+        pointer-events: auto;
+    }
+
+    /* FAB Action Pills - From Figma Design */
+    .fab-pills-container {
+        position: absolute;
+        bottom: 42px; /* FAB height (34px) + gap (8px) = 42px */
+        right: var(--fab-margin-right, 28px);
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-end;
+        width: 142px;
+        z-index: 1;
+    }
+
+    .fab-pills-container.pills-below {
+        bottom: auto;
+        top: 42px; /* Same gap when positioned below */
+    }
+
+    /* Extend hover area using ::after pseudo-element - doesn't affect visual layout */
+    .fab-pills-container::after {
+        content: '';
+        position: absolute;
+        top: 100%; /* Start right after the pills content */
+        left: 0;
+        right: 0;
+        height: 8px;
+        background: transparent;
+        pointer-events: auto;
+    }
+
+    .fab-pills-container.pills-below::after {
+        top: auto;
+        bottom: 100%; /* Start right before the pills when positioned below */
+    }
+
+    /* FTE Header - First Time Experience (56px with close button) */
+    .fab-fte-header {
+        position: relative;
+        width: 142px;
+        min-height: 56px;
+        background: #FFFFFF;
+        border-radius: 12px;
+        box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08), 0px 2px 6px 0px rgba(0, 0, 0, 0.04), 0px 0px 2px 0px rgba(0, 0, 0, 0.12);
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+    }
+
+    .fab-fte-background {
+        position: absolute;
+        left: -13px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 183.33px;
+        height: 126.82px;
+        background: url('chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/browser/images/fab-header-background.svg') no-repeat center;
+        background-size: cover;
+        pointer-events: none;
+        z-index: 0;
+    }
+
+    .fab-fte-close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        z-index: 2;
+        color: #222222;
+        padding: 0;
+    }
+
+    .fab-fte-close:hover {
+        background: rgba(0, 0, 0, 0.05);
+        border-radius: 12px;
+    }
+
+    .fab-fte-close svg {
+        width: 8px;
+        height: 8px;
+    }
+
+    .fab-fte-text {
+        position: relative;
+        width: 102px;
+        font-family: 'AdobeClean-Bold', adobe-clean, sans-serif;
+        font-weight: 400; /* Use Bold font file directly, not synthetic bold */
+        font-size: 12px;
+        line-height: 16px;
+        color: #222222; /* Figma spec color */
+        z-index: 1;
+        white-space: normal;
+        word-wrap: break-word;
+        margin-left: 16px;
+        margin-right: auto;
+        box-sizing: border-box;
+        -webkit-font-smoothing: subpixel-antialiased; /* Better font rendering */
+        -moz-osx-font-smoothing: auto;
+    }
+
+    /* Hover Header - Normal state (24px without close button) */
+    .fab-hover-header {
+        position: relative;
+        width: 142px;
+        min-height: 24px;
+        background: #FFFFFF; /* White background to show the colorful SVG and text */
+        border-radius: 12px;
+        box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08), 0px 2px 6px 0px rgba(0, 0, 0, 0.04), 0px 0px 2px 0px rgba(0, 0, 0, 0.12);
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    .fab-hover-background {
+        position: absolute;
+        left: -27px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 212.63px;
+        height: 147.09px;
+        background: url('chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/browser/images/fab-header-background.svg') no-repeat center;
+        background-size: cover;
+        pointer-events: none;
+        z-index: 0;
+    }
+
+    .fab-hover-text {
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'AdobeClean-Bold', adobe-clean, sans-serif;
+        font-weight: 400; /* Use Bold font file directly, not synthetic bold */
+        font-size: 12px;
+        line-height: 15px;
+        color: #222222; /* Figma spec color */
+        z-index: 1;
+        white-space: normal;
+        padding: 4px 9px;
+        box-sizing: border-box;
+        -webkit-font-smoothing: subpixel-antialiased; /* Better font rendering */
+        -moz-osx-font-smoothing: auto;
+    }
+
+    /* Individual Pill Buttons */
+    .fab-pill-button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0;
+        width: 142px;
+        min-height: 24px; /* Min height, allows growth with content */
+        background: #FFFFFF;
+        border: none;
+        border-radius: 12px;
+        box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08), 0px 2px 6px 0px rgba(0, 0, 0, 0.04), 0px 0px 2px 0px rgba(0, 0, 0, 0.12);
+        cursor: pointer;
+        padding: 0;
+        transition: background 0.2s ease;
+        overflow: visible;
+    }
+
+    .fab-pill-button:hover {
+        background: #D5D5D5;
+    }
+
+    .fab-pill-button:hover .fab-pill-label,
+    .fab-pill-button:hover .fab-pill-icon {
+        color: #000000; /* Hover state color from Figma Alias/content/neutral/hover */
+    }
+
+    .fab-pill-button:active {
+        background: #F4F4F4;
+    }
+
+    .fab-pill-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 4px 7px 4px 10px; /* Exact Figma specs: top right bottom left */
+        flex-shrink: 0;
+        box-sizing: border-box;
+    }
+
+    .fab-pill-icon img {
+        width: 16px;
+        height: 16px;
+        display: block;
+        flex-shrink: 0;
+        /* SVG icons with currentColor fill will inherit color from parent */
+        filter: brightness(0) saturate(100%) invert(13%) sepia(0%) saturate(0%) hue-rotate(196deg) brightness(97%) contrast(97%); /* #222222 */
+    }
+
+    .fab-pill-button:hover .fab-pill-icon img {
+        filter: brightness(0) saturate(100%); /* #000000 on hover */
+    }
+
+    .fab-pill-label {
+        display: flex;
+        align-items: center;
+        font-family: 'AdobeClean-Bold', adobe-clean, sans-serif;
+        font-weight: 400; /* Use Bold font file directly, not synthetic bold */
+        font-size: 12px;
+        line-height: 15px; /* 1.252 * 12px = 15.024px */
+        color: #222222; /* Default text color from Figma Alias/content/neutral/default */
+        padding: 4px 9px 5px 0; /* Reduced right padding to prevent wrapping */
+        text-align: left;
+        white-space: normal; /* Allow text wrapping for multi-line content */
+        box-sizing: border-box;
+        flex: 1;
+        overflow: visible;
+        -webkit-font-smoothing: subpixel-antialiased; /* Better font rendering */
+        -moz-osx-font-smoothing: auto;
+    }
+&lt;/style&gt;"></div><div id="ibotta-extension-root" data-defuddle-shadow="&lt;div&gt;&lt;/div&gt;&lt;style&gt;@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-display:block;font-weight:400;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@-moz-document url-prefix(){@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-weight:400;font-display:block;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}}.ExtensionRoot_bexExtensionRoot__a2YSk{font-family:&quot;museo-sans&quot; !important;color:#303030;-webkit-box-sizing:border-box;box-sizing:border-box;font-family:museo-sans,sans-serif;font-weight:300;font-size:14px;line-height:18px}.ExtensionRoot_bexExtensionInitial__CGXCm{font-family:&quot;museo-sans&quot; !important}
+
+.Icon_material_icons_round__ol0r5{font-family:&quot;Material Icons Round&quot;;font-weight:normal;font-style:normal;font-size:24px;line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;word-wrap:normal;direction:ltr;-webkit-font-feature-settings:&quot;liga&quot;;-webkit-font-smoothing:antialiased}
+@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-display:block;font-weight:400;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@-moz-document url-prefix(){@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-weight:400;font-display:block;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}}.Panel_panelContainer__DL04n{display:flex;flex-direction:column;position:fixed;top:15px;right:15px;width:380px;max-height:650px;z-index:2147483647;background-color:#fff;box-shadow:0px 10px 32px 0px rgba(59,74,116,.1607843137);transition:box-shadow .15s;border-radius:8px}.Panel_panelContainer__DL04n.Panel_inPopup__3g2VT{position:initial;box-shadow:none}.Panel_panelContainer__DL04n.Panel_inPopup__3g2VT .Panel_previewVersionLip__3vF6Q{margin-bottom:15px}.Panel_panelContainer__DL04n.Panel_isDragging__wBssY{box-shadow:0px 24px 34px rgba(0,0,0,.95)}.Panel_panelBody__C74C9{flex:1;overflow:hidden;border-radius:8px}.Panel_previewBorder__AtlxO{box-shadow:0px 10px 32px 0px rgba(59,74,116,.1607843137),0 0 0 3px #379adc}.Panel_localBorder__O8GX6{box-shadow:0px 10px 32px 0px rgba(59,74,116,.1607843137),0 0 0 3px #06a59c}.Panel_sandboxBorder__X7fpl{box-shadow:0px 10px 32px 0px rgba(59,74,116,.1607843137),0 0 0 3px #dd8437}.Panel_versionLip__TvqQv{position:absolute;left:50%;transform:translateX(-50%);bottom:-11px;border-radius:4px;color:#fff;line-height:20px;height:20px;padding-left:5px;padding-right:5px;font-weight:400;font-size:12px;cursor:pointer;display:flex;align-items:center;justify-content:center}.Panel_versionLip__TvqQv.Panel_preview__Jklsd{background-color:#379adc}.Panel_versionLip__TvqQv.Panel_local__QZhSg{background-color:#06a59c}.Panel_versionLip__TvqQv.Panel_sandbox__4khLX{background-color:#dd8437}
+.MainPanel_panelBody__eaHbc{height:605px;margin-top:41px}.MainPanel_offerDetailsPanelPopup__S3FmY{background:#f8f9fc}.MainPanel_draggableContainer__Wp\+GK{position:absolute;top:15px;right:15px;padding:20px}.MainPanel_mainPanelBase__dLvhK{position:fixed;transform:translateY(-50%);top:15px;right:15px;z-index:2147483647}
+@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-display:block;font-weight:400;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@-moz-document url-prefix(){@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-weight:400;font-display:block;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}}.PanelHeader_panelHeaderContainer__Vkc7U{display:flex;align-items:center;justify-content:stretch;background-color:#fff;padding:8px 16px;padding-right:8px}.PanelHeader_panelHeaderContainer__Vkc7U.PanelHeader_withTabs__dt2eZ{position:fixed;width:356px;border-radius:8px 8px 0 0;padding:0px 16px;padding-right:8px}.PanelHeader_panelHeaderContainer__Vkc7U.PanelHeader_bottomBorder__E\+By\+{border-bottom:#e3e6e9 1px solid}.PanelHeader_panelHeaderContainer__Vkc7U.PanelHeader_brand__7LfWu{background-color:#df2a63}.PanelHeader_iconLogo__AowEz{cursor:pointer;overflow:visible}.PanelHeader_panelHeaderTabList__QpKuQ{display:grid;column-gap:24px;grid-template-columns:auto auto auto auto;list-style:none;margin:0;padding:0;margin-left:24px}.PanelHeader_panelHeaderTabItem__z\+COu{cursor:pointer;padding-top:12px;padding-bottom:12px;position:relative}.PanelHeader_panelHeaderTabItem__z\+COu .PanelHeader_tab__dcRHR.PanelHeader_isSelected__MneKE{color:#0a7986}.PanelHeader_panelHeaderTabItem__z\+COu .PanelHeader_tab__dcRHR:after{display:block;content:attr(data-text);font-weight:600;height:1px;color:rgba(0,0,0,0);overflow:hidden;visibility:hidden;margin-top:-1px}.PanelHeader_panelHeaderTabItem__z\+COu:hover .PanelHeader_tab__dcRHR{color:#005d68}.PanelHeader_selectedContainer__aweDG{position:relative}.PanelHeader_selectedIndicator__QCfy4{position:absolute;height:2px;background-color:#0a7986;width:100%;bottom:-12px}.PanelHeader_headerButtons__wjcAw{display:flex;margin-left:auto;align-items:center;justify-content:center}.PanelHeader_headerButtons__wjcAw .PanelHeader_button__iExOJ{border-radius:50%}.PanelHeader_headerButtons__wjcAw .PanelHeader_button__iExOJ.PanelHeader_isSelected__MneKE{color:#0a7986 !important;background-color:#f0f2f5 !important}.PanelHeader_headerButtons__wjcAw .PanelHeader_button__iExOJ:hover{color:#005d68 !important;background-color:#f0f2f5 !important}.PanelHeader_headerButtons__wjcAw span{margin-left:8px;cursor:pointer}.PanelHeader_dotContainer__vxqj0{position:relative}.PanelHeader_dot__vpyWe{border-radius:100px;position:absolute;top:6px;right:-5px;background:#df2a63;padding:4px;border-color:#fff;border-width:1px;border-style:solid}.PanelHeader_draggableHeader__wkbXK{cursor:grab}.PanelHeader_draggableHeader__wkbXK.PanelHeader_isDragging__bgcv4{background-color:#f0f2f5;cursor:grabbing}.PanelHeader_draggableHeader__wkbXK:active{cursor:grabbing}
+@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-display:block;font-weight:400;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@-moz-document url-prefix(){@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-weight:400;font-display:block;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}}.Text_text__2bttS{font-family:&quot;museo-sans&quot;,sans-serif;color:#292f36}.Text_BEX_Heading_H1__QJ4hY{font-size:32px;font-weight:900;letter-spacing:-0.9px;line-height:32px}.Text_BEX_Heading_H2__rkLQq{font-size:26px;font-weight:900;letter-spacing:-0.9px;line-height:28px}.Text_BEX_Heading_H3__f1jV-{font-size:23px;font-weight:900;letter-spacing:-0.9px;line-height:28px}.Text_BEX_Heading_H4__Qh3pa{font-size:20px;font-weight:900;letter-spacing:-0.3px;line-height:24px}.Text_BEX_Heading_H5__VKw4V{font-size:16px;font-weight:900;letter-spacing:-0.3px;line-height:19.2px}.Text_BEX_Heading_SubHeading__oeFbv{font-size:24px;font-weight:400;letter-spacing:-0.3px;line-height:31px}.Text_BEX_Heading_SubHeadingLight__cL03m{font-size:24px;font-weight:300;letter-spacing:-0.3px;line-height:31px}.Text_BEX_Body_Large__ubT-6{font-size:20px;font-weight:400;line-height:26px}.Text_BEX_Body_Large_Light__j53V3{font-size:20px;font-weight:300;line-height:26px}.Text_BEX_Body_Regular__XLWF\+{font-size:16px;font-weight:300;line-height:20px}.Text_BEX_Body_Actionable__1yl5D{font-size:16px;font-weight:400;line-height:20px}.Text_BEX_Body_Bold__OL6wI{font-size:16px;font-weight:600;line-height:20px}.Text_BEX_Body_Small__gQPS-{font-weight:300;font-size:14px;line-height:20px}.Text_BEX_Body_SmallActionable__e0obx{font-weight:400;font-size:14px;line-height:20px}.Text_BEX_Body_SmallBold__IFMfn{font-weight:600;line-height:20px;font-size:14px}.Text_BEX_Button_Regular__JWDR6{font-size:16px;font-weight:400;line-height:20px}.Text_BEX_Button_Small__J0PCu{font-size:12px;font-weight:400;line-height:16px}.Text_BEX_Button_Large__OnFiA{font-size:20px;font-weight:400;line-height:26px}.Text_BEX_Button_GooglePill__KEj\+w{font-size:13px;font-weight:400;line-height:20px}.Text_BEX_Technical_Regular__R37Jh{font-size:12px;font-weight:300;line-height:16px}.Text_BEX_Technical_StrikeThrough__gUfZf{text-decoration:line-through;text-transform:uppercase;font-size:12px;font-weight:300;line-height:16px}.Text_BEX_Technical_Bold__pFIB8{font-size:12px;font-weight:600;line-height:16px}.Text_BEX_Technical_Actionable__jrG79{font-size:12px;font-weight:400;line-height:16px}.Text_BEX_Technical_Tag__8TW\+T{font-size:12px;font-weight:600;line-height:14px;text-transform:uppercase}.Text_BEX_Navigation_Regular__fhd7O{font-size:12px;font-weight:300;line-height:16px}.Text_BEX_Navigation_Actionable__0Rty-{font-size:12px;font-weight:400;line-height:16px}.Text_BEX_Navigation_Selected__Q0gHE{font-size:12px;font-weight:600;line-height:16px}.Text_BEX_Display_D1__J925u{font-size:80px;font-weight:900;letter-spacing:-0.015em;line-height:100.5%}.Text_BEX_Display_D2__ATFzk{font-size:72px;font-weight:900;letter-spacing:-0.015em;line-height:100.5%}.Text_BEX_Display_D3__ZI-gN{font-size:64px;font-weight:900;letter-spacing:-0.015em;line-height:100.5%}.Text_BEX_Display_D4__Zp4xI{font-size:56px;font-weight:900;letter-spacing:-0.015em;line-height:100.5%}.Text_BEX_Display_D5__EYscG{font-size:48px;font-weight:900;letter-spacing:-0.015em;line-height:100.5%}.Text_BEX_Display_D6__BoQvg{font-size:40px;font-weight:900;letter-spacing:-0.015em;line-height:100.5%}.Text_BEX_Display_D7__VN4LX{font-size:32px;font-weight:900;letter-spacing:-0.015em;line-height:100.5%}.Text_Left__dsR8k{text-align:left}.Text_Right__U\+k8w{text-align:right}.Text_Center__UhLaU{text-align:center}.Text_link__DK1Sc{cursor:pointer}.Text_link__DK1Sc:hover{text-decoration:underline}
+.ActionableTooltip_tooltipWrapper__odOtg{display:inline-block;position:relative}.ActionableTooltip_actionableTooltip__YZeFG{background-color:#292f36;color:#fff;cursor:auto;user-select:none;min-width:177px;border-radius:8px;padding:12px;z-index:1;display:flex;flex-direction:column;align-items:center;position:absolute;transform:translate(-81.5%, 30%)}.ActionableTooltip_actionableTooltip__YZeFG .ActionableTooltip_tooltipButtonContainer__2z9yV{width:100%;display:flex;flex-direction:column;justify-content:center;align-items:flex-end}.ActionableTooltip_actionableTooltip__YZeFG .ActionableTooltip_tooltipButton__cnQr0{all:unset;cursor:pointer;background-color:rgba(0,0,0,0);border:2px solid;border-color:#93999c;border-radius:4px;margin-top:6px;padding:4px 8px}.ActionableTooltip_actionableTooltip__YZeFG .ActionableTooltip_tooltipButton__cnQr0 span,.ActionableTooltip_actionableTooltip__YZeFG .ActionableTooltip_tooltipButton__cnQr0 div{color:#fff}.ActionableTooltip_actionableTooltip__YZeFG .ActionableTooltip_tooltipButton__cnQr0:focus,.ActionableTooltip_actionableTooltip__YZeFG .ActionableTooltip_tooltipButton__cnQr0:hover{border-color:#fff;background-color:#fff}.ActionableTooltip_actionableTooltip__YZeFG .ActionableTooltip_tooltipButton__cnQr0:focus span,.ActionableTooltip_actionableTooltip__YZeFG .ActionableTooltip_tooltipButton__cnQr0:focus div,.ActionableTooltip_actionableTooltip__YZeFG .ActionableTooltip_tooltipButton__cnQr0:hover span,.ActionableTooltip_actionableTooltip__YZeFG .ActionableTooltip_tooltipButton__cnQr0:hover div{color:#292f36}.ActionableTooltip_actionableTooltip__YZeFG:before{content:&quot;&quot;;border-right:8px solid rgba(0,0,0,0);border-left:8px solid rgba(0,0,0,0);border-bottom:8px solid;border-bottom-color:#292f36;width:0;height:0;display:block;position:absolute;top:-7px;right:8px}.ActionableTooltip_actionableTooltip__YZeFG:after{content:&quot;&quot;;display:block;position:absolute;width:90px;height:18px;top:-18px;right:0}
+@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-display:block;font-weight:400;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@-moz-document url-prefix(){@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-weight:400;font-display:block;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}}.PanelTab_panelTabContainer__thpIi{padding:16px;background-color:#f8f9fc;border-radius:8px;height:575px;overflow-y:scroll}
+@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-display:block;font-weight:400;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@-moz-document url-prefix(){@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-weight:400;font-display:block;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}}.CheckoutDetectionAffiliate_tabContainer__wuYzz{display:flex;flex-direction:column;align-items:center;margin-bottom:80px}.CheckoutDetectionAffiliate_tabContainer__wuYzz .CheckoutDetectionAffiliate_icon__o2iXs{margin-bottom:16px}.CheckoutDetectionAffiliate_tabContainer__wuYzz .CheckoutDetectionAffiliate_confirmationText__x9Xjy{margin-bottom:16px}.CheckoutDetectionAffiliate_tabContainer__wuYzz .CheckoutDetectionAffiliate_timestamp__fssS-{display:inline-block}.CheckoutDetectionAffiliate_didWeHelpContainer__EJxou{padding:16px}.CheckoutDetectionAffiliate_didWeHelpContainer__EJxou .CheckoutDetectionAffiliate_starsContainer__6hgVj{display:flex;flex-direction:row;margin-bottom:8px}.CheckoutDetectionAffiliate_didWeHelpContainer__EJxou .CheckoutDetectionAffiliate_headerText__oZyfX{margin-bottom:2px}.CheckoutDetectionAffiliate_didWeHelpContainer__EJxou .CheckoutDetectionAffiliate_writeReviewBtn__fato6{margin-top:8px;padding:0px;background:none}.CheckoutDetectionAffiliate_considerText__Dc-1b{margin-bottom:8px}
+@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-display:block;font-weight:400;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@-moz-document url-prefix(){@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-weight:400;font-display:block;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}}hr{border:1px solid #e3e6e9}
+@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-display:block;font-weight:400;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@-moz-document url-prefix(){@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-weight:400;font-display:block;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}}.ReccomendedRetailers_reccomendedRetailersPage__cvh2g{padding-top:24px;padding-bottom:24px}.ReccomendedRetailers_reccomendedRetailersPage__cvh2g .ReccomendedRetailers_subtitle__XLEcH{margin-top:16px;margin-bottom:24px}.ReccomendedRetailers_reccomendedRetailersPage__cvh2g .ReccomendedRetailers_reccomendedOffersHeader__tBxv6{margin-bottom:16px;display:flex;align-items:center}.ReccomendedRetailers_reccomendedRetailersPage__cvh2g .ReccomendedRetailers_reccomendedOffersHeader__tBxv6 .ReccomendedRetailers_title__n0M29{flex:1}.ReccomendedRetailers_reccomendedRetailersPage__cvh2g .ReccomendedRetailers_retailerList__lzYVh{padding-bottom:16px}.ReccomendedRetailers_reccomendedRetailersPage__cvh2g .ReccomendedRetailers_footer__RaUXc{text-align:center;padding-bottom:24px}.ReccomendedRetailers_reccomendedRetailersPage__cvh2g .ReccomendedRetailers_loaderContainer__orMw4{margin-top:48px;display:flex;align-items:center;justify-content:center}.ReccomendedRetailers_reccomendedRetailersPage__cvh2g .ReccomendedRetailers_retailerRow__6Y13Z{background:#fff;padding:16px;border:1px solid #e3e6e9;border-bottom:none;display:flex;flex-direction:row}.ReccomendedRetailers_reccomendedRetailersPage__cvh2g .ReccomendedRetailers_retailerRow__6Y13Z .ReccomendedRetailers_retailerImage__\+WTTH{flex:.2;width:64px;height:64px;border-radius:50%;object-fit:cover;margin-right:16px}.ReccomendedRetailers_reccomendedRetailersPage__cvh2g .ReccomendedRetailers_retailerRow__6Y13Z .ReccomendedRetailers_retailerInfo__wfrPP{flex:.6;display:flex;flex-direction:column;justify-content:center}.ReccomendedRetailers_reccomendedRetailersPage__cvh2g .ReccomendedRetailers_retailerRow__6Y13Z .ReccomendedRetailers_retailerInfo__wfrPP .ReccomendedRetailers_amountBack__e9zoq{margin-bottom:4px}.ReccomendedRetailers_reccomendedRetailersPage__cvh2g .ReccomendedRetailers_retailerRow__6Y13Z .ReccomendedRetailers_shopContainer__FGeiA{flex:.2;display:flex;justify-content:flex-end;align-items:center}.ReccomendedRetailers_reccomendedRetailersPage__cvh2g .ReccomendedRetailers_retailerRow__6Y13Z:first-child{border-radius:8px 8px 0px 0px}.ReccomendedRetailers_reccomendedRetailersPage__cvh2g .ReccomendedRetailers_retailerRow__6Y13Z:last-child{border-radius:0px 0px 8px 8px;border-bottom:1px solid #e3e6e9}.ReccomendedRetailers_reccomendedRetailersPage__cvh2g .ReccomendedRetailers_octoshopPoweredByIbotta__GUFuU{margin-bottom:24px}
+@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-display:block;font-weight:400;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@-moz-document url-prefix(){@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-weight:400;font-display:block;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}}.Button_buttonComponent__c8lQW{user-select:none;transition:all .1s}.Button_button__yxRwo{width:fit-content;height:fit-content;cursor:pointer;text-align:center;border:0;display:flex;align-items:center;justify-content:center}.Button_Small__KjtK0{padding:8px 12px;border-radius:100px;font-style:normal;font-weight:normal;font-size:14px;line-height:17px}.Button_Small__KjtK0.Button_Icon__cJnRl{padding:8px}.Button_Medium__PQkzs{padding:12px 12px;border-radius:100px;font-style:normal;font-weight:normal;font-size:16px;line-height:19.2px}.Button_Medium__PQkzs.Button_Icon__cJnRl{padding:12px}.Button_Large__6aqP0{padding:12px 24px;border-radius:100px;font-size:16px;line-height:28px;font-weight:400}.Button_Large__6aqP0.Button_Icon__cJnRl{padding:18px}.Button_Primary__IYs7y{background-color:#0a7986;border:1px solid #0a7986;color:#fff}.Button_Primary__IYs7y:hover{background-color:#005d68;border:1px solid #005d68}.Button_Primary__IYs7y:active{background-color:#005d68;border:1px solid #0a7986;outline:#0a7986 solid 2px;outline-offset:2px}.Button_Primary__IYs7y:focus{background-color:#005d68;box-shadow:0px 0px 4px #0a7986}.Button_Secondary__VpKO-{background-color:#fff;color:#0a7986;border:1px solid #e3e6e9}.Button_Secondary__VpKO-:hover{border-color:#005d68}.Button_Secondary__VpKO-:active{outline:#0a7986 solid 2px;outline-offset:2px}.Button_Secondary__VpKO-:focus{background-color:rgba(10,121,134,.05);border:1px solid #0a7986}.Button_Tertiary__Pnk45{background-color:#fff;color:#0a7986}.Button_Tertiary__Pnk45:hover{background-color:rgba(10,121,134,.05)}.Button_Tertiary__Pnk45:active,.Button_Tertiary__Pnk45:focus{background-color:rgba(10,121,134,.05)}.Button_Shop__7mqrj{background-color:#fff;color:#0a7986;border:1px solid #e3e6e9}.Button_Shop__7mqrj:hover{border:1px solid #0a7986}.Button_Shop__7mqrj:active,.Button_Shop__7mqrj:focus{background-color:rgba(10,121,134,.05);border:1px solid #0a7986}.Button_Brand__IDhyU{box-shadow:0px 1px 1px 0px rgba(0,0,0,.1019607843);background-color:#df2a63;color:#fff;border:1px solid #e3e6e9}.Button_Brand__IDhyU:hover{background-color:#f2828f;color:#fff}.Button_Brand__IDhyU:active,.Button_Brand__IDhyU:focus{background-color:#f2828f;color:#df2a63}.Button_Caution__Olq0O{box-shadow:0px 1px 1px 0px rgba(0,0,0,.1019607843);background-color:#ffb101;color:#fff;border:1px solid #e3e6e9}.Button_Caution__Olq0O:hover{background-color:#ffcd57;color:#fff}.Button_Caution__Olq0O:active,.Button_Caution__Olq0O:focus{background-color:#ffdd8f;color:#ffb101}.Button_White-Outline__-xmKg{color:#fff;border:1px solid #fff}.Button_White-Outline__-xmKg:hover{background-color:rgba(10,121,134,.05)}.Button_White-Outline__-xmKg:active,.Button_White-Outline__-xmKg:focus{color:#0a7986;background-color:rgba(10,121,134,.05);border:1px solid #0a7986}.Button_inner_content__N7wZK{display:flex;justify-content:center;align-items:center}.Button_Icon__cJnRl{width:fit-content !important;border-radius:10000px}.Button_Icon__cJnRl:hover{background-color:#f8f9fc}.Button_Icon__cJnRl:hover .Button_onlyIcon__jujNL{color:#005d68 !important}.Button_Icon__cJnRl:active{background-color:#0a7986}.Button_Icon__cJnRl:active .Button_onlyIcon__jujNL{color:#f8f9fc !important}.Button_full_width__zcW6E{width:100%}.Button_icon_left__AU9XJ{margin-right:8px;display:inherit}.Button_icon_right__-t2t7{margin-left:8px;display:inherit}.Button_spinner__3HH1D{margin-right:10px}
+@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-display:block;font-weight:400;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@-moz-document url-prefix(){@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-weight:400;font-display:block;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}}.Spinner_spinner__iCN99{display:flex;border-radius:50%;align-items:center;justify-content:center}.Spinner_spinnerContainer__aVQNw{display:flex;justify-content:center;align-items:center;padding:20%}.Spinner_withShadow__U5tpG{background-color:#fff;box-shadow:0 0 14.5px #d6d9dc}@keyframes Spinner_rotating__ezZDG{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}.Spinner_rotating__ezZDG{animation:Spinner_rotating__ezZDG 1s linear infinite}.Spinner_xx-small__Y0mau{width:25px;height:25px}.Spinner_x-small__dlocC{width:40px;height:40px}.Spinner_small__Lzbaa{width:72px;height:72px}.Spinner_large__9X86T{width:120px;height:120px}.Spinner_brand__BwJij path{stroke:#df2a63 !important}.Spinner_action__3u-Ia path{stroke:#0a7986 !important}.Spinner_white__a-4NI path{stroke:#fff !important}.Spinner_white__a-4NI circle{stroke:rgba(0,0,0,0) !important}.Spinner_noFlex__xDD2M{display:block}
+@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-display:block;font-weight:400;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@-moz-document url-prefix(){@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-weight:400;font-display:block;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}}.Card_card__E7bPh{border:1px solid #e3e6e9;border-radius:8px;background-color:#fff;box-sizing:border-box}
+@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-display:block;font-weight:400;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@-moz-document url-prefix(){@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-weight:400;font-display:block;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}}.AnnouncementCard_announcementCard__opp8P{display:flex;flex-direction:row;padding:20px 16px;margin-bottom:24px}.AnnouncementCard_announcementCard__opp8P .AnnouncementCard_content__9i16C{padding-left:16px}.AnnouncementCard_announcementCard__opp8P .AnnouncementCard_content__9i16C .AnnouncementCard_title__OWJTa{margin-bottom:8px}.AnnouncementCard_announcementCard__opp8P .AnnouncementCard_content__9i16C .AnnouncementCard_body__8d8hO{margin-bottom:4px}
+@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-display:block;font-weight:400;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@-moz-document url-prefix(){@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-weight:400;font-display:block;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}}.OffersTab_offersTabContainer__Qm\+n6 .OffersTab_spinnerContainer__Mqc0T{display:flex;align-items:center;justify-content:center;height:-webkit-fill-available}.OffersTab_offersTabContent__nPwfT{margin-top:24px}.OffersTab_offersTabContent__nPwfT .OffersTab_offerInfoList__NDOnu{margin-bottom:24px}.OffersTab_offersTabContent__nPwfT .OffersTab_offerInfoList__NDOnu .OffersTab_offerInfoItem__5I5UV{padding:16px;background-color:#fff;border:1px solid #e3e6e9;border-bottom:none}.OffersTab_offersTabContent__nPwfT .OffersTab_offerInfoList__NDOnu .OffersTab_offerInfoItem__5I5UV .OffersTab_itemTitle__tu8e-{margin-bottom:8px}.OffersTab_offersTabContent__nPwfT .OffersTab_offerInfoList__NDOnu .OffersTab_offerInfoItem__5I5UV:first-child{border-radius:4px 4px 0px 0px}.OffersTab_offersTabContent__nPwfT .OffersTab_offerInfoList__NDOnu .OffersTab_offerInfoItem__5I5UV:last-child{border-radius:0px 0px 4px 4px;border-bottom:1px solid #e3e6e9}.OffersTab_categoryRow__meVQe{display:flex;flex-direction:row;margin-bottom:4px}.OffersTab_categoryRow__meVQe .OffersTab_percentBack__v8G5f{margin-right:4px}.OffersTab_footer__DfYmZ{text-align:center;padding-bottom:24px}
+@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-display:block;font-weight:400;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@-moz-document url-prefix(){@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-weight:400;font-display:block;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}}.ActivationStatusWidget_activatedContainer__e9eh2{padding:16px 16px 8px;display:flex;flex-direction:row;margin-right:-16px;margin-left:-16px;background-color:#fff;border-bottom:1px solid #e3e6e9}.ActivationStatusWidget_activatedContainer__e9eh2 .ActivationStatusWidget_retailerImage__BRKI2{flex:.1;width:64px;height:64px;border-radius:50%;object-fit:cover;margin-right:16px}.ActivationStatusWidget_activatedContainer__e9eh2 .ActivationStatusWidget_infoContainer__YNoLz{display:flex;flex-direction:column;flex:.8;justify-content:center;margin-top:8px}.ActivationStatusWidget_activatedContainer__e9eh2 .ActivationStatusWidget_infoContainer__YNoLz .ActivationStatusWidget_offerValue__MgFYd{margin-bottom:8px}.ActivationStatusWidget_activatedContainer__e9eh2 .ActivationStatusWidget_activatedIcon__dFSvp{flex:.1;margin-top:10px}.ActivationStatusWidget_activatedContainer__e9eh2 .ActivationStatusWidget_octoshopPoweredByIbotta__CpPBf{margin-top:8px;margin-bottom:-8px}.ActivationStatusWidget_notActivatedContainer__l9PPb{padding:24px 16px;padding-bottom:16px;display:flex;flex-direction:column;justify-content:center;align-items:center;margin-right:-16px;margin-left:-16px;padding-left:0px;padding-right:0px;border-bottom:1px solid #e3e6e9}.ActivationStatusWidget_notActivatedContainer__l9PPb .ActivationStatusWidget_main__W3D9l{display:flex;width:100%}.ActivationStatusWidget_notActivatedContainer__l9PPb .ActivationStatusWidget_main__W3D9l .ActivationStatusWidget_mainText__cGAxV{display:flex;flex-direction:column;justify-content:center;align-items:center}.ActivationStatusWidget_notActivatedContainer__l9PPb .ActivationStatusWidget_main__W3D9l .ActivationStatusWidget_mainText__cGAxV .ActivationStatusWidget_valuePropText__\+bmM1{margin-top:4px}.ActivationStatusWidget_notActivatedContainer__l9PPb .ActivationStatusWidget_main__W3D9l .ActivationStatusWidget_svgContainer__I2-rT{flex:1;display:block;margin-right:12px;margin-left:12px}.ActivationStatusWidget_notActivatedContainer__l9PPb .ActivationStatusWidget_main__W3D9l .ActivationStatusWidget_svgContainer__I2-rT.ActivationStatusWidget_left__wzD\+E{text-align:right}.ActivationStatusWidget_notActivatedContainer__l9PPb .ActivationStatusWidget_main__W3D9l .ActivationStatusWidget_svgContainer__I2-rT.ActivationStatusWidget_left__wzD\+E .ActivationStatusWidget_svgIcon__iKUpJ:nth-child(2){padding-right:30px}.ActivationStatusWidget_notActivatedContainer__l9PPb .ActivationStatusWidget_main__W3D9l .ActivationStatusWidget_svgContainer__I2-rT.ActivationStatusWidget_right__Pkmjt{text-align:left}.ActivationStatusWidget_notActivatedContainer__l9PPb .ActivationStatusWidget_main__W3D9l .ActivationStatusWidget_svgContainer__I2-rT.ActivationStatusWidget_right__Pkmjt .ActivationStatusWidget_svgIcon__iKUpJ:nth-child(2){padding-left:30px}.ActivationStatusWidget_notActivatedContainer__l9PPb .ActivationStatusWidget_main__W3D9l .ActivationStatusWidget_svgContainer__I2-rT .ActivationStatusWidget_svgIcon__iKUpJ{margin-top:4px;margin-bottom:4px}.ActivationStatusWidget_notActivatedContainer__l9PPb .ActivationStatusWidget_button__7aHYY{margin-top:16px;width:-webkit-fill-available;margin-left:16px;margin-right:16px}.ActivationStatusWidget_notActivatedContainer__l9PPb .ActivationStatusWidget_octoshopPoweredByIbotta__CpPBf{margin-top:12px}
+@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-display:block;font-weight:400;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@-moz-document url-prefix(){@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-weight:400;font-display:block;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}}.CheckoutDetectionPCT_titleText__4GzJu{margin-top:8px;margin-bottom:16px}.CheckoutDetectionPCT_subtitleText__BoIjS{margin-bottom:8px}.CheckoutDetectionPCT_loggedOutContainer__np4gv{display:flex;justify-content:center;flex-direction:column;height:100%}.CheckoutDetectionPCT_starsContainer__vCxIb{display:flex;flex-direction:row;justify-content:center;margin-bottom:8px}.CheckoutDetectionPCT_buttonContainer__9u\+0H{display:flex;align-items:center;justify-content:center;margin-top:24px;margin-bottom:24px}.CheckoutDetectionPCT_reviewButton__KoZZz{flex:1}
+@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-display:block;font-weight:400;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@-moz-document url-prefix(){@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-weight:400;font-display:block;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}}.PanelLip_panelLip__2AP9b{background:#f8f9fc;height:52px;border-top:1px solid #e3e6e9;border-bottom-left-radius:8px;border-bottom-right-radius:8px;position:absolute;bottom:0;width:-webkit-fill-available;margin-left:-16px;display:flex;align-items:center;justify-content:center}.PanelLip_panelLipSpacer__4SjZy{height:64px;width:100%}
+@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-display:block;font-weight:400;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@-moz-document url-prefix(){@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-weight:400;font-display:block;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}}.NotificationRow_itemNotificationRow__u5FYo{padding:16px;background:#fff;border:1px solid #e3e6e9;border-bottom:none;display:flex;flex-direction:row;cursor:pointer}.NotificationRow_itemNotificationRow__u5FYo .NotificationRow_iconContainer__KTcvz{display:flex;justify-content:center;align-items:center;padding-right:16px;padding-top:16px}.NotificationRow_itemNotificationRow__u5FYo .NotificationRow_bodyContainer__6dI-k{display:flex;flex-direction:column;justify-content:start;padding-right:16px;width:188px}.NotificationRow_itemNotificationRow__u5FYo .NotificationRow_bodyContainer__6dI-k .NotificationRow_title__BpMh1{margin-bottom:4px;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis;min-height:14px}.NotificationRow_itemNotificationRow__u5FYo .NotificationRow_bodyContainer__6dI-k .NotificationRow_message__JXVKg{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-align:center;overflow:hidden;text-overflow:ellipsis;min-height:40px;flex-grow:1}.NotificationRow_itemNotificationRow__u5FYo .NotificationRow_dateImageContainer__K0-IV{display:flex;flex-direction:column}.NotificationRow_itemNotificationRow__u5FYo .NotificationRow_dateImageContainer__K0-IV .NotificationRow_timeSent__so2tJ{margin-bottom:4px;text-align:right;white-space:nowrap}.NotificationRow_itemNotificationRow__u5FYo .NotificationRow_dateImageContainer__K0-IV .NotificationRow_imageContainer__URKti{justify-content:center;align-items:center;display:flex}.NotificationRow_itemNotificationRow__u5FYo.NotificationRow_firstInGroup__S\+NSm{border-radius:8px 8px 0px 0px}.NotificationRow_itemNotificationRow__u5FYo.NotificationRow_lastInGroup__Ei2ud{border-radius:0px 0px 8px 8px;border-bottom:1px solid #e3e6e9}.NotificationRow_itemNotificationRow__u5FYo.NotificationRow_singleRow__QOQ6-{border-radius:8px;border-bottom:1px solid #e3e6e9}
+@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-display:block;font-weight:400;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@-moz-document url-prefix(){@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-weight:400;font-display:block;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}}.NotificationsDefault_notificationsDefault__F4SJT{display:flex;align-items:center;padding-top:172px;flex-direction:column;height:100%}.NotificationsDefault_notificationsDefault__F4SJT .NotificationsDefault_subtitle__Z6sPF{margin-top:16px;margin-bottom:40px}.NotificationsDefault_notificationsDefault__F4SJT .NotificationsDefault_subtitle__Z6sPF .NotificationsDefault_tracking__N1Jr4{cursor:pointer}
+@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-display:block;font-weight:400;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@-moz-document url-prefix(){@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-weight:400;font-display:block;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}}.NotificationsTab_notificationsTab__QP0GM{padding-top:0px}.NotificationsTab_notificationsTab__QP0GM .NotificationsTab_daysAgoTitle__Mn89z{margin-top:24px;margin-bottom:8px}.NotificationsTab_notificationsTab__QP0GM .NotificationsTab_clearAll__GhoQF{cursor:pointer;position:sticky;bottom:0px;background-color:#f8f9fc;border-top:1px solid #e3e6e9;height:52px;border-bottom-left-radius:16px;border-bottom-right-radius:16px;margin-left:-16px;margin-right:-16px;display:flex;justify-content:center}.NotificationsTab_notificationsTab__QP0GM .NotificationsTab_clearAll__GhoQF .NotificationsTab_label__u-xkg{margin-top:12px;margin-bottom:24px}
+@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-display:block;font-weight:400;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@-moz-document url-prefix(){@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-weight:400;font-display:block;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}}.PanelPage_panelPage__o1212{padding:0px}.PanelPage_headerContainer__5BBSH{background:#fff;border-bottom:1px solid #e3e6e9;padding:16px}.PanelPage_headerRow__7DJIM{display:grid;grid-template-columns:1fr 1fr 1fr;grid-column-gap:5px;justify-items:center;list-style:none;padding:0;margin:0}.PanelPage_headerRow__7DJIM li:nth-child(2){grid-column-start:2}.PanelPage_headerRow__7DJIM li:nth-child(1){margin-right:auto}.PanelPage_headerRow__7DJIM .PanelPage_backButton__G24lx{padding:0px;display:flex;cursor:pointer;justify-content:center;align-items:center}.PanelPage_headerRow__7DJIM .PanelPage_backButton__G24lx:hover *{color:#005d68 !important}.PanelPage_headerRow__7DJIM .PanelPage_backButton__G24lx:active *{color:#0a7986 !important}.PanelPage_headerRow__7DJIM .PanelPage_backButton__G24lx .PanelPage_text__OkEKc{margin-left:4px}
+@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-display:block;font-weight:400;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@-moz-document url-prefix(){@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-weight:400;font-display:block;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}}.ItemHistoryPage_historyTab__MEqki{padding:0px}.ItemHistoryPage_headerContainer__Yiq9G{background:#fff;border-bottom:1px solid #e3e6e9;padding:16px}.ItemHistoryPage_headerRow__tOF4l{display:grid;grid-template-columns:1fr 1fr 1fr;grid-column-gap:5px;justify-items:center;list-style:none;padding:0;margin:0}.ItemHistoryPage_headerRow__tOF4l li:nth-child(2){grid-column-start:2}.ItemHistoryPage_headerRow__tOF4l li:nth-child(1){margin-right:auto}.ItemHistoryPage_headerRow__tOF4l .ItemHistoryPage_backBtn__\+PqKi{padding:0px}.ItemHistoryPage_productRow__f\+agI{display:flex;flex-direction:row;margin-top:24px}.ItemHistoryPage_productRow__f\+agI .ItemHistoryPage_productImg__AnnGP{margin-right:16px;margin-top:auto;margin-bottom:auto;object-fit:contain}.ItemHistoryPage_productRow__f\+agI .ItemHistoryPage_productInfo__oMfxb{display:flex;flex-direction:column;justify-content:center}.ItemHistoryPage_productRow__f\+agI .ItemHistoryPage_productInfo__oMfxb .ItemHistoryPage_productName__c-baq{display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}.ItemHistoryPage_productRow__f\+agI .ItemHistoryPage_retailerInfo__tJCIU{display:flex;flex-direction:row;margin-top:4px}.ItemHistoryPage_productRow__f\+agI .ItemHistoryPage_retailerInfo__tJCIU .ItemHistoryPage_storeName__YZjpa{display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}.ItemHistoryPage_productRow__f\+agI .ItemHistoryPage_retailerInfo__tJCIU img{width:16px;height:16px;border:1px solid #fff;border-radius:21px;margin-right:4px}.ItemHistoryPage_historyCard__hMmyC{margin:16px}.ItemHistoryPage_viewItemBtn__Q5YrC{margin-left:16px;margin-right:16px;bottom:24px;width:auto;position:sticky}
+@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-display:block;font-weight:400;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@-moz-document url-prefix(){@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-weight:400;font-display:block;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}}.PriceGraph_cardContainer__hWVhf{padding:16px;margin-top:16px;margin-left:auto;margin-right:auto;margin-bottom:76px;width:343px}.PriceGraph_priceChangeText__N9NJO{display:flex;flex-direction:row;align-items:center;margin-bottom:8px}.PriceGraph_priceChangeText__N9NJO .PriceGraph_statusIcon__gWnXX{margin-right:8px}.PriceGraph_priceChangeSubtext__Kf2Yg{margin-bottom:8px}.PriceGraph_historyGraph__TQXwd{margin-top:40px;border-bottom:1px solid #575c67}.PriceGraph_xaxis__7VQ6z{display:flex;flex-direction:row;margin-top:7px}.PriceGraph_xaxis__7VQ6z .PriceGraph_beforeDate__o\+X80{float:left}.PriceGraph_xaxis__7VQ6z .PriceGraph_todayDate__0TB3U{margin-left:auto}.PriceGraph_priceToday__lxPRy{color:#575c67;margin-top:14px}.PriceGraph_dropLabel__H5P3i{fill:#2fa84f;color:#2fa84f}.PriceGraph_increaseLabel__gaGjY{fill:#e60a0a;color:#e60a0a}canvas{image-rendering:-moz-crisp-edges;image-rendering:-webkit-crisp-edges;image-rendering:pixelated;image-rendering:crisp-edges}
+@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-display:block;font-weight:400;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@-moz-document url-prefix(){@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-weight:400;font-display:block;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}}.TrackingDefault_trackingDefault__2st8T{display:flex;flex-direction:column;align-items:center;padding-top:104px}.TrackingDefault_subtitle__SvBqv{margin-top:16px}.TrackingDefault_defaultImage__Pe92n{margin-top:24px;margin-bottom:40px}
+.Toggle_toggleContainer__zm8Un{display:flex;align-items:center}.Toggle_toggleContainer__zm8Un .Toggle_label__z4h3Z{margin-left:5px}.Toggle_toggleContainer__zm8Un .Toggle_switch__aXPhp{position:relative;display:inline-block;width:32px;height:16px}.Toggle_toggleContainer__zm8Un .Toggle_switch__aXPhp input{opacity:0;width:0;height:0}.Toggle_toggleContainer__zm8Un .Toggle_switch__aXPhp input:checked+.Toggle_slider__mi0zy{background-color:#0a7986}.Toggle_toggleContainer__zm8Un .Toggle_switch__aXPhp input:checked+.Toggle_slider__mi0zy::before{transform:translateX(16px)}.Toggle_toggleContainer__zm8Un .Toggle_switch__aXPhp input:not(:checked)+.Toggle_slider__mi0zy{background-color:#93999c}.Toggle_slider__mi0zy{position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;background-color:#0a7986;-webkit-transition:.2s;transition:.2s}.Toggle_slider__mi0zy::before{position:absolute;content:&quot;&quot;;height:8px;width:8px;left:4px;bottom:4px;transition:.2s;background:#fff}.Toggle_slider__mi0zy.Toggle_round__I6wum{border-radius:34px}.Toggle_slider__mi0zy.Toggle_round__I6wum::before{border-radius:50%}
+@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-display:block;font-weight:400;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@-moz-document url-prefix(){@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-weight:400;font-display:block;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}}.TrackingRow_trackingRow__pEflB{display:flex;flex-direction:row;padding:16px;background:#fff;border:1px solid #e3e6e9;border-radius:8px;margin-bottom:8px}.TrackingRow_trackingRow__pEflB .TrackingRow_imageContainer__g8Mut{display:flex;flex:.25;margin-right:16px;cursor:pointer}.TrackingRow_trackingRow__pEflB .TrackingRow_imageContainer__g8Mut .TrackingRow_image__emlQM{cursor:pointer}.TrackingRow_trackingRow__pEflB .TrackingRow_imageContainer__g8Mut .TrackingRow_image__emlQM.TrackingRow_isOutOfStock__pQQsP{opacity:.4}.TrackingRow_trackingRow__pEflB .TrackingRow_imageContainer__g8Mut .TrackingRow_svg__2hKnC{cursor:pointer}.TrackingRow_trackingRow__pEflB .TrackingRow_imageContainer__g8Mut .TrackingRow_svg__2hKnC.TrackingRow_isOutOfStock__pQQsP{opacity:.4}.TrackingRow_trackingRow__pEflB .TrackingRow_itemInfoContainer__QQKTY{flex:.6;padding-right:12px;cursor:pointer}.TrackingRow_trackingRow__pEflB .TrackingRow_itemInfoContainer__QQKTY .TrackingRow_price__gm6cQ{margin-bottom:2px}.TrackingRow_trackingRow__pEflB .TrackingRow_itemInfoContainer__QQKTY .TrackingRow_itemName__cY75c{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis;min-height:40px}.TrackingRow_trackingRow__pEflB .TrackingRow_itemInfoContainer__QQKTY .TrackingRow_storeContainer__sGXtp{display:flex;flex-direction:row}.TrackingRow_trackingRow__pEflB .TrackingRow_itemInfoContainer__QQKTY .TrackingRow_storeContainer__sGXtp .TrackingRow_storeName__i2Adl{display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}.TrackingRow_trackingRow__pEflB .TrackingRow_itemInfoContainer__QQKTY .TrackingRow_storeContainer__sGXtp img{width:16px;height:16px;border:1px solid #fff;border-radius:21px;margin-right:4px}.TrackingRow_trackingRow__pEflB .TrackingRow_actionsContainer__nBipI{flex:.15;display:flex;align-items:center;justify-content:center;flex-direction:column;padding-left:16px;border-left:1px solid #e3e6e9}.TrackingRow_trackingRow__pEflB .TrackingRow_actionsContainer__nBipI .TrackingRow_toggle__ZObIU{display:flex;flex-direction:column;align-items:center}.TrackingRow_trackingRow__pEflB .TrackingRow_actionsContainer__nBipI .TrackingRow_toggle__ZObIU .TrackingRow_label__d4eeL{margin-top:6.25px}.TrackingRow_trackingRow__pEflB .TrackingRow_actionsContainer__nBipI .TrackingRow_history__k0e75{display:flex;flex-direction:column;align-items:center;margin-top:12px;cursor:pointer}.TrackingRow_trackingRow__pEflB .TrackingRow_actionsContainer__nBipI .TrackingRow_history__k0e75 .TrackingRow_label__d4eeL{margin-top:4px}.TrackingRow_trackingRow__pEflB .TrackingRow_actionsContainer__nBipI .TrackingRow_history__k0e75:hover *{color:#005d68 !important}.TrackingRow_trackingRow__pEflB .TrackingRow_actionsContainer__nBipI .TrackingRow_history__k0e75:active *{color:#0a7986 !important}
+@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-display:block;font-weight:400;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@-moz-document url-prefix(){@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-weight:400;font-display:block;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}}.TrackingTab_trackingTab__tAwOV .TrackingTab_header__HAK5u{margin:4px 0px 16px 0px;display:flex;align-items:baseline}.TrackingTab_trackingTab__tAwOV .TrackingTab_header__HAK5u .TrackingTab_text__C3b06{flex:1}
+@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-display:block;font-weight:400;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@-moz-document url-prefix(){@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-weight:400;font-display:block;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}}.CompareTab_title__Gp3Gs{padding-top:8px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}.CompareTab_itemList__OQLJ6{margin-top:16px;padding-bottom:24px}.CompareTab_bestPriceGroup__31KOg{border:2px solid #df2a63;border-radius:12px;margin-bottom:8px}.CompareTab_relatedItemsGroup__R6BVI{border:2px solid #575c67;border-radius:12px;margin-bottom:8px}
+@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-display:block;font-weight:400;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@-moz-document url-prefix(){@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-weight:400;font-display:block;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}}.NoMoreResults_noMoreContainer__2L8xJ .NoMoreResults_text__7\+A8a{margin-bottom:16px}
+@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-display:block;font-weight:400;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@-moz-document url-prefix(){@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-weight:400;font-display:block;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}}.PanelErrorTab_tabContainer__49FkK{display:flex;align-items:center;justify-content:center;flex-direction:column;height:100%}.PanelErrorTab_tabContainer__49FkK .PanelErrorTab_icon__V36xe{margin-bottom:16px}.PanelErrorTab_tabContainer__49FkK .PanelErrorTab_titleText__Z2PdU{margin-bottom:16px}
+@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-display:block;font-weight:400;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@-moz-document url-prefix(){@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-weight:400;font-display:block;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}}.PCLoadingState_pcLoading__4RNR9{display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:40px}.PCLoadingState_subtitle__s55oc{margin-top:16px}
+@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-display:block;font-weight:400;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@-moz-document url-prefix(){@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-weight:400;font-display:block;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}}.PCRow_pctRow__Ylu6m{display:flex;flex-direction:column;padding:16px;background:#fff;border:1px solid #e3e6e9;border-radius:12px;justify-content:center;margin-bottom:8px;position:relative}.PCRow_pctRow__Ylu6m.PCRow_bestPriceGroupCard__sMLM\+{margin-bottom:0px}.PCRow_pctRow__Ylu6m.PCRow_bestPriceGroupCard__sMLM\+.PCRow_firstCard__CzkKH{border-radius:12px 12px 0px 0px}.PCRow_pctRow__Ylu6m.PCRow_bestPriceGroupCard__sMLM\+.PCRow_middleCard__amQhp{border-radius:0px}.PCRow_pctRow__Ylu6m.PCRow_bestPriceGroupCard__sMLM\+.PCRow_lastCard__im1fS{border-radius:0px 0px 12px 12px}.PCRow_pctRow__Ylu6m.PCRow_bestPriceGroupCard__sMLM\+ .PCRow_bestPriceBanner__4JH0o{background-color:#df2a63;border-radius:8px 8px 0 0;margin-right:-17px;margin-left:-17px;margin-top:-17px;margin-bottom:12px;height:30px;display:flex;align-items:center;justify-content:center}.PCRow_pctRow__Ylu6m.PCRow_bestPriceGroupCard__sMLM\+ .PCRow_relatedProductBanner__KNc5U{background-color:#575c67;border-radius:8px 8px 0 0;margin-right:-17px;margin-left:-17px;margin-top:-17px;margin-bottom:12px;height:30px;display:flex;align-items:center;justify-content:center}.PCRow_pctRow__Ylu6m .PCRow_pctRowContent__PA6gZ{display:flex;flex-direction:row;align-items:center;justify-content:center}.PCRow_pctRow__Ylu6m .PCRow_pctRowContent__PA6gZ .PCRow_image__X4eSN{flex:.2;cursor:pointer}.PCRow_pctRow__Ylu6m .PCRow_pctRowContent__PA6gZ .PCRow_image__X4eSN.PCRow_isOutOfStock__MG78n{opacity:.4}.PCRow_pctRow__Ylu6m .PCRow_pctRowContent__PA6gZ svg{flex:.2;cursor:pointer}.PCRow_pctRow__Ylu6m .PCRow_pctRowContent__PA6gZ svg.PCRow_isOutOfStock__MG78n{fill-opacity:.4}.PCRow_pctRow__Ylu6m .PCRow_pctRowContent__PA6gZ .PCRow_itemContainer__HTWXS{padding-left:16px;flex:.8;align-items:center;justify-content:center}.PCRow_pctRow__Ylu6m .PCRow_pctRowContent__PA6gZ .PCRow_itemContainer__HTWXS .PCRow_itemInfo__pWVvW{display:flex;flex-direction:row;align-items:center;justify-content:center}.PCRow_pctRow__Ylu6m .PCRow_pctRowContent__PA6gZ .PCRow_itemContainer__HTWXS .PCRow_itemInfo__pWVvW .PCRow_info__iv1Gc{flex:.55;padding-bottom:4px}.PCRow_pctRow__Ylu6m .PCRow_pctRowContent__PA6gZ .PCRow_itemContainer__HTWXS .PCRow_itemInfo__pWVvW .PCRow_info__iv1Gc .PCRow_price__luH\+z{flex-direction:row;align-items:center}.PCRow_pctRow__Ylu6m .PCRow_pctRowContent__PA6gZ .PCRow_itemContainer__HTWXS .PCRow_itemInfo__pWVvW .PCRow_info__iv1Gc .PCRow_price__luH\+z .PCRow_strike__0Uu5Y{margin-right:5px}.PCRow_pctRow__Ylu6m .PCRow_pctRowContent__PA6gZ .PCRow_itemContainer__HTWXS .PCRow_itemInfo__pWVvW .PCRow_info__iv1Gc .PCRow_price__luH\+z .PCRow_value__UaN53{margin-right:4px;display:flex;align-items:center;position:relative}.PCRow_pctRow__Ylu6m .PCRow_pctRowContent__PA6gZ .PCRow_itemContainer__HTWXS .PCRow_itemInfo__pWVvW .PCRow_info__iv1Gc .PCRow_price__luH\+z .PCRow_value__UaN53 .PCRow_infoIcon__XhhSd{cursor:pointer;-webkit-user-select:none;-ms-user-select:none;user-select:none;margin-left:4px}.PCRow_pctRow__Ylu6m .PCRow_pctRowContent__PA6gZ .PCRow_itemContainer__HTWXS .PCRow_itemInfo__pWVvW .PCRow_info__iv1Gc img{height:16px;width:16px;border-radius:58.9349px}.PCRow_pctRow__Ylu6m .PCRow_pctRowContent__PA6gZ .PCRow_itemContainer__HTWXS .PCRow_itemInfo__pWVvW .PCRow_info__iv1Gc .PCRow_store__IcL4d{display:flex;flex-direction:row;align-items:center;margin-top:4px;margin-bottom:4px}.PCRow_pctRow__Ylu6m .PCRow_pctRowContent__PA6gZ .PCRow_itemContainer__HTWXS .PCRow_itemInfo__pWVvW .PCRow_info__iv1Gc .PCRow_store__IcL4d .PCRow_name__JxKPl{display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis;overflow-wrap:break-word;max-width:96px}.PCRow_pctRow__Ylu6m .PCRow_pctRowContent__PA6gZ .PCRow_itemContainer__HTWXS .PCRow_itemInfo__pWVvW .PCRow_info__iv1Gc .PCRow_store__IcL4d img{margin-right:4px}.PCRow_pctRow__Ylu6m .PCRow_pctRowContent__PA6gZ .PCRow_itemContainer__HTWXS .PCRow_itemInfo__pWVvW .PCRow_viewItemButton__oX7Ay{flex:.45;display:flex;align-items:center;justify-content:end;align-self:baseline}.PCRow_pctRow__Ylu6m .PCRow_pctRowContent__PA6gZ .PCRow_itemContainer__HTWXS .PCRow_itemInfo__pWVvW .PCRow_viewItemButton__oX7Ay .PCRow_button__bMSWo{width:100%}.PCRow_pctRow__Ylu6m .PCRow_pctRowContent__PA6gZ .PCRow_itemContainer__HTWXS .PCRow_notifyWidget__nLddr{display:flex;flex-direction:row;border-top:1px solid #e3e6e9}.PCRow_pctRow__Ylu6m .PCRow_pctRowContent__PA6gZ .PCRow_itemContainer__HTWXS .PCRow_notifyWidget__nLddr .PCRow_labelContainer__hgD9v{flex:1;display:flex;margin-top:4px;align-items:center}.PCRow_pctRow__Ylu6m .PCRow_pctRowContent__PA6gZ .PCRow_itemContainer__HTWXS .PCRow_notifyWidget__nLddr .PCRow_labelContainer__hgD9v .PCRow_label__GTBrF{color:#292f36}.PCRow_pctRow__Ylu6m .PCRow_pctRowContent__PA6gZ .PCRow_itemContainer__HTWXS .PCRow_notifyWidget__nLddr .PCRow_labelContainer__hgD9v .PCRow_trackingUnavailIcon__vQVwL{cursor:pointer;-webkit-user-select:none;-ms-user-select:none;user-select:none;margin-top:4px;margin-left:4px}.PCRow_pctRow__Ylu6m .PCRow_pctRowContent__PA6gZ .PCRow_itemContainer__HTWXS .PCRow_notifyWidget__nLddr .PCRow_toggle__7r6-a{color:#292f36;display:flex;align-items:center;justify-content:end;margin-top:4px}
+@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-display:block;font-weight:400;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@-moz-document url-prefix(){@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-weight:400;font-display:block;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}}.InfoPopup_opaque__2DOt9{opacity:1 !important}.InfoPopup_noTransition__bmQyb{transition:none !important}.InfoPopup_noPadding__HK9aW{padding:0px !important}
+@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-display:block;font-weight:400;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@-moz-document url-prefix(){@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-weight:400;font-display:block;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}}.ItemInfoPopup_itemInfoBody__8WLD3{width:231px;background-color:#fff;box-shadow:0px 10px 32px 0px rgba(59,74,116,.1607843137);border-radius:12px;padding:16px}.ItemInfoPopup_itemInfoBody__8WLD3 .ItemInfoPopup_row__I1ve1{display:flex;flex-direction:row;width:100%;margin-bottom:4px}.ItemInfoPopup_itemInfoBody__8WLD3 .ItemInfoPopup_row__I1ve1&gt;*{flex:1}.ItemInfoPopup_itemInfoBody__8WLD3 .ItemInfoPopup_row__I1ve1&gt;* .ItemInfoPopup_categoryRow__iqpX8{display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}.ItemInfoPopup_itemInfoBody__8WLD3 .ItemInfoPopup_row__I1ve1 .ItemInfoPopup_label__Ag\+VY{flex:2}.ItemInfoPopup_itemInfoBody__8WLD3 .ItemInfoPopup_row__I1ve1 .ItemInfoPopup_seeDetails__r0mGO{color:#0a7986;cursor:pointer}.ItemInfoPopup_itemInfoBody__8WLD3 .ItemInfoPopup_row__I1ve1 .ItemInfoPopup_seeDetails__r0mGO:hover{color:#005d68}.ItemInfoPopup_itemInfoBody__8WLD3 .ItemInfoPopup_divider__kF\+Xe{margin-top:16px}.ItemInfoPopup_itemInfoBody__8WLD3 .ItemInfoPopup_loggedOutMargin__6jBvy{margin-bottom:0px}.ItemInfoPopup_itemInfoBody__8WLD3 .ItemInfoPopup_loginLink__wakiF{margin-top:-4px;display:inline-block}
+@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-display:block;font-weight:400;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@-moz-document url-prefix(){@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-weight:400;font-display:block;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}}.TrackingUnavailableInfoPopup_trackingUnavailableInfoBody__BT1O9{width:231px;background-color:#fff;box-shadow:0px 10px 32px 0px rgba(59,74,116,.1607843137);border-radius:12px;padding:16px}.TrackingUnavailableInfoPopup_trackingUnavailableInfoBody__BT1O9 .TrackingUnavailableInfoPopup_requestLink__bIqwq{display:inline-block;margin-top:4px}
+@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-display:block;font-weight:400;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@-moz-document url-prefix(){@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-weight:400;font-display:block;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}}.NewItemInfoPopup_itemInfoBody__pyHGj{width:231px;background-color:#fff;box-shadow:0px 10px 32px 0px rgba(59,74,116,.1607843137);border-radius:12px;padding:16px}.NewItemInfoPopup_itemInfoBody__pyHGj .NewItemInfoPopup_row__SKILy{display:flex;flex-direction:row;width:100%;margin-bottom:4px}.NewItemInfoPopup_itemInfoBody__pyHGj .NewItemInfoPopup_row__SKILy&gt;*{flex:1}.NewItemInfoPopup_itemInfoBody__pyHGj .NewItemInfoPopup_row__SKILy&gt;* .NewItemInfoPopup_categoryRow__bPc8G{display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}.NewItemInfoPopup_itemInfoBody__pyHGj .NewItemInfoPopup_row__SKILy .NewItemInfoPopup_label__oTSAV{flex:2}.NewItemInfoPopup_itemInfoBody__pyHGj .NewItemInfoPopup_row__SKILy .NewItemInfoPopup_seeDetails__6ZGNG{color:#0a7986;cursor:pointer}.NewItemInfoPopup_itemInfoBody__pyHGj .NewItemInfoPopup_row__SKILy .NewItemInfoPopup_seeDetails__6ZGNG:hover{color:#005d68}.NewItemInfoPopup_itemInfoBody__pyHGj .NewItemInfoPopup_divider__WFSzf{margin-top:16px}.NewItemInfoPopup_itemInfoBody__pyHGj .NewItemInfoPopup_loggedOutMargin__UJYzz{margin-bottom:0px}.NewItemInfoPopup_itemInfoBody__pyHGj .NewItemInfoPopup_loginLink__YK23i{margin-top:-4px;display:inline-block}.NewItemInfoPopup_card__o5Y3A{border-radius:8px;background-color:#fcc751;padding:12px;margin:8px 0px}.NewItemInfoPopup_card__o5Y3A&gt;*{line-height:18px}.NewItemInfoPopup_card__o5Y3A .NewItemInfoPopup_reason__PkniB{margin-top:4px}
+@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-display:block;font-weight:400;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@-moz-document url-prefix(){@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-weight:400;font-display:block;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}}.FeedbackCard_card__DCQqm{display:flex;align-items:center;justify-content:space-between;border-radius:8px;background-color:#f0f2f5;padding:12px}.FeedbackCard_card__DCQqm.FeedbackCard_like__Wgd\+r{background-color:#edf9f0}.FeedbackCard_card__DCQqm.FeedbackCard_dislike__IMo8b{background-color:#feefef}.FeedbackCard_card__DCQqm .FeedbackCard_text__qIsk3{line-height:18px}.FeedbackCard_card__DCQqm .FeedbackCard_thumbsContainer__Bi2-k{height:24px;white-space:nowrap}.FeedbackCard_card__DCQqm .FeedbackCard_thumbsContainer__Bi2-k .FeedbackCard_thumbsUpBtn__EO1bP{margin-right:8px}.FeedbackCard_card__DCQqm .FeedbackCard_thumbsContainer__Bi2-k .FeedbackCard_thumbsUpBtn__EO1bP.FeedbackCard_selected__lVhi9{background-color:#2fa84f}.FeedbackCard_card__DCQqm .FeedbackCard_thumbsContainer__Bi2-k .FeedbackCard_thumbsDownBtn__qJ3hK.FeedbackCard_selected__lVhi9{background-color:#e60a0a}.FeedbackCard_card__DCQqm .FeedbackCard_thumbsContainer__Bi2-k .FeedbackCard_button__D7\+LK{padding:4px;border-radius:12px;background-color:#d6d9dc;stroke:#1c1f24;stroke-width:2}.FeedbackCard_card__DCQqm .FeedbackCard_thumbsContainer__Bi2-k .FeedbackCard_button__D7\+LK:not(.FeedbackCard_inactive__iCrSY):hover{background-color:#bbbfc3}.FeedbackCard_card__DCQqm .FeedbackCard_thumbsContainer__Bi2-k .FeedbackCard_button__D7\+LK.FeedbackCard_selected__lVhi9{stroke:#f8f9fc}.FeedbackCard_card__DCQqm .FeedbackCard_thumbsContainer__Bi2-k .FeedbackCard_button__D7\+LK:not(.FeedbackCard_selected__lVhi9).FeedbackCard_inactive__iCrSY{background-color:unset}
+@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-display:block;font-weight:400;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@-moz-document url-prefix(){@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-weight:400;font-display:block;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}}.UnsupportedPage_titleText__a3tr9{margin-top:8px;margin-bottom:16px}.UnsupportedPage_subtitleText__EGidx{margin-bottom:24px}.UnsupportedPage_link__arM4R{cursor:pointer}.UnsupportedPage_compareDefault__ekTxE{margin-left:48px;margin-right:48px;margin-bottom:32px}
+@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-display:block;font-weight:400;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@-moz-document url-prefix(){@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-weight:400;font-display:block;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}}.UnsupportedRetailer_titleText__EbJuX{margin-top:8px;margin-bottom:16px}.UnsupportedRetailer_subtitleText__ZLzao{margin-bottom:24px}.UnsupportedRetailer_retailersListContainer__UQjDj{display:flex;align-items:center}.UnsupportedRetailer_retailersListContainer__UQjDj .UnsupportedRetailer_retailersList__1-rBn{margin-bottom:24px;display:grid;grid-template-columns:repeat(3, 1fr);grid-row-gap:24px;margin-left:24px;margin-right:24px}.UnsupportedRetailer_retailersListContainer__UQjDj .UnsupportedRetailer_retailersList__1-rBn .UnsupportedRetailer_retailer__JUYFY{display:flex;flex-direction:column;align-items:center;cursor:pointer;justify-content:center}.UnsupportedRetailer_retailersListContainer__UQjDj .UnsupportedRetailer_retailersList__1-rBn .UnsupportedRetailer_retailer__JUYFY img{border-radius:100px}.UnsupportedRetailer_retailersListContainer__UQjDj .UnsupportedRetailer_retailersList__1-rBn .UnsupportedRetailer_retailer__JUYFY .UnsupportedRetailer_retailerName__KCpQx{display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis;margin-top:8px}
+@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-display:block;font-weight:400;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@-moz-document url-prefix(){@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-weight:400;font-display:block;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}}.DefaultPCOnSearchPage_defaultPCOnSearchPage__fzKFy{display:flex;flex-direction:column;align-items:center;padding-top:80px}.DefaultPCOnSearchPage_titleText__7oO7U{margin-top:8px;margin-bottom:16px}.DefaultPCOnSearchPage_subtitleText__aYkof{margin-bottom:24px}
+@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-display:block;font-weight:400;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@-moz-document url-prefix(){@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-weight:400;font-display:block;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}}.Toast_toastContainer__zo3kO{position:absolute;width:100%;z-index:2147483647;margin-top:41px}.Toast_toastContainer__zo3kO .Toast_toastContent__X7j7y{display:grid;align-items:center;grid-template-columns:1fr 6fr 1fr}.Toast_toastContainer__zo3kO .Toast_toastContent__X7j7y .Toast_icon__KluvA{padding:8px}.Toast_toastContainer__zo3kO .Toast_toastContent__X7j7y .Toast_text__927sV{padding:14px 0px}.Toast_toastContainer__zo3kO .Toast_toastContent__X7j7y .Toast_closeButton__dCem\+{text-align:right;padding:8px;cursor:pointer}.Toast_toastContainer__zo3kO .Toast_progressBar__S55Ce{height:4px}.Toast_SUCCESS__Va0yk{background-color:#2fa84f}.Toast_SUCCESS__Va0yk .Toast_text__927sV{color:#fff}.Toast_SUCCESS__Va0yk .Toast_progressBar__S55Ce{background-color:#edf9f0}.Toast_INFO__uWFDS{background-color:#f0f2f5}.Toast_INFO__uWFDS .Toast_text__927sV{color:#292f36}.Toast_INFO__uWFDS .Toast_progressBar__S55Ce{background-color:#d6d9dc}.Toast_WARNING__gMn9K{background-color:#fcc751}.Toast_WARNING__gMn9K .Toast_text__927sV{color:#292f36}.Toast_WARNING__gMn9K .Toast_progressBar__S55Ce{background-color:#fff3da}.Toast_ERROR__dv0Rz{background-color:#e60a0a}.Toast_ERROR__dv0Rz .Toast_text__927sV{color:#fff}.Toast_ERROR__dv0Rz .Toast_progressBar__S55Ce{background-color:#f49b9b}
+@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-display:block;font-weight:400;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@-moz-document url-prefix(){@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-weight:400;font-display:block;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}}.AccountMenu_AccountMenu__XIeYm{z-index:2147483647;display:flex;flex-direction:column;position:relative;align-items:stretch;padding:16px;font-weight:300;outline:none;background-color:#fff;box-shadow:0 3px 29px rgba(59,74,116,.3);border-radius:12px;outline:none;width:168px;height:fit-content;padding-bottom:8px;padding-top:8px}.AccountMenu_AccountMenu__XIeYm&gt;div{border-bottom:1px solid #e3e6e9;padding:8px 0px}.AccountMenu_AccountMenu__XIeYm&gt;div:last-child{border-bottom:none}
+@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-display:block;font-weight:400;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@-moz-document url-prefix(){@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-weight:400;font-display:block;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}}.SplitButton_splitButtonContainer__7lImg{display:flex;align-items:center;width:fit-content;height:32px;border-radius:48px;background:#0a7986}.SplitButton_splitButtonContainer__7lImg .SplitButton_divider__Qymul{align-self:stretch;border:#0a727e solid 1px}.SplitButton_splitButtonContainer__7lImg .SplitButton_textContainer__flipn{display:flex;align-self:stretch;align-items:center;padding:0px 12px;border-radius:48px 0px 0px 48px}.SplitButton_splitButtonContainer__7lImg .SplitButton_textContainer__flipn .SplitButton_spinner__18Qe0{margin-right:8px}.SplitButton_splitButtonContainer__7lImg .SplitButton_textContainer__flipn:hover{background-color:#005d68}.SplitButton_splitButtonContainer__7lImg .SplitButton_dropdownContainer__SOFzm{display:flex;align-self:stretch;align-items:center;padding:0px 12px;border-radius:0px 48px 48px 0px;padding-right:12px}.SplitButton_splitButtonContainer__7lImg .SplitButton_dropdownContainer__SOFzm:hover{background-color:#005d68}
+@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-display:block;font-weight:400;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@-moz-document url-prefix(){@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-weight:400;font-display:block;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}}.AccountFAB_container__0-sf-{display:flex;position:absolute;bottom:16px;left:8px;align-items:center;justify-content:center;cursor:pointer;-webkit-user-select:none;-ms-user-select:none;user-select:none;box-shadow:0px 10px 32px 0px rgba(59,74,116,.1607843137);border-radius:48px}.AccountFAB_container__0-sf-.AccountFAB_loggedInState__utSJ7{background-color:#fff;border:1px solid #e3e6e9;padding:8px;-webkit-transition:width .5s;transition:width .5s}.AccountFAB_container__0-sf-.AccountFAB_loggedInState__utSJ7 .AccountFAB_firstNameInitial__k0zfa{display:flex;align-items:center;justify-content:center;background-color:#fcc751;border-radius:64px;height:24px;width:24px}.AccountFAB_container__0-sf-.AccountFAB_loggedInState__utSJ7 .AccountFAB_separator__2ajq1{width:0;transition:width .1s;transition-delay:.3s}.AccountFAB_container__0-sf-.AccountFAB_loggedInState__utSJ7 .AccountFAB_text__9vK\+u{max-width:0;overflow:hidden;white-space:nowrap;display:flex;align-items:center;-webkit-transition:color .5s 1.5s,max-width .5s;transition:color .5s 1.5s,max-width .5s}.AccountFAB_container__0-sf-.AccountFAB_loggedInState__utSJ7.AccountFAB_isHovered__7XkWZ .AccountFAB_separator__2ajq1{width:.5em;transition-delay:unset}.AccountFAB_container__0-sf-.AccountFAB_loggedInState__utSJ7.AccountFAB_isHovered__7XkWZ .AccountFAB_text__9vK\+u{max-width:300px}.AccountFAB_container__0-sf-.AccountFAB_loggedInState__utSJ7 .AccountFAB_arrow__TtFdA{margin-left:8px}.AccountFAB_accountMenuContainer__WS7LE{z-index:2147483648;position:absolute;bottom:42px;left:0}
+@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-display:block;font-weight:400;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@-moz-document url-prefix(){@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-weight:400;font-display:block;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}}.ReportPage_reportBody__0g-R6{padding-top:24px;padding-left:16px;padding-right:16px}.ReportPage_reportBody__0g-R6 .ReportPage_heading__KADZh{margin-bottom:16px}.ReportPage_reportBody__0g-R6 .ReportPage_description__aQYZ8{margin-bottom:24px}.ReportPage_reportBody__0g-R6 .ReportPage_textArea__VWxww{padding:12px;color:#575c67;font-family:&quot;museo-sans&quot;;font-style:normal;font-weight:300;font-size:16px;line-height:20px;width:-webkit-fill-available;height:130px;background:#fff;resize:none;margin-bottom:32px}.ReportPage_reportBody__0g-R6 .ReportPage_submitButton__6OguJ{margin-bottom:16px;width:-webkit-fill-available}.ReportPage_reportLoading__U60cw{display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:40px;height:-webkit-fill-available}.ReportPage_subtitle__E2ZVp{margin-top:16px}
+.SeasonalLights_seasonalLights__te3Tf{position:fixed;z-index:214748364;width:380px}
+@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-display:block;font-weight:400;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@-moz-document url-prefix(){@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-weight:400;font-display:block;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}}.PanelPopup_panelOverlay__rlmAi{position:absolute;background-color:rgba(0,0,0,.3);z-index:9999;border-radius:8px;height:100%;width:100%}.PanelPopup_panelOverlay__rlmAi .PanelPopup_popupContainer__AhXu4{position:relative;display:flex;flex-direction:column;width:327px;max-height:400px;background:#fff;border-radius:4px;margin:auto;top:20%;overflow-y:auto;overflow-x:hidden}.PanelPopup_panelOverlay__rlmAi .PanelPopup_popupContainer__AhXu4 .PanelPopup_closeHeader__nRgrc{display:flex;justify-content:flex-end;padding:12px;padding-bottom:0}.PanelPopup_panelOverlay__rlmAi .PanelPopup_popupContainer__AhXu4 .PanelPopup_closeHeader__nRgrc .PanelPopup_closeIcon__l\+h\+\+{cursor:pointer;padding:3px}.PanelPopup_panelOverlay__rlmAi .PanelPopup_popupContainer__AhXu4 .PanelPopup_closeHeader__nRgrc .PanelPopup_closeIcon__l\+h\+\+:hover{color:#005d68 !important;background-color:#f0f2f5 !important}.PanelPopup_panelOverlay__rlmAi .PanelPopup_popupContainer__AhXu4 .PanelPopup_body__0esyR{display:flex;flex-direction:column;align-items:center}
+@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-display:block;font-weight:400;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@-moz-document url-prefix(){@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-weight:400;font-display:block;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}}.LoginPopup_loginPopup__Ygfp-{display:flex;flex-direction:column;align-items:center}.LoginPopup_loginPopup__Ygfp- .LoginPopup_ibottaLogo__a374e{width:auto;height:40px}.LoginPopup_loginPopup__Ygfp- .LoginPopup_calloutText__4z4Da{margin-top:32px}.LoginPopup_loginPopup__Ygfp- .LoginPopup_row__ch9ho{width:233px;display:flex;flex-direction:row;align-items:center;padding:16px;margin-top:16px}.LoginPopup_loginPopup__Ygfp- .LoginPopup_row__ch9ho .LoginPopup_icon__\+GlIW{margin-right:16px !important;margin-left:0 !important}.LoginPopup_loginPopup__Ygfp- .LoginPopup_title__2RzNi{margin-bottom:2px}.LoginPopup_loginPopup__Ygfp- .LoginPopup_loginButton__66bO1{margin-top:32px;margin-bottom:16px;width:100%}.LoginPopup_poweredByIbotta__tLTBL{margin-top:8px}
+@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-display:block;font-weight:400;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@-moz-document url-prefix(){@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-weight:400;font-display:block;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}}.OfferDetailsPage_offersDetailsPageContent__koFOj{padding:16px;background-color:#f8f9fc}.OfferDetailsPage_offersDetailsPageContent__koFOj .OfferDetailsPage_offerInfoList__xZx98{margin-bottom:24px}.OfferDetailsPage_offersDetailsPageContent__koFOj .OfferDetailsPage_offerInfoList__xZx98 .OfferDetailsPage_offerInfoItem__h07zv{padding:16px;background-color:#fff;border:1px solid #e3e6e9;border-bottom:none}.OfferDetailsPage_offersDetailsPageContent__koFOj .OfferDetailsPage_offerInfoList__xZx98 .OfferDetailsPage_offerInfoItem__h07zv .OfferDetailsPage_button__8xZ6X{width:90%}.OfferDetailsPage_offersDetailsPageContent__koFOj .OfferDetailsPage_offerInfoList__xZx98 .OfferDetailsPage_offerInfoItem__h07zv .OfferDetailsPage_calloutText__3oLyx{margin-bottom:8px}.OfferDetailsPage_offersDetailsPageContent__koFOj .OfferDetailsPage_offerInfoList__xZx98 .OfferDetailsPage_offerInfoItem__h07zv .OfferDetailsPage_itemTitle__j1y1P{margin-bottom:8px}.OfferDetailsPage_offersDetailsPageContent__koFOj .OfferDetailsPage_offerInfoList__xZx98 .OfferDetailsPage_offerInfoItem__h07zv:first-child{border-radius:4px 4px 0px 0px}.OfferDetailsPage_offersDetailsPageContent__koFOj .OfferDetailsPage_offerInfoList__xZx98 .OfferDetailsPage_offerInfoItem__h07zv:last-child{border-radius:0px 0px 4px 4px;border-bottom:1px solid #e3e6e9}.OfferDetailsPage_offersDetailsPageContent__koFOj .OfferDetailsPage_categoryRow__MQnND{display:flex;flex-direction:row;margin-bottom:8px}.OfferDetailsPage_offersDetailsPageContent__koFOj .OfferDetailsPage_categoryRow__MQnND .OfferDetailsPage_percentBack__adCui{margin-right:12px;min-width:20px}.OfferDetailsPage_offersDetailsPageContent__koFOj .OfferDetailsPage_exclusions__QoZ\+r{font-size:12px;line-height:16px;color:#292f36}.OfferDetailsPage_buttonHolder__tmPcp{padding-top:16px;display:flex;justify-content:center}.OfferDetailsPage_activatedContainer__hsyNw{padding:24px;display:flex;flex-direction:row;border-bottom:1px solid #e3e6e9;background-color:#fff}.OfferDetailsPage_activatedContainer__hsyNw .OfferDetailsPage_retailerImage__EqGVW{width:64px;height:64px;border-radius:50%;object-fit:cover;margin-right:16px}.OfferDetailsPage_activatedContainer__hsyNw .OfferDetailsPage_infoContainer__YloDz{display:flex;flex-direction:column;justify-content:center}.OfferDetailsPage_activatedContainer__hsyNw .OfferDetailsPage_infoContainer__YloDz .OfferDetailsPage_offerValue__iRfNY{margin-bottom:8px}.OfferDetailsPage_offerDetailsUnavailable__5UB9B{padding-top:104px;display:flex;justify-content:center}
+@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-display:block;font-weight:400;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@-moz-document url-prefix(){@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-weight:400;font-display:block;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}}.SettingsPage_settingsPage__d\+ZNV{padding-top:24px;padding-left:16px;padding-right:16px;display:flex;flex-direction:column;align-items:center}.SettingsPage_settingsPage__d\+ZNV .SettingsPage_privacyLink__\+PtPc{margin-top:16px}.SettingsPage_snoozeContainer__H9GL4{padding:16px}.SettingsPage_snoozeContainer__H9GL4 .SettingsPage_title__LA-qG{margin-bottom:8px}.SettingsPage_snoozeContainer__H9GL4 .SettingsPage_row__31tc1{display:flex;flex-direction:row;margin-bottom:8px;align-items:center}.SettingsPage_snoozeContainer__H9GL4 .SettingsPage_row__31tc1 .SettingsPage_dot__kDMzV{border-radius:100px;border-color:#fff;border-width:1px;border-style:solid;padding:4px;width:1px;height:1px;margin-right:5px}.SettingsPage_snoozeContainer__H9GL4 .SettingsPage_row__31tc1 .SettingsPage_dot__kDMzV.SettingsPage_on__j5q3X{background:#df2a63}.SettingsPage_snoozeContainer__H9GL4 .SettingsPage_row__31tc1 .SettingsPage_dot__kDMzV.SettingsPage_off__tIFa3{background:#93999c}.SettingsPage_snoozeContainer__H9GL4 .SettingsPage_snoozeToggle__FKNOh{margin-top:8px}
+@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-display:block;font-weight:400;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@-moz-document url-prefix(){@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-weight:400;font-display:block;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}}.Nubbin_nubbinBase__6Rqgu{display:flex;flex-direction:row;position:fixed;transform:translateY(-50%);right:-25px;z-index:2147483647}.Nubbin_nubbinBase__6Rqgu .Nubbin_nubbinClose__efSuG{cursor:pointer;width:inherit;z-index:100;display:flex;padding:2px;align-items:center;justify-content:end;opacity:50%}.Nubbin_nubbinBase__6Rqgu.Nubbin_collapsed__spc59{transition:right,.15s;right:-25px}.Nubbin_nubbinBase__6Rqgu.Nubbin_expanded__U98iM{transition:right,.15s;right:0}.Nubbin_nubbinBase__6Rqgu .Nubbin_nubbinSlider__vT-n0{display:flex;justify-content:center;align-items:center;width:25px;background-color:#840853;cursor:ns-resize}.Nubbin_nubbinBase__6Rqgu .Nubbin_nubbinContent__\+hRub{background:#df2a63;border-radius:12px 0px 0px 12px;min-height:92px;width:60px;display:flex;flex-direction:column;align-items:center;padding-top:2px;cursor:pointer;padding-right:2px;padding-left:4px}.Nubbin_nubbinBase__6Rqgu .Nubbin_nubbinContent__\+hRub .Nubbin_nubbinBody__EVich{display:flex;flex-direction:column;align-items:center;flex-grow:.5;justify-content:center}.Nubbin_nubbinBase__6Rqgu .Nubbin_nubbinContent__\+hRub .Nubbin_nubbinBody__EVich .Nubbin_nubbinIconContainer__M7U2V{width:24px;height:24px;border-radius:40px;display:flex;align-items:center;justify-content:center;background-color:#fff;user-select:none}.Nubbin_nubbinBase__6Rqgu .Nubbin_nubbinContent__\+hRub .Nubbin_nubbinBody__EVich .Nubbin_nubbinText__2ZOYm{margin-top:4px;margin-bottom:8px;margin-left:4px;margin-right:4px;text-align:center;user-select:none}.Nubbin_draggableContainer__UmSg7{position:absolute;top:20px;right:20px}
+@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-display:block;font-weight:400;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@-moz-document url-prefix(){@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-weight:400;font-display:block;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}}.AffiliateBannerLip_lipContainer__wrVVI{width:100%;padding:16px;display:flex;flex-direction:column;justify-content:center}.AffiliateBannerLip_lipContainer__wrVVI .AffiliateBannerLip_categoryRow__y9rcz{display:flex;flex-direction:row}.AffiliateBannerLip_lipContainer__wrVVI .AffiliateBannerLip_categoryRow__y9rcz:not(:last-child){margin-bottom:4px}.AffiliateBannerLip_lipContainer__wrVVI .AffiliateBannerLip_categoryRow__y9rcz .AffiliateBannerLip_percentBack__jJ8b0{margin-right:4px}
+@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-display:block;font-weight:400;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@-moz-document url-prefix(){@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-weight:400;font-display:block;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}}.Banner_bannerContainer__a9\+GN{top:20px;right:20px;background-color:#fff;z-index:2147483647;cursor:pointer;padding:0;box-sizing:border-box;box-shadow:0px 10px 32px 0px rgba(59,74,116,.1607843137);border-radius:8px;border:0;overflow:hidden;position:fixed;width:411px;min-height:160px;animation:Banner_slide-in__Y2FSM .35s ease-in;transition:background 250ms ease-in-out,transform 150ms ease-in-out}.Banner_bannerContainer__a9\+GN .Banner_bannerHeader__c3fHI{padding:8px 12px 0;transition:background 250ms ease-in-out}.Banner_bannerContainer__a9\+GN .Banner_bannerBody__CU-df{display:flex;flex:3;flex-direction:column;justify-content:center;align-items:center;padding:0px}.Banner_bannerContainer__a9\+GN .Banner_bannerBody__CU-df .Banner_main__JBay6{display:flex;width:100%}.Banner_bannerContainer__a9\+GN .Banner_bannerBody__CU-df .Banner_main__JBay6 .Banner_mainText__eMVPy{display:flex;flex-direction:column;justify-content:center;align-items:center}.Banner_bannerContainer__a9\+GN .Banner_bannerBody__CU-df .Banner_main__JBay6 .Banner_mainText__eMVPy .Banner_valuePropText__eX5NJ{margin-top:4px;text-align:center}.Banner_bannerContainer__a9\+GN .Banner_bannerBody__CU-df .Banner_main__JBay6 .Banner_svgContainer__\+4lq0{flex:1;display:block;margin-right:12px;margin-left:12px}.Banner_bannerContainer__a9\+GN .Banner_bannerBody__CU-df .Banner_main__JBay6 .Banner_svgContainer__\+4lq0.Banner_left__6Plqf{text-align:right}.Banner_bannerContainer__a9\+GN .Banner_bannerBody__CU-df .Banner_main__JBay6 .Banner_svgContainer__\+4lq0.Banner_left__6Plqf .Banner_svgIcon__6aEvG:nth-child(2){padding-right:30px}.Banner_bannerContainer__a9\+GN .Banner_bannerBody__CU-df .Banner_main__JBay6 .Banner_svgContainer__\+4lq0.Banner_right__r4tq4{text-align:left}.Banner_bannerContainer__a9\+GN .Banner_bannerBody__CU-df .Banner_main__JBay6 .Banner_svgContainer__\+4lq0.Banner_right__r4tq4 .Banner_svgIcon__6aEvG:nth-child(2){padding-left:30px}.Banner_bannerContainer__a9\+GN .Banner_bannerBody__CU-df .Banner_main__JBay6 .Banner_svgContainer__\+4lq0 .Banner_svgIcon__6aEvG{margin-top:4px;margin-bottom:4px}.Banner_bannerContainer__a9\+GN .Banner_bannerBody__CU-df .Banner_actionableText__QaCoo{margin-top:8px;margin-bottom:8px}.Banner_bannerContainer__a9\+GN:hover{background-color:#df2a63}.Banner_bannerContainer__a9\+GN:hover .Banner_svgContainer__\+4lq0.Banner_left__6Plqf svg{animation:Banner_scale-up-center-left__AOcxC .4s cubic-bezier(0.39, 0.575, 0.565, 1) both}.Banner_bannerContainer__a9\+GN:hover .Banner_svgContainer__\+4lq0.Banner_right__r4tq4 svg{animation:Banner_scale-up-center-right__PBnuz .4s cubic-bezier(0.39, 0.575, 0.565, 1) both}.Banner_bannerContainer__a9\+GN .Banner_lipContent__e5o5J{padding:0 8px 12px;background-color:#fff !important;min-height:48px;display:flex;margin-left:-12px;margin-right:-12px;z-index:1;margin-bottom:-12px;animation:Banner_slide-bottom__AoWHr .5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both}@keyframes Banner_slide-in__Y2FSM{0%{transform:translateY(-200px)}30%{transform:translateY(40px)}100%{transform:translateY(20px)}}@keyframes Banner_scale-up-center-left__AOcxC{0%{transform:scale(1)}100%{transform:scale(1.5) translateX(-12px)}}@keyframes Banner_scale-up-center-right__PBnuz{0%{transform:scale(1)}100%{transform:scale(1.5) translateX(12px)}}@keyframes Banner_slide-left__3TGZe{0%{transform:translateX(0)}100%{transform:translateX(-12px)}}@keyframes Banner_slide-right__Ew7Lh{0%{transform:translateX(0)}100%{transform:translateX(12px)}}@keyframes Banner_slide-bottom__AoWHr{0%{transform:translateY(100px)}30%{transform:translateY(40px)}100%{transform:translateY(0px)}}.Banner_alwaysWhite__xoBhY{color:#fff !important}
+.PCBannerLip_lipContainer__Jh5Z-{width:100%;text-align:center;display:flex;justify-content:center;align-items:center}
+@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-display:block;font-weight:400;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@-moz-document url-prefix(){@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-weight:400;font-display:block;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}}.Pill_pill__sreSZ{width:fit-content;height:34px;border-radius:40px;cursor:pointer;display:flex;align-items:center;padding-right:12px;padding-left:12px;margin-left:10px;margin-top:8px;justify-content:center;position:absolute;z-index:127;background-color:#df2a63;transition:padding-right .4s}.Pill_pill__sreSZ .Pill_ibContainer__1j9Ii{display:flex;align-items:center;justify-content:center}.Pill_pill__sreSZ .Pill_ibContainer__1j9Ii .Pill_ibLogo__kCyT2{padding-right:8px;width:15px;height:15px}.Pill_pill__sreSZ .Pill_ibContainer__1j9Ii .Pill_spinner__OdAce{padding-right:8px}.Pill_pill__sreSZ:hover{background-color:#840853}.Pill_pill__sreSZ.Pill_isSelected__RAfFi{padding-right:6px}.Pill_pill__sreSZ .Pill_iconContainer__OF7fK{display:flex;max-width:0;margin-left:4px;overflow:hidden;white-space:nowrap;-webkit-transition:max-width .4s;transition:max-width .4s}.Pill_pill__sreSZ .Pill_iconContainer__OF7fK.Pill_isSelected__RAfFi{max-width:30px}.Pill_pill__sreSZ .Pill_text__knoOF{margin-top:2px;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}.Pill_hasBadge__3X4Xb{margin-top:32px}
+@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-display:block;font-weight:400;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@-moz-document url-prefix(){@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-weight:400;font-display:block;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}}.Chip_chip__5OUc8{width:fit-content;height:24px;cursor:pointer;display:flex;position:absolute;z-index:127;padding:0 6px 0 0px;border-radius:2px;background-color:#fbdddf;top:-24px}.Chip_chip__5OUc8 .Chip_ibContainer__up2xs{display:flex;align-items:center;justify-content:center;border-radius:2px 0 0 2px;background-color:#df2a63;width:24px;height:24px;margin-right:6px}.Chip_chip__5OUc8 .Chip_ibContainer__up2xs .Chip_ibLogo__sGV4F{width:15px;height:15px;scale:.8}.Chip_chip__5OUc8 .Chip_text__zs9eS{margin-top:2px;margin-left:2px}.Chip_chip__5OUc8:hover .Chip_tooltip__7xTtM{transition-delay:500ms;visibility:visible}.Chip_chip__5OUc8 .Chip_tooltip__7xTtM{width:231px;position:absolute;top:24px;left:0px;padding:16px;background-color:#fff;box-shadow:0px 10px 32px 0px rgba(59,74,116,.1607843137);border-radius:4px;cursor:auto;visibility:hidden}
+@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-display:block;font-weight:400;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@-moz-document url-prefix(){@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-weight:400;font-display:block;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}}.GoogleSERPRunner_chipTooltipCategoryRow__V2O4D{width:100%;margin-bottom:4px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis}
+@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-display:block;font-weight:400;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;chrome-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@-moz-document url-prefix(){@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-300.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:300}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-500.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:500}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-700.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:700}@font-face{font-family:&quot;museo-sans&quot;;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/museo-900.woff2&quot;) format(&quot;woff2&quot;);font-display:auto;font-style:normal;font-weight:900}@font-face{font-family:&quot;Material Icons Round&quot;;font-style:normal;font-weight:400;font-display:block;src:url(&quot;moz-extension://mfaedmjlefifhnhpgipjjiiekchaimpk/fonts/material-icons.woff2&quot;) format(&quot;woff2&quot;)}}.DevRibbon_ribbon__6mCQW{position:fixed;bottom:0;left:0;right:0;background-color:#df2a63;color:#fff;padding:8px;font-size:20px;text-align:center;border-top-left-radius:20px;border-top-right-radius:20px;z-index:999999999999;cursor:pointer;font-family:&quot;museo-sans&quot;}.DevRibbon_ribbon__6mCQW .DevRibbon_closeButton__w7gAx{position:absolute;top:0;right:0;padding:8px;padding-right:20px;font-size:20px;cursor:pointer}
+&lt;/style&gt;"></div></body></html>
+
+---
+
+Obsidian Web Clipper 2026-08-14T11:08:14-06:00
