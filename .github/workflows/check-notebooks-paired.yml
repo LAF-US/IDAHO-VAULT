@@ -64,10 +64,15 @@ jobs:
           # Sync ONLY notebooks that declare a pairing (explicit opt-in). A sync error on a
           # paired notebook fails the job — no more silent '|| true' that could pass green while
           # a paired notebook failed to sync. Unpaired or unparseable (corrupt) notebooks are
-          # skipped, never synced. Then any drift against a committed twin fails the job.
-          python .github/scripts/jupytext_sync_paired.py
-          if ! git diff --quiet; then
+          # skipped, never synced. The helper's stdout is its strict list of declared, existing
+          # twin paths; scope the drift test to that list so unrelated checkout state (including
+          # an unhydrated LFS archive) cannot masquerade as a notebook-pair failure.
+          twins_file="$(mktemp)"
+          python .github/scripts/jupytext_sync_paired.py > "$twins_file"
+          mapfile -t paired_twins < "$twins_file"
+          rm -f -- "$twins_file"
+          if ((${#paired_twins[@]})) && ! git diff --quiet -- "${paired_twins[@]}"; then
             echo "::error::A notebook twin is out of sync. Run 'jupytext --sync <notebook>' and commit the twin."
-            git --no-pager diff --stat
+            git --no-pager diff --stat -- "${paired_twins[@]}"
             exit 1
           fi
