@@ -14,6 +14,7 @@ related:
   - REPORT
   - RISE-v1.0-2026-04-27
 ---
+[[R]][[I]][[S]][[E]]
 
 # PROTOCOL — RISE
 

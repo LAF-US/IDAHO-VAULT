@@ -12,6 +12,7 @@ related:
   - ARISE
   - CONVENE-v1.0-2026-04-27
 ---
+[[C]][[O]][[N]][[V]][[E]][[N]][[E]]
 
 # PROTOCOL — CONVENE
 
