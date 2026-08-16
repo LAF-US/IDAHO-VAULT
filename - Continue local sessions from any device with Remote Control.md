@@ -13,6 +13,11 @@ tags:
   - remote-control
   - source-capture
 ---
+> **SOURCE ATTRIBUTION**  
+> This content is a web-clipped excerpt from Anthropic's official Claude Code documentation: "Continue local sessions from any device with Remote Control" (https://code.claude.com/docs/en/remote-control).  
+> Clipped for reference and internal documentation purposes under fair use for educational/operational use. Original documentation is maintained by Anthropic.
+
+Remote Control is in research preview and available on all plans. On Team and Enterprise, it is off by default until an admin enables the Remote Control toggle in [Claude Code admin settings](https://claude.ai/admin-settings/claude-code).
 
 # Continue local sessions from any device with Remote Control
 

@@ -10,7 +10,18 @@ date created: Wednesday, June 3rd 2026, 2:27:15 pm
 date modified: Wednesday, June 3rd 2026, 2:28:19 pm
 ---
 
+<<<<<<< HEAD
 **Tired of generic AI code suggestions?** With just a few Markdown files, you can teach GitHub Copilot to follow your team’s coding standards, architectural preferences, and even automate repetitive tasks. In this guide, you’ll learn how to transform Copilot into a truly personalized coding partner — right inside VS Code.
+=======
+> **SOURCE ATTRIBUTION**  
+> This content is a web-clipped excerpt from Frank Laule's Medium article "Mastering GitHub Copilot customization with Copilot-instructions" (https://medium.com/@frank.laule/mastering-github-copilot-customization-with-copilot-instructions-83e8cc1ca10a).  
+> Clipped for reference and internal documentation purposes. Original work maintains its own license terms; refer to the source for licensing details.
+
+**Tired of generic AI code suggestions?** With just a few Markdown files, you can teach GitHub
+Copilot to follow your team’s coding standards, architectural preferences, and even automate
+repetitive tasks. In this guide, you’ll learn how to transform Copilot into a truly personalized
+coding partner — right inside VS Code.
+>>>>>>> 876899f2f (Add source attribution notices to web-clipped content)
 
 ## Global Project-Level Instructions
 
