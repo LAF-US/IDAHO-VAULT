@@ -53,7 +53,14 @@ babel.config.js
 .env.test
 .env.backup
 .env.*
+.env_*
+env.production
+env.staging
+env.development
+*.env
 .envrc
+.envrc.local
+.envrc.*
 
 # Git
 .git/
@@ -74,9 +81,13 @@ azure-pipelines.yml
 Thumbs.db
 
 # Sensitive files and certificates
+**/.factory/
+.factory/
 **/.factory/certs/
 **/.op/
+.op/
 **/.secrets/
+.secrets/
 **/certs/
 **/certificates/
 **/ssl/
@@ -92,6 +103,13 @@ Thumbs.db
 **/*.p8
 **/*.pkcs12
 **/*.jks
+**/*.gpg
+**/*.asc
+**/*.pwd
+**/*.pass
+**/*.secret
+**/*.age
+**/*.enc
 **/id_rsa
 **/id_rsa.*
 **/id_ed25519
