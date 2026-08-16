@@ -78,9 +78,20 @@ IMAGE_DIGEST_PATTERN = re.compile(r"@sha256:[0-9a-f]{64}$")
 DOCKER_ACTION_PATTERN = re.compile(
     r"""["']?using["']?\s*:\s*["']?docker["']?""", re.IGNORECASE
 )
-# `runs:` is a TOP-LEVEL key in action metadata, so this anchors at column 0:
-# a nested `runs:` under some other key must not be mistaken for the real one.
-RUNS_PATTERN = re.compile(r"""^["']?runs["']?\s*:\s*(.*?)\s*$""")
+# `runs:` is a TOP-LEVEL key in action metadata — but "top-level" is not the
+# same as "column 0". YAML lets a whole block mapping carry a uniform indent,
+# so `  runs: {using: docker, image: "docker://alpine:latest"}` under `  name:`
+# is a valid action file whose container this guard reported as OK: anchored at
+# column 0, the pattern never matched, and the flow form put the image where
+# IMAGE_PATTERN could not see it either. Indentation is not a security
+# boundary. So match at any indent and scope by comparing against the
+# document's own root indent, which is what actually distinguishes the real
+# `runs:` from one nested under another key.
+RUNS_PATTERN = re.compile(r"""^(\s*)["']?runs["']?\s*:\s*(.*?)\s*$""")
+# A `runs` key in FLOW position — `{name: x, runs: {using: docker, …}}` as a
+# whole-document mapping. Same fail-closed treatment as FLOW_USES_PATTERN, and
+# for the same reason: no line-oriented pattern can read the image out of it.
+FLOW_RUNS_PATTERN = re.compile(r"""[{,]\s*["']?runs["']?\s*:""")
 # `FROM <base> [AS <stage>]`, case-insensitive, --platform= flags tolerated.
 FROM_PATTERN = re.compile(
     r"^\s*FROM\s+(?:--\S+\s+)*(\S+)(?:\s+AS\s+(\S+))?\s*$", re.IGNORECASE
@@ -205,40 +216,84 @@ def _unreadable_docker_metadata(path: Path, lines: list[str]) -> list[tuple[int,
     So: if the file declares `using: docker` and no `image:` line was matched,
     that is a finding. A `using: composite`/`node20` action names no image and
     is not implicated.
+
+    Every candidate `runs:` is judged, not just the first. Returning on the
+    first match assumed there is exactly one, which holds for the real
+    top-level key and not for the fallback below, where a composite `runs:`
+    seen first would have excused a docker one seen second.
     """
     if path.name not in ("action.yml", "action.yaml"):
         # `runs.using` is action metadata. A workflow has no such key, and
         # scanning for one there would only invent findings.
         return []
+    root = _root_indent(lines)
+    findings: list[tuple[int, str]] = []
     for lineno, line in enumerate(lines, start=1):
-        if not RUNS_PATTERN.match(line):
+        if FLOW_RUNS_PATTERN.search(_outside_strings(line)):
+            findings.append((lineno, "runs: in a flow mapping (image unverified)"))
             continue
-        # The block is `runs:` plus the indented lines under it. Scoping
-        # matters: asking whether the FILE contains any `image:` line let a
-        # decoy elsewhere vouch for an image the guard never read. An action
-        # declaring a digest-pinned image under `inputs`, and its real
-        # container as a flow-mapping `runs` on the next line, reported OK
-        # with the mutable container unexamined — the decoy satisfied the
-        # test. Only an image named inside `runs` can be the one that runs.
-        block = [line]
-        for follow in lines[lineno:]:
-            if follow.strip() and not follow[:1].isspace():
-                break
-            block.append(follow)
+        match = RUNS_PATTERN.match(line)
+        # `root is None` means the document is not a plain block mapping and
+        # this reader cannot say which `runs:` is the real one — so consider
+        # every one of them rather than none.
+        if not match or (root is not None and match.group(1) != root):
+            continue
+        block = _block_at(lines, lineno, match.group(1))
         code = [b for b in block if not b.lstrip().startswith("#")]
         if not any(DOCKER_ACTION_PATTERN.search(b) for b in code):
             # composite / node20: names no image, not implicated.
-            return []
+            continue
         if any(IMAGE_PATTERN.match(b) for b in code):
-            return []
-        return [
+            continue
+        findings.append(
             (
                 lineno,
                 "runs.using: docker with no `image:` line this guard can read "
                 "(flow mapping or other unsupported YAML form; image unverified)",
             )
-        ]
-    return []
+        )
+    return findings
+
+
+def _root_indent(lines: list[str]) -> str | None:
+    """The indentation of the document's top-level keys, or None if not plain.
+
+    YAML requires every key of a mapping to sit at the same indent, so the
+    first content line of a block-mapping document fixes it for the whole root
+    level — which is what makes `  runs:` a top-level key in one file and a
+    nested one in another. A document that opens with a flow mapping, an
+    anchor, a directive or a sequence is not a plain block mapping; returning
+    None there means "cannot scope", and the caller widens rather than skips.
+    """
+    for line in lines:
+        stripped = line.strip()
+        if not stripped or stripped.startswith("#") or stripped in ("---", "..."):
+            continue
+        if stripped[0] in "{[%-&*!|>":
+            return None
+        return line[: len(line) - len(line.lstrip())]
+    return None
+
+
+def _block_at(lines: list[str], lineno: int, indent: str) -> list[str]:
+    """A key's line plus everything nested under it.
+
+    Scoping matters: asking whether the FILE contains any `image:` line let a
+    decoy elsewhere vouch for an image the guard never read. An action
+    declaring a digest-pinned image under `inputs`, and its real container as a
+    flow-mapping `runs` on the next line, reported OK with the mutable
+    container unexamined — the decoy satisfied the test. Only an image named
+    inside `runs` can be the one that runs.
+    """
+    block = [lines[lineno - 1]]
+    for follow in lines[lineno:]:
+        if not follow.strip():
+            block.append(follow)
+            continue
+        if len(follow) - len(follow.lstrip()) <= len(indent):
+            break
+        block.append(follow)
+    return block
 
 
 def _outside_strings(line: str) -> str:
