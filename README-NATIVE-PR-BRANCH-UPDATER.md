@@ -9,7 +9,7 @@ These two files use GitHub’s native **Update a pull request branch** endpoint.
 | File | Purpose |
 |---|---|
 | `update-open-pr-branches-from-main.sh` | Local `gh api` loop. Default: read-only dry run. |
-| `.github/workflows/update-open-pr-branches-from-main.yml` | Manually dispatched GitHub Actions wrapper. Default: read-only dry run. |
+| `.github/workflows/update-open-pr-branches-from-main.yml` | Manually dispatched, read-only GitHub Actions audit. |
 
 ## Bash Usage
 
@@ -33,15 +33,16 @@ chmod +x ./update-open-pr-branches-from-main.sh
 
 The script sends the observed `expected_head_sha` with every update request. If a branch changes after enumeration, GitHub returns `422` instead of updating a head that the run did not inspect.[1]
 
-## GitHub Actions Usage
+## GitHub Actions Audit
 
 1. Keep the Bash script at repository root as `update-open-pr-branches-from-main.sh`.
 2. Add the workflow to `.github/workflows/update-open-pr-branches-from-main.yml`.
-3. Open **Actions → Update open PR branches from main → Run workflow**.
-4. Start with `apply = false`. Review the uploaded summary artifact and the run summary.
-5. Re-run with `apply = true` only after setting any current human/agent holds in the two denylist inputs.
+3. Open **Actions → Audit open PR branches against main → Run workflow**.
+4. Review the uploaded summary artifact and the run summary.
 
-The workflow is intentionally **manual-dispatch only**. That keeps a useful bulk maintenance operation from racing a human or agent working on a live branch. It has `contents: write` and `pull-requests: write` permissions because GitHub’s endpoint needs write access to the PR head.[1]
+The workflow is intentionally **manual-dispatch only and read-only**. It uses no user-controlled workflow inputs and requests only `contents: read` and `pull-requests: read`. That makes it a visible, repeatable audit without granting a workflow run authority to mutate active PR heads.
+
+> To perform a native branch update, use the explicit local `./update-open-pr-branches-from-main.sh --apply` command after reviewing its dry-run output and current hold list. This keeps the write decision outside untrusted workflow input handling while retaining GitHub's normal base-into-head update semantics.[1]
 
 ## Operational Guarantees
 

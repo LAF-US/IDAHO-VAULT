@@ -157,11 +157,11 @@ while IFS=$'\t' read -r number base_ref draft head_sha head_ref head_repo head_l
   # head SHA is an optimistic lock; if the source branch changes meanwhile the
   # endpoint returns 422 rather than touching a newer head unexpectedly.
   response_file="$(mktemp)"
-  http_status="$(gh api --method PUT \
+  gh api --method PUT \
     -H 'Accept: application/vnd.github+json' \
     "repos/${REPO}/pulls/${number}/update-branch" \
     -f "expected_head_sha=${head_sha}" \
-    --include >"$response_file" 2>&1; true)"
+    --include >"$response_file" 2>&1 || true
 
   if grep -qE '^HTTP/[0-9.]+ 202' "$response_file"; then
     printf '#%-6s %-48s %-25s %s\n' "$number" "$head_ref" "$behind_by" 'UPDATE ACCEPTED'
