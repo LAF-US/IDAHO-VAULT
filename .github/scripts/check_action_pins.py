@@ -48,7 +48,15 @@ ACTION_GLOBS = (".github/actions/**/action.yml", ".github/actions/**/action.yaml
 # `uses: ${{ matrix.action }}` — failed to match the old pattern at all, and an
 # unmatched line was treated as safe. Anything this guard cannot resolve to a
 # literal must be reported, not skipped.
-USES_PATTERN = re.compile(r"^\s*(?:-\s*)?uses:\s*(.+?)\s*$")
+# The key may be quoted, exactly as for `image:` below.
+USES_PATTERN = re.compile(r"""^\s*(?:-\s*)?["']?uses["']?\s*:\s*(.+?)\s*$""")
+# A `uses` key in FLOW position — `- { uses: actions/checkout@… }`, or inside
+# `steps: [{uses: …}]`. Valid YAML, valid Actions, and invisible to the
+# line-oriented pattern above, which would have skipped it as safe. Anchored on
+# `{` or `,` so it cannot fire on the word appearing inside a quoted scalar
+# (`- name: "Check every workflow/action uses: a full commit SHA"` is a real
+# line in this repo and is not a `uses` key).
+FLOW_USES_PATTERN = re.compile(r"""[{,]\s*["']?uses["']?\s*:""")
 EXPRESSION_PATTERN = re.compile(r"\$\{\{")
 FULL_SHA_PATTERN = re.compile(r"^[0-9a-f]{40}$")
 
@@ -89,6 +97,13 @@ def unpinned_refs(path: Path) -> list[tuple[int, str]]:
     for lineno, line in enumerate(lines, start=1):
         match = USES_PATTERN.match(line)
         if not match:
+            # Fail closed on the flow form rather than skip it, the same way
+            # `runs: {using: docker, image: …}` is handled below: a `uses` key
+            # this reader cannot resolve is unverified, not absent.
+            if not line.lstrip().startswith("#") and FLOW_USES_PATTERN.search(line):
+                findings.append(
+                    (lineno, "uses: in a flow mapping (unsupported YAML form; ref unverified)")
+                )
             continue
         ref = _scalar(match.group(1))
         if EXPRESSION_PATTERN.search(ref):

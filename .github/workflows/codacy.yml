@@ -225,6 +225,14 @@ jobs:
               """
               value = container.get(key)
               if value is None:
+                  # An ABSENT key is fine and must stay absent -- adding
+                  # `artifacts: []` to a document that never had it is not a
+                  # repair. A key present with an explicit null is the `rules:
+                  # null` failure exactly: iterating treats it as empty, and
+                  # the null ships to an uploader that rejects the document.
+                  if key in container:
+                      repairs.append(f"{label} was None, coerced to []")
+                      container[key] = []
                   return []
               if not isinstance(value, list):
                   repairs.append(f"{label} was {type(value).__name__}, treated as empty")
