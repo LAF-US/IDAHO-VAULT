@@ -91,9 +91,26 @@ def scan_targets() -> list[Path]:
     return paths
 
 
-def unpinned_refs(path: Path) -> list[tuple[int, str]]:
+def _read(path: Path) -> tuple[str | None, str]:
+    """The file's text, or (None, reason) when it cannot be decoded or read.
+
+    `read_text(encoding="utf-8")` raises UnicodeDecodeError on bytes that are
+    not UTF-8, and this guard runs against PR-head content, so a planted
+    non-UTF-8 action.yml crashed it with a traceback instead of producing a
+    finding. A guard that dies is not a guard that failed closed: the job
+    still goes red, but it names a Python error rather than the file.
+    """
+    try:
+        return path.read_text(encoding="utf-8"), ""
+    except UnicodeDecodeError:
+        return None, "not valid UTF-8; cannot verify pins"
+    except OSError as exc:
+        return None, f"not readable ({exc.strerror or exc}); cannot verify pins"
+
+
+def unpinned_refs(path: Path, text: str) -> list[tuple[int, str]]:
     findings = []
-    lines = path.read_text(encoding="utf-8").splitlines()
+    lines = text.splitlines()
     for lineno, line in enumerate(lines, start=1):
         match = USES_PATTERN.match(line)
         if not match:
@@ -288,7 +305,7 @@ def _readable(candidate: Path) -> tuple[Path | None, str]:
     return resolved, ""
 
 
-def local_action_files(path: Path) -> list[Path]:
+def local_action_files(text: str) -> list[Path]:
     """Action metadata reachable through `uses: ./…` from this file.
 
     `./` refs are skipped as pin targets — a path in this repo has no SHA to
@@ -297,7 +314,7 @@ def local_action_files(path: Path) -> list[Path]:
     Note `uses: ./x` is resolved from the REPOSITORY ROOT, not the caller.
     """
     found: list[Path] = []
-    for line in path.read_text(encoding="utf-8").splitlines():
+    for line in text.splitlines():
         match = USES_PATTERN.match(line)
         if not match:
             continue
@@ -336,12 +353,11 @@ def _unpinned_from_lines(
     dockerfile, reason = _readable(action_path.parent / image)
     if dockerfile is None:
         return [(image_lineno, f"{image} ({reason})")]
-    try:
-        text = dockerfile.read_text(encoding="utf-8")
-    except OSError:
-        # Fail closed: an action pointing at a Dockerfile we cannot read is
-        # not something to wave through.
-        return [(image_lineno, f"{image} (Dockerfile not readable; cannot verify FROM)")]
+    # Fail closed: an action pointing at a Dockerfile we cannot read — or
+    # cannot decode — is not something to wave through, and must not raise.
+    text, reason = _read(dockerfile)
+    if text is None:
+        return [(image_lineno, f"{image} (Dockerfile {reason})")]
 
     findings: list[tuple[int, str]] = []
     stages: set[str] = set()
@@ -394,8 +410,14 @@ def main() -> int:
         # check and the read describing two different objects, which is how a
         # later edit quietly drifts one away from the other. `rel` still comes
         # from `path`, so findings name the file as the repository sees it.
-        queue.extend(local_action_files(readable))
-        for lineno, ref in unpinned_refs(readable):
+        # One read, one place decode failures are handled, and the readers
+        # cannot drift back to opening the file themselves.
+        text, reason = _read(readable)
+        if text is None:
+            findings.append(f"{rel}: {reason}")
+            continue
+        queue.extend(local_action_files(text))
+        for lineno, ref in unpinned_refs(readable, text):
             findings.append(f"{rel}:{lineno}: {ref}")
     findings.sort()
 
