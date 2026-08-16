@@ -25,7 +25,6 @@ test_*.py
 *_test.py
 backup-compare-temp/
 src/idaho_vault/mock_llm.py
-src-idaho_vault-mock_llm.py
 
 # Documentation
 docs/
@@ -41,15 +40,16 @@ jest.config.js
 babel.config.js
 
 # Environment
-.env
-.env.local
-.env.*.local
-.env.production
-.env.staging
-.env.development
-.env.test
-.env.backup
-.env.*
+**/.env
+**/.env.local
+**/.env.*.local
+**/.env.production
+**/.env.staging
+**/.env.development
+**/.env.test
+**/.env.backup
+**/.env.*
+**/.envrc
 
 # Git
 .git/
