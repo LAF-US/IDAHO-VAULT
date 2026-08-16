@@ -113,7 +113,11 @@ module.exports = {
     },
     {
       // Mirrors the flat config's ESM block; see eslint.config.js.
-      files: [".codex/skills/codex-primary-runtime/slides/templates/*.js"],
+      // Recursive, matching the flat config's glob exactly. The two select the
+      // same file today -- templates/ has no subdirectories -- so this is
+      // correct-by-construction rather than a live fix: it keeps the pair from
+      // silently diverging the first time a nested template lands.
+      files: [".codex/skills/codex-primary-runtime/slides/templates/**/*.js"],
       parserOptions: { sourceType: "module" },
       globals: {
         __DECK_ID_JSON__: "readonly",

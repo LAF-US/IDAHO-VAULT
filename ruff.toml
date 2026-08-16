@@ -2,7 +2,15 @@
 # pyproject.toml. If both ever exist, THIS FILE WINS and the table is ignored
 # silently; pick one.
 
-target-version = "py310"
+# Read from the manifest, not remembered: pyproject.toml declares
+# `requires-python = ">=3.13"`, .python-version pins 3.13.5, and the root
+# Dockerfile is `FROM python:3.13-slim`.
+#
+# This said py310 until 2026-08-16, the same stale-floor defect .pylintrc
+# carried -- correct when written, overtaken by f417abf3b on 08-13. Checked
+# that the bump does not move the baseline rather than assuming it: ruff 0.15.8
+# over this tree reports 60 findings under py310 and 60 under py313.
+target-version = "py313"
 
 [lint]
 # Ruff's own default set, written out so it can be read without knowing the

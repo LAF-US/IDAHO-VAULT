@@ -55,11 +55,17 @@ rules:
     # Enumerated per loader rather than matched broadly, because a blanket
     # `yaml.load_all(...)` would also flag SafeLoader, which is the correct call.
     #
-    # WHICH LOADERS BELONG HERE WAS MEASURED, not assumed. Against PyYAML 6.0.1
-    # (pyproject pins `pyyaml>=6.0.3`, floor only -- there is no upper cap in
-    # the manifest, so this conclusion is asserted for 6.x and would need
-    # re-measuring against a 7.x that does not exist yet), loading
-    # `!!python/object/apply:os.system ["echo PWNED"]`:
+    # WHICH LOADERS BELONG HERE WAS MEASURED, not assumed. Against PyYAML
+    # 6.0.3, loading `!!python/object/apply:os.system ["echo PWNED"]`:
+    #
+    # The version matters and was got wrong once. This table was first taken on
+    # 6.0.1 -- which pyproject's `pyyaml>=6.0.3` floor EXCLUDES, so the evidence
+    # did not cover any version the project actually permits. Re-run on 6.0.3 in
+    # a clean venv: every row below is unchanged, and `CUnsafeLoader is CLoader`
+    # is still False. The rule was right; the citation was not.
+    #
+    # The floor is the only bound in the manifest -- no upper cap -- so this
+    # holds for 6.x and a 7.x would need re-measuring. 7.x does not exist yet.
     #
     #   Loader        -> constructed; the command ran     UNSAFE
     #   UnsafeLoader  -> constructed; the command ran     UNSAFE
