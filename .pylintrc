@@ -41,8 +41,28 @@
 
 [MAIN]
 # Without this pylint targets whatever interpreter runs it (3.11 here), so
-# diagnostics move when the runner does. The project floor is 3.10.
-py-version=3.10
+# diagnostics move when the runner does.
+#
+# The floor is READ FROM the manifest, not remembered: pyproject.toml declares
+# `requires-python = ">=3.13"`, .python-version pins 3.13.5, and the root
+# Dockerfile is `FROM python:3.13-slim`. All three agree on 3.13.
+#
+# This said 3.10 until 2026-08-16, and that was correct when written on
+# 08-11 -- requires-python was `>=3.10,<3.14` then. f417abf3b moved it to
+# `>=3.13` on 08-13 and this file did not follow. Recorded rather than quietly
+# corrected, because a stale number that once measured true is the failure this
+# file's own headers keep warning about.
+#
+# The bump does not move the baseline, and that was checked rather than
+# assumed. pylint 4.0.7, same config, only py-version differing:
+#
+#   .github/scripts/        3.10 -> 508    3.13 -> 508
+#   200 tracked *.py        3.10 -> 1568   3.13 -> 1568
+#
+# Identical on both scopes, because nothing in this codebase rides a
+# 3.11/3.12/3.13 version gate. Had the counts differed, the baseline in #950
+# would have needed re-taking, not just this line.
+py-version=3.13
 # Regex against the full path, unanchored at the front so a checkout at any
 # absolute location still matches.
 #

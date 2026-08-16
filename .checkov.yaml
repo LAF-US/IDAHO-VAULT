@@ -5,7 +5,7 @@
 # the only one — written without looking:
 #
 #   .github/workflows/   CKV_GHA_* checks
-#   Dockerfile           root, FROM python:3.12-slim, built by
+#   Dockerfile           root, FROM python:3.13-slim, built by
 #                        .github/workflows/cloud-run-deploy.yml
 #
 # The workflow surface is already guarded twice, by

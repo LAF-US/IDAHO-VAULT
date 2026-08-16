@@ -56,7 +56,9 @@ rules:
     # `yaml.load_all(...)` would also flag SafeLoader, which is the correct call.
     #
     # WHICH LOADERS BELONG HERE WAS MEASURED, not assumed. Against PyYAML 6.0.1
-    # (the range pyproject pins is >=6.0,<7), loading
+    # (pyproject pins `pyyaml>=6.0.3`, floor only -- there is no upper cap in
+    # the manifest, so this conclusion is asserted for 6.x and would need
+    # re-measuring against a 7.x that does not exist yet), loading
     # `!!python/object/apply:os.system ["echo PWNED"]`:
     #
     #   Loader        -> constructed; the command ran     UNSAFE

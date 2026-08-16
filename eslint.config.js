@@ -30,16 +30,22 @@
 // plugins get browser globals on top of node: they run in Electron's renderer
 // and legitimately reach both. languageOptions merge rather than replace.
 //
-// ONE file still fails to parse, and it is a real defect, left visible.
-// (This used to say two. The second was build_pro_deck_template.js, which the
-// slides-templates block below now parses as ESM — that was never a defect in
-// the file, only in this config, and the header outlived the fix.)
-//   - pro_deck_quality_check.js:112 has a redaction marker spliced into an
-//     object key, which reads as `cha` + marker + `count` where its siblings
-//     are slide_count and media_count. This description avoids pasting the
-//     marker glued between letters, because that shape IS the corruption
-//     signature and check_redaction_damage.py fails any added line containing
-//     it — do not "fix" the wording back.
+// NO file fails to parse. Measured at head: `eslint .` reports 0 parse errors
+// across the tree.
+//
+// This block used to say ONE did — pro_deck_quality_check.js:112, where a
+// redaction marker had been spliced into an object key. That was true when
+// written; ae357e178 repaired the damage, and line 112 is now a clean
+// `chart_count: 0,` beside its slide_count and media_count siblings. The claim
+// outlived its defect, which is the second time this header has done that (the
+// first was build_pro_deck_template.js, fixed by the slides-templates block
+// below and left asserted afterwards). Stated plainly so the next reader does
+// not inherit a baseline that stopped being true.
+//
+// The slides-templates block below is NOT inert, despite a review claiming the
+// directory does not exist: `git ls-files` tracks
+// .codex/skills/codex-primary-runtime/slides/templates/build_pro_deck_template.js,
+// which is exactly what that block parses as ESM.
 
 const js = require("@eslint/js");
 const globals = require("globals");

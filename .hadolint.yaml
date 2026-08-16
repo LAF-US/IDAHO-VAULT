@@ -5,7 +5,7 @@
 #
 # REACH IS NOT ZERO. An earlier version of this file said "no Dockerfile here
 # yet" — written without looking. There is a root `Dockerfile`
-# (`FROM python:3.12-slim`), and `.github/workflows/cloud-run-deploy.yml`
+# (`FROM python:3.13-slim`), and `.github/workflows/cloud-run-deploy.yml`
 # builds it (`docker build`, with `Dockerfile` in the workflow's path filter).
 # So this toggle applies to a live deployment artifact, not a hypothetical one.
 #
@@ -15,6 +15,12 @@
 #                                host system
 #
 # One finding, informational. Nothing at warning or error level.
+#
+# The base image was `python:3.12-slim` when that was measured on 2026-08-11;
+# bd81dba02 moved it to 3.13-slim on 08-13 and this header did not follow until
+# 08-16. The finding survives the bump unchanged -- DL3066 fires on the
+# non-numeric user id in `USER appuser`, still Dockerfile:24, which does not
+# depend on the base image at all. Re-checked rather than assumed.
 #
 # An earlier version of this note said hadolint "could not be obtained in the
 # environment this was written in." It could: it is a single static binary
