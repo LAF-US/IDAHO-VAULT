@@ -126,3 +126,8 @@
 /.shellcheckrc text eol=lf
 /.stylelintrc text eol=lf
 /ruleset.xml text eol=lf
+
+# iCalendar. RFC 5545 § 3.1 mandates CRLF between content lines, so .ics is the
+# one text format here that must NOT be normalized to LF. `-text` leaves the
+# bytes alone in both directions, on every platform.
+*.[Ii][Cc][Ss] -text
