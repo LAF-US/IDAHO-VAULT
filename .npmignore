@@ -26,7 +26,8 @@ test_*.py
 backup-compare-temp/
 src/idaho_vault/mock_llm.py
 \!/tests/
-\!/tests/*
+\!/tests/tests.md
+\!/tests/test_app.py
 
 # Documentation
 docs/
