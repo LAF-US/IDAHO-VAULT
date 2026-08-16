@@ -8,7 +8,6 @@ created: 2026-06-03
 description: >
   GitHub Copilot coding agent, available in public preview, now has access to a web
   browser out of the box, powered by the Playwright MCP server. This feature is in public…
-created: 2026-06-03
 updated: 2026-06-03
 ---
 

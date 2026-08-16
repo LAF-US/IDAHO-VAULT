@@ -5,7 +5,6 @@ author:
 published:
 created: 2026-06-03
 description: "Instructions, Prompts, Agents, and Skills — a comprehensive guide to tailoring GitHub Copilot to your team's workflows"
-created: 2026-06-03
 updated: 2026-06-03
 ---
 
