@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "e90e8b46c56b38b7",
+        "id": "39ae8c75a1be6345",
         "type": "tabs",
         "children": [
           {
-            "id": "638951c68cfa5cfd",
+            "id": "ae5502f7e04191c6",
             "type": "leaf",
             "pinned": true,
             "state": {
@@ -25,7 +25,7 @@
             }
           },
           {
-            "id": "a45577e26b0842f4",
+            "id": "1c06d45978fc81d9",
             "type": "leaf",
             "pinned": true,
             "state": {
@@ -42,7 +42,7 @@
             }
           },
           {
-            "id": "e8c00f4d0654083e",
+            "id": "20a5526fffe7a8f4",
             "type": "leaf",
             "pinned": true,
             "state": {
@@ -59,37 +59,35 @@
             }
           },
           {
-            "id": "7929ad6a8ba93659",
+            "id": "3632f443ba62e072",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-W33.md",
+                "file": "2026-W34.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
               "pinned": true,
               "icon": "lucide-file",
-              "title": "2026-W33"
+              "title": "2026-W34"
             }
           },
           {
-            "id": "5a3b9c3aeab43929",
+            "id": "699aef31365ab971",
             "type": "leaf",
-            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-08-15.md",
+                "file": "2026-08-16.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": false
               },
-              "pinned": true,
               "icon": "lucide-file",
-              "title": "2026-08-15"
+              "title": "2026-08-16"
             }
           }
         ],
@@ -171,7 +169,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2026-08-15.md",
+                "file": "2026-08-16.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "byModifiedTime",
@@ -219,7 +217,7 @@
             "state": {
               "type": "footnotes",
               "state": {
-                "file": "2026-08-15.md"
+                "file": "2026-08-16.md"
               },
               "icon": "lucide-file-signature",
               "title": "Footnotes"
@@ -286,11 +284,17 @@
       "publish:Publish changes...": true,
       "homepage:Open homepage": true,
       "obsidian42-brat:BRAT": true,
-      "3d-graph:3D Graph": false
+      "3d-graph:3D Graph": false,
+      "periodic-notes:Open today": false
     }
   },
-  "active": "68fa3574cdd22001",
+  "active": "699aef31365ab971",
   "lastOpenFiles": [
+    "2026-W34.md",
+    "2026-08.md",
+    "2026-Q3.md",
+    "2026.md",
+    "2026-08-16.md",
     "2026-08-15.md"
   ]
 }
