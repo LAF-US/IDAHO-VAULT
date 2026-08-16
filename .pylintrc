@@ -56,12 +56,22 @@
 # The bump does not move the baseline, and that was checked rather than
 # assumed. pylint 4.0.7, same config, only py-version differing:
 #
-#   .github/scripts/        3.10 -> 508    3.13 -> 508
-#   200 tracked *.py        3.10 -> 1568   3.13 -> 1568
+#   .github/scripts/         3.10 -> 508    3.13 -> 508
+#   all 113 tracked *.py     3.10 -> 1568   3.13 -> 1568
 #
 # Identical on both scopes, because nothing in this codebase rides a
 # 3.11/3.12/3.13 version gate. Had the counts differed, the baseline in #950
 # would have needed re-taking, not just this line.
+#
+# That second row said "200 tracked *.py" for one commit. It was wrong: the
+# command capped the list at 200 with `head -200`, but only 113 tracked *.py
+# files exist, so 113 is the scope that was actually measured. Two reviewers
+# caught it. Corrected to the count `git ls-files '*.py' | wc -l` returns.
+#
+# 1568 over 113 files does not contradict the 1,763 over 136 recorded in #950's
+# description. That reading was taken 2026-08-11; main has since deleted the
+# src/idaho_vault/ tree, so there are fewer files to report on. Same tool, same
+# config, smaller repo.
 py-version=3.13
 # Regex against the full path, unanchored at the front so a checkout at any
 # absolute location still matches.
