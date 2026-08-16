@@ -40,9 +40,10 @@ WORKFLOW_GLOBS = (".github/workflows/*.yml", ".github/workflows/*.yaml")
 # than "any *.yml" to avoid both false coverage of unrelated files and any
 # ambiguity about whether the standard filenames are actually scanned.
 # Recursive: a nested action (.github/actions/vendor/pr-agent/action.yml) is
-# just as capable of naming a mutable image as a top-level one, and a one-level
-# glob left it unscanned.
-ACTION_GLOBS = (".github/actions/**/action.yml", ".github/actions/**/action.yaml")
+# just as capable of naming a mutable image as a top-level one. Discovery uses
+# an explicit no-follow walk so PR-controlled symlink directories cannot expand
+# or stall the scan before the per-file read guard runs.
+ACTION_NAMES = ("action.yml", "action.yaml")
 
 # Capture the whole value, not `\S+`. A value containing spaces —
 # `uses: ${{ matrix.action }}` — failed to match the old pattern at all, and an
@@ -104,10 +105,34 @@ FLOW_RUNS_PATTERN = re.compile(r"""[{,]\s*["']?runs["']?\s*:""")
 
 
 def scan_targets() -> list[Path]:
+    """Workflow files and action metadata, without following symlink directories."""
+
     paths: list[Path] = []
-    for pattern in (*WORKFLOW_GLOBS, *ACTION_GLOBS):
+    for pattern in WORKFLOW_GLOBS:
         paths.extend(sorted(REPO_ROOT.glob(pattern)))
-    return paths
+
+    actions_root = REPO_ROOT / ".github" / "actions"
+    if actions_root.is_symlink():
+        paths.append(actions_root)
+    elif actions_root.is_dir():
+        for root, directories, filenames in os.walk(
+            actions_root, topdown=True, followlinks=False
+        ):
+            base = Path(root)
+            safe_directories: list[str] = []
+            for name in sorted(directories):
+                candidate = base / name
+                if candidate.is_symlink():
+                    paths.append(candidate)
+                else:
+                    safe_directories.append(name)
+            directories[:] = safe_directories
+
+            for name in ACTION_NAMES:
+                candidate = base / name
+                if name in filenames or candidate.is_symlink():
+                    paths.append(candidate)
+    return sorted(paths)
 
 
 def _read(path: Path) -> tuple[str | None, str]:
