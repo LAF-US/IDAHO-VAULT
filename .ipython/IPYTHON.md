@@ -1,4 +1,5 @@
 ---
+title: IPYTHON
 authority: LOGAN
 related:
   - IPYTHON
@@ -6,6 +7,6 @@ related:
   - runtime
 ---
 
-**.ipython** — Imported software runtime persona.
+**.ipython** ï¿½ Imported software runtime persona.
 
 ipython runtime and configuration.

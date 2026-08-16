@@ -1,4 +1,5 @@
 ---
+title: JUPYTER
 authority: LOGAN
 related:
   - JUPYTER
@@ -6,6 +7,6 @@ related:
   - runtime
 ---
 
-**.jupyter** — Imported software runtime persona.
+**.jupyter** ï¿½ Imported software runtime persona.
 
 jupyter runtime and configuration.
