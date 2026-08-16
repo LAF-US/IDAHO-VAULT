@@ -4,20 +4,113 @@
     "type": "split",
     "children": [
       {
-        "id": "9083bf58322b1634",
+        "id": "e90e8b46c56b38b7",
         "type": "tabs",
         "children": [
           {
-            "id": "cfb9a067ce8fa544",
+            "id": "638951c68cfa5cfd",
             "type": "leaf",
+            "pinned": true,
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "2026.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "pinned": true,
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "2026"
+            }
+          },
+          {
+            "id": "a45577e26b0842f4",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2026-Q3.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "2026-Q3"
+            }
+          },
+          {
+            "id": "e8c00f4d0654083e",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2026-08.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "2026-08"
+            }
+          },
+          {
+            "id": "7929ad6a8ba93659",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2026-W33.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "2026-W33"
+            }
+          },
+          {
+            "id": "5c9b200e5b80475c",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2026-08-15.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "2026-08-15"
+            }
+          },
+          {
+            "id": "5a3b9c3aeab43929",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2026-08-15.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": false
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "2026-08-15"
             }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -36,8 +129,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "byModifiedTime",
-                "autoReveal": false,
+                "sortOrder": "alphabetical",
+                "autoReveal": true,
                 "showSearch": false,
                 "searchQuery": ""
               },
@@ -75,11 +168,12 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 259.8999938964844
+    "width": 360
   },
   "right": {
     "id": "7f8b1131e111e374",
@@ -95,9 +189,10 @@
             "state": {
               "type": "backlink",
               "state": {
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
+                "file": "2026-08-15.md",
+                "collapseAll": true,
+                "extraContext": true,
+                "sortOrder": "byModifiedTime",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
@@ -113,6 +208,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "2026.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               },
@@ -140,7 +236,9 @@
             "type": "leaf",
             "state": {
               "type": "footnotes",
-              "state": {},
+              "state": {
+                "file": "2026.md"
+              },
               "icon": "lucide-file-signature",
               "title": "Footnotes"
             }
@@ -172,41 +270,92 @@
               "icon": "lucide-archive",
               "title": "All properties"
             }
+          },
+          {
+            "id": "df323f1bf35830c6",
+            "type": "leaf",
+            "state": {
+              "type": "journal-view:b9f3a1c2-0d4e-4f6a-8b1c-2d3e4f5a6b7c",
+              "state": {},
+              "icon": "calendar-days",
+              "title": "Calendar"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 360,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "markdown-importer:Open format converter": false,
+      "bases:Create new base": true,
+      "canvas:Create new canvas": true,
       "zk-prefixer:Create new unique note": false,
-      "random-note:Open random note": false,
-      "workspaces:Manage workspace layouts": false,
-      "publish:Publish changes...": false,
-      "bases:Create new base": false
+      "templates:Insert template": false,
+      "workspaces:Manage workspace layouts": true,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": true,
+      "graph:Open graph view": false,
+      "switcher:Open quick switcher": false,
+      "random-note:Open random note": true,
+      "daily-notes:Open today's daily note": true,
+      "publish:Publish changes...": true,
+      "homepage:Open homepage": true,
+      "obsidian42-brat:BRAT": true,
+      "3d-graph:3D Graph": false,
+      "periodic-notes:Open today": false
     }
   },
-  "active": "cfb9a067ce8fa544",
+  "active": "5a3b9c3aeab43929",
   "lastOpenFiles": [
-    "2026-08-04 - Codacy configuration file.md",
-    "- Set up Obsidian Sync.md",
-    "- Early access versions.md",
-    "- Babylon.js_ Powerful, Beautiful, Simple, Open - Web-Based 3D At Its Best.md",
-    "Obsidian Manifesto.md",
-    "reply-3709158138 (Conflicted copy Windows Laptop (HP ZBook Fury, IdahoPTV) 202608131701).md",
-    "2026-08-13.md",
+    "hast-util-from-dom",
+    "glob/dist/commonjs",
+    "emoji-regex/es2015",
+    "delayed-stream/lib",
+    "d3-transition/dist",
+    "hast-util-to-text",
+    "CREWAI 11.45.12 AM",
+    "concat-map/example",
+    "cliui/node_modules",
+    "character-entities",
+    "CATEGORIES/TAILING",
+    "2026-W33.md",
+    "2026-08.md",
+    "2026-Q3.md",
+    "2026.md",
+    "2026-08-15.md",
     "!/_TEMPLATE.md",
     "!/_TEMPLATE_NOTE.md",
-    "!/_TEMPLATE_NOTE__.md"
+    "!/_TEMPLATE_NOTE__QUARTERLY.md",
+    "!/_TEMPLATE_NOTE_YEARLY.md",
+    "!/_TEMPLATE_NOTE___MONTHLY.md",
+    "!/_TEMPLATE_NOTE____WEEKLY.md",
+    "!/_TEMPLATE_NOTE_____DAILY.md",
+    "!/_TEMPLATE_NOTE______HOURLY.md",
+    "!/_TEMPLATE_NOTE_______MINUTELY.md",
+    "!/_TEMPLATE_NOTE________SECONDLY.md",
+    "2026-08-15 (Conflicted copy Windows Laptop (HP ZBook Fury, IdahoPTV) 202608150114).md",
+    "focus 1.md",
+    "BRAT-log.md",
+    "2026-07-19 5.md",
+    "2026-07-18.md",
+    "2026-W29.md",
+    "2026-08-14.md",
+    "DRAFT.md",
+    "flow-focus-data/focus.md",
+    "WITNESS-GORP-LANDED-AND-LEFT-2026-08-14.md",
+    "Screenshot 2026-08-14 115206.jpg",
+    "Screenshot 2026-08-14 115113.jpg",
+    "Buildingcommittee02.webp",
+    "Buildingcommittee04.webp",
+    "Buildingcommittee05.webp",
+    "Buildingcommittee03.webp",
+    "Buildingcommittee07.webp",
+    "Buildingcommittee08.webp",
+    "Buildingcommittee06.webp",
+    "Buildingcommittee09.webp"
   ]
 }

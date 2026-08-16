@@ -1,5 +1,5 @@
 {
-  "types": {    
+  "types": {
     "title": "text",
     "template": "text",
     "aliases": "aliases",
@@ -7,7 +7,6 @@
     "created": "datetime",
     "updated": "datetime",
     "cssclasses": "multitext",
-    "tags": "tags",
     "visibility": "text",
     "yesterday": "date",
     "today": "date",
@@ -67,7 +66,7 @@
     "BC-ignore-in-edges": "checkbox",
     "BC-ignore-out-edges": "checkbox",
     "BC-tag-note-sibling-field": "text",
-    "BC-traverse-note-field": "text",    
+    "BC-traverse-note-field": "text",
     "TQ_explain": "checkbox",
     "TQ_extra_instructions": "text",
     "TQ_short_mode": "checkbox",
@@ -89,6 +88,8 @@
     "TQ_show_task_count": "checkbox",
     "TQ_show_toolbar": "checkbox",
     "TQ_show_tree": "checkbox",
-    "TQ_show_urgency": "checkbox"
+    "TQ_show_urgency": "checkbox",
+    "BC-list-note-section": "text",
+    "BC-list-note-exclude": "multitext"
   }
 }
