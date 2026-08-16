@@ -30,6 +30,7 @@
 .vscode/cli/*tunnel*.*
 .vscode-shared/sharedStorage/state.vscdb
 .vscode-shared/sharedStorage/state.vscdb.backup
+.zshrc
 adbkey*
 auth.json
 credstore*
