@@ -348,6 +348,17 @@ jobs:
                           "artifactLocation",
                           f"runs[{i}].results[].artifactLocation",
                       )
+                      # isinstance, not `in`: `"uri": null` reaches
+                      # relativise() and raises on uri.startswith(), which is
+                      # the traceback these helpers exist to prevent. The
+                      # validator already guards with isinstance, so a
+                      # non-string uri is reachable input, not a hypothetical.
+                      if not isinstance(art.get("uri"), str) and "uri" in art:
+                          repairs.append(
+                              f"runs[{i}].results[].artifactLocation.uri was "
+                              f"{type(art['uri']).__name__}, dropped"
+                          )
+                          del art["uri"]
                       if "uri" in art:
                           art["uri"] = relativise(art["uri"])
                           # index points into run.artifacts, which is not
@@ -367,6 +378,12 @@ jobs:
               kept_total += len(kept)
               for art in _objects(run, "artifacts", f"runs[{i}].artifacts"):
                   loc = _sub(art, "location", f"runs[{i}].artifacts[].location")
+                  if not isinstance(loc.get("uri"), str) and "uri" in loc:
+                      repairs.append(
+                          f"runs[{i}].artifacts[].location.uri was "
+                          f"{type(loc['uri']).__name__}, dropped"
+                      )
+                      del loc["uri"]
                   if "uri" in loc:
                       loc["uri"] = relativise(loc["uri"])
 

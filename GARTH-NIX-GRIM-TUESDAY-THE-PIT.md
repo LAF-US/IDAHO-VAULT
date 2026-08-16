@@ -86,7 +86,7 @@ This is **not** the pit in the vault's `MADAME-LULU-AND-THE-PIT-*` witness notes
 **Sources, by tier:**
 
 - *Primary canon* — *Grim Tuesday* (2004), prologue: the excerpt supplied in-session 2026-08-12. Every quoted phrase above is from that supplied text
-- *Series context* — broader Keys to the Kingdom facts (the sequence of Keys, the Architect's Will and its seven fragments, the Court of Days, the Piper) drawn from the vault's own survey note. Anything not in the supplied excerpt is **unsourced context, not evidence** — it was not checked against the books in this session and nothing above rests on it
+- *Series context* — broader Keys to the Kingdom facts (the sequence of Keys, the Architect's Will and its seven fragments, the Court of Days, the Piper) drawn from the vault's own survey note. Anything not in the supplied excerpt is **unsourced context, not evidence** — it was not checked against the books in this session. The claims about the Pit itself are excerpt-anchored and do not depend on it; the **comparison sections do**. Specifically: the Superior Saturday parallel and contrast rest on `GARTH-NIX-SUPERIOR-SATURDAY-TOWER.md` rather than on this excerpt, and the Caligari Carnival disambiguation rests on the vault's Snicket witness notes. Read those two as context-dependent, not excerpt-proven
 - *Interpretation* — the witness leaf, warranted by Logan's answer in session `session_015oRnkWnNkTL7R2umjen42b` on 2026-08-12; explicitly not canon and not attributed to Garth Nix
 
 **Named in the prologue and absent from the rest of the vault:** **Cocigrue** and **Spirit-eater** — and only those two. Run it yourself:

@@ -78,6 +78,9 @@ IMAGE_DIGEST_PATTERN = re.compile(r"@sha256:[0-9a-f]{64}$")
 DOCKER_ACTION_PATTERN = re.compile(
     r"""["']?using["']?\s*:\s*["']?docker["']?""", re.IGNORECASE
 )
+# `runs:` is a TOP-LEVEL key in action metadata, so this anchors at column 0:
+# a nested `runs:` under some other key must not be mistaken for the real one.
+RUNS_PATTERN = re.compile(r"""^["']?runs["']?\s*:\s*(.*?)\s*$""")
 # `FROM <base> [AS <stage>]`, case-insensitive, --platform= flags tolerated.
 FROM_PATTERN = re.compile(
     r"^\s*FROM\s+(?:--\S+\s+)*(\S+)(?:\s+AS\s+(\S+))?\s*$", re.IGNORECASE
@@ -207,20 +210,34 @@ def _unreadable_docker_metadata(path: Path, lines: list[str]) -> list[tuple[int,
         # `runs.using` is action metadata. A workflow has no such key, and
         # scanning for one there would only invent findings.
         return []
-    if any(IMAGE_PATTERN.match(line) for line in lines):
-        return []
     for lineno, line in enumerate(lines, start=1):
-        if line.lstrip().startswith("#"):
-            # A comment describing a Docker action is not one.
+        if not RUNS_PATTERN.match(line):
             continue
-        if DOCKER_ACTION_PATTERN.search(line):
-            return [
-                (
-                    lineno,
-                    "runs.using: docker with no `image:` line this guard can read "
-                    "(flow mapping or other unsupported YAML form; image unverified)",
-                )
-            ]
+        # The block is `runs:` plus the indented lines under it. Scoping
+        # matters: asking whether the FILE contains any `image:` line let a
+        # decoy elsewhere vouch for an image the guard never read. An action
+        # declaring a digest-pinned image under `inputs`, and its real
+        # container as a flow-mapping `runs` on the next line, reported OK
+        # with the mutable container unexamined — the decoy satisfied the
+        # test. Only an image named inside `runs` can be the one that runs.
+        block = [line]
+        for follow in lines[lineno:]:
+            if follow.strip() and not follow[:1].isspace():
+                break
+            block.append(follow)
+        code = [b for b in block if not b.lstrip().startswith("#")]
+        if not any(DOCKER_ACTION_PATTERN.search(b) for b in code):
+            # composite / node20: names no image, not implicated.
+            return []
+        if any(IMAGE_PATTERN.match(b) for b in code):
+            return []
+        return [
+            (
+                lineno,
+                "runs.using: docker with no `image:` line this guard can read "
+                "(flow mapping or other unsupported YAML form; image unverified)",
+            )
+        ]
     return []
 
 
