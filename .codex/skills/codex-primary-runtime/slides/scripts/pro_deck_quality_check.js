@@ -109,8 +109,8 @@ function inspectPptx(pptxPath, allowedDebugColors) {
   const result = {
     slide_count: 0,
     media_count: 0,
-    cha***REMOVED***count: 0,
-    cha***REMOVED***parts: [],
+    chart_count: 0,
+    chart_parts: [],
     embedded_workbook_count: 0,
     embedded_workbook_parts: [],
     slides_without_images: [],
@@ -135,8 +135,8 @@ function inspectPptx(pptxPath, allowedDebugColors) {
   const embeddedWorkbookNames = names.filter((name) => /^ppt\/embeddings\/.*\.(xlsx|xlsm|bin)$/i.test(name)).sort();
   result.slide_count = slideXmlNames.length;
   result.media_count = mediaNames.length;
-  result.cha***REMOVED***count = chartNames.length;
-  result.cha***REMOVED***parts = chartNames;
+  result.chart_count = chartNames.length;
+  result.chart_parts = chartNames;
   result.embedded_workbook_count = embeddedWorkbookNames.length;
   result.embedded_workbook_parts = embeddedWorkbookNames;
 
@@ -379,14 +379,14 @@ function inspectNdjson(inspectPath) {
     text_chars: 0,
     image_count: 0,
     shape_count: 0,
-    manual_cha***REMOVED***textbox_count: 0,
-    manual_cha***REMOVED***textbox_samples: [],
-    native_cha***REMOVED***record_count: 0,
-    native_cha***REMOVED***record_samples: [],
+    manual_chart_textbox_count: 0,
+    manual_chart_textbox_samples: [],
+    native_chart_record_count: 0,
+    native_chart_record_samples: [],
     chartish_textbox_count: 0,
     chartish_textbox_samples: [],
-    manual_cha***REMOVED***shape_count: 0,
-    manual_cha***REMOVED***shape_samples: [],
+    manual_chart_shape_count: 0,
+    manual_chart_shape_samples: [],
     text_fit_failures: [],
     text_fit_warnings: [],
     textbox_overlap_failures: [],
@@ -406,9 +406,9 @@ function inspectNdjson(inspectPath) {
       continue;
     }
     if (item.kind === "chart") {
-      result.native_cha***REMOVED***record_count += 1;
-      if (result.native_cha***REMOVED***record_samples.length < MAX_LAYOUT_SAMPLES) {
-        result.native_cha***REMOVED***record_samples.push({
+      result.native_chart_record_count += 1;
+      if (result.native_chart_record_samples.length < MAX_LAYOUT_SAMPLES) {
+        result.native_chart_record_samples.push({
           slide: item.slide,
           role: item.role,
           title: item.title,
@@ -423,8 +423,8 @@ function inspectNdjson(inspectPath) {
       checkTextboxFit(item, result);
       const role = String(item.role || "");
       if (CHARTISH_PATTERN.test(role)) {
-        result.manual_cha***REMOVED***textbox_count += 1;
-        if (result.manual_cha***REMOVED***textbox_samples.length < MAX_LAYOUT_SAMPLES) result.manual_cha***REMOVED***textbox_samples.push(textLayoutSample(item));
+        result.manual_chart_textbox_count += 1;
+        if (result.manual_chart_textbox_samples.length < MAX_LAYOUT_SAMPLES) result.manual_chart_textbox_samples.push(textLayoutSample(item));
       }
       if (CHARTISH_PATTERN.test(text)) {
         result.chartish_textbox_count += 1;
@@ -437,9 +437,9 @@ function inspectNdjson(inspectPath) {
       result.shape_count += 1;
       const role = String(item.role || "");
       if (CHARTISH_PATTERN.test(role)) {
-        result.manual_cha***REMOVED***shape_count += 1;
-        if (result.manual_cha***REMOVED***shape_samples.length < MAX_LAYOUT_SAMPLES) {
-          result.manual_cha***REMOVED***shape_samples.push({
+        result.manual_chart_shape_count += 1;
+        if (result.manual_chart_shape_samples.length < MAX_LAYOUT_SAMPLES) {
+          result.manual_chart_shape_samples.push({
             slide: item.slide,
             id: item.id,
             role: item.role,
@@ -528,15 +528,15 @@ function main() {
   if (inspectMetrics.textbox_edge_failures.length) failures.push(`Found text boxes too close to slide edges outside exempt header/footer roles: ${JSON.stringify(inspectMetrics.textbox_edge_failures.slice(0, 5))}.`);
   if (!renderVerifyLoopMetrics.exists) failures.push(`Missing render/verify loop log: ${renderVerifyLoopMetrics.path}.`);
   else if (renderVerifyLoopMetrics.latest_loop > MAX_RENDER_VERIFY_LOOPS) failures.push(`Render/verify loop count exceeds ${MAX_RENDER_VERIFY_LOOPS}: ${renderVerifyLoopMetrics.latest_loop}.`);
-  const manualChartRecordCount = inspectMetrics.manual_cha***REMOVED***shape_count + inspectMetrics.manual_cha***REMOVED***textbox_count;
-  if (!pptxMetrics.cha***REMOVED***count && inspectMetrics.native_cha***REMOVED***record_count) {
+  const manualChartRecordCount = inspectMetrics.manual_chart_shape_count + inspectMetrics.manual_chart_textbox_count;
+  if (!pptxMetrics.chart_count && inspectMetrics.native_chart_record_count) {
     failures.push(
-      `Inspect recorded ${inspectMetrics.native_cha***REMOVED***record_count} native chart objects, but the exported PPTX has no native chart XML parts (ppt/**/charts/chart*.xml). Verify chart export, not just builder-side chart helpers. Samples: ${JSON.stringify(inspectMetrics.native_cha***REMOVED***record_samples.slice(0, 5))}.`,
+      `Inspect recorded ${inspectMetrics.native_chart_record_count} native chart objects, but the exported PPTX has no native chart XML parts (ppt/**/charts/chart*.xml). Verify chart export, not just builder-side chart helpers. Samples: ${JSON.stringify(inspectMetrics.native_chart_record_samples.slice(0, 5))}.`,
     );
   }
-  if (!pptxMetrics.cha***REMOVED***count && manualChartRecordCount) {
+  if (!pptxMetrics.chart_count && manualChartRecordCount) {
     failures.push(
-      `Found ${manualChartRecordCount} chart-like inspect records but no native PPTX chart XML parts (ppt/**/charts/chart*.xml). Use slide.charts.add(...) for data charts/graphs instead of drawing them manually. Text samples: ${JSON.stringify(inspectMetrics.manual_cha***REMOVED***textbox_samples.slice(0, 5))}. Shape samples: ${JSON.stringify(inspectMetrics.manual_cha***REMOVED***shape_samples.slice(0, 5))}.`,
+      `Found ${manualChartRecordCount} chart-like inspect records but no native PPTX chart XML parts (ppt/**/charts/chart*.xml). Use slide.charts.add(...) for data charts/graphs instead of drawing them manually. Text samples: ${JSON.stringify(inspectMetrics.manual_chart_textbox_samples.slice(0, 5))}. Shape samples: ${JSON.stringify(inspectMetrics.manual_chart_shape_samples.slice(0, 5))}.`,
     );
   }
   if (pptxMetrics.shrink_text_count) warnings.push(`Found ${pptxMetrics.shrink_text_count} shrinkText settings; confirm no rendered tiny text.`);
@@ -546,7 +546,7 @@ function main() {
     );
   }
   if (inspectMetrics.text_fit_warnings.length) warnings.push(`Found tight textbox geometry; inspect rendered previews: ${JSON.stringify(inspectMetrics.text_fit_warnings.slice(0, 5))}.`);
-  if (!pptxMetrics.cha***REMOVED***count && inspectMetrics.chartish_textbox_count) {
+  if (!pptxMetrics.chart_count && inspectMetrics.chartish_textbox_count) {
     warnings.push(
       `Found ${inspectMetrics.chartish_textbox_count} chart-like textbox copy samples but no native PPTX chart XML parts (ppt/**/charts/chart*.xml); confirm this deck truly has no chart/graph visual, otherwise use slide.charts.add(...). Samples: ${JSON.stringify(inspectMetrics.chartish_textbox_samples.slice(0, 5))}.`,
     );
