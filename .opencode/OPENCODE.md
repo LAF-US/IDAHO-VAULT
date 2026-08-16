@@ -1,4 +1,5 @@
 ---
+title: OPENCODE
 authority: LOGAN
 related:
   - OPENCODE

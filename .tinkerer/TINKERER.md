@@ -1,5 +1,5 @@
 ---
-title: "The Tinkerer — Office Chamber"
+title: TINKERER
 updated: 2026-06-27
 canonical_name: tinkerer
 persona_class: "office-chamber (narrative ring; follows the .abhorsen pattern; not stub/import/alias — for Logan to set)"

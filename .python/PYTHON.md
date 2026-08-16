@@ -1,4 +1,5 @@
 ---
+title: PYTHON
 authority: LOGAN
 related:
 - Python

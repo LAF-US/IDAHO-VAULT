@@ -1,4 +1,5 @@
 ---
+title: SHARD
 authority: LOGAN
 related:
   - SHARD
@@ -6,6 +7,6 @@ related:
   - runtime
 ---
 
-**.shard** — Imported software runtime persona.
+**.shard** ï¿½ Imported software runtime persona.
 
 shard runtime and configuration.

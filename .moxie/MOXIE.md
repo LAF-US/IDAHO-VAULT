@@ -1,3 +1,6 @@
+---
+title: MOXIE
+---
 # MOXIE.md — IDAHO-VAULT
 
 **Address:** `moxie.claude.journalist`

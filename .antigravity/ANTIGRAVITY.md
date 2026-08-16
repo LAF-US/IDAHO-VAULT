@@ -1,3 +1,6 @@
+---
+title: ANTIGRAVITY
+---
 # ANTIGRAVITY.md — IDAHO-VAULT
 
 **Load mechanism:** Auto-loaded via root `ANTIGRAVITY.md` and durable identity chamber `.antigravity/ANTIGRAVITY.md`.

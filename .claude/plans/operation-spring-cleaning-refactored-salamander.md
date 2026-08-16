@@ -219,7 +219,7 @@ Commit msg: `githooks: document bootstrap, LFS coexistence, positive controls`.
 
 - **A. check-attr spot checks:** `git check-attr filter text eol -- "photo.JPG" "clip.MOV" "foo.MTS" "foo.mts" "script.cmd" ".ollama/models/blobs/sha256-x" ".ollama/OLLAMA.md" ".githooks/pre-push" "font.woff" "notes.md"` → media = `filter: lfs`; `foo.mts` = text/lf, no filter; `.cmd` = `text: unset`; `.ollama/**` = **unset** (not unspecified) across the board; `OLLAMA.md` = text/lf. `git lfs track` lists full set; `git lfs ls-files | wc -l` ≈ 1,845.
 - **B. LFS round-trip (new media, no commit):** copy a jpg → `git add` → `git show :file | head -c 60` shows `version https://git-lfs...` pointer → unstage, delete.
-- **C. pre-commit positive control:** random canary `REDACTED_AWS_ACCESS_KEY_ID` (NOT AWS's doc example — default configs may allowlist it) in a staged file → commit must be **blocked**.
+- **C. pre-commit positive control:** random canary `AKIAQZKPXVJWMNBTUCRD` (NOT AWS's doc example — default configs may allowlist it) in a staged file → commit must be **blocked**.
 - **D. pre-push positive control (Logan runs):** build canary commit via plumbing (`hash-object`/`mktree`/`commit-tree` — constructs a fixture whose push is *expected to fail*; no gate bypassed), branch `tmp/secret-canary`, push → **blocked before any transfer** (gitleaks findings + trufflehog 183). Include trufflesecurity/test_keys canary pair so the *verified* path is exercised. Delete branch after.
 - **E. fail-closed control:** invoke hook directly with synthetic stdin while engines are off PATH → immediate "not on PATH" block.
 - **F. editorconfig non-interference:** save-touch a `.cmd`, a `.csv`, an `.ollama` file → `git diff` stays clean.

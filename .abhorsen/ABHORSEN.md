@@ -1,5 +1,5 @@
 ---
-title: "The Abhorsen — Office Chamber"
+title: ABHORSEN
 authority: LOGAN
 related:
   - .claude/CLAUDE.md

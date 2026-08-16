@@ -1,4 +1,5 @@
 ---
+title: OPENGRAPH
 authority: LOGAN
 related:
   - OPENGRAPH
@@ -6,6 +7,6 @@ related:
   - runtime
 ---
 
-**.opengraph** — Imported software runtime persona.
+**.opengraph** ï¿½ Imported software runtime persona.
 
 opengraph runtime and configuration.

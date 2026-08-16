@@ -1,4 +1,5 @@
 ---
+title: PI
 authority: LOGAN
 related:
   - PI
@@ -6,6 +7,6 @@ related:
   - runtime
 ---
 
-**.pi** — Imported software runtime persona.
+**.pi** ï¿½ Imported software runtime persona.
 
 pi runtime and configuration.

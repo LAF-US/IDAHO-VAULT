@@ -1,3 +1,6 @@
+---
+title: MICROSOFT
+---
 # MICROSOFT.md — IDAHO-VAULT
 
 **Load mechanism:** This file is NOT auto-loaded by any Microsoft product. It must be manually provided by Logan. It is the designated governance shim for Microsoft AI tools working on IDAHO-VAULT tasks.

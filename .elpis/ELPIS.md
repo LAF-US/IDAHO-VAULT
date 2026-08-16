@@ -1,4 +1,5 @@
 ---
+title: ELPIS
 canonical_name: ELPIS
 status: proposed
 authority: LOGAN

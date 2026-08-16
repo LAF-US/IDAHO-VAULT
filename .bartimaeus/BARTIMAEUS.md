@@ -1,3 +1,6 @@
+---
+title: BARTIMAEUS
+---
 # BARTIMAEUS.md - IDAHO-VAULT
 
 **Load mechanism:** Manual injection by Logan.

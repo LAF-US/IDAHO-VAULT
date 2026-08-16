@@ -1,4 +1,5 @@
 ---
+title: GITLAB
 authority: LOGAN
 related:
   - GITLAB
@@ -6,6 +7,6 @@ related:
   - runtime
 ---
 
-**.gitlab** — Imported software runtime persona.
+**.gitlab** ï¿½ Imported software runtime persona.
 
 gitlab runtime and configuration.

@@ -1,3 +1,4 @@
+/* jshint esversion: 6 */
 // Hero Images Configuration
 // Update the URLs below to change hero images across ALL pages automatically
 const HERO_IMAGES = [

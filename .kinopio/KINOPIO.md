@@ -1,4 +1,5 @@
 ---
+title: KINOPIO
 authority: LOGAN
 related:
   - KINOPIO
@@ -6,6 +7,6 @@ related:
   - runtime
 ---
 
-**.kinopio** — Imported software runtime persona.
+**.kinopio** ï¿½ Imported software runtime persona.
 
 kinopio runtime and configuration.
