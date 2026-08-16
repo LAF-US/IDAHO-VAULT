@@ -20,8 +20,10 @@ repos:
       - id: check-merge-conflict
         args: ["--"]
       - id: check-symlinks
+        args: ["--"]
       # The repository's canonical secret-pattern policy scans all changed
       # paths. This lightweight detector covers actual key-container files
       # without treating bundled parser vocabulary as key material.
       - id: detect-private-key
+        args: ["--"]
         files: (?i)\.(pem|p12|pfx|key)$
