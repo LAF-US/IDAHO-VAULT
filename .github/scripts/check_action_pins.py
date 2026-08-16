@@ -297,6 +297,16 @@ def main() -> int:
         # device (/dev/zero) read_text() never returns and the gate hangs
         # instead of failing — a fail-closed check turned into a stall. Pointed
         # outside the repo it reads something that is not vault content.
+        # Reject the symlink itself rather than resolve-and-recheck. Checking
+        # the RESOLVED path was not enough: a link whose target lands inside
+        # the repo — another tracked file, or a device/FIFO under the tree —
+        # passes both containment and is_file() and then gets read anyway, and
+        # is_file() to read_text() is two syscalls with a window between them.
+        # is_symlink() does not follow the link. No action.yml in this
+        # repository is a symlink, so rejecting outright costs nothing.
+        if path.is_symlink():
+            findings.append(f"{rel}: symlink; not read")
+            continue
         resolved = _resolve_in_repo(path.parent, path.name)
         if resolved is None:
             findings.append(f"{rel}: resolves outside the repository; not read")
