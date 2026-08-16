@@ -1,3 +1,18 @@
+/* global module, require */
+//
+// Codacy does not read this repository's ESLint config. Its CLI prints
+// "ESLint configuration created based on Codacy settings" and generates its own
+// from the Code patterns page, so the `sourceType: "commonjs"` and
+// `globals.node` declared in eslint.config.js never reach Codacy's run. These
+// files really are CommonJS, so Codacy's generated config drew no-undef on
+// `module` and `require`. Reproduced locally with codacy-cli-v2: exactly the
+// four alerts code scanning reported, same files, same lines.
+//
+// The directive above states a fact rather than silencing a rule -- both are
+// Node CommonJS modules and both globals exist at run time. `/* global */` is
+// honoured by every ESLint config including a generated one; `eslint-env node`
+// would not be, having been removed in ESLint 9.
+
 // ESLint flat config — Codacy toggle. The only config format ESLint 10 reads.
 //
 // Measured on eslint 10.8.1: move this file aside and ESLint refuses to run
