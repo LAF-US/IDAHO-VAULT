@@ -62,7 +62,13 @@ Dame Primus signs as Parts One and Two, "comprising Paragraphs Three to Thirteen
 
 **Warrant**: Logan pasted this passage into the working session of 2026-08-12 without instruction; asked directly, he chose "chapter nodes plus collisions," which is the warrant for this section. Witnessed by session `session_015oRnkWnNkTL7R2umjen42b`. Interpretation offered under that warrant — not Nix's meaning, and not canon.
 
-1. **"Washed between the ears" returned zero hits vault-wide** before this note. (Search method, so the claim is falsifiable: `git grep -lIiE` over all tracked files at commit 9a56f6e0 on 2026-08-12, before this note was added. Re-run it to check.) For an archive built around agents that do and do not persist across sessions, that is a conspicuous gap: the passage names, in four words, the difference between a party you can wipe and a party you cannot, and treats the second as a security problem. The vault's own arrangement is the wipeable kind — a Claude session is stateless by construction, and `.claude/CLAUDE.md` opens by saying so.
+1. **"Washed between the ears" appears nowhere else in the vault.** Run it yourself — this note is the only hit, so it is excluded:
+
+   ```sh
+   git grep -lIiE -- 'washed between the ears' 9a56f6e0 | grep -v GARTH-NIX-DROWNED-WEDNESDAY
+   ```
+
+   Zero lines out. (`9a56f6e0` already contains this note; the claim is about the *rest* of the vault, which is what the exclusion makes it.) For an archive built around agents that do and do not persist across sessions, that is a conspicuous gap: the passage names, in four words, the difference between a party you can wipe and a party you cannot, and treats the second as a security problem. The vault's own arrangement is the wipeable kind — a Claude session is stateless by construction, and `.claude/CLAUDE.md` opens by saying so.
 
 2. **The failure mode is Dame Primus's, not the Rats'.** She is the lawful authority, acting for the Will, and her advice is to withhold information from a reliable ally on the grounds that the ally remembers too much. Nothing in the passage suggests she is wrong about the risk. The vault's Restraint axis says stop before touching a surface not delegated; it does not say keep collaborators ignorant, and this passage is a clean picture of how the first slides into the second when memory is treated as an attack surface.
 

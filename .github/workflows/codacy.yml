@@ -202,10 +202,33 @@ jobs:
               # types `rules` identically for each, so both are repaired here.
               tool = run.setdefault("tool", {})
               components = [("driver", tool.setdefault("driver", {}))]
+              # `extensions` is optional but typed as an array of toolComponent,
+              # so the container is exactly as rejectable as the `rules` inside
+              # it. Reading it with `or []` treated a null as empty and left the
+              # null in the document -- the uploader then failed the WHOLE
+              # document on `tool.extensions is not of a type(s) array`, the
+              # same class of error this block exists to prevent, and the
+              # tripwire below (driver only) never saw it. Repair the container
+              # before its contents, and drop entries that are not objects.
+              if "extensions" in tool:
+                  raw_ext = tool["extensions"]
+                  if not isinstance(raw_ext, list):
+                      repairs.append(
+                          f"runs[{i}].tool.extensions was {type(raw_ext).__name__}, dropped"
+                      )
+                      del tool["extensions"]
+                  else:
+                      usable = [ext for ext in raw_ext if isinstance(ext, dict)]
+                      if len(usable) != len(raw_ext):
+                          repairs.append(
+                              f"runs[{i}].tool.extensions dropped "
+                              f"{len(raw_ext) - len(usable)} non-object entr"
+                              f"{'y' if len(raw_ext) - len(usable) == 1 else 'ies'}"
+                          )
+                      tool["extensions"] = usable
               components += [
                   (f"extensions[{k}]", ext)
-                  for k, ext in enumerate(tool.get("extensions") or [])
-                  if isinstance(ext, dict)
+                  for k, ext in enumerate(tool.get("extensions", []))
               ]
               for label, comp in components:
                   raw_rules = comp.get("rules")

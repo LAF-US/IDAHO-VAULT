@@ -26,7 +26,7 @@ Sibling notes: [[GARTH-NIX-SUPERIOR-SATURDAY-TOWER]] (the tower that cannot out-
 - **Wings are forbidden** — flying would be far faster, and Grim Tuesday bans it for everyone including himself: wings "attracted Nothing from all over the Pit," sometimes forming flying Nithlings, sometimes raising Nothing-storms he must personally quell. The fast path is closed because speed attracts the very substance being mined
 - **Up Station** — copied from "a very grand station on some world in the Secondary Realms," now stained black by coal smoke and "riddled with tiny holes, like a worm-eaten wooden ship" by Nothing pollution. It stands only because the Second Key repairs it continuously
 - **Grim Tuesday cannot create** — the canker at the centre of the chapter, and stated flatly rather than as his opinion: "he could only copy things. Given a good look at anything original, he could make a copy from Nothing. He could even combine existing things in interesting ways. But he could not create anything entirely new himself." Humans are "the only creatures anywhere, in the House or out of it, who rivaled Her in their creativity" — and he copies their work
-- **Grim's Grotesques** — his seven top executives, made by melding the three Denizens who served as Dawn, Noon and Dusk "into one that was then recast into seven." Named off the shepherd's counting score: **Yan, Tan, Tethera, Methera**
+- **Grim's Grotesques** — his seven top executives, made by melding the three Denizens who served as Dawn, Noon and Dusk "into one that was then recast into seven." Named off the shepherd's counting score; the prologue names the first four — **Yan, Tan, Tethera, Methera** — and does not list the remaining three
 - **The Overseers** — bronze breastplates, long-snouted helmets, steam-guns and falchions; they terrify everyone, and they bow their heads and shuffle away from the two messengers
 - **Sources**: *Grim Tuesday* (2004), prologue — primary canon, text supplied in-session
 
@@ -89,7 +89,13 @@ This is **not** the pit in the vault's `MADAME-LULU-AND-THE-PIT-*` witness notes
 - *Series context* — broader Keys to the Kingdom facts (the sequence of Keys, the Architect's Will and its seven fragments, the Court of Days, the Piper) drawn from the vault's own survey note. Anything not in the supplied excerpt is **unsourced context, not evidence** — it was not checked against the books in this session and nothing above rests on it
 - *Interpretation* — the witness leaf, warranted by Logan's answer in session `session_015oRnkWnNkTL7R2umjen42b` on 2026-08-12; explicitly not canon and not attributed to Garth Nix
 
-**Named in the prologue and absent from the rest of the vault** at the time of writing: Grim's Grotesques, Yan/Tan/Tethera/Methera, Cocigrue, Spirit-eater, Up Station, the Overseers. Search method, so the claim is falsifiable: `git grep -lIiE` over all tracked files at commit 9a56f6e0 on 2026-08-12, before this note was added. Re-run it to check.
+**Named in the prologue and absent from the rest of the vault:** **Cocigrue** and **Spirit-eater** — and only those two. Run it yourself:
+
+```sh
+git grep -lIiE -- 'Cocigrue|Spirit-eater' 9a56f6e0 | grep -v GARTH-NIX-GRIM-TUESDAY
+```
+
+Zero lines out. The earlier version of this note claimed six terms were vault-unique — Grim's Grotesques, Yan/Tan/Tethera/Methera, Up Station and the Overseers as well — and cited a `git grep` with no pattern in it, so nobody could run the check that was supposed to make the claim falsifiable. Run with a pattern, it fails: case-insensitive `Overseers` matches *Dario Amodei — Policy on the AI Exponential*, `Up Station` matches a 2017 BuzzFeed capture, `Grotesque` matches 45 files (Landy's Grotesquery and its neighbours), and Tethera/Methera were already in `!/GROTESQUERY-ANTI-VESSEL-v1-2026-06-03.md` — put there by this same PR's disambiguation edit, which `9a56f6e0` already contains. The stated baseline was never "before this note"; `9a56f6e0` includes both this note and its sibling. Corrected in place rather than quietly deleted, because a falsifiable claim that fails is evidence and a vanished one is not.
 
 ---
 

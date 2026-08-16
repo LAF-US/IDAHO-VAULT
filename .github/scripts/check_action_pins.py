@@ -58,8 +58,18 @@ FULL_SHA_PATTERN = re.compile(r"^[0-9a-f]{40}$")
 # `pragent/pr-agent:github_action` past a 40-char pin (see
 # .github/actions/pr-agent/action.yml). So `image:` gets checked too, and for a
 # digest rather than a SHA: registries address content by sha256, not by commit.
-IMAGE_PATTERN = re.compile(r"""^\s*image:\s*(.+?)\s*$""")
+# The key may be quoted (`"image": …`) — YAML treats that as the same key, so a
+# pattern anchored on a bare `image:` would not see it.
+IMAGE_PATTERN = re.compile(r"""^\s*["']?image["']?\s*:\s*(.+?)\s*$""")
 IMAGE_DIGEST_PATTERN = re.compile(r"@sha256:[0-9a-f]{64}$")
+# `runs.using: docker` declares a container action, in block or flow form, with
+# either key quoted. Used to fail CLOSED: if a file says it runs a container and
+# this line-oriented reader found no `image:` line, the image is unverified —
+# not absent. `runs: {using: docker, image: "docker://alpine:latest"}` is valid
+# metadata that puts the image mid-line, where IMAGE_PATTERN cannot reach it.
+DOCKER_ACTION_PATTERN = re.compile(
+    r"""["']?using["']?\s*:\s*["']?docker["']?""", re.IGNORECASE
+)
 # `FROM <base> [AS <stage>]`, case-insensitive, --platform= flags tolerated.
 FROM_PATTERN = re.compile(
     r"^\s*FROM\s+(?:--\S+\s+)*(\S+)(?:\s+AS\s+(\S+))?\s*$", re.IGNORECASE
@@ -117,7 +127,42 @@ def unpinned_refs(path: Path) -> list[tuple[int, str]]:
             continue
         if not IMAGE_DIGEST_PATTERN.search(image):
             findings.append((lineno, f"{image} (image needs @sha256:<64 hex>)"))
+    findings.extend(_unreadable_docker_metadata(path, lines))
     return findings
+
+
+def _unreadable_docker_metadata(path: Path, lines: list[str]) -> list[tuple[int, str]]:
+    """Fail closed when a container action's `image:` is out of this reader's reach.
+
+    Everything above is line-oriented, and an unmatched line was being treated
+    as safe. But `runs: {using: docker, image: "docker://alpine:latest"}` is
+    valid action metadata that runs exactly the same mutable container, with the
+    `image:` mid-line where no `^image:` pattern can see it. Reporting OK there
+    is the guard saying "verified" about something it never read.
+
+    So: if the file declares `using: docker` and no `image:` line was matched,
+    that is a finding. A `using: composite`/`node20` action names no image and
+    is not implicated.
+    """
+    if path.name not in ("action.yml", "action.yaml"):
+        # `runs.using` is action metadata. A workflow has no such key, and
+        # scanning for one there would only invent findings.
+        return []
+    if any(IMAGE_PATTERN.match(line) for line in lines):
+        return []
+    for lineno, line in enumerate(lines, start=1):
+        if line.lstrip().startswith("#"):
+            # A comment describing a Docker action is not one.
+            continue
+        if DOCKER_ACTION_PATTERN.search(line):
+            return [
+                (
+                    lineno,
+                    "runs.using: docker with no `image:` line this guard can read "
+                    "(flow mapping or other unsupported YAML form; image unverified)",
+                )
+            ]
+    return []
 
 
 def _scalar(raw: str) -> str:
@@ -196,6 +241,32 @@ def _resolve_in_repo(base: Path, rel: str) -> Path | None:
     return candidate
 
 
+def _readable(candidate: Path) -> tuple[Path | None, str]:
+    """The path to read, or (None, reason) when reading it would be unsafe.
+
+    Rejects the symlink ITSELF rather than resolve-and-recheck. Checking only
+    the resolved path was not enough: a link whose target lands inside the repo
+    — another tracked file, or a device/FIFO under the tree — passes both
+    containment and is_file() and then gets read anyway, and is_file() to
+    read_text() is two syscalls with a window between them. is_symlink() does
+    not follow the link. Nothing this guard reads is legitimately a symlink, so
+    rejecting outright costs the repository nothing.
+
+    This guard runs trusted code against PR-head content, so a PR can plant
+    either the action metadata or the Dockerfile an `image:` line names.
+    Pointed at a character device (/dev/zero) read_text() never returns and the
+    gate hangs instead of failing — a fail-closed check turned into a stall.
+    """
+    if candidate.is_symlink():
+        return None, "symlink; not read"
+    resolved = _resolve_in_repo(candidate.parent, candidate.name)
+    if resolved is None:
+        return None, "resolves outside the repository; not read"
+    if not resolved.is_file():
+        return None, f"not a regular file ({resolved}); not read"
+    return resolved, ""
+
+
 def local_action_files(path: Path) -> list[Path]:
     """Action metadata reachable through `uses: ./…` from this file.
 
@@ -241,9 +312,9 @@ def _unpinned_from_lines(
     Exceptions, both legitimate: `scratch` (the empty base, which has no
     digest) and a reference to an earlier build stage declared with `AS`.
     """
-    dockerfile = _resolve_in_repo(action_path.parent, image)
+    dockerfile, reason = _readable(action_path.parent / image)
     if dockerfile is None:
-        return [(image_lineno, f"{image} (path escapes the repository)")]
+        return [(image_lineno, f"{image} ({reason})")]
     try:
         text = dockerfile.read_text(encoding="utf-8")
     except OSError:
@@ -291,28 +362,11 @@ def main() -> int:
             continue
         seen.add(path)
         rel = path.relative_to(REPO_ROOT).as_posix()
-        # Check what will actually be read BEFORE reading it. This guard runs
-        # trusted code against PR-head content, so a PR can plant
-        # .github/actions/x/action.yml as a symlink. Pointed at a character
-        # device (/dev/zero) read_text() never returns and the gate hangs
-        # instead of failing — a fail-closed check turned into a stall. Pointed
-        # outside the repo it reads something that is not vault content.
-        # Reject the symlink itself rather than resolve-and-recheck. Checking
-        # the RESOLVED path was not enough: a link whose target lands inside
-        # the repo — another tracked file, or a device/FIFO under the tree —
-        # passes both containment and is_file() and then gets read anyway, and
-        # is_file() to read_text() is two syscalls with a window between them.
-        # is_symlink() does not follow the link. No action.yml in this
-        # repository is a symlink, so rejecting outright costs nothing.
-        if path.is_symlink():
-            findings.append(f"{rel}: symlink; not read")
-            continue
-        resolved = _resolve_in_repo(path.parent, path.name)
-        if resolved is None:
-            findings.append(f"{rel}: resolves outside the repository; not read")
-            continue
-        if not resolved.is_file():
-            findings.append(f"{rel}: not a regular file ({resolved}); not read")
+        # Check what will actually be read BEFORE reading it — see _readable().
+        # The Dockerfile an `image:` line names goes through the same gate.
+        readable, reason = _readable(path)
+        if readable is None:
+            findings.append(f"{rel}: {reason}")
             continue
         queue.extend(local_action_files(path))
         for lineno, ref in unpinned_refs(path):
