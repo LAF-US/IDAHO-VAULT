@@ -92,10 +92,9 @@ RUNS_PATTERN = re.compile(r"""^(\s*)["']?runs["']?\s*:\s*(.*?)\s*$""")
 # whole-document mapping. Same fail-closed treatment as FLOW_USES_PATTERN, and
 # for the same reason: no line-oriented pattern can read the image out of it.
 FLOW_RUNS_PATTERN = re.compile(r"""[{,]\s*["']?runs["']?\s*:""")
-# `FROM <base> [AS <stage>]`, case-insensitive, --platform= flags tolerated.
-FROM_PATTERN = re.compile(
-    r"^\s*FROM\s+(?:--\S+\s+)*(\S+)(?:\s+AS\s+(\S+))?\s*$", re.IGNORECASE
-)
+# Dockerfile `FROM` instructions are parsed by `_from_instruction()` rather
+# than a repeated-token regular expression: the guard accepts only the small
+# grammar it can verify, while avoiding regex backtracking on PR-supplied text.
 
 
 def scan_targets() -> list[Path]:
@@ -150,8 +149,10 @@ def _uses_findings(lines: list[str]) -> list[tuple[int, str]]:
                 findings.append(
                     (
                         lineno,
-                        "uses: in a flow mapping "
-                        "(unsupported YAML form; ref unverified)",
+                        (
+                            "uses: in a flow mapping "
+                            "(unsupported YAML form; ref unverified)"
+                        ),
                     )
                 )
             continue
@@ -204,6 +205,14 @@ def _image_findings(path: Path, lines: list[str]) -> list[tuple[int, str]]:
     return findings
 
 
+def _container_runs_without_readable_image(block: list[str]) -> bool:
+    """Whether a `runs:` block names a Docker action but no readable image line."""
+    code = [line for line in block if not line.lstrip().startswith("#")]
+    return any(DOCKER_ACTION_PATTERN.search(line) for line in code) and not any(
+        IMAGE_PATTERN.match(line) for line in code
+    )
+
+
 def _unreadable_docker_metadata(path: Path, lines: list[str]) -> list[tuple[int, str]]:
     """Fail closed when a container action's `image:` is out of this reader's reach.
 
@@ -239,17 +248,17 @@ def _unreadable_docker_metadata(path: Path, lines: list[str]) -> list[tuple[int,
         if not match or (root is not None and match.group(1) != root):
             continue
         block = _block_at(lines, lineno, match.group(1))
-        code = [b for b in block if not b.lstrip().startswith("#")]
-        if not any(DOCKER_ACTION_PATTERN.search(b) for b in code):
-            # composite / node20: names no image, not implicated.
-            continue
-        if any(IMAGE_PATTERN.match(b) for b in code):
+        if not _container_runs_without_readable_image(block):
+            # Composite / node20 actions name no image, and a block image is
+            # already handled by `_image_findings()`.
             continue
         findings.append(
             (
                 lineno,
-                "runs.using: docker with no `image:` line this guard can read "
-                "(flow mapping or other unsupported YAML form; image unverified)",
+                (
+                    "runs.using: docker with no `image:` line this guard can read "
+                    "(flow mapping or other unsupported YAML form; image unverified)"
+                ),
             )
         )
     return findings
@@ -389,6 +398,29 @@ def _logical_lines(text: str) -> list[tuple[int, str]]:
     return out
 
 
+def _from_instruction(line: str) -> tuple[str, str | None] | None:
+    """Return the base image and optional stage from one supported FROM instruction.
+
+    Docker permits leading `--flag=value` tokens before the base image. The
+    guard deliberately rejects forms it cannot identify exactly rather than
+    applying a permissive regular expression to untrusted Dockerfile text.
+    """
+    words = line.split()
+    if not words or words[0].upper() != "FROM":
+        return None
+    words = words[1:]
+    while words and words[0].startswith("--"):
+        words.pop(0)
+    if not words:
+        return None
+    base = words.pop(0)
+    if not words:
+        return base, None
+    if len(words) == 2 and words[0].upper() == "AS":
+        return base, words[1]
+    return None
+
+
 def _resolve_in_repo(base: Path, rel: str) -> Path | None:
     """Resolve `rel` against `base`, refusing anything outside the repository.
 
@@ -500,10 +532,10 @@ def _unpinned_from_lines(
     findings: list[tuple[int, str]] = []
     stages: set[str] = set()
     for lineno, line in _logical_lines(text):
-        match = FROM_PATTERN.match(line)
-        if not match:
+        instruction = _from_instruction(line)
+        if instruction is None:
             continue
-        base, stage = match.group(1), match.group(2)
+        base, stage = instruction
         # Classify the base BEFORE registering this line's own alias. Adding it
         # first lets a stage exempt itself: `FROM alpine AS alpine` would match
         # `base in stages` and skip the digest check on a mutable image. Only
@@ -514,8 +546,10 @@ def _unpinned_from_lines(
             findings.append(
                 (
                     image_lineno,
-                    f"{image} -> {rel}:{lineno} FROM {base} "
-                    "(needs @sha256:<64 hex>)",
+                    (
+                        f"{image} -> {rel}:{lineno} FROM {base} "
+                        "(needs @sha256:<64 hex>)"
+                    ),
                 )
             )
         if stage:
