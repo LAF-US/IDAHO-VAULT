@@ -46,6 +46,12 @@ babel.config.js
 .env
 .env.local
 .env.*.local
+.env.production
+.env.staging
+.env.development
+.env.test
+.env.backup
+.env.*
 
 # Git
 .git/
@@ -65,13 +71,31 @@ azure-pipelines.yml
 .DS_Store
 Thumbs.db
 
-# Sensitive files
+# Sensitive files and certificates
 .factory/certs/
 .op/
 .secrets/
+certs/
+certificates/
+ssl/
+tls/
 *.pem
 *.key
 *.keystore
+*.p12
+*.pfx
+*.crt
+*.cer
+*.der
+*.p8
+*.pkcs12
+*.jks
+id_rsa
+id_rsa.*
+id_ed25519
+id_ed25519.*
+id_ecdsa
+id_ecdsa.*
 
 # Debug logs
 debug.log
