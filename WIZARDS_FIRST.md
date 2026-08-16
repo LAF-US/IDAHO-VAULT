@@ -39,8 +39,8 @@ The first of the numbered Wizard's Rules stated across Terry Goodkind's *Sword o
 
 ## Sources / URLs
 
-- https://www.goodreads.com/work/quotes/1323305-wizard-s-first-rule
-- https://sot.fandom.com/wiki/Wizard's_Rules
+- <https://www.goodreads.com/work/quotes/1323305-wizard-s-first-rule>
+- <https://sot.fandom.com/wiki/Wizard's_Rules>
 
 ---
 

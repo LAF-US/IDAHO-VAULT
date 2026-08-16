@@ -1,4 +1,5 @@
 ---
+title: "RT @clarkcorbin Little Last week things changed for the..."
 date: 2020-10-26
 time: 21:22:48
 tweet_id: "1320838314396655616"

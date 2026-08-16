@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2020-02-28
 time: 17:25:13
 tweet_id: "1233443049356722177"
@@ -14,10 +15,10 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/hytlHR8YON
+<https://t.co/hytlHR8YON>
 
 ## Links
-- https://x.com/NateBrownNews/status/1233442001502081025
+- <https://x.com/NateBrownNews/status/1233442001502081025>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

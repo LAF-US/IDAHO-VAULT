@@ -220,6 +220,6 @@ its holder, and the office will seek a new holder if the current one is removed.
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

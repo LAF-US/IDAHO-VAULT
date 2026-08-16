@@ -177,6 +177,6 @@ Active journalism work includes a JFAC open meetings transparency investigation 
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

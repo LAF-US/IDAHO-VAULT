@@ -1,4 +1,5 @@
 ---
+title: "RT @pfannyyy NEW More infectious COVID-19 variant found in..."
 date: 2021-01-19
 time: 18:24:47
 tweet_id: "1351596484207144960"

@@ -1,4 +1,5 @@
 ---
+title: "Here is the budget highlights. I haven\u2019t seen the full..."
 date: 2021-01-11
 time: 21:55:59
 tweet_id: "1348750527824277512"
@@ -19,10 +20,10 @@ related:
 ---
 
 @IDprisonproject @IdahoPTV @GovernorLittle Here is the budget highlights. I haven’t seen the full detailed budget yet. 
-https://t.co/1ad46S7C57
+<https://t.co/1ad46S7C57>
 
 ## Links
-- https://gov.idaho.gov/wp-content/uploads/sites/74/2021/01/fy22-budget-highlights.pdf
+- <https://gov.idaho.gov/wp-content/uploads/sites/74/2021/01/fy22-budget-highlights.pdf>
 
 *In reply to [@IDprisonproject](https://twitter.com/IDprisonproject)*
 

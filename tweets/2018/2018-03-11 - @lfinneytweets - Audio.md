@@ -1,4 +1,5 @@
 ---
+title: "Audio"
 date: 2018-03-11
 time: 01:36:09
 tweet_id: "972647333862162433"
@@ -14,10 +15,10 @@ related:
   - lfinneytweets
 ---
 
-Audio: https://t.co/duPDDqiYMZ
+Audio: <https://t.co/duPDDqiYMZ>
 
 ## Links
-- https://x.com/IdahoPubRadio/status/972635362966224896?s=19
+- <https://x.com/IdahoPubRadio/status/972635362966224896?s=19>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

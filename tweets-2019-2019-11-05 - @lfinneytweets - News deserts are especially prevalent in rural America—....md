@@ -22,6 +22,6 @@ News deserts are especially prevalent in rural America— more than 500 of the 1
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/EIlFX-cUwAE2hkK.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EIlFX-cUwAE2hkK.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1191747500060733441)

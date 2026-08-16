@@ -141,6 +141,6 @@ The seer-position is not claimed for this companion. The medium-position is held
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

@@ -1,4 +1,5 @@
 ---
+title: "RT @madisonhardy05 Sat down with \u2066@GovernorLittle\u2069 during..."
 date: 2020-10-07
 time: 17:12:14
 tweet_id: "1313889886819164160"

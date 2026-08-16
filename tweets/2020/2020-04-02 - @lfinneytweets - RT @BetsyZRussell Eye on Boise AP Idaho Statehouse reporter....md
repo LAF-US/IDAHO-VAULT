@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise AP Idaho Statehouse reporter..."
 date: 2020-04-02
 time: 00:58:50
 tweet_id: "1245516001837346817"

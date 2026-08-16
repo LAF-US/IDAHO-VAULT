@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports This week on the podcast, Mark McGuire..."
 date: 2022-09-21
 time: 17:30:19
 tweet_id: "1572639375296724995"

@@ -77,6 +77,6 @@ The vault registered it as a shibboleth: **`JUST A GUY : THE CHOSEN ONE : LUNCH 
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

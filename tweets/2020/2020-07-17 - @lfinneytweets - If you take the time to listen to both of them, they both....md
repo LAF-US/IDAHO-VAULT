@@ -1,4 +1,5 @@
 ---
+title: "If you take the time to listen to both of them, they both..."
 date: 2020-07-17
 time: 16:46:23
 tweet_id: "1284167574658285570"

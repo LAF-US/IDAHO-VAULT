@@ -89,17 +89,110 @@ class Finding:
     rule: str
 
 
-def is_allowed_content_match(rule: str, line: str) -> bool:
-    """Allow narrow generic placeholders without muting dedicated token rules."""
+# An assignment whose right-hand side is an UNQUOTED dotted identifier chain is
+# code referring to code (`password → this.render_password_component`,
+# `data.api_key ← provider.data.api_key`; arrows here, not `:`/`=`, so the
+# generic rule on the CURRENT default branch cannot fire on this very comment
+# while this file rides through review), never a secret VALUE — but only in a
+# file whose format actually parses an unquoted RHS as an expression. The
+# allowance is therefore PATH-GATED to expression-language sources (the
+# JS/TS family, where every verified false positive lives); in YAML, JSON,
+# Markdown, and every other format an unquoted dotted string is a data
+# scalar, and no string-level fence can tell the two apart because YAML flow
+# syntax mirrors JS object literals exactly (Copilot's third-round catch on
+# #957: capital-and-underscore-bearing scalars defeat morphology alone).
+# Within expression files, five fences keep real material caught:
+# (1) a quoted RHS is a literal and never allowed here; (2) the chain must
+# be followed by code punctuation — a call, separator, or closer — so a bare
+# token dangling at end-of-line stays flagged; (3) a first segment starting
+# with `eyJ` (base64 of `{"`, the prefix of every JWT header) is rejected
+# outright, since JWT segments can otherwise satisfy the identifier grammar;
+# (4) the chain must carry identifier MORPHOLOGY — at least one underscore,
+# `$`, or capital letter — because long code references name things, and
+# names carry word boundaries (camelCase, snake_case, or a `$`). Digits
+# deliberately do NOT count as morphology — secrets are digit-rich, and `\w`
+# already admits digits inside segments. Segments must each start with a
+# letter/underscore, so base64 chunks with digits leading or -, +, /, =
+# anywhere break the grammar. (5) the line PREFIX before the match must be
+# plain code: any earlier quote, backtick, `//`, `/*`, or a leading `*`
+# (JSDoc continuation) rejects the allowance, because the match may then sit
+# inside comment or string TEXT, where a pasted credential is characters,
+# not a code reference (Copilot's fourth-round catch on #957). The prefix
+# check is deliberately parity-free and conservative — a CLOSED string
+# earlier on the line also rejects, and noise is the correct direction for
+# a secret gate to fail. Residual, documented: a line in the BODY of a
+# multi-line template literal or block comment carries no marker of its own;
+# closing that needs a real JS lexer, out of proportion for this guard.
+_EXPRESSION_SOURCE_SUFFIXES = (".js", ".mjs", ".cjs", ".jsx", ".ts", ".tsx")
+_JS_NONCODE_PREFIX = re.compile(r"""^\s*\*|["'`]|//|/\*""")
+
+
+def _chain_allowance_applies(line: str, match: re.Match, path: str) -> bool:
+    """True when this generic match is an identifier-chain code reference."""
+    if not path.lower().endswith(_EXPRESSION_SOURCE_SUFFIXES):
+        return False
+    if _JS_NONCODE_PREFIX.search(line[: match.start()]):
+        return False
+    return bool(_UNQUOTED_IDENTIFIER_CHAIN_RHS.match(line, match.start()))
+
+
+# The key is either BARE or a PAIRED-quoted object key (`"password":`) —
+# independent optional quotes would let the OPENING quote of a plain string
+# literal (`"password: …`) be absorbed into the match, hiding it from the
+# prefix fence; requiring the close-quote before the separator is what
+# separates a quoted key from string text.
+_UNQUOTED_IDENTIFIER_CHAIN_RHS = re.compile(
+    r"""(?ix)
+    (?:
+      (?P<q>["'])(?:api[_-]?key|secret|token|password|passwd|pwd)(?P=q)
+      |
+      \b(?:api[_-]?key|secret|token|password|passwd|pwd)\b
+    )
+    \s*[:=]\s*
+    (?!["'])
+    (?!eyJ)
+    (?-i:(?=[\w$.]*[_$A-Z]))
+    [A-Za-z_$][\w$]*(?:\.[A-Za-z_$][\w$]*)+
+    (?![\w$./+=:-])
+    \s*[,;()}\]]
+    """
+)
+
+
+def is_allowed_content_match(
+    rule: str, line: str, match: re.Match | None = None, path: str | None = None
+) -> bool:
+    """Allow narrow generic placeholders without muting dedicated token rules.
+
+    Every allowance except the explicit inline directive is SPAN-TIED: it
+    clears only the specific generic-assignment match it inspects, never the
+    whole line. On a minified one-line bundle, a benign `password:
+    this.component,` — or an innocent `process.env.NAME` reference — must not
+    make a real `token="..."` elsewhere on the same line invisible; each match
+    is judged where it stands. The identifier-chain shape is re-anchored at
+    the match's own start (positional, on the full line: its trailing
+    code-punctuation fence must see the character AFTER the generic match,
+    which lies outside the match text) and applies only when `path` names an
+    expression-language source file whose line prefix is plain code — see
+    `_chain_allowance_applies`. The placeholder shapes are searched within
+    the matched text itself (keyword, separator, and RHS), which is strictly
+    narrower than the line scope they used to get, and are path-independent
+    — they are placeholder conventions, not syntax. Only `secret-pattern:
+    allow` stays line-scoped — it is a deliberate human directive, not a
+    shape heuristic.
+    """
     if rule != "generic_secret_assignment":
         return False
     if "secret-pattern: allow" in line:
         return True
+    if match is not None and path is not None and _chain_allowance_applies(line, match, path):
+        return True
+    scope = match.group(0) if match is not None else line
     return bool(
-        re.search(r"\bprocess\.env\.[A-Z0-9_]+\b", line)
-        or re.search(r"""(?i)["']?env:[A-Z][A-Z0-9_]*["']?""", line)
-        or re.search(r"""(?i)["']?\$secretRef(?::[A-Za-z0-9_.:/-]+)?["']?""", line)
-        or re.search(r"(?i)\breplace-with-[A-Za-z0-9_-]+\b", line)
+        re.search(r"\bprocess\.env\.[A-Z0-9_]+\b", scope)
+        or re.search(r"""(?i)["']?env:[A-Z][A-Z0-9_]*["']?""", scope)
+        or re.search(r"""(?i)["']?\$secretRef(?::[A-Za-z0-9_.:/-]+)?["']?""", scope)
+        or re.search(r"(?i)\breplace-with-[A-Za-z0-9_-]+\b", scope)
     )
 
 
@@ -172,6 +265,7 @@ def path_findings(path: str) -> list[Finding]:
         return [Finding(path=path, line=None, rule="secret_path")]
     return []
 
+
 def staged_file_bytes(path: str) -> bytes | None:
     try:
         result = subprocess.run(
@@ -202,10 +296,14 @@ def content_findings(path: str, data: bytes) -> list[Finding]:
     findings: list[Finding] = []
     for line_number, line in enumerate(text.splitlines(), start=1):
         for rule, pattern in SECRET_CONTENT_PATTERNS.items():
-            if pattern.search(line):
-                if is_allowed_content_match(rule, line):
+            # Judge every match on the line, not just the first: a line is
+            # clean only if each match is individually allowed. One finding
+            # per rule per line, as before.
+            for match in pattern.finditer(line):
+                if is_allowed_content_match(rule, line, match, path):
                     continue
                 findings.append(Finding(path=path, line=line_number, rule=rule))
+                break
     return findings
 
 

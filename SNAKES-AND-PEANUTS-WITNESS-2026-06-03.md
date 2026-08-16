@@ -76,6 +76,6 @@ staged, not consecrated.
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

@@ -230,6 +230,6 @@ own discipline; "we took it out of production" is the start, not the finish.
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

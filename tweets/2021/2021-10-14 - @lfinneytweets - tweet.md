@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2021-10-14
 time: 03:59:04
 tweet_id: "1448498566243045380"
@@ -13,9 +14,9 @@ related:
   - lfinneytweets
 ---
 
-@TaraBethIdaho https://t.co/Wvmb4bzh0j
+@TaraBethIdaho <https://t.co/Wvmb4bzh0j>
 
 ## Media
-- ![](https://pbs.twimg.com/tweet_video_thumb/FBoZww-VgAACgxa.jpg)
+- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/FBoZww-VgAACgxa.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1448498566243045380)

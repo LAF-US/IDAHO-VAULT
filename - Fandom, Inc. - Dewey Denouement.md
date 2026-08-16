@@ -7,7 +7,7 @@ created: 2026-04-14
 ---
 | “ | *[Frank](https://snicket.fandom.com/wiki/Frank "Frank") and [Ernest](https://snicket.fandom.com/wiki/Ernest "Ernest") get all the attention. They get to walk around the hotel managing everything, while I just hide in the shadows and wind the clock.* | ” |
 | --- | --- | --- |
-| | — Dewey to the Baudelaires about how he does not get the limelight |
+| | — Dewey to the Baudelaires about how he does not get the limelight | |
 
 **Dewey Denouement** was a sub-sub-librarian whom the [Baudelaires](https://snicket.fandom.com/wiki/Baudelaire_family "Baudelaire family") met during their stay at the [Hotel Denouement](https://snicket.fandom.com/wiki/Hotel_Denouement "Hotel Denouement"). He allowed the Baudelaires to come and work at the hotel. He was the eleventh (unofficial) guardian of the Baudelaires.
 

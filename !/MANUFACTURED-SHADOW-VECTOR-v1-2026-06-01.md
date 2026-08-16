@@ -250,6 +250,6 @@ before and after the moment refusal would have lived:
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

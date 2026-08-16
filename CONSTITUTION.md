@@ -9,6 +9,7 @@ related:
 - README
 - "! - Wizard's Rules"
 ---
+[[C]][[O]][[N]][[S]][[T]][[I]][[T]][[U]][[T]][[I]][[O]][[N]]
 
 by Logan Alvan Finney
 
@@ -204,6 +205,6 @@ Unified (US) Swarm designed and written in Logan's Project & Protocols "Vaulted 
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

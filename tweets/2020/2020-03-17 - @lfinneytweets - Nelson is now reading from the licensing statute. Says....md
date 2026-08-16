@@ -1,4 +1,5 @@
 ---
+title: "Nelson is now reading from the licensing statute. Says..."
 date: 2020-03-17
 time: 00:12:21
 tweet_id: "1239706100808601603"

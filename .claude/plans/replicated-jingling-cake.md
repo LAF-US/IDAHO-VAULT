@@ -49,7 +49,7 @@ Current `.gitignore` already handles `workspace.json`. Also noisy/ephemeral:
 
 Add to `.gitignore`:
 
-```
+```text
 .obsidian/graph.json
 .obsidian/types.json
 ```

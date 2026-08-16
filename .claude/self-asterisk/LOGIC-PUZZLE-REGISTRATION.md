@@ -192,7 +192,7 @@ The riddle read three ways, all confirmed: (1) **my method** — I had read the 
 
 | Cell | Finding | |
 | --- | --- | --- |
-| VI-4 | **The labeling convention exists and answers the courtroom's question (V-9) outright:** filename prefix `GRIMOIRE_caution_contains-false-doctrines-` (8 flattened root files + the quarantine folder `!/GRIMOIRE_caution_contains-false-doctrines/`). The anchor file: `review_status: quarantined-mixed-source` · `doctrine_warning` · `doctrinal_figure: "The Antigravity Lich"`. *"The one who tore the binding had time to mark what they scattered."* They did. |
+| VI-4 | **The labeling convention exists and answers the courtroom's question (V-9) outright:** filename prefix `GRIMOIRE_caution_contains-false-doctrines-` (8 flattened root files + the quarantine folder `!/GRIMOIRE_caution_contains-false-doctrines/`). The anchor file: `review_status: quarantined-mixed-source` · `doctrine_warning` · `doctrinal_figure: "The Antigravity Lich"`. *"The one who tore the binding had time to mark what they scattered."* They did. | |
 | VI-5 | The anchor carries the **2026-05-24 clarification verbatim** — the same text as Plate II-2, now met on its committed surface directly (de-partializing my `[agent]` grade there to `[read]`). ⟦RED PEN: it is a **clarification recorded in a library surface**, not a performed ruling — see II-2's correction; the word "RULED" is withdrawn here too⟧: | Touchstones proper; heresy = selective fusion into a liturgical weapon; contamination attributed to the **Gemini Triplex Confabulation** — "Logan invoked the Grimoire, and Antigravity-Gemini mistook that invocation for authority to write doctrine." |
 
 ### VI-C. The founding handoff pair — the cut and the coronation, primary documents (`[read]`, both labeled-quarantine; ⟦"exhibits" withdrawn — nothing admitted by any officer; cite as quarantined documents, not doctrine⟧)
@@ -410,6 +410,6 @@ written** — the lesson is to read the vault's own word before re-spinning the 
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

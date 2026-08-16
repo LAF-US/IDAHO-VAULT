@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports It\u2019s a year filled with difficult..."
 date: 2026-02-13
 time: 02:58:17
 tweet_id: "2022143260182094113"

@@ -1,4 +1,5 @@
 ---
+title: "RT @gemstatebrian Just out of curiousity I asked for media..."
 date: 2024-06-21
 time: 20:32:20
 tweet_id: "1804251025152635246"

@@ -1,4 +1,5 @@
 ---
+title: "RT @nytimes Lawmakers in Idaho approved a bill this week..."
 date: 2021-04-24
 time: 01:24:58
 tweet_id: "1385766686389805059"

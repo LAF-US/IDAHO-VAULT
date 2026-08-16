@@ -28,6 +28,6 @@ RT @BetsyZRussell: Eye on Boise: House defeats daycare licensing update bill #id
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/EPY_4BMVUAE7YC6.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EPY_4BMVUAE7YC6.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1222292537949351936)

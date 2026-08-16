@@ -264,7 +264,7 @@ Based on AIMultiple 2026 benchmark:
 
 **Architecture Stack (2026)**:
 
-```
+```text
 ┌────────────────────────────────────Ŀ
 │           Applications                 │
 ├────────────────────────────────────Ĵ
@@ -334,7 +334,7 @@ Based on AIMultiple 2026 benchmark:
 
 #### 5.1 LangChain Architecture
 
-```
+```text
 ┌────────────────────────────────────────────────────────Ŀ
 │                    LangChain Ecosystem                     │
 ├────────────────────────────────────────────────────────Ĵ
@@ -364,7 +364,7 @@ Based on AIMultiple 2026 benchmark:
 
 #### 5.2 LangGraph Architecture
 
-```
+```text
 ┌────────────────────────────────────────────────────────Ŀ
 │                    LangGraph Framework                      │
 ├────────────────────────────────────────────────────────Ĵ
@@ -531,7 +531,7 @@ Based on AIMultiple 2026 benchmark:
 
 ### Suggested Learning Path
 
-```
+```text
 Phase 1: Foundation (1-2 weeks)
 ├── Learn LangChain basics
 ├── Master LCEL

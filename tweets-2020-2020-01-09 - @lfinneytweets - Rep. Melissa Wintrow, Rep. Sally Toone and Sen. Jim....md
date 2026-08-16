@@ -22,6 +22,6 @@ Rep. Melissa Wintrow, Rep. Sally Toone and Sen. Jim Woodward listen to testimony
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/EN349X8U4AIIvjs.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EN349X8U4AIIvjs.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1215402523160244224)

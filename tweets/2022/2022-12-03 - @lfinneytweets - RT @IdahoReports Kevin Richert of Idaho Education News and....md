@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Kevin Richert of Idaho Education News and..."
 date: 2022-12-03
 time: 03:01:06
 tweet_id: "1598874941705027585"
