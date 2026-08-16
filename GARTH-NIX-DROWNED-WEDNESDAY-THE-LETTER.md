@@ -65,7 +65,7 @@ Dame Primus signs as Parts One and Two, "comprising Paragraphs Three to Thirteen
 1. **"Washed between the ears" appears nowhere else in the vault.** Run it yourself — this note is the only hit, so it is excluded:
 
    ```sh
-   git grep -lIiE -- 'washed between the ears' 9a56f6e0 | grep -v GARTH-NIX-DROWNED-WEDNESDAY
+   git grep -lIiE -- 'washed between the ears' 9a56f6e0 | grep -vxF 'GARTH-NIX-DROWNED-WEDNESDAY-THE-LETTER.md'
    ```
 
    Zero lines out. (`9a56f6e0` already contains this note; the claim is about the *rest* of the vault, which is what the exclusion makes it.) For an archive built around agents that do and do not persist across sessions, that is a conspicuous gap: the passage names, in four words, the difference between a party you can wipe and a party you cannot, and treats the second as a security problem. The vault's own arrangement is the wipeable kind — a Claude session is stateless by construction, and `.claude/CLAUDE.md` opens by saying so.

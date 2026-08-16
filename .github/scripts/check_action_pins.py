@@ -70,6 +70,12 @@ FULL_SHA_PATTERN = re.compile(r"^[0-9a-f]{40}$")
 # pattern anchored on a bare `image:` would not see it.
 IMAGE_PATTERN = re.compile(r"""^\s*["']?image["']?\s*:\s*(.+?)\s*$""")
 IMAGE_DIGEST_PATTERN = re.compile(r"@sha256:[0-9a-f]{64}$")
+WORKFLOW_CONTAINER_PATTERN = re.compile(
+    r"""^\s*["']?container["']?\s*:\s*(.+?)\s*$"""
+)
+WORKFLOW_SERVICES_PATTERN = re.compile(
+    r"""^\s*["']?services["']?\s*:\s*(.+?)\s*$"""
+)
 # `runs.using: docker` declares a container action, in block or flow form, with
 # either key quoted. Used to fail CLOSED: if a file says it runs a container and
 # this line-oriented reader found no `image:` line, the image is unverified —
@@ -114,7 +120,7 @@ def _read(path: Path) -> tuple[str | None, str]:
     still goes red, but it names a Python error rather than the file.
     """
     try:
-        return path.read_text(encoding="utf-8"), ""
+        return path.read_text(encoding="utf-8-sig"), ""
     except UnicodeDecodeError:
         return None, "not valid UTF-8; cannot verify pins"
     except OSError as exc:
@@ -132,6 +138,7 @@ def unpinned_refs(path: Path, text: str) -> list[tuple[int, str]]:
     return [
         *_uses_findings(lines),
         *_image_findings(path, lines),
+        *_workflow_inline_image_findings(path, lines),
         *_unreadable_docker_metadata(path, lines),
     ]
 
@@ -202,6 +209,37 @@ def _image_findings(path: Path, lines: list[str]) -> list[tuple[int, str]]:
             continue
         if not IMAGE_DIGEST_PATTERN.search(image):
             findings.append((lineno, f"{image} (image needs @sha256:<64 hex>)"))
+    return findings
+
+
+def _workflow_inline_image_findings(
+    path: Path, lines: list[str]
+) -> list[tuple[int, str]]:
+    """Fail closed on workflow container/service images hidden in inline YAML."""
+
+    if path.parent != REPO_ROOT / ".github" / "workflows":
+        return []
+
+    findings: list[tuple[int, str]] = []
+    for lineno, line in enumerate(lines, start=1):
+        container = WORKFLOW_CONTAINER_PATTERN.match(line)
+        if container:
+            image = _scalar(container.group(1))
+            if image.startswith("{"):
+                findings.append(
+                    (lineno, "inline container mapping; image digest unverified")
+                )
+            elif not IMAGE_DIGEST_PATTERN.search(image):
+                findings.append(
+                    (lineno, f"{image} (container image needs @sha256:<64 hex>)")
+                )
+            continue
+
+        services = WORKFLOW_SERVICES_PATTERN.match(line)
+        if services and _scalar(services.group(1)) not in ("{}", "[]"):
+            findings.append(
+                (lineno, "inline services mapping; image digests unverified")
+            )
     return findings
 
 
@@ -354,7 +392,11 @@ def _escape_char(lines: list[str]) -> str:
         stripped = line.strip()
         if not stripped.startswith("#"):
             return "\\"
-        directive = re.match(r"#\s*(\w+)\s*=\s*(\S+)\s*$", stripped)
+        directive = re.match(
+            r"#\s*(syntax|escape|check)\s*=\s*(\S+)\s*$",
+            stripped,
+            re.IGNORECASE,
+        )
         if not directive:
             return "\\"
         if directive.group(1).lower() == "escape":

@@ -71,8 +71,17 @@ jobs:
           python .github/scripts/jupytext_sync_paired.py > "$twins_file"
           mapfile -t paired_twins < "$twins_file"
           rm -f -- "$twins_file"
-          if ((${#paired_twins[@]})) && ! git diff --quiet -- "${paired_twins[@]}"; then
-            echo "::error::A notebook twin is out of sync. Run 'jupytext --sync <notebook>' and commit the twin."
+          paired_status=""
+          if ((${#paired_twins[@]})); then
+            paired_status="$(git status --short --untracked-files=all --ignored -- "${paired_twins[@]}")"
+          fi
+          if ((${#paired_twins[@]})) && {
+            ! git diff --quiet -- "${paired_twins[@]}" || [[ -n "$paired_status" ]]
+          }; then
+            echo "::error::A notebook twin is out of sync or untracked. Run 'jupytext --sync <notebook>' and commit the twin."
             git --no-pager diff --stat -- "${paired_twins[@]}"
+            if [[ -n "$paired_status" ]]; then
+              printf '%s\n' "$paired_status"
+            fi
             exit 1
           fi

@@ -7,7 +7,7 @@
 #
 # Requires: gh (authenticated with pull-requests:write and contents:write), jq
 
-set -uo pipefail
+set -euo pipefail
 
 REPO="${REPO:-LAF-US/IDAHO-VAULT}"
 BASE="${BASE:-main}"
@@ -80,7 +80,10 @@ printf '%-7s %-48s %-25s %s\n' '---' '------' '------' '------'
 # so this script enumerates all open PRs and explicitly skips anything whose
 # base is not the requested branch. Slurping paginated arrays keeps it correct
 # if the repository has more than 100 open PRs.
-prs_json="$(api_get "repos/${REPO}/pulls?state=open&per_page=100" --paginate | jq -s 'add')"
+if ! prs_json="$(api_get "repos/${REPO}/pulls?state=open&per_page=100" --paginate | jq -e -s 'add | select(type == "array")')"; then
+  printf 'ERROR: cannot list open pull requests.\n' >&2
+  exit 1
+fi
 
 seen_heads=()
 updated=0
@@ -114,6 +117,11 @@ while IFS=$'\t' read -r number base_ref draft head_sha head_ref head_repo head_l
     ((skipped += 1))
     continue
   fi
+  if [[ -z "$head_sha" || -z "$head_ref" || -z "$head_repo" ]]; then
+    printf '#%-6s %-48s %-25s %s\n' "$number" "${head_ref:--}" '-' 'SKIP: source branch unavailable'
+    ((skipped += 1))
+    continue
+  fi
   if [[ "$head_repo" != "$REPO" && "$INCLUDE_FORKS" != true ]]; then
     printf '#%-6s %-48s %-25s %s\n' "$number" "$head_ref" '-' 'SKIP: fork source'
     ((skipped += 1))
@@ -130,7 +138,12 @@ while IFS=$'\t' read -r number base_ref draft head_sha head_ref head_repo head_l
 
   compare_head="$head_ref"
   [[ "$head_repo" != "$REPO" ]] && compare_head="$head_label"
-  comparison="$(api_get "repos/${REPO}/compare/${BASE}...${compare_head}" 2>&1)"
+  if ! comparison="$(api_get "repos/${REPO}/compare/${BASE}...${compare_head}" 2>&1)"; then
+    printf '#%-6s %-48s %-25s %s\n' "$number" "$head_ref" '-' 'ERROR: comparison request failed'
+    printf '  %s\n' "$comparison" >&2
+    ((failed += 1))
+    continue
+  fi
   if ! behind_by="$(jq -r '.behind_by // empty' <<<"$comparison" 2>/dev/null)"; then
     printf '#%-6s %-48s %-25s %s\n' "$number" "$head_ref" '-' 'ERROR: comparison JSON'
     ((failed += 1))

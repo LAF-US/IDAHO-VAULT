@@ -12,10 +12,12 @@ import argparse
 import filecmp
 import hashlib
 import json
+import os
 import re
 import shutil
 import subprocess
 import sys
+import tempfile
 import time
 from dataclasses import dataclass
 from pathlib import Path
@@ -177,7 +179,7 @@ class HashCache:
                 raise OSError("cache exceeds the 32 MiB safety limit")
             with self.path.open("r", encoding="utf-8-sig") as cache_file:
                 raw = json.load(cache_file)
-        except (OSError, json.JSONDecodeError) as exc:
+        except (OSError, UnicodeDecodeError, json.JSONDecodeError) as exc:
             # Silence here is what hid the problem for the life of the file.
             # A missing cache is normal and returns above; one that exists and
             # will not parse is an anomaly, and the run should say so.
@@ -197,10 +199,30 @@ class HashCache:
     def save(self) -> None:
         if self.disabled or self.read_only or not self.dirty:
             return
-        self.path.write_text(
-            json.dumps(self.data, sort_keys=True, separators=(",", ":")),
-            encoding="utf-8",
-        )
+        if self.path.is_symlink():
+            raise OSError("refusing to replace a symlinked hash cache")
+        payload = json.dumps(self.data, sort_keys=True, separators=(",", ":"))
+        temporary: Path | None = None
+        try:
+            with tempfile.NamedTemporaryFile(
+                "w",
+                encoding="utf-8",
+                dir=self.path.parent,
+                prefix=f".{self.path.name}.",
+                suffix=".tmp",
+                delete=False,
+            ) as cache_file:
+                temporary = Path(cache_file.name)
+                cache_file.write(payload)
+                cache_file.flush()
+                os.fsync(cache_file.fileno())
+            if self.path.is_symlink():
+                raise OSError("refusing to replace a symlinked hash cache")
+            os.replace(temporary, self.path)
+            temporary = None
+        finally:
+            if temporary is not None:
+                temporary.unlink(missing_ok=True)
 
     def sha256(self, path: Path, key: str) -> str:
         stat = path.stat()
