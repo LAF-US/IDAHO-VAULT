@@ -93,14 +93,14 @@ def ensure_env() -> None:
     """Ready only if the package's console scripts are actually installed."""
     if script("run_crew").exists():
         return
-    print("== uv sync (canonical, pinned interpreter from uv.lock) ==", file=sys.stderr)
+    print("== uv sync (canonical interpreter from .python-version) ==", file=sys.stderr)
     _uv(["uv", "sync"], check=False)
     if script("run_crew").exists():
         return
-    # uv sync was a no-op or 3.13.3 isn't installed; a clean editable install on
+    # uv sync was a no-op or 3.13.5 isn't installed; a clean editable install on
     # Python 3.11 recreates the venv AND the console scripts.
     print("== fallback: editable install on Python 3.11 "
-          "(run `uv python install 3.13.3` for the canonical env) ==", file=sys.stderr)
+          "(run `uv python install 3.13.5` for the canonical env) ==", file=sys.stderr)
     # Install a uv-managed CPython 3.11 and create the venv from it with
     # UV_PYTHON_PREFERENCE=only-managed. In a pyenv checkout a bare `--python
     # 3.11` can resolve to a pyenv *shim* that honors a missing .python-version

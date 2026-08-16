@@ -9,6 +9,7 @@ related:
 - README
 - "! - Wizard's Rules"
 ---
+[[C]][[O]][[N]][[S]][[T]][[I]][[T]][[U]][[T]][[I]][[O]][[N]]
 
 by Logan Alvan Finney
 
