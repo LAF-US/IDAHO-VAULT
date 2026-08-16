@@ -207,9 +207,16 @@ def local_action_files(path: Path) -> list[Path]:
     found: list[Path] = []
     for line in path.read_text(encoding="utf-8").splitlines():
         match = USES_PATTERN.match(line)
-        if not match or not match.group(1).startswith("./"):
+        if not match:
             continue
-        target = _resolve_in_repo(REPO_ROOT, match.group(1))
+        # _scalar() first, exactly as unpinned_refs() does. Testing the raw
+        # value made `uses: "./x"` and `uses: ./x # note` local to one function
+        # and not the other: flagged as local there, not followed here — so an
+        # action outside ACTION_GLOBS kept its mutable image unscanned.
+        ref = _scalar(match.group(1))
+        if not ref.startswith("./"):
+            continue
+        target = _resolve_in_repo(REPO_ROOT, ref)
         if target is None:
             continue
         for name in ("action.yml", "action.yaml"):
@@ -283,9 +290,22 @@ def main() -> int:
         if path in seen:
             continue
         seen.add(path)
+        rel = path.relative_to(REPO_ROOT).as_posix()
+        # Check what will actually be read BEFORE reading it. This guard runs
+        # trusted code against PR-head content, so a PR can plant
+        # .github/actions/x/action.yml as a symlink. Pointed at a character
+        # device (/dev/zero) read_text() never returns and the gate hangs
+        # instead of failing — a fail-closed check turned into a stall. Pointed
+        # outside the repo it reads something that is not vault content.
+        resolved = _resolve_in_repo(path.parent, path.name)
+        if resolved is None:
+            findings.append(f"{rel}: resolves outside the repository; not read")
+            continue
+        if not resolved.is_file():
+            findings.append(f"{rel}: not a regular file ({resolved}); not read")
+            continue
         queue.extend(local_action_files(path))
         for lineno, ref in unpinned_refs(path):
-            rel = path.relative_to(REPO_ROOT).as_posix()
             findings.append(f"{rel}:{lineno}: {ref}")
     findings.sort()
 

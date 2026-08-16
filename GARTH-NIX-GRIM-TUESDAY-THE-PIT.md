@@ -86,10 +86,10 @@ This is **not** the pit in the vault's `MADAME-LULU-AND-THE-PIT-*` witness notes
 **Sources, by tier:**
 
 - *Primary canon* — *Grim Tuesday* (2004), prologue: the excerpt supplied in-session 2026-08-12. Every quoted phrase above is from that supplied text
-- *Series context* — broader Keys to the Kingdom facts (the sequence of Keys, the Architect's Will and its seven fragments, the Court of Days, the Piper) drawn from the vault's own survey note and from model memory of the series; **not verified against the books in this session**. Treat as unconfirmed
+- *Series context* — broader Keys to the Kingdom facts (the sequence of Keys, the Architect's Will and its seven fragments, the Court of Days, the Piper) drawn from the vault's own survey note. Anything not in the supplied excerpt is **unsourced context, not evidence** — it was not checked against the books in this session and nothing above rests on it
 - *Interpretation* — the witness leaf, warranted by Logan's answer in session `session_015oRnkWnNkTL7R2umjen42b` on 2026-08-12; explicitly not canon and not attributed to Garth Nix
 
-**Named in the prologue and absent from the rest of the vault** at the time of writing: Grim's Grotesques, Yan/Tan/Tethera/Methera, Cocigrue, Spirit-eater, Up Station, the Overseers.
+**Named in the prologue and absent from the rest of the vault** at the time of writing: Grim's Grotesques, Yan/Tan/Tethera/Methera, Cocigrue, Spirit-eater, Up Station, the Overseers. Search method, so the claim is falsifiable: `git grep -lIiE` over all tracked files at commit 9a56f6e0 on 2026-08-12, before this note was added. Re-run it to check.
 
 ---
 

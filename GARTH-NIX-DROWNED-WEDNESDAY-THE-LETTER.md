@@ -38,7 +38,7 @@ Arthur is aboard a Raised Rat submersible, going to diving stations. Suzy Turquo
 
 ### Memory as an administrative act
 
-The letter's complaint about the Rats and its confession about Suzy are the same sentence. The Rats are dangerous *because* they cannot be wiped; the Piper's children are safe *because* they can. Washing between the ears is not presented as violence — it is presented as a means, and its absence as an operational problem. That is the whole horror of the line, and Nix puts it in a subordinate clause.
+The letter's complaint about the Rats and its confession about Suzy are the same sentence. The Rats are dangerous *because* they cannot be wiped; the Piper's children draw no such warning, and the only stated difference is that they can be. Washing between the ears is not presented as violence — it is presented as a means, and its absence as an operational problem. That is the whole horror of the line, and Nix puts it in a subordinate clause.
 
 ### The instruction is to withhold, not to lie
 
@@ -62,7 +62,7 @@ Dame Primus signs as Parts One and Two, "comprising Paragraphs Three to Thirteen
 
 **Warrant**: Logan pasted this passage into the working session of 2026-08-12 without instruction; asked directly, he chose "chapter nodes plus collisions," which is the warrant for this section. Witnessed by session `session_015oRnkWnNkTL7R2umjen42b`. Interpretation offered under that warrant — not Nix's meaning, and not canon.
 
-1. **"Washed between the ears" returned zero hits vault-wide** before this note. For an archive built around agents that do and do not persist across sessions, that is a conspicuous gap: the passage names, in four words, the difference between a party you can wipe and a party you cannot, and treats the second as a security problem. The vault's own arrangement is the wipeable kind — a Claude session is stateless by construction, and `.claude/CLAUDE.md` opens by saying so.
+1. **"Washed between the ears" returned zero hits vault-wide** before this note. (Search method, so the claim is falsifiable: `git grep -lIiE` over all tracked files at commit 9a56f6e0 on 2026-08-12, before this note was added. Re-run it to check.) For an archive built around agents that do and do not persist across sessions, that is a conspicuous gap: the passage names, in four words, the difference between a party you can wipe and a party you cannot, and treats the second as a security problem. The vault's own arrangement is the wipeable kind — a Claude session is stateless by construction, and `.claude/CLAUDE.md` opens by saying so.
 
 2. **The failure mode is Dame Primus's, not the Rats'.** She is the lawful authority, acting for the Will, and her advice is to withhold information from a reliable ally on the grounds that the ally remembers too much. Nothing in the passage suggests she is wrong about the risk. The vault's Restraint axis says stop before touching a surface not delegated; it does not say keep collaborators ignorant, and this passage is a clean picture of how the first slides into the second when memory is treated as an attack surface.
 
@@ -89,7 +89,7 @@ Dame Primus signs as Parts One and Two, "comprising Paragraphs Three to Thirteen
 **Sources, by tier:**
 
 - *Primary canon* — *Drowned Wednesday* (2005), the Dame Primus letter scene: the excerpt supplied in-session 2026-08-12. Every quoted phrase above is from that supplied text
-- *Series context* — the Will's seven Parts and their recovery order, the Piper's children, the Raised Rats' origins, the Mariner, Doctor Scamandros: drawn from the vault's survey note and from model memory of the series; **not verified against the books in this session**. In particular, *how* Suzy came to be washed between the ears is **not** stated in this passage — Arthur infers it, and this note does not assert more than he does
+- *Series context* — the Will's seven Parts and their recovery order, the Piper's children, the Raised Rats' origins, the Mariner, Doctor Scamandros: drawn from the vault's survey note. Anything not in the supplied excerpt is **unsourced context, not evidence** — it was not checked against the books in this session and nothing above rests on it. In particular, *how* Suzy came to be washed between the ears is **not** stated in this passage — Arthur infers it, and this note does not assert more than he does
 - *Interpretation* — the witness leaf, warranted by Logan's answer in session `session_015oRnkWnNkTL7R2umjen42b` on 2026-08-12; explicitly not canon and not attributed to Garth Nix
 
 ---
