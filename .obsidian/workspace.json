@@ -286,8 +286,7 @@
       "publish:Publish changes...": true,
       "homepage:Open homepage": true,
       "obsidian42-brat:BRAT": true,
-      "3d-graph:3D Graph": false,
-      "periodic-notes:Open today": false
+      "3d-graph:3D Graph": false
     }
   },
   "active": "68fa3574cdd22001",
