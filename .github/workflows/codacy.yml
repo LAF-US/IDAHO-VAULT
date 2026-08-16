@@ -198,13 +198,22 @@ jobs:
               # the coerced value and could never report what was actually
               # wrong. A silent repair of a null is how the null got shipped in
               # the first place.
-              driver = run.setdefault("tool", {}).setdefault("driver", {})
-              raw_rules = driver.get("rules")
-              if not isinstance(raw_rules, list):
-                  repairs.append(
-                      f"runs[{i}].tool.driver.rules was {type(raw_rules).__name__}, coerced to []"
-                  )
-                  driver["rules"] = []
+              # driver and extensions are both toolComponent and the schema
+              # types `rules` identically for each, so both are repaired here.
+              tool = run.setdefault("tool", {})
+              components = [("driver", tool.setdefault("driver", {}))]
+              components += [
+                  (f"extensions[{k}]", ext)
+                  for k, ext in enumerate(tool.get("extensions") or [])
+                  if isinstance(ext, dict)
+              ]
+              for label, comp in components:
+                  raw_rules = comp.get("rules")
+                  if not isinstance(raw_rules, list):
+                      repairs.append(
+                          f"runs[{i}].tool.{label}.rules was {type(raw_rules).__name__}, coerced to []"
+                      )
+                      comp["rules"] = []
               kept = []
               for res in run.get("results", []):
                   excluded = False
@@ -241,18 +250,6 @@ jobs:
           for run in runs:
               name = run.get("tool", {}).get("driver", {}).get("name", "codacy")
               run.setdefault("automationDetails", {})["id"] = f"codacy-{name}/"
-              # Codacy emits `"rules": null` when a tool component carries no
-              # rule metadata. SARIF types `rules` as an array, so upload-sarif
-              # rejects the ENTIRE file over it:
-              #   instance.runs[0].tool.driver.rules is not of a type(s) array
-              # The key is optional, so drop it rather than substitute []:
-              # absent says "not supplied", [] would assert "no rules exist".
-              # driver and extensions are both toolComponent, same rule.
-              tool = run.get("tool", {})
-              components = [tool.get("driver")] + list(tool.get("extensions") or [])
-              for comp in components:
-                  if isinstance(comp, dict) and not isinstance(comp.get("rules"), list):
-                      comp.pop("rules", None)
           sarif["runs"] = runs
 
           for r in repairs:
