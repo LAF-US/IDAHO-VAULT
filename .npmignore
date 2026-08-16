@@ -70,30 +70,30 @@ azure-pipelines.yml
 Thumbs.db
 
 # Sensitive files and certificates
-.factory/certs/
-.op/
-.secrets/
-certs/
-certificates/
-ssl/
-tls/
-*.pem
-*.key
-*.keystore
-*.p12
-*.pfx
-*.crt
-*.cer
-*.der
-*.p8
-*.pkcs12
-*.jks
-id_rsa
-id_rsa.*
-id_ed25519
-id_ed25519.*
-id_ecdsa
-id_ecdsa.*
+**/.factory/certs/
+**/.op/
+**/.secrets/
+**/certs/
+**/certificates/
+**/ssl/
+**/tls/
+**/*.pem
+**/*.key
+**/*.keystore
+**/*.p12
+**/*.pfx
+**/*.crt
+**/*.cer
+**/*.der
+**/*.p8
+**/*.pkcs12
+**/*.jks
+**/id_rsa
+**/id_rsa.*
+**/id_ed25519
+**/id_ed25519.*
+**/id_ecdsa
+**/id_ecdsa.*
 
 # Debug logs
 debug.log
