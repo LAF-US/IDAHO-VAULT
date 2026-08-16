@@ -28,19 +28,21 @@ repo root** (the unit).
 
 - **`uv`** (installed and on `PATH`; confirm with `uv --version`). No `apt-get`
   packages are needed — CrewAI and all deps install as pure-Python wheels.
-- A Python interpreter: the repo pins **3.13.3** (`.python-version`, `uv.lock`);
-  system **3.11** also satisfies `requires-python` and works for the core surface.
+- A Python interpreter: `.python-version` pins **3.13.5**. `uv.lock` does NOT
+  pin a patch version — it carries `requires-python = ">=3.10, <3.14"`, a
+  range. System **3.11** satisfies that range and works for the core surface.
 
 ## Build
 
-Canonical (pinned interpreter, from the lockfile) — **verified**:
+Canonical (interpreter from `.python-version`) — **verified**:
 
 ```bash
-uv python install 3.13.3   # downloads are 'manual' in pyproject; do this first
-uv sync                    # installs crewai + deps into .venv on 3.13.3
+uv python install 3.13.5   # `uv python list` omits builds it can still fetch —
+                           # absence there is not evidence it is unavailable
+uv sync                    # installs deps into .venv on 3.13.5
 ```
 
-Fallback when you can't fetch 3.13.3 (uses system 3.11) — **verified**:
+Fallback when you can't fetch 3.13.5 (uses system 3.11) — **verified**:
 
 ```bash
 uv venv --python "$(command -v python3.11)"
@@ -111,9 +113,11 @@ The deleted suite failed this check in two different ways:
 
 ## Gotchas (battle scars)
 
-- **`uv sync` fails with "No interpreter found for Python 3.13.3."** The repo
-  pins 3.13.3 and `python-downloads = "manual"`. Either `uv python install 3.13.3`
-  first, or use the 3.11 fallback (`uv venv --python python3.11 && uv pip install -e .`).
+- **`uv sync` fails with "No interpreter found for Python 3.13.5."** Either
+  `uv python install 3.13.5` first, or use the 3.11 fallback
+  (`uv venv --python python3.11 && uv pip install -e .`). Cause unknown: this
+  note used to blame `python-downloads = "manual"`, which exists nowhere in
+  this repo.
 - **Every run hangs ~30s at the end** trying to POST to `telemetry.crewai.com`.
   It's non-fatal but slow. `export CREWAI_DISABLE_TELEMETRY=true OTEL_SDK_DISABLED=true`
   silences it. The driver already does this.
@@ -136,7 +140,7 @@ The deleted suite failed this check in two different ways:
 
 | Symptom | Fix |
 | --- | --- |
-| `No interpreter found for Python 3.13.3` | `uv python install 3.13.3`, or use the 3.11 fallback build |
+| `No interpreter found for Python 3.13.5` | `uv python install 3.13.5`, or use the 3.11 fallback build |
 | Run stalls ~30s, then a `telemetry.crewai.com … timed out` line | set `CREWAI_DISABLE_TELEMETRY=true OTEL_SDK_DISABLED=true` |
 | `metadata_survey`: `AttributeError: 'NoneType' object has no attribute '__dict__'` | known-broken entrypoint; use `civic_scaffold --format json` |
 | `… is checkout-only and must run from an IDAHO-VAULT repository root` | `cd` to the repo root before invoking |
