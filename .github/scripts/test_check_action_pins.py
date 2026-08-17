@@ -22,6 +22,19 @@ from pathlib import Path
 
 SCRIPT = Path(__file__).with_name("check_action_pins.py")
 
+# Run in a subprocess whose argv[1] is the guard's directory, so the guard
+# computes REPO_ROOT from its own location and reports the fixture repository's
+# targets. Kept whole here rather than assembled from adjacent literals inside
+# the call: a program spelled as fragments in an argument list reads like a
+# list of arguments with a comma missing.
+LIST_TARGETS = """
+import sys
+sys.path.insert(0, sys.argv[1])
+import check_action_pins as m
+for target in m.scan_targets():
+    print(target.relative_to(m.REPO_ROOT))
+"""
+
 
 class GuardFixture(unittest.TestCase):
     """A temporary repository containing a copy of the guard."""
@@ -45,8 +58,18 @@ class GuardFixture(unittest.TestCase):
     def action(self, where: str, text: str) -> Path:
         return self.write(f".github/actions/{where}/action.yml", text)
 
-    def run_guard(self) -> tuple[int, list[str]]:
-        """(exit code, findings) — one finding per reported line, header dropped."""
+    def run_guard(self) -> tuple[int, list[str], str]:
+        """(exit code, findings, the whole stderr).
+
+        The raw stderr is carried alongside the parsed findings and never
+        thrown away. Selecting indented lines and discarding the rest would
+        make this harness commit the guard's own sin: a traceback, or a
+        finding printed in some future shape without leading spaces, would
+        register as "no findings" -- output silently reclassified as safe
+        because a pattern did not match it. The assertions below check what
+        was dropped instead of trusting it, and quote all of stderr when they
+        fail, so a broken guard says why rather than showing an empty list.
+        """
         result = subprocess.run(
             [sys.executable, str(self.root / ".github" / "scripts" / SCRIPT.name)],
             capture_output=True,
@@ -57,7 +80,7 @@ class GuardFixture(unittest.TestCase):
         findings = [
             line.strip() for line in result.stderr.splitlines() if line.startswith("  ")
         ]
-        return result.returncode, findings
+        return result.returncode, findings, result.stderr
 
     def scan_targets(self) -> list[str]:
         """The guard's own discovery list, as repo-relative strings."""
@@ -65,10 +88,7 @@ class GuardFixture(unittest.TestCase):
             [
                 sys.executable,
                 "-c",
-                "import sys; sys.path.insert(0, sys.argv[1]); "
-                "import check_action_pins as m; "
-                "print('\\n'.join(str(p.relative_to(m.REPO_ROOT)) "
-                "for p in m.scan_targets()))",
+                LIST_TARGETS,
                 str(self.root / ".github" / "scripts"),
             ],
             capture_output=True,
@@ -76,20 +96,35 @@ class GuardFixture(unittest.TestCase):
             timeout=60,
             cwd=self.root,
         )
+        self.assertEqual(listing.returncode, 0, listing.stderr)
         return listing.stdout.split()
 
     def assertClean(self) -> None:
-        code, findings = self.run_guard()
-        self.assertEqual((code, findings), (0, []))
+        """Exit 0 and a silent stderr — no findings, and nothing else either."""
+        code, findings, stderr = self.run_guard()
+        self.assertEqual(code, 0, stderr)
+        self.assertEqual(findings, [], stderr)
+        # A clean run says "OK" on stdout and nothing at all on stderr, so any
+        # stderr here is something this harness was not looking at: a warning,
+        # a deprecation, a partial traceback that did not change the exit code.
+        self.assertEqual(stderr, "", "clean run wrote to stderr")
 
     def assertFlags(self, *fragments: str) -> list[str]:
-        """Exit 1, and some finding mentions each fragment."""
-        code, findings = self.run_guard()
-        self.assertEqual(code, 1, f"expected a finding, got: {findings}")
+        """Exit 1, every stderr line accounted for, and each fragment reported."""
+        code, findings, stderr = self.run_guard()
+        self.assertEqual(code, 1, f"expected a finding; stderr was:\n{stderr}")
+        unaccounted = [
+            line
+            for line in stderr.splitlines()
+            if line.strip()
+            and not line.startswith("  ")
+            and "action-pin guard:" not in line
+        ]
+        self.assertEqual(unaccounted, [], f"unrecognised stderr:\n{stderr}")
         for fragment in fragments:
             self.assertTrue(
                 any(fragment in finding for finding in findings),
-                f"{fragment!r} not in {findings}",
+                f"{fragment!r} not reported; stderr was:\n{stderr}",
             )
         return findings
 
@@ -456,8 +491,13 @@ class DiscoveryTest(GuardFixture):
         self.assertFlags("not valid UTF-8")
 
     def test_empty_repository_is_an_error_not_a_pass(self):
-        code, _ = self.run_guard()
-        self.assertEqual(code, 2)
+        # Exit 2, distinct from both 0 (checked, clean) and 1 (checked, found
+        # something): a run that discovered nothing verified nothing, and must
+        # not be mistaken for a pass.
+        code, findings, stderr = self.run_guard()
+        self.assertEqual(code, 2, stderr)
+        self.assertEqual(findings, [], stderr)
+        self.assertIn("no workflow or action files found", stderr)
 
 
 if __name__ == "__main__":
