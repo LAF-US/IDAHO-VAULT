@@ -86,6 +86,16 @@ def path_violations(path: str) -> list[str]:
     # path and `git checkout` aborts ("invalid path"). Flag it before normalizing.
     if "\\" in path:
         findings.append(f"BACKSLASH IN PATH: {path} (illegal on Windows; breaks checkout)")
+    # A decomposed (non-NFC) name is a hazard even with no twin tracked yet:
+    # git on macOS re-encodes NFD to NFC at index time (core.precomposeunicode),
+    # so the name does not round-trip byte-identical — and the day its NFC
+    # spelling is added, the pair becomes a same-file collision. Rejecting the
+    # lone NFD path at introduction catches the hazard before it needs a twin.
+    if unicodedata.normalize("NFC", path) != path:
+        findings.append(
+            f"NON-NFC UNICODE: {path} (decomposed form; re-encoded by macOS git, "
+            "so the name does not survive a round trip)"
+        )
     parts = path.replace("\\", "/").split("/")
     for part in parts:
         if not part:
