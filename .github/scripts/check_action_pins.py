@@ -232,8 +232,14 @@ def _open_by_descriptor_walk(path: Path) -> tuple[int | None, str]:
                 )
             except OSError as exc:
                 return None, _unreadable(exc, part, directory)
-            os.close(directory)
-            directory = step
+            # Rebound BEFORE the close, not after. The other order leaves a
+            # window — an interrupt between the two statements — where `step`
+            # is open with nothing holding it and `directory` names a
+            # descriptor that has just been closed, which `finally` would then
+            # close again. A stale close is not harmless: descriptor numbers
+            # are reused, so it can shut something else's file.
+            directory, previous = step, directory
+            os.close(previous)
         leaf = relative.parts[-1]
         try:
             return os.open(leaf, os.O_RDONLY | O_NOFOLLOW, dir_fd=directory), ""
