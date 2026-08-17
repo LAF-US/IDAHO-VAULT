@@ -1,23 +1,23 @@
 {
-  "linter": {
-    "enabled": true,
-    "rules": {
-      "recommended": true
-    }
-  },
-  "formatter": {
-    "enabled": false
-  },
-  "files": {
-    "includes": [
-      "**",
-      "!**/node_modules",
-      "!THE-GEMSTONE",
-      "!.venv",
-      "!.uv-cache",
-      "!.obsidian/plugins",
-      "!.codex/skills",
-      "!.openclaw/extensions"
-    ]
-  }
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"preset": "recommended"
+		}
+	},
+	"formatter": {
+		"enabled": false
+	},
+	"files": {
+		"includes": [
+			"**",
+			"!**/node_modules",
+			"!THE-GEMSTONE",
+			"!.venv",
+			"!.uv-cache",
+			"!.obsidian/plugins",
+			"!.codex/skills",
+			"!.openclaw/extensions"
+		]
+	}
 }

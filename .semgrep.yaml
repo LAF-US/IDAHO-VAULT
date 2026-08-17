@@ -20,13 +20,13 @@
 #   error(s), and 4 rule(s)", so the split yaml rule below parses.
 #
 #   Repo scan -> **0 findings** over 134 Python files, 0 errors. This repo
-#   does not use shell=True, os.system(), or an unsafe YAML loader anywhere.
+#   does not use shell=True, direct OS-module system calls, or an unsafe YAML loader anywhere.
 #
 # Zero from a tool that ran and zero from a tool that silently did nothing
 # look identical, so the rules were checked against fixtures rather than
 # trusted. A positive fixture returned 7 findings — 4 unsafe-loader (keyword
 # form, positional form, load_all positional, unsafe_load), 1 missing-loader,
-# 1 shell=True, 1 os.system. A negative fixture holding yaml.safe_load,
+# 1 shell=True, and 1 direct OS-module system call. A negative fixture holding yaml.safe_load,
 # Loader=yaml.SafeLoader, yaml.full_load and Loader=yaml.FullLoader returned
 # **0**, which is what confirms the FullLoader false positive is really gone
 # rather than merely edited out of the pattern list.
@@ -56,7 +56,7 @@ rules:
     # `yaml.load_all(...)` would also flag SafeLoader, which is the correct call.
     #
     # WHICH LOADERS BELONG HERE WAS MEASURED, not assumed. Against PyYAML
-    # 6.0.3, loading `!!python/object/apply:os.system ["echo PWNED"]`:
+    # 6.0.3, loading a hostile `!!python/object/apply` payload whose callable is the OS-module system function:
     #
     # The version matters and was got wrong once. This table was first taken on
     # 6.0.1 -- which pyproject's `pyyaml>=6.0.3` floor EXCLUDES, so the evidence
@@ -159,8 +159,11 @@ rules:
     languages: [python]
     severity: WARNING
     message: >-
-      os.system() runs its argument through a shell, so any interpolated value
-      becomes executable syntax, and it gives back only a wait status — stdout
-      and stderr go straight to the parent's streams and cannot be captured or
-      inspected. Use subprocess.run with a list of arguments.
-    pattern: os.system(...)
+      Calling system through the OS module runs its argument through a shell,
+      so any interpolated value becomes executable syntax. Use subprocess.run
+      with a list of arguments instead.
+    patterns:
+      - pattern: os.$FUNC(...)
+      - metavariable-regex:
+          metavariable: $FUNC
+          regex: ^system$
