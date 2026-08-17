@@ -89,6 +89,7 @@ real_close, seen = os.close, []
 def flaky(descriptor):
     seen.append(descriptor)
     if len(seen) == 1:
+        print("INJECTED")
         raise OSError(errno.EBADF, "Bad file descriptor")
     return real_close(descriptor)
 
@@ -101,6 +102,7 @@ except BaseException as exc:
     print(f"RAISED {type(exc).__name__}: {exc}")
 else:
     print("RETURNED", "text" if text is not None else f"({reason})")
+print("CLOSES", len(seen))
 """
 
 
@@ -768,7 +770,20 @@ class DiscoveryTest(GuardFixture):
             check=False,
         )
         self.assertEqual(probe.returncode, 0, probe.stderr)
-        self.assertIn("RETURNED", probe.stdout.strip(), probe.stdout)
+        self.assertIn("INJECTED", probe.stdout, probe.stdout)
+        self.assertIn("RETURNED", probe.stdout, probe.stdout)
+        # The count, because the two lines above are not enough on their own.
+        # "did not crash" is also satisfied by a walk that stopped closing
+        # anything: the injected failure would then land on the `finally`
+        # instead, still print INJECTED, still be suppressed, and this case
+        # would stay green while testing nothing. Measured both ways — as
+        # written the walk closes four times, with the loop's close removed it
+        # closes once — so the count is what actually separates them. Asserted
+        # as "more than one" rather than exactly four: the point is that the
+        # walk kept releasing descriptors AFTER a failed release, not how deep
+        # this particular fixture happens to sit.
+        closes = int(probe.stdout.rsplit("CLOSES", 1)[1])
+        self.assertGreater(closes, 1, probe.stdout)
 
     def test_non_utf8_metadata_is_a_finding_not_a_traceback(self):
         # A guard that dies still turns the job red, but it names a Python
