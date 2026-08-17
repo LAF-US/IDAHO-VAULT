@@ -34,3 +34,32 @@ jobs:
             echo "::warning::check_action_pins.py absent from base ref; using this PR's own copy (bootstrap only)"
             python .github/scripts/check_action_pins.py
           fi
+
+  # Deliberately a separate job. The check above runs TRUSTED code from the
+  # base ref against PR-head content; these run the PR's own test files, which
+  # is the only way to catch a change that regresses a guard. Keeping them
+  # apart means the policy check keeps its trusted-only character, and this job
+  # gets nothing but `contents: read` and no secrets.
+  #
+  # It exists because the guard's failure mode is silence: it prints OK and
+  # exits 0 whether or not it actually read the container it was asked about.
+  # Every hole found in it so far was found by hand, in a scratch directory
+  # that did not survive the session.
+  script-tests:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.13"
+      - name: Run every test_*.py under .github/scripts
+        run: |
+          # Discovery rather than a list: a new test file next to the script it
+          # covers is then wired in by existing, not by remembering to edit this.
+          python -m unittest discover \
+            --start-directory .github/scripts \
+            --pattern 'test_*.py' \
+            --top-level-directory .github/scripts \
+            --verbose

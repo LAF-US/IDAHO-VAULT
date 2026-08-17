@@ -1,0 +1,464 @@
+"""Tests for the supply-chain pin guard (check_action_pins).
+
+Every case here is a hole that was open at some point, not a hypothetical.
+The guard's failure mode is silent: it prints "OK" and exits 0 while a mutable
+container or floating tag goes unread, so a regression looks exactly like
+success. That is what these tests exist to catch, and why each one names the
+form that slipped through rather than only asserting a tidy invariant.
+
+The fixtures build a whole throwaway repository and run the script inside it.
+`REPO_ROOT` is derived from the script's own location (`parents[2]`), so
+copying the script into `<tmp>/.github/scripts/` makes `<tmp>` the repository
+under test — no monkeypatching of module state, and `main()` is exercised end
+to end, including discovery, the worklist, and the exit code.
+"""
+
+import shutil
+import subprocess
+import sys
+import tempfile
+import unittest
+from pathlib import Path
+
+SCRIPT = Path(__file__).with_name("check_action_pins.py")
+
+
+class GuardFixture(unittest.TestCase):
+    """A temporary repository containing a copy of the guard."""
+
+    def setUp(self) -> None:
+        self.root = Path(tempfile.mkdtemp(prefix="pinguard-"))
+        self.addCleanup(shutil.rmtree, self.root, ignore_errors=True)
+        for directory in ("scripts", "workflows", "actions"):
+            (self.root / ".github" / directory).mkdir(parents=True)
+        shutil.copy(SCRIPT, self.root / ".github" / "scripts" / SCRIPT.name)
+
+    def write(self, rel: str, text: str) -> Path:
+        path = self.root / rel
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(text, encoding="utf-8")
+        return path
+
+    def workflow(self, text: str, name: str = "ci.yml") -> Path:
+        return self.write(f".github/workflows/{name}", text)
+
+    def action(self, where: str, text: str) -> Path:
+        return self.write(f".github/actions/{where}/action.yml", text)
+
+    def run_guard(self) -> tuple[int, list[str]]:
+        """(exit code, findings) — one finding per reported line, header dropped."""
+        result = subprocess.run(
+            [sys.executable, str(self.root / ".github" / "scripts" / SCRIPT.name)],
+            capture_output=True,
+            text=True,
+            timeout=60,
+            cwd=self.root,
+        )
+        findings = [
+            line.strip() for line in result.stderr.splitlines() if line.startswith("  ")
+        ]
+        return result.returncode, findings
+
+    def scan_targets(self) -> list[str]:
+        """The guard's own discovery list, as repo-relative strings."""
+        listing = subprocess.run(
+            [
+                sys.executable,
+                "-c",
+                "import sys; sys.path.insert(0, sys.argv[1]); "
+                "import check_action_pins as m; "
+                "print('\\n'.join(str(p.relative_to(m.REPO_ROOT)) "
+                "for p in m.scan_targets()))",
+                str(self.root / ".github" / "scripts"),
+            ],
+            capture_output=True,
+            text=True,
+            timeout=60,
+            cwd=self.root,
+        )
+        return listing.stdout.split()
+
+    def assertClean(self) -> None:
+        code, findings = self.run_guard()
+        self.assertEqual((code, findings), (0, []))
+
+    def assertFlags(self, *fragments: str) -> list[str]:
+        """Exit 1, and some finding mentions each fragment."""
+        code, findings = self.run_guard()
+        self.assertEqual(code, 1, f"expected a finding, got: {findings}")
+        for fragment in fragments:
+            self.assertTrue(
+                any(fragment in finding for finding in findings),
+                f"{fragment!r} not in {findings}",
+            )
+        return findings
+
+
+PINNED = "a" * 40
+DIGEST = "sha256:" + "b" * 64
+CLEAN_WORKFLOW = (
+    f"on: push\njobs:\n  j:\n    steps:\n      - uses: actions/checkout@{PINNED}\n"
+)
+
+
+class UsesTest(GuardFixture):
+    """`uses:` refs must name a full 40-character commit SHA."""
+
+    def test_full_sha_is_clean(self):
+        self.workflow(CLEAN_WORKFLOW)
+        self.assertClean()
+
+    def test_floating_tag_is_flagged(self):
+        self.workflow(
+            "on: push\njobs:\n  j:\n    steps:\n      - uses: actions/checkout@v4\n"
+        )
+        self.assertFlags("actions/checkout@v4")
+
+    def test_short_sha_is_flagged(self):
+        self.workflow("on: push\nsteps:\n  - uses: actions/checkout@abc1234\n")
+        self.assertFlags("actions/checkout@abc1234")
+
+    def test_ref_without_at_is_flagged(self):
+        self.workflow("on: push\nsteps:\n  - uses: actions/checkout\n")
+        self.assertFlags("actions/checkout")
+
+    def test_expression_cannot_be_resolved(self):
+        # `\S+` never matched a value containing spaces, and an unmatched line
+        # was treated as safe -- so the one ref that is unknowable at read time
+        # was the one waved through.
+        self.workflow("on: push\nsteps:\n  - uses: ${{ matrix.action }}\n")
+        self.assertFlags("expression")
+
+    def test_flow_mapping_fails_closed(self):
+        # Valid YAML, valid Actions, invisible to a line-anchored pattern.
+        self.workflow("on: push\nsteps: [{uses: actions/checkout@v4}]\n")
+        self.assertFlags("flow mapping")
+
+    def test_quoted_key_in_flow_mapping_fails_closed(self):
+        # Stripping every quoted span also deleted quoted KEYS, which removed
+        # the very token the flow check looks for.
+        self.workflow("on: push\nsteps:\n  - {'uses': actions/checkout@v4}\n")
+        self.assertFlags("flow mapping")
+
+    def test_comma_inside_a_quoted_name_is_not_a_flow_mapping(self):
+        # `- name: "step, uses: something"` contains `, uses:` and failed CI on
+        # a step whose name merely held a comma.
+        self.workflow(
+            "on: push\nsteps:\n"
+            '  - name: "check every workflow, uses: a full SHA"\n'
+            f"    uses: actions/checkout@{PINNED}\n"
+        )
+        self.assertClean()
+
+    def test_flow_form_inside_a_comment_is_not_a_finding(self):
+        self.workflow(CLEAN_WORKFLOW + "# note: the {uses: x} form is rejected\n")
+        self.assertClean()
+
+    def test_docker_uses_needs_a_digest(self):
+        # Skipped as a pin target, but still a container.
+        self.workflow("on: push\nsteps:\n  - uses: docker://alpine:latest\n")
+        self.assertFlags("docker ref needs")
+
+    def test_digest_pinned_docker_uses_is_clean(self):
+        self.workflow(f"on: push\nsteps:\n  - uses: docker://alpine@{DIGEST}\n")
+        self.assertClean()
+
+
+class LocalActionTest(GuardFixture):
+    """`uses: ./…` is followed, because the action it names can be mutable."""
+
+    def test_local_action_is_followed(self):
+        self.workflow("on: push\nsteps:\n  - uses: ./tools/builder\n")
+        self.write(
+            "tools/builder/action.yml",
+            "name: builder\nruns:\n  using: docker\n  image: 'docker://alpine:latest'\n",
+        )
+        # Outside .github/actions entirely -- reachable only by following.
+        self.assertFlags("tools/builder/action.yml")
+
+    def test_quoted_local_ref_is_followed(self):
+        # `_scalar()` in one function and the raw value in the other made
+        # `uses: "./x"` local to one and not the other.
+        self.workflow('on: push\nsteps:\n  - uses: "./tools/builder"  # note\n')
+        self.write(
+            "tools/builder/action.yml",
+            "name: builder\nruns:\n  using: docker\n  image: 'docker://alpine:latest'\n",
+        )
+        self.assertFlags("tools/builder/action.yml")
+
+    def test_reference_cycle_terminates(self):
+        self.workflow("on: push\nsteps:\n  - uses: ./a\n")
+        self.write(
+            "a/action.yml",
+            "name: a\nruns:\n  using: composite\n  steps:\n    - uses: ./b\n",
+        )
+        self.write(
+            "b/action.yml",
+            "name: b\nruns:\n  using: composite\n  steps:\n    - uses: ./a\n",
+        )
+        self.assertClean()
+
+
+class ContainerActionTest(GuardFixture):
+    """A repository SHA pins the repository, never the container it builds."""
+
+    def test_mutable_image_is_flagged(self):
+        self.action(
+            "app",
+            "name: app\nruns:\n  using: docker\n  image: 'docker://alpine:latest'\n",
+        )
+        self.assertFlags("image needs")
+
+    def test_digest_pinned_image_is_clean(self):
+        self.action(
+            "app",
+            f"name: app\nruns:\n  using: docker\n  image: 'docker://alpine@{DIGEST}'\n",
+        )
+        self.assertClean()
+
+    def test_composite_action_names_no_image(self):
+        self.action("app", "name: app\nruns:\n  using: composite\n  steps: []\n")
+        self.assertClean()
+
+    def test_indented_top_level_runs_is_still_top_level(self):
+        # Indentation is not a security boundary: a block mapping may carry a
+        # uniform indent, and anchored at column 0 the guard never saw this.
+        self.action(
+            "app",
+            "  name: app\n  runs: {using: docker, image: 'docker://alpine:latest'}\n",
+        )
+        self.assertFlags("image unverified")
+
+    def test_indented_top_level_runs_with_digest_is_clean(self):
+        self.action(
+            "app",
+            "  name: app\n  runs:\n    using: docker\n"
+            f"    image: 'docker://alpine@{DIGEST}'\n",
+        )
+        self.assertClean()
+
+    def test_whole_document_flow_mapping_fails_closed(self):
+        self.action(
+            "app",
+            "{name: app, runs: {using: docker, image: 'docker://alpine:latest'}}\n",
+        )
+        self.assertFlags("flow mapping")
+
+    def test_nested_runs_is_not_the_entry_point(self):
+        # A `runs:` under `inputs:` is not the action's entry point, and
+        # reporting it would invent a finding. The description deliberately
+        # contains the words `using: docker`: without root-indent scoping the
+        # guard treats this nested key as an entry point, finds that text in
+        # its block and no `image:` under it, and fails the repository over a
+        # sentence in a help string.
+        self.action(
+            "app",
+            "name: app\ninputs:\n  runs:\n"
+            "    description: 'set using: docker to build a container'\n"
+            "runs:\n  using: composite\n  steps: []\n",
+        )
+        self.assertClean()
+
+    def test_a_decoy_image_elsewhere_does_not_vouch_for_the_container(self):
+        # Asking whether the FILE contains any `image:` let a digest-pinned
+        # decoy under `inputs:` satisfy the test for a flow-form `runs:`.
+        self.action(
+            "app",
+            "name: app\ninputs:\n  base:\n"
+            f"    image: 'docker://alpine@{DIGEST}'\n"
+            "runs: {using: docker, image: 'docker://alpine:latest'}\n",
+        )
+        self.assertFlags("flow mapping")
+
+    def test_every_runs_candidate_is_judged(self):
+        # Returning on the first match let a composite `runs:` seen first
+        # excuse a docker one seen second.
+        self.action(
+            "app",
+            "runs:\n  using: composite\n  steps: []\n"
+            "runs: {using: docker, image: 'docker://alpine:latest'}\n",
+        )
+        self.assertFlags("flow mapping")
+
+    def test_workflows_are_not_searched_for_runs_using(self):
+        self.workflow(CLEAN_WORKFLOW + "  runs:\n    using: docker\n")
+        self.assertClean()
+
+
+class DockerfileTest(GuardFixture):
+    """`image:` may name a build context, and its FROM lines are mutable."""
+
+    def _action_with(self, dockerfile: str) -> None:
+        self.action("app", "name: app\nruns:\n  using: docker\n  image: Dockerfile\n")
+        self.write(".github/actions/app/Dockerfile", dockerfile)
+
+    def test_mutable_from_is_flagged(self):
+        # The original hole: a repository SHA freezes the Dockerfile TEXT, and
+        # that text resolves its tag at build time.
+        self._action_with("FROM alpine:latest\n")
+        self.assertFlags("FROM alpine:latest")
+
+    def test_digest_pinned_from_is_clean(self):
+        self._action_with(f"FROM alpine@{DIGEST}\n")
+        self.assertClean()
+
+    def test_scratch_is_exempt(self):
+        self._action_with("FROM scratch\n")
+        self.assertClean()
+
+    def test_earlier_stage_alias_is_exempt(self):
+        self._action_with(f"FROM alpine@{DIGEST} AS build\nFROM build\n")
+        self.assertClean()
+
+    def test_a_stage_cannot_exempt_itself(self):
+        # `FROM alpine AS alpine` matched `base in stages` when the alias was
+        # registered before the base was classified.
+        self._action_with("FROM alpine AS alpine\n")
+        self.assertFlags("FROM alpine")
+
+    def test_line_continuation_is_one_instruction(self):
+        # Two physical lines to a regex, one instruction to Docker -- so
+        # matching physical lines skipped the base entirely.
+        self._action_with("FROM alpine:latest \\\n    AS build\n")
+        self.assertFlags("FROM alpine:latest")
+
+    def test_escape_directive_is_honoured(self):
+        self._action_with("# escape=`\nFROM alpine:latest `\n    AS build\n")
+        self.assertFlags("FROM alpine:latest")
+
+    def test_escape_directive_after_an_ordinary_comment_is_ignored(self):
+        # Docker stops looking for parser directives at the first ordinary
+        # comment; honouring a later one joined continuations with the wrong
+        # character and missed the FROM.
+        self._action_with("# a note\n# escape=`\nFROM alpine:latest\n")
+        self.assertFlags("FROM alpine:latest")
+
+    def test_flag_tokens_before_the_base_are_skipped(self):
+        self._action_with(f"FROM --platform=linux/amd64 alpine@{DIGEST}\n")
+        self.assertClean()
+
+    def test_unreadable_dockerfile_fails_closed(self):
+        self.action("app", "name: app\nruns:\n  using: docker\n  image: Dockerfile\n")
+        self.assertFlags("not a regular file")
+
+    def test_path_outside_the_repository_is_refused(self):
+        self.action(
+            "app",
+            "name: app\nruns:\n  using: docker\n  image: ../../../../etc/passwd\n",
+        )
+        self.assertFlags("outside the repository")
+
+
+class WorkflowImageTest(GuardFixture):
+    """Job containers and services are registry refs and need digests."""
+
+    def test_mutable_container_is_flagged(self):
+        self.workflow("on: push\njobs:\n  j:\n    container:\n      image: node:20\n")
+        self.assertFlags("image needs")
+
+    def test_inline_container_mapping_fails_closed(self):
+        self.workflow("on: push\njobs:\n  j:\n    container: {image: node:20}\n")
+        self.assertFlags("inline container mapping")
+
+    def test_inline_services_mapping_fails_closed(self):
+        self.workflow(
+            "on: push\njobs:\n  j:\n    services: {redis: {image: redis:7}}\n"
+        )
+        self.assertFlags("inline services mapping")
+
+    def test_empty_services_is_clean(self):
+        self.workflow(CLEAN_WORKFLOW + "    services: {}\n")
+        self.assertClean()
+
+    def test_a_tag_containing_Dockerfile_is_a_registry_ref(self):
+        # Docker tags may contain uppercase, so the build-context heuristic
+        # read a legal registry ref as a path and called it unreadable. Only
+        # action metadata can name a Dockerfile.
+        self.workflow(
+            "on: push\njobs:\n  j:\n    container:\n      image: myorg/app:Dockerfile-base\n"
+        )
+        self.assertFlags("image needs")
+
+
+class DiscoveryTest(GuardFixture):
+    """Discovery walks without following links, and reports what it skipped."""
+
+    def test_nested_action_is_discovered(self):
+        self.action(
+            "vendor/pr-agent",
+            "name: v\nruns:\n  using: docker\n  image: 'docker://alpine:latest'\n",
+        )
+        self.assertFlags("vendor/pr-agent/action.yml")
+
+    def test_symlinked_action_file_is_not_read(self):
+        self.action("real", "name: r\nruns:\n  using: composite\n  steps: []\n")
+        link = self.root / ".github" / "actions" / "linked"
+        link.mkdir()
+        (link / "action.yml").symlink_to(self.root / ".github/actions/real/action.yml")
+        self.assertFlags("symlink; not read")
+
+    def test_symlinked_directory_is_reported_not_traversed(self):
+        # A recursive glob over PR-controlled content can be pointed at an
+        # arbitrary subtree. The walk refuses the link and says so.
+        outside = self.root.parent / f"{self.root.name}-outside"
+        outside.mkdir()
+        self.addCleanup(shutil.rmtree, outside, ignore_errors=True)
+        (outside / "action.yml").write_text("name: x\n", encoding="utf-8")
+        (self.root / ".github" / "actions" / "evil").symlink_to(outside)
+        findings = self.assertFlags("symlink; not read")
+        self.assertFalse([f for f in findings if "evil/action.yml" in f])
+
+    def test_symlink_loop_terminates(self):
+        loop = self.root / ".github" / "actions" / "loop"
+        loop.mkdir(parents=True)
+        (loop / "self").symlink_to(loop)
+        self.assertFlags("symlink; not read")
+
+    def test_a_directory_symlink_named_action_yml_is_listed_once(self):
+        # It satisfies both the directory pass and the filename pass. main()
+        # would absorb the repeat -- its `seen` set is written before any
+        # finding is -- so this asserts against scan_targets() itself, where
+        # the duplicate actually lives, rather than against output that hides
+        # it. Reported once either way, and the list is honest for any other
+        # caller.
+        weird = self.root / ".github" / "actions" / "weird"
+        weird.mkdir(parents=True)
+        (weird / "action.yml").symlink_to(self.root / ".github" / "actions")
+        targets = self.scan_targets()
+        self.assertEqual(len(targets), len(set(targets)), targets)
+        findings = self.assertFlags("weird/action.yml")
+        self.assertEqual(len([f for f in findings if "weird/action.yml" in f]), 1)
+
+    def test_a_byte_order_mark_does_not_hide_a_mutable_image(self):
+        # This vault runs on Windows, where a round-trip through PowerShell's
+        # default UTF-8 writer prepends a BOM. A BOM does NOT raise on a plain
+        # utf-8 read -- it is valid UTF-8 -- it decodes to a U+FEFF glued to
+        # the front of line 1, and every pattern here is anchored with `^\s*`,
+        # which U+FEFF is not. So the guard reads the file, matches nothing on
+        # that line, and reports OK. The container below is named on line 1 in
+        # the flow form precisely because that is the arrangement where the
+        # stray character is the difference between a finding and silence.
+        path = self.root / ".github" / "actions" / "bom" / "action.yml"
+        path.parent.mkdir(parents=True)
+        path.write_bytes(
+            "runs: {using: docker, image: 'docker://alpine:latest'}\nname: bom\n".encode(
+                "utf-8-sig"
+            )
+        )
+        self.assertFlags("image unverified")
+
+    def test_non_utf8_metadata_is_a_finding_not_a_traceback(self):
+        # A guard that dies still turns the job red, but it names a Python
+        # error rather than the file.
+        path = self.root / ".github" / "actions" / "bin" / "action.yml"
+        path.parent.mkdir(parents=True)
+        path.write_bytes(b"name: \xff\xfe not utf-8\n")
+        self.assertFlags("not valid UTF-8")
+
+    def test_empty_repository_is_an_error_not_a_pass(self):
+        code, _ = self.run_guard()
+        self.assertEqual(code, 2)
+
+
+if __name__ == "__main__":
+    unittest.main()

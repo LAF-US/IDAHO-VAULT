@@ -132,7 +132,13 @@ def scan_targets() -> list[Path]:
                 candidate = base / name
                 if name in filenames or candidate.is_symlink():
                     paths.append(candidate)
-    return sorted(paths)
+    # Deduplicated: a DIRECTORY symlink named `action.yml` satisfies both loops
+    # above — the directory pass appends it as an unfollowable link, and the
+    # name pass appends it again as action metadata. `main()` happens to absorb
+    # the repeat (its `seen` set is written before any finding is), so no
+    # duplicate reaches the output today; this keeps the returned list honest
+    # for any other caller, which has no such set to hide behind.
+    return sorted(dict.fromkeys(paths))
 
 
 def _read(path: Path) -> tuple[str | None, str]:
