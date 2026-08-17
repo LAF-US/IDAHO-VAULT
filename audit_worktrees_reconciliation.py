@@ -155,6 +155,14 @@ def assert_existing_outputs_writable(*paths: Path) -> None:
             pass
 
 
+def assert_within(path: Path, parent: Path, label: str) -> None:
+    """Reject sources and outputs outside their declared Vault boundary."""
+    try:
+        path.relative_to(parent)
+    except ValueError as exc:
+        raise SystemExit(f"{label} must remain under {parent}: {path}") from exc
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--repo-root", type=Path, default=Path.cwd())
@@ -168,6 +176,11 @@ def main() -> int:
     source = (root / args.source).resolve() if not args.source.is_absolute() else args.source.resolve()
     manifest_path = (root / args.manifest).resolve() if not args.manifest.is_absolute() else args.manifest.resolve()
     report_path = (root / args.report).resolve() if not args.report.is_absolute() else args.report.resolve()
+    assert_within(source, root / ".worktrees", "Recovery source")
+    assert_within(manifest_path, root, "Manifest")
+    assert_within(report_path, root, "Report")
+    if manifest_path == report_path:
+        raise SystemExit("Manifest and report paths must be different")
     if not source.is_dir() or not (source / ".git").is_dir():
         raise SystemExit(f"Recovery clone is unavailable: {source}")
     if not args.stdout:
@@ -187,6 +200,10 @@ def main() -> int:
     for commit, tree in active_history:
         active_by_tree[tree].append(commit)
     exact_counterparts = active_by_tree.get(source_tree, [])
+    if not exact_counterparts:
+        raise SystemExit(
+            f"Recovery tree {source_tree} has no exact counterpart reachable from active HEAD {active_head}"
+        )
 
     source_entries = parse_tree(source, source_head)
     active_entries = parse_tree(root, active_head)
@@ -207,6 +224,11 @@ def main() -> int:
     status_lines = [line for line in status_output.splitlines() if line]
     untracked = [line[3:].replace("\\", "/") for line in status_lines if line.startswith("?? ")]
     tracked_changes = [line for line in status_lines if not line.startswith("?? ")]
+    if tracked_changes:
+        raise SystemExit(
+            "Recovery worktree has tracked changes; reconcile them explicitly before certifying its committed tree: "
+            + "; ".join(tracked_changes[:20])
+        )
 
     cherry_rows = git_text(root, "cherry", active_head, source_head).splitlines()
     equivalent_commits = [line[2:] for line in cherry_rows if line.startswith("- ")]
