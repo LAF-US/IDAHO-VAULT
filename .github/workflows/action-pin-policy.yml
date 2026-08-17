@@ -51,6 +51,10 @@ jobs:
       contents: read
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          # Full history: the mutation step below compares against the base
+          # commit, and the default shallow fetch has no such commit to diff.
+          fetch-depth: 0
       - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         with:
           python-version: "3.13"
@@ -79,6 +83,40 @@ jobs:
           # root makes discovery fail outright with "Start directory is not
           # importable".
           python -m unittest discover \
+            --start-directory .github/scripts \
+            --pattern 'test_*.py' \
+            --top-level-directory .github/scripts \
+            --verbose
+      - name: Prove the guard's tests can still fail, when the guard changes
+        env:
+          # Through the environment, not interpolated into the script: a
+          # `${{ }}` expansion inside `run:` is substituted before the shell
+          # ever sees it, and this repository already treats that as a code
+          # injection boundary.
+          BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.merge_group.base_sha }}
+        run: |
+          # The mutation suite is skipped by default (see its docstring: each
+          # entry quotes a line of the guard verbatim, so a legitimate refactor
+          # makes it fail on a pull request that never touched the guard). But
+          # skipped-always would leave the coverage claim unenforced, which is
+          # its own kind of green-and-meaningless. So: run it exactly when the
+          # guard or its tests changed here, which is when a regression could
+          # be introduced and when PATTERN MISSING is information rather than
+          # noise. Off the pull-request path there is no base to diff, so it
+          # runs unconditionally.
+          if [ -n "$BASE_SHA" ] && git cat-file -e "$BASE_SHA^{commit}" 2>/dev/null; then
+            changed=$(git diff --name-only "$BASE_SHA...HEAD" -- \
+              .github/scripts/check_action_pins.py \
+              .github/scripts/test_check_action_pins.py \
+              .github/scripts/test_check_action_pins_mutations.py)
+            if [ -z "$changed" ]; then
+              echo "action-pin guard untouched by this change; mutation sweep not required"
+              exit 0
+            fi
+            echo "changed here, so the tests must still be able to fail:"
+            echo "$changed"
+          fi
+          RUN_MUTATION_TESTS=1 python -m unittest discover \
             --start-directory .github/scripts \
             --pattern 'test_*.py' \
             --top-level-directory .github/scripts \
