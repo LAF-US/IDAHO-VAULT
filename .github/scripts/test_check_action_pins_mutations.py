@@ -273,7 +273,17 @@ def surviving_mutants(report=print) -> list[str]:
     mutants = mutations(guard)
 
     for label, (original, broken) in mutants.items():
-        if not original or original not in guard:
+        # `broken == original` is the third way an entry can stop applying, and
+        # the only one that used to pass this gate. Two entries below build the
+        # broken form with `str.replace` on a line taken from the guard; when
+        # the substring being removed is refactored away, replace returns its
+        # input. `original` is then still in the guard, so the copy written
+        # below is the guard UNCHANGED -- the suite passes it, and the entry is
+        # announced as `*** SURVIVED ***`: a regression the tests cannot see.
+        # Nothing was mutated. Measured before adding this: a no-op entry
+        # printed exactly that, and kept a workspace for a mutant that does not
+        # exist. It fails the sweep either way; what was wrong is what it said.
+        if not original or original not in guard or broken == original:
             report(f"{'PATTERN MISSING':17}{label}")
             survivors.append(label)
             continue

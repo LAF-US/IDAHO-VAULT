@@ -66,10 +66,6 @@ else:
 """
 
 
-# The same sequence, but the thing repointed is the action's PARENT DIRECTORY
-# rather than the file. O_NOFOLLOW on the final open is satisfied either way --
-# `action.yml` under the substituted directory really is a regular file -- so
-# this is only refused by a guard that checks the components above it too.
 # Validate a regular file, then replace it with a FIFO. Nothing here is a
 # symlink, so O_NOFOLLOW has no opinion; a plain O_RDONLY open on a FIFO with no
 # writer BLOCKS. The probe prints its verdict, or hangs and is killed.
@@ -156,6 +152,11 @@ else:
 """
 
 
+# The same sequence as SWAP_PROBE, but the thing repointed is the action's
+# PARENT DIRECTORY rather than the file. O_NOFOLLOW on the final open is
+# satisfied either way -- `action.yml` under the substituted directory really is
+# a regular file -- so this is only refused by a guard that checks the
+# components above it too.
 ANCESTOR_SWAP_PROBE = """
 import pathlib
 import shutil
