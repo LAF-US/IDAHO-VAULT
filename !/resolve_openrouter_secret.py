@@ -6,6 +6,7 @@ from __future__ import annotations
 import os
 import pathlib
 import re
+import stat
 import sys
 import tempfile
 
@@ -13,12 +14,15 @@ import tempfile
 REPO_ROOT = pathlib.Path(__file__).resolve().parents[1]
 ENV_FILE = REPO_ROOT / ".op" / "openrouter.env"
 KEY_RE = re.compile(r"^(?:export\s+)?([A-Z][A-Z0-9_]*)=(.*)$")
+OP_REFERENCE_RE = re.compile(r"^op://[^/\r\n]+/[^/\r\n]+/[^/\r\n]+$")
 SECRET_PLACEHOLDERS = frozenset(
     {
         "<OPENROUTER_SECRET_REF>",
         "CHANGE_TO_MANAGEMENT_KEY_OP_REF",
     }
 )
+PRIVATE_DIRECTORY_MODE = stat.S_IRWXU
+PRIVATE_FILE_MODE = stat.S_IRUSR | stat.S_IWUSR
 
 
 def unquote(value: str) -> str:
@@ -28,85 +32,81 @@ def unquote(value: str) -> str:
     return value
 
 
-def parse_env_content(content: str) -> dict[str, str]:
-    """Parse non-empty KEY=value lines without interpreting shell syntax."""
-    values: dict[str, str] = {}
-    for raw_line in content.splitlines():
+def validated_op_reference(value: str | None, variable_name: str) -> str:
+    """Return a syntactically valid 1Password reference without exposing its value."""
+    if value is None or not value.strip() or value.strip() in SECRET_PLACEHOLDERS:
+        raise RuntimeError(f"{variable_name} is not configured with a 1Password op:// reference.")
+
+    reference = unquote(value)
+    if not OP_REFERENCE_RE.fullmatch(reference):
+        raise RuntimeError(f"{variable_name} must be a valid 1Password op:// reference.")
+    return reference
+
+
+def read_env_reference(variable_name: str, path: pathlib.Path | None = None) -> str | None:
+    """Read and validate one reference from the private environment file."""
+    path = ENV_FILE if path is None else path
+    if not path.exists():
+        return None
+
+    for raw_line in path.read_text(encoding="utf-8").splitlines():
         line = raw_line.strip()
         if not line or line.startswith("#"):
             continue
         match = KEY_RE.match(line)
-        if match:
-            values[match.group(1)] = unquote(match.group(2))
-    return values
+        if match and match.group(1) == variable_name:
+            return validated_op_reference(match.group(2), variable_name)
+    return None
 
 
-def _is_usable_secret_source(value: str | None) -> bool:
-    return bool(value and value.strip() and value.strip() not in SECRET_PLACEHOLDERS)
+def openrouter_reference() -> str:
+    """Select a validated reference from the environment or private runtime file."""
+    environment_reference = os.environ.get("OPENROUTER_API_KEY")
+    if environment_reference:
+        return validated_op_reference(environment_reference, "OPENROUTER_API_KEY")
 
+    file_reference = read_env_reference("OPENROUTER_API_KEY")
+    if file_reference:
+        return file_reference
 
-def read_env_values(path: pathlib.Path | None = None) -> dict[str, str]:
-    path = ENV_FILE if path is None else path
-    if not path.exists():
-        return {}
-    return parse_env_content(path.read_text(encoding="utf-8"))
-
-
-def select_secret_source(existing_values: dict[str, str]) -> str:
-    """Choose an explicit runtime secret or 1Password reference without exposing it."""
-    environment_value = os.environ.get("OPENROUTER_API_KEY")
-    existing_value = existing_values.get("OPENROUTER_API_KEY")
-    source = next(
-        (
-            value.strip()
-            for value in (environment_value, existing_value)
-            if _is_usable_secret_source(value)
-        ),
-        None,
+    raise RuntimeError(
+        "OPENROUTER_API_KEY is not configured. Copy .op/openrouter.env.template "
+        "to .op/openrouter.env and replace <OPENROUTER_SECRET_REF> with a 1Password reference."
     )
-    if source is None:
-        raise RuntimeError(
-            "OPENROUTER_API_KEY is not configured. Copy .op/openrouter.env.template "
-            "to .op/openrouter.env and replace <OPENROUTER_SECRET_REF> with a 1Password reference."
-        )
-    if not (source.startswith("op://") or source.startswith("sk-or-")):
-        raise RuntimeError("OPENROUTER_API_KEY must be an op:// reference or an sk-or- API key.")
-    return source
 
 
-def build_runtime_env(secret_source: str, existing_values: dict[str, str]) -> str:
+def build_runtime_env(openrouter_ref: str, management_ref: str | None) -> str:
     """Build the aliases required by the Codex and Claude OpenRouter launchers."""
-    management_key = existing_values.get("OPENROUTER_MANAGEMENT_KEY", "").strip()
     lines = [
-        f"OPENROUTER_API_KEY={secret_source}",
-        f"OPENAI_API_KEY={secret_source}",
+        f"OPENROUTER_API_KEY={openrouter_ref}",
+        f"OPENAI_API_KEY={openrouter_ref}",
         "OPENAI_BASE_URL=https://openrouter.ai/api/v1",
         "OPENAI_MODEL=openrouter/auto",
-        f"ANTHROPIC_AUTH_TOKEN={secret_source}",
+        f"ANTHROPIC_AUTH_TOKEN={openrouter_ref}",
         "ANTHROPIC_BASE_URL=https://openrouter.ai/api",
-        f"ANTHROPIC_API_KEY={secret_source}",
+        f"ANTHROPIC_API_KEY={openrouter_ref}",
     ]
-    if _is_usable_secret_source(management_key):
-        lines.insert(1, f"OPENROUTER_MANAGEMENT_KEY={management_key}")
+    if management_ref:
+        lines.insert(1, f"OPENROUTER_MANAGEMENT_KEY={management_ref}")
     return "\n".join(lines) + "\n"
 
 
 def write_runtime_env(content: str, path: pathlib.Path | None = None) -> None:
     """Atomically write a private runtime environment file without logging its content."""
     path = ENV_FILE if path is None else path
-    path.parent.mkdir(mode=0o700, parents=True, exist_ok=True)
-    os.chmod(path.parent, 0o700)
+    path.parent.mkdir(mode=PRIVATE_DIRECTORY_MODE, parents=True, exist_ok=True)
+    os.chmod(path.parent, PRIVATE_DIRECTORY_MODE)
     descriptor, temporary_name = tempfile.mkstemp(
         prefix=f".{path.name}.",
         dir=path.parent,
         text=True,
     )
     try:
-        os.fchmod(descriptor, 0o600)
+        os.fchmod(descriptor, PRIVATE_FILE_MODE)
         with os.fdopen(descriptor, "w", encoding="utf-8") as handle:
             handle.write(content)
         os.replace(temporary_name, path)
-        os.chmod(path, 0o600)
+        os.chmod(path, PRIVATE_FILE_MODE)
     except BaseException:
         try:
             os.close(descriptor)
@@ -117,9 +117,9 @@ def write_runtime_env(content: str, path: pathlib.Path | None = None) -> None:
 
 
 def materialize_runtime_env() -> pathlib.Path:
-    existing_values = read_env_values()
-    secret_source = select_secret_source(existing_values)
-    write_runtime_env(build_runtime_env(secret_source, existing_values))
+    openrouter_ref = openrouter_reference()
+    management_ref = read_env_reference("OPENROUTER_MANAGEMENT_KEY")
+    write_runtime_env(build_runtime_env(openrouter_ref, management_ref))
     return ENV_FILE
 
 

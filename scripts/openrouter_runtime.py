@@ -15,6 +15,7 @@ AGENT_COMMANDS = {
     "codex": "codex",
     "claude": "claude",
 }
+INTERACTIVE_COMMAND_TIMEOUT_SECONDS = 8 * 60 * 60
 
 
 def ensure_dir(path: Path) -> Path:
@@ -121,6 +122,22 @@ def ensure_env_file(agent: str) -> Path:
     return ENV_FILE
 
 
+def run_interactive_command(command: list[str], env: dict[str, str] | None = None) -> int:
+    """Run an approved interactive command with a bounded session lifetime."""
+    try:
+        result = subprocess.run(
+            command,
+            env=env,
+            check=False,
+            timeout=INTERACTIVE_COMMAND_TIMEOUT_SECONDS,
+        )
+    except subprocess.TimeoutExpired as exc:
+        raise SystemExit(
+            f"Interactive command timed out after {INTERACTIVE_COMMAND_TIMEOUT_SECONDS // 3600} hours."
+        ) from exc
+    return result.returncode
+
+
 def exec_agent(agent: str, args: list[str]) -> int:
     cli_name = agent_command(agent)
     env = apply_runtime_env(agent)
@@ -128,8 +145,7 @@ def exec_agent(agent: str, args: list[str]) -> int:
     if resolved_cli is None:
         raise SystemExit(f"Could not find approved '{cli_name}' executable on PATH.")
 
-    result = subprocess.run([resolved_cli, *args], env=env, check=False)
-    return result.returncode
+    return run_interactive_command([resolved_cli, *args], env)
 
 
 def is_help_request(args: list[str]) -> bool:
@@ -157,8 +173,7 @@ def launch_agent(agent: str, args: list[str]) -> int:
         agent,
         *args,
     ]
-    result = subprocess.run(command, check=False)
-    return result.returncode
+    return run_interactive_command(command)
 
 
 def main() -> int:

@@ -100,7 +100,16 @@ class OpenRouterRuntimeTest(unittest.TestCase):
             [r"C:\\mock\\bin\\codex.cmd", "--help"],
             env={"PATH": r"C:\\mock\\bin"},
             check=False,
+            timeout=openrouter_runtime.INTERACTIVE_COMMAND_TIMEOUT_SECONDS,
         )
+
+    def test_interactive_command_timeout_is_clear(self) -> None:
+        timeout = openrouter_runtime.subprocess.TimeoutExpired(["codex"], 1)
+        with patch.object(openrouter_runtime.subprocess, "run", side_effect=timeout):
+            with self.assertRaises(SystemExit) as exc:
+                openrouter_runtime.run_interactive_command(["codex"])
+
+        self.assertIn("Interactive command timed out", str(exc.exception))
 
     def test_windows_launcher_uses_a_fixed_agent_command_map(self) -> None:
         launcher = (PROJECT_ROOT / "scripts" / "Use-OpenRouterEnv.ps1").read_text(encoding="utf-8")
@@ -132,7 +141,9 @@ class OpenRouterRuntimeTest(unittest.TestCase):
                 "--model",
                 "openrouter/auto",
             ],
+            env=None,
             check=False,
+            timeout=openrouter_runtime.INTERACTIVE_COMMAND_TIMEOUT_SECONDS,
         )
 
 
