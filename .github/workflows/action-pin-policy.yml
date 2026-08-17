@@ -55,6 +55,21 @@ jobs:
           # Full history: the mutation step below compares against the base
           # commit, and the default shallow fetch has no such commit to diff.
           fetch-depth: 0
+          # This job exists to execute the PR's own test code, so it should
+          # hold nothing that code could pick up. By default checkout writes
+          # the job's GITHUB_TOKEN into .git/config as an extraheader, where
+          # every later step — including the tests — can read it. It is only a
+          # `contents: read` token, but "give the PR's code nothing" is the
+          # whole design of this job, and a readable credential in the working
+          # tree contradicts it.
+          #
+          # The `git fetch` in the last step then runs unauthenticated. On this
+          # public repository that works; if it ever cannot, the step's guard
+          # is a conjunction, so a failed fetch makes the whole condition false
+          # and the mutation sweep runs UNCONDITIONALLY rather than being
+          # skipped. The degradation costs a minute of runner time and never
+          # loses coverage.
+          persist-credentials: false
       - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         with:
           python-version: "3.13"
