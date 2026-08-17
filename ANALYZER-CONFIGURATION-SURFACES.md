@@ -1,4 +1,5 @@
 ---
+title: ANALYZER-CONFIGURATION-SURFACES
 authority: LOGAN
 status: staged
 scope: repository-side analyzer control surfaces
