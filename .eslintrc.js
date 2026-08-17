@@ -1,17 +1,7 @@
-/* global module */
-//
-// Codacy does not read this repository's ESLint config. Its CLI prints
-// "ESLint configuration created based on Codacy settings" and generates its own
-// from the Code patterns page, so the `sourceType: "commonjs"` and
-// `globals.node` declared in eslint.config.js never reach Codacy's run. These
-// files really are CommonJS, so Codacy's generated config drew no-undef on
-// `module` and `require`. Reproduced locally with codacy-cli-v2: exactly the
-// four alerts code scanning reported, same files, same lines.
-//
-// The directive above states a fact rather than silencing a rule -- both are
-// Node CommonJS modules and both globals exist at run time. `/* global */` is
-// honoured by every ESLint config including a generated one; `eslint-env node`
-// would not be, having been removed in ESLint 9.
+// This is a CommonJS configuration file. Its own `env.node` declaration
+// supplies Node globals, and Codacy's current ESLint environment does too.
+// An explicit `/* global module */` directive therefore redeclares the built-in
+// `module` global and is intentionally absent.
 
 // ESLint legacy config — NOT MERELY INERT. IT BREAKS MODERN ESLINT RUNS.
 //
@@ -97,12 +87,7 @@ module.exports = {
   env: { node: true, es2024: true },
   parserOptions: { ecmaVersion: 2024, sourceType: "script" },
   extends: ["eslint:recommended"],
-  ignorePatterns: [
-    "THE-GEMSTONE/",
-    "node_modules/",
-    ".venv/",
-    ".uv-cache/",
-  ],
+  ignorePatterns: ["THE-GEMSTONE/", "node_modules/", ".venv/", ".uv-cache/"],
   overrides: [
     {
       // Electron renderer: browser globals ON TOP of node. Scoped here rather

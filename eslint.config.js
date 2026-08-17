@@ -1,17 +1,7 @@
-/* global module, require */
-//
-// Codacy does not read this repository's ESLint config. Its CLI prints
-// "ESLint configuration created based on Codacy settings" and generates its own
-// from the Code patterns page, so the `sourceType: "commonjs"` and
-// `globals.node` declared in eslint.config.js never reach Codacy's run. These
-// files really are CommonJS, so Codacy's generated config drew no-undef on
-// `module` and `require`. Reproduced locally with codacy-cli-v2: exactly the
-// four alerts code scanning reported, same files, same lines.
-//
-// The directive above states a fact rather than silencing a rule -- both are
-// Node CommonJS modules and both globals exist at run time. `/* global */` is
-// honoured by every ESLint config including a generated one; `eslint-env node`
-// would not be, having been removed in ESLint 9.
+// This is a CommonJS configuration file. The language options below supply
+// Node globals locally, and Codacy's current ESLint environment does too.
+// Explicit `/* global module, require */` declarations redeclare built-ins and
+// are intentionally absent.
 
 // ESLint flat config — Codacy toggle. The only config format ESLint 10 reads.
 //
@@ -69,28 +59,6 @@ module.exports = [
       sourceType: "commonjs",
       globals: { ...globals.node },
     },
-  },
-
-  {
-    // The two config files carry `/* global module, require */` because CODACY
-    // generates its own ESLint config with no globals, and without the
-    // directive its run draws no-undef on both identifiers (reproduced: strip
-    // the directive and eslint 8.57.0 under a globals-free config reports
-    // exactly the four alerts code scanning filed).
-    //
-    // THIS config supplies globals.node, so under it the same directive is a
-    // redeclaration and js.configs.recommended fires no-redeclare -- 3 errors,
-    // on the config files themselves. Caught in review; verified with
-    // `eslint eslint.config.js .eslintrc.js`.
-    //
-    // The two runs want opposite things and both are right about their own
-    // environment, so the directive stays for Codacy and the rule is turned off
-    // HERE, for these two paths only. This is not a silenced finding: `module`
-    // and `require` genuinely exist in both files at run time, which is why the
-    // directive is true and the redeclaration is harmless. Every other file
-    // keeps no-redeclare armed.
-    files: ["eslint.config.js", ".eslintrc.js"],
-    rules: { "no-redeclare": "off" },
   },
 
   {
