@@ -92,9 +92,18 @@ def mutations(guard: str) -> dict[str, tuple[str, str]]:
             'os.fdopen(descriptor, encoding="utf-8-sig")',
             'os.fdopen(descriptor, encoding="utf-8")',
         ),
-        "read by name instead of O_NOFOLLOW (check/read disagree)": (
-            'return os.open(path, os.O_RDONLY | O_NOFOLLOW), ""',
-            'return os.open(path, os.O_RDONLY), ""',
+        # Two entries, not one, because the walk has two O_NOFOLLOWs and they
+        # defend different halves of the same race. The first version of this
+        # guard had only the final one and looked complete; the ancestor mutant
+        # is what keeps the walk from quietly collapsing back to that.
+        "final component read without O_NOFOLLOW (check/read disagree)": (
+            'return os.open(leaf, os.O_RDONLY | O_NOFOLLOW, dir_fd=directory), ""',
+            'return os.open(leaf, os.O_RDONLY, dir_fd=directory), ""',
+        ),
+        "ancestor components read without O_NOFOLLOW (a swapped parent)": (
+            "                part, os.O_RDONLY | os.O_DIRECTORY | O_NOFOLLOW, "
+            "dir_fd=directory",
+            "                part, os.O_RDONLY | os.O_DIRECTORY, dir_fd=directory",
         ),
         "no UnicodeDecodeError handler": (
             "    except UnicodeDecodeError:\n"

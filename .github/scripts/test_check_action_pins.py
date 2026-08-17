@@ -13,6 +13,7 @@ under test — no monkeypatching of module state, and `main()` is exercised end
 to end, including discovery, the worklist, and the exit code.
 """
 
+import os
 import shutil
 import subprocess
 import sys
@@ -56,6 +57,38 @@ if readable is None:
 
 action.unlink()
 action.symlink_to(outside)
+
+text, reason = guard._read(readable)
+if text is not None and "actions/checkout@latest" in text:
+    print("READ-OUTSIDE-CONTENT")
+else:
+    print(reason or "read something, but not the outside file")
+"""
+
+
+# The same sequence, but the thing repointed is the action's PARENT DIRECTORY
+# rather than the file. O_NOFOLLOW on the final open is satisfied either way --
+# `action.yml` under the substituted directory really is a regular file -- so
+# this is only refused by a guard that checks the components above it too.
+ANCESTOR_SWAP_PROBE = """
+import pathlib
+import shutil
+import sys
+
+sys.path.insert(0, sys.argv[1])
+import check_action_pins as guard
+
+action = pathlib.Path(sys.argv[2])
+outside = pathlib.Path(sys.argv[3])
+
+readable, reason = guard._readable(action)
+if readable is None:
+    print("NOT-VALIDATED", reason)
+    raise SystemExit(0)
+
+parent = action.parent
+shutil.rmtree(parent)
+parent.symlink_to(outside, target_is_directory=True)
 
 text, reason = guard._read(readable)
 if text is not None and "actions/checkout@latest" in text:
@@ -556,6 +589,56 @@ class DiscoveryTest(GuardFixture):
         verdict = probe.stdout.strip()
         self.assertNotIn(
             "READ-OUTSIDE-CONTENT", verdict, "a swapped-in symlink was followed"
+        )
+        self.assertIn("symlink", verdict)
+
+    @unittest.skipUnless(
+        os.open in os.supports_dir_fd,
+        "descending by descriptor needs dir_fd; the ancestor half of the race "
+        "is documented as open where it is missing, so asserting it here would "
+        "fail on the platform the guard already says it cannot protect",
+    )
+    def test_an_ancestor_swapped_for_a_symlink_after_the_check_is_not_read(self):
+        # The file-swap test above passes against a guard that closes only the
+        # LAST component, which is what O_NOFOLLOW on a single open does. It
+        # therefore proves less than it looks like it proves, and the gap was
+        # real: with that version in place, replacing the action's parent
+        # DIRECTORY with a link to somewhere outside the repository returned the
+        # outside file's content, O_NOFOLLOW raising nothing because the final
+        # component under the substituted directory is an ordinary file.
+        #
+        # Same fixture-repository reasoning as above: the guard derives
+        # REPO_ROOT from its own location, so the planted path has to be inside
+        # the copy for containment not to be what is actually under test.
+        action = self.root / ".github" / "actions" / "ancestor" / "action.yml"
+        action.parent.mkdir(parents=True)
+        action.write_text("name: ok\nruns:\n  using: composite\n  steps: []\n")
+        outside = self.root.parent / f"{self.root.name}-ancestor-target"
+        outside.mkdir()
+        self.addCleanup(shutil.rmtree, outside, ignore_errors=True)
+        (outside / "action.yml").write_text(
+            "on: push\nsteps:\n  - uses: actions/checkout@latest\n"
+        )
+
+        probe = subprocess.run(
+            [
+                sys.executable,
+                "-c",
+                ANCESTOR_SWAP_PROBE,
+                str(self.root / ".github" / "scripts"),
+                str(action),
+                str(outside),
+            ],
+            capture_output=True,
+            text=True,
+            timeout=60,
+            cwd=self.root,
+            check=False,
+        )
+        self.assertEqual(probe.returncode, 0, probe.stderr)
+        verdict = probe.stdout.strip()
+        self.assertNotIn(
+            "READ-OUTSIDE-CONTENT", verdict, "a swapped-in ancestor was followed"
         )
         self.assertIn("symlink", verdict)
 

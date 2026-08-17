@@ -142,10 +142,9 @@ def scan_targets() -> list[Path]:
 # `.claude/CLAUDE.md` § Windows Operation — nothing here may require Unix).
 # Naming it directly raises AttributeError there, so the guard would crash on
 # the machine it is most often run from by hand. Absent, the flag degrades to
-# 0: the open stops refusing symlinks and the check is Unix-strength only.
-# That is the honest trade — CI, which is where this gates anything, is Linux,
-# and `_readable()` still rejects a symlink that is already in place. Only the
-# swap-after-check window reopens, and only off CI.
+# 0: the open stops refusing symlinks by itself, so `_open_by_name()` checks
+# afterwards what it actually opened. `_readable()` still rejects a symlink
+# already in place either way.
 O_NOFOLLOW = getattr(os, "O_NOFOLLOW", 0)
 # The errno `open()` reports for O_NOFOLLOW against a symlink: ELOOP on Linux
 # and macOS, EMLINK on FreeBSD, which documents exactly this case in open(2).
@@ -153,6 +152,38 @@ O_NOFOLLOW = getattr(os, "O_NOFOLLOW", 0)
 # open() has no EMLINK outcome at all — that errno belongs to link() exceeding
 # a directory's link count, which is not a path this function can reach.
 SYMLINK_REFUSED = (errno.ELOOP, errno.EMLINK)
+# Descending by descriptor needs dir_fd, which is Unix-only like the flag
+# above. Where it is missing the walk collapses to a single open and the
+# ancestor components go unchecked — stated in `_open_by_name()`, not papered
+# over.
+DIR_FD_SUPPORTED = os.open in os.supports_dir_fd
+
+
+SWAPPED = "became a symlink after the safety check; not read"
+
+
+def _unreadable(exc: OSError, name: str = "", dir_fd: int | None = None) -> str:
+    """One phrasing for a failed open, so the paths below cannot drift.
+
+    O_NOFOLLOW refusing a symlink is ELOOP on its own. But the ancestor opens
+    also pass O_DIRECTORY, and against a symlink-to-directory Linux answers
+    ENOTDIR first: the unfollowed link is indeed not a directory, which is true
+    and says nothing about why. Reported verbatim that describes a DETECTED
+    SWAP as an ordinary broken path — the read is refused either way, so
+    nothing unsafe follows, but the guard would be naming the wrong thing about
+    its own finding, which is the failure this whole file is being corrected
+    for. So on the errno that can mean either, ask what the component actually
+    is: readlink answers only for a link.
+    """
+    if exc.errno in SYMLINK_REFUSED:
+        return SWAPPED
+    if exc.errno == errno.ENOTDIR and name and dir_fd is not None:
+        try:
+            os.readlink(name, dir_fd=dir_fd)
+            return SWAPPED
+        except (OSError, NotImplementedError):
+            pass
+    return f"not readable ({exc.strerror or exc}); cannot verify pins"
 
 
 def _open_no_follow(path: Path) -> tuple[int | None, str]:
@@ -164,12 +195,91 @@ def _open_no_follow(path: Path) -> tuple[int | None, str]:
     Keeping them in one body put two unrelated error vocabularies in the same
     function, which is the shape this file has been pulling apart throughout.
     """
+    if DIR_FD_SUPPORTED:
+        return _open_by_descriptor_walk(path)
+    return _open_by_name(path)
+
+
+def _open_by_descriptor_walk(path: Path) -> tuple[int | None, str]:
+    """Descend from the repository root, one component at a time.
+
+    A flag on the final open alone is not enough. O_NOFOLLOW refuses a symlink
+    in the LAST position and says nothing about the ones above it, so replacing
+    an ANCESTOR directory after the check still resolved outside the
+    repository. Demonstrated the same way as the file swap: validate
+    `.github/actions/x/action.yml`, replace the `x` directory with a link to a
+    directory outside the repository, read, and the outside file's content came
+    back with the final open's O_NOFOLLOW entirely satisfied — the last
+    component really was a regular file, just not the one that was checked.
+
+    Descending from a held descriptor means each component is refused as it is
+    used, and once a directory descriptor is held there is no name left behind
+    us for anyone to repoint.
+    """
     try:
-        return os.open(path, os.O_RDONLY | O_NOFOLLOW), ""
+        relative = path.relative_to(REPO_ROOT)
+    except ValueError:
+        return None, "resolves outside the repository; not read"
+    if not relative.parts:
+        return None, "is the repository root, not a file; not read"
+
+    directory = os.open(REPO_ROOT, os.O_RDONLY | os.O_DIRECTORY)
+    try:
+        for part in relative.parts[:-1]:
+            try:
+                step = os.open(
+                    part, os.O_RDONLY | os.O_DIRECTORY | O_NOFOLLOW, dir_fd=directory
+                )
+            except OSError as exc:
+                return None, _unreadable(exc, part, directory)
+            os.close(directory)
+            directory = step
+        leaf = relative.parts[-1]
+        try:
+            return os.open(leaf, os.O_RDONLY | O_NOFOLLOW, dir_fd=directory), ""
+        except OSError as exc:
+            return None, _unreadable(exc, leaf, directory)
+    finally:
+        os.close(directory)
+
+
+def _open_by_name(path: Path) -> tuple[int | None, str]:
+    """The degraded path: no dir_fd, so no walk. Windows takes this branch.
+
+    Both defences above are Unix-only, and they fail QUIETLY here: `dir_fd` is
+    absent so nothing descends, and O_NOFOLLOW is 0 so the open follows a link
+    it was supposed to refuse. Saying "Unix-strength only" in a comment and
+    leaving the open bare would make the docstring on `_read()` a claim this
+    branch does not keep.
+
+    So the identity of what was opened is checked against the identity the NAME
+    still denotes. `lstat` does not follow the final component, so a link
+    swapped into that position reports the link's own inode, which cannot match
+    the target the descriptor is holding — the swap is caught after the fact
+    and the read is refused. What this does NOT recover is the ancestor case:
+    both calls follow intermediate directories, so a replaced ancestor agrees
+    with itself. That half stays open off Unix, and is stated rather than
+    implied.
+
+    The suite cannot assert any of this from Linux, where the branch is not
+    taken, so it was checked by hand instead: with both constants above forced
+    to their Windows values, the swap probe reads the outside file when the
+    comparison below is removed and is refused when it is present.
+    """
+    try:
+        descriptor = os.open(path, os.O_RDONLY | O_NOFOLLOW)
     except OSError as exc:
-        if exc.errno in SYMLINK_REFUSED:
-            return None, "became a symlink after the safety check; not read"
-        return None, f"not readable ({exc.strerror or exc}); cannot verify pins"
+        return None, _unreadable(exc)
+    try:
+        opened = os.fstat(descriptor)
+        named = os.lstat(path)
+    except OSError as exc:
+        os.close(descriptor)
+        return None, _unreadable(exc)
+    if (opened.st_dev, opened.st_ino) != (named.st_dev, named.st_ino):
+        os.close(descriptor)
+        return None, SWAPPED
+    return descriptor, ""
 
 
 def _read(path: Path) -> tuple[str | None, str]:
@@ -181,14 +291,21 @@ def _read(path: Path) -> tuple[str | None, str]:
     finding. A guard that dies is not a guard that failed closed: the job
     still goes red, but it names a Python error rather than the file.
 
-    Opened with O_NOFOLLOW rather than by name, because `_readable()` checks a
-    PATH and this opens one — two operations on a name, with a window between
-    them where the name can be repointed. `_readable()`'s own docstring
+    Opened by `_open_no_follow()` rather than by name, because `_readable()`
+    checks a PATH and this opens one — two operations on a name, with a window
+    between them where the name can be repointed. `_readable()`'s own docstring
     claimed that window was closed; it was only narrowed. Demonstrated: verify
     a regular file inside the repository, replace it with a symlink to a file
     outside, read here, and content from outside the repository lands in the
-    findings. O_NOFOLLOW makes the open itself refuse a symlink, so the check
-    and the read can no longer disagree about which object they mean.
+    findings.
+
+    How much of that window `_open_no_follow()` actually closes depends on the
+    platform, and the two branches there say which is which. On Unix — where
+    this gates anything, since CI is Linux — the whole path is descended by
+    descriptor and every component is refused, so the check and the read cannot
+    disagree about which object they mean. Where `dir_fd` is missing the final
+    component is still caught, by identity rather than by flag, and a replaced
+    ancestor is not. Neither branch is silently weaker than its docstring.
     """
     descriptor, reason = _open_no_follow(path)
     if descriptor is None:
