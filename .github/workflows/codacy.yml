@@ -185,7 +185,96 @@ jobs:
 
           kept_total = dropped_total = 0
           repairs = []
-          for i, run in enumerate(sarif.get("runs", [])):
+
+          def _object(container, key, label):
+              """Return container[key] as a dict, replacing a non-object value.
+
+              `setdefault` is the wrong tool here and was the bug: for an
+              EXISTING key it returns the existing value untouched, so
+              `tool.setdefault("driver", {})` hands back None when the analyser
+              emitted `"driver": null` -- and the very next `.get("rules")`
+              raises AttributeError and takes the whole workflow down. A block
+              whose entire job is repairing malformed values must not itself
+              assume they are well-formed.
+              """
+              value = container.get(key)
+              if isinstance(value, dict):
+                  return value
+              if key in container:
+                  repairs.append(f"{label} was {type(value).__name__}, replaced with an empty object")
+              container[key] = {}
+              return container[key]
+
+          def _sub(container, key, label=None):
+              """A nested object, never something `.get` cannot be called on.
+
+              `loc.get("physicalLocation", {})` defaults only when the key is
+              ABSENT. A present-but-non-object value comes straight back, and
+              the chained `.get("artifactLocation")` raises on it.
+
+              With a label, a present-but-invalid value is REPAIRED in place and
+              recorded — returning `{}` while leaving `"location": null` in the
+              document is the `rules: null` failure again, read smoothly here
+              and rejected at the uploader. Without a label the container is
+              only read, which is what the pre-upload validator needs: it must
+              judge the document, not quietly mend it.
+              """
+              value = container.get(key)
+              if isinstance(value, dict):
+                  return value
+              if label and key in container:
+                  repairs.append(f"{label} was {type(value).__name__}, replaced with an empty object")
+                  container[key] = {}
+                  return container[key]
+              return {}
+
+          def _objects(container, key, label):
+              """The objects in container[key], dropping whatever is not one.
+
+              `x.get(k, []) or []` looks defensive and is not: a present dict or
+              string is truthy, so it survives, gets iterated -- yielding keys
+              or characters -- and the `.get` inside the loop raises. Every
+              array this script walks goes through here instead.
+              """
+              value = container.get(key)
+              if value is None:
+                  # An ABSENT key is fine and must stay absent -- adding
+                  # `artifacts: []` to a document that never had it is not a
+                  # repair. A key present with an explicit null is the `rules:
+                  # null` failure exactly: iterating treats it as empty, and
+                  # the null ships to an uploader that rejects the document.
+                  if key in container:
+                      repairs.append(f"{label} was None, coerced to []")
+                      container[key] = []
+                  return []
+              if not isinstance(value, list):
+                  repairs.append(f"{label} was {type(value).__name__}, treated as empty")
+                  container[key] = []
+                  return []
+              usable = [item for item in value if isinstance(item, dict)]
+              if len(usable) != len(value):
+                  repairs.append(f"{label} dropped {len(value) - len(usable)} non-object entries")
+                  # Write back, not just filter: returning a clean list while
+                  # leaving the junk in the document means the uploader still
+                  # rejects it, and anything downstream that re-reads the key
+                  # gets the junk again.
+                  container[key] = usable
+              return usable
+
+          # Same reasoning one level up: `runs` itself, and each entry in it,
+          # are read with `.get`/`.setdefault` below and would crash on a
+          # non-object just as surely.
+          raw_runs = sarif.get("runs")
+          if not isinstance(raw_runs, list):
+              if "runs" in sarif:
+                  repairs.append(f"runs was {type(raw_runs).__name__}, coerced to []")
+              raw_runs = []
+          usable_runs = [r for r in raw_runs if isinstance(r, dict)]
+          if len(usable_runs) != len(raw_runs):
+              repairs.append(f"runs dropped {len(raw_runs) - len(usable_runs)} non-object entries")
+          sarif["runs"] = usable_runs
+
+          for i, run in enumerate(usable_runs):
               # CLI v2 emits "rules": null when it has no rule metadata, and
               # code scanning rejects the whole document for it:
               #   instance.runs[0].tool.driver.rules is not of a type(s) array
@@ -198,18 +287,78 @@ jobs:
               # the coerced value and could never report what was actually
               # wrong. A silent repair of a null is how the null got shipped in
               # the first place.
-              driver = run.setdefault("tool", {}).setdefault("driver", {})
-              raw_rules = driver.get("rules")
-              if not isinstance(raw_rules, list):
+              # driver and extensions are both toolComponent and the schema
+              # types `rules` identically for each, so both are repaired here.
+              tool = _object(run, "tool", f"runs[{i}].tool")
+              driver = _object(tool, "driver", f"runs[{i}].tool.driver")
+              # `name` is REQUIRED on driver, so a driver we just replaced (or
+              # one that arrived without a usable name) would be rejected by
+              # the uploader and, before that, by the tripwire below. Default
+              # it to the same "codacy" this file already falls back to when
+              # naming automationDetails, so a repairable document gets
+              # repaired instead of failing the whole scan.
+              if not isinstance(driver.get("name"), str) or not driver["name"]:
                   repairs.append(
-                      f"runs[{i}].tool.driver.rules was {type(raw_rules).__name__}, coerced to []"
+                      f"runs[{i}].tool.driver.name was "
+                      f"{type(driver.get('name')).__name__}, defaulted to 'codacy'"
                   )
-                  driver["rules"] = []
+                  driver["name"] = "codacy"
+              components = [("driver", driver)]
+              # `extensions` is optional but typed as an array of toolComponent,
+              # so the container is exactly as rejectable as the `rules` inside
+              # it. Reading it with `or []` treated a null as empty and left the
+              # null in the document -- the uploader then failed the WHOLE
+              # document on `tool.extensions is not of a type(s) array`, the
+              # same class of error this block exists to prevent, and the
+              # tripwire below (driver only) never saw it. Repair the container
+              # before its contents, and drop entries that are not objects.
+              if "extensions" in tool:
+                  raw_ext = tool["extensions"]
+                  if not isinstance(raw_ext, list):
+                      repairs.append(
+                          f"runs[{i}].tool.extensions was {type(raw_ext).__name__}, dropped"
+                      )
+                      del tool["extensions"]
+                  else:
+                      usable = [ext for ext in raw_ext if isinstance(ext, dict)]
+                      if len(usable) != len(raw_ext):
+                          repairs.append(
+                              f"runs[{i}].tool.extensions dropped "
+                              f"{len(raw_ext) - len(usable)} non-object entr"
+                              f"{'y' if len(raw_ext) - len(usable) == 1 else 'ies'}"
+                          )
+                      tool["extensions"] = usable
+              components += [
+                  (f"extensions[{k}]", ext)
+                  for k, ext in enumerate(tool.get("extensions", []))
+              ]
+              for label, comp in components:
+                  raw_rules = comp.get("rules")
+                  if not isinstance(raw_rules, list):
+                      repairs.append(
+                          f"runs[{i}].tool.{label}.rules was {type(raw_rules).__name__}, coerced to []"
+                      )
+                      comp["rules"] = []
               kept = []
-              for res in run.get("results", []):
+              for res in _objects(run, "results", f"runs[{i}].results"):
                   excluded = False
-                  for loc in res.get("locations", []):
-                      art = loc.get("physicalLocation", {}).get("artifactLocation", {})
+                  for loc in _objects(res, "locations", f"runs[{i}].results[].locations"):
+                      art = _sub(
+                          _sub(loc, "physicalLocation", f"runs[{i}].results[].physicalLocation"),
+                          "artifactLocation",
+                          f"runs[{i}].results[].artifactLocation",
+                      )
+                      # isinstance, not `in`: `"uri": null` reaches
+                      # relativise() and raises on uri.startswith(), which is
+                      # the traceback these helpers exist to prevent. The
+                      # validator already guards with isinstance, so a
+                      # non-string uri is reachable input, not a hypothetical.
+                      if not isinstance(art.get("uri"), str) and "uri" in art:
+                          repairs.append(
+                              f"runs[{i}].results[].artifactLocation.uri was "
+                              f"{type(art['uri']).__name__}, dropped"
+                          )
+                          del art["uri"]
                       if "uri" in art:
                           art["uri"] = relativise(art["uri"])
                           # index points into run.artifacts, which is not
@@ -221,10 +370,20 @@ jobs:
                       dropped_total += 1
                   else:
                       kept.append(res)
-              run["results"] = kept
+              # Only write back a key the document actually had, matching
+              # _objects: inventing `results: []` on a run that never reported
+              # one is not a repair.
+              if kept or "results" in run:
+                  run["results"] = kept
               kept_total += len(kept)
-              for art in run.get("artifacts", []) or []:
-                  loc = art.get("location", {})
+              for art in _objects(run, "artifacts", f"runs[{i}].artifacts"):
+                  loc = _sub(art, "location", f"runs[{i}].artifacts[].location")
+                  if not isinstance(loc.get("uri"), str) and "uri" in loc:
+                      repairs.append(
+                          f"runs[{i}].artifacts[].location.uri was "
+                          f"{type(loc['uri']).__name__}, dropped"
+                      )
+                      del loc["uri"]
                   if "uri" in loc:
                       loc["uri"] = relativise(loc["uri"])
 
@@ -260,17 +419,45 @@ jobs:
           # plainly because the earlier version of this comment claimed these
           # "read the raw values", which was false and would have made a dead
           # assertion look like live cover.
+          # Reached via _sub, so a malformed document that slipped the
+          # normalisation is REPORTED here rather than raising. A validator
+          # that crashes on the input it exists to judge tells you nothing
+          # about the input.
           problems = []
           for i, run in enumerate(runs):
-              rules = run.get("tool", {}).get("driver", {}).get("rules")
+              driver = _sub(_sub(run, "tool"), "driver")
+              rules = driver.get("rules")
               if not isinstance(rules, list):
                   problems.append(f"runs[{i}].tool.driver.rules is {type(rules).__name__}, not list")
-              if not run.get("tool", {}).get("driver", {}).get("name"):
+              if not driver.get("name"):
                   problems.append(f"runs[{i}].tool.driver.name is missing")
-              for j, res in enumerate(run.get("results", [])):
-                  for loc in res.get("locations", []):
-                      uri = loc.get("physicalLocation", {}).get("artifactLocation", {}).get("uri", "")
-                      if uri.startswith(("/", "file:")):
+              # `results` is optional on a run, so ABSENT is valid and only a
+              # present-but-wrong value is a problem. Flagging the absence made
+              # a clean document fail.
+              results = run.get("results")
+              if "results" in run and not isinstance(results, list):
+                  problems.append(f"runs[{i}].results is {type(results).__name__}, not list")
+              if not isinstance(results, list):
+                  results = []
+              for j, res in enumerate(results):
+                  if not isinstance(res, dict):
+                      problems.append(f"runs[{i}].results[{j}] is {type(res).__name__}, not object")
+                      continue
+                  # No `is not None` tolerance: normalisation coerces a null
+                  # away, so a null still here means normalisation did not run
+                  # -- exactly what this tripwire exists to catch.
+                  locations = res.get("locations")
+                  if "locations" in res and not isinstance(locations, list):
+                      problems.append(f"runs[{i}].results[{j}].locations is {type(locations).__name__}, not list")
+                      continue
+                  # Not `locations or []`: that leaves the loop's safety
+                  # resting on the `continue` above rather than on structure.
+                  for loc in (locations if isinstance(locations, list) else []):
+                      if not isinstance(loc, dict):
+                          problems.append(f"runs[{i}].results[{j}].locations has a {type(loc).__name__}")
+                          continue
+                      uri = _sub(_sub(loc, "physicalLocation"), "artifactLocation").get("uri", "")
+                      if isinstance(uri, str) and uri.startswith(("/", "file:")):
                           problems.append(f"runs[{i}].results[{j}] still absolute: {uri}")
           if problems:
               print("SARIF failed pre-upload validation:", file=sys.stderr)
