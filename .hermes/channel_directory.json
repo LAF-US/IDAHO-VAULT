@@ -1,20 +1,6 @@
 {
-  "updated_at": "2026-07-10T22:28:09.822356",
+  "updated_at": "2026-08-16T17:58:29.062293",
   "platforms": {
-    "discord": [
-      {
-        "id": "1495651518760882198",
-        "name": "ledger",
-        "guild": "LAF-US",
-        "type": "channel"
-      },
-      {
-        "id": "1495660774708871289",
-        "name": "purgatory",
-        "guild": "LAF-US",
-        "type": "channel"
-      }
-    ],
     "telegram": [
       {
         "id": "8632491209",
@@ -23,6 +9,7 @@
         "thread_id": null
       }
     ],
+    "discord": [],
     "whatsapp": [],
     "slack": [],
     "signal": [],
