@@ -189,7 +189,16 @@ def check_ownership(*, staged: bool, ref: str) -> list[str]:
         if file_filter == "lfs" and annex_owned:
             errors.append(f"{entry.path}: claimed by both Git LFS and git-annex")
 
+        if annex_owned and file_filter != "annex":
+            errors.append(
+                f"{entry.path}: annex-owned path must use filter=annex, got {file_filter}"
+            )
+
         if not annex_owned:
+            if file_filter == "annex":
+                errors.append(
+                    f"{entry.path}: filter=annex lacks an explicit annex.largefiles opt-in"
+                )
             if pointer:
                 errors.append(
                     f"{entry.path}: annex pointer lacks an explicit annex.largefiles opt-in"

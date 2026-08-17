@@ -171,7 +171,7 @@
 # Annex does not own a directory or extension class. Files stay in their
 # existing semantic Vault locations and remain Git/LFS-owned by default.
 # Opt in a specific existing path with a later full rule in this file:
-# /path/to/payload -filter -diff -merge -text annex.largefiles=anything
+# /path/to/payload filter=annex -diff -merge -text annex.largefiles=anything
 * annex.largefiles=nothing annex.backend=SHA256E annex.numcopies=2 annex.mincopies=1
 
 # ---------------------------------------------------------------

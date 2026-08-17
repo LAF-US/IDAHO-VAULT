@@ -76,7 +76,7 @@ assign annex ownership to any directory or extension. Opt in only a specific
 existing path with a later rule that also clears any inherited LFS filter:
 
 ```gitattributes
-/existing/semantic/path/payload.ext -filter -diff -merge -text annex.largefiles=anything
+/existing/semantic/path/payload.ext filter=annex -diff -merge -text annex.largefiles=anything
 ```
 
 Then run `git annex add -- existing/semantic/path/payload.ext`. The ownership
