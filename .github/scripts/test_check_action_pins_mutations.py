@@ -265,7 +265,14 @@ def surviving_mutants(report=print) -> list[str]:
         report(baseline.stderr[-2000:])
         return ["baseline"]
 
-    for label, (original, broken) in mutations(guard).items():
+    # Built once and reused for both the loop and the denominator. Calling
+    # `mutations()` a second time to count them made the reported total a
+    # SEPARATE claim from the thing that was actually graded — the two agree
+    # only because the function happens to be pure. In a tool whose whole
+    # output is "N/M mutants killed", the M has to be the same M.
+    mutants = mutations(guard)
+
+    for label, (original, broken) in mutants.items():
         if not original or original not in guard:
             report(f"{'PATTERN MISSING':17}{label}")
             survivors.append(label)
@@ -295,7 +302,7 @@ def surviving_mutants(report=print) -> list[str]:
             report(f"{'*** SURVIVED ***':17}{label}\n{'':17}  kept at {workspace}")
             survivors.append(label)
 
-    total = len(mutations(guard))
+    total = len(mutants)
     report(f"\n{total - len(survivors)}/{total} mutants killed")
     return survivors
 
