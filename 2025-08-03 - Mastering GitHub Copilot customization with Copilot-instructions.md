@@ -5,9 +5,14 @@ author:
   - "[[Frank Laule]]"
 published: 2025-08-03
 created: 2026-06-03
+<<<<<<< HEAD
 description: "Tired of generic AI code suggestions? With just a few Markdown files, you can teach GitHub Copilot to follow your team’s coding standards, a"
 date created: Wednesday, June 3rd 2026, 2:27:15 pm
 date modified: Wednesday, June 3rd 2026, 2:28:19 pm
+=======
+description: "Learn how to customize GitHub Copilot with Copilot-instructions.md files to make it follow your team's coding standards and best practices."
+updated: 2026-06-03
+>>>>>>> 96784dbec (Standardize frontmatter metadata and fix admonition tag casing)
 ---
 
 <<<<<<< HEAD

@@ -42,7 +42,7 @@ GitHub Copilot offers several distinct customization mechanisms, each designed t
 | Plugins | Extend Copilot functionality with additional features | Installed and configured by user | `.github/plugins/*.plugin.md` |
 | Agentic Workflows | Repository Automation with strong guardrails | Any GitHub Actions Trigger | `.github/workflows/*.md` |
 
-> [!info]
+> [!INFO]
 > All customization files are Markdown-based with YAML frontmatter. They can be committed to your repository and shared with your entire team through version control. Exceptions are MCP servers and hooks which are JSON.
 
 ## 2\. Custom Instructions
