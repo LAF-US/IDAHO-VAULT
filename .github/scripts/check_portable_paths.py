@@ -3,6 +3,15 @@
 
 Checks changed paths for Windows/macOS/Linux portability hazards and checks the
 whole tracked tree for case-insensitive collisions.
+
+THE PRINCIPLE IS THE STANDARD; this file is its maintained inventory of known
+hazard classes (VAULT-CONVENTIONS.md § "Portable Path Standard (NETWEB)").
+Every tracked path must survive unchanged on every platform the vault targets;
+the checks below are examples of that principle, not its boundary. Passing this
+gate is necessary, never sufficient — a path that breaks some target platform
+in a way no check here catches still violates NETWEB, and the fix is to add
+the check, with the principle as the warrant. The constants live only here,
+on purpose: the doc enumerated them too once, and the two copies drifted.
 """
 
 from __future__ import annotations
@@ -10,6 +19,7 @@ from __future__ import annotations
 import argparse
 import subprocess
 import sys
+import unicodedata
 from collections import defaultdict
 
 
@@ -42,8 +52,18 @@ def git_tracked_files() -> list[str]:
 
 
 def normalize(path: str) -> str:
-    """Fold a path to its case-insensitive, separator-agnostic comparison key."""
-    return path.replace("\\", "/").casefold()
+    """Fold a path to the key under which target filesystems may equate names.
+
+    Three folds, one per way two distinct Git paths can land on the same file:
+    separators (backslash vs slash), case (NTFS/APFS are case-insensitive), and
+    Unicode normalization form -- macOS stores decomposed (NFD), so `é` as one
+    codepoint and `e`+combining-accent are the same name there while Git tracks
+    them as two. The NFC fold was missing until 2026-08-16; it was found by
+    testing the principle against the check, and at the time of adding, the
+    tree had 1,087 non-ASCII paths and zero NFC/NFD twins -- so this closes the
+    gap before it is ever exercised rather than after.
+    """
+    return unicodedata.normalize("NFC", path).replace("\\", "/").casefold()
 
 
 def case_collisions(paths: list[str]) -> dict[str, list[str]]:
