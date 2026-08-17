@@ -11,6 +11,7 @@ workflow edit, this derives and verifies it directly from the tracked files.
 
 from __future__ import annotations
 
+import contextlib
 import errno
 import os
 import re
@@ -266,14 +267,30 @@ def _open_by_descriptor_walk(path: Path) -> tuple[int | None, str]:
             # close again. A stale close is not harmless: descriptor numbers
             # are reused, so it can shut something else's file.
             directory, previous = step, directory
-            os.close(previous)
+            # Releasing a descriptor this function no longer needs. Failing to
+            # release it costs one descriptor for the length of the run;
+            # RAISING costs the run — the exception leaves through `_read()`
+            # as a traceback instead of the (None, reason) every caller here
+            # expects, which is the "a guard that dies is not a guard that
+            # failed closed" failure this file is being corrected for. Demon-
+            # strated by making os.close fail on the first call: the read
+            # raised OSError instead of reporting anything. Suppression is
+            # right rather than merely convenient, because nothing downstream
+            # depends on the old descriptor — the new one is already held, and
+            # a close that failed with EBADF had nothing left to leak.
+            with contextlib.suppress(OSError):
+                os.close(previous)
         leaf = relative.parts[-1]
         try:
             return os.open(leaf, os.O_RDONLY | O_NOFOLLOW, dir_fd=directory), ""
         except OSError as exc:
             return None, _unreadable(exc, leaf, directory)
     finally:
-        os.close(directory)
+        # Same reasoning, and one worse consequence: an exception raised in a
+        # `finally` REPLACES the value being returned, so a failed close here
+        # would discard a descriptor the caller was about to receive.
+        with contextlib.suppress(OSError):
+            os.close(directory)
 
 
 def _open_by_name(path: Path) -> tuple[int | None, str]:

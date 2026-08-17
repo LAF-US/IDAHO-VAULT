@@ -70,6 +70,40 @@ else:
 # rather than the file. O_NOFOLLOW on the final open is satisfied either way --
 # `action.yml` under the substituted directory really is a regular file -- so
 # this is only refused by a guard that checks the components above it too.
+# Make the walk's own bookkeeping fail. `os.close` releasing a descriptor the
+# walk has finished with is the one syscall here whose failure means nothing
+# about the file being read — so it must not be the one that takes the run
+# down. Patched in this child process only.
+CLOSE_FAILURE_PROBE = """
+import errno
+import os
+import pathlib
+import sys
+
+sys.path.insert(0, sys.argv[1])
+import check_action_pins as guard
+
+real_close, seen = os.close, []
+
+
+def flaky(descriptor):
+    seen.append(descriptor)
+    if len(seen) == 1:
+        raise OSError(errno.EBADF, "Bad file descriptor")
+    return real_close(descriptor)
+
+
+os.close = flaky
+
+try:
+    text, reason = guard._read(pathlib.Path(sys.argv[2]))
+except BaseException as exc:
+    print(f"RAISED {type(exc).__name__}: {exc}")
+else:
+    print("RETURNED", "text" if text is not None else f"({reason})")
+"""
+
+
 # `relative_to()` compares spellings, so `<root>/.github/../../outside.yml` is
 # lexically inside the repository. Nothing here is a symlink, so O_NOFOLLOW has
 # no opinion: the walk simply climbs. Prints what the read actually returned.
@@ -700,6 +734,41 @@ class DiscoveryTest(GuardFixture):
             "READ-OUTSIDE-CONTENT", verdict, "a `..` component escaped the repository"
         )
         self.assertIn("outside the repository", verdict)
+
+    @unittest.skipUnless(
+        os.open in os.supports_dir_fd,
+        "the descriptor walk is what holds the intermediate descriptors; "
+        "without dir_fd there is no second close to fail",
+    )
+    def test_a_failed_close_reports_instead_of_raising(self):
+        # The walk holds a directory descriptor, opens the next component from
+        # it, and releases the previous one. That release is the one syscall in
+        # here whose failure says NOTHING about the file being read — and it
+        # was the only one outside a try. Forced to fail, `_read()` raised
+        # OSError straight through its callers, so a guard whose whole subject
+        # is "do not die where you could report" died. Every other case in this
+        # file checks that a bad FILE produces a finding; this one checks that
+        # a bad SYSCALL does too.
+        action = self.root / ".github" / "actions" / "closefail" / "action.yml"
+        action.parent.mkdir(parents=True)
+        action.write_text("name: ok\nruns:\n  using: composite\n  steps: []\n")
+
+        probe = subprocess.run(
+            [
+                sys.executable,
+                "-c",
+                CLOSE_FAILURE_PROBE,
+                str(self.root / ".github" / "scripts"),
+                str(action),
+            ],
+            capture_output=True,
+            text=True,
+            timeout=60,
+            cwd=self.root,
+            check=False,
+        )
+        self.assertEqual(probe.returncode, 0, probe.stderr)
+        self.assertIn("RETURNED", probe.stdout.strip(), probe.stdout)
 
     def test_non_utf8_metadata_is_a_finding_not_a_traceback(self):
         # A guard that dies still turns the job red, but it names a Python
