@@ -75,8 +75,8 @@ def openrouter_reference() -> str:
     )
 
 
-def build_runtime_env(openrouter_ref: str, management_ref: str | None) -> str:
-    """Build the aliases required by the Codex and Claude OpenRouter launchers."""
+def build_runtime_env(openrouter_ref: str) -> str:
+    """Build the least-privilege aliases required by Codex and Claude launchers."""
     lines = [
         f"OPENROUTER_API_KEY={openrouter_ref}",
         f"OPENAI_API_KEY={openrouter_ref}",
@@ -86,8 +86,6 @@ def build_runtime_env(openrouter_ref: str, management_ref: str | None) -> str:
         "ANTHROPIC_BASE_URL=https://openrouter.ai/api",
         f"ANTHROPIC_API_KEY={openrouter_ref}",
     ]
-    if management_ref:
-        lines.insert(1, f"OPENROUTER_MANAGEMENT_KEY={management_ref}")
     return "\n".join(lines) + "\n"
 
 
@@ -118,8 +116,7 @@ def write_runtime_env(content: str, path: pathlib.Path | None = None) -> None:
 
 def materialize_runtime_env() -> pathlib.Path:
     openrouter_ref = openrouter_reference()
-    management_ref = read_env_reference("OPENROUTER_MANAGEMENT_KEY")
-    write_runtime_env(build_runtime_env(openrouter_ref, management_ref))
+    write_runtime_env(build_runtime_env(openrouter_ref))
     return ENV_FILE
 
 

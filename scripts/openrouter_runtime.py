@@ -129,6 +129,7 @@ def run_interactive_command(command: list[str], env: dict[str, str] | None = Non
             command,
             env=env,
             check=False,
+            shell=False,
             timeout=INTERACTIVE_COMMAND_TIMEOUT_SECONDS,
         )
     except subprocess.TimeoutExpired as exc:

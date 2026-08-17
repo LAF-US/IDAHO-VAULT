@@ -100,6 +100,7 @@ class OpenRouterRuntimeTest(unittest.TestCase):
             [r"C:\\mock\\bin\\codex.cmd", "--help"],
             env={"PATH": r"C:\\mock\\bin"},
             check=False,
+            shell=False,
             timeout=openrouter_runtime.INTERACTIVE_COMMAND_TIMEOUT_SECONDS,
         )
 
@@ -143,6 +144,7 @@ class OpenRouterRuntimeTest(unittest.TestCase):
             ],
             env=None,
             check=False,
+            shell=False,
             timeout=openrouter_runtime.INTERACTIVE_COMMAND_TIMEOUT_SECONDS,
         )
 
