@@ -187,10 +187,27 @@ def _run_suite(scripts: Path) -> subprocess.CompletedProcess[str]:
 
 
 def _failures(result: subprocess.CompletedProcess[str]) -> list[str]:
-    """The names of the tests that failed or errored in one run."""
-    return sorted(
+    """What noticed, in one run. Empty only when the suite actually passed.
+
+    The exit code is the authority, not the parsed names. A mutant that breaks
+    the module badly enough to die before unittest prints any `FAIL:`/`ERROR:`
+    header — an import error, a syntax error, an interpreter crash — produced
+    no names to find, and the run was then labelled a SURVIVOR: the suite was
+    screaming and this read it as silence. That erred safe (a false survivor
+    fails the sweep, it does not hide a regression) but it named the wrong
+    thing, which is its own defect in a tool whose whole job is to report
+    honestly what a test run did.
+
+    Calling a non-zero exit a kill is only sound because the baseline ran
+    first: the suite is known to pass unmutated, so a failure under mutation
+    is attributable to the mutation and not to a broken suite.
+    """
+    if result.returncode == 0:
+        return []
+    named = sorted(
         set(re.findall(r"^(?:FAIL|ERROR): (\w+)", result.stderr, re.MULTILINE))
     )
+    return named or [f"(no named failure; exit {result.returncode})"]
 
 
 def surviving_mutants(report=print) -> list[str]:
@@ -208,7 +225,7 @@ def surviving_mutants(report=print) -> list[str]:
     baseline = _run_suite(SCRIPTS)
     if baseline.returncode != 0:
         report("BASELINE DIRTY   the suite does not pass unmutated; nothing to grade")
-        for name in _failures(baseline) or ["(no named failure; see below)"]:
+        for name in _failures(baseline):
             report(f"{'':17}  {name}")
         report(baseline.stderr[-2000:])
         return ["baseline"]

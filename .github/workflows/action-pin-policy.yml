@@ -109,7 +109,7 @@ jobs:
           # recorded base SHA — it stays right when the base branch moves
           # under the pull request.
           if [ -n "$GITHUB_BASE_REF" ] \
-            && git fetch -q --no-tags origin "$GITHUB_BASE_REF" 2>/dev/null \
+            && git fetch -q --no-tags origin -- "$GITHUB_BASE_REF" 2>/dev/null \
             && base=$(git merge-base FETCH_HEAD HEAD 2>/dev/null); then
             changed=$(git diff --name-only "$base" HEAD -- \
               .github/scripts/check_action_pins.py \
