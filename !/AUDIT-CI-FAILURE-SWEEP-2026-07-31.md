@@ -5,6 +5,7 @@ status: draft
 authority: CLAUDE (routine CI sweep)
 scope: GitHub Actions workflow runs, laf-us/idaho-vault, 2026-07-30T12:24Z to 2026-07-31T12:07Z
 owner: Logan Finney
+updated: 2026-07-31
 ---
 
 # CI Failure Sweep — 2026-07-31
@@ -23,7 +24,7 @@ owner: Logan Finney
 
 ## Blocking / repeated
 
-None. The 2 in-window failures on PR #873 are **not new** — the PR's own body (updated 2026-07-30) already self-diagnoses both as pre-existing `logan/obsidian` base-branch state, not this PR's changes: `!/WAKEUP.md` is absent on that base branch (present on `main`), and a root-level `importlib.py` on that branch shadows the stdlib and crashes `pip` before jupytext installs — both confirmed by the PR author to pass green on `main` (PR #880 @ `dd5d116c`) and explicitly out of that PR's scope to fix from its own branch.
+Nothing blocks `main` or a deploy. **PR #873 itself remains blocked** — its own body lists both in-window failures as unresolved blockers ("Blockers: Yes — two, neither fixable from this branch"), still true as of this sweep. They are **not new**, though: the PR's own body (updated 2026-07-30) already self-diagnoses both as pre-existing `logan/obsidian` base-branch state, not this PR's changes: `!/WAKEUP.md` is absent on that base branch (present on `main`), and a root-level `importlib.py` on that branch shadows the stdlib and crashes `pip` before jupytext installs — both confirmed by the PR author to pass green on `main` (PR #880 @ `dd5d116c`) and explicitly out of that PR's scope to fix from its own branch.
 
 ### Chronic items, checked directly, not just quiet
 
@@ -37,10 +38,18 @@ None. The 2 in-window failures on PR #873 are **not new** — the PR's own body 
 
 ## Big IF
 
-- **Second fully-clean sweep in a row**, after yesterday's first-in-23-days. Nothing chronic reappeared.
+- **`main` was fully clean for the second sweep in a row**, after yesterday's first-in-23-days — narrowing the claim after a review correctly flagged the prior wording as inconsistent with the 2 real (if pre-existing) failures recorded above. Nothing chronic reappeared on `main`.
 - **PR #470** (oldest open PR — opened 2026-06-04, 9,350 additions / 95 files / 83 commits, `mergeable_state: dirty`) has 45 review threads total but only 4 genuinely still open (not outdated/resolved). Two are trivial CodeRabbit lint suggestions. The other two, both in `!/GRIMOIRE_caution_contains-false-doctrines/`, reveal a gap none of the three prior bot passes (2026-06-04/08/18) caught: the literal `<<<<<<<`/`=======`/`>>>>>>>` marker *strings* they flagged are gone from the current head (confirmed via direct `git show` + grep — zero matches in either file), but the underlying merge was never actually resolved. `TRIUNE-TRIPTYCH-TRIUMVIRATE.md` still has an unclosed code fence with two competing "TRIUMVIRATE — Unity of Power" sections concatenated verbatim (different member titles, one carries a "Finalized 2026-04-06" line the other doesn't). The visible symptom the bots keyed on is gone; the actual duplicate/malformed content it was a symptom of is not, and choosing which version survives is a doctrine call inside a folder scoped `caution_contains-false-doctrines` — flagged on the PR (comment, this session) rather than resolved unilaterally, and not pushed to the PR's own branch per this session's own branch-scope restriction.
 
 ---
 Cross-posted: GitHub issue #822 (comment), Linear LAF-72 (comment), Slack #all-logan-finney, Discord #ledger (via Zapier), PR #470 (review comment, oldest-open-PR pass).
 
 Claude-Session: <https://claude.ai/code/session_01L3qbUh4tT6FwB2Xd973tty>
+
+## DOCUMENT METADATA
+
+- **Created:** 2026-07-31
+- **Last Updated:** 2026-07-31
+- **Status:** Draft
+- **Authority:** CLAUDE (routine CI sweep)
+- **Change Note:** Scheduled 24h CI-failure sweep; narrowed "None"/"fully-clean" wording on review, added required `updated` frontmatter and this footer per VAULT-METADATA-STANDARD.md.
