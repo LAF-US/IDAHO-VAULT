@@ -70,6 +70,31 @@ else:
 # rather than the file. O_NOFOLLOW on the final open is satisfied either way --
 # `action.yml` under the substituted directory really is a regular file -- so
 # this is only refused by a guard that checks the components above it too.
+# Validate a regular file, then replace it with a FIFO. Nothing here is a
+# symlink, so O_NOFOLLOW has no opinion; a plain O_RDONLY open on a FIFO with no
+# writer BLOCKS. The probe prints its verdict, or hangs and is killed.
+FIFO_SWAP_PROBE = """
+import os
+import pathlib
+import sys
+
+sys.path.insert(0, sys.argv[1])
+import check_action_pins as guard
+
+action = pathlib.Path(sys.argv[2])
+readable, reason = guard._readable(action)
+if readable is None:
+    print("NOT-VALIDATED", reason)
+    raise SystemExit(0)
+
+action.unlink()
+os.mkfifo(action)
+
+text, reason = guard._read(readable)
+print("verdict:", reason or "read something")
+"""
+
+
 # Make the walk's own bookkeeping fail. `os.close` releasing a descriptor the
 # walk has finished with is the one syscall here whose failure means nothing
 # about the file being read — so it must not be the one that takes the run
@@ -784,6 +809,38 @@ class DiscoveryTest(GuardFixture):
         # this particular fixture happens to sit.
         closes = int(probe.stdout.rsplit("CLOSES", 1)[1])
         self.assertGreater(closes, 1, probe.stdout)
+
+    @unittest.skipUnless(hasattr(os, "mkfifo"), "no FIFOs on this platform")
+    def test_a_fifo_swapped_in_after_the_check_does_not_stall_the_guard(self):
+        # The other race tests swap the object's IDENTITY; this one swaps its
+        # TYPE. `_readable()` calls is_file() on a name, `_read()` opens one,
+        # and O_NOFOLLOW refuses a symlink while accepting a FIFO — so a FIFO
+        # planted in the window made the open block until a writer appeared and
+        # the guard STALLED: never failing, never reporting, just gone. That is
+        # worse than a wrong answer, and `_readable()`'s own docstring names it
+        # as the case it exists to prevent. Measured before the fix: the read
+        # never returned. The timeout below is the assertion — if this test
+        # ever raises TimeoutExpired, the stall is back.
+        action = self.root / ".github" / "actions" / "pipe" / "action.yml"
+        action.parent.mkdir(parents=True)
+        action.write_text("name: ok\nruns:\n  using: composite\n  steps: []\n")
+
+        probe = subprocess.run(
+            [
+                sys.executable,
+                "-c",
+                FIFO_SWAP_PROBE,
+                str(self.root / ".github" / "scripts"),
+                str(action),
+            ],
+            capture_output=True,
+            text=True,
+            timeout=30,
+            cwd=self.root,
+            check=False,
+        )
+        self.assertEqual(probe.returncode, 0, probe.stderr)
+        self.assertIn("not a regular file", probe.stdout, probe.stdout)
 
     def test_non_utf8_metadata_is_a_finding_not_a_traceback(self):
         # A guard that dies still turns the job red, but it names a Python

@@ -97,8 +97,20 @@ def mutations(guard: str) -> dict[str, tuple[str, str]]:
         # guard had only the final one and looked complete; the ancestor mutant
         # is what keeps the walk from quietly collapsing back to that.
         "final component read without O_NOFOLLOW (check/read disagree)": (
-            'return os.open(leaf, os.O_RDONLY | O_NOFOLLOW, dir_fd=directory), ""',
-            'return os.open(leaf, os.O_RDONLY, dir_fd=directory), ""',
+            "opened = os.open(leaf, READ_FLAGS | O_NOFOLLOW, dir_fd=directory)",
+            "opened = os.open(leaf, READ_FLAGS, dir_fd=directory)",
+        ),
+        # Two entries for one defence: the flag keeps the open from BLOCKING,
+        # the fstat decides whether what came back may be read. Removing either
+        # alone leaves the FIFO case looking handled.
+        "a FIFO is accepted as a regular file": (
+            "    try:\n        return stat.S_ISREG(os.fstat(descriptor).st_mode)\n",
+            "    try:\n        return True or stat.S_ISREG(os.fstat(descriptor).st_mode)\n",
+        ),
+        "the read open blocks (no O_NONBLOCK)": (
+            'READ_FLAGS = os.O_RDONLY | getattr(os, "O_BINARY", 0) | '
+            'getattr(os, "O_NONBLOCK", 0)',
+            'READ_FLAGS = os.O_RDONLY | getattr(os, "O_BINARY", 0)',
         ),
         "a failed close raises instead of reporting": (
             "            with contextlib.suppress(OSError):\n"

@@ -15,6 +15,7 @@ import contextlib
 import errno
 import os
 import re
+import stat
 import sys
 from pathlib import Path
 
@@ -161,6 +162,18 @@ DIR_FD_SUPPORTED = os.open in os.supports_dir_fd
 # Asked separately from the one above: `os.supports_dir_fd` is per-function, so
 # `open` accepting a dir_fd is not a promise that `readlink` does.
 READLINK_DIR_FD = os.readlink in os.supports_dir_fd
+# O_BINARY is Windows-only, and its ABSENCE there is a silent-omission bug of
+# exactly the kind this guard exists to catch. Without it the CRT opens in text
+# mode and treats 0x1A as end-of-file, so a planted Ctrl-Z would end the read
+# early and everything after it — including an unpinned `uses:` — would simply
+# not be seen, while the guard printed OK. Same shape as the BOM: content the
+# scan never reached, reported as content that held nothing.
+# O_NONBLOCK keeps the open from WAITING. `_readable()` checks `is_file()` on a
+# name; a FIFO swapped in afterwards makes a plain O_RDONLY open block until a
+# writer appears, and the guard hangs instead of failing. Measured: the read
+# never returned. With the flag the open completes and `_regular_file()` gets
+# to refuse it. On a regular file both flags are inert.
+READ_FLAGS = os.O_RDONLY | getattr(os, "O_BINARY", 0) | getattr(os, "O_NONBLOCK", 0)
 
 
 SWAPPED = "became a symlink after the safety check; not read"
@@ -206,13 +219,56 @@ def _open_no_follow(path: Path) -> tuple[int | None, str]:
     that object may be read at all; `_read()` is about what its bytes mean.
     Keeping them in one body put two unrelated error vocabularies in the same
     function, which is the shape this file has been pulling apart throughout.
+
+    Containment is decided HERE, above the dispatch, because it is a property
+    of the path and not of the mechanism used to open it. It lived in the walk
+    for one commit, which meant `_open_by_name()` enforced neither check and
+    the `..` escape stayed wide open on exactly the platform that already has
+    the fewest defences.
     """
+    try:
+        relative = path.relative_to(REPO_ROOT)
+    except ValueError:
+        return None, "resolves outside the repository; not read"
+    if not relative.parts:
+        return None, "is the repository root, not a file; not read"
+    # `relative_to` compares SPELLINGS. It is satisfied by
+    # `<root>/.github/../../elsewhere.yml` — lexically under the root, and an
+    # opener would then climb through the `..` components and read a file
+    # outside the repository, with O_NOFOLLOW raising nothing because `..` is
+    # not a symlink. Reproduced before this check existed: outside content came
+    # back from a path the containment test had passed. Callers arrive through
+    # `_readable()`, which resolves first, so no real path carries these today
+    # — but this function answers "resolves outside the repository" on its own
+    # authority, and a claim it makes is one it has to keep.
+    if not set(relative.parts).isdisjoint({os.pardir, os.curdir}):
+        return None, "resolves outside the repository; not read"
+
     if DIR_FD_SUPPORTED and O_NOFOLLOW:
-        return _open_by_descriptor_walk(path)
+        return _open_by_descriptor_walk(relative)
     return _open_by_name(path)
 
 
-def _open_by_descriptor_walk(path: Path) -> tuple[int | None, str]:
+def _regular_file(descriptor: int) -> bool:
+    """Is this descriptor a plain file, rather than a pipe or a device?
+
+    `_readable()` checks `is_file()` on a NAME and the opens below open one —
+    two operations, and the object can change type between them just as it can
+    change identity. O_NOFOLLOW refuses a symlink and has no opinion about a
+    FIFO, so swapping one in after the check made `os.open()` block until a
+    writer appeared and the guard STALLED — never failing, never reporting,
+    just gone. `_readable()`'s own docstring names that stall as the thing it
+    exists to prevent, which it did only for as long as the name and the object
+    agreed. O_NONBLOCK below makes the open return instead of waiting; this
+    decides whether what it returned may be read.
+    """
+    try:
+        return stat.S_ISREG(os.fstat(descriptor).st_mode)
+    except OSError:
+        return False
+
+
+def _open_by_descriptor_walk(relative: Path) -> tuple[int | None, str]:
     """Descend from the repository root, one component at a time.
 
     A flag on the final open alone is not enough. O_NOFOLLOW refuses a symlink
@@ -231,27 +287,18 @@ def _open_by_descriptor_walk(path: Path) -> tuple[int | None, str]:
     component following links, which is the very thing this exists to stop, and
     it would do it while looking like the strong path. `_open_by_name()` is
     weaker but says so.
+
+    Takes the path ALREADY REDUCED to repository-relative components, and
+    already checked for `..`/`.`, because containment belongs to the path and
+    not to the opener — see `_open_no_follow()`.
     """
     try:
-        relative = path.relative_to(REPO_ROOT)
-    except ValueError:
-        return None, "resolves outside the repository; not read"
-    if not relative.parts:
-        return None, "is the repository root, not a file; not read"
-    # `relative_to` compares SPELLINGS. It is satisfied by
-    # `<root>/.github/../../elsewhere.yml` — lexically under the root, and the
-    # walk would then open `.github`, climb through two `..` components, and
-    # read a file outside the repository, with O_NOFOLLOW raising nothing
-    # because `..` is not a symlink. Reproduced before this line existed:
-    # outside content came back from a path the containment check had passed.
-    # Callers reach here through `_readable()`, which resolves first, so no
-    # real path carries these today — but the function above returns
-    # "resolves outside the repository" on its own authority, and a claim this
-    # function makes is one it has to keep.
-    if not set(relative.parts).isdisjoint({os.pardir, os.curdir}):
-        return None, "resolves outside the repository; not read"
-
-    directory = os.open(REPO_ROOT, os.O_RDONLY | os.O_DIRECTORY)
+        directory = os.open(REPO_ROOT, os.O_RDONLY | os.O_DIRECTORY)
+    except OSError as exc:
+        # The last syscall in this function that was outside a `try`. Every
+        # other open here is classified through `_unreadable()`; this one would
+        # have left through `_read()` as a traceback.
+        return None, _unreadable(exc)
     try:
         for part in relative.parts[:-1]:
             try:
@@ -282,9 +329,14 @@ def _open_by_descriptor_walk(path: Path) -> tuple[int | None, str]:
                 os.close(previous)
         leaf = relative.parts[-1]
         try:
-            return os.open(leaf, os.O_RDONLY | O_NOFOLLOW, dir_fd=directory), ""
+            opened = os.open(leaf, READ_FLAGS | O_NOFOLLOW, dir_fd=directory)
         except OSError as exc:
             return None, _unreadable(exc, leaf, directory)
+        if not _regular_file(opened):
+            with contextlib.suppress(OSError):
+                os.close(opened)
+            return None, "not a regular file; not read"
+        return opened, ""
     finally:
         # Same reasoning, and one worse consequence: an exception raised in a
         # `finally` REPLACES the value being returned, so a failed close here
@@ -317,17 +369,23 @@ def _open_by_name(path: Path) -> tuple[int | None, str]:
     comparison below is removed and is refused when it is present.
     """
     try:
-        descriptor = os.open(path, os.O_RDONLY | O_NOFOLLOW)
+        descriptor = os.open(path, READ_FLAGS | O_NOFOLLOW)
     except OSError as exc:
         return None, _unreadable(exc)
+    if not _regular_file(descriptor):
+        with contextlib.suppress(OSError):
+            os.close(descriptor)
+        return None, "not a regular file; not read"
     try:
         opened = os.fstat(descriptor)
         named = os.lstat(path)
     except OSError as exc:
-        os.close(descriptor)
+        with contextlib.suppress(OSError):
+            os.close(descriptor)
         return None, _unreadable(exc)
     if (opened.st_dev, opened.st_ino) != (named.st_dev, named.st_ino):
-        os.close(descriptor)
+        with contextlib.suppress(OSError):
+            os.close(descriptor)
         return None, SWAPPED
     return descriptor, ""
 
