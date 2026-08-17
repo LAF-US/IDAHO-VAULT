@@ -88,12 +88,6 @@ jobs:
             --top-level-directory .github/scripts \
             --verbose
       - name: Prove the guard's tests can still fail, when the guard changes
-        env:
-          # Through the environment, not interpolated into the script: a
-          # `${{ }}` expansion inside `run:` is substituted before the shell
-          # ever sees it, and this repository already treats that as a code
-          # injection boundary.
-          BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.merge_group.base_sha }}
         run: |
           # The mutation suite is skipped by default (see its docstring: each
           # entry quotes a line of the guard verbatim, so a legitimate refactor
@@ -102,10 +96,22 @@ jobs:
           # its own kind of green-and-meaningless. So: run it exactly when the
           # guard or its tests changed here, which is when a regression could
           # be introduced and when PATTERN MISSING is information rather than
-          # noise. Off the pull-request path there is no base to diff, so it
-          # runs unconditionally.
-          if [ -n "$BASE_SHA" ] && git cat-file -e "$BASE_SHA^{commit}" 2>/dev/null; then
-            changed=$(git diff --name-only "$BASE_SHA...HEAD" -- \
+          # noise. Where there is no base to compare against, it runs.
+          #
+          # The base comes from $GITHUB_BASE_REF, a plain runner variable, and
+          # not from an expression expansion of the webhook payload — not even
+          # one routed through `env:`, which an earlier revision of this step
+          # tried. This repository's scanners treat any payload reference in a
+          # workflow as a code-injection boundary violation and block on it,
+          # and they are not wrong to be coarse: the safe shape is for the
+          # workflow never to need payload data the environment already
+          # carries. merge-base is also the more correct comparison than a
+          # recorded base SHA — it stays right when the base branch moves
+          # under the pull request.
+          if [ -n "$GITHUB_BASE_REF" ] \
+            && git fetch -q --no-tags origin "$GITHUB_BASE_REF" 2>/dev/null \
+            && base=$(git merge-base FETCH_HEAD HEAD 2>/dev/null); then
+            changed=$(git diff --name-only "$base" HEAD -- \
               .github/scripts/check_action_pins.py \
               .github/scripts/test_check_action_pins.py \
               .github/scripts/test_check_action_pins_mutations.py)
