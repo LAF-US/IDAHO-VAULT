@@ -11,6 +11,7 @@ workflow edit, this derives and verifies it directly from the tracked files.
 
 from __future__ import annotations
 
+import errno
 import os
 import re
 import sys
@@ -71,12 +72,8 @@ FULL_SHA_PATTERN = re.compile(r"^[0-9a-f]{40}$")
 # pattern anchored on a bare `image:` would not see it.
 IMAGE_PATTERN = re.compile(r"""^\s*["']?image["']?\s*:\s*(.+?)\s*$""")
 IMAGE_DIGEST_PATTERN = re.compile(r"@sha256:[0-9a-f]{64}$")
-WORKFLOW_CONTAINER_PATTERN = re.compile(
-    r"""^\s*["']?container["']?\s*:\s*(.+?)\s*$"""
-)
-WORKFLOW_SERVICES_PATTERN = re.compile(
-    r"""^\s*["']?services["']?\s*:\s*(.+?)\s*$"""
-)
+WORKFLOW_CONTAINER_PATTERN = re.compile(r"""^\s*["']?container["']?\s*:\s*(.+?)\s*$""")
+WORKFLOW_SERVICES_PATTERN = re.compile(r"""^\s*["']?services["']?\s*:\s*(.+?)\s*$""")
 # `runs.using: docker` declares a container action, in block or flow form, with
 # either key quoted. Used to fail CLOSED: if a file says it runs a container and
 # this line-oriented reader found no `image:` line, the image is unverified —
@@ -149,9 +146,25 @@ def _read(path: Path) -> tuple[str | None, str]:
     non-UTF-8 action.yml crashed it with a traceback instead of producing a
     finding. A guard that dies is not a guard that failed closed: the job
     still goes red, but it names a Python error rather than the file.
+
+    Opened with O_NOFOLLOW rather than by name, because `_readable()` checks a
+    PATH and this opens one — two operations on a name, with a window between
+    them where the name can be repointed. `_readable()`'s own docstring
+    claimed that window was closed; it was only narrowed. Demonstrated: verify
+    a regular file inside the repository, replace it with a symlink to a file
+    outside, read here, and content from outside the repository lands in the
+    findings. O_NOFOLLOW makes the open itself refuse a symlink, so the check
+    and the read can no longer disagree about which object they mean.
     """
     try:
-        return path.read_text(encoding="utf-8-sig"), ""
+        descriptor = os.open(path, os.O_RDONLY | os.O_NOFOLLOW)
+    except OSError as exc:
+        if exc.errno in (errno.ELOOP, errno.EMLINK):
+            return None, "became a symlink after the safety check; not read"
+        return None, f"not readable ({exc.strerror or exc}); cannot verify pins"
+    try:
+        with os.fdopen(descriptor, encoding="utf-8-sig") as handle:
+            return handle.read(), ""
     except UnicodeDecodeError:
         return None, "not valid UTF-8; cannot verify pins"
     except OSError as exc:
@@ -619,10 +632,7 @@ def _unpinned_from_lines(
             findings.append(
                 (
                     image_lineno,
-                    (
-                        f"{image} -> {rel}:{lineno} FROM {base} "
-                        "(needs @sha256:<64 hex>)"
-                    ),
+                    (f"{image} -> {rel}:{lineno} FROM {base} (needs @sha256:<64 hex>)"),
                 )
             )
         if stage:

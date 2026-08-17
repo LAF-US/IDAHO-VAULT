@@ -36,6 +36,35 @@ for target in m.scan_targets():
 """
 
 
+# Validate a regular file, repoint the name at a file outside the repository,
+# then read — the exact sequence main() performs, with the window forced wide
+# open. Prints the read's verdict, or a marker if outside content came back.
+SWAP_PROBE = """
+import pathlib
+import sys
+
+sys.path.insert(0, sys.argv[1])
+import check_action_pins as guard
+
+action = pathlib.Path(sys.argv[2])
+outside = pathlib.Path(sys.argv[3])
+
+readable, reason = guard._readable(action)
+if readable is None:
+    print("NOT-VALIDATED", reason)
+    raise SystemExit(0)
+
+action.unlink()
+action.symlink_to(outside)
+
+text, reason = guard._read(readable)
+if text is not None and "actions/checkout@latest" in text:
+    print("READ-OUTSIDE-CONTENT")
+else:
+    print(reason or "read something, but not the outside file")
+"""
+
+
 class GuardFixture(unittest.TestCase):
     """A temporary repository containing a copy of the guard."""
 
@@ -487,6 +516,48 @@ class DiscoveryTest(GuardFixture):
             )
         )
         self.assertFlags("image unverified")
+
+    def test_a_file_swapped_for_a_symlink_after_the_check_is_not_read(self):
+        # `_readable()` checks a PATH and `_read()` opens one: two operations on
+        # a name, with a window between them. Verify a regular file, replace it
+        # with a symlink pointing out of the repository, and a read by name
+        # follows the link — outside content in the findings, from a guard whose
+        # docstring said that window was closed. Opening with O_NOFOLLOW makes
+        # the open itself refuse, so the check and the read can no longer
+        # disagree about which object they mean.
+        #
+        # Run in the fixture repository, not this one: the guard derives
+        # REPO_ROOT from its own location, and the containment check has to see
+        # the planted file as inside the repository for the race to be the thing
+        # under test rather than containment.
+        action = self.root / ".github" / "actions" / "swapped" / "action.yml"
+        action.parent.mkdir(parents=True)
+        action.write_text("name: ok\nruns:\n  using: composite\n  steps: []\n")
+        outside = self.root.parent / f"{self.root.name}-swap-target.yml"
+        outside.write_text("on: push\nsteps:\n  - uses: actions/checkout@latest\n")
+        self.addCleanup(outside.unlink, True)
+
+        probe = subprocess.run(
+            [
+                sys.executable,
+                "-c",
+                SWAP_PROBE,
+                str(self.root / ".github" / "scripts"),
+                str(action),
+                str(outside),
+            ],
+            capture_output=True,
+            text=True,
+            timeout=60,
+            cwd=self.root,
+            check=False,
+        )
+        self.assertEqual(probe.returncode, 0, probe.stderr)
+        verdict = probe.stdout.strip()
+        self.assertNotIn(
+            "READ-OUTSIDE-CONTENT", verdict, "a swapped-in symlink was followed"
+        )
+        self.assertIn("symlink", verdict)
 
     def test_non_utf8_metadata_is_a_finding_not_a_traceback(self):
         # A guard that dies still turns the job red, but it names a Python

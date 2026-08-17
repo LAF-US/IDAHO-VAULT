@@ -89,8 +89,12 @@ def mutations(guard: str) -> dict[str, tuple[str, str]]:
         ),
         # Reading
         "plain utf-8 read (BOM intolerant)": (
-            'return path.read_text(encoding="utf-8-sig"), ""',
-            'return path.read_text(encoding="utf-8"), ""',
+            'os.fdopen(descriptor, encoding="utf-8-sig")',
+            'os.fdopen(descriptor, encoding="utf-8")',
+        ),
+        "read by name instead of O_NOFOLLOW (check/read disagree)": (
+            "        descriptor = os.open(path, os.O_RDONLY | os.O_NOFOLLOW)",
+            "        descriptor = os.open(path, os.O_RDONLY)",
         ),
         "no UnicodeDecodeError handler": (
             "    except UnicodeDecodeError:\n"
