@@ -33,7 +33,7 @@ docs/
 # Clipped reference documents (not part of package distribution)
 # Matches files starting with "- " (dash-space prefix), e.g., "- GitHub Copilot Handbook.md"
 # Root-scoped to prevent accidental exclusion of files in subdirectories
-/ - *.md
+/- *.md
 /[0-9][0-9][0-9][0-9]-*.md
 
 # Config files
