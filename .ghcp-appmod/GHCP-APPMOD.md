@@ -1,4 +1,5 @@
 ---
+title: GHCP-APPMOD
 authority: LOGAN
 related:
   - GHCP-APPMOD

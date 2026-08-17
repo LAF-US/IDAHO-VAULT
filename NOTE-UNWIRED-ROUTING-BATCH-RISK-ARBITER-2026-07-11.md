@@ -51,7 +51,7 @@ Ran a live `dry_run: true` dispatch today (run `29162177905`) against all 32 ope
 Logan asked for the wider view, not just these three, so here's the actual inventory rather than an impression of it. `.github/scripts/` holds **48 Python files, 13,505 lines total**, run by **48 workflow files** in `.github/workflows/`. Roughly, by function (my own grouping, not a file-declared taxonomy):
 
 | Cluster | Scripts (rough count) | Examples |
-|---|---|---|
+| --- | --- | --- |
 | Policy gates (fail-closed CI checks) | ~11 | `check_action_pins`, `check_large_files`, `check_portable_paths`, `check_redaction_damage`, `check_secret_patterns`, `check_python_version_pin`, `check_character_conformity`, `check_dotfolder_anchors`, `meshnetweb_portability_check`, `laf_usb_manifest`, `jupytext_sync_paired` |
 | PR lifecycle / merge orchestration | ~10 | `review_feedback_loop` (2,343 lines — the single largest script in the repo, already deep-dived in `REVIEW-MERGE-ENGINE-CLUSTER-A-DEEPDIVE-2026-06-20.md` as one file covering 4 unrelated concerns across 14 subcommands), `pr_lifecycle`, `pr_loop_watchdog`, `pr_threads`, `pr_github`, `issue_reconciler`, `stale_bot_prs`, `codex_work_guard`, `arbiter_sortition`, `verify_arbiter_approvals` |
 | Vault content maintenance | ~12 | `daily_rollover` (1,093 lines), `backfill_daily_notes`, `date_tagger`, `expand_date_aliases`, `normalize_tags`, `tag_stubs`, `generate_name_forms`, `metadata_survey`, `audit_repo_payloads`, `phone_link_intake`, `bind_ai_book`, `validate_content` |

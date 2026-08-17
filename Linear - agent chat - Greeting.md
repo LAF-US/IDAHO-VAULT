@@ -1,10 +1,7 @@
 ---
-date created: Sunday, March 29th 2026, 10:48:49 am
-<<<<<<< Updated upstream
-date modified: Wednesday, April 1st 2026, 11:00:09 pm
-=======
-date modified: Sunday, March 29th 2026, 10:49:49 am
->>>>>>> Stashed changes
+title: "Linear — Agent Chat — Greeting"
+date created: "Sunday, March 29th 2026, 10:48:49 am"
+date modified: "Wednesday, April 1st 2026, 11:00:09 pm"
 ---
 
 # Greeting
