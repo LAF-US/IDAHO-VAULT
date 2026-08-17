@@ -9,10 +9,15 @@ updated: 2026-06-03
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 This handbook provides a comprehensive overview of the various customization mechanisms available for GitHub Copilot, including Custom Instructions, Prompt Files, Custom Agents, and Agent Skills. Each section explains what the feature is, how it works, when to use it, and best practices for implementation. By understanding these tools, you can tailor GitHub Copilot to fit your team's unique workflows and coding standards, maximizing productivity and consistency across your projects.
 =======
 > **SOURCE ATTRIBUTION**  
 > This content is a web-clipped excerpt from the GitHub Copilot Academy workshop: "GitHub Copilot Customization Handbook" (https://copilot-academy.github.io/workshops/copilot-customization/copilot_customization_handbook).  
+=======
+> **SOURCE ATTRIBUTION**
+> This content is a web-clipped excerpt from the GitHub Copilot Academy workshop: "GitHub Copilot Customization Handbook" (https://copilot-academy.github.io/workshops/copilot-customization/copilot_customization_handbook).
+>>>>>>> a1fc0ace8 (Remove trailing whitespace from documentation files)
 > Clipped for reference and internal documentation purposes. Original workshop materials are maintained by the GitHub Copilot Academy.
 
 This handbook provides a comprehensive overview of the various customization mechanisms available

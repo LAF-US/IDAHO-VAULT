@@ -11,10 +11,15 @@ date modified: Wednesday, June 3rd 2026, 2:28:19 pm
 ---
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Tired of generic AI code suggestions?** With just a few Markdown files, you can teach GitHub Copilot to follow your team’s coding standards, architectural preferences, and even automate repetitive tasks. In this guide, you’ll learn how to transform Copilot into a truly personalized coding partner — right inside VS Code.
 =======
 > **SOURCE ATTRIBUTION**  
 > This content is a web-clipped excerpt from Frank Laule's Medium article "Mastering GitHub Copilot customization with Copilot-instructions" (https://medium.com/@frank.laule/mastering-github-copilot-customization-with-copilot-instructions-83e8cc1ca10a).  
+=======
+> **SOURCE ATTRIBUTION**
+> This content is a web-clipped excerpt from Frank Laule's Medium article "Mastering GitHub Copilot customization with Copilot-instructions" (https://medium.com/@frank.laule/mastering-github-copilot-customization-with-copilot-instructions-83e8cc1ca10a).
+>>>>>>> a1fc0ace8 (Remove trailing whitespace from documentation files)
 > Clipped for reference and internal documentation purposes. Original work maintains its own license terms; refer to the source for licensing details.
 
 **Tired of generic AI code suggestions?** With just a few Markdown files, you can teach GitHub
@@ -189,4 +194,10 @@ Whether you’re setting up a coding agent for database administration or code r
 
 ### Conclusion
 
+<<<<<<< HEAD
 With just a couple of well-placed Markdown files, you can turn GitHub Copilot from a helpful assistant into a strategic teammate that codes the way you do. These customization techniques not only boost productivity — they embed your engineering standards into every suggestion Copilot makes.
+=======
+With just a couple of well-placed Markdown files, you can turn GitHub Copilot from a helpful
+assistant into a strategic teammate that codes the way you do. These customization techniques not
+only boost productivity — they embed your engineering standards into every suggestion Copilot makes.
+>>>>>>> a1fc0ace8 (Remove trailing whitespace from documentation files)
