@@ -93,7 +93,7 @@ def mutations(guard: str) -> dict[str, tuple[str, str]]:
             'os.fdopen(descriptor, encoding="utf-8")',
         ),
         "read by name instead of O_NOFOLLOW (check/read disagree)": (
-            'return os.open(path, os.O_RDONLY | os.O_NOFOLLOW), ""',
+            'return os.open(path, os.O_RDONLY | O_NOFOLLOW), ""',
             'return os.open(path, os.O_RDONLY), ""',
         ),
         "no UnicodeDecodeError handler": (
