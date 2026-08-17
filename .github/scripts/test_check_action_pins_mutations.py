@@ -51,7 +51,7 @@ SUITE = SCRIPTS / "test_check_action_pins.py"
 
 def mutations(guard: str) -> dict[str, tuple[str, str]]:
     """Each historical defect, as (what the guard says now, the broken form)."""
-    runs_pattern = re.search(r"RUNS_PATTERN = re\.compile\(.*?\)\n", guard, re.S)
+    runs_pattern = re.search(r"RUNS_PATTERN = re\.compile\(.*?\)\n", guard, re.DOTALL)
     strip_line = next(
         (
             f"{line}\n"
@@ -188,7 +188,9 @@ def _run_suite(scripts: Path) -> subprocess.CompletedProcess[str]:
 
 def _failures(result: subprocess.CompletedProcess[str]) -> list[str]:
     """The names of the tests that failed or errored in one run."""
-    return sorted(set(re.findall(r"^(?:FAIL|ERROR): (\w+)", result.stderr, re.M)))
+    return sorted(
+        set(re.findall(r"^(?:FAIL|ERROR): (\w+)", result.stderr, re.MULTILINE))
+    )
 
 
 def surviving_mutants(report=print) -> list[str]:
