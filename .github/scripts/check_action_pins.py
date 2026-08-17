@@ -138,6 +138,40 @@ def scan_targets() -> list[Path]:
     return sorted(set(paths))
 
 
+# O_NOFOLLOW is Unix-only, and this vault is edited on Windows (see
+# `.claude/CLAUDE.md` § Windows Operation — nothing here may require Unix).
+# Naming it directly raises AttributeError there, so the guard would crash on
+# the machine it is most often run from by hand. Absent, the flag degrades to
+# 0: the open stops refusing symlinks and the check is Unix-strength only.
+# That is the honest trade — CI, which is where this gates anything, is Linux,
+# and `_readable()` still rejects a symlink that is already in place. Only the
+# swap-after-check window reopens, and only off CI.
+O_NOFOLLOW = getattr(os, "O_NOFOLLOW", 0)
+# The errno `open()` reports for O_NOFOLLOW against a symlink: ELOOP on Linux
+# and macOS, EMLINK on FreeBSD, which documents exactly this case in open(2).
+# Keeping both is not superstition. It also cannot mislead on Linux, where
+# open() has no EMLINK outcome at all — that errno belongs to link() exceeding
+# a directory's link count, which is not a path this function can reach.
+SYMLINK_REFUSED = (errno.ELOOP, errno.EMLINK)
+
+
+def _open_no_follow(path: Path) -> tuple[int | None, str]:
+    """A descriptor for `path`, or (None, reason) if it may not be opened.
+
+    Separate from the decode below because they answer different questions:
+    this one is about WHICH OBJECT the name refers to right now, and whether
+    that object may be read at all; `_read()` is about what its bytes mean.
+    Keeping them in one body put two unrelated error vocabularies in the same
+    function, which is the shape this file has been pulling apart throughout.
+    """
+    try:
+        return os.open(path, os.O_RDONLY | O_NOFOLLOW), ""
+    except OSError as exc:
+        if exc.errno in SYMLINK_REFUSED:
+            return None, "became a symlink after the safety check; not read"
+        return None, f"not readable ({exc.strerror or exc}); cannot verify pins"
+
+
 def _read(path: Path) -> tuple[str | None, str]:
     """The file's text, or (None, reason) when it cannot be decoded or read.
 
@@ -156,12 +190,9 @@ def _read(path: Path) -> tuple[str | None, str]:
     findings. O_NOFOLLOW makes the open itself refuse a symlink, so the check
     and the read can no longer disagree about which object they mean.
     """
-    try:
-        descriptor = os.open(path, os.O_RDONLY | os.O_NOFOLLOW)
-    except OSError as exc:
-        if exc.errno in (errno.ELOOP, errno.EMLINK):
-            return None, "became a symlink after the safety check; not read"
-        return None, f"not readable ({exc.strerror or exc}); cannot verify pins"
+    descriptor, reason = _open_no_follow(path)
+    if descriptor is None:
+        return None, reason
     try:
         with os.fdopen(descriptor, encoding="utf-8-sig") as handle:
             return handle.read(), ""
