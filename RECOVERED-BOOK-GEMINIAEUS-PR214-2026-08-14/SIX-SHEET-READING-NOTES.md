@@ -1,3 +1,6 @@
+---
+title: "Six-Sheet Reading Notes — Recovered Book of GEMINIAEUS"
+---
 # Six-Sheet Reading Notes — Recovered Book of GEMINIAEUS
 
 ## Status and boundary

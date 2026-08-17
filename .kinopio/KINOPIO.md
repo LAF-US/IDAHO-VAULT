@@ -1,4 +1,5 @@
 ---
+title: KINOPIO
 authority: LOGAN
 related:
   - KINOPIO
