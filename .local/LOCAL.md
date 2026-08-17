@@ -1,4 +1,5 @@
 ---
+title: LOCAL
 authority: LOGAN
 related:
   - LOCAL
