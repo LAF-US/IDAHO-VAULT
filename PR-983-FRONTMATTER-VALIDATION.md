@@ -1,39 +1,40 @@
 # PR #983 Frontmatter Validation Report
 
-**Repository:** `LAF-US/IDAHO-VAULT`  
-**Pull request:** [#983 — chore: reprovision Serena project layout](https://github.com/LAF-US/IDAHO-VAULT/pull/983)  
-**Validation scope:** Markdown files changed by `origin/main...HEAD` in PR #983  
-**Validation mode:** Read-only YAML and semantic validation
+**Repository:** `LAF-US/IDAHO-VAULT`
+
+**Pull request:** [#983 — chore: reprovision Serena project layout](https://github.com/LAF-US/IDAHO-VAULT/pull/983)
+
+**Validation scope:** Markdown files changed from `origin/main` through the current PR worktree
+
+**Validation mode:** Read-only YAML and semantic validation after repairs
 
 ## Executive Summary
 
-PR #983’s changed Markdown frontmatter is syntactically valid YAML and satisfies the repository’s current semantic frontmatter rules. All changed Markdown files now have bounded frontmatter, a non-empty string `title` field in the first position, and valid YAML mapping structure. Persona anchors follow the stricter identifier rule: `.foo/FOO.md` uses `title: FOO`.
+PR #983’s changed Markdown frontmatter is syntactically valid YAML and satisfies the repository’s current semantic frontmatter rules. Every changed file with frontmatter has bounded delimiters, a YAML mapping structure, and a non-empty string `title` field in the first position. Persona anchors follow the stricter identifier rule: `.foo/FOO.md` uses `title: FOO`.
 
-> **Result: 428 of 428 changed Markdown files passed the final validation.**
+> **Result: 443 of 443 changed Markdown files with frontmatter passed final validation.**
 
-## Validation Results
+`PR-983-FRONTMATTER-VALIDATION.md` itself is the one changed Markdown report without frontmatter, intentionally.
+
+## PR-Scoped Validation Results
 
 | Check | Result |
 |---|---:|
-| Changed Markdown files | 428 |
-| Valid YAML frontmatter blocks | 428 |
+| Changed Markdown files | 444 |
+| Files with frontmatter | 443 |
+| Valid YAML frontmatter mappings | 443 |
 | YAML syntax errors | 0 |
 | Duplicate YAML keys | 0 |
 | Unterminated frontmatter blocks | 0 |
-| Changed files without frontmatter | 0 |
+| Changed files without frontmatter | 1 intentional report |
 | Frontmatter that is not a mapping | 0 |
-| Missing `title` fields | 0 |
 | Empty or non-string `title` fields | 0 |
 | `title` fields not in first position | 0 |
 | Persona-anchor title mismatches | 0 |
 
 ## Corrections Applied
 
-The validation pass identified one genuine existing metadata defect and six changed Markdown files without frontmatter.
-
-`ANALYZER-CONFIGURATION-SURFACES.md` contained a blank `title:` field after other metadata. It was moved to the first frontmatter position and set to `ANALYZER-CONFIGURATION-SURFACES`.
-
-The following six files received descriptive, bounded frontmatter titles while preserving their existing note content:
+The initial PR validation corrected one misplaced/empty title field and added descriptive bounded frontmatter to six changed Markdown files. `ANALYZER-CONFIGURATION-SURFACES.md` received `title: ANALYZER-CONFIGURATION-SURFACES` as its first frontmatter field. The following six existing documents received descriptive titles while preserving their note content:
 
 | File | Added title |
 |---|---|
@@ -44,23 +45,58 @@ The following six files received descriptive, bounded frontmatter titles while p
 | `RESEARCH-ARTIFACTS-2026-08-14/video__zDZYrIUgKE_analysis_20260814_223641.md` | `Video Analysis — zDZYrIUgKE` |
 | `kerr_ch23_findings.md` | `Kerr Book 1 Chapter 23 — direct source findings` |
 
-Descriptive titles that differ from their filename stems were retained. A title need not equal a filename when it is a meaningful document title; the strict filename-derived rule is applied only to persona anchors.
+This final pass also repaired the 15 pre-existing malformed YAML frontmatter blocks found by the full-Vault audit:
+
+1. `2026-05-13 - Where are Claude Code logs stored.md`
+2. `CLAUDE-COUNTY-DEATH-ROLL-2026-06-07.md`
+3. `CONTEXT-PASSOVER-COPILOT-2026-03-16.md`
+4. `GITHUB-AGENT-SETUP-SUMMARY-2026-03-22 1.md`
+5. `GITHUB-AGENT-SETUP-SUMMARY-2026-03-22.md`
+6. `HANDOFF-ADMIN-2026-03-15.md`
+7. `LEVELSET-v3.2.6.1-idaho-swarm-alert.md`
+8. `Linear - agent chat - Greeting.md`
+9. `MONTHLY NOTE TEMPLATE.md`
+10. `OPENROUTER-2026-04-28.md`
+11. `PLUGIN-TRIAGE-UTF8.md`
+12. `QUARTERLY NOTE TEMPLATE.md`
+13. `RESEARCH-SWORD-OF-TRUTH-2026-06-03.md`
+14. `WEEKLY NOTE TEMPLATE.md`
+15. `YEARLY NOTE TEMPLATE.md`
+
+The repairs quoted YAML scalars where required, resolved malformed values and frontmatter merge markers, restored valid lists, and added only the title fields required by the stated semantic convention. Document bodies were not altered.
+
+Descriptive titles that differ from filename stems were retained. The strict filename-derived title rule is applied only to persona anchors.
 
 ## Method
 
-The validator examined the complete Markdown diff between `origin/main` and the PR branch. It verified the opening and closing frontmatter delimiters, parsed each block with the Node `yaml` parser using duplicate-key detection, confirmed that each parsed block is a mapping, and checked the title-order and title-value invariants described above.
+The PR-scoped validator examines Markdown changed from `origin/main` through the current worktree. It verifies opening and closing frontmatter delimiters, parses each block using a safe YAML parser with duplicate-key rejection, accepts safe YAML-local tags, confirms that each parsed block is a mapping, and checks the title-order, title-value, and persona-anchor invariants.
 
-The final semantic validation was run after the corrections and returned:
+The final PR-scoped semantic validation returned:
 
 ```text
-changed_markdown: 428
-valid_yaml: 428
+changed_markdown: 444
+valid_yaml: 443
 invalid_yaml: 0
-no_frontmatter: 0
+no_frontmatter: 1 (intentional validation report)
 empty_or_nonfirst_title: 0
 anchor_title_mismatch: 0
 ```
 
-## Limitations
+## Full-Vault Audit
 
-This report covers the Markdown files changed by PR #983. It is not a full-vault audit. A separate full-vault dry run was attempted, but the connected Vault contains approximately 110,510 Git-tracked Markdown files and approximately 48,719 frontmatter candidates; the desktop filesystem traversal exceeded the available runtime. No files were modified by that incomplete audit.
+A complete, read-only audit was run in eight batches over every `git ls-files -- '*.md'` path in the current PR worktree.
+
+| Full-Vault audit measure | Result |
+|---|---:|
+| Git-tracked Markdown files audited | 36,587 |
+| Batches completed | 8 of 8 |
+| Coverage verification | Passed |
+| YAML syntax errors | 0 |
+| Duplicate YAML keys | 0 |
+| Unterminated frontmatter blocks | 0 |
+| Persona-anchor title mismatches | 0 |
+| Persona anchors without frontmatter | 0 |
+| Non-mapping frontmatter stubs | 891 existing files |
+| Empty, absent, or non-first `title` fields | 6,880 existing files |
+
+The remaining 891 non-mapping frontmatter stubs and 6,880 title-convention findings are historical metadata debt outside this PR’s targeted repair scope. They do not affect the repaired 15 files or the validity of PR #983’s changed frontmatter.
