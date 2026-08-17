@@ -20,6 +20,17 @@ command -v gitleaks   >/dev/null 2>&1 || fail 'gitleaks not on PATH - secret gat
 command -v trufflehog >/dev/null 2>&1 || fail 'trufflehog not on PATH - secret gate fails closed; push blocked.'
 command -v git-lfs    >/dev/null 2>&1 || fail 'git-lfs not on PATH - LFS transfer gate fails closed; push blocked.'
 
+if command -v python3 >/dev/null 2>&1; then
+  PYTHON=python3
+elif command -v python >/dev/null 2>&1; then
+  PYTHON=python
+else
+  fail 'Python is required for storage ownership checks.'
+fi
+
+"$PYTHON" .github/scripts/vault_git_storage.py check --ref HEAD ||
+  fail 'Git, LFS, and annex ownership validation failed.'
+
 refs=$(cat)
 [ -n "$refs" ] || exit 0    # nothing to push
 
@@ -66,7 +77,7 @@ while IFS=' ' read -r local_ref local_oid remote_ref remote_oid; do
   if printf '%s' "$sz_report" | grep -q '^BLOCK'; then
     printf >&2 'pre-push: files exceed GitHub size limits on %s:\n' "$local_ref"
     printf '%s\n' "$sz_report" | grep '^BLOCK' | sed 's/^BLOCK//' >&2
-    printf >&2 '  remedy: >100 MiB -> track via Git LFS; >2 GiB -> external storage, not Git (VAULT-MEDIA-STORAGE.md).\n'
+    printf >&2 '  remedy: >100 MiB -> Git LFS; >2 GiB -> configured annex/external storage.\n'
     blocked=1
   fi
   printf '%s\n' "$sz_report" | grep '^WARN' | sed 's/^WARN  /pre-push warning: /' >&2 2>/dev/null || :
