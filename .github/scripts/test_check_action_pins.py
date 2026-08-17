@@ -76,6 +76,7 @@ class GuardFixture(unittest.TestCase):
             text=True,
             timeout=60,
             cwd=self.root,
+            check=False,
         )
         findings = [
             line.strip() for line in result.stderr.splitlines() if line.startswith("  ")
@@ -95,9 +96,10 @@ class GuardFixture(unittest.TestCase):
             text=True,
             timeout=60,
             cwd=self.root,
+            check=False,
         )
         self.assertEqual(listing.returncode, 0, listing.stderr)
-        return listing.stdout.split()
+        return listing.stdout.splitlines()
 
     def assertClean(self) -> None:
         """Exit 0 and a silent stderr — no findings, and nothing else either."""
@@ -439,14 +441,16 @@ class DiscoveryTest(GuardFixture):
         outside.mkdir()
         self.addCleanup(shutil.rmtree, outside, ignore_errors=True)
         (outside / "action.yml").write_text("name: x\n", encoding="utf-8")
-        (self.root / ".github" / "actions" / "evil").symlink_to(outside)
+        (self.root / ".github" / "actions" / "evil").symlink_to(
+            outside, target_is_directory=True
+        )
         findings = self.assertFlags("symlink; not read")
         self.assertFalse([f for f in findings if "evil/action.yml" in f])
 
     def test_symlink_loop_terminates(self):
         loop = self.root / ".github" / "actions" / "loop"
         loop.mkdir(parents=True)
-        (loop / "self").symlink_to(loop)
+        (loop / "self").symlink_to(loop, target_is_directory=True)
         self.assertFlags("symlink; not read")
 
     def test_a_directory_symlink_named_action_yml_is_listed_once(self):
@@ -458,7 +462,9 @@ class DiscoveryTest(GuardFixture):
         # caller.
         weird = self.root / ".github" / "actions" / "weird"
         weird.mkdir(parents=True)
-        (weird / "action.yml").symlink_to(self.root / ".github" / "actions")
+        (weird / "action.yml").symlink_to(
+            self.root / ".github" / "actions", target_is_directory=True
+        )
         targets = self.scan_targets()
         self.assertEqual(len(targets), len(set(targets)), targets)
         findings = self.assertFlags("weird/action.yml")

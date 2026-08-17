@@ -138,7 +138,7 @@ def scan_targets() -> list[Path]:
     # the repeat (its `seen` set is written before any finding is), so no
     # duplicate reaches the output today; this keeps the returned list honest
     # for any other caller, which has no such set to hide behind.
-    return sorted(dict.fromkeys(paths))
+    return sorted(set(paths))
 
 
 def _read(path: Path) -> tuple[str | None, str]:

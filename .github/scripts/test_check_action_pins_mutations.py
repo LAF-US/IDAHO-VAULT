@@ -14,22 +14,34 @@ the BOM mutant survived because that test asserted a decode error a BOM does
 not actually cause, and the scoping mutant survived because its fixture did
 not contain the text the scoping decision turns on.
 
-Deliberately NOT named `test_*.py`: this is a manual verification tool, not
-part of the CI suite, because each entry quotes a line of the guard verbatim
-and will need updating when that line legitimately changes. A `PATTERN MISSING`
-result means exactly that -- the guard moved out from under a mutation, and
-this file needs attention. It counts as a survivor, never as a pass.
+It is a test module, discovered by CI like any other, but its one case skips
+unless `RUN_MUTATION_TESTS` is set. Skipped rather than run because each entry
+quotes a line of the guard verbatim: a legitimate refactor of that line makes
+this fail with `PATTERN MISSING`, which is worth a person's attention on the
+pull request that caused it and is not worth blocking an unrelated one. The
+skip is printed on every CI run, so the tool announces itself instead of
+sitting in the tree waiting to be remembered. `PATTERN MISSING` counts as a
+survivor and fails, never as a pass -- a mutation that no longer applies has
+stopped testing anything.
 
-    python3 .github/scripts/mutate_check_action_pins.py
+(It was first written as `mutate_check_action_pins.py`, kept out of discovery
+by its name. That was worse on both counts: invisible in CI, and classified as
+runtime code by the repository's scanners, which flag `subprocess` there and
+suppress it in test files. It is test code; the name now says so.)
+
+    RUN_MUTATION_TESTS=1 python3 -m unittest discover -s .github/scripts
+    python3 .github/scripts/test_check_action_pins_mutations.py   # always runs
 """
 
 from __future__ import annotations
 
+import os
 import re
 import shutil
 import subprocess
 import sys
 import tempfile
+import unittest
 from pathlib import Path
 
 SCRIPTS = Path(__file__).resolve().parent
@@ -64,7 +76,7 @@ def mutations(guard: str) -> dict[str, tuple[str, str]]:
             '    actions_root = REPO_ROOT / "nonexistent-disabled"',
         ),
         "duplicate targets returned": (
-            "return sorted(dict.fromkeys(paths))",
+            "return sorted(set(paths))",
             "return sorted(paths)",
         ),
         "symlinks resolved instead of refused": (
@@ -156,13 +168,52 @@ def mutations(guard: str) -> dict[str, tuple[str, str]]:
     }
 
 
-def main() -> int:
+def _run_suite(scripts: Path) -> subprocess.CompletedProcess[str]:
+    """Run a copy of the suite against whatever guard sits beside it."""
+    return subprocess.run(
+        # A list, never a string, and never `shell=True`: the arguments are
+        # `sys.executable` and a path this module just made under the system
+        # temporary directory. Nothing is parsed by a shell and nothing comes
+        # from outside the repository, which is why the audit-grade "subprocess
+        # without a static string" warning finds no injection to report. The
+        # child process IS the measurement: the mutant has to be loaded fresh,
+        # and importing a second copy of the guard here would not do that.
+        [sys.executable, str(scripts / SUITE.name)],
+        capture_output=True,
+        text=True,
+        timeout=600,
+        check=False,
+    )
+
+
+def _failures(result: subprocess.CompletedProcess[str]) -> list[str]:
+    """The names of the tests that failed or errored in one run."""
+    return sorted(set(re.findall(r"^(?:FAIL|ERROR): (\w+)", result.stderr, re.M)))
+
+
+def surviving_mutants(report=print) -> list[str]:
+    """Every mutation the suite failed to notice. Empty is the only pass.
+
+    The baseline goes first. Grading mutants against a suite that is already
+    failing reports every one of them killed -- a green 21/21 that measures
+    nothing, which is the exact false confidence this tool exists to deny the
+    guard. So the untouched suite runs once, and a dirty baseline stops the run
+    rather than being averaged into it.
+    """
     guard = GUARD.read_text(encoding="utf-8")
     survivors: list[str] = []
 
+    baseline = _run_suite(SCRIPTS)
+    if baseline.returncode != 0:
+        report("BASELINE DIRTY   the suite does not pass unmutated; nothing to grade")
+        for name in _failures(baseline) or ["(no named failure; see below)"]:
+            report(f"{'':17}  {name}")
+        report(baseline.stderr[-2000:])
+        return ["baseline"]
+
     for label, (original, broken) in mutations(guard).items():
         if not original or original not in guard:
-            print(f"{'PATTERN MISSING':17}{label}")
+            report(f"{'PATTERN MISSING':17}{label}")
             survivors.append(label)
             continue
 
@@ -173,26 +224,43 @@ def main() -> int:
                 guard.replace(original, broken, 1), encoding="utf-8"
             )
             shutil.copy(SUITE, workspace / "scripts" / SUITE.name)
-            result = subprocess.run(
-                [sys.executable, str(workspace / "scripts" / SUITE.name)],
-                capture_output=True,
-                text=True,
-                timeout=600,
-            )
-        finally:
+            result = _run_suite(workspace / "scripts")
+        except BaseException:
             shutil.rmtree(workspace, ignore_errors=True)
+            raise
 
-        killed_by = sorted(
-            set(re.findall(r"^(?:FAIL|ERROR): (\w+)", result.stderr, re.M))
-        )
+        killed_by = _failures(result)
         if killed_by:
-            print(f"{'killed':17}{label}\n{'':17}  by {', '.join(killed_by[:3])}")
+            report(f"{'killed':17}{label}\n{'':17}  by {', '.join(killed_by[:3])}")
+            shutil.rmtree(workspace, ignore_errors=True)
         else:
-            print(f"{'*** SURVIVED ***':17}{label}")
+            # Kept, not cleaned. A survivor is the one case where someone needs
+            # to look at the mutant and ask why the suite could not see it --
+            # which is how three of these were turned into real test cases
+            # rather than dismissed.
+            report(f"{'*** SURVIVED ***':17}{label}\n{'':17}  kept at {workspace}")
             survivors.append(label)
 
     total = len(mutations(guard))
-    print(f"\n{total - len(survivors)}/{total} mutants killed")
+    report(f"\n{total - len(survivors)}/{total} mutants killed")
+    return survivors
+
+
+class MutationTest(unittest.TestCase):
+    """The suite must be able to go red for every defence it claims."""
+
+    @unittest.skipUnless(
+        os.environ.get("RUN_MUTATION_TESTS"),
+        "set RUN_MUTATION_TESTS=1 to break the guard on purpose (~1 min)",
+    )
+    def test_every_mutant_is_killed(self):
+        self.assertEqual(
+            surviving_mutants(), [], "the suite cannot see these regressions"
+        )
+
+
+def main() -> int:
+    survivors = surviving_mutants()
     if survivors:
         print("survivors (the suite cannot see these):")
         for label in survivors:
