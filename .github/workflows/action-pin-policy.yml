@@ -160,8 +160,8 @@ jobs:
           fi
           # Only the mutation module, not the whole suite again: the step
           # above already ran every test once, and the sweep re-runs the suite
-          # 21 more times internally. Discovering the one file keeps this
-          # step's output about the sweep.
+          # once per mutant internally, plus once clean for the baseline.
+          # Discovering the one file keeps this step's output about the sweep.
           RUN_MUTATION_TESTS=1 python -m unittest discover \
             --start-directory .github/scripts \
             --pattern 'test_check_action_pins_mutations.py' \
