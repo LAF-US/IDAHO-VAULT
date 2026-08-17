@@ -25,16 +25,12 @@ __tests__/
 test_*.py
 *_test.py
 backup-compare-temp/
-!/tests/
-!/tests/tests.md
-!/tests/test_app.py
 src/idaho_vault/mock_llm.py
 src-idaho_vault-mock_llm.py
 
 # Documentation
 docs/
 # Clipped reference documents (not part of package distribution)
-- *.md
 *- *.md
 [0-9][0-9][0-9][0-9]-*.md
 
