@@ -141,23 +141,32 @@ def run_interactive_command(command: list[str], env: dict[str, str] | None = Non
 
 def exec_agent(agent: str, args: list[str]) -> int:
     cli_name = agent_command(agent)
+    approved_args = approved_agent_args(args)
     env = apply_runtime_env(agent)
     resolved_cli = shutil.which(cli_name, path=env.get("PATH"))
     if resolved_cli is None:
         raise SystemExit(f"Could not find approved '{cli_name}' executable on PATH.")
 
-    return run_interactive_command([resolved_cli, *args], env)
+    return run_interactive_command([resolved_cli, *approved_args], env)
 
 
-def is_help_request(args: list[str]) -> bool:
-    return any(arg in {"-h", "--help"} for arg in args)
+def approved_agent_args(args: list[str]) -> list[str]:
+    """Allow only fixed help switches; interactive sessions otherwise start without arguments."""
+    if not args:
+        return []
+    if args == ["-h"]:
+        return ["-h"]
+    if args == ["--help"]:
+        return ["--help"]
+    raise SystemExit("OpenRouter launchers accept no arguments other than -h or --help.")
 
 
 def launch_agent(agent: str, args: list[str]) -> int:
     agent_command(agent)
+    approved_args = approved_agent_args(args)
 
-    if is_help_request(args):
-        return exec_agent(agent, args)
+    if approved_args:
+        return exec_agent(agent, approved_args)
 
     ensure_op_available()
     ensure_op_signed_in()
@@ -172,7 +181,6 @@ def launch_agent(agent: str, args: list[str]) -> int:
         str(Path(__file__).resolve()),
         "--exec",
         agent,
-        *args,
     ]
     return run_interactive_command(command)
 

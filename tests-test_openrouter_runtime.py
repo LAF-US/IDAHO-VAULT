@@ -119,7 +119,13 @@ class OpenRouterRuntimeTest(unittest.TestCase):
         self.assertIn('$cliName = switch ($Agent)', launcher)
         self.assertIn('$command = @("op", "run", $envArg, "--", $cliName)', launcher)
 
-    def test_launch_agent_forwards_arguments_without_a_caller_selected_executable(self) -> None:
+    def test_unapproved_launcher_arguments_are_rejected(self) -> None:
+        with self.assertRaises(SystemExit) as exc:
+            openrouter_runtime.approved_agent_args(["--model", "openrouter/auto"])
+
+        self.assertIn("accept no arguments", str(exc.exception))
+
+    def test_launch_agent_uses_an_argument_free_runtime_command(self) -> None:
         env_file = PROJECT_ROOT / ".op" / "openrouter.env"
         with (
             patch.object(openrouter_runtime, "ensure_op_available"),
@@ -127,7 +133,7 @@ class OpenRouterRuntimeTest(unittest.TestCase):
             patch.object(openrouter_runtime, "ensure_env_file", return_value=env_file),
             patch.object(openrouter_runtime.subprocess, "run") as run,
         ):
-            openrouter_runtime.launch_agent("codex", ["--model", "openrouter/auto"])
+            openrouter_runtime.launch_agent("codex", [])
 
         run.assert_called_once_with(
             [
@@ -139,8 +145,6 @@ class OpenRouterRuntimeTest(unittest.TestCase):
                 str(Path(openrouter_runtime.__file__).resolve()),
                 "--exec",
                 "codex",
-                "--model",
-                "openrouter/auto",
             ],
             env=None,
             check=False,
