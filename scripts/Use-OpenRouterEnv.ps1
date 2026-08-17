@@ -3,15 +3,17 @@ param(
     [ValidateSet("codex", "claude")]
     [string]$Agent,
 
-    [Parameter(Mandatory = $true)]
-    [string]$CliName,
-
     [Parameter(ValueFromRemainingArguments = $true)]
     [string[]]$Args
 )
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = "Stop"
+
+$cliName = switch ($Agent) {
+    "codex" { "codex" }
+    "claude" { "claude" }
+}
 
 $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 $vaultRoot = Split-Path -Parent $scriptDir
@@ -49,7 +51,7 @@ if ($LASTEXITCODE -ne 0) {
 }
 
 $envArg = "--env-file=$envFile"
-$command = @("op", "run", $envArg, "--", $CliName)
+$command = @("op", "run", $envArg, "--", $cliName)
 if ($Args) {
     $command += $Args
 }

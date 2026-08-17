@@ -11,11 +11,24 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent
 ENV_FILE = REPO_ROOT / ".op" / "openrouter.env"
 RESOLVER = REPO_ROOT / "!" / "resolve_openrouter_secret.py"
+AGENT_COMMANDS = {
+    "codex": "codex",
+    "claude": "claude",
+}
 
 
 def ensure_dir(path: Path) -> Path:
     path.mkdir(parents=True, exist_ok=True)
     return path.resolve()
+
+
+def agent_command(agent: str) -> str:
+    """Return the sole approved executable for a supported OpenRouter agent."""
+    try:
+        return AGENT_COMMANDS[agent]
+    except KeyError as exc:
+        supported = ", ".join(sorted(AGENT_COMMANDS))
+        raise SystemExit(f"Unsupported OpenRouter agent '{agent}'. Supported agents: {supported}.") from exc
 
 
 def apply_runtime_env(agent: str) -> dict[str, str]:
@@ -71,17 +84,17 @@ def ensure_op_signed_in() -> None:
         )
 
 
-def _env_file_keys_with_values(content: str) -> set[str]:
-    """Parse KEY=value lines and return the keys whose value is non-empty."""
-    keys = set()
+def parse_env_content(content: str) -> dict[str, str]:
+    """Parse non-empty KEY=value lines without evaluating shell syntax."""
+    values: dict[str, str] = {}
     for line in content.splitlines():
         line = line.strip()
         if not line or line.startswith("#") or "=" not in line:
             continue
         key, _, value = line.partition("=")
-        if value.strip():
-            keys.add(key.strip())
-    return keys
+        if key.strip():
+            values[key.strip()] = value.strip()
+    return values
 
 
 def ensure_env_file(agent: str) -> Path:
@@ -92,9 +105,8 @@ def ensure_env_file(agent: str) -> Path:
 
     needs_refresh = not ENV_FILE.exists()
     if not needs_refresh:
-        content = ENV_FILE.read_text(encoding="utf-8")
-        populated = _env_file_keys_with_values(content)
-        needs_refresh = any(key not in populated for key in required_keys)
+        populated = parse_env_content(ENV_FILE.read_text(encoding="utf-8"))
+        needs_refresh = any(not populated.get(key) for key in required_keys)
 
     if needs_refresh:
         try:
@@ -109,13 +121,13 @@ def ensure_env_file(agent: str) -> Path:
     return ENV_FILE
 
 
-def exec_agent(agent: str, cli_name: str, args: list[str]) -> int:
+def exec_agent(agent: str, args: list[str]) -> int:
+    cli_name = agent_command(agent)
     env = apply_runtime_env(agent)
     resolved_cli = shutil.which(cli_name, path=env.get("PATH"))
     if resolved_cli is None:
-        raise SystemExit(f"Could not find '{cli_name}' on PATH.")
+        raise SystemExit(f"Could not find approved '{cli_name}' executable on PATH.")
 
-    # timeout: interactive
     result = subprocess.run([resolved_cli, *args], env=env, check=False)
     return result.returncode
 
@@ -124,12 +136,11 @@ def is_help_request(args: list[str]) -> bool:
     return any(arg in {"-h", "--help"} for arg in args)
 
 
-def launch_agent(agent: str, cli_name: str, args: list[str]) -> int:
-    if agent not in {"codex", "claude"}:
-        raise SystemExit(f"Unsupported OpenRouter agent: {agent}")
+def launch_agent(agent: str, args: list[str]) -> int:
+    agent_command(agent)
 
     if is_help_request(args):
-        return exec_agent(agent, cli_name, args)
+        return exec_agent(agent, args)
 
     ensure_op_available()
     ensure_op_signed_in()
@@ -144,10 +155,8 @@ def launch_agent(agent: str, cli_name: str, args: list[str]) -> int:
         str(Path(__file__).resolve()),
         "--exec",
         agent,
-        cli_name,
         *args,
     ]
-    # timeout: interactive
     result = subprocess.run(command, check=False)
     return result.returncode
 
@@ -156,14 +165,13 @@ def main() -> int:
     parser = argparse.ArgumentParser(add_help=False)
     parser.add_argument("--exec", dest="exec_mode", action="store_true")
     parser.add_argument("agent")
-    parser.add_argument("cli_name")
     parser.add_argument("args", nargs="*")
     parsed = parser.parse_args()
 
     if parsed.exec_mode:
-        return exec_agent(parsed.agent, parsed.cli_name, parsed.args)
+        return exec_agent(parsed.agent, parsed.args)
 
-    return launch_agent(parsed.agent, parsed.cli_name, parsed.args)
+    return launch_agent(parsed.agent, parsed.args)
 
 
 if __name__ == "__main__":

@@ -26,6 +26,7 @@ python3 scripts/validate_openrouter.py
 ## Notes
 
 - Runtime provider secrets should resolve through the vault scripts above.
+- The resolvers materialize `.op/openrouter.env` and print only a status line; they never print a credential value to standard output or standard error.
 - Prefer `op://...` references in `.op/openrouter.env` over plaintext values.
 - The harvested 1Password SSH agent docs are a separate local machine workflow
   for SSH and Git signing, not the provider runtime secret path.

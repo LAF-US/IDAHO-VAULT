@@ -1,19 +1,24 @@
 #!/usr/bin/env python3
-"""Resolve OPENROUTER_API_KEY without storing it in OpenClaw config."""
+"""Materialize the OpenRouter runtime environment without printing credentials."""
 
 from __future__ import annotations
 
 import os
 import pathlib
 import re
-import subprocess
 import sys
+import tempfile
 
 
 REPO_ROOT = pathlib.Path(__file__).resolve().parents[1]
 ENV_FILE = REPO_ROOT / ".op" / "openrouter.env"
-OP_BIN = pathlib.Path("/usr/local/bin/op")
-KEY_RE = re.compile(r"^(?:export\s+)?OPENROUTER_API_KEY=(.*)$")
+KEY_RE = re.compile(r"^(?:export\s+)?([A-Z][A-Z0-9_]*)=(.*)$")
+SECRET_PLACEHOLDERS = frozenset(
+    {
+        "<OPENROUTER_SECRET_REF>",
+        "CHANGE_TO_MANAGEMENT_KEY_OP_REF",
+    }
+)
 
 
 def unquote(value: str) -> str:
@@ -23,50 +28,105 @@ def unquote(value: str) -> str:
     return value
 
 
-def read_env_file() -> str:
-    if not ENV_FILE.exists():
-        raise RuntimeError(f"{ENV_FILE} not found")
-
-    for raw_line in ENV_FILE.read_text(encoding="utf-8").splitlines():
+def parse_env_content(content: str) -> dict[str, str]:
+    """Parse non-empty KEY=value lines without interpreting shell syntax."""
+    values: dict[str, str] = {}
+    for raw_line in content.splitlines():
         line = raw_line.strip()
         if not line or line.startswith("#"):
             continue
         match = KEY_RE.match(line)
         if match:
-            return unquote(match.group(1))
+            values[match.group(1)] = unquote(match.group(2))
+    return values
 
-    raise RuntimeError(f"OPENROUTER_API_KEY not found in {ENV_FILE}")
+
+def _is_usable_secret_source(value: str | None) -> bool:
+    return bool(value and value.strip() and value.strip() not in SECRET_PLACEHOLDERS)
 
 
-def resolve_op_ref(ref: str) -> str:
-    try:
-        completed = subprocess.run(
-            [str(OP_BIN), "read", ref],
-            check=True,
-            text=True,
-            stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE,
-            timeout=10,
-            env={k: v for k, v in os.environ.items() if k in {"OP_SERVICE_ACCOUNT_TOKEN"}},
+def read_env_values(path: pathlib.Path | None = None) -> dict[str, str]:
+    path = ENV_FILE if path is None else path
+    if not path.exists():
+        return {}
+    return parse_env_content(path.read_text(encoding="utf-8"))
+
+
+def select_secret_source(existing_values: dict[str, str]) -> str:
+    """Choose an explicit runtime secret or 1Password reference without exposing it."""
+    environment_value = os.environ.get("OPENROUTER_API_KEY")
+    existing_value = existing_values.get("OPENROUTER_API_KEY")
+    source = next(
+        (
+            value.strip()
+            for value in (environment_value, existing_value)
+            if _is_usable_secret_source(value)
+        ),
+        None,
+    )
+    if source is None:
+        raise RuntimeError(
+            "OPENROUTER_API_KEY is not configured. Copy .op/openrouter.env.template "
+            "to .op/openrouter.env and replace <OPENROUTER_SECRET_REF> with a 1Password reference."
         )
-    except (subprocess.CalledProcessError, subprocess.TimeoutExpired) as exc:
-        message = getattr(exc, "stderr", "") or str(exc)
-        raise RuntimeError(f"1Password resolution failed: {message.strip()}") from exc
+    if not (source.startswith("op://") or source.startswith("sk-or-")):
+        raise RuntimeError("OPENROUTER_API_KEY must be an op:// reference or an sk-or- API key.")
+    return source
 
-    value = completed.stdout.strip()
-    if not value:
-        raise RuntimeError("1Password returned an empty OpenRouter key")
-    return value
+
+def build_runtime_env(secret_source: str, existing_values: dict[str, str]) -> str:
+    """Build the aliases required by the Codex and Claude OpenRouter launchers."""
+    management_key = existing_values.get("OPENROUTER_MANAGEMENT_KEY", "").strip()
+    lines = [
+        f"OPENROUTER_API_KEY={secret_source}",
+        f"OPENAI_API_KEY={secret_source}",
+        "OPENAI_BASE_URL=https://openrouter.ai/api/v1",
+        "OPENAI_MODEL=openrouter/auto",
+        f"ANTHROPIC_AUTH_TOKEN={secret_source}",
+        "ANTHROPIC_BASE_URL=https://openrouter.ai/api",
+        f"ANTHROPIC_API_KEY={secret_source}",
+    ]
+    if _is_usable_secret_source(management_key):
+        lines.insert(1, f"OPENROUTER_MANAGEMENT_KEY={management_key}")
+    return "\n".join(lines) + "\n"
+
+
+def write_runtime_env(content: str, path: pathlib.Path | None = None) -> None:
+    """Atomically write a private runtime environment file without logging its content."""
+    path = ENV_FILE if path is None else path
+    path.parent.mkdir(mode=0o700, parents=True, exist_ok=True)
+    os.chmod(path.parent, 0o700)
+    descriptor, temporary_name = tempfile.mkstemp(
+        prefix=f".{path.name}.",
+        dir=path.parent,
+        text=True,
+    )
+    try:
+        os.fchmod(descriptor, 0o600)
+        with os.fdopen(descriptor, "w", encoding="utf-8") as handle:
+            handle.write(content)
+        os.replace(temporary_name, path)
+        os.chmod(path, 0o600)
+    except BaseException:
+        try:
+            os.close(descriptor)
+        except OSError:
+            pass
+        pathlib.Path(temporary_name).unlink(missing_ok=True)
+        raise
+
+
+def materialize_runtime_env() -> pathlib.Path:
+    existing_values = read_env_values()
+    secret_source = select_secret_source(existing_values)
+    write_runtime_env(build_runtime_env(secret_source, existing_values))
+    return ENV_FILE
 
 
 def main() -> int:
     try:
-        value = os.environ.get("OPENROUTER_API_KEY") or read_env_file()
-        if value.startswith("op://"):
-            value = resolve_op_ref(value)
-        if not value.startswith("sk-or-"):
-            raise RuntimeError("resolved OpenRouter key has unexpected format")
-        sys.stdout.write(value)
+        output_path = materialize_runtime_env()
+        print(f"Materialized OpenRouter runtime environment at {output_path}")
         return 0
     except Exception as exc:
         print(f"resolve_openrouter_secret.py: {exc}", file=sys.stderr)

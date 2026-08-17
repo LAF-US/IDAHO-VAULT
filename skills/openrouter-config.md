@@ -34,7 +34,7 @@ python3 scripts/validate_openrouter.py
 ## What the runtime path does
 
 - Resolves the OpenRouter secret reference from 1Password.
-- Materializes `.op/openrouter.env` for Codex and Claude launchers.
+- Materializes `.op/openrouter.env` for Codex and Claude launchers, without emitting credentials to the terminal.
 - Prefers `op://...` references instead of plaintext credentials.
 - Validates the runtime contract with `scripts/validate_openrouter.py`.
 - Keeps OpenClaw aligned to the vault's BEEFSTACK shape: Ollama +

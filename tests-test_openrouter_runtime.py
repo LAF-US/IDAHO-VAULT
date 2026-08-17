@@ -6,7 +6,7 @@ from pathlib import Path
 from unittest.mock import patch
 
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
+PROJECT_ROOT = Path(__file__).resolve().parent
 
 
 def _load_module(module_name: str, relative_path: str):
@@ -47,7 +47,6 @@ class OpenRouterRuntimeTest(unittest.TestCase):
         env_file = PROJECT_ROOT / ".tmp" / "test-openrouter.env"
         with (
             patch.object(openrouter_runtime, "ENV_FILE", env_file),
-            patch.object(openrouter_runtime.shutil, "which", return_value="op"),
             patch.object(openrouter_runtime.subprocess, "run") as run,
         ):
             env_file.parent.mkdir(parents=True, exist_ok=True)
@@ -61,7 +60,17 @@ class OpenRouterRuntimeTest(unittest.TestCase):
             resolved_env_file = openrouter_runtime.ensure_env_file("claude")
 
         self.assertEqual(resolved_env_file, env_file)
-        run.assert_called_once_with([openrouter_runtime.sys.executable, str(openrouter_runtime.RESOLVER)], check=True)
+        run.assert_called_once_with(
+            [openrouter_runtime.sys.executable, str(openrouter_runtime.RESOLVER)],
+            check=True,
+            timeout=60,
+        )
+
+    def test_agent_command_rejects_unsupported_agent(self) -> None:
+        with self.assertRaises(SystemExit) as exc:
+            openrouter_runtime.agent_command("untrusted")
+
+        self.assertIn("Unsupported OpenRouter agent", str(exc.exception))
 
     def test_help_requests_bypass_1password_preflight(self) -> None:
         with (
@@ -70,34 +79,61 @@ class OpenRouterRuntimeTest(unittest.TestCase):
             patch.object(openrouter_runtime, "ensure_op_signed_in") as ensure_op_signed_in,
             patch.object(openrouter_runtime, "ensure_env_file") as ensure_env_file,
         ):
-            status = openrouter_runtime.launch_agent("claude", "claude", ["--help"])
+            status = openrouter_runtime.launch_agent("claude", ["--help"])
 
         self.assertEqual(status, 0)
-        exec_agent.assert_called_once_with("claude", "claude", ["--help"])
+        exec_agent.assert_called_once_with("claude", ["--help"])
         ensure_op_available.assert_not_called()
         ensure_op_signed_in.assert_not_called()
         ensure_env_file.assert_not_called()
 
-    def test_exec_agent_resolves_full_cli_path(self) -> None:
+    def test_exec_agent_uses_only_the_approved_binary(self) -> None:
         with (
-            patch.object(openrouter_runtime, "apply_runtime_env", return_value={"PATH": r"C:\mock\bin"}),
-            patch.object(openrouter_runtime.shutil, "which", return_value=r"C:\mock\bin\codex.cmd") as which,
+            patch.object(openrouter_runtime, "apply_runtime_env", return_value={"PATH": r"C:\\mock\\bin"}),
+            patch.object(openrouter_runtime.shutil, "which", return_value=r"C:\\mock\\bin\\codex.cmd") as which,
             patch.object(openrouter_runtime.subprocess, "run") as run,
         ):
-            openrouter_runtime.exec_agent("codex", "codex", ["--help"])
+            openrouter_runtime.exec_agent("codex", ["--help"])
 
-        which.assert_called_once_with("codex", path=r"C:\mock\bin")
-        run.assert_called_once_with([r"C:\mock\bin\codex.cmd", "--help"], env={"PATH": r"C:\mock\bin"}, check=False)
+        which.assert_called_once_with("codex", path=r"C:\\mock\\bin")
+        run.assert_called_once_with(
+            [r"C:\\mock\\bin\\codex.cmd", "--help"],
+            env={"PATH": r"C:\\mock\\bin"},
+            check=False,
+        )
 
-    def test_exec_agent_raises_clear_error_when_cli_is_missing(self) -> None:
+    def test_windows_launcher_uses_a_fixed_agent_command_map(self) -> None:
+        launcher = (PROJECT_ROOT / "scripts" / "Use-OpenRouterEnv.ps1").read_text(encoding="utf-8")
+
+        self.assertNotIn("[string]$CliName", launcher)
+        self.assertIn('$cliName = switch ($Agent)', launcher)
+        self.assertIn('$command = @("op", "run", $envArg, "--", $cliName)', launcher)
+
+    def test_launch_agent_forwards_arguments_without_a_caller_selected_executable(self) -> None:
+        env_file = PROJECT_ROOT / ".op" / "openrouter.env"
         with (
-            patch.object(openrouter_runtime, "apply_runtime_env", return_value={"PATH": r"C:\mock\bin"}),
-            patch.object(openrouter_runtime.shutil, "which", return_value=None),
+            patch.object(openrouter_runtime, "ensure_op_available"),
+            patch.object(openrouter_runtime, "ensure_op_signed_in"),
+            patch.object(openrouter_runtime, "ensure_env_file", return_value=env_file),
+            patch.object(openrouter_runtime.subprocess, "run") as run,
         ):
-            with self.assertRaises(SystemExit) as exc:
-                openrouter_runtime.exec_agent("codex", "codex", ["--help"])
+            openrouter_runtime.launch_agent("codex", ["--model", "openrouter/auto"])
 
-        self.assertEqual(str(exc.exception), "Could not find 'codex' on PATH.")
+        run.assert_called_once_with(
+            [
+                "op",
+                "run",
+                f"--env-file={env_file}",
+                "--",
+                openrouter_runtime.sys.executable,
+                str(Path(openrouter_runtime.__file__).resolve()),
+                "--exec",
+                "codex",
+                "--model",
+                "openrouter/auto",
+            ],
+            check=False,
+        )
 
 
 if __name__ == "__main__":
