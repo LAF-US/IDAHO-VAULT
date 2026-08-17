@@ -1,5 +1,6 @@
 # Dependencies
 node_modules/
+**/node_modules/
 
 # Development
 .vscode/
@@ -24,12 +25,16 @@ __tests__/
 test_*.py
 *_test.py
 backup-compare-temp/
+!/tests/
+!/tests/tests.md
+!/tests/test_app.py
 src/idaho_vault/mock_llm.py
 src-idaho_vault-mock_llm.py
 
 # Documentation
 docs/
 # Clipped reference documents (not part of package distribution)
+- *.md
 *- *.md
 [0-9][0-9][0-9][0-9]-*.md
 
@@ -68,11 +73,13 @@ env.development
 .gitattributes
 
 # CI/CD
+**/.github/
 .github/
 .gitlab-ci.yml
 .travis.yml
 azure-pipelines.yml
 .circleci/
+**/.circleci/
 
 # Tools
 .obsidian/
@@ -84,38 +91,67 @@ Thumbs.db
 **/.factory/
 .factory/
 **/.factory/certs/
+.factory/certs/
 **/.op/
 .op/
 **/.secrets/
 .secrets/
 **/certs/
+certs/
 **/certificates/
+certificates/
 **/ssl/
+ssl/
 **/tls/
+tls/
 **/*.pem
+*.pem
 **/*.key
+*.key
 **/*.keystore
+*.keystore
 **/*.p12
+*.p12
 **/*.pfx
+*.pfx
 **/*.crt
+*.crt
 **/*.cer
+*.cer
 **/*.der
+*.der
 **/*.p8
+*.p8
 **/*.pkcs12
+*.pkcs12
 **/*.jks
+*.jks
 **/*.gpg
+*.gpg
 **/*.asc
+*.asc
 **/*.pwd
+*.pwd
 **/*.pass
+*.pass
 **/*.secret
+*.secret
 **/*.age
+*.age
 **/*.enc
+*.enc
 **/id_rsa
+id_rsa
 **/id_rsa.*
+id_rsa.*
 **/id_ed25519
+id_ed25519
 **/id_ed25519.*
+id_ed25519.*
 **/id_ecdsa
+id_ecdsa
 **/id_ecdsa.*
+id_ecdsa.*
 
 # Debug logs
 debug.log
@@ -140,5 +176,3 @@ tmp/
 
 # Generated documentation from node_modules
 THE-GEMSTONE-*.md
-node_modules/
-**/node_modules/
