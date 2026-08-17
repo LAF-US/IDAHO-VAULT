@@ -26,9 +26,13 @@ coding partner — right inside VS Code.
 ## Global Project-Level Instructions
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 \`copilot-instructions.md\` - This Markdown file lives inside the \`.github/\` folder of your repository and defines general guidelines Copilot should follow across the entire project. Global instructions ensure every developer and every Copilot suggestion follows your team’s standards, no matter the file or task.
 =======
 \`.copilot-instructions.md\` - This Markdown file lives inside `.github/` folder of your repository
+=======
+\`.github/copilot-instructions.md\` - This Markdown file lives inside the `.github/` folder of your repository
+>>>>>>> 226d35e94 (Address additional Copilot review comments on PR #820)
 and defines general guidelines Copilot should follow across the entire project. Global instructions
 ensure every developer and every Copilot suggestion follows your team’s standards, no matter the
 file or task.

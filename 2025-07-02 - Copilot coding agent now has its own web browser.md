@@ -21,8 +21,7 @@ Model Context Protocol (MCP) servers allow extending Copilot’s capabilities wi
 Thanks to the power of Playwright, Copilot can interact with a web app while it makes changes. This
 allows Copilot to reproduce bugs and validate its work.
 
-![Example of session logs showing Copilot validating its
-work](https://github.com/user-attachments/assets/d2fac9aa-8dfc-4682-8071-b26ad2400ceb)
+![Example of session logs showing Copilot validating its work](https://github.com/user-attachments/assets/d2fac9aa-8dfc-4682-8071-b26ad2400ceb)
 
 Copilot can even share screenshots of what it has done in its pull request:
 

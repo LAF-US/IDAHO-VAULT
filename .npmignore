@@ -31,7 +31,8 @@ src-idaho_vault-mock_llm.py
 # Documentation
 docs/
 # Clipped reference documents (not part of package distribution)
-\- *.md
+# Matches files starting with "- " (dash-space prefix), e.g., "- GitHub Copilot Handbook.md"
+- *.md
 [0-9][0-9][0-9][0-9]-*.md
 
 # Config files
