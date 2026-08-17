@@ -157,6 +157,9 @@ SYMLINK_REFUSED = (errno.ELOOP, errno.EMLINK)
 # ancestor components go unchecked — stated in `_open_by_name()`, not papered
 # over.
 DIR_FD_SUPPORTED = os.open in os.supports_dir_fd
+# Asked separately from the one above: `os.supports_dir_fd` is per-function, so
+# `open` accepting a dir_fd is not a promise that `readlink` does.
+READLINK_DIR_FD = os.readlink in os.supports_dir_fd
 
 
 SWAPPED = "became a symlink after the safety check; not read"
@@ -174,14 +177,22 @@ def _unreadable(exc: OSError, name: str = "", dir_fd: int | None = None) -> str:
     its own finding, which is the failure this whole file is being corrected
     for. So on the errno that can mean either, ask what the component actually
     is: readlink answers only for a link.
+
+    Asking is itself gated on `readlink` accepting `dir_fd`, which is a SEPARATE
+    capability from `open` accepting it — the walk's own precondition does not
+    imply it. Passing an unsupported `dir_fd` raises, and this function runs
+    while ALREADY handling an error, so a raise here would replace a clean
+    refusal with a traceback. Checked against `os.supports_dir_fd` rather than
+    caught, because the set is the platform's own answer and a `try` would be
+    guessing at which exception type to expect.
     """
     if exc.errno in SYMLINK_REFUSED:
         return SWAPPED
-    if exc.errno == errno.ENOTDIR and name and dir_fd is not None:
+    if exc.errno == errno.ENOTDIR and name and dir_fd is not None and READLINK_DIR_FD:
         try:
             os.readlink(name, dir_fd=dir_fd)
             return SWAPPED
-        except (OSError, NotImplementedError):
+        except OSError:
             pass
     return f"not readable ({exc.strerror or exc}); cannot verify pins"
 
