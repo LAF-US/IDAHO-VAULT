@@ -1,4 +1,5 @@
 ---
+title: "RT @DailyBee Bonner County Clerk Michael Rosedale said..."
 date: 2023-07-27
 time: 03:23:01
 tweet_id: "1684403993328627712"

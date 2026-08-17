@@ -1,4 +1,5 @@
 ---
+title: ".@GovernorLittle A lot of the decisions to close schools in..."
 date: 2020-08-06
 time: 18:43:33
 tweet_id: "1291444818778841088"

@@ -76,6 +76,6 @@ The taxonomy's **Diagnostic Question** is the Mercy lesson in doctrinal form: *w
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

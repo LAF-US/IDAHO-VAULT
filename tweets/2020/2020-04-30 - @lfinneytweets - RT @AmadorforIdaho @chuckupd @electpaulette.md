@@ -1,4 +1,5 @@
 ---
+title: "RT @AmadorforIdaho @chuckupd @electpaulette"
 date: 2020-04-30
 time: 01:20:06
 tweet_id: "1255668216476532738"
@@ -16,6 +17,6 @@ related:
   - lfinneytweets
 ---
 
-RT @AmadorforIdaho: @chuckupd @electpaulette https://t.co/uFcTAiw4VV
+RT @AmadorforIdaho: @chuckupd @electpaulette <https://t.co/uFcTAiw4VV>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1255668216476532738)

@@ -1,4 +1,5 @@
 ---
+title: "RT @aaronkunz Court won't stop Texas abortion ban, but lets..."
 date: 2021-12-10
 time: 18:41:49
 tweet_id: "1469376823469371398"
@@ -16,9 +17,9 @@ related:
   - lfinneytweets
 ---
 
-RT @aaronkunz: Court won't stop Texas abortion ban, but lets clinics sue (from @AP) https://t.co/hwAlP9UxbI
+RT @aaronkunz: Court won't stop Texas abortion ban, but lets clinics sue (from @AP) <https://t.co/hwAlP9UxbI>
 
 ## Links
-- https://apnews.com/article/56fe96917e21b53b581005cb30db66e0
+- <https://apnews.com/article/56fe96917e21b53b581005cb30db66e0>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1469376823469371398)

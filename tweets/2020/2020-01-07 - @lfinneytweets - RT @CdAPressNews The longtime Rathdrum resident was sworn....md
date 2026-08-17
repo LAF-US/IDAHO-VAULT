@@ -1,4 +1,5 @@
 ---
+title: "RT @CdAPressNews The longtime Rathdrum resident was sworn..."
 date: 2020-01-07
 time: 18:57:09
 tweet_id: "1214622013848879104"

@@ -62,7 +62,7 @@ Restructure the plugin tables by layer (ESSENTIAL/ACTIVE/DORMANT/RETIRED) instea
 
 The full dependency chain from Obsidian plugins through to CrewAI:
 
-```
+```text
 OBSIDIAN PLUGIN LAYER
   obsidian-local-rest-api (REST API server)
     └── mcp-tools (MCP bridge to Claude Desktop)

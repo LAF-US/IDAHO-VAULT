@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Local leaders talk race..."
 date: 2020-06-08
 time: 02:03:10
 tweet_id: "1269812182734082050"

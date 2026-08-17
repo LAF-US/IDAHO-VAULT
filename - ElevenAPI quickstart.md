@@ -29,7 +29,7 @@ $npx skills add elevenlabs/skills --skill text-to-speech
 
 Store the key as a managed secret and pass it to the SDKs either as a environment variable via an `.env` file, or directly in your app’s configuration depending on your preference.
 
-```
+```text
 1ELEVENLABS_API_KEY=<your_api_key_here>
 ```
 
@@ -39,7 +39,7 @@ Store the key as a managed secret and pass it to the SDKs either as a environmen
 
 We’ll also use the `dotenv` library to load our API key from an environment variable.
 
-```
+```text
 1pip install elevenlabs
 2pip install python-dotenv
 ```
@@ -52,7 +52,7 @@ To play the audio through your speakers, you may be prompted to install [MPV](ht
 
 Create a new file named `example.py` or `example.mts`, depending on your language of choice and add the following code:
 
-```
+```text
 1from dotenv import load_dotenv
 2from elevenlabs.client import ElevenLabs
 3from elevenlabs.play import play
@@ -78,7 +78,7 @@ Create a new file named `example.py` or `example.mts`, depending on your languag
 
 ### Run the code
 
-```
+```text
 1python example.py
 ```
 
@@ -112,7 +112,7 @@ Create a custom voice from a short audio recording
 
 Store the key as a managed secret and pass it to the SDKs either as a environment variable via an `.env` file, or directly in your app’s configuration depending on your preference.
 
-```
+```text
 1ELEVENLABS_API_KEY=<your_api_key_here>
 ```
 
@@ -122,7 +122,7 @@ Store the key as a managed secret and pass it to the SDKs either as a environmen
 
 We’ll also use the `dotenv` library to load our API key from an environment variable.
 
-```
+```text
 1pip install elevenlabs
 2pip install python-dotenv
 ```
@@ -135,7 +135,7 @@ To play the audio through your speakers, you may be prompted to install [MPV](ht
 
 Create a new file named `example.py` or `example.mts`, depending on your language of choice and add the following code:
 
-```
+```text
 1from dotenv import load_dotenv
 2from elevenlabs.client import ElevenLabs
 3from elevenlabs.play import play
@@ -161,7 +161,7 @@ Create a new file named `example.py` or `example.mts`, depending on your languag
 
 ### Run the code
 
-```
+```text
 1python example.py
 ```
 

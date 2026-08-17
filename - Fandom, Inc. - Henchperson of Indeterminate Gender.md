@@ -7,7 +7,7 @@ created: 2026-04-14
 ---
 | “ | *I just think, even in changing context, that marriage is an inherently patriarchal construction that is likely to further the hegemonic juggernaut that's problematizing a lot of genders.* | ” |
 | --- | --- | --- |
-| | — The Henchperson of Indeterminate Gender, " [The Bad Beginning: Part Two](https://snicket.fandom.com/wiki/The_Bad_Beginning:_Part_Two "The Bad Beginning: Part Two") " |
+| | — The Henchperson of Indeterminate Gender, " [The Bad Beginning: Part Two](https://snicket.fandom.com/wiki/The_Bad_Beginning:_Part_Two "The Bad Beginning: Part Two") " | |
 
 The **Henchperson of Indeterminate Gender**, also known as the " **Enormous Androgynous Person** " and **the one who looked like neither a man nor a woman** in the books, is a sinister androgynous individual.
 
@@ -154,15 +154,15 @@ Mr. Poe watches as the henchperson escapes with Olaf.
 
 ### Movie
 
- [![](https://static.wikia.nocookie.net/snicket/images/5/57/OrlandoFilm.jpeg/revision/latest/scale-to-width-down/160?cb=20161029192441 "OrlandoFilm.jpeg (107 KB)") ![](https://static.wikia.nocookie.net/snicket/images/5/57/OrlandoFilm.jpeg/revision/latest/scale-to-width-down/160?cb=20161029192441 "OrlandoFilm.jpeg (107 KB)")](https://snicket.fandom.com/wiki/File:OrlandoFilm.jpeg "OrlandoFilm.jpeg (107 KB)")
+ [![alt text needed](https://static.wikia.nocookie.net/snicket/images/5/57/OrlandoFilm.jpeg/revision/latest/scale-to-width-down/160?cb=20161029192441 "OrlandoFilm.jpeg (107 KB)") ![alt text needed](https://static.wikia.nocookie.net/snicket/images/5/57/OrlandoFilm.jpeg/revision/latest/scale-to-width-down/160?cb=20161029192441 "OrlandoFilm.jpeg (107 KB)")](https://snicket.fandom.com/wiki/File:OrlandoFilm.jpeg "OrlandoFilm.jpeg (107 KB)")
 
- [![](https://static.wikia.nocookie.net/snicket/images/b/bb/Veryfinedramatists.jpeg/revision/latest/scale-to-width-down/150?cb=20161029192356 "Image.jpeg (144 KB)") ![](https://static.wikia.nocookie.net/snicket/images/b/bb/Veryfinedramatists.jpeg/revision/latest/scale-to-width-down/150?cb=20161029192356 "Image.jpeg (144 KB)")](https://snicket.fandom.com/wiki/File:Image.jpeg "Image.jpeg (144 KB)")
+ [![alt text needed](https://static.wikia.nocookie.net/snicket/images/b/bb/Veryfinedramatists.jpeg/revision/latest/scale-to-width-down/150?cb=20161029192356 "Image.jpeg (144 KB)") ![alt text needed](https://static.wikia.nocookie.net/snicket/images/b/bb/Veryfinedramatists.jpeg/revision/latest/scale-to-width-down/150?cb=20161029192356 "Image.jpeg (144 KB)")](https://snicket.fandom.com/wiki/File:Image.jpeg "Image.jpeg (144 KB)")
 
- [![](https://static.wikia.nocookie.net/snicket/images/e/eb/Orlando.png/revision/latest/scale-to-width-down/214?cb=20161023211811 "Orlando.png (85 KB)") ![](https://static.wikia.nocookie.net/snicket/images/e/eb/Orlando.png/revision/latest/scale-to-width-down/214?cb=20161023211811 "Orlando.png (85 KB)")](https://snicket.fandom.com/wiki/File:Orlando.png "Orlando.png (85 KB)")
+ [![alt text needed](https://static.wikia.nocookie.net/snicket/images/e/eb/Orlando.png/revision/latest/scale-to-width-down/214?cb=20161023211811 "Orlando.png (85 KB)") ![alt text needed](https://static.wikia.nocookie.net/snicket/images/e/eb/Orlando.png/revision/latest/scale-to-width-down/214?cb=20161023211811 "Orlando.png (85 KB)")](https://snicket.fandom.com/wiki/File:Orlando.png "Orlando.png (85 KB)")
 
- [![](https://static.wikia.nocookie.net/snicket/images/f/f0/Henchperson_of_Indeterminate_Gender-0.png/revision/latest/scale-to-width-down/156?cb=20171119215246 "Henchperson of Indeterminate Gender-0.png (631 KB)") ![](https://static.wikia.nocookie.net/snicket/images/f/f0/Henchperson_of_Indeterminate_Gender-0.png/revision/latest/scale-to-width-down/156?cb=20171119215246 "Henchperson of Indeterminate Gender-0.png (631 KB)")](https://snicket.fandom.com/wiki/File:Henchperson_of_Indeterminate_Gender-0.png "Henchperson of Indeterminate Gender-0.png (631 KB)")
+ [![alt text needed](https://static.wikia.nocookie.net/snicket/images/f/f0/Henchperson_of_Indeterminate_Gender-0.png/revision/latest/scale-to-width-down/156?cb=20171119215246 "Henchperson of Indeterminate Gender-0.png (631 KB)") ![alt text needed](https://static.wikia.nocookie.net/snicket/images/f/f0/Henchperson_of_Indeterminate_Gender-0.png/revision/latest/scale-to-width-down/156?cb=20171119215246 "Henchperson of Indeterminate Gender-0.png (631 KB)")](https://snicket.fandom.com/wiki/File:Henchperson_of_Indeterminate_Gender-0.png "Henchperson of Indeterminate Gender-0.png (631 KB)")
 
- [![](https://static.wikia.nocookie.net/snicket/images/b/b5/Original.jpg/revision/latest/scale-to-width-down/120?cb=20140816025005 "Original.jpg (41 KB)") ![](https://static.wikia.nocookie.net/snicket/images/b/b5/Original.jpg/revision/latest/scale-to-width-down/120?cb=20140816025005 "Original.jpg (41 KB)")](https://snicket.fandom.com/wiki/File:Original.jpg "Original.jpg (41 KB)")
+ [![alt text needed](https://static.wikia.nocookie.net/snicket/images/b/b5/Original.jpg/revision/latest/scale-to-width-down/120?cb=20140816025005 "Original.jpg (41 KB)") ![alt text needed](https://static.wikia.nocookie.net/snicket/images/b/b5/Original.jpg/revision/latest/scale-to-width-down/120?cb=20140816025005 "Original.jpg (41 KB)")](https://snicket.fandom.com/wiki/File:Original.jpg "Original.jpg (41 KB)")
 
 ### Netflix
 
@@ -190,21 +190,21 @@ Reading Love on the Hinterlands.
 
 During Violet's operation.
 
- [![](https://static.wikia.nocookie.net/snicket/images/5/5a/Vfdiseasesfire.png/revision/latest/scale-to-width-down/241?cb=20200226234729 "Vfdiseasesfire.png (3.39 MB)") ![](https://static.wikia.nocookie.net/snicket/images/5/5a/Vfdiseasesfire.png/revision/latest/scale-to-width-down/241?cb=20200226234729 "Vfdiseasesfire.png (3.39 MB)")](https://snicket.fandom.com/wiki/File:Vfdiseasesfire.png "Vfdiseasesfire.png (3.39 MB)")
+ [![alt text needed](https://static.wikia.nocookie.net/snicket/images/5/5a/Vfdiseasesfire.png/revision/latest/scale-to-width-down/241?cb=20200226234729 "Vfdiseasesfire.png (3.39 MB)") ![alt text needed](https://static.wikia.nocookie.net/snicket/images/5/5a/Vfdiseasesfire.png/revision/latest/scale-to-width-down/241?cb=20200226234729 "Vfdiseasesfire.png (3.39 MB)")](https://snicket.fandom.com/wiki/File:Vfdiseasesfire.png "Vfdiseasesfire.png (3.39 MB)")
 
- [![](https://static.wikia.nocookie.net/snicket/images/7/7f/Henchpersondoor.png/revision/latest/scale-to-width-down/241?cb=20200226234803 "Henchpersondoor.png (2.18 MB)") ![](https://static.wikia.nocookie.net/snicket/images/7/7f/Henchpersondoor.png/revision/latest/scale-to-width-down/241?cb=20200226234803 "Henchpersondoor.png (2.18 MB)")](https://snicket.fandom.com/wiki/File:Henchpersondoor.png "Henchpersondoor.png (2.18 MB)")
+ [![alt text needed](https://static.wikia.nocookie.net/snicket/images/7/7f/Henchpersondoor.png/revision/latest/scale-to-width-down/241?cb=20200226234803 "Henchpersondoor.png (2.18 MB)") ![alt text needed](https://static.wikia.nocookie.net/snicket/images/7/7f/Henchpersondoor.png/revision/latest/scale-to-width-down/241?cb=20200226234803 "Henchpersondoor.png (2.18 MB)")](https://snicket.fandom.com/wiki/File:Henchpersondoor.png "Henchpersondoor.png (2.18 MB)")
 
 [![Shining reference.](https://static.wikia.nocookie.net/snicket/images/9/91/NurseLucafont.png/revision/latest/scale-to-width-down/213?cb=20180408043518 "NurseLucafont.png (290 KB)")](https://snicket.fandom.com/wiki/File:NurseLucafont.png "NurseLucafont.png (290 KB)")
 
 Shining reference.
 
- [![](https://static.wikia.nocookie.net/snicket/images/1/18/A-Series-of-Unfortunate-Events-Season-2-Episode-9-39-39da.jpg/revision/latest/scale-to-width-down/241?cb=20191210172149 "A-Series-of-Unfortunate-Events-Season-2-Episode-9-39-39da.jpg (133 KB)") ![](https://static.wikia.nocookie.net/snicket/images/1/18/A-Series-of-Unfortunate-Events-Season-2-Episode-9-39-39da.jpg/revision/latest/scale-to-width-down/241?cb=20191210172149 "A-Series-of-Unfortunate-Events-Season-2-Episode-9-39-39da.jpg (133 KB)")](https://snicket.fandom.com/wiki/File:A-Series-of-Unfortunate-Events-Season-2-Episode-9-39-39da.jpg "A-Series-of-Unfortunate-Events-Season-2-Episode-9-39-39da.jpg (133 KB)")
+ [![alt text needed](https://static.wikia.nocookie.net/snicket/images/1/18/A-Series-of-Unfortunate-Events-Season-2-Episode-9-39-39da.jpg/revision/latest/scale-to-width-down/241?cb=20191210172149 "A-Series-of-Unfortunate-Events-Season-2-Episode-9-39-39da.jpg (133 KB)") ![alt text needed](https://static.wikia.nocookie.net/snicket/images/1/18/A-Series-of-Unfortunate-Events-Season-2-Episode-9-39-39da.jpg/revision/latest/scale-to-width-down/241?cb=20191210172149 "A-Series-of-Unfortunate-Events-Season-2-Episode-9-39-39da.jpg (133 KB)")](https://snicket.fandom.com/wiki/File:A-Series-of-Unfortunate-Events-Season-2-Episode-9-39-39da.jpg "A-Series-of-Unfortunate-Events-Season-2-Episode-9-39-39da.jpg (133 KB)")
 
- [![](https://static.wikia.nocookie.net/snicket/images/a/aa/Troupe_end.png/revision/latest/scale-to-width-down/241?cb=20190130014411 "Troupe end.png (3.93 MB)") ![](https://static.wikia.nocookie.net/snicket/images/a/aa/Troupe_end.png/revision/latest/scale-to-width-down/241?cb=20190130014411 "Troupe end.png (3.93 MB)")](https://snicket.fandom.com/wiki/File:Troupe_end.png "Troupe end.png (3.93 MB)")
+ [![alt text needed](https://static.wikia.nocookie.net/snicket/images/a/aa/Troupe_end.png/revision/latest/scale-to-width-down/241?cb=20190130014411 "Troupe end.png (3.93 MB)") ![alt text needed](https://static.wikia.nocookie.net/snicket/images/a/aa/Troupe_end.png/revision/latest/scale-to-width-down/241?cb=20190130014411 "Troupe end.png (3.93 MB)")](https://snicket.fandom.com/wiki/File:Troupe_end.png "Troupe end.png (3.93 MB)")
 
- [![](https://static.wikia.nocookie.net/snicket/images/0/09/Episode17.png/revision/latest/scale-to-width-down/240?cb=20200819233450 "Episode17.png (1.42 MB)") ![](https://static.wikia.nocookie.net/snicket/images/0/09/Episode17.png/revision/latest/scale-to-width-down/240?cb=20200819233450 "Episode17.png (1.42 MB)")](https://snicket.fandom.com/wiki/File:Episode17.png "Episode17.png (1.42 MB)")
+ [![alt text needed](https://static.wikia.nocookie.net/snicket/images/0/09/Episode17.png/revision/latest/scale-to-width-down/240?cb=20200819233450 "Episode17.png (1.42 MB)") ![alt text needed](https://static.wikia.nocookie.net/snicket/images/0/09/Episode17.png/revision/latest/scale-to-width-down/240?cb=20200819233450 "Episode17.png (1.42 MB)")](https://snicket.fandom.com/wiki/File:Episode17.png "Episode17.png (1.42 MB)")
 
- [![](https://static.wikia.nocookie.net/snicket/images/7/76/Episode19.png/revision/latest/scale-to-width-down/242?cb=20201025002219 "Episode19.png (2.84 MB)") ![](https://static.wikia.nocookie.net/snicket/images/7/76/Episode19.png/revision/latest/scale-to-width-down/242?cb=20201025002219 "Episode19.png (2.84 MB)")](https://snicket.fandom.com/wiki/File:Episode19.png "Episode19.png (2.84 MB)")
+ [![alt text needed](https://static.wikia.nocookie.net/snicket/images/7/76/Episode19.png/revision/latest/scale-to-width-down/242?cb=20201025002219 "Episode19.png (2.84 MB)") ![alt text needed](https://static.wikia.nocookie.net/snicket/images/7/76/Episode19.png/revision/latest/scale-to-width-down/242?cb=20201025002219 "Episode19.png (2.84 MB)")](https://snicket.fandom.com/wiki/File:Episode19.png "Episode19.png (2.84 MB)")
 
 ## Sources
 

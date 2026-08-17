@@ -17,6 +17,7 @@ related:
   - !/AGENTS.md
   - swarm.json
 ---
+[[L]][[E]][[V]][[E]][[L]][[S]][[E]][[T]]
 
 # PROTOCOL — LEVELSET
 
@@ -108,6 +109,6 @@ This document is a **stub** under development. Adoption pending:
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

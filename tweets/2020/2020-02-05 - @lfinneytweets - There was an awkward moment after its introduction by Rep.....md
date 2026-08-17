@@ -1,4 +1,5 @@
 ---
+title: "There was an awkward moment after its introduction by Rep...."
 date: 2020-02-05
 time: 21:23:14
 tweet_id: "1225168025411715072"

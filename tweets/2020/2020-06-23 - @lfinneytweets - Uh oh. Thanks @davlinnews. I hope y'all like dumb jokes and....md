@@ -1,4 +1,5 @@
 ---
+title: "Uh oh. Thanks @davlinnews. I hope y'all like dumb jokes and..."
 date: 2020-06-23
 time: 18:48:14
 tweet_id: "1275500932977946624"
@@ -15,9 +16,9 @@ related:
 
 Uh oh. Thanks @davlinnews. 
 
-I hope y'all like dumb jokes and news about Idaho. https://t.co/GORXLbdjQG
+I hope y'all like dumb jokes and news about Idaho. <https://t.co/GORXLbdjQG>
 
 ## Media
-- ![](https://pbs.twimg.com/media/EbN9VriUYAEjIvk.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EbN9VriUYAEjIvk.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1275500932977946624)

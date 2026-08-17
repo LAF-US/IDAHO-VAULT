@@ -47,7 +47,7 @@ The vault owns these files. Logan can edit them. They run on GitHub's servers, n
 
 **GitHub Actions (the platform)** — the name for all of the above, running on GitHub's servers.
 
-```
+```text
 GitHub Actions (platform)
 │
 ├── Workflows   (.github/workflows/*.yml)   ← the robots; vault-owned
@@ -352,7 +352,7 @@ All 28 pre-existing workflows currently in `.github/workflows/`, with verified t
 
 ## X. NET CHANGE
 
-```
+```text
 Before: 39 scripts — 17 orphaned, 4 wired-never-triggered, some non-idempotent
 After:  32 scripts — 0 orphaned, 0 silently broken triggers, all non-idempotent tools removed
 
@@ -429,6 +429,6 @@ This is a Logan decision, not an agent decision. No changes made in this session
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

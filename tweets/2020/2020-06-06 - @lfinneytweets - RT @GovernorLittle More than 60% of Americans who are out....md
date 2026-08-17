@@ -1,4 +1,5 @@
 ---
+title: "RT @GovernorLittle More than 60% of Americans who are out..."
 date: 2020-06-06
 time: 17:05:46
 tweet_id: "1269314550769184768"

@@ -1,4 +1,5 @@
 ---
+title: "To be clear, I am not accusing Rep. Giddings of lying or..."
 date: 2021-08-04
 time: 03:22:55
 tweet_id: "1422759927970353156"

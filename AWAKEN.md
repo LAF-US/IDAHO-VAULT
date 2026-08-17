@@ -16,6 +16,7 @@ related:
   - REPORT
   - AWAKEN-v1.0-2026-04-27
 ---
+[[A]][[W]][[A]][[K]][[E]][[N]]
 
 # PROTOCOL — AWAKEN
 
@@ -39,7 +40,7 @@ It is the formal equivalent of a gavel striking the table — the moment an agen
 
 ## Role in the Protocol Stack
 
-```
+```text
 AWAKEN ──────────────────────► RISE
    │                                │
    │                                │
@@ -167,6 +168,6 @@ Pending:
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

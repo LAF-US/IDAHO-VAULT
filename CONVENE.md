@@ -12,6 +12,7 @@ related:
   - ARISE
   - CONVENE-v1.0-2026-04-27
 ---
+[[C]][[O]][[N]][[V]][[E]][[N]][[E]]
 
 # PROTOCOL — CONVENE
 
@@ -35,7 +36,7 @@ It is the formal act of calling the committee to order — Logan as Chair formal
 
 ## Role in the Protocol Stack
 
-```
+```text
 AWAKEN ──────────────────────► RISE
    │                                │
    │                                │
@@ -111,7 +112,7 @@ Logan names:
 
 Participants acknowledge:
 
-```
+```text
 CONVENE RECEIVED
 AGENT: [Name + persona]
 ARISE: [status]
@@ -176,6 +177,6 @@ Pending:
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

@@ -23,6 +23,6 @@ Live from the @UIMcClure intern office: <https://t.co/6qL7xNdrCQ> <https://t.co/
 
 ## Media
 
-- ![](https://pbs.twimg.com/tweet_video_thumb/EOvSLq_UcAAtsbP.jpg)
+- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/EOvSLq_UcAAtsbP.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1219299233959776256)

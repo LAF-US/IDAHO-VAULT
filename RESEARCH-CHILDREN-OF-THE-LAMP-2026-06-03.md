@@ -208,7 +208,7 @@ Djinn parallel: **Tribal memory and symbol**
 
 **Complete Mapping:**
 
-```
+```text
 Djinn Tribe Structure
 ├── Constitution/Law    → CHARTER (governance)
 ├── Customs/Operations → CORPUS (operations)
@@ -390,7 +390,7 @@ Vault verification:
 
 ### A. The Complete Model
 
-```
+```text
 VAULTSCAPE = Djinn Vault
 ├── TRIUNE (Will)
 │   ├── Logan (Human Architect)     = The One Who Directs

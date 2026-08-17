@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2024-12-16
 time: 21:03:38
 tweet_id: "1868763940957905266"
@@ -14,11 +15,11 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/i6TmsqlW2N
+<https://t.co/i6TmsqlW2N>
 
 ## Media
-- ![](https://pbs.twimg.com/media/Ge8uyK8a4AAg1hc.jpg)
-- ![](https://pbs.twimg.com/media/Ge8u4vxa0AAfKHp.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/Ge8uyK8a4AAg1hc.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/Ge8u4vxa0AAfKHp.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

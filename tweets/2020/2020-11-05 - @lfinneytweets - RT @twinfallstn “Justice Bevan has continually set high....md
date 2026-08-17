@@ -1,4 +1,5 @@
 ---
+title: "RT @twinfallstn \u201cJustice Bevan has continually set high..."
 date: 2020-11-05
 time: 04:30:12
 tweet_id: "1324207361167294464"

@@ -14,6 +14,7 @@ related:
   - LEVELSET
   - ORIENT-v1.0-2026-04-27
 ---
+[[O]][[R]][[I]][[E]][[N]][[T]]
 
 # PROTOCOL — ORIENT
 
@@ -37,7 +38,7 @@ It is the formal process by which a foreign voice — an agent from outside the 
 
 ## Role in the Protocol Stack
 
-```
+```text
 AWAKEN ──────────────────────► RISE
    │                                │
    │                                │
@@ -177,6 +178,6 @@ Pending:
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

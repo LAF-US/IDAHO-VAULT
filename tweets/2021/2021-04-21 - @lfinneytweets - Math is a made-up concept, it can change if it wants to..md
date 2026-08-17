@@ -1,4 +1,5 @@
 ---
+title: "Math is a made-up concept, it can change if it wants to."
 date: 2021-04-21
 time: 18:38:21
 tweet_id: "1384939581662023681"

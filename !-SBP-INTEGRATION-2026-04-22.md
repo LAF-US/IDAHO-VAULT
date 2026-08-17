@@ -43,7 +43,7 @@ related:
 
 **SBP Enhancement:**
 
-```
+```text
 EMIT vault.signal.new      intensity=1.0  payload={sig_id, from, to, subject}
 EMIT vault.signal.pending   intensity=N    payload={count}
 ```
@@ -58,7 +58,7 @@ EMIT vault.signal.pending   intensity=N    payload={count}
 
 **SBP Enhancement:**
 
-```
+```text
 REGISTER_SCENT vault.docket.pending >= 1 → wake_agent
 ```
 
@@ -72,7 +72,7 @@ REGISTER_SCENT vault.docket.pending >= 1 → wake_agent
 
 **SBP Enhancement:**
 
-```
+```text
 Every 5 min: EMIT vault.agent.claude.heartbeat intensity=0.8
 If no reinforcement for 15 min: evaporation → agent presumed dead
 ```
@@ -101,7 +101,7 @@ If no reinforcement for 15 min: evaporation → agent presumed dead
 
 ### Aggregation Patterns
 
-```
+```text
 vault.branch.orchard.count          → MAX of all branch signals
 vault.security.any                  → MAX of any security signal
 vault.signal.all.urgent             → MAX of critical signals
@@ -173,6 +173,6 @@ The vault already has the **blackboard concept** — it's the file system + git 
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

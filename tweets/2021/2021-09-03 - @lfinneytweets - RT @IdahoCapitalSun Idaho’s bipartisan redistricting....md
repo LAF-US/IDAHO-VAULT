@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoCapitalSun Idaho\u2019s bipartisan redistricting..."
 date: 2021-09-03
 time: 21:51:52
 tweet_id: "1433910640070971392"

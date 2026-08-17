@@ -22,6 +22,6 @@ I'm so happy right now because I'm using three highlighter colors to annotate my
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/Dbqq-RnV0AAZyxC.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/Dbqq-RnV0AAZyxC.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/989291068003766273)

@@ -1,4 +1,5 @@
 ---
+title: "RT @kristenhare People who don't work in local news spend a..."
 date: 2018-04-05
 time: 17:35:11
 tweet_id: "981948375112155136"

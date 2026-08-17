@@ -36,7 +36,7 @@ An introduction to the book is provided by [Neil Patrick Harris](https://snicket
 
 | “ | *I'm afraid the only way to tell if someone is a volunteer or villain is through careful observation.* | ” |
 | --- | --- | --- |
-| | — [Kit Snicket](https://snicket.fandom.com/wiki/Kit_Snicket "Kit Snicket") |
+| | — [Kit Snicket](https://snicket.fandom.com/wiki/Kit_Snicket "Kit Snicket") | |
 
 The characters of the series are discussed at length, including the elements of casting, behind the scenes information from the actors, a list of Violet's Fantastic Devices from the TV series, a list of The Dismal Dedications to Beatrice, a navigation guide to the Secret Underground Tunnel system, a section on The Weary Writers of the series, and a list of the songs in the series- with deleted song, *[Cliffhanger](https://snicket.fandom.com/wiki/Cliffhanger "Cliffhanger"),* included.
 
@@ -44,7 +44,7 @@ The characters of the series are discussed at length, including the elements of 
 
 | “ | *Life is nothing more than prosthetics and pretense.* | ” |
 | --- | --- | --- |
-| | — [Count Olaf](https://snicket.fandom.com/wiki/Count_Olaf "Count Olaf") |
+| | — [Count Olaf](https://snicket.fandom.com/wiki/Count_Olaf "Count Olaf") | |
 
 The costuming of the series is discussed, including hair and makeup. Also included is information on he makeup required for Count Olaf, the hidden Barry Sonnenfeld paintings, Esmé's costuming, the Schism and the Sugar Bowl, fake mustaches, the series's score and leitmotifs, the spyglass prop and codes, and the design of the harpoon gun.
 
@@ -52,7 +52,7 @@ The costuming of the series is discussed, including hair and makeup. Also includ
 
 | “ | *Nothing sinister has ever come from the real estate market.* | ” |
 | --- | --- | --- |
-| | — [Lemony Snicket](https://snicket.fandom.com/wiki/Lemony_Snicket "Lemony Snicket") |
+| | — [Lemony Snicket](https://snicket.fandom.com/wiki/Lemony_Snicket "Lemony Snicket") | |
 
 This section details the sets of the show, episode-by-episode and including the lyrics to each specific theme song. Also included are some excerpts from the Sordid Scripts, pictures of the warning signs throughout the show, recepies "from the kitchen of [Sunny Baudelaire](https://snicket.fandom.com/wiki/Sunny_Baudelaire "Sunny Baudelaire")," a timeline of pre-production for each episode, a mini-bio on [Fiona](https://snicket.fandom.com/wiki/Fiona "Fiona") with attached article on the Anwhistle Fire,
 

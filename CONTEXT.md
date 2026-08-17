@@ -13,6 +13,7 @@ related:
   - LEVELSET
   - CONTEXT-v1.0-2026-04-27
 ---
+[[C]][[O]][[N]][[T]][[E]][[X]][[T]]
 
 # PROTOCOL — CONTEXT
 
@@ -36,7 +37,7 @@ It is the formal mechanism by which agents establish, retrieve, and share contex
 
 ## Role in the Protocol Stack
 
-```
+```text
 AWAKEN ──────────────────────► RISE
    │                                │
    │                                │
@@ -180,6 +181,6 @@ Pending:
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

@@ -1,4 +1,5 @@
 ---
+title: "RT @madisonhardy05 By almost a two-to-one margin, the $50..."
 date: 2020-11-04
 time: 23:02:48
 tweet_id: "1324124967974236160"

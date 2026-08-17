@@ -1,7 +1,7 @@
 ---
 title: "Garth Nix Superior Saturday — the Tower and the Drasil Trees"
 created: 2026-07-03
-updated: 2026-07-03
+updated: 2026-08-12
 status: draft
 authority: LOGAN
 related:
@@ -20,7 +20,7 @@ Sibling note: [[GARTH-NIX-OLD-KINGDOM-BLOODLINES]] (Nix's other major cosmology)
 
 The **Upper House** is one of the demesnes of the House, the epicenter of the universe in the Keys to the Kingdom sequence. In the opening of *Superior Saturday*:
 
-- **Superior Saturday** — self-styled "Superior Sorcerer of the House," a Trustee of the Architect's Will, holder of one of the Architect's Keys, and by her own account the **first Denizen the Architect made**. Her grievance is precedence: she believes supremacy over the House should have been hers, not Lord Sunday's, and "every thing she did was directed to remedying this injustice"
+- **Superior Saturday** — self-styled "Superior Sorcerer of the House," a Trustee of the Architect's Will, holder of one of the Architect's Keys, and the **first Denizen the Architect made**. That precedence is narrated as fact, not claimed by her — as is her rank: "Apart from the Old One and the Architect, she was the most ancient entity in the Universe." What is hers is the inference drawn from it: "she felt she should have been supreme over all others," and "every thing she did was directed to remedying this injustice"
 - **The Tower** — under construction for **almost ten thousand years**, built from identical open cubes of red wrought iron, each holding one desk with one green-shaded lamp, each cube **moving on rails "according to the merits of the Denizens who worked at the desks."** Saturday's crystal viewing chamber is always lifted back to the apex as new levels slot in below
 - **The Drasil trees** — four vast trees that support the **Incomparable Gardens** above the Upper House. They grow faster than the tower can be built, lifting the Gardens away from Saturday no matter how high she builds. Sorcery, poison, brute force, infiltration, and flight have all failed against them (defensive insects in the bark; predatory, fast-moving branches)
 - **Lord Sunday** — dwells aloof in the Incomparable Gardens; taunts Saturday by parting the clouds so that only she can see what she cannot reach

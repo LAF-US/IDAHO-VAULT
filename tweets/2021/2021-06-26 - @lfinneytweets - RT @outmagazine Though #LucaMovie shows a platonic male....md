@@ -1,4 +1,5 @@
 ---
+title: "RT @outmagazine Though #LucaMovie shows a platonic male..."
 date: 2021-06-26
 time: 22:31:45
 tweet_id: "1408915914968363012"

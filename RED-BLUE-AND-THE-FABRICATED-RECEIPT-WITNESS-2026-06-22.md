@@ -91,6 +91,6 @@ First-person account by Claude Code of a session it participated in; the transcr
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

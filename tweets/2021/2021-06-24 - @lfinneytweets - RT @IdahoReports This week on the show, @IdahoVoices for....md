@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports This week on the show, @IdahoVoices for..."
 date: 2021-06-24
 time: 02:44:42
 tweet_id: "1407892410454089730"
