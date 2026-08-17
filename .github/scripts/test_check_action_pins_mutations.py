@@ -100,6 +100,11 @@ def mutations(guard: str) -> dict[str, tuple[str, str]]:
             'return os.open(leaf, os.O_RDONLY | O_NOFOLLOW, dir_fd=directory), ""',
             'return os.open(leaf, os.O_RDONLY, dir_fd=directory), ""',
         ),
+        "`..` components accepted (containment is spelling, not destination)": (
+            "    if not set(relative.parts).isdisjoint({os.pardir, os.curdir}):\n"
+            '        return None, "resolves outside the repository; not read"\n',
+            "",
+        ),
         "ancestor components read without O_NOFOLLOW (a swapped parent)": (
             "                part, os.O_RDONLY | os.O_DIRECTORY | O_NOFOLLOW, "
             "dir_fd=directory",

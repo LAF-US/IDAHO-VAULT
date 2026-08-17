@@ -70,6 +70,31 @@ else:
 # rather than the file. O_NOFOLLOW on the final open is satisfied either way --
 # `action.yml` under the substituted directory really is a regular file -- so
 # this is only refused by a guard that checks the components above it too.
+# `relative_to()` compares spellings, so `<root>/.github/../../outside.yml` is
+# lexically inside the repository. Nothing here is a symlink, so O_NOFOLLOW has
+# no opinion: the walk simply climbs. Prints what the read actually returned.
+TRAVERSAL_PROBE = """
+import pathlib
+import sys
+
+sys.path.insert(0, sys.argv[1])
+import check_action_pins as guard
+
+sneaky = pathlib.Path(guard.REPO_ROOT, ".github", "..", "..", sys.argv[2])
+try:
+    sneaky.relative_to(guard.REPO_ROOT)
+except ValueError:
+    print("NOT-LEXICALLY-INSIDE")
+    raise SystemExit(0)
+
+text, reason = guard._read(sneaky)
+if text is not None and "actions/checkout@latest" in text:
+    print("READ-OUTSIDE-CONTENT")
+else:
+    print(reason or "read something, but not the outside file")
+"""
+
+
 ANCESTOR_SWAP_PROBE = """
 import pathlib
 import shutil
@@ -641,6 +666,40 @@ class DiscoveryTest(GuardFixture):
             "READ-OUTSIDE-CONTENT", verdict, "a swapped-in ancestor was followed"
         )
         self.assertIn("symlink", verdict)
+
+    def test_a_parent_reference_does_not_walk_out_of_the_repository(self):
+        # No swap and no symlink in this one: `..` is an ordinary component,
+        # and `Path.relative_to()` is a comparison of SPELLINGS, so
+        # `<root>/.github/../../outside.yml` is "inside the repository" as far
+        # as the containment check can tell. The walk then opened `.github`,
+        # climbed back through two `..` components and read the outside file —
+        # O_NOFOLLOW silent throughout, because nothing it was pointed at was a
+        # link. The containment check has to be about where the path GOES, not
+        # how it is written.
+        outside = self.root.parent / f"{self.root.name}-traversal-target.yml"
+        outside.write_text("on: push\nsteps:\n  - uses: actions/checkout@latest\n")
+        self.addCleanup(outside.unlink, True)
+
+        probe = subprocess.run(
+            [
+                sys.executable,
+                "-c",
+                TRAVERSAL_PROBE,
+                str(self.root / ".github" / "scripts"),
+                outside.name,
+            ],
+            capture_output=True,
+            text=True,
+            timeout=60,
+            cwd=self.root,
+            check=False,
+        )
+        self.assertEqual(probe.returncode, 0, probe.stderr)
+        verdict = probe.stdout.strip()
+        self.assertNotIn(
+            "READ-OUTSIDE-CONTENT", verdict, "a `..` component escaped the repository"
+        )
+        self.assertIn("outside the repository", verdict)
 
     def test_non_utf8_metadata_is_a_finding_not_a_traceback(self):
         # A guard that dies still turns the job red, but it names a Python

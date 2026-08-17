@@ -195,7 +195,7 @@ def _open_no_follow(path: Path) -> tuple[int | None, str]:
     Keeping them in one body put two unrelated error vocabularies in the same
     function, which is the shape this file has been pulling apart throughout.
     """
-    if DIR_FD_SUPPORTED:
+    if DIR_FD_SUPPORTED and O_NOFOLLOW:
         return _open_by_descriptor_walk(path)
     return _open_by_name(path)
 
@@ -214,7 +214,11 @@ def _open_by_descriptor_walk(path: Path) -> tuple[int | None, str]:
 
     Descending from a held descriptor means each component is refused as it is
     used, and once a directory descriptor is held there is no name left behind
-    us for anyone to repoint.
+    us for anyone to repoint. Chosen only when BOTH `dir_fd` and a real
+    O_NOFOLLOW are present: descending without the flag would open each
+    component following links, which is the very thing this exists to stop, and
+    it would do it while looking like the strong path. `_open_by_name()` is
+    weaker but says so.
     """
     try:
         relative = path.relative_to(REPO_ROOT)
@@ -222,6 +226,18 @@ def _open_by_descriptor_walk(path: Path) -> tuple[int | None, str]:
         return None, "resolves outside the repository; not read"
     if not relative.parts:
         return None, "is the repository root, not a file; not read"
+    # `relative_to` compares SPELLINGS. It is satisfied by
+    # `<root>/.github/../../elsewhere.yml` — lexically under the root, and the
+    # walk would then open `.github`, climb through two `..` components, and
+    # read a file outside the repository, with O_NOFOLLOW raising nothing
+    # because `..` is not a symlink. Reproduced before this line existed:
+    # outside content came back from a path the containment check had passed.
+    # Callers reach here through `_readable()`, which resolves first, so no
+    # real path carries these today — but the function above returns
+    # "resolves outside the repository" on its own authority, and a claim this
+    # function makes is one it has to keep.
+    if not set(relative.parts).isdisjoint({os.pardir, os.curdir}):
+        return None, "resolves outside the repository; not read"
 
     directory = os.open(REPO_ROOT, os.O_RDONLY | os.O_DIRECTORY)
     try:
