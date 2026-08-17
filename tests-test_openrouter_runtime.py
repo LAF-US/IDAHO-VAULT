@@ -66,6 +66,11 @@ class OpenRouterRuntimeTest(unittest.TestCase):
             timeout=60,
         )
 
+    def test_approved_agent_returns_fixed_literal(self) -> None:
+        candidate = "co" + "dex"
+
+        self.assertEqual(openrouter_runtime.approved_agent(candidate), "codex")
+
     def test_agent_command_rejects_unsupported_agent(self) -> None:
         with self.assertRaises(SystemExit) as exc:
             openrouter_runtime.agent_command("untrusted")

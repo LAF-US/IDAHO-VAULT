@@ -23,13 +23,19 @@ def ensure_dir(path: Path) -> Path:
     return path.resolve()
 
 
+def approved_agent(agent: str) -> str:
+    """Map parsed input to one of the fixed agent literals used at execution boundaries."""
+    if agent == "codex":
+        return "codex"
+    if agent == "claude":
+        return "claude"
+    supported = ", ".join(sorted(AGENT_COMMANDS))
+    raise SystemExit(f"Unsupported OpenRouter agent '{agent}'. Supported agents: {supported}.")
+
+
 def agent_command(agent: str) -> str:
     """Return the sole approved executable for a supported OpenRouter agent."""
-    try:
-        return AGENT_COMMANDS[agent]
-    except KeyError as exc:
-        supported = ", ".join(sorted(AGENT_COMMANDS))
-        raise SystemExit(f"Unsupported OpenRouter agent '{agent}'. Supported agents: {supported}.") from exc
+    return AGENT_COMMANDS[approved_agent(agent)]
 
 
 def apply_runtime_env(agent: str) -> dict[str, str]:
@@ -140,9 +146,10 @@ def run_interactive_command(command: list[str], env: dict[str, str] | None = Non
 
 
 def exec_agent(agent: str, args: list[str]) -> int:
-    cli_name = agent_command(agent)
+    selected_agent = approved_agent(agent)
+    cli_name = agent_command(selected_agent)
     approved_args = approved_agent_args(args)
-    env = apply_runtime_env(agent)
+    env = apply_runtime_env(selected_agent)
     resolved_cli = shutil.which(cli_name, path=env.get("PATH"))
     if resolved_cli is None:
         raise SystemExit(f"Could not find approved '{cli_name}' executable on PATH.")
@@ -162,15 +169,15 @@ def approved_agent_args(args: list[str]) -> list[str]:
 
 
 def launch_agent(agent: str, args: list[str]) -> int:
-    agent_command(agent)
+    selected_agent = approved_agent(agent)
     approved_args = approved_agent_args(args)
 
     if approved_args:
-        return exec_agent(agent, approved_args)
+        return exec_agent(selected_agent, approved_args)
 
     ensure_op_available()
     ensure_op_signed_in()
-    env_file = ensure_env_file(agent)
+    env_file = ensure_env_file(selected_agent)
 
     command = [
         "op",
@@ -180,7 +187,7 @@ def launch_agent(agent: str, args: list[str]) -> int:
         sys.executable,
         str(Path(__file__).resolve()),
         "--exec",
-        agent,
+        selected_agent,
     ]
     return run_interactive_command(command)
 
