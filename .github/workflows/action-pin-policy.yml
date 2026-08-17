@@ -73,7 +73,7 @@ jobs:
       - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         with:
           python-version: "3.13"
-      - name: Refuse test files discovery would silently skip
+      - name: Refuse test files that discovery would silently skip
         run: |
           # `unittest discover` descends into a subdirectory only when it is an
           # importable package. A test file in a plain subdirectory is not run
@@ -81,14 +81,35 @@ jobs:
           # which is the same silent-omission failure these tests exist to
           # catch. There are no such subdirectories today; this is what keeps
           # the claim in the next step honest as the directory grows.
-          missing=$(find .github/scripts -mindepth 2 -name 'test_*.py' \
-            -not -path '*/__pycache__/*' \
-            -exec sh -c 'test ! -f "$(dirname "$1")/__init__.py"' _ {} \; -print)
-          if [ -n "$missing" ]; then
-            echo "::error::unittest discovery cannot reach these; add __init__.py beside them:"
-            echo "$missing"
-            exit 1
-          fi
+          #
+          # EVERY directory between the start directory and the file has to be
+          # a package, not just the one the file sits in: for a/b/test_x.py,
+          # discovery needs a/__init__.py as well as a/b/__init__.py. The first
+          # version of this check looked only at the immediate parent — a guard
+          # against silent skipping that could itself skip silently, which is
+          # the exact shape of bug the rest of this change exists to remove.
+          python - <<'PY'
+          import sys
+          from pathlib import Path
+
+          root = Path(".github/scripts")
+          unreachable = []
+          for test in sorted(root.rglob("test_*.py")):
+              if "__pycache__" in test.parts:
+                  continue
+              missing = [
+                  parent / "__init__.py"
+                  for parent in test.parents
+                  if root in parent.parents and not (parent / "__init__.py").is_file()
+              ]
+              if missing:
+                  unreachable.append((test, missing))
+
+          for test, missing in unreachable:
+              print(f"::error file={test}::unittest discovery cannot reach this; "
+                    f"missing {', '.join(str(m) for m in missing)}")
+          sys.exit(1 if unreachable else 0)
+          PY
       - name: Run every test_*.py under .github/scripts
         run: |
           # Discovery rather than a list: a new test file next to the script it
@@ -137,8 +158,12 @@ jobs:
             echo "changed here, so the tests must still be able to fail:"
             echo "$changed"
           fi
+          # Only the mutation module, not the whole suite again: the step
+          # above already ran every test once, and the sweep re-runs the suite
+          # 21 more times internally. Discovering the one file keeps this
+          # step's output about the sweep.
           RUN_MUTATION_TESTS=1 python -m unittest discover \
             --start-directory .github/scripts \
-            --pattern 'test_*.py' \
+            --pattern 'test_check_action_pins_mutations.py' \
             --top-level-directory .github/scripts \
             --verbose
