@@ -13,7 +13,9 @@ version: 2.1
 jobs:
   placeholder:
     docker:
-      - image: cimg/base:current
+      # Pinned by digest (not a floating tag) so the image can't change
+      # underneath us. Was cimg/base:current on 2026-08-16.
+      - image: cimg/base@sha256:e8f07526f593ac5dee29362b7f98c6fec94c412722d6bbece731e4cc885abccb
     steps:
       - run:
           name: "Placeholder (no-op) — real config pending"
