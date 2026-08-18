@@ -20,14 +20,16 @@ jobs:
     # Write is provisioned and the repository variable is explicitly enabled.
     # TRIAGEBOT_ENABLED prevents accidental activation only; it is not a
     # security boundary and must be enabled by an administrator who has also
-    # provisioned the dedicated token.
+    # provisioned the dedicated token and TRIAGEBOT_LOGIN. The latter identifies
+    # the token's GitHub actor for loop prevention.
     # For issue-comment events, accept trusted human comments on issues only;
     # exclude pull-request chatter and bot replies to prevent loops.
     if: >-
-      vars.TRIAGEBOT_ENABLED == 'true' && (
+      vars.TRIAGEBOT_ENABLED == 'true' && vars.TRIAGEBOT_LOGIN != '' && (
         github.event_name != 'issue_comment' ||
         (github.event.issue.pull_request == null &&
          github.event.comment.user.type != 'Bot' &&
+         github.event.comment.user.login != vars.TRIAGEBOT_LOGIN &&
          contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'),
                   github.event.comment.author_association))
       )
@@ -53,7 +55,7 @@ jobs:
           triage-skill: .triagebot/skills/triage
           pr-skill: .triagebot/skills/pr-writer
           auto-pr-on-fix: false
-          bot-logins: ""
+          bot-logins: ${{ vars.TRIAGEBOT_LOGIN }}
 
           # Label customization - using defaults for now
           label-needs-triage: 'triage: needs triage'
