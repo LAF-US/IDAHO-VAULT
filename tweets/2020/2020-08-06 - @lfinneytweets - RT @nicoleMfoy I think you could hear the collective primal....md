@@ -1,4 +1,5 @@
 ---
+title: "RT @nicoleMfoy I think you could hear the collective primal..."
 date: 2020-08-06
 time: 23:16:42
 tweet_id: "1291513559705214976"

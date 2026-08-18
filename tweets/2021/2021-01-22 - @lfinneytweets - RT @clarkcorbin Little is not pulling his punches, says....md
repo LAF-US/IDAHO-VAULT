@@ -1,4 +1,5 @@
 ---
+title: "RT @clarkcorbin Little is not pulling his punches, says..."
 date: 2021-01-22
 time: 19:08:47
 tweet_id: "1352694719227150336"

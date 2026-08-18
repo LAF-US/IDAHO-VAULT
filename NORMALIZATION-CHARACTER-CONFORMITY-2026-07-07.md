@@ -1,8 +1,9 @@
 ---
 title: NORMALIZATION — Character Conformity and Mojibake Sweeping
-status: proposed
+status: active
 authority: LOGAN
 date created: 2026-07-07
+date landed: 2026-07-08
 related:
   - VAULT-CONVENTIONS
   - CONSTITUTION
@@ -11,11 +12,30 @@ related:
 
 # NORMALIZATION — Character Conformity and Mojibake Sweeping
 
-*A general program, portable to any LAF-US surface. This document proposes the
-program's shape; the norm decisions inside it are reserved to Logan. Tracking
-issue: #794. On 2026-07-08 Logan ruled N2, N3, and N4 via the Claude Code
-ask-user tool (answers quoted verbatim below); N5 was settled by his framing
-directive at the program's creation; N1 remains open (`*`) — see its entry.*
+## Where this stands (2026-07-08)
+
+This program is built and live in this repo. Nothing below is waiting on a
+decision.
+
+- **A check now runs on every change** and rejects any tracked text file that
+  is not valid UTF-8. It is on and passing.
+- **The wrong-encoding files were fixed** — about 145 of them, converted to
+  UTF-8, each conversion reversible byte-for-byte so nothing was invented.
+- **Garbled text and look-alike characters were swept** wherever the repair
+  could be proven correct; anything that could not be proven is left visibly
+  flagged rather than guessed at.
+- One damaged document, `PLUGIN-TRIAGE.md`, was recovered from a broken
+  encoding; a single character on one row could not be recovered and is
+  marked plainly in the file.
+
+The rest of this document is the original program design and the record of the
+norm answers, kept for reference.
+
+---
+
+*A general program, portable to any LAF-US surface. The norm decisions were
+Logan's; he answered them on 2026-07-08 (N1 in chat, N2–N4 via the ask-user
+tool, quoted verbatim below; N5 settled by his framing at creation).*
 
 ---
 
@@ -60,10 +80,13 @@ surface, not its boundary):
    repair is decode-with-correct-charset → re-encode, byte-reversible and
    verifiable.
 2. **Mojibake** — text already garbled by a past wrong decode being written
-   back (`â€"` where `—` was meant; `Ã©` for `é`). Survives as *valid* UTF-8,
-   so encoding checks alone never catch it; requires pattern sweeping
-   (ftfy-class heuristics) with human-reviewable diffs, because repairs are
-   interpretive.
+   back: an em-dash `—` whose UTF-8 bytes `E2 80 94` were once re-read as
+   cp1252 becomes a three-character artifact; `é`'s bytes `C3 A9` likewise
+   become a two-character one. (Specimens are named by their bytes here
+   deliberately, so this document never carries live artifacts that a
+   layer-2 sweep would "repair" out of its own definitions.) Survives as
+   *valid* UTF-8, so encoding checks alone never catch it; requires pattern
+   sweeping with human-reviewable diffs, because repairs are interpretive.
 3. **Homoglyph / codepoint nonconformity** — valid UTF-8, wrong characters:
    Cyrillic `е` in Latin text, non-breaking spaces posing as spaces,
    smart-quote or dash variants where the norm says otherwise. Pure policy
@@ -72,17 +95,21 @@ surface, not its boundary):
 ## The Norm — Rulings and Open Points
 
 Rulings N2–N4 were given by Logan on 2026-07-08 through the Claude Code
-ask-user tool in the live session (`session_01Fipj4vEJ5ADPuunn9ed5Hd`);
-each answer is quoted verbatim. N5 was settled earlier by his framing
-directive. N1 is **open**.
+ask-user tool in the live session (`session_01Fipj4vEJ5ADPuunn9ed5Hd`), and
+N1 in chat the same day; each answer is quoted verbatim. N5 was settled
+earlier by his framing directive.
 
-- **N1 — Declared encoding. OPEN (`*`).** The question — UTF-8 without BOM
-  everywhere? any exempt surfaces beyond binary formats? — was asked twice
-  through the ask-user tool on 2026-07-08. Both recorded responses consisted
-  of a single FULLWIDTH FULL STOP character (U+FF0E): first `(．)`, then
-  `．`. That matches none of the offered options and is not interpretable as
-  a ruling, so per the Restraint axis it is recorded here as a gap, not
-  guessed at. The layer-1 sweep and the checker's encoding gate wait on N1.
+- **N1 — Declared encoding. RULED: BOM-aware UTF-8.** Logan's answer,
+  given in chat on 2026-07-08: **"BOM-aware UTF-8"**. Operational reading
+  (implementation's, marked as such): the declared encoding is UTF-8; a
+  single leading byte-order mark is recognized as a BOM — not content, not
+  an offense — and the apparatus never *adds* one; any byte sequence not
+  decodable as UTF-8 is nonconforming. *Record of the road here: the two
+  earlier ask-tool responses each consisted of a single FULLWIDTH FULL STOP
+  (U+FF0E) — first `(．)`, then `．` — held as uninterpretable rather than
+  guessed at, until Logan reproduced the same character deliberately in
+  chat (a live layer-3 specimen: valid UTF-8, homoglyph of the period,
+  invisible to any encoding gate) and then ruled N1 in words.*
 - **N2 — Chamber sovereignty vs. conformity. RULED: override.** Logan's
   answer: **"Override (Recommended)"** — of the candidate postures
   (override / consent / exempt), the override posture governs: bytes are
@@ -101,10 +128,10 @@ directive. N1 is **open**.
   answer: **"Bounded heuristics (Recommended)"** — heuristic repair is
   allowed within the stated limits: in-scope only the closed families of
   known double-decode artifacts (UTF-8 read as cp1252/latin-1 and re-saved —
-  the `â€"`/`Ã©` class), applied only where the repaired text round-trips
-  back to the observed bytes; everything else — ambiguous sequences,
-  anything that fails the round-trip proof — flagged for human eyes, never
-  auto-repaired.
+  the `C3 A9`-for-`é` class), applied only where the repaired text
+  round-trips back to the observed bytes; everything else — ambiguous
+  sequences, anything that fails the round-trip proof — flagged for human
+  eyes, never auto-repaired.
 - **N5 — Portability. SETTLED by directive.** Logan's directive at the
   program's creation (2026-07-07): the program is *"general, not specific
   to this repo."* The apparatus is written repo-agnostic (a checker and a
@@ -144,5 +171,5 @@ directive. N1 is **open**.
 ---
 
 *Recorded by Claude Code session `session_01Fipj4vEJ5ADPuunn9ed5Hd`
-(https://claude.ai/code/session_01Fipj4vEJ5ADPuunn9ed5Hd). Proposed, not
-adopted; the norm is Logan's.*
+(<https://claude.ai/code/session_01Fipj4vEJ5ADPuunn9ed5Hd>). The norms are
+Logan's, answered 2026-07-08; the apparatus is built and enforcing.*

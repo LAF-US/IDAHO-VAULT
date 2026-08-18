@@ -1,4 +1,5 @@
 ---
+title: "Stennett says that an anatomy exam would involve a speculum..."
 date: 2020-03-16
 time: 22:59:18
 tweet_id: "1239687715550924800"

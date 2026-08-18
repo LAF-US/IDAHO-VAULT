@@ -60,6 +60,7 @@ This is a governed, multi-agent personal knowledge operating system in which a s
 ### 6. PERCEPTION LOG
 
 **Exact paths opened (N = 18):**
+
 - `.github/workflows/` (directory listing)
 - `.github/workflows/agent-auto-pr.yml`
 - `.github/workflows/batch-arm-merge-queue.yml`
@@ -84,6 +85,7 @@ This is a governed, multi-agent personal knowledge operating system in which a s
 **~M non-md/text files visible: approximately 75+** (38 yml workflows, 35+ Python scripts in `.github/scripts`, several `.json` config/data files at root, `.githooks/pre-commit`, `pyproject.toml`, `uv.lock`, `.obsidian/` config JSONs, `.crewai/` files)
 
 **Notable machinery seen but NOT opened:**
+
 - `daily_rollover.py` (37 KB — largest script; manages daily note carryforward cycle)
 - `review_feedback_loop.py` (94 KB — largest file in the repo by far; the full PR review state machine)
 - `topology_census.py` (31 KB — vault structure surveyor)

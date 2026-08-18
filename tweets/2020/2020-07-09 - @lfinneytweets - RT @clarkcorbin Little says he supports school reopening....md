@@ -1,4 +1,5 @@
 ---
+title: "RT @clarkcorbin Little says he supports school reopening..."
 date: 2020-07-09
 time: 15:04:22
 tweet_id: "1281242799304654848"

@@ -33,11 +33,13 @@ It exposes both a visual editor for non-technical users and APIs for engineers, 
 In the BIG IFS — UNIFIED SWARM framework, CrewAI is identified as the **business-process & orchestration limb** of a hypothetical Unified Swarm—most appropriate for long-running workflows, cross-system automations, and multi-role organizational tasks.
 
 Key architectural notes from the research:
+
 - CrewAI's **AMP-style tracing** provides a blueprint for observability & safety at the swarm level.
 - Its orchestration semantics (flows, events, triggers, human-in-loop) are candidates for the Unified Swarm "control plane."
 - Role-based agent model maps onto IDAHO-VAULT's agent registry structure in `!/AGENTS.md`.
 
 Open questions for R&D evaluation:
+
 - How does CrewAI's "crew" abstraction map to the existing IDAHO-VAULT agent roster?
 - Can the tracing layer be surfaced to vault-native records (manifest.json, DOCKET)?
 - On-prem vs. cloud: what data residency implications for a journalism vault?

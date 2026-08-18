@@ -16,9 +16,10 @@ related:
   - idleg
 ---
 
-"Don’t be the 51st person," Bedke said. #idleg https://t.co/myTxiVhlZL
+"Don’t be the 51st person," Bedke said. #idleg <https://t.co/myTxiVhlZL>
 
 ## Links
-- https://x.com/clarkcorbin/status/1240059140090646531
+
+- <https://x.com/clarkcorbin/status/1240059140090646531>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1240059669038563329)

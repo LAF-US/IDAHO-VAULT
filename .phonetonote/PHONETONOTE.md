@@ -1,4 +1,5 @@
 ---
+title: PHONETONOTE
 authority: LOGAN
 related:
   - PHONETONOTE
@@ -6,6 +7,6 @@ related:
   - runtime
 ---
 
-**.phonetonote** — Imported software runtime persona.
+**.phonetonote** â€” Imported software runtime persona.
 
 phonetonote runtime and configuration.

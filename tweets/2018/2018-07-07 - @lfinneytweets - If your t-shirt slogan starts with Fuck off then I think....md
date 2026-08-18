@@ -1,4 +1,5 @@
 ---
+title: "If your t-shirt slogan starts with Fuck off then I think..."
 date: 2018-07-07
 time: 06:28:58
 tweet_id: "1015482790983262208"
@@ -13,9 +14,9 @@ related:
   - lfinneytweets
 ---
 
-If your t-shirt slogan starts with "Fuck off" then I think it's fair to assume it's a hateful message. https://t.co/0cBRusYoDW
+If your t-shirt slogan starts with "Fuck off" then I think it's fair to assume it's a hateful message. <https://t.co/0cBRusYoDW>
 
 ## Links
-- https://x.com/annehelen/status/1015280418730401798
+- <https://x.com/annehelen/status/1015280418730401798>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1015482790983262208)

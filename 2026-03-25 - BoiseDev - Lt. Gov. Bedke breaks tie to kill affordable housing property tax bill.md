@@ -65,7 +65,7 @@ The bill passed the House of Representatives on a 39 to 28 vote, but proved more
 
 Corwin Ford - We Buy Used 2025 - 2:1
 
-![](https://boisedev.com/wp-content/uploads/2024/11/treasure-valley-water-experts-talk-collaboration-future-demand-at-water-summit-IMG-1887-Large.jpeg)
+![alt text needed](https://boisedev.com/wp-content/uploads/2024/11/treasure-valley-water-experts-talk-collaboration-future-demand-at-water-summit-IMG-1887-Large.jpeg)
 
 Idaho Lt. Gov. Scott Bedke speaks at the Treasure Valley Water Summit. Photo: Sydney Kidd/BoiseDev
 

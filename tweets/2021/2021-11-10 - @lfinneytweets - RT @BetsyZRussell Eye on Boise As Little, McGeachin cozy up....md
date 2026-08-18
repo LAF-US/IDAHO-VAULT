@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise As Little, McGeachin cozy up..."
 date: 2021-11-10
 time: 00:02:34
 tweet_id: "1458223521369190401"

@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoStatesman The Boise-based health system has lost..."
 date: 2020-04-02
 time: 03:52:31
 tweet_id: "1245559711555932160"
@@ -15,9 +16,9 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoStatesman: The Boise-based health system has lost 50-80% of its revenues, an internal memo says. https://t.co/biOUXZEpqW
+RT @IdahoStatesman: The Boise-based health system has lost 50-80% of its revenues, an internal memo says. <https://t.co/biOUXZEpqW>
 
 ## Links
-- https://trib.al/HvUXerD
+- <https://trib.al/HvUXerD>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1245559711555932160)

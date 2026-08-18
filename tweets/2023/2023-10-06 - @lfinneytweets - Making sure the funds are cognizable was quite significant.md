@@ -1,4 +1,5 @@
 ---
+title: "Making sure the funds are cognizable was quite significant"
 date: 2023-10-06
 time: 18:51:59
 tweet_id: "1710367314947039344"

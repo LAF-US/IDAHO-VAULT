@@ -20,9 +20,10 @@ related:
   - idpol
 ---
 
-RT @NateBrownNews: The higher ed budget has failed 32-37. #idleg #idpol https://t.co/N7KiHkmjJn
+RT @NateBrownNews: The higher ed budget has failed 32-37. #idleg #idpol <https://t.co/N7KiHkmjJn>
 
 ## Media
-- ![](https://pbs.twimg.com/media/ESrwbM3VAAcG2OE.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/ESrwbM3VAAcG2OE.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1237065555497988097)

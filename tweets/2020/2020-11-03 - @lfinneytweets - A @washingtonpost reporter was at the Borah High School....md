@@ -1,4 +1,5 @@
 ---
+title: "A @washingtonpost reporter was at the Borah High School..."
 date: 2020-11-03
 time: 16:02:11
 tweet_id: "1323656732065718272"

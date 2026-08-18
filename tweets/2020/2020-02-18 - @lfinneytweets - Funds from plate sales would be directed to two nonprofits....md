@@ -1,4 +1,5 @@
 ---
+title: "Funds from plate sales would be directed to two nonprofits..."
 date: 2020-02-18
 time: 16:41:41
 tweet_id: "1229808212490121216"

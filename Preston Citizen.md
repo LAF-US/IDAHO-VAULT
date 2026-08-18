@@ -6,4 +6,4 @@ related:
 - Preston
 authority: LOGAN
 ---
-newspaper based in Preston owned by Adams Publishing Group 
+newspaper based in Preston owned by Adams Publishing Group

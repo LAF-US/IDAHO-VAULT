@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports @davlinnews @BethOppenheimer @Senator_Hill..."
 date: 2020-07-25
 time: 02:04:08
 tweet_id: "1286844655309475841"
@@ -16,6 +17,6 @@ related:
 ---
 
 RT @IdahoReports: @davlinnews @BethOppenheimer @Senator_Hill @IdahoPTV Watch Now: "Childcare Uncertainty" #idpol #idleg 
-https://t.co/geCcR…
+<https://t.co/geCcR…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1286844655309475841)

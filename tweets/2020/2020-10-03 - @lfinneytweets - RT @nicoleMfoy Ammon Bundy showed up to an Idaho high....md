@@ -1,4 +1,5 @@
 ---
+title: "RT @nicoleMfoy Ammon Bundy showed up to an Idaho high..."
 date: 2020-10-03
 time: 15:55:36
 tweet_id: "1312421048785137664"

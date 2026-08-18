@@ -1,4 +1,5 @@
 ---
+title: "RT @danielwinlander Sgt. Terry Preuninger, SPD PIO, offers..."
 date: 2020-06-08
 time: 19:38:50
 tweet_id: "1270077849500696576"

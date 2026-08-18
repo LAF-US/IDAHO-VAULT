@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Guv says prospects good for..."
 date: 2020-04-28
 time: 21:43:00
 tweet_id: "1255251191497449474"
