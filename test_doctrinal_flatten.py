@@ -60,12 +60,10 @@ class DoctrinalFlattenTest(unittest.TestCase):
             doctrinal_flatten.filesystem_key("RÉSUMÉ.md"),
         )
 
-    def test_inbox_plan_renames_case_and_unicode_equivalent_name(self) -> None:
+    def test_inbox_plan_uses_root_collision_policy(self) -> None:
         with tempfile.TemporaryDirectory() as temporary_directory:
             repo_root = Path(temporary_directory)
-            destination_dir = repo_root / "!" / "INBOX"
-            destination_dir.mkdir(parents=True)
-            (destination_dir / "RÉSUMÉ.md").write_text("incumbent", encoding="utf-8")
+            (repo_root / "RÉSUMÉ.md").write_text("incumbent", encoding="utf-8")
             source_dir = repo_root / "INBOX"
             source_dir.mkdir()
             source = source_dir / "re\u0301sume\u0301.MD"
@@ -75,30 +73,48 @@ class DoctrinalFlattenTest(unittest.TestCase):
             plans = doctrinal_flatten.plan_moves(repo_root, candidates)
 
         self.assertEqual(len(plans), 1)
-        self.assertEqual(plans[0]["action"], "rehomed_inbox_renamed")
-        self.assertEqual(plans[0]["collision"], "inbox_existing")
+        self.assertEqual(plans[0]["action"], "moved_root_renamed")
+        self.assertEqual(plans[0]["collision"], "root_existing")
         self.assertNotEqual(
             doctrinal_flatten.filesystem_key(str(plans[0]["destination"])),
-            doctrinal_flatten.filesystem_key("!/INBOX/RÉSUMÉ.md"),
+            doctrinal_flatten.filesystem_key("RÉSUMÉ.md"),
         )
 
-    def test_inbox_plan_distinguishes_backslash_name_from_nested_path(self) -> None:
+    def test_inbox_nested_file_flattens_to_root(self) -> None:
         with tempfile.TemporaryDirectory() as temporary_directory:
             repo_root = Path(temporary_directory)
-            destination_dir = repo_root / "!" / "INBOX"
-            destination_dir.mkdir(parents=True)
-            (destination_dir / r"a\b.md").write_text("literal backslash", encoding="utf-8")
-            source_dir = repo_root / "INBOX" / "a"
+            source_dir = repo_root / "INBOX" / "PHONE-LINK"
             source_dir.mkdir(parents=True)
-            (source_dir / "b.md").write_text("nested path", encoding="utf-8")
+            (source_dir / "photo.png").write_text("incoming", encoding="utf-8")
 
             candidates, _ = doctrinal_flatten.collect_candidates(repo_root)
             plans = doctrinal_flatten.plan_moves(repo_root, candidates)
 
         self.assertEqual(len(plans), 1)
-        self.assertEqual(plans[0]["action"], "rehomed_inbox")
+        self.assertEqual(plans[0]["action"], "moved_root")
         self.assertIsNone(plans[0]["collision"])
-        self.assertEqual(plans[0]["destination"], "!/INBOX/a/b.md")
+        self.assertEqual(plans[0]["destination"], "photo.png")
+
+    def test_underscore_directory_flattens_while_bang_and_dotfolders_remain_protected(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            repo_root = Path(temporary_directory)
+            source_dir = repo_root / "_agent"
+            source_dir.mkdir()
+            (source_dir / "collected.md").write_text("incoming", encoding="utf-8")
+            protected_bang = repo_root / "!"
+            protected_bang.mkdir()
+            (protected_bang / "protected.md").write_text("protected", encoding="utf-8")
+            protected_dotfolder = repo_root / ".agent"
+            protected_dotfolder.mkdir()
+            (protected_dotfolder / "hidden.md").write_text("protected", encoding="utf-8")
+
+            candidates, _ = doctrinal_flatten.collect_candidates(repo_root)
+            plans = doctrinal_flatten.plan_moves(repo_root, candidates)
+
+        self.assertEqual([candidate.relative_source for candidate in candidates], ["_agent/collected.md"])
+        self.assertEqual(len(plans), 1)
+        self.assertEqual(plans[0]["action"], "moved_root")
+        self.assertEqual(plans[0]["destination"], "collected.md")
 
 
 if __name__ == "__main__":

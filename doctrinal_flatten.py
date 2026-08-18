@@ -25,11 +25,10 @@ class Candidate:
     basename: str
     stem: str
     suffix: str
-    inbox: bool
 
 
 def is_protected_dir(name: str) -> bool:
-    return name == "!" or name.startswith(".") or name.startswith("_")
+    return name == "!" or name.startswith(".")
 
 
 def is_machine_junk(name: str) -> bool:
@@ -81,28 +80,6 @@ def unique_root_name(
     return candidate
 
 
-def unique_inbox_path(
-    dest: Path,
-    source_rel: str,
-    reserved: set[str],
-) -> Path:
-    key = filesystem_key(dest.as_posix())
-    if key not in reserved:
-        reserved.add(key)
-        return dest
-
-    stem = dest.stem or "file"
-    suffix = dest.suffix
-    base = f"{stem}__src_inbox__{hash8(source_rel)}"
-    candidate = dest.with_name(f"{base}{suffix}")
-    counter = 2
-    while filesystem_key(candidate.as_posix()) in reserved:
-        candidate = dest.with_name(f"{base}__n{counter}{suffix}")
-        counter += 1
-    reserved.add(filesystem_key(candidate.as_posix()))
-    return candidate
-
-
 def iter_top_level_dirs(repo_root: Path) -> list[Path]:
     return sorted(
         [path for path in repo_root.iterdir() if path.is_dir() and not is_protected_dir(path.name)],
@@ -146,7 +123,6 @@ def collect_candidates(repo_root: Path) -> tuple[list[Candidate], list[dict[str,
                     basename=source.name,
                     stem=source.stem,
                     suffix=source.suffix,
-                    inbox=top_dir.name == "INBOX",
                 )
             )
 
@@ -159,19 +135,10 @@ def plan_moves(repo_root: Path, candidates: list[Candidate]) -> list[dict[str, o
         for path in repo_root.iterdir()
         if path.is_file()
     }
-    inbox_reserved = {
-        filesystem_key(path.as_posix())
-        for path in (repo_root / "!" / "INBOX").rglob("*")
-        if path.exists()
-    } if (repo_root / "!" / "INBOX").exists() else set()
-
     plans: list[dict[str, object]] = []
 
-    root_candidates = [candidate for candidate in candidates if not candidate.inbox]
-    inbox_candidates = [candidate for candidate in candidates if candidate.inbox]
-
     grouped: dict[str, list[Candidate]] = defaultdict(list)
-    for candidate in root_candidates:
+    for candidate in candidates:
         grouped[filesystem_key(candidate.basename)].append(candidate)
 
     for basename_key in sorted(grouped.keys()):
@@ -215,29 +182,6 @@ def plan_moves(repo_root: Path, candidates: list[Candidate]) -> list[dict[str, o
                     "collision": collision,
                 }
             )
-
-    for candidate in sorted(
-        inbox_candidates,
-        key=lambda item: (filesystem_key(item.relative_source), item.relative_source),
-    ):
-        tentative = repo_root / "!" / "INBOX" / Path(candidate.relative_within_top)
-        dest_path = unique_inbox_path(
-            tentative,
-            candidate.relative_source,
-            inbox_reserved,
-        )
-        collision = None if dest_path == tentative else "inbox_existing"
-        action = "rehomed_inbox" if collision is None else "rehomed_inbox_renamed"
-        plans.append(
-            {
-                "action": action,
-                "source": candidate.relative_source,
-                "destination": dest_path.relative_to(repo_root).as_posix(),
-                "top_level": candidate.top_level,
-                "relative_within_top": candidate.relative_within_top,
-                "collision": collision,
-            }
-        )
 
     return sorted(
         plans,
