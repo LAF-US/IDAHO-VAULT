@@ -10,6 +10,7 @@ from pathlib import Path
 
 def resolve_repo_path(repo_root: Path, raw_path: str, label: str) -> Path:
     """Resolve a CLI path and reject any path outside the repository root."""
+    repo_root = repo_root.resolve()
     resolved_path = (repo_root / raw_path).resolve()
     try:
         resolved_path.relative_to(repo_root)
