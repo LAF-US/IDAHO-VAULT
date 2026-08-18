@@ -228,6 +228,38 @@ renaming a tracked path is a destructive git-control-surface change requiring
 Logan's explicit instruction — flagged here for his disposition, not acted on
 by this session.
 
+## Addendum (2026-08-18): unrelated, higher-severity finding — `check-dotfolder-anchors` now fails repo-wide on `main`
+
+Distinct from the rate-limit storm above. At PR #984's head `9cbbe291b7504d4232810f7d0960936c71c8c9d3`
+(after rebasing this branch onto current `main`), `check-dotfolder-anchors`
+(job `95702163626`) started failing:
+
+```
+dotfolder-anchor guard: dotfolders missing their stub.txt sentinel:
+ - .triagebot/stub.txt
+dotfolder-anchor guard: 294 dotfolders have no vault-root <NAME>.md, above the ratchet of 293.
+```
+
+Root cause, verified directly: **PR #961** (`claude/practical-cerf-7p8csq`, merged
+into `main` at `ad09929d`) added the `.triagebot/` dotfolder — with its chamber
+anchor `.triagebot/TRIAGEBOT.md` — but shipped neither the `.triagebot/stub.txt`
+vacancy sentinel nor the root-level `TRIAGEBOT.md` vault-anchor note that
+`.github/scripts/check_dotfolder_anchors.py` requires of every *new* dotfolder in
+the same PR (contrast `.claude/`: has both `.claude/stub.txt` and root
+`CLAUDE.md`). That pushed the missing-root-anchor count from 293 to 294; per the
+script's own ratchet design ("existing debt warns; ANY increase fails"), this
+**hard-fails `check-dotfolder-anchors` on every open PR based on current `main`
+now, not just this one**. Confirmed by contrast: this same check passed on this
+PR's prior head `ab7214e4` (before the rebase pulled in PR #961's merge) and only
+started failing at `9cbbe291` (after).
+
+Not fixed by this session: `stub.txt` is a mechanical 4-byte sentinel, but the
+root-level `TRIAGEBOT.md` anchor is, per the check script's own comment, "an
+authored persona note ... not a sentinel" — writing vault canon for a persona
+this session did not create and has no delegated authority to author. Flagged on
+PR #984 for Logan's disposition:
+https://github.com/LAF-US/IDAHO-VAULT/pull/984#issuecomment-5327859883
+
 ## Provenance
 
 Compiled by Claude Code, session `session_01LTD66ZEF1tduSVnbvcR6H7`, from direct
