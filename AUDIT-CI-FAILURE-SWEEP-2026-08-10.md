@@ -13,7 +13,7 @@ owner: Logan Finney
 |---|---|
 | **Who** | GitHub Actions runners on `laf-us/idaho-vault` (65 workflows per `list_workflows`). No new human-caused breakage this window. |
 | **What** | 1 currently 100%-reproducing failure (Codacy Security Scan — tracked as #822/LAF-72 since 2026-07-08; real history of a genuine fix, a later regression, and a rejected-and-repeated mitigation attempt — see Incident A); 1 confirmed-recurring `action_required` pattern on Copilot-bot-triggered review events (root cause not fully confirmed); everything else on `main` is green. Zero new hard `failure` conclusions found on `main` in-window. |
-| **When** | 2026-08-09T12:08Z – 2026-08-10T12:08Z. Codacy's *current* failure streak traces back at least to 2026-08-07T18:21Z (60/60 sampled runs cancelled); the underlying defect's history goes back further — see Incident A's timeline. |
+| **When** | 2026-08-09T12:08Z – 2026-08-10T12:08Z. Codacy's *current* failure streak traces back at least to 2026-08-07T18:21Z (60/60 sampled runs were non-successful: 59 `cancelled`, 1 `action_required`); the underlying defect's history goes back further — see Incident A's timeline. |
 | **Where** | Codacy: every push to `main` and every open PR (repo-wide, `codacy.yml`). `action_required`: scattered across agent branches with Copilot reviews (today: `claude/skill-doc-qzt7le` 03:42Z, `claude/practical-cerf-p3gz8m`/PR #927 05:40Z). |
 | **Why** | Codacy: third-party CLI bug (see Incident A). `action_required`: signature matches a GitHub workflow-run-approval gate; exact trigger unconfirmed (`*`). |
 | **How** | Verified via direct job-log reads (not just conclusion fields) for both incidents — see below. |
