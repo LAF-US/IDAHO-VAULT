@@ -1,4 +1,5 @@
 ---
+title: PITHOS
 canonical_name: PITHOS
 status: proposed
 authority: LOGAN

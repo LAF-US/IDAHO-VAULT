@@ -1,3 +1,6 @@
+---
+title: JOURNALIST
+---
 # JOURNALIST.md — Office Chamber
 
 **Office:** journalist

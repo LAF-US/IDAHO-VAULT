@@ -1,4 +1,5 @@
 ---
+title: CONFIG
 authority: LOGAN
 related:
   - CONFIG

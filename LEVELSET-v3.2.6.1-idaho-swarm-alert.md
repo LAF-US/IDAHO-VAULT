@@ -1,8 +1,9 @@
 ---
+title: "LEVELSET v3.2.6.1 — Idaho Swarm Alert"
 type: levelset-report
 levelset-version: v3.2.6.1
-conversation: Claude Code – Idaho VAULT Multi-Conversation Consolidation
-tier: PERMANENT: AUTHORITY: CODE
+conversation: "Claude Code – Idaho VAULT Multi-Conversation Consolidation"
+tier: "PERMANENT: AUTHORITY: CODE"
 date: 2026-03-16
 branch: claude/fix-swarm-alert-DIIQq
 status: consolidation-phase-complete
