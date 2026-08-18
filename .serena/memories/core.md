@@ -1,4 +1,5 @@
 # IDAHO-VAULT core
+
 - Obsidian-backed, Git-versioned journalism research vault; committed material is on the record/publishable.
 - Canonical orientation path: `IDAHO-VAULT/!`; `!/README.md` defines canonical path language.
 - Authority: direct Logan instruction > `CONSTITUTION.md` > `!/WAKEUP.md` > `swarm.json` > witness/discovery surfaces.
