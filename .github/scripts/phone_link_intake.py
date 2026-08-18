@@ -28,31 +28,53 @@ from pathlib import Path
 
 
 DEFAULT_SOURCE = Path(r"C:\Users\loganf\Downloads\Phone Link")
+TRUSTED_SOURCE_ROOT = DEFAULT_SOURCE.parent
+TRUSTED_VAULT_ROOT = Path(__file__).resolve().parents[2]
 
 
-def require_existing_dir(path: Path, label: str) -> Path:
-    resolved = path.resolve()
+def normalized_path(path: Path) -> str:
+    """Normalize a configured path lexically, without accessing the filesystem."""
+    return os.path.normcase(os.path.normpath(os.fspath(path)))
+
+
+def resolve_phone_link_source(path: Path) -> Path:
+    """Resolve an existing Phone Link source within the Downloads boundary."""
+    trusted_root = os.path.normcase(os.path.realpath(os.fspath(TRUSTED_SOURCE_ROOT)))
+    candidate = os.path.normcase(os.path.realpath(os.fspath(path)))
+    if not candidate.startswith(trusted_root + os.sep):
+        raise RuntimeError(f"Phone Link source must be within {trusted_root}")
+
+    resolved = Path(candidate)
     if not resolved.exists():
-        raise RuntimeError(f"{label} does not exist: {resolved}")
+        raise RuntimeError(f"Phone Link source does not exist: {resolved}")
     if not resolved.is_dir():
-        raise RuntimeError(f"{label} is not a directory: {resolved}")
+        raise RuntimeError(f"Phone Link source is not a directory: {resolved}")
     return resolved
 
 
+def safe_child_path(parent: Path, relative_path: str) -> Path:
+    """Return a normalized child path only when it remains below ``parent``."""
+    root = os.path.normcase(os.path.realpath(os.fspath(parent)))
+    candidate = os.path.normcase(os.path.realpath(os.path.join(root, relative_path)))
+    if not candidate.startswith(root + os.sep):
+        raise RuntimeError(f"Path escapes its permitted directory: {relative_path}")
+    return Path(candidate)
+
+
 def get_vault_root(explicit_root: Path | None = None) -> Path:
-    """Resolve the vault root from explicit config, env var, then script location."""
+    """Use the repository containing this script as the only vault destination."""
+    trusted = normalized_path(TRUSTED_VAULT_ROOT)
     if explicit_root is not None:
-        return require_existing_dir(explicit_root, "Vault root")
+        if normalized_path(explicit_root) != trusted:
+            raise RuntimeError(f"Vault root must be the script repository: {trusted}")
+    else:
+        env_root = os.environ.get("IDAHO_VAULT_ROOT")
+        if env_root and normalized_path(Path(env_root)) != trusted:
+            raise RuntimeError(f"IDAHO_VAULT_ROOT must be the script repository: {trusted}")
 
-    env_root = os.environ.get("IDAHO_VAULT_ROOT")
-    if env_root:
-        return require_existing_dir(Path(env_root), "IDAHO_VAULT_ROOT")
-
-    script_dir = Path(__file__).resolve().parent
-    vault_root = require_existing_dir(script_dir.parent.parent, "Fallback vault root")
-    if not (vault_root / ".git").exists():
-        print(f"Warning: no .git found at {vault_root}, proceeding anyway")
-    return vault_root
+    if not TRUSTED_VAULT_ROOT.is_dir():
+        raise RuntimeError(f"Script vault root does not exist: {TRUSTED_VAULT_ROOT}")
+    return TRUSTED_VAULT_ROOT
 
 
 def file_hash(filepath: Path) -> str:
@@ -66,7 +88,7 @@ def file_hash(filepath: Path) -> str:
 
 def resolve_destination(filepath: Path, vault_root: Path) -> tuple[Path | None, str]:
     """Resolve a root-level destination path for an incoming file."""
-    dest_file = vault_root / filepath.name
+    dest_file = safe_child_path(vault_root, filepath.name)
     if not dest_file.exists():
         return dest_file, "direct"
 
@@ -91,20 +113,11 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--git-add", action="store_true", help="Stage ingested files with git add")
     args = parser.parse_args(argv)
 
-    source = args.source.resolve()
-    if not source.exists():
-        print(f"Source folder not found: {source}")
-        print("Is Phone Link installed and has files been transferred?")
-        return 1
-
-    if not source.is_dir():
-        print(f"Source is not a directory: {source}")
-        return 1
-
     try:
+        source = resolve_phone_link_source(args.source)
         vault_root = get_vault_root(args.vault_root)
     except RuntimeError as exc:
-        print(f"Vault root error: {exc}")
+        print(f"Configuration error: {exc}")
         return 1
     files = sorted(f for f in source.iterdir() if f.is_file())
 
