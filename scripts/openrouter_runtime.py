@@ -36,6 +36,16 @@ def agent_command(agent: str) -> str:
     return AGENT_COMMANDS[approved_agent(agent)]
 
 
+def resolve_approved_agent_executable(agent: str) -> str:
+    """Resolve a fixed agent literal to an absolute executable before execution."""
+    selected_agent = approved_agent(agent)
+    command = AGENT_COMMANDS[selected_agent]
+    executable = shutil.which(command)
+    if executable is None:
+        raise SystemExit(f"Could not find approved '{command}' executable on PATH.")
+    return executable
+
+
 def apply_runtime_env(agent: str) -> dict[str, str]:
     env = os.environ.copy()
 
@@ -65,9 +75,11 @@ def apply_runtime_env(agent: str) -> dict[str, str]:
     return env
 
 
-def ensure_op_available() -> None:
-    if shutil.which("op") is None:
+def ensure_op_available() -> str:
+    executable = shutil.which("op")
+    if executable is None:
         raise SystemExit("1Password CLI 'op' is not installed or not on PATH.")
+    return executable
 
 
 def ensure_op_signed_in() -> None:
@@ -129,14 +141,12 @@ def ensure_env_file(agent: str) -> Path:
 def exec_agent(agent: str, args: list[str]) -> int:
     selected_agent = approved_agent(agent)
     approved_agent_args(args)
-    os.environ.update(apply_runtime_env(selected_agent))
+    env = apply_runtime_env(selected_agent)
+    executable = resolve_approved_agent_executable(selected_agent)
     try:
-        if selected_agent == "codex":
-            os.execvp("codex", ["codex"])
-        else:
-            os.execvp("claude", ["claude"])
+        os.execve(executable, [executable], env)
     except FileNotFoundError as exc:
-        raise SystemExit(f"Could not find approved '{selected_agent}' executable on PATH.") from exc
+        raise SystemExit(f"Could not execute approved '{selected_agent}' executable: {exc}") from exc
     return 0
 
 
@@ -150,12 +160,12 @@ def launch_agent(agent: str, args: list[str]) -> int:
     selected_agent = approved_agent(agent)
     approved_agent_args(args)
 
-    ensure_op_available()
+    op_executable = ensure_op_available()
     ensure_op_signed_in()
     env_file = ensure_env_file(selected_agent)
 
     command = [
-        "op",
+        op_executable,
         "run",
         f"--env-file={env_file}",
         "--",
@@ -165,7 +175,7 @@ def launch_agent(agent: str, args: list[str]) -> int:
         selected_agent,
     ]
     try:
-        os.execvp("op", command)
+        os.execve(op_executable, command, os.environ.copy())
     except FileNotFoundError as exc:
         raise SystemExit("1Password CLI 'op' is not installed or not on PATH.") from exc
     return 0
