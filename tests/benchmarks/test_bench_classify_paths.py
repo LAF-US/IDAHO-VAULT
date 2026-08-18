@@ -9,7 +9,7 @@ from __future__ import annotations
 
 import contextlib
 import io
-import sys
+from unittest.mock import patch
 
 import classify_paths as cp
 
@@ -33,14 +33,9 @@ def test_riskiest_aggregation(benchmark, vault_paths):
 def test_classify_paths_cli(benchmark, vault_paths):
     """End-to-end entry point: read paths from stdin, emit the JSON verdict."""
     payload = "\n".join(vault_paths) + "\n"
-    real_stdin = sys.stdin
-
     def run() -> None:
-        sys.stdin = io.StringIO(payload)
-        try:
+        with patch("sys.stdin", io.StringIO(payload)):
             with contextlib.redirect_stdout(io.StringIO()):
                 cp.main()
-        finally:
-            sys.stdin = real_stdin
 
     benchmark(run)

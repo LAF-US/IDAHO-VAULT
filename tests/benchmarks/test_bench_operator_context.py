@@ -60,20 +60,23 @@ def test_extract_active_section(benchmark, todo_list_content):
 def test_open_backlog_items(benchmark, todo_list_content):
     """Filter the active section down to genuinely open checklist items."""
     active = oc._extract_active_section(todo_list_content)
-    context = oc.OperatorContext(
-        root=Path("."),
-        target_date=date(2026, 4, 19),
-        boot_chain_checks=(),
-        front_door_checks=(),
-        daily_note_path="2026-04-19.md",
-        daily_note_exists=True,
-        daily_note_tracked=True,
-        daily_note_folder="",
-        daily_note_format="YYYY-MM-DD",
-        active_backlog_lines=active,
-    )
 
-    items = benchmark(lambda: context.open_backlog_items)
+    def load_open_backlog_items():
+        context = oc.OperatorContext(
+            root=Path("."),
+            target_date=date(2026, 4, 19),
+            boot_chain_checks=(),
+            front_door_checks=(),
+            daily_note_path="2026-04-19.md",
+            daily_note_exists=True,
+            daily_note_tracked=True,
+            daily_note_folder="",
+            daily_note_format="YYYY-MM-DD",
+            active_backlog_lines=active,
+        )
+        return context.open_backlog_items
+
+    items = benchmark(load_open_backlog_items)
 
     assert len(items) == 150
 

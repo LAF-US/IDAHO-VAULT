@@ -26,6 +26,8 @@ concurrency:
 
 jobs:
   benchmarks:
+    # Fork pull requests must not receive an OIDC token or upload benchmark data.
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.fork == false
     name: Run benchmarks
     runs-on: ubuntu-latest
     timeout-minutes: 20
@@ -53,4 +55,4 @@ jobs:
         uses: CodSpeedHQ/action@4296e51e7041e24dadb86d1d6e8b9320d223dbe8 # v5.0.3
         with:
           mode: simulation
-          run: uv run pytest tests/ --codspeed
+          run: uv run pytest tests/benchmarks/ --codspeed
