@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import importlib.util
+import sys
 import unittest
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -9,11 +10,16 @@ from unittest import mock
 
 
 def _load_review_feedback_loop_module():
-    project_root = Path(__file__).resolve().parents[1]
-    script_path = project_root / ".github" / "scripts" / "review_feedback_loop.py"
+    project_root = Path(__file__).resolve().parent
+    script_dir = project_root / ".github" / "scripts"
+    if str(script_dir) not in sys.path:
+        sys.path.insert(0, str(script_dir))
+
+    script_path = script_dir / "review_feedback_loop.py"
     spec = importlib.util.spec_from_file_location("review_feedback_loop_test_module", script_path)
+    if spec is None or spec.loader is None:
+        raise RuntimeError(f"Unable to load review feedback loop from {script_path}")
     module = importlib.util.module_from_spec(spec)
-    assert spec.loader is not None
     spec.loader.exec_module(module)
     return module
 
@@ -78,14 +84,22 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         early_state = review_feedback_loop.evaluate_review_state(
             _pr(
                 created_at=now - timedelta(minutes=10),
-                labels=(review_feedback_loop.DEFAULT_REVIEW_PENDING_LABEL,),
+                labels=(
+                    review_feedback_loop.RISK_LOW_LABEL,
+                    review_feedback_loop.DEFAULT_REVIEW_PENDING_LABEL,
+                ),
+                review_decision="APPROVED",
             ),
             now=now,
         )
         ready_state = review_feedback_loop.evaluate_review_state(
             _pr(
                 created_at=now - timedelta(minutes=45),
-                labels=(review_feedback_loop.DEFAULT_REVIEW_PENDING_LABEL,),
+                labels=(
+                    review_feedback_loop.RISK_LOW_LABEL,
+                    review_feedback_loop.DEFAULT_REVIEW_PENDING_LABEL,
+                ),
+                review_decision="APPROVED",
             ),
             now=now,
         )
@@ -108,6 +122,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             _pr(
                 created_at=now - timedelta(minutes=45),
                 labels=(review_feedback_loop.RISK_LOW_LABEL, review_feedback_loop.DEFAULT_REVIEW_PENDING_LABEL),
+                review_decision="APPROVED",
                 body="## Real description\n\nSummary of changes.",
             ),
             now=now,
@@ -254,6 +269,70 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         )
         disable_auto_merge.assert_called_once_with(29)
 
+    def test_acknowledge_apply_ignores_nonmatching_comment_without_label_api_calls(self) -> None:
+        args = SimpleNamespace(
+            owner="LAF-US",
+            repo="IDAHO-VAULT",
+            pr_number=41,
+            comment_author="review-bot",
+            author_association="MEMBER",
+            comment_body="Automated review complete.",
+        )
+
+        with mock.patch.object(review_feedback_loop, "ensure_labels") as ensure_labels, mock.patch.object(
+            review_feedback_loop.gh_cli, "pr_view"
+        ) as pr_view:
+            result = review_feedback_loop.acknowledge_apply(args)
+
+        self.assertEqual(result, 0)
+        ensure_labels.assert_not_called()
+        pr_view.assert_not_called()
+
+    def test_acknowledge_apply_ignores_untrusted_request_without_label_api_calls(self) -> None:
+        args = SimpleNamespace(
+            owner="LAF-US",
+            repo="IDAHO-VAULT",
+            pr_number=41,
+            comment_author="",
+            author_association="CONTRIBUTOR",
+            comment_body="@copilot apply changes",
+        )
+
+        with mock.patch.object(review_feedback_loop, "ensure_labels") as ensure_labels, mock.patch.object(
+            review_feedback_loop.gh_cli, "pr_view"
+        ) as pr_view:
+            result = review_feedback_loop.acknowledge_apply(args)
+
+        self.assertEqual(result, 0)
+        ensure_labels.assert_not_called()
+        pr_view.assert_not_called()
+
+    def test_acknowledge_apply_skips_reconciliation_when_already_pending(self) -> None:
+        args = SimpleNamespace(
+            owner="LAF-US",
+            repo="IDAHO-VAULT",
+            pr_number=41,
+            comment_author="loganf",
+            author_association="OWNER",
+            comment_body="@copilot apply changes",
+        )
+
+        with mock.patch.object(review_feedback_loop, "ensure_labels") as ensure_labels, mock.patch.object(
+            review_feedback_loop.gh_cli,
+            "pr_view",
+            return_value=SimpleNamespace(
+                stdout='{"labels": [{"name": "merge/copilot-apply-pending"}]}'
+            ),
+        ), mock.patch.object(review_feedback_loop, "_edit_label") as edit_label, mock.patch.object(
+            review_feedback_loop, "_comment"
+        ) as comment:
+            result = review_feedback_loop.acknowledge_apply(args)
+
+        self.assertEqual(result, 0)
+        ensure_labels.assert_not_called()
+        edit_label.assert_not_called()
+        comment.assert_not_called()
+
     def test_acknowledge_apply_marks_pending_after_trusted_request(self) -> None:
         args = SimpleNamespace(
             owner="LAF-US",
@@ -264,16 +343,17 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             comment_body="@copilot apply changes",
         )
 
-        with mock.patch.object(review_feedback_loop, "ensure_labels"), mock.patch.object(
-            review_feedback_loop,
-            "_fetch_pr",
-            return_value=_pr(labels=()),
+        with mock.patch.object(review_feedback_loop, "ensure_labels") as ensure_labels, mock.patch.object(
+            review_feedback_loop.gh_cli,
+            "pr_view",
+            return_value=SimpleNamespace(stdout='{"labels": []}'),
         ), mock.patch.object(review_feedback_loop, "_edit_label") as edit_label, mock.patch.object(
             review_feedback_loop, "_comment"
         ) as comment:
             result = review_feedback_loop.acknowledge_apply(args)
 
         self.assertEqual(result, 0)
+        ensure_labels.assert_called_once_with()
         edit_label.assert_called_once_with(41, add=review_feedback_loop.DEFAULT_PENDING_LABEL)
         comment.assert_called_once()
 
@@ -292,8 +372,14 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             return_value=_pr(labels=(review_feedback_loop.DEFAULT_PENDING_LABEL,)),
         ), mock.patch.object(
             review_feedback_loop,
-            "_resolve_outdated_advisory_threads",
-            return_value=0,
+            "_resolve_outdated_resolvable_threads",
+            return_value=[],
+        ), mock.patch.object(
+            review_feedback_loop, "_classify_pr_pair", return_value=(None, None)
+        ), mock.patch.object(
+            review_feedback_loop,
+            "_maybe_arm_auto_merge",
+            return_value={"armed": False, "reason": "not eligible"},
         ), mock.patch.object(
             review_feedback_loop, "apply_review_state_projection", return_value=[]
         ) as projection:
@@ -319,12 +405,14 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             ),
         ), mock.patch.object(
             review_feedback_loop, "apply_review_state_projection", return_value=[]
-        ) as projection, mock.patch.object(review_feedback_loop, "_run") as run:
+        ) as projection, mock.patch.object(
+            review_feedback_loop, "_arm_auto_merge"
+        ) as arm_auto_merge:
             result = review_feedback_loop.enable_auto_merge(args)
-
         self.assertEqual(result, 0)
         projection.assert_called_once()
-        run.assert_not_called()
+        arm_auto_merge.assert_not_called()
+
 
 
 if __name__ == "__main__":

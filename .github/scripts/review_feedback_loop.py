@@ -35,6 +35,12 @@ import re
 import sys
 from datetime import datetime, timezone
 
+# Note: `_author_is_bot` and `_thread_has_committable_suggestion` also live in
+# pr_threads but are NOT imported here — the engine reaches them only transitively
+# (through `_thread_resolution_disposition`), so the engine's surface stays honest
+# to what it uses. Their unit tests reference them from pr_threads directly.
+import gh_cli
+from pr_github import _fetch_pr, _graphql, _viewer_login
 from pr_threads import (  # shared thread-analysis vocabulary (#600 §5)
     _count_committable_suggestion_threads,
     _thread_authors,
@@ -43,15 +49,6 @@ from pr_threads import (  # shared thread-analysis vocabulary (#600 §5)
     _thread_resolution_disposition,
     _thread_resolved_by,
 )
-
-# Note: `_author_is_bot` and `_thread_has_committable_suggestion` also live in
-# pr_threads but are NOT imported here — the engine reaches them only transitively
-# (through `_thread_resolution_disposition`), so the engine's surface stays honest
-# to what it uses. Their unit tests reference them from pr_threads directly.
-
-import gh_cli
-from pr_github import _fetch_pr, _graphql, _viewer_login
-
 
 APPLY_RE = re.compile(r"@copilot\b[\s\S]*?\bapply changes\b", re.IGNORECASE)
 DEFAULT_GRACE_MINUTES = 30
@@ -1366,8 +1363,6 @@ def _build_reconciliation_report(
 
 def acknowledge_apply(args: argparse.Namespace) -> int:
     """Mark a PR as waiting on follow-up commits after a trusted apply-changes request."""
-    ensure_labels()
-
     if not APPLY_RE.search(args.comment_body or ""):
         print("Comment does not match an @copilot apply request; nothing to do.")
         return 0
@@ -1393,6 +1388,10 @@ def acknowledge_apply(args: argparse.Namespace) -> int:
     labels = {node["name"] for node in pr.get("labels") or [] if node.get("name")}
 
     if DEFAULT_PENDING_LABEL not in labels:
+        # Lifecycle labels only need reconciliation before this branch mutates one.
+        # Keeping this after the request and trust checks prevents every unrelated
+        # review-bot comment from issuing a repository-wide label API sweep.
+        ensure_labels()
         _edit_label(args.pr_number, add=DEFAULT_PENDING_LABEL)
         _comment(
             args.pr_number,
