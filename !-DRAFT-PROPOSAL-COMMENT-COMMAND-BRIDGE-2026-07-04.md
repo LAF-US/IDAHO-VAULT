@@ -68,7 +68,7 @@ regex-validated arguments. **Not** an LLM reading intent; **not** a shell string
 deterministic parser over an allowlisted grammar.
 
 **The job.** A fourth job, `execute-command`, gated
-`if: github.event_name == 'issue_comment' && github.event.issue.pull_request`, job-scoped `contents: write` +
+`if: github.event_name == 'issue_comment' && github.event.issue.pull_request != null`, job-scoped `contents: write` +
 `pull-requests: write`, checkout default branch, run
 `review_feedback_loop.py comment-command --comment-body "$COMMENT_BODY"
 --comment-author "$LOGIN" --author-association "$ASSOC" --comment-id "$CID"`. The

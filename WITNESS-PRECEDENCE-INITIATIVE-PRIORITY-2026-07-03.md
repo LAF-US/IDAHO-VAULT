@@ -6,7 +6,7 @@ doc_class: witness
 status: proposed
 related:
   - "[[PROVENANCE-MARKS]]"
-  - "!-STANDING-ENGINE-AND-LAWFUL-ENDINGS-2026-04-17.md"
+  - "!/STANDING-ENGINE-AND-LAWFUL-ENDINGS-2026-04-17.md"
   - "[[DOCKET-POSTURE]]"
   - "GitHub issue #664 (House Precedence)"
   - "TIME-WAS-WITNESS-2026-06-19.md"

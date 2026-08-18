@@ -141,7 +141,7 @@ agents lack into the substrate itself.
 |---|---|---|
 | Dates in filenames as a near-universal convention (`…-YYYY-MM-DD.md`) | vault-wide | 2, 3 — every citation carries its age on its face |
 | "Any document with 'live' or 'current' written in it is instantaneously out of date" | `CONSTITUTION.md` §I | 3 — kills the "live surface" illusion at doctrine level |
-| Supersession chains (`superseded_by:` frontmatter; historical/GRIMOIRE markings) | e.g. `NETWEB-CREWAI-ALIGNMENT.md` | 2 — stale doctrine self-identifies |
+| Supersession chains (`superseded_by:` frontmatter; historical/GRIMOIRE markings) | e.g. `!/GRIMOIRE_caution_contains-false-doctrines/NETWEB-CREWAI-ALIGNMENT.md` | 2 — stale doctrine self-identifies |
 | Provenance marks: `[handed]` / `[read]` / `[verified]` / `[inferred]` / `[lore]` / `*` | `NAMING-AS-BINDING-v1`, witness docs | 2, 5 — separates today's word from dated notes and from pattern-matched memory |
 | Witness docs pinned to dates; daily notes as a spine | vault-wide | 1, 4 — reconstructable order of events |
 | Epistemological rules: truthfulness / provenance / restraint / handling; "training data is not a valid emanation source" | `PERSONAE-ENGINE-v1` | 2, 5 — ranks sources by chain, not by vividness |
