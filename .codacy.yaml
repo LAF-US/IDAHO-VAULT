@@ -46,7 +46,11 @@
 # source. PMD7 crashes while parsing their generated JavaScript helper files;
 # excluding this package boundary avoids an analyzer failure without hiding
 # repository-authored runtime code.
+# OpenClaw extensions are managed plugin payloads; they are not part of the
+# vault's maintained application TypeScript and do not have a repository
+# tsconfig project. Keep them out of Codacy's typed ESLint input boundary.
 exclude_paths:
   - ".obsidian/plugins/*/main.js"
   - ".obsidian/plugins/*/styles.css"
   - ".codex/skills/**"
+  - ".openclaw/extensions/**"
