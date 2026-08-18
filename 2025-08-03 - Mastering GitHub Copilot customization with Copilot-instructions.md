@@ -107,19 +107,11 @@ To enable Copilot customization in Visual Studio Code, you need to ensure the fo
 
 2\. Search for “Copilot” and ensure the following settings are enabled:
 
-<<<<<<< HEAD
-![VS Code Copilot settings panel showing the instructions options enabled](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*L0Vv0AxeagWmZ7iqtWJZNQ.png)
-
-VS Code Copilot settings: Enable these options for instructions
-
-![VS Code Copilot settings panel showing the prompts options enabled](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*ETIoGGeLrWsL9NHpb88nMA.png)
-=======
 ![VS Code Copilot settings: Enable these options for instructions](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*L0Vv0AxeagWmZ7iqtWJZNQ.png)
 
 VS Code Copilot settings: Enable these options for instructions
 
 ![VS Code Copilot settings: Enable these options for prompts](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*ETIoGGeLrWsL9NHpb88nMA.png)
->>>>>>> 9899939db (Address Copilot review comments on PR #820)
 
 VS Code Copilot settings: Enable these options for prompts
 
@@ -170,10 +162,4 @@ Whether you’re setting up a coding agent for database administration or code r
 
 ### Conclusion
 
-<<<<<<< HEAD
 With just a couple of well-placed Markdown files, you can turn GitHub Copilot from a helpful assistant into a strategic teammate that codes the way you do. These customization techniques not only boost productivity — they embed your engineering standards into every suggestion Copilot makes.
-=======
-With just a couple of well-placed Markdown files, you can turn GitHub Copilot from a helpful
-assistant into a strategic teammate that codes the way you do. These customization techniques not
-only boost productivity — they embed your engineering standards into every suggestion Copilot makes.
->>>>>>> a1fc0ace8 (Remove trailing whitespace from documentation files)
