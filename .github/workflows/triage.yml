@@ -9,9 +9,10 @@ on:
 permissions: {}
 
 concurrency:
-  # Issue numbers are GitHub-issued integers, so this preserves per-issue
-  # serialization without allowing one slow issue to block unrelated triage.
-  group: issue-triage-${{ github.event.issue.number }}
+  # Coerce GitHub's issue number to a JSON number before using it in the
+  # concurrency key. This preserves per-issue serialization without allowing
+  # event-provided text to shape CI configuration.
+  group: issue-triage-${{ fromJSON(github.event.issue.number) }}
   cancel-in-progress: false
 
 jobs:
