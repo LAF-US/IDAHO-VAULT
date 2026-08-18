@@ -22,48 +22,6 @@ def _load_module(module_name: str, relative_path: str):
 
 
 class PhoneLinkContractTest(unittest.TestCase):
-    def test_python_watcher_prefers_explicit_config_before_env_and_fallback(self) -> None:
-        module = _load_module(
-            "phone_link_auto_sweep_contract_test_module",
-            ".github/scripts/phone_link_auto_sweep.py",
-        )
-
-        with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as workspace:
-            explicit_root = Path(workspace) / "explicit-vault-root"
-            explicit_root.mkdir()
-            with unittest.mock.patch.dict(os.environ, {"IDAHO_VAULT_ROOT": r"C:\ignored"}, clear=False):
-                root, source = module.resolve_vault_root(explicit_root)
-
-            self.assertEqual(root, explicit_root.resolve())
-            self.assertEqual(source, "argument")
-
-    def test_python_watcher_uses_env_vault_root_when_no_argument_is_supplied(self) -> None:
-        module = _load_module(
-            "phone_link_auto_sweep_contract_test_module_env",
-            ".github/scripts/phone_link_auto_sweep.py",
-        )
-
-        with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as workspace:
-            env_root = Path(workspace) / "env-vault-root"
-            env_root.mkdir()
-            with unittest.mock.patch.dict(os.environ, {"IDAHO_VAULT_ROOT": str(env_root)}, clear=False):
-                root, source = module.resolve_vault_root()
-
-            self.assertEqual(root, env_root.resolve())
-            self.assertEqual(source, "IDAHO_VAULT_ROOT")
-
-    def test_python_watcher_rejects_missing_configured_vault_root(self) -> None:
-        module = _load_module(
-            "phone_link_auto_sweep_missing_root_test_module",
-            ".github/scripts/phone_link_auto_sweep.py",
-        )
-
-        with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as workspace:
-            missing_root = Path(workspace) / "missing-vault-root"
-
-            with self.assertRaisesRegex(RuntimeError, "Vault root does not exist"):
-                module.resolve_vault_root(missing_root)
-
     def test_launcher_uses_python_not_powershell(self) -> None:
         launcher = (PROJECT_ROOT / "START-PHONE-LINK-SWEEP.cmd").read_text(encoding="utf-8")
         vbs = (PROJECT_ROOT / "phone-link-sweep-launcher.vbs").read_text(encoding="utf-8")
@@ -85,48 +43,129 @@ class PhoneLinkContractTest(unittest.TestCase):
         self.assertIn("--vault-root", wrapper)
         self.assertNotIn(r"C:\Users\loganf\Documents\IDAHO-VAULT", wrapper)
 
-    def test_python_intake_prefers_explicit_vault_root_argument(self) -> None:
+    def test_auto_sweep_allows_only_its_script_vault_root(self) -> None:
         module = _load_module(
-            "phone_link_intake_contract_test_module",
+            "phone_link_auto_sweep_root_test_module",
+            ".github/scripts/phone_link_auto_sweep.py",
+        )
+        with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as workspace:
+            root = Path(workspace)
+            vault = root / "vault"
+            other = root / "other"
+            vault.mkdir()
+            other.mkdir()
+            with unittest.mock.patch.object(module, "TRUSTED_VAULT_ROOT", vault):
+                resolved, source = module.resolve_vault_root(vault)
+                self.assertEqual(resolved, vault)
+                self.assertEqual(source, "argument")
+                with self.assertRaisesRegex(RuntimeError, "script repository"):
+                    module.resolve_vault_root(other)
+
+    def test_auto_sweep_accepts_matching_environment_vault_root(self) -> None:
+        module = _load_module(
+            "phone_link_auto_sweep_env_root_test_module",
+            ".github/scripts/phone_link_auto_sweep.py",
+        )
+        with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as workspace:
+            vault = Path(workspace) / "vault"
+            vault.mkdir()
+            with (
+                unittest.mock.patch.object(module, "TRUSTED_VAULT_ROOT", vault),
+                unittest.mock.patch.dict(os.environ, {"IDAHO_VAULT_ROOT": str(vault)}, clear=False),
+            ):
+                resolved, source = module.resolve_vault_root()
+            self.assertEqual(resolved, vault)
+            self.assertEqual(source, "IDAHO_VAULT_ROOT")
+
+    def test_auto_sweep_rejects_source_outside_downloads_boundary(self) -> None:
+        module = _load_module(
+            "phone_link_auto_sweep_source_boundary_test_module",
+            ".github/scripts/phone_link_auto_sweep.py",
+        )
+        with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as workspace:
+            root = Path(workspace)
+            downloads = root / "Downloads"
+            allowed = downloads / "Phone Link"
+            outside = root / "outside"
+            allowed.mkdir(parents=True)
+            outside.mkdir()
+            with unittest.mock.patch.object(module, "TRUSTED_SOURCE_ROOT", downloads):
+                self.assertEqual(module.resolve_phone_link_source(allowed), allowed.resolve())
+                with self.assertRaisesRegex(RuntimeError, "must be within"):
+                    module.resolve_phone_link_source(outside)
+
+    def test_auto_sweep_rejects_destination_traversal(self) -> None:
+        module = _load_module(
+            "phone_link_auto_sweep_destination_boundary_test_module",
+            ".github/scripts/phone_link_auto_sweep.py",
+        )
+        with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as workspace:
+            vault = Path(workspace) / "vault"
+            vault.mkdir()
+            with self.assertRaisesRegex(RuntimeError, "escapes"):
+                module.safe_child_path(vault, "../outside.txt")
+
+    def test_python_intake_allows_only_its_script_vault_root(self) -> None:
+        module = _load_module(
+            "phone_link_intake_root_test_module",
             ".github/scripts/phone_link_intake.py",
         )
-
         with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as workspace:
-            explicit_root = Path(workspace) / "explicit-vault-root"
-            explicit_root.mkdir()
-            with unittest.mock.patch.dict(os.environ, {"IDAHO_VAULT_ROOT": r"C:\ignored"}, clear=False):
-                self.assertEqual(module.get_vault_root(explicit_root), explicit_root.resolve())
+            root = Path(workspace)
+            vault = root / "vault"
+            other = root / "other"
+            vault.mkdir()
+            other.mkdir()
+            with unittest.mock.patch.object(module, "TRUSTED_VAULT_ROOT", vault):
+                self.assertEqual(module.get_vault_root(vault), vault)
+                with self.assertRaisesRegex(RuntimeError, "script repository"):
+                    module.get_vault_root(other)
 
-    def test_python_intake_uses_env_vault_root_when_no_argument_is_supplied(self) -> None:
+    def test_python_intake_accepts_matching_environment_vault_root(self) -> None:
         module = _load_module(
-            "phone_link_intake_contract_test_module_env",
+            "phone_link_intake_env_root_test_module",
             ".github/scripts/phone_link_intake.py",
         )
-
         with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as workspace:
-            env_root = Path(workspace) / "env-vault-root"
-            env_root.mkdir()
-            with unittest.mock.patch.dict(os.environ, {"IDAHO_VAULT_ROOT": str(env_root)}, clear=False):
-                self.assertEqual(module.get_vault_root(), env_root.resolve())
+            vault = Path(workspace) / "vault"
+            vault.mkdir()
+            with unittest.mock.patch.object(module, "TRUSTED_VAULT_ROOT", vault):
+                with unittest.mock.patch.dict(os.environ, {"IDAHO_VAULT_ROOT": str(vault)}, clear=False):
+                    self.assertEqual(module.get_vault_root(), vault)
 
-    def test_python_intake_rejects_missing_configured_vault_root(self) -> None:
+    def test_python_intake_rejects_source_outside_downloads_boundary(self) -> None:
         module = _load_module(
-            "phone_link_intake_missing_root_test_module",
+            "phone_link_intake_source_boundary_test_module",
             ".github/scripts/phone_link_intake.py",
         )
-
         with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as workspace:
-            missing_root = Path(workspace) / "missing-intake-vault-root"
+            root = Path(workspace)
+            downloads = root / "Downloads"
+            allowed = downloads / "Phone Link"
+            outside = root / "outside"
+            allowed.mkdir(parents=True)
+            outside.mkdir()
+            with unittest.mock.patch.object(module, "TRUSTED_SOURCE_ROOT", downloads):
+                self.assertEqual(module.resolve_phone_link_source(allowed), allowed.resolve())
+                with self.assertRaisesRegex(RuntimeError, "must be within"):
+                    module.resolve_phone_link_source(outside)
 
-            with self.assertRaisesRegex(RuntimeError, "Vault root does not exist"):
-                module.get_vault_root(missing_root)
+    def test_python_intake_rejects_destination_traversal(self) -> None:
+        module = _load_module(
+            "phone_link_intake_destination_boundary_test_module",
+            ".github/scripts/phone_link_intake.py",
+        )
+        with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as workspace:
+            vault = Path(workspace) / "vault"
+            vault.mkdir()
+            with self.assertRaisesRegex(RuntimeError, "escapes"):
+                module.safe_child_path(vault, "../outside.txt")
 
     def test_python_watcher_moves_file_once_into_vault_root(self) -> None:
         module = _load_module(
             "phone_link_auto_sweep_behavior_test_module",
             ".github/scripts/phone_link_auto_sweep.py",
         )
-
         with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as workspace:
             root = Path(workspace)
             source = root / "source"
@@ -148,7 +187,6 @@ class PhoneLinkContractTest(unittest.TestCase):
             "phone_link_auto_sweep_duplicate_test_module",
             ".github/scripts/phone_link_auto_sweep.py",
         )
-
         with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as workspace:
             root = Path(workspace)
             source = root / "source"
@@ -171,7 +209,6 @@ class PhoneLinkContractTest(unittest.TestCase):
             "phone_link_auto_sweep_collision_test_module",
             ".github/scripts/phone_link_auto_sweep.py",
         )
-
         with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as workspace:
             root = Path(workspace)
             source = root / "source"
@@ -196,14 +233,17 @@ class PhoneLinkContractTest(unittest.TestCase):
             "phone_link_auto_sweep_default_source_test_module",
             ".github/scripts/phone_link_auto_sweep.py",
         )
-
         with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as workspace:
             root = Path(workspace)
             vault_root = root / "vault"
             vault_root.mkdir()
-            default_source = root / "default-source"
+            default_source = root / "Downloads" / "Phone Link"
 
-            with unittest.mock.patch.object(module, "DEFAULT_SOURCE", default_source):
+            with (
+                unittest.mock.patch.object(module, "TRUSTED_VAULT_ROOT", vault_root),
+                unittest.mock.patch.object(module, "DEFAULT_SOURCE", default_source),
+                unittest.mock.patch.object(module, "TRUSTED_SOURCE_ROOT", default_source.parent),
+            ):
                 exit_code = module.main(["--vault-root", str(vault_root), "--once"])
 
             self.assertEqual(exit_code, 0)
@@ -214,16 +254,19 @@ class PhoneLinkContractTest(unittest.TestCase):
             "phone_link_auto_sweep_explicit_source_test_module",
             ".github/scripts/phone_link_auto_sweep.py",
         )
-
         with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as workspace:
             root = Path(workspace)
             vault_root = root / "vault"
             vault_root.mkdir()
-            explicit_source = root / "explicit-source-does-not-exist"
+            explicit_source = root / "Downloads" / "missing-source"
 
-            exit_code = module.main(
-                ["--vault-root", str(vault_root), "--source", str(explicit_source), "--once"]
-            )
+            with (
+                unittest.mock.patch.object(module, "TRUSTED_VAULT_ROOT", vault_root),
+                unittest.mock.patch.object(module, "TRUSTED_SOURCE_ROOT", explicit_source.parent),
+            ):
+                exit_code = module.main(
+                    ["--vault-root", str(vault_root), "--source", str(explicit_source), "--once"]
+                )
 
             self.assertEqual(exit_code, 1)
             self.assertFalse(explicit_source.exists())

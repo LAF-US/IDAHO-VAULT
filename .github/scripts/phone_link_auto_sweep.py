@@ -18,32 +18,59 @@ from typing import Iterator
 
 
 DEFAULT_SOURCE = Path.home() / "Downloads" / "Phone Link"
-LEGACY_VAULT_ROOT = Path(r"C:\Users\loganf\Documents\IDAHO-VAULT")
+TRUSTED_SOURCE_ROOT = DEFAULT_SOURCE.parent
+TRUSTED_VAULT_ROOT = Path(__file__).resolve().parents[2]
 LOCK_PATH = Path(tempfile.gettempdir()) / "idaho-vault-phone-link-sweep.lock"
 
 
-def require_existing_dir(path: Path, label: str) -> Path:
-    resolved = path.resolve()
+def normalized_path(path: Path) -> str:
+    """Normalize a configured path lexically, without accessing the filesystem."""
+    return os.path.normcase(os.path.normpath(os.fspath(path)))
+
+
+def resolve_phone_link_source(path: Path) -> Path:
+    """Resolve an existing Phone Link source within the Downloads boundary."""
+    trusted_root = os.path.normcase(os.path.realpath(os.fspath(TRUSTED_SOURCE_ROOT)))
+    candidate = os.path.normcase(os.path.realpath(os.fspath(path)))
+    if not candidate.startswith(trusted_root + os.sep):
+        raise RuntimeError(f"Phone Link source must be within {trusted_root}")
+
+    resolved = Path(candidate)
     if not resolved.exists():
-        raise RuntimeError(f"{label} does not exist: {resolved}")
+        raise RuntimeError(f"Phone Link source does not exist: {resolved}")
     if not resolved.is_dir():
-        raise RuntimeError(f"{label} is not a directory: {resolved}")
+        raise RuntimeError(f"Phone Link source is not a directory: {resolved}")
     return resolved
 
 
+def safe_child_path(parent: Path, relative_path: str) -> Path:
+    """Return a normalized child path only when it remains below ``parent``."""
+    root = os.path.normcase(os.path.realpath(os.fspath(parent)))
+    candidate = os.path.normcase(os.path.realpath(os.path.join(root, relative_path)))
+    if not candidate.startswith(root + os.sep):
+        raise RuntimeError(f"Path escapes its permitted directory: {relative_path}")
+    return Path(candidate)
+
+
 def resolve_vault_root(explicit_root: Path | None = None) -> tuple[Path, str]:
-    """Resolve the destination root from explicit config, env var, then legacy fallback."""
+    """Use the repository containing this script as the only vault destination."""
+    trusted = normalized_path(TRUSTED_VAULT_ROOT)
     if explicit_root is not None:
-        return require_existing_dir(explicit_root, "Vault root"), "argument"
+        if normalized_path(explicit_root) != trusted:
+            raise RuntimeError(f"Vault root must be the script repository: {trusted}")
+        source = "argument"
+    else:
+        env_root = os.environ.get("IDAHO_VAULT_ROOT")
+        if env_root:
+            if normalized_path(Path(env_root)) != trusted:
+                raise RuntimeError(f"IDAHO_VAULT_ROOT must be the script repository: {trusted}")
+            source = "IDAHO_VAULT_ROOT"
+        else:
+            source = "script location"
 
-    env_root = os.environ.get("IDAHO_VAULT_ROOT")
-    if env_root:
-        return require_existing_dir(Path(env_root), "IDAHO_VAULT_ROOT"), "IDAHO_VAULT_ROOT"
-
-    if LEGACY_VAULT_ROOT.exists():
-        return require_existing_dir(LEGACY_VAULT_ROOT, "Legacy vault root"), "legacy fallback"
-
-    raise RuntimeError("No vault root configured. Pass --vault-root or set IDAHO_VAULT_ROOT.")
+    if not TRUSTED_VAULT_ROOT.is_dir():
+        raise RuntimeError(f"Script vault root does not exist: {TRUSTED_VAULT_ROOT}")
+    return TRUSTED_VAULT_ROOT, source
 
 
 def file_hash(path: Path) -> str:
@@ -55,7 +82,7 @@ def file_hash(path: Path) -> str:
 
 
 def resolve_destination(source: Path, target_dir: Path) -> tuple[Path | None, str]:
-    destination = target_dir / source.name
+    destination = safe_child_path(target_dir, source.name)
     if not destination.exists():
         return destination, "direct"
 
@@ -69,7 +96,10 @@ def resolve_destination(source: Path, target_dir: Path) -> tuple[Path | None, st
     attempt = 0
     while True:
         extra = "" if attempt == 0 else f"-{attempt}"
-        candidate = target_dir / f"{stem}-{stamp}-{incoming_hash}{extra}{suffix}"
+        candidate = safe_child_path(
+            target_dir,
+            f"{stem}-{stamp}-{incoming_hash}{extra}{suffix}",
+        )
         if not candidate.exists():
             return candidate, "collision"
         if incoming_hash == file_hash(candidate):
@@ -213,11 +243,11 @@ def main(argv: list[str] | None = None) -> int:
         if args.source is None:
             args.source = DEFAULT_SOURCE
             args.source.mkdir(parents=True, exist_ok=True)
-        source_dir = require_existing_dir(args.source, "Phone Link source")
+        source_dir = resolve_phone_link_source(args.source)
     except RuntimeError as exc:
         print(f"Configuration error: {exc}", file=sys.stderr)
         return 1
-    log_path = target_dir / "!" / "INBOX" / "_phone-link-watcher.log"
+    log_path = safe_child_path(target_dir, "!/INBOX/_phone-link-watcher.log")
 
     with single_instance() as acquired:
         if not acquired:
