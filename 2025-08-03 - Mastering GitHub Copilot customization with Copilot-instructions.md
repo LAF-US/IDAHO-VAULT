@@ -5,48 +5,19 @@ author:
   - "[[Frank Laule]]"
 published: 2025-08-03
 created: 2026-06-03
-<<<<<<< HEAD
-description: "Tired of generic AI code suggestions? With just a few Markdown files, you can teach GitHub Copilot to follow your team’s coding standards, a"
-date created: Wednesday, June 3rd 2026, 2:27:15 pm
-date modified: Wednesday, June 3rd 2026, 2:28:19 pm
-=======
-description: "Learn how to customize GitHub Copilot with Copilot-instructions.md files to make it follow your team's coding standards and best practices."
+description: "Learn how to customize GitHub Copilot with Copilot-instructions.md files to make it follow your team’s coding standards and best practices."
 updated: 2026-06-03
->>>>>>> 96784dbec (Standardize frontmatter metadata and fix admonition tag casing)
 ---
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-**Tired of generic AI code suggestions?** With just a few Markdown files, you can teach GitHub Copilot to follow your team’s coding standards, architectural preferences, and even automate repetitive tasks. In this guide, you’ll learn how to transform Copilot into a truly personalized coding partner — right inside VS Code.
-=======
-> **SOURCE ATTRIBUTION**  
-> This content is a web-clipped excerpt from Frank Laule's Medium article "Mastering GitHub Copilot customization with Copilot-instructions" (https://medium.com/@frank.laule/mastering-github-copilot-customization-with-copilot-instructions-83e8cc1ca10a).  
-=======
 > **SOURCE ATTRIBUTION**
-> This content is a web-clipped excerpt from Frank Laule's Medium article "Mastering GitHub Copilot customization with Copilot-instructions" (https://medium.com/@frank.laule/mastering-github-copilot-customization-with-copilot-instructions-83e8cc1ca10a).
->>>>>>> a1fc0ace8 (Remove trailing whitespace from documentation files)
+> This content is a web-clipped excerpt from Frank Laule’s Medium article "Mastering GitHub Copilot customization with Copilot-instructions" (https://medium.com/@frank.laule/mastering-github-copilot-customization-with-copilot-instructions-83e8cc1ca10a).
 > Clipped for reference and internal documentation purposes. Original work maintains its own license terms; refer to the source for licensing details.
 
-**Tired of generic AI code suggestions?** With just a few Markdown files, you can teach GitHub
-Copilot to follow your team’s coding standards, architectural preferences, and even automate
-repetitive tasks. In this guide, you’ll learn how to transform Copilot into a truly personalized
-coding partner — right inside VS Code.
->>>>>>> 876899f2f (Add source attribution notices to web-clipped content)
+**Tired of generic AI code suggestions?** With just a few Markdown files, you can teach GitHub Copilot to follow your team’s coding standards, architectural preferences, and even automate repetitive tasks. In this guide, you’ll learn how to transform Copilot into a truly personalized coding partner — right inside VS Code.
 
 ## Global Project-Level Instructions
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-\`copilot-instructions.md\` - This Markdown file lives inside the \`.github/\` folder of your repository and defines general guidelines Copilot should follow across the entire project. Global instructions ensure every developer and every Copilot suggestion follows your team’s standards, no matter the file or task.
-=======
-\`.copilot-instructions.md\` - This Markdown file lives inside `.github/` folder of your repository
-=======
-\`.github/copilot-instructions.md\` - This Markdown file lives inside the `.github/` folder of your repository
->>>>>>> 226d35e94 (Address additional Copilot review comments on PR #820)
-and defines general guidelines Copilot should follow across the entire project. Global instructions
-ensure every developer and every Copilot suggestion follows your team’s standards, no matter the
-file or task.
->>>>>>> 9899939db (Address Copilot review comments on PR #820)
+`.github/copilot-instructions.md` - This Markdown file lives inside the `.github/` folder of your repository and defines general guidelines Copilot should follow across the entire project. Global instructions ensure every developer and every Copilot suggestion follows your team’s standards, no matter the file or task.
 
 **Key Features:**
 
