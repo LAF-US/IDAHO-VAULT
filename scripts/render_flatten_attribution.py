@@ -8,6 +8,16 @@ from datetime import date
 from pathlib import Path
 
 
+def resolve_repo_path(repo_root: Path, raw_path: str, label: str) -> Path:
+    """Resolve a CLI path and reject any path outside the repository root."""
+    resolved_path = (repo_root / raw_path).resolve()
+    try:
+        resolved_path.relative_to(repo_root)
+    except ValueError as error:
+        raise ValueError(f"{label} must stay within the repository root: {raw_path}") from error
+    return resolved_path
+
+
 def load_manifest(path: Path) -> list[dict[str, object]]:
     entries: list[dict[str, object]] = []
     with path.open("r", encoding="utf-8") as handle:
@@ -85,15 +95,8 @@ def write_markdown(path: Path, manifest_name: str, csv_name: str, entries: list[
             f"{bucket.get('skipped_machine_state', 0)} |"
         )
 
-    base_dir = Path(".").resolve()
-    resolved_path = path.resolve()
-    try:
-        resolved_path.relative_to(base_dir)
-    except ValueError:
-        raise Exception("Invalid file path")
-    
-    resolved_path.parent.mkdir(parents=True, exist_ok=True)
-    resolved_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
 def main() -> int:
@@ -104,9 +107,9 @@ def main() -> int:
     args = parser.parse_args()
 
     repo_root = Path(".").resolve()
-    manifest_path = repo_root / args.manifest
-    csv_path = repo_root / args.csv
-    markdown_path = repo_root / args.markdown
+    manifest_path = resolve_repo_path(repo_root, args.manifest, "manifest path")
+    csv_path = resolve_repo_path(repo_root, args.csv, "CSV path")
+    markdown_path = resolve_repo_path(repo_root, args.markdown, "Markdown path")
 
     entries = load_manifest(manifest_path)
     write_csv(csv_path, entries)
