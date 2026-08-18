@@ -729,15 +729,13 @@ def ensure_labels() -> None:
     for label, (color, description) in LABEL_SPECS.items():
         try:
             _ensure_label(label, color, description)
-        except RuntimeError as exc:
-            detail = str(exc).replace("%", "%25").replace("\r", "%0D").replace("\n", "%0A")
-            print(f"::warning::ensure_labels skipped '{label}': {detail}", file=sys.stderr)
+        except RuntimeError:
+            print(f"::warning::ensure_labels skipped '{label}' due to a label-management failure", file=sys.stderr)
     for label in RETIRED_LABELS:
         try:
             gh_cli.label_delete(label, check=False)
-        except RuntimeError as exc:
-            detail = str(exc).replace("%", "%25").replace("\r", "%0D").replace("\n", "%0A")
-            print(f"::warning::ensure_labels could not retire '{label}': {detail}", file=sys.stderr)
+        except RuntimeError:
+            print(f"::warning::ensure_labels could not retire '{label}' due to a label-management failure", file=sys.stderr)
 
 
 def _num(value: int) -> str:
