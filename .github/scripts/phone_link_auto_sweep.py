@@ -253,8 +253,8 @@ def main(argv: list[str] | None = None) -> int:
             args.source = DEFAULT_SOURCE
             args.source.mkdir(parents=True, exist_ok=True)
         source_dir = resolve_phone_link_source(args.source)
-    except RuntimeError:
-        print("Configuration error", file=sys.stderr)
+    except RuntimeError as exc:
+        print(f"Configuration error: {exc}", file=sys.stderr)
         return 1
     log_path = safe_child_path(target_dir, "!/INBOX/_phone-link-watcher.log")
 

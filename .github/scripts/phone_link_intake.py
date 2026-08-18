@@ -23,6 +23,7 @@ import hashlib
 import os
 import shutil
 import subprocess
+import sys
 from datetime import datetime
 from pathlib import Path
 
@@ -116,8 +117,8 @@ def main(argv: list[str] | None = None) -> int:
     try:
         source = resolve_phone_link_source(args.source)
         vault_root = get_vault_root(args.vault_root)
-    except RuntimeError:
-        print("Configuration error")
+    except RuntimeError as exc:
+        print(f"Configuration error: {exc}", file=sys.stderr)
         return 1
     files = sorted(f for f in source.iterdir() if f.is_file())
 
