@@ -29,16 +29,6 @@ function Get-VaultRoot {
     return $vaultRoot
 }
 
-function Get-EnvFilePath {
-    param([string]$VaultRoot)
-    return Join-Path $VaultRoot ".op" "openrouter.env"
-}
-
-function Get-ResolverScript {
-    param([string]$VaultRoot)
-    return Join-Path $VaultRoot "!" "resolve-openrouter-secret.ps1"
-}
-
 function Test-OpAvailable {
     if (-not (Test-CommandAvailable "op")) {
         return $false
@@ -57,51 +47,6 @@ function Assert-OpAvailable {
         return $false
     }
     return $true
-}
-
-function Load-EnvFile {
-    param(
-        [Parameter(Mandatory = $true)]
-        [string]$EnvFilePath
-    )
-    if (-not (Test-Path -LiteralPath $EnvFilePath)) {
-        Write-Verbose "Env file not found: $EnvFilePath"
-        return @{}
-    }
-    $env = @{}
-    Get-Content -LiteralPath $EnvFilePath | ForEach-Object {
-        if ($_ -match '^([^=]+)=(.*)$') {
-            $env[$matches[1].Trim()] = $matches[2].Trim()
-        }
-    }
-    return $env
-}
-
-function Get-RepoEnvVars {
-    param([string]$VaultRoot)
-    $envFile = Get-EnvFilePath $VaultRoot
-    return Load-EnvFile $envFile
-}
-
-function Invoke-WithOpOrEnvFallback {
-    param(
-        [Parameter(Mandatory = $true)]
-        [scriptblock]$OpBlock,
-
-        [Parameter(Mandatory = $true)]
-        [scriptblock]$EnvFallback,
-
-        [Parameter(Mandatory = $true)]
-        [string]$VaultRoot
-    )
-    if (Assert-OpAvailable) {
-        return & $OpBlock
-    }
-    $envVars = Get-RepoEnvVars $VaultRoot
-    if ($envVars.Count -eq 0) {
-        Write-Warning "No fallback environment available. Some features may not work."
-    }
-    return & $EnvFallback $envVars
 }
 
 function Get-PlatformInfo {
@@ -133,13 +78,8 @@ Export-ModuleMember -Function @(
     'Test-CommandAvailable',
     'Assert-CommandAvailable',
     'Get-VaultRoot',
-    'Get-EnvFilePath',
-    'Get-ResolverScript',
     'Test-OpAvailable',
     'Assert-OpAvailable',
-    'Load-EnvFile',
-    'Get-RepoEnvVars',
-    'Invoke-WithOpOrEnvFallback',
     'Get-PlatformInfo',
     'Test-IsCrossPlatformSafe',
     'Normalize-PathForPlatform'
