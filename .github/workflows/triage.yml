@@ -14,6 +14,11 @@ concurrency:
 
 jobs:
   triage:
+    # A comment event may be authored by any GitHub user. Do not expose the
+    # write-capable token unless the commenter is a trusted repository actor.
+    if: >-
+      github.event_name != 'issue_comment' ||
+      contains(fromJSON('["MEMBER","COLLABORATOR","OWNER"]'), github.event.comment.author_association)
     runs-on: ubuntu-latest
     timeout-minutes: 60
     permissions:

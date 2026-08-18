@@ -17,11 +17,11 @@ You need either:
 - `issueTitle` and `issueBody` provided in args (preferred — use these directly as the bug report), OR
 - A GitHub issue number or URL mentioned in the conversation (use `gh issue view` to fetch details)
 
-If a `triageDir` is provided in args, use that as the working directory for the triage. Otherwise, default to `triage/gh-<issue_number>` (if you have an issue number) or `triage/current`.
+If a `triageDir` is provided in args, use that as the working directory for the triage. It must be outside the repository root. Otherwise, default to a sibling directory: `../triage-gh-<issue_number>` (if you have an issue number) or `../triage-current`.
 
 ## Step 1: Reproduce
 
-Read and follow [reproduce.md](reproduce.md). Use a subagent for this step to isolate context.
+Read and follow [reproduce.md](reproduce.md) directly. Complete this bounded step before continuing.
 
 After completing reproduction, check the result:
 
@@ -31,7 +31,7 @@ After completing reproduction, check the result:
 
 ## Step 2: Diagnose
 
-Read and follow [diagnose.md](diagnose.md). Use a subagent for this step to isolate context.
+Read and follow [diagnose.md](diagnose.md) directly. Complete this bounded step before continuing.
 
 After completing diagnosis, check your confidence:
 
@@ -40,7 +40,7 @@ After completing diagnosis, check your confidence:
 
 ## Step 3: Verify
 
-Read and follow [verify.md](verify.md). Use a subagent for this step to isolate context.
+Read and follow [verify.md](verify.md) directly. Complete this bounded step before continuing.
 
 After completing verification, check the verdict:
 
@@ -49,7 +49,7 @@ After completing verification, check the verdict:
 
 ## Step 4: Fix
 
-Read and follow [fix.md](fix.md). Use a subagent for this step to isolate context.
+Read and follow [fix.md](fix.md) directly. Complete this bounded step before continuing.
 
 Whether the fix succeeds or fails, continue to Output.
 

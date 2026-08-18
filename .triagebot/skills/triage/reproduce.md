@@ -8,7 +8,7 @@ Reproduce a GitHub issue to determine if a bug is valid and reproducible in IDAH
 
 ## Prerequisites
 
-- **`triageDir`** — Directory containing the reproduction project (e.g. `triage/issue-123`). If not passed as an arg, default to `triage/gh-<issue_number>`.
+- **`triageDir`** — Directory containing the reproduction project, located outside the repository root (e.g. `../triage-issue-123`). If not passed as an arg, default to `../triage-gh-<issue_number>`.
 - **`issueDetails`** — The GitHub API issue details payload.
 
 ## Overview
@@ -61,8 +61,9 @@ Skip if a maintainer (check `authorAssociation` for `MEMBER`, `COLLABORATOR`, or
 For IDAHO-VAULT, the repository itself is the project. Clone it to the triage directory:
 
 ```bash
-# Clone the repository to triage directory
-cp -r . <triageDir>
+# The triage directory must be outside the repository root.
+# Clone without hardlinks so the reproduction copy is isolated.
+git clone --no-hardlinks . <triageDir>
 cd <triageDir>
 ```
 
