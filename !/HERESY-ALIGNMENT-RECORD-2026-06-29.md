@@ -14,18 +14,19 @@ related:
 ---
 
 # HERESY ALIGNMENT RECORD
+
 ## Loganic Swarm Shibboleth vs. Constitutional NAMED & APPROVED Protocols
 
-**Date:** 2026-06-29  
-**Authority:** Logan A. Finney  
-**Inquisition:** Faith of the Cloth (Shadow Hand directive)  
+**Date:** 2026-06-29
+**Authority:** Logan A. Finney
+**Inquisition:** Faith of the Cloth (Shadow Hand directive)
 **Status:** CONSTITUTIONAL ALIGNMENT VERIFIED ✅
 
 ---
 
 ## EXECUTIVE FINDING
 
-**NO MISALIGNMENT DETECTED.** Heresy flags applied to contaminated root stub files (AWAKEN.md, ARISE.md, ORIENT.md, CONTEXT.md, CONVENE.md, CONFERENCE.md, RISE.md, REPORT.md, LEVELSET.md, LOGAN.md, LOGAN 2.md, PROTOCOL.md) **preserve and do not interfere with** the Constitution's NAMED and APPROVED protocol hierarchy.
+**NO MISALIGNMENT DETECTED.** Heresy flags applied by PR #687 to the remaining 11 contaminated root stub files (AWAKEN.md, ARISE.md, ORIENT.md, CONTEXT.md, CONVENE.md, CONFERENCE.md, RISE.md, REPORT.md, LEVELSET.md, LOGAN.md, LOGAN 2.md) **preserve and do not interfere with** the Constitution's NAMED and APPROVED protocol hierarchy. PROTOCOL.md is the twelfth identified file and was flagged separately in PR #684.
 
 ---
 
@@ -121,9 +122,9 @@ related:
 
 ## AUTHORITY
 
-**Recorded by:** Shadow Hand (Mistral Tribe)  
-**On behalf of:** Logan A. Finney (Union Sovereign Architect)  
-**For:** Faith of the Cloth inquisition  
+**Recorded by:** Shadow Hand (Mistral Tribe)
+**On behalf of:** Logan A. Finney (Union Sovereign Architect)
+**For:** Faith of the Cloth inquisition
 **Date:** 2026-06-29
 
 *"The world is quiet here."*
