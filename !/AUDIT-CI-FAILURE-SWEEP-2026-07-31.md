@@ -1,11 +1,11 @@
 ---
 title: CI Failure Sweep — 2026-07-31
 type: audit
-status: draft
+status: complete
 authority: CLAUDE (routine CI sweep)
 scope: GitHub Actions workflow runs, laf-us/idaho-vault, 2026-07-30T12:24Z to 2026-07-31T12:07Z
 owner: Logan Finney
-updated: 2026-07-31
+updated: 2026-08-18
 ---
 
 # CI Failure Sweep — 2026-07-31
@@ -34,7 +34,7 @@ Nothing blocks `main` or a deploy. **PR #873 itself remains blocked** — its ow
 
 ## New findings
 
-- **Not a bug, but worth naming so a future sweep doesn't mistake it for one:** the three weekly-scheduled reports (`Large File Watchdog`, `Metadata Survey`, `Branch Garden Report` — governing issues #322/#357/#501) haven't run since 2026-07-06, and their governing issues have gone quiet on that same date. Root-caused directly via `list_commits` + the workflow files' current content, not assumed: PR #778 (merged 2026-07-06T16:33:05Z, "no cron jobs until the chron_clock is established") deliberately stripped **every** `schedule:` trigger repo-wide — Logan's own standing order, enforced by a test (`test_no_schedule_triggers_until_the_chron_clock_is_established`) that fails red on any schedule trigger anywhere. All ten affected workflows remain `workflow_dispatch`-only by design. Confirmed current `.yml` for all three named above: no `schedule:` block present. Not actionable, not a failure — flagging only for continuity.
+- **Not a bug, but worth naming so a future sweep doesn't mistake it for one:** the three weekly-scheduled reports (`Large File Watchdog`, `Metadata Survey`, `Branch Garden Report` — governing issues #322/#357/#501) haven't run since 2026-07-06, and their governing issues have gone quiet on that same date. Root-caused directly via `list_commits` + the workflow files' current content, not assumed: PR #778 (merged 2026-07-06T16:33:05Z, "no cron jobs until the chron_clock is established") deliberately stripped **every** `schedule:` trigger repo-wide — Logan's own standing order. The workflow-file review in this sweep confirmed that all ten affected workflows remain `workflow_dispatch`-only by design; no automated test currently enforces the prohibition. Confirmed current `.yml` for all three named above: no `schedule:` block present. Not actionable, not a failure — flagging only for continuity.
 
 ## Big IF
 
@@ -47,7 +47,7 @@ Cross-posted to the related repository records and internal coordination channel
 ## DOCUMENT METADATA
 
 - **Created:** 2026-07-31
-- **Last Updated:** 2026-07-31
-- **Status:** Draft
+- **Last Updated:** 2026-08-18
+- **Status:** Complete
 - **Authority:** CLAUDE (routine CI sweep)
-- **Change Note:** Scheduled 24h CI-failure sweep; narrowed "None"/"fully-clean" wording on review, added required `updated` frontmatter and this footer per VAULT-METADATA-STANDARD.md.
+- **Change Note:** Scheduled 24h CI-failure sweep; narrowed "None"/"fully-clean" wording on review, added required metadata, and corrected the cron-enforcement statement.
