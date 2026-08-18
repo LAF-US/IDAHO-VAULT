@@ -62,6 +62,8 @@ For IDAHO-VAULT, make changes based on the issue type:
 - Rename files for consistency
 - Update all references to the moved/renamed files
 
+**Protected surfaces — mandatory stop condition:** Before proposing or making any move, rename, or restructuring change, read the applicable frontmatter and `VAULT-CONVENTIONS.md`. Do not modify `!/`, root-flat notes, or another agent's persona folder without Logan's explicit authorization. Record the blocked recommendation in `report.md` and return `fixed: false` when the requested change touches a protected surface.
+
 **Keep it minimal:**
 - Only change what's necessary to fix the bug
 - Don't refactor unrelated content
