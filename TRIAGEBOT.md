@@ -13,4 +13,6 @@ authority: LOGAN
 
 Repository-specific skills and configuration for `withastro/triagebot-action`. This chamber orchestrates automated triage workflows for GitHub issues and pull requests.
 
-See `.triagebot/` for implementation details.
+Implementation details and skill definitions are in `.triagebot/skills/`.
+
+Note: `.triagebot/stub.txt` is a vacancy sentinel required by the vault's dotfolder anchor specification (STUB-PERSONAFOLDERS), not configuration.
