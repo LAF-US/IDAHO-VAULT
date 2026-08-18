@@ -15,7 +15,8 @@ def _load_doctrinal_flatten_module():
         script_path,
     )
     module = importlib.util.module_from_spec(spec)
-    assert spec.loader is not None
+    if spec.loader is None:
+        raise RuntimeError(f"Unable to load {script_path}")
     sys.modules[spec.name] = module
     spec.loader.exec_module(module)
     return module
