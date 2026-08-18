@@ -23,7 +23,6 @@
   "obsidian-day-planner",
   "dataview",
   "obsidian-tasks-plugin",
-  "calendar",
   "obsidian-folder-index",
   "obsidian-icon-folder",
   "oz-image-plugin",
@@ -42,5 +41,6 @@
   "quickadd",
   "obsidian-tidy-footnotes",
   "time-ruler",
-  "translate"
+  "translate",
+  "calendarium"
 ]
