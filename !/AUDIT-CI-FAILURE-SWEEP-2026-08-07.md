@@ -20,7 +20,7 @@ owner: Logan Finney
 | **When** | 2026-08-06T05:45Z – 2026-08-07T05:48Z. |
 | **Where** | `main` itself (blocking, since the 05:48 merge of PR #933), the now-merged `claude/apply-patch-fixes-9gesn5` branch (ran red ~2 days before merging anyway), and the still-open `audit/gitignore-836` / PR #934 (inherited + compounded the same root cause). |
 | **Why** | The original analysis attributed both incidents to `pyproject.toml` losing `[dependency-groups].dev`/`[build-system]`, which it concluded prevented `uv sync` from installing `pytest`/`coverage`. That evidence trail is retained historically, but the causal interpretation and proposed restoration are retracted; see the correction above. |
-| **How** | Category: Code (1, root cause; fixed) + cascading Code failures downstream of it (3 workflow shapes) + Transient (2 job-level `cancelled` results misreported as run-level `failure`, due to concurrency-group supersession on rapid pushes — not a real defect). |
+| **How** | Historical category analysis: the Code root-cause attribution and its claimed cascading downstream failures are retracted; the Transient observation remains that 2 job-level `cancelled` results were misreported as run-level `failure` due to concurrency-group supersession on rapid pushes, not a real defect. |
 
 ## Findings
 
@@ -54,4 +54,4 @@ During the original, now-retracted restoration, `tests/test_dotfolder_gitignore_
 - **The commit that caused the regression has a broken commit message** (literally just the `Author:` git trailer, nothing else) — consistent with a mechanical slip (bad `git checkout <old-sha> -- pyproject.toml`, a script that mis-templated its commit message, or similar) rather than a deliberate edit. Not asserting more than the metadata shows; flagging because "confident output with no valid emanation chain" is exactly the failure this sweep exists to catch, and I'd rather name the gap than guess at intent.
 
 ---
-Cross-posted: GitHub issue #822 (comment), Linear LAF-72 (comment), Slack #all-logan-finney, Discord #ledger (via Zapier). This historical analysis and its proposed dependency restoration are retracted in PR #935.
+This historical analysis and its proposed dependency restoration are retracted in PR #935.
