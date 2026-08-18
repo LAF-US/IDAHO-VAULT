@@ -733,7 +733,11 @@ def ensure_labels() -> None:
             detail = str(exc).replace("%", "%25").replace("\r", "%0D").replace("\n", "%0A")
             print(f"::warning::ensure_labels skipped '{label}': {detail}", file=sys.stderr)
     for label in RETIRED_LABELS:
-        gh_cli.label_delete(label, check=False)
+        try:
+            gh_cli.label_delete(label, check=False)
+        except RuntimeError as exc:
+            detail = str(exc).replace("%", "%25").replace("\r", "%0D").replace("\n", "%0A")
+            print(f"::warning::ensure_labels could not retire '{label}': {detail}", file=sys.stderr)
 
 
 def _num(value: int) -> str:
