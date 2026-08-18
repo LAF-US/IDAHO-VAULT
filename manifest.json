@@ -1,6 +1,6 @@
 {
   "manifest_version": "1.0.0",
-  "generated_at": "2026-04-23T13:08:31.029228Z",
+  "generated_at": "2026-07-30T12:23:16.000000Z",
   "authority": {
     "canonical_system": "vault",
     "execution_system": "github",
@@ -114,7 +114,6 @@
       "obsidian-day-planner",
       "dataview",
       "obsidian-tasks-plugin",
-      "calendar",
       "obsidian-folder-index",
       "obsidian-icon-folder",
       "oz-image-plugin",
@@ -133,7 +132,8 @@
       "quickadd",
       "obsidian-tidy-footnotes",
       "time-ruler",
-      "translate"
+      "translate",
+      "calendarium"
     ],
     "enabled_core_plugins": [
       "file-explorer",
@@ -243,7 +243,6 @@
         {
           "id": "calendar_date",
           "plugins": [
-            "calendar",
             "calendarium",
             "keep-the-rhythm"
           ]
@@ -386,12 +385,6 @@
         "name": "Breadcrumbs",
         "version": "4.4.4",
         "path": ".obsidian/plugins/breadcrumbs/manifest.json"
-      },
-      {
-        "id": "calendar",
-        "name": "Calendar",
-        "version": "1.5.10",
-        "path": ".obsidian/plugins/calendar/manifest.json"
       },
       {
         "id": "calendarium",
@@ -813,7 +806,6 @@
       "ai-templater",
       "beautiful-contact-cards",
       "bmo-chatbot",
-      "calendarium",
       "cmdr",
       "dataview-autocompletion",
       "dataview-properties",

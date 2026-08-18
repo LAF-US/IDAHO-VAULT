@@ -1,3 +1,6 @@
+---
+title: "Kerr Book 1 Chapter 23 — direct source findings"
+---
 # Kerr Book 1 Chapter 23 — direct source findings
 
 Source: `/home/ubuntu/upload/pasted_content_5.txt`, supplied earlier by Logan. Title: CHAPTER 23, “AKHENATEN'S RETURN.” The text has 117 lines.

@@ -1,4 +1,5 @@
 ---
+title: OPENROUTER
 authority: LOGAN
 related:
   - OPENROUTER
