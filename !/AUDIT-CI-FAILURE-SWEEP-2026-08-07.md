@@ -1,15 +1,15 @@
 ---
 title: CI Failure Sweep — 2026-08-07
 type: audit
-status: draft
+status: historical
 authority: CLAUDE (routine CI sweep)
 scope: GitHub Actions workflow runs, laf-us/idaho-vault, 2026-08-06T05:45Z to 2026-08-07T05:48Z
 owner: Logan Finney
 ---
 
-# CI Failure Sweep — 2026-08-07
+# CI Failure Sweep — 2026-08-07 (Retracted)
 
-> **Correction, added same day after the fact-finding below was first written:** this sweep's core conclusion — that `pyproject.toml`'s reduction to a minimal stub was accidental corruption needing restoration — was wrong, and PR #935 (which acted on that conclusion) has been retracted. #928 ("Delete tests/", open since 2026-08-05) deletes the whole `tests/` suite plus `python-test-suite.yml`/`codacy-coverage-reporter.yml`, because the tests were judged to pass without exercising what they claimed to cover; that thread already treated the minimal manifest as the deliberate current state in comments predating this sweep. #934 is Logan's own hand-edit on that same minimal state, adding back only `pytest`/`uv` — not the full dependency-groups/build-system/CrewAI runtime set this sweep restored. The commit-tracing below (what `a2766c40` changed, and when) is left as-written and is still accurate as description; what was wrong was the inference that the change was unwanted. Not editing the body below in place — leaving the original reasoning visible rather than papering over the gap it left.
+> **Correction, added after the fact-finding below was first written:** this sweep's core conclusion — that `pyproject.toml`'s reduction to a minimal stub was accidental corruption needing restoration — was wrong, and PR #935's proposed restoration has been retracted. #928 ("Delete tests/", open since 2026-08-05) deletes the whole `tests/` suite plus `python-test-suite.yml`/`codacy-coverage-reporter.yml`, because the tests were judged to pass without exercising what they claimed to cover; that thread already treated the minimal manifest as the deliberate current state in comments predating this sweep. #934 is Logan's own hand-edit on that same minimal state, adding back only `pytest`/`uv` — not the full dependency-groups/build-system/CrewAI runtime set this sweep restored. This PR therefore retains current main's minimal manifest, lockfile, and requirements export. The commit-tracing below remains as a historical record of what `a2766c40` changed and when; the inference that the change was unwanted, and the restoration proposed below, are retracted.
 
 ## 5W Summary
 
@@ -37,11 +37,11 @@ That commit lived on `claude/apply-patch-fixes-9gesn5`, which then ran red for t
 
 This branch was red on every single push for ~2 days and merged into `main` anyway — worth a look at whether required-checks/branch-protection actually gates this repo's merges, separate from this fix.
 
-**Fix:** PR #935 restores `pyproject.toml` verbatim from `4bebc445` and restores `uv.lock` from that same commit (not a fresh `uv lock` resolve, to avoid drifting the dependency set the test suite already asserts a count against), regenerating `requirements.txt` from it. Verified locally: `uv sync` installs the full set; `uv run pytest tests` and `uv run coverage run -m unittest discover -s tests` both execute (558 passed). Two pre-existing, unrelated failures surfaced now that pytest can run at all — see Incident A-1.
+**Original proposed fix — retracted:** PR #935 initially restored `pyproject.toml` and `uv.lock` from `4bebc445` and regenerated `requirements.txt`. The historical local verification recorded `558 passed, 2 failed` from `uv run pytest tests`; the two failures are described in Incident A-1. This proposed restoration has been removed, and PR #935 now retains current main's deliberate minimal dependency state.
 
 #### Incident A-1 — two tests now visibly fail against Logan's deliberate `.gitignore` simplification — Configuration, needs a decision, not fixed here
 
-Once PR #935 restores pytest, `tests/test_dotfolder_gitignore_policy.py::test_salvaged_secret_and_runtime_variants_are_ignored` and `tests/test_security_surface_quarantine.py::...test_unreviewed_bridge_session_and_launcher_surfaces_are_quarantined` fail. Both assert specific `.gitignore` patterns (`.mcp.json`, `session-export-*/`, `gpg-agent.conf`, various salvaged-secret path shapes) that `loganfinneyPTV` deliberately removed on 2026-08-03 (`3591a4bb`, "Simplify .gitignore: track by default, ignore only secrets and exhaust"). They were masked until now only because `main` couldn't run `pytest` at all. Not touched in PR #935 — reverting the `.gitignore` simplification or relaxing the tests is a policy call, not a side effect of a dependency fix.
+During the original, now-retracted restoration, `tests/test_dotfolder_gitignore_policy.py::test_salvaged_secret_and_runtime_variants_are_ignored` and `tests/test_security_surface_quarantine.py::...test_unreviewed_bridge_session_and_launcher_surfaces_are_quarantined` failed. Both assert specific `.gitignore` patterns (`.mcp.json`, `session-export-*/`, `gpg-agent.conf`, various salvaged-secret path shapes) that `loganfinneyPTV` deliberately removed on 2026-08-03 (`3591a4bb`, "Simplify .gitignore: track by default, ignore only secrets and exhaust"). They were masked until now only because `main` couldn't run `pytest` at all. Not touched in PR #935 — reverting the `.gitignore` simplification or relaxing the tests is a policy call, not a side effect of a dependency fix.
 
 ### Incident B — `audit/gitignore-836` / PR #934 inherited Incident A's root cause and compounded it — Code, not fixed here (different branch's own history)
 

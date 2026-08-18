@@ -165,6 +165,16 @@ That means:
 | `obsidian-day-planner` | Workflow-adjacent | Configured and potentially useful, but no tracked template, doctrine surface, or automation currently depends on its timeline UI |
 | `nldates-obsidian` | Input convenience | Helps with typing dates, but the time system does not rely on it to remain lawful |
 
+### Proposed for time/workflow and overruled
+
+| Plugin ID | Standing | Notes |
+| --- | --- | --- |
+| `obsidian-full-calendar` | Overruled / never installed | Obsidian integration for fullcalendar.io, proposed on PR #885 and **overruled by Logan on 2026-08-12**. It never got past a proposal on a branch — plugin binaries are gitignored, so nothing here ever installed it. The day-shape it was meant to display is kept, superseded, in `NAMED-HOURS-2026-07-31.md`; the CSS snippet that would have painted it was removed with the proposal. Do not re-propose it as a way of rendering the named spans: those spans live in `cron_clock`, and their boundaries do not land on the 30-minute slot marks FullCalendar's time grid exposes. |
+
+The row is kept so the decision stays discoverable, not because the plugin has
+standing. Nothing in this repository should be read as evidence that it is
+installed or enabled.
+
 ### Explicitly out of current time/workflow scope
 
 | Plugin ID | Status | Why it stays out of scope now |
