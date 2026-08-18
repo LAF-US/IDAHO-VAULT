@@ -10,15 +10,15 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 
-
 PROJECT_ROOT = Path(__file__).resolve().parent
 
 
 def _load_resolver():
     script_path = PROJECT_ROOT / "!" / "resolve_openrouter_secret.py"
     spec = importlib.util.spec_from_file_location("openrouter_secret_resolver_test_module", script_path)
+    if spec is None or spec.loader is None:
+        raise RuntimeError(f"Could not load test module from {script_path}")
     module = importlib.util.module_from_spec(spec)
-    assert spec.loader is not None
     spec.loader.exec_module(module)
     return module
 

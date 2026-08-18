@@ -10,7 +10,6 @@ import stat
 import sys
 import tempfile
 
-
 REPO_ROOT = pathlib.Path(__file__).resolve().parents[1]
 ENV_FILE = REPO_ROOT / ".op" / "openrouter.env"
 KEY_RE = re.compile(r"^(?:export\s+)?([A-Z][A-Z0-9_]*)=(.*)$")

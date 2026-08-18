@@ -12,8 +12,9 @@ PROJECT_ROOT = Path(__file__).resolve().parent
 def _load_module(module_name: str, relative_path: str):
     script_path = PROJECT_ROOT / relative_path
     spec = importlib.util.spec_from_file_location(module_name, script_path)
+    if spec is None or spec.loader is None:
+        raise RuntimeError(f"Could not load test module from {script_path}")
     module = importlib.util.module_from_spec(spec)
-    assert spec.loader is not None
     spec.loader.exec_module(module)
     return module
 
@@ -93,23 +94,34 @@ class OpenRouterRuntimeTest(unittest.TestCase):
 
     def test_exec_agent_uses_only_the_static_approved_binary(self) -> None:
         runtime_env = {"PATH": r"C:\\mock\\bin"}
+        executable = "/mock/bin/codex"
         with (
             patch.object(openrouter_runtime, "apply_runtime_env", return_value=runtime_env),
-            patch.object(openrouter_runtime.os, "execvpe") as execvpe,
+            patch.object(
+                openrouter_runtime,
+                "resolve_approved_agent_executable",
+                return_value=executable,
+            ),
+            patch.object(openrouter_runtime.os, "execve") as execve,
         ):
             openrouter_runtime.exec_agent("codex", [])
 
-        execvpe.assert_called_once_with("codex", ["codex"], runtime_env)
+        execve.assert_called_once_with(executable, [executable], runtime_env)
 
     def test_exec_agent_missing_binary_is_clear(self) -> None:
         with (
             patch.object(openrouter_runtime, "apply_runtime_env", return_value={}),
-            patch.object(openrouter_runtime.os, "execvpe", side_effect=FileNotFoundError),
+            patch.object(
+                openrouter_runtime,
+                "resolve_approved_agent_executable",
+                return_value="/mock/bin/codex",
+            ),
+            patch.object(openrouter_runtime.os, "execve", side_effect=FileNotFoundError),
         ):
             with self.assertRaises(SystemExit) as exc:
                 openrouter_runtime.exec_agent("codex", [])
 
-        self.assertIn("Could not find approved 'codex' executable", str(exc.exception))
+        self.assertIn("Could not execute approved 'codex' executable", str(exc.exception))
 
     def test_windows_launcher_uses_a_fixed_agent_command_map_without_args(self) -> None:
         launcher = (PROJECT_ROOT / "scripts" / "Use-OpenRouterEnv.ps1").read_text(encoding="utf-8")
@@ -127,18 +139,23 @@ class OpenRouterRuntimeTest(unittest.TestCase):
 
     def test_launch_agent_handoffs_only_the_static_runtime_command(self) -> None:
         env_file = PROJECT_ROOT / ".op" / "openrouter.env"
+        op_executable = "/mock/bin/op"
         with (
-            patch.object(openrouter_runtime, "ensure_op_available"),
+            patch.object(
+                openrouter_runtime,
+                "ensure_op_available",
+                return_value=op_executable,
+            ),
             patch.object(openrouter_runtime, "ensure_op_signed_in"),
             patch.object(openrouter_runtime, "ensure_env_file", return_value=env_file),
-            patch.object(openrouter_runtime.os, "execvpe") as execvpe,
+            patch.object(openrouter_runtime.os, "execve") as execve,
         ):
             openrouter_runtime.launch_agent("codex", [])
 
-        execvpe.assert_called_once_with(
-            "op",
+        execve.assert_called_once_with(
+            op_executable,
             [
-                "op",
+                op_executable,
                 "run",
                 f"--env-file={env_file}",
                 "--",
