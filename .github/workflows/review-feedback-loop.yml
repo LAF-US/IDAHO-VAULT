@@ -16,6 +16,11 @@ jobs:
     if: >
       github.event_name == 'issue_comment' &&
       github.event.issue.pull_request
+    # Queue concurrent trusted requests for one PR so the label read, mutation,
+    # and acknowledgement remain idempotent under a comment burst.
+    concurrency:
+      group: acknowledge-copilot-apply-${{ github.event.issue.number }}
+      cancel-in-progress: false
     runs-on: ubuntu-latest
     steps:
       - name: Checkout trusted workflow surfaces

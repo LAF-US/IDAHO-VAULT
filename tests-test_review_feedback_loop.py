@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import importlib.util
 import io
+import json
 import sys
 import unittest
 from datetime import datetime, timedelta, timezone
@@ -11,18 +12,31 @@ from unittest import mock
 
 
 def _load_review_feedback_loop_module():
-    project_root = Path(__file__).resolve().parent
-    script_dir = project_root / ".github" / "scripts"
-    if str(script_dir) not in sys.path:
-        sys.path.insert(0, str(script_dir))
+    script_name = Path(".github/scripts/review_feedback_loop.py")
+    project_root = next(
+        (candidate for candidate in Path(__file__).resolve().parents if (candidate / script_name).is_file()),
+        None,
+    )
+    if project_root is None:
+        raise RuntimeError(f"Unable to find repository root containing {script_name}")
 
-    script_path = script_dir / "review_feedback_loop.py"
-    spec = importlib.util.spec_from_file_location("review_feedback_loop_test_module", script_path)
-    if spec is None or spec.loader is None:
-        raise RuntimeError(f"Unable to load review feedback loop from {script_path}")
-    module = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(module)
-    return module
+    script_dir = project_root / ".github" / "scripts"
+    script_dir_text = str(script_dir)
+    added_to_path = script_dir_text not in sys.path
+    if added_to_path:
+        sys.path.insert(0, script_dir_text)
+
+    try:
+        script_path = script_dir / "review_feedback_loop.py"
+        spec = importlib.util.spec_from_file_location("review_feedback_loop_test_module", script_path)
+        if spec is None or spec.loader is None:
+            raise RuntimeError(f"Unable to load review feedback loop from {script_path}")
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        return module
+    finally:
+        if added_to_path:
+            sys.path.remove(script_dir_text)
 
 
 review_feedback_loop = _load_review_feedback_loop_module()
@@ -301,7 +315,9 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
 
         with mock.patch.object(review_feedback_loop, "ensure_labels") as ensure_labels, mock.patch.object(
             review_feedback_loop.gh_cli, "pr_view"
-        ) as pr_view, mock.patch("sys.stdout", new_callable=io.StringIO) as stdout:
+        ) as pr_view, mock.patch.object(
+            review_feedback_loop.sys, "stdout", new_callable=io.StringIO
+        ) as stdout:
             result = review_feedback_loop.acknowledge_apply(args)
 
         self.assertEqual(result, 0)
@@ -323,7 +339,9 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             review_feedback_loop.gh_cli,
             "pr_view",
             return_value=SimpleNamespace(
-                stdout='{"labels": [{"name": "merge/copilot-apply-pending"}]}'
+                stdout=json.dumps(
+                    {"labels": [{"name": review_feedback_loop.DEFAULT_PENDING_LABEL}]}
+                )
             ),
         ), mock.patch.object(review_feedback_loop, "_edit_label") as edit_label, mock.patch.object(
             review_feedback_loop, "_comment"
