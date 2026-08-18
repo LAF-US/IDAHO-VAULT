@@ -1,4 +1,5 @@
 ---
+title: JOE
 authority: LOGAN
 related:
   - CONSTITUTION

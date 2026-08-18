@@ -1,41 +1,24 @@
 ---
-
+title: PLUGIN-TRIAGE-UTF8
 authority: LOGAN
-
-status: OPEN — awaiting Logan's decisions at Checkpoints 1–4
-
+status: "OPEN — awaiting Logan's decisions at Checkpoints 1–4"
 date: 2026-04-06
-
 updated: 2026-04-07
-
 branch: claude/obsidian-plugins-triage-YDJ6Z
-
-related: []
-
-- '2026-04-06'
-
-- '2026-04-07'
-
-- AGENTS
-
-- Breadcrumbs
-
-- CLAUDE
-
-- DOCKET
-
-- LEVELSET-CURRENT
-
-- Obsidian Sync
-
-- PROTOCOL-CONFERENCE-CALL
-
-- agent
-
-- plugins
-
-date created: Monday, April 6th 2026, 9:28:12 pm
-date modified: Monday, April 6th 2026, 9:35:16 pm
+related:
+  - '2026-04-06'
+  - '2026-04-07'
+  - AGENTS
+  - Breadcrumbs
+  - CLAUDE
+  - DOCKET
+  - LEVELSET-CURRENT
+  - Obsidian Sync
+  - PROTOCOL-CONFERENCE-CALL
+  - agent
+  - plugins
+date created: "Monday, April 6th 2026, 9:28:12 pm"
+date modified: "Monday, April 6th 2026, 9:35:16 pm"
 ---
 
 

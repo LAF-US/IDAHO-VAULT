@@ -3,7 +3,7 @@ title: CI Failure Sweep — 2026-08-12
 type: audit
 status: draft
 authority: CLAUDE (routine CI sweep)
-scope: GitHub Actions workflow runs, LAF-US/IDAHO-VAULT, 2026-08-10T19:39:33Z to 2026-08-12T19:39:33Z
+scope: GitHub Actions workflow runs, laf-us/idaho-vault, ~2026-08-11T08:22Z to 2026-08-12T08:22Z
 owner: Logan Finney
 ---
 
@@ -13,79 +13,31 @@ owner: Logan Finney
 
 | | |
 |---|---|
-| **Who** | GitHub Actions runners on `LAF-US/IDAHO-VAULT`. `loganfinney27` (agent-driven pushes) and `github-merge-queue[bot]` account for nearly all triggering actors; no new human-caused breakage. |
-| **What** | 273 workflow runs concluded `failure` in the window. Swept by `list_workflow_runs(status=failure)`, paginated back to the 48h cutoff, then verified with `get_workflow_jobs`/job-log pulls per distinct category rather than trusting the run-count alone. 213 of the 273 (78%) turned out to be one non-blocking artifact, not 213 separate problems — confirmed by pulling a live PR's actual check-runs list and finding it absent. Six real, distinct categories remain; two are already fixed in an open PR from another live session. |
-| **When** | 2026-08-10T19:39:33Z – 2026-08-12T19:39:33Z. |
-| **Where** | Dominant volume on `claude/apply-patch-fixes-9gesn5` (PR #962, actively iterating), `claude/looker-attestation-wording-qzt7le`, `claude/shall-rome-lyrics-ok9049`; a handful of one-offs on `main`, PR #572, PR #940, PR #885, PR #837/#503. Zero runs verified as an actual PR-blocking gate. |
-| **Why** | Per-incident root cause below, each backed by a quoted log excerpt or a direct API check — not inferred from pattern-matching. |
-| **How** | Category breakdown: Non-blocking artifact (1 incident, 213 runs), Code — already fixed elsewhere (2 incidents, 34 runs), Code — unaddressed (2 incidents, 17 runs), Infra/transient (1 incident, 6 runs), External service (1 incident, 1 run), Content debt (1 incident, 1 run). |
+| **Who** | GitHub Actions runners on `laf-us/idaho-vault` (66 workflows per `list_workflows`). One reoccurring, repo-wide failure found and fixed in this same PR. No other new breakage confirmed. |
+| **What** | `.github/workflows/agent-swarm-signing-proof.yml` carried an invalid `permissions.administration` key, which fails GitHub's workflow-file schema validation outright. Because the file is evaluated against every push (to determine triggers) regardless of its own `on:` block, this surfaced as a "failed" run — 0 jobs, run name literally the file's path, event `push` — attributed to whichever branch was pushed to, on **every push to every branch in the repo**. |
+| **When** | Introduced by commit `48b6d8b2` (2026-08-10T23:54:48Z), a well-intentioned but incorrect prior fix for a different problem (see Findings). Confirmed still firing through 2026-08-12T06:04:05Z, when this sweep applied the fix. |
+| **Where** | Not on `main` directly, and not a required PR status check (the file only declares `workflow_call`, never `pull_request`) — but it hit every branch that received a push during the ~33-hour window: sampled directly on `claude/poka-yoke-qzt7le`, `claude/fullcalendar-obsidian-integration-1u2a0l`, `claude/practical-cerf-6wgxnl`, and `claude/apply-patch-fixes-9gesn5`. |
+| **Why** | `administration` is not a recognized `GITHUB_TOKEN` permission scope. Verified against GitHub's own Actions permissions reference, which enumerates: `actions`, `artifact-metadata`, `attestations`, `checks`, `code-quality`, `contents`, `deployments`, `discussions`, `id-token`, `issues`, `packages`, `pages`, `pull-requests`, `security-events`, `statuses`, `vulnerability-alerts` — no `administration`. The prior commit added it trying to fix a 403 on `gh api repos/$REPO/rulesets`, not realizing the key itself would invalidate the whole file. |
+| **How** | Root-caused via job-log pull (`get_job_logs` → 0 jobs, confirming this is an invalid-workflow-file signature, not a step failure), direct file read, and cross-check against GitHub's live documentation (fetched, not recalled from training data). Verified the fix by re-parsing the YAML (`yaml.safe_load`) and confirming none of the four `workflow_dispatch`-only wrapper files (`agent-swarm-signing-proof-{claude,codex,mistral,opencode}.yml`) declare a `push` trigger — so the reusable workflow's own logic was never actually executing on these push events; every one of the sampled failures was the phantom evaluation-time error, not a real dispatch. |
 
 ## Findings
 
-### Incident A — `agent-swarm-signing-proof.yml` "failure" on every push — Non-blocking artifact, verified
+### Incident A — `agent-swarm-signing-proof.yml` invalid `permissions.administration` key — Code, **fixed in this PR**
 
-213 runs (78% of the window's total), all `conclusion: failure`, 0 jobs, 0s duration, since 2026-08-10T23:56Z (when PR #471 merged the refactor splitting this file into a `workflow_call`-only reusable target for the 4 dispatch-only App-signing-lane wrappers tracked in issue #398). A plain `push` has no matching trigger for a `workflow_call`-only file, yet the Actions run list records a failure for it anyway.
+Confirmed root cause and fixed: removed the invalid `administration: read` line from the `permissions:` block. Re-parsed the file with `yaml.safe_load` to confirm validity post-fix. This stops the repo-wide push-triggered failures; it was not gating merges to `main` (not a `pull_request`/required check), but it was putting a red "failed" workflow run on the Actions history of every single push, repo-wide, for ~33 hours.
 
-Verified, not assumed: `get_workflow_jobs` on every sampled run returns `{"jobs":{"total_count":0}}`; `get_workflow_run_logs_url` 404s; and — the check that actually settles it — `pull_request_read get_check_runs` on PR #962's head commit lists all 17 real checks on that commit, and this workflow is not among them. It is not a required check, not even a visible one. `github-merge-queue[bot]` is the actor on 47 of the 213 entries, but PR #471 (which introduced the refactor) merged cleanly through that same queue. Not blocking anything. Commented on issue #398 with this finding rather than opening a new issue, since it's directly relevant to that issue's own App-signing design.
+**Not fixed here, and not this sweep's to fix:** the step this workflow performs — reading repository rulesets via `gh api repos/$REPO/rulesets` — cannot succeed with the automatic `GITHUB_TOKEN` at all. Repository-administration/rulesets access is not a grantable `GITHUB_TOKEN` scope under any key name (confirmed against the same permissions reference), so whenever this reusable workflow is actually invoked (via one of its four `workflow_dispatch` wrappers, not on ordinary pushes), that first step will still fail on its own, isolated 403 — a real but pre-existing and separately-scoped problem, already tracked under #398 ("Stable cross-platform signed-commit solution"). Fixing that needs a privileged credential (PAT or GitHub App token) for that one step, which is a design decision for #398, not a schema bug for this sweep to silently paper over.
 
-### Incident B — Codacy Security Scan: SARIF upload rejects null `tool.driver.rules` — Code, already fixed (PR #962)
+### Incident B — one non-recurring `Python Test Suite` failure, `merge_group` on `gh-readonly-queue/main/pr-906` (2026-08-05T17:40:02Z) — out of window, not investigated
 
-19 runs, 2026-08-11T22:52Z – 2026-08-12T18:46Z, mostly `claude/looker-attestation-wording-qzt7le` and `main`. Codacy's SARIF export emits `"rules": null` when a tool component carries no rule metadata; the SARIF schema requires an array, so `upload-sarif` rejects the whole document:
+Surfaced only in a wider spot-check sample outside the 24h audit window (repo history pagination is unstable under this repo's write throughput — see Big IF below — so spot-checks landed on some older slices incidentally). Appeared exactly once, is not reoccurring in the in-window samples, and PR #906 is no longer in the open-PR list, suggesting it has already closed or merged. Not chased further; flagged only for completeness.
 
-> `##[error]Unable to upload "results-normalised.sarif" as it is not valid SARIF: - instance.runs[0].tool.driver.rules is not of a type(s) array` (run 31629240677)
-
-PR #962 §2 (open in another active session) drops the null `rules`/`extensions` keys before upload. Not duplicated here.
-
-### Incident C — Check Dotfolder Anchors: `.codacy/` missing its anchor — Configuration, already fixed (PR #962)
-
-15 runs, same window, same branches. `.codacy/` landed on `main` (commit `3d617a3d`) without its required `<NAME>.md` anchor per `STUB-PERSONAFOLDERS-2026-05-03.md`, so the guard fails on `main` itself and everything built from it:
-
-> `dotfolder-anchor guard: dotfolders missing their <NAME>.md anchor: - .codacy/CODACY.md` (run 31629240667)
-
-PR #962 §4 adds `.codacy/CODACY.md`, byte-identical to the established `.github/GITHUB.md` stub shape. Not duplicated here.
-
-### Incident D — Secret Pattern Policy: recurring false positive on vendored plugin bundles — Code, unaddressed, fix proposed (issue #967)
-
-16 runs, mostly `claude/shall-rome-lyrics-ok9049` (12). The guard trips `generic_secret_assignment` on the same 3 lines inside vendored, minified third-party Obsidian plugin bundles every time a branch touches or rebases over them:
-
-> `.obsidian/plugins/obsidian-local-rest-api/main.js:58166 [generic_secret_assignment]`
-> `.obsidian/plugins/smart-connections/main.js:2838 [generic_secret_assignment]`
-> `.obsidian/plugins/smart-connections/main.js:16766 [generic_secret_assignment]`
-> (run 31544229800)
-
-`.codacy.yaml` already excludes `.obsidian/plugins/*/main.js` from Codacy's own scan; `check_secret_patterns.py` has not adopted the same exclusion. Looked at implementing this directly during the sweep — `check_secret_patterns.py`'s content-match allowance logic (`is_allowed_content_match` / `_chain_allowance_applies`) is a carefully fenced, five-condition, span-tied piece of security logic with its own extensive design rationale in the source comments. Hand-editing it under sweep time pressure, without a paired regression test, is exactly the kind of rushed change that logic is designed to resist. Filed as GitHub issue #967 with full reproduction instead of patching it live.
-
-### Incident E — Cross-workflow TLS/certificate verification failures against github.com — Infra, unaddressed, root cause not isolated
-
-6 runs across 3 unrelated workflows. `review_feedback_loop.py`'s `acknowledge_apply` step and `pr_lifecycle.py`'s branch-cleanup step both fail at the identical call site (`gh_cli.py`'s `_run()` wrapping `gh label create`):
-
-> `Post "https://api.github.com/repos/LAF-US/IDAHO-VAULT/labels": tls: failed to verify certificate: x509: certificate is not valid for any names, but wanted to match api.github.com` (runs 31544233793, 31558145426)
-
-CodeQL's "Analyze (python)" job on PR #572 hit the git-level equivalent, 3/3 retries exhausted:
-
-> `fatal: unable to access 'https://github.com/LAF-US/IDAHO-VAULT/': server certificate verification failed. CAfile: none CRLfile: none` (run 31528575045)
-
-Each instance looks like runner-side network flake in isolation; recurring 3 times across unrelated code paths in one 48h window is what makes it worth naming rather than dismissing per-incident. No vault-side fix identified — flagging for Logan in case it recurs and warrants a GitHub Support report.
-
-### Incident F — Codacy Coverage Reporter assumes a `tests/` directory exists — Configuration, unaddressed, fix proposed (issue #967)
-
-1 run, PR #940 (`claude/practical-cerf-pc0mw5`). `uv run coverage run -m pytest tests -v` is unconditional:
-
-> `ERROR: file or directory not found: tests` → `##[error]Process completed with exit code 4.` (run 31535568798, job `coverage`)
-
-That branch simply has no `tests/` directory. Narrow, single occurrence this window, but will recur on any future content-only PR. Filed alongside Incident D in issue #967 rather than patched live, for the same reason: a workflow-behavior change deserves its own small PR and verification, not a drive-by edit bundled into an audit report.
-
-### Incident G — Two single-occurrence items, not investigated further
-
-- Redaction Damage Policy (run 31453333787, `claude/lint-config-stubs-qzt7le`): flagged an added line in `eslint.config.js:33` as matching the marker-glued-to-letters shape tracked in issue #739. An earlier draft incorrectly stated that the cited source line had been inspected; that claim is retracted because the line was not independently recoverable during follow-up. Issue #739 remained open at follow-up, and its comments showed no downstream status or action attributed to the prior draft. This item remains uninvestigated; confirm the branch and source line before recording it as a policy false positive under issue #739.
-- Running Copilot Code Review (run 31565802005, PR #885): GitHub Copilot's own `sweagentd` backend timed out reporting results — `TimeoutError: The operation was aborted due to timeout`. External Copilot-service-side flake, no vault-side action possible.
-
-Also noted but not counted as a failure: Validate Agent Content (run 31457472663, `agent/adr-canon-core-portability`) flagged ~15 pre-existing files (oversized files, old tweet-archive false positives, malformed frontmatter) unrelated to that branch's own diff — repo-wide backlog debt, not this branch's fault.
+### Zero failures found on `main` itself in-window; nothing found blocking merges to `main`.
 
 ## Big IF
 
-- **The 213-run dominant category would have looked like the sweep's headline finding if the check-runs cross-reference hadn't been pulled.** Run-count alone said "agent-swarm-signing-proof.yml is 78% of all CI failures, urgent." Actually checking whether it appears on a live PR's real checks said "it doesn't gate anything." Both facts are true; only the second one tells Logan what to do about it (nothing, low-priority cleanup). Worth keeping as a standing habit for future sweeps: a high run-count is a lead, not a verdict, until checked against what actually gates a merge.
-- **This sweep found two categories already fixed in-flight (PR #962) and confirmed it before writing anything new** — avoided duplicating Incidents B and C. Cheap to check (`get_check_runs` + reading the open PR's own description), and it's the difference between a sweep that adds signal and one that adds noise to an already-open PR's diff.
-- **The audit-PR pile is the known risk here, and this sweep chose not to grow it silently.** Per the 2026-08-03 sweep's own Big IF, only 3 of the daily sweep PRs opened since 2026-07-08 have ever merged to `main`; most sit open. This sweep's own PR is documentation-only (zero workflow/script changes) specifically so it's trivial to merge — and the two real, fixable findings (Incidents D and F) were deliberately routed to a single new tracking issue (#967) rather than a second report-shaped PR, so the backlog gets one small actionable item instead of one more audit artifact.
+- **Full-24h enumeration wasn't reliable at this repo's scale.** `total_count` on `list_workflow_runs` reported between ~40,000 and ~75,000 depending on the call, and sequential page fetches (issued moments apart) landed on non-adjacent time ranges — consistent with new runs being created faster than pagination offsets can be issued. Practical response: sampled multiple time-slices spanning the window, traced every failure signature found to a real root cause via job logs rather than leaving anything as "possibly" or "likely," and reported the sampling limitation plainly instead of implying an exhaustive sweep that didn't happen.
+- **This is at least the third sweep in this thread's history to find a real, fixable workflow bug rather than only re-describing known issues** (following the 2026-08-02 and 2026-08-03 pattern noted in the prior sweep) — this time the bug was itself introduced by a prior CI-fix attempt, which is worth naming: a schema-invalid `permissions:` key is an easy trap when adding a permission key by guessing rather than checking the enum, and it fails in a way (0-job phantom failure, not a normal job error) that's easy to misread as "flaky" rather than "broken file."
+- **The audit-PR pile did not shrink.** Open PRs whose title/branch matches the "audit(ci) / CI failure sweep" pattern as of this sweep: #859 (07-21), #861 (07-22), #862 (07-23), #866 (07-27), #882 (07-30), #884 (07-31), #905 (08-03) — seven, before this one. This sweep follows the established instruction (bundle the report with a real fix, don't file a report-only PR) but that alone doesn't clear the backlog; only merging or deliberately closing the existing seven does. Worth a batch pass on Logan's end — per this routine's own instructions, this session is not closing any of them itself.
 
 ---

@@ -1,4 +1,5 @@
 ---
+title: GITHOOKS
 authority: LOGAN
 related:
   - GITHOOKS
