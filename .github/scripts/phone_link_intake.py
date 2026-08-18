@@ -28,7 +28,7 @@ from datetime import datetime
 from pathlib import Path
 
 
-DEFAULT_SOURCE = Path(r"C:\Users\loganf\Downloads\Phone Link")
+DEFAULT_SOURCE = Path.home() / "Downloads" / "Phone Link"
 TRUSTED_SOURCE_ROOT = DEFAULT_SOURCE.parent
 TRUSTED_VAULT_ROOT = Path(__file__).resolve().parents[2]
 
