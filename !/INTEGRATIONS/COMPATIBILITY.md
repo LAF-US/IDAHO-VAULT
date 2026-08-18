@@ -2,7 +2,8 @@
 
 This is the canonical Round 1 runtime/provider compatibility snapshot.
 
-## *FOUND **QUESTIONABLE** BY THE FAITH OF THE CLOTH*
+**Status:** Found questionable by the Faith of the Cloth.
+
 ## Local Runtime Surfaces
 
 | Surface | Status | Detail |
