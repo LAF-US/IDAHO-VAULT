@@ -1,4 +1,5 @@
 ---
+title: "RT @ltgovernorbedke Securing a domestic supply of minerals..."
 date: 2025-02-07
 time: 02:12:58
 tweet_id: "1887685959191568432"

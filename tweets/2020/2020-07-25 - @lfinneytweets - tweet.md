@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2020-07-25
 time: 02:05:34
 tweet_id: "1286845016321605632"
@@ -16,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-@ryannoyance https://t.co/X7EBzfAkML
+@ryannoyance <https://t.co/X7EBzfAkML>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/EdvKs4HVoAETI8L.jpg)

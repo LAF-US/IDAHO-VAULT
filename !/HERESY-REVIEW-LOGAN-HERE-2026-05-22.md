@@ -589,6 +589,6 @@ then automation.
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

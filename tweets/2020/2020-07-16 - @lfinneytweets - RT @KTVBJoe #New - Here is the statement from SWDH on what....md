@@ -1,4 +1,5 @@
 ---
+title: "RT @KTVBJoe #New - Here is the statement from SWDH on what..."
 date: 2020-07-16
 time: 18:23:05
 tweet_id: "1283829522073137153"
@@ -18,7 +19,7 @@ related:
   - New
 ---
 
-RT @KTVBJoe: #New - Here is the statement from SWDH on what happened this morning https://t.co/ALeCjDC1g9
+RT @KTVBJoe: #New - Here is the statement from SWDH on what happened this morning <https://t.co/ALeCjDC1g9>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EdECDrBUMAAWLbV.jpg)

@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2019-02-20
 time: 16:38:45
 tweet_id: "1098260681579626496"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-@davlinnews @GovernorLittle https://t.co/0DIXhvUh7s
+@davlinnews @GovernorLittle <https://t.co/0DIXhvUh7s>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/Dz3OQo3VsAAtr7F.jpg)

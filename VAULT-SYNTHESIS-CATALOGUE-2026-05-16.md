@@ -154,7 +154,7 @@ Content is lost. This is documented here as the permanent record.
 
 ## Post-Reconsolidation Git State (2026-05-16)
 
-```
+```markdown
 * main 3b16a100 [origin/main: ahead 3] Merge remote-tracking branch 'origin/main'
 ```
 

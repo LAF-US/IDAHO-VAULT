@@ -1,4 +1,5 @@
 ---
+title: "If only ("
 date: 2024-06-14
 time: 00:13:09
 tweet_id: "1801407492767027242"
@@ -16,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-@Sisyphus43 If only :( https://t.co/5hALc7yok8
+@Sisyphus43 If only :( <https://t.co/5hALc7yok8>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GP_ijEKaQAABS49.jpg)

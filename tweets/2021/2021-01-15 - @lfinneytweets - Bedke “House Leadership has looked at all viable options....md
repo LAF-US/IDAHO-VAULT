@@ -1,4 +1,5 @@
 ---
+title: "Bedke \u201cHouse Leadership has looked at all viable options..."
 date: 2021-01-15
 time: 18:43:33
 tweet_id: "1350151652326555648"
@@ -19,7 +20,7 @@ related:
   - idpol
 ---
 
-Bedke: “House Leadership has looked at all viable options and has worked to meet safety protocols within our existing rules and continues to look for ways to improve.” #idleg #idpol https://t.co/X8mGBOShr3
+Bedke: “House Leadership has looked at all viable options and has worked to meet safety protocols within our existing rules and continues to look for ways to improve.” #idleg #idpol <https://t.co/X8mGBOShr3>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EryzfGUVcAEqUmD.png)

@@ -1,4 +1,5 @@
 ---
+title: "The redistricting commission continues their statewide..."
 date: 2021-09-20
 time: 23:23:46
 tweet_id: "1440094363476905991"
@@ -18,7 +19,7 @@ related:
   - idpol
 ---
 
-The redistricting commission continues their statewide public testimony tour, this week in North Idaho. I'll have a full story up tomorrow. #idleg #idpol https://t.co/AFRKr3Qxml
+The redistricting commission continues their statewide public testimony tour, this week in North Idaho. I'll have a full story up tomorrow. #idleg #idpol <https://t.co/AFRKr3Qxml>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/E_w-DdDUcAMWPiR.jpg)

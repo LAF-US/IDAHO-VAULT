@@ -45,7 +45,7 @@ Neither is casual. Neither runs without sanction.
 
 ## The Cycle
 
-```
+```text
 CHAINFIRE (burn) → SPACE RACE / CHAINLINK (rebuild) → Linter (format)
 ```
 

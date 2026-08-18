@@ -1,4 +1,5 @@
 ---
+title: "It didn't come up on air, but yes, I was aware of the irony..."
 date: 2024-06-21
 time: 00:20:58
 tweet_id: "1803946177131614671"

@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2021-07-29
 time: 21:24:25
 tweet_id: "1420857770367098880"
@@ -17,7 +18,7 @@ related:
   - lfinneytweets
 ---
 
-@IdahoReports @IdSBOE https://t.co/vOSJTspjrq
+@IdahoReports @IdSBOE <https://t.co/vOSJTspjrq>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/E7fmnGFUUAAb_ZP.jpg)

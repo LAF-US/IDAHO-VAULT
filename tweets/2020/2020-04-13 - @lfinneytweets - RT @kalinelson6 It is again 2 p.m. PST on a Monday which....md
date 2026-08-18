@@ -1,4 +1,5 @@
 ---
+title: "RT @kalinelson6 It is again 2 p.m. PST on a Monday which..."
 date: 2020-04-13
 time: 21:25:16
 tweet_id: "1249810912791244801"

@@ -138,6 +138,6 @@ is a pause, not a prison.
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

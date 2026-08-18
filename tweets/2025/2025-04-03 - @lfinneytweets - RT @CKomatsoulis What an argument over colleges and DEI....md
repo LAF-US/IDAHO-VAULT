@@ -1,4 +1,5 @@
 ---
+title: "RT @CKomatsoulis What an argument over colleges and DEI..."
 date: 2025-04-03
 time: 20:19:41
 tweet_id: "1907890773502341410"
@@ -21,6 +22,6 @@ related:
 ---
 
 RT @CKomatsoulis: What an argument over colleges and DEI shows about this powerful group of Idaho lawmakers #idpol #idleg
-https://t.co/wU4…
+<https://t.co/wU4…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1907890773502341410)

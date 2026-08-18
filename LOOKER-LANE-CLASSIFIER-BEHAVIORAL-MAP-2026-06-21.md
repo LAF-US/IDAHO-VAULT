@@ -91,7 +91,7 @@ Conflating any two of them produces wrong conclusions:
 
 Verbatim from `_classify_pr_for_looker`:
 
-```
+```text
 if threads_truncated or review_decision == "CHANGES_REQUESTED" or human or unprovable:
     lane = "needs-human"
 elif not unresolved:
@@ -100,7 +100,7 @@ elif machine_clearable == len(unresolved):
     lane = "would-cascade" if auto_merge_armed else "machine-disposable"
 ```
 
-```
+```text
 safe_to_drain = lane == "machine-disposable" and not stale
                 and all(thread.resolution in BARE_RESOLVABLE_DISPOSITIONS for thread in plan)
 ```

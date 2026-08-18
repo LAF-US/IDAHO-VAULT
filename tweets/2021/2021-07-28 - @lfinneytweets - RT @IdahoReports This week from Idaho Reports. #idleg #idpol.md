@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports This week from Idaho Reports. #idleg #idpol"
 date: 2021-07-28
 time: 18:51:49
 tweet_id: "1420456979298848771"
@@ -20,7 +21,7 @@ related:
   - idpol
 ---
 
-RT @IdahoReports: This week from Idaho Reports. #idleg #idpol https://t.co/HK0n7jrycZ
+RT @IdahoReports: This week from Idaho Reports. #idleg #idpol <https://t.co/HK0n7jrycZ>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/ext_tw_video_thumb/1420454450318114816/pu/img/9xbL1EfQY5uJgSlP.jpg)

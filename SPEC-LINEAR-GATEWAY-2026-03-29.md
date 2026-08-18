@@ -47,7 +47,7 @@ Swarm agents need a governed, auditable, single-choke-point interface to Linear.
 
 ## 2. Architecture
 
-```
+```text
                          ┌────────────────────────────────Ŀ
                          │         LINEAR (GraphQL)         │
                          │  api.linear.app/graphql          │
@@ -71,7 +71,7 @@ Swarm agents need a governed, auditable, single-choke-point interface to Linear.
 
 **Linear webhook path:**
 
-```
+```text
 Linear → Cloud forwarder → GitHub repository_dispatch → linear-webhook.yml → gateway script
 ```
 
@@ -98,7 +98,7 @@ All five commands are implemented in `.github/scripts/linear_gateway.py`. All co
 
 ### 4.1 `read_issue`
 
-```
+```bash
 linear_gateway.py read_issue --issue-id <LAF-XX>
 ```
 
@@ -110,7 +110,7 @@ linear_gateway.py read_issue --issue-id <LAF-XX>
 
 ### 4.2 `list_project_issues`
 
-```
+```bash
 linear_gateway.py list_project_issues --project-id <id>
 ```
 
@@ -122,7 +122,7 @@ linear_gateway.py list_project_issues --project-id <id>
 
 ### 4.3 `post_comment`
 
-```
+```bash
 linear_gateway.py post_comment --issue-id <LAF-XX> --body <text> [--live-write]
 ```
 
@@ -134,7 +134,7 @@ linear_gateway.py post_comment --issue-id <LAF-XX> --body <text> [--live-write]
 
 ### 4.4 `update_issue_status`
 
-```
+```bash
 linear_gateway.py update_issue_status --issue-id <LAF-XX> --state-name <"In Progress"|"Done"|...> [--live-write]
 ```
 
@@ -145,7 +145,7 @@ linear_gateway.py update_issue_status --issue-id <LAF-XX> --state-name <"In Prog
 
 ### 4.5 `link_pr_context`
 
-```
+```bash
 linear_gateway.py link_pr_context --issue-id <LAF-XX> --pr-url <url> --pr-title <title> [--live-write]
 ```
 

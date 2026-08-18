@@ -1,4 +1,5 @@
 ---
+title: "Idaho House votes down the budget for public colleges and..."
 date: 2020-03-16
 time: 17:11:12
 tweet_id: "1239600115788070917"

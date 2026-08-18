@@ -1,4 +1,5 @@
 ---
+title: "New favorite press release opening line Today, Attorney..."
 date: 2025-03-25
 time: 00:59:20
 tweet_id: "1904337270825730224"
@@ -16,9 +17,9 @@ related:
   - idpol
 ---
 
-New favorite press release opening line: "Today, Attorney General Raúl Labrador introduced the newest member of his ICAC Unit – K-9 Badger, a two-year-old English Labrador (no relation)." #idpol https://t.co/alMZJVvt87
+New favorite press release opening line: "Today, Attorney General Raúl Labrador introduced the newest member of his ICAC Unit – K-9 Badger, a two-year-old English Labrador (no relation)." #idpol <https://t.co/alMZJVvt87>
 
 ## Links
-- https://x.com/Raul_Labrador/status/1904272138401648684
+- <https://x.com/Raul_Labrador/status/1904272138401648684>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1904337270825730224)

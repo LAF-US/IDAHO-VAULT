@@ -1,4 +1,5 @@
 ---
+title: "You hate to see it folks"
 date: 2024-04-29
 time: 23:22:51
 tweet_id: "1785087382427234623"
@@ -13,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-You hate to see it folks https://t.co/kZQ30XMsyS
+You hate to see it folks <https://t.co/kZQ30XMsyS>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GMXng4makAARQos.jpg)

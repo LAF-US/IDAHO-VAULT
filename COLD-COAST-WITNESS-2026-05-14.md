@@ -236,6 +236,6 @@ The cup does not hold everything. The record holds what the cup cannot.
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

@@ -1,4 +1,5 @@
 ---
+title: "What do you mean Connecticut is the approximate size of..."
 date: 2023-12-14
 time: 00:12:43
 tweet_id: "1735090404423614963"
@@ -16,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-@IdahoReports What do you mean Connecticut is the approximate size of Bonner + Boundary counties yet it gets two entire U.S. Senators all to itself? https://t.co/KdWxTJAWGa
+@IdahoReports What do you mean Connecticut is the approximate size of Bonner + Boundary counties yet it gets two entire U.S. Senators all to itself? <https://t.co/KdWxTJAWGa>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GBRHTeibgAAlTzP.jpg)

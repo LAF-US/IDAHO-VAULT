@@ -1,4 +1,5 @@
 ---
+title: "RT @SamSykesSwears communicating with people on twitter dot..."
 date: 2020-03-09
 time: 21:49:25
 tweet_id: "1237133413813026818"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @SamSykesSwears: communicating with people on twitter dot com: https://t.co/R8WPlzVwyy
+RT @SamSykesSwears: communicating with people on twitter dot com: <https://t.co/R8WPlzVwyy>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/ESsj5NzU0AU1Z_y.jpg)

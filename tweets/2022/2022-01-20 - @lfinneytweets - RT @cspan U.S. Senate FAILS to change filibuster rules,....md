@@ -1,4 +1,5 @@
 ---
+title: "RT @cspan U.S. Senate FAILS to change filibuster rules,..."
 date: 2022-01-20
 time: 03:40:42
 tweet_id: "1484007952751075347"
@@ -17,7 +18,7 @@ related:
 
 RT @cspan: U.S. Senate FAILS to change filibuster rules, 52-48.
 
-60-vote threshold remains intact. https://t.co/mMB3pzLqZ9
+60-vote threshold remains intact. <https://t.co/mMB3pzLqZ9>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FJhAyXdWQAAXN0P.jpg)

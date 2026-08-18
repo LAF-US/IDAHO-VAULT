@@ -1,4 +1,5 @@
 ---
+title: "Capitol steps afterward."
 date: 2020-06-24
 time: 04:50:47
 tweet_id: "1275652566978887685"
@@ -14,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-Capitol steps afterward. https://t.co/sVo75OOt7o
+Capitol steps afterward. <https://t.co/sVo75OOt7o>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EbQGS_yWAAAbpEI.jpg)

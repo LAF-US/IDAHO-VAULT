@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Senate passes SB 1002,..."
 date: 2020-08-24
 time: 21:25:38
 tweet_id: "1298008591757008896"

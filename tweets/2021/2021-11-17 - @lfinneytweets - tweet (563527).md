@@ -1,4 +1,5 @@
 ---
+title: "tweet (563527)"
 date: 2021-11-17
 time: 22:51:22
 tweet_id: "1461104705539563527"
@@ -13,10 +14,10 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/CjavhcsST1 https://t.co/nTpiOgbIOe
+<https://t.co/CjavhcsST1> <https://t.co/nTpiOgbIOe>
 
 ## Links
-- https://x.com/lfinneytweets/status/1461098893966467072
+- <https://x.com/lfinneytweets/status/1461098893966467072>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/FEbi-5gVcAcn7BE.jpg)

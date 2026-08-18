@@ -1,4 +1,5 @@
 ---
+title: "Senate amendments to the affirmative action bill approved..."
 date: 2020-03-16
 time: 18:45:23
 tweet_id: "1239623816273264640"
@@ -20,7 +21,7 @@ related:
   - idleg
 ---
 
-Senate amendments to the affirmative action bill approved by the House. Makes its way to @GovernorLittle now. #idpol #idleg https://t.co/XK4kQ5JbOo
+Senate amendments to the affirmative action bill approved by the House. Makes its way to @GovernorLittle now. #idpol #idleg <https://t.co/XK4kQ5JbOo>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/ETQHSOzXQAUZOf-.jpg)

@@ -1,4 +1,5 @@
 ---
+title: "#IdahoCOVID19"
 date: 2021-10-01
 time: 19:09:28
 tweet_id: "1444016634855780356"
@@ -16,7 +17,7 @@ related:
   - IdahoCOVID19
 ---
 
-\#IdahoCOVID19 https://t.co/tQJ5piPHo6
+\#IdahoCOVID19 <https://t.co/tQJ5piPHo6>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FAotbNgVkAQCbvd.jpg)

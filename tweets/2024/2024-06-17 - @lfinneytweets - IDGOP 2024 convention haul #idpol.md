@@ -1,4 +1,5 @@
 ---
+title: "IDGOP 2024 convention haul #idpol"
 date: 2024-06-17
 time: 01:38:03
 tweet_id: "1802516020458086560"
@@ -16,10 +17,10 @@ related:
   - idpol
 ---
 
-IDGOP 2024 convention haul #idpol https://t.co/bHBr7FH0Gm https://t.co/kjLTrXyFBo
+IDGOP 2024 convention haul #idpol <https://t.co/bHBr7FH0Gm> <https://t.co/kjLTrXyFBo>
 
 ## Links
-- https://x.com/ChristaHazel/status/1801725845771587685
+- <https://x.com/ChristaHazel/status/1801725845771587685>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GQPSxKkbEAAhtAi.jpg)

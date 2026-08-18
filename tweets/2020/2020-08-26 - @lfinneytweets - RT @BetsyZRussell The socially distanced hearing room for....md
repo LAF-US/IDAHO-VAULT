@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell The socially distanced hearing room for..."
 date: 2020-08-26
 time: 15:01:30
 tweet_id: "1298636696263647233"
@@ -20,7 +21,7 @@ related:
   - idpol
 ---
 
-RT @BetsyZRussell: The socially distanced hearing room for liability bill hearing #idleg #idpol https://t.co/LOQQcXpoEl
+RT @BetsyZRussell: The socially distanced hearing room for liability bill hearing #idleg #idpol <https://t.co/LOQQcXpoEl>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EgWuKt_XgAAy99L.jpg)

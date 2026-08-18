@@ -1,4 +1,5 @@
 ---
+title: "RT @OrianaBeLike hi supreme court what is happening"
 date: 2024-06-26
 time: 19:41:44
 tweet_id: "1806050232809181326"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @OrianaBeLike: hi supreme court what is happening https://t.co/BRQnGa8C2q
+RT @OrianaBeLike: hi supreme court what is happening <https://t.co/BRQnGa8C2q>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GRBbUS1WYAAgGFE.jpg)

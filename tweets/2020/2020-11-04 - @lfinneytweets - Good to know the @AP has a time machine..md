@@ -1,4 +1,5 @@
 ---
+title: "Good to know the @AP has a time machine."
 date: 2020-11-04
 time: 04:22:52
 tweet_id: "1323843129573736448"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-Good to know the @AP has a time machine. https://t.co/KMouubeR8O
+Good to know the @AP has a time machine. <https://t.co/KMouubeR8O>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/El88R5TU4AALf0O.jpg)

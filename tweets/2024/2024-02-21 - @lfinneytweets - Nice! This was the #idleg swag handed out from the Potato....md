@@ -1,4 +1,5 @@
 ---
+title: "Nice! This was the #idleg swag handed out from the Potato..."
 date: 2024-02-21
 time: 00:53:37
 tweet_id: "1760105460353695993"
@@ -17,7 +18,7 @@ related:
   - idleg
 ---
 
-@reporterellen Nice! This was the #idleg swag handed out from the Potato Commission this year. https://t.co/l3kjOdiytR
+@reporterellen Nice! This was the #idleg swag handed out from the Potato Commission this year. <https://t.co/l3kjOdiytR>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GG0mlqHaMAAnC-9.jpg)

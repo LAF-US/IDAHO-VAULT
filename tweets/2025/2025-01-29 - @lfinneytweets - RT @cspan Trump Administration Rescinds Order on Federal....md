@@ -1,4 +1,5 @@
 ---
+title: "RT @cspan Trump Administration Rescinds Order on Federal..."
 date: 2025-01-29
 time: 18:58:26
 tweet_id: "1884677502318354494"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @cspan: Trump Administration Rescinds Order on Federal Aid Freeze https://t.co/mWiuaeNP4B
+RT @cspan: Trump Administration Rescinds Order on Federal Aid Freeze <https://t.co/mWiuaeNP4B>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GieuAf8XcAA4Ffz.jpg)

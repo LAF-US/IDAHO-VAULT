@@ -1,4 +1,5 @@
 ---
+title: "Wow, Idaho voters turned down a lot in property taxes..."
 date: 2023-03-15
 time: 18:21:26
 tweet_id: "1636070115509956609"
@@ -20,7 +21,7 @@ related:
   - idleg
 ---
 
-Wow, Idaho voters turned down a *lot* in property taxes yesterday. #idedu #idpol #idleg https://t.co/Azr1B0hbdL
+Wow, Idaho voters turned down a *lot* in property taxes yesterday. #idedu #idpol #idleg <https://t.co/Azr1B0hbdL>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/FrR9AnwaAAE8wUD.jpg)

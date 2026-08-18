@@ -1,4 +1,5 @@
 ---
+title: "Pretty full crowd in the Lincoln Auditorium this morning..."
 date: 2023-08-07
 time: 15:04:40
 tweet_id: "1688566837502681088"
@@ -20,7 +21,7 @@ related:
   - idwx
 ---
 
-Pretty full crowd in the Lincoln Auditorium this morning for the Governor's Water Summit. Idaho Water Resources staff are currently reviewing aquifer health across the state. #idpol #idleg #idwx https://t.co/bYhPolgvFn
+Pretty full crowd in the Lincoln Auditorium this morning for the Governor's Water Summit. Idaho Water Resources staff are currently reviewing aquifer health across the state. #idpol #idleg #idwx <https://t.co/bYhPolgvFn>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/F27-ltvaAAAyTCd.jpg)

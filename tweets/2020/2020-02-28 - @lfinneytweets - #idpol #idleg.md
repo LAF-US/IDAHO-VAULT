@@ -1,4 +1,5 @@
 ---
+title: "#idpol #idleg"
 date: 2020-02-28
 time: 19:13:45
 tweet_id: "1233470361829859331"
@@ -19,7 +20,7 @@ related:
   - idleg
 ---
 
-\#idpol #idleg https://t.co/vvQ9eFvtJS
+\#idpol #idleg <https://t.co/vvQ9eFvtJS>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/ext_tw_video_thumb/1233470263511089153/pu/img/FKcgrJ3VumZoTg5Y.jpg)

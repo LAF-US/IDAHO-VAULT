@@ -1,4 +1,5 @@
 ---
+title: "Nevada right now as everyone's attention turns to..."
 date: 2020-11-06
 time: 08:53:25
 tweet_id: "1324635989193617408"
@@ -13,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-Nevada right now as everyone's attention turns to Pennsylvania and Georgia https://t.co/azueVQFSIR
+Nevada right now as everyone's attention turns to Pennsylvania and Georgia <https://t.co/azueVQFSIR>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EmINaVWVcAAfhxL.jpg)

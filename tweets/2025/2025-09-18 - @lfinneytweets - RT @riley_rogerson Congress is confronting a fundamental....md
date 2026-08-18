@@ -1,4 +1,5 @@
 ---
+title: "RT @riley_rogerson Congress is confronting a fundamental..."
 date: 2025-09-18
 time: 15:57:13
 tweet_id: "1968705881979150533"

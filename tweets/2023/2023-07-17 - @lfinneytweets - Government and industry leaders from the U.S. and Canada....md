@@ -1,4 +1,5 @@
 ---
+title: "Government and industry leaders from the U.S. and Canada..."
 date: 2023-07-17
 time: 16:24:48
 tweet_id: "1680976859444707328"
@@ -20,7 +21,7 @@ related:
   - idpol
 ---
 
-Government and industry leaders from the U.S. and Canada are gathered for the @PNWER 2023 Summit this week in Boise. Sessions this morning so far have a focus on energy development and decarbonization. #idleg #idpol https://t.co/h6G0GcSfmu
+Government and industry leaders from the U.S. and Canada are gathered for the @PNWER 2023 Summit this week in Boise. Sessions this morning so far have a focus on energy development and decarbonization. #idleg #idpol <https://t.co/h6G0GcSfmu>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/F1QHinLaQAImEok.jpg)

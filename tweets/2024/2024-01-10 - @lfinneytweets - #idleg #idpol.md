@@ -1,4 +1,5 @@
 ---
+title: "#idleg #idpol"
 date: 2024-01-10
 time: 17:45:09
 tweet_id: "1745139729493078233"
@@ -18,9 +19,9 @@ related:
   - idpol
 ---
 
-\#idleg #idpol https://t.co/rlvh2YsYLi
+\#idleg #idpol <https://t.co/rlvh2YsYLi>
 
 ## Links
-- https://x.com/MelissaKXLY4/status/1745138442252767599
+- <https://x.com/MelissaKXLY4/status/1745138442252767599>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1745139729493078233)

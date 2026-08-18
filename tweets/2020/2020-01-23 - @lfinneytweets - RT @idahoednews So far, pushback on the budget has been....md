@@ -1,4 +1,5 @@
 ---
+title: "RT @idahoednews So far, pushback on the budget has been..."
 date: 2020-01-23
 time: 16:25:21
 tweet_id: "1220382017285578752"

@@ -1,4 +1,5 @@
 ---
+title: "It's to get around the constitution."
 date: 2026-02-19
 time: 02:30:07
 tweet_id: "2024310497630441565"
@@ -17,7 +18,7 @@ related:
   - lfinneytweets
 ---
 
-@LibertyBelle208 @FromHavilah It's to get around the constitution. https://t.co/XcvBiRKwwy
+@LibertyBelle208 @FromHavilah It's to get around the constitution. <https://t.co/XcvBiRKwwy>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/HBfLq6pbAAAX4ZG.png)

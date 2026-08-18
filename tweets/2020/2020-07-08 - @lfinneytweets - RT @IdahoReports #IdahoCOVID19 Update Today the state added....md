@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports #IdahoCOVID19 Update Today the state added..."
 date: 2020-07-08
 time: 00:28:27
 tweet_id: "1280659982254354432"

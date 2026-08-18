@@ -1,4 +1,5 @@
 ---
+title: "RT @newrepublic Journalism revenue was on the decline even..."
 date: 2019-01-30
 time: 18:36:54
 tweet_id: "1090680268560654336"

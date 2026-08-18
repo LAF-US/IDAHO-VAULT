@@ -1,4 +1,5 @@
 ---
+title: "RT @HerndonforIdaho 2 Over time we are diverting more and..."
 date: 2024-01-11
 time: 05:07:09
 tweet_id: "1745311362241507644"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @HerndonforIdaho: 2/ Over time we are diverting more and more sales taxes away from the general fund. https://t.co/Hhu7cTT4FB
+RT @HerndonforIdaho: 2/ Over time we are diverting more and more sales taxes away from the general fund. <https://t.co/Hhu7cTT4FB>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/GDiRAFZbMAAjsuy.jpg)

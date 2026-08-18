@@ -1,4 +1,5 @@
 ---
+title: "McCrostie says he appreciates the removal of the senior..."
 date: 2020-02-05
 time: 16:41:18
 tweet_id: "1225097072975568898"

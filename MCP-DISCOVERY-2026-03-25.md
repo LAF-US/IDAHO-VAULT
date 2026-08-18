@@ -210,6 +210,6 @@ Recommend proceeding to Phase 1 planning once Logan reviews this document and ap
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Septembr 24, 2021, Weekly #IdahoCOVID19..."
 date: 2021-09-24
 time: 22:38:41
 tweet_id: "1441532566964555777"
@@ -19,7 +20,7 @@ related:
   - IdahoCOVID19
 ---
 
-RT @IdahoReports: Septembr 24, 2021, Weekly #IdahoCOVID19 Update | @IdahoPTV https://t.co/zuFlarKVZx
+RT @IdahoReports: Septembr 24, 2021, Weekly #IdahoCOVID19 Update | @IdahoPTV <https://t.co/zuFlarKVZx>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/amplify_video_thumb/1441532278161641475/img/cQegtq7JEEGcgmAJ.jpg)

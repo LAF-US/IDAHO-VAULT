@@ -1,4 +1,5 @@
 ---
+title: "Thanks! I can get to it on mobile, or on Firefox, but..."
 date: 2023-05-24
 time: 17:54:46
 tweet_id: "1661430553093234688"

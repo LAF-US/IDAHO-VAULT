@@ -1,4 +1,5 @@
 ---
+title: "#idpol @BLMBoise"
 date: 2020-07-20
 time: 16:37:16
 tweet_id: "1285252445086441472"
@@ -18,9 +19,9 @@ related:
   - idpol
 ---
 
-\#idpol @BLMBoise https://t.co/nq4rY48igz
+\#idpol @BLMBoise <https://t.co/nq4rY48igz>
 
 ## Links
-- https://x.com/KirkSiegler/status/1285250196125835264
+- <https://x.com/KirkSiegler/status/1285250196125835264>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1285252445086441472)

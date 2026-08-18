@@ -1,4 +1,5 @@
 ---
+title: "RT @DylanDailyBee Here are just a couple photos I took at..."
 date: 2020-08-02
 time: 03:35:57
 tweet_id: "1289766863220568064"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @DylanDailyBee: Here are just a couple photos I took at today's Back the Bonner Blue event. https://t.co/drBy0PDTbB
+RT @DylanDailyBee: Here are just a couple photos I took at today's Back the Bonner Blue event. <https://t.co/drBy0PDTbB>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EeXiWhzU4AAvojI.jpg)

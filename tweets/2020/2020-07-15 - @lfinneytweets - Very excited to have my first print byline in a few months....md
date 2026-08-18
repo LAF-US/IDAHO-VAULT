@@ -1,4 +1,5 @@
 ---
+title: "Very excited to have my first print byline in a few months..."
 date: 2020-07-15
 time: 18:35:04
 tweet_id: "1283470150692306944"
@@ -19,10 +20,10 @@ related:
 ---
 
 Very excited to have my first print byline in a few months in this week's Owyhee Avalanche! 📰 
-I covered @IdSBOE's Back to School Framework announcement and spoke with superintendent Rob Sauer about the plan and Homedale schools' job for the fall. #idedu https://t.co/FdfEXqplBM https://t.co/V4KyofAvfL
+I covered @IdSBOE's Back to School Framework announcement and spoke with superintendent Rob Sauer about the plan and Homedale schools' job for the fall. #idedu <https://t.co/FdfEXqplBM> <https://t.co/V4KyofAvfL>
 
 ## Links
-- http://www.owyheepublishing.com/
+- <http://www.owyheepublishing.com/>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/Ec_LoXSU8AAfUhH.png)

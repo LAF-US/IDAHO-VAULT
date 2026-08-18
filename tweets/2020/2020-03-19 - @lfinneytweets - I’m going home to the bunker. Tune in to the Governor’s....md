@@ -1,4 +1,5 @@
 ---
+title: "I\u2019m going home to the bunker. Tune in to the Governor\u2019s..."
 date: 2020-03-19
 time: 23:07:30
 tweet_id: "1240776945140240384"
@@ -18,7 +19,7 @@ related:
   - idpol
 ---
 
-I’m going home to the bunker. Tune in to the Governor’s press conference. See y’all on the other side. #idleg #idpol https://t.co/Irm2Sk3IBV
+I’m going home to the bunker. Tune in to the Governor’s press conference. See y’all on the other side. #idleg #idpol <https://t.co/Irm2Sk3IBV>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/ETgf3pCU8AATQRF.jpg)

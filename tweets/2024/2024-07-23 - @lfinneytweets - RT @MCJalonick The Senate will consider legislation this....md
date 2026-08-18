@@ -1,4 +1,5 @@
 ---
+title: "RT @MCJalonick The Senate will consider legislation this..."
 date: 2024-07-23
 time: 15:53:54
 tweet_id: "1815777367891341510"

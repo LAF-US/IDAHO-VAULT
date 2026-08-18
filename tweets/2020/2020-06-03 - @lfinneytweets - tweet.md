@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2020-06-03
 time: 21:26:14
 tweet_id: "1268292938032771072"
@@ -13,10 +14,10 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/NlGmqF1ZZy https://t.co/D1kVL2AIln
+<https://t.co/NlGmqF1ZZy> <https://t.co/D1kVL2AIln>
 
 ## Links
-- https://x.com/Soulliere4Idaho/status/1268022323203858438
+- <https://x.com/Soulliere4Idaho/status/1268022323203858438>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/EZnhs1lUcAAigWD.jpg)

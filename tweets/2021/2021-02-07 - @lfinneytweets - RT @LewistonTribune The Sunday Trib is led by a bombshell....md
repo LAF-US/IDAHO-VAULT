@@ -1,4 +1,5 @@
 ---
+title: "RT @LewistonTribune The Sunday Trib is led by a bombshell..."
 date: 2021-02-07
 time: 16:05:14
 tweet_id: "1358446734486110208"

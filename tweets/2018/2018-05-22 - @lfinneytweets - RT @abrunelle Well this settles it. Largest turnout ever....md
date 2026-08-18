@@ -1,4 +1,5 @@
 ---
+title: "RT @abrunelle Well this settles it. Largest turnout ever..."
 date: 2018-05-22
 time: 00:50:39
 tweet_id: "998727807965347840"
@@ -18,7 +19,7 @@ related:
   - idpol
 ---
 
-RT @abrunelle: Well this settles it.  Largest turnout ever for both major parties.  #idpol https://t.co/8IN9RlQImR
+RT @abrunelle: Well this settles it.  Largest turnout ever for both major parties.  #idpol <https://t.co/8IN9RlQImR>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/DdUzgrBV4AAuhrq.png)

@@ -51,7 +51,7 @@ One sentence contains five of the eight star classes simultaneously. All other o
 
 **The file:** [`Logan's Project & Protocols.md`](../Logan's%20Project%20%26%20Protocols.md) (root, loose)
 
-```
+```text
 Unity (v0.0) :: US alignment
 See ; CONSTITUTION and FRAMEWORKS
 "The world is quiet here." -LAF
@@ -76,7 +76,7 @@ Also appears in: `! README.md`, `!README.md`, `!README (2).md`, both Linear chat
 
 **The file:** [`UNIFIED (US) SWARM.md`](../UNIFIED%20(US)%20SWARM.md) (root, loose)
 
-```
+```text
 UNIFIED (US) SWARM!
 "The world is quiet here."
 ```
@@ -93,7 +93,7 @@ Explicitly characterized by Codex Explorer (2026-04-13): *"`UNIFIED (US) SWARM.m
 
 **The file:** [`(US).md`](../(US).md) (root, loose)
 
-```
+```text
 PROJECT HORIZON : UNIFIED SWARM
 ```
 
@@ -107,7 +107,7 @@ Related: HORIZON, PROJECT, UNIFIED. Abbreviation stub for the Unified Swarm conc
 
 **The file:** [`(v0.0).md`](../(v0.0).md) (root, loose)
 
-```
+```text
 "Logan's sub-beta" tag - emoticon - symbol
 text ; Subversioned "zero dot zero" ; FACE
 ```
@@ -130,7 +130,7 @@ Related: FACE, Logan's, emoticon, symbol. This is Logan's authorship/sub-beta ma
 
 **The file:** [`-LAF.md`](../-LAF.md) (root, loose)
 
-```
+```text
 Logan's initialization
 ```
 
@@ -152,7 +152,7 @@ Appears in: `0401 - The Concierge.md`, `20260402.0.cursor_the_custodian.md`, `BR
 
 **The file:** [`-LF.md`](../-LF.md) (root, loose)
 
-```
+```text
 LOGAN initials
 "The world is quiet here."
 ```

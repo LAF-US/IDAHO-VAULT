@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise My Sun. column Latest..."
 date: 2021-11-01
 time: 18:09:26
 tweet_id: "1455235548717608960"

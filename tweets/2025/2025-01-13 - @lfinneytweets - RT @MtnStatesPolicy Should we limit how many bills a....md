@@ -1,4 +1,5 @@
 ---
+title: "RT @MtnStatesPolicy Should we limit how many bills a..."
 date: 2025-01-13
 time: 17:24:22
 tweet_id: "1878855622625759391"
@@ -28,9 +29,9 @@ related:
 
 RT @MtnStatesPolicy: Should we limit how many bills a lawmaker can introduce?
 
-https://t.co/jnwAi4r0zB #idpol #idleg #waleg #mtleg #wyleg
+<https://t.co/jnwAi4r0zB> #idpol #idleg #waleg #mtleg #wyleg
 
 ## Links
-- https://www.mountainstatespolicy.org/blizzard-of-bills-and-a-call-for-restraint
+- <https://www.mountainstatespolicy.org/blizzard-of-bills-and-a-call-for-restraint>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1878855622625759391)

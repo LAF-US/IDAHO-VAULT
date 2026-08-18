@@ -1,4 +1,5 @@
 ---
+title: "RT @kkruesi Feels like a good time to post AP\u2019s guidance on..."
 date: 2020-06-01
 time: 17:42:26
 tweet_id: "1267511841070055424"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @kkruesi: Feels like a good time to post AP’s guidance on the word looting: https://t.co/hjxQWbSYAx
+RT @kkruesi: Feels like a good time to post AP’s guidance on the word looting: <https://t.co/hjxQWbSYAx>
 
 ## Media
 - ![alt text needed](https://pbs.twimg.com/media/EZW6o7zXkAA0Ad5.jpg)

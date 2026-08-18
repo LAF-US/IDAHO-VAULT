@@ -238,6 +238,6 @@ power and restore the Republic.*
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

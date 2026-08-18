@@ -1,4 +1,5 @@
 ---
+title: "RT @CPRNews \u201cWearing a mask is not a political statement,\u201d..."
 date: 2020-07-18
 time: 03:38:48
 tweet_id: "1284331762068250624"

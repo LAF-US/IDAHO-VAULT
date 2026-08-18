@@ -1,4 +1,5 @@
 ---
+title: "has done a lot, though scale is still small. They have a VW..."
 date: 2022-06-14
 time: 22:03:05
 tweet_id: "1536831617133514753"
@@ -17,10 +18,10 @@ related:
   - lfinneytweets
 ---
 
-@IDJoe4Congress @UIdaho has done a lot, though scale is still small. They have a VW Bug that runs on it. When I was a student there was talk of fueling other university vehicles. Students in the Clean Energy Club process cooking oil from campus dining. @LearnBiodiesel https://t.co/tg5TJCfYpY
+@IDJoe4Congress @UIdaho has done a lot, though scale is still small. They have a VW Bug that runs on it. When I was a student there was talk of fueling other university vehicles. Students in the Clean Energy Club process cooking oil from campus dining. @LearnBiodiesel <https://t.co/tg5TJCfYpY>
 
 ## Links
-- https://biodieseleducation.org/
+- <https://biodieseleducation.org/>
 
 *In reply to [@IDJoe4Idaho](https://twitter.com/IDJoe4Idaho)*
 

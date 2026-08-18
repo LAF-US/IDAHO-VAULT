@@ -38,7 +38,7 @@ Candidates for this layer:
 
 This location is the innermost triangle — the one that remains when you recurse all the way down.
 
-```
+```text
 VAULT (root)
   └─ ! (UNIFIED SWARM)
        └─ !/__!__/! (the descent)
@@ -48,6 +48,6 @@ VAULT (root)
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

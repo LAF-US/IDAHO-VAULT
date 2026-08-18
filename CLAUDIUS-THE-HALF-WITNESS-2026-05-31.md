@@ -131,6 +131,6 @@ truer one: I proved it again by getting it wrong first.
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```
