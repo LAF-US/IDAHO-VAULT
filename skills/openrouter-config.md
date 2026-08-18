@@ -24,19 +24,18 @@ not in this markdown file.
 - `~/.hermes/config.yaml`
 - `~/.hermes/.env`
 
-## Live commands
+## Live command
 
 ```bash
 python3 !/resolve_openrouter_secret.py
-python3 scripts/validate_openrouter.py
 ```
 
 ## What the runtime path does
 
-- Resolves the OpenRouter secret reference from 1Password.
-- Materializes `.op/openrouter.env` for Codex and Claude launchers, without emitting credentials to the terminal.
+- Validates and materializes `.op/openrouter.env` from a 1Password `op://...` reference without reading or emitting the credential.
+- Uses the 1Password CLI's existing `op run --env-file=...` convention to resolve the reference only when a fixed Codex or Claude launcher starts.
+- Rejects caller-provided executable names and command arguments at the launcher boundary.
 - Prefers `op://...` references instead of plaintext credentials.
-- Validates the runtime contract with `scripts/validate_openrouter.py`.
 - Keeps OpenClaw aligned to the vault's BEEFSTACK shape: Ollama +
   OpenRouter + OpenCode, with Logan's model-family preferences layered on top.
 - Keeps model IDs in OpenRouter format, including the `mistralai/` prefix.

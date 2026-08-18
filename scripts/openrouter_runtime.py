@@ -10,10 +10,6 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent
 ENV_FILE = REPO_ROOT / ".op" / "openrouter.env"
 RESOLVER = REPO_ROOT / "!" / "resolve_openrouter_secret.py"
-AGENT_COMMANDS = {
-    "codex": "codex",
-    "claude": "claude",
-}
 
 
 def ensure_dir(path: Path) -> Path:
@@ -22,28 +18,18 @@ def ensure_dir(path: Path) -> Path:
 
 
 def approved_agent(agent: str) -> str:
-    """Map parsed input to one of the fixed agent literals used at execution boundaries."""
+    """Select one supported agent without accepting an executable name from the caller."""
     if agent == "codex":
         return "codex"
     if agent == "claude":
         return "claude"
-    supported = ", ".join(sorted(AGENT_COMMANDS))
-    raise SystemExit(f"Unsupported OpenRouter agent '{agent}'. Supported agents: {supported}.")
+    raise SystemExit("Unsupported OpenRouter agent. Supported agents: claude, codex.")
 
 
-def agent_command(agent: str) -> str:
-    """Return the sole approved executable for a supported OpenRouter agent."""
-    return AGENT_COMMANDS[approved_agent(agent)]
-
-
-def resolve_approved_agent_executable(agent: str) -> str:
-    """Resolve a fixed agent literal to an absolute executable before execution."""
-    selected_agent = approved_agent(agent)
-    command = AGENT_COMMANDS[selected_agent]
-    executable = shutil.which(command)
-    if executable is None:
-        raise SystemExit(f"Could not find approved '{command}' executable on PATH.")
-    return executable
+def approved_agent_args(args: list[str]) -> None:
+    """Reject caller-provided launch arguments at the credential boundary."""
+    if args:
+        raise SystemExit("OpenRouter launchers do not accept command arguments.")
 
 
 def apply_runtime_env(agent: str) -> dict[str, str]:
@@ -65,7 +51,6 @@ def apply_runtime_env(agent: str) -> dict[str, str]:
         env[name] = str(ensure_dir(path))
 
     agent_home_root = ensure_dir(REPO_ROOT / ".agent-home")
-
     if agent == "codex":
         env["CODEX_HOME"] = str(ensure_dir(agent_home_root / "codex"))
     elif agent == "claude":
@@ -75,11 +60,9 @@ def apply_runtime_env(agent: str) -> dict[str, str]:
     return env
 
 
-def ensure_op_available() -> str:
-    executable = shutil.which("op")
-    if executable is None:
+def ensure_op_available() -> None:
+    if shutil.which("op") is None:
         raise SystemExit("1Password CLI 'op' is not installed or not on PATH.")
-    return executable
 
 
 def ensure_op_signed_in() -> None:
@@ -138,59 +121,35 @@ def ensure_env_file(agent: str) -> Path:
     return ENV_FILE
 
 
-def exec_agent(agent: str, args: list[str]) -> int:
-    selected_agent = approved_agent(agent)
-    approved_agent_args(args)
-    env = apply_runtime_env(selected_agent)
-    executable = resolve_approved_agent_executable(selected_agent)
-    try:
-        os.execve(executable, [executable], env)
-    except FileNotFoundError as exc:
-        raise SystemExit(f"Could not execute approved '{selected_agent}' executable: {exc}") from exc
-    return 0
-
-
-def approved_agent_args(args: list[str]) -> None:
-    """Reject all caller-provided command arguments at the execution boundary."""
-    if args:
-        raise SystemExit("OpenRouter launchers do not accept command arguments.")
-
-
 def launch_agent(agent: str, args: list[str]) -> int:
+    """Run the established `op run` handoff with a fixed agent target."""
     selected_agent = approved_agent(agent)
     approved_agent_args(args)
-
-    op_executable = ensure_op_available()
+    ensure_op_available()
     ensure_op_signed_in()
     env_file = ensure_env_file(selected_agent)
+    env = apply_runtime_env(selected_agent)
 
-    command = [
-        op_executable,
-        "run",
-        f"--env-file={env_file}",
-        "--",
-        sys.executable,
-        str(Path(__file__).resolve()),
-        "--exec",
-        selected_agent,
-    ]
-    try:
-        os.execve(op_executable, command, os.environ.copy())
-    except FileNotFoundError as exc:
-        raise SystemExit("1Password CLI 'op' is not installed or not on PATH.") from exc
-    return 0
+    if selected_agent == "codex":
+        result = subprocess.run(
+            ["op", "run", f"--env-file={env_file}", "--", "codex"],
+            env=env,
+            check=False,
+        )
+    else:
+        result = subprocess.run(
+            ["op", "run", f"--env-file={env_file}", "--", "claude"],
+            env=env,
+            check=False,
+        )
+    return result.returncode
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(add_help=False)
-    parser.add_argument("--exec", dest="exec_mode", action="store_true")
     parser.add_argument("agent")
     parser.add_argument("args", nargs="*")
     parsed = parser.parse_args()
-
-    if parsed.exec_mode:
-        return exec_agent(parsed.agent, parsed.args)
-
     return launch_agent(parsed.agent, parsed.args)
 
 
