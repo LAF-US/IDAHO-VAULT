@@ -1,4 +1,5 @@
 ---
+title: FACTORY
 authority: LOGAN
 related:
   - FACTORY
