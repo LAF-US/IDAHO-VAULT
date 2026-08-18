@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import importlib.util
+import io
 import sys
 import unittest
 from datetime import datetime, timedelta, timezone
@@ -300,10 +301,11 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
 
         with mock.patch.object(review_feedback_loop, "ensure_labels") as ensure_labels, mock.patch.object(
             review_feedback_loop.gh_cli, "pr_view"
-        ) as pr_view:
+        ) as pr_view, mock.patch("sys.stdout", new_callable=io.StringIO) as stdout:
             result = review_feedback_loop.acknowledge_apply(args)
 
         self.assertEqual(result, 0)
+        self.assertIn("not trusted", stdout.getvalue())
         ensure_labels.assert_not_called()
         pr_view.assert_not_called()
 
