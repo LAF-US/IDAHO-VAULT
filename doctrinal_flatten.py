@@ -130,11 +130,7 @@ def collect_candidates(repo_root: Path) -> tuple[list[Candidate], list[dict[str,
 
 
 def plan_moves(repo_root: Path, candidates: list[Candidate]) -> list[dict[str, object]]:
-    root_reserved = {
-        filesystem_key(path.name)
-        for path in repo_root.iterdir()
-        if path.is_file()
-    }
+    root_reserved = {filesystem_key(path.name) for path in repo_root.iterdir()}
     plans: list[dict[str, object]] = []
 
     grouped: dict[str, list[Candidate]] = defaultdict(list)

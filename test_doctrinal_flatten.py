@@ -80,6 +80,22 @@ class DoctrinalFlattenTest(unittest.TestCase):
             doctrinal_flatten.filesystem_key("RÉSUMÉ.md"),
         )
 
+    def test_root_directory_name_is_an_incoming_file_collision(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            repo_root = Path(temporary_directory)
+            (repo_root / "photo.png").mkdir()
+            source_dir = repo_root / "INBOX"
+            source_dir.mkdir()
+            (source_dir / "photo.png").write_text("incoming", encoding="utf-8")
+
+            candidates, _ = doctrinal_flatten.collect_candidates(repo_root)
+            plans = doctrinal_flatten.plan_moves(repo_root, candidates)
+
+        self.assertEqual(len(plans), 1)
+        self.assertEqual(plans[0]["action"], "moved_root_renamed")
+        self.assertEqual(plans[0]["collision"], "root_existing")
+        self.assertNotEqual(plans[0]["destination"], "photo.png")
+
     def test_inbox_nested_file_flattens_to_root(self) -> None:
         with tempfile.TemporaryDirectory() as temporary_directory:
             repo_root = Path(temporary_directory)
