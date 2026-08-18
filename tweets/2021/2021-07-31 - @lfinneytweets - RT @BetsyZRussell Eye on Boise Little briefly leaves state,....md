@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Little briefly leaves state,..."
 date: 2021-07-31
 time: 17:07:27
 tweet_id: "1421517880881913869"

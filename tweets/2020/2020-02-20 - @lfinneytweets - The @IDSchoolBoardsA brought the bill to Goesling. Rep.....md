@@ -1,4 +1,5 @@
 ---
+title: "The @IDSchoolBoardsA brought the bill to Goesling. Rep...."
 date: 2020-02-20
 time: 15:14:37
 tweet_id: "1230511077416263680"

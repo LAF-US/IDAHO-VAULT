@@ -11,7 +11,7 @@ The Micron Academic Center is expected to open to students in the Fall of 2027, 
 
 “Micron’s extraordinary generosity reflects a deep belief in the power of education to transform lives, strengthen families, and fuel Idaho’s economy,” CWI President Gordon Jones stated. “The Micron Academic Center will stand as a beacon of opportunity — a place where students from all backgrounds can gain the knowledge and skills to thrive in high-demand careers and build meaningful futures.”
 
-![](https://www.idahoednews.org/wp-content/uploads/2026/03/P2191315.jpg)
+![alt text needed](https://www.idahoednews.org/wp-content/uploads/2026/03/P2191315.jpg)
 
 Micron’s Boise semiconductor fabrication facility project, pictured on Feb. 19, 2026. (Kaeden Lincoln/IdahoEdNews)
 

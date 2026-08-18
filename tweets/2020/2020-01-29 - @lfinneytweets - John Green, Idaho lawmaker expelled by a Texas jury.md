@@ -1,4 +1,5 @@
 ---
+title: "John Green, Idaho lawmaker expelled by a Texas jury"
 date: 2020-01-29
 time: 04:25:17
 tweet_id: "1222375136835166208"

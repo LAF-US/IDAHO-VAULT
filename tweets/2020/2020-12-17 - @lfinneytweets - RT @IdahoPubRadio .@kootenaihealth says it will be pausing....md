@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio .@kootenaihealth says it will be pausing..."
 date: 2020-12-17
 time: 01:27:47
 tweet_id: "1339381746819682307"

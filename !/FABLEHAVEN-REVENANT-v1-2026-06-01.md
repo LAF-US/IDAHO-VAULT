@@ -72,7 +72,7 @@ sits with the controlling object's custody, not the thing it animates — see
 `!/FABLEHAVEN-BOUND-SERVANTS-v1-2026-06-01.md`). It sits precisely between them:
 
 | | Origin / agency | Power locus | Counter | Responsible party |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | **Lich** | **Self-created** — engineered its own continuity | Externalized *own* soul (phylactery) | Destroy the phylactery | **Itself** |
 | **Revenant** | **Constructed** — reanimated & nail-bound by another | Power concentrated in a *placed* talisman | Pull the nail | **The nail's custody** |
 | **Bound Servant** (golem/Mendigo) | **Constructed** — animated by another | Command channel; no stored self | Secure/seize the reins | **The holder** |
@@ -228,4 +228,8 @@ own discipline; "we took it out of production" is the start, not the finish.
    that maker is the responsible agent, and the label will lie to you about all
    three.
 
-###### [["The world is quiet here."]]
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

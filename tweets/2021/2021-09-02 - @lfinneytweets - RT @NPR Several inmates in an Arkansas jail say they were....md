@@ -1,4 +1,5 @@
 ---
+title: "RT @NPR Several inmates in an Arkansas jail say they were..."
 date: 2021-09-02
 time: 14:24:43
 tweet_id: "1433435723881877512"

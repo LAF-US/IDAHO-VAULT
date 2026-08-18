@@ -1,4 +1,5 @@
 ---
+title: "RT @sallykrutzig \u2018We exist\u2019 Canyon County\u2019s first Pride..."
 date: 2024-06-10
 time: 14:35:19
 tweet_id: "1800174911228661857"
@@ -15,9 +16,9 @@ related:
   - lfinneytweets
 ---
 
-RT @sallykrutzig: ‘We exist’: Canyon County’s first Pride Festival draws thousands https://t.co/xnslunO5EH
+RT @sallykrutzig: ‘We exist’: Canyon County’s first Pride Festival draws thousands <https://t.co/xnslunO5EH>
 
 ## Links
-- https://www.idahostatesman.com/news/local/community/boise/article289135409.html
+- <https://www.idahostatesman.com/news/local/community/boise/article289135409.html>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1800174911228661857)

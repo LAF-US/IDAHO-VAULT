@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Governor says Idaho's taking..."
 date: 2020-04-17
 time: 03:44:49
 tweet_id: "1250993593671487488"

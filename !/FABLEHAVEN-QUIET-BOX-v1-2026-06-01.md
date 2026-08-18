@@ -94,6 +94,7 @@ was served by exactly this.
 Three lessons compound here:
 
 ### 1. A quarantine whose contents are unknown is a loaded trap
+
 The fatal fact was not the swap rule itself — it was that **no one knew what the
 swap would release.** An opaque containment slot ("something dangerous is in
 there; don't open it; we never recorded what") guarantees that any future
@@ -107,6 +108,7 @@ standing that will be reactivated by someone who does not know what they are
 waking. **Label your prisons.** A seal with no manifest is a future incident.
 
 ### 2. The adversary obscures the record and lets the swap do the work
+
 The Sphinx did not break Navarog out. Navarog was **already inside** — how he was
 first captured and by whom, canon does not say — and the Sphinx, present at the
 sealing, **kept the occupant's identity secret**, then let the system's own logic
@@ -123,6 +125,7 @@ a win (we contained the spy!) is the attack's payload (we freed the dragon).
 you celebrate the capture.**
 
 ### 3. Suspension is not resolution
+
 Navarog sat for years; Vanessa faced the prospect of centuries. The Box paused
 both and resolved neither — and returned its occupants degraded, unmoored from
 the time that passed without them.
@@ -159,7 +162,7 @@ The bestiary now holds three ways to contain what you cannot destroy. They fail
 differently, and choosing among them is a real decision:
 
 | Mechanism | How it holds | How it is spent / defeated | Signature risk |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **The 13 Knots** (Muriel) | A finite set of seals | Authorized parties *voluntarily* spend knots for favors | Slow consensual erosion; "only two left" |
 | **The Quiet Box** | Suspended isolation; swap-to-release | A swap forces release of the current occupant | Blind release of an unknown/seeded prisoner |
 | **The Buried Hill-Seal** (Bahumat) | Deep burial under many knots, jointly bound | Requires major force + higher authority to undo | Heavy to set *and* to re-set; not portable |
@@ -182,7 +185,7 @@ The containment thread has grown past three mechanics into a **family of vessels
 and the family sorts not by what it holds but by **how it fails open**:
 
 | Vessel | Built to | Fails open on | Chapter |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **The Quiet Box** | suspend a prisoner (cage) | a forced, blind **swap** | *this node* |
 | **Sealed Evil / the Buried Hill-Seal** | bury a demon (cage) | breach by **overwhelming force** | `!/FABLEHAVEN-SEALED-EVIL-v1-2026-06-01.md` |
 | **On-Ice** | hold a threat inert (cage) | **lapse** of the holding condition | `!/ON-ICE-MECHANIC-v1-2026-06-03.md` |
@@ -221,4 +224,8 @@ the family: *every other vessel's failure mode is worse when its manifest is unk
    *severance* (the Box excels); but reaching for "most secure" without pricing
    the swap is how you free a dragon to cage a spy.
 
-###### [["The world is quiet here."]]
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

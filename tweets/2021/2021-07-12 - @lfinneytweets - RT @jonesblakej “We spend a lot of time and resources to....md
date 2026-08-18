@@ -1,4 +1,5 @@
 ---
+title: "RT @jonesblakej \u201cWe spend a lot of time and resources to..."
 date: 2021-07-12
 time: 16:34:27
 tweet_id: "1414624205929205763"

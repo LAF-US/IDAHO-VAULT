@@ -1,4 +1,5 @@
 ---
+title: "Idaho Boys State 2016 Supreme Court Chief Justice \ud83e\udee1"
 date: 2024-04-15
 time: 22:38:02
 tweet_id: "1780002672806068614"

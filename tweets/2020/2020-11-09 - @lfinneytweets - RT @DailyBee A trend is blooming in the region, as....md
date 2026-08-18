@@ -1,4 +1,5 @@
 ---
+title: "RT @DailyBee A trend is blooming in the region, as..."
 date: 2020-11-09
 time: 02:01:29
 tweet_id: "1325619490059505666"

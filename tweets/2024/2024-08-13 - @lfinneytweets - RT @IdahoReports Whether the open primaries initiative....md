@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Whether the open primaries initiative..."
 date: 2024-08-13
 time: 22:52:00
 tweet_id: "1823492729047048549"

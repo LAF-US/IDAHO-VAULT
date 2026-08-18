@@ -1,4 +1,5 @@
 ---
+title: "RT @brian_lenney \ud83d\udea8 RE Recent Racist Remarks & Idaho \ud83d\udea8..."
 date: 2024-03-29
 time: 02:29:35
 tweet_id: "1773537963810394154"

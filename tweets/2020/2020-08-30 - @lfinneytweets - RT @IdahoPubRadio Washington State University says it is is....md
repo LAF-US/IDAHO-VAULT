@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio Washington State University says it is is..."
 date: 2020-08-30
 time: 21:16:44
 tweet_id: "1300180679926243329"

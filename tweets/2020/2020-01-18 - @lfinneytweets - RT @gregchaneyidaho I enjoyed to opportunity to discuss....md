@@ -1,4 +1,5 @@
 ---
+title: "RT @gregchaneyidaho I enjoyed to opportunity to discuss..."
 date: 2020-01-18
 time: 04:43:22
 tweet_id: "1218393420109991937"

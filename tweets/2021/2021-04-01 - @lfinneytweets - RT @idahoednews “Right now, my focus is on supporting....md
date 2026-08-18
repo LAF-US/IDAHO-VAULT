@@ -1,4 +1,5 @@
 ---
+title: "RT @idahoednews \u201cRight now, my focus is on supporting..."
 date: 2021-04-01
 time: 14:53:06
 tweet_id: "1377635138721390595"

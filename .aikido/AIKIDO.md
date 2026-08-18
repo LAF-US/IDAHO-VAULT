@@ -1,4 +1,5 @@
 ---
+title: AIKIDO
 authority: LOGAN
 related:
   - AIKIDO

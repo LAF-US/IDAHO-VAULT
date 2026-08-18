@@ -19,7 +19,9 @@ related:
 authority: LOGAN
 ---
 # Roster
+
 ## 2023 Members
+
 - James Holtzclaw
 - Matt Bundy
 - Mike Kingsley

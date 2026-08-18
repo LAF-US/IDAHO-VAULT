@@ -1,4 +1,5 @@
 ---
+title: "RT @NPR Texas House Democrats are leaving the state in an..."
 date: 2021-07-12
 time: 20:34:10
 tweet_id: "1414684529554444297"

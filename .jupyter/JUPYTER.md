@@ -1,4 +1,5 @@
 ---
+title: JUPYTER
 authority: LOGAN
 related:
   - JUPYTER
