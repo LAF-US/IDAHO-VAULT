@@ -1,4 +1,5 @@
 ---
+title: "Deaths by county."
 date: 2020-04-10
 time: 04:51:42
 tweet_id: "1248473710744334341"
@@ -14,10 +15,10 @@ related:
   - lfinneytweets
 ---
 
-Deaths by county. https://t.co/MCAjf2S2Fs
+Deaths by county. <https://t.co/MCAjf2S2Fs>
 
 ## Media
-- ![](https://pbs.twimg.com/media/EVN4KdCUEAQbge4.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EVN4KdCUEAQbge4.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

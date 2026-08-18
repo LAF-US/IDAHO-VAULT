@@ -1,4 +1,5 @@
 ---
+title: "Now you've got me curious.... BRB, gonna look at maps"
 date: 2021-08-18
 time: 21:15:15
 tweet_id: "1428103221768200192"

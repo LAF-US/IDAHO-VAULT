@@ -16,10 +16,11 @@ related:
   - lfinneytweets
 ---
 
-@VandalBand https://t.co/NWwY4eJfLm
+@VandalBand <https://t.co/NWwY4eJfLm>
 
 ## Links
-- https://x.com/SpokesmanReview/status/1217268916902420483
+
+- <https://x.com/SpokesmanReview/status/1217268916902420483>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

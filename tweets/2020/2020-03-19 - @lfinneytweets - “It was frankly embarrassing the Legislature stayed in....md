@@ -1,4 +1,5 @@
 ---
+title: "\u201cIt was frankly embarrassing the Legislature stayed in..."
 date: 2020-03-19
 time: 22:38:07
 tweet_id: "1240769547373662208"

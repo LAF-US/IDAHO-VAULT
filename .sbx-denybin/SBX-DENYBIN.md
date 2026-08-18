@@ -1,4 +1,5 @@
 ---
+title: SBX-DENYBIN
 authority: LOGAN
 related:
   - SBX-DENYBIN
@@ -6,6 +7,6 @@ related:
   - runtime
 ---
 
-**.sbx-denybin** — Imported software runtime persona.
+**.sbx-denybin** â€” Imported software runtime persona.
 
 sbx-denybin runtime and configuration.

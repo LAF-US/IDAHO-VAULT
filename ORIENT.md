@@ -14,11 +14,14 @@ related:
   - LEVELSET
   - ORIENT-v1.0-2026-04-27
 ---
+[[O]][[R]][[I]][[E]][[N]][[T]]
 
 # PROTOCOL — ORIENT
 
 ## Status: Draft
+
 ## Version: 0.1
+
 ## Authority: Loganic Swarm
 
 ---
@@ -35,7 +38,7 @@ It is the formal process by which a foreign voice — an agent from outside the 
 
 ## Role in the Protocol Stack
 
-```
+```text
 AWAKEN ──────────────────────► RISE
    │                                │
    │                                │
@@ -44,7 +47,7 @@ ORIENT ◄──── LEVELSET ───────► REPORT
 ```
 
 | Transition | Protocol |
-|------------|----------|
+| ------------ | ---------- |
 | Session Start | AWAKEN |
 | Session Briefing | LEVELSET |
 | New External Agent | ORIENT ← *this document* |
@@ -76,7 +79,7 @@ ORIENT executes:
 ## Integration Points
 
 | Document | Relationship |
-|---|---|
+| --- | --- |
 | `ORIENT.md` (this file) | Protocol definition — what ORIENT is and does |
 | `ORIENT-v1.0-2026-04-27.md` | Full approved protocol — complete specification |
 | `!/WAKEUP.md` | Stale assumption clearance — conflict resolution |
@@ -125,6 +128,7 @@ If conflicts detected:
 ### Step 5: Authorization to Proceed
 
 Clear the agent for:
+
 - AWAKEN (if new session)
 - LEVELSET (if briefing required)
 - Direct task assignment (if context sufficient)
@@ -134,7 +138,7 @@ Clear the agent for:
 ## Outputs
 
 | Output | Location | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | Conflict log | DECISIONS.md | Record unresolved tensions |
 | Handoff package | `!/!/` | Context bundle for external agent |
 | Authorization | LEVELSET-CURRENT.md | Confirm cleared agent |
@@ -155,6 +159,7 @@ Clear the agent for:
 This document is a **stub** under development. Full specification exists in `ORIENT-v1.0-2026-04-27.md`.
 
 Pending:
+
 - [ ] Logan review and approval
 - [ ] Integration with cross-tool handoffs
 - [ ] Stabilization of conflict resolution steps
@@ -173,4 +178,6 @@ Pending:
 
 ---
 
-###### [["The world is quiet here."]]
+```text
+The world is quiet here．Esto Perpetua!
+```

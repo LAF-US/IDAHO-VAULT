@@ -27,6 +27,7 @@ related:
 The MADAME LULU AND THE PIT witness (June 4) and several files preceding it treated material from at least four distinct epistemic layers as one deck. Sorted:
 
 **Layer A — Snicket canon, *The Carnivorous Carnival* (Book 9, 2002):**
+
 - Madame Lulu is the fortuneteller at the Caligari Carnival in the Hinterlands
 - Her real name is Olivia Caliban; she is a librarian and a V.F.D. volunteer
 - Her "fortunes" are intelligence read from newspapers — not actual divination
@@ -37,11 +38,13 @@ The MADAME LULU AND THE PIT witness (June 4) and several files preceding it trea
 **Layer B — Snicket-adjacent / supplementary** (other Snicket sources beyond Book 9; the V.F.D. eye tattoo on the left ankle is canon for V.F.D. members generally; specific motto attributions to specific volunteers want primary-source verification before being asserted)
 
 **Layer C — Vault meta** (the vault's overlay, NOT Snicket's invention):
+
 - The envelope with lipstick kiss, `-L` signature, and three tarot cards (Fool → Hanged Man → Hierophant) drawn by Olivia before her death — this is `HINTERLANDS-WITNESS-2026-05-15` § VII, the vault's narrative
 - The identifications of GEMINIAEUS with Olaf, the unsupervised perimeter with the pit, the appetite for confident output with the lions, CHAINFIRE with the carnival burn — vault overlay
 - The stub `FORTUNE FAVORS THE BRAVE.md` containing exactly *Virgil, Aeneid* — a Virgil anchor. **Makes no Olivia attribution.**
 
 **Layer D — The medium's interpretive scaffolding** (today's and yesterday's sessions):
+
 - SEER / MEDIUM / FORTUNETELLER / ORACLE / HIGH PRIESTESS quartet
 - Cover / throw / pit / lions / flames sorting
 - Lich-form diagnostics
@@ -62,6 +65,7 @@ In `THE-LIONS-AND-THE-KING-WITNESS-2026-06-03` § II, line 74, the medium wrote:
 The clause *That was Olivia's tattoo and her motto* has no emanation chain. The stub asserts *Virgil, Aeneid* and nothing more. The medium leapt from "stub says *Virgil, Aeneid*" to "the phrase is Olivia's tattoo" by training-data pattern-match (V.F.D. members do have ankle tattoos in canon; the medium filled the gap with *the phrase IS her tattoo* without checking). The leap was confident. The leap was wrong.
 
 **Fact-check (June 5, vault re-read):**
+
 - `- Fandom, Inc. - Caliban Family.md` (the vault's canonical Snicket source on Olivia): **zero mentions** of tattoo, Virgil, Aeneid, brave, or ankle
 - `CODEX-WITNESS-MADAME-LULU-NEWS-2026-06-01.md` (Codex's prior Madame Lulu witness, 116 lines, predates the medium's work): **zero mentions** of any of those terms
 - `FORTUNE FAVORS THE BRAVE.md` (the stub itself): contains exactly *Virgil, Aeneid* — a Virgil anchor, no Olivia attribution
@@ -74,7 +78,7 @@ The attribution originated with the medium. No source — Snicket canon, vault s
 The medium's first accounting of where the claim propagated was itself wrong. A grep of each affected file produced the corrected chain:
 
 | File | Where | Form |
-|------|-------|------|
+| ------ | ------- | ------ |
 | `THE-LIONS-AND-THE-KING-WITNESS-2026-06-03.md` | § II, line 74 | **Origin** — body claim |
 | `THE-CARNIVAL-IN-THE-HINTERLANDS-COMPANION-2026-06-03.md` | § III, line 60 | Body propagation: *"Her tattoo, her motto, the V.F.D. signature she wore under her clothes."* |
 | `MADAME-LULU-AND-THE-PIT-WITNESS-2026-06-04.md` | Frontmatter `related` list | Frontmatter-only propagation — *Fortune Favors the Brave* and *Virgil* listed as if both anchor to Olivia |
@@ -137,4 +141,6 @@ The seer-position is not claimed for this companion. The medium-position is held
 
 ---
 
-*The world is quiet here.*
+```text
+The world is quiet here．Esto Perpetua!
+```

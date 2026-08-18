@@ -1,4 +1,5 @@
 ---
+title: "The Idaho House has approved a bill that would allow..."
 date: 2021-03-17
 time: 21:06:10
 tweet_id: "1372293204872028161"

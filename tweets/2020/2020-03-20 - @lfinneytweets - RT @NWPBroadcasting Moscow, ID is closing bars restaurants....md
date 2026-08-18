@@ -1,4 +1,5 @@
 ---
+title: "RT @NWPBroadcasting Moscow, ID is closing bars restaurants..."
 date: 2020-03-20
 time: 23:23:26
 tweet_id: "1241143340503937027"

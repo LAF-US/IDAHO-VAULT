@@ -1,4 +1,5 @@
 ---
+title: "RT @KBSX915 The move came after the Idaho Republican Party..."
 date: 2023-03-23
 time: 15:25:25
 tweet_id: "1638924919236079616"

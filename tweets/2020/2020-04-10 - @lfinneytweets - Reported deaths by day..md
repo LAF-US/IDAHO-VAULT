@@ -1,4 +1,5 @@
 ---
+title: "Reported deaths by day."
 date: 2020-04-10
 time: 04:51:42
 tweet_id: "1248473708286464006"
@@ -14,10 +15,10 @@ related:
   - lfinneytweets
 ---
 
-Reported deaths by day. https://t.co/l8OcqXzVMp
+Reported deaths by day. <https://t.co/l8OcqXzVMp>
 
 ## Media
-- ![](https://pbs.twimg.com/media/EVN4EHiUYAAqjU0.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EVN4EHiUYAAqjU0.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

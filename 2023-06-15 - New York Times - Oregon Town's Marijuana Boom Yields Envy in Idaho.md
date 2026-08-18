@@ -3,6 +3,7 @@ author: Kurtis Lee
 outlet:
 - The New York Times
 URL: https://www.nytimes.com/2023/06/15/business/economy/oregon-idaho-marijuana.html
+wayback: https://web.archive.org/web/20230615100122/https://www.nytimes.com/2023/06/15/business/economy/oregon-idaho-marijuana.html
 related:
 - '104'
 - '200'
@@ -47,7 +48,7 @@ related:
 - transportation
 authority: LOGAN
 ---
-### Tax revenue has surged since cannabis stores opened in Ontario, Ore., fueling a push in neighboring Idaho to legalize sales and get in on the action.
+### Tax revenue has surged since cannabis stores opened in Ontario, Ore., fueling a push in neighboring Idaho to legalize sales and get in on the action
 
 For John Leeds, the hour-and-a-half commute to and from his job as assistant manager at Treasure Valley Cannabis Company is exhausting, but logistically unavoidable.
 
@@ -97,7 +98,7 @@ As those efforts foundered, customers in Idaho increasingly made the trek to Ore
 
 Few areas in the state have benefited as much as Malheur County, home to Ontario.
 
-The city, which voted to legalize local recreational sales of marijuana in 2018, is the only part of the county with dispensaries. Even so, Malheur County racked up roughly $104 million in total cannabis sales last year, outpacing each of the state’s 35 other counties except Multnomah, which includes Portland. 
+The city, which voted to legalize local recreational sales of marijuana in 2018, is the only part of the county with dispensaries. Even so, Malheur County racked up roughly $104 million in total cannabis sales last year, outpacing each of the state’s 35 other counties except Multnomah, which includes Portland.
 
 In 2020, the first full year in which Ontario allowed cannabis sales, the city took in $1.8 million in resulting tax revenue. The next year, the revenue increased 65 percent.
 

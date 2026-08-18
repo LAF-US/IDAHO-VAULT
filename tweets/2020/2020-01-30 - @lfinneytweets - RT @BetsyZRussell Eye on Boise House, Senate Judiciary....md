@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise House, Senate Judiciary..."
 date: 2020-01-30
 time: 01:48:03
 tweet_id: "1222697954256904192"

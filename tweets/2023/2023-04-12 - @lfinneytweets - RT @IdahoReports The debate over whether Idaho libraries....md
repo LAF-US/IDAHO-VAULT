@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports The debate over whether Idaho libraries..."
 date: 2023-04-12
 time: 16:22:12
 tweet_id: "1646186968399872002"

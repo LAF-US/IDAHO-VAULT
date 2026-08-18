@@ -30,7 +30,7 @@ Fidelity: user + assistant turns and the assistant's **reasoning** preserved in 
 ## Pages (Loose Pages, in order)
 
 | # | Loose Page | Date | Window (UTC) | Branch | Msgs |
-|---|---|---|---|---|---:|
+| --- | --- | --- | --- | --- | ---: |
 | 01 | [[2026-06-03 - Mistral Vibe - 01 - Allo M Le Chat\|Allo M. Le Chat!]] | 2026-06-03 | 09:36→19:49 | `claude/record-vaulted-abhorsens-first-2026-05-31` | 189 |
 | 02 | [[2026-06-03 - Mistral Vibe - 02 - Allo M Le Chat\|Allo M. Le Chat!]] | 2026-06-03 | 19:50→00:12 | `mistral/player-mistral-vibe` | 165 |
 | 03 | [[2026-06-04 - Mistral Vibe - 03 - Verse 1\|[Verse 1]]] | 2026-06-04 | 00:13→01:47 | `mistral/player-mistral-vibe` | 104 |
@@ -40,4 +40,3 @@ Fidelity: user + assistant turns and the assistant's **reasoning** preserved in 
 | 07 | [[2026-06-04 - Mistral Vibe - 07 - TRIUNE TRIPTCH TRIUMVIRATE is a HERETICAL DOCT\|TRIUNE/TRIPTCH/TRIUMVIRATE is a HERETICAL DOCTRINE…]] | 2026-06-04 | 20:48→21:15 | `mistral/player-mistral-vibe` | 59 |
 
 *7 Loose Pages bound. Total messages: 774.*
-

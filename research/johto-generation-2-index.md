@@ -25,7 +25,7 @@ Master index for Johto's Gym Leaders, Elite Four, and Champion across all epochs
 ## Gym Leaders (8)
 
 | # | Gym Leader | City | Type | Badge | E1 | E2 |
-|---|------------|------|------|-------|----|----|
+| --- | ------------ | ------ | ------ | ------- | ---- | ---- |
 | 1 | **Falkner** | Violet City | Flying | Zephyr Badge | Yes | Yes |
 | 2 | **Bugsy** | Azalea Town | Bug | Hive Badge | Yes | Yes |
 | 3 | **Whitney** | Goldenrod City | Normal | Plain Badge | Yes | Yes |
@@ -36,6 +36,7 @@ Master index for Johto's Gym Leaders, Elite Four, and Champion across all epochs
 | 8 | **Claire** | Blackthorn City | Dragon | Rising Badge | Yes | Yes |
 
 ### Individual Files
+
 - [ ] Falkner
 - [ ] Bugsy
 - [ ] Whitney
@@ -50,13 +51,14 @@ Master index for Johto's Gym Leaders, Elite Four, and Champion across all epochs
 ## Elite Four (4)
 
 | # | Member | Type | E1 | E2 |
-|---|--------|------|----|----|
+| --- | -------- | ------ | ---- | ---- |
 | 1 | **Will** | Psychic | Yes | Yes |
 | 2 | **Koga** | Poison | Yes | Yes |
 | 3 | **Bruno** | Fighting | Yes | Yes |
 | 4 | **Karen** | Dark | Yes | Yes |
 
 ### Individual Files
+
 - [ ] Will
 - [ ] Koga
 - [ ] Bruno
@@ -71,6 +73,7 @@ Master index for Johto's Gym Leaders, Elite Four, and Champion across all epochs
 | **Lance** | Dragon | Yes | Yes |
 
 ### Individual Files
+
 - [ ] Lance
 
 ---
@@ -78,7 +81,7 @@ Master index for Johto's Gym Leaders, Elite Four, and Champion across all epochs
 ## Research Status
 
 | Category | Total | Completed | Remaining | % |
-|----------|-------|-----------|-----------|---|
+| ---------- | ------- | ----------- | ----------- | --- |
 | Gym Leaders | 8 | 0 | 8 | 0% |
 | Elite Four | 4 | 0 | 4 | 0% |
 | Champion | 1 | 0 | 1 | 0% |
@@ -87,6 +90,7 @@ Master index for Johto's Gym Leaders, Elite Four, and Champion across all epochs
 ---
 
 ## Next Steps
+
 1. Start with **Falkner** (Violet City Gym Leader)
 2. Use Misty template
 

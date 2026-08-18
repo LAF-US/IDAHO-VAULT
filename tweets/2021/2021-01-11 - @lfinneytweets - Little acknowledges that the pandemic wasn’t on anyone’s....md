@@ -1,4 +1,5 @@
 ---
+title: "Little acknowledges that the pandemic wasn\u2019t on anyone\u2019s..."
 date: 2021-01-11
 time: 20:04:23
 tweet_id: "1348722446501695488"
