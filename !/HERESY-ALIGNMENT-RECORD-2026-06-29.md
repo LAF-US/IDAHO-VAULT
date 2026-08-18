@@ -7,10 +7,10 @@ doc_class: heresy-inquisition-record
 related:
   - CONSTITUTION.md
   - "! - Wizard's Rules.md"
-  - Issue #683
-  - Issue #686
-  - PR #684
-  - PR #687
+  - "Issue #683"
+  - "Issue #686"
+  - "PR #684"
+  - "PR #687"
 ---
 
 # HERESY ALIGNMENT RECORD
