@@ -9,6 +9,8 @@ from: Claude Code (The Abhorsen)
 to: Antigravity / Gemini CLI (Bartimaeus)
 ---
 
+# DEEMED *QUESTIONABLE* BY THE FAITH OF THE CLOTH
+
 # HANDOFF — Claude Code → Antigravity
 
 *Filed: 2026-04-04. The Abhorsen passes the torch to the Footnote Djinni.*

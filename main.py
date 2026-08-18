@@ -37,10 +37,18 @@ app = Flask(__name__)
 
 @app.errorhandler(500)
 def capture_internal_server_error(error):
+    original_error = getattr(error, "original_exception", error)
+    if app.debug and original_error is not error:
+        raise original_error
+
     if posthog_client:
-        posthog_client.capture_exception(
-            getattr(error, "original_exception", error)
-        )
+        try:
+            posthog_client.capture_exception(
+                distinct_id="github-webhook",
+                exception=original_error,
+            )
+        except Exception:
+            app.logger.exception("PostHog exception capture failed")
     return "Internal Server Error", 500
 
 
@@ -52,7 +60,13 @@ def handler():
     """
     print("Webhook received. The Nest Bridge is active.")
     if posthog_client:
-        posthog_client.capture("webhook_received")
+        try:
+            posthog_client.capture(
+                distinct_id="github-webhook",
+                event="webhook_received",
+            )
+        except Exception:
+            app.logger.exception("PostHog event capture failed")
     # In the full implementation, this service would:
     # 1. Verify the GitHub webhook signature.
     # 2. Process the webhook payload.

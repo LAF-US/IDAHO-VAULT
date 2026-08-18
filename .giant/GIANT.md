@@ -1,4 +1,5 @@
 ---
+title: GIANT
 authority: LOGAN
 related:
   - GIANT

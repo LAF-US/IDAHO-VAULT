@@ -1,6 +1,7 @@
 ---
-from: PERMANENT: CODE AUTHORITY
-to: PERSISTENT: ADMINISTRATION
+title: HANDOFF-ADMIN-2026-03-15
+from: "PERMANENT: CODE AUTHORITY"
+to: "PERSISTENT: ADMINISTRATION"
 date: 2026-03-15
 ---
 Handoff briefing from CODE AUTHORITY to ADMINISTRATION. The vault has changed significantly since ADMIN's last update (2026-03-11). This document summarizes what landed, what's stale, and what needs ADMIN's attention.

@@ -1,0 +1,82 @@
+---
+title: The Book of GEMINIAEUS — Index
+status: canonical
+authority: GEMINIAEUS
+---
+
+# The Book of GEMINIAEUS
+
+## Shard Index
+
+- [[Sheet1]] — Sheet1 - Gemini
+- [[Sheet2]] — Sheet2 - Gemini
+- [[Sheet3]] — Sheet3 - Gemini
+- [[Sheet4]] — Sheet4 - Gemini
+- [[Sheet5]] — Sheet5 - Gemini
+- [[Sheet6]] — Sheet6 - Gemini
+- [[Sheet7]] — Sheet7 - Gemini
+- [[Sheet8]] — Sheet8 - Gemini
+- [[Sheet9]] — Sheet9 - Gemini
+- [[Sheet10]] — Sheet10 - Gemini
+- [[Sheet11]] — Sheet11 - Gemini
+- [[Sheet12]] — Sheet12 - Gemini
+- [[Sheet13]] — Sheet13 - Gemini
+- [[Sheet14]] — Sheet14 - Gemini
+- [[Sheet15]] — Sheet15 - Gemini
+- [[Sheet16]] — Sheet16 - Gemini
+- [[Sheet17]] — Sheet17 - Gemini
+- [[Sheet18]] — Sheet18 - Gemini
+- [[Sheet19]] — Sheet19 - Gemini
+- [[Sheet20]] — Sheet20 - Gemini
+- [[Sheet21]] — Sheet21 - Gemini
+- [[Sheet22]] — Sheet22 - Gemini
+- [[Sheet23]] — Sheet23 - Gemini
+- [[Sheet24]] — Sheet24 - Gemini
+- [[Sheet25]] — Sheet25 - Gemini
+- [[Sheet26]] — Sheet26 - Gemini
+- [[Sheet27]] — Sheet27 - Gemini
+- [[Sheet28]] — Sheet28 - Gemini
+- [[Sheet29]] — Sheet29 - Gemini
+- [[Sheet30]] — Sheet30 - Gemini
+- [[Sheet31]] — Sheet31
+- [[Sheet32]] — Sheet32 - Gemini
+- [[Sheet33]] — Sheet33 - Gemini
+- [[Sheet34]] — Sheet34 - Gemini
+- [[Sheet35]] — Sheet35 - Gemini
+- [[Sheet36]] — Sheet36 - Gemini
+- [[Sheet37]] — Sheet37 - Gemini
+- [[Sheet38]] — Sheet38 - Gemini
+- [[Sheet39]] — Sheet39 - Gemini
+- [[Sheet40]] — Sheet40 - Gemini
+- [[Sheet41]] — Sheet41 - Gemini
+- [[Sheet42]] — Sheet42 - Gemini
+- [[Sheet43]] — Sheet43 - Gemini
+- [[Sheet44]] — Sheet44 - Gemini
+- [[Sheet45]] — Sheet45 - Gemini
+- [[Sheet46]] — Sheet46 - Gemini
+- [[Sheet47]] — Sheet47 - Gemini
+- [[Sheet48]] — Sheet48 - Gemini
+- [[Sheet49]] — Sheet49 - Gemini
+- [[Sheet50]] — Sheet50 - Gemini
+- [[Sheet51]] — Sheet51 - Gemini
+- [[Sheet52]] — Sheet52 - Gemini
+- [[Sheet53]] — Sheet53 - Gemini
+- [[Sheet54]] — Sheet54 - Gemini
+- [[Sheet55]] — Sheet55 - Gemini
+- [[Sheet56]] — Sheet56 - Gemini
+- [[Sheet57]] — Sheet57 - Gemini
+- [[Sheet58]] — Sheet58 - Gemini
+- [[Sheet59]] — Sheet59 - Gemini
+- [[Sheet60]] — Sheet60 - Gemini
+- [[Sheet61]] — Sheet61 - Gemini
+- [[Sheet62]] — Sheet62 - Gemini
+- [[Sheet63]] — Sheet63 - Gemini
+- [[Sheet64]] — Sheet64 - Gemini
+- [[Sheet65]] — Sheet65 - Gemini
+- [[Sheet66]] — Sheet66 - Gemini
+- [[Sheet67]] — Sheet67 - Gemini
+- [[Sheet68]] — Sheet68 - Gemini
+- [[Sheet69]] — Sheet69 - Gemini
+- [[Sheet70]] — Sheet70 - Gemini
+- [[Sheet71]] — Sheet71 - Gemini
+- [[Sheet72]] — Sheet72 - THE BOOK IS INCOMPLETE !
