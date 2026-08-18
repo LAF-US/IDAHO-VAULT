@@ -59,13 +59,12 @@ def extract_metadata_from_zip(zip_path: Path, temp_dir: Path):
     with zipfile.ZipFile(zip_path, 'r') as z:
         for member in z.namelist():
             if member.endswith(('tweets.js', 'account.js')):
-                # Archive structure is usually data/tweets.js
-                filename = Path(member).name
-                base_real = os.path.realpath(temp_dir)
-                target_real = os.path.realpath(temp_dir / filename)
-                if os.path.commonpath([base_real, target_real]) != base_real:
-                    raise Exception("Invalid file path")
-                with z.open(member) as source, open(target_real, "wb") as target:
+                # The archive member is untrusted; write only to these fixed,
+                # repository-controlled local names rather than deriving a path
+                # from it.
+                filename = "tweets.js" if member.endswith("tweets.js") else "account.js"
+                target_path = temp_dir / filename
+                with z.open(member) as source, target_path.open("wb") as target:
                     shutil.copyfileobj(source, target)
 
 
