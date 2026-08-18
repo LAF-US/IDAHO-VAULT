@@ -184,18 +184,27 @@ def move_one(source: Path, target_dir: Path, log_path: Path) -> bool:
 def single_instance(lock_path: Path = LOCK_PATH) -> Iterator[bool]:
     lock_path.parent.mkdir(parents=True, exist_ok=True)
     handle = lock_path.open("a+b")
+    locked = False
     try:
+        # msvcrt locks from the stream's current offset. Ensure the lock file
+        # contains byte zero and every process contends for that same byte.
+        handle.seek(0)
+        if not handle.read(1):
+            handle.write(b"\0")
+            handle.flush()
+        handle.seek(0)
         if os.name == "nt":
             import msvcrt
 
             try:
                 msvcrt.locking(handle.fileno(), msvcrt.LK_NBLCK, 1)
+                locked = True
             except OSError:
                 yield False
                 return
         yield True
     finally:
-        if os.name == "nt":
+        if os.name == "nt" and locked:
             try:
                 import msvcrt
 
