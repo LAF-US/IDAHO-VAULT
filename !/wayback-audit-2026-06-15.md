@@ -1,14 +1,22 @@
 # Wayback Audit — 2026-06-15
 
-Scanned 188 notes with URL fields.
+Scanned 186 notes with URL fields.
 
 | Status | Count |
 |---|---|
 | ✅ Live | 132 |
-| ❌ Dead — snapshot found | 1 |
-| ❌ Dead — no archive | 23 |
-| ⚠️ Unreachable (network error) | 27 |
+| ❌ Dead — snapshot found | 2 |
+| ❌ Dead — no archive | 22 |
+| ⚠️ Unreachable (network error) | 25 |
 | ⏭️ Already patched | 5 |
+
+**Correction (post-audit):** the original scan counted 188 and listed 27
+"Unreachable" rows. Two rows were `VAULT-CONVENTIONS.md` and
+`VAULT-CONVENTIONS.from-pushable-2026-05-08.md`, where a literal
+`URL: https://...` example in the document body was incorrectly treated as a
+frontmatter URL. Those non-resource rows have been removed. The New York Times
+URL below has also been corrected from "no archive" to a verified Wayback
+snapshot recorded by the 2026-03-16 audit.
 
 ---
 
@@ -17,21 +25,21 @@ Scanned 188 notes with URL fields.
 | Note | Original URL | Snapshot | Archived |
 |---|---|---|---|
 | `2007-05-17 - Lewiston Tribune - Construction time for new Nez Perce County Jail pushed to 18 months.md` | [https://www.lmtribune.com/northwest/construction-time-for-ne](https://www.lmtribune.com/northwest/construction-time-for-new-nez-perce-county-jail-pushed-to-18-months/article_481f2c11-398a-5f83-86be-6edc084d7d35.html) | [snapshot](https://web.archive.org/web/20230225203605/https://www.lmtribune.com/northwest/construction-time-for-new-nez-perce-county-jail-pushed-to-18-months/article_481f2c11-398a-5f83-86be-6edc084d7d35.html) | 2023-02-25 |
+| `2023-06-15 - New York Times - Oregon Town's Marijuana Boom Yields Envy in Idaho.md` | [https://www.nytimes.com/2023/06/15/business/economy/oregon-idaho-marijuana.html](https://www.nytimes.com/2023/06/15/business/economy/oregon-idaho-marijuana.html) | [snapshot](https://web.archive.org/web/20230615100122/https://www.nytimes.com/2023/06/15/business/economy/oregon-idaho-marijuana.html) | 2023-06-15 |
 
 ## Dead — No Archive Found
 
 | Note | Dead URL | HTTP Status |
 |---|---|---|
-| `2016-08-12 - Sandpoint Reader - Anti-abortion protesters disrupt community.md` | https://sandpointreader.com/anti-abortion-protesters-disrupt-community/ | 403 |
-| `2017-11-03 - Brown Political Review - All Blaine, No Gain.md` | https://brownpoliticalreview.org/2017/11/blaine-no-gain/ | 404 |
-| `2018-01-04 - Sandpoint Reader - Person of interest in racist CD distribution at SHS also investigated in Virginia for similar actions.md` | https://sandpointreader.com/person-interest-racist-cd-distribution-shs-also-inve | 403 |
-| `2018-05-11 - Moscow-Pullman Daily News - Candidate Heath; A fugitive for 10 years.md` | https://dnews.com/local/candidate-heath-a-fugitive-for-10-years/article_f0c5a1ab | 403 |
-| `2019-09-12 - Sandpoint Reader - Sound and fury.md` | https://sandpointreader.com/sound-and-fury/ | 403 |
-| `2020-01-30 - Sandpoint Reader - Boiling point reached in gun case.md` | https://sandpointreader.com/boiling-point-reached-in-gun-case/ | 403 |
-| `2020-05-14 - Sandpoint Reader - Three N. Idahoans front suit challenging constitutionality of COVID-19 restrictions.md` | https://sandpointreader.com/three-n-idahoans-front-suit-challenging-constitution | 403 |
-| `2021-04-28 - Sandpoint Reader - Judge hears cross motions in second Festival gun suit.md` | https://sandpointreader.com/judge-hears-cross-motions-in-second-festival-gun-sui | 403 |
+| `2016-08-12 - Sandpoint Reader - Anti-abortion protesters disrupt community.md` | <https://sandpointreader.com/anti-abortion-protesters-disrupt-community/> | 403 |
+| `2017-11-03 - Brown Political Review - All Blaine, No Gain.md` | <https://brownpoliticalreview.org/2017/11/blaine-no-gain/> | 404 |
+| `2018-01-04 - Sandpoint Reader - Person of interest in racist CD distribution at SHS also investigated in Virginia for similar actions.md` | <https://sandpointreader.com/person-interest-racist-cd-distribution-shs-also-inve> | 403 |
+| `2018-05-11 - Moscow-Pullman Daily News - Candidate Heath; A fugitive for 10 years.md` | <https://dnews.com/local/candidate-heath-a-fugitive-for-10-years/article_f0c5a1ab> | 403 |
+| `2019-09-12 - Sandpoint Reader - Sound and fury.md` | <https://sandpointreader.com/sound-and-fury/> | 403 |
+| `2020-01-30 - Sandpoint Reader - Boiling point reached in gun case.md` | <https://sandpointreader.com/boiling-point-reached-in-gun-case/> | 403 |
+| `2020-05-14 - Sandpoint Reader - Three N. Idahoans front suit challenging constitutionality of COVID-19 restrictions.md` | <https://sandpointreader.com/three-n-idahoans-front-suit-challenging-constitution> | 403 |
+| `2021-04-28 - Sandpoint Reader - Judge hears cross motions in second Festival gun suit.md` | <https://sandpointreader.com/judge-hears-cross-motions-in-second-festival-gun-sui> | 403 |
 | `2023-05-10 - Lewiston Tribune - In Idaho County, unconnected or unfriendly residents can make sizing up properties difficult.md` | https://www.lmtribune.com/northwest/in-idaho-county-unconnected-or-unfriendly-re | 403 |
-| `2023-06-15 - New York Times - Oregon Town's Marijuana Boom Yields Envy in Idaho.md` | https://www.nytimes.com/2023/06/15/business/economy/oregon-idaho-marijuana.html | 403 |
 | `2023-06-29 - Sandpoint Reader - ID Supreme Court affirms Festival’s right to ban guns at War Memorial Field.md` | https://sandpointreader.com/id-supreme-court-affirms-festivals-right-to-ban-guns | 403 |
 | `2023-08-13 - Sandpoint Reader - Woodward will seek Dist. 1 Senate seat.md` | https://sandpointreader.com/woodward-will-seek-dist-1-senate-seat/ | 403 |
 | `2023-10-25 - BoiseDev - ‘Ridiculous situation’ More than a dozen downtown Emmett storefronts owned by the same owner, nearly half are empty.md` | https://boisedev.com/news/2023/10/25/emmett-downtown-businesses/ | 403 |
@@ -75,5 +83,3 @@ Scanned 188 notes with URL fields.
 | `2023-12-19 - Idaho Statesman - Who are the state’s top employers; See this list.md` | https://www.idahostatesman.com/news/business/article282848943.html |
 | `Article 2020-02-20 Idaho House mulls tax freeze and more.md` | https://www.loganfinney.com/idaho-legislature-2020/2/18/property-tax-deep-dive |
 | `Article 2020-03-30 Tax relief funds directed to COVID-19 response.md` | https://www.loganfinney.com/idaho-legislature-2020/3/30/tax-relief-fund-covid-19 |
-| `VAULT-CONVENTIONS.from-pushable-2026-05-08.md` | https://... |
-| `VAULT-CONVENTIONS.md` | https://... |
