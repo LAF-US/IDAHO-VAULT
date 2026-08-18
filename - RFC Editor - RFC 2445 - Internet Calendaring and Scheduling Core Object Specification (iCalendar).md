@@ -1,3 +1,17 @@
+---
+title: "RFC 2445: Internet Calendaring and Scheduling Core Object Specification (iCalendar)"
+source: "https://www.rfc-editor.org/info/rfc2445/"
+author: "F. Dawson; D. Stenerson"
+published: "1998-11"
+created: 2026-08-18
+description: "This memo has been defined to provide the definition of a common format for openly exchanging calendaring and scheduling information across the Internet. [STANDARDS-TRACK]"
+tags:
+  - "clippings"
+---
+
+Clipped from the RFC Editor info page for RFC 2445. The page renders the document as a fixed-width plaintext block; that text is reproduced verbatim below in a fenced block to preserve its formatting (indentation, ABNF grammar, page-break footers).
+
+```
 
 
 
@@ -8289,3 +8303,4 @@ RFC 2445                       iCalendar                   November 1998
 
 Dawson & Stenerson          Standards Track                   [Page 148]
 
+```

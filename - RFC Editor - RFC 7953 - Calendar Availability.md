@@ -1,3 +1,17 @@
+---
+title: "RFC 7953: Calendar Availability"
+source: "https://www.rfc-editor.org/info/rfc7953/"
+author: "C. Daboo; M. Douglass"
+published: "2016-08"
+created: 2026-08-18
+description: "This document specifies a new iCalendar (RFC 5545) component that allows the publication of available and unavailable time periods associated with a calendar user. This component can be used in standard iCalendar free-busy lookups, including the iCalendar Transport-independent Interoperability Protocol (iTIP; RFC 5546) free-busy requests, to generate repeating blocks of available or busy time with exceptions as needed.\n\n This document also defines extensions to the Calendaring Extensions to WebDAV (CalDAV) calendar access protocol (RFC 4791) and the associated scheduling protocol (RFC 6638) to specify how this new calendar component can be used when evaluating free-busy time."
+tags:
+  - "clippings"
+---
+
+Clipped from the RFC Editor info page for RFC 7953. The page renders the document as a fixed-width plaintext block; that text is reproduced verbatim below in a fenced block to preserve its formatting (indentation, ABNF grammar, page-break footers).
+
+```
 
 
 
@@ -1345,3 +1359,4 @@ Authors' Addresses
 
 Daboo & Douglass             Standards Track                   [Page 24]
 
+```

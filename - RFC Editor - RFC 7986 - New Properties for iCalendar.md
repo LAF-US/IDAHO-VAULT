@@ -1,3 +1,17 @@
+---
+title: "RFC 7986: New Properties for iCalendar"
+source: "https://www.rfc-editor.org/info/rfc7986/"
+author: "C. Daboo"
+published: "2016-10"
+created: 2026-08-18
+description: "This document defines a set of new properties for iCalendar data and extends the use of some existing properties to the entire iCalendar object."
+tags:
+  - "clippings"
+---
+
+Clipped from the RFC Editor info page for RFC 7986. The page renders the document as a fixed-width plaintext block; that text is reproduced verbatim below in a fenced block to preserve its formatting (indentation, ABNF grammar, page-break footers).
+
+```
 
 
 
@@ -1289,3 +1303,4 @@ Author's Address
 
 Daboo                        Standards Track                   [Page 23]
 
+```

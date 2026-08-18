@@ -1,3 +1,17 @@
+---
+title: "RFC 9073: Event Publishing Extensions to iCalendar"
+source: "https://www.rfc-editor.org/info/rfc9073/"
+author: "M. Douglass"
+published: "2021-08"
+created: 2026-08-18
+description: "This specification updates RFC 5545 by introducing a number of new iCalendar properties and components that are of particular use for event publishers and in social networking.\n\n This specification also defines a new \"STRUCTURED-DATA\" property for iCalendar (RFC 5545) to allow for data that is directly pertinent to an event or task to be included with the calendar data."
+tags:
+  - "clippings"
+---
+
+Clipped from the RFC Editor info page for RFC 9073. The page renders the document as a fixed-width plaintext block; that text is reproduced verbatim below in a fenced block to preserve its formatting (indentation, ABNF grammar, page-break footers).
+
+```
 ﻿
 
 
@@ -1451,3 +1465,4 @@ Author's Address
 
    Email: mdouglass@bedework.com
    URI:   http://bedework.com
+```

@@ -1,3 +1,17 @@
+---
+title: "RFC 5546: iCalendar Transport-Independent Interoperability Protocol (iTIP)"
+source: "https://www.rfc-editor.org/info/rfc5546/"
+author: "C. Daboo, Ed."
+published: "2009-12"
+created: 2026-08-18
+description: "This document specifies a protocol that uses the iCalendar object specification to provide scheduling interoperability between different calendaring systems. This is done without reference to a specific transport protocol so as to allow multiple methods of communication between systems. Subsequent documents will define profiles of this protocol that use specific, interoperable methods of communication between systems.\n\n The iCalendar Transport-Independent Interoperability Protocol (iTIP) complements the iCalendar object specification by adding semantics for group scheduling methods commonly available in current calendaring systems. These scheduling methods permit two or more calendaring systems to perform transactions such as publishing, scheduling, rescheduling, responding to scheduling requests, negotiating changes, or canceling. [STANDARDS-TRACK]"
+tags:
+  - "clippings"
+---
+
+Clipped from the RFC Editor info page for RFC 5546. The page renders the document as a fixed-width plaintext block; that text is reproduced verbatim below in a fenced block to preserve its formatting (indentation, ABNF grammar, page-break footers).
+
+```
 
 
 
@@ -7449,3 +7463,4 @@ Author's Address
 
 Daboo                       Standards Track                   [Page 133]
 
+```

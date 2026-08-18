@@ -1,3 +1,17 @@
+---
+title: "RFC 9074: \"VALARM\" Extensions for iCalendar"
+source: "https://www.rfc-editor.org/info/rfc9074/"
+author: "C. Daboo; K. Murchison, Ed."
+published: "2021-08"
+created: 2026-08-18
+description: "This document defines a set of extensions to the iCalendar \"VALARM\" component to enhance the use of alarms and improve interoperability between clients and servers.\n\n This document updates RFC 5545."
+tags:
+  - "clippings"
+---
+
+Clipped from the RFC Editor info page for RFC 9074. The page renders the document as a fixed-width plaintext block; that text is reproduced verbatim below in a fenced block to preserve its formatting (indentation, ABNF grammar, page-break footers).
+
+```
 ﻿
 
 
@@ -845,3 +859,4 @@ Authors' Addresses
 
    Email: murch@fastmailteam.com
    URI:   http://www.fastmail.com/
+```

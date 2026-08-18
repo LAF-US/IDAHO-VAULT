@@ -1,3 +1,17 @@
+---
+title: "RFC 5545: Internet Calendaring and Scheduling Core Object Specification (iCalendar)"
+source: "https://www.rfc-editor.org/info/rfc5545/"
+author: "B. Desruisseaux, Ed."
+published: "2009-09"
+created: 2026-08-18
+description: "This document defines the iCalendar data format for representing and exchanging calendaring and scheduling information such as events, to-dos, journal entries, and free/busy information, independent of any particular calendar service or protocol. [STANDARDS-TRACK]"
+tags:
+  - "clippings"
+---
+
+Clipped from the RFC Editor info page for RFC 5545. The page renders the document as a fixed-width plaintext block; that text is reproduced verbatim below in a fenced block to preserve its formatting (indentation, ABNF grammar, page-break footers).
+
+```
 
 
 
@@ -9409,3 +9423,4 @@ Author's Address
 
 Desruisseaux                Standards Track                   [Page 168]
 
+```

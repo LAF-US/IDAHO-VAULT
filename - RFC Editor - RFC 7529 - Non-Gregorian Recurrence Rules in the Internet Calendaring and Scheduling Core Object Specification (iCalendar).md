@@ -1,3 +1,17 @@
+---
+title: "RFC 7529: Non-Gregorian Recurrence Rules in the Internet Calendaring and Scheduling Core Object Specification (iCalendar)"
+source: "https://www.rfc-editor.org/info/rfc7529/"
+author: "C. Daboo; G. Yakushev"
+published: "2015-05"
+created: 2026-08-18
+description: "This document defines extensions to the Internet Calendaring and Scheduling Core Object Specification (iCalendar) (RFC 5545) to support use of non-Gregorian recurrence rules.  It also defines how Calendaring Extensions to WebDAV (CalDAV) (RFC 4791) servers and clients can be extended to support these new recurrence rules."
+tags:
+  - "clippings"
+---
+
+Clipped from the RFC Editor info page for RFC 7529. The page renders the document as a fixed-width plaintext block; that text is reproduced verbatim below in a fenced block to preserve its formatting (indentation, ABNF grammar, page-break footers).
+
+```
 
 
 
@@ -1177,3 +1191,4 @@ Authors' Addresses
 
 Daboo & Yakushev             Standards Track                   [Page 21]
 
+```

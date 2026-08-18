@@ -1,3 +1,17 @@
+---
+title: "RFC 6047: iCalendar Message-Based Interoperability Protocol (iMIP)"
+source: "https://www.rfc-editor.org/info/rfc6047/"
+author: "A. Melnikov, Ed."
+published: "2010-12"
+created: 2026-08-18
+description: "This document, \"iCalendar Message-Based Interoperability Protocol (iMIP)\", specifies a binding from the iCalendar Transport-independent Interoperability Protocol (iTIP) to Internet email-based transports.  Calendaring entries defined by the iCalendar Object Model (iCalendar) are wrapped using constructs from RFC 5322 and MIME (RFC 2045, RFC 2046, RFC 2047, and RFC 2049), and then transported over SMTP. [STANDARDS-TRACK]"
+tags:
+  - "clippings"
+---
+
+Clipped from the RFC Editor info page for RFC 6047. The page renders the document as a fixed-width plaintext block; that text is reproduced verbatim below in a fenced block to preserve its formatting (indentation, ABNF grammar, page-break footers).
+
+```
 
 
 
@@ -1233,3 +1247,4 @@ Author's Address
 
 Melnikov                     Standards Track                   [Page 22]
 
+```

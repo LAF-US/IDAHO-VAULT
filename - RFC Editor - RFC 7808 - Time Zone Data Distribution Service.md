@@ -1,3 +1,17 @@
+---
+title: "RFC 7808: Time Zone Data Distribution Service"
+source: "https://www.rfc-editor.org/info/rfc7808/"
+author: "M. Douglass; C. Daboo"
+published: "2016-03"
+created: 2026-08-18
+description: "This document defines a time zone data distribution service that allows reliable, secure, and fast delivery of time zone data and leap-second rules to client systems such as calendaring and scheduling applications or operating systems."
+tags:
+  - "clippings"
+---
+
+Clipped from the RFC Editor info page for RFC 7808. The page renders the document as a fixed-width plaintext block; that text is reproduced verbatim below in a fenced block to preserve its formatting (indentation, ABNF grammar, page-break footers).
+
+```
 
 
 
@@ -3137,3 +3151,4 @@ Authors' Addresses
 
 Douglass & Daboo             Standards Track                   [Page 56]
 
+```

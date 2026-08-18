@@ -1,3 +1,17 @@
+---
+title: "RFC 6868: Parameter Value Encoding in iCalendar and vCard"
+source: "https://www.rfc-editor.org/info/rfc6868/"
+author: "C. Daboo"
+published: "2013-02"
+created: 2026-08-18
+description: "This specification updates the data formats for iCalendar (RFC 5545) and vCard (RFC 6350) to allow parameter values to include certain characters forbidden by the existing specifications."
+tags:
+  - "clippings"
+---
+
+Clipped from the RFC Editor info page for RFC 6868. The page renders the document as a fixed-width plaintext block; that text is reproduced verbatim below in a fenced block to preserve its formatting (indentation, ABNF grammar, page-break footers).
+
+```
 
 
 
@@ -393,3 +407,4 @@ Author's Address
 
 Daboo                        Standards Track                    [Page 7]
 
+```

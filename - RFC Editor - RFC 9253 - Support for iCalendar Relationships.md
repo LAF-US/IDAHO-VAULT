@@ -1,3 +1,17 @@
+---
+title: "RFC 9253: Support for iCalendar Relationships"
+source: "https://www.rfc-editor.org/info/rfc9253/"
+author: "M. Douglass"
+published: "2022-08"
+created: 2026-08-18
+description: "This specification updates the iCalendar RELATED-TO property defined in RFC 5545 by adding new relation types and introduces new iCalendar properties (LINK, CONCEPT, and REFID) to allow better linking and grouping of iCalendar components and related data."
+tags:
+  - "clippings"
+---
+
+Clipped from the RFC Editor info page for RFC 9253. The page renders the document as a fixed-width plaintext block; that text is reproduced verbatim below in a fenced block to preserve its formatting (indentation, ABNF grammar, page-break footers).
+
+```
 ﻿
 
 
@@ -957,3 +971,4 @@ Author's Address
    United States of America
    Email: mdouglass@bedework.com
    URI:   https://bedework.com
+```

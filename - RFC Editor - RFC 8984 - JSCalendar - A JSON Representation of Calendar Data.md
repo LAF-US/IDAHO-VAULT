@@ -1,3 +1,17 @@
+---
+title: "RFC 8984: JSCalendar: A JSON Representation of Calendar Data"
+source: "https://www.rfc-editor.org/info/rfc8984/"
+author: "N. Jenkins; R. Stepanek"
+published: "2021-07"
+created: 2026-08-18
+description: "This specification defines a data model and JSON representation of calendar data that can be used for storage and data exchange in a calendaring and scheduling environment.  It aims to be an alternative and, over time, successor to the widely deployed iCalendar data format.  It also aims to be unambiguous, extendable, and simple to process.  In contrast to the jCal format, which is also based on JSON, JSCalendar is not a direct mapping from iCalendar but defines the data model independently and expands semantics where appropriate."
+tags:
+  - "clippings"
+---
+
+Clipped from the RFC Editor info page for RFC 8984. The page renders the document as a fixed-width plaintext block; that text is reproduced verbatim below in a fenced block to preserve its formatting (indentation, ABNF grammar, page-break footers).
+
+```
 ﻿
 
 
@@ -3985,3 +3999,4 @@ Authors' Addresses
 
    Email: rsto@fastmailteam.com
    URI:   https://www.fastmail.com
+```

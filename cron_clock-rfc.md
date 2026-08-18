@@ -1,9 +1,11 @@
 # cron_clock-rfc — the iCalendar standards suite
 
-Upstream reference texts for `cron_clock.ics`, saved verbatim from
-rfc-editor.org (fetched 2026-08-18, PR #981) as root-flat siblings of
-this note, per vault structure: the root carries flat files; new
-top-level directories outside `!/` and the dotfolders are invalid.
+Upstream reference texts for `cron_clock.ics`, web-clipped from their
+rfc-editor.org info pages (clipped 2026-08-18, PR #981) as root-flat
+vault notes, matching the frontmatter convention of every other
+clipping in this vault (`title`/`source`/`author`/`published`/`created`/
+`description`/`tags: [clippings]`). Each note's body is the RFC's
+plaintext, fenced verbatim, exactly as the info page renders it.
 
 The roster follows the RFC Editor's own chain, as Logan traced it:
 RFC 2445's info page points to RFC 5545 (which obsoletes it), and
@@ -11,18 +13,18 @@ RFC 5545's page points to the RFCs that update it.
 
 ## The chain
 
-| file | RFC | title | relation |
+| note | RFC | title | relation |
 | --- | --- | --- | --- |
-| `rfc2445.txt` | 2445 (1998) | iCalendar (original) | obsoleted by 5545 |
-| `rfc5545.txt` | 5545 (2009) | iCalendar core | the operative spec |
-| `rfc5546.txt` | 5546 (2009) | iTIP scheduling | obsoletes 2446; updates 5545 |
-| `rfc6868.txt` | 6868 (2013) | parameter value encoding | updates 5545, 6321, 6350, 6351 |
-| `rfc7529.txt` | 7529 (2015) | RSCALE / SKIP (non-Gregorian recurrence) | updates 5545, 6321, 7265 |
-| `rfc7953.txt` | 7953 (2016) | VAVAILABILITY | updates 4791, 5545, 6638 |
-| `rfc7986.txt` | 7986 (2016) | new properties (NAME, COLOR, calendar-level UID…) | updates 5545 |
-| `rfc9073.txt` | 9073 (2021) | event publishing extensions | updates 5545 |
-| `rfc9074.txt` | 9074 (2021) | VALARM extensions | updates 5545 |
-| `rfc9253.txt` | 9253 (2022) | relationships (LINK, CONCEPT, REFID, RELATED-TO) | updates 5545 |
+| [[- RFC Editor - RFC 2445 - Internet Calendaring and Scheduling Core Object Specification (iCalendar)\|RFC 2445]] | 2445 (1998) | iCalendar (original) | obsoleted by 5545 |
+| [[- RFC Editor - RFC 5545 - Internet Calendaring and Scheduling Core Object Specification (iCalendar)\|RFC 5545]] | 5545 (2009) | iCalendar core | the operative spec |
+| [[- RFC Editor - RFC 5546 - iCalendar Transport-Independent Interoperability Protocol (iTIP)\|RFC 5546]] | 5546 (2009) | iTIP scheduling | obsoletes 2446; updates 5545 |
+| [[- RFC Editor - RFC 6868 - Parameter Value Encoding in iCalendar and vCard\|RFC 6868]] | 6868 (2013) | parameter value encoding | updates 5545, 6321, 6350, 6351 |
+| [[- RFC Editor - RFC 7529 - Non-Gregorian Recurrence Rules in the Internet Calendaring and Scheduling Core Object Specification (iCalendar)\|RFC 7529]] | 7529 (2015) | RSCALE / SKIP (non-Gregorian recurrence) | updates 5545, 6321, 7265 |
+| [[- RFC Editor - RFC 7953 - Calendar Availability\|RFC 7953]] | 7953 (2016) | VAVAILABILITY | updates 4791, 5545, 6638 |
+| [[- RFC Editor - RFC 7986 - New Properties for iCalendar\|RFC 7986]] | 7986 (2016) | new properties (NAME, COLOR, calendar-level UID…) | updates 5545 |
+| [[- RFC Editor - RFC 9073 - Event Publishing Extensions to iCalendar\|RFC 9073]] | 9073 (2021) | event publishing extensions | updates 5545 |
+| [[- RFC Editor - RFC 9074 - 'VALARM' Extensions for iCalendar\|RFC 9074]] | 9074 (2021) | VALARM extensions | updates 5545 |
+| [[- RFC Editor - RFC 9253 - Support for iCalendar Relationships\|RFC 9253]] | 9253 (2022) | relationships (LINK, CONCEPT, REFID, RELATED-TO) | updates 5545 |
 
 ### Bibliographic fields
 
@@ -46,11 +48,11 @@ Pulled from each file's own header block, verbatim.
 Pulled during the same reading; kept for reference. None of these three
 obsoletes or updates another document in this suite.
 
-| file | RFC | title |
+| note | RFC | title |
 | --- | --- | --- |
-| `rfc6047.txt` | 6047 (2010) | iMIP (iCalendar over email) |
-| `rfc7808.txt` | 7808 (2016) | tzdist (time zone data distribution) |
-| `rfc8984.txt` | 8984 (2021) | JSCalendar (the JSON successor format) |
+| [[- RFC Editor - RFC 6047 - iCalendar Message-Based Interoperability Protocol (iMIP)\|RFC 6047]] | 6047 (2010) | iMIP (iCalendar over email) |
+| [[- RFC Editor - RFC 7808 - Time Zone Data Distribution Service\|RFC 7808]] | 7808 (2016) | tzdist (time zone data distribution) |
+| [[- RFC Editor - RFC 8984 - JSCalendar - A JSON Representation of Calendar Data\|RFC 8984]] | 8984 (2021) | JSCalendar (the JSON successor format) |
 
 ### Bibliographic fields
 
@@ -62,8 +64,15 @@ obsoletes or updates another document in this suite.
 
 ## Notes
 
-- These are plain-text mirrors for offline grounding; the RFC Editor
-  remains the source of truth at `https://www.rfc-editor.org/info/rfc<n>/`.
-- The four newest files (`rfc8984.txt`, `rfc9073.txt`, `rfc9074.txt`,
-  `rfc9253.txt`) begin with a UTF-8 BOM — that is how rfc-editor.org
-  serves them, and the mirrors keep the bytes verbatim.
+- Each note's `source` frontmatter field is the exact info-page URL
+  Logan gave; the RFC Editor remains the source of truth there.
+- Clipped body content is the RFC's plaintext rendering (what the info
+  page displays in its content block), reproduced verbatim inside a
+  fenced code block to preserve fixed-width formatting — indentation,
+  ABNF grammar, and the original page-break footers.
+- Four of the thirteen (RFC 8984, 9073, 9074, 9253) begin their fenced
+  text with a UTF-8 BOM — that is how rfc-editor.org serves them, kept
+  byte-for-byte.
+- `author` and `published` in each note's frontmatter are filled from
+  the RFC's own front-matter block (verified against the fenced text),
+  not from an HTML `<meta>` tag — the info pages don't expose one.
