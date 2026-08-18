@@ -19,7 +19,7 @@ owner: Logan Finney
 | **What** | Pulled 30 workflow runs in the window: 21 branch runs, 5 PR #934/Copilot runs, 2 `audit/gitignore-836` runs, and 2 `main` runs. The original review recorded the run-level outcomes (failure, cancellation, or success) separately from GitHub's run-level rollup; the analysis below is retained only as a retracted historical record. |
 | **When** | 2026-08-06T05:45Z – 2026-08-07T05:48Z. |
 | **Where** | `main` itself (blocking, since the 05:48 merge of PR #933), the now-merged `claude/apply-patch-fixes-9gesn5` branch (ran red ~2 days before merging anyway), and the still-open `audit/gitignore-836` / PR #934 (inherited + compounded the same root cause). |
-| **Why** | Single root cause for both incidents: `pyproject.toml`'s `[dependency-groups].dev`/`[build-system]` got gutted, so `uv sync` never installs `pytest`/`coverage`, cascading into every workflow that depends on them. Evidence-based — read via `git log -S`, job logs, and direct diffs, not inferred. |
+| **Why** | The original analysis attributed both incidents to `pyproject.toml` losing `[dependency-groups].dev`/`[build-system]`, which it concluded prevented `uv sync` from installing `pytest`/`coverage`. That evidence trail is retained historically, but the causal interpretation and proposed restoration are retracted; see the correction above. |
 | **How** | Category: Code (1, root cause; fixed) + cascading Code failures downstream of it (3 workflow shapes) + Transient (2 job-level `cancelled` results misreported as run-level `failure`, due to concurrency-group supersession on rapid pushes — not a real defect). |
 
 ## Findings
