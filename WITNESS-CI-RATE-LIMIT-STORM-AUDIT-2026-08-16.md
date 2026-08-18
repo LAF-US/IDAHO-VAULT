@@ -181,9 +181,56 @@ on its own track and is untouched by this session. What's corrected here is narr
 the *Actions-run-list red X's* for this one workflow are a known, non-blocking
 artifact, not a fresh finding this audit needed to raise.
 
+## Addendum (2026-08-18): the storm recurred on this PR, from a different source
+
+On 2026-08-18T11:00–11:03Z, PR #984 (this fix's own PR) hit the identical
+`##[error]API rate limit exceeded for installation.` error on four check runs at
+head `ab7214e4d8895356e095398fbde491b1c4fd6472`: `Codacy Security Scan`,
+`Analyze (python)` ×2, `Analyze (javascript-typescript)`, `Analyze (actions)` —
+verified directly from job logs (jobs `95687636588`, `95687627766`, and their
+duplicates from a parallel CodeQL run). `acknowledge-copilot-apply` shows
+`skipped` on this run, confirming this session's fix is working — the vault's
+own script is no longer contributing to the exhaustion. The recurrence traces
+to a different source: **the number of installed third-party review-bot Apps
+has grown since 2026-08-16, not shrunk.** This single PR run shows ~30 distinct
+bot/check names active within the same ~90-second window (Repowise, CircleCI,
+DeepScan, GitGuardian, Corgea, Aikido, secuarden, CodeRifts ×2, Sieve,
+guardrails, Blue Cave, dpulls, CodeFactor, cubic, Graphite, gitStream, Sourcery,
+mergefreeze, frost, CommitCheck, CodeRabbit, PRLintReloaded, Hound, Revieko,
+pre-commit.ci, semgrep-cloud-platform, plus the vault's own checks), versus the
+~15–20 named on 2026-08-16. This confirms the root-cause chain's step 1 (bot
+volume) as the live, ongoing driver, independent of step 3 (this vault's own
+script, now fixed). The disposition — how many of these Apps stay installed —
+remains an org-level call for Logan, as originally flagged; this session does
+not have standing to uninstall GitHub Apps. Posted to PR #984:
+https://github.com/LAF-US/IDAHO-VAULT/pull/984#issuecomment-5327821256
+
+## Addendum (2026-08-18): a NETWEB violation actually breaks Windows CI, not just warns
+
+The same PR #984 run's `smoke (windows-latest, 3.10)` and
+`smoke (windows-latest, 3.13)` jobs both failed at checkout, before any test
+code ran:
+
+```
+##[error]error: invalid path '"consistent with" ≠ evidence.md'
+```
+
+That file lives at the repo root on `main` (unrelated to PR #984's diff) and
+contains literal double-quote characters — already listed in `ILLEGAL_CHARS` in
+`.github/scripts/check_portable_paths.py`. The NETWEB gate (`check-portable-paths.yml`)
+deliberately only *warns* on tracked paths that predate a PR, never fails them
+(`VAULT-CONVENTIONS.md` § "Portable Path Standard (NETWEB)"), so this violation
+has been sitting as a report-only warning on every PR without ever being
+confirmed to cause an actual failure — until now. Per `VAULT-CONVENTIONS.md`
+line 762, `smoke (windows-latest)` is a non-required check and gates neither
+queue entry nor merge, so this is not blocking. Per `GIT-CONTROL-SURFACES-2026-05-17`,
+renaming a tracked path is a destructive git-control-surface change requiring
+Logan's explicit instruction — flagged here for his disposition, not acted on
+by this session.
+
 ## Provenance
 
 Compiled by Claude Code, session `session_01LTD66ZEF1tduSVnbvcR6H7`, from direct
 `mcp__github__actions_list` / `get_job_logs` / `pull_request_read` reads and direct
-repository file reads on 2026-08-16. Where a number above is a sample rather than a
-census, it is stated as one.
+repository file reads on 2026-08-16 (original) and 2026-08-18 (addenda). Where a
+number above is a sample rather than a census, it is stated as one.
