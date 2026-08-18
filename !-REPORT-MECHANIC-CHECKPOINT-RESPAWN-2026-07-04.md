@@ -1,6 +1,7 @@
 ---
 title: "Fleet Report — Checkpoint & Respawn: the Recovery Contract After Death"
 date created: 2026-07-04
+updated: 2026-07-04
 authority: "LOGAN (recorded; authored by fleet subagent Phoenix under a Hyperagent run — role: developer — *.hyperagent.*; not Logan's voice)"
 doc_class: report
 status: draft

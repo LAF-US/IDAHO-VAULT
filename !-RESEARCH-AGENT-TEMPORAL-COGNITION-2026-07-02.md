@@ -1,6 +1,7 @@
 ---
 title: "Research Note - Why Time and Chronology Fail Structurally in LLM Agents"
 date created: 2026-07-02
+updated: 2026-07-02
 authority: "LOGAN (recorded; authored by a Hyperagent-harness run — role: developer — *.hyperagent.*; not Logan's voice)"
 doc_class: research-note
 status: draft

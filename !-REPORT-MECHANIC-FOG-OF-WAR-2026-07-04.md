@@ -1,6 +1,7 @@
 ---
 title: "Fleet Report — Fog of War: Explored Is Not Visible"
 date created: 2026-07-04
+updated: 2026-07-04
 authority: "LOGAN (recorded; authored by fleet subagent Shroud under a Hyperagent run — role: developer — *.hyperagent.*; not Logan's voice)"
 doc_class: report
 status: draft
