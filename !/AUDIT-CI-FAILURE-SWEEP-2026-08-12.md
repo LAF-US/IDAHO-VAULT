@@ -34,7 +34,7 @@ Verified, not assumed: `get_workflow_jobs` on every sampled run returns `{"jobs"
 
 > `##[error]Unable to upload "results-normalised.sarif" as it is not valid SARIF: - instance.runs[0].tool.driver.rules is not of a type(s) array` (run 31629240677)
 
-PR #962 §2 (open, another live Claude Code session, `session_015oRnkWnNkTL7R2umjen42b`) drops the null `rules`/`extensions` keys before upload. Not duplicated here.
+PR #962 §2 (open in another active session) drops the null `rules`/`extensions` keys before upload. Not duplicated here.
 
 ### Incident C — Check Dotfolder Anchors: `.codacy/` missing its anchor — Configuration, already fixed (PR #962)
 
@@ -77,7 +77,7 @@ That branch simply has no `tests/` directory. Narrow, single occurrence this win
 
 ### Incident G — Two single-occurrence items, not investigated further
 
-- Redaction Damage Policy (run 31453333787, `claude/lint-config-stubs-qzt7le`): flagged an added line in `eslint.config.js:33` as matching the marker-glued-to-letters shape tracked in issue #739. The cited source line was not independently recoverable during follow-up, so this remains uninvestigated; confirm the branch and source line before recording it as a policy false positive under issue #739.
+- Redaction Damage Policy (run 31453333787, `claude/lint-config-stubs-qzt7le`): flagged an added line in `eslint.config.js:33` as matching the marker-glued-to-letters shape tracked in issue #739. An earlier draft incorrectly stated that the cited source line had been inspected; that claim is retracted because the line was not independently recoverable during follow-up. Issue #739 remained open at follow-up, and its comments showed no downstream status or action attributed to the prior draft. This item remains uninvestigated; confirm the branch and source line before recording it as a policy false positive under issue #739.
 - Running Copilot Code Review (run 31565802005, PR #885): GitHub Copilot's own `sweagentd` backend timed out reporting results — `TimeoutError: The operation was aborted due to timeout`. External Copilot-service-side flake, no vault-side action possible.
 
 Also noted but not counted as a failure: Validate Agent Content (run 31457472663, `agent/adr-canon-core-portability`) flagged ~15 pre-existing files (oversized files, old tweet-archive false positives, malformed frontmatter) unrelated to that branch's own diff — repo-wide backlog debt, not this branch's fault.
@@ -89,4 +89,3 @@ Also noted but not counted as a failure: Validate Agent Content (run 31457472663
 - **The audit-PR pile is the known risk here, and this sweep chose not to grow it silently.** Per the 2026-08-03 sweep's own Big IF, only 3 of the daily sweep PRs opened since 2026-07-08 have ever merged to `main`; most sit open. This sweep's own PR is documentation-only (zero workflow/script changes) specifically so it's trivial to merge — and the two real, fixable findings (Incidents D and F) were deliberately routed to a single new tracking issue (#967) rather than a second report-shaped PR, so the backlog gets one small actionable item instead of one more audit artifact.
 
 ---
-Cross-posted: GitHub issue #398 (comment, Incident A), GitHub issue #967 (new, Incidents D + F), Linear LAF-78, Slack #all-logan-finney, Discord #ledger (via Zapier).
