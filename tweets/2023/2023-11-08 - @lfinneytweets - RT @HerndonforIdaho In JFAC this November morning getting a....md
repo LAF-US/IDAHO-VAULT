@@ -1,4 +1,5 @@
 ---
+title: "RT @HerndonforIdaho In JFAC this November morning getting a..."
 date: 2023-11-08
 time: 17:21:05
 tweet_id: "1722303237850890293"

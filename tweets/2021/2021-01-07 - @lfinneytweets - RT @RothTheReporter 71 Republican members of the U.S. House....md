@@ -1,4 +1,5 @@
 ---
+title: "RT @RothTheReporter 71 Republican members of the U.S. House..."
 date: 2021-01-07
 time: 05:01:32
 tweet_id: "1347045684965371905"

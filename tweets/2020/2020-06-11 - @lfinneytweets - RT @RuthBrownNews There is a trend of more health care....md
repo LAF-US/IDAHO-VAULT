@@ -1,4 +1,5 @@
 ---
+title: "RT @RuthBrownNews There is a trend of more health care..."
 date: 2020-06-11
 time: 16:16:27
 tweet_id: "1271114081533956097"

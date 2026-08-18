@@ -1,4 +1,5 @@
 ---
+title: "What leftist viewpoint did I assert"
 date: 2023-09-29
 time: 00:24:43
 tweet_id: "1707551947979719004"

@@ -1,4 +1,5 @@
 ---
+title: "RT @madisonhardy05 CDC has only sent one test kit, which..."
 date: 2020-03-04
 time: 19:05:01
 tweet_id: "1235280101023113216"

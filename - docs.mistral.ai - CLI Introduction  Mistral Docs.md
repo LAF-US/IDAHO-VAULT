@@ -16,15 +16,15 @@ Features
 
 - **Interactive Chat**: A conversational AI agent that understands your requests and breaks down complex tasks.
 - **Built-in Toolset**: A suite of tools for file manipulation, code searching, version control, and command execution, right from the chat prompt.
-	- Read, write, and patch files (read\_file, write\_file, search\_replace).
-		- Execute shell commands in a stateful terminal (bash).
-		- Recursively search code with grep (with ripgrep support).
-		- Manage a todo list to track the agent's work.
+  - Read, write, and patch files (read\_file, write\_file, search\_replace).
+    - Execute shell commands in a stateful terminal (bash).
+    - Recursively search code with grep (with ripgrep support).
+    - Manage a todo list to track the agent's work.
 - **Project-Aware Context**: Mistral Vibe automatically scans your project's file structure and Git status to provide relevant context to the agent, improving its understanding of your codebase.
 - **Advanced CLI Experience**: Built with modern libraries for a smooth and efficient workflow.
-	- Autocompletion for slash commands (/) and file paths (@).
-		- Persistent command history.
-		- Beautiful Themes.
+  - Autocompletion for slash commands (/) and file paths (@).
+    - Persistent command history.
+    - Beautiful Themes.
 - **Highly Configurable**: Customize models, providers, tool permissions, and UI preferences through a simple config.toml file.
 - **Agents & Skills**: Create and manage multiple agents with different skills and permissions.
 - **Safety First**: Features tool execution approval.

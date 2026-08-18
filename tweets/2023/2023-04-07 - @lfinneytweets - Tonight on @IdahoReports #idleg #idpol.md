@@ -1,4 +1,5 @@
 ---
+title: "Tonight on @IdahoReports #idleg #idpol"
 date: 2023-04-07
 time: 23:20:18
 tweet_id: "1644480245070979072"
@@ -20,9 +21,9 @@ related:
   - idpol
 ---
 
-Tonight on @IdahoReports #idleg #idpol https://t.co/PsoqIzTkP0
+Tonight on @IdahoReports #idleg #idpol <https://t.co/PsoqIzTkP0>
 
 ## Media
-- ![](https://pbs.twimg.com/media/FtJeDa6aYAAhXON.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/FtJeDa6aYAAhXON.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1644480245070979072)

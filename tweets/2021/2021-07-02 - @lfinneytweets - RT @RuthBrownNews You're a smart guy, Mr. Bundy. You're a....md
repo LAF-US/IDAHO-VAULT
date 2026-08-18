@@ -1,4 +1,5 @@
 ---
+title: "RT @RuthBrownNews You're a smart guy, Mr. Bundy. You're a..."
 date: 2021-07-02
 time: 02:23:02
 tweet_id: "1410786059714060289"

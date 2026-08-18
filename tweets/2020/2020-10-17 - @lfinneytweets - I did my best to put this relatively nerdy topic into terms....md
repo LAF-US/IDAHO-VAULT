@@ -1,4 +1,5 @@
 ---
+title: "I did my best to put this relatively nerdy topic into terms..."
 date: 2020-10-17
 time: 01:18:02
 tweet_id: "1317273634172329985"
@@ -18,9 +19,9 @@ related:
   - idpol
 ---
 
-I did my best to put this relatively nerdy topic into terms anyone would understand. Go take a listen and subscribe to the show! #idleg #idpol https://t.co/QVHCnWgLAz
+I did my best to put this relatively nerdy topic into terms anyone would understand. Go take a listen and subscribe to the show! #idleg #idpol <https://t.co/QVHCnWgLAz>
 
 ## Links
-- https://x.com/IdahoReports/status/1317271550651871232
+- <https://x.com/IdahoReports/status/1317271550651871232>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1317273634172329985)

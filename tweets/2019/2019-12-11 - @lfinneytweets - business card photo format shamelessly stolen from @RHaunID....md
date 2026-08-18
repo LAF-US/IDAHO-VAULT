@@ -1,4 +1,5 @@
 ---
+title: "business card photo format shamelessly stolen from @RHaunID..."
 date: 2019-12-11
 time: 05:44:59
 tweet_id: "1204638184967032833"

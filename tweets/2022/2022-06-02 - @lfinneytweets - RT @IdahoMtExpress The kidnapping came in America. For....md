@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoMtExpress The kidnapping came in America. For..."
 date: 2022-06-02
 time: 01:52:59
 tweet_id: "1532178431491723264"

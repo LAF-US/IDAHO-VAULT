@@ -65,6 +65,7 @@ Also used: `github__search_code` for CHAINLINK (returned 14 items with snippets,
 ~M rough estimate: The `!/` folder alone has ~240 files. The root directory listing excerpt showed dozens more at root. There are dotfolders (`.claude/`, `.mistral/`, `.gemini/`, `.grok/`, `.abhorsen/`, `.crewai/`, etc.), a `tweets/` corpus going back to 2016–2026, and multiple subfolders (`INBOX/`, `!/SIGNALS/`, `!/CREWAI/`, `!/!`). Total rough estimate: **600–1,000+ files**, substantial portion being tweet archives.
 
 Notable doors seen but NOT opened:
+
 - `!/UNDEAD-TAXONOMY-v1-2026-05-20.md` (the companion taxonomy to the Lich Problem)
 - `!/SPACE-RACE-v1-2026-04-18.md` (the CrewAI mission architecture)
 - `.claude/self-asterisk/LOGIC-PUZZLE-REGISTRATION.md` and `SESSION-1-SNAPSEED.md` (a Claude-authored mystery/logic-puzzle layer inside the vault)

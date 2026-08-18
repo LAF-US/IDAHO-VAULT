@@ -4,4 +4,4 @@ related:
 - St. Anthony
 authority: LOGAN
 ---
-St. Anthony, Fremont County 
+St. Anthony, Fremont County

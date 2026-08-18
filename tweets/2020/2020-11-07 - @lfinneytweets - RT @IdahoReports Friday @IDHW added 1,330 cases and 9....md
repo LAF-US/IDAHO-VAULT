@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Friday @IDHW added 1,330 cases and 9..."
 date: 2020-11-07
 time: 00:58:45
 tweet_id: "1324878925181300736"

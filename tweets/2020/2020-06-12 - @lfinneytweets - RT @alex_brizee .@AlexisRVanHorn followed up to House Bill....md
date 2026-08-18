@@ -1,4 +1,5 @@
 ---
+title: "RT @alex_brizee .@AlexisRVanHorn followed up to House Bill..."
 date: 2020-06-12
 time: 00:52:54
 tweet_id: "1271244050130071552"

@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports We've fixed the issue and the Idaho..."
 date: 2020-06-13
 time: 23:50:16
 tweet_id: "1271953060802080768"

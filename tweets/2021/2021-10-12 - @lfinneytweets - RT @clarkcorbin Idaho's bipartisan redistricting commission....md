@@ -1,4 +1,5 @@
 ---
+title: "RT @clarkcorbin Idaho's bipartisan redistricting commission..."
 date: 2021-10-12
 time: 20:07:50
 tweet_id: "1448017587430776833"

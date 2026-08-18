@@ -1,4 +1,5 @@
 ---
+title: "RT @idahoednews Analysis Idaho's largest public university..."
 date: 2024-10-02
 time: 16:04:39
 tweet_id: "1841509612459294886"

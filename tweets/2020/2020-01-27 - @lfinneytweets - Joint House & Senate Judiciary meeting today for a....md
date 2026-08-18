@@ -1,4 +1,5 @@
 ---
+title: "Joint House & Senate Judiciary meeting today for a..."
 date: 2020-01-27
 time: 20:33:59
 tweet_id: "1221894139622461440"
@@ -18,9 +19,9 @@ related:
   - idpol
 ---
 
-Joint House & Senate Judiciary meeting today for a presentation from Dept of Correction Director Josh Tewalt. #idleg #idpol https://t.co/jw2eWaH5y8
+Joint House & Senate Judiciary meeting today for a presentation from Dept of Correction Director Josh Tewalt. #idleg #idpol <https://t.co/jw2eWaH5y8>
 
 ## Media
-- ![](https://pbs.twimg.com/media/EPUKPO7UUAAoVZP.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EPUKPO7UUAAoVZP.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1221894139622461440)

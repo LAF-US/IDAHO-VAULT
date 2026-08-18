@@ -1,4 +1,5 @@
 ---
+title: "\u201cThese [emergency] laws have been have been on the books..."
 date: 2021-01-11
 time: 22:03:04
 tweet_id: "1348752314115391489"

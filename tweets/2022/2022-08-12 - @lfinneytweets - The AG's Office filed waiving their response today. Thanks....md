@@ -1,4 +1,5 @@
 ---
+title: "The AG's Office filed waiving their response today. Thanks..."
 date: 2022-08-12
 time: 01:50:11
 tweet_id: "1557907264802934789"

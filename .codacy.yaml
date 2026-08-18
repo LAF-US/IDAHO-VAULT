@@ -1,0 +1,46 @@
+---
+# Codacy configuration file — the vault-side half of Codacy's control surface.
+#
+# WHAT IT CAN AND CANNOT DO. Codacy's docs are explicit: the configuration file
+# "lets you configure tools, but you can't enable or disable them. A tool can
+# only be enabled or disabled on the Code patterns page." That same page also
+# holds each tool's "use a configuration file" switch — the switch that makes
+# the repo's .bandit, ruff.toml, eslint.config.js, .semgrep.yaml, .remarkrc,
+# .stylelintrc and the rest take effect at all. None of that is settable from
+# here. This file governs exclusions, languages, and per-engine settings.
+# Everything else stays in the UI, and no file in this repository can move it.
+#
+# IT IS READ FROM THE DEFAULT BRANCH. "Codacy always uses the configuration
+# file in the default branch." Additions made by a pull request are also
+# considered for that pull request's own analysis, but main's copy takes
+# precedence — so a path *removed* here keeps being excluded until this merges.
+#
+# IT TURNS OFF THE UI'S IGNORED-FILES SETTINGS. Codacy: "If your repository has
+# a Codacy configuration file, the Ignored files settings defined on the Codacy
+# UI don't apply and you must ignore files using the configuration file
+# instead." That trade is the reason to have the file — the vault holds the
+# list, not a vendor console — but it is a trade, and it holds for as long as
+# the file exists. This file is already on the default branch, so the UI list
+# is already inert; Logan has confirmed nothing was set there, so nothing was
+# lost in the changeover. Anything to be ignored from here on is written below.
+#
+# Syntax is Java glob, per the same page: `test/**` covers everything under
+# test, `**.resource` covers that extension repo-wide.
+#
+# EXCLUSIONS ARE A WHOLE-POLICY REPLACEMENT, NOT AN ADDITION. Because the UI
+# list no longer applies, `exclude_paths` below is the entire ignore policy —
+# every entry that belongs must be present here, and an entry added casually
+# displaces nothing but also hides whatever it matches from every tool at once.
+# Add to it only with a reason recorded, as the entries below do.
+
+# Vendored third-party plugin executables and stylesheets are verbatim official
+# release artifacts (see .obsidian/plugins/VENDORED-PLUGIN-PROVENANCE.md).
+# Linting them produces findings only upstream can act on; they are excluded.
+# The wildcard ALSO excludes the one locally authored plugin
+# (roygbiv-day-accent, ~3KB) — accepted, not accidental: a per-plugin
+# enumeration is the specimen-list ratchet this vault keeps removing, and that
+# file is reviewed by its author in PRs like any other change. If the local
+# plugin count grows, revisit. Nothing outside these two globs is excluded.
+exclude_paths:
+  - ".obsidian/plugins/*/main.js"
+  - ".obsidian/plugins/*/styles.css"

@@ -6,5 +6,4 @@ related:
 - Victor
 authority: LOGAN
 ---
-Driggs/Victor, Teton County 
-
+Driggs/Victor, Teton County
