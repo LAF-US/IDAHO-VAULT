@@ -1,0 +1,8 @@
+# Send only the files explicitly consumed by Dockerfile COPY instructions.
+*
+!Dockerfile
+!requirements.txt
+!pyproject.toml
+!main.py
+!src/
+!src/**
