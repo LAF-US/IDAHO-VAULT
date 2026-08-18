@@ -77,7 +77,7 @@ That branch simply has no `tests/` directory. Narrow, single occurrence this win
 
 ### Incident G — Two single-occurrence items, not investigated further
 
-- Redaction Damage Policy (run 31453333787, `claude/lint-config-stubs-qzt7le`): flagged an added line in `eslint.config.js:33` as matching the marker-glued-to-letters shape tracked in issue #739. The cited source line was inspected and contains a normal prose comment with no visible redaction marker; record this as a likely policy false positive under existing issue #739 rather than an untracked new incident.
+- Redaction Damage Policy (run 31453333787, `claude/lint-config-stubs-qzt7le`): flagged an added line in `eslint.config.js:33` as matching the marker-glued-to-letters shape tracked in issue #739. The cited source line was not independently recoverable during follow-up, so this remains uninvestigated; confirm the branch and source line before recording it as a policy false positive under issue #739.
 - Running Copilot Code Review (run 31565802005, PR #885): GitHub Copilot's own `sweagentd` backend timed out reporting results — `TimeoutError: The operation was aborted due to timeout`. External Copilot-service-side flake, no vault-side action possible.
 
 Also noted but not counted as a failure: Validate Agent Content (run 31457472663, `agent/adr-canon-core-portability`) flagged ~15 pre-existing files (oversized files, old tweet-archive false positives, malformed frontmatter) unrelated to that branch's own diff — repo-wide backlog debt, not this branch's fault.
