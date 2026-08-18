@@ -38,9 +38,6 @@ app = Flask(__name__)
 @app.errorhandler(500)
 def capture_internal_server_error(error):
     original_error = getattr(error, "original_exception", error)
-    if app.debug and original_error is not error:
-        raise original_error
-
     if posthog_client:
         try:
             posthog_client.capture_exception(
@@ -49,6 +46,9 @@ def capture_internal_server_error(error):
             )
         except Exception:
             app.logger.exception("PostHog exception capture failed")
+
+    if app.debug and original_error is not error:
+        raise original_error
     return "Internal Server Error", 500
 
 
