@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoNews6 Options for free, all-day kindergarten are..."
 date: 2022-04-05
 time: 17:44:19
 tweet_id: "1511399346008309761"

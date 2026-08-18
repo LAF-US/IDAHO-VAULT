@@ -1,4 +1,5 @@
 ---
+title: "It almost seems out of date already with all the stories..."
 date: 2021-07-29
 time: 20:35:10
 tweet_id: "1420845376857284608"

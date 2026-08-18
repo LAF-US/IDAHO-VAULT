@@ -1,4 +1,5 @@
 ---
+title: "RT @SamSandmire Idaho has the opportunity to learn..."
 date: 2019-03-29
 time: 05:29:32
 tweet_id: "1111500616713420800"

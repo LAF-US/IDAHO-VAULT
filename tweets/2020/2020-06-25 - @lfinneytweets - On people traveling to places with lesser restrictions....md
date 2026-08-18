@@ -1,4 +1,5 @@
 ---
+title: "On people traveling to places with lesser restrictions..."
 date: 2020-06-25
 time: 18:29:16
 tweet_id: "1276220935654133760"

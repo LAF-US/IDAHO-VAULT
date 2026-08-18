@@ -63,6 +63,7 @@ IDAHO-VAULT is a personal knowledge vault that doubles as a live multi-agent ope
 ### 6. PERCEPTION LOG
 
 **Exact paths opened (read):**
+
 1. `` (root dir listing — 1000-item JSON)
 2. `!` (dir listing of the `!` Nest)
 3. `.claude.json`
@@ -94,6 +95,7 @@ IDAHO-VAULT is a personal knowledge vault that doubles as a live multi-agent ope
 **~M rough count of non-md/txt files in root:** ~78 at root level; hundreds more across ~331 subdirectories.
 
 **Machinery seen but NOT opened (representative):**
+
 - All 35+ `.github/workflows/*.yml` beyond `agent-auto-pr.yml` and `secret-pattern-policy.yml` (e.g., `batch-arm-merge-queue.yml`, `review-feedback-loop.yml`, `swarm-mvp-intake.yml`, `wayback-preserve.yml`)
 - All 35+ `.github/scripts/*.py` beyond `classify_paths.py` (e.g., `review_feedback_loop.py` at 94KB, `topology_census.py`, `daily_rollover.py` at 37KB, `metadata_survey.py`)
 - `!-CREWAI-LINKER-PROPOSAL-v1.json` (1MB)
@@ -124,6 +126,5 @@ IDAHO-VAULT is a personal knowledge vault that doubles as a live multi-agent ope
 2. **[*]** The repo is Logan's actual live personal desktop vault — not a showcase or template. Evidence: `.claude.json` records 11 real startup sessions beginning 2026-03-22, a last session cost of $16.29 using `kimi-k2.5:cloud`, real GitHub paths (`C:\Users\<user>\Documents\IDAHO-VAULT`), a Claude companion named "Moth" with personality "A rare capybara of few words," and MCP integrations to Gmail, Google Calendar, Slack, Figma, Linear, and Asana. The file is a live session state snapshot committed to the repo.
 
 3. **[*]** The `swarm.json` (not opened, but heavily referenced) is likely the master operational topology document — more authoritative than `!-agents.json` (which explicitly says `"source_of_truth": "swarm.json"` and `"status": "generated"`). The `!-CREWAI-LINKER-PROPOSAL-v1.json` at 1MB likely contains a very large CrewAI agent topology definition or a complete link-graph of the vault's document connections. The "Arborscaping" series visible in the `!` directory listing (`ARBORSCAPE-COMPLETION-REPORT`, `ARBORSCAPING-INVESTIGATION-RETURN`) [*] represents an automated pass of tree-structure analysis or topology grooming of the vault's content graph — the vault treats its own structure as a subject of ongoing agent-driven study.
-
 
 <!-- [redacted 2026-06-28 by *.hyperagent.tinkerer]: runtime residue removed (internal IP / sandbox / local-desktop paths). Originals were the vault's own config values quoted by the cold reader, except the tool-result path (this run's sandbox). See ../REDACTIONS.md. -->

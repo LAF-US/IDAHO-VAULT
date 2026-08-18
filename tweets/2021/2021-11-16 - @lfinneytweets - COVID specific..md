@@ -1,4 +1,5 @@
 ---
+title: "COVID specific."
 date: 2021-11-16
 time: 20:54:02
 tweet_id: "1460712788062453766"
@@ -17,10 +18,10 @@ related:
 ---
 
 @slfisher @SeanColetti COVID specific. 
-https://t.co/BXRyzenSJD
+<https://t.co/BXRyzenSJD>
 
 ## Links
-- https://legislature.idaho.gov/sessioninfo/2021/legislation/H0419/
+- <https://legislature.idaho.gov/sessioninfo/2021/legislation/H0419/>
 
 *In reply to [@slfisher](https://twitter.com/slfisher)*
 

@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports With the support of his Republican..."
 date: 2022-12-01
 time: 03:06:59
 tweet_id: "1598151645220990976"

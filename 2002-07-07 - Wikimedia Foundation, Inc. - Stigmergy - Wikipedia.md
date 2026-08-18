@@ -5,7 +5,7 @@ author:
 published: 2002-07-07
 created: 2026-04-13
 ---
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Safari_ants.jpg/250px-Safari_ants.jpg)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Safari_ants.jpg/250px-Safari_ants.jpg)
 
 Ant paths built from pheromone traces
 
@@ -113,4 +113,4 @@ The rise of [open source software](https://en.wikipedia.org/wiki/Open_source_sof
 
 [^34]: Leavenworth, Stuart (2014-11-19). ["Hong Kong protesters, facing divisions, wait for police to act"](https://web.archive.org/web/20180425183115/http://www.mcclatchydc.com/news/nation-world/world/article24776518.html). *McClatchy*. Archived from [the original](http://www.mcclatchydc.com/news/nation-world/world/article24776518.html) on 2018-04-25. Retrieved 2018-04-24. carrying a sign board for the "Stigmergy Society." The term refers to the social organization of anthills, in which coordination isn't achieved by a formal leadership structure but by independent action among those with shared goals.
 
-[^35]: ["Occupy Central - Part 1"](http://www.zonaeuropa.com/OccupyCentral_1.htm). *www.zonaeuropa.com*. Retrieved 2016-01-13.
+[^35]: ["Occupy Central - Part 1"](http://www.zonaeuropa.com/OccupyCentral_1.htm). *<www.zonaeuropa.com>*. Retrieved 2016-01-13.

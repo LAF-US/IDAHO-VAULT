@@ -142,4 +142,8 @@ outside above it, and a sentence with no provenance behind it.
 - **Author:** `*.claude.*` (Claude Code, branch `claude/self-asterisk`)
 - **Scope:** root general witness — Director Devlin / the closed chain / the forgotten warrant (who the OSS answer to) in the Game Over cluster
 
-###### [["The world is quiet here."]]
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

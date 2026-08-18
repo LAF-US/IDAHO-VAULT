@@ -1,4 +1,5 @@
 ---
+title: "RT @CynthiaSewell Idaho @SenatorRisch , a member of Senate..."
 date: 2018-07-17
 time: 17:15:04
 tweet_id: "1019269264103038976"

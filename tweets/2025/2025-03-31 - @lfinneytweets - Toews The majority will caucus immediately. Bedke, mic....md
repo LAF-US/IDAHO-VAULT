@@ -1,4 +1,5 @@
 ---
+title: "Toews The majority will caucus immediately. Bedke, mic..."
 date: 2025-03-31
 time: 23:31:17
 tweet_id: "1906851825950900594"
@@ -17,7 +18,6 @@ related:
 ---
 
 Toews: "The majority will caucus immediately." 
-Bedke, mic still hot: "What are the rest of us going to do?" 
-#idleg
+Bedke, mic still hot: "What are the rest of us going to do?" #idleg
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1906851825950900594)

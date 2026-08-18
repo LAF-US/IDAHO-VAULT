@@ -15,9 +15,10 @@ related:
   - lfinneytweets
 ---
 
-RT @mlcarmel: “WHERE. ARE. MY. LOCAL GOVERNMENT. BUDGET CUTS??” https://t.co/6XBbRqgkE5
+RT @mlcarmel: “WHERE. ARE. MY. LOCAL GOVERNMENT. BUDGET CUTS??” <https://t.co/6XBbRqgkE5>
 
 ## Links
-- https://x.com/RadioDawson/status/1232713684985798658
+
+- <https://x.com/RadioDawson/status/1232713684985798658>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1232718237974093826)

@@ -1,4 +1,5 @@
 ---
+title: GITLAB
 authority: LOGAN
 related:
   - GITLAB

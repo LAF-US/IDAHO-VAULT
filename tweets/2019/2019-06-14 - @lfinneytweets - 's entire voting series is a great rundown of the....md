@@ -1,4 +1,5 @@
 ---
+title: "'s entire voting series is a great rundown of the..."
 date: 2019-06-14
 time: 21:17:11
 tweet_id: "1139642966987821056"
@@ -18,10 +19,10 @@ related:
 ---
 
 @LouFoglia @cgpgrey's entire voting series is a great rundown of the structural obstacles a third party faces in the US vs other democracies
-https://t.co/T6vXFxe87t
+<https://t.co/T6vXFxe87t>
 
 ## Links
-- https://www.youtube.com/playlist?list=PLNCHVwtpeBY4mybPkHEnRxSOb7FQ2vF9c
+- <https://www.youtube.com/playlist?list=PLNCHVwtpeBY4mybPkHEnRxSOb7FQ2vF9c>
 
 *In reply to [@LouFoglia](https://twitter.com/LouFoglia)*
 

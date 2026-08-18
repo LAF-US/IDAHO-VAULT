@@ -1,4 +1,5 @@
 ---
+title: "House State Affairs is not voting on #HB500 today. They..."
 date: 2020-02-19
 time: 17:54:35
 tweet_id: "1230188947784908801"

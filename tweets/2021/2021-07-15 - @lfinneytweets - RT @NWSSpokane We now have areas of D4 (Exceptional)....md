@@ -1,4 +1,5 @@
 ---
+title: "RT @NWSSpokane We now have areas of D4 (Exceptional)..."
 date: 2021-07-15
 time: 15:20:53
 tweet_id: "1415692854442160128"

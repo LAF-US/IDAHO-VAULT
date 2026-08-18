@@ -12,6 +12,7 @@ from __future__ import annotations
 import json
 import os
 import sys
+import urllib.parse
 import urllib.request
 from dataclasses import dataclass
 from pathlib import Path
@@ -34,6 +35,13 @@ class Reporter(Protocol):
 
 class SlackReporter:
     def __init__(self, webhook_url: str) -> None:
+        # urlopen honours file:// and ftp://, so the scheme is checked where the
+        # URL enters rather than trusted because it came from the environment.
+        # A JANITOR_SLACK_WEBHOOK_URL set to file:///etc/passwd would otherwise
+        # read local disk and report the result as a delivery failure.
+        scheme = urllib.parse.urlparse(webhook_url).scheme
+        if scheme != "https":
+            raise ValueError(f"Slack webhook must be https, got {scheme!r}")
         self.webhook_url = webhook_url
 
     def send(self, event: FailedRunEvent, body: str) -> tuple[bool, str]:
@@ -96,12 +104,25 @@ def main() -> int:
     alias = os.environ.get("JANITOR_ALIAS", "janitor-bot")
 
     reporters: list[Reporter] = []
+    setup_failures: list[dict[str, str | bool]] = []
     slack_webhook = os.environ.get("JANITOR_SLACK_WEBHOOK_URL", "").strip()
     if slack_webhook:
-        reporters.append(SlackReporter(slack_webhook))
+        # A misconfigured webhook is an unavailable sink, not a reason to abort.
+        # The scheme guard raises, and letting that escape would kill the script
+        # before it prints any JSON -- losing the failure report this run exists
+        # to deliver. The scheme is NOT echoed back: the webhook URL is itself
+        # the credential, and this output is a workflow log.
+        try:
+            reporters.append(SlackReporter(slack_webhook))
+        except ValueError:
+            setup_failures.append({
+                "target": "SlackReporter",
+                "ok": False,
+                "detail": "JANITOR_SLACK_WEBHOOK_URL is not an https URL; sink skipped",
+            })
 
-    results: list[dict[str, str | bool]] = []
-    if not reporters:
+    results: list[dict[str, str | bool]] = list(setup_failures)
+    if not reporters and not setup_failures:
         results.append({"target": "none", "ok": True, "detail": "no reporters configured"})
     else:
         for reporter in reporters:

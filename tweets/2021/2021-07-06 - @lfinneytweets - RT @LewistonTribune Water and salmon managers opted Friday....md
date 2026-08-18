@@ -1,4 +1,5 @@
 ---
+title: "RT @LewistonTribune Water and salmon managers opted Friday..."
 date: 2021-07-06
 time: 18:51:09
 tweet_id: "1412484277091012610"

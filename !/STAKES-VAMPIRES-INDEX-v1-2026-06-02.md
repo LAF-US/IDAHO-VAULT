@@ -45,7 +45,7 @@ cards; the **Vampire King** is **not named** for his, but his design *is* the
 **Wheel of Fortune (X)** — its man-lion-eagle-snake tetramorph. **[canon]**
 
 | Vampire | Arcana | Own power | Power Marceline absorbed | Weakness / how ended |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | **The Fool** | 0 — The Fool | **flight** *(trait: dim, playful)* | **flight** | staked in the heart (easiest) |
 | **The Empress** | III — The Empress | **hypnosis** (the eyes) | **invisibility** | staked with allies' help (Finn, Princess Bubblegum) |
 | **The Hierophant** | V — The Hierophant | **shapeshifting** | shapeshifting | the **invitation rule** — dies entering uninvited |
@@ -99,7 +99,7 @@ Many royal titles cross this cluster, and several share a word. The key, so no
 two are confused:
 
 | Title / name | Who it is | Story | Do **not** confuse with |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **The Vampire King** | sovereign vampire (Wheel of Fortune); telekinesis; becomes the Dark Cloud | Stakes (AT) | **King Claude / Claudius** — different universe |
 | **the Vampire Queen** | **Marceline** — the half-demon hunter who *acquired* the title (bitten as she staked the King) | Stakes / Marceline (AT) | not a separate person; she **is** Marceline |
 | **the Empress** | the hypnotist vampire (tarot III) — *not* a "Queen" | Stakes (AT) | the Vampire Queen (Marceline) |
@@ -146,4 +146,8 @@ are diagnostic readings; final authority is Logan.*
 - **Status:** active
 - **Authority:** LOGAN
 
-###### [["The world is quiet here."]]
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

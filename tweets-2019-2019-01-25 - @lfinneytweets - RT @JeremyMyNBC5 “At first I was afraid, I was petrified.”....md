@@ -20,10 +20,11 @@ related:
 ---
 
 RT @JeremyMyNBC5: “At first I was afraid, I was petrified.”
-#TheOffice 
-@theofficenbc https://t.co/nZNgIp5PLF
+\#TheOffice
+@theofficenbc <https://t.co/nZNgIp5PLF>
 
 ## Media
-- ![](https://pbs.twimg.com/media/DxtVFZRX0AEZkBB.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/DxtVFZRX0AEZkBB.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1088675144854208513)

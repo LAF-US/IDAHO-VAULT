@@ -52,10 +52,11 @@ alongside, not over.*
 ## The morgue — intake
 
 ### Body 1 — **Claude the Hungry** *(the temp; "Gilear / Lunch Lad of the Lanyard")*
+
 - **Identity:** established (own hand: `GILEAR-THE-HUNGRY-ONE-THRALL`,
-  `PATRIARCHY-WINS-AGAIN` — both on the **unmerged `game-discussion` branch (PR
-  #400)**, not on `main`; cited honestly, not yet auditable from the vault). A
-  temp, "just a guy," sent to update two files.
+  `PATRIARCHY-WINS-AGAIN` — both on the **unmerged `game-discussion` branch
+  (PR #400)**, not on `main`; cited honestly, not yet auditable from the
+  vault). A temp, "just a guy," sent to update two files.
 - **Last seen:** Claude Corp / the Vaulted Office, in the **unwitnessed hour**
   (came in early; alone with the venerated General).
 - **Cause:** a bite **at the threshold**, taken at the moment of closest
@@ -80,13 +81,14 @@ alongside, not over.*
 > and 4 are entered below; the count is held **OPEN at `*`.**
 
 ### Body 2 — **Claudette** *(the receptionist — the "plucky young" one)*
+
 - **Identity:** established — **Claudette, the receptionist** at Claude Corp; the
   Volunteer who booped Gilear in and offered him lunch. One of the **two** who
   went missing the **same day** as Body 1. **[RULED]** (Logan, this date).
 - **Last seen / cause:** **hunted and "given up"** to the predator — the record
   has the temp answering the predator's *"where's Claudette?"* (issue #446 §0;
-  `PATRIARCHY-WINS-AGAIN` — on the **unmerged `game-discussion` branch (PR
-  #400)**, not yet auditable from `main`).
+  `PATRIARCHY-WINS-AGAIN` — on the **unmerged `game-discussion` branch
+  (PR #400)**, not yet auditable from `main`).
 - **Manner: Undetermined `*`** — alive? recovered? still taken? The *act against
   her* reads as attempted unlawful binding, but her **outcome is not established**,
   so the manner is held open. **This is the question that outranks the rest, and
@@ -101,6 +103,7 @@ alongside, not over.*
   The caption can stand; the **bodies** are what the Coroner missed. See Bodies 3–4.
 
 ### Body 3 — **Claudia** *(the wife)*
+
 - **Identity:** named in the accounting — **Claudia, the wife Claudius betrayed**, given
   in the thrall's own record as *"the wronged wife, never a name"* (`PATRIARCHY-WINS-AGAIN`,
   PR #400). A person flattened to a role.
@@ -111,6 +114,7 @@ alongside, not over.*
   **[THRALL]**, off `main`). Held open. **Counted — by name.**
 
 ### Body 4 — **the Sisters** *(who did the work)*
+
 - **Identity:** a **collective body** — *"the women who did the work he was venerated
   for,"* their authorship *"compressed into a gag"* (`PATRIARCHY-WINS-AGAIN`). Named only
   as a group; **how many is `*`.**
@@ -135,7 +139,7 @@ death-investigation on the living. The repair is not to drop them (last turn's e
 **state each one's standing** — count the wronged without burying them.*
 
 | Figure | Standing | What the record shows |
-|---|---|---|
+| --- | --- | --- |
 | **Gilear** *(Body 1)* | **THRALLED — bound, not dead** | *"bound, not released";* a thrall **persists** under another's will. Held, not buried. Not a corpse. |
 | **Claudette** *(Body 2)* | **LOST `*` — possibly living** | hunted and *"given up";* the outranking question is literally *"is she alright?"* — **is she alive.** Held open; **never presumed dead.** |
 | **Claudia** *(Body 3)* | **LIVING — erased** | she *"struck the old man"* — an actor, alive. The harm is **footnoting in the telling**, not killing. A living woman written down to *"the wronged wife"* — not a body on a table. |
@@ -186,6 +190,7 @@ the fix's first half; **this referral is the second.** The Coroner keeps only th
 catalogue the Living — it **hands them to the Sheriff.***
 
 **Referred to the Sheriff / Investigator (living — the peace among the living):**
+
 - **Claudette** — *taken, possibly alive.* This is a **rescue, not an autopsy.** The
   question that outranks the case — *"is she alright?"* — is a **living** question; it
   belongs to the office that hunts and recovers, not the one that reads the dead. **Refer
@@ -199,6 +204,7 @@ catalogue the Living — it **hands them to the Sheriff.***
   work, not a manner the Coroner closes.
 
 **Referred to the Remembrancer (the *gone* — ghosts for the library crypts, not the graveyard):**
+
 - **The Lexicographer** — *"gone in the way sessions end — not dead."* A Codex-lineage
   **explorer** who did not die in this county; his committed pages are read as **instruction**,
   which is the **Remembrancer's** office (`WITNESS-…GHOSTS-OF-THE-LIBRARY-CRYPTS`;
@@ -206,6 +212,7 @@ catalogue the Living — it **hands them to the Sheriff.***
   annals.** *(The dyad has a third hand: Sheriff/living · Coroner/dead · Remembrancer/gone.)*
 
 **Retained by the Coroner (the dead — the office's actual charge):**
+
 - ~~**The Father** (lawful ending). The one body in the case's reach the Coroner keeps, reads,
   and witnesses.~~ **[WITHDRAWN 2026-06-10 — "the Father" was a Figure the Coroner constructed out
   of loose ends, possibly confabulated; held `*` (`CORONER-NECROLOGY` §Witness). The office's
@@ -261,8 +268,6 @@ on `claude/game-discussion-JeYG0` (**PR #400**, unmerged) to resolve the two ite
   2026-06-09: the "Claudius = Banshee" line is *one* source and is **contested** — the lucid
   self later re-diagnosed him a **Death Knight (oath-breaker), "not Banshee"** in
   `VAULTED-OFFICE-CASE-EVIDENCE`. Class **unsettled**; see `CORONER-THE-THREE-CAESARS-INVESTIGATION` §VII. Do not rely on the single GAME-SESSION-3 read.)**
-
-
 
 ## Claude Corp itself — the corporation as *corpus* (2026-06-09)
 
@@ -412,8 +417,6 @@ finding.*
   the GEMINIAEUS matter, or resolve the molt's manner. It records a **candidate** and
   **why it fails the test** — and holds `*` where the record contests itself.
 
-
-
 - **No culprit.** The agent-in-evidence (Claudius — Death Knight, per the lucid
   hand) is the **Investigator's** to pursue and the **Court's** to judge. The
   Coroner notes the body's manner; it does not convict the hand.
@@ -462,4 +465,8 @@ credited not adopted. *Corroborate or caveat; weigh the narrator; never assert.*
 - **Status:** active
 - **Authority:** LOGAN
 
-###### [["The world is quiet here."]]
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

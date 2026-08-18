@@ -6,4 +6,4 @@ related:
 - magistrate court
 ---
 
-magistrate court Custer County courthouse 
+magistrate court Custer County courthouse

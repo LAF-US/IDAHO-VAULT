@@ -26,6 +26,7 @@ Monday, April 6**56°F /** Lewiston
 [Sign In](https://www.lmtribune.com/sign-in?returnTo=%2Flocal-news%2Fchristian-nationalism-town-hall-set-for-next-week-fd8558a6%3Futm_source%3Dfavs-news)
 
 Sections
+
 - [Latest](https://www.lmtribune.com/latest-stories)
 - [Local News](https://www.lmtribune.com/sections/local-news)
 - [Best of the LC Valley](https://www.lmtribune.com/sections/best-of-the-lc-valley)
@@ -56,6 +57,7 @@ Sections
 - [Keith's Big Fish and Outdoor Trophies](https://www.lmtribune.com/sections/keiths-big-fish-and-outdoor-trophies)
 
 The Region
+
 - [Announcements](https://www.lmtribune.com/sections/announcements)
 - [Obituaries](https://www.lmtribune.com/sections/obituaries)
 - [Opinion](https://www.lmtribune.com/sections/opinion)
@@ -63,6 +65,7 @@ The Region
 - [Special Editions](https://issuu.com/lewistontribune/stacks)
 
 Classifieds
+
 - [Jobs](https://careers.lmtribune.com/)
 - [Legal Notices](https://www.nwmarket.com/marketplace/)
 - [Make a Submission](https://www.lmtribune.com/the-trib/make-a-submission-8bc9bf62)
@@ -71,6 +74,7 @@ Classifieds
 - [Real Estate](https://www.nwmarket.com/marketplace/category/real%20estate)
 
 The Trib
+
 - [About Us](https://www.lmtribune.com/stories/about-us-daa7fab8)
 - [Advertise With Us](https://www.lmtribune.com/stories/advertise-with-us-f131fb92)
 - [Archives](https://lmtribune.newsbank.com/)
@@ -130,7 +134,7 @@ Advertisement
 
 ### Inmate dies Sunday at Whitman County Jail
 
-](https://www.lmtribune.com/local-news/inmate-dies-sunday-at-whitman-county-jail-b125f050)
+](<https://www.lmtribune.com/local-news/inmate-dies-sunday-at-whitman-county-jail-b125f050>)
 
 [Local News](https://www.lmtribune.com/sections/local-news)
 
@@ -140,7 +144,7 @@ Apr. 5
 
 ### Clarkston Community Garden raises produce for the hungry
 
-](https://www.lmtribune.com/local-news/grown-with-love-06a6aa79)
+](<https://www.lmtribune.com/local-news/grown-with-love-06a6aa79>)
 
 [Local News](https://www.lmtribune.com/sections/local-news)
 
@@ -150,7 +154,7 @@ Apr. 5
 
 ### Three fields, thousands of eggs
 
-](https://www.lmtribune.com/local-news/three-fields-thousands-of-eggs-adf45033)
+](<https://www.lmtribune.com/local-news/three-fields-thousands-of-eggs-adf45033>)
 
 [Local News](https://www.lmtribune.com/sections/local-news)
 
@@ -160,7 +164,7 @@ Apr. 5
 
 ### Area Support Groups
 
-](https://www.lmtribune.com/local-news/area-support-groups-71040021)
+](<https://www.lmtribune.com/local-news/area-support-groups-71040021>)
 
 importedId:21829844
 
@@ -170,7 +174,7 @@ importedId:21829844
 
 ![Wolff](https://public-assets-prod.pubgen.ai/brand_4fc3eb37-4c8a-4951-9324-365f6e4b53fd/asset_6a421c30-edb7-5709-8f53-1b0097f6641f.jpg?w=3840)
 
-](https://www.lmtribune.com/local-news/legislature-closes-session-marked-by-steep-cuts-f62115c9)
+](<https://www.lmtribune.com/local-news/legislature-closes-session-marked-by-steep-cuts-f62115c9>)
 
 [Local News](https://www.lmtribune.com/sections/local-news)
 
@@ -180,13 +184,13 @@ Apr. 4
 
 ### Legislature closes session marked by steep cuts
 
-](https://www.lmtribune.com/local-news/legislature-closes-session-marked-by-steep-cuts-f62115c9)
+](<https://www.lmtribune.com/local-news/legislature-closes-session-marked-by-steep-cuts-f62115c9>)
 
 [
 
 ![Irene Everett, left, and Jeremy Carlson load a chair that Everett purchased onto the elevator during the grand reopening on Friday at the Bargain Hunter Mall Antique Store in Lewiston.](https://public-assets-prod.pubgen.ai/brand_4fc3eb37-4c8a-4951-9324-365f6e4b53fd/asset_420a11cf-0a4c-52fb-9ebd-76df70e7a53b.jpg?w=3840)
 
-](https://www.lmtribune.com/local-news/bargain-hunter-mall-reopens-6ebbd951)
+](<https://www.lmtribune.com/local-news/bargain-hunter-mall-reopens-6ebbd951>)
 
 [Local News](https://www.lmtribune.com/sections/local-news)
 
@@ -196,13 +200,13 @@ Apr. 4
 
 ### Bargain Hunter Mall reopens
 
-](https://www.lmtribune.com/local-news/bargain-hunter-mall-reopens-6ebbd951)
+](<https://www.lmtribune.com/local-news/bargain-hunter-mall-reopens-6ebbd951>)
 
 [
 
 ![The Lewiston High School Bengal Bands won the award for best overall music program at the WorldStrides Heritage Festival competition in Orlando, Fla., recently.](https://public-assets-prod.pubgen.ai/brand_4fc3eb37-4c8a-4951-9324-365f6e4b53fd/asset_804e529e-f1dc-5e1d-b729-fdd068a4382c.jpg?w=3840)
 
-](https://www.lmtribune.com/local-news/lhs-band-wins-best-overall-music-program-d2846e5b)
+](<https://www.lmtribune.com/local-news/lhs-band-wins-best-overall-music-program-d2846e5b>)
 
 [Local News](https://www.lmtribune.com/sections/local-news)
 
@@ -212,13 +216,13 @@ Apr. 4
 
 ### LHS band wins best overall music program
 
-](https://www.lmtribune.com/local-news/lhs-band-wins-best-overall-music-program-d2846e5b)
+](<https://www.lmtribune.com/local-news/lhs-band-wins-best-overall-music-program-d2846e5b>)
 
 [
 
 ![Moyle](https://public-assets-prod.pubgen.ai/brand_4fc3eb37-4c8a-4951-9324-365f6e4b53fd/asset_f101b349-0354-582a-915b-58220e143581.jpg?w=3840)
 
-](https://www.lmtribune.com/local-news/idaho-senate-rejects-bill-granting-ag-greater-power-0bb72b61)
+](<https://www.lmtribune.com/local-news/idaho-senate-rejects-bill-granting-ag-greater-power-0bb72b61>)
 
 [Local News](https://www.lmtribune.com/sections/local-news)
 
@@ -228,13 +232,13 @@ Apr. 4
 
 ### Idaho Senate rejects bill granting AG greater power
 
-](https://www.lmtribune.com/local-news/idaho-senate-rejects-bill-granting-ag-greater-power-0bb72b61)
+](<https://www.lmtribune.com/local-news/idaho-senate-rejects-bill-granting-ag-greater-power-0bb72b61>)
 
 [
 
 ![This is a map of the city of Pullman’s traffic signal replacement project.](https://public-assets-prod.pubgen.ai/brand_4fc3eb37-4c8a-4951-9324-365f6e4b53fd/asset_d2afc3c0-65c5-5562-9754-5247dd9cf020.jpg?w=3840)
 
-](https://www.lmtribune.com/local-news/traffic-delays-at-grand-and-terre-view-intersections-expected-during-road-work-5b7e7a2d)
+](<https://www.lmtribune.com/local-news/traffic-delays-at-grand-and-terre-view-intersections-expected-during-road-work-5b7e7a2d>)
 
 [Local News](https://www.lmtribune.com/sections/local-news)
 
@@ -244,13 +248,13 @@ Apr. 4
 
 ### Traffic delays at Grand and Terre View intersections expected during road work
 
-](https://www.lmtribune.com/local-news/traffic-delays-at-grand-and-terre-view-intersections-expected-during-road-work-5b7e7a2d)
+](<https://www.lmtribune.com/local-news/traffic-delays-at-grand-and-terre-view-intersections-expected-during-road-work-5b7e7a2d>)
 
 [
 
 ![Pullman](https://public-assets-prod.pubgen.ai/brand_4fc3eb37-4c8a-4951-9324-365f6e4b53fd/asset_da0dfcdb-fbbf-5cf7-8aa0-e9c2ec196252.jpg?w=3840)
 
-](https://www.lmtribune.com/local-news/pullman-named-finalist-in-americas-favorite-small-towns-competition-cfe1e0dd)
+](<https://www.lmtribune.com/local-news/pullman-named-finalist-in-americas-favorite-small-towns-competition-cfe1e0dd>)
 
 [Local News](https://www.lmtribune.com/sections/local-news)
 
@@ -260,13 +264,13 @@ Apr. 4
 
 ### Pullman named finalist in ‘America’s Favorite Small Towns’ competition
 
-](https://www.lmtribune.com/local-news/pullman-named-finalist-in-americas-favorite-small-towns-competition-cfe1e0dd)
+](<https://www.lmtribune.com/local-news/pullman-named-finalist-in-americas-favorite-small-towns-competition-cfe1e0dd>)
 
 [
 
 ![Artist Cori Dantini’s work has been chosen for the 2026 Farmers Market poster.](https://public-assets-prod.pubgen.ai/brand_4fc3eb37-4c8a-4951-9324-365f6e4b53fd/asset_9ddcc6b0-668d-5c7c-92ef-4693b2ed71cd.jpg?w=3840)
 
-](https://www.lmtribune.com/local-news/2026-farmers-market-poster-selected-01e84373)
+](<https://www.lmtribune.com/local-news/2026-farmers-market-poster-selected-01e84373>)
 
 [Local News](https://www.lmtribune.com/sections/local-news)
 
@@ -276,13 +280,13 @@ Apr. 4
 
 ### 2026 Farmers Market poster selected
 
-](https://www.lmtribune.com/local-news/2026-farmers-market-poster-selected-01e84373)
+](<https://www.lmtribune.com/local-news/2026-farmers-market-poster-selected-01e84373>)
 
 [
 
 ![Lauren McCluskey](https://public-assets-prod.pubgen.ai/brand_4fc3eb37-4c8a-4951-9324-365f6e4b53fd/asset_0c27825a-98c0-5657-9648-5ec0b7d64d6b.jpg?w=3840)
 
-](https://www.lmtribune.com/local-news/-cc9eaa39)
+](<https://www.lmtribune.com/local-news/-cc9eaa39>)
 
 [Local News](https://www.lmtribune.com/sections/local-news)
 
@@ -292,7 +296,7 @@ Apr. 4
 
 ### Lauren McCluskey Foundation hosts annual dinner and auction today
 
-](https://www.lmtribune.com/local-news/-cc9eaa39)
+](<https://www.lmtribune.com/local-news/-cc9eaa39>)
 
 Advertisement
 
@@ -305,6 +309,7 @@ Verified Protected by [ALTCHA](https://altcha.org/)
 [![Site Footer Logo](https://public-assets-prod.pubgen.ai/brand_4fc3eb37-4c8a-4951-9324-365f6e4b53fd/asset_721bd383-cb84-44c4-b510-74aa3d2061d3.webp?w=3840)](https://www.lmtribune.com/)
 
 The Tribune
+
 - [About Us](https://site_dbd1c5f4-f244-4786-adc3-bddd9ff9bad6.sites.pubgen.ai/stories/about-us-daa7fab8)
 - [Advertise With Us](https://www.lmtribune.com/stories/advertise-with-us-f131fb92)
 - [Contact Us](https://www.lmtribune.com/the-trib/contact-us-7e67c01d)
@@ -312,6 +317,7 @@ The Tribune
 - [Best of the LC Valley 2026](https://www.lmtribune.com/stories/best-of-the-lc-valley-2026-1272b20a)
 
 Read the Tribune
+
 - [Download Our App](https://www.lmtribune.com/the-trib/download-our-app-c3b45e12)
 - [E-Edition](https://e.lmtribune.com/)
 - [Latest News](https://site_dbd1c5f4-f244-4786-adc3-bddd9ff9bad6.sites.pubgen.ai/latest-stories)
@@ -319,6 +325,7 @@ Read the Tribune
 - [Lewiston Tribune Multimedia](https://www.lmtribune.com/sections/lewiston-tribune-podcast)
 
 Socials
+
 - [Facebook](https://www.facebook.com/lewistontribune/)
 - [Instagram](https://www.instagram.com/lewistontribune/)
 - [Twitter](https://x.com/lewistontribune?lang=en)
@@ -352,10 +359,10 @@ Expert OpinionsWhat are expert opinions or additional perspectives on this issue
 
 Sign in to access chat historySave and continue your conversations
 
-](https://www.lmtribune.com/sign-in?returnTo=%2Flocal-news%2Fchristian-nationalism-town-hall-set-for-next-week-fd8558a6%3Futm_source%3Dfavs-news)
+](<https://www.lmtribune.com/sign-in?returnTo=%2Flocal-news%2Fchristian-nationalism-town-hall-set-for-next-week-fd8558a6%3Futm_source%3Dfavs-news>)
 
 Lewy AI
 
 ![AI Chatbot Toggle](https://public-assets-prod.pubgen.ai/brand_4fc3eb37-4c8a-4951-9324-365f6e4b53fd/asset_7e7bca4b-2bd0-460d-b083-5a2ab708fe7d.svg?w=3840)
 
-  ![](https://d2vpe5holfgxc9.cloudfront.net/pxl.png?ts=1775492258752&puri=https%3A%2F%2Fwww.lmtribune.com%2Flocal-news%2Fchristian-nationalism-town-hall-set-for-next-week-fd8558a6%3Futm_source%3Dfavs-news&refuri=https%3A%2F%2Ffavs.news%2F&uuid=56add33d-eea9-4b69-932c-513c9263fa82)
+  ![alt text needed](https://d2vpe5holfgxc9.cloudfront.net/pxl.png?ts=1775492258752&puri=https%3A%2F%2Fwww.lmtribune.com%2Flocal-news%2Fchristian-nationalism-town-hall-set-for-next-week-fd8558a6%3Futm_source%3Dfavs-news&refuri=https%3A%2F%2Ffavs.news%2F&uuid=56add33d-eea9-4b69-932c-513c9263fa82)

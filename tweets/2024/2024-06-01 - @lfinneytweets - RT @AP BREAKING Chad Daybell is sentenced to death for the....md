@@ -1,4 +1,5 @@
 ---
+title: "RT @AP BREAKING Chad Daybell is sentenced to death for the..."
 date: 2024-06-01
 time: 20:06:23
 tweet_id: "1796996736566825157"

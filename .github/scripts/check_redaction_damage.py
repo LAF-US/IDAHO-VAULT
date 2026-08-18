@@ -34,6 +34,7 @@ from __future__ import annotations
 import argparse
 import os
 import re
+import shutil
 import subprocess
 import sys
 from dataclasses import dataclass
@@ -58,6 +59,11 @@ def _repo_root() -> Path:
 
 
 REPO_ROOT = _repo_root()
+
+# Resolved once at import time so run_git() never invokes a bare "git" by
+# partial name (Bandit B607) -- falls back to the literal name only if
+# shutil.which can't find it (e.g. an unusual local PATH), same as before.
+_GIT_EXECUTABLE = shutil.which("git") or "git"
 
 # The marker is built from three literal fragments so this file's own source
 # never contains the touching-both-sides shape it is designed to detect.
@@ -90,13 +96,14 @@ class Finding:
 
 def run_git(repo_root: Path, args: list[str]) -> subprocess.CompletedProcess[str]:
     return subprocess.run(
-        ["git", *args],
+        [_GIT_EXECUTABLE, *args],
         cwd=repo_root,
         text=True,
         encoding="utf-8",
         errors="replace",
         capture_output=True,
         check=False,
+        timeout=30,
     )
 
 
@@ -155,7 +162,8 @@ def findings_for_added_lines(
     by_file: dict[str, list[tuple[int, str]]],
     base_loader=None,
 ) -> list[Finding]:
-    """Flag damage on added lines; suppress fragments carried from the same file.
+    """
+    Flag damage on added lines; suppress fragments carried from the same file.
 
     base_loader(path) -> str | None returns the base-version content of the
     file (None if it has no base version). Without a loader, every match

@@ -1,4 +1,5 @@
 ---
+title: "tweet (600149)"
 date: 2025-04-03
 time: 22:40:02
 tweet_id: "1907926093828600149"
@@ -16,10 +17,10 @@ related:
   - lfinneytweets
 ---
 
-@gemstatebrian https://t.co/Vx11hDKqqs
+@gemstatebrian <https://t.co/Vx11hDKqqs>
 
 ## Media
-- ![](https://pbs.twimg.com/tweet_video_thumb/GnpQqrabIAApzz4.jpg)
+- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/GnpQqrabIAApzz4.jpg)
 
 *In reply to [@brianalmon](https://twitter.com/brianalmon)*
 

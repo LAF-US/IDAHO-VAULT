@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports This week, lawmakers voted down a $6..."
 date: 2021-03-06
 time: 01:10:12
 tweet_id: "1368005961558884355"

@@ -6,4 +6,4 @@ related:
 - Senate member
 authority: LOGAN
 ---
-former Senate member for LD7, lost primary to Cindy Carlson 
+former Senate member for LD7, lost primary to Cindy Carlson

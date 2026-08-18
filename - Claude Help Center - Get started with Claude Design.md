@@ -77,10 +77,10 @@ Use the “Export” button in the upper right corner when viewing your project 
 - Send to Canva
 - Export as standalone HTML
 - Handoff to Claude Code
-	- Send to local coding agent
-	- Send to Claude Code Web
+  - Send to local coding agent
+  - Send to Claude Code Web
 
-[![](https://downloads.intercomcdn.com/i/o/lupk8zyo/2287510952/553a03eec5cea7b9eff53b473552/6dc33363-38b1-444e-96bb-f8218b588173?expires=1776556800&signature=9771e497266870c24703a06b84438a62e1936b5b93db4e4329108f99c7075221&req=diIvEcx%2FnYhaW%2FMW3nq%2BgeY03psaG7nFTuiDLaDjt0dDt9r5KyTb8VJK9%2Fo3%0AaJExvkbqj%2FMe6Tkvmu%2FEr2Og00w%3D%0A)](https://downloads.intercomcdn.com/i/o/lupk8zyo/2287510952/553a03eec5cea7b9eff53b473552/6dc33363-38b1-444e-96bb-f8218b588173?expires=1776556800&signature=9771e497266870c24703a06b84438a62e1936b5b93db4e4329108f99c7075221&req=diIvEcx%2FnYhaW%2FMW3nq%2BgeY03psaG7nFTuiDLaDjt0dDt9r5KyTb8VJK9%2Fo3%0AaJExvkbqj%2FMe6Tkvmu%2FEr2Og00w%3D%0A)
+[![alt text needed](https://downloads.intercomcdn.com/i/o/lupk8zyo/2287510952/553a03eec5cea7b9eff53b473552/6dc33363-38b1-444e-96bb-f8218b588173?expires=1776556800&signature=9771e497266870c24703a06b84438a62e1936b5b93db4e4329108f99c7075221&req=diIvEcx%2FnYhaW%2FMW3nq%2BgeY03psaG7nFTuiDLaDjt0dDt9r5KyTb8VJK9%2Fo3%0AaJExvkbqj%2FMe6Tkvmu%2FEr2Og00w%3D%0A)](https://downloads.intercomcdn.com/i/o/lupk8zyo/2287510952/553a03eec5cea7b9eff53b473552/6dc33363-38b1-444e-96bb-f8218b588173?expires=1776556800&signature=9771e497266870c24703a06b84438a62e1936b5b93db4e4329108f99c7075221&req=diIvEcx%2FnYhaW%2FMW3nq%2BgeY03psaG7nFTuiDLaDjt0dDt9r5KyTb8VJK9%2Fo3%0AaJExvkbqj%2FMe6Tkvmu%2FEr2Og00w%3D%0A)
 
 You can also share projects within your organization using a shareable link. Sharing options include view-only, comment, and edit access.
 

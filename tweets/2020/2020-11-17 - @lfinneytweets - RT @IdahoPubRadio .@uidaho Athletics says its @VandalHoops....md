@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio .@uidaho Athletics says its @VandalHoops..."
 date: 2020-11-17
 time: 21:58:59
 tweet_id: "1328819950627160064"

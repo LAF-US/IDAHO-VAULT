@@ -1,4 +1,5 @@
 ---
+title: "RT @uiargonaut House Bill 509 passed in the Idaho Senate on..."
 date: 2020-03-18
 time: 18:32:40
 tweet_id: "1240345390957780993"

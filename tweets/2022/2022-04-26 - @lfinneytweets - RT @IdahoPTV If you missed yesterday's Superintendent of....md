@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPTV If you missed yesterday's Superintendent of..."
 date: 2022-04-26
 time: 17:00:42
 tweet_id: "1518998517372514304"

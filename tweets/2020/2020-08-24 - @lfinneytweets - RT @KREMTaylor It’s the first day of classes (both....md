@@ -1,4 +1,5 @@
 ---
+title: "RT @KREMTaylor It\u2019s the first day of classes (both..."
 date: 2020-08-24
 time: 21:55:55
 tweet_id: "1298016212903837698"
