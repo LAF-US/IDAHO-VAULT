@@ -1,4 +1,5 @@
 ---
+title: "Even when @NateBrownNews isn't in our state anymore, we can..."
 date: 2022-01-26
 time: 19:33:40
 tweet_id: "1486422105155457024"

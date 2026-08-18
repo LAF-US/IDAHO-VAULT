@@ -36,7 +36,6 @@ import sys
 from datetime import datetime, timezone
 
 from pr_threads import (  # shared thread-analysis vocabulary (#600 §5)
-    ATTESTATION_DECISIONS,
     _count_committable_suggestion_threads,
     _thread_authors,
     _thread_has_attested_look,
@@ -103,29 +102,39 @@ RISK_LOW_LABEL = "risk/low"
 RISK_MED_LABEL = "risk/med"
 RISK_HIGH_LABEL = "risk/high"
 RISK_NOPE_LABEL = "risk/nope"
+# The `—/—` cell's own label (— is U+2014). Stamped when NEITHER axis fires, and
+# only then. It is the classifier saying "I looked and nothing fired" — which is a
+# different statement from a PR that carries no risk label because nothing has
+# classified it yet.
+RISK_CLEAR_LABEL = "risk/—"
 
-# The risk vocabulary (flat schema, norm set by Logan) is four flat labels across
-# two independent axes — each stamped ONLY when its axis fires. There are no prefixes, no
-# explicit `—` labels, and no separate clear marker.
+# The risk vocabulary (flat schema, norm set by Logan) is four flat FLAG labels across two
+# independent axes — each stamped ONLY when its axis fires — plus one clear label for when
+# neither does. There are no prefixes: the `filetype:risk/` and `depth:risk/` forms were a
+# prior agent's transitionary scaffolding, they stay retired, and only the bare `risk/…`
+# form is live.
 #   FILETYPE axis: risk/low (Machine Doc / inert assets) | risk/med (Computer Code — executes)
 #   FILEDEPTH axis: risk/high (path inside the "!/" tree) | risk/nope (path in the inner
 #                   "!/!/__!__/!/" region and below — never auto-merges)
-# A PR carries AT MOST one filetype value AND at most one filedepth value (0–2 labels total).
-# `—` on an axis is the ABSENCE of that axis's label; `—/—` (clear) is NO risk/* label at all.
+# A PR carries AT MOST one filetype value AND at most one filedepth value. `—` on an
+# axis is the absence of that axis's label; when NEITHER fires the PR carries
+# `risk/—`, the ninth cell's own label. A PR with no risk/* label at all is NOT
+# clear — it is unclassified, and it HOLDS.
 # Flags are TRANSIENT ROUTING STATE, not a durable record: the classifier restamps them on
 # synchronize (labels mirror the current diff), and when the lane's review completes the
 # engine clears the fired flag (removes it) and the PR flows. risk/nope is never
 # auto-cleared — it always requires a human merge.
 FILETYPE_RISK_LABELS = {"low": RISK_LOW_LABEL, "med": RISK_MED_LABEL}
-DEPTH_RISK_LABELS = {"high": RISK_HIGH_LABEL, "nope": RISK_NOPE_LABEL}
+FILEDEPTH_RISK_LABELS = {"high": RISK_HIGH_LABEL, "nope": RISK_NOPE_LABEL}
 RISK_FLAG_LABELS = frozenset(
     {RISK_LOW_LABEL, RISK_MED_LABEL, RISK_HIGH_LABEL, RISK_NOPE_LABEL}
 )
 
 # The engine owns its whole namespace, not just the vocabulary it currently stamps.
-# `restamp_risk_pair` removes any label matching this that the classified lane did not ask for,
-# a PR still wearing a superseded form (the retired `filetype:risk/*` + `depth:risk/*` +
-# `risk/—` scheme #854 replaced) converges the next time it is classified — no migration
+# `restamp_risk_pair` removes any label matching this that the classified lane did not ask
+# for, so a PR still wearing a superseded form (the retired `filetype:risk/*` and
+# `depth:risk/*` prefixed scheme #854 replaced) converges the next time it is classified —
+# no migration
 # script, and nothing to run by hand. This matches on the namespace instead of enumerating
 # the retired strings: an enumeration would need editing every time the vocabulary moves,
 # and that editing is where the nine-string scheme #854 had to flatten came from.
@@ -147,7 +156,7 @@ AUTO_MERGE_AUTHZ_FRAGMENTS = (
 LABEL_SPECS: dict[str, tuple[str, str]] = {
     DEFAULT_AUTO_MERGE_LABEL: (
         "0E8A16",
-        "Legacy agent auto-merge marker; removed during reconciliation.",
+        "Engine state: auto-merge armed on this PR; the engine removes it on disarm (reconciliation).",
     ),
     DEFAULT_REVIEW_REQUIRED_LABEL: (
         "D93F0B",
@@ -186,7 +195,23 @@ LABEL_SPECS: dict[str, tuple[str, str]] = {
         "B60205",
         "Filedepth: nope (inner \"!/!/__!__/!/\" region and below; never auto-merges).",
     ),
+    # Not an axis value — the ninth cell. `ensure_labels` creates only what this dict
+    # names, and `restamp_risk_pair` stamps this one, so leaving it out would have the
+    # engine adding a label the repo was never told to create.
+    RISK_CLEAR_LABEL: (
+        "D4E3F0",
+        "Classified clear: the classifier ran and neither axis fired.",
+    ),
 }
+
+# Labels created ad hoc and later superseded by canon: `ensure_labels` deletes
+# these on sight, so a retired name cannot be reached for again. Deleting a repo
+# label also strips it from any PR still wearing it — that is the point.
+# `auto-merge` was the engage gate's undeclared second name for the one arming
+# signal (the drift #763 kills); DEFAULT_AUTO_MERGE_LABEL is the canon. This
+# runs from the default branch's checkout, so the deletion cannot fire before
+# the gate that stops reading the retired name has itself landed on main.
+RETIRED_LABELS: tuple[str, ...] = ("auto-merge",)
 
 
 def _auto_merge_state(owner: str, repo: str, pr_number: int) -> tuple[bool, bool]:
@@ -437,7 +462,7 @@ def _resolve_thread(thread_id: str) -> None:
 # Look-then-resolve design (#399): nothing is dismissed or resolved until a
 # looker (agent or human) has looked. A looker records the look as an in-thread
 # attestation comment of this canonical shape:
-#   <!-- looked: by=<login>; at=<iso8601>; decision=<addressed|advisory|wontfix>; v=1 -->
+#   <!-- looked: by=<login>; at=<iso8601>; v=1 -->
 # Detection requires the structured marker AND that `by` matches the comment's
 # own author, so a pasted or forged marker attributed to someone else cannot
 # fake a look. This layer RESOLVES NOTHING.
@@ -446,7 +471,6 @@ LOOK_ATTESTATION_MARKER = "<!-- looked:"
 
 def _build_attestation(
     looker: str,
-    decision: str,
     rationale: str,
     *,
     now: datetime | None = None,
@@ -459,10 +483,6 @@ def _build_attestation(
     # (`github-actions[bot]`) are accepted (the B2 standing/identity decision: a looker
     # may sign under its native CI identity). A malformed login is rejected here rather
     # than producing an attestation the detector can never match.
-    if decision not in ATTESTATION_DECISIONS:
-        raise ValueError(
-            f"decision {decision!r} is not one of {sorted(ATTESTATION_DECISIONS)}"
-        )
     if not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9-]*(?:\[bot\])?", looker):
         raise ValueError(
             f"looker {looker!r} must match the attestation grammar "
@@ -473,8 +493,17 @@ def _build_attestation(
     if moment.tzinfo is None:  # treat a naive datetime as UTC, never as local
         moment = moment.replace(tzinfo=timezone.utc)
     stamp = moment.astimezone(timezone.utc).isoformat().replace("+00:00", "Z")
-    marker = f"<!-- looked: by={looker}; at={stamp}; decision={decision}; v=1 -->"
-    return f"Looked by `{looker}` — **{decision}**. {rationale}\n\n{marker}"
+    marker = f"<!-- looked: by={looker}; at={stamp}; v=1 -->"
+    # "Resolved" because both callers resolve: attest_and_resolve resolves the
+    # thread, and the backfill path witnesses only a resolve this looker itself
+    # performed (it refuses another identity's).
+    #
+    # The visible line carries the resolution and the stamp, nothing else. No
+    # login, no disposition label. Do not add either back: this is an automated
+    # looker, and naming a human or announcing a judgement claims an intent that
+    # was never exercised. The `looked:` marker above keeps `by=` (machine-read by
+    # _thread_has_attested_look, validated by the grammar guard) and the stamp.
+    return f"Resolved by looker — {rationale}\n\n{marker}"
 
 
 # Layer B2 (#399): the guarded disposition core. `attest_and_resolve` is the ONLY
@@ -499,40 +528,10 @@ def _add_thread_reply(thread_id: str, body: str) -> None:
     }
     """
     _graphql(mutation, threadId=thread_id, body=body)
-
-
-def _fetch_thread(thread_id: str) -> dict | None:
-    """Fetch one review thread node directly by GraphQL ID."""
-    # A fallback for when an explicit target thread sits beyond `_fetch_pr`'s
-    # `reviewThreads(first: 100)` window (a PR with >100 threads), so a valid id is
-    # not falsely reported missing. Returns the same node shape as the PR query.
-    query = """
-    query($id: ID!) {
-      node(id: $id) {
-        ... on PullRequestReviewThread {
-          id
-          isResolved
-          isOutdated
-          comments(first: 100) {
-            pageInfo { hasNextPage }
-            nodes { author { login __typename } body url }
-          }
-        }
-      }
-    }
-    """
-    data = _graphql(query, id=thread_id)
-    node = data.get("node") or {}
-    # A node id that exists but is not a review thread yields {} (the inline fragment
-    # doesn't apply) — treat that as missing, not as a thread with no id.
-    return node if node.get("id") else None
-
-
 def attest_and_resolve(
     pr: dict,
     thread: dict,
     looker: str,
-    decision: str,
     rationale: str,
     *,
     apply: bool = False,
@@ -591,8 +590,8 @@ def attest_and_resolve(
     # (attested AND resolved) is already short-circuited by the isResolved guard above.
     already_looked = _thread_has_attested_look(thread)
 
-    # Build (and thereby validate looker/decision) before any write.
-    body = _build_attestation(looker, decision, rationale, now=now)
+    # Build (and thereby validate the looker) before any write.
+    body = _build_attestation(looker, rationale, now=now)
     result["eligible"] = True
     result["attestation"] = body
     if not apply:
@@ -626,6 +625,12 @@ def attest_and_resolve(
     # post on the recovery path (the attestation is already present from a prior run).
     if not already_looked:
         _add_thread_reply(thread_id, body)
+    # GitHub now says this thread is resolved; say so in the caller's copy too. The
+    # callers below used to re-run `_fetch_pr` after a resolve pass purely to observe
+    # this one boolean flip — a second full graph fetch to learn something already
+    # known here. `evaluate_review_state` reads `isResolved` first and skips the
+    # thread, so the in-memory view and a re-fetched one agree.
+    thread["isResolved"] = True
     result["applied"] = True
     result["reason"] = (
         "existing attested look; thread resolved"
@@ -649,7 +654,7 @@ def backfill_witness(
     # leaves a thread *resolved with no recorded look* — exactly the blind resolution the
     # engine exists to prevent. This repairs that ONE case and only that case:
     #
-    # - the thread is already resolved (otherwise use `attest-resolve`/`engage-outdated`);
+    # - the thread is already resolved (otherwise use `engage-outdated`);
     # - it carries NO attestation yet (nothing to repair otherwise);
     # - every author is a bot, proven from a complete comment page;
     # - and `resolvedBy` is the looker itself — *we* resolved it.
@@ -671,7 +676,7 @@ def backfill_witness(
         result["reason"] = "thread has no id"
         return result
     if not thread.get("isResolved"):
-        result["reason"] = "thread is not resolved (nothing to backfill; use attest-resolve)"
+        result["reason"] = "thread is not resolved (nothing to backfill; use engage-outdated)"
         return result
     if _thread_has_attested_look(thread):
         result["reason"] = "thread already carries an attested look"
@@ -691,9 +696,9 @@ def backfill_witness(
         )
         return result
 
-    # Build (and thereby validate looker) before any write. The decision is `advisory`:
-    # the look records that the resolution stands, not that a fix was applied.
-    body = _build_attestation(looker, "advisory", rationale, now=now)
+    # Build (and thereby validate the looker) before any write. The look records
+    # that the resolution stands, not that a fix was applied.
+    body = _build_attestation(looker, rationale, now=now)
     result["eligible"] = True
     result["attestation"] = body
     if not apply:
@@ -720,9 +725,13 @@ def _ensure_label(name: str, color: str, description: str) -> None:
 
 
 def ensure_labels() -> None:
-    """Create or update the labels used by the review lifecycle."""
+    """Create or update the lifecycle labels; delete retired ones on sight."""
     for label, (color, description) in LABEL_SPECS.items():
         _ensure_label(label, color, description)
+    for label in RETIRED_LABELS:
+        # check=False: an already-absent retired label exits non-zero, and
+        # absence is exactly the state this enforces — idempotent by design.
+        gh_cli.label_delete(label, check=False)
 
 
 def _num(value: int) -> str:
@@ -803,11 +812,13 @@ class RiskMarkerInvariantError(ValueError):
 
 
 def _assert_risk_marker_exclusive(labels: set[str]) -> None:
-    """Fail loud on the one state the flat schema forbids: two values on a single axis."""
+    """Fail loud on the states the flat schema forbids: two values on one axis, or
+    the clear label alongside a fired one."""
     # Each axis carries AT MOST one flat label — risk/low XOR risk/med on the filetype
     # axis, risk/high XOR risk/nope on the filedepth axis. Both values on one axis is a
     # producer/backfill bug, not a routing decision — raise so it can never silently route
-    # a PR whose axis is self-contradictory.
+    # a PR whose axis is self-contradictory. `risk/—` asserts that NOTHING fired, so it
+    # cannot coexist with a fired flag; that pairing is a contradiction, not a tier.
     if RISK_LOW_LABEL in labels and RISK_MED_LABEL in labels:
         raise RiskMarkerInvariantError(
             f"risk-marker invariant violated: the filetype axis carries both "
@@ -820,29 +831,37 @@ def _assert_risk_marker_exclusive(labels: set[str]) -> None:
             f"{RISK_HIGH_LABEL} and {RISK_NOPE_LABEL}. Each axis carries at most ONE "
             f"value, never both."
         )
+    fired = labels & RISK_FLAG_LABELS
+    if RISK_CLEAR_LABEL in labels and fired:
+        raise RiskMarkerInvariantError(
+            f"risk-marker invariant violated: {RISK_CLEAR_LABEL} says no axis fired, "
+            f"but {sorted(fired)} is present. The clear label is stamped only when "
+            f"NEITHER axis fires."
+        )
 
 
 def _risk_pair_for_pr(labels: set[str]) -> tuple[str | None, str | None, bool]:
-    """Read the lane ``(filetype_flag, depth_flag, classified)`` off the flat labels."""
-    # ``filetype_flag`` is "med"/"low"/None; ``depth_flag`` is "nope"/"high"/None.
-    # ``classified`` is True iff ANY risk/* flag is present — no flag present means we
-    # cannot confirm the PR was classified from labels alone (an all-absent PR is NOT
-    # classified-clear: it holds until the classifier says the lane is `—/—`).
+    """Read the lane ``(filetype_flag, filedepth_flag, classified)`` off the flat labels."""
+    # ``filetype_flag`` is "med"/"low"/None; ``filedepth_flag`` is "nope"/"high"/None.
+    # ``classified`` is True iff a fired flag OR ``RISK_CLEAR_LABEL`` is present. The
+    # clear label is what makes the `—/—` cell readable off the labels alone: it says the
+    # classifier looked and nothing fired. A PR wearing NO risk label has not been
+    # classified at all, and holds.
     filetype_flag = (
         "med" if RISK_MED_LABEL in labels
         else "low" if RISK_LOW_LABEL in labels
         else None
     )
-    depth_flag = (
+    filedepth_flag = (
         "nope" if RISK_NOPE_LABEL in labels
         else "high" if RISK_HIGH_LABEL in labels
         else None
     )
-    classified = bool(labels & RISK_FLAG_LABELS)
-    return (filetype_flag, depth_flag, classified)
+    classified = bool(labels & RISK_FLAG_LABELS) or RISK_CLEAR_LABEL in labels
+    return (filetype_flag, filedepth_flag, classified)
 
 
-def _validate_pair(filetype_flag: str | None, depth_flag: str | None) -> None:
+def _validate_pair(filetype_flag: str | None, filedepth_flag: str | None) -> None:
     """Fail loud (RiskMarkerInvariantError) on an out-of-vocabulary axis flag."""
     # A caller typo (e.g. "medium" for "med") gets a deterministic, domain-specific error
     # instead of a silent misroute (`_tier_from_pair`) or a raw KeyError (`restamp_risk_pair`).
@@ -850,23 +869,23 @@ def _validate_pair(filetype_flag: str | None, depth_flag: str | None) -> None:
         raise RiskMarkerInvariantError(
             f"invalid filetype_flag {filetype_flag!r}: expected None, 'low', or 'med'"
         )
-    if depth_flag not in (None, "high", "nope"):
+    if filedepth_flag not in (None, "high", "nope"):
         raise RiskMarkerInvariantError(
-            f"invalid depth_flag {depth_flag!r}: expected None, 'high', or 'nope'"
+            f"invalid filedepth_flag {filedepth_flag!r}: expected None, 'high', or 'nope'"
         )
 
 
-def _tier_from_pair(filetype_flag: str | None, depth_flag: str | None, marked: bool) -> str:
+def _tier_from_pair(filetype_flag: str | None, filedepth_flag: str | None, marked: bool) -> str:
     """Collapse a lane pair to the single-tier vocabulary (nope>high>med>low>clear)."""
     # An incompletely marked PR is `unknown` and HOLDS. Fails loud on an out-of-vocabulary
     # flag (e.g. a caller-supplied `classified_lane` typo like "medium") instead of letting it fall
     # through to `clear` and misroute the PR.
-    _validate_pair(filetype_flag, depth_flag)
+    _validate_pair(filetype_flag, filedepth_flag)
     if not marked:
         return "unknown"
-    if depth_flag == "nope":
+    if filedepth_flag == "nope":
         return "nope"
-    if depth_flag == "high":
+    if filedepth_flag == "high":
         return "high"
     if filetype_flag == "med":
         return "med"
@@ -886,46 +905,56 @@ def _classify_pr_pair(owner: str, repo: str, pr_number: int) -> tuple[str | None
     result = gh_cli.api_pr_files(owner, repo, pr_number)
     paths = [line.strip() for line in result.stdout.splitlines() if line.strip()]
     filetype = None
-    depth = None
+    filedepth = None
     for path in paths:
-        ft, dp = classify_paths.classify_file(path)
+        ft, fd = classify_paths.classify_file(path)
         filetype = classify_paths.riskiest(filetype, ft)
-        depth = classify_paths.riskiest(depth, dp)
-    return (filetype, depth)
+        filedepth = classify_paths.riskiest(filedepth, fd)
+    return (filetype, filedepth)
 
 
 def restamp_risk_pair(
     pr_number: int,
     labels: set[str],
     filetype_flag: str | None,
-    depth_flag: str | None,
+    filedepth_flag: str | None,
 ) -> list[str]:
     """Make the PR's risk labels mirror the classified lane — the 'restamp'."""
     # ``desired`` is the flat label for each fired axis: the filetype label if
-    # ``filetype_flag`` is set, plus the filedepth label if ``depth_flag`` is set. A `—/—`
-    # lane (both None) yields an EMPTY desired set — a clear lane stamps nothing and
-    # removes any stale risk/* label. ``managed`` is the flat set PLUS anything already on the
-    # PR that lives in the risk namespace, so managed-not-desired labels are removed — that is
-    # what retires a superseded vocabulary in passing, without a migration script.
+    # ``filetype_flag`` is set, plus the filedepth label if ``filedepth_flag`` is set. When
+    # NEITHER fires, ``desired`` is ``{RISK_CLEAR_LABEL}`` — the `—/—` cell stamps its own
+    # label rather than stamping nothing, so a later read can tell 'classified, nothing
+    # fired' from 'never classified'. ``managed`` is the flat set plus the clear label plus
+    # anything already on the PR that lives in the risk namespace, so managed-not-desired
+    # labels are removed — that is what retires a superseded vocabulary in passing,
+    # without a migration script.
     # Mutates ``labels`` in place and returns the actions taken.
-    _validate_pair(filetype_flag, depth_flag)
+    _validate_pair(filetype_flag, filedepth_flag)
     actions: list[str] = []
     desired: set[str] = set()
     if filetype_flag is not None:
         desired.add(FILETYPE_RISK_LABELS[filetype_flag])
-    if depth_flag is not None:
-        desired.add(DEPTH_RISK_LABELS[depth_flag])
-    managed = set(RISK_FLAG_LABELS) | {
+    if filedepth_flag is not None:
+        desired.add(FILEDEPTH_RISK_LABELS[filedepth_flag])
+    if not desired:
+        desired.add(RISK_CLEAR_LABEL)
+    managed = set(RISK_FLAG_LABELS) | {RISK_CLEAR_LABEL} | {
         label for label in labels if RISK_NAMESPACE_PATTERN.match(label)
     }
-    for label in sorted(desired - labels):
-        _edit_label(pr_number, add=label)
-        labels.add(label)
-        actions.append(f"add:{label}")
+    # REMOVE BEFORE ADD, and the order is load-bearing now that `risk/—` exists.
+    # Each `_edit_label` is its own API call, so the PR is observable between them.
+    # Adding first would put `risk/—` and a fired flag on the PR at the same time on a
+    # clear -> fired transition, and any evaluate landing in that window raises
+    # RiskMarkerInvariantError. Removing first leaves a window with NO risk label,
+    # which reads `unknown` and HOLDS. Both windows are wrong; only one is safe.
     for label in sorted((labels & managed) - desired):
         _edit_label(pr_number, remove=label)
         labels.discard(label)
         actions.append(f"remove:{label}")
+    for label in sorted(desired - labels):
+        _edit_label(pr_number, add=label)
+        labels.add(label)
+        actions.append(f"add:{label}")
     return actions
 
 
@@ -938,7 +967,7 @@ def evaluate_review_state(
     classified_lane: tuple[str | None, str | None] | None = None,
 ) -> dict[str, object]:
     """Return one machine-readable view of the PR's current review state."""
-    # ``classified_lane`` is an optional caller-supplied ``(filetype_flag, depth_flag)``
+    # ``classified_lane`` is an optional caller-supplied ``(filetype_flag, filedepth_flag)``
     # straight from the classifier — passed by the POST-classify evaluate calls so a `—/—`
     # lane is affirmatively clear even with zero labels. Without it the flags are read off
     # the labels, and an all-absent PR is ``unknown`` and HOLDS (never armed) — the safety
@@ -977,30 +1006,30 @@ def evaluate_review_state(
     draft = bool(pr.get("isDraft"))
     blocking_review = review_decision == "CHANGES_REQUESTED"
     _assert_risk_marker_exclusive(label_names)
-    # The lane is the flat (filetype, depth) pair. A caller-supplied lane (the classifier's
-    # fresh reading) is authoritative and always "marked" — so a `—/—` lane is affirmatively
-    # clear even with zero labels. Without one the flags are read off the labels, and an
-    # all-absent PR is NOT marked (unknown, holds — absence of a label is not the clear state).
+    # The lane is the flat (filetype, filedepth) pair. A caller-supplied lane (the classifier's
+    # fresh reading) is authoritative and always "marked". Without one the flags are read off
+    # the labels, where `risk/—` reads as affirmatively clear and NO risk label at all reads
+    # as unknown and HOLDS — absence of a label is not the clear state.
     if classified_lane is not None:
-        filetype_flag, depth_flag = classified_lane
+        filetype_flag, filedepth_flag = classified_lane
         pair_marked = True
     else:
-        filetype_flag, depth_flag, pair_marked = _risk_pair_for_pr(label_names)
-    risk_tier = _tier_from_pair(filetype_flag, depth_flag, pair_marked)
-    is_clear = pair_marked and filetype_flag is None and depth_flag is None
+        filetype_flag, filedepth_flag, pair_marked = _risk_pair_for_pr(label_names)
+    risk_tier = _tier_from_pair(filetype_flag, filedepth_flag, pair_marked)
+    is_clear = pair_marked and filetype_flag is None and filedepth_flag is None
     low_risk = risk_tier == "low"
     merge_blocked = draft or blocking_review or current_unresolved > 0
     # Lane completion — flags are transient routing state, consumed as the PR clears
     # its lane: an approving review with no current threads completes the lane, the engine
     # clears the fired flag (the projection removes the fired flat risk/* label), and the PR
-    # flows. depth:nope is NEVER auto-cleared — it always requires a human merge.
+    # flows. A `nope` filedepth is NEVER auto-cleared — it always requires a human merge.
     lane_complete = (
         review_decision == "APPROVED" and current_unresolved == 0 and not draft
     )
     flag_clearable = (
         pair_marked
-        and depth_flag != "nope"
-        and (filetype_flag is not None or depth_flag is not None)
+        and filedepth_flag != "nope"
+        and (filetype_flag is not None or filedepth_flag is not None)
     )
     # The `—/—` pair arms on open; a flagged lane arms once its review
     # completes (the flag is consumed). nope and any unmarked PR HOLD, always.
@@ -1032,7 +1061,7 @@ def evaluate_review_state(
         "risk_tier": risk_tier,
         "low_risk": low_risk,
         "is_clear": is_clear,
-        "pair": {"filetype": filetype_flag, "depth": depth_flag},
+        "pair": {"filetype": filetype_flag, "filedepth": filedepth_flag},
         "pair_marked": pair_marked,
         "lane_complete": lane_complete,
         "flag_clearable": flag_clearable,
@@ -1152,7 +1181,6 @@ def _resolve_outdated_resolvable_threads(
                 pr,
                 thread,
                 looker,
-                "advisory",
                 "Outdated: the commented lines no longer exist in the current diff; "
                 "bot-only thread cleared under the outdated-only engaged policy.",
                 apply=apply,
@@ -1162,7 +1190,7 @@ def _resolve_outdated_resolvable_threads(
             # it on stderr too (not only in the returned dict) so sync-driven failures are
             # observable in workflow logs, not just to the JSON report consumer.
             print(
-                f"Failed to attest-resolve outdated thread {thread.get('id')}: {exc}",
+                f"Failed to resolve outdated thread {thread.get('id')}: {exc}",
                 file=sys.stderr,
             )
             result = {
@@ -1208,8 +1236,6 @@ def _build_reconciliation_report(
         outdated_results = _resolve_outdated_resolvable_threads(pr, looker, apply=True)
         resolved_count = sum(1 for r in outdated_results if r.get("applied"))
         total_resolved_outdated_threads += resolved_count
-        if resolved_count:
-            pr = _fetch_pr(owner, repo, pr_number)
 
         try:
             state = evaluate_review_state(
@@ -1228,7 +1254,7 @@ def _build_reconciliation_report(
             # on the next clean sweep; a persistent one correctly holds the PR.
             restamp_actions: list[str] = []
             try:
-                ft_flag, dp_flag = _classify_pr_pair(owner, repo, pr_number)
+                ft_flag, fd_flag = _classify_pr_pair(owner, repo, pr_number)
             except Exception as exc:  # noqa: BLE001  # pylint: disable=broad-except
                 print(
                     f"::warning::risk restamp skipped for #{pr_number}: {exc}",
@@ -1243,7 +1269,7 @@ def _build_reconciliation_report(
                         for node in (pr.get("labels") or {}).get("nodes") or []
                         if node.get("name")
                     }
-                    restamp_actions = restamp_risk_pair(pr_number, label_set, ft_flag, dp_flag)
+                    restamp_actions = restamp_risk_pair(pr_number, label_set, ft_flag, fd_flag)
                     pr["labels"] = {"nodes": [{"name": name} for name in sorted(label_set)]}
                 # Re-evaluate with the classified lane when the diff was (re)stamped, OR when a
                 # lane-complete PR carries NO risk/* flag (first-pass risk_tier == "unknown")
@@ -1257,7 +1283,7 @@ def _build_reconciliation_report(
                         now=now,
                         grace_minutes=grace_minutes,
                         auto_resolve_reviewers=auto_resolve_reviewers,
-                        classified_lane=(ft_flag, dp_flag),
+                        classified_lane=(ft_flag, fd_flag),
                     )
         except RiskMarkerInvariantError as exc:
             # The risk-marker mutual-exclusion invariant tripped on THIS PR. Fail loud — record
@@ -1354,8 +1380,17 @@ def acknowledge_apply(args: argparse.Namespace) -> int:
         )
         return 0
 
-    pr = _fetch_pr(args.owner, args.repo, args.pr_number)
-    labels = {node["name"] for node in (pr.get("labels") or {}).get("nodes") or []}
+    # Label names are the only thing this path reads. `_fetch_pr` would answer that
+    # with `reviewThreads(first:100){comments(first:100)}` — up to 10k nodes, which
+    # GitHub's GraphQL limiter bills by node count, for a list `gh pr view` returns
+    # for one REST point.
+    pr = json.loads(
+        gh_cli.pr_view(
+            args.pr_number, owner=args.owner, repo=args.repo, json_fields="labels"
+        ).stdout
+        or "{}"
+    )
+    labels = {node["name"] for node in pr.get("labels") or [] if node.get("name")}
 
     if DEFAULT_PENDING_LABEL not in labels:
         _edit_label(args.pr_number, add=DEFAULT_PENDING_LABEL)
@@ -1396,8 +1431,6 @@ def sync_pr(args: argparse.Namespace) -> int:
         pr, getattr(args, "looker", None), apply=True
     )
     resolved_count = sum(1 for r in outdated_results if r.get("applied"))
-    if resolved_count:
-        pr = _fetch_pr(args.owner, args.repo, args.pr_number)
 
     state = evaluate_review_state(
         pr,
@@ -1413,7 +1446,7 @@ def sync_pr(args: argparse.Namespace) -> int:
     # Intentional: a transient failure self-heals on the next clean sweep; a persistent one holds.
     restamp_actions: list[str] = []
     try:
-        ft_flag, dp_flag = _classify_pr_pair(args.owner, args.repo, args.pr_number)
+        ft_flag, fd_flag = _classify_pr_pair(args.owner, args.repo, args.pr_number)
     except Exception as exc:  # noqa: BLE001  # pylint: disable=broad-except
         print(
             f"::warning::risk restamp skipped for #{args.pr_number} "
@@ -1429,7 +1462,7 @@ def sync_pr(args: argparse.Namespace) -> int:
                 for node in (pr.get("labels") or {}).get("nodes") or []
                 if node.get("name")
             }
-            restamp_actions = restamp_risk_pair(args.pr_number, label_set, ft_flag, dp_flag)
+            restamp_actions = restamp_risk_pair(args.pr_number, label_set, ft_flag, fd_flag)
             pr["labels"] = {"nodes": [{"name": name} for name in sorted(label_set)]}
         # Re-evaluate with the classified lane when the diff was (re)stamped, OR when a
         # lane-complete PR carries NO risk/* flag (first-pass risk_tier == "unknown") —
@@ -1442,7 +1475,7 @@ def sync_pr(args: argparse.Namespace) -> int:
                 pr,
                 grace_minutes=args.grace_minutes,
                 auto_resolve_reviewers=auto_resolve_reviewers,
-                classified_lane=(ft_flag, dp_flag),
+                classified_lane=(ft_flag, fd_flag),
             )
 
     clear_pending = (
@@ -1728,62 +1761,6 @@ def verify_claim(args: argparse.Namespace) -> int:
     _comment(args.pr_number, "\n".join(body_lines))
     print(f"Posted verify-claim divergence comment on PR #{args.pr_number}.")
     return 0
-
-
-def _thread_belongs_to_pr(thread: dict, owner: str, repo: str, pr_number: int) -> bool:
-    """Report whether a thread's comment links place it on owner/repo PR #pr_number."""
-    # `_fetch_thread` resolves a *global* node id, so a stray or hostile id could point at
-    # a thread on a different PR/repo; membership is verified before acting on it.
-    expected = f"/{owner}/{repo}/pull/{pr_number}".lower()
-    for comment in (thread.get("comments") or {}).get("nodes") or []:
-        if expected in (comment.get("url") or "").lower():
-            return True
-    return False
-
-
-def attest_resolve(args: argparse.Namespace) -> int:
-    """Disposition one explicit bot-authored thread (Layer B2). Dry-run unless --apply."""
-    # Bounded by design: targets a single PR + thread id, so it cannot walk the backlog
-    # or cascade. The deterministic walk + cascade-safety orchestration is Layer C.
-    pr = _fetch_pr(args.owner, args.repo, args.pr_number)
-    threads = (pr.get("reviewThreads") or {}).get("nodes") or []
-    thread = next((t for t in threads if t.get("id") == args.thread_id), None)
-    if thread is None:
-        # Beyond _fetch_pr's first-100 window. node(id:) is global, so confirm the
-        # fetched thread is actually on THIS PR before touching it.
-        fetched = _fetch_thread(args.thread_id)
-        if fetched is not None and _thread_belongs_to_pr(
-            fetched, args.owner, args.repo, args.pr_number
-        ):
-            thread = fetched
-    if thread is None:
-        print(
-            json.dumps(
-                {
-                    "thread_id": args.thread_id,
-                    "eligible": False,
-                    "applied": False,
-                    "reason": "thread not found on PR",
-                }
-            )
-        )
-        return 1
-    # Default the looker to the authenticated actor, so the recorded witness always names
-    # whoever actually ran the resolve (agent-driven or CI-bot), and the self-attestation
-    # actor-match check in attest_and_resolve is satisfied by construction.
-    looker = args.looker or _viewer_login()
-    result = attest_and_resolve(
-        pr,
-        thread,
-        looker,
-        args.decision,
-        args.rationale,
-        apply=args.apply,
-    )
-    print(json.dumps(result))
-    return 0
-
-
 def _positive_int(value: str) -> int:
     """Parse a strictly positive integer for an argparse option (e.g. --stale-days)."""
     # A non-positive staleness window misclassifies every PR (<=0 marks all stale,
@@ -1833,7 +1810,7 @@ def engage_outdated(args: argparse.Namespace) -> int:
                 f"--pr {only_pr} is {pr.get('state')!r}, not OPEN; engage-outdated "
                 "acts only on the open queue."
             )
-        # Same narrowest-safe slice as the on-push sync path (shared helper): attest-resolve
+        # Same narrowest-safe slice as the on-push sync path (shared helper): resolve
         # every outdated-resolvable thread, witnessed by the looker.
         for result in _resolve_outdated_resolvable_threads(pr, looker, apply=args.apply):
             considered.append({"pr": pr_number, **result})
@@ -1961,25 +1938,6 @@ def build_parser() -> argparse.ArgumentParser:
     verify.add_argument("--comment-body", default="")
 
 
-    attest = subparsers.add_parser("attest-resolve")
-    attest.add_argument("--owner", required=True)
-    attest.add_argument("--repo", required=True)
-    attest.add_argument("--pr-number", required=True, type=int)
-    attest.add_argument("--thread-id", required=True)
-    attest.add_argument(
-        "--looker",
-        default=None,
-        help="attesting identity recorded in the look marker; default: the authenticated "
-        "actor (whoever the token posts as), so the witness always names who actually ran it",
-    )
-    attest.add_argument("--decision", required=True, choices=sorted(ATTESTATION_DECISIONS))
-    attest.add_argument("--rationale", default="")
-    attest.add_argument(
-        "--apply",
-        action="store_true",
-        help="actually post the attestation and resolve (default: dry-run)",
-    )
-
     engage = subparsers.add_parser("engage-outdated")
     engage.add_argument("--owner", required=True)
     engage.add_argument("--repo", required=True)
@@ -2046,8 +2004,6 @@ def main() -> int:
         return reconcile_open_prs(args)
     if args.command == "verify-claim":
         return verify_claim(args)
-    if args.command == "attest-resolve":
-        return attest_resolve(args)
     if args.command == "engage-outdated":
         return engage_outdated(args)
     if args.command == "reconcile-witness":

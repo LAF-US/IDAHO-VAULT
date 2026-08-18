@@ -26,6 +26,6 @@ This week's @TheInlander cover story by @danielwinlander:
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/EQHQCoLWAAAi_l6.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EQHQCoLWAAAi_l6.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1225489331961372680)

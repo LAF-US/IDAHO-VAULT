@@ -1,4 +1,5 @@
 ---
+title: "RT @chaddcripe Somewhere in the chart feedback yesterday,..."
 date: 2020-04-03
 time: 03:47:42
 tweet_id: "1245920886298820608"

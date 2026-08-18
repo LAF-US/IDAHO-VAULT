@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports In a ruling issued Thursday, the high..."
 date: 2022-01-28
 time: 01:17:09
 tweet_id: "1486870933331582981"

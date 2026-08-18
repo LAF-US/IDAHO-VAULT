@@ -26,7 +26,7 @@ This document describes the multi-cloud backup infrastructure that serves as a p
 
 ### Installed Remotes
 
-```
+```text
 google-drive:  (Google Drive)
 dropbox:      (Dropbox)
 onedrive:    (Microsoft OneDrive - personal)
@@ -45,7 +45,7 @@ obsidian-publish: (Obsidian Publish - temporary, active during Pro trial)
 
 ### Bucket Structure
 
-```
+```text
 the-ledger-bucket:/
 ├── idaho-vault-dropbox/
 ├── idaho-vault_cloudbuild/
@@ -85,7 +85,7 @@ This creates a **redundancy mesh** — losing 2-3 providers doesn't result in da
 
 ### Workflow
 
-```
+```text
 Local Vault
     │
     ├──▶ google-drive: ──▶ Verification node
@@ -183,7 +183,7 @@ LEVELSET (session start)
     │
     └─▶ REPORT ──▶ Emit verified state ──▶ DISMISS
 
-```
+```text
 
 ### Distributed Verification Command Reference
 
@@ -221,7 +221,7 @@ rclone about gcs:
 
 Every backup session should produce a LEVELSET-style status:
 
-```
+```text
 SESSION: Distributed Backup
   PROVIDERS: [7 configured, X online]
   SYNC: [files pushed, timestamp]

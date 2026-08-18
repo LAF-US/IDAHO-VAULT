@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports \u201cThe job requires extraordinary hours to..."
 date: 2023-05-02
 time: 18:47:56
 tweet_id: "1653471401263890433"

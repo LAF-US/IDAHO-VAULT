@@ -1,4 +1,5 @@
 ---
+title: WAITING
 authority: LOGAN
 related:
   - CONSTITUTION
@@ -68,6 +69,6 @@ upon** it: attends, watches, serves — **now** — until the dyad resolves.
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

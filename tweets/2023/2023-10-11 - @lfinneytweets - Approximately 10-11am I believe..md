@@ -1,4 +1,5 @@
 ---
+title: "Approximately 10-11am I believe."
 date: 2023-10-11
 time: 02:02:48
 tweet_id: "1711925284444979396"
@@ -16,9 +17,9 @@ related:
 ---
 
 @dorothyew @KTVB Approximately 10-11am I believe.
-https://t.co/xfcTKz40MJ
+<https://t.co/xfcTKz40MJ>
 
 ## Links
-- https://science.nasa.gov/eclipses/future-eclipses/eclipse-2023/where-when/
+- <https://science.nasa.gov/eclipses/future-eclipses/eclipse-2023/where-when/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1711925284444979396)

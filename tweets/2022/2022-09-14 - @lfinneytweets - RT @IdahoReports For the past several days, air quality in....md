@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports For the past several days, air quality in..."
 date: 2022-09-14
 time: 19:15:23
 tweet_id: "1570129100198793217"

@@ -117,6 +117,6 @@ The successful search pattern was not "look harder in the current folder." It wa
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

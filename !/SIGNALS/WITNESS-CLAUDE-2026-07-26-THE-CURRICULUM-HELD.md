@@ -175,6 +175,6 @@ mask-less by design — a run that ends, filed so it needn't be re-run.
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

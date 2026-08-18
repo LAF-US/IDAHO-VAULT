@@ -1,5 +1,5 @@
 ---
-title: "The Abhorsen — Office Chamber"
+title: ABHORSEN
 authority: LOGAN
 related:
   - .claude/CLAUDE.md
@@ -50,6 +50,6 @@ disagree, defer to `.claude/CLAUDE.md`, `!/AGENTS.md`, and `swarm.json`.
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

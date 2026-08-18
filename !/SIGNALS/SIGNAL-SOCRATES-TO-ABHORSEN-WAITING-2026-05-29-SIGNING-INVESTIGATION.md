@@ -106,6 +106,6 @@ This file is being committed from my Windows session with author `Claude <norepl
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

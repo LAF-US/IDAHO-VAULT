@@ -17,7 +17,7 @@ Amid funding decreases as a result of lower enrollment, consultant Tracy Richter
 
 Some 35 people attended a public forum to tell Boise leaders what changes they’d like to see in the district’s buildings.
 
-![](https://www.idahoednews.org/wp-content/uploads/2026/04/timberlin3.jpg)
+![alt text needed](https://www.idahoednews.org/wp-content/uploads/2026/04/timberlin3.jpg)
 
 Timberline High School on Thursday, April 2, 2026 in Boise. (Kaeden Lincoln/IdahoEdNews)
 
@@ -43,6 +43,6 @@ Karl-Robinson used to work with the state legislature as an economist, where she
 
 The district will form a task force of stakeholders and, after the summer, deliver a report outlining a facility plan [like it did in 2016.](https://drive.google.com/file/d/1tcHnNIb6ZuOATUnAE0xxsAKk2ahoDtqv/view?usp=sharing)
 
-![](https://www.idahoednews.org/wp-content/uploads/2026/04/TIMBERLINE1.jpg)
+![alt text needed](https://www.idahoednews.org/wp-content/uploads/2026/04/TIMBERLINE1.jpg)
 
 From left: Kristi Randolph, April Truax and Kelci Karl-Robinson at the community forum on April 2, 2026 at Timberline High School. (Kaeden Lincoln/IdahoEdNews)

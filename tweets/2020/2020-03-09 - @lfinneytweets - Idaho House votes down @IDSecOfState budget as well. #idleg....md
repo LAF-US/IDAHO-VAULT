@@ -1,4 +1,5 @@
 ---
+title: "Idaho House votes down @IDSecOfState budget as well. #idleg..."
 date: 2020-03-09
 time: 17:45:15
 tweet_id: "1237071967318151169"
@@ -20,9 +21,9 @@ related:
   - idpol
 ---
 
-Idaho House votes down @IDSecOfState budget as well. #idleg #idpol https://t.co/7tXysQXsZV
+Idaho House votes down @IDSecOfState budget as well. #idleg #idpol <https://t.co/7tXysQXsZV>
 
 ## Media
-- ![](https://pbs.twimg.com/media/ESr2ZBXWoAIrhS5.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/ESr2ZBXWoAIrhS5.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1237071967318151169)

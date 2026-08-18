@@ -584,6 +584,6 @@ working loop > theoretical architecture
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

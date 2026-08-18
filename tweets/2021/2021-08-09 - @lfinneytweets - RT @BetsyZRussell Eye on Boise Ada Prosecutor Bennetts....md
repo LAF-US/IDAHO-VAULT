@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Ada Prosecutor Bennetts..."
 date: 2021-08-09
 time: 23:40:05
 tweet_id: "1424878178770722823"

@@ -188,6 +188,6 @@ of the raw witness. And it sharpens the witness's own caution one turn: the text
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

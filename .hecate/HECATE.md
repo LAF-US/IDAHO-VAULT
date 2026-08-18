@@ -1,4 +1,5 @@
 ---
+title: HECATE
 authority: LOGAN
 related:
 - HECATE

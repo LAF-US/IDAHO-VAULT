@@ -20,7 +20,7 @@ Welcome to The Obsidian Observer, a hub for all Obsidian enthusiasts. Whether yo
 
 ## The Breadcrumbs plugin solves my fundamental issue with digital zettelkasten using a plaintext outline
 
-![](https://miro.medium.com/v2/resize:fit:1400/format:webp/0*YkoYKBulXEWr_BiL)
+![alt text needed](https://miro.medium.com/v2/resize:fit:1400/format:webp/0*YkoYKBulXEWr_BiL)
 
 Photo by Rick Mason on Unsplash
 

@@ -20,6 +20,6 @@ RT @uiargonaut: Think you know your Argonaut history? Go to our Instagram Story 
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/DpMa5nLVAAEan_E.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/DpMa5nLVAAEan_E.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1050253401542483968)

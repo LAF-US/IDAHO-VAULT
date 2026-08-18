@@ -1,6 +1,7 @@
 ---
+title: CONTEXT-PASSOVER-COPILOT-2026-03-16
 type: context-passover
-from: PERMANENT: AUTHORITY: CODE (Claude Code)
+from: "PERMANENT: AUTHORITY: CODE (Claude Code)"
 to: GitHub Copilot (ADMIN GitHub)
 date: 2026-03-16
 visibility: public
@@ -94,7 +95,7 @@ Exists on mothership. Contains full operational instructions for Claude Code ses
 
 ### Priority 1: Merge mothership to main
 
-```
+```text
 Branch: claude/levelset-multi-conversation-zWxJc
 Target: main
 Method: PR or direct merge — Logan's call
@@ -106,7 +107,7 @@ This is the single most important action. All governance work lives on this bran
 
 Delete these 8 branches after confirming no unmerged unique work:
 
-```
+```text
 claude/deploy-vault-automation-Qq5iK
 claude/idaho-legislature-scraper-RI6Ku
 claude/levelset-closure-notification-ss7wR

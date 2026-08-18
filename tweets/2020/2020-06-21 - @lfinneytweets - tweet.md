@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2020-06-21
 time: 02:35:40
 tweet_id: "1274531400897576960"
@@ -14,10 +15,10 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/ETDm4YCEgN
+<https://t.co/ETDm4YCEgN>
 
 ## Links
-- https://vm.tiktok.com/JJGVtxL/
+- <https://vm.tiktok.com/JJGVtxL/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

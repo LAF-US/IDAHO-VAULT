@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Today is #Juneteenth, a celebration..."
 date: 2020-06-20
 time: 01:44:18
 tweet_id: "1274156087856386048"

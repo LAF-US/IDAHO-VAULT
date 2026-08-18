@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports TYPO The statewide total is 1,074 deaths."
 date: 2020-12-09
 time: 04:30:02
 tweet_id: "1336528506893656066"

@@ -1,4 +1,5 @@
 ---
+title: "Snake River quagga mussel update via @Idahoag Copper levels..."
 date: 2023-10-17
 time: 17:03:40
 tweet_id: "1714326320870801639"

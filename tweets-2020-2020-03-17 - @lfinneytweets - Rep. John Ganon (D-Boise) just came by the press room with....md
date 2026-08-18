@@ -22,8 +22,8 @@ Rep. John Ganon (D-Boise) just came by the press room with draft legislation tha
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/ETVZGauWoAQuFnN.jpg)
-- ![](https://pbs.twimg.com/media/ETVZHGgWAAILmfn.jpg)
-- ![](https://pbs.twimg.com/media/ETVZH3cXsAgSo-G.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/ETVZGauWoAQuFnN.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/ETVZHGgWAAILmfn.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/ETVZH3cXsAgSo-G.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1239995276862971905)

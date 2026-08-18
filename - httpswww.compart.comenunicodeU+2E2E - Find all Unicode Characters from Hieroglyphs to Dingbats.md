@@ -21,7 +21,7 @@ created: 2026-04-13
 | Bidirectional Class: | [Other Neutral](https://www.compart.com/en/unicode/bidiclass/ON) (ON) [^1] |
 | Combining Class: | [Not Reordered](https://www.compart.com/en/unicode/combining/0) (0) [^1] |
 | Character is Mirrored: | No [^1] |
-| HTML Entity: |
+| HTML Entity: | |
 | UTF-8 Encoding: | `0xE2 0xB8 0xAE` |
 | UTF-16 Encoding: | `0x2E2E` |
 | UTF-32 Encoding: | `0x00002E2E` |

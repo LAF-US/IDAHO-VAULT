@@ -40,6 +40,23 @@ jobs:
 
   sweep-review-threads:
     if: github.event_name == 'pull_request_target'
+    # One run per PR, newest wins -- same reasoning as sync-review-state in
+    # review-response.yml. `synchronize` fires on every push, so a branch pushed
+    # three times in a minute paid for three full `_fetch_pr` graph fetches, of
+    # which only the last described the branch as it actually stood.
+    #
+    # Cancelling is safe: `_resolve_outdated_resolvable_threads` walks whatever
+    # is unresolved-and-outdated right now and skips anything already handled,
+    # so a partially-completed sweep is not a corrupt one -- the next run picks
+    # up the remainder. Arming auto-merge is likewise a function of current
+    # state, not of the event that triggered it.
+    # `github.event_name` is in the key deliberately: this workflow also fires on
+    # `issue_comment`, where `pull_request.number` is empty and `issue.number`
+    # would be the SAME number for a PR comment. Without the namespace, a comment
+    # event could contend with -- and cancel -- a live sweep for that PR.
+    concurrency:
+      group: sweep-review-threads-${{ github.event_name }}-${{ github.event.pull_request.number }}
+      cancel-in-progress: true
     runs-on: ubuntu-latest
     permissions:
       # contents: write is required to enable merge-queue auto-merge
