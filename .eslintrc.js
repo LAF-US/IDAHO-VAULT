@@ -1,7 +1,8 @@
+/* global module */
+
 // This is a CommonJS configuration file. Its own `env.node` declaration
-// supplies Node globals, and Codacy's current ESLint environment does too.
-// An explicit `/* global module */` directive therefore redeclares the built-in
-// `module` global and is intentionally absent.
+// supplies Node globals to linted repository files. The declaration above
+// makes the configuration file itself analyzable by external ESLint integrations.
 
 // ESLint legacy config — NOT MERELY INERT. IT BREAKS MODERN ESLINT RUNS.
 //
@@ -87,15 +88,17 @@ module.exports = {
   env: { node: true, es2024: true },
   parserOptions: { ecmaVersion: 2024, sourceType: "script" },
   extends: ["eslint:recommended"],
-  ignorePatterns: ["THE-GEMSTONE/", "node_modules/", ".venv/", ".uv-cache/"],
+  ignorePatterns: [
+    "THE-GEMSTONE/",
+    "node_modules/",
+    ".venv/",
+    ".uv-cache/",
+    ".obsidian/plugins/",
+    ".codex/skills/",
+    ".eslintrc.js",
+    "eslint.config.js",
+  ],
   overrides: [
-    {
-      // Electron renderer: browser globals ON TOP of node. Scoped here rather
-      // than set at the root, so a stray `window` in a non-plugin script is
-      // still reported. Mirrors the flat config's per-path globals block.
-      files: [".obsidian/plugins/**/*.js"],
-      env: { browser: true },
-    },
     {
       // Mirrors the flat config's ESM block; see eslint.config.js.
       // Recursive, matching the flat config's glob exactly. The two select the

@@ -1,7 +1,8 @@
+/* global module, require */
+
 // This is a CommonJS configuration file. The language options below supply
-// Node globals locally, and Codacy's current ESLint environment does too.
-// Explicit `/* global module, require */` declarations redeclare built-ins and
-// are intentionally absent.
+// Node globals to linted repository files. The declaration above makes the
+// configuration file itself analyzable by external ESLint integrations.
 
 // ESLint flat config — Codacy toggle. The only config format ESLint 10 reads.
 //
@@ -16,9 +17,9 @@
 //
 // Flat config has no `env`, so globals must be supplied explicitly. Without
 // the `globals` block below, 28 of 31 findings were `no-undef` on console,
-// process, document and window — the config's fault, not the code's. Obsidian
-// plugins get browser globals on top of node: they run in Electron's renderer
-// and legitimately reach both. languageOptions merge rather than replace.
+// process, document and window — the config's fault, not the code's. Bundled
+// Obsidian plugins are third-party artifacts and are excluded from this baseline.
+// languageOptions merge rather than replace.
 //
 // NO file fails to parse. Measured at head: `eslint .` reports 0 parse errors
 // across the tree.
@@ -47,6 +48,10 @@ module.exports = [
       "**/node_modules/**",
       ".venv/**",
       ".uv-cache/**",
+      ".obsidian/plugins/**",
+      ".codex/skills/**",
+      ".eslintrc.js",
+      "eslint.config.js",
     ],
   },
 
@@ -61,12 +66,6 @@ module.exports = [
     },
   },
 
-  {
-    files: [".obsidian/plugins/**/*.js"],
-    languageOptions: {
-      globals: { ...globals.browser },
-    },
-  },
 
   {
     // ESM by design — the file's own header says the init script writes a
