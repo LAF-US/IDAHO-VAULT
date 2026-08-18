@@ -303,7 +303,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             owner="LAF-US",
             repo="IDAHO-VAULT",
             pr_number=41,
-            comment_author="some-review-bot[bot]",
+            comment_author="fixture-reviewer",
             author_association="NONE",
             comment_body="Insufficient balance to process this code review.",
         )
@@ -324,7 +324,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             owner="LAF-US",
             repo="IDAHO-VAULT",
             pr_number=41,
-            comment_author="codereviewbot-ai[bot]",
+            comment_author="fixture-untrusted",
             author_association="NONE",
             comment_body="@copilot apply changes",
         )
