@@ -1,3 +1,6 @@
+---
+title: "Garth Nix Old Kingdom Video Notes"
+---
 Starting video analysis...
 Submitting video analysis task...
 Task submitted (ID: video-analysis-f8c610eb-e260-4cb2-9604-99098f3dbb4d)

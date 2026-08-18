@@ -12,7 +12,7 @@ owner: Logan Finney
 ## 5W Summary
 
 | | |
-|---|---|
+| --- | --- |
 | **Who** | GitHub Actions runners on `laf-us/idaho-vault`; Claude Code (this session, scheduled). No human-caused breakage. |
 | **What** | 6 `failure`-conclusion runs (1 workflow, already fixed upstream before this sweep started) + 1 batch of ~13 `action_required` runs (1 push, routine approval gate) + 3 `cancelled` (benign concurrency supersede). 0 `startup_failure`, 0 `timed_out`. Every previously-chronic item in this thread (Codacy Security Scan, Codacy Coverage Reporter, Sync Plugin Registry/Sync Agent Discovery Index self-heal) confirmed resolved and holding — not just quiet today, structurally fixed. |
 | **When** | 2026-07-29T12:10Z – 2026-07-30T12:24Z |

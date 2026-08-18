@@ -1,28 +1,25 @@
-<%* const d = moment(tp.file.title, "YYYY-MM-DD") -%>
-
 ---
-title: <% d.format("YYYY-MM-DD") %>
+title: <% moment(tp.file.title, "YYYY-MM-DD").format("YYYY-MM-DD") %>
 aliases:
-  - <% d.format("YYYY-MM-DD") %>
-  - <% d.format("MMMM D, YYYY") %>
-  - <% d.format("MMMM Do, YYYY") %>
-  - <% d.format("D MMMM YYYY") %>
-  - <% d.format("dddd, MMMM D, YYYY") %>
+  - <% moment(tp.file.title, "YYYY-MM-DD").format("YYYY-MM-DD") %>
+  - <% moment(tp.file.title, "YYYY-MM-DD").format("MMMM D, YYYY") %>
+  - <% moment(tp.file.title, "YYYY-MM-DD").format("MMMM Do, YYYY") %>
+  - <% moment(tp.file.title, "YYYY-MM-DD").format("D MMMM YYYY") %>
+  - <% moment(tp.file.title, "YYYY-MM-DD").format("dddd, MMMM D, YYYY") %>
 period: day
-linter-yaml-title-alias: <% d.format("YYYY-MM-DD") %>
-yesterday: <% d.clone().subtract(1,"d").format("YYYY-MM-DD") %>
-tomorrow: <% d.clone().add(1,"d").format("YYYY-MM-DD") %>
+linter-yaml-title-alias: <% moment(tp.file.title, "YYYY-MM-DD").format("YYYY-MM-DD") %>
+yesterday: <% moment(tp.file.title, "YYYY-MM-DD").subtract(1,"d").format("YYYY-MM-DD") %>
+tomorrow: <% moment(tp.file.title, "YYYY-MM-DD").add(1,"d").format("YYYY-MM-DD") %>
 weekday:
-  - <% d.format("dddd") %>
+  - <% moment(tp.file.title, "YYYY-MM-DD").format("dddd") %>
 cssclasses:
-  - roygbiv-<% d.format("ddd").toLowerCase() %>
+  - roygbiv-<% moment(tp.file.title, "YYYY-MM-DD").format("ddd").toLowerCase() %>
 tags:
   - today
-  - <% d.format("YYYY/MM/DD") %>
+  - <% moment(tp.file.title, "YYYY-MM-DD").format("YYYY/MM/DD") %>
   - dailynote
-date created: <% d.format("dddd, MMMM Do YYYY, h:mm:ss a") %>
-date modified: <% d.format("dddd, MMMM Do YYYY, h:mm:ss a") %>
-
+date created: <% moment(tp.file.title, "YYYY-MM-DD").format("dddd, MMMM Do YYYY, h:mm:ss a") %>
+date modified: <% moment(tp.file.title, "YYYY-MM-DD").format("dddd, MMMM Do YYYY, h:mm:ss a") %>
 ---
 
 ## Daily Queue

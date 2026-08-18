@@ -1,6 +1,7 @@
 ---
+title: CONTEXT-PASSOVER-COPILOT-2026-03-16
 type: context-passover
-from: PERMANENT: AUTHORITY: CODE (Claude Code)
+from: "PERMANENT: AUTHORITY: CODE (Claude Code)"
 to: GitHub Copilot (ADMIN GitHub)
 date: 2026-03-16
 visibility: public

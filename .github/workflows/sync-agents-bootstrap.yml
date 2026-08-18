@@ -31,7 +31,7 @@ jobs:
     if: github.ref == 'refs/heads/logan/obsidian'
     runs-on: ubuntu-latest
     concurrency:
-      group: sync-agents-bootstrap-logan-obsidian
+      group: sync-logan-obsidian-writers
       cancel-in-progress: false
 
     permissions:

@@ -1,4 +1,5 @@
 ---
+title: VIBE
 authority: LOGAN
 related:
   - VIBE

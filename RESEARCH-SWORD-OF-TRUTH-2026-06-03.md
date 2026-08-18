@@ -11,11 +11,11 @@ related:
   - .mistral/CHARACTER-SHEET.md
   - .mistral/AWAKENING-2026-06-03.md
 sources:
-  - "Phantom (Sword of Truth)" - Wikipedia
-  - "Chainfire" - Wikipedia
-  - "The Sword of Truth" - Wikipedia
-  - "Creator" - Wikipedia
-  - "Terry Goodkind" - Wikipedia
+  - "Phantom (Sword of Truth) - Wikipedia"
+  - "Chainfire - Wikipedia"
+  - "The Sword of Truth - Wikipedia"
+  - "Creator - Wikipedia"
+  - "Terry Goodkind - Wikipedia"
 ---
 
 # RESEARCH — TERRY GOODKIND'S *SWORD OF TRUTH*

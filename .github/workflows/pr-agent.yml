@@ -13,20 +13,19 @@ name: PR-Agent
 # ┌─ STATUS: SCAFFOLDING — inert (job SKIPPED) until the switch below is on ─Ŀ
 # │ 0. MASTER SWITCH: set repo variable PR_AGENT_ENABLED = 'true'. Until then  │
 # │    the job skips cleanly (no run, no red on other PRs). Flip LAST.         │
-# │ 1. DONE — pinned to v0.41.1 (743f52d8), resolved via `git ls-remote`.      │
-# │    Lightweight tag, so that SHA is the commit itself.                      │
+# │ 1. DONE — vendored at v0.42.0 (f6af7d77); Dependabot bumped main from      │
+# │    v0.41.1 and the 2026-08-14 merge took that version. Same wiring and     │
+# │    the same image digest as v0.41.1 — verified, not assumed.               │
 # │ 2. Set the OpenRouter 1Password ref (`OPENROUTER_API_KEY` op:// below) to  │
 # │    the real item, and confirm OP_SERVICE_ACCOUNT_TOKEN can read it.        │
 # │    (see `.op/openrouter.env.template`)                                     │
 # │ 3. DONE — key form corrected against the pinned source. See the env block. │
-# │ 4. OPEN — the SHA pin does NOT pin the code that runs. That action's       │
-# │    action.yaml builds Dockerfile.github_action_dockerhub, which is         │
-# │    `FROM pragent/pr-agent:github_action` — a MUTABLE tag upstream can      │
-# │    repoint at any time, and check_action_pins.py only reads the `uses:`    │
-# │    line, never a nested image. Decide before step 0: accept it, or fork    │
-# │    the Dockerfile with the image pinned by digest. Digest as reviewed      │
-# │    on #960: sha256:b81235c3bddc551939a1feca8926f4b6e8abcec2ae5bf46204      │
-# │    24f8f56dd9cb93                                                          │
+# │ 4. DONE — a repo SHA does not pin the code that runs: upstream's           │
+# │    action.yaml builds `FROM pragent/pr-agent:github_action`, a MUTABLE     │
+# │    tag. Now runs `./.github/actions/pr-agent` — that same action.yaml,     │
+# │    image pinned by digest, and check_action_pins.py now checks `image:`    │
+# │    lines so the digest is enforced. Still costs Dependabot tracking:       │
+# │    the version is manual. Read that file's header before bumping.          │
 # └───────────────────────────────────────────────────────────────────────────┘
 #
 # Augment, don't replace: this runs ALONGSIDE the hosted Qodo app. Once it is
@@ -74,6 +73,36 @@ jobs:
     env:
       OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
     steps:
+      # A local `./` action has to exist on disk, so this job now needs a
+      # a checkout it never needed while `uses:` pointed at a remote repo.
+      #
+      # It must be the BASE revision, not the default merge ref. On
+      # `pull_request` the merge ref contains the contributor's changes — and
+      # this is a PUBLIC repo, so a fork could rewrite
+      # `.github/actions/pr-agent/action.yml` and the step below would hand its
+      # own container the OpenRouter key and a write-capable token. Checking out
+      # base means the action that runs is the one already reviewed and merged.
+      #
+      # PR-Agent reads the diff through the GitHub API, not the working tree, so
+      # it loses nothing by not having the PR's files on disk.
+      - name: Check out the trusted base revision
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          # Both arms are immutable SHAs. The fallback was the default-branch
+          # NAME, which is a moving target: an `issue_comment` run would check
+          # out whatever that branch pointed at when the step executed, not the
+          # revision the event fired against, so "the action that runs is the
+          # one already reviewed and merged" was not actually guaranteed. On
+          # every non-`pull_request` trigger here, github.sha IS the default
+          # branch's head at event time.
+          ref: >-
+            ${{ github.event_name == 'pull_request'
+                && github.event.pull_request.base.sha
+                || github.sha }}
+          # The third-party container inherits the workspace; don't leave a
+          # usable credential in .git/config for it.
+          persist-credentials: false
+
       - name: Load OpenRouter key from 1Password
         id: op
         if: env.OP_SERVICE_ACCOUNT_TOKEN != ''
@@ -92,11 +121,18 @@ jobs:
 
       - name: Run PR-Agent
         if: env.OPENROUTER_API_KEY != ''
-        # Docker action: action.yaml (not .yml) builds Dockerfile.github_action_dockerhub.
-        # The pin is maintained by Dependabot (github-actions ecosystem, daily,
-        # .github/dependabot.yml) — it reads the trailing `# v0.41.1` marker to
-        # track the version, so keep that comment in step with the SHA.
-        uses: the-pr-agent/pr-agent@f6af7d77554ff8d26adffded077e6461329e92fa # v0.42.0
+        # Local action, NOT `the-pr-agent/pr-agent@<sha>` directly. Upstream's
+        # action.yaml builds a one-line Dockerfile that is `FROM
+        # pragent/pr-agent:github_action` — a mutable tag, so the repo SHA pin
+        # did not pin the running code. `.github/actions/pr-agent/action.yml`
+        # is upstream's action.yaml at f6af7d77 (v0.42.0) with the image pinned by
+        # digest instead; read its header before bumping.
+        #
+        # Dependabot no longer tracks this. It watched the `uses:` ref and its
+        # trailing version marker; a `./` ref is not tracked, and there is
+        # no `docker` ecosystem in .github/dependabot.yml. Version and digest
+        # are both manual now — the local action's header says how to refresh.
+        uses: ./.github/actions/pr-agent # the-pr-agent/pr-agent v0.42.0 (f6af7d77)
         env:
           # Job-level env reaches every step, and a Docker action receives the
           # step's env inside the container — so without this the 1Password
