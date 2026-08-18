@@ -1,6 +1,8 @@
 ---
 title: '"consistent with" ≠ evidence'
-updated: 2026-06-22
+aliases:
+- '"consistent with" ≠ evidence.md'
+updated: 2026-08-18
 status: active
 authority: LOGAN
 related:
