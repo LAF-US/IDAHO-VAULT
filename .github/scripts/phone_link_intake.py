@@ -116,8 +116,8 @@ def main(argv: list[str] | None = None) -> int:
     try:
         source = resolve_phone_link_source(args.source)
         vault_root = get_vault_root(args.vault_root)
-    except RuntimeError:
-        print("Configuration error")
+    except RuntimeError as exc:
+        print(f"Configuration error: {exc}")
         return 1
     files = sorted(f for f in source.iterdir() if f.is_file())
 
@@ -137,20 +137,20 @@ def main(argv: list[str] | None = None) -> int:
     for filepath in files:
         dest_file, disposition = resolve_destination(filepath, vault_root)
         if dest_file is None:
-            print("  SKIP (duplicate)")
+            print(f"  SKIP (duplicate): {filepath.name}")
             skipped_dup.append(filepath.name)
             continue
 
         action = "COPY" if args.copy else "MOVE"
         if args.dry_run:
-            print(f"  {action}")
+            print(f"  {action}: {filepath} -> {dest_file}")
             continue
 
         if args.copy:
             shutil.copy2(filepath, dest_file)
         else:
             shutil.move(str(filepath), str(dest_file))
-        print(f"  {action}D")
+        print(f"  {action}D: {filepath.name} -> {dest_file}")
         moved_paths.append(dest_file)
 
     print()
