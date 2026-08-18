@@ -78,7 +78,7 @@ CROSSFRAMING produces the delta analysis.
 
 ## About This Stub
 
-This is a seed document replacing prior content that did not meet governance standards. The prior doctrine described enumeration mechanisms but lacked the authority framework required by [[CONSTITUTION]]. This stub preserves the CHARTER's Enumeration Clause reference while the mechanism is reconsidered. Logan authorized this replacement via PR #820.
+This is a seed document replacing prior content that did not meet governance standards. The prior doctrine described enumeration mechanisms but lacked the authority framework required by [[CONSTITUTION]]. This stub preserves the CHARTER's Enumeration Clause reference while the mechanism is reconsidered. LOGAN authorized this replacement via PR #820.
 
 ## Seed
 
