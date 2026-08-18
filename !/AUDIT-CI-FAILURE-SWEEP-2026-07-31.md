@@ -42,9 +42,7 @@ Nothing blocks `main` or a deploy. **PR #873 itself remains blocked** — its ow
 - **PR #470** (oldest open PR — opened 2026-06-04, 9,350 additions / 95 files / 83 commits, `mergeable_state: dirty`) has 45 review threads total but only 4 genuinely still open (not outdated/resolved). Two are trivial CodeRabbit lint suggestions. The other two, both in `!/GRIMOIRE_caution_contains-false-doctrines/`, reveal a gap none of the three prior bot passes (2026-06-04/08/18) caught: the literal `<<<<<<<`/`=======`/`>>>>>>>` marker *strings* they flagged are gone from the current head (confirmed via direct `git show` + grep — zero matches in either file), but the underlying merge was never actually resolved. `TRIUNE-TRIPTYCH-TRIUMVIRATE.md` still has an unclosed code fence with two competing "TRIUMVIRATE — Unity of Power" sections concatenated verbatim (different member titles, one carries a "Finalized 2026-04-06" line the other doesn't). The visible symptom the bots keyed on is gone; the actual duplicate/malformed content it was a symptom of is not, and choosing which version survives is a doctrine call inside a folder scoped `caution_contains-false-doctrines` — flagged on the PR (comment, this session) rather than resolved unilaterally, and not pushed to the PR's own branch per this session's own branch-scope restriction.
 
 ---
-Cross-posted: GitHub issue #822 (comment), Linear LAF-72 (comment), Slack #all-logan-finney, Discord #ledger (via Zapier), PR #470 (review comment, oldest-open-PR pass).
-
-Claude-Session: <https://claude.ai/code/session_01L3qbUh4tT6FwB2Xd973tty>
+Cross-posted to the related repository records and internal coordination channels.
 
 ## DOCUMENT METADATA
 
