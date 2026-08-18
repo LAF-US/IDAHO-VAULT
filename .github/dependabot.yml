@@ -1,9 +1,31 @@
-  version: 2
-  updates:
+version: 2
+updates:
+  # Python version updates are intentionally omitted. pyproject.toml declares
+  # direct requirements, uv.lock is the canonical resolved dependency graph, and
+  # requirements.txt is a compatibility export generated from uv.lock. The
+  # sync-dependencies workflow refreshes both artifacts with `uv lock --upgrade`
+  # and opens a review PR; leaf-by-leaf updates can break resolved CrewAI,
+  # click, mcp, and OpenTelemetry dependency families.
+
+  # Dependabot's cron parser supports the Fugit modulo extension: thu%2 means
+  # every second Thursday. This is a proposal-only lane; normal review and branch
+  # protection remain the authorization boundary.
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "weekly"
+      interval: "cron"
+      cronjob: "0 12 * * thu%2"
+      timezone: "America/Denver"
     open-pull-requests-limit: 5
     allow:
       - dependency-type: "all"
+
+  # Follow the upstream SRD module biweekly. This updates only the pinned
+  # submodule commit; the upstream module retains its own CC BY 4.0 attribution.
+  - package-ecosystem: "gitsubmodule"
+    directory: "/"
+    schedule:
+      interval: "cron"
+      cronjob: "0 12 * * thu%2"
+      timezone: "America/Denver"
+    open-pull-requests-limit: 1

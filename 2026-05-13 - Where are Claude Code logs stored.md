@@ -5,7 +5,7 @@ author:
   - "[[matt1398]]"
 published: 2026-05-13
 created: 2026-06-11
-description: "Claude Code writes JSONL session logs to ~/.claude/ — the hidden folder inside your home directory. The path is the same on macOS and Linux; on Windows it's %USERPROFILE%\.claude\."
+description: 'Claude Code writes JSONL session logs to ~/.claude/ — the hidden folder inside your home directory. The path is the same on macOS and Linux; on Windows it''s %USERPROFILE%\.claude\.'
 ---
 Claude Code writes JSONL session logs to ~/.claude/ — the hidden folder inside your home directory. The path is the same on macOS and Linux; on Windows it's %USERPROFILE%\\.claude\\.
 
