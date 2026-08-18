@@ -180,7 +180,7 @@ class PhoneLinkContractTest(unittest.TestCase):
             self.assertEqual(moved, 1)
             self.assertFalse(incoming.exists())
             self.assertEqual((vault / "sample.txt").read_text(encoding="utf-8"), "phone link sample")
-            self.assertIn("MOVED (direct): sample.txt", log.read_text(encoding="utf-8"))
+            self.assertIn("MOVED (direct)", log.read_text(encoding="utf-8"))
 
     def test_python_watcher_skips_identical_duplicate_without_deleting_source(self) -> None:
         module = _load_module(
@@ -202,7 +202,7 @@ class PhoneLinkContractTest(unittest.TestCase):
             self.assertEqual(moved, 0)
             self.assertTrue((source / "sample.txt").exists())
             self.assertEqual((vault / "sample.txt").read_text(encoding="utf-8"), "same")
-            self.assertIn("SKIP (duplicate): sample.txt", log.read_text(encoding="utf-8"))
+            self.assertIn("SKIP (duplicate)", log.read_text(encoding="utf-8"))
 
     def test_python_watcher_suffixes_name_collision(self) -> None:
         module = _load_module(
@@ -226,7 +226,7 @@ class PhoneLinkContractTest(unittest.TestCase):
             collisions = sorted(vault.glob("sample-*.txt"))
             self.assertEqual(len(collisions), 1)
             self.assertEqual(collisions[0].read_text(encoding="utf-8"), "incoming")
-            self.assertIn("MOVED (collision): sample.txt", log.read_text(encoding="utf-8"))
+            self.assertIn("MOVED (collision)", log.read_text(encoding="utf-8"))
 
     def test_python_watcher_creates_default_source_only_when_omitted(self) -> None:
         module = _load_module(

@@ -154,8 +154,8 @@ def write_log(log_path: Path, message: str) -> None:
         log_path.parent.mkdir(parents=True, exist_ok=True)
         with log_path.open("a", encoding="utf-8") as handle:
             handle.write(line + "\n")
-    except OSError as exc:
-        print(f"[phone-link-sweep] log write failed ({exc}): {line}", file=sys.stderr)
+    except OSError:
+        print("[phone-link-sweep] log write failed", file=sys.stderr)
 
 
 def move_one(source: Path, target_dir: Path, log_path: Path) -> bool:
@@ -163,20 +163,20 @@ def move_one(source: Path, target_dir: Path, log_path: Path) -> bool:
         return False
 
     if not is_unlocked(source):
-        write_log(log_path, f"SKIP (locked): {source.name}")
+        write_log(log_path, "SKIP (locked)")
         return False
 
     try:
         destination, disposition = resolve_destination(source, target_dir)
         if destination is None:
-            write_log(log_path, f"SKIP (duplicate): {source.name}")
+            write_log(log_path, "SKIP (duplicate)")
             return False
         destination.parent.mkdir(parents=True, exist_ok=True)
         shutil.move(str(source), str(destination))
-    except OSError as exc:
-        write_log(log_path, f"SKIP (move failed: {exc}): {source.name}")
+    except OSError:
+        write_log(log_path, "SKIP (move failed)")
         return False
-    write_log(log_path, f"MOVED ({disposition}): {source.name} -> {destination}")
+    write_log(log_path, f"MOVED ({disposition})")
     return True
 
 
@@ -219,11 +219,11 @@ def watch(source_dir: Path, target_dir: Path, log_path: Path, poll_seconds: floa
     while True:
         try:
             sweep_once(source_dir, target_dir, log_path)
-        except OSError as exc:
+        except OSError:
             # source_dir itself can become temporarily unreachable (drive
             # unplugged, folder renamed); log and keep polling instead of
             # letting one bad cycle kill the watcher permanently.
-            write_log(log_path, f"SWEEP FAILED (will retry): {exc}")
+            write_log(log_path, "SWEEP FAILED (will retry)")
         time.sleep(poll_seconds)
 
 
@@ -239,7 +239,7 @@ def main(argv: list[str] | None = None) -> int:
         parser.error("--poll-seconds must be a finite value greater than 0")
 
     try:
-        target_dir, root_source = resolve_vault_root(args.vault_root)
+        target_dir, _ = resolve_vault_root(args.vault_root)
         if args.source is None:
             args.source = DEFAULT_SOURCE
             args.source.mkdir(parents=True, exist_ok=True)
@@ -253,10 +253,7 @@ def main(argv: list[str] | None = None) -> int:
         if not acquired:
             return 0
 
-        write_log(
-            log_path,
-            f"Watcher active. Source='{source_dir}' Target='{target_dir}' VaultRootSource='{root_source}'",
-        )
+        write_log(log_path, "Watcher active")
         if args.once:
             sweep_once(source_dir, target_dir, log_path)
             return 0

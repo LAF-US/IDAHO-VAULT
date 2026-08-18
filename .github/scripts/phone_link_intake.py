@@ -116,8 +116,8 @@ def main(argv: list[str] | None = None) -> int:
     try:
         source = resolve_phone_link_source(args.source)
         vault_root = get_vault_root(args.vault_root)
-    except RuntimeError as exc:
-        print(f"Configuration error: {exc}")
+    except RuntimeError:
+        print("Configuration error")
         return 1
     files = sorted(f for f in source.iterdir() if f.is_file())
 
@@ -125,9 +125,8 @@ def main(argv: list[str] | None = None) -> int:
         print("No files found in Phone Link folder.")
         return 0
 
-    print(f"Found {len(files)} file(s) in {source}")
-    print(f"Vault root: {vault_root}")
-    print(f"Destination: {vault_root}")
+    print(f"Found {len(files)} file(s)")
+    print("Vault destination confirmed")
     if args.dry_run:
         print("--- DRY RUN ---")
     print()
@@ -138,20 +137,20 @@ def main(argv: list[str] | None = None) -> int:
     for filepath in files:
         dest_file, disposition = resolve_destination(filepath, vault_root)
         if dest_file is None:
-            print(f"  SKIP (duplicate): {filepath.name}")
+            print("  SKIP (duplicate)")
             skipped_dup.append(filepath.name)
             continue
 
         action = "COPY" if args.copy else "MOVE"
         if args.dry_run:
-            print(f"  {action}: {filepath.name} -> {dest_file.name}")
+            print(f"  {action}")
             continue
 
         if args.copy:
             shutil.copy2(filepath, dest_file)
         else:
             shutil.move(str(filepath), str(dest_file))
-        print(f"  {action}D: {filepath.name} -> {dest_file.name}")
+        print(f"  {action}D")
         moved_paths.append(dest_file)
 
     print()
@@ -173,13 +172,13 @@ def main(argv: list[str] | None = None) -> int:
             )
         except subprocess.TimeoutExpired:
             print("git add timed out after 30s; files were moved but not staged")
-        except OSError as exc:
-            print(f"git add could not run ({exc}); files were moved but not staged")
+        except OSError:
+            print("git add could not run; files were moved but not staged")
         else:
             if result.returncode == 0:
                 print(f"Staged {len(moved_paths)} ingested file(s) for commit")
             else:
-                print(f"git add failed: {result.stderr}")
+                print("git add failed; files were moved but not staged")
 
     return 0
 
