@@ -1,4 +1,4 @@
-# Test script for SimpleStabilization module
+﻿# Test script for SimpleStabilization module
 
 # Import module
 try {

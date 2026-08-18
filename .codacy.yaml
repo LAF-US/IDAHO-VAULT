@@ -40,7 +40,13 @@
 # (roygbiv-day-accent, ~3KB) — accepted, not accidental: a per-plugin
 # enumeration is the specimen-list ratchet this vault keeps removing, and that
 # file is reviewed by its author in PRs like any other change. If the local
-# plugin count grows, revisit. Nothing outside these two globs is excluded.
+# plugin count grows, revisit.
+#
+# Codex runtime skills are managed tool-bundle assets, not vault application
+# source. PMD7 crashes while parsing their generated JavaScript helper files;
+# excluding this package boundary avoids an analyzer failure without hiding
+# repository-authored runtime code.
 exclude_paths:
   - ".obsidian/plugins/*/main.js"
   - ".obsidian/plugins/*/styles.css"
+  - ".codex/skills/**"
