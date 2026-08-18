@@ -5,4 +5,4 @@ related:
 - Latah County
 authority: LOGAN
 ---
-Bovill/Deary, Latah County 
+Bovill/Deary, Latah County

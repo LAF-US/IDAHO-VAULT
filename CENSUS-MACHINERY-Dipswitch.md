@@ -20,7 +20,7 @@ I have enough to reconstruct this place fully. Let me compile the final report.
 
 1. **Multi-agent swarm layer** — seven named AI agents (Claude, Codex, Gemini, Copilot, Grok, Perplexity, Antigravity) each with dotfolder, capability tier, and signed git identity; coordinated via `swarm.json` and `!-agents.json`
 2. **GitHub Actions automation corridor** — ~35 workflows governing agent PR ingestion, merge-queue arming, secret scanning, LFS policy, content validation, and daily rollover
-3. **Obsidian knowledge vault** — the primary human-facing note surface; `!/ ` root contains governance docs (CONSTITUTION, AGENTS, WAKEUP); published via GitBook from `./!`
+3. **Obsidian knowledge vault** — the primary human-facing note surface; `!/` root contains governance docs (CONSTITUTION, AGENTS, WAKEUP); published via GitBook from `./!`
 4. **Credential and secrets plumbing** — 1Password CLI integration, `.op/` path, PowerShell sweep scripts, GitGuardian scanning, explicit `.gitignore` credential class rules
 5. **Content integrity pipeline** — `classify_paths.py` (risk tiering), `check_large_files.py` (LFS enforcement), `check_secret_patterns.py`, `validate_content.py`, `check_portable_paths.py` (NETWEB/Windows validity)
 6. **CrewAI and OpenClaw local mesh** — a multi-agent orchestration layer (`.crewai/`) in "refoundation" status; local Ollama-backed mesh network via `.openclaw-local-mesh.yml`
@@ -86,6 +86,7 @@ Git is treated not as a code repository but as a **durable public record and acc
 **~M rough count of non-.md/.txt machinery files in root: ~78** (from the parsed listing: `.py`, `.ps1`, `.sh`, `.json`, `.yaml`, `.yml`, `.json`, `.csv`, `.cmd`, `.bat`, `.sig`, `.js`, `.ts`, `.jpeg`, `.pdf`, `.ics`, `.patch`, `.bak`, config dotfiles).
 
 **Machinery seen but NOT opened** (significant files not read):
+
 - `.github/scripts/review_feedback_loop.py` (94 KB — largest script)
 - `.github/scripts/classify_paths.py` (15 KB — the risk-tier classifier)
 - `.github/scripts/daily_rollover.py` (38 KB)
@@ -119,6 +120,5 @@ The vault's primary epistemological statement in machine form. Its opening comme
 **[*] This vault is the local instantiation of a larger "LAF-US" organization-level topology** that includes at least five "cores" (referenced in `!-agents.json`: "LAF-USB-FIVE-CORES-MIGRATION-2026-04-15"), and possibly other repositories and physical USB/network storage (the `.gitconfig` safe directories reference `Z:\` and a UNC path `//[internal-ip redacted]/IDEX_Artifacts/`, and a `laf_usb_manifest.py` script exists). The full LAF-US chamber topology was not read.
 
 **[*] The vault functions as a live personal operating system that Logan runs his actual daily life through** — not merely a note-taking tool. Evidence: `phone_link_intake.py` ingests phone notes; `daily_rollover.py` (38 KB, the largest script) manages temporal transitions; `1750180525.ics` (a calendar file) lives at root; JPEG images with phone-epoch timestamps are at root; a `wayback-preserve.yml` submits vault URLs to the Internet Archive as a permanent record. The "Esto Perpetua" phrase in one filename is Idaho's state motto ("Let it be perpetual"), consistent with the repo name and the preservation imperative.
-
 
 <!-- [redacted 2026-06-28 by *.hyperagent.tinkerer]: runtime residue removed (internal IP / sandbox / local-desktop paths). Originals were the vault's own config values quoted by the cold reader, except the tool-result path (this run's sandbox). See ../REDACTIONS.md. -->

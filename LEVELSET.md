@@ -17,11 +17,14 @@ related:
   - !/AGENTS.md
   - swarm.json
 ---
+[[L]][[E]][[V]][[E]][[L]][[S]][[E]][[T]]
 
 # PROTOCOL — LEVELSET
 
 ## Status: Draft
+
 ## Version: 0.1
+
 ## Authority: Loganic Swarm
 
 ---
@@ -53,7 +56,7 @@ LEVELSET executes:
 ## Integration Points
 
 | Document | Relationship |
-|---|---|
+| --- | --- |
 | `LEVELSET.md` (this file) | Protocol definition — what LEVELSET is and does |
 | `LEVELSET-CURRENT.md` | Deprecated historical surface — do not update or use as active current state |
 | `LEVELSET-2026-04-27.md` | Archived status reports — historical ground truths |
@@ -68,7 +71,7 @@ LEVELSET executes:
 ## Outputs
 
 | Output | Location | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | Explicit dated/scoped snapshot | root or scoped protocol folder | Momentary record with stable date/scope |
 | Decision entries | DECISIONS.md | Durable record of choices made |
 | Handoff packages | `!/!/` | Context bundles for receiving agents |
@@ -106,4 +109,6 @@ This document is a **stub** under development. Adoption pending:
 
 ---
 
-###### [["The world is quiet here."]]
+```text
+The world is quiet here．Esto Perpetua!
+```

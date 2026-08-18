@@ -1,4 +1,5 @@
 ---
+title: "You're just saying that cuz your quote is in the headline \ud83d\ude09"
 date: 2025-02-15
 time: 02:23:31
 tweet_id: "1890587715072086312"

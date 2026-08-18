@@ -1,4 +1,5 @@
 ---
+title: "RT @johngramlich 91% of Americans, including 91% of..."
 date: 2020-08-14
 time: 16:04:39
 tweet_id: "1294303932764704780"

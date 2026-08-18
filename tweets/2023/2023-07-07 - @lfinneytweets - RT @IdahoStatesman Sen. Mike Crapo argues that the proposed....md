@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoStatesman Sen. Mike Crapo argues that the proposed..."
 date: 2023-07-07
 time: 17:09:47
 tweet_id: "1677364297922650116"

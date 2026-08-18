@@ -1,4 +1,5 @@
 ---
+title: "RT @RadioDawson House Speaker Scott Bedke and Rep. Megan..."
 date: 2020-04-15
 time: 00:14:53
 tweet_id: "1250215984339644416"

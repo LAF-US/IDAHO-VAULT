@@ -5,7 +5,7 @@ author:
 published: 2002-09-07
 created: 2026-04-14
 ---
-***The Count of Monte Cristo*** ([French](https://en.wikipedia.org/wiki/French_language "French language"): *Le Comte de Monte-Cristo*) is an [adventure novel](https://en.wikipedia.org/wiki/Adventure_novel "Adventure novel") by the French writer [Alexandre Dumas](https://en.wikipedia.org/wiki/Alexandre_Dumas "Alexandre Dumas"). It was serialised from 1844 to 1846, then published in book form in 1846. It is one of his most popular works, along with *[The Three Musketeers](https://en.wikipedia.org/wiki/The_Three_Musketeers "The Three Musketeers")* (1844) and *[Man in the Iron Mask](https://en.wikipedia.org/wiki/The_Vicomte_of_Bragelonne:_Ten_Years_Later#Pa***REMOVED***Three:_The_Man_in_the_Iron_Mask_\(Chapters_181%E2%80%93269\) "The Vicomte of Bragelonne: Ten Years Later")* (1850). Like many of his novels, it was expanded from plot outlines suggested by his collaborating [ghostwriter](https://en.wikipedia.org/wiki/Ghostwriter "Ghostwriter"), [Auguste Maquet](https://en.wikipedia.org/wiki/Auguste_Maquet "Auguste Maquet").[^4] It is regarded as a [classic](https://en.wikipedia.org/wiki/Classic_book "Classic book") of [French](https://en.wikipedia.org/wiki/French_literature "French literature") and [world literature](https://en.wikipedia.org/wiki/World_literature "World literature").[^5]
+***The Count of Monte Cristo*** ([French](https://en.wikipedia.org/wiki/French_language "French language"): *Le Comte de Monte-Cristo*) is an [adventure novel](https://en.wikipedia.org/wiki/Adventure_novel "Adventure novel") by the French writer [Alexandre Dumas](https://en.wikipedia.org/wiki/Alexandre_Dumas "Alexandre Dumas"). It was serialised from 1844 to 1846, then published in book form in 1846. It is one of his most popular works, along with *[The Three Musketeers](https://en.wikipedia.org/wiki/The_Three_Musketeers "The Three Musketeers")* (1844) and *[Man in the Iron Mask](https://en.wikipedia.org/wiki/The_Vicomte_of_Bragelonne:_Ten_Years_Later#Part_Three:_The_Man_in_the_Iron_Mask_\(Chapters_181%E2%80%93269\) "The Vicomte of Bragelonne: Ten Years Later")* (1850). Like many of his novels, it was expanded from plot outlines suggested by his collaborating [ghostwriter](https://en.wikipedia.org/wiki/Ghostwriter "Ghostwriter"), [Auguste Maquet](https://en.wikipedia.org/wiki/Auguste_Maquet "Auguste Maquet").[^4] It is regarded as a [classic](https://en.wikipedia.org/wiki/Classic_book "Classic book") of [French](https://en.wikipedia.org/wiki/French_literature "French literature") and [world literature](https://en.wikipedia.org/wiki/World_literature "World literature").[^5]
 
 The novel is set in France, Italy, and islands in the [Mediterranean Sea](https://en.wikipedia.org/wiki/Mediterranean_Sea "Mediterranean Sea") during the historical events of 1815–1839, the era of the [Bourbon Restoration](https://en.wikipedia.org/wiki/Bourbon_Restoration_in_France "Bourbon Restoration in France") through the reign of [Louis Philippe I](https://en.wikipedia.org/wiki/Louis_Philippe_I "Louis Philippe I"). It begins on the day when [Napoleon](https://en.wikipedia.org/wiki/Napoleon "Napoleon") left [his first island of exile](https://en.wikipedia.org/wiki/Principality_of_Elba "Principality of Elba"), [Elba](https://en.wikipedia.org/wiki/Elba "Elba"), beginning the [Hundred Days](https://en.wikipedia.org/wiki/Hundred_Days "Hundred Days") period of his return to power. The historical setting is fundamental to the narrative. *The Count of Monte Cristo* explores themes of [hope](https://en.wikipedia.org/wiki/Hope "Hope"), [justice](https://en.wikipedia.org/wiki/Justice "Justice"), [vengeance](https://en.wikipedia.org/wiki/Revenge "Revenge"), [mercy](https://en.wikipedia.org/wiki/Mercy "Mercy") and [forgiveness](https://en.wikipedia.org/wiki/Forgiveness "Forgiveness").
 
@@ -19,7 +19,7 @@ The Count of Monte Cristo achieved widespread popularity upon its [serialized pu
 
 ### Marseille and Château d'If
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Edmond_Dant%C3%A8s.JPG/250px-Edmond_Dant%C3%A8s.JPG)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Edmond_Dant%C3%A8s.JPG/250px-Edmond_Dant%C3%A8s.JPG)
 
 The protagonist, Edmond Dantès, was a merchant sailor before his imprisonment. (Illustration by Pierre-Gustave Staal )
 
@@ -33,7 +33,7 @@ As all of Dantès' friends and family gather in *La Réserve* to participate in 
 
 On the other side of Marseilles, a betrothal feast takes place, celebrating the engagement of deputy crown prosecutor Gérard de Villefort and the young [noblewoman](https://en.wikipedia.org/wiki/Noblewoman "Noblewoman") Renée de Saint-Méran. During the meal he is questioned regarding the politics of his father, the infamous Bonapartist Noirtier de Villefort. Due to the strategic gains he faces by allying himself with the [royalists](https://en.wikipedia.org/wiki/Royalist "Royalist") during the [Bourbon restoration](https://en.wikipedia.org/wiki/Bourbon_Restoration_in_France "Bourbon Restoration in France") and reinstatement of [King Louis XVIII](https://en.wikipedia.org/wiki/Louis_XVIII "Louis XVIII"), Villefort denounces his father's politics and swears to punish any and all Bonapartists that come his way. As the guests are about to praise his stern political stance, the feast is interrupted as Villefort receives an urgent message requiring him to deal with an [apprehended](https://en.wikipedia.org/wiki/Arrest "Arrest") young man who is part of a recently discovered Bonapartist plot. Villefort arrives at his office and finds Edmond pleading his [innocence](https://en.wikipedia.org/wiki/Innocence "Innocence"). As Villefort confronts him about the allegations, Edmond explains honestly that he is merely fulfilling the [final wish](https://en.wikipedia.org/wiki/Will_and_testament "Will and testament") of his dead captain, and that he doesn't even know what the letter contains. Villefort, respecting Dantès' honest and down-to-earth character, and sympathetic about him being arrested in the midst of his own engagement party, deduces that he must have been set up by some kind of conspiracy. As he lets Edmond off, he off-handedly asks him who the letter was addressed to. As Edmond reveals that the recipient of the letter is Villefort's Bonapartist father, Villefort freezes. If word got out about his father's Bonapartist tendencies, it could damage the family name, and worse, Villefort's own career. To protect his own interest, he deceptively affirms Dantès' freedom, while scrambling to get him locked away in the infamous island prison, the Château d'If. Burning the letter and requesting the guards, Edmond is detained and forcibly brought to the port of Marseilles. Unaware of what he has done wrong, Dantès continues to plead his innocence, trying to escape the grasp of the guards. When he tries to jump off of the [skiff](https://en.wikipedia.org/wiki/Skiff "Skiff") into the cold water, he is forced onto his knees with a [gun](https://en.wikipedia.org/wiki/Musket "Musket") pressed against his temple. After being locked away in the [Château d'If](https://en.wikipedia.org/wiki/Ch%C3%A2teau_d%27If "Château d'If"), Edmond begins begging to see the [Governor](https://en.wikipedia.org/wiki/Governor "Governor") of the prison to prove his innocence. When he threatens the guard for not fulfilling his request he is sent into the deepest [dungeon](https://en.wikipedia.org/wiki/Dungeon "Dungeon") of the prison, where the only other prisoner is a supposedly crazy old Italian [abbot](https://en.wikipedia.org/wiki/Abbot "Abbot"), the Abbé Faria, who is known for unsuccessfully offering ludicrous sums to the guards in exchange for his freedom.
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Ch%C3%A2teau_d%27If_%28Marseille%29.JPG/250px-Ch%C3%A2teau_d%27If_%28Marseille%29.JPG)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Ch%C3%A2teau_d%27If_%28Marseille%29.JPG/250px-Ch%C3%A2teau_d%27If_%28Marseille%29.JPG)
 
 Château d'If ( Marseille )
 
@@ -53,7 +53,7 @@ Dantès reappears in 1838 as the mysterious, fabulously wealthy Count of Monte C
 
 In [Rome](https://en.wikipedia.org/wiki/Rome "Rome"), at [Carnival](https://en.wikipedia.org/wiki/Carnival "Carnival") time, Dantès befriends [Viscount](https://en.wikipedia.org/wiki/Viscount "Viscount") Albert de Morcerf, the son of Mercédès and Fernand. He arranges for Albert to be captured by the [bandit](https://en.wikipedia.org/wiki/Banditry "Banditry") Luigi Vampa (an ally of Dantès), and "rescues" the boy, earning his trust. Albert introduces the Count to Parisian [high society](https://en.wikipedia.org/wiki/High_society "High society"). In his guise as the Count, Dantès meets Mercédès for the first time in 23 years and eventually makes the acquaintance of Danglars, Fernand and Villefort.
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/James_O%27Neill_as_Abbe_Busoni.jpg/250px-James_O%27Neill_as_Abbe_Busoni.jpg)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/James_O%27Neill_as_Abbe_Busoni.jpg/250px-James_O%27Neill_as_Abbe_Busoni.jpg)
 
 Actor James O'Neill as the Abbé Busoni
 
@@ -77,7 +77,7 @@ As a result of the Count's financial manipulations, Danglars is left with a ruin
 
 Maximilien Morrel is driven to despair by Valentine's apparent death and considers suicide. Dantès reveals his true identity and persuades Maximilien to delay his suicide for one month. One month later, on the island of Monte Cristo, he reunites Valentine with Maximilien and reveals the true sequence of events. Having found peace, Dantès leaves the couple part of his fortune on the island and departs for [the East](https://en.wikipedia.org/wiki/Orient "Orient") to begin a new life with Haydée, who has declared her love for him. The reader is left with a final line: " *l'humaine sagesse était tout entière dans ces deux mots: attendre et espérer!*" ("all human wisdom is contained in these two words: 'Wait and Hope'").
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/CountOfMonteCristoRelations.svg/960px-CountOfMonteCristoRelations.svg.png)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/CountOfMonteCristoRelations.svg/960px-CountOfMonteCristoRelations.svg.png)
 
 Character relationships in The Count of Monte Cristo
 
@@ -167,7 +167,7 @@ In another of the true stories reported by Ashton-Wolfe, Peuchet describes a poi
 
 *The Count of Monte Cristo* was originally published in the *[Journal des Débats](https://en.wikipedia.org/wiki/Journal_des_D%C3%A9bats "Journal des Débats")* in eighteen parts. Serialization ran from 28 August 1844 to 15 January 1846. The first edition in book form was published in Paris by *Pétion* in 18 volumes with the first two issued in 1844 and the remaining sixteen in 1845.[^17] Most of the Belgian pirated editions, the first Paris edition and many others up to the *Lécrivain et Toubon* illustrated edition of 1860 feature a misspelling of the title with "Christo" used instead of "Cristo". The first edition to feature the correct spelling was the *L'Écho des Feuilletons* illustrated edition, Paris 1846. This edition featured plates by [Paul Gavarni](https://en.wikipedia.org/wiki/Paul_Gavarni "Paul Gavarni") and [Tony Johannot](https://en.wikipedia.org/wiki/Tony_Johannot "Tony Johannot") and was said to be "revised" and "corrected", although only the chapter structure appears to have been altered with an additional chapter entitled *La Maison des Allées de Meilhan* having been created by splitting *Le Départ* into two.[^18]
 
-![](https://upload.wikimedia.org/wikipedia/commons/3/3e/Le_Comte_de_Monte-Cristo_in_Judeo-Arabic.png)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/3/3e/Le_Comte_de_Monte-Cristo_in_Judeo-Arabic.png)
 
 Front page of translation into Judeo-Tunisian Arabic, 1889
 
@@ -225,7 +225,7 @@ Fantasy novelist [Steven Brust](https://en.wikipedia.org/wiki/Steven_Brust "Stev
 
 In the novel, Dumas tells of the 1815 return of [Napoleon I](https://en.wikipedia.org/wiki/Napoleon "Napoleon"), and alludes to contemporary events when the governor at the [Château d'If](https://en.wikipedia.org/wiki/Ch%C3%A2teau_d%27If "Château d'If") is promoted to a position at the castle of Ham.[^15] [^1] The attitude of Dumas towards "bonapartisme" was conflicted. His father, [Thomas-Alexandre Dumas](https://en.wikipedia.org/wiki/Thomas-Alexandre_Dumas "Thomas-Alexandre Dumas"),[^2] a Haitian of [mixed descent](https://en.wikipedia.org/wiki/Multiracial "Multiracial"), became a successful general during the [French Revolution](https://en.wikipedia.org/wiki/French_Revolution "French Revolution"). In 1840, the body of Napoleon I [was brought to France](https://en.wikipedia.org/wiki/Retour_des_cendres "Retour des cendres") and became an object of veneration in the church of [Les Invalides](https://en.wikipedia.org/wiki/Les_Invalides "Les Invalides"), renewing popular patriotic support for the Bonaparte family. As the story opens, the character Dantès is not aware of the politics, considers himself simply a good French citizen, and is caught between the conflicting loyalties of the royalist Villefort during the Restoration, and the father of Villefort, Noirtier, loyal to Napoleon, a firm Bonapartist, and the Bonapartist loyalty of his late captain, in a period of rapid changes of government in France.
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Montecristo_islet.jpg/250px-Montecristo_islet.jpg)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Montecristo_islet.jpg/250px-Montecristo_islet.jpg)
 
 Montecristo islet, view from the north
 
@@ -233,28 +233,28 @@ In *Causeries* (1860), Dumas published a short paper, "État civil du Comte de M
 
 ## Selected adaptations
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/CC_No_03_Count_of_Monte_Cristo.jpg/250px-CC_No_03_Count_of_Monte_Cristo.jpg)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/CC_No_03_Count_of_Monte_Cristo.jpg/250px-CC_No_03_Count_of_Monte_Cristo.jpg)
 
 Classic Comics, The Count of Monte Cristo, Issue #3, published 1942.
 
 ### Film
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Count_of_Monte_Cristo_1908.jpg/250px-Count_of_Monte_Cristo_1908.jpg)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Count_of_Monte_Cristo_1908.jpg/250px-Count_of_Monte_Cristo_1908.jpg)
 
 Hobart Bosworth (right) in The Count of Monte Cristo (1908)
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/James-O%27Neill-Dantes-1913.jpg/250px-James-O%27Neill-Dantes-1913.jpg)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/James-O%27Neill-Dantes-1913.jpg/250px-James-O%27Neill-Dantes-1913.jpg)
 
 Edmond Dantès (James O'Neill) loosens a stone before making his escape from the Château d'If in The Count of Monte Cristo (1913)
 
-- 1908: *The Count of Monte Cristo*, a silent film starring [Hobart Bosworth](https://en.wikipedia.org/wiki/Hoba***REMOVED***Bosworth "Hobart Bosworth")
+- 1908: *The Count of Monte Cristo*, a silent film starring [Hobart Bosworth](https://en.wikipedia.org/wiki/Hobart_Bosworth "Hobart Bosworth")
 - 1913: [*The Count of Monte Cristo*](https://en.wikipedia.org/wiki/The_Count_of_Monte_Cristo_\(1913_film\) "The Count of Monte Cristo (1913 film)"), a silent film starring [James O'Neill](https://en.wikipedia.org/wiki/James_O%27Neill_\(actor,_born_1847\) "James O'Neill (actor, born 1847)")
 - 1918: [*The Count of Monte Cristo*](https://en.wikipedia.org/wiki/The_Count_of_Monte_Cristo_\(1918_series\) "The Count of Monte Cristo (1918 series)"), a silent-film serial starring [Léon Mathot](https://en.wikipedia.org/wiki/L%C3%A9on_Mathot "Léon Mathot")
-- 1922: *[Monte Cristo](https://en.wikipedia.org/wiki/Monte_Cristo_\(1922_film\) "Monte Cristo (1922 film)")*, starring [John Gilbert](https://en.wikipedia.org/wiki/John_Gilbe***REMOVED***\(actor\) "John Gilbert (actor)") and directed by [Emmett J. Flynn](https://en.wikipedia.org/wiki/Emmett_J._Flynn "Emmett J. Flynn")
+- 1922: *[Monte Cristo](https://en.wikipedia.org/wiki/Monte_Cristo_\(1922_film\) "Monte Cristo (1922 film)")*, starring [John Gilbert](https://en.wikipedia.org/wiki/John_Gilbert_\(actor\) "John Gilbert (actor)") and directed by [Emmett J. Flynn](https://en.wikipedia.org/wiki/Emmett_J._Flynn "Emmett J. Flynn")
 - 1929: *[Monte Cristo](https://en.wikipedia.org/wiki/Monte_Cristo_\(1929_film\) "Monte Cristo (1929 film)")*, restored silent epic directed by [Henri Fescourt](https://en.wikipedia.org/wiki/Henri_Fescourt "Henri Fescourt")
 - 1934: *[The Count of Monte Cristo](https://en.wikipedia.org/wiki/The_Count_of_Monte_Cristo_\(1934_film\) "The Count of Monte Cristo (1934 film)")*, directed by [Rowland V. Lee](https://en.wikipedia.org/wiki/Rowland_V._Lee "Rowland V. Lee")
 - 1942: *[The Count of Monte Cristo](https://en.wikipedia.org/wiki/The_Count_of_Monte_Cristo_\(1942_film\) "The Count of Monte Cristo (1942 film)")* (Spanish: *El Conde de Montecristo*), a Mexican film version, directed by [Chano Urueta](https://en.wikipedia.org/wiki/Chano_Urueta "Chano Urueta") and starring [Arturo de Córdova](https://en.wikipedia.org/wiki/Arturo_de_C%C3%B3rdova "Arturo de Córdova")
-- 1943: *[The Count of Monte Cristo](https://en.wikipedia.org/wiki/The_Count_of_Monte_Cristo_\(1943_film\) "The Count of Monte Cristo (1943 film)")*, directed by [Robert Vernay](https://en.wikipedia.org/wiki/Robe***REMOVED***Vernay "Robert Vernay")
+- 1943: *[The Count of Monte Cristo](https://en.wikipedia.org/wiki/The_Count_of_Monte_Cristo_\(1943_film\) "The Count of Monte Cristo (1943 film)")*, directed by [Robert Vernay](https://en.wikipedia.org/wiki/Robert_Vernay "Robert Vernay")
 - 1946: *[The Return of Monte Cristo](https://en.wikipedia.org/wiki/The_Return_of_Monte_Cristo_\(1946_film\) "The Return of Monte Cristo (1946 film)")*, directed by [Henry Levin](https://en.wikipedia.org/wiki/Henry_Levin_\(film_director\) "Henry Levin (film director)")
 - 1946: *[The Wife of Monte Cristo](https://en.wikipedia.org/wiki/The_Wife_of_Monte_Cristo "The Wife of Monte Cristo")*, directed by [Edgar G. Ulmer](https://en.wikipedia.org/wiki/Edgar_G._Ulmer "Edgar G. Ulmer")
 - 1953: *[The Count of Monte Cristo](https://en.wikipedia.org/wiki/The_Count_of_Monte_Cristo_\(1953_film\) "The Count of Monte Cristo (1953 film)")* (Spanish: *El Conde de Montecristo*), directed by [León Klimovsky](https://en.wikipedia.org/wiki/Le%C3%B3n_Klimovsky "León Klimovsky") and starring [Jorge Mistral](https://en.wikipedia.org/wiki/Jorge_Mistral "Jorge Mistral")
@@ -323,7 +323,7 @@ Other sequels include:
 
 ### Plays and musicals
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Th%C3%A9%C3%A2tre-Historique-Monte_Cristo-1848.jpg/250px-Th%C3%A9%C3%A2tre-Historique-Monte_Cristo-1848.jpg)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Th%C3%A9%C3%A2tre-Historique-Monte_Cristo-1848.jpg/250px-Th%C3%A9%C3%A2tre-Historique-Monte_Cristo-1848.jpg)
 
 Premiere of Dumas' Monte Cristo at Théâtre Historique (1848)
 
@@ -331,7 +331,7 @@ Alexandre Dumas and Auguste Maquet wrote a set of four plays that collectively t
 
 The adaptation differs from the novel in many respects: several characters, such as Luigi Vampa, are excluded; whereas the novel includes many different plot threads that are brought together at the conclusion, the third and fourth plays deal only with the fate of Mondego and Villefort respectively (Danglars's fate is not featured at all); the play is the first to feature Dantès shouting "the world is mine!", an iconic line that would be used in many future adaptations.
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Liebler_and_Co%27s_tremendous_production_of_Monte_Cristo_with_Mr._James_O%27Neill_as_Edmond_Dantes%2C_a_character_he_has_made_world_famous._LCCN2014636665.jpg/250px-Liebler_and_Co%27s_tremendous_production_of_Monte_Cristo_with_Mr._James_O%27Neill_as_Edmond_Dantes%2C_a_character_he_has_made_world_famous._LCCN2014636665.jpg)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Liebler_and_Co%27s_tremendous_production_of_Monte_Cristo_with_Mr._James_O%27Neill_as_Edmond_Dantes%2C_a_character_he_has_made_world_famous._LCCN2014636665.jpg/250px-Liebler_and_Co%27s_tremendous_production_of_Monte_Cristo_with_Mr._James_O%27Neill_as_Edmond_Dantes%2C_a_character_he_has_made_world_famous._LCCN2014636665.jpg)
 
 Poster for a 1900 production of Charles Fechter 's adaptation of The Count of Monte Cristo, starring James O'Neill
 
@@ -345,13 +345,13 @@ In 2008, the Russian theater of Moscow Operetta set a musical *Monte-Cristo* bas
 
 ### Audio adaptations
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Campbell-Playhouse-Count-Monte-Cristo.jpg/250px-Campbell-Playhouse-Count-Monte-Cristo.jpg)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Campbell-Playhouse-Count-Monte-Cristo.jpg/250px-Campbell-Playhouse-Count-Monte-Cristo.jpg)
 
 Newspaper advertisement for The Campbell Playhouse presentation of "The Count of Monte Cristo" (1 October 1939)
 
-- 1938: *[The Mercury Theatre on the Air](https://en.wikipedia.org/wiki/The_Mercury_Theatre_on_the_Air "The Mercury Theatre on the Air")* with [Orson Welles](https://en.wikipedia.org/wiki/Orson_Welles "Orson Welles") (Dantès), [Ray Collins](https://en.wikipedia.org/wiki/Ray_Collins_\(actor\) "Ray Collins (actor)") ([Abbé Faria](https://en.wikipedia.org/wiki/Abb%C3%A9_Faria "Abbé Faria")), [George Coulouris](https://en.wikipedia.org/wiki/George_Coulouris "George Coulouris") (Monsieur Morrel), [Edgar Barrier](https://en.wikipedia.org/wiki/Edgar_Barrier "Edgar Barrier") (de Villefort), Eustace Wyatt (Caderousse), [Paul Stewart](https://en.wikipedia.org/wiki/Paul_Stewa***REMOVED***\(actor\) "Paul Stewart (actor)") (Paul Dantès) Sidney Smith (Mondego), [Richard Wilson](https://en.wikipedia.org/wiki/Richard_Wilson_\(director\) "Richard Wilson (director)") (the Officer), Virginia Welles (Mercédès); radio broadcast 29 August 1938 [^40]<sup><span title="Page / location: 345">: 345</span></sup>
+- 1938: *[The Mercury Theatre on the Air](https://en.wikipedia.org/wiki/The_Mercury_Theatre_on_the_Air "The Mercury Theatre on the Air")* with [Orson Welles](https://en.wikipedia.org/wiki/Orson_Welles "Orson Welles") (Dantès), [Ray Collins](https://en.wikipedia.org/wiki/Ray_Collins_\(actor\) "Ray Collins (actor)") ([Abbé Faria](https://en.wikipedia.org/wiki/Abb%C3%A9_Faria "Abbé Faria")), [George Coulouris](https://en.wikipedia.org/wiki/George_Coulouris "George Coulouris") (Monsieur Morrel), [Edgar Barrier](https://en.wikipedia.org/wiki/Edgar_Barrier "Edgar Barrier") (de Villefort), Eustace Wyatt (Caderousse), [Paul Stewart](https://en.wikipedia.org/wiki/Paul_Stewart_\(actor\) "Paul Stewart (actor)") (Paul Dantès) Sidney Smith (Mondego), [Richard Wilson](https://en.wikipedia.org/wiki/Richard_Wilson_\(director\) "Richard Wilson (director)") (the Officer), Virginia Welles (Mercédès); radio broadcast 29 August 1938 [^40]<sup><span title="Page / location: 345">: 345</span></sup>
 - 1939: *[The Campbell Playhouse](https://en.wikipedia.org/wiki/The_Campbell_Playhouse_\(radio_series\) "The Campbell Playhouse (radio series)")* with [Orson Welles](https://en.wikipedia.org/wiki/Orson_Welles "Orson Welles") (Dantès), Ray Collins (Caderousse), [Everett Sloane](https://en.wikipedia.org/wiki/Everett_Sloane "Everett Sloane") ([Abbé Faria](https://en.wikipedia.org/wiki/Abb%C3%A9_Faria "Abbé Faria")), [Frank Readick](https://en.wikipedia.org/wiki/Frank_Readick "Frank Readick") (Villefort), George Coulouris (Danglars), Edgar Barrier (Mondego), Richard Wilson (a Jailer), [Agnes Moorehead](https://en.wikipedia.org/wiki/Agnes_Moorehead "Agnes Moorehead") (Mercédès); radio broadcast 1 October 1939 [^40]<sup><span title="Page / location: 354">: 354</span></sup>
-- 1939: [Robert Montgomery](https://en.wikipedia.org/wiki/Robe***REMOVED***Montgomery_\(actor\) "Robert Montgomery (actor)") on the *[Lux Radio Theater](https://en.wikipedia.org/wiki/Lux_Radio_Theater "Lux Radio Theater")* (radio)
+- 1939: [Robert Montgomery](https://en.wikipedia.org/wiki/Robert_Montgomery_\(actor\) "Robert Montgomery (actor)") on the *[Lux Radio Theater](https://en.wikipedia.org/wiki/Lux_Radio_Theater "Lux Radio Theater")* (radio)
 - 1947–52: *[The Count of Monte Cristo](https://en.wikipedia.org/wiki/The_Count_of_Monte_Cristo_\(radio_program\) "The Count of Monte Cristo (radio program)")* radio program starring [Carleton Young](https://en.wikipedia.org/wiki/Carleton_Young "Carleton Young")
 - 1960s: [Paul Daneman](https://en.wikipedia.org/wiki/Paul_Daneman "Paul Daneman") for *[Tale Spinners For Children](https://en.wikipedia.org/wiki/Tale_Spinners_For_Children "Tale Spinners For Children")* series (LP) UAC 11044
 - 1961: [Louis Jourdan](https://en.wikipedia.org/wiki/Louis_Jourdan "Louis Jourdan") for [Caedmon Records](https://en.wikipedia.org/wiki/Caedmon_Records "Caedmon Records") (LP)
@@ -443,7 +443,7 @@ Newspaper advertisement for The Campbell Playhouse presentation of "The Count of
 
 [^37]: Oliveira, Paulo Motta (2009). "A mão do finado: as extraordinárias aventuras de um sucesso mundial". *II Seminário Brasileiro Livro e História Editorial*.
 
-[^38]: ["A mão do finado (La main du défunt)"](https://www.pastichesdumas.com/php/fiche.php?id=23). *www.pastichesdumas.com*. Retrieved 26 February 2022.
+[^38]: ["A mão do finado (La main du défunt)"](https://www.pastichesdumas.com/php/fiche.php?id=23). *<www.pastichesdumas.com>*. Retrieved 26 February 2022.
 
 [^39]: Gans, Andrew.["Borchert to Star in World Premiere of Wildhorn's Count of Monte Cristo"](http://www.playbill.com/news/article/126412.html) [Archived](https://web.archive.org/web/20090425033936/http://www.playbill.com/news/article/126412.html) 25 April 2009 at the [Wayback Machine](https://en.wikipedia.org/wiki/Wayback_Machine "Wayback Machine"), playbill.com, 18 February 2009
 

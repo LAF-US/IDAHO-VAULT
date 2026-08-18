@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Senate sends one election..."
 date: 2020-08-24
 time: 20:04:11
 tweet_id: "1297988091274174464"

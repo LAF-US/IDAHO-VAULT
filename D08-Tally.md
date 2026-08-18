@@ -53,6 +53,7 @@ This is a personal journalism research vault (Obsidian.md, git-controlled) belon
 **6. PERCEPTION LOG**
 
 Files opened:
+
 - `!/AGENTS.md` (canonical narrative registry and agent roster)
 - `CONSTITUTION.md` (binding governance)
 - `!/WAKEUP.md` (conflict-resolution and orientation)
@@ -68,6 +69,7 @@ Files opened:
 **~M rough estimate:** The root directory listing alone suggested hundreds of files at root; the search returned 196 hits on a simple phrase; there are dozens of dotfolders and the `!/` tree. Total corpus: likely **500–2,000+ files**, several hundred MB in Markdown and scripts.
 
 **Notable doors seen but NOT opened:**
+
 - `swarm.json` (too large; preview only)
 - `!/GRIMOIRE_caution_contains-false-doctrines/` (Geminiaeus evidence folder)
 - `LEVELSET-CURRENT.md` (mid-future connector survey)

@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports The Senate State Affairs Committee..."
 date: 2023-01-16
 time: 17:53:12
 tweet_id: "1615044513457909761"

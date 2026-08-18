@@ -1,4 +1,5 @@
 ---
+title: "RT @KTVBJoe #New - A spokesman for @GovernorLittle confirms..."
 date: 2020-08-28
 time: 03:01:41
 tweet_id: "1299180323461185536"

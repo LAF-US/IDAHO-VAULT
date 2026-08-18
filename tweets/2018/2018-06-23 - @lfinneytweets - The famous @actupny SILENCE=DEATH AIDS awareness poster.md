@@ -1,4 +1,5 @@
 ---
+title: "The famous @actupny SILENCE=DEATH AIDS awareness poster"
 date: 2018-06-23
 time: 21:44:26
 tweet_id: "1010639745829879809"
@@ -16,10 +17,10 @@ related:
   - lfinneytweets
 ---
 
-The famous @actupny SILENCE=DEATH AIDS awareness poster https://t.co/ENAgYHbPou
+The famous @actupny SILENCE=DEATH AIDS awareness poster <https://t.co/ENAgYHbPou>
 
 ## Media
-- ![](https://pbs.twimg.com/media/DgaDfENVAAA6N54.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/DgaDfENVAAA6N54.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

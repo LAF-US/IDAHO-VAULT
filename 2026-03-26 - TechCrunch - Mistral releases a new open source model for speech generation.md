@@ -11,17 +11,17 @@ The new model, called Voxtral TTS, supports nine languages, including English, F
 
 “Our customers have been asking for a speech model. So we built a small-sized speech model that can fit on a smartwatch, a smartphone, a laptop, or other edge devices. The cost of it is a fraction of anything else on the market, but it offers state-of-the-art performance,” Pierre Stock, VP of science operations at Mistral AI, told TechCrunch during a phone interview.
 
-![](https://techcrunch.com/wp-content/uploads/2026/03/9de9713a-6b03-4007-9fb1-6fce3a9cb0d9.jpeg)
+![alt text needed](https://techcrunch.com/wp-content/uploads/2026/03/9de9713a-6b03-4007-9fb1-6fce3a9cb0d9.jpeg)
 
 Image Credits: Mistral
 
 Mistral said the new model can adapt a custom voice with a sample of less than five seconds and can capture characteristics like subtle accents, inflections, intonations, and irregularities in the flow of speech. The model, based on [Ministral](https://docs.mistral.ai/models/ministral-3-3b-25-12) [3B](https://docs.mistral.ai/models/ministral-3-3b-25-12), can switch between languages easily without losing the characteristics of the voice, which is useful for use cases like dubbing or real-time translation. Stock said the company wanted the model to sound human and not robotic.
 
-![](https://www.youtube.com/watch?v=_N-ZGjGSVls)
+![alt text needed](https://www.youtube.com/watch?v=_N-ZGjGSVls)
 
 The model has been built for real-time performance, according to the company. It has a time-to-first-audio (TTFA) — a measure of when the model starts “speaking” after receiving input — of 90 ms for a 10-second sample of 500 characters. The model also has a real-time factor (RTF) of 6x, which means it can render a 10-second clip in roughly 1.6 seconds.
 
-![](https://techcrunch.com/wp-content/uploads/2026/03/1cc0ce97-f6f1-477a-8c25-23ca793d0571.jpeg)
+![alt text needed](https://techcrunch.com/wp-content/uploads/2026/03/1cc0ce97-f6f1-477a-8c25-23ca793d0571.jpeg)
 
 Image Credits: Mistral AI
 

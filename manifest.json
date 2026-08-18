@@ -681,12 +681,6 @@
         "path": ".obsidian/plugins/omnisearch/manifest.json"
       },
       {
-        "id": "openclaw",
-        "name": "OpenClaw",
-        "version": "0.41.1",
-        "path": ".obsidian/plugins/obsidianclaw/manifest.json"
-      },
-      {
         "id": "oz-image-plugin",
         "name": "Image in Editor",
         "version": "2.2.6",
@@ -834,7 +828,6 @@
       "obsidian-git",
       "obsidian-leaflet-plugin",
       "obsidian42-brat",
-      "openclaw",
       "pdf-plus",
       "table-editor-obsidian",
       "taskbone-ocr-plugin",

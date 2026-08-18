@@ -1,4 +1,5 @@
 ---
+title: "For real though, I am writing right now about how the..."
 date: 2024-05-22
 time: 23:43:48
 tweet_id: "1793427572732395966"

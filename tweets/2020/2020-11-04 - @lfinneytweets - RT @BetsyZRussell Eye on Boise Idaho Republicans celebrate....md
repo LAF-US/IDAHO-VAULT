@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Idaho Republicans celebrate..."
 date: 2020-11-04
 time: 19:02:42
 tweet_id: "1324064547024429056"

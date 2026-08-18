@@ -4,7 +4,6 @@
   "// conventions": "VAULT-CONVENTIONS.md",
   "principal": "Logan Finney",
   "vault_authority": "https://github.com/LAF-US/IDAHO-VAULT",
-  "registry_version": "2026-06-10 (durable registration, no liveness inference)",
   "wakeup_protocol": {
     "quick_start": "!/WAKEUP.md",
     "boot_order": [
@@ -1092,12 +1091,6 @@
         "path": ".obsidian/plugins/omnisearch/manifest.json"
       },
       {
-        "id": "openclaw",
-        "name": "OpenClaw",
-        "version": "0.41.1",
-        "path": ".obsidian/plugins/obsidianclaw/manifest.json"
-      },
-      {
         "id": "oz-image-plugin",
         "name": "Image in Editor",
         "version": "2.2.6",
@@ -1245,7 +1238,6 @@
       "obsidian-git",
       "obsidian-leaflet-plugin",
       "obsidian42-brat",
-      "openclaw",
       "pdf-plus",
       "table-editor-obsidian",
       "taskbone-ocr-plugin",
@@ -1310,14 +1302,13 @@
     "promotion_gate": "Signals may coordinate work, but durable decisions and execution commitments must still be promoted into the vault, GitHub, or Linear explicitly."
   },
   "crews": {
-    "// note": "CrewAI is a registered layer under re-foundation. swarm.json registers the layer but does not carry CrewAI crew, task, or runner topology.",
+    "// note": "CrewAI is a retired historical layer. swarm.json preserves the registry pointer but no CrewAI crew, task, runner, or package is active.",
     "manifest": ".crewai/manifest.json",
     "manifest_doc": ".crewai/MANIFEST.md",
-    "crewai_version": "1.14.1",
-    "status": "refoundation",
+    "status": "retired",
     "output_dir": "!/CREWAI/",
-    "runtime_class": "vault-contained local runtime slice",
-    "authority_boundary": "swarm.json registers the layer; canonical CrewAI topology and promotion rules are documented in .crewai/MANIFEST.md.",
+    "runtime_class": "none",
+    "authority_boundary": "Historical CrewAI material does not establish active topology, runtime authority, or a promotion path; see .crewai/MANIFEST.md.",
     "principle": "Portable authority over local runtime romance",
     "roster": []
   },

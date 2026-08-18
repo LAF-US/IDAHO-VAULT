@@ -1,4 +1,5 @@
 ---
+title: AIKIDO
 authority: LOGAN
 related:
   - AIKIDO
@@ -6,6 +7,6 @@ related:
   - runtime
 ---
 
-**.aikido** — Imported software runtime persona.
+**.aikido** â€” Imported software runtime persona.
 
 aikido runtime and configuration.

@@ -1,4 +1,5 @@
 ---
+title: "RT @NateBrownNews Gannon This bill went through our working..."
 date: 2020-08-26
 time: 14:22:48
 tweet_id: "1298626956347314176"

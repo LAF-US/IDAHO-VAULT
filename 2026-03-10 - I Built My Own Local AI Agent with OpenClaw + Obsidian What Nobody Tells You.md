@@ -12,7 +12,7 @@ date created: Friday, April 24th 2026, 2:45:48 pm
 date modified: Friday, April 24th 2026, 3:06:45 pm
 ---
 
-![](https://miro.medium.com/v2/resize:fit:2000/format:webp/1*09vMlJaNfMY4FdX7qPNFCQ.png)
+![alt text needed](https://miro.medium.com/v2/resize:fit:2000/format:webp/1*09vMlJaNfMY4FdX7qPNFCQ.png)
 
 ***A real field report on a VM Ubuntu setup: Docker, Telegram, persistent memory, guardrails, config errors, and genuinely useful lessons.***
 
@@ -22,7 +22,7 @@ This isn’t an official tutorial. It’s a raw field report — with the mistak
 
 ## What OpenClaw Actually Is
 
-![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*9MUhXipov7XSqELRvZLBBA.png)
+![alt text needed](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*9MUhXipov7XSqELRvZLBBA.png)
 
 OpenClaw is an **open-source personal AI agent that you self-host**. Unlike ChatGPT or Claude that live in the cloud, OpenClaw runs on your machine, maintains persistent memory, and can act on your behalf continuously.
 
@@ -78,7 +78,7 @@ cd openclaw
 
 ## The 4 Errors You Will Hit
 
-![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*LqLwZynei82aAfshM1EfDw.png)
+![alt text needed](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*LqLwZynei82aAfshM1EfDw.png)
 
 **Error 1 — Permission denied on.env**
 
@@ -121,7 +121,7 @@ The Alibaba API key can’t be configured via `config set bailian.apiKey`. It go
 
 ## Why Obsidian Changes Everything
 
-![](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*L6qcosE8lFVVPM1bq-uYnQ.png)
+![alt text needed](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*L6qcosE8lFVVPM1bq-uYnQ.png)
 
 The core idea: **files are memory.** The agent wakes up with nothing each session — only files persist. Obsidian is the best place to store them: native Markdown, readable without an app, editable by hand.
 

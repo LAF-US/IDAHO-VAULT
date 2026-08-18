@@ -1,4 +1,5 @@
 ---
+title: "Phenomenal, thank you @idahogop! Everything is adding up..."
 date: 2024-03-04
 time: 22:33:36
 tweet_id: "1764781266585419883"

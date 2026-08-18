@@ -1,6 +1,7 @@
 # Trace - The Let's Go Champion
 
 ## Table of Contents
+
 1. [Overview](#overview)
 2. [Game Appearances](#game-appearances)
 3. [Teams and Battle Strategies](#teams-and-battle-strategies)
@@ -27,9 +28,10 @@
 ## Game Appearances
 
 ### Generation VII (Let's Go, Pikachu! and Eevee!)
+
 - **Location**: Indigo Plateau (as Champion)
 - **Role**: Pokémon Champion
-- **Team** (six Pokémon): 
+- **Team** (six Pokémon):
   - Pidgeot (Lv. 63) - Normal/Flying
   - Alakazam (Lv. 63) - Psychic
   - Exeggutor (Lv. 63) - Grass/Psychic
@@ -40,6 +42,7 @@
 - **Notable**: Like Blue, Trace fields a standard six-Pokémon Champion party. Can be rematched at the Pokémon League to reclaim the title
 
 ### Other Appearances
+
 - None (exclusive to Let's Go games)
 
 ---
@@ -49,7 +52,7 @@
 ### Core Team
 
 | Pokémon | Level | Type | Notes |
-|---------|-------|------|-------|
+| --------- | ------- | ------ | ------- |
 | Pidgeot | 63 | Normal/Flying | Lead Flying-type |
 | Alakazam | 63 | Psychic | Special attacker, high Speed |
 | Exeggutor | 63 | Grass/Psychic | Bulky, Sleep Powder user |
@@ -58,7 +61,9 @@
 | Charizard | 66 | Fire/Flying | Starter; mirrors the player's partner choice |
 
 ### Battle Strategy
+
 Trace's battle strategy is characterized by:
+
 1. Type diversity across a standard six-Pokémon team
 2. Mixed physical and special attackers
 3. High-level Pokémon (Lv. 66-68)
@@ -66,6 +71,7 @@ Trace's battle strategy is characterized by:
 5. Status moves (Intimidate from Gyarados)
 
 ### Recommended Counters
+
 - Ice-types: Super effective against Charizard, Pidgeot, Gyarados
 - Water/Rock-types: Super effective against Charizard and Arcanine
 - Electric-types: Super effective against Gyarados and Pidgeot
@@ -77,10 +83,12 @@ Trace's battle strategy is characterized by:
 ## Anime and Manga Appearances
 
 ### Main Anime
+
 - **Note**: Trace does not appear in the main Pokémon anime series
 - **Role**: Exclusive to Let's Go games
 
 ### Pokémon Adventures Manga
+
 - **Note**: Trace does not appear in Pokémon Adventures manga
 
 ---
@@ -88,6 +96,7 @@ Trace's battle strategy is characterized by:
 ## Personality and Design
 
 ### Personality
+
 - Good-natured: Friendly and supportive
 - Cowardly: Can be hesitant in dangerous situations
 - Childhood friend: Has known the player since they were young
@@ -95,11 +104,13 @@ Trace's battle strategy is characterized by:
 - Determined: Will rematch to reclaim Champion title
 
 ### Design Evolution
+
 - Generation VII: Brown-haired boy with brown eyes
 - Wears dark gray shirt with white backpack with red detailing
 - Similar appearance to Blue but with different color scheme
 
 ### Name Origin
+
 - **English**: Trace - from "trace" (to follow or pursue), fitting his role as rival
 - **Japanese**: シン (Shin) - meaning "true" or "reality"
 - Fits his role as the player's childhood friend and rival
@@ -109,6 +120,7 @@ Trace's battle strategy is characterized by:
 ## Trivia
 
 ### Game Trivia
+
 - Replaces Blue as Champion in Let's Go games
 - Analogous to Blue's role in Generation I
 - Childhood friend of the player character
@@ -117,14 +129,17 @@ Trace's battle strategy is characterized by:
 - Highest level Pokémon is Charizard (Lv. 68)
 
 ### Anime Trivia
+
 - Does not appear in main anime series
 - Exclusive to Let's Go games
 
 ### Manga Trivia
+
 - Does not appear in Pokémon Adventures manga
 - Exclusive to Let's Go games
 
 ### Cultural Impact
+
 - Represents the modernized rival/Champion concept
 - Featured in Let's Go promotional materials
 - Popular among Let's Go players
@@ -132,6 +147,7 @@ Trace's battle strategy is characterized by:
 ---
 
 ## References
+
 - Bulbapedia: [Trace (game)](https://bulbapedia.bulbagarden.net/wiki/Trace_(game)), [Pokémon Champion](https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Champion)
 - Pokémon Wiki, Pokémon Database, Serebii.net, Pokémon Let's Go official site
 

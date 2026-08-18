@@ -1,4 +1,5 @@
 ---
+title: "RT @laralaradisney The next time you hear someone comparing..."
 date: 2022-04-08
 time: 22:43:54
 tweet_id: "1512561904589238272"

@@ -1,4 +1,5 @@
 ---
+title: "RT @NateBrownNews There\u2019s a piece of paper that says NO..."
 date: 2024-05-19
 time: 03:10:47
 tweet_id: "1792030111782584401"

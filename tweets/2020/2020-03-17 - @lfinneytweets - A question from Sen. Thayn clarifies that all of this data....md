@@ -1,4 +1,5 @@
 ---
+title: "A question from Sen. Thayn clarifies that all of this data..."
 date: 2020-03-17
 time: 22:41:35
 tweet_id: "1240045647308308480"

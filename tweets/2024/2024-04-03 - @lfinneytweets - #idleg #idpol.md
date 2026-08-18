@@ -1,4 +1,5 @@
 ---
+title: "#idleg #idpol"
 date: 2024-04-03
 time: 04:26:50
 tweet_id: "1775379407303250296"
@@ -18,6 +19,6 @@ related:
   - idpol
 ---
 
-#idleg #idpol
+\#idleg #idpol
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1775379407303250296)

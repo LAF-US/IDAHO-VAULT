@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoCapitalSun \u201cYou cannot believe the tension and..."
 date: 2021-06-24
 time: 01:23:09
 tweet_id: "1407871887707836416"

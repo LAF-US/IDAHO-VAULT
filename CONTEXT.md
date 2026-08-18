@@ -13,11 +13,14 @@ related:
   - LEVELSET
   - CONTEXT-v1.0-2026-04-27
 ---
+[[C]][[O]][[N]][[T]][[E]][[X]][[T]]
 
 # PROTOCOL — CONTEXT
 
 ## Status: Draft
+
 ## Version: 0.1
+
 ## Authority: Loganic Swarm
 
 ---
@@ -34,7 +37,7 @@ It is the formal mechanism by which agents establish, retrieve, and share contex
 
 ## Role in the Protocol Stack
 
-```
+```text
 AWAKEN ──────────────────────► RISE
    │                                │
    │                                │
@@ -43,7 +46,7 @@ ORIENT ◄──── LEVELSET ───────► REPORT
 ```
 
 | Transition | Protocol |
-|------------|----------|
+| ------------ | ---------- |
 | Session Start | AWAKEN |
 | Session Briefing | LEVELSET |
 | New External Agent | ORIENT |
@@ -77,7 +80,7 @@ CONTEXT executes:
 ## Integration Points
 
 | Document | Relationship |
-|---|---|
+| --- | --- |
 | `CONTEXT.md` (this file) | Protocol definition — what CONTEXT is and does |
 | `CONTEXT-v1.0-2026-04-27.md` | Full approved protocol — complete specification |
 | `SBP.md` | Stock SBP reference; former Vault execution layer is quarantined |
@@ -125,7 +128,7 @@ Propagate field changes:
 ## Field Commands
 
 | Command | Action | Context Use |
-|---|---|---|
+| --- | --- | --- |
 | `arrive` | Announce presence | AWAKEN integration |
 | `sniff` | Check field state | ORIENT, CONTEXT |
 | `beat` | Ready signal | AWAKEN, RISE |
@@ -138,7 +141,7 @@ Propagate field changes:
 ## Outputs
 
 | Output | Location | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | Field state | stigmergy field | Shared contextual substrate |
 | Context bundles | `!/!/` | Packaged context for handoff |
 | Trail markers | LEVELSET-CURRENT.md | Track agent activity |
@@ -159,6 +162,7 @@ Propagate field changes:
 This document is a **stub** under development. Full specification exists in `CONTEXT-v1.0-2026-04-27.md`.
 
 Pending:
+
 - [ ] Logan review and approval
 - [ ] Full stigmergy field integration
 - [ ] Stabilization of protocol steps
@@ -177,4 +181,6 @@ Pending:
 
 ---
 
-###### [["The world is quiet here."]]
+```text
+The world is quiet here．Esto Perpetua!
+```

@@ -1,4 +1,5 @@
 ---
+title: "The Senate will recess until 2 30pm as both parties caucus...."
 date: 2021-05-12
 time: 19:30:31
 tweet_id: "1392562853358362625"

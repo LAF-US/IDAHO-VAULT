@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoCapitalSun Before Cole\u2019s license was renewed,..."
 date: 2024-09-04
 time: 23:15:53
 tweet_id: "1831471274083885124"

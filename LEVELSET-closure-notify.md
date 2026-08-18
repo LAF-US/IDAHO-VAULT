@@ -34,12 +34,13 @@ LEVELSET Claude Code – Levelset Closure Notification — 2026-03-15
 ## 2. WHAT I'VE DONE
 
 | File | Type | Commit | Action |
-|------|------|--------|--------|
+| ------ | ------ | -------- | -------- |
 | `.github/scripts/post_levelset_closure.py` | Python | `744f36b` | Created — parses LEVELSET frontmatter, posts closure notifications to pinned GitHub Issue |
 | `.github/workflows/levelset-closure-notify.yml` | YAML | `744f36b` | Created — triggers on push to LEVELSET-*.md in !ADMIN/ or !ADMINISTRATION/ |
 | `!ADMINISTRATION/LEVELSET-closure-notify.md` | Administrative | this commit | This report |
 
 **Design decisions:**
+
 - Watches both `!ADMIN/` and `!ADMINISTRATION/` paths for compatibility during directory rename transition
 - Closure detection: any `status:` value starting with `terminat` (covers `terminating`, `terminated-clean`, `terminated-dirty`)
 - Notification target: single pinned GitHub Issue labeled `levelset-closure` (Logan's choice)
@@ -59,7 +60,7 @@ LEVELSET Claude Code – Levelset Closure Notification — 2026-03-15
 ## 4. CONVERSATION AWARENESS
 
 | Conversation | Known role | Visibility |
-|---|---|---|
+| --- | --- | --- |
 | CODE AUTHORITY | Tier 1, Opus 4.6, direct repo | Received routing: !ADMIN rename, Constitution.md, LEVELSET.md consolidation |
 | Idaho Legislature Scraper | Tier 1, scraper + digest | Read LEVELSET-v3.2.6, post_digest.py as patterns |
 

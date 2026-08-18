@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2024-06-06
 time: 18:08:03
 tweet_id: "1798778896634241158"
@@ -16,10 +17,10 @@ related:
   - lfinneytweets
 ---
 
-@GabeOsterhout https://t.co/tmbmQconBL
+@GabeOsterhout <https://t.co/tmbmQconBL>
 
 ## Media
-- ![](https://pbs.twimg.com/tweet_video_thumb/GPaL3Rub0AATGJq.jpg)
+- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/GPaL3Rub0AATGJq.jpg)
 
 *In reply to [@GabeOsterhout](https://twitter.com/GabeOsterhout)*
 

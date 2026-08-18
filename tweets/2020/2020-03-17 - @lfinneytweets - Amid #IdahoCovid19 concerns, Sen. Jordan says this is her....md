@@ -1,4 +1,5 @@
 ---
+title: "Amid #IdahoCovid19 concerns, Sen. Jordan says this is her..."
 date: 2020-03-17
 time: 20:13:50
 tweet_id: "1240008461254983680"
