@@ -1,10 +1,13 @@
 # cron_clock-rfc — the iCalendar standards suite
 
 Upstream reference texts for `cron_clock.ics`, saved verbatim from
-rfc-editor.org (fetched 2026-08-18, PR #981). The roster follows the
-RFC Editor's own chain, as Logan traced it: RFC 2445's info page points
-to RFC 5545 (which obsoletes it), and RFC 5545's page points to the
-RFCs that update it.
+rfc-editor.org (fetched 2026-08-18, PR #981) as root-flat siblings of
+this note, per vault structure: the root carries flat files; new
+top-level directories outside `!/` and the dotfolders are invalid.
+
+The roster follows the RFC Editor's own chain, as Logan traced it:
+RFC 2445's info page points to RFC 5545 (which obsoletes it), and
+RFC 5545's page points to the RFCs that update it.
 
 ## The chain
 
@@ -31,5 +34,10 @@ Pulled during the same reading; kept for reference:
 | `rfc7808.txt` | 7808 (2016) | tzdist (time zone data distribution) |
 | `rfc8984.txt` | 8984 (2021) | JSCalendar (the JSON successor format) |
 
-These are plain-text mirrors for offline grounding; the RFC Editor
-remains the source of truth at `https://www.rfc-editor.org/info/rfc<n>/`.
+## Notes
+
+- These are plain-text mirrors for offline grounding; the RFC Editor
+  remains the source of truth at `https://www.rfc-editor.org/info/rfc<n>/`.
+- The four newest files (`rfc8984.txt`, `rfc9073.txt`, `rfc9074.txt`,
+  `rfc9253.txt`) begin with a UTF-8 BOM — that is how rfc-editor.org
+  serves them, and the mirrors keep the bytes verbatim.
