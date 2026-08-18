@@ -16,7 +16,7 @@ owner: Logan Finney
 | | |
 |---|---|
 | **Who** | GitHub Actions runners on `laf-us/idaho-vault`. Root-cause commit `a2766c40` carries the author trailer "Logan A. Finney"; not asserting who/what actually produced it beyond that metadata (see Incident A). |
-| **What** | Pulled all `conclusion=failure` workflow runs in the window (30 runs, GitHub's own `status=failure` filter — exhaustive for the window, not a sample). Traced to two distinct incidents, one already fixed in this session's own PR. |
+| **What** | Pulled 30 workflow runs in the window: 21 branch runs, 5 PR #934/Copilot runs, 2 `audit/gitignore-836` runs, and 2 `main` runs. The original review recorded the run-level outcomes (failure, cancellation, or success) separately from GitHub's run-level rollup; the analysis below is retained only as a retracted historical record. |
 | **When** | 2026-08-06T05:45Z – 2026-08-07T05:48Z. |
 | **Where** | `main` itself (blocking, since the 05:48 merge of PR #933), the now-merged `claude/apply-patch-fixes-9gesn5` branch (ran red ~2 days before merging anyway), and the still-open `audit/gitignore-836` / PR #934 (inherited + compounded the same root cause). |
 | **Why** | Single root cause for both incidents: `pyproject.toml`'s `[dependency-groups].dev`/`[build-system]` got gutted, so `uv sync` never installs `pytest`/`coverage`, cascading into every workflow that depends on them. Evidence-based — read via `git log -S`, job logs, and direct diffs, not inferred. |
@@ -31,7 +31,7 @@ owner: Logan Finney
 Traced with `git log -S "Just like a .gitignore file" --all` (a distinctive marker string left in the broken file) to commit `a2766c40` (2026-08-04T00:12:37Z, author trailer "Logan A. Finney", **commit message that is literally just that trailer text and nothing else**): it replaced `pyproject.toml`'s `dependencies`, `[build-system]`, `[project.scripts]`, and the entire `[dependency-groups].dev` block (`pytest`, `coverage`, `ruff`, `jupytext`) with a 9-line stub — **twelve minutes after** `4bebc445` had just finished restoring the file from an *earlier, identical* incident ("restore pyproject.toml gutted by PR #891's merge-conflict resolution", `70b801a0`/`da3161fd`). The automated `sync-dependencies` workflow then faithfully propagated the stub into `uv.lock`/`requirements.txt` four minutes later (`01f3ac00`).
 
 That commit lived on `claude/apply-patch-fixes-9gesn5`, which then ran red for the entire window this sweep covers before merging into `main` unfixed:
-- `Python Test Suite` — same `uv sync` gap, 3× (runs 31075065811, 31075360652, 31075630564, 31075726694, 31076128695, 31106976965, 31107124623).
+- `Python Test Suite` — same `uv sync` gap, 7× (runs 31075065811, 31075360652, 31075630564, 31075726694, 31076128695, 31106976965, 31107124623).
 - `Codacy Coverage Reporter` — cascading from the above (`coverage.xml` never generated because the test step it depends on never ran): 31075065871, 31075360646, 31075630596, 31075726705, 31076128845, 31106977110, 31107124539.
 - `check-notebooks-paired` — a *different-shaped* symptom of the exact same cause: its version-pin one-liner (`next(p['version'] for p in lock['package'] if p['name'] == 'jupytext')`) has no default, and with `jupytext` gone from `uv.lock` it raises unhandled `StopIteration` (31075065884, 31075360692, 31075630565, 31075726658, 31076128827, 31106979066, 31107124586).
 
