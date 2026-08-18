@@ -40,9 +40,9 @@ def normalized_path(path: Path) -> str:
 
 def resolve_phone_link_source(path: Path) -> Path:
     """Resolve an existing Phone Link source within the Downloads boundary."""
-    trusted_root = os.path.normcase(os.path.realpath(os.fspath(TRUSTED_SOURCE_ROOT)))
-    candidate = os.path.normcase(os.path.realpath(os.fspath(path)))
-    if not candidate.startswith(trusted_root + os.sep):
+    trusted_root = os.path.realpath(os.fspath(TRUSTED_SOURCE_ROOT))
+    candidate = os.path.realpath(os.fspath(path))
+    if not os.path.normcase(candidate).startswith(os.path.normcase(trusted_root) + os.sep):
         raise RuntimeError(f"Phone Link source must be within {trusted_root}")
 
     resolved = Path(candidate)
@@ -55,9 +55,9 @@ def resolve_phone_link_source(path: Path) -> Path:
 
 def safe_child_path(parent: Path, relative_path: str) -> Path:
     """Return a normalized child path only when it remains below ``parent``."""
-    root = os.path.normcase(os.path.realpath(os.fspath(parent)))
-    candidate = os.path.normcase(os.path.realpath(os.path.join(root, relative_path)))
-    if not candidate.startswith(root + os.sep):
+    root = os.path.realpath(os.fspath(parent))
+    candidate = os.path.realpath(os.path.join(root, relative_path))
+    if not os.path.normcase(candidate).startswith(os.path.normcase(root) + os.sep):
         raise RuntimeError(f"Path escapes its permitted directory: {relative_path}")
     return Path(candidate)
 
