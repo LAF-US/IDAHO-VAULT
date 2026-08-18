@@ -52,14 +52,15 @@ def hash8(value: str) -> str:
 
 
 def filesystem_key(value: str) -> str:
-    """Return the canonical case-insensitive filename key used by macOS volumes.
+    """Return a canonical caseless filename key for macOS collision planning.
 
-    Default macOS filesystems treat canonically equivalent Unicode spellings as
-    the same name and are commonly case-insensitive. Normalize before case-folding
-    so planning catches a collision before ``shutil.move`` reaches the filesystem.
+    Default macOS volumes are commonly case-insensitive and
+    normalization-insensitive. Use Unicode canonical caseless matching—NFD,
+    case-fold, then NFD again—so a case fold cannot leave combining marks outside
+    canonical order before planning reaches ``shutil.move``.
     """
-    path = value.replace("\\", "/")
-    return unicodedata.normalize("NFD", path).casefold()
+    normalized = unicodedata.normalize("NFD", value.replace("\\", "/"))
+    return unicodedata.normalize("NFD", normalized.casefold())
 
 
 def unique_root_name(
