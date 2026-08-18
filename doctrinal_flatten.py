@@ -12,7 +12,6 @@ from dataclasses import dataclass
 from datetime import date
 from pathlib import Path
 
-
 SKIP_BASENAMES = {"Thumbs.db", "desktop.ini", ".DS_Store"}
 SKIP_PREFIXES = ("._",)
 
@@ -52,6 +51,17 @@ def hash8(value: str) -> str:
     return hashlib.sha256(value.encode("utf-8")).hexdigest()[:8]
 
 
+def filesystem_key(value: str | Path) -> str:
+    """Return the canonical case-insensitive filename key used by macOS volumes.
+
+    Default macOS filesystems treat canonically equivalent Unicode spellings as
+    the same name and are commonly case-insensitive. Normalize before case-folding
+    so planning catches a collision before ``shutil.move`` reaches the filesystem.
+    """
+    path = value.as_posix() if isinstance(value, Path) else value.replace("\\", "/")
+    return unicodedata.normalize("NFD", path).casefold()
+
+
 def unique_root_name(
     source_rel: str,
     top_level: str,
@@ -63,10 +73,10 @@ def unique_root_name(
     base = f"{safe_stem}__src_{slugify(top_level)}__{hash8(source_rel)}"
     candidate = f"{base}{suffix}"
     counter = 2
-    while candidate.lower() in reserved:
+    while filesystem_key(candidate) in reserved:
         candidate = f"{base}__n{counter}{suffix}"
         counter += 1
-    reserved.add(candidate.lower())
+    reserved.add(filesystem_key(candidate))
     return candidate
 
 
@@ -75,7 +85,7 @@ def unique_inbox_path(
     source_rel: str,
     reserved: set[str],
 ) -> Path:
-    key = str(dest).lower()
+    key = filesystem_key(dest)
     if key not in reserved:
         reserved.add(key)
         return dest
@@ -85,17 +95,17 @@ def unique_inbox_path(
     base = f"{stem}__src_inbox__{hash8(source_rel)}"
     candidate = dest.with_name(f"{base}{suffix}")
     counter = 2
-    while str(candidate).lower() in reserved:
+    while filesystem_key(candidate) in reserved:
         candidate = dest.with_name(f"{base}__n{counter}{suffix}")
         counter += 1
-    reserved.add(str(candidate).lower())
+    reserved.add(filesystem_key(candidate))
     return candidate
 
 
 def iter_top_level_dirs(repo_root: Path) -> list[Path]:
     return sorted(
         [path for path in repo_root.iterdir() if path.is_dir() and not is_protected_dir(path.name)],
-        key=lambda path: path.name.lower(),
+        key=lambda path: (filesystem_key(path.name), path.name),
     )
 
 
@@ -104,7 +114,13 @@ def collect_candidates(repo_root: Path) -> tuple[list[Candidate], list[dict[str,
     manifest_entries: list[dict[str, object]] = []
 
     for top_dir in iter_top_level_dirs(repo_root):
-        for source in sorted([path for path in top_dir.rglob("*") if path.is_file()], key=lambda p: p.as_posix().lower()):
+        for source in sorted(
+            [path for path in top_dir.rglob("*") if path.is_file()],
+            key=lambda path: (
+                filesystem_key(path.relative_to(top_dir)),
+                path.as_posix(),
+            ),
+        ):
             rel_source = source.relative_to(repo_root).as_posix()
             rel_within_top = source.relative_to(top_dir).as_posix()
             if is_machine_junk(source.name):
@@ -138,12 +154,12 @@ def collect_candidates(repo_root: Path) -> tuple[list[Candidate], list[dict[str,
 
 def plan_moves(repo_root: Path, candidates: list[Candidate]) -> list[dict[str, object]]:
     root_reserved = {
-        path.name.lower()
+        filesystem_key(path.name)
         for path in repo_root.iterdir()
         if path.is_file()
     }
     inbox_reserved = {
-        str(path).lower()
+        filesystem_key(path)
         for path in (repo_root / "!" / "INBOX").rglob("*")
         if path.exists()
     } if (repo_root / "!" / "INBOX").exists() else set()
@@ -155,16 +171,22 @@ def plan_moves(repo_root: Path, candidates: list[Candidate]) -> list[dict[str, o
 
     grouped: dict[str, list[Candidate]] = defaultdict(list)
     for candidate in root_candidates:
-        grouped[candidate.basename.lower()].append(candidate)
+        grouped[filesystem_key(candidate.basename)].append(candidate)
 
     for basename_key in sorted(grouped.keys()):
-        group = sorted(grouped[basename_key], key=lambda item: item.relative_source.lower())
+        group = sorted(
+            grouped[basename_key],
+            key=lambda item: (
+                filesystem_key(item.relative_source),
+                item.relative_source,
+            ),
+        )
         root_has_incumbent = basename_key in root_reserved
 
         winner_rel: str | None = None
         if not root_has_incumbent:
             winner_rel = group[0].relative_source
-            root_reserved.add(group[0].basename.lower())
+            root_reserved.add(filesystem_key(group[0].basename))
 
         for candidate in group:
             if not root_has_incumbent and candidate.relative_source == winner_rel:
@@ -193,9 +215,16 @@ def plan_moves(repo_root: Path, candidates: list[Candidate]) -> list[dict[str, o
                 }
             )
 
-    for candidate in sorted(inbox_candidates, key=lambda item: item.relative_source.lower()):
+    for candidate in sorted(
+        inbox_candidates,
+        key=lambda item: (filesystem_key(item.relative_source), item.relative_source),
+    ):
         tentative = repo_root / "!" / "INBOX" / Path(candidate.relative_within_top)
-        dest_path = unique_inbox_path(tentative, candidate.relative_source, inbox_reserved)
+        dest_path = unique_inbox_path(
+            tentative,
+            candidate.relative_source,
+            inbox_reserved,
+        )
         collision = None if dest_path == tentative else "inbox_existing"
         action = "rehomed_inbox" if collision is None else "rehomed_inbox_renamed"
         plans.append(
@@ -209,7 +238,10 @@ def plan_moves(repo_root: Path, candidates: list[Candidate]) -> list[dict[str, o
             }
         )
 
-    return sorted(plans, key=lambda item: str(item["source"]).lower())
+    return sorted(
+        plans,
+        key=lambda item: (filesystem_key(str(item["source"])), str(item["source"])),
+    )
 
 
 def write_manifest(manifest_path: Path, entries: list[dict[str, object]]) -> None:
