@@ -3,7 +3,7 @@ from __future__ import annotations
 import importlib.util
 import unittest
 from pathlib import Path
-from unittest.mock import patch
+from unittest.mock import ANY, patch
 
 
 PROJECT_ROOT = Path(__file__).resolve().parent
@@ -92,30 +92,24 @@ class OpenRouterRuntimeTest(unittest.TestCase):
         ensure_env_file.assert_not_called()
 
     def test_exec_agent_uses_only_the_static_approved_binary(self) -> None:
+        runtime_env = {"PATH": r"C:\\mock\\bin"}
         with (
-            patch.object(openrouter_runtime, "apply_runtime_env", return_value={"PATH": r"C:\\mock\\bin"}),
-            patch.object(openrouter_runtime.subprocess, "run") as run,
+            patch.object(openrouter_runtime, "apply_runtime_env", return_value=runtime_env),
+            patch.object(openrouter_runtime.os, "execvpe") as execvpe,
         ):
             openrouter_runtime.exec_agent("codex", [])
 
-        run.assert_called_once_with(
-            ["codex"],
-            env={"PATH": r"C:\\mock\\bin"},
-            check=False,
-            shell=False,
-            timeout=openrouter_runtime.INTERACTIVE_COMMAND_TIMEOUT_SECONDS,
-        )
+        execvpe.assert_called_once_with("codex", ["codex"], runtime_env)
 
-    def test_exec_agent_timeout_is_clear(self) -> None:
-        timeout = openrouter_runtime.subprocess.TimeoutExpired(["codex"], 1)
+    def test_exec_agent_missing_binary_is_clear(self) -> None:
         with (
             patch.object(openrouter_runtime, "apply_runtime_env", return_value={}),
-            patch.object(openrouter_runtime.subprocess, "run", side_effect=timeout),
+            patch.object(openrouter_runtime.os, "execvpe", side_effect=FileNotFoundError),
         ):
             with self.assertRaises(SystemExit) as exc:
                 openrouter_runtime.exec_agent("codex", [])
 
-        self.assertIn("Interactive command timed out", str(exc.exception))
+        self.assertIn("Could not find approved 'codex' executable", str(exc.exception))
 
     def test_windows_launcher_uses_a_fixed_agent_command_map_without_args(self) -> None:
         launcher = (PROJECT_ROOT / "scripts" / "Use-OpenRouterEnv.ps1").read_text(encoding="utf-8")
@@ -131,17 +125,18 @@ class OpenRouterRuntimeTest(unittest.TestCase):
 
         self.assertIn("do not accept command arguments", str(exc.exception))
 
-    def test_launch_agent_uses_an_argument_free_runtime_command(self) -> None:
+    def test_launch_agent_handoffs_only_the_static_runtime_command(self) -> None:
         env_file = PROJECT_ROOT / ".op" / "openrouter.env"
         with (
             patch.object(openrouter_runtime, "ensure_op_available"),
             patch.object(openrouter_runtime, "ensure_op_signed_in"),
             patch.object(openrouter_runtime, "ensure_env_file", return_value=env_file),
-            patch.object(openrouter_runtime.subprocess, "run") as run,
+            patch.object(openrouter_runtime.os, "execvpe") as execvpe,
         ):
             openrouter_runtime.launch_agent("codex", [])
 
-        run.assert_called_once_with(
+        execvpe.assert_called_once_with(
+            "op",
             [
                 "op",
                 "run",
@@ -152,9 +147,7 @@ class OpenRouterRuntimeTest(unittest.TestCase):
                 "--exec",
                 "codex",
             ],
-            check=False,
-            shell=False,
-            timeout=openrouter_runtime.INTERACTIVE_COMMAND_TIMEOUT_SECONDS,
+            ANY,
         )
 
 

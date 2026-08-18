@@ -15,7 +15,6 @@ AGENT_COMMANDS = {
     "codex": "codex",
     "claude": "claude",
 }
-INTERACTIVE_COMMAND_TIMEOUT_SECONDS = 8 * 60 * 60
 
 
 def ensure_dir(path: Path) -> Path:
@@ -134,20 +133,10 @@ def exec_agent(agent: str, args: list[str]) -> int:
     env = apply_runtime_env(selected_agent)
     command = ["codex"] if selected_agent == "codex" else ["claude"]
     try:
-        result = subprocess.run(
-            command,
-            env=env,
-            check=False,
-            shell=False,
-            timeout=INTERACTIVE_COMMAND_TIMEOUT_SECONDS,
-        )
+        os.execvpe(command[0], command, env)
     except FileNotFoundError as exc:
         raise SystemExit(f"Could not find approved '{command[0]}' executable on PATH.") from exc
-    except subprocess.TimeoutExpired as exc:
-        raise SystemExit(
-            f"Interactive command timed out after {INTERACTIVE_COMMAND_TIMEOUT_SECONDS // 3600} hours."
-        ) from exc
-    return result.returncode
+    return 0
 
 
 def approved_agent_args(args: list[str]) -> None:
@@ -175,17 +164,10 @@ def launch_agent(agent: str, args: list[str]) -> int:
         selected_agent,
     ]
     try:
-        result = subprocess.run(
-            command,
-            check=False,
-            shell=False,
-            timeout=INTERACTIVE_COMMAND_TIMEOUT_SECONDS,
-        )
-    except subprocess.TimeoutExpired as exc:
-        raise SystemExit(
-            f"Interactive command timed out after {INTERACTIVE_COMMAND_TIMEOUT_SECONDS // 3600} hours."
-        ) from exc
-    return result.returncode
+        os.execvpe("op", command, os.environ.copy())
+    except FileNotFoundError as exc:
+        raise SystemExit("1Password CLI 'op' is not installed or not on PATH.") from exc
+    return 0
 
 
 def main() -> int:
