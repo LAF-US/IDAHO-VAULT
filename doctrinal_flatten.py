@@ -59,7 +59,7 @@ def filesystem_key(value: str) -> str:
     case-fold, then NFD again—so a case fold cannot leave combining marks outside
     canonical order before planning reaches ``shutil.move``.
     """
-    normalized = unicodedata.normalize("NFD", value.replace("\\", "/"))
+    normalized = unicodedata.normalize("NFD", value)
     return unicodedata.normalize("NFD", normalized.casefold())
 
 

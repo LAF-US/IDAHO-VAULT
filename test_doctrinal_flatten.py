@@ -14,11 +14,15 @@ def _load_doctrinal_flatten_module():
         "doctrinal_flatten_test_module",
         script_path,
     )
-    module = importlib.util.module_from_spec(spec)
-    if spec.loader is None:
+    if spec is None or spec.loader is None:
         raise RuntimeError(f"Unable to load {script_path}")
+    module = importlib.util.module_from_spec(spec)
     sys.modules[spec.name] = module
-    spec.loader.exec_module(module)
+    try:
+        spec.loader.exec_module(module)
+    except Exception:
+        sys.modules.pop(spec.name, None)
+        raise
     return module
 
 
@@ -30,6 +34,10 @@ class DoctrinalFlattenTest(unittest.TestCase):
         self.assertEqual(
             doctrinal_flatten.filesystem_key("RÉSUMÉ.md"),
             doctrinal_flatten.filesystem_key("re\u0301sume\u0301.MD"),
+        )
+        self.assertNotEqual(
+            doctrinal_flatten.filesystem_key(r"a\b.md"),
+            doctrinal_flatten.filesystem_key("a/b.md"),
         )
 
     def test_root_plan_renames_case_and_unicode_equivalent_name(self) -> None:
@@ -73,6 +81,24 @@ class DoctrinalFlattenTest(unittest.TestCase):
             doctrinal_flatten.filesystem_key(str(plans[0]["destination"])),
             doctrinal_flatten.filesystem_key("!/INBOX/RÉSUMÉ.md"),
         )
+
+    def test_inbox_plan_distinguishes_backslash_name_from_nested_path(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            repo_root = Path(temporary_directory)
+            destination_dir = repo_root / "!" / "INBOX"
+            destination_dir.mkdir(parents=True)
+            (destination_dir / r"a\b.md").write_text("literal backslash", encoding="utf-8")
+            source_dir = repo_root / "INBOX" / "a"
+            source_dir.mkdir(parents=True)
+            (source_dir / "b.md").write_text("nested path", encoding="utf-8")
+
+            candidates, _ = doctrinal_flatten.collect_candidates(repo_root)
+            plans = doctrinal_flatten.plan_moves(repo_root, candidates)
+
+        self.assertEqual(len(plans), 1)
+        self.assertEqual(plans[0]["action"], "rehomed_inbox")
+        self.assertIsNone(plans[0]["collision"])
+        self.assertEqual(plans[0]["destination"], "!/INBOX/a/b.md")
 
 
 if __name__ == "__main__":
