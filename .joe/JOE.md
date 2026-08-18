@@ -1,4 +1,5 @@
 ---
+title: JOE
 authority: LOGAN
 related:
   - CONSTITUTION
@@ -60,6 +61,6 @@ recorded where instances are recorded (the registry), not inside any lens.
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

@@ -1,4 +1,5 @@
 ---
+title: "Mind sending me those calculations"
 date: 2022-12-07
 time: 03:53:04
 tweet_id: "1600337569451245569"

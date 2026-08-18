@@ -9,7 +9,7 @@ created: 2026-04-14
 
 | “ | *People don't always get what they want in this world.* | ” |
 | --- | --- | --- |
-| | — Esmé, “ [The Carnivorous Carnival: Part Two](https://snicket.fandom.com/wiki/The_Carnivorous_Carnival:_Part_Two "The Carnivorous Carnival: Part Two") ” |
+| | — Esmé, “ [The Carnivorous Carnival: Part Two](https://snicket.fandom.com/wiki/The_Carnivorous_Carnival:_Part_Two "The Carnivorous Carnival: Part Two") ” | |
 
 **Esmé Gigi Geniveve Squalor** is the secondary antagonist of *[A Series of Unfortunate Events](https://snicket.fandom.com/wiki/A_Series_of_Unfortunate_Events "A Series of Unfortunate Events")*. She is considered to be one of the two main villains of the series in its latter half next to [Count Olaf](https://snicket.fandom.com/wiki/Count_Olaf "Count Olaf") due to her constant menacing role towards the Baudelaire children coupled with her greedy and consistent lust for [the Sugar Bowl](https://snicket.fandom.com/wiki/The_Sugar_Bowl "The Sugar Bowl"). Prior to the events of the series, she was a stage actress and member of [V.F.D.](https://snicket.fandom.com/wiki/Volunteer_Fire_Department "Volunteer Fire Department") She was the former love interest for both [Jerome Squalor](https://snicket.fandom.com/wiki/Jerome_Squalor "Jerome Squalor") and [The Bald Man](https://snicket.fandom.com/wiki/Bald_Man_with_the_Long_Nose "Bald Man with the Long Nose"). She was also a former love interest of Count Olaf, although it is unknown whether he became her boyfriend because he loved her, or because she would help him with his schemes.
 
@@ -27,7 +27,7 @@ When Olaf sets the hotel on fire, Squalor is seen alongside Carmelita inside one
 
 | “ | *Look at me! I'm beautiful, fashionable, and I smoke cigarettes!* | ” |
 | --- | --- | --- |
-| | — Esmé Squalor, [The Slippery Slope](https://snicket.fandom.com/wiki/The_Slippery_Slope "The Slippery Slope") |
+| | — Esmé Squalor, [The Slippery Slope](https://snicket.fandom.com/wiki/The_Slippery_Slope "The Slippery Slope") | |
 
 Esmé is greedy, vapid, materialistic, and vain, obsessed with popularity, status, trends, and fads. She frequently buys "in" clothing, items, and furniture to decorate her apartment suite. Her priority in life, above all else, seems to be fashionable, valuing style over practicality. For example, she insisted on preventing her apartment's elevator from being used, and she smokes simply because cigarettes are "in", even though she hates the taste and smell of them, and prefers to use a long holder. She even makes [aqueous martinis](https://snicket.fandom.com/wiki/Aqueous_martini "Aqueous martini") and buys [parsley soda](https://snicket.fandom.com/wiki/Parsley_soda "Parsley soda"). She leads a life of crime because it is "in". Even though she is already "unbelievably wealthy", she is obsessed with collecting money because money is "in", and she frequently brags about how wealthy she is and how much money is in her bank account.
 

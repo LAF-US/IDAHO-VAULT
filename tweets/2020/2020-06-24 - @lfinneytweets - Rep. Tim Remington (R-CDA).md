@@ -1,4 +1,5 @@
 ---
+title: "Rep. Tim Remington (R-CDA)"
 date: 2020-06-24
 time: 04:50:38
 tweet_id: "1275652531071451136"
@@ -14,10 +15,10 @@ related:
   - lfinneytweets
 ---
 
-Rep. Tim Remington (R-CDA) https://t.co/Sc4F64VFor
+Rep. Tim Remington (R-CDA) <https://t.co/Sc4F64VFor>
 
 ## Media
-- ![](https://pbs.twimg.com/media/EbQEjVtWAAI2cbW.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EbQEjVtWAAI2cbW.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

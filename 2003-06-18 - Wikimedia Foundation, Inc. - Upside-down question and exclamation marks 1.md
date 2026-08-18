@@ -11,7 +11,7 @@ Upside-down marks are supported by various standards, including [Unicode](https:
 
 ## Usage
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Signosdepuntuaci%C3%B3n_html_y_binario.pdf/page1-250px-Signosdepuntuaci%C3%B3n_html_y_binario.pdf.jpg)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Signosdepuntuaci%C3%B3n_html_y_binario.pdf/page1-250px-Signosdepuntuaci%C3%B3n_html_y_binario.pdf.jpg)
 
 Punctuation marks in Spanish, showing their positions relative to the baseline
 
@@ -49,7 +49,7 @@ It is acceptable in Spanish to begin a sentence with an opening upside-down [exc
 
 ## Computer usage
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/KB_Spanish.svg/500px-KB_Spanish.svg.png)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/KB_Spanish.svg/500px-KB_Spanish.svg.png)
 
 The Spanish keyboard provides the symbols 'as standard' (top row, right).
 

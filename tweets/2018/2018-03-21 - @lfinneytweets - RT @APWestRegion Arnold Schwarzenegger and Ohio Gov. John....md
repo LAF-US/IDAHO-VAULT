@@ -1,4 +1,5 @@
 ---
+title: "RT @APWestRegion Arnold Schwarzenegger and Ohio Gov. John..."
 date: 2018-03-21
 time: 22:50:48
 tweet_id: "976591987418660864"

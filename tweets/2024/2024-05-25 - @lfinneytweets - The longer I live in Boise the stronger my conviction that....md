@@ -1,4 +1,5 @@
 ---
+title: "The longer I live in Boise the stronger my conviction that..."
 date: 2024-05-25
 time: 22:52:27
 tweet_id: "1794501813833732136"

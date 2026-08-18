@@ -17,6 +17,6 @@ So what are you going to do after your internship? <https://t.co/wOH6vTk2uy>
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/ERRDr6ZU4AAsC1v.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/ERRDr6ZU4AAsC1v.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1230683022187384832)

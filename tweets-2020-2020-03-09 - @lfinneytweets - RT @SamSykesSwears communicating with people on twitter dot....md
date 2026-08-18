@@ -19,6 +19,6 @@ RT @SamSykesSwears: communicating with people on twitter dot com: <https://t.co/
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/ESsj5NzU0AU1Z_y.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/ESsj5NzU0AU1Z_y.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1237133413813026818)

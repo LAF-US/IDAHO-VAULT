@@ -1,4 +1,5 @@
 ---
+title: "Remington is skeptical of COVID-19 being a true crisis...."
 date: 2020-06-23
 time: 16:12:07
 tweet_id: "1275461645565693952"

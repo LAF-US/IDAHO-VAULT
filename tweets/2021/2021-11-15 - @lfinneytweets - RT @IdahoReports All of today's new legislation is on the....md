@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports All of today's new legislation is on the..."
 date: 2021-11-15
 time: 19:52:13
 tweet_id: "1460334847205937153"

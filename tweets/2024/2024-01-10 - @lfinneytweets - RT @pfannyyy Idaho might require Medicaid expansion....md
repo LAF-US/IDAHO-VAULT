@@ -1,4 +1,5 @@
 ---
+title: "RT @pfannyyy Idaho might require Medicaid expansion..."
 date: 2024-01-10
 time: 02:14:51
 tweet_id: "1744905613166207456"

@@ -1,4 +1,5 @@
 ---
+title: "It\u2019s like you never even left Idaho."
 date: 2021-02-17
 time: 16:31:22
 tweet_id: "1362077188917317634"

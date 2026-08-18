@@ -137,6 +137,6 @@ I witness it, and let the light pass.
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

@@ -47,7 +47,7 @@ Local Ollama remains installed but is not active in OpenClaw routing; allowed lo
 
 ## Mesh Topology
 
-```
+```text
                     ┌────────────────────────────────────Ŀ
                     │         OpenRouter.ai                 │
                     │    openrouter.ai/api/v1 = unified   │
@@ -153,6 +153,6 @@ Current runtime helpers:
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

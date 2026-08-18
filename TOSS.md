@@ -39,7 +39,7 @@ Do NOT pad, flatter, or philosophize. Be direct. Be complete. Be honest about wh
 
 Respond with EXACTLY this structure:
 
-```
+```text
 ---
 type: toss-dump
 from: [Your conversation name — e.g., PERSISTENT: ADMINISTRATION]

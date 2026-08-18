@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2022-10-15
 time: 01:15:27
 tweet_id: "1581091349595848704"
@@ -13,9 +14,9 @@ related:
   - lfinneytweets
 ---
 
-@davlinnews https://t.co/vynU0iwycY
+@davlinnews <https://t.co/vynU0iwycY>
 
 ## Media
-- ![](https://pbs.twimg.com/tweet_video_thumb/FfEqMQbagAEUNv4.jpg)
+- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/FfEqMQbagAEUNv4.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1581091349595848704)

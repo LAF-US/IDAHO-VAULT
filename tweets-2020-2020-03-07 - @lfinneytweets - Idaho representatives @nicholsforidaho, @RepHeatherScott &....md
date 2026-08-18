@@ -27,6 +27,6 @@ Idaho representatives @nicholsforidaho, @RepHeatherScott & Priscilla Giddings at
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/ESiC7idWkAcKCZl.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/ESiC7idWkAcKCZl.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1236382065899327500)

@@ -1,4 +1,5 @@
 ---
+title: "RT @Olivianuzzi \u201cThat\u2019s a meme.\u201d \u2014 the prospective juror..."
 date: 2024-04-19
 time: 00:11:43
 tweet_id: "1781113413458174022"

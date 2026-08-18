@@ -57,7 +57,7 @@ LEVELSETTING is the process of each conversation or entity taking a pause and in
 
 ### Vault Structure
 
-```
+```text
 IDAHO-VAULT/
   !ADMIN/        — Vault infrastructure, LEVELSET files
   ATTACHMENTS/            — Media and document attachments

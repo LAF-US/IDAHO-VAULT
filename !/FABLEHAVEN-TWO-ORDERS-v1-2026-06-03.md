@@ -97,6 +97,6 @@ allegiance. Re-verify allegiance, not just credentials.
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

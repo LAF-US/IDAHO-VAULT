@@ -1,4 +1,5 @@
 ---
+title: "RT @kxly4news The Lakeland Joint School District could lose..."
 date: 2023-04-26
 time: 19:23:53
 tweet_id: "1651306122236805120"

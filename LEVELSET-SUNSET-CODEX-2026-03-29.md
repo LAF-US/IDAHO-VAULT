@@ -93,6 +93,6 @@ This Codex conversation is ready to rest. Active context has been archived into 
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

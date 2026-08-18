@@ -1,4 +1,5 @@
 ---
+title: "RT @idahoednews Update The Bonner County Sheriff's Office..."
 date: 2020-09-15
 time: 00:23:51
 tweet_id: "1305663584895025152"
