@@ -116,8 +116,8 @@ def collect_candidates(repo_root: Path) -> tuple[list[Candidate], list[dict[str,
     for top_dir in iter_top_level_dirs(repo_root):
         for source in sorted(
             [path for path in top_dir.rglob("*") if path.is_file()],
-            key=lambda path: (
-                filesystem_key(path.relative_to(top_dir).as_posix()),
+            key=lambda path, parent=top_dir: (
+                filesystem_key(path.relative_to(parent).as_posix()),
                 path.as_posix(),
             ),
         ):
