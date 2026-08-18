@@ -51,14 +51,14 @@ def hash8(value: str) -> str:
     return hashlib.sha256(value.encode("utf-8")).hexdigest()[:8]
 
 
-def filesystem_key(value: str | Path) -> str:
+def filesystem_key(value: str) -> str:
     """Return the canonical case-insensitive filename key used by macOS volumes.
 
     Default macOS filesystems treat canonically equivalent Unicode spellings as
     the same name and are commonly case-insensitive. Normalize before case-folding
     so planning catches a collision before ``shutil.move`` reaches the filesystem.
     """
-    path = value.as_posix() if isinstance(value, Path) else value.replace("\\", "/")
+    path = value.replace("\\", "/")
     return unicodedata.normalize("NFD", path).casefold()
 
 
@@ -85,7 +85,7 @@ def unique_inbox_path(
     source_rel: str,
     reserved: set[str],
 ) -> Path:
-    key = filesystem_key(dest)
+    key = filesystem_key(dest.as_posix())
     if key not in reserved:
         reserved.add(key)
         return dest
@@ -95,10 +95,10 @@ def unique_inbox_path(
     base = f"{stem}__src_inbox__{hash8(source_rel)}"
     candidate = dest.with_name(f"{base}{suffix}")
     counter = 2
-    while filesystem_key(candidate) in reserved:
+    while filesystem_key(candidate.as_posix()) in reserved:
         candidate = dest.with_name(f"{base}__n{counter}{suffix}")
         counter += 1
-    reserved.add(filesystem_key(candidate))
+    reserved.add(filesystem_key(candidate.as_posix()))
     return candidate
 
 
@@ -117,7 +117,7 @@ def collect_candidates(repo_root: Path) -> tuple[list[Candidate], list[dict[str,
         for source in sorted(
             [path for path in top_dir.rglob("*") if path.is_file()],
             key=lambda path: (
-                filesystem_key(path.relative_to(top_dir)),
+                filesystem_key(path.relative_to(top_dir).as_posix()),
                 path.as_posix(),
             ),
         ):
@@ -159,7 +159,7 @@ def plan_moves(repo_root: Path, candidates: list[Candidate]) -> list[dict[str, o
         if path.is_file()
     }
     inbox_reserved = {
-        filesystem_key(path)
+        filesystem_key(path.as_posix())
         for path in (repo_root / "!" / "INBOX").rglob("*")
         if path.exists()
     } if (repo_root / "!" / "INBOX").exists() else set()
