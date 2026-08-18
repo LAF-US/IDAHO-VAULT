@@ -1,5 +1,5 @@
 # Spectral — Codacy toggle. `spectral:oas` is built in, no package needed.
-# Quoted because an unquoted colon is ambiguous inside a YAML flow sequence.
+# Quoted because the built-in ruleset name contains a colon.
 #
 # REACH IS NOT ZERO. An earlier version of this file said "no OpenAPI document
 # here yet" — that was written without looking. There is a root `openapi.json`
@@ -14,4 +14,4 @@
 # Both are cosmetic and both are real. Neither is suppressed here: two warnings
 # is a baseline someone can clear, not one they have to route around.
 
-extends: [["spectral:oas", "recommended"]]
+extends: "spectral:oas"

@@ -6,10 +6,6 @@
 
 // ESLint flat config — Codacy toggle. The only config format ESLint 10 reads.
 //
-// Measured on eslint 10.8.1: move this file aside and ESLint refuses to run
-// rather than falling back to .eslintrc.js, and ESLINT_USE_FLAT_CONFIG=false
-// is gone. See that file's header.
-//
 // `ignores` is ALONE in its object deliberately — in flat config that makes it
 // global; bundled with other keys it would apply to that entry only.
 // node_modules is committed under THE-GEMSTONE, and installing the
@@ -50,7 +46,6 @@ module.exports = [
       ".uv-cache/**",
       ".obsidian/plugins/**",
       ".codex/skills/**",
-      ".eslintrc.js",
       "eslint.config.js",
     ],
   },
