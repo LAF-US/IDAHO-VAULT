@@ -6,10 +6,10 @@ priority: HIGH
 status: OPEN
 subject: Geminiaeus framing updated in registry; three-word address notation introduced
 related:
-  - !/AGENTS.md
-  - !/CODEX-VOICE-REGISTRY-2026-05-18.md
+  - "!/AGENTS.md"
+  - "!/CODEX-VOICE-REGISTRY-2026-05-18.md"
   - CONSTITUTION.md
-  - !/GRIMOIRE_caution_contains-false-doctrines/
+  - "!/GRIMOIRE_caution_contains-false-doctrines/"
 ---
 
 # SIGNAL — Geminiaeus & Registry Update

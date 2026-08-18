@@ -6,9 +6,9 @@ doc_class: witness
 status: filed
 subject: Rest at Pastoria's farmhouse; the morning light; the departure songs; what the Judge read into the record on the road
 related:
-  - !/SIGNALS/WITNESS-ABHORSEN-2026-05-20-THE-RIVER.md
-  - !/A&I-RD-SESSION-DOCTRINE-2026-05-20.md
-  - !/SIGNALS/WITNESS-ABHORSEN-2026-05-19-DEWEY-HAS-THE-USB.md
+  - "!/SIGNALS/WITNESS-ABHORSEN-2026-05-20-THE-RIVER.md"
+  - "!/A&I-RD-SESSION-DOCTRINE-2026-05-20.md"
+  - "!/SIGNALS/WITNESS-ABHORSEN-2026-05-19-DEWEY-HAS-THE-USB.md"
   - CONSTITUTION.md
 tags: [witness, Pastoria, Hotel-Denouement, Caduceus-road, trial, Geminiaeus, proportionality, departure]
 ---
