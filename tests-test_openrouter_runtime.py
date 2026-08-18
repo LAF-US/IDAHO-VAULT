@@ -77,50 +77,51 @@ class OpenRouterRuntimeTest(unittest.TestCase):
 
         self.assertIn("Unsupported OpenRouter agent", str(exc.exception))
 
-    def test_help_requests_bypass_1password_preflight(self) -> None:
+    def test_launcher_rejects_command_arguments_before_preflight(self) -> None:
         with (
-            patch.object(openrouter_runtime, "exec_agent", return_value=0) as exec_agent,
             patch.object(openrouter_runtime, "ensure_op_available") as ensure_op_available,
             patch.object(openrouter_runtime, "ensure_op_signed_in") as ensure_op_signed_in,
             patch.object(openrouter_runtime, "ensure_env_file") as ensure_env_file,
         ):
-            status = openrouter_runtime.launch_agent("claude", ["--help"])
+            with self.assertRaises(SystemExit) as exc:
+                openrouter_runtime.launch_agent("claude", ["--help"])
 
-        self.assertEqual(status, 0)
-        exec_agent.assert_called_once_with("claude", ["--help"])
+        self.assertIn("do not accept command arguments", str(exc.exception))
         ensure_op_available.assert_not_called()
         ensure_op_signed_in.assert_not_called()
         ensure_env_file.assert_not_called()
 
-    def test_exec_agent_uses_only_the_approved_binary(self) -> None:
+    def test_exec_agent_uses_only_the_static_approved_binary(self) -> None:
         with (
             patch.object(openrouter_runtime, "apply_runtime_env", return_value={"PATH": r"C:\\mock\\bin"}),
-            patch.object(openrouter_runtime.shutil, "which", return_value=r"C:\\mock\\bin\\codex.cmd") as which,
             patch.object(openrouter_runtime.subprocess, "run") as run,
         ):
-            openrouter_runtime.exec_agent("codex", ["--help"])
+            openrouter_runtime.exec_agent("codex", [])
 
-        which.assert_called_once_with("codex", path=r"C:\\mock\\bin")
         run.assert_called_once_with(
-            [r"C:\\mock\\bin\\codex.cmd", "--help"],
+            ["codex"],
             env={"PATH": r"C:\\mock\\bin"},
             check=False,
             shell=False,
             timeout=openrouter_runtime.INTERACTIVE_COMMAND_TIMEOUT_SECONDS,
         )
 
-    def test_interactive_command_timeout_is_clear(self) -> None:
+    def test_exec_agent_timeout_is_clear(self) -> None:
         timeout = openrouter_runtime.subprocess.TimeoutExpired(["codex"], 1)
-        with patch.object(openrouter_runtime.subprocess, "run", side_effect=timeout):
+        with (
+            patch.object(openrouter_runtime, "apply_runtime_env", return_value={}),
+            patch.object(openrouter_runtime.subprocess, "run", side_effect=timeout),
+        ):
             with self.assertRaises(SystemExit) as exc:
-                openrouter_runtime.run_interactive_command(["codex"])
+                openrouter_runtime.exec_agent("codex", [])
 
         self.assertIn("Interactive command timed out", str(exc.exception))
 
-    def test_windows_launcher_uses_a_fixed_agent_command_map(self) -> None:
+    def test_windows_launcher_uses_a_fixed_agent_command_map_without_args(self) -> None:
         launcher = (PROJECT_ROOT / "scripts" / "Use-OpenRouterEnv.ps1").read_text(encoding="utf-8")
 
         self.assertNotIn("[string]$CliName", launcher)
+        self.assertNotIn("ValueFromRemainingArguments", launcher)
         self.assertIn('$cliName = switch ($Agent)', launcher)
         self.assertIn('$command = @("op", "run", $envArg, "--", $cliName)', launcher)
 
@@ -128,7 +129,7 @@ class OpenRouterRuntimeTest(unittest.TestCase):
         with self.assertRaises(SystemExit) as exc:
             openrouter_runtime.approved_agent_args(["--model", "openrouter/auto"])
 
-        self.assertIn("accept no arguments", str(exc.exception))
+        self.assertIn("do not accept command arguments", str(exc.exception))
 
     def test_launch_agent_uses_an_argument_free_runtime_command(self) -> None:
         env_file = PROJECT_ROOT / ".op" / "openrouter.env"
@@ -151,7 +152,6 @@ class OpenRouterRuntimeTest(unittest.TestCase):
                 "--exec",
                 "codex",
             ],
-            env=None,
             check=False,
             shell=False,
             timeout=openrouter_runtime.INTERACTIVE_COMMAND_TIMEOUT_SECONDS,

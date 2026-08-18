@@ -1,10 +1,7 @@
 param(
     [Parameter(Mandatory = $true)]
     [ValidateSet("codex", "claude")]
-    [string]$Agent,
-
-    [Parameter(ValueFromRemainingArguments = $true)]
-    [string[]]$Args
+    [string]$Agent
 )
 
 Set-StrictMode -Version Latest
@@ -52,9 +49,6 @@ if ($LASTEXITCODE -ne 0) {
 
 $envArg = "--env-file=$envFile"
 $command = @("op", "run", $envArg, "--", $cliName)
-if ($Args) {
-    $command += $Args
-}
 
 & $runtimeHelper -Agent $Agent -Command $command
 exit $LASTEXITCODE

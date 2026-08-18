@@ -128,8 +128,11 @@ def ensure_env_file(agent: str) -> Path:
     return ENV_FILE
 
 
-def run_interactive_command(command: list[str], env: dict[str, str] | None = None) -> int:
-    """Run an approved interactive command with a bounded session lifetime."""
+def exec_agent(agent: str, args: list[str]) -> int:
+    selected_agent = approved_agent(agent)
+    approved_agent_args(args)
+    env = apply_runtime_env(selected_agent)
+    command = ["codex"] if selected_agent == "codex" else ["claude"]
     try:
         result = subprocess.run(
             command,
@@ -138,6 +141,8 @@ def run_interactive_command(command: list[str], env: dict[str, str] | None = Non
             shell=False,
             timeout=INTERACTIVE_COMMAND_TIMEOUT_SECONDS,
         )
+    except FileNotFoundError as exc:
+        raise SystemExit(f"Could not find approved '{command[0]}' executable on PATH.") from exc
     except subprocess.TimeoutExpired as exc:
         raise SystemExit(
             f"Interactive command timed out after {INTERACTIVE_COMMAND_TIMEOUT_SECONDS // 3600} hours."
@@ -145,35 +150,15 @@ def run_interactive_command(command: list[str], env: dict[str, str] | None = Non
     return result.returncode
 
 
-def exec_agent(agent: str, args: list[str]) -> int:
-    selected_agent = approved_agent(agent)
-    cli_name = agent_command(selected_agent)
-    approved_args = approved_agent_args(args)
-    env = apply_runtime_env(selected_agent)
-    resolved_cli = shutil.which(cli_name, path=env.get("PATH"))
-    if resolved_cli is None:
-        raise SystemExit(f"Could not find approved '{cli_name}' executable on PATH.")
-
-    return run_interactive_command([resolved_cli, *approved_args], env)
-
-
-def approved_agent_args(args: list[str]) -> list[str]:
-    """Allow only fixed help switches; interactive sessions otherwise start without arguments."""
-    if not args:
-        return []
-    if args == ["-h"]:
-        return ["-h"]
-    if args == ["--help"]:
-        return ["--help"]
-    raise SystemExit("OpenRouter launchers accept no arguments other than -h or --help.")
+def approved_agent_args(args: list[str]) -> None:
+    """Reject all caller-provided command arguments at the execution boundary."""
+    if args:
+        raise SystemExit("OpenRouter launchers do not accept command arguments.")
 
 
 def launch_agent(agent: str, args: list[str]) -> int:
     selected_agent = approved_agent(agent)
-    approved_args = approved_agent_args(args)
-
-    if approved_args:
-        return exec_agent(selected_agent, approved_args)
+    approved_agent_args(args)
 
     ensure_op_available()
     ensure_op_signed_in()
@@ -189,7 +174,18 @@ def launch_agent(agent: str, args: list[str]) -> int:
         "--exec",
         selected_agent,
     ]
-    return run_interactive_command(command)
+    try:
+        result = subprocess.run(
+            command,
+            check=False,
+            shell=False,
+            timeout=INTERACTIVE_COMMAND_TIMEOUT_SECONDS,
+        )
+    except subprocess.TimeoutExpired as exc:
+        raise SystemExit(
+            f"Interactive command timed out after {INTERACTIVE_COMMAND_TIMEOUT_SECONDS // 3600} hours."
+        ) from exc
+    return result.returncode
 
 
 def main() -> int:
