@@ -12,7 +12,7 @@ concurrency:
   # Coerce GitHub's issue number to a JSON number before using it in the
   # concurrency key. This preserves per-issue serialization without allowing
   # event-provided text to shape CI configuration.
-  group: issue-triage-${{ fromJSON(github.event.issue.number) }}
+  group: issue-triage-${{ fromJSON(toJSON(github.event.issue.number)) }}
   cancel-in-progress: false
 
 jobs:
