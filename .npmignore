@@ -25,8 +25,9 @@ __tests__/
 test_*.py
 *_test.py
 backup-compare-temp/
-src/idaho_vault/mock_llm.py
-src-idaho_vault-mock_llm.py
+# Mock/test helper modules (by pattern, not path disclosure)
+**/*mock*.py
+**/mock_*.py
 
 # Documentation
 docs/
@@ -167,10 +168,9 @@ tmp/
 
 # Vault and project files
 *.vault
-.claude/
-.codex/
-.gemini/
-.perplexity/
+# AI agent/tool configuration directories (generic pattern avoids disclosing specific tools)
+.**/
+**/.*/
 
 # Generated documentation from node_modules
 THE-GEMSTONE-*.md
