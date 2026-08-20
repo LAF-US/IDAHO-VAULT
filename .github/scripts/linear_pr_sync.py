@@ -48,9 +48,8 @@ def read_json(path: str) -> Dict[str, Any]:
 def find_issue_identifier(pr: Dict[str, Any]) -> Optional[str]:
     candidates = [
         pr.get("title", ""),
-        pr.get("body", "") or "",
+        pr.get("body") or "",
         pr.get("head", {}).get("ref", ""),
-        pr.get("base", {}).get("ref", ""),
     ]
     for text in candidates:
         match = ISSUE_RE.search(text)
