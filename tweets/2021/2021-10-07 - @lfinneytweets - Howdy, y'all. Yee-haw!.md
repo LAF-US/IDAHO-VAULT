@@ -17,9 +17,11 @@ related:
 Howdy, y'all. Yee-haw! <https://t.co/ysJckz7Krg> <https://t.co/3eL96MQDtr>
 
 ## Links
+
 - <https://x.com/Phil_Lewis_/status/1445830952941404163>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/FBIZeHQUcBQV-Fv.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1446246509133983790)

@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @Elenee_Dao: Former Idaho Lt. Governor Jack Riggs is speaking now. 
+RT @Elenee_Dao: Former Idaho Lt. Governor Jack Riggs is speaking now.
 
 “I am totally, totally… opposed to the liberal national agenda. Wha…
 

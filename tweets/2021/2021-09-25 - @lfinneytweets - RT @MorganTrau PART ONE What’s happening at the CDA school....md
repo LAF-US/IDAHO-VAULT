@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @MorganTrau: PART ONE: What’s happening at the CDA school district building? 
+RT @MorganTrau: PART ONE: What’s happening at the CDA school district building?
 
 Apologies, I’m still a little shaken up. My personal expe…
 

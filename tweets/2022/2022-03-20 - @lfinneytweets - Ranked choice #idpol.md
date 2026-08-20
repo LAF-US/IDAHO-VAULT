@@ -20,6 +20,7 @@ related:
 Ranked choice #idpol? <https://t.co/OubY6J3Zrc>
 
 ## Links
+
 - <https://x.com/gsgraf/status/1505402864767807496>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1505415779763646465)

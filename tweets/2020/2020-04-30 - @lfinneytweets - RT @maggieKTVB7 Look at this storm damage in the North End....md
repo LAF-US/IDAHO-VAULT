@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @maggieKTVB7: Look at this storm damage in the North End of Boise! Wow. This is Harrison and Sherman Streets. 
+RT @maggieKTVB7: Look at this storm damage in the North End of Boise! Wow. This is Harrison and Sherman Streets.
 
 Do you have storm photos…
 

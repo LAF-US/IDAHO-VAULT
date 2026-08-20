@@ -20,6 +20,7 @@ RT @spokanepubradio: How local Idaho prosecutors lost the case against Patriot F
 <https://t.co/SbOyAD1OJH>
 
 ## Links
+
 - <https://www.spokanepublicradio.org/regional-news/2024-02-13/how-local-idaho-prosecutors-lost-the-case-against-patriot-fronts-white-nationalist-leader>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1757495099037221291)

@@ -22,6 +22,7 @@ related:
 "If you have it together where they all feel a little love and a little concern, it makes it easier to pass,” House Speaker Mike Moyle said Thursday. #idleg #idpol <https://t.co/y6zotIbs8g>
 
 ## Links
+
 - <https://x.com/IdahoReports/status/1621273157616254978>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1621273747260047360)

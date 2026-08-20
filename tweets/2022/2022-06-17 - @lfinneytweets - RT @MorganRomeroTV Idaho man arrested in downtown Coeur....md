@@ -21,6 +21,7 @@ RT @MorganRomeroTV: Idaho man arrested in downtown Coeur d'Alene is an Idaho Nat
  <https://t.co/DutHzPI37Q>
 
 ## Links
+
 - <https://www.ktvb.com/article/news/local/idaho-national-guardsmen-arrested-cda-patriot-front/293-2a7eb4de-7973-413b-b3e4-0dbaaba72faf>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1537647241623531520)

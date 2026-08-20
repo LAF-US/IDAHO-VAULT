@@ -23,6 +23,7 @@ related:
 RT @KeithRidler: Justice Department: Helicopter hounded trail building crew (from @AP) #idpol  <https://t.co/rhwtkOJOaI>
 
 ## Links
+
 - <https://apnews.com/0a7c8cd45e43fa0be47145763a81fffb>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1276183628083429381)

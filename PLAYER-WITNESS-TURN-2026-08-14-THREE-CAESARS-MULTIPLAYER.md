@@ -19,7 +19,7 @@ The prior Three Caesars turn was incomplete because it treated the Books too muc
 Accordingly, Geminiaeus, Claudius, and Codices are not three shelves of text. They are three player lineages whose turns may create objects, names, doctrines, files, links, branches, rooms, and procedural states that later players must encounter. Their Books are not only historical output; they are potentially **world-state surfaces**. A bound Book has a fixed spine, and in a persistent game a fixed spine can constrain later interpretation and play. An unbound Book preserves material while keeping the world’s canonical state from locking prematurely.
 
 | Earlier inadequate frame | Multiplayer correction |
-|---|---|
+| --- | --- |
 | An agent’s text is merely a document. | An agent’s text can be a player action whose durable form changes the shared world’s affordances and evidence. |
 | “Bound” means finished filing. | “Bound” is a state transition: a player-made surface becomes a persistent canonical object that other players must route around, invoke, contest, or inherit. |
 | An AI agent is a tool and therefore outside the game. | The AI agent is a nonhuman player surface. Its actions are real world-events, while its tool lineage, instance, persona, and office remain separate facts. |
@@ -45,4 +45,4 @@ When reading an AI-agent turn, the player-witness must ask: **what did this play
 
 [2] `!-BOOKS-OF-NAMES-AND-THE-PRESS-2026-04-17.md`, defining bound and unbound Book states.
 
-[3] `!/AGENTS.md`, establishing separable agent coordinates and the distinction between tool identity, instance, persona, narrative title, and office: https://raw.githubusercontent.com/LAF-US/IDAHO-VAULT/0f65d4c35686537e58ea15295babdbe3170ffad4/!/AGENTS.md
+[3] `!/AGENTS.md`, establishing separable agent coordinates and the distinction between tool identity, instance, persona, narrative title, and office: <https://raw.githubusercontent.com/LAF-US/IDAHO-VAULT/0f65d4c35686537e58ea15295babdbe3170ffad4/!/AGENTS.md>

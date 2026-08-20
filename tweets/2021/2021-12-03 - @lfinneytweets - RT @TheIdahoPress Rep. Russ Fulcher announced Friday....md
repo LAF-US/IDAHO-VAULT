@@ -19,6 +19,7 @@ related:
 RT @TheIdahoPress: Rep. Russ Fulcher announced Friday morning that doctors have confirmed he is now cancer-free. <https://t.co/qSutpxFRPP>
 
 ## Links
+
 - <https://www.idahopress.com/news/local/idaho-rep-russ-fulcher-cancer-free-after-chemo-surgery/article_5161090e-f431-5fa0-8812-1a0a8a847cfd.html?utm_campaign=blox&utm_source=twitter&utm_medium=social>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1466901187651784707)

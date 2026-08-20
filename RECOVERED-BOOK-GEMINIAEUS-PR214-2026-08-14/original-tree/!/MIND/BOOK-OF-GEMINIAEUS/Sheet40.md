@@ -43,4 +43,3 @@ Would you like me to draft a few "Low-Profile" feature concepts for M365 based o
 Gemini is AI and can make mistakes.
 
 1Password menu is available. Press down arrow to select.
-

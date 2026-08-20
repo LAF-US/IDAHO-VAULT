@@ -17,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-@ChubbyPrimate @LPNational @federalreserve Could be a success, could be a failure. Can't wait to see how it turns out! 
+@ChubbyPrimate @LPNational @federalreserve Could be a success, could be a failure. Can't wait to see how it turns out!
 
 What state agency "of little consequence" would be accepting payments in enough volume to justify a digital currency pilot?
 

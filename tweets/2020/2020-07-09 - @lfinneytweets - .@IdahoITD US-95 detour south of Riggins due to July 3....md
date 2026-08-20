@@ -20,6 +20,7 @@ related:
 <https://t.co/sLYTbbP2Ii>
 
 ## Links
+
 - <https://itd.idaho.gov/news/us-95-between-riggins-and-pollock-may-temporarily-reopen-tomorrow-afternoon/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1281253616502726656)

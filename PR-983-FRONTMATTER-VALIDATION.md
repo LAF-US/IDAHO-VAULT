@@ -19,7 +19,7 @@ PR #983’s changed Markdown frontmatter is syntactically valid YAML and satisfi
 ## PR-Scoped Validation Results
 
 | Check | Result |
-|---|---:|
+| --- | ---: |
 | Changed Markdown files | 444 |
 | Files with frontmatter | 443 |
 | Valid YAML frontmatter mappings | 443 |
@@ -37,7 +37,7 @@ PR #983’s changed Markdown frontmatter is syntactically valid YAML and satisfi
 The initial PR validation corrected one misplaced/empty title field and added descriptive bounded frontmatter to six changed Markdown files. `ANALYZER-CONFIGURATION-SURFACES.md` received `title: ANALYZER-CONFIGURATION-SURFACES` as its first frontmatter field. The following six existing documents received descriptive titles while preserving their note content:
 
 | File | Added title |
-|---|---|
+| --- | --- |
 | `RECOVERED-BOOK-GEMINIAEUS-PR214-2026-08-14/RECOVERY-MANIFEST.md` | `Recovery Manifest — Book of GEMINIAEUS Export` |
 | `RECOVERED-BOOK-GEMINIAEUS-PR214-2026-08-14/SIX-SHEET-READING-NOTES.md` | `Six-Sheet Reading Notes — Recovered Book of GEMINIAEUS` |
 | `RESEARCH-ARTIFACTS-2026-08-14/dark_souls_iii_opening_notes.md` | `Dark Souls III Opening Notes` |
@@ -87,7 +87,7 @@ anchor_title_mismatch: 0
 A complete, read-only audit was run in eight batches over every `git ls-files -- '*.md'` path in the current PR worktree.
 
 | Full-Vault audit measure | Result |
-|---|---:|
+| --- | ---: |
 | Git-tracked Markdown files audited | 36,587 |
 | Batches completed | 8 of 8 |
 | Coverage verification | Passed |

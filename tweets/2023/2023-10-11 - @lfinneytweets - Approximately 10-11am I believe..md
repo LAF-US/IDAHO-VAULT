@@ -20,6 +20,7 @@ related:
 <https://t.co/xfcTKz40MJ>
 
 ## Links
+
 - <https://science.nasa.gov/eclipses/future-eclipses/eclipse-2023/where-when/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1711925284444979396)

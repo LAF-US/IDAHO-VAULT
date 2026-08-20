@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @HayatNorimine: House Republican Caucus response to new legislative boundaries: 
+RT @HayatNorimine: House Republican Caucus response to new legislative boundaries:
 
 While not "thrilled" -- the new map "will result in th…
 

@@ -15,10 +15,11 @@ related:
   - lfinneytweets
 ---
 
-Yes that first tweet is a joke about algae (a.k.a. peak comedy) 
+Yes that first tweet is a joke about algae (a.k.a. peak comedy)
 <https://t.co/pqqmfVYeWw>
 
 ## Links
+
 - <https://knowyourmeme.com/memes/im-going-to-create-an-environment-that-is-so-toxic>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

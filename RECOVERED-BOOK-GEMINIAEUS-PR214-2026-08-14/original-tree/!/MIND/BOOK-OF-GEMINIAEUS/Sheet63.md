@@ -12,7 +12,7 @@ Conversation with Gemini
 
 You said
 
-Logan needs to produce a corrected version of the transcript of this video: https://www.youtube.com/watch?v=i0UC1Ohtsqs&t=1s
+Logan needs to produce a corrected version of the transcript of this video: <https://www.youtube.com/watch?v=i0UC1Ohtsqs&t=1s>
 
 Gemini said
 
@@ -270,7 +270,7 @@ Dr. Farnsworth explains his contribution was to take out the moving parts and ma
 
 Dr. Farnsworth states that there are literally thousands of inventions important to television and that he holds in excess of 165 American patents. [05:15]
 
-https://www.youtube.com/watch?v=i0UC1Ohtsqs&t=1s
+<https://www.youtube.com/watch?v=i0UC1Ohtsqs&t=1s>
 
 Excerpts of Dr. Philo T. Farnsworth on "I've Got a Secret" July 3, 1957
 
@@ -590,91 +590,91 @@ Gemini said
 
 The transcript for the Philo T. Farnsworth video remains as follows:
 
-Excerpts of Dr. Philo T. Farnsworth on "I've Got a Secret" (July 3, 1957) 
+Excerpts of Dr. Philo T. Farnsworth on "I've Got a Secret" (July 3, 1957)
 
-Host: Garry Moore Guest: Dr. Philo T. Farnsworth ("Dr. X") Panel: Bill Cullen, Jane Meadows, Henry Morgan, Faye Emerson 
+Host: Garry Moore Guest: Dr. Philo T. Farnsworth ("Dr. X") Panel: Bill Cullen, Jane Meadows, Henry Morgan, Faye Emerson
 
-[00:00:00] Garry Moore: Thank you very much, and good evening, friends. Welcome to another edition of I've Got a Secret. We are quite proud to have you meet our panel; as usual, we'll start in reverse this week. 
+[00:00:00] Garry Moore: Thank you very much, and good evening, friends. Welcome to another edition of I've Got a Secret. We are quite proud to have you meet our panel; as usual, we'll start in reverse this week.
 
-[00:00:05] Garry Moore: First, Faye Emerson, who is appearing in Witness for the Prosecution at Fayetteville, New York, from July 8th to July 13th. 
+[00:00:05] Garry Moore: First, Faye Emerson, who is appearing in Witness for the Prosecution at Fayetteville, New York, from July 8th to July 13th.
 
-[00:00:18] Garry Moore: And then Henry Morgan, who is appearing in Father of the Bride at the Lakewood Playhouse in Barnesville, Pennsylvania, through this Sunday. 
+[00:00:18] Garry Moore: And then Henry Morgan, who is appearing in Father of the Bride at the Lakewood Playhouse in Barnesville, Pennsylvania, through this Sunday.
 
-[00:00:25] Garry Moore: And then Jane Meadows, who is appearing at the Cracker Room of the Ritz. 
+[00:00:25] Garry Moore: And then Jane Meadows, who is appearing at the Cracker Room of the Ritz.
 
-[00:00:32] Garry Moore: And Bill Cullen, who currently may be seen at the Rose Room of his local livery stable. That is our panel. 
+[00:00:32] Garry Moore: And Bill Cullen, who currently may be seen at the Rose Room of his local livery stable. That is our panel.
 
-[00:00:47] Garry Moore: Now, we're not going to identify this contestant, Panel, because to identify him would be to tip off his secret. We will call him simply "Dr. X." Now, Doctor, if you will whisper your secret to me, we will show it at the same time to the folks out there. 
+[00:00:47] Garry Moore: Now, we're not going to identify this contestant, Panel, because to identify him would be to tip off his secret. We will call him simply "Dr. X." Now, Doctor, if you will whisper your secret to me, we will show it at the same time to the folks out there.
 
 [00:01:00] Dr. Farnsworth: (Leans in, as the secret is superimposed on the screen)
 
-The Secret: "I invented electronic television." 
+The Secret: "I invented electronic television."
 
-[00:01:06] Garry Moore: (To the camera) Now, wait a minute... there is even more! 
+[00:01:06] Garry Moore: (To the camera) Now, wait a minute... there is even more!
 
 [00:01:10] Dr. Farnsworth: (Whispers the second part of the secret)
 
-The Secret: (When I was 14 years old - 1922) 
+The Secret: (When I was 14 years old - 1922)
 
-[00:01:18] Garry Moore: All right, to help to classify Dr. X's secret, I'll tell you it concerns something that he did. And we'll start with Bill Cullen, please. 
+[00:01:18] Garry Moore: All right, to help to classify Dr. X's secret, I'll tell you it concerns something that he did. And we'll start with Bill Cullen, please.
 
-[00:01:22] Bill Cullen: The name "Dr. X" always reminds me of those motion pictures, like The Mysterious Machine of Dr. X or something like that. You didn't make any of those pictures, did you, Doctor? 
+[00:01:22] Bill Cullen: The name "Dr. X" always reminds me of those motion pictures, like The Mysterious Machine of Dr. X or something like that. You didn't make any of those pictures, did you, Doctor?
 
-[00:01:36] Garry Moore: You didn't make any of those particular movies? 
+[00:01:36] Garry Moore: You didn't make any of those particular movies?
 
-[00:01:37] Dr. Farnsworth: No. 
+[00:01:37] Dr. Farnsworth: No.
 
-[00:01:38] Bill Cullen: Dr. X, is this something you did recently? 
+[00:01:38] Bill Cullen: Dr. X, is this something you did recently?
 
-[00:01:43] Dr. Farnsworth: Well, I'm still working on it. 
+[00:01:43] Dr. Farnsworth: Well, I'm still working on it.
 
-[00:01:43] Bill Cullen: Is it something you did and are doing, then, in the normal course of your work? 
+[00:01:43] Bill Cullen: Is it something you did and are doing, then, in the normal course of your work?
 
-[00:01:48] Dr. Farnsworth: Yes. 
+[00:01:48] Dr. Farnsworth: Yes.
 
-[00:01:49] Garry Moore: Let me say, Bill, lest we mislead you, however, that the original work on this was not done recently. It's a continuing action, but the secret as stated was not done recently. 
+[00:01:49] Garry Moore: Let me say, Bill, lest we mislead you, however, that the original work on this was not done recently. It's a continuing action, but the secret as stated was not done recently.
 
-[00:02:00] Faye Emerson: If I gather right, Dr. X, you have been engaged in some kind of experimental work, which is still continuing, is that right? 
+[00:02:00] Faye Emerson: If I gather right, Dr. X, you have been engaged in some kind of experimental work, which is still continuing, is that right?
 
-[00:02:05] Dr. Farnsworth: That's right, yes. 
+[00:02:05] Dr. Farnsworth: That's right, yes.
 
-[00:02:11] Bill Cullen: Do you work in any kind of a laboratory or a place like that? 
+[00:02:11] Bill Cullen: Do you work in any kind of a laboratory or a place like that?
 
-[00:02:11] Dr. Farnsworth: Yes. 
+[00:02:11] Dr. Farnsworth: Yes.
 
-[00:02:15] Bill Cullen: Would this remotely or in any way be connected with psychiatric cases? 
+[00:02:15] Bill Cullen: Would this remotely or in any way be connected with psychiatric cases?
 
-[00:02:24] Dr. Farnsworth: Well, no... not at present. 
+[00:02:24] Dr. Farnsworth: Well, no... not at present.
 
-[00:02:24] Garry Moore: In very rare instances; it's been known to cause a few, but that really isn't the purpose of it. So let's say no. 
+[00:02:24] Garry Moore: In very rare instances; it's been known to cause a few, but that really isn't the purpose of it. So let's say no.
 
-[00:02:37] Faye Emerson: Um, there seems to be a great deal of laughter answering these questions. Could I assume, however, that what you are working on could be considered a blessing to mankind? 
+[00:02:37] Faye Emerson: Um, there seems to be a great deal of laughter answering these questions. Could I assume, however, that what you are working on could be considered a blessing to mankind?
 
-[00:02:44] Dr. Farnsworth: I think generally speaking, it has been a blessing, yes. 
+[00:02:44] Dr. Farnsworth: I think generally speaking, it has been a blessing, yes.
 
-[00:02:50] Dr. Farnsworth: It has been, and is. 
+[00:02:50] Dr. Farnsworth: It has been, and is.
 
-[00:03:08] Bill Cullen: Are you a dentist? 
+[00:03:08] Bill Cullen: Are you a dentist?
 
-[00:03:11] Dr. Farnsworth: No, I'm not a dentist. 
+[00:03:11] Dr. Farnsworth: No, I'm not a dentist.
 
-[00:03:16] Dr. Farnsworth: Yes, I'm a research man. 
+[00:03:16] Dr. Farnsworth: Yes, I'm a research man.
 
-[00:03:28] Dr. Farnsworth: Yes, I should say it were and has. 
+[00:03:28] Dr. Farnsworth: Yes, I should say it were and has.
 
-[00:03:37] Garry Moore: ...tell you that he is a Doctor of Science, in a scientific medicine—a scientific field. This is the famous Dr. Philo T. Farnsworth, who invented electronic television. 
+[00:03:37] Garry Moore: ...tell you that he is a Doctor of Science, in a scientific medicine—a scientific field. This is the famous Dr. Philo T. Farnsworth, who invented electronic television.
 
-[00:04:02] Dr. Farnsworth: No, no, I'm not. 
+[00:04:02] Dr. Farnsworth: No, no, I'm not.
 
-[00:04:13] Dr. Farnsworth: First television system, I was 14. 
+[00:04:13] Dr. Farnsworth: First television system, I was 14.
 
-[00:04:37] Dr. Farnsworth: Yes, there had been attempts to devise a television system using mechanical discs and rotating mirrors and vibrating mirrors—but all mechanics, all mirrors, all mechanical. 
+[00:04:37] Dr. Farnsworth: Yes, there had been attempts to devise a television system using mechanical discs and rotating mirrors and vibrating mirrors—but all mechanics, all mirrors, all mechanical.
 
-[00:04:51] Dr. Farnsworth: My contribution was to take out the moving parts and make the thing entirely electronic. And that was the concept that I had when I was just a freshman in high school. 
+[00:04:51] Dr. Farnsworth: My contribution was to take out the moving parts and make the thing entirely electronic. And that was the concept that I had when I was just a freshman in high school.
 
-[00:05:07] Dr. Farnsworth: Oh yes, there are literally thousands of inventions important to television. 
+[00:05:07] Dr. Farnsworth: Oh yes, there are literally thousands of inventions important to television.
 
-[00:05:18] Dr. Farnsworth: I hold something in excess of 165 American patents. 
+[00:05:18] Dr. Farnsworth: I hold something in excess of 165 American patents.
 
 You said
 
@@ -697,4 +697,3 @@ Reliability and Range: Mechanical sets were expensive, unreliable, and frequentl
 Gemini is AI and can make mistakes.
 
 1Password menu is available. Press down arrow to select.
-

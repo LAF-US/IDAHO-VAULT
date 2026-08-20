@@ -15,10 +15,11 @@ related:
   - lfinneytweets
 ---
 
-To date there are three cannabis drugs approved by the FDA: one CBD seizure medication and two synthetic THC medications. 
+To date there are three cannabis drugs approved by the FDA: one CBD seizure medication and two synthetic THC medications.
 <https://t.co/5CNyGCA1YV>
 
 ## Links
+
 - <https://www.fda.gov/news-events/public-health-focus/fda-regulation-cannabis-and-cannabis-derived-products-including-cannabidiol-cbd#approved>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

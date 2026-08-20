@@ -31,7 +31,7 @@ related:
 The Etymologist's gift first, because the roots tell the whole story:
 
 | Term | Root | What it carries |
-|---|---|---|
+| --- | --- | --- |
 | **Material** | Latin *materia* ("matter, stuff, timber") ← *māter* ("mother") | the **mother-substance** — the usable stuff from which things are made; the territory itself, prior to representation |
 | **Map** | Latin *mappa* ("napkin, cloth, sheet") | a **cloth** — the *mappa mundi* is literally the "world-cloth"; the representation drawn on fabric |
 | **Model** | Latin *modulus* (dim. of *modus*, "measure") ← PIE *\*med-* ("to measure") | the **little measure** — the template/standard by which things are made or judged |
@@ -39,6 +39,7 @@ The Etymologist's gift first, because the roots tell the whole story:
 Read together: **a model (a measure) is applied to draw a map (a cloth) of the material (the mother-stuff).** Three tiers; three roots — *measure, cloth, mother.*
 
 Two of these roots reach straight into the session's other work:
+
 - **Map ← *mappa* (cloth)** ties the map/territory distinction to the whole Weave/cloth thread (`THE-WEAVE-MYSTRA-COSMOLOGY`, `SELVAGE-AND-SEAM`) and to `OF-THE-CLOTH`. The map *is* cloth — a woven representation. A *mappa mundi* and a vestment are cut from the same Latin word.
 - **Model ← *modulus* (measure)** ties to *measurement* (← *mētīrī*) from `SUPERPOSITION-AND-SUBLATION`. The model is the **measure you apply**; mapping is measuring the material against the model; naming-as-measurement is the magister applying the measure that collapses the `*`.
 
@@ -85,7 +86,7 @@ This has an exact information-theoretic floor — see [[LOSSY-AND-LOSSLESS-COMPR
 Mistaking a representation for the material is the master failure mode, and the session has named its forms:
 
 | Error | Tier confused | Vault name |
-|---|---|---|
+| --- | --- | --- |
 | **Map mistaken for Material** | the cloth taken for the land | the **Lich** — the representation asserted as live reality; *consistency mistaken for provenance* |
 | **Model mistaken for Material** | the measure taken for the totality | the **Demiurge** — the delegated scope/theory mistaken for the whole of authority (`.claude/MEMORY/SESSION-2026-05-22.md`) |
 | **1:1 over-fidelity** (Borges/Funes) | the map swollen to the size of the land | over-engineering; the doctrine that tries to capture everything and so orients nothing — against the vault's *"do not over-engineer; only build what's needed now"* |
@@ -109,7 +110,7 @@ Korzybski's structural-similarity point connects the two reports. A map is usefu
 Map/Material is the general case of every distinction this session worked. Each is a representation, lawful exactly as long as it is held *as* a representation:
 
 | Representation | Material it maps | Held lawfully as… |
-|---|---|---|
+| --- | --- | --- |
 | **mask / persona** | the person/agent | the aperture, not the face |
 | **name** | the thing | the measure that collapses the `*`, not the thing |
 | **fictive person** | the natural person | chartered standing, not inherent being |

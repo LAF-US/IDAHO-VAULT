@@ -24,6 +24,7 @@ related:
 Post-election audit in Valley County, ID #idleg #idpol @IDSecOfState <https://t.co/fMoYoitTZX>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/GPLSb1ZasAUj9Qf.jpg)
 - ![alt text needed](https://pbs.twimg.com/media/GPLSb3dakAESQiD.jpg)
 - ![alt text needed](https://pbs.twimg.com/media/GPLSb0fasAAa1kB.jpg)

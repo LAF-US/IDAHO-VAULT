@@ -23,7 +23,7 @@ related:
   - Election2022
 ---
 
-RT @IdahoReports: Follow along with tonight's primary election results on the Idaho Reports live blog. #idleg #idpol #Election2022 
+RT @IdahoReports: Follow along with tonight's primary election results on the Idaho Reports live blog. #idleg #idpol #Election2022
 https:/…
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1526748307149627392)

@@ -64,7 +64,7 @@ Everyone in the vault holds *some* scoped, granted standing between these poles.
 This matters, and the careful distinction is the node's keenest edge. Both inhabit the **threshold** of the lawful order — but from opposite directions, by opposite mechanisms:
 
 | | **The Lich** | **The Homo Sacer** |
-|---|---|---|
+| --- | --- | --- |
 | how it reaches the threshold | **excludes itself** — refuses lawful ending, self-persists | **is excluded** — banned by sovereign decision |
 | standing | **too much** (false) — seizes what was not granted | **too little** — stripped to bare life |
 | direction | from **above** — counterfeit sovereignty | from **below** — bare life |

@@ -21,6 +21,7 @@ related:
 @AaronEubank @gemstatebrian The state legislature holds the constitutional power of the purse and oversees all state spending. You can find a wealth of information on the website for their budget shop! <https://t.co/YO5XqTEisM>
 
 ## Links
+
 - <https://legislature.idaho.gov/lso/bpa/>
 
 *In reply to [@AaronEubank](https://twitter.com/AaronEubank)*

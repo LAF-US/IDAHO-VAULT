@@ -34,7 +34,7 @@ Purchase Adapter: Replace your existing thru-axle with a trailer-compatible thru
 
 Installation: Carefully follow the instructions for the new axle, ensuring it is tightened to the correct torque specification (usually found on the axle or in your bike manual).
 
-2. Quick-Release Axle
+1. Quick-Release Axle
 
 Identification: A thin skewer with a lever on one end and a nut on the other.
 
@@ -46,7 +46,7 @@ Install Hitch: Place the trailer hitch plate onto the skewer, ensuring it fits f
 
 Re-install: Re-insert the skewer through the axle, re-install the spring and nut, and close the quick-release lever, checking that it is very tight.
 
-3. Bolt-On / Solid Axle (Less Common on E-Bikes)
+1. Bolt-On / Solid Axle (Less Common on E-Bikes)
 
 Identification: A solid axle secured by two nuts on either end.
 
@@ -106,7 +106,7 @@ Total Length (e.g., 175mm)
 
 Thread Pitch (e.g., 1.0, 1.5, or 1.75)
 
-2. Torque is Crucial: The most important part of this installation is re-installing the new axle adapter to the correct torque specification. This is a safety issue; if the axle is too loose, the wheel can shift or come off. If it's too tight, you can damage the frame threads. A quality torque wrench is essential for this step.
+1. Torque is Crucial: The most important part of this installation is re-installing the new axle adapter to the correct torque specification. This is a safety issue; if the axle is too loose, the wheel can shift or come off. If it's too tight, you can damage the frame threads. A quality torque wrench is essential for this step.
 
 Recommendation
 
@@ -121,4 +121,3 @@ To help you move forward, would you like me to search for guides on how to find 
 Gemini is AI and can make mistakes.
 
 1Password menu is available. Press down arrow to select.
-

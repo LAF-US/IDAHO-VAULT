@@ -17,6 +17,7 @@ related:
 What a series of events <https://t.co/NnOnQkt349>
 
 ## Links
+
 - <https://x.com/RachelSpacek/status/1268288047881183234>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1268295378153074689)

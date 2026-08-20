@@ -29,6 +29,7 @@ related:
 I crunched some numbers over on the @IdahoReports blog. Go check it out, and tune in to tonight's episode for conversations with Deputy @IDSecOfState Chad Houck and @KBSX915's @RadioDawson on election results and #IdahoCOVID19. #idleg #idpol <https://t.co/PQSTyl9Ql3>
 
 ## Links
+
 - <https://x.com/IdahoReports/status/1324784541102387202>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1324785269124464640)

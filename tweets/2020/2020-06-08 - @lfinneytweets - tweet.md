@@ -17,6 +17,7 @@ related:
 @RHaunID <https://t.co/XyzcXIyrPy>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/EZ9GxRNVcAE8lxI.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1269811456037384192)

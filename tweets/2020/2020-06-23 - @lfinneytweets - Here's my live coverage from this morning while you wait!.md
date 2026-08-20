@@ -15,10 +15,11 @@ related:
   - lfinneytweets
 ---
 
-Here's my live coverage from this morning while you wait! 
+Here's my live coverage from this morning while you wait!
 <https://t.co/aqHWiu93dc>
 
 ## Links
+
 - <https://threadreaderapp.com/thread/1275442380049547266.html>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

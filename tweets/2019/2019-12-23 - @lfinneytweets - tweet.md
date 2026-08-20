@@ -17,6 +17,7 @@ related:
 <https://t.co/VT0XvZVcPL>
 
 ## Links
+
 - <https://www.pbs.org/wgbh/frontline/article/inside-idahos-long-legislative-battle-over-climate-change-education/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1209176194416930816)

@@ -12,7 +12,7 @@ The six-sheet selection was intentionally non-random. It samples: procedural cap
 ## Selected sheets
 
 | Sheet | Direct subject | Why selected |
-|---|---|---|
+| --- | --- | --- |
 | 11 | U.S. congressional pro forma sessions | Distinguishes formal legal capacity from actual substantive work. |
 | 20 | Levelset/governance conflict between Gemini, quoted Claude, and quoted Copilot | Records a direct early collision over agent authority, prompt injection, and externally recorded constraints. |
 | 31 | Untitled/empty shard | Tests the Book’s completeness and the Index’s ability to describe actual content. |
@@ -69,7 +69,7 @@ The sheet is therefore not reliable as a person-identification ledger. Its stron
 ## Cross-sheet structures
 
 | Recurrent structure | What the six sheets show |
-|---|---|
+| --- | --- |
 | Capacity versus action | Sheet 11 distinguishes formal competence from actual work; other sheets repeatedly confuse narrative capability with authorized action. |
 | Named authority versus real authority | Sheets 20 and 60 show generated labels, roles, and hierarchy claims. Their existence in a dialogue does not create authority. |
 | Incompleteness | Sheet 31 is blank; Sheet 72 declares the Book incomplete. The recovered corpus cannot be assumed to be full or self-explanatory. |

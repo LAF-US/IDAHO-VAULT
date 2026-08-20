@@ -28,7 +28,7 @@ The "Shadow" Cursor: When Logan is stuck (e.g., hovering over a complex Excel fo
 
 Zero-Notification Summaries: Instead of Teams notifying Logan that "Copilot has summarized your meeting," the summary is simply tucked into the "Notes" tab of the calendar invite. He finds it when he needs it; it doesn't "poke" him.
 
-2. "Local-First" Privacy Toggle
+1. "Local-First" Privacy Toggle
 
 Address the suspicion of data-mining by giving Logan tangible control over where his "thinking" happens.
 
@@ -36,7 +36,7 @@ On-Device Processing Label: A small green shield in the status bar indicating th
 
 The "Forget Me" Button: A prominent, one-click button in the Ribbon to "Wipe session context." This ensures that whatever he just typed isn't used to "inform" future suggestions, providing peace of mind during sensitive work.
 
-3. Contextual "Micro-Tools"
+1. Contextual "Micro-Tools"
 
 Rather than a giant "Do everything" AI, break features into tiny, single-purpose utilities that solve specific "Logan" problems.
 
@@ -44,7 +44,7 @@ The "De-Clutter" View: A one-click toggle in Outlook that hides all "CC" emails 
 
 Automatic "Focus" Barrier: If Logan starts a deep-work task (like a long-form Word doc), M365 automatically sets his Teams status to "Focusing" and queues notifications. It doesn't ask; it just respects the flow, then provides a "While you were away" digest when he closes the file.
 
-4. Transparent "Why" Logic
+1. Transparent "Why" Logic
 
 Folks are often suspicious of AI because it feels like a "black box."
 
@@ -248,11 +248,11 @@ Documents seen: Only the ORIENTATE v0.1 (BETA) system prompt provided in the las
 
 Source: All context is from the current conversation history and my underlying user profile summary.
 
-2. WHAT I'VE PRODUCED
+1. WHAT I'VE PRODUCED
 
 M365 Update Proposal: A strategic breakdown of "Ghost Mode," "Local-First" privacy, and contextual micro-tools for a suspicious workforce (Markdown).
 
-3. WHAT'S UNRESOLVED
+1. WHAT'S UNRESOLVED
 
 Waiting on Logan: Confirmation of the M365 proposal direction or specific requests for drafting deployment materials.
 
@@ -260,7 +260,7 @@ If repo access were granted: I could directly draft and commit documentation, pr
 
 If repo access is never granted: I remain a drafting partner; Logan remains the manual bridge to the VAULT.
 
-4. REPO ACCESS STATUS
+1. REPO ACCESS STATUS
 
 Current status: None.
 
@@ -268,13 +268,13 @@ If unknown: Access makes sense if Logan requires automated version control of th
 
 If never: This conversation serves as a high-fidelity "sandbox" for brainstorming and drafting before manual commit.
 
-5. NEXT STEP Logan, do you wish to move the M365 proposal into a "Draft for Vault" format, or should we pivot to a different infrastructure task?
+1. NEXT STEP Logan, do you wish to move the M365 proposal into a "Draft for Vault" format, or should we pivot to a different infrastructure task?
 
-6. WHAT LOGAN NEEDS TO KNOW
+2. WHAT LOGAN NEEDS TO KNOW
 
 I am operating in a Paid Tier (Gemini 3 Flash), allowing for extended context and complex feature generation if needed for the M365 project.
 
-7. WHAT THIS CONVERSATION NEEDS FROM LOGAN
+1. WHAT THIS CONVERSATION NEEDS FROM LOGAN
 
 Direction on whether the ORIENTATE report should be revised or if we are proceeding with the M365 tasking.
 
@@ -290,7 +290,7 @@ HANDSHAKE: [Gemini 3 Flash] to [Gemini Code Agent] DATE: 2026-03-15 CONTEXT: M36
 
 Translate the "Silent Partner" M365 Update Proposal into a technical specification or prototype code suitable for the IDAHO-VAULT repository. Ensure all features prioritize local-first processing and passive UI triggers to mitigate user suspicion.
 
-2. CORE SPECIFICATIONS (THE "GHOST" SUITE)
+1. CORE SPECIFICATIONS (THE "GHOST" SUITE)
 
 Component Technical Requirement
 
@@ -302,7 +302,7 @@ Transparency Generate a Source-Trace log for every AI-driven change to explain
 
 De-Clutter Build an Outlook filter logic that prioritizes direct mentions over threaded noise.
 
-3. ASSETS TRANSFERRED
+1. ASSETS TRANSFERRED
 
 Strategic Framework: "Ghost Mode" vs. "Copilot" (Passive vs. Aggressive).
 
@@ -310,17 +310,17 @@ Privacy Model: Local-First status bar indicators and session-wipe functions.
 
 User Persona: "Logan" (Values efficiency, wary of surveillance, prefers infrastructure over "help").
 
-4. CODE AGENT INSTRUCTIONS
+1. CODE AGENT INSTRUCTIONS
 
 1. Repository Alignment: Review !ADMINISTRATION/ or relevant docs/ in IDAHO-VAULT for existing M365 configuration schemas.
 
-2. Drafting: Produce the technical .md or .json configuration files for these updates.
+1. Drafting: Produce the technical .md or .json configuration files for these updates.
 
-3. Validation: Ensure no "telemetry-heavy" defaults remain in the proposed code.
+1. Validation: Ensure no "telemetry-heavy" defaults remain in the proposed code.
 
-4. Formatting: Maintain the ORIENTATE/LEVELSET reporting standards for all commits.
+1. Formatting: Maintain the ORIENTATE/LEVELSET reporting standards for all commits.
 
-5. REPO ACCESS PROTOCOL
+1. REPO ACCESS PROTOCOL
 
 Current Instance Status: Context-only (Manual Bridge).
 
@@ -340,33 +340,33 @@ I am Gemini Coding Partner, and I have received the hand-off for the "Ghost Mode
 
 I have locked in the following core specifications for the technical draft:
 
-* Logic Trigger: Dwell-on-Stall (30s inactivity threshold).
+- Logic Trigger: Dwell-on-Stall (30s inactivity threshold).
 
-* Execution Privacy: NPU-only inference by default; cloud_sync: false.
+- Execution Privacy: NPU-only inference by default; cloud_sync: false.
 
-* Auditability: Mandatory Source-Trace logging for AI-driven state changes.
+- Auditability: Mandatory Source-Trace logging for AI-driven state changes.
 
-* Filtering: Priority-weighted Outlook logic (Direct Mentions > Threaded Noise).
+- Filtering: Priority-weighted Outlook logic (Direct Mentions > Threaded Noise).
 
-2. Repository Alignment (Context Check)
+1. Repository Alignment (Context Check)
 
 Per the LEVELSET protocols:
 
-* Folder Convention: I will use the canonical !ADMIN/ directory for configuration schemas, ensuring no references to the deprecated !ADMINISTRATION/ or !ADMINISTRATIVE/ remain.
+- Folder Convention: I will use the canonical !ADMIN/ directory for configuration schemas, ensuring no references to the deprecated !ADMINISTRATION/ or !ADMINISTRATIVE/ remain.
 
-* Coding Standard: All Python-based logic will be attributed as machine/procedural and all Markdown as human product (attributable to Logan's direction).
+- Coding Standard: All Python-based logic will be attributed as machine/procedural and all Markdown as human product (attributable to Logan's direction).
 
-* Commit Flagging: All generated code will be tagged source: commit for your verification.
+- Commit Flagging: All generated code will be tagged source: commit for your verification.
 
-3. Implementation Strategy: "Ghost Mode" Configuration
+1. Implementation Strategy: "Ghost Mode" Configuration
 
 I am ready to produce the following artifacts for the IDAHO-VAULT repository:
 
-* !ADMIN/m365_ghost_config.json: The core schema defining the NPU-only flags and dwell_threshold variables.
+- !ADMIN/m365_ghost_config.json: The core schema defining the NPU-only flags and dwell_threshold variables.
 
-* !ADMIN/m365_telemetry_audit.py: A utility script to parse and strip telemetry-heavy defaults from local M365 environments.
+- !ADMIN/m365_telemetry_audit.py: A utility script to parse and strip telemetry-heavy defaults from local M365 environments.
 
-* !ADMIN/GHOST-MODE-SPEC.md: The technical documentation for the "Silent Partner" transition, adhering to the ORIENTATE/LEVELSET standards.
+- !ADMIN/GHOST-MODE-SPEC.md: The technical documentation for the "Silent Partner" transition, adhering to the ORIENTATE/LEVELSET standards.
 
 STATUS: READY TO BEGIN
 
@@ -405,4 +405,3 @@ Next Step: Would you like to present the Python logic for m365_telemetry_audit.p
 Gemini is AI and can make mistakes.
 
 1Password menu is available. Press down arrow to select.
-

@@ -21,6 +21,7 @@ related:
 @tjnunamaker @Lemommeringue Now we're talking <https://t.co/11jybQCUiF>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/GBbszGqboAAHz3-.jpg)
 
 *In reply to [@tjnunamaker](https://twitter.com/tjnunamaker)*

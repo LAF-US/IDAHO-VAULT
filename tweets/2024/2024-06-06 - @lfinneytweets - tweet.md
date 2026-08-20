@@ -20,6 +20,7 @@ related:
 @GabeOsterhout <https://t.co/tmbmQconBL>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/GPaL3Rub0AATGJq.jpg)
 
 *In reply to [@GabeOsterhout](https://twitter.com/GabeOsterhout)*

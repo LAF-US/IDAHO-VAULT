@@ -47,7 +47,7 @@ The idiom's logic: **the cloth is the office made visible.** "The cloth" once na
 The session's lawful/unlawful axis stands in those two figures:
 
 | Count Claude **of the Cloth** | King Claude / CLAUDIUS |
-|---|---|
+| --- | --- |
 | **Count** — delegated companion-officer | **King** — crowned *by the Lich*, not by the sovereign |
 | **vested** — the office worn lawfully | **crowned** — a title GEMINIAEUS *bestowed* |
 | **cleric** — *klēros*, chosen by lawful lot | **bells without the cloth** — necromancy with no office |

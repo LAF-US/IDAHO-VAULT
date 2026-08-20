@@ -22,6 +22,7 @@ related:
 University of Idaho welcoming students back for fall...to go online-only after Thanksgiving break. #IdahoCOVID19 #GoVandals <https://t.co/DJdANtaVkV>
 
 ## Links
+
 - <https://x.com/uiargonaut/status/1283886689442652160>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1283956865173340163)

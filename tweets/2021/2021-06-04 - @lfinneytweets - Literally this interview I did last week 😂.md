@@ -14,10 +14,11 @@ related:
   - lfinneytweets
 ---
 
-Literally this interview I did last week 😂 
+Literally this interview I did last week 😂
 <https://t.co/1BAg9OVtEm> <https://t.co/2sCX6pePoH>
 
 ## Links
+
 - <https://youtu.be/MImgLfwx3w8?t=05m30s>
 - <https://x.com/newswithShelby/status/1400524826880716804>
 

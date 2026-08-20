@@ -17,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoReports: New from @RuthBrownNews on the Idaho Reports blog: 
+RT @IdahoReports: New from @RuthBrownNews on the Idaho Reports blog:
 Population growth outpaces tax increases in county budgeting, says @I…
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1360389947039965184)

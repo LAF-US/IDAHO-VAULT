@@ -17,6 +17,7 @@ related:
 Current & former ID governors <https://t.co/gNowbPrA7n>
 
 ## Links
+
 - <https://x.com/GovernorLittle/status/1124336722047787008>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1124371287915188224)

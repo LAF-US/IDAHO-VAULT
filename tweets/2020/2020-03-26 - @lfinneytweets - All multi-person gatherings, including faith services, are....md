@@ -18,6 +18,7 @@ related:
 All multi-person gatherings, including faith services, are suspended. (page 4) <https://t.co/6NJ2KC0ZGW>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/ET_t_qxU4AA8Mln.png)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

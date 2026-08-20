@@ -22,11 +22,11 @@ related:
 ## Source
 
 | Field | Value |
-|---|---|
+| --- | --- |
 | **Author** | H.P. Lovecraft (1890–1937) |
 | **Key sea stories** | "Dagon" (1919), "The Call of Cthulhu" (1928), "The Shadow over Innsmouth" (1936), "The Temple" (1925), "The White Ship" (1919) |
-| **Wikipedia** | https://en.wikipedia.org/wiki/Cthulhu_Mythos |
-| **Sea literature ref** | https://sites.williams.edu/searchablesealit/l/lovecraft-howard-phillips/ |
+| **Wikipedia** | <https://en.wikipedia.org/wiki/Cthulhu_Mythos> |
+| **Sea literature ref** | <https://sites.williams.edu/searchablesealit/l/lovecraft-howard-phillips/> |
 
 ## Summary
 
@@ -37,7 +37,7 @@ The major sea works share a pattern: something rises from below, or something
 below reaches up:
 
 | Work | Year | What rises |
-|---|---|---|
+| --- | --- | --- |
 | **"Dagon"** | 1919 | A monolith from the ocean floor, bearing the glyph of a sea deity |
 | **"The Call of Cthulhu"** | 1928 | R'lyeh rises from the Pacific; Cthulhu stirs |
 | **"The Shadow over Innsmouth"** | 1936 | The Deep Ones come from below to reclaim their hybrid descendants |
@@ -71,12 +71,13 @@ The sea is the *depth dimension* — complementary to the mountains (vertical
 barrier) and the snow fields (blank surface).
 
 | Surface | What it covers |
-|---|---|
+| --- | --- |
 | **Snow fields** (Antarctica) | The buried city of the Elder Things |
 | **Sea** (oceans) | R'lyeh, Y'ha-nthlei, the Deep One cities |
 | **Mountains** (barrier) | The range that must be crossed to reach either |
 
 In vault register:
+
 - The **snow fields** are the root directory — 28,000+ entries, flat and
   overwhelming, covering a buried structure.
 - The **sea** is the depth of git history, branch topology, and agent
@@ -107,7 +108,7 @@ history.
 - Lovecraft, H.P. "The Temple" (1925)
 - Lovecraft, H.P. "The White Ship" (1919)
 - Williams College, Searchable Sea Literature:
-  https://sites.williams.edu/searchablesealit/l/lovecraft-howard-phillips/
+  <https://sites.williams.edu/searchablesealit/l/lovecraft-howard-phillips/>
 
 Witnessed,
 Gorp

@@ -19,6 +19,7 @@ related:
 Check out this @motherboard story on hospitals not being able to repair their ventilators. 1998 digital copyright law allows companies to maintain control over proprietary software in their electronics, often locking consumers out of repairing physical products they've purchased. <https://t.co/1VS6K49CUB>
 
 ## Links
+
 - <https://x.com/jason_koebler/status/1240281046765223939>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1240632393846771712)

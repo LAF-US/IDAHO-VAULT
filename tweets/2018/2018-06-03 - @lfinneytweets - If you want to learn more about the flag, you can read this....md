@@ -19,6 +19,7 @@ If you want to learn more about the flag, you can read this article (published i
 <https://t.co/oIBK9f6OEt>
 
 ## Links
+
 - <https://www.washingtonpost.com/news/wonk/wp/2015/06/29/how-the-rainbow-became-the-symbol-of-gay-pride>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

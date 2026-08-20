@@ -21,10 +21,11 @@ related:
   - idpol
 ---
 
-The Idaho Legislature's interim Property Tax Committee is meeting now. You can watch the stream live from @IdahoPTV here. #idleg #idpol 
+The Idaho Legislature's interim Property Tax Committee is meeting now. You can watch the stream live from @IdahoPTV here. #idleg #idpol
 <https://t.co/72pDC6JDS7>
 
 ## Links
+
 - <https://www.idahoptv.org/shows/idahoinsession/ew41/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1431273316761804808)

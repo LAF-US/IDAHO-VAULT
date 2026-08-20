@@ -19,11 +19,12 @@ related:
   - Boise
 ---
 
-RT @maggieKTVB7: Graffiti at the Capitol building. #Boise 
+RT @maggieKTVB7: Graffiti at the Capitol building. #Boise
 
 Photos: Lori June <https://t.co/NIrIKOpKtI>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/EZrMSdHUEAAeOXh.jpg)
 - ![alt text needed](https://pbs.twimg.com/media/EZrMSdgXsAUYeFG.jpg)
 - ![alt text needed](https://pbs.twimg.com/media/EZrMSdfX0AIxhoP.jpg)

@@ -17,6 +17,7 @@ related:
 @bychadsokol <https://t.co/FszQ7VHVOG>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/ErG-90FVkAQ8Tan.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1347067734362779648)

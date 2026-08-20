@@ -3,7 +3,7 @@
 Scanned 186 notes with URL fields.
 
 | Status | Count |
-|---|---|
+| --- | --- |
 | ✅ Live | 132 |
 | ❌ Dead — snapshot found | 4 |
 | ❌ Dead — no archive | 20 |
@@ -24,7 +24,7 @@ is in the audit tooling's URL extraction, not in these two files.
 ## Dead — Wayback Snapshot Found
 
 | Note | Original URL | Snapshot | Archived |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | `2019-09-12 - Sandpoint Reader - Sound and fury.md` | [https://sandpointreader.com/sound-and-fury/](https://sandpointreader.com/sound-and-fury/) | [snapshot](https://web.archive.org/web/20191018010123/http://sandpointreader.com/sound-and-fury/) | 2019-10-18 |
 | `2020-01-30 - Sandpoint Reader - Boiling point reached in gun case.md` | [https://sandpointreader.com/boiling-point-reached-in-gun-cas](https://sandpointreader.com/boiling-point-reached-in-gun-case/) | [snapshot](https://web.archive.org/web/20200805073455/https://sandpointreader.com/boiling-point-reached-in-gun-case/) | 2020-08-05 |
 | `2020-05-14 - Sandpoint Reader - Three N. Idahoans front suit challenging constitutionality of COVID-19 restrictions.md` | [https://sandpointreader.com/three-n-idahoans-front-suit-chal](https://sandpointreader.com/three-n-idahoans-front-suit-challenging-constitutionality-of-covid-19-restrictions/) | [snapshot](https://web.archive.org/web/20200531095514/https://sandpointreader.com/three-n-idahoans-front-suit-challenging-constitutionality-of-covid-19-restrictions/) | 2020-05-31 |
@@ -33,7 +33,7 @@ is in the audit tooling's URL extraction, not in these two files.
 ## Dead — No Archive Found
 
 | Note | Dead URL | HTTP Status |
-|---|---|---|
+| --- | --- | --- |
 | `2007-05-17 - Lewiston Tribune - Construction time for new Nez Perce County Jail pushed to 18 months.md` | <https://www.lmtribune.com/northwest/construction-time-for-new-nez-perce-county-j> | 403 |
 | `2016-08-12 - Sandpoint Reader - Anti-abortion protesters disrupt community.md` | <https://sandpointreader.com/anti-abortion-protesters-disrupt-community/> | 403 |
 | `2017-11-03 - Brown Political Review - All Blaine, No Gain.md` | <https://brownpoliticalreview.org/2017/11/blaine-no-gain/> | 404 |
@@ -58,7 +58,7 @@ is in the audit tooling's URL extraction, not in these two files.
 ## Unreachable (Network Error)
 
 | Note | URL |
-|---|---|
+| --- | --- |
 | `2020-01-06 - McClure - Little sets education priorities in state of the state address.md` | <https://www.loganfinney.com/idaho-legislature-2020/1/6/state-of-the-state> |
 | `2020-01-16 - McClure - Bill aims to shift drug policy from arrest to treatment.md` | <https://www.loganfinney.com/idaho-legislature-2020/1/16/drug-trafficking> |
 | `2020-01-22 - McClure - Committee considers narrowing presidential search finalists.md` | <https://www.loganfinney.com/idaho-legislature-2020/1/21/university-president-fin> |

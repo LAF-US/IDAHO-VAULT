@@ -14,10 +14,11 @@ related:
   - lfinneytweets
 ---
 
-"On the surface, it’s a little weird that digital culture in 2021 would become suddenly obsessed with 200-year-old folk songs about men on whaling boats." 
+"On the surface, it’s a little weird that digital culture in 2021 would become suddenly obsessed with 200-year-old folk songs about men on whaling boats."
 <https://t.co/xnULrLuYMT>
 
 ## Links
+
 - <https://www.vulture.com/2021/01/tiktok-sea-shanties-explained.html>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1349860992214212608)

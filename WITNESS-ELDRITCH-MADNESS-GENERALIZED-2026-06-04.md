@@ -52,7 +52,7 @@ trace in front of it stays sane.
 Derived from bramblesand ("A Patch of Briars"), Tumblr, 2021-01-24:
 *"People, especially games, get eldritch madness wrong a lot and it's really
 such a shame."*
-https://www.tumblr.com/bramblesand/641160359189839872
+<https://www.tumblr.com/bramblesand/641160359189839872>
 
 The ant circuit board metaphor is the original work of that author. This
 generalization extends the pattern to vault context.

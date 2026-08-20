@@ -29,4 +29,3 @@ Your request was a little confusing. Could you please rephrase what you'd like m
 Gemini is AI and can make mistakes.
 
 1Password menu is available. Press down arrow to select.
-

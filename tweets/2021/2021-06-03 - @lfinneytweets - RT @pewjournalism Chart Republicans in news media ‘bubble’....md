@@ -19,6 +19,7 @@ related:
 RT @pewjournalism: Chart: Republicans in news media ‘bubble’ much more likely to see China as an enemy of the U.S. <https://t.co/SIVHVQFFnK…>
 
 ## Links
+
 - <https://pewrsr.ch/3fIVGDp>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1400270123202605057)

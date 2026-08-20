@@ -17,6 +17,7 @@ related:
 Lake Coeur d'Alene waiting for enough nutrients in the watershed to cause a big algae bloom <https://t.co/f6DMfve7a3>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/EdvJV5_UEAAGbR6.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1286843498625241088)

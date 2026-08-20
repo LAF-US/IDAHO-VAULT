@@ -17,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoPTV: TODAY at 1pm MT / 12pm PT, @GovernorLittle will hold a press conference on COVID-19 in Idaho. 
+RT @IdahoPTV: TODAY at 1pm MT / 12pm PT, @GovernorLittle will hold a press conference on COVID-19 in Idaho.
 
 Watch LIVE on Idaho Public Te…
 

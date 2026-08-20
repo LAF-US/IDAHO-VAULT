@@ -19,6 +19,7 @@ related:
 RT @IdahoOnYourSide: Gobernador de Idaho declara estado de emergencia. Esto es todo lo que sabemos del COVID-19 <https://t.co/aL0I8xEBRX> htt…
 
 ## Links
+
 - <https://buff.ly/3aLom9A>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1238675341847097349)

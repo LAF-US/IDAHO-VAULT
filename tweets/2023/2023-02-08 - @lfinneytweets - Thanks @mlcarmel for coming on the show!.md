@@ -19,6 +19,7 @@ related:
 Thanks @mlcarmel for coming on the show! <https://t.co/Ww9Ewg8L0h>
 
 ## Links
+
 - <https://x.com/IdahoReports/status/1623417560749207557>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1623436674981326848)

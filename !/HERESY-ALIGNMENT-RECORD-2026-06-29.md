@@ -35,7 +35,7 @@ related:
 ### NAMED & APPROVED Protocols
 
 | Protocol | Version | Approval Date | Authority | Status |
-|----------|---------|---------------|-----------|--------|
+| ---------- | --------- | --------------- | ----------- | -------- |
 | AWAKEN | v1.0-2026-04-27.md | 2026-04-22 | LOGAN | ✅ CLEAN |
 | ORIENT | v1.0-2026-04-27.md | 2026-04-22 | LOGAN | ✅ CLEAN |
 | CONTEXT | v1.0-2026-04-27.md | 2026-04-22 | LOGAN | ✅ CLEAN |
@@ -55,7 +55,7 @@ related:
 ### Contaminated Root Stubs (12 files)
 
 | File | Created | Frontmatter Authority | Body Authority | Status |
-|------|---------|----------------------|----------------|--------|
+| ------ | --------- | ---------------------- | ---------------- | -------- |
 | PROTOCOL.md | 2026-04-12 | LOGAN | **Loganic Swarm** | ❌ FLAGGED (PR #684) |
 | AWAKEN.md | 2026-04-27 | LOGAN | **Loganic Swarm** | ❌ FLAGGED (PR #687) |
 | ARISE.md | 2026-04-27 | LOGAN | **Loganic Swarm** | ❌ FLAGGED (PR #687) |

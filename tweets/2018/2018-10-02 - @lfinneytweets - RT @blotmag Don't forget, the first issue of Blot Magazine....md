@@ -19,6 +19,7 @@ related:
 RT @blotmag: Don't forget, the first issue of Blot Magazine hits stands Oct. 8. <https://t.co/nLEPmBzoDK>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/Dod-XVpU8AARuJ-.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1047221836402982912)

@@ -17,10 +17,11 @@ related:
   - idpol
 ---
 
-Jann Higdem of Pinehurst attended the CDA rally and said she likes McGeachin because she stands for constitutional rights and state sovereignty. 
+Jann Higdem of Pinehurst attended the CDA rally and said she likes McGeachin because she stands for constitutional rights and state sovereignty.
 “She doesn’t stand for the Supremacy Clause [of the Constitution] and she’s going to bring us back to normalcy,” Higdem said. #idpol <https://t.co/r4tXUOZWKq>
 
 ## Links
+
 - <https://x.com/DailyBee/status/1395378785902489601>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1395390899232804868)

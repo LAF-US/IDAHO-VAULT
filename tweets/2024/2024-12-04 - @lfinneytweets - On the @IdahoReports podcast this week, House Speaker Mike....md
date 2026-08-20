@@ -21,10 +21,11 @@ related:
   - idpol
 ---
 
-On the @IdahoReports podcast this week, House Speaker Mike Moyle tells me he is proud of the new maintenance budget process and wants to move Idaho toward zero-based budgeting in the near future. #idleg #idpol 
+On the @IdahoReports podcast this week, House Speaker Mike Moyle tells me he is proud of the new maintenance budget process and wants to move Idaho toward zero-based budgeting in the near future. #idleg #idpol
 <https://t.co/8XLpEy0n24>
 
 ## Links
+
 - <https://soundcloud.com/idaho-reports/episode-talking-taxes-with-house-speaker-mike-moyle/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1864423054845333904)

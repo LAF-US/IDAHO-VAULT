@@ -19,6 +19,7 @@ related:
 RT @elijah_nicholas: Heat wave kills fish on Priest River, highlighting the need for a cold-water bypass <https://t.co/HGlSchfBg2>
 
 ## Links
+
 - <https://www.spokesman.com/stories/2021/jul/07/heat-wave-kills-fish-on-priest-river-managers-say-/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1412881291037401089)

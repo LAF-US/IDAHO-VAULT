@@ -22,6 +22,7 @@ related:
 Was doing some Frank Church research for a project today and @POTUS jumpscared me... #idpol <https://t.co/3pX6N28htp>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/GRHfZ5naoAEUE_I.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1806470599222636736)

@@ -23,6 +23,7 @@ related:
 <https://t.co/JMrdRyApon>
 
 ## Links
+
 - <http://lso.legislature.idaho.gov/MediaArchive>
 
 *In reply to [@SurelySherly6](https://twitter.com/SurelySherly6)*

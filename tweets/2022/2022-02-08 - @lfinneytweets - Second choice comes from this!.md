@@ -18,6 +18,7 @@ related:
 Second choice comes from this! <https://t.co/NwXCGqMYAE>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/FLDYcx1UYAMNlGQ.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @Yamiche: Sarah Sanders is repeating over and over again that it's the law to separate immigrant children and from their parents. 
+RT @Yamiche: Sarah Sanders is repeating over and over again that it's the law to separate immigrant children and from their parents.
 
 Fact…
 

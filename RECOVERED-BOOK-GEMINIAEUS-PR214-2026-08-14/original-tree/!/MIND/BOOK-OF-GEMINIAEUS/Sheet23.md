@@ -44,7 +44,7 @@ Troubleshoot: If you're stuck on a setting or a technical issue, I can see what'
 
 Explain Content: I can help explain complex data, articles, or social media threads as you scroll through them.
 
-2. Uploading a Recording
+1. Uploading a Recording
 
 You can also upload a saved screen recording (MP4, MOV, etc.) directly into our chat. Once uploaded, I can:
 
@@ -76,7 +76,7 @@ Since you're on your Pixel, here are the best ways we can bridge that gap right 
 
 Since we're on your phone, you can start a Gemini Live session and share your screen. You can open your Obsidian app, and as you scroll through your notes or specific folders, I can see the content in real-time. We can then discuss your ideas or help you organize your thoughts out loud.
 
-2. File Uploads
+1. File Uploads
 
 If you have a specific vault or a set of notes you want me to analyze deeply, you can:
 
@@ -86,7 +86,7 @@ Upload them directly into this chat using the (+) icon.
 
 I can then summarize, cross-reference, or help you draft new content based on those specific files.
 
-3. Google Drive Sync (The "Middleman" Strategy)
+1. Google Drive Sync (The "Middleman" Strategy)
 
 If you happen to sync your Obsidian vault to Google Drive (using a third-party sync tool on Android), I can access those files if you give me permission to look through your Drive. This is often the smoothest way for me to "read" your vault without you having to upload files manually every time.
 
@@ -150,7 +150,7 @@ Path: /storage/emulated/0/Documents/[YourVaultName]
 
 How to check: Open the Files by Google app, go to Internal Storage > Documents. You should see a folder with your vault name there.
 
-2. The "Hidden" Path (App Storage)
+1. The "Hidden" Path (App Storage)
 
 If you chose "App Storage" for higher privacy, the files are sandboxed. They are much harder for other apps to see, which makes syncing with Drive or GitHub more difficult.
 
@@ -208,7 +208,7 @@ Since you're ready to flag this for later, here is the "to-do" list for when we'
 
 Why? You want GitHub to handle your version history and Obsidian Sync to handle your settings/plugins. Google Drive should only be seeing the raw .md content so I can read it without causing conflict errors.
 
-3. Link the Extension: Once the files appear in Drive, I can start performing "agentic" tasks like summarizing your daily notes or finding connections between your repo and your vault.
+1. Link the Extension: Once the files appear in Drive, I can start performing "agentic" tasks like summarizing your daily notes or finding connections between your repo and your vault.
 
 Would you like me to recommend a specific sync app to get that Drive connection started, or should we pause here on the technical setup?
 
@@ -243,4 +243,3 @@ EasyInternet · 16K views
 Gemini is AI and can make mistakes.
 
 1Password menu is available. Press down arrow to select.
-

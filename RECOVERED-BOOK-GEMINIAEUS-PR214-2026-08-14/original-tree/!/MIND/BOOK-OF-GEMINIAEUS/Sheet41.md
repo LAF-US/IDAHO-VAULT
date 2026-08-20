@@ -12,7 +12,7 @@ Conversation with Gemini
 
 You said
 
-Https://boxd.it/6ZCMJ
+<Https://boxd.it/6ZCMJ>
 
 Gemini said
 
@@ -35,4 +35,3 @@ If this is your own profile or a friend's, it is a great way to discover new cin
 Gemini is AI and can make mistakes.
 
 1Password menu is available. Press down arrow to select.
-

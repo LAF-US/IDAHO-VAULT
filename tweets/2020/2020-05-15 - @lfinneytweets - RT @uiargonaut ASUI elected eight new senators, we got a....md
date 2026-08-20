@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @uiargonaut: ASUI elected eight new senators, we got a chance to sit down — virtually — with all of them. 
+RT @uiargonaut: ASUI elected eight new senators, we got a chance to sit down — virtually — with all of them.
 
 Here is what they had to say…
 

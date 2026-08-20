@@ -20,10 +20,11 @@ related:
   - lfinneytweets
 ---
 
-@nicoleMfoy @NMBlanchard @IdahoStatesman (also available from @twinfallstn if you’re having paywall issues) 
+@nicoleMfoy @NMBlanchard @IdahoStatesman (also available from @twinfallstn if you’re having paywall issues)
 <https://t.co/vz8nNzwYmC>
 
 ## Links
+
 - <https://magicvalley.com/news/is-there-a-robert-e-lee-campground-in-the-boise-national-forest/article_7e0c268d-9c8f-5d7e-b1a6-f17b3b29cf6f.html>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

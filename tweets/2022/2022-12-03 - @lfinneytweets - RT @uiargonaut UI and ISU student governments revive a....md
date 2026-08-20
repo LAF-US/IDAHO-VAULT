@@ -20,6 +20,7 @@ RT @uiargonaut: UI and ISU student governments revive a rivalry and icon.
 <https://t.co/pEKfGWO47L>
 
 ## Links
+
 - <https://www.uiargonaut.com/2022/11/30/asui-approves-funds-for-new-king-spud-trophy/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1598882296245145601)

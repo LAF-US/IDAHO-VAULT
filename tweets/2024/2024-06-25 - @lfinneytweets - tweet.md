@@ -17,6 +17,7 @@ related:
 @dugganreports <https://t.co/B1EjEUByqi>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/GQ9Il_MboAAWmWM.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1805741799283343551)

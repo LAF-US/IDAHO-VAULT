@@ -23,10 +23,11 @@ related:
   - IdahoCOVID19
 ---
 
-The first clip in this montage features the @CdaSchools board meeting recently cancelled for safety concerns. #idpol #IdahoCOVID19 (article by @madisonhardy05 @CdAPressNews) 
+The first clip in this montage features the @CdaSchools board meeting recently cancelled for safety concerns. #idpol #IdahoCOVID19 (article by @madisonhardy05 @CdAPressNews)
 <https://t.co/DdabgkK7Ub> <https://t.co/InnojJybcx>
 
 ## Links
+
 - <https://cdapress.com/news/2021/sep/25/mob-against-masks/>
 - <https://x.com/allinwithchris/status/1445555425416384518>
 

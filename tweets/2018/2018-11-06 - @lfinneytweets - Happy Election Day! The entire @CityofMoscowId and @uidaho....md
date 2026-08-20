@@ -21,6 +21,7 @@ related:
 Happy Election Day! The entire @CityofMoscowId and @uidaho get a single polling place this election, but the line is moving quickly this morning! @uiargonaut <https://t.co/EiuIkviSH9>
 
 ## Links
+
 - <https://t.co/EiuIkviSH9>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1059846510056112128)

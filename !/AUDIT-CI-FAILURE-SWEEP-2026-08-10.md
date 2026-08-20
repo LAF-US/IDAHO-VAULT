@@ -10,7 +10,7 @@ owner: Logan Finney
 ## 5W Summary
 
 | | |
-|---|---|
+| --- | --- |
 | **Who** | GitHub Actions runners on `laf-us/idaho-vault` (65 workflows per `list_workflows`). No new human-caused breakage this window. |
 | **What** | 1 currently 100%-reproducing failure (Codacy Security Scan — tracked as #822/LAF-72 since 2026-07-08; real history of a genuine fix, a later regression, and a rejected-and-repeated mitigation attempt — see Incident A); 1 confirmed-recurring `action_required` pattern on Copilot-bot-triggered review events (root cause not fully confirmed); everything else on `main` is green. Zero new hard `failure` conclusions found on `main` in-window. |
 | **When** | 2026-08-09T12:08Z – 2026-08-10T12:08Z. Codacy's *current* failure streak traces back at least to 2026-08-07T18:21Z (60/60 sampled runs were non-successful: 59 `cancelled`, 1 `action_required`); the underlying defect's history goes back further — see Incident A's timeline. |
@@ -38,7 +38,7 @@ owner: Logan Finney
 **Confirmed vs. speculative, at a glance:**
 
 | Confirmed (verified via logs/commits) | Speculative / unresolved |
-|---|---|
+| --- | --- |
 | Crash signature, timeout behavior, 100% failure rate over 3+ days | Which specific file(s) trigger the crash |
 | `.codacy.yml` exclude-list mitigation does not stop the crash (proven twice: 08-03 and 08-10, independently) | Whether the crash is triggered by a repo file at all, vs. tool-generated intermediate content |
 | CLI fetched config from Codacy's remote API in this run, at least once | Whether that's always true, or only under some condition (e.g. token presence) |

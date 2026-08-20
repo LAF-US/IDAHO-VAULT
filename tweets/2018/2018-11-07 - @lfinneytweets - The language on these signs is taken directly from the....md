@@ -19,6 +19,7 @@ date modified: Tuesday, April 28th 2026, 5:41:39 pm
 The language on these signs is taken directly from the Secretary of State's election website <https://t.co/tvHdKSuSTw>. Regardless of your student status, you can register to vote today if you've lived in Idaho for 30 days. <https://t.co/LHqyzNxXYE>
 
 ## Links
+
 - <http://idahovotes.gov>
 - <https://x.com/IdahoStatesman/status/1059942241047728128>
 

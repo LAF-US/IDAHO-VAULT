@@ -59,7 +59,7 @@ The honest answer to *"bricoleur ¿related?"* is **N** — related in craft-conc
 ## The three, gathered
 
 | Word | Root | Carries |
-|---|---|---|
+| --- | --- | --- |
 | **fellow** | ON *félagi* = *fé* (property) + *lag* (laying-down) | property laid down in common; commonwealth |
 | **traveler / travailleur** | VL *\*trepaliāre* (the trepalium, three stakes) | journey-as-labor; the road is the work |
 | **faber** (see `WITNESS-FABER-FAITH`) | PIE *\*dhabh-* (to fit together) | making by skilled fitting |

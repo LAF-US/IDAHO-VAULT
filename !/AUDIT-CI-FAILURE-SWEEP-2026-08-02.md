@@ -12,7 +12,7 @@ owner: Logan Finney
 ## 5W Summary
 
 | | |
-|---|---|
+| --- | --- |
 | **Who** | GitHub Actions runners on `laf-us/idaho-vault`; Claude Code (this session, scheduled routine). No new human-caused breakage identified. |
 | **What** | 734 workflow runs observed in-window; 14 non-success (~1.9%). Six distinct failure signatures, all isolated to three non-`main` branches — zero non-success runs on `main`. |
 | **When** | 2026-08-01T20:01:26Z – 2026-08-02T20:01:26Z. Two clusters: ~08:37–09:13 UTC (10 failures, one branch) and ~16:37–19:22 UTC (4 failures, two branches). |
@@ -23,7 +23,7 @@ owner: Logan Finney
 ### Failure signatures
 
 | Workflow | Conclusion | Count | Branch | Category | Root cause |
-|---|---|---|---|---|---|
+| --- | --- | --- | --- | --- | --- |
 | `opencode.yml` | `action_required` | 4 | `claude/harden-py-automation-followup-562` (2), `codex/python-automation-hardening-v2` (2) | Configuration | Workflow gated behind manual approval before any job runs (0 jobs created); same recurring bot-trigger-approval family documented across #617/#644/#700, exact conclusion-type match not independently confirmed against those bodies this sweep. |
 | Python Test Suite | `failure` | 2 | `test/subtle-alien-landing` | Code (unverified) | "Run test suite" step exited non-zero. Log tail only captured post-test cleanup, not the actual assertion/traceback — root cause not confirmed, not guessed. |
 | Codacy Coverage Reporter | `failure` | 2 | `test/subtle-alien-landing` | Code (unverified) | Same commit/window as the Python Test Suite failures above; correlated, not confirmed to be the identical underlying assertion. |

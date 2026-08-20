@@ -19,6 +19,7 @@ related:
 RT @AriDrennen: In case you missed it, here's a three-second summary of tonight's debate: <https://t.co/7oekLldvKI>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/ext_tw_video_thumb/1806518628571025408/pu/img/Ol0ZGTOFc9Re1A0U.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1806542909766029578)

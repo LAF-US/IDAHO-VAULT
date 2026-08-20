@@ -20,6 +20,7 @@ RT @ORCapChronicle: Unusual coin toss determines outcome of 7-7 tie in Oregon Ho
 <https://t.co/0LollHBtQB>
 
 ## Links
+
 - <https://oregoncapitalchronicle.com/2024/06/27/unusual-coin-toss-determines-outcome-of-7-7-tie-in-oregon-house-primary/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1806501262663524637)

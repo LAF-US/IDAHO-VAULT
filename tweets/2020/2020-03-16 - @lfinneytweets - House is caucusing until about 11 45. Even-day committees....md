@@ -19,7 +19,7 @@ related:
   - idpol
 ---
 
-House is caucusing until about 11:45. 
+House is caucusing until about 11:45.
 
 Even-day committees will be granted privilege status to introduce resolutions to approve their administrative rules. #idleg #idpol
 

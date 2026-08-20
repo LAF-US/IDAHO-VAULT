@@ -29,4 +29,3 @@ To speak with the Google Assistant, say "Hey Google" or "Ok Google" followed by 
 Gemini is AI and can make mistakes.
 
 1Password menu is available. Press down arrow to select.
-

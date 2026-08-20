@@ -18,10 +18,11 @@ related:
   - lfinneytweets
 ---
 
-@LocksDonald @IdahoReports The state has info about the CLAC funded projects here. 
+@LocksDonald @IdahoReports The state has info about the CLAC funded projects here.
 <https://t.co/Bma0wTqVW4>
 
 ## Links
+
 - <https://storymaps.arcgis.com/stories/f468b20be7ef4661bc1ac1ee0e169406>
 
 *In reply to [@LocksDonald](https://twitter.com/LocksDonald)*

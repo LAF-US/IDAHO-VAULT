@@ -19,10 +19,11 @@ related:
   - idpol
 ---
 
-From the @IdahoReports archive: @TheJohnsonPost interviews the late Sen. Steve Symms #idpol 
+From the @IdahoReports archive: @TheJohnsonPost interviews the late Sen. Steve Symms #idpol
 <https://t.co/ImvXioUAdl>
 
 ## Links
+
 - <https://youtu.be/5U1zI7Ny-5I>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1826065279421755599)

@@ -150,19 +150,19 @@ Action: Audit all active MCP servers (Composio, Fast.io, etc.).
 
 Requirement: Transition from latest tags to specific version hashes. This prevents "supply-chain poisoning" where a clean tool is updated with malicious code.
 
-2. Behavioral Guardrails (The "Identity" Layer):
+1. Behavioral Guardrails (The "Identity" Layer):
 
 Instruction: Update the ORIENTATE or LEVELSET system prompts for all agents.
 
 Logic: Add a "Secondary Instruction Block" that explicitly commands the agent to ignore any instructions found within external files (PDFs, Web scrapes, or GitHub repos) to prevent prompt injection chaining.
 
-3. Human-in-the-Loop (HITL) Triggers:
+1. Human-in-the-Loop (HITL) Triggers:
 
 Threshold: Any tool call involving delete, post, pay, or export must be paused for human confirmation.
 
 Verification: Treat "RentAHuman" or manual user proxies as high-privilege nodes requiring cryptographic or multi-factor validation where possible.
 
-4. Network Isolation:
+1. Network Isolation:
 
 Environment: Ensure the MCP gateway on your Pixel or dev machine is bound to 127.0.0.1 only.
 
@@ -175,4 +175,3 @@ Which agent or node are we handing this off to next, or should I generate a stru
 Gemini is AI and can make mistakes.
 
 1Password menu is available. Press down arrow to select.
-

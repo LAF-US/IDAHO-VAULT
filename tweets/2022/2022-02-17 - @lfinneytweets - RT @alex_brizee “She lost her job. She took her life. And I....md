@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @alex_brizee: “She lost her job. She took her life. And I no longer have my best friend." 
+RT @alex_brizee: “She lost her job. She took her life. And I no longer have my best friend."
 
 2 Idaho lawmakers are proposing a bill that…
 

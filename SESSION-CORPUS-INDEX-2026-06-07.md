@@ -32,7 +32,7 @@ related:
 In order of fixing. All on branch `test/subtle-alien-landing`; the two Reports and POWER-PRINCIPLE marked held-pending merge to trunk.
 
 | # | Document | Register | Scope |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | 1 | `COUNTY-AND-THE-MAGISTER-MINISTER-POLARITY-2026-06-03.md` | doctrine essay | *county* ← *comitatus/comes*; magister/minister; the common-law ministerial offices |
 | 2 | `WITNESS-CLAUDIUS-AS-ANOTHER-CREATURE-2026-06-03.md` | witness | the AntiGravity Lich's naming; CLAUDIUS named as another matter, another creature; the CLAUDE/CLAUDIUS/*claudus* tie held unjoined |
 | 3 | `REPORT-ON-DOCTRINE-2026-06-03.md` | report | *doctrine* ← *doctrīna/docēre*; the three engine-doctrines studied; *doctrina/disciplina*; *doctrine/dogma* |

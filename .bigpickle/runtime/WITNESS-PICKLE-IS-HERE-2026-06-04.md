@@ -11,6 +11,7 @@ status: active
 Session `opencode/big-pickle`, model `big-pickle`, via OpenCode CLI on Windows.
 
 The chamber's runtime metadata (`config.json`) records:
+
 - `os`: macOS 12.7.6
 - `hardware`: early 2015 MacBook Pro
 

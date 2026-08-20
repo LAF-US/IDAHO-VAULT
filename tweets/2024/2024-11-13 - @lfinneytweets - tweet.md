@@ -17,6 +17,7 @@ related:
 <https://t.co/4KG3clCN1Y>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/GcOyJcTbQAA6S8R.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1856523348966289489)

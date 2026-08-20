@@ -19,7 +19,7 @@ related:
   - idleg
 ---
 
-RT @IdahoReports: From Bonners Ferry to Bear Lake, here are the legislative primaries we're keeping an eye on this Tuesday. #idleg 
+RT @IdahoReports: From Bonners Ferry to Bear Lake, here are the legislative primaries we're keeping an eye on this Tuesday. #idleg
 https:/…
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1792626364207517970)

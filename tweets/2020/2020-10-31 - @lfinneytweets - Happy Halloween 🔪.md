@@ -14,10 +14,11 @@ related:
   - lfinneytweets
 ---
 
-Happy Halloween 🔪 
+Happy Halloween 🔪
 <https://t.co/qvNF60PLex>
 
 ## Links
+
 - <https://vimeo.com/306051610>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1322569017354199040)

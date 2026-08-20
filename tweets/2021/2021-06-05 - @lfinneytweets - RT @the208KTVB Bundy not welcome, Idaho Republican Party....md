@@ -19,6 +19,7 @@ related:
 RT @the208KTVB: Bundy not welcome, Idaho Republican Party chairman says <https://t.co/nnyRybcU0B>
 
 ## Links
+
 - <https://feeds.feedblitz.com/~/653975854/0/ktvb/the208~Bundy-not-welcome-Idaho-Republican-Party-chairman-says?utm_campaign=snd-autopilot>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1400981404662452228)

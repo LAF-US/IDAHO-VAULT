@@ -17,6 +17,7 @@ related:
 Nevada right now as everyone's attention turns to Pennsylvania and Georgia <https://t.co/azueVQFSIR>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/EmINaVWVcAAfhxL.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1324635989193617408)

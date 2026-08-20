@@ -21,6 +21,7 @@ related:
 RT @IdahoPubRadio: JFAC held budget hearings today on @uidaho programs and services. Update: <https://t.co/jELdchR2yR> (@lfinneytweets photo)…
 
 ## Links
+
 - <https://www.facebook.com/614836341895311/posts/2772377382807852/?d=n>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1219649616871706625)

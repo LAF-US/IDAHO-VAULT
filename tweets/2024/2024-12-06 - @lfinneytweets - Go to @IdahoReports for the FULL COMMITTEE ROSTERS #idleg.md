@@ -22,6 +22,7 @@ related:
 Go to @IdahoReports for the FULL COMMITTEE ROSTERS #idleg <https://t.co/TevwB9l3Pn>
 
 ## Links
+
 - <https://x.com/IdahoReports/status/1864846750982316089>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1864847335916007522)

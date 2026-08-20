@@ -22,7 +22,7 @@ When a source, official, or report says findings are "consistent with" some conc
 ## The distinction
 
 | Phrase | What it actually claims |
-|---|---|
+| --- | --- |
 | "consistent with" | The hypothesis is not ruled out by the data |
 | "evidence of" | The data supports the hypothesis above alternatives |
 | "proof of" | The hypothesis is established beyond reasonable doubt |
