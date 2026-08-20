@@ -1,33 +1,4 @@
 #!/usr/bin/env python3
-"""CI guard against recurrence of the redaction-damage bug (issue #739).
-
-Commit b05b53ae ("Clean history - secrets purged", 2026-04-22) ran a secret
-redaction tool that matched the bare two-letter sequence "rt" plus a
-following separator (underscore, hyphen, or space) far too broadly, and
-stamped a literal marker string over it wherever that sequence appeared --
-not just inside actual secrets. The unambiguous signature of that bug is the
-marker directly touching a letter or digit on BOTH sides, with no separator
-in between -- for example the fragments `sta`, the marker, and `time` glued
-together with nothing separating them, where the original text read
-"start_time". A marker used elsewhere in the vault as a genuine, deliberate
-redaction notice is normally set off by punctuation or whitespace and does
-not match this shape, so it is not flagged.
-
-This guard only scans lines ADDED by a diff, never whole-file content, so it
-cannot retroactively fail on the ~237 pre-existing occurrences tracked in
-issue #739 -- it exists solely to catch a NEW occurrence of the same failure
-mode landing in a future change (e.g. running the same broken redaction tool
-again, or copy-pasting already-corrupted text forward).
-
-Carried vs. new (Logan's 2026-07-08 ruling on PR #803: the fragments are the
-"known rt_ garble (tracked)"): a mechanical rewrite of a line -- e.g. the
-NORMALIZATION encoding sweep re-encoding other bytes on it -- re-presents the
-file's own pre-existing damage to the diff as an added line. That is carried
-damage, not new damage: when the identical damage fragment (with its ASCII
-context) already exists in the BASE version of the SAME file, the match is
-suppressed. Damage appearing in a file whose base lacks that fragment --
-including propagation from one file to another -- still fails.
-"""
 
 from __future__ import annotations
 
@@ -35,7 +6,7 @@ import argparse
 import os
 import re
 import shutil
-import subprocess  # nosec B404 -- see [tool.bandit] note in pyproject.toml
+import subprocess
 import sys
 from dataclasses import dataclass
 from pathlib import Path
@@ -184,7 +155,7 @@ def findings_for_added_lines(
                     if base_text is not None and context in base_text:
                         continue  # carried from this file's own base: tracked debt, not new damage
                 findings.append(Finding(path=path, line=line_number, snippet=text.strip()[:120]))
-                break  # one finding per line is enough
+                break
     return findings
 
 
