@@ -1,0 +1,67 @@
+PARSE: success (42 VEVENTs, 42 unique UIDs).
+FINDINGS: 65
+[File formatting] Submitted text has LF line endings rather than RFC 5545 CRLF content lines.
+[Empty required value] Line 18: PRIORITY has no integer value.
+[Empty required value] Line 29: PRIORITY has no integer value.
+[Empty required value] Line 40: PRIORITY has no integer value.
+[Empty required value] Line 51: PRIORITY has no integer value.
+[Empty required value] Line 62: PRIORITY has no integer value.
+[Empty required value] Line 73: PRIORITY has no integer value.
+[Empty required value] Line 84: PRIORITY has no integer value.
+[Empty required value] Line 95: PRIORITY has no integer value.
+[Empty required value] Line 106: PRIORITY has no integer value.
+[Empty required value] Line 117: PRIORITY has no integer value.
+[Empty required value] Line 128: PRIORITY has no integer value.
+[Empty required value] Line 139: PRIORITY has no integer value.
+[Empty required value] Line 150: PRIORITY has no integer value.
+[Empty required value] Line 161: PRIORITY has no integer value.
+[Empty required value] Line 172: PRIORITY has no integer value.
+[Empty required value] Line 183: PRIORITY has no integer value.
+[Empty required value] Line 194: PRIORITY has no integer value.
+[Empty required value] Line 205: PRIORITY has no integer value.
+[Empty required value] Line 216: PRIORITY has no integer value.
+[Empty required value] Line 227: PRIORITY has no integer value.
+[Empty required value] Line 239: PRIORITY has no integer value.
+[Empty required value] Line 251: PRIORITY has no integer value.
+[Empty required value] Line 478: PRIORITY has no integer value.
+[Empty required value] Line 490: PRIORITY has no integer value.
+[Empty required value] Line 501: PRIORITY has no integer value.
+[RRULE delimiter] Line 14: rule part(s) must use =, not INTERVAL:100.
+[RRULE delimiter] Line 25: rule part(s) must use =, not INTERVAL:10.
+[DTSTAMP form] Line 12: DTSTAMP is missing its UTC Z suffix.
+[DTSTAMP form] Line 23: DTSTAMP is missing its UTC Z suffix.
+[DTSTAMP form] Line 34: DTSTAMP is missing its UTC Z suffix.
+[DTSTAMP form] Line 45: DTSTAMP is missing its UTC Z suffix.
+[DTSTAMP form] Line 56: DTSTAMP is missing its UTC Z suffix.
+[DTSTAMP form] Line 67: DTSTAMP is missing its UTC Z suffix.
+[DTSTAMP form] Line 78: DTSTAMP is missing its UTC Z suffix.
+[DTSTAMP form] Line 89: DTSTAMP is missing its UTC Z suffix.
+[DTSTAMP form] Line 100: DTSTAMP is missing its UTC Z suffix.
+[DTSTAMP form] Line 111: DTSTAMP is missing its UTC Z suffix.
+[DTSTAMP form] Line 122: DTSTAMP is missing its UTC Z suffix.
+[DTSTAMP form] Line 133: DTSTAMP is missing its UTC Z suffix.
+[DTSTAMP form] Line 144: DTSTAMP is missing its UTC Z suffix.
+[DTSTAMP form] Line 155: DTSTAMP is missing its UTC Z suffix.
+[DTSTAMP form] Line 166: DTSTAMP is missing its UTC Z suffix.
+[DTSTAMP form] Line 177: DTSTAMP is missing its UTC Z suffix.
+[DTSTAMP form] Line 188: DTSTAMP is missing its UTC Z suffix.
+[DTSTAMP form] Line 199: DTSTAMP is missing its UTC Z suffix.
+[DTSTAMP form] Line 210: DTSTAMP is missing its UTC Z suffix.
+[DTSTAMP form] Line 221: DTSTAMP is missing its UTC Z suffix.
+[DTSTAMP form] Line 232: DTSTAMP is missing its UTC Z suffix.
+[DTSTAMP form] Line 244: DTSTAMP is missing its UTC Z suffix.
+[DTSTAMP form] Line 259: DTSTAMP is missing its UTC Z suffix.
+[DTSTAMP form] Line 472: DTSTAMP is missing its UTC Z suffix.
+[DTSTAMP form] Line 484: DTSTAMP is missing its UTC Z suffix.
+[DTSTAMP form] Line 495: DTSTAMP is missing its UTC Z suffix.
+[DTSTAMP form] Line 506: DTSTAMP is missing its UTC Z suffix.
+[Floating-time mismatch] Line 356: DTSTART still has TZID=America/Boise.
+[Floating-time mismatch] Line 369: DTSTART still has TZID=America/Boise.
+[Floating-time mismatch] Line 382: DTSTART still has TZID=America/Boise.
+[Floating-time mismatch] Line 395: DTSTART still has TZID=America/Boise.
+[Floating-time mismatch] Line 408: DTSTART still has TZID=America/Boise.
+[Floating-time mismatch] Line 421: DTSTART still has TZID=America/Boise.
+[Floating-time mismatch] Line 434: DTSTART still has TZID=America/Boise.
+[Floating-time mismatch] Line 447: DTSTART still has TZID=America/Boise.
+[Floating-time mismatch] Line 460: DTSTART still has TZID=America/Boise.
+[Category mismatch] Azer is CATEGORIES:vCategory([vText(b'hour')], params=Parameters({})); the surrounding named 204-minute entries use CATEGORIES:Minutes.
