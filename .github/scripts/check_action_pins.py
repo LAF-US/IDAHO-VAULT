@@ -11,8 +11,11 @@ workflow edit, this derives and verifies it directly from the tracked files.
 
 from __future__ import annotations
 
+import contextlib
+import errno
 import os
 import re
+import stat
 import sys
 from pathlib import Path
 
@@ -71,12 +74,8 @@ FULL_SHA_PATTERN = re.compile(r"^[0-9a-f]{40}$")
 # pattern anchored on a bare `image:` would not see it.
 IMAGE_PATTERN = re.compile(r"""^\s*["']?image["']?\s*:\s*(.+?)\s*$""")
 IMAGE_DIGEST_PATTERN = re.compile(r"@sha256:[0-9a-f]{64}$")
-WORKFLOW_CONTAINER_PATTERN = re.compile(
-    r"""^\s*["']?container["']?\s*:\s*(.+?)\s*$"""
-)
-WORKFLOW_SERVICES_PATTERN = re.compile(
-    r"""^\s*["']?services["']?\s*:\s*(.+?)\s*$"""
-)
+WORKFLOW_CONTAINER_PATTERN = re.compile(r"""^\s*["']?container["']?\s*:\s*(.+?)\s*$""")
+WORKFLOW_SERVICES_PATTERN = re.compile(r"""^\s*["']?services["']?\s*:\s*(.+?)\s*$""")
 # `runs.using: docker` declares a container action, in block or flow form, with
 # either key quoted. Used to fail CLOSED: if a file says it runs a container and
 # this line-oriented reader found no `image:` line, the image is unverified —
@@ -132,7 +131,263 @@ def scan_targets() -> list[Path]:
                 candidate = base / name
                 if name in filenames or candidate.is_symlink():
                     paths.append(candidate)
-    return sorted(paths)
+    # Deduplicated: a DIRECTORY symlink named `action.yml` satisfies both loops
+    # above — the directory pass appends it as an unfollowable link, and the
+    # name pass appends it again as action metadata. `main()` happens to absorb
+    # the repeat (its `seen` set is written before any finding is), so no
+    # duplicate reaches the output today; this keeps the returned list honest
+    # for any other caller, which has no such set to hide behind.
+    return sorted(set(paths))
+
+
+# O_NOFOLLOW is Unix-only, and this vault is edited on Windows (see
+# `.claude/CLAUDE.md` § Windows Operation — nothing here may require Unix).
+# Naming it directly raises AttributeError there, so the guard would crash on
+# the machine it is most often run from by hand. Absent, the flag degrades to
+# 0: the open stops refusing symlinks by itself, so `_open_by_name()` checks
+# afterwards what it actually opened. `_readable()` still rejects a symlink
+# already in place either way.
+O_NOFOLLOW = getattr(os, "O_NOFOLLOW", 0)
+# The errno `open()` reports for O_NOFOLLOW against a symlink: ELOOP on Linux
+# and macOS, EMLINK on FreeBSD, which documents exactly this case in open(2).
+# Keeping both is not superstition. It also cannot mislead on Linux, where
+# open() has no EMLINK outcome at all — that errno belongs to link() exceeding
+# a directory's link count, which is not a path this function can reach.
+SYMLINK_REFUSED = (errno.ELOOP, errno.EMLINK)
+# Descending by descriptor needs dir_fd, which is Unix-only like the flag
+# above. Where it is missing the walk collapses to a single open and the
+# ancestor components go unchecked — stated in `_open_by_name()`, not papered
+# over.
+DIR_FD_SUPPORTED = os.open in os.supports_dir_fd
+# Asked separately from the one above: `os.supports_dir_fd` is per-function, so
+# `open` accepting a dir_fd is not a promise that `readlink` does.
+READLINK_DIR_FD = os.readlink in os.supports_dir_fd
+# O_BINARY is Windows-only, and its ABSENCE there is a silent-omission bug of
+# exactly the kind this guard exists to catch. Without it the CRT opens in text
+# mode and treats 0x1A as end-of-file, so a planted Ctrl-Z would end the read
+# early and everything after it — including an unpinned `uses:` — would simply
+# not be seen, while the guard printed OK. Same shape as the BOM: content the
+# scan never reached, reported as content that held nothing.
+# O_NONBLOCK keeps the open from WAITING. `_readable()` checks `is_file()` on a
+# name; a FIFO swapped in afterwards makes a plain O_RDONLY open block until a
+# writer appears, and the guard hangs instead of failing. Measured: the read
+# never returned. With the flag the open completes and `_regular_file()` gets
+# to refuse it. On a regular file both flags are inert.
+READ_FLAGS = os.O_RDONLY | getattr(os, "O_BINARY", 0) | getattr(os, "O_NONBLOCK", 0)
+
+
+SWAPPED = "became a symlink after the safety check; not read"
+
+
+def _unreadable(exc: OSError, name: str = "", dir_fd: int | None = None) -> str:
+    """One phrasing for a failed open, so the paths below cannot drift.
+
+    O_NOFOLLOW refusing a symlink is ELOOP on its own. But the ancestor opens
+    also pass O_DIRECTORY, and against a symlink-to-directory Linux answers
+    ENOTDIR first: the unfollowed link is indeed not a directory, which is true
+    and says nothing about why. Reported verbatim that describes a DETECTED
+    SWAP as an ordinary broken path — the read is refused either way, so
+    nothing unsafe follows, but the guard would be naming the wrong thing about
+    its own finding, which is the failure this whole file is being corrected
+    for. So on the errno that can mean either, ask what the component actually
+    is: readlink answers only for a link.
+
+    Asking is itself gated on `readlink` accepting `dir_fd`, which is a SEPARATE
+    capability from `open` accepting it — the walk's own precondition does not
+    imply it. Passing an unsupported `dir_fd` raises, and this function runs
+    while ALREADY handling an error, so a raise here would replace a clean
+    refusal with a traceback. Checked against `os.supports_dir_fd` rather than
+    caught, because the set is the platform's own answer and a `try` would be
+    guessing at which exception type to expect.
+    """
+    if exc.errno in SYMLINK_REFUSED:
+        return SWAPPED
+    if exc.errno == errno.ENOTDIR and name and dir_fd is not None and READLINK_DIR_FD:
+        try:
+            os.readlink(name, dir_fd=dir_fd)
+            return SWAPPED
+        except OSError:
+            pass
+    return f"not readable ({exc.strerror or exc}); cannot verify pins"
+
+
+def _open_no_follow(path: Path) -> tuple[int | None, str]:
+    """A descriptor for `path`, or (None, reason) if it may not be opened.
+
+    Separate from the decode below because they answer different questions:
+    this one is about WHICH OBJECT the name refers to right now, and whether
+    that object may be read at all; `_read()` is about what its bytes mean.
+    Keeping them in one body put two unrelated error vocabularies in the same
+    function, which is the shape this file has been pulling apart throughout.
+
+    Containment is decided HERE, above the dispatch, because it is a property
+    of the path and not of the mechanism used to open it. It lived in the walk
+    for one commit, which meant `_open_by_name()` enforced neither check and
+    the `..` escape stayed wide open on exactly the platform that already has
+    the fewest defences.
+    """
+    try:
+        relative = path.relative_to(REPO_ROOT)
+    except ValueError:
+        return None, "resolves outside the repository; not read"
+    if not relative.parts:
+        return None, "is the repository root, not a file; not read"
+    # `relative_to` compares SPELLINGS. It is satisfied by
+    # `<root>/.github/../../elsewhere.yml` — lexically under the root, and an
+    # opener would then climb through the `..` components and read a file
+    # outside the repository, with O_NOFOLLOW raising nothing because `..` is
+    # not a symlink. Reproduced before this check existed: outside content came
+    # back from a path the containment test had passed. Callers arrive through
+    # `_readable()`, which resolves first, so no real path carries these today
+    # — but this function answers "resolves outside the repository" on its own
+    # authority, and a claim it makes is one it has to keep.
+    if not set(relative.parts).isdisjoint({os.pardir, os.curdir}):
+        return None, "resolves outside the repository; not read"
+
+    if DIR_FD_SUPPORTED and O_NOFOLLOW:
+        return _open_by_descriptor_walk(relative)
+    return _open_by_name(path)
+
+
+def _regular_file(descriptor: int) -> bool:
+    """Is this descriptor a plain file, rather than a pipe or a device?
+
+    `_readable()` checks `is_file()` on a NAME and the opens below open one —
+    two operations, and the object can change type between them just as it can
+    change identity. O_NOFOLLOW refuses a symlink and has no opinion about a
+    FIFO, so swapping one in after the check made `os.open()` block until a
+    writer appeared and the guard STALLED — never failing, never reporting,
+    just gone. `_readable()`'s own docstring names that stall as the thing it
+    exists to prevent, which it did only for as long as the name and the object
+    agreed. O_NONBLOCK below makes the open return instead of waiting; this
+    decides whether what it returned may be read.
+    """
+    try:
+        return stat.S_ISREG(os.fstat(descriptor).st_mode)
+    except OSError:
+        return False
+
+
+def _open_by_descriptor_walk(relative: Path) -> tuple[int | None, str]:
+    """Descend from the repository root, one component at a time.
+
+    A flag on the final open alone is not enough. O_NOFOLLOW refuses a symlink
+    in the LAST position and says nothing about the ones above it, so replacing
+    an ANCESTOR directory after the check still resolved outside the
+    repository. Demonstrated the same way as the file swap: validate
+    `.github/actions/x/action.yml`, replace the `x` directory with a link to a
+    directory outside the repository, read, and the outside file's content came
+    back with the final open's O_NOFOLLOW entirely satisfied — the last
+    component really was a regular file, just not the one that was checked.
+
+    Descending from a held descriptor means each component is refused as it is
+    used, and once a directory descriptor is held there is no name left behind
+    us for anyone to repoint. Chosen only when BOTH `dir_fd` and a real
+    O_NOFOLLOW are present: descending without the flag would open each
+    component following links, which is the very thing this exists to stop, and
+    it would do it while looking like the strong path. `_open_by_name()` is
+    weaker but says so.
+
+    Takes the path ALREADY REDUCED to repository-relative components, and
+    already checked for `..`/`.`, because containment belongs to the path and
+    not to the opener — see `_open_no_follow()`.
+    """
+    try:
+        directory = os.open(REPO_ROOT, os.O_RDONLY | os.O_DIRECTORY)
+    except OSError as exc:
+        # The last syscall in this function that was outside a `try`. Every
+        # other open here is classified through `_unreadable()`; this one would
+        # have left through `_read()` as a traceback.
+        return None, _unreadable(exc)
+    try:
+        for part in relative.parts[:-1]:
+            try:
+                step = os.open(
+                    part, os.O_RDONLY | os.O_DIRECTORY | O_NOFOLLOW, dir_fd=directory
+                )
+            except OSError as exc:
+                return None, _unreadable(exc, part, directory)
+            # Rebound BEFORE the close, not after. The other order leaves a
+            # window — an interrupt between the two statements — where `step`
+            # is open with nothing holding it and `directory` names a
+            # descriptor that has just been closed, which `finally` would then
+            # close again. A stale close is not harmless: descriptor numbers
+            # are reused, so it can shut something else's file.
+            directory, previous = step, directory
+            # Releasing a descriptor this function no longer needs. Failing to
+            # release it costs one descriptor for the length of the run;
+            # RAISING costs the run — the exception leaves through `_read()`
+            # as a traceback instead of the (None, reason) every caller here
+            # expects, which is the "a guard that dies is not a guard that
+            # failed closed" failure this file is being corrected for. Demon-
+            # strated by making os.close fail on the first call: the read
+            # raised OSError instead of reporting anything. Suppression is
+            # right rather than merely convenient, because nothing downstream
+            # depends on the old descriptor — the new one is already held, and
+            # a close that failed with EBADF had nothing left to leak.
+            with contextlib.suppress(OSError):
+                os.close(previous)
+        leaf = relative.parts[-1]
+        try:
+            opened = os.open(leaf, READ_FLAGS | O_NOFOLLOW, dir_fd=directory)
+        except OSError as exc:
+            return None, _unreadable(exc, leaf, directory)
+        if not _regular_file(opened):
+            with contextlib.suppress(OSError):
+                os.close(opened)
+            return None, "not a regular file; not read"
+        return opened, ""
+    finally:
+        # Same reasoning, and one worse consequence: an exception raised in a
+        # `finally` REPLACES the value being returned, so a failed close here
+        # would discard a descriptor the caller was about to receive.
+        with contextlib.suppress(OSError):
+            os.close(directory)
+
+
+def _open_by_name(path: Path) -> tuple[int | None, str]:
+    """The degraded path: no dir_fd, so no walk. Windows takes this branch.
+
+    Both defences above are Unix-only, and they fail QUIETLY here: `dir_fd` is
+    absent so nothing descends, and O_NOFOLLOW is 0 so the open follows a link
+    it was supposed to refuse. Saying "Unix-strength only" in a comment and
+    leaving the open bare would make the docstring on `_read()` a claim this
+    branch does not keep.
+
+    So the identity of what was opened is checked against the identity the NAME
+    still denotes. `lstat` does not follow the final component, so a link
+    swapped into that position reports the link's own inode, which cannot match
+    the target the descriptor is holding — the swap is caught after the fact
+    and the read is refused. What this does NOT recover is the ancestor case:
+    both calls follow intermediate directories, so a replaced ancestor agrees
+    with itself. That half stays open off Unix, and is stated rather than
+    implied.
+
+    The suite cannot assert any of this from Linux, where the branch is not
+    taken, so it was checked by hand instead: with both constants above forced
+    to their Windows values, the swap probe reads the outside file when the
+    comparison below is removed and is refused when it is present.
+    """
+    try:
+        descriptor = os.open(path, READ_FLAGS | O_NOFOLLOW)
+    except OSError as exc:
+        return None, _unreadable(exc)
+    if not _regular_file(descriptor):
+        with contextlib.suppress(OSError):
+            os.close(descriptor)
+        return None, "not a regular file; not read"
+    try:
+        opened = os.fstat(descriptor)
+        named = os.lstat(path)
+    except OSError as exc:
+        with contextlib.suppress(OSError):
+            os.close(descriptor)
+        return None, _unreadable(exc)
+    if (opened.st_dev, opened.st_ino) != (named.st_dev, named.st_ino):
+        with contextlib.suppress(OSError):
+            os.close(descriptor)
+        return None, SWAPPED
+    return descriptor, ""
 
 
 def _read(path: Path) -> tuple[str | None, str]:
@@ -143,9 +398,29 @@ def _read(path: Path) -> tuple[str | None, str]:
     non-UTF-8 action.yml crashed it with a traceback instead of producing a
     finding. A guard that dies is not a guard that failed closed: the job
     still goes red, but it names a Python error rather than the file.
+
+    Opened by `_open_no_follow()` rather than by name, because `_readable()`
+    checks a PATH and this opens one — two operations on a name, with a window
+    between them where the name can be repointed. `_readable()`'s own docstring
+    claimed that window was closed; it was only narrowed. Demonstrated: verify
+    a regular file inside the repository, replace it with a symlink to a file
+    outside, read here, and content from outside the repository lands in the
+    findings.
+
+    How much of that window `_open_no_follow()` actually closes depends on the
+    platform, and the two branches there say which is which. On Unix — where
+    this gates anything, since CI is Linux — the whole path is descended by
+    descriptor and every component is refused, so the check and the read cannot
+    disagree about which object they mean. Where `dir_fd` is missing the final
+    component is still caught, by identity rather than by flag, and a replaced
+    ancestor is not. Neither branch is silently weaker than its docstring.
     """
+    descriptor, reason = _open_no_follow(path)
+    if descriptor is None:
+        return None, reason
     try:
-        return path.read_text(encoding="utf-8-sig"), ""
+        with os.fdopen(descriptor, encoding="utf-8-sig") as handle:
+            return handle.read(), ""
     except UnicodeDecodeError:
         return None, "not valid UTF-8; cannot verify pins"
     except OSError as exc:
@@ -613,10 +888,7 @@ def _unpinned_from_lines(
             findings.append(
                 (
                     image_lineno,
-                    (
-                        f"{image} -> {rel}:{lineno} FROM {base} "
-                        "(needs @sha256:<64 hex>)"
-                    ),
+                    (f"{image} -> {rel}:{lineno} FROM {base} (needs @sha256:<64 hex>)"),
                 )
             )
         if stage:
