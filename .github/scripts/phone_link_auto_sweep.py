@@ -28,11 +28,28 @@ def normalized_path(path: Path) -> str:
     return os.path.normcase(os.path.normpath(os.fspath(path)))
 
 
+def _is_strict_descendant(candidate: str, root: str) -> bool:
+    """True if ``candidate`` is a real path-aware descendant of ``root`` --
+    never true for ``candidate == root`` itself, and never fooled by a
+    trailing separator on ``root`` or by a same-prefix sibling
+    (``/vaultx`` is not under ``/vault``). ``os.path.commonpath`` raises
+    ValueError for inputs it can't compare (e.g. different Windows drives);
+    that means "not contained," not an error worth propagating."""
+    candidate_norm = os.path.normcase(candidate)
+    root_norm = os.path.normcase(root)
+    if candidate_norm == root_norm:
+        return False
+    try:
+        return os.path.commonpath([candidate_norm, root_norm]) == root_norm
+    except ValueError:
+        return False
+
+
 def resolve_phone_link_source(path: Path) -> Path:
     """Resolve an existing Phone Link source within the Downloads boundary."""
     trusted_root = os.path.realpath(os.fspath(TRUSTED_SOURCE_ROOT))
     candidate = os.path.realpath(os.fspath(path))
-    if not os.path.normcase(candidate).startswith(os.path.normcase(trusted_root) + os.sep):
+    if not _is_strict_descendant(candidate, trusted_root):
         raise RuntimeError(f"Phone Link source must be within {trusted_root}")
 
     resolved = Path(candidate)
@@ -47,7 +64,7 @@ def safe_child_path(parent: Path, relative_path: str) -> Path:
     """Return a normalized child path only when it remains below ``parent``."""
     root = os.path.realpath(os.fspath(parent))
     candidate = os.path.realpath(os.path.join(root, relative_path))
-    if not os.path.normcase(candidate).startswith(os.path.normcase(root) + os.sep):
+    if not _is_strict_descendant(candidate, root):
         raise RuntimeError(f"Path escapes its permitted directory: {relative_path}")
     return Path(candidate)
 
@@ -202,14 +219,28 @@ def single_instance(lock_path: Path = LOCK_PATH) -> Iterator[bool]:
             except OSError:
                 yield False
                 return
+        else:
+            import fcntl
+
+            try:
+                fcntl.flock(handle.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
+                locked = True
+            except OSError:
+                yield False
+                return
         yield True
     finally:
-        if os.name == "nt" and locked:
+        if locked:
             try:
-                import msvcrt
+                if os.name == "nt":
+                    import msvcrt
 
-                handle.seek(0)
-                msvcrt.locking(handle.fileno(), msvcrt.LK_UNLCK, 1)
+                    handle.seek(0)
+                    msvcrt.locking(handle.fileno(), msvcrt.LK_UNLCK, 1)
+                else:
+                    import fcntl
+
+                    fcntl.flock(handle.fileno(), fcntl.LOCK_UN)
             except OSError:
                 # Cleanup best effort: do not mask the primary sweep outcome.
                 pass
@@ -253,7 +284,7 @@ def main(argv: list[str] | None = None) -> int:
             args.source = DEFAULT_SOURCE
             args.source.mkdir(parents=True, exist_ok=True)
         source_dir = resolve_phone_link_source(args.source)
-    except RuntimeError:
+    except (RuntimeError, OSError):
         print("Configuration error: rejected Phone Link configuration", file=sys.stderr)
         return 1
     log_path = safe_child_path(target_dir, "!/INBOX/_phone-link-watcher.log")

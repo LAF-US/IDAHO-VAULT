@@ -38,11 +38,28 @@ def normalized_path(path: Path) -> str:
     return os.path.normcase(os.path.normpath(os.fspath(path)))
 
 
+def _is_strict_descendant(candidate: str, root: str) -> bool:
+    """True if ``candidate`` is a real path-aware descendant of ``root`` --
+    never true for ``candidate == root`` itself, and never fooled by a
+    trailing separator on ``root`` or by a same-prefix sibling
+    (``/vaultx`` is not under ``/vault``). ``os.path.commonpath`` raises
+    ValueError for inputs it can't compare (e.g. different Windows drives);
+    that means "not contained," not an error worth propagating."""
+    candidate_norm = os.path.normcase(candidate)
+    root_norm = os.path.normcase(root)
+    if candidate_norm == root_norm:
+        return False
+    try:
+        return os.path.commonpath([candidate_norm, root_norm]) == root_norm
+    except ValueError:
+        return False
+
+
 def resolve_phone_link_source(path: Path) -> Path:
     """Resolve an existing Phone Link source within the Downloads boundary."""
     trusted_root = os.path.realpath(os.fspath(TRUSTED_SOURCE_ROOT))
     candidate = os.path.realpath(os.fspath(path))
-    if not os.path.normcase(candidate).startswith(os.path.normcase(trusted_root) + os.sep):
+    if not _is_strict_descendant(candidate, trusted_root):
         raise RuntimeError(f"Phone Link source must be within {trusted_root}")
 
     resolved = Path(candidate)
@@ -57,7 +74,7 @@ def safe_child_path(parent: Path, relative_path: str) -> Path:
     """Return a normalized child path only when it remains below ``parent``."""
     root = os.path.realpath(os.fspath(parent))
     candidate = os.path.realpath(os.path.join(root, relative_path))
-    if not os.path.normcase(candidate).startswith(os.path.normcase(root) + os.sep):
+    if not _is_strict_descendant(candidate, root):
         raise RuntimeError(f"Path escapes its permitted directory: {relative_path}")
     return Path(candidate)
 
