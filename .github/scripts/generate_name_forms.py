@@ -59,7 +59,7 @@ def print_table(rows: list[dict]) -> None:
     # called. The last entry already spelled the correct form (`headers[4]`),
     # which is what the other three should have been.
     widths = [
-        max(len(header), max(len(row[key]) for row in rows))
+        max(len(header), max(len(row.get(key, "")) for row in rows))
         for header, key in zip(headers, keys)
     ]
 
@@ -70,7 +70,7 @@ def print_table(rows: list[dict]) -> None:
     print(header_row)
     print(sep)
     for r in rows:
-        cells = [r[key] for key in keys]
+        cells = [r.get(key, "") for key in keys]
         print("| " + " | ".join(c.ljust(w) for c, w in zip(cells, widths)) + " |")
     print(sep)
 
@@ -81,7 +81,7 @@ def to_markdown(rows: list[dict]) -> str:
     lines.append("| " + " | ".join("---" for _ in headers) + " |")
     for r in rows:
         lines.append(
-            "| " + " | ".join([r["base"], r["possessive"], r["plural"], r["plural_possessive"], r["epithet"]]) + " |"
+            "| " + " | ".join([r.get("base", ""), r.get("possessive", ""), r.get("plural", ""), r.get("plural_possessive", ""), r.get("epithet", "")]) + " |"
         )
     return "\n".join(lines)
 
