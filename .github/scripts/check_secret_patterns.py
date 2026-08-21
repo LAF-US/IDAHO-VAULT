@@ -64,6 +64,9 @@ ALLOW_PATH_PATTERNS = (
     # — [^/]+ intentionally excludes subdirectories — while still
     # flagging extensionless credential files like .op/config.
     re.compile(r"^\.op/(1password-hygiene-policy\.json|[^/]+\.(md|txt))$"),
+    # .factory/certs/ holds public CA root certificates and system cert caches,
+    # not private credentials. These are infrastructure artifacts, not secrets.
+    re.compile(r"^\.factory/certs/"),
 )
 
 SECRET_CONTENT_PATTERNS = {
