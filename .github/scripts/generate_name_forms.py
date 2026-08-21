@@ -80,9 +80,14 @@ def to_markdown(rows: list[dict]) -> str:
     lines = ["| " + " | ".join(headers) + " |"]
     lines.append("| " + " | ".join("---" for _ in headers) + " |")
     for r in rows:
-        lines.append(
-            "| " + " | ".join([r.get("base", ""), r.get("possessive", ""), r.get("plural", ""), r.get("plural_possessive", ""), r.get("epithet", "")]) + " |"
-        )
+        cells = [
+            r.get("base", ""),
+            r.get("possessive", ""),
+            r.get("plural", ""),
+            r.get("plural_possessive", ""),
+            r.get("epithet", ""),
+        ]
+        lines.append("| " + " | ".join(cells) + " |")
     return "\n".join(lines)
 
 
@@ -94,7 +99,7 @@ def main() -> None:
         rows.append(forms)
 
     if "--md" in sys.argv:
-        vault = "C:/Users/loganf/Documents/IDAHO-VAULT"
+        vault = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
         out_path = os.path.join(vault, "!", "NAME-FORMS-TABLE-2026-04-17.md")
         frontmatter = (
             "---\n"

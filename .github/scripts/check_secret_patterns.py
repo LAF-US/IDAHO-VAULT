@@ -324,7 +324,11 @@ def findings_for_paths(paths: list[str], *, staged: bool) -> list[Finding]:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--staged", action="store_true", help="check staged files")
-    parser.add_argument("--paths-from-stdin", action="store_true", help="check NUL-delimited changed paths from stdin")
+    parser.add_argument(
+        "--paths-from-stdin",
+        action="store_true",
+        help="check NUL-delimited changed paths from stdin",
+    )
     args = parser.parse_args()
 
     if args.staged and args.paths_from_stdin:
