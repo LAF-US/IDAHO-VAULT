@@ -1,38 +1,19 @@
+# example from https://www.browserstack.com/docs/percy/references/config-options
 version: 2
-percy:
-  token: abcde....
-    defer-uploads: false
-    snapshot:
-      widths: [375, 1280]
-        min-height: 1024
-          scope: '.main'
-            percy-css: |
-                iframe {
-                      display: none;
-                          }
-                          static:
-                            base-url: /blog/
-                              files: '**/*.html'
-                                ignore: '**/*.htm'
-                                discovery:
-                                  allowed-hostnames:
-                                      - cdn.example.com
-                                        disallowed-hostnames:
-                                            - ad.network.net
-                                              device-pixel-ratio: 2
-                                                authorization:
-                                                    username: "user"
-                                                        password: "pass"
-                                                          request-headers:
-                                                              Authorization: 'Basic dXNlcm5hbWU6cGFzc3dvcmQ='
-                                                                network-idle-timeout: 150
-                                                                  disable-cache: false
-                                                                    concurrency: 15
-                                                                      launch-options:
-                                                                        	executable: '/path/to/chromium/executable'
-                                                                              headless: true
-                                                                                  args: []
-                                                                                      timeout: 30000
-                                                                                      upload:
-                                                                                        files: "**/*.{png,jpg,jpeg}"
-                                                                                          ignore: ""
+snapshot:
+  widths:
+    - 375
+    - 1280
+  min-height: 1024
+  percy-css: ""
+  disable-shadow-dom: false
+discovery:
+  allowed-hostnames: []
+  disallowed-hostnames: []
+  network-idle-timeout: 100
+  capture-mocked-service-worker: false
+  retry: false
+upload:
+  files: "**/*.{png,jpg,jpeg}"
+  ignore: ""
+  strip-extensions: false
