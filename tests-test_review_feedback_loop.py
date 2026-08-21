@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import importlib.util
+import sys
 import unittest
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -9,8 +10,12 @@ from unittest import mock
 
 
 def _load_review_feedback_loop_module():
-    project_root = Path(__file__).resolve().parents[1]
-    script_path = project_root / ".github" / "scripts" / "review_feedback_loop.py"
+    project_root = Path(__file__).resolve().parents[0]
+    script_dir = project_root / ".github" / "scripts"
+    if str(script_dir) not in sys.path:
+        sys.path.insert(0, str(script_dir))
+
+    script_path = script_dir / "review_feedback_loop.py"
     spec = importlib.util.spec_from_file_location("review_feedback_loop_test_module", script_path)
     module = importlib.util.module_from_spec(spec)
     assert spec.loader is not None
@@ -325,6 +330,32 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertEqual(result, 0)
         projection.assert_called_once()
         run.assert_not_called()
+
+    def test_arm_auto_merge_treats_unstable_status_as_not_ready_not_a_crash(self) -> None:
+        # Regression for the largest live CI failure cluster (2026-08-21 sweep): GitHub
+        # rejects enablePullRequestAutoMerge with "unstable status" whenever the PR's own
+        # checks haven't all resolved yet — routine on a merge-queue repo, not an
+        # authorization failure. Before this fix, gh_cli.pr_merge's RuntimeError propagated
+        # unhandled and crashed the whole sync-pr job.
+        with mock.patch.object(
+            review_feedback_loop, "_auto_merge_state", return_value=(False, False)
+        ), mock.patch.object(
+            review_feedback_loop, "_merge_state_status", return_value="CLEAN"
+        ), mock.patch.object(
+            review_feedback_loop.gh_cli,
+            "pr_merge",
+            side_effect=RuntimeError(
+                "Command failed (1): gh pr merge 1000 --merge --auto\n"
+                "stdout:\n\nstderr:\n"
+                "! The merge strategy for main is set by the merge queue\n"
+                "GraphQL: Pull request Pull request is in unstable status "
+                "(enablePullRequestAutoMerge)\n"
+            ),
+        ):
+            armed, note = review_feedback_loop._arm_auto_merge("LAF-US", "IDAHO-VAULT", 1000)
+
+        self.assertFalse(armed)
+        self.assertIn("not yet ready to arm", note)
 
 
 if __name__ == "__main__":

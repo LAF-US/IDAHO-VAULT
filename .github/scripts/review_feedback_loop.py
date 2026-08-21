@@ -145,6 +145,16 @@ AUTO_MERGE_AUTHZ_FRAGMENTS = (
     "Resource not accessible by integration (enablePullRequestAutoMerge)",
 )
 
+# GitHub rejects enablePullRequestAutoMerge while the PR's own checks haven't
+# settled yet ("unstable status") — a normal, expected, transient state (a
+# check still running, or a non-required check red), not an authorization
+# problem. Left unhandled, this crashed the whole sync-pr invocation on every
+# PR that wasn't fully green yet, which on this merge-queue repo is most of
+# them most of the time.
+AUTO_MERGE_NOT_READY_FRAGMENTS = (
+    "Pull request is in unstable status (enablePullRequestAutoMerge)",
+)
+
 # Protected-path gating is no longer done here. A hand-maintained glob list was one of
 # three drifting, fail-open re-implementations of "these paths need a human".
 # The single source of that truth is now CODEOWNERS, enforced as a HARD GATE by
@@ -387,7 +397,11 @@ def _arm_auto_merge(owner: str, repo: str, pr_number: int) -> tuple[bool, str | 
             # repo's delete-on-merge behavior / branch-cleanup workflow, not here.
             gh_cli.pr_merge(pr_number, auto=True)
         except RuntimeError as exc:
-            if not any(fragment in str(exc) for fragment in AUTO_MERGE_AUTHZ_FRAGMENTS):
+            message = str(exc)
+            if any(fragment in message for fragment in AUTO_MERGE_NOT_READY_FRAGMENTS):
+                notes.insert(0, "not yet ready to arm (PR checks unstable); retried next pass")
+                return (False, "; ".join(notes))
+            if not any(fragment in message for fragment in AUTO_MERGE_AUTHZ_FRAGMENTS):
                 raise
             notes.insert(
                 0,
