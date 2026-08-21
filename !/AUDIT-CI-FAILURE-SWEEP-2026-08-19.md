@@ -38,7 +38,7 @@ The whole-repo `list_workflow_runs` endpoint is unreliable at this repo's write-
 
 1. Call `actions_list` with `method: list_workflows` to get each workflow's file name (e.g. `auto-pr.yml`).
 2. Call `actions_list` with `method: list_workflow_runs` and `resource_id: <workflow-file-name>` (not the whole-repo call) — this scopes `total_count` to a single workflow (hundreds, not 100,000+), so pagination stays consistent page-to-page.
-3. Page through with `per_page: 100` (the API silently caps actual returns at 30/page regardless) until `created_at` values fall outside the window being audited, or a failure signature's first/last occurrence is bracketed.
+3. Page through with `per_page: 100` (the API silently caps actual returns at 30/page regardless) until `created_at` values fall outside the window being audited, or a failure signature's first/last occurrence is bracketed. Retrieval for this sweep: original whole-repo sample ~2026-08-19T17:06Z; `auto-pr.yml`-scoped pagination ~2026-08-19T17:09–17:11Z; the direct-`curl`-against-the-API reconciliation added during PR review (branch/date-filtered, bypassing the wrapped tool's 30-row cap entirely) ran ~2026-08-21T01:34Z.
 4. For any failure, pull job-level detail with `list_workflow_jobs` (`resource_id: <run-id>`), then quote the actual error text — never infer a root cause from the workflow/run name alone.
 5. Cross-check any "is this new?" question against `main`'s current file contents directly (`git show`/`grep`), not against training-data assumptions about what the file probably contains.
 
@@ -49,4 +49,8 @@ The whole-repo `list_workflow_runs` endpoint is unreliable at this repo's write-
 - **The audit-PR pile did shrink since 2026-08-12, partially.** Of the seven open "audit(ci)" PRs that sweep listed (#859, #861, #862, #866, #882, #884, #905), a fresh title search today shows #861, #862, #882, #884, #905 now closed/merged — five of seven. **#859** (2026-07-21 sweep, doc-only, `mergeable_state: behind`) and **#866** (2026-07-27 sweep + a real word-boundary regex fix, `mergeable_state: behind`, 23 comments, explicitly deferred to Logan for an Actions-settings judgment call in its own body) remain open. This sweep does not merge them — both are `behind` `main` (need a rebase first) and #866 in particular says outright it is "Ready for Logan to review and merge," not for an agent to merge unilaterally. Flagging their continued presence rather than adding an eighth.
 
 ---
-Cross-posted: GitHub issue #822 (comment), Linear LAF-72 (comment), Slack #all-logan-finney, Discord #ledger (via Zapier).
+Cross-posted (with stable references, per review):
+- GitHub issue #822 — [comment](https://github.com/LAF-US/IDAHO-VAULT/issues/822#issuecomment-5345583623)
+- Linear LAF-72 — comment `d3b66e54-9d7f-4aaa-8e40-672ad87d1b97`
+- Slack #all-logan-finney — [message](https://loganfinney.slack.com/archives/C0ALMDBJHS9/p1787159913381369)
+- Discord #ledger (via Zapier) — message `1539685080702910534` in channel `1495651518760882198`
