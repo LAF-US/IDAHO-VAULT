@@ -32,6 +32,16 @@ owner: Logan Finney
 
 The last report in this series was `!/AUDIT-CI-FAILURE-SWEEP-2026-08-12.md` — a 7-day gap before this one, versus the near-daily cadence of the prior six weeks (see file list in Big IF). Not investigated further here (out of scope for a CI-runs sweep), but worth Logan's awareness: whatever schedule drives this routine did not fire, or did not land a report, for a week.
 
+## Procedure note for future sweeps
+
+The whole-repo `list_workflow_runs` endpoint is unreliable at this repo's write-throughput (see Big IF). The workaround that produced tractable, verifiable results this sweep:
+
+1. Call `actions_list` with `method: list_workflows` to get each workflow's file name (e.g. `auto-pr.yml`).
+2. Call `actions_list` with `method: list_workflow_runs` and `resource_id: <workflow-file-name>` (not the whole-repo call) — this scopes `total_count` to a single workflow (hundreds, not 100,000+), so pagination stays consistent page-to-page.
+3. Page through with `per_page: 100` (the API silently caps actual returns at 30/page regardless) until `created_at` values fall outside the window being audited, or a failure signature's first/last occurrence is bracketed.
+4. For any failure, pull job-level detail with `list_workflow_jobs` (`resource_id: <run-id>`), then quote the actual error text — never infer a root cause from the workflow/run name alone.
+5. Cross-check any "is this new?" question against `main`'s current file contents directly (`git show`/`grep`), not against training-data assumptions about what the file probably contains.
+
 ## Big IF
 
 - **This repo's Actions history cannot be exhaustively enumerated in one sweep at current write-throughput**, confirming (a third time now, after 2026-08-12 and earlier sweeps) that `list_workflow_runs` pagination is unreliable here: `total_count` reads in the 100,000+ range repo-wide, and `per_page=100` requests silently return only 30 rows. The reliable workaround used this sweep — scope to a single `workflow_id` (far fewer total runs, e.g. 483 for `auto-pr.yml`) rather than the whole-repo endpoint — is worth writing into whatever doc governs this routine, so the next sweep doesn't re-discover it from scratch.
