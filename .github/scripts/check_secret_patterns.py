@@ -34,14 +34,19 @@ def _repo_root() -> Path:
 
 REPO_ROOT = _repo_root()
 WINDOWS_COPY_SUFFIX_RE = re.compile(r" \(\d+\)(?=$|\.)")
-PRESERVED_COPY_SUFFIX_RE = re.compile(r"\.(?:home|vault)(?:\.[0-9a-f]{12})?$", re.IGNORECASE)
+PRESERVED_COPY_SUFFIX_RE = re.compile(
+    r"\.(?:home|vault)(?:\.[0-9a-f]{12})?$", re.IGNORECASE
+)
 SECRET_PATH_PATTERNS = (
     re.compile(r"(^|/)\.env(\.|$)"),
     re.compile(r"(^|/)\.envrc$"),
     re.compile(r"(^|/)\.op(/|$)"),
     re.compile(r"(^|/)secrets?(/|$)", re.IGNORECASE),
     re.compile(r"(^|/)\.mcp-auth(/|$)"),
-    re.compile(r"(^|/)(credentials?|tokens?|client_secret|oauth).*\.json$", re.IGNORECASE),
+    re.compile(
+        r"(^|/)(credentials?|tokens?|client_secret|oauth).*\.json$",
+        re.IGNORECASE,
+    ),
     re.compile(r"(^|/)\.credentials.*\.json$", re.IGNORECASE),
     re.compile(r"(^|/).*-key\.json$", re.IGNORECASE),
     re.compile(r"(^|/).*service-account\.json$", re.IGNORECASE),
@@ -74,7 +79,9 @@ SECRET_CONTENT_PATTERNS = {
     "openai_key": re.compile(r"\bsk-(?:proj-)?[A-Za-z0-9_-]{32,}\b"),
     "anthropic_key": re.compile(r"\bsk-ant-[A-Za-z0-9_-]{32,}\b"),
     "slack_token": re.compile(r"\bxox(?:b|p|o|a|r|s)-[A-Za-z0-9-]{20,}\b"),
-    "private_key_block": re.compile(r"-----BEGIN (?:RSA |OPENSSH |EC |DSA )?PRIVATE KEY-----"),
+    "private_key_block": re.compile(
+        r"-----BEGIN (?:RSA |OPENSSH |EC |DSA )?PRIVATE KEY-----"
+    ),
     "google_api_key": re.compile(r"\bAIza[0-9A-Za-z_-]{35}\b"),
     "generic_secret_assignment": re.compile(
         r"""(?ix)
@@ -188,7 +195,11 @@ def is_allowed_content_match(
         return False
     if "secret-pattern: allow" in line:
         return True
-    if match is not None and path is not None and _chain_allowance_applies(line, match, path):
+    if (
+        match is not None
+        and path is not None
+        and _chain_allowance_applies(line, match, path)
+    ):
         return True
     scope = match.group(0) if match is not None else line
     return bool(
@@ -201,7 +212,7 @@ def is_allowed_content_match(
 
 def run_git(args: list[str]) -> subprocess.CompletedProcess[str]:
     try:
-        return subprocess.run(
+        return subprocess.run(  # noqa: S603
             ["git", *args],
             cwd=REPO_ROOT,
             text=True,
@@ -271,7 +282,7 @@ def path_findings(path: str) -> list[Finding]:
 
 def staged_file_bytes(path: str) -> bytes | None:
     try:
-        result = subprocess.run(
+        result = subprocess.run(  # noqa: S603
             ["git", "show", f":{path}"],
             cwd=REPO_ROOT,
             capture_output=True,
