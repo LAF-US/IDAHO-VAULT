@@ -1,4 +1,5 @@
 ---
+title: "RT @NateBrownNews"
 date: 2020-05-02
 time: 06:48:55
 tweet_id: "1256475742218579970"
@@ -15,9 +16,10 @@ related:
   - lfinneytweets
 ---
 
-RT @NateBrownNews: https://t.co/t9O0TG2b1H
+RT @NateBrownNews: <https://t.co/t9O0TG2b1H>
 
 ## Media
-- ![](https://pbs.twimg.com/media/EW_bv6YUEAAvAdl.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/EW_bv6YUEAAvAdl.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1256475742218579970)

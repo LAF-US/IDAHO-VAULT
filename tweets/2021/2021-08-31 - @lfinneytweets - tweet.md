@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2021-08-31
 time: 17:54:32
 tweet_id: "1432763751808135172"
@@ -17,10 +18,11 @@ related:
   - lfinneytweets
 ---
 
-@ryannoyance @coyethan_ https://t.co/DZ4tnrflaG
+@ryannoyance @coyethan_ <https://t.co/DZ4tnrflaG>
 
 ## Media
-- ![](https://pbs.twimg.com/media/E-IzChRUYAEh6w-.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/E-IzChRUYAEh6w-.jpg)
 
 *In reply to [@ryannoyance](https://twitter.com/ryannoyance)*
 

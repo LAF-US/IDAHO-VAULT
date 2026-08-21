@@ -1,4 +1,5 @@
 ---
+title: "RT @sallykrutzig We now know that the University of Idaho..."
 date: 2022-11-15
 time: 03:49:14
 tweet_id: "1592364075140657154"

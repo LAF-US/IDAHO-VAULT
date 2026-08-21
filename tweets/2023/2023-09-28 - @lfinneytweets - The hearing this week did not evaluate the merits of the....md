@@ -1,4 +1,5 @@
 ---
+title: "The hearing this week did not evaluate the merits of the..."
 date: 2023-09-28
 time: 22:21:11
 tweet_id: "1707520857319620675"

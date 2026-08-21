@@ -1,4 +1,5 @@
 ---
+title: "#idleg #idpol"
 date: 2024-05-08
 time: 20:18:23
 tweet_id: "1788302446705648098"
@@ -18,9 +19,10 @@ related:
   - idpol
 ---
 
-#idleg #idpol https://t.co/LiuCAg4xmQ
+\#idleg #idpol <https://t.co/LiuCAg4xmQ>
 
 ## Links
-- https://x.com/AndrewBaertlein/status/1788005681359986710
+
+- <https://x.com/AndrewBaertlein/status/1788005681359986710>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1788302446705648098)

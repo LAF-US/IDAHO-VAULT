@@ -17,11 +17,11 @@ English playwright [Watts Phillips](https://en.wikipedia.org/wiki/Watts_Phillips
 
 ## Birth and family
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Thomas_Alexandre_Dumas_-_Olivier_Pichat.jpg/250px-Thomas_Alexandre_Dumas_-_Olivier_Pichat.jpg)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Thomas_Alexandre_Dumas_-_Olivier_Pichat.jpg/250px-Thomas_Alexandre_Dumas_-_Olivier_Pichat.jpg)
 
 General Thomas-Alexandre Dumas, father of Alexandre Dumas
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Alexandre_Dumas_pere.jpg/250px-Alexandre_Dumas_pere.jpg)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Alexandre_Dumas_pere.jpg/250px-Alexandre_Dumas_pere.jpg)
 
 Alexandre Dumas, engraving by Antoine Maurin
 
@@ -35,7 +35,7 @@ The family surname ("de la Pailleterie") was never bestowed upon Thomas-Alexandr
 
 ## Career
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Alexandre_Dumas_par_Achille_Dev%C3%A9ria_%281829%29.png/250px-Alexandre_Dumas_par_Achille_Dev%C3%A9ria_%281829%29.png)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Alexandre_Dumas_par_Achille_Dev%C3%A9ria_%281829%29.png/250px-Alexandre_Dumas_par_Achille_Dev%C3%A9ria_%281829%29.png)
 
 Alexandre Dumas by Achille Devéria (1829)
 
@@ -49,7 +49,7 @@ He founded a production studio, staffed with writers who turned out hundreds of 
 
 Dumas depended on numerous assistants and collaborators, of whom [Auguste Maquet](https://en.wikipedia.org/wiki/Auguste_Maquet "Auguste Maquet") was the best known. It was not until the late twentieth century that his role was fully understood.[^19] Dumas wrote the short novel *[Georges](https://en.wikipedia.org/wiki/Georges_\(novel\) "Georges (novel)")* (1843), which uses ideas and plots later repeated in *The Count of Monte Cristo*. Maquet took Dumas to court to get authorial recognition and a higher payment rate for his work. He was successful in getting more money, but not a by-line.[^19] [^20]
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Ch%C3%A2teau_Monte_Cristo_Alexandre_Dumas_le_Port_Marly.jpg/250px-Ch%C3%A2teau_Monte_Cristo_Alexandre_Dumas_le_Port_Marly.jpg)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Ch%C3%A2teau_Monte_Cristo_Alexandre_Dumas_le_Port_Marly.jpg/250px-Ch%C3%A2teau_Monte_Cristo_Alexandre_Dumas_le_Port_Marly.jpg)
 
 The Château de Monte-Cristo in Le Port-Marly
 
@@ -57,7 +57,7 @@ Dumas's novels were so popular that they were soon translated into English and o
 
 Dumas wrote in a wide variety of genres and published a total of 100,000 pages in his lifetime.[^6] He made use of his experience, writing travel books after taking journeys, including those motivated by reasons other than pleasure. Dumas travelled to Spain, Italy, Germany, England and [French Algeria](https://en.wikipedia.org/wiki/French_Algeria "French Algeria"). After King Louis-Philippe was ousted in a revolt, [Louis-Napoléon Bonaparte](https://en.wikipedia.org/wiki/Napoleon_III_of_France "Napoleon III of France") was elected president. As Bonaparte disapproved of the author, Dumas fled in 1851 to Brussels, Belgium, which was also an effort to escape his creditors. In about 1859, he moved to [Russia](https://en.wikipedia.org/wiki/Russian_Empire "Russian Empire"), where French was the second language of the elite and his writings were enormously popular. Dumas spent two years in Russia and visited St. Petersburg, Moscow, Kazan, Astrakhan, Baku, and Tbilisi. He published travel books about Russia.
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Alexandre_Dumas_en_costume_Kalmuk%2C_PH20506%281%29.jpg/250px-Alexandre_Dumas_en_costume_Kalmuk%2C_PH20506%281%29.jpg)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Alexandre_Dumas_en_costume_Kalmuk%2C_PH20506%281%29.jpg/250px-Alexandre_Dumas_en_costume_Kalmuk%2C_PH20506%281%29.jpg)
 
 Alexandre Dumas in a chokha and papakha during a trip to the Caucasus
 
@@ -69,7 +69,7 @@ Despite Dumas's aristocratic background and personal success, he had to deal wit
 
 ## Personal life
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Dumas_pere_print.jpg/250px-Dumas_pere_print.jpg)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Dumas_pere_print.jpg/250px-Dumas_pere_print.jpg)
 
 Dumas later in his career
 
@@ -90,7 +90,7 @@ With [Victor Hugo](https://en.wikipedia.org/wiki/Victor_Hugo "Victor Hugo"), [Ch
 
 ## Death and legacy
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Alexandre_Dumas_and_Georgia_national_costumes_2002.jpg/250px-Alexandre_Dumas_and_Georgia_national_costumes_2002.jpg)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Alexandre_Dumas_and_Georgia_national_costumes_2002.jpg/250px-Alexandre_Dumas_and_Georgia_national_costumes_2002.jpg)
 
 A postal stamp of Georgia dedicated to the 200th anniversary of Alexandre Dumas, who visited the Caucasus in 1858–1859
 
@@ -112,7 +112,7 @@ In 2002, for the bicentenary of Dumas's birth, [French President](https://en.wik
 
 Chirac acknowledged the racism that had existed in France and said that the re-interment in the Pantheon had been a way of correcting that wrong, as Alexandre Dumas was enshrined alongside fellow great authors [Victor Hugo](https://en.wikipedia.org/wiki/Victor_Hugo "Victor Hugo") and [Émile Zola](https://en.wikipedia.org/wiki/%C3%89mile_Zola "Émile Zola").[^34] [^35] Chirac noted that although France has produced many great writers, none has been so widely read as Dumas. His novels have been translated into nearly 100 languages, and inspired more than 200 motion pictures.
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Tomb_of_Dumas_and_Hugo_and_Zola_in_Panth%C3%A9on%2C_16_April_2010.jpg/250px-Tomb_of_Dumas_and_Hugo_and_Zola_in_Panth%C3%A9on%2C_16_April_2010.jpg)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Tomb_of_Dumas_and_Hugo_and_Zola_in_Panth%C3%A9on%2C_16_April_2010.jpg/250px-Tomb_of_Dumas_and_Hugo_and_Zola_in_Panth%C3%A9on%2C_16_April_2010.jpg)
 
 Tomb of Alexandre Dumas at the Panthéon in Paris
 
@@ -181,7 +181,7 @@ In addition, Dumas wrote many series of novels:
 2. *[The Women's War](https://en.wikipedia.org/wiki/The_Women%27s_War_\(novel\) "The Women's War (novel)")* (*La Guerre des Femmes*, 1845): follows Baron des Canolles, a naïve Gascon soldier who falls in love with two women.
 3. *The Dove* – the court of Louis XIII, revolving around courtly intrigue, romantic loyalty, and a symbolic dove given as a token of love
 4. *The Count of Moret; The Red Sphinx; or, Richelieu and His Rivals* (*Le Comte de Moret; Le Sphinx Rouge*, 1865–66) – a prequel to *The Dove*
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Houghton_MS_Fr_133.1_-_Le_Comte_de_Moret%2C_1.jpg/250px-Houghton_MS_Fr_133.1_-_Le_Comte_de_Moret%2C_1.jpg)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Houghton_MS_Fr_133.1_-_Le_Comte_de_Moret%2C_1.jpg/250px-Houghton_MS_Fr_133.1_-_Le_Comte_de_Moret%2C_1.jpg)
 
 First page of the original manuscript to Le Comte de Moret
 

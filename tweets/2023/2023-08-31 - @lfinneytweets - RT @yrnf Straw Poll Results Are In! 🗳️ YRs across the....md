@@ -1,4 +1,5 @@
 ---
+title: "RT @yrnf Straw Poll Results Are In! \ud83d\uddf3\ufe0f YRs across the..."
 date: 2023-08-31
 time: 18:12:12
 tweet_id: "1697311339734249589"

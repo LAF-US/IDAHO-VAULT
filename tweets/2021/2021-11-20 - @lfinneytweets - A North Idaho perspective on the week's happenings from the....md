@@ -1,4 +1,5 @@
 ---
+title: "A North Idaho perspective on the week's happenings from the..."
 date: 2021-11-20
 time: 23:49:45
 tweet_id: "1462206563649613826"
@@ -15,10 +16,11 @@ related:
   - lfinneytweets
 ---
 
-A North Idaho perspective on the week's happenings from the @sndpnt_reader. 
-https://t.co/k5AtV9UWRH
+A North Idaho perspective on the week's happenings from the @sndpnt_reader.
+<https://t.co/k5AtV9UWRH>
 
 ## Links
-- https://sandpointreader.com/here-we-have-idaho-this-is-not-necessary/
+
+- <https://sandpointreader.com/here-we-have-idaho-this-is-not-necessary/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1462206563649613826)

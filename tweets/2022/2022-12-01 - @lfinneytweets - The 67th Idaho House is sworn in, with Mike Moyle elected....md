@@ -1,4 +1,5 @@
 ---
+title: "The 67th Idaho House is sworn in, with Mike Moyle elected..."
 date: 2022-12-01
 time: 16:17:26
 tweet_id: "1598350569470853125"
@@ -19,11 +20,12 @@ related:
   - idpol
 ---
 
-The 67th Idaho House is sworn in, with Mike Moyle elected Speaker. #idleg #idpol https://t.co/jMdqPPX17N
+The 67th Idaho House is sworn in, with Mike Moyle elected Speaker. #idleg #idpol <https://t.co/jMdqPPX17N>
 
 ## Media
-- ![](https://pbs.twimg.com/media/Fi57XhCVIAAi9CM.jpg)
-- ![](https://pbs.twimg.com/media/Fi57X1WVUA0filt.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/Fi57XhCVIAAi9CM.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/Fi57X1WVUA0filt.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

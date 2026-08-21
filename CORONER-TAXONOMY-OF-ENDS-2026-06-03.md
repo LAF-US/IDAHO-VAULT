@@ -112,4 +112,8 @@ diagnosis, not adopted as canon or verdict. Where authority is absent, **`*`** s
 - **Status:** active
 - **Authority:** LOGAN
 
-###### [["The world is quiet here."]]
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

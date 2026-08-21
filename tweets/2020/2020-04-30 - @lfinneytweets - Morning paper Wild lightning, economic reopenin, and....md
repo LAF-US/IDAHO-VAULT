@@ -1,4 +1,5 @@
 ---
+title: "Morning paper Wild lightning, economic reopenin, and..."
 date: 2020-04-30
 time: 14:00:00
 tweet_id: "1255859451686465539"
@@ -18,12 +19,13 @@ related:
   - idpol
 ---
 
-Morning paper: Wild lightning, economic reopenin, and presidential races. 
+Morning paper: Wild lightning, economic reopenin, and presidential races.
 
-Me: Oh, my. 
-@LewistonTribune #idpol https://t.co/U9zm1C0xKq
+Me: Oh, my.
+@LewistonTribune #idpol <https://t.co/U9zm1C0xKq>
 
 ## Links
-- https://x.com/LewistonTribune/status/1255755336331309056
+
+- <https://x.com/LewistonTribune/status/1255755336331309056>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1255859451686465539)

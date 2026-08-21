@@ -1,4 +1,5 @@
 ---
+title: "RT @GovernorLittle There is no shortage of food. Stores..."
 date: 2020-03-15
 time: 19:00:23
 tweet_id: "1239265202429816833"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @GovernorLittle: There is no shortage of food. Stores will restock, so please don’t hoard. 
+RT @GovernorLittle: There is no shortage of food. Stores will restock, so please don’t hoard.
 
 The water supply is clean and safe to drink…
 

@@ -1,4 +1,5 @@
 ---
+title: "RT @brianalmon This vote is a good heuristic for the divide..."
 date: 2026-02-10
 time: 21:48:38
 tweet_id: "2021340560406217104"

@@ -1,4 +1,5 @@
 ---
+title: "Here is the link to @phdidaho's COVID-19 page"
 date: 2020-08-07
 time: 00:14:29
 tweet_id: "1291528099788537861"
@@ -14,11 +15,12 @@ related:
   - lfinneytweets
 ---
 
-Here is the link to @phdidaho's COVID-19 page: 
-https://t.co/0DFWPoHSVk
+Here is the link to @phdidaho's COVID-19 page:
+<https://t.co/0DFWPoHSVk>
 
 ## Links
-- https://panhandlehealthdistrict.org/covid-19/
+
+- <https://panhandlehealthdistrict.org/covid-19/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

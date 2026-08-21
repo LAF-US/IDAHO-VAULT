@@ -55,7 +55,7 @@ The **Unicode Bulldog Award** is given to people deemed to be influential in Uni
 
 ### Scripts covered
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Unicode_sample.svg/250px-Unicode_sample.svg.png)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Unicode_sample.svg/250px-Unicode_sample.svg.png)
 
 Many modern applications can render a substantial subset of the many scripts in Unicode, as demonstrated by this screenshot from the OpenOffice.org application.
 
@@ -143,52 +143,23 @@ The [CJK Radicals Supplement](https://en.wikipedia.org/wiki/CJK_Radicals_Supplem
 
 [^1]: A large amount of documentation for Windows incorrectly uses the term "Unicode" to mean *only* the UTF-16 encoding.
 
-[^2]: The total number of graphic and format characters, excluding [private use characters](https://en.wikipedia.org/wiki/Unicode_private_use_area "Unicode private use area"), [control characters](https://en.wikipedia.org/wiki/Unicode_control_characters "Unicode control characters"), [noncharacters](https://en.wikipedia.org/wiki/Noncharacter "Noncharacter"), and [surrogate code points](https://en.wikipedia.org/wiki/Surrogate_code_points "Surrogate code points")).
-
-[^3]: 2.0 added Amendments 5, 6, and 7
 2.1 added two characters from Amendment 18.
 
-[^4]: 3.2 added Amendment 1.
-
-[^5]: 4.1 added Amendment 1
 5.0 added Amendment 2 as well as four characters from Amendment 3
 5.1 added Amendment 4
 5.2 added Amendments 5 and 6
 
-[^6]: Plus the [Indian rupee sign](https://en.wikipedia.org/wiki/Indian_rupee_sign "Indian rupee sign")
-
-[^7]: 6.2 added the [Turkish lira sign](https://en.wikipedia.org/wiki/Turkish_lira_sign "Turkish lira sign")
 6.3 added five additional characters
 7.0 added Amendments 1 and 2 as well as the [ruble sign](https://en.wikipedia.org/wiki/Ruble_sign "Ruble sign")
 
-[^8]: Plus Amendment 1, as well as the [Lari sign](https://en.wikipedia.org/wiki/Georgian_lari "Georgian lari"), nine CJK unified ideographs, and 41 emoji;[^65]  
 9.0 added Amendment 2, as well as Adlam, Newa, Japanese TV symbols, and 74 emoji and symbols.[^66]
 
-[^9]: Plus 56 emoji, 285 [hentaigana](https://en.wikipedia.org/wiki/Hentaigana "Hentaigana") characters, and 3 Zanabazar Square characters
 11.0 added 46 Mtavruli Georgian capital letters, 5 CJK unified ideographs, and 66 emoji
 12.0 added 62 additional characters.
-
-[^10]: ["Table 4-4: General Category"](https://www.unicode.org/versions/latest/core-spec/chapter-4/#G134153). *The Unicode Standard*. Unicode Consortium. September 2025.
-
-[^11]: ["Table 2-3: Types of code points"](https://www.unicode.org/versions/latest/core-spec/chapter-2/#G286941). *The Unicode Standard*. Unicode Consortium. September 2025.
-
-[^12]: ["DerivedGeneralCategory.txt"](http://www.unicode.org/Public/UCD/latest/ucd/extracted/DerivedGeneralCategory.txt). The Unicode Consortium. 2025-07-24.
-
-[^13]: ["5.7.1 General Category Values"](https://www.unicode.org/reports/tr44/#General_Category_Values). *UTR #44: Unicode Character Database*. Unicode Consortium. 2024-08-27.
-
-[^14]: [Unicode Character Encoding Stability Policies: Property Value Stability](https://www.unicode.org/policies/stability_policy.html#Property_Value) Stability policy: Some gc groups will never change. gc=Nd corresponds with Numeric Type=De (decimal).
-
-[^15]: ["Annex C: Compatibility Properties (§ word)"](https://unicode.org/reports/tr18/tr18-23.html#word). *Unicode Regular Expressions*. Version 23. [Unicode Consortium](https://en.wikipedia.org/wiki/Unicode_Consortium "Unicode Consortium"). 2022-02-08. Unicode Technical Standard #18.
-
-[^16]: ["Table 4-9: Construction of Code Point Labels"](https://www.unicode.org/versions/latest/core-spec/chapter-4/#G135875). *The Unicode Standard*. Unicode Consortium. September 2025. A *Code Point Label* may be used to identify a nameless code point. E.g. <control- *hhhh* >, <control-0088>. The Name remains blank, which can prevent inadvertently replacing, in documentation, a Control Name with a true Control code. Unicode also uses <not a character> for <noncharacter>.
 
 [^17]: "A Unicode Standard Annex (UAX) forms an integral part of *The Unicode Standard*, but is published as a separate document." [\[1\]](https://www.unicode.org/reports/tr31/tr31-5.html)
 
 [^18]: The two-character prefix `U+` was chosen as an ASCII approximation of U+228E ⊎ MULTISET UNION.[^83]
-
-[^19]: a [code point](https://en.wikipedia.org/wiki/Code_point "Code point") is an abstract representation of an UCS character by an integer between 0 and 1,114,111 (1,114,112 = 2 <sup>20</sup> + 2 <sup>16</sup> or 17 × 2 <sup>16</sup> = 0x110000 code points)
-
-[^20]: Rarely, the uppercase Icelandic eth may instead be written in an [insular](https://en.wikipedia.org/wiki/Insular_script "Insular script") style (Ꝺ) with the crossbar positioned on the stem, particularly if it needs to be distinguished from the uppercase retroflex D (see [African Reference Alphabet](https://en.wikipedia.org/wiki/African_Reference_Alphabet "African Reference Alphabet")).
 
 [^21]: [*The Unicode Standard, Version 17.0.0*](https://www.unicode.org/versions/Unicode17.0.0). South San Francisco, California: The Unicode Consortium. 2025-09-09. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [978-1-936213-35-1](https://en.wikipedia.org/wiki/Special:BookSources/978-1-936213-35-1 "Special:BookSources/978-1-936213-35-1").
 
@@ -237,100 +208,50 @@ Unicode arose as the result of eight years of working experience with XCCS. Its 
 
 [^42]: ["Enumerated Versions of The Unicode Standard"](https://www.unicode.org/versions/enumeratedversions.html). Retrieved 2025-09-12.
 
-[^43]: [*The Unicode Standard, Version 1.0.0*](https://www.unicode.org/versions/Unicode1.0.0). Mountain View, California: The Unicode Consortium. October 1991.
 ["1.0.0/UnicodeData.txt (reconstructed)"](https://www.unicode.org/Public/reconstructed/1.0.0/UnicodeData.txt). 2004. Retrieved 2010-03-16.
 
-[^44]: [*The Unicode Standard, Version 1.0.1*](https://www.unicode.org/versions/Unicode1.0.1). Mountain View, California: The Unicode Consortium. June 1992.
 ["Unicode Data 1.0.1"](https://www.unicode.org/Public/reconstructed/1.0.1/UnicodeData.txt). Retrieved 2010-03-16.
 
-[^45]: [*The Unicode Standard, Version 1.1.5*](https://www.unicode.org/versions/Unicode1.1.5). Mountain View, California: The Unicode Consortium. July 1995.
 ["Unicode Data 1995"](https://www.unicode.org/Public/1.1-Update/UnicodeData-1.1.5.txt). Retrieved 2010-03-16.
 
-[^46]: [*The Unicode Standard, Version 2.0.0*](https://www.unicode.org/versions/Unicode2.0.0). Mountain View, California: The Unicode Consortium. July 1996.
 ["Unicode Data-2.0.14"](https://www.unicode.org/Public/2.0-Update/UnicodeData-2.0.14.txt). Retrieved 2010-03-16.
 
-[^47]: [*The Unicode Standard, Version 2.1.2*](https://www.unicode.org/versions/Unicode2.1.2). Mountain View, California: The Unicode Consortium. May 1998.
 ["Unicode Data-2.1.2"](https://www.unicode.org/Public/2.1-Update/UnicodeData-2.1.2.txt). Retrieved 2010-03-16.
 
-[^48]: [*The Unicode Standard, Version 3.0.0*](https://www.unicode.org/versions/Unicode3.0.0). Mountain View, California: The Unicode Consortium. September 1999.
 ["Unicode Data-3.0.0"](https://www.unicode.org/Public/3.0-Update/UnicodeData-3.0.0.txt). Retrieved 2023-10-02.
 
-[^49]: [*The Unicode Standard, Version 3.1.0*](https://www.unicode.org/versions/Unicode3.1.0). Mountain View, California: The Unicode Consortium. March 2001.
 ["Unicode Data-3.1.0"](https://www.unicode.org/Public/3.1-Update/UnicodeData-3.1.0.txt). Retrieved 2023-10-02.
 
-[^50]: [*The Unicode Standard, Version 3.2.0*](https://www.unicode.org/versions/Unicode3.2.0). Mountain View, California: The Unicode Consortium. March 2002.
 ["Unicode Data-3.2.0"](https://www.unicode.org/Public/3.2-Update/UnicodeData-3.2.0.txt). Retrieved 2023-10-02.
 
-[^51]: [*The Unicode Standard, Version 4.0.0*](https://www.unicode.org/versions/Unicode4.0.0). Mountain View, California: The Unicode Consortium. April 2003. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [0-321-18578-1](https://en.wikipedia.org/wiki/Special:BookSources/0-321-18578-1 "Special:BookSources/0-321-18578-1").
 ["Unicode Data-4.0.0"](https://www.unicode.org/Public/4.0-Update/UnicodeData-4.0.0.txt). Retrieved 2023-10-02.
 
-[^52]: [*The Unicode Standard, Version 4.1.0*](https://www.unicode.org/versions/Unicode4.1.0). Mountain View, California: The Unicode Consortium. March 2004. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [0-321-18578-1](https://en.wikipedia.org/wiki/Special:BookSources/0-321-18578-1 "Special:BookSources/0-321-18578-1").
 ["Unicode Data-4.1.0"](https://www.unicode.org/Public/4.1.0/ucd/UnicodeData.txt). Retrieved 2010-03-16.
 
-[^53]: ["Named Sequences-4.1.0"](https://www.unicode.org/Public/4.1.0/ucd/NamedSequences.txt). *Unicode*. 2005. Retrieved 2010-03-16.
-
-[^54]: [*The Unicode Standard, Version 5.0.0*](https://www.unicode.org/versions/Unicode5.0.0). Mountain View, California: The Unicode Consortium. 2006-07-14. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [0-321-48091-0](https://en.wikipedia.org/wiki/Special:BookSources/0-321-48091-0 "Special:BookSources/0-321-48091-0").
-
-[^55]: ["Unicode Data 5.0.0"](https://www.unicode.org/Public/5.0.0/ucd/UnicodeData.txt). Retrieved 2010-03-17.
-
-[^56]: [*The Unicode Standard, Version 5.1.0*](https://www.unicode.org/versions/Unicode5.1.0). Mountain View, California: The Unicode Consortium. 2008-04-04. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [0-321-48091-0](https://en.wikipedia.org/wiki/Special:BookSources/0-321-48091-0 "Special:BookSources/0-321-48091-0").
 ["Unicode Data 5.1.0"](https://www.unicode.org/Public/5.1.0/ucd/UnicodeData.txt). Retrieved 2010-03-17.
 
-[^57]: [*The Unicode Standard, Version 5.2.0*](https://www.unicode.org/versions/Unicode5.2.0). Mountain View, California: The Unicode Consortium. 2009-10-01. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [978-1-936213-00-9](https://en.wikipedia.org/wiki/Special:BookSources/978-1-936213-00-9 "Special:BookSources/978-1-936213-00-9").
 ["Unicode Data 5.2.0"](https://www.unicode.org/Public/5.2.0/ucd/UnicodeData.txt). Retrieved 2010-03-17.
 
-[^58]: [*The Unicode Standard, Version 6.1.0*](https://www.unicode.org/versions/Unicode6.1.0). Mountain View, California: The Unicode Consortium. 2012-01-31. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [978-1-936213-02-3](https://en.wikipedia.org/wiki/Special:BookSources/978-1-936213-02-3 "Special:BookSources/978-1-936213-02-3").
 ["Unicode Data 6.0.0"](https://www.unicode.org/Public/6.0.0/ucd/UnicodeData.txt). Retrieved 2010-10-11.
 
-[^59]: ["Unicode 6.0 Emoji List"](https://emojipedia.org/unicode-6.0/). *emojipedia.org*. Retrieved 2022-09-21.
-
-[^60]: [*The Unicode Standard, Version 6.1.0*](https://www.unicode.org/versions/Unicode6.1.0). Mountain View, California: The Unicode Consortium. 2012-01-31. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [978-1-936213-02-3](https://en.wikipedia.org/wiki/Special:BookSources/978-1-936213-02-3 "Special:BookSources/978-1-936213-02-3").
 ["Unicode Data 6.1.0"](https://www.unicode.org/Public/6.1.0/ucd/UnicodeData.txt). Retrieved 2012-01-31.
 
-[^61]: [*The Unicode Standard, Version 6.2.0*](https://www.unicode.org/versions/Unicode6.2.0). Mountain View, California: The Unicode Consortium. 2012-09-26. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [978-1-936213-07-8](https://en.wikipedia.org/wiki/Special:BookSources/978-1-936213-07-8 "Special:BookSources/978-1-936213-07-8").
 ["Unicode Data 6.2.0"](https://www.unicode.org/Public/6.2.0/ucd/UnicodeData.txt). Retrieved 2012-09-26.
 
-[^62]: [*The Unicode Standard, Version 6.3.0*](https://www.unicode.org/versions/Unicode6.3.0). Mountain View, California: The Unicode Consortium. 2013-09-30. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [978-1-936213-08-5](https://en.wikipedia.org/wiki/Special:BookSources/978-1-936213-08-5 "Special:BookSources/978-1-936213-08-5").
 ["Unicode Data 6.3.0"](https://www.unicode.org/Public/6.3.0/ucd/UnicodeData.txt). Retrieved 2013-09-30.
 
-[^63]: [*The Unicode Standard, Version 7.0.0*](https://www.unicode.org/versions/Unicode7.0.0). Mountain View, California: The Unicode Consortium. 2014-06-16. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [978-1-936213-09-2](https://en.wikipedia.org/wiki/Special:BookSources/978-1-936213-09-2 "Special:BookSources/978-1-936213-09-2").
 ["Unicode Data 7.0.0"](https://www.unicode.org/Public/7.0.0/ucd/UnicodeData.txt). Retrieved 2014-06-15.
 
-[^64]: [*The Unicode Standard, Version 8.0.0*](https://www.unicode.org/versions/Unicode8.0.0). Mountain View, California: The Unicode Consortium. 2015-06-17. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [978-1-936213-10-8](https://en.wikipedia.org/wiki/Special:BookSources/978-1-936213-10-8 "Special:BookSources/978-1-936213-10-8").
 ["Unicode Data 8.0.0"](https://www.unicode.org/Public/8.0.0/ucd/UnicodeData.txt). Retrieved 2015-06-17.
 
-[^65]: [*The Unicode Standard, Version 8.0.0*](https://www.unicode.org/versions/Unicode8.0.0). Mountain View, California: The Unicode Consortium. 2015-06-17. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [978-1-936213-10-8](https://en.wikipedia.org/wiki/Special:BookSources/978-1-936213-10-8 "Special:BookSources/978-1-936213-10-8").
 
 [^66]: [*The Unicode Standard, Version 9.0.0*](https://www.unicode.org/versions/Unicode9.0.0). Mountain View, California: The Unicode Consortium. 2016-06-21. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [978-1-936213-13-9](https://en.wikipedia.org/wiki/Special:BookSources/978-1-936213-13-9 "Special:BookSources/978-1-936213-13-9").
 
-[^67]: [*The Unicode Standard, Version 9.0.0*](https://www.unicode.org/versions/Unicode9.0.0). Mountain View, California: The Unicode Consortium. 2016-06-21. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [978-1-936213-13-9](https://en.wikipedia.org/wiki/Special:BookSources/978-1-936213-13-9 "Special:BookSources/978-1-936213-13-9").
 ["Unicode Data 9.0.0"](https://www.unicode.org/Public/9.0.0/ucd/UnicodeData.txt). Retrieved 2016-06-21.
 
-[^68]: Lobao, Martim (2016-06-07). ["These Are The Two Emoji That Weren't Approved For Unicode 9 But Which Google Added To Android Anyway"](https://www.androidpolice.com/2016/06/07/two-emoji-werent-approved-unicode-9-google-added-android-anyway/). *Android Police*. Retrieved 2016-09-04.
-
-[^69]: [*The Unicode Standard, Version 10.0.0*](https://www.unicode.org/versions/Unicode10.0.0). Mountain View, California: The Unicode Consortium. 2017-06-20. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [978-1-936213-16-0](https://en.wikipedia.org/wiki/Special:BookSources/978-1-936213-16-0 "Special:BookSources/978-1-936213-16-0").
-
-[^70]: [*The Unicode Standard, Version 11.0.0*](https://www.unicode.org/versions/Unicode11.0.0). Mountain View, California: The Unicode Consortium. 2018-06-05. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [978-1-936213-19-1](https://en.wikipedia.org/wiki/Special:BookSources/978-1-936213-19-1 "Special:BookSources/978-1-936213-19-1").
-
-[^71]: [*The Unicode Standard, Version 12.0.0*](https://www.unicode.org/versions/Unicode12.0.0). Mountain View, California: The Unicode Consortium. 2019-03-05. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [978-1-936213-22-1](https://en.wikipedia.org/wiki/Special:BookSources/978-1-936213-22-1 "Special:BookSources/978-1-936213-22-1").
-
-[^72]: ["Unicode Version 12.1 released in support of the Reiwa Era"](https://blog.unicode.org/2019/05/unicode-12-1-en.html). *The Unicode Blog*. Retrieved 2019-05-07.
-
-[^73]: [*The Unicode Standard, Version 13.0.0*](https://www.unicode.org/versions/Unicode13.0.0). Mountain View, California: The Unicode Consortium. 2020-03-10. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [978-1-936213-26-9](https://en.wikipedia.org/wiki/Special:BookSources/978-1-936213-26-9 "Special:BookSources/978-1-936213-26-9").
 ["Announcing The Unicode Standard, Version 13.0"](https://blog.unicode.org/2020/03/announcing-unicode-standard-version-130.html). *The Unicode Blog*. Retrieved 2020-03-11.
 
-[^74]: ["The Unicode Standard, Version 13.0– Core Specification Appendix C"](https://www.unicode.org/versions/Unicode13.0.0/appC.pdf) (PDF). Unicode Consortium. Retrieved 2020-03-11.
-
-[^75]: [*The Unicode Standard, Version 14.0.0*](https://www.unicode.org/versions/Unicode14.0.0). Mountain View, California: The Unicode Consortium. 2021-09-14. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [978-1-936213-29-0](https://en.wikipedia.org/wiki/Special:BookSources/978-1-936213-29-0 "Special:BookSources/978-1-936213-29-0").
 ["Announcing The Unicode Standard, Version 14.0"](https://blog.unicode.org/2021/09/announcing-unicode-standard-version-140.html).
-
-[^76]: [*The Unicode Standard, Version 15.0.0*](https://www.unicode.org/versions/Unicode15.0.0). Mountain View, California: The Unicode Consortium. 2022-09-13. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [978-1-936213-32-0](https://en.wikipedia.org/wiki/Special:BookSources/978-1-936213-32-0 "Special:BookSources/978-1-936213-32-0").
-
-[^77]: [*The Unicode Standard, Version 15.1.0*](https://www.unicode.org/versions/Unicode15.1.0). South San Francisco, California: The Unicode Consortium. 2023-09-12. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [978-1-936213-33-7](https://en.wikipedia.org/wiki/Special:BookSources/978-1-936213-33-7 "Special:BookSources/978-1-936213-33-7").
-
-[^78]: [*The Unicode Standard, Version 16.0.0*](https://www.unicode.org/versions/Unicode16.0.0). South San Francisco, California: The Unicode Consortium. 2024-09-10. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [978-1-936213-34-4](https://en.wikipedia.org/wiki/Special:BookSources/978-1-936213-34-4 "Special:BookSources/978-1-936213-34-4").
-
-[^79]: [*The Unicode Standard, Version 17.0.0*](https://www.unicode.org/versions/Unicode17.0.0). South San Francisco, California: The Unicode Consortium. 2025-09-09. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [978-1-936213-35-1](https://en.wikipedia.org/wiki/Special:BookSources/978-1-936213-35-1 "Special:BookSources/978-1-936213-35-1").
 
 [^80]: ["Glossary of Unicode Terms"](https://unicode.org/glossary/). Retrieved 2010-03-16.
 
@@ -353,117 +274,3 @@ Unicode arose as the result of eight years of working experience with XCCS. Its 
 [^89]: ["Unicode Named Sequences"](https://www.unicode.org/Public/UCD/latest/ucd/NamedSequences.txt). Retrieved 2025-09-21.
 
 [^90]: ["Unicode Name Aliases"](https://www.unicode.org/Public/UCD/latest/ucd/NameAliases.txt). Retrieved 2025-09-21.
-
-[^91]: ["JanaSanskritSans"](https://web.archive.org/web/20110716160603/http://tdil.mit.gov.in/download/janasanskrit.htm). Archived from [the original](http://tdil.mit.gov.in/download/janasanskrit.htm) on 2011-07-16.
-
-[^92]: [CWA 13873:2000 – Multilingual European Subsets in ISO/IEC 10646-1](https://www.evertype.com/standards/iso10646/pdf/cwa13873.pdf) [CEN](https://en.wikipedia.org/wiki/European_Committee_for_Standardization "European Committee for Standardization") Workshop Agreement 13873
-
-[^93]: [Kuhn, Markus](https://en.wikipedia.org/wiki/Markus_Kuhn_\(computer_scientist\) "Markus Kuhn (computer scientist)") (1998). ["Multilingual European Character Set 2 (MES-2) Rationale"](https://www.cl.cam.ac.uk/~mgk25/ucs/mes-2-rationale.html). University of Cambridge. Retrieved 2023-03-20.
-
-[^94]: ["DIN 91379:2022-08: Characters and defined character sequences in Unicode for the electronic processing of names and data exchange in Europe, with CD-ROM"](https://www.beuth.de/en/standard/din-91379/353496133). Beuth Verlag. Retrieved 2022-08-21.
-
-[^95]: ["UTF-8, UTF-16, UTF-32 & BOM"](https://unicode.org/faq/utf_bom.html). *Unicode.org FAQ*. Retrieved 2016-12-12.
-
-[^96]: *The Unicode Standard, Version 6.2*. The Unicode Consortium. 2013. p. 561. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [978-1-936213-08-5](https://en.wikipedia.org/wiki/Special:BookSources/978-1-936213-08-5 "Special:BookSources/978-1-936213-08-5").
-
-[^97]: [Davis, Mark](https://en.wikipedia.org/wiki/Mark_Davis_\(Unicode\) "Mark Davis (Unicode)") (2008-05-05). ["Moving to Unicode 5.1"](https://googleblog.blogspot.com/2008/05/moving-to-unicode-51.html). *Official Google Blog*. [Archived](https://web.archive.org/web/20250401104941/https://googleblog.blogspot.com/2008/05/moving-to-unicode-51.html) from the original on 2025-04-01. Retrieved 2025-04-12.
-
-[^98]: ["Usage Survey of Character Encodings broken down by Ranking"](https://w3techs.com/technologies/cross/character_encoding/ranking). *W3Techs*. Retrieved 2025-04-12.
-
-[^99]: ["Usage statistics of US-ASCII for websites"](https://w3techs.com/technologies/details/en-usascii). *W3Techs*. Retrieved 2020-11-01.
-
-[^100]: B. Curtin (July 1999). [*Internationalization of the File Transfer Protocol*](https://www.rfc-editor.org/rfc/rfc2640). [IETF](https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force "Internet Engineering Task Force"). [doi](https://en.wikipedia.org/wiki/Doi_\(identifier\) "Doi (identifier)"):[10.17487/RFC2640](https://doi.org/10.17487%2FRFC2640). [RFC](https://en.wikipedia.org/wiki/Request_for_Comments "Request for Comments") [2640](https://datatracker.ietf.org/doc/html/rfc2640). Retrieved 2025-04-12.
-
-[^101]: H. Alvestrand (January 1998). [*IETF Policy on Character Sets and Languages*](https://www.rfc-editor.org/rfc/rfc2277). [IETF](https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force "Internet Engineering Task Force"). [doi](https://en.wikipedia.org/wiki/Doi_\(identifier\) "Doi (identifier)"):[10.17487/RFC2277](https://doi.org/10.17487%2FRFC2277). BCP 18. [RFC](https://en.wikipedia.org/wiki/Request_for_Comments "Request for Comments") [2277](https://datatracker.ietf.org/doc/html/rfc2277). [Archived](https://archive.org/details/rfc2277) from the original on 2023-01-23. Retrieved 2025-04-12.
-
-[^102]: [Pike, Rob](https://en.wikipedia.org/wiki/Rob_Pike "Rob Pike") (2003-04-30). ["UTF-8 history"](https://www.cl.cam.ac.uk/~mgk25/ucs/utf-8-history.txt).
-
-[^103]: ["ISO/IEC JTC1/SC 18/WG 9 N"](https://www.cl.cam.ac.uk/~mgk25/volatile/ISO-14755.pdf) (PDF). [Archived](https://web.archive.org/web/20250122223453/https://www.cl.cam.ac.uk/~mgk25/volatile/ISO-14755.pdf) (PDF) from the original on 2025-01-22. Retrieved 2025-04-12.
-
-[^104]: Hedley, Jonathan (2009). ["Unicode Lookup"](https://unicodelookup.com/). [Archived](https://web.archive.org/web/20250330001809/https://unicodelookup.com/) from the original on 2025-03-30. Retrieved 2025-04-12.
-
-[^105]: Milde, Benjamin (2025). ["Unicode Character Recognition"](https://shapecatcher.com/). [Archived](https://web.archive.org/web/20250402224851/https://shapecatcher.com/) from the original on 2025-04-02.
-
-[^106]: J. Klensin; Y. Ko (July 2007). [*Overview and Framework for Internationalized Email*](https://www.rfc-editor.org/rfc/rfc4952). [IETF](https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force "Internet Engineering Task Force"). [doi](https://en.wikipedia.org/wiki/Doi_\(identifier\) "Doi (identifier)"):[10.17487/RFC4952](https://doi.org/10.17487%2FRFC4952). [RFC](https://en.wikipedia.org/wiki/Request_for_Comments "Request for Comments") [4952](https://datatracker.ietf.org/doc/html/rfc4952). Retrieved 2022-08-17.
-
-[^107]: J. Klensin; Y. Ko (February 2012). [*Overview and Framework for Internationalized Email*](https://www.rfc-editor.org/rfc/rfc6530). [IETF](https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force "Internet Engineering Task Force"). [doi](https://en.wikipedia.org/wiki/Doi_\(identifier\) "Doi (identifier)"):[10.17487/RFC6530](https://doi.org/10.17487%2FRFC6530). [RFC](https://en.wikipedia.org/wiki/Request_for_Comments "Request for Comments") [6530](https://datatracker.ietf.org/doc/html/rfc6530). Retrieved 2022-08-17.
-
-[^108]: J. Yao; W. Mao (February 2012). [*SMTP Extension for Internationalized Email*](https://www.rfc-editor.org/rfc/rfc6531). [IETF](https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force "Internet Engineering Task Force"). [doi](https://en.wikipedia.org/wiki/Doi_\(identifier\) "Doi (identifier)"):[10.17487/RFC6531](https://doi.org/10.17487%2FRFC6531). [RFC](https://en.wikipedia.org/wiki/Request_for_Comments "Request for Comments") [6531](https://datatracker.ietf.org/doc/html/rfc6531). Retrieved 2022-08-17.
-
-[^109]: A. Yang; S. Steele; N. Freed (February 2012). [*Internationalized Email Headers*](https://www.rfc-editor.org/rfc/rfc6532). [IETF](https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force "Internet Engineering Task Force"). [doi](https://en.wikipedia.org/wiki/Doi_\(identifier\) "Doi (identifier)"):[10.17487/RFC6532](https://doi.org/10.17487%2FRFC6532). [RFC](https://en.wikipedia.org/wiki/Request_for_Comments "Request for Comments") [6532](https://datatracker.ietf.org/doc/html/rfc6532). Retrieved 2022-08-17.
-
-[^110]: C. Newman; A. Gulbrandsen; A. Melnikov (June 2008). [*Internet Message Access Protocol Internationalization*](https://www.rfc-editor.org/rfc/rfc5255). [IETF](https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force "Internet Engineering Task Force"). [doi](https://en.wikipedia.org/wiki/Doi_\(identifier\) "Doi (identifier)"):[10.17487/RFC5255](https://doi.org/10.17487%2FRFC5255). [RFC](https://en.wikipedia.org/wiki/Request_for_Comments "Request for Comments") [5255](https://datatracker.ietf.org/doc/html/rfc5255). Retrieved 2022-08-17.
-
-[^111]: R. Gellens; C. Newman (February 2010). [*POP3 Support for UTF-8*](https://www.rfc-editor.org/rfc/rfc5721). [IETF](https://en.wikipedia.org/wiki/Internet_Engineering_Task_Force "Internet Engineering Task Force"). [doi](https://en.wikipedia.org/wiki/Doi_\(identifier\) "Doi (identifier)"):[10.17487/RFC5721](https://doi.org/10.17487%2FRFC5721). [RFC](https://en.wikipedia.org/wiki/Request_for_Comments "Request for Comments") [5721](https://datatracker.ietf.org/doc/html/rfc5721). Retrieved 2022-08-17.
-
-[^112]: Wood, Alan (2005-09-13). ["Setting up Windows Internet Explorer 5, 5.5 and 6 for Multilingual and Unicode Support: *Options for enabling Unicode in Internet Explorer 5, 5.5 and 6: Fonts (IE 5, 5.5 and 6)* "](https://www.alanwood.net/unicode/explorer.html#ie5). Alan Wood. [Archived](https://web.archive.org/web/20250120141644/https://www.alanwood.net/unicode/explorer.html#ie5) from the original on 2025-01-20. Retrieved 2025-04-12.
-
-[^113]: ["Extensible Markup Language (XML) 1.1 (Second Edition)"](https://www.w3.org/TR/xml11). [World Wide Web Consortium](https://en.wikipedia.org/wiki/World_Wide_Web_Consortium "World Wide Web Consortium"). 2006-09-29. [Archived](https://web.archive.org/web/20250405204806/https://www.w3.org/TR/xml11/) from the original on 2025-04-05. Retrieved 2025-04-12.
-
-[^114]: Bigelow, Charles; Holmes, Kris (September 1993). ["The design of a Unicode font"](http://cajun.cs.nott.ac.uk/wiley/journals/epobetan/pdf/volume6/issue3/bigelow.pdf) (PDF). *Electronic Publishing*. **6** (3): 292. [ISSN](https://en.wikipedia.org/wiki/ISSN_\(identifier\) "ISSN (identifier)") [0894-3982](https://search.worldcat.org/issn/0894-3982). [Archived](https://web.archive.org/web/20250216000657/http://cajun.cs.nott.ac.uk/wiley/journals/epobetan/pdf/volume6/issue3/bigelow.pdf) (PDF) from the original on 2025-02-16. Retrieved 2025-04-12.
-
-[^115]: ["FAQs: Fonts and keyboards: *Fonts and Unicode* "](https://www.unicode.org/faq/font_keyboard.html). [Unicode Consortium](https://en.wikipedia.org/wiki/Unicode_Consortium "Unicode Consortium"). [Archived](https://web.archive.org/web/20250306103512/https://www.unicode.org/faq/font_keyboard.html) from the original on 2025-03-06. Retrieved 2025-04-12.
-
-[^116]: [A Brief History of Character Codes](http://tronweb.super-nova.co.jp/characcodehist.html), Steven J. Searle, originally written [1999](https://web.archive.org/web/20001216022100/http://tronweb.super-nova.co.jp/characcodehist.html), last updated 2004
-
-[^117]: ["Appendix E: Han Unification History"](https://www.unicode.org/versions/Unicode16.0.0/core-spec/appendix-e/). *The Unicode Standard Version 16.0 – Core Specification*. [Unicode Consortium](https://en.wikipedia.org/wiki/Unicode_Consortium "Unicode Consortium"). 2024.
-
-[^118]: Topping, Suzanne (2013-06-25). ["The secret life of Unicode"](https://web.archive.org/web/20130625062705/http://www.ibm.com/developerworks/library/u-secret.html). *[IBM](https://en.wikipedia.org/wiki/IBM "IBM")*. Archived from [the original](https://www.ibm.com/developerworks/library/u-secret.html) on 2013-06-25. Retrieved 2023-03-20.
-
-[^119]: Lu, Qin (2015-06-08). ["The Proposed Hong Kong Character Set"](https://www.unicode.org/irg/docs/n2074-HKCS.pdf) (PDF). [ISO/IEC JTC1](https://en.wikipedia.org/wiki/ISO/IEC_JTC_1 "ISO/IEC JTC 1") / [SC2](https://en.wikipedia.org/wiki/ISO/IEC_JTC_1/SC_2 "ISO/IEC JTC 1/SC 2") /WG2/ [IRG](https://en.wikipedia.org/wiki/Ideographic_Research_Group "Ideographic Research Group") N2074.
-
-[^120]: Wittern, Christian (1995-05-01). ["Chinese character codes: an update"](https://web.archive.org/web/20041012135645/http://kura.hanazono.ac.jp/paper/codes.html). International Research Institute for Zen Buddhism / [Hanazono University](https://en.wikipedia.org/wiki/Hanazono_University "Hanazono University"). Archived from [the original](http://kura.hanazono.ac.jp/paper/codes.html) on 2004-10-12.
-
-[^121]: ["Noto CJK fonts"](https://github.com/notofonts/noto-cjk/blob/main/Serif/README.md). Noto Fonts. 2023-02-18. Select this deployment format if your system supports variable fonts and you prefer to use only one language, but also want full character coverage or the ability to language-tag text to use glyphs that are appropriate for the other languages (this requires an app that supports language tagging and the OpenType 'locl' GSUB feature).
-
-[^122]: Preuss, Ingo. ["OpenType Feature: locl – Localized Forms"](https://www.preusstype.com/techdata/otf_locl.php). *preusstype.com*.
-
-[^123]: ["Case Folding Properties"](https://www.unicode.org/Public/UCD/latest/ucd/CaseFolding.txt). *Unicode Character Database*. [Unicode Consortium](https://en.wikipedia.org/wiki/Unicode_Consortium "Unicode Consortium"). 2025-07-30.
-
-[^124]: ["Regular expression options § Compare using the invariant culture"](https://learn.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-options#compare-using-the-invariant-culture). *[.NET](https://en.wikipedia.org/wiki/.NET ".NET") fundamentals documentation*. [Microsoft](https://en.wikipedia.org/wiki/Microsoft "Microsoft"). 2023-05-12.
-
-[^125]: ["confusablesSummary.txt"](https://unicode.org/Public/security/latest/confusablesSummary.txt). *Unicode Security Mechanisms for UTS #39*. [Unicode Consortium](https://en.wikipedia.org/wiki/Unicode_Consortium "Unicode Consortium"). 2023-08-11.
-
-[^126]: ["UTR #36: Unicode Security Considerations"](https://unicode.org/reports/tr36/). *Unicode*.
-
-[^127]: Boucher, Nicholas; Shumailov, Ilia; Anderson, Ross; Papernot, Nicolas (2022). "Bad Characters: Imperceptible NLP Attacks". *2022 IEEE Symposium on Security and Privacy (SP)*. San Francisco, CA, US: IEEE. pp. 1987–2004. [arXiv](https://en.wikipedia.org/wiki/ArXiv_\(identifier\) "ArXiv (identifier)"):[2106.09898](https://arxiv.org/abs/2106.09898). [doi](https://en.wikipedia.org/wiki/Doi_\(identifier\) "Doi (identifier)"):[10.1109/SP46214.2022.9833641](https://doi.org/10.1109%2FSP46214.2022.9833641). [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [978-1-66541-316-9](https://en.wikipedia.org/wiki/Special:BookSources/978-1-66541-316-9 "Special:BookSources/978-1-66541-316-9"). [S2CID](https://en.wikipedia.org/wiki/S2CID_\(identifier\) "S2CID (identifier)") [235485405](https://api.semanticscholar.org/CorpusID:235485405).
-
-[^128]: Engineering, Spotify (2013-06-18). ["Creative usernames and Spotify account hijacking"](https://engineering.atspotify.com/2013/06/creative-usernames/). *Spotify Engineering*. Retrieved 2023-04-15.
-
-[^129]: Wheeler, David A. (2020). [*Initial Analysis of Underhanded Source Code*](http://www.jstor.org/stable/resrep25332.7) (Technical report). p. 4–1–4–10. [JSTOR](https://en.wikipedia.org/wiki/JSTOR_\(identifier\) "JSTOR (identifier)") [resrep25332.7](https://www.jstor.org/stable/resrep25332.7).
-
-[^130]: ["UTR #36: Unicode Security Considerations"](https://unicode.org/reports/tr36/). *Unicode*. Retrieved 2022-06-27.
-
-[^131]: Boucher, Nicholas; Anderson, Ross. ["Trojan Source: Invisible Vulnerabilities"](https://www.trojansource.codes/trojan-source.pdf) (PDF). Retrieved 2021-11-02.
-
-[^132]: ["Visual Studio Code October 2021"](https://code.visualstudio.com/updates/v1_62#_unicode-directional-formatting-characters). *code.visualstudio.com*. Retrieved 2021-11-11.
-
-[^133]: Dittert, Dominique (2024-09-06). ["From Unicode to Exploit: The Security Risks of Overlong UTF-8 Encodings"](https://herolab.usd.de/en/the-security-risks-of-overlong-utf-8-encodings/). Retrieved 2024-12-26.
-
-[^134]: Boone, Kevin. ["UTF-8 and the problem of over-long characters"](https://kevinboone.me/overlong.html). Retrieved 2024-12-26.
-
-[^135]: [AFII contribution about WAVE DASH](http://std.dkuug.dk/jtc1/sc2/wg2/docs/n2166.doc), ["An Unicode vendor-specific character table for japanese"](https://web.archive.org/web/20110422181018/http://www.ingrid.org/java/i18n/unicode.html). 2011-04-22. Archived from [the original](http://www.ingrid.org/java/i18n/unicode.html) on 2011-04-22. Retrieved 2019-05-20.
-
-[^136]: [*ISO 646-\* Problem*](https://www.debian.org/doc/manuals/intro-i18n/ch-codes.en.html#s-646problem) [Archived](https://web.archive.org/web/20190423113850/https://www.debian.org/doc/manuals/intro-i18n/ch-codes.en.html#s-646problem) 2019-04-23 at the [Wayback Machine](https://en.wikipedia.org/wiki/Wayback_Machine "Wayback Machine"), Section 4.4.3.5 of *Introduction to I18n*, Tomohiro Kubota, 2001
-
-[^137]: ["Arabic Presentation Forms-A"](https://www.unicode.org/charts/PDF/UFB50.pdf) (PDF). Retrieved 2010-03-20.
-
-[^138]: ["Arabic Presentation Forms-B"](https://www.unicode.org/charts/PDF/UFE70.pdf) (PDF). Retrieved 2010-03-20.
-
-[^139]: ["Alphabetic Presentation Forms"](https://www.unicode.org/charts/PDF/UFB00.pdf) (PDF). Retrieved 2010-03-20.
-
-[^140]: ["Proposal on Tibetan BrdaRten Characters Encoding for ISO/IEC 10646 in BMP"](https://www.unicode.org/L2/L2002/02455-n2558-tibetan.pdf) (PDF). 2002-12-02.
-
-[^141]: Umamaheswaran, V. S. (2003-11-07). ["Resolutions of WG 2 meeting 44"](https://www.unicode.org/L2/L2003/03390r-n2654.pdf) (PDF). Resolution M44.20.
-
-[^142]: ["Character Encoding Stability"](https://www.unicode.org/policies/stability_policy.html). *Unicode*. [Archived](https://web.archive.org/web/20240101053402/https://www.unicode.org/policies/stability_policy.html) from the original on 2024-01-01.
-
-[^143]: ["Unicode Technical Note #27: Known Anomalies in Unicode Character Names"](https://unicode.org/notes/tn27/). *Unicode*. 2021-06-14.
-
-[^144]: ["Unicode chart: "actually this has the form of a lowercase calligraphic p, despite its name""](https://www.unicode.org/charts/PDF/U2100.pdf) (PDF).
-
-[^145]: ["Misspelling of BRACKET in character name is a known defect"](https://www.unicode.org/charts/PDF/UFE10.pdf) (PDF).
-
-[^146]: ["Unicode Standard Annex #24: Unicode Script Property"](https://www.unicode.org/reports/tr24/). The Unicode Consortium. 2021. 2.2 Relation to ISO 15924 Codes. Retrieved 2022-04-29.
-
-[^147]: ["Scripts.txt"](https://www.unicode.org/Public/UCD/latest/ucd/Scripts.txt). The Unicode Consortium. 2025. Retrieved 2025-09-21.

@@ -1,4 +1,5 @@
 ---
+title: "tweet (949650)"
 date: 2024-05-14
 time: 20:35:22
 tweet_id: "1790481051820949650"
@@ -17,10 +18,11 @@ related:
   - lfinneytweets
 ---
 
-@tucker_id @brandendurst https://t.co/HiXE52R3MW
+@tucker_id @brandendurst <https://t.co/HiXE52R3MW>
 
 ## Media
-- ![](https://pbs.twimg.com/media/GNkRBhcbUAAtRl6.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/GNkRBhcbUAAtRl6.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

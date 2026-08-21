@@ -1,3 +1,6 @@
+---
+title: ANTIGRAVITY
+---
 # ANTIGRAVITY.md — IDAHO-VAULT
 
 **Load mechanism:** Auto-loaded via root `ANTIGRAVITY.md` and durable identity chamber `.antigravity/ANTIGRAVITY.md`.
@@ -38,4 +41,6 @@ Current live status is maintained in **THE DOCKET**: `!/__!__/!/! The world is q
 
 ---
 
-###### "The world is quiet here."
+```text
+The world is quiet here．Esto Perpetua!
+```

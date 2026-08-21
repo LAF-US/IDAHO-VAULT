@@ -1,4 +1,5 @@
 ---
+title: "Evacuations ordered in Firth, ID between Blackfoot and..."
 date: 2021-04-23
 time: 15:39:40
 tweet_id: "1385619387764277253"
@@ -13,9 +14,10 @@ related:
   - lfinneytweets
 ---
 
-Evacuations ordered in Firth, ID between Blackfoot and Idaho Falls as Lavaside Fire grows to nearly 1,200 acres https://t.co/jmzwdvzTXo
+Evacuations ordered in Firth, ID between Blackfoot and Idaho Falls as Lavaside Fire grows to nearly 1,200 acres <https://t.co/jmzwdvzTXo>
 
 ## Links
-- https://x.com/localnews8/status/1385617574969368577
+
+- <https://x.com/localnews8/status/1385617574969368577>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1385619387764277253)

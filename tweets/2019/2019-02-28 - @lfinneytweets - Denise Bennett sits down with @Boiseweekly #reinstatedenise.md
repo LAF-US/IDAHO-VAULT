@@ -1,4 +1,5 @@
 ---
+title: "Denise Bennett sits down with @Boiseweekly #reinstatedenise"
 date: 2019-02-28
 time: 07:43:01
 tweet_id: "1101024959386705920"
@@ -18,10 +19,11 @@ related:
   - reinstatedenise
 ---
 
-Denise Bennett sits down with @Boiseweekly #reinstatedenise 
-https://t.co/40Sunec3j9
+Denise Bennett sits down with @Boiseweekly #reinstatedenise
+<https://t.co/40Sunec3j9>
 
 ## Links
-- https://m.boiseweekly.com/boise/denise-bennett-the-interview/Content?oid=17304225
+
+- <https://m.boiseweekly.com/boise/denise-bennett-the-interview/Content?oid=17304225>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1101024959386705920)

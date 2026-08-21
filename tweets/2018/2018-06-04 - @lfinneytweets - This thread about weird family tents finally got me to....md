@@ -1,4 +1,5 @@
 ---
+title: "This thread about weird family tents finally got me to..."
 date: 2018-06-04
 time: 07:13:25
 tweet_id: "1003535175731404801"
@@ -16,9 +17,10 @@ related:
   - lfinneytweets
 ---
 
-This thread about weird family tents finally got me to start watching @netflix's @wildwildcountry. It's quite the ride, to say the least. https://t.co/GIwiMyea77
+This thread about weird family tents finally got me to start watching @netflix's @wildwildcountry. It's quite the ride, to say the least. <https://t.co/GIwiMyea77>
 
 ## Links
-- https://x.com/annehelen/status/1003283060056440832
+
+- <https://x.com/annehelen/status/1003283060056440832>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1003535175731404801)

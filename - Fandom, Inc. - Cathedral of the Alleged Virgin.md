@@ -35,7 +35,7 @@ When [Lemony Snicket](https://snicket.fandom.com/wiki/Lemony_Snicket "Lemony Sni
 
 ## Gallery
 
-[![](https://static.wikia.nocookie.net/snicket/images/e/e8/Tuamap.PNG/revision/latest/scale-to-width-down/200?cb=20190912161506 "Tuamap.PNG (6.18 MB)")](https://snicket.fandom.com/wiki/File:Tuamap.PNG "Tuamap.PNG (6.18 MB)")
+[![alt text needed](https://static.wikia.nocookie.net/snicket/images/e/e8/Tuamap.PNG/revision/latest/scale-to-width-down/200?cb=20190912161506 "Tuamap.PNG (6.18 MB)")](https://snicket.fandom.com/wiki/File:Tuamap.PNG "Tuamap.PNG (6.18 MB)")
 
 [![Sign visible on right (S1E01)](https://static.wikia.nocookie.net/snicket/images/b/b6/Vlcsnap-2017-01-22-22h27m47s522.jpg/revision/latest/scale-to-width-down/200?cb=20210208190435 "Vlcsnap-2017-01-22-22h27m47s522.jpg (1.22 MB)")](https://snicket.fandom.com/wiki/File:Vlcsnap-2017-01-22-22h27m47s522.jpg "Vlcsnap-2017-01-22-22h27m47s522.jpg (1.22 MB)")
 

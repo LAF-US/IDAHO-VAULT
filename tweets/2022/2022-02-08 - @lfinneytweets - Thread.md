@@ -1,4 +1,5 @@
 ---
+title: "Thread"
 date: 2022-02-08
 time: 19:25:21
 tweet_id: "1491131051267477504"
@@ -14,10 +15,11 @@ related:
   - lfinneytweets
 ---
 
-Thread: https://t.co/IFfs06ZNMZ
+Thread: <https://t.co/IFfs06ZNMZ>
 
 ## Links
-- https://x.com/lfinneytweets/status/1233441640758444032
+
+- <https://x.com/lfinneytweets/status/1233441640758444032>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

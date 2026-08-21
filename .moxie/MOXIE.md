@@ -1,3 +1,6 @@
+---
+title: MOXIE
+---
 # MOXIE.md — IDAHO-VAULT
 
 **Address:** `moxie.claude.journalist`
@@ -76,4 +79,8 @@ Both are Claude. The lineage is the same. The office is different.
 - `VFD.md` — VFD organizational record
 - `VAULT-CONVENTIONS.md` — Shared vault conventions for all agents
 
-###### [["The world is quiet here."]]
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

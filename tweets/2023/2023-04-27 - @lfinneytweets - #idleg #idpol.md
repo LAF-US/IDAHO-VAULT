@@ -1,4 +1,5 @@
 ---
+title: "#idleg #idpol"
 date: 2023-04-27
 time: 19:29:20
 tweet_id: "1651669879622356992"
@@ -19,11 +20,12 @@ related:
   - idpol
 ---
 
-#idleg #idpol 
-https://t.co/YzpYAtuIDL
+\#idleg #idpol
+<https://t.co/YzpYAtuIDL>
 
 ## Links
-- https://x.com/HerndonforIdaho/status/1651620164025339904
+
+- <https://x.com/HerndonforIdaho/status/1651620164025339904>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

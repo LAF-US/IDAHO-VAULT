@@ -1,4 +1,5 @@
 ---
+title: "The bill itself is available here, and is embedded at the..."
 date: 2022-09-01
 time: 16:21:02
 tweet_id: "1565374181063110657"
@@ -17,10 +18,11 @@ related:
 ---
 
 The bill itself is available here, and is embedded at the bottom of the latest @IdahoReports story.
-https://t.co/N1q7iV3D9R
+<https://t.co/N1q7iV3D9R>
 
 ## Links
-- https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2022spcl/legislation/H0001.pdf
+
+- <https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2022spcl/legislation/H0001.pdf>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

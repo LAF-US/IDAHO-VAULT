@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2020-11-04
 time: 01:14:44
 tweet_id: "1323795783016087553"
@@ -13,12 +14,14 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/jXyo3wO6Nl https://t.co/YZKFgHlMa0
+<https://t.co/jXyo3wO6Nl> <https://t.co/YZKFgHlMa0>
 
 ## Links
-- https://x.com/nycsouthpaw/status/1323753344968568833
+
+- <https://x.com/nycsouthpaw/status/1323753344968568833>
 
 ## Media
-- ![](https://pbs.twimg.com/tweet_video_thumb/El8RPtRUYAEf3Qv.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/El8RPtRUYAEf3Qv.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1323795783016087553)

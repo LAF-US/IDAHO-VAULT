@@ -1,4 +1,5 @@
 ---
+title: IPYNB_CHECKPOINTS
 authority: LOGAN
 related:
   - IPYNB_CHECKPOINTS

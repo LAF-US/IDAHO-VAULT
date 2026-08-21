@@ -1,4 +1,5 @@
 ---
+title: "RT @MelissaKXLY4 Spokane Police have gotten some heat in..."
 date: 2020-06-04
 time: 20:44:24
 tweet_id: "1268644798681903106"

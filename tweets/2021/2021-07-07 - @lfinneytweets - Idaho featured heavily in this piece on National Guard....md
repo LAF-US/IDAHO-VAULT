@@ -1,4 +1,5 @@
 ---
+title: "Idaho featured heavily in this piece on National Guard..."
 date: 2021-07-07
 time: 19:11:09
 tweet_id: "1412851701250330626"
@@ -18,9 +19,10 @@ related:
   - idleg
 ---
 
-Idaho featured heavily in this piece on National Guard deployments. #idpol #idleg https://t.co/tApQstV1Ep
+Idaho featured heavily in this piece on National Guard deployments. #idpol #idleg <https://t.co/tApQstV1Ep>
 
 ## Links
-- https://x.com/NewsHour/status/1412221762318876679
+
+- <https://x.com/NewsHour/status/1412221762318876679>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1412851701250330626)

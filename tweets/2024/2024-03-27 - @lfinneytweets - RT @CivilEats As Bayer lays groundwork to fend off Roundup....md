@@ -1,4 +1,5 @@
 ---
+title: "RT @CivilEats As Bayer lays groundwork to fend off Roundup..."
 date: 2024-03-27
 time: 22:58:50
 tweet_id: "1773122538752643101"

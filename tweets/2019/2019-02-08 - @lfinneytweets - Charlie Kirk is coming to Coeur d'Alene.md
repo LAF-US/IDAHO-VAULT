@@ -1,4 +1,5 @@
 ---
+title: "Charlie Kirk is coming to Coeur d'Alene"
 date: 2019-02-08
 time: 06:54:13
 tweet_id: "1093764922821898240"
@@ -13,9 +14,10 @@ related:
   - lfinneytweets
 ---
 
-Charlie Kirk is coming to Coeur d'Alene https://t.co/gOzDXqwUxG
+Charlie Kirk is coming to Coeur d'Alene <https://t.co/gOzDXqwUxG>
 
 ## Links
-- https://x.com/KCRCC/status/1088684314932330498
+
+- <https://x.com/KCRCC/status/1088684314932330498>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1093764922821898240)

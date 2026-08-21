@@ -1,4 +1,5 @@
 ---
+title: "got an update this morning, it's at the bottom of this blog..."
 date: 2020-11-03
 time: 06:57:25
 tweet_id: "1323519635078012928"
@@ -16,11 +17,12 @@ related:
   - lfinneytweets
 ---
 
-@MelissaKXLY4 @davlinnews got an update this morning, it's at the bottom of this blog post. 
-https://t.co/920pvGFBHY
+@MelissaKXLY4 @davlinnews got an update this morning, it's at the bottom of this blog post.
+<https://t.co/920pvGFBHY>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2020/11/02/state-deploying-emergency-poll-workers-to-multiple-counties/
+
+- <https://blog.idahoreports.idahoptv.org/2020/11/02/state-deploying-emergency-poll-workers-to-multiple-counties/>
 
 *In reply to [@MelissaKXLY4](https://twitter.com/MelissaKXLY4)*
 

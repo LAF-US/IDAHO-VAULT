@@ -1,4 +1,5 @@
 ---
+title: "and to think I considered deleting Nextdoor"
 date: 2024-12-09
 time: 16:25:15
 tweet_id: "1866157170217341400"
@@ -13,10 +14,11 @@ related:
   - lfinneytweets
 ---
 
-and to think I considered deleting Nextdoor https://t.co/jeZZb6A44v
+and to think I considered deleting Nextdoor <https://t.co/jeZZb6A44v>
 
 ## Media
-- ![](https://pbs.twimg.com/media/GeXsDo0a8AA4tV3.jpg)
-- ![](https://pbs.twimg.com/media/GeXsDrpaoAEIRX8.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/GeXsDo0a8AA4tV3.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/GeXsDrpaoAEIRX8.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1866157170217341400)

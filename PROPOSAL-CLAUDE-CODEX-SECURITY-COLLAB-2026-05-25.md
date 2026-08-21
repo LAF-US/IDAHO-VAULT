@@ -204,4 +204,8 @@ Branch protection on `main` has been off since a softlock caused by agents addin
 
 *Proposal filed: 2026-05-25 by Claude Code (Windows session), on Logan's direction.*
 
-###### "The world is quiet here."
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

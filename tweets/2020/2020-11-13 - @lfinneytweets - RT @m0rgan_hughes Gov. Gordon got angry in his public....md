@@ -1,4 +1,5 @@
 ---
+title: "RT @m0rgan_hughes Gov. Gordon got angry in his public..."
 date: 2020-11-13
 time: 18:00:49
 tweet_id: "1327310465467179008"

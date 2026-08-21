@@ -1,4 +1,5 @@
 ---
+title: "I'll say anecdotally, they've become much more consistent..."
 date: 2024-06-06
 time: 16:07:06
 tweet_id: "1798748459241189478"

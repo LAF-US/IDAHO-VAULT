@@ -1,4 +1,5 @@
 ---
+title: "If you click on a lawmaker, you can see what committees..."
 date: 2022-12-02
 time: 06:37:47
 tweet_id: "1598567086015631362"

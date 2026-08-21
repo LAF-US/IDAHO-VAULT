@@ -38,7 +38,7 @@ Historical note for the retired demo harbor. Do not use this file as the current
 
 3. **API key via `op run`** (local-only — never committed):
 
-   ```
+   ```text
    ANTHROPIC_API_KEY=op://YOUR_VAULT/YOUR_ITEM/YOUR_FIELD
    ```
 
@@ -138,7 +138,7 @@ crew_run_id: "{run_id}"
 
 ## Architecture
 
-```
+```text
 .crewai/                    ← Code/config (committed)
   crews/                    ← Crew definitions
     jfac_crew.py            ← JFAC Parser (retired harbor reference)

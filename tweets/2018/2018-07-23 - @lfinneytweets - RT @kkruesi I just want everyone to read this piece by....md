@@ -1,4 +1,5 @@
 ---
+title: "RT @kkruesi I just want everyone to read this piece by..."
 date: 2018-07-23
 time: 22:51:33
 tweet_id: "1021528272285270016"
@@ -26,12 +27,14 @@ date created: Monday, April 27th 2026, 10:44:38 pm
 date modified: Tuesday, April 28th 2026, 5:41:25 pm
 ---
 
-RT @kkruesi: I just want everyone to read this piece by @sethogilvie https://t.co/W2cCLyJA6Z idleg idpol https://t.co/wPw45dkOh7
+RT @kkruesi: I just want everyone to read this piece by @sethogilvie <https://t.co/W2cCLyJA6Z> idleg idpol <https://t.co/wPw45dkOh7>
 
 ## Links
-- https://idahoreports.blogs.idahoptv.org/2018/07/21/come-as-you-are-as-i-want-you-to-be/
+
+- <https://idahoreports.blogs.idahoptv.org/2018/07/21/come-as-you-are-as-i-want-you-to-be/>
 
 ## Media
-- ![](https://pbs.twimg.com/media/Di0PwSMVsAEBoES.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/Di0PwSMVsAEBoES.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1021528272285270016)

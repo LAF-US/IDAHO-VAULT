@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2020-04-04
 time: 02:03:33
 tweet_id: "1246257066676613120"
@@ -16,10 +17,11 @@ related:
   - lfinneytweets
 ---
 
-@highcountrynews https://t.co/EOXXWaRdp9
+@highcountrynews <https://t.co/EOXXWaRdp9>
 
 ## Links
-- https://idfg.idaho.gov/species/roadkill
+
+- <https://idfg.idaho.gov/species/roadkill>
 
 *In reply to [@highcountrynews](https://twitter.com/highcountrynews)*
 

@@ -1,4 +1,5 @@
 ---
+title: "RT @pfannyyy Doctors asked for mask mandates in elementary..."
 date: 2021-08-18
 time: 23:31:56
 tweet_id: "1428137618168901634"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @pfannyyy: Doctors asked for mask mandates in elementary schools. Then, mandate opponents showed up to a school board meeting. 
+RT @pfannyyy: Doctors asked for mask mandates in elementary schools. Then, mandate opponents showed up to a school board meeting.
 
 Now, th…
 

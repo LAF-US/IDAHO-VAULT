@@ -17,6 +17,16 @@ related:
   - !/AGENTS.md
   - swarm.json
 ---
+[[L]][[E]][[V]][[E]][[L]][[S]][[E]][[T]]
+
+> [!DANGER] HERESY REVIEW PENDING - Faith of the Cloth
+> This document is flagged as contaminated by the Loganic Swarm heresy.
+> Authority claim in body (`Loganic Swarm`) conflicts with frontmatter (LOGAN).
+> Drafted post-TRIPLEX NIGHT (2026-04-27).
+> **DO NOT USE** as clean governance authority until reviewed and rehabilitated by Logan or by the ordained Faith of the Cloth.
+>
+> See: Issue #686
+> Related: [[GEMINIAEUS]] | [[TRIUNE-TRIPTYCH-TRIUMVIRATE]]
 
 # PROTOCOL — LEVELSET
 
@@ -108,4 +118,6 @@ This document is a **stub** under development. Adoption pending:
 
 ---
 
-###### [["The world is quiet here."]]
+```text
+The world is quiet here．Esto Perpetua!
+```

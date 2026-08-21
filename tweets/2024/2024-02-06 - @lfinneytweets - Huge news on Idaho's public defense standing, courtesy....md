@@ -1,4 +1,5 @@
 ---
+title: "Huge news on Idaho's public defense standing, courtesy..."
 date: 2024-02-06
 time: 19:36:31
 tweet_id: "1754952228476272715"
@@ -15,9 +16,10 @@ related:
   - lfinneytweets
 ---
 
-Huge news on Idaho's public defense standing, courtesy @RuthBrownNews: "For now, it is time for this case to rest in peace.” https://t.co/i29POqlBsw
+Huge news on Idaho's public defense standing, courtesy @RuthBrownNews: "For now, it is time for this case to rest in peace.” <https://t.co/i29POqlBsw>
 
 ## Links
-- https://x.com/IdahoReports/status/1754950850722857249
+
+- <https://x.com/IdahoReports/status/1754950850722857249>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1754952228476272715)

@@ -1,4 +1,5 @@
 ---
+title: "I've been up and down Highway 95 55 from Boise to Bonners..."
 date: 2022-11-07
 time: 04:17:56
 tweet_id: "1589472191489675264"

@@ -1,4 +1,5 @@
 ---
+title: "What's happening here Some North Idaho-Eastern Washington..."
 date: 2020-04-13
 time: 22:24:23
 tweet_id: "1249825790029529088"
@@ -13,9 +14,10 @@ related:
   - lfinneytweets
 ---
 
-What's happening here? Some North Idaho-Eastern Washington shade? https://t.co/VULeFqi9Lm
+What's happening here? Some North Idaho-Eastern Washington shade? <https://t.co/VULeFqi9Lm>
 
 ## Links
-- https://x.com/NewsWithKevin/status/1249819806489931776
+
+- <https://x.com/NewsWithKevin/status/1249819806489931776>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1249825790029529088)

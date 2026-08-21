@@ -14,9 +14,7 @@ Usage:
   python3 wayback_audit.py --limit N # only check first N URLs (for testing)
 """
 
-import os
 import re
-import sys
 import time
 import json
 import argparse
@@ -102,8 +100,21 @@ def find_vault_notes() -> list[Path]:
     return notes
 
 
+def extract_frontmatter(content: str) -> str:
+    """Return the note's own YAML frontmatter block (or "" if it has none)."""
+    content = content.lstrip("﻿")
+    lines = content.splitlines()
+    if not lines or lines[0].strip() != "---":
+        return ""
+    for i, line in enumerate(lines[1:], start=1):
+        if line.strip() == "---":
+            return "\n".join(lines[1:i])
+    return ""
+
+
 def extract_url(content: str) -> str | None:
-    m = re.search(r"^URL:\s*(.+)$", content, re.MULTILINE)
+    """Return the note's own `URL:` frontmatter value, or None if absent/placeholder."""
+    m = re.search(r"^URL:\s*(.+)$", extract_frontmatter(content), re.MULTILINE)
     if not m:
         return None
     url = m.group(1).strip()
@@ -121,7 +132,8 @@ def extract_url(content: str) -> str | None:
 
 
 def extract_wayback_field(content: str) -> str | None:
-    m = re.search(r"^wayback:\s*(.+)$", content, re.MULTILINE)
+    """Return the note's own `wayback:` frontmatter value, or None if absent."""
+    m = re.search(r"^wayback:\s*(.+)$", extract_frontmatter(content), re.MULTILINE)
     return m.group(1).strip() if m else None
 
 
@@ -259,7 +271,7 @@ def main():
         ]
         for item in no_archive:
             report_lines.append(
-                f"| `{item['path'].name}` | {item['url'][:80]} | {item['live_status']} |"
+                f"| `{item['path'].name}` | <{item['url'][:80]}> | {item['live_status']} |"
             )
         report_lines.append("")
 
@@ -269,7 +281,7 @@ def main():
             "| Note | URL |", "|---|---|",
         ]
         for item in unreachable:
-            report_lines.append(f"| `{item['path'].name}` | {item['url'][:80]} |")
+            report_lines.append(f"| `{item['path'].name}` | <{item['url'][:80]}> |")
         report_lines.append("")
 
     report_path.write_text("\n".join(report_lines), encoding="utf-8")

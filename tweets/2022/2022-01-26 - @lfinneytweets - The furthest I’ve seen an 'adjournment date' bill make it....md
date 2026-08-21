@@ -1,4 +1,5 @@
 ---
+title: "The furthest I\u2019ve seen an 'adjournment date' bill make it..."
 date: 2022-01-26
 time: 15:19:40
 tweet_id: "1486358182830043136"
@@ -19,11 +20,12 @@ related:
   - idpol
 ---
 
-The furthest I’ve seen an 'adjournment date' bill make it was last year, when SB 1068 was approved by the Senate 26-8-1 but did not get a hearing in the House. #idleg #idpol 
-https://t.co/3gBtjbxXvf
+The furthest I’ve seen an 'adjournment date' bill make it was last year, when SB 1068 was approved by the Senate 26-8-1 but did not get a hearing in the House. #idleg #idpol
+<https://t.co/3gBtjbxXvf>
 
 ## Links
-- https://legislature.idaho.gov/sessioninfo/2021/legislation/S1068/
+
+- <https://legislature.idaho.gov/sessioninfo/2021/legislation/S1068/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

@@ -1,4 +1,5 @@
 ---
+title: "RT @RadioDawson .@ScottLoganKBOI reporting a Senate staffer..."
 date: 2021-01-19
 time: 18:19:17
 tweet_id: "1351595098832732160"

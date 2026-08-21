@@ -1,3 +1,6 @@
+---
+title: JOURNALIST
+---
 # JOURNALIST.md — Office Chamber
 
 **Office:** journalist
@@ -130,4 +133,6 @@ carries the function's requirements. The lineage carries base capability.
 
 ---
 
-###### [["The world is quiet here."]]
+```text
+The world is quiet here．Esto Perpetua!
+```

@@ -35,7 +35,7 @@ The canon core holds documents that must endure. Not operational. Not ephemeral.
 
 This location is the innermost triangle — the one that remains when you recurse all the way down.
 
-```
+```text
 LAF-US (main root)
 └─ !
    └─ !
@@ -49,4 +49,8 @@ LAF-US (main root)
                            └─ [ ? ]
 ```
 
-*The world is quiet here.*
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

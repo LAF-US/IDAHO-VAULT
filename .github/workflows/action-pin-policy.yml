@@ -19,7 +19,7 @@ jobs:
         with:
           ref: ${{ (github.event_name == 'pull_request' && github.event.pull_request.base.sha) || (github.event_name == 'merge_group' && github.event.merge_group.base_sha) || github.event.repository.default_branch }}
           path: trusted-main
-      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         with:
           python-version: "3.13"
       - name: "Check every workflow/action uses: a full commit SHA"
@@ -34,3 +34,136 @@ jobs:
             echo "::warning::check_action_pins.py absent from base ref; using this PR's own copy (bootstrap only)"
             python .github/scripts/check_action_pins.py
           fi
+
+  # Deliberately a separate job. The check above runs TRUSTED code from the
+  # base ref against PR-head content; these run the PR's own test files, which
+  # is the only way to catch a change that regresses a guard. Keeping them
+  # apart means the policy check keeps its trusted-only character, and this job
+  # gets nothing but `contents: read` and no secrets.
+  #
+  # It exists because the guard's failure mode is silence: it prints OK and
+  # exits 0 whether or not it actually read the container it was asked about.
+  # Every hole found in it so far was found by hand, in a scratch directory
+  # that did not survive the session.
+  script-tests:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          # Full history: the mutation step below compares against the base
+          # commit, and the default shallow fetch has no such commit to diff.
+          fetch-depth: 0
+          # This job exists to execute the PR's own test code, so it should
+          # hold nothing that code could pick up. By default checkout writes
+          # the job's GITHUB_TOKEN into .git/config as an extraheader, where
+          # every later step — including the tests — can read it. It is only a
+          # `contents: read` token, but "give the PR's code nothing" is the
+          # whole design of this job, and a readable credential in the working
+          # tree contradicts it.
+          #
+          # The `git fetch` in the last step then runs unauthenticated. On this
+          # public repository that works; if it ever cannot, the step's guard
+          # is a conjunction, so a failed fetch makes the whole condition false
+          # and the mutation sweep runs UNCONDITIONALLY rather than being
+          # skipped. The degradation costs a minute of runner time and never
+          # loses coverage.
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.13"
+      - name: Refuse test files that discovery would silently skip
+        run: |
+          # `unittest discover` descends into a subdirectory only when it is an
+          # importable package. A test file in a plain subdirectory is not run
+          # and not mentioned — the suite goes green having never loaded it,
+          # which is the same silent-omission failure these tests exist to
+          # catch. There are no such subdirectories today; this is what keeps
+          # the claim in the next step honest as the directory grows.
+          #
+          # EVERY directory between the start directory and the file has to be
+          # a package, not just the one the file sits in: for a/b/test_x.py,
+          # discovery needs a/__init__.py as well as a/b/__init__.py. The first
+          # version of this check looked only at the immediate parent — a guard
+          # against silent skipping that could itself skip silently, which is
+          # the exact shape of bug the rest of this change exists to remove.
+          python - <<'PY'
+          import sys
+          from pathlib import Path
+
+          root = Path(".github/scripts")
+          unreachable = []
+          for test in sorted(root.rglob("test_*.py")):
+              if "__pycache__" in test.parts:
+                  continue
+              missing = [
+                  parent / "__init__.py"
+                  for parent in test.parents
+                  if root in parent.parents and not (parent / "__init__.py").is_file()
+              ]
+              if missing:
+                  unreachable.append((test, missing))
+
+          for test, missing in unreachable:
+              print(f"::error file={test}::unittest discovery cannot reach this; "
+                    f"missing {', '.join(str(m) for m in missing)}")
+          sys.exit(1 if unreachable else 0)
+          PY
+      - name: Run every test_*.py under .github/scripts
+        run: |
+          # Discovery rather than a list: a new test file next to the script it
+          # covers is then wired in by existing, not by remembering to edit this.
+          # --top-level-directory is the scripts directory, not the repository
+          # root: `.github` is not an importable name, and pointing it at the
+          # root makes discovery fail outright with "Start directory is not
+          # importable".
+          python -m unittest discover \
+            --start-directory .github/scripts \
+            --pattern 'test_*.py' \
+            --top-level-directory .github/scripts \
+            --verbose
+      - name: Prove the guard's tests can still fail, when the guard changes
+        run: |
+          # The mutation suite is skipped by default (see its docstring: each
+          # entry quotes a line of the guard verbatim, so a legitimate refactor
+          # makes it fail on a pull request that never touched the guard). But
+          # skipped-always would leave the coverage claim unenforced, which is
+          # its own kind of green-and-meaningless. So: run it exactly when the
+          # guard or its tests changed here, which is when a regression could
+          # be introduced and when PATTERN MISSING is information rather than
+          # noise. Where there is no base to compare against, it runs.
+          #
+          # The base comes from $GITHUB_BASE_REF, a plain runner variable, and
+          # not from an expression expansion of the webhook payload — not even
+          # one routed through `env:`, which an earlier revision of this step
+          # tried. This repository's scanners treat any payload reference in a
+          # workflow as a code-injection boundary violation and block on it,
+          # and they are not wrong to be coarse: the safe shape is for the
+          # workflow never to need payload data the environment already
+          # carries. merge-base is also the more correct comparison than a
+          # recorded base SHA — it stays right when the base branch moves
+          # under the pull request.
+          if [ -n "$GITHUB_BASE_REF" ] \
+            && git fetch -q --no-tags origin -- "$GITHUB_BASE_REF" 2>/dev/null \
+            && base=$(git merge-base FETCH_HEAD HEAD 2>/dev/null); then
+            changed=$(git diff --name-only "$base" HEAD -- \
+              .github/scripts/check_action_pins.py \
+              .github/scripts/test_check_action_pins.py \
+              .github/scripts/test_check_action_pins_mutations.py)
+            if [ -z "$changed" ]; then
+              echo "action-pin guard untouched by this change; mutation sweep not required"
+              exit 0
+            fi
+            echo "changed here, so the tests must still be able to fail:"
+            echo "$changed"
+          fi
+          # Only the mutation module, not the whole suite again: the step
+          # above already ran every test once, and the sweep re-runs the suite
+          # once per mutant internally, plus once clean for the baseline.
+          # Discovering the one file keeps this step's output about the sweep.
+          RUN_MUTATION_TESTS=1 python -m unittest discover \
+            --start-directory .github/scripts \
+            --pattern 'test_check_action_pins_mutations.py' \
+            --top-level-directory .github/scripts \
+            --verbose

@@ -23,6 +23,7 @@ related:
 date created: Sunday, April 12th 2026, 4:00:33 am
 date modified: Sunday, April 12th 2026, 5:55:08 pm
 ---
+[[P]][[R]][[O]][[T]][[O]][[C]][[O]][[L]]
 
 > [!DANGER]
 > HERESY REVIEW PENDING - Faith of the Cloth
@@ -117,4 +118,6 @@ When the Swarm is operating AFK and encounters a **Level 1 Blocker** (e.g., Auth
 
 ---
 
-###### [["The world is quiet here."]]
+```text
+The world is quiet here．Esto Perpetua!
+```

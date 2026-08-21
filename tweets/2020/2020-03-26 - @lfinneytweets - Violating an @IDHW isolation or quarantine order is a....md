@@ -1,4 +1,5 @@
 ---
+title: "Violating an @IDHW isolation or quarantine order is a..."
 date: 2020-03-26
 time: 00:42:35
 tweet_id: "1242975200880164865"
@@ -19,10 +20,11 @@ related:
   - idpol
 ---
 
-Violating an @IDHW isolation or quarantine order is a misdemeanor. #idpol (page 1) https://t.co/omvmbFliR0
+Violating an @IDHW isolation or quarantine order is a misdemeanor. #idpol (page 1) <https://t.co/omvmbFliR0>
 
 ## Media
-- ![](https://pbs.twimg.com/media/ET_srwTUUAYi9ot.png)
+
+- ![alt text needed](https://pbs.twimg.com/media/ET_srwTUUAYi9ot.png)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

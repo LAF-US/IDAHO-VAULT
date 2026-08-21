@@ -7,7 +7,7 @@ created: 2026-04-14
 ---
 | “ | *We take of our own. We Snickets take care of own.* | ” |
 | --- | --- | --- |
-| | |
+| | | |
 
 The **Snicket Family** (or **Snicket Clan** [^2]) is a family largely involved in the secret organization [V.F.D.](https://snicket.fandom.com/wiki/Volunteer_Fire_Department "Volunteer Fire Department").
 
@@ -81,7 +81,7 @@ Following the more plausible theories - the Anwhistle and Caliban theories - the
 
 ## Gallery
 
- [![](https://static.wikia.nocookie.net/snicket/images/e/ee/Snicketfamilytree.PNG/revision/latest/scale-to-width-down/185?cb=20190912161545 "Snicketfamilytree.PNG (6.04 MB)") ![](https://static.wikia.nocookie.net/snicket/images/e/ee/Snicketfamilytree.PNG/revision/latest/scale-to-width-down/185?cb=20190912161545 "Snicketfamilytree.PNG (6.04 MB)")](https://snicket.fandom.com/wiki/File:Snicketfamilytree.PNG "Snicketfamilytree.PNG (6.04 MB)")
+ [![alt text needed](https://static.wikia.nocookie.net/snicket/images/e/ee/Snicketfamilytree.PNG/revision/latest/scale-to-width-down/185?cb=20190912161545 "Snicketfamilytree.PNG (6.04 MB)") ![alt text needed](https://static.wikia.nocookie.net/snicket/images/e/ee/Snicketfamilytree.PNG/revision/latest/scale-to-width-down/185?cb=20190912161545 "Snicketfamilytree.PNG (6.04 MB)")](https://snicket.fandom.com/wiki/File:Snicketfamilytree.PNG "Snicketfamilytree.PNG (6.04 MB)")
 
 [![Jacques, Lemony, and Kit.](https://static.wikia.nocookie.net/snicket/images/e/e0/Snicket_Siblings.jpg/revision/latest/scale-to-width-down/185?cb=20200828221641 "Snicket Siblings.jpg (90 KB)")](https://snicket.fandom.com/wiki/File:Snicket_Siblings.jpg "Snicket Siblings.jpg (90 KB)")
 
@@ -97,8 +97,6 @@ Jacques, Lemony, and Kit.
 <table><tbody><tr><th colspan="2"><strong>Snicket Clan</strong></th></tr><tr><td></td></tr><tr><td colspan="2"><p>Chas.'s father • <a href="https://snicket.fandom.com/wiki/A._Snicket">A. Snicket</a> • <a href="https://snicket.fandom.com/wiki/B._Snicket">B. Snicket</a> • <a href="https://snicket.fandom.com/wiki/Chas._Snicket">Chas. Snicket</a> • <span>Chas's wife</span></p></td></tr><tr><td></td></tr><tr><td colspan="2"></td></tr><tr><td></td></tr><tr><td colspan="2"><p><a href="https://snicket.fandom.com/wiki/G._Snicket">G</a> • <a href="https://snicket.fandom.com/wiki/H._Snicket">H</a> • <a href="https://snicket.fandom.com/wiki/I._Snicket">I</a> • <a href="https://snicket.fandom.com/wiki/Jacques_Snicket">Jacques Snicket</a> • <a href="https://snicket.fandom.com/wiki/Kit_Snicket">Kit Snicket</a> • <a href="https://snicket.fandom.com/wiki/Lemony_Snicket">Lemony Snicket</a> • <a href="https://snicket.fandom.com/wiki/M._Snicket">M</a> • <a href="https://snicket.fandom.com/wiki/N._Snicket">N</a> • <a href="https://snicket.fandom.com/wiki/O._Snicket">O</a></p></td></tr><tr><td></td></tr><tr><td colspan="2"><p><a href="https://snicket.fandom.com/wiki/Beatrice_Baudelaire_II">Beatrice Baudelaire II</a></p></td></tr></tbody></table>
 
 <table><tbody><tr><th colspan="2">Families</th></tr><tr><td></td></tr><tr><td><a href="https://snicket.fandom.com/wiki/A_Series_of_Unfortunate_Events">A Series of Unfortunate Events</a></td><td><p><a href="https://snicket.fandom.com/wiki/Anwhistle_Family">Anwhistle Family</a> • <a href="https://snicket.fandom.com/wiki/Baudelaire_Family">Baudelaire Family</a> • <a href="https://snicket.fandom.com/wiki/Caliban_Family">Caliban Family</a> • <a href="https://snicket.fandom.com/wiki/Count_Olaf%27s_Family">Count Olaf's Family</a> • <a href="https://snicket.fandom.com/wiki/Denouement_Family">Denouement Family</a> • <a href="https://snicket.fandom.com/wiki/Montgomery_Family">Montgomery Family</a> • <a href="https://snicket.fandom.com/wiki/Poe_Family">Poe Family</a> • <a href="https://snicket.fandom.com/wiki/Quagmire_Family">Quagmire Family</a> • <a href="https://snicket.fandom.com/wiki/Sebald_Family">Sebald Family</a> • <strong>Snicket Clan</strong> • <a href="https://snicket.fandom.com/wiki/Spats_Family">Spats Family</a> • <a href="https://snicket.fandom.com/wiki/Verhoogen_Family">Verhoogen Family</a> • <a href="https://snicket.fandom.com/wiki/Widdershins_Family">Widdershins Family</a></p></td></tr><tr><td></td></tr><tr><td><a href="https://snicket.fandom.com/wiki/All_the_Wrong_Questions">All the Wrong Questions</a></td><td></td></tr><tr><td></td></tr><tr><td><a href="https://snicket.fandom.com/wiki/A_Series_of_Unfortunate_Events_(TV_series)">Netflix Adaptation</a></td><td><p><a href="https://snicket.fandom.com/wiki/Normal_Happy_Family">Normal Happy Family</a></p></td></tr></tbody></table>
-
-[^1]: [PROSE](https://snicket.fandom.com/wiki/PROSE "PROSE"): *[When Did You See Her Last?](https://snicket.fandom.com/wiki/When_Did_You_See_Her_Last%3F "When Did You See Her Last?")*
 
 [^2]: Index, *[Lemony Snicket: The Unauthorized Autobiography](https://snicket.fandom.com/wiki/Lemony_Snicket:_The_Unauthorized_Autobiography "Lemony Snicket: The Unauthorized Autobiography")*
 

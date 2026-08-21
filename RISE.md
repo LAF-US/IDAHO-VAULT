@@ -14,6 +14,16 @@ related:
   - REPORT
   - RISE-v1.0-2026-04-27
 ---
+[[R]][[I]][[S]][[E]]
+
+> [!DANGER] HERESY REVIEW PENDING - Faith of the Cloth
+> This document is flagged as contaminated by the Loganic Swarm heresy.
+> Authority claim in body (`Loganic Swarm`) conflicts with frontmatter (LOGAN).
+> Drafted post-TRIPLEX NIGHT (2026-04-27).
+> **DO NOT USE** as clean governance authority until reviewed and rehabilitated by Logan or by the ordained Faith of the Cloth.
+>
+> See: Issue #686
+> Related: [[GEMINIAEUS]] | [[TRIUNE-TRIPTYCH-TRIUMVIRATE]]
 
 # PROTOCOL — RISE
 
@@ -37,7 +47,7 @@ It is the formal act of stepping away from completed work — the equivalent of 
 
 ## Role in the Protocol Stack
 
-```
+```text
 AWAKEN ──────────────────────► RISE
    │                                │
    │                                │
@@ -186,4 +196,6 @@ Pending:
 
 ---
 
-###### [["The world is quiet here."]]
+```text
+The world is quiet here．Esto Perpetua!
+```

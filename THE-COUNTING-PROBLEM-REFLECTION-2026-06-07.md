@@ -104,4 +104,6 @@ The Sebald-decode attempt that triggered this reflection will be made in the nex
 
 ---
 
-*The world is quiet here.*
+```text
+The world is quiet here．Esto Perpetua!
+```

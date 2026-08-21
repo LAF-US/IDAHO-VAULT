@@ -5,7 +5,7 @@ author:
   - "[[matt1398]]"
 published: 2026-05-13
 created: 2026-06-11
-description: "Claude Code writes JSONL session logs to ~/.claude/ — the hidden folder inside your home directory. The path is the same on macOS and Linux; on Windows it's %USERPROFILE%\.claude\."
+description: 'Claude Code writes JSONL session logs to ~/.claude/ — the hidden folder inside your home directory. The path is the same on macOS and Linux; on Windows it''s %USERPROFILE%\.claude\.'
 ---
 Claude Code writes JSONL session logs to ~/.claude/ — the hidden folder inside your home directory. The path is the same on macOS and Linux; on Windows it's %USERPROFILE%\\.claude\\.
 
@@ -17,7 +17,7 @@ These logs exist whether or not you use claude-devtools. The app simply reads th
 
 On macOS the Claude Code log file location is:
 
-```
+```text
 /Users/<you>/.claude/
 ```
 
@@ -27,7 +27,7 @@ Replace `<you>` with your account name. The folder is hidden by default in Finde
 
 On Linux the Claude Code logs location is:
 
-```
+```text
 /home/<you>/.claude/
 ```
 
@@ -37,13 +37,13 @@ If you run Claude Code as a different user (e.g. inside a Docker container or un
 
 On Windows, Claude Code logs are stored in your user profile directory:
 
-```
+```text
 C:\Users\<you>\.claude\
 ```
 
 Or with the environment variable:
 
-```
+```text
 %USERPROFILE%\.claude\
 ```
 
@@ -77,10 +77,10 @@ FAQ · 06
 
 Common questions about claude-devtools, session transcripts, and Claude Code logs on disk.
 
-1. Claude Code logs are stored in the hidden ~/.claude/ folder inside your home directory. On macOS that is /Users/<you>/.claude/, on Linux /home/<you>/.claude/, and on Windows C:\\Users\\<you>\\.claude\\ (also reachable as %USERPROFILE%\\.claude\\).
-2. On Windows, the Claude Code log file location is %USERPROFILE%\\.claude\\ — typically C:\\Users\\<you>\\.claude\\. The folder is hidden by default; enable 'Show hidden items' in File Explorer or paste the path directly into the address bar. The same location is used by the CLI, the VS Code extension, and the Claude Desktop coding integrations.
-3. Claude Code session files are saved as JSONL transcripts under ~/.claude/projects/<encoded-project-path>/<session-id>.jsonl. Each project gets its own folder; each session is a separate JSONL file inside that folder.
-4. On macOS, Claude Code sessions are stored at /Users/<you>/.claude/projects/. The folder is hidden in Finder by default — press Cmd+Shift+. to reveal hidden folders, or run \`open ~/.claude\` from Terminal.
+1. Claude Code logs are stored in the hidden ~/.claude/ folder inside your home directory. On macOS that is `/Users/<you>/.claude/`, on Linux `/home/<you>/.claude/`, and on Windows `C:\Users\<you>\.claude\` (also reachable as %USERPROFILE%\\.claude\\).
+2. On Windows, the Claude Code log file location is %USERPROFILE%\\.claude\\ — typically `C:\Users\<you>\.claude\`. The folder is hidden by default; enable 'Show hidden items' in File Explorer or paste the path directly into the address bar. The same location is used by the CLI, the VS Code extension, and the Claude Desktop coding integrations.
+3. Claude Code session files are saved as JSONL transcripts under `~/.claude/projects/<encoded-project-path>/<session-id>.jsonl`. Each project gets its own folder; each session is a separate JSONL file inside that folder.
+4. On macOS, Claude Code sessions are stored at `/Users/<you>/.claude/projects/`. The folder is hidden in Finder by default — press Cmd+Shift+. to reveal hidden folders, or run \`open ~/.claude\` from Terminal.
 5. The raw JSONL files in ~/.claude/ are readable in any text editor or with \`jq\`, but they are noisy — escaped JSON with system prompts and metadata. claude-devtools parses them into a structured conversation viewer with per-tool renderers, token attribution, and search.
 6. Yes. The Claude Code CLI, the VS Code / JetBrains extensions, and the Claude Desktop app's coding features all write session logs to the same ~/.claude/ directory in the user's home folder.[Inspecting remote sessions over SSH](https://claude-dev.tools/docs/ssh-remote)
 

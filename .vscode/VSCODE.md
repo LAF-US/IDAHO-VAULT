@@ -1,4 +1,5 @@
 ---
+title: VSCODE
 authority: LOGAN
 related:
   - VSCODE

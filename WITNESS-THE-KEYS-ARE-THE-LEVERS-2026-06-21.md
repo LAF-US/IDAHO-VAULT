@@ -260,10 +260,10 @@ pair + a lossy legacy `risk/{—,low,high}` trio — flattened to these four on 
 The classification grid — each cell is simply the label(s) that fire:
 
 | | **filedepth `—`** | **filedepth `high`** | **filedepth `nope`** |
-|---|---|---|---|
-| **filetype `—`**  | *(no label)* | `risk/high` | `risk/nope` |
-| **filetype `low`**| `risk/low` | `risk/low` + `risk/high` | `risk/low` + `risk/nope` |
-| **filetype `med`**| `risk/med` | `risk/med` + `risk/high` | `risk/med` + `risk/nope` |
+| --- | --- | --- | --- |
+| **filetype `—`** | *(no label)* | `risk/high` | `risk/nope` |
+| **filetype `low`** | `risk/low` | `risk/low` + `risk/high` | `risk/low` + `risk/nope` |
+| **filetype `med`** | `risk/med` | `risk/med` + `risk/high` | `risk/med` + `risk/nope` |
 
 **Routing is a SEPARATE downstream layer** (not part of the classification above). The engine
 (`review_feedback_loop.py` `_tier_from_pair` + the `eligible_for_auto_merge` predicate, `flag_clearable`
@@ -300,4 +300,8 @@ them, stood in for it):
 
 Whatever protects those surfaces is a separate mechanism (e.g. CODEOWNERS), not filedepth.
 
-###### [["The world is quiet here."]]
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

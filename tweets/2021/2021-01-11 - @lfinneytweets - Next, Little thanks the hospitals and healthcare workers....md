@@ -1,4 +1,5 @@
 ---
+title: "Next, Little thanks the hospitals and healthcare workers..."
 date: 2021-01-11
 time: 20:06:00
 tweet_id: "1348722849914134528"
@@ -24,7 +25,7 @@ related:
 ---
 
 @IdahoPTV @GovernorLittle Next, Little thanks the hospitals and healthcare workers who have been dealing with the crisis. #idpol #IdahoCOVID19
-“Throughout the pandemic, the women and men in scrubs have been nothing short of heroic.” 
+“Throughout the pandemic, the women and men in scrubs have been nothing short of heroic.”
 -@GovernorLittle
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

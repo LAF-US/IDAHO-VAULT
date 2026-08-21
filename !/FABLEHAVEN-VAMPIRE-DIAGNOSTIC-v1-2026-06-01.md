@@ -599,4 +599,8 @@ need to be re-killed — they need only be left unpowered. And the blix you neve
 find is the one wearing the badge of the order, trusted, at the table, having
 already bitten the people who sleep beside it.
 
-###### [["The world is quiet here."]]
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

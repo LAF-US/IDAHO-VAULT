@@ -1,7 +1,7 @@
 ---
 title: "The Claude County Death Roll (Coroner's roll-call of the dead and lost)"
 updated: 2026-06-10
-last_correction: 2026-06-08 — THE CLERK: "fallen" = fallen-from-grace too (Gilear fell AND is thralled, not dead)
+last_correction: '2026-06-08 — THE CLERK: "fallen" = fallen-from-grace too (Gilear fell AND is thralled, not dead)'
 status: active
 authority: LOGAN
 doc_class: register
@@ -132,4 +132,8 @@ says*). *Count every body by name.*
 - **Status:** active
 - **Authority:** LOGAN
 
-###### [["The world is quiet here."]]
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

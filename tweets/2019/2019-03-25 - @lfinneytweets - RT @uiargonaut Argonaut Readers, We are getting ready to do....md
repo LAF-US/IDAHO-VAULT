@@ -1,4 +1,5 @@
 ---
+title: "RT @uiargonaut Argonaut Readers, We are getting ready to do..."
 date: 2019-03-25
 time: 04:15:08
 tweet_id: "1110032342599426048"
@@ -17,7 +18,7 @@ related:
 
 RT @uiargonaut: Argonaut Readers,
 
-We are getting ready to do our annual ‘Best of Moscow’ insert. 
+We are getting ready to do our annual ‘Best of Moscow’ insert.
 
 What category do you want to see this y…
 

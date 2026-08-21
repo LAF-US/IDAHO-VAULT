@@ -1,4 +1,5 @@
 ---
+title: "I truly didn't know how this vote was going to turn out..."
 date: 2023-03-23
 time: 19:07:07
 tweet_id: "1638980712677396485"
@@ -16,9 +17,10 @@ related:
   - idleg
 ---
 
-I truly didn't know how this vote was going to turn out until it was announced. #idleg https://t.co/D8QsFYgabs
+I truly didn't know how this vote was going to turn out until it was announced. #idleg <https://t.co/D8QsFYgabs>
 
 ## Links
-- https://x.com/IdahoReports/status/1638979692425543681
+
+- <https://x.com/IdahoReports/status/1638979692425543681>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1638980712677396485)

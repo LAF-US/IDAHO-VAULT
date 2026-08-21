@@ -9,7 +9,7 @@ created: 2026-04-14
 
 | “ | *The three Baudelaires may be long gone, but there is a fourth Baudelaire here, waiting for you to untie " [My Silence Knot](https://snicket.fandom.com/wiki/My_Silence_Knot "My Silence Knot") " and help me find the end of a story that began with you--in the very room where I sit now, about to hand this letter to my business letter writing instructor so he will grade it and mail it.* | ” |
 | --- | --- | --- |
-| | — Beatrice Baudelaire II, *[The Beatrice Letters](https://snicket.fandom.com/wiki/The_Beatrice_Letters "The Beatrice Letters")* |
+| | — Beatrice Baudelaire II, *[The Beatrice Letters](https://snicket.fandom.com/wiki/The_Beatrice_Letters "The Beatrice Letters")* | |
 
 **Beatrice Baudelaire II** (also known as **Beatrice Baudelaire**, and non-canonically as **Beatrice Snicket**) is the daughter of [Kit Snicket](https://snicket.fandom.com/wiki/Kit_Snicket "Kit Snicket") and possibly [Dewey Denouement](https://snicket.fandom.com/wiki/Dewey_Denouement "Dewey Denouement") born during the events of *[The End](https://snicket.fandom.com/wiki/The_End "The End")*. She is ten years old by the time her final letter in *[The Beatrice Letters](https://snicket.fandom.com/wiki/The_Beatrice_Letters "The Beatrice Letters")* is written.
 
@@ -21,7 +21,7 @@ Other than that, she is the niece of [Jacques](https://snicket.fandom.com/wiki/J
 
 | “ | *Perhaps this last word was the baby's first secret, joining the secrets the Baudelaires were keeping from the baby, and all the other secrets immersed in the world. Perhaps it is better not to know precisely what was meant by this word, as some things are better left in the [great unknown](https://snicket.fandom.com/wiki/Bombinating_Beast "Bombinating Beast"). There are some words, of course, that are better left unsaid but not, I believe, the word uttered by my niece, a word which here means that the story is over.   Beatrice.* | ” |
 | --- | --- | --- |
-| | |
+| | | |
 
 Kit Snicket gave birth to Beatrice on [the island](https://snicket.fandom.com/wiki/The_Island "The Island"); she died as a result of poisoning by the [Medusoid Mycelium](https://snicket.fandom.com/wiki/Medusoid_Mycelium "Medusoid Mycelium"), and gave her daughter to [Violet](https://snicket.fandom.com/wiki/Violet_Baudelaire "Violet Baudelaire"), [Klaus](https://snicket.fandom.com/wiki/Klaus_Baudelaire "Klaus Baudelaire"), and [Sunny Baudelaire](https://snicket.fandom.com/wiki/Sunny_Baudelaire "Sunny Baudelaire") to raise. When Beatrice opened her eyes for the first time, she saw the sunrise and cried.
 
@@ -37,7 +37,7 @@ Beatrice stops before they leave to say goodbye at her mother's grave, and when 
 
 | “ | *Violet told me once that I saved her life, and Klaus claimed that without me he would have died in despair not long after the destruction of the Hotel Denouement. Even Sunny said that she could not have survived without me. But I don't have to tell you how brave and resourceful, how loyal and well-read those three people are. It is I who would have been lost without them.* | ” |
 | --- | --- | --- |
-| | — Beatrice Baudelaire II, *[The Beatrice Letters](https://snicket.fandom.com/wiki/The_Beatrice_Letters "The Beatrice Letters")*, BB to LS #5 |
+| | — Beatrice Baudelaire II, *[The Beatrice Letters](https://snicket.fandom.com/wiki/The_Beatrice_Letters "The Beatrice Letters")*, BB to LS #5 | |
 
 ![Beatrice and the Baudelaires sailing from the island.](https://static.wikia.nocookie.net/snicket/images/a/aa/SailingAway.png/revision/latest/scale-to-width-down/250?cb=20190108092423)
 
@@ -53,7 +53,7 @@ At some point between this period and the time she turned ten, Beatrice became s
 
 | “ | *I owe my life to them, and now that we have been separated, I will not rest until I find them again.* | ” |
 | --- | --- | --- |
-| | — Beatrice Baudelaire II, *[The Beatrice Letters](https://snicket.fandom.com/wiki/The_Beatrice_Letters "The Beatrice Letters")*, BB to LS #5 |
+| | — Beatrice Baudelaire II, *[The Beatrice Letters](https://snicket.fandom.com/wiki/The_Beatrice_Letters "The Beatrice Letters")*, BB to LS #5 | |
 
 ![Beatrice's business card.](https://static.wikia.nocookie.net/snicket/images/f/f1/Beaii_card.PNG/revision/latest/scale-to-width-down/271?cb=20190913013150)
 
@@ -109,63 +109,63 @@ She finally manages to slip a letter under his door, and he meets her for a root
 
 | “ | *Chekrio?* | ” |
 | --- | --- | --- |
-| | — Chapter Fourteen |
+| | — Chapter Fourteen | |
 
 | “ | *Cake!* | ” |
 | --- | --- | --- |
-| | — Chapter Fourteen |
+| | — Chapter Fourteen | |
 
 | “ | *Vi! Kla! Sun!* | ” |
 | --- | --- | --- |
-| | — Chapter Fourteen |
+| | — Chapter Fourteen | |
 
 | “ | *Beatrice.* | ” |
 | --- | --- | --- |
-| | — Chapter Fourteen, final word of the book and series. |
+| | — Chapter Fourteen, final word of the book and series. | |
 
 ### The Beatrice Letters
 
 | “ | *For years I kept quiet, feeling all my words twisting and tangling inside me like skeins of yarn, as I searched desperately for someone who could be of assistance. Now I must untie " [My Silence Knot](https://snicket.fandom.com/wiki/My_Silence_Knot "My Silence Knot") " and write to a man I have never seen, even if he is not the man for who I am looking, and even if I am looking in the wrong place for the right man, or the right place for the wrong man, or both, or neither, or both both and neither.* | ” |
 | --- | --- | --- |
-| | — BB to LS #1 |
+| | — BB to LS #1 | |
 
 | “ | *Nevertheless, I am hoping you will discuss your past with me. I am hoping you will tell me a story that began many years ago, in what I was told is a sort of classroom. I am hoping you are who I am hoping you are, and I am hoping that you are still in your dusty office, and I am hoping that this letter reaches you. In short, I am hoping for the best.* | ” |
 | --- | --- | --- |
-| | — BB to LS #1 |
+| | — BB to LS #1 | |
 
 | “ | *If I lean back in this chair--your chair, if I'm not mistaken--I can see an empty lot in which a few unusual plants have sprouted. It takes years for the land to recuperate from a fire, but even in the darkest of ashes eventually something can grow.* | ” |
 | --- | --- | --- |
-| | — BB to LS #2 |
+| | — BB to LS #2 | |
 
 | “ | *Either I am a very good detective, or you are very lousy at hiding things-- or you want me to come to where you are.* | ” |
 | --- | --- | --- |
-| | — BB to LS #2 |
+| | — BB to LS #2 | |
 
 | “ | *This is why it is so important for me to find my family. As time goes on, memories fade. Violet tying up her hair in a ribbon, to keep it out of her eyes, Klaus squinting at a book through his glasses, Sunny appearing on the radio to discuss her recipes- I don't want these to be the only things I remember of the most important people in my life.* | ” |
 | --- | --- | --- |
-| | — BB to LS #3 |
+| | — BB to LS #3 | |
 
 | “ | *Why didn't you answer? Why won't you answer any of my questions? I must have at least twelve.* | ” |
 | --- | --- | --- |
-| | — BB to LS #4 |
+| | — BB to LS #4 | |
 
 | “ | *I cannot imagine why someone as noble as yourself-- assuming, once more, that you are the man I believe you to be-- will not meet someone who wants so very much to talk to you. Please, sir, I beg of you, simply walk out the door, head down the corridor toward the east staircase, walk up one flight of stairs, head down a corridor, and knock on the door of the office directly above yours, and untie "My Silence Knot."* | ” |
 | --- | --- | --- |
-| | — BB to LS #5 |
+| | — BB to LS #5 | |
 
 | “ | *I am sorry I embarrassed you in front of your friends. I only wanted to talk to you. The waiter agreed to bring this card with your drink. If you don't want to meet me, rip it in half when you are done with your root beer float, and I will leave and never try to contact you again. But if you want to meet me, I'm the ten-year-old girl at the corner table. -B.* | ” |
 | --- | --- | --- |
-| | — BB to LS #6 |
+| | — BB to LS #6 | |
 
 ### Netflix
 
 | “ | *I'm looking for someone.* | ” |
 | --- | --- | --- |
-| | — [The End](https://snicket.fandom.com/wiki/The_End_\(episode\) "The End (episode)") |
+| | — [The End](https://snicket.fandom.com/wiki/The_End_\(episode\) "The End (episode)") | |
 
 | “ | *Would you like to hear a story about our family?* | ” |
 | --- | --- | --- |
-| | — [The End](https://snicket.fandom.com/wiki/The_End_\(episode\) "The End (episode)") |
+| | — [The End](https://snicket.fandom.com/wiki/The_End_\(episode\) "The End (episode)") | |
 
 ## Trivia
 
@@ -226,7 +226,7 @@ She is also the grandniece of [D](https://snicket.fandom.com/wiki/D._Snicket "D.
 
 ### Netflix
 
- [![](https://static.wikia.nocookie.net/snicket/images/f/f9/BeatriceTransparent.png/revision/latest/scale-to-width-down/120?cb=20240115175358 "BeatriceTransparent.png (382 KB)") ![](https://static.wikia.nocookie.net/snicket/images/f/f9/BeatriceTransparent.png/revision/latest/scale-to-width-down/120?cb=20240115175358 "BeatriceTransparent.png (382 KB)")](https://snicket.fandom.com/wiki/File:BeatriceTransparent.png "BeatriceTransparent.png (382 KB)")
+ [![alt text needed](https://static.wikia.nocookie.net/snicket/images/f/f9/BeatriceTransparent.png/revision/latest/scale-to-width-down/120?cb=20240115175358 "BeatriceTransparent.png (382 KB)") ![alt text needed](https://static.wikia.nocookie.net/snicket/images/f/f9/BeatriceTransparent.png/revision/latest/scale-to-width-down/120?cb=20240115175358 "BeatriceTransparent.png (382 KB)")](https://snicket.fandom.com/wiki/File:BeatriceTransparent.png "BeatriceTransparent.png (382 KB)")
 
 [![Kit and her newborn daughter.](https://static.wikia.nocookie.net/snicket/images/b/b4/Kitbeaii.png/revision/latest/scale-to-width-down/240?cb=20190915135338 "Kitbeaii.png (3.51 MB)")](https://snicket.fandom.com/wiki/File:Kitbeaii.png "Kitbeaii.png (3.51 MB)")
 
@@ -335,10 +335,6 @@ Beatrice speaking with her uncle Lemony.
 <table><tbody><tr><th colspan="2">Characters of <i><a href="https://snicket.fandom.com/wiki/A_Series_of_Unfortunate_Events">A Series of Unfortunate Events</a></i></th></tr><tr><td></td></tr><tr><td>Main Cast</td><td></td></tr><tr><td></td></tr><tr><td>Recurring</td><td><p><a href="https://snicket.fandom.com/wiki/Bald_Man_with_the_Long_Nose">Bald Man with the Long Nose</a> • <a href="https://snicket.fandom.com/wiki/Mrs._Bass">Mrs. Bass</a> • <a href="https://snicket.fandom.com/wiki/Beatrice_Baudelaire">Beatrice Baudelaire</a> • <strong>Beatrice Baudelaire II</strong> • <a href="https://snicket.fandom.com/wiki/Bertrand_Baudelaire">Bertrand Baudelaire</a> • <a href="https://snicket.fandom.com/wiki/Bruce">Bruce</a> • <a href="https://snicket.fandom.com/wiki/Colette">Colette</a> • <a href="https://snicket.fandom.com/wiki/Fernald">Fernald</a> • <a href="https://snicket.fandom.com/wiki/Hal">Hal</a> • <a href="https://snicket.fandom.com/wiki/Henchperson_of_Indeterminate_Gender">Henchperson of Indeterminate Gender</a> • <a href="https://snicket.fandom.com/wiki/Hugo">Hugo</a> • <a href="https://snicket.fandom.com/wiki/Incredibly_Deadly_Viper">Incredibly Deadly Viper</a> • <a href="https://snicket.fandom.com/wiki/Geraldine_Julienne">Geraldine Julienne</a> • <a href="https://snicket.fandom.com/wiki/Kevin">Kevin</a> • <a href="https://snicket.fandom.com/wiki/Kind_Editor">Kind Editor</a> • <a href="https://snicket.fandom.com/wiki/Man_with_a_Beard_but_No_Hair">Man with a Beard but No Hair</a> • <a href="https://snicket.fandom.com/wiki/Vice_Principal_Nero">Vice Principal Nero</a> • <a href="https://snicket.fandom.com/wiki/Phil">Phil</a> • <a href="https://snicket.fandom.com/wiki/Arthur_Poe">Arthur Poe</a> • <a href="https://snicket.fandom.com/wiki/Duncan_Quagmire">Duncan Quagmire</a> • <a href="https://snicket.fandom.com/wiki/Isadora_Quagmire">Isadora Quagmire</a> • <a href="https://snicket.fandom.com/wiki/Quigley_Quagmire">Quigley Quagmire</a> • <a href="https://snicket.fandom.com/wiki/Mr._Remora">Mr. Remora</a> • <a href="https://snicket.fandom.com/wiki/Carmelita_Spats">Carmelita Spats</a> • <a href="https://snicket.fandom.com/wiki/Kit_Snicket">Kit Snicket</a> • <a href="https://snicket.fandom.com/wiki/Esm%C3%A9_Squalor">Esmé Squalor</a> • <a href="https://snicket.fandom.com/wiki/Jerome_Squalor">Jerome Squalor</a> • <a href="https://snicket.fandom.com/wiki/Justice_Strauss">Justice Strauss</a> • <a href="https://snicket.fandom.com/wiki/White-Faced_Women">White-Faced Women</a> • <a href="https://snicket.fandom.com/wiki/Woman_with_Hair_but_No_Beard">Woman with Hair but No Beard</a></p></td></tr><tr><td></td></tr><tr><td><a href="https://snicket.fandom.com/wiki/The_Bad_Beginning">The Bad Beginning</a></td><td></td></tr><tr><td></td></tr><tr><td><a href="https://snicket.fandom.com/wiki/The_Reptile_Room">The Reptile Room</a></td><td></td></tr><tr><td></td></tr><tr><td><a href="https://snicket.fandom.com/wiki/The_Wide_Window">The Wide Window</a></td><td><p><a href="https://snicket.fandom.com/wiki/Ike_Anwhistle">Ike Anwhistle</a> • <a href="https://snicket.fandom.com/wiki/Josephine_Anwhistle">Josephine Anwhistle</a> • <span>Bertrand Baudelaire's Female Cousin</span> • <a href="https://snicket.fandom.com/wiki/Gina-Sue">Gina-Sue</a> • <a href="https://snicket.fandom.com/wiki/Larry_Your-Waiter">Larry the Waiter</a> • <a href="https://snicket.fandom.com/wiki/Captain_Sham">Captain Sham</a></p></td></tr><tr><td></td></tr><tr><td><a href="https://snicket.fandom.com/wiki/The_Miserable_Mill">The Miserable Mill</a></td><td><p><a href="https://snicket.fandom.com/wiki/Charles">Charles</a> • <a href="https://snicket.fandom.com/wiki/Foreman_Firstein">Foreman Firstein</a> • <a href="https://snicket.fandom.com/wiki/Flacutono">Flacutono</a> • <a href="https://snicket.fandom.com/wiki/Georgina_Orwell">Georgina Orwell</a> • <a href="https://snicket.fandom.com/wiki/Shirley">Shirley</a> • <a href="https://snicket.fandom.com/wiki/Sir">Sir</a></p></td></tr><tr><td></td></tr><tr><td><a href="https://snicket.fandom.com/wiki/The_Austere_Academy">The Austere Academy</a></td><td><p><a href="https://snicket.fandom.com/wiki/Elwyn">Elwyn</a> • <a href="https://snicket.fandom.com/wiki/Coach_Genghis">Coach Genghis</a> • <a href="https://snicket.fandom.com/wiki/Ms._Tench">Ms. Tench</a></p></td></tr><tr><td></td></tr><tr><td><a href="https://snicket.fandom.com/wiki/The_Ersatz_Elevator">The Ersatz Elevator</a></td><td></td></tr><tr><td></td></tr><tr><td><a href="https://snicket.fandom.com/wiki/The_Vile_Village">The Vile Village</a></td><td></td></tr><tr><td></td></tr><tr><td><a href="https://snicket.fandom.com/wiki/The_Hostile_Hospital">The Hostile Hospital</a></td><td><p><a href="https://snicket.fandom.com/wiki/Babs">Babs</a> • <a href="https://snicket.fandom.com/wiki/Bearded_Man">Bearded Man</a> • <a href="https://snicket.fandom.com/wiki/Laura_V._Bleediotie">Laura V. Bleediotie</a> • <a href="https://snicket.fandom.com/wiki/Lou">Lou</a> • <a href="https://snicket.fandom.com/wiki/Mattathias_Medicalschool">Mattathias</a> • <a href="https://snicket.fandom.com/wiki/Milt">Milt</a> • <a href="https://snicket.fandom.com/wiki/Mr._Sirin">Mr. Sirin</a> • <a href="https://snicket.fandom.com/wiki/Volunteers_Fighting_Disease">Volunteers Fighting Disease</a></p></td></tr><tr><td></td></tr><tr><td><a href="https://snicket.fandom.com/wiki/The_Carnivorous_Carnival">The Carnivorous Carnival</a></td><td></td></tr><tr><td></td></tr><tr><td><a href="https://snicket.fandom.com/wiki/The_Slippery_Slope">The Slippery Slope</a></td><td></td></tr><tr><td></td></tr><tr><td><a href="https://snicket.fandom.com/wiki/The_Grim_Grotto">The Grim Grotto</a></td><td></td></tr><tr><td></td></tr><tr><td><a href="https://snicket.fandom.com/wiki/The_Penultimate_Peril">The Penultimate Peril</a></td><td></td></tr><tr><td></td></tr><tr><td><a href="https://snicket.fandom.com/wiki/The_End">The End</a></td><td><p><a href="https://snicket.fandom.com/wiki/Alonso">Alonso</a> • <a href="https://snicket.fandom.com/wiki/Ariel">Ariel</a> • <a href="https://snicket.fandom.com/wiki/Jonah_Bellamy">Jonah Bellamy</a> • <a href="https://snicket.fandom.com/wiki/Sadie_Bellamy">Sadie Bellamy</a> • <a href="https://snicket.fandom.com/wiki/Rabbi_Bligh">Rabbi Bligh</a> • <a href="https://snicket.fandom.com/wiki/Brewster">Brewster</a> • <a href="https://snicket.fandom.com/wiki/Byam">Byam</a> • <a href="https://snicket.fandom.com/wiki/Friday_Caliban">Friday Caliban</a> • <a href="https://snicket.fandom.com/wiki/Miranda_Caliban">Miranda Caliban</a> • <a href="https://snicket.fandom.com/wiki/Calypso">Calypso</a> • <a href="https://snicket.fandom.com/wiki/Erewhon">Erewhon</a> • <a href="https://snicket.fandom.com/wiki/Ferdinand">Ferdinand</a> • <a href="https://snicket.fandom.com/wiki/Finn">Finn</a> • <a href="https://snicket.fandom.com/wiki/Professor_Fletcher">Professor Fletcher</a> • <a href="https://snicket.fandom.com/wiki/Gonzalo">Gonzalo</a> • <a href="https://snicket.fandom.com/wiki/Ishmael">Ishmael</a> • <a href="https://snicket.fandom.com/wiki/Dr._Kurtz">Dr. Kurtz</a> • <a href="https://snicket.fandom.com/wiki/Larsen">Larsen</a> • <a href="https://snicket.fandom.com/wiki/Ms._Marlow">Ms. Marlow</a> • <a href="https://snicket.fandom.com/wiki/Monday">Monday</a> • <a href="https://snicket.fandom.com/wiki/Madame_Nordoff">Madame Nordoff</a> • <a href="https://snicket.fandom.com/wiki/Omeros">Omeros</a> • <a href="https://snicket.fandom.com/wiki/Mr._Pitcairn">Mr. Pitcairn</a> • <a href="https://snicket.fandom.com/wiki/Robinson">Robinson</a> • <a href="https://snicket.fandom.com/wiki/Sherman">Sherman</a> • <a href="https://snicket.fandom.com/wiki/Thursday">Thursday</a> • <a href="https://snicket.fandom.com/wiki/Weyden">Weyden</a> • <a href="https://snicket.fandom.com/wiki/Willa">Willa</a></p></td></tr><tr><td></td></tr><tr><td>Other ASOUE Books</td><td><p><a href="https://snicket.fandom.com/wiki/Beekeeper">Beekeeper</a> • <a href="https://snicket.fandom.com/wiki/Building_Committee">Building Committee</a> • <a href="https://snicket.fandom.com/wiki/Emily_Dickinson">Emily Dickinson</a> • <a href="https://snicket.fandom.com/wiki/Dolores">Dolores</a> • <a href="https://snicket.fandom.com/wiki/Esm%C3%A9_Squalor_Fan_Club">Esmé Squalor Fan Club</a> • <a href="https://snicket.fandom.com/wiki/Gerta">Gerta</a> • <a href="https://snicket.fandom.com/wiki/Daniel_Handler">Daniel Handler</a> • <a href="https://snicket.fandom.com/wiki/Haruki">Haruki</a> • <a href="https://snicket.fandom.com/wiki/Ivan_Lachrymose">Ivan Lachrymose</a> • <a href="https://snicket.fandom.com/wiki/Eleanora_Poe">Eleanora Poe</a> • <a href="https://snicket.fandom.com/wiki/Lena_Pukalie">Lena Pukalie</a> • <a href="https://snicket.fandom.com/wiki/Duchess_R">Duchess R</a> • <a href="https://snicket.fandom.com/wiki/R%27s_Mother">R's Mother</a> • <a href="https://snicket.fandom.com/wiki/R%27s_Father">R's Father</a> • <a href="https://snicket.fandom.com/wiki/Young_R%C3%B6lf">Young Rölf</a> • <a href="https://snicket.fandom.com/wiki/Sally_Sebald">Sally Sebald</a> • <a href="https://snicket.fandom.com/wiki/Shoemaker">Shoemaker</a> • <a href="https://snicket.fandom.com/wiki/A._Snicket">A. Snicket</a> • <a href="https://snicket.fandom.com/wiki/B._Snicket">B. Snicket</a> • <a href="https://snicket.fandom.com/wiki/Chas._Snicket">Chas. Snicket</a> • <a href="https://snicket.fandom.com/wiki/D._Snicket">D. Snicket</a> • <a href="https://snicket.fandom.com/wiki/E._Snicket">E. Snicket</a> • <a href="https://snicket.fandom.com/wiki/F._Snicket">F. Snicket</a> • <a href="https://snicket.fandom.com/wiki/G._Snicket">G</a> • <a href="https://snicket.fandom.com/wiki/H._Snicket">H</a> • <a href="https://snicket.fandom.com/wiki/I._Snicket">I</a> • <a href="https://snicket.fandom.com/wiki/Jacob_Snicket">Jacob Snicket</a> • <a href="https://snicket.fandom.com/wiki/M._Snicket">M</a> • <a href="https://snicket.fandom.com/wiki/N._Snicket">N</a> • <a href="https://snicket.fandom.com/wiki/O._Snicket">O</a> • <a href="https://snicket.fandom.com/wiki/Mr._Spats">Mr. Spats</a> • <a href="https://snicket.fandom.com/wiki/Mrs._Spats">Mrs. Spats</a> • <a href="https://snicket.fandom.com/wiki/Town_Fathers">Town Fathers</a> • <a href="https://snicket.fandom.com/wiki/Valorous_Farms_Dairy">Valorous Farms Dairy</a> • <a href="https://snicket.fandom.com/wiki/Baron_van_de_Wetering">Baron van de Wetering</a></p></td></tr><tr><td></td></tr><tr><td><a href="https://snicket.fandom.com/wiki/Lemony_Snicket%27s_A_Series_of_Unfortunate_Events_(film)">2004 film</a></td><td></td></tr><tr><td></td></tr><tr><td><a href="https://snicket.fandom.com/wiki/A_Series_of_Unfortunate_Events_(TV_series)">Netflix Adaptation (2017-2019)</a></td><td><p><a href="https://snicket.fandom.com/wiki/Abraham">Abraham</a> • <a href="https://snicket.fandom.com/wiki/Elder_Anabelle">Elder Anabelle</a> • <a href="https://snicket.fandom.com/wiki/Anthony_V._Beveldwuge">Anthony V. Beveldwuge</a> • <a href="https://snicket.fandom.com/wiki/Broken-Hearted_Crocodile">Broken-Hearted Crocodile</a> • <a href="https://snicket.fandom.com/wiki/Brucie">Brucie</a> • <a href="https://snicket.fandom.com/wiki/Carmelita%27s_Lackey_1">Carmelita's Lackey 1</a> • <a href="https://snicket.fandom.com/wiki/Carmelita%27s_Lackey_2">Carmelita's Lackey 2</a> • <a href="https://snicket.fandom.com/wiki/Cesar">Cesar</a> • <a href="https://snicket.fandom.com/wiki/Dissonant_Tortoise">Dissonant Tortoise</a> • <a href="https://snicket.fandom.com/wiki/Barney_N._Dolfners">Barney N. Dolfners</a> • <a href="https://snicket.fandom.com/wiki/Doorman_(The_Ersatz_Elevator)">Doorman</a> • <a href="https://snicket.fandom.com/wiki/Evander">Evander</a> • <a href="https://snicket.fandom.com/wiki/Evelyn">Evelyn</a> • <a href="https://snicket.fandom.com/wiki/Dr._Faustus">Dr. Faustus</a> • <a href="https://snicket.fandom.com/wiki/Sir_Barrymore_Feint">Sir Barrymore Feint</a> • <a href="https://snicket.fandom.com/wiki/Fish_Head_Salesperson">Fish Head Salesperson</a> • <a href="https://snicket.fandom.com/wiki/Yessica_Haircut">Yessica Haircut</a> • <a href="https://snicket.fandom.com/wiki/Roy_Hardwood">Roy Hardwood</a> • <a href="https://snicket.fandom.com/wiki/Ishmael_(Taxi_Driver)">Ishmael</a> • <a href="https://snicket.fandom.com/wiki/Elder_Jemma">Elder Jemma</a> • <a href="https://snicket.fandom.com/wiki/Jimmy">Jimmy</a> • <a href="https://snicket.fandom.com/wiki/Lonely_Old_Bartender">Lonely Old Bartender</a> • <a href="https://snicket.fandom.com/wiki/Nervous_Scout">Nervous Scout</a> • <a href="https://snicket.fandom.com/wiki/Normal_Happy_Family">Normal Happy Family</a> • <a href="https://snicket.fandom.com/wiki/Norma_Rae">Norma Rae</a> • <a href="https://snicket.fandom.com/wiki/Perky_Volunteer">Perky Volunteer</a> • <a href="https://snicket.fandom.com/wiki/Mr._Quagmire">Mr. Quagmire</a> • <a href="https://snicket.fandom.com/wiki/Mrs._Quagmire">Mrs. Quagmire</a> • <a href="https://snicket.fandom.com/wiki/Elder_Sam">Elder Sam</a> • <a href="https://snicket.fandom.com/wiki/Jacquelyn_Scieszka">Jacquelyn Scieszka</a> • <a href="https://snicket.fandom.com/wiki/Screeching_Iguana">Screeching Iguana</a> • <a href="https://snicket.fandom.com/wiki/Snow_Scouts">Snow Scouts</a>: <a href="https://snicket.fandom.com/wiki/Snow_Scout_1">Snow Scout 1</a> • <a href="https://snicket.fandom.com/wiki/Snow_Scout_2">2</a> • <a href="https://snicket.fandom.com/wiki/Snow_Scout_3">3</a> • <a href="https://snicket.fandom.com/wiki/Snow_Scout_4">4</a> • <a href="https://snicket.fandom.com/wiki/Snow_Scout_5">5</a> • <a href="https://snicket.fandom.com/wiki/Snow_Scout_6">6</a> • <a href="https://snicket.fandom.com/wiki/Snow_Scout_7">7</a> • <a href="https://snicket.fandom.com/wiki/Submarine_Rental_Worker">Submarine Rental Worker</a> • <a href="https://snicket.fandom.com/wiki/Ticket_Seller">Ticket Seller</a> • <a href="https://snicket.fandom.com/wiki/Trolleyman">Trolleyman</a> • <a href="https://snicket.fandom.com/wiki/Unfortunate_Student">Unfortunate Student</a> • <a href="https://snicket.fandom.com/wiki/Volunteers_Fighting_Disease">Volunteers Fighting Disease</a>: <a href="https://snicket.fandom.com/wiki/Volunteer_Singer_1">Volunteer Singer 1</a> • <a href="https://snicket.fandom.com/wiki/Volunteer_Singer_2">2</a> • <a href="https://snicket.fandom.com/wiki/Volunteer_Singer_3">3</a> • <a href="https://snicket.fandom.com/wiki/Volunteer_Singer_4">4</a> • <a href="https://snicket.fandom.com/wiki/Volunteer_Singer_5">5</a> • <a href="https://snicket.fandom.com/wiki/Volunteer_Singer_6">6</a> • <a href="https://snicket.fandom.com/wiki/Volunteer_Singer_7">7</a> • <a href="https://snicket.fandom.com/wiki/Volunteer_Singer_8">8</a> • <a href="https://snicket.fandom.com/wiki/Mr._Willums">Mr. Willums</a> • <a href="https://snicket.fandom.com/wiki/Mrs._Willums">Mrs. Willums</a> • <a href="https://snicket.fandom.com/wiki/Skip_Willums">Skip Willums</a> • <a href="https://snicket.fandom.com/wiki/Trixie_Willums">Trixie Willums</a> • <a href="https://snicket.fandom.com/wiki/Winged_Lizard">Winged Lizard</a></p></td></tr></tbody></table>
 
 [^1]: [PROSE](https://snicket.fandom.com/wiki/PROSE "PROSE"): *[The End](https://snicket.fandom.com/wiki/The_End "The End")*
-
-[^2]: *[The Incomplete History of Secret Organizations](https://snicket.fandom.com/wiki/The_Incomplete_History_of_Secret_Organizations:_An_Utterly_Unreliable_Account_of_Netflix%27s_A_Series_of_Unfortunate_Events "The Incomplete History of Secret Organizations: An Utterly Unreliable Account of Netflix's A Series of Unfortunate Events"),* page 79: "When asked in a fan interview what year the story takes place, [Daniel Handler](https://snicket.fandom.com/wiki/Daniel_Handler "Daniel Handler") replied with characteristic Snicket dryness: 'The Year of the Rat.'"
-
-[^3]: In the reprise of *That's Not How The Story Goes* in *The Penultimate Peril: Part 2*, an image of Kit watching Caligari Carnival burn down appears below a newspaper dated October 12, implying that is the date the Carnival burned down. Events seem to pass quickly after that with the Baudelaires spending two days with the Widdershins, then two days at the Hotel, followed by two days on the island before Kit dies, setting the birth of Beatrice (and Kit and Olaf's death) around October 18th
 
 [^4]: [PROSE](https://snicket.fandom.com/wiki/PROSE "PROSE"): *[The Beatrice Letters](https://snicket.fandom.com/wiki/The_Beatrice_Letters "The Beatrice Letters")*
 

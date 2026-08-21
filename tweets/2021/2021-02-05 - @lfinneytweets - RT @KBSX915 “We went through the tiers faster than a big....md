@@ -1,4 +1,5 @@
 ---
+title: "RT @KBSX915 \u201cWe went through the tiers faster than a big..."
 date: 2021-02-05
 time: 19:36:46
 tweet_id: "1357775191082815490"

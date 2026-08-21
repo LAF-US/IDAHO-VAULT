@@ -1,4 +1,5 @@
 ---
+title: "RT @Crosscut Washington state Democrats are feeling pretty..."
 date: 2020-02-05
 time: 00:14:52
 tweet_id: "1224848830186676224"

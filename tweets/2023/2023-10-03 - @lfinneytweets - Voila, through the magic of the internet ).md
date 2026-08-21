@@ -1,4 +1,5 @@
 ---
+title: "Voila, through the magic of the internet )"
 date: 2023-10-03
 time: 15:56:48
 tweet_id: "1709236064760787300"
@@ -17,9 +18,10 @@ related:
 ---
 
 @hollycookID @IdahoPTV Voila, through the magic of the internet :)
-https://t.co/Tm9L3Afvpg
+<https://t.co/Tm9L3Afvpg>
 
 ## Links
-- https://www.pbs.org/video/dialogue-tea-party-movement/
+
+- <https://www.pbs.org/video/dialogue-tea-party-movement/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1709236064760787300)

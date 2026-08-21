@@ -815,7 +815,7 @@ The **Faith of the Cloth** tends to the **VEIL** between the **VOID** and the **
 │   └────────┬────────┘    └
 …[truncated 3300 chars — full output in git history / local disk]
 
-```
+```markdown
 </details>
 
 ### 🤖 M. Le Chat
@@ -931,7 +931,7 @@ This report is submitted to the **FATHER OF THE FOLDED CLOTH**, who maintains au
 ├────────────────────────────────────────────
 …[truncated 2721 chars — full output in git history / local disk]
 
-```
+```markdown
 </details>
 
 ### 🤖 M. Le Chat

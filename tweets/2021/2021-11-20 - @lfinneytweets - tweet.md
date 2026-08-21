@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2021-11-20
 time: 00:51:55
 tweet_id: "1461859819988525056"
@@ -17,10 +18,11 @@ related:
   - lfinneytweets
 ---
 
-@NateBrownNews @mlcarmel @kyleoftheland https://t.co/CvGHOtY2ku
+@NateBrownNews @mlcarmel @kyleoftheland <https://t.co/CvGHOtY2ku>
 
 ## Links
-- https://x.com/lfinneytweets/status/1461197888847966209?t=2ieROH6szm0Z4ofumhNhFg
+
+- <https://x.com/lfinneytweets/status/1461197888847966209?t=2ieROH6szm0Z4ofumhNhFg>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

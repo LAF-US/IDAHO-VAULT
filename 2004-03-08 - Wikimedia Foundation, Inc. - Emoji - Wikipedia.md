@@ -5,7 +5,7 @@ author:
 published: 2004-03-08
 created: 2026-04-13
 ---
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Popular_Emoji_Groups_Noto_Color_Emoji.svg/250px-Popular_Emoji_Groups_Noto_Color_Emoji.svg.png)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Popular_Emoji_Groups_Noto_Color_Emoji.svg/250px-Popular_Emoji_Groups_Noto_Color_Emoji.svg.png)
 
 Each of the most popular emoji from the 9 major emoji categories according to the Unicode Emoji Frequency study from 2021, rendered in the Noto Color Emoji font
 
@@ -19,11 +19,11 @@ The first emoji sets were created by Japanese portable electronic device compani
 
 The emoji was predated by the [emoticon](https://en.wikipedia.org/wiki/Emoticon "Emoticon"),[^16] a concept implemented in 1982 by computer scientist [Scott Fahlman](https://en.wikipedia.org/wiki/Scott_Fahlman "Scott Fahlman") when he suggested text-based symbols such as:-) and:-( could be used to replace language.[^17] Theories about language replacement can be traced back to the 1960s, when Russian novelist and professor [Vladimir Nabokov](https://en.wikipedia.org/wiki/Vladimir_Nabokov "Vladimir Nabokov") stated in an interview with *[The New York Times](https://en.wikipedia.org/wiki/The_New_York_Times "The New York Times")*: "I often think there should exist a special typographical sign for a smile — some sort of concave mark, a supine round bracket." [^18] It did not become a mainstream concept until the 1990s, when Japanese, American, and European companies began developing Fahlman's idea.[^19] [^20] [Mary Kalantzis](https://en.wikipedia.org/wiki/Mary_Kalantzis "Mary Kalantzis") and [Bill Cope](https://en.wikipedia.org/wiki/Bill_Cope_\(academic\) "Bill Cope (academic)") point out that similar symbology was incorporated by Bruce Parello, a student at the [University of Illinois](https://en.wikipedia.org/wiki/University_of_Illinois "University of Illinois"), into [PLATO IV](https://en.wikipedia.org/wiki/PLATO_IV "PLATO IV"), the first [e-learning](https://en.wikipedia.org/wiki/E-learning "E-learning") system, in 1972.[^21] [^22] The PLATO system was not considered mainstream, and therefore Parello's [pictograms](https://en.wikipedia.org/wiki/Pictogram "Pictogram") were only used by a small number of people.[^23] [Scott Fahlman's](https://en.wikipedia.org/wiki/Scott_Fahlman "Scott Fahlman") emoticons importantly used common alphabet symbols and aimed to replace language/text to express emotion, and for that reason are seen as the actual origin of emoticons.
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Codepage-437_%28cropped%29.png/250px-Codepage-437_%28cropped%29.png)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Codepage-437_%28cropped%29.png/250px-Codepage-437_%28cropped%29.png)
 
 Smiley faces on the IBM PC
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Wingdings_sample_%28cropped%29.png/250px-Wingdings_sample_%28cropped%29.png)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Wingdings_sample_%28cropped%29.png/250px-Wingdings_sample_%28cropped%29.png)
 
 Wingdings icons, including smiling and frowning faces
 
@@ -51,11 +51,11 @@ The smiley toolbar offered a variety of symbols and smileys and was used on plat
 
 ### Beginnings of Unicode emoji (2007–2014)
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Texting_Emoji.jpg/250px-Texting_Emoji.jpg)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Texting_Emoji.jpg/250px-Texting_Emoji.jpg)
 
 Emoji being added to a text message, 2013
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/I_Love_New_York.svg/250px-I_Love_New_York.svg.png)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/I_Love_New_York.svg/250px-I_Love_New_York.svg.png)
 
 An early use of the heart symbol as part of an English language sentence in the I Love New York advertising campaign of 1977
 
@@ -81,7 +81,7 @@ Unicode 8.0 (June 2015) added another 41 emoji, including articles of sports equ
 
 Also in June 2015, the first approved version ("Emoji 1.0") of the Unicode Emoji report was published as Unicode Technical Report #51 (UTR #51). This introduced the mechanism of skin tone indicators, the first official recommendations about which Unicode characters were to be considered emoji, and the first official recommendations about which characters were to be displayed in an emoji font in the absence of a [variation selector](https://en.wikipedia.org/wiki/Variation_selector "Variation selector"), and listed the zero-width joiner sequences for families and couples that were implemented by existing vendors.[^78] Maintenance of UTR #51, taking emoji requests, and creating proposals for emoji characters and emoji mechanisms was made the responsibility of the Unicode Emoji Subcommittee (ESC), operating as a subcommittee of the Unicode Technical Committee.[^79] [^80]
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Emoji_Minesweeper.png/250px-Emoji_Minesweeper.png)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Emoji_Minesweeper.png/250px-Emoji_Minesweeper.png)
 
 An online version of Minesweeper using emoji
 
@@ -91,7 +91,7 @@ In 2022, the Unicode Consortium decided to stop accepting proposals for flag emo
 
 ### Cultural influence
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Twemoji_1f602.svg/60px-Twemoji_1f602.svg.png) ![](https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Noto_Emoji_Oreo_1f602.svg/60px-Noto_Emoji_Oreo_1f602.svg.png) ![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Fxemoji_u1F602.svg/60px-Fxemoji_u1F602.svg.png)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Twemoji_1f602.svg/60px-Twemoji_1f602.svg.png) ![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Noto_Emoji_Oreo_1f602.svg/60px-Noto_Emoji_Oreo_1f602.svg.png) ![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Fxemoji_u1F602.svg/60px-Fxemoji_u1F602.svg.png)
 
 Color illustrations of U+1F602 😂 [FACE WITH TEARS OF JOY](https://en.wikipedia.org/wiki/Face_with_Tears_of_Joy_emoji "Face with Tears of Joy emoji") from [Twemoji](https://en.wikipedia.org/wiki/Twemoji "Twemoji"), [Noto Emoji Project](https://en.wikipedia.org/wiki/Noto_Emoji_Project "Noto Emoji Project") and [Firefox OS](https://en.wikipedia.org/wiki/Firefox_OS "Firefox OS")
 
@@ -107,7 +107,7 @@ In December 2015, a [sentiment analysis](https://en.wikipedia.org/wiki/Sentiment
 
 In January 2017, in what is believed to be the first large-scale study of emoji usage, researchers at the [University of Michigan](https://en.wikipedia.org/wiki/University_of_Michigan "University of Michigan") analyzed over 1.2 billion messages input via the Kika Emoji Keyboard [^105] and announced that U+1F602 😂 FACE WITH TEARS OF JOY was the most popular emoji. U+2764 ❤️ [HEAVY BLACK HEART](https://en.wikipedia.org/wiki/%E2%9D%A4 "❤") and U+1F60D 😍 SMILING FACE WITH HEART-SHAPED EYES stood second and third, respectively. The study also found that the French use heart emoji the most.[^106] People in countries like Australia, France, and the Czech Republic used more happy emoji, while this was not so for people in Mexico, Colombia, Chile, and Argentina, where people used more negative emoji in comparison to cultural hubs known for restraint and self-discipline, like Turkey, France, and Russia.[^107]
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/DeepMoji_examples_histogram.png/250px-DeepMoji_examples_histogram.png)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/DeepMoji_examples_histogram.png/250px-DeepMoji_examples_histogram.png)
 
 Sample emoji probability distributions generated by the DeepMoji model
 
@@ -117,7 +117,7 @@ In 2017, the [MIT Media Lab](https://en.wikipedia.org/wiki/MIT_Media_Lab "MIT Me
 
 #### Use in furthering causes
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Twemoji12_1fa78.svg/120px-Twemoji12_1fa78.svg.png)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Twemoji12_1fa78.svg/120px-Twemoji12_1fa78.svg.png)
 
 U+1FA78 🩸 DROP OF BLOOD on Twemoji
 
@@ -125,7 +125,7 @@ On March 5, 2019,[^122] a drop of [blood](https://en.wikipedia.org/wiki/Blood "B
 
 A [mosquito](https://en.wikipedia.org/wiki/Mosquito "Mosquito") (U+1F99F 🦟 MOSQUITO) emoji was added in 2018 to raise awareness for [diseases spread by the insect](https://en.wikipedia.org/wiki/Mosquito-borne_disease "Mosquito-borne disease"), such as [dengue](https://en.wikipedia.org/wiki/Dengue "Dengue") and [malaria](https://en.wikipedia.org/wiki/Malaria "Malaria").[^124]
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Fluent_Emoji_Color_1f99f.svg/120px-Fluent_Emoji_Color_1f99f.svg.png)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Fluent_Emoji_Color_1f99f.svg/120px-Fluent_Emoji_Color_1f99f.svg.png)
 
 U+1F99F 🦟 MOSQUITO from Microsoft's Fluent Emoji Project
 
@@ -157,7 +157,7 @@ Journalists have noted that the ambiguity of emoji has allowed them to take on c
 
 ### Controversial emoji
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Android_Emoji_1f52b.svg/120px-Android_Emoji_1f52b.svg.png) ![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Noto_Emoji_KitKat_1f52b.svg/120px-Noto_Emoji_KitKat_1f52b.svg.png) ![](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Noto_Emoji_Lollipop_1f52b.svg/120px-Noto_Emoji_Lollipop_1f52b.svg.png) ![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Noto_Emoji_Oreo_1f52b.svg/120px-Noto_Emoji_Oreo_1f52b.svg.png) ![](https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Noto_Emoji_Pie_1f52b.svg/120px-Noto_Emoji_Pie_1f52b.svg.png)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Android_Emoji_1f52b.svg/120px-Android_Emoji_1f52b.svg.png) ![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Noto_Emoji_KitKat_1f52b.svg/120px-Noto_Emoji_KitKat_1f52b.svg.png) ![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Noto_Emoji_Lollipop_1f52b.svg/120px-Noto_Emoji_Lollipop_1f52b.svg.png) ![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Noto_Emoji_Oreo_1f52b.svg/120px-Noto_Emoji_Oreo_1f52b.svg.png) ![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Noto_Emoji_Pie_1f52b.svg/120px-Noto_Emoji_Pie_1f52b.svg.png)
 
 Evolution of the [pistol emoji](https://en.wikipedia.org/wiki/Pistol_emoji "Pistol emoji") as rendered by stock [Android](https://en.wikipedia.org/wiki/Android_\(operating_system\) "Android (operating system)") systems. From left to right: Jelly Bean ([pistol](https://en.wikipedia.org/wiki/Pistol "Pistol")), KitKat ([blunderbuss](https://en.wikipedia.org/wiki/Blunderbuss "Blunderbuss")), Lollipop ([revolver](https://en.wikipedia.org/wiki/Revolver "Revolver")), Oreo (revolver) and Pie ([water gun](https://en.wikipedia.org/wiki/Water_gun "Water gun")).
 
@@ -249,7 +249,7 @@ Non-human emoji (like U+26FD ⛽ FUEL PUMP) are unaffected by the Fitzpatrick mo
 
 ### Joining
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Zero_Width_%28Non%29Joiner.svg/500px-Zero_Width_%28Non%29Joiner.svg.png)
+![alt text needed](https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Zero_Width_%28Non%29Joiner.svg/500px-Zero_Width_%28Non%29Joiner.svg.png)
 
 Behaviour of the ZWJ and ZWNJ format controls with various types of character, including emoji
 
@@ -284,8 +284,6 @@ Additional emoji can be found in the following Unicode blocks: [Arrows](https://
 - In April 2017, the *[Doctor Who](https://en.wikipedia.org/wiki/Doctor_Who "Doctor Who")* episode " [Smile](https://en.wikipedia.org/wiki/Smile_\(Doctor_Who\) "Smile (Doctor Who)") " featured nanobots called Vardy, which communicate through robotic avatars that use emoji (without any accompanying speech output) and are sometimes referred to by the time travelers as "Emojibots".[^190]
 - On July 28, 2017, [Sony Pictures Animation](https://en.wikipedia.org/wiki/Sony_Pictures_Animation "Sony Pictures Animation") released *[The Emoji Movie](https://en.wikipedia.org/wiki/The_Emoji_Movie "The Emoji Movie")*, an animated movie featuring the voices of [Patrick Stewart](https://en.wikipedia.org/wiki/Patrick_Stewart "Patrick Stewart"), [Christina Aguilera](https://en.wikipedia.org/wiki/Christina_Aguilera "Christina Aguilera"), [Sofía Vergara](https://en.wikipedia.org/wiki/Sof%C3%ADa_Vergara "Sofía Vergara"), [Anna Faris](https://en.wikipedia.org/wiki/Anna_Faris "Anna Faris"), [T. J. Miller](https://en.wikipedia.org/wiki/T._J._Miller "T. J. Miller"), and other notable actors and comedians.[^191] It was universally panned, and it has been considered one of the worst animated films.
 - On September 3, 2021, [Drake](https://en.wikipedia.org/wiki/Drake_\(musician\) "Drake (musician)") released his sixth studio [album](https://en.wikipedia.org/wiki/Album "Album"), *[Certified Lover Boy](https://en.wikipedia.org/wiki/Certified_Lover_Boy "Certified Lover Boy")*. The album's cover art features twelve emoji of pregnant women in varying [clothing](https://en.wikipedia.org/wiki/Clothing "Clothing") colors, hair colors, and skin tones.[^192] [^193]
-
-[^1]: Also has ARIB (ARIB SJIS 0xEECE) [^71] and JCarrier (SoftBank SJIS 0xF7DA, au SJIS 0xF74A) [^72] sources.
 
 [^2]: Older [au by KDDI](https://en.wikipedia.org/wiki/Au_by_KDDI "Au by KDDI") devices had used pictorial representations of all zodiac signs, displaying for instance the [pisces](https://en.wikipedia.org/wiki/Pisces_\(astrology\) "Pisces (astrology)") sign (♓️) as a fish (🐟). Later devices had changed these to symbols, for consistency with other vendors.[^76]
 
@@ -423,13 +421,8 @@ Additional emoji can be found in the following Unicode blocks: [Arrows](https://
 
 [^69]: ["UTR #51: Unicode Emoji"](https://unicode.org/reports/tr51/). Unicode Consortium. September 4, 2025.
 
-[^70]: [Apple, Inc](https://en.wikipedia.org/wiki/Apple,_Inc "Apple, Inc") (2005). ["Map (external version) from Mac OS Dingbats character set to Unicode 3.2 and later"](https://unicode.org/Public/MAPPINGS/VENDORS/APPLE/DINGBATS.TXT). [Unicode Consortium](https://en.wikipedia.org/wiki/Unicode_Consortium "Unicode Consortium").
-
-[^71]: Scherer, Markus (2008). ["ARIB Broadcast Symbols Unicode conversion mapping table using ICU's.ucm file format and representing ARIB codes in the Shift-JIS encoding scheme"](https://github.com/google/emoji4unicode/blob/master/data/arib/arib.ucm). [Google](https://en.wikipedia.org/wiki/Google_LLC "Google LLC").
 
 [^72]: [Unicode Consortium](https://en.wikipedia.org/wiki/Unicode_Consortium "Unicode Consortium"). ["Emoji Sources"](https://www.unicode.org/Public/UCD/latest/ucd/EmojiSources.txt). *Unicode Character Database*.
-
-[^73]: Suignard, Michel (November 6, 2012). ["Status of encoding of Wingdings and Webdings Symbols"](https://www.unicode.org/L2/L2012/12368-n4384.pdf) (PDF). [ISO/IEC JTC 1/SC 2](https://en.wikipedia.org/wiki/ISO/IEC_JTC_1/SC_2 "ISO/IEC JTC 1/SC 2") /WG 2 N4384, [UTC](https://en.wikipedia.org/wiki/Unicode_Technical_Committee "Unicode Technical Committee") [L2](https://en.wikipedia.org/wiki/INCITS "INCITS") /12-368. (For display consistent with the other source encodings, the prefix digits denoting the specific WDings font have been removed, and the numbers have been converted to hexadecimal.)
 
 [^74]: ["Proposed Draft UTR #51, Unicode Emoji"](https://www.unicode.org/review/pri286/). *Public Review Issues*. [Unicode Consortium](https://en.wikipedia.org/wiki/Unicode_Consortium "Unicode Consortium"). PRI 286.
 

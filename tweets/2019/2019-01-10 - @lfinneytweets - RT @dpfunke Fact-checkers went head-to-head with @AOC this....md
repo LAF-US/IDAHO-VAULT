@@ -1,4 +1,5 @@
 ---
+title: "RT @dpfunke Fact-checkers went head-to-head with @AOC this..."
 date: 2019-01-10
 time: 16:48:18
 tweet_id: "1083405181260165121"

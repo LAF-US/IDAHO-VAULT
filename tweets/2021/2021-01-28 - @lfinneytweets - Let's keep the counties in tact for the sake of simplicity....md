@@ -1,4 +1,5 @@
 ---
+title: "Let's keep the counties in tact for the sake of simplicity..."
 date: 2021-01-28
 time: 03:36:44
 tweet_id: "1354634488932782084"
@@ -16,10 +17,11 @@ related:
   - lfinneytweets
 ---
 
-@AngryNIdaho @bychadsokol Let's keep the counties in tact for the sake of simplicity (and so we don't have to establish provisional governments after the hostile takeover). We avoid Missoula and Butte and Montana gets to keep her capital. https://t.co/oKZuquBfoF
+@AngryNIdaho @bychadsokol Let's keep the counties in tact for the sake of simplicity (and so we don't have to establish provisional governments after the hostile takeover). We avoid Missoula and Butte and Montana gets to keep her capital. <https://t.co/oKZuquBfoF>
 
 ## Media
-- ![](https://pbs.twimg.com/media/EsygxbOUwAE8PO1.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/EsygxbOUwAE8PO1.jpg)
 
 *In reply to [@AngryNIdaho](https://twitter.com/AngryNIdaho)*
 

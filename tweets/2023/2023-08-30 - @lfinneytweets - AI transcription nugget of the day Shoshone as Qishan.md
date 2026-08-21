@@ -1,4 +1,5 @@
 ---
+title: "AI transcription nugget of the day Shoshone as Qishan"
 date: 2023-08-30
 time: 21:51:44
 tweet_id: "1697004200696402153"

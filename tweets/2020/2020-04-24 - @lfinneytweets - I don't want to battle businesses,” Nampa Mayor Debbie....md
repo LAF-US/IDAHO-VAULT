@@ -1,4 +1,5 @@
 ---
+title: "I don't want to battle businesses,\u201d Nampa Mayor Debbie..."
 date: 2020-04-24
 time: 21:45:00
 tweet_id: "1253802143800266755"
@@ -18,9 +19,10 @@ related:
   - idpol
 ---
 
-"I don't want to battle businesses,” Nampa Mayor Debbie Kling said. #IdahoCOVID19 #idpol https://t.co/HPE1j3TV5V
+"I don't want to battle businesses,” Nampa Mayor Debbie Kling said. #IdahoCOVID19 #idpol <https://t.co/HPE1j3TV5V>
 
 ## Links
-- https://x.com/ErinBamer/status/1253780150983917568
+
+- <https://x.com/ErinBamer/status/1253780150983917568>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1253802143800266755)

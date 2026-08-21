@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2023-09-26
 time: 22:56:02
 tweet_id: "1706804852314251514"
@@ -14,10 +15,11 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/YHHzljnPtY
+<https://t.co/YHHzljnPtY>
 
 ## Links
-- https://killedbygoogle.com/
+
+- <https://killedbygoogle.com/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

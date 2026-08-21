@@ -190,4 +190,8 @@ Standing given, not seized; the Key stays with the magister.
   search results, and the rule-2–4 inner consequences remain fan-attested until checked
   against Rodda's text. The Architect holds the verdict.
 
-###### [["The world is quiet here."]]
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

@@ -122,7 +122,7 @@ related:
 
 ## V. PROVENANCE CHAIN
 
-```
+```text
 LOGAN (Union Sovereign)
 ├── .mistral/MISTRAL.md (shim, vault-local)
 │   ├── Context: Manual injection by Logan
@@ -167,4 +167,8 @@ LOGAN (Union Sovereign)
 **Status:** ACTIVE  
 **Date:** 2026-06-03  
 
-*"The world is quiet here."*
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

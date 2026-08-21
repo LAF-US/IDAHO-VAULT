@@ -1,4 +1,5 @@
 ---
+title: "Correction from @IdahoCapitalSun's @maldonado_mia_ This is..."
 date: 2023-11-03
 time: 00:08:33
 tweet_id: "1720231452900819009"
@@ -21,11 +22,12 @@ related:
   - idpol
 ---
 
-Correction from @IdahoCapitalSun's @maldonado_mia_: This is not the first LGBTQ+ hate crime successfully prosecuted in the state! #idleg #idpol 
-https://t.co/M9JQa1GTi0
+Correction from @IdahoCapitalSun's @maldonado_mia_: This is not the first LGBTQ+ hate crime successfully prosecuted in the state! #idleg #idpol
+<https://t.co/M9JQa1GTi0>
 
 ## Links
-- https://x.com/IdahoCapitalSun/status/1720212579912659189
+
+- <https://x.com/IdahoCapitalSun/status/1720212579912659189>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

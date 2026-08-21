@@ -104,7 +104,7 @@ How data flows between clients:
 
 Each client is associated with a user account, which is identified in Matrix using a unique “user ID”. This ID is namespaced to the homeserver which allocated the account and has the form:
 
-```
+```text
 @localpart:domain
 ```
 
@@ -138,7 +138,7 @@ To order and ease chronological comparison between the events within the graph, 
 
 A room is a conceptual place where users can send and receive events. Events are sent to a room, and all participants in that room with sufficient access will receive the event. Rooms are uniquely identified internally via “Room IDs”, which have the form:
 
-```
+```text
 !opaque_id:domain
 ```
 
@@ -148,7 +148,7 @@ See [‘Identifier Grammar’ in the appendices](https://spec.matrix.org/v1.18/a
 
 The following conceptual diagram shows an `m.room.message` event being sent to the room `!qporfwt:matrix.org`:
 
-```
+```markdown
 { @alice:matrix.org }                             { @bob:example.org }
         |                                                 ^
         |                                                 |
@@ -198,7 +198,7 @@ The state of the room at a given point is calculated by considering all events p
 
 Each room can also have multiple “Room Aliases”, which look like:
 
-```
+```text
 #room_alias:domain
 ```
 
@@ -208,7 +208,7 @@ A room alias “points” to a room ID and is the human-readable label by which 
 
 When resolving a room alias the server will also respond with a list of servers that are in the room that can be used to join via.
 
-```
+```markdown
 HTTP GET
 #matrix:example.org      !aaabaa:matrix.org
        |                    ^

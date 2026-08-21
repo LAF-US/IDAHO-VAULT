@@ -1,3 +1,6 @@
+---
+title: ZAGREUS
+---
 # ZAGREUS.md - IDAHO-VAULT
 
 **Load mechanism:** Manual injection by Logan.

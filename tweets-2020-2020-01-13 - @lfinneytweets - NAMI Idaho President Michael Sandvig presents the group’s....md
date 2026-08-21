@@ -24,7 +24,7 @@ NAMI Idaho President Michael Sandvig presents the group’s inaugural Impact Awa
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/EOMs8OuU4AAIQR8.jpg)
-- ![](https://pbs.twimg.com/media/EOMs_xGVAAATPRr.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EOMs8OuU4AAIQR8.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EOMs_xGVAAATPRr.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1216865938739351553)
