@@ -33,6 +33,14 @@ import check_dotfolder_anchors as guard  # noqa: E402
 
 SCRIPT = Path(__file__).with_name("check_dotfolder_anchors.py")
 
+# Resolved absolute path, not the bare name. Invoking "git" by name leaves the
+# binary that runs up to whatever PATH happens to hold, which is both a
+# supply-chain footgun and the reason a partial-path lint fires here and not in
+# the sibling fixtures (they invoke `sys.executable`, already absolute).
+# Resolved once at import; `None` means git is absent and the fixtures that
+# need a real repository skip rather than fail with a confusing OSError.
+GIT = shutil.which("git")
+
 
 class ExpectedAnchorNameTest(unittest.TestCase):
     """`.foo` -> `FOO.md`, stripping exactly one leading dot."""
@@ -96,8 +104,10 @@ class GuardFixture(unittest.TestCase):
             self.write(expected, b"---\ntitle: fixture root anchor\n---\n")
 
     def _git(self, *args: str) -> None:
+        if GIT is None:
+            self.skipTest("git is not available on PATH")
         subprocess.run(
-            ["git", *args], cwd=self.root, check=True,
+            [GIT, *args], cwd=self.root, check=True,
             capture_output=True, text=True, timeout=60,
         )
 
