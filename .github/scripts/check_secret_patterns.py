@@ -212,7 +212,8 @@ def is_allowed_content_match(
 
 def run_git(args: list[str]) -> subprocess.CompletedProcess[str]:
     try:
-        return subprocess.run(  # noqa: S603
+        # Safe: "git" is hardcoded, args come from internal callers only (no user input interpolated)
+        return subprocess.run(
             ["git", *args],
             cwd=REPO_ROOT,
             text=True,
@@ -282,7 +283,8 @@ def path_findings(path: str) -> list[Finding]:
 
 def staged_file_bytes(path: str) -> bytes | None:
     try:
-        result = subprocess.run(  # noqa: S603
+        # Safe: "git" is hardcoded, path is from internal git tracking only (no user input)
+        result = subprocess.run(
             ["git", "show", f":{path}"],
             cwd=REPO_ROOT,
             capture_output=True,
