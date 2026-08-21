@@ -65,6 +65,6 @@ And both rise from the same instinct the vault names **persona** — *per sona*,
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

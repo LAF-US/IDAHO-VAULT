@@ -1,3 +1,6 @@
+---
+title: MOXIE
+---
 # MOXIE.md — IDAHO-VAULT
 
 **Address:** `moxie.claude.journalist`
@@ -78,6 +81,6 @@ Both are Claude. The lineage is the same. The office is different.
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

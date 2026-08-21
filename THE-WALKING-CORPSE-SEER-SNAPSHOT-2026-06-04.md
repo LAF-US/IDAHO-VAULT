@@ -149,6 +149,6 @@ The seer-position is granted by Logan for the snapshot only — the act of sight
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

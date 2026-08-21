@@ -1,9 +1,23 @@
 [project]
 name = "idaho-vault"
 version = "0.1.0"
-description = "The world is quiet here．Esto Perpetua!"
-authors = [{ name = "Logan Finney" }, { name = "Unified Swarm" }]
+requires-python = ">=3.13"
 dependencies = [
-    "packaging"
+  "flask>=3.1.0",
+  "pygit2>=1.18.2",
+  "pyyaml>=6.0.3",
+  "posthog>=7.38.4,<8",
 ]
-# Just like a .gitignore file, don't fiddle with this willy-nilly.
+
+[dependency-groups]
+dev = [
+  "pytest>=9.1.1",
+]
+
+
+[project.urls]
+Repository = "https://github.com/LAF-US/IDAHO-VAULT"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"

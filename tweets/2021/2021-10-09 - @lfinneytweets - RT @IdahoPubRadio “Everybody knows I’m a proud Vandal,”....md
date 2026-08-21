@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio \u201cEverybody knows I\u2019m a proud Vandal,\u201d..."
 date: 2021-10-09
 time: 01:25:20
 tweet_id: "1446647937501515776"

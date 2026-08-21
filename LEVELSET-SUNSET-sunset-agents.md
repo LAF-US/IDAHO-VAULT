@@ -154,7 +154,7 @@ All work is complete:
 
 3. **Issue explicit deletion orders** for each ephemeral agent:
 
-   ```
+   ```text
    DELETE: TASK - Sunset non-persistent agents
    Reason: [Logan's rationale]
    Approved: Logan
@@ -166,7 +166,7 @@ All work is complete:
 Once authorized, deletion executor will:
 
 - Delete branches and artifacts
-- Create LEVELSET-DELETE-<agent>.md final reports
+- Create `LEVELSET-DELETE-<agent>.md` final reports
 - Update AGENT-REGISTRY.md to "DELETED"
 - Commit final audit trail
 

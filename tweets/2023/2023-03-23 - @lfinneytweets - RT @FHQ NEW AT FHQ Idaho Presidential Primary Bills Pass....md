@@ -1,4 +1,5 @@
 ---
+title: "RT @FHQ NEW AT FHQ Idaho Presidential Primary Bills Pass..."
 date: 2023-03-23
 time: 23:13:04
 tweet_id: "1639042606620635136"
@@ -16,12 +17,12 @@ related:
 ---
 
 RT @FHQ: NEW AT FHQ: Idaho Presidential Primary Bills Pass Senate
-https://t.co/9OQugTsiC1 https://t.co/t08vMfsQsY
+<https://t.co/9OQugTsiC1> <https://t.co/t08vMfsQsY>
 
 ## Links
-- https://www.frontloadinghq.com/2023/03/idaho-presidential-primary-bills-pass.html
+- <https://www.frontloadinghq.com/2023/03/idaho-presidential-primary-bills-pass.html>
 
 ## Media
-- ![](https://pbs.twimg.com/media/Fr8MEGwWYAEXnYF.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/Fr8MEGwWYAEXnYF.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1639042606620635136)

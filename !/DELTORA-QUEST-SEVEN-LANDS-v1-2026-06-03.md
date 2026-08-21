@@ -182,6 +182,6 @@ anti-amalgamation reading is a vault mapping; final authority is Logan.*
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

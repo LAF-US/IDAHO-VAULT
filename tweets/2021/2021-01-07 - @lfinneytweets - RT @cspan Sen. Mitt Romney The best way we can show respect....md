@@ -1,4 +1,5 @@
 ---
+title: "RT @cspan Sen. Mitt Romney The best way we can show respect..."
 date: 2021-01-07
 time: 02:53:02
 tweet_id: "1347013343580590085"
@@ -15,6 +16,6 @@ related:
   - lfinneytweets
 ---
 
-RT @cspan: Sen. Mitt Romney: "The best way we can show respect for the voters who are upset is by telling them the truth." https://t.co/uzK…
+RT @cspan: Sen. Mitt Romney: "The best way we can show respect for the voters who are upset is by telling them the truth." <https://t.co/uzK…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1347013343580590085)

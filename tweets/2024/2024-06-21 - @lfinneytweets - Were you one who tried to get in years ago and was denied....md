@@ -1,4 +1,5 @@
 ---
+title: "Were you one who tried to get in years ago and was denied..."
 date: 2024-06-21
 time: 19:33:21
 tweet_id: "1804236182005649750"

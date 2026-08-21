@@ -1,4 +1,5 @@
 /* ROYGBIV weekday display colors for Obsidian UI + calendar headers */
+
 /*
  * Two activation paths:
  *
@@ -66,26 +67,32 @@ body.roygbiv-sat {
   --interactive-accent: var(--roygbiv-violet);
   --text-accent: var(--roygbiv-violet);
 }
+
 .markdown-source-view.roygbiv-mon, .markdown-reading-view.roygbiv-mon {
   --interactive-accent: var(--roygbiv-red);
   --text-accent: var(--roygbiv-red);
 }
+
 .markdown-source-view.roygbiv-tue, .markdown-reading-view.roygbiv-tue {
   --interactive-accent: var(--roygbiv-orange);
   --text-accent: var(--roygbiv-orange);
 }
+
 .markdown-source-view.roygbiv-wed, .markdown-reading-view.roygbiv-wed {
   --interactive-accent: var(--roygbiv-yellow);
   --text-accent: var(--roygbiv-yellow);
 }
+
 .markdown-source-view.roygbiv-thu, .markdown-reading-view.roygbiv-thu {
   --interactive-accent: var(--roygbiv-green);
   --text-accent: var(--roygbiv-green);
 }
+
 .markdown-source-view.roygbiv-fri, .markdown-reading-view.roygbiv-fri {
   --interactive-accent: var(--roygbiv-blue);
   --text-accent: var(--roygbiv-blue);
 }
+
 .markdown-source-view.roygbiv-sat, .markdown-reading-view.roygbiv-sat {
   --interactive-accent: var(--roygbiv-indigo);
   --text-accent: var(--roygbiv-indigo);
@@ -106,6 +113,17 @@ a.internal-link {
 .calendar .days-of-week span {
   font-weight: 700;
 }
+
+/* stylelint-disable no-descending-specificity -- Each weekday block pairs a
+ * 2-class selector (.calendar .day:nth-child(N)) with a 3-class one
+ * (.calendar .weekdays .day:nth-child(N)) so both calendar DOM shapes are
+ * covered. stylelint groups these by their last compound, .day, and flags
+ * every block after Sunday's. All six reported pairs are :nth-child(2..7)
+ * against :nth-child(1) — mutually exclusive, so no element can ever match
+ * both and there is no cascade to lose. Reordering cannot help: every block
+ * contains both specificities, so some pair is always "descending". Dropping
+ * the shorter selector would silence it but stop matching calendars that do
+ * not wrap days in .weekdays. Disabled by name, for this section only. */
 
 /* Sunday */
 .calendar .day:nth-child(1),
@@ -176,3 +194,5 @@ a.internal-link {
 .calendar .days-of-week span:nth-child(7) {
   color: var(--roygbiv-violet);
 }
+
+/* stylelint-enable no-descending-specificity */

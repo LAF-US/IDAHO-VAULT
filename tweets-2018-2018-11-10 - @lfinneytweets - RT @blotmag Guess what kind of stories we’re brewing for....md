@@ -19,6 +19,6 @@ RT @blotmag: Guess what kind of stories we’re brewing for the next issue of Bl
 
 ## Media
 
-- ![](https://pbs.twimg.com/ext_tw_video_thumb/1061047300418490368/pu/img/eOyjY3QhPFaGZ2hg.jpg)
+- ![alt text needed](https://pbs.twimg.com/ext_tw_video_thumb/1061047300418490368/pu/img/eOyjY3QhPFaGZ2hg.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1061047561660690432)

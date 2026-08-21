@@ -183,6 +183,6 @@ the Knights rightly keep her on a leash.
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

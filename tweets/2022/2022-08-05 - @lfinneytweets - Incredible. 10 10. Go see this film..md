@@ -1,4 +1,5 @@
 ---
+title: "Incredible. 10 10. Go see this film."
 date: 2022-08-05
 time: 03:19:32
 tweet_id: "1555393037739577345"
@@ -13,9 +14,9 @@ related:
   - lfinneytweets
 ---
 
-Incredible. 10/10. Go see this film. https://t.co/WbyssiNlec
+Incredible. 10/10. Go see this film. <https://t.co/WbyssiNlec>
 
 ## Media
-- ![](https://pbs.twimg.com/media/FZXduXCUYAA44W-.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/FZXduXCUYAA44W-.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1555393037739577345)

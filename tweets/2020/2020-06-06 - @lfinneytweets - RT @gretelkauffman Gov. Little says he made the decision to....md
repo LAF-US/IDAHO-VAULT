@@ -1,4 +1,5 @@
 ---
+title: "RT @gretelkauffman Gov. Little says he made the decision to..."
 date: 2020-06-06
 time: 00:28:01
 tweet_id: "1269063458235969539"

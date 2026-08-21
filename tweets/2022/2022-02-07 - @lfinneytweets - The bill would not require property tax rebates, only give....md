@@ -1,4 +1,5 @@
 ---
+title: "The bill would not require property tax rebates, only give..."
 date: 2022-02-07
 time: 16:14:22
 tweet_id: "1490720604378390532"

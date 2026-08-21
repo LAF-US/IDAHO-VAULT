@@ -1,4 +1,5 @@
 ---
+title: "Rep. Ben Adams of Nampa is the only incumbent legislator in..."
 date: 2021-11-08
 time: 23:45:15
 tweet_id: "1457856775982510084"
@@ -18,9 +19,9 @@ related:
   - idpol
 ---
 
-Rep. Ben Adams of Nampa is the only incumbent legislator in one of the reconfigured districts in southwestern Idaho, and has announced he’ll run for the now open Senate seat. #idleg #idpol https://t.co/sZvKi9tY6x
+Rep. Ben Adams of Nampa is the only incumbent legislator in one of the reconfigured districts in southwestern Idaho, and has announced he’ll run for the now open Senate seat. #idleg #idpol <https://t.co/sZvKi9tY6x>
 
 ## Links
-- https://x.com/KeithRidler/status/1457845121869746177
+- <https://x.com/KeithRidler/status/1457845121869746177>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1457856775982510084)

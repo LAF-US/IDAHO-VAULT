@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports This week, Senate Assistant Minority..."
 date: 2021-04-10
 time: 00:17:34
 tweet_id: "1380676292186566661"

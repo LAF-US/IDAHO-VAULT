@@ -1,4 +1,5 @@
 ---
+title: "RT @CPRNews Colorado\u2019s \u201copen primary\u201d system allows..."
 date: 2022-06-07
 time: 16:00:00
 tweet_id: "1534203531330146304"

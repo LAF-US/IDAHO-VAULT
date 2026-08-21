@@ -9,6 +9,6 @@ REALM of THE DEAD
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

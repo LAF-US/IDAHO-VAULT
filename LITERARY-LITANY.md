@@ -152,6 +152,6 @@ new. Additions belong to Logan.
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

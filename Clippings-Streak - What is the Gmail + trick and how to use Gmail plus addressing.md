@@ -62,7 +62,7 @@ A screenshot of the dropdown menu under the Gmail search bar at the far left cor
 
 Organize Gmail with Streak: automatically sort emails with your contacts and track conversations for each deal or opportunity with pipelines in Gmail. [Try it free](https://www.streak.com/request-trial?utm_medium=blog-cta&utm_source=gmail-plus-addressing-trick) for 14 days.
 
-[Chat with us](#)
+Chat with us
 
 ### See who’s sharing your data
 
@@ -92,7 +92,7 @@ The Gmail + trick is a great way to track a small number of customers or clients
 
 Tools like [Streak](http://www.streak.com/) help you automatically track interactions with contacts and leads in pipelines inside your Gmail inbox.
 
-![](https://www.youtube.com/watch?v=4UXjqi8z6W8)
+![alt text needed](https://www.youtube.com/watch?v=4UXjqi8z6W8)
 
 For each lead, you can:
 

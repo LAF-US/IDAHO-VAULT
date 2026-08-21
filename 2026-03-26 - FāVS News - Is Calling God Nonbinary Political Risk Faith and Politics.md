@@ -92,7 +92,7 @@ The focus on affordability in current political discourse supports this view. Ho
 
 He also continues to [offer](https://www.instagram.com/p/DVxFTbukoK2/) Christian testimony: “Christ is the immigrant deported without due process. Christ is the senior citizen deprived of their Social Security benefits. Christ is the protester kidnapped in an unmarked vehicle …”
 
-![](https://www.youtube.com/watch?v=oiTJ7Pz_59A)
+![alt text needed](https://www.youtube.com/watch?v=oiTJ7Pz_59A)
 
 Probably more people have heard Talarico’s testimony via a Feb.16 interview with Stephen Colbert than anywhere else. This interview was banned by CBS and put on YouTube where it is still available.
 

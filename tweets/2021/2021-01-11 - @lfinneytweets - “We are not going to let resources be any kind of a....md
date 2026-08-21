@@ -1,4 +1,5 @@
 ---
+title: "\u201cWe are not going to let resources be any kind of a..."
 date: 2021-01-11
 time: 21:48:27
 tweet_id: "1348748635899498497"

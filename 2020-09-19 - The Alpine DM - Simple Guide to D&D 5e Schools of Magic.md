@@ -5,7 +5,7 @@ author:
 published: 2020-09-19
 created: 2026-04-17
 ---
-![](https://www.youtube.com/watch?v=QinEitwviTE)
+![alt text needed](https://www.youtube.com/watch?v=QinEitwviTE)
 
 In D&D 5e, there are 8 different Schools of Magic:
 

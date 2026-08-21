@@ -22,6 +22,6 @@ Specialty @IdahoITD license plate day at #idleg with dual hearings on a “Too G
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/EREjb9LUEAAQCrU.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EREjb9LUEAAQCrU.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1229803573501820928)

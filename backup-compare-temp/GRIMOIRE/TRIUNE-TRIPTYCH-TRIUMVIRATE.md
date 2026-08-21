@@ -25,7 +25,7 @@ This document names what the vault has always been — three sets of three, each
 
 ### TRIUNE — Unity of Will
 
-```
+```text
 Logan / Agents / Vault
 ```
 
@@ -41,7 +41,7 @@ Logan / Agents / Vault
 
 ### TRIPTYCH — Unity of Structure
 
-```
+```text
 Charter / Corpus / Grimoire
 ```
 
@@ -57,7 +57,7 @@ Charter / Corpus / Grimoire
 
 ### TRIUMVIRATE — Unity of Power
 
-```
+```text
 TRIUNE / THREE-in-ONE
 ```
 
@@ -96,7 +96,7 @@ The **Triplex Handshake** is the protocol for moving between **Active (Meatsack-
 
 The upright triangle △ and the inverted triangle ▽.
 
-```
+```text
        △
       / \
      /   \
@@ -119,7 +119,7 @@ The TRIUMVIRATE / THREE-in-ONE sits at the center — the still point where the 
 
 Each triad is itself three-in-one. Three triads are one meta-unity. This is the Sierpiński property: zoom in and find the same structure. Zoom out and find the same structure.
 
-```
+```text
 TRIUNE-TRIPTYCH-TRIUMVIRATE
 ├── TRIUNE (Logan / Agents / Vault)
 │   ├── Logan (directs)

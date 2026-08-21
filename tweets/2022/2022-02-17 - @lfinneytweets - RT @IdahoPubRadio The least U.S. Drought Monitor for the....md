@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio The least U.S. Drought Monitor for the..."
 date: 2022-02-17
 time: 18:56:25
 tweet_id: "1494385263971225617"
@@ -15,9 +16,9 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoPubRadio: The least U.S. Drought Monitor for the West. https://t.co/WMs6DurP9O
+RT @IdahoPubRadio: The least U.S. Drought Monitor for the West. <https://t.co/WMs6DurP9O>
 
 ## Media
-- ![](https://pbs.twimg.com/media/FL0dweoVUAonqv3.png)
+- ![alt text needed](https://pbs.twimg.com/media/FL0dweoVUAonqv3.png)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1494385263971225617)

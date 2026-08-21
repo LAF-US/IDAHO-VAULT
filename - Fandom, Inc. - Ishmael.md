@@ -7,7 +7,7 @@ created: 2026-04-14
 ---
 | “ | *I won't force you.* | ” |
 | --- | --- | --- |
-| | — Ishmael's catchphrase |
+| | — Ishmael's catchphrase | |
 
 **Ishmael**, who prefers the nickname **Ish**, is a major character in *[The End](https://snicket.fandom.com/wiki/The_End "The End")*, and also the main antagonist of the novel.
 

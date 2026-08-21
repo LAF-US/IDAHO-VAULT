@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports On Friday, @GovernorLittle will host a..."
 date: 2020-09-10
 time: 01:22:20
 tweet_id: "1303866366064095233"

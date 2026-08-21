@@ -1,4 +1,5 @@
 ---
+title: "RT @KBSX915 \u201cIt\u2019s an inclusive product. It\u2019s a product that..."
 date: 2021-10-05
 time: 18:09:15
 tweet_id: "1445451031790325760"

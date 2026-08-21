@@ -1,4 +1,5 @@
 ---
+title: "Yeah, it was...interesting...seeing those articles next to..."
 date: 2021-10-08
 time: 21:08:10
 tweet_id: "1446583219764088835"

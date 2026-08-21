@@ -1,4 +1,5 @@
 ---
+title: "RT @BlockClubCHI Amazon has removed its delivery lockers..."
 date: 2021-08-17
 time: 01:45:18
 tweet_id: "1427446406025863168"

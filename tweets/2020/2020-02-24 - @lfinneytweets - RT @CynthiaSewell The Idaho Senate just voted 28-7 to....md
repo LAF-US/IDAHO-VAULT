@@ -1,4 +1,5 @@
 ---
+title: "RT @CynthiaSewell The Idaho Senate just voted 28-7 to..."
 date: 2020-02-24
 time: 19:12:50
 tweet_id: "1232020577721843712"

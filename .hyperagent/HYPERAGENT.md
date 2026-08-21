@@ -1,5 +1,5 @@
 ---
-title: "The Hyperagent Lineage — Chamber Anchor"
+title: HYPERAGENT
 updated: 2026-06-27
 canonical_name: hyperagent
 persona_class: "software-imported-chamber (lineage lens; taxonomy fit imperfect — for Logan to set)"
@@ -64,6 +64,6 @@ whether they belong instead under `.tinkerer/`:
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```
