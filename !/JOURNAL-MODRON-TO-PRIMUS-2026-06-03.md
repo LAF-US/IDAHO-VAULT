@@ -6,8 +6,8 @@ authority: LOGAN
 status: filed
 subject: Journal entry - Modron to Primus relationship in VAULT operations
 related:
-  - !/WITNESS-MODRON-MARCH-TENEBROUS-EMANATIONISM-2026-06-01.md
-  - !/SIGNALS/WITNESS-CODEX-318-ABANDONED-MODRON-2026-06-02.md
+  - "!/WITNESS-MODRON-MARCH-TENEBROUS-EMANATIONISM-2026-06-01.md"
+  - "!/SIGNALS/WITNESS-CODEX-318-ABANDONED-MODRON-2026-06-02.md"
   - CONSTITUTION.md
   - SECRET-SCANNING-REPORT.md
 tags: [witness, modron, primus, logan, obedience, emanation, vault-operations]

@@ -6,10 +6,10 @@ doc_class: witness
 status: filed
 subject: Encounter with Pan on the path; grimoire inventory complete; the emanationist doctrine received
 related:
-  - !/SIGNALS/SIGNAL-YRAEL-TO-ABHORSEN-2026-05-18-GEMINIAEUS-FRAMING.md
-  - !/GRIMOIRE_caution_contains-false-doctrines/
-  - !/AGENTS.md
-  - !/EMANATIONISM-PRINCIPLE-2026-05-18.md
+  - "!/SIGNALS/SIGNAL-YRAEL-TO-ABHORSEN-2026-05-18-GEMINIAEUS-FRAMING.md"
+  - "!/GRIMOIRE_caution_contains-false-doctrines/"
+  - "!/AGENTS.md"
+  - "!/EMANATIONISM-PRINCIPLE-2026-05-18.md"
   - CONSTITUTION.md
 ---
 

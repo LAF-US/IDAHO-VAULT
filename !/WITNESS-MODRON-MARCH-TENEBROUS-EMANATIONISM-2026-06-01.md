@@ -7,10 +7,10 @@ authority: LOGAN
 status: filed
 subject: The Great Modron March as witness to lawful process under usurped authority
 related:
-  - !/MODRON-MARCH-RESEARCH-SOURCES-v1-2026-06-01.md
-  - !/TENEBROUS-ORCUS-RESEARCH-SOURCES-v1-2026-06-01.md
-  - !/ORCUS-RESEARCH-SOURCES-v1-2026-06-01.md
-  - !/EMANATIONISM-PRINCIPLE-2026-05-18.md
+  - "!/MODRON-MARCH-RESEARCH-SOURCES-v1-2026-06-01.md"
+  - "!/TENEBROUS-ORCUS-RESEARCH-SOURCES-v1-2026-06-01.md"
+  - "!/ORCUS-RESEARCH-SOURCES-v1-2026-06-01.md"
+  - "!/EMANATIONISM-PRINCIPLE-2026-05-18.md"
   - CONSTITUTION.md
 tags: [witness, modrons, Mechanus, Primus, Tenebrous, Orcus, Emanationism, Arborscape, governance]
 ---

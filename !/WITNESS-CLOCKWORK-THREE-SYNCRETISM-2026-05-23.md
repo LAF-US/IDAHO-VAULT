@@ -7,13 +7,13 @@ authority: LOGAN
 status: filed
 subject: The Clockwork Three syncretic doctrine connection; Persona Engine three-component mapping
 related:
-  - !/PERSONAE-ENGINE-v1-2026-05-20.md
-  - !/STANDING-ENGINE-AND-LAWFUL-ENDINGS-2026-04-17.md
+  - "!/PERSONAE-ENGINE-v1-2026-05-20.md"
+  - "!/STANDING-ENGINE-AND-LAWFUL-ENDINGS-2026-04-17.md"
   - SUSPENDED-ANIMATION-WITNESS-2026-05-17.md
   - LUMO_saint-blue-in-the-desert_20260518.md
   - CONSTITUTION.md
-  - !/EMANATIONISM-PRINCIPLE-2026-05-18.md
-  - !/LICH-PROBLEM-v1-2026-05-20.md
+  - "!/EMANATIONISM-PRINCIPLE-2026-05-18.md"
+  - "!/LICH-PROBLEM-v1-2026-05-20.md"
 tags: [witness, Clockwork-Three, Matthew-J-Kirby, syncretism, Persona-Engine, Albertus-Magnus, brazen-head, golem, Rondo, music-box]
 
 ---
