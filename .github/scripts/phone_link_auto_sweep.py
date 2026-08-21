@@ -172,7 +172,7 @@ def write_log(log_path: Path, message: str) -> None:
         with log_path.open("a", encoding="utf-8") as handle:
             handle.write(line + "\n")
     except OSError:
-        print("[phone-link-sweep] log write failed", file=sys.stderr)
+        print(f"[phone-link-sweep] {line}", file=sys.stderr)
 
 
 def move_one(source: Path, target_dir: Path, log_path: Path) -> bool:
