@@ -34,19 +34,14 @@ def _repo_root() -> Path:
 
 REPO_ROOT = _repo_root()
 WINDOWS_COPY_SUFFIX_RE = re.compile(r" \(\d+\)(?=$|\.)")
-PRESERVED_COPY_SUFFIX_RE = re.compile(
-    r"\.(?:home|vault)(?:\.[0-9a-f]{12})?$", re.IGNORECASE
-)
+PRESERVED_COPY_SUFFIX_RE = re.compile(r"\.(?:home|vault)(?:\.[0-9a-f]{12})?$", re.IGNORECASE)
 SECRET_PATH_PATTERNS = (
     re.compile(r"(^|/)\.env(\.|$)"),
     re.compile(r"(^|/)\.envrc$"),
     re.compile(r"(^|/)\.op(/|$)"),
     re.compile(r"(^|/)secrets?(/|$)", re.IGNORECASE),
     re.compile(r"(^|/)\.mcp-auth(/|$)"),
-    re.compile(
-        r"(^|/)(credentials?|tokens?|client_secret|oauth).*\.json$",
-        re.IGNORECASE,
-    ),
+    re.compile(r"(^|/)(credentials?|tokens?|client_secret|oauth).*\.json$", re.IGNORECASE),
     re.compile(r"(^|/)\.credentials.*\.json$", re.IGNORECASE),
     re.compile(r"(^|/).*-key\.json$", re.IGNORECASE),
     re.compile(r"(^|/).*service-account\.json$", re.IGNORECASE),
@@ -69,9 +64,6 @@ ALLOW_PATH_PATTERNS = (
     # — [^/]+ intentionally excludes subdirectories — while still
     # flagging extensionless credential files like .op/config.
     re.compile(r"^\.op/(1password-hygiene-policy\.json|[^/]+\.(md|txt))$"),
-    # .factory/certs/ holds public CA root certificates and system cert caches,
-    # not private credentials. These are infrastructure artifacts, not secrets.
-    re.compile(r"^\.factory/certs/"),
 )
 
 SECRET_CONTENT_PATTERNS = {
@@ -79,9 +71,7 @@ SECRET_CONTENT_PATTERNS = {
     "openai_key": re.compile(r"\bsk-(?:proj-)?[A-Za-z0-9_-]{32,}\b"),
     "anthropic_key": re.compile(r"\bsk-ant-[A-Za-z0-9_-]{32,}\b"),
     "slack_token": re.compile(r"\bxox(?:b|p|o|a|r|s)-[A-Za-z0-9-]{20,}\b"),
-    "private_key_block": re.compile(
-        r"-----BEGIN (?:RSA |OPENSSH |EC |DSA )?PRIVATE KEY-----"
-    ),
+    "private_key_block": re.compile(r"-----BEGIN (?:RSA |OPENSSH |EC |DSA )?PRIVATE KEY-----"),
     "google_api_key": re.compile(r"\bAIza[0-9A-Za-z_-]{35}\b"),
     "generic_secret_assignment": re.compile(
         r"""(?ix)
@@ -195,11 +185,7 @@ def is_allowed_content_match(
         return False
     if "secret-pattern: allow" in line:
         return True
-    if (
-        match is not None
-        and path is not None
-        and _chain_allowance_applies(line, match, path)
-    ):
+    if match is not None and path is not None and _chain_allowance_applies(line, match, path):
         return True
     scope = match.group(0) if match is not None else line
     return bool(
@@ -212,7 +198,7 @@ def is_allowed_content_match(
 
 def run_git(args: list[str]) -> subprocess.CompletedProcess[str]:
     try:
-        # Safe: git path hardcoded, args from internal callers only
+        # Safe: git is hardcoded string literal; args come from internal callers only
         return subprocess.run(
             ["git", *args],
             cwd=REPO_ROOT,
@@ -283,7 +269,7 @@ def path_findings(path: str) -> list[Finding]:
 
 def staged_file_bytes(path: str) -> bytes | None:
     try:
-        # Safe: git path hardcoded, path from internal git tracking only
+        # Safe: git is hardcoded; path from git tracking only, no user interpolation
         result = subprocess.run(
             ["git", "show", f":{path}"],
             cwd=REPO_ROOT,
@@ -337,11 +323,7 @@ def findings_for_paths(paths: list[str], *, staged: bool) -> list[Finding]:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--staged", action="store_true", help="check staged files")
-    parser.add_argument(
-        "--paths-from-stdin",
-        action="store_true",
-        help="check NUL-delimited changed paths from stdin",
-    )
+    parser.add_argument("--paths-from-stdin", action="store_true", help="check NUL-delimited changed paths from stdin")
     args = parser.parse_args()
 
     if args.staged and args.paths_from_stdin:
