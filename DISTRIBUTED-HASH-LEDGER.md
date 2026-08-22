@@ -5,6 +5,8 @@ status: staged
 authority: logan
 date created: Thursday, April 23rd 2026, 1:56:33 pm
 date modified: Thursday, April 23rd 2026, 5:56:58 pm
+related:
+  - STORAGE-LFS-USB-CONSTELLATION-INDEX-2026-06-17
 ---
 
 # Distributed Hash Ledger Infrastructure
@@ -24,7 +26,7 @@ This document describes the multi-cloud backup infrastructure that serves as a p
 
 ### Installed Remotes
 
-```
+```text
 google-drive:  (Google Drive)
 dropbox:      (Dropbox)
 onedrive:    (Microsoft OneDrive - personal)
@@ -43,7 +45,7 @@ obsidian-publish: (Obsidian Publish - temporary, active during Pro trial)
 
 ### Bucket Structure
 
-```
+```text
 the-ledger-bucket:/
 ├── idaho-vault-dropbox/
 ├── idaho-vault_cloudbuild/
@@ -83,7 +85,7 @@ This creates a **redundancy mesh** — losing 2-3 providers doesn't result in da
 
 ### Workflow
 
-```
+```text
 Local Vault
     │
     ├──▶ google-drive: ──▶ Verification node
@@ -170,6 +172,7 @@ This infrastructure draws from research in [explain LangChain.md](explain LangCh
 ### Verification Workflow — LEVELSET → SYNC → VERIFY → REPORT
 
 ```
+
 LEVELSET (session start)
     │
     ├─▶ SNIFF ──▶ PULL from providers ──▶ Context load
@@ -179,7 +182,8 @@ LEVELSET (session start)
     ├─▶ CHECK ──▶ Verify across providers ──▶ rclone check
     │
     └─▶ REPORT ──▶ Emit verified state ──▶ DISMISS
-```
+
+```text
 
 ### Distributed Verification Command Reference
 
@@ -217,7 +221,7 @@ rclone about gcs:
 
 Every backup session should produce a LEVELSET-style status:
 
-```
+```text
 SESSION: Distributed Backup
   PROVIDERS: [7 configured, X online]
   SYNC: [files pushed, timestamp]

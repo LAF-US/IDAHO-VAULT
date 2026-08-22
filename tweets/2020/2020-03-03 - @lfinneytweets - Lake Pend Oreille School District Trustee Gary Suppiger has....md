@@ -1,4 +1,5 @@
 ---
+title: "Lake Pend Oreille School District Trustee Gary Suppiger has..."
 date: 2020-03-03
 time: 17:25:15
 tweet_id: "1234892608217829378"

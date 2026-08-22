@@ -1,4 +1,5 @@
 ---
+title: "More like this if I'm being honest... #idpol #idleg"
 date: 2024-05-30
 time: 22:26:22
 tweet_id: "1796307190325936154"
@@ -19,10 +20,10 @@ related:
   - idleg
 ---
 
-More like this if I'm being honest... #idpol #idleg https://t.co/k5TF9or4f6
+More like this if I'm being honest... #idpol #idleg <https://t.co/k5TF9or4f6>
 
 ## Media
-- ![](https://pbs.twimg.com/tweet_video_thumb/GO3D3Mra4AYfszg.jpg)
+- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/GO3D3Mra4AYfszg.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

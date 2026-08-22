@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise In first presidential visit..."
 date: 2021-09-14
 time: 01:18:11
 tweet_id: "1437586443799445508"

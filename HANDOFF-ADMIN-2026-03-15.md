@@ -1,6 +1,7 @@
 ---
-from: PERMANENT: CODE AUTHORITY
-to: PERSISTENT: ADMINISTRATION
+title: HANDOFF-ADMIN-2026-03-15
+from: "PERMANENT: CODE AUTHORITY"
+to: "PERSISTENT: ADMINISTRATION"
 date: 2026-03-15
 ---
 Handoff briefing from CODE AUTHORITY to ADMINISTRATION. The vault has changed significantly since ADMIN's last update (2026-03-11). This document summarizes what landed, what's stale, and what needs ADMIN's attention.
@@ -14,17 +15,18 @@ PR #1 merged 2026-03-14 (commit `59ed633`), consolidating two feature branches i
 **Files delivered to main:**
 
 | Category | Files |
-|---|---|
+| --- | --- |
 | Root | `CLAUDE.md` (repo-wide instructions for all Claude Code sessions) |
 | Constitutional | `!ADMIN/Claude.md`, `Ethics.md`, `Logan.md`, `!README.md` |
 | LEVELSET | `LEVELSET.md` (v1), `LEVELSET-v2.md`, `LEVELSET-v2-PROMPT.md`, `LEVELSET-v3.2.6.1-PROMPT.md` |
 | Decisions | `DECISIONS.md` (6 entries through 2026-03-14) |
-| Automation | `so***REMOVED***audit.py` (v2), `propose_moves.py`, `wayback_audit.py` |
+| Automation | `sort_audit.py` (v2), `propose_moves.py`, `wayback_audit.py` |
 | Workflows | `sort-audit.yml`, `propose-moves.yml`, `wayback-audit.yml`, `wayback-preserve.yml` |
 | Scraper | `idaho_leg_scraper.py`, `post_digest.py`, `idaho-leg-scraper.yml` |
 | Reports | `sort-audit-2026-03-12.md`, `wayback-preserve-2026-03-15.md` |
 
 **Key decisions recorded in DECISIONS.md:**
+
 1. LEVELSET protocol established
 2. CLAUDE.md created at repo root
 3. Conversation taxonomy adopted
@@ -41,17 +43,22 @@ PR #1 merged 2026-03-14 (commit `59ed633`), consolidating two feature branches i
 ADMIN's `!ADMIN/Claude.md` was last updated 2026-03-11. Several sections are now outdated:
 
 ### 1. `vault_push.py` references (lines 19, 73, 123)
+
 `vault_push.py` was never delivered. Claude Code sessions (Tier 1) now push directly to GitHub — they have full repo write access. The constraint on line 19 ("Claude cannot write directly to GitHub — outbound network is blocked in the sandbox") is no longer accurate for Tier 1 instances.
 
 ### 2. Tier 2 definition (line 123)
+
 "Tier 2 — Targeted push via `vault_push.py`, requires Logan approval" — `vault_push.py` doesn't exist. If ADMIN retains a tiered model, Tier 2 needs a new definition.
 
 ### 3. Scheduled workflows table (lines 62-67)
+
 Describes Monday UTC schedule (sort audit 6am, propose moves 7am, wayback audit 8am). The actual deployed workflows use `workflow_dispatch` (manual trigger), not cron schedules. Only the legislature scraper runs on a schedule (daily 6am MT).
 
 ### 4. Pending items (lines 138-144)
+
 Partially resolved:
-- [x] `so***REMOVED***audit.py` v2 — delivered to main (no longer needs `vault_push.py`)
+
+- [x] `sort_audit.py` v2 — delivered to main (no longer needs `vault_push.py`)
 - [x] Re-run sort audit — v2 report not yet generated but script is deployed
 - [ ] Action genuine sort issues from v1 — still pending
 - [ ] Wayback audit `--limit 20` — still pending
@@ -60,7 +67,9 @@ Partially resolved:
 - [ ] Anthropic API key for Stage 3 — still pending
 
 ### 5. Conversation cluster (lines 125-131)
+
 Missing updates:
+
 - Legislature scraper conversation terminated cleanly (produced LEVELSET termination reports, still on feature branch `claude/idaho-legislature-scraper-RI6Ku`)
 - TASK: LEVELSET status should reflect that v2 synthesis was completed and the prompt was updated to v3.2.6.1
 
@@ -81,7 +90,7 @@ Missing updates:
 ## Outstanding Vault-Wide
 
 | Item | Status | Owner |
-|---|---|---|
+| --- | --- | --- |
 | Scraper LEVELSET termination reports | On feature branch, not merged to main | Logan (merge decision) |
 | Wayback preservation failures | 2/4 URLs failed | CODE AUTHORITY (investigate) |
 | Sort audit v1 genuine issues | 5 items identified, none actioned | ADMIN (prioritize) |
@@ -95,6 +104,7 @@ Missing updates:
 ## How to Use This Document
 
 Paste this into PERSISTENT: ADMINISTRATION as context. ADMIN can then:
+
 1. Update `!ADMIN/Claude.md` to reflect current state
 2. Make decisions on the items flagged above
 3. Produce an updated LEVELSET if warranted

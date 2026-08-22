@@ -1,4 +1,5 @@
 ---
+title: "RT @megataros Sen. Guthrie, R-McCammon, is shelving a bill..."
 date: 2020-01-17
 time: 17:33:58
 tweet_id: "1218224960390352896"

@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Bundy booked at Ada jail..."
 date: 2021-04-09
 time: 01:55:45
 tweet_id: "1380338611283841024"
@@ -20,6 +21,6 @@ related:
   - idpol
 ---
 
-RT @BetsyZRussell: Eye on Boise: Bundy booked at Ada jail again, charged with trespass, resisting arrest #idleg #idpol  https://t.co/2Ne5xQ…
+RT @BetsyZRussell: Eye on Boise: Bundy booked at Ada jail again, charged with trespass, resisting arrest #idleg #idpol  <https://t.co/2Ne5xQ…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1380338611283841024)

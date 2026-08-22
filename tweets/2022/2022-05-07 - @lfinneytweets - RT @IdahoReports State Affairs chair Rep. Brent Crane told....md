@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports State Affairs chair Rep. Brent Crane told..."
 date: 2022-05-07
 time: 18:57:00
 tweet_id: "1523014049365065728"

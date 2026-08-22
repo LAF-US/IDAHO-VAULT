@@ -3,4 +3,4 @@ related:
 - health insurance
 authority: LOGAN
 ---
-state employee health insurance 
+state employee health insurance

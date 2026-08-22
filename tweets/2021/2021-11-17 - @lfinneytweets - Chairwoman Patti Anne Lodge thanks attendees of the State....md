@@ -1,4 +1,5 @@
 ---
+title: "Chairwoman Patti Anne Lodge thanks attendees of the State..."
 date: 2021-11-17
 time: 18:46:13
 tweet_id: "1461043013501607940"

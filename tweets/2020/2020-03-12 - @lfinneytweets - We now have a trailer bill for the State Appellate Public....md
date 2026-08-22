@@ -1,4 +1,5 @@
 ---
+title: "We now have a trailer bill for the State Appellate Public..."
 date: 2020-03-12
 time: 21:59:00
 tweet_id: "1238222990354944000"
@@ -17,10 +18,10 @@ related:
 ---
 
 @BetsyZRussell We now have a trailer bill for the State Appellate Public Defender, funding their new duties under HB 319 handling juvenile and misdemeanor appeals. That passes unanimously. 
-https://t.co/EDEiEeIv8j
+<https://t.co/EDEiEeIv8j>
 
 ## Links
-- https://legislature.idaho.gov/sessioninfo/2020/legislation/h0319/
+- <https://legislature.idaho.gov/sessioninfo/2020/legislation/h0319/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

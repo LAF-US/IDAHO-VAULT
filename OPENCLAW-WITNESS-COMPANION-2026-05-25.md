@@ -52,7 +52,7 @@ OpenClaw is **not idle**. Its gateway has been running since machine restart at 
 
 ## LAUNCH AGENT — AUTO-START
 
-```
+```text
 ~/Library/LaunchAgents/ai.openclaw.gateway.plist
 ```
 
@@ -63,7 +63,7 @@ The gateway is registered as a macOS LaunchAgent (`ai.openclaw.gateway`). It sta
 ## VERSION STATE
 
 | | Value |
-|---|---|
+| --- | --- |
 | **Installed** | v2026.5.16-beta.3 (**beta** — not stable release) |
 | **Available (latest stable)** | v2026.5.22 |
 | **Runtime** | Node.js v24.15.0 via nvm |
@@ -96,7 +96,7 @@ The gateway is a **local hub**, not a platform gateway in the Hermes sense.
 ### Paired Nodes
 
 | Node | Device | Role | First paired | Last connected |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | the MacBook (operator node) | macOS (darwin), operator | probe / admin | 2026-05-13 | (local) |
 | **Windows-ZBFURY** | Windows | node-host | 2026-05-17 | **2026-05-18 20:40** |
 
@@ -107,7 +107,8 @@ The gateway is a **local hub**, not a platform gateway in the Hermes sense.
 ### Bonjour Advertisement
 
 Gateway advertises via mDNS:
-```
+
+```text
 Logan's MacBook Pro (OpenClaw)._openclaw-gw._tcp.local.
 host: Logans-MBP.local., port: 18789
 ```
@@ -119,7 +120,7 @@ host: Logans-MBP.local., port: 18789
 File: `~/.openclaw/openclaw.json` (observed 2026-05-25)
 
 | Parameter | Value |
-|---|---|
+| --- | --- |
 | Primary model | `mistralai/mistral-medium-3-5` via OpenRouter |
 | Fallback 1 | `mistralai/mistral-small-2603` via OpenRouter |
 | Fallback 2 | `anthropic/claude-sonnet-4.6` via OpenRouter |
@@ -132,6 +133,7 @@ File: `~/.openclaw/openclaw.json` (observed 2026-05-25)
 | Session DM scope | `per-channel-peer` |
 
 **Secret provider chain:** Three providers are configured in `openclaw.json`:
+
 1. **1Password CLI**: `op read op://Vault/OpenRouter API Key/credential` — requires `op` CLI authenticated
 2. **Vault script**: `/Users/logan/IDAHO-VAULT/!/resolve_openrouter_secret.py` — custom resolver
 3. **Gateway token file**: file-based provider reading from `~/.openclaw/secrets/gateway-token` (internal gateway auth token)
@@ -149,7 +151,7 @@ All files live at `~/.openclaw/workspace/`.
 ### Identity and Memory Files
 
 | File | State | Contents |
-|---|---|---|
+| --- | --- | --- |
 | **SOUL.md** | ✅ Present — has content | **Generic OpenClaw default template** — not Logan-specific (see below) |
 | **IDENTITY.md** | ⬜ Empty template | Name, creature, vibe, emoji: all blank |
 | **USER.md** | ⬜ Empty template | Name, timezone, notes: all blank |
@@ -184,6 +186,7 @@ The file exists on the MacBook. This means the agent was never guided through it
 ### Memory DB
 
 `~/.openclaw/memory/main.sqlite` — present but empty:
+
 - Files indexed: **0**
 - Chunks: **0**
 
@@ -198,7 +201,7 @@ The semantic memory engine has never processed any content.
 **Active (default on):** 27 skills available at session start
 
 | Skill | Description |
-|---|---|
+| --- | --- |
 | `1password` | 1Password CLI |
 | `apple-notes` | Apple Notes via memo CLI |
 | `blogwatcher` | RSS/Atom feed monitoring |
@@ -249,6 +252,7 @@ The semantic memory engine has never processed any content.
 **18 sessions** with `.jsonl` trajectory files in `~/.openclaw/agents/main/sessions/`.
 
 Most recent sessions by file modification date:
+
 - 2026-05-19 22:23 — last active session
 - 2026-05-19 01:25
 - 2026-05-18 22:56
@@ -264,6 +268,7 @@ The agent has not had an active session since May 19 (six days ago as of this su
 `~/.openclaw/plugins/installs.json` — 90 plugin records.
 
 Notable enabled/disabled state:
+
 - `openrouter` — **enabled** (primary model provider)
 - `ollama` — **disabled**
 - `admin-http-rpc` — **disabled**
@@ -281,9 +286,11 @@ Notable enabled/disabled state:
 ## MCP STATE
 
 No MCP servers configured. One temp file present:
-```
+
+```text
 ~/.openclaw/tmp/jiti/dist-bundle-mcp-DPPOalPH.fcd0b7c9.cjs
 ```
+
 This is a cached MCP bundle — the runtime has MCP capability but no servers have been added.
 
 `openclaw mcp serve` is available (documented capability) but not currently wired to any MCP client (Claude Code, Cursor, etc.).

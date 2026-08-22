@@ -15,6 +15,6 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoPubRadio: Idaho Ag Summit looks to future of family farms. @RHaunID reports: https://t.co/nUPuKCQk5w
+RT @IdahoPubRadio: Idaho Ag Summit looks to future of family farms. @RHaunID reports: <https://t.co/nUPuKCQk5w>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1231293940088754176)

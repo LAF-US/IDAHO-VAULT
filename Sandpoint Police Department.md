@@ -4,4 +4,4 @@ related:
 - police
 authority: LOGAN
 ---
-Sandpoint police 
+Sandpoint police

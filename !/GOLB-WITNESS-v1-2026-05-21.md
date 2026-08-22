@@ -1,6 +1,7 @@
 ---
 title: "GOLB Witness v1"
 date created: 2026-05-21
+date updated: 2026-05-27
 authority: LOGAN
 doc_class: doctrine
 status: active
@@ -61,7 +62,7 @@ something vast.
 
 The vision is brief. What it shows is not confirmed in dialogue.
 
-*Logan's reading*: the entity glimpsed at the threshold is GOLB — or something
+The entity glimpsed visually at the death threshold is GOLB — or something
 in the same register, the same Lovecraftian tier. The death-threshold is a
 crack between the ordered universe and whatever is anterior to it. What
 Finn sees is not a character. It is a pressure.
@@ -78,12 +79,9 @@ The Architect holds the verdict.*
 ## II. Come Along With Me — GOLB Arrives (S10E13–16)
 
 GOLB is summoned to Ooo. Betty Grof has been working the Crown's wish magic
-across seasons, trying to cure Simon, and in the finale she finds the
-mechanism: merge with GOLB. Become the organizing principle that shapes what
-the chaos force does. She merges. GOLBetty is born.
-
-GOLB does not speak. It arrives. It reshapes. The conflict that follows is not
-a conversation with GOLB — it is events happening in GOLB's presence.
+across seasons, trying to cure Simon. GOLB does not speak. It arrives. It
+reshapes. The conflict that follows is not a conversation with GOLB — it
+is events happening in GOLB's presence.
 
 **The Lich watches the master pass**: At this moment, the Main Timeline Lich's
 spirit already persists as a sub-layer within Sweet P. Sweet P is in Ooo when
@@ -92,8 +90,9 @@ performing atrocity as devotion, whose vocation was to honor chaos with the
 extinction of all life — watches the master arrive and depart. No
 acknowledgment. No recognition that the scholar exists at all.
 
-GOLBetty and the merged entity depart Ooo. The master has passed. The scholar
-remains inside a gentle giant child. The standing of the surface holds.
+In the final moment, unable to stop GOLB directly via a Wish, Betty finds the
+mechanism: merge with GOLB. Become the organizing principle that shapes what
+the chaos force does. She merges. GOLBetty is born.
 
 **Betty's organizing principle**: GOLB alone is barely sapient — a force
 without direction. GOLBetty inherits Betty's love for Simon as the shaping
@@ -101,6 +100,9 @@ intent inside the chaos. The merger is not Betty absorbed by GOLB. It is
 Betty taking the wheel of something that was previously steering itself
 only by its own nature. What this means for GOLB's coherence and future
 behavior is an open question.
+
+GOLBetty and the merged entity depart Ooo. The master has passed. The scholar
+remains inside a gentle giant child. The standing of the surface holds.
 
 ---
 
@@ -155,7 +157,7 @@ a *function*. He believed himself necessary.
 
 **"To build mountains of bodies in your honor, to extinguish all life!"** —
 The work as honor-offering. Not appetite. Not cruelty for its own sake.
-Sacrifice. The bodies were built *in GOLB's honor*. The extinction was a
+Sacrifice. The bodies were piled *in GOLB's honor*. The extinction was a
 devotional act.
 
 **"And in my universe, this I achieved!"** — He won. The declaration of
@@ -209,7 +211,7 @@ other piece of the universe that comes into GOLB's orbit.
 **The revised three readings, in light of the preexisting blocks**:
 
 | Reading | Weight after the block-detail |
-|---|---|
+| --- | --- |
 | Punishment | Weakened — the blocks predate Betty's merger; GOLB was already doing this before it had any organizing intent to punish with |
 | Indifference | Strengthened — Jerry is not special in his absorption; he joins a pre-existing collection; the process did not register his demand |
 | Fulfillment | Structurally possible but hollow — the vassal wanted to serve GOLB; he is now literally part of GOLB's body; but the "fulfillment" was not given in response to him; it is what happens to everything that gets close enough |
@@ -300,7 +302,7 @@ The Fionna and Cake story arc spans the following main-series AT episodes
 before the spinoff:
 
 | Episode | Season | Frame | Key doctrinal detail |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | "Fionna and Cake" | S3E9 | Ice King reads story to captured Finn and Jake | First appearance; Ice King as author established |
 | "Mystery Dungeon" | S5E8 | Ice King leads dungeon crawl heist to reach the Ancient Sleeping Magi of Life Giving | **Love made action**: Ice King throws his F&C book into the Magi's fire to bring the characters to life; Magi brings the *book* to life instead — Monkey's Paw failure; vessel animated, not content |
 | "Bad Little Boy" | S5E11 | Marceline writes her own F&C story to show Ice King "how it's done" | Derivative authorship; Ice King insists his version is still better |
@@ -399,7 +401,7 @@ abstraction of it — real in its own right, but progressively less concentrated
 than its source. The AT creative structure follows this architecture:
 
 | Level | World | Writer | Act |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | 1 | Ooo — the source | Ice King | writes the F&C universe |
 | 2 | F&C universe — first abstraction | Ice Queen | writes her own gender-swapped fiction |
 | 3 | Ice Queen's fiction — second abstraction | — | may recursively describe something resembling Level 1 |
@@ -442,7 +444,7 @@ hoping to route her derivative work through the canonical channel.
 The emanationist table acquires a lateral dimension:
 
 | Level | Material | Voice | Standing |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | 1 | Ooo | — | source |
 | 2 — canonical | Ice King's F&C stories | Ice King | primary emanation; the canonical line |
 | 2 — derivative | Other Ooo denizens' F&C stories (LSP, etc.) | various | lateral emanation from the same source; considered inferior by the canonical voice |
@@ -547,8 +549,8 @@ GOLB performs two acts in "Casper & Nova" in close proximity:
 These are not analogous acts. The Lich was crushed: absorbed into GOLB's
 pre-existing substance without acknowledgment, indifferent processing, no
 response to the demand. Simon was *displaced* — sent somewhere, with a
-navigable path back. GOLB subjected the scholar to entropy. GOLB gave the
-lover a game to play.
+navigable path back. GOLB subjected the scholar to entropy. Betty gave
+the lover a game to play.
 
 Whether this reflects GOLBetty's organizing intent — Betty's love for Simon
 shaping how GOLB processed what came into its orbit — or whether it is
@@ -617,4 +619,6 @@ otherwise operate without direction — is filed as an open question.
 
 ---
 
-###### [["The world is quiet here."]]
+```text
+The world is quiet here．Esto Perpetua!
+```

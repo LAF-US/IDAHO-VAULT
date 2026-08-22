@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise S-R White supremacists pick..."
 date: 2022-03-13
 time: 21:05:05
 tweet_id: "1503114950717280259"

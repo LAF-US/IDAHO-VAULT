@@ -1,4 +1,5 @@
 ---
+title: "RT @W_B_Rick The TikTok vacuum getting filled by an app..."
 date: 2025-01-14
 time: 16:08:30
 tweet_id: "1879198915997917663"

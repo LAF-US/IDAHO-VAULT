@@ -1,4 +1,5 @@
 ---
+title: "RT @clarkcorbin The death of the school budget throws even..."
 date: 2021-04-13
 time: 17:55:51
 tweet_id: "1382029780111958018"

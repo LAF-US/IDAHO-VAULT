@@ -1,4 +1,5 @@
 ---
+title: "OEM isn't as... out there... as the Product Safety..."
 date: 2021-07-22
 time: 04:09:11
 tweet_id: "1418060531332640768"
@@ -19,10 +20,10 @@ related:
 ---
 
 @IdahoMarissa @USCPSC @IdahoOEM OEM isn't as... out there... as the Product Safety Commission, but I like their memes 
-https://t.co/eqcTPMNqEQ
+<https://t.co/eqcTPMNqEQ>
 
 ## Links
-- https://x.com/IdahoOEM/status/1409889397630242818
+- <https://x.com/IdahoOEM/status/1409889397630242818>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

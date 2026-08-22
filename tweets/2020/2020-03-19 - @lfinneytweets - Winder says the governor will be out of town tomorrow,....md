@@ -1,4 +1,5 @@
 ---
+title: "Winder says the governor will be out of town tomorrow,..."
 date: 2020-03-19
 time: 21:51:13
 tweet_id: "1240757744719638528"

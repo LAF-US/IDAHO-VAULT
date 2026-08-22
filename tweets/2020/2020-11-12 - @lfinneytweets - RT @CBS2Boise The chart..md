@@ -1,4 +1,5 @@
 ---
+title: "RT @CBS2Boise The chart."
 date: 2020-11-12
 time: 01:06:50
 tweet_id: "1326692900915146752"
@@ -15,9 +16,9 @@ related:
   - lfinneytweets
 ---
 
-RT @CBS2Boise: The chart. https://t.co/hyYqJZZJrE
+RT @CBS2Boise: The chart. <https://t.co/hyYqJZZJrE>
 
 ## Media
-- ![](https://pbs.twimg.com/media/EmlXn_bVkAAkS6E.png)
+- ![alt text needed](https://pbs.twimg.com/media/EmlXn_bVkAAkS6E.png)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1326692900915146752)

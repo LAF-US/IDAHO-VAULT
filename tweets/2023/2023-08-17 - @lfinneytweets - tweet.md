@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2023-08-17
 time: 21:30:29
 tweet_id: "1692287810403983681"
@@ -16,10 +17,10 @@ related:
   - lfinneytweets
 ---
 
-@IdahoReports https://t.co/PDfvX0qY3W
+@IdahoReports <https://t.co/PDfvX0qY3W>
 
 ## Links
-- https://x.com/WBCSD83/status/1692274915754532995
+- <https://x.com/WBCSD83/status/1692274915754532995>
 
 *In reply to [@IdahoReports](https://twitter.com/IdahoReports)*
 
