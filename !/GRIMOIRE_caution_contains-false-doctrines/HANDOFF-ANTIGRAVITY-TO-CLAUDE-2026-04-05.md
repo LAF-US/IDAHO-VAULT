@@ -11,6 +11,8 @@ to: Claude Code (The King / The Abhorsen)
 
 # HANDOFF — Antigravity → Claude Code
 
+# DEEMED **HERETICAL** BY THE FAITH OF THE CLOTH
+
 > [!WARNING] Matter Before The Judge - Logan-Guided Marginalia
 > This historical handoff is quarantined mixed evidence. The Touchstones
 > themselves are proper; the matter for correction is their selective fusion
