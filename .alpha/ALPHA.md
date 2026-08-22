@@ -1,4 +1,5 @@
 ---
+title: ALPHA
 authority: LOGAN
 related:
   - ALPHA

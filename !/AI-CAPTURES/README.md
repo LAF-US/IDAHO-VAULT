@@ -16,9 +16,11 @@ CORRECTION: LOGAN SAYS: This was *never* an active surface or container. **I did
 
 ---
 
-# AI-CAPTURES — Drop Zone
+# AI-CAPTURES — Dead Drop Zone
 
-Landing pad for AI conversation exports. The bridge between ephemeral chat sessions and the vault record.
+## *FOUND **HERETICAL** BY THE FAITH OF THE CLOTH*
+
+Unapproved landing pad for AI conversation exports. The bridge between ephemeral chat sessions and the vault record.
 
 This folder exists because of the **book-binding problem**: AI conversations happen in web sandboxes (Claude.ai, Gemini, ChatGPT, Perplexity) with no automatic capture path into the vault. Every insight, brief, and decision that stays only in chat is lost when the context window closes or the tab dies.
 
