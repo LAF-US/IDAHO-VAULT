@@ -1,5 +1,7 @@
 ---
 title: '"consistent with" ≠ evidence'
+aliases:
+- '"consistent with" ≠ evidence'
 updated: 2026-06-22
 status: active
 authority: LOGAN
