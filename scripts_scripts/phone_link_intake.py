@@ -23,11 +23,12 @@ import hashlib
 import os
 import shutil
 import subprocess
+import sys
 from datetime import datetime
 from pathlib import Path
 
 
-DEFAULT_SOURCE = Path(r"C:\Users\loganf\Downloads\Phone Link")
+DEFAULT_SOURCE = Path.home() / "Downloads" / "Phone Link"
 TRUSTED_SOURCE_ROOT = DEFAULT_SOURCE.parent
 TRUSTED_VAULT_ROOT = Path(__file__).resolve().parents[2]
 
@@ -37,11 +38,28 @@ def normalized_path(path: Path) -> str:
     return os.path.normcase(os.path.normpath(os.fspath(path)))
 
 
+def _is_strict_descendant(candidate: str, root: str) -> bool:
+    """True if ``candidate`` is a real path-aware descendant of ``root`` --
+    never true for ``candidate == root`` itself, and never fooled by a
+    trailing separator on ``root`` or by a same-prefix sibling
+    (``/vaultx`` is not under ``/vault``). ``os.path.commonpath`` raises
+    ValueError for inputs it can't compare (e.g. different Windows drives);
+    that means "not contained," not an error worth propagating."""
+    candidate_norm = os.path.normcase(candidate)
+    root_norm = os.path.normcase(root)
+    if candidate_norm == root_norm:
+        return False
+    try:
+        return os.path.commonpath([candidate_norm, root_norm]) == root_norm
+    except ValueError:
+        return False
+
+
 def resolve_phone_link_source(path: Path) -> Path:
     """Resolve an existing Phone Link source within the Downloads boundary."""
-    trusted_root = os.path.normcase(os.path.realpath(os.fspath(TRUSTED_SOURCE_ROOT)))
-    candidate = os.path.normcase(os.path.realpath(os.fspath(path)))
-    if not candidate.startswith(trusted_root + os.sep):
+    trusted_root = os.path.realpath(os.fspath(TRUSTED_SOURCE_ROOT))
+    candidate = os.path.realpath(os.fspath(path))
+    if not _is_strict_descendant(candidate, trusted_root):
         raise RuntimeError(f"Phone Link source must be within {trusted_root}")
 
     resolved = Path(candidate)
@@ -54,9 +72,9 @@ def resolve_phone_link_source(path: Path) -> Path:
 
 def safe_child_path(parent: Path, relative_path: str) -> Path:
     """Return a normalized child path only when it remains below ``parent``."""
-    root = os.path.normcase(os.path.realpath(os.fspath(parent)))
-    candidate = os.path.normcase(os.path.realpath(os.path.join(root, relative_path)))
-    if not candidate.startswith(root + os.sep):
+    root = os.path.realpath(os.fspath(parent))
+    candidate = os.path.realpath(os.path.join(root, relative_path))
+    if not _is_strict_descendant(candidate, root):
         raise RuntimeError(f"Path escapes its permitted directory: {relative_path}")
     return Path(candidate)
 
@@ -116,8 +134,8 @@ def main(argv: list[str] | None = None) -> int:
     try:
         source = resolve_phone_link_source(args.source)
         vault_root = get_vault_root(args.vault_root)
-    except RuntimeError as exc:
-        print(f"Configuration error: {exc}")
+    except RuntimeError:
+        print("Configuration error: rejected Phone Link configuration", file=sys.stderr)
         return 1
     files = sorted(f for f in source.iterdir() if f.is_file())
 
@@ -125,9 +143,8 @@ def main(argv: list[str] | None = None) -> int:
         print("No files found in Phone Link folder.")
         return 0
 
-    print(f"Found {len(files)} file(s) in {source}")
-    print(f"Vault root: {vault_root}")
-    print(f"Destination: {vault_root}")
+    print(f"Found {len(files)} file(s)")
+    print("Vault destination confirmed")
     if args.dry_run:
         print("--- DRY RUN ---")
     print()
@@ -138,20 +155,20 @@ def main(argv: list[str] | None = None) -> int:
     for filepath in files:
         dest_file, disposition = resolve_destination(filepath, vault_root)
         if dest_file is None:
-            print(f"  SKIP (duplicate): {filepath.name}")
+            print("  SKIP (duplicate)")
             skipped_dup.append(filepath.name)
             continue
 
         action = "COPY" if args.copy else "MOVE"
         if args.dry_run:
-            print(f"  {action}: {filepath.name} -> {dest_file.name}")
+            print(f"  {action} ({disposition})")
             continue
 
         if args.copy:
             shutil.copy2(filepath, dest_file)
         else:
             shutil.move(str(filepath), str(dest_file))
-        print(f"  {action}D: {filepath.name} -> {dest_file.name}")
+        print(f"  {action}D ({disposition})")
         moved_paths.append(dest_file)
 
     print()
@@ -173,13 +190,13 @@ def main(argv: list[str] | None = None) -> int:
             )
         except subprocess.TimeoutExpired:
             print("git add timed out after 30s; files were moved but not staged")
-        except OSError as exc:
-            print(f"git add could not run ({exc}); files were moved but not staged")
+        except OSError:
+            print("git add could not run; files were moved but not staged")
         else:
             if result.returncode == 0:
                 print(f"Staged {len(moved_paths)} ingested file(s) for commit")
             else:
-                print(f"git add failed: {result.stderr}")
+                print("git add failed; files were moved but not staged")
 
     return 0
 

@@ -28,11 +28,28 @@ def normalized_path(path: Path) -> str:
     return os.path.normcase(os.path.normpath(os.fspath(path)))
 
 
+def _is_strict_descendant(candidate: str, root: str) -> bool:
+    """True if ``candidate`` is a real path-aware descendant of ``root`` --
+    never true for ``candidate == root`` itself, and never fooled by a
+    trailing separator on ``root`` or by a same-prefix sibling
+    (``/vaultx`` is not under ``/vault``). ``os.path.commonpath`` raises
+    ValueError for inputs it can't compare (e.g. different Windows drives);
+    that means "not contained," not an error worth propagating."""
+    candidate_norm = os.path.normcase(candidate)
+    root_norm = os.path.normcase(root)
+    if candidate_norm == root_norm:
+        return False
+    try:
+        return os.path.commonpath([candidate_norm, root_norm]) == root_norm
+    except ValueError:
+        return False
+
+
 def resolve_phone_link_source(path: Path) -> Path:
     """Resolve an existing Phone Link source within the Downloads boundary."""
-    trusted_root = os.path.normcase(os.path.realpath(os.fspath(TRUSTED_SOURCE_ROOT)))
-    candidate = os.path.normcase(os.path.realpath(os.fspath(path)))
-    if not candidate.startswith(trusted_root + os.sep):
+    trusted_root = os.path.realpath(os.fspath(TRUSTED_SOURCE_ROOT))
+    candidate = os.path.realpath(os.fspath(path))
+    if not _is_strict_descendant(candidate, trusted_root):
         raise RuntimeError(f"Phone Link source must be within {trusted_root}")
 
     resolved = Path(candidate)
@@ -45,9 +62,9 @@ def resolve_phone_link_source(path: Path) -> Path:
 
 def safe_child_path(parent: Path, relative_path: str) -> Path:
     """Return a normalized child path only when it remains below ``parent``."""
-    root = os.path.normcase(os.path.realpath(os.fspath(parent)))
-    candidate = os.path.normcase(os.path.realpath(os.path.join(root, relative_path)))
-    if not candidate.startswith(root + os.sep):
+    root = os.path.realpath(os.fspath(parent))
+    candidate = os.path.realpath(os.path.join(root, relative_path))
+    if not _is_strict_descendant(candidate, root):
         raise RuntimeError(f"Path escapes its permitted directory: {relative_path}")
     return Path(candidate)
 
@@ -154,8 +171,8 @@ def write_log(log_path: Path, message: str) -> None:
         log_path.parent.mkdir(parents=True, exist_ok=True)
         with log_path.open("a", encoding="utf-8") as handle:
             handle.write(line + "\n")
-    except OSError as exc:
-        print(f"[phone-link-sweep] log write failed ({exc}): {line}", file=sys.stderr)
+    except OSError:
+        print(f"[phone-link-sweep] {line}", file=sys.stderr)
 
 
 def move_one(source: Path, target_dir: Path, log_path: Path) -> bool:
@@ -163,20 +180,20 @@ def move_one(source: Path, target_dir: Path, log_path: Path) -> bool:
         return False
 
     if not is_unlocked(source):
-        write_log(log_path, f"SKIP (locked): {source.name}")
+        write_log(log_path, "SKIP (locked)")
         return False
 
     try:
         destination, disposition = resolve_destination(source, target_dir)
         if destination is None:
-            write_log(log_path, f"SKIP (duplicate): {source.name}")
+            write_log(log_path, "SKIP (duplicate)")
             return False
         destination.parent.mkdir(parents=True, exist_ok=True)
         shutil.move(str(source), str(destination))
-    except OSError as exc:
-        write_log(log_path, f"SKIP (move failed: {exc}): {source.name}")
+    except OSError:
+        write_log(log_path, "SKIP (move failed)")
         return False
-    write_log(log_path, f"MOVED ({disposition}): {source.name} -> {destination}")
+    write_log(log_path, f"MOVED ({disposition})")
     return True
 
 
@@ -184,23 +201,46 @@ def move_one(source: Path, target_dir: Path, log_path: Path) -> bool:
 def single_instance(lock_path: Path = LOCK_PATH) -> Iterator[bool]:
     lock_path.parent.mkdir(parents=True, exist_ok=True)
     handle = lock_path.open("a+b")
+    locked = False
     try:
+        # msvcrt locks from the stream's current offset. Ensure the lock file
+        # contains byte zero and every process contends for that same byte.
+        handle.seek(0)
+        if not handle.read(1):
+            handle.write(b"\0")
+            handle.flush()
+        handle.seek(0)
         if os.name == "nt":
             import msvcrt
 
             try:
                 msvcrt.locking(handle.fileno(), msvcrt.LK_NBLCK, 1)
+                locked = True
+            except OSError:
+                yield False
+                return
+        else:
+            import fcntl
+
+            try:
+                fcntl.flock(handle.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
+                locked = True
             except OSError:
                 yield False
                 return
         yield True
     finally:
-        if os.name == "nt":
+        if locked:
             try:
-                import msvcrt
+                if os.name == "nt":
+                    import msvcrt
 
-                handle.seek(0)
-                msvcrt.locking(handle.fileno(), msvcrt.LK_UNLCK, 1)
+                    handle.seek(0)
+                    msvcrt.locking(handle.fileno(), msvcrt.LK_UNLCK, 1)
+                else:
+                    import fcntl
+
+                    fcntl.flock(handle.fileno(), fcntl.LOCK_UN)
             except OSError:
                 # Cleanup best effort: do not mask the primary sweep outcome.
                 pass
@@ -219,11 +259,11 @@ def watch(source_dir: Path, target_dir: Path, log_path: Path, poll_seconds: floa
     while True:
         try:
             sweep_once(source_dir, target_dir, log_path)
-        except OSError as exc:
+        except OSError:
             # source_dir itself can become temporarily unreachable (drive
             # unplugged, folder renamed); log and keep polling instead of
             # letting one bad cycle kill the watcher permanently.
-            write_log(log_path, f"SWEEP FAILED (will retry): {exc}")
+            write_log(log_path, "SWEEP FAILED (will retry)")
         time.sleep(poll_seconds)
 
 
@@ -239,13 +279,13 @@ def main(argv: list[str] | None = None) -> int:
         parser.error("--poll-seconds must be a finite value greater than 0")
 
     try:
-        target_dir, root_source = resolve_vault_root(args.vault_root)
+        target_dir, _ = resolve_vault_root(args.vault_root)
         if args.source is None:
             args.source = DEFAULT_SOURCE
             args.source.mkdir(parents=True, exist_ok=True)
         source_dir = resolve_phone_link_source(args.source)
-    except RuntimeError as exc:
-        print(f"Configuration error: {exc}", file=sys.stderr)
+    except (RuntimeError, OSError):
+        print("Configuration error: rejected Phone Link configuration", file=sys.stderr)
         return 1
     log_path = safe_child_path(target_dir, "!/INBOX/_phone-link-watcher.log")
 
@@ -253,10 +293,7 @@ def main(argv: list[str] | None = None) -> int:
         if not acquired:
             return 0
 
-        write_log(
-            log_path,
-            f"Watcher active. Source='{source_dir}' Target='{target_dir}' VaultRootSource='{root_source}'",
-        )
+        write_log(log_path, "Watcher active")
         if args.once:
             sweep_once(source_dir, target_dir, log_path)
             return 0
