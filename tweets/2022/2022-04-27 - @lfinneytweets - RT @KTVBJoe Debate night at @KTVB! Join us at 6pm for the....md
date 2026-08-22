@@ -1,4 +1,5 @@
 ---
+title: "RT @KTVBJoe Debate night at @KTVB! Join us at 6pm for the..."
 date: 2022-04-27
 time: 01:38:58
 tweet_id: "1519128941641969665"

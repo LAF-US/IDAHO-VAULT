@@ -1,4 +1,5 @@
 ---
+title: "RT @HeatherScottID I love the fact that the Idaho..."
 date: 2025-04-01
 time: 19:04:40
 tweet_id: "1907147116277068211"

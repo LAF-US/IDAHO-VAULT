@@ -1,4 +1,5 @@
 ---
+title: "Half of Brad's shtick is having a thick New Jersey accent..."
 date: 2020-06-11
 time: 04:10:46
 tweet_id: "1270931457557454849"

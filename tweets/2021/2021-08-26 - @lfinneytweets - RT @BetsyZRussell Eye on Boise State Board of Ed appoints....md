@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise State Board of Ed appoints..."
 date: 2021-08-26
 time: 19:34:14
 tweet_id: "1430976903783927809"

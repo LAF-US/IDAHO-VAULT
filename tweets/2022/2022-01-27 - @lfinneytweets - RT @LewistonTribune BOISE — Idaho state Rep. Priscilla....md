@@ -1,4 +1,5 @@
 ---
+title: "RT @LewistonTribune BOISE \u2014 Idaho state Rep. Priscilla..."
 date: 2022-01-27
 time: 00:00:40
 tweet_id: "1486489295196069890"

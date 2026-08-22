@@ -35,12 +35,14 @@ op --version
 ### 2. Sign In to 1Password
 
 **Option A: Interactive sign-in (for personal use)**
+
 ```bash
 op account add --address my.1password.com --email your@email.com
 op signin
 ```
 
 **Option B: Service Account Token (for automation/GitHub Actions)**
+
 ```bash
 # Create service account in 1Password web vault
 # Export the token
@@ -73,7 +75,7 @@ Edit `.openclaw\openclaw.json`:
 Create items in your 1Password vault:
 
 | Item Name | Type | Fields | Usage |
-|-----------|------|--------|-------|
+| ----------- | ------ | -------- | ------- |
 | `OpenClaw Discord Bot` | Password | `token`, `applicationId` | Discord bot credentials |
 | `OpenClaw Signal Account` | Password | `number` | Signal phone number |
 | `OpenClaw Telegram Bot` | Password | `token` | Telegram bot token |
@@ -84,6 +86,7 @@ Create items in your 1Password vault:
 Instead of storing tokens in plaintext, use SecretRef:
 
 **Before (plaintext):**
+
 ```json
 "discord": {
   "enabled": true,
@@ -92,6 +95,7 @@ Instead of storing tokens in plaintext, use SecretRef:
 ```
 
 **After (1Password reference):**
+
 ```json
 "discord": {
   "enabled": true,
@@ -106,6 +110,7 @@ Instead of storing tokens in plaintext, use SecretRef:
 ```
 
 Or use CLI:
+
 ```bash
 openclaw config set channels.discord.token --ref-provider 1password --ref-id "OpenClaw Discord Bot" --ref-field token
 ```
@@ -136,7 +141,7 @@ openclaw secrets reload
 Before any `openclaw` command executes, the current shell must define:
 
 | Variable | Purpose | Required For |
-|----------|---------|--------------|
+| ---------- | --------- | -------------- |
 | `OP_SERVICE_ACCOUNT_TOKEN` | Authenticates the 1Password CLI provider | All `$secretRef` resolutions |
 | `DISCORD_OPENCLAW_TOKEN` | Discord credential when explicitly invoking the channel | Discord channel |
 | `OPENCLAW_GATEWAY_TOKEN` | Authenticates the local gateway | Gateway startup |
@@ -148,6 +153,7 @@ The execution sequence applies only to an intentional OpenClaw operation:
 **1. Export Secrets (seed the shell)**
 
 PowerShell (Windows):
+
 ```powershell
 $env:OP_SERVICE_ACCOUNT_TOKEN = "ops_..."
 $env:DISCORD_OPENCLAW_TOKEN   = "MTAx..."
@@ -155,6 +161,7 @@ $env:OPENCLAW_GATEWAY_TOKEN   = "oc_gw_..."
 ```
 
 Bash / Zsh (POSIX):
+
 ```bash
 export OP_SERVICE_ACCOUNT_TOKEN="ops_..."
 export DISCORD_OPENCLAW_TOKEN="MTAx..."
@@ -162,6 +169,7 @@ export OPENCLAW_GATEWAY_TOKEN="oc_gw_..."
 ```
 
 cmd.exe (Windows legacy):
+
 ```cmd
 set OP_SERVICE_ACCOUNT_TOKEN=ops_...
 set DISCORD_OPENCLAW_TOKEN=MTAx...
@@ -216,7 +224,7 @@ Without that intentional invocation the configuration remains inert.
 ## Troubleshooting
 
 | Problem | Solution |
-|---------|----------|
+| --------- | ---------- |
 | `op: command not found` | Run `scoop install 1password` |
 | `authentication required` | Run `op signin` or set `OP_SERVICE_ACCOUNT_TOKEN` |
 | `item not found` | Check exact item name in 1Password vault |

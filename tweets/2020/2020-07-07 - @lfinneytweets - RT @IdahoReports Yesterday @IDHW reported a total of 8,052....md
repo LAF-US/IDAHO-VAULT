@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Yesterday @IDHW reported a total of 8,052..."
 date: 2020-07-07
 time: 17:19:50
 tweet_id: "1280552116965085184"

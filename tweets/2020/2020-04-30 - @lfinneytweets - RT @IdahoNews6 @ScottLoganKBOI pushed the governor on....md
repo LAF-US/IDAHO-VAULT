@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoNews6 @ScottLoganKBOI pushed the governor on..."
 date: 2020-04-30
 time: 17:55:26
 tweet_id: "1255918699258589184"

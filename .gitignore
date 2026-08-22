@@ -1,412 +1,177 @@
-# IDAHO-VAULT gitignore
-#
-# First principle: the vault is the record. Markdown notes, structured
-# registries, scripts, source documents, media, attachments, and durable agent
-# memory stay visible to git by default.
-#
-# This file exists mainly to shield secrets and suppress machine churn. It
-# excludes local runtime state, dependency installs, caches, logs, credentials,
-# editor/workspace noise, and NETWEB-invalid names. Existing tracked files are
-# not untracked by these rules; use explicit git index cleanup when Logan
-# decides a tracked artifact is no longer part of the record.
+# The *default* assumption for the VAULT is that things need to be tracked. The *only* exceptions to that sole assumption are **secrets** and **exhaust**. Tread lightly here.
 
 # ---------------------------------------------------------------------------
-# Secrets and credentials
+# HOW THIS FILE IS SHAPED, AND WHY IT LOOKS ODD
+#
+# Two rules of git that this file is built around:
+#
+#   1. A tracked file is NEVER ignored. Nothing below untracks anything that is
+#      already committed; these patterns govern what can be added from here on.
+#
+#   2. Git does not descend into an excluded DIRECTORY, so a later `!` cannot
+#      rescue a file inside one. `node_modules/` followed by `!**/*.md` loses
+#      the markdown — silently.
+#
+# Rule 2 is why exhaust below is written `dir/**` (contents) plus `!dir/**/`
+# (keep descending into subdirectories) instead of the usual `dir/`. That shape
+# is what lets the markdown re-include at the bottom actually work. 49 markdown
+# files are tracked inside node_modules today; the vault tracks markdown
+# everywhere, and that is preserved deliberately.
+#
+# Verify a change here, do not eyeball it:
+#
+#     git check-ignore --no-index -v <path>     # why is this ignored?
+#     git status --porcelain                    # did anything stop being seen?
+#
+# `--no-index` matters: without it, an already-tracked file always reports as
+# NOT ignored, which makes a broken pattern look like it works.
 # ---------------------------------------------------------------------------
+
+
+# === SECRETS ===============================================================
+# File patterns only — never a bare directory — so nothing here can shadow a
+# markdown file by making git skip a whole tree.
+
+# Environment files
 .env
 .env.*
 !.env.example
 !.env.template
 .envrc
+*.env
+!**/*.example.env
 
-.op/openrouter.env
-.op/reports/
-.mcp-auth/
-secrets/
-vault-courier-key.json
-*-key.json
-*service-account.json
-archive-secrets-*.json
-application_default_credentials.json
-credentials.json
-token.json
-tokens.json
-oauth*.json
-client_secret*.json
-
-# Private key material and local certificate/key stores.
+# Private keys and certificates
 *.pem
 *.key
 *.p12
 *.pfx
 id_rsa
 id_rsa.*
+id_ecdsa
+id_ecdsa.*
 id_ed25519
 id_ed25519.*
-known_hosts
+*.ppk
 
-# Tool/package manager auth files commonly containing tokens.
-.npmrc
-.pypirc
+# Credential and token files
+credentials.json
+.credentials.json
+application_default_credentials.json
+token.json
+tokens.json
+oauth*.json
+client_secret*.json
+auth.json
 .netrc
-.aws/
-.azure/
-.config/gcloud/
-.gsutil/
-.config/rclone/
-rclone.conf
-*.rclone.conf
-
-# Credential exports and recovery codes must never enter the public record.
-Google Passwords.csv
-**/Google Passwords*.csv
-**/passwords*.csv
-*recovery-codes*
-*recovery_codes*
+.pgpass
 
 # Tool auth state
 .claude/.credentials.json
 .codex/auth.json
-.codex/.codex-global-state.json
-.pi/agent/auth.json
-.gemini/oauth_creds.json
-.gemini/google_accounts.json
-.factory/auth.v2.*
-.factory/certs/
-.openclaw/credentials/
-.ollama/id_ed25519
-.ollama/id_ed25519.pub
-
-# Agent memory-provider API key configs (contain live credentials)
-honcho.json
-
-# Local agent bridges and exported sessions are not live vault surfaces.
 .mcp.json
-session-export-*/
-gpg-agent.conf
-package copy.json
-package-lock copy.json
+.mcp-auth/
+.op/*.env
+.aws/credentials
+.ssh/id_*
+!.ssh/id_*.pub
 
-# ---------------------------------------------------------------------------
-# Python, JavaScript, and package runtime infrastructure
-# ---------------------------------------------------------------------------
-__pycache__/
+# Bulk secret exports and recovery codes must never enter the public record.
+secrets/
+archive-secrets-*.json
+*recovery-codes*
+*.kdbx
+
+
+# === EXHAUST ===============================================================
+# Machine churn: dependency installs, caches, build output, local runtime state.
+# Written as `dir/**` + `!dir/**/` so git keeps descending and the markdown
+# re-include at the bottom still applies. See the note at the top.
+
+# A pattern containing a slash is anchored to THIS directory, so `node_modules/**`
+# would only match a copy at the repo root — `THE-GEMSTONE/node_modules/` would
+# escape it. Tool directories therefore get a `**/` prefix to match at any depth.
+#
+# Names that are ALSO ordinary vault folders (build, dist, logs, tmp, .cache —
+# 83 tracked files live under such paths) are anchored with a leading `/` to the
+# repo root instead. Track-by-default means a note folder called `logs` three
+# levels down is content, not exhaust.
+
+# Dependency installs — unambiguous, any depth
+**/node_modules/**
+!**/node_modules/**/
+**/.venv/**
+!**/.venv/**/
+**/venv/**
+!**/venv/**/
+
+# Python caches — unambiguous, any depth
+**/__pycache__/**
+!**/__pycache__/**/
 *.py[cod]
-*$py.class
-.Python
-.python_history
-!.python/
-!.python/**
+**/*.egg-info/**
+!**/*.egg-info/**/
+**/.pytest_cache/**
+!**/.pytest_cache/**/
+**/.mypy_cache/**
+!**/.mypy_cache/**/
+**/.ruff_cache/**
+!**/.ruff_cache/**/
+**/htmlcov/**
+!**/htmlcov/**/
+.coverage
+.coverage.*
+coverage.xml
 
-.venv/
-venv/
-env/
-ENV/
-.uv-cache/
-.pip-cache/
-*.egg-info/
-build/
-dist/
+# Build output — root only; `build`/`dist` are also legitimate vault folder names
+/dist/**
+!/dist/**/
+/build/**
+!/build/**/
 
-node_modules/
-**/node_modules/
-.npm-cache/
-
-# External SDK/runtime installs parked locally are not vault content.
-google-cloud-sdk/
-LFPython/
-feed-generator/
-.local/share/claude/versions/
-.ollama/models/blobs/
-.ollama/models/manifests/
-
-# Backup/build artifacts of thegemstone.org quartz site. THE-GEMSTONE/
-# (markdown content) is the vault-facing record. The sibling /go/ tree is the
-# Go module cache used by gemstone build tooling and the sibling /quartz/ tree
-# is the quartz checkout — both are reproducible/vendored and churned back
-# repeatedly across 2026-05 commits ("Why do these Go packages keep churning,
-# I thought we fixed that already"). Anchor the ignore at the repo root so the
-# nested THE-GEMSTONE/ content tree stays tracked.
-/go/
-/quartz/
-
-# ---------------------------------------------------------------------------
-# Local caches, temp, state, and generated databases
-# ---------------------------------------------------------------------------
-.cache/
-.tmp/
-.state/
-.pycache/
-.smart-env/
-.makemd/
-.space/
-BMO/
-Tags/
-
-tmp/
-temp/
-*.tmp
-*.temp
-*.bak
-*.backup
-*-backup*.json
-data-backup*
-*.bundle
-*.download
-.rsync-partial/
-**/.rsync-partial/
-*.partial
-*.part
-
-*.log
-*.pid
-*.lock
-*.sqlite
-*.sqlite-shm
-*.sqlite-wal
-*.db
-
-logs/
-**/logs/
-**/cache/
-**/.cache/
-**/tool-results/
-**/shared_proto_db/
-
-# Local media-app cache artifacts, not source documents.
-*.cfa
-*.pek
-
-# ---------------------------------------------------------------------------
-# Agent and tool runtime internals
-# ---------------------------------------------------------------------------
-# Preserve agent dotfolders and durable memory by default; ignore only volatile
-# runtime/auth/cache surfaces.
-.agent-home/
-
-.claude/settings.local.json
-.claude/backups/
-.claude/cache/
-.claude/debug/
-.claude/file-history/
-.claude/projects/
-.claude/shell-snapshots/
-.claude/worktrees/
-.claude/plugins/cache/
-**/.claude/worktrees/
-
-.codex/.personality_migration
-.codex/.sandbox/
-.codex/cache/
-.codex/cap_sid
-.codex/home/
-.codex/installation_id
-.codex/log/
-.codex/logs_*.sqlite*
-.codex/models_cache.json
-.codex/plugins/cache/
-.codex/sandbox.log
-.codex/state_*.sqlite*
-.codex/tmp/
-.codex/vendor_imports/
-.codex/version.json
-
-.antigravity/argv.json
-.antigravity/extensions/
-.copilot/session-state/
-.cursor/projects/
-.cursor/extensions/
-.cursor/plugins/cache/
-.cursor/ai-tracking/
-.cursor/debug-logs/
-.cursor/argv.json
-.cursor/ide_state.json
-.factory/plugins/marketplaces/
-.gemini/antigravity/
-.gemini/antigravity-browser-profile/
-.gemini/history/
-.gemini/installation_id
-.gemini/projects*.json
-.gemini/policies/auto-saved.toml
-.gemini/settings*.json
-.gemini/state.json
-.gemini/tmp/
-.gemini/trustedFolders.json
-.openclaw/agents/
-.openclaw/canvas/
-.openclaw/completions/
-.openclaw/devices/
-.openclaw/flows/
-.openclaw/identity/
-.openclaw/logs/
-.openclaw/openclaw.json*
-.openclaw/tasks/
-.openclaw/update-check.json
-.openclaw/workspace/
-.openclaw/images.jpg
-.pi/agent/sessions/
-
-# CrewAI runtime layer: durable doctrine and source stay tracked.
-.crewai_cache/
-.crewai/logs/
-
-# ---------------------------------------------------------------------------
-# Obsidian local state and plugin runtime data
-# ---------------------------------------------------------------------------
-# Track vault-facing interface state and plugin manifests. Do not track private
-# plugin data, caches, indexes, or machine-local workspace state.
-.obsidian/workspace.json
-.obsidian/workspace*.json
-.obsidian/graph.json
-.obsidian/types.json
-.obsidian/backlink.json
-.obsidian/file-recovery.json
-.obsidian/page-preview.json
-.obsidian/switcher.json
-.obsidian/webviewer.json
-.obsidian/note-composer.json
-.obsidian/app.json
-.obsidian/appearance.json
-
-.obsidian/plugins/*/data.json
-.obsidian/plugins/*/cache/
-.obsidian/plugins/smart-connections/.smart-env/
-.obsidian/plugins/mcp-tools/bin/
-.obsidian/plugins/*/main.js
-.obsidian/plugins/*/styles.css
-.obsidian/plugins/obsidianclaw/
-.obsidian/plugins/fit/debug.log*
-.obsidian/**(2)*.json
-
-!.obsidian/community-plugins.json
-!.obsidian/core-plugins.json
-!.obsidian/plugins/*/manifest.json
-!.obsidian/plugins/roygbiv-day-accent/main.js
-
-# ---------------------------------------------------------------------------
-# Editor, OS, and sync noise
-# ---------------------------------------------------------------------------
-.vscode/*
-!.vscode/settings.json
-!.vscode/extensions.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/mcp.json
-
-.idea/
+# OS and editor droppings
+.DS_Store
+Thumbs.db
+desktop.ini
 *.swp
 *.swo
 *~
 
-.DS_Store
-Thumbs.db
-desktop.ini
-ehthumbs.db
-._*
+# Logs and local runtime state — root only, same reason as build/dist
+*.log
+/logs/**
+!/logs/**/
+/.cache/**
+!/.cache/**/
+/tmp/**
+!/tmp/**/
 
-# Office temporary lock files, not documents.
-~$*.doc
-~$*.docx
-~$*.xls
-~$*.xlsx
-~$*.ppt
-~$*.pptx
 
-# Obsidian/cloud conflict duplicates and temporary placeholders.
-* (Conflicted copy *)*
-tempfolder.txt
+# === THE VAULT'S OWN RULE ==================================================
+# Markdown is the vault. It is tracked wherever it lives, including inside the
+# exhaust above. This is the last word on purpose — in git, the last matching
+# pattern wins, so this overrides everything before it.
+#
+# It cannot rescue a file from an excluded *directory*, which is exactly why no
+# rule above excludes a bare directory. Do not "simplify" `dir/**` + `!dir/**/`
+# back to `dir/` without re-running the check-ignore commands at the top.
+!**/*.md
+!*.md
 
-# ---------------------------------------------------------------------------
-# Local intake/runtime holding areas
-# ---------------------------------------------------------------------------
-tmp-minidata-msg/
-tmp-msg-extract/
-INBOX/PHONE-LINK/*
-DAILYNOTES/
+# ESTO PERPETUA!
 
-_phone-link-sweep.log
-_phone-link-watcher.log
-_phone-link-watcher.pid
-
-# Swarm runtime state; durable reports should be promoted to markdown/json
-# surfaces intentionally.
-!/swarm/logs/*
-!!/swarm/logs/*
-!/sbp-blackboard.json
-.github/swarm/state/archive/
-
-# Explicit local/private holding spaces from the old desktop rule set. These
-# are not source-document classes; they are operator-controlled private/runtime
-# lanes unless Logan promotes a specific file.
-.remember/
-_private/
-@/
-*.vault.json
-
-# ---------------------------------------------------------------------------
-# GitHub service surfaces: GitBook and GitGuardian
-# ---------------------------------------------------------------------------
-# GitBook and GitGuardian are part of the GitHub-side environment. Their
-# tracked configuration/documentation surfaces must stay visible to git.
-!.gitbook.yaml
-!.gitbook/
-!.gitbook/**
-!.gitguardian/
-!.gitguardian/**
-!-SUMMARY.md
-
-# Local scanner/build output is churn unless promoted into a durable report.
-.gitbook/cache/
-.gitbook/tmp/
-.gitguardian/cache/
-.gitguardian/reports/
-ggshield-report.*
-gitguardian-report.*
-
-# ---------------------------------------------------------------------------
-# rclone/rsync transport surfaces
-# ---------------------------------------------------------------------------
-# Track durable manifests and vault notes that describe mirrored objects. Do
-# not track local transfer credentials, token stores, caches, or partial files.
-.rclone-cache/
-rclone-cache/
-**/.rclone-cache/
-**/rclone-cache/
-
-# ---------------------------------------------------------------------------
-# NETWEB: Windows reserved device names
-# ---------------------------------------------------------------------------
-# These names are invalid on Windows regardless of extension. Use the vault
-# alias convention instead, e.g. _AUX.md with aliases: [AUX].
-[Aa][Uu][Xx]
-[Aa][Uu][Xx].*
-[Cc][Oo][Nn]
-[Cc][Oo][Nn].*
-[Nn][Uu][Ll]
-[Nn][Uu][Ll].*
-[Pp][Rr][Nn]
-[Pp][Rr][Nn].*
-[Cc][Oo][Mm][0-9]
-[Cc][Oo][Mm][0-9].*
-[Ll][Pp][Tt][0-9]
-[Ll][Pp][Tt][0-9].*
-
-# ---------------------------------------------------------------------------
-# Explicit non-rules
-# ---------------------------------------------------------------------------
-# Do not blanket-ignore media, PDFs, Office files, email files, archives, or
-# production source formats here. In this vault those may be source documents.
-# Exclude a specific sensitive or draft artifact only by explicit path, a
-# separate local exclude rule, or an approved metadata-driven workflow.
-
-.cache_ggshield
-
-# Ignore Smart Environment folder
-<<<<<<< HEAD
-.smart-env
-=======
-.smart-env
-
-# Added by ggshield
-.cache_ggshield
->>>>>>> dd49e33e (small edits)
+# === ROOT node_modules IS A BUILD ARTIFACT =================================
+# Last rule in the file, and it must stay last: git takes the LAST matching
+# pattern, so this has to come after the markdown re-include above to beat it.
+#
+# The markdown rule is right for THE-GEMSTONE/node_modules, which is vendored
+# CONTENT this vault tracks on purpose (49 .md files). It is wrong for a root
+# node_modules, which npm regenerates from package-lock.json and which nobody
+# should ever commit.
+#
+# Measured with `git add --dry-run node_modules/`: 2 files leak with main's
+# dependencies today (prettier only), 466 with the eight devDependencies #950
+# adds. Both are vendored README files nobody wants in the vault.
+#
+# Leading slash = root only. THE-GEMSTONE/node_modules is untouched.
+/node_modules/**

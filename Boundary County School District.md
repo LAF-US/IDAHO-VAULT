@@ -4,4 +4,4 @@ related:
 - Boundary County
 authority: LOGAN
 ---
-Bonners Ferry, Boundary County 
+Bonners Ferry, Boundary County

@@ -5,7 +5,7 @@ author:
 published: 2026-03-17
 created: 2026-04-17
 ---
-![nuneybits Vector art of a Forge made of computer code in the co e81353af-4d23-4b20-853d-84fad8cc9b3f](https://venturebeat.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fjdtwqhzvc2n1%2F4TvXdOwVTUgTDCioxZUcYC%2Fcd8c6de13db530abc6a2ba91175dc5b4%2Fnuneybits_Vector_a***REMOVED***of_a_Forge_made_of_computer_code_in_the_co_e81353af-4d23-4b20-853d-84fad8cc9b3f.webp%3Fw%3D1000%26q%3D100&w=3840&q=85)
+![nuneybits Vector art of a Forge made of computer code in the co e81353af-4d23-4b20-853d-84fad8cc9b3f](https://venturebeat.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2Fjdtwqhzvc2n1%2F4TvXdOwVTUgTDCioxZUcYC%2Fcd8c6de13db530abc6a2ba91175dc5b4%2Fnuneybits_Vector_art_of_a_Forge_made_of_computer_code_in_the_co_e81353af-4d23-4b20-853d-84fad8cc9b3f.webp%3Fw%3D1000%26q%3D100&w=3840&q=85)
 
 Credit: VentureBeat made with Midjourney
 

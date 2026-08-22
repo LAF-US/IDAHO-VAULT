@@ -1,4 +1,5 @@
 ---
+title: "RT @IF_reporter Elephant battles Legislative District 32..."
 date: 2024-03-12
 time: 03:49:09
 tweet_id: "1767397390536052760"

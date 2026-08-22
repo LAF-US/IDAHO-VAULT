@@ -1,4 +1,5 @@
 ---
+title: "RT @MikeCrapo Today will conclude the week-long..."
 date: 2020-10-15
 time: 15:24:34
 tweet_id: "1316761893730570240"

@@ -1,4 +1,5 @@
 ---
+title: "RT @Poynter People who can\u2019t wait to see former President..."
 date: 2023-03-23
 time: 19:04:38
 tweet_id: "1638980086392295425"

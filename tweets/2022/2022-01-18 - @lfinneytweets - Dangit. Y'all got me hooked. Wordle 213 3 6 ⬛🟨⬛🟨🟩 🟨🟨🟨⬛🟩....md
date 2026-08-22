@@ -1,4 +1,5 @@
 ---
+title: "Dangit. Y'all got me hooked. Wordle 213 3 6 \u2b1b\ud83d\udfe8\u2b1b\ud83d\udfe8\ud83d\udfe9 \ud83d\udfe8\ud83d\udfe8\ud83d\udfe8\u2b1b\ud83d\udfe9..."
 date: 2022-01-18
 time: 22:41:46
 tweet_id: "1483570335693905921"

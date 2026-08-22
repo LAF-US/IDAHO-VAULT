@@ -1,4 +1,5 @@
 ---
+title: "RT @RuthBrownNews The Pfizer vaccine can go to people ages..."
 date: 2021-04-01
 time: 00:50:21
 tweet_id: "1377423051092975616"

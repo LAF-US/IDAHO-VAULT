@@ -1,4 +1,5 @@
 ---
+title: "RT @LauraEWeiss16 New in AM If the Senate flips, @MikeCrapo..."
 date: 2024-10-29
 time: 12:34:35
 tweet_id: "1851241217956442329"

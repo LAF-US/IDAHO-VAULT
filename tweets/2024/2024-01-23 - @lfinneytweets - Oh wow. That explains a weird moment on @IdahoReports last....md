@@ -1,4 +1,5 @@
 ---
+title: "Oh wow. That explains a weird moment on @IdahoReports last..."
 date: 2024-01-23
 time: 00:00:29
 tweet_id: "1749582839283384390"

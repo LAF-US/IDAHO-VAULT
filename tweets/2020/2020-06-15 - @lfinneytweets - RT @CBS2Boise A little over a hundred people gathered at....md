@@ -1,4 +1,5 @@
 ---
+title: "RT @CBS2Boise A little over a hundred people gathered at..."
 date: 2020-06-15
 time: 04:55:53
 tweet_id: "1272392363055280128"

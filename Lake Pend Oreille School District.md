@@ -5,4 +5,4 @@ related:
 - Sandpoint
 authority: LOGAN
 ---
-Sandpoint/Sagle, Bonner County 
+Sandpoint/Sagle, Bonner County

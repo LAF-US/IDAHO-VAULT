@@ -1,4 +1,5 @@
 ---
+title: "He vandalized personal property and tried to run people..."
 date: 2023-11-03
 time: 00:10:18
 tweet_id: "1720231894368039112"

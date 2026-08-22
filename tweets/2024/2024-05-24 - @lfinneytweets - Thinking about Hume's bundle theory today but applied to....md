@@ -1,4 +1,5 @@
 ---
+title: "Thinking about Hume's bundle theory today but applied to..."
 date: 2024-05-24
 time: 18:03:34
 tweet_id: "1794066724897042916"

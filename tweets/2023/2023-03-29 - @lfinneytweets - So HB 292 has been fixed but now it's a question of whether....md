@@ -1,4 +1,5 @@
 ---
+title: "So HB 292 has been fixed but now it's a question of whether..."
 date: 2023-03-29
 time: 22:43:33
 tweet_id: "1641209508113313792"
