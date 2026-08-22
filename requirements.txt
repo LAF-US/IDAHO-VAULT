@@ -48,7 +48,7 @@ pycparser==3.0 ; implementation_name != 'PyPy'
     # via cffi
 pygit2==1.20.0
     # via idaho-vault
-pygments==2.20.0
+pygments==2.21.0
     # via
     #   pytest
     #   rich
