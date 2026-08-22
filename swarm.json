@@ -711,7 +711,6 @@
       "obsidian-day-planner",
       "dataview",
       "obsidian-tasks-plugin",
-      "calendar",
       "obsidian-folder-index",
       "obsidian-icon-folder",
       "oz-image-plugin",
@@ -730,7 +729,8 @@
       "quickadd",
       "obsidian-tidy-footnotes",
       "time-ruler",
-      "translate"
+      "translate",
+      "calendarium"
     ],
     "enabled_core_plugins": [
       "file-explorer",
@@ -795,12 +795,6 @@
         "name": "Breadcrumbs",
         "version": "4.4.4",
         "path": ".obsidian/plugins/breadcrumbs/manifest.json"
-      },
-      {
-        "id": "calendar",
-        "name": "Calendar",
-        "version": "1.5.10",
-        "path": ".obsidian/plugins/calendar/manifest.json"
       },
       {
         "id": "calendarium",
@@ -1222,7 +1216,6 @@
       "ai-templater",
       "beautiful-contact-cards",
       "bmo-chatbot",
-      "calendarium",
       "cmdr",
       "dataview-autocompletion",
       "dataview-properties",

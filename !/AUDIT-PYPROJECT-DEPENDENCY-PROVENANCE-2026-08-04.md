@@ -25,7 +25,7 @@ carrying this file. Logan's ruling was **evidence only, restore nothing**.
 ## 5W Summary
 
 | | |
-|---|---|
+| --- | --- |
 | **Who** | Measured by Claude Code session `015oRnkWnNkTL7R2umjen42b`. Two errors in the measurement were caught by reviewers (Copilot, Qodo) and are recorded below rather than quietly fixed. |
 | **What** | Every section removed from `pyproject.toml`, classified by what actually depends on it: the `.github/` automation, the `src/idaho_vault/` scaffold, or nothing but a self-asserting artifact. |
 | **When** | 2026-08-04, against `main` at `5a1b7fbd`. |
@@ -36,7 +36,7 @@ carrying this file. Logan's ruling was **evidence only, restore nothing**.
 ## Finding A — Load-bearing for the `.github/` automation
 
 | Item | Evidence |
-|---|---|
+| --- | --- |
 | `pytest`, `coverage` | `uv sync` on the stub resolves 2 packages and installs `packaging`; pytest is absent, so `test` and `coverage` cannot run |
 | `pygit2` | imported by `.github/scripts/sync_obsidian_plugin_registry.py` |
 | `jupytext` | **not imported** — `.github/scripts/jupytext_sync_paired.py` invokes `jupytext --sync` via `subprocess`; `check-notebooks-paired.yml` runs that script and `tests/test_helper_scripts.py` covers it |

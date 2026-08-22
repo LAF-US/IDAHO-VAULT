@@ -1,3 +1,6 @@
+---
+title: "Dark Souls III Opening Notes"
+---
 Starting video analysis...
 Submitting video analysis task...
 Task submitted (ID: video-analysis-c7e40bbd-9628-4345-af0f-56aada8ba141)

@@ -1,6 +1,7 @@
 ---
+title: "GitHub Agent Setup — Branch Merge Support"
 type: conversation-termination-summary
-conversation: TASK: GitHub Agent Setup — Branch Merge Support
+conversation: "TASK: GitHub Agent Setup — Branch Merge Support"
 date: 2026-03-22
 branch: claude/github-agent-setup-1N07i
 status: ready-for-review
