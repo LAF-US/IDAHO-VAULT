@@ -12,11 +12,21 @@ dependencies = [
 [dependency-groups]
 dev = [
   "pytest>=9.1.1",
+  "pytest-codspeed>=5.0.3",
 ]
 
 
 [project.urls]
 Repository = "https://github.com/LAF-US/IDAHO-VAULT"
+
+[tool.pytest.ini_options]
+# Root-level test modules use two prefixes: plain `test_*.py` (e.g.
+# test_doctrinal_flatten.py) and the ten `tests-test_*.py` files -- neither
+# collectible by pytest's own default (`test_*.py`/`*_test.py`) glob for the
+# second form. conftest.py's pytest_ignore_collect hook allows both at
+# collection time; this makes bare `pytest` (no explicit file args) actually
+# discover both instead of silently finding zero tests.
+python_files = ["test_*.py", "tests-test_*.py"]
 
 [build-system]
 requires = ["setuptools>=61"]
