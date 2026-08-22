@@ -1,4 +1,5 @@
 ---
+title: "House State Affairs committee moves to hold a resolution..."
 date: 2020-01-29
 time: 16:41:07
 tweet_id: "1222560314262032384"

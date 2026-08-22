@@ -1,4 +1,5 @@
 ---
+title: "RT @jackdolanLAT LA Times Today California cops and..."
 date: 2024-02-02
 time: 01:39:50
 tweet_id: "1753231722832134511"
@@ -15,6 +16,6 @@ related:
   - lfinneytweets
 ---
 
-RT @jackdolanLAT: LA Times Today: California cops and firefighters are taking their pensions to Idaho’s ‘Little Orange County’ https://t.co…
+RT @jackdolanLAT: LA Times Today: California cops and firefighters are taking their pensions to Idaho’s ‘Little Orange County’ <https://t.co…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1753231722832134511)

@@ -14,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-Den Hartog: Will this exemption apply to existing data centers (not newly constructed) when they purchase new server equipment? 
+Den Hartog: Will this exemption apply to existing data centers (not newly constructed) when they purchase new server equipment?
 Rice: No, it’s meant as an incentive for new facilities.
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

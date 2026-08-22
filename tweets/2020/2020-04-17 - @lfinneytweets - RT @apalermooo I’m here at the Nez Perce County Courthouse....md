@@ -1,4 +1,5 @@
 ---
+title: "RT @apalermooo I\u2019m here at the Nez Perce County Courthouse..."
 date: 2020-04-17
 time: 22:37:34
 tweet_id: "1251278657328345089"

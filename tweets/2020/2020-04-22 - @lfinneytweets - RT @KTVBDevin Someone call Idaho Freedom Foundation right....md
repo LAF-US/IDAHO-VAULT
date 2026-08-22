@@ -1,4 +1,5 @@
 ---
+title: "RT @KTVBDevin Someone call Idaho Freedom Foundation right..."
 date: 2020-04-22
 time: 14:56:55
 tweet_id: "1252974671063965709"

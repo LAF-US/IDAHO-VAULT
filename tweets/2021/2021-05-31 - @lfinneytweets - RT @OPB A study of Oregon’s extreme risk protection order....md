@@ -1,4 +1,5 @@
 ---
+title: "RT @OPB A study of Oregon\u2019s extreme risk protection order..."
 date: 2021-05-31
 time: 20:02:22
 tweet_id: "1399456237536743426"

@@ -1,42 +1,56 @@
 #!/usr/bin/env python3
-"""GitHub PR review-state automation helpers.
-
-Modes:
-  - ensure-labels: create/update the labels used by the review lifecycle.
-  - acknowledge-apply: observe a trusted `@copilot apply changes` request and
-    mark the PR as waiting on follow-up commits.
-  - sync-pr: recompute review-derived state after PR updates land, auto-resolve
-    outdated advisory bot threads, and synchronize projection labels.
-  - review-submitted: recompute review-derived state after a submitted review
-    and pause auto-merge only when a non-author changes-requested review creates
-    a real merge block.
-  - promote-ready: compatibility alias for scheduled reconciliation.
-  - reconcile-open-prs: rescan open PR truth and repair drifted review labels.
-    Agent-PR auto-merge arming is RE-ENABLED (2026-06-17, reversing the #521/#527
-    fail-close) now that `main` lands through the GitHub merge queue — the queue +
-    branch protection are the trust gate that arming waited on (ARBORSCAPE IF 12),
-    so arming a low-risk, thread-clear PR means only "merge once the required
-    checks/reviews/threads pass," not "a human approved." Arming is gated by the
-    conservative eligibility (risk/low + grace + no blocking threads) AND a
-    protected-path guard; Dependabot keeps its own verified lane.
-  - enable-auto-merge: arms an eligible, non-protected-path PR for the merge queue.
-    See AGENT-AUTOMERGE-REENABLED-2026-06-17.md for the recorded reversal.
-  - verify-claim: compare an agent completion-claim comment against the PR's
-    current `mergeable`, `mergeStateStatus`, draft state, and check rollup.
-    Post a divergence comment if the claim disagrees with the institutional
-    state. Addresses IF 7 from !/ARBORSCAPE-PR-EXPANSION-2026-05-22.md.
-"""
+"""GitHub PR review-state automation helpers."""
+# Modes:
+# - ensure-labels: create/update the labels used by the review lifecycle.
+# - acknowledge-apply: observe a trusted `@copilot apply changes` request and
+# mark the PR as waiting on follow-up commits.
+# - sync-pr: recompute review-derived state after PR updates land, auto-resolve
+# outdated advisory bot threads, and synchronize projection labels.
+# - review-submitted: recompute review-derived state after a submitted review
+# and pause auto-merge only when a non-author changes-requested review creates
+# a real merge block.
+# - promote-ready: compatibility alias for scheduled reconciliation.
+# - reconcile-open-prs: rescan open PR truth and repair drifted review labels.
+# Agent-PR auto-merge arming is RE-ENABLED (2026-06-17, reversing the #521/#527
+# fail-close) now that `main` lands through the GitHub merge queue — the queue +
+# branch protection are the trust gate that arming waited on (ARBORSCAPE IF 12),
+# so arming a low-risk, thread-clear PR means only "merge once the required
+# checks/reviews/threads pass," not "a human approved." Arming is gated by the
+# conservative eligibility (risk/low + grace + no blocking threads). Protected paths
+# are no longer vetoed here — the CODEOWNERS hard gate enforces that. Dependabot keeps
+# its own verified lane.
+# - enable-auto-merge: arms an eligible PR for the merge queue.
+# See AGENT-AUTOMERGE-REENABLED-2026-06-17.md for the recorded reversal.
+# - verify-claim: compare an agent completion-claim comment against the PR's
+# current `mergeable`, `mergeStateStatus`, draft state, and check rollup.
+# Post a divergence comment if the claim disagrees with the institutional
+# state. Addresses IF 7 from !/ARBORSCAPE-PR-EXPANSION-2026-05-22.md.
 
 from __future__ import annotations
 
 import argparse
-import fnmatch
 import json
 import os
 import re
-import subprocess
 import sys
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timezone
+
+from pr_threads import (  # shared thread-analysis vocabulary (#600 §5)
+    _count_committable_suggestion_threads,
+    _thread_authors,
+    _thread_has_attested_look,
+    _thread_is_bot_only,
+    _thread_resolution_disposition,
+    _thread_resolved_by,
+)
+
+# Note: `_author_is_bot` and `_thread_has_committable_suggestion` also live in
+# pr_threads but are NOT imported here — the engine reaches them only transitively
+# (through `_thread_resolution_disposition`), so the engine's surface stays honest
+# to what it uses. Their unit tests reference them from pr_threads directly.
+
+import gh_cli
+from pr_github import _fetch_pr, _graphql, _viewer_login
 
 
 APPLY_RE = re.compile(r"@copilot\b[\s\S]*?\bapply changes\b", re.IGNORECASE)
@@ -46,7 +60,8 @@ DEFAULT_GRACE_MINUTES = 30
 # queue now IS that gate — a PR only merges once its required checks, reviews, and
 # thread-resolution pass, regardless of who armed it (ARBORSCAPE IF 12 satisfied).
 # Arming stays conservative: eligibility below requires risk/low + grace + no blocking
-# threads, and callers additionally refuse to arm protected/governance paths. This flag
+# threads. Protected-path gating moved to the CODEOWNERS hard gate (a merge can't land on
+# an owned path without owner review), so the engine no longer vetoes it. This flag
 # is the kill-switch — set False to fail-close arming again.
 AGENT_AUTO_MERGE_ENABLED = True
 
@@ -84,36 +99,64 @@ DEFAULT_REVIEW_PENDING_LABEL = "review/pending"
 DEFAULT_AUTO_MERGE_LABEL = "merge/auto"
 DEFAULT_SUGGESTIONS_LABEL = "review/suggestions-ready"
 RISK_LOW_LABEL = "risk/low"
+RISK_MED_LABEL = "risk/med"
 RISK_HIGH_LABEL = "risk/high"
+RISK_NOPE_LABEL = "risk/nope"
+# The `—/—` cell's own label (— is U+2014). Stamped when NEITHER axis fires, and
+# only then. It is the classifier saying "I looked and nothing fired" — which is a
+# different statement from a PR that carries no risk label because nothing has
+# classified it yet.
+RISK_CLEAR_LABEL = "risk/—"
+
+# The risk vocabulary (flat schema, norm set by Logan) is four flat FLAG labels across two
+# independent axes — each stamped ONLY when its axis fires — plus one clear label for when
+# neither does. There are no prefixes: the `filetype:risk/` and `depth:risk/` forms were a
+# prior agent's transitionary scaffolding, they stay retired, and only the bare `risk/…`
+# form is live.
+#   FILETYPE axis: risk/low (Machine Doc / inert assets) | risk/med (Computer Code — executes)
+#   FILEDEPTH axis: risk/high (path inside the "!/" tree) | risk/nope (path in the inner
+#                   "!/!/__!__/!/" region and below — never auto-merges)
+# A PR carries AT MOST one filetype value AND at most one filedepth value. `—` on an
+# axis is the absence of that axis's label; when NEITHER fires the PR carries
+# `risk/—`, the ninth cell's own label. A PR with no risk/* label at all is NOT
+# clear — it is unclassified, and it HOLDS.
+# Flags are TRANSIENT ROUTING STATE, not a durable record: the classifier restamps them on
+# synchronize (labels mirror the current diff), and when the lane's review completes the
+# engine clears the fired flag (removes it) and the PR flows. risk/nope is never
+# auto-cleared — it always requires a human merge.
+FILETYPE_RISK_LABELS = {"low": RISK_LOW_LABEL, "med": RISK_MED_LABEL}
+FILEDEPTH_RISK_LABELS = {"high": RISK_HIGH_LABEL, "nope": RISK_NOPE_LABEL}
+RISK_FLAG_LABELS = frozenset(
+    {RISK_LOW_LABEL, RISK_MED_LABEL, RISK_HIGH_LABEL, RISK_NOPE_LABEL}
+)
+
+# The engine owns its whole namespace, not just the vocabulary it currently stamps.
+# `restamp_risk_pair` removes any label matching this that the classified lane did not ask
+# for, so a PR still wearing a superseded form (the retired `filetype:risk/*` and
+# `depth:risk/*` prefixed scheme #854 replaced) converges the next time it is classified —
+# no migration
+# script, and nothing to run by hand. This matches on the namespace instead of enumerating
+# the retired strings: an enumeration would need editing every time the vocabulary moves,
+# and that editing is where the nine-string scheme #854 had to flatten came from.
+RISK_NAMESPACE_PATTERN = re.compile(r"^(?:[a-z]+:)?risk/")
 AUTO_MERGE_AUTHZ_FRAGMENTS = (
     "Pull request User is not authorized for this protected branch "
     "(enablePullRequestAutoMerge)",
     "Resource not accessible by integration (enablePullRequestAutoMerge)",
 )
 
-# Paths that must NOT be auto-armed: governance, agent scaffolding, and the CI
-# surfaces that gate everything else. A PR touching any of these waits for human
-# review. Broader than auto-merge-rhythm.yml's sync-bot list on purpose — the
-# whole of `.github/` is CODE-AUTHORITY-reviewed, so the entire automation surface
-# is protected, not just workflows/scripts. fnmatch globs: "*" matches within a
-# path segment AND across "/", so ".github/*" covers nested files.
-PROTECTED_PATH_PATTERNS: tuple[str, ...] = (
-    ".github/*",
-    ".codex/*",
-    ".openclaw/*",
-    "AGENTS.md",
-    "CONSTITUTION.md",
-    "DECISIONS.md",
-    "VAULT-CONVENTIONS.md",
-    "swarm.json",
-    "SPEC-CONNECTOR-HUB-2026-04-09.md",
-    "!/*",
-)
+# Protected-path gating is no longer done here. A hand-maintained glob list was one of
+# three drifting, fail-open re-implementations of "these paths need a human".
+# The single source of that truth is now CODEOWNERS, enforced as a HARD GATE by
+# the branch ruleset (`require_code_owner_review: true`, set by Logan): GitHub blocks the
+# merge of any owned-path PR until the owner reviews — un-bypassable, regardless of whether
+# this engine armed it. So the engine no longer second-guesses protection; arming a
+# protected PR is harmless because the gate, not a soft list, decides what actually merges.
 
 LABEL_SPECS: dict[str, tuple[str, str]] = {
     DEFAULT_AUTO_MERGE_LABEL: (
         "0E8A16",
-        "Legacy agent auto-merge marker; removed during reconciliation.",
+        "Engine state: auto-merge armed on this PR; the engine removes it on disarm (reconciliation).",
     ),
     DEFAULT_REVIEW_REQUIRED_LABEL: (
         "D93F0B",
@@ -135,35 +178,47 @@ LABEL_SPECS: dict[str, tuple[str, str]] = {
         "1D76DB",
         "Has bot review threads with committable ```suggestion blocks ready to apply.",
     ),
+    # Flat 4-value risk schema — two axes, each label stamped only when its axis fires.
     RISK_LOW_LABEL: (
         "C2E0C6",
-        "Risk tier: low (only low-risk paths changed).",
+        "Filetype: low (machine documentation / inert assets).",
+    ),
+    RISK_MED_LABEL: (
+        "F9D0C4",
+        "Filetype: med (computer code — executes).",
     ),
     RISK_HIGH_LABEL: (
         "E99695",
-        "Risk tier: high (at least one high-risk path changed).",
+        "Filedepth: high (path inside the \"!/\" tree).",
+    ),
+    RISK_NOPE_LABEL: (
+        "B60205",
+        "Filedepth: nope (inner \"!/!/__!__/!/\" region and below; never auto-merges).",
+    ),
+    # Not an axis value — the ninth cell. `ensure_labels` creates only what this dict
+    # names, and `restamp_risk_pair` stamps this one, so leaving it out would have the
+    # engine adding a label the repo was never told to create.
+    RISK_CLEAR_LABEL: (
+        "D4E3F0",
+        "Classified clear: the classifier ran and neither axis fired.",
     ),
 }
 
-
-def _run(cmd: list[str], check: bool = True) -> subprocess.CompletedProcess[str]:
-    result = subprocess.run(cmd, capture_output=True, text=True)
-    if check and result.returncode != 0:
-        raise RuntimeError(
-            f"Command failed ({result.returncode}): {' '.join(cmd)}\n"
-            f"stdout:\n{result.stdout}\n"
-            f"stderr:\n{result.stderr}"
-        )
-    return result
+# Labels created ad hoc and later superseded by canon: `ensure_labels` deletes
+# these on sight, so a retired name cannot be reached for again. Deleting a repo
+# label also strips it from any PR still wearing it — that is the point.
+# `auto-merge` was the engage gate's undeclared second name for the one arming
+# signal (the drift #763 kills); DEFAULT_AUTO_MERGE_LABEL is the canon. This
+# runs from the default branch's checkout, so the deletion cannot fire before
+# the gate that stops reading the retired name has itself landed on main.
+RETIRED_LABELS: tuple[str, ...] = ("auto-merge",)
 
 
 def _auto_merge_state(owner: str, repo: str, pr_number: int) -> tuple[bool, bool]:
-    """Return ``(auto_merge_enabled, in_merge_queue)`` for the PR.
-
-    Fail-open to ``(False, False)``: if the state can't be read, the caller
-    behaves exactly as it did before this guard existed (a plain ``--auto``
-    enable) — never worse than the old code, and a transient read error never
-    evicts a queued PR."""
+    """Return ``(auto_merge_enabled, in_merge_queue)`` for the PR."""
+    # Fail-open to ``(False, False)``: if the state can't be read, the caller behaves
+    # exactly as it did before this guard existed (a plain ``--auto`` enable) — never
+    # worse than the old code, and a transient read error never evicts a queued PR.
     try:
         data = _graphql(
             """
@@ -191,91 +246,183 @@ def _auto_merge_state(owner: str, repo: str, pr_number: int) -> tuple[bool, bool
     return (enabled, queued)
 
 
-def _arm_auto_merge(owner: str, repo: str, pr_number: int) -> tuple[bool, str | None]:
-    """Enable merge-queue auto-merge for the PR and ensure it actually enqueues.
-
-    Returns ``(armed, error)``. ``armed`` is True when auto-merge is on and, for a
-    ready PR, the enqueue transition has been (re-)fired."""
-    # On a merge-queue repo, `gh pr merge --auto` only calls
-    # enablePullRequestAutoMerge. Re-enabling it on a PR that ALREADY has
-    # auto-merge is an idempotent no-op ("! The merge strategy for main is set by
-    # the merge queue", exit 0) that never re-fires the ready-transition which
-    # actually enqueues the PR — so a PR armed while it was blocked never enters
-    # the queue when it later goes green (verified on #508). If auto-merge is on
-    # but the PR is NOT yet queued, toggle off->on to re-fire the transition. If
-    # it is already queued, leave it alone — disabling would evict it and restart
-    # its queue run.
-    enabled, queued = _auto_merge_state(owner, repo, pr_number)
-    if enabled and queued:
-        return True, None
-    if enabled and not queued:
-        # Checked here: if the disable leg fails the PR stays armed and the
-        # `--auto` below is the idempotent no-op again — report the failure
-        # rather than falsely claim a successful re-arm.
-        try:
-            _disable_auto_merge(pr_number, check=True)
-        except RuntimeError as exc:
-            return False, f"failed to disable existing auto-merge before re-arming: {exc}"
+def _merge_state_status(owner: str, repo: str, pr_number: int) -> str:
+    """Read the PR's current ``mergeStateStatus``."""
+    # One of ``CLEAN``/``UNSTABLE``/``BEHIND``/``BLOCKED``/``DIRTY``/``UNKNOWN``/... .
+    # Fail-open to ``"UNKNOWN"`` on a read failure — the caller's BEHIND-only branch-update
+    # path then simply does not fire this cycle, exactly as if the PR were not yet BEHIND;
+    # a later sync-pr/reconcile-open-prs pass re-reads it.
     try:
-        _run(
-            [
-                "gh",
-                "pr",
-                "merge",
-                str(pr_number),
-                "--squash",
-                "--delete-branch",
-                "--auto",
-            ]
+        data = _graphql(
+            """
+            query($owner:String!, $name:String!, $number:Int!) {
+              repository(owner: $owner, name: $name) {
+                pullRequest(number: $number) { mergeStateStatus }
+              }
+            }
+            """,
+            owner=owner,
+            name=repo,
+            number=pr_number,
         )
+    except (RuntimeError, ValueError):
+        return "UNKNOWN"
+    pull = (data.get("repository") or {}).get("pullRequest") or {}
+    return pull.get("mergeStateStatus") or "UNKNOWN"
+
+
+def _pr_node_id(owner: str, repo: str, pr_number: int) -> str | None:
+    """Read the PR's GraphQL node id (required by enqueuePullRequest)."""
+    # None if it can't be read (fail-open: the caller then skips the explicit
+    # enqueue and relies on armed auto-merge).
+    try:
+        data = _graphql(
+            """
+            query($owner:String!, $name:String!, $number:Int!) {
+              repository(owner: $owner, name: $name) {
+                pullRequest(number: $number) { id }
+              }
+            }
+            """,
+            owner=owner,
+            name=repo,
+            number=pr_number,
+        )
+    except (RuntimeError, ValueError):
+        return None
+    return ((data.get("repository") or {}).get("pullRequest") or {}).get("id")
+
+
+def _enqueue_pr(node_id: str) -> tuple[bool, str | None]:
+    """Add the PR to the merge queue via the ``enqueuePullRequest`` mutation."""
+    # This is the action that actually puts a PR in the queue, DISTINCT from
+    # ``enablePullRequestAutoMerge`` ("merge when ready"). Best-effort: never raises.
+    #
+    # Returns a tri-state ``(enqueued, error)`` so the caller can tell a benign delay from a
+    # real failure:
+    #
+    # * ``(True, None)``  — enqueued (a merge-queue entry id came back).
+    # * ``(False, None)`` — benign: the PR is not yet queue-ready (required checks still
+    # running, not mergeable, or the base branch has no merge queue). GitHub returns no
+    # entry; the armed auto-merge enqueues it when it goes green. NOT an error.
+    # * ``(False, str)``  — a real failure (auth/permission/API error from the mutation),
+    # worth surfacing because an armed PR that silently never enqueues is the bug this fixes.
+    try:
+        data = _graphql(
+            "mutation($pr:ID!){ enqueuePullRequest(input:{pullRequestId:$pr})"
+            " { mergeQueueEntry { id } } }",
+            pr=node_id,
+        )
+    except (RuntimeError, ValueError) as exc:
+        return (False, str(exc))
+    entry = (((data.get("enqueuePullRequest") or {}).get("mergeQueueEntry")) or {}).get("id")
+    if entry:
+        return (True, None)
+    return (False, None)  # not queue-ready yet — benign; armed auto-merge enqueues it when green
+
+
+def _update_branch(owner: str, repo: str, pr_number: int) -> tuple[bool, str | None]:
+    """Merge the base branch into the PR head via the ``update-branch`` REST endpoint."""
+    # The automated form of the "Update branch" button, and the same call
+    # ``batch-arm-merge-queue.yml`` already uses on a BEHIND PR (that manual bulk sweep's proven
+    # fix; this brings the same recovery to the event-driven engine, which previously just left
+    # a BEHIND PR waiting indefinitely for someone else to push). Best-effort: never raises.
+    #
+    # Returns ``(updated, error)``:
+    #
+    # * ``(True, None)`` — the request succeeded; a merge commit landed on the PR head, CI
+    # re-runs, and a later pass re-reads ``mergeStateStatus`` once it recomputes to CLEAN.
+    # * ``(False, str)`` — the request failed (e.g. a real conflict surfaced as DIRTY by the
+    # time this ran, or a workflows-permission error on a workflow-touching PR — the same
+    # failure mode ``is_wf_perm_failure`` buckets separately in the bash sweep).
+    try:
+        gh_cli.api_pr_update_branch(owner, repo, pr_number)
     except RuntimeError as exc:
-        if not any(fragment in str(exc) for fragment in AUTO_MERGE_AUTHZ_FRAGMENTS):
-            raise
-        return (
-            False,
-            "GitHub Actions is not authorized to enable auto-merge on the protected base branch.",
-        )
-    return True, None
+        return (False, str(exc))
+    return (True, None)
 
 
-def _pr_touches_protected_path(owner: str, repo: str, pr_number: int) -> bool:
-    """True if the PR changes any protected/governance/CI path (so it must NOT be
-    auto-armed). Fail-closed: if the changed-file list can't be fetched, treat the PR
-    as protected so a transient API failure never widens what gets armed."""
-    try:
-        result = _run(
-            [
-                "gh",
-                "api",
-                "--paginate",
-                f"repos/{owner}/{repo}/pulls/{pr_number}/files",
-                "--jq",
-                ".[].filename",
-            ]
+def _arm_auto_merge(owner: str, repo: str, pr_number: int) -> tuple[bool, str | None]:
+    """Arm auto-merge, update the branch if BEHIND, and add the PR to the merge queue."""
+    # Three DISTINCT GitHub actions:
+    #
+    # 1. **enablePullRequestAutoMerge** (`gh pr merge --auto`) — records "merge when ready."
+    # On a merge-queue repo this ALONE does not put the PR in the queue.
+    # 2. **update-branch** (REST) — when the head is BEHIND base, neither arming nor enqueuing
+    # can make the PR CLEAN; merging base in is what lets it recompute. Without this, a
+    # BEHIND PR just sits waiting for an unrelated event to nudge it (previously only
+    # ``batch-arm-merge-queue.yml``'s manual bulk sweep did this).
+    # 3. **enqueuePullRequest** (GraphQL) — the action that actually adds the PR to the merge
+    # queue. This is the half that was missing: arming-only left a ready PR sitting
+    # un-queued (the #508 symptom) because nothing ever called enqueue.
+    #
+    # Returns ``(armed, error)``. ``armed`` is True once auto-merge is on (the floor). Both the
+    # update-branch and enqueue steps are best-effort and folded into ``error`` as an
+    # informational note when they don't succeed outright — neither is treated as arming having
+    # failed, since a not-yet-ready or still-BEHIND PR is expected to need another pass.
+    enabled, queued = _auto_merge_state(owner, repo, pr_number)
+    if queued:
+        # Already in the queue — re-enqueuing would be a no-op (or an unwanted jump); leave it.
+        return (True, None)
+    notes: list[str] = []
+    if _merge_state_status(owner, repo, pr_number) == "BEHIND":
+        # DIRTY (a real conflict) is a different state and never reaches here, so update-branch
+        # is only attempted when it can actually succeed. Checked regardless of `enabled`: a PR
+        # can already be armed and still fall BEHIND later.
+        updated, update_error = _update_branch(owner, repo, pr_number)
+        notes.append(
+            "branch updated (was BEHIND)"
+            if updated
+            else f"branch update (BEHIND) failed: {update_error}"
         )
-    except RuntimeError:
-        return True
-    for path in result.stdout.splitlines():
-        path = path.strip()
-        if not path:
-            continue
-        if any(fnmatch.fnmatch(path, pattern) for pattern in PROTECTED_PATH_PATTERNS):
-            return True
-    return False
+    if not enabled:
+        try:
+            # Norm set 2026-07-06: the merge QUEUE's configured method is the
+            # single merge-method norm. gh syntax requires a method flag, but on a
+            # merge-queue repo the queue overrides it — `--merge` is the one canonical,
+            # inert spelling everywhere (test_workflow_security_invariants enforces it).
+            # NO --delete-branch: gh rejects it outright on merge-queue repos
+            # ("Cannot use `-d` or `--delete-branch` when merge queue enabled"),
+            # which crashed every arm attempt. Head-branch cleanup belongs to the
+            # repo's delete-on-merge behavior / branch-cleanup workflow, not here.
+            gh_cli.pr_merge(pr_number, auto=True)
+        except RuntimeError as exc:
+            if not any(fragment in str(exc) for fragment in AUTO_MERGE_AUTHZ_FRAGMENTS):
+                raise
+            notes.insert(
+                0,
+                "GitHub Actions is not authorized to enable auto-merge "
+                "on the protected base branch.",
+            )
+            return (False, "; ".join(notes))
+    # Arming is only half the job — explicitly add it to the merge queue now.
+    node_id = _pr_node_id(owner, repo, pr_number)
+    if node_id:
+        enqueued, enqueue_error = _enqueue_pr(node_id)
+        if not enqueued and enqueue_error:
+            # Armed, but the explicit enqueue hit a REAL error (auth/API) — distinct from the
+            # benign "not queue-ready yet" case (which returns no error and is left for the
+            # armed auto-merge to enqueue when green). Surface it so the "armed but never
+            # queued" failure this PR fixes can't recur silently. Still armed=True.
+            notes.append(f"enqueue was rejected: {enqueue_error}")
+    # node_id None (fail-open) or benign not-ready: armed; auto-merge enqueues it when green.
+    return (True, "; ".join(notes)) if notes else (True, None)
 
 
 def _maybe_arm_auto_merge(
     owner: str, repo: str, pr_number: int, state: dict[str, object]
 ) -> dict[str, object]:
-    """Guarded arm: enable merge-queue auto-merge for a PR ONLY when it is eligible
-    (risk/low + grace + no blocking threads, per evaluate_review_state) AND touches no
-    protected path. Returns a small report; never raises for the ordinary not-eligible,
-    protected-path, or not-authorized cases. The merge queue + branch protection remain
-    the actual merge gate — this only presses the button."""
+    """Arm merge-queue auto-merge for a PR only when it is eligible."""
+    # Eligibility is evaluate_review_state's alone, and it has two shapes under the flat
+    # schema: a classified `—/—` lane past grace with no blocking threads, or a fired
+    # non-`nope` flag whose review lane has completed (APPROVED + threads clear), also past
+    # grace. `nope` never qualifies. Read the predicate there, not this comment.
+    # Returns a small report; never raises for the ordinary not-eligible or not-authorized
+    # cases. Protected paths are NOT vetoed here — the CODEOWNERS hard gate
+    # (require_code_owner_review) blocks their merge regardless of arming; the merge queue +
+    # branch protection are the actual merge gate, and this only presses the button.
     if not bool(state.get("eligible_for_auto_merge")):
         return {"armed": False, "reason": "not eligible for auto-merge"}
-    if _pr_touches_protected_path(owner, repo, pr_number):
-        return {"armed": False, "reason": "protected/governance path — awaits human review"}
     armed, arm_error = _arm_auto_merge(owner, repo, pr_number)
     if armed:
         # Tag the PR `merge/auto` so the disable path (apply_review_state_projection,
@@ -286,7 +433,7 @@ def _maybe_arm_auto_merge(
         # so disable the auto-merge we just enabled and report failure rather than leave
         # an un-trackable armed PR.
         try:
-            _run(["gh", "pr", "edit", str(pr_number), "--add-label", DEFAULT_AUTO_MERGE_LABEL])
+            gh_cli.pr_edit(pr_number, add_label=DEFAULT_AUTO_MERGE_LABEL)
         except RuntimeError as exc:
             _disable_auto_merge(pr_number)
             return {
@@ -296,70 +443,9 @@ def _maybe_arm_auto_merge(
                     f"disabled auto-merge to avoid an un-trackable armed PR: {exc}"
                 ),
             }
-    return {"armed": armed, "reason": None if armed else arm_error}
-
-
-def _graphql(query: str, **variables: object) -> dict:
-    cmd = ["gh", "api", "graphql", "-f", f"query={query}"]
-    for key, value in variables.items():
-        if isinstance(value, int):
-            cmd.extend(["-F", f"{key}={value}"])
-        else:
-            cmd.extend(["-f", f"{key}={value}"])
-    result = _run(cmd)
-    payload = json.loads(result.stdout or "{}")
-    errors = payload.get("errors")
-    if errors:
-        raise RuntimeError(f"GraphQL error(s): {json.dumps(errors, indent=2)}")
-    return payload.get("data", {})
-
-
-def _fetch_pr(owner: str, name: str, number: int) -> dict:
-    query = """
-    query($owner:String!, $name:String!, $number:Int!) {
-      repository(owner: $owner, name: $name) {
-        pullRequest(number: $number) {
-          number
-          url
-          body
-          state
-          createdAt
-          updatedAt
-          isDraft
-          reviewDecision
-          autoMergeRequest {
-            enabledAt
-          }
-          labels(first: 50) {
-            nodes { name }
-          }
-          reviewThreads(first: 100) {
-            pageInfo { hasNextPage }
-            nodes {
-              id
-              isResolved
-              isOutdated
-              resolvedBy { login }
-              comments(first: 100) {
-                pageInfo { hasNextPage }
-                nodes {
-                  author { login __typename }
-                  body
-                  url
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    """
-    data = _graphql(query, owner=owner, name=name, number=number)
-    repo = data.get("repository") or {}
-    pr = repo.get("pullRequest")
-    if not pr:
-        raise RuntimeError(f"Pull request #{number} was not found in {owner}/{name}.")
-    return pr
+    # Pass arm_error through even when armed: a clean arm reports None, but an armed PR whose
+    # explicit enqueue was rejected carries that note so "armed but never queued" isn't silent.
+    return {"armed": armed, "reason": arm_error}
 
 
 def _resolve_thread(thread_id: str) -> None:
@@ -376,166 +462,27 @@ def _resolve_thread(thread_id: str) -> None:
 # Look-then-resolve design (#399): nothing is dismissed or resolved until a
 # looker (agent or human) has looked. A looker records the look as an in-thread
 # attestation comment of this canonical shape:
-#   <!-- looked: by=<login>; at=<iso8601>; decision=<addressed|advisory|wontfix>; v=1 -->
+#   <!-- looked: by=<login>; at=<iso8601>; v=1 -->
 # Detection requires the structured marker AND that `by` matches the comment's
 # own author, so a pasted or forged marker attributed to someone else cannot
 # fake a look. This layer RESOLVES NOTHING.
 LOOK_ATTESTATION_MARKER = "<!-- looked:"
-LOOK_ATTESTATION_RE = re.compile(
-    r"<!--\s*looked:\s*by=(?P<by>[A-Za-z0-9][A-Za-z0-9-]*(?:\[bot\])?)\s*;[^>]*-->"
-)
-
-# A GitHub committable suggestion is a fenced ```suggestion block in a review
-# comment body. It is the ONE reviewer finding a machine can apply deterministically
-# (via the applyReviewSuggestion mutation); everything else is prose that needs a
-# real fix. This detector is the engine's "can this be auto-applied?" signal.
-SUGGESTION_BLOCK_RE = re.compile(r"(?m)^\s*`{3,}\s*suggestion\b")
-
-
-def _thread_has_attested_look(thread: dict) -> bool:
-    """True if a looker has recorded a self-attested look in the thread.
-
-    Requires a structured attestation marker whose `by=` equals the comment's
-    own author, so incidental or forged marker text cannot spoof a look.
-    """
-    for comment in (thread.get("comments") or {}).get("nodes") or []:
-        login = ((comment.get("author") or {}).get("login") or "").strip()
-        match = LOOK_ATTESTATION_RE.search(comment.get("body") or "")
-        if match and login and match.group("by") == login:
-            return True
-    return False
-
-
-# Layer B (#399): an agent's resolution is legitimate only if it carries a
-# recorded attestation. These are the pure building blocks of that act — the
-# bot-only eligibility predicate and the attestation-body builder. They WRITE
-# NOTHING and are not invoked anywhere; the resolve-capable wiring lands later.
-#
-# Standing model: any direct-write agent may attest-and-resolve a thread whose
-# every author is a bot (advisory OR signal — no denylist), never a human-authored
-# thread, and never on a CHANGES_REQUESTED review. The PR-level CHANGES_REQUESTED
-# guard belongs with the future resolve path; bot-only eligibility lives here.
-ATTESTATION_DECISIONS: frozenset[str] = frozenset({"addressed", "advisory", "wontfix"})
-
-
-def _author_is_bot(author: dict) -> bool:
-    """True when a review-comment author is a GitHub App / bot actor, not a human."""
-    if (author.get("__typename") or "") == "Bot":
-        return True
-    return (author.get("login") or "").endswith("[bot]")
-
-
-def _thread_is_bot_only(thread: dict) -> bool:
-    """True when every author of the thread is a bot (>=1 author, no human).
-
-    Eligibility for agent attest-and-resolve under the standing model: bot-authored
-    threads only. A single human participant — or no participants — is ineligible.
-    """
-    comments = (thread.get("comments") or {}).get("nodes") or []
-    authors = [(comment.get("author") or {}) for comment in comments]
-    if not authors:
-        return False
-    return all(_author_is_bot(author) for author in authors)
-
-
-def _thread_resolved_by(thread: dict) -> str:
-    """Login of the actor who resolved the thread, or '' if unresolved/unknown.
-
-    GitHub exposes `PullRequestReviewThread.resolvedBy`, so a backfill can tell whether
-    *this engine's identity* resolved a thread — and never witness another actor's resolve.
-    """
-    actor = thread.get("resolvedBy") or {}
-    return (actor.get("login") or "").strip()
-
-
-def _thread_has_committable_suggestion(thread: dict) -> bool:
-    """True if any comment in the thread carries a GitHub ```suggestion block.
-
-    These are the only reviewer findings applyable deterministically — GitHub commits
-    the suggested diff directly, no generative interpretation. Everything else is prose.
-    """
-    for comment in (thread.get("comments") or {}).get("nodes") or []:
-        if SUGGESTION_BLOCK_RE.search(comment.get("body") or ""):
-            return True
-    return False
-
-
-# Resolution disposition (#399 engine): route ONE unresolved thread to *how it gets
-# resolved* — never "dispose of a bot thread." Reviewer threads are caught errors; the
-# gate exists to make agents fix them before main, so a bare attest-and-resolve of a
-# substantive bot finding is the rubber-stamp the gate exists to prevent.
-#   - needs-human        : a human authored it, OR bot-only proof is incomplete (a human
-#                          may lie beyond a truncated comment page) — judgment required.
-#   - looked             : a sealed attestation is already present (recoverable).
-#   - outdated-resolvable: bot-only and GitHub marks it outdated (referenced lines moved)
-#                          — a genuine look may attest-and-resolve it as stale.
-#   - apply-suggestion   : carries a committable ```suggestion — apply deterministically.
-#   - needs-fix          : bot-only substantive finding, no mechanical fix — the authoring
-#                          agent must fix it for real (dispatch), never stamp it closed.
-def _thread_resolution_disposition(thread: dict) -> str:
-    """Route one unresolved thread to its deterministic resolution disposition. Pure."""
-    page_info = (thread.get("comments") or {}).get("pageInfo")
-    page_complete = isinstance(page_info, dict) and page_info.get("hasNextPage") is False
-    if not _thread_is_bot_only(thread):
-        return "needs-human"
-    if not page_complete:
-        return "needs-human"  # bot-only unprovable: a human could lie beyond the page
-    if _thread_has_attested_look(thread):
-        return "looked"
-    if thread.get("isOutdated"):
-        return "outdated-resolvable"  # referenced lines moved; can't apply a suggestion
-    if _thread_has_committable_suggestion(thread):
-        return "apply-suggestion"
-    return "needs-fix"
-
-
-# Dispositions a bare attest-and-resolve apply pass may clear WITHOUT a fix:
-# genuinely stale (outdated) or already-attested. needs-fix and apply-suggestion are
-# NOT here — they require a real fix / an applied suggestion, not a bare resolve.
-BARE_RESOLVABLE_DISPOSITIONS: frozenset[str] = frozenset({"outdated-resolvable", "looked"})
-
-
-def _count_committable_suggestion_threads(pr: dict) -> int:
-    """Number of unresolved threads on `pr` whose disposition is `apply-suggestion` —
-    bot-only, page-complete, current (not outdated), carrying a committable ```suggestion.
-
-    This is the PROPOSE-ONLY signal (Logan's #3 decision, 2026-06-19): the engine surfaces
-    these — GitHub has no public apply-suggestion API, so committing the diff would mean the
-    engine rewriting files on a contributor branch, which we deliberately do NOT do here.
-    It only flags that ready-to-apply suggestions exist; a human or the authoring agent
-    applies them (one-click "Commit suggestion" in the UI), then the witnessed resolve
-    clears the thread on the next event. Surfacing is safe on every path (no write), so it
-    is NOT protected-path-gated."""
-    count = 0
-    for thread in (pr.get("reviewThreads") or {}).get("nodes") or []:
-        if thread.get("isResolved"):
-            continue
-        if _thread_resolution_disposition(thread) == "apply-suggestion":
-            count += 1
-    return count
 
 
 def _build_attestation(
     looker: str,
-    decision: str,
     rationale: str,
     *,
     now: datetime | None = None,
 ) -> str:
-    """Build the canonical in-thread attestation body a looker leaves on resolve.
-
-    Round-trips through `_thread_has_attested_look`: detected only when posted as a
-    comment whose author login equals `looker`. The `looker` must match the detector's
-    `by=` grammar — `[A-Za-z0-9][A-Za-z0-9-]*` with an optional trailing `[bot]` — so
-    both a plain login (`claude-code-bot`, `coderabbitai`) and a GitHub App identity
-    (`github-actions[bot]`) are accepted (the B2 standing/identity decision: a looker
-    may sign under its native CI identity). A malformed login is rejected here rather
-    than producing an attestation the detector can never match.
-    """
-    if decision not in ATTESTATION_DECISIONS:
-        raise ValueError(
-            f"decision {decision!r} is not one of {sorted(ATTESTATION_DECISIONS)}"
-        )
+    """Build the canonical in-thread attestation body a looker leaves on resolve."""
+    # Round-trips through `_thread_has_attested_look`: detected only when posted as a
+    # comment whose author login equals `looker`. The `looker` must match the detector's
+    # `by=` grammar — `[A-Za-z0-9][A-Za-z0-9-]*` with an optional trailing `[bot]` — so
+    # both a plain login (`claude-code-bot`, `coderabbitai`) and a GitHub App identity
+    # (`github-actions[bot]`) are accepted (the B2 standing/identity decision: a looker
+    # may sign under its native CI identity). A malformed login is rejected here rather
+    # than producing an attestation the detector can never match.
     if not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9-]*(?:\[bot\])?", looker):
         raise ValueError(
             f"looker {looker!r} must match the attestation grammar "
@@ -546,34 +493,17 @@ def _build_attestation(
     if moment.tzinfo is None:  # treat a naive datetime as UTC, never as local
         moment = moment.replace(tzinfo=timezone.utc)
     stamp = moment.astimezone(timezone.utc).isoformat().replace("+00:00", "Z")
-    marker = f"<!-- looked: by={looker}; at={stamp}; decision={decision}; v=1 -->"
-    return f"Looked by `{looker}` — **{decision}**. {rationale}\n\n{marker}"
-
-
-def _build_looker_queue(pr: dict) -> list[dict[str, object]]:
-    """Read-only worklist of unresolved threads on one PR for a looker.
-
-    Resolves nothing. Each entry carries what a looker needs to look: the
-    thread id, its comment authors, whether the anchor is outdated, whether a
-    look has already been attested, and a link.
-    """
-    items: list[dict[str, object]] = []
-    for thread in (pr.get("reviewThreads") or {}).get("nodes") or []:
-        if thread.get("isResolved"):
-            continue
-        comments = (thread.get("comments") or {}).get("nodes") or []
-        first = comments[0] if comments else {}
-        items.append(
-            {
-                "pr": pr.get("number"),
-                "thread_id": thread.get("id"),
-                "authors": sorted(_thread_authors(thread)),
-                "is_outdated": bool(thread.get("isOutdated")),
-                "looked": _thread_has_attested_look(thread),
-                "url": first.get("url") or "",
-            }
-        )
-    return items
+    marker = f"<!-- looked: by={looker}; at={stamp}; v=1 -->"
+    # "Resolved" because both callers resolve: attest_and_resolve resolves the
+    # thread, and the backfill path witnesses only a resolve this looker itself
+    # performed (it refuses another identity's).
+    #
+    # The visible line carries the resolution and the stamp, nothing else. No
+    # login, no disposition label. Do not add either back: this is an automated
+    # looker, and naming a human or announcing a judgement claims an intent that
+    # was never exercised. The `looked:` marker above keeps `by=` (machine-read by
+    # _thread_has_attested_look, validated by the grammar guard) and the stamp.
+    return f"Resolved by looker — {rationale}\n\n{marker}"
 
 
 # Layer B2 (#399): the guarded disposition core. `attest_and_resolve` is the ONLY
@@ -598,84 +528,35 @@ def _add_thread_reply(thread_id: str, body: str) -> None:
     }
     """
     _graphql(mutation, threadId=thread_id, body=body)
-
-
-def _viewer_login() -> str:
-    """The login of the authenticated actor the GraphQL calls post as.
-
-    The attestation is *self*-attested: the detector requires the marker's `by=`
-    to equal the comment's own author. Since `_add_thread_reply` posts as this
-    actor, a `looker` that differs from it would yield an undetectable attestation,
-    so the resolve path verifies them against each other before writing.
-    """
-    viewer = _graphql("query { viewer { login } }").get("viewer") or {}
-    login = (viewer.get("login") or "").strip()
-    if not login:
-        raise RuntimeError("Could not determine the authenticated GitHub actor.")
-    return login
-
-
-def _fetch_thread(thread_id: str) -> dict | None:
-    """Fetch one review thread node directly by GraphQL ID.
-
-    A fallback for when an explicit target thread sits beyond `_fetch_pr`'s
-    `reviewThreads(first: 100)` window (a PR with >100 threads), so a valid id is
-    not falsely reported missing. Returns the same node shape as the PR query.
-    """
-    query = """
-    query($id: ID!) {
-      node(id: $id) {
-        ... on PullRequestReviewThread {
-          id
-          isResolved
-          isOutdated
-          comments(first: 100) {
-            pageInfo { hasNextPage }
-            nodes { author { login __typename } body url }
-          }
-        }
-      }
-    }
-    """
-    data = _graphql(query, id=thread_id)
-    node = data.get("node") or {}
-    # A node id that exists but is not a review thread yields {} (the inline fragment
-    # doesn't apply) — treat that as missing, not as a thread with no id.
-    return node if node.get("id") else None
-
-
 def attest_and_resolve(
     pr: dict,
     thread: dict,
     looker: str,
-    decision: str,
     rationale: str,
     *,
     apply: bool = False,
     now: datetime | None = None,
 ) -> dict:
-    """Disposition ONE bot-authored review thread: resolve it, then record the attested look.
-
-    Writes nothing unless `apply=True`. NEVER merges and NEVER enables auto-merge — it
-    resolves that single thread and posts the looker's attestation as a thread reply,
-    nothing else (the cascade-safety contract above).
-
-    Order matters: the resolve runs FIRST, and the "thread cleared" attestation is posted
-    only after it succeeds. The attestation asserts a clearing; if the resolve fails
-    (e.g. `resolveReviewThread` is FORBIDDEN for the integration token — the live #398
-    boundary), a comment claiming the thread was cleared would be a FALSE witness. A true
-    witness that is sometimes absent beats a witness that is sometimes a lie, so we never
-    attest a clearing we did not actually perform.
-
-    Eligibility is reported, never raised. A thread is eligible when the PR's review is
-    not CHANGES_REQUESTED, every author is a bot (`_thread_is_bot_only` — never a human
-    thread, and only when the comment page is complete enough to prove it), and the
-    thread is not already resolved. An eligible thread that already carries an attested
-    look but is still open is resolved WITHOUT re-posting (partial-success recovery); a
-    fully resolved thread is a no-op.
-
-    Returns a result dict: {thread_id, eligible, applied, reason, attestation?}.
-    """
+    """Disposition ONE bot-authored review thread: resolve it, then record the attested look."""
+    # Writes nothing unless `apply=True`. NEVER merges and NEVER enables auto-merge — it
+    # resolves that single thread and posts the looker's attestation as a thread reply,
+    # nothing else (the cascade-safety contract above).
+    #
+    # Order matters: the resolve runs FIRST, and the "thread cleared" attestation is posted
+    # only after it succeeds. The attestation asserts a clearing; if the resolve fails
+    # (e.g. `resolveReviewThread` is FORBIDDEN for the integration token — the live #398
+    # boundary), a comment claiming the thread was cleared would be a FALSE witness. A true
+    # witness that is sometimes absent beats a witness that is sometimes a lie, so we never
+    # attest a clearing we did not actually perform.
+    #
+    # Eligibility is reported, never raised. A thread is eligible when the PR's review is
+    # not CHANGES_REQUESTED, every author is a bot (`_thread_is_bot_only` — never a human
+    # thread, and only when the comment page is complete enough to prove it), and the
+    # thread is not already resolved. An eligible thread that already carries an attested
+    # look but is still open is resolved WITHOUT re-posting (partial-success recovery); a
+    # fully resolved thread is a no-op.
+    #
+    # Returns a result dict: {thread_id, eligible, applied, reason, attestation?}.
     thread_id = thread.get("id")
     result: dict[str, object] = {
         "thread_id": thread_id,
@@ -709,8 +590,8 @@ def attest_and_resolve(
     # (attested AND resolved) is already short-circuited by the isResolved guard above.
     already_looked = _thread_has_attested_look(thread)
 
-    # Build (and thereby validate looker/decision) before any write.
-    body = _build_attestation(looker, decision, rationale, now=now)
+    # Build (and thereby validate the looker) before any write.
+    body = _build_attestation(looker, rationale, now=now)
     result["eligible"] = True
     result["attestation"] = body
     if not apply:
@@ -744,6 +625,12 @@ def attest_and_resolve(
     # post on the recovery path (the attestation is already present from a prior run).
     if not already_looked:
         _add_thread_reply(thread_id, body)
+    # GitHub now says this thread is resolved; say so in the caller's copy too. The
+    # callers below used to re-run `_fetch_pr` after a resolve pass purely to observe
+    # this one boolean flip — a second full graph fetch to learn something already
+    # known here. `evaluate_review_state` reads `isResolved` first and skips the
+    # thread, so the in-memory view and a re-fetched one agree.
+    thread["isResolved"] = True
     result["applied"] = True
     result["reason"] = (
         "existing attested look; thread resolved"
@@ -754,7 +641,6 @@ def attest_and_resolve(
 
 
 def backfill_witness(
-    pr: dict,
     thread: dict,
     looker: str,
     rationale: str,
@@ -762,25 +648,23 @@ def backfill_witness(
     apply: bool = False,
     now: datetime | None = None,
 ) -> dict:
-    """Backfill a missing attestation on a thread WE resolved but never witnessed.
-
-    The unwitnessed-ending repair. A resolve that succeeds while its attestation post
-    does not (the resolve-first ordering's partial failure, or any interrupted run)
-    leaves a thread *resolved with no recorded look* — exactly the blind resolution the
-    engine exists to prevent. This repairs that ONE case and only that case:
-
-      - the thread is already resolved (otherwise use `attest-resolve`/`engage-outdated`);
-      - it carries NO attestation yet (nothing to repair otherwise);
-      - every author is a bot, proven from a complete comment page;
-      - and `resolvedBy` is the looker itself — *we* resolved it.
-
-    It posts the missing attestation and does NOTHING else: it never resolves (already
-    resolved) and never unresolves. The `resolvedBy == looker` gate is the truthfulness
-    line — we never mint a witness for a resolve performed by a human or another actor.
-
-    Writes nothing unless `apply=True`. Returns {thread_id, eligible, applied, reason,
-    attestation?}.
-    """
+    """Backfill a missing attestation on a thread WE resolved but never witnessed."""
+    # The unwitnessed-ending repair. A resolve that succeeds while its attestation post
+    # does not (the resolve-first ordering's partial failure, or any interrupted run)
+    # leaves a thread *resolved with no recorded look* — exactly the blind resolution the
+    # engine exists to prevent. This repairs that ONE case and only that case:
+    #
+    # - the thread is already resolved (otherwise use `engage-outdated`);
+    # - it carries NO attestation yet (nothing to repair otherwise);
+    # - every author is a bot, proven from a complete comment page;
+    # - and `resolvedBy` is the looker itself — *we* resolved it.
+    #
+    # It posts the missing attestation and does NOTHING else: it never resolves (already
+    # resolved) and never unresolves. The `resolvedBy == looker` gate is the truthfulness
+    # line — we never mint a witness for a resolve performed by a human or another actor.
+    #
+    # Writes nothing unless `apply=True`. Returns {thread_id, eligible, applied, reason,
+    # attestation?}.
     thread_id = thread.get("id")
     result: dict[str, object] = {
         "thread_id": thread_id,
@@ -792,7 +676,7 @@ def backfill_witness(
         result["reason"] = "thread has no id"
         return result
     if not thread.get("isResolved"):
-        result["reason"] = "thread is not resolved (nothing to backfill; use attest-resolve)"
+        result["reason"] = "thread is not resolved (nothing to backfill; use engage-outdated)"
         return result
     if _thread_has_attested_look(thread):
         result["reason"] = "thread already carries an attested look"
@@ -812,9 +696,9 @@ def backfill_witness(
         )
         return result
 
-    # Build (and thereby validate looker) before any write. The decision is `advisory`:
-    # the look records that the resolution stands, not that a fix was applied.
-    body = _build_attestation(looker, "advisory", rationale, now=now)
+    # Build (and thereby validate the looker) before any write. The look records
+    # that the resolution stands, not that a fix was applied.
+    body = _build_attestation(looker, rationale, now=now)
     result["eligible"] = True
     result["attestation"] = body
     if not apply:
@@ -836,152 +720,58 @@ def backfill_witness(
     return result
 
 
-# Layer C (#399): the deterministic walk. `_classify_pr_for_looker` is the pure
-# routing core — it reads one PR and sorts it into a lane WITHOUT writing anything.
-# The brownfield (orphaned PRs, agents gone, auto-merge armed under the maintainer
-# identity) is the spec: the looker drains it *with* judgment, never past it.
-#
-# Lanes (by the PR's unresolved review threads):
-#   - clear            : no unresolved threads.
-#   - machine-disposable: every unresolved thread is bot-authored and provable, the
-#                         review is not CHANGES_REQUESTED, and auto-merge is NOT armed
-#                         — safe for the looker to attest-and-resolve (clears threads,
-#                         never merges).
-#   - would-cascade    : as machine-disposable, but auto-merge IS armed — clearing the
-#                         last blocking thread could shove the PR through the barrier;
-#                         hold for a deliberate signal (Layer-C apply must skip these).
-#   - needs-human      : any human-authored thread, a CHANGES_REQUESTED review, or a
-#                         thread whose comment page is truncated (bot-only unprovable).
-# `stale` is an orthogonal abandonment flag (no activity for >= stale_days): a stale PR
-# is never a safe-drain candidate regardless of lane — abandoned work needs a person.
-LOOKER_STALE_DAYS = 14
-
-
-def _classify_pr_for_looker(
-    pr: dict, *, now: datetime | None = None, stale_days: int = LOOKER_STALE_DAYS
-) -> dict:
-    """Sort one PR into a looker lane. Pure and read-only — resolves nothing."""
-    now = now or datetime.now(timezone.utc)
-    review_threads = pr.get("reviewThreads") or {}
-    threads = review_threads.get("nodes") or []
-    # The thread list itself is fetched first: 100. If it is truncated, a blocking
-    # human/unprovable thread may lie beyond the page — the PR is never safe to drain.
-    threads_truncated = bool((review_threads.get("pageInfo") or {}).get("hasNextPage"))
-    unresolved = [t for t in threads if not t.get("isResolved")]
-
-    plan: list[dict[str, object]] = []
-    disposable = looked_open = human = unprovable = 0
-    for thread in unresolved:
-        page_info = (thread.get("comments") or {}).get("pageInfo")
-        # An explicit "complete" page is hasNextPage is False; anything else (truncated
-        # OR unknown/missing) is conservatively incomplete.
-        page_complete = isinstance(page_info, dict) and page_info.get("hasNextPage") is False
-        if not _thread_is_bot_only(thread):
-            # A human on the page we DO have is definitive — truncated or not.
-            disposition = "human"
-            human += 1
-        elif not page_complete:
-            # Bot-only on the visible page, but a human could lie beyond an incomplete
-            # one; bot-only must be proven from the full author list, so: unprovable.
-            disposition = "unprovable"
-            unprovable += 1
-        elif _thread_has_attested_look(thread):
-            disposition = "looked-open"  # attested but unresolved (recoverable)
-            looked_open += 1
-        else:
-            disposition = "bot-disposable"
-            disposable += 1
-        plan.append(
-            {
-                "thread_id": thread.get("id"),
-                "disposition": disposition,
-                "resolution": _thread_resolution_disposition(thread),
-                "authors": sorted(_thread_authors(thread)),
-            }
-        )
-
-    resolution_counts: dict[str, int] = {}
-    for entry in plan:
-        key = str(entry["resolution"])
-        resolution_counts[key] = resolution_counts.get(key, 0) + 1
-
-    review_decision = pr.get("reviewDecision") or ""
-    auto_merge_armed = bool((pr.get("autoMergeRequest") or {}).get("enabledAt"))
-    last_activity = _parse_iso_datetime(pr.get("updatedAt") or pr.get("createdAt"))
-    stale = bool(last_activity and (now - last_activity) >= timedelta(days=stale_days))
-    machine_clearable = disposable + looked_open
-
-    if threads_truncated or review_decision == "CHANGES_REQUESTED" or human or unprovable:
-        lane = "needs-human"
-    elif not unresolved:
-        lane = "clear"
-    elif machine_clearable == len(unresolved):
-        lane = "would-cascade" if auto_merge_armed else "machine-disposable"
-    else:  # pragma: no cover - defensive; every unresolved thread is classified above
-        lane = "needs-human"
-
-    return {
-        "pr": pr.get("number"),
-        "url": pr.get("url"),
-        "lane": lane,
-        "stale": stale,
-        # safe_to_drain is the APPLY-PASS candidate signal: a bare attest-and-resolve
-        # could clear every thread WITHOUT a fix. It requires more than the coarse
-        # machine-disposable lane — every thread must be bare-resolvable (outdated/looked).
-        # A needs-fix or apply-suggestion thread is NOT bare-drainable (needs a real fix /
-        # applied suggestion), so it must not be advertised as drainable. (codex on #529.)
-        "safe_to_drain": (
-            lane == "machine-disposable"
-            and not stale
-            and all(entry["resolution"] in BARE_RESOLVABLE_DISPOSITIONS for entry in plan)
-        ),
-        "auto_merge_armed": auto_merge_armed,
-        "review_decision": review_decision or None,
-        "is_draft": bool(pr.get("isDraft")),
-        "threads_truncated": threads_truncated,
-        "unresolved_threads": len(unresolved),
-        "machine_clearable": machine_clearable,
-        "human_threads": human,
-        "unprovable_threads": unprovable,
-        "resolution_counts": resolution_counts,
-        "threads": plan,
-    }
-
-
 def _ensure_label(name: str, color: str, description: str) -> None:
-    _run(
-        [
-            "gh",
-            "label",
-            "create",
-            name,
-            "--color",
-            color,
-            "--description",
-            description,
-            "--force",
-        ]
-    )
+    gh_cli.label_create(name, color=color, description=description)
 
 
 def ensure_labels() -> None:
+    """Create or update lifecycle labels without aborting callers on a scope gap."""
     for label, (color, description) in LABEL_SPECS.items():
-        _ensure_label(label, color, description)
+        try:
+            _ensure_label(label, color, description)
+        except RuntimeError:
+            print(f"::warning::ensure_labels skipped '{label}' due to a label-management failure", file=sys.stderr)
+    for label in RETIRED_LABELS:
+        try:
+            gh_cli.label_delete(label, check=False)
+        except RuntimeError:
+            print(f"::warning::ensure_labels could not retire '{label}' due to a label-management failure", file=sys.stderr)
+
+
+def _num(value: int) -> str:
+    """Render a PR number as argv text, rejecting non-numbers."""
+    number = int(value)
+    if number <= 0:
+        raise ValueError(f"Not a valid PR number: {value!r}")
+    return str(number)
+
+
+def _slug(owner: str, repo: str) -> str:
+    """Return ``owner/repo``, pinned to the one repository this engine governs."""
+    if owner not in ("LAF-US",) or repo not in ("IDAHO-VAULT",):
+        raise ValueError(f"This engine is scoped to LAF-US/IDAHO-VAULT, got: {owner!r}/{repo!r}")
+    return f"{owner}/{repo}"
 
 
 def _edit_label(pr_number: int, *, add: str | None = None, remove: str | None = None) -> None:
     if add:
-        _run(["gh", "pr", "edit", str(pr_number), "--add-label", add], check=False)
+        gh_cli.pr_edit(pr_number, add_label=add, check=False)
     if remove:
-        _run(["gh", "pr", "edit", str(pr_number), "--remove-label", remove], check=False)
+        gh_cli.pr_edit(pr_number, remove_label=remove, check=False)
 
 
 def _disable_auto_merge(pr_number: int, *, check: bool = False) -> None:
-    _run(["gh", "pr", "merge", str(pr_number), "--disable-auto"], check=check)
+    gh_cli.pr_merge(pr_number, disable_auto=True, check=check)
 
 
 def _comment(pr_number: int, body: str) -> None:
-    _run(["gh", "pr", "comment", str(pr_number), "--body", body])
+    """Post a PR comment, with the body carried as a file rather than an argv element."""
+    # The carrying is gh_cli.pr_comment's job now (_body_file), but the reason it must
+    # happen belongs here, where the bodies are built: these are multi-line attestations
+    # assembled at runtime from CLI input, and argv is the wrong carrier twice over —
+    # ARG_MAX truncates a long one at the exec layer, and caller text in a command line
+    # is caller text in a command line.
+    gh_cli.pr_comment(pr_number, body)
 
 
 def _csv_env(name: str, default: str = "") -> set[str]:
@@ -1001,15 +791,6 @@ def _parse_iso_datetime(raw: str | None) -> datetime | None:
     return parsed
 
 
-def _thread_authors(thread: dict) -> set[str]:
-    authors: set[str] = set()
-    for comment in (thread.get("comments") or {}).get("nodes") or []:
-        author = (comment.get("author") or {}).get("login")
-        if author:
-            authors.add(author)
-    return authors
-
-
 def _parse_body_marker_value(body: str, marker: str) -> str | None:
     lines = body.splitlines()
     needle = marker.strip().lower()
@@ -1024,16 +805,158 @@ def _parse_body_marker_value(body: str, marker: str) -> str | None:
     return None
 
 
-def _risk_tier_for_pr(body: str, labels: set[str]) -> str:
-    # Label is canonical: survives body rewrites by human or agent editors.
-    if RISK_HIGH_LABEL in labels:
+class RiskMarkerInvariantError(ValueError):
+    """A per-axis risk-marker invariant was violated: two values on a single axis."""
+    # A dedicated type (not a bare ValueError) so callers can catch EXACTLY this breach
+    # and never mistake an unrelated ValueError from the evaluate path for an invariant
+    # violation. Subclasses ValueError so existing broad handlers still degrade safely.
+
+
+def _assert_risk_marker_exclusive(labels: set[str]) -> None:
+    """Fail loud on the states the flat schema forbids: two values on one axis, or
+    the clear label alongside a fired one."""
+    # Each axis carries AT MOST one flat label — risk/low XOR risk/med on the filetype
+    # axis, risk/high XOR risk/nope on the filedepth axis. Both values on one axis is a
+    # producer/backfill bug, not a routing decision — raise so it can never silently route
+    # a PR whose axis is self-contradictory. `risk/—` asserts that NOTHING fired, so it
+    # cannot coexist with a fired flag; that pairing is a contradiction, not a tier.
+    if RISK_LOW_LABEL in labels and RISK_MED_LABEL in labels:
+        raise RiskMarkerInvariantError(
+            f"risk-marker invariant violated: the filetype axis carries both "
+            f"{RISK_LOW_LABEL} and {RISK_MED_LABEL}. Each axis carries at most ONE "
+            f"value, never both."
+        )
+    if RISK_HIGH_LABEL in labels and RISK_NOPE_LABEL in labels:
+        raise RiskMarkerInvariantError(
+            f"risk-marker invariant violated: the filedepth axis carries both "
+            f"{RISK_HIGH_LABEL} and {RISK_NOPE_LABEL}. Each axis carries at most ONE "
+            f"value, never both."
+        )
+    fired = labels & RISK_FLAG_LABELS
+    if RISK_CLEAR_LABEL in labels and fired:
+        raise RiskMarkerInvariantError(
+            f"risk-marker invariant violated: {RISK_CLEAR_LABEL} says no axis fired, "
+            f"but {sorted(fired)} is present. The clear label is stamped only when "
+            f"NEITHER axis fires."
+        )
+
+
+def _risk_pair_for_pr(labels: set[str]) -> tuple[str | None, str | None, bool]:
+    """Read the lane ``(filetype_flag, filedepth_flag, classified)`` off the flat labels."""
+    # ``filetype_flag`` is "med"/"low"/None; ``filedepth_flag`` is "nope"/"high"/None.
+    # ``classified`` is True iff a fired flag OR ``RISK_CLEAR_LABEL`` is present. The
+    # clear label is what makes the `—/—` cell readable off the labels alone: it says the
+    # classifier looked and nothing fired. A PR wearing NO risk label has not been
+    # classified at all, and holds.
+    filetype_flag = (
+        "med" if RISK_MED_LABEL in labels
+        else "low" if RISK_LOW_LABEL in labels
+        else None
+    )
+    filedepth_flag = (
+        "nope" if RISK_NOPE_LABEL in labels
+        else "high" if RISK_HIGH_LABEL in labels
+        else None
+    )
+    classified = bool(labels & RISK_FLAG_LABELS) or RISK_CLEAR_LABEL in labels
+    return (filetype_flag, filedepth_flag, classified)
+
+
+def _validate_pair(filetype_flag: str | None, filedepth_flag: str | None) -> None:
+    """Fail loud (RiskMarkerInvariantError) on an out-of-vocabulary axis flag."""
+    # A caller typo (e.g. "medium" for "med") gets a deterministic, domain-specific error
+    # instead of a silent misroute (`_tier_from_pair`) or a raw KeyError (`restamp_risk_pair`).
+    if filetype_flag not in (None, "low", "med"):
+        raise RiskMarkerInvariantError(
+            f"invalid filetype_flag {filetype_flag!r}: expected None, 'low', or 'med'"
+        )
+    if filedepth_flag not in (None, "high", "nope"):
+        raise RiskMarkerInvariantError(
+            f"invalid filedepth_flag {filedepth_flag!r}: expected None, 'high', or 'nope'"
+        )
+
+
+def _tier_from_pair(filetype_flag: str | None, filedepth_flag: str | None, marked: bool) -> str:
+    """Collapse a lane pair to the single-tier vocabulary (nope>high>med>low>clear)."""
+    # An incompletely marked PR is `unknown` and HOLDS. Fails loud on an out-of-vocabulary
+    # flag (e.g. a caller-supplied `classified_lane` typo like "medium") instead of letting it fall
+    # through to `clear` and misroute the PR.
+    _validate_pair(filetype_flag, filedepth_flag)
+    if not marked:
+        return "unknown"
+    if filedepth_flag == "nope":
+        return "nope"
+    if filedepth_flag == "high":
         return "high"
-    if RISK_LOW_LABEL in labels:
+    if filetype_flag == "med":
+        return "med"
+    if filetype_flag == "low":
         return "low"
-    # Fallback for older PRs or states where risk is not yet labeled.
-    if DEFAULT_REVIEW_PENDING_LABEL in labels:
-        return "low"
-    return "unknown"
+    return "clear"
+
+
+def _classify_pr_pair(owner: str, repo: str, pr_number: int) -> tuple[str | None, str | None]:
+    """Run the two parallel analyses (classify_paths) over the PR's changed files."""
+    # The classifier is the SINGLE source of both axes; this is the engine-side
+    # bridge that lets the restamp mirror the current diff on synchronize. Raises on any
+    # API/import failure — callers fail SAFE by keeping the existing labels (a PR is never
+    # armed off a failed classification; an unmarked PR holds).
+    import classify_paths  # sibling module; scripts dir is on sys.path in script + test runs
+
+    result = gh_cli.api_pr_files(owner, repo, pr_number)
+    paths = [line.strip() for line in result.stdout.splitlines() if line.strip()]
+    filetype = None
+    filedepth = None
+    for path in paths:
+        ft, fd = classify_paths.classify_file(path)
+        filetype = classify_paths.riskiest(filetype, ft)
+        filedepth = classify_paths.riskiest(filedepth, fd)
+    return (filetype, filedepth)
+
+
+def restamp_risk_pair(
+    pr_number: int,
+    labels: set[str],
+    filetype_flag: str | None,
+    filedepth_flag: str | None,
+) -> list[str]:
+    """Make the PR's risk labels mirror the classified lane — the 'restamp'."""
+    # ``desired`` is the flat label for each fired axis: the filetype label if
+    # ``filetype_flag`` is set, plus the filedepth label if ``filedepth_flag`` is set. When
+    # NEITHER fires, ``desired`` is ``{RISK_CLEAR_LABEL}`` — the `—/—` cell stamps its own
+    # label rather than stamping nothing, so a later read can tell 'classified, nothing
+    # fired' from 'never classified'. ``managed`` is the flat set plus the clear label plus
+    # anything already on the PR that lives in the risk namespace, so managed-not-desired
+    # labels are removed — that is what retires a superseded vocabulary in passing,
+    # without a migration script.
+    # Mutates ``labels`` in place and returns the actions taken.
+    _validate_pair(filetype_flag, filedepth_flag)
+    actions: list[str] = []
+    desired: set[str] = set()
+    if filetype_flag is not None:
+        desired.add(FILETYPE_RISK_LABELS[filetype_flag])
+    if filedepth_flag is not None:
+        desired.add(FILEDEPTH_RISK_LABELS[filedepth_flag])
+    if not desired:
+        desired.add(RISK_CLEAR_LABEL)
+    managed = set(RISK_FLAG_LABELS) | {RISK_CLEAR_LABEL} | {
+        label for label in labels if RISK_NAMESPACE_PATTERN.match(label)
+    }
+    # REMOVE BEFORE ADD, and the order is load-bearing now that `risk/—` exists.
+    # Each `_edit_label` is its own API call, so the PR is observable between them.
+    # Adding first would put `risk/—` and a fired flag on the PR at the same time on a
+    # clear -> fired transition, and any evaluate landing in that window raises
+    # RiskMarkerInvariantError. Removing first leaves a window with NO risk label,
+    # which reads `unknown` and HOLDS. Both windows are wrong; only one is safe.
+    for label in sorted((labels & managed) - desired):
+        _edit_label(pr_number, remove=label)
+        labels.discard(label)
+        actions.append(f"remove:{label}")
+    for label in sorted(desired - labels):
+        _edit_label(pr_number, add=label)
+        labels.add(label)
+        actions.append(f"add:{label}")
+    return actions
 
 
 def evaluate_review_state(
@@ -1042,9 +965,14 @@ def evaluate_review_state(
     now: datetime | None = None,
     grace_minutes: int = DEFAULT_GRACE_MINUTES,
     auto_resolve_reviewers: set[str] | None = None,
+    classified_lane: tuple[str | None, str | None] | None = None,
 ) -> dict[str, object]:
     """Return one machine-readable view of the PR's current review state."""
-
+    # ``classified_lane`` is an optional caller-supplied ``(filetype_flag, filedepth_flag)``
+    # straight from the classifier — passed by the POST-classify evaluate calls so a `—/—`
+    # lane is affirmatively clear even with zero labels. Without it the flags are read off
+    # the labels, and an all-absent PR is ``unknown`` and HOLDS (never armed) — the safety
+    # property that absence of a label is not the clear state.
     label_names = {
         node["name"]
         for node in (pr.get("labels") or {}).get("nodes") or []
@@ -1078,11 +1006,39 @@ def evaluate_review_state(
     review_decision = pr.get("reviewDecision")
     draft = bool(pr.get("isDraft"))
     blocking_review = review_decision == "CHANGES_REQUESTED"
-    risk_tier = _risk_tier_for_pr(pr.get("body") or "", label_names)
+    _assert_risk_marker_exclusive(label_names)
+    # The lane is the flat (filetype, filedepth) pair. A caller-supplied lane (the classifier's
+    # fresh reading) is authoritative and always "marked". Without one the flags are read off
+    # the labels, where `risk/—` reads as affirmatively clear and NO risk label at all reads
+    # as unknown and HOLDS — absence of a label is not the clear state.
+    if classified_lane is not None:
+        filetype_flag, filedepth_flag = classified_lane
+        pair_marked = True
+    else:
+        filetype_flag, filedepth_flag, pair_marked = _risk_pair_for_pr(label_names)
+    risk_tier = _tier_from_pair(filetype_flag, filedepth_flag, pair_marked)
+    is_clear = pair_marked and filetype_flag is None and filedepth_flag is None
     low_risk = risk_tier == "low"
     merge_blocked = draft or blocking_review or current_unresolved > 0
+    # Lane completion — flags are transient routing state, consumed as the PR clears
+    # its lane: an approving review with no current threads completes the lane, the engine
+    # clears the fired flag (the projection removes the fired flat risk/* label), and the PR
+    # flows. A `nope` filedepth is NEVER auto-cleared — it always requires a human merge.
+    lane_complete = (
+        review_decision == "APPROVED" and current_unresolved == 0 and not draft
+    )
+    flag_clearable = (
+        pair_marked
+        and filedepth_flag != "nope"
+        and (filetype_flag is not None or filedepth_flag is not None)
+    )
+    # The `—/—` pair arms on open; a flagged lane arms once its review
+    # completes (the flag is consumed). nope and any unmarked PR HOLD, always.
     eligible_for_auto_merge = (
-        AGENT_AUTO_MERGE_ENABLED and low_risk and grace_elapsed and not merge_blocked
+        AGENT_AUTO_MERGE_ENABLED
+        and grace_elapsed
+        and not merge_blocked
+        and (is_clear or (lane_complete and flag_clearable))
     )
     should_have_agent_review_pending = (
         AGENT_AUTO_MERGE_ENABLED
@@ -1105,6 +1061,11 @@ def evaluate_review_state(
         "labels": sorted(label_names),
         "risk_tier": risk_tier,
         "low_risk": low_risk,
+        "is_clear": is_clear,
+        "pair": {"filetype": filetype_flag, "filedepth": filedepth_flag},
+        "pair_marked": pair_marked,
+        "lane_complete": lane_complete,
+        "flag_clearable": flag_clearable,
         "draft": draft,
         "review_decision": review_decision,
         "blocking_review": blocking_review,
@@ -1128,7 +1089,6 @@ def apply_review_state_projection(
     clear_apply_pending: bool = False,
 ) -> list[str]:
     """Synchronize projection labels so they reflect the evaluated review state."""
-
     current_labels = set(state.get("labels") or [])
     actions: list[str] = []
 
@@ -1157,6 +1117,16 @@ def apply_review_state_projection(
         actions.append(f"remove:{DEFAULT_PENDING_LABEL}")
         current_labels.discard(DEFAULT_PENDING_LABEL)
 
+    # Clear-on-completion: the lane's review completed, so the fired flag is CONSUMED —
+    # restamp to `—/—`, removing every risk/* flag (a clear lane stamps none). The next
+    # synchronize (new code) restamps from the classifier and re-enters the lane; with no
+    # new code the cleared (label-free) PR becomes eligible and flows once the grace window
+    # elapses. nope is never flag_clearable.
+    if bool(state.get("lane_complete")) and bool(state.get("flag_clearable")):
+        actions.extend(
+            restamp_risk_pair(pr_number, current_labels, None, None)
+        )
+
     if (
         DEFAULT_AUTO_MERGE_LABEL in current_labels
         and (
@@ -1175,23 +1145,23 @@ def apply_review_state_projection(
 def _resolve_outdated_resolvable_threads(
     pr: dict, looker: str | None = None, *, apply: bool = True
 ) -> list[dict[str, object]]:
-    """Attest-resolve every OUTDATED-RESOLVABLE thread on `pr` — bot-only and
-    GitHub-outdated (the commented lines no longer exist in the diff) — witnessed by
-    `looker` via `attest_and_resolve`. This is the same narrowest-safe slice the
-    engage-outdated backlog walk uses, factored so the on-push `sync-pr` event can clear
-    stale bot threads AS THEY GO OUTDATED — not only on a manual engage-outdated dispatch.
-
-    `looker` is who the resolution is witnessed as. Pass it when the caller already knows
-    the actor (engage-outdated resolves it once for the whole backlog walk). When omitted
-    (the sync-pr event path), it is resolved LAZILY via `_viewer_login()` only if an
-    outdated-resolvable thread is actually found — so a push with no stale threads (the
-    common case) costs no extra GraphQL round-trip.
-
-    Disposition-driven (`_thread_resolution_disposition`), so it covers any bot reviewer
-    (CodeRabbit/Codex/Copilot), unlike the legacy allowlist resolver. needs-fix /
-    apply-suggestion / needs-human / looked threads are never touched — a substantive
-    finding is a caught error to fix, not to dispose of. Never merges. Returns one result
-    dict per considered thread."""
+    """Attest-resolve every OUTDATED-RESOLVABLE thread on ``pr``."""
+    # Bot-only and GitHub-outdated (the commented lines no longer exist in the diff), witnessed
+    # by `looker` via `attest_and_resolve`. This is the same narrowest-safe slice the
+    # engage-outdated backlog walk uses, factored so the on-push `sync-pr` event can clear
+    # stale bot threads AS THEY GO OUTDATED — not only on a manual engage-outdated dispatch.
+    #
+    # `looker` is who the resolution is witnessed as. Pass it when the caller already knows
+    # the actor (engage-outdated resolves it once for the whole backlog walk). When omitted
+    # (the sync-pr event path), it is resolved LAZILY via `_viewer_login()` only if an
+    # outdated-resolvable thread is actually found — so a push with no stale threads (the
+    # common case) costs no extra GraphQL round-trip.
+    #
+    # Disposition-driven (`_thread_resolution_disposition`), so it covers any bot reviewer
+    # (CodeRabbit/Codex/Copilot), unlike the legacy allowlist resolver. needs-fix /
+    # apply-suggestion / needs-human / looked threads are never touched — a substantive
+    # finding is a caught error to fix, not to dispose of. Never merges. Returns one result
+    # dict per considered thread.
     results: list[dict[str, object]] = []
     for thread in (pr.get("reviewThreads") or {}).get("nodes") or []:
         if thread.get("isResolved"):
@@ -1212,7 +1182,6 @@ def _resolve_outdated_resolvable_threads(
                 pr,
                 thread,
                 looker,
-                "advisory",
                 "Outdated: the commented lines no longer exist in the current diff; "
                 "bot-only thread cleared under the outdated-only engaged policy.",
                 apply=apply,
@@ -1222,7 +1191,7 @@ def _resolve_outdated_resolvable_threads(
             # it on stderr too (not only in the returned dict) so sync-driven failures are
             # observable in workflow logs, not just to the JSON report consumer.
             print(
-                f"Failed to attest-resolve outdated thread {thread.get('id')}: {exc}",
+                f"Failed to resolve outdated thread {thread.get('id')}: {exc}",
                 file=sys.stderr,
             )
             result = {
@@ -1237,21 +1206,7 @@ def _resolve_outdated_resolvable_threads(
 
 def _list_open_pr_numbers(owner: str, repo: str) -> list[int]:
     open_prs = json.loads(
-        _run(
-            [
-                "gh",
-                "pr",
-                "list",
-                "--repo",
-                f"{owner}/{repo}",
-                "--state",
-                "open",
-                "--limit",
-                "1000",
-                "--json",
-                "number",
-            ]
-        ).stdout
+        gh_cli.pr_list_open(owner, repo).stdout
         or "[]"
     )
     return [int(pr_row["number"]) for pr_row in open_prs]
@@ -1269,6 +1224,7 @@ def _build_reconciliation_report(
     promoted: list[int] = []
     rearmed: list[int] = []
     auto_merge_authorization_blocked: list[int] = []
+    invariant_violations: list[dict[str, object]] = []
     total_resolved_outdated_threads = 0
     # Resolve the looker once for the whole batch walk (the engage-outdated pattern): the
     # witness names whoever actually ran the scheduled reconcile — the authenticated actor.
@@ -1281,40 +1237,79 @@ def _build_reconciliation_report(
         outdated_results = _resolve_outdated_resolvable_threads(pr, looker, apply=True)
         resolved_count = sum(1 for r in outdated_results if r.get("applied"))
         total_resolved_outdated_threads += resolved_count
-        if resolved_count:
-            pr = _fetch_pr(owner, repo, pr_number)
 
-        state = evaluate_review_state(
-            pr,
-            now=now,
-            grace_minutes=grace_minutes,
-            auto_resolve_reviewers=auto_resolve_reviewers,
-        )
+        try:
+            state = evaluate_review_state(
+                pr,
+                now=now,
+                grace_minutes=grace_minutes,
+                auto_resolve_reviewers=auto_resolve_reviewers,
+            )
+            # Restamp — this sweep IS the backfill automation: every open PR's
+            # risk labels are re-mirrored from the one classifier, so unmarked/stale-labeled
+            # in-flight PRs migrate without a hand-sweep. The lane is always fetched; only
+            # the restamp is skipped once the lane completed (its flag was consumed). A
+            # classification error skips the restamp and leaves labels as-is; the PR is then
+            # evaluated on its existing labels, so an unmarked PR reads `unknown` and fails
+            # CLOSED — the projection disarms it. Intentional: a transient failure self-heals
+            # on the next clean sweep; a persistent one correctly holds the PR.
+            restamp_actions: list[str] = []
+            try:
+                ft_flag, fd_flag = _classify_pr_pair(owner, repo, pr_number)
+            except Exception as exc:  # noqa: BLE001  # pylint: disable=broad-except
+                print(
+                    f"::warning::risk restamp skipped for #{pr_number}: {exc}",
+                    file=sys.stderr,
+                )
+            else:
+                # Restamp only when the lane has NOT completed (a completed lane's flag is
+                # consumed by the projection; re-stamping would re-add it).
+                if not state.get("lane_complete"):
+                    label_set = {
+                        node["name"]
+                        for node in (pr.get("labels") or {}).get("nodes") or []
+                        if node.get("name")
+                    }
+                    restamp_actions = restamp_risk_pair(pr_number, label_set, ft_flag, fd_flag)
+                    pr["labels"] = {"nodes": [{"name": name} for name in sorted(label_set)]}
+                # Re-evaluate with the classified lane when the diff was (re)stamped, OR when a
+                # lane-complete PR carries NO risk/* flag (first-pass risk_tier == "unknown")
+                # — the consumed-clear (—/—) case, which must read affirmatively clear (not
+                # `unknown`) so it isn't wrongly disarmed. A lane-complete PR that STILL has a
+                # stale flag keeps its label-derived state so the projection consumes it; a
+                # lane override there would leave the stale flag orphaned.
+                if not state.get("lane_complete") or state.get("risk_tier") == "unknown":
+                    state = evaluate_review_state(
+                        pr,
+                        now=now,
+                        grace_minutes=grace_minutes,
+                        auto_resolve_reviewers=auto_resolve_reviewers,
+                        classified_lane=(ft_flag, fd_flag),
+                    )
+        except RiskMarkerInvariantError as exc:
+            # The risk-marker mutual-exclusion invariant tripped on THIS PR. Fail loud — record
+            # it and surface a non-zero exit — but do NOT abort the sweep: one mis-labeled
+            # PR must not starve every other open PR of reconciliation. Scoped to the
+            # dedicated type so an unrelated ValueError still fails the run normally.
+            print(f"::error title=risk-marker invariant::PR #{pr_number}: {exc}", file=sys.stderr)
+            invariant_violations.append({"number": pr_number, "error": str(exc)})
+            evaluated.append({"number": pr_number, "invariant_violation": str(exc)})
+            continue
 
         actions = apply_review_state_projection(pr_number, state)
+        actions.extend(restamp_actions)
         current_labels = set(state["labels"])
         auto_merge_enabled = bool((pr.get("autoMergeRequest") or {}).get("enabledAt"))
         arm_error = None
-        # Evaluate the protected-path guard ONCE, before promotion: a governance/CI/
-        # scaffolding PR must not even be labelled `merge/auto` or get a "promoting"
-        # comment — it waits for a human. (Only worth the API call when otherwise armable.)
-        touches_protected_path = False
-        if (
-            AGENT_AUTO_MERGE_ENABLED
-            and state["eligible_for_auto_merge"]
-            and not bool(state["merge_blocked"])
-        ):
-            touches_protected_path = _pr_touches_protected_path(owner, repo, pr_number)
-            if touches_protected_path:
-                arm_error = "protected/governance path — awaits human review"
-
+        # Protected paths are not vetoed here anymore — the CODEOWNERS hard gate blocks
+        # their merge regardless of label/arm (the per-engine glob lists were retired in
+        # favor of the single, enforced source). Promotion keys only on eligibility + no merge block.
         if (
             AGENT_AUTO_MERGE_ENABLED
             and
             state["eligible_for_auto_merge"]
             and not bool(state["merge_blocked"])
             and DEFAULT_AUTO_MERGE_LABEL not in current_labels
-            and not touches_protected_path
         ):
             if DEFAULT_REVIEW_PENDING_LABEL in current_labels:
                 current_labels.discard(DEFAULT_REVIEW_PENDING_LABEL)
@@ -1335,7 +1330,6 @@ def _build_reconciliation_report(
             DEFAULT_AUTO_MERGE_LABEL in current_labels
             and bool(state["eligible_for_auto_merge"])
             and not bool(state["merge_blocked"])
-            and not touches_protected_path
         ):
             # No `and not auto_merge_enabled` guard: an already-armed PR may be
             # armed-but-not-queued (the stuck case), and _arm_auto_merge is
@@ -1365,14 +1359,22 @@ def _build_reconciliation_report(
         "promoted_prs": promoted,
         "rearmed_prs": rearmed,
         "auto_merge_authorization_blocked": auto_merge_authorization_blocked,
+        "invariant_violations": invariant_violations,
         "resolved_outdated_threads": total_resolved_outdated_threads,
         "evaluated": evaluated,
     }
 
 
 def acknowledge_apply(args: argparse.Namespace) -> int:
-    ensure_labels()
-
+    """Mark a PR as waiting on follow-up commits after a trusted apply-changes request."""
+    # Cheap, local filters first: every comment on every PR reaches this function
+    # (the workflow trigger has no author/content filter), and most of them are
+    # third-party review-bot noise, not @copilot apply requests. `ensure_labels()`
+    # is a sweep of the repo's whole label set (multiple `gh label create/delete`
+    # calls) plus a full checkout — worth paying only on the path that actually
+    # mutates a label, not on every no-op comment. Running it unconditionally here
+    # was what turned a burst of unrelated bot comments into a burst of GitHub API
+    # calls large enough to trip the installation's rate limit.
     if not APPLY_RE.search(args.comment_body or ""):
         print("Comment does not match an @copilot apply request; nothing to do.")
         return 0
@@ -1385,10 +1387,20 @@ def acknowledge_apply(args: argparse.Namespace) -> int:
         )
         return 0
 
-    pr = _fetch_pr(args.owner, args.repo, args.pr_number)
-    labels = {node["name"] for node in (pr.get("labels") or {}).get("nodes") or []}
+    # Label names are the only thing this path reads. `_fetch_pr` would answer that
+    # with `reviewThreads(first:100){comments(first:100)}` — up to 10k nodes, which
+    # GitHub's GraphQL limiter bills by node count, for a list `gh pr view` returns
+    # for one REST point.
+    pr = json.loads(
+        gh_cli.pr_view(
+            args.pr_number, owner=args.owner, repo=args.repo, json_fields="labels"
+        ).stdout
+        or "{}"
+    )
+    labels = {node["name"] for node in pr.get("labels") or [] if node.get("name")}
 
     if DEFAULT_PENDING_LABEL not in labels:
+        ensure_labels()
         _edit_label(args.pr_number, add=DEFAULT_PENDING_LABEL)
         _comment(
             args.pr_number,
@@ -1405,6 +1417,7 @@ def acknowledge_apply(args: argparse.Namespace) -> int:
 
 
 def sync_pr(args: argparse.Namespace) -> int:
+    """Recompute review-derived state after PR updates and sync projection labels."""
     ensure_labels()
 
     auto_resolve_reviewers = _csv_env(
@@ -1426,14 +1439,53 @@ def sync_pr(args: argparse.Namespace) -> int:
         pr, getattr(args, "looker", None), apply=True
     )
     resolved_count = sum(1 for r in outdated_results if r.get("applied"))
-    if resolved_count:
-        pr = _fetch_pr(args.owner, args.repo, args.pr_number)
 
     state = evaluate_review_state(
         pr,
         grace_minutes=args.grace_minutes,
         auto_resolve_reviewers=auto_resolve_reviewers,
     )
+
+    # Restamp-on-sync: risk labels mirror the CURRENT diff from the one classifier.
+    # The lane is always fetched (so a consumed-clear lane reads clear, not unknown); only
+    # the restamp is skipped once the lane completed (its flag was consumed). A classification
+    # error skips the restamp and leaves labels as-is; the PR is then evaluated on its existing
+    # labels, so an unmarked PR reads `unknown` and fails CLOSED — the projection disarms it.
+    # Intentional: a transient failure self-heals on the next clean sweep; a persistent one holds.
+    restamp_actions: list[str] = []
+    try:
+        ft_flag, fd_flag = _classify_pr_pair(args.owner, args.repo, args.pr_number)
+    except Exception as exc:  # noqa: BLE001  # pylint: disable=broad-except
+        print(
+            f"::warning::risk restamp skipped for #{args.pr_number} "
+            f"(classification failed; labels left as-is): {exc}",
+            file=sys.stderr,
+        )
+    else:
+        # Restamp only when the lane has NOT completed (a completed lane's flag is consumed
+        # by the projection; re-stamping would re-add it).
+        if not state.get("lane_complete"):
+            label_set = {
+                node["name"]
+                for node in (pr.get("labels") or {}).get("nodes") or []
+                if node.get("name")
+            }
+            restamp_actions = restamp_risk_pair(args.pr_number, label_set, ft_flag, fd_flag)
+            pr["labels"] = {"nodes": [{"name": name} for name in sorted(label_set)]}
+        # Re-evaluate with the classified lane when the diff was (re)stamped, OR when a
+        # lane-complete PR carries NO risk/* flag (first-pass risk_tier == "unknown") —
+        # the consumed-clear (—/—) case, which must read affirmatively clear (not
+        # `unknown`) so it isn't wrongly disarmed. A lane-complete PR that STILL has a
+        # stale flag keeps its label-derived state so the projection consumes it; a lane
+        # override there would orphan the flag.
+        if not state.get("lane_complete") or state.get("risk_tier") == "unknown":
+            state = evaluate_review_state(
+                pr,
+                grace_minutes=args.grace_minutes,
+                auto_resolve_reviewers=auto_resolve_reviewers,
+                classified_lane=(ft_flag, fd_flag),
+            )
+
     clear_pending = (
         args.sync_actor in completion_actors and bool(state["has_copilot_apply_pending"])
     )
@@ -1459,6 +1511,7 @@ def sync_pr(args: argparse.Namespace) -> int:
                 "auto_merge_armed": arm_result["armed"],
                 "auto_merge_arm_reason": arm_result["reason"],
                 "label_actions": label_actions,
+                "restamp_actions": restamp_actions,
                 "cleared_copilot_apply_pending": clear_pending,
             }
         )
@@ -1467,6 +1520,7 @@ def sync_pr(args: argparse.Namespace) -> int:
 
 
 def review_submitted(args: argparse.Namespace) -> int:
+    """Recompute review state after a submitted review; pause auto-merge on a real block."""
     ensure_labels()
 
     auto_resolve_reviewers = _csv_env(
@@ -1520,6 +1574,7 @@ def review_submitted(args: argparse.Namespace) -> int:
 
 
 def promote_ready(args: argparse.Namespace) -> int:
+    """Run scheduled reconciliation (compatibility alias for reconcile-open-prs)."""
     ensure_labels()
     auto_resolve_reviewers = _csv_env(
         "AUTO_RESOLVE_REVIEWERS",
@@ -1532,10 +1587,12 @@ def promote_ready(args: argparse.Namespace) -> int:
         auto_resolve_reviewers=auto_resolve_reviewers,
     )
     print(json.dumps(report))
-    return 0
+    # Fail loud on any risk-marker invariant violation (see reconcile_open_prs).
+    return 1 if report.get("invariant_violations") else 0
 
 
 def reconcile_open_prs(args: argparse.Namespace) -> int:
+    """Rescan open-PR truth, repair drifted labels, and arm eligible PRs for the queue."""
     ensure_labels()
     auto_resolve_reviewers = _csv_env(
         "AUTO_RESOLVE_REVIEWERS",
@@ -1548,10 +1605,13 @@ def reconcile_open_prs(args: argparse.Namespace) -> int:
         auto_resolve_reviewers=auto_resolve_reviewers,
     )
     print(json.dumps(report))
-    return 0
+    # Fail loud: any risk-marker invariant violation turns the reconcile run red so a
+    # mis-labeled PR can't rot unnoticed. The sweep still processed every other PR above.
+    return 1 if report.get("invariant_violations") else 0
 
 
 def enable_auto_merge(args: argparse.Namespace) -> int:
+    """Arm an eligible PR for the merge queue."""
     ensure_labels()
     auto_resolve_reviewers = _csv_env(
         "AUTO_RESOLVE_REVIEWERS",
@@ -1575,10 +1635,7 @@ def enable_auto_merge(args: argparse.Namespace) -> int:
         and bool(state["eligible_for_auto_merge"])
         and not bool(state["merge_blocked"])
     ):
-        if _pr_touches_protected_path(args.owner, args.repo, args.pr_number):
-            arm_error = "protected/governance path — awaits human review"
-        else:
-            enabled, arm_error = _arm_auto_merge(args.owner, args.repo, args.pr_number)
+        enabled, arm_error = _arm_auto_merge(args.owner, args.repo, args.pr_number)
 
     print(
         json.dumps(
@@ -1602,44 +1659,39 @@ def _matches_claim(body: str) -> bool:
 
 def _fetch_pr_merge_state(owner: str, repo: str, pr_number: int) -> dict:
     """Fetch the institutional state fields we compare claims against."""
-    cmd = [
-        "gh",
-        "pr",
-        "view",
-        str(pr_number),
-        "--repo",
-        f"{owner}/{repo}",
-        "--json",
-        "mergeable,mergeStateStatus,statusCheckRollup,isDraft,number",
-    ]
-    result = _run(cmd)
+    result = gh_cli.pr_view(
+        pr_number,
+        owner=owner,
+        repo=repo,
+        json_fields="mergeable,mergeStateStatus,statusCheckRollup,isDraft,number",
+    )
     return json.loads(result.stdout or "{}")
 
 
 def _list_pr_comment_bodies(owner: str, repo: str, pr_number: int) -> list[str]:
     """Return raw comment bodies for the PR (issue-style comments)."""
-    cmd = [
-        "gh",
-        "api",
-        f"repos/{owner}/{repo}/issues/{pr_number}/comments",
-        "--paginate",
-    ]
+    # Reads via ``--jq`` rather than parsing stdout as one JSON document. ``gh api
+    # --paginate`` emits a *separate* array per page, so any PR past the first page
+    # produces ``[...][...]`` — not valid JSON. ``json.loads`` rejected it, this
+    # returned ``[]``, and ``_has_prior_verify_comment`` then reported "no prior
+    # comment" for exactly the busy PRs most likely to have one, posting a duplicate.
+    # Per-page jq emits bodies as text and has no such document boundary.
     try:
-        result = _run(cmd)
+        result = gh_cli.api_issue_comments(owner, repo, pr_number, jq=".[].body")
     except RuntimeError:
         return []
-    try:
-        payload = json.loads(result.stdout or "[]")
-    except json.JSONDecodeError:
-        return []
-    return [item.get("body") or "" for item in payload if isinstance(item, dict)]
+    return result.stdout.splitlines()
 
 
 def _has_prior_verify_comment(owner: str, repo: str, pr_number: int) -> bool:
-    return any(VERIFY_CLAIM_MARKER in body for body in _list_pr_comment_bodies(owner, repo, pr_number))
+    return any(
+        VERIFY_CLAIM_MARKER in body
+        for body in _list_pr_comment_bodies(owner, repo, pr_number)
+    )
 
 
 def verify_claim(args: argparse.Namespace) -> int:
+    """Flag divergence between an agent completion-claim comment and the PR's real state."""
     body = args.comment_body or ""
 
     # Recursion guard: skip if the trigger comment IS a prior verification comment.
@@ -1717,234 +1769,36 @@ def verify_claim(args: argparse.Namespace) -> int:
     _comment(args.pr_number, "\n".join(body_lines))
     print(f"Posted verify-claim divergence comment on PR #{args.pr_number}.")
     return 0
-
-
-def list_unlooked(args: argparse.Namespace) -> int:
-    """Print the looker queue across open PRs. Read-only: resolves nothing.
-
-    Layer A of the look-then-resolve design (#399). Surfaces unresolved review
-    threads that still need a looker, without touching any thread. Coverage is
-    bounded by `_fetch_pr` (up to the first 100 threads and 100 comments per
-    PR); deep cursor pagination is a follow-up if any PR exceeds those bounds.
-    Each thread carries a `looked` flag, so consumers can filter the queue.
-    """
-    threads: list[dict[str, object]] = []
-    for pr_number in _list_open_pr_numbers(args.owner, args.repo):
-        threads.extend(_build_looker_queue(_fetch_pr(args.owner, args.repo, pr_number)))
-    unlooked = [item for item in threads if not item["looked"]]
-    print(
-        json.dumps(
-            {
-                "open_threads": len(threads),
-                "unlooked_threads": len(unlooked),
-                "threads": threads,
-            }
-        )
-    )
-    return 0
-
-
-def _thread_belongs_to_pr(thread: dict, owner: str, repo: str, pr_number: int) -> bool:
-    """True if a thread's comment links place it on owner/repo PR #pr_number.
-
-    `_fetch_thread` resolves a *global* node id, so a stray or hostile id could point at
-    a thread on a different PR/repo; membership is verified before acting on it.
-    """
-    expected = f"/{owner}/{repo}/pull/{pr_number}".lower()
-    for comment in (thread.get("comments") or {}).get("nodes") or []:
-        if expected in (comment.get("url") or "").lower():
-            return True
-    return False
-
-
-def looker_walk(args: argparse.Namespace) -> int:
-    """Walk every open PR and print the looker triage report. Read-only — resolves nothing.
-
-    Layer C of the look-then-resolve design (#399): turns the open-PR backlog into a
-    classified worklist (clear / machine-disposable / would-cascade / needs-human, plus a
-    stale/abandonment flag) so the backlog drains *with* judgment. This command WRITES
-    NOTHING; the guarded disposition path is `attest-resolve` (B2), gated separately. The
-    `safe_to_drain` list names the PRs a deterministic apply pass could clear without a
-    cascade or touching a human thread.
-    """
-    now = datetime.now(timezone.utc)
-    reports = [
-        _classify_pr_for_looker(
-            _fetch_pr(args.owner, args.repo, pr_number),
-            now=now,
-            stale_days=args.stale_days,
-        )
-        for pr_number in _list_open_pr_numbers(args.owner, args.repo)
-    ]
-    by_lane: dict[str, int] = {}
-    by_resolution: dict[str, int] = {}
-    for report in reports:
-        by_lane[str(report["lane"])] = by_lane.get(str(report["lane"]), 0) + 1
-        for key, count in (report.get("resolution_counts") or {}).items():
-            by_resolution[key] = by_resolution.get(key, 0) + int(count)
-    print(
-        json.dumps(
-            {
-                "open_prs": len(reports),
-                "by_lane": by_lane,
-                # backlog-wide thread breakdown by how each gets resolved: how much
-                # the engine can auto-apply vs. what needs a real agent fix vs. human.
-                "by_resolution": by_resolution,
-                "stale": sum(1 for report in reports if report["stale"]),
-                "safe_to_drain": [report["pr"] for report in reports if report["safe_to_drain"]],
-                "reports": reports,
-            }
-        )
-    )
-    return 0
-
-
-def render_looker_worklist(report: dict) -> str:
-    """Render a looker-walk report (the `looker_walk` JSON) as a markdown worklist. Pure.
-
-    A read-only triage surface for a durable issue: the open-PR backlog grouped by lane
-    and by resolution disposition, so a looker can drain it with judgment. Resolves
-    nothing and decides nothing — it only makes the deterministic census legible.
-    """
-
-    def _counts(mapping: dict) -> str:
-        return " · ".join(f"{key}: {value}" for key, value in sorted(mapping.items())) or "none"
-
-    open_prs = int(report.get("open_prs") or 0)
-    stale = int(report.get("stale") or 0)
-    safe = report.get("safe_to_drain") or []
-    reports = report.get("reports") or []
-
-    lines = [
-        "## Looker Worklist — review-thread triage (read-only)",
-        "",
-        "> Deterministic census of open PRs. **No threads resolved, no PRs merged.**",
-        "> The gated apply pass (`attest-resolve --apply`) is a separate decision.",
-        "",
-        f"- **Open PRs:** {open_prs} · **stale:** {stale}",
-        f"- **By lane:** {_counts(report.get('by_lane') or {})}",
-        f"- **By resolution:** {_counts(report.get('by_resolution') or {})}",
-        "",
-        "### `safe_to_drain` — bare-resolvable, non-stale (a gated apply pass could clear)",
-    ]
-    lines.extend([f"- #{pr}" for pr in safe] or ["- none"])
-    lines.append("")
-    lines.append("### Per-PR worklist (PRs not in the `clear` lane)")
-    # Filter on lane, NOT visible unresolved count: a PR whose thread list is truncated
-    # past page 1 is lane `needs-human` with possibly 0 *visible* unresolved threads — it
-    # must still surface, because the census cannot prove it is clear. (codex on #531.)
-    actionable = sorted(
-        (r for r in reports if r.get("lane") != "clear"),
-        key=lambda r: int(r.get("pr") or 0),
-    )
-    if actionable:
-        for r in actionable:
-            flags = [
-                flag
-                for flag, on in (
-                    ("stale", r.get("stale")),
-                    ("auto-merge-armed", r.get("auto_merge_armed")),
-                    ("threads-truncated", r.get("threads_truncated")),
-                )
-                if on
-            ]
-            flag_s = f" _({', '.join(flags)})_" if flags else ""
-            lines.append(
-                f"- **#{r.get('pr')}** — lane `{r.get('lane')}` · "
-                f"{int(r.get('unresolved_threads') or 0)} unresolved "
-                f"({_counts(r.get('resolution_counts') or {})}){flag_s}"
-            )
-    else:
-        lines.append("- none — every open PR is in the `clear` lane.")
-    lines.append("")
-    return "\n".join(lines)
-
-
-def render_worklist(args: argparse.Namespace) -> int:
-    """Read a looker-walk JSON report (file or stdin) and print the markdown worklist."""
-    raw = args.input.read() if args.input else sys.stdin.read()
-    print(render_looker_worklist(json.loads(raw or "{}")))
-    return 0
-
-
-def attest_resolve(args: argparse.Namespace) -> int:
-    """Disposition one explicit bot-authored thread (Layer B2). Dry-run unless --apply.
-
-    Bounded by design: targets a single PR + thread id, so it cannot walk the backlog
-    or cascade. The deterministic walk + cascade-safety orchestration is Layer C.
-    """
-    pr = _fetch_pr(args.owner, args.repo, args.pr_number)
-    threads = (pr.get("reviewThreads") or {}).get("nodes") or []
-    thread = next((t for t in threads if t.get("id") == args.thread_id), None)
-    if thread is None:
-        # Beyond _fetch_pr's first-100 window. node(id:) is global, so confirm the
-        # fetched thread is actually on THIS PR before touching it.
-        fetched = _fetch_thread(args.thread_id)
-        if fetched is not None and _thread_belongs_to_pr(
-            fetched, args.owner, args.repo, args.pr_number
-        ):
-            thread = fetched
-    if thread is None:
-        print(
-            json.dumps(
-                {
-                    "thread_id": args.thread_id,
-                    "eligible": False,
-                    "applied": False,
-                    "reason": "thread not found on PR",
-                }
-            )
-        )
-        return 1
-    # Default the looker to the authenticated actor, so the recorded witness always names
-    # whoever actually ran the resolve (agent-driven or CI-bot), and the self-attestation
-    # actor-match check in attest_and_resolve is satisfied by construction.
-    looker = args.looker or _viewer_login()
-    result = attest_and_resolve(
-        pr,
-        thread,
-        looker,
-        args.decision,
-        args.rationale,
-        apply=args.apply,
-    )
-    print(json.dumps(result))
-    return 0
-
-
 def _positive_int(value: str) -> int:
-    """argparse type: a strictly positive integer (e.g. --stale-days).
-
-    A non-positive staleness window misclassifies every PR (<=0 marks all stale,
-    making nothing safe to drain), so it is rejected at parse time.
-    """
+    """Parse a strictly positive integer for an argparse option (e.g. --stale-days)."""
+    # A non-positive staleness window misclassifies every PR (<=0 marks all stale,
+    # making nothing safe to drain), so it is rejected at parse time.
     try:
         parsed = int(value)
-    except (TypeError, ValueError):
-        raise argparse.ArgumentTypeError(f"invalid int value: {value!r}")
+    except (TypeError, ValueError) as exc:
+        raise argparse.ArgumentTypeError(f"invalid int value: {value!r}") from exc
     if parsed <= 0:
         raise argparse.ArgumentTypeError("must be a positive integer")
     return parsed
 
 
 def engage_outdated(args: argparse.Namespace) -> int:
-    """Engage the queue on the OUTDATED subset: attest-resolve every outdated-resolvable
-    thread across open PRs. Dry-run unless --apply.
-
-    The first 'engage' step (Logan: the queue runs by default; reviewer comments are what
-    keep a PR hanging). Scope is deliberately the narrowest safe slice — ONLY threads whose
-    resolution disposition is `outdated-resolvable` (bot-only, GitHub-outdated: the
-    commented lines no longer exist in the diff). Each is cleared via `attest_and_resolve`
-    with a recorded attestation by the looker — the `--looker` value, defaulting to the
-    authenticated actor (`_viewer_login()`) — so it is a *witnessed* resolution,
-    not the blind reconciler. needs-fix / apply-suggestion / looked / human threads are
-    never touched — needs-fix is the reviewer gate that keeps a PR hanging. This NEVER
-    merges; if clearing the last thread lets an armed PR flow, that is GitHub's auto-merge,
-    by design (the engaged queue).
-
-    --pr scopes the pass to a single PR number (the guinea-pig case: prove one PR clean
-    before widening to the whole backlog); default is every open PR.
-    """
+    """Engage the queue on the OUTDATED subset across open PRs."""
+    # Attest-resolve every outdated-resolvable thread; dry-run unless --apply.
+    #
+    # The first 'engage' step (Logan: the queue runs by default; reviewer comments are what
+    # keep a PR hanging). Scope is deliberately the narrowest safe slice — ONLY threads whose
+    # resolution disposition is `outdated-resolvable` (bot-only, GitHub-outdated: the
+    # commented lines no longer exist in the diff). Each is cleared via `attest_and_resolve`
+    # with a recorded attestation by the looker — the `--looker` value, defaulting to the
+    # authenticated actor (`_viewer_login()`) — so it is a *witnessed* resolution,
+    # not the blind reconciler. needs-fix / apply-suggestion / looked / human threads are
+    # never touched — needs-fix is the reviewer gate that keeps a PR hanging. This NEVER
+    # merges; if clearing the last thread lets an armed PR flow, that is GitHub's auto-merge,
+    # by design (the engaged queue).
+    #
+    # --pr scopes the pass to a single PR number (the guinea-pig case: prove one PR clean
+    # before widening to the whole backlog); default is every open PR.
     considered: list[dict[str, object]] = []
     # Resolve the looker once: default to the authenticated actor so the witness names
     # whoever actually ran the engine (agent token or CI bot), truthfully.
@@ -1964,7 +1818,7 @@ def engage_outdated(args: argparse.Namespace) -> int:
                 f"--pr {only_pr} is {pr.get('state')!r}, not OPEN; engage-outdated "
                 "acts only on the open queue."
             )
-        # Same narrowest-safe slice as the on-push sync path (shared helper): attest-resolve
+        # Same narrowest-safe slice as the on-push sync path (shared helper): resolve
         # every outdated-resolvable thread, witnessed by the looker.
         for result in _resolve_outdated_resolvable_threads(pr, looker, apply=args.apply):
             considered.append({"pr": pr_number, **result})
@@ -1983,16 +1837,14 @@ def engage_outdated(args: argparse.Namespace) -> int:
 
 
 def reconcile_witness(args: argparse.Namespace) -> int:
-    """Backfill missing attestations on resolved-but-unwitnessed threads WE resolved.
-
-    The repair pass for the unwitnessed ending (#399): a resolve can land while its
-    attestation does not, leaving a thread resolved with no recorded look. This walks
-    resolved, bot-only threads that carry no attestation and whose `resolvedBy` is the
-    looker, and posts the look that is owed — via `backfill_witness`, which NEVER resolves
-    or unresolves and refuses any thread a different identity resolved. Dry-run unless
-    --apply. The looker defaults to the authenticated actor, so the backfilled witness
-    truthfully names who actually resolved it. `--pr` scopes to one PR.
-    """
+    """Backfill missing attestations on resolved-but-unwitnessed threads WE resolved."""
+    # The repair pass for the unwitnessed ending (#399): a resolve can land while its
+    # attestation does not, leaving a thread resolved with no recorded look. This walks
+    # resolved, bot-only threads that carry no attestation and whose `resolvedBy` is the
+    # looker, and posts the look that is owed — via `backfill_witness`, which NEVER resolves
+    # or unresolves and refuses any thread a different identity resolved. Dry-run unless
+    # --apply. The looker defaults to the authenticated actor, so the backfilled witness
+    # truthfully names who actually resolved it. `--pr` scopes to one PR.
     looker = args.looker or _viewer_login()
     rationale = args.rationale or (
         "Witness backfilled: this thread was resolved under the engaged policy but the "
@@ -2013,7 +1865,7 @@ def reconcile_witness(args: argparse.Namespace) -> int:
             if not _thread_is_bot_only(thread):
                 continue
             try:
-                result = backfill_witness(pr, thread, looker, rationale, apply=args.apply)
+                result = backfill_witness(thread, looker, rationale, apply=args.apply)
             except RuntimeError as exc:
                 result = {
                     "thread_id": thread.get("id"),
@@ -2038,6 +1890,7 @@ def reconcile_witness(args: argparse.Namespace) -> int:
 
 
 def build_parser() -> argparse.ArgumentParser:
+    """Build the argparse parser for the review-feedback-loop subcommands."""
     parser = argparse.ArgumentParser()
     subparsers = parser.add_subparsers(dest="command", required=True)
 
@@ -2092,46 +1945,6 @@ def build_parser() -> argparse.ArgumentParser:
     verify.add_argument("--comment-author", default="")
     verify.add_argument("--comment-body", default="")
 
-    unlooked = subparsers.add_parser("list-unlooked")
-    unlooked.add_argument("--owner", required=True)
-    unlooked.add_argument("--repo", required=True)
-
-    walk = subparsers.add_parser("looker-walk")
-    walk.add_argument("--owner", required=True)
-    walk.add_argument("--repo", required=True)
-    walk.add_argument(
-        "--stale-days",
-        type=_positive_int,
-        default=LOOKER_STALE_DAYS,
-        help="days of inactivity before a PR is flagged stale (positive int)",
-    )
-
-    worklist = subparsers.add_parser("render-worklist")
-    worklist.add_argument(
-        "--input",
-        type=argparse.FileType("r"),
-        default=None,
-        help="looker-walk JSON file to render (default: stdin)",
-    )
-
-    attest = subparsers.add_parser("attest-resolve")
-    attest.add_argument("--owner", required=True)
-    attest.add_argument("--repo", required=True)
-    attest.add_argument("--pr-number", required=True, type=int)
-    attest.add_argument("--thread-id", required=True)
-    attest.add_argument(
-        "--looker",
-        default=None,
-        help="attesting identity recorded in the look marker; default: the authenticated "
-        "actor (whoever the token posts as), so the witness always names who actually ran it",
-    )
-    attest.add_argument("--decision", required=True, choices=sorted(ATTESTATION_DECISIONS))
-    attest.add_argument("--rationale", default="")
-    attest.add_argument(
-        "--apply",
-        action="store_true",
-        help="actually post the attestation and resolve (default: dry-run)",
-    )
 
     engage = subparsers.add_parser("engage-outdated")
     engage.add_argument("--owner", required=True)
@@ -2182,6 +1995,7 @@ def build_parser() -> argparse.ArgumentParser:
 
 
 def main() -> int:
+    """Parse CLI arguments and dispatch to the selected subcommand."""
     args = build_parser().parse_args()
     if args.command == "ensure-labels":
         ensure_labels()
@@ -2198,14 +2012,6 @@ def main() -> int:
         return reconcile_open_prs(args)
     if args.command == "verify-claim":
         return verify_claim(args)
-    if args.command == "list-unlooked":
-        return list_unlooked(args)
-    if args.command == "looker-walk":
-        return looker_walk(args)
-    if args.command == "render-worklist":
-        return render_worklist(args)
-    if args.command == "attest-resolve":
-        return attest_resolve(args)
     if args.command == "engage-outdated":
         return engage_outdated(args)
     if args.command == "reconcile-witness":
@@ -2216,6 +2022,6 @@ def main() -> int:
 if __name__ == "__main__":
     try:
         raise SystemExit(main())
-    except Exception as exc:  # pragma: no cover - workflow-facing failure path
+    except Exception as exc:  # pragma: no cover  # pylint: disable=broad-except
         print(f"review_feedback_loop.py failed: {exc}", file=sys.stderr)
         raise

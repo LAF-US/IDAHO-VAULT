@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoNews6 2 justices argue Supreme Court should 'fix'..."
 date: 2020-10-05
 time: 21:15:26
 tweet_id: "1313226315781341190"
@@ -15,12 +16,12 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoNews6: 2 justices argue Supreme Court should 'fix' same-sex marriage decision https://t.co/TFkLJL3AJx https://t.co/S7IBnMBLKg
+RT @IdahoNews6: 2 justices argue Supreme Court should 'fix' same-sex marriage decision <https://t.co/TFkLJL3AJx> <https://t.co/S7IBnMBLKg>
 
 ## Links
-- https://buff.ly/33yPAiS
+- <https://buff.ly/33yPAiS>
 
 ## Media
-- ![](https://pbs.twimg.com/media/EjlXy2QXYAQS6Xy.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EjlXy2QXYAQS6Xy.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1313226315781341190)

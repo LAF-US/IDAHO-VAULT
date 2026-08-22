@@ -9,7 +9,7 @@ from unittest.mock import patch
 from urllib import error
 
 
-PROJECT_ROOT = Path(__file__).resolve().parents[1]
+PROJECT_ROOT = Path(__file__).resolve().parents[0]
 
 
 def _load_module(module_name: str, relative_path: str):

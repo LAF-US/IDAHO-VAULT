@@ -50,7 +50,7 @@ triptych's one sentence: **authenticate by warrant, never by face** — said for
 for power.
 
 | | **I · The Aria** (left wing) | **II · The Letter** (center / the hinge) | **III · The Name** (right wing) |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Logan's line | *"I'd rather have civil war than witness Caesar claiming he's a king"* | *"Shall Rome, &c."* | *"Caesar was a name before it became a title"* |
 | What is struck (the **face**) | the **anthem** — restoration-rhetoric | the **gap** — the unfinished line | the **name** — the man Gaius Julius |
 | What escapes (the **warrant**) | who is actually *delegated* to unseat the apex | who *wrote* the note, and where it *steers* | the **office** the name becomes |
@@ -182,4 +182,8 @@ Logan inscribes.
 - **Author:** `*.claude.*` (Claude Code, branch `claude/shall-rome-lyrics-ok9049`)
 - **Scope:** the three Shall Rome readings (aria / letter / name) bound as one triptych — the blade reaches the face, the warrant escapes; distinct from the vault's reserved Three Caesars
 
-###### [["The world is quiet here."]]
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

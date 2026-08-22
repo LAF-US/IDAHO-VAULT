@@ -1,4 +1,5 @@
 ---
+title: "In my defense, it is the House side where the committee..."
 date: 2021-11-16
 time: 01:15:06
 tweet_id: "1460416101641191427"

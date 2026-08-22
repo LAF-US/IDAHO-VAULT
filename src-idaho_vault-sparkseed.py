@@ -61,13 +61,18 @@ def _format_command(command: list[str]) -> str:
 
 def _run_capture(command: list[str]) -> subprocess.CompletedProcess[str]:
     try:
-        return subprocess.run(command, capture_output=True, text=True, check=False)
+        return subprocess.run(command, capture_output=True, text=True, check=False, timeout=15)
+    except subprocess.TimeoutExpired as exc:
+        raise SparkseedError(f"Command timed out after 15s: '{_format_command(command)}'") from exc
     except OSError as exc:
         raise SparkseedError(f"Failed to start command '{_format_command(command)}': {exc}") from exc
 
 
 def _run_stream(command: list[str], *, env: dict[str, str]) -> subprocess.CompletedProcess[str]:
     try:
+        # One of these commands is `gateway run`, a foreground server meant to
+        # run until stopped; a fixed timeout would kill it outright.
+        # timeout: interactive
         return subprocess.run(command, env=env, check=False)
     except OSError as exc:
         raise SparkseedError(f"Failed to start command '{_format_command(command)}': {exc}") from exc
@@ -98,6 +103,7 @@ def ensure_op_signed_in() -> None:
         command = ["op", "whoami"]
     else:
         command = ["op", "signin"]
+        # timeout: interactive -- may prompt the human for a password/2FA code.
         result = subprocess.run(
             command,
             env=os.environ.copy(),
@@ -211,7 +217,7 @@ def main(argv: list[str] | None = None) -> int:
     """CLI entrypoint for the Python-native SPARKSEED bootstrap."""
 
     parser = argparse.ArgumentParser(
-        prog="sta***REMOVED***SPARKSEED",
+        prog="start_SPARKSEED",
         description="Bootstrap the OpenClaw runtime from local 1Password-backed vault state.",
     )
     parser.parse_args(argv)

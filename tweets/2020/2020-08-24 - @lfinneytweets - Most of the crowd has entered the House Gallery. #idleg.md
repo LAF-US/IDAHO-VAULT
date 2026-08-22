@@ -1,4 +1,5 @@
 ---
+title: "Most of the crowd has entered the House Gallery. #idleg"
 date: 2020-08-24
 time: 15:59:54
 tweet_id: "1297926615289090049"
@@ -16,10 +17,10 @@ related:
   - idleg
 ---
 
-Most of the crowd has entered the House Gallery. #idleg https://t.co/reS2Rpl7ow
+Most of the crowd has entered the House Gallery. #idleg <https://t.co/reS2Rpl7ow>
 
 ## Media
-- ![](https://pbs.twimg.com/media/EgMpXeqU0AAGs14.jpg)
-- ![](https://pbs.twimg.com/media/EgMpXvKVAAEgk_V.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EgMpXeqU0AAGs14.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EgMpXvKVAAEgk_V.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1297926615289090049)

@@ -1,4 +1,5 @@
 ---
+title: "Which Idaho GOP candidates got the least votes total #idleg..."
 date: 2024-05-22
 time: 19:29:03
 tweet_id: "1793363462724460753"

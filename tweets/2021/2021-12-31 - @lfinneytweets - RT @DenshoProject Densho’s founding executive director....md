@@ -1,4 +1,5 @@
 ---
+title: "RT @DenshoProject Densho\u2019s founding executive director..."
 date: 2021-12-31
 time: 21:47:39
 tweet_id: "1477033735975366657"

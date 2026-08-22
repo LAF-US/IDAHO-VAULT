@@ -5,5 +5,5 @@ related:
 - police
 ---
 
-cities 
-police 
+cities
+police

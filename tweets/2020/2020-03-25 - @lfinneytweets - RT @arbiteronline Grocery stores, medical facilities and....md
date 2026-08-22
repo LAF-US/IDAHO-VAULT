@@ -1,4 +1,5 @@
 ---
+title: "RT @arbiteronline Grocery stores, medical facilities and..."
 date: 2020-03-25
 time: 19:49:59
 tweet_id: "1242901563913302016"

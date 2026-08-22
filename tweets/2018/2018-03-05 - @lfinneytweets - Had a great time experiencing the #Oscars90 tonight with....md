@@ -1,4 +1,5 @@
 ---
+title: "Had a great time experiencing the #Oscars90 tonight with..."
 date: 2018-03-05
 time: 09:09:39
 tweet_id: "970587129809027072"
@@ -22,10 +23,9 @@ related:
   - KenworthyPAC
 ---
 
-Had a great time experiencing the #Oscars90 tonight with @KenworthyPAC  
-#KPACOscars #KenworthyPAC https://t.co/MB8jZ8E5tR
+Had a great time experiencing the #Oscars90 tonight with @KenworthyPAC #KPACOscars #KenworthyPAC <https://t.co/MB8jZ8E5tR>
 
 ## Media
-- ![](https://pbs.twimg.com/media/DXg31HYU8AAgcrH.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/DXg31HYU8AAgcrH.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/970587129809027072)

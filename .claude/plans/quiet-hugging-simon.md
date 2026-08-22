@@ -7,7 +7,8 @@
 The `!_2026_BUDGETS.xlsx` tracker was built from a broader set of legislative bills, but Logan's rule is that only true appropriations bills belong there. In the minidata CSV feed, DFM/LSO marks appropriations bills by starting the **title** field with the literal string `Approp,` (e.g. `"Approp, jud branch, FY 2027 maint"`, `"Approp, PERSI, add'l"`). This is a naming convention, not a structured flag.
 
 Examples from `minidata-2026-04-01.csv`:
-```
+
+```text
 H0847,"Approp, jud branch, FY 2027 maint",LAW+,
 H0868,"Approp, PERSI, add'l",LAW+,
 H0919,"Approp, perm bldg fund, orig",LAW+,

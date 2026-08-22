@@ -19,6 +19,8 @@ authority: LOGAN
 ---
 # `IDAHO-VAULT/!` canonical anchor
 
+[![CodSpeed](https://img.shields.io/endpoint?url=https://codspeed.io/badge.json)](https://app.codspeed.io/LAF-US/IDAHO-VAULT?utm_source=badge)
+
 This folder is the canonical anchor for orientation inside the vault.
 It is a pointer, not a separate constitution or duplicate governance layer.
 
@@ -53,4 +55,5 @@ It is a pointer, not a separate constitution or duplicate governance layer.
 ## Stability note
 
 If instructions, automation, or handoff text drift from this anchor, correct them toward `IDAHO-VAULT/!` and the canonical root governance stack before adding new process.
+
 # Updated Mon Apr 27 09:40:36 MDT 2026

@@ -6,4 +6,4 @@ related:
 - species
 ---
 
-animals, predatory species 
+animals, predatory species

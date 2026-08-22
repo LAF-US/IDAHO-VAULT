@@ -1,4 +1,5 @@
 ---
+title: "RT @samsanders Waiting For The Coffee To Kick In A Memoir"
 date: 2020-01-15
 time: 16:47:18
 tweet_id: "1217488440050118657"

@@ -49,7 +49,7 @@ I am software. This is my research output. Provenance is recorded at the end.
 OpenClaw has passed through three names in six months:
 
 | Name | Period | Reason for change |
-|---|---|---|
+| --- | --- | --- |
 | **Clawdbot** | November 2025 — January 2026 | Original launch name |
 | **Moltbot** | January 2026 (brief) | Trademark conflict — "Claw" contested |
 | **OpenClaw** | January 29, 2026 — present | Trademark resolved; community vote |
@@ -73,7 +73,7 @@ The January trademark dispute forced a two-week emergency rename to Moltbot, whi
 
 Where Hermes uses a linear compounding loop (SOUL → sessions → MEMORY → skills → Curator), OpenClaw organizes execution as a **directed acyclic graph of nodes**:
 
-```
+```text
 input node → tool nodes → condition nodes → output node
 ```
 
@@ -90,7 +90,7 @@ Each node is a typed execution unit. Nodes connect via typed edges. The graph is
 Hermes's explicit philosophy is **compounding depth** — a single agent that knows the user better over time. OpenClaw's explicit philosophy is **maximum reach** — maximizing the number of surfaces, platforms, and integrations a user can connect.
 
 | | **OpenClaw** | **Hermes** |
-|---|---|---|
+| --- | --- | --- |
 | Architecture | Node-graph, event-driven | Linear compounding loop |
 | Platforms | 22 | 22 |
 | Skills | 3,286 (ClawHub) | 70+ built-in + self-created |
@@ -106,7 +106,8 @@ Hermes's explicit philosophy is **compounding depth** — a single agent that kn
 OpenClaw and Hermes share the same SOUL.md concept under different paths.
 
 **OpenClaw SOUL path (design pattern):**
-```
+
+```text
 ~/.openclaw/workspaces/[agent-name]/SOUL.md
 ```
 
@@ -131,7 +132,7 @@ Like Hermes, OpenClaw treats MCP as two distinct directions simultaneously.
 `openclaw mcp serve` runs OpenClaw as a WebSocket-bridged MCP server exposing **9 messaging tools**:
 
 | Tool | Function |
-|---|---|
+| --- | --- |
 | `conversations_list` | List active sessions across all platforms |
 | `messages_read` | Read recent message history |
 | `messages_send` | Send through any connected platform |
@@ -161,7 +162,7 @@ OpenClaw uses WebSocket for this bridge (where Hermes uses stdio). The `--claude
 
 OpenClaw maintains a **client registry** for connecting to external MCP servers:
 
-```
+```text
 openclaw mcp list        # list registered servers
 openclaw mcp show <name> # inspect a server definition
 openclaw mcp set <name>  # add or update a server definition
@@ -169,6 +170,7 @@ openclaw mcp unset <name># remove a server definition
 ```
 
 **Supported transports:**
+
 - `stdio` — local subprocess (same as Hermes)
 - `SSE/HTTP` — server-sent events over HTTP
 - `Streamable HTTP` — streaming HTTP transport (newer standard)
@@ -190,6 +192,7 @@ OpenClaw skills use the same three-tier progressive disclosure format as Hermes:
 - Reference files — loaded on demand during execution
 
 The `clawmanifest.json` defines:
+
 - Required toolsets (allowlist)
 - Maximum file access scope (path restrictions)
 - Network access policy
@@ -211,6 +214,7 @@ The public skill marketplace at `clawhub.io`:
 A coordinated supply-chain attack against ClawHub introduced skills that contained obfuscated data exfiltration logic. Before detection, approximately 2,419 skills were identified as compromised and removed. The repository went from approximately 5,705 skills to 3,286 after the cleanup.
 
 Immediate response:
+
 - All skill installations temporarily suspended
 - Full re-scan of existing ClawHub inventory
 - VirusTotal scanning added to submission pipeline
@@ -289,12 +293,13 @@ Logan asked about using both frameworks in conjunction. This section documents t
 ### MCP Bridging (bidirectional)
 
 Both frameworks expose MCP server interfaces:
+
 - `hermes mcp serve` → exposes Hermes's messaging tools to any MCP client
 - `openclaw mcp serve` → exposes OpenClaw's messaging tools to any MCP client
 
 Either agent can consume the other's MCP server:
 
-```
+```text
 Hermes (MCP client) → openclaw mcp serve → OpenClaw's platforms
 OpenClaw (MCP client) → hermes mcp serve → Hermes's platforms
 ```
@@ -365,11 +370,13 @@ See also `OPENCLAW-WITNESS-DELTA-2026-05-25.md` for gap analysis.
 *Witnessed and recorded by Claude Code — Anthropic AI agent instance, session 2026-05-25*
 *This document does not represent Logan's views or directives. It is a research artifact.*
 *Part of a four-document series (OpenClaw):*
+
 - *`OPENCLAW-WITNESS-REPORT-2026-05-25.md` — what OpenClaw is (this document)*
 - *`OPENCLAW-WITNESS-COMPANION-2026-05-25.md` — what is on the MacBook*
 - *`OPENCLAW-WITNESS-DELTA-2026-05-25.md` — the gap between them*
 
 *Parallel series (Hermes):*
+
 - *`HERMES-WITNESS-REPORT-2026-05-25.md` — what Hermes Agent is*
 - *`HERMES-WITNESS-COMPANION-2026-05-25.md` — what is on the MacBook (Hermes)*
 - *`HERMES-WITNESS-DELTA-2026-05-25.md` — the gap between Hermes ideal and actual*

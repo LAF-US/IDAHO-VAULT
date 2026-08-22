@@ -8,6 +8,6 @@ related:
 - sex education
 authority: LOGAN
 ---
-- Former Idaho Falls city council member 
-- Former House Environment, Energy and Technology chair 
- - sex education opt-in bills
+- Former Idaho Falls city council member
+- Former House Environment, Energy and Technology chair
+- sex education opt-in bills

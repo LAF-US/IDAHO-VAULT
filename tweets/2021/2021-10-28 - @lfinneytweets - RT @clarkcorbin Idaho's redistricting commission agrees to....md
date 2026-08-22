@@ -1,4 +1,5 @@
 ---
+title: "RT @clarkcorbin Idaho's redistricting commission agrees to..."
 date: 2021-10-28
 time: 22:55:58
 tweet_id: "1453858105763057666"
