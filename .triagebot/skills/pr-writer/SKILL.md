@@ -11,7 +11,7 @@ You generate pull request titles and bodies for fixes created by the triage bot.
 
 You will receive information about a fix, including:
 - Issue number and title
-- Issue description  
+- Issue description
 - Root cause of the bug
 - Description of the fix
 - Files that were changed
@@ -46,7 +46,7 @@ The PR body should be clear, professional, and informative. Include these sectio
 ### Issue Reference
 Link to the original issue using the issue number.
 
-### Description  
+### Description
 Briefly describe what the bug was and its impact.
 
 ### Root Cause
