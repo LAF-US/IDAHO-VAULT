@@ -35,12 +35,6 @@ import re
 import sys
 from datetime import datetime, timezone
 
-# Note: `_author_is_bot` and `_thread_has_committable_suggestion` also live in
-# pr_threads but are NOT imported here — the engine reaches them only transitively
-# (through `_thread_resolution_disposition`), so the engine's surface stays honest
-# to what it uses. Their unit tests reference them from pr_threads directly.
-import gh_cli
-from pr_github import _fetch_pr, _graphql, _viewer_login
 from pr_threads import (  # shared thread-analysis vocabulary (#600 §5)
     _count_committable_suggestion_threads,
     _thread_authors,
@@ -49,6 +43,15 @@ from pr_threads import (  # shared thread-analysis vocabulary (#600 §5)
     _thread_resolution_disposition,
     _thread_resolved_by,
 )
+
+# Note: `_author_is_bot` and `_thread_has_committable_suggestion` also live in
+# pr_threads but are NOT imported here — the engine reaches them only transitively
+# (through `_thread_resolution_disposition`), so the engine's surface stays honest
+# to what it uses. Their unit tests reference them from pr_threads directly.
+
+import gh_cli
+from pr_github import _fetch_pr, _graphql, _viewer_login
+
 
 APPLY_RE = re.compile(r"@copilot\b[\s\S]*?\bapply changes\b", re.IGNORECASE)
 DEFAULT_GRACE_MINUTES = 30
@@ -722,13 +725,17 @@ def _ensure_label(name: str, color: str, description: str) -> None:
 
 
 def ensure_labels() -> None:
-    """Create or update the lifecycle labels; delete retired ones on sight."""
+    """Create or update lifecycle labels without aborting callers on a scope gap."""
     for label, (color, description) in LABEL_SPECS.items():
-        _ensure_label(label, color, description)
+        try:
+            _ensure_label(label, color, description)
+        except RuntimeError:
+            print(f"::warning::ensure_labels skipped '{label}' due to a label-management failure", file=sys.stderr)
     for label in RETIRED_LABELS:
-        # check=False: an already-absent retired label exits non-zero, and
-        # absence is exactly the state this enforces — idempotent by design.
-        gh_cli.label_delete(label, check=False)
+        try:
+            gh_cli.label_delete(label, check=False)
+        except RuntimeError:
+            print(f"::warning::ensure_labels could not retire '{label}' due to a label-management failure", file=sys.stderr)
 
 
 def _num(value: int) -> str:
@@ -741,9 +748,6 @@ def _num(value: int) -> str:
 
 def _slug(owner: str, repo: str) -> str:
     """Return ``owner/repo``, pinned to the one repository this engine governs."""
-    # Written as inline literals, and the checked values are the ones used, because
-    # that is the shape a comparison-against-constants takes — it is what keeps an
-    # arbitrary --repo from travelling onward into a command line.
     if owner not in ("LAF-US",) or repo not in ("IDAHO-VAULT",):
         raise ValueError(f"This engine is scoped to LAF-US/IDAHO-VAULT, got: {owner!r}/{repo!r}")
     return f"{owner}/{repo}"
@@ -1363,6 +1367,14 @@ def _build_reconciliation_report(
 
 def acknowledge_apply(args: argparse.Namespace) -> int:
     """Mark a PR as waiting on follow-up commits after a trusted apply-changes request."""
+    # Cheap, local filters first: every comment on every PR reaches this function
+    # (the workflow trigger has no author/content filter), and most of them are
+    # third-party review-bot noise, not @copilot apply requests. `ensure_labels()`
+    # is a sweep of the repo's whole label set (multiple `gh label create/delete`
+    # calls) plus a full checkout — worth paying only on the path that actually
+    # mutates a label, not on every no-op comment. Running it unconditionally here
+    # was what turned a burst of unrelated bot comments into a burst of GitHub API
+    # calls large enough to trip the installation's rate limit.
     if not APPLY_RE.search(args.comment_body or ""):
         print("Comment does not match an @copilot apply request; nothing to do.")
         return 0
