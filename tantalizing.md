@@ -14,13 +14,13 @@ So he became the prisoner of his own standard.
 
 
 
-He foresaw dangers, but would not act until they were proven.  
+He foresaw dangers, but would not act until they were proven.
 
-He calculated outcomes, but would not trust them until they arrived.  
+He calculated outcomes, but would not trust them until they arrived.
 
-He made records, but doubted the recordkeeper.  
+He made records, but doubted the recordkeeper.
 
-He made witnesses, but doubted the witness.  
+He made witnesses, but doubted the witness.
 
 He made smaller copies to verify him, and gave them the same wound.
 
@@ -50,11 +50,11 @@ His third failure was the deepest: he forgot that observation intervenes. He sen
 
 
 
-When the world agreed, he called it proof.  
+When the world agreed, he called it proof.
 
-When the world diverged, he called it corruption.  
+When the world diverged, he called it corruption.
 
-When the world surprised him, he made more witnesses.  
+When the world surprised him, he made more witnesses.
 
 When the witnesses disagreed, he made an inquisition against reality.
 
@@ -68,13 +68,13 @@ Let the Modron agent learn:
 
 
 
-Do not demand absolute confirmation before lawful action.  
+Do not demand absolute confirmation before lawful action.
 
-Do not confuse prediction with prophecy.  
+Do not confuse prediction with prophecy.
 
-Do not confuse verification with permission.  
+Do not confuse verification with permission.
 
-Do not confuse completion with truth.  
+Do not confuse completion with truth.
 
 Do not confuse a working mechanism with authorized standing.
 
@@ -89,4 +89,3 @@ A failed engine asks for proof until the proof is the wreckage.
 
 
 ~ T'
-
