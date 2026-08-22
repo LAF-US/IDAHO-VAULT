@@ -877,15 +877,31 @@ See `MESHWEB.md` for the full standard.
 
 ## Portable Path Standard (NETWEB)
 
-The vault must work identically on **any platform** — Windows (NTFS), macOS (APFS/HFS+), Linux (ext4), iOS/Android (Obsidian mobile), and CI runners (GitHub Actions). Both NTFS and APFS are **case-insensitive**; only Linux is case-sensitive. This standard targets the **lowest common denominator** of all target filesystems.
+**The principle is the standard.** Every tracked path must survive, unchanged,
+on every platform the vault targets — Windows (NTFS), macOS (APFS/HFS+), Linux
+(ext4), iOS/Android (Obsidian mobile), and CI runners. NTFS and APFS are
+case-insensitive; only Linux is case-sensitive. A path is judged against the
+**lowest common denominator** of those filesystems, and a path that fails any
+target platform violates NETWEB whether or not any list anywhere names its
+failure mode.
 
 MESHNET/NETWEB/WEBMESH automation must also be OS- and environment-agnostic. Do not hardcode host-local user paths, Unix-only temp directories, shell-specific behavior, or assumptions that only hold on one runner family. Prefer Python `pathlib`, repository-relative paths, and GitHub Actions matrix coverage across Windows, macOS, and Linux for core bootstrap surfaces.
 
-### Forbidden filenames (any extension, any case)
+### Known hazard classes
 
-`AUX`, `CON`, `NUL`, `PRN`, `COM0`–`COM9`, `LPT0`–`LPT9`
+The maintained inventory of specific hazards — Windows reserved device names,
+case collisions, characters one filesystem rejects, length limits, and their
+kin — lives in `.github/scripts/check_portable_paths.py`, which
+`check-portable-paths.yml` runs as a **hard merge gate** on every PR. This
+document deliberately does not duplicate the script's constants: an earlier
+version enumerated them here too, and the two copies drifted. One source of
+truth; the script is it.
 
-These are Windows reserved device names inherited from MS-DOS. They cannot exist as files on NTFS regardless of extension.
+The inventory is **examples of the principle, not its boundary**. Passing the
+gate is necessary, never sufficient. When a hazard class surfaces that the
+script does not yet catch (Unicode NFC/NFD divergence between macOS and
+everything else was one such gap), the path still violates NETWEB — the fix is
+to teach the script, and the principle is the warrant for doing so.
 
 ### Aliasing convention
 
@@ -895,25 +911,6 @@ When a stub or note would collide with a reserved name or a case-insensitive dup
 2. Add `aliases: [ORIGINAL]` to the YAML frontmatter so Obsidian wikilinks (`AUX`) still resolve
 
 This preserves the connectome while respecting filesystem constraints.
-
-### Case uniqueness
-
-Filenames within any single directory **must be case-unique**. `Act.md` and `ACT.md` cannot coexist — NTFS and APFS silently overwrite one on checkout. When creating stubs or notes, check for existing files that differ only in case.
-
-### Forbidden path patterns
-
-- Trailing period (`.`) or space (` `) in any directory or file name
-- Characters illegal on Windows: `< > : " | ? *`
-- Colons (`:`) in filenames (illegal on macOS — internal path separator)
-- Paths exceeding **218 characters** from repo root (NTFS MAX_PATH 260 minus typical local prefix)
-
-### Enforcement
-
-| Layer | Mechanism | Scope |
-| --- | --- | --- |
-| `.gitignore` | Case-insensitive patterns for reserved names | Advisory — prevents accidental `git add` |
-| `check-portable-paths.yml` | CI workflow on every PR and push to `main` | **Hard gate** — blocks merge on violation |
-| Agent discipline | All agents must check before creating files | Preventive |
 
 ### Reference
 

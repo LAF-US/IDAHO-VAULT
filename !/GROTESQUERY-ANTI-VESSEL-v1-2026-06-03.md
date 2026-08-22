@@ -33,6 +33,14 @@ containment angle. Author and authority named; not defaulted to Logan.*
 *The Faceless Ones*); the Grotesquery, Baron Vengeous, the Isthmus Anchor, the
 Diablerie, Fletcher Renn. Drawn from the vault's own Fandom records.*
 
+*Not to be confused with **Grim's Grotesques** — Garth Nix, Keys to the Kingdom —
+the seven executives Grim Tuesday made by melding Dawn, Noon and Dusk into one
+and recasting that into seven (the prologue names four: Yan, Tan, Tethera,
+Methera). Different author,
+different mechanism: Landy's Grotesquery is a stitched vessel for a Faceless
+One, Nix's Grotesques are remelted officeholders. See
+[[GARTH-NIX-GRIM-TUESDAY-THE-PIT]].*
+
 ---
 
 ## Why It Is the Anti-Vessel

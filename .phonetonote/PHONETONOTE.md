@@ -1,4 +1,5 @@
 ---
+title: PHONETONOTE
 authority: LOGAN
 related:
   - PHONETONOTE

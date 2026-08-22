@@ -273,7 +273,7 @@ def main():
         ]
         for item in no_archive:
             report_lines.append(
-                f"| `{item['path'].name}` | {item['url'][:80]} | {item['live_status']} |"
+                f"| `{item['path'].name}` | <{item['url'][:80]}> | {item['live_status']} |"
             )
         report_lines.append("")
 
@@ -283,7 +283,7 @@ def main():
             "| Note | URL |", "|---|---|",
         ]
         for item in unreachable:
-            report_lines.append(f"| `{item['path'].name}` | {item['url'][:80]} |")
+            report_lines.append(f"| `{item['path'].name}` | <{item['url'][:80]}> |")
         report_lines.append("")
 
     report_path.write_text("\n".join(report_lines), encoding="utf-8")
