@@ -41,4 +41,3 @@ Surfaced only in a wider spot-check sample outside the 24h audit window (repo hi
 - **The audit-PR pile did not shrink.** Open PRs whose title/branch matches the "audit(ci) / CI failure sweep" pattern as of this sweep: #859 (07-21), #861 (07-22), #862 (07-23), #866 (07-27), #882 (07-30), #884 (07-31), #905 (08-03) — seven, before this one. This sweep follows the established instruction (bundle the report with a real fix, don't file a report-only PR) but that alone doesn't clear the backlog; only merging or deliberately closing the existing seven does. Worth a batch pass on Logan's end — per this routine's own instructions, this session is not closing any of them itself.
 
 ---
-Cross-posted: GitHub issue #822 (comment), Linear LAF-72 (comment), Slack #all-logan-finney, Discord #ledger (via Zapier).

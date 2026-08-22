@@ -1367,8 +1367,14 @@ def _build_reconciliation_report(
 
 def acknowledge_apply(args: argparse.Namespace) -> int:
     """Mark a PR as waiting on follow-up commits after a trusted apply-changes request."""
-    ensure_labels()
-
+    # Cheap, local filters first: every comment on every PR reaches this function
+    # (the workflow trigger has no author/content filter), and most of them are
+    # third-party review-bot noise, not @copilot apply requests. `ensure_labels()`
+    # is a sweep of the repo's whole label set (multiple `gh label create/delete`
+    # calls) plus a full checkout — worth paying only on the path that actually
+    # mutates a label, not on every no-op comment. Running it unconditionally here
+    # was what turned a burst of unrelated bot comments into a burst of GitHub API
+    # calls large enough to trip the installation's rate limit.
     if not APPLY_RE.search(args.comment_body or ""):
         print("Comment does not match an @copilot apply request; nothing to do.")
         return 0
@@ -1394,6 +1400,7 @@ def acknowledge_apply(args: argparse.Namespace) -> int:
     labels = {node["name"] for node in pr.get("labels") or [] if node.get("name")}
 
     if DEFAULT_PENDING_LABEL not in labels:
+        ensure_labels()
         _edit_label(args.pr_number, add=DEFAULT_PENDING_LABEL)
         _comment(
             args.pr_number,
