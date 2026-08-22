@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import os
 from collections import Counter, defaultdict
 from datetime import date
 from pathlib import Path
@@ -10,13 +11,12 @@ from pathlib import Path
 
 def resolve_repo_path(repo_root: Path, raw_path: str, label: str) -> Path:
     """Resolve a CLI path and reject any path outside the repository root."""
-    repo_root = repo_root.resolve()
-    resolved_path = (repo_root / raw_path).resolve()
-    try:
-        resolved_path.relative_to(repo_root)
-    except ValueError as error:
-        raise ValueError(f"{label} must stay within the repository root: {raw_path}") from error
-    return resolved_path
+    root_path = os.path.realpath(os.fspath(repo_root))
+    resolved_path = os.path.realpath(os.path.join(root_path, raw_path))
+    safe_prefix = os.path.join(root_path, "")
+    if not resolved_path.startswith(safe_prefix):
+        raise ValueError(f"{label} must stay within the repository root: {raw_path}")
+    return Path(resolved_path)
 
 
 def load_manifest(path: Path) -> list[dict[str, object]]:
