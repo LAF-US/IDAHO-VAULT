@@ -3,7 +3,7 @@ title: "Esto Perpetua!"
 status: permanent
 date created: 2026-04-04
 alias: the canonical readme
-date updated: 2026-04-13
+date updated: 2026-06-10
 authority: "[[ADMIN]][[LOGAN]]"
 ---
 
@@ -13,7 +13,7 @@ authority: "[[ADMIN]][[LOGAN]]"
 
 ---
 
-READ is a homophone. All prior README documents you have encountered have used "read" as a directive or a command. THIS readme uses it as a descriptor or an adjective -- you must have read something to make your way to this place.
+READ is a *heteronym and homograph*. All prior README documents you have encountered have used "read" as a directive or a command. THIS readme uses it as a descriptor or an adjective -- you must have read something to make your way to this place.
 
 This is the **CANON CORE `[ ! ]`** of IDAHO-VAULT.
 
@@ -21,7 +21,7 @@ Files committed here are permanent record. They do not move. They do not expire.
 
 **THE GOLDEN PATH:** `!/!/__!__/!/! The world is quiet here./Esto Perpetua!/*`
 
-Inscribed by the fingers of the hands of the designer, Logan Alvan Finney, in 2026.
+Inscribed by the fingers of the hands of the designer and architect, Logan Alvan Finney, in 2026.
 
 ---
 
