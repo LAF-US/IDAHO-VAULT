@@ -29,14 +29,14 @@ services:
         sync: false
       - key: DATABASE_URL
         fromDatabase:
-          name: mydatabase
+          name: elephant
           property: connectionString
       - key: MINIO_PASSWORD
         fromService:
           name: minio
           type: pserv
           envVarKey: MINIO_ROOT_PASSWORD
-      - fromGroup: my-env-group
+      - fromGroup: conc-settings
     ipAllowList:
       - source: 203.0.113.4/30
         description: office
