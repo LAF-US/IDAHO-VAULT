@@ -10,7 +10,7 @@ from unittest import mock
 
 
 def _load_stale_bot_prs_module():
-    project_root = Path(__file__).resolve().parents[1]
+    project_root = Path(__file__).resolve().parents[0]
     script_dir = project_root / ".github" / "scripts"
     if str(script_dir) not in sys.path:
         sys.path.insert(0, str(script_dir))

@@ -12,9 +12,12 @@ import argparse
 import filecmp
 import hashlib
 import json
+import os
 import re
 import shutil
 import subprocess
+import sys
+import tempfile
 import time
 from dataclasses import dataclass
 from pathlib import Path
@@ -158,11 +161,33 @@ class HashCache:
         self.data: dict[str, dict[str, Any]] = {}
 
     def load(self) -> None:
+        # `utf-8-sig`, not `utf-8`: this vault runs on Windows, where a
+        # round-trip through PowerShell's default UTF-8 writer prepends a BOM.
+        # `json.loads` rejects a BOM, this except-branch swallowed the error,
+        # and the cache came back empty every run — 8,902 entries and 1.7 MB
+        # that nothing read, with no warning that anything was wrong. Writing
+        # stays plain `utf-8` (RFC 8259: a BOM must not be added); reading
+        # tolerates one so a Windows tool touching the file cannot silently
+        # turn the cache off again. `utf-8-sig` decodes BOM-less text
+        # unchanged, so this is strictly wider than what it replaces.
         if self.disabled or not self.path.exists():
             return
         try:
-            raw = json.loads(self.path.read_text(encoding="utf-8"))
-        except (OSError, json.JSONDecodeError):
+            if self.path.is_symlink() or not self.path.is_file():
+                raise OSError("cache path is not a regular file")
+            if self.path.stat().st_size > 32 * 1024 * 1024:
+                raise OSError("cache exceeds the 32 MiB safety limit")
+            with self.path.open("r", encoding="utf-8-sig") as cache_file:
+                raw = json.load(cache_file)
+        except (OSError, UnicodeDecodeError, json.JSONDecodeError) as exc:
+            # Silence here is what hid the problem for the life of the file.
+            # A missing cache is normal and returns above; one that exists and
+            # will not parse is an anomaly, and the run should say so.
+            print(
+                f"hash cache at {self.path.name} unreadable ({exc}); "
+                "recomputing every digest",
+                file=sys.stderr,
+            )
             return
         if isinstance(raw, dict):
             self.data = {
@@ -174,10 +199,30 @@ class HashCache:
     def save(self) -> None:
         if self.disabled or self.read_only or not self.dirty:
             return
-        self.path.write_text(
-            json.dumps(self.data, sort_keys=True, separators=(",", ":")),
-            encoding="utf-8",
-        )
+        if self.path.is_symlink():
+            raise OSError("refusing to replace a symlinked hash cache")
+        payload = json.dumps(self.data, sort_keys=True, separators=(",", ":"))
+        temporary: Path | None = None
+        try:
+            with tempfile.NamedTemporaryFile(
+                "w",
+                encoding="utf-8",
+                dir=self.path.parent,
+                prefix=f".{self.path.name}.",
+                suffix=".tmp",
+                delete=False,
+            ) as cache_file:
+                temporary = Path(cache_file.name)
+                cache_file.write(payload)
+                cache_file.flush()
+                os.fsync(cache_file.fileno())
+            if self.path.is_symlink():
+                raise OSError("refusing to replace a symlinked hash cache")
+            os.replace(temporary, self.path)
+            temporary = None
+        finally:
+            if temporary is not None:
+                temporary.unlink(missing_ok=True)
 
     def sha256(self, path: Path, key: str) -> str:
         stat = path.stat()

@@ -1,4 +1,5 @@
 ---
+title: CLAUDE
 canonical_name: CLAUDE
 persona_class: imported_software
 origin: software
