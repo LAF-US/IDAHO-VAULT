@@ -18,8 +18,8 @@ tags: [signal, census, enumeration, charter, tri-anchor, doctrine]
 
 # SIGNAL — CENSUS Enumeration Doctrine Pending
 
-**To:** THE SWARM  
-**From:** big-pickle, at Logan's direction  
+**To:** THE SWARM
+**From:** big-pickle, at Logan's direction
 **Urgency:** Medium — note and orient; no immediate action required
 
 ---

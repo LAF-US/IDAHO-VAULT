@@ -1,6 +1,9 @@
 from __future__ import annotations
 
 import importlib.util
+import json
+import subprocess
+import sys
 import unittest
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -9,13 +12,31 @@ from unittest import mock
 
 
 def _load_review_feedback_loop_module():
-    project_root = Path(__file__).resolve().parents[1]
-    script_path = project_root / ".github" / "scripts" / "review_feedback_loop.py"
-    spec = importlib.util.spec_from_file_location("review_feedback_loop_test_module", script_path)
-    module = importlib.util.module_from_spec(spec)
-    assert spec.loader is not None
-    spec.loader.exec_module(module)
-    return module
+    script_name = Path(".github/scripts/review_feedback_loop.py")
+    project_root = next(
+        (candidate for candidate in Path(__file__).resolve().parents if (candidate / script_name).is_file()),
+        None,
+    )
+    if project_root is None:
+        raise RuntimeError(f"Unable to find repository root containing {script_name}")
+
+    script_dir = project_root / ".github" / "scripts"
+    helper_dirs = (script_dir, project_root / "scripts_scripts")
+    added_to_path = [str(path) for path in helper_dirs if str(path) not in sys.path]
+    for path_text in reversed(added_to_path):
+        sys.path.insert(0, path_text)
+
+    try:
+        script_path = script_dir / "review_feedback_loop.py"
+        spec = importlib.util.spec_from_file_location("review_feedback_loop_test_module", script_path)
+        if spec is None or spec.loader is None:
+            raise RuntimeError(f"Unable to load review feedback loop from {script_path}")
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        return module
+    finally:
+        for path_text in added_to_path:
+            sys.path.remove(path_text)
 
 
 review_feedback_loop = _load_review_feedback_loop_module()
@@ -69,6 +90,12 @@ def _pr(
         "labels": _labels(*labels),
         "reviewThreads": {"nodes": list(threads)},
     }
+
+
+def _pr_view_result(*label_names: str) -> subprocess.CompletedProcess[str]:
+    """Shape a `gh pr view --json labels` result, as `acknowledge_apply` reads it."""
+    stdout = json.dumps({"labels": [{"name": name} for name in label_names]})
+    return subprocess.CompletedProcess(args=["gh"], returncode=0, stdout=stdout)
 
 
 class ReviewFeedbackLoopTest(unittest.TestCase):
@@ -264,18 +291,99 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
             comment_body="@copilot apply changes",
         )
 
-        with mock.patch.object(review_feedback_loop, "ensure_labels"), mock.patch.object(
-            review_feedback_loop,
-            "_fetch_pr",
-            return_value=_pr(labels=()),
+        with mock.patch.object(
+            review_feedback_loop, "ensure_labels"
+        ) as ensure_labels, mock.patch.object(
+            review_feedback_loop.gh_cli,
+            "pr_view",
+            return_value=_pr_view_result(),
         ), mock.patch.object(review_feedback_loop, "_edit_label") as edit_label, mock.patch.object(
             review_feedback_loop, "_comment"
         ) as comment:
             result = review_feedback_loop.acknowledge_apply(args)
 
         self.assertEqual(result, 0)
+        # ensure_labels() is only worth paying for on the path that actually
+        # mutates a label -- see the module-level comment on acknowledge_apply.
+        ensure_labels.assert_called_once_with()
         edit_label.assert_called_once_with(41, add=review_feedback_loop.DEFAULT_PENDING_LABEL)
         comment.assert_called_once()
+
+    def test_acknowledge_apply_skips_ensure_labels_for_non_apply_comment(self) -> None:
+        """Regression: a burst of unrelated PR comments (review-bot noise) must not
+        each pay for a full label sweep. That amplification is what turned the
+        third-party review-bot pile-on into a GitHub API rate-limit storm."""
+        args = SimpleNamespace(
+            owner="LAF-US",
+            repo="IDAHO-VAULT",
+            pr_number=41,
+            comment_author="fixture-reviewer",
+            author_association="NONE",
+            comment_body="Insufficient balance to process this code review.",
+        )
+
+        with mock.patch.object(
+            review_feedback_loop, "ensure_labels"
+        ) as ensure_labels, mock.patch.object(
+            review_feedback_loop.gh_cli, "pr_view"
+        ) as pr_view:
+            result = review_feedback_loop.acknowledge_apply(args)
+
+        self.assertEqual(result, 0)
+        ensure_labels.assert_not_called()
+        pr_view.assert_not_called()
+
+    def test_acknowledge_apply_skips_ensure_labels_for_untrusted_author(self) -> None:
+        args = SimpleNamespace(
+            owner="LAF-US",
+            repo="IDAHO-VAULT",
+            pr_number=41,
+            comment_author="fixture-untrusted",
+            author_association="NONE",
+            comment_body="@copilot apply changes",
+        )
+
+        with mock.patch.object(
+            review_feedback_loop, "ensure_labels"
+        ) as ensure_labels, mock.patch.object(
+            review_feedback_loop.gh_cli, "pr_view"
+        ) as pr_view:
+            result = review_feedback_loop.acknowledge_apply(args)
+
+        self.assertEqual(result, 0)
+        ensure_labels.assert_not_called()
+        pr_view.assert_not_called()
+
+    def test_acknowledge_apply_skips_ensure_labels_when_already_pending(self) -> None:
+        """The label already reflects the request; no mutation, so no sweep either."""
+        args = SimpleNamespace(
+            owner="LAF-US",
+            repo="IDAHO-VAULT",
+            pr_number=41,
+            comment_author="loganf",
+            author_association="OWNER",
+            comment_body="@copilot apply changes",
+        )
+
+        with mock.patch.object(
+            review_feedback_loop, "ensure_labels"
+        ) as ensure_labels, mock.patch.object(
+            review_feedback_loop.gh_cli,
+            "pr_view",
+            return_value=_pr_view_result(review_feedback_loop.DEFAULT_PENDING_LABEL),
+        ) as pr_view, mock.patch.object(review_feedback_loop, "_edit_label") as edit_label:
+            result = review_feedback_loop.acknowledge_apply(args)
+
+        self.assertEqual(result, 0)
+        # pr_view IS still called here -- reading current label state is how the
+        # idempotent branch gets decided in the first place, so this one cheap REST
+        # call is unavoidable on the genuine trusted-apply path. That's a world apart
+        # from the bug this PR fixes: pr_view is never reached at all for the 15-20
+        # untrusted/non-apply bot comments per push (see the two tests above), which
+        # is where the actual rate-limit storm came from.
+        pr_view.assert_called_once()
+        ensure_labels.assert_not_called()
+        edit_label.assert_not_called()
 
     def test_sync_pr_clears_pending_only_for_allowed_completion_actors(self) -> None:
         args = SimpleNamespace(
