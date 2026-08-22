@@ -1,4 +1,5 @@
 ---
+title: "RT @HayatNorimine Idaho Secretary of State plans to send..."
 date: 2021-10-07
 time: 22:25:15
 tweet_id: "1446240232211247107"

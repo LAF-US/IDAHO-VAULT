@@ -1,4 +1,4 @@
-<img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" style="height:64px;margin-right:32px"/>
+<img alt="alt text needed" src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" style="height:64px;margin-right:32px"/>
 
 # Hestia
 
@@ -9,24 +9,23 @@ If you meant the mythological figure, Hestia is often associated with the family
 
 <div align="center">⁂</div>
 
-[^1_1]: https://www.xristiwitch.com/blog/hestia
+[^1_1]: <https://www.xristiwitch.com/blog/hestia>
 
-[^1_2]: https://hades.fandom.com/wiki/Hestia
+[^1_2]: <https://hades.fandom.com/wiki/Hestia>
 
-[^1_3]: https://www.theoi.com/Ouranios/Hestia.html
+[^1_3]: <https://www.theoi.com/Ouranios/Hestia.html>
 
-[^1_4]: https://www.youtube.com/watch?v=GeY_tzlWbnc
+[^1_4]: <https://www.youtube.com/watch?v=GeY_tzlWbnc>
 
-[^1_5]: https://www.reddit.com/r/mythology/comments/13yuhne/thoughts_of_hestia_goddess_of_the_hearth/
+[^1_5]: <https://www.reddit.com/r/mythology/comments/13yuhne/thoughts_of_hestia_goddess_of_the_hearth/>
 
-[^1_6]: https://www.ebsco.com/research-starters/religion-and-philosophy/hestia-deity
+[^1_6]: <https://www.ebsco.com/research-starters/religion-and-philosophy/hestia-deity>
 
-[^1_7]: https://www.thegreekishlife.com/post/the-goddess-who-stayed-home-meet-hestia
+[^1_7]: <https://www.thegreekishlife.com/post/the-goddess-who-stayed-home-meet-hestia>
 
-[^1_8]: https://www.youtube.com/watch?v=AjsOJi2tXRs
+[^1_8]: <https://www.youtube.com/watch?v=AjsOJi2tXRs>
 
-[^1_9]: https://www.hellenion.org/essays-on-hellenic-polytheism/hestia-the-overlooked-olympian/
-
+[^1_9]: <https://www.hellenion.org/essays-on-hellenic-polytheism/hestia-the-overlooked-olympian/>
 
 ---
 
@@ -40,7 +39,6 @@ Hestia has only a few major myths, and most of them emphasize her role as a calm
 - **Refusal of marriage:** Apollo and Poseidon both sought her hand, but Hestia swore to remain a virgin forever and was honored by Zeus for it [^2_2][^2_3][^2_6].
 - **Priapus episode:** In a later myth, Priapus tried to assault her while she slept, but a donkey’s noise alerted everyone and stopped him [^2_1].
 
-
 ## What the myths mean
 
 Hestia’s stories are less about battles or trickery and more about permanence, sanctity, and the household center. Ancient sources describe her as closely tied to the hearth, sacrifice, and civic unity, so her mythology is sparse but symbolically important [^2_2][^2_6][^2_8].
@@ -52,24 +50,23 @@ Hestia’s myths are basically: born first, swallowed by Cronus, rescued by Zeus
 
 <div align="center">⁂</div>
 
-[^2_1]: https://www.thegreekishlife.com/get-to-know-a-goddess-hestia
+[^2_1]: <https://www.thegreekishlife.com/get-to-know-a-goddess-hestia>
 
-[^2_2]: https://en.wikipedia.org/wiki/Hestia
+[^2_2]: <https://en.wikipedia.org/wiki/Hestia>
 
-[^2_3]: https://www.theoi.com/Ouranios/Hestia.html
+[^2_3]: <https://www.theoi.com/Ouranios/Hestia.html>
 
-[^2_4]: https://www.reddit.com/r/GreekMythology/comments/1afami8/is_hestia_agood_goddess_or_does_she_just_have_no/
+[^2_4]: <https://www.reddit.com/r/GreekMythology/comments/1afami8/is_hestia_agood_goddess_or_does_she_just_have_no/>
 
-[^2_5]: https://mythopedia.com/topics/hestia/
+[^2_5]: <https://mythopedia.com/topics/hestia/>
 
-[^2_6]: https://www.britannica.com/topic/Hestia
+[^2_6]: <https://www.britannica.com/topic/Hestia>
 
-[^2_7]: https://www.xristiwitch.com/blog/hestia
+[^2_7]: <https://www.xristiwitch.com/blog/hestia>
 
-[^2_8]: https://www.ebsco.com/research-starters/religion-and-philosophy/hestia-deity
+[^2_8]: <https://www.ebsco.com/research-starters/religion-and-philosophy/hestia-deity>
 
-[^2_9]: https://www.youtube.com/watch?v=GeY_tzlWbnc
-
+[^2_9]: <https://www.youtube.com/watch?v=GeY_tzlWbnc>
 
 ---
 
@@ -82,24 +79,23 @@ In myth, that “firstborn” status helps explain why Hestia is honored first i
 
 <div align="center">⁂</div>
 
-[^3_1]: https://en.wikipedia.org/wiki/Hestia
+[^3_1]: <https://en.wikipedia.org/wiki/Hestia>
 
-[^3_2]: https://www.reddit.com/r/GreekMythology/comments/uk1k0c/tell_me_about_the_goddess_hestia/
+[^3_2]: <https://www.reddit.com/r/GreekMythology/comments/uk1k0c/tell_me_about_the_goddess_hestia/>
 
-[^3_3]: https://www.youtube.com/watch?v=GeY_tzlWbnc
+[^3_3]: <https://www.youtube.com/watch?v=GeY_tzlWbnc>
 
-[^3_4]: https://www.diy.org/article/hestia
+[^3_4]: <https://www.diy.org/article/hestia>
 
-[^3_5]: https://www.xristiwitch.com/blog/hestia
+[^3_5]: <https://www.xristiwitch.com/blog/hestia>
 
-[^3_6]: https://www.therchktruth.org/culture-arts/2023/7/11/hestia-the-neglected-goddess
+[^3_6]: <https://www.therchktruth.org/culture-arts/2023/7/11/hestia-the-neglected-goddess>
 
-[^3_7]: https://www.ebsco.com/research-starters/religion-and-philosophy/hestia-deity
+[^3_7]: <https://www.ebsco.com/research-starters/religion-and-philosophy/hestia-deity>
 
-[^3_8]: https://riordan.fandom.com/wiki/Hestia
+[^3_8]: <https://riordan.fandom.com/wiki/Hestia>
 
-[^3_9]: https://www.facebook.com/groups/365529043506842/posts/3950267841699593/
-
+[^3_9]: <https://www.facebook.com/groups/365529043506842/posts/3950267841699593/>
 
 ---
 
@@ -112,7 +108,6 @@ In ancient Greek homes, Hestia was worshipped at the **household hearth**, which
 - Families made offerings to Hestia before meals, usually by setting aside the first portion of food or a small libation of wine or water near the hearth [^4_4][^4_2][^4_5].
 - She typically received the **first and last offerings** in any domestic sacrifice, symbolizing that the household’s life began and ended with her protection [^4_1][^4_2][^4_7].
 
-
 ### Household center and family life
 
 - The hearth was the focal point for family gatherings, births, and rites of passage; for example, a newborn might be carried around the hearth in a ceremony that acknowledged Hestia as the guardian of the household [^4_3][^4_7].
@@ -123,24 +118,23 @@ In short, Hestia’s worship in the home was quiet but constant: daily offerings
 
 <div align="center">⁂</div>
 
-[^4_1]: https://en.wikipedia.org/wiki/Hestia
+[^4_1]: <https://en.wikipedia.org/wiki/Hestia>
 
-[^4_2]: https://www.theoi.com/Ouranios/Hestia.html
+[^4_2]: <https://www.theoi.com/Ouranios/Hestia.html>
 
-[^4_3]: https://www.greece-is.com/hestias-hearth-keeping-home-fires-burning-ancient-greece/
+[^4_3]: <https://www.greece-is.com/hestias-hearth-keeping-home-fires-burning-ancient-greece/>
 
-[^4_4]: https://www.ask.com/news/rituals-worship-ancient-greeks-honored-hestia-daily-lives
+[^4_4]: <https://www.ask.com/news/rituals-worship-ancient-greeks-honored-hestia-daily-lives>
 
-[^4_5]: https://www.xristiwitch.com/blog/hestia
+[^4_5]: <https://www.xristiwitch.com/blog/hestia>
 
-[^4_6]: https://www.reddit.com/r/GreekMythology/comments/pa0e6g/hestia_and_greece_today/
+[^4_6]: <https://www.reddit.com/r/GreekMythology/comments/pa0e6g/hestia_and_greece_today/>
 
-[^4_7]: https://spokenpast.com/articles/hestia-quiet-power-greek-household-worship/
+[^4_7]: <https://spokenpast.com/articles/hestia-quiet-power-greek-household-worship/>
 
-[^4_8]: https://www.facebook.com/groups/feralsofthearts/posts/1865959350998119/
+[^4_8]: <https://www.facebook.com/groups/feralsofthearts/posts/1865959350998119/>
 
-[^4_9]: https://www.youtube.com/watch?v=GeY_tzlWbnc
-
+[^4_9]: <https://www.youtube.com/watch?v=GeY_tzlWbnc>
 
 ---
 
@@ -153,12 +147,10 @@ Hestia’s “cults” in ancient Greece were quite different from the flashy, t
 - Every family treated the **household hearth** as her shrine: offerings of food, first and last libations, and a kept‑burning fire constituted her daily worship [^5_3][^5_4][^5_5].
 - She was one of the “household gods” (alongside Zeus, Hermes, Agathos Daimon, etc.), so private rituals at home often began and ended with a small rite to Hestia [^5_5][^5_6].
 
-
 ### Public / civic cults
 
 - Each city had a **public hearth** or **prytaneion** where the civic fire of Hestia burned; this was the common hearth of the state and was used to receive guests and ambassadors [^5_2][^5_3][^5_4].
 - Colonial founders carried flame from the public hearth to the new city, symbolizing continuity and Hestia’s presence in the new polis [^5_2][^5_3].
-
 
 ### Did she have formal priesthoods?
 
@@ -170,26 +162,25 @@ So Hestia’s cults were fewer in number and less visible, but very widespread: 
 
 <div align="center">⁂</div>
 
-[^5_1]: https://www.thegreekishlife.com/get-to-know-a-goddess-hestia
+[^5_1]: <https://www.thegreekishlife.com/get-to-know-a-goddess-hestia>
 
-[^5_2]: https://www.ebsco.com/research-starters/religion-and-philosophy/hestia-deity
+[^5_2]: <https://www.ebsco.com/research-starters/religion-and-philosophy/hestia-deity>
 
-[^5_3]: https://www.theoi.com/Ouranios/Hestia.html
+[^5_3]: <https://www.theoi.com/Ouranios/Hestia.html>
 
-[^5_4]: https://en.wikipedia.org/wiki/Hestia
+[^5_4]: <https://en.wikipedia.org/wiki/Hestia>
 
-[^5_5]: https://olympianismos.forumotion.com/t75-the-household-religion
+[^5_5]: <https://olympianismos.forumotion.com/t75-the-household-religion>
 
-[^5_6]: https://www.reddit.com/r/AskHistorians/comments/1l6og36/how_did_private_household_worship_differ_from/
+[^5_6]: <https://www.reddit.com/r/AskHistorians/comments/1l6og36/how_did_private_household_worship_differ_from/>
 
-[^5_7]: https://fabiennesmorgana.com/2023/09/01/hestia-and-the-hearth-barn-life-recovery/
+[^5_7]: <https://fabiennesmorgana.com/2023/09/01/hestia-and-the-hearth-barn-life-recovery/>
 
-[^5_8]: https://www.tota.world/article/1422/
+[^5_8]: <https://www.tota.world/article/1422/>
 
-[^5_9]: https://www.youtube.com/watch?v=3XlLTbsF6iM
+[^5_9]: <https://www.youtube.com/watch?v=3XlLTbsF6iM>
 
-[^5_10]: https://www.xristiwitch.com/blog/hestia
-
+[^5_10]: <https://www.xristiwitch.com/blog/hestia>
 
 ---
 
@@ -202,12 +193,10 @@ The **prytaneion** (Ancient Greek: Πρυτανεῖον) was the civic “publi
 - The prytaneion was the seat of the city’s executive officials (prytaneis) and often served as a place where magistrates, ambassadors, and honored citizens dined and gathered [^6_1][^6_3].
 - Every city‑state had at least one prytaneion, regarded symbolically as the “house of the city” and the ritual center of community life [^6_3][^6_5].
 
-
 ### Its role in Hestia worship
 
 - A **perpetual fire** burned on the central hearth of the prytaneion, representing Hestia’s presence and the unity, continuity, and life of the polis [^6_1][^6_2][^6_6].
 - When a colony was founded, colonists would carry a brand from this civic hearth to kindle the new settlement’s prytaneion, linking the daughter city back to the mother‑city through Hestia’s flame [^6_2][^6_1].
-
 
 ### Religious and civic rituals
 
@@ -219,19 +208,18 @@ In short, the prytaneion was the **public face of Hestia worship**: it turned th
 
 <div align="center">⁂</div>
 
-[^6_1]: https://en.wikipedia.org/wiki/Prytaneion
+[^6_1]: <https://en.wikipedia.org/wiki/Prytaneion>
 
-[^6_2]: https://www.greece-is.com/hestias-hearth-keeping-home-fires-burning-ancient-greece/
+[^6_2]: <https://www.greece-is.com/hestias-hearth-keeping-home-fires-burning-ancient-greece/>
 
-[^6_3]: http://constantinople.ehw.gr/Forms/fLemmaBody.aspx?lemmaid=10576
+[^6_3]: <http://constantinople.ehw.gr/Forms/fLemmaBody.aspx?lemmaid=10576>
 
-[^6_4]: https://spokenpast.com/articles/hestia-quiet-power-greek-household-worship/
+[^6_4]: <https://spokenpast.com/articles/hestia-quiet-power-greek-household-worship/>
 
-[^6_5]: https://fabiennesmorgana.com/2023/09/02/goddess-hestia/
+[^6_5]: <https://fabiennesmorgana.com/2023/09/02/goddess-hestia/>
 
-[^6_6]: https://www.reddit.com/r/GreekMythology/comments/1jdecjk/question_about_hestia/
+[^6_6]: <https://www.reddit.com/r/GreekMythology/comments/1jdecjk/question_about_hestia/>
 
-[^6_7]: https://www.bestephesustours.com/blog/prytaneion-in-ephesus-ancient-city.html
+[^6_7]: <https://www.bestephesustours.com/blog/prytaneion-in-ephesus-ancient-city.html>
 
-[^6_8]: https://www.facebook.com/groups/619617779849615/posts/1357867852691267/
-
+[^6_8]: <https://www.facebook.com/groups/619617779849615/posts/1357867852691267/>

@@ -1,4 +1,5 @@
 ---
+title: "RT @RadioDawson Blanskma also said it would allow lawmakers..."
 date: 2021-04-23
 time: 16:00:41
 tweet_id: "1385624675993079811"

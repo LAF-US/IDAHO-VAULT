@@ -5,4 +5,4 @@ related:
 - taxes
 authority: LOGAN
 ---
-2020-2021 Idaho Legislature interim committee on property taxes 
+2020-2021 Idaho Legislature interim committee on property taxes

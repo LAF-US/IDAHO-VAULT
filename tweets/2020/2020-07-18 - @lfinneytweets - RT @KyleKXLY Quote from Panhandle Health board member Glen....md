@@ -1,4 +1,5 @@
 ---
+title: "RT @KyleKXLY Quote from Panhandle Health board member Glen..."
 date: 2020-07-18
 time: 06:23:05
 tweet_id: "1284373106853769217"

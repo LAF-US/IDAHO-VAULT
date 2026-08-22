@@ -1,4 +1,5 @@
 ---
+title: "[OPINION] Overall Alqhuist gave pretty generic campaign-y..."
 date: 2018-03-10
 time: 23:57:44
 tweet_id: "972622564408287232"

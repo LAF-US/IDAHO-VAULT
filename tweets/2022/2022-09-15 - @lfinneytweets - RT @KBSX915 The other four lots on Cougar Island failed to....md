@@ -1,4 +1,5 @@
 ---
+title: "RT @KBSX915 The other four lots on Cougar Island failed to..."
 date: 2022-09-15
 time: 18:58:51
 tweet_id: "1570487325775503361"

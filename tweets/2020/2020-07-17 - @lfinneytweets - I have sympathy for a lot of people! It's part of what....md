@@ -1,4 +1,5 @@
 ---
+title: "I have sympathy for a lot of people! It's part of what..."
 date: 2020-07-17
 time: 15:39:13
 tweet_id: "1284150674884685824"

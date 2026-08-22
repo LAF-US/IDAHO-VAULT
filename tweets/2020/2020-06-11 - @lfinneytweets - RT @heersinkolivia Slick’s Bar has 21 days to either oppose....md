@@ -1,4 +1,5 @@
 ---
+title: "RT @heersinkolivia Slick\u2019s Bar has 21 days to either oppose..."
 date: 2020-06-11
 time: 16:05:18
 tweet_id: "1271111274693136388"

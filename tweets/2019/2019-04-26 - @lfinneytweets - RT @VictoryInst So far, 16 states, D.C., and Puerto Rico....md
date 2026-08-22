@@ -1,4 +1,5 @@
 ---
+title: "RT @VictoryInst So far, 16 states, D.C., and Puerto Rico..."
 date: 2019-04-26
 time: 18:10:08
 tweet_id: "1121838889696579585"

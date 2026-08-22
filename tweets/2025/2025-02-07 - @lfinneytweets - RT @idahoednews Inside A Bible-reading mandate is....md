@@ -1,4 +1,5 @@
 ---
+title: "RT @idahoednews Inside A Bible-reading mandate is..."
 date: 2025-02-07
 time: 02:20:35
 tweet_id: "1887687873429930473"

@@ -5,4 +5,4 @@ related:
 - Washington
 authority: LOGAN
 ---
-Patriot Front member, Spokane Washington resident, Josiah Buster brother 
+Patriot Front member, Spokane Washington resident, Josiah Buster brother

@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio The Idaho House State Affairs Committee..."
 date: 2020-01-27
 time: 19:59:48
 tweet_id: "1221885540087164933"

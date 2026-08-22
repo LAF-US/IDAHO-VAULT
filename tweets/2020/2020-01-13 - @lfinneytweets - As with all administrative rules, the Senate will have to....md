@@ -1,4 +1,5 @@
 ---
+title: "As with all administrative rules, the Senate will have to..."
 date: 2020-01-13
 time: 19:30:32
 tweet_id: "1216804742535319552"

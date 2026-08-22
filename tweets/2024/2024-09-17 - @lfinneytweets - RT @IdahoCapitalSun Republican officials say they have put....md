@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoCapitalSun Republican officials say they have put..."
 date: 2024-09-17
 time: 23:01:48
 tweet_id: "1836178773680836877"

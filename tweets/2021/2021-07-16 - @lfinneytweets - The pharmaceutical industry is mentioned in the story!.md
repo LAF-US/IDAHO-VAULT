@@ -1,4 +1,5 @@
 ---
+title: "The pharmaceutical industry is mentioned in the story!"
 date: 2021-07-16
 time: 23:47:24
 tweet_id: "1416182712835088387"

@@ -4,5 +4,4 @@ related:
 - Boise
 authority: LOGAN
 ---
-Boise, Ada County 
-
+Boise, Ada County

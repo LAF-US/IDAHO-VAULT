@@ -1,4 +1,5 @@
 ---
+title: "RT @maggieKTVB7 NURSING HOMES Critical to keep residents..."
 date: 2020-06-11
 time: 16:44:59
 tweet_id: "1271121259602952193"

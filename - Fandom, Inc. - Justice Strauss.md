@@ -7,7 +7,7 @@ created: 2026-04-14
 ---
 | “ | *I don't blame you for having doubts, [Baudelaires](https://snicket.fandom.com/wiki/Baudelaire_Family "Baudelaire Family"). [Count Olaf](https://snicket.fandom.com/wiki/Count_Olaf "Count Olaf") fooled me once, and I will never forgive myself, but there are [two ot](https://snicket.fandom.com/wiki/Man_with_a_Beard_but_No_Hair "Man with a Beard but No Hair") [her judges](https://snicket.fandom.com/wiki/Woman_with_Hair_but_No_Beard "Woman with Hair but No Beard") on the High Court, and I've known them for years, and they've always been very concerned whenever I've reported on your case. I hope you can forgive me, Baudelaires, and trust me. But if not, you can trust the law.* | ” |
 | --- | --- | --- |
-|  | — Justice Strauss to the Baudelaires in " [The Penultimate Peril: Part Two](https://snicket.fandom.com/wiki/The_Penultimate_Peril:_Pa***REMOVED***Two "The Penultimate Peril: Part Two") " |
+| | — Justice Strauss to the Baudelaires in " [The Penultimate Peril: Part Two](https://snicket.fandom.com/wiki/The_Penultimate_Peril:_Part_Two "The Penultimate Peril: Part Two") " | |
 
 **Justice Strauss** is a high court judge who lives right across the street from [Count Olaf](https://snicket.fandom.com/wiki/Count_Olaf "Count Olaf") 's [house](https://snicket.fandom.com/wiki/Count_Olaf%27s_house "Count Olaf's house"). "Justice" is a title; her first name is unknown. In *[The Bad Beginning](https://snicket.fandom.com/wiki/The_Bad_Beginning "The Bad Beginning")*, she desired to become the Baudelaire's guardian, which they gladly accepted, but she was unable to adopt them because of the clause in their parents' wills appointing their "closest relative", geographically, as their legal guardian. Her regret over her naïve actions motivated her to begin a challenging crusade to bring Olaf to justice for good and hopefully be able to legally adopt the Baudelaire orphans.
 
@@ -15,7 +15,7 @@ created: 2026-04-14
 
 | “ | *I'm afraid this dreadful nonsense is the law.* | ” |
 | --- | --- | --- |
-|  | — Justice Strauss, regarding Violet's marriage to Count Olaf |
+| | — Justice Strauss, regarding Violet's marriage to Count Olaf | |
 
 Justice Strauss is a kind and well-intentioned woman. She is often seen inviting the Baudelaires to spend time with her, allows them to borrow and read books from her library, and desired to adopt them.
 
@@ -133,7 +133,7 @@ In *The Penultimate Peril*, Justice Strauss is confirmed to survive the Hotel De
 The framed man.
 
 - She is one of the multiple characters with the initials [J.S.](https://snicket.fandom.com/wiki/J.S. "J.S.")
-	- She may have been the intended recipient of the [Verbal Fridge Dialogue](https://snicket.fandom.com/wiki/Verbal_Fridge_Dialogue "Verbal Fridge Dialogue") found in *[The Slippery Slope](https://snicket.fandom.com/wiki/The_Slippery_Slope "The Slippery Slope")*.
+  - She may have been the intended recipient of the [Verbal Fridge Dialogue](https://snicket.fandom.com/wiki/Verbal_Fridge_Dialogue "Verbal Fridge Dialogue") found in *[The Slippery Slope](https://snicket.fandom.com/wiki/The_Slippery_Slope "The Slippery Slope")*.
 - There is, in the TV series, a photo of a framed man ([Barry Sonnenfeld](https://snicket.fandom.com/wiki/Barry_Sonnenfeld "Barry Sonnenfeld")) in her library. It is unclear if this is supposed to be her father, a friend, or someone unimportant.
 - In the French version, her full name is Judith "Judy" Sibyl Abbott.
 - Although it is unknown what inspired her surname "Strauss", [Daniel Handler](https://snicket.fandom.com/wiki/Daniel_Handler "Daniel Handler") is from San Francisco where the Golden Gate Bridge is, and the designer of the bridge is Joseph Strauss who also happens to be a J.S. However, this is only a hypothesis.
@@ -143,16 +143,17 @@ The framed man.
 ## Appearances
 
 **Books** **Adaptations**
+
 - *[The Bad Beginning](https://snicket.fandom.com/wiki/The_Bad_Beginning "The Bad Beginning")*
 - *[The Miserable Mill](https://snicket.fandom.com/wiki/The_Miserable_Mill "The Miserable Mill")* (mentioned only)
 - *[The Penultimate Peril](https://snicket.fandom.com/wiki/The_Penultimate_Peril "The Penultimate Peril")*
 - *[Lemony Snicket's A Series of Unfortunate Events (film)](https://snicket.fandom.com/wiki/Lemony_Snicket%27s_A_Series_of_Unfortunate_Events_\(film\) "Lemony Snicket's A Series of Unfortunate Events (film)")*
 - *[Lemony Snicket's A Series of Unfortunate Events (video game)](https://snicket.fandom.com/wiki/Lemony_Snicket%27s_A_Series_of_Unfortunate_Events_\(video_game\) "Lemony Snicket's A Series of Unfortunate Events (video game)")*
 - [*A Series of Unfortunate Events* (TV series)](https://snicket.fandom.com/wiki/A_Series_of_Unfortunate_Events_\(TV_series\) "A Series of Unfortunate Events (TV series)")
-	- " [The Bad Beginning: Part One](https://snicket.fandom.com/wiki/The_Bad_Beginning:_Pa***REMOVED***One "The Bad Beginning: Part One") "
-		- " [The Bad Beginning: Part Two](https://snicket.fandom.com/wiki/The_Bad_Beginning:_Pa***REMOVED***Two "The Bad Beginning: Part Two") "
-		- " [The Penultimate Peril: Part One](https://snicket.fandom.com/wiki/The_Penultimate_Peril:_Pa***REMOVED***One "The Penultimate Peril: Part One") "
-		- " [The Penultimate Peril: Part Two](https://snicket.fandom.com/wiki/The_Penultimate_Peril:_Pa***REMOVED***Two "The Penultimate Peril: Part Two") "
+  - " [The Bad Beginning: Part One](https://snicket.fandom.com/wiki/The_Bad_Beginning:_Part_One "The Bad Beginning: Part One") "
+    - " [The Bad Beginning: Part Two](https://snicket.fandom.com/wiki/The_Bad_Beginning:_Part_Two "The Bad Beginning: Part Two") "
+    - " [The Penultimate Peril: Part One](https://snicket.fandom.com/wiki/The_Penultimate_Peril:_Part_One "The Penultimate Peril: Part One") "
+    - " [The Penultimate Peril: Part Two](https://snicket.fandom.com/wiki/The_Penultimate_Peril:_Part_Two "The Penultimate Peril: Part Two") "
 
 ## Gallery
 
@@ -194,7 +195,7 @@ Justice Strauss smiling.
 
 Justice Strauss pointing to Count Olaf's house.
 
- [![](https://static.wikia.nocookie.net/snicket/images/7/70/JusticeWhat.gif/revision/latest/scale-to-width-down/120?cb=20180408114627 "JusticeWhat.gif (415 KB)") ![](https://static.wikia.nocookie.net/snicket/images/7/70/JusticeWhat.gif/revision/latest/scale-to-width-down/120?cb=20180408114627 "JusticeWhat.gif (415 KB)")](https://snicket.fandom.com/wiki/File:JusticeWhat.gif "JusticeWhat.gif (415 KB)")
+ [![alt text needed](https://static.wikia.nocookie.net/snicket/images/7/70/JusticeWhat.gif/revision/latest/scale-to-width-down/120?cb=20180408114627 "JusticeWhat.gif (415 KB)") ![alt text needed](https://static.wikia.nocookie.net/snicket/images/7/70/JusticeWhat.gif/revision/latest/scale-to-width-down/120?cb=20180408114627 "JusticeWhat.gif (415 KB)")](https://snicket.fandom.com/wiki/File:JusticeWhat.gif "JusticeWhat.gif (415 KB)")
 
 [![Justice Strauss reading "Adoption Law & You".](https://static.wikia.nocookie.net/snicket/images/8/84/Justice_Strauss_reads_Adoption_Law_%26_You.jpg/revision/latest/scale-to-width-down/240?cb=20170125052512 "Justice Strauss reads Adoption Law & You.jpg (99 KB)")](https://snicket.fandom.com/wiki/File:Justice_Strauss_reads_Adoption_Law_%26_You.jpg "Justice Strauss reads Adoption Law & You.jpg (99 KB)")
 
@@ -210,13 +211,13 @@ Justice Strauss in her library.
 
 Justice Strauss at The Marvelous Marriage.
 
- [![](https://static.wikia.nocookie.net/snicket/images/7/75/Elder_sam_with_J._Strauss.jpg/revision/latest/scale-to-width-down/213?cb=20190620151033 "Elder sam with J. Strauss.jpg (86 KB)") ![](https://static.wikia.nocookie.net/snicket/images/7/75/Elder_sam_with_J._Strauss.jpg/revision/latest/scale-to-width-down/213?cb=20190620151033 "Elder sam with J. Strauss.jpg (86 KB)")](https://snicket.fandom.com/wiki/File:Elder_sam_with_J._Strauss.jpg "Elder sam with J. Strauss.jpg (86 KB)")
+ [![alt text needed](https://static.wikia.nocookie.net/snicket/images/7/75/Elder_sam_with_J._Strauss.jpg/revision/latest/scale-to-width-down/213?cb=20190620151033 "Elder sam with J. Strauss.jpg (86 KB)") ![alt text needed](https://static.wikia.nocookie.net/snicket/images/7/75/Elder_sam_with_J._Strauss.jpg/revision/latest/scale-to-width-down/213?cb=20190620151033 "Elder sam with J. Strauss.jpg (86 KB)")](https://snicket.fandom.com/wiki/File:Elder_sam_with_J._Strauss.jpg "Elder sam with J. Strauss.jpg (86 KB)")
 
 [![Justice Strauss on the trolley.](https://static.wikia.nocookie.net/snicket/images/6/61/StraussTrolley.png/revision/latest/scale-to-width-down/240?cb=20190117100254 "StraussTrolley.png (770 KB)")](https://snicket.fandom.com/wiki/File:StraussTrolley.png "StraussTrolley.png (770 KB)")
 
 Justice Strauss on the trolley.
 
- [![](https://static.wikia.nocookie.net/snicket/images/1/12/YouCanTrustTheLaw.gif/revision/latest/scale-to-width-down/160?cb=20190121145434 "YouCanTrustTheLaw.gif (5.75 MB)") ![](https://static.wikia.nocookie.net/snicket/images/1/12/YouCanTrustTheLaw.gif/revision/latest/scale-to-width-down/160?cb=20190121145434 "YouCanTrustTheLaw.gif (5.75 MB)")](https://snicket.fandom.com/wiki/File:YouCanTrustTheLaw.gif "YouCanTrustTheLaw.gif (5.75 MB)")
+ [![alt text needed](https://static.wikia.nocookie.net/snicket/images/1/12/YouCanTrustTheLaw.gif/revision/latest/scale-to-width-down/160?cb=20190121145434 "YouCanTrustTheLaw.gif (5.75 MB)") ![alt text needed](https://static.wikia.nocookie.net/snicket/images/1/12/YouCanTrustTheLaw.gif/revision/latest/scale-to-width-down/160?cb=20190121145434 "YouCanTrustTheLaw.gif (5.75 MB)")](https://snicket.fandom.com/wiki/File:YouCanTrustTheLaw.gif "YouCanTrustTheLaw.gif (5.75 MB)")
 
 [![Justice Strauss during the trial.](https://static.wikia.nocookie.net/snicket/images/2/2b/ThreeTrial.png/revision/latest/scale-to-width-down/180?cb=20190305142554 "ThreeTrial.png (2.26 MB)")](https://snicket.fandom.com/wiki/File:ThreeTrial.png "ThreeTrial.png (2.26 MB)")
 

@@ -1,4 +1,5 @@
 ---
+title: "Aw thanks! Sept 6 squad \ud83d\udcaf"
 date: 2021-09-07
 time: 04:39:59
 tweet_id: "1435100510411886592"

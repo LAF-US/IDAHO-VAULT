@@ -1,4 +1,5 @@
 ---
+title: "RT @uiargonaut UPDATE The University of Idaho campus will..."
 date: 2019-02-13
 time: 21:47:03
 tweet_id: "1095801552428625921"

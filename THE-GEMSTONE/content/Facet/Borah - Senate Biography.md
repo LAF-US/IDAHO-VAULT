@@ -40,8 +40,8 @@ On Monday, February 10, 1919, the Senate prepared to vote. “This is no new pro
 
 The battle was lost, but the war continued. The 66th Congress convened on March 4, 1919, and soon took up the bill. The House quickly approved it on May 21. In the Senate, several newly elected members had publicly pledged their support for the amendment, making the suffragists reasonably confident of its passage. On June 4, 1919, suffragists packed the Senate gallery once again. “There was no excitement,” Maud Younger later recalled. “The coming of the women, the waiting of the women, the expectancy of the women, was an old story.” *After so many years of fighting for their rights, suffrage activists in the gallery and across the nation found this final vote to be almost mundane.* In a bipartisan effort, senators approved the national suffrage amendment with two votes to spare, 56 to 25. A few minutes later, Vice President Thomas Marshall joined prominent suffragists for a signing ceremony in his office in the Capitol. The amendment had passed a major hurdle; now it would go to the states for ratification.
 
---- 
+---
 
 [^2] ["Woman Suffrage Centennial" Part III: The Last Trench](https://www.senate.gov/about/women-of-the-senate/part3-the-last-trench.htm). *United States Senate*, U.S. Congress.
 
---- 
+---

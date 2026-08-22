@@ -1,4 +1,5 @@
 ---
+title: "RT @danielwinlander Spokane Mayor Woodward and every..."
 date: 2020-06-12
 time: 00:49:11
 tweet_id: "1271243113621676033"

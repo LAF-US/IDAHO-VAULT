@@ -17,7 +17,9 @@ related:
 authority: LOGAN
 ---
 # Roster
+
 ## 2023 Members
+
 - Barbara Ehardt Chair
 - Mike Kingsley Vice Chair
 - Lance Clow

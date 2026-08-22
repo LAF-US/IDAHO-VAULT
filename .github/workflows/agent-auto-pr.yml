@@ -31,8 +31,30 @@ jobs:
             BRANCH_NAME="$CURRENT_REF_NAME"
           fi
 
+          # Prefix-agnostic gate. The FORM of the branch name is the signal, not an
+          # enumerated agent allowlist. A slash-namespaced branch (`<namespace>/<desc>`,
+          # per VAULT-CONVENTIONS § Git Practices) is a work branch that should become a
+          # PR; a dash-prefixed automation artifact (`ingest-`, `wayback-audit-`,
+          # `topology-census-`) is ephemeral and intentionally excluded.
+          #
+          # This retires the hand-maintained `claude/*|codex/*|…|serena/*` case list, which
+          # was a drift surface of that class (see REPORT-GH-AUTOMERGE-ENFORCEMENT-MAP-2026-06-22
+          # and PREFIX-FREE-ROUTING-2026-07-19): it had rotted (`serena/*` never named real
+          # branches — Serena is a memory/MCP substrate, not a branch author) and had drifted
+          # out of sync with branch-cleanup.yml's own copy (`bot/` present there, absent here).
+          # The namespaced-form test is self-maintaining: adding an agent needs no edit, and
+          # `dependabot/*` is admitted by construction — "one among the many", no separate list.
           case "$BRANCH_NAME" in
-            claude/*|codex/*|gemini/*|copilot/*|perplexity/*|grok/*|serena/*)
+            gh-readonly-queue/*)
+              # GitHub's own merge-queue ephemeral branches are slash-namespaced
+              # like a real work branch, but they are GitHub-internal, not agent
+              # work, and `gh pr create` against one fails outright ("Head must
+              # not be a merge queue branch") -- exclude before the generic
+              # namespaced-branch match below.
+              echo "skip=true" >> "$GITHUB_OUTPUT"
+              echo "branch_name=$BRANCH_NAME" >> "$GITHUB_OUTPUT"
+              ;;
+            */*)
               if ! [[ "$BRANCH_NAME" =~ ^[A-Za-z0-9._/-]+$ ]]; then
                 echo "skip=true" >> "$GITHUB_OUTPUT"
                 exit 0
@@ -48,14 +70,14 @@ jobs:
 
       - name: Checkout repo
         if: steps.gate.outputs.skip != 'true'
-        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           fetch-depth: 0
           ref: ${{ steps.gate.outputs.branch_name }}
 
       - name: Checkout trusted automation scripts
         if: steps.gate.outputs.skip != 'true'
-        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           ref: ${{ github.event.repository.default_branch }}
           path: trusted-main
@@ -89,11 +111,21 @@ jobs:
 
           RESULT=$(echo "$CHANGED" | python3 trusted-main/.github/scripts/classify_paths.py)
           TIER=$(echo "$RESULT" | python3 -c "import sys,json; print(json.load(sys.stdin)['tier'])")
+          # tier4 is the 5-state read (clear|low|med|high|nope) off the 3x3 matrix of label
+          # pairs. The binary `tier` collapses the `—/—` pair down to `low`, so it is only
+          # visible on tier4 — the producer needs it for the legacy sparse marker.
+          TIER4=$(echo "$RESULT" | python3 -c "import sys,json; print(json.load(sys.stdin)['tier4'])")
+          # The two independent analyses — the lane IS this label pair.
+          FILETYPE=$(echo "$RESULT" | python3 -c "import sys,json; print(json.load(sys.stdin)['filetype'] or '—')")
+          FILEDEPTH=$(echo "$RESULT" | python3 -c "import sys,json; print(json.load(sys.stdin)['filedepth'] or '—')")
           echo "tier=$TIER" >> "$GITHUB_OUTPUT"
+          echo "tier4=$TIER4" >> "$GITHUB_OUTPUT"
+          echo "filetype=$FILETYPE" >> "$GITHUB_OUTPUT"
+          echo "filedepth=$FILEDEPTH" >> "$GITHUB_OUTPUT"
 
           echo "### Changed files" >> "$GITHUB_STEP_SUMMARY"
           echo "$CHANGED" >> "$GITHUB_STEP_SUMMARY"
-          echo "### Risk tier: $TIER" >> "$GITHUB_STEP_SUMMARY"
+          echo "### Lane: {filetype: $FILETYPE, filedepth: $FILEDEPTH} (tier: $TIER, tier4: $TIER4)" >> "$GITHUB_STEP_SUMMARY"
 
       - name: Check for existing PR
         if: steps.gate.outputs.skip != 'true' && steps.classify.outputs.skip != 'true'
@@ -126,6 +158,9 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           RISK_TIER: ${{ steps.classify.outputs.tier }}
+          RISK_TIER4: ${{ steps.classify.outputs.tier4 }}
+          RISK_FILETYPE: ${{ steps.classify.outputs.filetype }}
+          RISK_FILEDEPTH: ${{ steps.classify.outputs.filedepth }}
           BRANCH_NAME: ${{ steps.gate.outputs.branch_name }}
         shell: bash
         run: |
@@ -142,7 +177,31 @@ jobs:
           AGENT=$(echo "$BRANCH_NAME" | sed 's|/.*||')
           DIFFSTAT=$(git diff --stat origin/main...HEAD)
 
-          if [ "$RISK_TIER" = "low" ]; then
+          # Flat risk schema: stamp the fired axes, and stamp `risk/—` when neither fires.
+          # The filetype axis fires risk/low | risk/med; the filedepth axis fires
+          # risk/high | risk/nope. An axis whose classifier value is the em-dash (—) fires
+          # nothing of its own. The `—/—` cell carries `risk/—`, which becomes eligible to
+          # arm once the grace window elapses; a fired flag routes the PR into its review
+          # lane and is removed when that review completes.
+          FT_LABEL=""
+          FD_LABEL=""
+          case "$RISK_FILETYPE" in
+            low) FT_LABEL="risk/low" ;;
+            med) FT_LABEL="risk/med" ;;
+          esac
+          case "$RISK_FILEDEPTH" in
+            high) FD_LABEL="risk/high" ;;
+            nope) FD_LABEL="risk/nope" ;;
+          esac
+          # Stamped at creation, not left for the first sync to backfill: a PR carrying no
+          # risk label at all reads as UNCLASSIFIED and holds, so the clear cell has to say
+          # clear out loud or it is indistinguishable from never having been looked at.
+          CLEAR_LABEL=""
+          if [ -z "$FT_LABEL" ] && [ -z "$FD_LABEL" ]; then
+            CLEAR_LABEL="risk/—"
+          fi
+          # review/pending is the low-risk lane's review marker (tier4 == low).
+          if [ "$RISK_TIER4" = "low" ]; then
             LABEL="review/pending"
             LABEL_MARKER="$LABEL"
           else
@@ -150,35 +209,70 @@ jobs:
             LABEL_MARKER="none"
           fi
 
-          BODY=$(
-            printf '%s\n' \
-              "## Auto-generated PR" \
-              "" \
-              "**Agent:** \`$AGENT\`" \
-              "**Lifecycle:** \`staged\`" \
-              "**Label:** \`$LABEL_MARKER\`" \
-              "" \
-              "### Diff stat" \
-              "\`\`\`" \
-              "$DIFFSTAT" \
-              "\`\`\`" \
-              "" \
-              "---" \
-              "*Created by auto-pr workflow*"
-          )
+          # Pass the body via --body-file instead of inline argv: a branch with a
+          # very large diffstat (e.g. a vault-wide sweep touching thousands of
+          # files) can blow past the OS ARG_MAX for an inline `--body`, failing
+          # `gh` with "Argument list too long" (observed on #871's first auto-pr
+          # run). A file has no such limit.
+          BODY_FILE=$(mktemp)
+          trap 'rm -f "$BODY_FILE"' EXIT
+          printf '%s\n' \
+            "## Auto-generated PR" \
+            "" \
+            "**Agent:** \`$AGENT\`" \
+            "**Lifecycle:** \`staged\`" \
+            "**Label:** \`$LABEL_MARKER\`" \
+            "" \
+            "### Diff stat" \
+            "\`\`\`" \
+            "$DIFFSTAT" \
+            "\`\`\`" \
+            "" \
+            "---" \
+            "*Created by auto-pr workflow*" \
+            > "$BODY_FILE"
 
           CREATE_ARGS=(
             --title "$TITLE"
-            --body "$BODY"
+            --body-file "$BODY_FILE"
             --base main
             --head "$BRANCH_NAME"
-            --label "risk/$RISK_TIER"
           )
+          if [ -n "$FT_LABEL" ]; then
+            CREATE_ARGS+=(--label "$FT_LABEL")
+          fi
+          if [ -n "$FD_LABEL" ]; then
+            CREATE_ARGS+=(--label "$FD_LABEL")
+          fi
+          if [ -n "$CLEAR_LABEL" ]; then
+            CREATE_ARGS+=(--label "$CLEAR_LABEL")
+          fi
           if [ -n "$LABEL" ]; then
             CREATE_ARGS+=(--label "$LABEL")
           fi
 
-          gh pr create "${CREATE_ARGS[@]}"
+          # Idempotent create: the `create` branch event races against a PR the
+          # agent opens by hand (MCP / `gh`) moments later, so the earlier
+          # "Check for existing PR" step can pass while the PR is created in the
+          # window before this step runs. In that case `gh pr create` exits 1
+          # with "a pull request for branch ... already exists" — which is a
+          # benign no-op, not a failure. Swallow only that specific outcome;
+          # every other error still fails the step.
+          if ! out=$(gh pr create "${CREATE_ARGS[@]}" 2>&1); then
+            # Match the specific gh duplicate-PR message
+            # ("a pull request for branch \"X\" into branch \"main\" already
+            # exists: …"), requiring BOTH phrases so an unrelated failure that
+            # merely contains "already exists" is never mistaken for the no-op.
+            if printf '%s' "$out" | grep -qiF 'a pull request for branch' \
+               && printf '%s' "$out" | grep -qiF 'already exists'; then
+              echo "A PR for '$BRANCH_NAME' already exists — nothing to create (raced with manual/MCP PR creation). Treating as success."
+              printf '%s\n' "$out"
+              exit 0
+            fi
+            printf '%s\n' "$out" >&2
+            exit 1
+          fi
+          printf '%s\n' "$out"
 
       - name: Mark PR lifecycle as staged
         if: steps.gate.outputs.skip != 'true' && steps.classify.outputs.skip != 'true' && steps.check-pr.outputs.pr_exists != 'true'
@@ -196,9 +290,20 @@ jobs:
           python3 trusted-main/.github/scripts/pr_lifecycle.py set-state --pr-number "$PR_NUM" --state staged
 
       - name: Log grace period start
-        if: steps.gate.outputs.skip != 'true' && steps.classify.outputs.skip != 'true' && steps.check-pr.outputs.pr_exists != 'true' && steps.classify.outputs.tier == 'low'
+        # Only a true machine-doc low read (tier4 == 'low') carries review/pending. The
+        # binary tier collapses the clear pair to 'low' too, so gate on tier4 to avoid
+        # claiming review/pending on a clear PR that carries no risk/* label at all.
+        if: steps.gate.outputs.skip != 'true' && steps.classify.outputs.skip != 'true' && steps.check-pr.outputs.pr_exists != 'true' && steps.classify.outputs.tier4 == 'low'
         shell: bash
         run: |
           echo "Lifecycle set to \`lifecycle/staged\`." >> "$GITHUB_STEP_SUMMARY"
           echo "Low-risk PR created with \`review/pending\`." >> "$GITHUB_STEP_SUMMARY"
           echo "Agent-authored PRs remain reviewable and require an explicit merge decision." >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Log clear-pair auto-merge
+        # The —/— pair becomes eligible for auto-merge once the grace window elapses.
+        if: steps.gate.outputs.skip != 'true' && steps.classify.outputs.skip != 'true' && steps.check-pr.outputs.pr_exists != 'true' && steps.classify.outputs.tier4 == 'clear'
+        shell: bash
+        run: |
+          echo "Lifecycle set to \`lifecycle/staged\`." >> "$GITHUB_STEP_SUMMARY"
+          echo "Clear pair (\`—/—\`): \`risk/—\` stamped as classified-clear; eligible for auto-merge once the grace window elapses." >> "$GITHUB_STEP_SUMMARY"
