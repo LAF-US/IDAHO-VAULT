@@ -1,3 +1,6 @@
+---
+title: "Video Analysis — zDZYrIUgKE"
+---
 Based on the visual and audio content of the video, here is the extracted information regarding the First Flame, the Lords of Cinder, the Unkindled, and the Fire Keeper.
 
 ### **Facts: Direct Spoken Narration**

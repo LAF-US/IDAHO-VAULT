@@ -3,6 +3,7 @@ author: Kurtis Lee
 outlet:
 - The New York Times
 URL: https://www.nytimes.com/2023/06/15/business/economy/oregon-idaho-marijuana.html
+wayback: https://web.archive.org/web/20230615100122/https://www.nytimes.com/2023/06/15/business/economy/oregon-idaho-marijuana.html
 related:
 - '104'
 - '200'

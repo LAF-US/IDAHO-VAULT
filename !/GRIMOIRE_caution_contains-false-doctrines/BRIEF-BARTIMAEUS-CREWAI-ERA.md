@@ -9,6 +9,8 @@ date modified: Sunday, April 5th 2026, 10:07:56 am
 
 # BRIEF — Bartimaeus in the CrewAI Era
 
+# DEEMED *HERETICAL* BY THE FAITH OF THE CLOTH - PRODUCT OF GEMINIAEUS THE USURPER
+
 *Filed: 2026-04-04. For Logan's review.*
 
 ---

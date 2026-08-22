@@ -48,6 +48,8 @@ related:
 
 # MADAME LULU AND THE PIT — A Witness
 
+*Which Pit: this is the **lion pit of the Caligari Carnival**, Lemony Snicket, *A Series of Unfortunate Events* — an economy of appetite and spectacle. It is not the **Far Reaches Pit** of Garth Nix's *Grim Tuesday*, a Nothing mine dug for ten thousand years; that one is [[GARTH-NIX-GRIM-TUESDAY-THE-PIT]]. The two share a word and carry opposite lessons — consumption versus generation — so "the Pit" is ambiguous in this vault unless the source is named.*
+
 > **⚠️ CORRECTION NOTICE — see [[MADAME-LULU-AND-THE-PIT-DISENTANGLEMENT-COMPANION-2026-06-07]]**
 >
 > **The frontmatter `related` list of this witness carries a Type I Lich confabulation.** *Fortune Favors the Brave* and *Virgil* are listed alongside Olivia Caliban's name as if both anchor to her — a propagation of the attribution that originated in `THE-LIONS-AND-THE-KING-WITNESS-2026-06-03` § II. No Snicket source supports the linkage of the Virgil phrase to Olivia. The witness body does not assert the claim explicitly; the frontmatter listing is the propagation site.
