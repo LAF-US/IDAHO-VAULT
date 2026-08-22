@@ -19,6 +19,6 @@ RT @blotmag: Get ready for six brand new stories, on stands and online Monday. <
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/D0mvRNMU8AAJIbr.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/D0mvRNMU8AAJIbr.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1101700004090007554)

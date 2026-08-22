@@ -1,4 +1,5 @@
 ---
+title: "RT @MNReformer Minnesota Republicans, including a member of..."
 date: 2024-04-05
 time: 14:05:44
 tweet_id: "1776249870371913795"

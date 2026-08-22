@@ -59,7 +59,7 @@ Hermes is **not idle**. It is operating as a live multi-platform gateway daemon.
 
 ## LAUNCH AGENT — AUTO-START
 
-```
+```text
 ~/Library/LaunchAgents/ai.hermes.gateway.plist
 ```
 

@@ -1,4 +1,5 @@
 ---
+title: ".@GovernorLittle says he doesn't know of any #idleg members..."
 date: 2020-08-06
 time: 18:40:17
 tweet_id: "1291443995982172161"

@@ -148,6 +148,6 @@ what persisted on the other side is the Lich counter.
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

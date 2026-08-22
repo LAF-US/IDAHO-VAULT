@@ -19,32 +19,25 @@ Stacey Wondra pleaded not guilty in Michael Vaughan disappearance case
 
 #### More Videos
 
-[![](https://media.ktvb.com/assets/LOCKEDON/images/d07a3965-944c-45e7-86e1-6390eab548d3/20260406T223242/d07a3965-944c-45e7-86e1-6390eab548d3_1920x1080.jpg)](https://www.ktvb.com/video/sports/locked-on/lo-national/big-3-in-30-nba/mavericks-beat-the-lakers-with-luka-doncic-out-the-big-3-in-30-nba/535-be3fc631-0e4d-4f4f-8716-6d409ff4b9d8)
+[![alt text needed](https://media.ktvb.com/assets/LOCKEDON/images/d07a3965-944c-45e7-86e1-6390eab548d3/20260406T223242/d07a3965-944c-45e7-86e1-6390eab548d3_1920x1080.jpg)](https://www.ktvb.com/video/sports/locked-on/lo-national/big-3-in-30-nba/mavericks-beat-the-lakers-with-luka-doncic-out-the-big-3-in-30-nba/535-be3fc631-0e4d-4f4f-8716-6d409ff4b9d8)
 
 [Next up in 5](https://www.ktvb.com/video/sports/locked-on/lo-national/big-3-in-30-nba/mavericks-beat-the-lakers-with-luka-doncic-out-the-big-3-in-30-nba/535-be3fc631-0e4d-4f4f-8716-6d409ff4b9d8)
 
-[
-
-Mavericks BEAT THE LAKERS With Luka Doncic Out | The Big 3 in 30 NBA
+[Mavericks BEAT THE LAKERS With Luka Doncic Out | The Big 3 in 30 NBA
 
 ](<https://www.ktvb.com/video/sports/locked-on/lo-national/big-3-in-30-nba/mavericks-beat-the-lakers-with-luka-doncic-out-the-big-3-in-30-nba/535-be3fc631-0e4d-4f4f-8716-6d409ff4b9d8>)
 
-- [![](https://media.ktvb.com/assets/LOCKEDON/images/d07a3965-944c-45e7-86e1-6390eab548d3/20260406T223242/d07a3965-944c-45e7-86e1-6390eab548d3_1920x1080.jpg)
+- [![alt text needed](https://media.ktvb.com/assets/LOCKEDON/images/d07a3965-944c-45e7-86e1-6390eab548d3/20260406T223242/d07a3965-944c-45e7-86e1-6390eab548d3_1920x1080.jpg)
  Next up in 5
- Mavericks BEAT THE LAKERS With Luka Doncic Out | The Big 3 in 30 NBA
-](https://www.ktvb.com/video/sports/locked-on/lo-national/big-3-in-30-nba/mavericks-beat-the-lakers-with-luka-doncic-out-the-big-3-in-30-nba/535-be3fc631-0e4d-4f4f-8716-6d409ff4b9d8)
-- [![](https://media.ktvb.com/assets/CCT/images/fd988ec7-e131-4be0-b302-8cce9cf299f0/20260406T213535/fd988ec7-e131-4be0-b302-8cce9cf299f0_1920x1080.jpg)
- Parakeet goes snorkeling in the Bahamas
-](https://www.ktvb.com/video/news/nation-world/parakeet-goes-snorkeling-in-the-bahamas/507-bdd7ecac-7db6-4de9-8bf9-90fda4f1f657)
-- [![](https://media.ktvb.com/assets/LOCKEDON/images/d9374066-8f57-44c8-8a87-4c0652b610a9/20260406T222821/d9374066-8f57-44c8-8a87-4c0652b610a9_1920x1080.jpg)
- RISING STAR: Texas A&M Freshman DOMINATING Spring Hype—Why the Aggies Should BELIEVE Now
-](https://www.ktvb.com/video/sports/locked-on/lo-houston/texas-a-m-aggies-show/rising-star-texas-am-freshman-dominating-spring-hypewhy-the-aggies-should-believe-now/535-678280ee-f05d-4d50-8bb4-4dcc2b2b1044)
-- [![](https://media.ktvb.com/assets/KTVB/images/59db6a25-da15-4722-8ba3-19b608b5b930/20260406T223024/59db6a25-da15-4722-8ba3-19b608b5b930_1920x1080.jpg)
- President Trump praises 'heroic' rescue of American airman ahead of Strait of Hormuz deadline
-](https://www.ktvb.com/video/news/nation-world/attack-on-iran/president-trump-praises-heroic-rescue-of-american-airman-ahead-of-strait-of-hormuz-deadline/277-d94b05b6-d224-40b4-b80b-7f1632cce321)
-- [![](https://media.ktvb.com/assets/LOCKEDON/images/d6fb3f60-a0f6-4c2b-8e2d-90cbae5c675a/20260406T222301/d6fb3f60-a0f6-4c2b-8e2d-90cbae5c675a_1920x1080.jpg)
- HEALTHY: Lions Secondary DEPTH Grows as Avonte Maddox REJOINS
-](https://www.ktvb.com/video/sports/locked-on/lo-michigan/lions-show/healthy-lions-secondary-depth-grows-as-avonte-maddox-rejoins/535-c27f8b0f-409a-445b-a93a-7850f291d122)
+ Mavericks BEAT THE LAKERS With Luka Doncic Out | The Big 3 in 30 NBA](https://www.ktvb.com/video/sports/locked-on/lo-national/big-3-in-30-nba/mavericks-beat-the-lakers-with-luka-doncic-out-the-big-3-in-30-nba/535-be3fc631-0e4d-4f4f-8716-6d409ff4b9d8)
+- [![alt text needed](https://media.ktvb.com/assets/CCT/images/fd988ec7-e131-4be0-b302-8cce9cf299f0/20260406T213535/fd988ec7-e131-4be0-b302-8cce9cf299f0_1920x1080.jpg)
+ Parakeet goes snorkeling in the Bahamas](https://www.ktvb.com/video/news/nation-world/parakeet-goes-snorkeling-in-the-bahamas/507-bdd7ecac-7db6-4de9-8bf9-90fda4f1f657)
+- [![alt text needed](https://media.ktvb.com/assets/LOCKEDON/images/d9374066-8f57-44c8-8a87-4c0652b610a9/20260406T222821/d9374066-8f57-44c8-8a87-4c0652b610a9_1920x1080.jpg)
+ RISING STAR: Texas A&M Freshman DOMINATING Spring Hype—Why the Aggies Should BELIEVE Now](https://www.ktvb.com/video/sports/locked-on/lo-houston/texas-a-m-aggies-show/rising-star-texas-am-freshman-dominating-spring-hypewhy-the-aggies-should-believe-now/535-678280ee-f05d-4d50-8bb4-4dcc2b2b1044)
+- [![alt text needed](https://media.ktvb.com/assets/KTVB/images/59db6a25-da15-4722-8ba3-19b608b5b930/20260406T223024/59db6a25-da15-4722-8ba3-19b608b5b930_1920x1080.jpg)
+ President Trump praises 'heroic' rescue of American airman ahead of Strait of Hormuz deadline](https://www.ktvb.com/video/news/nation-world/attack-on-iran/president-trump-praises-heroic-rescue-of-american-airman-ahead-of-strait-of-hormuz-deadline/277-d94b05b6-d224-40b4-b80b-7f1632cce321)
+- [![alt text needed](https://media.ktvb.com/assets/LOCKEDON/images/d6fb3f60-a0f6-4c2b-8e2d-90cbae5c675a/20260406T222301/d6fb3f60-a0f6-4c2b-8e2d-90cbae5c675a_1920x1080.jpg)
+ HEALTHY: Lions Secondary DEPTH Grows as Avonte Maddox REJOINS](https://www.ktvb.com/video/sports/locked-on/lo-michigan/lions-show/healthy-lions-secondary-depth-grows-as-avonte-maddox-rejoins/535-c27f8b0f-409a-445b-a93a-7850f291d122)
 
 PAYETTE COUNTY, Idaho — The man accused of kidnapping and killing 5-year-old Michael Vaughan in 2021 pleaded not guilty to the charges against him in Payette County district court.
 

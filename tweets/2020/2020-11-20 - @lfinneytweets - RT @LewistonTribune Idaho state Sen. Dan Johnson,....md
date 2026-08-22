@@ -1,4 +1,5 @@
 ---
+title: "RT @LewistonTribune Idaho state Sen. Dan Johnson,..."
 date: 2020-11-20
 time: 15:07:36
 tweet_id: "1329803588726517762"

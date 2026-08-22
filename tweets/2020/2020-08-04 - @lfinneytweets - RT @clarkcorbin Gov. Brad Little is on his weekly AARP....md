@@ -1,4 +1,5 @@
 ---
+title: "RT @clarkcorbin Gov. Brad Little is on his weekly AARP..."
 date: 2020-08-04
 time: 18:39:10
 tweet_id: "1290718940696424454"

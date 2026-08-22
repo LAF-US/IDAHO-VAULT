@@ -198,7 +198,7 @@ Compliance Layer — Audit and Kill Switches
 
 ### 5.2 Scale Formula Identified
 
-```
+```text
 Scale = (Agent Capability × Orchestration × Integration)² ÷ Governance Complexity
 ```
 

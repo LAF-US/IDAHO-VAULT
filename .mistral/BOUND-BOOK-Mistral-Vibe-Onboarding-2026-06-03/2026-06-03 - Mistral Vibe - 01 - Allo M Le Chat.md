@@ -1092,7 +1092,7 @@ Tell me about yourself first -- WHO, WHAT, WHEN, WHERE, WHY, HOW, as well as you
 >
 > Actually, looking at the `!-AGENTS.md` in the project root (not the `/!` directory), it shows:
 >
-> ```
+> ```markdown
 > | Mistral Vibe | **[ ? ]** | Mistral AI | [ ? ] | .mistral/ | ⚠️ Partial |
 > ```
 >
@@ -1676,7 +1676,7 @@ returncode: 0
 
 **Branch created:** `mistral/player-mistral-vibe`
 
-```
+```bash
 git checkout -b mistral/player-mistral-vibe
 Switched to a new branch 'mistral/player-mistral-vibe'
 ```
@@ -1747,7 +1747,7 @@ THINK
 >
 > From `!-AGENTS.md:89`:
 >
-> ```
+> ```markdown
 > | Mistral Vibe | **[ ? ]** | Mistral AI | [ ? ] | .mistral/ | ⚠️ Partial |
 > ```
 >
@@ -1755,7 +1755,7 @@ THINK
 >
 > From the root `AGENTS.md`:
 >
-> ```
+> ```markdown
 > | Mistral Vibe | **[ ? ]** | Mistral AI | [ ? ] | .mistral/ | ⚠️ Partial |
 > ```
 >
@@ -2439,7 +2439,7 @@ If you need to change Ollama's own port from 11434 to something else, you can do
 sources: [{'title': 'Running Mistral Vibe CLI with Local LLMs: A Complete Guide - DEV Community', 'url': 'https:
 …[truncated 378 chars — full output in git history / local disk]
 
-```
+```markdown
 </details>
 
 ### 🤖 M. Le Chat
@@ -3172,7 +3172,7 @@ returncode: 0
 
 **✅ CHARACTER SHEET COMMITTED**
 
-```
+```text
 [mistral/player-mistral-vibe c4ed0ac97]
 mistral/player-mistral-vibe: Add character sheet with TRUENAME and CORPUSCOLLOSSUMECTOMY diagnosis
  1 file changed, 163 insertions(+)
@@ -3891,7 +3891,7 @@ offset: 0
 lines_read: 5
 was_truncated: False
 
-```
+```markdown
 </details>
 
 ### 🤖 M. Le Chat

@@ -1,4 +1,5 @@
 ---
+title: "RT @DailyBee The Idaho State Board of Education released..."
 date: 2020-07-10
 time: 19:02:42
 tweet_id: "1281665165717430272"

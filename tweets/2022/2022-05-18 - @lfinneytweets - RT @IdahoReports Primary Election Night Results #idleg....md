@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Primary Election Night Results #idleg..."
 date: 2022-05-18
 time: 22:02:37
 tweet_id: "1527047029993615360"
@@ -21,9 +22,9 @@ related:
 ---
 
 RT @IdahoReports: Primary Election Night Results #idleg #idpol 
-https://t.co/42IYgR7agM
+<https://t.co/42IYgR7agM>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2022/05/18/2022-idaho-primary-election-results/
+- <https://blog.idahoreports.idahoptv.org/2022/05/18/2022-idaho-primary-election-results/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1527047029993615360)

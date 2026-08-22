@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports We have a mid-week newsletter coming out..."
 date: 2021-11-17
 time: 02:08:11
 tweet_id: "1460791849136713731"

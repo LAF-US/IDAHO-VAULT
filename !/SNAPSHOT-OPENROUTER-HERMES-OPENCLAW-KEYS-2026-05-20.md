@@ -242,6 +242,6 @@ Until Logan approves otherwise:
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

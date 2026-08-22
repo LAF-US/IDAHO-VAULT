@@ -1,4 +1,5 @@
 ---
+title: "We recorded SUCH A GOOD @IdahoReports podcast today and it..."
 date: 2022-11-09
 time: 21:19:43
 tweet_id: "1590454110134104065"

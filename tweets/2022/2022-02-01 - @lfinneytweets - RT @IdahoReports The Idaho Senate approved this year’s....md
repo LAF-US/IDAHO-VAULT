@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports The Idaho Senate approved this year\u2019s..."
 date: 2022-02-01
 time: 22:52:43
 tweet_id: "1488646521860268032"

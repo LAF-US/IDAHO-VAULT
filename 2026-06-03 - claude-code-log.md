@@ -30,7 +30,7 @@ This tool generates clean, minimalist HTML pages showing user prompts and assist
 
 TL;DR: run the command below and browse the pages generated from your entire Claude Code archives:
 
-```
+```bash
 uvx claude-code-log@latest --open-browser
 ```
 
@@ -74,7 +74,7 @@ This tool helps you answer questions like:
 
 The TUI provides an interactive interface for browsing and managing Claude Code sessions with real-time navigation, session summaries, and quick actions.
 
-```
+```bash
 # Launch TUI for all projects (default behavior)
 claude-code-log --tui
 
@@ -105,7 +105,7 @@ claude-code-log my-project --tui  # Automatically converts to ~/.claude/projects
 
 ### Default Behavior (Process All Projects)
 
-```
+```bash
 # Process all projects in ~/.claude/projects/ (default behavior)
 claude-code-log
 
@@ -132,7 +132,7 @@ This creates:
 
 ### Single File or Directory Processing
 
-```
+```bash
 # Single file
 claude-code-log transcript.jsonl
 
@@ -154,7 +154,7 @@ claude-code-log /path/to/directory --from-date "3 days ago" --to-date "yesterday
 
 The combination `--detail low --format md --compact` produces condensed Markdown suitable as context for an LLM to review or distill patterns from past work:
 
-```
+```bash
 # Session → compact Markdown for LLM review
 claude-code-log transcript.jsonl --detail low --format md --compact -o session.md
 
@@ -176,7 +176,7 @@ claude-code-log /path/to/project --detail low --format md --compact
 
 Plain `7c2e6f6` -shaped tokens in transcript prose get turned into clickable commit links when the SHA is reachable from a local remote-tracking branch. **github.com**, **gitlab.com**, and **bitbucket.org** work out of the box. For self-hosted forges (in-house GitLab, Gitea, Forgejo, …), supply a URL template via `--git-link`:
 
-```
+```bash
 # Self-hosted GitLab
 claude-code-log /path/to/transcript --git-link 'https://{host}/{path}/-/commit/{sha}'
 
@@ -191,7 +191,7 @@ Placeholders: `{host}`, `{path}`, `{sha}`. The template fires only when the stat
 
 When processing all projects, the tool generates:
 
-```
+```text
 ~/.claude/projects/
 ├── index.html                           # Master index with project cards
 ├── project1/
@@ -257,19 +257,19 @@ Markdown export provides a lightweight, portable alternative to HTML:
 
 Install using pip:
 
-```
+```bash
 pip install claude-code-log
 ```
 
 Or run directly with uvx (no separate installation step required):
 
-```
+```text
 uvx claude-code-log@latest
 ```
 
 Or install from source:
 
-```
+```bash
 git clone https://github.com/daaain/claude-code-log.git
 cd claude-code-log
 uv sync

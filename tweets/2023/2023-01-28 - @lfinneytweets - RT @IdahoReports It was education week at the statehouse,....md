@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports It was education week at the statehouse,..."
 date: 2023-01-28
 time: 00:14:53
 tweet_id: "1619126831982211072"

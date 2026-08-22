@@ -1,4 +1,5 @@
 ---
+title: "RT @bluecrossidaho @Jaysonronk, vice president of public..."
 date: 2023-01-14
 time: 04:06:26
 tweet_id: "1614111675929735168"

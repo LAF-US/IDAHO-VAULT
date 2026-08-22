@@ -1,4 +1,5 @@
 ---
+title: "RT @USGS_Idaho Please share your experiences of #Challis..."
 date: 2020-04-01
 time: 00:45:27
 tweet_id: "1245150247799537665"
@@ -20,9 +21,9 @@ related:
   - earthquake
 ---
 
-RT @USGS_Idaho: Please share your experiences of #Challis #earthquake to help seismologists learn more: https://t.co/hvUpjPhZiz
+RT @USGS_Idaho: Please share your experiences of #Challis #earthquake to help seismologists learn more: <https://t.co/hvUpjPhZiz>
 
 ## Links
-- https://earthquake.usgs.gov/earthquakes/eventpage/us70008jr5/tellus
+- <https://earthquake.usgs.gov/earthquakes/eventpage/us70008jr5/tellus>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1245150247799537665)

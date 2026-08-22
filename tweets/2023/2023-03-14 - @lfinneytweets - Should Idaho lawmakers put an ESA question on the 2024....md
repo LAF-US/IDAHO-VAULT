@@ -1,4 +1,5 @@
 ---
+title: "Should Idaho lawmakers put an ESA question on the 2024..."
 date: 2023-03-14
 time: 17:27:00
 tweet_id: "1635694026065162260"
@@ -18,9 +19,9 @@ related:
   - idpol
 ---
 
-Should Idaho lawmakers put an ESA question on the 2024 election ballot? #idleg #idpol https://t.co/DqVGoKKmbI
+Should Idaho lawmakers put an ESA question on the 2024 election ballot? #idleg #idpol <https://t.co/DqVGoKKmbI>
 
 ## Links
-- https://x.com/IdahoReports/status/1635693276488511497
+- <https://x.com/IdahoReports/status/1635693276488511497>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1635694026065162260)

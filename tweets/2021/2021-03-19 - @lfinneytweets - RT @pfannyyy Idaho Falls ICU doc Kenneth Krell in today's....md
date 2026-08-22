@@ -1,4 +1,5 @@
 ---
+title: "RT @pfannyyy Idaho Falls ICU doc Kenneth Krell in today's..."
 date: 2021-03-19
 time: 16:56:01
 tweet_id: "1372955027589922825"

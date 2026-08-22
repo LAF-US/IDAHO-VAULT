@@ -1,4 +1,5 @@
 ---
+title: "RT @apalermotweets Students are skipping town. Professors..."
 date: 2022-11-16
 time: 20:51:01
 tweet_id: "1592983602958307329"

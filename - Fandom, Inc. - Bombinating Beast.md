@@ -35,7 +35,7 @@ The beast is described as looking like a sea horse, though [Lemony Snicket](http
 
 | “ | *The Bombinating Beast moved black and cold to the surface, and we froze and listened to it echo across the land and the sea, before Stain’d-by-the-Sea had occupied both. The sound moved deep underground, shivering and shimmering like something hidden, and then rattling and clattering, louder than the train. The Bombinating Beast lumbered out of the fire pond and over any wall foolish enough to try and contain it. It rushed unbound and unsupervised across the dark countryside the town had ruined. We could hear its tail lash out of the water and shake droplets into the sky. We could hear its claws across the ground, like sparks from a fire, and the rustle of its shiny, scaly skin against the helpless rocks, slithering past everything and making everything shudder. It galloped and swam, it leapt and it bounded. It moved like spilled ink across paper or dread across the heart. The Bombinating Beast moved like a heavy shadow, or an angry fist. It was enormous and slippery, desperate and hungry. It was coming closer.* | ” |
 | --- | --- | --- |
-| | |
+| | | |
 
 After the draining of the sea, [Armstrong Feint](https://snicket.fandom.com/wiki/Armstrong_Feint "Armstrong Feint") became fascinated with the Bombinating Beast and recreating it.[^6] While his process for recreating the monster is unknown, it somewhat involved the process by which caviar is made, perhaps the special tanks used for the fish.[^5] [^6]
 
@@ -79,7 +79,7 @@ With the inclusion of the Bombinating Beast in *[All the Wrong Questions](https:
 
 | “ | *Supposedly sailors still saw the Bombinating Beast, swimming with its body curled up like an underwater question mark, although with the sea drained, I couldn’t imagine that this could be true, at least not anymore.* | ” |
 | --- | --- | --- |
-| | — *[Who Could That Be at This Hour?](https://snicket.fandom.com/wiki/Who_Could_That_Be_at_This_Hour%3F "Who Could That Be at This Hour?")* |
+| | — *[Who Could That Be at This Hour?](https://snicket.fandom.com/wiki/Who_Could_That_Be_at_This_Hour%3F "Who Could That Be at This Hour?")* | |
 
 It is a popular speculation that the Great Unknown and Bombinating Beast are the same creature. While Lemony did not name the creature in *[A Series of Unfortunate Events](https://snicket.fandom.com/wiki/A_Series_of_Unfortunate_Events "A Series of Unfortunate Events")*, it is possible that he is still in control of it and wants to keep its powers secret, or ashamed of his past with it. It is also unknown whether the Great Unknown, if it is the Beast, is the original Bombinating Beast or the recreation made by Armstrong Feint; if it *is* the recreation made by Feint then it is actually a hybrid species and an invasive species, presumably being released into an environment not meant for it.
 
@@ -89,7 +89,7 @@ It should be noted that the Great Unknown and Bombinating Beast are explicitly t
 
 | “ | *Perhaps it is better not to know precisely what was meant by this word, as some things are better left in the great unknown.* | ” |
 | --- | --- | --- |
-| | — Lemony Snicket, *[The End](https://snicket.fandom.com/wiki/The_End "The End")* |
+| | — Lemony Snicket, *[The End](https://snicket.fandom.com/wiki/The_End "The End")* | |
 
 There is a theory that the Great Unknown is not simply a physical object/being, but is Lemony Snicket's metaphor for either death, the concept of mystery, or both. Specifically, it could refer to the concept of unsalvageable, unobtainable and eternal mysteries that will never be figured out. Death could be thought of as such a mystery; an example is if there is an afterlife. In *The End*, Lemony Snicket begins using "the great unknown" when death or mystery appears:
 
@@ -135,13 +135,13 @@ The [statue](https://snicket.fandom.com/wiki/Bombinating_Beast_Statue "Bombinati
 
 ### All the Wrong Questions Illustrations
 
- [![](https://static.wikia.nocookie.net/snicket/images/e/e8/Bombinatingtransparent.png/revision/latest/scale-to-width-down/185?cb=20201223040441 "Bombinatingtransparent.png (1.73 MB)") ![](https://static.wikia.nocookie.net/snicket/images/e/e8/Bombinatingtransparent.png/revision/latest/scale-to-width-down/185?cb=20201223040441 "Bombinatingtransparent.png (1.73 MB)")](https://snicket.fandom.com/wiki/File:Bombinatingtransparent.png "Bombinatingtransparent.png (1.73 MB)")
+ [![alt text needed](https://static.wikia.nocookie.net/snicket/images/e/e8/Bombinatingtransparent.png/revision/latest/scale-to-width-down/185?cb=20201223040441 "Bombinatingtransparent.png (1.73 MB)") ![alt text needed](https://static.wikia.nocookie.net/snicket/images/e/e8/Bombinatingtransparent.png/revision/latest/scale-to-width-down/185?cb=20201223040441 "Bombinatingtransparent.png (1.73 MB)")](https://snicket.fandom.com/wiki/File:Bombinatingtransparent.png "Bombinatingtransparent.png (1.73 MB)")
 
 [![Concept Art.](https://static.wikia.nocookie.net/snicket/images/f/f9/1%3Fconcept2.jpg/revision/latest/scale-to-width-down/121?cb=20191020183321 "1?concept2.jpg (87 KB)")](https://snicket.fandom.com/wiki/File:1%3Fconcept2.jpg "1?concept2.jpg (87 KB)")
 
 Concept Art.
 
- [![](https://static.wikia.nocookie.net/snicket/images/a/a8/Bombinatingconcept.jpg/revision/latest/scale-to-width-down/167?cb=20201112140903 "Bombinatingconcept.jpg (51 KB)") ![](https://static.wikia.nocookie.net/snicket/images/a/a8/Bombinatingconcept.jpg/revision/latest/scale-to-width-down/167?cb=20201112140903 "Bombinatingconcept.jpg (51 KB)")](https://snicket.fandom.com/wiki/File:Bombinatingconcept.jpg "Bombinatingconcept.jpg (51 KB)")
+ [![alt text needed](https://static.wikia.nocookie.net/snicket/images/a/a8/Bombinatingconcept.jpg/revision/latest/scale-to-width-down/167?cb=20201112140903 "Bombinatingconcept.jpg (51 KB)") ![alt text needed](https://static.wikia.nocookie.net/snicket/images/a/a8/Bombinatingconcept.jpg/revision/latest/scale-to-width-down/167?cb=20201112140903 "Bombinatingconcept.jpg (51 KB)")](https://snicket.fandom.com/wiki/File:Bombinatingconcept.jpg "Bombinatingconcept.jpg (51 KB)")
 
 [![Promo poem presumably referencing the Beast.](https://static.wikia.nocookie.net/snicket/images/5/5f/STANZA_1.6.jpg/revision/latest/scale-to-width-down/185?cb=20121108210428 "STANZA 1.6.jpg (68 KB)")](https://snicket.fandom.com/wiki/File:STANZA_1.6.jpg "STANZA 1.6.jpg (68 KB)")
 
@@ -225,7 +225,7 @@ The Great Unknown in [The Grim Grotto: Part One](https://snicket.fandom.com/wiki
 
 The statue of the Beast in [The End](https://snicket.fandom.com/wiki/The_End_\(episode\) "The End (episode)")
 
- [![](https://static.wikia.nocookie.net/snicket/images/c/cc/Bombinatingstatuenetflix.png/revision/latest/scale-to-width-down/185?cb=20200627163115 "Bombinatingstatuenetflix.png (4.13 MB)") ![](https://static.wikia.nocookie.net/snicket/images/c/cc/Bombinatingstatuenetflix.png/revision/latest/scale-to-width-down/185?cb=20200627163115 "Bombinatingstatuenetflix.png (4.13 MB)")](https://snicket.fandom.com/wiki/File:Bombinatingstatuenetflix.png "Bombinatingstatuenetflix.png (4.13 MB)")
+ [![alt text needed](https://static.wikia.nocookie.net/snicket/images/c/cc/Bombinatingstatuenetflix.png/revision/latest/scale-to-width-down/185?cb=20200627163115 "Bombinatingstatuenetflix.png (4.13 MB)") ![alt text needed](https://static.wikia.nocookie.net/snicket/images/c/cc/Bombinatingstatuenetflix.png/revision/latest/scale-to-width-down/185?cb=20200627163115 "Bombinatingstatuenetflix.png (4.13 MB)")](https://snicket.fandom.com/wiki/File:Bombinatingstatuenetflix.png "Bombinatingstatuenetflix.png (4.13 MB)")
 
 ## Sources
 

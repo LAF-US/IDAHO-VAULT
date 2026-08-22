@@ -18,8 +18,8 @@ Haring was diagnosed with AIDS in 1988. He then established the Keith Haring Fou
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/DfjbFIqXkAA1UEa.jpg)
-- ![](https://pbs.twimg.com/media/DfjbG9EW4AIH540.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/DfjbFIqXkAA1UEa.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/DfjbG9EW4AIH540.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

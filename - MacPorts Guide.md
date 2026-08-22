@@ -22,15 +22,15 @@ The following notational conventions are used in the MacPorts Guide to distingui
 
 - Terminal I/O and file text.
 
- ```
+ ```text
  Commands to be typed into a terminal window.
  ```
 
- ```
+ ```text
  Command output to a terminal window.
  ```
 
- ```
+ ```text
  File text.
  ```
 
@@ -129,11 +129,11 @@ The macOS package installer automatically installs MacPorts, [sets the shell env
 2. Double-click the downloaded package installer to perform the default “easy” install.
 3. After this step you are done already, MacPorts is now installed and your shell environment was set up automatically by the installer. To confirm the installation is working as expected, now try using **port** in a *new* terminal window.
 
-   ```
+   ```bash
    port version
    ```
 
-   ```
+   ```text
    Version: 2.12.5
    ```
 
@@ -145,14 +145,14 @@ If you installed MacPorts using the package installer, skip this section. To ins
 
 1. Download and extract the [MacPorts 2.12.5 tarball](https://distfiles.macports.org/MacPorts/MacPorts-2.12.5.tar.bz2). Either do so using your browser and the Finder, or use the given commands in a terminal window.
 
-   ```
+   ```bash
    curl -O https://distfiles.macports.org/MacPorts/MacPorts-2.12.5.tar.bz2
    tar xf MacPorts-2.12.5.tar.bz2
    ```
 
 2. Afterwards, perform the commands shown in the terminal window. If you wish to use a path other than `/opt/local`, follow the instructions for [installing multiple copies of MacPorts](#installing.macports.source.multiple "2.2.4. Install Multiple MacPorts Copies") instead.
 
-   ```
+   ```bash
    cd MacPorts-2.12.5/
    ./configure
    make
@@ -172,7 +172,7 @@ Though a distinction is made between pre-release and release versions of MacPort
 1. Check out MacPorts source
    Pick a location to store a working copy of the MacPorts code. For this example, `/opt/mports` will be used, but you can put the source anywhere. This example will create `/opt/mports/macports-base` containing everything needed for MacPorts.
 
-   ```
+   ```bash
    mkdir -p /opt/mports
    cd /opt/mports
    git clone https://github.com/macports/macports-base.git
@@ -183,7 +183,7 @@ Though a distinction is made between pre-release and release versions of MacPort
 2. Build and Install MacPorts
    MacPorts uses autoconf and makefiles for installation. These commands will build and install MacPorts to `/opt/local`. You can add `--prefix` to `./configure` to relocate MacPorts to another directory if needed.
 
-   ```
+   ```bash
    cd /opt/mports/macports-base
    ./configure --enable-readline
    make
@@ -194,20 +194,20 @@ Though a distinction is made between pre-release and release versions of MacPort
 3. (Optional) Configure MacPorts to use port information from Git
    This step is useful if you want to do port development. Check out the ports tree from git:
 
-   ```
+   ```bash
    cd /opt/mports
    git clone https://github.com/macports/macports-ports.git
    ```
 
    Then open `/opt/local/etc/macports/sources.conf` in a text editor. The last line should look like this:
 
-   ```
+   ```text
    rsync://rsync.macports.org/macports/release/tarballs/ports.tar [default]
    ```
 
    Change it to point to the working copy you checked out:
 
-   ```
+   ```text
    file:///opt/mports/macports-ports [default]
    ```
 
@@ -223,7 +223,7 @@ Occasionally a MacPorts developer may wish to install more than one MacPorts ins
 
 The first command temporarily removes the standard MacPorts binary paths because they must not be present while installing a second instance.
 
-```
+```bash
 export PATH=/bin:/sbin:/usr/bin:/usr/sbin
 MP_PREFIX=/opt/macports-test
 ./configure --prefix=$MP_PREFIX --with-applications-dir=$MP_PREFIX/Applications --without-startupitems
@@ -243,7 +243,7 @@ Uninstalling MacPorts is a drastic step and, depending on the issue you are expe
 
 If you want to uninstall MacPorts and the **port** command is functioning, first uninstall all the installed ports by running this command in the Terminal:
 
-```
+```bash
 sudo port -fp uninstall installed
 ```
 
@@ -255,7 +255,7 @@ If the **port** command is not functioning, you can proceed on to the next steps
 
 When MacPorts is installed, a `macports` macOS user and group are created for privilege separation. If you want to remove them, you can use these commands from an account that has admin privileges:
 
-```
+```bash
 sudo dscl . -delete /Users/macports
 sudo dscl . -delete /Groups/macports
 ```
@@ -270,7 +270,7 @@ If you want to remove all remaining traces of MacPorts, run the following comman
 
 If you are running macOS 10.15 Catalina or later and have not disabled System Integrity Protection (SIP), you will need to [remove the `macports` user](#installing.macports.uninstalling.users "2.4.2. Remove Users and Groups") first.
 
-```
+```text
 $ sudo rm -rf \
     /opt/local \
     /Applications/DarwinPorts \
@@ -301,7 +301,7 @@ The postflight script automatically sets the `PATH` variable, and optionally the
 - Required: `PATH` variable
  This variable is set by the postflight script to prepend the MacPorts executable paths to the current path as shown. This puts the MacPorts paths at the front of `PATH` so that the MacPorts binaries will take precedence over vendor-supplied binaries.
 
- ```
+ ```bash
  export PATH=/opt/local/bin:/opt/local/sbin:$PATH
  ```
 
@@ -312,14 +312,14 @@ The postflight script automatically sets the `PATH` variable, and optionally the
 - Optional: `MANPATH` variable
  Condition: If prior to MacPorts installation a `MANPATH` variable exists in a current `.profile` that contains neither the value `${prefix}/share/man,` nor any empty items separated by a colon, the postflight script sets the `MANPATH` variable as shown below. Otherwise, the `MANPATH` variable is omitted.
 
- ```
+ ```bash
  export MANPATH=/opt/local/share/man:$MANPATH
  ```
 
 - Optional: `DISPLAY` variable
  Condition: If installing on a Mac OS X version earlier than 10.5 (Leopard), and if a shell configuration file exists at time of MacPorts installation without a `DISPLAY` variable, the postflight script sets a `DISPLAY` variable as shown below. The `DISPLAY` variable is always omitted on Mac OS X 10.5 or higher.
 
- ```
+ ```bash
  export DISPLAY=:0.0
  ```
 
@@ -331,7 +331,7 @@ To verify that the file containing the MacPorts variables is in effect, type **e
 
 Changes to shell configuration files do not take effect until a new terminal session is opened.
 
-```
+```text
 MANPATH=
 TERM_PROGRAM=Apple_Terminal
 TERM=xterm-color
@@ -358,19 +358,19 @@ MacPorts will check `MP_EDITOR`, `VISUAL` and `EDITOR` in this order, allowing y
 
 For example, to use the nano editor, add this line to your bash config:
 
-```
+```bash
 export EDITOR=/usr/bin/nano
 ```
 
 To use the user-friendly GUI editor [BBEdit](https://www.barebones.com/products/bbedit/) (installation required), add this line:
 
-```
+```bash
 export EDITOR=/Applications/BBEdit.app/Contents/Helpers/bbedit_tool
 ```
 
 To keep a command-line text editor as default while using BBEdit with portfiles, add this:
 
-```
+```bash
 export EDITOR=/usr/bin/vi
 export MP_EDITOR=/Applications/BBEdit.app/Contents/Helpers/bbedit_tool
 ```
@@ -387,11 +387,11 @@ This chapter describes using **port**, port variants, common tasks and port bina
 
 The `help` action shows some brief information about the specified action, or if no action is specified, shows basic usage information for **port** in general.
 
-```
+```bash
 port help selfupdate
 ```
 
-```
+```text
 Usage: selfupdate --no-sync
 
 Upgrade MacPorts itself and run the sync target
@@ -405,11 +405,11 @@ Upgrade MacPorts itself and run the sync target
 
 The `selfupdate` action should be used regularly to update the local ports tree with the global MacPorts ports repository so you will have the latest versions of software packages available. It also checks for new releases of MacPorts itself, and upgrades it when necessary.
 
-```
+```bash
 sudo port selfupdate
 ```
 
-```
+```text
 ---> Updating MacPorts base sources using rsync
 MacPorts base version 2.12.5 installed,
 MacPorts base version 2.12.5 downloaded.
@@ -419,7 +419,7 @@ MacPorts base version 2.12.5 downloaded.
 
 If `selfupdate` detects that a newer version of MacPorts is available, it automatically updates the installed copy of MacPorts base to the latest released version. In that case, you will see this message:
 
-```
+```text
 ---> Updating MacPorts base sources using rsync
 MacPorts base version 2.12.4 installed,
 MacPorts base version 2.12.5 downloaded.
@@ -430,13 +430,13 @@ Installing new MacPorts release in /opt/local as root:admin; permissions 755
 
 If the `selfupdate` procedure fails you'll see a message like this:
 
-```
+```text
 Error installing new MacPorts base: command execution failed
 ```
 
 As always, you can use the debug flag `-d` to enable verbose output. If your `selfupdate` failed, re-run it with debug output enabled to see all output generated by the build system.
 
-```
+```bash
 sudo port -d selfupdate
 ```
 
@@ -482,7 +482,7 @@ Disable regular reminders to run **port reclaim**.
 
 The `list` action lists the currently available version of the specified ports, or if no ports are specified, displays a list of all available ports. The list of available ports is very long, so use [search](#using.port.search "3.1.7. port search") if you are looking for a specific port.
 
-```
+```bash
 port list
 ```
 
@@ -498,13 +498,13 @@ The `search` action allows finding ports by partial matches of the name or descr
 
 Suppose you are looking for PHP in MacPorts. You might start with **port search php** and notice your query produces a lot of output. In fact, at the time of writing this, this search produces 661 matches. By default, **port search** searches both name and description of a port. While we're looking for PHP, we can reduce the number of hits by using the `--name` flag. Furthermore, we only want ports whose name starts with “php”, so we add the `--glob` flag (actually, we could leave it out because it is the default) and modify the search term to **`php*`**:
 
-```
+```bash
 port search --name --glob 'php*'
 ```
 
 Furthermore, we can enable compact output by using the `--line` switch. This causes only a single line to be printed for each match:
 
-```
+```bash
 port search --name --line --glob 'php*'
 ```
 
@@ -512,11 +512,11 @@ Among a large number of PHP modules you will find the main PHP ports, which are 
 
 If you know regex and know about the format of the PHP versions, you can further reduce the output of **port search**:
 
-```
+```bash
 port search --name --line --regex '^php\d*$'
 ```
 
-```
+```text
 php     5.5       lang www    PHP: Hypertext Preprocessor
 php4    4.4.9     lang www    PHP: Hypertext Preprocessor
 php5    5.3.28    lang www    PHP: Hypertext Preprocessor
@@ -529,11 +529,11 @@ php56   5.6.0RC2  lang www    PHP: Hypertext Preprocessor
 
 Let us look at another example that is less complicated. Assuming you are looking for **`rrdtool`**, a popular system to store and graph time-series data, the simple search approach works well:
 
-```
+```bash
 port search rrd
 ```
 
-```
+```text
 cacti @0.8.8b (net)
     Cacti is a complete RRDtool network graphing solution.
 
@@ -631,11 +631,11 @@ Search for variant names.
 
 The `info` action is used to get information about a port: name, version, description, variants, homepage, dependencies, license, and maintainers.
 
-```
+```bash
 port info yubico-pam
 ```
 
-```
+```text
 yubico-pam @2.16 (security)
 Variants:             universal
 
@@ -657,22 +657,22 @@ Maintainers:          cal@macports.org
 
 The `deps` action lists the dependencies of a port. Dependencies are the packages required by a port at runtime (library and runtime dependencies) or required to build it (build, fetch, extract, and patch dependencies), or required to run its test suite (test dependencies).
 
-```
+```bash
 port deps apache2
 ```
 
-```
+```text
 Full Name: apache2 @2.2.27_0+preforkmpm
 Library Dependencies: apr, apr-util, expat, openssl, pcre, perl5, zlib
 ```
 
 Note that the list of dependencies might depend on the variants you chose. For example, choosing the `+openldap` variant of `apache2` adds a dependency on `openldap`:
 
-```
+```bash
 port deps apache2 +openldap
 ```
 
-```
+```text
 Full Name: apache2 @2.2.27_0+openldap+preforkmpm
 Library Dependencies: apr, apr-util, expat, openssl, pcre, perl5, zlib, openldap
 ```
@@ -695,11 +695,11 @@ Exclude test dependencies.
 
 The `rdeps` action is like `deps`, but operates recursively. That is, each of the ports that the given port depends on is listed, and then for each of those ports, its dependencies are listed, and so on. Unlike `deps`, the output is also not split into sections for each dependency type, each port is simply listed on its own line with a level of indentation indicating how many levels deep the dependency occurs.
 
-```
+```bash
 port rdeps gettext
 ```
 
-```
+```text
 The following ports are dependencies of gettext @0.22.5_0:
   ncurses
   gettext-tools-libs
@@ -731,11 +731,11 @@ Exclude test dependencies.
 
 The `variants` action allows you to check what variations of a port are available before you install it. Variants are a way for port authors to provide options you can use to customize your build at install time. See [Invoking Port Variants](#using.variants.invoking "3.2.1. Invoking Variants") below to install ports that have variants.
 
-```
+```bash
 port variants apache2 +universal
 ```
 
-```
+```markdown
 apache2 has the variants:
    eventmpm: Use event MPM (experimental)
      * conflicts with preforkmpm workermpm
@@ -753,7 +753,7 @@ This output lists all variants followed by their description. If a variant depen
 
 The action `install` is used to install a port. Once you determined the name of a port you want (possibly using [**port search**](#using.port.search "3.1.7. port search")), you can install it using this command. See on how to choose variants when installing a new port. For example,
 
-```
+```bash
 sudo port install apache2 -preforkmpm +workermpm
 ```
 
@@ -761,7 +761,7 @@ installs the `apache2` port without the `preforkmpm`, but with the `workermpm` v
 
 If the installation of a port fails, you can enable verbose or debug output by giving the `-v` or `-d` flag to port:
 
-```
+```bash
 sudo port -v install apache2
 ```
 
@@ -769,7 +769,7 @@ All debug information is also kept in `main.log` for the port you installed. Its
 
 If the installation of a port fails, you should always clean and try again, i.e., run
 
-```
+```bash
 sudo port clean portname
 ```
 
@@ -777,7 +777,7 @@ and re-execute the command you ran before.
 
 You might also want to try enabling trace mode, which can prevent conflicts caused by files installed by other ports or in common system locations, such as `/usr/local`. To do that, re-run the installation with the `-t` flag, i.e.,
 
-```
+```bash
 sudo port -t install portname
 ```
 
@@ -787,7 +787,7 @@ If the port still fails to install after you have followed these steps, please [
 
 The installation of a single port consists of multiple phases. These phases are fetch, extract, patch, configure, build, destroot, archive, and finally install. You may break up a port's installation into smaller steps for troubleshooting by using the name of one of these phases as action rather than `install`. For example
 
-```
+```bash
 sudo port destroot apache2
 ```
 
@@ -807,11 +807,11 @@ By default, each port you install using the `install` explicitly (contrary to po
 
 The `notes` action is used to display any notes that a port's author included. These can contain anything, but by convention are brief, and typically contain quick start steps for configuring and using the port, pitfalls to watch out for, or other information that users should be aware of. These same notes are also displayed after installing a port. Many ports have no notes. More extensive documentation can often be found at a port's homepage, or in its installed files.
 
-```
+```bash
 port notes xinit
 ```
 
-```
+```text
 --->  xinit has the following notes:
   To use MacPorts' X11 as the default server, install xorg-server, log out, and
   log back in.
@@ -821,13 +821,13 @@ port notes xinit
 
 The action `clean` deletes intermediate files created by MacPorts while installing a port. A **port clean** is often necessary when builds fail and should be the first thing to try after a failed installation attempt.
 
-```
+```bash
 sudo port clean portname
 ```
 
 **port clean** can also be used to remove corrupted downloads after a failed `fetch` phase, by specifying the `--dist` flag:
 
-```
+```bash
 sudo port clean --dist portname
 ```
 
@@ -859,17 +859,17 @@ All of the above combined.
 
 The `uninstall` action will remove an installed port. It is one of the actions you will use fairly often in MacPorts.
 
-```
+```bash
 sudo port uninstall portname
 ```
 
 MacPorts will refuse to uninstall ports that are still needed by other ports. For example:
 
-```
+```bash
 sudo port uninstall libcomerr
 ```
 
-```
+```text
 --->  Unable to uninstall libcomerr @1.42.9_0, the following ports depend on it:
 --->    kerberos5 @1.11.3_0
 --->    subversion @1.8.9_0
@@ -879,13 +879,13 @@ Error: port uninstall failed: Please uninstall the ports that depend on libcomer
 
 You can recursively uninstall all ports that depend on the given port before uninstalling the port itself to work around this. To do that, use the `--follow-dependents` flag.
 
-```
+```bash
 sudo port uninstall --follow-dependents libcomerr
 ```
 
 You can also override this safety check using the `-f` (force) flag. *Since this will obviously break the dependents you shouldn't do this unless you know what you are doing.*
 
-```
+```bash
 sudo port -f uninstall libcomerr
 ```
 
@@ -909,11 +909,11 @@ Avoid running any uninstall hooks, such as commands that update cache files.
 
 The `contents` action displays a list of all files that have been installed by a given port. You can only use `contents` for ports you installed.
 
-```
+```bash
 port contents xorg-renderproto
 ```
 
-```
+```text
 Port xorg-renderproto contains:
   /opt/local/include/X11/extensions/render.h
   /opt/local/include/X11/extensions/renderproto.h
@@ -923,7 +923,7 @@ Port xorg-renderproto contains:
 
 Common uses for `contents` are finding the location of a port's executable after installing it. The following line is usually helpful in this case:
 
-```
+```bash
 port -q contents portname | grep -E '/s?bin/'
 ```
 
@@ -971,11 +971,11 @@ List sizes in `GB`, i.e., 1000 \* 1000 \* 1000 bytes.
 
 The `installed` action displays the installed versions and variants of the specified ports, or if no ports are specified, all installed ports. It also displays whether a port is “active”, i.e., whether the files belonging to this port are currently present on disk or inactive, i.e., stashed away in a compressed tarball.
 
-```
+```bash
 port installed
 ```
 
-```
+```text
 The following ports are currently installed:
   a52dec @0.7.4_0 (active)
   adns @1.4_0 (active)
@@ -997,11 +997,11 @@ The following ports are currently installed:
 
 Use `-v` to also display the platform and CPU architecture(s) for which the ports were built, and any variants which were explicitly negated.
 
-```
+```bash
 port -v installed libsdl
 ```
 
-```
+```text
 The following ports are currently installed:
   libsdl @1.2.15_3-x11 (active) platform='darwin 13' archs='x86_64'
 ```
@@ -1010,11 +1010,11 @@ The following ports are currently installed:
 
 The `outdated` action checks your installed ports against the current ports tree to see they have been updated since you installed them. Note that you will only get new versions by updating your ports tree using `selfupdate` (or `sync`).
 
-```
+```bash
 port outdated
 ```
 
-```
+```text
 The following installed ports are outdated:
 gnupg                          1.4.16_0 < 1.4.18_0
 gnupg2                         2.0.22_2 < 2.0.25_0
@@ -1033,13 +1033,13 @@ p5.16-ipc-run                  0.910.0_1 < 0.920.0_0
 
 The `upgrade` action upgrades installed ports and their dependencies to the latest version available in MacPorts. In most cases, you will run
 
-```
+```bash
 sudo port upgrade outdated
 ```
 
 to update all ports that have an upgrade available. You can, however, selectively upgrade ports if you want to delay other upgrades until later. This is not recommended unless you know what you are doing, since you might experience software errors for the ports that have not yet been upgraded. To upgrade individual ports, specify the name(s) of the port(s) to upgrade:
 
-```
+```bash
 sudo port upgrade gnupg2
 ```
 
@@ -1049,13 +1049,13 @@ Note that MacPorts may decide to upgrade other dependent ports before upgrading 
 
 `upgrade` does not uninstall the old version of a port. Instead, it deactivates it, i.e., it stashes the files belonging to the older version away in a tarball. This allows you to go back to the older version if there happens to be a problem with the updated one. To do that, run
 
-```
+```bash
 port installed portname
 ```
 
 to determine the version number of the old version you want to re-activate, and run
 
-```
+```bash
 sudo port activate portname @old-version
 ```
 
@@ -1063,13 +1063,13 @@ to go back to the old version.
 
 If you do not want to keep the old versions around while upgrading, you can pass `-u` when upgrading:
 
-```
+```bash
 sudo port -u upgrade outdated
 ```
 
 However, we instead recommend keeping the older versions around for a while and running
 
-```
+```bash
 sudo port uninstall inactive
 ```
 
@@ -1085,13 +1085,13 @@ Always consider the given ports outdated, regardless of whether they actually ar
 
 If the installed variants do not match those requested, upgrade (and change variants) even if the port is not outdated. You can use this to switch the variant selection on an installed port, e.g., using
 
-```
+```bash
 sudo port upgrade --enforce-variants apache2 -preforkmpm +workermpm
 ```
 
 Note that `--enforce-variants` will also enforce your variant selection in all dependencies. If you know this is not necessary, you can avoid processing dependencies using the global `-n` flag:
 
-```
+```bash
 sudo port -n upgrade --enforce-variants apache2 -preforkmpm +workermpm
 ```
 
@@ -1103,11 +1103,11 @@ Do not automatically install replacement ports for a port that you have installe
 
 The `dependents` action reports what ports depend upon a given (installed) port, if any.
 
-```
+```bash
 port dependents openssl
 ```
 
-```
+```text
 apache2 depends on openssl
 curl depends on openssl
 cyrus-sasl2 depends on openssl
@@ -1129,7 +1129,7 @@ wireshark depends on openssl
 
 Note that `dependents` does not work for ports that are not installed on your system. If you want to find out, which ports depend on a port that you have not installed, you can use
 
-```
+```bash
 port echo depends:portname
 ```
 
@@ -1139,11 +1139,11 @@ This command will, however, not cover dependencies that are only present in non-
 
 The `livecheck` action checks to see if the application corresponding to a given port has been updated at the developer's download site. This action is mostly useful for port maintainers to determine whether their port needs to be updated, but other may also wish to see if a port packages the latest available version. See for more information on livecheck.
 
-```
+```bash
 port livecheck rb19-sass
 ```
 
-```
+```text
 rb19-sass seems to have been updated (port version: 3.3.10, new version: 3.3.14)
 ```
 
@@ -1157,22 +1157,22 @@ The lint action checks if the `Portfile` conforms to the MacPorts standards spec
 
 If a `Portfile` validates fine the following message is shown.
 
-```
+```bash
 port lint rb19-sass
 ```
 
-```
+```text
 --->  Verifying Portfile for rb19-sass
 --->  0 errors and 0 warnings found.
 ```
 
 Otherwise the warnings and errors are listed.
 
-```
+```bash
 port lint abiword
 ```
 
-```
+```text
 --->  Verifying Portfile for abiword
 Warning: Variant use_binary does not have a description
 Warning: Variant use_source does not have a description
@@ -1198,21 +1198,21 @@ Ports that want to run daemon processes can install their own `.plist` file(s) i
 
 So once a port is installed, the `load` action can be used to do the above and activate the port's **launchd** service(s):
 
-```
+```bash
 sudo port load prometheus
 ```
 
-```
+```text
 --->  Loading startupitem 'prometheus' for prometheus
 ```
 
 Now the port's service(s) should be running in **launchd**. This can be verified with the **launchctl** command:
 
-```
+```bash
 sudo launchctl list | grep macports
 ```
 
-```
+```text
 49119   0       org.macports.prometheus
 ```
 
@@ -1226,11 +1226,11 @@ The `unload` action reverses this.
 
 **port unload** will stop the port's daemon processes, and mark the port's service `.plist` as disabled:
 
-```
+```bash
 sudo port unload prometheus
 ```
 
-```
+```text
 --->  Unloading startupitem 'prometheus' for prometheus
 ```
 
@@ -1240,17 +1240,17 @@ The port's service(s) should no longer be present in **launchctl list**.
 
 Variants are a way for port authors to provide options for a port that may be chosen at installation. Typically, variants are optional features that can be enabled, but are not necessarily useful for all users and are thus not enabled by default. To display the available variants for a port, if any, use this command:
 
-```
+```bash
 port variants portname
 ```
 
 For example:
 
-```
+```bash
 port variants apache2
 ```
 
-```
+```markdown
 apache2 has the variants:
    eventmpm: Use event MPM (experimental)
      * conflicts with preforkmpm workermpm
@@ -1268,19 +1268,19 @@ This output lists all variants followed by their description. If a variant depen
 
 A variant can only be selected when a port is installed. After you have determined what variants a given port has, if any, you may install a port using a variant by specifying its name preceded by a plus sign on the command line, for example
 
-```
+```bash
 sudo port install apache2 +openldap
 ```
 
 Multiple variants can be selected by simply listing them one after another separated by a space.
 
-```
+```bash
 sudo port install apache2 +openldap +universal
 ```
 
 Use a minus sign to deselect a variant that is on by default.
 
-```
+```bash
 sudo port install apache2 -preforkmpm +workermpm
 ```
 
@@ -1288,7 +1288,7 @@ Note that you will not see any confirmation of successful variant selection and 
 
 This happens because MacPorts will also use the specified variants for any dependencies. For example,
 
-```
+```bash
 sudo port install apache2 +mariadb
 ```
 
@@ -1302,7 +1302,7 @@ A `Portfile` can specify a default set of variants that will be used when you do
 
 If you wish to disable a variant that has been enabled by default, either by the `Portfile`, or by your configuration in `variants.conf`, you can negate the variant in question by prefixing the variant name with a minus on the command line:
 
-```
+```bash
 sudo port install apache2 -preformmpm +workermpm
 ```
 
@@ -1316,11 +1316,11 @@ Mind the “sudo” for some of the subsequent examples, which is necessary if y
 
 The local ports tree is a collection of files that contain information on which packages are available through MacPorts and how they can be installed. You should regularly update your ports tree to get access to updated versions of software and bug fixes. To do that, use `selfupdate`:
 
-```
+```bash
 sudo port selfupdate
 ```
 
-```
+```text
 Password:
 ---> Updating MacPorts base sources using rsync
 MacPorts base version 2.12.5 installed,
@@ -1336,11 +1336,11 @@ The ports tree has been updated. To upgrade your installed ports, you should run
 
 To see what's new after running `selfupdate`, you can use **port outdated** to generate a list of ports that have newer versions available. This can help in estimating the time required for **sudo port upgrade outdated**, even though this depends on further factors such as binary package availability and a port's build time.
 
-```
+```bash
 port outdated
 ```
 
-```
+```text
 The following installed ports are outdated:
 gnupg                          1.4.16_0 < 1.4.18_0
 gnupg2                         2.0.22_2 < 2.0.25_0
@@ -1357,17 +1357,17 @@ p5.16-ipc-run                  0.910.0_1 < 0.920.0_0
 
 To upgrade all your installed and outdated ports, run
 
-```
+```bash
 sudo port upgrade outdated
 ```
 
 In case you want to upgrade only a specific port (not recommended unless you know what you are doing), replace “outdated” in the command given above with the port's name:
 
-```
+```bash
 sudo port upgrade makedepend
 ```
 
-```
+```text
 Password:
 ---> Computing dependencies for makedepend
 ---> Fetching makedepend
@@ -1392,13 +1392,13 @@ By default, upgrading ports in MacPorts does not remove the older versions. This
 
 Use
 
-```
+```bash
 port installed inactive
 ```
 
 to get a list of inactive ports you likely no longer need.
 
-```
+```text
 The following ports are currently installed:
   gnupg @1.4.16_0
   gnupg2 @2.0.22_2
@@ -1413,11 +1413,11 @@ The following ports are currently installed:
 
 Check the list for any ports you might still want to keep. To remove all of them at once, run
 
-```
+```bash
 sudo port uninstall inactive
 ```
 
-```
+```text
 Password:
 --->  Uninstalling p5.16-gnupg-interface @0.330.0_3
 --->  Cleaning p5.16-gnupg-interface
@@ -1441,11 +1441,11 @@ Password:
 
 Of course you could also select only a specific inactive port, but that requires to specify the exact version:
 
-```
+```bash
 sudo port uninstall HexFiend @2.1.2_1
 ```
 
-```
+```text
 Password:
 --->  Uninstalling HexFiend @2.1.2_1
 --->  Cleaning HexFiend
@@ -1453,7 +1453,7 @@ Password:
 
 To uninstall all inactive ports but a single one, you can use the following shortcut:
 
-```
+```bash
 sudo port uninstall inactive and not portname
 ```
 
@@ -1461,28 +1461,28 @@ sudo port uninstall inactive and not portname
 
 If you want to find all ports that depend on a given other port, you can use
 
-```
+```bash
 port echo depends:portname
 ```
 
 If you are only interested in the dependent ports that you actually have installed, you can use the quicker and more accurate `dependents`:
 
-```
+```bash
 port dependents portname
 ```
 
-```
+```text
 gnupg2 depends on libksba
 gpg-agent depends on libksba
 ```
 
 MacPorts also has a recursive version of the `dependents` action called `rdependents`:
 
-```
+```bash
 port rdependents libksba
 ```
 
-```
+```text
 The following ports are dependent on libksba:
   gnupg2
     gpgme
@@ -1491,15 +1491,15 @@ The following ports are dependent on libksba:
 
 Finally, to find out which port you manually installed caused the automatic installation of a dependency, use the following expression:
 
-```
+```bash
 port installed requested and rdependentof:portname
 ```
 
-```
+```bash
 port installed requested and rdependentof:libksba
 ```
 
-```
+```text
 The following ports are currently installed:
   gnupg2 @2.0.25_0 (active)
 ```
@@ -1508,11 +1508,11 @@ The following ports are currently installed:
 
 After a while of using MacPorts, installing and uninstalling ports, packages that have been automatically installed as dependencies for other ports are left behind, even though they are no longer necessary. Ports that have not been manually installed (“requested”) and do not have any dependents are called “leaves” and can be identified using the `leaves` pseudo-port, for example in conjunction with the `echo` or `installed` action.
 
-```
+```bash
 port echo leaves
 ```
 
-```
+```text
 git-flow                       @0.4.1_2
 gmake                          @4.0_0
 gpgme                          @1.5.1_0
@@ -1526,7 +1526,7 @@ yasm                           @1.2.0_0
 
 These leaves may be wanted, but are in most cases unneeded. See to find out how to mark some of the leaves as requested. You can uninstall all leaves using
 
-```
+```bash
 sudo port uninstall leaves
 ```
 
@@ -1534,7 +1534,7 @@ Note that the uninstallation can cause new ports to become leaves. To uninstall 
 
 To go through this process interactively so you can make sure you're not uninstalling anything you want to keep, you can install the `port cutleaves` port. After installation, run it with
 
-```
+```bash
 sudo port cutleaves
 ```
 
@@ -1542,11 +1542,11 @@ sudo port cutleaves
 
 Well, before we come to the procedure of defining your requested ports, let's have a look at a typical scenario where you want to understand what is actually installed and what is on the other hand truly necessary for your system. Say checking leaves of your MacPorts installation gives this output:
 
-```
+```bash
 port echo leaves
 ```
 
-```
+```text
 git-flow                       @0.4.1_2
 gmake                          @4.0_0
 gpgme                          @1.5.1_0
@@ -1562,23 +1562,23 @@ Now it is up to the user to decide what's needed and what is not. We've noticed 
 
 Since we decided to keep `pkgconfig`, we are going to mark it as manually installed (“requested” in MacPorts lingo) using:
 
-```
+```bash
 sudo port setrequested pkgconfig
 ```
 
 When you've step-by-step figured out which ports you want to keep on your system and have set them as requested, you'll have a list of unnecessary ports, which you can get rid of using
 
-```
+```bash
 sudo port uninstall leaves
 ```
 
 Note that uninstalling leaves may mark new ports as leaves, so you will have to repeat the process. You can install the `port cutleaves` port, which is a special script for the job. It allows you to interactively decide whether to keep or uninstall a port. Run it as
 
-```
+```bash
 sudo port cutleaves
 ```
 
-```
+```text
 [Leaf 1 of 8] hs-download-curl @0.1.4_0 (active):
   [keep] / (u)ninstall / (f)lush / (a)bort:
 ** hs-download-curl @0.1.4_0 will be kept.
@@ -1672,13 +1672,13 @@ There are no new leaves to process.
 
 You can get a list of all ports you previously set as requested (or installed manually) using:
 
-```
+```bash
 port installed requested
 ```
 
 We recommend you check the list of leaves from time to time to keep your system free of too much “garbage”. You should also periodically check the list of your requested ports and mark any ports you no longer need as unrequested using
 
-```
+```bash
 sudo port unsetrequested portname
 ```
 
@@ -1694,11 +1694,11 @@ Binary archives can only be used on a target system running MacPorts. They allow
 
 You can manually create an archive (and see debug output for its creation) using
 
-```
+```bash
 sudo port -d archive logrotate
 ```
 
-```
+```text
 --->  Installing logrotate @3.8.6_2+gzip
 […]
 DEBUG: Creating logrotate-3.8.6_2+gzip.darwin_13.x86_64.tbz2
@@ -1748,31 +1748,31 @@ Instead, follow and choose a prefix specific to the software you are trying to p
 
 Create a macOS `.pkg` installer for the `pstree` port:
 
-```
+```bash
 sudo port pkg pstree
 ```
 
 You may also create a macOS `.dmg` disk image file instead:
 
-```
+```bash
 sudo port dmg pstree
 ```
 
 In most cases you probably want to package a port and all its library and runtime dependencies in a single package. You can use a metapackage to do this. Create one using:
 
-```
+```bash
 sudo port mpkg gimp2
 ```
 
 Just as with a single package, a metapackage can also be wrapped in a `.dmg`.
 
-```
+```bash
 sudo port mdmg gimp2
 ```
 
 All packages are placed in a port's work directory, which you can locate using:
 
-```
+```bash
 port work portname
 ```
 
@@ -1810,46 +1810,46 @@ Here we list the individual Portfile components for an application that conforms
 1. Modeline
    This should be the first line of a Portfile. It sets the correct editing options for vim and emacs. See [Port Style](#development.practices.portstyle "4.8.1. Port Style") for more information. Its use is optional and up to the port maintainer.
 
-   ```
+   ```tcl
    # -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
    ```
 
 2. PortSystem line
    This statement is required for all ports.
 
-   ```
+   ```tcl
    PortSystem          1.0
    ```
 
 3. Port name
 
-   ```
+   ```text
    name                rrdtool
    ```
 
 4. Port version
 
-   ```
+   ```text
    version             1.2.23
    ```
 
 5. Port categories
    A port may belong to more than one category, but the first (primary) category should match the directory name in the ports tree where the Portfile is to reside.
 
-   ```
+   ```text
    categories          net
    ```
 
 6. Platform statement
 
-   ```
+   ```text
    platforms           darwin
    ```
 
 7. Port maintainers
    A port's maintainers are the people who have agreed to take responsibility for keeping the port up-to-date. The `maintainers` keyword lists the maintainers' GitHub usernames or email addresses, preferably in the obfuscated form which hides them from spambots. For more, see the full explanation of the [maintainers keyword](#reference.keywords.maintainers) in the [Global Keywords](#reference.keywords "5.1. Global Keywords") section of the [Portfile Reference](#reference "Chapter 5. Portfile Reference") chapter.
 
-   ```
+   ```text
    maintainers         @neverpanic \
                        jdoe \
                        example.org:julesverne
@@ -1857,26 +1857,26 @@ Here we list the individual Portfile components for an application that conforms
 
 8. Port description
 
-   ```
+   ```text
    description         Round Robin Database
    ```
 
 9. Port long\_description
 
-   ```
+   ```text
    long_description    RRDtool is a system to store and display time-series \
                        data
    ```
 
 10. A port's application homepage
 
-    ```
+    ```text
     homepage            https://people.ee.ethz.ch/~oetiker/webtools/rrdtool/
     ```
 
 11. A port's download URLs
 
-    ```
+    ```text
     master_sites        https://oss.oetiker.ch/rrdtool/pub/ \
                         ftp://ftp.pucpr.br/rrdtool/
     ```
@@ -1884,7 +1884,7 @@ Here we list the individual Portfile components for an application that conforms
 12. Port checksums
     The checksums specified in a Portfile are checked with the fetched tarball for security. For the best security, use rmd160 and sha256 checksum types. Checksums should also include the target file's size.
 
-    ```
+    ```text
     checksums               rmd160  7bbfce4fecc2a8e1ca081169e70c1a298ab1b75a \
                             sha256  2829fcb7393bac85925090b286b1f9c3cd3fbbf8e7f35796ef4131322509aa53 \
                             size    1061530
@@ -1892,29 +1892,29 @@ Here we list the individual Portfile components for an application that conforms
 
     To find the correct checksums for a port's distribution file, follow one of these examples:
 
-    ```
+    ```text
     %% openssl dgst -rmd160 rrdtool-1.2.23.tar.gz
     %% openssl dgst -sha256 rrdtool-1.2.23.tar.gz
     ```
 
-    ```
+    ```text
     RIPEMD160( ... rrdtool-1.2.23.tar.gz)= 7bbfce4fecc2a8e1ca081169e70c1a298ab1b75a
     SHA256( ... rrdtool-1.2.23.tar.gz)= 2829fcb7393bac85925090b286b1f9c3cd3fbbf8e7f35796ef4131322509aa53
     ```
 
     or update the version in the Portfile:
 
-    ```
+    ```text
     %% sudo port edit rrdtool
     ```
 
     and run:
 
-    ```
+    ```text
     %% port -v checksum rrdtool
     ```
 
-    ```
+    ```text
     --->  Fetching distfiles for rrdtool
     --->  Verifying checksums for rrdtool
     --->  Checksumming rrdtool-1.2.23.tar.gz
@@ -1936,7 +1936,7 @@ Here we list the individual Portfile components for an application that conforms
 13. Port dependencies
     A port's dependencies are ports that must be installed before another port is installed.
 
-    ```
+    ```text
     depends_lib         port:perl5.8 \
                         port:tcl \
                         port:zlib
@@ -1944,7 +1944,7 @@ Here we list the individual Portfile components for an application that conforms
 
 14. Port configure arguments (optional)
 
-    ```
+    ```text
     configure.args      --enable-perl-site-install \
                         --mandir=${prefix}/share/man
     ```
@@ -1955,7 +1955,7 @@ In this section we begin by taking a look at a complete simple Portfile; then we
 
 ### 4.3.1. A Basic Portfile
 
-```
+```tcl
 # -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
@@ -1988,7 +1988,7 @@ configure.args      --enable-perl-site-install \
 
 To augment a port's installation phase, and not override it, you may use pre- and post- installation phases as shown in this example.
 
-```
+```tcl
 post-destroot {
     # Install example files not installed by the Makefile
     file mkdir ${destroot}${prefix}/share/doc/${name}/examples
@@ -2001,7 +2001,7 @@ post-destroot {
 
 To override the automatic MacPorts installation phase processing, define your own installation phases as shown in this example.
 
-```
+```bash
 destroot {
     xinstall -m 755 -d ${destroot}${prefix}/share/doc/${name}
     xinstall -m 755 ${worksrcpath}/README ${destroot}${prefix}/share/doc/${name}
@@ -2012,7 +2012,7 @@ destroot {
 
 To eliminate a default phase, simply define a phase with no contents as shown.
 
-```
+```text
 build {}
 ```
 
@@ -2024,7 +2024,7 @@ Because many software packages do not use `configure`, a keyword is provided to 
 
 Startupitems may be placed in the global section of a Portfile.
 
-```
+```tcl
 startupitem.create      yes
 startupitem.name        nmicmpd
 startupitem.executable  "${prefix}/bin/nmicmpd"
@@ -2038,7 +2038,7 @@ Variants are a way for port authors to provide options that may be invoked at in
 
 The most common actions for user-selected variants is to add or remove dependencies, configure arguments, and build arguments according to various options a port author wishes to provide. Here is an example of several variants that modify depends\_lib and configure arguments for a port.
 
-```
+```text
 variant fastcgi description {Add fastcgi binary} {
     configure.args-append \
             --enable-fastcgi \
@@ -2071,7 +2071,7 @@ Variant names may contain only the characters A-Z, a-z, 0-9, underscore “\_”
 
 In the example variant declaration below, the configure argument `--without-x` is removed and a number of others are appended.
 
-```
+```text
 variant x11 description {Builds port as an X11 program with Lucid widgets} {
     configure.args-delete   --without-x
     configure.args-append   --with-x-toolkit=lucid \
@@ -2094,7 +2094,7 @@ variant x11 description {Builds port as an X11 program with Lucid widgets} {
 
 If a variant requires options in addition to those provided by keywords using -append and/or -delete, in other words, any actions that would normally take place within a port installation phase, do not try to do this within the variant declaration. Rather, modify the behavior of any affected phases when the variant is invoked using the variant\_isset keyword.
 
-```
+```text
 post-destroot {
     xinstall -m 755 -d ${destroot}${prefix}/etc/
     xinstall ${worksrcpath}/examples/foo.conf \
@@ -2111,7 +2111,7 @@ post-destroot {
 
 Variants are used to specify actions that lie outside the core functions of an application or port, but there may be some cases where you wish to specify these non-core functions by default. For this purpose you may use the keyword default\_variants.
 
-```
+```text
 default_variants    +foo +bar
 ```
 
@@ -2133,7 +2133,7 @@ The subport declaration causes MacPorts to define an additional port, with the *
 
 For example, if a Portfile contains:
 
-```
+```tcl
 Portfile                   1.0
 
 name                       example
@@ -2154,7 +2154,7 @@ subport example-sub2 {
 
 MacPorts will produce the same results as if there were three Portfiles:
 
-```
+```tcl
 Portfile                   1.0
 
 name                       example
@@ -2167,7 +2167,7 @@ depends_lib                aaa
 configure.args             --bbb
 ```
 
-```
+```tcl
 Portfile                   1.0
 
 name                       example
@@ -2179,7 +2179,7 @@ depends_lib-append         ccc
 configure.args             --ddd
 ```
 
-```
+```tcl
 Portfile                   1.0
 
 name                       example
@@ -2206,20 +2206,20 @@ If you wish to contribute modifications or fixes to a Portfile, you should do so
 
 1. Make a copy of the Portfile you wish to modify; both files must be in the same directory, though it may be any directory.
 
-   ```
+   ```bash
    %% cp -p Portfile Portfile.orig
    ```
 
 2. Edit the file to make it as you want it to be after it is fetched.
 3. Now use the Unix command **diff -u** to create a “unified” diff patch file. Put the name of the port in the patchfile, for example, Portfile-rrdtool.diff.
 
-   ```
+   ```bash
    %% diff -u Portfile.orig Portfile > Portfile-rrdtool.diff
    ```
 
 4. A patch file that is a “unified” diff file is the easiest to interpret by humans and this type should always be used for ports. The Portfile patch below will change the version and checksums when applied.
 
-   ```
+   ```text
    --- Portfile.orig        2011-07-25 18:52:12.000000000 -0700
    +++ Portfile    2011-07-25 18:53:35.000000000 -0700
    @@ -2,7 +2,7 @@
@@ -2254,7 +2254,7 @@ To create a patch to modify a single file, follow the steps below.
 
 1. Locate the file you wish to patch in its original location within the unpacked source directory and make a duplicate of it.
 
-   ```
+   ```bash
    %% cd ~/Downloads/foo-1.34/src
    %% cp -p Makefile.in Makefile.in.orig
    ```
@@ -2262,7 +2262,7 @@ To create a patch to modify a single file, follow the steps below.
 2. Edit the file and modify the text to reflect your corrections.
 3. Now **cd** to the top-level directory of the unpacked source, and use the Unix command **diff -u** to create a “unified” diff patch file.
 
-   ```
+   ```bash
    %% cd ~/Downloads/foo-1.34
    %% diff -u src/Makefile.in.orig src/Makefile.in > destdir-variable-fix.diff
    ```
@@ -2274,7 +2274,7 @@ To create a patch to modify a single file, follow the steps below.
    If you find an existing source file patch you wish to use that contains leading path information (diff was executed from a directory higher than the top-level source directory), you will need to use the [patch phase keyword](#reference.phases.patch "5.3.6. Patch Phase Keywords") `patch.pre_args` to specify a `-px` value for how many prefixes with leading slashes are to be stripped off.
 4. A patch file that is a “unified” diff file is the easiest to interpret by humans and this type should always be used for ports. See the example below where a patch adds `DESTDIR` support to `Makefile.in`.
 
-   ```
+   ```text
    --- src/Makefile.in.orig   2007-06-01 16:30:47.000000000 -0700
    +++ src/Makefile.in       2007-06-20 10:10:59.000000000 -0700
    @@ -131,23 +131,23 @@
@@ -2290,7 +2290,7 @@ To create a patch to modify a single file, follow the steps below.
 
 5. Place the patch `destdir-variable-fix.diff` in the directory `${portpath}/files` and use it in a port using the `patchfiles` keyword. `${portpath}` may be in a local Portfile repository during development, or `files/` may be in a port's `${portpath}` in the global MacPorts repository.
 
-   ```
+   ```tcl
    patchfiles          destdir-variable-fix.diff
    ```
 
@@ -2300,17 +2300,17 @@ MacPorts applies patch files automatically, but you may want to know how to appl
 
 1. Change to the directory containing the file to be patched. In this example, we'll apply a Portfile patch to the postfix port.
 
-   ```
+   ```bash
    %% cd $(port dir postfix)
    ```
 
 2. Now apply the patch from your Downloads folder, or wherever you put it. The patchfile knows the name of the file to be patched.
 
-   ```
+   ```bash
    %% patch -p0 < ~/Downloads/Portfile-postfix.diff
    ```
 
-   ```
+   ```text
    patching file Portfile
    ```
 
@@ -2320,13 +2320,13 @@ To create and test Portfiles that are not yet published in the MacPorts ports tr
 
 1. Open `sources.conf` in a text editor. For example, to open it into TextEdit:
 
-   ```
+   ```bash
    %% open -e ${prefix}/etc/macports/sources.conf
    ```
 
 2. Insert a URL pointing to your local repository location before the rsync URL as shown.
 
-   ```
+   ```text
    file:///Users/julesverne/ports
    rsync://rsync.macports.org/macports/release/tarballs/ports.tar [default]
    ```
@@ -2336,7 +2336,7 @@ To create and test Portfiles that are not yet published in the MacPorts ports tr
    The file URL should always appear before the rsync URL so that local Portfiles can be tested that are duplicated in the MacPorts tree, because **port** will always operate on the first Portfile it encounters.
 3. Place the Portfiles you create inside a directory whose name matches the port, which should in turn be placed inside a directory that reflects the port's primary category (the first category entry in the Portfile). For example, to create the directory for a hypothetical port “bestevergame” and to begin editing its Portfile in TextEdit, you can use these commands:
 
-   ```
+   ```bash
    %% mkdir -p ~/ports/games/bestevergame
    %% cd ~/ports/games/bestevergame
    %% touch Portfile
@@ -2347,12 +2347,12 @@ To create and test Portfiles that are not yet published in the MacPorts ports tr
 4. If your Portfile needs to apply any patches to the port's source files, create a `files` directory and place the patchfiles in it, and reference the patchfiles in your Portfile, as explained in [Creating Source Code Patches](#development.patches.source "4.6.2. Creating Source Code Patches").
 5. After you create or update your Portfile, use **portindex** in the local repository's directory to create or update the index of the ports in your local repository.
 
-   ```
+   ```bash
    %% cd ~/ports
    %% portindex
    ```
 
-   ```
+   ```text
    Creating software index in /Users/julesverne/ports
    Adding port games/bestevergame
    Total number of ports parsed:   1
@@ -2362,11 +2362,11 @@ To create and test Portfiles that are not yet published in the MacPorts ports tr
 
 Once the local port is added to the `PortIndex`, it becomes available for searching or installation as with any other Portfile in the MacPorts tree:
 
-```
+```bash
 %% port search bestever
 ```
 
-```
+```text
 bestevergame @1.1 (games)
     The Best Ever Game
 ```
@@ -2381,19 +2381,19 @@ Portfiles may be thought of as a set of declarations rather than a piece of code
 
 The two columns should be separated by spaces (not tabs), so you should set your editor to use soft tabs, which are tabs emulated by spaces. By default, the top line of all Portfiles should use a modeline that defines soft tabs for the vim and emacs editors as shown.
 
-```
+```tcl
 # -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 ```
 
 The left column should consist of single words, and will be separated from the more complex right side by spaces in multiples of four. Variable assignments and variant declarations are exceptions, and may be considered a single word on the left side, with a single space between words.
 
-```
+```tcl
 set libver "8.5"
 ```
 
 When items require multiple lines with line continuation, they can be separated from the previous and next items with a blank line. Indent the additional lines to the same column that the right side begins on in the first line.
 
-```
+```tcl
 checksums               rmd160  7bbfce4fecc2a8e1ca081169e70c1a298ab1b75a \
                         sha256  2829fcb7393bac85925090b286b1f9c3cd3fbbf8e7f35796ef4131322509aa53 \
                         size    1061530
@@ -2401,7 +2401,7 @@ checksums               rmd160  7bbfce4fecc2a8e1ca081169e70c1a298ab1b75a \
 
 Should a key item such as a phase or variant require braces, the opening brace should appear on the same line and the closing brace should be on its own line. The block formed by the braces is indented for visual clearance. Braces merely quoting strings, for example the description of variants, are placed on the same line without line breaks.
 
-```
+```tcl
 variant mysql5 description {Enable support for MySQL 5} {
     depends_lib-append        port:mysql5
     configure.args-replace    --without-mysql5 --with-mysql5
@@ -2410,7 +2410,7 @@ variant mysql5 description {Enable support for MySQL 5} {
 
 Frequently multiple items are necessary in the second column. For example, to set multiple source download locations, multiple `master_sites` must be defined. Unless the second column items are few and short you should place each additional item on a new line and separate lines with a backslash. Indent the lines after the first line to make it clear the items are second column values and also to emphasize the unity of the block.
 
-```
+```tcl
 destroot.keepdirs    ${destroot}${prefix}/var/run \
                      ${destroot}${prefix}/var/log \
                      ${destroot}${prefix}/var/cache/mrtg
@@ -2420,7 +2420,7 @@ destroot.keepdirs    ${destroot}${prefix}/var/run \
 
 For packages that use a configuration file, it's generally desirable to not overwrite user-changes in the config file when performing an upgrade or reinstall.
 
-```
+```text
 post-destroot {
     # Move conf file to sample so it does not get overwritten
     file rename ${destroot}${prefix}/etc/apcupsd/apcupsd.conf \
@@ -2452,7 +2452,7 @@ At the end of this section the use of the obsolete PortGroup is suggested as an 
 
 Skrooge's original devel port file looked like this:
 
-```
+```tcl
 # -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
@@ -2495,32 +2495,32 @@ The following steps have to be taken to ensure a smooth transition for a MacPort
 
 1. add the line `replaced_by foo` where foo is the port this one is replaced by; when a user upgrades this port, MacPorts will instead install the replacement port
 
-   ```
+   ```text
    replaced_by         skrooge
    ```
 
 2. increase the version, revision, or epoch, so that users who have this port installed will get notice in `port                 outdated` that they should upgrade it and trigger the above process
 
-   ```
+   ```text
    revision            1
    ```
 
 3. clear distfiles (have a line reading only `distfiles`) so that no distfile is downloaded for this stub port
 
-   ```
+   ```tcl
    distfiles
    ```
 
 4. delete master\_sites since there aren't any distfiles to download
 5. disable livecheck
 
-   ```
+   ```tcl
    livecheck.type      none
    ```
 
 6. add a pre-configure block with a `ui_error` and `return -code error` explaining to users who try to install this port that the port has been replaced
 
-   ```
+   ```bash
    pre-configure {
        ui_error "Please do not install this port since it has been replaced by 'skrooge'."
        return -code error
@@ -2529,7 +2529,7 @@ The following steps have to be taken to ensure a smooth transition for a MacPort
 
 With above modifications the port file eventually looks like this:
 
-```
+```tcl
 # -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
@@ -2565,11 +2565,11 @@ distfiles
 
 A user upgrading ports will experience the following for port “skrooge-devel”:
 
-```
+```bash
 %% sudo port upgrade skrooge-devel
 ```
 
-```
+```markdown
 --->  skrooge-devel is replaced by skrooge
 --->  Computing dependencies for skrooge
 --->  Fetching skrooge
@@ -2600,11 +2600,11 @@ A user upgrading ports will experience the following for port “skrooge-devel�
 
 In case a user actually tries to install the obsolete port “skrooge-devel” it would be pointed out by an error message that this is impossible now:
 
-```
+```bash
 %% sudo port install skrooge-devel
 ```
 
-```
+```text
 --->  Fetching skrooge-devel
 --->  Verifying checksum(s) for skrooge-devel
 --->  Extracting skrooge-devel
@@ -2620,7 +2620,7 @@ To report a bug, see <https://guide.macports.org/#project.tickets>
 
 Using the PortGroup obsolete makes the task described in the previous subsection much easier:
 
-```
+```tcl
 # -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
 
 PortSystem          1.0
@@ -2674,7 +2674,7 @@ PortSystem
 
 The first non-comment line of every Portfile; it should be followed by PortGroup inclusions (if any) and then a blank line. It defines which version of the Portfile interpreter will be used. (There is currently only one version.)
 
-```
+```tcl
 PortSystem          1.0
 ```
 
@@ -2682,7 +2682,7 @@ name
 
 The name of the port. To avoid special interpretation by shells and the like, names should contain only alphanumeric characters, underscores, dashes and periods. For projects whose proper names contain “+” characters, change these to “x” (e.g., “libstdc++” becomes “libstdcxx”).
 
-```
+```text
 name                foo
 ```
 
@@ -2694,7 +2694,7 @@ The version keyword should adhere as closely as possible to the format used by t
 
 When updating the version of a port that installs a dynamic library, check (by examining the second line of output from the **`otool -L`** command run on the library before and after upgrading) whether its install name has changed. If it has, increase the revision of every port that links with the library to rebuild it with the new library.
 
-```
+```text
 version             1.23.45
 ```
 
@@ -2735,7 +2735,7 @@ Some examples of situations in which a port's revision should not usually be inc
 - changing comments or whitespace in the Portfile
 - any other change to the Portfile that does not change the files it installs
 
-```
+```text
 revision            1
 ```
 
@@ -2747,7 +2747,7 @@ The purpose of increasing the epoch is to cause MacPorts to consider a port to b
 
 Some Portfile authors have used large epoch values that look like dates in YYYYMMDD format (e.g., `20091231`). When it is necessary to increase the epoch in such ports, the new epoch can be set to the current date. It is not recommended to use this format when adding an epoch to a port that does not already have one; instead, just set the epoch to `1`, and when needing to increase an existing small epoch, increase it by 1.
 
-```
+```text
 epoch               1
 ```
 
@@ -2759,7 +2759,7 @@ categories
 
 The category under which the ported software falls. The first category should be the same as the directory within which the Portfile is stored; secondary and tertiary categories may be selected.
 
-```
+```text
 categories          net security
 ```
 
@@ -2772,7 +2772,7 @@ A port's maintainers are the people who have agreed to take responsibility for k
 
 In the example below, the port is maintained by a GitHub user named neverpanic, and the owners of the two email addresses `<jdoe@macports.org>` and `<julesverne@example.org>`
 
-```
+```text
 maintainers         @neverpanic \
                     jdoe \
                     example.org:julesverne
@@ -2780,7 +2780,7 @@ maintainers         @neverpanic \
 
 Braces can be used to express that these refer to the same person, for example the GitHub username and an email. In the following example, the port is maintained by a GitHub user named jverne, that can also be contacted directly at `<julesverne@example.org>`.
 
-```
+```text
 maintainers         {@jverne example.org:julesverne}
 ```
 
@@ -2792,7 +2792,7 @@ description
 
 A short sentence fragment describing the software.
 
-```
+```text
 description         a classic shooter arcade game
 ```
 
@@ -2808,13 +2808,13 @@ Long descriptions are usually a single paragraph. MacPorts will word-wrap long l
 
 Sometimes the port's name and short description are reused as part of the long description. When referencing the `description` keyword (or any other list keyword with more than one item), it should be preceded with the expand operator.
 
-```
+```text
 long_description    ${name} is {*}${description} derived from \
                     the game alien-munchers.  Not suitable for \
                     children under two years old.
 ```
 
-```
+```text
 long_description    foobar provides the following programs: \
                     \n \
                     \n* foo, a lorem ipsum utility \
@@ -2830,11 +2830,11 @@ Usually the homepage should be a URL that does not redirect to another URL. For 
 
 When the homepage is just a hostname with no path component, don't include a trailing slash.
 
-```
+```text
 homepage            https://www.example.org/apps/
 ```
 
-```
+```text
 homepage            https://www.example.com
 ```
 
@@ -2856,7 +2856,7 @@ A platform specifier that is just a platform name is purely informational for us
 
 See also `os.platform`.
 
-```
+```text
 platforms           macosx freebsd
 ```
 
@@ -2870,19 +2870,19 @@ Examples:
 
 A port that works on Darwin 12 and later:
 
-```
+```text
 platforms           {darwin >= 12}
 ```
 
 A port that works on Darwin versions between 10 and 19 inclusive:
 
-```
+```text
 platforms           {darwin >= 10 < 20}
 ```
 
 A port that works on Darwin versions between 10 and 19 but not version 12.x:
 
-```
+```text
 platforms           {darwin >= 10 != 12.* < 20}
 ```
 
@@ -2890,19 +2890,19 @@ The special value `any` can also be used to indicate that a port will install id
 
 Ports that install identical files on any platform should use:
 
-```
+```text
 platforms           any
 ```
 
 Ports that install identical files on any Darwin version, but may install different files on other platforms (or don't work on other platforms), should use:
 
-```
+```text
 platforms           {darwin any}
 ```
 
 It is possible to combine `any` with version ranges. A port that only works on Darwin 17 or later and installs identical files regardless of the Darwin version would do this:
 
-```
+```text
 platforms           {darwin any >= 17}
 ```
 
@@ -2912,11 +2912,11 @@ The CPU architectures for which this port can be built. Archs currently supporte
 
 If the building architecture isn't among supported\_archs, port fails with an error message, except when building on x86\_64 and supported\_archs contains i386 or when building on ppc64 and supported\_archs contains ppc, in which case the port will be built in 32-bit mode.
 
-```
+```text
 supported_archs     i386 ppc
 ```
 
-```
+```text
 supported_archs     noarch
 ```
 
@@ -2926,11 +2926,11 @@ The proper format for license consists of the license name, followed by a hyphen
 
 If the version number is a “.0” version, the “.0” should be omitted to make the version an integer. If the author gives the choice of using a given license or “any later version” of it, append a plus sign (+) to the version number. If the version specified in this case is also the earliest version, just leave out the version number entirely since it implies all versions.
 
-```
+```text
 license             GPL-3
 ```
 
-```
+```text
 license             {freetype GPL}
 ```
 
@@ -2938,11 +2938,11 @@ license\_noconflict
 
 By default, it is assumed that ports may use libraries or headers from their dependencies and thus form a derivative work. A dependency with an incompatible license thus prevents the port from being distributed in binary form. If a dependency with an incompatible license is not used in such a way that a derivative work is formed, or should not prevent binary distribution for any other reason, add its name to this list.
 
-```
+```text
 license_noconflict  openssl
 ```
 
-```
+```text
 license_noconflict  readline gdbm
 ```
 
@@ -2950,11 +2950,11 @@ use\_xcode
 
 (Added: MacPorts 2.6.0) By default, it is assumed on macOS that ports will not need tools from Xcode.app unless (1) Command Line Tools aren't installed, (2) you are on an old version of Mac OS X that does not support the xcode-select mechanism, or (3) the port uses `build.type xcode` or includes the `xcode` PortGroup. If a port needs to use Xcode (i.e., xcodebuild) in any way, `use_xcode yes` should be set or the port should include the xcode PortGroup. The environment variable DEVELOPER\_DIR is now exported during all build phases, set to the value of `${configure.developer_dir}` which may be the directory of Xcode or CLT depending on use\_xcode. This means that libxcselect shims (i.e., /usr/bin/clang) will resolve to Xcode/CLT. Build systems that ignore the environment may accidentally use Xcode which will cause a failure in trace mode.
 
-```
+```text
 use_xcode           no
 ```
 
-```
+```text
 use_xcode           yes
 ```
 
@@ -2964,7 +2964,7 @@ Setting this option to `yes` indicates that the port is known not to work. Users
 
 Don't set this option conditionally on the basis of anything that can change dynamically, such as `$build_arch` or `$xcodeversion`, since it will be recorded in the static PortIndex. If a port works only on certain OS versions, use the `platforms` option to indicate this rather than setting `known_fail` directly.
 
-```
+```text
 known_fail           yes
 ```
 
@@ -2976,7 +2976,7 @@ During the configure phase, environment variable `MACOSX_DEPLOYMENT_TARGET` is s
 
 This option is also used when building binary packages, via `port pkg`, `port mpkg`, `port dmg`, and `port mdmg`. Specifically, MacPorts will create a package/DMG that is compatible with the desired macOS release. In addition, it is used to set version-related metadata for the Apple installer package, including `allowed-os-versions`.
 
-```
+```text
 macosx_deployment_target 10.8
 ```
 
@@ -2984,7 +2984,7 @@ installs\_libs
 
 By default, it is assumed that ports may install libraries or headers that can be incorporated into their dependents. If this is not the case, set `installs_libs` to `no`. This means that this port's dependents need not check that it is installed for the same architectures as them; that it is permissible to distribute binaries of the dependents even if their licenses conflict with the license of this port; and that updates to this port can never result in broken dynamic linking in its dependents.
 
-```
+```text
 installs_libs        no
 ```
 
@@ -2996,14 +2996,14 @@ Settings are of the form `name=value`. A setting applies to the username that ap
 
 Applicable options are: `group`, `gid` (may be used instead of `group`), `passwd`, `realname`, `home`, and `shell`.
 
-```
+```text
 add_users           squid \
                     group=squid \
                     realname=Squid\ Proxy \
                     home=${prefix}/var/squid
 ```
 
-```
+```text
 add_users           user1 group=mygroup \
                     user2 group=mygroup
 ```
@@ -3222,20 +3222,20 @@ If a `master_sites` keyword has multiple values, after any mirrors are expanded 
 - Default: `none` (but the `macports_distfiles` mirror is always implicitly appended)
 - Examples:
 
- ```
+ ```tcl
  master_sites        https://www.example.org/files/ \
                      https://mirror.example.org/example_org/files/
  ```
 
  You may also use mirror site lists predefined by MacPorts. Here the sourceforge, gnu, and freebsd mirrors are used.
 
- ```
+ ```tcl
  master_sites        sourceforge gnu freebsd
  ```
 
  When using mirror master\_sites, the subdirectory `${name}` is checked on every mirror. If the mirror subdirectory does not match ${name}, then you may specify it using after the mirror separated by a colon.
 
- ```
+ ```tcl
  master_sites        sourceforge:widget \
                      gnu:widget
  ```
@@ -3243,7 +3243,7 @@ If a `master_sites` keyword has multiple values, after any mirrors are expanded 
  For ports that must fetch multiple download files from different locations, you must label the files with tags and match the tags to a `distfiles` keyword. The format is `mirror:subdirectory:tag`.
  In the example below, file\_one.tar.gz is fetched from sourceforge mirrors in subdirectory `${name}`; file tagtwo.tar.gz is fetched from the gnu mirrors in subdirectory sources.
 
- ```
+ ```tcl
  master_sites        sourceforge::tagone \
                      gnu:sources:tagtwo
  distfiles           file_one.tar.gz:tagone \
@@ -3257,7 +3257,7 @@ Subdirectory to append to all mirror sites for any list specified in `${master_s
 - Default: `${name}`
 - Example:
 
- ```
+ ```tcl
  master_sites.mirror_subdir  magic
  ```
 
@@ -3268,7 +3268,7 @@ A list of sites from which a port's patchfiles may be downloaded, where applicab
 - Default: `${master_sites}`
 - Example:
 
- ```
+ ```text
  patch_sites         ftp://ftp.patchcityrepo.com/pub/magic/patches
  ```
 
@@ -3279,7 +3279,7 @@ Subdirectory to append to all mirror sites for any list specified in `${patch_si
 - Default: `${name}`
 - Example:
 
- ```
+ ```tcl
  patch_sites.mirror_subdir   magic
  ```
 
@@ -3290,7 +3290,7 @@ The name of the distribution filename, not including the extract suffix (see bel
 - Default: `${name}-${version}`
 - Example:
 
- ```
+ ```text
  distname            ${name}
  ```
 
@@ -3301,11 +3301,11 @@ The full distribution filename, including the extract suffix. Used to specify no
 - Default: `${distname}${extract.suffix}`
 - Examples:
 
- ```
+ ```tcl
  distfiles           ${name}-dev_src.tgz
  ```
 
- ```
+ ```tcl
  distfiles           file_one.tar.gz:tagone \
                      file_two.tar.gz:tagtwo
  ```
@@ -3317,11 +3317,11 @@ The last path component of `${distpath}`. Override it to store multiple ports' d
 - Default: `${name}`
 - Examples:
 
- ```
+ ```text
  dist_subdir         gcc
  ```
 
- ```
+ ```text
  dist_subdir         ${name}/${version}_1
  ```
 
@@ -3332,11 +3332,11 @@ Sets the path to source directory relative to workpath. It can be used if the ex
 - Default: `${distname}`
 - Examples:
 
- ```
+ ```text
  worksrcdir          ${name}-src-${version}
  ```
 
- ```
+ ```text
  worksrcdir          ${distname}/src
  ```
 
@@ -3352,7 +3352,7 @@ Change the fetch type. This is only necessary if a [bzr](#reference.phases.fetch
 - Values: `standard` `bzr` `cvs` `git` `hg` `svn`
 - Example:
 
- ```
+ ```tcl
  fetch.type          svn
  svn.url             svn://example.org
  svn.revision        2100
@@ -3365,7 +3365,7 @@ HTTP or FTP user to fetch the resource.
 - Default: none
 - Example:
 
- ```
+ ```text
  TODO: add example
  ```
 
@@ -3376,7 +3376,7 @@ User-Agent string to send when fetching the resource.
 - Default: MacPorts/x.y.z libcurl/x.y.z
 - Example:
 
- ```
+ ```tcl
  fetch.user_agent    Mozilla/5.0
  ```
 
@@ -3387,7 +3387,7 @@ HTTP or FTP password to fetch the resource.
 - Default: none
 - Example:
 
- ```
+ ```text
  TODO: add example
  ```
 
@@ -3398,7 +3398,7 @@ Whether to use EPSV command for FTP transfers.
 - Default: `yes`
 - Example:
 
- ```
+ ```tcl
  fetch.use_epsv      no
  ```
 
@@ -3409,7 +3409,7 @@ Whether to ignore the host SSL certificate (for HTTPS).
 - Default: `no`
 - Example:
 
- ```
+ ```tcl
  fetch.ignore_sslcert    yes
  ```
 
@@ -3426,11 +3426,11 @@ This specifies the url from which to fetch files.
 - Default: none
 - Examples:
 
- ```
+ ```tcl
  bzr.url             lp:inkscape
  ```
 
- ```
+ ```tcl
  bzr.url             lp:~callelejdfors/pycg/trunk
  ```
 
@@ -3441,7 +3441,7 @@ Optional tag for fetching with bzr, this specifies the revision to checkout
 - Default: -1 (the last committed revision)
 - Example:
 
- ```
+ ```tcl
  bzr.revision          2209
  ```
 
@@ -3458,7 +3458,7 @@ Specify the url from which to fetch files.
 - Default: none
 - Example:
 
- ```
+ ```tcl
  cvs.root            :pserver:anonymous@cvs.sv.gnu.org:/sources/emacs
  ```
 
@@ -3469,7 +3469,7 @@ Password to login to the CVS server.
 - Default: none
 - Example:
 
- ```
+ ```tcl
  cvs.password        nice-password
  ```
 
@@ -3480,7 +3480,7 @@ Optional for fetching with CVS, this specifies the code revision to checkout.
 - Default: none
 - Example:
 
- ```
+ ```tcl
  cvs.tag             HEAD
  ```
 
@@ -3491,7 +3491,7 @@ A date that identifies the CVS code set to checkout.
 - Default: none
 - Example:
 
- ```
+ ```tcl
  cvs.date            "12-April-2007"
  ```
 
@@ -3502,7 +3502,7 @@ A CVS module from which to check out the code.
 - Default: none
 - Example:
 
- ```
+ ```tcl
  cvs.module          Sources
  ```
 
@@ -3519,11 +3519,11 @@ This specifies the url from which to fetch files.
 - Default: none
 - Examples:
 
- ```
+ ```tcl
  git.url             git://git.kernel.org/pub/scm/git/git.git
  ```
 
- ```
+ ```tcl
  git.url             https://www.kernel.org/pub/scm/git/git.git
  ```
 
@@ -3534,11 +3534,11 @@ Optional tag for fetching with git, this specifies the tag or other commit-ish t
 - Default: none
 - Example:
 
- ```
+ ```tcl
  git.branch             72bf1c8
  ```
 
- ```
+ ```tcl
  git.branch             origin/next
  ```
 
@@ -3555,11 +3555,11 @@ This specifies the url from which to fetch files.
 - Default: none
 - Examples:
 
- ```
+ ```tcl
  hg.url              https://www.kernel.org/hg/index.cgi/linux-2.6/
  ```
 
- ```
+ ```tcl
  hg.url              http://hg.intevation.org/mercurial
  ```
 
@@ -3570,11 +3570,11 @@ Optional tag which should be fetched. Can be a Mercurial tag or a revision. To p
 - Default: tip
 - Example:
 
- ```
+ ```tcl
  hg.tag              v1.3
  ```
 
- ```
+ ```tcl
  hg.tag              ceb884843737
  ```
 
@@ -3591,11 +3591,11 @@ This specifies the url from which to fetch files.
 - Default: none
 - Examples:
 
- ```
+ ```tcl
  svn.url             https://www.example.com/svn-repo/mydirectory
  ```
 
- ```
+ ```tcl
  svn.url             svn://svn.example.com/svn-repo/mydirectory
  ```
 
@@ -3606,7 +3606,7 @@ Optional tag for fetching with Subversion, this specifies the peg revision to ch
 - Default: none
 - Example:
 
- ```
+ ```tcl
  svn.revision        37192
  ```
 
@@ -3617,7 +3617,7 @@ Optional tag for fetching with Subversion, this specifies whether to check out t
 - Default: export
 - Example:
 
- ```
+ ```tcl
  svn.method          checkout
  ```
 
@@ -3634,13 +3634,13 @@ At least two checksum types (typically rmd160 and sha256) should be used to ensu
 - Default: none
 - Examples:
 
- ```
+ ```tcl
  checksums           rmd160  0c1147242adf476f5e93f4d59b553ee3ea378b23 \
                      sha256  baf8a29ff721178317aac7b864c2d392b1accc02de8677dd24c18fd5717bf26e \
                      size    1039840
  ```
 
- ```
+ ```text
  checksums           ${distname}${extract.suffix} \
                          rmd160  0c1147242adf476f5e93f4d59b553ee3ea378b23 \
                          sha256  883715307c31ae2c145db15d2404d89a837f4d03d7e6932aed21d1d1f21dad89 \
@@ -3662,7 +3662,7 @@ This keyword is used to specify that the extract phase should be done as the roo
 - Default: `no`
 - Example:
 
- ```
+ ```tcl
  extract.asroot      no
  ```
 
@@ -3673,7 +3673,7 @@ This keyword is used to specify the extract suffix type.
 - Default: `.tar.gz`
 - Example:
 
- ```
+ ```tcl
  extract.suffix      .tgz
  ```
 
@@ -3687,7 +3687,7 @@ extract.cmd = 7za
 - Default: `no`
 - Example:
 
- ```
+ ```text
  use_7z           yes
  ```
 
@@ -3701,7 +3701,7 @@ extract.cmd = bzip
 - Default: `no`
 - Example:
 
- ```
+ ```text
  use_bzip2           yes
  ```
 
@@ -3715,7 +3715,7 @@ extract.cmd = hdiutil
 - Default: `no`
 - Example:
 
- ```
+ ```text
  use_dmg              yes
  ```
 
@@ -3729,7 +3729,7 @@ extract.cmd = lzip
 - Default: `no`
 - Example:
 
- ```
+ ```text
  use_lzip             yes
  ```
 
@@ -3743,7 +3743,7 @@ extract.cmd = lzma
 - Default: `no`
 - Example:
 
- ```
+ ```text
  use_lzma             yes
  ```
 
@@ -3758,7 +3758,7 @@ extract.pre\_args = -xf
 - Default: `no`
 - Example:
 
- ```
+ ```text
  use_tar             yes
  ```
 
@@ -3774,7 +3774,7 @@ extract.post\_args = "-d ${extract.dir}"
 - Default: `no`
 - Example:
 
- ```
+ ```text
  use_zip             yes
  ```
 
@@ -3788,7 +3788,7 @@ extract.cmd = xz
 - Default: `no`
 - Example:
 
- ```
+ ```text
  use_xz             yes
  ```
 
@@ -3799,7 +3799,7 @@ This keyword is used to specify if the directory `worksrcdir` is part of the dis
 - Default: `no`
 - Example:
 
- ```
+ ```tcl
  extract.mkdir       yes
  ```
 
@@ -3810,11 +3810,11 @@ List of files to extract into `${worksrcpath}`. Only use if default extract beha
 - Default: `${distfiles}`
 - Example:
 
- ```
+ ```tcl
  extract.only        foo.tar.gz
  ```
 
- ```
+ ```tcl
  extract.only-append     bar.tar.gz
  extract.only-delete     foo.tar.gz
  ```
@@ -3826,7 +3826,7 @@ Command to perform extraction.
 - Default: **gzip**
 - Example:
 
- ```
+ ```tcl
  extract.cmd         gunzip
  ```
 
@@ -3837,7 +3837,7 @@ Main arguments to `extract.cmd`; additional arguments passed before and after th
 - Default: `${distpath}/${distfile}`
 - Example:
 
- ```
+ ```tcl
  extract.args        ${distpath}/${distfile}
  ```
 
@@ -3847,7 +3847,7 @@ The following argument modifiers are available:
 - `extract.post_args`, defaults to: `"| tar -xf -"`
 - Examples:
 
- ```
+ ```tcl
  extract.pre_args    xf
  extract.post_args   "| gnutar -x"
  ```
@@ -3863,7 +3863,7 @@ Specify the base path for patch files.
 - Default: `${worksrcpath}`
 - Example:
 
- ```
+ ```tcl
  patch.dir           ${worksrcpath}/util
  ```
 
@@ -3874,7 +3874,7 @@ Specify the command to be used for patching files.
 - Default: **patch**
 - Example:
 
- ```
+ ```tcl
  patch.cmd           cat
  ```
 
@@ -3885,12 +3885,12 @@ Specify patch files to be applied for a port; list modifiers specify patchfiles 
 - Default: none
 - Example:
 
- ```
+ ```tcl
  patchfiles          destdir-variable-fix.diff \
                      patch-source.c.diff
  ```
 
- ```
+ ```tcl
  patchfiles-append   patch-configure.diff
  patchfiles-delete   destdir-variable-fix.diff
  ```
@@ -3902,7 +3902,7 @@ Main arguments to `patch.cmd`; optional argument modifiers pass arguments before
 - Default: none
 - Example:
 
- ```
+ ```tcl
  patch.args          ???
  ```
 
@@ -3912,7 +3912,7 @@ The following argument modifiers are available:
 - `patch.post_args`, defaults to: none
 - Examples:
 
- ```
+ ```tcl
  patch.pre_args      -p1
  patch.post_args     ???
  ```
@@ -3930,7 +3930,7 @@ Sets if the configure phase should be run. Can be used if the port has no `./con
 - Default: `yes`
 - Example:
 
- ```
+ ```tcl
  use_configure    no
  ```
 
@@ -3941,7 +3941,7 @@ Selects the command to be run in the default configure phase.
 - Default: `./configure`
 - Example:
 
- ```
+ ```tcl
  configure.cmd       ./config.sh
  ```
 
@@ -3952,11 +3952,11 @@ Set environment variables for configure; list modifiers add and delete items fro
 - Default: `CFLAGS=-I${prefix}/include               LDFLAGS=-L${prefix}/lib`
 - Example:
 
- ```
+ ```tcl
  configure.env       QTDIR=${prefix}/lib/qt3
  ```
 
- ```
+ ```tcl
  configure.env-append    ABI=32
  configure.env-delete    TCLROOT=${prefix}
  ```
@@ -3968,11 +3968,11 @@ Set optimization compiler flags; list modifiers add or delete items from a previ
 - Default: `-Os`
 - Example:
 
- ```
+ ```tcl
  configure.optflags    -O2
  ```
 
- ```
+ ```tcl
  configure.optflags-append     -finline-functions
  configure.optflags-delete     -Os
  ```
@@ -3984,11 +3984,11 @@ Set CFLAGS compiler flags; list modifiers add or delete items from a previous Po
 - Default: `${configure.optflags}`
 - Example:
 
- ```
+ ```tcl
  configure.cflags    -Os -flat_namespace
  ```
 
- ```
+ ```tcl
  configure.cflags-append     "-undefined suppress"
  configure.cflags-delete     -O2
  ```
@@ -4000,11 +4000,11 @@ Set LDFLAGS compiler flags; list modifiers add or delete items from a previous P
 - Default: `-L${prefix}/lib -Wl,-headerpad_max_install_names`
 - Example:
 
- ```
+ ```tcl
  configure.ldflags   "-L${worksrcpath}/zlib -lz"
  ```
 
- ```
+ ```tcl
  configure.ldflags-append    "-L/usr/X11R6/lib -L${worksrcpath}/lib"
  configure.ldflags-delete    -L${prefix}/lib/db44
  ```
@@ -4016,11 +4016,11 @@ Set CPPFLAGS to be passed to the C processor; list modifiers add or delete items
 - Default: `-I${prefix}/include`
 - Example:
 
- ```
+ ```tcl
  configure.cppflags  -I${worksrcpath}/include
  ```
 
- ```
+ ```tcl
  configure.cppflags-append   "-I/usr/X11R6/lib -I${worksrcpath}/lib -DHAVE_RRD_12X"
  configure.cppflags-delete   -I${prefix}/lib/db44
  ```
@@ -4032,7 +4032,7 @@ Set CXXFLAGS to be passed to the C++ processor; list modifiers add or delete ite
 - Default: `${configure.optflags}`
 - Example:
 
- ```
+ ```text
  TODO: add example
  ```
 
@@ -4043,7 +4043,7 @@ TODO: add description
 - Default: `${configure.optflags}`
 - Example:
 
- ```
+ ```text
  TODO: add example
  ```
 
@@ -4054,7 +4054,7 @@ TODO: add description
 - Default:???
 - Example:
 
- ```
+ ```text
  TODO: add example
  ```
 
@@ -4065,7 +4065,7 @@ The version of the macOS SDK to build against.
 - Default: ${macos\_version\_major}
 - Example:
 
- ```
+ ```text
  configure.sdk_version 10.13
  ```
 
@@ -4078,7 +4078,7 @@ The path to the macOS SDK to build against.
  Default: ${developer\_dir}/Platforms/MacOSX.platform/Developer/SDKs/MacOSX${configure.sdk\_version}.sdk (macOS without Command Line Tools)
 - Example:
 
- ```
+ ```text
  configure.sdkroot
  ```
 
@@ -4089,7 +4089,7 @@ Set FFLAGS to be passed to the Fortran compiler; list modifiers add or delete it
 - Default: `${configure.optflags}`
 - Example:
 
- ```
+ ```tcl
  configure.fflags    -Os
  ```
 
@@ -4100,7 +4100,7 @@ Set FCFLAGS to be passed to the Fortran compiler; list modifiers add or delete i
 - Default: `${configure.optflags}`
 - Example:
 
- ```
+ ```tcl
  configure.fcflags   -Os
  ```
 
@@ -4111,7 +4111,7 @@ Set F90FLAGS to be passed to the Fortran 90 compiler; list modifiers add or dele
 - Default: `${configure.optflags}`
 - Example:
 
- ```
+ ```tcl
  configure.f90flags  -Os
  ```
 
@@ -4122,7 +4122,7 @@ C compiler for the CC environment variable when invoking the configure script.
 - Default: `???`
 - Example:
 
- ```
+ ```tcl
  configure.cc        ${prefix}/bin/gcc-mp-4.2
  ```
 
@@ -4133,7 +4133,7 @@ C preprocessor for the CPP environment variable when invoking the configure scri
 - Default: `???`
 - Example:
 
- ```
+ ```tcl
  configure.cpp       /usr/bin/cpp-3.3
  ```
 
@@ -4144,7 +4144,7 @@ C++ compiler for the CXX environment variable when invoking the configure script
 - Default: `???`
 - Example:
 
- ```
+ ```tcl
  configure.cxx       /usr/bin/g++-4.0
  ```
 
@@ -4155,7 +4155,7 @@ Objective-C compiler for the OBJC environment variable when invoking the configu
 - Default: `???`
 - Example:
 
- ```
+ ```tcl
  configure.objc      /usr/bin/gcc-4.0
  ```
 
@@ -4166,7 +4166,7 @@ Fortran compiler for the FC environment variable when invoking the configure scr
 - Default: `???`
 - Example:
 
- ```
+ ```tcl
  configure.fc        ${prefix}/bin/gfortran-mp-4.2
  ```
 
@@ -4177,7 +4177,7 @@ Fortran 77 compiler for the F77 environment variable when invoking the configure
 - Default: `???`
 - Example:
 
- ```
+ ```tcl
  configure.f77       ${prefix}/bin/gfortran-mp-4.2
  ```
 
@@ -4188,7 +4188,7 @@ Fortran 90 compiler for the F90 environment variable when invoking the configure
 - Default: `???`
 - Example:
 
- ```
+ ```tcl
  configure.f90       ${prefix}/bin/gfortran-mp-4.2
  ```
 
@@ -4199,7 +4199,7 @@ Java compiler for the JAVAC environment variable when invoking the configure scr
 - Default: `???`
 - Example:
 
- ```
+ ```tcl
  configure.javac     ${prefix}/bin/jikes
  ```
 
@@ -4216,7 +4216,7 @@ Only use it if a port really needs a specific different compiler. In many situat
 - Values: `gcc-3.3` `gcc-4.0` `gcc-4.2` `llvm-gcc-4.2` `clang` `macports-clang-3.3` `macports-clang-3.4` `macports-clang-3.7` `macports-clang-3.8` `macports-clang-3.9` `macports-clang-4.0` `macports-clang-5.0` `macports-clang-6.0` `apple-gcc-4.0` `apple-gcc-4.2` `macports-gcc-4.3` `macports-gcc-4.4` `macports-gcc-4.5` `macports-gcc-4.6` `macports-gcc-4.7` `macports-gcc-4.8` `macports-gcc-4.9` `macports-gcc-5` `macports-gcc-6` `macports-gcc-7` `macports-gcc-8`
 - Example:
 
- ```
+ ```tcl
  configure.compiler  macports-gcc-4.5
  ```
 
@@ -4227,7 +4227,7 @@ Set PERL flag for selecting a Perl interpreter.
 - Default: `???`
 - Example:
 
- ```
+ ```tcl
  configure.perl      ${prefix}/bin/perl5.26
  ```
 
@@ -4238,7 +4238,7 @@ Set PYTHON flag for selecting a Python interpreter.
 - Default: `???`
 - Example:
 
- ```
+ ```tcl
  configure.python    ${prefix}/bin/python2.7
  ```
 
@@ -4249,7 +4249,7 @@ Set RUBY flag for selecting a Ruby interpreter.
 - Default: `???`
 - Example:
 
- ```
+ ```tcl
  configure.ruby      ${prefix}/bin/ruby
  ```
 
@@ -4260,7 +4260,7 @@ Set `INSTALL` flag for selecting an install tool; used for copying files and cre
 - Default: `/usr/bin/install`
 - Example:
 
- ```
+ ```tcl
  configure.install   ${prefix}/bin/ginstall
  ```
 
@@ -4271,7 +4271,7 @@ Set AWK flag for selecting an awk executable.
 - Default: `???`
 - Example:
 
- ```
+ ```tcl
  configure.awk       ${prefix}/bin/gawk
  ```
 
@@ -4282,7 +4282,7 @@ Set BISON flag for selecting a bison executable, a parser generator.
 - Default: `???`
 - Example:
 
- ```
+ ```tcl
  configure.bison     /usr/bin/bison
  ```
 
@@ -4293,7 +4293,7 @@ Set PKG\_CONFIG flag for helping find pkg\_config, a tool for retrieving informa
 - Default: `???`
 - Example:
 
- ```
+ ```tcl
  configure.pkg_config    ${prefix}/bin/pkg-config
  ```
 
@@ -4304,7 +4304,7 @@ Set PKG\_CONFIG\_PATH flag for telling pkg\_config where to search for informati
 - Default: `${prefix}/lib/pkgconfig:${prefix}/share/pkgconfig`
 - Example:
 
- ```
+ ```tcl
  configure.pkg_config_path   ${python.prefix}/lib/pkgconfig
  ```
 
@@ -4315,7 +4315,7 @@ Main arguments to `configure.cmd`; optional argument modifiers pass arguments be
 - Default: none
 - Example:
 
- ```
+ ```tcl
  configure.args      --bindir=${prefix}/bin
  ```
 
@@ -4325,7 +4325,7 @@ The following argument modifiers are available:
 - `configure.post_args`, defaults to: none
 - Examples:
 
- ```
+ ```tcl
  configure.pre_args  --prefix=${prefix}/share/bro
  configure.post_args OPT="-D__DARWIN_UNIX03"
  ```
@@ -4345,7 +4345,7 @@ Arguments used in the configure script to build the port universal.
 - Default: `--disable-dependency-tracking`
 - Example:
 
- ```
+ ```text
  TODO: add example
  ```
 
@@ -4360,7 +4360,7 @@ Additional flags to put in the CFLAGS environment variable when invoking the con
  (Big Sur and later) `-arch arm64 -arch x86_64`
 - Example:
 
- ```
+ ```text
  TODO: add example
  ```
 
@@ -4373,7 +4373,7 @@ Additional flags to put in the CPPFLAGS environment variable when invoking the c
  (others) none
 - Example:
 
- ```
+ ```text
  TODO: add example
  ```
 
@@ -4388,7 +4388,7 @@ Additional flags to put in the CXXFLAGS environment variable when invoking the c
  (Big Sur and later) `-arch arm64 -arch x86_64`
 - Example:
 
- ```
+ ```text
  TODO: add example
  ```
 
@@ -4403,7 +4403,7 @@ Additional flags to put in the LDFLAGS environment variable when invoking the co
  (Big Sur and later) `-arch arm64 -arch x86_64`
 - Example:
 
- ```
+ ```text
  TODO: add example
  ```
 
@@ -4418,7 +4418,7 @@ Whether or not to use autoreconf
 - Default: `no`
 - Example:
 
- ```
+ ```text
  use_autoreconf      yes
  ```
 
@@ -4429,7 +4429,7 @@ Arguments to pass to autoreconf.
 - Default: `--install --verbose`
 - Example:
 
- ```
+ ```tcl
  autoreconf.args       --install --verbose --force
  ```
 
@@ -4440,7 +4440,7 @@ Directory in which to run `${autoreconf.cmd}`.
 - Default: `${worksrcpath}`
 - Example:
 
- ```
+ ```tcl
  autoreconf.dir        ./src
  ```
 
@@ -4451,7 +4451,7 @@ Whether or not to use automake.
 - Default: `no`
 - Example:
 
- ```
+ ```text
  use_automake        yes
  ```
 
@@ -4462,7 +4462,7 @@ Environment variables to pass to automake.
 - Default:???
 - Example:
 
- ```
+ ```tcl
  automake.env        CFLAGS=-I${prefix}/include
  ```
 
@@ -4473,7 +4473,7 @@ Arguments to pass to automake.
 - Default:???
 - Example:
 
- ```
+ ```tcl
  automake.args       --foreign
  ```
 
@@ -4484,7 +4484,7 @@ Directory in which to run `${automake.cmd}`.
 - Default: `${worksrcpath}`
 - Example:
 
- ```
+ ```tcl
  automake.dir        ./src
  ```
 
@@ -4495,7 +4495,7 @@ Whether or not to use autoconf.
 - Default: `no`
 - Example:
 
- ```
+ ```text
  use_autoconf        yes
  ```
 
@@ -4506,7 +4506,7 @@ Environmental variables to pass to autoconf.
 - Default:???
 - Example:
 
- ```
+ ```tcl
  autoconf.env        CFLAGS=-I${prefix}/include/gtk12
  ```
 
@@ -4517,7 +4517,7 @@ Arguments to pass to autoconf.
 - Default:???
 - Example:
 
- ```
+ ```tcl
  autoconf.args       "-l src/aclocaldir"
  ```
 
@@ -4528,7 +4528,7 @@ Directory in which to run `${autoconf.cmd}`.
 - Default: `${worksrcpath}`
 - Example:
 
- ```
+ ```tcl
  autoconf.dir        src
  ```
 
@@ -4543,7 +4543,7 @@ Make command to run in `${worksrcdir}`. Only use it if you can't use `build.type
 - Default: **make**
 - Example:
 
- ```
+ ```tcl
  build.cmd           scons
  ```
 
@@ -4555,7 +4555,7 @@ Defines which build software is required and sets `${build.cmd}` accordingly. Th
 - Values: `default` `bsd` `gnu` `xcode`
 - Example:
 
- ```
+ ```tcl
  build.type          bsd
  ```
 
@@ -4566,7 +4566,7 @@ Main arguments to `${build.cmd}`; optional argument modifiers pass arguments bef
 - Default: none
 - Example:
 
- ```
+ ```tcl
  build.args          -DNOWARN
  ```
 
@@ -4576,7 +4576,7 @@ The following argument modifiers are available:
 - `build.post_args`, defaults to: none
 - Examples:
 
- ```
+ ```tcl
  build.pre_args      -project AudioSlicer.xcode
  build.post_args     CFLAGS_SYS="-DUSE_FREETYPE -DPREFER_FREETYPE"
  ```
@@ -4588,11 +4588,11 @@ Build target to pass to `${build.cmd}`; list modifiers add or delete items from 
 - Default: `all`
 - Example:
 
- ```
+ ```tcl
  build.target        all-src
  ```
 
- ```
+ ```tcl
  build.target-append     doc extra
  build.target-delete     compat
  ```
@@ -4610,7 +4610,7 @@ This keyword is for specifying whether or not it is safe for a port to use multi
 - Default: `yes`
 - Example:
 
- ```
+ ```text
  use_parallel_build  no
  ```
 
@@ -4631,7 +4631,7 @@ Enable running test suites bundled with a port.
 - Default: `no`
 - Example:
 
- ```
+ ```tcl
  test.run            yes
  ```
 
@@ -4642,7 +4642,7 @@ Test command to run relative to `${worksrcdir}`.
 - Default: `${build.cmd}`
 - Example:
 
- ```
+ ```tcl
  test.cmd            checks.sh
  ```
 
@@ -4653,7 +4653,7 @@ Test target to pass to `${test.cmd}`.
 - Default: `test`
 - Example:
 
- ```
+ ```tcl
  test.target         checks
  ```
 
@@ -4664,7 +4664,7 @@ Main arguments to `test.cmd`; optional argument modifiers pass arguments before 
 - Default: none
 - Example:
 
- ```
+ ```tcl
  test.args    -f Makefile.test
  ```
 
@@ -4682,7 +4682,7 @@ Often `DYLD_LIBRARY_PATH` is set here to support testing dynamically linked libr
 - Default: none
 - Example:
 
- ```
+ ```tcl
  test.env       DYLD_LIBRARY_PATH=${worksrcpath}/src/.libs
  ```
 
@@ -4697,7 +4697,7 @@ Install command to run relative to `${worksrcdir}`.
 - Default: `${build.cmd}`
 - Example:
 
- ```
+ ```tcl
  destroot.cmd        scons
  ```
 
@@ -4708,7 +4708,7 @@ Main arguments to `${destroot.cmd}`; optional argument modifiers pass arguments 
 - Default: none
 - Example:
 
- ```
+ ```tcl
  destroot.args       BINDIR=${prefix}/bin
  ```
 
@@ -4718,7 +4718,7 @@ The following argument modifiers are available:
 - `destroot.post_args`, defaults to: `${destroot.destdir}`
 - Examples:
 
- ```
+ ```tcl
  destroot.pre_args   -project AudioSlicer.xcode
  destroot.post_args  INSTDIR=${destroot}${prefix}
  ```
@@ -4730,11 +4730,11 @@ Install target to pass to `${destroot.cmd}`; list modifiers add or delete items 
 - Default: `install`
 - Example:
 
- ```
+ ```tcl
  destroot.target     install install-config install-commandmode
  ```
 
- ```
+ ```tcl
  destroot.target-append  install-plugins
  destroot.target-delete  install-commandmode
  ```
@@ -4746,7 +4746,7 @@ Arguments passed to `${destroot.cmd}` via `${destroot.post_args}` to install cor
 - Default: `DESTDIR=${destroot}`
 - Example:
 
- ```
+ ```tcl
  destroot.destdir    prefix=${destroot}${prefix}
  ```
 
@@ -4761,7 +4761,7 @@ Umask to use during destroot.
 - Default: `022`
 - Example:
 
- ```
+ ```tcl
  destroot.umask      002
  ```
 
@@ -4772,7 +4772,7 @@ A list of directories that should not be removed if empty upon destroot completi
 - Default:???
 - Example:
 
- ```
+ ```tcl
  destroot.keepdirs   ${destroot}${prefix}/var/run \
                      ${destroot}${prefix}/var/log \
                      ${destroot}${prefix}/var/cache/mrtg
@@ -4786,7 +4786,7 @@ You can find the macports standard in [MacPorts File Hierarchy](#internals.hiera
 
 If `destroot.violate_mtree` is set to `yes`, the following warning is issued during the installation.
 
-```
+```text
 Warning: portname requests to install files outside the common directory structure!
 ```
 
@@ -4795,7 +4795,7 @@ This means that the port installed files outside of their normal locations in `$
 - Default: `no`
 - Example:
 
- ```
+ ```tcl
  destroot.violate_mtree      yes
  ```
 
@@ -4837,7 +4837,7 @@ But when satisfying a dependency with vendor-supplied software is preferred for 
 
 Port dependencies, the preferred type, are specified as shown in these examples:
 
-```
+```tcl
 depends_lib         port:rrdtool port:apache2
 
 depends_build       port:libtool
@@ -4855,7 +4855,7 @@ For `path` dependencies, *`<filespec>`* is the complete absolute path to the fil
 
 Note that the *`<port>`* specified is only installed if the specified library, binary, or file is not found. See the examples below:
 
-```
+```tcl
 depends_lib         lib:libX11.6:xorg
 
 depends_build       bin:glibtool:libtool
@@ -4882,14 +4882,14 @@ The variant declaration may contain any keywords that can be placed in a Portfil
 - Default: none
 - Examples:
 
- ```
+ ```tcl
  variant gnome requires glib {
      configure.args-append   --with-gnome
      depends_lib-append      port:gnome-session
  }
  ```
 
- ```
+ ```tcl
  variant apache2 conflicts apache {
      configure.args-append \
          --with-apxs2=${prefix}/apache2/bin/apxs
@@ -4903,13 +4903,13 @@ The optional `default_variants` keyword is used to specify variants that a port 
 - Default: none
 - Example:
 
- ```
+ ```text
  default_variants    +ssl +tcpd
  ```
 
 Default variants may be suppressed by preceding a variant name with a “-” as shown in this example.
 
-```
+```bash
 %% port install foo -ssl
 ```
 
@@ -4920,7 +4920,7 @@ When using MacPorts on macOS, a universal variant is defined by default to confi
 - Default: `yes`
 - Example:
 
- ```
+ ```text
  universal_variant   no
  ```
 
@@ -4928,7 +4928,7 @@ When using MacPorts on macOS, a universal variant is defined by default to confi
 
 User-selected variants ought to provide a description, which will be displayed when using command **`port variants foo`**. The syntax used for the description keyword is shown below.
 
-```
+```tcl
 variant bar description {Add IMAP support} {}
 ```
 
@@ -4948,19 +4948,19 @@ MacPorts allows platform-specific port options to be specified in a Portfile for
 
 - Examples:
 
- ```
+ ```tcl
  platform darwin 10 {
      configure.env-append LIBS=-lresolv
  }
  ```
 
- ```
+ ```tcl
  platform darwin i386 {
      configure.args-append --disable-mmx
  }
  ```
 
- ```
+ ```tcl
  platform darwin 8 powerpc {
      configure.compiler gcc-3.3
  }
@@ -4978,7 +4978,7 @@ subport name body
 
 Example:
 
-```
+```tcl
 Portfile                   1.0
 
 name                       example
@@ -5077,22 +5077,22 @@ Defaults:
 
 Examples:
 
-```
+```bash
 xinstall -m 640 ${worksrcpath}/README \
    ${destroot}${prefix}/share/doc/${name}
 ```
 
-```
+```bash
 xinstall -m 640 -W ${worksrcpath}/doc README INSTALL COPY \
    ${destroot}${prefix}/share/doc/${name}
 ```
 
-```
+```bash
 xinstall -m 640 {*}[glob ${worksrcpath}/doc/*] \
    ${destroot}${prefix}/share/doc/${name}
 ```
 
-```
+```bash
 xinstall -d ${destroot}${prefix}/share/doc/${name}
 ```
 
@@ -5128,11 +5128,11 @@ Use -- to end option processing and allow any further dashes not to be treated a
 
 Examples:
 
-```
+```bash
 reinplace -W ${worksrcpath} "s|/usr/local|${prefix}|g" configure setup.py
 ```
 
-```
+```text
 reinplace "s|@@PREFIX@@|${prefix}|g" ${worksrcpath}/Makefile
 ```
 
@@ -5158,7 +5158,7 @@ existsgroup *`group`*
 
 Check if a local group exists and return the corresponding gid. This can be used with adduser:
 
-```
+```text
 addgroup foo
 adduser foo gxml:id=[existsgroup foo]
 ```
@@ -5194,7 +5194,7 @@ Whether to automatically load the StartupItem after activating the port.
 - Default: `no`
 - Example:
 
- ```
+ ```tcl
  startupitem.autostart      yes
  ```
 
@@ -5205,7 +5205,7 @@ Trigger the creation of a StartupItem.
 - Default: `no`
 - Example:
 
- ```
+ ```tcl
  startupitem.create         yes
  ```
 
@@ -5216,7 +5216,7 @@ startupitem.custom\_file
 - Default: `(empty)`
 - Example:
 
- ```
+ ```tcl
  startupitem.custom_file    ${worksrcpath}/mydaemon.plist
  ```
 
@@ -5227,7 +5227,7 @@ Enable additional debug logging.
 - Default: `no`
 - Example:
 
- ```
+ ```tcl
  startupitem.debug          yes
  ```
 
@@ -5238,7 +5238,7 @@ Whether to install a link to the StartupItem in the appropriate subdirectory of 
 - Default: `yes`
 - Example:
 
- ```
+ ```tcl
  startupitem.install        no
  ```
 
@@ -5249,7 +5249,7 @@ Chooses the subdirectory in which to install the StartupItem. Also affects how i
 - Default: `LaunchDaemons`
 - Example:
 
- ```
+ ```tcl
  startupitem.location       LaunchAgents
  ```
 
@@ -5260,7 +5260,7 @@ Path to a logfile for logging events about the lifetime of the StartupItem. Depe
 - Default: `/dev/null`
 - Example:
 
- ```
+ ```tcl
  startupitem.logfile        ${prefix}/var/log/mydaemon.log
  ```
 
@@ -5271,7 +5271,7 @@ Path to a logfile for capturing standard error output from the StartupItem.
 - Default: `${startupitem.logfile}`
 - Example:
 
- ```
+ ```tcl
  startupitem.logfile.stderr ${prefix}/var/log/mydaemon-stderr.log
  ```
 
@@ -5282,7 +5282,7 @@ Control whether or not to log events to the log file. If logevents is set, event
 - Default: `no`
 - Example:
 
- ```
+ ```tcl
  startupitem.logevents      yes
  ```
 
@@ -5293,7 +5293,7 @@ Sets the name for the StartupItem. Defaults to the name of the port, so this key
 - Default: `${name}`
 - Example:
 
- ```
+ ```tcl
  startupitem.name           dhcpd
  ```
 
@@ -5304,7 +5304,7 @@ Cause the daemon to be restarted when a change in network state is detected.
 - Default: `no`
 - Example:
 
- ```
+ ```tcl
  startupitem.netchange      yes
  ```
 
@@ -5315,7 +5315,7 @@ The type of the StartupItem. Supported values are `launchd` for a macOS **launch
 - Default: `launchd` if on macOS and `${startupitem.create}` is true, `none` otherwise
 - Example:
 
- ```
+ ```tcl
  startupitem.type           launchd
  ```
 
@@ -5326,7 +5326,7 @@ startupitem.user
 - Default: `none`
 - Example:
 
- ```
+ ```tcl
  startupitem.user           my_daemon_user
  ```
 
@@ -5337,7 +5337,7 @@ startupitem.group
 - Default: `none`
 - Example:
 
- ```
+ ```tcl
  startupitem.group          my_daemon_group
  ```
 
@@ -5348,7 +5348,7 @@ Used when a port needs to install more than one StartupItem, this option consist
 - Default: none
 - Example:
 
- ```
+ ```text
  startupitems        name        myport-system \
                      location    LaunchDaemons \
                      executable  ${prefix}/sbin/myportd \
@@ -5376,7 +5376,7 @@ Some daemons “daemonize” by detaching themselves from the controlling tty be
 - Default: none
 - Example:
 
- ```
+ ```tcl
  startupitem.executable  ${prefix}/sbin/vm-pop3d -d 10 -t 600
  ```
 
@@ -5384,13 +5384,13 @@ Some daemons “daemonize” by detaching themselves from the controlling tty be
 
 Do not wrap values in quotes if passing arguments to the daemon; “executable” StartupItem elements must be tagged individually so the spaces between arguments serve as delimiters for “string” tags. For example, this startupitem key/value pair:
 
-```
+```tcl
 startupitem.executable    ${prefix}/sbin/vm-pop3d -d 10 -t 600
 ```
 
 generates a.plist file with these tags:
 
-```
+```text
 <key>ProgramArguments</key>
 <array>
     <string>/opt/local/bin/daemondo</string>
@@ -5415,7 +5415,7 @@ StartupItems of type “script” create a wrapper during port installation for 
 
 A typical snippet of a startup script that may be used with a “script” StartupItem is shown below. Notice that the script is not a daemon; rather the script indirectly launches the vm-pop3d daemon.
 
-```
+```bash
 #!/bin/sh
 
 case "$1" in
@@ -5433,7 +5433,7 @@ Specify a shell script to start, stop, and restart the daemon. In the absence of
 - Default: none
 - Examples:
 
- ```
+ ```tcl
  startupitem.start       "${prefix}/share/mysql/mysql.server start"
  startupitem.stop        "${prefix}/share/mysql/mysql.server stop"
  startupitem.restart     "${prefix}/share/mysql/mysql.server restart"
@@ -5450,7 +5450,7 @@ Shell code that will be executed prior to any of the options `startupitem.start`
 - Default: none
 - Example:
 
- ```
+ ```tcl
  startupitem.init        BIN=${prefix}/sbin/bacula-fd
  ```
 
@@ -5463,7 +5463,7 @@ This keyword must be defined properly for **daemondo** to be able to monitor dae
 - Values \[none auto manual clean\] \[*`/path/to/pidfile`*\]
 - Example:
 
- ```
+ ```tcl
  startupitem.pidfile     auto ${prefix}/var/run/${name}.pidfile
  ```
 
@@ -5478,13 +5478,13 @@ PID file handling options:
 
 A port with a StartupItem places a link to a.plist file for the port's daemon within `/Library/LaunchDaemons/`. A.plist file is an XML file; MacPorts installs.plist files tagged as “disabled” for the sake of security. You may enable a startup script (tag the.plist file as “enabled”) and load it into **launchd** with a single command as shown.
 
-```
+```bash
 %% sudo launchctl load -w /Library/LaunchDaemons/org.macports.mysql5.plist
 ```
 
 You may stop a running startup script, disable it (tag the.plist file as “disabled”), and unload it from **launchd** with a single command as shown.
 
-```
+```bash
 %% sudo launchctl unload -w /Library/LaunchDaemons/org.macports.mysql5.plist
 ```
 
@@ -5494,29 +5494,29 @@ During port installation a MacPorts StartupItem creates a.plist file in `${prefi
 
 For example, the StartupItem for the mysql5 port is `org.macports.mysql5.plist`, and it is linked as shown.
 
-```
+```bash
 %% ls -l /Library/LaunchDaemons
 ```
 
-```
+```text
 org.macports.mysql5.plist ->
 /opt/local/etc/LaunchDaemons/org.macports.mysql5/org.macports.mysql5.plist
 ```
 
 For “script” StartupItems, in addition to a.plist file, a wrapper is also created.
 
-```
+```bash
 %% ls -l /opt/local/etc/LaunchDaemons/org.macports.mysql5/
 ```
 
-```
+```text
 -rwxr-xr-x   2 root  wheel  475 Aug  2 14:16 mysql5.wrapper
 -rw-r--r--   2 root  wheel  975 Aug  2 14:16 org.macports.mysql5.plist
 ```
 
 The wrapper manipulates the script as specified in the startupitem.start and startupitem.stop keywords. An example wrapper script snippet is shown below.
 
-```
+```markdown
 #!/bin/sh
 
 # MacPorts generated daemondo support script
@@ -5554,7 +5554,7 @@ Generic download site options are to specify a `moddate` (modification date of a
 - Values: `freecode` `sourceforge` `googlecode` `moddate` `regex` `regexm` `md5` `none`
 - Examples:
 
- ```
+ ```tcl
  livecheck.type      regex
  livecheck.url       ${homepage}
  livecheck.regex     "Generally Available (\\d+(?:\\.\\d+)*)"
@@ -5567,7 +5567,7 @@ Name of the project for live checks. Is only used with freecode, sourceforge
 - Default: `${name}` or the sourceforge, freecode project name if it can be guessed from `${master_sites}`.
 - Example:
 
- ```
+ ```tcl
  livecheck.name      hibernate
  ```
 
@@ -5578,7 +5578,7 @@ Name of the file release for sourceforge checks. Use the name of the package rel
 - Default: sourceforge: `${livecheck.name}`
 - Example:
 
- ```
+ ```tcl
  livecheck.distname  faad2.src
  ```
 
@@ -5589,7 +5589,7 @@ Version of the project for a check; used for regex-based checks.
 - Default: `${version}`
 - Example:
 
- ```
+ ```tcl
  livecheck.version   ${name}-${version}
  ```
 
@@ -5600,7 +5600,7 @@ URL to query for a check.
 - Default:
 - Example:
 
- ```
+ ```tcl
  livecheck.url       https://ftp.gnu.org/gnu/bison/
  ```
 
@@ -5611,7 +5611,7 @@ Regular expression to parse the resource for regex checks. Be sure to use a regu
 - Default: none
 - Example:
 
- ```
+ ```tcl
  livecheck.regex     4th-(\[a-z0-9.\]+)-unix${extract.suffix}
  ```
 
@@ -5622,7 +5622,7 @@ md5 checksum to use for an md5 comparison.
 - Default: none
 - Example:
 
- ```
+ ```tcl
  livecheck.md5       37e6a5b6516a680c7178b72021d3b706
  ```
 
@@ -5633,7 +5633,7 @@ Disables verification of the server's SSL certificate.
 - Default: `no`
 - Example:
 
- ```
+ ```tcl
  livecheck.ignore_sslcert       yes
  ```
 
@@ -5644,7 +5644,7 @@ Sets the Accept-Encoding HTTP header in the request and automatically decompress
 - Default: `yes`
 - Example:
 
- ```
+ ```tcl
  livecheck.compression       no
  ```
 
@@ -5657,7 +5657,7 @@ This option can be used to disable distcheck. It specifies what kind of check sh
 - Default: `moddate`
 - Example:
 
- ```
+ ```tcl
  distcheck.check     none
  ```
 
@@ -5675,11 +5675,11 @@ or if you prefer directly in [GitHub](https://github.com/macports/macports-ports
 
 A sample listing follows:
 
-```
+```bash
 %% ls -1 /opt/local/var/macports/sources/rsync.macports.org/macports/release/tarballs/ports/_resources/port1.0/group/
 ```
 
-```
+```text
 active_variants-1.1.tcl
 apache2-1.0.tcl
 app-1.0.tcl
@@ -5719,7 +5719,7 @@ This portgroup greatly simplifies the porting of software hosted on GitHub. Prov
 
 The main port configuration is triggered by the usage of the `github.setup` keyword:
 
-```
+```tcl
 PortGroup           github 1.0
 github.setup        author project version [tag_prefix]
 ```
@@ -5728,7 +5728,7 @@ By default, the port `name` will be set to the GitHub project name (`project`) a
 
 The `tag_prefix` is optional, and it's used to specify a prefix to use when constructing the tag name. If, for example, the project uses tags such as `v1.0.0`, then the `tag_prefix` should be set to `v`, as in the following example:
 
-```
+```tcl
 github.setup        author project version v
 ```
 
@@ -5747,13 +5747,13 @@ The default behaviour of the portgroup is to use GitHub releases. However, not a
 
 The `github` portgroup allows maintainers to easily configure the distfiles when the project uses GitHub releases. A release is the best distfile candidate, and project maintainers should be encouraged to use them. To enable this feature, the following keyword should be used:
 
-```
+```text
 github.tarball_from releases
 ```
 
 By default, the `github` portgroup sets `distname` to:
 
-```
+```text
 distname            ${github.project}-${github.version}
 ```
 
@@ -5763,13 +5763,13 @@ However, GitHub does not enforce any rule for release distfiles, so port maintai
 
 The `github` portgroup can leverage GitHub's ability to create a distfile from a `git` tag or commit. In this case, the `distname` is irrelevant and should not be set. To enable this feature, the following keyword should be used:
 
-```
+```text
 github.tarball_from archive
 ```
 
 If the project's developers do not tag their releases, they should be encouraged to do so. Until they do, or in the case in which an untagged development version has to be used, port maintainers have the possibility of specifying a `git` commit hash and manually set the `version` field. If the project does not assign version numbers the port maintainer has to define one. Such versions typically format the date of the chosen commit using the `YYYYMMDD` pattern. If, for example, the port maintainer decides to use a changeset with the hash `0ff25277c3842598d919cd3c73d60768`, committed on April 1, 2014, then the following would be used:
 
-```
+```tcl
 github.setup        someone someproject 0ff25277c3842598d919cd3c73d60768
 version             20140401
 ```
@@ -5780,7 +5780,7 @@ Older projects use the discontinued [downloads](https://github.com/blog/1302-goo
 
 If the project doesn't have GitHub releases but does have GitHub downloads, they can be used using the following keyword:
 
-```
+```text
 github.tarball_from downloads
 ```
 
@@ -5790,7 +5790,7 @@ Since GitHub doesn't enforce any naming rules for downloads, the portgroup can o
 
 Some ports still use GitHub's older automatically-generated tarball URLs that can be used for downloading distfiles. This is deprecated since the contents of the tarballs can change in some circumstances, such as when the account name of the repository owner changes, and this causes checksum mismatches. This mechanism should not be used in new ports, and existing ports should switch away from it when they are updated to a newer version.
 
-```
+```text
 github.tarball_from tarball
 ```
 
@@ -5798,7 +5798,7 @@ github.tarball_from tarball
 
 If the project uses `git` submodules, some projects' tag- or commit-based distfiles will not contain all the necessary files. Once again, the best distfile candidate (if available) is a distfile from GitHub releases, as described in the previous sections. However, in the case a project doesn't provide any other alternative, a project using submodules can be successfully retrieved by fetching the sources using `git` and then using a `post-fetch` to initialize the submodules:
 
-```
+```text
 fetch.type          git
 
 post-fetch {
@@ -5822,7 +5822,7 @@ An associative array which specifies the sub-directories relative to ${worksrcpa
 - Default: none
 - Example:
 
- ```
+ ```tcl
  platform darwin {
      array set gnustep.post_flags {
          BundleSubDir "-lfoo -lbar"
@@ -5838,7 +5838,7 @@ Define the gcc compiler to use when compiling a port.
 - Default: gcc-mp-4.2
 - Example:
 
- ```
+ ```text
  gnustep.cc gcc-mp-4.3
  ```
 
@@ -5849,7 +5849,7 @@ Many GNUstep packages include a Documentation sub-directory that is not built by
 - Type: optional
 - Example:
 
- ```
+ ```bash
  %% port install gnustep-gui +with_docs
  ```
 
@@ -5943,7 +5943,7 @@ In particular, Go has strict requirements relating to the arrangement of code on
 
 The main port configuration is triggered by the usage of the `go.setup` keyword:
 
-```
+```tcl
 PortGroup           golang 1.0
 go.setup            domain/author/project version [tag_prefix] [tag_suffix]
 ```
@@ -5952,7 +5952,7 @@ By default, the port `name` will be set to the package name (`project`) and `ver
 
 The `tag_prefix` and `tag_suffix` are optional, and are used to specify a prefix/suffix to use when constructing the tag name. If, for example, the project uses tags such as `v1.0.0`, then the `tag_prefix` should be set to `v`, as in the following example:
 
-```
+```tcl
 go.setup        domain/author/project version v
 ```
 
@@ -5964,7 +5964,7 @@ Projects hosted elsewhere can be used, but require additional manual setup.
 
 The PortGroup provides a keyword to facilitate listing dependencies: `go.vendors`. Supply a list of vendor package IDs, their versions (git commit hashes, labeled "lock" as in "lockfile"), and their checksums as follows. The packages and their versions can usually be found in a lockfile (e.g. `Gopkg.lock`, `glide.lock`) in the upstream code. All checksum types supported by the `checksums` keyword are supported here as well.
 
-```
+```text
 go.vendors      example.com/dep1/foo \
                     lock    abcdef123456... \
                     rmd160  fedcba654321... \
@@ -5985,7 +5985,7 @@ After the extraction phase, the vendor packages will be placed alongside the mai
 
 By default this PortGroup runs `go build` from the `${worksrcpath}`. Assuming this results in a binary with the same name as the project, and that there are no other files to install, the following is sufficient for the destroot phase:
 
-```
+```bash
 destroot {
     xinstall -m 755 ${worksrcpath}/${name} ${destroot}${prefix}/bin/
 }
@@ -6084,7 +6084,7 @@ The version string can indicate a specific version or a range with wildcards "+"
 - Type: optional
 - Example:
 
- ```
+ ```tcl
  java.version    1.8+
  ```
 
@@ -6095,7 +6095,7 @@ This keyword indicates an (optional) port dependency that will be added to the p
 - Type: optional
 - Example:
 
- ```
+ ```tcl
  java.fallback   openjdk17
  ```
 
@@ -6122,7 +6122,7 @@ This keyword sets the ${distfile} and ${version}.
 - Type: required
 - Example:
 
- ```
+ ```tcl
  perl5.setup          Net-Telnet 3.03
  ```
 
@@ -6133,7 +6133,7 @@ Perl modules are ordinarily assumed to be built with ExtUtils::MakeMaker. Use th
 - Type: optional
 - Example:
 
- ```
+ ```text
  perl5.use_module_build
  ```
 
@@ -6194,7 +6194,7 @@ If the port name does not start with “py-”, it is interpreted as an applicat
 - Type: required for modules, optional for apps
 - Example:
 
- ```
+ ```tcl
  python.versions     38 39 310
  ```
 
@@ -6207,7 +6207,7 @@ For applications (i.e., name does not start with “py-”), this chooses which 
 - Type: required for apps, optional for modules
 - Example:
 
- ```
+ ```tcl
  python.default_version     310
  ```
 
@@ -6222,7 +6222,7 @@ If set to “no”, the port will be built with the traditional distutils/setupt
  Default (Python <= 3.6): no
 - Example:
 
- ```
+ ```tcl
  python.pep517     yes
  ```
 
@@ -6234,7 +6234,7 @@ This can be set to the name of the PEP 517 build back-end used by the port. If `
 - Default: setuptools
 - Example:
 
- ```
+ ```tcl
  python.pep517_backend     flit
  ```
 
@@ -6246,7 +6246,7 @@ This can be set to the name of testing framework used by the port. If `test.run`
 - Default: pytest
 - Example:
 
- ```
+ ```tcl
  python.test_framework     nose
  ```
 
@@ -6260,7 +6260,7 @@ If set to “no”, the portgroup will not add any dependencies, and all require
 - Default: yes
 - Example:
 
- ```
+ ```tcl
  python.add_dependencies     no
  ```
 
@@ -6271,7 +6271,7 @@ When “yes” (the default), tells the PortGroup to automatically link any exec
 - Type: optional
 - Example:
 
- ```
+ ```tcl
  python.link_binaries     no
  ```
 
@@ -6289,7 +6289,7 @@ When yes (the default), the PortGroup will automatically try to pass the correct
 - Type: optional
 - Example:
 
- ```
+ ```tcl
  python.add_archflags     no
  ```
 
@@ -6419,7 +6419,7 @@ The path relative to `${build.dir}` and `${destroot.dir}` of the Xcode project. 
 - Default: none
 - Example:
 
- ```
+ ```text
  xcode.project ${name}.xcode
  ```
 
@@ -6431,7 +6431,7 @@ Project configuration/buildstyle to use.
 - Default: `Deployment`
 - Example:
 
- ```
+ ```text
  xcode.configuration Main
  ```
 
@@ -6443,7 +6443,7 @@ If present, it overrides `build.target` and `destroot.target`.
 - Default: none
 - Example:
 
- ```
+ ```text
  xcode.target ${name}
  ```
 
@@ -6455,7 +6455,7 @@ Additional settings passed to the xcodebuild tool during the build phase. These 
 - Default: none
 - Example:
 
- ```
+ ```text
  xcode.build.settings FRAMEWORK_SEARCH_PATHS=${frameworks_dir}
  ```
 
@@ -6467,7 +6467,7 @@ Type of project that will be installed. This tells the PortGroup xcode how to de
 - Default: `application`
 - Example:
 
- ```
+ ```text
  xcode.destroot.type framework
  ```
 
@@ -6486,7 +6486,7 @@ Additional settings passed to the xcodebuild tool during the destroot phase. The
 - Default: none
 - Example:
 
- ```
+ ```text
  xcode.destroot.settings SKIP_INSTALL=NO
  ```
 

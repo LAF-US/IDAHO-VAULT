@@ -1,4 +1,5 @@
 ---
+title: "RT @BoiseDev Senate Committee narrowly approves legislation..."
 date: 2023-03-23
 time: 16:40:12
 tweet_id: "1638943739854065665"

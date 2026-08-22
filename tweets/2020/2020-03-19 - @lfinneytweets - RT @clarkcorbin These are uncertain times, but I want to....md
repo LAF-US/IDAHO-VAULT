@@ -1,4 +1,5 @@
 ---
+title: "RT @clarkcorbin These are uncertain times, but I want to..."
 date: 2020-03-19
 time: 18:12:45
 tweet_id: "1240702768978915335"

@@ -12,6 +12,7 @@ related:
 - LEVELSET
 - Logan Finney
 ---
+[[A]][[G]][[E]][[N]][[T]][[S]]
 
 # AGENTS.md — IDAHO-VAULT
 
@@ -77,7 +78,7 @@ Root governance files remain authoritative: `CONSTITUTION.md`, `LEVELSET.md`, an
 
 The `LAF-US` organization uses a **Five Cores model** for repository and team topology in a Venn Diagram arrangement, with PRIVATE and PUBLIC containing SECRET, PUBLISH, and PERSONAL:
 
-```
+```text
 LAF-US (Organization)
 ├── PRIVATE
 │   ├── SECRET
@@ -94,6 +95,6 @@ Manually revised by Logan A. Finney on 05/25/2026
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

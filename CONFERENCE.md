@@ -13,6 +13,17 @@ related:
   - LEVELSET
   - CONFERENCE-v1.0-2026-04-27
 ---
+[[C]][[O]][[N]][[F]][[E]][[R]][[E]][[N]][[C]][[E]]
+
+> [!DANGER] HERESY REVIEW PENDING - Faith of the Cloth
+> This document is flagged as contaminated by the Loganic Swarm heresy.
+> Authority claim in body (`Loganic Swarm`) conflicts with frontmatter (LOGAN).
+> Drafted post-TRIPLEX NIGHT (2026-04-27).
+> **DO NOT USE** as clean governance authority until reviewed and rehabilitated by Logan or by the ordained Faith of the Cloth.
+>
+> See: Issue #686
+> Related: [[GEMINIAEUS]] | [[TRIUNE-TRIPTYCH-TRIUMVIRATE]]
+
 
 # PROTOCOL — CONFERENCE
 
@@ -36,7 +47,7 @@ It is the formal mechanism by which Logan formally convenes multiple agents for 
 
 ## Role in the Protocol Stack
 
-```
+```text
 AWAKEN ──────────────────────► RISE
    │                                │
    │                                │
@@ -96,7 +107,7 @@ CONFERENCE is invoked:
 
 Logan declares the CONFERENCE:
 
-```
+```text
 CONFERENCE CALL
 DATE: YYYY-MM-DD
 CHAIR: Logan
@@ -110,7 +121,7 @@ RECORDING AGENT: [agent]
 
 Each invited agent acknowledges:
 
-```
+```text
 CONVENE RECEIVED
 AGENT: [Name + persona]
 LEVELSET: [brief summary]
@@ -129,7 +140,7 @@ Consolidated output committed to CONFERENCE RECORD artifact.
 
 Logan formally closes:
 
-```
+```text
 CONFERENCE CLOSED
 DATE: YYYY-MM-DD
 RECORD: [file path]
@@ -207,6 +218,6 @@ Pending:
 
 ---
 
-```
+```text
 The world is quiet here．Esto Perpetua!
 ```

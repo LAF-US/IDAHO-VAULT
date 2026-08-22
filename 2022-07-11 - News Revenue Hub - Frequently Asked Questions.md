@@ -5,31 +5,23 @@ published: 2022-07-11
 created: 2026-04-20
 ---
 [Skip to content](#content) [Skip to footer](#footer)- - [Our Mission
-  Learn more about our mission as a nonprofit
-](https://fundjournalism.org/about/)
+  Learn more about our mission as a nonprofit](https://fundjournalism.org/about/)
 
 - [Impact
-  Learn about our industry impact and collaborations
-](https://fundjournalism.org/impact/)
+  Learn about our industry impact and collaborations](https://fundjournalism.org/impact/)
 - [Our Team
-  Get to know our in-house experts
-](https://fundjournalism.org/our-team/)
+  Get to know our in-house experts](https://fundjournalism.org/our-team/)
 - [FAQs
-  Explore our frequently asked questions
-](https://fundjournalism.org/frequently-asked-questions/)
+  Explore our frequently asked questions](https://fundjournalism.org/frequently-asked-questions/)
 
 - - [News Revenue Engine
-  Our very own contribution management platform
-](https://fundjournalism.org/news-revenue-engine/)
+  Our very own contribution management platform](https://fundjournalism.org/news-revenue-engine/)
   - [Consulting
-  Expert guidance combined with custom strategy
-](https://fundjournalism.org/consulting/)
+  Expert guidance combined with custom strategy](https://fundjournalism.org/consulting/)
   - [Case Studies
-  Providing newsrooms with measurable impact
-](https://fundjournalism.org/case-studies/)
+  Providing newsrooms with measurable impact](https://fundjournalism.org/case-studies/)
   - [Newsletter
-  Stay up-to-date on best practices and key learnings
-](https://fundjournalism.org/newsletter-sign-up/)
+  Stay up-to-date on best practices and key learnings](https://fundjournalism.org/newsletter-sign-up/)
 - [Pricing](https://fundjournalism.org/pricing/)
 - [News](https://fundjournalism.org/news/)
 - [Donate](https://newsrevenuehub.fundjournalism.org/contribute)
@@ -162,7 +154,7 @@ San Diego, CA 92103
 - [LinkedIn](https://www.linkedin.com/company/newsrevenuehub)
 - [Newsletter](https://fundjournalism.org/newsletter-sign-up/)
 
-[![](https://fundjournalism.org/wp-content/uploads/2022/07/NRH_KnockOut_Stacked.svg)](https://fundjournalism.org/)
+[![alt text needed](https://fundjournalism.org/wp-content/uploads/2022/07/NRH_KnockOut_Stacked.svg)](https://fundjournalism.org/)
 
 #### Get Our Newsletter →
 

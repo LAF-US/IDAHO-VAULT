@@ -22,6 +22,6 @@ Idaho House approves SB 1350a to require a funding source and fiscal note for ba
 
 ## Media
 
-- ![](https://pbs.twimg.com/media/ETQ1g4gU8AA19WQ.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/ETQ1g4gU8AA19WQ.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1239674764815286272)

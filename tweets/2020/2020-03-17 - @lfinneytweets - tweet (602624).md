@@ -1,4 +1,5 @@
 ---
+title: "tweet (602624)"
 date: 2020-03-17
 time: 19:23:32
 tweet_id: "1239995804984602624"
@@ -16,10 +17,10 @@ related:
   - lfinneytweets
 ---
 
-@CDCgov https://t.co/Ge1LYGPro5
+@CDCgov <https://t.co/Ge1LYGPro5>
 
 ## Links
-- https://x.com/DavidNForIdaho/status/1239785928245121025
+- <https://x.com/DavidNForIdaho/status/1239785928245121025>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

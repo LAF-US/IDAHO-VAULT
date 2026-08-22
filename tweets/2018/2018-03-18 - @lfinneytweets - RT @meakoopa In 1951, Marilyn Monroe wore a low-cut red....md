@@ -1,4 +1,5 @@
 ---
+title: "RT @meakoopa In 1951, Marilyn Monroe wore a low-cut red..."
 date: 2018-03-18
 time: 02:24:35
 tweet_id: "975196235618381824"

@@ -1,4 +1,5 @@
 ---
+title: "Vick says that the bill wouldn\u2019t substantially raise the..."
 date: 2021-02-17
 time: 16:28:42
 tweet_id: "1362076515064717313"
