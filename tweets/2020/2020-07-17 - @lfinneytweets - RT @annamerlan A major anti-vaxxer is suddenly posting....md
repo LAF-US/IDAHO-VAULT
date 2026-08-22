@@ -1,4 +1,5 @@
 ---
+title: "RT @annamerlan A major anti-vaxxer is suddenly posting..."
 date: 2020-07-17
 time: 15:46:50
 tweet_id: "1284152591413178369"

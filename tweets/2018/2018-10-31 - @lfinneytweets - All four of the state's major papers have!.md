@@ -1,4 +1,5 @@
 ---
+title: "All four of the state's major papers have!"
 date: 2018-10-31
 time: 03:24:01
 tweet_id: "1057473238781947904"

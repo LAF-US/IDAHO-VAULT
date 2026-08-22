@@ -240,4 +240,8 @@ Until Logan approves otherwise:
 - runtime config changes are not allowed
 - full key values stay out of chat, vault, and logs
 
-The world is quiet here.
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

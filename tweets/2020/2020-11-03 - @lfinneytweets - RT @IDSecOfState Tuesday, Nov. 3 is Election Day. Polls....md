@@ -1,4 +1,5 @@
 ---
+title: "RT @IDSecOfState Tuesday, Nov. 3 is Election Day. Polls..."
 date: 2020-11-03
 time: 02:06:33
 tweet_id: "1323446434989969408"

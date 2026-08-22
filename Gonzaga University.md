@@ -4,4 +4,4 @@ related:
 - Washington
 authority: LOGAN
 ---
-Spokane Washington Jesuit college 
+Spokane Washington Jesuit college

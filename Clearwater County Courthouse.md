@@ -5,4 +5,4 @@ related:
 - magistrate court
 ---
 
-magistrate court Clearwater County courthouse 
+magistrate court Clearwater County courthouse

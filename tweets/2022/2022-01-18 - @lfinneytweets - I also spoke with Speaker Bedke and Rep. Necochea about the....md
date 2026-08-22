@@ -1,4 +1,5 @@
 ---
+title: "I also spoke with Speaker Bedke and Rep. Necochea about the..."
 date: 2022-01-18
 time: 16:05:35
 tweet_id: "1483470632918470657"
@@ -20,10 +21,10 @@ related:
 ---
 
 I also spoke with Speaker Bedke and Rep. Necochea about the income tax proposal on Friday. #idleg #idpol 
-https://t.co/43etT8t8eT
+<https://t.co/43etT8t8eT>
 
 ## Links
-- https://youtu.be/o7E71zqzR00
+- <https://youtu.be/o7E71zqzR00>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

@@ -15,26 +15,30 @@ type: reference
 ## Secrets Currently in Use
 
 | Secret Name | Type | Used By | Current Status | Next Action |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | `GitHub Personal Access Token` | Personal Access Token | GitHub API (Linear sync, scraper) | ❌ Not created | Create in 1Password + migrate from GitHub Secrets |
 | `GitHub SSH Key` | SSH Key (Ed25519) | Git commits, pushes, SSH auth | ❌ Not created | Generate or import + register in 1Password |
 | `Linear API Key` | API Key | Linear workspace sync (GitHub Actions) | ⚠️ In GitHub Secrets | Migrate from GitHub Secrets → 1Password |
 | `Idaho Legislature API Key` | API Key | Scraper authentication | ❌ Not created | Create if legislator.idaho.gov requires auth |
 | `Email SMTP Credentials` | Username + Password | Budget tracker email delivery | ❌ Not created | Create if using SMTP service |
 | `Todoist API Token` | API Token | Todoist probe + future bridge (`.github/workflows/todoist-probe.yml`) | ❌ Not created | Create in 1Password as `todoist-api-token`, field `credential` |
-| `OP_SERVICE_ACCOUNT_TOKEN` | Service Token | GitHub Actions → 1Password auth | ⚠️ In GitHub Secrets | Sync from 1Password via manual provisioning |
+| `OP_SERVICE_ACCOUNT_TOKEN` | Service Token | GitHub Actions → 1Password auth | ✅ Provisioned (2026-06-17) | Created via 1Password web portal → Developer Tools → Service Accounts; saved to 1Password vault + added to GitHub Secrets |
+| `MERGE_QUEUE_TOKEN` | Fine-grained PAT (repo: IDAHO-VAULT; Contents RW + Pull requests RW) | Auto-merge lane arm/enqueue steps (`auto-merge-engage.yml`, `auto-merge-enqueue-on-checks.yml`, `auto-merge-rhythm.yml`, `batch-arm-merge-queue.yml`, `dependabot-rhythm.yml`, `review-feedback-loop.yml`, `review-response.yml`, `agent-review-gate.yml`) | ❌ Not created | Mint fine-grained PAT (Settings → Developer settings → Personal access tokens → Fine-grained tokens); store in 1Password; add as GitHub Actions repo secret `MERGE_QUEUE_TOKEN`. Without it the lane falls back to `GITHUB_TOKEN`, whose events never dispatch workflow runs — armed PRs starve in the merge queue (issue #731) |
+| `TRIAGEBOT_TOKEN` | Fine-grained PAT (repo: IDAHO-VAULT; Issues RW only) | `.github/workflows/triage.yml` labels and comments | ❌ Not created | Mint a dedicated fine-grained PAT with **Issues: Read and write** only; store it in 1Password; add it as GitHub Actions secret `TRIAGEBOT_TOKEN`; then set repository variable `TRIAGEBOT_ENABLED` to `true`. The triage job remains inert until both safeguards are deliberately configured. |
 
 ---
 
 ## Credential Rotation Schedule
 
 | Secret | Rotation Frequency | Last Rotated | Next Due |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | GitHub PAT | 90 days | — | — |
 | SSH Key | Annual or on compromise | — | — |
 | Linear API Key | 180 days | — | — |
 | SMTP credentials | 180 days | — | — |
 | Service account token | 90 days | — | — |
+| `MERGE_QUEUE_TOKEN` (fine-grained PAT) | 90 days | — | — |
+| `TRIAGEBOT_TOKEN` (fine-grained PAT) | 90 days | — | — |
 
 ---
 
@@ -64,6 +68,7 @@ type: reference
    - Save
 
 2. **In GitHub Actions workflow:**
+
    ```yaml
    - name: Fetch Secret from 1Password
      run: |
@@ -80,6 +85,7 @@ type: reference
 ## How to Rotate a Secret
 
 1. **Generate new credential:**
+
    ```bash
    op generate --length 32 --symbols  # For passwords
    ssh-keygen -t ed25519 -f ~/.ssh/id_new  # For SSH keys
@@ -101,6 +107,7 @@ type: reference
    - Update "Next Due" date
 
 5. **Confirm in workflows:**
+
    ```bash
    op item get "[Secret Name]"  # Verify new value is returned
    ```
@@ -112,7 +119,7 @@ type: reference
 ### If a Secret is Compromised
 
 1. **Immediately revoke** in source system (GitHub, Linear, service provider)
-2. **Generate replacement** 
+2. **Generate replacement**
 3. **Update in 1Password**
 4. **Rotate in all dependent systems**
 5. **Audit logs** — check for unauthorized access in GitHub Actions, Linear, etc.
@@ -148,6 +155,7 @@ op vault get IDAHO-VAULT
 ## Testing
 
 **Local test (after setup):**
+
 ```bash
 op item get "GitHub Personal Access Token" --fields password
 # Should return the token without errors
@@ -155,6 +163,7 @@ op item get "GitHub Personal Access Token" --fields password
 
 **GitHub Actions test:**
 Add a test workflow step:
+
 ```yaml
 - name: Test 1Password Access
   run: |

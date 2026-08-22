@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2024-05-22
 time: 23:18:39
 tweet_id: "1793421246572757415"
@@ -16,10 +17,10 @@ related:
   - lfinneytweets
 ---
 
-@No_ID_Lady https://t.co/dC36wb03or
+@No_ID_Lady <https://t.co/dC36wb03or>
 
 ## Links
-- https://results.voteidaho.gov/turnout.html
+- <https://results.voteidaho.gov/turnout.html>
 
 *In reply to [@No_ID_Lady](https://twitter.com/No_ID_Lady)*
 

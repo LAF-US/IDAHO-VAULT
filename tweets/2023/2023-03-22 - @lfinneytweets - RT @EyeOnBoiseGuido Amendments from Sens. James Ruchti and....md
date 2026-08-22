@@ -1,4 +1,5 @@
 ---
+title: "RT @EyeOnBoiseGuido Amendments from Sens. James Ruchti and..."
 date: 2023-03-22
 time: 23:36:13
 tweet_id: "1638686046404902912"

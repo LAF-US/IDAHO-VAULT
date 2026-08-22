@@ -1,4 +1,5 @@
 ---
+title: "RT @uiargonaut ASUI elected eight new senators, we got a..."
 date: 2020-05-15
 time: 21:46:26
 tweet_id: "1261412651986374657"

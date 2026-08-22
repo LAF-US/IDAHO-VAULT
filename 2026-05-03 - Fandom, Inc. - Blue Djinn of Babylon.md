@@ -16,4 +16,3 @@ The page is useful because it makes the series' political metaphysics explicit:
 - succession is part of the structure, not an accident
 
 That makes the Blue Djinn a good institutional analogue for a vault authority surface: a role that arbitrates rather than merely commands.
-

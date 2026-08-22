@@ -1,4 +1,5 @@
 ---
+title: "RT @sallykrutzig Ammon Bundy just told me that he doesn't..."
 date: 2023-07-25
 time: 18:25:53
 tweet_id: "1683906431777673216"

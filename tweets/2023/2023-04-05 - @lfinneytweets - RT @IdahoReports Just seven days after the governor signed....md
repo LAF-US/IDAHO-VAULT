@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Just seven days after the governor signed..."
 date: 2023-04-05
 time: 20:46:52
 tweet_id: "1643716860565921793"

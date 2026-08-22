@@ -1,4 +1,5 @@
 ---
+title: "RT @HindbergNicole Know a University of Idaho or Washington..."
 date: 2020-05-22
 time: 03:13:07
 tweet_id: "1263669189207678976"

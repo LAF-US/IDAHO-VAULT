@@ -1,4 +1,5 @@
 ---
+title: "RT @idahoednews Critchfield will run as a Republican in the..."
 date: 2021-05-11
 time: 23:26:38
 tweet_id: "1392259885010620419"

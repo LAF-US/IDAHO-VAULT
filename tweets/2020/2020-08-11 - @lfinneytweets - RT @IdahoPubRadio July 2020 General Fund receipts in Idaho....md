@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio July 2020 General Fund receipts in Idaho..."
 date: 2020-08-11
 time: 16:28:54
 tweet_id: "1293222872966557697"

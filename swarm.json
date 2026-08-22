@@ -4,7 +4,6 @@
   "// conventions": "VAULT-CONVENTIONS.md",
   "principal": "Logan Finney",
   "vault_authority": "https://github.com/LAF-US/IDAHO-VAULT",
-  "registry_version": "2026-05-22 (Logan Tool/Job Correction)",
   "wakeup_protocol": {
     "quick_start": "!/WAKEUP.md",
     "boot_order": [
@@ -22,7 +21,7 @@
       "generated bootstrap surfaces",
       "historical notes and exploratory residue"
     ],
-    "historical_rule": "Historical CrewAI harbor notes, abandoned branch artifacts, and exploratory scaffolds are non-live unless a live surface explicitly reactivates them.",
+    "historical_rule": "Historical CrewAI harbor notes, abandoned branch artifacts, and exploratory scaffolds remain historical unless Logan or canonical governance explicitly reclassifies them.",
     "scope_note": "Connector posture in this registry is local to IDAHO-VAULT. The broader LAF-US chamber and team topology lives in !/AGENTS.md and !/LAF-USB-FIVE-CORES-MIGRATION-2026-04-15.md."
   },
   "agents": [
@@ -35,8 +34,6 @@
       "autoload": true,
       "memory_anchored": true,
       "capability_tier": "Direct Write",
-      "office": null,
-      "title": null,
       "role": "Anthropic Claude Code lineage; direct-write tool surface. Specific offices and duties require Logan appointment.",
       "label": "agent:claude-code",
       "notes": "The prior Claude/Abhorsen job assignment is under Logan correction and is not inherited by Claude instances.",
@@ -51,8 +48,6 @@
       "autoload": true,
       "memory_anchored": true,
       "capability_tier": "Direct Write (Support)",
-      "office": null,
-      "title": null,
       "role": "Google Gemini lineage; support-capable tool surface. Specific offices and duties require Logan appointment.",
       "label": "agent:gemini",
       "notes": "The prior Gemini/Concierge job assignment is under Logan correction and is not inherited by Gemini instances.",
@@ -67,11 +62,15 @@
       "autoload": false,
       "memory_anchored": false,
       "capability_tier": "Direct Write (Support)",
-      "office": "[VACANT]",
-      "title": null,
       "role": "narrative lens, Sebald Code, Antigravity lineage",
       "label": "agent:antigravity",
-      "status": "uninstalled 2026-04-18",
+      "observations": [
+        {
+          "kind": "recorded_uninstallation",
+          "date": "2026-04-18",
+          "source_commit": "b05b53ae68fe25a0e3a9703c33aec90dc85eccc6"
+        }
+      ],
       "orientation_note": "Historical entry; it does not create a local startup route."
     },
     {
@@ -82,10 +81,9 @@
       "autoload_file": ".github/copilot-instructions.md",
       "autoload": true,
       "capability_tier": "Multi-Repo Admin",
-      "office": "Admin",
-      "title": "The Clerk",
       "role": "inline Obsidian markdown and syntax",
       "label": "agent:copilot",
+      "notes": "The Clerk is retained as a recorded narrative label in !/AGENTS.md. This tool-lineage record asserts no appointment or office occupancy.",
       "orientation_note": "The auto-loaded instruction file is descriptive context; no local launcher is required."
     },
     {
@@ -98,11 +96,9 @@
       "reference_shim": ".codex/CODEX.md",
       "autoload": true,
       "capability_tier": "Direct Write (scripting)",
-      "office": "[VACANT]",
-      "title": null,
       "role": "OpenAI Codex lineage; scripting-capable tool surface. Specific offices and duties require Logan appointment.",
       "label": "agent:codex",
-      "notes": "The Lexicographer is a historical/vacant office, not inherited by all Codex instances. Codex auto-loads repo AGENTS.md instructions. Project-scoped Codex config lives in .codex/config.toml; .codex/CODEX.md is a repo-specific reference shim. See !/CODEX-VOICE-REGISTRY-2026-05-18.md.",
+      "notes": "The Lexicographer is a historical voice and office claim, not inherited by Codex instances. Codex auto-loads repo AGENTS.md instructions. Project-scoped Codex config lives in .codex/config.toml; .codex/CODEX.md is a repo-specific reference shim. See !/CODEX-VOICE-REGISTRY-2026-05-18.md.",
       "orientation_note": "Codex auto-loads AGENTS.md; no local launcher is required."
     },
     {
@@ -151,8 +147,14 @@
       "config": "cloud - configured in Linear workspace settings",
       "capability_tier": "Advisory",
       "role": "Linear workspace AI - context synthesis, issue creation, status tracking",
-      "launched": "2026-03-24",
       "label": null,
+      "observations": [
+        {
+          "kind": "recorded_launch",
+          "date": "2026-03-24",
+          "source_commit": "b05b53ae68fe25a0e3a9703c33aec90dc85eccc6"
+        }
+      ],
       "notes": "No local dotfolder. Access via Cmd+J, Slack, Teams, @mentions in Linear."
     },
     {
@@ -166,10 +168,15 @@
       "role": "Semantic code intelligence — symbol navigation, codebase analysis, refactoring assistance",
       "label": null,
       "protocol": "MCP",
-      "launched": "2026-04-04",
-      "status": "active",
-      "runtime": "local hardware (Logan's machine)",
-      "notes": "MCP server (github.com/oraios/serena). AWAKENED 2026-04-04 on local hardware. Cloud agents cannot reach — local-only. Accessible to local Claude Code (The Collared Cat) and any local MCP-capable agent."
+      "runtime_scope": "local MCP runtime when configured",
+      "observations": [
+        {
+          "kind": "recorded_launch",
+          "date": "2026-04-04",
+          "source_commit": "b05b53ae68fe25a0e3a9703c33aec90dc85eccc6"
+        }
+      ],
+      "notes": "MCP server (github.com/oraios/serena). The recorded runtime architecture is local-only; this registry does not assert present availability or reachability."
     },
     {
       "id": "mistral-vibe",
@@ -179,16 +186,25 @@
       "autoload_file": ".mistral/MISTRAL.md",
       "autoload": false,
       "autoload_note": "Pending confirmation of official Mistral Vibe dotfolder spec — manual injection until confirmed",
-      "capability_tier": "[VACANT — awaiting Logan]",
-      "office": null,
-      "title": null,
-      "role": "[VACANT — awaiting Logan]",
+      "capability_tier": "Unclassified — awaiting Logan",
+      "role": "No durable role assignment recorded",
       "label": null,
       "winget_id": "MistralAI.MistralVibe.ACP",
-      "version": "2.7.6",
-      "launched": "2026-04-18",
-      "installed": "2026-04-18",
-      "status": "installed — awaiting API key",
+      "observations": [
+        {
+          "kind": "recorded_installation",
+          "date": "2026-04-18",
+          "source_commit": "b05b53ae68fe25a0e3a9703c33aec90dc85eccc6",
+          "details": {
+            "version": "2.7.6"
+          }
+        },
+        {
+          "kind": "recorded_launch",
+          "date": "2026-04-18",
+          "source_commit": "b05b53ae68fe25a0e3a9703c33aec90dc85eccc6"
+        }
+      ],
       "orientation_note": "Descriptive entry only; no local launcher is required."
     }
   ],
@@ -200,7 +216,7 @@
       "autoload_file": ".bartimaeus/BARTIMAEUS.md",
       "autoload": false,
       "role": "TBD - pending Logan's direction",
-      "notes": "The prior Bartimaeus/Cartographer job assignment is under Logan correction and is not a current appointment."
+      "notes": "The prior Bartimaeus/Cartographer job assignment is under Logan correction; this registry asserts no appointment event."
     },
     {
       "id": "zagreus",
@@ -356,7 +372,7 @@
       "auth_dependency": "Linear connector in Codex session; LINEAR_API_KEY and webhook secrets for GitHub-side automation",
       "human_gate": "Live writes stay dry-run by default unless explicitly enabled; no meaningful work without a mapped issue.",
       "promotion_rule": "Linear tracks ownership, status, and planning; durable doctrine and recoverable context must be promoted back into the vault, and code-execution context may be mirrored to GitHub.",
-      "notes": "Secondary AFK paging route; SWARM label is the active coordination hub."
+      "notes": "Secondary AFK paging route; SWARM label is the registered coordination hub."
     },
     {
       "id": "slack",
@@ -545,7 +561,7 @@
     ]
   },
   "plugin_layer": {
-    "// note": "Machine-readable registration of the Obsidian plugin layer. Live doctrine, topology, and promotion rules live in !/PLUGIN-REGISTRY.md.",
+    "// note": "Machine-readable registration of the Obsidian plugin layer. Canonical doctrine, topology, and promotion rules are documented in !/PLUGIN-REGISTRY.md.",
     "manifest_doc": "!-PLUGIN-REGISTRY.md",
     "interface_state_files": [
       ".obsidian/community-plugins.json",
@@ -558,8 +574,8 @@
     "counts": {
       "enabled_community": 44,
       "enabled_core": 31,
-      "dormant_installed": 32,
-      "installed_total": 76,
+      "dormant_installed": 31,
+      "installed_total": 75,
       "enabled_missing_manifest": 0
     },
     "entrypoints": [
@@ -666,8 +682,8 @@
     "current_state": {
       "enabled_community_count": 44,
       "enabled_core_count": 31,
-      "installed_community_count": 76,
-      "dormant_installed_count": 32,
+      "installed_community_count": 75,
+      "dormant_installed_count": 31,
       "enabled_missing_manifest_count": 0
     },
     "enabled_community_plugins": [
@@ -695,7 +711,6 @@
       "obsidian-day-planner",
       "dataview",
       "obsidian-tasks-plugin",
-      "calendar",
       "obsidian-folder-index",
       "obsidian-icon-folder",
       "oz-image-plugin",
@@ -714,7 +729,8 @@
       "quickadd",
       "obsidian-tidy-footnotes",
       "time-ruler",
-      "translate"
+      "translate",
+      "calendarium"
     ],
     "enabled_core_plugins": [
       "file-explorer",
@@ -779,12 +795,6 @@
         "name": "Breadcrumbs",
         "version": "4.4.4",
         "path": ".obsidian/plugins/breadcrumbs/manifest.json"
-      },
-      {
-        "id": "calendar",
-        "name": "Calendar",
-        "version": "1.5.10",
-        "path": ".obsidian/plugins/calendar/manifest.json"
       },
       {
         "id": "calendarium",
@@ -1081,12 +1091,6 @@
         "path": ".obsidian/plugins/omnisearch/manifest.json"
       },
       {
-        "id": "openclaw",
-        "name": "OpenClaw",
-        "version": "0.41.1",
-        "path": ".obsidian/plugins/obsidianclaw/manifest.json"
-      },
-      {
         "id": "oz-image-plugin",
         "name": "Image in Editor",
         "version": "2.2.6",
@@ -1212,7 +1216,6 @@
       "ai-templater",
       "beautiful-contact-cards",
       "bmo-chatbot",
-      "calendarium",
       "cmdr",
       "dataview-autocompletion",
       "dataview-properties",
@@ -1235,7 +1238,6 @@
       "obsidian-git",
       "obsidian-leaflet-plugin",
       "obsidian42-brat",
-      "openclaw",
       "pdf-plus",
       "table-editor-obsidian",
       "taskbone-ocr-plugin",
@@ -1248,10 +1250,10 @@
     "// note": "Machine-readable registration of the vault-native cross-swarm signaling bus. Protocol lives in !/SIGNALS/README.md.",
     "protocol_doc": "!/SIGNALS/README.md",
     "signal_root": "!/SIGNALS/",
-    "live_board": "!/__!__/!/! The world is quiet here/DOCKET.md",
-    "status": "active",
+    "courtroom_record": "!/__!__/!/! The world is quiet here/DOCKET.md",
+    "registration_state": "registered",
     "transport_model": "vault_native_async_signal_bus",
-    "authority_boundary": "swarm.json registers the signaling bus; the live protocol lives in !/SIGNALS/README.md; execution state remains in GitHub and Linear; the Courtroom DOCKET is the live visibility surface.",
+    "authority_boundary": "swarm.json registers the signaling bus; its canonical protocol is documented in !/SIGNALS/README.md; execution state remains in GitHub and Linear; the Courtroom DOCKET is a durable visibility record, not proof of present activity.",
     "entrypoints": [
       {
         "id": "signal-protocol",
@@ -1266,7 +1268,7 @@
       {
         "id": "courtroom-docket",
         "path": "!/__!__/!/! The world is quiet here/DOCKET.md",
-        "role": "live board for signal visibility and active coordination"
+        "role": "durable record for signal visibility and coordination entries"
       },
       {
         "id": "narrative-registry",
@@ -1300,14 +1302,13 @@
     "promotion_gate": "Signals may coordinate work, but durable decisions and execution commitments must still be promoted into the vault, GitHub, or Linear explicitly."
   },
   "crews": {
-    "// note": "CrewAI is an active layer under re-foundation. swarm.json registers the layer but does not carry CrewAI crew, task, or runner topology.",
+    "// note": "CrewAI is a retired historical layer. swarm.json preserves the registry pointer but no CrewAI crew, task, runner, or package is active.",
     "manifest": ".crewai/manifest.json",
     "manifest_doc": ".crewai/MANIFEST.md",
-    "crewai_version": "1.14.1",
-    "status": "refoundation",
+    "status": "retired",
     "output_dir": "!/CREWAI/",
-    "runtime_class": "vault-contained local runtime slice",
-    "authority_boundary": "swarm.json registers the layer; live CrewAI topology and promotion rules live in .crewai/MANIFEST.md.",
+    "runtime_class": "none",
+    "authority_boundary": "Historical CrewAI material does not establish active topology, runtime authority, or a promotion path; see .crewai/MANIFEST.md.",
     "principle": "Portable authority over local runtime romance",
     "roster": []
   },

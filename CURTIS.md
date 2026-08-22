@@ -6,4 +6,7 @@ authority: LOGAN
 HOME
 
 ---
-"The world is quiet here."
+
+```text
+The world is quiet here．Esto Perpetua!
+```

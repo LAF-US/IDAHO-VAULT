@@ -16,9 +16,10 @@ related:
   - lfinneytweets
 ---
 
-Review of K-12 English, math and science standards begins in the House next week. @madisonhardy05 will be following the hearings for @IdahoPubRadio https://t.co/Tkxad2mq6W
+Review of K-12 English, math and science standards begins in the House next week. @madisonhardy05 will be following the hearings for @IdahoPubRadio <https://t.co/Tkxad2mq6W>
 
 ## Links
-- https://x.com/IdahoStatesman/status/1215984910227382273
+
+- <https://x.com/IdahoStatesman/status/1215984910227382273>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1216050261300412416)

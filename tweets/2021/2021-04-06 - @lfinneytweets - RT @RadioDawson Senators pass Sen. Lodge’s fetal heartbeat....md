@@ -1,4 +1,5 @@
 ---
+title: "RT @RadioDawson Senators pass Sen. Lodge\u2019s fetal heartbeat..."
 date: 2021-04-06
 time: 20:50:08
 tweet_id: "1379536926156357636"

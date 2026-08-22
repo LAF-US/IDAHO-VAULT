@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoCapitalSun Neither legislator supported the idea..."
 date: 2021-07-14
 time: 18:28:07
 tweet_id: "1415377584104251395"

@@ -1,4 +1,5 @@
 ---
+title: "Bring back the Pioneer route you cowards"
 date: 2021-04-01
 time: 01:18:35
 tweet_id: "1377430156977991684"
@@ -13,9 +14,9 @@ related:
   - lfinneytweets
 ---
 
-Bring back the Pioneer route you cowards https://t.co/2sWy6FQTx1
+Bring back the Pioneer route you cowards <https://t.co/2sWy6FQTx1>
 
 ## Links
-- https://t.co/2sWy6FQTx1
+- <https://t.co/2sWy6FQTx1>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1377430156977991684)
