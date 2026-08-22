@@ -217,6 +217,16 @@ def _make_citation(relpath: str, line_number: int, line: str) -> dict[str, objec
     }
 
 
+# Shared with _line_mentions_dotfolder()'s boundary rule below: characters that
+# count as part of the same identifier, so a match must NOT be adjacent to one.
+_IDENTIFIER_CHARS = "A-Za-z0-9_.-"
+
+
+def _loose_token_pattern(token: str) -> re.Pattern[str]:
+    """Compile a boundary-safe pattern; rejects hits inside `*.copilot.clerk`-style identifiers."""
+    return re.compile(rf"(?<![{_IDENTIFIER_CHARS}]){re.escape(token)}(?![{_IDENTIFIER_CHARS}])")
+
+
 def _find_citations(
     doctrine_lines: dict[str, list[str]],
     *,
@@ -226,12 +236,15 @@ def _find_citations(
 ) -> list[dict[str, object]]:
     citations: list[dict[str, object]] = []
     normalized_loose = [token.casefold() for token in (loose_tokens or []) if token]
+    # Compiled once per call and reused across every doctrine line, rather than
+    # rebuilding the same regex on each of the (line x token) checks below.
+    loose_patterns = [_loose_token_pattern(token) for token in normalized_loose]
     for relpath, lines in doctrine_lines.items():
         for idx, line in enumerate(lines, start=1):
             line_casefold = line.casefold()
             if any(token in line for token in exact_tokens if token):
                 citations.append(_make_citation(relpath, idx, line))
-            elif any(token in line_casefold for token in normalized_loose):
+            elif any(pattern.search(line_casefold) for pattern in loose_patterns):
                 citations.append(_make_citation(relpath, idx, line))
             if len(citations) >= limit:
                 return citations
@@ -315,7 +328,7 @@ def _dotfolder_citations(
 
 
 def _line_mentions_dotfolder(dotfolder: str, line: str) -> bool:
-    pattern = rf"(?<![A-Za-z0-9_.-]){re.escape(dotfolder)}/?(?![A-Za-z0-9_.-])"
+    pattern = rf"(?<![{_IDENTIFIER_CHARS}]){re.escape(dotfolder)}/?(?![{_IDENTIFIER_CHARS}])"
     return re.search(pattern, line) is not None
 
 
