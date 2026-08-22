@@ -29,5 +29,5 @@ Repository = "https://github.com/LAF-US/IDAHO-VAULT"
 python_files = ["test_*.py", "tests-test_*.py"]
 
 [build-system]
-requires = ["setuptools>=61"]
+requires = ["setuptools>=84.0.0"]
 build-backend = "setuptools.build_meta"
