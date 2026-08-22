@@ -57,19 +57,22 @@ def extract_metadata_from_zip(zip_path: Path, temp_dir: Path):
     print(f"Extracting metadata from {zip_path.name}...")
     temp_dir.mkdir(parents=True, exist_ok=True)
     with zipfile.ZipFile(zip_path, 'r') as z:
-        extracted_filenames: set[str] = set()
-        for member in z.namelist():
-            if member.endswith(('tweets.js', 'account.js')):
-                # The archive member is untrusted; write only to these fixed,
-                # repository-controlled local names rather than deriving a path
-                # from it.
-                filename = "tweets.js" if member.endswith("tweets.js") else "account.js"
-                if filename in extracted_filenames:
-                    raise ValueError(f"archive contains multiple {filename} entries")
-                extracted_filenames.add(filename)
-                target_path = temp_dir / filename
-                with z.open(member) as source, target_path.open("wb") as target:
-                    shutil.copyfileobj(source, target)
+        # Twitter exports keep the metadata in these fixed archive locations.
+        # Do not select members by an archive-controlled name: a ZIP is
+        # untrusted input, so only these repository-known member names may be
+        # opened or copied.
+        metadata_members = (
+            ("data/tweets.js", "tweets.js"),
+            ("data/account.js", "account.js"),
+        )
+        for archive_member, filename in metadata_members:
+            try:
+                source_info = z.getinfo(archive_member)
+            except KeyError:
+                continue
+            target_path = temp_dir / filename
+            with z.open(source_info) as source, target_path.open("wb") as target:
+                shutil.copyfileobj(source, target)
 
 
 def parse_date(twitter_date_str: str) -> datetime:
