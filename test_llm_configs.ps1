@@ -1,4 +1,4 @@
-# Test script to verify Ollama and OpenRouter configurations
+﻿# Test script to verify Ollama and OpenRouter configurations
 
 # Test Ollama
 Write-Host "Testing Ollama..."
