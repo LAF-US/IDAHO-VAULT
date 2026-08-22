@@ -18,7 +18,6 @@ from datetime import datetime
 from pathlib import Path
 from html import unescape
 import zipfile
-import shutil
 
 VAULT_ROOT = Path(r"c:\Users\loganf\Documents\IDAHO-VAULT")
 TEMP_DIR = Path(os.environ.get("TEMP") or os.environ.get("TMP") or tempfile.gettempdir()) / "twitter-extract"
@@ -67,12 +66,11 @@ def extract_metadata_from_zip(zip_path: Path, temp_dir: Path):
         )
         for archive_member, filename in metadata_members:
             try:
-                source_info = z.getinfo(archive_member)
+                content = z.read(archive_member)
             except KeyError:
                 continue
             target_path = temp_dir / filename
-            with z.open(source_info) as source, target_path.open("wb") as target:
-                shutil.copyfileobj(source, target)
+            target_path.write_bytes(content)
 
 
 def parse_date(twitter_date_str: str) -> datetime:
