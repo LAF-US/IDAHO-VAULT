@@ -29,11 +29,15 @@ itsdangerous==2.2.0
     # via flask
 jinja2==3.1.6
     # via flask
+markdown-it-py==4.2.0
+    # via rich
 markupsafe==3.0.3
     # via
     #   flask
     #   jinja2
     #   werkzeug
+mdurl==0.1.2
+    # via markdown-it-py
 packaging==26.3
     # via pytest
 pluggy==1.6.0
@@ -45,12 +49,18 @@ pycparser==3.0 ; implementation_name != 'PyPy'
 pygit2==1.20.0
     # via idaho-vault
 pygments==2.21.0
-    # via pytest
+    # via
+    #   pytest
+    #   rich
 pytest==9.1.1
+    # via pytest-codspeed
+pytest-codspeed==5.0.3
 pyyaml==6.0.3
     # via idaho-vault
 requests==2.34.2
     # via posthog
+rich==15.0.0
+    # via pytest-codspeed
 typing-extensions==4.16.0
     # via posthog
 urllib3==2.7.0
