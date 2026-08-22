@@ -45,8 +45,23 @@ def pytest_configure(config: pytest.Config) -> None:
 def pytest_ignore_collect(
     collection_path: Path, config: pytest.Config
 ) -> bool | None:
-    """Keep pytest from probing every top-level vault chamber during collection."""
+    """Keep pytest from probing every top-level vault chamber during collection.
+
+    Root holds two different kinds of top-level entries: vault content chambers
+    (not test-bearing) and the vault's actual test modules, which live directly
+    at root rather than under ``tests/`` (which is empty -- that convention, not
+    this file, is canonical). Test modules at root use either ``test_*.py``
+    (e.g. ``test_doctrinal_flatten.py``) or the ten ``tests-test_*.py`` files.
+    Excluding everything at root except the empty `tests/` dir silently dropped
+    all of them from collection.
+    """
     del config
-    if collection_path.parent == ROOT and collection_path != TESTS:
-        return True
-    return None
+    if collection_path.parent != ROOT:
+        return None
+    if collection_path == TESTS:
+        return None
+    if collection_path.suffix == ".py" and collection_path.name.startswith(
+        ("test_", "tests-test_")
+    ):
+        return None
+    return True
