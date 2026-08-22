@@ -1,0 +1,19 @@
+# example from https://www.browserstack.com/docs/percy/references/config-options
+version: 2
+snapshot:
+  widths:
+    - 375
+    - 1280
+  min-height: 1024
+  percy-css: ""
+  disable-shadow-dom: false
+discovery:
+  allowed-hostnames: []
+  disallowed-hostnames: []
+  network-idle-timeout: 100
+  capture-mocked-service-worker: false
+  retry: false
+upload:
+  files: "**/*.{png,jpg,jpeg}"
+  ignore: ""
+  strip-extensions: false
