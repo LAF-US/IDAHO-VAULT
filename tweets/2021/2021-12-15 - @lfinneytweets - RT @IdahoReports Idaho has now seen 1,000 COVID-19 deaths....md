@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Idaho has now seen 1,000 COVID-19 deaths..."
 date: 2021-12-15
 time: 21:35:14
 tweet_id: "1471232404366893056"

@@ -1,4 +1,5 @@
 ---
+title: "RT @gottfriedjeff \u26a1\ufe0fNEW\u26a1\ufe0fAmericans\u2019 awareness of QAnon..."
 date: 2020-09-16
 time: 20:04:19
 tweet_id: "1306323046702002176"

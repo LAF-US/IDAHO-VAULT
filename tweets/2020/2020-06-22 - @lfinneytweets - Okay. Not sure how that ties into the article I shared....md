@@ -1,4 +1,5 @@
 ---
+title: "Okay. Not sure how that ties into the article I shared..."
 date: 2020-06-22
 time: 21:30:18
 tweet_id: "1275179330927095808"

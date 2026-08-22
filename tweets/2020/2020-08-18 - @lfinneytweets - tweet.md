@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2020-08-18
 time: 17:32:53
 tweet_id: "1295775689103118336"
@@ -14,10 +15,10 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/NQScZLvXzQ
+<https://t.co/NQScZLvXzQ>
 
 ## Media
-- ![](https://pbs.twimg.com/media/EfuFHyPUMAEw8vD.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EfuFHyPUMAEw8vD.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

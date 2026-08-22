@@ -1,4 +1,5 @@
 ---
+title: "On the JFAC docket to close out the #idleg session \u00b7 re-set..."
 date: 2024-03-26
 time: 21:33:13
 tweet_id: "1772738601987506451"

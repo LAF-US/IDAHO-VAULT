@@ -18,6 +18,7 @@ This skill enables dynamic discovery and application of domain-specific guidelin
 ### Purpose
 
 Guidelines are curated, domain-specific knowledge bases that provide:
+
 - **Migration patterns**: Technology-to-technology migration recipes (e.g., Struts to Spring Boot)
 - **Best practices**: Industry-standard approaches for specific technologies
 - **Transformation rules**: Concrete mappings and conversion templates
@@ -25,7 +26,7 @@ Guidelines are curated, domain-specific knowledge bases that provide:
 
 ### Directory Structure
 
-```
+```text
 skills/guidelines/
 ├── SKILL.md                    # This file - lookup mechanism
 ├── struts-to-spring/           # Struts 2 → Spring Boot 3.x
@@ -83,7 +84,7 @@ Before proceeding with [current phase], check for applicable guidelines:
 ### Integration Points
 
 | Workflow Phase | Guideline Application |
-|----------------|----------------------|
+| ---------------- | ---------------------- |
 | Specification | Domain constraints, scope boundaries |
 | Planning | Technology decisions, architecture patterns |
 | Tasks | Specific transformation tasks, file-by-file changes |

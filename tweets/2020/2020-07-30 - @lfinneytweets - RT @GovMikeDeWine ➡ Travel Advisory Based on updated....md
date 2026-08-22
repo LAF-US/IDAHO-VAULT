@@ -1,4 +1,5 @@
 ---
+title: "RT @GovMikeDeWine \u27a1 Travel Advisory Based on updated..."
 date: 2020-07-30
 time: 02:07:15
 tweet_id: "1288657375751098369"

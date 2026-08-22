@@ -1,4 +1,5 @@
 ---
+title: "RT @clarkcorbin The Idaho Senate has adjourned the 2020..."
 date: 2020-03-20
 time: 01:59:27
 tweet_id: "1240820216482779136"

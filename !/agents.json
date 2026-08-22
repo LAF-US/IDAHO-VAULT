@@ -26,7 +26,7 @@
       "generated bootstrap surfaces",
       "historical notes and exploratory residue"
     ],
-    "historical_rule": "Historical CrewAI harbor notes, abandoned branch artifacts, and exploratory scaffolds are non-live unless a live surface explicitly reactivates them.",
+    "historical_rule": "Historical CrewAI harbor notes, abandoned branch artifacts, and exploratory scaffolds remain historical unless Logan or canonical governance explicitly reclassifies them.",
     "scope_note": "Connector posture in this registry is local to IDAHO-VAULT. The broader LAF-US chamber and team topology lives in !/AGENTS.md and !/LAF-USB-FIVE-CORES-MIGRATION-2026-04-15.md."
   },
   "control_plane": {
@@ -40,12 +40,12 @@
     "scope_note": "GitHub, Linear, and Slack here describe the repo-local operating posture of IDAHO-VAULT, not the whole LAF-US world model."
   },
   "crewai_layer": {
-    "status": "refoundation",
+    "status": "retired",
     "manifest": ".crewai/manifest.json",
     "manifest_doc": ".crewai/MANIFEST.md",
     "output_dir": "!/CREWAI/",
-    "runtime_class": "vault-contained local runtime slice",
-    "authority_boundary": "swarm.json registers the layer; live CrewAI topology and promotion rules live in .crewai/MANIFEST.md."
+    "runtime_class": "none",
+    "authority_boundary": "Historical CrewAI material does not establish active topology, runtime authority, or a promotion path; see .crewai/MANIFEST.md."
   },
   "agents": {
     "antigravity": {
@@ -200,7 +200,7 @@
       "name": "Mistral Vibe CLI",
       "vendor": "Mistral AI",
       "dotfolder": ".mistral",
-      "capability_tier": "[VACANT \u2014 awaiting Logan]",
+      "capability_tier": "Unclassified \u2014 awaiting Logan",
       "instructions_file": ".mistral/MISTRAL.md",
       "autoload": false,
       "context": {

@@ -1,4 +1,5 @@
 ---
+title: "RT @RadioDawson The Idaho Freedom Foundation says hospitals..."
 date: 2021-09-27
 time: 23:41:05
 tweet_id: "1442635437806284800"

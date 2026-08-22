@@ -1,4 +1,5 @@
 ---
+title: "RT @bryceglenn @mcclatchy, which owns the @IdahoStatesman,..."
 date: 2021-04-21
 time: 19:32:29
 tweet_id: "1384953204916604928"

@@ -6,4 +6,4 @@ related:
 - Senate member
 authority: LOGAN
 ---
-Senate member for LD13 after primary against Jeff Agenbroad 
+Senate member for LD13 after primary against Jeff Agenbroad

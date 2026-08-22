@@ -1,4 +1,5 @@
 ---
+title: "RT @RadioDawson The self-described Bard of the American..."
 date: 2021-12-16
 time: 23:24:29
 tweet_id: "1471622286339809284"

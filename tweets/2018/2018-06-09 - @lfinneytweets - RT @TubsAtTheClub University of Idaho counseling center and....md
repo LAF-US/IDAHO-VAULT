@@ -1,4 +1,5 @@
 ---
+title: "RT @TubsAtTheClub University of Idaho counseling center and..."
 date: 2018-06-09
 time: 19:09:23
 tweet_id: "1005527293253410816"

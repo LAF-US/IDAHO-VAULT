@@ -1,4 +1,5 @@
 ---
+title: "#idpol @reclaimID"
 date: 2021-08-28
 time: 17:26:18
 tweet_id: "1431669482192211971"
@@ -19,13 +20,13 @@ related:
   - idpol
 ---
 
-#idpol @reclaimID https://t.co/s3oDrUYilE
+\#idpol @reclaimID <https://t.co/s3oDrUYilE>
 
 ## Media
-- ![](https://pbs.twimg.com/media/E95PQjyUcAALQwk.jpg)
-- ![](https://pbs.twimg.com/media/E95PRAnVkAQojbc.jpg)
-- ![](https://pbs.twimg.com/media/E95PTQZVQAIYNU_.jpg)
-- ![](https://pbs.twimg.com/media/E95PTyNVQAE_ltL.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/E95PQjyUcAALQwk.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/E95PRAnVkAQojbc.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/E95PTQZVQAIYNU_.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/E95PTyNVQAE_ltL.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

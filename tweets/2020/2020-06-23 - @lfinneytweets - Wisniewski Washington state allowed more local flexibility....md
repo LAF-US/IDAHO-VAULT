@@ -1,4 +1,5 @@
 ---
+title: "Wisniewski Washington state allowed more local flexibility..."
 date: 2020-06-23
 time: 15:36:55
 tweet_id: "1275452785861914626"

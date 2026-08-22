@@ -53,11 +53,13 @@ authority: LOGAN
 ## MERGED (on this branch)
 
 ### `claude/levelset-multi-conversation-zWxJc`
+
 - **Status:** ✅ Merged (fast-forward)
 - **Changes:** Updated CLAUDE.md, AGENTS.md, GEMINI.md, and `.github/copilot-instructions.md` to align with post-flatten vault structure (references `!/` instead of `!/!` in structure docs)
 - **Conflicts:** None
 
 ### `claude/context-persistence-system-gVP3x`
+
 - **Status:** ✅ Merged (conflict resolved — kept main's files)
 - **Changes:** Added swarm scaffolding (`.gitignore` update, `swarm/logs/.gitkeep`, `swarm/state/archive/.gitkeep`)
 - **Conflicts:** add/add on `swarm/state/run_state.md`, `swarm/state/stabilization_plan.md`, `swarm/tools/state_manager.py` — main's versions were more complete; kept main's
@@ -67,6 +69,7 @@ authority: LOGAN
 ## EXTRACTED (content salvaged, branch not merged)
 
 ### `claude/levelset-current-synthesis-zWxJc`
+
 - **Status:** ⚠️ Not merged — semantic path conflict (`!ADMINISTRATION/` path doesn't exist on main)
 - **Valuable content extracted:** `LEVELSET-CURRENT.md` → copied to `!/!/LEVELSET-CURRENT.md`
 - **DECISIONS.md:** Branch has 7 entries from 2026-03-13 in old `## YYYY-MM-DD` format that are NOT in main's DECISIONS.md. Main now uses numbered decision format from 2026-03-16. **Logan's call:** incorporate in new format, append as historical section, or discard.
@@ -78,6 +81,7 @@ authority: LOGAN
 ## NEEDS LOGAN'S DECISION
 
 ### `claude/bidirectional-conversation-signals-eDiy0`
+
 - **Status:** ❌ Git conflict — CLAUDE.md changed in both branches
 - **3 commits ahead** of the common ancestor
 - **New content:** SIGNAL protocol section for CLAUDE.md; `!ADMINISTRATION/SIGNAL.md`; `!ADMINISTRATION/TOSS-PROMPT.md`; `!ADMINISTRATION/BOOTSTRAP-PROMPT.md`; `!ADMINISTRATION/XKCD.md`; `!ADMINISTRATION/LEVELSET-v3.2.6.1-PROMPT.md`
@@ -86,6 +90,7 @@ authority: LOGAN
 - **Resolution path:** Manually cherry-pick the SIGNAL Protocol section into current CLAUDE.md, and add the protocol files at the correct path (`!/!` or wherever Logan decides). Not done here — Logan should confirm SIGNAL protocol is still desired before adding to CLAUDE.md.
 
 ### `claude/openclaw-agent-risks-8EB6T`
+
 - **Status:** ❌ Git conflicts — 4 files changed in both branches
 - **3 commits ahead** of the common ancestor
 - **Conflict files:**
@@ -97,6 +102,7 @@ authority: LOGAN
 - **Resolution path:** The scraper sanitization hardening is valuable security work. Needs manual resolution — diff the workflow changes against current main and apply only the new additions. Recommend Cherry-pick approach with careful diff review.
 
 ### `claude/passback-sync-handshake-X0unz`
+
 - **Status:** ❌ Git rename-detection conflict (persistent — affects cherry-pick too)
 - **Root cause:** `!ADMIN/` directory was renamed to `!/!` in main's history. Git detects all `!ADMIN/` additions as "renamed" files.
 - **1 commit ahead** of the common ancestor
@@ -105,6 +111,7 @@ authority: LOGAN
 - **Resolution path:** Manually write PROTOCOL-PASSBACK-SYNC.md, BOOTSTRAP.md, TOSS.md to `!/!` (or wherever Logan decides protocols live). Two agents created overlapping TOSS/BOOTSTRAP files — Logan should review both and pick or merge.
 
 ### `copilot/collaboration-context-unification`
+
 - **Status:** ❌ Stale branch — diverged before major vault restructuring (pre-2026-03-16)
 - **4 commits ahead** of very old base
 - **Real git conflicts in:**

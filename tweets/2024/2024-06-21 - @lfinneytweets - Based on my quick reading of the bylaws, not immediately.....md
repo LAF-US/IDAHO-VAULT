@@ -1,4 +1,5 @@
 ---
+title: "Based on my quick reading of the bylaws, not immediately...."
 date: 2024-06-21
 time: 18:39:10
 tweet_id: "1804222548261171294"

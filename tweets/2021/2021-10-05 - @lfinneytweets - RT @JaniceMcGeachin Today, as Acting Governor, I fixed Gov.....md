@@ -1,4 +1,5 @@
 ---
+title: "RT @JaniceMcGeachin Today, as Acting Governor, I fixed Gov...."
 date: 2021-10-05
 time: 22:31:12
 tweet_id: "1445516953515270155"

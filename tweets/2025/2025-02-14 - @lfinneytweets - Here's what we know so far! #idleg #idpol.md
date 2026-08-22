@@ -1,4 +1,5 @@
 ---
+title: "Here's what we know so far! #idleg #idpol"
 date: 2025-02-14
 time: 23:08:23
 tweet_id: "1890538607477211407"
@@ -20,10 +21,10 @@ related:
 ---
 
 Here's what we know so far! #idleg #idpol 
-https://t.co/puoSIAHVHM
+<https://t.co/puoSIAHVHM>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2025/02/14/complete-fabrications-lawmakers-receive-fake-constituent-emails-regarding-grocery-tax-legislation/
+- <https://blog.idahoreports.idahoptv.org/2025/02/14/complete-fabrications-lawmakers-receive-fake-constituent-emails-regarding-grocery-tax-legislation/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

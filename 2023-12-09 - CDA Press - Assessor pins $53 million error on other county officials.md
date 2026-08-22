@@ -49,7 +49,7 @@ In a Nov. 22 email, Kovacs said he believes “systemic problems” beyond his c
 
 “This process is painstaking and fraught with problems,” Kovacs wrote. “It has taken a heavy toll on the people, morale and quality of work. Kootenai County needs to break with the past."
 
-He wrote that as the assessor, he needs a reliable computer system that is not built "on a house of cards." 
+He wrote that as the assessor, he needs a reliable computer system that is not built "on a house of cards."
 
 Kovacs went on to say his email served as a request to the Idaho State Tax Commission for a “comprehensive audit of the computer system(s), work processes, business workflows, technical process steps” performed by the county’s IT department, as well as the offices of the assessor, clerk, treasurer and commissioners.
 

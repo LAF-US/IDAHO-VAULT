@@ -1,4 +1,5 @@
 ---
+title: "RT @DailyBee Gov. Brad Little said, while he is a huge..."
 date: 2020-06-25
 time: 15:17:10
 tweet_id: "1276172590080389120"

@@ -5,4 +5,4 @@ related:
 - Millennium Fund
 authority: LOGAN
 ---
-Idaho Legislature House and Senate board for the Millennium Fund 
+Idaho Legislature House and Senate board for the Millennium Fund

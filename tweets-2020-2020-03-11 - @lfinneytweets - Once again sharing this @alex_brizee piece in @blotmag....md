@@ -22,10 +22,11 @@ related:
   - idpol
 ---
 
-Once again sharing this @alex_brizee piece in @blotmag featuring transgender @uidaho students, as #idleg considers bills this session affecting trans individuals' participation in sports & ability to change their birth certificates. #idpol 
-https://t.co/ZdmHP2jlQ2
+Once again sharing this @alex_brizee piece in @blotmag featuring transgender @uidaho students, as #idleg considers bills this session affecting trans individuals' participation in sports & ability to change their birth certificates. #idpol
+<https://t.co/ZdmHP2jlQ2>
 
 ## Links
-- https://www.blotmagazine.com/2019/04/29/we-just-want-to-live/
+
+- <https://www.blotmagazine.com/2019/04/29/we-just-want-to-live/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1237857187021479940)

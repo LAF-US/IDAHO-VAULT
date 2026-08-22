@@ -1,4 +1,5 @@
 ---
+title: "Dispatch from archive research - @IdahoStateJ, 1969 As the..."
 date: 2021-07-27
 time: 00:50:06
 tweet_id: "1419822367979626496"

@@ -1,0 +1,66 @@
+name: Validate Agent Content
+
+on:
+  push:
+    branches:
+      - "agent/**"
+
+# No concurrency guard here, deliberately.
+#
+# This workflow fires on `push` and nothing else, and it scans only that push's
+# own before..after delta. Those two facts together rule out every option:
+#
+#   - Grouping by branch would let a later push cancel an earlier one, and the
+#     earlier push's files would then never be scanned by anything — the next
+#     push's `before` is the cancelled run's `after`. Coverage lost for good.
+#   - Grouping by SHA makes every run unique, so nothing is ever superseded and
+#     the block does nothing at all. Config that reads as a guard but is inert
+#     is worse than no config, because it invites being counted as one.
+#
+# So this check is genuinely unguardable as written. Making it safely
+# cancellable means making a replacement run validate cumulative branch state
+# rather than one push's delta; until someone does that, the honest thing is
+# an empty space and this note.
+
+jobs:
+  validate:
+    name: Validate markdown content on agent branches
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout vault
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install pyyaml
+
+      - name: Run content validation
+        shell: bash
+        run: |
+          set -eo pipefail  # a failed git diff must fail the step, not feed the validator empty stdin
+          # Diff the whole push (not just its last commit) against known-good SHAs from the
+          # push event -- github.event.before/github.sha, never attacker-shaped -- mirroring
+          # check-portable-paths.yml. --diff-filter=ACMR matches the portability checks:
+          # Deleted paths were kept in for validate_content.py's deletion guard, which has
+          # since been removed, so a deleted path now reaches only validate_directory (a
+          # no-op at the default `all` scope) and validate_file_size (a no-op on a missing
+          # file) before being skipped. Feeding them in bought nothing.
+          before="${{ github.event.before }}"
+          after="${{ github.sha }}"
+          if [[ "$before" == "0000000000000000000000000000000000000000" ]]; then
+            git -c core.quotePath=false ls-tree -r --name-only "$after" |
+              python3 .github/scripts/validate_content.py --paths-from-stdin
+          else
+            git -c core.quotePath=false diff --name-only --diff-filter=ACMR "$before" "$after" |
+              python3 .github/scripts/validate_content.py --paths-from-stdin
+          fi

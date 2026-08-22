@@ -1,4 +1,5 @@
 ---
+title: "I think it's a legitimate business disadvantage foisted..."
 date: 2024-07-15
 time: 15:47:20
 tweet_id: "1812876612301664258"

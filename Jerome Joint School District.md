@@ -4,4 +4,4 @@ related:
 - Jerome County
 authority: LOGAN
 ---
-Jerome, Jerome County 
+Jerome, Jerome County

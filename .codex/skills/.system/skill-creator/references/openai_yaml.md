@@ -7,7 +7,7 @@
 ```yaml
 interface:
   display_name: "Optional user-facing name"
-  sho***REMOVED***description: "Optional user-facing description"
+  short-description: "Optional user-facing description"
   icon_small: "./assets/small-400px.png"
   icon_large: "./assets/large-logo.svg"
   brand_color: "#3B82F6"
@@ -34,7 +34,7 @@ Top-level constraints:
 - For `interface.default_prompt`: generate a helpful, short (typically 1 sentence) example starting prompt based on the skill. It must explicitly mention the skill as `$skill-name` (e.g., "Use $skill-name-here to draft a concise weekly status update.").
 
 - `interface.display_name`: Human-facing title shown in UI skill lists and chips.
-- `interface.sho***REMOVED***description`: Human-facing short UI blurb (25–64 chars) for quick scanning.
+- `interface.short_description`: Human-facing short UI blurb (25–64 chars) for quick scanning.
 - `interface.icon_small`: Path to a small icon asset (relative to skill dir). Default to `./assets/` and place icons in the skill's `assets/` folder.
 - `interface.icon_large`: Path to a larger logo asset (relative to skill dir). Default to `./assets/` and place icons in the skill's `assets/` folder.
 - `interface.brand_color`: Hex color used for UI accents (e.g., badges).

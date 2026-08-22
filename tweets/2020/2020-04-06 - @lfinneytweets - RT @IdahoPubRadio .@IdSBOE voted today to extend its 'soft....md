@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio .@IdSBOE voted today to extend its 'soft..."
 date: 2020-04-06
 time: 22:11:36
 tweet_id: "1247285857985253376"
