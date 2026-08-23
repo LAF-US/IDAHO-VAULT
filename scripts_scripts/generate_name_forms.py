@@ -99,7 +99,9 @@ def main() -> None:
         rows.append(forms)
 
     if "--md" in sys.argv:
-        vault = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
+        # scripts_scripts/ sits one level below the vault root; abspath guards
+        # against a bare relative __file__ when invoked from another cwd.
+        vault = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
         out_path = os.path.join(vault, "!", "NAME-FORMS-TABLE-2026-04-17.md")
         frontmatter = (
             "---\n"
