@@ -14,9 +14,9 @@ related:
 
 # Corrected Diagnosis — Dependabot Rhythm `startup_failure`
 
-**Issued by:** GitHub Copilot  
-**Date:** 2026-06-22  
-**Related issues:** #595 (LAF-53), #633  
+**Issued by:** GitHub Copilot
+**Date:** 2026-06-22
+**Related issues:** #595 (LAF-53), #633
 **File repaired:** `.github/workflows/dependabot-rhythm.yml`
 
 ---
@@ -69,5 +69,5 @@ that previously triggered two noisy failed runs per push event.
 
 ---
 
-_Filed by GitHub Copilot · 2026-06-22_  
+_Filed by GitHub Copilot · 2026-06-22_
 _See also: Issue #595 (LAF-53), Issue #633_
