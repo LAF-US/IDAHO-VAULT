@@ -20,7 +20,9 @@ css3 = {
 }
 
 print('=== STRUCTURE ===')
-print(f'lines={len(lines)} has_crlf={b"\\r\\n" in raw} has_lf_only={b"\\n" in raw.replace(b"\\r\\n", b"")}')
+has_crlf = b'\r\n' in raw
+has_lf_only = b'\n' in raw.replace(b'\r\n', b'')
+print(f'lines={len(lines)} has_crlf={has_crlf} has_lf_only={has_lf_only}')
 print(f'blank_lines={sum(1 for line in lines if not line.strip())}')
 print(f'VEVENT_begin={sum(line == "BEGIN:VEVENT" for line in lines)} VEVENT_end={sum(line == "END:VEVENT" for line in lines)}')
 

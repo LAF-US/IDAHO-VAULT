@@ -24,9 +24,11 @@ for line in source.read_text(encoding='utf-8').splitlines():
 for index, line in enumerate(repaired):
     if line == 'UID:azer-vault_time@cron_clock':
         for following in range(index + 1, min(index + 12, len(repaired))):
-            if repaired[following] == 'CATEGORIES:hour':
+            if repaired[following].startswith('CATEGORIES:'):
                 repaired[following] = 'CATEGORIES:Minutes'
                 break
+        else:
+            raise AssertionError('Azer CATEGORIES property not found near UID')
 
 target.write_bytes(('\r\n'.join(repaired) + '\r\n').encode('utf-8'))
 print(f'Wrote {target} with {len(repaired)} content lines.')
