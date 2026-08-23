@@ -29,10 +29,13 @@
 // below and left asserted afterwards). Stated plainly so the next reader does
 // not inherit a baseline that stopped being true.
 //
-// The slides-templates block below is NOT inert, despite a review claiming the
-// directory does not exist: `git ls-files` tracks
-// .codex/skills/codex-primary-runtime/slides/templates/build_pro_deck_template.js,
-// which is exactly what that block parses as ESM.
+// The slides-templates block below is reachable ONLY because of the negation
+// patterns in the global ignores: `.codex/skills/**` is globally ignored, and
+// global ignores are not overridden by a later `files` entry — a previous
+// version of this header argued the block was "NOT inert" by pointing at the
+// tracked file (.codex/skills/codex-primary-runtime/slides/templates/
+// build_pro_deck_template.js), which answered the wrong question: the file
+// existed, but eslint never saw it. Existence is not reachability.
 
 const js = require("@eslint/js");
 const globals = require("globals");
@@ -45,7 +48,20 @@ module.exports = [
       ".venv/**",
       ".uv-cache/**",
       ".obsidian/plugins/**",
-      ".codex/skills/**",
+      // Ignore-all-except ladder, replacing a flat `.codex/skills/**`. Three
+      // reviewers (codereviewbot x2, coderabbit) caught that the `**` form
+      // swallowed the whole subtree, leaving the slides-templates ESM block
+      // below with nothing to match — and a plain `!` negation cannot cut
+      // through an ignored parent directory. The documented shape is this
+      // ladder: at each level ignore the siblings with `/*`, un-ignore the one
+      // directory to descend. Verified by running eslint on both sides:
+      // the template file is linted; slides/scripts stays ignored.
+      ".codex/skills/*",
+      "!.codex/skills/codex-primary-runtime",
+      ".codex/skills/codex-primary-runtime/*",
+      "!.codex/skills/codex-primary-runtime/slides",
+      ".codex/skills/codex-primary-runtime/slides/*",
+      "!.codex/skills/codex-primary-runtime/slides/templates",
       "eslint.config.js",
     ],
   },
