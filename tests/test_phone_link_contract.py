@@ -108,7 +108,7 @@ class PhoneLinkContractTest(unittest.TestCase):
     def test_python_intake_allows_only_its_script_vault_root(self) -> None:
         module = _load_module(
             "phone_link_intake_root_test_module",
-            ".github/scripts/phone_link_intake.py",
+            "scripts_scripts/phone_link_intake.py",
         )
         with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as workspace:
             root = Path(workspace)
@@ -124,7 +124,7 @@ class PhoneLinkContractTest(unittest.TestCase):
     def test_python_intake_accepts_matching_environment_vault_root(self) -> None:
         module = _load_module(
             "phone_link_intake_env_root_test_module",
-            ".github/scripts/phone_link_intake.py",
+            "scripts_scripts/phone_link_intake.py",
         )
         with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as workspace:
             vault = Path(workspace) / "vault"
@@ -136,7 +136,7 @@ class PhoneLinkContractTest(unittest.TestCase):
     def test_python_intake_rejects_source_outside_downloads_boundary(self) -> None:
         module = _load_module(
             "phone_link_intake_source_boundary_test_module",
-            ".github/scripts/phone_link_intake.py",
+            "scripts_scripts/phone_link_intake.py",
         )
         with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as workspace:
             root = Path(workspace)
@@ -153,7 +153,7 @@ class PhoneLinkContractTest(unittest.TestCase):
     def test_python_intake_rejects_destination_traversal(self) -> None:
         module = _load_module(
             "phone_link_intake_destination_boundary_test_module",
-            ".github/scripts/phone_link_intake.py",
+            "scripts_scripts/phone_link_intake.py",
         )
         with tempfile.TemporaryDirectory(ignore_cleanup_errors=True) as workspace:
             vault = Path(workspace) / "vault"

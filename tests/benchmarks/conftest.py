@@ -20,9 +20,10 @@ import pytest
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 SCRIPTS_DIR = REPO_ROOT / ".github" / "scripts"
+SCRIPTS_SCRIPTS_DIR = REPO_ROOT / "scripts_scripts"
 SRC_DIR = REPO_ROOT / "src"
 
-for _candidate in (SRC_DIR, SCRIPTS_DIR):
+for _candidate in (SRC_DIR, SCRIPTS_DIR, SCRIPTS_SCRIPTS_DIR):
     _entry = str(_candidate)
     if _entry not in sys.path:
         sys.path.insert(0, _entry)

@@ -21,7 +21,7 @@ def _load_module(module_name: str, relative_path: str):
 
 phone_link_intake = _load_module(
     "phone_link_intake_test_module",
-    ".github/scripts/phone_link_intake.py",
+    "scripts_scripts/phone_link_intake.py",
 )
 
 

@@ -33,7 +33,7 @@ jobs:
         run: |
           python -m coverage run \
             --branch \
-            --include='.github/scripts/phone_link_auto_sweep.py,.github/scripts/phone_link_intake.py' \
+            --include='.github/scripts/phone_link_auto_sweep.py,scripts_scripts/phone_link_intake.py' \
             -m unittest tests/test_phone_link_contract.py -v
           python -m coverage xml --skip-empty -o coverage.xml
 
