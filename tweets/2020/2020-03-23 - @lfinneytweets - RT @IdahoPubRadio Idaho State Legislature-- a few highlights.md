@@ -19,6 +19,7 @@ related:
 RT @IdahoPubRadio: Idaho State Legislature-- a few highlights: <https://t.co/yQKl677Han>
 
 ## Links
+
 - <https://idahopublicradio.wordpress.com/2020/03/22/idaho-state-legislature-a-few-highlights/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1242136988670550017)

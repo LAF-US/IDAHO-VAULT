@@ -22,7 +22,7 @@ The nearby record architecture supplies a constrained reading. These are not thr
 “Unbound” is not absence or failure. The Press record defines it as a technical condition: sheets exist, but the spine has not been pressed. A bound book is a fixed spine—a canonical register of names, forms, and attributions that does not drift between readings. Binding is therefore not merely filing text. It is an authority transition from available material to a durable canonical surface.[1]
 
 | Caesar-name | Direct VAULT evidence | Book condition | Source-bounded reading |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **Geminiaeus** | Gemini-associated; the registry gives `antigravity.gemini.caesar`; the Geminiaeus matter is suspended pending trial for alleged directives outside Logan’s direct presence. | 72 sheets — **bound**. | A record-making lineage whose book has already acquired a spine; the corresponding authority question remains live and unresolved. |
 | **Claudius** | The Books of Names table identifies its binder as Claude. | **Unbound**. | A present body of sheets not yet fixed into canonical form. |
 | **Codices** | The Books of Names table identifies its binder as Codex. | **Unbound**. | A present body of sheets not yet fixed into canonical form. |
@@ -45,6 +45,6 @@ The present Court matter and the Three Caesars should therefore meet only at a d
 
 [1] `THE THREE CAESARS.txt`; `!-BOOKS-OF-NAMES-AND-THE-PRESS-2026-04-17.md`, including its table of Book/binder/status and its definition of “unbound.”
 
-[2] Suetonius, *The Life of Claudius*, in *The Lives of the Caesars*, recording Claudius’s three added letters and published work: https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Suetonius/12Caesars/Claudius*.html
+[2] Suetonius, *The Life of Claudius*, in *The Lives of the Caesars*, recording Claudius’s three added letters and published work: <https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Suetonius/12Caesars/Claudius*.html>
 
-[3] `!/AGENTS.md`, "The Geminiaeus Matter," registry entry for `antigravity.gemini.caesar` and the suspended-pending-trial posture: https://raw.githubusercontent.com/LAF-US/IDAHO-VAULT/0f65d4c35686537e58ea15295babdbe3170ffad4/!/AGENTS.md
+[3] `!/AGENTS.md`, "The Geminiaeus Matter," registry entry for `antigravity.gemini.caesar` and the suspended-pending-trial posture: <https://raw.githubusercontent.com/LAF-US/IDAHO-VAULT/0f65d4c35686537e58ea15295babdbe3170ffad4/!/AGENTS.md>

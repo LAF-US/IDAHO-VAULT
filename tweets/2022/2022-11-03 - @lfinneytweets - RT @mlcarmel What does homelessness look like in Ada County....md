@@ -18,7 +18,7 @@ related:
 
 RT @mlcarmel: What does homelessness look like in Ada County?
 
-Increasingly, it looks elderly. 
+Increasingly, it looks elderly.
 
 Over half of CATCH's clients in 2022 are o…
 

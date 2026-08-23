@@ -68,8 +68,10 @@ def main() -> None:
             # Show just the aliases diff
             old_block = ALIASES_BLOCK_RE.search(content).group()
             new_block = expanded_aliases_block(d)
-            print(f"  BEFORE:\n{''.join('    ' + l for l in old_block.splitlines(keepends=True))}")
-            print(f"  AFTER:\n{''.join('    ' + l for l in new_block.splitlines(keepends=True))}")
+            old_lines = ''.join('    ' + line for line in old_block.splitlines(keepends=True))
+            new_lines = ''.join('    ' + line for line in new_block.splitlines(keepends=True))
+            print(f"  BEFORE:\n{old_lines}")
+            print(f"  AFTER:\n{new_lines}")
         else:
             f.write_text(new_content)
             print(f"  ✓ {f.name}")

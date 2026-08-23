@@ -18,6 +18,7 @@ related:
 You can still go outside to recreate, as long as everybody follows social distancing guidelines. (summary page) <https://t.co/Rdt7xh3QMW>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/ET_szLfU0AA8K8H.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

@@ -19,9 +19,11 @@ related:
 RT @theintercept: Surprise! It was a crypto exchange. <https://t.co/uJKh5gGF08> <https://t.co/nMQ1iCVa0D>
 
 ## Links
+
 - <https://interc.pt/3XI5gMw>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/Gnkk9NqWUAAsZvf.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1907887979844218971)

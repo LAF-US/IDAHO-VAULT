@@ -22,6 +22,7 @@ related:
 Senate GOP is heading upstairs for a caucus meeting. #idleg #idpol <https://t.co/hhLQJIkMoW>
 
 ## Links
+
 - <https://x.com/RuthBrownNews/status/1640829152126222336>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1640829736652881925)

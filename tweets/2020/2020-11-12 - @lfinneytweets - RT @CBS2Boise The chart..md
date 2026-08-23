@@ -19,6 +19,7 @@ related:
 RT @CBS2Boise: The chart. <https://t.co/hyYqJZZJrE>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/EmlXn_bVkAAkS6E.png)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1326692900915146752)

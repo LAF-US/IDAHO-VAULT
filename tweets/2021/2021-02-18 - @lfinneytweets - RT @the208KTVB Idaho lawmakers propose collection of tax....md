@@ -19,6 +19,7 @@ related:
 RT @the208KTVB: Idaho lawmakers propose collection of tax measures <https://t.co/8QGE170Hix>
 
 ## Links
+
 - <https://feeds.feedblitz.com/~/644564664/0/ktvb/the208~Idaho-lawmakers-propose-collection-of-tax-measures?utm_campaign=snd-autopilot>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1362233610875531265)

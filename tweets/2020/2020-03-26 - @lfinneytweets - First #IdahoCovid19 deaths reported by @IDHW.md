@@ -22,6 +22,7 @@ related:
 First #IdahoCovid19 deaths reported by @IDHW <https://t.co/YTBGusmIwO>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/EUD5_SaUwAAL3oW.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1243268369203089409)

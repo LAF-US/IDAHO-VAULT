@@ -23,6 +23,7 @@ related:
 The crowd headed inside, leaving a number of signs on the capitol steps. #idleg #idpol <https://t.co/dF36yKJ3cl>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/E7yvf9TVEAQlWcM.jpg)
 - ![alt text needed](https://pbs.twimg.com/media/E7yvggSVUAU7XeP.jpg)
 

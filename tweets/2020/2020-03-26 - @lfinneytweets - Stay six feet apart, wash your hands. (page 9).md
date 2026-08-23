@@ -18,6 +18,7 @@ related:
 Stay six feet apart, wash your hands. (page 9) <https://t.co/EeEdGAUeqt>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/ET_u6fXU4AERQQB.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

@@ -22,6 +22,7 @@ related:
 The hallway 15 minutes before House hearing on the private education tax credit bill, full of people signing up to testify. #idleg #idpol <https://t.co/jz5dIWcycQ>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/GjCXLGvakAA76HJ.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1887174463554490385)

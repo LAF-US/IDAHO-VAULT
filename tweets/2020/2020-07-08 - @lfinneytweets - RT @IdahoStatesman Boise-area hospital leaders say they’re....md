@@ -19,6 +19,7 @@ related:
 RT @IdahoStatesman: Boise-area hospital leaders say they’re seeing significant increases in hospitalizations. <https://t.co/5zc7rQtKSm>
 
 ## Links
+
 - <https://trib.al/pGcM3ZC>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1280663852128993280)

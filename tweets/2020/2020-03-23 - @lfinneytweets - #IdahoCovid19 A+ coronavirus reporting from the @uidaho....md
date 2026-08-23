@@ -23,6 +23,7 @@ related:
 \#IdahoCovid19 A+ coronavirus reporting from the @uidaho @uiargonaut team. Way to go, Vandals ✌️ <https://t.co/2D234uJi4Z>
 
 ## Links
+
 - <https://x.com/uiargonaut/status/1241931023195111426>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1241958531328180225)

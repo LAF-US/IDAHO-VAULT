@@ -44,7 +44,7 @@ This note records source trails and working observations. It is not doctrine.
 ## External Sources Used
 
 1. Penguin Random House, "His Dark Materials: The Subtle Knife (Book 2)".
-   - URL: https://www.penguinrandomhouse.com/books/136455/his-dark-materials-the-subtle-knife-book-2-by-philip-pullman/
+   - URL: <https://www.penguinrandomhouse.com/books/136455/his-dark-materials-the-subtle-knife-book-2-by-philip-pullman/>
    - Used for bibliographic and publisher context: Pullman's second *His Dark
      Materials* book, US publication details, author context, and publisher
      description of Lyra, Will, Dark Matter, Specters, angels, and the knife as
@@ -52,37 +52,37 @@ This note records source trails and working observations. It is not doctrine.
 
 2. Penguin Random House, "His Dark Materials: The Subtle Knife (Book 2)
    Reader's Guide".
-   - URL: https://www.penguinrandomhouse.com/books/136455/his-dark-materials-the-subtle-knife-book-2-by-philip-pullman/9780375823466/readers-guide/
+   - URL: <https://www.penguinrandomhouse.com/books/136455/his-dark-materials-the-subtle-knife-book-2-by-philip-pullman/9780375823466/readers-guide/>
    - Used for series placement: Book Two of Pullman's *His Dark Materials*
      trilogy, following Lyra from the first book's alternate universe framing.
 
 3. Encyclopaedia Britannica, "His Dark Materials".
-   - URL: https://www.britannica.com/topic/His-Dark-Materials-book-trilogy-by-Pullman
+   - URL: <https://www.britannica.com/topic/His-Dark-Materials-book-trilogy-by-Pullman>
    - Used for concise external grounding: in *The Subtle Knife*, Lyra meets
      Will Parry from our world; during the second novel, Will acquires a knife
      able to cut windows between worlds.
 
 4. Radio Times, Huw Fullerton, "How His Dark Materials created the series'
    Subtle Knife portals".
-   - URL: https://www.radiotimes.com/tv/fantasy/his-dark-materials-subtle-knife/
+   - URL: <https://www.radiotimes.com/tv/fantasy/his-dark-materials-subtle-knife/>
    - Used for adaptation-facing articulation of the knife's dual function: one
      power is cutting through material, while the more significant narrative
      power is opening passages between parallel worlds.
 
 5. Encyclopaedia Britannica, "His Dark Materials".
-   - URL: https://www.britannica.com/topic/His-Dark-Materials-book-trilogy-by-Pullman
+   - URL: <https://www.britannica.com/topic/His-Dark-Materials-book-trilogy-by-Pullman>
    - Used for the canon check that Will's knife cuts windows between worlds and
      that keeping those windows available would let Dust flow out of the
      universe, requiring the windows to be sealed.
 
 6. SparkNotes, "His Dark Materials: The Amber Spyglass: Chapters 37 & 38".
-   - URL: https://www.sparknotes.com/lit/hisdarkmaterials/section12/
+   - URL: <https://www.sparknotes.com/lit/hisdarkmaterials/section12/>
    - Used for the canon check that late-trilogy resolution requires teaching
      Xaphania how to close windows made by the subtle knife; only the window for
      the dead is preserved.
 
 7. His Dark Materials Wiki, "Window".
-   - URL: https://hisdarkmaterials.fandom.com/wiki/Window
+   - URL: <https://hisdarkmaterials.fandom.com/wiki/Window>
    - Used as a secondary fan-canon index for the mechanism distinction: open
      windows leak Dust through minute gaps into the void, while each knife-made
      window is also associated with the creation of a Spectre.

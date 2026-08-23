@@ -17,6 +17,7 @@ related:
 Who decided to put me on TV <https://t.co/lMbT2vkdNH>
 
 ## Links
+
 - <https://x.com/IdahoReports/status/1626741661433839621>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1626752505689542657)

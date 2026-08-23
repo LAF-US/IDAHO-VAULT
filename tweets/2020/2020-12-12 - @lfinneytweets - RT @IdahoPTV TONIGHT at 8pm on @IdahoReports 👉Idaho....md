@@ -17,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoPTV: TONIGHT at 8pm on @IdahoReports: 
+RT @IdahoPTV: TONIGHT at 8pm on @IdahoReports:
 
 👉Idaho Immunization Program manager Susan Leeds on plans for COVID-19 vaccine roll-out.…
 

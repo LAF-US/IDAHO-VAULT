@@ -16,11 +16,12 @@ related:
   - lfinneytweets
 ---
 
-RT @jacobhfries: and ICYMI, Steve Smith, a previous SR editor, has a message for the current one: 
+RT @jacobhfries: and ICYMI, Steve Smith, a previous SR editor, has a message for the current one:
 
 <https://t.co/Og5STNsi2r>
 
 ## Links
+
 - <https://www.inlander.com/spokane/rob-curleys-ethical-lapse-as-the-spokesman-reviews-editor-is-too-egregious-to-ignore/Content?oid=21013369>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1353422848803524608)

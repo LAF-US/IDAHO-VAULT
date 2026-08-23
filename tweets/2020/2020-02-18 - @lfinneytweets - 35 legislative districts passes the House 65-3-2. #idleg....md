@@ -20,7 +20,7 @@ related:
   - idpol
 ---
 
-35 legislative districts passes the House 65-3-2. #idleg #idpol 
+35 legislative districts passes the House 65-3-2. #idleg #idpol
 
 Those voting against: Giddings, Scott, McCrostie.
 

@@ -25,6 +25,7 @@ related:
 RT @kridler: Idaho lieutenant governor leaves Statehouse to return home (from @AP) #idpol #idleg  <https://t.co/WXSnVaFpK7>
 
 ## Links
+
 - <https://apnews.com/3492079126123f19368d7db65e990337>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1240697415557992448)

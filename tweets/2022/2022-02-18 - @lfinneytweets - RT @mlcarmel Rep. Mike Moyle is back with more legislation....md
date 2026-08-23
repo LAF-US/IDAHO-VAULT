@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @mlcarmel: Rep. Mike Moyle is back with more legislation to slow growth in local government budgets to bring property tax relief. 
+RT @mlcarmel: Rep. Mike Moyle is back with more legislation to slow growth in local government budgets to bring property tax relief.
 
 It's…
 

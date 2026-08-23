@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @meakoopa: In 1951, Marilyn Monroe wore a low-cut red dress to a party. 
+RT @meakoopa: In 1951, Marilyn Monroe wore a low-cut red dress to a party.
 
 The next morning, a columnist complained that Marilyn Monroe w…
 

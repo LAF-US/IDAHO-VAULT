@@ -18,10 +18,11 @@ related:
   - lfinneytweets
 ---
 
-@MissJeanine_77 @JaronCrane That's not how Idaho works! 
+@MissJeanine_77 @JaronCrane That's not how Idaho works!
 <https://t.co/km9SNlK4TP>
 
 ## Links
+
 - <https://www.spokesman.com/stories/2014/mar/16/idahos-substitute-law-unique/>
 
 *In reply to [@MissJeanine_77](https://twitter.com/MissJeanine_77)*

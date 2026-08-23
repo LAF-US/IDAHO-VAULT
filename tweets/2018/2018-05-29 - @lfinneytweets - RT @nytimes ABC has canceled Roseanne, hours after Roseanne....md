@@ -19,6 +19,7 @@ related:
 RT @nytimes: ABC has canceled "Roseanne," hours after Roseanne Barr sent a racist tweet about Valerie Jarrett <https://t.co/zcafYD87lN>
 
 ## Links
+
 - <https://nyti.ms/2IXyNgA>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1001574951764217856)

@@ -26,7 +26,7 @@ related:
 ## The distinction
 
 | | **Lossless** | **Lossy** |
-|---|---|---|
+| --- | --- | --- |
 | Removes | **redundancy** (statistical / predictable structure) | **information** (judged less important) |
 | Reversible? | **Yes** — perfect reconstruction | **No** — the original cannot be recovered |
 | Governed by | Shannon's **source coding theorem** | Shannon's **rate–distortion theory** (1959) |

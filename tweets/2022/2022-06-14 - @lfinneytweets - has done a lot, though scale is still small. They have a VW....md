@@ -21,6 +21,7 @@ related:
 @IDJoe4Congress @UIdaho has done a lot, though scale is still small. They have a VW Bug that runs on it. When I was a student there was talk of fueling other university vehicles. Students in the Clean Energy Club process cooking oil from campus dining. @LearnBiodiesel <https://t.co/tg5TJCfYpY>
 
 ## Links
+
 - <https://biodieseleducation.org/>
 
 *In reply to [@IDJoe4Idaho](https://twitter.com/IDJoe4Idaho)*

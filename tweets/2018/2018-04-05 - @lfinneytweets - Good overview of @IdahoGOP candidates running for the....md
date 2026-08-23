@@ -20,6 +20,7 @@ related:
 Good overview of @IdahoGOP candidates running for the congressional seat being vacated by @Raul_Labrador <https://t.co/lPFlFNTQPu>
 
 ## Links
+
 - <https://x.com/IdahoStatesman/status/981690382286077952>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/981698536893956096)

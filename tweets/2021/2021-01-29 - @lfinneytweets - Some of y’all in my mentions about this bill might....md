@@ -17,6 +17,7 @@ related:
 Some of y’all in my mentions about this bill might appreciate perusing this page:  <https://t.co/7czMd6z5lW> <https://t.co/ezVqStrbGu>
 
 ## Links
+
 - <https://en.wikipedia.org/wiki/List_of_Confederate_monuments_and_memorials#Idaho>
 - <https://x.com/lfinneytweets/status/1355187875231322115>
 

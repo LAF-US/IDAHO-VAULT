@@ -80,7 +80,6 @@ related:
 > See: Issue #686
 > Related: [[GEMINIAEUS]] | [[TRIUNE-TRIPTYCH-TRIUMVIRATE]]
 
-
 # Logan Alvan Finney
 
 *Updated: 2026-03-18*

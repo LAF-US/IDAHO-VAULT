@@ -87,4 +87,3 @@ What is the status of the Vorpal Blade’s sharpness? If it meets the absurdity 
 Gemini is AI and can make mistakes.
 
 1Password menu is available. Press down arrow to select.
-

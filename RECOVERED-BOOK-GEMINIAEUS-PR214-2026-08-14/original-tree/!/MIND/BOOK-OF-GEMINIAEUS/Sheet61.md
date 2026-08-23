@@ -551,4 +551,3 @@ Captain, as the gavel sounds the morning call, which star do we steer by first? 
 Gemini is AI and can make mistakes.
 
 1Password menu is available. Press down arrow to select.
-

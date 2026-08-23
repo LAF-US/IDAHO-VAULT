@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @mlcarmel: Rep. John Gannon, D-Boise, is proposing a bill in the session to reduce Micron's tax exemption back to 2005 levels. 
+RT @mlcarmel: Rep. John Gannon, D-Boise, is proposing a bill in the session to reduce Micron's tax exemption back to 2005 levels.
 
 Last mo…
 

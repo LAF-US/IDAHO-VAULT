@@ -20,9 +20,11 @@ related:
 \#idpol <https://t.co/nbAQQcU4sB> <https://t.co/gWHkt5ERg3>
 
 ## Links
+
 - <https://x.com/clarkcorbin/status/1220016769995141120>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/EO5ffHxVAAARAzv.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1220017548730617856)

@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @KenworthyPAC: Per the State of Idaho’s plan, we could re-open in June and we need to hear from you. 
+RT @KenworthyPAC: Per the State of Idaho’s plan, we could re-open in June and we need to hear from you.
 
 When we are able, are you a “yes,…
 

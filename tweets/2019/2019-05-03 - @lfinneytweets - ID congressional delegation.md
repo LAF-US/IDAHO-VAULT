@@ -17,6 +17,7 @@ related:
 ID congressional delegation <https://t.co/j3C3wzSq3C>
 
 ## Links
+
 - <https://x.com/CongMikeSimpson/status/1124334059134394368>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1124371173247148032)

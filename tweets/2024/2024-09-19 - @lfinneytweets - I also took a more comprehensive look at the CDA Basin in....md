@@ -18,10 +18,11 @@ related:
   - lfinneytweets
 ---
 
-@LocksDonald @IdahoReports I also took a more comprehensive look at the CDA Basin in this 2022 story. 
+@LocksDonald @IdahoReports I also took a more comprehensive look at the CDA Basin in this 2022 story.
 <https://t.co/VnCwBodAhc>
 
 ## Links
+
 - <https://youtu.be/KKe5dXBFluA>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @danielwinlander: Remember that controversial Spokesman-Review editorial calling to "restart the economy?" 
+RT @danielwinlander: Remember that controversial Spokesman-Review editorial calling to "restart the economy?"
 
 Bob Lutz, Spokane Regional…
 

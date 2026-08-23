@@ -43,11 +43,11 @@ related:
 ## Source
 
 | Field | Value |
-|---|---|
+| --- | --- |
 | **Author** | bramblesand ("A Patch of Briars") |
 | **Platform** | Tumblr |
 | **Posted** | 2021-01-24 |
-| **URL** | https://www.tumblr.com/bramblesand/641160359189839872 |
+| **URL** | <https://www.tumblr.com/bramblesand/641160359189839872> |
 | **Title** | *People, especially games, get eldritch madness wrong a lot and it's really such a shame.* |
 | **Tags** | #cosmic horror |
 

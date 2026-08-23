@@ -19,6 +19,7 @@ related:
 RT @ImErinRobinson: Photos courtesy: U.S. Army Photo by Sgt. Kaden D. Pitt <https://t.co/H90RrRM2J4>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/E-txHqGVQAMAYqS.jpg)
 - ![alt text needed](https://pbs.twimg.com/media/E-txHrDVQAA6LAn.jpg)
 - ![alt text needed](https://pbs.twimg.com/media/E-txHsHVUAISjdM.jpg)

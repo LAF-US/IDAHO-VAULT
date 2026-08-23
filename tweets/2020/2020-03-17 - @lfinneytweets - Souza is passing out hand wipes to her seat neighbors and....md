@@ -21,6 +21,7 @@ related:
 Souza is passing out hand wipes to her seat neighbors and they're wiping down their desks. #idleg <https://t.co/d9QnrmLQpI>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/ETVqu5FXkAY8iCJ.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

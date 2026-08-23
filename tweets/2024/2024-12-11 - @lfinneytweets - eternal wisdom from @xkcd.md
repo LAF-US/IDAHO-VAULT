@@ -19,6 +19,7 @@ related:
 eternal wisdom from @xkcd <https://t.co/IQjaX6UQpP>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/Gei9c3BaEAIeefg.png)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1866950500849160351)

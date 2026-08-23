@@ -28,7 +28,7 @@ Cognitive Load: Does the tool make the job easier, or do you spend more time "fi
 
 Scalability: Is the tool appropriate for the volume of the job? A spreadsheet is a great tool for a budget, but a poor tool for a global supply chain database.
 
-2. Common Misalignments
+1. Common Misalignments
 
 The "Golden Hammer" Syndrome: When you are comfortable with one tool (like Excel or a specific AI), you try to apply it to every problem, even when it’s inefficient.
 
@@ -36,7 +36,7 @@ Over-Engineering: Using a complex, multi-agent AI framework for a task that coul
 
 Legacy Drag: Continuing to use a tool because "that's how we've always done it," despite better, more integrated options being available.
 
-3. Tool Selection Matrix
+1. Tool Selection Matrix
 
 Job Type Ideal Tool Characteristics Examples
 
@@ -48,7 +48,7 @@ Management/Coordination High visibility, shared access, automated notifications.
 
 Analysis/Synthesis Data processing power, visualization, logic-heavy. Python/R, SQL, BI Tools.
 
-4. Maximizing the "Handshake"
+1. Maximizing the "Handshake"
 
 Alignment isn't just about the software; it's about the input/output handshake.
 
@@ -63,4 +63,3 @@ Are you looking to align a specific set of tools for a project you're working on
 Gemini is AI and can make mistakes.
 
 1Password menu is available. Press down arrow to select.
-

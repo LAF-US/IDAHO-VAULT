@@ -22,6 +22,7 @@ related:
 State Rep. Chad Christensen (R-Idaho Falls) #idleg #idpol <https://t.co/vRAGe1YW1x>
 
 ## Links
+
 - <https://x.com/chadforidaho/status/1113914014424113152>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1124094952127049728)

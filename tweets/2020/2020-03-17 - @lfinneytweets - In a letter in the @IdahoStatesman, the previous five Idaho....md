@@ -28,6 +28,7 @@ In a letter in the @IdahoStatesman, the previous five Idaho Attorneys General (1
 <https://t.co/pJioS26JCU>
 
 ## Links
+
 - <https://www.idahostatesman.com/opinion/readers-opinion/article241267071.html>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1239973747613782016)

@@ -19,6 +19,7 @@ related:
 RT @lyndsie_kiebert: To Brent Lockwood, cemeteries are happy places. <https://t.co/E049S0E17A>
 
 ## Links
+
 - <http://sandpointreader.com/hope-cemeterys-living-legacy/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/999734037961830400)

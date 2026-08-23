@@ -23,6 +23,7 @@ related:
 RT @IdahoReports: May 21, 2021, Weekly #IdahoCOVID19 Update | @IdahoPTV <https://t.co/qNws2L9BLH>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/amplify_video_thumb/1395892437181075456/img/ifzmiOMKWRhTY-Ro.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1395900555327803394)

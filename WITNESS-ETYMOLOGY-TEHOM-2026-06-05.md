@@ -34,7 +34,7 @@ H1949 *hûm* — to make a noise, be disturbed).
 ## Northwest Semitic Cognates
 
 | Language | Word | Meaning |
-|---|---|---|
+| --- | --- | --- |
 | Hebrew | *tehom* (תְּהוֹם) | the deep, abyss, primordial ocean |
 | Ugaritic | *thm* | the deep (cosmic sea in Baal Cycle) |
 | Akkadian | *tiāmtum* / *tâmtum* | sea, primordial ocean |
@@ -168,12 +168,12 @@ precondition. The water before the word.
 
 ## Sources
 
-- Strong's H8415 (tehom): https://biblehub.com/hebrew/8415.htm
-- Wiktionary — Hebrew: https://en.wiktionary.org/wiki/תְּהוֹם
-- Wikipedia — [[Tiamat]]: https://en.wikipedia.org/wiki/Tiamat
-- Wikipedia — [[Chaoskampf]]: https://en.wikipedia.org/wiki/Chaoskampf
+- Strong's H8415 (tehom): <https://biblehub.com/hebrew/8415.htm>
+- Wiktionary — Hebrew: <https://en.wiktionary.org/wiki/תְּהוֹם>
+- Wikipedia — [[Tiamat]]: <https://en.wikipedia.org/wiki/Tiamat>
+- Wikipedia — [[Chaoskampf]]: <https://en.wikipedia.org/wiki/Chaoskampf>
 - Baal Cycle (Ugaritic) — Biblexika:
-  https://www.biblexika.com/sacred-texts/baal-cycle
+  <https://www.biblexika.com/sacred-texts/baal-cycle>
 - Gunkel, Hermann. *Schöpfung und Chaos in Urzeit und Endzeit* (1895)
 - [[WITNESS-ETYMOLOGY-OF-THE-DEEP-2026-06-04]]
 - [[WITNESS-ETYMOLOGY-ABYSS-2026-06-04]]

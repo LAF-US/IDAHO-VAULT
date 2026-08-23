@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @pfannyyy: Rural Lemhi County is now at 'critical' coronavirus risk level. 
+RT @pfannyyy: Rural Lemhi County is now at 'critical' coronavirus risk level.
 
 Its hospital, like others nearby, is becoming more and more…
 

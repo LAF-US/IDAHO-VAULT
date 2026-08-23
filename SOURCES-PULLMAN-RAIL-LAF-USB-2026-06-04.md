@@ -68,26 +68,26 @@ This is a source/check note, not doctrine.
 ## External Sources Used
 
 1. National Park Service, "A Brief Overview of the Pullman Story".
-   - URL: https://www.nps.gov/pull/learn/historyculture/a-brief-overview-of-the-pullman-story.htm
+   - URL: <https://www.nps.gov/pull/learn/historyculture/a-brief-overview-of-the-pullman-story.htm>
    - Used for the Pullman business model: sleeping/hotel/parlor/dining cars
      were costly for railroads to buy outright, so Pullman leased cars and
      provided employees to serve passengers.
 
 2. Encyclopaedia Britannica, "Pullman sleeper".
-   - URL: https://www.britannica.com/technology/Pullman-sleeper
+   - URL: <https://www.britannica.com/technology/Pullman-sleeper>
    - Used for concise grounding: Pullman sleepers were luxury railroad coaches
      for overnight travel; Pullman Palace Car Company manufactured and leased
      them.
 
 3. National Park Service, "Pullman and the Advent of the Dining Car".
-   - URL: https://www.nps.gov/articles/000/pullman-and-the-advent-of-the-dining-car.htm
+   - URL: <https://www.nps.gov/articles/000/pullman-and-the-advent-of-the-dining-car.htm>
    - Used for the multi-car service model: Pullman cars provided sleeping,
      hotel, dining, and passage-between-car innovations; the Sessions Vestibule
      is especially relevant as a safe connector between cars.
 
 4. U.S. Department of Justice Antitrust Division, "Final Judgment: U.S. v. The
    Pullman Company, et al."
-   - URL: https://www.justice.gov/atr/page/file/1123246/dl
+   - URL: <https://www.justice.gov/atr/page/file/1123246/dl>
    - Used for the operational distinction between Pullman, railroads, cars,
      railroad lines, and through sleeping-car lines. Pullman serviced or
      furnished sleeping cars on railroad lines under contracts and arrangements;
@@ -108,7 +108,7 @@ Pullman is useful for LAF-USB only if the analogy is kept precise:
 ## Vault Mapping
 
 | Pullman rail concept | LAF-USB / Universal Sync Bus analogue |
-|---|---|
+| --- | --- |
 | Railroad line | Carrier lane: rclone, rsync, gcloud, Git/GitHub, Git LFS |
 | Pullman car | External object packet or governed payload container |
 | Sleeping/dining/parlor car class | Object class / topology role / sensitivity class |

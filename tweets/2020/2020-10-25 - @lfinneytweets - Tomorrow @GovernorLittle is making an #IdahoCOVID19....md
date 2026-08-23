@@ -25,6 +25,7 @@ related:
 Tomorrow @GovernorLittle is making an #IdahoCOVID19 announcement. You can watch live on @IdahoPTV or stream it online, 3pm Mountain / 2pm Pacific. #idpol <https://t.co/gk1T2jfRrf>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/ElMmOS_UcAAKDll.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1320441144535252992)

@@ -17,6 +17,7 @@ related:
 OK, who built a Joe Biden animatronic and left the remote in Bernie's office? <https://t.co/HblDDmj6eo>
 
 ## Links
+
 - <https://x.com/CBSNews/status/1349875429923028992>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1349877324238385154)

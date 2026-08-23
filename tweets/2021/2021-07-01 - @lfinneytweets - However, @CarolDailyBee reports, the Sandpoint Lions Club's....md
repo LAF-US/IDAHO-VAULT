@@ -17,10 +17,11 @@ related:
   - lfinneytweets
 ---
 
-However, @CarolDailyBee reports, the Sandpoint Lions Club's annual fireworks show is still happening over the lake. 
+However, @CarolDailyBee reports, the Sandpoint Lions Club's annual fireworks show is still happening over the lake.
 <https://t.co/UBA5R8EvYj>
 
 ## Links
+
 - <https://bonnercountydailybee.com/news/2021/jun/30/piggy-bank-donation-adds-fireworks-show/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

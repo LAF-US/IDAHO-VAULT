@@ -20,9 +20,11 @@ related:
 IDGOP 2024 convention haul #idpol <https://t.co/bHBr7FH0Gm> <https://t.co/kjLTrXyFBo>
 
 ## Links
+
 - <https://x.com/ChristaHazel/status/1801725845771587685>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/GQPSxKkbEAAhtAi.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1802516020458086560)

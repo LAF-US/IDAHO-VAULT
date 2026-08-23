@@ -7,7 +7,7 @@ These two files use GitHub’s native **Update a pull request branch** endpoint.
 ## Files
 
 | File | Purpose |
-|---|---|
+| --- | --- |
 | `update-open-pr-branches-from-main.sh` | Local `gh api` loop. Default: read-only dry run. |
 | `.github/workflows/update-open-pr-branches-from-main.yml` | Manually dispatched, read-only GitHub Actions audit. |
 
@@ -47,7 +47,7 @@ The workflow is intentionally **manual-dispatch only and read-only**. It uses no
 ## Operational Guarantees
 
 | Behavior | Result |
-|---|---|
+| --- | --- |
 | Default invocation | Read-only classification; no update requests. |
 | Clean, behind PR in apply mode | GitHub accepts a normal base-into-head update. |
 | Conflict or changed head | GitHub rejects/holds the update; no force-push or rebase occurs. |

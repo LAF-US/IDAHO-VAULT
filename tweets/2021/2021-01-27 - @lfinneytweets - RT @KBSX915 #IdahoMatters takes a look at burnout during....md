@@ -25,6 +25,7 @@ RT @KBSX915: #IdahoMatters takes a look at burnout during the age of coronavirus
 <https://t.co/ThPDry49dZ>
 
 ## Links
+
 - <http://tinyurl.com/y2ez9dok>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1354271128743677957)

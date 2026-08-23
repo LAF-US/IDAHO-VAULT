@@ -15,10 +15,11 @@ related:
   - lfinneytweets
 ---
 
-CORRECTION: previously didn't believe they had authority 
+CORRECTION: previously didn't believe they had authority
 <https://t.co/hGqrGTDf3d>
 
 ## Links
+
 - <https://x.com/racheld_cohen/status/1286338680760815616>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

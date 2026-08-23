@@ -20,6 +20,7 @@ related:
 Sen. Kelly Anthon is sworn in as Senate President Pro Tempore of the 68th Idaho Legislature. #idleg <https://t.co/TzsHl2ldNz>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/GeC6bXba0AIR8-l.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1864695228437024887)

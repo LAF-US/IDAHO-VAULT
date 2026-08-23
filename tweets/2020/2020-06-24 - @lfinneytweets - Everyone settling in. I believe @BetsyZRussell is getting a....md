@@ -20,6 +20,7 @@ related:
 Everyone settling in. I believe @BetsyZRussell is getting a head count here. <https://t.co/UxGmIWSGs7>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/EbQD43VWoAE6thI.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

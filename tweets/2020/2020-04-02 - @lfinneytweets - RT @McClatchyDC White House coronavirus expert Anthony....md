@@ -19,6 +19,7 @@ related:
 RT @McClatchyDC: White House coronavirus expert Anthony Fauci now has bodyguards. Here’s why <https://t.co/WbSwdpUYPT>
 
 ## Links
+
 - <https://trib.al/4TPvNs5>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1245717189505585152)

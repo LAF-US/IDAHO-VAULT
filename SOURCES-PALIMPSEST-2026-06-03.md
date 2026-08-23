@@ -44,7 +44,7 @@ This is not doctrine.
 ## External Sources Used
 
 1. Encyclopaedia Britannica, "palimpsest".
-   - URL: https://www.britannica.com/topic/palimpsest-manuscript
+   - URL: <https://www.britannica.com/topic/palimpsest-manuscript>
    - Used for the concise definition: a roll or codex carrying an erased or
      partly erased earlier text beneath an apparent later text; older text can
      sometimes be recovered by laboratory methods such as ultraviolet light.
@@ -52,7 +52,7 @@ This is not doctrine.
      religious redirection of manuscript material.
 
 2. The Archimedes Palimpsest, "About the Archimedes Palimpsest".
-   - URL: https://archimedespalimpsest.org/about/
+   - URL: <https://archimedespalimpsest.org/about/>
    - Used for the concrete case study: a Byzantine prayer book made from
      parchment leaves of earlier books, including Archimedes material; the old
      books were taken apart, scraped, rearranged, and overwritten.
@@ -61,7 +61,7 @@ This is not doctrine.
 
 3. The Archimedes Palimpsest, "Multi-Spectral Imaging of the Archimedes
    Palimpsest".
-   - URL: https://www.archimedespalimpsest.org/about/imaging/
+   - URL: <https://www.archimedespalimpsest.org/about/imaging/>
    - Used for recovery discipline: multispectral imaging records the same
      surface at different wavelengths and processes those image stacks to
      enhance the undertext.
@@ -70,14 +70,14 @@ This is not doctrine.
      for scholars to interpret.
 
 4. Hill Museum & Manuscript Library, "HMML Palimpsest Project".
-   - URL: https://hmml.org/research/palimpsest/
+   - URL: <https://hmml.org/research/palimpsest/>
    - Used for modern non-destructive recovery methods: narrowband multispectral
      imaging, infrared/ultraviolet ranges, and x-ray fluorescence imaging to
      detect elemental traces in inks.
 
 5. Centre for the Study of Manuscript Cultures, University of Hamburg,
    "Palimpsests and Related Phenomena across Languages and Cultures" / SMC 42.
-   - URL: https://www.csmc.uni-hamburg.de/publications/smc/smc42.html
+   - URL: <https://www.csmc.uni-hamburg.de/publications/smc/smc42.html>
    - Used for the broader cross-cultural caution: palimpsesting is not only a
      European parchment phenomenon. Related reuse, erasure, overwriting, and
      recovery practices exist across languages, materials, and manuscript

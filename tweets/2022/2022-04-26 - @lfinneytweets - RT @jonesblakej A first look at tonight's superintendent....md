@@ -19,10 +19,11 @@ related:
   - idedu
 ---
 
-RT @jonesblakej: A first look at tonight's superintendent debate: #idedu 
+RT @jonesblakej: A first look at tonight's superintendent debate: #idedu
 <https://t.co/RnBy4cZJmx>
 
 ## Links
+
 - <https://www.idahoednews.org/news/superintendent-candidates-verbally-dueled-for-gop-nomination/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1518827264816783361)

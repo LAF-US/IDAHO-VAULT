@@ -19,10 +19,11 @@ related:
   - idpol
 ---
 
-If you're curious about the history of the "crimes against nature" laws that made this situation possible, dig into this incredible piece from @RadioDawson. #idpol 
+If you're curious about the history of the "crimes against nature" laws that made this situation possible, dig into this incredible piece from @RadioDawson. #idpol
 👉 <https://t.co/cOFzTSCyeR> 👈 <https://t.co/CPfLwSrg10>
 
 ## Links
+
 - <https://www.boisestatepublicradio.org/post/idaho-sodomy-suit-revives-specters-law-s-dark-history>
 - <https://x.com/DailyInterLake/status/1377406327127896068>
 

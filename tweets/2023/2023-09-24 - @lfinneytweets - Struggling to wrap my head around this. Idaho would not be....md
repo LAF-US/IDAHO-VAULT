@@ -17,6 +17,7 @@ related:
 Struggling to wrap my head around this. Idaho would not be the place it is today, and won't be, without him. <https://t.co/EdrKty7scH>
 
 ## Links
+
 - <https://x.com/alex_brizee/status/1705741439718822384>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1705803558837444933)

@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-coeur = heart 
+coeur = heart
 alene = awl
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

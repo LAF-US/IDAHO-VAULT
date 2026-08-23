@@ -20,6 +20,7 @@ related:
 <https://t.co/A793SYWYAs>
 
 ## Links
+
 - <https://www.uiargonaut.com/2019/05/02/twenty-years-of-school-shootings/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1157783673778757632)

@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-Others aren’t so sure how the economic situation will shake out. 
+Others aren’t so sure how the economic situation will shake out.
 Sen. Vick earlier: “It’s like living in a movie...it is the closest I’ve ever seen Bose to being a ghost town. Two cars driving down the road, in the mile I walked home.”
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

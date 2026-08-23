@@ -18,6 +18,7 @@ The Melba City Council voted unanimously to impose an emergency moratorium on ne
 <https://t.co/BUazUXbUBx>
 
 ## Links
+
 - <https://www.kivitv.com/news/state-of-208/small-boise-area-town-oks-emergency-moratorium-to-halt-growth-this-is-why>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1414625439784394752)

@@ -19,7 +19,7 @@ This is the 8th consecutive daily sweep report in this series (LAF-52 through LA
 ## 5W Summary
 
 | | |
-|---|---|
+| --- | --- |
 | **Who** | No human-caused breakage. One correction to a claim made by this session's own research pass (below). |
 | **What** | 3 distinct failure patterns, 15 failed runs: Codacy Security Scan (13, known day-5 credential gap), Secret Pattern Policy (1, real hit — see correction), `check-portable-paths.yml` (1, new, isolated to another agent's active branch). |
 | **When** | 2026-07-10T12:06:43Z – 2026-07-11T12:06:43Z |

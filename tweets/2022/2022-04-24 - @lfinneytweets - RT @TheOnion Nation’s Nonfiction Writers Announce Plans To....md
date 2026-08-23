@@ -19,6 +19,7 @@ related:
 RT @TheOnion: Nation’s Nonfiction Writers Announce Plans To Keep Writing Down Things That Happened <https://t.co/iB9mWYWr4N> <https://t.co/3z2…>
 
 ## Links
+
 - <https://bit.ly/3K4tKWo>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1518020330077384704)

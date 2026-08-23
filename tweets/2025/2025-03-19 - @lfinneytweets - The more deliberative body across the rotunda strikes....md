@@ -20,6 +20,7 @@ related:
 The more deliberative body across the rotunda strikes again! #idleg <https://t.co/Dflwu98tOl>
 
 ## Links
+
 - <https://x.com/IdahoReports/status/1902148060047929514>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1902150703206035952)

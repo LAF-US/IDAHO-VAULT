@@ -19,9 +19,9 @@ related:
   - idleg
 ---
 
-RT @IdahoReports: Updated #idleg meeting schedule: 
--House Business continues at 6pm 
--Senate State Affairs at 8am 
+RT @IdahoReports: Updated #idleg meeting schedule:
+-House Business continues at 6pm
+-Senate State Affairs at 8am
 -House reconvenes at 8a…
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1460401795113443333)

@@ -30,7 +30,7 @@ brilliant.org
 
 Opens in a new window
 
-www.youtube.com
+<www.youtube.com>
 
 Opens in a new window
 
@@ -85,4 +85,3 @@ Would you like me to go deeper into the geometry of 4D shapes or the physics of 
 Gemini is AI and can make mistakes.
 
 1Password menu is available. Press down arrow to select.
-

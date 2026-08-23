@@ -36,6 +36,7 @@ Investigate whether the current behavior is intentional. **Do not assume the rep
 ### Check Documentation
 
 Search the project for documentation. IDAHO-VAULT is a historical document archive, so check:
+
 - README files and repository documentation
 - Any metadata standards or conventions
 - Historical context that might explain the behavior
@@ -71,6 +72,7 @@ If you find a closed issue where a maintainer explained why the behavior is inte
 The key question: "Did the developer _know about_ and _choose_ this behavior?" If yes, it's not a bug — it's a known limitation or design choice. The reporter may have a valid enhancement request, but that's different from a bug fix.
 
 **Common mistakes to avoid:**
+
 - Do not treat a known limitation as a bug
 - Do not treat a design trade-off as a bug just because the reporter frames it as one
 - Do not conflate "imperfect" with "broken"
@@ -80,6 +82,7 @@ The key question: "Did the developer _know about_ and _choose_ this behavior?" I
 ### Bug
 
 The developer was not aware of this behavior or did not choose it:
+
 - No comment or rationale in the code/content
 - Contradicts documentation or repository patterns
 - Clearly a regression from a previous state
@@ -88,6 +91,7 @@ The developer was not aware of this behavior or did not choose it:
 ### Intended Behavior
 
 The developer was aware and chose to ship it:
+
 - Code comments or metadata explain the limitation or trade-off
 - Explicit pattern handles this case by design
 - Commit message or PR explains the rationale

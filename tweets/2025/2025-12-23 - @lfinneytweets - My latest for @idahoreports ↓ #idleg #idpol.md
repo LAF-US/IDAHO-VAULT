@@ -24,6 +24,7 @@ related:
 My latest for @idahoreports ↓ #idleg #idpol <https://t.co/qcr8EJ0RHH>
 
 ## Links
+
 - <https://x.com/IdahoReports/status/2003229762651664428>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/2003515203082961342)

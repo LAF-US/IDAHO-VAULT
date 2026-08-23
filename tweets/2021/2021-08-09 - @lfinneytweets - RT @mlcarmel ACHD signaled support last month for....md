@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @mlcarmel: ACHD signaled support last month for considering $7.5 million in foregone taxes. 
+RT @mlcarmel: ACHD signaled support last month for considering $7.5 million in foregone taxes.
 
 Now, they've dropped it significantly afte…
 

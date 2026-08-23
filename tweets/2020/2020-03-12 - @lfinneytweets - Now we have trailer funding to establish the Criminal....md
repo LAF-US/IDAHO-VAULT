@@ -21,6 +21,7 @@ related:
 <https://t.co/eln7fJANMg>
 
 ## Links
+
 - <https://legislature.idaho.gov/sessioninfo/2020/legislation/H0432/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

@@ -20,6 +20,7 @@ related:
 @brianalmon The lieutenant governor plays no part in committee referrals, only the Pro Tem does. Any senator could have objected to where the bill went and forced a vote over it. <https://t.co/1x1PaTsC0W>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/HCb0KBMbwAAPNsS.png)
 
 *In reply to [@brianalmon](https://twitter.com/brianalmon)*

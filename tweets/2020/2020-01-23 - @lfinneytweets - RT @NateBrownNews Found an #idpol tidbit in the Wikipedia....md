@@ -22,6 +22,7 @@ related:
 RT @NateBrownNews: Found an #idpol tidbit in the Wikipedia article on Daylight Savings Time. <https://t.co/vCYhamaUXI>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/EO-uZmNUYAAmcF8.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1220405891096137728)

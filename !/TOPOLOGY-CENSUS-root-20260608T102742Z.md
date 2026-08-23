@@ -14,7 +14,7 @@ authority: github-actions
 ## Summary
 
 | Measure | Count |
-|---|---:|
+| --- | ---: |
 | entry count | 24 |
 | appears in live doctrine count | 4 |
 | appears in ignore rules count | 0 |
@@ -22,7 +22,7 @@ authority: github-actions
 ### authority state counts
 
 | Value | Count |
-|---|---:|
+| --- | ---: |
 | `explicit_live_authority` | 4 |
 | `implied_by_local_documentation` | 3 |
 | `no_discernible_authority` | 17 |
@@ -228,7 +228,7 @@ authority: github-actions
 - Authority citations:
   - `VAULT-CONVENTIONS.md:156` — | `.github/` | Automation, workflows, scripts, and GitHub-specific instructions | Safe to modify only within assigned automation work and governance boundaries. |
   - `VAULT-CONVENTIONS.md:279` — - active normalization/carryforward scripts: `.github/scripts/daily_rollover.py`, `.github/scripts/tidy_daily_notes.py`, `.github/scripts/expand_date_aliases.py`
-  - `VAULT-CONVENTIONS.md:452` — - **Python** = machine/procedural product, attributable to AI agents. Scripts, scrapers, automation, transforms, and validation.
+  - `VAULT-CONVENTIONS.md:452` — - __Python__ = machine/procedural product, attributable to AI agents. Scripts, scrapers, automation, transforms, and validation.
   - `VAULT-CONVENTIONS.md:484` — 4. For daily notes, let Obsidian create the file from `DAILY NOTE TEMPLATE.md` and let the daily-note scripts maintain carryforward and normalization.
   - `VAULT-CONVENTIONS.md:569` — ### Active Automation Scripts
   - `VAULT-CONVENTIONS.md:599` — ### Utility Scripts (Manual Use Only)

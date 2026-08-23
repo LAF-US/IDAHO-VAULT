@@ -22,6 +22,7 @@ related:
 Hearing approaches in Festival at Sandpoint gun ban lawsuit (via @DailyBee) #idpol  <https://t.co/Fhu23RwWr7>
 
 ## Links
+
 - <https://bonnercountydailybee.com/news/2020/apr/28/hearing-nears-in-gun-ban-lawsuit-7/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1255211568100372480)

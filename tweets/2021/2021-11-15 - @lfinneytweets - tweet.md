@@ -19,6 +19,7 @@ related:
 @KevinRichert <https://t.co/1CdjqfNDXS>
 
 ## Links
+
 - <https://video.idahoptv.org/video/rapid-sausage-making-nov-12-2021-grtxjq/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1460391944908013568)

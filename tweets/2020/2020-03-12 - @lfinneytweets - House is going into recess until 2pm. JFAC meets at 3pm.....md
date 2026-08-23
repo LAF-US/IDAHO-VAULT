@@ -17,9 +17,9 @@ related:
   - idleg
 ---
 
-House is going into recess until 2pm. 
+House is going into recess until 2pm.
 
-JFAC meets at 3pm. 
+JFAC meets at 3pm.
 
 Senate in recess until 4pm. #idleg
 

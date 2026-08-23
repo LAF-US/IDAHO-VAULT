@@ -24,6 +24,7 @@ related:
 The voting portion of the @IdahoDems Convention is about to get underway in Boise. #idleg #idpol <https://t.co/aP0BB3HrVl>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/FVkHxKDUcAAtEfw.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1538269296761004032)

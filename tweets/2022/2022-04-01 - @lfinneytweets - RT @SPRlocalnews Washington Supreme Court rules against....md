@@ -20,6 +20,7 @@ RT @SPRlocalnews: Washington Supreme Court rules against Spokane homeowner in ra
 <https://t.co/KPnZRmoxLi>
 
 ## Links
+
 - <https://www.spokanepublicradio.org/regional-news/2022-04-01/washington-supreme-court-rules-against-spokane-homeowner-in-racial-covenants-case>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1510032867916611588)
