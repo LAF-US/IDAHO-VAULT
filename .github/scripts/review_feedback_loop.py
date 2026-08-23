@@ -1400,6 +1400,9 @@ def acknowledge_apply(args: argparse.Namespace) -> int:
     labels = {node["name"] for node in pr.get("labels") or [] if node.get("name")}
 
     if DEFAULT_PENDING_LABEL not in labels:
+        # Lifecycle labels only need reconciliation before this branch mutates one.
+        # Keeping this after the request and trust checks prevents every unrelated
+        # review-bot comment from issuing a repository-wide label API sweep.
         ensure_labels()
         _edit_label(args.pr_number, add=DEFAULT_PENDING_LABEL)
         _comment(
