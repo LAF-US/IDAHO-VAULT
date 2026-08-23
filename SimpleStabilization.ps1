@@ -1,4 +1,4 @@
-<#
+﻿<#
 SIMPLE STABILIZATION SYSTEM
 Governance: CONSTITUTION.md § I, § III
 Protocol: LEVELSET-compliant

@@ -12,17 +12,31 @@ from unittest import mock
 
 
 def _load_review_feedback_loop_module():
-    project_root = Path(__file__).resolve().parents[0]
-    script_dir = project_root / ".github" / "scripts"
-    if str(script_dir) not in sys.path:
-        sys.path.insert(0, str(script_dir))
+    script_name = Path(".github/scripts/review_feedback_loop.py")
+    project_root = next(
+        (candidate for candidate in Path(__file__).resolve().parents if (candidate / script_name).is_file()),
+        None,
+    )
+    if project_root is None:
+        raise RuntimeError(f"Unable to find repository root containing {script_name}")
 
-    script_path = script_dir / "review_feedback_loop.py"
-    spec = importlib.util.spec_from_file_location("review_feedback_loop_test_module", script_path)
-    module = importlib.util.module_from_spec(spec)
-    assert spec.loader is not None
-    spec.loader.exec_module(module)
-    return module
+    script_dir = project_root / ".github" / "scripts"
+    helper_dirs = (script_dir, project_root / "scripts_scripts")
+    added_to_path = [str(path) for path in helper_dirs if str(path) not in sys.path]
+    for path_text in reversed(added_to_path):
+        sys.path.insert(0, path_text)
+
+    try:
+        script_path = script_dir / "review_feedback_loop.py"
+        spec = importlib.util.spec_from_file_location("review_feedback_loop_test_module", script_path)
+        if spec is None or spec.loader is None:
+            raise RuntimeError(f"Unable to load review feedback loop from {script_path}")
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        return module
+    finally:
+        for path_text in added_to_path:
+            sys.path.remove(path_text)
 
 
 review_feedback_loop = _load_review_feedback_loop_module()
@@ -291,7 +305,7 @@ class ReviewFeedbackLoopTest(unittest.TestCase):
         self.assertEqual(result, 0)
         # ensure_labels() is only worth paying for on the path that actually
         # mutates a label -- see the module-level comment on acknowledge_apply.
-        ensure_labels.assert_called_once()
+        ensure_labels.assert_called_once_with()
         edit_label.assert_called_once_with(41, add=review_feedback_loop.DEFAULT_PENDING_LABEL)
         comment.assert_called_once()
 
