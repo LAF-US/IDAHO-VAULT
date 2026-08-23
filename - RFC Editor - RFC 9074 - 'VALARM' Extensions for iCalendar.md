@@ -11,7 +11,7 @@ tags:
 
 Clipped from the RFC Editor info page for RFC 9074. The page renders the document as a fixed-width plaintext block; that text is reproduced verbatim below in a fenced block to preserve its formatting (indentation, ABNF grammar, page-break footers).
 
-```
+```text
 ﻿
 
 
