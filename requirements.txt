@@ -21,6 +21,8 @@ distro==1.9.0
     # via posthog
 flask==3.1.3
     # via idaho-vault
+icalendar==7.3.0
+    # via idaho-vault
 idna==3.19
     # via requests
 iniconfig==2.3.0
@@ -55,14 +57,22 @@ pygments==2.21.0
 pytest==9.1.1
     # via pytest-codspeed
 pytest-codspeed==5.0.3
+python-dateutil==2.9.0.post0
+    # via
+    #   icalendar
+    #   idaho-vault
 pyyaml==6.0.3
     # via idaho-vault
 requests==2.34.2
     # via posthog
 rich==15.0.0
     # via pytest-codspeed
+six==1.17.0
+    # via python-dateutil
 typing-extensions==4.16.0
     # via posthog
+tzdata==2026.3
+    # via icalendar
 urllib3==2.7.0
     # via requests
 werkzeug==3.1.8
