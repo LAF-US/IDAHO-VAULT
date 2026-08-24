@@ -1,8 +1,11 @@
+import sys
 from pathlib import Path
 
-source = Path('/home/ubuntu/upload/pasted_content.txt')
-target = Path('/home/ubuntu/ics/cron_clock_visual_semantics.ics')
-ledger = Path('/home/ubuntu/ics/cron_clock_visual_semantics_changes.md')
+# Paths accept command-line overrides and default to this repository's copies.
+_REPO = Path(__file__).resolve().parent
+source = Path(sys.argv[1]) if len(sys.argv) > 1 else _REPO / 'cron_clock.ics'
+target = Path(sys.argv[2]) if len(sys.argv) > 2 else _REPO / 'cron_clock_visual_semantics.ics'
+ledger = Path(sys.argv[3]) if len(sys.argv) > 3 else _REPO / 'cron_clock_visual_semantics_changes.md'
 
 # Ordered palette for every authored seven-item group.
 roygbiv = {
@@ -47,6 +50,8 @@ while i < len(lines):
         if lines[j] == 'END:VEVENT':
             break
         j += 1
+    else:
+        raise SystemExit(f'Malformed calendar: VEVENT at line {i + 1} has no END:VEVENT.')
     uid = next((line[4:] for line in event if line.startswith('UID:')), '')
     wanted = colors.get(uid)
     original_colors = [line for line in event if line.startswith('COLOR:')]

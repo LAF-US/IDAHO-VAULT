@@ -1,7 +1,10 @@
+import sys
 from pathlib import Path
 
-source = Path('/home/ubuntu/upload/pasted_content.txt')
-target = Path('/home/ubuntu/ics/eleanor_shellstrop_cron_clock.ics')
+# Paths accept command-line overrides and default to this repository's copies.
+_REPO = Path(__file__).resolve().parent
+source = Path(sys.argv[1]) if len(sys.argv) > 1 else _REPO / 'cron_clock.ics'
+target = Path(sys.argv[2]) if len(sys.argv) > 2 else _REPO / 'eleanor_shellstrop_cron_clock.ics'
 
 repaired: list[str] = []
 for line in source.read_text(encoding='utf-8').splitlines():
@@ -11,8 +14,14 @@ for line in source.read_text(encoding='utf-8').splitlines():
         continue
     if line.startswith('RRULE:'):
         line = line.replace('INTERVAL:', 'INTERVAL=')
-    if line.startswith('DTSTAMP:') and not line.endswith('Z'):
-        line = f'{line}Z'
+    if line.startswith('DTSTAMP:'):
+        stamp = line[len('DTSTAMP:'):]
+        if not stamp.endswith('Z'):
+            stamp = f'{stamp}Z'
+        # A date-only stamp such as 20270101Z gains an explicit UTC midnight.
+        if 'T' not in stamp:
+            stamp = f'{stamp[:-1]}T000000Z'
+        line = f'DTSTAMP:{stamp}'
     if line.startswith('DTSTART;TZID=America/Boise:'):
         line = line.replace('DTSTART;TZID=America/Boise:', 'DTSTART:', 1)
     repaired.append(line)
@@ -20,8 +29,11 @@ for line in source.read_text(encoding='utf-8').splitlines():
 # Align Azer with the six other named 204-minute entries without altering its
 # timing: locate its VEVENT block explicitly and rewrite the CATEGORIES line
 # found inside it, failing loudly if the block or the property is absent.
-azer_uid_index = repaired.index('UID:azer-vault_time@cron_clock')
-azer_end = repaired.index('END:VEVENT', azer_uid_index)
+try:
+    azer_uid_index = repaired.index('UID:azer-vault_time@cron_clock')
+    azer_end = repaired.index('END:VEVENT', azer_uid_index)
+except ValueError as error:
+    raise AssertionError('Azer VEVENT block not found in source calendar') from error
 for following in range(azer_uid_index + 1, azer_end):
     if repaired[following].startswith('CATEGORIES:'):
         repaired[following] = 'CATEGORIES:Minutes'

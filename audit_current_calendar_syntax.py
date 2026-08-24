@@ -1,10 +1,16 @@
+import sys
 from pathlib import Path
 import re
 from collections import Counter
 
-source = Path('/home/ubuntu/upload/pasted_content.txt')
-raw = source.read_bytes()
-text = raw.decode('utf-8')
+# Paths accept command-line overrides and default to this repository's copies.
+_REPO = Path(__file__).resolve().parent
+source = Path(sys.argv[1]) if len(sys.argv) > 1 else _REPO / 'cron_clock.ics'
+try:
+    raw = source.read_bytes()
+    text = raw.decode('utf-8')
+except (OSError, UnicodeDecodeError) as error:
+    raise SystemExit(f'Cannot read calendar source {source}: {error}')
 lines = text.splitlines()
 
 # CSS3 keyword subset covering every observed and recommended token. All are
@@ -59,7 +65,9 @@ for number, line in enumerate(lines, 1):
         value = line.split(':', 1)[1]
         # RFC 5545 duration allows W, D, H, M, S but M only after T;
         # calendar-year and calendar-month units are not permitted.
-        legal = re.fullmatch(r'[+-]?P(?:(?:\d+W)|(?:(?:\d+D)?(?:T(?:(?:\d+H)?(?:\d+M)?(?:\d+S)?)?)?))', value)
+        # At least one unit is required: bare P/PT are not durations.
+        legal = (re.fullmatch(r'[+-]?P(?:(?:\d+W)|(?:(?:\d+D)?(?:T(?:(?:\d+H)?(?:\d+M)?(?:\d+S)?)?)?))', value)
+                 and re.search(r'\d', value))
         if not legal:
             print(f'INVALID_RFC5545_DURATION line={number}: {value!r}')
     if line.startswith('RRULE:'):

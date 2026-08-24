@@ -2,12 +2,15 @@ from __future__ import annotations
 
 from collections import Counter
 from datetime import date, datetime
+import sys
 from pathlib import Path
 
 from dateutil.rrule import rrulestr
 from icalendar import Calendar
 
-CALENDAR_PATH = Path('/home/ubuntu/ics/cron_clock_gregorian_floating.ics')
+# Paths accept command-line overrides and default to this repository's copies.
+_REPO = Path(__file__).resolve().parent
+CALENDAR_PATH = Path(sys.argv[1]) if len(sys.argv) > 1 else _REPO / 'cron_clock_gregorian_floating.ics'
 
 
 def fail(message: str) -> None:
@@ -74,11 +77,19 @@ def main() -> None:
             if type(start) is not date:
                 fail(f'{uid}: expected a DATE DTSTART.')
             duration = event.get('DURATION')
-            if duration is not None and not str(duration.to_ical(), 'utf-8').startswith(('P', '+P', '-P')):
-                fail(f'{uid}: DATE event has invalid duration.')
+            local = uid.split('-', 1)[0]
+            if local in {'week'} | {d.lower() for d in
+                         ('monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday')}:
+                if duration is None:
+                    fail(f'{uid}: Day/Week event must carry its P1D/P1W duration.')
+            elif duration is not None:
+                # Months, quarters, and the Year are starts-only markers.
+                fail(f'{uid}: wheel event must not carry a DURATION.')
         else:
             if not isinstance(start, datetime) or start.tzinfo is not None:
                 fail(f'{uid}: expected a floating DATE-TIME DTSTART.')
+            if event.get('DURATION') is None:
+                fail(f'{uid}: timed span must carry a DURATION.')
 
         rule = str(event['RRULE'].to_ical(), 'utf-8')
         first_rule_instance = next(iter(rrulestr(rule, dtstart=start)))

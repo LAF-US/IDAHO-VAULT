@@ -1,10 +1,13 @@
 from __future__ import annotations
 
 from collections import Counter, defaultdict
+import sys
 from pathlib import Path
 import re
 
-source = Path('/home/ubuntu/upload/pasted_content.txt')
+# Paths accept command-line overrides and default to this repository's copies.
+_REPO = Path(__file__).resolve().parent
+source = Path(sys.argv[1]) if len(sys.argv) > 1 else _REPO / 'cron_clock.ics'
 text = source.read_text(encoding='utf-8')
 raw_lines = text.splitlines()
 nonblank = [line.rstrip('\r') for line in raw_lines if line.strip()]
@@ -26,7 +29,10 @@ for line in lines:
         ev: dict[str, list[str]] = defaultdict(list)
         stack.append(ev)
     elif line == 'END:VEVENT':
-        events.append(stack.pop())
+        if stack:
+            events.append(stack.pop())
+        else:
+            calendar['PARSE_ERRORS'].append('Unmatched END:VEVENT')
     elif ':' in line:
         keypart, value = line.split(':', 1)
         key = keypart.split(';', 1)[0].upper()
@@ -44,7 +50,7 @@ def one(ev: dict[str, list[str]], name: str) -> str:
 def parse_ical_duration(value: str) -> int | None:
     # RFC 5545 duration unit calculation for integer arithmetic.
     match = re.fullmatch(r'([+-])?P(?:(\d+)W)?(?:(\d+)D)?(?:T(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?)?', value)
-    if not match:
+    if not match or not any(match.groups()[1:]):
         return None
     sign, weeks, days, hours, minutes, seconds = match.groups()
     total = (int(weeks or 0) * 7 * 86400 + int(days or 0) * 86400 +
@@ -135,7 +141,8 @@ if named_rhythms:
     cursor = datetime(1810, 1, 1, 0, 0, 0)
     day_end = datetime(1810, 1, 2, 0, 0, 0)
     for ev in ordered:
-        start = parse_local_start(one(ev, 'DTSTART'))
+        # Only the wall-clock time matters; the seed date may differ from 1810.
+        start = datetime.combine(cursor.date(), parse_local_start(one(ev, 'DTSTART')).time())
         gap = start - cursor
         print(f'RHYTHM_GAP_BEFORE {one(ev, "SUMMARY")}: {int(gap.total_seconds() // 60)} minutes')
         cursor = start + timedelta(seconds=parse_ical_duration(one(ev, 'DURATION')) or 0)

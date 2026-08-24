@@ -1,9 +1,12 @@
 from __future__ import annotations
 
 import re
+import sys
 from pathlib import Path
 
-SOURCE = Path('/home/ubuntu/upload/pasted_content.txt')
+# Paths accept command-line overrides and default to this repository's copies.
+_REPO = Path(__file__).resolve().parent
+SOURCE = Path(sys.argv[1]) if len(sys.argv) > 1 else _REPO / 'cron_clock.ics'
 CONTENT_LINE = re.compile(r'^(?P<name>[A-Za-z0-9-]+)(?P<params>(?:;[^:;=]+=(?:[^:;]*))*):(?P<value>.*)$')
 
 

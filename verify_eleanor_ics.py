@@ -2,11 +2,14 @@ from __future__ import annotations
 
 import re
 from collections import Counter
+import sys
 from pathlib import Path
 
 from icalendar import Calendar
 
-TARGET = Path('/home/ubuntu/ics/eleanor_shellstrop_cron_clock.ics')
+# Paths accept command-line overrides and default to this repository's copies.
+_REPO = Path(__file__).resolve().parent
+TARGET = Path(sys.argv[1]) if len(sys.argv) > 1 else _REPO / 'eleanor_shellstrop_cron_clock.ics'
 CONTENT_LINE = re.compile(r'^[A-Za-z0-9-]+(?:;[^:;=]+=(?:[^:;]*))*:.*$')
 
 

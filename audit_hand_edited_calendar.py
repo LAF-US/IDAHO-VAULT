@@ -2,11 +2,14 @@ from __future__ import annotations
 
 from collections import Counter
 from datetime import datetime
+import sys
 from pathlib import Path
 
 from icalendar import Calendar
 
-SOURCE = Path('/home/ubuntu/upload/pasted_content.txt')
+# Paths accept command-line overrides and default to this repository's copies.
+_REPO = Path(__file__).resolve().parent
+SOURCE = Path(sys.argv[1]) if len(sys.argv) > 1 else _REPO / 'cron_clock_hand_edited_unmodified.ics'
 
 
 def main() -> None:
@@ -32,12 +35,20 @@ def main() -> None:
 
     for event in events:
         uid = str(event.get('UID'))
-        dtstamp = event['DTSTAMP'].to_ical().decode('utf-8')
-        if not dtstamp.endswith('Z'):
-            issues.append(f'{uid}: DTSTAMP is not UTC (missing trailing Z).')
+        dtstamp_prop = event.get('DTSTAMP')
+        if dtstamp_prop is None:
+            issues.append(f'{uid}: missing required DTSTAMP.')
+        else:
+            dtstamp = dtstamp_prop.to_ical().decode('utf-8')
+            if not dtstamp.endswith('Z'):
+                issues.append(f'{uid}: DTSTAMP is not UTC (missing trailing Z).')
 
-        start = event['DTSTART'].dt
-        tzid = event['DTSTART'].params.get('TZID')
+        dtstart_prop = event.get('DTSTART')
+        if dtstart_prop is None:
+            issues.append(f'{uid}: missing required DTSTART.')
+            continue
+        start = dtstart_prop.dt
+        tzid = dtstart_prop.params.get('TZID')
         if tzid:
             issues.append(f'{uid}: DTSTART uses TZID={tzid}, so it is not floating.')
 

@@ -2,14 +2,19 @@ from __future__ import annotations
 
 import re
 from collections import Counter
+import sys
 from pathlib import Path
 
-AUTHORITATIVE = Path('/home/ubuntu/upload/pasted_content.txt')
-DELIVERED = Path('/home/ubuntu/ics/eleanor_shellstrop_cron_clock.ics')
+# Paths accept command-line overrides and default to this repository's copies.
+_REPO = Path(__file__).resolve().parent
+AUTHORITATIVE = Path(sys.argv[1]) if len(sys.argv) > 1 else _REPO / 'cron_clock.ics'
+DELIVERED = Path(sys.argv[2]) if len(sys.argv) > 2 else _REPO / 'eleanor_shellstrop_cron_clock.ics'
 DATE_TIME_UTC = re.compile(r'^\d{8}T\d{6}Z$')
 
 
 def split_property(line: str) -> tuple[str, str]:
+    if ':' not in line:
+        raise ValueError(f'Malformed content line (no colon): {line!r}')
     left, value = line.split(':', 1)
     return left.split(';', 1)[0].upper(), value
 
