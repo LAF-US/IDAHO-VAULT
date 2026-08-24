@@ -38,6 +38,9 @@ except ValueError as error:
     raise AssertionError('Azer VEVENT block not found in source calendar') from error
 for following in range(azer_uid_index + 1, azer_end):
     if repaired[following].startswith('CATEGORIES:'):
+        # The repair targets the known miscategorization and nothing else.
+        if repaired[following] != 'CATEGORIES:hour':
+            raise AssertionError(f'Unexpected Azer CATEGORIES value: {repaired[following]!r}')
         repaired[following] = 'CATEGORIES:Minutes'
         break
 else:
