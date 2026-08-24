@@ -65,11 +65,13 @@ for number, line in enumerate(lines, 1):
             print(f'DATE_WITHOUT_VALUE_DATE line={number}: {line}')
     if line.startswith('DURATION:'):
         value = line.split(':', 1)[1]
-        # RFC 5545 duration allows W, D, H, M, S but M only after T;
-        # calendar-year and calendar-month units are not permitted.
-        # At least one unit is required: bare P/PT are not durations.
-        legal = (re.fullmatch(r'[+-]?P(?:(?:\d+W)|(?:(?:\d+D)?(?:T(?:(?:\d+H)?(?:\d+M)?(?:\d+S)?)?)?))', value)
-                 and re.search(r'\d', value))
+        # RFC 5545 § 3.3.6 dur-value: weeks alone, or days with an optional
+        # time part, or a time part alone; the time part is the ordered
+        # hour[minute[second]] / minute[second] / second chain, so bare P,
+        # trailing T (P1DT), and skipped units (PT1H2S) are all rejected.
+        # Calendar-year and calendar-month units are not permitted.
+        dur_time = r'T(?:\d+H(?:\d+M(?:\d+S)?)?|\d+M(?:\d+S)?|\d+S)'
+        legal = re.fullmatch(rf'[+-]?P(?:\d+W|\d+D(?:{dur_time})?|{dur_time})', value)
         if not legal:
             print(f'INVALID_RFC5545_DURATION line={number}: {value!r}')
     if line.startswith('RRULE:'):

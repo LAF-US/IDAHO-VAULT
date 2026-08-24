@@ -5,7 +5,10 @@ from cli_path_guard import repo_path
 
 # Paths accept command-line overrides, containment-checked to repository files.
 _REPO = Path(__file__).resolve().parent
-source = repo_path(sys.argv[1]) if len(sys.argv) > 1 else _REPO / 'cron_clock.ics'
+# The default source is the 42-event hand-edited calendar this repair was
+# written against; its output reproduces the committed Eleanor artifact
+# byte-for-byte.
+source = repo_path(sys.argv[1]) if len(sys.argv) > 1 else _REPO / 'cron_clock_hand_edited_unmodified.ics'
 target = repo_path(sys.argv[2], must_exist=False) if len(sys.argv) > 2 else _REPO / 'eleanor_shellstrop_cron_clock.ics'
 
 repaired: list[str] = []

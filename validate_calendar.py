@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from collections import Counter
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 import sys
 from pathlib import Path
 
@@ -63,6 +63,18 @@ def main() -> None:
         'sunday-vault_time@cron_clock',
     }
 
+    # The settled span geometry: three 480-minute watches and the seven
+    # named 204-minute rhythms. Values are compared as parsed timedeltas
+    # because the icalendar library does not keep the source spelling.
+    watch, rhythm = timedelta(hours=8), timedelta(hours=3, minutes=24)
+    SPAN_DURATIONS = {
+        'dawn': ('PT8H', watch), 'noon': ('PT8H', watch), 'dusk': ('PT8H', watch),
+        'yan': ('PT3H24M', rhythm), 'tan': ('PT3H24M', rhythm),
+        'tethera': ('PT3H24M', rhythm), 'methera': ('PT3H24M', rhythm),
+        'pits': ('PT3H24M', rhythm), 'sethera': ('PT3H24M', rhythm),
+        'azer': ('PT3H24M', rhythm),
+    }
+
     for event in events:
         uid = str(event.get('UID'))
         for required in ('UID', 'DTSTAMP', 'DTSTART', 'RRULE', 'SUMMARY', 'TRANSP'):
@@ -82,16 +94,22 @@ def main() -> None:
             local = uid.split('-', 1)[0]
             if local in {'week'} | {d.lower() for d in
                          ('monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday')}:
-                if duration is None:
-                    fail(f'{uid}: Day/Week event must carry its P1D/P1W duration.')
+                spelled, span = ('P1W', timedelta(weeks=1)) if local == 'week' else ('P1D', timedelta(days=1))
+                if duration is None or duration.dt != span:
+                    fail(f'{uid}: Day/Week event must carry DURATION:{spelled}.')
             elif duration is not None:
                 # Months, quarters, and the Year are starts-only markers.
                 fail(f'{uid}: wheel event must not carry a DURATION.')
         else:
             if not isinstance(start, datetime) or start.tzinfo is not None:
                 fail(f'{uid}: expected a floating DATE-TIME DTSTART.')
-            if event.get('DURATION') is None:
-                fail(f'{uid}: timed span must carry a DURATION.')
+            duration = event.get('DURATION')
+            expected = SPAN_DURATIONS.get(uid.split('-', 1)[0])
+            if expected is None:
+                fail(f'{uid}: timed span is not in the settled span roster.')
+            spelled, span = expected
+            if duration is None or duration.dt != span:
+                fail(f'{uid}: timed span must carry DURATION:{spelled}.')
 
         rule = str(event['RRULE'].to_ical(), 'utf-8')
         first_rule_instance = next(iter(rrulestr(rule, dtstart=start)))

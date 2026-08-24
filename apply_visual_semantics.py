@@ -8,6 +8,9 @@ _REPO = Path(__file__).resolve().parent
 source = repo_path(sys.argv[1]) if len(sys.argv) > 1 else _REPO / 'cron_clock.ics'
 target = repo_path(sys.argv[2], must_exist=False) if len(sys.argv) > 2 else _REPO / 'cron_clock_visual_semantics.ics'
 ledger = repo_path(sys.argv[3], must_exist=False) if len(sys.argv) > 3 else _REPO / 'cron_clock_visual_semantics_changes.md'
+if ledger in (source, target):
+    # The Markdown ledger is written last and would clobber calendar bytes.
+    raise SystemExit('The ledger path must be distinct from the source and target paths.')
 
 # Ordered palette for every authored seven-item group.
 roygbiv = {

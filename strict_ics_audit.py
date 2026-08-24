@@ -30,6 +30,9 @@ def main() -> None:
             continue
         if len(line.encode('utf-8')) > 75:
             findings.append(f'Line {number}: content line exceeds 75 octets without folding.')
+        if line.startswith((' ', '\t')):
+            # RFC 5545 § 3.1 folded continuation of the previous content line.
+            continue
         match = CONTENT_LINE.fullmatch(line)
         if not match:
             findings.append(f'Line {number}: malformed content line: {line!r}')
