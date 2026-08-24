@@ -1,11 +1,13 @@
 import sys
 from pathlib import Path
 
-# Paths accept command-line overrides and default to this repository's copies.
+from cli_path_guard import repo_path
+
+# Paths accept command-line overrides, containment-checked to repository files.
 _REPO = Path(__file__).resolve().parent
-source = Path(sys.argv[1]) if len(sys.argv) > 1 else _REPO / 'cron_clock.ics'
-target = Path(sys.argv[2]) if len(sys.argv) > 2 else _REPO / 'cron_clock_visual_semantics.ics'
-ledger = Path(sys.argv[3]) if len(sys.argv) > 3 else _REPO / 'cron_clock_visual_semantics_changes.md'
+source = repo_path(sys.argv[1]) if len(sys.argv) > 1 else _REPO / 'cron_clock.ics'
+target = repo_path(sys.argv[2], must_exist=False) if len(sys.argv) > 2 else _REPO / 'cron_clock_visual_semantics.ics'
+ledger = repo_path(sys.argv[3], must_exist=False) if len(sys.argv) > 3 else _REPO / 'cron_clock_visual_semantics_changes.md'
 
 # Ordered palette for every authored seven-item group.
 roygbiv = {

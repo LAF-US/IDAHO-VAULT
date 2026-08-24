@@ -7,9 +7,11 @@ from pathlib import Path
 
 from icalendar import Calendar
 
-# Paths accept command-line overrides and default to this repository's copies.
+from cli_path_guard import repo_path
+
+# Paths accept command-line overrides, containment-checked to repository files.
 _REPO = Path(__file__).resolve().parent
-TARGET = Path(sys.argv[1]) if len(sys.argv) > 1 else _REPO / 'eleanor_shellstrop_cron_clock.ics'
+TARGET = repo_path(sys.argv[1]) if len(sys.argv) > 1 else _REPO / 'eleanor_shellstrop_cron_clock.ics'
 CONTENT_LINE = re.compile(r'^[A-Za-z0-9-]+(?:;[^:;=]+=(?:[^:;]*))*:.*$')
 
 

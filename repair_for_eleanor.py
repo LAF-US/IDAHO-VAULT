@@ -1,10 +1,12 @@
 import sys
 from pathlib import Path
 
-# Paths accept command-line overrides and default to this repository's copies.
+from cli_path_guard import repo_path
+
+# Paths accept command-line overrides, containment-checked to repository files.
 _REPO = Path(__file__).resolve().parent
-source = Path(sys.argv[1]) if len(sys.argv) > 1 else _REPO / 'cron_clock.ics'
-target = Path(sys.argv[2]) if len(sys.argv) > 2 else _REPO / 'eleanor_shellstrop_cron_clock.ics'
+source = repo_path(sys.argv[1]) if len(sys.argv) > 1 else _REPO / 'cron_clock.ics'
+target = repo_path(sys.argv[2], must_exist=False) if len(sys.argv) > 2 else _REPO / 'eleanor_shellstrop_cron_clock.ics'
 
 repaired: list[str] = []
 for line in source.read_text(encoding='utf-8').splitlines():

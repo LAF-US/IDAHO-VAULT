@@ -8,9 +8,11 @@ from pathlib import Path
 from dateutil.rrule import rrulestr
 from icalendar import Calendar
 
-# Paths accept command-line overrides and default to this repository's copies.
+from cli_path_guard import repo_path
+
+# Paths accept command-line overrides, containment-checked to repository files.
 _REPO = Path(__file__).resolve().parent
-CALENDAR_PATH = Path(sys.argv[1]) if len(sys.argv) > 1 else _REPO / 'cron_clock_gregorian_floating.ics'
+CALENDAR_PATH = repo_path(sys.argv[1]) if len(sys.argv) > 1 else _REPO / 'cron_clock_gregorian_floating.ics'
 
 
 def fail(message: str) -> None:

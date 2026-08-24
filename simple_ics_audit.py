@@ -7,9 +7,11 @@ from pathlib import Path
 
 from icalendar import Calendar
 
-# Paths accept command-line overrides and default to this repository's copies.
+from cli_path_guard import repo_path
+
+# Paths accept command-line overrides, containment-checked to repository files.
 _REPO = Path(__file__).resolve().parent
-SOURCE = Path(sys.argv[1]) if len(sys.argv) > 1 else _REPO / 'cron_clock.ics'
+SOURCE = repo_path(sys.argv[1]) if len(sys.argv) > 1 else _REPO / 'cron_clock.ics'
 WEEKDAY_UIDS = {
     'monday': 0, 'tuesday': 1, 'wednesday': 2, 'thursday': 3,
     'friday': 4, 'saturday': 5, 'sunday': 6,

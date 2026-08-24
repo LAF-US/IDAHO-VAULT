@@ -5,10 +5,12 @@ from collections import Counter
 import sys
 from pathlib import Path
 
-# Paths accept command-line overrides and default to this repository's copies.
+from cli_path_guard import repo_path
+
+# Paths accept command-line overrides, containment-checked to repository files.
 _REPO = Path(__file__).resolve().parent
-AUTHORITATIVE = Path(sys.argv[1]) if len(sys.argv) > 1 else _REPO / 'cron_clock.ics'
-DELIVERED = Path(sys.argv[2]) if len(sys.argv) > 2 else _REPO / 'eleanor_shellstrop_cron_clock.ics'
+AUTHORITATIVE = repo_path(sys.argv[1]) if len(sys.argv) > 1 else _REPO / 'cron_clock.ics'
+DELIVERED = repo_path(sys.argv[2]) if len(sys.argv) > 2 else _REPO / 'eleanor_shellstrop_cron_clock.ics'
 DATE_TIME_UTC = re.compile(r'^\d{8}T\d{6}Z$')
 
 

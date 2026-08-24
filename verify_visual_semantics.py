@@ -2,9 +2,11 @@ import sys
 from pathlib import Path
 from collections import Counter
 
-# Paths accept command-line overrides and default to this repository's copies.
+from cli_path_guard import repo_path
+
+# Paths accept command-line overrides, containment-checked to repository files.
 _REPO = Path(__file__).resolve().parent
-path = Path(sys.argv[1]) if len(sys.argv) > 1 else _REPO / 'cron_clock_visual_semantics.ics'
+path = repo_path(sys.argv[1]) if len(sys.argv) > 1 else _REPO / 'cron_clock_visual_semantics.ics'
 raw = path.read_bytes()
 assert b'\n' not in raw.replace(b'\r\n', b''), 'Non-CRLF newline found'
 assert b'\r\n\r\n' not in raw, 'Blank content line found'

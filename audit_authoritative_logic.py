@@ -5,9 +5,11 @@ import sys
 from pathlib import Path
 import re
 
-# Paths accept command-line overrides and default to this repository's copies.
+from cli_path_guard import repo_path
+
+# Paths accept command-line overrides, containment-checked to repository files.
 _REPO = Path(__file__).resolve().parent
-source = Path(sys.argv[1]) if len(sys.argv) > 1 else _REPO / 'cron_clock.ics'
+source = repo_path(sys.argv[1]) if len(sys.argv) > 1 else _REPO / 'cron_clock.ics'
 text = source.read_text(encoding='utf-8')
 raw_lines = text.splitlines()
 nonblank = [line.rstrip('\r') for line in raw_lines if line.strip()]
