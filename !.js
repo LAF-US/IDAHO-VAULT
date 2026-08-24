@@ -4,3 +4,5 @@
 function codeqlStub() {
   return "noop";
 }
+
+void codeqlStub;

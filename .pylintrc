@@ -1,0 +1,89 @@
+# Pylint — Codacy toggle. An empty config keeps pylint's DEFAULT message set,
+# which is its baseline. Not "every check": measured on pylint 4.0.7 against
+# this file, 377 messages are enabled and 12 are disabled by default (the
+# I0001-I0021 reporting messages, useless-suppression, and the two
+# use-implicit-booleaness-not-comparison-to-* checks). An earlier version of
+# this note claimed every check runs; a reviewer was right that it does not.
+# This file also pins config resolution, so a run inside the vault cannot
+# inherit a parent .pylintrc from someone's machine.
+#
+# Overlaps ruff.toml on unused-import / unused-variable / undefined-name.
+#
+# MEASURED, no longer a guess — pylint 4.0.7 over all 136 tracked .py files
+# (none of which the ignore-paths below exclude): **1,763 findings.**
+#
+#   1,402 convention   532 missing-function-docstring, 335 trailing-whitespace,
+#                      307 line-too-long, 100 missing-class-docstring
+#     222 refactor     48 duplicate-code, 36 too-many-locals
+#     104 warning      38 broad-exception-caught
+#      31 error        26 import-error, 3 undefined-variable, 2 no-name-in-module
+#       4 fatal        unresolvable module paths (a `1/tools/...` path; a
+#                      `copy.py` that shadows the stdlib module)
+#
+# Most import-errors are optional deps absent here (PIL, defusedxml,
+# tree_sitter) rather than defects. One is not: see below.
+#
+# NO RULES ARE DISABLED IN RESPONSE TO THIS. The count is recorded so the
+# number is known before the toggle goes on, not to justify silencing it —
+# what to do about 1,174 docstring/whitespace/line-length findings is a
+# decision for Logan, not something to pre-empt from a config header.
+#
+# It already earned its place. Two real defects in one file,
+# `.github/scripts/generate_name_forms.py`, neither previously reported:
+#   - it imports `plant_epithets`, which is not a tracked file anywhere in the
+#     repo, so the module cannot be imported at all; and
+#   - `print_table` reads `h` at lines 57-59, which are plain list elements
+#     outside the `for h in headers[:1]` comprehension that binds it — a
+#     NameError waiting on the first call, if the import is ever fixed.
+# Both are left for a separate change; this PR does not touch that file.
+#
+# Exempt at the line (`# pylint: disable=...`), not repo-wide.
+
+[MAIN]
+# Without this pylint targets whatever interpreter runs it (3.11 here), so
+# diagnostics move when the runner does.
+#
+# The floor is READ FROM the manifest, not remembered: pyproject.toml declares
+# `requires-python = ">=3.13"`, .python-version pins 3.13.5, and the root
+# Dockerfile is `FROM python:3.13-slim`. All three agree on 3.13.
+#
+# This said 3.10 until 2026-08-16, and that was correct when written on
+# 08-11 -- requires-python was `>=3.10,<3.14` then. f417abf3b moved it to
+# `>=3.13` on 08-13 and this file did not follow. Recorded rather than quietly
+# corrected, because a stale number that once measured true is the failure this
+# file's own headers keep warning about.
+#
+# The bump does not move the baseline, and that was checked rather than
+# assumed. pylint 4.0.7, same config, only py-version differing:
+#
+#   .github/scripts/         3.10 -> 508    3.13 -> 508
+#   all 113 tracked *.py     3.10 -> 1568   3.13 -> 1568
+#
+# Identical on both scopes, because nothing in this codebase rides a
+# 3.11/3.12/3.13 version gate. Had the counts differed, the baseline in #950
+# would have needed re-taking, not just this line.
+#
+# That second row said "200 tracked *.py" for one commit. It was wrong: the
+# command capped the list at 200 with `head -200`, but only 113 tracked *.py
+# files exist, so 113 is the scope that was actually measured. Two reviewers
+# caught it. Corrected to the count `git ls-files '*.py' | wc -l` returns.
+#
+# 1568 over 113 files does not contradict the 1,763 over 136 recorded in #950's
+# description. That reading was taken 2026-08-11 and the tracked-file count has
+# drifted since; 113 is what `git ls-files '*.py' | wc -l` returns at this head.
+#
+# An earlier version of this paragraph blamed the drift on main deleting the
+# src/idaho_vault/ tree. That was not checked and is not accurate: the tree is
+# still tracked, reduced rather than removed. The honest statement is that the
+# counts were taken at different times against different file sets, which is
+# enough to explain the gap without inventing a cause for it.
+py-version=3.13
+# Regex against the full path, unanchored at the front so a checkout at any
+# absolute location still matches.
+#
+# `[/\\]` and not `/`: the comment here used to claim "both separators" while
+# the pattern only ever contained a forward slash. On Windows pylint receives
+# native paths with backslashes, so THE-GEMSTONE, .venv and .uv-cache were
+# linted anyway — and this vault runs on Windows (VAULT-CONVENTIONS.md NETWEB).
+# The claim and the regex now agree.
+ignore-paths=(^|.*[/\\])THE-GEMSTONE[/\\].*$,(^|.*[/\\])\.venv[/\\].*$,(^|.*[/\\])\.uv-cache[/\\].*$
