@@ -30,10 +30,23 @@ import sys
 import unittest
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-import topology_census as census  # noqa: E402
-
 REPO_ROOT = Path(__file__).resolve().parents[2]
+
+# topology_census.py lives in scripts_scripts/, not beside this file. Search both
+# so the test follows the module rather than pinning one layout: a stale
+# .github/scripts/__pycache__/topology_census.*.pyc will satisfy a bare import
+# locally long after the source moved, which hides exactly this breakage until CI
+# runs on a clean checkout.
+for _candidate in (REPO_ROOT / "scripts_scripts", Path(__file__).resolve().parent):
+    if (_candidate / "topology_census.py").is_file():
+        sys.path.insert(0, str(_candidate))
+        break
+else:  # pragma: no cover - only when the module is deleted outright
+    raise ModuleNotFoundError(
+        "topology_census.py not found in scripts_scripts/ or beside this test"
+    )
+
+import topology_census as census  # noqa: E402
 CENSUS_DOCTRINE = REPO_ROOT / "CENSUS.md"
 
 # The scope keys the tool implements, in the order `--scope all` emits them.
