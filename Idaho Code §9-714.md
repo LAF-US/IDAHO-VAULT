@@ -24,3 +24,4 @@ Text as enacted, extracted verbatim from the Idaho Legislature's published statu
 ## Related Notes
 
 - Idaho Code
+- LICENSE
