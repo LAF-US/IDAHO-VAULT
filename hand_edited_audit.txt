@@ -1,0 +1,68 @@
+Parsed calendar with 42 VEVENTs.
+ISSUE: Line 18: malformed empty PRIORITY property.
+ISSUE: Line 29: malformed empty PRIORITY property.
+ISSUE: Line 40: malformed empty PRIORITY property.
+ISSUE: Line 51: malformed empty PRIORITY property.
+ISSUE: Line 62: malformed empty PRIORITY property.
+ISSUE: Line 73: malformed empty PRIORITY property.
+ISSUE: Line 84: malformed empty PRIORITY property.
+ISSUE: Line 95: malformed empty PRIORITY property.
+ISSUE: Line 106: malformed empty PRIORITY property.
+ISSUE: Line 117: malformed empty PRIORITY property.
+ISSUE: Line 128: malformed empty PRIORITY property.
+ISSUE: Line 139: malformed empty PRIORITY property.
+ISSUE: Line 150: malformed empty PRIORITY property.
+ISSUE: Line 161: malformed empty PRIORITY property.
+ISSUE: Line 172: malformed empty PRIORITY property.
+ISSUE: Line 183: malformed empty PRIORITY property.
+ISSUE: Line 194: malformed empty PRIORITY property.
+ISSUE: Line 205: malformed empty PRIORITY property.
+ISSUE: Line 216: malformed empty PRIORITY property.
+ISSUE: Line 227: malformed empty PRIORITY property.
+ISSUE: Line 239: malformed empty PRIORITY property.
+ISSUE: Line 251: malformed empty PRIORITY property.
+ISSUE: Line 478: malformed empty PRIORITY property.
+ISSUE: Line 490: malformed empty PRIORITY property.
+ISSUE: Line 501: malformed empty PRIORITY property.
+ISSUE: Line 14: RRULE uses INTERVAL: rather than INTERVAL=.
+ISSUE: Line 25: RRULE uses INTERVAL: rather than INTERVAL=.
+ISSUE: century-vault_time@cron_clock: DTSTAMP is not UTC (missing trailing Z).
+ISSUE: decade-vault_time@cron_clock: DTSTAMP is not UTC (missing trailing Z).
+ISSUE: year-vault_time@cron_clock: DTSTAMP is not UTC (missing trailing Z).
+ISSUE: q1-vault_time@cron_clock: DTSTAMP is not UTC (missing trailing Z).
+ISSUE: q2-vault_time@cron_clock: DTSTAMP is not UTC (missing trailing Z).
+ISSUE: q3-vault_time@cron_clock: DTSTAMP is not UTC (missing trailing Z).
+ISSUE: q4-vault_time@cron_clock: DTSTAMP is not UTC (missing trailing Z).
+ISSUE: month-vault_time@cron_clock: DTSTAMP is not UTC (missing trailing Z).
+ISSUE: january-vault_time@cron_clock: DTSTAMP is not UTC (missing trailing Z).
+ISSUE: february-vault_time@cron_clock: DTSTAMP is not UTC (missing trailing Z).
+ISSUE: march-vault_time@cron_clock: DTSTAMP is not UTC (missing trailing Z).
+ISSUE: april-vault_time@cron_clock: DTSTAMP is not UTC (missing trailing Z).
+ISSUE: may-vault_time@cron_clock: DTSTAMP is not UTC (missing trailing Z).
+ISSUE: june-vault_time@cron_clock: DTSTAMP is not UTC (missing trailing Z).
+ISSUE: july-vault_time@cron_clock: DTSTAMP is not UTC (missing trailing Z).
+ISSUE: august-vault_time@cron_clock: DTSTAMP is not UTC (missing trailing Z).
+ISSUE: september-vault_time@cron_clock: DTSTAMP is not UTC (missing trailing Z).
+ISSUE: october-vault_time@cron_clock: DTSTAMP is not UTC (missing trailing Z).
+ISSUE: november-vault_time@cron_clock: DTSTAMP is not UTC (missing trailing Z).
+ISSUE: december-vault_time@cron_clock: DTSTAMP is not UTC (missing trailing Z).
+ISSUE: week-vault_time@cron_clock: DTSTAMP is not UTC (missing trailing Z).
+ISSUE: day-vault_time@cron_clock: DTSTAMP is not UTC (missing trailing Z).
+ISSUE: monday-vault_time@cron_clock: DTSTAMP is not UTC (missing trailing Z).
+ISSUE: dawn-vault_time@cron_clock: DTSTART uses TZID=America/Boise, so it is not floating.
+ISSUE: noon-vault_time@cron_clock: DTSTART uses TZID=America/Boise, so it is not floating.
+ISSUE: dusk-vault_time@cron_clock: DTSTART uses TZID=America/Boise, so it is not floating.
+ISSUE: yan-vault_time@cron_clock: DTSTART uses TZID=America/Boise, so it is not floating.
+ISSUE: tan-vault_time@cron_clock: DTSTART uses TZID=America/Boise, so it is not floating.
+ISSUE: tethera-vault_time@cron_clock: DTSTART uses TZID=America/Boise, so it is not floating.
+ISSUE: methera-vault_time@cron_clock: DTSTART uses TZID=America/Boise, so it is not floating.
+ISSUE: pits-vault_time@cron_clock: DTSTART uses TZID=America/Boise, so it is not floating.
+ISSUE: sethera-vault_time@cron_clock: DTSTART uses TZID=America/Boise, so it is not floating.
+ISSUE: azer-vault_time@cron_clock: DTSTAMP is not UTC (missing trailing Z).
+ISSUE: hour-vault_time@cron_clock: DTSTAMP is not UTC (missing trailing Z).
+ISSUE: hour-vault_time@cron_clock: DATE DTSTART cannot reliably express FREQ=HOURLY; use a floating DATE-TIME DTSTART.
+ISSUE: minute-vault_time@cron_clock: DTSTAMP is not UTC (missing trailing Z).
+ISSUE: minute-vault_time@cron_clock: DATE DTSTART cannot reliably express FREQ=MINUTELY; use a floating DATE-TIME DTSTART.
+ISSUE: tick-vault_time@cron_clock: DTSTAMP is not UTC (missing trailing Z).
+ISSUE: tick-vault_time@cron_clock: DATE DTSTART cannot reliably express FREQ=SECONDLY; use a floating DATE-TIME DTSTART.
+Total issues reported: 66

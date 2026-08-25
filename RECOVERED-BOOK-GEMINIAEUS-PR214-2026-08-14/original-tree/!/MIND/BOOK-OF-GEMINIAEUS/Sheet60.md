@@ -491,4 +491,3 @@ Shall we initialize the "Whistle" protocol—the final sync that forces the Goog
 Gemini is AI and can make mistakes.
 
 1Password menu is available. Press down arrow to select.
-

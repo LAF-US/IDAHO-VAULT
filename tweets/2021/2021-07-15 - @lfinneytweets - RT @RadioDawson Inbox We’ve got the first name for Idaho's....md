@@ -24,6 +24,7 @@ related:
 RT @RadioDawson: Inbox: We’ve got the first name for Idaho's six-member redistricting commission #idpol #idleg <https://t.co/nuAvHQVXMi>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/E6WrLACUcAcC6rF.png)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1415726459608436736)

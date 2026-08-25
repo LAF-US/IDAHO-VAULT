@@ -42,22 +42,26 @@ Read `report.md` to understand the root cause, affected files, and suggested app
 For IDAHO-VAULT, make changes based on the issue type:
 
 ### Content/Link Fixes
+
 - Update broken links to point to correct files
 - Verify the target file exists
 - Update all references if files were moved
 
 ### Metadata Fixes
+
 - Correct metadata in file headers or frontmatter
 - Ensure consistency with other files
 - Verify the metadata format is valid
 
 ### Workflow Fixes
+
 - Fix syntax errors in workflow files
 - Update references to renamed/moved files
 - Ensure dependencies are correct
 - Update environment variables or secrets
 
 ### Organization Fixes
+
 - Move files to correct locations
 - Rename files for consistency
 - Update all references to the moved/renamed files
@@ -65,12 +69,14 @@ For IDAHO-VAULT, make changes based on the issue type:
 **Protected surfaces — mandatory stop condition:** Before proposing or making any move, rename, or restructuring change, read the applicable frontmatter and `VAULT-CONVENTIONS.md`. Do not modify `!/`, root-flat notes, or another agent's persona folder without Logan's explicit authorization. Record the blocked recommendation in `report.md` and return `fixed: false` when the requested change touches a protected surface.
 
 **Keep it minimal:**
+
 - Only change what's necessary to fix the bug
 - Don't refactor unrelated content
 - Don't add new features
 - Preserve historical accuracy
 
 **Consider edge cases:**
+
 - Will this break other references?
 - Are there multiple files with the same issue?
 - Should all similar cases be fixed?
@@ -86,6 +92,7 @@ After making changes:
 ## Step 4: Check for Regressions
 
 Check that your fix doesn't introduce new problems:
+
 - Search for other references to the changed files
 - Verify similar files don't have the same issue
 - Check that navigation and links still work

@@ -17,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoReports: Idaho Reports is back at @treefortfest's @storyfortfest this year! #idleg #idpol 
+RT @IdahoReports: Idaho Reports is back at @treefortfest's @storyfortfest this year! #idleg #idpol
 <https://t.co/wrK6EhHId2> <https://t.co/e5…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1437501990393683968)

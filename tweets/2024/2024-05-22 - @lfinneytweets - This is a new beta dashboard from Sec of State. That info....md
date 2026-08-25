@@ -21,6 +21,7 @@ related:
 <https://t.co/w2rsdDkzG5>
 
 ## Links
+
 - <https://sos.idaho.gov/elect/voterreg/turnout.html>
 
 *In reply to [@No_ID_Lady](https://twitter.com/No_ID_Lady)*

@@ -20,6 +20,7 @@ related:
 @ShelbieTHarris L03 splits the same 8 counties. Based on the file names in the map comparison tool, population deviation is 0.07% smaller. <https://t.co/xYyLIBFb1F>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/FDeVf68UcAALkTN.jpg)
 
 *In reply to [@ShelbieTHarris](https://twitter.com/ShelbieTHarris)*

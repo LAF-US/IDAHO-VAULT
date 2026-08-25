@@ -19,6 +19,7 @@ related:
 RT @BeschlossDC: “Wear a Mask,” says Portland, Oregon, during the 1918-1919 influenza pandemic: <https://t.co/orr3dBbmul>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/EbXlX3vXgAEWfn-.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1276184026479501312)

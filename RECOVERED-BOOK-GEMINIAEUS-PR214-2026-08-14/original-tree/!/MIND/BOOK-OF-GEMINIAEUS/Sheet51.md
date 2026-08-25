@@ -88,7 +88,7 @@ Here’s a breakdown of how to "level-set" your site's infrastructure to save mo
 
 Squarespace’s pricing in 2026 typically starts around $16/month (billed annually) for a basic personal site. However, the moment you want to "upscale" with custom CSS, JavaScript, or better analytics, they push you toward the $23+/month tiers.
 
-2. Potential "Vault" Alternatives
+1. Potential "Vault" Alternatives
 
 Given your background in journalism and your current use of Porkbun, here are three paths that might suit you better:
 
@@ -232,7 +232,7 @@ Total Pageviews: They crossed the 300 million total pageview mark since their 20
 
 Market Penetration: EIN often cites that their mobile app and social following (over 200k+ on Facebook) give them a "referral power" that traditional papers—burdened by paywalls—cannot match. They explicitly use the fact that they have no paywall as a comparative advantage in their pitch to advertisers and donors.
 
-2. BoiseDev’s Market Context
+1. BoiseDev’s Market Context
 
 While EIN chases the "statewide mass," BoiseDev has been putting out metrics that highlight density and engagement rather than raw volume:
 
@@ -240,7 +240,7 @@ Newsletter Open Rates: Don Day recently noted a 50% open rate for their daily ne
 
 "Most Consumed Product": BoiseDev has claimed that their morning newsletter is the most-consumed single media product in the Boise market—statistically ahead of any individual local TV newscast or printed newspaper edition in terms of direct, daily eyes.
 
-3. The "State of the News" Benchmarks
+1. The "State of the News" Benchmarks
 
 Based on recent reports, the current "unofficial" ranking of Idaho's news websites by volume looks roughly like this:
 
@@ -433,4 +433,3 @@ Would you like me to pull the specific 2026 "Domain Authority" stats for the oth
 Gemini is AI and can make mistakes.
 
 1Password menu is available. Press down arrow to select.
-

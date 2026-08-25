@@ -17,6 +17,7 @@ related:
 Election Night pizza secured 🍕 <https://t.co/2rxFGYpPhN>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/El8VQWIUYAAC3EG.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1323800189337964544)

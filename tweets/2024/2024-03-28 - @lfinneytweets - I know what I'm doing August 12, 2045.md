@@ -17,6 +17,7 @@ related:
 I know what I'm doing August 12, 2045 <https://t.co/lDAmZ1NOyg>
 
 ## Links
+
 - <https://x.com/_carsonology/status/1773033553883721985>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1773188089671741880)

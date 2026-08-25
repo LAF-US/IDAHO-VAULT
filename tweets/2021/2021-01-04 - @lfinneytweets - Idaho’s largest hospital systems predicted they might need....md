@@ -24,6 +24,7 @@ Idaho’s largest hospital systems predicted they might need to ration health ca
 <https://t.co/xL7yuFfxT6>
 
 ## Links
+
 - <https://www.boisestatepublicradio.org/post/idaho-avoids-rationing-care-covid-19-admissions-largest-hospital-system-dip>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1346179286416310274)

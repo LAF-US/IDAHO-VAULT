@@ -25,6 +25,7 @@ related:
 RT @RuthBrownNews: @IdahoReports <https://t.co/Gx7BXjLwjn> #idleg #idpol
 
 ## Links
+
 - <https://blog.idahoreports.idahoptv.org/2022/10/21/interviews-with-statewide-candidates-who-did-not-get-to-debate/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1588199776222588929)

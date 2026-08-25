@@ -99,4 +99,3 @@ That draft looks good. It clearly asks for the context packages, synthesis, and 
 Gemini is AI and can make mistakes.
 
 1Password menu is available. Press down arrow to select.
-

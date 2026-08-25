@@ -18,7 +18,7 @@ related:
   - lfinneytweets
 ---
 
-RT @StLukesAnita: .@boiseboone: "Do you believe a statewide mask mandate would actually cause harm?" 
+RT @StLukesAnita: .@boiseboone: "Do you believe a statewide mask mandate would actually cause harm?"
 @GovernorLittle: "Frankly, orders com…
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1337123266029219840)

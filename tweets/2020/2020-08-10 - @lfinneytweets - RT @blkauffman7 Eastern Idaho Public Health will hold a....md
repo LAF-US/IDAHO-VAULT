@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @blkauffman7: Eastern Idaho Public Health will hold a special meeting tonight to address this weekend's spike in active COVID cases. 
+RT @blkauffman7: Eastern Idaho Public Health will hold a special meeting tonight to address this weekend's spike in active COVID cases.
 
 A…
 

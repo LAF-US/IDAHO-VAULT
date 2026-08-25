@@ -14,9 +14,7 @@ Usage:
   python3 wayback_audit.py --limit N # only check first N URLs (for testing)
 """
 
-import os
 import re
-import sys
 import time
 import json
 import argparse

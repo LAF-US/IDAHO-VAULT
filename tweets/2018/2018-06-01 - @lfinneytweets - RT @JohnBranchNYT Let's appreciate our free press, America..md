@@ -19,6 +19,7 @@ related:
 RT @JohnBranchNYT: Let's appreciate our free press, America. <https://t.co/G9qwmfQQVZ>
 
 ## Links
+
 - <https://x.com/Flip_Stewart/status/1002312321371340802>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1002361456807964672)

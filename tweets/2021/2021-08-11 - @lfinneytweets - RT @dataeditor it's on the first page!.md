@@ -19,6 +19,7 @@ related:
 RT @dataeditor: it's on the first page! <https://t.co/UAOVDqFg0B>
 
 ## Links
+
 - <https://x.com/theferocity/status/1425408005735161856>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1425484067751927818)

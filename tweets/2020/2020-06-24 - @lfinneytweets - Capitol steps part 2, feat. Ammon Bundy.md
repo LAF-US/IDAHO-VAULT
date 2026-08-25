@@ -18,6 +18,7 @@ related:
 Capitol steps part 2, feat. Ammon Bundy <https://t.co/bKTn3QSj3B>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/EbQG3rjWAAApYPQ.jpg)
 - ![alt text needed](https://pbs.twimg.com/media/EbQG5tBWsAA_BrY.jpg)
 - ![alt text needed](https://pbs.twimg.com/media/EbQG8XWWkAAOU-n.jpg)

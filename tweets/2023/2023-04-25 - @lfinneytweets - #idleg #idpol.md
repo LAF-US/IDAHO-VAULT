@@ -22,6 +22,7 @@ related:
 \#idleg #idpol <https://t.co/Tkr4kOQrza>
 
 ## Links
+
 - <https://x.com/DailyBee/status/1650901055532830721>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1650914324188381185)

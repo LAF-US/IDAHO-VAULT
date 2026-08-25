@@ -20,6 +20,7 @@ RT @CdAPressNews: <https://t.co/g9JyNJCeb0>
 Nearly 50 people participated in the Idaho Legislative Town Hall presented by Kootenai County Dem…
 
 ## Links
+
 - <https://cdapress.com/news/2021/apr/01/we-will-win-kootenai-county/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1377655241575866368)

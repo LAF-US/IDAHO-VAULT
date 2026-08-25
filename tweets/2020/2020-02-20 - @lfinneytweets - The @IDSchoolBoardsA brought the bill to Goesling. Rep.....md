@@ -20,7 +20,7 @@ related:
   - idpol
 ---
 
-The @IDSchoolBoardsA brought the bill to Goesling. 
+The @IDSchoolBoardsA brought the bill to Goesling.
 
 Rep. Andrus makes a motion to introduce the bill. He says the subject is out of his realm of expertise but he wants to have a discussion on the idea. Motion passes on voice vote (with a few no’s). #idleg #idpol
 

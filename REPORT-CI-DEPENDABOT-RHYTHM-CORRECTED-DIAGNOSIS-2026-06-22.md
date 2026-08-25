@@ -14,9 +14,9 @@ related:
 
 # Corrected Diagnosis — Dependabot Rhythm `startup_failure`
 
-**Issued by:** GitHub Copilot  
-**Date:** 2026-06-22  
-**Related issues:** #595 (LAF-53), #633  
+**Issued by:** GitHub Copilot
+**Date:** 2026-06-22
+**Related issues:** #595 (LAF-53), #633
 **File repaired:** `.github/workflows/dependabot-rhythm.yml`
 
 ---
@@ -47,6 +47,7 @@ permissions are declared at the workflow level — the `if:` guard on the job
 reached because the workflow never starts.
 
 This is distinct from both original candidates:
+
 - Not an org policy issue — it is GitHub's built-in fork-PR privilege
   escalation prevention on `pull_request_target` + write permissions.
 - Not a stale SHA — the action reference is intact.
@@ -68,5 +69,5 @@ that previously triggered two noisy failed runs per push event.
 
 ---
 
-_Filed by GitHub Copilot · 2026-06-22_  
+_Filed by GitHub Copilot · 2026-06-22_
 _See also: Issue #595 (LAF-53), Issue #633_

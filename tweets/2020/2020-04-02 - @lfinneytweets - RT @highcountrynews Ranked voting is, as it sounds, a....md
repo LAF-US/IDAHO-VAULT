@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @highcountrynews: Ranked voting is, as it sounds, a voting system in which people rank their choices for the best candidate. 
+RT @highcountrynews: Ranked voting is, as it sounds, a voting system in which people rank their choices for the best candidate.
 
 Benton Co…
 

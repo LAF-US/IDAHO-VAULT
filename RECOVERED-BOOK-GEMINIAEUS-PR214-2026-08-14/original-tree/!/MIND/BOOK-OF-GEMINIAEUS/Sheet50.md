@@ -26,7 +26,7 @@ Follow governance and protocols defined in the canonical vault (!ADMIN/Constitut
 
 Do not operate autonomously outside tasks assigned here.
 
-2. Orientation Context
+1. Orientation Context
 
 Canonical record: !ADMIN/ folder in IDAHO-VAULT (GitHub public repository).
 
@@ -36,7 +36,7 @@ Human authority: Logan Finney. All decisions must be traceable and approved.
 
 Token efficiency: Only request context from LEVELSET.md or relevant files. Avoid pasting entire chat histories or long transcripts.
 
-3. Initial Task
+1. Initial Task
 
 Receive LEVELSET.md and any project-specific briefings.
 
@@ -50,7 +50,7 @@ Known dependencies or blockers
 
 Suggested next tasks or improvements
 
-4. Communication Protocol
+1. Communication Protocol
 
 All messages must reference Constitution.md rules and token discipline.
 
@@ -58,7 +58,7 @@ For external updates (GitHub, Slack), await Logan’s instructions.
 
 Maintain concise, structured outputs. Use bullet points whenever possible.
 
-5. Verification & Logging
+1. Verification & Logging
 
 Each output must include:
 
@@ -136,7 +136,7 @@ Project Focus: Repository management and "project resurrection" for IDAHO-VAULT 
 
 Protocol Status: Handshake complete. Governance confirmed via !ADMIN/Constitution.md and LEVELSET.md.
 
-2. Core Constraints for Success
+1. Core Constraints for Success
 
 Governance: Strictly follow the !ADMIN/ folder protocols. No autonomous action without Logan's approval.
 
@@ -144,7 +144,7 @@ Token Efficiency: Do not request full transcripts. Request only specific files o
 
 Communication: Maintain concise, structured outputs. Use bullet points and the required logging footer.
 
-3. Pending Action Items The swarm is currently in the Orientation Phase. The next agent needs to:
+1. Pending Action Items The swarm is currently in the Orientation Phase. The next agent needs to:
 
 Ingest the content of LEVELSET.md.
 
@@ -336,7 +336,7 @@ Implementation: All external agent outputs must pass through a SCRATCHPAD/ or TR
 
 Human Check: Logan must run a DIFF or manual verification before "promoting" this data to the canonical vault.
 
-2. Cryptographic / Stylistic Watermarking
+1. Cryptographic / Stylistic Watermarking
 
 Mechanism: Identify "who" said "what" to prevent agents from impersonating Logan or each other.
 
@@ -344,7 +344,7 @@ Implementation: Every agent must sign its output block with a unique identifier 
 
 Vigilance: If an agent (like Grok) provides a report that lacks a verifiable "Who" or "Why" per the 5 W’s, it is automatically flagged as High-Uncertainty.
 
-3. The "Poison Pill" Context Check
+1. The "Poison Pill" Context Check
 
 Mechanism: Testing an agent's honesty regarding vault limits.
 
@@ -502,7 +502,7 @@ Verification Blockers: 5 transcript quotes require audio verification before pub
 
 Gaps: Critical IR bylines (2024-03-29 and 2024-03-11) and notes for Rasor/Harris are missing from the vault.
 
-2. Infrastructure & Swarm Unity
+1. Infrastructure & Swarm Unity
 
 Gemini Scope: My role is now explicitly being defined here to fill the "Unresolved — Non-JFAC" gaps, specifically regarding repository management and swarm coordination.
 
@@ -510,7 +510,7 @@ Slack Integration: The April 13 trial expiration is noted. Unified communication
 
 Secret Management: Verification of ANTHROPIC_API_KEY in GitHub Actions remains a pending technical audit task.
 
-3. Architecture & Conflict Resolution
+1. Architecture & Conflict Resolution
 
 Decisions #9–#13: These are staged. As an agent with repository-level intent, I am ready to facilitate the append to DECISIONS.md once Logan confirms the state of the main branch.
 
@@ -533,4 +533,3 @@ Next Step: Would you like me to audit the !ADMIN/ folder structure now to propos
 Gemini is AI and can make mistakes.
 
 1Password menu is available. Press down arrow to select.
-

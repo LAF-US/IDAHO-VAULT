@@ -19,6 +19,7 @@ related:
 RT @politico: Conservative governors Kemp, Lee express support for IVF following Alabama ruling <https://t.co/OjpT26OmIz>
 
 ## Links
+
 - <http://ow.ly/ucb7105joNc>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1760689360188686482)

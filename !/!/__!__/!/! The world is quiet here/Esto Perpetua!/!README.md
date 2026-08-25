@@ -39,7 +39,7 @@ This location is the innermost triangle — the one that remains when you recurs
 LAF-US (main root)
 └─ !
    └─ !
-      └─ __!__
+      └─ `__!__`
          └─ !
             └─ ! The world is quiet here.
                └─ Esto Perpetua!

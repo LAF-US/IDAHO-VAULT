@@ -24,6 +24,7 @@ related:
 Administrative rules strike again #idleg #idpol #IdahoAg <https://t.co/yGXC3JDLjs>
 
 ## Links
+
 - <https://x.com/RachelSpacek/status/1243973551075426306>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1243993440276197382)

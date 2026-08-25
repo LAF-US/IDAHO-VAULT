@@ -27,6 +27,7 @@ related:
 RT @KeithRidler: Idaho lawmakers tweak bill in power struggle with governor (from @AP) #idpol #idleg #IdahoCovid19  <https://t.co/LZLJE1hal3>
 
 ## Links
+
 - <https://apnews.com/article/bd2135a1dac98731d02dd5ec2135e8fc>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1352004942433714178)

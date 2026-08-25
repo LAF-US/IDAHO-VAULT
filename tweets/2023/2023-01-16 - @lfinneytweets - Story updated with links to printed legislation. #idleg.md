@@ -20,6 +20,7 @@ related:
 Story updated with links to printed legislation. #idleg <https://t.co/MTIctBu89b>
 
 ## Links
+
 - <https://x.com/RuthBrownNews/status/1615049673622040576>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1615068201691516928)

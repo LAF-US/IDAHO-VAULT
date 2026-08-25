@@ -25,6 +25,7 @@ related:
 I could talk about details of the sales tax distribution formula until the cows come home, so it's a good thing @mlcarmel was here to keep me grounded. Go listen to why (aside from the school election) @GovernorLittle  vetoed the big property tax relief bill! #idleg #idpol <https://t.co/fdXsENUN2V>
 
 ## Links
+
 - <https://x.com/IdahoReports/status/1641137930667163667>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1641139477413351425)

@@ -11,6 +11,10 @@ description: >
 updated: 2026-06-03
 ---
 
+> **SOURCE ATTRIBUTION**  
+> This content is a web-clipped excerpt from GitHub's official changelog: "Copilot coding agent now has its own web browser" (https://github.blog/changelog/2025-07-02-copilot-coding-agent-now-has-its-own-web-browser/).  
+> Clipped for reference and internal documentation purposes. Original changelog is maintained by GitHub; refer to the source for licensing details.
+
 [GitHub Copilot coding agent](https://docs.github.com/copilot/using-github-copilot/coding-agent), available in public preview, now has access to a web browser out of the box, powered by the [Playwright MCP server](https://github.com/microsoft/playwright-mcp). This feature is in public preview.
 
 When you delegate a task to Copilot, the agent starts work in the background in its own development

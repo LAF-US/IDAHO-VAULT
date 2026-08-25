@@ -48,7 +48,7 @@ No ruler builds roads, enforces laws, or defends the realm alone. The individual
 The vault's keys are its **ministers and county-officers**, and they map to the classic enumeration of keys:
 
 | Classic key | Vault office |
-|---|---|
+| --- | --- |
 | an army, and someone to run it | the sheriff and the *posse comitatus* — force, lawfully raised |
 | treasure, and someone to collect it | the **Treasurer** (*thesaurus*, keeper of the chest) |
 | law, and someone to enforce it | the **Sheriff** (*vicecomes*, executor of the writ) |
@@ -104,7 +104,7 @@ To be a **good key**:
 ## Relation to the engine-triangle
 
 | Doctrine | Governs | The Power Principle's contribution |
-|---|---|---|
+| --- | --- | --- |
 | Emanationism | how authority flows (down, into scope) | supplies the upward direction (recognition) the flow depends on |
 | Personae Engine | who an entity is (naming, disclosure) | naming = the recognition-act that grants standing |
 | Standing Engine | what an entity may do (scope, witness, revocability) | names recognition as the substrate of standing itself |

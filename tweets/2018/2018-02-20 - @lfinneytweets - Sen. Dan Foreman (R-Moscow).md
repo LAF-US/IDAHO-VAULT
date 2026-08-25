@@ -17,6 +17,7 @@ related:
 Sen. Dan Foreman (R-Moscow) <https://t.co/R4liBLDYCQ>
 
 ## Links
+
 - <https://x.com/APWestRegion/status/965751244252962817>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/965813827357913088)

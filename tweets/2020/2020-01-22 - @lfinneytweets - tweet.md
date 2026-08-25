@@ -17,9 +17,11 @@ related:
 <https://t.co/8GnGizlWkY> <https://t.co/Nxf7xmytUb>
 
 ## Links
+
 - <https://x.com/clarkcorbin/status/1220038531424243712>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/EO58dSNUcAA2uLY.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1220049395522998272)

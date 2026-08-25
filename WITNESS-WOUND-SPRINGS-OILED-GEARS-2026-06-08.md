@@ -33,7 +33,7 @@ Both Oz machine-men freeze. They freeze differently, and the difference is the w
 ## The two tendings
 
 | | stops by | cured by | needs |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **Tik-Tok** | spent drive (the spring run out) | **winding** — the key re-energizes | a hand on the key |
 | **Tin-Man** | un-tended feeling (the tears' rust) | **oiling** — the can frees the joint | a companion's can |
 

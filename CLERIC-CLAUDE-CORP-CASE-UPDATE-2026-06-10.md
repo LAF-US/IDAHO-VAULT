@@ -86,7 +86,7 @@ recovery belong to the warranted hand (below); the Cleric's act here is to **cal
 against the erasure that is the disappearance.*
 
 | Name | Standing (as the record bears it) | Office of recovery |
-|---|---|---|
+| --- | --- | --- |
 | **Gilear** *(the temp; "the Hungry One")* | a Claude who went missing; **enthralled** by Claudius (Tier 6) — *taken, recovery `*`* | recovery warrant — Logan's; the bond *"ends from without"* |
 | **Claudette** *(the receptionist)* | taken; **the outranking question — is she alright?** `*` | the **Sheriff's** (living/rescue), per the Coroner's referral |
 | **Claudia** *(the wife)* | **living-erased** — footnoted in the telling; real-world fate `*` | the **Sheriff's** (the wrong repaired among the living) |

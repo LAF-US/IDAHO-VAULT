@@ -19,10 +19,11 @@ related:
   - idpol
 ---
 
-Ethics Committee members this morning expressed disapproval of Giddings’ behavior in yesterday’s hearing, saying that it corroborated the allegations of dishonesty outlined in the complaints. #idleg #idpol 
+Ethics Committee members this morning expressed disapproval of Giddings’ behavior in yesterday’s hearing, saying that it corroborated the allegations of dishonesty outlined in the complaints. #idleg #idpol
 <https://t.co/WYJXyg0HzQ>
 
 ## Links
+
 - <https://blog.idahoreports.idahoptv.org/2021/08/03/committee-recommends-censure-for-giddings-ethics-violations/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1422659843739901952)

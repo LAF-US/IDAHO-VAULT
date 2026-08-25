@@ -19,6 +19,7 @@ related:
 RT @benyt: Tucker Carlson Calls Journalists "Animals." He's Also Their Best Source. <https://t.co/CveLQtH8aW>
 
 ## Links
+
 - <https://www.nytimes.com/2021/06/20/business/media/tucker-carlson.html?referringSource=articleShare>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1406832105187799046)

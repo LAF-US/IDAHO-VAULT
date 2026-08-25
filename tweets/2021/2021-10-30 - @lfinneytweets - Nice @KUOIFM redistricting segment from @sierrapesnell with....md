@@ -22,10 +22,11 @@ related:
   - idpol
 ---
 
-Nice @KUOIFM redistricting segment from @sierrapesnell with a perspective on COVID census delays and tribal reservations from @repcarolinetroy.  #idleg #idpol 
+Nice @KUOIFM redistricting segment from @sierrapesnell with a perspective on COVID census delays and tribal reservations from @repcarolinetroy.  #idleg #idpol
 <https://t.co/TU79YrY41l>
 
 ## Links
+
 - <https://open.spotify.com/episode/0SIQkfa2e95AdDzKY6HCHr?si=2STxs3fqRViJiuaLM6YGLA>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1454286746372378633)

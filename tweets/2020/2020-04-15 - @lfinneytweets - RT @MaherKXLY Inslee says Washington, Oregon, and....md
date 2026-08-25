@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @MaherKXLY: Inslee says Washington, Oregon, and California have been working together since the beginning of this outbreak. 
+RT @MaherKXLY: Inslee says Washington, Oregon, and California have been working together since the beginning of this outbreak.
 
 "We hope I…
 

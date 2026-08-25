@@ -21,6 +21,7 @@ related:
 RT @IdahoReports: Visiting the @IdahoPTV Moscow studio this week with some @uidaho journalism students! <https://t.co/fbjNppJF7u>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/FbH2fxAUYAETuDr.jpg)
 - ![alt text needed](https://pbs.twimg.com/media/FbH2iM7VsAEt25N.jpg)
 

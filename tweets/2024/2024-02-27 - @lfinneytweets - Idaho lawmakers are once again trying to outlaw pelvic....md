@@ -19,10 +19,11 @@ related:
   - idpol
 ---
 
-Idaho lawmakers are once again trying to outlaw pelvic exams being performed on unconscious patients. #idleg #idpol 
+Idaho lawmakers are once again trying to outlaw pelvic exams being performed on unconscious patients. #idleg #idpol
 <https://t.co/aewGrqYDAk>
 
 ## Links
+
 - <https://blog.idahoreports.idahoptv.org/2024/02/27/house-panel-passes-bill-to-forbid-pelvic-exams-on-unconscious-patients/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1762547499355734077)

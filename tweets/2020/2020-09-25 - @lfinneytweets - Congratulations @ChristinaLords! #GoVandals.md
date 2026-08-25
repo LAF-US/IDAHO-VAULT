@@ -22,6 +22,7 @@ related:
 Congratulations @ChristinaLords! #GoVandals <https://t.co/euXXLknS8n>
 
 ## Links
+
 - <https://x.com/uidaho/status/1309538401239085062>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1309539140040491008)

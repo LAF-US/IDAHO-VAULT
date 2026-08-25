@@ -22,6 +22,7 @@ related:
 Special Session 2020 #idleg #idpol <https://t.co/FOUx83x0q0>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/EgMsb6eU8AELfLe.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1297929978479169539)

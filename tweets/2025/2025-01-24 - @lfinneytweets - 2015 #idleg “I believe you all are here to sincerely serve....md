@@ -17,10 +17,11 @@ related:
   - idleg
 ---
 
-2015 #idleg: “I believe you all are here to sincerely serve the constituents in your district, and together we serve the citizens of Idaho. We certainly aren’t doing it for the pay,” said then-Rep. Eric Redman. His son, Jordan, now serves in the House. 
+2015 #idleg: “I believe you all are here to sincerely serve the constituents in your district, and together we serve the citizens of Idaho. We certainly aren’t doing it for the pay,” said then-Rep. Eric Redman. His son, Jordan, now serves in the House.
 <https://t.co/ynRLjRZymw>
 
 ## Links
+
 - <https://www.spokesman.com/blogs/boise/2015/feb/03/freshman-reps-prayer-we-certainly-arent-doing-it-pay/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1882594231396741348)

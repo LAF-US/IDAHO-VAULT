@@ -23,6 +23,7 @@ related:
 RT @IdahoReports: @IdahoPTV @Concordia_Law @clarkcorbin @IdahoStateU WATCH: <https://t.co/QpgT16lUff>
 
 ## Links
+
 - <https://video.idahoptv.org/video/uncertain-futures-y3sva3/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1274161438878097408)

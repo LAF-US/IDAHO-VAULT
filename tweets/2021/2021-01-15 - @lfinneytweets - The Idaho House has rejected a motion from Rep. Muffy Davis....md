@@ -24,6 +24,7 @@ related:
 The Idaho House has rejected a motion from Rep. Muffy Davis to suspend the rules and allow members with high-risk medical conditions to participate electronically from within the City of Boise. 11 Democrats in favor, 49 Republicans against. #idpol #idleg #IdahoCOVID19 <https://t.co/js2z5yFXUB>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/EryTLxMVgAA7Tc1.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1350116046204637185)

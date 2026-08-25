@@ -17,9 +17,9 @@ related:
   - idleg
 ---
 
-On the JFAC docket to close out the #idleg session: 
-· re-set the Courts budget 
-· hash out State Street language in ITD and Administration budgets 
+On the JFAC docket to close out the #idleg session:
+· re-set the Courts budget
+· hash out State Street language in ITD and Administration budgets
 · smattering of trailers to fund bills with fiscal impacts
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1772738601987506451)

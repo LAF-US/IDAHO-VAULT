@@ -14,10 +14,11 @@ related:
   - lfinneytweets
 ---
 
-It's Fat Bear Week 2022! 🐻 
+It's Fat Bear Week 2022! 🐻
 <https://t.co/TQ7iJ7nFXT>
 
 ## Links
+
 - <https://explore.org/fat-bear-week>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1577787091903467520)

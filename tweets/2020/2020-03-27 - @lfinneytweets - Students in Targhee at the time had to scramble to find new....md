@@ -18,6 +18,7 @@ related:
 Students in Targhee at the time had to scramble to find new living arrangements. @uidahohousing told them that the move would be temporary—only two years—and they were considering remodeling the building. It has sat empty on the edge of campus since then. <https://t.co/WwHpY7sMsL>
 
 ## Links
+
 - <https://www.uiargonaut.com/2016/03/31/the-price-of-targhee-targhee-hall-should-be-back-as-a-housing-facility/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

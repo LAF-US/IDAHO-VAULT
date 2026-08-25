@@ -1,8 +1,11 @@
 ---
-title: CIRCLECI
+canonical_name: CIRCLECI
+persona_class: infrastructure
+origin: CI/CD
+status: active
 authority: LOGAN
-related:
-- The world is quiet here
 ---
 
-[ ? ]
+# CircleCI
+
+Continuous integration and deployment pipeline configuration. See `.circleci/` for chamber files and pipeline definition.

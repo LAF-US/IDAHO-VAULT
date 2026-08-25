@@ -20,6 +20,7 @@ related:
 \#IdahoCovid19 Gothic <https://t.co/ldyxeXsO96>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/ETbbIgOX0AA_qne.jpg)
 - ![alt text needed](https://pbs.twimg.com/media/ETbbJRuX0AIlSYe.jpg)
 - ![alt text needed](https://pbs.twimg.com/media/ETbbKN1XQAUJnS8.jpg)

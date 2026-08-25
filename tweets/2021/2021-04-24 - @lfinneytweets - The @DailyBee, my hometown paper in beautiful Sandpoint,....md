@@ -26,6 +26,7 @@ The @DailyBee, my hometown paper in beautiful Sandpoint, ID, is hiring a cops/co
 <https://t.co/Pzxgrp5jEP>
 
 ## Links
+
 - <https://www.journalismjobs.com/1664674-reporter->
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1385779295352606725)

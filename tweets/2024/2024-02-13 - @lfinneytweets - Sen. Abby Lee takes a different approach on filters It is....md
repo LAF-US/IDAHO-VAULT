@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-Sen. Abby Lee takes a different approach on filters: 
+Sen. Abby Lee takes a different approach on filters:
 "It is similar to getting in your car and having your air bag not work until you can figure it out how to turn it on. It's already in your car... We've already said what are the safety devices that should be in this vehicle?"
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

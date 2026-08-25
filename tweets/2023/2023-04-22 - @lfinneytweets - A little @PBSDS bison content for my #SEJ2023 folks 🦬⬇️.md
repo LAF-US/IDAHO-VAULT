@@ -20,10 +20,11 @@ related:
   - SEJ2023
 ---
 
-A little @PBSDS bison content for my #SEJ2023 folks 🦬⬇️ 
+A little @PBSDS bison content for my #SEJ2023 folks 🦬⬇️
 <https://t.co/Fxy3WCKAet>
 
 ## Links
+
 - <https://youtu.be/HuYGSrGLeZE>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

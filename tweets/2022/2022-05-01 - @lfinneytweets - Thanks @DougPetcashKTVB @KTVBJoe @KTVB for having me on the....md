@@ -23,10 +23,11 @@ related:
   - idleg
 ---
 
-Thanks @DougPetcashKTVB @KTVBJoe @KTVB for having me on the air for some election analysis! #idpol #idedu #idleg 
+Thanks @DougPetcashKTVB @KTVBJoe @KTVB for having me on the air for some election analysis! #idpol #idedu #idleg
 <https://t.co/deWjYGybzw>
 
 ## Links
+
 - <https://www.ktvb.com/article/news/local/viewpoint/viewpoint-breaking-down-idaho-superintendent-of-public-instruction-debate-critchfield-durst-ybarra/277-8ed457e0-2575-4f97-bd8f-6826577735ee>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1520850102465687553)

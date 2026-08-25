@@ -68,7 +68,7 @@ Smoke and Overheating: Running out of coolant means the engine can no longer reg
 
 Coolant Loss: The critical question is why did it run out of coolant?
 
-2. Immediate Next Steps (Diagnosis)
+1. Immediate Next Steps (Diagnosis)
 
 Since the car lost all its coolant and overheated, the priority is to find out where the coolant went and how much engine damage may have occurred.
 
@@ -92,7 +92,7 @@ Oil Check: Pull the engine oil dipstick. If the oil looks milky, foamy, or like 
 
 Expansion Tank/Radiator Check (After the car has completely cooled): If you can smell exhaust fumes in the radiator or see bubbles when the engine is running, it indicates combustion gases are leaking into the cooling system.
 
-3. Regarding the A/C Compressor
+1. Regarding the A/C Compressor
 
 The A/C compressor stopping is likely a separate, unrelated issue from the overheating problem. However, the belt that drives the A/C compressor also often drives the water pump.
 
@@ -126,7 +126,7 @@ If you refill the coolant and start it, you could be running the engine with a d
 
 Even running it for a few minutes to "move it on" could be enough to cause irreversible, catastrophic damage to the head gaskets, cylinder heads, or the engine block itself. This would turn a repairable leak into an engine replacement.
 
-2. Identifying the Cause of Overheating
+1. Identifying the Cause of Overheating
 
 The coolant didn't just disappear—it leaked out or was pushed out due to a failure. You need to know which one:
 
@@ -138,7 +138,7 @@ Failed Water Pump/Belt The coolant won't circulate, causing immediate, severe ov
 
 Blown Head Gasket Hot combustion gases will pressurize the new coolant, causing it to boil/force its way out, leading to quick overheating and potential internal damage (coolant mixing with oil).
 
-3. A/C Compressor Connection
+1. A/C Compressor Connection
 
 As mentioned, there is a possibility that the A/C compressor seized up and caused the serpentine belt to snap or slip. The serpentine belt drives the water pump.
 
@@ -210,7 +210,7 @@ The car must not be running when you perform this inspection.
 
 Do NOT put your fingers near any pulleys or belts while the engine is running or immediately after it was running.
 
-2. Locate the Serpentine Belt
+1. Locate the Serpentine Belt
 
 The serpentine belt (or accessory belt) is a single, long, ribbed belt that drives the accessories on the front of the engine.
 
@@ -220,7 +220,7 @@ The serpentine belt (or accessory belt) is a single, long, ribbed belt that driv
 
 3. Identify the Serpentine Belt: The serpentine belt powers accessories like the alternator, the power steering pump, and, importantly in your case, the A/C compressor and the water pump.
 
-3. Check for the Serpentine Belt's Presence
+4. Check for the Serpentine Belt's Presence
 
 The absolute most important thing to check is if the belt is even there.
 
@@ -230,7 +230,7 @@ If the belt is broken or missing: This is the direct cause of the overheating. T
 
 If you see shredded rubber near the pulleys, this indicates a failure.
 
-4. Inspect the Belt Condition (If Present)
+1. Inspect the Belt Condition (If Present)
 
 If the belt is still in place, check its overall condition and tension.
 
@@ -244,7 +244,7 @@ Missing Chunks or Peeling: Any chunkiness or material coming off the ribs means 
 
 Glazing: The smooth side of the belt should not look shiny or glazed. A shiny belt indicates it has been slipping, which causes friction and excessive heat.
 
-5. Check the Pulleys (The A/C Connection)
+1. Check the Pulleys (The A/C Connection)
 
 Since your A/C compressor stopped working, check its pulley specifically:
 
@@ -300,7 +300,7 @@ Example: You hit a large deer (Comprehensive coverage) and the collision fractur
 
 Example: Your engine overheated because of damage from a fire or a flood (Comprehensive coverage).
 
-2. Mechanical Breakdown Insurance (MBI):
+1. Mechanical Breakdown Insurance (MBI):
 
 This is an optional add-on offered by some insurers (like a low-cost, long-term extended warranty). If you specifically purchased MBI when you bought your policy, it is designed to cover mechanical failures like a failed water pump, which may lead to overheating. However, even MBI often excludes damage caused by a driver continuing to operate the vehicle after an overheating warning.
 
@@ -448,7 +448,7 @@ KBB Fair Purchase Price/Private Party: $3,000 - $4,500 (depending on mileage and
 
 Note: If your car is the base 2.5i Wagon, the KBB Fair Purchase Price is listed around $3,129. If it's the higher-end 2.5i Limited, it's around $3,744. Dealer retail prices would be higher.
 
-2. Trade-In Value (Non-Running/Blown Head Gasket)
+1. Trade-In Value (Non-Running/Blown Head Gasket)
 
 This is the critical number for your decision. Because the car is not running due to a known, expensive engine fault, the value drops significantly.
 
@@ -506,7 +506,7 @@ No Credit Check: The $3,000 to $4,000 repair cost doesn't require a credit appli
 
 The "Cost" is Temporary: Once the head gasket is fixed, you have a solid, running car with a new, expensive maintenance item (the timing belt) out of the way. You can then focus on improving your credit before needing another car.
 
-2. Strategies for Financing a Replacement Car (If you MUST buy)
+1. Strategies for Financing a Replacement Car (If you MUST buy)
 
 If you decide you cannot keep the Outback, you can still get a loan, but you must be prepared and strategic.
 
@@ -541,4 +541,3 @@ Repair Cost vs. (New Car Price - Trade-In Value) + High Interest Cos
 Gemini is AI and can make mistakes.
 
 1Password menu is available. Press down arrow to select.
-

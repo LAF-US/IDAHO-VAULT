@@ -17,12 +17,13 @@ related:
   - lfinneytweets
 ---
 
-@realgarthnewman There have been multiple bills on vaccines this session, one of which the sponsor literally described as "a civil rights bill" in its statement of purpose. 
-<https://t.co/JIUfLGKTRs> 
-<https://t.co/tKmERpA5Am> 
+@realgarthnewman There have been multiple bills on vaccines this session, one of which the sponsor literally described as "a civil rights bill" in its statement of purpose.
+<https://t.co/JIUfLGKTRs>
+<https://t.co/tKmERpA5Am>
 <https://t.co/rtvOG09Mwi>
 
 ## Links
+
 - <https://legislature.idaho.gov/sessioninfo/2021/legislation/H0425/>
 - <https://legislature.idaho.gov/sessioninfo/2021/legislation/H0414/>
 - <https://legislature.idaho.gov/sessioninfo/2021/legislation/H0412/>

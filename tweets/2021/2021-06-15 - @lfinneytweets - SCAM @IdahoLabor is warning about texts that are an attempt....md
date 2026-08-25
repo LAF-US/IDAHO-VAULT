@@ -23,6 +23,7 @@ SCAM: @IdahoLabor is warning about texts that are an attempt to steal personal i
 <https://t.co/Vq9XI7xgLX>
 
 ## Links
+
 - <https://idahocapitalsun.com/briefs/did-you-get-a-text-about-unemployment-claims-delete-it-idaho-department-of-labor-says/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1404899869379088387)

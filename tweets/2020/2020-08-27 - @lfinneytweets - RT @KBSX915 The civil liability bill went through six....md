@@ -23,7 +23,7 @@ related:
   - IdahoCovid19
 ---
 
-RT @KBSX915: The civil liability bill went through six different versions before being approved. #idpol #idleg #IdahoCovid19 
+RT @KBSX915: The civil liability bill went through six different versions before being approved. #idpol #idleg #IdahoCovid19
 
 <https://t.co…>
 

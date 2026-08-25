@@ -21,4 +21,3 @@ BMO refers to themselves as a machine but also as a tiny, sentient video game co
 Gemini is AI and can make mistakes.
 
 1Password menu is available. Press down arrow to select.
-

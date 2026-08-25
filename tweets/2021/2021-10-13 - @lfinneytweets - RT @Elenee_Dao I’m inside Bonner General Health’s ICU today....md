@@ -19,7 +19,7 @@ related:
   - COVID19
 ---
 
-RT @Elenee_Dao: I’m inside Bonner General Health’s ICU today as the hospital and North Idaho continue their fight against #COVID19. 
+RT @Elenee_Dao: I’m inside Bonner General Health’s ICU today as the hospital and North Idaho continue their fight against #COVID19.
 
 These…
 

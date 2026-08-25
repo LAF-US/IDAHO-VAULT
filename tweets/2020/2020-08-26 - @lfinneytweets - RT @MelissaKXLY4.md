@@ -19,9 +19,11 @@ related:
 RT @MelissaKXLY4: <https://t.co/151qlGGayo> <https://t.co/8QHyW5PMcd>
 
 ## Links
+
 - <https://x.com/KalhanR/status/1298401095144935425>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/EgXNxC2UMAQ0Cn2.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1298672553037242368)

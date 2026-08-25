@@ -18,7 +18,7 @@ related:
   - idleg
 ---
 
-Senate approves Criminal Justice Integrated Data System 26-2-7. 
+Senate approves Criminal Justice Integrated Data System 26-2-7.
 
 That’s all my attention span can take in a row without more caffeine. Plenty more to consider today, including minimum marriage age, birth certificates, and ballot initiatives. #idleg
 

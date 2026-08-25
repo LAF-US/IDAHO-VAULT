@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @JaniceMcGeachin: You can choose to get vaccinated and still be against mandates. These positions are not mutually exclusive. 
+RT @JaniceMcGeachin: You can choose to get vaccinated and still be against mandates. These positions are not mutually exclusive.
 
 https://…
 

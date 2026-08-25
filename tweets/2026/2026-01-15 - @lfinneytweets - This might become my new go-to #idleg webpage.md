@@ -17,10 +17,11 @@ related:
   - idleg
 ---
 
-This might become my new go-to #idleg webpage 
+This might become my new go-to #idleg webpage
 <https://t.co/kVzUp8NiNx>
 
 ## Links
+
 - <https://legislature.idaho.gov/sessioninfo/agenda/meeting-summary/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/2011620985527812481)

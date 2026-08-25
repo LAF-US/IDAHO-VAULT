@@ -1,4 +1,4 @@
-# Test script for VaultStabilization module
+﻿# Test script for VaultStabilization module
 
 # Import the module
 try {

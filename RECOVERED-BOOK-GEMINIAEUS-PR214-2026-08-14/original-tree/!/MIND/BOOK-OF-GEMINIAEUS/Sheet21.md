@@ -85,4 +85,3 @@ Would you like me to help you draft a checklist of the specific files within the
 Gemini is AI and can make mistakes.
 
 1Password menu is available. Press down arrow to select.
-

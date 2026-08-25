@@ -24,6 +24,7 @@ related:
 RT @BetsyZRussell: Eye on Boise: Senate passes Bayer's circuit-breaker relief bill,  34-0 #idleg #idpol  <https://t.co/YcjlE2bEVB> <https://t.…>
 
 ## Links
+
 - <https://www.idahopress.com/eyeonboise/senate-passes-bayers-circuit-breaker-relief-bill-34-0/article_7c4d02ab-89cc-57b9-88aa-8a9f2236023b.html>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1489689097568276480)

@@ -15,6 +15,7 @@ related:
 authority: LOGAN
 ---
 [[B]][[O]][[O]][[T]][[S]][[T]][[R]][[A]][[P]]
+
 # BOOTSTRAP PROMPT
 
 **Usage:** After running TOSS on a conversation and copying the output, paste the BOOTSTRAP prompt below into CODE AUTHORITY (Claude Code), followed by the TOSS dump. CODE AUTHORITY will validate, vault, and integrate the context.

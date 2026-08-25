@@ -14,10 +14,11 @@ related:
   - lfinneytweets
 ---
 
-@mddlfrk If you're referring to the Buster brothers, one is listed in Spokane. Local media has done a good job on those regional connections. 
+@mddlfrk If you're referring to the Buster brothers, one is listed in Spokane. Local media has done a good job on those regional connections.
 <https://t.co/TNzeZeYOVz>
 
 ## Links
+
 - <https://x.com/EmmaEpperly/status/1536728896002920448?t=L-_CJNen_ns0dUM1KQTJXA>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1536913360444215297)

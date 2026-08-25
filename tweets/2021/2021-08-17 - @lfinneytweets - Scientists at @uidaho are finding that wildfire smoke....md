@@ -23,6 +23,7 @@ related:
 Scientists at @uidaho are finding that wildfire smoke dampens milk production and coincides with increased risk of disease in dairy cows. #idwx @highcountrynews <https://t.co/PwRF0GlSei>
 
 ## Links
+
 - <https://x.com/thatsMohrlikeit/status/1427316110118952976>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1427445194027270145)

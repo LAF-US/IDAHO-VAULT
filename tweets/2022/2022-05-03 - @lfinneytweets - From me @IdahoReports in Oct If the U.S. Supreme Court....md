@@ -20,6 +20,7 @@ From me @IdahoReports in Oct: If the U.S. Supreme Court strikes down Roe v. Wad
 <https://t.co/Gg4Om47kqj>
 
 ## Links
+
 - <https://blog.idahoreports.idahoptv.org/2021/10/04/upcoming-scotus-case-could-reshape-idaho-abortion-law/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1521304903536152576)

@@ -17,6 +17,7 @@ related:
 BRB, moving to become a hermit in the woods where the algorithms can't find me <https://t.co/4iRWQb7Za6>
 
 ## Links
+
 - <https://x.com/audreydutton/status/1432772808753377281>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1432795178520121345)

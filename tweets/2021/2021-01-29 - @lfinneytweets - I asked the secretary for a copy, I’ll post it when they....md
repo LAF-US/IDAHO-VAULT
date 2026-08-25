@@ -16,10 +16,11 @@ related:
   - lfinneytweets
 ---
 
-@JoshScholer I asked the secretary for a copy, I’ll post it when they get back to me. In the meantime, enjoy the benefits of having someone in the room where it happened: 
+@JoshScholer I asked the secretary for a copy, I’ll post it when they get back to me. In the meantime, enjoy the benefits of having someone in the room where it happened:
 <https://t.co/r7ft88yaZ7>
 
 ## Links
+
 - <https://x.com/BetsyZRussell/status/1355204927178465282>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1355216424206172162)

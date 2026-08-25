@@ -17,6 +17,7 @@ related:
 What's happening here? Some North Idaho-Eastern Washington shade? <https://t.co/VULeFqi9Lm>
 
 ## Links
+
 - <https://x.com/NewsWithKevin/status/1249819806489931776>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1249825790029529088)

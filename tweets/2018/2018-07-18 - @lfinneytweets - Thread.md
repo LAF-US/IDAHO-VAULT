@@ -17,6 +17,7 @@ related:
 Thread <https://t.co/LDRjZPm7W8>
 
 ## Links
+
 - <https://x.com/mckaycoppins/status/1019601792722710528>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1019679050690772992)

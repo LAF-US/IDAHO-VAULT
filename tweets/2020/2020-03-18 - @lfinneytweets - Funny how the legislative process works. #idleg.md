@@ -20,6 +20,7 @@ related:
 Funny how the legislative process works. #idleg <https://t.co/iY7xZEIYue>
 
 ## Links
+
 - <https://x.com/NateBrownNews/status/1240312337032081408>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1240314030192902145)

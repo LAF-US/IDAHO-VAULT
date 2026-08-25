@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-Mendive: The Spanish Flu ravaged the country 100 years ago and we didn't suspend the constitution then. 
+Mendive: The Spanish Flu ravaged the country 100 years ago and we didn't suspend the constitution then.
 He says it worries him how willing folks were to go along with the orders. "We need to stand up for our constitution and America."
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

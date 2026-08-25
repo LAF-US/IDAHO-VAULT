@@ -19,6 +19,7 @@ related:
 RT @NMBlanchard: 📣📣📣 <https://t.co/by7Nk8cDY7>
 
 ## Links
+
 - <https://x.com/IdahoNewsGuild/status/1384899751032786948>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1384941122183696386)

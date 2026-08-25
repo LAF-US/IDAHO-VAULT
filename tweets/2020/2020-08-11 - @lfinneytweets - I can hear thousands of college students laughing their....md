@@ -17,6 +17,7 @@ related:
 I can hear thousands of college students laughing their hearts out <https://t.co/g1zTSpVYcv>
 
 ## Links
+
 - <https://x.com/WakeUp2Politics/status/1293161540435300352>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1293195989289844736)

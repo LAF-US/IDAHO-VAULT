@@ -17,11 +17,12 @@ related:
   - lfinneytweets
 ---
 
-"Maybe the real cryptocurrency was the relationship with readers that publications had all along." 
-How @Civil Didn't Save Journalism | @studyhallxyz 
+"Maybe the real cryptocurrency was the relationship with readers that publications had all along."
+How @Civil Didn't Save Journalism | @studyhallxyz
 <https://t.co/Gmkt1y9akL>
 
 ## Links
+
 - <https://www.patreon.com/posts/37037075>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1261429675118612481)

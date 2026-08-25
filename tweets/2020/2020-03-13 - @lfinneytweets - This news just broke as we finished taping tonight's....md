@@ -25,6 +25,7 @@ related:
 This news just broke as we finished taping tonight's episode of @IdahoReports. Props to @downeyIPTV for jumping on camera at the end of the episode. Tune in tonight at 8 on @IdahoPTV. #COVID19 #idpol <https://t.co/1bOde55tTu>
 
 ## Links
+
 - <https://t.co/1bOde55tTu>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1238596962699448321)
