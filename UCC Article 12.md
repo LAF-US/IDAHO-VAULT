@@ -24,7 +24,7 @@ Idaho has **not** enacted Article 12 as an article of its commercial code. Check
 - Title 28's chapter index contains no controllable-electronic-records chapter.
 - Idaho instead enacted its own **Digital Assets Act**, Title 28 Chapter 53 (§§ 28-5301–5306), added **2022, ch. 284** — the same year Article 12 was promulgated.
 
-**The two diverge by design, and Idaho has not conformed since.** Article 12 creates a distinct controllable-electronic-record category governed by control-based rules. Idaho `Idaho Code §28-5304` instead classifies digital assets as *intangible personal property* and *general intangibles* under § 28-9-102.
+**The two diverge by design, and Idaho has not conformed since.** Article 12 creates a distinct controllable-electronic-record category governed by control-based rules. `Idaho Code §28-5304` instead classifies digital assets as *intangible personal property* and *general intangibles* under § 28-9-102.
 
 ## The concept still has an Idaho hook
 
