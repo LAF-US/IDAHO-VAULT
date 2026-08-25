@@ -1,4 +1,5 @@
 ---
+title: "Recruiting for BPD vacancies is interesting, contrasted..."
 date: 2023-09-19
 time: 21:49:04
 tweet_id: "1704251283702706590"
@@ -17,10 +18,11 @@ related:
 ---
 
 @mlcarmel Recruiting for BPD vacancies is interesting, contrasted with Evans telling you he'd want fewer officers with better training.
-https://t.co/mmLmhELies
+<https://t.co/mmLmhELies>
 
 ## Links
-- https://boisedev.com/news/2023/09/12/boise-police-mayor/
+
+- <https://boisedev.com/news/2023/09/12/boise-police-mayor/>
 
 *In reply to [@mlcarmel](https://twitter.com/mlcarmel)*
 

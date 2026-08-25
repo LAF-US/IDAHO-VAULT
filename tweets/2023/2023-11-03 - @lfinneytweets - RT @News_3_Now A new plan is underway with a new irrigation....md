@@ -1,4 +1,5 @@
 ---
+title: "RT @News_3_Now A new plan is underway with a new irrigation..."
 date: 2023-11-03
 time: 01:08:24
 tweet_id: "1720246514306670709"
@@ -15,6 +16,6 @@ related:
   - lfinneytweets
 ---
 
-RT @News_3_Now: A new plan is underway with a new irrigation canal pipeline to recharge the Snake River Plain Aquifer. https://t.co/5hJoetu…
+RT @News_3_Now: A new plan is underway with a new irrigation canal pipeline to recharge the Snake River Plain Aquifer. <https://t.co/5hJoetu…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1720246514306670709)

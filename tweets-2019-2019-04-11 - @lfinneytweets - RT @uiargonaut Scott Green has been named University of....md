@@ -15,6 +15,6 @@ related:
   - lfinneytweets
 ---
 
-RT @uiargonaut: Scott Green has been named University of Idaho's 19th president. The State Board approved it unanimously. https://t.co/LQXd…
+RT @uiargonaut: Scott Green has been named University of Idaho's 19th president. The State Board approved it unanimously. <https://t.co/LQXd…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1116398613100285953)

@@ -1,4 +1,5 @@
 ---
+title: "David Pace @IF_reporter killing the Bonneville local..."
 date: 2024-05-30
 time: 01:45:11
 tweet_id: "1795994836702564670"
@@ -20,9 +21,10 @@ related:
   - idleg
 ---
 
-David Pace @IF_reporter killing the Bonneville local politics beat as usual! #idpol #idleg https://t.co/Yuv0ZOSMAE
+David Pace @IF_reporter killing the Bonneville local politics beat as usual! #idpol #idleg <https://t.co/Yuv0ZOSMAE>
 
 ## Links
-- https://x.com/EastIDNews/status/1795981126965539076
+
+- <https://x.com/EastIDNews/status/1795981126965539076>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1795994836702564670)

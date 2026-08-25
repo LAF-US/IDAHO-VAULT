@@ -1,4 +1,5 @@
 ---
+title: "Specifically watch through 1 15 or so"
 date: 2020-08-15
 time: 01:06:25
 tweet_id: "1294440273942999041"
@@ -17,10 +18,11 @@ related:
 ---
 
 @ryannoyance Specifically watch through 1:15 or so
-https://t.co/LhXeKSiCeS
+<https://t.co/LhXeKSiCeS>
 
 ## Links
-- https://youtu.be/xqs626gtTjU
+
+- <https://youtu.be/xqs626gtTjU>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

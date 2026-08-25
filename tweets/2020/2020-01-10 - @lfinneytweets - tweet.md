@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2020-01-10
 time: 19:54:38
 tweet_id: "1215723644514529281"
@@ -17,9 +18,10 @@ related:
   - lfinneytweets
 ---
 
-@XavierAWard @NateBrownNews @nicoleMfoy @KBSX915 https://t.co/F1VXB30y50
+@XavierAWard @NateBrownNews @nicoleMfoy @KBSX915 <https://t.co/F1VXB30y50>
 
 ## Media
-- ![](https://pbs.twimg.com/media/EN8eNbYUwAAl5Hr.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/EN8eNbYUwAAl5Hr.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1215723644514529281)

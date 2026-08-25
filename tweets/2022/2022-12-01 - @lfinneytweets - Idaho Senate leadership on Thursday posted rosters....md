@@ -1,4 +1,5 @@
 ---
+title: "Idaho Senate leadership on Thursday posted rosters..."
 date: 2022-12-01
 time: 21:01:31
 tweet_id: "1598422062170656768"
@@ -18,10 +19,11 @@ related:
   - idpol
 ---
 
-Idaho Senate leadership on Thursday posted rosters outlining committee assignments for the upcoming session. House committee assignments are not expected to be announced until Friday. #idleg #idpol 
-https://t.co/YBCzM53xqn
+Idaho Senate leadership on Thursday posted rosters outlining committee assignments for the upcoming session. House committee assignments are not expected to be announced until Friday. #idleg #idpol
+<https://t.co/YBCzM53xqn>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2022/12/01/senate-committees-assigned-grow-to-co-chair-jfac/
+
+- <https://blog.idahoreports.idahoptv.org/2022/12/01/senate-committees-assigned-grow-to-co-chair-jfac/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1598422062170656768)

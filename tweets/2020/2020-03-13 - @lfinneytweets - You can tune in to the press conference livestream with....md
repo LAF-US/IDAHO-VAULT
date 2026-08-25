@@ -1,4 +1,5 @@
 ---
+title: "You can tune in to the press conference livestream with..."
 date: 2020-03-13
 time: 23:02:29
 tweet_id: "1238601351757611008"
@@ -16,11 +17,12 @@ related:
   - lfinneytweets
 ---
 
-You can tune in to the press conference livestream with @GovernorLittle here: 
-https://t.co/52SYnujNCR
+You can tune in to the press conference livestream with @GovernorLittle here:
+<https://t.co/52SYnujNCR>
 
 ## Links
-- https://www.idahopress.com/news/local/st-confirmed-covid--case-in-idaho/article_3452b2fd-0fd8-5ca7-ab04-c545860f010e.html
+
+- <https://www.idahopress.com/news/local/st-confirmed-covid--case-in-idaho/article_3452b2fd-0fd8-5ca7-ab04-c545860f010e.html>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

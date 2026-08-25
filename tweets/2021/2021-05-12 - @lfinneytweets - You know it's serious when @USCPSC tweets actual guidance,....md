@@ -1,4 +1,5 @@
 ---
+title: "You know it's serious when @USCPSC tweets actual guidance,..."
 date: 2021-05-12
 time: 16:17:29
 tweet_id: "1392514275193671680"
@@ -15,9 +16,10 @@ related:
   - lfinneytweets
 ---
 
-You know it's serious when @USCPSC tweets actual guidance, without a silly meme attached. https://t.co/ByNBwBssKA
+You know it's serious when @USCPSC tweets actual guidance, without a silly meme attached. <https://t.co/ByNBwBssKA>
 
 ## Links
-- https://x.com/USCPSC/status/1392482092823502849
+
+- <https://x.com/USCPSC/status/1392482092823502849>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1392514275193671680)

@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2020-06-24
 time: 15:42:44
 tweet_id: "1275816637787041792"
@@ -14,10 +15,11 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/5bhaCFD0Sg
+<https://t.co/5bhaCFD0Sg>
 
 ## Links
-- https://x.com/lfinneytweets/status/1275652506861912067
+
+- <https://x.com/lfinneytweets/status/1275652506861912067>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

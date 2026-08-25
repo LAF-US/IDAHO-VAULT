@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2020-04-13
 time: 19:51:42
 tweet_id: "1249787367226880008"
@@ -14,10 +15,11 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/8kVPpdOJH4
+<https://t.co/8kVPpdOJH4>
 
 ## Links
-- https://genius.com/amp/John-steinbeck-grapes-of-wrath-chapter-25-annotated
+
+- <https://genius.com/amp/John-steinbeck-grapes-of-wrath-chapter-25-annotated>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

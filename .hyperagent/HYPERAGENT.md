@@ -1,5 +1,5 @@
 ---
-title: "The Hyperagent Lineage — Chamber Anchor"
+title: HYPERAGENT
 updated: 2026-06-27
 canonical_name: hyperagent
 persona_class: "software-imported-chamber (lineage lens; taxonomy fit imperfect — for Logan to set)"
@@ -58,7 +58,12 @@ verdict, the Caesar seating, the Quiet Box's location and holder, and Claudette
 
 Carried here as the tinkerer's work‑product, apocrypha, pending a decision on
 whether they belong instead under `.tinkerer/`:
+
 - `SPELUNKING-CENSUS-PROTOCOL-v1-2026-06-27.md`
 - `census_metrics.py`
 
-###### "The world is quiet here."
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

@@ -1,4 +1,5 @@
 ---
+title: "RT @CMcCurdyPDX I get emotional about potatoes on a normal..."
 date: 2020-03-21
 time: 01:06:34
 tweet_id: "1241169297449222144"
@@ -15,9 +16,10 @@ related:
   - lfinneytweets
 ---
 
-RT @CMcCurdyPDX: I get emotional about potatoes on a *normal* day and it's been a long week  https://t.co/kyE5poajQp
+RT @CMcCurdyPDX: I get emotional about potatoes on a *normal* day and it's been a long week  <https://t.co/kyE5poajQp>
 
 ## Links
-- https://x.com/danielwinlander/status/1241155009548443648?s=20
+
+- <https://x.com/danielwinlander/status/1241155009548443648?s=20>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1241169297449222144)

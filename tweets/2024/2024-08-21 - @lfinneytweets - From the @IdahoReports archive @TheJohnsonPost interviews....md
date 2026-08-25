@@ -1,4 +1,5 @@
 ---
+title: "From the @IdahoReports archive @TheJohnsonPost interviews..."
 date: 2024-08-21
 time: 01:14:23
 tweet_id: "1826065279421755599"
@@ -18,10 +19,11 @@ related:
   - idpol
 ---
 
-From the @IdahoReports archive: @TheJohnsonPost interviews the late Sen. Steve Symms #idpol 
-https://t.co/ImvXioUAdl
+From the @IdahoReports archive: @TheJohnsonPost interviews the late Sen. Steve Symms #idpol
+<https://t.co/ImvXioUAdl>
 
 ## Links
-- https://youtu.be/5U1zI7Ny-5I
+
+- <https://youtu.be/5U1zI7Ny-5I>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1826065279421755599)

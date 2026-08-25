@@ -1,4 +1,5 @@
 ---
+title: "Rep. Priscilla Giddings (R-White Bird)"
 date: 2020-06-24
 time: 04:50:45
 tweet_id: "1275652558414139397"
@@ -14,10 +15,11 @@ related:
   - lfinneytweets
 ---
 
-Rep. Priscilla Giddings (R-White Bird) https://t.co/KCuSqCg30x
+Rep. Priscilla Giddings (R-White Bird) <https://t.co/KCuSqCg30x>
 
 ## Media
-- ![](https://pbs.twimg.com/media/EbQF8tPWAAMN6wI.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/EbQF8tPWAAMN6wI.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

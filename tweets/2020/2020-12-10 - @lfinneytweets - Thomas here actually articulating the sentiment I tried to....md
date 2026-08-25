@@ -1,4 +1,5 @@
 ---
+title: "Thomas here actually articulating the sentiment I tried to..."
 date: 2020-12-10
 time: 19:32:59
 tweet_id: "1337118132624793600"
@@ -14,11 +15,12 @@ related:
   - lfinneytweets
 ---
 
-Thomas here actually articulating the sentiment I tried to convey through a dumb GIF: 
-https://t.co/2lXp24bLpd
+Thomas here actually articulating the sentiment I tried to convey through a dumb GIF:
+<https://t.co/2lXp24bLpd>
 
 ## Links
-- https://x.com/ThomasPlankMT/status/1337117047809929216
+
+- <https://x.com/ThomasPlankMT/status/1337117047809929216>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

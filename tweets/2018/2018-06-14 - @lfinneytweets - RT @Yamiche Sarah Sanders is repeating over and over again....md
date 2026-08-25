@@ -1,4 +1,5 @@
 ---
+title: "RT @Yamiche Sarah Sanders is repeating over and over again..."
 date: 2018-06-14
 time: 21:14:11
 tweet_id: "1007370639408226304"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @Yamiche: Sarah Sanders is repeating over and over again that it's the law to separate immigrant children and from their parents. 
+RT @Yamiche: Sarah Sanders is repeating over and over again that it's the law to separate immigrant children and from their parents.
 
 Fact…
 

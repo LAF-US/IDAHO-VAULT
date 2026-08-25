@@ -28,7 +28,12 @@ name: Auto-merge on PR events
 
 on:
   pull_request_target:
-    types: [opened, reopened, ready_for_review, synchronize]
+    # `labeled` is load-bearing: the job below gates on the `merge/auto` label, but without
+    # a `labeled` trigger, *applying* that label fires no event — so a PR labeled after its
+    # last open/sync sat armed-but-unqueued until a manual dispatch (the #720 symptom). With
+    # `labeled`, adding `merge/auto` engages the arm+enqueue directly. Any other label event
+    # runs the job too, then the `if` skips it — harmless, and the concurrency group dedupes.
+    types: [opened, reopened, ready_for_review, synchronize, labeled]
 
 permissions:
   # contents: write  — resolveReviewThread + enablePullRequestAutoMerge (the #546 gate family).
@@ -43,34 +48,48 @@ concurrency:
 
 jobs:
   engage:
-    # Arm/enqueue only on an explicit human signal: the `auto-merge` label. Marking a PR
+    # Arm/enqueue only on an explicit arming signal: the `merge/auto` label. Marking a PR
     # ready-for-review (draft == false) is NOT consent to merge -- it invites review. Gating
     # on the label decouples "please review" from "ship it" and closes the race where simply
     # un-drafting a PR merged it out from under review (human and bot). Drafts stay unarmed;
-    # a maintainer adds `auto-merge` when a PR is actually cleared to land.
+    # `merge/auto` arrives from a maintainer's hand, or from review_feedback_loop when the
+    # grid's clear lane becomes eligible ON GRACE — never at PR creation. (An earlier
+    # revision of this PR stamped it on open; Copilot caught the race: the engine's
+    # projection strips premature arming until grace elapses, by design. The engine is the
+    # sole automated writer of this label.)
+    #
+    # `merge/auto` is the vault's ONE arming label: declared in LABEL_SPECS, created by
+    # ensure-labels, read and written by review_feedback_loop. This gate previously keyed on
+    # an invented `auto-merge` name that nothing declared — the drift #763 was opened to
+    # kill: two names for one signal, with the engine stamping one and this gate reading
+    # the other, so an engine-armed PR never engaged.
     if: >
       github.event.pull_request.draft == false &&
-      contains(github.event.pull_request.labels.*.name, 'auto-merge')
+      contains(github.event.pull_request.labels.*.name, 'merge/auto')
     runs-on: ubuntu-latest
     steps:
       - name: Checkout trusted workflow surfaces
-        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           ref: ${{ github.event.repository.default_branch }}
           persist-credentials: false
 
       - name: Set up Python
-        uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6.3.0
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
       - name: Resolve outdated bot conversations (witnessed)
         # Same proven path as the engage-outdated workflow, scoped to this one PR. Only
         # outdated, bot-only threads are attest-resolved; needs-fix is left untouched.
         # Exits 0 even if some threads fail (per-thread errors are recorded, not raised),
         # so this step stays low-noise.
+        # resolveReviewThread has a documented history of being FORBIDDEN for the
+        # integration token (the #398 boundary, noted in review_feedback_loop.py's own
+        # docstring) — prefer the user-scoped MERGE_QUEUE_TOKEN, same as this job's
+        # arm/enqueue steps, so the resolve isn't silently skipped under GITHUB_TOKEN.
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.MERGE_QUEUE_TOKEN || secrets.GITHUB_TOKEN }}
           OWNER: ${{ github.repository_owner }}
           REPO: ${{ github.event.repository.name }}
           PR: ${{ github.event.pull_request.number }}

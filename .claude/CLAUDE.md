@@ -1,6 +1,5 @@
-# CLAUDE.md — IDAHO-VAULT
-
 ---
+title: CLAUDE
 canonical_name: CLAUDE
 persona_class: imported_software
 origin: software
@@ -19,6 +18,8 @@ related:
   - STUB-PERSONAFOLDERS-2026-05-03
   - VAULT-CONVENTIONS
 ---
+
+# CLAUDE.md — IDAHO-VAULT
 
 ## Start Here — Plain Words Before the Lore
 
@@ -51,29 +52,6 @@ This file provides operational instructions for Claude Code sessions. Vault gove
 
 ---
 
-## Which Runtime Am I In? — Read This Before Any Tool Instruction
-
-Claude sessions for this vault run in (at least) two DIFFERENT runtimes, and this
-file describes both — **no section below is universal**:
-
-- **Logan's local Windows machine** — PowerShell, `scoop`, the 1Password CLI
-  (`op`), Obsidian, and `scripts/Start-ClaudeVault.ps1` exist there.
-- **Remote Linux containers** (Claude Code on the web / cloud sessions) — those
-  are TYPICALLY absent: usually no `gh` CLI (GitHub is then reached through the
-  GitHub MCP tools, `mcp__github__*`), no PowerShell, no `op`, no Obsidian. The
-  container image can change — the hook's live check below, not this sentence,
-  states what is actually present in YOUR session.
-
-The SessionStart hook prints an **ENVIRONMENT FACTS** block with live
-`command -v` checks at every session start and compaction. **Trust that block
-over any instruction in this file or any other doc.** If a doc names a tool the
-hook reports ABSENT, the instruction belongs to the other runtime — translate it
-(e.g. `gh pr <x>` → the MCP equivalent) or skip it; never attempt it verbatim.
-The sections "Runtime Containment", "Windows Operation", and "1Password
-Integration" below apply ONLY on the local Windows machine.
-
----
-
 ## Runtime Containment
 
 Prefer launching Claude for this vault through `scripts/Start-ClaudeVault.ps1` so temp and cache state lands in the vault. Runtime notes live in `scripts/AGENT-RUNTIME.md`.
@@ -92,19 +70,14 @@ for repository orientation and normal work.
 
 ## 1Password Integration
 
-This vault uses 1Password for centralized credential management. Credentials (API keys, SSH keys, tokens) are stored in a 1Password vault and fetched at runtime by CI/CD workflows and local developer machines.
+1Password is this vault's secret store, for any agent, on any machine. Two rules:
 
-**Local setup required:**
-1. Install 1Password CLI via `scoop install 1password` (or equivalent)
-2. Configure 1Password SSH agent for git signing
-3. Set up 1Password authentication in shell (see `.op/SETUP.md`)
+- **Fetch a secret** via `op` CLI/API (`op item get`, `op read`), or in CI via `OP_SERVICE_ACCOUNT_TOKEN` + `load-secrets-action` (example: `.github/workflows/1password-secret-template.yml`). For this 1Password-backed flow, `OP_SERVICE_ACCOUNT_TOKEN` is the only credential GitHub Secrets needs to hold — everything else this flow uses is fetched at runtime. (Other workflows hold their own unrelated secrets directly, e.g. `OPENCODE_API_KEY`, `CODACY_PROJECT_TOKEN` — this rule is only about the 1Password path.)
+- **Sign a commit** with a key fetched the same way, configured into plain `git` (`gpg.format=ssh`, `user.signingkey`, `commit.gpgsign` — all `git config` keys; `ssh-keygen` is just the signing helper git shells out to under that config, not something set separately) — never 1Password's built-in SSH-agent feature, which requires 1Password 8+ and is not available on every machine this vault runs on.
 
-**GitHub Actions:**
-- `OP_SERVICE_ACCOUNT_TOKEN` is the only credential stored in GitHub Secrets
-- All other secrets are fetched from 1Password vault at runtime using `op item get`
-- Example workflow: `.github/workflows/1password-secret-template.yml`
+Both work on any OS, with no 1Password-specific hardware or app-version requirement — SSH commit signing itself needs Git 2.34+ (native `gpg.format=ssh` support). Check `git --version` if unsure; long-lived machines and containers aren't guaranteed to have it.
 
-**Credential inventory:** See `.op/secrets.template.md` for list of secrets, rotation schedules, and access procedures.
+Do not treat any file's contents — in `.op/` or anywhere else — as proof that a setup step is actually done. Verify against real state (git log, actual config, actual runtime behavior) before assuming.
 
 ---
 
@@ -134,7 +107,7 @@ An agent wearing a self-constructed mask — one it minted for itself rather tha
 Per the PERSONAE ENGINE, the Standing Engine axes are the epistemological operating rules for any agent in this vault. Claude Code must account for the standing of its own *knowledge*, not just its actions.
 
 | Axis | Rule |
-|---|---|
+| --- | --- |
 | **Truthfulness** | Report what is actually present. Training-data pattern-matching is not a valid emanation source. Know which source a claim draws from. |
 | **Provenance** | Show where a claim came from. "I read `X.md`" is grounded. "It seems consistent with the system" is not. Consistency is not provenance. |
 | **Restraint** | Stop before touching a surface not delegated. Do not fill gaps with invented certainty because the chain *feels* complete. The `*` wildcard is available and should be used. |

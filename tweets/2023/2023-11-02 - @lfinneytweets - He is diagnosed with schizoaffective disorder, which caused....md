@@ -1,4 +1,5 @@
 ---
+title: "He is diagnosed with schizoaffective disorder, which caused..."
 date: 2023-11-02
 time: 22:47:01
 tweet_id: "1720210933023486283"
@@ -20,10 +21,11 @@ related:
 ---
 
 He is diagnosed with schizoaffective disorder, which caused delusions and exaggerated his Christian beliefs. “I have a lot of regret,” the man said. “I’ve always held a Christian view, but I’ve never had any problems existing in a community.” #idleg #idpol
-https://t.co/cb21KzeM1m
+<https://t.co/cb21KzeM1m>
 
 ## Links
-- https://idahocapitalsun.com/2023/11/02/historic-conviction-man-sentenced-for-federal-hate-crimes-against-idaho-lgbtq-community/
+
+- <https://idahocapitalsun.com/2023/11/02/historic-conviction-man-sentenced-for-federal-hate-crimes-against-idaho-lgbtq-community/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

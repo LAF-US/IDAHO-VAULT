@@ -1,4 +1,5 @@
 ---
+title: "Moyle We\u2019re waiting on some bills from the Senate. No need..."
 date: 2020-03-19
 time: 02:20:49
 tweet_id: "1240463205819797505"
@@ -18,9 +19,9 @@ related:
   - idleg
 ---
 
-Moyle: We’re waiting on some bills from the Senate. No need to keep pushing, we’re going to be here in the morning anyway. 
+Moyle: We’re waiting on some bills from the Senate. No need to keep pushing, we’re going to be here in the morning anyway.
 
-Bedke: Tomorrow will just be concurring with the remaining Senate amendments to House bills. 
+Bedke: Tomorrow will just be concurring with the remaining Senate amendments to House bills.
 
 House adjourned until 10am. #idpol #idleg
 

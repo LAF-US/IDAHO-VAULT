@@ -1,4 +1,5 @@
 ---
+title: "The outfitters and guides liability bill passes the Senate..."
 date: 2023-02-22
 time: 19:08:45
 tweet_id: "1628471877285867522"
@@ -21,11 +22,12 @@ related:
   - idpol
 ---
 
-@IdahoReports The outfitters and guides liability bill passes the Senate with just Sens. Ruchti & Wintrow against. The bill moves over to the House. #idleg #idpol 
-https://t.co/LcMxu0UlfM
+@IdahoReports The outfitters and guides liability bill passes the Senate with just Sens. Ruchti & Wintrow against. The bill moves over to the House. #idleg #idpol
+<https://t.co/LcMxu0UlfM>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2023/02/15/podcast-episode-controlling-the-uncontrollable/
+
+- <https://blog.idahoreports.idahoptv.org/2023/02/15/podcast-episode-controlling-the-uncontrollable/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

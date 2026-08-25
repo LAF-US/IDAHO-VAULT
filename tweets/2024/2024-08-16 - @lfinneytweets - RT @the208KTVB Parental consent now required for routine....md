@@ -1,4 +1,5 @@
 ---
+title: "RT @the208KTVB Parental consent now required for routine..."
 date: 2024-08-16
 time: 18:46:21
 tweet_id: "1824518073367605624"
@@ -15,9 +16,10 @@ related:
   - lfinneytweets
 ---
 
-RT @the208KTVB: Parental consent now required for routine First Aid in Idaho schools https://t.co/gQdjzzgqLG
+RT @the208KTVB: Parental consent now required for routine First Aid in Idaho schools <https://t.co/gQdjzzgqLG>
 
 ## Links
-- https://feeds.feedblitz.com/~/902933288/0/ktvb/the208~Parental-consent-now-required-for-routine-First-Aid-in-Idaho-schools
+
+- <https://feeds.feedblitz.com/~/902933288/0/ktvb/the208~Parental-consent-now-required-for-routine-First-Aid-in-Idaho-schools>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1824518073367605624)

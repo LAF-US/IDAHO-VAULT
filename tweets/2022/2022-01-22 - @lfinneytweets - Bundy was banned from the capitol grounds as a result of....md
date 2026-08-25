@@ -1,4 +1,5 @@
 ---
+title: "Bundy was banned from the capitol grounds as a result of..."
 date: 2022-01-22
 time: 04:31:09
 tweet_id: "1484745424174862339"

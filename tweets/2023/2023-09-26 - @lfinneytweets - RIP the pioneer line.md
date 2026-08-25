@@ -1,4 +1,5 @@
 ---
+title: "RIP the pioneer line"
 date: 2023-09-26
 time: 19:34:12
 tweet_id: "1706754059431182652"
@@ -17,11 +18,12 @@ related:
   - lfinneytweets
 ---
 
-@AC_Dode @floppatakes RIP the pioneer line 
-https://t.co/bgEY5Dus58
+@AC_Dode @floppatakes RIP the pioneer line
+<https://t.co/bgEY5Dus58>
 
 ## Links
-- https://boisedev.com/news/2022/09/14/boise-salt-lake-city-partnering-to-request-rail-service-between-cities/
+
+- <https://boisedev.com/news/2022/09/14/boise-salt-lake-city-partnering-to-request-rail-service-between-cities/>
 
 *In reply to [@AC_Dode](https://twitter.com/AC_Dode)*
 

@@ -1,4 +1,5 @@
 ---
+title: "RT @HayatNorimine House Republican Caucus response to new..."
 date: 2021-11-05
 time: 22:43:09
 tweet_id: "1456753981397475331"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @HayatNorimine: House Republican Caucus response to new legislative boundaries: 
+RT @HayatNorimine: House Republican Caucus response to new legislative boundaries:
 
 While not "thrilled" -- the new map "will result in th…
 

@@ -1,4 +1,5 @@
 ---
+title: "Happy #PrideMonth"
 date: 2018-06-03
 time: 03:48:11
 tweet_id: "1003121141467115522"
@@ -17,9 +18,10 @@ related:
 ---
 
 Happy #PrideMonth
-https://t.co/iT7CJeTY3V
+<https://t.co/iT7CJeTY3V>
 
 ## Links
-- https://x.com/i/moments/1003098209344843776
+
+- <https://x.com/i/moments/1003098209344843776>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1003121141467115522)

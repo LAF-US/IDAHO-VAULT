@@ -1,4 +1,5 @@
 ---
+title: "HB 71 Amendment 2 - Provides an exception to the..."
 date: 2023-03-22
 time: 23:25:57
 tweet_id: "1638683462076088320"

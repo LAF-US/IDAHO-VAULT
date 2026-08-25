@@ -1,4 +1,5 @@
 ---
+title: "Last night on @IdahoReports, @IdahoPTV's @aaronkunz was..."
 date: 2020-04-03
 time: 15:30:00
 tweet_id: "1246097627315204097"
@@ -25,9 +26,10 @@ related:
   - idpol
 ---
 
-Last night on @IdahoReports, @IdahoPTV's @aaronkunz was joined by @GovernorLittle and the directors of @IDHW & @IdahoLabor to answer your #IdahoCOVID19 questions. Watch the full half-hour here: https://t.co/D1lZ2qHGzs #idpol
+Last night on @IdahoReports, @IdahoPTV's @aaronkunz was joined by @GovernorLittle and the directors of @IDHW & @IdahoLabor to answer your #IdahoCOVID19 questions. Watch the full half-hour here: <https://t.co/D1lZ2qHGzs> #idpol
 
 ## Links
-- https://video.idahoptv.org/video/idaho-reports-coronavirus-special-april-2-mefnon/
+
+- <https://video.idahoptv.org/video/idaho-reports-coronavirus-special-april-2-mefnon/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1246097627315204097)

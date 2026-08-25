@@ -1,0 +1,17 @@
+# Spectral — Codacy toggle. `spectral:oas` is built in, no package needed.
+# Quoted because the built-in ruleset name contains a colon.
+#
+# REACH IS NOT ZERO. An earlier version of this file said "no OpenAPI document
+# here yet" — that was written without looking. There is a root `openapi.json`
+# declaring OpenAPI 3.1.0, 46 KB.
+#
+# Measured against it with this ruleset (@stoplight/spectral-cli):
+#
+#   2 problems — 0 errors, 2 warnings
+#     info-contact                Info object must have "contact" object
+#     oas3-server-trailing-slash  Server URL must not have trailing slash
+#
+# Both are cosmetic and both are real. Neither is suppressed here: two warnings
+# is a baseline someone can clear, not one they have to route around.
+
+extends: "spectral:oas"

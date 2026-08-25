@@ -1,6 +1,7 @@
 # Sabrina - The Saffron Gym Leader
 
 ## Table of Contents
+
 1. [Overview](#overview)
 2. [Game Appearances](#game-appearances)
 3. [Teams and Battle Strategies](#teams-and-battle-strategies)
@@ -26,8 +27,9 @@
 ## Game Appearances
 
 ### Generation I (Red, Blue, Green, Yellow)
+
 - **Location**: Saffron Gym, Saffron City
-- **Team**: 
+- **Team**:
   - Kadabra (Lv. 38) - Disable, Psybeam, Recover, Psychic
   - Venomoth (Lv. 37) - Poison Powder, Leech Life, Stun Spore, Psybeam
   - Mr. Mime (Lv. 38) - Confusion, Barrier, Light Screen, Double Slap
@@ -36,8 +38,9 @@
 - **Notable**: Gym features teleportation puzzles; all trainers use Psychic-types
 
 ### Generation II (Gold, Silver, Crystal)
+
 - **Location**: Saffron Gym (Kanto postgame)
-- **Team**: 
+- **Team**:
   - Espeon (Lv. 46) - Confusion, Quick Attack, Swift, Psybeam
   - Slowbro (Lv. 46) - Psychic, Disable, Surf, Amnesia
   - Mr. Mime (Lv. 46) - Psychic, Barrier, Light Screen, Reflect
@@ -46,8 +49,9 @@
 - **Notable**: Kanto postgame team with the Generation II addition Espeon, not her Gen I lineup. Calm Mind / TM04 did not exist in Generation II
 
 ### Generation III (FireRed, LeafGreen)
+
 - **Location**: Saffron Gym
-- **Team**: 
+- **Team**:
   - Kadabra (Lv. 38) - Psybeam, Reflect, Future Sight, Calm Mind
   - Mr. Mime (Lv. 37) - Barrier, Psybeam, Baton Pass, Calm Mind
   - Venomoth (Lv. 38) - Psybeam, Gust, Leech Life, Supersonic
@@ -56,14 +60,16 @@
 - **Notable**: Updated movesets with Calm Mind and Future Sight
 
 ### Generation IV (HeartGold, SoulSilver)
+
 - **Location**: Saffron Gym
 - **Team**: Same as FireRed/LeafGreen
 - **Reward**: Marsh Badge, TM04 (Calm Mind)
 - **Notable**: Rematch available on Friday between 9:00 AM and 3:00 PM
 
 ### Generation VII (Let's Go, Pikachu! and Eevee!)
+
 - **Location**: Saffron Gym
-- **Team**: 
+- **Team**:
   - Abra (Lv. 38)
   - Kadabra (Lv. 38)
   - Alakazam (Lv. 43)
@@ -71,6 +77,7 @@
 - **Notable**: Simplified team with Abra line only
 
 ### Other Appearances
+
 - Pokémon Stadium: Saffron Gym representation
 - Pokémon Stadium 2: Gym Leader Castle
 - Pokémon Puzzle League: Opponent in 1P and 2P Stadium modes
@@ -83,7 +90,7 @@
 ### Core Team Across Games
 
 | Game | Pokémon | Level | Type | Moves |
-|------|---------|-------|------|-------|
+| ------ | --------- | ------- | ------ | ------- |
 | RBY | Kadabra | 38 | Psychic | Disable, Psybeam, Recover, Psychic |
 | RBY | Venomoth | 37 | Bug/Poison | Poison Powder, Leech Life, Stun Spore, Psybeam |
 | RBY | Mr. Mime | 38 | Psychic | Confusion, Barrier, Light Screen, Double Slap |
@@ -102,11 +109,14 @@
 | LGPE | Alakazam | 43 | Psychic | Various |
 
 ### Extended Team
+
 - Drowzee (seen in manga)
 - Hypno (seen in manga)
 
 ### Battle Strategy
+
 Sabrina's battle strategy is characterized by:
+
 1. Psychic-type STAB offense (Psychic, Psybeam, Psywave)
 2. Status-inducing moves (Confusion, Stun Spore, Poison Powder)
 3. Defensive setup (Reflect, Light Screen, Barrier, Calm Mind)
@@ -115,6 +125,7 @@ Sabrina's battle strategy is characterized by:
 6. Baton Pass for stat boosting (Mr. Mime in FRLG)
 
 ### Recommended Counters
+
 - Bug-types: Super effective against Psychic (Scyther, Pinsir, Beedrill)
 - Ghost-types: Super effective against Psychic (Gengar, Haunter)
 - Dark-types: Super effective against Psychic (Gen II+)
@@ -126,6 +137,7 @@ Sabrina's battle strategy is characterized by:
 ## Anime and Manga Appearances
 
 ### Main Anime
+
 - **Debut**: Episode 20 - "Abra and the Psychic Showdown"
 - **Role**: Saffron Gym Leader
 - **Voice**: Mayumi Tanaka (JP), Megan Hollingshead (EN, 4Kids), Michele Knotz (EN, TAJ)
@@ -136,6 +148,7 @@ Sabrina's battle strategy is characterized by:
   - Her laughter broke Psychic link, allowing Ash to win
 
 ### Key Anime Moments
+
 - Gym filled with students studying PSI phenomena
 - Used telepathic communication with her Pokémon
 - Haunter's antics broke her serious demeanor
@@ -143,6 +156,7 @@ Sabrina's battle strategy is characterized by:
 - Reappeared in later episodes
 
 ### Personality Traits (Anime)
+
 - Serious and focused
 - Emotionally reserved (hadn't laughed in years)
 - Psychic abilities since childhood
@@ -150,6 +164,7 @@ Sabrina's battle strategy is characterized by:
 - Can be lighthearted when amused
 
 ### Signature Pokémon (Anime)
+
 - Kadabra (mode of transportation, carries her)
 - Alakazam (primary battler)
 - Haunter (caused her to laugh)
@@ -157,8 +172,9 @@ Sabrina's battle strategy is characterized by:
 - Mr. Mime
 
 ### Pokémon Adventures Manga
+
 - **Role**: Saffron Gym Leader, Team Rocket executive
-- **Notable**: 
+- **Notable**:
   - One of three villainous heads of Team Rocket
   - Serves under Giovanni
   - Spotted Red with experimental Eevee
@@ -170,6 +186,7 @@ Sabrina's battle strategy is characterized by:
 ## Personality and Design
 
 ### Personality
+
 - Psychic: Possesses strong psychic abilities since childhood
 - Reserved: Emotionally controlled, rarely shows emotion
 - Intelligent: Strategic and calculated in battles
@@ -177,6 +194,7 @@ Sabrina's battle strategy is characterized by:
 - Professional: Takes Gym Leader duties seriously
 
 ### Design Evolution
+
 - Generation I & III: Long purple hair, purple/white outfit
 - Generation II & IV: Similar design with updated sprites
 - Generation VII: Modernized appearance
@@ -184,6 +202,7 @@ Sabrina's battle strategy is characterized by:
 - Anime: Long purple hair, purple dress, serious expression
 
 ### Name Origin
+
 - **English**: Sabrina - from Latin "Sabrina", possibly related to "saber" (to know)
 - **Japanese**: ナツメ (Natsume) - from "natsume" (棗), a type of Japanese date palm
 - Fits her psychic and intelligent personality
@@ -193,6 +212,7 @@ Sabrina's battle strategy is characterized by:
 ## Trivia
 
 ### Game Trivia
+
 - Known as "The Master of Psychic Pokémon"
 - Bent a spoon as a child, discovering her psychic powers
 - Gym features teleportation puzzles to navigate
@@ -201,6 +221,7 @@ Sabrina's battle strategy is characterized by:
 - Uses TM46 (Psywave) in RBY, TM04 (Calm Mind) in FRLG/HGSS, TM33 (Calm Mind) in LGPE
 
 ### Anime Trivia
+
 - First appearance in Episode 20
 - Haunter made her laugh for first time in years
 - Kadabra evolved during battle with Ash
@@ -208,12 +229,14 @@ Sabrina's battle strategy is characterized by:
 - Reappeared in later episodes
 
 ### Manga Trivia
+
 - Served as Team Rocket executive
 - One of three villainous heads under Giovanni
 - Used psychic powers for espionage
 - Fought against other Gym Leaders
 
 ### Cultural Impact
+
 - Represents psychic abilities in Pokémon world
 - Popular character in Pokémon merchandise
 - Featured in Pokémon Masters EX with Alakazam
@@ -222,6 +245,7 @@ Sabrina's battle strategy is characterized by:
 ---
 
 ## References
+
 - Bulbapedia: [Sabrina](https://bulbapedia.bulbagarden.net/wiki/Sabrina), [Saffron Gym](https://bulbapedia.bulbagarden.net/wiki/Saffron_Gym)
 - Pokémon Wiki, Pokémon Database, Serebii.net, IGN, GameFAQs, StrategyWiki
 

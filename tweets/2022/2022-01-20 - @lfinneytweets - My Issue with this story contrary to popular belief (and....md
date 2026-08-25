@@ -1,4 +1,5 @@
 ---
+title: "My Issue with this story contrary to popular belief (and..."
 date: 2022-01-20
 time: 01:14:00
 tweet_id: "1483971034030108672"
@@ -18,9 +19,10 @@ related:
   - idpol
 ---
 
-My Issue with this story: contrary to popular belief (and the aparent folklore that's developed around that special #idleg session) Ammon Bundy didn't tie or ziptie himself to that office chair. #idpol https://t.co/Cm5OCVXcew
+My Issue with this story: contrary to popular belief (and the aparent folklore that's developed around that special #idleg session) Ammon Bundy didn't tie or ziptie himself to that office chair. #idpol <https://t.co/Cm5OCVXcew>
 
 ## Links
-- https://x.com/politico/status/1483411353872351234
+
+- <https://x.com/politico/status/1483411353872351234>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1483971034030108672)

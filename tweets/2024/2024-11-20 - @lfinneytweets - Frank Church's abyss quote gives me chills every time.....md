@@ -1,4 +1,5 @@
 ---
+title: "Frank Church's abyss quote gives me chills every time...."
 date: 2024-11-20
 time: 23:32:58
 tweet_id: "1859379439144140926"
@@ -19,11 +20,12 @@ related:
   - idleg
 ---
 
-Frank Church's "abyss" quote gives me chills every time. #idpol #idleg 
-https://t.co/8tvNQPWEuH
+Frank Church's "abyss" quote gives me chills every time. #idpol #idleg
+<https://t.co/8tvNQPWEuH>
 
 ## Links
-- https://youtu.be/YAG1N4a84Dk?si=zm0EU9d_nA8EtKcA
+
+- <https://youtu.be/YAG1N4a84Dk?si=zm0EU9d_nA8EtKcA>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

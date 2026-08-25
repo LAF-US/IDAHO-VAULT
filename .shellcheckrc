@@ -1,0 +1,52 @@
+# ShellCheck — Codacy toggle. No directives, so ShellCheck's DEFAULT checks
+# run at default severity. That is not the same as every check: optional ones
+# stay off until named with `enable=` (see `shellcheck --list-optional`).
+# eslint, stylelint, remark and biome are the opposite — empty means no rules.
+#
+# REACH IS NOT NEAR-ZERO. An earlier version of this file claimed the vault's
+# shell lives only in workflow `run:` blocks that ShellCheck cannot parse.
+# Written without looking. There are 81 tracked `.sh` files outside
+# THE-GEMSTONE:
+#
+#   66  .claude/shell-snapshots/     generated session snapshots
+#   15  everything else              scripts/git-guard.sh, scripts/export-dropbox.sh,
+#                                    install_dependencies.sh, .ghcp-appmod/skills/
+#                                    scripts/bash/*, launcher scripts at root
+#
+# The workflow-`run:`-block point still stands as a GAP — the secret-scan and
+# portability checks are shell that ShellCheck genuinely cannot see, and
+# actionlint would be the tool for that. But it is not the whole story, and
+# stating it as the whole story understated this toggle by 81 files.
+#
+# MEASURED. The earlier `npm i shellcheck` attempt was a false green: that
+# package downloads a native binary post-install, the download 403'd through
+# this environment's proxy, and "0 findings on 81 files" was a tool that never
+# ran. `pip install shellcheck-py` ships a working binary. Before trusting any
+# count from it, it was fed a deliberately broken script and returned SC2154,
+# SC2086 and SC3014 with exit 1 — proof it actually analyses.
+#
+# 165 findings over the 81 files. The split is the whole story:
+#
+#   124  (75%)  .claude/shell-snapshots/   66 generated files
+#    41         8 hand-written scripts
+#
+# The snapshots produce every one of the 66 SC2148 "errors" (no shebang) and
+# all 58 SC2053. They are Claude Code session artifacts that happen to be
+# tracked — they were never written to be linted.
+#
+# The real baseline is the other number: **41 findings across 8 scripts, and
+# NOT ONE of them is an error.** 27 warning, 9 info, 5 style; 22 of the 41 are
+# SC2155 (declare-and-assign masking a return value) in one file,
+# backup-compare-temp/agent.sh.
+#
+# NOTHING IS EXCLUDED HERE IN RESPONSE. The earlier note said that if the
+# generated snapshots dominated, the fix was to exclude that directory rather
+# than lower `severity`. They do dominate — but which files this repo tracks
+# and lints is Logan's call, not something to settle from a config header, and
+# a hand-written exclude list is the exact shape of fix that has already
+# failed twice in this repo. The number is recorded so the decision can be
+# made with it in hand. Worth asking separately whether 66 generated session
+# snapshots belong in version control at all.
+#
+# Exempt at the offending line (`# shellcheck disable=SCxxxx  # reason`), not
+# repo-wide.

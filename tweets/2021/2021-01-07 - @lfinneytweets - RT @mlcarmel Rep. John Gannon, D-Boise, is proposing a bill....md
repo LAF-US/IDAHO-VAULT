@@ -1,4 +1,5 @@
 ---
+title: "RT @mlcarmel Rep. John Gannon, D-Boise, is proposing a bill..."
 date: 2021-01-07
 time: 17:48:14
 tweet_id: "1347238629907722243"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @mlcarmel: Rep. John Gannon, D-Boise, is proposing a bill in the session to reduce Micron's tax exemption back to 2005 levels. 
+RT @mlcarmel: Rep. John Gannon, D-Boise, is proposing a bill in the session to reduce Micron's tax exemption back to 2005 levels.
 
 Last mo…
 

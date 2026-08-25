@@ -1,4 +1,5 @@
 ---
+title: "tweet (924723)"
 date: 2024-05-22
 time: 23:51:52
 tweet_id: "1793429603387924723"
@@ -18,10 +19,11 @@ related:
   - lfinneytweets
 ---
 
-@currevive @GabeOsterhout @danielwinvw https://t.co/65cj6V88o7
+@currevive @GabeOsterhout @danielwinvw <https://t.co/65cj6V88o7>
 
 ## Links
-- https://en.wikipedia.org/wiki/Moving_the_goalposts
+
+- <https://en.wikipedia.org/wiki/Moving_the_goalposts>
 
 *In reply to [@currevive](https://twitter.com/currevive)*
 

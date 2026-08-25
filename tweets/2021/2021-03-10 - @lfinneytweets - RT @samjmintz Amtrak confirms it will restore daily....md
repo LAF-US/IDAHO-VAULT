@@ -1,4 +1,5 @@
 ---
+title: "RT @samjmintz Amtrak confirms it will restore daily..."
 date: 2021-03-10
 time: 22:06:03
 tweet_id: "1369771560374996993"
@@ -15,12 +16,14 @@ related:
   - lfinneytweets
 ---
 
-RT @samjmintz: Amtrak confirms it will restore daily long-distance service, starting in May https://t.co/5r81xOSEoD https://t.co/Jt4rnhsjNS
+RT @samjmintz: Amtrak confirms it will restore daily long-distance service, starting in May <https://t.co/5r81xOSEoD> <https://t.co/Jt4rnhsjNS>
 
 ## Links
-- https://x.com/samjmintz/status/1369737791811239939
+
+- <https://x.com/samjmintz/status/1369737791811239939>
 
 ## Media
-- ![](https://pbs.twimg.com/media/EwJic-BWQAAkoUA.png)
+
+- ![alt text needed](https://pbs.twimg.com/media/EwJic-BWQAAkoUA.png)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1369771560374996993)

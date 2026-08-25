@@ -37,7 +37,7 @@ date: 2026-06-02
 ## II. The species — Axis 1: SOURCE of power
 
 | Term | Etymology | Source | Distinguishing note |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **Wizard** | ME *wys/wis* "wise" + *-ard*; first sense "**sage**" (early 15c.), magic sense only **c. 1550** | **learned** | the *-ard* suffix is the **pejorative** family (drunkard, sluggard) — a buried sneer the flattering modern usage shed |
 | **Sorcerer** | OFr *sorcier* ← VL *sortiarius* ← L *sors/sortis* "**lot, fate**" | etymologically a **fate-caster / fortune-teller**; **modern fantasy (D&D) inverts it to *innate* / bloodline** | inversion: "manipulator of external fate" → "carrier of inborn essence" |
 | **Warlock** | OE *wǣrloga* "**oath-breaker, traitor**" (*wǣr* "covenant" + *-loga* "liar"); applied to the Devil by ~1000 | **pact** — power by bargain with a patron | ⚠️ a Norse *varðlokkur* "spirit-caller" derivation exists but **OED deems it implausible**. **Inversion:** etymological oath-*breaker* → D&D oath-*maker* (see §VI) |
@@ -66,7 +66,7 @@ These name **what the magic does**, not where it comes from — so they *cross-c
 **[reading + registry]** The vault does **not** run on D&D. It maintains a **`FANDOM-CANON-RULESYSTEMS` registry** that keeps its magic/rule systems as *distinct, inspectable architectures* — explicitly "*not to flatten the worlds into one schema.*" The genus ("mage") and the three axes (source × domain × state) are the vault's **cross-system pattern**; D&D is just the most *schematized* tradition (named schools + classes), which makes it a convenient illustration — but the **authorization** truth lives most cleanly in the vault's own strongest references, not in D&D:
 
 | Vault system | Registry rulesystem | How it instantiates source / authorization |
-|---|---|---|
+| --- | --- | --- |
 | **Old Kingdom** (Nix) | charter / free-magic law | the vault's **purest authorization system**: **Charter Magic** = sanctioned, ordered, marked (authorized, *with* the order) vs **Free Magic** = unconstrained, corrosive, unchartered (unauthorized, *against* it). → `NECROMANCER-DOCTRINE`, `THRESHOLD-DOCTRINE` |
 | **Bartimaeus** (Stroud) | binding ontology | the vault's strongest reference for **instance identity + binding + summon/release**: **true name = control surface, summon/dismiss = lifecycle, master = contract** — the **delegated/recallable** model in its purest form (a spirit recallable by its master ≈ the warlock-patron / Hand question, literal) |
 | **Children of the Lamp** | tribe-vessel law | tribe (alignment/obligation) + vessel (legal states) + wish (limited power): vessel-channeling + delegation |
@@ -82,7 +82,7 @@ Also across the wider corpus: **His Dark Materials** (the subtle knife = *intrin
 ## V. The three orthogonal axes (the vault already has two)
 
 | Axis | Question | Examples | Vault home |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **Source / class** | where does power come from? | wizard / sorcerer / warlock / cleric | **(this node — the genus: "mage")** |
 | **Domain / school** | what does it do? | necromancer / enchanter / diviner | `NECROMANCER-DOCTRINE` (death domain) |
 | **State** | living or undead? | living mage vs the Lich | `UNDEAD-TAXONOMY` |
@@ -94,7 +94,7 @@ The **Lich** = *undead* (state) + *mage, usually wizard/warlock* (source) + *nec
 **[reading]** **Axis 1 maps almost one-to-one onto the vault's authorization/recallability spine** (Emanationism, Threshold, Baelnorn). Each spellcaster name is a *claim about where power legitimately comes from*:
 
 | Mage (by source) | Authorization analogue | Vault node |
-|---|---|---|
+| --- | --- | --- |
 | **Wizard** — learned | authority **earned** by training/credential | Abhorsen-via-Charter; the maester's forged chain |
 | **Sorcerer** — innate | **intrinsic / birthright** authority | Threshold's *"intrinsic fitness"* (subtle knife); the dragonlord blood |
 | **Warlock** — pact | **delegated / borrowed**, revocable by the patron | the **Hand of the King**; the **Emanationism** chain |
@@ -123,4 +123,6 @@ Adds no doctrine; revises nothing. It supplies the **source/class genus** ("mage
 
 ---
 
-###### [["The world is quiet here."]]
+```text
+The world is quiet here．Esto Perpetua!
+```

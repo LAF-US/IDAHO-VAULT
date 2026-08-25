@@ -1,4 +1,5 @@
 ---
+title: "#idleg #idpol"
 date: 2022-01-22
 time: 03:15:46
 tweet_id: "1484726454717874178"
@@ -22,11 +23,12 @@ related:
   - idpol
 ---
 
-@IdahoSenateGOP @brandendurst @DurstforIdaho #idleg #idpol 
-https://t.co/I3CANr8Tzz
+@IdahoSenateGOP @brandendurst @DurstforIdaho #idleg #idpol
+<https://t.co/I3CANr8Tzz>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2022/01/21/senate-gop-refutes-ethics-allegations/
+
+- <https://blog.idahoreports.idahoptv.org/2022/01/21/senate-gop-refutes-ethics-allegations/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

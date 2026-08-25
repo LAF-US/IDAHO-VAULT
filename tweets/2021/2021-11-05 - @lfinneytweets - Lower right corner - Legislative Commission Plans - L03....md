@@ -1,4 +1,5 @@
 ---
+title: "Lower right corner - Legislative Commission Plans - L03..."
 date: 2021-11-05
 time: 22:45:30
 tweet_id: "1456754576976084999"
@@ -19,11 +20,12 @@ related:
   - idleg
 ---
 
-@Soulliere4Idaho Lower right corner -> Legislative Commission Plans -> L03 #idleg 
-https://t.co/7Imq2zAn4H
+@Soulliere4Idaho Lower right corner -> Legislative Commission Plans -> L03 #idleg
+<https://t.co/7Imq2zAn4H>
 
 ## Links
-- https://idaho.maps.arcgis.com/apps/instant/interactivelegend/index.html?appid=9984aaa8b9e3485abdee9a7b95521d2b
+
+- <https://idaho.maps.arcgis.com/apps/instant/interactivelegend/index.html?appid=9984aaa8b9e3485abdee9a7b95521d2b>
 
 *In reply to [@Soulliere4Idaho](https://twitter.com/Soulliere4Idaho)*
 

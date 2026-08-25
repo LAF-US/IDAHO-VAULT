@@ -1,4 +1,5 @@
 ---
+title: "WHY ARE SCHOOL ADMINS HAVING TO TALK ABOUT FURRIES"
 date: 2023-10-06
 time: 18:47:09
 tweet_id: "1710366097583788090"
@@ -14,9 +15,10 @@ related:
 ---
 
 WHY ARE SCHOOL ADMINS HAVING TO TALK ABOUT FURRIES??
-https://t.co/nHswtgnTSk
+<https://t.co/nHswtgnTSk>
 
 ## Links
-- https://www.idahoednews.org/news/lakeland-superintendent-explains-decisions-to-parents/
+
+- <https://www.idahoednews.org/news/lakeland-superintendent-explains-decisions-to-parents/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1710366097583788090)

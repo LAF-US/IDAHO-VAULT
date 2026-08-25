@@ -1,4 +1,5 @@
 ---
+title: "RT @MorganTrau PART ONE What\u2019s happening at the CDA school..."
 date: 2021-09-25
 time: 20:56:22
 tweet_id: "1441869207814037506"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @MorganTrau: PART ONE: What’s happening at the CDA school district building? 
+RT @MorganTrau: PART ONE: What’s happening at the CDA school district building?
 
 Apologies, I’m still a little shaken up. My personal expe…
 

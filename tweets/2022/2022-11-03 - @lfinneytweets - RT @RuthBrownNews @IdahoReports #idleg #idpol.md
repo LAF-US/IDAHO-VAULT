@@ -1,4 +1,5 @@
 ---
+title: "RT @RuthBrownNews @IdahoReports #idleg #idpol"
 date: 2022-11-03
 time: 16:01:48
 tweet_id: "1588199776222588929"
@@ -21,9 +22,10 @@ related:
   - idpol
 ---
 
-RT @RuthBrownNews: @IdahoReports https://t.co/Gx7BXjLwjn #idleg #idpol
+RT @RuthBrownNews: @IdahoReports <https://t.co/Gx7BXjLwjn> #idleg #idpol
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2022/10/21/interviews-with-statewide-candidates-who-did-not-get-to-debate/
+
+- <https://blog.idahoreports.idahoptv.org/2022/10/21/interviews-with-statewide-candidates-who-did-not-get-to-debate/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1588199776222588929)

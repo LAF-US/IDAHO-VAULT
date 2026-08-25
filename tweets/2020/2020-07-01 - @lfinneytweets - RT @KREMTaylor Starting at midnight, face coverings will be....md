@@ -1,4 +1,5 @@
 ---
+title: "RT @KREMTaylor Starting at midnight, face coverings will be..."
 date: 2020-07-01
 time: 19:06:56
 tweet_id: "1278404739374309376"

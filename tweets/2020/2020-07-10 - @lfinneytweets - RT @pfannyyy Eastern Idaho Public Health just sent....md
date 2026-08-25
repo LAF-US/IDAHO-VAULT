@@ -1,4 +1,5 @@
 ---
+title: "RT @pfannyyy Eastern Idaho Public Health just sent..."
 date: 2020-07-10
 time: 16:48:26
 tweet_id: "1281631375330689024"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @pfannyyy: Eastern Idaho Public Health just sent reporters its draft pandemic response plan for the region. 
+RT @pfannyyy: Eastern Idaho Public Health just sent reporters its draft pandemic response plan for the region.
 
 I covered the Board of Hea…
 

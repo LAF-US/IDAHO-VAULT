@@ -1,4 +1,5 @@
 ---
+title: "RT @MaherKXLY I just had a chance to interview @GovInslee..."
 date: 2020-04-15
 time: 00:07:22
 tweet_id: "1250214095426478080"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @MaherKXLY: I just had a chance to interview @GovInslee about what steps are next for Washington in this pandemic. 
+RT @MaherKXLY: I just had a chance to interview @GovInslee about what steps are next for Washington in this pandemic.
 
 He says it's time t…
 

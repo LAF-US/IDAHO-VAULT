@@ -1,0 +1,71 @@
+name: "PR-Agent (digest-pinned)"
+description: >-
+  the-pr-agent/pr-agent v0.42.0, with its Docker Hub image pinned by digest
+  instead of the mutable tag upstream builds from.
+
+# WHY THIS FILE EXISTS
+#
+# `uses: the-pr-agent/pr-agent@<sha>` pins the *repository* but not the code
+# that actually runs. Upstream's `action.yaml` is a Docker action whose image is
+# `Dockerfile.github_action_dockerhub`, and that Dockerfile is one line:
+#
+#     FROM pragent/pr-agent:github_action
+#
+# `github_action` is a MUTABLE tag. Upstream can repoint it at any time, and the
+# SHA pin in the workflow would not change — so the pin conveys a guarantee it
+# does not provide. This was raised on #960 and merged still open as step 4;
+# this action closes it.
+#
+# Everything below is a verbatim copy of `action.yaml` at f6af7d77 (v0.42.0)
+# EXCEPT the
+# `image:` line. Instead of building the one-line Dockerfile, we reference the
+# image directly by digest, which is what the Dockerfile would have resolved to.
+#
+# Digest re-resolved 2026-08-14 against registry-1.docker.io, on the v0.42.0
+# bump:
+#
+#     GET /v2/pragent/pr-agent/manifests/github_action
+#     -> application/vnd.oci.image.index.v1+json
+#     -> docker-content-digest: sha256:b81235c3bdd...24f8f56dd9cb93
+#
+# It is an OCI image *index*, so the one digest covers every platform the tag
+# publishes — no per-architecture pinning needed.
+#
+# WHAT THIS COSTS — read before bumping
+#
+# 1. Dependabot no longer tracks any of it. The `github-actions` ecosystem
+#    (.github/dependabot.yml, the only ecosystem configured — there is no
+#    `docker` entry) tracked the workflow's `uses:` line and its trailing
+#    `# v0.41.1` marker (it has since bumped main to v0.42.0). A local `./` action
+#    is not tracked, and Dependabot
+#    would not read an `image:` inside an action.yml even if docker were
+#    enabled. BOTH the version and the digest are now manual.
+# 2. The digest IS enforced, as of the same PR that added this file.
+#    check_action_pins.py originally skipped `./` and `docker://` outright,
+#    which is how a mutable tag got past a 40-char pin in the first place. It
+#    now also reads `image:` lines in workflows and actions and requires
+#    `@sha256:<64 hex>`, and holds `uses: docker://` to the same rule. Change
+#    the digest below to a tag and CI fails.
+# 3. Because the wiring below is a copy, upstream changes to `action.yaml` —
+#    new inputs, new env — are not picked up. Re-copy it when bumping.
+#
+# TO BUMP: pick the new upstream tag, re-copy its `action.yaml` here, resolve
+# that release's image digest the same way, and update all three of the version
+# in this header, the digest below, and the workflow's comment.
+
+inputs:
+  artifact_path:
+    description: "Path to a CI artifact file (relative to GITHUB_WORKSPACE or absolute) to include as extra context in PR analysis. Leave empty to disable artifact injection."
+    required: false
+    default: ""
+  artifact_instructions:
+    description: "Custom instructions telling the AI how to interpret the artifact. Leave empty for a sensible default."
+    required: false
+    default: ""
+
+runs:
+  using: "docker"
+  image: "docker://pragent/pr-agent@sha256:b81235c3bddc551939a1feca8926f4b6e8abcec2ae5bf4620424f8f56dd9cb93"
+  env:
+    ARTIFACT_PATH: ${{ inputs.artifact_path }}
+    ARTIFACT_INSTRUCTIONS: ${{ inputs.artifact_instructions }}

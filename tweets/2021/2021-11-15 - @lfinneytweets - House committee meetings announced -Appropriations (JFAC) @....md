@@ -1,4 +1,5 @@
 ---
+title: "House committee meetings announced -Appropriations (JFAC) @..."
 date: 2021-11-15
 time: 19:37:04
 tweet_id: "1460331032079581187"
@@ -14,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-House committee meetings announced: 
--Appropriations (JFAC) @ 1:15pm 
--Business @ 1:30pm 
+House committee meetings announced:
+-Appropriations (JFAC) @ 1:15pm
+-Business @ 1:30pm
 -State Affairs @ after Business
 -Judiciary @ tomorrow after morning floor recess
 

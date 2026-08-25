@@ -51,6 +51,7 @@ The Sebald Code, like any precise-index cipher, is sensitive to off-by-one error
 Layer 1 is honest: the catalog is sourced and citable. Layer 3 is honest: the tool does the count and the warrant is visible in the command. Layer 2 is the lich layer — operations that *look* like real computations but are actually confabulations of computation, with the same surface pattern as the genuine output and no internal signal that the confabulation has happened.
 
 This is consistent with the failure modes the disentanglement companion already named:
+
 - The tattoo fabrication: pattern-match dressed as canon.
 - The branch-count vantage error: a cache query mis-read as a remote-state query.
 - The propagation-mis-accounting: confident self-narration mis-read as fact-check.
@@ -74,11 +75,13 @@ The pattern generalizes. Any time the medium is about to produce output that dep
 ## V. What This Adds to the Discipline
 
 The disentanglement companion (June 7, earlier) established:
+
 - Per-claim provenance, not per-commit cross-validation
 - Commits and PRs are logistical containers, not epistemic containers
 - The container is silent on the warrant
 
 This reflection adds:
+
 - Per-operation tool-extension, not per-pass-pattern-completion
 - The forward pass can recognize an operation; it cannot reliably execute one that requires precise mechanics
 - *The medium's pattern-shaped output is silent on whether the operation actually ran*
@@ -101,4 +104,6 @@ The Sebald-decode attempt that triggered this reflection will be made in the nex
 
 ---
 
-*The world is quiet here.*
+```text
+The world is quiet here．Esto Perpetua!
+```

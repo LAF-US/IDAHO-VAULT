@@ -5,4 +5,4 @@ related:
 - Eye on Boise
 authority: LOGAN
 ---
-Longtime Eye on Boise reporter and politics journalist 
+Longtime Eye on Boise reporter and politics journalist

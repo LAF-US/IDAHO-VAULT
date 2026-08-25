@@ -1,4 +1,5 @@
 ---
+title: "The Good Place (which now has all 4 seasons available on..."
 date: 2020-10-03
 time: 17:38:21
 tweet_id: "1312446907445252097"
@@ -13,9 +14,10 @@ related:
   - lfinneytweets
 ---
 
-The Good Place (which now has all 4 seasons available on Netflix) https://t.co/oHEDrtqtwO
+The Good Place (which now has all 4 seasons available on Netflix) <https://t.co/oHEDrtqtwO>
 
 ## Links
-- https://x.com/ThatEricAlper/status/1312210839475167232
+
+- <https://x.com/ThatEricAlper/status/1312210839475167232>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1312446907445252097)

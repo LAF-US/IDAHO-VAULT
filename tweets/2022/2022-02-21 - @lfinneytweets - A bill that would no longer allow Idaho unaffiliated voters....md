@@ -1,4 +1,5 @@
 ---
+title: "A bill that would no longer allow Idaho unaffiliated voters..."
 date: 2022-02-21
 time: 19:04:50
 tweet_id: "1495836930042327042"
@@ -18,9 +19,10 @@ related:
   - idpol
 ---
 
-A bill that would no longer allow Idaho unaffiliated voters to select a political party on election day narrowly passes the House, moving on to the Senate. #idleg #idpol https://t.co/EcQsGPbn0C
+A bill that would no longer allow Idaho unaffiliated voters to select a political party on election day narrowly passes the House, moving on to the Senate. #idleg #idpol <https://t.co/EcQsGPbn0C>
 
 ## Media
-- ![](https://pbs.twimg.com/media/FMJHdJjUcAAsDRQ.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/FMJHdJjUcAAsDRQ.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1495836930042327042)

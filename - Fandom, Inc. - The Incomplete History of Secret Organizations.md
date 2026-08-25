@@ -19,7 +19,7 @@ When the Baudelaires arrived at [Prufrock Preparatory School](https://snicket.fa
 
 ### Spyglass Page
 
-*as seen in " [The Wide Window: Part Two](https://snicket.fandom.com/wiki/The_Wide_Window:_Pa***REMOVED***Two "The Wide Window: Part Two") ", " [The Austere Academy: Part Two](https://snicket.fandom.com/wiki/The_Austere_Academy:_Pa***REMOVED***Two "The Austere Academy: Part Two") " and " [The Slippery Slope: Part Two](https://snicket.fandom.com/wiki/The_Slippery_Slope:_Pa***REMOVED***Two "The Slippery Slope: Part Two")."*
+*as seen in " [The Wide Window: Part Two](https://snicket.fandom.com/wiki/The_Wide_Window:_Part_Two "The Wide Window: Part Two") ", " [The Austere Academy: Part Two](https://snicket.fandom.com/wiki/The_Austere_Academy:_Part_Two "The Austere Academy: Part Two") " and " [The Slippery Slope: Part Two](https://snicket.fandom.com/wiki/The_Slippery_Slope:_Part_Two "The Slippery Slope: Part Two")."*
 
 At the bottom of both facing pages is a section number of some sort: **V-123/XI**
 
@@ -87,7 +87,7 @@ Remainder of the text is filler. (Aunt Josephine news article) [^7]
 
 ### Sugar Bowl Page
 
-*as seen in" [The Austere Academy: Part Two](https://snicket.fandom.com/wiki/The_Austere_Academy:_Pa***REMOVED***Two "The Austere Academy: Part Two")."*
+*as seen in" [The Austere Academy: Part Two](https://snicket.fandom.com/wiki/The_Austere_Academy:_Part_Two "The Austere Academy: Part Two")."*
 
 ![Sugar Bowl in The Incomplete History of Secret Organizations](https://static.wikia.nocookie.net/snicket/images/2/2b/Sugar_Bowl_in_The_Incomplete_History_of_Secret_Organizations.png/revision/latest/scale-to-width-down/271?cb=20191030181847)
 
@@ -115,7 +115,7 @@ The rest of the text is unknown.[^8]
 
 ### Starting Fires: Using the Sun and a Spyglass
 
-*as seen in " [The Austere Academy: Part Two](https://snicket.fandom.com/wiki/The_Austere_Academy:_Pa***REMOVED***Two "The Austere Academy: Part Two")."*
+*as seen in " [The Austere Academy: Part Two](https://snicket.fandom.com/wiki/The_Austere_Academy:_Part_Two "The Austere Academy: Part Two")."*
 
 **Bold Text** denotes highlighted segments, and Underlined denotes underlined.
 
@@ -167,7 +167,7 @@ Handwritten notes:
 
 ### Ike Anwhistle Page
 
-*as seen in " [The Austere Academy: Part Two](https://snicket.fandom.com/wiki/The_Austere_Academy:_Pa***REMOVED***Two "The Austere Academy: Part Two")."*
+*as seen in " [The Austere Academy: Part Two](https://snicket.fandom.com/wiki/The_Austere_Academy:_Part_Two "The Austere Academy: Part Two")."*
 
 **Bold Text** denotes highlighted segments, and Underlined denotes underlined.
 
@@ -247,17 +247,17 @@ Ike Anwhistle.
 
 ## Sources
 
-[^1]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Wide Window: Part Two](https://snicket.fandom.com/wiki/The_Wide_Window:_Pa***REMOVED***Two "The Wide Window: Part Two")*
+[^1]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Wide Window: Part Two](https://snicket.fandom.com/wiki/The_Wide_Window:_Part_Two "The Wide Window: Part Two")*
 
-[^2]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Bad Beginning: Part Two](https://snicket.fandom.com/wiki/The_Bad_Beginning:_Pa***REMOVED***Two "The Bad Beginning: Part Two")*
+[^2]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Bad Beginning: Part Two](https://snicket.fandom.com/wiki/The_Bad_Beginning:_Part_Two "The Bad Beginning: Part Two")*
 
-[^3]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Slippery Slope: Part Two](https://snicket.fandom.com/wiki/The_Slippery_Slope:_Pa***REMOVED***Two "The Slippery Slope: Part Two")*
+[^3]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Slippery Slope: Part Two](https://snicket.fandom.com/wiki/The_Slippery_Slope:_Part_Two "The Slippery Slope: Part Two")*
 
-[^4]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Wide Window: Part One](https://snicket.fandom.com/wiki/The_Wide_Window:_Pa***REMOVED***One "The Wide Window: Part One")*
+[^4]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Wide Window: Part One](https://snicket.fandom.com/wiki/The_Wide_Window:_Part_One "The Wide Window: Part One")*
 
-[^5]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Austere Academy: Part One](https://snicket.fandom.com/wiki/The_Austere_Academy:_Pa***REMOVED***One "The Austere Academy: Part One")*
+[^5]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Austere Academy: Part One](https://snicket.fandom.com/wiki/The_Austere_Academy:_Part_One "The Austere Academy: Part One")*
 
-[^6]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Carnivorous Carnival: Part Two](https://snicket.fandom.com/wiki/The_Carnivorous_Carnival:_Pa***REMOVED***Two "The Carnivorous Carnival: Part Two")*
+[^6]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Carnivorous Carnival: Part Two](https://snicket.fandom.com/wiki/The_Carnivorous_Carnival:_Part_Two "The Carnivorous Carnival: Part Two")*
 
 [^7]: [Spyglass Page Analysis](https://xaoh-f-goon.tumblr.com/post/172910987773/printed-word-written-wordmore-1-small)
 

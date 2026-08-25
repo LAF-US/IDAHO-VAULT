@@ -1,4 +1,5 @@
 ---
+title: "Its sibling may offer a clue."
 date: 2023-09-16
 time: 01:13:24
 tweet_id: "1702853154956878123"
@@ -14,11 +15,12 @@ related:
   - lfinneytweets
 ---
 
-Its sibling may offer a clue. 
-https://t.co/QaC0Q73vRY
+Its sibling may offer a clue.
+<https://t.co/QaC0Q73vRY>
 
 ## Links
-- https://x.com/everytract/status/1172499196865171456?t=ZwC9wIuvC2kuriyiRifo0A
+
+- <https://x.com/everytract/status/1172499196865171456?t=ZwC9wIuvC2kuriyiRifo0A>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

@@ -1,4 +1,5 @@
 ---
+title: "RT @heersinkolivia Dale now is discussing a business\u2019s..."
 date: 2020-07-23
 time: 16:28:50
 tweet_id: "1286337485606354945"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @heersinkolivia: Dale now is discussing a business’s right to require mask mandates. 
+RT @heersinkolivia: Dale now is discussing a business’s right to require mask mandates.
 
 “I urge people to take this seriously. ... We’re…
 

@@ -1,4 +1,5 @@
 ---
+title: "Winder is now presenting the constitutional amendment HJR 1..."
 date: 2021-02-17
 time: 15:57:18
 tweet_id: "1362068615969656832"
@@ -19,11 +20,12 @@ related:
   - idpol
 ---
 
-Winder is now presenting the constitutional amendment HJR 1 for #idleg to call itself into special session. “We’re at the mercy of the executive branch when there are subject matters that the legislature thinks is important.” #idpol 
-https://t.co/zOXNIFNbEO
+Winder is now presenting the constitutional amendment HJR 1 for #idleg to call itself into special session. “We’re at the mercy of the executive branch when there are subject matters that the legislature thinks is important.” #idpol
+<https://t.co/zOXNIFNbEO>
 
 ## Links
-- https://legislature.idaho.gov/sessioninfo/2021/legislation/HJR001/
+
+- <https://legislature.idaho.gov/sessioninfo/2021/legislation/HJR001/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

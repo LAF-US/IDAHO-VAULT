@@ -1,4 +1,5 @@
 ---
+title: "Little says that Idaho ranks first among the states for..."
 date: 2021-01-11
 time: 20:17:20
 tweet_id: "1348725703752048640"
@@ -22,7 +23,7 @@ related:
   - idleg
 ---
 
-@IdahoPTV @GovernorLittle Little says that Idaho ranks first among the states for economic recovery momentum. 
+@IdahoPTV @GovernorLittle Little says that Idaho ranks first among the states for economic recovery momentum.
 "Together, the Legislature and I laid the groundwork before the pandemic to rebound quickly during tough times.” #idpol #idleg
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

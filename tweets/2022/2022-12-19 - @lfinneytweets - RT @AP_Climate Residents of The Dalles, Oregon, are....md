@@ -1,4 +1,5 @@
 ---
+title: "RT @AP_Climate Residents of The Dalles, Oregon, are..."
 date: 2022-12-19
 time: 00:19:26
 tweet_id: "1604632464802344961"

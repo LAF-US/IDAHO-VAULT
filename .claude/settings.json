@@ -1,16 +1,4 @@
 {
-  "hooks": {
-    "SessionStart": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "echo '--- IDAHO-VAULT CONTEXT INJECTION ---' && echo 'Date:' $(date '+%Y-%m-%d') && echo 'Branch:' $(git branch --show-current) && echo '' && echo 'CLAUDE.md: Loaded automatically \u2014 single source of truth for operations.' && echo '' && echo 'Vault owner: Logan Finney \u2014 journalist, Idaho Reports / Idaho Public Television' && echo 'All committed content is ON THE RECORD and PUBLISHABLE.' && echo '' && echo \"ENVIRONMENT FACTS \u2014 verified right now by this hook, not assumed from docs:\" && echo \"  OS: $(uname -s 2>/dev/null || echo Windows)\" && echo \"  gh CLI: $(command -v gh >/dev/null 2>&1 && echo present || echo 'ABSENT \u2014 use the GitHub MCP tools (mcp__github__*); any doc line saying gh <cmd> means its MCP equivalent')\" && echo \"  PowerShell: $({ command -v pwsh >/dev/null 2>&1 || command -v powershell >/dev/null 2>&1; } && echo present || echo 'ABSENT \u2014 CLAUDE.md sections on Start-ClaudeVault.ps1 / scoop / Windows Operation do NOT apply to this session')\" && echo \"  1Password CLI: $(command -v op >/dev/null 2>&1 && echo present || echo 'ABSENT \u2014 .op/ setup instructions do NOT apply to this session')\" && echo 'Docs describe MULTIPLE runtimes (Logan'\\''s Windows machine; remote Linux containers). Instructions naming a tool listed ABSENT above are for a DIFFERENT runtime \u2014 do not attempt them here.' && echo '' && echo 'REGROUND \u2014 MANDATORY, ESPECIALLY AFTER COMPACTION: a summary is NOT grounding; conclusions carried without their sources decay into confabulation.' && echo 'Before acting, READ: AGENTS.md (rules incl. Fix Errors/smoke detector + precedence order); !/WAKEUP.md (recovery + runtime-evidence rules); CONSTITUTION.md (esp. I Core Principles, V Constraints); VAULT-CONVENTIONS.md esp. Git Practices (merge queue: arm != enqueue, toggle recipe, responsible-until-MERGED) and Guiding Principles (DISCOVERY BEFORE INVENTION).' && echo 'If a claim in your summary lacks a file you can cite, it is ungrounded \u2014 re-derive it from the vault or mark it with the * wildcard.' && echo '--- END CONTEXT INJECTION ---'"
-          }
-        ]
-      }
-    ]
-  },
   "permissions": {
     "allow": [
       "Bash",

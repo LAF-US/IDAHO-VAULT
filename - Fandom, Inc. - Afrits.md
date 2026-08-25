@@ -24,7 +24,7 @@ As with the different spirit classes, power among afrits differ and can be divid
 - Patterknife
 - Phoebus
 - Tchue - a spirit with reputation and seems to be a master of words (described by [Bartimaeus](https://bartimaeus.fandom.com/wiki/Bartimaeus "Bartimaeus") in various footnotes). Bartimaeus includes defeating Tchue in one of his boasts.
-- Unnamed dark-green afrit of [Rupert Devereaux](https://bartimaeus.fandom.com/wiki/Rupe***REMOVED***Devereaux "Rupert Devereaux").
+- Unnamed dark-green afrit of [Rupert Devereaux](https://bartimaeus.fandom.com/wiki/Rupert_Devereaux "Rupert Devereaux").
 
 ## Trivia
 

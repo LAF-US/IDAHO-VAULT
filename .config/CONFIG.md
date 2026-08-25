@@ -1,4 +1,5 @@
 ---
+title: CONFIG
 authority: LOGAN
 related:
   - CONFIG
@@ -6,6 +7,6 @@ related:
   - runtime
 ---
 
-**.config** — Imported software runtime persona.
+**.config** â€” Imported software runtime persona.
 
 config runtime and configuration.

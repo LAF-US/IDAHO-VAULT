@@ -137,7 +137,7 @@ One feature he said he regarded as particularly strong was what he called a “s
 
 If it goes according to plan, the Senator said, “then it will he said, ‘Well, Frank Church was the only one who figured It out this year, against the conventional wisdom’ of entering early prirmaries. If it doesn't, then I'll be able to say back, as everybody figured, it was too late.”
 
---- 
+---
 
 [^1] Linda Charlton. "[Senator Church Joins Presidential Race](https://www.nytimes.com/1976/03/19/archives/senator-church-joins-presidential-race.html)." Special to *The New York Times*. March 19, 1976.
 

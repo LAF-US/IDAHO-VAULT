@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio Information from @IDSecOfState about how..."
 date: 2020-04-13
 time: 21:39:24
 tweet_id: "1249814467346436096"

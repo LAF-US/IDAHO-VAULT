@@ -1,4 +1,5 @@
 ---
+title: "RT @alex_brizee \u201cShe lost her job. She took her life. And I..."
 date: 2022-02-17
 time: 19:34:23
 tweet_id: "1494394816704090117"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @alex_brizee: “She lost her job. She took her life. And I no longer have my best friend." 
+RT @alex_brizee: “She lost her job. She took her life. And I no longer have my best friend."
 
 2 Idaho lawmakers are proposing a bill that…
 
