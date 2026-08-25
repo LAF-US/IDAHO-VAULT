@@ -23,7 +23,7 @@ The authoritative model text of Article 12 is **not reproduced in this vault**. 
 | `https://www.law.cornell.edu/ucc/12/12-102` | 2026-08-25 | HTTP 404 |
 | `https://www.law.cornell.edu/ucc/12/12-105` | 2026-08-25 | HTTP 404 |
 | `https://www.uniformlaws.org/acts/ucc` | 2026-08-25 | 200 — navigation markup, no act text |
-| ULC 2022-Amendments committee page | 2026-08-25 | 200 — navigation markup, no act text; no enactment table |
+| `https://www.uniformlaws.org/committees/community-home?CommunityKey=1457c422-ddb7-40b0-8c76-39a1991651ac` (ULC — *Uniform Commercial Code Amendments (2022)* committee) | 2026-08-25 | 200 — navigation markup, no act text; no enactment table |
 
 Per the Provenance and Restraint axes, this gap is named rather than filled. **Do not paraphrase Article 12 from memory into this vault.** Until the promulgated text is obtained from the ULC or ALI and reproduced here, treat any characterization of Article 12 — including in `LICENSE` — as uncited.
 
@@ -34,7 +34,7 @@ Idaho has **not** enacted Article 12 as an article of its commercial code. Check
 - Title 28's chapter index contains no controllable-electronic-records chapter.
 - Idaho instead enacted its own **Digital Assets Act**, Title 28 Chapter 53 (§§ 28-5301–5306), added **2022, ch. 284** — the same year Article 12 was promulgated.
 
-**The two diverge by design, and Idaho has not conformed since.** Article 12 creates a distinct controllable-electronic-record category governed by control-based rules. `Idaho Code §28-5304` instead keeps digital assets inside the existing Article 9 taxonomy, and splits them: subsection (1) makes digital assets *intangible personal property* and *general intangibles*, while subsection (2) makes digital securities *intangible personal property* and *investment property* — both by reference to § 28-9-102.
+**The two diverge by design, and Idaho has not conformed since.** Article 12 creates a distinct controllable-electronic-record category governed by control-based rules. `Idaho Code §28-5304` instead keeps digital assets inside the existing Article 9 taxonomy, and splits them three ways: subsection (1) makes digital assets *intangible personal property* and *general intangibles*, and subsection (2) makes digital securities *intangible personal property* and *investment property* — both by reference to § 28-9-102 — while subsection (3) makes virtual currency *intangible personal property* and expressly **not** a security, notwithstanding § 30-14-102.
 
 ## The concept still has an Idaho hook
 
