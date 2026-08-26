@@ -8,7 +8,7 @@ dependencies = [
   "pygit2>=1.18.2",
   "python-dateutil>=2.9",
   "pyyaml>=6.0.3",
-  "posthog>=7.38.4,<8",
+  "posthog>=7.42.1,<8",
 ]
 
 [dependency-groups]

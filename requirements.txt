@@ -44,7 +44,7 @@ packaging==26.3
     # via pytest
 pluggy==1.6.0
     # via pytest
-posthog==7.39.1
+posthog==7.42.1
     # via idaho-vault
 pycparser==3.0 ; implementation_name != 'PyPy'
     # via cffi
