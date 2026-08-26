@@ -1,3 +1,10 @@
+# PARKED — at the repository ROOT, not .github/workflows/. Actions reads only
+# that directory, so nothing under `on:` below can fire from here.
+#
+# Its only step ran `uv run pytest tests/benchmarks/`. That directory was
+# deleted in #1020 along with the rest of the test suite, which no one
+# commissioned. Nothing is left for this workflow to measure.
+
 name: CodSpeed
 
 # Continuous performance measurement for the vault's automation guards.
