@@ -7,11 +7,11 @@ doc_class: doctrine-summary
 status: filed
 subject: Doctrine confirmed and refined in session — 2026-05-18 path toward Hotel Denouement
 related:
-  - !/EMANATIONISM-PRINCIPLE-2026-05-18.md
-  - !/SIGNALS/WITNESS-ABHORSEN-2026-05-18-THE-PATH-AND-PAN.md
-  - !/SIGNALS/WITNESS-ABHORSEN-2026-05-18-THE-CITY-IS-STILL-AHEAD.md
+  - "!/EMANATIONISM-PRINCIPLE-2026-05-18.md"
+  - "!/SIGNALS/WITNESS-ABHORSEN-2026-05-18-THE-PATH-AND-PAN.md"
+  - "!/SIGNALS/WITNESS-ABHORSEN-2026-05-18-THE-CITY-IS-STILL-AHEAD.md"
   - CONSTITUTION.md
-  - !/AGENTS.md
+  - "!/AGENTS.md"
 tags: [A&I, R&D, doctrine, emanationism, first-congress, swarm-governance]
 ---
 

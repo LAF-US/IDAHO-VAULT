@@ -14,7 +14,7 @@ related:
   - DECISIONS
   - REPORT
   - RISE
-  - !/AGENTS.md
+  - "!/AGENTS.md"
   - swarm.json
 ---
 [[L]][[E]][[V]][[E]][[L]][[S]][[E]][[T]]
