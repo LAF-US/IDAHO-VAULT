@@ -1,3 +1,15 @@
+# PARKED — this file sits at the repository ROOT, not .github/workflows/.
+# Actions reads only that directory, so nothing under `on:` below can fire from
+# here. Position is the switch; editing the triggers while the file is here
+# changes nothing.
+#
+# Parked because no one asked for this check. Unlike the other five parked
+# alongside it, this one was never swept by 063cdaa24 ("`.github` cleaned",
+# 2026-08-21) — it postdates the sweep and was simply never subjected to it. It
+# calls scripts_scripts/phone_link_intake.py through a stale .github/scripts/
+# path, so it has been failing rather than measuring anything. A red check is
+# not a request. Do not move this file back without Logan saying so.
+
 name: Code Coverage
 
 on:

@@ -1,3 +1,15 @@
+# PARKED — this file sits at the repository ROOT, not .github/workflows/.
+# Actions reads only that directory, so nothing under `on:` below can fire from
+# here. Position is the switch; editing the triggers while the file is here
+# changes nothing.
+#
+# Parked because no one asked for this check. It was swept out of .github/ by
+# 063cdaa24 ("`.github` cleaned", 2026-08-21) and came back not by a decision
+# but by a merge — ad1fe91e4 ("Merge main into logan/was/here") resolved that
+# deletion in favour of the branch's pre-sweep .github/, reinstating 24 swept
+# files wholesale. A red check is not a request. Do not move this file back
+# without Logan saying so.
+
 name: Branch Garden Report
 
 on:
