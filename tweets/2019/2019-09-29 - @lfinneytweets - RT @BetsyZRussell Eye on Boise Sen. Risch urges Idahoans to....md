@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Sen. Risch urges Idahoans to..."
 date: 2019-09-29
 time: 04:40:51
 tweet_id: "1178167731587178497"

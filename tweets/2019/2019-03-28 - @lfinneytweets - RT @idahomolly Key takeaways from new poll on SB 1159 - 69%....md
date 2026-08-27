@@ -1,4 +1,5 @@
 ---
+title: "RT @idahomolly Key takeaways from new poll on SB 1159 - 69%..."
 date: 2019-03-28
 time: 10:06:58
 tweet_id: "1111208048935100417"
@@ -16,6 +17,7 @@ related:
 ---
 
 RT @idahomolly: Key takeaways from new poll on SB 1159:
+
 - 69% of Idahoans polled oppose the bill
 - 89% believe the ballot initiative proces…
 

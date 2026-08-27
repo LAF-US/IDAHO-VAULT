@@ -1,4 +1,5 @@
 ---
+title: "RT @natasnw The 2024 #NWEmmy Nominees for Category 01,..."
 date: 2025-04-11
 time: 19:41:45
 tweet_id: "1910780327934779863"
@@ -18,9 +19,10 @@ related:
   - NWEmmy
 ---
 
-RT @natasnw: The 2024 #NWEmmy Nominees for Category 01, Overall Excellence https://t.co/Kq5PdCogcS
+RT @natasnw: The 2024 #NWEmmy Nominees for Category 01, Overall Excellence <https://t.co/Kq5PdCogcS>
 
 ## Media
-- ![](https://pbs.twimg.com/media/GoRjP18W0AARm_n.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/GoRjP18W0AARm_n.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1910780327934779863)

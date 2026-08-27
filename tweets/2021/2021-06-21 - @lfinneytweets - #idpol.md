@@ -1,4 +1,5 @@
 ---
+title: "#idpol"
 date: 2021-06-21
 time: 00:50:15
 tweet_id: "1406776444273848320"
@@ -16,9 +17,10 @@ related:
   - idpol
 ---
 
-#idpol https://t.co/VSPCMv2TCR
+\#idpol <https://t.co/VSPCMv2TCR>
 
 ## Media
-- ![](https://pbs.twimg.com/media/E4XfrPTVcAAKwZf.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/E4XfrPTVcAAKwZf.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1406776444273848320)

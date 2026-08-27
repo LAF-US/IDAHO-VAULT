@@ -1,4 +1,5 @@
 ---
+title: "tweet (179533)"
 date: 2024-05-14
 time: 20:43:05
 tweet_id: "1790482991959179533"
@@ -17,10 +18,11 @@ related:
   - lfinneytweets
 ---
 
-@tucker_id @brandendurst https://t.co/NV9hJV9dEe
+@tucker_id @brandendurst <https://t.co/NV9hJV9dEe>
 
 ## Links
-- https://idahocapitalsun.com/2022/09/21/political-payback-one-wealthy-donor-may-have-influenced-gop-primary-defeats/
+
+- <https://idahocapitalsun.com/2022/09/21/political-payback-one-wealthy-donor-may-have-influenced-gop-primary-defeats/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

@@ -1,0 +1,49 @@
+# PARKED — this file sits at the repository ROOT, not .github/workflows/.
+# Actions reads only that directory, so nothing under `on:` below can fire from
+# here. Position is the switch; editing the triggers while the file is here
+# changes nothing.
+#
+# Parked because no one asked for this check. It was swept out of .github/ by
+# 063cdaa24 ("`.github` cleaned", 2026-08-21) and came back not by a decision
+# but by a merge — ad1fe91e4 ("Merge main into logan/was/here") resolved that
+# deletion in favour of the branch's pre-sweep .github/, reinstating 24 swept
+# files wholesale. A red check is not a request. Do not move this file back
+# without Logan saying so.
+
+name: Arbiter Sortition
+
+on:
+  workflow_dispatch:
+    inputs:
+      pr_number:
+        description: "Pull Request Number"
+        required: true
+
+permissions:
+  pull-requests: write
+  contents: read
+
+jobs:
+  sortition:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout trusted validator code
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Setup Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.11"
+
+      - name: Run Arbiter Sortition
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ inputs.pr_number }}
+          REPO: ${{ github.repository }}
+        run: |
+          python3 .github/scripts/arbiter_sortition.py \
+            --pr-number "$PR_NUMBER" \
+            --repo "$REPO" \
+            --arbiter-count 2

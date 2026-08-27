@@ -1,4 +1,5 @@
 ---
+title: "tweet (213761)"
 date: 2020-02-28
 time: 17:58:08
 tweet_id: "1233451330196213761"
@@ -14,10 +15,11 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/azTptYNnIG
+<https://t.co/azTptYNnIG>
 
 ## Links
-- https://legislature.idaho.gov/sessioninfo/2020/legislation/H0361/
+
+- <https://legislature.idaho.gov/sessioninfo/2020/legislation/H0361/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

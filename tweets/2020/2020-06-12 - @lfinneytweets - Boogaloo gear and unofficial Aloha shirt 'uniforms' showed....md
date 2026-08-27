@@ -1,4 +1,5 @@
 ---
+title: "Boogaloo gear and unofficial Aloha shirt 'uniforms' showed..."
 date: 2020-06-12
 time: 15:47:45
 tweet_id: "1271469244488617987"
@@ -16,9 +17,10 @@ related:
   - idpol
 ---
 
-Boogaloo gear and unofficial Aloha shirt 'uniforms' showed up at armed protest in Lewiston this month. #idpol https://t.co/kBrM1MRv5w
+Boogaloo gear and unofficial Aloha shirt 'uniforms' showed up at armed protest in Lewiston this month. #idpol <https://t.co/kBrM1MRv5w>
 
 ## Links
-- https://x.com/jason_a_w/status/1271263681267896320
+
+- <https://x.com/jason_a_w/status/1271263681267896320>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1271469244488617987)

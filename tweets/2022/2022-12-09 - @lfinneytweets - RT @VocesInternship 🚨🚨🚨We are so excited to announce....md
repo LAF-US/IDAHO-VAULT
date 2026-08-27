@@ -1,4 +1,5 @@
 ---
+title: "RT @VocesInternship \ud83d\udea8\ud83d\udea8\ud83d\udea8We are so excited to announce..."
 date: 2022-12-09
 time: 23:50:27
 tweet_id: "1601363680158830592"
@@ -16,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-RT @VocesInternship: 🚨🚨🚨We are so excited to announce 
+RT @VocesInternship: 🚨🚨🚨We are so excited to announce
 ⚡️Agustin Martinez, @BoiseState graduate from Boise;
 ⚡️Samantha Martinez, @BoiseStat…
 

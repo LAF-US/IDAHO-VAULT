@@ -1,4 +1,5 @@
 ---
+title: "How to make a state abortion ban go national #idleg #idpol..."
 date: 2023-04-17
 time: 21:16:00
 tweet_id: "1648072844709101568"
@@ -21,10 +22,11 @@ related:
   - idpol
 ---
 
-How to make a state abortion ban go national #idleg #idpol @SofiaResnick @statesnewsroom 
-https://t.co/VGw1uJi41S
+How to make a state abortion ban go national #idleg #idpol @SofiaResnick @statesnewsroom
+<https://t.co/VGw1uJi41S>
 
 ## Links
-- https://shar.es/afDFCo
+
+- <https://shar.es/afDFCo>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1648072844709101568)

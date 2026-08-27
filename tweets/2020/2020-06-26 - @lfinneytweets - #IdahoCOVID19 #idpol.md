@@ -1,4 +1,5 @@
 ---
+title: "#IdahoCOVID19 #idpol"
 date: 2020-06-26
 time: 02:05:58
 tweet_id: "1276335865141182464"
@@ -18,9 +19,10 @@ related:
   - idpol
 ---
 
-#IdahoCOVID19 #idpol https://t.co/nauVSdV9ph
+\#IdahoCOVID19 #idpol <https://t.co/nauVSdV9ph>
 
 ## Links
-- https://x.com/IdahoReports/status/1276334409478631425
+
+- <https://x.com/IdahoReports/status/1276334409478631425>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1276335865141182464)

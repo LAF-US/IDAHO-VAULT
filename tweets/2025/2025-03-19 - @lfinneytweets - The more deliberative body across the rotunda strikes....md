@@ -1,4 +1,5 @@
 ---
+title: "The more deliberative body across the rotunda strikes..."
 date: 2025-03-19
 time: 00:10:42
 tweet_id: "1902150703206035952"
@@ -16,9 +17,10 @@ related:
   - idleg
 ---
 
-The more deliberative body across the rotunda strikes again! #idleg https://t.co/Dflwu98tOl
+The more deliberative body across the rotunda strikes again! #idleg <https://t.co/Dflwu98tOl>
 
 ## Links
-- https://x.com/IdahoReports/status/1902148060047929514
+
+- <https://x.com/IdahoReports/status/1902148060047929514>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1902150703206035952)

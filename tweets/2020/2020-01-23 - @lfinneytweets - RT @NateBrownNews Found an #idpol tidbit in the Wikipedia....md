@@ -1,4 +1,5 @@
 ---
+title: "RT @NateBrownNews Found an #idpol tidbit in the Wikipedia..."
 date: 2020-01-23
 time: 18:00:13
 tweet_id: "1220405891096137728"
@@ -18,9 +19,10 @@ related:
   - idpol
 ---
 
-RT @NateBrownNews: Found an #idpol tidbit in the Wikipedia article on Daylight Savings Time. https://t.co/vCYhamaUXI
+RT @NateBrownNews: Found an #idpol tidbit in the Wikipedia article on Daylight Savings Time. <https://t.co/vCYhamaUXI>
 
 ## Media
-- ![](https://pbs.twimg.com/media/EO-uZmNUYAAmcF8.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/EO-uZmNUYAAmcF8.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1220405891096137728)

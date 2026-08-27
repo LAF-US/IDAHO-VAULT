@@ -1,4 +1,5 @@
 ---
+title: "RT @AllisonLCarter If I see one more tweet that says \u201cthe..."
 date: 2020-06-01
 time: 17:42:53
 tweet_id: "1267511951006941184"

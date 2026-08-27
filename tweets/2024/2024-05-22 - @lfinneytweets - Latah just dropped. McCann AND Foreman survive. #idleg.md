@@ -1,4 +1,5 @@
 ---
+title: "Latah just dropped. McCann AND Foreman survive. #idleg"
 date: 2024-05-22
 time: 08:59:49
 tweet_id: "1793205111881363654"
@@ -16,10 +17,11 @@ related:
   - idleg
 ---
 
-Latah just dropped. McCann AND Foreman survive. #idleg 
-https://t.co/6yujdbtLlo
+Latah just dropped. McCann AND Foreman survive. #idleg
+<https://t.co/6yujdbtLlo>
 
 ## Links
-- https://www.livevoterturnout.com/ENR/idaho/132/1/en/Index_132.html
+
+- <https://www.livevoterturnout.com/ENR/idaho/132/1/en/Index_132.html>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1793205111881363654)

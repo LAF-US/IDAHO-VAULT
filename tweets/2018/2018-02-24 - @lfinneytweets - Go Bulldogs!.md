@@ -1,4 +1,5 @@
 ---
+title: "Go Bulldogs!"
 date: 2018-02-24
 time: 03:55:17
 tweet_id: "967246528715702274"
@@ -13,9 +14,10 @@ related:
   - lfinneytweets
 ---
 
-Go Bulldogs! https://t.co/vWSZqsx3or
+Go Bulldogs! <https://t.co/vWSZqsx3or>
 
 ## Links
-- https://x.com/hampjazz/status/967244499943505920
+
+- <https://x.com/hampjazz/status/967244499943505920>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/967246528715702274)

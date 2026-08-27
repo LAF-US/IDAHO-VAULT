@@ -1,4 +1,5 @@
 ---
+title: "Full @GovernorLittle @IDHW statewide stay-home order,..."
 date: 2020-03-26
 time: 00:21:43
 tweet_id: "1242969949959647232"
@@ -19,9 +20,10 @@ related:
   - idpol
 ---
 
-Full @GovernorLittle @IDHW statewide stay-home order, effective until April 15: https://t.co/rgQXF1jFbY #idpol
+Full @GovernorLittle @IDHW statewide stay-home order, effective until April 15: <https://t.co/rgQXF1jFbY> #idpol
 
 ## Links
-- https://coronavirus.idaho.gov/wp-content/uploads/sites/127/2020/03/statewide-stay-home-order_032520.pdf
+
+- <https://coronavirus.idaho.gov/wp-content/uploads/sites/127/2020/03/statewide-stay-home-order_032520.pdf>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1242969949959647232)

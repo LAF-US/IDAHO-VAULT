@@ -1,4 +1,5 @@
 ---
+title: "Winder moves to introduce and print all 7 RS bills, Anthon..."
 date: 2021-11-15
 time: 15:58:18
 tweet_id: "1460275977078984707"
@@ -19,10 +20,11 @@ related:
   - idpol
 ---
 
-Winder moves to introduce and print all 7 RS bills, Anthon seconds. Passes on a unanimous voice vote. #idleg #idpol https://t.co/LO5o1svcjq
+Winder moves to introduce and print all 7 RS bills, Anthon seconds. Passes on a unanimous voice vote. #idleg #idpol <https://t.co/LO5o1svcjq>
 
 ## Media
-- ![](https://pbs.twimg.com/media/FEPxO74VcAQ0cCV.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/FEPxO74VcAQ0cCV.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

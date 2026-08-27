@@ -1,4 +1,5 @@
 ---
+title: "Not quite how it happened. ZBR came after the fact. #idpol"
 date: 2025-04-10
 time: 00:00:43
 tweet_id: "1910120724813185272"
@@ -19,11 +20,12 @@ related:
   - idpol
 ---
 
-@cremieuxrecueil Not quite how it happened. ZBR came after the fact. #idpol 
-https://t.co/JQFDDSYFVK
+@cremieuxrecueil Not quite how it happened. ZBR came after the fact. #idpol
+<https://t.co/JQFDDSYFVK>
 
 ## Links
-- https://ballotpedia.org/Idaho_lawmakers_fail_to_reauthorize_administrative_rules_for_third_straight_year
+
+- <https://ballotpedia.org/Idaho_lawmakers_fail_to_reauthorize_administrative_rules_for_third_straight_year>
 
 *In reply to [@cremieuxrecueil](https://twitter.com/cremieuxrecueil)*
 

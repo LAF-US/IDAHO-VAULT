@@ -1,4 +1,5 @@
 ---
+title: "The legislature\u2019s conditions and manner authority...may..."
 date: 2021-08-24
 time: 01:01:08
 tweet_id: "1429972004619264016"

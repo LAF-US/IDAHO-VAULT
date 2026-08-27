@@ -7,4 +7,5 @@ related:
 authority: LOGAN
 ---
 Residence: Idaho Falls
-- Senate member, Senate Education chairman 
+
+- Senate member, Senate Education chairman

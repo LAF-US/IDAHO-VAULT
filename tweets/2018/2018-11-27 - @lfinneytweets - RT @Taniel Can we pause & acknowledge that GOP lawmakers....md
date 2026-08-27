@@ -1,4 +1,5 @@
 ---
+title: "RT @Taniel Can we pause & acknowledge that GOP lawmakers..."
 date: 2018-11-27
 time: 21:18:02
 tweet_id: "1067527996519538688"

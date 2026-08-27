@@ -1,4 +1,5 @@
 ---
+title: "Forgot the photo! \ud83d\ude44"
 date: 2020-06-03
 time: 21:34:44
 tweet_id: "1268295077203337218"
@@ -17,10 +18,11 @@ related:
   - lfinneytweets
 ---
 
-@annehelen @DailyBee Forgot the photo! 🙄 https://t.co/EpBrpq1RlU
+@annehelen @DailyBee Forgot the photo! 🙄 <https://t.co/EpBrpq1RlU>
 
 ## Media
-- ![](https://pbs.twimg.com/media/EZnjpgOUYAETpa_.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/EZnjpgOUYAETpa_.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

@@ -1,4 +1,5 @@
 ---
+title: "Funny how the legislative process works. #idleg"
 date: 2020-03-18
 time: 16:28:03
 tweet_id: "1240314030192902145"
@@ -16,9 +17,10 @@ related:
   - idleg
 ---
 
-Funny how the legislative process works. #idleg https://t.co/iY7xZEIYue
+Funny how the legislative process works. #idleg <https://t.co/iY7xZEIYue>
 
 ## Links
-- https://x.com/NateBrownNews/status/1240312337032081408
+
+- <https://x.com/NateBrownNews/status/1240312337032081408>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1240314030192902145)

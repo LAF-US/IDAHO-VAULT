@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Today, @GovernorLittle announced a new..."
 date: 2020-04-23
 time: 20:53:42
 tweet_id: "1253426848647659521"
@@ -16,9 +17,10 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoReports: Today, @GovernorLittle announced a new economic recovery task force and a new website, https://t.co/o6mdb65vrp, that outl…
+RT @IdahoReports: Today, @GovernorLittle announced a new economic recovery task force and a new website, <https://t.co/o6mdb65vrp>, that outl…
 
 ## Links
-- http://rebound.idaho.gov
+
+- <http://rebound.idaho.gov>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1253426848647659521)

@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports #IdahoCOVID19"
 date: 2020-12-01
 time: 01:36:42
 tweet_id: "1333585782649470976"
@@ -22,9 +23,10 @@ date created: Sunday, April 12th 2026, 1:03:41 pm
 date modified: Sunday, April 12th 2026, 5:56:34 pm
 ---
 
-RT @IdahoReports: IdahoCOVID19 https://t.co/PPgO39bRu9
+RT @IdahoReports: IdahoCOVID19 <https://t.co/PPgO39bRu9>
 
 ## Media
-- ![](https://pbs.twimg.com/media/EoHYydvVoAk74zf.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/EoHYydvVoAk74zf.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1333585782649470976)

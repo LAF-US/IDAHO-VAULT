@@ -1,4 +1,5 @@
 ---
+title: "Fabulous reference to this tweet \ud83d\udc4c"
 date: 2020-07-17
 time: 05:43:34
 tweet_id: "1284000772175228928"
@@ -15,10 +16,11 @@ related:
 ---
 
 Fabulous reference to this tweet 👌
-https://t.co/ylde5WQ9jx
+<https://t.co/ylde5WQ9jx>
 
 ## Links
-- https://x.com/ISPNorthIdaho/status/1268378800993103874
+
+- <https://x.com/ISPNorthIdaho/status/1268378800993103874>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

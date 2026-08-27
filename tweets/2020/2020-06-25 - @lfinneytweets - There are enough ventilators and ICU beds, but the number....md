@@ -1,4 +1,5 @@
 ---
+title: "There are enough ventilators and ICU beds, but the number..."
 date: 2020-06-25
 time: 18:15:46
 tweet_id: "1276217538200743936"
@@ -17,10 +18,11 @@ related:
   - IdahoCOVID19
 ---
 
-There are enough ventilators and ICU beds, but the number of healthcare workers contracting COVID-19 has increased. Hahn said that they believe these healthcare workers are contracting the disease out in their communities, not while at work. #IdahoCOVID19 https://t.co/dcAPwqGHTZ
+There are enough ventilators and ICU beds, but the number of healthcare workers contracting COVID-19 has increased. Hahn said that they believe these healthcare workers are contracting the disease out in their communities, not while at work. #IdahoCOVID19 <https://t.co/dcAPwqGHTZ>
 
 ## Media
-- ![](https://pbs.twimg.com/media/EbYI0zrU4AAsK5f.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/EbYI0zrU4AAsK5f.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

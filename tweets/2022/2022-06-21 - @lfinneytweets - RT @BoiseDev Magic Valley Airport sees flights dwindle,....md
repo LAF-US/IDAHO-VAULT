@@ -1,4 +1,5 @@
 ---
+title: "RT @BoiseDev Magic Valley Airport sees flights dwindle,..."
 date: 2022-06-21
 time: 17:27:29
 tweet_id: "1539298978499424256"
@@ -15,9 +16,10 @@ related:
   - lfinneytweets
 ---
 
-RT @BoiseDev: Magic Valley Airport sees flights dwindle,  leaving Twin Falls residents with fewer travel options https://t.co/nyVVqtUgay
+RT @BoiseDev: Magic Valley Airport sees flights dwindle,  leaving Twin Falls residents with fewer travel options <https://t.co/nyVVqtUgay>
 
 ## Links
-- https://boisedev.com/news/2022/06/20/magic-valley-airport/
+
+- <https://boisedev.com/news/2022/06/20/magic-valley-airport/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1539298978499424256)

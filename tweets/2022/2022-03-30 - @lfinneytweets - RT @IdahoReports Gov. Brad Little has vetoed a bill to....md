@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Gov. Brad Little has vetoed a bill to..."
 date: 2022-03-30
 time: 22:10:23
 tweet_id: "1509291979380715526"

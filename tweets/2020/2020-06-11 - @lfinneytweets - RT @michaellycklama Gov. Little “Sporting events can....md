@@ -1,4 +1,5 @@
 ---
+title: "RT @michaellycklama Gov. Little \u201cSporting events can..."
 date: 2020-06-11
 time: 16:34:40
 tweet_id: "1271118664553467905"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @michaellycklama: Gov. Little: “Sporting events can operate under limited, physical distancing protocols.” 
+RT @michaellycklama: Gov. Little: “Sporting events can operate under limited, physical distancing protocols.”
 
 Also, gatherings of more th…
 

@@ -1,4 +1,5 @@
 ---
+title: "RT @arbiteronline BREAKING @GovernorLittle has issued a..."
 date: 2020-03-25
 time: 19:50:01
 tweet_id: "1242901570393538561"
@@ -16,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-RT @arbiteronline: BREAKING: @GovernorLittle has issued a statewide stay-at-home order. 
+RT @arbiteronline: BREAKING: @GovernorLittle has issued a statewide stay-at-home order.
 
 Non-essential businesses have been ordered to clo…
 

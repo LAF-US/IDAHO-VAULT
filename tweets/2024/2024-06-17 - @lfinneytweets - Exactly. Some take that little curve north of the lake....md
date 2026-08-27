@@ -1,4 +1,5 @@
 ---
+title: "Exactly. Some take that little curve north of the lake..."
 date: 2024-06-17
 time: 17:27:18
 tweet_id: "1802754907944181877"

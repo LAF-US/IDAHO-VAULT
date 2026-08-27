@@ -1,4 +1,5 @@
 ---
+title: "As of Wednesday morning, 293,443 ballots had been cast in..."
 date: 2024-10-30
 time: 17:04:15
 tweet_id: "1851671471523004693"
@@ -19,7 +20,7 @@ related:
   - idleg
 ---
 
-"As of Wednesday morning, 293,443 ballots had been cast in the Idaho 2024 General Election." 
+"As of Wednesday morning, 293,443 ballots had been cast in the Idaho 2024 General Election."
 
 By my calculation that's 27.6% turnout so far. One in four Idaho voters has already cast a ballot with just under a week until Election Day! #idpol #idleg
 

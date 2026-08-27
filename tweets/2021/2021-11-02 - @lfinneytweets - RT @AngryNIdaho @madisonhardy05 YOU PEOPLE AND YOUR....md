@@ -1,4 +1,5 @@
 ---
+title: "RT @AngryNIdaho @madisonhardy05 YOU PEOPLE AND YOUR..."
 date: 2021-11-02
 time: 21:13:43
 tweet_id: "1455644314516680704"

@@ -1,4 +1,5 @@
 ---
+title: "This story is insane. \ud83d\ude97\ud83d\udca8 \ud83d\ude93\ud83d\ude93\ud83d\udca8 \ud83d\ude93\ud83d\udca8"
 date: 2020-05-08
 time: 19:54:11
 tweet_id: "1258847686565875712"
@@ -13,10 +14,11 @@ related:
   - lfinneytweets
 ---
 
-This story is insane. 
-🚗💨 🚓🚓💨 🚓💨 https://t.co/ItRpVmCvwK
+This story is insane.
+🚗💨 🚓🚓💨 🚓💨 <https://t.co/ItRpVmCvwK>
 
 ## Links
-- https://x.com/CdAPressNews/status/1258814918624608256
+
+- <https://x.com/CdAPressNews/status/1258814918624608256>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1258847686565875712)

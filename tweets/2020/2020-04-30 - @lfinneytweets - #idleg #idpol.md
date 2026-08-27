@@ -1,4 +1,5 @@
 ---
+title: "#idleg #idpol"
 date: 2020-04-30
 time: 21:21:17
 tweet_id: "1255970503950340097"
@@ -18,9 +19,10 @@ related:
   - idpol
 ---
 
-#idleg #idpol https://t.co/VRU4uwg7No
+\#idleg #idpol <https://t.co/VRU4uwg7No>
 
 ## Links
-- https://x.com/Boiseweekly/status/1255969401150427137
+
+- <https://x.com/Boiseweekly/status/1255969401150427137>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1255970503950340097)

@@ -1,4 +1,5 @@
 ---
+title: "Mr. Speaker, I ask unanimous consent that the state..."
 date: 2020-03-11
 time: 00:25:55
 tweet_id: "1237535186646007809"
@@ -13,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-Mr. Speaker, I ask unanimous consent that the state primaries held the week after Super Tuesday be referred to as "Medium Tuesday" rather than Super Tuesday II. 
+Mr. Speaker, I ask unanimous consent that the state primaries held the week after Super Tuesday be referred to as "Medium Tuesday" rather than Super Tuesday II.
 
 Hearing no objection, it is so ordered.
 

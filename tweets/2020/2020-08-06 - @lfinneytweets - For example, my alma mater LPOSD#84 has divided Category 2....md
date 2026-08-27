@@ -1,4 +1,5 @@
 ---
+title: "For example, my alma mater LPOSD#84 has divided Category 2..."
 date: 2020-08-06
 time: 23:45:30
 tweet_id: "1291520806288125952"
@@ -14,11 +15,12 @@ related:
   - lfinneytweets
 ---
 
-For example, my alma mater LPOSD#84 has divided Category 2 into a 'yellow' tier with in-person instruction and modified class schedules and an 'orange' tier with hybrid instruction. 
-https://t.co/sZn0OqxEdi
+For example, my alma mater LPOSD#84 has divided Category 2 into a 'yellow' tier with in-person instruction and modified class schedules and an 'orange' tier with hybrid instruction.
+<https://t.co/sZn0OqxEdi>
 
 ## Links
-- https://covid.lposd.org/
+
+- <https://covid.lposd.org/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

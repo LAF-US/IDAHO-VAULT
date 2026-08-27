@@ -1,4 +1,5 @@
 ---
+title: "Canyon Ridge High School in Twin Falls was placed on..."
 date: 2023-02-22
 time: 22:23:40
 tweet_id: "1628520929927249920"
@@ -14,11 +15,12 @@ related:
   - lfinneytweets
 ---
 
-Canyon Ridge High School in Twin Falls was placed on lockdown this morning. 
-https://t.co/6Bhab1DUA1
+Canyon Ridge High School in Twin Falls was placed on lockdown this morning.
+<https://t.co/6Bhab1DUA1>
 
 ## Links
-- https://idahonews.com/news/local/canyon-ridge-high-school-in-twin-falls-locked-down-after-potential-threat
+
+- <https://idahonews.com/news/local/canyon-ridge-high-school-in-twin-falls-locked-down-after-potential-threat>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

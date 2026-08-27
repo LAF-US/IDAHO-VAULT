@@ -15,4 +15,3 @@ The important vault takeaway is that djinn are not just wish machines. They are 
 ## Vault Use
 
 This source supports the vault's understanding of the inhabitant side of the lamp/genie model.
-

@@ -1,4 +1,5 @@
 ---
+title: "Most #idleg committees use their first meeting for..."
 date: 2021-01-12
 time: 07:03:31
 tweet_id: "1348888321313832963"
@@ -18,9 +19,10 @@ related:
   - idpol
 ---
 
-Most #idleg committees use their first meeting for organizational sessions and new member introductions. The House State Affairs committee has three draft bills prepared for Tuesday relating to emergency declarations and separation of powers. #idpol https://t.co/N8MOqS9isr
+Most #idleg committees use their first meeting for organizational sessions and new member introductions. The House State Affairs committee has three draft bills prepared for Tuesday relating to emergency declarations and separation of powers. #idpol <https://t.co/N8MOqS9isr>
 
 ## Media
-- ![](https://pbs.twimg.com/media/Erg2mQAU0AIxgJ6.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/Erg2mQAU0AIxgJ6.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1348888321313832963)

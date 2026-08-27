@@ -1,4 +1,5 @@
 ---
+title: "Now the @IDHW dashboard reads 34,187 cases for yesterday...."
 date: 2020-09-11
 time: 00:01:25
 tweet_id: "1304208390588043264"

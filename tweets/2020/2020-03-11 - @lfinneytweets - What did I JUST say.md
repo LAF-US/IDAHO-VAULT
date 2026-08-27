@@ -1,4 +1,5 @@
 ---
+title: "What did I JUST say"
 date: 2020-03-11
 time: 04:45:45
 tweet_id: "1237600574259859458"
@@ -14,10 +15,11 @@ related:
   - lfinneytweets
 ---
 
-What did I JUST say https://t.co/yyMkNbTC6d
+What did I JUST say <https://t.co/yyMkNbTC6d>
 
 ## Media
-- ![](https://pbs.twimg.com/media/ESzXJ_UUwAEht8D.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/ESzXJ_UUwAEht8D.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

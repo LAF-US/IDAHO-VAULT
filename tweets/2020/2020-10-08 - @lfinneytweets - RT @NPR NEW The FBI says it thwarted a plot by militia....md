@@ -1,4 +1,5 @@
 ---
+title: "RT @NPR NEW The FBI says it thwarted a plot by militia..."
 date: 2020-10-08
 time: 17:37:04
 tweet_id: "1314258525720207360"

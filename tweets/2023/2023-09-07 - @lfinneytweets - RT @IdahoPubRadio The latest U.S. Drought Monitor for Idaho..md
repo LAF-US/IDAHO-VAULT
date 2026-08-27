@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio The latest U.S. Drought Monitor for Idaho."
 date: 2023-09-07
 time: 20:54:40
 tweet_id: "1699888939426033912"
@@ -15,9 +16,10 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoPubRadio: The latest U.S. Drought Monitor for Idaho. https://t.co/P19Pz6JYIQ
+RT @IdahoPubRadio: The latest U.S. Drought Monitor for Idaho. <https://t.co/P19Pz6JYIQ>
 
 ## Media
-- ![](https://pbs.twimg.com/media/F5c3NMqbgAABkXn.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/F5c3NMqbgAABkXn.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1699888939426033912)

@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoSenateGOP Note to @voxdotcom and @transscribe Your..."
 date: 2020-03-18
 time: 17:51:05
 tweet_id: "1240334926399942657"

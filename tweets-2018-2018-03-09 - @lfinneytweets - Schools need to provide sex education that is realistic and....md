@@ -13,9 +13,10 @@ related:
   - lfinneytweets
 ---
 
-"Schools need to provide sex education that is realistic and comprehensive — not a paean for abstinence. Otherwise, that education comes from [porn],” Bugigno writes. https://t.co/nOO1O0fsOg
+"Schools need to provide sex education that is realistic and comprehensive — not a paean for abstinence. Otherwise, that education comes from [porn],” Bugigno writes. <https://t.co/nOO1O0fsOg>
 
 ## Links
-- https://x.com/uiargonaut/status/972170149439586304
+
+- <https://x.com/uiargonaut/status/972170149439586304>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/972195245717794816)

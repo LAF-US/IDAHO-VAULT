@@ -38,7 +38,7 @@ Now, the data center is already set for expansion.
 
 In a preliminary application filed with the City of Boise, ValorC3 says it plans to build another 31,000 square feet on the building. ValorC3 said in its application that “this expansion is likely to begin construction” before the first phase is complete.
 
-![](https://boisedev.com/wp-content/uploads/2026/03/boise-data-center-is-set-to-open-next-year-before-opening-owners-just-applied-to-double-its-size-Screenshot-2026-03-2-1.png)
+![alt text needed](https://boisedev.com/wp-content/uploads/2026/03/boise-data-center-is-set-to-open-next-year-before-opening-owners-just-applied-to-double-its-size-Screenshot-2026-03-2-1.png)
 
 *ValorC3 data center expansion set for Boise. Site plan: Via City of Boise*
 

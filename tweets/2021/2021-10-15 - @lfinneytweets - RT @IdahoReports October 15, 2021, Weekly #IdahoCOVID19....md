@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports October 15, 2021, Weekly #IdahoCOVID19..."
 date: 2021-10-15
 time: 21:22:41
 tweet_id: "1449123588305420290"
@@ -19,9 +20,10 @@ related:
   - IdahoCOVID19
 ---
 
-RT @IdahoReports: October 15, 2021, Weekly #IdahoCOVID19 Update | @IdahoPTV https://t.co/6pxpL7mIhy
+RT @IdahoReports: October 15, 2021, Weekly #IdahoCOVID19 Update | @IdahoPTV <https://t.co/6pxpL7mIhy>
 
 ## Media
-- ![](https://pbs.twimg.com/amplify_video_thumb/1449122726149443584/img/LFDtVJdT4PGqeiS9.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/amplify_video_thumb/1449122726149443584/img/LFDtVJdT4PGqeiS9.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1449123588305420290)

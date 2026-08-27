@@ -1,4 +1,5 @@
 ---
+title: "RT @uiargonaut In conjunction with other universities, UI's..."
 date: 2021-08-11
 time: 22:37:45
 tweet_id: "1425587269851701249"
@@ -16,9 +17,10 @@ related:
 ---
 
 RT @uiargonaut: In conjunction with other universities, UI's mask mandate returns.
-https://t.co/leO75vVkJ4
+<https://t.co/leO75vVkJ4>
 
 ## Links
-- https://www.uiargonaut.com/2021/08/11/ui-finalizes-covid-19-protocols-for-the-semester/
+
+- <https://www.uiargonaut.com/2021/08/11/ui-finalizes-covid-19-protocols-for-the-semester/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1425587269851701249)

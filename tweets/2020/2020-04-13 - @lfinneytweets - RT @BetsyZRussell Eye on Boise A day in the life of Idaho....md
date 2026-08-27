@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise A day in the life of Idaho..."
 date: 2020-04-13
 time: 05:59:59
 tweet_id: "1249578055808323585"
