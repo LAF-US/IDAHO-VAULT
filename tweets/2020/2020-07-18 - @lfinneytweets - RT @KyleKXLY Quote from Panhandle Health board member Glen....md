@@ -19,7 +19,7 @@ related:
   - COVID19
 ---
 
-RT @KyleKXLY: Quote from Panhandle Health board member Glen Bailey during today's #COVID19 meeting: 
+RT @KyleKXLY: Quote from Panhandle Health board member Glen Bailey during today's #COVID19 meeting:
 
 "This has become not just a health is…
 

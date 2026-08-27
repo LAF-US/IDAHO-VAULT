@@ -23,6 +23,7 @@ related:
 <https://t.co/Xw4nu5tJVa>
 
 ## Links
+
 - <https://blog.idahoreports.idahoptv.org/2024/02/27/house-passes-wolf-and-grizzly-depredation-bill/>
 
 *In reply to [@brockforidaho](https://twitter.com/brockforidaho)*

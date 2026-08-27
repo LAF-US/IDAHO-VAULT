@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @GovInslee: Four counties advanced phases since Wednesday. 
+RT @GovInslee: Four counties advanced phases since Wednesday.
 
 🟨 King moved to Phase 2
 🟩 Grays Harbor, Mason, Lewis and Island moved to Ph…

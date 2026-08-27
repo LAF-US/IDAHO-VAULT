@@ -23,6 +23,7 @@ related:
 Behind the scenes in the @IdahoPTV studio for the first @IdahoReports episode of the #idleg session 🎥 <https://t.co/xP1P4ryZax>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/ENY9SdAUUAEA8jH.jpg)
 - ![alt text needed](https://pbs.twimg.com/media/ENY9SdAU8AAiSuA.jpg)
 

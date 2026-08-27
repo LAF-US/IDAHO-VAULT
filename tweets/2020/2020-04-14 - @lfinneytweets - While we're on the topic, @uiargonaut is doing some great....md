@@ -22,6 +22,7 @@ related:
 While we're on the topic, @uiargonaut is doing some great #IdahoCOVID19 tracking, including county-level numbers of cases by day.  <https://t.co/k6Owq4o81l> <https://t.co/XFjHi01IGp>
 
 ## Links
+
 - <https://www.uiargonaut.com/2020/04/07/165507/>
 - <https://x.com/RuthBrownNews/status/1250082730886324224>
 

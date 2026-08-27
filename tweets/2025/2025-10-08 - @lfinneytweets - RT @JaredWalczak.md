@@ -19,6 +19,7 @@ related:
 RT @JaredWalczak: <https://t.co/nUCYgKr8v8>
 
 ## Links
+
 - <http://x.com/i/article/1975534220266078208>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1975978911143166388)

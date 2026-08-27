@@ -50,12 +50,12 @@ Those are [[CROSSFRAMING]] operations.
 | --- | --- |
 | Nest (`!/`) | Collective routing surfaces, DOCKET entries, bootstrap files |
 | Persona chambers (`.*/`) | Dotfolders with tri-anchor presence |
-| Root | Top-level root folders (per `topology_census.py`'s `root.iterdir()` scan) |
+| Root | Top-level root folders and their contents |
 | Git refs | Named branches, PR refs, orphan lineages (see [[ARCHIPELAGO]]) |
 
 ### The Tri-Anchor Status Matrix
 
-Each persona chamber is assessed for three anchors per [[PERSONAE ENGINE]]:
+Each persona chamber is assessed for three anchors per [[!/PERSONAE-ENGINE-v1-2026-05-20|PERSONAE ENGINE]]:
 
 1. **ENTITY-RUNTIME** — actual runtime/config payload, present only for
    software-imported chambers (per [[STUB-PERSONAFOLDERS-2026-05-03]]); a pure
@@ -76,9 +76,13 @@ CROSSFRAMING produces the delta analysis.
 
 ---
 
+## About This Stub
+
+This is a seed document replacing prior content that did not meet governance standards. The prior doctrine described enumeration mechanisms but lacked the authority framework required by [[CONSTITUTION]]. This stub preserves the CHARTER's Enumeration Clause reference while the mechanism is reconsidered. LOGAN authorized this replacement via PR #820.
+
 ## Seed
 
-This document is a seed. It will grow into the full census mechanism:
+This document will grow into the full census mechanism:
 
 - Schema definition for census output rows
 - Per-scope enumeration procedures

@@ -19,6 +19,7 @@ related:
 RT @motherboard: His "crime?" Clicking "view source" on a publicly available webpage. <https://t.co/Hvwu3k2T20>
 
 ## Links
+
 - <https://trib.al/K9MFagV>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1448755536883707927)

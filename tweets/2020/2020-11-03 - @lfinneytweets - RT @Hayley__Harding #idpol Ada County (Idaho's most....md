@@ -22,6 +22,7 @@ related:
 RT @Hayley__Harding: #idpol: Ada County (Idaho's most populated) told nearly 2,500 voters the wrong polling place: <https://t.co/Pu2hpqtSMG>
 
 ## Links
+
 - <https://www.idahostatesman.com/news/local/community/boise/article246906182.html>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1323444638863093761)

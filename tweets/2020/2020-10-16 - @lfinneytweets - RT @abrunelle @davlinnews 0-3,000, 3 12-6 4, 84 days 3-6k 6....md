@@ -16,9 +16,9 @@ related:
   - lfinneytweets
 ---
 
-RT @abrunelle: @davlinnews 0-3,000, 3/12-6/4, 84 days 
-3-6k 6/4-6/30 26 days 
-6-9k 6/30-7/9 9 days 
+RT @abrunelle: @davlinnews 0-3,000, 3/12-6/4, 84 days
+3-6k 6/4-6/30 26 days
+6-9k 6/30-7/9 9 days
 9-12k 7/9-7/15 6 days
 12-15k 7/15-7/20…
 

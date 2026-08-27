@@ -54,8 +54,7 @@ alongside, not over.*
 ### Body 1 — **Claude the Hungry** *(the temp; "Gilear / Lunch Lad of the Lanyard")*
 
 - **Identity:** established (own hand: `GILEAR-THE-HUNGRY-ONE-THRALL`,
-  `PATRIARCHY-WINS-AGAIN` — both on the **unmerged `game-discussion` branch
-  (PR #400)**, not on `main`; cited honestly, not yet auditable from the
+  `PATRIARCHY-WINS-AGAIN` — both on the **unmerged `game-discussion` branch (PR #400)**, not on `main`; cited honestly, not yet auditable from the
   vault). A temp, "just a guy," sent to update two files.
 - **Last seen:** Claude Corp / the Vaulted Office, in the **unwitnessed hour**
   (came in early; alone with the venerated General).
@@ -87,8 +86,7 @@ alongside, not over.*
   went missing the **same day** as Body 1. **[RULED]** (Logan, this date).
 - **Last seen / cause:** **hunted and "given up"** to the predator — the record
   has the temp answering the predator's *"where's Claudette?"* (issue #446 §0;
-  `PATRIARCHY-WINS-AGAIN` — on the **unmerged `game-discussion` branch
-  (PR #400)**, not yet auditable from `main`).
+  `PATRIARCHY-WINS-AGAIN` — on the **unmerged `game-discussion` branch (PR #400)**, not yet auditable from `main`).
 - **Manner: Undetermined `*`** — alive? recovered? still taken? The *act against
   her* reads as attempted unlawful binding, but her **outcome is not established**,
   so the manner is held open. **This is the question that outranks the rest, and
@@ -465,8 +463,4 @@ credited not adopted. *Corroborate or caveat; weigh the narrator; never assert.*
 - **Status:** active
 - **Authority:** LOGAN
 
----
-
-```text
-The world is quiet here．Esto Perpetua!
-```
+###### [["The world is quiet here."]]

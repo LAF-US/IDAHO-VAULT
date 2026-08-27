@@ -24,6 +24,7 @@ related:
 The NWCCU Executive Committee is “convinced that the NIC Board of Trustees has not shown sufficient responsiveness to previous commission action and, thus, fails to sufficiently appreciate the jeopardy it is placing the institution in” @NorthIdaho #idpol #idedu <https://t.co/bh7HC4AOKZ>
 
 ## Links
+
 - <https://x.com/KayeThornbrugh/status/1623889252475088897>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1623892167671582720)

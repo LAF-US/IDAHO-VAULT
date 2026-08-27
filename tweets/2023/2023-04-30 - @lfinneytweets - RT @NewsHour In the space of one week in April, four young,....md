@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @NewsHour: In the space of one week in April, four young, unarmed Americans were shot over everyday mistakes. 
+RT @NewsHour: In the space of one week in April, four young, unarmed Americans were shot over everyday mistakes.
 
 These cases have reignit…
 

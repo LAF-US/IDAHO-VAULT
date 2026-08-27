@@ -22,6 +22,7 @@ related:
 I asked @IDHW for more detail on vaccine waste. Their spox told me: "We are hearing very few reports of doses of COVID-19 vaccine and adjuvants that were unused, spoiled, expired, or wasted – much less than 5%. That is about as specific as we can be at this time." #IdahoCOVID19 <https://t.co/9xtVZy4urg>
 
 ## Links
+
 - <https://x.com/lfinneytweets/status/1346579466131181571>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1347372334731071488)

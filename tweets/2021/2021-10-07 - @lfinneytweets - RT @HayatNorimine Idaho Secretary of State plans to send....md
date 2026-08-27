@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @HayatNorimine: Idaho Secretary of State plans to send MyPillow CEO a bill to reimburse the state over election audits. 
+RT @HayatNorimine: Idaho Secretary of State plans to send MyPillow CEO a bill to reimburse the state over election audits.
 
 The office con…
 

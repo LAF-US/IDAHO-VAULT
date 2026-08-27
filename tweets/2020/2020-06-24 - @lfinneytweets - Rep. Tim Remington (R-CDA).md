@@ -18,6 +18,7 @@ related:
 Rep. Tim Remington (R-CDA) <https://t.co/Sc4F64VFor>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/EbQEjVtWAAI2cbW.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

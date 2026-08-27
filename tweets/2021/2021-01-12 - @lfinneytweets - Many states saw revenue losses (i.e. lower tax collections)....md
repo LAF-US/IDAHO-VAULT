@@ -21,6 +21,7 @@ related:
 @hannahsharpboi Many states saw revenue losses (i.e. lower tax collections) as a result of the pandemic. That hasn’t been the case here in ID. [slide from @AlexAdamsRPh presentation to JFAC this morning] <https://t.co/utncGiyfZ9>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/ErjqPl6VQAE9U37.jpg)
 
 *In reply to [@hannahsharpboi](https://twitter.com/hannahsharpboi)*

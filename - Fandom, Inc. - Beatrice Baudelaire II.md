@@ -336,10 +336,6 @@ Beatrice speaking with her uncle Lemony.
 
 [^1]: [PROSE](https://snicket.fandom.com/wiki/PROSE "PROSE"): *[The End](https://snicket.fandom.com/wiki/The_End "The End")*
 
-[^2]: *[The Incomplete History of Secret Organizations](https://snicket.fandom.com/wiki/The_Incomplete_History_of_Secret_Organizations:_An_Utterly_Unreliable_Account_of_Netflix%27s_A_Series_of_Unfortunate_Events "The Incomplete History of Secret Organizations: An Utterly Unreliable Account of Netflix's A Series of Unfortunate Events"),* page 79: "When asked in a fan interview what year the story takes place, [Daniel Handler](https://snicket.fandom.com/wiki/Daniel_Handler "Daniel Handler") replied with characteristic Snicket dryness: 'The Year of the Rat.'"
-
-[^3]: In the reprise of *That's Not How The Story Goes* in *The Penultimate Peril: Part 2*, an image of Kit watching Caligari Carnival burn down appears below a newspaper dated October 12, implying that is the date the Carnival burned down. Events seem to pass quickly after that with the Baudelaires spending two days with the Widdershins, then two days at the Hotel, followed by two days on the island before Kit dies, setting the birth of Beatrice (and Kit and Olaf's death) around October 18th
-
 [^4]: [PROSE](https://snicket.fandom.com/wiki/PROSE "PROSE"): *[The Beatrice Letters](https://snicket.fandom.com/wiki/The_Beatrice_Letters "The Beatrice Letters")*
 
 [^5]: [PROSE](https://snicket.fandom.com/wiki/PROSE "PROSE"): *[When Did You See Her Last?](https://snicket.fandom.com/wiki/When_Did_You_See_Her_Last%3F "When Did You See Her Last?")*

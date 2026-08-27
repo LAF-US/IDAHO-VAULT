@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @MaherKXLY: The end of systemic racism starts with education. 
+RT @MaherKXLY: The end of systemic racism starts with education.
 
 The last two weeks of protests have led Spokane Public Schools to consid…
 

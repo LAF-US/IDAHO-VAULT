@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @mlcarmel: Mayor McLean condemned the actions of last nights violent counter protestors in downtown Bouse. 
+RT @mlcarmel: Mayor McLean condemned the actions of last nights violent counter protestors in downtown Bouse.
 
 Here’s her statement: https…
 

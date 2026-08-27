@@ -22,6 +22,7 @@ related:
 The document circulated by MyPillow CEO Mike Lindell alleged electronic vote manipulation switching Trump votes to Biden votes occurred in all 44 Idaho counties, but seven Idaho counties have no electronic component in the vote-counting process, the release said. #idpol #idleg <https://t.co/HdAoGEwreX>
 
 ## Links
+
 - <https://x.com/IdahoCapitalSun/status/1443388642437779459>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1443400005788700672)

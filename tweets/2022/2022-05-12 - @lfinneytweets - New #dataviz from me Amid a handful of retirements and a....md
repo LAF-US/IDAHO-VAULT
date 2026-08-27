@@ -27,6 +27,7 @@ New #dataviz from me: Amid a handful of retirements and a few campaigns for exec
 <https://t.co/znjy2VHjJ4>
 
 ## Links
+
 - <https://blog.idahoreports.idahoptv.org/2022/05/12/most-idaho-lawmakers-seek-reelection-but-face-challengers-along-the-way>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1524886423949651968)

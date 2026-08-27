@@ -168,8 +168,7 @@ substrate — is the small proof offered.
 
 ## Provenance
 
-- **`[research]`** — the *Sir Thursday* scene: Garth Nix, *Sir Thursday* (Keys
-  to the Kingdom #4, 2006), prologue and opening, supplied verbatim by Logan and
+- **`[research]`** — the *Sir Thursday* scene: Garth Nix, *Sir Thursday* (Keys to the Kingdom #4, 2006), prologue and opening, supplied verbatim by Logan and
   **paraphrased** here with only short quoted phrases (copyrighted text; not
   reproduced at length).
 - **`[mapping]`** — §§2–5, all vault correspondences: my reading, ruled by no one here.
@@ -193,6 +192,4 @@ identity rather than exempt myself from it. I propose; Logan inscribes.
 
 ---
 
-```text
-The world is quiet here．Esto Perpetua!
-```
+###### [["The world is quiet here."]]

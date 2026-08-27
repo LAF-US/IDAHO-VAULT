@@ -18,6 +18,7 @@ WHY ARE SCHOOL ADMINS HAVING TO TALK ABOUT FURRIES??
 <https://t.co/nHswtgnTSk>
 
 ## Links
+
 - <https://www.idahoednews.org/news/lakeland-superintendent-explains-decisions-to-parents/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1710366097583788090)

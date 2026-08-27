@@ -19,12 +19,13 @@ related:
   - idpol
 ---
 
-Morning paper: Wild lightning, economic reopenin, and presidential races. 
+Morning paper: Wild lightning, economic reopenin, and presidential races.
 
-Me: Oh, my. 
+Me: Oh, my.
 @LewistonTribune #idpol <https://t.co/U9zm1C0xKq>
 
 ## Links
+
 - <https://x.com/LewistonTribune/status/1255755336331309056>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1255859451686465539)

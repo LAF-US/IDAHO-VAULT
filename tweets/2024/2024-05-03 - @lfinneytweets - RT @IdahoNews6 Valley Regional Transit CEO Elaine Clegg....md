@@ -19,6 +19,7 @@ related:
 RT @IdahoNews6: Valley Regional Transit CEO Elaine Clegg nominated to Amtrak Board of Directors by Pres. Biden <https://t.co/He6Lmyk8yK>
 
 ## Links
+
 - <https://www.kivitv.com/news/valley-regional-transit-ceo-elaine-clegg-nominated-to-amtrak-board-of-directors-by-pres-biden>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1786216689077743973)

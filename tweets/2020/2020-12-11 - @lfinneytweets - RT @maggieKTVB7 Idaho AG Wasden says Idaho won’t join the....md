@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @maggieKTVB7: Idaho AG Wasden says Idaho won’t join the effort with other states in Texas. 
+RT @maggieKTVB7: Idaho AG Wasden says Idaho won’t join the effort with other states in Texas.
 
 “I’ve spent substantial time reviewing Texa…
 

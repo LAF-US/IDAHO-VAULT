@@ -17,10 +17,11 @@ related:
   - idleg
 ---
 
-A moment of silence for the original House Bill 198 and the $1.1 million of interest on tax deficiencies the state will continue to collect during two specific windows. #idleg 
+A moment of silence for the original House Bill 198 and the $1.1 million of interest on tax deficiencies the state will continue to collect during two specific windows. #idleg
 <https://t.co/FzN6eJCyvY>
 
 ## Links
+
 - <https://legislature.idaho.gov/sessioninfo/2023/legislation/H0198/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1640501586786136065)

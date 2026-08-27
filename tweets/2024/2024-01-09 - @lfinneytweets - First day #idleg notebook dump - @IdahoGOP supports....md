@@ -21,6 +21,7 @@ related:
 ---
 
 First day #idleg notebook dump:
+
 - @IdahoGOP supports requiring a 2/3 threshold to pass ballot initiatives.
 - Asked @nichols_senator about the private school tax credit bill unveiled Friday. She said she prefers a more "universal" option, like ESAs, but wasn't against it.
 ...

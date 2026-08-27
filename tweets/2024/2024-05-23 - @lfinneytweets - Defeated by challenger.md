@@ -18,6 +18,7 @@ related:
 Defeated by challenger <https://t.co/4UW8ssg45U>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/GOTLEucaMAA6rQf.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

@@ -1,0 +1,33 @@
+# Ruff — Codacy toggle. Standalone rather than a [tool.ruff] table in
+# pyproject.toml. If both ever exist, THIS FILE WINS and the table is ignored
+# silently; pick one.
+
+# Read from the manifest, not remembered: pyproject.toml declares
+# `requires-python = ">=3.13"`, .python-version pins 3.13.5, and the root
+# Dockerfile is `FROM python:3.13-slim`.
+#
+# This said py310 until 2026-08-16, the same stale-floor defect .pylintrc
+# carried -- correct when written, overtaken by f417abf3b on 08-13. Checked
+# that the bump does not move the baseline rather than assuming it: ruff 0.15.8
+# over this tree reports 60 findings under py310 and 60 under py313.
+target-version = "py313"
+
+[lint]
+# Ruff's own default set, written out so it can be read without knowing the
+# defaults. Measured on this repo at ruff 0.15.8:
+#
+#   ["E4","E7","E9","F"]  ->    61 findings,  8 in live code
+#   ["E","F"]             -> 1,368 findings, 785 in live code
+#
+# The 1,307 difference is E501 line-too-long alone — thirteen hundred
+# complaints about line width, in a repo that runs no Python formatter, on top
+# of eight real defects.
+#
+# Nothing is excluded. The 53 findings outside live code sit in root-level
+# flattened NETWEB alias copies and two unparseable notebooks; excluding them
+# would tune the linter to the mess. Ruff's built-in excludes already cover
+# .venv and node_modules — verified identical counts with and without.
+select = ["E4", "E7", "E9", "F"]
+
+# No `ignore`. Silence at the line (`# noqa: F401 - re-export`), where the
+# exemption keeps its reason.

@@ -18,6 +18,7 @@ related:
 Rep. Terry Gestrin (R-Donnelly) <https://t.co/mKqPL9U8yw>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/EbQE9BYWsAM0J6p.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

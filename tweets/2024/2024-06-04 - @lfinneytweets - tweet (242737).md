@@ -20,6 +20,7 @@ related:
 @danielwinvw <https://t.co/StWIG2dlUj>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/GPQrlPcbsAE6FF_.jpg)
 
 *In reply to [@danielwreporter](https://twitter.com/danielwreporter)*

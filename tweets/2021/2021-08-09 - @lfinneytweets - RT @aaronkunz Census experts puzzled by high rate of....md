@@ -20,6 +20,7 @@ related:
 RT @aaronkunz: Census experts puzzled by high rate of unanswered questions (from @AP) <https://t.co/B8EJEKURQB>
 
 ## Links
+
 - <https://apnews.com/article/5e0dd5b710f1ab0ff23a8272078d5528>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1424522894965501958)

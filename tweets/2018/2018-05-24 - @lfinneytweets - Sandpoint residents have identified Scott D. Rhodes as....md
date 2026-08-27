@@ -18,6 +18,7 @@ Sandpoint residents have identified Scott D. Rhodes as behind robocalls targetin
 Rhodes previously made headlines in Dec after distributing racist CDs in the SHS parking lot. <https://t.co/YxVra5KCaA>
 
 ## Links
+
 - <https://x.com/SpokesmanReview/status/999719178159435777>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/999732859303706624)

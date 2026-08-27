@@ -19,6 +19,7 @@ related:
 RT @BoiseDev: Idaho takes action against crypto firm, which it says has $60-million of Idahoans’ money locked up <https://t.co/R00y97OGcn>
 
 ## Links
+
 - <https://boisedev.com/news/2022/08/05/celsius-network-idaho/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1555651523757031424)

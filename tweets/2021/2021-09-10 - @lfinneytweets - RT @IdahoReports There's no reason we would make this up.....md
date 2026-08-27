@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoReports: "There's no reason we would make this up." 
+RT @IdahoReports: "There's no reason we would make this up."
 Hear from Idaho's health care providers as COVID-19 cases flood regional hosp…
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1436370599832522757)

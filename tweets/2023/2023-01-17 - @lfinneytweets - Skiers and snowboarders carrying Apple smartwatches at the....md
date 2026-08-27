@@ -20,6 +20,7 @@ related:
 Skiers and snowboarders carrying Apple smartwatches at the local resort have triggered a “dramatic increase in unintentional 911 calls,” according to the Bonner County Sheriff’s Office, @elijah_nicholas @SpokesmanReview reports. <https://t.co/yIItn3xz7f>
 
 ## Links
+
 - <https://x.com/elijah_nicholas/status/1615389009697726464>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1615400686765895681)

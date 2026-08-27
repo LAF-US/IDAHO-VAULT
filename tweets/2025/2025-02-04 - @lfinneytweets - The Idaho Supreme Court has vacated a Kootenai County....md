@@ -21,6 +21,7 @@ The Idaho Supreme Court has vacated a Kootenai County sexual exploitation convic
 <https://t.co/udBRfIY290>
 
 ## Links
+
 - <https://blog.idahoreports.idahoptv.org/2025/02/03/idaho-supreme-court-reverts-child-porn-case-over-unconstitutional-car-search/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1886576488348311989)

@@ -19,6 +19,7 @@ related:
 RT @KTVB: Governor Little bans TikTok on all state-issued devices and networks <https://t.co/Slh3O8v3w6>
 
 ## Links
+
 - <https://www.ktvb.com/article/news/local/local-governor-little-bans-tiktok-on-state-issued-devices-and-networks/277-db2aacac-e847-4ef8-acad-e209800df42a?utm_campaign=snd-autopilot>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1603222302388531200)

@@ -19,6 +19,7 @@ related:
 RT @KLEWNews: 0% contained, evacuation orders remain in place <https://t.co/9FEA4laUUX>
 
 ## Links
+
 - <https://t.co/9FEA4laUUX>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1414628862114230279)

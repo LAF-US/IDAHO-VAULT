@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @uiargonaut: A breakdown of recent budget issues and how the university has been adapting with consideration of student fees. 
+RT @uiargonaut: A breakdown of recent budget issues and how the university has been adapting with consideration of student fees.
 <https://t…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1407444722579251212)

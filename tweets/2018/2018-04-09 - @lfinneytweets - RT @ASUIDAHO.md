@@ -19,6 +19,7 @@ related:
 RT @ASUIDAHO: <https://t.co/nmM7QSsm5c>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/DaXBErHUMAAjJlt.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/983420573911891968)

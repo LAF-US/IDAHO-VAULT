@@ -22,6 +22,7 @@ related:
 RT @uiargonaut: Check out this week's political cartoon by Ethan Coy. #PolitoonThursday <https://t.co/wvErSGmDqp>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/D4ckZ6tU4AA_wM6.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1118960710833229824)

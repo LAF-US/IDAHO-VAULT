@@ -22,6 +22,7 @@ related:
 RT @idahoednews: A third Idaho high retires a mascot with Native American connotations. #idedu  <https://t.co/GTXSu1Dzx9>
 
 ## Links
+
 - <https://idahoednews.org/r73TQ>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1284175112124563457)

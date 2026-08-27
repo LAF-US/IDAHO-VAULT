@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-There was an awkward moment after its introduction by Rep. Giddings where no committee members made a motion. 
+There was an awkward moment after its introduction by Rep. Giddings where no committee members made a motion.
 
 The chairman clarified that without an introductory motion the RS would die there. That prompted a motion to print the bill, which was approved by unanimous voice vote.
 

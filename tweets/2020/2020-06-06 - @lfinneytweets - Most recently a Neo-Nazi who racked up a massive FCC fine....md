@@ -19,6 +19,7 @@ related:
 Most recently: a Neo-Nazi who racked up a massive FCC fine for a bunch of election robocalls, left white supremacist materials on all of the cars in the high school parking lot, started a very public feud with the @sndpnt_reader, and moved back to Montana <https://t.co/qsCqqAOkR1>
 
 ## Links
+
 - <https://x.com/SloaneAirey/status/1269101660388954114>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1269304384820662272)

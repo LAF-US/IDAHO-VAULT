@@ -23,6 +23,7 @@ related:
 The public is able to use the same software as the redistricting commission and submit proposed maps. It's available at <https://t.co/7DE15LQzx3>, though the capabilities still need to be tweaked a little bit. I've been messing around with it today. Fun stuff! #idleg #idpol
 
 ## Links
+
 - <http://redistricting.idaho.gov>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

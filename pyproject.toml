@@ -1,52 +1,35 @@
 [project]
 name = "idaho-vault"
 version = "0.1.0"
-description = "The world is quiet here．Esto Perpetua!"
-authors = [{ name = "Logan Finney" }, { name = "Unified Swarm" }]
-# Without this, uv resolves against its own default of >=3.13 — which silently
-# drops every 3.10 resolution from uv.lock while cross-platform-smoke.yml still
-# runs the suite on 3.10. Measured: removing it collapsed pygit2 from two version-split
-# entries (1.18.2 for 3.10, 1.19.3 for 3.11+) to one, and left the lock claiming
-# 3.13-only for a project CI exercises on 3.10.
-requires-python = ">=3.10,<3.14"
+requires-python = ">=3.13"
 dependencies = [
-    "packaging",
-    # Each entry names a file that imports it and the run that proved it. All three
-    # were smoked out by `uv run pytest tests` on e3ec9e414, which stopped with
-    # "Interrupted: 6 errors during collection" and named them one at a time.
-    #
-    # src/idaho_vault/five_wizards/models.py:5 -> test_five_wizards,
-    # test_threshold_runner, test_civic_scaffold
-    "pydantic~=2.11.9",
-    # .github/scripts/metadata_survey.py:28 -> test_metadata_survey;
-    # tests/test_workflow_security_invariants.py:6 imports it directly.
-    # NOTE: PyYAML was never declared here. It has been arriving as a transitive
-    # dependency of something else, which is why nothing noticed when it stopped.
-    "pyyaml>=6.0,<7",
-    # tests/test_sync_obsidian_plugin_registry.py:17
-    "pygit2>=1.18.2,<2",
+  "flask>=3.1.0",
+  "icalendar>=6.0",
+  "pygit2>=1.18.2",
+  "python-dateutil>=2.9",
+  "pyyaml>=6.0.3",
+  "posthog>=7.38.4,<8",
 ]
-# Just like a .gitignore file, don't fiddle with this willy-nilly.
+
+[dependency-groups]
+dev = [
+  "pytest>=9.1.1",
+  "pytest-codspeed>=5.0.3",
+]
+
 
 [project.urls]
 Repository = "https://github.com/LAF-US/IDAHO-VAULT"
 
-[dependency-groups]
-# Every entry names the workflow that spawns it. Nothing lives here that CI does not
-# actually invoke through uv — those are the only two workflows that use uv at all.
-# Deliberately NOT here: jupytext (check-notebooks-paired.yml pip-installs it at the
-# version it reads out of uv.lock, never through uv) and ruff (no workflow invokes it;
-# Codacy runs its own). Both were in the group before and neither was feeding anything.
-dev = [
-    # python-test-suite.yml -> `uv run pytest tests -v`
-    "pytest>=9.0.3,<10",
-    # codacy-coverage-reporter.yml -> `uv run coverage run -m pytest` / `uv run coverage xml`
-    "coverage>=7.6,<8",
-]
+[tool.pytest.ini_options]
+# Root-level test modules use two prefixes: plain `test_*.py` (e.g.
+# test_doctrinal_flatten.py) and the ten `tests-test_*.py` files -- neither
+# collectible by pytest's own default (`test_*.py`/`*_test.py`) glob for the
+# second form. conftest.py's pytest_ignore_collect hook allows both at
+# collection time; this makes bare `pytest` (no explicit file args) actually
+# discover both instead of silently finding zero tests.
+python_files = ["test_*.py", "tests-test_*.py"]
 
-[tool.coverage.report]
-skip_empty = true
-exclude_also = [
-    "pragma: no cover",
-    "if __name__ == .__main__.:",
-]
+[build-system]
+requires = ["setuptools>=84.0.0"]
+build-backend = "setuptools.build_meta"

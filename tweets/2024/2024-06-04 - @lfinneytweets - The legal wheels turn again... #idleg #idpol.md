@@ -19,10 +19,11 @@ related:
   - idpol
 ---
 
-The legal wheels turn again... #idleg #idpol 
+The legal wheels turn again... #idleg #idpol
 <https://t.co/Sw4Zmbo5XW>
 
 ## Links
+
 - <https://blog.idahoreports.idahoptv.org/2024/06/04/board-of-examiners-to-file-new-hawkins-lawsuit-documents/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1798106639557595280)

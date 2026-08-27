@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @heersinkolivia: Dale now is discussing a business’s right to require mask mandates. 
+RT @heersinkolivia: Dale now is discussing a business’s right to require mask mandates.
 
 “I urge people to take this seriously. ... We’re…
 

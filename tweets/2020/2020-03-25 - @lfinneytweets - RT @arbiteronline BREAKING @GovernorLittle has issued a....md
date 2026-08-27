@@ -17,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-RT @arbiteronline: BREAKING: @GovernorLittle has issued a statewide stay-at-home order. 
+RT @arbiteronline: BREAKING: @GovernorLittle has issued a statewide stay-at-home order.
 
 Non-essential businesses have been ordered to clo…
 

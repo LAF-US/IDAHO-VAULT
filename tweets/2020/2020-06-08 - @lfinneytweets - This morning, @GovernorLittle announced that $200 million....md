@@ -24,6 +24,7 @@ related:
 This morning, @GovernorLittle announced that $200 million of CARES Act funds will be made available to cover local Idaho public safety personnel salaries, as long as local governments pass the savings on to property tax payers. More details to come this week. #idpol #idleg <https://t.co/I1HY3K0ceZ>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/EaAxspUVAAArcMc.png)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1270070641241108480)

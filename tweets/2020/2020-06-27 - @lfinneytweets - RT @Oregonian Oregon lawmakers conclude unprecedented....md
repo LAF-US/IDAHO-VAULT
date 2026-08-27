@@ -19,6 +19,7 @@ related:
 RT @Oregonian: Oregon lawmakers conclude unprecedented special session on policing, coronavirus <https://t.co/Y5Mhpf9JWX> <https://t.co/aCp3Em…>
 
 ## Links
+
 - <https://trib.al/883ixte>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1276903584706117632)

@@ -22,6 +22,7 @@ RT @CPRNews: The subsequent arrests have affected hundreds of Colorado families.
 <https://t.co/ku3CBsKnNp> via @NataliaVNavarro
 
 ## Links
+
 - <https://buff.ly/3qdB9d1>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1361442372698087430)

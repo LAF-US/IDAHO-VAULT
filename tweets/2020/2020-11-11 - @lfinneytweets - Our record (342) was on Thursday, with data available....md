@@ -20,6 +20,7 @@ related:
 @AngryNIdaho Our record (342) was on Thursday, with data available through Saturday. <https://t.co/b8fdwJP8lB>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/EmgY4h-UYAEp97T.jpg)
 
 *In reply to [@AngryNIdaho](https://twitter.com/AngryNIdaho)*

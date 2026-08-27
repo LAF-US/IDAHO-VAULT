@@ -17,6 +17,7 @@ related:
 The election (in Idaho) is officially over and certified. <https://t.co/JJ7mBAwGgH>
 
 ## Links
+
 - <https://x.com/BetsyZRussell/status/1329168383040864256>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1329169631622221825)

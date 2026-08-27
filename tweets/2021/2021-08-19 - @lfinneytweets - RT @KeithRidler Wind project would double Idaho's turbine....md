@@ -23,6 +23,7 @@ related:
 RT @KeithRidler: Wind project would double Idaho's turbine energy output (from @AP) #idpol  <https://t.co/ohV7mFSc5m>
 
 ## Links
+
 - <https://apnews.com/article/fede377fe97b623f5c7573074c11d248>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1428436688406081538)

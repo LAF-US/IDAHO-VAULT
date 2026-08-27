@@ -20,6 +20,7 @@ related:
 RT @libbuh: Idk if @amandamull meant for this to be comforting but this is the best I’ve felt all week <https://t.co/olRGGdKbmx>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/ETfIqJaU8AEbnsy.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1240706748324794368)

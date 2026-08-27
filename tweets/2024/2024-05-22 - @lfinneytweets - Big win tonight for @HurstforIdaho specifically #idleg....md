@@ -21,10 +21,11 @@ related:
   - idpol
 ---
 
-Big win tonight for @HurstforIdaho specifically #idleg #idpol 
+Big win tonight for @HurstforIdaho specifically #idleg #idpol
 <https://t.co/bLIlDoVBE6>
 
 ## Links
+
 - <https://blog.idahoreports.idahoptv.org/2024/05/22/freedom-candidates-sweep-district-8/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1793194524438569328)

@@ -24,6 +24,7 @@ related:
 RT @IdahoStatesman: #Idaho GOP Sen. Jim Risch raised a lot of eyebrows, and plenty of ire tonight  #Idpol <https://t.co/FdW1lx5sTb>
 
 ## Links
+
 - <http://www.idahostatesman.com/news/politics-government/state-politics/article206506889.html>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/977232122002907137)

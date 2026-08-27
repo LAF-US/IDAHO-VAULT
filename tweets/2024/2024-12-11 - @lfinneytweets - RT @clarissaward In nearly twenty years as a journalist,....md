@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @clarissaward: In nearly twenty years as a journalist, this was one of the most extraordinary moments I have witnessed. 
+RT @clarissaward: In nearly twenty years as a journalist, this was one of the most extraordinary moments I have witnessed.
 
 <https://t.co/r…>
 

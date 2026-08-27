@@ -17,9 +17,11 @@ related:
 <https://t.co/JiciR60yUp> <https://t.co/plaKpeTEiI>
 
 ## Links
+
 - <https://t.co/JiciR60yUp>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/E22pIMMVUAMTJZz.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1399961036480868352)

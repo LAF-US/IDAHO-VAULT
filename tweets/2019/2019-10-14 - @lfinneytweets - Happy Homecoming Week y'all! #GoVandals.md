@@ -20,6 +20,7 @@ related:
 Happy Homecoming Week y'all! #GoVandals <https://t.co/xRAimtcO4j>
 
 ## Links
+
 - <https://x.com/blotmag/status/1183871127010938880>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1183872160399409152)

@@ -19,6 +19,7 @@ related:
 RT @CBS2Boise: Senator Jim Risch on coronavirus, Supreme Court, re-election campaign <https://t.co/9mXywekZdj>
 
 ## Links
+
 - <https://idahonews.com/news/local/senator-jim-risch-on-coronavirus-supreme-court-his-election-campaign>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1316609580193910784)

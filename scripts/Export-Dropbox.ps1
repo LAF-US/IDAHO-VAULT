@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
     Pull everything reachable from the Dropbox rclone remote to a local
     destination, with a manifest captured BEFORE the copy and a checksum

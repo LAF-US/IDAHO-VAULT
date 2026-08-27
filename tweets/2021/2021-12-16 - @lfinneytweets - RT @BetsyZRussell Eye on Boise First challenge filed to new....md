@@ -22,6 +22,7 @@ related:
 RT @BetsyZRussell: Eye on Boise: First challenge filed to new congressional redistricting plan #idpol <https://t.co/1XnIPBcAGO> <https://t.co/…>
 
 ## Links
+
 - <https://www.idahopress.com/eyeonboise/first-challenge-filed-to-new-congressional-redistricting-plan/article_54541761-2fce-51ae-a956-f59a428cc729.html>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1471577870648569861)

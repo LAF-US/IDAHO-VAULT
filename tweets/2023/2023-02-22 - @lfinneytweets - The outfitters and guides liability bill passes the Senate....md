@@ -22,10 +22,11 @@ related:
   - idpol
 ---
 
-@IdahoReports The outfitters and guides liability bill passes the Senate with just Sens. Ruchti & Wintrow against. The bill moves over to the House. #idleg #idpol 
+@IdahoReports The outfitters and guides liability bill passes the Senate with just Sens. Ruchti & Wintrow against. The bill moves over to the House. #idleg #idpol
 <https://t.co/LcMxu0UlfM>
 
 ## Links
+
 - <https://blog.idahoreports.idahoptv.org/2023/02/15/podcast-episode-controlling-the-uncontrollable/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

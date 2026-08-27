@@ -1,0 +1,40 @@
+# hadolint — Codacy toggle. `ignored: []` suppresses nothing, so every rule
+# runs at default severity; hadolint's own defaults are the baseline. The empty
+# list also keeps the file a valid mapping — a comments-only file parses as
+# null, which hadolint rejects.
+#
+# REACH IS NOT ZERO. An earlier version of this file said "no Dockerfile here
+# yet" — written without looking. There is a root `Dockerfile`
+# (`FROM python:3.13-slim`), and `.github/workflows/cloud-run-deploy.yml`
+# builds it (`docker build`, with `Dockerfile` in the workflow's path filter).
+# So this toggle applies to a live deployment artifact, not a hypothetical one.
+#
+# MEASURED — hadolint 2.15.1, against that Dockerfile, with this config:
+#
+#   Dockerfile:24  DL3066  info: Non-numeric user-id may not be resolvable by
+#                                host system
+#
+# One finding, informational. Nothing at warning or error level.
+#
+# The base image was `python:3.12-slim` when that was measured on 2026-08-11;
+# bd81dba02 moved it to 3.13-slim on 08-13 and this header did not follow until
+# 08-16. The finding survives the bump unchanged -- DL3066 fires on the
+# non-numeric user id in `USER appuser`, still Dockerfile:24, which does not
+# depend on the base image at all. Re-checked rather than assumed.
+#
+# An earlier version of this note said hadolint "could not be obtained in the
+# environment this was written in." It could: it is a single static binary
+# published on its own releases page, and fetching it took one curl. Declaring
+# a tool unobtainable without trying is how a gap gets recorded as if it were
+# a result — the same move as silencing a check rather than fixing what it is
+# pointing at (AGENTS.md, "Fix Errors - Do NOT Disable").
+#
+# The count is trustworthy only because the binary was proven to analyse first:
+# run against a deliberately bad Dockerfile (untagged FROM, unpinned apt-get,
+# ADD of a tarball) it returned DL3006, DL3008 and DL3015. A tool that silently
+# does nothing also reports one finding on a file it never read.
+#
+# `trustedRegistries` is the one worth adding next, and it is an allowlist:
+# setting it rejects every registry not listed.
+
+ignored: []

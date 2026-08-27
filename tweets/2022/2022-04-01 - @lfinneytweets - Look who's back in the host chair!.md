@@ -17,6 +17,7 @@ related:
 Look who's back in the host chair! <https://t.co/nC9U59Y72K>
 
 ## Links
+
 - <https://x.com/IdahoReports/status/1509994810832146432>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1509994936057229312)

@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @uiargonaut: UPDATE: 
+RT @uiargonaut: UPDATE:
 Students plan to walkout today at 6 p.m. to protest the recent treatment of UI professor Denise Bennett.
 Students…
 

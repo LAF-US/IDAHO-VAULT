@@ -22,10 +22,11 @@ related:
   - idpol
 ---
 
-How to make a state abortion ban go national #idleg #idpol @SofiaResnick @statesnewsroom 
+How to make a state abortion ban go national #idleg #idpol @SofiaResnick @statesnewsroom
 <https://t.co/VGw1uJi41S>
 
 ## Links
+
 - <https://shar.es/afDFCo>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1648072844709101568)

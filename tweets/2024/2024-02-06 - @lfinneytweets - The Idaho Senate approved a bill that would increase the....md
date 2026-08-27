@@ -19,10 +19,11 @@ related:
   - idpol
 ---
 
-The Idaho Senate approved a bill that would increase the zone around polling places where campaigns are not allowed to rally support for candidates or collect signatures. #idleg #idpol 
+The Idaho Senate approved a bill that would increase the zone around polling places where campaigns are not allowed to rally support for candidates or collect signatures. #idleg #idpol
 <https://t.co/QiWq46fsi4>
 
 ## Links
+
 - <https://blog.idahoreports.idahoptv.org/2024/02/06/senate-passes-electioneering-boundary-bill/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1754948736315424954)

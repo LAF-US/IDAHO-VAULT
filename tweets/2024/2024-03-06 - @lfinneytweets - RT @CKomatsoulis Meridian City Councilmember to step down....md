@@ -23,6 +23,7 @@ RT @CKomatsoulis: Meridian City Councilmember to step down following judicial ap
 <https://t.co/n078f7kFMX>
 
 ## Links
+
 - <https://www.idahopress.com/news/local/meridian-city-councilmember-to-step-down-following-judicial-appointment/article_10b4af04-dbf7-11ee-a537-5bc7746ff901.html>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1765511624067006609)

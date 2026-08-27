@@ -19,9 +19,11 @@ related:
 Moscow folks: Want to make an extra $10-$20 every Thursday and help get @uiargonaut into the hands of our readers? Join the Argonaut Street Team! Get more info & apply at <https://t.co/zLW3J4xOqJ> <https://t.co/G9vQfc8bXv>
 
 ## Links
+
 - <http://www.uiargonaut.com/about/apply>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/DzE9vFNXQAApzRH.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1094724244267708416)

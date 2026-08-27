@@ -20,6 +20,7 @@ related:
 RT @NateBrownNews: Reclaim Idaho to resume signature gathering on school funding initiative <https://t.co/5yur044xWn> via @thepostregister  #…
 
 ## Links
+
 - <https://www.postregister.com/news/education/reclaim-idaho-to-resume-signature-gathering-on-school-funding-initiative/article_b548b864-aaf5-5702-a5ea-f6769621fd17.html?utm_medium=social&utm_source=twitter&utm_campaign=user-share>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1281635105715318785)

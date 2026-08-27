@@ -21,6 +21,7 @@ related:
 @IdahoReports @IdSBOE <https://t.co/vOSJTspjrq>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/E7fmnGFUUAAb_ZP.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

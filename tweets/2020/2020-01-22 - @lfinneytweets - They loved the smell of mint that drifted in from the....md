@@ -18,6 +18,7 @@ related:
 <https://t.co/eIU001RzED>
 
 ## Links
+
 - <https://www.wsj.com/articles/as-west-coast-transplants-pour-in-a-small-idaho-town-has-a-big-dilemma-11579611600>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1220047894578786304)

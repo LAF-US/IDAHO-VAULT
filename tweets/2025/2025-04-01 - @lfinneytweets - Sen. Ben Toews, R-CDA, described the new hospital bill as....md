@@ -21,6 +21,7 @@ Sen. Ben Toews, R-CDA, described the new hospital bill as “a collaborative eff
 <https://t.co/Z8TXCUdPP9>
 
 ## Links
+
 - <https://blog.idahoreports.idahoptv.org/2025/04/01/senate-passes-bill-to-update-hospital-property-tax-exemption/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1907145986667094102)

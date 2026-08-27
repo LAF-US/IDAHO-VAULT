@@ -19,6 +19,7 @@ related:
 RT @IdahoPubRadio: There are also those protesting the event. 3/3 <https://t.co/CIx7dZR9XO>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/EWF03P9UMAE84lo.jpg)
 - ![alt text needed](https://pbs.twimg.com/media/EWF03P_UEAE4TPK.jpg)
 

@@ -26,6 +26,7 @@ related:
 INBOX: In tonight's newsletter, Rep. Heather Scott shares some details on the special session timeline. She also calls for #idleg to terminate #IdahoCOVID19 emergency declaration & criticizes @GovernorLittle for wanting to see draft legislation before calling the session. #idpol <https://t.co/zCy2WlmETA>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/EeyAESoVoAAizwJ.png)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1291549349210492928)

@@ -17,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoPTV: Ok, how stinkin' cute is baby @Grover? 
+RT @IdahoPTV: Ok, how stinkin' cute is baby @Grover?
 
 For his next instructional video, can he show us grown-ups how to cut our own hair?
 

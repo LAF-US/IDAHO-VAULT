@@ -23,6 +23,7 @@ related:
 The commission has also refined some lines in the Treasure Valley. Notable work includes putting all of Garden City in a single district and refining the Meridian districts. The Kuna and Melba areas are together in a district with Owyhee County. #idleg #idpol <https://t.co/FtRCPslVHF>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/FDSzoCXVIAIcKUR.jpg)
 - ![alt text needed](https://pbs.twimg.com/media/FDSzo9aVIAAkeHO.jpg)
 

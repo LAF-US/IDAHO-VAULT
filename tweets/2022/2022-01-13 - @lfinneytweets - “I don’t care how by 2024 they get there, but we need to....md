@@ -21,10 +21,11 @@ related:
   - idedu
 ---
 
-“I don’t care how by 2024 they get there, but we need to get there,” education committee chair Rep. Lance Clow said. #idleg #idpol #idedu 
+“I don’t care how by 2024 they get there, but we need to get there,” education committee chair Rep. Lance Clow said. #idleg #idpol #idedu
 <https://t.co/cml4xvmvar>
 
 ## Links
+
 - <https://blog.idahoreports.idahoptv.org/2022/01/13/house-committee-prepares-to-replace-education-standards/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1481738449602236416)

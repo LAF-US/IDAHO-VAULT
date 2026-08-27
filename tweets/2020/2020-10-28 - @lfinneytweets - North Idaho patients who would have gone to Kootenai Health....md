@@ -24,6 +24,7 @@ related:
 North Idaho patients who would have gone to Kootenai Health (pretty common for the area) were instead sent to Spokane last week due to capacity issues, @danielwinlander reports. #IdahoCOVID19 #idpol <https://t.co/AoAitKMA8S>
 
 ## Links
+
 - <https://x.com/danielwreporter/status/1321588723356557314>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1321599730732859393)

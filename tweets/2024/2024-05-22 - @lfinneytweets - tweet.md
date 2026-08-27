@@ -20,6 +20,7 @@ related:
 @No_ID_Lady <https://t.co/dC36wb03or>
 
 ## Links
+
 - <https://results.voteidaho.gov/turnout.html>
 
 *In reply to [@No_ID_Lady](https://twitter.com/No_ID_Lady)*

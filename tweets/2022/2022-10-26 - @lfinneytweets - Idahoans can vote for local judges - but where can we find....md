@@ -26,6 +26,7 @@ related:
 Idahoans can vote for local judges - but where can we find information about the candidates? Retired district judge Jeff Brudie joins me on this week's @IdahoReports podcast to talk about it! #PodcastWednesday #idleg #idpol <https://t.co/Ixnp3Ig9zw>
 
 ## Links
+
 - <https://x.com/IdahoReports/status/1585297325454495745>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1585323469771718656)

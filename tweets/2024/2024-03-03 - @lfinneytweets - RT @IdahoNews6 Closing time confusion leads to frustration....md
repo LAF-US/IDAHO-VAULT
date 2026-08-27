@@ -19,6 +19,7 @@ related:
 RT @IdahoNews6: Closing time confusion leads to frustration for some during the 2024 Idaho GOP Caucus <https://t.co/jLAsdd33vH>
 
 ## Links
+
 - <https://www.kivitv.com/election-results/closing-time-confusion-leads-to-frustration-for-some-during-the-2024-idaho-gop-caucus>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1764107969506259233)
