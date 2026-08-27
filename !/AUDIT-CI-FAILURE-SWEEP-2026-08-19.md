@@ -1,0 +1,56 @@
+---
+title: CI Failure Sweep — 2026-08-19
+type: audit
+status: draft
+authority: CLAUDE (routine CI sweep)
+scope: GitHub Actions workflow runs, laf-us/idaho-vault, nominal window 2026-08-17T17:05Z–2026-08-19T17:05Z (48h); actual verified coverage narrower — see How
+owner: Logan Finney
+---
+
+# CI Failure Sweep — 2026-08-19
+
+## 5W Summary
+
+| | |
+|---|---|
+| **Who** | GitHub Actions runners on `laf-us/idaho-vault` (72 workflows per `list_workflows` at the time of the original sweep; the count moves — 77 total, 68 with `.github/workflows/` paths, when re-checked during PR review). All confirmed failures trace to pushes on **stale, long-abandoned agent branches** — not to `main`, and not to any workflow file as it currently exists on `main`. *(Reconciling the workflow-count figures, added on review: the "72/77 workflows" figure is the GitHub Actions API's registered-workflow list, which includes 9 built-in `dynamic/` entries — Dependabot, CodeQL, the Copilot agent/reviewer, dependency-graph submission — that have no `.yml` file at all, plus any workflow the API still lists as `active` from run history even if its file was since removed from `main`. The "53 tracked files" figure is a direct count of `.github/workflows/*.yml` currently in the tree. 68 API-registered `.github/workflows/`-path entries vs. 53 files on disk is a real, confirmed gap of 15 — most plausibly stale API registrations for since-deleted/renamed workflow files, not evidence of unpinned files this sweep missed: the file-count-based SHA-pin check (`grep`, not the API) only ever claimed coverage of the 53 files that exist, and that claim stands.)* |
+| **What** | A single systemic cause, confirmed via two direct job-log quotes: GitHub's platform-level policy *"actions must be pinned to a full-length commit SHA"* is now being enforced, and it hard-rejects the `Set up job` step (before any user script runs — 0 real work attempted) on any branch whose **own copy** of a `.github/workflows/*.yml` file still references an action by tag (`@v4`, `@v6`, `@main`) instead of a SHA. `main`'s current workflow files are **already 100% SHA-pinned** (verified: `grep` across all 53 `.github/workflows/*.yml` files on `main`/this branch found zero unpinned `uses:` lines) — this is not a `main` regression. It is old branches carrying old, pre-pinning copies of these files. |
+| **When** | All 68 `failure` + 3 `cancelled` runs found in-window cluster inside one ~60-second burst, **2026-08-19T15:27:52Z–15:28:52Z**, triggered by `loganfinney27` (actor on every sampled run) pushing/merging across many branches near-simultaneously. Before and after that burst, the sampled minutes were clean (`success`/`skipped` only). |
+| **Where** | Confirmed on: `claude/resolve-pr-conflicts` (branch's last real commit: **2026-03-30** — carries `actions/checkout@v6` unpinned, verified by direct `git show` of that ref), plus `dependabot/uv/uv-aa7cb66ac2` (`actions/checkout@v4` + `actions/setup-python@v6` unpinned) and ~20 other `codex/*`, `claude/*`, `bot/daily-rollover-*`, `dependabot/*` branches, all old. **Zero `failure`-conclusion runs on `main` itself in the sampled window; zero connection between `main`'s activity and this incident.** Not a required check on `main`; does not block merges. *(Precision, added on review: `main` did carry six `cancelled` — not `failure` — `Issue Triage` runs between 14:42:43Z and 15:02:08Z, hours before this incident's 15:27:52Z burst and on an unrelated workflow. Verified directly via the GitHub API, branch-scoped and date-ranged. That is a distinct, pre-existing pattern — `Issue Triage` runs on `main` getting cancelled in rapid bot-comment succession, almost certainly a concurrency-group supersession, not a failure of any kind — and not part of this incident. It does not change the "zero failures on main" finding, which was and remains about `failure` conclusions specifically.)* |
+| **Why** | The affected branches predate whatever point `main` finished its own SHA-pinning migration (already complete, per the zero-unpinned grep above) and were never rebased since. GitHub evaluates a `push`-triggered workflow using the **pushed branch's own copy** of the workflow file, not `main`'s — so these branches keep re-triggering the now-enforced policy every time anything touches them, independent of `main`'s health. |
+| **How** | Root-caused via direct job-log text (not inference) on two runs: `##[error]The action actions/checkout@v6 is not allowed in LAF-US/IDAHO-VAULT because all actions must be pinned to a full-length commit SHA.` (job 96124816333) and the same message naming `checkout@v4`/`setup-python@v6` (job 96124692702). Confirmed against `main`'s actual file contents (`git show`/`grep`, not recalled). Confirmed `claude/resolve-pr-conflicts`'s branch-tip commit predates any pinning fix (`git log`, `git show <ref>:.github/workflows/auto-pr.yml`). **Coverage caveat, stated plainly rather than implied away:** this repo's `list_workflow_runs` `total_count` and page contents are unstable at this write-throughput (a background sub-agent hit its 20-page cap after covering only ~72 minutes of the 48h window before pagination started returning non-adjacent time ranges — the same instability the 2026-08-12 sweep documented). I supplemented with direct, `workflow_id`-scoped pagination (`auto-pr.yml` specifically, 483 total runs — a tractable number) reaching back to 2026-03-21, which found **zero** occurrences of this SHA-pin failure signature before today's burst, giving reasonable confidence this is a real, bounded, recent event and not something already smeared across the full 48h that a partial sample simply missed. I cannot rule out an unrelated failure elsewhere in the ~46 hours I did not directly sample; none surfaced in any spot-check. |
+
+## Findings
+
+### Incident A — platform SHA-pin enforcement rejecting stale branches' own workflow copies — Confirmed, not code-fixable from `main`
+
+`main` requires no fix; it is already clean. The affected branches are stale (`claude/resolve-pr-conflicts` untouched since 2026-03-30) and this sweep does not rewrite other agents'/branches' history unilaterally — several of the affected branches (`codex/linear-mention-*`, `copilot/*`) appear to be other agents' active or recently-active work, and per CONSTITUTION § I ("Offices are appointments, not inheritances") and § V ("No unauthorized restructuring"), force-editing another lineage's branch is out of scope for a CI sweep. **Next step, for Logan:** this repo already runs `Branch Cleanup` and `Stale Bot PR Cleanup` workflows built for exactly this situation (pruning/rebasing long-abandoned agent branches); letting those run, or a manual prune of branches dead since March/April, resolves this at the root without touching any live agent's work. No `main`-blocking impact today.
+
+### Zero failures found on `main` itself in-window; nothing found blocking merges to `main`.
+
+### Gap in the sweep series itself
+
+The last report in this series was `!/AUDIT-CI-FAILURE-SWEEP-2026-08-12.md` — a 7-day gap before this one, versus the near-daily cadence of the prior six weeks (see file list in Big IF). Not investigated further here (out of scope for a CI-runs sweep), but worth Logan's awareness: whatever schedule drives this routine did not fire, or did not land a report, for a week.
+
+## Procedure note for future sweeps
+
+The whole-repo `list_workflow_runs` endpoint is unreliable at this repo's write-throughput (see Big IF). The workaround that produced tractable, verifiable results this sweep:
+
+1. Call `actions_list` with `method: list_workflows` to get each workflow's file name (e.g. `auto-pr.yml`).
+2. Call `actions_list` with `method: list_workflow_runs` and `resource_id: <workflow-file-name>` (not the whole-repo call) — this scopes `total_count` to a single workflow (hundreds, not 100,000+), so pagination stays consistent page-to-page.
+3. Page through with `per_page: 100` (the API silently caps actual returns at 30/page regardless) until `created_at` values fall outside the window being audited, or a failure signature's first/last occurrence is bracketed. Retrieval for this sweep: original whole-repo sample ~2026-08-19T17:06Z; `auto-pr.yml`-scoped pagination ~2026-08-19T17:09–17:11Z; the direct-`curl`-against-the-API reconciliation added during PR review (branch/date-filtered, bypassing the wrapped tool's 30-row cap entirely) ran ~2026-08-21T01:34Z.
+4. For any failure, pull job-level detail with `list_workflow_jobs` (`resource_id: <run-id>`), then quote the actual error text — never infer a root cause from the workflow/run name alone.
+5. Cross-check any "is this new?" question against `main`'s current file contents directly (`git show`/`grep`), not against training-data assumptions about what the file probably contains.
+
+## Big IF
+
+- **This repo's Actions history cannot be exhaustively enumerated in one sweep at current write-throughput**, confirming (a third time now, after 2026-08-12 and earlier sweeps) that `list_workflow_runs` pagination is unreliable here: `total_count` reads in the 100,000+ range repo-wide, and `per_page=100` requests silently return only 30 rows. The reliable workaround used this sweep — scope to a single `workflow_id` (far fewer total runs, e.g. 483 for `auto-pr.yml`) rather than the whole-repo endpoint — is worth writing into whatever doc governs this routine, so the next sweep doesn't re-discover it from scratch.
+- **The failure this sweep found is a genuinely different root cause than 2026-08-12's** (`agent-swarm-signing-proof.yml`'s invalid `permissions.administration` key, already fixed) — it is not a recurrence of that incident, and not the Codacy/sync-drift chronic items tracked in GH #822 / Linear LAF-72 either. It is new evidence that a GitHub-side policy (SHA-pin enforcement) was turned on or newly enforced, with a blast radius across every branch that never rebased past `main`'s pinning migration — a class of failure that will keep recurring, once per stale branch, until those branches are cleaned up or rebased, regardless of `main`'s health.
+- **The audit-PR pile did shrink since 2026-08-12, partially.** Of the seven open "audit(ci)" PRs that sweep listed (#859, #861, #862, #866, #882, #884, #905), a fresh title search today shows #861, #862, #882, #884, #905 now closed/merged — five of seven. **#859** (2026-07-21 sweep, doc-only, `mergeable_state: behind`) and **#866** (2026-07-27 sweep + a real word-boundary regex fix, `mergeable_state: behind`, 23 comments, explicitly deferred to Logan for an Actions-settings judgment call in its own body) remain open. This sweep does not merge them — both are `behind` `main` (need a rebase first) and #866 in particular says outright it is "Ready for Logan to review and merge," not for an agent to merge unilaterally. Flagging their continued presence rather than adding an eighth.
+
+---
+Cross-posted (with stable references, per review):
+- GitHub issue #822 — [comment](https://github.com/LAF-US/IDAHO-VAULT/issues/822#issuecomment-5345583623)
+- Linear LAF-72 — comment `d3b66e54-9d7f-4aaa-8e40-672ad87d1b97`
+- Slack #all-logan-finney — [message](https://loganfinney.slack.com/archives/C0ALMDBJHS9/p1787159913381369)
+- Discord #ledger (via Zapier) — message `1539685080702910534` in channel `1495651518760882198`
