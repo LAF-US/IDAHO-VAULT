@@ -1,0 +1,27 @@
+# CircleCI — minimal wiring only.
+#
+# The CircleCI GitHub App is connected to this repo and fires on every push;
+# without a config here it reports "No configuration was found" as a failed
+# check. This file exists so that check is green and honest: one no-op job,
+# no checkout (this vault is ~13 GB; a clone for a no-op is waste).
+#
+# A future config pass will replace this with real jobs. Until then, add
+# nothing here that CI actually depends on — the enforced checks live in
+# .github/workflows/ (storage-ownership-policy.yml) and .githooks/.
+version: 2.1
+
+jobs:
+  placeholder:
+    docker:
+      # Pinned by digest (not a floating tag) so the image can't change
+      # underneath us. Was cimg/base:current on 2026-08-16.
+      - image: cimg/base@sha256:e8f07526f593ac5dee29362b7f98c6fec94c412722d6bbece731e4cc885abccb
+    steps:
+      - run:
+          name: "Placeholder (no-op) — real config pending"
+          command: echo "CircleCI wired; no jobs configured yet."
+
+workflows:
+  placeholder:
+    jobs:
+      - placeholder

@@ -7,6 +7,25 @@
 # a silently-skipped secret gate is worse than no gate at all.
 set -eu
 
+if git config --get annex.uuid >/dev/null 2>&1; then
+  command -v git-annex >/dev/null 2>&1 || {
+    printf >&2 '%s\n' 'pre-commit: this clone uses git-annex but git-annex is not on PATH.'
+    exit 1
+  }
+  git annex pre-commit
+fi
+
+if command -v python3 >/dev/null 2>&1; then
+  PYTHON=python3
+elif command -v python >/dev/null 2>&1; then
+  PYTHON=python
+else
+  printf >&2 '%s\n' 'pre-commit: Python is required for storage ownership checks.'
+  exit 1
+fi
+
+"$PYTHON" .github/scripts/vault_git_storage.py check --staged
+
 if ! command -v gitleaks >/dev/null 2>&1; then
   printf >&2 '%s\n' 'pre-commit: gitleaks not on PATH — install it (scoop/brew/apt) before committing.'
   printf >&2 '%s\n' '            a secret gate fails closed; commit blocked.'
