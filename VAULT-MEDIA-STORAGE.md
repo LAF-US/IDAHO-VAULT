@@ -12,6 +12,7 @@ related:
   - VAULT-CONVENTIONS
   - media
   - source documents
+  - Git Annex
 ---
 
 # VAULT-MEDIA-STORAGE
@@ -24,16 +25,24 @@ workflow, but Git is not the storage backend for every raw object.
 
 1. Files at or below normal GitHub limits can be committed directly when they
    are intentional vault content.
-2. Files over 100 MB must be covered by Git LFS attributes before commit.
-3. Files over 2 GB must not be committed to Git or Git LFS. Store the object in
-   external durable storage and commit a Markdown note or manifest reference.
+2. Files over 100 MB and at or below 2 GB use Git LFS when their payload belongs
+   in GitHub's shared repository workflow.
+3. Payloads deliberately managed as a distributed archive remain in their
+   existing semantic Vault locations and use explicit per-path git-annex
+   attributes. Git-annex payloads must have at least two known copies before a
+   local copy may be dropped.
+4. Files over 2 GB must not be committed to Git or Git LFS. They may use the
+   git-annex path opt-in only after a durable annex content remote is configured
+   and verified; otherwise store the object externally and commit a manifest.
 
 The 2 GB ceiling is the GitHub LFS per-object platform limit. Older vault notes
 may refer to a 5 GB ceiling; for GitHub transport, treat 2 GB as authoritative.
 
 ## Transport and Mirrors
 
-Vault Toolbox `rclone`, Vault Toolbox `rsync`, and `gcloud storage rsync` are
+Git-annex is the content-addressed coordination layer for explicitly selected
+payloads. Vault Toolbox `rclone`, Vault Toolbox `rsync`, and
+`gcloud storage rsync` remain
 the intended transport tools for distribution, mirroring, caching, and backup
 lanes. Git remains the authoritative index for small source files, LFS pointers,
 manifests, and notes. These tools carry object payloads that are too large or
@@ -51,6 +60,68 @@ does not authorize transfers.
 Track durable inventories and reference notes. Do not track local rclone
 configs, gcloud credential stores, tokens, caches, logs, rsync partial
 directories, or machine-local mirror state.
+
+## Git, LFS, and Annex Ownership
+
+The three systems have non-overlapping authority:
+
+| Owner | Paths/content | Transport |
+| --- | --- | --- |
+| Git | Notes, code, configuration, and annex manifests | Normal branches and PRs |
+| Git LFS | Existing `.gitattributes` media/document classes unless explicitly overridden | GitHub LFS |
+| git-annex | Individually opted-in payloads at their existing semantic paths | Configured annex content remotes |
+
+The root `.gitattributes` defaults `annex.largefiles` to `nothing`. It does not
+assign annex ownership to any directory or extension. Opt in only a specific
+existing path with a later rule that also clears any inherited LFS filter:
+
+```gitattributes
+/existing/semantic/path/payload.ext filter=annex -diff -merge -text annex.largefiles=anything
+```
+
+Then run `git annex add -- existing/semantic/path/payload.ext`. The ownership
+validator rejects Git LFS/annex overlap, annex pointers without an explicit
+path opt-in, LFS pointers at annex-owned paths, and raw Git blobs at annex-owned
+paths. Moving a file into a special directory is neither required nor desired.
+
+GitHub `origin` is branch/PR transport, not an annex payload remote. The
+bootstrap disables automatic `git annex sync` against `origin`; operators must
+configure a separate content remote before annexed bytes can leave a device.
+
+## Cross-OS Initialization
+
+Install Git, Git LFS, git-annex, and Python on each device. From a clean,
+attached checkout run:
+
+```sh
+# Windows (Scoop)
+scoop install git-annex
+
+# macOS (Homebrew)
+brew install git-annex
+
+# Debian/Ubuntu
+sudo apt install git-annex
+```
+
+Then verify and initialize this clone:
+
+```sh
+python .github/scripts/vault_git_storage.py doctor
+python .github/scripts/vault_git_storage.py init --description "DEVICE-NAME OS"
+```
+
+The bootstrap uses repository version 10 defaults, SHA256E keys, two desired
+copies, one minimum copy, and unlocked files on Windows, macOS, and Linux.
+Unlocked pointer commits avoid making native Windows consume Unix symlinks.
+`annex.thin` remains disabled because retaining the protected prior content is
+more important than saving one local copy's disk space.
+
+Native Windows may briefly enter an adjusted branch during filesystem probing.
+The bootstrap refuses dirty/detached checkouts and restores the original clean
+branch before returning. Normal code and pointer changes still move through
+feature branches and pull requests; do not use an unrestricted `git annex sync`
+as a substitute for the Vault's PR workflow.
 
 ## External Object References
 

@@ -1,8 +1,15 @@
 # Git LFS tracking for binary/media types.
 #
-# Attribute case handling depends on Git and filesystem settings. Camera, deck,
-# and phone media often use uppercase extensions, so binary/media patterns use
-# character classes such as *.[Mm][Oo][Vv] instead of lowercase-only globs.
+# IMPORTANT: .gitattributes pattern matching is CASE-SENSITIVE. A bare `*.mov`
+# does NOT match `CLIP.MOV`, and cameras/decks/phones routinely write UPPERCASE
+# extensions (XD4_6602.MXF, MVI_1487.MOV). To avoid that gap, every extension
+# below uses character classes — `*.[Mm][Oo][Vv]` — so all case permutations
+# (mov / MOV / Mov / …) are tracked. When adding a new binary type, follow the
+# same case-folding form. See VAULT-MEDIA-STORAGE.md § Enforcement.
+#
+# This is the first line of defense only; .github/scripts/check_large_files.py
+# is the case-agnostic backstop that blocks any >100 MB file lacking LFS
+# attributes and any file over the 2 GB GitHub ceiling.
 
 # Audio / video
 *.[Mm]4[Aa] filter=lfs diff=lfs merge=lfs -text
@@ -12,9 +19,11 @@
 *.[Aa][Vv][Ii] filter=lfs diff=lfs merge=lfs -text
 *.[Mm][Kk][Vv] filter=lfs diff=lfs merge=lfs -text
 *.[Mm][Xx][Ff] filter=lfs diff=lfs merge=lfs -text
-# AVCHD camera containers are normally uppercase (.MTS / .M2TS). Lowercase .mts
-# is also a TypeScript module-source extension and is listed with text formats
-# below, so verify attributes before changing this boundary. .M2TS has no
+# AVCHD camera containers are written UPPERCASE (.MTS / .M2TS). `.mts`
+# (lowercase) is the TypeScript module-source extension, so the .MTS LFS rule is
+# intentionally UPPERCASE-ONLY — lowercase `.mts`/`.cts` are normalized as text
+# in the normalization section below, and no filter override is needed. A stray
+# lowercase camera `.mts` is still caught by check_large_files.py. .M2TS has no
 # source-format collision, so it stays case-folded.
 *.MTS filter=lfs diff=lfs merge=lfs -text
 *.[Mm]2[Tt][Ss] filter=lfs diff=lfs merge=lfs -text
@@ -99,5 +108,72 @@
 *.csv -text
 *.tsv text eol=lf
 *.mdx text eol=lf
-.gitattributes text eol=lf
-.githooks/* text eol=lf
+
+# Tool configs with no extension, plus one XML that needs naming individually.
+# check_character_conformity.py judges only files whose `text` attribute is
+# set; anything unspecified is skipped and counted as a gap. Without these,
+# the configs added in #950 join that bucket.
+#
+# Leading slashes anchor these to the repo root. Without one, a .gitattributes
+# pattern with no slash is a BASENAME match at any depth -- the same rule as
+# .gitignore -- so a bare `.pylintrc` would also claim any nested one.
+#
+# NOT `*.xml`: RSS.xml is committed with CRLF, and a blanket `text eol=lf`
+# would rewrite its line endings as a side effect of declaring a config file.
+/.bandit text eol=lf
+/.pylintrc text eol=lf
+/.remarkrc text eol=lf
+/.shellcheckrc text eol=lf
+/.stylelintrc text eol=lf
+/ruleset.xml text eol=lf
+
+# =====================================================================
+# VAULT-LOCAL ADDITIONS (logan/obsidian) — everything above this line is
+# the canonical main ruleset, adopted verbatim; add vault rules HERE only
+# so the eventual logan/obsidian -> main merge stays suffix-only.
+# Later rules win: anchored guards below override generic classes above.
+# =====================================================================
+
+# --- .ollama model store: byte-exact or nothing ----------------------
+# 2026-08-11 incident: core.autocrlf CRLF conversion + truncation
+# corrupted model blobs while .ollama/models was briefly tracked. Blobs
+# are gitignored (.ollama/models/blobs/**); the tracked manifests are
+# extensionless JSON keyed into a content-addressed store. Everything
+# under .ollama is opted out of eol conversion, text diff/merge, and
+# every clean/smudge filter (including LFS).
+/.ollama/** -text -diff -merge -filter
+# The one human document in the store stays normal prose:
+/.ollama/OLLAMA.md text eol=lf
+
+# --- Repo plumbing must land LF on disk ------------------------------
+# Extensionless (no generic rule matches); core.autocrlf=true would
+# smudge a fresh Windows checkout to CRLF, breaking sh hooks. Anchored.
+/.githooks/* text eol=lf
+/.gitattributes text eol=lf
+/.gitignore text eol=lf
+/.editorconfig text eol=lf
+
+# --- Binary classes in the vault census with no rule above -----------
+# Declared binary (no eol/diff/merge mangling). Deliberately NOT LFS:
+# small classes; LFS stays reserved for plausibly-large media.
+*.[Ww][Oo][Ff][Ff] binary
+*.[Ww][Oo][Ff][Ff]2 binary
+*.[Tt][Tt][Ff] binary
+*.[Oo][Tt][Ff] binary
+*.[Ii][Cc][Oo] binary
+*.[Pp][Yy][Cc] binary
+*.[Ee][Tt][Ll] binary
+*.[Dd][Aa][Tt] binary
+*.[Ss][Qq][Ll][Ii][Tt][Ee]-[Ww][Aa][Ll] binary
+*.[Ss][Qq][Ll][Ii][Tt][Ee]-[Ss][Hh][Mm] binary
+
+# --- Git Annex: explicit, path-preserving opt-in ----------------------
+# Annex does not own a directory or extension class. Files stay in their
+# existing semantic Vault locations and remain Git/LFS-owned by default.
+# Opt in a specific existing path with a later full rule in this file:
+# /path/to/payload filter=annex -diff -merge -text annex.largefiles=anything
+* annex.largefiles=nothing annex.backend=SHA256E annex.numcopies=2 annex.mincopies=1
+
+# ---------------------------------------------------------------
+# THE WORLD IS QUIET HERE．ESTO PERPETUA!
+# ---------------------------------------------------------------
