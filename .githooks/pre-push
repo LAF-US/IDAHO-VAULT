@@ -15,6 +15,10 @@ printf >&2 'pre-push: ran at %s\n' "$(date '+%Y-%m-%dT%H:%M:%S%z')"
 ZERO=0000000000000000000000000000000000000000
 TAB=$(printf '\t')
 fail() { printf >&2 'pre-push: %s\n' "$*"; exit 1; }
+# Digits-only test. Defined here, OUTSIDE any $(...), because bash 3.2 -- the
+# frozen /bin/sh Apple still ships -- cannot parse `case ... esac` inside a
+# command substitution. The macOS pre-push hook died at parse before this.
+is_num() { case "$1" in ''|*[!0-9]*) return 1 ;; esac; return 0; }
 
 command -v gitleaks   >/dev/null 2>&1 || fail 'gitleaks not on PATH - secret gate fails closed; push blocked.'
 command -v trufflehog >/dev/null 2>&1 || fail 'trufflehog not on PATH - secret gate fails closed; push blocked.'
@@ -67,7 +71,7 @@ while IFS=' ' read -r local_ref local_oid remote_ref remote_oid; do
     | awk -v T="$TAB" '$1=="blob" && $2+0>=100 && $2+0<=400 { oid=$3; p=$0; sub(/^blob [0-9]+ [0-9a-f]+ /,"",p); print oid T p }' \
     | while IFS="$TAB" read -r oid p; do
         real=$(git cat-file -p "$oid" 2>/dev/null | sed -n 's/^size //p' | head -1)
-        case "$real" in ''|*[!0-9]*) continue ;; esac
+        is_num "$real" || continue
         if [ "$real" -gt 2147483648 ]; then
           gib=$(awk "BEGIN{printf \"%.2f\", $real/1073741824}")
           printf 'BLOCK  %s  (%s GiB, LFS - GitHub rejects >2 GiB on Free/Pro)\n' "$p" "$gib"
