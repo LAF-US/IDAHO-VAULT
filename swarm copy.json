@@ -1,0 +1,826 @@
+{
+  "// note": "Machine-readable structured registry of all swarm elements. See AGENTS.md (human-readable) and !/AGENTS.md (canonical narrative registry).",
+  "// governance": "CONSTITUTION.md",
+  "// conventions": "VAULT-CONVENTIONS.md",
+  "principal": "Logan Finney",
+  "vault_authority": "https://github.com/LAF-US/IDAHO-VAULT",
+  "registry_version": "2026-04-15 (Wakeup Clarification)",
+  "wakeup_protocol": {
+    "quick_start": "!/WAKEUP.md",
+    "boot_order": [
+      "AGENTS.md",
+      "!/WAKEUP.md",
+      "!README.md",
+      "!/AGENTS.md",
+      "CONSTITUTION.md",
+      "swarm.json",
+      "!/agents.json",
+      "!/agent.sh"
+    ],
+    "conflict_precedence": [
+      "Logan direct instruction",
+      "CONSTITUTION.md",
+      "!/WAKEUP.md and !/AGENTS.md",
+      "swarm.json",
+      "generated bootstrap surfaces",
+      "historical notes and exploratory residue"
+    ],
+    "historical_rule": "Historical CrewAI harbor notes, abandoned branch artifacts, and exploratory scaffolds are non-live unless a live surface explicitly reactivates them.",
+    "scope_note": "Connector posture in this registry is local to IDAHO-VAULT. The broader LAF-US chamber and team topology lives in !/AGENTS.md and !/LAF-USB-FIVE-CORES-MIGRATION-2026-04-15.md."
+  },
+  "agents": [
+    {
+      "id": "claude-code",
+      "name": "Claude Code",
+      "vendor": "Anthropic",
+      "dotfolder": ".claude",
+      "autoload_file": ".claude/CLAUDE.md",
+      "autoload": true,
+      "memory_anchored": true,
+      "capability_tier": "Direct Write",
+      "office": "Code Authority",
+      "title": "The Abhorsen",
+      "role": "terminal and repository mechanics",
+      "label": "agent:claude-code",
+      "bootstrap": {
+        "invoke_as": "claude",
+        "instructions_file": ".claude/CLAUDE.md",
+        "git_author_name": "Claude Code",
+        "git_author_email": "noreply@anthropic.com",
+        "git_author_suffix": "-C",
+        "supports_local_bootstrap": true
+      }
+    },
+    {
+      "id": "gemini-cli",
+      "name": "Gemini CLI",
+      "vendor": "Google",
+      "dotfolder": ".gemini",
+      "autoload_file": ".gemini/GEMINI.md",
+      "autoload": true,
+      "memory_anchored": true,
+      "capability_tier": "Direct Write (Support)",
+      "office": "[VACANT]",
+      "title": null,
+      "role": "narrative lens, political context, Sebald Code",
+      "label": "agent:gemini",
+      "bootstrap": {
+        "invoke_as": "gemini",
+        "instructions_file": ".gemini/GEMINI.md",
+        "git_author_name": "Gemini",
+        "git_author_email": "noreply@google.com",
+        "git_author_suffix": "-G",
+        "supports_local_bootstrap": true
+      }
+    },
+    {
+      "id": "antigravity",
+      "name": "Antigravity CLI",
+      "vendor": "Google",
+      "dotfolder": ".antigravity",
+      "autoload_file": "ANTIGRAVITY.md",
+      "autoload": false,
+      "memory_anchored": false,
+      "capability_tier": "Direct Write (Support)",
+      "office": "[VACANT]",
+      "title": null,
+      "role": "narrative lens, Sebald Code, Antigravity lineage",
+      "label": "agent:antigravity",
+      "status": "uninstalled 2026-04-18",
+      "bootstrap": {
+        "invoke_as": "antigravity",
+        "instructions_file": "ANTIGRAVITY.md",
+        "git_author_name": "Antigravity",
+        "git_author_email": "noreply@google.com",
+        "git_author_suffix": "-G",
+        "supports_local_bootstrap": true
+      }
+    },
+    {
+      "id": "github-copilot",
+      "name": "GitHub Copilot",
+      "vendor": "Microsoft / GitHub",
+      "dotfolder": ".github",
+      "autoload_file": ".github/copilot-instructions.md",
+      "autoload": true,
+      "capability_tier": "Multi-Repo Admin",
+      "office": "Admin",
+      "title": "The Clerk",
+      "role": "inline Obsidian markdown and syntax",
+      "label": "agent:copilot",
+      "bootstrap": {
+        "invoke_as": "copilot",
+        "instructions_file": ".github/copilot-instructions.md",
+        "git_author_name": "GitHub Copilot",
+        "git_author_email": "noreply@github.com",
+        "git_author_suffix": "-CP",
+        "supports_local_bootstrap": true
+      }
+    },
+    {
+      "id": "codex-cli",
+      "name": "OpenAI Codex CLI",
+      "vendor": "OpenAI",
+      "dotfolder": ".codex",
+      "autoload_file": "AGENTS.md",
+      "config_file": ".codex/config.toml",
+      "reference_shim": ".codex/CODEX.md",
+      "autoload": true,
+      "capability_tier": "Direct Write (scripting)",
+      "office": "Machinery Optimizer",
+      "title": "The Lexicographer",
+      "role": "code generation, refactoring, automated transforms",
+      "label": "agent:codex",
+      "notes": "Codex auto-loads repo AGENTS.md instructions. Project-scoped Codex config lives in .codex/config.toml; .codex/CODEX.md is a repo-specific reference shim.",
+      "bootstrap": {
+        "invoke_as": "codex",
+        "instructions_file": ".codex/CODEX.md",
+        "git_author_name": "Codex (OpenAI)",
+        "git_author_email": "noreply@openai.com",
+        "git_author_suffix": "-X",
+        "supports_local_bootstrap": true
+      }
+    },
+    {
+      "id": "grok",
+      "name": "Grok",
+      "vendor": "xAI",
+      "dotfolder": ".grok",
+      "autoload_file": ".grok/GROK.md",
+      "autoload": false,
+      "autoload_note": "Manual injection - no confirmed xAI CLI dotfolder spec",
+      "capability_tier": "Read/Analysis",
+      "role": "The Ironist - rapid reasoning, real-time web access",
+      "label": null,
+      "bootstrap": {
+        "invoke_as": "grok",
+        "instructions_file": ".grok/GROK.md",
+        "git_author_name": "Grok (xAI)",
+        "git_author_email": "noreply@x.ai",
+        "git_author_suffix": "-XR",
+        "supports_local_bootstrap": true
+      }
+    },
+    {
+      "id": "deepseek",
+      "name": "DeepSeek",
+      "vendor": "DeepSeek",
+      "dotfolder": ".deepseek",
+      "autoload_file": ".deepseek/DEEPSEEK.md",
+      "autoload": false,
+      "capability_tier": "Advisory",
+      "role": "The Analyst - deep reasoning, code analysis, research synthesis",
+      "label": null
+    },
+    {
+      "id": "perplexity",
+      "name": "Perplexity",
+      "vendor": "Perplexity AI",
+      "dotfolder": ".perplexity",
+      "autoload_file": ".perplexity/PERPLEXITY.md",
+      "autoload": false,
+      "capability_tier": "Read/Analysis",
+      "role": "The Scout - web search and research synthesis",
+      "label": null,
+      "bootstrap": {
+        "invoke_as": "perplexity",
+        "instructions_file": ".perplexity/PERPLEXITY.md",
+        "git_author_name": "Perplexity",
+        "git_author_email": "noreply@perplexity.ai",
+        "git_author_suffix": "-P",
+        "supports_local_bootstrap": true
+      }
+    },
+    {
+      "id": "linear-agent",
+      "name": "Linear Agent",
+      "vendor": "Linear",
+      "dotfolder": null,
+      "autoload_file": null,
+      "autoload": false,
+      "config": "cloud - configured in Linear workspace settings",
+      "capability_tier": "Advisory",
+      "role": "Linear workspace AI - context synthesis, issue creation, status tracking",
+      "launched": "2026-03-24",
+      "label": null,
+      "notes": "No local dotfolder. Access via Cmd+J, Slack, Teams, @mentions in Linear."
+    },
+    {
+      "id": "serena",
+      "name": "Serena",
+      "vendor": "oraios / community",
+      "dotfolder": ".serena",
+      "autoload_file": ".serena/SERENA.md",
+      "autoload": false,
+      "capability_tier": "Support",
+      "role": "Semantic code intelligence — symbol navigation, codebase analysis, refactoring assistance",
+      "label": null,
+      "protocol": "MCP",
+      "launched": "2026-04-04",
+      "status": "active",
+      "runtime": "local hardware (Logan's machine)",
+      "notes": "MCP server (github.com/oraios/serena). AWAKENED 2026-04-04 on local hardware. Cloud agents cannot reach — local-only. Accessible to local Claude Code (The Collared Cat) and any local MCP-capable agent."
+    },
+    {
+      "id": "mistral-vibe",
+      "name": "Mistral Vibe CLI",
+      "vendor": "Mistral AI",
+      "dotfolder": ".mistral",
+      "autoload_file": ".mistral/MISTRAL.md",
+      "autoload": false,
+      "autoload_note": "Pending confirmation of official Mistral Vibe dotfolder spec — manual injection until confirmed",
+      "capability_tier": "[VACANT — awaiting Logan]",
+      "office": null,
+      "title": null,
+      "role": "[VACANT — awaiting Logan]",
+      "label": null,
+      "winget_id": "MistralAI.MistralVibe.ACP",
+      "version": "2.7.6",
+      "launched": "2026-04-18",
+      "installed": "2026-04-18",
+      "status": "installed — awaiting API key",
+      "bootstrap": {
+        "invoke_as": "vibe-acp",
+        "instructions_file": ".mistral/MISTRAL.md",
+        "git_author_name": "Mistral Vibe",
+        "git_author_email": "noreply@mistral.ai",
+        "git_author_suffix": "-M",
+        "supports_local_bootstrap": true
+      }
+    }
+  ],
+  "personas": [
+    {
+      "id": "bartimaeus",
+      "name": "Bartimaeus",
+      "dotfolder": ".bartimaeus",
+      "autoload_file": ".bartimaeus/BARTIMAEUS.md",
+      "autoload": false,
+      "role": "TBD - pending Logan's direction"
+    },
+    {
+      "id": "zagreus",
+      "name": "Zagreus",
+      "dotfolder": ".zagreus",
+      "autoload_file": ".zagreus/ZAGREUS.md",
+      "autoload": false,
+      "role": "TBD - pending Logan's direction"
+    },
+    {
+      "id": "persephone",
+      "name": "Persephone",
+      "dotfolder": ".persephone",
+      "autoload_file": ".persephone/PERSEPHONE.md",
+      "autoload": false,
+      "role": "TBD - pending Logan's direction"
+    }
+  ],
+  "ecosystems": [
+    {
+      "id": "microsoft",
+      "name": "Microsoft AI ecosystem",
+      "vendor": "Microsoft",
+      "dotfolder": ".microsoft",
+      "shim_file": ".microsoft/MICROSOFT.md",
+      "autoload": false,
+      "scope": [
+        "Microsoft Copilot (personal)",
+        "Microsoft 365 Copilot (IPT enterprise)",
+        "Azure OpenAI",
+        "Bing AI",
+        "Copilot Studio",
+        "Microsoft 365 apps"
+      ],
+      "identity_contexts": {
+        "personal": "Logan's personal Microsoft account - Logan controls all settings",
+        "institutional": "Idaho Public Television M365 tenant - subject to IPT IT policy"
+      }
+    },
+    {
+      "id": "google",
+      "name": "Google ecosystem",
+      "vendor": "Google",
+      "dotfolder": ".google",
+      "shim_file": ".google/GOOGLE.md",
+      "autoload": false,
+      "scope": [
+        "Gmail",
+        "Google Calendar",
+        "Google Docs/Sheets/Slides",
+        "Google Drive",
+        "Google Workspace",
+        "Google Pinpoint",
+        "NotebookLM",
+        "Gemini web/API"
+      ],
+      "note": "Gemini CLI coding agent is separate - see .gemini/GEMINI.md"
+    },
+    {
+      "id": "meta",
+      "name": "Meta AI ecosystem",
+      "vendor": "Meta Platforms",
+      "dotfolder": ".meta",
+      "shim_file": ".meta/META.md",
+      "autoload": false,
+      "scope": [
+        "Meta AI (WhatsApp/Instagram/Facebook)",
+        "Meta AI Studio",
+        "Llama models"
+      ]
+    }
+  ],
+  "systems": [
+    {
+      "id": "github",
+      "name": "GitHub",
+      "type": "coordination",
+      "url": "https://github.com/loganfinney27/IDAHO-VAULT",
+      "role": "Code hosting, PRs, Issues, GitHub Actions",
+      "integrations": [
+        "linear"
+      ]
+    },
+    {
+      "id": "linear",
+      "name": "Linear",
+      "type": "coordination",
+      "role": "Execution tracking, owners, deadlines (SWARM label)",
+      "config": "cloud-only - no local dotfolder",
+      "github_sync": "Bidirectional: PR lifecycle drives issue state (In Progress -> In Review -> Done). Branch naming or magic words (closes ENG-123) link PRs to issues.",
+      "ai_agent_ref": "linear-agent"
+    },
+    {
+      "id": "slack",
+      "name": "Slack",
+      "type": "coordination",
+      "dotfolder": ".slack",
+      "shim_file": ".slack/SLACK.md",
+      "role": "Ephemeral coordination - breadcrumbs only. Not the record.",
+      "rule": "Durable decisions must be promoted to vault or Linear."
+    },
+    {
+      "id": "obsidian-sync",
+      "name": "Obsidian Sync",
+      "type": "sync",
+      "role": "Private courier for plugin settings and credentials across devices",
+      "rule": "Plugin data.json files are gitignored - never reach GitHub"
+    }
+  ],
+  "connectors": [
+    {
+      "id": "github",
+      "name": "GitHub",
+      "category": "core",
+      "role": "Primary execution and transport layer for issues, PRs, workflows, and automation output",
+      "write_mode": "gated-write",
+      "authoritative_for": "execution transport",
+      "promotion_target": [
+        "vault",
+        "linear"
+      ],
+      "status": "active",
+      "integration_points": [
+        "issues",
+        "pull_requests",
+        ".github/workflows/",
+        ".github/scripts/"
+      ],
+      "auth_dependency": "GitHub app connector in Codex session; repository auth and repo secrets for workflow-side automation",
+      "human_gate": "Policy-changing, destructive, or governance-redefining writes remain Logan-gated.",
+      "promotion_rule": "GitHub may carry execution state and automation output, but durable doctrine and long-lived context must be promoted into the vault; owner and status mirrors may be reflected into Linear when execution tracking is needed.",
+      "notes": "Primary AFK paging route via GitHub Issues."
+    },
+    {
+      "id": "linear",
+      "name": "Linear",
+      "category": "core",
+      "role": "Owner, status, and planning layer for SWARM-tracked execution",
+      "write_mode": "gated-write",
+      "authoritative_for": "execution state",
+      "promotion_target": [
+        "vault",
+        "github"
+      ],
+      "status": "active",
+      "integration_points": [
+        ".github/scripts/linear_gateway.py",
+        ".github/scripts/linear_pr_sync.py",
+        ".github/workflows/linear-brief.yml",
+        ".github/workflows/linear-pr-sync.yml",
+        ".github/workflows/linear-webhook.yml"
+      ],
+      "auth_dependency": "Linear connector in Codex session; LINEAR_API_KEY and webhook secrets for GitHub-side automation",
+      "human_gate": "Live writes stay dry-run by default unless explicitly enabled; no meaningful work without a mapped issue.",
+      "promotion_rule": "Linear tracks ownership, status, and planning; durable doctrine and recoverable context must be promoted back into the vault, and code-execution context may be mirrored to GitHub.",
+      "notes": "Secondary AFK paging route; SWARM label is the active coordination hub."
+    },
+    {
+      "id": "slack",
+      "name": "Slack",
+      "category": "core",
+      "role": "Tertiary paging and conversational breadcrumb layer",
+      "write_mode": "notification-write",
+      "authoritative_for": "nothing durable",
+      "promotion_target": [
+        "vault",
+        "github",
+        "linear"
+      ],
+      "status": "active",
+      "integration_points": [
+        ".github/scripts/janitor_sweep.py",
+        ".github/workflows/janitor-sweep.yml"
+      ],
+      "auth_dependency": "Slack connector in Codex session; SWARM_SLACK_WEBHOOK_URL for workflow notifications",
+      "human_gate": "Decisions do not become durable until promoted into vault, GitHub, or Linear; urgent use is allowed but not self-authorizing.",
+      "promotion_rule": "Use Slack for notifications, quick coordination, and breadcrumbs only; promote every durable outcome into the vault or execution systems promptly.",
+      "notes": "Tertiary AFK paging route; not a system of record."
+    },
+    {
+      "id": "gmail",
+      "name": "Gmail",
+      "category": "adjunct",
+      "role": "Read-first inbox and message-context lane",
+      "write_mode": "read-only",
+      "authoritative_for": "nothing durable",
+      "promotion_target": [
+        "vault",
+        "github",
+        "linear"
+      ],
+      "status": "available-read-only",
+      "integration_points": [],
+      "auth_dependency": "Gmail connector in Codex session",
+      "human_gate": "Any file write or durable use requires explicit query-time approval and sanitization of private content.",
+      "promotion_rule": "Gmail may inform work, but actionable or durable outcomes must be promoted explicitly into the vault or execution systems.",
+      "notes": "Source-sensitive communication lane; treat as ephemeral until promoted."
+    },
+    {
+      "id": "google_calendar",
+      "name": "Google Calendar",
+      "category": "adjunct",
+      "role": "Read-first scheduling and availability context lane",
+      "write_mode": "read-only",
+      "authoritative_for": "nothing durable",
+      "promotion_target": [
+        "vault",
+        "github",
+        "linear"
+      ],
+      "status": "available-read-only",
+      "integration_points": [],
+      "auth_dependency": "Google Calendar connector in Codex session",
+      "human_gate": "Any durable use requires explicit promotion; scheduling writes are out of scope for the v1 hub.",
+      "promotion_rule": "Calendar context may inform triage or planning, but commitments must be captured in vault, GitHub, or Linear if they matter operationally.",
+      "notes": "Scheduling context only in v1."
+    },
+    {
+      "id": "google_drive",
+      "name": "Google Drive",
+      "category": "adjunct",
+      "role": "Read-first document and evidence retrieval lane",
+      "write_mode": "read-only",
+      "authoritative_for": "nothing durable",
+      "promotion_target": [
+        "vault",
+        "github",
+        "linear"
+      ],
+      "status": "available-read-only",
+      "integration_points": [],
+      "auth_dependency": "Google Drive connector in Codex session",
+      "human_gate": "File writes require explicit approval; do not treat Drive as the operational record.",
+      "promotion_rule": "Drive material may inform work, but durable notes, decisions, and execution context must be promoted into the vault or execution systems.",
+      "notes": "Docs, Sheets, Slides, and Drive access remain adjunct in v1."
+    },
+    {
+      "id": "box",
+      "name": "Box",
+      "category": "adjunct",
+      "role": "Read-first external content and archival retrieval lane",
+      "write_mode": "read-only",
+      "authoritative_for": "nothing durable",
+      "promotion_target": [
+        "vault",
+        "github",
+        "linear"
+      ],
+      "status": "available-read-only",
+      "integration_points": [],
+      "auth_dependency": "Box connector in Codex session",
+      "human_gate": "Explicit human approval is required before any durable extraction or cross-system write.",
+      "promotion_rule": "Box content may be consulted or summarized, but anything durable must be promoted into the vault or execution systems.",
+      "notes": "External repository of supporting materials; not wired into repo automation."
+    },
+    {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "category": "deferred",
+      "role": "Platform and deployment connector, not part of the v1 ops hub",
+      "write_mode": "deferred",
+      "authoritative_for": "nothing in the current ops hub",
+      "promotion_target": [
+        "vault",
+        "github",
+        "linear"
+      ],
+      "status": "plugin-available-deferred",
+      "integration_points": [],
+      "auth_dependency": "Cloudflare plugin skills are available in Codex; external account auth is required for live operations",
+      "human_gate": "Any deploy, infrastructure, or platform write is Logan-gated and requires a separate activation plan.",
+      "promotion_rule": "No automatic promotion; if Cloudflare outputs matter, capture them in vault, GitHub, or Linear explicitly.",
+      "notes": "Deferred until a separate runtime and deployment plan exists."
+    },
+    {
+      "id": "hugging_face",
+      "name": "Hugging Face",
+      "category": "deferred",
+      "role": "Research and remote compute connector, not part of the v1 ops hub",
+      "write_mode": "deferred",
+      "authoritative_for": "nothing in the current ops hub",
+      "promotion_target": [
+        "vault",
+        "github",
+        "linear"
+      ],
+      "status": "plugin-available-deferred",
+      "integration_points": [],
+      "auth_dependency": "Hugging Face plugin skills and connector access are available in Codex; external token and project auth are required for live operations",
+      "human_gate": "Any job run, model publish, or remote write is Logan-gated and requires a separate activation plan.",
+      "promotion_rule": "No automatic promotion; research findings or job outputs must be promoted explicitly if they become durable.",
+      "notes": "Deferred until a separate research or compute workflow is approved."
+    }
+  ],
+  "control_plane": {
+    "coordination_hub_issue": "LAF-25",
+    "scoped_issue": "LAF-28",
+    "bootstrap_entrypoint": "!/agent.sh",
+    "narrative_registry": "!/AGENTS.md",
+    "bootstrap_index": "!/agents.json",
+    "scope_note": "GitHub, Linear, and Slack here describe the repo-local operating posture of IDAHO-VAULT, not the whole LAF-US world model.",
+    "system_roles": {
+      "github": "execution_transport",
+      "linear": "execution_state",
+      "slack": "ephemeral_breadcrumbs"
+    }
+  },
+  "template_tracking": {
+    "source_of_truth": "tracked_obsidian_config",
+    "registry_files": [
+      "manifest.json",
+      "swarm.json"
+    ],
+    "policy": "Concrete Obsidian template files named by tracked client config must be mirrored here and in manifest.json. Folder-only plugin scopes and private plugin settings must be declared explicitly instead of guessed.",
+    "concrete_bindings": [
+      {
+        "client": "obsidian",
+        "plugin": "core/daily-notes",
+        "config_path": ".obsidian/daily-notes.json",
+        "template_path": "DAILY NOTE TEMPLATE.md",
+        "mode": "daily_note",
+        "status": "active"
+      }
+    ],
+    "folder_bindings": [
+      {
+        "client": "obsidian",
+        "plugin": "core/templates",
+        "config_path": ".obsidian/templates.json",
+        "folder": "",
+        "status": "folder_only",
+        "note": "Tracked config exposes a template pool, not concrete template file bindings."
+      }
+    ],
+    "untracked_plugins": [
+      {
+        "client": "obsidian",
+        "plugin": "templater-obsidian",
+        "status": "installed_untracked_config",
+        "config_path": ".obsidian/plugins/templater-obsidian/data.json",
+        "note": "Plugin settings are intentionally private via Obsidian Sync and are not read into swarm tracking."
+      }
+    ]
+  },
+  "plugin_layer": {
+    "// note": "Machine-readable registration of the Obsidian plugin layer. Live doctrine, topology, and promotion rules live in !/PLUGIN-REGISTRY.md.",
+    "manifest_doc": "!/PLUGIN-REGISTRY.md",
+    "interface_state_files": [
+      ".obsidian/community-plugins.json",
+      ".obsidian/core-plugins.json"
+    ],
+    "payload_root": ".obsidian/plugins/",
+    "status": "active",
+    "authority_boundary": "swarm.json registers the plugin layer; live plugin doctrine, topology, dependency declarations, and promotion rules live in !/PLUGIN-REGISTRY.md.",
+    "promotion_gate": "No plugin-state change counts as legitimate until !/PLUGIN-REGISTRY.md is updated.",
+    "counts": {
+      "enabled_community": 26,
+      "enabled_core": 31,
+      "dormant_installed": 28,
+      "installed_total": 54
+    },
+    "entrypoints": [
+      {
+        "id": "plugin-manifest",
+        "path": "!/PLUGIN-REGISTRY.md",
+        "role": "canonical plugin doctrine"
+      },
+      {
+        "id": "community-plugins",
+        "path": ".obsidian/community-plugins.json",
+        "role": "enabled community-plugin interface state"
+      },
+      {
+        "id": "core-plugins",
+        "path": ".obsidian/core-plugins.json",
+        "role": "enabled core-plugin interface state"
+      },
+      {
+        "id": "plugin-payloads",
+        "path": ".obsidian/plugins/",
+        "role": "installed community-plugin payloads"
+      }
+    ],
+    "families": {
+      "enabled": [
+        "infrastructure_agent",
+        "navigation_search",
+        "content_creation_editing",
+        "daily_notes_calendar"
+      ],
+      "dormant": [
+        "ai_llm",
+        "content_organization",
+        "calendar_date",
+        "pdf_document",
+        "table_editing",
+        "visual_ui",
+        "specialty"
+      ]
+    },
+    "dependency_edges": [
+      {
+        "parent": "obsidian-local-rest-api",
+        "child": "mcp-tools",
+        "type": "required_runtime"
+      },
+      {
+        "parent": "smart-connections",
+        "child": "smart-connections-visualizer",
+        "type": "feature_extension"
+      },
+      {
+        "parent": "templater-obsidian",
+        "child": "ai-templater",
+        "type": "functional_extension"
+      },
+      {
+        "parent": "periodic-notes",
+        "child": "roygbiv-day-accent",
+        "type": "data_dependency"
+      }
+    ],
+    "writable_surfaces": [
+      {
+        "path": "!/PLUGIN-REGISTRY.md",
+        "persistence": "durable"
+      },
+      {
+        "path": ".obsidian/community-plugins.json",
+        "persistence": "durable_interface_state"
+      },
+      {
+        "path": ".obsidian/core-plugins.json",
+        "persistence": "durable_interface_state"
+      },
+      {
+        "path": ".obsidian/plugins/*/manifest.json",
+        "persistence": "durable_when_tracked"
+      },
+      {
+        "path": ".obsidian/plugins/*/data.json",
+        "persistence": "ephemeral_gitignored"
+      },
+      {
+        "path": ".obsidian/plugins/*/cache/",
+        "persistence": "ephemeral_gitignored"
+      },
+      {
+        "path": ".smart-env/",
+        "persistence": "ephemeral_local_runtime"
+      },
+      {
+        "path": ".makemd/",
+        "persistence": "ephemeral_local_runtime"
+      },
+      {
+        "path": ".space/",
+        "persistence": "ephemeral_local_runtime"
+      }
+    ]
+  },
+  "cross_swarm_sync": {
+    "// note": "Machine-readable registration of the vault-native cross-swarm signaling bus. Protocol lives in !/SIGNALS/README.md.",
+    "protocol_doc": "!/SIGNALS/README.md",
+    "signal_root": "!/SIGNALS/",
+    "live_board": "!/__!__/!/! The world is quiet here/DOCKET.md",
+    "status": "active",
+    "transport_model": "vault_native_async_signal_bus",
+    "authority_boundary": "swarm.json registers the signaling bus; the live protocol lives in !/SIGNALS/README.md; execution state remains in GitHub and Linear; the Courtroom DOCKET is the live visibility surface.",
+    "entrypoints": [
+      {
+        "id": "signal-protocol",
+        "path": "!/SIGNALS/README.md",
+        "role": "canonical signaling protocol"
+      },
+      {
+        "id": "signal-root",
+        "path": "!/SIGNALS/",
+        "role": "durable cross-agent signal files"
+      },
+      {
+        "id": "courtroom-docket",
+        "path": "!/__!__/!/! The world is quiet here/DOCKET.md",
+        "role": "live board for signal visibility and active coordination"
+      },
+      {
+        "id": "narrative-registry",
+        "path": "!/AGENTS.md",
+        "role": "agent handles and lane rules"
+      }
+    ],
+    "status_values": [
+      "OPEN",
+      "ACKNOWLEDGED",
+      "REPLIED",
+      "CLOSED",
+      "OVERRIDDEN"
+    ],
+    "required_fields": [
+      "sig_id",
+      "from",
+      "to",
+      "re",
+      "date",
+      "status",
+      "thread",
+      "replying_to"
+    ],
+    "runtime_rules": [
+      "Any agent may write a signal file.",
+      "Recipients check OPEN signals at session start.",
+      "Replies are new files, not body edits.",
+      "No secrets belong in signal files."
+    ],
+    "promotion_gate": "Signals may coordinate work, but durable decisions and execution commitments must still be promoted into the vault, GitHub, or Linear explicitly."
+  },
+  "crews": {
+    "// note": "CrewAI is an active layer under re-foundation. swarm.json registers the layer but does not carry CrewAI crew, task, or runner topology.",
+    "manifest": ".crewai/manifest.json",
+    "manifest_doc": ".crewai/MANIFEST.md",
+    "crewai_version": "1.14.1",
+    "status": "refoundation",
+    "output_dir": "!/CREWAI/",
+    "runtime_class": "vault-contained local runtime slice",
+    "authority_boundary": "swarm.json registers the layer; live CrewAI topology and promotion rules live in .crewai/MANIFEST.md.",
+    "principle": "Portable authority over local runtime romance",
+    "roster": []
+  },
+  "protocols": [
+    {
+      "id": "levelset",
+      "name": "LEVELSET",
+      "version": "3.2.6.1",
+      "file": "!/LEVELSET-STEP-0-EXTERNAL-AGENT.md",
+      "status": "active",
+      "flag": "STEP-0 and STEP-1 in active development"
+    },
+    {
+      "id": "arise",
+      "name": "ARISE",
+      "version": "0.0",
+      "file": null,
+      "status": "awaiting adoption"
+    },
+    {
+      "id": "awaken",
+      "name": "AWAKEN",
+      "version": "0.0",
+      "file": null,
+      "status": "awaiting adoption"
+    },
+    {
+      "id": "orient",
+      "name": "ORIENT",
+      "version": "0.0",
+      "file": null,
+      "status": "awaiting adoption"
+    },
+    {
+      "id": "context",
+      "name": "CONTEXT",
+      "version": "0.0",
+      "file": null,
+      "status": "under development"
+    }
+  ]
+}

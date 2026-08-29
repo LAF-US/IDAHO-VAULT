@@ -1,0 +1,7 @@
+[2026-05-17 14:52:21 INFO chrome-native-host] Chrome native host starting (version 0.1.0)
+[2026-05-17 14:52:21 INFO chrome-native-host] Creating socket listener: /tmp/claude-mcp-browser-bridge-logan/26643.sock
+[2026-05-17 14:52:21 INFO chrome-native-host] Created socket directory: /tmp/claude-mcp-browser-bridge-logan
+[2026-05-17 14:52:21 INFO chrome-native-host] Socket created successfully at: /tmp/claude-mcp-browser-bridge-logan/26643.sock
+[2026-05-17 14:52:21 INFO chrome-native-host] Socket location: /tmp/claude-mcp-browser-bridge-logan/26643.sock
+[2026-05-17 14:52:21 INFO chrome-native-host] Socket server listening for connections
+[2026-05-17 14:52:21 INFO chrome-native-host] Entering main message loop

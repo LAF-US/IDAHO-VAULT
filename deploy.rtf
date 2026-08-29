@@ -1,0 +1,52 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 name: Deploy Quartz site to GitHub Pages\
+ \
+on:\
+  push:\
+    branches:\
+      - main\
+ \
+permissions:\
+  contents: read\
+  pages: write\
+  id-token: write\
+ \
+concurrency:\
+  group: "pages"\
+  cancel-in-progress: false\
+ \
+jobs:\
+  build:\
+    runs-on: ubuntu-22.04\
+    steps:\
+      - uses: actions/checkout@v3\
+        with:\
+          fetch-depth: 0 # Fetch all history for git info\
+      - uses: actions/setup-node@v3\
+        with:\
+          node-version: 20.15\
+      - name: Install Dependencies\
+        run: npm ci\
+      - name: Build Quartz\
+        run: npx quartz build\
+      - name: Upload artifact\
+        uses: actions/upload-pages-artifact@v2\
+        with:\
+          path: public\
+ \
+  deploy:\
+    needs: build\
+    environment:\
+      name: github-pages\
+      url: $\{\{ steps.deployment.outputs.page_url \}\}\
+    runs-on: ubuntu-latest\
+    steps:\
+      - name: Deploy to GitHub Pages\
+        id: deployment\
+        uses: actions/deploy-pages@v2}
