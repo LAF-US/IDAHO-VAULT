@@ -1,0 +1,119 @@
+﻿Type,Budget,Bill,Status,Description
+Maintenance,<i>State Board of Education</i>,☐,☐,2/13 — <b>5% base reduction</b><br>(Governor's 3% + JFAC's 2%)
+Maintenance,<i>Public Schools</i>,☐,☐,2/13 — <b>5% base reduction</b><br>(Governor's 3% + JFAC's 2%)
+Maintenance,<i>Public Safety</i>,☐,☐,2/13 — <b>5% base reduction</b><br>(Governor's 3% + JFAC's 2%)
+Maintenance,<i>Natural Resources</i>,☐,☐,2/13 — <b>5% base reduction</b><br>(Governor's 3% + JFAC's 2%)
+Maintenance,<i>Legislative Branch</i>,☐,☐,2/13 — <b>5% base reduction</b><br>(Governor's 3% + JFAC's 2%)
+Maintenance,<i>Judicial Branch</i>,☐,☐,2/13 — <b>5% base reduction</b><br>(Governor's 3% + JFAC's 2%)
+Maintenance,<i>Health & Human Services</i>,☐,☐,2/13 — <b>5% base reduction</b><br>(Governor's 3% + JFAC's 2%)
+Maintenance,<i>General Government</i>,☐,☐,2/13 — <b>5% base reduction</b><br>(Governor's 3% + JFAC's 2%)
+Maintenance,<i>Economic Development</i>,☐,☐,2/13 — <b>5% base reduction</b><br>(Governor's 3% + JFAC's 2%)
+Maintenance,<i>Constitutional Officers</i>,☐,☐,2/13 — <b>5% base reduction</b><br>(Governor's 3% + JFAC's 2%)
+Enhancement,<i>State Board of Education</i><br>Agricultural Research&Extension Service,☐,☐,☐
+Enhancement,<i>State Board of Education</i><br>Career Technical Education,☐,☐,☐
+Enhancement,<i>State Board of Education</i><br>Charter School Commission,☐,☐,☐
+Enhancement,<i>State Board of Education</i><br>College&Universities,☐,☐,☐
+Enhancement,<i>State Board of Education</i><br>Community Colleges,☐,☐,☐
+Enhancement,<i>State Board of Education</i><br>Department of Education,☐,☐,☐
+Enhancement,<i>State Board of Education</i><br>Health Education Programs,☐,☐,☐
+Enhancement,<i>State Board of Education</i><br>Idaho Public Television,☐,☐,☐
+Enhancement,<i>State Board of Education</i><br>Office of the <i>State Board of Education</i>,☐,☐,☐
+Enhancement,<i>State Board of Education</i><br>Special Programs,☐,☐,☐
+Enhancement,<i>State Board of Education</i><br>Vocational Rehabilitation,☐,☐,☐
+Enhancement,<i>Public Schools</i><br>Administrators,☐,☐,☐
+Enhancement,<i>Public Schools</i><br>Central Services,☐,☐,☐
+Enhancement,<i>Public Schools</i><br>Children's Programs,☐,☐,☐
+Enhancement,<i>Public Schools</i><br>Educational Services for the Deaf&the Blind,☐,☐,☐
+Enhancement,<i>Public Schools</i><br>Facilities,☐,☐,☐
+Enhancement,<i>Public Schools</i><br>Idaho Digital Learning Academy,☐,☐,☐
+Enhancement,<i>Public Schools</i><br>Operations,☐,☐,☐
+Enhancement,<i>Public Schools</i><br>Student Support,☐,☐,☐
+Enhancement,<i>Public Schools</i><br>Teachers,☐,☐,☐
+Enhancement,<i>Public Safety</i><br>Idaho State Police<br>Brand Inspecton,☐,☐,☐
+Enhancement,<i>Public Safety</i><br>Idaho State Police<br>Division of Idaho State Police,☐,☐,☐
+Enhancement,<i>Public Safety</i><br>Idaho State Police<br>POST Academy,☐,☐,☐
+Enhancement,<i>Public Safety</i><br>Idaho State Police<br>Racing Commission,☐,☐,☐
+Enhancement,<i>Public Safety</i><br>Department of Juvenile Corrections,☐,☐,☐
+Enhancement,<i>Public Safety</i><br>Department of Correction<br>Community Corrections,☐,☐,☐
+Enhancement,<i>Public Safety</i><br>Department of Correction<br>Community-Based SUDS Treatment,☐,☐,☐
+Enhancement,<i>Public Safety</i><br>Department of Correction<br>County&Out-of-State Placement,☐,☐,☐
+Enhancement,<i>Public Safety</i><br>Department of Correction<br>Management Services,☐,☐,☐
+Enhancement,<i>Public Safety</i><br>Department of Correction<br>Medical Services,☐,☐,☐
+Enhancement,<i>Public Safety</i><br>Department of Correction<br>State Prisons,☐,☐,☐
+Enhancement,<i>Natural Resources</i><br>Department of Water Resources,☐,☐,☐
+Enhancement,<i>Natural Resources</i><br>Department of Parks&Recreation,☐,☐,☐
+Enhancement,<i>Natural Resources</i><br>Department of Fish&Game,☐,☐,☐
+Enhancement,<i>Natural Resources</i><br>Department of Environmental Quality,☐,☐,☐
+Enhancement,<i>Natural Resources</i><br>Land Board<br>Department of Lands,☐,☐,☐
+Enhancement,<i>Natural Resources</i><br>Land Board<br>Endowment Fund Investment Board,☐,☐,☐
+Enhancement,<i>Legislative Branch</i><br>Legislative Services Office,☐,☐,☐
+Enhancement,<i>Legislative Branch</i><br>Legislative Technology,☐,☐,☐
+Enhancement,<i>Legislative Branch</i><br>Legislature,☐,☐,☐
+Enhancement,<i>Legislative Branch</i><br>Office of Performance Evaluations,☐,☐,☐
+Enhancement,<i>Judicial Branch</i><br>Court Operations,☐,☐,☐
+Enhancement,<i>Judicial Branch</i><br>Guardian Ad Litem Program,☐,☐,☐
+Enhancement,<i>Judicial Branch</i><br>Judicial Council,☐,☐,☐
+Enhancement,<i>Health & Human Services</i><br>State Independent Living Council,☐,☐,☐
+Enhancement,<i>Health & Human Services</i><br>Department of Health&Welfare<br>Child Welfare,☐,☐,☐
+Enhancement,<i>Health & Human Services</i><br>Department of Health&Welfare<br>Division of Medicaid,☐,☐,☐
+Enhancement,<i>Health & Human Services</i><br>Department of Health&Welfare<br>Division of Welfare,☐,☐,☐
+Enhancement,<i>Health & Human Services</i><br>Department of Health&Welfare<br>Independent Councils,☐,☐,☐
+Enhancement,<i>Health & Human Services</i><br>Department of Health&Welfare<br>Indirect Support Services,☐,☐,☐
+Enhancement,<i>Health & Human Services</i><br>Department of Health&Welfare<br>Licensing&Certification,☐,☐,☐
+Enhancement,<i>Health & Human Services</i><br>Department of Health&Welfare<br>Mental Health Services,☐,☐,☐
+Enhancement,<i>Health & Human Services</i><br>Department of Health&Welfare<br>Psychiatric Hospitalization,☐,☐,☐
+Enhancement,<i>Health & Human Services</i><br>Department of Health&Welfare<br>Public Health Services,☐,☐,☐
+Enhancement,<i>Health & Human Services</i><br>Department of Health&Welfare<br>Service Integration,☐,☐,☐
+Enhancement,<i>Health & Human Services</i><br>Department of Health&Welfare<br>Services for the Developmentally Disabled,☐,☐,☐
+Enhancement,<i>Health & Human Services</i><br>Department of Health&Welfare<br>Substance Abuse Treatment&Prevention,☐,☐,☐
+Enhancement,<i>General Government</i><br>Office of the Governor<br>Commission for the Blind&Visually Impaired,☐,☐,☐
+Enhancement,<i>General Government</i><br>Office of the Governor<br>Commission on Aging,☐,☐,☐
+Enhancement,<i>General Government</i><br>Office of the Governor<br>Commission on the Arts,☐,☐,☐
+Enhancement,<i>General Government</i><br>Office of the Governor<br>Division of Financial Management,☐,☐,☐
+Enhancement,<i>General Government</i><br>Office of the Governor<br>Division of Human Resources,☐,☐,☐
+Enhancement,<i>General Government</i><br>Office of the Governor<br>Military Division,☐,☐,☐
+Enhancement,<i>General Government</i><br>Office of the Governor<br>Office of Drug Policy,☐,☐,☐
+Enhancement,<i>General Government</i><br>Office of the Governor<br>Office of Energy&Mineral Resources,☐,☐,☐
+Enhancement,<i>General Government</i><br>Office of the Governor<br>Office of Information Technology Services,☐,☐,☐
+Enhancement,<i>General Government</i><br>Office of the Governor<br>Office of Species Conservation,☐,☐,☐
+Enhancement,<i>General Government</i><br>Office of the Governor<br>Public Employee Retirement System,☐,☐,☐
+Enhancement,<i>General Government</i><br>Office of the Governor<br>State Liquor Division,☐,☐,☐
+Enhancement,<i>General Government</i><br>Office of the Governor<br>STEM Action Center,☐,☐,☐
+Enhancement,<i>General Government</i><br>Office of the Governor<br>Wolf Depredation Control Board,☐,☐,☐
+Enhancement,<i>General Government</i><br>Office of the Governor<br>Workforce Development Council,☐,☐,☐
+Enhancement,<i>General Government</i><br>Department of Revenue&Taxation<br>Board of Tax Appeals,☐,☐,☐
+Enhancement,<i>General Government</i><br>Department of Revenue&Taxation<br>State Tax Commission,☐,☐,☐
+Enhancement,<i>General Government</i><br>Department of Administration<br>Capitol Commission,☐,☐,☐
+Enhancement,<i>General Government</i><br>Department of Administration,☐,☐,☐
+Enhancement,<i>General Government</i><br>Department of Administration<br>Permanent Building Fund,☐,☐,☐
+Enhancement,<i>Economic Development</i><br>Public Utilities Commission,☐,☐,☐
+Enhancement,<i>Economic Development</i><br>Industrial Commission,☐,☐,☐
+Enhancement,<i>Economic Development</i><br>Department of Transportation<br>Contract Construction&Right-of-Way Acquisition,☐,☐,☐
+Enhancement,<i>Economic Development</i><br>Department of Transportation<br>Highway Operations,☐,☐,☐
+Enhancement,<i>Economic Development</i><br>Department of Transportation<br>Motor Vehicles,☐,☐,☐
+Enhancement,<i>Economic Development</i><br>Department of Transportation<br>Transportation Services,☐,☐,☐
+Enhancement,<i>Economic Development</i><br>Department of Self-Governing Agencies<br>Commission for Libraries,☐,☐,☐
+Enhancement,<i>Economic Development</i><br>Department of Self-Governing Agencies<br>Commission of Pardons&Parole,☐,☐,☐
+Enhancement,<i>Economic Development</i><br>Department of Self-Governing Agencies<br>Commission on Hispanic Affairs,☐,☐,☐
+Enhancement,<i>Economic Development</i><br>Department of Self-Governing Agencies<br>Division of Occupational&Professional Licenses,☐,☐,☐
+Enhancement,<i>Economic Development</i><br>Department of Self-Governing Agencies<br>Division of Veterans Services,☐,☐,☐
+Enhancement,<i>Economic Development</i><br>Department of Self-Governing Agencies<br>Office of Administrative Hearings,☐,☐,☐
+Enhancement,<i>Economic Development</i><br>Department of Self-Governing Agencies<br>Office of Health&Social Services Ombudsman,☐,☐,☐
+Enhancement,<i>Economic Development</i><br>Department of Self-Governing Agencies<br>Office of the State Public Defender,☐,☐,☐
+Enhancement,<i>Economic Development</i><br>Department of Self-Governing Agencies<br>Public Defense Commission,☐,☐,☐
+Enhancement,<i>Economic Development</i><br>Department of Self-Governing Agencies<br>State Appellate Public Defender,☐,☐,☐
+Enhancement,<i>Economic Development</i><br>Department of Self-Governing Agencies<br>State Historical Society,☐,☐,☐
+Enhancement,<i>Economic Development</i><br>Department of Self-Governing Agencies<br>State Lottery,☐,☐,☐
+Enhancement,<i>Economic Development</i><br>Department of Labor,☐,☐,☐
+Enhancement,<i>Economic Development</i><br>Department of Insurance,☐,☐,☐
+Enhancement,<i>Economic Development</i><br>Department of Finance,☐,☐,☐
+Enhancement,<i>Economic Development</i><br>Department of Commerce,☐,☐,☐
+Enhancement,<i>Economic Development</i><br>Department of Agriculture,☐,☐,☐
+Enhancement,<i>Economic Development</i><br>Department of Agriculture<br>Soil&Water Conservation Commission,☐,☐,☐
+Enhancement,<i>Constitutional Officers</i><br>State Treasurer<br>Millennium Fund,☐,☐,☐
+Enhancement,<i>Constitutional Officers</i><br>State Treasurer,☐,☐,☐
+Enhancement,<i>Constitutional Officers</i><br>State Controller,☐,☐,☐
+Enhancement,<i>Constitutional Officers</i><br>Secretary of State,☐,☐,☐
+Enhancement,<i>Constitutional Officers</i><br>Lieutenant Governor,☐,☐,☐
+Enhancement,<i>Constitutional Officers</i><br>Governor,☐,☐,☐
+Enhancement,<i>Constitutional Officers</i><br>Attorney General,☐,☐,☐

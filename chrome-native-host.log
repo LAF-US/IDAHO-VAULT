@@ -1,0 +1,68 @@
+[2026-07-27 21:33:05 INFO chrome-native-host] Chrome native host starting (version 0.1.0)
+[2026-07-27 21:33:05 INFO chrome-native-host] Creating Windows named pipe: \\.\pipe\claude-mcp-browser-bridge-loganf
+[2026-07-27 21:33:05 INFO chrome-native-host] Named pipe created successfully
+[2026-07-27 21:33:05 INFO chrome-native-host] Pipe name: \\.\pipe\claude-mcp-browser-bridge-loganf
+[2026-07-27 21:33:05 INFO chrome-native-host] Entering main message loop
+[2026-07-27 21:33:05 INFO chrome-native-host] Socket server listening for connections
+[2026-07-28 16:33:51 INFO chrome-native-host] Chrome native host starting (version 0.1.0)
+[2026-07-28 16:33:51 INFO chrome-native-host] Creating Windows named pipe: \\.\pipe\claude-mcp-browser-bridge-loganf
+[2026-07-28 16:33:52 INFO chrome-native-host] Chrome native host starting (version 0.1.0)
+[2026-07-28 16:33:52 INFO chrome-native-host] Creating Windows named pipe: \\.\pipe\claude-mcp-browser-bridge-loganf
+[2026-07-29 15:23:18 INFO chrome-native-host] Chrome disconnected (EOF received)
+[2026-07-29 15:23:18 INFO chrome-native-host] Shutting down chrome native host
+[2026-07-29 15:23:18 INFO chrome-native-host] Chrome native host stopped
+[2026-07-30 10:37:16 INFO chrome-native-host] Chrome native host starting (version 0.1.0)
+[2026-07-30 10:37:16 INFO chrome-native-host] Creating Windows named pipe: \\.\pipe\claude-mcp-browser-bridge-loganf
+[2026-07-30 10:37:16 INFO chrome-native-host] Named pipe created successfully
+[2026-07-30 10:37:16 INFO chrome-native-host] Pipe name: \\.\pipe\claude-mcp-browser-bridge-loganf
+[2026-07-30 10:37:16 INFO chrome-native-host] Entering main message loop
+[2026-07-30 10:37:16 INFO chrome-native-host] Socket server listening for connections
+[2026-07-31 16:01:44 INFO chrome-native-host] Chrome native host starting (version 0.1.0)
+[2026-07-31 16:01:44 INFO chrome-native-host] Creating Windows named pipe: \\.\pipe\claude-mcp-browser-bridge-loganf
+[2026-07-31 16:11:38 INFO chrome-native-host] Chrome native host starting (version 0.1.0)
+[2026-07-31 16:11:38 INFO chrome-native-host] Creating Windows named pipe: \\.\pipe\claude-mcp-browser-bridge-loganf
+[2026-08-03 10:30:43 INFO chrome-native-host] Chrome native host starting (version 0.1.0)
+[2026-08-03 10:30:43 INFO chrome-native-host] Creating Windows named pipe: \\.\pipe\claude-mcp-browser-bridge-loganf
+[2026-08-03 10:30:43 INFO chrome-native-host] Named pipe created successfully
+[2026-08-03 10:30:43 INFO chrome-native-host] Pipe name: \\.\pipe\claude-mcp-browser-bridge-loganf
+[2026-08-03 10:30:43 INFO chrome-native-host] Entering main message loop
+[2026-08-03 10:30:43 INFO chrome-native-host] Socket server listening for connections
+[2026-08-03 10:39:53 INFO chrome-native-host] Chrome native host starting (version 0.1.0)
+[2026-08-03 10:39:53 INFO chrome-native-host] Creating Windows named pipe: \\.\pipe\claude-mcp-browser-bridge-loganf
+[2026-08-03 14:32:46 INFO chrome-native-host] Chrome disconnected (EOF received)
+[2026-08-03 14:32:46 INFO chrome-native-host] Shutting down chrome native host
+[2026-08-03 14:32:46 INFO chrome-native-host] Chrome native host stopped
+[2026-08-03 14:53:38 INFO chrome-native-host] Chrome native host starting (version 0.1.0)
+[2026-08-03 14:53:38 INFO chrome-native-host] Creating Windows named pipe: \\.\pipe\claude-mcp-browser-bridge-loganf
+[2026-08-03 14:53:38 INFO chrome-native-host] Named pipe created successfully
+[2026-08-03 14:53:38 INFO chrome-native-host] Pipe name: \\.\pipe\claude-mcp-browser-bridge-loganf
+[2026-08-03 14:53:38 INFO chrome-native-host] Entering main message loop
+[2026-08-03 14:53:38 INFO chrome-native-host] Socket server listening for connections
+[2026-08-03 14:55:59 INFO chrome-native-host] Chrome native host starting (version 0.1.0)
+[2026-08-03 14:55:59 INFO chrome-native-host] Creating Windows named pipe: \\.\pipe\claude-mcp-browser-bridge-loganf
+[2026-08-03 16:47:14 INFO chrome-native-host] Chrome native host starting (version 0.1.0)
+[2026-08-03 16:47:15 INFO chrome-native-host] Creating Windows named pipe: \\.\pipe\claude-mcp-browser-bridge-loganf
+[2026-08-03 19:29:19 INFO chrome-native-host] Chrome native host starting (version 0.1.0)
+[2026-08-03 19:29:19 INFO chrome-native-host] Creating Windows named pipe: \\.\pipe\claude-mcp-browser-bridge-loganf
+[2026-08-04 12:00:26 INFO chrome-native-host] Chrome native host starting (version 0.1.0)
+[2026-08-04 12:00:26 INFO chrome-native-host] Creating Windows named pipe: \\.\pipe\claude-mcp-browser-bridge-loganf
+[2026-08-04 16:31:28 INFO chrome-native-host] Chrome native host starting (version 0.1.0)
+[2026-08-04 16:31:28 INFO chrome-native-host] Creating Windows named pipe: \\.\pipe\claude-mcp-browser-bridge-loganf
+[2026-08-04 19:57:43 INFO chrome-native-host] Chrome native host starting (version 0.1.0)
+[2026-08-04 19:57:43 INFO chrome-native-host] Creating Windows named pipe: \\.\pipe\claude-mcp-browser-bridge-loganf
+[2026-08-04 20:53:21 INFO chrome-native-host] Chrome disconnected (EOF received)
+[2026-08-04 20:53:21 INFO chrome-native-host] Shutting down chrome native host
+[2026-08-04 20:53:21 INFO chrome-native-host] Chrome native host stopped
+[2026-08-04 20:54:07 INFO chrome-native-host] Chrome native host starting (version 0.1.0)
+[2026-08-04 20:54:07 INFO chrome-native-host] Creating Windows named pipe: \\.\pipe\claude-mcp-browser-bridge-loganf
+[2026-08-04 20:54:07 INFO chrome-native-host] Named pipe created successfully
+[2026-08-04 20:54:07 INFO chrome-native-host] Pipe name: \\.\pipe\claude-mcp-browser-bridge-loganf
+[2026-08-04 20:54:07 INFO chrome-native-host] Entering main message loop
+[2026-08-04 20:54:07 INFO chrome-native-host] Socket server listening for connections
+[2026-08-04 21:00:48 INFO chrome-native-host] Chrome native host starting (version 0.1.0)
+[2026-08-04 21:00:48 INFO chrome-native-host] Creating Windows named pipe: \\.\pipe\claude-mcp-browser-bridge-loganf
+[2026-08-05 11:29:09 INFO chrome-native-host] Chrome native host starting (version 0.1.0)
+[2026-08-05 11:29:09 INFO chrome-native-host] Creating Windows named pipe: \\.\pipe\claude-mcp-browser-bridge-loganf
+[2026-08-07 02:53:45 INFO chrome-native-host] Chrome disconnected (EOF received)
+[2026-08-07 02:53:45 INFO chrome-native-host] Shutting down chrome native host
+[2026-08-07 02:53:45 INFO chrome-native-host] Chrome native host stopped

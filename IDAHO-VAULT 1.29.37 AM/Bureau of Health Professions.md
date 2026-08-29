@@ -1,0 +1,32 @@
+---
+related:
+- Board of Dentistry
+- Board of Medicine
+- Board of Nursing
+- Board of Pharmacy
+- Board of Veterinary Medicine
+- Nicki Chopski
+authority: LOGAN
+---
+### **Bureau of Health Professions** - Nicki Chopski 
+Nicki Chopski
+• Board of Medicine
+• Board of Nursing
+• Board of Pharmacy
+Jan Arrasmith
+• Board of Denturity
+• Occupational Therapy Licensure Board
+• Board of Optometry
+• Physical Therapy Licensure Board
+• Board of Podiatry
+• Board of Psychologist Examiners
+• Speech, Hearing, and Communication Services Licensure Board
+Stephanie Lotridge
+• Board of Athletic Trainers
+• State Board of Dentistry
+• Dietetic Licensure Board
+• Board of Naturopathic Medical Doctors
+• Respiratory Therapy Licensure Board
+• Board of Veterinary Medicine
+Russell Barron
+• Board of Naturopathic Health Care

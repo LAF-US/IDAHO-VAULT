@@ -1,0 +1,24 @@
+=== best pre-spill parent per remaining April root ===
+ROOT 046d6058b
+  8514 prespill/dependabot-npm_and_yarn-dot-antigravity-extensions-ms-edgedevtools.vscode-edge-devtools-2.1.10-universal-npm_and_yarn-209087bb4f 0d9a8a2e1b73cb274ff60f8715064e7fe0aff9ad
+  8515 prespill/dependabot-uv-uv-2fce4a7a35 a4389bdfe70c1eeb6ac3d346e7b9224d68bf34e5
+  8515 prespill/ingest-2026-04-22T131021Z 49d8f8949078166e0f39b049fcd15d1347401ed8
+ROOT c765431fc
+  8874 prespill/bot-daily-rollover-2026-04-20 3f78ee924885fba56d1d2c4c99f4be0af8b1ed06
+  8950 prespill/ingest-2026-04-19T124314Z a5b0ec909a6877da931b5a6cf8c40cf52bdefa73
+  9243 prespill/bot-daily-rollover-2026-04-18 9cc05e61011294224da55f4a8d9f917eba940365
+ROOT 61b78c295
+  8852 prespill/bot-daily-rollover-2026-04-20 3f78ee924885fba56d1d2c4c99f4be0af8b1ed06
+  8928 prespill/ingest-2026-04-19T124314Z a5b0ec909a6877da931b5a6cf8c40cf52bdefa73
+  9221 prespill/bot-daily-rollover-2026-04-18 9cc05e61011294224da55f4a8d9f917eba940365
+ROOT 973bbc2bc
+  8516 prespill/dependabot-npm_and_yarn-dot-antigravity-extensions-ms-edgedevtools.vscode-edge-devtools-2.1.10-universal-npm_and_yarn-209087bb4f 0d9a8a2e1b73cb274ff60f8715064e7fe0aff9ad
+  8517 prespill/dependabot-uv-uv-2fce4a7a35 a4389bdfe70c1eeb6ac3d346e7b9224d68bf34e5
+  8517 prespill/ingest-2026-04-22T131021Z 49d8f8949078166e0f39b049fcd15d1347401ed8
+ROOT 3d14c5a80
+  8104 prespill/dependabot-npm_and_yarn-dot-antigravity-extensions-ms-edgedevtools.vscode-edge-devtools-2.1.10-universal-npm_and_yarn-209087bb4f 0d9a8a2e1b73cb274ff60f8715064e7fe0aff9ad
+  8104 prespill/dependabot-uv-uv-2fce4a7a35 a4389bdfe70c1eeb6ac3d346e7b9224d68bf34e5
+  8105 prespill/bot-daily-rollover-2026-04-22 90994f542c67621ec57b50347f24a6283a4d4c54
+DONE
+
+[exited with code 0]

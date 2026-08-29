@@ -18,6 +18,7 @@ SKIP_PREFIXES = ("._",)
 # (macOS bundle, Xcode container, Premiere template). Its internals are never
 # flatten candidates -- moving one file out breaks the whole package. This is
 # a class rule on the directory name; it enumerates no paths.
+GIT_DIR = ".git"
 PACKAGE_SUFFIXES = (
     ".app", ".framework", ".bundle", ".plugin", ".kext", ".appex", ".xpc",
     ".xcodeproj", ".xcworkspace", ".playground", ".mogrt", ".lproj",
@@ -48,10 +49,18 @@ def is_package_dir(name: str) -> bool:
 
 
 def inside_package(rel_within_top: str, top_level: str) -> bool:
-    """True if the file lives under any package directory, including the top-level dir itself."""
-    if is_package_dir(top_level):
+    """True if the file lives under any package directory or nested git repo.
+
+    A nested ``.git`` is another repository's internals, not vault content;
+    hoisting its HEAD/config/packed-refs to the root collides with this repo's
+    own names. Class rule on the directory name; it enumerates no paths.
+    """
+    if is_package_dir(top_level) or top_level == GIT_DIR:
         return True
-    return any(is_package_dir(part) for part in rel_within_top.split("/")[:-1])
+    return any(
+        is_package_dir(part) or part == GIT_DIR
+        for part in rel_within_top.split("/")[:-1]
+    )
 
 
 def slugify(value: str) -> str:

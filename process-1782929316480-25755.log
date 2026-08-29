@@ -1,0 +1,26 @@
+2026-07-01T18:08:36.513Z [INFO] Shell completions: no supported shell detected, skipping
+2026-07-01T18:08:36.515Z [INFO] Starting CLI in server mode (stdio)
+2026-07-01T18:08:36.517Z [INFO] Starting CLI in stdio mode (Rust JSON-RPC engine)
+2026-07-01T18:08:36.979Z [INFO] CLI server ready (stdio mode, Rust JSON-RPC engine)
+2026-07-01T18:08:36.981Z [INFO] Server started, waiting for requests
+2026-07-01T18:08:37.914Z [INFO] Workspace initialized: e213a7c2-4c76-4a7a-b299-0c7cd1fe1cca (checkpoints: 0)
+2026-07-01T18:08:37.965Z [INFO] Created session: e213a7c2-4c76-4a7a-b299-0c7cd1fe1cca
+2026-07-01T18:08:38.936Z [INFO]  
+2026-07-01T18:08:38.937Z [INFO] --- Start of group: configured settings: ---
+2026-07-01T18:08:38.938Z [INFO] --- End of group ---
+2026-07-01T18:08:39.020Z [INFO]  
+2026-07-01T18:08:39.020Z [INFO] --- Start of group: configured settings: ---
+2026-07-01T18:08:39.023Z [INFO] --- End of group ---
+2026-07-01T18:08:39.073Z [INFO] --- Start of group: Completion request configuration:  ---
+2026-07-01T18:08:39.075Z [INFO] --- End of group ---
+2026-07-01T18:08:39.120Z [INFO] CompactionProcessor: Utilization 12.2% (33232/272000 tokens) below threshold 80%
+2026-07-01T18:08:39.217Z [INFO] --- Start of group: Sending request to the AI model ---
+2026-07-01T18:09:59.200Z [INFO] --- End of group ---
+2026-07-01T18:09:59.212Z [INFO] Closing session e213a7c2-4c76-4a7a-b299-0c7cd1fe1cca
+2026-07-01T18:09:59.277Z [INFO] Destroyed session: e213a7c2-4c76-4a7a-b299-0c7cd1fe1cca
+2026-07-01T18:09:59.374Z [INFO] Closing session e213a7c2-4c76-4a7a-b299-0c7cd1fe1cca
+2026-07-01T18:09:59.374Z [INFO] Destroyed session: e213a7c2-4c76-4a7a-b299-0c7cd1fe1cca
+2026-07-01T18:09:59.382Z [INFO] Preparing runtime for graceful shutdown
+2026-07-01T18:09:59.388Z [INFO] Starting graceful shutdown of CLI server
+2026-07-01T18:09:59.389Z [INFO] Destroying 0 active sessions
+2026-07-01T18:09:59.397Z [INFO] CLI server prepared for shutdown; transport remains open for RPC response

@@ -1,0 +1,26 @@
+2026-07-01T20:51:20.341Z [INFO] Shell completions: no supported shell detected, skipping
+2026-07-01T20:51:20.355Z [INFO] Starting CLI in server mode (stdio)
+2026-07-01T20:51:20.365Z [INFO] Starting CLI in stdio mode (Rust JSON-RPC engine)
+2026-07-01T20:51:21.590Z [INFO] CLI server ready (stdio mode, Rust JSON-RPC engine)
+2026-07-01T20:51:21.592Z [INFO] Server started, waiting for requests
+2026-07-01T20:51:22.486Z [INFO] Workspace initialized: 4992f8bb-193f-4ff1-8262-0e337ded3f97 (checkpoints: 0)
+2026-07-01T20:51:22.690Z [INFO] Created session: 4992f8bb-193f-4ff1-8262-0e337ded3f97
+2026-07-01T20:51:23.837Z [INFO]  
+2026-07-01T20:51:23.838Z [INFO] --- Start of group: configured settings: ---
+2026-07-01T20:51:23.840Z [INFO] --- End of group ---
+2026-07-01T20:51:24.079Z [INFO]  
+2026-07-01T20:51:24.081Z [INFO] --- Start of group: configured settings: ---
+2026-07-01T20:51:24.083Z [INFO] --- End of group ---
+2026-07-01T20:51:24.121Z [INFO] --- Start of group: Completion request configuration:  ---
+2026-07-01T20:51:24.122Z [INFO] --- End of group ---
+2026-07-01T20:51:24.504Z [INFO] CompactionProcessor: Utilization 26.6% (72368/272000 tokens) below threshold 80%
+2026-07-01T20:51:25.014Z [INFO] --- Start of group: Sending request to the AI model ---
+2026-07-01T20:51:32.373Z [INFO] --- End of group ---
+2026-07-01T20:51:32.399Z [INFO] Closing session 4992f8bb-193f-4ff1-8262-0e337ded3f97
+2026-07-01T20:51:32.829Z [INFO] Destroyed session: 4992f8bb-193f-4ff1-8262-0e337ded3f97
+2026-07-01T20:51:32.836Z [INFO] Closing session 4992f8bb-193f-4ff1-8262-0e337ded3f97
+2026-07-01T20:51:32.837Z [INFO] Destroyed session: 4992f8bb-193f-4ff1-8262-0e337ded3f97
+2026-07-01T20:51:32.874Z [INFO] Preparing runtime for graceful shutdown
+2026-07-01T20:51:32.875Z [INFO] Starting graceful shutdown of CLI server
+2026-07-01T20:51:32.875Z [INFO] Destroying 0 active sessions
+2026-07-01T20:51:32.875Z [INFO] CLI server prepared for shutdown; transport remains open for RPC response

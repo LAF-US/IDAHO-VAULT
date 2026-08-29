@@ -1,0 +1,14 @@
+# This file should be used when building against this OpenSSL build, and should never be installed
+prefix=/private/tmp/opensslA3-20260708-70880-7kv84/openssl-3.6.3
+exec_prefix=${prefix}
+libdir=${exec_prefix}
+includedir=${prefix}/include ${prefix}/./include 
+enginesdir=${libdir}/engines
+modulesdir=${libdir}/providers
+
+Name: OpenSSL-libcrypto
+Description: OpenSSL cryptography library
+Version: 3.6.3
+Libs: -L${libdir} -lcrypto
+Libs.private: 
+Cflags: -I${prefix}/include  -I${prefix}/./include 

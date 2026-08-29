@@ -1,0 +1,7 @@
+[Hotkey] 2026-05-16 20:48:49 [info] No accessibility permissions, using basic hotkey detection
+[Notifications] 2026-05-18 00:15:50 [error] Authorization error: Error Domain=UNErrorDomain Code=1 "Notifications are not allowed for this application" UserInfo={NSLocalizedDescription=Notifications are not allowed for this application}
+[Notifications] 2026-05-18 00:15:50 [info] Authorization granted: false
+[Fonts] 2026-05-18 16:10:29 [info] Loaded 4/4 fonts from /Applications/Claude.app/Contents/Resources/fonts
+[Hotkey] 2026-05-21 13:11:24 [info] No accessibility permissions, using basic hotkey detection
+[Notifications] 2026-05-21 22:50:45 [error] Authorization error: Error Domain=UNErrorDomain Code=1 "Notifications are not allowed for this application" UserInfo={NSLocalizedDescription=Notifications are not allowed for this application}
+[Notifications] 2026-05-21 22:50:45 [info] Authorization granted: false

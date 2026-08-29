@@ -1,0 +1,41 @@
+---
+related:
+- Britt Raybould
+- Chris Allgood
+- Heather Scott
+- Ilana Rubel
+- John Vander Woude
+- Jordan Redman
+- Josh Wheeler
+- Julianne Young
+- Lauren Necochea
+- Matt Bundy
+- Mickelsen
+- Rod Furniss
+- Stephanie Mickelsen
+- Sue Chew
+- Tina Lambert
+- Tony Wisniewski
+- Vito Barbieri
+- Wendy Horman
+authority: LOGAN
+---
+# Roster
+## 2023 Members
+- Vito Barbieri Chair
+- Rod Furniss Vice chair
+- John Vander Woude
+- Wendy Horman
+- Heather Scott
+- Julianne Young
+- Tony Wisniewski
+- Britt Raybould
+- Chris Allgood
+- Matt Bundy
+- Tina Lambert
+- Stephanie Mickelsen
+- Jordan Redman
+- Josh Wheeler
+- Sue Chew
+- Lauren Necochea
+- Ilana Rubel
