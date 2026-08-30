@@ -89,10 +89,10 @@ jobs:
         shell: bash
         run: |
           set -eo pipefail  # a failed git diff must fail the step, not feed the checker empty stdin
-          INTEGRITY_CHECKER="trusted-main/.github/scripts/check_python_integrity.py"
+          INTEGRITY_CHECKER="trusted-main/scripts_scripts/check_python_integrity.py"
           if [ ! -f "$INTEGRITY_CHECKER" ]; then
             echo "::notice::Trusted Python integrity helper not present on base yet; using candidate helper for bootstrap."
-            INTEGRITY_CHECKER=".github/scripts/check_python_integrity.py"
+            INTEGRITY_CHECKER="scripts_scripts/check_python_integrity.py"
           fi
 
           # Same changed-vs-tree split as the portability check above: a PR only
