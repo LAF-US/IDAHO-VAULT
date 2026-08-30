@@ -97,11 +97,24 @@ while IFS=' ' read -r local_ref local_oid remote_ref remote_oid; do
   # non-viable); filesystem mode scans the CHANGED files' tip content in ~1s
   # and still verifies against provider APIs. gitleaks already covers the full
   # history, so a secret that appeared then vanished mid-range is still caught.
+  #
+  # COVERAGE LIMIT, know this before trusting it: the file list comes from a
+  # git range but the scan reads the WORKING TREE, so the two only agree when
+  # the pushed ref is the current checkout. Paths in the range that no longer
+  # exist on disk are filtered out below - without that filter
+  # --fail-on-scan-errors blocked every push of a non-HEAD ref (renames,
+  # subset refspecs, old SHAs) on missing paths, which is checkout drift and
+  # not a finding. Second limit, unfixed: an ancestry weld's tree equals its
+  # first parent's, so its diff is EMPTY and trufflehog receives zero paths
+  # and passes trivially. On exactly the pushes carrying the most history,
+  # gitleaks is the only gate doing work. Do not read a trufflehog pass on a
+  # weld as coverage.
   # We gate on verified (live) + unknown (verification errored / offline = fail
   # closed). Findings are detected by emitted JSON (not exit code);
   # --fail-on-scan-errors makes only genuine scan errors non-zero, which we
   # treat as fail-closed. -z/xargs -0 keeps space/unicode paths safe.
   th_out=$(git diff -z --name-only --diff-filter=ACMRT "$base" "$local_oid" 2>/dev/null \
+    | xargs -0 -r sh -c 'for p; do [ -f "$p" ] && printf "%s\0" "$p"; done' sh \
     | xargs -0 -r trufflehog filesystem --results=verified,unknown --json \
         --no-update --fail-on-scan-errors 2>/dev/null)
   th_rc=$?
