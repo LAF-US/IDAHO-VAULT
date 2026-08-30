@@ -17,10 +17,11 @@ related:
   - QuarantineLife
 ---
 
-Casual weekend reading 📖 #QuarantineLife 
+Casual weekend reading 📖 #QuarantineLife
 <https://t.co/k2qElXIyWd>
 
 ## Links
+
 - <https://www.businessinsider.com/regions-of-united-states-2018-5>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1249572109547794432)

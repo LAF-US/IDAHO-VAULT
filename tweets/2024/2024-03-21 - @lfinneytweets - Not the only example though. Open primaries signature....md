@@ -17,10 +17,11 @@ related:
   - lfinneytweets
 ---
 
-@tucker_id Not the only example though. Open primaries signature gatherers got a shout out too 
+@tucker_id Not the only example though. Open primaries signature gatherers got a shout out too
 <https://t.co/QiWq46fsi4>
 
 ## Links
+
 - <https://blog.idahoreports.idahoptv.org/2024/02/06/senate-passes-electioneering-boundary-bill/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

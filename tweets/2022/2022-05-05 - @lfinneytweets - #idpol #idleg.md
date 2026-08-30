@@ -22,6 +22,7 @@ related:
 \#idpol #idleg <https://t.co/YzT1mnFrQa>
 
 ## Links
+
 - <https://x.com/CdAPressNews/status/1521908057990733825>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1522265850979373069)

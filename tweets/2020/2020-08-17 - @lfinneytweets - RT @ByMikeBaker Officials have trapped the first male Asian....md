@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @ByMikeBaker: Officials have trapped the first male Asian giant hornet in the United States. 
+RT @ByMikeBaker: Officials have trapped the first male Asian giant hornet in the United States.
 
 It was captured in the area of Custer, Wa…
 

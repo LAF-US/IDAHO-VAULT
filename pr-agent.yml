@@ -139,7 +139,7 @@ jobs:
           # service-account token would be handed to third-party code that has
           # no use for it. Blanked here only; the guard and load steps above
           # still read the job-level value.
-          OP_SERVICE_ACCOUNT_TOKEN: ''
+          OP_SERVICE_ACCOUNT_TOKEN: ""
           # `OPENAI_KEY` — single underscore. `run_action` in
           # pr_agent/servers/github_action_runner.py:87 reads
           # `OPENAI_KEY` or `OPENAI.KEY` and nothing else; the nested

@@ -28,6 +28,7 @@ related:
 Thank you @IDHouseCaucus @DustinManwaring and @idahodlcc @ned4idaho for making time to join us this morning! It was a robust discussion y'all, and just one part of a great @IdahoReports episode tonight. #idpol #idleg <https://t.co/32R4VLuZiR>
 
 ## Links
+
 - <https://x.com/IdahoReports/status/1639406807398637569>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1639423971505618945)

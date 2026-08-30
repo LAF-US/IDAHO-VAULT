@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-House committee meetings announced: 
--Appropriations (JFAC) @ 1:15pm 
--Business @ 1:30pm 
+House committee meetings announced:
+-Appropriations (JFAC) @ 1:15pm
+-Business @ 1:30pm
 -State Affairs @ after Business
 -Judiciary @ tomorrow after morning floor recess
 

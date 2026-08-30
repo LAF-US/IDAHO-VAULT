@@ -21,6 +21,7 @@ related:
 @tucker_id @brandendurst <https://t.co/HiXE52R3MW>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/GNkRBhcbUAAtRl6.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

@@ -22,6 +22,7 @@ related:
 RT @BetsyZRussell: Eye on Boise: Politico: Labrador leaves D.C. as 'the angriest man in Congress' <https://t.co/35t2qXrsg2> #idpol <https://t.…>
 
 ## Links
+
 - <https://goo.gl/e4hZfb>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1007859907620581377)

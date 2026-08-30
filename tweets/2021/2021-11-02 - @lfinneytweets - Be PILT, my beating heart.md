@@ -17,6 +17,7 @@ related:
 Be PILT, my beating heart <https://t.co/BgJ8ChSOR5>
 
 ## Links
+
 - <https://x.com/KeithRidler/status/1455276746182303752>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1455625524835852290)

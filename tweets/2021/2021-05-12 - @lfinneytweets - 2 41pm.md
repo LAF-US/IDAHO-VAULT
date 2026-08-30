@@ -17,6 +17,7 @@ related:
 2:41pm <https://t.co/aGZJuAiE8d>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/E1NxDMwUYAIIJni.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1392581046005211136)

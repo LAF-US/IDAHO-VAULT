@@ -21,6 +21,7 @@ related:
 RT @Report4America: Complex legal issues swirl in Klamath water debate: <https://t.co/z93rJ6cbVP> via @alexpshorts @HeraldandNews/@Report4Ame…
 
 ## Links
+
 - <https://bit.ly/3cm4Kw5>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1401675803444748289)

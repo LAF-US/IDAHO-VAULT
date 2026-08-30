@@ -19,6 +19,7 @@ related:
 RT @IdahoReports: Committee prints bill to prohibit state from funding non-governmental events  <https://t.co/LSoyu2gmHE>
 
 ## Links
+
 - <https://blog.idahoreports.idahoptv.org/2023/01/19/committee-prints-bill-to-prohibit-state-from-funding-non-governmental-events/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1616307342659969026)

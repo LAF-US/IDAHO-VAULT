@@ -19,6 +19,7 @@ related:
 RT @IdahoPubRadio: University of Idaho announces summer graduation ceremony for August 1. Update: <https://t.co/9YxJoXcmSm> <https://t.co/poMS…>
 
 ## Links
+
 - <https://www.facebook.com/614836341895311/posts/2979590338753221/?d=n>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1253128236508172288)

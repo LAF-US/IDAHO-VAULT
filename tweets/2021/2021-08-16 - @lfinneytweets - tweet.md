@@ -17,6 +17,7 @@ related:
 <https://t.co/lLMFIpELx3> <https://t.co/9baIvw1nQP>
 
 ## Links
+
 - <https://www.snopes.com/fact-check/cnn-praise-taliban-masks/>
 - <https://x.com/EdForIdaho/status/1427309027831078912>
 

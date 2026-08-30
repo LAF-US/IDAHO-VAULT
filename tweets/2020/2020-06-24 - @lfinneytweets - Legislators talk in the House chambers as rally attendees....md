@@ -18,6 +18,7 @@ related:
 Legislators talk in the House chambers as rally attendees enter the gallery. <https://t.co/ayT2K9ARGC>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/EbQDMPEXQAAYVco.jpg)
 - ![alt text needed](https://pbs.twimg.com/media/EbQDMPDWAAAF_a3.jpg)
 

@@ -20,6 +20,7 @@ related:
 @sidnuncio @davlinnews <https://t.co/OMWCcoMu0c>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/E54kILcVUAEwyN4.jpg)
 
 *In reply to [@sidnuncio](https://twitter.com/sidnuncio)*

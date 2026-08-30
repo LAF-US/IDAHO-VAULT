@@ -21,6 +21,7 @@ related:
 @IDJoe4Congress @IdahoReports @IdahoGOP The letter linked on the Idaho Debates webpage (<https://t.co/SVPD2VVg04>) was sent to all candidates appearing on the ballot in contested statewide and congressional races (<https://t.co/fm8ojToWqU>). It details evaluation criteria, which candidates had to submit materials to prove.
 
 ## Links
+
 - <https://www.idahoptv.org/shows/idahodebates>
 - <https://sos.idaho.gov/elections/data/Candidate_Filing_Report.pdf>
 

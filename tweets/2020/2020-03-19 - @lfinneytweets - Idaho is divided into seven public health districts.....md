@@ -22,9 +22,11 @@ related:
 Idaho is divided into seven public health districts. @GovernorLittle's administration recommends contacting local health districts for guidance before closing schools and businesses, or if you need more #IdahoCovid19 information than what's available on <https://t.co/nxIWTF7aiy> <https://t.co/BWHZLvsNtW>
 
 ## Links
+
 - <http://coronavirus.idaho.gov>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/ETfneIXUwAAqvGy.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1240714730311782400)

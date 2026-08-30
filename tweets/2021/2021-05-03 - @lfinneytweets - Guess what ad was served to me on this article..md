@@ -21,6 +21,7 @@ related:
 @madisonhardy05 @CdAPressNews Guess what ad was served to me on this article. <https://t.co/vmhE4jGGk1>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/E0e9OAHVIAEuhNv.jpg)
 
 *In reply to [@madisonhardy05](https://twitter.com/madisonhardy05)*

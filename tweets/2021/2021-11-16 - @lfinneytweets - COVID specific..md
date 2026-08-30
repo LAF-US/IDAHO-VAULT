@@ -17,10 +17,11 @@ related:
   - lfinneytweets
 ---
 
-@slfisher @SeanColetti COVID specific. 
+@slfisher @SeanColetti COVID specific.
 <https://t.co/BXRyzenSJD>
 
 ## Links
+
 - <https://legislature.idaho.gov/sessioninfo/2021/legislation/H0419/>
 
 *In reply to [@slfisher](https://twitter.com/slfisher)*

@@ -21,6 +21,7 @@ related:
 @currevive @GabeOsterhout <https://t.co/0gjFjcnnIN>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/GOOIE2JbAAEm5uV.jpg)
 
 *In reply to [@currevive](https://twitter.com/currevive)*

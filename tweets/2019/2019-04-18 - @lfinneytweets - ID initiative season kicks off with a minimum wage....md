@@ -20,6 +20,7 @@ related:
 ID initiative season kicks off with a minimum wage increase, but the SOS press release doesn't say by how much? #idpol <https://t.co/2C6Ot4irJV>
 
 ## Links
+
 - <https://x.com/IDSecOfState/status/1118646013101633536>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1118727827786854406)

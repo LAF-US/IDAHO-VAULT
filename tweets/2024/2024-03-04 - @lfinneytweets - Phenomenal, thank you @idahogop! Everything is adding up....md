@@ -21,7 +21,7 @@ related:
   - idpol
 ---
 
-@IdahoGOP Phenomenal, thank you @idahogop! 
+@IdahoGOP Phenomenal, thank you @idahogop!
 Everything is adding up properly now. (With 22 Trump and 2 Haley from Howe, plus finding my typo with a 22 as a 2, all is well.) Map to come, maybe! #idpol
 
 *In reply to [@IdahoGOP](https://twitter.com/IdahoGOP)*

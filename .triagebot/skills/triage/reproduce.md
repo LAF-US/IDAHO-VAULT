@@ -41,6 +41,7 @@ Skip if the issue is not a bug report (feature requests, suggestions, discussion
 ### Missing Details (`missing-details`)
 
 Skip if the issue is missing:
+
 - A valid reproduction (URL, steps, or specific file references)
 - A description of the expected result
 
@@ -72,22 +73,26 @@ cd <triageDir>
 For IDAHO-VAULT, bugs typically fall into these categories:
 
 ### Content/Link Bugs
+
 - Navigate to the mentioned files or paths
 - Check if the described problem exists
 - Verify the expected behavior should work
 - Test links between documents
 
 ### Metadata Bugs
+
 - Check file headers, frontmatter, or metadata files
 - Verify consistency across the repository
 - Look for missing or incorrect metadata
 
 ### Workflow Bugs
+
 - Check the `.github/workflows/` directory
 - Look at recent workflow runs
 - Attempt to trigger the failing workflow
 
 ### Organization Bugs
+
 - Check directory structure consistency
 - Look for duplicate files
 - Verify naming conventions

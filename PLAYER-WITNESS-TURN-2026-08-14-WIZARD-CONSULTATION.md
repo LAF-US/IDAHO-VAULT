@@ -25,7 +25,7 @@ All three readers recognized **nested containment**, rather than a single prison
 They also converged on the central warning: **“open it” is not a neutral instruction.** An opening crosses multiple layers. It may alter the shared vessel’s occupants, it may trigger the Quiet Box’s substitution cost, and it may occur while the cold condition is being weakened. The useful Court posture is therefore not an immediate choice of who should emerge. It is a prior inquiry into custody, authority, state, and layer-specific consequence.
 
 | Layer | Consensus reading | Evidence status |
-|---|---|---|
+| --- | --- | --- |
 | *Kerr* vessel | Cointerment means a transition concerning one occupant may not be cleanly separable from the other. | Game-meta analogy informed by Kerr’s vessel/co-containment sequence. |
 | *Mull* Quiet Box | The holding condition restricts perception and makes release a transfer with a replacement cost. | Secondary-source description of the Quiet Box; game-meta placement supplied by the Architect. |
 | Cold | The outer condition suppresses djinn fire and buys time; it does not decide the matter. | Later Kerr plot point currently secondary-verified; game-meta application supplied by the Architect. |
@@ -50,8 +50,8 @@ The consultation confirms a player-witness discipline. Literary canons offer too
 
 ## References
 
-[1] P. B. Kerr, *The Akhenaten Adventure*, Chapter 23, "Akhenaten’s Return," user-supplied text in `pasted_content_5.txt`; later polar sequence currently secondary-verified at https://manga.fandom.com/wiki/The_Akhenaten_Adventure.
+[1] P. B. Kerr, *The Akhenaten Adventure*, Chapter 23, "Akhenaten’s Return," user-supplied text in `pasted_content_5.txt`; later polar sequence currently secondary-verified at <https://manga.fandom.com/wiki/The_Akhenaten_Adventure>.
 
-[2] Mullverse Wiki, "Quiet Box," secondary source summary of the *Fablehaven* / *Dragonwatch* artefact: https://mullverse.fandom.com/wiki/Quiet_Box.
+[2] Mullverse Wiki, "Quiet Box," secondary source summary of the *Fablehaven* / *Dragonwatch* artefact: <https://mullverse.fandom.com/wiki/Quiet_Box>.
 
 [3] Consultation artefact retained by the player-witness: `wizard_consultation.md`; consulted models were `gpt-5`, `claude-opus-4-7`, and `gemini-3.1-pro-preview`.

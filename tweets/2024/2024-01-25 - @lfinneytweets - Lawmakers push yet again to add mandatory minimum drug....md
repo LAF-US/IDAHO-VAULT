@@ -19,10 +19,11 @@ related:
   - idpol
 ---
 
-Lawmakers push yet again to add mandatory minimum drug trafficking sentences for fentanyl in Idaho law. I sat down with Sen. Todd Lakey, R-Nampa, to dive into the details of the bill and predict its path forward this legislative session. #idleg #idpol 
+Lawmakers push yet again to add mandatory minimum drug trafficking sentences for fentanyl in Idaho law. I sat down with Sen. Todd Lakey, R-Nampa, to dive into the details of the bill and predict its path forward this legislative session. #idleg #idpol
 <https://t.co/1yMAxE9JZG>
 
 ## Links
+
 - <https://pod.link/IdahoReports/episode/d72fcc4b4ba1005678d3c26422931c5b>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1750330535732515086)

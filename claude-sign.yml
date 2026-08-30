@@ -80,7 +80,7 @@ jobs:
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           ref: ${{ inputs.target_branch }}
-          fetch-depth: 0  # full history for re-sign operations
+          fetch-depth: 0 # full history for re-sign operations
 
       # 1Password load — same pattern as .github/workflows/1password-secret-template.yml.
       # * Vault + item for the Claude signing key are LOGAN's to name. Verified
@@ -98,9 +98,9 @@ jobs:
         with:
           export-env: true
         env:
-          CLAUDE_SSH_SIGNING_KEY: op://Vault/claude-code-signing-key/private-key  # *
-          CLAUDE_BOT_NAME: op://Vault/claude-bot-identity/bot-name                 # *
-          CLAUDE_BOT_EMAIL: op://Vault/claude-bot-identity/bot-email               # *
+          CLAUDE_SSH_SIGNING_KEY: op://Vault/claude-code-signing-key/private-key # *
+          CLAUDE_BOT_NAME: op://Vault/claude-bot-identity/bot-name # *
+          CLAUDE_BOT_EMAIL: op://Vault/claude-bot-identity/bot-email # *
 
       - name: Configure git SSH commit signing
         if: env.OP_SERVICE_ACCOUNT_TOKEN != ''

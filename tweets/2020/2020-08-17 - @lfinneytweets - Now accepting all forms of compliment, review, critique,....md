@@ -17,6 +17,7 @@ related:
 Now accepting all forms of compliment, review, critique, fan mail, hate mail and/or character assassination <https://t.co/GZu69O3p4o>
 
 ## Links
+
 - <https://x.com/IdahoReports/status/1295505137704689664>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1295506205482209281)

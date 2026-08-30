@@ -19,7 +19,7 @@ related:
   - idleg
 ---
 
-Winder says the governor will be out of town tomorrow, going around the state re: coronavirus. 
+Winder says the governor will be out of town tomorrow, going around the state re: coronavirus.
 He’s giving more comments, said then they’ll head into caucus to talk about next steps. #idpol #idleg
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1240757744719638528)

@@ -20,13 +20,14 @@ related:
 ---
 
 New @IDHW data, 5 p.m. today (<https://t.co/nxIWTF7aiy>):
-— 1,170 confirmed #IdahoCOVID19 cases 
+— 1,170 confirmed #IdahoCOVID19 cases
 — 69 newly reported today
 — 11,246 tested
-— 83 hospitalized 
+— 83 hospitalized
 — 13 deaths
 
 ## Links
+
 - <http://coronavirus.idaho.gov>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1247302895256535040)

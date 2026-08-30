@@ -20,6 +20,7 @@ related:
 @IDHW Here’s that link: <https://t.co/TrGk7UGnz9>
 
 ## Links
+
 - <https://healthandwelfare.idaho.gov/covid-19-vaccination>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

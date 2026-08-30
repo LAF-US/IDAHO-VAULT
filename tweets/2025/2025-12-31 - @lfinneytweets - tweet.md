@@ -17,9 +17,11 @@ related:
 <https://t.co/cR3L6KDiln> <https://t.co/slggvHIwiQ>
 
 ## Links
+
 - <https://x.com/IdahoReports/status/2006484648705065029>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/G9h3cDoaMAAUY_e.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/2006484963257102397)

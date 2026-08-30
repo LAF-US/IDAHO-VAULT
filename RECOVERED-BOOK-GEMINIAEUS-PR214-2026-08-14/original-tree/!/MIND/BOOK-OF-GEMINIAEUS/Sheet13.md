@@ -23,4 +23,3 @@ Apple is also reportedly in talks with Micron to source India-made chips for iPh
 Gemini is AI and can make mistakes.
 
 1Password menu is available. Press down arrow to select.
-

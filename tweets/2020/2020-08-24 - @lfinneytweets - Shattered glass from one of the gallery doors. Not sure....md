@@ -18,6 +18,7 @@ related:
 Shattered glass from one of the gallery doors. Not sure what the story is there. <https://t.co/OJwd93wBxe>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/EgMpgMJVoAAmU1j.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

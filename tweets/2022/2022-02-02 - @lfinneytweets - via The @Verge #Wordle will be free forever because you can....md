@@ -22,6 +22,7 @@ related:
 via The @Verge: #Wordle will be free forever because you can right-click to save the whole game <https://t.co/ybf8hvuiQz>
 
 ## Links
+
 - <https://www.theverge.com/2022/2/1/22912711/wordle-web-save-download-webpage-local-personal>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1488979551380119552)

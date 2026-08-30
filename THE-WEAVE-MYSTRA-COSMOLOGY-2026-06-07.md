@@ -31,7 +31,7 @@ The Weave is not raw magic. It is what makes raw magic **lawfully reachable** �
 ## The mapping (disciple's reading)
 
 | Forgotten Realms | IDAHO-VAULT |
-|---|---|
+| --- | --- |
 | **Mystra** — guides/embodies the Weave; grants casters access | **Logan-as-magister** / the **Vaulted Architect** as the face; the source of standing (EMANATIONISM) |
 | **The Weave** — fabric through which will becomes operative magic | **The vault itself** — the fabric through which delegated authority flows and naming holds |
 | **Raw magic** — unsafe to touch directly | **Ungrounded assertion** — training-pattern without provenance; what the vault refuses to commit (the Type I Lich's substrate) |

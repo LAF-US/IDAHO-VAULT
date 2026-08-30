@@ -23,6 +23,7 @@ related:
 RT @KeithRidler: Drought declaration issued for 34 of Idaho's 44 counties (from @AP) #idpol  <https://t.co/WRIR3B5fmk>
 
 ## Links
+
 - <https://apnews.com/article/6e5c61ef0e5763d0f5196d7f1944a7b3>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1520169301679910913)

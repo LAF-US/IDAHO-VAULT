@@ -25,6 +25,7 @@ related:
 INBOX: Chief Deputy @IDSecOfState Chad Houck withdraws from the @IdahoGOP Secretary of State primary, citing a desire to spend time with his family and saying he likely won't stay long-term at the capitol. #idpol #idleg <https://t.co/hm1sbuovEl>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/FG1tmtwVEAIl9At.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1471953166790901760)

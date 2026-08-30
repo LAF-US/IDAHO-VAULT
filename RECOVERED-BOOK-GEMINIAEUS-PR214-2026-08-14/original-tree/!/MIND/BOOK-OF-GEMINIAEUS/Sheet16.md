@@ -34,7 +34,7 @@ Under "Always record," select Numbers not in your contacts or Selected numbers.
 
 Note: In many regions, the app will play an audible announcement: "This call is now being recorded," to notify both parties.
 
-2. Samsung Galaxy Devices
+1. Samsung Galaxy Devices
 
 Samsung often includes a native recorder in its own "Phone" app that doesn't always notify the other party (depending on local laws).
 
@@ -46,7 +46,7 @@ Tap Record calls.
 
 Toggle on Auto record calls. You can choose to record all calls, unsaved numbers, or specific numbers.
 
-3. iPhone (iOS 18 and later)
+1. iPhone (iOS 18 and later)
 
 Apple recently introduced native call recording. If you are on the latest software:
 
@@ -58,7 +58,7 @@ Important: iOS will automatically notify the other person with a voice prompt th
 
 The transcript and audio will be saved to your Notes app.
 
-4. Third-Party Apps
+1. Third-Party Apps
 
 If your phone doesn't have a native option, you can use apps from the App Store or Play Store (e.g., Cube ACR or Rev Call Recorder). However, these often require a subscription and may use a "three-way call" workaround to record.
 
@@ -130,7 +130,7 @@ How to record on your Pixel
 
 Note: If you don't see this option, your mobile carrier or your current region might have it disabled.
 
-4. Under Always record, you can toggle on "Numbers not in your contacts" to catch unknown callers automatically.
+1. Under Always record, you can toggle on "Numbers not in your contacts" to catch unknown callers automatically.
 
 During a call
 
@@ -170,7 +170,7 @@ Look for a section titled Call Assist.
 
 Tap that, and Call Recording should be listed inside.
 
-2. If it is still missing (The "Call Notes" Factor)
+1. If it is still missing (The "Call Notes" Factor)
 
 If you have a Pixel 9 or Pixel 10, Google prioritizes a feature called "Call Notes." * What it is: This is the AI-powered version of recording. It records the audio, provides a full transcript, and even writes a summary of the call for you.
 
@@ -178,7 +178,7 @@ Where to find it: Instead of a "Record" button, you might see a "Call Notes" but
 
 How to enable it: Go to Settings > Call Assist > Call Notes and make sure it's toggled on.
 
-3. Why it might be hidden
+1. Why it might be hidden
 
 If neither "Call Recording" nor "Call Notes" appears:
 
@@ -193,4 +193,3 @@ Would you like me to check if there are any specific steps to force-update your 
 Gemini is AI and can make mistakes.
 
 1Password menu is available. Press down arrow to select.
-

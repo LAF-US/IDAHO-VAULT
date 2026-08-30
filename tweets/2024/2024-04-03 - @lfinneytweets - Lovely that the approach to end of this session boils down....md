@@ -17,10 +17,11 @@ related:
   - idleg
 ---
 
-Lovely that the approach to end of this session boils down to "run the same bill but see if it maybe passes this time" #idleg 
+Lovely that the approach to end of this session boils down to "run the same bill but see if it maybe passes this time" #idleg
 <https://t.co/kZgg7xnhFH>
 
 ## Links
+
 - <https://blog.idahoreports.idahoptv.org/2024/04/02/jfac-puts-out-new-itd-budget-but-keeps-state-street-language/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1775372205091930170)

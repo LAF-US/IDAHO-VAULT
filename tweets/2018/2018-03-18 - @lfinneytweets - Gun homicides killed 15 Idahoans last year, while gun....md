@@ -20,6 +20,7 @@ Gun homicides killed 15 Idahoans last year, while gun suicides killed 214. In 20
 <https://t.co/krJZM0mnGu> <https://t.co/vilAp1yyGk>
 
 ## Links
+
 - <http://www.idahostatesman.com/news/state/idaho/article201221649.html>
 - <https://www.spanidaho.org/idaho-suicide-facts>
 - <https://x.com/voxdotcom/status/973985923301027844>

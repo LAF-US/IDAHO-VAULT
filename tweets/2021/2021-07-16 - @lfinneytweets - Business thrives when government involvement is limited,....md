@@ -22,10 +22,11 @@ related:
 ---
 
 "Business thrives when government involvement is limited, and it is our hope that this issue can be
-resolved before more regulation, as the result of legislation, needs to be considered." 
+resolved before more regulation, as the result of legislation, needs to be considered."
 -@IdahoSenateGOP #idleg #idpol <https://t.co/HkisKPPTwe>
 
 ## Links
+
 - <https://t.co/HkisKPPTwe>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1416108525147750400)

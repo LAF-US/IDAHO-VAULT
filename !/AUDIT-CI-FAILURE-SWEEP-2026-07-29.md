@@ -18,7 +18,7 @@ Scheduled 24-hour review. Read `CONSTITUTION.md`, the prior sweeps in this threa
 ## 5W Summary
 
 | | |
-|---|---|
+| --- | --- |
 | **Who** | GitHub Actions runners on `laf-us/idaho-vault`; Claude Code (this session, scheduled). No runner/infrastructure-caused breakage — item 10 below is branch-level code/test drift from a human edit, which is a different thing. |
 | **What** | 10 distinct failing workflow names in-window, collapsing to 8 distinct root causes (items 4, 5, and 9 share one cause — the rate-limit family — the other 7 findings are each their own): 6 already understood (accepted-red, tracked, or already root-caused elsewhere), 1 unresolved gap (item 7), 1 genuinely new (item 10). |
 | **When** | 2026-07-28T12:06Z – 2026-07-29T12:06Z |

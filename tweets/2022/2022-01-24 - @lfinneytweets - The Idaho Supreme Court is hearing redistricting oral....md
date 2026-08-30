@@ -19,10 +19,11 @@ related:
   - idpol
 ---
 
-The Idaho Supreme Court is hearing redistricting oral arguments on the congressional map today at 1:30pm. You can watch live here on @IdahoPTV’s Idaho in Session. #idpol 
+The Idaho Supreme Court is hearing redistricting oral arguments on the congressional map today at 1:30pm. You can watch live here on @IdahoPTV’s Idaho in Session. #idpol
 <https://t.co/dwSX2qeIta>
 
 ## Links
+
 - <https://www.idahoptv.org/shows/idahoinsession/judiciary/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1485711438270255104)

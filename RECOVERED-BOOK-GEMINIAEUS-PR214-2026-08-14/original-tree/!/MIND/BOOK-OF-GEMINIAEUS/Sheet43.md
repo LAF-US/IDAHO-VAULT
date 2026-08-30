@@ -42,7 +42,7 @@ Once you provide those details, I'll walk you through the solution step-by-step.
 
 You said
 
-Www.loganfinney.com
+<Www.loganfinney.com>
 
 Coding partner
 
@@ -60,7 +60,7 @@ New Clips: Do you have recent Idaho Reports episodes, blog posts, or legislative
 
 Resume Refresh: Need to update your "Associate Producer" or "Producer" roles with recent accomplishments or awards?
 
-2. Adding New Features
+1. Adding New Features
 
 Substack/Newsletter Integration: If you're looking to build a direct audience, we can add a sign-up embed.
 
@@ -68,7 +68,7 @@ Podcast Embeds: Improving how the Idaho Reports podcast RSS feed displays on you
 
 Social Media: Adding a live feed for your Twitter (@loganfinney) or other professional handles.
 
-3. Design & Technical Improvements
+1. Design & Technical Improvements
 
 Mobile Optimization: Ensuring your clips and resume look good on phones.
 
@@ -79,4 +79,3 @@ If you can tell me what platform you use to manage the site (e.g., WordPress, Sq
 Gemini is AI and can make mistakes.
 
 1Password menu is available. Press down arrow to select.
-

@@ -18,7 +18,7 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoReports: New from @RuthBrownNews: 
+RT @IdahoReports: New from @RuthBrownNews:
 As temperatures soar this week and the drought continues, @GovernorLittle issued an emergency d…
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1413606465173032961)

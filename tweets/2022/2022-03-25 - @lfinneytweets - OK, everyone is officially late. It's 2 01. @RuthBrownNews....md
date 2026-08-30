@@ -20,7 +20,7 @@ related:
   - idleg
 ---
 
-"OK, everyone is officially late. It's 2:01." @RuthBrownNews #idleg 
+"OK, everyone is officially late. It's 2:01." @RuthBrownNews #idleg
 
 @OHnewsroom
 

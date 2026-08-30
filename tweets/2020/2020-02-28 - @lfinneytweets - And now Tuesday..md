@@ -17,6 +17,7 @@ related:
 And now Tuesday. <https://t.co/KKXPR3GX9w>
 
 ## Links
+
 - <https://x.com/lfinneytweets/status/1232724295589203968>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1233462901815427072)

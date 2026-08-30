@@ -19,6 +19,7 @@ related:
 RT @BSDEducation: <https://t.co/Svb73G6QRJ>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/EdE4qsSUwAAvPJR.png)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1284190138981965824)

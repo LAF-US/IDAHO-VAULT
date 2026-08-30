@@ -19,6 +19,7 @@ related:
 RT @BuzzFeedNews: “I’m just super-duper thankful that they see themselves in me. I think that’s awesome.” <https://t.co/69MsoQJClK>
 
 ## Links
+
 - <https://www.buzzfeednews.com/article/davidmack/pen15-gabe-gay-storyline?bftwnews&utm_term=4ldqpgc#4ldqpgc>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1309546320126828544)

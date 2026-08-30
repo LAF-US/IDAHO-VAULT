@@ -34,7 +34,7 @@ The existence of a full marching band on standby has massive implications for th
 
 We know the band members aren't "Innies" in the traditional sense; they don't have the glazed, childlike demeanor of the MDR staff. They appear to be contractors or regular employees. This implies that for every handful of severed workers, there is a massive infrastructure of auxiliary staff—musicians, caterers, technicians—who navigate the bowels of the building without being severed themselves.
 
-2. The Scale of the "Sisyphus" Machine
+1. The Scale of the "Sisyphus" Machine
 
 To have a marching band ready for a 60-second "perk" suggests that Lumon’s budget and physical footprint are nearly infinite. If they maintain a roster of musicians just to facilitate HR rewards, the areas we haven't seen likely include:
 
@@ -42,7 +42,7 @@ Rehearsal Spaces: Soundproofed rooms where these performers wait for the call.
 
 Subterranean Logistics: A network of hallways and elevators separate from the "green-carpeted" maze that allows non-severed staff to move quickly between departments without being seen.
 
-3. Culture as a Manufactured Product
+1. Culture as a Manufactured Product
 
 The band proves that Lumon doesn't just manage labor; it manufactures culture. The songs, the uniforms, and the "Kier-approved" aesthetics are all curated. This suggests there is a "Creative Department" or a "Propaganda Wing" somewhere in the building—a place where people spend 40 hours a week writing the very songs and handbooks used to brainwash the Innies.
 
@@ -57,4 +57,3 @@ Would you like to explore the specific "Core Principles" of Kier Eagan that migh
 Gemini is AI and can make mistakes.
 
 1Password menu is available. Press down arrow to select.
-

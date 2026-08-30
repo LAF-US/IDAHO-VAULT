@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @MaherKXLY: I just had a chance to interview @GovInslee about what steps are next for Washington in this pandemic. 
+RT @MaherKXLY: I just had a chance to interview @GovInslee about what steps are next for Washington in this pandemic.
 
 He says it's time t…
 

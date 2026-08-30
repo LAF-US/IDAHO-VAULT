@@ -22,6 +22,7 @@ related:
 Lots of House Bills for the Senate to get through! You forget sometimes each bill is literal pieces of paper that get shuttled back and forth. "It'll be even bigger tomorrow," Secretary Novak tells me, as she already cleared the items from the morning floor session. #idleg #idpol <https://t.co/6mw4alWilO>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/GIa3UiObsAAelXy.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1767301476022673562)

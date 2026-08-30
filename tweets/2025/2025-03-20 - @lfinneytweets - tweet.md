@@ -17,9 +17,11 @@ related:
 ? <https://t.co/fPTYrfy2Rz> <https://t.co/8SceEEA9Ue>
 
 ## Links
+
 - <https://x.com/freedomcaucusID/status/1902551653783630053>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/GmhINfebAAAdGdz.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1902850241076007257)

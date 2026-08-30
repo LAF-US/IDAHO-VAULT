@@ -22,7 +22,7 @@ related:
   - idpol
 ---
 
-RT @IdahoReports: ICYMI: @GovernorLittle's State of the State Address kicked off the 2022 legislative session this week. #idleg #idpol 
+RT @IdahoReports: ICYMI: @GovernorLittle's State of the State Address kicked off the 2022 legislative session this week. #idleg #idpol
 htt…
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1480933828256432129)

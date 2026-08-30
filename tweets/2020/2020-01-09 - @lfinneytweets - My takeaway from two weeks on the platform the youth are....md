@@ -20,6 +20,7 @@ related:
 @kkruesi My takeaway from two weeks on the platform: the youth are VERY politically conscious <https://t.co/Ard68ZquwD>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/EN0bWg_U0AEbMsp.jpg)
 
 *In reply to [@kkruesi](https://twitter.com/kkruesi)*

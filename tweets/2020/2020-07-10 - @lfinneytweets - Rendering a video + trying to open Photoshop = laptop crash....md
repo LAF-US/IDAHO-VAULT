@@ -14,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-Rendering a video + trying to open Photoshop = laptop crash 😬 
+Rendering a video + trying to open Photoshop = laptop crash 😬
 Good thing I'm only editing web extras today and not the main show!
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1281733217435783169)

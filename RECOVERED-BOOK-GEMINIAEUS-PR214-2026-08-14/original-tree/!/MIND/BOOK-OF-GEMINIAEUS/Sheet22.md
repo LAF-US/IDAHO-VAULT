@@ -88,7 +88,7 @@ Media Encryption: Photos and audio notes are now theoretically covered by the sa
 
 Transport Hardening: The integration of the Tor Project’s Arti framework has significantly improved the stability of the global (Nostr-based) routing, reducing "silent failure" modes.
 
-2. Persistent & Residual Risks
+1. Persistent & Residual Risks
 
 Man-in-the-Middle (MITM) Identity Spoofing: Despite patches, BitChat still lacks a "Verified Contact" system (like QR code scanning). Attackers can still spoof a nickname and public key to trick users who haven't previously exchanged keys.
 
@@ -198,13 +198,13 @@ Since you have not yet sent a message, your Public Key (PubKey) has not been ind
 
 Advice: Do not send a "Test" message to the public global feed. Once a PubKey is broadcast, it is permanently etched into the Nostr relay history, linking your device's unique identifier to that key.
 
-2. Validate the "Kill Switch"
+1. Validate the "Kill Switch"
 
 Your focus on security boundaries suggests a need for reliable data purging.
 
 Next Step: Test the "Panic Mode" (triple-tap the BitChat logo). Ensure the app successfully wipes the local SQLite database on your Pixel. This is your primary defense against physical device seizure.
 
-3. Use Case Brainstorming: "The Swarm Gateway"
+1. Use Case Brainstorming: "The Swarm Gateway"
 
 Given your interest in agent roles and GitHub-defined authority, BitChat could serve as an Out-of-Band (OOB) Command Channel.
 
@@ -236,13 +236,13 @@ Early BitChat relied on the assumption of security because it was peer-to-peer. 
 
 Swarm Application: An AI swarm cannot rely on "implied" trust. Every agent in your swarm must have a Hardware-Rooted Identity. If an agent doesn't have a cryptographic signature tied to a specific device (like your Pixel's Secure Element), it should be treated as a hostile "sybil" node.
 
-2. Handshake Maturity (Noise vs. Custom)
+1. Handshake Maturity (Noise vs. Custom)
 
 BitChat’s biggest leap was moving from custom handshakes to the Noise Protocol Framework.
 
 Swarm Application: Do not "roll your own" coordination logic. Swarm agents should use the Noise XX Pattern for mutual authentication. This ensures that even if a message is intercepted, the attacker cannot identify which agent sent it without the long-term static keys.
 
-3. The Metadata Shadow
+1. The Metadata Shadow
 
 Even with perfect encryption, BitChat leaks the "shape" of the network through Bluetooth bursts.
 
@@ -250,7 +250,7 @@ Swarm Application: Your infrastructure must account for Traffic Analysis Resista
 
 Gap: To solve this, agents should implement "Cover Traffic"—constant, low-bandwidth dummy data—to make real operational commands indistinguishable from background noise.
 
-4. "Panic" as a Primary Feature
+1. "Panic" as a Primary Feature
 
 BitChat’s triple-tap "Panic Mode" is a rare example of UX meeting high-stakes OpSec.
 
@@ -279,4 +279,3 @@ Gemini is AI and can make mistakes.
 1Password menu is available. Press down arrow to select.
 
 Deleted Google Drive Spring Clean…
-

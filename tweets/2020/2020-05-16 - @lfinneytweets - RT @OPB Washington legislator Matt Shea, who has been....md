@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @OPB: Washington legislator Matt Shea, who has been linked to far-right militia movements, won't be on the ballot this year. 
+RT @OPB: Washington legislator Matt Shea, who has been linked to far-right militia movements, won't be on the ballot this year.
 
 <https://t…>
 

@@ -173,4 +173,3 @@ Right, and—
 Gemini is AI and can make mistakes.
 
 1Password menu is available. Press down arrow to select.
-

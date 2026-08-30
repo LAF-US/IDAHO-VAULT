@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoReports: This week on Idaho Reports: Lawmakers saw more starts and stops this week as they scrambled to wrap up the session. 
+RT @IdahoReports: This week on Idaho Reports: Lawmakers saw more starts and stops this week as they scrambled to wrap up the session.
 
 Wat…
 

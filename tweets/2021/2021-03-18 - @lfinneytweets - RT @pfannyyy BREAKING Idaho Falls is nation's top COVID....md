@@ -17,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-RT @pfannyyy: BREAKING: Idaho Falls is nation's top COVID hotspot, Rexburg is third worst, per @UpshotNYT virus tracker. 
+RT @pfannyyy: BREAKING: Idaho Falls is nation's top COVID hotspot, Rexburg is third worst, per @UpshotNYT virus tracker.
 
 <https://t.co/pIr…>
 

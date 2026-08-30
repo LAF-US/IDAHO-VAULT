@@ -23,6 +23,7 @@ related:
 <https://t.co/GWaUnMYht0>
 
 ## Links
+
 - <https://ballotpedia.org/Steve_Youngdahl_recall,_Lake_Pend_Oreille_School_Board,_Idaho_(2014)>
 
 *In reply to [@lukebaumgarten](https://twitter.com/lukebaumgarten)*

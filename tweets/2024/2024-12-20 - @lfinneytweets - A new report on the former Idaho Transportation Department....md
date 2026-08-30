@@ -21,6 +21,7 @@ A new report on the former Idaho Transportation Department headquarters estimate
 <https://t.co/lIaYgwiLKg>
 
 ## Links
+
 - <https://idahocapitalsun.com/2024/12/19/renovations-to-itds-boise-hq-will-cost-at-least-64m-not-32m-new-report-shows/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1869939956069564845)

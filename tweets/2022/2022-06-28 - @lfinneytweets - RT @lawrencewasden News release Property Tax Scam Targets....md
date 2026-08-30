@@ -19,6 +19,7 @@ related:
 RT @lawrencewasden: News release: Property Tax Scam Targets Idaho Homeowners <https://t.co/Aqqseu8W00>
 
 ## Links
+
 - <https://www.ag.idaho.gov/newsroom/property-tax-scam-targets-idaho-homeowners/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1541854761196015616)

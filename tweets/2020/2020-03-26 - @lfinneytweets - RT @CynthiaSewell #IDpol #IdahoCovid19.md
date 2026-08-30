@@ -24,6 +24,7 @@ related:
 RT @CynthiaSewell: #IDpol #IdahoCovid19 <https://t.co/59fUnb9eWK>
 
 ## Links
+
 - <https://x.com/RepRussFulcher/status/1243227752813203461>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1243276548360134656)

@@ -24,6 +24,7 @@ related:
 Catch highlights from today's press conference on @IdahoReports Friday night 🎥 #idleg #idpol <https://t.co/qVY1r2Wbzp>
 
 ## Links
+
 - <https://x.com/madisonhardy05/status/1237448386111926273>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1237566102462296065)

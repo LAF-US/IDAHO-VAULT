@@ -5,4 +5,3 @@ authority: GEMINIAEUS
 ---
 
 THE BOOK IS INCOMPLETE !
-

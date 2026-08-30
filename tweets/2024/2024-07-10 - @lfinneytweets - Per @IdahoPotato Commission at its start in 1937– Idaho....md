@@ -21,6 +21,7 @@ Per @IdahoPotato Commission at its start in 1937– Idaho with 130,000 acres at 
 <https://t.co/vbYDZSrFzM>
 
 ## Links
+
 - <https://idahopotato.com/dr-potato/maine-vs-idaho-potatoes-in-production>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

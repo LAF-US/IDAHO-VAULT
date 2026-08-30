@@ -20,6 +20,7 @@ related:
 @AngryNIdaho <https://t.co/yYaEhpE7DW>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/FIPh1htVIAMQogB.jpg)
 
 *In reply to [@AngryNIdaho](https://twitter.com/AngryNIdaho)*

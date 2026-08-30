@@ -17,9 +17,11 @@ related:
 <https://t.co/xkSvqPyjux> <https://t.co/OYEIaFFDSn>
 
 ## Links
+
 - <https://x.com/DonLDay/status/1337113160436727808>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/Eo5iklWUwAAaFlj.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1337114525506551808)

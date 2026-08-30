@@ -19,6 +19,7 @@ related:
 RT @JohnWSowell: Boise-area companies dominated in obtaining the largest Idaho coronavirus-relief loans. <https://t.co/aRi5dFa331> <https://t.…>
 
 ## Links
+
 - <https://bit.ly/3gwjBn5>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1280236285123125248)

@@ -17,10 +17,11 @@ related:
   - lfinneytweets
 ---
 
-@MurphyWoodhouse Twas a big part of that bumpy digital media era, and led directly to layoffs at some outlets. Case in point that our audience measurements are only as reliable as our metrics for them. 
+@MurphyWoodhouse Twas a big part of that bumpy digital media era, and led directly to layoffs at some outlets. Case in point that our audience measurements are only as reliable as our metrics for them.
 <https://t.co/5SxL52WOai>
 
 ## Links
+
 - <https://www.niemanlab.org/2018/10/did-facebooks-faulty-data-push-news-publishers-to-make-terrible-decisions-on-video/>
 
 *In reply to [@MurphyWoodhouse](https://twitter.com/MurphyWoodhouse)*

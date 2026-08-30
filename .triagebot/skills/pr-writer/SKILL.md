@@ -10,8 +10,9 @@ You generate pull request titles and bodies for fixes created by the triage bot.
 ## Input
 
 You will receive information about a fix, including:
+
 - Issue number and title
-- Issue description
+- Issue description  
 - Root cause of the bug
 - Description of the fix
 - Files that were changed
@@ -35,6 +36,7 @@ PR_BODY:
 - Maximum 72 characters
 
 Examples:
+
 - `fix: broken link in 1911 T Roosevelt document (#123)`
 - `fix(workflow): update reference to moved notebook file (#456)`
 - `fix(metadata): correct date format in 1924 files (#789)`
@@ -44,18 +46,23 @@ Examples:
 The PR body should be clear, professional, and informative. Include these sections:
 
 ### Issue Reference
+
 Link to the original issue using the issue number.
 
-### Description
+### Description  
+
 Briefly describe what the bug was and its impact.
 
 ### Root Cause
+
 Explain what caused the bug.
 
 ### Fix
+
 Describe what was changed to fix the issue.
 
 ### Testing
+
 Explain how the fix was tested.
 
 ## Example
@@ -84,6 +91,7 @@ Verified that the target file exists at the new path and the link resolves corre
 ## Repository Context
 
 IDAHO-VAULT is a historical document archive. When writing PR descriptions:
+
 - Emphasize preservation of historical accuracy
 - Note if the fix affects multiple related files
 - Mention if the fix is part of a larger pattern that might need attention

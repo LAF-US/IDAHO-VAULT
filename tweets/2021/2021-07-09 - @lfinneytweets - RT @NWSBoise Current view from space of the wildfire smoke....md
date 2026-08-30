@@ -24,6 +24,7 @@ related:
 RT @NWSBoise: Current view from space of the wildfire smoke and area wildfires. #idwx #orwx <https://t.co/91rtlAiOGn>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/E54Zqa3VEAEDRBD.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1413607449408327681)

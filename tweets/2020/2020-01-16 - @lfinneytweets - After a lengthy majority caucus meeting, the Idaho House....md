@@ -22,6 +22,7 @@ related:
 After a lengthy majority caucus meeting, the Idaho House has voted to expel Rep. John Green with no debate. #idleg #idpol <https://t.co/SpeU368ynx>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/EObksiKUcAAv1w3.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1217912209386307584)

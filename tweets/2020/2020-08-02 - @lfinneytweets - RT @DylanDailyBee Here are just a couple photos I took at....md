@@ -19,6 +19,7 @@ related:
 RT @DylanDailyBee: Here are just a couple photos I took at today's Back the Bonner Blue event. <https://t.co/drBy0PDTbB>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/EeXiWhzU4AAvojI.jpg)
 - ![alt text needed](https://pbs.twimg.com/media/EeXiZAAU8AACiv0.jpg)
 - ![alt text needed](https://pbs.twimg.com/media/EeXiawgUMAADBpi.jpg)

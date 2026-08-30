@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-@oc515 @RadioDawson Senate State Affairs is in the Lincoln Auditorium. They started at 7:45. 
+@oc515 @RadioDawson Senate State Affairs is in the Lincoln Auditorium. They started at 7:45.
 
 The full Senate and House go onto the floor at 10.
 

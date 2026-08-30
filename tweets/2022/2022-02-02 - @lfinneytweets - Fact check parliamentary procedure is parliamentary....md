@@ -20,6 +20,7 @@ related:
 Fact check: parliamentary procedure is parliamentary procedure regardless of which party is using it. #idleg <https://t.co/uI92n82UXP>
 
 ## Links
+
 - <https://x.com/idahofreedom/status/1488954020341317633>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1488959161756839940)

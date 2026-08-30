@@ -20,6 +20,7 @@ related:
 @TheDemocrats <https://t.co/LWhiKD9M6B>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/Gk7gSEDXoAAOs1M.jpg)
 
 *In reply to [@TheDemocrats](https://twitter.com/TheDemocrats)*

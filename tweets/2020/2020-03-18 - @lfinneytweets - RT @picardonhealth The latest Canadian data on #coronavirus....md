@@ -19,7 +19,7 @@ related:
   - coronavirus
 ---
 
-RT @picardonhealth: The latest Canadian data on #coronavirus cases and testing. 
+RT @picardonhealth: The latest Canadian data on #coronavirus cases and testing.
 597 cases, 8 deaths Tuesday, up from 426 cases and 4 death…
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1240338125399842817)

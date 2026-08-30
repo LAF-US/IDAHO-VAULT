@@ -17,6 +17,7 @@ related:
 Not gonna lie, I unironically love this. <https://t.co/drOw8YeOTL>
 
 ## Links
+
 - <https://x.com/karlarosehanson/status/1355207059004747776>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1355386147778699265)

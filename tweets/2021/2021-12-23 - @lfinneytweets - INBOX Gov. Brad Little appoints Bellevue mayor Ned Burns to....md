@@ -25,6 +25,7 @@ related:
 INBOX: Gov. Brad Little appoints Bellevue mayor Ned Burns to the District 26 House seat vacated by Muffy Davis (press releases via @GovernorLittle & @idahodlcc). #idleg #idpol <https://t.co/hevj6lt7C8>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/FHT333UVEA4_ni3.jpg)
 - ![alt text needed](https://pbs.twimg.com/media/FHT35tJVEA4YgY3.jpg)
 

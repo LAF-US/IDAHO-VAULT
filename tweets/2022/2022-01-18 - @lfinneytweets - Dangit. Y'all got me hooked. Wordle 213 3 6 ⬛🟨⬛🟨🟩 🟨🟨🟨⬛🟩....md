@@ -14,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-Dangit. Y'all got me hooked. 
+Dangit. Y'all got me hooked.
 
 Wordle 213 3/6
 
