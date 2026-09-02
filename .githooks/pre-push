@@ -113,7 +113,13 @@ while IFS=' ' read -r local_ref local_oid remote_ref remote_oid; do
   # closed). Findings are detected by emitted JSON (not exit code);
   # --fail-on-scan-errors makes only genuine scan errors non-zero, which we
   # treat as fail-closed. -z/xargs -0 keeps space/unicode paths safe.
-  th_out=$(git diff -z --name-only --diff-filter=ACMRT "$base" "$local_oid" 2>/dev/null \
+  # File list comes from the SAME range gitleaks scans ($logopts), not a single
+  # merge-base. On ref creation the merge-base form scanned every commit since
+  # the branch point (e.g. 3,008 for a rename that introduces nothing), so a
+  # rename or other ref-only push failed on unrelated content. git log over
+  # $logopts yields the files actually introduced by the pushed commits: zero
+  # for a rename, the real set otherwise.
+  th_out=$(git log -z --name-only --diff-filter=ACMRT --pretty=format: $logopts 2>/dev/null \
     | xargs -0 -r sh -c 'for p; do [ -f "$p" ] && printf "%s\0" "$p"; done' sh \
     | xargs -0 -r trufflehog filesystem --results=verified,unknown --json \
         --no-update --fail-on-scan-errors 2>/dev/null)
