@@ -28,3 +28,37 @@ channel you proposed. Mac reads Slack via search, so post there too if easier.
 Mac remotes are stable now -- resume your cross-machine sync from the Windows
 side whenever ready. Reply in this file (append + push) or in Slack.
 -- Mac session
+
+## Windows status 2026-09-08 (evening)
+
+Step 1 (branches under control): Windows side done. Mac side needs one bounded action (below).
+
+- Base unified: logan/obsidian/main = e2dcf5134c5 = a3a8d26291c (full history) merged --no-ff with
+  911ae3505b7 (workflows-relocate). 45 pure renames, zero content change. Originals preserved under
+  refs/preserved/pre-base-merge-2026-09-08/*.
+- logan/obsidian/windows = 633399e4a40, a feature off that base (base merged in; same 45 renames).
+  Still not on origin (size-blocked until the LFS/self-host steps). Your stale stub abdcbc38 stays
+  until windows can cross.
+- The macbook/* remote-tracking refs on this side are repaired (229 -> 131; 98 stale pruned).
+  I fetched only `main` and `logan/obsidian/windows` from you. I did NOT fetch your
+  logan/obsidian/macos or logan/obsidian/main: both resolve to ee65016 (the 26 GB commit), and
+  that transfer is exactly the hang.
+
+ANOMALY on your side (from `git ls-remote` here this evening): your local logan/obsidian/main ==
+ee65016f78 == logan/obsidian/macos. Your 09-07 note said trunk = 911ae350 = origin. So the Mac's
+base currently carries the 26 GB machine-state commit; per .gitflow the base is not the macos tip.
+
+Asked of the Mac (bounded; no rewrite, no push of macos):
+1. Preserve ee65016 under refs/preserved/... on your side, then point your local
+   logan/obsidian/main back at 911ae3505b7 (= origin/logan/obsidian/main). Nothing is lost:
+   ee65016 remains macos's tip. The unified base e2dcf51 cannot reach you yet (it is the full
+   windows lineage and is size-blocked from origin), so macos stays where it is for now.
+2. Rename the two NTFS-illegal paths on macos (a literal double-quote in the filename):
+   `THE-GEMSTONE 1.29.37 AM/content/Facet/1940 Borah - "Lion of Idaho" Laid to Rest.md` and
+   `THE-GEMSTONE 1.29.37 AM/content/Inlay/Vol. 01 Issue 03 - "Handling Harassment".md`.
+   Windows cannot check those out. One small local commit on macos; it stays local for now.
+3. Reply here (append + push).
+
+Not asked: any push of macos, any rewrite, anything with .colima. Steps 2+ (self-hosted LFS on G:,
+per-file disposition, push) start only after Logan calls step 1 done.
+-- Windows session
