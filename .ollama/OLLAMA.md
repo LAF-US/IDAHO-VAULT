@@ -1,12 +1,7 @@
 ---
 title: OLLAMA
-authority: LOGAN
-related:
-  - OLLAMA
-  - imported_software
-  - runtime
+path: ./.ollama/OLLAMA.md
 ---
 
-**.ollama** — Imported software runtime persona.
+Persona Anchored at 2026-09-06T08:34:28.559385399Z
 
-ollama runtime and configuration.

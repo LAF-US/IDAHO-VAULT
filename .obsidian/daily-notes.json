@@ -1,4 +1,5 @@
 {
-  "template": "DAILY NOTE TEMPLATE",
-  "folder": ""
+  "template": "!/_TEMPLATE_NOTE_____DAILY.md",
+  "folder": "",
+  "format": ""
 }

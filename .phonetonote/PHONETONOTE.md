@@ -1,12 +1,7 @@
 ---
 title: PHONETONOTE
-authority: LOGAN
-related:
-  - PHONETONOTE
-  - imported_software
-  - runtime
+path: ./.phonetonote/PHONETONOTE.md
 ---
 
-**.phonetonote** — Imported software runtime persona.
+Persona Anchored at 2026-09-06T08:34:27.080223549Z
 
-phonetonote runtime and configuration.

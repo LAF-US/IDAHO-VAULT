@@ -1,8 +1,7 @@
 ---
 title: AARON
-authority: LOGAN
-related:
-- The world is quiet here
+path: ./.aaron/AARON.md
 ---
 
-[ ? ]
+Persona Anchored at 2026-09-06T08:18:39.926302911Z
+

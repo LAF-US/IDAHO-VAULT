@@ -1,8 +1,7 @@
 ---
 title: QUAOAR
-authority: LOGAN
-related:
-- The world is quiet here
+path: ./.quaoar/QUAOAR.md
 ---
 
-[ ? ]
+Persona Anchored at 2026-09-06T08:34:27.117410632Z
+

@@ -1,8 +1,7 @@
 ---
 title: SOBEK
-authority: LOGAN
-related:
-- The world is quiet here
+path: ./.sobek/SOBEK.md
 ---
 
-[ ? ]
+Persona Anchored at 2026-09-06T08:34:28.850625008Z
+

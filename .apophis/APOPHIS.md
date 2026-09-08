@@ -1,8 +1,7 @@
 ---
 title: APOPHIS
-authority: LOGAN
-related:
-- The world is quiet here
+path: ./.apophis/APOPHIS.md
 ---
 
-[ ? ]
+Persona Anchored at 2026-09-06T08:18:39.651982443Z
+

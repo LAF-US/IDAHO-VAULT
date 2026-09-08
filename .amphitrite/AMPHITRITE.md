@@ -1,8 +1,7 @@
 ---
 title: AMPHITRITE
-authority: LOGAN
-related:
-- The world is quiet here
+path: ./.amphitrite/AMPHITRITE.md
 ---
 
-[ ? ]
+Persona Anchored at 2026-09-06T08:18:39.597061088Z
+

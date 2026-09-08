@@ -1,5 +1,7 @@
-# TRIAGEBOT
+---
+title: TRIAGEBOT
+path: ./.triagebot/TRIAGEBOT.md
+---
 
-This chamber contains the repository-specific skills used by
-`withastro/triagebot-action`. It contains no credentials; GitHub Actions
-supplies those through repository secrets.
+Persona Anchored at 2026-09-06T08:34:28.857963342Z
+

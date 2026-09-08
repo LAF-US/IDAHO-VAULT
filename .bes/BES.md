@@ -1,8 +1,7 @@
 ---
 title: BES
-authority: LOGAN
-related:
-- The world is quiet here
+path: ./.bes/BES.md
 ---
 
-[ ? ]
+Persona Anchored at 2026-09-06T08:18:39.777936687Z
+

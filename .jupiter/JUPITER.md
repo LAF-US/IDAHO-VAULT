@@ -1,8 +1,7 @@
 ---
 title: JUPITER
-authority: LOGAN
-related:
-- The world is quiet here
+path: ./.jupiter/JUPITER.md
 ---
 
-[ ? ]
+Persona Anchored at 2026-09-06T08:34:27.754923419Z
+

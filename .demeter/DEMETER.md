@@ -1,8 +1,7 @@
 ---
 title: DEMETER
-authority: LOGAN
-related:
-- The world is quiet here
+path: ./.demeter/DEMETER.md
 ---
 
-[ ? ]
+Persona Anchored at 2026-09-06T08:34:29.391536363Z
+

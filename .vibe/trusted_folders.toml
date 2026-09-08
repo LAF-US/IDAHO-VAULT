@@ -1,2 +1,4 @@
-trusted = []
+trusted = [
+    "/Users/logan/IDAHO-VAULT",
+]
 untrusted = []

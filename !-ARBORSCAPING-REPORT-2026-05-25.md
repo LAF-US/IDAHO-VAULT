@@ -41,7 +41,7 @@ Tip payload already landed in trunk. No unique content to rescue.
 
 Content of missing note:
 
-```markdown
+```
 - WORK: [ ] FMLA PAPERWORK
 - VAULT: [ ] FIX DAILY NOTE SYNCING / CARRYFORWARD (4 sub-tasks)
 ```

@@ -1,20 +1,7 @@
 ---
-canonical_name: CIRCLECI
-persona_class: infrastructure
-origin: CI/CD
-status: active
-authority: LOGAN
-related:
-  - .circleci/config.yml
-  - CONSTITUTION
+title: CIRCLECI
+path: ./.circleci/CIRCLECI.md
 ---
 
-# CircleCI
+Persona Anchored at 2026-09-06T08:34:27.579608184Z
 
-CI/CD configuration for continuous integration pipeline.
-
-Manages:
-- Validation jobs for commit structure
-- Primary workflow pipeline
-
-See `.circleci/config.yml` for pipeline definition.

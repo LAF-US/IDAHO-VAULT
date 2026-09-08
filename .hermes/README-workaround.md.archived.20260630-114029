@@ -1,0 +1,110 @@
+# Hermes Agent — env-loader override workaround (local, reversible)
+
+**Applied:** 2026-06-28
+**Scope:** This personal MacBook only (`~/.hermes/`)
+**Reason:** Hermes' `hermes_cli/env_loader.py:168` calls `_load_dotenv_with_fallback(user_env, override=True)`, which clobbers `os.environ` values with the literal contents of `~/.hermes/.env` on every chat-subprocess spawn. With `op run --env-file=~/.hermes/.env`, this means the secret values resolved from `op://` refs get clobbered back to the literal `op://...` strings, breaking every cloud-routed call.
+
+**Upstream tracking:**
+- [NousResearch/hermes-agent#19201](https://github.com/NousResearch/hermes-agent/issues/19201) — the bug (12-factor precedence violation; `type/bug`, P2)
+- [NousResearch/hermes-agent#18734](https://github.com/NousResearch/hermes-agent/pull/18734) — the PR with the `override=True` → `override=False` fix in flight (community-authored, well-reviewed, awaiting merge)
+- [NousResearch/hermes-agent#36949](https://github.com/NousResearch/hermes-agent/issues/36949) — related feature request: native 1Password (`op://`) secret-source backend
+- [LAF-US/IDAHO-VAULT#690](https://github.com/LAF-US/IDAHO-VAULT/issues/690) — our tracker
+- [`IDAHO-VAULT/!/SIGNALS/TOUCHING-ME-TOUCHING-NOUS-2026-06-25.md`](https://github.com/LAF-US/IDAHO-VAULT/blob/logan/obsidian/!/SIGNALS/TOUCHING-ME-TOUCHING-NOUS-2026-06-25.md) — witness leaf for the upstream contact arc
+
+---
+
+## What the workaround does
+
+**Splits secrets out of `~/.hermes/.env`** (which `load_hermes_dotenv` reads with `override=True`) **into a sibling file `~/.hermes/.env.op`** (which `load_hermes_dotenv` does NOT read — it's an intentionally non-`.env`-named file from python-dotenv's perspective, even though structurally it's `.env`-shaped).
+
+**File responsibilities after split:**
+
+| File | Contents | Loaded by `load_hermes_dotenv`? |
+|---|---|---|
+| `~/.hermes/.env` | `OP_SERVICE_ACCOUNT_TOKEN` (bootstrap), `SUDO_PASSWORD` (special), 12 plaintext config vars (ALLOWED_USERS, HOME_CHANNEL, OBSIDIAN_VAULT_PATH, TERMINAL_*, WHATSAPP_*, HASS_URL, etc.) | Yes — but it has no secrets to clobber |
+| `~/.hermes/.env.op` | 23 `KEY="op://Vault/Item/credential"` references for every secret-bearing env var (DISCORD_BOT_TOKEN, OPENROUTER_API_KEY, ANTHROPIC_API_KEY, MISTRAL_API_KEY, etc.) | **No** — Hermes never sees this file |
+
+**Resolution path:**
+
+1. launchd execs `~/.hermes/bin/hermes-gateway-launch.sh`
+2. Shim reads `OP_SERVICE_ACCOUNT_TOKEN` from `.env`, exports it
+3. Shim iterates `.env.op`, calls `op read <ref>` for each line, exports the resolved value into process env
+4. Shim execs `python -m hermes_cli.main gateway run --replace` directly (NOT through `op run` anymore)
+5. Python startup calls `load_hermes_dotenv()`, which reads `.env`. Sees `OP_SERVICE_ACCOUNT_TOKEN`, `SUDO_PASSWORD`, and the config vars — those are loaded (and may override stale shell exports, which is fine for these specifically). Crucially, the secret-bearing keys (DISCORD_BOT_TOKEN, OPENROUTER_API_KEY, etc.) are **not in `.env` at all**, so `load_hermes_dotenv` has nothing to override them with. The resolved values from step 3 survive into the running daemon.
+6. Hermes' `get_env_value(key)` checks `os.environ` first, finds the resolved value, returns it. Cloud routes work.
+
+---
+
+## Hygiene
+
+- Resolved secrets live only in process env for the daemon's lifetime. No tmpfs file, no `.env` modification, no plaintext on disk. Same security envelope as the previous `op run --env-file` approach.
+- Both `.env` and `.env.op` are mode 600.
+- Shim fails loudly (`exit 79`) if any single `op read` call fails or returns empty — daemon refuses to start with partial credentials. No silent 401s.
+
+---
+
+## How to revert (when #18734 lands)
+
+When `hermes update` brings down the upstream fix (`override=False` becomes the default, or `HERMES_DOTENV_OVERRIDE=1` gates the old behavior), pick one:
+
+### Option A — keep the workaround running
+
+It still works regardless of the override flag. Cost: ~17 sequential `op read` calls at every daemon launch, ~5–15 seconds of startup overhead. If that doesn't bother you, no action needed.
+
+### Option B — revert to the simpler `op run` shim
+
+1. **Move op-refs back into `.env`:**
+   ```sh
+   # Strip the header comment block from .env.op, then append the rest to .env
+   grep -v '^#' ~/.hermes/.env.op | grep -v '^$' >> ~/.hermes/.env
+   ```
+2. **Delete the .env.op file:**
+   ```sh
+   rm ~/.hermes/.env.op
+   ```
+3. **Restore the pre-workaround shim from the timestamped backup:**
+   ```sh
+   ls -t ~/.hermes/bin/hermes-gateway-launch.sh.bak.preworkaround.* | head -1 | xargs -I{} cp {} ~/.hermes/bin/hermes-gateway-launch.sh
+   chmod 700 ~/.hermes/bin/hermes-gateway-launch.sh
+   ```
+4. **Bounce the daemon:**
+   ```sh
+   launchctl unload ~/Library/LaunchAgents/ai.hermes.gateway.plist
+   launchctl load -w ~/Library/LaunchAgents/ai.hermes.gateway.plist
+   ```
+5. **Verify cloud routes** (Discord login, OpenRouter calls, etc. should succeed).
+6. **Optionally delete this README:** `rm ~/.hermes/README-workaround.md`
+
+---
+
+## Backups taken at workaround application (2026-06-28)
+
+| Path | Purpose |
+|---|---|
+| `~/.hermes/.env.bak.preworkaround.20260628-212323` | Pre-split `.env` with all 23 op:// refs and config combined |
+| `~/.hermes/bin/hermes-gateway-launch.sh.bak.preworkaround.20260628-212323` | Pre-workaround shim (single `op run --env-file` invocation) |
+
+These backups are the bedrock for Option B above — if anything later mutates the current files, the backups remain the canonical "pre-workaround" state.
+
+---
+
+## Known limitation while this workaround is active
+
+Any `hermes <subcommand>` invoked from a normal shell sees no API-key credentials. `hermes status --all`, `hermes doctor`, `hermes config show`, `hermes chat`, `hermes send`, etc. all call `load_hermes_dotenv()` on `~/.hermes/.env` and find no secret-bearing vars there — because we deliberately moved them all to `.env.op`. The credentials only live in the **daemon's** process env (shim-injected at launch time). So `hermes doctor` will keep flagging "No API key found in `~/.hermes/.env`" and listing tools as missing credentials, and `hermes status --all` will show every "API Keys" row as `✗`, even though the daemon itself has the keys and is working.
+
+The daemon is the only credentialed surface; CLI subcommands run from outside it are not. Treat that as a known cost of the workaround, not a separate bug to chase. Closes when upstream `#18734` lands and we can revert per Option B above.
+
+## What this workaround does NOT change
+
+- `~/.hermes/config.yaml` — untouched. Fallback chain, provider declarations, provider_routing block all unchanged.
+- The launchd plist `~/Library/LaunchAgents/ai.hermes.gateway.plist` — untouched. Still invokes the shim as `ProgramArguments[0]` with the python command appended.
+- 1Password vault contents — untouched. Same items, same fields, same op:// reference shape.
+- Anything in `IDAHO-VAULT/` — untouched on the local-state side. The vault witness at `!/SIGNALS/TOUCHING-ME-TOUCHING-NOUS-2026-06-25.md` covers the upstream-contact arc; a brief follow-up note on `LAF-US/IDAHO-VAULT#690` records the workaround application.
+
+---
+
+## Cross-reference
+
+If you're reading this README without context, the full session arc that led here is captured in:
+- `IDAHO-VAULT/HERMES-WITNESS-COMPANION-2026-06-24.md` — the prior witness covering the op:// rollout and the static fallback chain v3 wiring
+- `IDAHO-VAULT/!/SIGNALS/TOUCHING-ME-TOUCHING-NOUS-2026-06-25.md` — the swarm's first lawful contact with `NousResearch/hermes-agent` over this same issue family

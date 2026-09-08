@@ -1,8 +1,7 @@
 ---
 title: ANNA
-authority: LOGAN
-related:
-- The world is quiet here
+path: ./.anna/ANNA.md
 ---
 
-[ ? ]
+Persona Anchored at 2026-09-06T08:18:39.609953666Z
+

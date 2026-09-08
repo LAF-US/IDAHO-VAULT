@@ -1,6 +1,13 @@
+---
+tags:
+  - important
+  - final-project
+  - todo
+---
+
 Project shape
 Working title: CROSSFRAMING-US
-Purpose: express the vault’s structural framing rules in Python so agents and tools can validate route maps, lane assignments, and house-level standing decisions from a closed grammar instead of from prose alone.
+Purpose: express the vault’s structural framing rules in [[Python]]/[[Jupyter]]/[[Jypytext]] so agents and tools can validate route maps, lane assignments, and house-level standing decisions from a closed grammar instead of from prose alone.
 
 This should be small, typed, and testable.
 

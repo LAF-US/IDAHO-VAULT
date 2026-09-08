@@ -1,12 +1,7 @@
 ---
 title: GITHOOKS
-authority: LOGAN
-related:
-  - GITHOOKS
-  - imported_software
-  - runtime
+path: ./.githooks/GITHOOKS.md
 ---
 
-**.githooks** — Imported software runtime persona.
+Persona Anchored at 2026-09-06T08:34:29.092935868Z
 
-githooks runtime and configuration.

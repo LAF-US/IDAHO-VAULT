@@ -1,13 +1,7 @@
 ---
 title: OPENCLAW
-authority: LOGAN
-related:
-  - OPENCLAW
-  - imported_software
-  - runtime
+path: ./.openclaw/OPENCLAW.md
 ---
 
-**.openclaw** — OpenClaw persona.
+Persona Anchored at 2026-09-06T08:34:27.408778835Z
 
-1Password and Discord/Signal integration setup docs, extension payloads, and
-live registry reference (`openclaw-live-ref.json`) for the OpenClaw runtime.

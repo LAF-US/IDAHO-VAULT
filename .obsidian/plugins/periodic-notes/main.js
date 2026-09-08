@@ -5557,3 +5557,5 @@ class PeriodicNotesPlugin extends obsidian.Plugin {
 }
 
 module.exports = PeriodicNotesPlugin;
+
+/* nosourcemap */

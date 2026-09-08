@@ -1,12 +1,7 @@
 ---
 title: BIGPICKLE
-authority: LOGAN
-related:
-  - BIGPICKLE
-  - imported_software
-  - runtime
+path: ./.bigpickle/BIGPICKLE.md
 ---
 
-**.bigpickle** — Imported software runtime persona.
+Persona Anchored at 2026-09-06T08:34:28.965095581Z
 
-bigpickle runtime and configuration.

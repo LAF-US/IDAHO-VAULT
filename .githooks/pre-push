@@ -1,3 +1,120 @@
-#!/bin/sh
-command -v git-lfs >/dev/null 2>&1 || { printf >&2 "\n%s\n\n" "This repository is configured for Git LFS but 'git-lfs' was not found on your path. If you no longer wish to use Git LFS, remove this hook by deleting the 'pre-push' file in the hooks directory (set by 'core.hookspath'; usually '.git/hooks')."; exit 2; }
-git lfs pre-push "$@"
+#!/usr/bin/env sh
+# .githooks/pre-push — over the outgoing push, run three checks then hand off
+# the LFS transfer: file sizes vs GitHub's limits; gitleaks over the commit
+# range; trufflehog (verified) over the changed files; then git-lfs. Fails
+# CLOSED: missing engine, scan error, oversized file, or secret finding all block.
+#
+# Protocol: git feeds lines "<local ref> <local oid> <remote ref> <remote oid>"
+# on stdin. `git lfs pre-push` consumes the SAME stdin format, so stdin is
+# buffered once here and replayed for LFS at the end. A remote oid of all
+# zeros means the remote ref is being created.
+set -u
+
+printf >&2 'pre-push: ran at %s\n' "$(date '+%Y-%m-%dT%H:%M:%S%z')"
+
+ZERO=0000000000000000000000000000000000000000
+TAB=$(printf '\t')
+fail() { printf >&2 'pre-push: %s\n' "$*"; exit 1; }
+
+command -v gitleaks   >/dev/null 2>&1 || fail 'gitleaks not on PATH - secret gate fails closed; push blocked.'
+command -v trufflehog >/dev/null 2>&1 || fail 'trufflehog not on PATH - secret gate fails closed; push blocked.'
+command -v git-lfs    >/dev/null 2>&1 || fail 'git-lfs not on PATH - LFS transfer gate fails closed; push blocked.'
+
+if command -v python3 >/dev/null 2>&1; then
+  PYTHON=python3
+elif command -v python >/dev/null 2>&1; then
+  PYTHON=python
+else
+  fail 'Python is required for storage ownership checks.'
+fi
+
+refs=$(cat)
+[ -n "$refs" ] || exit 0    # nothing to push
+
+blocked=0
+while IFS=' ' read -r local_ref local_oid remote_ref remote_oid; do
+  [ -n "$local_ref" ] || continue
+  [ "$local_oid" = "$ZERO" ] && continue   # deleting a remote ref: nothing to scan
+
+  "$PYTHON" .github/scripts/vault_git_storage.py check --ref "$local_oid" ||
+    fail "Git, LFS, and annex ownership validation failed for $local_ref ($local_oid)."
+
+  if [ "$remote_oid" = "$ZERO" ] || ! git cat-file -e "$remote_oid^{commit}" 2>/dev/null; then
+    # New remote ref (or remote tip unknown locally): bound by origin refs.
+    logopts="$local_oid --not --remotes=origin"
+    default=$(git symbolic-ref --quiet refs/remotes/origin/HEAD 2>/dev/null || echo refs/remotes/origin/main)
+    base=$(git merge-base "$local_oid" "$default" 2>/dev/null || echo "$default")
+  else
+    logopts="$remote_oid..$local_oid"
+    base=$remote_oid
+  fi
+
+  # --- file sizes vs GitHub's limits -------------------------------------
+  # GitHub blocks non-LFS files >100 MiB and rejects LFS files >2 GiB on
+  # Free/Pro (docs: about-large-files-on-github; about-git-large-file-storage).
+  # Scoped to the NEW objects in the push range. Non-LFS sizes come straight
+  # from cat-file; LFS sizes are read from the (tiny) pointer blobs' `size`
+  # field -- a whole-tree `git lfs ls-files` is 50s+ on this repo, never called.
+  objs=$(git rev-list --objects $logopts 2>/dev/null \
+    | git cat-file --batch-check='%(objecttype) %(objectsize) %(objectname) %(rest)' 2>/dev/null)
+  # non-LFS: real blob size (pointer blobs are ~130 B, below the warn floor)
+  sz_report=$(printf '%s\n' "$objs" | awk 'BEGIN{B=104857600;W=52428800}
+      $1=="blob" && NF>3 { p=$0; sub(/^blob [0-9]+ [0-9a-f]+ /,"",p);
+        if ($2+0>B) printf "BLOCK  %s  (%d MiB, non-LFS - GitHub blocks >100 MiB)\n",p,$2/1048576;
+        else if ($2+0>W) printf "WARN  %s  (%d MiB, non-LFS - GitHub warns >50 MiB)\n",p,$2/1048576 }')
+  # LFS: candidate pointer blobs are tiny; read each and flag declared size >2 GiB
+  lfs_report=$(printf '%s\n' "$objs" \
+    | awk -v T="$TAB" '$1=="blob" && $2+0>=100 && $2+0<=400 { oid=$3; p=$0; sub(/^blob [0-9]+ [0-9a-f]+ /,"",p); print oid T p }' \
+    | while IFS="$TAB" read -r oid p; do
+        real=$(git cat-file -p "$oid" 2>/dev/null | sed -n 's/^size //p' | head -1)
+        case "$real" in ''|*[!0-9]*) continue ;; esac
+        if [ "$real" -gt 2147483648 ]; then
+          gib=$(awk "BEGIN{printf \"%.2f\", $real/1073741824}")
+          printf 'BLOCK  %s  (%s GiB, LFS - GitHub rejects >2 GiB on Free/Pro)\n' "$p" "$gib"
+        fi
+      done)
+  sz_report=$(printf '%s\n%s\n' "$sz_report" "$lfs_report")
+  if printf '%s' "$sz_report" | grep -q '^BLOCK'; then
+    printf >&2 'pre-push: files exceed GitHub size limits on %s:\n' "$local_ref"
+    printf '%s\n' "$sz_report" | grep '^BLOCK' | sed 's/^BLOCK//' >&2
+    printf >&2 '  remedy: >100 MiB -> Git LFS; >2 GiB -> configured annex/external storage.\n'
+    blocked=1
+  fi
+  printf '%s\n' "$sz_report" | grep '^WARN' | sed 's/^WARN  /pre-push warning: /' >&2 2>/dev/null || :
+
+  # --- gitleaks: secret scan of the outgoing commit range (offline) ------
+  if ! gitleaks git --log-opts "$logopts" --redact --verbose --no-color --no-banner; then
+    printf >&2 'pre-push: gitleaks flagged %s (range: %s). Values redacted above.\n' "$local_ref" "$logopts"
+    blocked=1
+  fi
+
+  # --- trufflehog: verified secret scan of the changed files (filesystem) -
+  # `trufflehog git` clones this 84k-file/13GB repo per run (5 min+, proven
+  # non-viable); filesystem mode scans the CHANGED files' tip content in ~1s
+  # and still verifies against provider APIs. gitleaks already covers the full
+  # history, so a secret that appeared then vanished mid-range is still caught.
+  # We gate on verified (live) + unknown (verification errored / offline = fail
+  # closed). Findings are detected by emitted JSON (not exit code);
+  # --fail-on-scan-errors makes only genuine scan errors non-zero, which we
+  # treat as fail-closed. -z/xargs -0 keeps space/unicode paths safe.
+  th_out=$(git diff -z --name-only --diff-filter=ACMRT "$base" "$local_oid" 2>/dev/null \
+    | xargs -0 -r trufflehog filesystem --results=verified,unknown --json \
+        --no-update --fail-on-scan-errors 2>/dev/null)
+  th_rc=$?
+  if [ "$th_rc" -ne 0 ]; then
+    printf >&2 'pre-push: trufflehog scan error (exit %s) on %s - fail closed.\n' "$th_rc" "$local_ref"
+    blocked=1
+  elif printf '%s' "$th_out" | grep -q '"DetectorName"'; then
+    printf >&2 'pre-push: trufflehog found verified/unknown secret(s) on %s:\n' "$local_ref"
+    printf '%s\n' "$th_out" | grep -oiE '"file":"[^"]*"' | sort -u | sed 's/^/  /' >&2
+    blocked=1
+  fi
+done <<EOF
+$refs
+EOF
+
+[ "$blocked" -eq 0 ] || fail 'one or more checks failed - push blocked. Fix findings; do not bypass hooks.'
+
+# --- git-lfs: object transfer (replay the original stdin) ---------------
+printf '%s\n' "$refs" | git lfs pre-push "$@"
+exit $?

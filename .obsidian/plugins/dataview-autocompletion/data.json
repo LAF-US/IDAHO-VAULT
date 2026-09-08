@@ -1,0 +1,8 @@
+{
+  "ignoredFields": [
+    "created.*",
+    "modified.*",
+    "date"
+  ],
+  "ignoredFiles": []
+}

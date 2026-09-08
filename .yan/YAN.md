@@ -1,0 +1,7 @@
+---
+title: YAN
+path: ./.yan/YAN.md
+---
+
+Persona Anchored at 2026-09-06T08:34:30.654617718Z
+

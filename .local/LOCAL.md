@@ -1,12 +1,7 @@
 ---
 title: LOCAL
-authority: LOGAN
-related:
-  - LOCAL
-  - imported_software
-  - runtime
+path: ./.local/LOCAL.md
 ---
 
-**.local** — Local user runtime persona.
+Persona Anchored at 2026-09-06T08:34:28.737713316Z
 
-Per-user binaries, shared data (agent auth, tool state), and machine-local state.

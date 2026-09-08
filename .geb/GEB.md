@@ -1,8 +1,7 @@
 ---
 title: GEB
-authority: LOGAN
-related:
-- The world is quiet here
+path: ./.geb/GEB.md
 ---
 
-[ ? ]
+Persona Anchored at 2026-09-06T08:34:29.425778785Z
+

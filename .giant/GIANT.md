@@ -1,12 +1,7 @@
 ---
 title: GIANT
-authority: LOGAN
-related:
-  - GIANT
-  - imported_software
-  - runtime
+path: ./.giant/GIANT.md
 ---
 
-**.giant** — Imported software runtime persona.
+Persona Anchored at 2026-09-06T08:34:29.083219618Z
 
-giant runtime and configuration.

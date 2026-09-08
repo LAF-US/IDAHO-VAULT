@@ -1,8 +1,7 @@
 ---
 title: BADB
-authority: LOGAN
-related:
-- The world is quiet here
+path: ./.badb/BADB.md
 ---
 
-[ ? ]
+Persona Anchored at 2026-09-06T08:34:28.934721805Z
+

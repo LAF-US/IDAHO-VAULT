@@ -1,8 +1,7 @@
 ---
 title: DEBBY
-authority: LOGAN
-related:
-- The world is quiet here
+path: ./.debby/DEBBY.md
 ---
 
-[ ? ]
+Persona Anchored at 2026-09-06T08:18:39.905910958Z
+

@@ -1,8 +1,7 @@
 ---
 title: CHURCHILL
-authority: LOGAN
-related:
-- The world is quiet here
+path: ./.churchill/CHURCHILL.md
 ---
 
-[ ? ]
+Persona Anchored at 2026-09-06T08:34:27.550609513Z
+

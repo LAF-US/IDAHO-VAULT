@@ -1,11 +1,7 @@
 ---
 title: PYTHON
-authority: LOGAN
-related:
-- Python
-- runtime
+path: ./.python/PYTHON.md
 ---
 
-**.python** — Python runtime persona.
+Persona Anchored at 2026-09-06T08:34:28.173236154Z
 
-Placeholder for future Python-related agent or runtime notes.

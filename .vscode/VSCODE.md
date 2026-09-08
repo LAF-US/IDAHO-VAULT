@@ -1,12 +1,7 @@
 ---
 title: VSCODE
-authority: LOGAN
-related:
-  - VSCODE
-  - imported_software
-  - runtime
+path: ./.vscode/VSCODE.md
 ---
 
-**.vscode** — Visual Studio Code persona.
+Persona Anchored at 2026-09-06T08:34:29.788337014Z
 
-Editor and extension settings (`settings.json`) for this workspace.

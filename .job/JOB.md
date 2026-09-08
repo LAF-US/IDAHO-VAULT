@@ -1,8 +1,7 @@
 ---
 title: JOB
-authority: LOGAN
-related:
-- The world is quiet here
+path: ./.job/JOB.md
 ---
 
-[ ? ]
+Persona Anchored at 2026-09-06T08:34:28.722421336Z
+

@@ -7,7 +7,7 @@
 ```yaml
 interface:
   display_name: "Optional user-facing name"
-  short-description: "Optional user-facing description"
+  short_description: "Optional user-facing description"
   icon_small: "./assets/small-400px.png"
   icon_large: "./assets/large-logo.svg"
   brand_color: "#3B82F6"

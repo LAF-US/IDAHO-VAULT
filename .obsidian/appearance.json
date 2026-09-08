@@ -2,6 +2,8 @@
   "accentColor": "#ffffff",
   "theme": "obsidian",
   "enabledCssSnippets": [
-    "roygbiv-smtwtfs"
-  ]
+    "roygbiv-smtwtfs",
+    "custom-admonitions.acaba3"
+  ],
+  "showRibbon": true
 }

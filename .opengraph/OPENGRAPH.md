@@ -1,12 +1,7 @@
 ---
 title: OPENGRAPH
-authority: LOGAN
-related:
-  - OPENGRAPH
-  - imported_software
-  - runtime
+path: ./.opengraph/OPENGRAPH.md
 ---
 
-**.opengraph** — Imported software runtime persona.
+Persona Anchored at 2026-09-06T08:34:27.425925762Z
 
-opengraph runtime and configuration.

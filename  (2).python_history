@@ -1,0 +1,8 @@
+pip install notebook
+nd
+end
+venv
+python -m venv /env
+import venv
+python -m venv /env
+venv

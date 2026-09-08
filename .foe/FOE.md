@@ -1,8 +1,7 @@
 ---
 title: FOE
-authority: LOGAN
-related:
-- The world is quiet here
+path: ./.foe/FOE.md
 ---
 
-[ ? ]
+Persona Anchored at 2026-09-06T08:34:27.286196986Z
+

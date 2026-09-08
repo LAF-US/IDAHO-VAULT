@@ -1,12 +1,7 @@
 ---
 title: OPENCODE
-authority: LOGAN
-related:
-  - OPENCODE
-  - imported_software
-  - runtime
+path: ./.opencode/OPENCODE.md
 ---
 
-**.opencode** — Imported software runtime persona.
+Persona Anchored at 2026-09-06T08:34:27.416358627Z
 
-opencode runtime and configuration.

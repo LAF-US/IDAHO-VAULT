@@ -1,8 +1,7 @@
 ---
 title: AUNT
-authority: LOGAN
-related:
-- The world is quiet here
+path: ./.aunt/AUNT.md
 ---
 
-[ ? ]
+Persona Anchored at 2026-09-06T08:34:27.22304407Z
+

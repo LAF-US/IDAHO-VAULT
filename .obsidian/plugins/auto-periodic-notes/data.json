@@ -1,0 +1,37 @@
+{
+  "alwaysOpen": false,
+  "gitCommit": false,
+  "gitCommitMessage": "chore: latest notes from {DATE}",
+  "processTemplater": false,
+  "daily": {
+    "enabled": false,
+    "closeExisting": false,
+    "open": false,
+    "pin": false,
+    "excludeWeekends": false
+  },
+  "weekly": {
+    "enabled": false,
+    "closeExisting": false,
+    "open": false,
+    "pin": false
+  },
+  "monthly": {
+    "enabled": false,
+    "closeExisting": false,
+    "open": false,
+    "pin": false
+  },
+  "quarterly": {
+    "enabled": false,
+    "closeExisting": false,
+    "open": false,
+    "pin": false
+  },
+  "yearly": {
+    "enabled": false,
+    "closeExisting": false,
+    "open": false,
+    "pin": false
+  }
+}

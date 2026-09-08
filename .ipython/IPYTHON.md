@@ -1,12 +1,7 @@
 ---
 title: IPYTHON
-authority: LOGAN
-related:
-  - IPYTHON
-  - imported_software
-  - runtime
+path: ./.ipython/IPYTHON.md
 ---
 
-**.ipython** — Imported software runtime persona.
+Persona Anchored at 2026-09-06T08:34:28.050138029Z
 
-ipython runtime and configuration.

@@ -1,12 +1,7 @@
 ---
 title: FACTORY
-authority: LOGAN
-related:
-  - FACTORY
-  - imported_software
-  - runtime
+path: ./.factory/FACTORY.md
 ---
 
-**.factory** — Imported software runtime persona.
+Persona Anchored at 2026-09-06T08:34:26.942211075Z
 
-factory runtime and configuration.

@@ -1,8 +1,7 @@
 ---
 title: MAAT
-authority: LOGAN
-related:
-- The world is quiet here
+path: ./.maat/MAAT.md
 ---
 
-[ ? ]
+Persona Anchored at 2026-09-06T08:34:29.163332821Z
+

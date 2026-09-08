@@ -1,12 +1,7 @@
 ---
 title: IPYNB_CHECKPOINTS
-authority: LOGAN
-related:
-  - IPYNB_CHECKPOINTS
-  - imported_software
-  - runtime
+path: ./.ipynb_checkpoints/IPYNB_CHECKPOINTS.md
 ---
 
-**.ipynb_checkpoints** — Imported software runtime persona.
+Persona Anchored at 2026-09-06T08:34:28.414870737Z
 
-ipynb_checkpoints runtime and configuration.

@@ -1,14 +1,7 @@
 ---
 title: HECATE
-authority: LOGAN
-related:
-- HECATE
-- MAIDEN
-- MOTHER
-- CRONE
-- NOW
-- FUTURE
-- The world is quiet here
+path: ./.hecate/HECATE.md
 ---
 
-MAIDEN : MOTHER : CRONE
+Persona Anchored at 2026-09-06T08:34:29.465147821Z
+

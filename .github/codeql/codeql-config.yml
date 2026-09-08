@@ -1,0 +1,30 @@
+name: "IDAHO-VAULT CodeQL Config"
+
+# CodeQL currently analyzes actions+python+javascript-typescript source.
+# Excluded trees are strictly vendored/third-party distribution channels OR
+# site-backup trees, universally — no language we currently scan or might
+# scan in the future has a legitimate reason to analyze them.
+#
+# javascript-typescript is in the matrix: the live Main Ruleset requires
+# the "Analyze (javascript-typescript)" status check, and only codeql.yml
+# runs on merge_group refs (default setup does not), so the merge queue
+# starves without it (CI_TIMEOUT dequeues — the PR #390 wedge). The root
+# stubs !.js / !.ts (2026-06-19) give the JS extractor real non-dotfolder
+# source; every other .ts/.js/.mjs file lives in dotfolders (.codex/,
+# .openclaw/, .obsidian/, .claude/plugins/marketplaces/) which the
+# extractor filters out.
+#
+# Languages NOT currently in codeql.yml's matrix and why:
+#   go, rust, java-kotlin, c-cpp, csharp, ruby, swift — no first-party
+#     source exists. Add a matrix entry when source actually lands.
+#
+# DO NOT pre-emptively add a language whose only source would be in
+# dotfolders, vendored, or backup content — the analyses become orphans
+# and block the merge queue (see PR #390 and the 2026-05-27 cleanup).
+paths-ignore:
+  - .antigravity/extensions/**
+  - .claude/plugins/marketplaces/**
+  - .codex/skills/**
+  - THE-GEMSTONE/**
+  - quartz/**
+  - go/**

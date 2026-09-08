@@ -1,12 +1,7 @@
 ---
 title: GHCP-APPMOD
-authority: LOGAN
-related:
-  - GHCP-APPMOD
-  - imported_software
-  - runtime
+path: ./.ghcp-appmod/GHCP-APPMOD.md
 ---
 
-**.ghcp-appmod** — Imported software runtime persona.
+Persona Anchored at 2026-09-06T08:34:28.030231154Z
 
-ghcp-appmod runtime and configuration.

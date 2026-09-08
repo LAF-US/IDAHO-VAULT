@@ -1,12 +1,7 @@
 ---
 title: SBX-DENYBIN
-authority: LOGAN
-related:
-  - SBX-DENYBIN
-  - imported_software
-  - runtime
+path: ./.sbx-denybin/SBX-DENYBIN.md
 ---
 
-**.sbx-denybin** — Imported software runtime persona.
+Persona Anchored at 2026-09-06T08:34:29.730819332Z
 
-sbx-denybin runtime and configuration.

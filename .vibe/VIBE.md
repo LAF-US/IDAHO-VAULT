@@ -1,12 +1,7 @@
 ---
 title: VIBE
-authority: LOGAN
-related:
-  - VIBE
-  - imported_software
-  - runtime
+path: ./.vibe/VIBE.md
 ---
 
-**.vibe** — Imported software runtime persona.
+Persona Anchored at 2026-09-06T08:34:28.641644097Z
 
-vibe runtime and configuration.

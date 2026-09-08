@@ -1,12 +1,7 @@
 ---
 title: CONFIG
-authority: LOGAN
-related:
-  - CONFIG
-  - imported_software
-  - runtime
+path: ./.config/CONFIG.md
 ---
 
-**.config** — Imported software runtime persona.
+Persona Anchored at 2026-09-06T08:34:29.010868264Z
 
-config runtime and configuration.

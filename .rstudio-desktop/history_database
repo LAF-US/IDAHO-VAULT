@@ -1,0 +1,1547 @@
+1503953148441:demo()
+1503953173766:image.default()
+1503953177051:image()
+1503953200037:demo(package = .packages(all.available = TRUE))
+1504109028081:mean(4,9,4,5,6,7,11,2)
+1504109104960:x=c(5,11,2)
+1504109104961:mean(x)
+1504109317317:x
+1504109326952:median(x)\
+1504109335032:median(x)
+1504109343919:x=c(5,11,2)
+1504109343920:mean(x)
+1504109368120:summary(x)
+1504109401193:y=c(1,2,3,4,5)
+1504109401194:y
+1504109401195:fred=c(6,7,8,9,10)
+1504109401196:fred
+1504109401196:colors=c('yellow','red','orange','blue','purple')
+1504109401198:colors
+1504109401199:# This is a comment
+1504109401201:# rnorm will randomly generate values from a normal distribution
+1504109401201:# rnorm(n,mean,sd)
+1504109401202:# I just arbitrarely chose the values
+1504109401202:# mine is getting 100 values with mean 5 and std dev 1.3
+1504109401202:x=rnorm(100,5,1.3)
+1504109401203:# graphing
+1504109401203:hist(x)
+1504109401277:# vertical boxplot
+1504109401277:boxplot(x)
+1504109401310:# horizontal boxplot
+1504109401310:boxplot(x,horizontal = T)
+1504109401337:# This is a comment
+1504109401337:# summary statistics separately
+1504109401338:mean(x)
+1504109401338:var(x)
+1504109401340:sd(x)
+1504109401341:median(x)
+1504109401341:length(x)
+1504109401342:min(x)
+1504109401342:max(x)
+1504109401343:# summary statistics: 5# summary + mean
+1504109401343:summary(x)
+1504109415263:colors
+1504109419891:mean(colors)
+1504109439175:mean(y)
+1504109449770:sd(x)
+1504109469541:summary(y)
+1504109476581:summary(recycle)
+1504109524587:summary)recycle
+1504109530593:summary(recycle)
+1504109534879:recycle=c(1660,1820,1590,1440,1730,1680,1750,1720,1900,1570,1700,1900,1800,1770,2010,1580,1620,1690)
+1504109544298:summary(recycle)
+1504109576018:summary(recycle), sd(recycle), var(recycle)
+1504109585098:summary(recycle), sd(recycle), var(recycle)
+1504109610677:le)
+1504109610677:sd(recycle)
+1504109610679:var(recycle)
+1504109617884:summary(recycle)
+1504109617887:sd(recycle)
+1504109617887:var(recycle)
+1504109921019:boxplot(recycle)
+1504109938053:hist(recycle)
+1504114164154:y=c(1,2,3,4,5)
+1504114168455:y=c(1,2,3,4,5)
+1504114168456:y
+1504114168457:fred=c(6,7,8,9,10)
+1504114168457:fred
+1504114168458:colors=c('yellow','red','orange','blue','purple')
+1504114168458:colors
+1504114168460:# This is a comment
+1504114168460:# rnorm will randomly generate values from a normal distribution
+1504114168460:# rnorm(n,mean,sd)
+1504114168460:# I just arbitrarely chose the values
+1504114168461:# mine is getting 100 values with mean 5 and std dev 1.3
+1504114168461:x=rnorm(100,5,1.3)
+1504114168462:# graphing
+1504114168462:hist(x)
+1504114168497:# vertical boxplot
+1504114168497:boxplot(x)
+1504114168523:# horizontal boxplot
+1504114168524:boxplot(x,horizontal = T)
+1504114168544:# This is a comment
+1504114168544:# summary statistics separately
+1504114168544:mean(x)
+1504114168545:var(x)
+1504114168546:sd(x)
+1504114168546:median(x)
+1504114168547:length(x)
+1504114168547:min(x)
+1504114168548:max(x)
+1504114168548:# summary statistics: 5# summary + mean
+1504114168549:summary(x)
+1504114168556:recycle=c(1660,1820,1590,1440,1730,1680,1750,1720,1900,1570,1700,1900,1800,1770,2010,1580,1620,1690)
+1504114168557:summary(recycle)
+1504114168558:sd(recycle)
+1504114168559:var(recycle)
+1504114685076:recycle=c(1660,1820,1590,1440,1730,1680,1750,1720,1900,1570,1700,1900,1800,1770,2010,1580,1620,1690)
+1504114685077:recycle
+1504114685078:summary(recycle)
+1504114685079:var(recycle)
+1504114685080:sd(recycle)
+1504114685080:IQR(recycle)
+1504114685081:hist(recycle)
+1504114685095:boxplot(recycle)
+1507564506307:1-pnorm(5.9,4.9,0.6)
+1507564515355:#normal distribution
+1507564515356:mu=4.9
+1507564515357:stdev=0.6
+1507564515358:# P(x<5.8)
+1507564515358:pnorm(5.8,mu,stdev,lower.tail=F)
+1507564515360:# or
+1507564515360:1-pnorm(5.9,4.9,0.6)
+1507564534285:#normal distribution
+1507564534286:mu=4.9
+1507564534287:stdev=0.6
+1507564534287:# P(x<5.8)
+1507564534287:pnorm(5.8,mu,stdev,lower.tail=F)
+1507564534288:# or
+1507564534288:1-pnorm(5.8,4.9,0.6)
+1507564565732:#normal distribution
+1507564565732:k=5.8
+1507564565733:mu=4.9
+1507564565734:stdev=0.6
+1507564565734:# P(x<5.8)
+1507564565735:pnorm(k,mu,stdev,lower.tail=F)
+1507564565735:# or
+1507564565735:1-pnorm(k,mu,stdev)
+1507564683517:pnorm(1)
+1507564733272:# P(z<1)
+1507564733273:pnorm(1)
+1507564733274:# P(z>1)
+1507564733274:1-pnorm(1)
+1507564999070:sum(dbinom(210,n,p)
+1507564999071:n=250, p=.8, q= 1-p
+1507564999072:mu = n*p, sigma = sqrt(n*p*q)
+1507565010151:sum(dbinom(210,n,p)
+1507565010152:n=250, p=.8, q= 1-p
+1507565010153:mu = n*p, sigma = sqrt(n*p*q)
+1507565019210:sum(dbinom(210,n,p)
+1507565019210:n=250, p=.8, q= 1-p
+1507565019211:mu = n*p
+1507565019212:sigma = sqrt(n*p*q)
+1507565038927:sum(dbinom(210,n,p)
+1507565038927:n=250
+1507565038928:p=.8
+1507565038929:q= 1-p
+1507565038929:mu = n*p
+1507565038930:sigma = sqrt(n*p*q)
+1507565046117:sum(dbinom(210,n,p))
+1507565046118:n=250
+1507565046119:p=.8
+1507565046121:q= 1-p
+1507565046123:mu = n*p
+1507565046125:sigma = sqrt(n*p*q)
+1507565059696:sum(dbinom(210,n,p))
+1507565059696:n = 250
+1507565059697:p = .8
+1507565059698:q = 1-p
+1507565059699:mu = n*p
+1507565059700:sigma = sqrt(n*p*q)
+1507565071002:n = 250
+1507565071002:p = .8
+1507565071004:q = 1-p
+1507565071005:mu = n*p
+1507565071006:sigma = sqrt(n*p*q)
+1507565071008:sum(dbinom(210,n,p))
+1508479439762:mu = 55
+1508479439766:sd = 6
+1508479439768:pnorm(x,mu,sd,lower.tail=)
+1508479439769:// P(x<48) //
+1508479860161:mu = 55
+1508479860162:sd = 6
+1508479860163:sum(pnorm(0:48, mu, sd))
+1508479891963:mu = 55
+1508479891964:sd = 6
+1508479891965:pnorm(48, mu, sd)
+1508479936112:mu = 55
+1508479936113:sd = 6
+1508479936114:pnorm(48, mu, sd, lower.tail=T)
+1508480100794:mu = 55
+1508480100795:sd = 6
+1508480100796:pnorm(48, mu, sd, lower.tail=T)
+1508480100797:qnorm(.90)
+1508480172149:mu = 55
+1508480172150:sd = 6
+1508480172151:pnorm(48, mu, sd, lower.tail=T)
+1508480172152:(qnorm(.90)(sd)) + mu
+1508480180102:mu = 55
+1508480180103:sd = 6
+1508480180104:pnorm(48, mu, sd, lower.tail=T)
+1508480180104:(qnorm(.90)(sd)) + mu
+1508480193747:mu = 55
+1508480193748:sd = 6
+1508480193749:pnorm(48, mu, sd, lower.tail=T)
+1508480193749:(qnorm(.90)*(sd)) + mu
+1508480272691:mu=55
+1508480272691:sd=6
+1508480272693:pnorm(48, mu, sd)
+1508480272693:pnorm(65,mu,sd) – pnorm(60,mu,sd)
+1508480272694:(qnorm(.90)*(sd))+mu
+1508480272694:pnorm(54,mu,sd)
+1508480279811:mu=55
+1508480279811:sd=6
+1508480279812:pnorm(48, mu, sd)
+1508480279813:pnorm(65,mu,sd) – pnorm(60,mu,sd)
+1508480279813:(qnorm(.90)*(sd)) + mu
+1508480279814:pnorm(54,mu,sd)
+1508480295224:mu=55
+1508480295225:sd=6
+1508480295226:pnorm(48, mu, sd)
+1508480295227:pnorm(65,mu,sd) – pnorm(60,mu,sd)
+1508480295227:(qnorm(.90)*(sd)) + mu
+1508480295227:pnorm(54,mu,sd)
+1508480305983:mu=55
+1508480305984:sd=6
+1508480305984:pnorm(48, mu, sd)
+1508480305985:pnorm(65,mu,sd) - pnorm(60,mu,sd)
+1508480305985:(qnorm(.90)*(sd)) + mu
+1508480305986:pnorm(54,mu,sd)
+1508480322225:mu=55
+1508480322226:sd=6
+1508480322227:pnorm(48, mu, sd)
+1508480322227:pnorm(65,mu,sd) - pnorm(60,mu,sd)
+1508480322228:(qnorm(.90)*(sd)) + mu
+1508480322228:pnorm(54,mu,sd)
+1508480694572:dbinom(k,n,p)
+1508480694573:n = 10
+1508480694574:p = 0.9
+1508480694574:dbinom(97,n,p)
+1508480694575:dbinom(97,n,p)
+1508480694576:m = 10
+1508480694576:d.	sum(dbinom(1:m, m, p))
+1508480694577:e.	sum(dbinom(0:3,m,p))
+1508480706174:dbinom(k,n,p)
+1508480706174:n = 10
+1508480706175:p = 0.9
+1508480706176:dbinom(97,n,p)
+1508480706176:dbinom(97,n,p)
+1508480706177:m = 10
+1508480706177:sum(dbinom(1:m, m, p))
+1508480706178:sum(dbinom(0:3,m,p))
+1508480714030:n = 10
+1508480714030:p = 0.9
+1508480714031:dbinom(97,n,p)
+1508480714032:dbinom(97,n,p)
+1508480714032:m = 10
+1508480714033:sum(dbinom(1:m, m, p))
+1508480714033:sum(dbinom(0:3,m,p))
+1508480728273:n = 10
+1508480728274:p = 0.9
+1508480728275:dbinom(97,n,p)
+1508480728276:dbinom(97,n,p)
+1508480728276:m = 10
+1508480728277:sum(dbinom(1:m, m, p))
+1508480728277:sum(dbinom(0:3,m,p))
+1508480785143:n = 10
+1508480785144:p = 0.9
+1508480785144:dbinom(97,n,p)
+1508480785145:dbinom(97,n,p)
+1508480785146:m = 10
+1508480785146:sum(dbinom(1:m, m, p))
+1508480785146:sum(dbinom(3:m,m,p))
+1508480832194:n = 10
+1508480832195:p = 0.9
+1508480832195:dbinom(97,n,p)
+1508480966172:n = 100
+1508480966172:p = 0.9
+1508480966174:dbinom(97, n, p)
+1508480966174:dbinom(97,n,p)
+1508480966175:m = 10
+1508480966175:sum(dbinom(1:m, m, p))
+1508480966176:sum(dbinom(3:m,m,p))
+1508481059725:n = 100
+1508481059726:p = 0.9
+1508481059727:dbinom(97, n, p)
+1508481059728:dbinom(97,n,p)
+1508481059728:m = 10
+1508481059729:dbinom(1:m, m, p)
+1508481066019:n = 100
+1508481066020:p = 0.9
+1508481066021:dbinom(97, n, p)
+1508481066022:dbinom(97,n,p)
+1508481066023:m = 10
+1508481066024:sum(dbinom(1:m, m, p))
+1508481081867:n = 100
+1508481081868:p = 0.9
+1508481081869:dbinom(97, n, p)
+1508481081869:dbinom(97,n,p)
+1508481081870:m = 10
+1508481081871:1 - dbinom(0, m, p)
+1508483206763:dpois(k, λ)
+1508483206764:λ = 1.6
+1508483206765:EX = λ
+1508483206765:VX = λ
+1508483206766:SDX = √(λ)
+1508483262291:dpois(k, λ)
+1508483262292:λ = 1.6
+1508483262292:EX = λ
+1508483262293:VX = λ
+1508483262293:SDX = sqrt(λ)
+1508483267347:dpois(k, λ)
+1508483267347:λ = 1.6
+1508483267348:EX = λ
+1508483267349:VX = λ
+1508483267349:SDX = sqrt(λ)
+1508483283779:dpois(k, λ)
+1508483283780:λ = 1.6
+1508483283780:EX = λ =
+1508483283781:VX = λ =
+1508483283781:SDX = sqrt(λ) =
+1508483469644:dpois(k, λ)
+1508483469645:λ = 1.6
+1508483469646:EX = λ
+1508483469647:VX = λ
+1508483469648:SDX = sqrt(λ)
+1508483469650:dpois(5, λ)
+1508483469652:dpois(5:9, λ)
+1508483479150:sum(dpois(5:9, λ))
+1508483492998:dpois(k, λ)
+1508483492999:λ = 1.6
+1508483493000:EX = λ
+1508483493000:VX = λ
+1508483493001:SDX = sqrt(λ)
+1508483493001:dpois(5, λ)
+1508483493002:sum(dpois(5:9, λ))
+1508485567381:X ~ poi(λ)
+1508485567384:λ = 8
+1508485567384:dpois(6, λ)
+1508485567385:1 – sum(dpois(0:5, λ))
+1508485567385:sum(dpois(0:10, λ))
+1508485567386:1 – sum(dpois(0:9, 2.5λ))
+1508485579121:X ~ poi(λ)
+1508485579121:λ = 8
+1508485579122:dpois(6, λ)
+1508485579123:1 - sum(dpois(0:5, λ))
+1508485579123:sum(dpois(0:10, λ))
+1508485579124:1 - sum(dpois(0:9, 2.5λ))
+1508485597755:X ~ poi(λ)
+1508485597756:λ = 8
+1508485597757:dpois(6, λ)
+1508485597757:1 - sum(dpois(0:5, λ))
+1508485597758:sum(dpois(0:10, λ))
+1508485597758:1 - sum(dpois(0:9, 2.5*λ))
+1512438682266:# 2 sample proportion CI
+1512438682269:# you must run the whole function from ci.2prop through the last } for this to work
+1512438682269:ci.2prop=function(x1,x2,n1,n2,alpha){
+1512438682270:phat1=x1/n1; qhat1=1-phat1; phat2=x2/n2; qhat2=1-phat2
+1512438682271:pt.est=phat1-phat2; alpha=alpha; zstar=qnorm(1-alpha/2)
+1512438682271:se=sqrt((phat1*qhat1/n1)+(phat2*qhat2/n2)); moe=zstar*se
+1512438682272:lower=pt.est-moe; upper=pt.est+moe
+1512438682272:lowerpct=sprintf("%.2f%%",lower*100); upperpct=sprintf("%.2f%%",upper*100)
+1512438682273:print("Results of the Confidence Interval of the Difference of 2 Proportions")
+1512438682274:cat(" Critical Value of Z* =",zstar,"\n","SE =",se,"\n","Point Estimate of p1-p2 =",
+1512438682275:pt.est,"\n","Margin of Error =",moe,"\n","Lower Bound =",lower,
+1512438682275:"Upper Bound =",upper,"\n","Lower Bound (%) =",lowerpct,
+1512438682276:"Upper Bound (%) =",upperpct,"\n")
+1512438682276:results=list(zstar=zstar,se=se,pt.est=pt.est,moe=moe,lower=lower,upper=upper,
+1512438682276:lowerpct=lowerpct,upperpct=upperpct)
+1512438682277:}
+1512438682278:# CI with x1=15,x2=92,n1=182,n2=2300
+1512438682278:ci.2prop(x1=15,x2=92,n1=182,n2=2300,0.02)
+1512512001743:VMB=c(rep("Woodwind",each=30),rep("Brass",each=30), rep("Percussion",each=30))
+1512512001746:VMB
+1512512001748:# make a table to be able to graph it
+1512512001748:tVMB=table(stop)
+1512512001778:tVMB
+1512512001820:barplot(tVMB,main='Proportion of Music Majors \n in the Vandal Marching Band',col=grey.colors(2))
+1512512105832:Woodwind=c(rep("music",each=), rep("non-music",each=))
+1512512105833:Brass=c(rep("music",each=), rep("non-music",each=))
+1512512105834:Percussion=c(rep("music",each=), rep("non-music",each=))
+1512512105834:VMB=c(rep("Woodwind",each=30),rep("Brass",each=30), rep("Percussion",each=30))
+1512512105835:VMB
+1512512105836:table(VMB)
+1512512105837:barplot(table(VMB),main='Proportion of Music Majors \n in the Vandal Marching Band',col=grey.colors(2))
+1512514082464:Woodwind=c(rep("music",each=), rep("non-music",each=))
+1512514082466:Brass=c(rep("music",each=), rep("non-music",each=))
+1512514082467:Percussion=c(rep("music",each=), rep("non-music",each=))
+1512514082468:#VMB
+1512514082468:VMB=c(rep("Woodwind Music Majors",each=5),rep("Woodwind Non-Music Majors",each=25),rep("Brass Music Majors",each=8),rep("Brass Non-Music Majors",each=22),rep("Percussion Music Majors",each=9),rep("Percussion Non-Music Majors",each=21))
+1512514082469:VMB
+1512514082471:table(VMB)
+1512514082472:barplot(table(VMB),main='Proportion of Music Majors \n in the Vandal Marching Band',col=grey.colors(2))
+1512514259956:#VMB
+1512514259957:VMB=c(rep("WW Music Majors",each=5),rep("WW Non-Music Majors",each=25),rep("B Music Majors",each=8),rep("Brass Non-Music Majors",each=22),rep("Percussion Music Majors",each=9),rep("Percussion Non-Music Majors",each=21))
+1512514259958:VMB
+1512514259960:table(VMB)
+1512514259961:barplot(VMB),main='Proportion of Music Majors \n in the Vandal Marching Band',col=grey.colors(2))
+1512514268475:#VMB
+1512514268476:VMB=c(rep("WW Music Majors",each=5),rep("WW Non-Music Majors",each=25),rep("B Music Majors",each=8),rep("Brass Non-Music Majors",each=22),rep("Percussion Music Majors",each=9),rep("Percussion Non-Music Majors",each=21))
+1512514268477:VMB
+1512514268480:table(VMB)
+1512514268481:barplot(table(VMB),main='Proportion of Music Majors \n in the Vandal Marching Band',col=grey.colors(2))
+1512514298147:#VMB
+1512514298147:VMB=c(rep("WW Music Majors",each=5),rep("WW Non-Music Majors",each=25),rep("B Music Majors",each=8),rep("B Non-Music Majors",each=22),rep("P Music Majors",each=9),rep("P Non-Music Majors",each=21))
+1512514298148:VMB
+1512514298151:table(VMB)
+1512514298152:barplot(table(VMB),main='Proportion of Music Majors \n in the Vandal Marching Band',col=grey.colors(2))
+1512514388614:#VMB
+1512514388615:VMB=c(rep("Woodwind \n Majors",each=5),rep("Woodwind \n Non-Majors",each=25),rep("Brass \n Majors",each=8),rep("Brass \n Non-Majors",each=22),rep("Percussion \n Majors",each=9),rep("Percussion \n Non-Majors",each=21))
+1512514388616:VMB
+1512514388618:table(VMB)
+1512514388619:barplot(table(VMB),main='Proportion of Music Majors \n in the Vandal Marching Band',col=grey.colors(2))
+1512514446157:#VMB
+1512514446157:VMB=c(rep("Woodwind \n Majors",each=5),rep("Woodwind \n Non-Majors",each=25),rep("Brass \n Majors",each=8),rep("Brass \n Non-Majors",each=22),rep("Percussion \n Majors",each=9),rep("Percussion \n Non-Majors",each=21))
+1512514446159:VMB
+1512514446163:table(VMB)
+1512514446164:barplot(table(VMB),main='Proportion of Music Majors \n in the Vandal Marching Band',col=grey.colors(2))
+1512514446190:#Woodwind
+1512514446191:woodwind=c(rep("music",each=5), rep("non-music",each=25))
+1512514446192:woodwind
+1512514446193:table(woodwind)
+1512514446195:barplot(table(woodwind))
+1512514446218:#Brass
+1512514446219:brass=c(rep("music",each=8), rep("non-music",each=22))
+1512514446219:brass
+1512514446220:table(brass)
+1512514446222:barplot(table(brass))
+1512514446249:#Percussion
+1512514446249:percussion=c(rep("music",each=9), rep("non-music",each=21))
+1512514446250:percussion
+1512514446251:table(percussion)
+1512514446252:barplot(table(percussion))
+1512514560761:#VMB
+1512514560761:VMB=c(rep("Woodwind \n Majors",each=5),rep("Woodwind \n Non-Majors",each=25),rep("Brass \n Majors",each=8),rep("Brass \n Non-Majors",each=22),rep("Percussion \n Majors",each=9),rep("Percussion \n Non-Majors",each=21))
+1512514560762:VMB
+1512514560765:table(VMB)
+1512514560766:barplot(table(VMB),main='Proportion of Music Majors \n in the Vandal Marching Band',col=grey.colors(2))
+1512514560796:#Woodwind
+1512514560796:woodwind=c(rep("Music Majors",each=5), rep("Non-Music Majors",each=25))
+1512514560797:woodwind
+1512514560798:table(woodwind)
+1512514560799:barplot(table(woodwind),main='Proportion of Music Majors among \n VMB Woodwinds')
+1512514560823:#Brass
+1512514560823:brass=c(rep("Music Majors",each=8), rep("Non-Music Majors",each=22))
+1512514560824:brass
+1512514560825:table(brass)
+1512514560825:barplot(table(brass),main='Proportion of Music Majors among \n VMB Brass'))
+1512514560826:#Percussion
+1512514560826:percussion=c(rep("Music Majors",each=9), rep("Non-Music Majors",each=21))
+1512514560826:percussion
+1512514560827:table(percussion)
+1512514560828:barplot(table(percussion)main='Proportion of Music Majors among \n VMB Percussion'))
+1512514583263:#VMB
+1512514583264:VMB=c(rep("Woodwind \n Majors",each=5),rep("Woodwind \n Non-Majors",each=25),rep("Brass \n Majors",each=8),rep("Brass \n Non-Majors",each=22),rep("Percussion \n Majors",each=9),rep("Percussion \n Non-Majors",each=21))
+1512514583265:VMB
+1512514583268:table(VMB)
+1512514583271:barplot(table(VMB),main='Proportion of Music Majors \n in the Vandal Marching Band',col=grey.colors(2))
+1512514583299:#Woodwind
+1512514583300:woodwind=c(rep("Music Majors",each=5), rep("Non-Music Majors",each=25))
+1512514583300:woodwind
+1512514583301:table(woodwind)
+1512514583302:barplot(table(woodwind),main='Proportion of Music Majors \n among VMB Woodwinds')
+1512514583331:#Brass
+1512514583331:brass=c(rep("Music Majors",each=8), rep("Non-Music Majors",each=22))
+1512514583331:brass
+1512514583332:table(brass)
+1512514583333:barplot(table(brass),main='Proportion of Music Majors \n among VMB Brass'))
+1512514583333:#Percussion
+1512514583334:percussion=c(rep("Music Majors",each=9), rep("Non-Music Majors",each=21))
+1512514583334:percussion
+1512514583337:table(percussion)
+1512514583339:barplot(table(percussion)main='Proportion of Music Majors \n among VMB Percussion'))
+1512514610851:barplot(table(percussion),main='Proportion of Music Majors \n among VMB Percussion'))
+1512514619972:barplot(table(percussion),main='Proportion of Music Majors \n among VMB Percussion')
+1512514648140:#VMB
+1512514648141:VMB=c(rep("Woodwind \n Majors",each=5),rep("Woodwind \n Non-Majors",each=25),rep("Brass \n Majors",each=8),rep("Brass \n Non-Majors",each=22),rep("Percussion \n Majors",each=9),rep("Percussion \n Non-Majors",each=21))
+1512514648142:VMB
+1512514648144:table(VMB)
+1512514648145:barplot(table(VMB),main='Proportion of Music Majors \n in the Vandal Marching Band',col=grey.colors(2))
+1512514648178:#Woodwind
+1512514648179:woodwind=c(rep("Music Majors",each=5), rep("Non-Music Majors",each=25))
+1512514648179:woodwind
+1512514648180:table(woodwind)
+1512514648182:barplot(table(woodwind),main='Proportion of Music Majors \n among VMB Woodwinds',col=grey.colors(2))
+1512514648211:#Brass
+1512514648211:brass=c(rep("Music Majors",each=8), rep("Non-Music Majors",each=22))
+1512514648211:brass
+1512514648212:table(brass)
+1512514648213:barplot(table(brass),main='Proportion of Music Majors \n among VMB Brass'),col=grey.colors(2))
+1512514648213:#Percussion
+1512514648214:percussion=c(rep("Music Majors",each=9), rep("Non-Music Majors",each=21))
+1512514648214:percussion
+1512514648215:table(percussion)
+1512514648216:barplot(table(percussion),main='Proportion of Music Majors \n among VMB Percussion',col=grey.colors(2))
+1512514687021:#VMB
+1512514687024:VMB=c(rep("Woodwind \n Majors",each=5),rep("Woodwind \n Non-Majors",each=25),rep("Brass \n Majors",each=8),rep("Brass \n Non-Majors",each=22),rep("Percussion \n Majors",each=9),rep("Percussion \n Non-Majors",each=21))
+1512514687024:VMB
+1512514687027:table(VMB)
+1512514687028:barplot(table(VMB),main='Proportion of Music Majors \n in the Vandal Marching Band',col=grey.colors(2))
+1512514687056:#Woodwind
+1512514687056:woodwind=c(rep("Music Majors",each=5), rep("Non-Music Majors",each=25))
+1512514687058:woodwind
+1512514687060:table(woodwind)
+1512514687061:barplot(table(woodwind),main='Proportion of Music Majors \n among VMB Woodwinds',col=grey.colors(2))
+1512514687090:#Brass
+1512514687091:brass=c(rep("Music Majors",each=8), rep("Non-Music Majors",each=22))
+1512514687091:brass
+1512514687093:table(brass)
+1512514687094:barplot(table(brass),main='Proportion of Music Majors \n among VMB Brass',col=grey.colors(2))
+1512514687117:#Percussion
+1512514687118:percussion=c(rep("Music Majors",each=9), rep("Non-Music Majors",each=21))
+1512514687118:percussion
+1512514687120:table(percussion)
+1512514687123:barplot(table(percussion),main='Proportion of Music Majors \n among VMB Percussion',col=grey.colors(2))
+1512516634015:#VMB
+1512516634016:VMB=c(rep("Woodwind \n Majors",each=5),rep("Woodwind \n Non-Majors",each=25),rep("Brass \n Majors",each=8),rep("Brass \n Non-Majors",each=22),rep("Percussion \n Majors",each=9),rep("Percussion \n Non-Majors",each=21))
+1512516634017:VMB
+1512516634021:table(VMB)
+1512516634022:barplot(table(VMB),main='Proportion of Music Majors \n in the Vandal Marching Band',col=grey.colors(2))
+1512516634035:#Woodwind
+1512516634036:woodwind=c(rep("Music Majors",each=5), rep("Non-Music Majors",each=25))
+1512516634037:woodwind
+1512516634038:table(woodwind)
+1512516634039:barplot(table(woodwind),main='Proportion of Music Majors \n among VMB Woodwinds',col=grey.colors(2))
+1512516634063:#Brass
+1512516634063:brass=c(rep("Music Majors",each=8), rep("Non-Music Majors",each=22))
+1512516634064:brass
+1512516634065:table(brass)
+1512516634067:barplot(table(brass),main='Proportion of Music Majors \n among VMB Brass',col=grey.colors(2))
+1512516634099:#Percussion
+1512516634099:percussion=c(rep("Music Majors",each=9), rep("Non-Music Majors",each=21))
+1512516634100:percussion
+1512516634101:table(percussion)
+1512516634102:barplot(table(percussion),main='Proportion of Music Majors \n among VMB Percussion',col=grey.colors(2))
+1512516634129:#
+1512516634129:# 1-sample proportion Confidence Interval
+1512516634129:ci.1prop=function(x,n,alpha){
+1512516634129:phat=x/n; qhat=1-phat; alpha=alpha; zstar=qnorm(1-alpha/2)
+1512516634130:cl=(1-alpha); cl.perc=sprintf("%.0f%%",cl*100)
+1512516634131:se=sqrt(phat*qhat/n); moe=zstar*se
+1512516634131:lower=phat-moe; upper=phat+moe
+1512516634131:lowerpct=sprintf("%.2f%%",lower*100); upperpct=sprintf("%.2f%%",upper*100)
+1512516634132:cat(" ","\n","CI for 1-sample proportion","\n","Confidence Level =",cl.perc,
+1512516634132:"\n","Critical Value of Z* =",zstar,"\n","SE =",se,"\n","Point Estimate of p =",phat,"\n",
+1512516634133:"Margin of Error =",moe,"\n","Lower Bound =",lower,"Upper Bound =",upper,"\n","Lower Bound (%) =",
+1512516634133:lowerpct,"Upper Bound (%) =",upperpct,"\n","","\n")
+1512516634133:results=list(zstar=zstar,se=se,phat=phat,moe=moe,lower=lower,upper=upper,
+1512516634134:lowerpct=lowerpct,upperpct=upperpct)
+1512516634134:}
+1512516634135:# CI with x=15, n=182
+1512516634135:ci.1prop(x=15,n=30,0.05)
+1512545647925:#VMB
+1512545647926:VMB=c(rep("Woodwind \n Majors",each=5),rep("Woodwind \n Non-Majors",each=25),rep("Brass \n Majors",each=8),rep("Brass \n Non-Majors",each=22),rep("Percussion \n Majors",each=9),rep("Percussion \n Non-Majors",each=21))
+1512545647926:VMB
+1512545647930:table(VMB)
+1512545647933:barplot(table(VMB),main='Proportion of Music Majors \n in the Vandal Marching Band',col=grey.colors(2))
+1512545647948:#Woodwind
+1512545647949:woodwind=c(rep("Music Majors",each=5), rep("Non-Music Majors",each=25))
+1512545647949:woodwind
+1512545647950:table(woodwind)
+1512545647951:barplot(table(woodwind),main='Proportion of Music Majors \n among VMB Woodwinds',col=grey.colors(2))
+1512545647975:# 1-sample proportion Confidence Interval
+1512545647975:ci.1prop=function(x,n,alpha){
+1512545647976:phat=x/n; qhat=1-phat; alpha=alpha; zstar=qnorm(1-alpha/2)
+1512545647976:cl=(1-alpha); cl.perc=sprintf("%.0f%%",cl*100)
+1512545647977:se=sqrt(phat*qhat/n); moe=zstar*se
+1512545647977:lower=phat-moe; upper=phat+moe
+1512545647978:lowerpct=sprintf("%.2f%%",lower*100); upperpct=sprintf("%.2f%%",upper*100)
+1512545647979:cat(" ","\n","CI for 1-sample proportion","\n","Confidence Level =",cl.perc,
+1512545647980:"\n","Critical Value of Z* =",zstar,"\n","SE =",se,"\n","Point Estimate of p =",phat,"\n",
+1512545647980:"Margin of Error =",moe,"\n","Lower Bound =",lower,"Upper Bound =",upper,"\n","Lower Bound (%) =",
+1512545647981:lowerpct,"Upper Bound (%) =",upperpct,"\n","","\n")
+1512545647982:results=list(zstar=zstar,se=se,phat=phat,moe=moe,lower=lower,upper=upper,
+1512545647982:lowerpct=lowerpct,upperpct=upperpct)
+1512545647983:}
+1512545647984:ci.1prop(x=5,n=30,0.05)
+1512545648024:#Brass
+1512545648024:brass=c(rep("Music Majors",each=8), rep("Non-Music Majors",each=22))
+1512545648024:brass
+1512545648025:table(brass)
+1512545648026:barplot(table(brass),main='Proportion of Music Majors \n among VMB Brass',col=grey.colors(2))
+1512545648050:# 1-sample proportion Confidence Interval
+1512545648050:ci.1prop=function(x,n,alpha){
+1512545648050:phat=x/n; qhat=1-phat; alpha=alpha; zstar=qnorm(1-alpha/2)
+1512545648051:cl=(1-alpha); cl.perc=sprintf("%.0f%%",cl*100)
+1512545648052:se=sqrt(phat*qhat/n); moe=zstar*se
+1512545648052:lower=phat-moe; upper=phat+moe
+1512545648053:lowerpct=sprintf("%.2f%%",lower*100); upperpct=sprintf("%.2f%%",upper*100)
+1512545648054:cat(" ","\n","CI for 1-sample proportion","\n","Confidence Level =",cl.perc,
+1512545648054:"\n","Critical Value of Z* =",zstar,"\n","SE =",se,"\n","Point Estimate of p =",phat,"\n",
+1512545648055:"Margin of Error =",moe,"\n","Lower Bound =",lower,"Upper Bound =",upper,"\n","Lower Bound (%) =",
+1512545648056:lowerpct,"Upper Bound (%) =",upperpct,"\n","","\n")
+1512545648056:results=list(zstar=zstar,se=se,phat=phat,moe=moe,lower=lower,upper=upper,
+1512545648057:lowerpct=lowerpct,upperpct=upperpct)
+1512545648057:}
+1512545648058:ci.1prop(x=8,n=30,0.05)
+1512545648084:#Percussion
+1512545648084:percussion=c(rep("Music Majors",each=9), rep("Non-Music Majors",each=21))
+1512545648085:percussion
+1512545648086:table(percussion)
+1512545648088:barplot(table(percussion),main='Proportion of Music Majors \n among VMB Percussion',col=grey.colors(2))
+1512545648115:# 1-sample proportion Confidence Interval
+1512545648115:ci.1prop=function(x,n,alpha){
+1512545648116:phat=x/n; qhat=1-phat; alpha=alpha; zstar=qnorm(1-alpha/2)
+1512545648116:cl=(1-alpha); cl.perc=sprintf("%.0f%%",cl*100)
+1512545648117:se=sqrt(phat*qhat/n); moe=zstar*se
+1512545648117:lower=phat-moe; upper=phat+moe
+1512545648118:lowerpct=sprintf("%.2f%%",lower*100); upperpct=sprintf("%.2f%%",upper*100)
+1512545648119:cat(" ","\n","CI for 1-sample proportion","\n","Confidence Level =",cl.perc,
+1512545648119:"\n","Critical Value of Z* =",zstar,"\n","SE =",se,"\n","Point Estimate of p =",phat,"\n",
+1512545648119:"Margin of Error =",moe,"\n","Lower Bound =",lower,"Upper Bound =",upper,"\n","Lower Bound (%) =",
+1512545648120:lowerpct,"Upper Bound (%) =",upperpct,"\n","","\n")
+1512545648120:results=list(zstar=zstar,se=se,phat=phat,moe=moe,lower=lower,upper=upper,
+1512545648121:lowerpct=lowerpct,upperpct=upperpct)
+1512545648121:}
+1512545648122:ci.1prop(x=9,n=30,0.05)
+1512546019017:hist(table(VMB),main='Proportion of Music Majors \n in the Vandal Marching Band',col=grey.colors(2))
+1512546105661:hist(table(woodwind),main='Proportion of Music Majors \n among VMB Woodwinds',col=grey.colors(2))
+1512546380266:# 1 sample proportion test
+1512546380267:# alt: can be 'g' for Ha>, 'l' for Ha<, 'ne' for Ha not equal
+1512546380268:test.1prop=function(x,n,p0,alt,alpha) {
+1512546380268:phat=x/n; p0=p0; q0=1-p0
+1512546380269:sep0=sqrt(p0*q0/n); zcalc=(phat-p0)/sep0
+1512546380269:alt=alt; alpha=alpha; sig=sprintf("%.0f%%",alpha*100)
+1512546380270:if(alt=='g'){
+1512546380270:pvalue=pnorm(zcalc,lower.tail=F)
+1512546380270:}    else if(alt=='l'){
+1512546380271:pvalue=pnorm(zcalc)
+1512546380271:}    else if(alt=='ne'){
+1512546380271:pvalue=2*pnorm(-abs(zcalc))
+1512546380272:}
+1512546380272:altname=c(if(alt=='g'){
+1512546380273:altname=c("greater than")
+1512546380273:}    else if(alt=='l'){
+1512546380275:altname=c("less than")
+1512546380276:}    else if(alt=='ne'){
+1512546380277:altname=c("not equal to")
+1512546380278:})
+1512546380279:cat(" ","\n","Hypothesis Test for 1-sample proportion","\n",
+1512546380280:"Number of successes =",x,"\n","Alternative hypothesis =",altname,"\n","Sample size =",n,
+1512546380280:"\n","Hypothesized proportion =",p0,"\n", "SE =",sep0,"\n","Significance Level =",
+1512546380281:sig,"\n","Zcalc =",zcalc,"\n","pvalue =",pvalue,"\n","","\n")
+1512546380281:results=list(phat=phat,n=n,x=x,p0=p0,sep0=sep0,alt=alt,zcalc=zcalc,pvalue=pvalue)
+1512546380282:}
+1512546380283:# H0: p=.40 Ha: p not=.40
+1512546380283:x=5; n=30; p0=.40
+1512546380284:test.1prop(x=x,n=n,p0=p0,alt='ne',alpha=0.05)
+1512546518435:#VMB
+1512546518436:VMB=c(rep("Woodwind \n Major",each=5),rep("Woodwind \n Non-Major",each=25),rep("Brass \n Major",each=8),rep("Brass \n Non-Major",each=22),rep("Percussion \n Major",each=9),rep("Percussion \n Non-Major",each=21))
+1512546518437:VMB
+1512546518439:table(VMB)
+1512546518440:barplot(table(VMB),main='Proportion of Music Majors \n in the Vandal Marching Band',col=grey.colors(2))
+1512546518469:#Woodwinds
+1512546518469:woodwind=c(rep("Music Major",each=5), rep("Non-Music Major",each=25))
+1512546518469:woodwind
+1512546518470:table(woodwind)
+1512546518471:barplot(table(woodwind),main='Proportion of Music Majors \n among VMB Woodwinds',col=grey.colors(2))
+1512546518495:# 1-sample proportion Confidence Interval
+1512546518495:ci.1prop=function(x,n,alpha){
+1512546518496:phat=x/n; qhat=1-phat; alpha=alpha; zstar=qnorm(1-alpha/2)
+1512546518497:cl=(1-alpha); cl.perc=sprintf("%.0f%%",cl*100)
+1512546518498:se=sqrt(phat*qhat/n); moe=zstar*se
+1512546518499:lower=phat-moe; upper=phat+moe
+1512546518501:lowerpct=sprintf("%.2f%%",lower*100); upperpct=sprintf("%.2f%%",upper*100)
+1512546518502:cat(" ","\n","CI for 1-sample proportion","\n","Confidence Level =",cl.perc,
+1512546518502:"\n","Critical Value of Z* =",zstar,"\n","SE =",se,"\n","Point Estimate of p =",phat,"\n",
+1512546518503:"Margin of Error =",moe,"\n","Lower Bound =",lower,"Upper Bound =",upper,"\n","Lower Bound (%) =",
+1512546518504:lowerpct,"Upper Bound (%) =",upperpct,"\n","","\n")
+1512546518504:results=list(zstar=zstar,se=se,phat=phat,moe=moe,lower=lower,upper=upper,
+1512546518505:lowerpct=lowerpct,upperpct=upperpct)
+1512546518505:}
+1512546518506:ci.1prop(x=5,n=30,0.05)
+1512546518520:# 1 sample proportion test
+1512546518521:test.1prop=function(x,n,p0,alt,alpha) {
+1512546518521:phat=x/n; p0=p0; q0=1-p0
+1512546518522:sep0=sqrt(p0*q0/n); zcalc=(phat-p0)/sep0
+1512546518523:alt=alt; alpha=alpha; sig=sprintf("%.0f%%",alpha*100)
+1512546518523:if(alt=='g'){
+1512546518524:pvalue=pnorm(zcalc,lower.tail=F)
+1512546518524:}    else if(alt=='l'){
+1512546518524:pvalue=pnorm(zcalc)
+1512546518525:}    else if(alt=='ne'){
+1512546518525:pvalue=2*pnorm(-abs(zcalc))
+1512546518525:}
+1512546518526:altname=c(if(alt=='g'){
+1512546518526:altname=c("greater than")
+1512546518526:}    else if(alt=='l'){
+1512546518526:altname=c("less than")
+1512546518527:}    else if(alt=='ne'){
+1512546518527:altname=c("not equal to")
+1512546518527:})
+1512546518528:cat(" ","\n","Hypothesis Test for 1-sample proportion (Woodwinds)","\n",
+1512546518528:"Number of successes =",x,"\n","Alternative hypothesis =",altname,"\n","Sample size =",n,
+1512546518529:"\n","Hypothesized proportion =",p0,"\n", "SE =",sep0,"\n","Significance Level =",
+1512546518530:sig,"\n","Zcalc =",zcalc,"\n","pvalue =",pvalue,"\n","","\n")
+1512546518531:results=list(phat=phat,n=n,x=x,p0=p0,sep0=sep0,alt=alt,zcalc=zcalc,pvalue=pvalue)
+1512546518532:}
+1512546518533:# H0: p=.40 Ha: p not=.40
+1512546518533:x=5; n=30; p0=.40
+1512546518534:test.1prop(x=x,n=n,p0=p0,alt='ne',alpha=0.05)
+1512546518557:#Brass
+1512546518557:brass=c(rep("Music Major",each=8), rep("Non-Music Major",each=22))
+1512546518558:brass
+1512546518606:table(brass)
+1512546518607:barplot(table(brass),main='Proportion of Music Majors \n among VMB Brass',col=grey.colors(2))
+1512546518629:# 1-sample proportion Confidence Interval
+1512546518629:ci.1prop=function(x,n,alpha){
+1512546518630:phat=x/n; qhat=1-phat; alpha=alpha; zstar=qnorm(1-alpha/2)
+1512546518631:cl=(1-alpha); cl.perc=sprintf("%.0f%%",cl*100)
+1512546518631:se=sqrt(phat*qhat/n); moe=zstar*se
+1512546518633:lower=phat-moe; upper=phat+moe
+1512546518634:lowerpct=sprintf("%.2f%%",lower*100); upperpct=sprintf("%.2f%%",upper*100)
+1512546518635:cat(" ","\n","CI for 1-sample proportion","\n","Confidence Level =",cl.perc,
+1512546518635:"\n","Critical Value of Z* =",zstar,"\n","SE =",se,"\n","Point Estimate of p =",phat,"\n",
+1512546518636:"Margin of Error =",moe,"\n","Lower Bound =",lower,"Upper Bound =",upper,"\n","Lower Bound (%) =",
+1512546518636:lowerpct,"Upper Bound (%) =",upperpct,"\n","","\n")
+1512546518636:results=list(zstar=zstar,se=se,phat=phat,moe=moe,lower=lower,upper=upper,
+1512546518637:lowerpct=lowerpct,upperpct=upperpct)
+1512546518637:}
+1512546518638:ci.1prop(x=8,n=30,0.05)
+1512546518662:# 1 sample proportion test
+1512546518662:test.1prop=function(x,n,p0,alt,alpha) {
+1512546518663:phat=x/n; p0=p0; q0=1-p0
+1512546518664:sep0=sqrt(p0*q0/n); zcalc=(phat-p0)/sep0
+1512546518665:alt=alt; alpha=alpha; sig=sprintf("%.0f%%",alpha*100)
+1512546518665:if(alt=='g'){
+1512546518666:pvalue=pnorm(zcalc,lower.tail=F)
+1512546518667:}    else if(alt=='l'){
+1512546518667:pvalue=pnorm(zcalc)
+1512546518667:}    else if(alt=='ne'){
+1512546518668:pvalue=2*pnorm(-abs(zcalc))
+1512546518668:}
+1512546518669:altname=c(if(alt=='g'){
+1512546518669:altname=c("greater than")
+1512546518670:}    else if(alt=='l'){
+1512546518670:altname=c("less than")
+1512546518671:}    else if(alt=='ne'){
+1512546518671:altname=c("not equal to")
+1512546518672:})
+1512546518673:cat(" ","\n","Hypothesis Test for 1-sample proportion (Brass)","\n",
+1512546518674:"Number of successes =",x,"\n","Alternative hypothesis =",altname,"\n","Sample size =",n,
+1512546518674:"\n","Hypothesized proportion =",p0,"\n", "SE =",sep0,"\n","Significance Level =",
+1512546518675:sig,"\n","Zcalc =",zcalc,"\n","pvalue =",pvalue,"\n","","\n")
+1512546518675:results=list(phat=phat,n=n,x=x,p0=p0,sep0=sep0,alt=alt,zcalc=zcalc,pvalue=pvalue)
+1512546518676:}
+1512546518677:# H0: p=.40 Ha: p not=.40
+1512546518677:x=8; n=30; p0=.40
+1512546518679:test.1prop(x=x,n=n,p0=p0,alt='ne',alpha=0.05)
+1512546518702:#Percussion
+1512546518703:percussion=c(rep("Music Major",each=9), rep("Non-Music Major",each=21))
+1512546518703:percussion
+1512546518704:table(percussion)
+1512546518705:barplot(table(percussion),main='Proportion of Music Majors \n among VMB Percussion',col=grey.colors(2))
+1512546518734:# 1-sample proportion Confidence Interval
+1512546518735:ci.1prop=function(x,n,alpha){
+1512546518736:phat=x/n; qhat=1-phat; alpha=alpha; zstar=qnorm(1-alpha/2)
+1512546518737:cl=(1-alpha); cl.perc=sprintf("%.0f%%",cl*100)
+1512546518737:se=sqrt(phat*qhat/n); moe=zstar*se
+1512546518738:lower=phat-moe; upper=phat+moe
+1512546518738:lowerpct=sprintf("%.2f%%",lower*100); upperpct=sprintf("%.2f%%",upper*100)
+1512546518739:cat(" ","\n","CI for 1-sample proportion","\n","Confidence Level =",cl.perc,
+1512546518739:"\n","Critical Value of Z* =",zstar,"\n","SE =",se,"\n","Point Estimate of p =",phat,"\n",
+1512546518739:"Margin of Error =",moe,"\n","Lower Bound =",lower,"Upper Bound =",upper,"\n","Lower Bound (%) =",
+1512546518740:lowerpct,"Upper Bound (%) =",upperpct,"\n","","\n")
+1512546518740:results=list(zstar=zstar,se=se,phat=phat,moe=moe,lower=lower,upper=upper,
+1512546518740:lowerpct=lowerpct,upperpct=upperpct)
+1512546518741:}
+1512546518742:ci.1prop(x=9,n=30,0.05)
+1512546518760:# 1 sample proportion test
+1512546518760:test.1prop=function(x,n,p0,alt,alpha) {
+1512546518761:phat=x/n; p0=p0; q0=1-p0
+1512546518761:sep0=sqrt(p0*q0/n); zcalc=(phat-p0)/sep0
+1512546518762:alt=alt; alpha=alpha; sig=sprintf("%.0f%%",alpha*100)
+1512546518763:if(alt=='g'){
+1512546518764:pvalue=pnorm(zcalc,lower.tail=F)
+1512546518765:}    else if(alt=='l'){
+1512546518765:pvalue=pnorm(zcalc)
+1512546518766:}    else if(alt=='ne'){
+1512546518767:pvalue=2*pnorm(-abs(zcalc))
+1512546518767:}
+1512546518768:altname=c(if(alt=='g'){
+1512546518768:altname=c("greater than")
+1512546518768:}    else if(alt=='l'){
+1512546518769:altname=c("less than")
+1512546518769:}    else if(alt=='ne'){
+1512546518769:altname=c("not equal to")
+1512546518770:})
+1512546518770:cat(" ","\n","Hypothesis Test for 1-sample proportion (Percussion)","\n",
+1512546518771:"Number of successes =",x,"\n","Alternative hypothesis =",altname,"\n","Sample size =",n,
+1512546518771:"\n","Hypothesized proportion =",p0,"\n", "SE =",sep0,"\n","Significance Level =",
+1512546518772:sig,"\n","Zcalc =",zcalc,"\n","pvalue =",pvalue,"\n","","\n")
+1512546518772:results=list(phat=phat,n=n,x=x,p0=p0,sep0=sep0,alt=alt,zcalc=zcalc,pvalue=pvalue)
+1512546518773:}
+1512546518773:# H0: p=.40 Ha: p not=.40
+1512546518774:x=9; n=30; p0=.40
+1512546518775:test.1prop(x=x,n=n,p0=p0,alt='ne',alpha=0.05)
+1512546744205:#VMB
+1512546744205:VMB=c(rep("Woodwind Major",each=5),rep("Woodwind Non-Major",each=25),rep("Brass Major",each=8),rep("Brass Non-Major",each=22),rep("Percussion Major",each=9),rep("Percussion Non-Major",each=21))
+1512546744207:VMB
+1512546744209:table(VMB)
+1512546744210:barplot(table(VMB),main='Proportion of Music Majors in the Vandal Marching Band',col=grey.colors(2))
+1512546744234:#Woodwinds
+1512546744235:woodwind=c(rep("Music Major",each=5), rep("Non-Music Major",each=25))
+1512546744235:woodwind
+1512546744236:table(woodwind)
+1512546744238:barplot(table(woodwind),main='Proportion of Music Majors among VMB Woodwinds',col=grey.colors(2))
+1512546744262:# 1-sample proportion Confidence Interval
+1512546744262:ci.1prop=function(x,n,alpha){
+1512546744262:phat=x/n; qhat=1-phat; alpha=alpha; zstar=qnorm(1-alpha/2)
+1512546744263:cl=(1-alpha); cl.perc=sprintf("%.0f%%",cl*100)
+1512546744263:se=sqrt(phat*qhat/n); moe=zstar*se
+1512546744264:lower=phat-moe; upper=phat+moe
+1512546744264:lowerpct=sprintf("%.2f%%",lower*100); upperpct=sprintf("%.2f%%",upper*100)
+1512546744265:cat(" ","\n","CI for Woodwind 1-sample proportion","\n","Confidence Level =",cl.perc,
+1512546744265:"\n","Critical Value of Z* =",zstar,"\n","SE =",se,"\n","Point Estimate of p =",phat,"\n",
+1512546744266:"Margin of Error =",moe,"\n","Lower Bound =",lower,"Upper Bound =",upper,"\n","Lower Bound (%) =",
+1512546744266:lowerpct,"Upper Bound (%) =",upperpct,"\n","","\n")
+1512546744266:results=list(zstar=zstar,se=se,phat=phat,moe=moe,lower=lower,upper=upper,
+1512546744267:lowerpct=lowerpct,upperpct=upperpct)
+1512546744268:}
+1512546744269:ci.1prop(x=5,n=30,0.05)
+1512546744288:# 1 sample proportion test
+1512546744289:test.1prop=function(x,n,p0,alt,alpha) {
+1512546744289:phat=x/n; p0=p0; q0=1-p0
+1512546744290:sep0=sqrt(p0*q0/n); zcalc=(phat-p0)/sep0
+1512546744290:alt=alt; alpha=alpha; sig=sprintf("%.0f%%",alpha*100)
+1512546744292:if(alt=='g'){
+1512546744292:pvalue=pnorm(zcalc,lower.tail=F)
+1512546744292:}    else if(alt=='l'){
+1512546744293:pvalue=pnorm(zcalc)
+1512546744293:}    else if(alt=='ne'){
+1512546744294:pvalue=2*pnorm(-abs(zcalc))
+1512546744294:}
+1512546744294:altname=c(if(alt=='g'){
+1512546744295:altname=c("greater than")
+1512546744295:}    else if(alt=='l'){
+1512546744296:altname=c("less than")
+1512546744297:}    else if(alt=='ne'){
+1512546744297:altname=c("not equal to")
+1512546744298:})
+1512546744299:cat(" ","\n","Hypothesis Test for Woodwind 1-sample proportion","\n",
+1512546744299:"Number of successes =",x,"\n","Alternative hypothesis =",altname,"\n","Sample size =",n,
+1512546744300:"\n","Hypothesized proportion =",p0,"\n", "SE =",sep0,"\n","Significance Level =",
+1512546744300:sig,"\n","Zcalc =",zcalc,"\n","pvalue =",pvalue,"\n","","\n")
+1512546744301:results=list(phat=phat,n=n,x=x,p0=p0,sep0=sep0,alt=alt,zcalc=zcalc,pvalue=pvalue)
+1512546744302:}
+1512546744304:# H0: p=.40 Ha: p not=.40
+1512546744304:x=5; n=30; p0=.40
+1512546744305:test.1prop(x=x,n=n,p0=p0,alt='ne',alpha=0.05)
+1512546744330:#Brass
+1512546744331:brass=c(rep("Music Major",each=8), rep("Non-Music Major",each=22))
+1512546744331:brass
+1512546744332:table(brass)
+1512546744332:barplot(table(brass),main='Proportion of Music Majors among VMB Brass',col=grey.colors(2))
+1512546744358:# 1-sample proportion Confidence Interval
+1512546744358:ci.1prop=function(x,n,alpha){
+1512546744358:phat=x/n; qhat=1-phat; alpha=alpha; zstar=qnorm(1-alpha/2)
+1512546744359:cl=(1-alpha); cl.perc=sprintf("%.0f%%",cl*100)
+1512546744359:se=sqrt(phat*qhat/n); moe=zstar*se
+1512546744360:lower=phat-moe; upper=phat+moe
+1512546744360:lowerpct=sprintf("%.2f%%",lower*100); upperpct=sprintf("%.2f%%",upper*100)
+1512546744361:cat(" ","\n","CI for Brass 1-sample proportion","\n","Confidence Level =",cl.perc,
+1512546744361:"\n","Critical Value of Z* =",zstar,"\n","SE =",se,"\n","Point Estimate of p =",phat,"\n",
+1512546744362:"Margin of Error =",moe,"\n","Lower Bound =",lower,"Upper Bound =",upper,"\n","Lower Bound (%) =",
+1512546744362:lowerpct,"Upper Bound (%) =",upperpct,"\n","","\n")
+1512546744362:results=list(zstar=zstar,se=se,phat=phat,moe=moe,lower=lower,upper=upper,
+1512546744363:lowerpct=lowerpct,upperpct=upperpct)
+1512546744363:}
+1512546744364:ci.1prop(x=8,n=30,0.05)
+1512546744377:# 1 sample proportion test
+1512546744377:test.1prop=function(x,n,p0,alt,alpha) {
+1512546744378:phat=x/n; p0=p0; q0=1-p0
+1512546744378:sep0=sqrt(p0*q0/n); zcalc=(phat-p0)/sep0
+1512546744379:alt=alt; alpha=alpha; sig=sprintf("%.0f%%",alpha*100)
+1512546744380:if(alt=='g'){
+1512546744380:pvalue=pnorm(zcalc,lower.tail=F)
+1512546744381:}    else if(alt=='l'){
+1512546744381:pvalue=pnorm(zcalc)
+1512546744382:}    else if(alt=='ne'){
+1512546744382:pvalue=2*pnorm(-abs(zcalc))
+1512546744382:}
+1512546744383:altname=c(if(alt=='g'){
+1512546744383:altname=c("greater than")
+1512546744384:}    else if(alt=='l'){
+1512546744385:altname=c("less than")
+1512546744385:}    else if(alt=='ne'){
+1512546744386:altname=c("not equal to")
+1512546744386:})
+1512546744387:cat(" ","\n","Hypothesis Test for Brass 1-sample proportion","\n",
+1512546744387:"Number of successes =",x,"\n","Alternative hypothesis =",altname,"\n","Sample size =",n,
+1512546744388:"\n","Hypothesized proportion =",p0,"\n", "SE =",sep0,"\n","Significance Level =",
+1512546744388:sig,"\n","Zcalc =",zcalc,"\n","pvalue =",pvalue,"\n","","\n")
+1512546744389:results=list(phat=phat,n=n,x=x,p0=p0,sep0=sep0,alt=alt,zcalc=zcalc,pvalue=pvalue)
+1512546744389:}
+1512546744390:# H0: p=.40 Ha: p not=.40
+1512546744390:x=8; n=30; p0=.40
+1512546744391:test.1prop(x=x,n=n,p0=p0,alt='ne',alpha=0.05)
+1512546744465:#Percussion
+1512546744465:percussion=c(rep("Music Major",each=9), rep("Non-Music Major",each=21))
+1512546744466:percussion
+1512546744466:table(percussion)
+1512546744467:barplot(table(percussion),main='Proportion of Music Majors among VMB Percussion',col=grey.colors(2))
+1512546744487:# 1-sample proportion Confidence Interval
+1512546744488:ci.1prop=function(x,n,alpha){
+1512546744488:phat=x/n; qhat=1-phat; alpha=alpha; zstar=qnorm(1-alpha/2)
+1512546744489:cl=(1-alpha); cl.perc=sprintf("%.0f%%",cl*100)
+1512546744489:se=sqrt(phat*qhat/n); moe=zstar*se
+1512546744490:lower=phat-moe; upper=phat+moe
+1512546744491:lowerpct=sprintf("%.2f%%",lower*100); upperpct=sprintf("%.2f%%",upper*100)
+1512546744492:cat(" ","\n","CI for Percussion 1-sample proportion","\n","Confidence Level =",cl.perc,
+1512546744492:"\n","Critical Value of Z* =",zstar,"\n","SE =",se,"\n","Point Estimate of p =",phat,"\n",
+1512546744493:"Margin of Error =",moe,"\n","Lower Bound =",lower,"Upper Bound =",upper,"\n","Lower Bound (%) =",
+1512546744494:lowerpct,"Upper Bound (%) =",upperpct,"\n","","\n")
+1512546744495:results=list(zstar=zstar,se=se,phat=phat,moe=moe,lower=lower,upper=upper,
+1512546744495:lowerpct=lowerpct,upperpct=upperpct)
+1512546744496:}
+1512546744497:ci.1prop(x=9,n=30,0.05)
+1512546744520:# 1 sample proportion test
+1512546744521:test.1prop=function(x,n,p0,alt,alpha) {
+1512546744522:phat=x/n; p0=p0; q0=1-p0
+1512546744523:sep0=sqrt(p0*q0/n); zcalc=(phat-p0)/sep0
+1512546744523:alt=alt; alpha=alpha; sig=sprintf("%.0f%%",alpha*100)
+1512546744524:if(alt=='g'){
+1512546744524:pvalue=pnorm(zcalc,lower.tail=F)
+1512546744525:}    else if(alt=='l'){
+1512546744525:pvalue=pnorm(zcalc)
+1512546744525:}    else if(alt=='ne'){
+1512546744526:pvalue=2*pnorm(-abs(zcalc))
+1512546744526:}
+1512546744526:altname=c(if(alt=='g'){
+1512546744527:altname=c("greater than")
+1512546744527:}    else if(alt=='l'){
+1512546744528:altname=c("less than")
+1512546744528:}    else if(alt=='ne'){
+1512546744529:altname=c("not equal to")
+1512546744529:})
+1512546744530:cat(" ","\n","Hypothesis Test for Percussion 1-sample proportion","\n",
+1512546744530:"Number of successes =",x,"\n","Alternative hypothesis =",altname,"\n","Sample size =",n,
+1512546744531:"\n","Hypothesized proportion =",p0,"\n", "SE =",sep0,"\n","Significance Level =",
+1512546744532:sig,"\n","Zcalc =",zcalc,"\n","pvalue =",pvalue,"\n","","\n")
+1512546744532:results=list(phat=phat,n=n,x=x,p0=p0,sep0=sep0,alt=alt,zcalc=zcalc,pvalue=pvalue)
+1512546744533:}
+1512546744534:# H0: p=.40 Ha: p not=.40
+1512546744534:x=9; n=30; p0=.40
+1512546744535:test.1prop(x=x,n=n,p0=p0,alt='ne',alpha=0.05)
+1512546777845:#VMB
+1512546777846:VMB=c(rep("Woodwind Major",each=5),rep("Woodwind Non-Major",each=25),rep("Brass Major",each=8),rep("Brass Non-Major",each=22),rep("Percussion Major",each=9),rep("Percussion Non-Major",each=21))
+1512546777846:VMB
+1512546777849:table(VMB)
+1512546777850:barplot(table(VMB),main='Proportion of Music Majors in the Vandal Marching Band',col=grey.colors(2))
+1512546777864:#Woodwinds
+1512546777865:woodwind=c(rep("Music Major",each=5), rep("Non-Music Major",each=25))
+1512546777865:woodwind
+1512546777866:table(woodwind)
+1512546777867:barplot(table(woodwind),main='Proportion of Music Majors among VMB Woodwinds',col=grey.colors(2))
+1512546777890:# 1-sample proportion Confidence Interval
+1512546777890:ci.1prop=function(x,n,alpha){
+1512546777891:phat=x/n; qhat=1-phat; alpha=alpha; zstar=qnorm(1-alpha/2)
+1512546777892:cl=(1-alpha); cl.perc=sprintf("%.0f%%",cl*100)
+1512546777892:se=sqrt(phat*qhat/n); moe=zstar*se
+1512546777893:lower=phat-moe; upper=phat+moe
+1512546777893:lowerpct=sprintf("%.2f%%",lower*100); upperpct=sprintf("%.2f%%",upper*100)
+1512546777894:cat(" ","\n","CI for Woodwind 1-sample proportion","\n","Confidence Level =",cl.perc,
+1512546777894:"\n","Critical Value of Z* =",zstar,"\n","SE =",se,"\n","Point Estimate of p =",phat,"\n",
+1512546777895:"Margin of Error =",moe,"\n","Lower Bound =",lower,"Upper Bound =",upper,"\n","Lower Bound (%) =",
+1512546777895:lowerpct,"Upper Bound (%) =",upperpct,"\n","","\n")
+1512546777895:results=list(zstar=zstar,se=se,phat=phat,moe=moe,lower=lower,upper=upper,
+1512546777896:lowerpct=lowerpct,upperpct=upperpct)
+1512546777896:}
+1512546777897:ci.1prop(x=5,n=30,0.05)
+1512546777910:# 1 sample proportion test
+1512546777911:test.1prop=function(x,n,p0,alt,alpha) {
+1512546777911:phat=x/n; p0=p0; q0=1-p0
+1512546777912:sep0=sqrt(p0*q0/n); zcalc=(phat-p0)/sep0
+1512546777913:alt=alt; alpha=alpha; sig=sprintf("%.0f%%",alpha*100)
+1512546777913:if(alt=='g'){
+1512546777914:pvalue=pnorm(zcalc,lower.tail=F)
+1512546777914:}    else if(alt=='l'){
+1512546777915:pvalue=pnorm(zcalc)
+1512546777915:}    else if(alt=='ne'){
+1512546777916:pvalue=2*pnorm(-abs(zcalc))
+1512546777916:}
+1512546777917:altname=c(if(alt=='g'){
+1512546777918:altname=c("greater than")
+1512546777919:}    else if(alt=='l'){
+1512546777920:altname=c("less than")
+1512546777921:}    else if(alt=='ne'){
+1512546777922:altname=c("not equal to")
+1512546777923:})
+1512546777924:cat(" ","\n","Hypothesis Test for Woodwind 1-sample proportion","\n",
+1512546777924:"Number of successes =",x,"\n","Alternative hypothesis =",altname,"\n","Sample size =",n,
+1512546777925:"\n","Hypothesized proportion =",p0,"\n", "SE =",sep0,"\n","Significance Level =",
+1512546777925:sig,"\n","Zcalc =",zcalc,"\n","pvalue =",pvalue,"\n","","\n")
+1512546777926:results=list(phat=phat,n=n,x=x,p0=p0,sep0=sep0,alt=alt,zcalc=zcalc,pvalue=pvalue)
+1512546777926:}
+1512546777927:# H0: p=.40 Ha: p not=.40
+1512546777927:x=5; n=30; p0=.40
+1512546777928:test.1prop(x=x,n=n,p0=p0,alt='ne',alpha=0.05)
+1512546777946:#Brass
+1512546777947:brass=c(rep("Music Major",each=8), rep("Non-Music Major",each=22))
+1512546777947:brass
+1512546777948:table(brass)
+1512546777949:barplot(table(brass),main='Proportion of Music Majors among VMB Brass',col=grey.colors(2))
+1512546777975:# 1-sample proportion Confidence Interval
+1512546777975:ci.1prop=function(x,n,alpha){
+1512546777976:phat=x/n; qhat=1-phat; alpha=alpha; zstar=qnorm(1-alpha/2)
+1512546777976:cl=(1-alpha); cl.perc=sprintf("%.0f%%",cl*100)
+1512546777977:se=sqrt(phat*qhat/n); moe=zstar*se
+1512546777977:lower=phat-moe; upper=phat+moe
+1512546777978:lowerpct=sprintf("%.2f%%",lower*100); upperpct=sprintf("%.2f%%",upper*100)
+1512546777978:cat(" ","\n","CI for Brass 1-sample proportion","\n","Confidence Level =",cl.perc,
+1512546777979:"\n","Critical Value of Z* =",zstar,"\n","SE =",se,"\n","Point Estimate of p =",phat,"\n",
+1512546777979:"Margin of Error =",moe,"\n","Lower Bound =",lower,"Upper Bound =",upper,"\n","Lower Bound (%) =",
+1512546777979:lowerpct,"Upper Bound (%) =",upperpct,"\n","","\n")
+1512546777980:results=list(zstar=zstar,se=se,phat=phat,moe=moe,lower=lower,upper=upper,
+1512546777980:lowerpct=lowerpct,upperpct=upperpct)
+1512546777981:}
+1512546777981:ci.1prop(x=8,n=30,0.05)
+1512546777998:# 1 sample proportion test
+1512546777999:test.1prop=function(x,n,p0,alt,alpha) {
+1512546777999:phat=x/n; p0=p0; q0=1-p0
+1512546778000:sep0=sqrt(p0*q0/n); zcalc=(phat-p0)/sep0
+1512546778001:alt=alt; alpha=alpha; sig=sprintf("%.0f%%",alpha*100)
+1512546778002:if(alt=='g'){
+1512546778003:pvalue=pnorm(zcalc,lower.tail=F)
+1512546778004:}    else if(alt=='l'){
+1512546778004:pvalue=pnorm(zcalc)
+1512546778005:}    else if(alt=='ne'){
+1512546778005:pvalue=2*pnorm(-abs(zcalc))
+1512546778006:}
+1512546778006:altname=c(if(alt=='g'){
+1512546778007:altname=c("greater than")
+1512546778007:}    else if(alt=='l'){
+1512546778007:altname=c("less than")
+1512546778008:}    else if(alt=='ne'){
+1512546778008:altname=c("not equal to")
+1512546778009:})
+1512546778009:cat(" ","\n","Hypothesis Test for Brass 1-sample proportion","\n",
+1512546778009:"Number of successes =",x,"\n","Alternative hypothesis =",altname,"\n","Sample size =",n,
+1512546778010:"\n","Hypothesized proportion =",p0,"\n", "SE =",sep0,"\n","Significance Level =",
+1512546778010:sig,"\n","Zcalc =",zcalc,"\n","pvalue =",pvalue,"\n","","\n")
+1512546778010:results=list(phat=phat,n=n,x=x,p0=p0,sep0=sep0,alt=alt,zcalc=zcalc,pvalue=pvalue)
+1512546778011:}
+1512546778012:# H0: p=.40 Ha: p not=.40
+1512546778012:x=8; n=30; p0=.40
+1512546778013:test.1prop(x=x,n=n,p0=p0,alt='ne',alpha=0.05)
+1512546778031:#Percussion
+1512546778032:percussion=c(rep("Music Major",each=9), rep("Non-Music Major",each=21))
+1512546778032:percussion
+1512546778033:table(percussion)
+1512546778034:barplot(table(percussion),main='Proportion of Music Majors among VMB Percussion',col=grey.colors(2))
+1512546778057:# 1-sample proportion Confidence Interval
+1512546778057:ci.1prop=function(x,n,alpha){
+1512546778058:phat=x/n; qhat=1-phat; alpha=alpha; zstar=qnorm(1-alpha/2)
+1512546778059:cl=(1-alpha); cl.perc=sprintf("%.0f%%",cl*100)
+1512546778059:se=sqrt(phat*qhat/n); moe=zstar*se
+1512546778060:lower=phat-moe; upper=phat+moe
+1512546778060:lowerpct=sprintf("%.2f%%",lower*100); upperpct=sprintf("%.2f%%",upper*100)
+1512546778061:cat(" ","\n","CI for Percussion 1-sample proportion","\n","Confidence Level =",cl.perc,
+1512546778062:"\n","Critical Value of Z* =",zstar,"\n","SE =",se,"\n","Point Estimate of p =",phat,"\n",
+1512546778063:"Margin of Error =",moe,"\n","Lower Bound =",lower,"Upper Bound =",upper,"\n","Lower Bound (%) =",
+1512546778064:lowerpct,"Upper Bound (%) =",upperpct,"\n","","\n")
+1512546778064:results=list(zstar=zstar,se=se,phat=phat,moe=moe,lower=lower,upper=upper,
+1512546778065:lowerpct=lowerpct,upperpct=upperpct)
+1512546778065:}
+1512546778066:ci.1prop(x=9,n=30,0.05)
+1512546778079:# 1 sample proportion test
+1512546778079:test.1prop=function(x,n,p0,alt,alpha) {
+1512546778080:phat=x/n; p0=p0; q0=1-p0
+1512546778080:sep0=sqrt(p0*q0/n); zcalc=(phat-p0)/sep0
+1512546778081:alt=alt; alpha=alpha; sig=sprintf("%.0f%%",alpha*100)
+1512546778081:if(alt=='g'){
+1512546778081:pvalue=pnorm(zcalc,lower.tail=F)
+1512546778082:}    else if(alt=='l'){
+1512546778082:pvalue=pnorm(zcalc)
+1512546778082:}    else if(alt=='ne'){
+1512546778083:pvalue=2*pnorm(-abs(zcalc))
+1512546778083:}
+1512546778083:altname=c(if(alt=='g'){
+1512546778084:altname=c("greater than")
+1512546778084:}    else if(alt=='l'){
+1512546778084:altname=c("less than")
+1512546778085:}    else if(alt=='ne'){
+1512546778085:altname=c("not equal to")
+1512546778086:})
+1512546778087:cat(" ","\n","Hypothesis Test for Percussion 1-sample proportion","\n",
+1512546778087:"Number of successes =",x,"\n","Alternative hypothesis =",altname,"\n","Sample size =",n,
+1512546778088:"\n","Hypothesized proportion =",p0,"\n", "SE =",sep0,"\n","Significance Level =",
+1512546778088:sig,"\n","Zcalc =",zcalc,"\n","pvalue =",pvalue,"\n","","\n")
+1512546778089:results=list(phat=phat,n=n,x=x,p0=p0,sep0=sep0,alt=alt,zcalc=zcalc,pvalue=pvalue)
+1512546778089:}
+1512546778090:# H0: p=.40 Ha: p not=.40
+1512546778090:x=9; n=30; p0=.40
+1512546778091:test.1prop(x=x,n=n,p0=p0,alt='ne',alpha=0.05)
+1512547270209:#VMB
+1512547270210:VMB=c(rep("Woodwind Major",each=5),rep("Woodwind Non-Major",each=25),rep("Brass Major",each=8),rep("Brass Non-Major",each=22),rep("Percussion Major",each=9),rep("Percussion Non-Major",each=21))
+1512547270211:VMB
+1512547270214:table(VMB)
+1512547270216:barplot(table(VMB),main='Proportion of Music Majors in the Vandal Marching Band',col=grey.colors(2))
+1512547270230:#Woodwinds
+1512547270230:woodwind=c(rep("Music Major",each=5), rep("Non-Music Major",each=25))
+1512547270231:woodwind
+1512547270233:table(woodwind)
+1512547270234:# 1-sample proportion Confidence Interval
+1512547270234:ci.1prop=function(x,n,alpha){
+1512547270234:phat=x/n; qhat=1-phat; alpha=alpha; zstar=qnorm(1-alpha/2)
+1512547270235:cl=(1-alpha); cl.perc=sprintf("%.0f%%",cl*100)
+1512547270235:se=sqrt(phat*qhat/n); moe=zstar*se
+1512547270236:lower=phat-moe; upper=phat+moe
+1512547270237:lowerpct=sprintf("%.2f%%",lower*100); upperpct=sprintf("%.2f%%",upper*100)
+1512547270237:cat(" ","\n","CI for Woodwind 1-sample proportion","\n","Confidence Level =",cl.perc,
+1512547270238:"\n","Critical Value of Z* =",zstar,"\n","SE =",se,"\n","Point Estimate of p =",phat,"\n",
+1512547270238:"Margin of Error =",moe,"\n","Lower Bound =",lower,"Upper Bound =",upper,"\n","Lower Bound (%) =",
+1512547270239:lowerpct,"Upper Bound (%) =",upperpct,"\n","","\n")
+1512547270239:results=list(zstar=zstar,se=se,phat=phat,moe=moe,lower=lower,upper=upper,
+1512547270240:lowerpct=lowerpct,upperpct=upperpct)
+1512547270240:}
+1512547270241:ci.1prop(x=5,n=30,0.05)
+1512547270255:# 1 sample proportion test
+1512547270256:test.1prop=function(x,n,p0,alt,alpha) {
+1512547270256:phat=x/n; p0=p0; q0=1-p0
+1512547270257:sep0=sqrt(p0*q0/n); zcalc=(phat-p0)/sep0
+1512547270257:alt=alt; alpha=alpha; sig=sprintf("%.0f%%",alpha*100)
+1512547270258:if(alt=='g'){
+1512547270258:pvalue=pnorm(zcalc,lower.tail=F)
+1512547270259:}    else if(alt=='l'){
+1512547270259:pvalue=pnorm(zcalc)
+1512547270259:}    else if(alt=='ne'){
+1512547270260:pvalue=2*pnorm(-abs(zcalc))
+1512547270261:}
+1512547270261:altname=c(if(alt=='g'){
+1512547270262:altname=c("greater than")
+1512547270262:}    else if(alt=='l'){
+1512547270262:altname=c("less than")
+1512547270263:}    else if(alt=='ne'){
+1512547270263:altname=c("not equal to")
+1512547270263:})
+1512547270264:cat(" ","\n","Hypothesis Test for Woodwind 1-sample proportion","\n",
+1512547270264:"Number of successes =",x,"\n","Alternative hypothesis =",altname,"\n","Sample size =",n,
+1512547270265:"\n","Hypothesized proportion =",p0,"\n", "SE =",sep0,"\n","Significance Level =",
+1512547270266:sig,"\n","Zcalc =",zcalc,"\n","pvalue =",pvalue,"\n","","\n")
+1512547270266:results=list(phat=phat,n=n,x=x,p0=p0,sep0=sep0,alt=alt,zcalc=zcalc,pvalue=pvalue)
+1512547270267:}
+1512547270268:# H0: p=.40 Ha: p not=.40
+1512547270268:x=5; n=30; p0=.40
+1512547270271:test.1prop(x=x,n=n,p0=p0,alt='ne',alpha=0.05)
+1512547270294:#Brass
+1512547270295:brass=c(rep("Music Major",each=8), rep("Non-Music Major",each=22))
+1512547270295:brass
+1512547270297:table(brass)
+1512547270298:# 1-sample proportion Confidence Interval
+1512547270298:ci.1prop=function(x,n,alpha){
+1512547270298:phat=x/n; qhat=1-phat; alpha=alpha; zstar=qnorm(1-alpha/2)
+1512547270299:cl=(1-alpha); cl.perc=sprintf("%.0f%%",cl*100)
+1512547270300:se=sqrt(phat*qhat/n); moe=zstar*se
+1512547270300:lower=phat-moe; upper=phat+moe
+1512547270301:lowerpct=sprintf("%.2f%%",lower*100); upperpct=sprintf("%.2f%%",upper*100)
+1512547270301:cat(" ","\n","CI for Brass 1-sample proportion","\n","Confidence Level =",cl.perc,
+1512547270302:"\n","Critical Value of Z* =",zstar,"\n","SE =",se,"\n","Point Estimate of p =",phat,"\n",
+1512547270302:"Margin of Error =",moe,"\n","Lower Bound =",lower,"Upper Bound =",upper,"\n","Lower Bound (%) =",
+1512547270302:lowerpct,"Upper Bound (%) =",upperpct,"\n","","\n")
+1512547270303:results=list(zstar=zstar,se=se,phat=phat,moe=moe,lower=lower,upper=upper,
+1512547270303:lowerpct=lowerpct,upperpct=upperpct)
+1512547270304:}
+1512547270304:ci.1prop(x=8,n=30,0.05)
+1512547270320:# 1 sample proportion test
+1512547270321:test.1prop=function(x,n,p0,alt,alpha) {
+1512547270321:phat=x/n; p0=p0; q0=1-p0
+1512547270322:sep0=sqrt(p0*q0/n); zcalc=(phat-p0)/sep0
+1512547270323:alt=alt; alpha=alpha; sig=sprintf("%.0f%%",alpha*100)
+1512547270324:if(alt=='g'){
+1512547270324:pvalue=pnorm(zcalc,lower.tail=F)
+1512547270324:}    else if(alt=='l'){
+1512547270325:pvalue=pnorm(zcalc)
+1512547270325:}    else if(alt=='ne'){
+1512547270325:pvalue=2*pnorm(-abs(zcalc))
+1512547270326:}
+1512547270327:altname=c(if(alt=='g'){
+1512547270327:altname=c("greater than")
+1512547270328:}    else if(alt=='l'){
+1512547270328:altname=c("less than")
+1512547270328:}    else if(alt=='ne'){
+1512547270329:altname=c("not equal to")
+1512547270329:})
+1512547270330:cat(" ","\n","Hypothesis Test for Brass 1-sample proportion","\n",
+1512547270330:"Number of successes =",x,"\n","Alternative hypothesis =",altname,"\n","Sample size =",n,
+1512547270331:"\n","Hypothesized proportion =",p0,"\n", "SE =",sep0,"\n","Significance Level =",
+1512547270331:sig,"\n","Zcalc =",zcalc,"\n","pvalue =",pvalue,"\n","","\n")
+1512547270332:results=list(phat=phat,n=n,x=x,p0=p0,sep0=sep0,alt=alt,zcalc=zcalc,pvalue=pvalue)
+1512547270332:}
+1512547270333:# H0: p=.40 Ha: p not=.40
+1512547270333:x=8; n=30; p0=.40
+1512547270334:test.1prop(x=x,n=n,p0=p0,alt='ne',alpha=0.05)
+1512547270405:#Percussion
+1512547270405:percussion=c(rep("Music Major",each=9), rep("Non-Music Major",each=21))
+1512547270406:percussion
+1512547270407:table(percussion)
+1512547270408:# 1-sample proportion Confidence Interval
+1512547270408:ci.1prop=function(x,n,alpha){
+1512547270408:phat=x/n; qhat=1-phat; alpha=alpha; zstar=qnorm(1-alpha/2)
+1512547270409:cl=(1-alpha); cl.perc=sprintf("%.0f%%",cl*100)
+1512547270409:se=sqrt(phat*qhat/n); moe=zstar*se
+1512547270410:lower=phat-moe; upper=phat+moe
+1512547270410:lowerpct=sprintf("%.2f%%",lower*100); upperpct=sprintf("%.2f%%",upper*100)
+1512547270411:cat(" ","\n","CI for Percussion 1-sample proportion","\n","Confidence Level =",cl.perc,
+1512547270411:"\n","Critical Value of Z* =",zstar,"\n","SE =",se,"\n","Point Estimate of p =",phat,"\n",
+1512547270412:"Margin of Error =",moe,"\n","Lower Bound =",lower,"Upper Bound =",upper,"\n","Lower Bound (%) =",
+1512547270412:lowerpct,"Upper Bound (%) =",upperpct,"\n","","\n")
+1512547270412:results=list(zstar=zstar,se=se,phat=phat,moe=moe,lower=lower,upper=upper,
+1512547270413:lowerpct=lowerpct,upperpct=upperpct)
+1512547270414:}
+1512547270416:ci.1prop(x=9,n=30,0.05)
+1512547270436:# 1 sample proportion test
+1512547270436:test.1prop=function(x,n,p0,alt,alpha) {
+1512547270436:phat=x/n; p0=p0; q0=1-p0
+1512547270437:sep0=sqrt(p0*q0/n); zcalc=(phat-p0)/sep0
+1512547270437:alt=alt; alpha=alpha; sig=sprintf("%.0f%%",alpha*100)
+1512547270438:if(alt=='g'){
+1512547270439:pvalue=pnorm(zcalc,lower.tail=F)
+1512547270439:}    else if(alt=='l'){
+1512547270439:pvalue=pnorm(zcalc)
+1512547270440:}    else if(alt=='ne'){
+1512547270440:pvalue=2*pnorm(-abs(zcalc))
+1512547270440:}
+1512547270441:altname=c(if(alt=='g'){
+1512547270441:altname=c("greater than")
+1512547270442:}    else if(alt=='l'){
+1512547270442:altname=c("less than")
+1512547270443:}    else if(alt=='ne'){
+1512547270443:altname=c("not equal to")
+1512547270444:})
+1512547270445:cat(" ","\n","Hypothesis Test for Percussion 1-sample proportion","\n",
+1512547270445:"Number of successes =",x,"\n","Alternative hypothesis =",altname,"\n","Sample size =",n,
+1512547270446:"\n","Hypothesized proportion =",p0,"\n", "SE =",sep0,"\n","Significance Level =",
+1512547270447:sig,"\n","Zcalc =",zcalc,"\n","pvalue =",pvalue,"\n","","\n")
+1512547270448:results=list(phat=phat,n=n,x=x,p0=p0,sep0=sep0,alt=alt,zcalc=zcalc,pvalue=pvalue)
+1512547270448:}
+1512547270450:# H0: p=.40 Ha: p not=.40
+1512547270450:x=9; n=30; p0=.40
+1512547270451:test.1prop(x=x,n=n,p0=p0,alt='ne',alpha=0.05)
+1512547374216:#VMB
+1512547374217:VMB=c(rep("Woodwind Major",each=5),rep("Woodwind Non-Major",each=25),rep("Brass Major",each=8),rep("Brass Non-Major",each=22),rep("Percussion Major",each=9),rep("Percussion Non-Major",each=21))
+1512547374218:VMB
+1512547374222:table(VMB)
+1512547374223:barplot(table(VMB),main='Proportion of Music Majors in the Vandal Marching Band',col=grey.colors(2))
+1512547374237:#Woodwinds
+1512547374238:woodwind=c(rep("Music Major",each=5), rep("Non-Music Major",each=25))
+1512547374239:woodwind
+1512547374240:table(woodwind)
+1512547374241:# 1-sample proportion Confidence Interval
+1512547374241:ci.1prop=function(x,n,alpha){
+1512547374241:phat=x/n; qhat=1-phat; alpha=alpha; zstar=qnorm(1-alpha/2)
+1512547374242:cl=(1-alpha); cl.perc=sprintf("%.0f%%",cl*100)
+1512547374242:se=sqrt(phat*qhat/n); moe=zstar*se
+1512547374243:lower=phat-moe; upper=phat+moe
+1512547374243:lowerpct=sprintf("%.2f%%",lower*100); upperpct=sprintf("%.2f%%",upper*100)
+1512547374244:cat(" ","\n","CI for Woodwind 1-sample proportion","\n","Confidence Level =",cl.perc,
+1512547374244:"\n","Critical Value of Z* =",zstar,"\n","SE =",se,"\n","Point Estimate of p =",phat,"\n",
+1512547374245:"Margin of Error =",moe,"\n","Lower Bound =",lower,"Upper Bound =",upper,"\n","Lower Bound (%) =",
+1512547374245:lowerpct,"Upper Bound (%) =",upperpct,"\n","","\n")
+1512547374246:results=list(zstar=zstar,se=se,phat=phat,moe=moe,lower=lower,upper=upper,
+1512547374246:lowerpct=lowerpct,upperpct=upperpct)
+1512547374246:}
+1512547374247:ci.1prop(x=5,n=30,0.05)
+1512547374263:# 1 sample proportion test
+1512547374263:test.1prop=function(x,n,p0,alt,alpha) {
+1512547374264:phat=x/n; p0=p0; q0=1-p0
+1512547374264:sep0=sqrt(p0*q0/n); zcalc=(phat-p0)/sep0
+1512547374265:alt=alt; alpha=alpha; sig=sprintf("%.0f%%",alpha*100)
+1512547374266:if(alt=='g'){
+1512547374267:pvalue=pnorm(zcalc,lower.tail=F)
+1512547374268:}    else if(alt=='l'){
+1512547374269:pvalue=pnorm(zcalc)
+1512547374269:}    else if(alt=='ne'){
+1512547374270:pvalue=2*pnorm(-abs(zcalc))
+1512547374270:}
+1512547374270:altname=c(if(alt=='g'){
+1512547374271:altname=c("greater than")
+1512547374271:}    else if(alt=='l'){
+1512547374271:altname=c("less than")
+1512547374272:}    else if(alt=='ne'){
+1512547374272:altname=c("not equal to")
+1512547374273:})
+1512547374273:cat(" ","\n","Hypothesis Test for Woodwind 1-sample proportion","\n",
+1512547374274:"Number of successes =",x,"\n","Alternative hypothesis =",altname,"\n","Sample size =",n,
+1512547374274:"\n","Hypothesized proportion =",p0,"\n", "SE =",sep0,"\n","Significance Level =",
+1512547374274:sig,"\n","Zcalc =",zcalc,"\n","pvalue =",pvalue,"\n","","\n")
+1512547374275:results=list(phat=phat,n=n,x=x,p0=p0,sep0=sep0,alt=alt,zcalc=zcalc,pvalue=pvalue)
+1512547374275:}
+1512547374276:# H0: p=.40 Ha: p not=.40
+1512547374276:x=5; n=30; p0=.40
+1512547374277:test.1prop(x=x,n=n,p0=p0,alt='ne',alpha=0.05)
+1512547374301:#Brass
+1512547374301:brass=c(rep("Music Major",each=8), rep("Non-Music Major",each=22))
+1512547374302:brass
+1512547374303:table(brass)
+1512547374303:# 1-sample proportion Confidence Interval
+1512547374304:ci.1prop=function(x,n,alpha){
+1512547374304:phat=x/n; qhat=1-phat; alpha=alpha; zstar=qnorm(1-alpha/2)
+1512547374305:cl=(1-alpha); cl.perc=sprintf("%.0f%%",cl*100)
+1512547374305:se=sqrt(phat*qhat/n); moe=zstar*se
+1512547374306:lower=phat-moe; upper=phat+moe
+1512547374306:lowerpct=sprintf("%.2f%%",lower*100); upperpct=sprintf("%.2f%%",upper*100)
+1512547374307:cat(" ","\n","CI for Brass 1-sample proportion","\n","Confidence Level =",cl.perc,
+1512547374307:"\n","Critical Value of Z* =",zstar,"\n","SE =",se,"\n","Point Estimate of p =",phat,"\n",
+1512547374307:"Margin of Error =",moe,"\n","Lower Bound =",lower,"Upper Bound =",upper,"\n","Lower Bound (%) =",
+1512547374308:lowerpct,"Upper Bound (%) =",upperpct,"\n","","\n")
+1512547374308:results=list(zstar=zstar,se=se,phat=phat,moe=moe,lower=lower,upper=upper,
+1512547374308:lowerpct=lowerpct,upperpct=upperpct)
+1512547374309:}
+1512547374310:ci.1prop(x=8,n=30,0.05)
+1512547374373:# 1 sample proportion test
+1512547374373:test.1prop=function(x,n,p0,alt,alpha) {
+1512547374374:phat=x/n; p0=p0; q0=1-p0
+1512547374374:sep0=sqrt(p0*q0/n); zcalc=(phat-p0)/sep0
+1512547374375:alt=alt; alpha=alpha; sig=sprintf("%.0f%%",alpha*100)
+1512547374375:if(alt=='g'){
+1512547374376:pvalue=pnorm(zcalc,lower.tail=F)
+1512547374376:}    else if(alt=='l'){
+1512547374376:pvalue=pnorm(zcalc)
+1512547374377:}    else if(alt=='ne'){
+1512547374377:pvalue=2*pnorm(-abs(zcalc))
+1512547374377:}
+1512547374378:altname=c(if(alt=='g'){
+1512547374378:altname=c("greater than")
+1512547374379:}    else if(alt=='l'){
+1512547374379:altname=c("less than")
+1512547374380:}    else if(alt=='ne'){
+1512547374380:altname=c("not equal to")
+1512547374381:})
+1512547374381:cat(" ","\n","Hypothesis Test for Brass 1-sample proportion","\n",
+1512547374382:"Number of successes =",x,"\n","Alternative hypothesis =",altname,"\n","Sample size =",n,
+1512547374383:"\n","Hypothesized proportion =",p0,"\n", "SE =",sep0,"\n","Significance Level =",
+1512547374383:sig,"\n","Zcalc =",zcalc,"\n","pvalue =",pvalue,"\n","","\n")
+1512547374384:results=list(phat=phat,n=n,x=x,p0=p0,sep0=sep0,alt=alt,zcalc=zcalc,pvalue=pvalue)
+1512547374384:}
+1512547374385:# H0: p=.40 Ha: p not=.40
+1512547374385:x=8; n=30; p0=.40
+1512547374387:test.1prop(x=x,n=n,p0=p0,alt='ne',alpha=0.05)
+1512547374424:#Percussion
+1512547374425:percussion=c(rep("Music Major",each=9), rep("Non-Music Major",each=21))
+1512547374425:percussion
+1512547374426:table(percussion)
+1512547374427:# 1-sample proportion Confidence Interval
+1512547374427:ci.1prop=function(x,n,alpha){
+1512547374427:phat=x/n; qhat=1-phat; alpha=alpha; zstar=qnorm(1-alpha/2)
+1512547374428:cl=(1-alpha); cl.perc=sprintf("%.0f%%",cl*100)
+1512547374429:se=sqrt(phat*qhat/n); moe=zstar*se
+1512547374429:lower=phat-moe; upper=phat+moe
+1512547374430:lowerpct=sprintf("%.2f%%",lower*100); upperpct=sprintf("%.2f%%",upper*100)
+1512547374431:cat(" ","\n","CI for Percussion 1-sample proportion","\n","Confidence Level =",cl.perc,
+1512547374432:"\n","Critical Value of Z* =",zstar,"\n","SE =",se,"\n","Point Estimate of p =",phat,"\n",
+1512547374432:"Margin of Error =",moe,"\n","Lower Bound =",lower,"Upper Bound =",upper,"\n","Lower Bound (%) =",
+1512547374433:lowerpct,"Upper Bound (%) =",upperpct,"\n","","\n")
+1512547374435:results=list(zstar=zstar,se=se,phat=phat,moe=moe,lower=lower,upper=upper,
+1512547374436:lowerpct=lowerpct,upperpct=upperpct)
+1512547374437:}
+1512547374438:ci.1prop(x=9,n=30,0.05)
+1512547374453:# 1 sample proportion test
+1512547374454:test.1prop=function(x,n,p0,alt,alpha) {
+1512547374454:phat=x/n; p0=p0; q0=1-p0
+1512547374454:sep0=sqrt(p0*q0/n); zcalc=(phat-p0)/sep0
+1512547374455:alt=alt; alpha=alpha; sig=sprintf("%.0f%%",alpha*100)
+1512547374455:if(alt=='g'){
+1512547374456:pvalue=pnorm(zcalc,lower.tail=F)
+1512547374456:}    else if(alt=='l'){
+1512547374457:pvalue=pnorm(zcalc)
+1512547374457:}    else if(alt=='ne'){
+1512547374458:pvalue=2*pnorm(-abs(zcalc))
+1512547374459:}
+1512547374459:altname=c(if(alt=='g'){
+1512547374460:altname=c("greater than")
+1512547374460:}    else if(alt=='l'){
+1512547374461:altname=c("less than")
+1512547374461:}    else if(alt=='ne'){
+1512547374461:altname=c("not equal to")
+1512547374462:})
+1512547374462:cat(" ","\n","Hypothesis Test for Percussion 1-sample proportion","\n",
+1512547374463:"Number of successes =",x,"\n","Alternative hypothesis =",altname,"\n","Sample size =",n,
+1512547374463:"\n","Hypothesized proportion =",p0,"\n", "SE =",sep0,"\n","Significance Level =",
+1512547374463:sig,"\n","Zcalc =",zcalc,"\n","pvalue =",pvalue,"\n","","\n")
+1512547374464:results=list(phat=phat,n=n,x=x,p0=p0,sep0=sep0,alt=alt,zcalc=zcalc,pvalue=pvalue)
+1512547374465:}
+1512547374466:# H0: p=.40 Ha: p not=.40
+1512547374467:x=9; n=30; p0=.40
+1512547374468:test.1prop(x=x,n=n,p0=p0,alt='ne',alpha=0.05)
+1512548001710:#Comparing Woodwinds and Brass 2 sample proportion test
+1512548001710:test.2prop=function(x1,x2,n1,n2,alt,alpha) {
+1512548001712:phat1=x1/n1; qhat1=1-phat1; phat2=x2/n2; qhat2=1-phat2; pt.est=phat1-phat2
+1512548001712:pooled.phat=(x1+x2)/(n1+n2); pooled.qhat=1-pooled.phat
+1512548001713:se=sqrt((pooled.phat*pooled.qhat)*(1/n1+1/n2)); zcalc=pt.est/se
+1512548001714:alpha=alpha; alt=alt; sig=sprintf("%.0f%%",alpha*100)
+1512548001714:if(alt=='g'){
+1512548001715:pvalue=pnorm(zcalc,lower.tail=F)
+1512548001715:}    else if(alt=='l'){
+1512548001715:pvalue=pnorm(zcalc)
+1512548001716:}    else if(alt=='ne'){
+1512548001716:pvalue=2*pnorm(-abs(zcalc))
+1512548001716:}
+1512548001717:cat(" ","\n","Hypothesis Test for 2-sample proportion of Woodwinds and Brass","\n","p1 =",phat1,"p2 =",phat2,"\n","Point Estimate of p1-p2 =",pt.est,"\n",
+1512548001717:"Pooled p =",pooled.phat,"SE =",se,"\n","Alternative hypothesis =",alt,"Significance Level =",sig,"\n",
+1512548001717:"\n","Zcalc =",zcalc,"\n","pvalue =",pvalue,"\n")
+1512548001718:results=list(phat1=phat1,n1=n1,phat2=phat2,n2=n2,pt.est=pt.est,pooled.phat=pooled.phat,
+1512548001718:se=se,alt=alt,zcalc=zcalc,pvalue=pvalue)
+1512548001719:}
+1512548001722:# a
+1512548001723:# H0: p1=p2 Ha: p1>p2
+1512548001723:test.2prop(x1=5,x2=8,n1=30,n2=30,alt='g',0.05)
+1512585548362:chisq.test(VMB)
+1512585557564:test.2prop(x1=5,x2=8,n1=30,n2=30,alt='g',0.05)
+1512585590973:VMB
+1512585612801:chisq.test(table(VMB))
+1512586381426:band <- as.table(rbind(c(5,25), c(8,22),c(9,21)))
+1512586381428:instrument=c("Woodwind","Brass","Percussion"); major=c("Music Major","Non-Music Major")
+1512586381428:dimnames(band) <- list(Instrument.Type=instrument,Academic.Major=major)
+1512586381429:band
+1512586381430:naame=as.matrix(band)
+1512586381430:# row totals
+1512586381430:n1j=sum(band[1,]); n2j=sum(band[2,]); n3j=sum(band[3,]); n123j=c(n1j,n2j,n3j)
+1512586381432:# column totals
+1512586381432:ni1=sum(band[,1]); ni2=sum(band[,2]); ni3=sum(band[,3]); ni123=c(ni1,ni2,ni3)
+1512586381466:# grand total
+1512586381466:n=sum(band)
+1512586381467:# Expected value for row1,col1
+1512586381467:exp11 <- round((n1j*ni1)/n,2); exp11
+1512586381468:exp=round((ni123 %*% t(n123j))/n,2)
+1512586381469:dimnames(exp) <- list(Instrument.Type=instrument,Academic.Major=major)
+1512586381470:expt=matrix(exp,ncol=3,byrow=T)
+1512586381471:# barplot of data (barplot since data is categorical)
+1512586381471:barplot(band,names.arg=rownames(band),col=rainbow(9),ylab="Observed",ylim=c(0,225))
+1512586381494:title('Condition by Pricing (obs)')
+1512586381502:barplot(exp,names.arg=rownames(band),col=rainbow(9),ylab="Expected",ylim=c(0,225))
+1512586381504:title('Condition by Pricing (exp)')
+1512586381506:# barplot with obs and exp
+1512586381506:counts <- rbind(naame,expt)
+1512586381507:barplot(counts,legend=rownames(band),beside=T,ylim=c(0,225))
+1512586381507:title('Condition by Pricing Obs and Exp')
+1512586381509:# long way without chisq.test()
+1512586381510:chisq.calc <- round(sum((naame-expt)^2/expt),3); chisq.calc
+1512586381510:pvalue <- 1-pchisq(chisq.calc,4); pvalue
+1512586381511:# with chisq.test()
+1512586381511:indep=chisq.test(band); indep
+1512586381516:indep$expected
+1512586431640:gas <- as.table(rbind(c(5,25), c(8,22),c(9,21)))
+1512586431640:cond=c("Substandard","Standard","Modern"); price=c("Aggressive","Neutral", "Nonaggressive")
+1512586431641:dimnames(gas) <- list(Condition=cond,Pricing.Policy=price)
+1512586431642:gas
+1512586431643:gaspr=as.matrix(gas)
+1512586431643:# row totals
+1512586431643:n1j=sum(gas[1,]); n2j=sum(gas[2,]); n3j=sum(gas[3,]); n123j=c(n1j,n2j,n3j)
+1512586431644:# column totals
+1512586431645:ni1=sum(gas[,1]); ni2=sum(gas[,2]); ni3=sum(gas[,3]); ni123=c(ni1,ni2,ni3)
+1512586431646:# grand total
+1512586431646:n=sum(gas)
+1512586431647:# Expected value for row1,col1
+1512586431647:exp11 <- round((n1j*ni1)/n,2); exp11
+1512586431648:exp=round((ni123 %*% t(n123j))/n,2)
+1512586431648:dimnames(exp) <- list(Condition=cond,Pricing.Policy=price)
+1512586431650:expt=matrix(exp,ncol=3,byrow=T)
+1512586431651:# barplot of data (barplot since data is categorical)
+1512586431652:barplot(gas,names.arg=rownames(gas),col=rainbow(9),ylab="Observed",ylim=c(0,225))
+1512586431660:title('Condition by Pricing (obs)')
+1512586431661:barplot(exp,names.arg=rownames(gas),col=rainbow(9),ylab="Expected",ylim=c(0,225))
+1512586431662:title('Condition by Pricing (exp)')
+1512586431663:# barplot with obs and exp
+1512586431664:counts <- rbind(gaspr,expt)
+1512586431664:barplot(counts,legend=rownames(gas),beside=T,ylim=c(0,225))
+1512586431665:title('Condition by Pricing Obs and Exp')
+1512586431666:# long way without chisq.test()
+1512586431667:chisq.calc <- round(sum((gaspr-expt)^2/expt),3); chisq.calc
+1512586431667:pvalue <- 1-pchisq(chisq.calc,4); pvalue
+1512586431668:# with chisq.test()
+1512586431669:indep=chisq.test(gas); indep
+1512586431670:indep$expected
+1512586469124:n1j=sum(gas[1,]); n2j=sum(gas[2,]); n12j=c(n1j,n2j)
+1513122643845:pnorm(0.96)
+1513137411837:1-pnorm(0.96)
+1513140483389:1-8315
+1513140488719:1-.8315
+1513140588772:alpha = .1
+1513140588773:pvalue = 1-pnorm(0.96)
+1513140588774:if(pvalue<alpha) "reject null hypothesis"
+1513140597909:alpha = .1
+1513140597910:pvalue = 1-pnorm(0.96)
+1513140597911:if(pvalue<alpha), reject null hypothesis
+1513140602351:alpha = .1
+1513140602352:pvalue = 1-pnorm(0.96)
+1513140602353:if(pvalue<alpha) reject null hypothesis
+1513140743342:alpha = .1
+1513140743344:pvalue = 1-pnorm(0.96)
+1513140752441:alpha = .1
+1513140752442:pvalue = 1-pnorm(0.96)
+1513140766592:pvalue
+1513140775529:pvalue < alpha
+1513140789319:alpha = .1
+1513140789320:pvalue = 1-pnorm(0.96)
+1513140789321:pvalue < alpha
+1513140887988:alpha = .1
+1513140887989:pvalue = 1-pnorm(0.96)
+1513140887989:pvalue
+1513140887990:pvalue < alpha
+1513141225592:alpha = .05
+1513141225595:pvalue = pnorm(6)
+1513141225596:pvalue
+1513141225596:pvalue < alpha
+1513141229240:alpha = .05
+1513141229420:pvalue = pnorm(6)
+1513141229607:pvalue
+1513141229806:pvalue < alpha
+1513141238909:alpha = .05
+1513141238910:pvalue = pnorm(6)
+1513141238910:pvalue
+1513141238911:pvalue < alpha
+1513141968121:1-pnorm(1.99)
+1513141985141:1-pnorm(1.18)
+1513142113279:alpha = .1
+1513142113280:pvalue = 1-pnorm(1.18)
+1513142113280:pvalue
+1513142113281:pvalue < alpha
+1513142122616:alpha = .1
+1513142122617:pvalue = 1-pnorm(1.18)
+1513142122617:pvalue
+1513142122618:pvalue < alpha
+1513142478437:pvalue
+1513142485094:alpha = .1
+1513142485095:pvalue = 1-pnorm(-2.92)
+1513142485096:pvalue
+1513142485096:pvalue < alpha
+1513142910275:alpha = .05
+1513142910277:pvalue = 1-pnorm(-2.92)
+1513142910278:pvalue
+1513142910280:pvalue < alpha
+1513142944194:alpha = .05
+1513142944195:pvalue = 2(1-pnorm(|3.09|))
+1513142944196:pvalue
+1513142944196:pvalue < alpha
+1513142950727:alpha = .05
+1513142950728:pvalue = 2(1-pnorm(3.09))
+1513142950761:pvalue
+1513142950762:pvalue < alpha
+1513142964833:alpha = .05
+1513142964833:pvalue = 2*(1-pnorm(3.09))
+1513142964834:pvalue
+1513142964835:pvalue < alpha
+1513143242461:pnorm(-2.92)
+1513143308647:alpha = 0.05
+1513143308647:pvalue = pnorm(-2.92)
+1513143308648:pvalue
+1513143308649:pvalue < alpha
+1513143515073:alpha = 0.05
+1513143515074:pvalue = pt(-0.5,24)
+1513143515075:pvalue
+1513143515076:pvalue < alpha
+1513143521347:alpha = 0.05
+1513143521348:pvalue = pt(-0.5,24)
+1513143521349:pvalue
+1513143521350:pvalue < alpha

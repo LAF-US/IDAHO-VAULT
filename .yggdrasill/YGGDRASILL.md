@@ -1,8 +1,7 @@
 ---
 title: YGGDRASILL
-authority: LOGAN
-related:
-- The world is quiet here
+path: ./.yggdrasill/YGGDRASILL.md
 ---
 
-[ ? ]
+Persona Anchored at 2026-09-06T08:34:28.65084605Z
+

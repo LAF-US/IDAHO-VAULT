@@ -1,12 +1,7 @@
 ---
 title: AIKIDO
-authority: LOGAN
-related:
-  - AIKIDO
-  - imported_software
-  - runtime
+path: ./.aikido/AIKIDO.md
 ---
 
-**.aikido** — Imported software runtime persona.
+Persona Anchored at 2026-09-06T08:34:26.894824408Z
 
-aikido runtime and configuration.

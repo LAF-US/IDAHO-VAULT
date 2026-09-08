@@ -57,7 +57,7 @@ Prefer raw artifacts such as example prompts, outputs, diffs, logs, or traces. G
 
 Every skill consists of a required SKILL.md file and optional bundled resources:
 
-```text
+```
 skill-name/
 ├── SKILL.md (required)
 │   ├── YAML frontmatter metadata (required)
@@ -169,7 +169,7 @@ Codex loads FORMS.md, REFERENCE.md, or EXAMPLES.md only when needed.
 
 For Skills with multiple domains, organize content by domain to avoid loading irrelevant context:
 
-```text
+```
 bigquery-skill/
 ├── SKILL.md (overview and navigation)
 └── reference/
@@ -183,7 +183,7 @@ When a user asks about sales metrics, Codex only reads sales.md.
 
 Similarly, for skills supporting multiple frameworks or variants, organize by variant:
 
-```text
+```
 cloud-deploy/
 ├── SKILL.md (workflow + provider selection)
 └── references/
@@ -393,25 +393,23 @@ Not:
   `Review the skill at /path/to/skill-x; pretend a user asks you to...`
 
 Decision rule for forward-testing:
-
-- Err on the side of forward-testing
-- Ask for approval if you think there's a risk that forward-testing would:
-  - take a long time,
-  - require additional approvals from the user, or
-  - modify live production systems
+  - Err on the side of forward-testing
+  - Ask for approval if you think there's a risk that forward-testing would:
+    * take a long time,
+    * require additional approvals from the user, or
+    * modify live production systems
 
   In these cases, show the user your proposed prompt and request (1) a yes/no decision, and
   (2) any suggested modifictions.
 
 Considerations when forward-testing:
-
-- use fresh threads for independent passes
-- pass the skill, and a request in a similar way the user would.
-- pass raw artifacts, not your conclusions
-- avoid showing expected answers or intended fixes
-- rebuild context from source artifacts after each iteration
-- review the subagent's output and reasoning and emitted artifacts
-- avoid leaving artifacts the agent can find on disk between iterations;
+   - use fresh threads for independent passes
+   - pass the skill, and a request in a similar way the user would.
+   - pass raw artifacts, not your conclusions
+   - avoid showing expected answers or intended fixes
+   - rebuild context from source artifacts after each iteration
+   - review the subagent's output and reasoning and emitted artifacts
+   - avoid leaving artifacts the agent can find on disk between iterations;
      clean up subagents' artifacts to avoid additional contamination.
 
 If forward-testing only succeeds when subagents see leaked context, tighten the skill or the

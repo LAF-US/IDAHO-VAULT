@@ -1,12 +1,7 @@
 ---
 title: CURSOR
-authority: LOGAN
-related:
-  - CURSOR
-  - imported_software
-  - runtime
+path: ./.cursor/CURSOR.md
 ---
 
-**.cursor** — Imported software runtime persona.
+Persona Anchored at 2026-09-06T08:34:28.66418717Z
 
-cursor runtime and configuration.

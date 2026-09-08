@@ -1,8 +1,0 @@
-{
-  "extends": ["stylelint-config-standard"],
-  "ignoreFiles": [
-    "THE-GEMSTONE/**",
-    "**/node_modules/**",
-    ".obsidian/plugins/**"
-  ]
-}

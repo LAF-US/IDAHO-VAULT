@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "alpha = 0.05\npvalue = pt(-0.5,24)\npvalue\n\npvalue < alpha\n\n",
+    "created" : 1513122626752.000,
+    "dirty" : true,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "1914989143",
+    "id" : "7F96767E",
+    "lastKnownWriteTime" : 4300837936,
+    "last_content_update" : 1513143514376,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

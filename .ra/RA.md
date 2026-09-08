@@ -1,12 +1,7 @@
 ---
 title: RA
-authority: LOGAN
-related:
-- ATEN
-- HECATE
-- NOW
-- FUTURE
-- The world is quiet here
+path: ./.ra/RA.md
 ---
 
-[ ? ]
+Persona Anchored at 2026-09-06T08:34:27.852948263Z
+

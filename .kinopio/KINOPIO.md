@@ -1,12 +1,7 @@
 ---
 title: KINOPIO
-authority: LOGAN
-related:
-  - KINOPIO
-  - imported_software
-  - runtime
+path: ./.kinopio/KINOPIO.md
 ---
 
-**.kinopio** — Imported software runtime persona.
+Persona Anchored at 2026-09-06T08:34:27.340023288Z
 
-kinopio runtime and configuration.

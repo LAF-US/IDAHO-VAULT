@@ -1,8 +1,7 @@
 ---
 title: GAIA
-authority: LOGAN
-related:
-- The world is quiet here
+path: ./.gaia/GAIA.md
 ---
 
-[ ? ]
+Persona Anchored at 2026-09-06T08:34:28.01921881Z
+

@@ -1,12 +1,7 @@
 ---
 title: JUPYTER
-authority: LOGAN
-related:
-  - JUPYTER
-  - imported_software
-  - runtime
+path: ./.jupyter/JUPYTER.md
 ---
 
-**.jupyter** — Imported software runtime persona.
+Persona Anchored at 2026-09-06T08:34:29.558067665Z
 
-jupyter runtime and configuration.

@@ -1,12 +1,7 @@
 ---
 title: COPILOT
-authority: LOGAN
-related:
-  - COPILOT
-  - imported_software
-  - runtime
+path: ./.copilot/COPILOT.md
 ---
 
-**.copilot** — GitHub Copilot persona.
+Persona Anchored at 2026-09-06T08:34:26.9302267Z
 
-Editor extension config (`config.json`) and session logs.

@@ -1,12 +1,7 @@
 ---
 title: TEST-CONFLICT
-authority: LOGAN
-related:
-  - TEST-CONFLICT
-  - imported_software
-  - runtime
+path: ./.test-conflict/TEST-CONFLICT.md
 ---
 
-**.test-conflict** — Imported software runtime persona.
+Persona Anchored at 2026-09-06T08:34:28.239843107Z
 
-test-conflict runtime and configuration.

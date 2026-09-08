@@ -1,12 +1,7 @@
 ---
 title: KIMI
-authority: LOGAN
-related:
-  - KIMI
-  - imported_software
-  - runtime
+path: ./.kimi/KIMI.md
 ---
 
-**.kimi** — Imported software runtime persona.
+Persona Anchored at 2026-09-06T08:34:29.586013915Z
 
-kimi runtime and configuration.

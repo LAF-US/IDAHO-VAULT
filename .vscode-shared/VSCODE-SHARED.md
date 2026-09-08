@@ -1,12 +1,7 @@
 ---
 title: VSCODE-SHARED
-authority: LOGAN
-related:
-  - VSCODE-SHARED
-  - imported_software
-  - editor
+path: ./.vscode-shared/VSCODE-SHARED.md
 ---
 
-**.vscode-shared** — VS Code shared storage persona.
+Persona Anchored at 2026-09-06T08:34:29.359412509Z
 
-Cross-machine editor state, StorageUri DBs, and shared extension data.

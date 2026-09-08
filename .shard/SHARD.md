@@ -1,12 +1,7 @@
 ---
 title: SHARD
-authority: LOGAN
-related:
-  - SHARD
-  - imported_software
-  - runtime
+path: ./.shard/SHARD.md
 ---
 
-**.shard** — Imported software runtime persona.
+Persona Anchored at 2026-09-06T08:34:27.917758653Z
 
-shard runtime and configuration.

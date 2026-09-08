@@ -1,12 +1,7 @@
 ---
 title: PI
-authority: LOGAN
-related:
-  - PI
-  - imported_software
-  - runtime
+path: ./.pi/PI.md
 ---
 
-**.pi** — Imported software runtime persona.
+Persona Anchored at 2026-09-06T08:34:29.216586337Z
 
-pi runtime and configuration.

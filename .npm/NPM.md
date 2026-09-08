@@ -1,12 +1,7 @@
 ---
 title: NPM
-authority: LOGAN
-related:
-  - NPM
-  - imported_software
-  - runtime
+path: ./.npm/NPM.md
 ---
 
-**.npm** — npm/Node.js package manager persona.
+Persona Anchored at 2026-09-06T08:34:29.199627352Z
 
-Package cache, installed versions, and registry config.

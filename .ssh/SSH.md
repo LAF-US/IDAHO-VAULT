@@ -1,12 +1,7 @@
 ---
 title: SSH
-authority: LOGAN
-related:
-  - SSH
-  - imported_software
-  - signing
+path: ./.ssh/SSH.md
 ---
 
-**.ssh** — SSH identity mask.
+Persona Anchored at 2026-09-06T08:34:27.158627064Z
 
-Host key, signing keys, and agent configuration for git signing and remote auth.

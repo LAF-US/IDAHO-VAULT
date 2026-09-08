@@ -1,0 +1,17 @@
+{
+  "base_tree": "4507471ce451dd2870d8115ed6e486d0febf03a5",
+  "tree": [
+    {
+      "path": ".gitmodules",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "60fcc04152ad5b1207d071a829c91aabfabab0b2"
+    },
+    {
+      "path": "DND-SRD-5.2.1-UPSTREAM",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "1b4b99dcb786cdd1a2fb26f8acec1551191f1ca4"
+    }
+  ]
+}
