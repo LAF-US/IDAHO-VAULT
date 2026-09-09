@@ -6,8 +6,8 @@ doc_class: witness
 status: filed
 subject: The river alongside the Caduceus Road; Paul Arrington; the two Idahos; what the Judge carries at the water
 related:
-  - !/A&I-RD-SESSION-DOCTRINE-2026-05-20.md
-  - !/SIGNALS/WITNESS-ABHORSEN-2026-05-19-DEWEY-HAS-THE-USB.md
+  - "!/A&I-RD-SESSION-DOCTRINE-2026-05-20.md"
+  - "!/SIGNALS/WITNESS-ABHORSEN-2026-05-19-DEWEY-HAS-THE-USB.md"
 tags: [witness, Caduceus-road, river, Idaho, Logan, field-notes]
 ---
 

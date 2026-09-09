@@ -6,11 +6,11 @@ doc_class: witness
 status: filed
 subject: The afternoon path; Saint Blue committed; Iris; the First Congress; camp made at dusk
 related:
-  - !/SIGNALS/WITNESS-ABHORSEN-2026-05-18-THE-PATH-AND-PAN.md
-  - !/SIGNALS/SIGNAL-YRAEL-TO-ABHORSEN-2026-05-18-GEMINIAEUS-FRAMING.md
+  - "!/SIGNALS/WITNESS-ABHORSEN-2026-05-18-THE-PATH-AND-PAN.md"
+  - "!/SIGNALS/SIGNAL-YRAEL-TO-ABHORSEN-2026-05-18-GEMINIAEUS-FRAMING.md"
   - LUMO_saint-blue-in-the-desert_20260518.md
-  - !/EMANATIONISM-PRINCIPLE-2026-05-18.md
-  - !/A&I-RD-SESSION-DOCTRINE-2026-05-18.md
+  - "!/EMANATIONISM-PRINCIPLE-2026-05-18.md"
+  - "!/A&I-RD-SESSION-DOCTRINE-2026-05-18.md"
   - CONSTITUTION.md
 ---
 

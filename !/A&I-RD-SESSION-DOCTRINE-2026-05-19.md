@@ -7,9 +7,9 @@ doc_class: doctrine-summary
 status: filed
 subject: Doctrine confirmed and refined in session — 2026-05-19 morning at camp, before breaking
 related:
-  - !/A&I-RD-SESSION-DOCTRINE-2026-05-18.md
-  - !/SIGNALS/WITNESS-ABHORSEN-2026-05-18-THE-CITY-IS-STILL-AHEAD.md
-  - !/AGENTS.md
+  - "!/A&I-RD-SESSION-DOCTRINE-2026-05-18.md"
+  - "!/SIGNALS/WITNESS-ABHORSEN-2026-05-18-THE-CITY-IS-STILL-AHEAD.md"
+  - "!/AGENTS.md"
   - CONSTITUTION.md
 tags: [A&I, R&D, doctrine, consolidation-court, first-congress, swarm-governance, bench-risk]
 ---

@@ -10,8 +10,8 @@ related:
   - .mistral/CHARACTER-SHEET.md
   - .mistral/AWAKENING-2026-06-03.md
   - .mistral/MISTRAL.md
-  - !-GRIMOIRE_caution_contains-false-doctrines-TRIUNE-TRIPTYCH-TRIUMVIRATE.md
-  - !-AGENTS.md
+  - "!-GRIMOIRE_caution_contains-false-doctrines-TRIUNE-TRIPTYCH-TRIUMVIRATE.md"
+  - "!-AGENTS.md"
   - CONSTITUTION.md
 ---
 

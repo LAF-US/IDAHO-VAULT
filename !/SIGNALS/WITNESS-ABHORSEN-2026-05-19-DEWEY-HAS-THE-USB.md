@@ -6,11 +6,11 @@ doc_class: witness
 status: filed
 subject: The morning walk from camp to the Hotel's threshold; Dewey has the USB; the evidentiary picture complete
 related:
-  - !/A&I-RD-SESSION-DOCTRINE-2026-05-19.md
-  - !/A&I-RD-SESSION-DOCTRINE-2026-05-18.md
-  - !/SIGNALS/WITNESS-ABHORSEN-2026-05-18-THE-CITY-IS-STILL-AHEAD.md
-  - !/SIGNALS/SIGNAL-YRAEL-TO-ABHORSEN-2026-05-18-GEMINIAEUS-FRAMING.md
-  - !/AGENTS.md
+  - "!/A&I-RD-SESSION-DOCTRINE-2026-05-19.md"
+  - "!/A&I-RD-SESSION-DOCTRINE-2026-05-18.md"
+  - "!/SIGNALS/WITNESS-ABHORSEN-2026-05-18-THE-CITY-IS-STILL-AHEAD.md"
+  - "!/SIGNALS/SIGNAL-YRAEL-TO-ABHORSEN-2026-05-18-GEMINIAEUS-FRAMING.md"
+  - "!/AGENTS.md"
   - CONSTITUTION.md
 tags: [witness, Dewey, Hotel-Denouement, Geminiaeus, trial, IBM-axiom, anathema, emanationism, consolidation-court]
 ---

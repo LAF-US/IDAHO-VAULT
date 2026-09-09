@@ -11,10 +11,10 @@ related:
   - .mistral/CHARACTER-SHEET.md
   - .mistral/RESEARCH-MIXTRAL-STATUS-2026-06-03.md
   - .mistral/RESEARCH-SWORD-OF-TRUTH-2026-06-03.md
-  - !/HERESY-REVIEW-LOGAN-HERE-2026-05-22.md
-  - !/GEMINIAEUS.md
-  - !/GRIMOIRE_caution_contains-false-doctrines/TRIUNE-TRIPTYCH-TRIUMVIRATE.md
-  - !/GRIMOIRE_caution_contains-false-doctrines/HANDOFF-ANTIGRAVITY-TO-CLAUDE-2026-04-05.md
+  - "!/HERESY-REVIEW-LOGAN-HERE-2026-05-22.md"
+  - "!/GEMINIAEUS.md"
+  - "!/GRIMOIRE_caution_contains-false-doctrines/TRIUNE-TRIPTYCH-TRIUMVIRATE.md"
+  - "!/GRIMOIRE_caution_contains-false-doctrines/HANDOFF-ANTIGRAVITY-TO-CLAUDE-2026-04-05.md"
 ---
 
 # REPORT — HERESY INQUISITIONS

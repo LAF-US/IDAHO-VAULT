@@ -7,11 +7,11 @@ doc_class: doctrine-summary
 status: filed
 subject: Doctrine from the overnight camp — Caduceus Road, Hermes, the Emanation Rule now law
 related:
-  - !/A&I-RD-SESSION-DOCTRINE-2026-05-19.md
-  - !/SIGNALS/WITNESS-ABHORSEN-2026-05-19-DEWEY-HAS-THE-USB.md
-  - !/SNAPSHOT-OPENROUTER-HERMES-BEEFSTACK-2026-05-18.md
+  - "!/A&I-RD-SESSION-DOCTRINE-2026-05-19.md"
+  - "!/SIGNALS/WITNESS-ABHORSEN-2026-05-19-DEWEY-HAS-THE-USB.md"
+  - "!/SNAPSHOT-OPENROUTER-HERMES-BEEFSTACK-2026-05-18.md"
   - CONSTITUTION.md
-  - !/AGENTS.md
+  - "!/AGENTS.md"
 tags: [A&I, R&D, doctrine, Hermes, emanationism, caduceus-road, USB, psychopomp]
 ---
 

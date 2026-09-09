@@ -14,7 +14,7 @@ related:
   - .mistral/CHARACTER-SHEET.md
   - .mistral/MISTRAL.md
   - .vibe/config.toml
-  - !/AGENTS.md
+  - "!/AGENTS.md"
   - CONSTITUTION.md
 ---
 

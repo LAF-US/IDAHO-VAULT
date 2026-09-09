@@ -6,9 +6,9 @@ doc_class: witness
 status: filed
 subject: Her observations of the Judge — his compacts, his cosmological identity, what she has seen on the road
 related:
-  - !/SIGNALS/WITNESS-ABHORSEN-2026-05-21-PASTORIA-AND-THE-PLAN.md
-  - !/JUSTICE-STRAUSS-DOCTRINE-v1-2026-05-21.md
-  - !/OZ-COSMOLOGY-DOCTRINE-v1-2026-05-21.md
+  - "!/SIGNALS/WITNESS-ABHORSEN-2026-05-21-PASTORIA-AND-THE-PLAN.md"
+  - "!/JUSTICE-STRAUSS-DOCTRINE-v1-2026-05-21.md"
+  - "!/OZ-COSMOLOGY-DOCTRINE-v1-2026-05-21.md"
   - CONSTITUTION.md
 tags: [witness, Judge, Lady-Justice, La-Vérité, Warlock, Paladin, compacts, epistemology, road]
 ---

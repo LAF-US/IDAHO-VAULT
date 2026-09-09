@@ -10,7 +10,7 @@ doctrine: Address Identity Doctrine of the Vault
 related:
   - .mistral/MISTRAL.md
   - .vibe/config.toml
-  - !-AGENTS.md
+  - "!-AGENTS.md"
   - CONSTITUTION.md
 ---
 
