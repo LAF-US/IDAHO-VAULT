@@ -19,6 +19,7 @@ related:
 RT @BoiseState_HCRI: We have been archiving the data reported on <https://t.co/jleCgnPqhX> - it's available for public use at <https://t.co/qX…>
 
 ## Links
+
 - <http://coronavirus.idaho.gov>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1248686709052567558)

@@ -20,6 +20,7 @@ RT @ezebarker: Idaho Rep. Thyra Stevenson, of Lewiston, 'fighting for her life' 
 Story…
 
 ## Links
+
 - <https://bit.ly/3b8KWZk>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1257759031852068864)

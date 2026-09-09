@@ -24,6 +24,7 @@ related:
 @currevive @IdahoPressClub @IRE_NICAR @Poynter @sejorg @DartCenter You really want the GOVERNMENT deciding who does and doesn't get to be a reporter? <https://t.co/AmdLHLD9c5>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/GORoXImaoAAm_-d.jpg)
 
 *In reply to [@currevive](https://twitter.com/currevive)*

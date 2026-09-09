@@ -17,6 +17,7 @@ related:
 I spent a lot of time in that store growing up. Glad to know the old building saw some beneficial use before it's gone. <https://t.co/GbKdU9lSer>
 
 ## Links
+
 - <https://x.com/CdAPressNews/status/1529143707726794756>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1533916673379422209)

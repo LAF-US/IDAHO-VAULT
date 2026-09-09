@@ -21,9 +21,11 @@ RT @IdahoITD: Preliminary work is now underway to expand US-95 south of Moscow.
 MORE: <https://t.co/8jQaSgS8SY> <https://t.co/K0HZJzstYU>
 
 ## Links
+
 - <https://itd.idaho.gov/news/preliminary-work-underway-to-expand-us-95-south-of-moscow/>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/FUqiz4tUUAAyr02.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1534706275501559813)

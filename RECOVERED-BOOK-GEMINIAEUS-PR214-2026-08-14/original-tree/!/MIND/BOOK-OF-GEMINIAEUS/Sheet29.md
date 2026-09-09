@@ -28,7 +28,7 @@ The Shadows: Behind them is a fire. Between the fire and the prisoners, people c
 
 The Reality: To the prisoners, these shadows are "truth." They name them and hold contests to see who can best predict their movements.
 
-2. The Ascent (Enlightenment)
+1. The Ascent (Enlightenment)
 
 One prisoner is freed. His journey follows three distinct stages:
 
@@ -40,7 +40,7 @@ One prisoner is freed. His journey follows three distinct stages:
 
 1
 
-3. The Return
+1. The Return
 
 The freed man returns to the cave to enlighten his peers. However:
 
@@ -69,4 +69,3 @@ Would you like me to explain how this allegory connects to modern concepts like 
 Gemini is AI and can make mistakes.
 
 1Password menu is available. Press down arrow to select.
-

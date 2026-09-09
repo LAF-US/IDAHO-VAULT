@@ -22,6 +22,7 @@ related:
 A bill that would no longer allow Idaho unaffiliated voters to select a political party on election day narrowly passes the House, moving on to the Senate. #idleg #idpol <https://t.co/EcQsGPbn0C>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/FMJHdJjUcAAsDRQ.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1495836930042327042)

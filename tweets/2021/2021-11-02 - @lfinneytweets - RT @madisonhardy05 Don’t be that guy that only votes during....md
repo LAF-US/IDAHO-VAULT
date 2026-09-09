@@ -23,6 +23,7 @@ RT @madisonhardy05: Don’t be that guy that only votes during presidential elec
 Nobody likes that guy #vote <https://t.co/Tvxgh4VgGE>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/FDNTC5YUUAMeCX6.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1455644072006152193)

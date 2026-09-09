@@ -18,6 +18,7 @@ related:
 New cases per day <https://t.co/8xwAoM4nPJ>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/EVN3CknU0AE1biC.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

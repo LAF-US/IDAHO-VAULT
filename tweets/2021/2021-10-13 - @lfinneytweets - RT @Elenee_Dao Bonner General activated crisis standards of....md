@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @Elenee_Dao: Bonner General activated crisis standards of care in September. 
+RT @Elenee_Dao: Bonner General activated crisis standards of care in September.
 
 They haven’t had to treat patients in hallways or outside…
 

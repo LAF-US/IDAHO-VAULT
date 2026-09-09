@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @mlcarmel: A group called Eagle Citizens for Open Government filed petitions last week to recall the entire leadership of Eagle. 
+RT @mlcarmel: A group called Eagle Citizens for Open Government filed petitions last week to recall the entire leadership of Eagle.
 
 To ge…
 

@@ -19,7 +19,7 @@ related:
 
 RT @madisonhardy05: Boise, I’m coming home!
 
-Starting on Jan. 5 I’m joining the @IdahoNews6 team as a Multimedia Journalist. 
+Starting on Jan. 5 I’m joining the @IdahoNews6 team as a Multimedia Journalist.
 
 While I’ll m…
 

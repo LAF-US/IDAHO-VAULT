@@ -17,10 +17,11 @@ related:
   - lfinneytweets
 ---
 
-@RadioDawson Even without the old station license 😥 
+@RadioDawson Even without the old station license 😥
 <https://t.co/M93mjei688>
 
 ## Links
+
 - <https://en.m.wikipedia.org/wiki/KRFA-FM>
 
 *In reply to [@RadioDawson](https://twitter.com/RadioDawson)*

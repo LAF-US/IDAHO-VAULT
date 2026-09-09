@@ -19,6 +19,7 @@ related:
 RT @rebexxxxa: I wrote about kamala memes and the infallibility of being in on the joke <https://t.co/zzYpOKe7bu>
 
 ## Links
+
 - <https://www.vox.com/culture/362300/kamala-harris-meme-brat-summer>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1815779657041788932)

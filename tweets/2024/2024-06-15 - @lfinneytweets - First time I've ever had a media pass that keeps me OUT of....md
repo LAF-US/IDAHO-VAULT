@@ -18,6 +18,7 @@ related:
 First time I've ever had a media pass that keeps me OUT of an event. I suppose that's what I get for being honest about my intentions. <https://t.co/3Ika9ci0LY>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/GQIXxMGasAAoyTo.jpg)
 - ![alt text needed](https://pbs.twimg.com/media/GQIXxKLaQAA3OP8.jpg)
 

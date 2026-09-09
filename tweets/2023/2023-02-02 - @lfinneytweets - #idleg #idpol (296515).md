@@ -20,10 +20,11 @@ related:
   - idpol
 ---
 
-\#idleg #idpol 
+\#idleg #idpol
 <https://t.co/zYp0WV2isW>
 
 ## Links
+
 - <https://blog.idahoreports.idahoptv.org/2023/02/02/lawmakers-ready-to-tackle-property-taxes/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

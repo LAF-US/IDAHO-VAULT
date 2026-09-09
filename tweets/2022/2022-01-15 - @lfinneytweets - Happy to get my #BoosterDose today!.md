@@ -20,6 +20,7 @@ related:
 Happy to get my #BoosterDose today! <https://t.co/0JSXorPgee>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/FJKf5twVkAE0BQg.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1482423042861010944)

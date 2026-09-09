@@ -22,6 +22,7 @@ related:
 RT @newsfromkerri: Rally at Kiwanis Park is growing. Crowd estimated at 700 by a community member. #LewistonProtest <https://t.co/S177taEJkM>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/EZ2YKs1U8AIBI-d.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1269341748146274304)

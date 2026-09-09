@@ -18,6 +18,7 @@ related:
 L to R: Moon, Scott, Wisniewski, Christensen <https://t.co/sx4ZPMrVZo>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/EbQFuDwXgAAsG_M.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

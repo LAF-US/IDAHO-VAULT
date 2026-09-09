@@ -19,6 +19,7 @@ related:
 My friend @MakennaPresnell was featured in this great @GonzagaBulletin piece! She's such an amazing person & disability advocate ♿💙 <https://t.co/9atLPUtLnH>
 
 ## Links
+
 - <https://www.gonzagabulletin.com/news/one-gonzaga-student-s-experience-with-disability-on-campus/article_91a9cfc8-3ed5-11e9-86ca-53c281443e2e.html>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1104263317600665601)

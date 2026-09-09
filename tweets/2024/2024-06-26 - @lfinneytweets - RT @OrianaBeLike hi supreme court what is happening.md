@@ -19,6 +19,7 @@ related:
 RT @OrianaBeLike: hi supreme court what is happening <https://t.co/BRQnGa8C2q>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/GRBbUS1WYAAgGFE.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1806050232809181326)

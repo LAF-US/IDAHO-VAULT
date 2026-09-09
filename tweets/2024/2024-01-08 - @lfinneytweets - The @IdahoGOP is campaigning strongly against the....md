@@ -25,6 +25,7 @@ related:
 The @IdahoGOP is campaigning strongly against the @OpenPrimariesID ballot initiative, including this hand card at their legislative forum this morning with Chairwoman Dorothy Moon. #idleg #idpol <https://t.co/Lo1WrUwAGL>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/GDVuosSaQAALHyY.jpg)
 - ![alt text needed](https://pbs.twimg.com/media/GDVupRJbUAIfSGK.jpg)
 

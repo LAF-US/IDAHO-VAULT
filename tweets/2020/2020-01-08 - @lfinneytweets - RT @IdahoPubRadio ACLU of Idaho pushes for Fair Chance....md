@@ -20,6 +20,7 @@ related:
 RT @IdahoPubRadio: ACLU of Idaho pushes for Fair Chance Employment legislation. More on that: <https://t.co/vyNM6Cmadr> (@lfinneytweets photo…
 
 ## Links
+
 - <https://www.facebook.com/614836341895311/posts/2744164732295784/?d=n>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1214997510592188417)

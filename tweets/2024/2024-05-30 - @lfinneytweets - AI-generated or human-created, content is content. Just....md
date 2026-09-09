@@ -14,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-AI-generated or human-created, content is content. 
+AI-generated or human-created, content is content.
 
 Just like a 2x4 and a sheet of particle board are both wood.
 

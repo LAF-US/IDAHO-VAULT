@@ -19,6 +19,7 @@ related:
 RT @SamuelFByers: <https://t.co/mw90Q1sxA7>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/GtuPWBkWIAAD3K4.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1935504032661188936)

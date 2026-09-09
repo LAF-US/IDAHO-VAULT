@@ -18,6 +18,7 @@ related:
 Both the press release and the letter to the bill sponsor are accessible here: <https://t.co/l9CQ9GRuVO>
 
 ## Links
+
 - <https://www.idahopress.com/eyeonboise/rep-chaney-announces-hb-banning-treatment-for-transgender-youth-won/article_ffeac3f5-685a-51bf-8755-26d3e732c7c5.html>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

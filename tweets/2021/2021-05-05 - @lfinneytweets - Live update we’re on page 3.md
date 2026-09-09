@@ -17,6 +17,7 @@ related:
 Live update: we’re on page 3 <https://t.co/SxDgo0SGDr>
 
 ## Links
+
 - <https://t.co/SxDgo0SGDr>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1390035097340895232)

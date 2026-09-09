@@ -24,6 +24,7 @@ related:
 Man, I love getting out in the field. Photos/stills by our fantastic @IdahoReports videographer Morgan as we film a story that I'm producing and will air later this year. #idleg #idpol <https://t.co/dj4NAQ4b1S>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/FYUNwRCWQAIG8Pq.jpg)
 - ![alt text needed](https://pbs.twimg.com/media/FYUNweAXgAgu3Cp.jpg)
 - ![alt text needed](https://pbs.twimg.com/media/FYUNwpnWIAML0F-.jpg)

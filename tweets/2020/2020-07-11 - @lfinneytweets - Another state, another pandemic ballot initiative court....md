@@ -17,6 +17,7 @@ related:
 Another state, another pandemic ballot initiative court case. <https://t.co/TNBYalzzSz>
 
 ## Links
+
 - <https://x.com/OPB/status/1281976078672658433>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1281998607621648384)

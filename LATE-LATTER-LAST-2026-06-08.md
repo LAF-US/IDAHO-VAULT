@@ -27,7 +27,7 @@ related:
 **Late, latter, last** are not three words. They are **one word in three degrees** — the positive, comparative, and superlative of Old English **læt**, "slow, tardy, after the due time":
 
 | degree | Old English | now |
-|---|---|---|
+| --- | --- | --- |
 | positive | *læt* | **late** |
 | comparative | *lætra* | **latter** |
 | superlative | *latost* (→ *latst*) | **last** |

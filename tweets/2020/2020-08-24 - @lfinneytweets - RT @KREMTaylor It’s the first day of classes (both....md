@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @KREMTaylor: It’s the first day of classes (both in-person and online) at the University of Idaho. 
+RT @KREMTaylor: It’s the first day of classes (both in-person and online) at the University of Idaho.
 
 Most people walking around campus a…
 

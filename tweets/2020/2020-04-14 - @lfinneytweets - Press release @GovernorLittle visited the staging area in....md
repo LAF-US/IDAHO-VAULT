@@ -19,6 +19,7 @@ related:
 Press release: @GovernorLittle visited the staging area in Boise this morning where Idaho is accepting and distributing medical supplies. Included the number of supplies received by the state so far. <https://t.co/bPQEll6zkc>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/EVlrvuLUYAAN7lr.jpg)
 - ![alt text needed](https://pbs.twimg.com/media/EVlrwN6UUAAoMNU.jpg)
 

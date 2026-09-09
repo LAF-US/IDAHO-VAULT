@@ -22,6 +22,7 @@ related:
 The Bingham County situation #idpol #idleg <https://t.co/UinJpTFoAQ>
 
 ## Links
+
 - <https://x.com/IdahoReports/status/1704944710635438587>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1704944920371536285)

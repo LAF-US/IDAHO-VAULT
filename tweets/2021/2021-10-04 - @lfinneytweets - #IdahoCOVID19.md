@@ -20,6 +20,7 @@ related:
 \#IdahoCOVID19 <https://t.co/8XPw7zWUnp>
 
 ## Links
+
 - <https://x.com/IdahoStateJ/status/1445063658925527043>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1445069263698464768)

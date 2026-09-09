@@ -17,6 +17,7 @@ related:
 So many beautiful and alluring women on the internet desperately want my opinions and credit card information <https://t.co/dEIFgNUsOU>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/GOPINMgbEAAfT5R.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1793497207125189081)

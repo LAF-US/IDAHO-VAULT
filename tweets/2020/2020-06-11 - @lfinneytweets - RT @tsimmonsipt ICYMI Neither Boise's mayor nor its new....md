@@ -20,6 +20,7 @@ RT @tsimmonsipt: ICYMI: Neither Boise's mayor nor its new police chief are in fa
 <https://t.co/qKWTch5WBp>
 
 ## Links
+
 - <https://www.idahopress.com/news/local/police-use-of-force-defunding-loom-large-in-discussion-with-new-boise-police-chief/article_14649d66-b07e-52f2-b22c-3dfbf57e7621.html>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1271142231483707397)

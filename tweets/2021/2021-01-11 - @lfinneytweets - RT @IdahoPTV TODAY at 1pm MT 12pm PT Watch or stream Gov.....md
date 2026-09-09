@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoPTV: TODAY at 1pm MT / 12pm PT: Watch or stream Gov. Brad Little's State of the State address: 
+RT @IdahoPTV: TODAY at 1pm MT / 12pm PT: Watch or stream Gov. Brad Little's State of the State address:
 
 Broadcast: IdahoPTV's IDAHO chann…
 

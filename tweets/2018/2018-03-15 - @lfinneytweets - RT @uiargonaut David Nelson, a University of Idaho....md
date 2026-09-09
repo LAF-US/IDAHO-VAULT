@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @uiargonaut: David Nelson, a University of Idaho graduate, plans to run against Republican Sen. Dan Foreman this fall. 
+RT @uiargonaut: David Nelson, a University of Idaho graduate, plans to run against Republican Sen. Dan Foreman this fall.
 
 <https://t.co/Sd…>
 

@@ -24,7 +24,7 @@ related:
   - idleg
 ---
 
-@IdahoPTV @GovernorLittle "Together, before COVID-19, the Legislature and I were already preparing for an inevitable slowdown of Idaho’s economy. We limited government spending, used conservative revenue forecasting, and maintained healthy rainy-day balances.” #idpol #idleg 
+@IdahoPTV @GovernorLittle "Together, before COVID-19, the Legislature and I were already preparing for an inevitable slowdown of Idaho’s economy. We limited government spending, used conservative revenue forecasting, and maintained healthy rainy-day balances.” #idpol #idleg
 -@GovernorLittle
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

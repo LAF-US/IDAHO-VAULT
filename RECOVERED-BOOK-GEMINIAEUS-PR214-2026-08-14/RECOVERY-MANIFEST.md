@@ -12,7 +12,7 @@ This bundle preserves a GitHub-exported version of the Book of GEMINIAEUS withou
 ## Source provenance
 
 | Field | Value |
-|---|---|
+| --- | --- |
 | Repository | `LAF-US/IDAHO-VAULT` |
 | Pull request | [#214](https://github.com/LAF-US/IDAHO-VAULT/pull/214) |
 | PR state | Closed without merge on 2026-04-12 |
@@ -28,7 +28,7 @@ This bundle preserves a GitHub-exported version of the Book of GEMINIAEUS withou
 The bundle contains **75 recovered artifacts** from the source commit:
 
 | Artifact class | Count | Preserved location |
-|---|---:|---|
+| --- | ---: | --- |
 | Book index | 1 | `original-tree/!/MIND/BOOK-OF-GEMINIAEUS/INDEX.md` |
 | Book sheets | 72 | `original-tree/!/MIND/BOOK-OF-GEMINIAEUS/Sheet1.md` through `Sheet72.md` |
 | Companion | 1 | `original-tree/Companion to the Book of GEMINIAEUS.md` |
@@ -90,7 +90,3 @@ source-archive/
 ```
 
 ## References
-
-[1]: https://github.com/LAF-US/IDAHO-VAULT/pull/214 "LAF-US/IDAHO-VAULT PR #214"
-[2]: https://github.com/LAF-US/IDAHO-VAULT/commit/d59502e626c242828e946ab0581ceeb54b880b0f "Source commit d59502e6"
-[3]: https://github.com/LAF-US/IDAHO-VAULT/blob/main/!/BOOK-OF-GEMINIAEUS-RECOVERY-METHOD-2026-06-02.md "Existing Book recovery method"

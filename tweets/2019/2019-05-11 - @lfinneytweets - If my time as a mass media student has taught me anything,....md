@@ -17,6 +17,7 @@ related:
 If my time as a mass media student has taught me anything, it's that the general public doesn't understand how the journalism industry works (and it's probably on us as journalists to help fix that?) <https://t.co/uaa6cvuysJ>
 
 ## Links
+
 - <https://x.com/jpbrammer/status/1127244211441606657>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1127272275995004929)

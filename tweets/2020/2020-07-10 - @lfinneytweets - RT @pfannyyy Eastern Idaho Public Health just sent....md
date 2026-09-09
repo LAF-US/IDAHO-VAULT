@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @pfannyyy: Eastern Idaho Public Health just sent reporters its draft pandemic response plan for the region. 
+RT @pfannyyy: Eastern Idaho Public Health just sent reporters its draft pandemic response plan for the region.
 
 I covered the Board of Hea…
 

@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @mlcarmel: A few years ago, a Toyota commercial involving a car crash, guns and a simulated bank robbery shocked downtown Boise. 
+RT @mlcarmel: A few years ago, a Toyota commercial involving a car crash, guns and a simulated bank robbery shocked downtown Boise.
 
 Now,…
 

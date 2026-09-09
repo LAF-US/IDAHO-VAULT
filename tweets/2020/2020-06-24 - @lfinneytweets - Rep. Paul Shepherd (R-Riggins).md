@@ -18,6 +18,7 @@ related:
 Rep. Paul Shepherd (R-Riggins) <https://t.co/qiozeIHU4n>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/EbQFiZ1X0AQlykh.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

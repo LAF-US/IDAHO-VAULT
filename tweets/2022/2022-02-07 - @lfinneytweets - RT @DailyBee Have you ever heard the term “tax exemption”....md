@@ -21,6 +21,7 @@ RT @DailyBee: Have you ever heard the term “tax exemption” and wonder who th
 <https://t.co/gwaV7dUSsq>
 
 ## Links
+
 - <https://bonnercountydailybee.com/news/2022/feb/06/lets-talk-tax-exemptions/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1490732473159847938)

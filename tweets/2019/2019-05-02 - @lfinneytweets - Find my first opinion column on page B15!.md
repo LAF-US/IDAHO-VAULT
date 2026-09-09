@@ -17,6 +17,7 @@ related:
 Find my first opinion column on page B15! <https://t.co/DelEJPVJsE>
 
 ## Links
+
 - <https://x.com/uiargonaut/status/1123988667276693504>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1124043849150627842)

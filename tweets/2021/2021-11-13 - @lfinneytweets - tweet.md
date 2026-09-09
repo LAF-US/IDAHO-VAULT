@@ -18,6 +18,7 @@ related:
 @JacobWestensko4 <https://t.co/YgBTXYkMfl>
 
 ## Links
+
 - <https://legislature.idaho.gov/statutesrules/idstat/Title39/T39CH38/SECT39-3801/>
 
 *In reply to [@jakewest2023](https://twitter.com/jakewest2023)*

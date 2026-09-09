@@ -22,6 +22,7 @@ related:
 RT @IdahoReports: 30 minutes to show time! #IdahoCOVID19 <https://t.co/nTCINzDWSJ>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/E9wpPGkVUAIddLO.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1431066790029709312)

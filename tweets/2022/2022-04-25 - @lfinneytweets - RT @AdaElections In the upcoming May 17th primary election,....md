@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @AdaElections: In the upcoming May 17th primary election, your party affiliation affects your ballot option. 
+RT @AdaElections: In the upcoming May 17th primary election, your party affiliation affects your ballot option.
 
 Check your voter record a…
 

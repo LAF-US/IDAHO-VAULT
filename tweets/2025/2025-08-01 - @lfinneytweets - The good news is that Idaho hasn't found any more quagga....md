@@ -19,10 +19,11 @@ related:
   - idnews
 ---
 
-The good news is that Idaho hasn't found any more quagga mussels yet. The bad news is that we didn't see any at this time last summer either. #idpol #idnews 
+The good news is that Idaho hasn't found any more quagga mussels yet. The bad news is that we didn't see any at this time last summer either. #idpol #idnews
 <https://t.co/kNr8mUdaut>
 
 ## Links
+
 - <https://blog.idahoreports.idahoptv.org/2025/07/31/no-quagga-mussels-yet-2025/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1951368147338142089)

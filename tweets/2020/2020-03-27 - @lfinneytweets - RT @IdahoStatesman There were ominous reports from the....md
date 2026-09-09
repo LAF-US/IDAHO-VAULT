@@ -19,6 +19,7 @@ related:
 RT @IdahoStatesman: There were ominous reports from the hospital system in recent days. <https://t.co/HaRUe26R39>
 
 ## Links
+
 - <https://trib.al/tQgC6uF>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1243657776825430016)

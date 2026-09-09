@@ -23,10 +23,11 @@ related:
   - idwx
 ---
 
-"The problem with a miracle is that it often comes when you least expect it." My latest work, published for the first time in @ProjectFARE! #idleg #idpol  #idwx 
+"The problem with a miracle is that it often comes when you least expect it." My latest work, published for the first time in @ProjectFARE! #idleg #idpol  #idwx
 <https://t.co/yk3Tou5uKi>
 
 ## Links
+
 - <https://www.projectfare.org/farmstories/snow-rain-patterns-water-agriculture>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1549959958468464641)

@@ -23,6 +23,7 @@ related:
 \#IdahoCOVID19 presser live with @GovernorLittle from @IdahoPTV  <https://t.co/4frY7ClFlf>
 
 ## Links
+
 - <https://www.facebook.com/idahoptv/videos/660364134698678/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1243601227050397696)

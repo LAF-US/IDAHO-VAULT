@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @NewsLitProject: So, there's A LOT of breaking news today. Remember: 
+RT @NewsLitProject: So, there's A LOT of breaking news today. Remember:
 
 1️⃣ It takes time for reporters to gather info, confirm it & then…
 

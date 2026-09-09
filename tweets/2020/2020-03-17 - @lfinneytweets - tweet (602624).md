@@ -20,6 +20,7 @@ related:
 @CDCgov <https://t.co/Ge1LYGPro5>
 
 ## Links
+
 - <https://x.com/DavidNForIdaho/status/1239785928245121025>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

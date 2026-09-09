@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @pfannyyy: Butte County is one of nine Idaho counties that haven’t had a confirmed case of COVID-19. 
+RT @pfannyyy: Butte County is one of nine Idaho counties that haven’t had a confirmed case of COVID-19.
 
 As summer approaches, Arco, the c…
 

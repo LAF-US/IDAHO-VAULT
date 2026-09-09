@@ -16,7 +16,7 @@ It does **not** classify every analyzer-facing file as configuration. In particu
 The files below are intentionally minimal. They establish a durable, versioned place for fine-grained policy while avoiding invented rules that have not been directed by Logan.
 
 | Control surface | Current default | Future fine-grained control |
-|---|---|---|
+| --- | --- | --- |
 | `abaplint-app.jsonc` | `noArtifactsOkay: true` because the Vault currently has no ABAP artifacts. | Add ABAP rule configuration only when ABAP artifacts are intentionally introduced. |
 | `.github/prlint.json` | Empty valid rule object; the active PRLint Reloaded repository check has no VAULT PR metadata rules enacted. | Define only approved title, body, label, branch, reviewer, or size requirements. |
 | `.hound.yml` | Empty valid configuration map; Hound retains its service defaults. | Name the language linters, style files, and ignored paths through a reviewed lint policy. |

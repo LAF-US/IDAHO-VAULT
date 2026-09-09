@@ -19,7 +19,7 @@ related:
   - idpol
 ---
 
-Reporting research I weirdly enjoy: trolling through 5+ years of #idleg journals to track the year-by-year changes to a specific chapter of statute. 
+Reporting research I weirdly enjoy: trolling through 5+ years of #idleg journals to track the year-by-year changes to a specific chapter of statute.
 
 Story out later today. #idpol
 

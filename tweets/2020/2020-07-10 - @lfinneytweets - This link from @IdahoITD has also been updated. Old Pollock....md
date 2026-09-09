@@ -18,13 +18,15 @@ related:
   - lfinneytweets
 ---
 
-This link from @IdahoITD has also been updated. Old Pollock Road will serve as a daytime detour around the slide. The road will close at night for maintenance because it doesn't usually see this much traffic. (Photo @IdahoITD) 
+This link from @IdahoITD has also been updated. Old Pollock Road will serve as a daytime detour around the slide. The road will close at night for maintenance because it doesn't usually see this much traffic. (Photo @IdahoITD)
 <https://t.co/o9KoUEMHbq> <https://t.co/rs34WVV3Ma>
 
 ## Links
+
 - <https://x.com/lfinneytweets/status/1281253616502726656>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/EclOZEuUYAA-qYs.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

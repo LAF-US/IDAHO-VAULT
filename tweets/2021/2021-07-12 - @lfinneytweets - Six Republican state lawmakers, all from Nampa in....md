@@ -28,6 +28,7 @@ Six Republican state lawmakers, all from Nampa in southwestern Idaho where the h
 <https://t.co/DlHu7azk5t>
 
 ## Links
+
 - <https://apnews.com/article/business-health-government-and-politics-coronavirus-pandemic-f45d26eee9fac77775446b51d8d82400>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1414728279341223938)

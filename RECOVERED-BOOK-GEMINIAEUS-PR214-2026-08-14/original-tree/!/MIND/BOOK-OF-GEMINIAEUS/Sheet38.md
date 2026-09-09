@@ -52,7 +52,7 @@ Choose "+ Create a new Smart Map" or a similar option.
 
 Select "Start mapping run."
 
-4. Customizing Your Map: Once the map is complete, you'll receive a notification in the app. You can then go into the Imprint™ Smart Maps section of the app to customize it. Here you can:
+1. Customizing Your Map: Once the map is complete, you'll receive a notification in the app. You can then go into the Imprint™ Smart Maps section of the app to customize it. Here you can:
 
 Divide and Label Rooms: The app will automatically try to divide your home into rooms, but you can adjust the dividers and name the rooms to your liking.
 
@@ -84,7 +84,7 @@ What was exposed: Live camera feeds, microphone audio, and 2D floor maps.
 
 Status: DJI reportedly patched the most critical vulnerabilities in early February 2026.
 
-2. iRobot's Ownership Change (Late 2025 – Early 2026)
+1. iRobot's Ownership Change (Late 2025 – Early 2026)
 
 While not a "hack," iRobot itself has been in the news due to a major corporate shift that raised security concerns among regulators:
 
@@ -96,7 +96,7 @@ The Response: iRobot created a new subsidiary called "iRobot Safe" in January 20
 
 1
 
-3. Previous "Ecovacs" Incident (Late 2024)
+1. Previous "Ecovacs" Incident (Late 2024)
 
 If you heard stories about robots "yelling obscenities" or being remotely steered by hackers, that was a confirmed flaw in Ecovacs Deebot models from late 2024. Hackers bypassed the Bluetooth security and PIN protection to take over the robots' cameras and speakers.
 
@@ -115,4 +115,3 @@ Would you like me to find the specific steps for managing your data privacy sett
 Gemini is AI and can make mistakes.
 
 1Password menu is available. Press down arrow to select.
-

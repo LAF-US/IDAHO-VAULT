@@ -22,10 +22,11 @@ related:
   - idpol
 ---
 
-@BrianJStutzman There was a limited pilot program for testimony in recent years, though I haven't heard anything about reviving it recently. LSO is working on video conferencing within the capitol for 2021, maybe that tech will make it a more viable option. #idleg #idpol 
+@BrianJStutzman There was a limited pilot program for testimony in recent years, though I haven't heard anything about reviving it recently. LSO is working on video conferencing within the capitol for 2021, maybe that tech will make it a more viable option. #idleg #idpol
 <https://t.co/18eXl88boH>
 
 ## Links
+
 - <https://legislature.idaho.gov/remote-testimony/>
 
 *In reply to [@BrianJStutzman](https://twitter.com/BrianJStutzman)*

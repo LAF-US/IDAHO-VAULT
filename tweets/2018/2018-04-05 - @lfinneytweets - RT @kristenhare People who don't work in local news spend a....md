@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @kristenhare: People who don't work in local news spend a lot of time talking about how it's in crisis. They're right. 
+RT @kristenhare: People who don't work in local news spend a lot of time talking about how it's in crisis. They're right.
 Local journalism…
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/981948375112155136)

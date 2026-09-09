@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @pfannyyy: Doctors asked for mask mandates in elementary schools. Then, mandate opponents showed up to a school board meeting. 
+RT @pfannyyy: Doctors asked for mask mandates in elementary schools. Then, mandate opponents showed up to a school board meeting.
 
 Now, th…
 

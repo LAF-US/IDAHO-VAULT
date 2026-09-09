@@ -21,6 +21,7 @@ related:
 <https://t.co/fDNdxvDLSH>
 
 ## Links
+
 - <https://blog.idahoreports.idahoptv.org/2024/01/22/bill-would-move-electioneering-boundary-to-250-feet/>
 
 *In reply to [@tucker_id](https://twitter.com/tucker_id)*

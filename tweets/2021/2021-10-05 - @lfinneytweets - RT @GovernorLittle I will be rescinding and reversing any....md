@@ -19,6 +19,7 @@ related:
 RT @GovernorLittle: I will be rescinding and reversing any actions taken by the Lt. Governor when I return. <https://t.co/iBuQqX1R5i>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/FA948g1WYAAa2XC.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1445516965355810823)

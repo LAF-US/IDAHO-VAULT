@@ -18,6 +18,7 @@ related:
 <https://t.co/aPIROiZD48>
 
 ## Links
+
 - <https://blog.idahoreports.idahoptv.org/2022/01/27/redistricting-maps-approved-by-idaho-supreme-court>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

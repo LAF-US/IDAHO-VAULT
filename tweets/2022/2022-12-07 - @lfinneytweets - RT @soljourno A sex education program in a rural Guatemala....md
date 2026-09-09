@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @soljourno: A sex education program in a rural Guatemala community has helped decrease teen pregnancy in the area by about 50%. 
+RT @soljourno: A sex education program in a rural Guatemala community has helped decrease teen pregnancy in the area by about 50%.
 
 Lovely…
 

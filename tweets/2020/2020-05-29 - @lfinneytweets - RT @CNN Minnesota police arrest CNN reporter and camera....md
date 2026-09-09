@@ -19,6 +19,7 @@ related:
 RT @CNN: Minnesota police arrest CNN reporter and camera crew as they report from protests in Minneapolis <https://t.co/oZdqBti776> <https://t…>
 
 ## Links
+
 - <https://cnn.it/2AlGl9s>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1266389462587551749)

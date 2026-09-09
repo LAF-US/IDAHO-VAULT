@@ -19,10 +19,11 @@ related:
   - idpol
 ---
 
-Combing through the @IdahoGOP caucus results today - anyone else notice no Butte County results from Howe Community Center? I'm also coming up 22 votes short of totals for both Trump and Haley. #idpol 
+Combing through the @IdahoGOP caucus results today - anyone else notice no Butte County results from Howe Community Center? I'm also coming up 22 votes short of totals for both Trump and Haley. #idpol
 <https://t.co/Rch3t0cQco>
 
 ## Links
+
 - <https://www.idahorepublicancaucus.com/results>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1764776635474031065)

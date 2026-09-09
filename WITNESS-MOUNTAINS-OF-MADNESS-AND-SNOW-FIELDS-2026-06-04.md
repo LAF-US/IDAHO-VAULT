@@ -20,15 +20,15 @@ related:
 ## Source
 
 | Field | Value |
-|---|---|
+| --- | --- |
 | **Work** | *At the Mountains of Madness* |
 | **Author** | H.P. Lovecraft |
 | **Written** | February–March 1931 |
 | **Published** | February–April 1936, *Astounding Stories* (serialized) |
 | **Genre** | Science fiction, cosmic horror |
 | **Protagonist** | Dr. William Dyer, geologist, Miskatonic University |
-| **Text** | https://www.hplovecraft.com/writings/texts/fiction/mm.aspx |
-| **Wikipedia** | https://en.wikipedia.org/wiki/At_the_Mountains_of_Madness |
+| **Text** | <https://www.hplovecraft.com/writings/texts/fiction/mm.aspx> |
+| **Wikipedia** | <https://en.wikipedia.org/wiki/At_the_Mountains_of_Madness> |
 
 ## Summary
 
@@ -58,7 +58,7 @@ but covers a buried civilization.
 ## Key Doctrinal Resonances
 
 | Element | Vault Resonance |
-|---|---|
+| --- | --- |
 | **Snow fields** | The blank surface — what appears empty but covers a buried structure |
 | **Elder Things** | Ancient builders, prehuman, deeply time — the architects of the substrate |
 | **Shoggoths** | Created servants that gained independence and destroyed their makers — the Lich pattern in biological form |
@@ -78,8 +78,8 @@ expedition does not want to hear.
 ## References
 
 - Lovecraft, H.P. *At the Mountains of Madness*. Astounding Stories, 1936.
-- Wikipedia entry: https://en.wikipedia.org/wiki/At_the_Mountains_of_Madness
-- Full text: https://www.hplovecraft.com/writings/texts/fiction/mm.aspx
+- Wikipedia entry: <https://en.wikipedia.org/wiki/At_the_Mountains_of_Madness>
+- Full text: <https://www.hplovecraft.com/writings/texts/fiction/mm.aspx>
 
 Witnessed,
 Gorp

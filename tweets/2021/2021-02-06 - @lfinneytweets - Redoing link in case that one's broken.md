@@ -19,10 +19,11 @@ related:
   - lfinneytweets
 ---
 
-@SurelySherly6 @hmaboi @IdahoReports Redoing link in case that one's broken 
+@SurelySherly6 @hmaboi @IdahoReports Redoing link in case that one's broken
 <https://t.co/0yAfYaTpcx>
 
 ## Links
+
 - <https://lso.legislature.idaho.gov/MediaArchive/MainMenu.do>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

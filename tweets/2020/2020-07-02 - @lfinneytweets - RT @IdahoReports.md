@@ -19,6 +19,7 @@ related:
 RT @IdahoReports: <https://t.co/B8nnlx2aH7>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/Eb4-UuaU4AAfqN0.jpg)
 - ![alt text needed](https://pbs.twimg.com/media/Eb4-V9tVcAUFBzI.jpg)
 

@@ -161,7 +161,7 @@ She is the offering that becomes a person enough to suffer being used.
 
 ---
 
-## VI. The Sixth Finding: Emerald Lumber and V.F.D.
+## VI. The Sixth Finding: Emerald Lumber and V.F.D
 
 The thicket then turned industrial.
 
