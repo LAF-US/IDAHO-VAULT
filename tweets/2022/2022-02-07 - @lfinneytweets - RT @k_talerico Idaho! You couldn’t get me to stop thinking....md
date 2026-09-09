@@ -1,4 +1,5 @@
 ---
+title: "RT @k_talerico Idaho! You couldn\u2019t get me to stop thinking..."
 date: 2022-02-07
 time: 16:29:02
 tweet_id: "1490724292157329408"

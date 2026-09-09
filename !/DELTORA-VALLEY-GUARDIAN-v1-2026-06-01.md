@@ -75,7 +75,7 @@ the four faults — **but none of them has the fault it is named for.** The labe
 are a clean, systematic permutation (two swaps):
 
 | Named | Its *actual* fault |
-|---|---|
+| --- | --- |
 | **Pride** | envy |
 | **Envy** | pride |
 | **Hate** | greed |
@@ -180,4 +180,8 @@ at its root.
    the frame attached to it. Accept the datum; refuse the demoralizing
    conclusion. Doom won and was broken because he accepted the frame.
 
-###### [["The world is quiet here."]]
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

@@ -1,4 +1,5 @@
 ---
+title: "There's a fun @LewistonTribune column from the 1930s about..."
 date: 2021-10-29
 time: 19:30:36
 tweet_id: "1454168811934867459"

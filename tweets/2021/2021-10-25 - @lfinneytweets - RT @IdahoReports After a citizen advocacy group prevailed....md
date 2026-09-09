@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports After a citizen advocacy group prevailed..."
 date: 2021-10-25
 time: 22:47:41
 tweet_id: "1452768856896786432"

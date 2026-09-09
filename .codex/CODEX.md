@@ -1,3 +1,6 @@
+---
+title: CODEX
+---
 # CODEX.md - IDAHO-VAULT
 
 **Load mechanism:** Codex auto-loads `AGENTS.md` files in the Codex/global and project path. Project-scoped Codex config lives in `.codex/config.toml`. This `CODEX.md` file is a Codex-specific reference shim for this repo and may be injected manually by Logan.

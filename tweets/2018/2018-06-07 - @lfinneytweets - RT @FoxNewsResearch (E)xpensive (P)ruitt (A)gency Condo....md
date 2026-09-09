@@ -1,4 +1,5 @@
 ---
+title: "RT @FoxNewsResearch (E)xpensive (P)ruitt (A)gency Condo..."
 date: 2018-06-07
 time: 06:17:54
 tweet_id: "1004608370312036353"

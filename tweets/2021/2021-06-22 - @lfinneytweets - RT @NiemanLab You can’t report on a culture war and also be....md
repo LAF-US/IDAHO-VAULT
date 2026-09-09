@@ -1,4 +1,5 @@
 ---
+title: "RT @NiemanLab You can\u2019t report on a culture war and also be..."
 date: 2021-06-22
 time: 02:00:09
 tweet_id: "1407156421855039490"

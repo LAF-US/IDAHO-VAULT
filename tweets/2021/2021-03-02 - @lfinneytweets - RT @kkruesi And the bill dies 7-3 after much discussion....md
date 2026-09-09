@@ -1,4 +1,5 @@
 ---
+title: "RT @kkruesi And the bill dies 7-3 after much discussion..."
 date: 2021-03-02
 time: 18:59:13
 tweet_id: "1366825437670727680"

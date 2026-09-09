@@ -1,4 +1,5 @@
 ---
+title: "Thanks! DMs are open if you need my email."
 date: 2022-12-07
 time: 20:43:21
 tweet_id: "1600591815819767808"

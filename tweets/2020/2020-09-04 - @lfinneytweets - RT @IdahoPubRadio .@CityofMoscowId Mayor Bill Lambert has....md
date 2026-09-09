@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio .@CityofMoscowId Mayor Bill Lambert has..."
 date: 2020-09-04
 time: 01:51:54
 tweet_id: "1301699477326016512"

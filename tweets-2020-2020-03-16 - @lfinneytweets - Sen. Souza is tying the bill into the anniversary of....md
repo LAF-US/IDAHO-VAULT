@@ -18,9 +18,10 @@ related:
   - idpol
 ---
 
-Sen. Souza is tying the bill into the anniversary of women’s suffrage and the Idaho Women’s Day celebration on Friday. #idleg #idpol https://t.co/3V8Pgtn1gP
+Sen. Souza is tying the bill into the anniversary of women’s suffrage and the Idaho Women’s Day celebration on Friday. #idleg #idpol <https://t.co/3V8Pgtn1gP>
 
 ## Links
-- https://x.com/madisonhardy05/status/1239683118916755459
+
+- <https://x.com/madisonhardy05/status/1239683118916755459>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1239683575051472896)

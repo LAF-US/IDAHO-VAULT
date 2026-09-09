@@ -1,4 +1,5 @@
 ---
+title: "RT @ltgovernorbedke My statement on the ongoing Idaho water..."
 date: 2024-06-12
 time: 00:55:30
 tweet_id: "1800693375672393805"

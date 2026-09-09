@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports The Senate Education Committee heard..."
 date: 2023-02-15
 time: 16:11:46
 tweet_id: "1625890620194824192"

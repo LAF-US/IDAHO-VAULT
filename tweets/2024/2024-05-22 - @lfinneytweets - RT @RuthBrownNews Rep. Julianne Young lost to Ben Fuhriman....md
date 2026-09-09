@@ -1,4 +1,5 @@
 ---
+title: "RT @RuthBrownNews Rep. Julianne Young lost to Ben Fuhriman..."
 date: 2024-05-22
 time: 07:23:16
 tweet_id: "1793180815779635521"

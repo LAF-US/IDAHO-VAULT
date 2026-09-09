@@ -1,4 +1,5 @@
 ---
+title: "RT @pewresearch Share of Americans who feel ___ about the..."
 date: 2020-07-02
 time: 20:38:38
 tweet_id: "1278790204883562497"

@@ -1,4 +1,5 @@
 ---
+title: "Rep. Giddings is now asking how many personal bills are..."
 date: 2020-02-28
 time: 17:22:23
 tweet_id: "1233442335997906945"

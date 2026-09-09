@@ -1,4 +1,5 @@
 ---
+title: "RT @JoeyP_News Hearing from teachers in the Payette school..."
 date: 2020-08-15
 time: 00:50:25
 tweet_id: "1294436246198972418"

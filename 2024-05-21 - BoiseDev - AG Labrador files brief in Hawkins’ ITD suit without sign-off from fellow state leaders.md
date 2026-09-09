@@ -42,6 +42,7 @@ This comes after Little declined to sign the budget bill for ITD over concern th
 Neither Labrador nor McGrane responded to questions about the brief prior to the publication of this story.
 
 ## No action on brief Tuesday
+
 The case was discussed at Tuesday’s Board of Examiners meeting, but it’s unclear what the outcome of the meeting is.
 
 The meeting was noticed on May 15 and an agenda was posted on May 16, but it was later amended on the 17th to add an executive session discussion related to the Hawkins lawsuit. The agenda also included space for the board to return and vote on something related to the suit, like pulling back the filed brief.

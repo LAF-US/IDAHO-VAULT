@@ -1,4 +1,5 @@
 ---
+title: "RT @DailyBee Dozens of North Idaho Avista customers, some..."
 date: 2020-08-09
 time: 01:24:44
 tweet_id: "1292270557568745477"

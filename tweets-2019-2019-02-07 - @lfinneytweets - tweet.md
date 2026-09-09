@@ -14,10 +14,11 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/v2XcGG8UOc
+<https://t.co/v2XcGG8UOc>
 
 ## Links
-- https://issuu.com/uiargonaut/docs/the_argonaut___feb._7__2019
+
+- <https://issuu.com/uiargonaut/docs/the_argonaut___feb._7__2019>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

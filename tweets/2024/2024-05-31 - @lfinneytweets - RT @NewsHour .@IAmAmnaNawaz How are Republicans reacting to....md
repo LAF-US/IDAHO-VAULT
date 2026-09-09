@@ -1,4 +1,5 @@
 ---
+title: "RT @NewsHour .@IAmAmnaNawaz How are Republicans reacting to..."
 date: 2024-05-31
 time: 00:32:18
 tweet_id: "1796338883808092270"

@@ -1,4 +1,5 @@
 ---
+title: "RT @DailyBee According to details from a public record..."
 date: 2022-02-04
 time: 20:26:56
 tweet_id: "1489696997799911424"

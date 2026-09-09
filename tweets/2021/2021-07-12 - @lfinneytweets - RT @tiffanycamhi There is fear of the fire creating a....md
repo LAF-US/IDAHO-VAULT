@@ -1,4 +1,5 @@
 ---
+title: "RT @tiffanycamhi There is fear of the fire creating a..."
 date: 2021-07-12
 time: 16:54:47
 tweet_id: "1414629319972773889"

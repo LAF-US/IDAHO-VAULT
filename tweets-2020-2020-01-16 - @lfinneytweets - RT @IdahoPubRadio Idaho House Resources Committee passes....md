@@ -15,6 +15,6 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoPubRadio: Idaho House Resources Committee passes rules affecting hunting, trapping. @RHaunID filed this report:  https://t.co/O4bM…
+RT @IdahoPubRadio: Idaho House Resources Committee passes rules affecting hunting, trapping. @RHaunID filed this report:  <https://t.co/O4bM…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1217698627704905728)

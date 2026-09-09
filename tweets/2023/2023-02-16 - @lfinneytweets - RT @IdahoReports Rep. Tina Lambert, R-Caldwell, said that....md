@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Rep. Tina Lambert, R-Caldwell, said that..."
 date: 2023-02-16
 time: 18:28:53
 tweet_id: "1626287516293922821"

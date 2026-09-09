@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports @IdahoPTV @Concordia_Law @clarkcorbin..."
 date: 2020-06-20
 time: 02:05:34
 tweet_id: "1274161438878097408"
@@ -19,9 +20,10 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoReports: @IdahoPTV @Concordia_Law @clarkcorbin @IdahoStateU WATCH: https://t.co/QpgT16lUff
+RT @IdahoReports: @IdahoPTV @Concordia_Law @clarkcorbin @IdahoStateU WATCH: <https://t.co/QpgT16lUff>
 
 ## Links
-- https://video.idahoptv.org/video/uncertain-futures-y3sva3/
+
+- <https://video.idahoptv.org/video/uncertain-futures-y3sva3/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1274161438878097408)

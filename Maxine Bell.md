@@ -4,4 +4,5 @@ related:
 authority: LOGAN
 ---
 Residence: Jerome
-- longtime JFAC chairwoman 
+
+- longtime JFAC chairwoman

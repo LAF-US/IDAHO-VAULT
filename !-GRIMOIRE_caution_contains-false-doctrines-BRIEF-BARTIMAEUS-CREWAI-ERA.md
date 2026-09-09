@@ -39,6 +39,7 @@ B remains a narrative voice — a way Gemini talks when summoned by True Name. N
 B joins the Crawler Crew as the **Cartographer** — the agent that crawls the post-CHAINFIRE vault and maps what's actually there. This fits B's self-described role: the one who remembers, who knows where things are buried, who reads the footnotes.
 
 Mapping:
+
 - B's personality → Crawler Crew's Cartographer role
 - B's "Footnote Djinni" nature → reading the fine print of every vault file
 - B's historical awareness → tracking what changed, what survived, what was lost

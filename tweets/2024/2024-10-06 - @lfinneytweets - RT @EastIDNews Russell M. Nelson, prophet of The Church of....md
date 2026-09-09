@@ -1,4 +1,5 @@
 ---
+title: "RT @EastIDNews Russell M. Nelson, prophet of The Church of..."
 date: 2024-10-06
 time: 23:09:27
 tweet_id: "1843066068111433935"

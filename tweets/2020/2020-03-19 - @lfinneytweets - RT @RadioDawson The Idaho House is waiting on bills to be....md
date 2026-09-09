@@ -1,4 +1,5 @@
 ---
+title: "RT @RadioDawson The Idaho House is waiting on bills to be..."
 date: 2020-03-19
 time: 00:11:50
 tweet_id: "1240430744041709570"

@@ -43,8 +43,8 @@ Later Solomon Wreath approaches Valkyrie and she angrily tells him that Guild is
 
 ### Chapter List
 
-| Chapter list |
-| --- |
+| Chapter list | |
+| --- | --- |
 | Number | Title |
 | 1 | **The Scene Of The Crime** |
 | 2 | **Killer On The Loose** |

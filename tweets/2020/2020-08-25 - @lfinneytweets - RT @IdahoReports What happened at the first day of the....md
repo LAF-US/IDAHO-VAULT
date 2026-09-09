@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports What happened at the first day of the..."
 date: 2020-08-25
 time: 14:13:34
 tweet_id: "1298262244501798915"

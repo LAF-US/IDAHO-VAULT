@@ -1,4 +1,5 @@
 ---
+title: "Former governor Otter on @GovernorLittle's job performance...."
 date: 2020-07-01
 time: 16:01:44
 tweet_id: "1278358134931636224"
@@ -22,9 +23,10 @@ related:
   - idleg
 ---
 
-Former governor Otter on @GovernorLittle's job performance. #IdahoCOVID19 #idpol #idleg https://t.co/nwWfPndQkJ
+Former governor Otter on @GovernorLittle's job performance. #IdahoCOVID19 #idpol #idleg <https://t.co/nwWfPndQkJ>
 
 ## Links
-- https://x.com/the208KTVB/status/1278356214821392385
+
+- <https://x.com/the208KTVB/status/1278356214821392385>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1278358134931636224)

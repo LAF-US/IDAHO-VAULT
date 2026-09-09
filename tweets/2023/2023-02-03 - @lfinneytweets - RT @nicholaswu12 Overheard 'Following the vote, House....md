@@ -1,4 +1,5 @@
 ---
+title: "RT @nicholaswu12 Overheard 'Following the vote, House..."
 date: 2023-02-03
 time: 15:15:07
 tweet_id: "1621527709817118720"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @nicholaswu12: Overheard: 
+RT @nicholaswu12: Overheard:
 
 'Following the vote, House Foreign Affairs member Ken Buck, R-Colo., was overheard in an elevator calling it…
 

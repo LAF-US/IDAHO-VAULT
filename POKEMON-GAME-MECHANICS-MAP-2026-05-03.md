@@ -20,7 +20,7 @@ This note compresses the game-mechanics analogies LOGAN and GEMINIAEUS surfaced 
 ## Core mechanics
 
 | Game mechanic | Vault analogue | Meaning |
-|---|---|---|
+| --- | --- | --- |
 | Pokemon Party | Active session context | Small, curated working set; 6-slot pressure maps to token/window limits. |
 | Pokemon Center terminal | Session start / retrieval moment | The point where context is loaded from storage into the active party. |
 | Pokemon PC / Boxes | Shared vault / repo corpus | Durable, organized, fixed-point storage for canonical work products. |

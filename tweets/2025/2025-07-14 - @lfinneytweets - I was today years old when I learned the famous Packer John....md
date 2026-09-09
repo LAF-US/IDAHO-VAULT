@@ -1,4 +1,5 @@
 ---
+title: "I was today years old when I learned the famous Packer John..."
 date: 2025-07-14
 time: 18:41:23
 tweet_id: "1944829594454122730"

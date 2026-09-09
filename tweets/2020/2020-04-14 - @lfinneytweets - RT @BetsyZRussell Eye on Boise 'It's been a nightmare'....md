@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise 'It's been a nightmare'..."
 date: 2020-04-14
 time: 20:50:24
 tweet_id: "1250164526688768000"

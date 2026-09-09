@@ -1,4 +1,5 @@
 ---
+title: "RT @DailyBee A hearing has been set on the city of..."
 date: 2020-08-14
 time: 16:29:29
 tweet_id: "1294310185389850624"

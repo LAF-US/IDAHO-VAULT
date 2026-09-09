@@ -270,7 +270,7 @@ The following is a sampling of spells featured in multiple *Dungeons & Dragons* 
 
 [^42]: Cooper, John (June 19, 2006). ["Review of Tome of Magic: Pact, Shadow, and Truename Magic"](https://www.rpg.net/reviews/archive/12/12245.phtml). *RPGnet*. [Archived](https://web.archive.org/web/20210128010541/https://www.rpg.net/reviews/archive/12/12245.phtml) from the original on 2021-01-28. Retrieved 2020-05-31.
 
-[^43]: *Tome of Magic*. [Matthew Sernett](https://en.wikipedia.org/wiki/Matthew_Sernett "Matthew Sernett"), [Ari Marmell](https://en.wikipedia.org/wiki/Ari_Marmell "Ari Marmell"), [David Noonan](https://en.wikipedia.org/wiki/David_Noonan_\(game_designer\) "David Noonan (game designer)"), and [Robert J. Schwalb](https://en.wikipedia.org/wiki/Robe***REMOVED***J._Schwalb "Robert J. Schwalb"). Renton, WA: Wizards of the Coast. March 2006. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [0-7869-1550-1](https://en.wikipedia.org/wiki/Special:BookSources/0-7869-1550-1 "Special:BookSources/0-7869-1550-1"). [OCLC](https://en.wikipedia.org/wiki/OCLC_\(identifier\) "OCLC (identifier)") [62327263](https://search.worldcat.org/oclc/62327263).
+[^43]: *Tome of Magic*. [Matthew Sernett](https://en.wikipedia.org/wiki/Matthew_Sernett "Matthew Sernett"), [Ari Marmell](https://en.wikipedia.org/wiki/Ari_Marmell "Ari Marmell"), [David Noonan](https://en.wikipedia.org/wiki/David_Noonan_\(game_designer\) "David Noonan (game designer)"), and [Robert J. Schwalb](https://en.wikipedia.org/wiki/Robert_J._Schwalb "Robert J. Schwalb"). Renton, WA: Wizards of the Coast. March 2006. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [0-7869-1550-1](https://en.wikipedia.org/wiki/Special:BookSources/0-7869-1550-1 "Special:BookSources/0-7869-1550-1"). [OCLC](https://en.wikipedia.org/wiki/OCLC_\(identifier\) "OCLC (identifier)") [62327263](https://search.worldcat.org/oclc/62327263).
 
 [^44]: ["Tome of Magic: Pact, Shadow, and Truename Magic (3.5)"](https://www.dmsguild.com/product/50000/Tome-of-Magic-Pact-Shadow-and-Truename-Magic-35). *Dungeon Masters Guild*. [Archived](https://web.archive.org/web/20171018013320/http://www.dmsguild.com/product/50000/Tome-of-Magic-Pact-Shadow-and-Truename-Magic-35) from the original on 2017-10-18. Retrieved 2020-05-31.
 
@@ -304,7 +304,7 @@ The following is a sampling of spells featured in multiple *Dungeons & Dragons* 
 
 [^59]: [Swan, Rick](https://en.wikipedia.org/wiki/Rick_Swan "Rick Swan") (September 1992). "Role-playing Reviews". *[Dragon](https://en.wikipedia.org/wiki/Dragon_\(magazine\) "Dragon (magazine)")* (#185). [Lake Geneva, Wisconsin](https://en.wikipedia.org/wiki/Lake_Geneva,_Wisconsin "Lake Geneva, Wisconsin"): [TSR](https://en.wikipedia.org/wiki/TSR,_Inc. "TSR, Inc."): 65–66.
 
-[^60]: [Baker, Richard](https://en.wikipedia.org/wiki/Richard_Baker_\(game_designer\) "Richard Baker (game designer)");[Schwalb, Robert J.](https://en.wikipedia.org/wiki/Robe***REMOVED***J._Schwalb "Robert J. Schwalb");[Thompson, Rodney](https://en.wikipedia.org/wiki/Rodney_Thompson "Rodney Thompson"). *[Dark Sun Campaign Setting](https://en.wikipedia.org/wiki/Dark_Sun_Campaign_Setting "Dark Sun Campaign Setting")*. Wizards of the Coast, Inc., 2010.
+[^60]: [Baker, Richard](https://en.wikipedia.org/wiki/Richard_Baker_\(game_designer\) "Richard Baker (game designer)");[Schwalb, Robert J.](https://en.wikipedia.org/wiki/Robert_J._Schwalb "Robert J. Schwalb");[Thompson, Rodney](https://en.wikipedia.org/wiki/Rodney_Thompson "Rodney Thompson"). *[Dark Sun Campaign Setting](https://en.wikipedia.org/wiki/Dark_Sun_Campaign_Setting "Dark Sun Campaign Setting")*. Wizards of the Coast, Inc., 2010.
 
 [^61]: L. Richard Baker III *The Will And The Way*. TSR, Inc, 1994.
 
@@ -342,7 +342,7 @@ The following is a sampling of spells featured in multiple *Dungeons & Dragons* 
 
 [^78]: Kulp, Kevin. ["Unearthed Arcana (3.5) - Product History"](https://www.drivethrurpg.com/product/3734/Unearthed-Arcana-35). *DriveThruRPG*. [Archived](https://web.archive.org/web/20190406214000/https://www.drivethrurpg.com/product/3734/Unearthed-Arcana-35) from the original on 2019-04-06. Retrieved 2020-06-02.
 
-[^79]: ["d20 SRD Variant Magic Rules: Incantations"](https://www.d20srd.org/srd/variant/magic/incantations.htm). *www.d20srd.org*. [Archived](https://web.archive.org/web/20201101125031/https://www.d20srd.org/srd/variant/magic/incantations.htm) from the original on 2020-11-01. Retrieved 2020-06-02.
+[^79]: ["d20 SRD Variant Magic Rules: Incantations"](https://www.d20srd.org/srd/variant/magic/incantations.htm). *<www.d20srd.org>*. [Archived](https://web.archive.org/web/20201101125031/https://www.d20srd.org/srd/variant/magic/incantations.htm) from the original on 2020-11-01. Retrieved 2020-06-02.
 
 [^80]: *Unearthed Arcana (3.5)*. Collins, Andy. Renton, Wash.: Wizards of the Coast. 2004. p. 174. [ISBN](https://en.wikipedia.org/wiki/ISBN_\(identifier\) "ISBN (identifier)") [0-7869-3131-0](https://en.wikipedia.org/wiki/Special:BookSources/0-7869-3131-0 "Special:BookSources/0-7869-3131-0"). [OCLC](https://en.wikipedia.org/wiki/OCLC_\(identifier\) "OCLC (identifier)") [54497874](https://search.worldcat.org/oclc/54497874).
 

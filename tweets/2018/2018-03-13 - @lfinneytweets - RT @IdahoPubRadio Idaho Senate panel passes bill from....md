@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio Idaho Senate panel passes bill from..."
 date: 2018-03-13
 time: 22:26:13
 tweet_id: "973686699199938561"

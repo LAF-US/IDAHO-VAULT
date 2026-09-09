@@ -1,4 +1,5 @@
 ---
+title: "RT @madisonhardy05 House Republican and Democratic..."
 date: 2020-03-19
 time: 20:02:04
 tweet_id: "1240730276818325505"

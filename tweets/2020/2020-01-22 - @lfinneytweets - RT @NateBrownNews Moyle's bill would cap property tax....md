@@ -1,4 +1,5 @@
 ---
+title: "RT @NateBrownNews Moyle's bill would cap property tax..."
 date: 2020-01-22
 time: 16:21:27
 tweet_id: "1220018648581980160"

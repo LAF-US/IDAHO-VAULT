@@ -3,4 +3,4 @@ related:
 - fiscal year
 authority: LOGAN
 ---
-July 1, 2024 - June 30, 2025 fiscal year 
+July 1, 2024 - June 30, 2025 fiscal year

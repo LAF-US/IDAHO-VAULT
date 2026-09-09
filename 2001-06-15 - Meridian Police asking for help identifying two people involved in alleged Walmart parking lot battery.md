@@ -12,7 +12,7 @@ date modified: Monday, June 15th 2026, 9:25:15 pm
 
 Police are seeking the public's assistance to identify two individuals believed to be involved in a battery at a Walmart parking lot on Ten Mile Road.
 
-![](https://media.ktvb.com/assets/KTVB/images/eaba55cd-8cfd-4350-a377-521f612302c8/20260615T220855/eaba55cd-8cfd-4350-a377-521f612302c8_1920x1080.jpg)
+![alt text needed](https://media.ktvb.com/assets/KTVB/images/eaba55cd-8cfd-4350-a377-521f612302c8/20260615T220855/eaba55cd-8cfd-4350-a377-521f612302c8_1920x1080.jpg)
 
 Credit: Meridian Police Department
 

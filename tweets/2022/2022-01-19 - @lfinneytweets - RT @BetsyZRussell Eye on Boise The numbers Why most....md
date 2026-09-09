@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise The numbers Why most..."
 date: 2022-01-19
 time: 23:17:41
 tweet_id: "1483941762234155008"

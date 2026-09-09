@@ -1,4 +1,5 @@
 ---
+title: "RT @IDSecOfState If you\u2019re voting by absentee ballot it's..."
 date: 2024-05-21
 time: 17:14:29
 tweet_id: "1792967212405535010"

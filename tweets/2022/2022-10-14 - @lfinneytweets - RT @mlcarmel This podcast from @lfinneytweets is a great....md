@@ -1,4 +1,5 @@
 ---
+title: "RT @mlcarmel This podcast from @lfinneytweets is a great..."
 date: 2022-10-14
 time: 17:30:20
 tweet_id: "1580974296561696768"
@@ -16,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-RT @mlcarmel: This podcast from @lfinneytweets is a great listen to breakdown a complex court case with wide ranging implications. 
+RT @mlcarmel: This podcast from @lfinneytweets is a great listen to breakdown a complex court case with wide ranging implications.
 
 I reme…
 

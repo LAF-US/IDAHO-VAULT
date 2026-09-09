@@ -4,4 +4,4 @@ related:
 - Pocatello
 authority: LOGAN
 ---
-Residence: Pocatello 
+Residence: Pocatello

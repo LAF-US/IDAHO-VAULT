@@ -24,6 +24,7 @@ RISE is the protocol by which an agent formally completes a task, role, or sessi
 Like a legislative committee reporting a bill to the floor, RISE marks the transition from work-in-progress to completed/advancing state. It requires formal recognition, acknowledgment, and recording.
 
 **Analogues in legislative procedure:**
+
 - Motion to Report (Committee → Floor)
 - Motion to Adjourn Sine Die (Final adjournment)
 - Roll Call Vote (Recorded acknowledgment)
@@ -45,6 +46,7 @@ Like a legislative committee reporting a bill to the floor, RISE marks the trans
 ### Step 1: Call to Order
 
 The agent (or Logan) formally calls RISE:
+
 - States task/role completing
 - Identifies successor or returning to Logan
 - Notes any pending matters
@@ -52,6 +54,7 @@ The agent (or Logan) formally calls RISE:
 ### Step 2: Reading of Record
 
 Brief summary of what was accomplished:
+
 - Files created/modified
 - Decisions made
 - On the record / off the record distinctions
@@ -70,6 +73,7 @@ Required acknowledgment (Logan or designated agent):
 ### Step 5: Recording
 
 Entry made to:
+
 - DECISIONS.md if durable decision
 - LEVELSET-CURRENT.md activity log
 - DOCKET if action required
@@ -78,6 +82,7 @@ Entry made to:
 ### Step 6: Vote / Acknowledgment
 
 Either:
+
 - **Recorded vote** (for significant transitions)
 - **Unanimous consent** (routine transitions)
 
@@ -90,7 +95,7 @@ Formal adjournment from task/role:
 
 ## OUTPUT FORMAT
 
-```
+```markdown
 RISE v1.0 REPORT — [AGENT NAME]
 
 MOTION: [Formal motion text]
@@ -110,7 +115,7 @@ SINE DIE: [Yes/No]
 ## INTEGRATION
 
 | Action | Stigmergy Field |
-|--------|----------------|
+| -------- | ---------------- |
 | On completion | `emit` completion pheromone |
 | On transfer | Update `claim` trail |
 | On departure | `depart` |

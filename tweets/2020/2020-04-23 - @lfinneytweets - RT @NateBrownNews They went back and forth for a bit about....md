@@ -1,4 +1,5 @@
 ---
+title: "RT @NateBrownNews They went back and forth for a bit about..."
 date: 2020-04-23
 time: 22:44:00
 tweet_id: "1253454606375374848"

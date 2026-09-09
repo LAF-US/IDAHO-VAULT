@@ -1,4 +1,5 @@
 ---
+title: "Their show is the voice of a generation"
 date: 2024-10-16
 time: 23:33:32
 tweet_id: "1846696006605590750"

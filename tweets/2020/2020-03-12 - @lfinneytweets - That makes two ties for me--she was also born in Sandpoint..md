@@ -1,4 +1,5 @@
 ---
+title: "That makes two ties for me--she was also born in Sandpoint."
 date: 2020-03-12
 time: 03:10:16
 tweet_id: "1237938933608013831"

@@ -1,4 +1,5 @@
 ---
+title: "Rep. Barbieri is reading a part now that says the Gov can..."
 date: 2020-06-23
 time: 15:15:50
 tweet_id: "1275447478414794752"

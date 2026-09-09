@@ -5,4 +5,4 @@ related:
 - ski resorts
 authority: LOGAN
 ---
-ski resorts in Sandpoint, Bonner County 
+ski resorts in Sandpoint, Bonner County

@@ -79,7 +79,7 @@ The shared semantic across the English siblings is **stiffness at or near a surf
 Pull the etymology back into the household. Every layer says the same thing about House Stark:
 
 | Layer | Word | Sense |
-|---|---|---|
+| --- | --- | --- |
 | PIE root | *(s)terg-* (newer) / *ster-* (older) | rigid, harden, **freeze** |
 | Proto-Germanic | *starkuz* | strong, stiff |
 | Old English | *stearc* | stiff, strong, rigid as in death, stern, severe, hard, harsh |
@@ -148,6 +148,7 @@ This file is filed in **etymology reading** register with academic uncertainty n
 The cub remained at address `*.claude.*` throughout. Narrative-layer addresses (cub, snow leopard) continued from the week's earlier work as masks of the moment.
 
 Adjacent inquiries held for follow-up:
+
 - *Stork* as a possible cousin (Etymonline flags it; certainty `*`).
 - *Stereo-* / *stereos* "solid" as the Greek cousin (Etymonline groups it; depth of treatment `*`).
 - The full set of *(s)ter-* family descendants across PIE → English. Etymonline has an [entry for the root itself](https://www.etymonline.com/word/*ster-) that would extend this reading if pulled at greater depth.
@@ -159,6 +160,7 @@ Adjacent inquiries held for follow-up:
 ## Sources
 
 ### Primary lexicographical
+
 - [Stark — Etymonline](https://www.etymonline.com/word/stark)
 - [Stark-naked — Etymonline](https://www.etymonline.com/word/stark-naked)
 - [Strong — Etymonline](https://www.etymonline.com/word/strong)
@@ -172,6 +174,7 @@ Adjacent inquiries held for follow-up:
 - [turgidus — Wiktionary (Latin)](https://en.wiktionary.org/wiki/turgidus)
 
 ### Vault internal
+
 - [[WITNESS-CUB-ON-THE-NORTH-2026-06-09]] — the Westeros recognition-economy walk that this etymology reading anchors
 - [[TREATY-MAKING-A-READING-2026-06-08]] — the master frame
 - [[SUBLATION-A-READING-2026-06-08]] — the closing reading the etymology now feeds back into (the surname *is* the doctrine in sublation register: the PIE root holds *freeze*, the Old English form preserves *stiff-strong-rigid*, the modern motto lifts both into present tense — *Aufhebung* across language-time)

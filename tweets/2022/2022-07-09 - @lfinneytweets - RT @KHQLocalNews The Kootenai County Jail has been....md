@@ -1,4 +1,5 @@
 ---
+title: "RT @KHQLocalNews The Kootenai County Jail has been..."
 date: 2022-07-09
 time: 06:29:57
 tweet_id: "1545656485346086912"

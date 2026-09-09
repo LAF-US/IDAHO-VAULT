@@ -1,4 +1,5 @@
 ---
+title: "RT @NWPBroadcasting WA and ID K-12 schools will be closed..."
 date: 2020-04-07
 time: 00:27:59
 tweet_id: "1247320179211513856"

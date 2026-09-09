@@ -1,4 +1,5 @@
 ---
+title: "RT @clarkcorbin The livestream failed during today's State..."
 date: 2020-04-21
 time: 01:36:12
 tweet_id: "1252410775064338437"

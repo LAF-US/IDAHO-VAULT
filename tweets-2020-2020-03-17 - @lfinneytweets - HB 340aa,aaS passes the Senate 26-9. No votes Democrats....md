@@ -19,7 +19,7 @@ related:
   - idpol
 ---
 
-HB 340aa,aaS passes the Senate 26-9. 
+HB 340aa,aaS passes the Senate 26-9.
 No votes: Democrats (7), Crabtree, Martin. #idleg #idpol
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

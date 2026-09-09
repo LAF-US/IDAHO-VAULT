@@ -1,4 +1,5 @@
 ---
+title: "RT @nicoleMfoy The city of Nampa (@NampaPIO) just created a..."
 date: 2020-03-23
 time: 05:26:56
 tweet_id: "1241959594705870848"
