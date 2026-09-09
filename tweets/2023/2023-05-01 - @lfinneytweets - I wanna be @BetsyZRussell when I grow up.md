@@ -19,6 +19,7 @@ related:
 I wanna be @BetsyZRussell when I grow up <https://t.co/QzARbfGQ0U>
 
 ## Links
+
 - <https://x.com/BetsyZRussell/status/1652716728076599297>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1653099072054767617)

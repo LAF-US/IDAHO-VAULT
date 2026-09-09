@@ -21,7 +21,7 @@ related:
   - idpol
 ---
 
-RT @IdahoReports: Polls are closed in the Mountain Time Zone. Idaho voters in the Pacific Time Zone have one hour left. #idleg #idpol 
+RT @IdahoReports: Polls are closed in the Mountain Time Zone. Idaho voters in the Pacific Time Zone have one hour left. #idleg #idpol
 http…
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1793100011448004998)

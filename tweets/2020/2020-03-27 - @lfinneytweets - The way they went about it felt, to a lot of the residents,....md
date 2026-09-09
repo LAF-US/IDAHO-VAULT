@@ -17,10 +17,11 @@ related:
   - lfinneytweets
 ---
 
-"The way they went about it felt, to a lot of the residents, really sneaky," my dear friend Jon Madrid told @uiargonaut in 2016. "We were really confused, we wanted to...make sure if they were going to close it for two years they were going to honor it." 
+"The way they went about it felt, to a lot of the residents, really sneaky," my dear friend Jon Madrid told @uiargonaut in 2016. "We were really confused, we wanted to...make sure if they were going to close it for two years they were going to honor it."
 <https://t.co/rQDTd0Dan4>
 
 ## Links
+
 - <https://www.uiargonaut.com/2016/03/31/a-legacy-in-limbo-the-future-of-former-housing-facility-remains-unclear/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

@@ -24,6 +24,7 @@ related:
 RT @IdahoReports: #IdahoCOVID19 #idpol <https://t.co/CPl2pLuKtJ>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/Ea1wnLOUEAIZ03V.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1273799378461843457)

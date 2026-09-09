@@ -17,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-RT @maggieKTVB7: REPORTER: What’s it going to take to get Idaho back on track? 
+RT @maggieKTVB7: REPORTER: What’s it going to take to get Idaho back on track?
 
 (@GovernorLittle puts on his mask, throws his hands up...)
 

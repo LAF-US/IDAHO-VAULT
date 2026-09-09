@@ -17,6 +17,7 @@ related:
 Try "Trump suggests season suspension as punishment for NFL players who protest police brutality." <https://t.co/C3VYLRuKgg>
 
 ## Links
+
 - <https://x.com/Slate/status/1020815377914359809>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1020917238675591169)

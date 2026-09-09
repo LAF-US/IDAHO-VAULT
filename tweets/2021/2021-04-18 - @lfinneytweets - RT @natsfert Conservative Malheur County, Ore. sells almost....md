@@ -19,7 +19,7 @@ related:
   - cannabis
 ---
 
-RT @natsfert: Conservative Malheur County, Ore. sells almost 5x more #cannabis per resident than any other county. 
+RT @natsfert: Conservative Malheur County, Ore. sells almost 5x more #cannabis per resident than any other county.
 
 Why? Because 1600 Idah…
 

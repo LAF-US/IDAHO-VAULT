@@ -29,4 +29,3 @@ I am listening now. When I have a result, I will let you know.
 Gemini is AI and can make mistakes.
 
 1Password menu is available. Press down arrow to select.
-

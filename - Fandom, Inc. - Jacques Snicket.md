@@ -223,8 +223,6 @@ Jacques and Olivia kiss.
 
 [^1]: [*A Series of Unfortunate Events* calendar](https://sites.google.com/site/qrv667advent/promos/book-merch/2004calendar)
 
-[^2]: [PROSE](https://snicket.fandom.com/wiki/PROSE "PROSE"): *[The Vile Village](https://snicket.fandom.com/wiki/The_Vile_Village "The Vile Village")*
-
 [^3]: [PROSE](https://snicket.fandom.com/wiki/PROSE "PROSE"): *[Lemony Snicket: The Unauthorized Autobiography](https://snicket.fandom.com/wiki/Lemony_Snicket:_The_Unauthorized_Autobiography "Lemony Snicket: The Unauthorized Autobiography")*
 
 [^4]: [PROSE](https://snicket.fandom.com/wiki/PROSE "PROSE"): *[Shouldn't You Be in School?](https://snicket.fandom.com/wiki/Shouldn%27t_You_Be_in_School%3F "Shouldn't You Be in School?")*

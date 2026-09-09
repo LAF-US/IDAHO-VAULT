@@ -23,7 +23,7 @@ related:
   - idleg
 ---
 
-@IdahoPTV .@GovernorLittle begins by condemning the event at the U.S. Capitol last week. 
+@IdahoPTV .@GovernorLittle begins by condemning the event at the U.S. Capitol last week.
 “The riots tarnished the shining values America stands for. This is not who we are. Hostility and violence are not an expression of your rights; they are a violation of everyone else’s.” #idpol #idleg
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

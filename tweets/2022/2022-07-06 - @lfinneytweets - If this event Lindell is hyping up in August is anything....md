@@ -15,10 +15,11 @@ related:
   - lfinneytweets
 ---
 
-If this event Lindell is hyping up in August is anything like the last one... don't hold your breath. 
+If this event Lindell is hyping up in August is anything like the last one... don't hold your breath.
 <https://t.co/abADTbBZhY>
 
 ## Links
+
 - <https://www.businessinsider.com/mike-lindell-cyber-symposium-voter-fraud-election-expert-south-dakota-2021-8>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

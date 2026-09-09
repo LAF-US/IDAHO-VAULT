@@ -19,6 +19,7 @@ related:
 RT @jribas: weird couple of years for brands <https://t.co/sFgw7mV5am>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/DedAdgnWkAYIWF8.jpg)
 - ![alt text needed](https://pbs.twimg.com/media/DedAgiZX0AAuEew.jpg)
 - ![alt text needed](https://pbs.twimg.com/media/DedAinCW0AE57WE.jpg)

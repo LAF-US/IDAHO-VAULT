@@ -22,6 +22,7 @@ related:
 Senate State Affairs was scheduled to begin at 8am. The majority leadership team has just made it to the hearing room. #idleg #idpol <https://t.co/KUagPJ3mPR>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/FEPtirVUUAYQV-9.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1460271886428819460)

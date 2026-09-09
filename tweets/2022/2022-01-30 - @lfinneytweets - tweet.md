@@ -21,6 +21,7 @@ related:
 @winterf77521377 @idahoans <https://t.co/oWuQzp6JDH>
 
 ## Links
+
 - <https://legislature.idaho.gov/statutesrules/idconst/ArtIII/Sect2/>
 
 *In reply to [@winterf77521377](https://twitter.com/winterf77521377)*

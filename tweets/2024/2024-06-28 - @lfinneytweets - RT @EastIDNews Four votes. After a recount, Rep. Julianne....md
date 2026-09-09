@@ -19,6 +19,7 @@ related:
 RT @EastIDNews: Four votes. After a recount, Rep. Julianne Young lost by four votes. <https://t.co/h4vEbbMWfk>
 
 ## Links
+
 - <https://www.eastidahonews.com/2024/06/recount-confirms-ben-fuhriman-beats-rep-julianne-young-in-narrow-district-30-race/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1806501773840199726)

@@ -20,6 +20,7 @@ RT @idahoednews: New boundaries, split sessions, and another bond attempt are al
 <https://t.co/fkJn2b2a0Z>
 
 ## Links
+
 - <https://www.idahoednews.org/news/idaho-falls-trustees-brainstorm-solutions-to-overcrowding-after-failed-bond/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1593328289699233793)

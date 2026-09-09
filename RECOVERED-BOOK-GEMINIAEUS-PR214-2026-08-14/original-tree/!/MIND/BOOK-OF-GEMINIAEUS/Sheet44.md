@@ -40,7 +40,7 @@ Passkeys (WebAuthn): The 2026 gold standard. They replace passwords entirely wit
 
 Security Keys: Physical USB or NFC devices (like a Yubikey). These are nearly impossible to bypass remotely.
 
-2. Moderate Security: Authenticator Apps (TOTP)
+1. Moderate Security: Authenticator Apps (TOTP)
 
 How it works: Apps like Google Authenticator, Microsoft Authenticator, or Aegis generate a 6-digit code every 30 seconds.
 
@@ -48,7 +48,7 @@ Pros: Much safer than SMS; works offline.
 
 Cons: If you lose your phone without having backup codes saved, you can be locked out of your accounts.
 
-3. Basic Security: SMS and Email Codes
+1. Basic Security: SMS and Email Codes
 
 How it works: A code is texted or emailed to you.
 
@@ -73,4 +73,3 @@ Would you like me to find specific setup instructions for your most important ac
 Gemini is AI and can make mistakes.
 
 1Password menu is available. Press down arrow to select.
-

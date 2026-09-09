@@ -17,6 +17,7 @@ related:
 @davlinnews that "fun bus" ride to Jackpot might be getting a little more fun <https://t.co/Jynr0UYjaD>
 
 ## Links
+
 - <https://x.com/CannabisWire/status/1402263287627227149>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1402705559669731333)

@@ -17,9 +17,11 @@ related:
 <https://t.co/OUHHQ7H3Ip> <https://t.co/f1MaA7Z0Pa>
 
 ## Links
+
 - <https://t.co/OUHHQ7H3Ip>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/FJFfZv7UcAE-2YG.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1482070654874619904)

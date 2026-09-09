@@ -22,6 +22,7 @@ related:
 \#idpol #idedu <https://t.co/RSigpsVlHi>
 
 ## Links
+
 - <https://x.com/CdAPressNews/status/1511398191354187780>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1511409200395476995)

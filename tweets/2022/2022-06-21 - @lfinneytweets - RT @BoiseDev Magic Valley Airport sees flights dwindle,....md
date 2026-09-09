@@ -19,6 +19,7 @@ related:
 RT @BoiseDev: Magic Valley Airport sees flights dwindle,  leaving Twin Falls residents with fewer travel options <https://t.co/nyVVqtUgay>
 
 ## Links
+
 - <https://boisedev.com/news/2022/06/20/magic-valley-airport/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1539298978499424256)

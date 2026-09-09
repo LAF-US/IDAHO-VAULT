@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @nicoleMfoy: BIG NEWS for your Friday I’m still struggling to share, because how do you sum up a dream come true? 
+RT @nicoleMfoy: BIG NEWS for your Friday I’m still struggling to share, because how do you sum up a dream come true?
 
 After years of talki…
 

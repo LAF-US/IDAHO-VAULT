@@ -20,9 +20,11 @@ related:
 @slfisher This link might be what you're looking for. Lower right menu > legislative commission plans > L02 (it doesn't reflects today's changes yet, but the Kuna line looks the same) <https://t.co/7Imq2zAn4H> <https://t.co/RYgfexXsC1>
 
 ## Links
+
 - <https://idaho.maps.arcgis.com/apps/instant/interactivelegend/index.html?appid=9984aaa8b9e3485abdee9a7b95521d2b>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/FDT3KEvUcAUIDMz.jpg)
 
 *In reply to [@slfisher](https://twitter.com/slfisher)*

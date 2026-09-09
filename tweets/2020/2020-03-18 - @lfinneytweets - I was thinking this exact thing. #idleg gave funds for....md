@@ -24,6 +24,7 @@ related:
 I was thinking this exact thing. #idleg gave funds for state agencies and @GovernorLittle, and some are talking about legislating via video conference. #idpol <https://t.co/F7Pyb9FVAc>
 
 ## Links
+
 - <https://t.co/F7Pyb9FVAc>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1240332885975904256)

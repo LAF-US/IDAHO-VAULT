@@ -21,6 +21,7 @@ related:
 @bsubronco2003 @McCrostie4Idaho <https://t.co/pwNDiZ7crf>
 
 ## Links
+
 - <https://legislature.idaho.gov/sessioninfo/2021/legislation/S1030/>
 
 *In reply to [@bsubronco2003](https://twitter.com/bsubronco2003)*

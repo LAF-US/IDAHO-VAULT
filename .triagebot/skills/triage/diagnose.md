@@ -42,29 +42,34 @@ Using error messages, reproduction details, and issue description, identify the 
 For different types of issues in IDAHO-VAULT:
 
 ### Content/Link Issues
+
 - Check if files were moved or renamed (use `git log --follow -- path/to/file`)
 - Look for typos in paths or URLs
 - Verify relative vs absolute path usage
 - Check for case sensitivity issues
 
 ### Metadata Issues
+
 - Examine file headers and frontmatter
 - Check for inconsistent metadata formats
 - Look for missing required fields
 - Verify date formats and naming conventions
 
 ### Workflow Issues
+
 - Review the failing workflow file for syntax errors
 - Check for references to non-existent files or dependencies
 - Look at recent changes to the workflow
 - Verify environment variables and secrets
 
 ### Organization Issues
+
 - Check directory structure consistency
 - Look for duplicate files with different naming conventions
 - Verify file extensions are correct
 
 Use commands to investigate:
+
 ```bash
 # Search for files
 find . -name "*.md" -type f
@@ -92,6 +97,7 @@ Document:
 4. **What the fix should be** — high-level approach
 
 Consider:
+
 - Is this a regression from a recent change?
 - Does this affect other similar use cases?
 - Are there edge cases to consider?

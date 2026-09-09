@@ -85,4 +85,3 @@ Create a step-by-step checklist for mounting your specific cart to the Specializ
 Gemini is AI and can make mistakes.
 
 1Password menu is available. Press down arrow to select.
-

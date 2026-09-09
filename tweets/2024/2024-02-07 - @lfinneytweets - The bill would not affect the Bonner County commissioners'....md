@@ -21,6 +21,7 @@ The bill would not affect the Bonner County commissioners' decision to vacate th
 <https://t.co/AdC8gOpt03>
 
 ## Links
+
 - <https://bonnercountydailybee.com/news/2023/dec/29/judge-affirms-camp-bay-road-vacation/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

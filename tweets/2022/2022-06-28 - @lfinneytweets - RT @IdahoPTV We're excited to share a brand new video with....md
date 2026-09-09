@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoPTV: We're excited to share a brand new video with you featuring the Open Arms Dance Project! 
+RT @IdahoPTV: We're excited to share a brand new video with you featuring the Open Arms Dance Project!
 Our piece was selected to be part o…
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1541808875623415809)

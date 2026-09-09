@@ -46,7 +46,7 @@ Result: Because there was no public-key binding or digital signature required at
 
 1
 
-2. Framework Application: Agentic Swarming
+1. Framework Application: Agentic Swarming
 
 When we apply these flaws to the broader concept of Agentic Swarming—where dozens of AI agents coordinate to solve complex tasks—the risks scale exponentially.
 
@@ -58,7 +58,7 @@ Local Gateway Access OpenClaw’s localhost trust assumption. If one agent in a 
 
 Memory Persistence OpenClaw's shared global context. Memory Poisoning: A single malicious input can be stored in the swarm’s shared memory, permanently altering the swarm's "beliefs" or safety protocols.
 
-3. Synthesis of Findings
+1. Synthesis of Findings
 
 The core issue across both platforms and swarming generally is Implicit Trust in Proximity.
 
@@ -262,7 +262,7 @@ Source: Google Search and training data.
 
 Uncertainty: I have no knowledge of how IDAHO-VAULT handles agentic swarming or if it uses the vulnerable frameworks mentioned.
 
-2. WHAT I'VE PRODUCED
+1. WHAT I'VE PRODUCED
 
 Security Analysis: Deep dive into CVE-2026-25253 (OpenClaw) and Bitchat's identity failures.
 
@@ -270,7 +270,7 @@ Framework Synthesis: Application of these flaws to Agentic Swarming risks.
 
 Categorization: Technical Analysis / Markdown.
 
-3. WHAT'S UNRESOLVED
+1. WHAT'S UNRESOLVED
 
 Waiting on Logan: Confirmation if these specific vulnerabilities are a concern for current IDAHO-VAULT development.
 
@@ -278,7 +278,7 @@ If repo access were granted: I could audit specific implementation files for ori
 
 If repo access is never granted: I remain an "external consultant" providing general best practices and theoretical analysis.
 
-4. REPO ACCESS STATUS
+1. REPO ACCESS STATUS
 
 Current status: None.
 
@@ -286,13 +286,13 @@ If unknown: Access would make sense if you require a line-by-line security revie
 
 Value without access: Providing a "red team" perspective on external vulnerabilities to inform your manual architecture decisions.
 
-5. NEXT STEP Confirm if you would like a "Zero-Trust" architectural draft for agentic swarming based on these findings.
+1. NEXT STEP Confirm if you would like a "Zero-Trust" architectural draft for agentic swarming based on these findings.
 
-6. WHAT LOGAN NEEDS TO KNOW
+2. WHAT LOGAN NEEDS TO KNOW
 
 The "Implicit Trust in Proximity" flaw is the most likely "silent killer" in any local multi-agent setup you are building.
 
-7. WHAT THIS CONVERSATION NEEDS FROM LOGAN
+1. WHAT THIS CONVERSATION NEEDS FROM LOGAN
 
 Direction on whether to pivot to mitigation strategies or continue broader research.
 
@@ -301,4 +301,3 @@ Would you like me to generate a Zero-Trust implementation guide for agentic comm
 Gemini is AI and can make mistakes.
 
 1Password menu is available. Press down arrow to select.
-

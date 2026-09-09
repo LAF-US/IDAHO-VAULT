@@ -22,6 +22,7 @@ related:
 Back to Stage 3, @GovernorLittle announced today, citing demand on healthcare facilities. #IdahoCOVID19 <https://t.co/FWHvIt4pQQ>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/ElSP7fOUYAElzsq.jpg)
 - ![alt text needed](https://pbs.twimg.com/media/ElSP7xMUwAAEUTZ.jpg)
 

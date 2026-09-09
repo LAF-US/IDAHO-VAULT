@@ -35,7 +35,8 @@ commit object`) — that's a **separate, still-unsolved problem**, tracked as
 This file is about **agent** commits specifically: when Claude Code, Codex,
 OpenCode, or Mistral commit from a terminal or CI runner, they have no signing
 key of their own. Borrowing Logan's identity to sign is explicitly rejected in
-#398 as "not an authentication solution — an impersonation hazard."
+
+# 398 as "not an authentication solution — an impersonation hazard."
 
 ## The fix
 
@@ -78,7 +79,7 @@ instead of depending on one long-lived session.
 3. For each App, store two values as repo Settings → Secrets and variables → Actions:
 
    | Agent | Variable (App ID) | Secret (private key) |
-   |---|---|---|
+   | --- | --- | --- |
    | opencode | `OPENCODE_AGENT_APP_ID` | `OPENCODE_AGENT_PRIVATE_KEY` |
    | claude | `CLAUDE_APP_ID` | `CLAUDE_APP_PRIVATE_KEY` |
    | mistral | `MISTRAL_APP_ID` | `MISTRAL_APP_PRIVATE_KEY` |
@@ -91,4 +92,4 @@ instead of depending on one long-lived session.
 Until step 4 succeeds once, this whole mechanism is unproven — treat any
 claim otherwise as unverified.
 
-Claude-Session: https://claude.ai/code/session_01Gwgxf5zb2cGx9PZGHDLTMV
+Claude-Session: <https://claude.ai/code/session_01Gwgxf5zb2cGx9PZGHDLTMV>

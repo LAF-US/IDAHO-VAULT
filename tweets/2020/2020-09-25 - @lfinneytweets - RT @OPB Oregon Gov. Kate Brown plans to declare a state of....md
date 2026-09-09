@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @OPB: Oregon Gov. Kate Brown plans to declare a state of emergency in Portland over the weekend. 
+RT @OPB: Oregon Gov. Kate Brown plans to declare a state of emergency in Portland over the weekend.
 
 Her office says this move will allow…
 

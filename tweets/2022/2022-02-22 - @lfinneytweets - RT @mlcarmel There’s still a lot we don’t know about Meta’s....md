@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @mlcarmel: There’s still a lot we don’t know about Meta’s data center in Kuna. 
+RT @mlcarmel: There’s still a lot we don’t know about Meta’s data center in Kuna.
 
 But here’s what I dug more into the company’s environme…
 

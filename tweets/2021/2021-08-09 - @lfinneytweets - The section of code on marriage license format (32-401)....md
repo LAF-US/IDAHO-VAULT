@@ -20,6 +20,7 @@ related:
 @kkruesi The section of code on marriage license format (32-401) says "any regularly ordained minister...or any judge or competent officer." Section 32-405 says "Any authorized minister or officer...may lawfully solemnize matrimony" <https://t.co/2edepfMrSi>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/E8XomxPUYAEuHQW.jpg)
 
 *In reply to [@kkruesi](https://twitter.com/kkruesi)*

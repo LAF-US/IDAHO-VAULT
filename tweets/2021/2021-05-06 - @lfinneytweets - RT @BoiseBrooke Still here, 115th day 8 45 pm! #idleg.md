@@ -22,6 +22,7 @@ related:
 RT @BoiseBrooke: Still here, 115th day 8:45 pm! #idleg <https://t.co/h9e6ZvusqQ>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/E0rBFvDVgAIPcRv.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1390136330684821506)

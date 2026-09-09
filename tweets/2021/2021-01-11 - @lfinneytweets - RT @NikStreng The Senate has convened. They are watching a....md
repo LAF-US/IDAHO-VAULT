@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @NikStreng: The Senate has convened. They are watching a recording of Sugar-Salem High School orchestra students play. 
+RT @NikStreng: The Senate has convened. They are watching a recording of Sugar-Salem High School orchestra students play.
 
 The kids were p…
 

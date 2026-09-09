@@ -51,7 +51,7 @@ When the Western Empire collapsed, the Franks kept the vocabulary. A Merovingian
 Pre-Conquest England had a parallel architecture in its own vocabulary:
 
 | Anglo-Saxon | Norman/Latin overlay | What survived |
-|---|---|---|
+| --- | --- | --- |
 | **scīr** ("shire": office, charge, district) | *comitatus* / *county* | Both. "Shire" persists in place-names (Yorkshire); "county" became the legal/administrative term. |
 | **eorl** ("earl": man of high rank) | *comes* / *count* | "Earl" kept as the English noble title — but his wife is a *countess*, because there is no native feminine of *eorl*. The title's gender stitched itself to the Latin root. |
 | **scīr-gerēfa** ("shire-reeve") | *vicecomes* | "Sheriff" in English; *vicecomes* in Latin records — the king's executive officer in the county. |
@@ -82,7 +82,7 @@ These rarely separate cleanly. Most real offices sit somewhere along the polarit
 #### Cognates of each side
 
 | magister | minister |
-|---|---|
+| --- | --- |
 | **magistrate** — the office and its holder | **ministry** — the body of ministers |
 | **maior / mayor** — "the greater" | **administer / administration** — *ad-* + *ministrare*, "to serve toward" |
 | **master, mister, mistress, maestro** | **administrator** — one who serves toward |
@@ -97,16 +97,19 @@ The entire vocabulary of "executive government" descends from the *minister* sid
 For each: power held, authority claimed, ends served.
 
 #### Sovereign / Crown
+
 - **Power:** fount of jurisdiction; in classical theory, all other authority is delegation from this point.
 - **Authority:** God (coronation theology); the people (modern constitutionalism); both, in uneasy overlap (the U.K. still).
 - **Ends:** peace, justice, defense, *salus populi*.
 
 #### Magistrate ← *magistratus*
+
 - **Power:** judgment within a delegated scope. In Rome, the higher magistracies held *imperium* (the power to command, including the power of life and death in the field).
 - **Authority:** the people, by election (Rome); the Crown, by commission (medieval/early-modern England); statute (modern).
 - **Ends:** *deciding*. The magisterial function is judgment; the ministerial function is execution. Justices of the peace, lay magistrates, U.S. federal [[magistrate judges]] and Idaho's [[magistrate court]] all preserve this.
 
 #### Earl / Count (the title, not the office)
+
 - **Etymology:** *eorl* (Anglo-Saxon, "man of high rank") and *comes* (Latin, "companion") collide after 1066. The Latinate title sticks to the English noun.
 - **Power:** by Edward I's reign, essentially honorific; the *real* county work had migrated to the sheriff.
 - **Authority:** royal creation (letters patent in England).
@@ -114,6 +117,7 @@ For each: power held, authority claimed, ends served.
 - **Note:** the count was *originally* a minister (the king's companion-officer). The title petrified into a magisterial honor as actual administration drained away. This is the most common slope in the whole vocabulary.
 
 #### Count Palatine / *Pfalzgraf*
+
 - **Etymology:** *comes palatinus* — "count of the palace."
 - **Power:** quasi-royal within a *palatinate*. Could hold pleas the king would have heard; in England the great palatinates (Durham, Chester, Lancaster) had their own writs, their own chanceries, sometimes their own coinage.
 - **Authority:** original royal grant — but a grant so total it functioned as sovereignty within the palatinate's bounds.
@@ -121,6 +125,7 @@ For each: power held, authority claimed, ends served.
 - **Note:** the limit case of delegation. A minister with a magister's effective reach. Where the polarity nearly collapses.
 
 #### Lord of the Manor
+
 - **Etymology:** Latin *manēre*, "to dwell" — the lord's *staying-place*.
 - **Power:** private magisterial within the manor. Held *court baron* (civil, over free tenants) and *court leet* (criminal/police, exercising franchised royal jurisdiction).
 - **Authority:** feudal grant from the Crown; later, simple property right.
@@ -128,6 +133,7 @@ For each: power held, authority claimed, ends served.
 - **Note:** a *feudal pocket* — private magisterium operating inside public magisterium. Extinct as jurisdiction in modern English law; survives as a curious form of incorporeal property right.
 
 #### Mayor ← *maior*, "the greater"
+
 - **Power:** chief executive of a municipal corporation.
 - **Authority:** borough charter historically; local-government statute today; popular election in most modern systems.
 - **Ends:** local administration, civic representation, sometimes (in U.S. strong-mayor cities) genuine executive command.
@@ -138,18 +144,21 @@ For each: power held, authority claimed, ends served.
 ### II. Ministerial offices (delegated executive authority)
 
 #### Reeve ← Old English *gerēfa*
+
 - **Power:** stewardship, accountancy, enforcement.
 - **Authority:** the master whose reeve he is (king, shire, hundred, port, manor).
 - **Ends:** keeping books, gathering renders, holding minor court, raising the unit's men.
 - **Note:** the *root shape* of common-law administration. Every compound — *shire-reeve, hundred-reeve, portreeve, tithingman* — is a reeve qualified by jurisdiction. *Reeve* is the bare ministerial form.
 
 #### Sheriff ← *scīr-gerēfa* / *vicecomes*  ([[County Sheriff]])
+
 - **Power:** ministerial in the strict sense — serves writs, arrests, summons juries, keeps the gaol, raises the *posse comitatus*.
 - **Authority:** the Crown (historically); the people, via election (in most U.S. states, including Idaho).
 - **Ends:** executing judicial process, peace-keeping at the county scale, custody of the gaol ([[county jails]]).
 - **Note:** the *paradigm minister* of common law. The Latin *vicecomes* ("vice-count") pins the dependency on the now-vanished count; the office did the work the title walked away from.
 
 #### Viscount
+
 - **Same root as sheriff** (*vice-comes*) — but ascended into the peerage as the 5th rank.
 - **Power:** noble title; no administrative office attached.
 - **Authority:** royal creation.
@@ -157,6 +166,7 @@ For each: power held, authority claimed, ends served.
 - **Note:** the *twin-stem case*. One word; one branch petrified into magisterial honor (viscount), one stayed working as a minister (sheriff). The polarity bifurcated a single root.
 
 #### Constable ← *comes stabulī*, "count of the stable"
+
 - **Power:** depends on altitude.
   - **Lord High Constable** of England / *connétable de France*: great officer of state, the king's chief military deputy (the French office abolished in 1627 by Louis XIII).
   - **Parish constable** (and modern police constable): peace officer, arrest, service of process.
@@ -165,6 +175,7 @@ For each: power held, authority claimed, ends served.
 - **Note:** another sliding word. Magisterial at altitude; ministerial at ground level. The horse-master rises into a great office and then descends, leaving the name on the village peace officer.
 
 #### Marshal ← Old High German *marahscalc*, "horse-servant"
+
 - **Same architecture as constable.** A stable functionary ennobled.
 - **Power:** ranges across
   - **Earl Marshal** of England (Duke of Norfolk; ceremonial, College of Arms),
@@ -175,24 +186,28 @@ For each: power held, authority claimed, ends served.
 - **Note:** the U.S. Marshal preserves the *original* ministerial function. The field marshal preserves the *elevation*. Same root.
 
 #### Coroner ← *coronator*, "keeper of the Crown's pleas"  ([[County Coroner]])
+
 - **Power:** ministerial-judicial. Holds inquests, secures Crown property (originally), determines cause and manner of death (today).
 - **Authority:** the Crown — the office's entire identity is in the name; today by statute.
 - **Ends:** originally fiscal — securing royal revenue from forfeitures, treasure trove, royal fish (whales and sturgeon were the king's), unexplained deaths whose felons would forfeit chattels to the Crown. Today: determining death.
 - **Note:** the purest Crown minister by etymology. The office exists because *the Crown has pleas* and someone must keep them at the county level.
 
 #### Hundred-reeve / Hundredor / Hundred Bailiff
+
 - **Power:** ministerial within the hundred — minor courts, frankpledge view.
 - **Authority:** Crown, mediated through the sheriff or a franchise-holder.
 - **Ends:** subordinate justice, mustering of the hundred.
 - **Note:** essentially extinct in England (the Local Government Act 1894 finished what the 19th century began).
 
 #### Tithingman / Borsholder / Headborough
+
 - **Power:** minimal — head of a frankpledge tithing (group of ten households).
 - **Authority:** customary, codified Anglo-Saxon through early-modern.
 - **Ends:** mutual surety, presentment of offenses at the hundred court.
 - **Note:** the *earliest English policing* — collective rather than professional. Vestige only.
 
 #### Portreeve
+
 - **Power:** ministerial — market regulation, dues, minor justice.
 - **Authority:** charter or royal grant.
 - **Ends:** trade regulation, revenue collection.
@@ -205,26 +220,31 @@ For each: power held, authority claimed, ends served.
 These hold no power themselves; they are the *spaces and groupings* within which magisters and ministers act.
 
 #### Comitatus / County
+
 - The *going-with-ness* of the count, treated spatially.
 - **Authority of the unit:** royal creation (England); statute (U.S. states).
 - **Ends:** the spatial frame in which sheriffs serve, juries sit, taxes assess, schools form.
 
 #### Shire ← *scīr* ("office, district")
+
 - Anglo-Saxon counterpart; the *administered portion*.
 - **Note:** *shire* names the office; *county* names whose office it is. Two metaphors for the same thing, welded after 1066.
 
 #### Hundred / Wapentake / Ward
+
 - **Hundred:** 100 households, hides, or fighting men — the original count is uncertain enough to have been disputed since at least Stubbs.
 - **Wapentake:** Old Norse *vápnatak*, "weapon-taking" — the assembly where assent was registered by brandishing arms. Danelaw vocabulary.
 - **Ward:** northern English equivalent.
 - **Ends:** petty justice, frankpledge, local levy.
 
 #### Tithing ← *teóþung*, "a tenth"
+
 - A frankpledge group of ten households.
 - **Ends:** mutual responsibility for one another's appearance at court.
 - **Note:** *collective ministership* — a unit whose entire reason for being is to stand surety for itself.
 
 #### Parish ← Greek *paroikia*, "dwelling beside [the church]"
+
 - **Dual jurisdiction:**
   - **Ecclesiastical:** parson, churchwardens, vestry — under the bishop.
   - **Civil:** poor relief (Elizabethan), registers, ways and means — accreted by Tudor and Stuart statute.
@@ -232,12 +252,14 @@ These hold no power themselves; they are the *spaces and groupings* within which
 - **Note:** in Louisiana, *parish* wholly replaces *county* — a French Catholic survival on American soil that preserves the ecclesiastical word for a wholly secular unit.
 
 #### Borough / City ← *burh*, "fortified place"
+
 - **Power:** chartered self-government with its own court, officers, sometimes Parliamentary seats.
 - **Authority:** royal charter, later statute.
 - **Ends:** trade regulation, civic governance, local justice.
 - **Note:** a *magisterial pocket* within a magisterial frame. The Crown grants the borough corporate magisterium that operates separately from the county sheriff's writ within the chartered matters.
 
 #### *Posse comitatus*
+
 - "Force of the county" — the able-bodied men summonable by the sheriff.
 - **Authority:** the sheriff's writ, the Crown's behind it.
 - **Ends:** enforcement when ordinary process fails; emergency peace-keeping.

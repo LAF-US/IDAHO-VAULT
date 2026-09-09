@@ -18,6 +18,7 @@ related:
 <https://t.co/7OAAKtCYWf>
 
 ## Links
+
 - <https://healthandwelfare.idaho.gov/news/free-home-covid-19-tests-are-available-idaho-dialing-2-1-1>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

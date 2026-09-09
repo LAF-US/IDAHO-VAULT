@@ -20,6 +20,7 @@ RT @danielwinlander: It's still quite possible Jay Inslee doesn't become preside
 <https://t.co/EaL9nwUXUq>
 
 ## Links
+
 - <https://m.inlander.com/spokane/seven-hurdles-standing-in-the-way-of-jay-inslee-becoming-the-democratic-nominee-for-president/Content?oid=15882447>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1101569313956225024)

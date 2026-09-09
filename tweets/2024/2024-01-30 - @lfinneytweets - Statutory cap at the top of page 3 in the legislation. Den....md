@@ -17,10 +17,11 @@ related:
   - lfinneytweets
 ---
 
-@slfisher Statutory cap at the top of page 3 in the legislation. Den Hartog said this way the Rev & Tax committee would have to run a bill to change it and JFAC couldn't do it by simple appropriation. 
+@slfisher Statutory cap at the top of page 3 in the legislation. Den Hartog said this way the Rev & Tax committee would have to run a bill to change it and JFAC couldn't do it by simple appropriation.
 <https://t.co/2NH5WsrHt6>
 
 ## Links
+
 - <https://legislature.idaho.gov/sessioninfo/2024/legislation/H0447/>
 
 *In reply to [@slfisher](https://twitter.com/slfisher)*

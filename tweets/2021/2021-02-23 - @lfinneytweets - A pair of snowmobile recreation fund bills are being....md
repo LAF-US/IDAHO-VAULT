@@ -19,11 +19,12 @@ related:
   - idpol
 ---
 
-A pair of snowmobile recreation fund bills are being returned from the House floor to the Transportation Cmte. #idleg #idpol 
+A pair of snowmobile recreation fund bills are being returned from the House floor to the Transportation Cmte. #idleg #idpol
 <https://t.co/ZlrzMBdRKm>
 <https://t.co/a7WPTLnGfw>
 
 ## Links
+
 - <https://legislature.idaho.gov/sessioninfo/2021/legislation/H0060/>
 - <https://legislature.idaho.gov/sessioninfo/2021/legislation/H0061/>
 

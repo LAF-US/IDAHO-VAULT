@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @CrushTheCurveID: Today at 4 p.m., we will hold a news conference to announce the first round of COVID-19 antibody test results. 
+RT @CrushTheCurveID: Today at 4 p.m., we will hold a news conference to announce the first round of COVID-19 antibody test results.
 We wil…
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1253006917183533056)

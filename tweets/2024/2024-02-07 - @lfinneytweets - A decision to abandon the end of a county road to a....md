@@ -19,10 +19,11 @@ related:
   - idpol
 ---
 
-A decision to abandon the end of a county road to a developer stirred local controversy over public access to Lake Pend Oreille. A bill at the Idaho statehouse seeks to make it easier for residents to address such situations in the future. #idleg #idpol 
+A decision to abandon the end of a county road to a developer stirred local controversy over public access to Lake Pend Oreille. A bill at the Idaho statehouse seeks to make it easier for residents to address such situations in the future. #idleg #idpol
 <https://t.co/PrZx8bIgaE>
 
 ## Links
+
 - <https://blog.idahoreports.idahoptv.org/2024/02/06/bill-to-protect-public-land-and-water-access-clears-senate-panel/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1755097770732802476)

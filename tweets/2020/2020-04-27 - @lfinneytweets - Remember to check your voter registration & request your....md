@@ -20,9 +20,11 @@ related:
 Remember to check your voter registration & request your ballot at <https://t.co/tvHdKSuSTw>! #VoteEarlyIdaho <https://t.co/k3mzof0L4h>
 
 ## Links
+
 - <http://idahovotes.gov>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/EWpZsB6UEAIIURg.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1254914076360097792)

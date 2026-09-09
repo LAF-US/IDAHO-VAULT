@@ -25,6 +25,7 @@ related:
 Six pieces of legislation received @GovernorLittle’s veto this #idleg session. I gave an overview of them here for @IdahoPubRadio. #idpol <https://t.co/NSZoA0yvWM>
 
 ## Links
+
 - <https://x.com/IdahoPubRadio/status/1246119865875697664>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1246160924643221505)

@@ -14,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-Stuck trying to interpret my dream from last night: All the signs in store windows that say "masks required" had been replaced with ones that said "gravity suspended" (à la Bill Sali). 
+Stuck trying to interpret my dream from last night: All the signs in store windows that say "masks required" had been replaced with ones that said "gravity suspended" (à la Bill Sali).
 
 What is my subconscious trying to tell me? Any takers?
 

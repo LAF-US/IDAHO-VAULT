@@ -24,6 +24,7 @@ related:
 I'm at @MeridianIdaho City Hall today for the redistricting commission meeting. #idleg #idpol <https://t.co/vRcEEnSbPq>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/E_basOgVUBIqiHE.jpg)
 - ![alt text needed](https://pbs.twimg.com/media/E_basxfVIAA6343.jpg)
 - ![alt text needed](https://pbs.twimg.com/media/E_batbIVIAAtYX6.jpg)

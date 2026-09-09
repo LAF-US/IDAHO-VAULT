@@ -21,6 +21,7 @@ related:
 @dorothyew @IdahoReports @GovernorLittle @IdahoController <https://t.co/ankWhrwf1K>
 
 ## Links
+
 - <https://x.com/lfinneytweets/status/1348748264611352576>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1348748725414334465)

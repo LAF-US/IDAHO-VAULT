@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @riley_rogerson: Congress is confronting a fundamental question: 
+RT @riley_rogerson: Congress is confronting a fundamental question:
 
 Does it fund agencies to reflect the Trump administration’s vision of…
 

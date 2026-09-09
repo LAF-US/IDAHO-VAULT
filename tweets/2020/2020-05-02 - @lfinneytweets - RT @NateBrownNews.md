@@ -19,6 +19,7 @@ related:
 RT @NateBrownNews: <https://t.co/t9O0TG2b1H>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/EW_bv6YUEAAvAdl.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1256475742218579970)

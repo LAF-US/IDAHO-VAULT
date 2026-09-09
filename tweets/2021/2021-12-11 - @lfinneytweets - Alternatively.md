@@ -18,6 +18,7 @@ related:
 @KelcieMMorris Alternatively <https://t.co/DwZDf9bT55>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/FGTro2NUcAETdUf.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

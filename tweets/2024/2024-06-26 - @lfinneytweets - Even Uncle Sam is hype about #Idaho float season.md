@@ -20,6 +20,7 @@ related:
 Even Uncle Sam is hype about #Idaho float season <https://t.co/7cgVWMjsd3>
 
 ## Links
+
 - <https://x.com/USGS_Idaho/status/1806006845531890138>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1806008537598120248)

@@ -15,10 +15,11 @@ related:
   - lfinneytweets
 ---
 
-Thomas here actually articulating the sentiment I tried to convey through a dumb GIF: 
+Thomas here actually articulating the sentiment I tried to convey through a dumb GIF:
 <https://t.co/2lXp24bLpd>
 
 ## Links
+
 - <https://x.com/ThomasPlankMT/status/1337117047809929216>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

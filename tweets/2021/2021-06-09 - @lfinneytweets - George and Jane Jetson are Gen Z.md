@@ -17,6 +17,7 @@ related:
 George and Jane Jetson are Gen Z <https://t.co/8lVf2P2uKb>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/E3Z-4tKVUAIjlWS.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1402447852706488327)

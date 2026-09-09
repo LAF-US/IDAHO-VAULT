@@ -17,9 +17,11 @@ related:
 Using only food, where did you grow up. I limited myself to one potato-adjacent product. <https://t.co/w2JyoE3Dkh> <https://t.co/gAYmVTZwxT>
 
 ## Links
+
 - <https://x.com/am_reports/status/1456070161941897218>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/FDUsKrQVUAYZNal.jpg)
 - ![alt text needed](https://pbs.twimg.com/media/FDUsK9YVcAcTCco.jpg)
 - ![alt text needed](https://pbs.twimg.com/media/FDUsLHSVkAMYv6_.jpg)

@@ -17,6 +17,7 @@ related:
 A cursory search reveals this "SCOOP" is the front page of the student-led newspaper, not 'teaching' by the school or administrators. <https://t.co/8z0D8xwKor>
 
 ## Links
+
 - <https://x.com/christopherrufo/status/1496558356504485894>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1496561632067084295)

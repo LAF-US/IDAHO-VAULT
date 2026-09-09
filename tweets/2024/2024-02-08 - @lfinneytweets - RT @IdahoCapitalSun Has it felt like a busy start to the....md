@@ -20,6 +20,7 @@ RT @IdahoCapitalSun: Has it felt like a busy start to the 2024 Idaho legislative
 <https://t.co/3AeMjzFxWo>
 
 ## Links
+
 - <https://idahocapitalsun.com/2024/02/08/idaho-legislators-preparing-by-far-the-highest-number-of-draft-bills-in-six-years/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1755701073552237025)

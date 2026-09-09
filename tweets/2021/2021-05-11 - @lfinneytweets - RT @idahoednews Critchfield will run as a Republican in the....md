@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @idahoednews: Critchfield will run as a Republican in the May 2022 primary. 
+RT @idahoednews: Critchfield will run as a Republican in the May 2022 primary.
 Current State Superintendent Sherri Ybarra has not said whe…
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1392259885010620419)

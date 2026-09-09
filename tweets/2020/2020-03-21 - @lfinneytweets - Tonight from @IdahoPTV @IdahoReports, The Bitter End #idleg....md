@@ -25,6 +25,7 @@ related:
 Tonight from @IdahoPTV: @IdahoReports, The Bitter End #idleg #idpol  <https://t.co/Xt7IBADSLl>
 
 ## Links
+
 - <https://video.idahoptv.org/video/the-bitter-end-62rq2n>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1241194485603684353)

@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @arbiteronline: Grocery stores, medical facilities and other essential businesses will remain open to the public. 
+RT @arbiteronline: Grocery stores, medical facilities and other essential businesses will remain open to the public.
 
 Outdoor recreation,…
 

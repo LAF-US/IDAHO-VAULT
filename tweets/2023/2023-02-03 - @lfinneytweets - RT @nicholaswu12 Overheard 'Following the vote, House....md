@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @nicholaswu12: Overheard: 
+RT @nicholaswu12: Overheard:
 
 'Following the vote, House Foreign Affairs member Ken Buck, R-Colo., was overheard in an elevator calling it…
 

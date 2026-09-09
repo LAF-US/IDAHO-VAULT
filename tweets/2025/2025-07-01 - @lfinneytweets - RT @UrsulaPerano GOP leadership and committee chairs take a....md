@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @UrsulaPerano: GOP leadership and committee chairs take a victory lap 
+RT @UrsulaPerano: GOP leadership and committee chairs take a victory lap
 
 “This doesn’t happen easily, for sure” - Thune <https://t.co/tO3P…>
 

@@ -19,6 +19,7 @@ related:
 RT @gazettedotcom: Arrested Iowa City protest leader held without bond <https://t.co/NUuUQZE3DN>
 
 ## Links
+
 - <https://www.thegazette.com/subject/news/public-safety/arrested-blm-iowa-city-protest-leader-mazin-mohamedali-bond-20200608?utm_campaign=snd-autopilot>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1270058062150131715)

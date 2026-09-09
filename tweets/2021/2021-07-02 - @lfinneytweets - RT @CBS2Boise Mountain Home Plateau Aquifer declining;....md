@@ -19,6 +19,7 @@ related:
 RT @CBS2Boise: Mountain Home Plateau Aquifer declining; officials search for water resource solutions <https://t.co/RLt8QnNPZ3> <https://t.co/…>
 
 ## Links
+
 - <https://bit.ly/3wbrw0D>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1410822314002845699)

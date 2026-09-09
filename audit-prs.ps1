@@ -1,4 +1,4 @@
-$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop'
 Set-Location C:/Users/loganf/Documents/IDAHO-VAULT
 $prs = @(375,374,353,310,300,299,281,245,232,227,191,173,128,127,126,125,124,123,94,92,91,90,86,85,84,43)
 $results = @()

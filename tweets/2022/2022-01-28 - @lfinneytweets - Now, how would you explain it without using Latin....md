@@ -17,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-"Now, how would you explain it without using Latin?" ~@BetsyZRussell to a source 
+"Now, how would you explain it without using Latin?" ~@BetsyZRussell to a source
 
 @OHnewsroom
 

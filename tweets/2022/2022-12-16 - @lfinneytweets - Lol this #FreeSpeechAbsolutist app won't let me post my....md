@@ -20,6 +20,7 @@ related:
 Lol this #FreeSpeechAbsolutist app won't let me post my Mastodon link <https://t.co/Le8yqHclr4>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/FkEX_MWacAI-ezb.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1603589318375014401)

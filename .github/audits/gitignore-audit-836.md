@@ -60,6 +60,7 @@ Per issue #836, the audit looked for vestigial ignore rules referenced in prior 
 2. **.idaho-vault-signing-gate-build-tools/** — Not found in current .gitignore. Not present in filesystem.
 
 The current .gitignore contains only intentional rules for:
+
 - Plaintext secrets (SSH keys, credentials, API config)
 - Large media bytestore (.ollama)
 - Cache files

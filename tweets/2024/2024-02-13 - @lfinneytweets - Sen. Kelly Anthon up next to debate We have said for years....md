@@ -20,7 +20,7 @@ related:
   - idleg
 ---
 
-Sen. Kelly Anthon up next to debate: 
+Sen. Kelly Anthon up next to debate:
 "We have said for years you don't let a child go into an R-rated movie in a theater... We filter the television. We don't let X-rated television be broadcast into our homes on CBS. We have regulated the business." #idpol #idleg
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

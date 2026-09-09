@@ -21,6 +21,7 @@ RT @ABairdSpencer: UI Classes cancelled Monday out of respect for dead students
 <https://t.co/5ceuDWU3EL>
 
 ## Links
+
 - <https://www.uiargonaut.com/2022/11/13/university-of-idaho-classes-cancelled-monday-out-of-respect-for-dead-students/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1592035668615909377)

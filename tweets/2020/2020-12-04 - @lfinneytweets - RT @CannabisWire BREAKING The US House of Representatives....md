@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @CannabisWire: BREAKING: The US House of Representatives just voted to end the federal criminalization of cannabis. 
+RT @CannabisWire: BREAKING: The US House of Representatives just voted to end the federal criminalization of cannabis.
 
 The MORE Act has p…
 

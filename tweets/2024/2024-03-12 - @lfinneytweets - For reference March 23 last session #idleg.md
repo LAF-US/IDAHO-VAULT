@@ -18,10 +18,11 @@ related:
   - idleg
 ---
 
-For reference: March 23 last session #idleg 
+For reference: March 23 last session #idleg
 <https://t.co/wGPhcOdiJN>
 
 ## Links
+
 - <https://x.com/lfinneytweets/status/1639011560877326336?t=8GEQczgfqUURtcZjsztyaQ>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

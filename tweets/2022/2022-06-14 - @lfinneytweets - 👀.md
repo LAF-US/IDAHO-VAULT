@@ -27,10 +27,11 @@ related:
   - lfinneytweets
 ---
 
-@davlinnews @danielwinlander @connerjohnfort @scottleadingham @KayeThornbrugh @sanford_nate @QuinnWelsch @vestal13 @MelissaKXLY4 @Leah_Sottile @sprdougnad @BecAnneW @IdahoReports 👀 
+@davlinnews @danielwinlander @connerjohnfort @scottleadingham @KayeThornbrugh @sanford_nate @QuinnWelsch @vestal13 @MelissaKXLY4 @Leah_Sottile @sprdougnad @BecAnneW @IdahoReports 👀
 <https://t.co/nCcNmShOfu>
 
 ## Links
+
 - <https://soundcloud.com/idaho-reports/special-patriot-front-arrests>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1536784218994331648)

@@ -17,9 +17,11 @@ related:
 <https://t.co/jXyo3wO6Nl> <https://t.co/YZKFgHlMa0>
 
 ## Links
+
 - <https://x.com/nycsouthpaw/status/1323753344968568833>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/El8RPtRUYAEf3Qv.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1323795783016087553)

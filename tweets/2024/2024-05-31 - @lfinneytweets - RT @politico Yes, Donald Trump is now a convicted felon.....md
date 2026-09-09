@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @politico: Yes, Donald Trump is now a convicted felon. 
+RT @politico: Yes, Donald Trump is now a convicted felon.
 
 No, that doesn't prevent him from running for — and potentially serving  as — p…
 

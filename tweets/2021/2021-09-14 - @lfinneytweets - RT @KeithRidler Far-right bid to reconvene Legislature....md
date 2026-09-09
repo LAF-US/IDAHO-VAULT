@@ -25,6 +25,7 @@ related:
 RT @KeithRidler: Far-right bid to reconvene Legislature called grandstanding (from @AP) #idpol #idleg  <https://t.co/sNpLwlwVLR>
 
 ## Links
+
 - <https://apnews.com/article/a14011b1e8c7e1a03ec48de9c298b378>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1437911127782920192)

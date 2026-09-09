@@ -19,6 +19,7 @@ related:
 RT @BoiseDev: Fred Meyer union authorizes strike. It might impact Boise-area stores <https://t.co/xoB4aWAwaN>
 
 ## Links
+
 - <https://boisedev.com/news/2021/07/20/fred-meyer-strike-boise/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1417929667407843333)

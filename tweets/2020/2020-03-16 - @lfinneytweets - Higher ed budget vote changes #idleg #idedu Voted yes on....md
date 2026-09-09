@@ -21,10 +21,10 @@ related:
   - idedu
 ---
 
-@IBR_SLFisher @clarkcorbin Higher ed budget vote changes #idleg #idedu 
+@IBR_SLFisher @clarkcorbin Higher ed budget vote changes #idleg #idedu
 
-Voted yes on first budget, no on second: 
-Addis, Anderson, Anderst, Collins, Hartgen, Kauffman, Kingsley, Lickley, Raybould, Ricks, Stevenson, Youngblood 
+Voted yes on first budget, no on second:
+Addis, Anderson, Anderst, Collins, Hartgen, Kauffman, Kingsley, Lickley, Raybould, Ricks, Stevenson, Youngblood
 
 Voted no on first budget, yes on second:
 Amador, Kerby, Wagoner,

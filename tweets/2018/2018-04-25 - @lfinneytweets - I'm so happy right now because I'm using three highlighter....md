@@ -22,6 +22,7 @@ related:
 I'm so happy right now because I'm using three highlighter colors to annotate my term paper research and this source's three arguments line up perfectly with mine 🙌🙌🙌 #finals #uidaho <https://t.co/RTwrwHeuHn>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/Dbqq-RnV0AAZyxC.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/989291068003766273)
