@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio Resources available to the U of I campus..."
 date: 2022-11-14
 time: 06:07:53
 tweet_id: "1592036579316756481"

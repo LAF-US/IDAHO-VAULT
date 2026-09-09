@@ -1,4 +1,5 @@
 ---
+title: "RT @PHINCD PRESS RELEASE Effective Immediately Public..."
 date: 2021-03-23
 time: 19:12:24
 tweet_id: "1374438899116744711"
@@ -17,6 +18,7 @@ related:
 
 RT @PHINCD: PRESS RELEASE: Effective Immediately Public Health and Enrolled Providers Now Scheduling People Aged 35 and Older
 Links:
+
 - http…
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1374438899116744711)

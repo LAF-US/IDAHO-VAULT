@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoNewsGuild Journalism can't be reduced to clicks...."
 date: 2021-04-21
 time: 18:37:39
 tweet_id: "1384939404930785280"

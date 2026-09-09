@@ -7,4 +7,4 @@ related:
 - Gem County
 authority: LOGAN
 ---
-Gem County newspaper in Emmett owned by Adams Publishing Group 
+Gem County newspaper in Emmett owned by Adams Publishing Group

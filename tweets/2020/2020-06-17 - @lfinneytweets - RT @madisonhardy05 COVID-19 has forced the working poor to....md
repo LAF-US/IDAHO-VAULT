@@ -1,4 +1,5 @@
 ---
+title: "RT @madisonhardy05 COVID-19 has forced the working poor to..."
 date: 2020-06-17
 time: 04:24:12
 tweet_id: "1273109164332638208"

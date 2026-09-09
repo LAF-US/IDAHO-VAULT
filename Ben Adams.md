@@ -7,5 +7,5 @@ related:
 - redistricting
 authority: LOGAN
 ---
-- Senate member for LD12 after redistricting 
-- former House member member for LD13 
+- Senate member for LD12 after redistricting
+- former House member member for LD13

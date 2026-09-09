@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio Substantive questions and topics in Troy..."
 date: 2021-07-15
 time: 18:20:42
 tweet_id: "1415738107308085250"

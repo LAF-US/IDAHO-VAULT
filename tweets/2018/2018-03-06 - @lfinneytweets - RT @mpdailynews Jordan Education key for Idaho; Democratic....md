@@ -1,4 +1,5 @@
 ---
+title: "RT @mpdailynews Jordan Education key for Idaho; Democratic..."
 date: 2018-03-06
 time: 23:23:06
 tweet_id: "971164297962246145"

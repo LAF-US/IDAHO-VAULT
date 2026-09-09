@@ -14,10 +14,11 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/LHYauWPeDr
+<https://t.co/LHYauWPeDr>
 
 ## Links
-- https://www.inlander.com/spokane/north-idaho-rep-heather-scott-reaps-the-glory-and-the-consequences-of-being-one-of-matt-sheas-biggest-allies/Content?oid=19045888
+
+- <https://www.inlander.com/spokane/north-idaho-rep-heather-scott-reaps-the-glory-and-the-consequences-of-being-one-of-matt-sheas-biggest-allies/Content?oid=19045888>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

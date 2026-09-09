@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-RT @TubsAtTheClub: University of Idaho counseling center and crisis hotline: 
+RT @TubsAtTheClub: University of Idaho counseling center and crisis hotline:
 208-885-6716
 
 Idaho suicide prevention line: 208-398-4357

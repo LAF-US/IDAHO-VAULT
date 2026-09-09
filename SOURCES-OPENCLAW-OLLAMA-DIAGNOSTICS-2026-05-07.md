@@ -14,17 +14,17 @@ These sources were used on 2026-05-07 while interpreting local OpenClaw gateway,
 
 ## OpenClaw
 
-- OpenClaw models CLI and auth profiles: https://docs.openclaw.ai/cli/models
-- OpenClaw channels CLI: https://docs.openclaw.ai/cli/channels
-- OpenClaw WhatsApp channel guide: https://docs.openclaw.ai/channels/whatsapp
-- OpenClaw OpenAI / Codex OAuth setup: https://docs.openclaw.ai/openai
-- OpenClaw troubleshooting index reference from local CLI output: https://docs.openclaw.ai/troubleshooting
+- OpenClaw models CLI and auth profiles: <https://docs.openclaw.ai/cli/models>
+- OpenClaw channels CLI: <https://docs.openclaw.ai/cli/channels>
+- OpenClaw WhatsApp channel guide: <https://docs.openclaw.ai/channels/whatsapp>
+- OpenClaw OpenAI / Codex OAuth setup: <https://docs.openclaw.ai/openai>
+- OpenClaw troubleshooting index reference from local CLI output: <https://docs.openclaw.ai/troubleshooting>
 
 ## Ollama
 
-- Ollama model library: https://ollama.com/library
-- Ollama CLI documentation: https://github.com/ollama/ollama/blob/main/docs/cli.md
-- Ollama API documentation: https://github.com/ollama/ollama/blob/main/docs/api.md
+- Ollama model library: <https://ollama.com/library>
+- Ollama CLI documentation: <https://github.com/ollama/ollama/blob/main/docs/cli.md>
+- Ollama API documentation: <https://github.com/ollama/ollama/blob/main/docs/api.md>
 
 ## Local Diagnostic Notes
 

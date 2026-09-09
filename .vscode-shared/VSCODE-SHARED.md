@@ -1,4 +1,5 @@
 ---
+title: VSCODE-SHARED
 authority: LOGAN
 related:
   - VSCODE-SHARED

@@ -12,7 +12,8 @@ related:
 - wolf
 ---
 
-big game species for mammals hunting 
+big game species for mammals hunting
+
 - deer
 - elk
 - pronghorn

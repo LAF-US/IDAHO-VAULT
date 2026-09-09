@@ -1,4 +1,5 @@
 ---
+title: "RT @RuthBrownNews Senate passed a workforce housing bill on..."
 date: 2022-03-22
 time: 23:04:49
 tweet_id: "1506406573307949056"

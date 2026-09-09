@@ -1,4 +1,5 @@
 ---
+title: "RT @clarkcorbin Speaker Bedke tells me the House is working..."
 date: 2020-03-12
 time: 21:11:16
 tweet_id: "1238210977981554688"

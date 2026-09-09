@@ -16,10 +16,11 @@ related:
   - lfinneytweets
 ---
 
-@ryannoyance I do...on occasion. My circadian rhythm has been varying wildly & destructively for the past month or so ✌️ https://t.co/8uA2nZe12A
+@ryannoyance I do...on occasion. My circadian rhythm has been varying wildly & destructively for the past month or so ✌️ <https://t.co/8uA2nZe12A>
 
 ## Media
-- ![](https://pbs.twimg.com/tweet_video_thumb/D5D9ISiUUAAsnMZ.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/D5D9ISiUUAAsnMZ.jpg)
 
 *In reply to [@ryannoyance](https://twitter.com/ryannoyance)*
 

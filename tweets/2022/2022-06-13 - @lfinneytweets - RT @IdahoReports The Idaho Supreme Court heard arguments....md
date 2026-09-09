@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports The Idaho Supreme Court heard arguments..."
 date: 2022-06-13
 time: 22:26:19
 tweet_id: "1536475075758723079"

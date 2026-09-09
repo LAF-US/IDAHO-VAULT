@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Sen. Tammy Nichols, R-Middleton, and Sen...."
 date: 2023-02-16
 time: 02:21:29
 tweet_id: "1626044061898444800"

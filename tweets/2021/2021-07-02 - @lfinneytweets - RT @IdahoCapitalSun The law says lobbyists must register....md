@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoCapitalSun The law says lobbyists must register..."
 date: 2021-07-02
 time: 01:28:41
 tweet_id: "1410772383892316161"

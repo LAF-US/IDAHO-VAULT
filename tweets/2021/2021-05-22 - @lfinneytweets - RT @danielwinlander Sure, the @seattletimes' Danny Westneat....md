@@ -1,4 +1,5 @@
 ---
+title: "RT @danielwinlander Sure, the @seattletimes' Danny Westneat..."
 date: 2021-05-22
 time: 02:21:38
 tweet_id: "1395927803619549185"

@@ -1,4 +1,5 @@
 ---
+title: "RT @KTVBDevin NEW Boise Mayor McLean issued a statement on..."
 date: 2020-07-20
 time: 23:06:59
 tweet_id: "1285350522703118336"

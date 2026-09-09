@@ -1,4 +1,5 @@
 ---
+title: "RT @uiargonaut Voting opens tomorrow at 7 a.m. until 5 p.m...."
 date: 2019-04-01
 time: 07:38:22
 tweet_id: "1112620203408424960"

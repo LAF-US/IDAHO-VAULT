@@ -5,4 +5,4 @@ related:
 - water rights
 ---
 
-water rights concept 
+water rights concept

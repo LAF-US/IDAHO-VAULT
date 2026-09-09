@@ -1,4 +1,5 @@
 ---
+title: "RT @bwags I wasn\u2019t really a militant member of the \u201cit must..."
 date: 2026-01-16
 time: 03:10:08
 tweet_id: "2011999382552359046"

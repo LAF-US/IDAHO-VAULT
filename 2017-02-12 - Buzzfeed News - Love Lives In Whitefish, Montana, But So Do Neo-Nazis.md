@@ -244,7 +244,6 @@ Schaffer suggested I reach out to Adam Langer, who was coordinating a different 
 
 Langer laughed, leaned back in his chair. “There are so many opposition groups. But they’re all from somewhere else! From Missoula, from Washington, from Helena — and it’s like, we live here.” Still, Langer was willing to let everyone have their own mode of protest.
 
-
 Tim Goessman for BuzzFeed News
 Protesters in Whitefish, Montana.
 
@@ -262,7 +261,6 @@ An SUV drove by, honking. A man leaned out his window and yelled, “Have you se
 
 A group spilled out of a car and began slipping on blue troll-hair wigs. They offered me a nine-page document explaining the inspiration, roles, and praxis of their satirical protest, Trolls Against Trolls. Josh Manning, a member of the Progressive Vets who lives in Helena and works as a civil rights investigator, had driven four hours from Helena. “I’m a secular Jew,” he said. “Part of me didn’t want to come, though, because I’m not from Whitefish. But Montana is one big small town.”
 
-
 Tim Goessman for BuzzFeed News
 Matzo Ball Soup Brigade volunteers Nancy Kaumeyer, Erica Angelos, and Renee Frances Conn serve soup during a Martin Luther King Day gathering Monday, Jan. 16, 2017, in downtown Whitefish, Montana.
 
@@ -275,7 +273,6 @@ The time allocated for the Nazi march came and went; the protesters shivered and
 
 ADVERTISEMENT
 A few hours later, locals packed the auditorium of the local arts center for the Martin Luther King Day celebration. The Crown of the Continent Choir, composed mostly of what one local lovingly called “the silver-hairs,” sang “One Voice.” When Rabbi Francine Roston rose and, through tears, praised the city at large for wrapping its arms around those who’d been targeted by the trolls, it felt like the several hundred in attendance were engaged in a collective, deeply therapeutic group hug.
-
 
 Tim Goessman for BuzzFeed News
 Love Lives Here volunteer Ashley Melnick helps print shirts Monday, Jan. 16, 2017, at Whitefish Middle School.

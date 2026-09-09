@@ -1,4 +1,5 @@
 ---
+title: "RT @CraigCaplan 65-30 Senate votes to move forward on the..."
 date: 2022-02-17
 time: 18:59:13
 tweet_id: "1494385968459108362"

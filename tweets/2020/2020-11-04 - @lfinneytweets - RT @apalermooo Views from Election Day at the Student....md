@@ -1,4 +1,5 @@
 ---
+title: "RT @apalermooo Views from Election Day at the Student..."
 date: 2020-11-04
 time: 02:03:00
 tweet_id: "1323807931754663938"

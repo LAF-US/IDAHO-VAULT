@@ -43,9 +43,9 @@ The Governor has hired his own lawyer in the lawsuit challenging the Idaho Legis
 
 The move withdraws representation from Attorney General Raúl Labrador who last week filed a response brief on behalf of the Board of Examiners without the board’s approval, BoiseDev reported.
 
-The Governor’s attorney and Attorney General are both tasked with defending the state but are coming at the case from different perspectives. 
+The Governor’s attorney and Attorney General are both tasked with defending the state but are coming at the case from different perspectives.
 
-Gov. Brad Little used an Idaho law that allows him to decide that the attorney general’s office — which is the default lawyer to represent the state — would not “effectively advocate or pursue the policies of the governor” to hire outside counsel for the Department of Administration and Idaho Transportation Department in the case. 
+Gov. Brad Little used an Idaho law that allows him to decide that the attorney general’s office — which is the default lawyer to represent the state — would not “effectively advocate or pursue the policies of the governor” to hire outside counsel for the Department of Administration and Idaho Transportation Department in the case.
 
 The highest bidders in a planned surplus sale of the State Street campus brought the lawsuit, arguing that the budget bills for the agencies that included intent language revoking the sale violated the state constitutional requirement that legislation address only a single subject.
 
@@ -69,7 +69,7 @@ Labrador’s office has said his filing was necessary because there was a two-we
 
 Former Attorney General David Leroy, who had supported Labrador’s campaign for attorney general, said that it is Labrador’s duty as the attorney to keep his client apprised of what’s going on.
 
-However, he said when the client is a board or commission, that doesn’t necessarily require a meeting to approve action. Leroy said that communication can be through one contact with the board. The attorney general’s “verified answer” court filing was signed by Brian Benjamin, who serves as deputy chief of staff for the state controller. The attorney general's office said he had communicated with the governor's office and staff for the board. 
+However, he said when the client is a board or commission, that doesn’t necessarily require a meeting to approve action. Leroy said that communication can be through one contact with the board. The attorney general’s “verified answer” court filing was signed by Brian Benjamin, who serves as deputy chief of staff for the state controller. The attorney general's office said he had communicated with the governor's office and staff for the board.
 
 Leroy said that given the short timeline for submitting a response, he said it made sense that the office did so without a meeting from the board. He also said the board, as the client, has the ability to ask that the response be revised or withdrawn if the members do not feel it appropriately represented their position.
 

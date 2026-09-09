@@ -1,4 +1,5 @@
 ---
+title: "Happy Idaho GOP Convention to all those who celebrate. If..."
 date: 2024-06-13
 time: 03:41:03
 tweet_id: "1801097425668698228"
@@ -16,9 +17,10 @@ related:
   - idpol
 ---
 
-Happy Idaho GOP Convention to all those who celebrate. If you see me, come say hi and share news! #idpol https://t.co/9mMo5Ahp2A
+Happy Idaho GOP Convention to all those who celebrate. If you see me, come say hi and share news! #idpol <https://t.co/9mMo5Ahp2A>
 
 ## Media
-- ![](https://pbs.twimg.com/media/GP7Ij3vaUAAI-Nc.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/GP7Ij3vaUAAI-Nc.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1801097425668698228)

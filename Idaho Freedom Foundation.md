@@ -5,4 +5,4 @@ related:
 - Wayne Hoffman
 authority: LOGAN
 ---
-Wayne Hoffman Dustin Hurst Brent Regan 
+Wayne Hoffman Dustin Hurst Brent Regan

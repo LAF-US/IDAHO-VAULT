@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio The Nez Perce Tribe says nearly 300..."
 date: 2020-07-02
 time: 03:17:33
 tweet_id: "1278528207990358017"

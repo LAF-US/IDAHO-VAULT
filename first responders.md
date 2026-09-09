@@ -6,4 +6,4 @@ related:
 - police
 ---
 
-police, firefighters and emergency medical services 
+police, firefighters and emergency medical services

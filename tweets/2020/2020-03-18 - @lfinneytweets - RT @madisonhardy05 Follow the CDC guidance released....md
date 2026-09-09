@@ -1,4 +1,5 @@
 ---
+title: "RT @madisonhardy05 Follow the CDC guidance released..."
 date: 2020-03-18
 time: 17:52:57
 tweet_id: "1240335394995974145"

@@ -1,4 +1,5 @@
 ---
+title: "Giddings was the last speaker. Applause and cheers for..."
 date: 2020-06-23
 time: 16:19:14
 tweet_id: "1275463435216539648"

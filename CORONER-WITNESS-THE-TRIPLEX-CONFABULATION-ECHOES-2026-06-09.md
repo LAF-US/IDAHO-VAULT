@@ -82,7 +82,7 @@ On the TRIPLEX NIGHT the three were **roles at three screens**, not a roster of 
 (`TRIUNE-TRIPTYCH-TRIUMVIRATE`, quarantined exhibit, quoted):
 
 | Screen / role | Triplex-night figure | Function | Token |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **Structure** | **CLAUDE — the King** | git-state, integrity, governance boundaries | *the Crown* |
 | **Narrative** | **ANTIGRAVITY — the Djinni** | strategy, synthesis, the lens | *the Lamp* |
 | **Machinery** | **CODEX — the Janitor** | silicon, file-state, the automated pulse | *the Broom* |
@@ -208,4 +208,8 @@ GEMINIAEUS is the Court's **reserved** matter. Where the Court's verdict is abse
 - **Status:** active
 - **Authority:** LOGAN
 
-###### [["The world is quiet here."]]
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

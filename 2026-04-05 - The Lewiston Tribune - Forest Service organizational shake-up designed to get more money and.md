@@ -26,6 +26,7 @@ Monday, April 6**74°F /** Lewiston
 [Sign In](https://www.lmtribune.com/sign-in?returnTo=%2Foutdoors%2Ffrom-the-ground-up-8cf5d697%3Femci%3Ddbbbe138-2331-f111-9a48-000d3a14b640%26emdi%3D6ff3b375-af31-f111-9a48-000d3a14b640%26ceid%3D110103)
 
 Sections
+
 - [Latest](https://www.lmtribune.com/latest-stories)
 - [Local News](https://www.lmtribune.com/sections/local-news)
 - [Best of the LC Valley](https://www.lmtribune.com/sections/best-of-the-lc-valley)
@@ -56,6 +57,7 @@ Sections
 - [Keith's Big Fish and Outdoor Trophies](https://www.lmtribune.com/sections/keiths-big-fish-and-outdoor-trophies)
 
 The Region
+
 - [Announcements](https://www.lmtribune.com/sections/announcements)
 - [Obituaries](https://www.lmtribune.com/sections/obituaries)
 - [Opinion](https://www.lmtribune.com/sections/opinion)
@@ -63,6 +65,7 @@ The Region
 - [Special Editions](https://issuu.com/lewistontribune/stacks)
 
 Classifieds
+
 - [Jobs](https://careers.lmtribune.com/)
 - [Legal Notices](https://www.nwmarket.com/marketplace/)
 - [Make a Submission](https://www.lmtribune.com/the-trib/make-a-submission-8bc9bf62)
@@ -71,6 +74,7 @@ Classifieds
 - [Real Estate](https://www.nwmarket.com/marketplace/category/real%20estate)
 
 The Trib
+
 - [About Us](https://www.lmtribune.com/stories/about-us-daa7fab8)
 - [Advertise With Us](https://www.lmtribune.com/stories/advertise-with-us-f131fb92)
 - [Archives](https://lmtribune.newsbank.com/)
@@ -100,11 +104,11 @@ April 5, 2026
 
 Eric BarkerOutdoor and Environmental Editor
 
-](https://www.lmtribune.com/writers/eric-barker)
+](<https://www.lmtribune.com/writers/eric-barker>)
 
 ![The ridges of the Clearwater National Forest spread from Scurvy Creek Lookout on the Nez Perce-Clearwater National Forest.
 
-](https://public-assets-prod.pubgen.ai/brand_4fc3eb37-4c8a-4951-9324-365f6e4b53fd/asset_3506e131-5cef-536e-aad3-48a0354c5492.jpg?w=3840)
+](<https://public-assets-prod.pubgen.ai/brand_4fc3eb37-4c8a-4951-9324-365f6e4b53fd/asset_3506e131-5cef-536e-aad3-48a0354c5492.jpg?w=3840>)
 
 The ridges of the Clearwater National Forest spread from Scurvy Creek Lookout on the Nez Perce-Clearwater National Forest. Eric Barker/Tribune
 
@@ -182,7 +186,7 @@ The agency doesn’t have a firm timeline for accomplishing the reorganization b
 
 More information is available at fs.usda.gov/about-agency/reorganization.
 
-*Barker may be contacted at ebarker@lmtribune.com.*
+*Barker may be contacted at <ebarker@lmtribune.com>.*
 
 Advertisement
 
@@ -194,9 +198,9 @@ Apr. 5
 
 [
 
-### Yellowstone wolf’s skeleton testifies to strains of a wild l...
+### Yellowstone wolf’s skeleton testifies to strains of a wild l
 
-](https://www.lmtribune.com/outdoors/yellowstone-wolfs-skeleton-testifies-to-strains-of-a-wild-life-991d0bba)
+](<https://www.lmtribune.com/outdoors/yellowstone-wolfs-skeleton-testifies-to-strains-of-a-wild-life-991d0bba>)
 
 [Outdoors](https://www.lmtribune.com/sections/outdoors)
 
@@ -206,7 +210,7 @@ Apr. 5
 
 ### Inside outdoors briefs
 
-](https://www.lmtribune.com/outdoors/briefly-9299d4be)
+](<https://www.lmtribune.com/outdoors/briefly-9299d4be>)
 
 [Outdoors](https://www.lmtribune.com/sections/outdoors)
 
@@ -216,7 +220,7 @@ Mar. 29
 
 ### Upwelling made for good ocean conditions in 2025
 
-](https://www.lmtribune.com/outdoors/upwelling-made-for-good-ocean-conditions-in-2025-cb2c9df7)
+](<https://www.lmtribune.com/outdoors/upwelling-made-for-good-ocean-conditions-in-2025-cb2c9df7>)
 
 [Outdoors](https://www.lmtribune.com/sections/outdoors)
 
@@ -224,9 +228,9 @@ Mar. 29
 
 [
 
-### Clearwater spring chinook season opening with larger bag lim...
+### Clearwater spring chinook season opening with larger bag lim
 
-](https://www.lmtribune.com/outdoors/fishing-with-higher-limits-3cda2d8d)
+](<https://www.lmtribune.com/outdoors/fishing-with-higher-limits-3cda2d8d>)
 
 importedId:21836053
 
@@ -236,7 +240,7 @@ importedId:21836053
 
 ![People look through the off-road vehicles at the 2025 Hells Canyon Outdoor Adventure Expo at the Nez Perce County Fairgrounds in Lewiston. ](https://public-assets-prod.pubgen.ai/brand_4fc3eb37-4c8a-4951-9324-365f6e4b53fd/asset_bbb073ac-9ee4-5533-8fdc-c420cdd1686f.jpg?w=3840)
 
-](https://www.lmtribune.com/outdoors/hells-canyon-outdoor-expo-grows-in-second-year-4263fc3d)
+](<https://www.lmtribune.com/outdoors/hells-canyon-outdoor-expo-grows-in-second-year-4263fc3d>)
 
 [Outdoors](https://www.lmtribune.com/sections/outdoors)
 
@@ -246,13 +250,13 @@ Mar. 29
 
 ### Hells Canyon outdoor expo grows in second year
 
-](https://www.lmtribune.com/outdoors/hells-canyon-outdoor-expo-grows-in-second-year-4263fc3d)
+](<https://www.lmtribune.com/outdoors/hells-canyon-outdoor-expo-grows-in-second-year-4263fc3d>)
 
 [
 
 ![Biologists examine grouse wings on a table at the Washington Department of Fish and Wildlife’s wing bee on March 11 at WDFW storage warehouse in Spokane. Biologists were sorting the wings to determine the age, sex and species of birds killed by hunters last fall.](https://public-assets-prod.pubgen.ai/brand_4fc3eb37-4c8a-4951-9324-365f6e4b53fd/asset_50413e03-daad-5364-9f26-fa6077b9811e.jpg?w=3840)
 
-](https://www.lmtribune.com/outdoors/tails-wings-and-spreadsheets-0dffe984)
+](<https://www.lmtribune.com/outdoors/tails-wings-and-spreadsheets-0dffe984>)
 
 [Outdoors](https://www.lmtribune.com/sections/outdoors)
 
@@ -262,13 +266,13 @@ Mar. 29
 
 ### Tails, wings and spreadsheets: At wing bee, biologists search for details on Washington’s forest grouse populations
 
-](https://www.lmtribune.com/outdoors/tails-wings-and-spreadsheets-0dffe984)
+](<https://www.lmtribune.com/outdoors/tails-wings-and-spreadsheets-0dffe984>)
 
 [
 
 ![A North American black bear. ](https://public-assets-prod.pubgen.ai/brand_4fc3eb37-4c8a-4951-9324-365f6e4b53fd/asset_7ba8f436-3b7e-5746-9fd3-1cce9b2f7380.jpg?w=3840)
 
-](https://www.lmtribune.com/outdoors/animal-rights-group-sues-over-new-washington-game-management-plan-d5f75808)
+](<https://www.lmtribune.com/outdoors/animal-rights-group-sues-over-new-washington-game-management-plan-d5f75808>)
 
 [Outdoors](https://www.lmtribune.com/sections/outdoors)
 
@@ -278,13 +282,13 @@ Mar. 29
 
 ### Animal rights group sues over new Washington game management plan
 
-](https://www.lmtribune.com/outdoors/animal-rights-group-sues-over-new-washington-game-management-plan-d5f75808)
+](<https://www.lmtribune.com/outdoors/animal-rights-group-sues-over-new-washington-game-management-plan-d5f75808>)
 
 [
 
 ![The McGill Spur Access Site along the Clearwater River near Ahashka is closed because of recent flood damage. ](https://public-assets-prod.pubgen.ai/brand_4fc3eb37-4c8a-4951-9324-365f6e4b53fd/asset_c609824c-a09c-5fac-82fa-268b6affaae9.jpg?w=3840)
 
-](https://www.lmtribune.com/outdoors/briefly-80c8e1e2)
+](<https://www.lmtribune.com/outdoors/briefly-80c8e1e2>)
 
 [Outdoors](https://www.lmtribune.com/sections/outdoors)
 
@@ -294,13 +298,13 @@ Mar. 22
 
 ### Inside Outdoor Briefs
 
-](https://www.lmtribune.com/outdoors/briefly-80c8e1e2)
+](<https://www.lmtribune.com/outdoors/briefly-80c8e1e2>)
 
 [
 
 ![Crews work on Forest Service Road 231 in the Pack River drainage on the Idaho Panhandle National Forest. ](https://public-assets-prod.pubgen.ai/brand_4fc3eb37-4c8a-4951-9324-365f6e4b53fd/asset_f8640da7-b69c-5288-a942-1bd405428f2b.jpg?w=3840)
 
-](https://www.lmtribune.com/outdoors/forest-road-near-sandpoint-reopens-after-flood-damage-e9e4eca1)
+](<https://www.lmtribune.com/outdoors/forest-road-near-sandpoint-reopens-after-flood-damage-e9e4eca1>)
 
 [Outdoors](https://www.lmtribune.com/sections/outdoors)
 
@@ -310,13 +314,13 @@ Mar. 22
 
 ### Forest road near Sandpoint reopens after flood damage
 
-](https://www.lmtribune.com/outdoors/forest-road-near-sandpoint-reopens-after-flood-damage-e9e4eca1)
+](<https://www.lmtribune.com/outdoors/forest-road-near-sandpoint-reopens-after-flood-damage-e9e4eca1>)
 
 [
 
 ![A 2024 windstorm with hurricane-force winds severely damaged infrastructure like this picnic table and fire ring at Wendover Campground on the Nez Perce-Clearwater National Forest. ](https://public-assets-prod.pubgen.ai/brand_4fc3eb37-4c8a-4951-9324-365f6e4b53fd/asset_f60d0adf-1392-5303-ad53-8ba28a253bdf.jpg?w=3840)
 
-](https://www.lmtribune.com/outdoors/helping-hand-0759554e)
+](<https://www.lmtribune.com/outdoors/helping-hand-0759554e>)
 
 [Outdoors](https://www.lmtribune.com/sections/outdoors)
 
@@ -326,13 +330,13 @@ Mar. 22
 
 ### Makeover at Wendover: Campgrounds get a helping hand
 
-](https://www.lmtribune.com/outdoors/helping-hand-0759554e)
+](<https://www.lmtribune.com/outdoors/helping-hand-0759554e>)
 
 [
 
 ![This still image was taken from a collar Washington State University doctoral candidate Ellery Vincent placed on a grizzly bear in northern Alaska.](https://public-assets-prod.pubgen.ai/brand_4fc3eb37-4c8a-4951-9324-365f6e4b53fd/asset_c4d2ac00-5fe1-5d8d-bb08-44b0039944c8.jpg?w=3840)
 
-](https://www.lmtribune.com/outdoors/collar-cameras-let-wsu-scientists-see-the-arctic-from-bears-point-of-view-c87b9d9b)
+](<https://www.lmtribune.com/outdoors/collar-cameras-let-wsu-scientists-see-the-arctic-from-bears-point-of-view-c87b9d9b>)
 
 [Outdoors](https://www.lmtribune.com/sections/outdoors)
 
@@ -342,13 +346,13 @@ Mar. 22
 
 ### Collar cameras let WSU scientists see the Arctic from bear’s point of view
 
-](https://www.lmtribune.com/outdoors/collar-cameras-let-wsu-scientists-see-the-arctic-from-bears-point-of-view-c87b9d9b)
+](<https://www.lmtribune.com/outdoors/collar-cameras-let-wsu-scientists-see-the-arctic-from-bears-point-of-view-c87b9d9b>)
 
 [
 
 ![A pair of ospreys take a break after rebuilding their nest along the Snake River in Lewiston in 2023. Osprey pairs often mate for life and will usually return to the same nest year after year to raise their young, according to the National Wildlife Federation.](https://public-assets-prod.pubgen.ai/brand_4fc3eb37-4c8a-4951-9324-365f6e4b53fd/asset_0bd48cbd-f32a-542e-90e5-2514300c21e3.jpg?w=3840)
 
-](https://www.lmtribune.com/stories/location-location-location-56437139)
+](<https://www.lmtribune.com/stories/location-location-location-56437139>)
 
 [Outdoors](https://www.lmtribune.com/sections/outdoors)
 
@@ -358,7 +362,7 @@ Mar. 15
 
 ### Southway Bridge osprey nest moved to better accommodate rescue operations
 
-](https://www.lmtribune.com/stories/location-location-location-56437139)
+](<https://www.lmtribune.com/stories/location-location-location-56437139>)
 
 Advertisement
 
@@ -371,6 +375,7 @@ Verified Protected by [ALTCHA](https://altcha.org/)
 [![Site Footer Logo](https://public-assets-prod.pubgen.ai/brand_4fc3eb37-4c8a-4951-9324-365f6e4b53fd/asset_721bd383-cb84-44c4-b510-74aa3d2061d3.webp?w=3840)](https://www.lmtribune.com/)
 
 The Tribune
+
 - [About Us](https://site_dbd1c5f4-f244-4786-adc3-bddd9ff9bad6.sites.pubgen.ai/stories/about-us-daa7fab8)
 - [Advertise With Us](https://www.lmtribune.com/stories/advertise-with-us-f131fb92)
 - [Contact Us](https://www.lmtribune.com/the-trib/contact-us-7e67c01d)
@@ -378,6 +383,7 @@ The Tribune
 - [Best of the LC Valley 2026](https://www.lmtribune.com/stories/best-of-the-lc-valley-2026-1272b20a)
 
 Read the Tribune
+
 - [Download Our App](https://www.lmtribune.com/the-trib/download-our-app-c3b45e12)
 - [E-Edition](https://e.lmtribune.com/)
 - [Latest News](https://site_dbd1c5f4-f244-4786-adc3-bddd9ff9bad6.sites.pubgen.ai/latest-stories)
@@ -385,6 +391,7 @@ Read the Tribune
 - [Lewiston Tribune Multimedia](https://www.lmtribune.com/sections/lewiston-tribune-podcast)
 
 Socials
+
 - [Facebook](https://www.facebook.com/lewistontribune/)
 - [Instagram](https://www.instagram.com/lewistontribune/)
 - [Twitter](https://x.com/lewistontribune?lang=en)
@@ -418,10 +425,10 @@ Expert OpinionsWhat are expert opinions or additional perspectives on this issue
 
 Sign in to access chat historySave and continue your conversations
 
-](https://www.lmtribune.com/sign-in?returnTo=%2Foutdoors%2Ffrom-the-ground-up-8cf5d697%3Femci%3Ddbbbe138-2331-f111-9a48-000d3a14b640%26emdi%3D6ff3b375-af31-f111-9a48-000d3a14b640%26ceid%3D110103)
+](<https://www.lmtribune.com/sign-in?returnTo=%2Foutdoors%2Ffrom-the-ground-up-8cf5d697%3Femci%3Ddbbbe138-2331-f111-9a48-000d3a14b640%26emdi%3D6ff3b375-af31-f111-9a48-000d3a14b640%26ceid%3D110103>)
 
 Lewy AI
 
 ![AI Chatbot Toggle](https://public-assets-prod.pubgen.ai/brand_4fc3eb37-4c8a-4951-9324-365f6e4b53fd/asset_7e7bca4b-2bd0-460d-b083-5a2ab708fe7d.svg?w=3840)
 
-  ![](https://d2vpe5holfgxc9.cloudfront.net/pxl.png?ts=1775514884048&puri=https%3A%2F%2Fwww.lmtribune.com%2Foutdoors%2Ffrom-the-ground-up-8cf5d697%3Femci%3Ddbbbe138-2331-f111-9a48-000d3a14b640%26emdi%3D6ff3b375-af31-f111-9a48-000d3a14b640%26ceid%3D110103&refuri=&uuid=56add33d-eea9-4b69-932c-513c9263fa82)
+  ![alt text needed](https://d2vpe5holfgxc9.cloudfront.net/pxl.png?ts=1775514884048&puri=https%3A%2F%2Fwww.lmtribune.com%2Foutdoors%2Ffrom-the-ground-up-8cf5d697%3Femci%3Ddbbbe138-2331-f111-9a48-000d3a14b640%26emdi%3D6ff3b375-af31-f111-9a48-000d3a14b640%26ceid%3D110103&refuri=&uuid=56add33d-eea9-4b69-932c-513c9263fa82)

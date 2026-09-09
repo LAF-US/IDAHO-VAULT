@@ -1,4 +1,5 @@
 ---
+title: "RT @voxdotcom This election, US voters in five states will..."
 date: 2020-10-16
 time: 21:00:01
 tweet_id: "1317208699669131264"

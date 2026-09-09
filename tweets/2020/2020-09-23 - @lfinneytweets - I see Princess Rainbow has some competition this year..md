@@ -1,4 +1,5 @@
 ---
+title: "I see Princess Rainbow has some competition this year."
 date: 2020-09-23
 time: 16:21:38
 tweet_id: "1308803721430626308"

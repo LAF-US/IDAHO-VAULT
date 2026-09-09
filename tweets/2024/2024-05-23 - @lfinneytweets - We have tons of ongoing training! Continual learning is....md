@@ -1,4 +1,5 @@
 ---
+title: "We have tons of ongoing training! Continual learning is..."
 date: 2024-05-23
 time: 04:14:52
 tweet_id: "1793495790104830290"

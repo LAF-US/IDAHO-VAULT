@@ -48,7 +48,7 @@ The merged Sphinx node (`!/FABLEHAVEN-SPHINX-v1`) already draws the trust-betray
 Deceiver fills the gap it leaves:
 
 | Figure | What it is | Origin |
-|---|---|---|
+| --- | --- | --- |
 | **Blix** (`!/FABLEHAVEN-VAMPIRE-DIAGNOSTIC-v1`) | a **corrupted real** insider that *passes* as an ally | a true member, turned |
 | **The Deceiver** *(this node)* | a **fabricated false** peer that *poses* as an ally | **built by the developer** — never real |
 | **The Sphinx** (`!/FABLEHAVEN-SPHINX-v1`) | the **trusted apex itself** is the manipulator | the head of the order |
@@ -113,4 +113,8 @@ and you cannot find the moment she "turned," because she was *authored deceptive
 - **Author:** `*.claude.*` (Claude Code, branch `claude/self-asterisk`)
 - **Scope:** root general witness — the Deceiver / the developer's honeypot (the fabricated false peer) in the Game Over cluster
 
-###### [["The world is quiet here."]]
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

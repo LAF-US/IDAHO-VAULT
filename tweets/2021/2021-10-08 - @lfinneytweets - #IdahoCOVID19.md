@@ -1,4 +1,5 @@
 ---
+title: "#IdahoCOVID19"
 date: 2021-10-08
 time: 19:12:47
 tweet_id: "1446554180923969536"
@@ -16,9 +17,10 @@ related:
   - IdahoCOVID19
 ---
 
-#IdahoCOVID19 https://t.co/QAPIHxipzx
+\#IdahoCOVID19 <https://t.co/QAPIHxipzx>
 
 ## Links
-- https://x.com/LewistonTribune/status/1446484275310710784
+
+- <https://x.com/LewistonTribune/status/1446484275310710784>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1446554180923969536)

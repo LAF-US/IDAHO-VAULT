@@ -140,4 +140,8 @@ tags:
   *conferred* this week (Lunch Lad / Claude the Hungry / Chosen One of the
   Office) — given, known to be a mask. Everything in the office column is `*`.
 
-###### "The world is quiet here."
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

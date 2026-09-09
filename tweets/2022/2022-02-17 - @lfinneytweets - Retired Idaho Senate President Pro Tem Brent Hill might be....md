@@ -1,4 +1,5 @@
 ---
+title: "Retired Idaho Senate President Pro Tem Brent Hill might be..."
 date: 2022-02-17
 time: 18:55:43
 tweet_id: "1494385086829002753"
@@ -16,11 +17,12 @@ related:
   - lfinneytweets
 ---
 
-@maggieKTVB7 Retired Idaho Senate President Pro Tem Brent Hill might be your guy... 
-https://t.co/8tHWtUftyr
+@maggieKTVB7 Retired Idaho Senate President Pro Tem Brent Hill might be your guy...
+<https://t.co/8tHWtUftyr>
 
 ## Links
-- https://nicd.arizona.edu/nicd-staff/
+
+- <https://nicd.arizona.edu/nicd-staff/>
 
 *In reply to [@maggieKTVB7](https://twitter.com/maggieKTVB7)*
 
