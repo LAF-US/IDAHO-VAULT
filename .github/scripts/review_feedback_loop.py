@@ -1465,10 +1465,22 @@ def _build_reconciliation_report(
                     except RuntimeError as rollback_exc:
                         rollback = f"AND the rollback disable was refused: {rollback_exc}"
                     try:
-                        auto_merge_enabled, _ = _auto_merge_state(
+                        auto_merge_enabled, still_queued = _auto_merge_state(
                             owner, repo, pr_number, strict=True
                         )
                         state_note = "STILL ENABLED" if auto_merge_enabled else "disabled"
+                        if still_queued:
+                            # _arm_auto_merge enqueues as well as arming, so by the time
+                            # the label write failed the PR may already hold a merge-queue
+                            # entry — and disabling auto-merge does not remove one.
+                            # VAULT-CONVENTIONS.md § supersession: "do not count on the
+                            # auto-merge toggle or the push to do that for you." Without a
+                            # dequeue this rollback cannot fully undo the promotion, so say
+                            # so rather than let "disabled" imply the PR is stood down.
+                            state_note += (
+                                "; PR IS STILL IN THE MERGE QUEUE and can merge without "
+                                "`merge/auto` — disabling auto-merge does not dequeue"
+                            )
                     except (RuntimeError, ValueError) as read_exc:
                         # Unknown is not disabled. Reporting "disabled" off an unreadable
                         # read would be the false state claim this path exists to prevent,
