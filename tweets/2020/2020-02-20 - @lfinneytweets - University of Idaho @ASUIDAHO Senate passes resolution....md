@@ -26,6 +26,7 @@ related:
 University of Idaho @ASUIDAHO Senate passes resolution expressing support for social-emotional learning teacher training & disapproval of #idleg representatives who walked out of last week’s House Education hearing. #idpol #idedu <https://t.co/iy3BIOhWkx>
 
 ## Links
+
 - <https://x.com/uiargonaut/status/1230522500683096065>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1230531300714401792)

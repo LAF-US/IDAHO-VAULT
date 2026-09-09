@@ -20,6 +20,7 @@ related:
 @IdahoSenateGOP It looks like leaders Winder and Stennett are talking by the chamber door. We’ll see if things get moving anytime soon. <https://t.co/geVseourOB>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/Ew2wlCbVEAAsTAS.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

@@ -22,6 +22,7 @@ related:
 An hour or so ahead of the 24h deadline the court gave him yesterday. #idleg #idpol <https://t.co/yHa0LF3c73>
 
 ## Links
+
 - <https://x.com/IdahoReports/status/1690112906002587648>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1690114805011812354)

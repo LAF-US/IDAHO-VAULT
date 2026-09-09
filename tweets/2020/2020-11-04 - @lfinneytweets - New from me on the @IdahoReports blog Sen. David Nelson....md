@@ -21,11 +21,12 @@ related:
   - idpol
 ---
 
-New from me on the @IdahoReports blog: 
-Sen. David Nelson (D-Moscow) has defended his seat against former Republican senator Dan Foreman, although with a much tighter margin than in their previous contest. #idleg #idpol 
+New from me on the @IdahoReports blog:
+Sen. David Nelson (D-Moscow) has defended his seat against former Republican senator Dan Foreman, although with a much tighter margin than in their previous contest. #idleg #idpol
 <https://t.co/1UnXCYPrTj>
 
 ## Links
+
 - <https://blog.idahoreports.idahoptv.org/2020/11/04/no-shakeups-in-district-5-legislative-results/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1324082138707226624)

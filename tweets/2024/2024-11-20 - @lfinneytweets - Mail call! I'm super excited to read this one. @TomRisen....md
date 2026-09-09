@@ -22,6 +22,7 @@ related:
 Mail call! I'm super excited to read this one. @TomRisen #idpol <https://t.co/gsGgvScmtN>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/Gc3JdriagAAsAna.jpg)
 - ![alt text needed](https://pbs.twimg.com/media/Gc3JdrVaMAAQLGD.jpg)
 

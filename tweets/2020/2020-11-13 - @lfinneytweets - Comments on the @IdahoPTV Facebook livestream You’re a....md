@@ -19,7 +19,7 @@ related:
   - IdahoCOVID19
 ---
 
-Comments on the @IdahoPTV Facebook livestream: 
+Comments on the @IdahoPTV Facebook livestream:
 "You’re a liar! Stop listening to the communist!"
 "What stage 2 means is tyranny and overreach."
 "I’d rather die free than on my knees Brad."

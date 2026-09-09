@@ -22,6 +22,7 @@ related:
 House passes HB 561aaS, which allows property owners to use record of an arm’s-length transaction to determine the assessed market value of their property. #idleg #idpol <https://t.co/fe1i8C3dsG>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/ETbkEifUEAADemk.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1240430075918430208)

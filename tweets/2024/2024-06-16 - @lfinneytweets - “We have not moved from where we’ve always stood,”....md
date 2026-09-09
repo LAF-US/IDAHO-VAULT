@@ -17,10 +17,11 @@ related:
   - idpol
 ---
 
-“We have not moved from where we’ve always stood,” Chairwoman Moon said. “I have never seen such a reactive administration to the Republican Party as I have under my stead.” #idpol 
+“We have not moved from where we’ve always stood,” Chairwoman Moon said. “I have never seen such a reactive administration to the Republican Party as I have under my stead.” #idpol
 <https://t.co/qWyOtyQFHX>
 
 ## Links
+
 - <https://blog.idahoreports.idahoptv.org/2024/06/15/moon-reelected-as-idaho-gop-chair-we-are-not-the-fringe/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1802163073467482236)

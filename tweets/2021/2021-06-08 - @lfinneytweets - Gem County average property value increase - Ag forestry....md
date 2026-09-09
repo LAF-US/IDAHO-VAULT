@@ -20,6 +20,7 @@ related:
 ---
 
 Gem County average property value increase:
+
 - Ag/forestry +9%
 - Commercial/industrial +11%
 - Residential +31%
@@ -28,6 +29,7 @@ Gem County average property value increase:
 <https://t.co/X7FXE0SpQC>
 
 ## Links
+
 - <https://www.idahopress.com/emmett/news/rising-tide-of-property-values-continues/article_8ae52474-c580-56f6-a3c0-e7a8930c4ef2.html>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1402399532084699136)

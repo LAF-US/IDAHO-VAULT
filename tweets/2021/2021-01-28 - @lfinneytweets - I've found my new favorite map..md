@@ -17,6 +17,7 @@ related:
 I've found my new favorite map. <https://t.co/HF5U3iWbs3>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/Esyi0J2U0AI38hZ.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1354636606464946178)

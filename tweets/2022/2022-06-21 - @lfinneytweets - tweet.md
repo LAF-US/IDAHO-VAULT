@@ -20,6 +20,7 @@ related:
 @idahofreedom <https://t.co/usYO2AnWMi>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/FVwMrH_X0AI2Pgq.jpg)
 
 *In reply to [@idahofreedom](https://twitter.com/idahofreedom)*

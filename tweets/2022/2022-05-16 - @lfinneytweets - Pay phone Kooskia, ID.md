@@ -14,11 +14,12 @@ related:
   - lfinneytweets
 ---
 
-Pay phone 
+Pay phone
 
 Kooskia, ID <https://t.co/s8nu4e2jlP>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/FS2bUPGXwAE0KTQ.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1526046632122499072)

@@ -23,6 +23,7 @@ related:
 <https://t.co/ixvjci7VQk>
 
 ## Links
+
 - <https://idahocapitalsun.com/briefs/results-of-idaho-democratic-gubernatorial-primary-election-not-expected-tonight/>
 
 *In reply to [@RudySotoIDUSA](https://twitter.com/RudySotoIDUSA)*

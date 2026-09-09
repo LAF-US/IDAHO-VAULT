@@ -19,9 +19,11 @@ related:
 RT @Oregonian: Portland protests continue Friday after Trump denounces ‘lawless rioters' <https://t.co/od10OyGemV> <https://t.co/WPoNm4Cr4r>
 
 ## Links
+
 - <https://trib.al/FNDau62>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/Ee3pbKtWkAE0MBF.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1291978236516163585)

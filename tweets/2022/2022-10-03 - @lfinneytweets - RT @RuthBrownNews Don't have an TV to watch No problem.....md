@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @RuthBrownNews: Don't have an TV to watch?  No problem. 
+RT @RuthBrownNews: Don't have an TV to watch?  No problem.
 Watch from a laptop or smartphone. The debates will stay up online if you can't…
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1577006937664733184)

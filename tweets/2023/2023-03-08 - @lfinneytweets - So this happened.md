@@ -17,6 +17,7 @@ related:
 So this happened <https://t.co/foRDX7XUJY>
 
 ## Links
+
 - <https://x.com/IdahoReports/status/1633263128036384768>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1633263202271395845)

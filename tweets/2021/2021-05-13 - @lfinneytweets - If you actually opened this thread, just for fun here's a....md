@@ -18,10 +18,11 @@ related:
   - lfinneytweets
 ---
 
-If you actually opened this thread, just for fun here's a Johnny Cash & June Carter cover from drag queen @trixiemattel and gay country music artist @orvillepeck 🤠 
+If you actually opened this thread, just for fun here's a Johnny Cash & June Carter cover from drag queen @trixiemattel and gay country music artist @orvillepeck 🤠
 <https://t.co/XbGofYwNU4>
 
 ## Links
+
 - <https://youtu.be/k2_KkCZbdfo>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-He says that determining minimum bids in an open session typically leads to offers close to that low value. 
+He says that determining minimum bids in an open session typically leads to offers close to that low value.
 Several committee members seem to be reluctant toward the proposal, preferring open meetings for school boards.
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

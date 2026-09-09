@@ -22,6 +22,7 @@ related:
 INBOX: Rep. John Gannon (D-Boise) once again calling for the Idaho Legislature to implement a virtual meeting plan. At the end of this year's session he put forward a piece of legislation that would have given #idleg the ability to convene remotely in emergencies. #IdahoCOVID19 <https://t.co/X4XEY3FuIh>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/EcnImusUYAA0YxP.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1281776138642046976)

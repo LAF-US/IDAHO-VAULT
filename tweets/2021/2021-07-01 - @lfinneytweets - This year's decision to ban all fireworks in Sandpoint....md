@@ -19,6 +19,7 @@ related:
 This year's decision to ban all fireworks in Sandpoint comes on the heels of the county commissioners’ ban in the unincorporated areas of Bonner County, @RachelDailyBee writes. <https://t.co/FaLA9GLKSj>
 
 ## Links
+
 - <https://x.com/DailyBee/status/1410615110142337028>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1410714914541297665)

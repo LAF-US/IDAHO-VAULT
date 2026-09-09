@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-Remington: The hospital in CDA lost millions in revenue despite having no coronavirus cases. 
+Remington: The hospital in CDA lost millions in revenue despite having no coronavirus cases.
 In his opinion, it's the government actions that are causing an emergency in employment, mental health, suicides, etc.
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

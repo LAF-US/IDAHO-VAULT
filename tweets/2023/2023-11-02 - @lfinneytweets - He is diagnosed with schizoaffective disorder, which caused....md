@@ -24,6 +24,7 @@ He is diagnosed with schizoaffective disorder, which caused delusions and exagge
 <https://t.co/cb21KzeM1m>
 
 ## Links
+
 - <https://idahocapitalsun.com/2023/11/02/historic-conviction-man-sentenced-for-federal-hate-crimes-against-idaho-lgbtq-community/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

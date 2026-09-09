@@ -19,6 +19,7 @@ related:
 RT @MorningBrew: The world you grew up in no longer exists <https://t.co/9mRC9Yh5XR>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/GfRKUyKWMAAoE62.jpg)
 - ![alt text needed](https://pbs.twimg.com/media/GfRKUyRWsAAdiLF.jpg)
 - ![alt text needed](https://pbs.twimg.com/media/GfRKUyTXEAE6Znd.png)

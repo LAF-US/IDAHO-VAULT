@@ -20,6 +20,7 @@ related:
 And if that's not enough for ya, we also briefly talk about bird flu! #idpol <https://t.co/Ut9HDWb0iY>
 
 ## Links
+
 - <https://x.com/IdahoReports/status/1515096484043100162>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1515099609768497153)

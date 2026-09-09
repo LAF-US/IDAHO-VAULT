@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @KREMTaylor: UPDATE: 81,000 ballots now in Kootenai County. 
+RT @KREMTaylor: UPDATE: 81,000 ballots now in Kootenai County.
 
 “We’re breaking records,” says Kootenai County clerk Jim Brannon. He adds…
 

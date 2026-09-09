@@ -24,6 +24,7 @@ related:
 Happy anniversary to the only good #AprilFoolsDay joke: this gem of a tweet #idpol #idleg <https://t.co/kjrVVp9TQj>
 
 ## Links
+
 - <https://x.com/RepHeatherScott/status/1112816302329131014>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1245358599297060866)

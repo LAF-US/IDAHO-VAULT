@@ -20,6 +20,7 @@ related:
 \#idpol <https://t.co/sBe4iP1dnP>
 
 ## Links
+
 - <https://x.com/CongMikeSimpson/status/1704280281224527960>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1704615500775596247)

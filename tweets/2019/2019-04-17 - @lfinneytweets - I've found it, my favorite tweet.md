@@ -17,6 +17,7 @@ related:
 I've found it, my favorite tweet: <https://t.co/Bf2fMqxToC>
 
 ## Links
+
 - <https://t.co/Bf2fMqxToC>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1118389001537372161)

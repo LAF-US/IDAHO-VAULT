@@ -22,13 +22,13 @@ Since it’s Friday, you’re likely in the final stretch for this week’s broa
 
 The Move: Do a final review of the JFAC open meetings story. If the edit is wrapped, ensure the metadata and digital assets are ready for the weekend rollout.
 
-2. The Digital Architect
+1. The Digital Architect
 
 You've been active with thegemstone.org and the Quartz framework today.
 
 The Move: Sync your latest local Obsidian notes to the IDAHO-VAULT on GitHub. It’s a good "end of week" ritual to ensure your canonical knowledge is backed up before the weekend.
 
-3. The Boise Local
+1. The Boise Local
 
 It’s a beautiful Friday afternoon in Boise.
 
@@ -177,4 +177,3 @@ Initialization Complete. What is the first entry in the Chicago Ledger?
 Gemini is AI and can make mistakes.
 
 1Password menu is available. Press down arrow to select.
-

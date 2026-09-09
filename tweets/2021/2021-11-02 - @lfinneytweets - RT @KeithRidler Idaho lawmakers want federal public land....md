@@ -25,6 +25,7 @@ related:
 RT @KeithRidler: Idaho lawmakers want federal public land appraised for taxes (from @AP) #idpol #idleg  <https://t.co/aNdO73RY9A>
 
 ## Links
+
 - <https://apnews.com/article/d9fc9fba592de45a929b5c3d6e9e07a5>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1455625290630135808)

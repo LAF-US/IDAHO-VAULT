@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoPTV: We're hiring! Idaho Public Television is seeking an experienced, full-time Human Resource Specialist. 
+RT @IdahoPTV: We're hiring! Idaho Public Television is seeking an experienced, full-time Human Resource Specialist.
 <https://t.co/xwyNTYQPc…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1385292490987634689)

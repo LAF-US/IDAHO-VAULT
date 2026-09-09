@@ -21,6 +21,7 @@ RT @uiargonaut: Bennett tested negative for meth one day after initial Vandal Al
 <https://t.co/2NZFCbDCxG>
 
 ## Links
+
 - <https://www.uiargonaut.com/2019/04/19/bennett-tested-negative-for-meth-one-day-after-initial-vandal-alert/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1119644560471154688)

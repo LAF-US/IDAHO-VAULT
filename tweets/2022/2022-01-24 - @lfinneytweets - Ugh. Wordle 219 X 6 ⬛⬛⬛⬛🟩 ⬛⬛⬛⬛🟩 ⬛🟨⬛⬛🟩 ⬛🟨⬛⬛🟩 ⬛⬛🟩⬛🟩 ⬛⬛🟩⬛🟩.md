@@ -14,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-Ugh. 
+Ugh.
 
 Wordle 219 X/6
 

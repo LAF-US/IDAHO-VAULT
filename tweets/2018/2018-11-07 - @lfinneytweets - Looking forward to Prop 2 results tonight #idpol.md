@@ -20,6 +20,7 @@ related:
 Looking forward to Prop 2 results tonight #idpol <https://t.co/lyesewApr2>
 
 ## Links
+
 - <https://x.com/VICENews/status/1059944011669127169>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1060006900467519489)

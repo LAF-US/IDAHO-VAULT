@@ -15,10 +15,11 @@ related:
   - lfinneytweets
 ---
 
-Amendment 2 is adopted. That'll show up on the HB193 bill page eventually. 
+Amendment 2 is adopted. That'll show up on the HB193 bill page eventually.
 <https://t.co/r9RXuHiLoL>
 
 ## Links
+
 - <https://legislature.idaho.gov/sessioninfo/2023/legislation/H0193/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

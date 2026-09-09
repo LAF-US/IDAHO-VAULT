@@ -21,4 +21,3 @@ The Desert Festival, held on Spring 15th-17th, is the only place to get Calico E
 Gemini is AI and can make mistakes.
 
 1Password menu is available. Press down arrow to select.
-

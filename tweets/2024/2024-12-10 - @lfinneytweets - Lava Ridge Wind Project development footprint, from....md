@@ -22,6 +22,7 @@ related:
 Lava Ridge Wind Project development footprint, from Environmental Impact Statement proposal to Decision of Record approval. Orange = Turbine Corridors, Yellow - Transmission Corridors. #idpol #idleg <https://t.co/jzuDhqNQH9>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/GedivkVaEAAlfQh.jpg)
 - ![alt text needed](https://pbs.twimg.com/media/GediwKjaEAQBW3b.jpg)
 

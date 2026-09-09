@@ -24,6 +24,7 @@ related:
 Meridian Mayor @robertsimison #idleg #idpol <https://t.co/rwtAdGJAX1>
 
 ## Links
+
 - <https://x.com/k_talerico/status/1275190950600470529>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1275193778488266753)

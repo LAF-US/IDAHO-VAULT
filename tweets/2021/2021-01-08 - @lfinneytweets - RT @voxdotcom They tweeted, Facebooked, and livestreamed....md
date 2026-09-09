@@ -19,6 +19,7 @@ related:
 RT @voxdotcom: They tweeted, Facebooked, and livestreamed the revolution. It’s all evidence now. <https://t.co/dPo2YtLZPJ>
 
 ## Links
+
 - <https://www.vox.com/recode/22218963/capitol-photos-legal-charges-fbi-police-facebook-twitter?utm_campaign=vox&utm_content=chorus&utm_medium=social&utm_source=twitter>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1347341359716339712)

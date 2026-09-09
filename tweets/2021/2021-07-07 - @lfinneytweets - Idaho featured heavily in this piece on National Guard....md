@@ -22,6 +22,7 @@ related:
 Idaho featured heavily in this piece on National Guard deployments. #idpol #idleg <https://t.co/tApQstV1Ep>
 
 ## Links
+
 - <https://x.com/NewsHour/status/1412221762318876679>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1412851701250330626)

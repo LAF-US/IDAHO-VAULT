@@ -17,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoReports: This Thursday, we will air a special on the state of race relations in Idaho. You can watch that at 8pm on @IdahoPTV. 
+RT @IdahoReports: This Thursday, we will air a special on the state of race relations in Idaho. You can watch that at 8pm on @IdahoPTV.
 On…
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1268355715099316224)

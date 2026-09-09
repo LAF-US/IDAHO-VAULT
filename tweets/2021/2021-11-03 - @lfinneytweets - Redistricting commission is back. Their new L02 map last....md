@@ -22,6 +22,7 @@ related:
 Redistricting commission is back. Their new L02 map last week split Nez Perce County (shown in purple) to put Lewiston in D7 with Idaho and Adams. After consulting with the county clerk, they have shifted the boundary (in yellow) to ease election administration. #idleg #idpol <https://t.co/zqKLlOXNOm>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/FDSybbvUcAAUvQR.jpg)
 - ![alt text needed](https://pbs.twimg.com/media/FDSyiBeVkAEiOPW.jpg)
 

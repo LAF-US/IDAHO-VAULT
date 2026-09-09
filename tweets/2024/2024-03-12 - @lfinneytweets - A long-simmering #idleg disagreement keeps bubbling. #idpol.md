@@ -19,10 +19,11 @@ related:
   - idpol
 ---
 
-A long-simmering #idleg disagreement keeps bubbling. #idpol 
+A long-simmering #idleg disagreement keeps bubbling. #idpol
 <https://t.co/AUCiesJKYx>
 
 ## Links
+
 - <https://blog.idahoreports.idahoptv.org/2024/03/11/senate-pushes-to-re-adopt-jfac-rules/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1767351804860494037)

@@ -21,6 +21,7 @@ Kootenai County parents object to instruction with “The Truth As Told by Mason
 <https://t.co/0tCcCme6O5>
 
 ## Links
+
 - <https://bonnercountydailybee.com/news/2024/apr/07/book-being-pulled-at-lakeland-middle-school-result/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1779914795476811817)

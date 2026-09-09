@@ -21,10 +21,11 @@ related:
   - idedu
 ---
 
-Multiple Idaho school districts were placed on lockdown today due to active shooter reports, <https://t.co/1gaECjN14s> reports. "The threats do not appear to be valid," Superintendent Critchfield said. #idleg #idpol #idedu 
+Multiple Idaho school districts were placed on lockdown today due to active shooter reports, <https://t.co/1gaECjN14s> reports. "The threats do not appear to be valid," Superintendent Critchfield said. #idleg #idpol #idedu
 <https://t.co/div4qwOZCE>
 
 ## Links
+
 - <http://9B.News>
 - <https://9b.news/news/2023/02/22schools.htm>
 

@@ -51,13 +51,16 @@ def name_forms(name: str) -> dict:
 
 def print_table(rows: list[dict]) -> None:
     headers = ["BASE", "POSSESSIVE", "PLURAL", "PLURAL POSSESSIVE", "EPITHET"]
+    keys = ["base", "possessive", "plural", "plural_possessive", "epithet"]
+    # Every column is the same question -- how wide is the header, how wide is
+    # the widest cell -- so it is asked once. The previous form bound `h` in a
+    # comprehension over `headers[:1]`, then went on using `h` inside a SEPARATE
+    # list literal where nothing binds it: three NameErrors the moment this is
+    # called. The last entry already spelled the correct form (`headers[4]`),
+    # which is what the other three should have been.
     widths = [
-        max(len(h), max(len(r["base"]) for r in rows)) for h in headers[:1]
-    ] + [
-        max(len(h), max(len(r["possessive"]) for r in rows)),
-        max(len(h), max(len(r["plural"]) for r in rows)),
-        max(len(h), max(len(r["plural_possessive"]) for r in rows)),
-        max(len(headers[4]), max(len(r["epithet"]) for r in rows)),
+        max(len(header), max(len(row.get(key, "")) for row in rows))
+        for header, key in zip(headers, keys)
     ]
 
     sep = "+-" + "-+-".join("-" * w for w in widths) + "-+"
@@ -67,7 +70,7 @@ def print_table(rows: list[dict]) -> None:
     print(header_row)
     print(sep)
     for r in rows:
-        cells = [r["base"], r["possessive"], r["plural"], r["plural_possessive"], r["epithet"]]
+        cells = [r.get(key, "") for key in keys]
         print("| " + " | ".join(c.ljust(w) for c, w in zip(cells, widths)) + " |")
     print(sep)
 
@@ -77,9 +80,14 @@ def to_markdown(rows: list[dict]) -> str:
     lines = ["| " + " | ".join(headers) + " |"]
     lines.append("| " + " | ".join("---" for _ in headers) + " |")
     for r in rows:
-        lines.append(
-            "| " + " | ".join([r["base"], r["possessive"], r["plural"], r["plural_possessive"], r["epithet"]]) + " |"
-        )
+        cells = [
+            r.get("base", ""),
+            r.get("possessive", ""),
+            r.get("plural", ""),
+            r.get("plural_possessive", ""),
+            r.get("epithet", ""),
+        ]
+        lines.append("| " + " | ".join(cells) + " |")
     return "\n".join(lines)
 
 
@@ -91,7 +99,9 @@ def main() -> None:
         rows.append(forms)
 
     if "--md" in sys.argv:
-        vault = "C:/Users/loganf/Documents/IDAHO-VAULT"
+        # scripts_scripts/ sits one level below the vault root; abspath guards
+        # against a bare relative __file__ when invoked from another cwd.
+        vault = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
         out_path = os.path.join(vault, "!", "NAME-FORMS-TABLE-2026-04-17.md")
         frontmatter = (
             "---\n"

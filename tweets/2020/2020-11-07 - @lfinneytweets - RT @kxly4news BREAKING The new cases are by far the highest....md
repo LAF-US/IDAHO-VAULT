@@ -19,6 +19,7 @@ related:
 RT @kxly4news: BREAKING: The new cases are by far the highest reported in a single day in North Idaho.  <https://t.co/PJpVeaKc0O>
 
 ## Links
+
 - <https://www.kxly.com/north-idaho-sees-record-high-covid-19-cases-with-210-people-testing-positive/?utm_medium=social&utm_source=twitter_kxly4news>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1324883418295930881)

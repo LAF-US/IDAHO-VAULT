@@ -20,6 +20,7 @@ RT @CdAPressNews: <https://t.co/Xuf3Yw5Y4L>
 Only one seat on Panhandle Health District's Board of Health is officially open for reappointment…
 
 ## Links
+
 - <https://cdapress.com/news/2021/mar/30/one-seat-two-seat/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1377658668359938048)

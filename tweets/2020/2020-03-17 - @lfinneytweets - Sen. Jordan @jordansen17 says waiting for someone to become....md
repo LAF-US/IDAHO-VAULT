@@ -25,6 +25,7 @@ related:
 Sen. Jordan @jordansen17 says waiting for someone to become symptomatic isn’t the time to act. She’s out of here. #idleg #idpol #IdahoCovid19 <https://t.co/suj7QdGwlB>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/ETVuFjGUUAA-fdv.jpg)
 - ![alt text needed](https://pbs.twimg.com/media/ETVuF7-UEAE0xHE.jpg)
 

@@ -19,6 +19,7 @@ related:
 RT @News_3_Now: Idaho Sen. Jim Risch said "Everybody take a deep breath. Stay calm" over the federal funding freeze. <https://t.co/0DIVNTnexE>
 
 ## Links
+
 - <https://localnews8.com/politics/2025/01/28/idahos-senator-jim-risch-says-people-should-stay-calm-over-federal-funding-freeze/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1884407385391071638)

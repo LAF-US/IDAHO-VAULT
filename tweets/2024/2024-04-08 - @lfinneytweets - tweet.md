@@ -20,6 +20,7 @@ related:
 @clancyanderson @idfg <https://t.co/6cVXjLdhTa>
 
 ## Links
+
 - <https://blog.idahoreports.idahoptv.org/tag/chronic-wasting-disease-cwd/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

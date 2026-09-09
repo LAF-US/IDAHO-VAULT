@@ -22,6 +22,7 @@ related:
 \#IdahoCOVID19 #idedu <https://t.co/xOCWUHLx3P>
 
 ## Links
+
 - <https://x.com/twinfallstn/status/1319671207084642304>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1319687915983650817)

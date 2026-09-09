@@ -21,6 +21,7 @@ related:
 @reporterellen Nice! This was the #idleg swag handed out from the Potato Commission this year. <https://t.co/l3kjOdiytR>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/GG0mlqHaMAAnC-9.jpg)
 
 *In reply to [@mellencholia](https://twitter.com/mellencholia)*

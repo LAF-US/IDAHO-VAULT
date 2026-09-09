@@ -28,6 +28,5 @@ jobs:
       - name: Run janitor sweep
         env:
           JANITOR_SLACK_WEBHOOK_URL: ${{ secrets.SWARM_SLACK_WEBHOOK_URL }}
-          JANITOR_ALIAS: janitor-bot
         run: |
           python3 .github/scripts/janitor_sweep.py

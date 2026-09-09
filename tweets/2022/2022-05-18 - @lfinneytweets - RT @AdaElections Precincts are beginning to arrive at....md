@@ -19,6 +19,7 @@ related:
 RT @AdaElections: Precincts are beginning to arrive at election headquarters. <https://t.co/WhgQSk66Ff>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/ext_tw_video_thumb/1526757841159106561/pu/img/00YGSQmlFvG37hv8.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1526767408966381568)

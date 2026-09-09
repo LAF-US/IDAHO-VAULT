@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @mlcarmel: Eagle now has two spots open on the Library Board of Trustees, but it’s unclear why. 
+RT @mlcarmel: Eagle now has two spots open on the Library Board of Trustees, but it’s unclear why.
 
 The Eagle City Council voted unanimous…
 

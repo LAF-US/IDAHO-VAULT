@@ -41,4 +41,3 @@ If you'd like, we can discuss standard, conventional methods for managing and ex
 Gemini is AI and can make mistakes.
 
 1Password menu is available. Press down arrow to select.
-

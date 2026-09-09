@@ -31,10 +31,10 @@ related:
 
 **deep** (adj.) ← Old English *dēop* "profound, vast, extending far down"
 ← Proto-Germanic **deupaz*
-← PIE **dʰewb-* "deep, hollow"
+← PIE**dʰewb-* "deep, hollow"
 
 | Language | Cognate | Meaning |
-|---|---|---|
+| --- | --- | --- |
 | Lithuanian | *dubus* | deep, hollow |
 | OCS | *duno* | bottom, foundation |
 | Welsh | *dwfn* | deep |
@@ -113,7 +113,7 @@ that depth.
 ## Synthesis: The Deep as Archetype
 
 | Connotation | What the deep is |
-|---|---|
+| --- | --- |
 | **Primordial** | What exists before creation; the raw material of existence |
 | **Chaotic** | What must be contained for order to exist |
 | **Hidden** | What is beneath the surface, inaccessible to direct view |
@@ -136,14 +136,14 @@ In vault register, the deep is:
 
 ## Sources
 
-- Online Etymology Dictionary: https://www.etymonline.com/word/deep
-- Online Etymology Dictionary: https://www.etymonline.com/word/abyss
-- Wiktionary: https://en.wiktionary.org/wiki/abyss
-- Wikipedia — Tartarus: https://en.wikipedia.org/wiki/Tartarus
-- Strong's Greek 12 — abussos: https://biblehub.com/greek/12.htm
-- Proto-Indo-European Lexicon: https://proto-indo-european.org/english/deep
+- Online Etymology Dictionary: <https://www.etymonline.com/word/deep>
+- Online Etymology Dictionary: <https://www.etymonline.com/word/abyss>
+- Wiktionary: <https://en.wiktionary.org/wiki/abyss>
+- Wikipedia — Tartarus: <https://en.wikipedia.org/wiki/Tartarus>
+- Strong's Greek 12 — abussos: <https://biblehub.com/greek/12.htm>
+- Proto-Indo-European Lexicon: <https://proto-indo-european.org/english/deep>
 - Spinnaker Watches — Ancient Myths of the Ocean's Abyss:
-  https://spinnaker-watches.com/blogs/deep-time-chronicles/the-abyss-in-ancient-mythology-what-early-cultures-believed-lived-below
+  <https://spinnaker-watches.com/blogs/deep-time-chronicles/the-abyss-in-ancient-mythology-what-early-cultures-believed-lived-below>
 
 Witnessed,
 Gorp

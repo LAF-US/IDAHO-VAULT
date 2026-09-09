@@ -17,6 +17,7 @@ related:
 Nice try, that's obviously nine people <https://t.co/YOEub6cSe5>
 
 ## Links
+
 - <https://x.com/justinsink/status/1403344174414454791>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1403587127858716677)

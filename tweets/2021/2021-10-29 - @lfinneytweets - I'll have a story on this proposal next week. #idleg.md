@@ -20,6 +20,7 @@ related:
 I'll have a story on this proposal next week. #idleg <https://t.co/7Mh8Ckkoif>
 
 ## Links
+
 - <https://x.com/NecocheaforID/status/1454140624530149376>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1454212070820364289)

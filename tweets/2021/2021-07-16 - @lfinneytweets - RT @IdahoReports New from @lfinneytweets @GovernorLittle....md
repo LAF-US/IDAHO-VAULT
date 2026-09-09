@@ -18,7 +18,7 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoReports: New from @lfinneytweets: 
+RT @IdahoReports: New from @lfinneytweets:
 @GovernorLittle and law enforcement officers this week described growing drug availability as a…
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1416171784873803776)

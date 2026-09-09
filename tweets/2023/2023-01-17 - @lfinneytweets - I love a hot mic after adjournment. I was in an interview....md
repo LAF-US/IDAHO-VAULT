@@ -17,7 +17,7 @@ related:
   - idleg
 ---
 
-I love a hot mic after adjournment. 
+I love a hot mic after adjournment.
 
 "I was in an interview that ran long," Lt. Gov. Scott Bedke remarked, explaining his absence at the beginning of the Senate's floor session. #idleg
 

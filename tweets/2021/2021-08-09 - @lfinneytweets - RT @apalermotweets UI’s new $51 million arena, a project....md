@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @apalermotweets: UI’s new $51 million arena, a project spanning two campus presidents, will finally see completion this fall. 
+RT @apalermotweets: UI’s new $51 million arena, a project spanning two campus presidents, will finally see completion this fall.
 
 Here’s a…
 

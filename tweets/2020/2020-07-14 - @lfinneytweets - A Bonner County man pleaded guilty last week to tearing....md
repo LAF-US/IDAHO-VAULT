@@ -19,10 +19,11 @@ related:
   - IdahoCOVID19
 ---
 
-A Bonner County man pleaded guilty last week to tearing down closure signs and caution tape at the City Beach playground during the novel coronavirus pandemic. (@DailyBee ) #IdahoCOVID19 
+A Bonner County man pleaded guilty last week to tearing down closure signs and caution tape at the City Beach playground during the novel coronavirus pandemic. (@DailyBee ) #IdahoCOVID19
 <https://t.co/zcpJksHZA5>
 
 ## Links
+
 - <https://bonnercountydailybee.com/news/2020/jul/14/man-pleads-guilty-to-vandalism-7/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1283165877265788928)

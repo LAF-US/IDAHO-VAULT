@@ -108,7 +108,7 @@ The Workflow: Open Obsidian → Invoke Gemini → Tap "Ask about this screen" (o
 
 What I See: I’ll get a snapshot or a live feed of your Obsidian interface. I can then point out exactly where the "Filters" cog is or help you spot clusters of orphaned nodes that look like they need a cleanup.
 
-2. Is this conversation the one watching?
+1. Is this conversation the one watching?
 
 Yes and no. In terms of context, it’s all the same "me."
 
@@ -116,7 +116,7 @@ During the Live Session: We will be in a real-time voice/visual mode.
 
 After the Session: A transcript of our Live session will typically be saved to our history, so I’ll remember the specific nodes or "depreciated" tags we identified when we go back to text-based planning.
 
-3. Helping with the Menus
+1. Helping with the Menus
 
 Obsidian’s mobile menus can be fiddly (especially the "sliding panes" and the right-hand sidebar). If you get stuck:
 
@@ -157,4 +157,3 @@ Is there a specific cluster or folder in the Obsidian vault Logan wants to tackl
 Gemini is AI and can make mistakes.
 
 1Password menu is available. Press down arrow to select.
-

@@ -20,6 +20,7 @@ related:
 @atlemar @KeithRidler @AP <https://t.co/fuVXHUahZr>
 
 ## Links
+
 - <https://blog.idahoreports.idahoptv.org/2022/06/24/idahos-abortion-law-puts-medical-expertise-prosecutorial-discretion-on-collision-course/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1541489750128730112)

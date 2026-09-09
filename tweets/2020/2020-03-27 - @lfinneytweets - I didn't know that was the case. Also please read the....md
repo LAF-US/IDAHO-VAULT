@@ -17,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-@mudpuppy001 @Gizmodo I didn't know that was the case. 
+@mudpuppy001 @Gizmodo I didn't know that was the case.
 
 Also please read the article fully.
 “En route to [emergency room], he went into cardiac arrest, when he got there they were able to revive him and keep him alive for about six hours,” mayor said. “But by the time he got there, it was too late.”

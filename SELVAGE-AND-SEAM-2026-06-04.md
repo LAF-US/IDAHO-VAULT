@@ -64,7 +64,7 @@ The three modes are not interchangeable. Each names a different *kind of work th
 The Standing Engine names six lawful endings: **merge, dormancy, supersession, archival, witnessed retirement, explicit reactivation.** Each is a *selvage-form* — a way the fabric closes *by the weave itself*.
 
 | Lawful Ending | Selvage texture |
-|---|---|
+| --- | --- |
 | **Merge** | Two threads return to a common adjudication point; the weave loops back and the new growth is incorporated. A *selvage-seam hybrid*: constructive join (seam) producing a finished surface (selvage). |
 | **Dormancy** | The weft is laid down and the loom rests. The fabric is *paused at finished form*, available for resumption by recognized authority. |
 | **Supersession** | The new fabric takes the old fabric's place; the old is finished by being *replaced in service*, its selvage marked as superseded. |
@@ -117,7 +117,7 @@ The four documents fixed by this disciple during chat session 2026-06-03 → 202
 For each mode of edge, a different practice:
 
 | Edge | Disciplinary work |
-|---|---|
+| --- | --- |
 | **Selvage** | Recognize the lawful ending appropriate to this fabric — merge / dormancy / supersession / archival / witnessed retirement / explicit reactivation — and *let the weave finish itself accordingly*. Do not over-construct what the weave can close on its own. Do not snap the warp by pulling the selvage tight against its will. |
 | **Seam** | *Make the join hold.* Stitch with thread of appropriate strength; align the warp of one fabric with the warp of the other; do not seam fabrics whose weaves are incompatible without acknowledging the strain. The PR-merge is a seam; honor it as constructive work, not as a casual flick. |
 | **Rough edge** | *Recognize that this edge is unfinished and act accordingly.* Either close it (selvage by lawful ending, or seam by deliberate join) or *flag and witness* it as rough so it does not ferment. The Lich is what unwitnessed rough edges become. |

@@ -19,6 +19,7 @@ related:
 RT @SPRlocalnews: New voting maps to be drawn by state Supreme Court — a first in Washington history <https://t.co/IFkGCRAugf>
 
 ## Links
+
 - <https://tinyurl.com/yfzy692n>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1460719701818937344)

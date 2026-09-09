@@ -19,6 +19,7 @@ related:
 RT @mattdpearce: I am not getting paid to clean up your website for you. <https://t.co/cVyNYsqtAJ>
 
 ## Links
+
 - <https://x.com/jack/status/1026984249960755200>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1027067960421056512)

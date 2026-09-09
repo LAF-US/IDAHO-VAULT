@@ -17,6 +17,7 @@ related:
 Too many callbacks and rehashing old drama. It's giving midseason recap episode. <https://t.co/FXR764dahV>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/GRIHiAkaYAA1wtN.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1806514697036062905)

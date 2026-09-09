@@ -20,10 +20,11 @@ related:
   - idpol
 ---
 
-\#idleg #idpol 
+\#idleg #idpol
 <https://t.co/YzpYAtuIDL>
 
 ## Links
+
 - <https://x.com/HerndonforIdaho/status/1651620164025339904>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

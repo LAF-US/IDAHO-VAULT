@@ -21,4 +21,3 @@ Puppies typically begin losing their baby teeth around 12-16 weeks of age, and t
 Gemini is AI and can make mistakes.
 
 1Password menu is available. Press down arrow to select.
-

@@ -24,6 +24,7 @@ related:
 “We’ve heard some county sheriffs say they’re going to enforce it because it’s the governor’s guidance,” North Central District Health (@PHINCD) Dir. Carol Moehrle said. “We’ve also heard from other sheriffs who say they won’t because it’s just a guidance.” #IdahoCOVID19 #idpol <https://t.co/R8uEgO73sn>
 
 ## Links
+
 - <https://x.com/uiargonaut/status/1255659732846575616>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1255662478744104960)

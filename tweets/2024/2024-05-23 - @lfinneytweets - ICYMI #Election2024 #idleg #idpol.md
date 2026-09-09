@@ -21,10 +21,11 @@ related:
   - idpol
 ---
 
-ICYMI #Election2024 #idleg #idpol 
+ICYMI #Election2024 #idleg #idpol
 <https://t.co/Prp0uBc5gL>
 
 ## Links
+
 - <https://blog.idahoreports.idahoptv.org/2024/05/22/2024-idaho-legislative-primary-results/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1793490399350366656)

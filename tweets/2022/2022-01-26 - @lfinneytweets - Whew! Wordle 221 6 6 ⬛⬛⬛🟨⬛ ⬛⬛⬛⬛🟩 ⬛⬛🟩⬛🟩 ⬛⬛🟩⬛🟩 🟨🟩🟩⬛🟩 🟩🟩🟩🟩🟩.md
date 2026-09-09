@@ -14,7 +14,7 @@ related:
   - lfinneytweets
 ---
 
-Whew! 
+Whew!
 
 Wordle 221 6/6
 

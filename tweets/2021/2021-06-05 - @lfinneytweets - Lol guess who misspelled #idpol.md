@@ -20,6 +20,7 @@ related:
 Lol guess who misspelled #idpol <https://t.co/Eopzk1puS6>
 
 ## Links
+
 - <https://x.com/IdahoReports/status/1400962605645058049>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1400982227224129538)

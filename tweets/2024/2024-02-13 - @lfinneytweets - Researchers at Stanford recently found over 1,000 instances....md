@@ -22,6 +22,7 @@ Researchers at Stanford recently found over 1,000 instances of child sexual abus
 <https://t.co/CQs50qZH5n>
 
 ## Links
+
 - <https://www.theverge.com/2023/12/20/24009418/generative-ai-image-laion-csam-google-stability-stanford/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

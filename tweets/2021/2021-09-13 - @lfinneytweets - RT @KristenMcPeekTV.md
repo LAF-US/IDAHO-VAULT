@@ -19,6 +19,7 @@ related:
 RT @KristenMcPeekTV: <https://t.co/xNWn4s3kEO>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/ext_tw_video_thumb/1437540375518797826/pu/img/mebjgi_w8Ci78HIW.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1437541427479670786)

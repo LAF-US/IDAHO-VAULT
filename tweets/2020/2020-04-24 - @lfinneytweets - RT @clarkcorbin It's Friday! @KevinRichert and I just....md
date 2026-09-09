@@ -23,6 +23,7 @@ related:
 RT @clarkcorbin: It's Friday! @KevinRichert and I just posted a new pod. #idpol <https://t.co/X9aSyEi6Fj>
 
 ## Links
+
 - <https://idahoednews.org/vcv2U>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1253814046479904768)

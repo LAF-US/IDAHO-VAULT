@@ -12,7 +12,7 @@ owner: Logan Finney
 ## 5W Summary
 
 | | |
-|---|---|
+| --- | --- |
 | **Who** | No new human-caused breakage. Two duplicate/stale open PRs found and reconciled (below) — not a CI failure, but the same "unaddressed pile" pattern this sweep exists to interrupt. |
 | **What** | 25 failing runs across 6 workflows in-window: Codacy Security Scan (13, chronic — day 4, still blocked on Logan), Sync Plugin Registry (2, chronic self-heal was written but never landed), Sync Agent Discovery Index (2, same), `claude-sign.yml` startup failure (1, isolated to draft PR #450's own branch), Python Test Suite (1, same branch), Action Pin Policy (1, same branch), Review Feedback Loop (2, transient GitHub 504s while creating a label named `risk/—`). 3 further "failure"-labeled runs on PR #831 were concurrency-group cancellations mislabeled by GitHub as `failure`, not real breakage. |
 | **When** | 2026-07-09T04:35Z – 2026-07-10T04:35Z (fully paged, no gaps; see agent transcript for page-by-page verification) |

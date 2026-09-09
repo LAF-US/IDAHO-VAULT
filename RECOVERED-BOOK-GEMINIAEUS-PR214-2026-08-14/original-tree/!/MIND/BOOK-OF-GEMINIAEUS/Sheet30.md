@@ -51,4 +51,3 @@ Would you like me to dive deeper into how Camus’s Absurdism differs from Nietz
 Gemini is AI and can make mistakes.
 
 1Password menu is available. Press down arrow to select.
-

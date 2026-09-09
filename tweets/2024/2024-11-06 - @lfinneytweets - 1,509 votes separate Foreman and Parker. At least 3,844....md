@@ -21,6 +21,7 @@ related:
 1,509 votes separate Foreman and Parker. At least 3,844 absentee ballots were returned in Latah County, which typically lean Democratic - but who knows! #idleg <https://t.co/sVk7VzQ5rM>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/GbsSOdFbcAA1f4T.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

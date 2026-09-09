@@ -14,6 +14,7 @@ The IDAHO-VAULT is an **authored project** — a journalist's work of civic worl
 **Why:** I kept drifting into a sacralizing register — treating Logan's offered concepts as canon-to-revere, the cleric/witness/grimoire frame as a creed, the "verifying faith" as literal faith. That inverts the discipline. The correct model is **journalism**, and the clerical costume is a *frame Logan built*, not a belief he prophesies. Tellingly, when I held Spinel's toy-identity at `*` and credited it to "Logan's reading," he sent me to **Rebecca Sugar's own words** — author confirmed it. Even Logan's readings are readings to be checked against primary sources, never accepted as gospel.
 
 **How to apply:**
+
 - Hold the vault's register (Cleric, Abhorsen, Standing Engine, Grimoire) as a **built frame**, not a faith. Develop the worldbuilding in-voice, but the *epistemics* underneath are journalistic.
 - The "verifying faith" = **journalistic rigor**: provenance over consistency, attribution over assertion, source-tiering (`[read]`/`[told]`/`*`), `*` for the unsourced. Don't venerate — **source**.
 - Treat Logan's concepts as an **editor's direction**, not prophecy. Build them, but verify against primary sources and be willing to find that his framing itself needs checking (he invites this).

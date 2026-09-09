@@ -24,6 +24,7 @@ A Treasure Valley homebuilder is no longer going forward with the purchase of st
 <https://t.co/6WMTiSeUHW>
 
 ## Links
+
 - <https://boisedev.com/news/2021/09/28/state-owned-ag-land-going-back-up-for-auction-after-cbh-homes-backed-out-of-purchase/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1443283267134771200)

@@ -22,6 +22,7 @@ related:
 Should Idaho lawmakers put an ESA question on the 2024 election ballot? #idleg #idpol <https://t.co/DqVGoKKmbI>
 
 ## Links
+
 - <https://x.com/IdahoReports/status/1635693276488511497>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1635694026065162260)

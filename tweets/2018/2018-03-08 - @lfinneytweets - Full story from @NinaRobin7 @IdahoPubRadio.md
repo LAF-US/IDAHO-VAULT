@@ -21,6 +21,7 @@ related:
 Full story from @NinaRobin7 @IdahoPubRadio: <https://t.co/jM6225BhMz>
 
 ## Links
+
 - <https://idahopublicradio.wordpress.com/2018/03/08/idaho-senate-passes-rape-kits-funding-bill/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

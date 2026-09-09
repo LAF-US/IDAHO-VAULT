@@ -20,6 +20,7 @@ related:
 \#IdahoCOVID19 <https://t.co/0D6LsdcWMg>
 
 ## Links
+
 - <https://x.com/DailyBee/status/1244340332466040832>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1244343763851300866)

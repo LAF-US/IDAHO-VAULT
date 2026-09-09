@@ -19,6 +19,7 @@ related:
 RT @politico: Covid-19 cases are climbing — but don't be alarmed <https://t.co/Ms51A3zQiG>
 
 ## Links
+
 - <http://ow.ly/lzf5104PTpk>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1686120195604242432)

@@ -20,7 +20,7 @@ related:
   - idpol
 ---
 
-Sen. Scott Herndon rebuts/expands on Anthon's analogy: 
+Sen. Scott Herndon rebuts/expands on Anthon's analogy:
 "We didn't hold the manufacturer of the television set responsible. We didn't make our laws against the television set manufacturer, we made it against the distributor of content over the television." #idleg #idpol
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

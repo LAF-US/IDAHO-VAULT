@@ -12,7 +12,7 @@ owner: Logan Finney
 ## 5W Summary
 
 | | |
-|---|---|
+| --- | --- |
 | **Who** | GitHub Actions runners on `laf-us/idaho-vault` (66 workflows per `list_workflows`). One reoccurring, repo-wide failure found and fixed in this same PR. No other new breakage confirmed. |
 | **What** | `.github/workflows/agent-swarm-signing-proof.yml` carried an invalid `permissions.administration` key, which fails GitHub's workflow-file schema validation outright. Because the file is evaluated against every push (to determine triggers) regardless of its own `on:` block, this surfaced as a "failed" run — 0 jobs, run name literally the file's path, event `push` — attributed to whichever branch was pushed to, on **every push to every branch in the repo**. |
 | **When** | Introduced by commit `48b6d8b2` (2026-08-10T23:54:48Z), a well-intentioned but incorrect prior fix for a different problem (see Findings). Confirmed still firing through 2026-08-12T06:04:05Z, when this sweep applied the fix. |
@@ -32,7 +32,7 @@ Confirmed root cause and fixed: removed the invalid `administration: read` line 
 
 Surfaced only in a wider spot-check sample outside the 24h audit window (repo history pagination is unstable under this repo's write throughput — see Big IF below — so spot-checks landed on some older slices incidentally). Appeared exactly once, is not reoccurring in the in-window samples, and PR #906 is no longer in the open-PR list, suggesting it has already closed or merged. Not chased further; flagged only for completeness.
 
-### Zero failures found on `main` itself in-window; nothing found blocking merges to `main`.
+### Zero failures found on `main` itself in-window; nothing found blocking merges to `main`
 
 ## Big IF
 

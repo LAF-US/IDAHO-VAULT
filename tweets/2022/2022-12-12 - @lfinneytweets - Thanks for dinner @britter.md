@@ -19,6 +19,7 @@ related:
 Thanks for dinner @britter <https://t.co/g7hLmvhldT>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/FjvNW4fagAAmHkJ.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1602099888338382848)

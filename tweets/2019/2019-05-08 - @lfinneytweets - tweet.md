@@ -21,6 +21,7 @@ related:
 @abbottalynn @FarmBureau <https://t.co/9N7Hhl7MaJ>
 
 ## Links
+
 - <https://thebaffler.com/latest/were-a-republic-not-a-democracy-burmila>
 
 *In reply to [@abbottalynn](https://twitter.com/abbottalynn)*

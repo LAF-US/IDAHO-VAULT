@@ -19,6 +19,7 @@ related:
 RT @ScottMcIntosh12: Here’s the photo that I was taking, since the legislators were hidden in the well from view. <https://t.co/cmlWPSS8w7>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/EbNk9qeU8AANFqJ.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1275501385811804161)

@@ -17,11 +17,12 @@ related:
   - lfinneytweets
 ---
 
-@BetsyZRussell H544 expands upland game bird hunting area in the state. 
-Trailer bill to fund additional pheasant stocking by Fish and Game passes unanimously. 
+@BetsyZRussell H544 expands upland game bird hunting area in the state.
+Trailer bill to fund additional pheasant stocking by Fish and Game passes unanimously.
 <https://t.co/cQfNKeS0rI>
 
 ## Links
+
 - <https://legislature.idaho.gov/sessioninfo/2020/legislation/H0544/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

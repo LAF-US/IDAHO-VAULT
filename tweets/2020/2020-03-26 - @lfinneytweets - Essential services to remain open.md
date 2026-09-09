@@ -18,6 +18,7 @@ related:
 Essential services to remain open: <https://t.co/OlymSiflM3>
 
 ## Links
+
 - <https://coronavirus.idaho.gov/wp-content/uploads/sites/127/2020/03/IdahoEssentialServices.pdf>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

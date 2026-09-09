@@ -15,10 +15,11 @@ related:
   - lfinneytweets
 ---
 
-He's a lifelong Boundary County resident with long-held suspicions about the federal government and United Nations. 
+He's a lifelong Boundary County resident with long-held suspicions about the federal government and United Nations.
 <https://t.co/Bsfmdjytw2>
 
 ## Links
+
 - <https://blog.idahoreports.idahoptv.org/wp-content/uploads/2024/05/The_Spokesman_Review_Sun__Dec_10__1995_.pdf>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

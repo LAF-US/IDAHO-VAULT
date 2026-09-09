@@ -20,6 +20,7 @@ related:
 Check out my newest @uiargonaut video, and find @AlexisRVanHorn's story on page 3! <https://t.co/IdJiMypDvP>
 
 ## Links
+
 - <https://youtu.be/2wL7gpfBJe8>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1093561880512102405)

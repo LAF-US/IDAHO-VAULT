@@ -24,6 +24,7 @@ related:
 RT @NateBrownNews: 2/2 #idahoCovid19 #COVID19 <https://t.co/6gvEpg8ljq>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/Eo5gqsGUcAExCsb.jpg)
 - ![alt text needed](https://pbs.twimg.com/media/Eo5gq4DUcAAGjUE.jpg)
 - ![alt text needed](https://pbs.twimg.com/media/Eo5grEgUwAMP1EI.jpg)

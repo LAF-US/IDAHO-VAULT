@@ -23,7 +23,7 @@ related:
   - IdahoCOVID19
 ---
 
-@IdahoPTV @GovernorLittle Little acknowledges the 1,500+ deaths to the pandemic. #idpol #IdahoCOVID19 
+@IdahoPTV @GovernorLittle Little acknowledges the 1,500+ deaths to the pandemic. #idpol #IdahoCOVID19
 “To the mothers and fathers, children, siblings, grandparents, and veterans impacted, our hearts are with you. Please join me in a moment of silence to remember our fellow Idahoans who lost their lives.”
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

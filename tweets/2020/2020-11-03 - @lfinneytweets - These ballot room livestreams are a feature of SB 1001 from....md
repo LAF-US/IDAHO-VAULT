@@ -22,6 +22,7 @@ related:
 These ballot room livestreams are a feature of SB 1001 from August's #idleg special session, which gives counties the option to open and scan absentee ballots seven days before the 2020 election. (The relevant passage is on page 3 here: <https://t.co/oPcQDqo18g>) #idpol <https://t.co/25PRD8ZtXv>
 
 ## Links
+
 - <https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2020spcl/legislation/S1001E1.pdf>
 - <https://x.com/MelissaKXLY4/status/1323478283892125696>
 

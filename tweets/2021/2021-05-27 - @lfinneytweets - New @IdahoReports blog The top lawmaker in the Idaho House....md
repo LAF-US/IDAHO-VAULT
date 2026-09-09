@@ -21,10 +21,11 @@ related:
   - idleg
 ---
 
-New @IdahoReports blog: The top lawmaker in the Idaho House is throwing his hat into the ring for lieutenant governor. Speaker Scott Bedke, R-Oakley, announced his campaign at the state capitol on Thursday. #idpol #idleg 
+New @IdahoReports blog: The top lawmaker in the Idaho House is throwing his hat into the ring for lieutenant governor. Speaker Scott Bedke, R-Oakley, announced his campaign at the state capitol on Thursday. #idpol #idleg
 <https://t.co/26V5g5EKKX>
 
 ## Links
+
 - <https://blog.idahoreports.idahoptv.org/2021/05/27/speaker-bedke-joins-lieutenant-governor-race/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1398033854540095489)
