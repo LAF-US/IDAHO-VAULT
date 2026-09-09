@@ -1,4 +1,5 @@
 ---
+title: "RT @clarkcorbin There was a lot of noise in the governor's..."
 date: 2018-11-07
 time: 18:18:10
 tweet_id: "1060234974559793154"

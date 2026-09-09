@@ -1,4 +1,5 @@
 ---
+title: "That motion passes. The other 4 RS are before the committee..."
 date: 2020-08-24
 time: 18:30:04
 tweet_id: "1297964406014271489"

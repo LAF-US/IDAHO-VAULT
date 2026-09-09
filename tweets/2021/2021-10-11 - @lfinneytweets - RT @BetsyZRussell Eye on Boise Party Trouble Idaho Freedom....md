@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Party Trouble Idaho Freedom..."
 date: 2021-10-11
 time: 21:09:59
 tweet_id: "1447670841303437313"

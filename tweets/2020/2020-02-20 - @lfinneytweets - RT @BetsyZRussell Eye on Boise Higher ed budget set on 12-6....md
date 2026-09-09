@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Higher ed budget set on 12-6..."
 date: 2020-02-20
 time: 16:45:10
 tweet_id: "1230533867410354177"
@@ -20,6 +21,6 @@ related:
   - idpol
 ---
 
-RT @BetsyZRussell: Eye on Boise: Higher ed budget set on 12-6 vote, slightly higher than governor's proposal... #idleg #idpol https://t.co/…
+RT @BetsyZRussell: Eye on Boise: Higher ed budget set on 12-6 vote, slightly higher than governor's proposal... #idleg #idpol <https://t.co/…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1230533867410354177)

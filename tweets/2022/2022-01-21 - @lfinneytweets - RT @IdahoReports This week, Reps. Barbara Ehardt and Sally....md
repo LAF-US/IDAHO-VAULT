@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports This week, Reps. Barbara Ehardt and Sally..."
 date: 2022-01-21
 time: 23:51:57
 tweet_id: "1484675162385444865"

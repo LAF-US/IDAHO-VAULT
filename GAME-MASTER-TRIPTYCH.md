@@ -26,6 +26,7 @@ A triptych of world-builders from fiction, each representing a Game Master who c
 ## The Three Panels
 
 ### Panel 1: Kevin Flynn
+
 - **Man**: Kevin Flynn
 - **Media Property**: TRON (1982) / TRON: Legacy (2010)
 - **World Built**: The Grid
@@ -33,6 +34,7 @@ A triptych of world-builders from fiction, each representing a Game Master who c
 - **Key Aspect**: Built a digital realm that operates by its own rules, where programs are living entities
 
 ### Panel 2: James Halliday
+
 - **Man**: James Halliday (Anorak)
 - **Media Property**: Ready Player One (2011 novel / 2018 film)
 - **World Built**: OASIS (Ontologically Anthropocentric Sensory Immersive Simulation)
@@ -40,6 +42,7 @@ A triptych of world-builders from fiction, each representing a Game Master who c
 - **Key Aspect**: Built a persistent, massively multiplayer virtual world that became the primary social and economic platform
 
 ### Panel 3: Sebastian the Toymaker
+
 - **Man**: Sebastian (alias: The Toymaker)
 - **Media Property**: Spy Kids 3-D: Game Over (2003)
 - **World Built**: Game Over (virtual reality video game)
@@ -51,6 +54,7 @@ A triptych of world-builders from fiction, each representing a Game Master who c
 Sebastian the Toymaker's three hologram personalities demonstrate **TRIUNE** in practice: three distinct aspects (Scientist, Emperor, Hippie) operating as one entity. His quote — *"I don't mind talking to myself, but when you guys start to cut me outta the conversation. That's when it gets a little... strange!"* — explicitly references these multiple personalities interacting, being cut out of conversation, and the strangeness of their separation.
 
 This triptych represents three variations on the world-builder archetype:
+
 1. **The Architect** (Flynn) - Builds a world and enters it
 2. **The God** (Halliday) - Builds a world that becomes a new reality for others
 3. **The Divided Creator** (Sebastian) - Builds a world while embodying multiple personalities within himself

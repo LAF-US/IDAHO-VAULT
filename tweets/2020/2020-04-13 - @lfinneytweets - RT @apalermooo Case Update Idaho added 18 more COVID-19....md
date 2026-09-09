@@ -1,4 +1,5 @@
 ---
+title: "RT @apalermooo Case Update Idaho added 18 more COVID-19..."
 date: 2020-04-13
 time: 04:55:39
 tweet_id: "1249561868475060224"

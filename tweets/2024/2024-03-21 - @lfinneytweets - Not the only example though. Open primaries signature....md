@@ -1,4 +1,5 @@
 ---
+title: "Not the only example though. Open primaries signature..."
 date: 2024-03-21
 time: 04:39:57
 tweet_id: "1770671667368612334"
@@ -16,11 +17,12 @@ related:
   - lfinneytweets
 ---
 
-@tucker_id Not the only example though. Open primaries signature gatherers got a shout out too 
-https://t.co/QiWq46fsi4
+@tucker_id Not the only example though. Open primaries signature gatherers got a shout out too
+<https://t.co/QiWq46fsi4>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2024/02/06/senate-passes-electioneering-boundary-bill/
+
+- <https://blog.idahoreports.idahoptv.org/2024/02/06/senate-passes-electioneering-boundary-bill/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

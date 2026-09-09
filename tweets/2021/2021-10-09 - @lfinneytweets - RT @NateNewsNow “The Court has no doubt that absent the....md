@@ -1,4 +1,5 @@
 ---
+title: "RT @NateNewsNow \u201cThe Court has no doubt that absent the..."
 date: 2021-10-09
 time: 01:34:35
 tweet_id: "1446650267529740288"

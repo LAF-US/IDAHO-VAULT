@@ -1,4 +1,5 @@
 ---
+title: "Scott We almost lost the republic to self-appointed..."
 date: 2020-06-23
 time: 15:52:54
 tweet_id: "1275456806773383169"

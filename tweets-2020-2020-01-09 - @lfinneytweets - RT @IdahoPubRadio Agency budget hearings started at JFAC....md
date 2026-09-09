@@ -17,6 +17,6 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoPubRadio: Agency budget hearings started at JFAC this morning, including the @IDSecOfState. (@lfinneytweets photo) https://t.co/6P…
+RT @IdahoPubRadio: Agency budget hearings started at JFAC this morning, including the @IDSecOfState. (@lfinneytweets photo) <https://t.co/6P…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1215332938516025344)

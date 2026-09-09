@@ -32,7 +32,7 @@ authority: LOGAN
 ---
 Gov. Brad Little announced Monday that 1st Judicial District Judge Cynthia Meyer will replace John Stegner on the Idaho Supreme Court.  
 
-The Idaho Judicial Council submitted four names to the governor after interviewing candidates on Oct. 18. In addition to Meyer, former Attorney General Lawrence Wasden, private practice attorney Christopher Graham and Fourth Judicial District Judge Diane Walker made the shortlist of names sent to the governor. 
+The Idaho Judicial Council submitted four names to the governor after interviewing candidates on Oct. 18. In addition to Meyer, former Attorney General Lawrence Wasden, private practice attorney Christopher Graham and Fourth Judicial District Judge Diane Walker made the shortlist of names sent to the governor.
 
 “Judge Meyer’s strong intellect and writing skills are just two qualities that will make her an excellent addition to the Idaho Supreme Court,” Little said in a Monday news release. “Her appointment will bring representation from North Idaho to the statewide Idaho Supreme Court, and the materials I reviewed in considering her appointment are evidence she is widely respected by her peers and community as an intelligent, fair, and competent jurist.”
 
@@ -48,7 +48,7 @@ Meyer is a graduate of the College of Idaho and the University of Utah College o
 
 Justice Stegner’s last day with the court was Oct. 31. He resigned in May, calling it a “bittersweet” decision. He plans to return to private practice as an attorney.  
 
-“The job requires extraordinary hours to do it well,” Stegner wrote in his resignation letter to Little. “In sum, the state is asking judges to do too much for too little.”   
+“The job requires extraordinary hours to do it well,” Stegner wrote in his resignation letter to Little. “In sum, the state is asking judges to do too much for too little.”
 
 Meyer will carry out the remainder of Stegner’s term on the Idaho Supreme Court, which expires in January 2027.
 

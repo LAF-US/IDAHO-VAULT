@@ -1,4 +1,5 @@
 ---
+title: "RT @SenatorPhilHart Speaking in favor of H40, which cuts..."
 date: 2025-03-04
 time: 19:18:26
 tweet_id: "1897003720627617987"

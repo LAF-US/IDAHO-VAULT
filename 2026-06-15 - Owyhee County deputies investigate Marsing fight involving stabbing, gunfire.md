@@ -32,7 +32,7 @@ This feature is temporarily unavailable. Please check back later to join the con
 
 ---
 
-#### topics:
+#### topics
 
 - [Wildfire](https://idahonews.com/topic/Wildfire)
 - [Elmore County](https://idahonews.com/topic/Elmore%20County)
@@ -55,22 +55,22 @@ Winds up to 25 mph are expected with gusts up to 35 mph.[4](https://idahonews.co
 
 Idaho Gov. Brad Little forms working group to keep college athletics competitive
 
-](https://idahonews.com/news/local/gallery/idaho-gov-brad-little-forms-working-group-to-keep-college-athletics-competitive)[
+](<https://idahonews.com/news/local/gallery/idaho-gov-brad-little-forms-working-group-to-keep-college-athletics-competitive)[>
 
 4
 
 ODF declares fire season across Oregon
 
-](https://idahonews.com/station/mobile-apps/local-news-app/gallery/fire-season-begins-june-15-on-odf-lands-across-northwest-oregon-districts-marion-polk-clackamas-multnomah-lincoln-benton-yamhill-tillamook-clatsop-columbia-county-wildfire-danger)[
+](<https://idahonews.com/station/mobile-apps/local-news-app/gallery/fire-season-begins-june-15-on-odf-lands-across-northwest-oregon-districts-marion-polk-clackamas-multnomah-lincoln-benton-yamhill-tillamook-clatsop-columbia-county-wildfire-danger)[>
 
 8
 
 Marsing Search and Rescue carries patient to safety from Jump Creek Upper Falls trail
 
-](https://idahonews.com/news/local/gallery/marsing-search-and-rescue-carries-patient-to-safety-from-jump-creek-upper-falls-trail)[
+](<https://idahonews.com/news/local/gallery/marsing-search-and-rescue-carries-patient-to-safety-from-jump-creek-upper-falls-trail)[>
 
 6
 
 Idaho Fish and Game hosted statewide Free Fishing Day events, loaning gear and teaching be
 
-](https://idahonews.com/news/local/gallery/idaho-fish-and-game-hosted-statewide-free-fishing-day-events-loaning-gear-and-teaching-beginners)
+](<https://idahonews.com/news/local/gallery/idaho-fish-and-game-hosted-statewide-free-fishing-day-events-loaning-gear-and-teaching-beginners>)

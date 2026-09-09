@@ -7,7 +7,7 @@ created: 2026-04-17
 ---
 - [Arthur Mensch](https://www.ft.com/stream/ea47823e-7bf2-4353-801e-994de2170dd0)
 
-![](https://images.ft.com/v3/image/raw/ftcms%3A79f5d41a-b415-46c0-8d73-b2f9be9d3541?source=next-article&fit=scale-down&quality=highest&width=700&dpr=1)
+![alt text needed](https://images.ft.com/v3/image/raw/ftcms%3A79f5d41a-b415-46c0-8d73-b2f9be9d3541?source=next-article&fit=scale-down&quality=highest&width=700&dpr=1)
 
 Copyrighted works continue to spread online, while the legal mechanisms designed to protect them remain patchy and overly complex © Olivier Hoslet/EPA-EFE/Shutterstock
 

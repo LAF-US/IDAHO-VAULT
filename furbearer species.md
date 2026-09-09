@@ -14,6 +14,7 @@ related:
 ---
 
 furbearer species for mammals hunting
+
 - badger
 - beaver
 - bobcat

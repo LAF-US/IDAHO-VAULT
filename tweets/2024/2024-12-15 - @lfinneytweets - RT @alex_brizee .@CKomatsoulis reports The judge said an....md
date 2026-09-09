@@ -1,4 +1,5 @@
 ---
+title: "RT @alex_brizee .@CKomatsoulis reports The judge said an..."
 date: 2024-12-15
 time: 01:05:42
 tweet_id: "1868100083092525073"

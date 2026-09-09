@@ -1,4 +1,5 @@
 ---
+title: "RT @mpdailynews A small campus protest was staged Tuesday..."
 date: 2020-08-06
 time: 16:05:49
 tweet_id: "1291405125232156673"

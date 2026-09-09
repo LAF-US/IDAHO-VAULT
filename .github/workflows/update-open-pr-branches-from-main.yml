@@ -1,0 +1,42 @@
+name: Audit open PR branches against main
+
+on:
+  workflow_dispatch:
+
+# Prevent overlapping audit runs from producing confusing concurrent reports.
+concurrency:
+  group: audit-open-pr-branches-${{ github.repository }}
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  audit-open-pr-branches:
+    name: Native PR branch-update audit
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the workflow definition
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      - name: Install jq
+        run: sudo apt-get update && sudo apt-get install --yes jq
+
+      - name: Audit branches without modifying them
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          bash -euo pipefail ./update-open-pr-branches-from-main.sh --repo "$REPO" | tee update-summary.txt
+          cat update-summary.txt >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload audit summary
+        if: ${{ always() }}
+        uses: actions/upload-artifact@65c4c4a1ddee5b72f698fdd19549f0f0fb45cf08 # v4.6.0
+        with:
+          name: update-open-pr-branches-summary
+          path: update-summary.txt
+          if-no-files-found: error

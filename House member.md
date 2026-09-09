@@ -133,7 +133,7 @@ related:
 - Wendy Horman
 authority: LOGAN
 ---
-Membership of the Idaho House of Representatives. 
+Membership of the Idaho House of Representatives.
 
 | Officer | Representative |
 | ----- | ----- |
@@ -144,9 +144,11 @@ Membership of the Idaho House of Representatives.
 | House Minority Leader | Ilana Rubel |  
 | House Assistant Minority Leader | Lauren Necochea |  
 | House Minority Caucus Chair | Ned Burns |  
+
 ### **2023-2024**
-| District | Representative | 
-| ----- | ----- | 
+
+| District | Representative |
+| ----- | ----- |
 | District 1A | Mark Sauter |
 | District 1B | Sage Dixon |
 | District 2A | Heather Scott |
@@ -156,7 +158,7 @@ Membership of the Idaho House of Representatives.
 | District 4A | Joe Alfieri |
 | District 4B | Elaine Price |
 | District 5A | Ron Mendive |
-| District 5B | Tony Wisniewski | 
+| District 5B | Tony Wisniewski |
 | District 6A | Lori McCann |
 | District 6B | Brandon Mitchell |
 | District 7A | Mike Kingsley |
@@ -217,7 +219,9 @@ Membership of the Idaho House of Representatives.
 | District 34B | Britt Raybould |
 | District 35A | Kevin Andrus |
 | District 35B | Josh Wheeler |
+
 ## **2021-2022**
+
 | District     | Representative                         |     |
 | ------------ | -------------------------------------- | --- |
 | District 1A  | Heather Scott                      |     |
@@ -290,7 +294,9 @@ Membership of the Idaho House of Representatives.
 | District 34B | Ron Nate                           |     |
 | District 35A | Karey Hanks                        |     |
 | District 35B | Rod Furniss                        |     |
+
 ### 2019-2020
+
 | District     | Representative                             |     |
 | ------------ | ------------------------------------------ | --- |
 | District 1A  | Heather Scott                          |     |

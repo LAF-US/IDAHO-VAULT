@@ -1,4 +1,5 @@
 ---
+title: "Being from there it was a fun brag to say we have the only..."
 date: 2023-09-26
 time: 19:32:28
 tweet_id: "1706753623026549222"

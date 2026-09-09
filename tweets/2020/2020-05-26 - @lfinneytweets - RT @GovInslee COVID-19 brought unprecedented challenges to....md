@@ -1,4 +1,5 @@
 ---
+title: "RT @GovInslee COVID-19 brought unprecedented challenges to..."
 date: 2020-05-26
 time: 19:40:33
 tweet_id: "1265367237604421633"

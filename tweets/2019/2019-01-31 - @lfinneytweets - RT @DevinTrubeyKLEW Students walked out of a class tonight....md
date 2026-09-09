@@ -1,4 +1,5 @@
 ---
+title: "RT @DevinTrubeyKLEW Students walked out of a class tonight..."
 date: 2019-01-31
 time: 05:50:14
 tweet_id: "1090849716286324736"

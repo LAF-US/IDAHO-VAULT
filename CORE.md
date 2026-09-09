@@ -12,6 +12,7 @@ related:
   - CHARTER
   - CORPUS
 ---
+[[C]][[O]][[R]][[E]]
 
 # CORE
 

@@ -13,7 +13,7 @@ related:
   - lfinneytweets
 ---
 
-Mr. Speaker, I ask unanimous consent that the state primaries held the week after Super Tuesday be referred to as "Medium Tuesday" rather than Super Tuesday II. 
+Mr. Speaker, I ask unanimous consent that the state primaries held the week after Super Tuesday be referred to as "Medium Tuesday" rather than Super Tuesday II.
 
 Hearing no objection, it is so ordered.
 

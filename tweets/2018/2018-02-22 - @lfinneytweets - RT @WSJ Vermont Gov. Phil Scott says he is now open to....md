@@ -1,4 +1,5 @@
 ---
+title: "RT @WSJ Vermont Gov. Phil Scott says he is now open to..."
 date: 2018-02-22
 time: 23:28:07
 tweet_id: "966816905452335104"

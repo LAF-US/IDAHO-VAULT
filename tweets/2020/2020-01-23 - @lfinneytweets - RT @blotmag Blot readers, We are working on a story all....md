@@ -1,4 +1,5 @@
 ---
+title: "RT @blotmag Blot readers, We are working on a story all..."
 date: 2020-01-23
 time: 16:26:54
 tweet_id: "1220382407569727488"

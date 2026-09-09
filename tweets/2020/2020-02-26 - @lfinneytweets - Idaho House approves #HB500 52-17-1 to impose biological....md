@@ -1,4 +1,5 @@
 ---
+title: "Idaho House approves #HB500 52-17-1 to impose biological..."
 date: 2020-02-26
 time: 19:21:49
 tweet_id: "1232747614128476162"

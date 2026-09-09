@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Updated election results from Jerome..."
 date: 2022-11-10
 time: 19:08:43
 tweet_id: "1590783529419345920"

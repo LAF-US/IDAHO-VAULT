@@ -99,4 +99,3 @@ That is the useful abstraction:
 - one axis for **power**
 
 That is exactly the kind of split the Persona / Institution / Runtime work in the vault is already circling.
-

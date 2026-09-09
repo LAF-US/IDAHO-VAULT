@@ -6,4 +6,4 @@ related:
 - Snake River
 authority: LOGAN
 ---
-reservoir on the Snake River at Burley created by Milner dam 
+reservoir on the Snake River at Burley created by Milner dam

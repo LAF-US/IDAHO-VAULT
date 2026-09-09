@@ -1,4 +1,5 @@
 ---
+title: "RT @JoeyP_News Now we\u2019re hearing from the State Board of..."
 date: 2020-08-06
 time: 18:19:24
 tweet_id: "1291438741806968832"

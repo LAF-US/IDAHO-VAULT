@@ -1,4 +1,5 @@
 ---
+title: "RT @IDMountainSun \ud83d\udc4bHello, Idaho! Welcome to the Gem State\u2019s..."
 date: 2021-03-22
 time: 19:43:42
 tweet_id: "1374084388070121472"

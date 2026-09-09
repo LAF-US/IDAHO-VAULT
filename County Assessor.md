@@ -3,4 +3,4 @@ related:
 - counties
 authority: LOGAN
 ---
-counties property values 
+counties property values

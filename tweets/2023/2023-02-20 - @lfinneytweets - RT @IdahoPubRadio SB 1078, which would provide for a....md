@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio SB 1078, which would provide for a..."
 date: 2023-02-20
 time: 16:02:19
 tweet_id: "1627700182023553029"

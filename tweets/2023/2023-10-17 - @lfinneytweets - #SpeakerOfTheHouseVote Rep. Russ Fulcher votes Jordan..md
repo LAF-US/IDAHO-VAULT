@@ -1,4 +1,5 @@
 ---
+title: "#SpeakerOfTheHouseVote Rep. Russ Fulcher votes Jordan."
 date: 2023-10-17
 time: 17:12:17
 tweet_id: "1714328488763854912"
@@ -16,6 +17,6 @@ related:
   - SpeakerOfTheHouseVote
 ---
 
-#SpeakerOfTheHouseVote Rep. Russ Fulcher votes Jordan.
+\#SpeakerOfTheHouseVote Rep. Russ Fulcher votes Jordan.
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1714328488763854912)

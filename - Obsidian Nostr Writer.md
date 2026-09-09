@@ -34,8 +34,8 @@ Obsidian plugin for publishing articles to Nostr
 - Easily view and download your Nostr bookmarks into Obsidian for reference and local use
 - Automatically populates article information fields from the frontmatter
 
-[![](https://cdn.satellite.earth/48870669e1c251156406a1109e0fc568bc4929af775d29fd2d5272503f8d6291.png)](https://cdn.satellite.earth/48870669e1c251156406a1109e0fc568bc4929af775d29fd2d5272503f8d6291.png)
+[![alt text needed](https://cdn.satellite.earth/48870669e1c251156406a1109e0fc568bc4929af775d29fd2d5272503f8d6291.png)](https://cdn.satellite.earth/48870669e1c251156406a1109e0fc568bc4929af775d29fd2d5272503f8d6291.png)
 
-[![](https://cdn.satellite.earth/eff1b28e1a32e4b7fe60cf29897ea9d77c5863768555a37fef3a823650f49d0c.png)](https://cdn.satellite.earth/eff1b28e1a32e4b7fe60cf29897ea9d77c5863768555a37fef3a823650f49d0c.png)
+[![alt text needed](https://cdn.satellite.earth/eff1b28e1a32e4b7fe60cf29897ea9d77c5863768555a37fef3a823650f49d0c.png)](https://cdn.satellite.earth/eff1b28e1a32e4b7fe60cf29897ea9d77c5863768555a37fef3a823650f49d0c.png)
 
-[![](https://cdn.satellite.earth/1b2c8c97a4bbd645aae0816582f0ea93456a161eff8670ba3a6d10c60f58a681.png)](https://cdn.satellite.earth/1b2c8c97a4bbd645aae0816582f0ea93456a161eff8670ba3a6d10c60f58a681.png)
+[![alt text needed](https://cdn.satellite.earth/1b2c8c97a4bbd645aae0816582f0ea93456a161eff8670ba3a6d10c60f58a681.png)](https://cdn.satellite.earth/1b2c8c97a4bbd645aae0816582f0ea93456a161eff8670ba3a6d10c60f58a681.png)

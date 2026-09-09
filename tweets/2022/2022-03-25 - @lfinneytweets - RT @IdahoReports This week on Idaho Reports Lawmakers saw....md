@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports This week on Idaho Reports Lawmakers saw..."
 date: 2022-03-25
 time: 22:57:56
 tweet_id: "1507492006557224962"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoReports: This week on Idaho Reports: Lawmakers saw more starts and stops this week as they scrambled to wrap up the session. 
+RT @IdahoReports: This week on Idaho Reports: Lawmakers saw more starts and stops this week as they scrambled to wrap up the session.
 
 Wat…
 

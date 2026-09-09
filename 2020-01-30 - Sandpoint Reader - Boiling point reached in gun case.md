@@ -86,7 +86,7 @@ A county employee escorted the Hollands from the Bonner County Administration Bu
 
 A video of the incident, taken by Rebecca Holland and shared online, shows the moment when Holland briefly contacted Wasylko’s right arm with his left hand as the latter turned to leave the conversation. While Wasylko reacted angrily to Holland’s gesture — in a raised voice telling him “do not touch me, sir” — debate on social media swiftly turned on whether Holland’s action constituted battery.
 
-Idaho statute defines battery as: “Willful and unlawful use of force or violence upon the person of another; or actual, intentional and unlawful touching or striking of another person against the will of the other; or unlawfully and intentionally causing bodily harm to an individual.” 
+Idaho statute defines battery as: “Willful and unlawful use of force or violence upon the person of another; or actual, intentional and unlawful touching or striking of another person against the will of the other; or unlawfully and intentionally causing bodily harm to an individual.”
 
 According to an official summary of the incident by the city of Sandpoint, “an investigation is underway and will be forwarded to the Bonner County Prosecuting Attorney for a review of charges.”
 
@@ -140,7 +140,7 @@ The amended complaint
 
 Sheriff Daryl Wheeler, who is also listed as a plaintiff in the case, weighed in with a statement posted Jan. 28 to Facebook announcing he had petitioned for an amendment, which led to rescheduling of the status conference. The amendment “asks the court to declare whether the gun ban violates Idaho law, so that the City, the County, Sheriff Wheeler, and the Sandpoint Police Department can effectively coordinate to ensure public safety at the 2020 Festival,” according to the statement.
 
-Sandpoint officials responded to Wheeler’s amendment in their own statement released Jan. 28, restating the city’s position that it upholds the Second Amendment and has instituted no policy banning firearms from any publicly owned property — nor has it turned anyone away from city-owned facilities for carrying firearms. 
+Sandpoint officials responded to Wheeler’s amendment in their own statement released Jan. 28, restating the city’s position that it upholds the Second Amendment and has instituted no policy banning firearms from any publicly owned property — nor has it turned anyone away from city-owned facilities for carrying firearms.
 
 As it has argued since August, when the issue of guns at Memorial Field first came to the fore, the city emphasized that The Festival instituted the no-weapons policy as a private lessee of the field and in continuation of a decades-long practice of barring firearms from the concert series. Additional security and screening measures were put in place two years ago by event organizers in order to satisfy performance contracts from artists.
 
@@ -156,11 +156,11 @@ The draft legislation is intended to expand the scope of existing law to express
 
 The amendment related to leased public property cuts to the core of the county vs. city lawsuit, as the policy banning guns from Memorial Field comes from The Festival, not the city. If adopted, Zito’s bill would put municipalities or other political subdivisions on the hook for such policies on public property, regardless of whether they come from a private, non-governmental entity.
 
-What’s more, the measure would institute a range of penalties and avenues for legal recourse not currently included in the law. 
+What’s more, the measure would institute a range of penalties and avenues for legal recourse not currently included in the law.
 
 Specifically, the draft text classifies violations of the statute as a misdemeanor offense, while directing courts to invalidate whatever action constituted the violation and issue a permanent injunction against “the public or private offender.”
 
-“It is no defense that the offender was acting in good faith or upon advice of counsel,” according to the draft. 
+“It is no defense that the offender was acting in good faith or upon advice of counsel,” according to the draft.
 
 The bill goes on to prohibit the use of public funds to defend or reimburse “any person or entity found to have knowingly and willfully violated” the law and threatens that acting in an official capacity to enact or enforce any actions that contravene the preemption statute — even “under color of the law” — “shall be cause for termination of employment contract.”
 
@@ -168,7 +168,7 @@ Zito told the Reader in an email Jan. 29 that “there is no simple answer” to
 
 By way of a hypothetical example, she added that if a city council member asked a clerk to sign a document that “knowingly and willfully” violated the statute, the clerk would only risk losing their job if they honored that request while also “knowingly and willfully” running afoul of the law.
 
-“To what extent someone is ‘knowingly and willfully’ violating the statute is a case-by-case basis,” Zito said.    
+“To what extent someone is ‘knowingly and willfully’ violating the statute is a case-by-case basis,” Zito said.
 
 Under the provisions of the draft bill, individuals or organizations whose membership may “reasonably be adversely affected by a violation” of the preemption law would be entitled to sue “any person or entity in any court of this state having jurisdiction over any defendant to the suit for declaratory and injunctive relief and for actual damages.”
 
@@ -182,7 +182,7 @@ Zito said that she has worked in the past with ISAA on issues related to firearm
 
  The ISAA, working in conjunction with several local gun rights activists — including Herndon — initially pressed the issue at the 2019 Festival, testing the event’s no-weapons policy by attempting to enter the field while carrying firearms. They were turned away by security at the gate, triggering the legal challenge by the county and Sheriff Wheeler.
 
-Zito in her message to fellow lawmakers made particular note of Wheeler’s stance on the issue, writing that the misdemeanor violation contained in the draft bill “gives law enforcement the ability to enforce the law. When the city of Sandpoint was allowing a private security firm to violate the law, the Sheriff in Bonner County, Daryl Wheeler, informed citizens there was nothing he could do to enforce the law because there was no penalty listed.” 
+Zito in her message to fellow lawmakers made particular note of Wheeler’s stance on the issue, writing that the misdemeanor violation contained in the draft bill “gives law enforcement the ability to enforce the law. When the city of Sandpoint was allowing a private security firm to violate the law, the Sheriff in Bonner County, Daryl Wheeler, informed citizens there was nothing he could do to enforce the law because there was no penalty listed.”
 
 She added: “This bill gives law enforcement the ability to take action when Idaho citizen’s right to keep and bear arms under firearm preemption is being violated.”
 

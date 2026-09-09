@@ -1,4 +1,5 @@
 ---
+title: "My hot take you don't get a realistic McDonalds employee..."
 date: 2024-10-21
 time: 17:30:48
 tweet_id: "1848416660723744897"

@@ -1,4 +1,5 @@
 ---
+title: "RT @idfg Thanks to a team of big bass enthusiasts who..."
 date: 2023-11-06
 time: 23:05:23
 tweet_id: "1721665109238649316"

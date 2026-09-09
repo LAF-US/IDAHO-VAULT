@@ -1,4 +1,5 @@
 ---
+title: "RT @angelapalermo7 Latah County and the University of Idaho..."
 date: 2020-02-21
 time: 22:03:05
 tweet_id: "1230976261721165824"

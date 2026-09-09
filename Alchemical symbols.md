@@ -137,4 +137,8 @@ ask to be *read*.
 - [Alchemical Symbols — Unicode code chart (U+1F700)](https://www.unicode.org/charts/PDF/U1F700.pdf)
 - [Proposal for Alchemical Symbols in Unicode (WG2 N3584, 2009)](https://webapp1.dlib.indiana.edu/newton/fonts/Alchemy%20Unicode%20Proposal---March%2031%202009.pdf)
 
-###### [["The world is quiet here."]]
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

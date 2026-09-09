@@ -4,4 +4,4 @@ related:
 - Utah
 authority: LOGAN
 ---
-Governor of Utah 
+Governor of Utah

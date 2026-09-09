@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports It isn\u2019t yet clear how the federal funding..."
 date: 2025-01-28
 time: 23:24:53
 tweet_id: "1884382166999847291"

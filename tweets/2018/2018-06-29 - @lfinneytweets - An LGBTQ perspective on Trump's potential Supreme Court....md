@@ -1,4 +1,5 @@
 ---
+title: "An LGBTQ perspective on Trump's potential Supreme Court..."
 date: 2018-06-29
 time: 06:01:06
 tweet_id: "1012576671973572608"
@@ -13,9 +14,10 @@ related:
   - lfinneytweets
 ---
 
-An LGBTQ perspective on Trump's potential Supreme Court picks 👇 https://t.co/grZCfqiHqm
+An LGBTQ perspective on Trump's potential Supreme Court picks 👇 <https://t.co/grZCfqiHqm>
 
 ## Links
-- https://x.com/Into/status/1012472744913481729
+
+- <https://x.com/Into/status/1012472744913481729>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1012576671973572608)

@@ -1,4 +1,5 @@
 ---
+title: "RT @SamSandmire Bill attacking ballot initiatives passes..."
 date: 2019-03-04
 time: 17:44:04
 tweet_id: "1102625773209313281"

@@ -1,4 +1,5 @@
 ---
+title: "RT @threadreaderapp @lfinneytweets Hallo, you can read it..."
 date: 2020-06-25
 time: 19:50:05
 tweet_id: "1276241272873746432"

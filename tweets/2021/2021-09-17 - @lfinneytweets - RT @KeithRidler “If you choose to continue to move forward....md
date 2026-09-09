@@ -1,4 +1,5 @@
 ---
+title: "RT @KeithRidler \u201cIf you choose to continue to move forward..."
 date: 2021-09-17
 time: 23:42:36
 tweet_id: "1439011937719762944"
