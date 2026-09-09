@@ -17,13 +17,15 @@ related:
   - MLKDay
 ---
 
-1967 #MLKDay 
+1967 #MLKDay
 <https://t.co/jMyQT8qaQj> <https://t.co/mCvE8QaZAi>
 
 ## Links
+
 - <https://www.truthorfiction.com/mlk-birmingham-news-cartoon/>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/FJVuUjUUYAMJa1m.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1483212953079857153)

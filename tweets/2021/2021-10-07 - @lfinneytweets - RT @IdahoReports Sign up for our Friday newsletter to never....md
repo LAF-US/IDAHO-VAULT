@@ -21,10 +21,11 @@ related:
   - idpol
 ---
 
-RT @IdahoReports: Sign up for our Friday newsletter to never miss the latest from Idaho Reports. #idleg #idpol 
+RT @IdahoReports: Sign up for our Friday newsletter to never miss the latest from Idaho Reports. #idleg #idpol
 <https://t.co/xOXXMKpdxr>
 
 ## Links
+
 - <https://visitor.constantcontact.com/d.jsp?m=1136738144760>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1446233020516634624)

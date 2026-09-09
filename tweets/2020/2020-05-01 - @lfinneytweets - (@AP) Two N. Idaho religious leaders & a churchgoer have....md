@@ -26,6 +26,7 @@ related:
 (@AP) Two N. Idaho religious leaders & a churchgoer have filed a federal lawsuit challenging #IdahoCOVID19 restrictions ordered by @GovernorLittle & @IDHW Jeppesen. The suit targets the order as unconstitutional and specifically cites restrictions on religious gatherings. #idpol <https://t.co/N7ZrD5bAFj>
 
 ## Links
+
 - <https://x.com/KeithRidler/status/1256299603172790272>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1256331643972808704)

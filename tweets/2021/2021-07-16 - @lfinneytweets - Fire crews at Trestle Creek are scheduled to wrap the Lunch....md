@@ -23,6 +23,7 @@ Fire crews at Trestle Creek are scheduled to wrap the Lunch Peak lookout and the
 “Neither structure is in danger at this time but are being wrapped as a precaution.” #idfire #idwx <https://t.co/yXbuNYKvVy>
 
 ## Links
+
 - <https://x.com/DailyBee/status/1416065089669537792>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1416066607814615041)

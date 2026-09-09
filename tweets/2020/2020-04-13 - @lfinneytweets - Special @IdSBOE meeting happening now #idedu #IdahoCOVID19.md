@@ -24,6 +24,7 @@ related:
 Special @IdSBOE meeting happening now #idedu #IdahoCOVID19 <https://t.co/ASlmW50OtV>
 
 ## Links
+
 - <https://www.facebook.com/idsboe/videos/2793448927370151>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1249810843589468160)

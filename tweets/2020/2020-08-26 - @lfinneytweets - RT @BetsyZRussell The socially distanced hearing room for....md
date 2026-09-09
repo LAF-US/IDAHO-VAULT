@@ -24,6 +24,7 @@ related:
 RT @BetsyZRussell: The socially distanced hearing room for liability bill hearing #idleg #idpol <https://t.co/LOQQcXpoEl>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/EgWuKt_XgAAy99L.jpg)
 - ![alt text needed](https://pbs.twimg.com/media/EgWuKt_XgAMDnTO.jpg)
 - ![alt text needed](https://pbs.twimg.com/media/EgWuKt-WsAYxMQn.jpg)

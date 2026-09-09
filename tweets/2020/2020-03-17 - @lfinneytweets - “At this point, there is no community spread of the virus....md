@@ -26,6 +26,7 @@ related:
 “At this point, there is no community spread of the virus reported in Idaho that would necessitate more restrictive actions.” — @IDHouseCaucus #idleg #idpol #IdahoCovid19 <https://t.co/tajV68XBDL>
 
 ## Links
+
 - <https://x.com/RadioDawson/status/1240046564795543552>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1240047661555671040)

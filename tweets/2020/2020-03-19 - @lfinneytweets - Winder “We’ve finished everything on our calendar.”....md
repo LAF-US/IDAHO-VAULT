@@ -19,7 +19,7 @@ related:
   - idpol
 ---
 
-Winder: “We’ve finished everything on our calendar.” 
+Winder: “We’ve finished everything on our calendar.”
 Senators are making remarks while they transmit the last few bills. #idleg #idpol
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1240730014108110849)

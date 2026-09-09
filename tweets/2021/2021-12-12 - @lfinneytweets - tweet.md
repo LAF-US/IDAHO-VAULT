@@ -21,9 +21,11 @@ related:
 @brandendurst @jtwilcox111 <https://t.co/jIxD3jZftl> <https://t.co/0eOQuR5rKb>
 
 ## Links
+
 - <https://www.ncsl.org/research/about-state-legislatures/state-legislator-demographics.aspx>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/FGYHBF6VcAEc5kn.jpg)
 
 *In reply to [@brandendurst](https://twitter.com/brandendurst)*

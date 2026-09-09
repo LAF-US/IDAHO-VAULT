@@ -19,6 +19,7 @@ related:
 RT @HuffPost: "He has slipped into another realm," McCaffrey said. <https://t.co/ypCz3tktWQ>
 
 ## Links
+
 - <https://www.huffp.st/24q2kQh>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1399635324507025411)

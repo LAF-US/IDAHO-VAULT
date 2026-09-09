@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @KeithRidler: “That flank has never really had to come to terms with the fallout of the policies they have proposed.” 
+RT @KeithRidler: “That flank has never really had to come to terms with the fallout of the policies they have proposed.”
 Deep-red Idaho se…
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1402395186257268738)

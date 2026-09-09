@@ -24,6 +24,7 @@ related:
 Views from election day. A Borah High poll worker told me that things were running smoothly this morning, though the system for registering new voters was taking some time. #IVoted #idpol @AdaElections <https://t.co/u6eZzxIjjV>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/El6fpwyVkAADfLX.jpg)
 - ![alt text needed](https://pbs.twimg.com/media/El6frcvU8AAusfp.jpg)
 - ![alt text needed](https://pbs.twimg.com/media/El6fr6NUcAAZqMN.jpg)

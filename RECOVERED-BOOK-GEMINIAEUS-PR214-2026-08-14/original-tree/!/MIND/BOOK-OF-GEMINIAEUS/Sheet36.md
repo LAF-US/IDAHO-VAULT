@@ -95,4 +95,3 @@ Got it. I've made sure to specify that "graph view" refers to the visual represe
 Gemini is AI and can make mistakes.
 
 1Password menu is available. Press down arrow to select.
-

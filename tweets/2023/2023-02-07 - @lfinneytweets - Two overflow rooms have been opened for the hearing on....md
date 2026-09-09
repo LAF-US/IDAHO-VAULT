@@ -22,6 +22,7 @@ related:
 Two overflow rooms have been opened for the hearing on gender-confirming care for transgender minors. #idleg #idpol <https://t.co/q6HdQaY45h>
 
 ## Links
+
 - <https://x.com/RuthBrownNews/status/1623056677259051009>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1623057875609485312)

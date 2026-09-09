@@ -26,6 +26,7 @@ After two hours, education chair Sen. Dave Lent estimated that more than 70 peop
 <https://t.co/E12IXNZqc6>
 
 ## Links
+
 - <https://blog.idahoreports.idahoptv.org/2023/02/14/lengthy-testimony-on-esas-committee-vote-expected-wednesday/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

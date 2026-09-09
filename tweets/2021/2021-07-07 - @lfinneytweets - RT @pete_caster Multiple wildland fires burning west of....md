@@ -19,6 +19,7 @@ related:
 RT @pete_caster: Multiple wildland fires burning west of Clarkston after morning thunderstorms. <https://t.co/CqZ87VWCaw>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/ext_tw_video_thumb/1412787423990353920/pu/img/qJXJX6VYtViUSayF.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1412817223266177025)

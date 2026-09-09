@@ -17,6 +17,7 @@ related:
 It's a good one! <https://t.co/Ty0QCoUd5G>
 
 ## Links
+
 - <https://x.com/BetsyZRussell/status/1218306468190965760>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1218323152175947777)

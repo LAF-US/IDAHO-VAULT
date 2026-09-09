@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @mlcarmel: The Senate just held three bills that are very important to House leadership: 25, 287 and 337. 
+RT @mlcarmel: The Senate just held three bills that are very important to House leadership: 25, 287 and 337.
 
 Threatening to continue hold…
 

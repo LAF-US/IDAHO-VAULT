@@ -24,6 +24,7 @@ related:
 I was wondering where Rep. @britter Raybould was on the floor yesterday. She's also President of the National Potato Council. #idpol #idleg <https://t.co/OWxuCbWlD5>
 
 ## Links
+
 - <https://x.com/CongMikeSimpson/status/1232785868307542017>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1232801428487303168)

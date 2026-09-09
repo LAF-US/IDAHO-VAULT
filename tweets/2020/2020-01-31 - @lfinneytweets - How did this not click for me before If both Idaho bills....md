@@ -23,6 +23,7 @@ How did this not click for me before:
 If both Idaho bills (House & Senate) pass, the time of day could someday be the same across all of WA, OR and ID because Pacific Daylight Time and Mountain Standard Time are equivalent. #idleg #idpol <https://t.co/wXfy8ZTggK>
 
 ## Links
+
 - <https://x.com/OPB/status/1223327589361577984>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1223370084015575041)

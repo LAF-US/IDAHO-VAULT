@@ -22,6 +22,7 @@ related:
 \#idleg #idpol <https://t.co/k9A0CHuWD7>
 
 ## Links
+
 - <https://x.com/chadforidaho/status/1255284136052502528>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1255309477915561984)

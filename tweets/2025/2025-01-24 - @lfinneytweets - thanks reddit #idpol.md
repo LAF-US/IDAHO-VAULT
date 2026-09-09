@@ -20,6 +20,7 @@ related:
 thanks reddit #idpol <https://t.co/UBS7sbuU2A>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/GiFRX-XbwAAp3aG.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1882875643945476301)

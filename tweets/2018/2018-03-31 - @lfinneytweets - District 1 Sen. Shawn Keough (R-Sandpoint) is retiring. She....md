@@ -17,6 +17,7 @@ related:
 District 1 Sen. Shawn Keough (R-Sandpoint) is retiring. She has endorsed Jim Woodward for the seat (<https://t.co/Z9dHl4EZIe>) <https://t.co/fW4nhJU5TH>
 
 ## Links
+
 - <http://jimwoodwardforsenate.org>
 - <https://x.com/BetsyZRussell/status/979879444578906112>
 

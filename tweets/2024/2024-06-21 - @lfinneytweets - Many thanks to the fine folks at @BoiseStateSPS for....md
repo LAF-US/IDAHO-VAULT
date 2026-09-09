@@ -20,10 +20,11 @@ related:
   - idpol
 ---
 
-Many thanks to the fine folks at @BoiseStateSPS for bringing me on the Big Tent Radio Show @radioboise to discuss the GOP convention! #idpol 
+Many thanks to the fine folks at @BoiseStateSPS for bringing me on the Big Tent Radio Show @radioboise to discuss the GOP convention! #idpol
 <https://t.co/AioXFugGlm>
 
 ## Links
+
 - <https://radioboise.org/shows/recent-broadcast-archive/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1803941230310732121)

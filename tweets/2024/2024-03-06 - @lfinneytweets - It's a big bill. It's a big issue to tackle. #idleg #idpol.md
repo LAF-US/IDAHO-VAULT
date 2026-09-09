@@ -22,6 +22,7 @@ related:
 It's a big bill. It's a big issue to tackle. #idleg #idpol <https://t.co/IxB01iH7lb>
 
 ## Links
+
 - <https://blog.idahoreports.idahoptv.org/2024/03/05/school-facilities-bill-excuse-me-taxation-bill-moves-through-senate-committee/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1765182372671336731)

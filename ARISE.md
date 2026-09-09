@@ -26,7 +26,6 @@ related:
 > See: Issue #686
 > Related: [[GEMINIAEUS]] | [[TRIUNE-TRIPTYCH-TRIUMVIRATE]]
 
-
 # PROTOCOL — ARISE
 
 ## Status: Draft

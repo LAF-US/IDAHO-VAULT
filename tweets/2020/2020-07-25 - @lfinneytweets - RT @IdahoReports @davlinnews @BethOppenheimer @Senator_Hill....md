@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoReports: @davlinnews @BethOppenheimer @Senator_Hill @IdahoPTV Watch Now: "Childcare Uncertainty" #idpol #idleg 
+RT @IdahoReports: @davlinnews @BethOppenheimer @Senator_Hill @IdahoPTV Watch Now: "Childcare Uncertainty" #idpol #idleg
 <https://t.co/geCcR…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1286844655309475841)

@@ -21,6 +21,7 @@ RT @DailyBee: Arson is to blame for a July 4 fire that destroyed the Army Surplu
 <https://t.co/VyX9pQMUHS>
 
 ## Links
+
 - <https://bonnercountydailybee.com/news/2024/jul/08/arson-to-blame-in-army-surplus-fire/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1810765530179227715)

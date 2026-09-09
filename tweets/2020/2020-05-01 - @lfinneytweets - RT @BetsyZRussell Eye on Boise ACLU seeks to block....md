@@ -22,7 +22,7 @@ related:
   - idleg
 ---
 
-RT @BetsyZRussell: Eye on Boise: ACLU seeks to block enforcement of trans sports bill; link to full story by @NateBrownNews 
+RT @BetsyZRussell: Eye on Boise: ACLU seeks to block enforcement of trans sports bill; link to full story by @NateBrownNews
  #idpol #idleg…
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1256287279582085120)

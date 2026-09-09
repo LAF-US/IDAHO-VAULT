@@ -28,7 +28,7 @@ The Power: If a sorcerer knows your given name, they can exert limited control o
 
 The Risk: It cannot force you to do anything against your basic instincts (like self-harm), but it makes you a "puppet" to those with the knowledge. This is why mages are so secretive about their birth names.
 
-2. The Taken Name
+1. The Taken Name
 
 This is a name you choose for yourself to "seal" your given name.
 
@@ -38,7 +38,7 @@ The Culture: Most sorcerers choose names that reflect their personality or aspir
 
 The Rule: Traditionally, once a name is "taken," it cannot be changed. It becomes your official identity in the magical world.
 
-3. The True Name
+1. The True Name
 
 This is the "real" you—the name written into the fabric of the universe (and the Book of Names).
 
@@ -67,4 +67,3 @@ Would you like me to look into the specific history of the Book of Names or how 
 Gemini is AI and can make mistakes.
 
 1Password menu is available. Press down arrow to select.
-

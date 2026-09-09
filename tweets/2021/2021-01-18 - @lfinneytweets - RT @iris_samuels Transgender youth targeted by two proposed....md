@@ -20,6 +20,7 @@ related:
 RT @iris_samuels: Transgender youth targeted by two proposed Montana bills (from @AP) <https://t.co/fXEtxyCkGu>
 
 ## Links
+
 - <https://apnews.com/article/7ca8d05e0b4ef196bacca14df611799c>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1351307829269807107)

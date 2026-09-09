@@ -20,6 +20,7 @@ related:
 Oh yeah, the other wild thing that happened this week #idleg <https://t.co/aw6V4jeBNI>
 
 ## Links
+
 - <https://x.com/IdahoReports/status/1776375048112316836>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1776375183764582493)

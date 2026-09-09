@@ -20,6 +20,7 @@ related:
 Happy Idaho GOP Convention to all those who celebrate. If you see me, come say hi and share news! #idpol <https://t.co/9mMo5Ahp2A>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/GP7Ij3vaUAAI-Nc.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1801097425668698228)

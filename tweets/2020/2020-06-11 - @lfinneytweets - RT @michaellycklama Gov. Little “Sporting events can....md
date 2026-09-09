@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @michaellycklama: Gov. Little: “Sporting events can operate under limited, physical distancing protocols.” 
+RT @michaellycklama: Gov. Little: “Sporting events can operate under limited, physical distancing protocols.”
 
 Also, gatherings of more th…
 

@@ -24,10 +24,11 @@ related:
   - lfinneytweets
 ---
 
-@IDJoe4Congress @IdahoReports @IdahoGOP Many candidates didn't respond to the solicitation and thus didn't receive a formal debate invite. A few submitted materials that the debate committee (@IdahoPTV/@IdahoPressClub/@LWV/@uidaho/@BoiseState/@IdahoStateU) found didn't reach their threshold. 
+@IDJoe4Congress @IdahoReports @IdahoGOP Many candidates didn't respond to the solicitation and thus didn't receive a formal debate invite. A few submitted materials that the debate committee (@IdahoPTV/@IdahoPressClub/@LWV/@uidaho/@BoiseState/@IdahoStateU) found didn't reach their threshold.
 <https://t.co/Z9OGrf8Clc>
 
 ## Links
+
 - <https://globalfreedomofexpression.columbia.edu/cases/arkansas-educational-television-commission-v-forbes/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

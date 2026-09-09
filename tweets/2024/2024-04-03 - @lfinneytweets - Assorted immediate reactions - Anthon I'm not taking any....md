@@ -15,9 +15,9 @@ related:
   - lfinneytweets
 ---
 
-Assorted immediate reactions - 
+Assorted immediate reactions -
 Anthon: "I'm not taking any words today."
-Moyle: "Bedke can't hear." 
+Moyle: "Bedke can't hear."
 Horman: "Unbelievable."
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

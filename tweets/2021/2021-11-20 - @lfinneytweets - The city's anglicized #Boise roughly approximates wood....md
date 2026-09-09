@@ -21,11 +21,12 @@ related:
   - Boise
 ---
 
-@NateBrownNews @mlcarmel @kyleoftheland The city's anglicized "#Boise" roughly approximates wood/trees. "Le bois" is 'the wood' or a small forested area, e.g. Winnie the Pooh's Hundred Acre Wood. In its adjective form, "boisé" describes a 'wooded' area. "Bwas-eh" 
-Pronunciation via Google. 
+@NateBrownNews @mlcarmel @kyleoftheland The city's anglicized "#Boise" roughly approximates wood/trees. "Le bois" is 'the wood' or a small forested area, e.g. Winnie the Pooh's Hundred Acre Wood. In its adjective form, "boisé" describes a 'wooded' area. "Bwas-eh"
+Pronunciation via Google.
 <https://t.co/oB6VquvXu1>
 
 ## Links
+
 - <https://translate.google.com/?sl=fr&tl=en&text=bois%C3%A9&op=translate>
 
 *In reply to [@NateBrownNews](https://twitter.com/NateBrownNews)*

@@ -14,6 +14,7 @@ Triage a bug report end-to-end: reproduce the bug, diagnose the root cause, veri
 ## Input
 
 You need either:
+
 - `issueTitle` and `issueBody` provided in args (preferred — use these directly as the bug report), OR
 - A GitHub issue number or URL mentioned in the conversation (use `gh issue view` to fetch details)
 

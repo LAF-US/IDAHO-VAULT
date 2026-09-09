@@ -20,6 +20,7 @@ related:
 @Soulliere4Idaho @FreedomIdaho <https://t.co/1GuoEWEt9L>
 
 ## Links
+
 - <https://x.com/idahofreedom/status/1230525871145902080>
 
 *In reply to [@Soulliere4Idaho](https://twitter.com/Soulliere4Idaho)*

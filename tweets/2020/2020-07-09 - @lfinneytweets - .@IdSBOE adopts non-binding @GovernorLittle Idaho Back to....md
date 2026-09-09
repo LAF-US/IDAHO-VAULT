@@ -27,6 +27,7 @@ related:
 .@IdSBOE adopts non-binding @GovernorLittle Idaho Back to School Framework (starts on page 14 of this document: <https://t.co/YLA98fVrnn>) #idedu #idleg #idpol
 
 ## Links
+
 - <https://boardofed.idaho.gov/meetings/board/archive/2020/070920/PPGA.pdf>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1281251190164971522)

@@ -17,6 +17,7 @@ related:
 Just as good at half the price? Sign me up. <https://t.co/cFYliImhDA>
 
 ## Links
+
 - <https://x.com/BarstoolBoise/status/1276669244747513861>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1276927693779394560)

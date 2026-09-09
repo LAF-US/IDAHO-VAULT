@@ -15,10 +15,11 @@ related:
   - lfinneytweets
 ---
 
-Meeting ended. If there's any takeaway from this morning: 
+Meeting ended. If there's any takeaway from this morning:
 <https://t.co/6HIMwLXmcM>
 
 ## Links
+
 - <https://x.com/davlinnews/status/1283780461521629184>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

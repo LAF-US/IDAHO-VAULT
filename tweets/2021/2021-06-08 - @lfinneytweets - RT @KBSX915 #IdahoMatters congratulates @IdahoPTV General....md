@@ -20,7 +20,7 @@ related:
   - IdahoMatters
 ---
 
-RT @KBSX915: #IdahoMatters congratulates @IdahoPTV General Manager Ron Pisaneschi as he prepares to retire this summer! 
+RT @KBSX915: #IdahoMatters congratulates @IdahoPTV General Manager Ron Pisaneschi as he prepares to retire this summer!
 
 In our interview…
 

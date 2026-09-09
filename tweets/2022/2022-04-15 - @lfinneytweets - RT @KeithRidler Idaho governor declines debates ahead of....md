@@ -23,6 +23,7 @@ related:
 RT @KeithRidler: Idaho governor declines debates ahead of Republican primary (from @AP) #idpol  <https://t.co/Gu7O2a3LcO>
 
 ## Links
+
 - <https://apnews.com/article/233b8f7666b005eafda2b938595d26f1>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1515094831277625346)

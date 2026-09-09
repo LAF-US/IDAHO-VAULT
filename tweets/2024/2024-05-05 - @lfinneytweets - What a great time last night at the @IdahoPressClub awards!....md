@@ -24,6 +24,7 @@ related:
 What a great time last night at the @IdahoPressClub awards! Proud of my colleagues at @IdahoReports and all the @IdahoPTV projects bearing my fingerprints.#idahopressclub <https://t.co/rKHsNG1F9V>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/GM1-48HX0AAMAOF.jpg)
 - ![alt text needed](https://pbs.twimg.com/media/GM1-5DfWsAAn2in.jpg)
 - ![alt text needed](https://pbs.twimg.com/media/GM1-5DhWIAAtqm2.jpg)

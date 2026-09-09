@@ -24,6 +24,7 @@ related:
 RT @brian_lenney: Here's how much Idaho college Presidents make... #idaho #idpol <https://t.co/3dKInZzmsL>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/GQS-Uo-bAAAPYpl.png)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1802775329326653872)

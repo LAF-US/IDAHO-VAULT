@@ -20,6 +20,7 @@ related:
 @sanford_nate Dakota lives! <https://t.co/jaVtR8e2gp>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/GKdWICfaYAAbKiu.jpg)
 
 *In reply to [@sanford_nate](https://twitter.com/sanford_nate)*

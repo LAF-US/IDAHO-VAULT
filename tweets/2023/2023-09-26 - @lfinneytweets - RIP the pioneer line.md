@@ -18,10 +18,11 @@ related:
   - lfinneytweets
 ---
 
-@AC_Dode @floppatakes RIP the pioneer line 
+@AC_Dode @floppatakes RIP the pioneer line
 <https://t.co/bgEY5Dus58>
 
 ## Links
+
 - <https://boisedev.com/news/2022/09/14/boise-salt-lake-city-partnering-to-request-rail-service-between-cities/>
 
 *In reply to [@AC_Dode](https://twitter.com/AC_Dode)*

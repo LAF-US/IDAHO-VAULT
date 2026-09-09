@@ -17,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-RT @CPRNews: “Wearing a mask is not a political statement,” @GovofCO said. 
+RT @CPRNews: “Wearing a mask is not a political statement,” @GovofCO said.
 
 "The virus doesn't care what political party you are in. The v…
 

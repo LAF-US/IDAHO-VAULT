@@ -20,6 +20,7 @@ related:
 City Beach, Sandpoint, ID #IdahoCOVID19 <https://t.co/NABZWQMMqI>
 
 ## Links
+
 - <https://x.com/robcurley/status/1253782135472676864>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1253782664118538241)

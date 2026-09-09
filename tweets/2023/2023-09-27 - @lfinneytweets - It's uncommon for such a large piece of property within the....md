@@ -27,6 +27,7 @@ It's uncommon for such a large piece of property within the inner Boise area to 
 <https://t.co/OfB7DZnAm1>
 
 ## Links
+
 - <https://www.idahostatesman.com/news/business/article279783764.html#storylink=cpy>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1707095217176977522)

@@ -22,6 +22,7 @@ related:
 The committee is discussing a bill that would prohibit colleges and universities from offering extra credit for voting. It is being sent to the amending order to clear up concerns that some senators had with vague language. #idpol #idleg <https://t.co/fIVNsAlFsP>
 
 ## Links
+
 - <https://t.co/fIVNsAlFsP>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1372922900135604226)

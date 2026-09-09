@@ -21,10 +21,11 @@ related:
   - idpol
 ---
 
-INBOX: In the 2025 legislative session, @IdahoFamilyPC plans to introduce a bill to "bring the Bible back to schools in the Gem State to be read in all public school classrooms without instruction or comment." 
+INBOX: In the 2025 legislative session, @IdahoFamilyPC plans to introduce a bill to "bring the Bible back to schools in the Gem State to be read in all public school classrooms without instruction or comment."
 Over 2,000 people have signed their petition online. #idleg #idpol <https://t.co/O6l7Kav6tD>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/GcxdceRbcAI8_Ss.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1858964235826720889)

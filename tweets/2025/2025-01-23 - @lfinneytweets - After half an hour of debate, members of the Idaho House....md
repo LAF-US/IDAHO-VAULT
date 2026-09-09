@@ -20,6 +20,7 @@ related:
 After half an hour of debate, members of the Idaho House accepted the raise with only 7 votes in opposition. #idleg <https://t.co/B91nSLeRfF>
 
 ## Links
+
 - <https://x.com/lfinneytweets/status/1882484189536428461>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1882510618311479358)

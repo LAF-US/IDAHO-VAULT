@@ -237,7 +237,7 @@ Narnia is the sung-creation and lawful-kingship axis of the map.
 ## Comparative Table
 
 | Circle | Power Source | Form | Standing Risk | Useful Vault Distinction |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Greenwood | Living material | Branch, mask, body, cage, house, violin | Possession mistaken for craft-right | Shaping requires standing |
 | Greensleeves | Song and social signal | Sleeve, ballad, tune, carol, flute | Desire mistaken for right | Singing does not compel consent |
 | Cooper Old Ones | Light | Office, time-loose agency, Things of Power | Capacity confused with cosmic office | Office under Light |

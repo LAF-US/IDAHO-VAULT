@@ -20,9 +20,11 @@ related:
 The page name of <https://t.co/nxIWTF7aiy> never fails to crack me up. #IdahoCOVID19 <https://t.co/as5vzqNMIl>
 
 ## Links
+
 - <http://coronavirus.idaho.gov>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/EmLcfehU8AAru8-.png)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1324863719361323008)

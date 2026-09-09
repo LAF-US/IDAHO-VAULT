@@ -22,6 +22,7 @@ related:
 Following passionate debate, the $20 food credit increase passes the House. It moves to the Senate. #idleg #idpol <https://t.co/DASH9VUqtz>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/FLQgsKPVkAAuE5P.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1491853532412071947)

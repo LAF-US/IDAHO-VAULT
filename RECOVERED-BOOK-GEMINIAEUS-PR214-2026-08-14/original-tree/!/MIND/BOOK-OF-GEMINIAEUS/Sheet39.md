@@ -85,4 +85,3 @@ Would you like me to take a specific set of raw notes and "pour" them into this 
 Gemini is AI and can make mistakes.
 
 1Password menu is available. Press down arrow to select.
-

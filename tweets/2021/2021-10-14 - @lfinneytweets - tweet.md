@@ -17,6 +17,7 @@ related:
 @TaraBethIdaho <https://t.co/Wvmb4bzh0j>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/FBoZww-VgAACgxa.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1448498566243045380)

@@ -23,6 +23,7 @@ related:
 Former Gov. Butch Otter is giving opening remarks. Supporters of candidate Priscilla Giddings have grouped behind the podium. #idpol #idleg <https://t.co/A1Y43Cbz0k>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/E2aAsDhVIAMQQuY.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

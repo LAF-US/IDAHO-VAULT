@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-Guy at the gas station this morning, reading @TheIdahoPress: "Oh wow... They gave Chad Daybell the death sentence. Thank God!" 
+Guy at the gas station this morning, reading @TheIdahoPress: "Oh wow... They gave Chad Daybell the death sentence. Thank God!"
 
 Print news distribution is not obsolete!
 

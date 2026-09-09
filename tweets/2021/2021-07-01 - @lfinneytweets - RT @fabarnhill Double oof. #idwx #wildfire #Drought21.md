@@ -26,6 +26,7 @@ related:
 RT @fabarnhill: Double oof. #idwx #wildfire #Drought21 <https://t.co/3Djkv6zCEM>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/E5OfYy2VkAUTKQR.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1410688693166231552)

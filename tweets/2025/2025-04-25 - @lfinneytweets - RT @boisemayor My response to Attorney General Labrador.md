@@ -19,6 +19,7 @@ related:
 RT @boisemayor: My response to Attorney General Labrador <https://t.co/hZqjRuhPXX>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/GpUsIt1awAADsmA.jpg)
 - ![alt text needed](https://pbs.twimg.com/media/GpUsKL7bYAMaPCm.jpg)
 

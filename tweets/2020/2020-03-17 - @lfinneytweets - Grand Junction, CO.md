@@ -17,6 +17,7 @@ related:
 Grand Junction, CO <https://t.co/aA0yMFFe4C>
 
 ## Links
+
 - <https://x.com/CPRNews/status/1240052736227340290>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1240056957282553856)

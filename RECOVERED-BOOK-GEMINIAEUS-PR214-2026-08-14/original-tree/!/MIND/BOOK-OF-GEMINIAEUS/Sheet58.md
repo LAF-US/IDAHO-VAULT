@@ -85,4 +85,3 @@ Ah, that message usually means your browser is blocking access to that specific 
 Gemini is AI and can make mistakes.
 
 1Password menu is available. Press down arrow to select.
-

@@ -18,7 +18,7 @@ Gemini said
 
 I've created that note for you.
 
-Google Keep 
+Google Keep
 
 Garmin and Strava Sync
 
@@ -27,4 +27,3 @@ Get logged into Garmin account and synchronize with Strava
 Gemini is AI and can make mistakes.
 
 1Password menu is available. Press down arrow to select.
-

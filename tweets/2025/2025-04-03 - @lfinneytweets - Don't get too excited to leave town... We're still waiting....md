@@ -19,10 +19,11 @@ related:
   - idpol
 ---
 
-Don't get too excited to leave town... We're still waiting on budget enhancements for the Charter School Commission, Public Schools, IDHW, the Attorney General, the Legislature itself, and more. #idleg #idpol 
+Don't get too excited to leave town... We're still waiting on budget enhancements for the Charter School Commission, Public Schools, IDHW, the Attorney General, the Legislature itself, and more. #idleg #idpol
 <https://t.co/cHANQLvPoa>
 
 ## Links
+
 - <https://blog.idahoreports.idahoptv.org/2025/03/25/outstanding-budgets-extend-the-2025-session/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1907883322086433125)

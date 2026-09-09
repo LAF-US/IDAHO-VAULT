@@ -47,7 +47,7 @@ is structural, not ornamental. The word does not mean "very deep." It means
 ## Cognate Comparisons
 
 | Language | Word | Meaning |
-|---|---|---|
+| --- | --- | --- |
 | Greek | *ábyssos* | bottomless |
 | Greek | *bathýs* | deep (cognate to PIE **gʷʰedʰ-*) |
 | Hebrew | *tehom* | deep, abyss, primordial waters |
@@ -95,10 +95,10 @@ the ground you expect to find.
 
 ## Sources
 
-- Online Etymology Dictionary: https://www.etymonline.com/word/abyss
-- Wiktionary: https://en.wiktionary.org/wiki/abyss
+- Online Etymology Dictionary: <https://www.etymonline.com/word/abyss>
+- Wiktionary: <https://en.wiktionary.org/wiki/abyss>
 - BibleHub, Strong's Greek 12 (ábussos):
-  https://biblehub.com/greek/12.htm
+  <https://biblehub.com/greek/12.htm>
 - OED entry for *abyss* (via Wiktionary references)
 
 Witnessed,

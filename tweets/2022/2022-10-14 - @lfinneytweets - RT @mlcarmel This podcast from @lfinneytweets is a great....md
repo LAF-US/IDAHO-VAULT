@@ -17,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-RT @mlcarmel: This podcast from @lfinneytweets is a great listen to breakdown a complex court case with wide ranging implications. 
+RT @mlcarmel: This podcast from @lfinneytweets is a great listen to breakdown a complex court case with wide ranging implications.
 
 I reme…
 

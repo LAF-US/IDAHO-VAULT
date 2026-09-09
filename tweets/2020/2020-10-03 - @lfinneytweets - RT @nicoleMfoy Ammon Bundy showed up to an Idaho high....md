@@ -19,7 +19,7 @@ related:
   - idpol
 ---
 
-RT @nicoleMfoy: Ammon Bundy showed up to an Idaho high school football game. Here's what happened next. #idpol 
+RT @nicoleMfoy: Ammon Bundy showed up to an Idaho high school football game. Here's what happened next. #idpol
 
 “Our parents have been fol…
 

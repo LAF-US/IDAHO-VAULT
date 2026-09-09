@@ -18,10 +18,11 @@ related:
   - lfinneytweets
 ---
 
-RT @kevinmillershow: @JaniceMcGeachin responds to the speaker's comments on @KTVB 
+RT @kevinmillershow: @JaniceMcGeachin responds to the speaker's comments on @KTVB
 <https://t.co/81QKSdunLL>
 
 ## Links
+
 - <https://kidotalkradio.com/idaho-lt-governor-janice-mcgeachin-scolds-speaker-bedke/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1415044877079908354)

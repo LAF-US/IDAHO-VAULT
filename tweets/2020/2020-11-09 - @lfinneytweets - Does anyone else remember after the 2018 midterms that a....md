@@ -17,6 +17,7 @@ related:
 Does anyone else remember after the 2018 midterms that a key part of Speaker negotiations within the party was Pelosi agreeing to only hold the position for two years and help train a new generation of leadership? That's just out the window apparently? <https://t.co/KdjQ1zgck6>
 
 ## Links
+
 - <https://x.com/BuzzFeedNews/status/1325612928838619136>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1325618852038729730)

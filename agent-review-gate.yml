@@ -1,5 +1,13 @@
 name: Agent Review Gate
 
+# PARKED — this file sits at the repository ROOT, not in .github/workflows/.
+# Actions only reads that directory, so nothing under `on:` below can fire from
+# here, whatever it says. Position is the switch, not a key inside the file:
+# parked by 063cdaa24 ("`.github` cleaned", 2026-08-21) along with the rest of
+# the suite, and activated only by moving the file back — see e280d8d03,
+# "restore opencode.yml to .github/workflows so its triggers fire". Editing the
+# triggers while the file is here changes nothing.
+#
 # Reconcile/backlog sweep (reconcile-open-prs) — ENGINE REBUILT, CLOCK RESERVED.
 #
 # What it does per run: restamps every open PR's risk labels from the classifier
@@ -14,7 +22,9 @@ name: Agent Review Gate
 # is safe. But the CADENCE is a chron_clock decision reserved to Logan: the
 # vault's established clock is once-daily/weekly ticks (see the TIME audit on PR
 # #775), and no repeating-interval cron joins it without Logan setting that norm.
-# When the chron_clock is established, add the schedule trigger here.
+# When the chron_clock is established, add the schedule trigger here — and note
+# that it takes both acts to run on a clock: the trigger, and the move back into
+# .github/workflows/ described above.
 #
 # History: 4h cron (disabled_manually 2026-05-26 — the RETIRED engine was
 # failing/noisy); #578 wrongly re-pointed it at push-on-main; reverted to

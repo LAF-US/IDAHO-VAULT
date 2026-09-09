@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @RANGEMedia4all: What happens if your skin touches fentanyl? 
+RT @RANGEMedia4all: What happens if your skin touches fentanyl?
 To separate fentanyl’s very real hazards from some truly absurd myths, we…
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1806500788447101029)

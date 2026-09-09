@@ -17,6 +17,7 @@ related:
 If you think of Idaho as a red state, read this <https://t.co/TZBOpe2zcj>
 
 ## Links
+
 - <https://x.com/IdahoStatesman/status/1000738397886074880>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1000906267634819072)

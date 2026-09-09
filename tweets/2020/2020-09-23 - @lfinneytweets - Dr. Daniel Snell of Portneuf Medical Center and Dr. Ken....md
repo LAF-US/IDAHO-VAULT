@@ -20,6 +20,7 @@ related:
 Dr. Daniel Snell of Portneuf Medical Center and Dr. Ken Newhouse of Bingham Memorial Hospital told the Southeastern Idaho Public Health Board that their current rate of  COVID-19 hospitalizations is unsustainable. "We are on a razor's edge," Newhouse said. #IdahoCOVID19 <https://t.co/Pl7Y9nBkak>
 
 ## Links
+
 - <https://x.com/CBS2Boise/status/1308515413505060870>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1308590738788155394)

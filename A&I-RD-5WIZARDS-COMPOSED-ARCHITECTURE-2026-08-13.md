@@ -36,7 +36,7 @@ The House remains the durable context. A run is an event within the House. It do
 This note relies on several materials with distinct dates, authorities, and statuses. They should not be flattened into one undifferentiated specification.
 
 | Source | Date / status stated by source | What it contributes | What it does **not** establish |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | `.crewai/MANIFEST.md` | Created 2026-04-04; updated 2026-08-13; `status: retired` | The record of the CrewAI dependency-removal decision: no CrewAI runtime, crew, or runner remains registered. | That the six-question concept, Familiar roles, LangGraph, AutoGen, or human-feedback training has been rejected as future design work. |
 | `.crewai/5WIZARDS-DRAFT.md` | 2026-04-15; `status: draft`; `phase: concept-refinement` | The most detailed 5Wizards design: six inquiry lanes, paired Wizard/Familiar roles, atomic claims, validation gates, a Council, and staged outputs. | Live topology, registered agents, or an approved implementation plan. |
 | `!/SENIOR-GAME-DEV-NOTE-CONNECTOR-POSTURE-2026-04-16.md` | 2026-04-16; recommendation note | A caution that CrewAI should be an adapter around a proven core, not the sole location of system truth; it names LangGraph as a possible later graph-runtime fit. | A requirement that no additional framework can ever be used. |
@@ -53,7 +53,7 @@ The direct instruction of the Architect remains controlling. Where these sources
 The six inquiry lanes are the journalistic questions:
 
 | Lane | Question | Wizard function | Familiar function | Primary product |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | `WHO` | Who is involved? | Synthesizes identities, roles, standing, and relationships. | Tests identity claims, aliases, attribution, and standing assumptions. | Identity ledger. |
 | `WHAT` | What exists or happened? | Synthesizes events, artifacts, changes, and assertions. | Tests existence, artifact integrity, and claim boundaries. | Artifact/event ledger. |
 | `WHEN` | When did it occur? | Synthesizes chronology and sequence. | Tests timestamps, version order, recency, and temporal precision. | Timeline. |
@@ -68,7 +68,7 @@ The Wizard and Familiar are not merely role-playing wrappers around the same pro
 The frameworks are compatible because they answer different architectural questions.
 
 | Layer / instrument | Proposed responsibility | Bounded interface | Must not become |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **Vault record** | Holds source dossiers, run charters, cited evidence, reports, decisions, and durable artifacts. | File paths, commit identifiers, source hashes, and explicit frontmatter. | A background agent memory that alters itself without review. |
 | **LangGraph** | Holds the run’s explicit state, parallelism, conditional transitions, human pauses, revision caps, and resumability. | Typed `InquiryRunState` and named transitions. | A constitutional authority, self-scheduler, or automatic promoter. |
 | **CrewAI** | Instantiates the role-and-task composition of a specific run: Wizards, Familiars, research tasks, tool permissions, and bounded synthesis assignments. | Agents, tasks, crews/flows, structured task output. | The only definition of the 5Wizards system or an unbounded manager. |
@@ -187,7 +187,7 @@ The Council may produce a `council_matrix` and a `synthesis_recommendation`. It 
 The first credible prototype should prove a real inquiry mechanic without simulating a full pantheon.
 
 | Element | Pilot constraint |
-|---|---|
+| --- | --- |
 | Scope | One human-authorized source dossier and one concrete question. |
 | Roles | One Wizard/Familiar pair, beginning with `WHAT` unless the docket makes another lane more appropriate. |
 | Orchestration | A short LangGraph path with a finite revision cap. |

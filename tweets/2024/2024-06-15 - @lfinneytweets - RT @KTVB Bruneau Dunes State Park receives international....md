@@ -19,6 +19,7 @@ related:
 RT @KTVB: Bruneau Dunes State Park receives international designation <https://t.co/GUhBIMbLEn>
 
 ## Links
+
 - <https://www.ktvb.com/article/news/local/idaho-bruneau-dunes-state-park-dark-sky-international-designation-certification/277-3ab95551-5524-4f74-9afa-1f06e50cf71a?utm_campaign=snd-autopilot>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1801838682749751550)

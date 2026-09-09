@@ -26,6 +26,7 @@ related:
 RT @brandendurst: For Immediate Release: #idpol #idleg #idedu <https://t.co/idSEjTGMny>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/F65JHyHaEAAXYE8.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1706389783805825209)

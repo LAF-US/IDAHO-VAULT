@@ -37,7 +37,7 @@ source trails and working observations. It is not doctrine.
 ## External Sources Used
 
 1. Philip Pullman, "His Dark Materials - What is Dust?"
-   - URL: https://www.philip-pullman.com/hdm?pageID=4
+   - URL: <https://www.philip-pullman.com/hdm?pageID=4>
    - Used as the primary author-side source for the moral interpretation of
      Dust. Pullman explains the Magisterium's fear of Dust as original-sin
      evidence, then identifies Lyra's opposing view with his own: Dust is
@@ -46,20 +46,20 @@ source trails and working observations. It is not doctrine.
 
 2. Penguin Random House, "His Dark Materials: The Amber Spyglass (Book 3)
    Reader's Guide".
-   - URL: https://www.penguinrandomhouse.com/books/136441/his-dark-materials-the-amber-spyglass-book-3-by-philip-pullman/9780440418566/readers-guide/
+   - URL: <https://www.penguinrandomhouse.com/books/136441/his-dark-materials-the-amber-spyglass-book-3-by-philip-pullman/9780440418566/readers-guide/>
    - Used for publisher grounding: *The Amber Spyglass* introduces the mulefa,
      who can see Dust; identifies Mary Malone's amber spyglass as a central
      instrument; and names Dust, Dark Matter, and Sraf as different names for
      the same material across worlds.
 
 3. Random House, "His Dark Materials: The Amber Spyglass (Book 3)".
-   - URL: https://www.randomhousebooks.com/books/136441/
+   - URL: <https://www.randomhousebooks.com/books/136441/>
    - Used for publisher summary: the third book's crisis includes Dust draining
      from the sky, and the fate of living and dead turns on Lyra and Will's
      choices.
 
 4. Encyclopaedia Britannica, "His Dark Materials".
-   - URL: https://www.britannica.com/topic/His-Dark-Materials-book-trilogy-by-Pullman
+   - URL: <https://www.britannica.com/topic/His-Dark-Materials-book-trilogy-by-Pullman>
    - Used for independent reference grounding: the trilogy is Pullman's
      parallel-world fantasy sequence; Dust is a mysterious particle associated
      by the Magisterium with original sin but interpreted by Lyra as love,
@@ -68,21 +68,21 @@ source trails and working observations. It is not doctrine.
      final choice to seal the openings.
 
 5. His Dark Materials Wiki, "Amber spyglass".
-   - URL: https://hisdarkmaterials.fandom.com/wiki/Amber_spyglass
+   - URL: <https://hisdarkmaterials.fandom.com/wiki/Amber_spyglass>
    - Used as a secondary fan-canon index for object mechanics: Mary Malone and
      the mulefa create a spyglass/telescope that lets humans see Dust; the
      lenses are made from amber-like lacquer and wheel-tree oil is part of the
      successful optical configuration.
 
 6. His Dark Materials Wiki, "Dust".
-   - URL: https://hisdarkmaterials.fandom.com/wiki/Dust
+   - URL: <https://hisdarkmaterials.fandom.com/wiki/Dust>
    - Used as a secondary fan-canon index for cross-world naming and hazard
      mechanics: Dust is also called Rusakov particles, Shadows, Dark Matter,
      and Sraf; Spectres consume living consciousness and destroy Dust-producing
      capacity.
 
 7. His Dark Materials Wiki, "Window".
-   - URL: https://hisdarkmaterials.fandom.com/wiki/Window
+   - URL: <https://hisdarkmaterials.fandom.com/wiki/Window>
    - Used as a secondary fan-canon index for the leakage model: open windows
      slowly lose Dust into the void; each knife-made window is also associated
      with Spectre creation; the late-trilogy repair closes all windows except

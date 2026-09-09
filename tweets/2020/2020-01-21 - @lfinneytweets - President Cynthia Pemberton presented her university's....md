@@ -26,6 +26,7 @@ related:
 @LCSC President Cynthia Pemberton presented her university's budget to JFAC this morning. She brought the helmet to talk about CTE and their new construction training program. #idleg #idpol #idedu <https://t.co/N3k7Cti7VA>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/EO03WULUEAE_ksk.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1219691938951024640)

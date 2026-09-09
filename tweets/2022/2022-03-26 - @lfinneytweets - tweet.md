@@ -20,6 +20,7 @@ related:
 @RebeccaADeLeon <https://t.co/WF7ywqTAHV>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/FOvhrB8VIAEaVN9.jpg)
 
 *In reply to [@RebeccaADeLeon](https://twitter.com/RebeccaADeLeon)*

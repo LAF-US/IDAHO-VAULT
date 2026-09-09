@@ -24,6 +24,7 @@ related:
 RT @RuthBrownNews: The teenager was in IDJC custody. #idpol #idleg <https://t.co/EwGd4YJZke>
 
 ## Links
+
 - <https://x.com/EastIDNews/status/1466459647318003712>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1466504222707384323)

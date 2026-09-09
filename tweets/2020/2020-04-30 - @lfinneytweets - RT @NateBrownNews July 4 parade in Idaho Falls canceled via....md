@@ -25,6 +25,7 @@ related:
 RT @NateBrownNews: July 4 parade in Idaho Falls canceled <https://t.co/oSUXSY9WG5> via @thepostregister #idahoCovid19 #COVID19
 
 ## Links
+
 - <https://www.postregister.com/news/local/july-4-parade-in-idaho-falls-canceled/article_1a38d6b5-8550-542b-a1f7-35a99613e212.html?utm_medium=social&utm_source=twitter&utm_campaign=user-share>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1255669370572795905)

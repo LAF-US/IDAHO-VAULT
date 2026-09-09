@@ -26,8 +26,8 @@ related:
   - IdahoCOVID19
 ---
 
-@IdahoPTV @GovernorLittle Little acknowledges that the pandemic wasn’t on anyone’s radar last year. #idpol #idleg #IdahoCOVID19 
-“We’ve come a long way in our fight against the enemy virus, and with the arrival of a safe vaccine just a few weeks ago, the end of the battle is in sight.” 
+@IdahoPTV @GovernorLittle Little acknowledges that the pandemic wasn’t on anyone’s radar last year. #idpol #idleg #IdahoCOVID19
+“We’ve come a long way in our fight against the enemy virus, and with the arrival of a safe vaccine just a few weeks ago, the end of the battle is in sight.”
 -@GovernorLittle
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

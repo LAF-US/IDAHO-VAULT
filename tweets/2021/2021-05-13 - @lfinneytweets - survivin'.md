@@ -17,10 +17,11 @@ related:
   - lfinneytweets
 ---
 
-@bastilledan survivin' 
+@bastilledan survivin'
 <https://t.co/3TzQcBnz5W>
 
 ## Links
+
 - <https://open.spotify.com/track/1lwvJQGhdq6Kyr4BBquf23?si=w4ncgAivR_Gw4HBqn7Ghsw>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

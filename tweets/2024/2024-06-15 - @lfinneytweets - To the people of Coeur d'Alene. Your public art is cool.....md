@@ -17,6 +17,7 @@ related:
 To the people of Coeur d'Alene. Your public art is cool. But why on earth did you do this. <https://t.co/K8aiRwRund>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/GQE3hOsaQAAeChr.jpg)
 - ![alt text needed](https://pbs.twimg.com/media/GQE3hDUbEAAn6G5.jpg)
 

@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @MelissaKXLY4: Gov Inslee says: 
+RT @MelissaKXLY4: Gov Inslee says:
 -Social distancing has to be successful enough that we're confident the curve won't rebound and go back…
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1250572300560162816)

@@ -21,7 +21,7 @@ Scheduled 24-hour review of failing GitHub Actions runs across `laf-us/idaho-vau
 ## 5W Summary
 
 | | |
-|---|---|
+| --- | --- |
 | **Who** | GitHub Actions runners on `laf-us/idaho-vault`; a `MERGE_QUEUE_TOKEN`/`GITHUB_TOKEN` with insufficient label-create scope; `secret-pattern-policy` flagging content on `logan/obsidian`. |
 | **What** | 13 failing runs across 6 workflows (up from yesterday's 12-across-2, because this window extends ~20h past yesterday's cutoff): Codacy Security Scan (4), Codacy Coverage Reporter (3), Python Test Suite (1), Agent Review Response (1), Secret Pattern Policy (1), Sync Plugin Registry (1). 0 `cancelled`/`timed_out`/`stale`, 0 stuck `in_progress`/`queued`. |
 | **When** | 2026-07-21T12:22Z – 2026-07-22T08:24Z. |
@@ -56,6 +56,7 @@ PR #596 (`test/dotfolder-live-snapshot-with-drive-migration-attempt`), run 29829
 ```
 FileNotFoundError: [Errno 2] No such file or directory: '.../.openclaw/openclaw-live-ref.json'
 ```
+
 (+2 more, for `SECRETS-1PASSWORD.md` and `DISCORD-SETUP.md`) — 3 of 326 tests error.
 
 The branch's own dotfolder-migration removed/renamed the `.openclaw/*` fixture paths some test still expects. This is an experimental branch (`test/` prefix) already touched today by the sibling session for 5 unrelated review threads — not re-touching it further this run without understanding whether the fixtures or the migration script is the thing that's supposed to change; flagging for whoever owns that migration's intended end-state.

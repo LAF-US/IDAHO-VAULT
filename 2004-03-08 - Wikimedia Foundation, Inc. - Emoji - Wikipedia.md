@@ -285,8 +285,6 @@ Additional emoji can be found in the following Unicode blocks: [Arrows](https://
 - On July 28, 2017, [Sony Pictures Animation](https://en.wikipedia.org/wiki/Sony_Pictures_Animation "Sony Pictures Animation") released *[The Emoji Movie](https://en.wikipedia.org/wiki/The_Emoji_Movie "The Emoji Movie")*, an animated movie featuring the voices of [Patrick Stewart](https://en.wikipedia.org/wiki/Patrick_Stewart "Patrick Stewart"), [Christina Aguilera](https://en.wikipedia.org/wiki/Christina_Aguilera "Christina Aguilera"), [Sofía Vergara](https://en.wikipedia.org/wiki/Sof%C3%ADa_Vergara "Sofía Vergara"), [Anna Faris](https://en.wikipedia.org/wiki/Anna_Faris "Anna Faris"), [T. J. Miller](https://en.wikipedia.org/wiki/T._J._Miller "T. J. Miller"), and other notable actors and comedians.[^191] It was universally panned, and it has been considered one of the worst animated films.
 - On September 3, 2021, [Drake](https://en.wikipedia.org/wiki/Drake_\(musician\) "Drake (musician)") released his sixth studio [album](https://en.wikipedia.org/wiki/Album "Album"), *[Certified Lover Boy](https://en.wikipedia.org/wiki/Certified_Lover_Boy "Certified Lover Boy")*. The album's cover art features twelve emoji of pregnant women in varying [clothing](https://en.wikipedia.org/wiki/Clothing "Clothing") colors, hair colors, and skin tones.[^192] [^193]
 
-[^1]: Also has ARIB (ARIB SJIS 0xEECE) [^71] and JCarrier (SoftBank SJIS 0xF7DA, au SJIS 0xF74A) [^72] sources.
-
 [^2]: Older [au by KDDI](https://en.wikipedia.org/wiki/Au_by_KDDI "Au by KDDI") devices had used pictorial representations of all zodiac signs, displaying for instance the [pisces](https://en.wikipedia.org/wiki/Pisces_\(astrology\) "Pisces (astrology)") sign (♓️) as a fish (🐟). Later devices had changed these to symbols, for consistency with other vendors.[^76]
 
 [^3]: Five other Ninja Cat emoji were released: Stunt Cat (🐱🏍), Hacker Cat (🐱💻), Dino Cat (🐱🐉), Hipster Cat (🐱👓) and Astro Cat (🐱🚀).
@@ -423,13 +421,8 @@ Additional emoji can be found in the following Unicode blocks: [Arrows](https://
 
 [^69]: ["UTR #51: Unicode Emoji"](https://unicode.org/reports/tr51/). Unicode Consortium. September 4, 2025.
 
-[^70]: [Apple, Inc](https://en.wikipedia.org/wiki/Apple,_Inc "Apple, Inc") (2005). ["Map (external version) from Mac OS Dingbats character set to Unicode 3.2 and later"](https://unicode.org/Public/MAPPINGS/VENDORS/APPLE/DINGBATS.TXT). [Unicode Consortium](https://en.wikipedia.org/wiki/Unicode_Consortium "Unicode Consortium").
-
-[^71]: Scherer, Markus (2008). ["ARIB Broadcast Symbols Unicode conversion mapping table using ICU's.ucm file format and representing ARIB codes in the Shift-JIS encoding scheme"](https://github.com/google/emoji4unicode/blob/master/data/arib/arib.ucm). [Google](https://en.wikipedia.org/wiki/Google_LLC "Google LLC").
 
 [^72]: [Unicode Consortium](https://en.wikipedia.org/wiki/Unicode_Consortium "Unicode Consortium"). ["Emoji Sources"](https://www.unicode.org/Public/UCD/latest/ucd/EmojiSources.txt). *Unicode Character Database*.
-
-[^73]: Suignard, Michel (November 6, 2012). ["Status of encoding of Wingdings and Webdings Symbols"](https://www.unicode.org/L2/L2012/12368-n4384.pdf) (PDF). [ISO/IEC JTC 1/SC 2](https://en.wikipedia.org/wiki/ISO/IEC_JTC_1/SC_2 "ISO/IEC JTC 1/SC 2") /WG 2 N4384, [UTC](https://en.wikipedia.org/wiki/Unicode_Technical_Committee "Unicode Technical Committee") [L2](https://en.wikipedia.org/wiki/INCITS "INCITS") /12-368. (For display consistent with the other source encodings, the prefix digits denoting the specific WDings font have been removed, and the numbers have been converted to hexadecimal.)
 
 [^74]: ["Proposed Draft UTR #51, Unicode Emoji"](https://www.unicode.org/review/pri286/). *Public Review Issues*. [Unicode Consortium](https://en.wikipedia.org/wiki/Unicode_Consortium "Unicode Consortium"). PRI 286.
 

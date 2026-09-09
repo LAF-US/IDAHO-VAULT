@@ -15,10 +15,11 @@ related:
   - lfinneytweets
 ---
 
-Its sibling may offer a clue. 
+Its sibling may offer a clue.
 <https://t.co/QaC0Q73vRY>
 
 ## Links
+
 - <https://x.com/everytract/status/1172499196865171456?t=ZwC9wIuvC2kuriyiRifo0A>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

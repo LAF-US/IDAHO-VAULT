@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @mlcarmel: Idaho is one of a handful of states that allows forced annexation, but a new bill wants to change that. 
+RT @mlcarmel: Idaho is one of a handful of states that allows forced annexation, but a new bill wants to change that.
 
 I dug into legislat…
 

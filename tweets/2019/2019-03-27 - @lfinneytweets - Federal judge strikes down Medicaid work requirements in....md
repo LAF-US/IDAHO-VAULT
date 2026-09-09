@@ -17,6 +17,7 @@ related:
 Federal judge strikes down Medicaid work requirements in Kentucky and Arkansas <https://t.co/5mGuNrpKSC>
 
 ## Links
+
 - <https://x.com/i/events/1111015480272142336>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1111052957288546304)
