@@ -1,4 +1,5 @@
 ---
+title: "Jeppesen says the vaccinations will be available to the..."
 date: 2021-01-05
 time: 21:37:52
 tweet_id: "1346571642206474240"

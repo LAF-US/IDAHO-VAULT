@@ -1,4 +1,5 @@
 ---
+title: "RT @NWPBroadcasting NW farmers are pouring on the..."
 date: 2021-06-24
 time: 00:43:48
 tweet_id: "1407861983664214017"

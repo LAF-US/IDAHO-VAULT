@@ -1,4 +1,5 @@
 ---
+title: "RT @HuffPost Sen. Jeff Merkley (D-Ore.) tweeted a picture..."
 date: 2021-01-06
 time: 22:25:23
 tweet_id: "1346945988213161986"

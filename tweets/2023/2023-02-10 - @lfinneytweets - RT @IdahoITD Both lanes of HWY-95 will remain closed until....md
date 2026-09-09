@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoITD Both lanes of HWY-95 will remain closed until..."
 date: 2023-02-10
 time: 19:26:44
 tweet_id: "1624127747986452480"

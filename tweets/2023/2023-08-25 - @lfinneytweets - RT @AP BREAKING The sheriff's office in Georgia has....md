@@ -1,4 +1,5 @@
 ---
+title: "RT @AP BREAKING The sheriff's office in Georgia has..."
 date: 2023-08-25
 time: 02:43:53
 tweet_id: "1694903393406394687"

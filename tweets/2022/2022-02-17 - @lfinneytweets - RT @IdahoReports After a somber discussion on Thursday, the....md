@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports After a somber discussion on Thursday, the..."
 date: 2022-02-17
 time: 23:21:10
 tweet_id: "1494451888791515150"

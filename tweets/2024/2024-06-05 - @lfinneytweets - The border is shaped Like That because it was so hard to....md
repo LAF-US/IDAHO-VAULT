@@ -1,4 +1,5 @@
 ---
+title: "The border is shaped Like That because it was so hard to..."
 date: 2024-06-05
 time: 00:09:46
 tweet_id: "1798145152365769030"

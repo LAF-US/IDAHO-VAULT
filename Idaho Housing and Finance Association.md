@@ -6,6 +6,7 @@ related:
 - housing
 authority: LOGAN
 ---
-Statewide housing authority entity 
-- executive director Gerald Hunter 
-- distributed American Rescue Plan Act rent relief 
+Statewide housing authority entity
+
+- executive director Gerald Hunter
+- distributed American Rescue Plan Act rent relief

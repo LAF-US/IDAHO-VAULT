@@ -1,4 +1,5 @@
 ---
+title: "House Education Committee introduces a bill by Rep...."
 date: 2020-01-30
 time: 16:10:11
 tweet_id: "1222914916744458240"

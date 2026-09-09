@@ -1,4 +1,5 @@
 ---
+title: "Describing anything political as to the right is..."
 date: 2024-05-22
 time: 19:24:14
 tweet_id: "1793362252189385063"

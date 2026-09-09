@@ -218,7 +218,7 @@ carriers (GCS, Internet Archive, or THE-CITY 5TB drive).
 ### Ceiling 2 — Account storage quota (10 GiB, free plan)
 
 | Meter | Free plan | Team / Enterprise | Resets? |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | LFS storage | 10 GiB total | 250 GiB total | **No** — hourly accrual, persistent |
 | LFS bandwidth (downloads) | 10 GiB / month | 250 GiB / month | **Yes** — at billing cycle (1st of month) |
 

@@ -17,10 +17,11 @@ related:
 ---
 
 @TheIdahoPress There’s that full quote. Highlight of my day.
-https://t.co/wxYiGhX0TT
+<https://t.co/wxYiGhX0TT>
 
 ## Links
-- https://x.com/NateBrownNews/status/1221864227876425728
+
+- <https://x.com/NateBrownNews/status/1221864227876425728>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

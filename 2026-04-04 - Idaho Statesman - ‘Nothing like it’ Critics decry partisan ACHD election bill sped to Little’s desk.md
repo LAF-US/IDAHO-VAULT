@@ -49,7 +49,7 @@ Vander Woude chuckled as he spoke. But earlier in committee, Rep. Monica Church,
 
 ![Rep. Monica Church, D-Boise, pushed back against the bill to move ACHD to partisan, countywide elections.](https://www.idahostatesman.com/public/latest-news/ecsbym/picture307966645/alternates/FREE_1140/BOI_0602churchpark)
 
-Rep. Monica Church, D-Boise, pushed back against the bill to move ACHD to partisan, countywide elections. Darin Oswald doswald@idahostatesman.com
+Rep. Monica Church, D-Boise, pushed back against the bill to move ACHD to partisan, countywide elections. Darin Oswald <doswald@idahostatesman.com>
 
 “We have not had proper time to look this over, nor has the bill’s sponsor,” she said.
 
@@ -69,7 +69,7 @@ The scale of the election would turn commissioners “into full-time fundraisers
 
 ![Ada County Highway District Commission President Miranda Gold said the legislation would open ACHD races up to “moneyed interests.”](https://www.idahostatesman.com/public/latest-news/o6bg9/picture303275316/alternates/FREE_1140/BOI_040107achdcensurevote)
 
-Ada County Highway District Commission President Miranda Gold said the legislation would open ACHD races up to “moneyed interests.” Sarah A. Miller smiller@idahostatesman.com
+Ada County Highway District Commission President Miranda Gold said the legislation would open ACHD races up to “moneyed interests.” Sarah A. Miller <smiller@idahostatesman.com>
 
 The change would mirror the way county commissioners are elected throughout the state, which Den Hartog and Palmer described [in the bill’s statement of purpose](https://legislature.idaho.gov/wp-content/uploads/sessioninfo/2026/legislation/S1356SOP.pdf) as “well-understood and ensures that countywide commissioners are elected on the broadest possible basis.”
 

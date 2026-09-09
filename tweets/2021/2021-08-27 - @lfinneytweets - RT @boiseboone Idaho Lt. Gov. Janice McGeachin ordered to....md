@@ -1,4 +1,5 @@
 ---
+title: "RT @boiseboone Idaho Lt. Gov. Janice McGeachin ordered to..."
 date: 2021-08-27
 time: 22:43:48
 tweet_id: "1431386996782424064"

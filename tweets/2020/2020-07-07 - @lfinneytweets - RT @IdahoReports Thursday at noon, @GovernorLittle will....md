@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Thursday at noon, @GovernorLittle will..."
 date: 2020-07-07
 time: 21:26:42
 tweet_id: "1280614242018717697"

@@ -99,7 +99,7 @@ Idaho Education News will continue to track campaign finance reports through the
 
 **Tom Moore**: $50,784, including $50,067 in loans from the candidate.
 
-**René Ozuna** (incumbent): $8,061, including $1,000 from Meridian mayor Robert Simison, and $1,000 from Engineered Structures Inc., a builder with ties to West Ada. 
+**René Ozuna** (incumbent): $8,061, including $1,000 from Meridian mayor Robert Simison, and $1,000 from Engineered Structures Inc., a builder with ties to West Ada.
 
 ### **Coeur d'Alene, Zone 2: $22,692**
 
@@ -107,7 +107,7 @@ Idaho Education News will continue to track campaign finance reports through the
 
 **Yasmin Harris**: $5,567.
 
-**Paul Mahlow**: $602, entirely self-funded. 
+**Paul Mahlow**: $602, entirely self-funded.
 
 ### **Kuna, Zone 1: $21,614**
 

@@ -1,4 +1,5 @@
 ---
+title: "Idaho Senate update Amendments ran smoothly this morning...."
 date: 2024-02-07
 time: 18:19:20
 tweet_id: "1755295193178476707"

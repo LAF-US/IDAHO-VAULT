@@ -4,4 +4,4 @@ related:
 - Broadband Fund
 authority: LOGAN
 ---
-created the Broadband Advisory Board and the Broadband Fund 
+created the Broadband Advisory Board and the Broadband Fund

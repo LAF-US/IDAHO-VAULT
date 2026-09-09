@@ -1,4 +1,5 @@
 ---
+title: "RT @crampell Arizona quietly suspends Medicaid work..."
 date: 2019-10-23
 time: 18:46:54
 tweet_id: "1187077957266788353"

@@ -1,4 +1,5 @@
 ---
+title: "Coolest line I've ever written in a story."
 date: 2021-08-12
 time: 22:20:33
 tweet_id: "1425945327635369986"

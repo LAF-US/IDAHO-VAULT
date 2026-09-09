@@ -1,4 +1,5 @@
 ---
+title: "RT @RadioDawson @GovernorLittle In reference to the rise in..."
 date: 2020-06-25
 time: 18:19:19
 tweet_id: "1276218430161448960"

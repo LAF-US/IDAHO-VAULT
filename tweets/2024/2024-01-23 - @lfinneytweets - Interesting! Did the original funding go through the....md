@@ -1,4 +1,5 @@
 ---
+title: "Interesting! Did the original funding go through the..."
 date: 2024-01-23
 time: 00:32:42
 tweet_id: "1749590947258880393"

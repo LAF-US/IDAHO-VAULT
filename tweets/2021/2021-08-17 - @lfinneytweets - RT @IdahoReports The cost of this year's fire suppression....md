@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports The cost of this year's fire suppression..."
 date: 2021-08-17
 time: 22:39:18
 tweet_id: "1427761984561311747"

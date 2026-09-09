@@ -1,4 +1,5 @@
 ---
+title: "RT @uvmvermont The future is bright! We\u2019re excited to..."
 date: 2025-03-20
 time: 22:02:57
 tweet_id: "1902843327629996134"

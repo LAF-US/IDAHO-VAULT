@@ -1,4 +1,5 @@
 ---
+title: "RT @sprdougnad Washington @GovInslee extends #Covid19..."
 date: 2020-12-08
 time: 23:13:56
 tweet_id: "1336448958302863360"

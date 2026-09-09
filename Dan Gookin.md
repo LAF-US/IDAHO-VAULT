@@ -5,5 +5,6 @@ related:
 - city council
 authority: LOGAN
 ---
-Residence: Coeur d'Alene 
- - CDA city council member 
+Residence: Coeur d'Alene
+
+- CDA city council member

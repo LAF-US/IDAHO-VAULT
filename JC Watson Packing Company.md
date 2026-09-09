@@ -4,4 +4,4 @@ related:
 - Parma
 ---
 
-onion packing company in Parma 
+onion packing company in Parma

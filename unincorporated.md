@@ -1,1 +1,1 @@
-land in a county that is not part of a city 
+land in a county that is not part of a city

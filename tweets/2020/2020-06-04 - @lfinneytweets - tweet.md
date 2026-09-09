@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2020-06-04
 time: 23:17:28
 tweet_id: "1268683317269782529"
@@ -17,10 +18,11 @@ related:
   - lfinneytweets
 ---
 
-@annehelen @DailyBee https://t.co/JnnAOPx5o9
+@annehelen @DailyBee <https://t.co/JnnAOPx5o9>
 
 ## Links
-- https://x.com/lyndsie_kiebert/status/1268681797019164672
+
+- <https://x.com/lyndsie_kiebert/status/1268681797019164672>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

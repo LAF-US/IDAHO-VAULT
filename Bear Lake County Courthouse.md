@@ -8,4 +8,4 @@ related:
 - magistrate court
 ---
 
-magistrate court Bear Lake County courthouse 
+magistrate court Bear Lake County courthouse

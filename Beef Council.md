@@ -4,4 +4,4 @@ related:
 - cattle
 ---
 
-cattle 
+cattle

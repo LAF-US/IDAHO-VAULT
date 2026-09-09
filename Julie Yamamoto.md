@@ -5,4 +5,5 @@ related:
 authority: LOGAN
 ---
 Residence: Caldwell
-- House Education chair 
+
+- House Education chair

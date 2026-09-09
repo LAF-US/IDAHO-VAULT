@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports I did not sign these bills because the..."
 date: 2024-04-10
 time: 19:11:19
 tweet_id: "1778138710531514446"

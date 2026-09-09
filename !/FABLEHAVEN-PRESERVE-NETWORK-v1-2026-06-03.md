@@ -50,7 +50,7 @@ is held.
 Three organs govern it, and they are the three chapters of this cluster:
 
 | Organ | What it is | Chapter |
-|---|---|---|
+| --- | --- | --- |
 | **The Treaty** | The covenant all the creatures ratify — the law that binds conduct within the bounds | `!/FABLEHAVEN-THE-TREATY-v1-2026-06-03.md` |
 | **The Caretaker** | The steward of a single preserve — major decisions, and access via the register | `!/FABLEHAVEN-THE-CARETAKER-v1-2026-06-03.md` |
 | **The Two Orders** | The protective federation (Knights of the Dawn) and the subversive network (Society of the Evening Star) that operate *across* preserves | `!/FABLEHAVEN-TWO-ORDERS-v1-2026-06-03.md` |
@@ -116,4 +116,8 @@ is already living.
 4. **Local autonomy, common charter — both present?** Decisions local,
    legitimacy shared. Missing either, the network frays or calcifies.
 
-###### [["The world is quiet here."]]
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

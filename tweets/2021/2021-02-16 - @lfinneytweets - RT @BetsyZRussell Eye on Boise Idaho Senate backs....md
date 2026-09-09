@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Idaho Senate backs..."
 date: 2021-02-16
 time: 20:52:51
 tweet_id: "1361780606120587269"

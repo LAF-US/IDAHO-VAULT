@@ -1,4 +1,5 @@
 ---
+title: "RT @ass_deans What do you mean, we're not an aristocracy We..."
 date: 2018-05-22
 time: 06:08:53
 tweet_id: "998807891921420288"

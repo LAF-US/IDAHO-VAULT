@@ -99,4 +99,8 @@ Before an agent acts, ask:
 
 If those answers are missing, pause and restore the chain before proceeding.
 
-###### [["The world is quiet here."]]
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

@@ -1,4 +1,5 @@
 ---
+title: "RT @gemstatebrian Idaho\u2019s four electors - Vicki Keen, Jean..."
 date: 2024-12-17
 time: 19:35:02
 tweet_id: "1869104035246305774"

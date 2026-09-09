@@ -1,4 +1,5 @@
 ---
+title: "Haven't played it yet but my impression isn't raw data...."
 date: 2024-06-17
 time: 16:28:56
 tweet_id: "1802740219281899556"

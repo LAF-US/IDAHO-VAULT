@@ -15,9 +15,10 @@ related:
   - lfinneytweets
 ---
 
-RT @HaileyAStew: And the nominees are ... https://t.co/A0xZlPqoHO
+RT @HaileyAStew: And the nominees are ... <https://t.co/A0xZlPqoHO>
 
 ## Links
-- https://x.com/uiargonaut/status/1100825523637313537
+
+- <https://x.com/uiargonaut/status/1100825523637313537>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1101011618790486017)

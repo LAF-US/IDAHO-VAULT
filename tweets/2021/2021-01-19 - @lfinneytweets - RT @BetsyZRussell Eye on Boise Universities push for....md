@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Universities push for..."
 date: 2021-01-19
 time: 19:45:37
 tweet_id: "1351616823171579909"

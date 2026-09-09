@@ -1,4 +1,5 @@
 ---
+title: "Re-reading that my wording is fuzzy. Both sides believe..."
 date: 2020-07-17
 time: 16:49:16
 tweet_id: "1284168300075704320"

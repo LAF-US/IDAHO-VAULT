@@ -127,6 +127,7 @@ The structural reading (the Snow Leopards as the *non-outcast intellectual axis*
 ## Sources
 
 ### External
+
 - Stuart Hill, *The Cry of the Icemark* (2005), *Blade of Fire* (2006), *Last Battle of the Icemark* (2008) — Chicken House
 - [The Icemark Chronicles — Wikipedia](https://en.wikipedia.org/wiki/The_Icemark_Chronicles)
 - [The Cry of the Icemark — Wikipedia](https://en.wikipedia.org/wiki/The_Cry_of_the_Icemark)
@@ -137,6 +138,7 @@ The structural reading (the Snow Leopards as the *non-outcast intellectual axis*
 - [Roof of the World — Wikipedia](https://en.wikipedia.org/wiki/Roof_of_the_World) — for the Wakhi *Bām-i-Dunyā* and the Pamir / Hindu Kush convergence point
 
 ### Vault internal
+
 - [[ICEMARK-RACES-AND-TREATMENTS-2026-06-09]] — the wider race-and-treatment inventory; sister node to this one
 - [[ICEMARK-DEEP-CUT-2026-06-07]] — the series-level critical reading; Hill's distinctive moves at series scale
 - [[RESEARCH_Icemark-Chronicles-2026-06-03]] — the factual research brief

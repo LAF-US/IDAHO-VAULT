@@ -1,4 +1,5 @@
 ---
+title: "RT @Reuters US government shutdown risk spiked as the..."
 date: 2025-09-20
 time: 05:16:57
 tweet_id: "1969269529361404072"

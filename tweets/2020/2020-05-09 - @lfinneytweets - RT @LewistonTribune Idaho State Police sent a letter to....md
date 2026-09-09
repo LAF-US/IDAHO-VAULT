@@ -1,4 +1,5 @@
 ---
+title: "RT @LewistonTribune Idaho State Police sent a letter to..."
 date: 2020-05-09
 time: 19:10:27
 tweet_id: "1259199070842703873"

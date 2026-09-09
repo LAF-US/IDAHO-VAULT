@@ -1,4 +1,5 @@
 ---
+title: "Capitol steps part 2, feat. Ammon Bundy"
 date: 2020-06-24
 time: 04:50:47
 tweet_id: "1275652569994596352"
@@ -14,12 +15,13 @@ related:
   - lfinneytweets
 ---
 
-Capitol steps part 2, feat. Ammon Bundy https://t.co/bKTn3QSj3B
+Capitol steps part 2, feat. Ammon Bundy <https://t.co/bKTn3QSj3B>
 
 ## Media
-- ![](https://pbs.twimg.com/media/EbQG3rjWAAApYPQ.jpg)
-- ![](https://pbs.twimg.com/media/EbQG5tBWsAA_BrY.jpg)
-- ![](https://pbs.twimg.com/media/EbQG8XWWkAAOU-n.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/EbQG3rjWAAApYPQ.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EbQG5tBWsAA_BrY.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/EbQG8XWWkAAOU-n.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

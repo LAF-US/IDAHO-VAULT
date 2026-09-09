@@ -1,4 +1,5 @@
 ---
+title: "me on"
 date: 2020-04-03
 time: 23:12:44
 tweet_id: "1246214080492257280"
@@ -13,12 +14,14 @@ related:
   - lfinneytweets
 ---
 
-me on https://t.co/nxIWTF7aiy https://t.co/nV7kQ9zWlG
+me on <https://t.co/nxIWTF7aiy> <https://t.co/nV7kQ9zWlG>
 
 ## Links
-- http://coronavirus.idaho.gov
+
+- <http://coronavirus.idaho.gov>
 
 ## Media
-- ![](https://pbs.twimg.com/tweet_video_thumb/EUtxGBRU8AAn_Vu.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/EUtxGBRU8AAn_Vu.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1246214080492257280)

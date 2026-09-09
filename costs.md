@@ -4,4 +4,4 @@ related:
 - money
 ---
 
-money 
+money

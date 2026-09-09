@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Idaho Attorney General candidates Ra\u00fal..."
 date: 2022-04-18
 time: 22:28:34
 tweet_id: "1516181923692830723"

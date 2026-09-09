@@ -1,4 +1,5 @@
 ---
+title: "RT @RuthBrownNews As of May 31, the Idaho court system had..."
 date: 2023-06-02
 time: 18:58:54
 tweet_id: "1664708184668512257"

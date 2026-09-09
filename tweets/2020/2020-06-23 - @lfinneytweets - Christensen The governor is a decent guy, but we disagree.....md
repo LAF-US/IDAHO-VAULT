@@ -1,4 +1,5 @@
 ---
+title: "Christensen The governor is a decent guy, but we disagree...."
 date: 2020-06-23
 time: 15:29:13
 tweet_id: "1275450846449242114"

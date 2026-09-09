@@ -31,7 +31,7 @@ In Gen 4 (_HeartGold, SoulSilver, Diamond, Pearl, Platinum_), a Pokémon exists 
 
 The game doesn’t "see" a Pikachu; it sees a sequence of numbers partitioned into four 32-byte blocks (**A, B, C, and D**). To prevent simple save-editing, the game **shuffles** these blocks based on the Pokémon’s "Personality Value" (PV).
 
-#### The Anatomy of a Data Block:
+#### The Anatomy of a Data Block
 
 | Offset        | Data Type      | Function                                                                         |
 | ------------- | -------------- | -------------------------------------------------------------------------------- |
@@ -49,8 +49,6 @@ When you "transfer" a Pokémon, you aren't moving an object; you are performing 
 
 The Nintendo DS and DS Lite did not have built-in infrared hardware. To facilitate the **Pokéwalker** and fast "IR Trading," Game Freak utilized a specialized cartridge type known as **NTR-031**.
 
-
-
 #### The Hardware (The "Transparent" Cartridge)
 
 If you hold an HGSS cartridge up to a strong light, you’ll notice it isn't solid grey; it's a **dark, translucent reddish-purple**. This material allows IR signals to pass through the casing to a dedicated transceiver chip embedded on the game's PCB.
@@ -60,24 +58,22 @@ If you hold an HGSS cartridge up to a strong light, you’ll notice it isn't sol
 The Pokéwalker (the pedometer bundled with the games) acts as a thin client. It doesn't actually "run" the Pokémon game; it just displays data sent to it.
 
 - **The Advertisement:** The Pokéwalker constantly sends a `0xFC` byte every few hundred milliseconds to say "I'm here."
-    
+
 - **The Transfer:** When you "Send a Pokémon," the DS encrypts the 136-byte Pokémon structure and transmits it via IR pulses.
-    
+
 - **The EEPROM Swap:** The Pokéwalker has its own small memory (EEPROM). The DS sends specific image data (sprites and text) to the Pokéwalker so the device knows how to "look" like your specific Pokémon without needing the entire game library stored on it.
-    
 
 #### Technical Synchronization
 
 The IR communication uses a **checksum-validated packet system**. Each packet contains an 8-byte header:
 
 1. **Command Byte:** (e.g., "Receive Pokémon" or "Sync Steps").
-    
+
 2. **Extra Data:** Variable.
-    
+
 3. **Checksum (2 bytes):** Uses a custom CRC algorithm to ensure no light interference corrupted the data.
-    
+
 4. **Session ID (4 bytes):** Prevents your DS from accidentally talking to a friend's Pokéwalker nearby.
-    
 
 ---
 

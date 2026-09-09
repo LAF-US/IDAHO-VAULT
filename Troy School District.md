@@ -4,4 +4,4 @@ related:
 - Troy
 authority: LOGAN
 ---
-Troy, Latah County 
+Troy, Latah County

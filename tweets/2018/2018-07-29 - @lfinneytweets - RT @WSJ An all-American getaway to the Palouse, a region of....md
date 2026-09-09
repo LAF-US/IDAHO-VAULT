@@ -1,4 +1,5 @@
 ---
+title: "RT @WSJ An all-American getaway to the Palouse, a region of..."
 date: 2018-07-29
 time: 04:54:43
 tweet_id: "1023431603475759106"
