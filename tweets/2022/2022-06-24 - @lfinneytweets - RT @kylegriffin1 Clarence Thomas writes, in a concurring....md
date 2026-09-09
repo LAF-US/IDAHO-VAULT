@@ -1,4 +1,5 @@
 ---
+title: "RT @kylegriffin1 Clarence Thomas writes, in a concurring..."
 date: 2022-06-24
 time: 14:49:20
 tweet_id: "1540346339849936896"

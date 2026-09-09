@@ -1,4 +1,5 @@
 ---
+title: "RT @MaherKXLY The end of systemic racism starts with..."
 date: 2020-06-10
 time: 02:14:50
 tweet_id: "1270539893265928193"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @MaherKXLY: The end of systemic racism starts with education. 
+RT @MaherKXLY: The end of systemic racism starts with education.
 
 The last two weeks of protests have led Spokane Public Schools to consid…
 

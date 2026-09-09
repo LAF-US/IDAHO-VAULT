@@ -1,4 +1,5 @@
 ---
+title: "RT @clarkcorbin @idahoednews Committee put at recess for 5..."
 date: 2020-01-16
 time: 16:18:13
 tweet_id: "1217843507559165957"

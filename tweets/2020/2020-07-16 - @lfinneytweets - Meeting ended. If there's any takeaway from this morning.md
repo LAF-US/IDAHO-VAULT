@@ -1,4 +1,5 @@
 ---
+title: "Meeting ended. If there's any takeaway from this morning"
 date: 2020-07-16
 time: 15:19:58
 tweet_id: "1283783440937054208"
@@ -14,11 +15,12 @@ related:
   - lfinneytweets
 ---
 
-Meeting ended. If there's any takeaway from this morning: 
-https://t.co/6HIMwLXmcM
+Meeting ended. If there's any takeaway from this morning:
+<https://t.co/6HIMwLXmcM>
 
 ## Links
-- https://x.com/davlinnews/status/1283780461521629184
+
+- <https://x.com/davlinnews/status/1283780461521629184>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

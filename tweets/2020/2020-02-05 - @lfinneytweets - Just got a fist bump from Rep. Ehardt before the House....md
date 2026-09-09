@@ -1,4 +1,5 @@
 ---
+title: "Just got a fist bump from Rep. Ehardt before the House..."
 date: 2020-02-05
 time: 16:02:48
 tweet_id: "1225087387245502464"

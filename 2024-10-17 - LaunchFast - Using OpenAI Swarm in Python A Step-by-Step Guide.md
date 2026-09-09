@@ -13,7 +13,7 @@ In this tutorial, you will learn how to set up and use OpenAI Swarm in Python to
 
 With [Firecrawl](https://www.firecrawl.dev/) and [OpenAI Swarm](https://github.com/openai/swarm), a multi-agent system could crawl the internet and answer the pricing of LaunchFa.st starter kits in JSON format 💥
 
-![](https://pbs.twimg.com/media/GaHkEU5bMAAGGOq?format=png)
+![alt text needed](https://pbs.twimg.com/media/GaHkEU5bMAAGGOq?format=png)
 
 ## Prerequisites
 

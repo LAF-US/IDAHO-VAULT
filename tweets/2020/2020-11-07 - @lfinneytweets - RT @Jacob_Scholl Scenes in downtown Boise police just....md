@@ -1,4 +1,5 @@
 ---
+title: "RT @Jacob_Scholl Scenes in downtown Boise police just..."
 date: 2020-11-07
 time: 19:48:50
 tweet_id: "1325163318688976896"

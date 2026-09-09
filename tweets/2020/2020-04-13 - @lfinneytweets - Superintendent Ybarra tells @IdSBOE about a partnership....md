@@ -1,4 +1,5 @@
 ---
+title: "Superintendent Ybarra tells @IdSBOE about a partnership..."
 date: 2020-04-13
 time: 21:38:33
 tweet_id: "1249814253231456256"

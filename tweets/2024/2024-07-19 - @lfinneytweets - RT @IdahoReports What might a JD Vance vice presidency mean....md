@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports What might a JD Vance vice presidency mean..."
 date: 2024-07-19
 time: 13:35:41
 tweet_id: "1814293034366112195"

@@ -1,4 +1,5 @@
 ---
+title: "RT @clarkcorbin Back from recess, Idaho's bipartisan..."
 date: 2021-10-28
 time: 22:55:09
 tweet_id: "1453857902435786753"

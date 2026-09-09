@@ -1,4 +1,5 @@
 ---
+title: "RT @EastIDNews Mary Souza has announced her bid for Idaho..."
 date: 2024-06-07
 time: 03:22:11
 tweet_id: "1798918350518837403"

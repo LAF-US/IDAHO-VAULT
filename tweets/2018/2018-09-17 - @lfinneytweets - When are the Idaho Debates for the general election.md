@@ -1,4 +1,5 @@
 ---
+title: "When are the Idaho Debates for the general election"
 date: 2018-09-17
 time: 03:29:59
 tweet_id: "1041529672209555456"

@@ -1,4 +1,5 @@
 ---
+title: "RT @MikeCrapo All those pages and nothing about providing..."
 date: 2024-12-19
 time: 05:38:47
 tweet_id: "1869618359723245739"

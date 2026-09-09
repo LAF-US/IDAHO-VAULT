@@ -1,4 +1,5 @@
 ---
+title: "RT @EsqHardy Super proud of my daughter @madisonhardy05 as..."
 date: 2021-12-19
 time: 23:15:39
 tweet_id: "1472707227983089665"

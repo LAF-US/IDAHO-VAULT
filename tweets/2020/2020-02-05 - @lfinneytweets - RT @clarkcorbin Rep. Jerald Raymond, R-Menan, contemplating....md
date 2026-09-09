@@ -1,4 +1,5 @@
 ---
+title: "RT @clarkcorbin Rep. Jerald Raymond, R-Menan, contemplating..."
 date: 2020-02-05
 time: 16:32:13
 tweet_id: "1225094787029581824"

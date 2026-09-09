@@ -1,4 +1,5 @@
 ---
+title: "RT @uiargonaut ASUI elected eight new senators, we got a..."
 date: 2020-05-15
 time: 21:46:26
 tweet_id: "1261412651986374657"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @uiargonaut: ASUI elected eight new senators, we got a chance to sit down — virtually — with all of them. 
+RT @uiargonaut: ASUI elected eight new senators, we got a chance to sit down — virtually — with all of them.
 
 Here is what they had to say…
 

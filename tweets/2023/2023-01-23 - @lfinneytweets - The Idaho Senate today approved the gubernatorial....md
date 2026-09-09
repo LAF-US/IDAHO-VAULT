@@ -1,4 +1,5 @@
 ---
+title: "The Idaho Senate today approved the gubernatorial..."
 date: 2023-01-23
 time: 18:56:39
 tweet_id: "1617597196869971969"

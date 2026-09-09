@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports After years of lawmakers debating whether..."
 date: 2022-02-01
 time: 17:23:39
 tweet_id: "1488563709454602246"

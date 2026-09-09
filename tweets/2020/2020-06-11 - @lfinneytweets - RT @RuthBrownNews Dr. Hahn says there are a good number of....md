@@ -1,4 +1,5 @@
 ---
+title: "RT @RuthBrownNews Dr. Hahn says there are a good number of..."
 date: 2020-06-11
 time: 16:13:10
 tweet_id: "1271113254375284736"

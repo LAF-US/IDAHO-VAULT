@@ -1,4 +1,5 @@
 ---
+title: "RT @CynthiaSewell In a unanimous vote, the Idaho House..."
 date: 2020-02-19
 time: 18:42:32
 tweet_id: "1230201014210314240"

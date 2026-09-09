@@ -1,4 +1,5 @@
 ---
+title: "Specifically he mentioned the thought of dropping down to..."
 date: 2020-01-15
 time: 23:31:40
 tweet_id: "1217590203642085376"

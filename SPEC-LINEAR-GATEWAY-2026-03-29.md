@@ -47,14 +47,14 @@ Swarm agents need a governed, auditable, single-choke-point interface to Linear.
 
 ## 2. Architecture
 
-```
-                         ┌─────────────────────────────────┐
+```text
+                         ┌────────────────────────────────Ŀ
                          │         LINEAR (GraphQL)         │
                          │  api.linear.app/graphql          │
                          │  Webhook events → forwarder      │
                          └────────────┬────────────────────┘
                                       │
-                    ┌─────────────────▼─────────────────────┐
+                    ┌─────────────────▼────────────────────Ŀ
                     │       SWARM LINEAR GATEWAY             │
                     │   .github/scripts/linear_gateway.py   │
                     │                                        │
@@ -71,7 +71,7 @@ Swarm agents need a governed, auditable, single-choke-point interface to Linear.
 
 **Linear webhook path:**
 
-```
+```text
 Linear → Cloud forwarder → GitHub repository_dispatch → linear-webhook.yml → gateway script
 ```
 
@@ -82,7 +82,7 @@ The forwarder (a small Cloud Function or Vercel edge function) is outside this r
 ## 3. Agent Roles
 
 | Role | Can read? | Can write? | Auth scope | Purpose |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | **Observer** | Yes | No | `read` | Summarize issue status, detect drift, generate CHECKPOINT data |
 | **Executor** | Yes | Yes (authorized only) | `read+write` | Post comments, update issue status, link PR context |
 | **Coordinator** | Yes | Yes (reconcile only) | `read+write` | Reconcile GitHub ↔ Linear mapping; flag conflicts |
@@ -98,7 +98,7 @@ All five commands are implemented in `.github/scripts/linear_gateway.py`. All co
 
 ### 4.1 `read_issue`
 
-```
+```bash
 linear_gateway.py read_issue --issue-id <LAF-XX>
 ```
 
@@ -110,7 +110,7 @@ linear_gateway.py read_issue --issue-id <LAF-XX>
 
 ### 4.2 `list_project_issues`
 
-```
+```bash
 linear_gateway.py list_project_issues --project-id <id>
 ```
 
@@ -122,7 +122,7 @@ linear_gateway.py list_project_issues --project-id <id>
 
 ### 4.3 `post_comment`
 
-```
+```bash
 linear_gateway.py post_comment --issue-id <LAF-XX> --body <text> [--live-write]
 ```
 
@@ -134,7 +134,7 @@ linear_gateway.py post_comment --issue-id <LAF-XX> --body <text> [--live-write]
 
 ### 4.4 `update_issue_status`
 
-```
+```bash
 linear_gateway.py update_issue_status --issue-id <LAF-XX> --state-name <"In Progress"|"Done"|...> [--live-write]
 ```
 
@@ -145,7 +145,7 @@ linear_gateway.py update_issue_status --issue-id <LAF-XX> --state-name <"In Prog
 
 ### 4.5 `link_pr_context`
 
-```
+```bash
 linear_gateway.py link_pr_context --issue-id <LAF-XX> --pr-url <url> --pr-title <title> [--live-write]
 ```
 
@@ -161,7 +161,7 @@ linear_gateway.py link_pr_context --issue-id <LAF-XX> --pr-url <url> --pr-title 
 ### 5.1 Events subscribed
 
 | Linear event | GitHub workflow trigger | Handler |
-|---|---|---|
+| --- | --- | --- |
 | `Issue` created/updated | `linear-webhook` dispatch | Observer: log drift; Coordinator: map to GitHub |
 | `Comment` created | `linear-webhook` dispatch | Secretary: may draft reply if flagged |
 | `Project` updated | `linear-webhook` dispatch | Coordinator: update DOCKET |
@@ -191,7 +191,7 @@ Linear webhooks include a `Linear-Signature` header (HMAC-SHA256 of the raw body
 ## 6. Security and Auth Model
 
 | Concern | Mitigation |
-|---|---|
+| --- | --- |
 | Credential sprawl | One `LINEAR_API_KEY` secret in GitHub repo secrets; never in vault files |
 | Over-permissioned keys | Scope key to team LAF only; read-only by default |
 | Runaway writes | Dry-run default; `--live-write` flag required for all mutations |
@@ -234,7 +234,7 @@ mcp_action_log:
 ## 9. Phase Rollout
 
 | Phase | Scope | Gate |
-|---|---|---|
+| --- | --- | --- |
 | **Phase 0** | Read-only commands (`read_issue`, `list_project_issues`). No secrets required — uses public API. | This spec approved |
 | **Phase 1** | `post_comment` live-write enabled. `LINEAR_API_KEY` added to repo secrets (scoped read+comment). | Logan decision record in `!/DECISIONS.md` |
 | **Phase 2** | `update_issue_status` and `link_pr_context` enabled. Key scope upgraded to `read+write`. | Logan decision record + one dry-run verified |

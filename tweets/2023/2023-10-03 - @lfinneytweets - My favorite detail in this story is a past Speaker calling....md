@@ -1,4 +1,5 @@
 ---
+title: "My favorite detail in this story is a past Speaker calling..."
 date: 2023-10-03
 time: 22:53:34
 tweet_id: "1709340945379135613"

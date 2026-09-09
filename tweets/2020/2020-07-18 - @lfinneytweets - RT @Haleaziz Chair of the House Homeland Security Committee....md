@@ -1,4 +1,5 @@
 ---
+title: "RT @Haleaziz Chair of the House Homeland Security Committee..."
 date: 2020-07-18
 time: 00:49:04
 tweet_id: "1284289048685633536"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @Haleaziz: Chair of the House Homeland Security Committee Rep. Thompson: 
+RT @Haleaziz: Chair of the House Homeland Security Committee Rep. Thompson:
 
 “Department of Homeland Security’s involvement in the Trump A…
 

@@ -1,4 +1,5 @@
 ---
+title: "Who's the sub for Rep. Erickson today #idleg"
 date: 2022-02-03
 time: 18:36:01
 tweet_id: "1489306699873734656"

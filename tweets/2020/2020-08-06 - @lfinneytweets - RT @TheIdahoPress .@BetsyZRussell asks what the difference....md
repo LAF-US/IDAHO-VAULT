@@ -1,4 +1,5 @@
 ---
+title: "RT @TheIdahoPress .@BetsyZRussell asks what the difference..."
 date: 2020-08-06
 time: 18:40:59
 tweet_id: "1291444171664789505"

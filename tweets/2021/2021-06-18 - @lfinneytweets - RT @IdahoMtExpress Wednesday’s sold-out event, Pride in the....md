@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoMtExpress Wednesday\u2019s sold-out event, Pride in the..."
 date: 2021-06-18
 time: 17:21:28
 tweet_id: "1405938726102978561"

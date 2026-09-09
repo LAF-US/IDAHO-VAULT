@@ -4,4 +4,4 @@ related:
 - Boundary County
 authority: LOGAN
 ---
-Boundary County and northern Bonner County 
+Boundary County and northern Bonner County

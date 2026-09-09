@@ -1,4 +1,5 @@
 ---
+title: "New timeline of events from Students for Denise. It will be..."
 date: 2019-02-02
 time: 07:17:30
 tweet_id: "1091596455045869568"
@@ -17,9 +18,10 @@ related:
 ---
 
 New timeline of events from Students for Denise. It will be continuously updated as more information becomes available. #reinstatedenise
-https://t.co/sxH7OuAdEg
+<https://t.co/sxH7OuAdEg>
 
 ## Links
-- http://reinstatedenise.com/timeline/
+
+- <http://reinstatedenise.com/timeline/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1091596455045869568)

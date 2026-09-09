@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports The anti-critical race theory in education..."
 date: 2021-04-26
 time: 22:22:45
 tweet_id: "1386807992121663492"

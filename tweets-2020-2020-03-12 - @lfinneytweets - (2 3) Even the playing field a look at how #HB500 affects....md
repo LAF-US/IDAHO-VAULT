@@ -17,11 +17,12 @@ related:
   - HB500
 ---
 
-(2/3) Even the playing field: a look at how #HB500 affects the transgender community 
-https://t.co/92TeD7r0MD
+(2/3) Even the playing field: a look at how #HB500 affects the transgender community
+<https://t.co/92TeD7r0MD>
 
 ## Links
-- https://www.uiargonaut.com/2020/03/12/even-the-playing-field-a-look-at-how-house-bill-500-affects-the-transgender-community/
+
+- <https://www.uiargonaut.com/2020/03/12/even-the-playing-field-a-look-at-how-house-bill-500-affects-the-transgender-community/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

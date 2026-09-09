@@ -1,4 +1,5 @@
 ---
+title: "RT @pfannyyy Teton County becomes first in east Idaho to..."
 date: 2020-07-17
 time: 02:22:42
 tweet_id: "1283950223815962624"

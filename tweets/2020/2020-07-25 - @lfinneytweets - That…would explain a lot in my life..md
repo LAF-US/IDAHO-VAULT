@@ -1,4 +1,5 @@
 ---
+title: "That\u2026would explain a lot in my life."
 date: 2020-07-25
 time: 00:52:41
 tweet_id: "1286826671325081601"

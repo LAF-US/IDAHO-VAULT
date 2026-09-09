@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio The Idaho Senate State Affairs Committee..."
 date: 2020-01-29
 time: 15:44:20
 tweet_id: "1222546021739184128"

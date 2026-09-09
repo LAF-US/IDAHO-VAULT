@@ -1,4 +1,5 @@
 ---
+title: "RT @courtneyrozen Tech company claimed that fraudsters..."
 date: 2022-11-17
 time: 16:24:34
 tweet_id: "1593278934400933893"
@@ -15,9 +16,10 @@ related:
   - lfinneytweets
 ---
 
-RT @courtneyrozen: Tech company https://t.co/6eIhXAfbfQ claimed that fraudsters stole $400 B in pandemic unemployment aid. My colleagues in…
+RT @courtneyrozen: Tech company <https://t.co/6eIhXAfbfQ> claimed that fraudsters stole $400 B in pandemic unemployment aid. My colleagues in…
 
 ## Links
-- http://ID.me
+
+- <http://ID.me>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1593278934400933893)

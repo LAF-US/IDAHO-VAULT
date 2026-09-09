@@ -1,4 +1,5 @@
 ---
+title: "RT @lyndsie_kiebert Sandpoint City Council just denied a..."
 date: 2020-08-20
 time: 05:09:20
 tweet_id: "1296313346891767808"

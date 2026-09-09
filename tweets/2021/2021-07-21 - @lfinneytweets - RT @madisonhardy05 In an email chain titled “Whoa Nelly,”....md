@@ -1,4 +1,5 @@
 ---
+title: "RT @madisonhardy05 In an email chain titled \u201cWhoa Nelly,\u201d..."
 date: 2021-07-21
 time: 19:33:52
 tweet_id: "1417930847110397953"

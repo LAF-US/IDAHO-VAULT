@@ -1,4 +1,5 @@
 ---
+title: "RT @NateBrownNews .@GovernorLittle and @IDSecOfState Denney..."
 date: 2020-12-12
 time: 00:30:22
 tweet_id: "1337555357707563008"

@@ -1,4 +1,5 @@
 ---
+title: "RT @pfannyyy Idaho Falls City Council just adjourned...."
 date: 2020-07-22
 time: 18:47:36
 tweet_id: "1286010019947798528"

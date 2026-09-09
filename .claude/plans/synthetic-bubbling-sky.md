@@ -13,7 +13,7 @@ The JFAC Crew exists in `.crewai/` but has **never run end-to-end**. Two additio
 ## Current State
 
 | Component | Status | Location |
-|---|---|---|
+| --- | --- | --- |
 | JFAC Crew (3 agents, 5 tasks, 4 tools) | Built, **untested** | `.crewai/crews/jfac_crew.py` |
 | CrewAI runner | Built, untested | `.crewai/run_jfac.py` |
 | Tools (minidata, timeline, scraper, address) | Built | `.crewai/tools/` |
@@ -81,7 +81,7 @@ The JFAC Crew exists in `.crewai/` but has **never run end-to-end**. Two additio
 
 ## Execution Order
 
-```
+```text
 Step 1: Write B's alignment brief → !/GRIMOIRE/
 Step 2: Add crewai to requirements.txt
 Step 3: Build MANIFEST.md
@@ -119,7 +119,7 @@ Steps 1-3 can run in quick succession (all writes). Step 4 is the critical test 
 ## Key Files
 
 | File | Role |
-|---|---|
+| --- | --- |
 | `.crewai/crews/jfac_crew.py` | JFAC Crew definition (active) |
 | `.crewai/run_jfac.py` | JFAC runner script |
 | `.crewai/tools/*.py` | CrewAI tool wrappers |

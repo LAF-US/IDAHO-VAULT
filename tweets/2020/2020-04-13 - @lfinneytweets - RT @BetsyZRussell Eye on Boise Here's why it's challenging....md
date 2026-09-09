@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Here's why it's challenging..."
 date: 2020-04-13
 time: 04:47:06
 tweet_id: "1249559713731072000"

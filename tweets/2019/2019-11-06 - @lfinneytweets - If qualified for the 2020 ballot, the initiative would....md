@@ -1,4 +1,5 @@
 ---
+title: "If qualified for the 2020 ballot, the initiative would..."
 date: 2019-11-06
 time: 06:38:01
 tweet_id: "1191967958928629762"

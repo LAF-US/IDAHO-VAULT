@@ -1,4 +1,5 @@
 ---
+title: "RT @RuthBrownNews The legislature adjourned Sine Die..."
 date: 2024-04-11
 time: 20:51:12
 tweet_id: "1778526236383539225"

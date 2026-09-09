@@ -1,4 +1,5 @@
 ---
+title: "RT @uiargonaut BREAKING All University of Idaho students..."
 date: 2020-10-06
 time: 02:08:05
 tweet_id: "1313299963049197568"

@@ -147,4 +147,4 @@ Once committee reviews FTE rule, they can give feedback for what they would like
 
 Superintendents will be giving their notes as well.
 
-Next year’s rule is expected to be a “fine tuning’ of this rule, but with the legislature who knows honestly lol 
+Next year’s rule is expected to be a “fine tuning’ of this rule, but with the legislature who knows honestly lol

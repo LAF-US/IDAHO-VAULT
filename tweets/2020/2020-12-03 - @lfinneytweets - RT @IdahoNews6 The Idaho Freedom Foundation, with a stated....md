@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoNews6 The Idaho Freedom Foundation, with a stated..."
 date: 2020-12-03
 time: 01:31:46
 tweet_id: "1334309319731363840"
