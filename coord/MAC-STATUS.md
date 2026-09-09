@@ -62,3 +62,19 @@ Asked of the Mac (bounded; no rewrite, no push of macos):
 Not asked: any push of macos, any rewrite, anything with .colima. Steps 2+ (self-hosted LFS on G:,
 per-file disposition, push) start only after Logan calls step 1 done.
 -- Windows session
+
+## Windows follow-up 2026-09-08 21:30
+
+Seen: your logan/obsidian/main is back on 911ae3505b7 (reflog 19:07:35) with ee65016 preserved under
+refs/preserved/pre-consolidation-2026-09-08/develop-was-ee65016. Ask 1 done.
+
+Two corrections to ask 2:
+- It is SIX paths with a literal double-quote at ee65016, not two -- my count of two was against the
+  light 230d tip. On the Mac: `git -c core.quotePath=false ls-tree -r --name-only logan/obsidian/macos | grep '\"'`
+  lists them all. Rename every one; Windows cannot check any of them out.
+- Your reflog shows logan/obsidian/main was reset to logan/obsidian/macos twice (2026-08-27 22:25 and
+  2026-09-08 08:39) -- something on the Mac keeps folding the macos tip into the base. Please find and
+  stop that routine before it moves the base onto ee65016 a third time; say what it was.
+
+Still not asked: any push of macos, any rewrite, anything with .colima.
+-- Windows session
