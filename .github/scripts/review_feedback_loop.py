@@ -1453,7 +1453,12 @@ def _build_reconciliation_report(
                 # _maybe_arm_auto_merge already fails closed exactly this way.
                 try:
                     gh_cli.pr_edit(pr_number, add_label=DEFAULT_AUTO_MERGE_LABEL)
-                except RuntimeError as exc:
+                except (RuntimeError, OSError) as exc:
+                    # OSError alongside RuntimeError, and this is the site where it costs
+                    # the most: uncaught, the label write's own OSError skips the rollback
+                    # entirely and kills the sweep with the PR armed and unlabeled — the
+                    # exact end state this block exists to prevent, reached by the one
+                    # error class the handler did not name.
                     # Roll back with a CHECKED disable. The default is check=False, which
                     # would swallow a refused rollback and let the lines below report the
                     # PR disarmed while it is still armed — the same false state claim,
@@ -1462,7 +1467,11 @@ def _build_reconciliation_report(
                     try:
                         _disable_auto_merge(pr_number, check=True)
                         rollback = "disabled the auto-merge it had just enabled"
-                    except RuntimeError as rollback_exc:
+                    except (RuntimeError, OSError) as rollback_exc:
+                        # OSError as well: gh_cli._run converts non-zero exits and timeouts
+                        # to RuntimeError, but subprocess.run itself still raises OSError
+                        # if the process cannot be spawned at all. Uncaught, that aborts
+                        # the sweep from inside the handler meant to keep it alive.
                         rollback = f"AND the rollback disable was refused: {rollback_exc}"
                     try:
                         auto_merge_enabled, still_queued = _auto_merge_state(
@@ -1481,11 +1490,13 @@ def _build_reconciliation_report(
                                 "; PR IS STILL IN THE MERGE QUEUE and can merge without "
                                 "`merge/auto` — disabling auto-merge does not dequeue"
                             )
-                    except (RuntimeError, ValueError) as read_exc:
+                    except (RuntimeError, ValueError, OSError) as read_exc:
                         # Unknown is not disabled. Reporting "disabled" off an unreadable
                         # read would be the false state claim this path exists to prevent,
                         # so say so and assume the unsafe side: something may still be
-                        # armed with no label to disarm it by.
+                        # armed with no label to disarm it by. OSError for the same reason
+                        # as the rollback above: the read is another gh subprocess, and an
+                        # unspawnable one must read as UNKNOWN, not abort the sweep.
                         auto_merge_enabled = True
                         state_note = f"UNKNOWN, state read-back failed ({read_exc})"
                     promotion_publish_failed = True
