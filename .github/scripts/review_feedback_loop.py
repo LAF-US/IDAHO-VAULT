@@ -145,6 +145,35 @@ AUTO_MERGE_AUTHZ_FRAGMENTS = (
     "Resource not accessible by integration (enablePullRequestAutoMerge)",
 )
 
+# GitHub rejects enablePullRequestAutoMerge while the PR's own checks haven't
+# settled yet ("unstable status") — a normal, expected, transient state (a
+# check still running, or a non-required check red), not an authorization
+# problem. Left unhandled, this crashed the whole sync-pr invocation on every
+# PR that wasn't fully green yet, which on this merge-queue repo is most of
+# them most of the time.
+AUTO_MERGE_NOT_READY_FRAGMENTS = (
+    "Pull request is in unstable status (enablePullRequestAutoMerge)",
+)
+
+# Single source of truth for the not-ready sentinel note, so the producer
+# (_arm_auto_merge) and the consumer (_build_reconciliation_report, matching
+# on arm_error.startswith(...)) can't silently drift apart if one is edited
+# without the other.
+AUTO_MERGE_NOT_READY_NOTE = "not yet ready to arm (PR checks unstable); retried next pass"
+
+# _enqueue_pr reports every outright-rejected mutation as (False, str), and those are not
+# all real failures: GitHub returns queue-readiness refusals ("not mergeable", and the
+# like) through the same GraphQL error channel as authorization failures. Only a rejection
+# carrying one of these signatures is treated as genuine; everything else keeps the
+# not-ready classification, so an unrecognized readiness refusal cannot reach
+# auto_merge_authorization_blocked and re-create the false drift finding. These are the
+# authorization cores of AUTO_MERGE_AUTHZ_FRAGMENTS above, with the mutation-name suffix
+# dropped so the match holds whichever mutation reported it.
+ENQUEUE_AUTHZ_FRAGMENTS = (
+    "User is not authorized for this protected branch",
+    "Resource not accessible by integration",
+)
+
 # Protected-path gating is no longer done here. A hand-maintained glob list was one of
 # three drifting, fail-open re-implementations of "these paths need a human".
 # The single source of that truth is now CODEOWNERS, enforced as a HARD GATE by
@@ -375,6 +404,7 @@ def _arm_auto_merge(owner: str, repo: str, pr_number: int) -> tuple[bool, str | 
             if updated
             else f"branch update (BEHIND) failed: {update_error}"
         )
+    not_ready = False
     if not enabled:
         try:
             # Norm set 2026-07-06: the merge QUEUE's configured method is the
@@ -387,25 +417,78 @@ def _arm_auto_merge(owner: str, repo: str, pr_number: int) -> tuple[bool, str | 
             # repo's delete-on-merge behavior / branch-cleanup workflow, not here.
             gh_cli.pr_merge(pr_number, auto=True)
         except RuntimeError as exc:
-            if not any(fragment in str(exc) for fragment in AUTO_MERGE_AUTHZ_FRAGMENTS):
+            message = str(exc)
+            if any(fragment in message for fragment in AUTO_MERGE_NOT_READY_FRAGMENTS):
+                # enablePullRequestAutoMerge itself rejects a not-CLEAN PR, but
+                # VAULT-CONVENTIONS.md § "Two different gates" documents mergeStateStatus
+                # UNSTABLE (only a non-required check red) as still queue-entry-eligible —
+                # the same case auto-merge-engage.yml's enqueue step explicitly accepts
+                # (`case "$state" in CLEAN|UNSTABLE) ;;`). Returning here unconditionally
+                # would leave a UNSTABLE-but-otherwise-eligible PR permanently unqueued on
+                # every retry if that one non-required check never turns green. Fall
+                # through to the direct enqueue attempt instead of bailing out.
+                notes.insert(0, AUTO_MERGE_NOT_READY_NOTE)
+                not_ready = True
+            elif not any(fragment in message for fragment in AUTO_MERGE_AUTHZ_FRAGMENTS):
                 raise
-            notes.insert(
-                0,
-                "GitHub Actions is not authorized to enable auto-merge "
-                "on the protected base branch.",
-            )
-            return (False, "; ".join(notes))
-    # Arming is only half the job — explicitly add it to the merge queue now.
+            else:
+                notes.insert(
+                    0,
+                    "GitHub Actions is not authorized to enable auto-merge "
+                    "on the protected base branch.",
+                )
+                return (False, "; ".join(notes))
+    # Arming is only half the job — explicitly add it to the merge queue now. Attempted even
+    # when the arm itself was rejected as not-ready (see above): enqueuePullRequest is a
+    # separate GraphQL mutation, gated on mergeStateStatus rather than on auto-merge already
+    # being enabled, so a not-ready arm doesn't preclude a successful direct enqueue.
     node_id = _pr_node_id(owner, repo, pr_number)
+    enqueued = False
+    enqueue_error: str | None = None
     if node_id:
         enqueued, enqueue_error = _enqueue_pr(node_id)
         if not enqueued and enqueue_error:
-            # Armed, but the explicit enqueue hit a REAL error (auth/API) — distinct from the
-            # benign "not queue-ready yet" case (which returns no error and is left for the
-            # armed auto-merge to enqueue when green). Surface it so the "armed but never
-            # queued" failure this PR fixes can't recur silently. Still armed=True.
+            # A REAL error (auth/API) enqueuing — distinct from the benign "not queue-ready
+            # yet" case (which returns no error). Surface it so the "armed but never queued"
+            # failure this PR fixes can't recur silently.
             notes.append(f"enqueue was rejected: {enqueue_error}")
-    # node_id None (fail-open) or benign not-ready: armed; auto-merge enqueues it when green.
+    if not_ready:
+        if not enqueued:
+            if enqueue_error and any(
+                fragment in enqueue_error for fragment in ENQUEUE_AUTHZ_FRAGMENTS
+            ):
+                # Half transient, half not: the arm was rejected as not-ready AND the
+                # direct enqueue failed for a reason that is not going to clear on its own.
+                # Withdraw the not-ready sentinel so _build_reconciliation_report stops
+                # classifying it as transient and files the drift report instead; leaving
+                # the sentinel in would bury a genuine authorization failure as "expected
+                # to clear on a later pass," suppressing exactly the report
+                # pr_loop_watchdog exists to make.
+                if AUTO_MERGE_NOT_READY_NOTE in notes:
+                    notes.remove(AUTO_MERGE_NOT_READY_NOTE)
+                return (False, "; ".join(notes))
+            # Either nothing rejected the enqueue outright, or it was rejected for a reason
+            # that is not a recognized authorization failure. _enqueue_pr reports both
+            # queue-readiness refusals and authorization failures through the same string
+            # channel, so an unrecognized rejection keeps the not-ready classification: a
+            # PR that merely cannot queue yet must never reach the drift bucket, which is
+            # the false finding this whole change exists to prevent. The rejection text is
+            # still carried in the notes either way.
+            return (False, "; ".join(notes))
+        # The arm attempt was rejected, but the direct enqueue succeeded anyway (UNSTABLE
+        # was still queue-entry-eligible). Report truthfully: enablePullRequestAutoMerge
+        # never actually succeeded here, only the direct enqueue did, so `armed` must stay
+        # False (per this function's own contract: "armed is True once auto-merge is on").
+        # Returning True would have callers add this PR to rearmed_prs / auto_merge_enabled
+        # =True, and if the queue later ejects it, nothing would re-arm it — the reconcile
+        # pass would believe it's already armed. Leave notes[0] as AUTO_MERGE_NOT_READY_NOTE
+        # (append rather than overwrite) so this still lands in auto_merge_not_ready, not
+        # auto_merge_authorization_blocked — pr_loop_watchdog would otherwise report a
+        # false "branch protection drift" for a PR that just successfully queued. The next
+        # pass sees queued=True at the top of this function and short-circuits cleanly.
+        notes.append("enqueued directly despite the arm rejection (UNSTABLE is queue-entry-eligible)")
+        return (False, "; ".join(notes))
+    # node_id None (fail-open) or a clean arm: armed.
     return (True, "; ".join(notes)) if notes else (True, None)
 
 
@@ -1224,6 +1307,7 @@ def _build_reconciliation_report(
     promoted: list[int] = []
     rearmed: list[int] = []
     auto_merge_authorization_blocked: list[int] = []
+    auto_merge_not_ready: list[int] = []
     invariant_violations: list[dict[str, object]] = []
     total_resolved_outdated_threads = 0
     # Resolve the looker once for the whole batch walk (the engage-outdated pattern): the
@@ -1337,6 +1421,13 @@ def _build_reconciliation_report(
             auto_merge_enabled, arm_error = _arm_auto_merge(owner, repo, pr_number)
             if auto_merge_enabled:
                 rearmed.append(pr_number)
+            elif arm_error and AUTO_MERGE_NOT_READY_NOTE in arm_error:
+                # Transient — PR checks are still unstable, expected to clear on a later
+                # pass. Distinct from a real authorization/branch-protection problem, so
+                # it must not land in auto_merge_authorization_blocked: pr_loop_watchdog
+                # reports that bucket as "repository settings or branch protection drift,"
+                # and every merely-in-flight PR would otherwise false-positive there.
+                auto_merge_not_ready.append(pr_number)
             else:
                 auto_merge_authorization_blocked.append(pr_number)
 
@@ -1359,6 +1450,7 @@ def _build_reconciliation_report(
         "promoted_prs": promoted,
         "rearmed_prs": rearmed,
         "auto_merge_authorization_blocked": auto_merge_authorization_blocked,
+        "auto_merge_not_ready": auto_merge_not_ready,
         "invariant_violations": invariant_violations,
         "resolved_outdated_threads": total_resolved_outdated_threads,
         "evaluated": evaluated,
