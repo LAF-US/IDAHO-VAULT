@@ -17,11 +17,12 @@ related:
   - idleg
 ---
 
-CORRECTION: Clocks would match statewide during the 4 winter months. 
-I got the switch mixed up. #idleg https://t.co/FIBwqvoY3c
+CORRECTION: Clocks would match statewide during the 4 winter months.
+I got the switch mixed up. #idleg <https://t.co/FIBwqvoY3c>
 
 ## Media
-- ![](https://pbs.twimg.com/media/ERUYo1bU4AAOwX4.png)
+
+- ![alt text needed](https://pbs.twimg.com/media/ERUYo1bU4AAOwX4.png)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

@@ -1,4 +1,5 @@
 ---
+title: "RT @wweek Even President Donald Trump, who gave Oregon Gov...."
 date: 2020-08-01
 time: 23:24:38
 tweet_id: "1289703615834202112"

@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise The election results and..."
 date: 2022-05-20
 time: 22:49:45
 tweet_id: "1527783666406936576"

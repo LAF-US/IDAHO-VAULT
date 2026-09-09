@@ -10,7 +10,7 @@ GitBook can synchronize multiple directories from the same repository with multi
 
 Example of a repository structure:
 
-```
+```text
 /
   package.json
   packages/
@@ -47,7 +47,7 @@ In some cases, you might have started with a typical repository synchronizing wi
 
 Changing the Project directory on an existing Git Sync can have an unexpected impact on the content, the change will only be propagated during the next synchronization (edit made on GitBook or new commit in the Git repository).
 
-#### If the next operation is an import from the Git repository:
+#### If the next operation is an import from the Git repository
 
 GitBook will expect to find the pages and files in the Project directory. If the files have not already been moved into the repository’s Project directory, the result of the synchronization would be an empty space with no content.
 

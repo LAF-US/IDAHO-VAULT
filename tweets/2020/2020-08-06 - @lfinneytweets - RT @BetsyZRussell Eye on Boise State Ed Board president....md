@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise State Ed Board president..."
 date: 2020-08-06
 time: 18:32:38
 tweet_id: "1291442071623016448"

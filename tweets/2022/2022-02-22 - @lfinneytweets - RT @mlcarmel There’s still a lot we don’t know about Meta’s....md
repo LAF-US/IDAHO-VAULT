@@ -1,4 +1,5 @@
 ---
+title: "RT @mlcarmel There\u2019s still a lot we don\u2019t know about Meta\u2019s..."
 date: 2022-02-22
 time: 02:21:07
 tweet_id: "1495946727308038149"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @mlcarmel: There’s still a lot we don’t know about Meta’s data center in Kuna. 
+RT @mlcarmel: There’s still a lot we don’t know about Meta’s data center in Kuna.
 
 But here’s what I dug more into the company’s environme…
 

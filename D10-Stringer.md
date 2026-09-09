@@ -52,6 +52,7 @@ This is simultaneously a personal journalism knowledge base and a governed multi
 **6. PERCEPTION LOG**
 
 Paths opened (N=14):
+
 - `William Borah.md`
 - `Idaho.md`
 - `! README.md`
@@ -73,6 +74,7 @@ N opened: 14 distinct files/directories read.
 ~M rough estimate of total corpus size: The root directory alone returns 1,000 items (GitHub API cap) including 331 directories and 669 files; the actual corpus is substantially larger, with hundreds of dotfolders (each containing agent files), a `tweets/` subdirectory spanning 2019–2026, Idaho legislation files, historical Borah/Roosevelt archive files, and numbered daily notes (1.md through ~190.md visible). Conservatively: several thousand files, likely 3,000–6,000+; AGENTS.md notes a prior audit identified 332 MiB of bloat alone.
 
 Notable doors seen but NOT opened:
+
 - `DECISIONS.md` (binding record of structural decisions)
 - `!/LEVELSET-CURRENT.md` (current vault state synthesis)
 - `LOGAN.md` / `Logan Finney.md` (owner identity files — searched results give much of content)

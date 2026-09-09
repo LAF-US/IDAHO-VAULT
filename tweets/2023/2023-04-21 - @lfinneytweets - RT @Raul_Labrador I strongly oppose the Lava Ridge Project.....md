@@ -1,4 +1,5 @@
 ---
+title: "RT @Raul_Labrador I strongly oppose the Lava Ridge Project...."
 date: 2023-04-21
 time: 22:21:58
 tweet_id: "1649538996375109633"

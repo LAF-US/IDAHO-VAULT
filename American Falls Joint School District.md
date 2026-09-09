@@ -4,4 +4,4 @@ related:
 - Power County
 authority: LOGAN
 ---
-American Falls, Power County 
+American Falls, Power County

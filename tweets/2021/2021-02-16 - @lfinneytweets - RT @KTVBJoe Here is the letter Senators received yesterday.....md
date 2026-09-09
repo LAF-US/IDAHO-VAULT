@@ -1,4 +1,5 @@
 ---
+title: "RT @KTVBJoe Here is the letter Senators received yesterday...."
 date: 2021-02-16
 time: 21:27:45
 tweet_id: "1361789388032602112"

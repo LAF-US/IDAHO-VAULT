@@ -1,4 +1,5 @@
 ---
+title: "Killing your fellow Americans. Humorous stuff."
 date: 2020-06-04
 time: 21:12:16
 tweet_id: "1268651808789893127"
@@ -13,9 +14,10 @@ related:
   - lfinneytweets
 ---
 
-Killing your fellow Americans. Humorous stuff. https://t.co/4GQqa7tJ4q
+Killing your fellow Americans. Humorous stuff. <https://t.co/4GQqa7tJ4q>
 
 ## Links
-- https://x.com/Leah_Sottile/status/1268613168961433601
+
+- <https://x.com/Leah_Sottile/status/1268613168961433601>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1268651808789893127)

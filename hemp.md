@@ -4,4 +4,4 @@ related:
 - cannabis
 ---
 
-cannabis raised for agricultural purposes 
+cannabis raised for agricultural purposes

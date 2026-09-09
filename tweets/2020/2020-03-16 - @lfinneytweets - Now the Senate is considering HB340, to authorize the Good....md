@@ -1,4 +1,5 @@
 ---
+title: "Now the Senate is considering HB340, to authorize the Good..."
 date: 2020-03-16
 time: 23:48:35
 tweet_id: "1239700117650694144"

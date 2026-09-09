@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoCapitalSun Currently 80 million metric tons of..."
 date: 2023-06-15
 time: 19:56:20
 tweet_id: "1669433678064402432"

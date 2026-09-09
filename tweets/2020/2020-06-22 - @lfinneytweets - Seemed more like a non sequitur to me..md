@@ -1,4 +1,5 @@
 ---
+title: "Seemed more like a non sequitur to me."
 date: 2020-06-22
 time: 22:52:25
 tweet_id: "1275199994052526080"

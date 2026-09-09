@@ -1,4 +1,5 @@
 ---
+title: "RT @bwoolf91 #TransparencyTuesday The new HB73 Information..."
 date: 2021-11-09
 time: 21:13:09
 tweet_id: "1458180886969544707"

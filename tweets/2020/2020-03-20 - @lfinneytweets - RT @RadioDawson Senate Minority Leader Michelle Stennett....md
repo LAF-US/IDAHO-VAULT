@@ -1,4 +1,5 @@
 ---
+title: "RT @RadioDawson Senate Minority Leader Michelle Stennett..."
 date: 2020-03-20
 time: 00:53:29
 tweet_id: "1240803614542594049"

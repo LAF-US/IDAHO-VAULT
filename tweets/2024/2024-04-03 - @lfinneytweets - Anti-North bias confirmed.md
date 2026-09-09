@@ -1,4 +1,5 @@
 ---
+title: "Anti-North bias confirmed"
 date: 2024-04-03
 time: 05:40:48
 tweet_id: "1775398024086503723"

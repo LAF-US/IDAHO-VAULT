@@ -1,4 +1,5 @@
 ---
+title: "RT @LewistonTribune MOSCOW \u2014 Republican Rep. Lori McCann,..."
 date: 2023-08-17
 time: 20:47:08
 tweet_id: "1692276899362554367"

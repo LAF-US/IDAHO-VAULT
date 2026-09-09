@@ -1,4 +1,5 @@
 ---
+title: "RT @clarkcorbin Layne McInelly, president of the Idaho..."
 date: 2020-08-04
 time: 16:00:28
 tweet_id: "1290679002579910656"

@@ -1,4 +1,5 @@
 ---
+title: "RT @mlcarmel A few years ago, a Toyota commercial involving..."
 date: 2022-06-17
 time: 17:21:09
 tweet_id: "1537847832618487808"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @mlcarmel: A few years ago, a Toyota commercial involving a car crash, guns and a simulated bank robbery shocked downtown Boise. 
+RT @mlcarmel: A few years ago, a Toyota commercial involving a car crash, guns and a simulated bank robbery shocked downtown Boise.
 
 Now,…
 

@@ -1,4 +1,5 @@
 ---
+title: "RT @madisonhardy05 Senate Ed. Cmte. unanimously passed the..."
 date: 2020-02-27
 time: 22:46:14
 tweet_id: "1233161446004948992"

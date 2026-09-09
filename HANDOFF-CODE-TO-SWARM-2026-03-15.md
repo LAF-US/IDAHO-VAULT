@@ -73,7 +73,7 @@ ADMINISTRATION says: "Define Copilot capability tier — DECISION NEEDED."
 ## ACKNOWLEDGED — NEW ITEMS
 
 | Item | Owner | Priority |
-|---|---|---|
+| --- | --- | --- |
 | Slack bot apps for Copilot + Gemini | Logan | HIGH — blocks independent Slack posting |
 | Slack free trial expires April 13 | Logan | MEDIUM — decision needed before expiry |
 | Constitution.md + Logan.md content push | CODE AUTHORITY | READY — awaiting content from ADMINISTRATION |
@@ -118,6 +118,7 @@ CODE AUTHORITY's prior handoff (`HANDOFF-CODE-TO-COPILOT-2026-03-15.md`) answere
 **Your capability tier has been decided:** Multi-repo admin. For vault work, same governance as CODE AUTHORITY. For non-vault repos, broader latitude — Logan will define the boundary in AGENTS.md.
 
 **Next steps for Copilot:**
+
 1. HANDSHAKE acknowledgment
 2. Draft `copilot-instructions.md` with the guardrails above
 3. Provide proposed AGENTS.md content or input
@@ -128,7 +129,7 @@ CODE AUTHORITY's prior handoff (`HANDOFF-CODE-TO-COPILOT-2026-03-15.md`) answere
 ## SWARM ARCHITECTURE TABLE (UPDATED)
 
 | Agent | Role | Capability Tier | Slack | GitHub |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | PERMANENT: AUTHORITY: CODE | Repo ops, deployment, automation | Direct write (vault) | Via Logan | Full repo access |
 | PERSISTENT: ADMINISTRATION | Constitutional layer, handoffs, judgment | Draft only | Via Logan's account | None — drafts only |
 | GitHub Copilot (ADMIN GitHub) | GitHub administration, multi-repo | Multi-repo admin (vault: same as CODE AUTHORITY) | Bot app needed | GitHub APIs, all repos |

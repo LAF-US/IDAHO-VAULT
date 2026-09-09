@@ -1,4 +1,5 @@
 ---
+title: "RT @Ximena_Bustillo \u201cExtremism analysts say Parker is..."
 date: 2020-10-23
 time: 22:14:11
 tweet_id: "1319764079376953344"

@@ -18,9 +18,10 @@ related:
   - idleg
 ---
 
-Some repositioning in the District 34 primary #idpol #idleg https://t.co/ksNifFnVDu
+Some repositioning in the District 34 primary #idpol #idleg <https://t.co/ksNifFnVDu>
 
 ## Links
-- https://x.com/EastIDNews/status/1232762330431143936
+
+- <https://x.com/EastIDNews/status/1232762330431143936>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1232775814866845697)

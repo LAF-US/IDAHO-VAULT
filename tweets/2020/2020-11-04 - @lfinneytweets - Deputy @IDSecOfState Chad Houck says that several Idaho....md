@@ -1,4 +1,5 @@
 ---
+title: "Deputy @IDSecOfState Chad Houck says that several Idaho..."
 date: 2020-11-04
 time: 02:55:20
 tweet_id: "1323821102242557952"

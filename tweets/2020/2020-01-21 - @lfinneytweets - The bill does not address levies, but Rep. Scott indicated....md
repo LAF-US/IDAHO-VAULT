@@ -1,4 +1,5 @@
 ---
+title: "The bill does not address levies, but Rep. Scott indicated..."
 date: 2020-01-21
 time: 16:31:16
 tweet_id: "1219658729789906946"

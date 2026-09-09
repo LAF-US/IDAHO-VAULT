@@ -1,4 +1,5 @@
 ---
+title: "Interesting detail in my inbox from @IDSecOfState Boundary..."
 date: 2023-10-18
 time: 17:40:18
 tweet_id: "1714697929175560630"

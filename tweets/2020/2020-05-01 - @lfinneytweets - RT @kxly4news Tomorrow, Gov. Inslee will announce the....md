@@ -1,4 +1,5 @@
 ---
+title: "RT @kxly4news Tomorrow, Gov. Inslee will announce the..."
 date: 2020-05-01
 time: 03:30:53
 tweet_id: "1256063515799908353"

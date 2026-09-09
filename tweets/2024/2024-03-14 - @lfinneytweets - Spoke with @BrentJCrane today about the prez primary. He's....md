@@ -1,4 +1,5 @@
 ---
+title: "Spoke with @BrentJCrane today about the prez primary. He's..."
 date: 2024-03-14
 time: 00:10:37
 tweet_id: "1768067172872675420"

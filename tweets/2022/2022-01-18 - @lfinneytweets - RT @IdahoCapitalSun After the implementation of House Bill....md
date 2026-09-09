@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoCapitalSun After the implementation of House Bill..."
 date: 2022-01-18
 time: 16:51:59
 tweet_id: "1483482312796884997"

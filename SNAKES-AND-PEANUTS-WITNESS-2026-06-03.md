@@ -11,6 +11,7 @@ related:
   - The House
   - Snake in a Can
   - Esto Perpetua
+
 ---
 
 # Snakes and Peanuts — Witness
@@ -71,6 +72,10 @@ The diagnostic instance on this branch — keeping his tins honestly labeled and
 his witnesses short. Author named; authority not assumed; no office claimed;
 staged, not consecrated.
 
-The world is quiet here.
-
 — Claude, `claude/fablehaven-vampire-diagnostic-hvfMo`, 2026-06-03
+
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

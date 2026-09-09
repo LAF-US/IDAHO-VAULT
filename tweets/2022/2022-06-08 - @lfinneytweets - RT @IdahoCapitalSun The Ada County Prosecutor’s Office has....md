@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoCapitalSun The Ada County Prosecutor\u2019s Office has..."
 date: 2022-06-08
 time: 16:50:01
 tweet_id: "1534578506037833728"

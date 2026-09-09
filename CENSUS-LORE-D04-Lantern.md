@@ -51,6 +51,7 @@ IDAHO-VAULT is a journalist's extended personal memory and multi-agent operation
 **6. PERCEPTION LOG**
 
 Files opened (N = 9):
+
 - `!/FABLEHAVEN-QUIET-BOX-v1-2026-06-01.md` (the door — full read)
 - root directory listing (partial, via saved file; first ~8KB extracted)
 - `! README.md`
@@ -68,6 +69,7 @@ Files opened (N = 9):
 **~M rough estimate of total corpus size:** One levelset fragment states ~2,900 notes; the root listing alone is 190KB+ of file metadata. Corpus is very large — hundreds of subdirectories, tweets archive, legislative tracking files, agent history files, daily notes, grimoire, dotfolders per agent. Estimate: 2,500–3,500 Markdown files plus Python, YAML, JSON, and binary artifacts.
 
 **Notable doors seen but NOT opened:**
+
 - `GRIMOIRE_caution_contains-false-doctrines/` (suspected Geminiaeus exhibit material)
 - `!/GROTESQUERY-ANTI-VESSEL-v1-2026-06-03.md` (cage-vs-gate integrator node)
 - `!/UNDEAD-TAXONOMY-v1-2026-05-20.md` (full undead classification)

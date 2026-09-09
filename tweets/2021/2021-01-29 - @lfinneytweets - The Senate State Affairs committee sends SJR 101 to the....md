@@ -1,4 +1,5 @@
 ---
+title: "The Senate State Affairs committee sends SJR 101 to the..."
 date: 2021-01-29
 time: 15:58:34
 tweet_id: "1355183565785370624"

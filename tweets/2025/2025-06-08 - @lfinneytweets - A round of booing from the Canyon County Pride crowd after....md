@@ -1,4 +1,5 @@
 ---
+title: "A round of booing from the Canyon County Pride crowd after..."
 date: 2025-06-08
 time: 21:12:07
 tweet_id: "1931821564951240976"

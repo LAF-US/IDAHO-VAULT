@@ -1,4 +1,5 @@
 ---
+title: "...our troops and border agents receive the pay they have..."
 date: 2023-10-01
 time: 02:42:51
 tweet_id: "1708311485225767122"

@@ -1,4 +1,5 @@
 ---
+title: "RT @DailyBee State legislators are looking to \u201creinvigorate..."
 date: 2024-11-14
 time: 23:08:38
 tweet_id: "1857198988912648429"

@@ -1,4 +1,5 @@
 ---
+title: "RT @KayeThornbrugh \ud83d\udea8 North Idaho College got another..."
 date: 2022-12-18
 time: 22:19:50
 tweet_id: "1604602363779911681"

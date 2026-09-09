@@ -1,4 +1,5 @@
 ---
+title: "RT @clarkcorbin Following the expulsion of former Rep...."
 date: 2020-01-16
 time: 21:22:04
 tweet_id: "1217919976385855489"

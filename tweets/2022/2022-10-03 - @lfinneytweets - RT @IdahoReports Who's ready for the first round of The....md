@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Who's ready for the first round of The..."
 date: 2022-10-03
 time: 17:03:07
 tweet_id: "1576981181194649610"

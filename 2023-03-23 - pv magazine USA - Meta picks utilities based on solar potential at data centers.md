@@ -30,11 +30,11 @@ At present, Meta stands as the largest [commercial and industrial purchaser](htt
 
 One of Meta’s procurement strategies concerns the siting of new data centers. The company clarified that they do not necessarily own these data centers but they incorporate an “emissions first” rationale into their process, making inquiries with suppliers and aiming for local sourcing wherever feasible. When selecting a data center site, a key factor influencing the major electricity buyer’s decision is the ability to collaborate with the local utility.
 
-![](https://pv-magazine-usa.com/wp-content/uploads/sites/2/2023/03/Corporate-PPA-leaders.png)
+![alt text needed](https://pv-magazine-usa.com/wp-content/uploads/sites/2/2023/03/Corporate-PPA-leaders.png)
 
 Corporate PPA leaders among solar procurement. Image: SEIA
 
-![](https://pv-magazine-usa.com/wp-content/uploads/sites/2/2023/03/SEIA-Top-Corporate-Solar-PPA-by-state.png)
+![alt text needed](https://pv-magazine-usa.com/wp-content/uploads/sites/2/2023/03/SEIA-Top-Corporate-Solar-PPA-by-state.png)
 
 Corporate solar users ranked by state. Image: SEIA
 
@@ -44,7 +44,7 @@ In December, Meta announced [720 MW of solar power projects in development](http
 
 The company has begun to approach utilities earlier in the development process, as they have historically struggled to purchase clean electricity sources in certain states. Parekh shared one of Meta’s key lessons: obtaining custom renewable energy tariffs from these groups is not an overnight process, often requiring up to 18 months to finalize details.
 
-![](https://pv-magazine-usa.com/wp-content/uploads/sites/2/2023/03/META-solar-map.png)
+![alt text needed](https://pv-magazine-usa.com/wp-content/uploads/sites/2/2023/03/META-solar-map.png)
 
 Meta purchases electricity from 64 utility-scale and rooftop solar projects, of which a majority are co-located in regions with its data center facilities. (Image: Meta Sustainability website) Image: Meta
 
@@ -56,6 +56,6 @@ A utility in the western region and Alabama have expressed interest in exploring
 
 ### Popular content
 
-[![](https://pv-magazine-usa.com/wp-content/uploads/sites/2/wordpress-popular-posts/128732-featured-1200x800.jpg)](https://pv-magazine-usa.com/2026/03/27/the-theory-and-practice-of-plug-in-solar/)
+[![alt text needed](https://pv-magazine-usa.com/wp-content/uploads/sites/2/wordpress-popular-posts/128732-featured-1200x800.jpg)](https://pv-magazine-usa.com/2026/03/27/the-theory-and-practice-of-plug-in-solar/)
 
 [27 March 2026](https://pv-magazine-usa.com/2026/03/27/the-theory-and-practice-of-plug-in-solar/) [Achieving a system cost of $0.65 per watt through the secondary market and DIY assembly demonstrates a viable pathway for U.S. plug-in solar to provid...](https://pv-magazine-usa.com/2026/03/27/the-theory-and-practice-of-plug-in-solar/)

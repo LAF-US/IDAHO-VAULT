@@ -1,4 +1,5 @@
 ---
+title: "RT @MikeCrapo RFK Jr. is passionate about ending our..."
 date: 2024-12-18
 time: 01:15:44
 tweet_id: "1869189774390817249"

@@ -1,4 +1,5 @@
 ---
+title: "RT @NateBrownNews The NCAA has put our a statement saying..."
 date: 2020-06-12
 time: 00:47:55
 tweet_id: "1271242796461027328"

@@ -1,4 +1,5 @@
 ---
+title: "RT @CBS2Boise These bills are an emotional knee-jerk..."
 date: 2021-04-16
 time: 21:14:54
 tweet_id: "1383167038164664320"

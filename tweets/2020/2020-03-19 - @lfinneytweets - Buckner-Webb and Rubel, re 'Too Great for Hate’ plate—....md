@@ -1,4 +1,5 @@
 ---
+title: "Buckner-Webb and Rubel, re 'Too Great for Hate\u2019 plate\u2014..."
 date: 2020-03-19
 time: 22:42:10
 tweet_id: "1240770567382298625"

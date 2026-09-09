@@ -4,4 +4,4 @@ related:
 - Melba
 authority: LOGAN
 ---
-Melba, Canyon County 
+Melba, Canyon County

@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Gov. Brad Little has replaced Attorney..."
 date: 2024-05-25
 time: 01:35:06
 tweet_id: "1794180359250391383"

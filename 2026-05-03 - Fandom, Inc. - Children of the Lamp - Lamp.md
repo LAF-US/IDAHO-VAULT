@@ -15,4 +15,3 @@ The important vault takeaway is that the lamp is a named vessel with rules, not 
 ## Vault Use
 
 This source supports the vault's understanding of the shell side of the lamp/genie model.
-

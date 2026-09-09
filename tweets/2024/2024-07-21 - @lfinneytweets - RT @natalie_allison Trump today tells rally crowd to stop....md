@@ -1,4 +1,5 @@
 ---
+title: "RT @natalie_allison Trump today tells rally crowd to stop..."
 date: 2024-07-21
 time: 02:00:12
 tweet_id: "1814842785465573579"

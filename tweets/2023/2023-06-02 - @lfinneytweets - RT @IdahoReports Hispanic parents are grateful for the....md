@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Hispanic parents are grateful for the..."
 date: 2023-06-02
 time: 16:16:19
 tweet_id: "1664667266863239168"

@@ -1,4 +1,5 @@
 ---
+title: "RT @APFactCheck A Harvard Medical School class on LGBTQ..."
 date: 2023-01-19
 time: 01:53:29
 tweet_id: "1615890156934004736"

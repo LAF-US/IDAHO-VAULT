@@ -1,4 +1,5 @@
 ---
+title: "\u201cWe hope everyone is able to cancel any reservations and..."
 date: 2020-03-19
 time: 18:39:44
 tweet_id: "1240709559053774848"

@@ -1,4 +1,5 @@
 ---
+title: "INBOX In tonight's newsletter, Rep. Heather Scott shares..."
 date: 2020-08-07
 time: 01:38:55
 tweet_id: "1291549349210492928"
@@ -22,9 +23,10 @@ related:
   - idpol
 ---
 
-INBOX: In tonight's newsletter, Rep. Heather Scott shares some details on the special session timeline. She also calls for #idleg to terminate #IdahoCOVID19 emergency declaration & criticizes @GovernorLittle for wanting to see draft legislation before calling the session. #idpol https://t.co/zCy2WlmETA
+INBOX: In tonight's newsletter, Rep. Heather Scott shares some details on the special session timeline. She also calls for #idleg to terminate #IdahoCOVID19 emergency declaration & criticizes @GovernorLittle for wanting to see draft legislation before calling the session. #idpol <https://t.co/zCy2WlmETA>
 
 ## Media
-- ![](https://pbs.twimg.com/media/EeyAESoVoAAizwJ.png)
+
+- ![alt text needed](https://pbs.twimg.com/media/EeyAESoVoAAizwJ.png)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1291549349210492928)

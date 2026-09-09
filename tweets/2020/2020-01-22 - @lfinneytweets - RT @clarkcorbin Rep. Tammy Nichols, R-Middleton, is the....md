@@ -1,4 +1,5 @@
 ---
+title: "RT @clarkcorbin Rep. Tammy Nichols, R-Middleton, is the..."
 date: 2020-01-22
 time: 18:18:15
 tweet_id: "1220048043665346560"
