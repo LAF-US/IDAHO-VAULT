@@ -1402,7 +1402,7 @@ def _build_reconciliation_report(
             auto_merge_enabled, arm_error = _arm_auto_merge(owner, repo, pr_number)
             if auto_merge_enabled:
                 rearmed.append(pr_number)
-            elif arm_error and arm_error.startswith(AUTO_MERGE_NOT_READY_NOTE):
+            elif arm_error and AUTO_MERGE_NOT_READY_NOTE in arm_error:
                 # Transient — PR checks are still unstable, expected to clear on a later
                 # pass. Distinct from a real authorization/branch-protection problem, so
                 # it must not land in auto_merge_authorization_blocked: pr_loop_watchdog
