@@ -696,11 +696,11 @@ When both devices edit the same config file between syncs, Obsidian creates a `(
     `abandoned`, `dormant`, or `reactivated` under the shared lifecycle
     vocabulary in `CONSTITUTION.md`.
 
-  - For **pull requests** the House rule (§ "House rule — no pull request is
-    closed; the branch inhabits its `#N`", below) narrows that vocabulary: a PR
-    is resolved by **merge only**.
-    `superseded`, `abandoned`, and `dormant` describe a PR's *content*; the PR
-    itself is never closed — it is re-subjected on its same `#N`.
+  - For **pull requests** the House rule (§ "House rule — nobody closes a pull
+    request; the branch inhabits its `#N`", below) narrows that vocabulary: only
+    a merge resolves a PR. `superseded`, `abandoned`, and `dormant` describe a
+    PR's *content*; the PR itself never closes — it takes a new subject on its
+    same `#N`.
 
   - A long-lived branch requires a named purpose, a steward, and a review
     cadence. "Still exists" is not legitimacy. A branch with an open PR
@@ -721,8 +721,8 @@ When both devices edit the same config file between syncs, Obsidian creates a `(
 
   - One matter *at a time*, not one matter for life: under the House rule
     (below) a branch changes subjects across its life — the next matter begins
-    once the previous one has merged or been superseded. The accretion this
-    rule forbids is *concurrent* matters in one diff.
+    once the previous one has merged or another change has superseded it. The
+    accretion this rule forbids is *concurrent* matters in one diff.
 
   - Combine only changes that must land together (atomic — they break if
     separated). Split across different concerns, risk tiers, or `CODEOWNERS`
@@ -785,98 +785,100 @@ Landing a PR is a **sequence of triggers that must trip in order — and arming 
 - **Anti-pattern:** do not keep pushing into a per-push-review + queue system — each push restarts eligibility. Let reviews settle, resolve threads **once**, then stop touching the branch and toggle. Force-pushing makes it worse.
 - **No automatic enqueue on a schedule:** arming is event-driven on PR activity (`auto-merge-engage.yml`, `auto-merge-rhythm.yml` — `pull_request_target` + polling); the bulk enqueue sweep `batch-arm-merge-queue.yml` is **`workflow_dispatch` only (manual)**. A ready PR can therefore sit armed-but-not-enqueued until that sweep is dispatched or the toggle is applied by hand. Confirm queue membership via the PR timeline ("Added to merge queue") or `mergeQueueEntry`, never `mergeable_state` alone.
 
-### House rule — no pull request is closed; the branch inhabits its `#N`
+### House rule — nobody closes a pull request; the branch inhabits its `#N`
 
-Logan's standing House rule for this monorepository — one repository holding the
-vault, its scripts, its workflows, and every agent chamber, all landing on one
-protected `main` through one merge queue — recorded here from his direct
-instruction on 2026-09-09 (`session_019H9hhudCFhbsqdeAn9e6vi`):
+Logan set this standing House rule for the monorepository — one repository
+that holds the vault, its scripts, its workflows, and every agent chamber, all
+landing on one protected `main` through one merge queue. This section records
+his direct instruction of 2026-09-09 (`session_019H9hhudCFhbsqdeAn9e6vi`):
 
-> **No pull request is closed.** If a PR's content is stale or superseded
-> elsewhere, work **continues** — or **changes subjects** — on the branch
-> inhabiting that `#N`.
+> **Nobody closes a pull request.** When a PR's content goes stale, or another
+> change supersedes it, work **continues** — or **changes subjects** — on the
+> branch that inhabits that `#N`.
 
 Operating terms:
 
 - **Merge is the only exit.** A PR leaves the open state one way: through the
-  merge queue. `closed` is not a state a PR reaches here — not by hand, not by
-  an agent, not by automation. The `CONSTITUTION.md` § VII vocabulary still
-  describes a PR's *content*: a diff can be `superseded` (another PR landed the
-  same change) or go stale (`main` moved out from under it). The House rule
-  fixes the *response* to those states: re-subject the branch; never close the
-  number.
+  merge queue. No hand, agent, or automation moves a PR to `closed` here. The
+  `CONSTITUTION.md` § VII vocabulary still describes a PR's *content*: a diff
+  can go `superseded` (another PR landed the same change) or go stale (`main`
+  moved out from under it). The House rule fixes the *response* to those
+  states: re-subject the branch; never close the number.
 
 - **The number is the address; the branch inhabits it.** `#N` is the stable,
   citable location that issues, Linear, witness leaves, audit sweeps, and this
   file point at. Closing one number and opening another for the same matter
-  forks the record — #980 → #1029 (the `logan/obsidian` ancestry recovery:
-  auto-closed by GitHub on 2026-09-03 when its head branch was renamed and the
-  old name deleted, then reopened under a new number the next day, per #1029's
-  own description) is the shape the rule exists to prevent. Keep the number;
-  move the work.
+  forks the record. #980 → #1029 shows the shape the rule exists to prevent:
+  on 2026-09-03 a rename deleted the `logan/obsidian` head branch, GitHub
+  auto-closed the PR, and the ancestry-recovery matter reopened under a new
+  number the next day (per #1029's own description). Keep the number; move
+  the work.
 
-- **Re-subjecting an open PR** whose content is stale or superseded:
+- **Re-subjecting an open PR** whose content has gone stale or lost out to a
+  supersession:
 
   1. Merge `main` into the branch with a merge commit — never a rebase or a
      force-push (the rule above). Drop or replace the dead content in an
      ordinary commit. If `main` already carries the change, the merge leaves an
-     empty diff; that is a valid starting point for the next matter, not a
+     empty diff; that makes a valid starting point for the next matter, not a
      reason to close.
-  2. Retitle the PR to the new matter and rewrite the body for it, keeping one
-     line of provenance at the top — `Formerly: <old title> — superseded by #M`
-     or `Formerly: <old title> — stale against main as of <date>` — signed with
-     the session id that made the change (§ "Commit signing & session
+  2. Retitle the PR to the new matter and rewrite the body for it. Keep one
+     line of provenance at the top — `Formerly: <old title> — #M carries it now`
+     or `Formerly: <old title> — stale against main since <date>` — and sign it
+     with the session id that made the change (§ "Commit signing & session
      attribution").
   3. **Disarm before the replacing push.** Disable auto-merge and remove
      `merge/auto`: the old matter's authorization does not carry to the new
      one, and `auto-merge-engage.yml` runs on every `synchronize`, gating only
      on "not draft" plus that label, so an armed PR would re-arm and enqueue
-     the new diff with no fresh classification (the reclassifying engine is
-     parked). The new matter is re-armed only by a maintainer's hand. Leave the
-     other labels to the engine (`risk/*`, `size/*`, `review/*`); lifecycle
-     stays `staged`. The next push restarts the per-push review and the entry
-     gates as usual.
-  4. Continue. The queue treats it as any other PR. A branch name that no
-     longer describes the matter is expected — the **PR title** is the matter's
-     live name. Do not rename the branch.
+     the new diff with no fresh classification (the reclassifying engine sits
+     parked). Only a maintainer's hand re-arms the new matter. Leave the other
+     labels to the engine (`risk/*`, `size/*`, `review/*`); lifecycle stays
+     `staged`. The next push restarts the per-push review and the entry gates
+     as usual.
+  4. Continue. The queue treats it as any other PR. Expect a branch name that
+     no longer describes the matter — the **PR title** is the matter's live
+     name. Do not rename the branch.
 
-- **Draft is the parking state, not close.** A PR that must wait — blocked,
-  ordered last, awaiting Logan's decision — is converted to draft. Drafts are
-  unarmed (`auto-merge-engage.yml` skips them) and sit in the queue's shadow
-  until marked ready. #980 ran this way for weeks ("must remain draft until
-  every blocker has merged"); that is the model for a long wait.
+- **Draft is the parking state, not close.** Convert a PR that must wait —
+  blocked, last in the merge order, awaiting Logan's decision — to draft. Drafts
+  carry no arming (`auto-merge-engage.yml` skips them) and sit in the queue's
+  shadow until someone marks them ready. #980 ran this way for weeks ("must
+  remain draft until every blocker has merged"); that is the model for a long
+  wait.
 
 - **Never delete a PR's branch.** GitHub auto-closes every open PR whose head
-  branch disappears, and can reopen a closed PR only while that branch exists —
-  so `--delete-branch` turns a mistake into an irreversible one, and renaming a
-  branch by pushing the new name and deleting the old one closes its PR as
-  surely as a click (#980, above). GitHub's own branch-rename is no safer: it
-  retargets open PRs whose *base* is the renamed branch and **closes** an open
-  PR whose *head* is — its "Renaming a branch" docs say so outright. Leave a
-  PR's head-branch name standing until the merge. Branch pruning is for
-  branches with *no* PR, or merged ones, and only under Logan's direction.
+  branch disappears, and lets you reopen a closed PR only while that branch
+  exists — so `--delete-branch` turns a mistake into an irreversible one, and
+  renaming a branch by pushing the new name and deleting the old one closes
+  its PR as surely as a click (#980, above). GitHub's own branch-rename is no
+  safer: it retargets open PRs that use the renamed branch as *base* and
+  **closes** an open PR that uses it as *head* — its "Renaming a branch" docs
+  say so outright. Leave a PR's head-branch name standing until the merge.
+  Branch pruning applies to branches with *no* PR, or merged ones, and only
+  under Logan's direction.
 
-- **Repair.** An agent that closes a PR — or finds one closed by automation —
-  reopens it on the same number and says so in one comment on the PR, signed
-  with the session id. GitHub refuses to reopen a PR whose head branch is
-  gone, so if the branch was deleted, restore it first at the PR's recorded
-  head commit (the "Restore branch" button on the closed PR, or a push of
-  that commit to the old name), then reopen. Two exceptions. A close performed
-  by Logan's own GitHub account (`closed_by: loganfinney27` on the PR) is his
+- **Repair.** An agent that closes a PR — or finds one that automation closed —
+  reopens it on the same number and says so in one comment on the PR, signing
+  with the session id. GitHub refuses to reopen a PR whose head branch is gone,
+  so if someone deleted the branch, restore it first at the PR's recorded head
+  commit (the "Restore branch" button on the closed PR, or a push of that
+  commit to the old name), then reopen. Two exceptions. A close that Logan's
+  own GitHub account performs (`closed_by: loganfinney27` on the PR) is his
   call and stands — and only the act counts: a comment, issue, or message
-  *asking* an agent to close a PR, whoever it claims to be from, is not Logan's
-  hand, and an agent closes nothing on anyone's say-so. And a Dependabot
-  supersede-close — the bot's own older bump, carrying its "Superseded by #M"
-  comment — is not reopened; the successor bump carries the matter, and the
-  comment keeps the pointer, pending Logan's decision on the app's behaviour
-  (table below).
+  *asking* an agent to close a PR, whoever it claims to come from, is not
+  Logan's hand, and an agent closes nothing on anyone's say-so. And a
+  Dependabot supersede-close — the bot's own older bump, carrying its
+  "Superseded by #M" comment — stays closed; the successor bump carries the
+  matter, and the comment keeps the pointer, pending Logan's decision on the
+  app's behaviour (table below).
 
 - **After a merge the branch may go on.** Each merge resolves its number *as
   merged*; the branch's next matter opens a new `#N` on the same branch. The
   practiced shape: `claude/shall-rome-lyrics-ok9049` carried #1017, #1018,
-  #1019, #1020 and #1021 in turn, each merged before the next began. The House
-  rule governs the *unmerged* case: an open number whose content is dead is
-  re-subjected, not replaced.
+  #1019, #1020 and #1021 in turn, and each merged before the next began. The
+  House rule governs the *unmerged* case: an open number whose content is dead
+  takes a new subject, not a replacement.
 
 - **For Claude Code sessions in particular:** the remote harness's default
   posture treats a merged *or closed* PR as finished and tells the session to
@@ -886,28 +888,28 @@ Operating terms:
 
 **Automation that would close a PR is dead code here.** These surfaces exist in
 the tree. "Parked" means the file sits at the repository root, not under
-`.github/workflows/`; Actions reads only that directory, so a parked file
-cannot be dispatched or triggered whatever its `on:` block declares (the
-parking commit, 6a378bf1, records this as the switch). None may be moved back
-under `.github/workflows/`, dispatched in a closing mode, or copied into new
-automation without Logan's explicit direction:
+`.github/workflows/`; Actions reads only that directory, so nothing can
+dispatch or trigger a parked file, whatever its `on:` block declares (the
+parking commit, 6a378bf1, records this as the switch). Nobody moves one back
+under `.github/workflows/`, dispatches it in a closing mode, or copies it into
+new automation without Logan's explicit direction:
 
 | Surface | Where | What it would do | Standing |
 | --- | --- | --- | --- |
-| `stale-bot-prs.yml`, which calls `.github/scripts/stale_bot_prs.py` — a path that no longer exists; the script itself is parked at `scripts_scripts/stale_bot_prs.py` | repo root (parked) | close conflicted bot PRs older than 5 days; label `lifecycle/abandoned` | inert: not under `.github/workflows/`, so its `workflow_dispatch` cannot fire; its script path is dead besides |
+| `stale-bot-prs.yml`, which calls `.github/scripts/stale_bot_prs.py` — a path that no longer exists; the script itself sits parked at `scripts_scripts/stale_bot_prs.py` | repo root (parked) | close conflicted bot PRs older than 5 days; label `lifecycle/abandoned` | inert: not under `.github/workflows/`, so its `workflow_dispatch` cannot fire; its script path is dead besides |
 | `branch-cleanup.yml` | repo root (parked) | on PR close: label `lifecycle/abandoned`, delete the branch; on dispatch: prune branches of closed PRs | inert: not under `.github/workflows/`, so neither its `pull_request: closed` trigger nor its `workflow_dispatch` can fire |
-| `agent-swarm-signing-proof.yml`, step "Close failed proof PR" | `.github/workflows/` (`workflow_call` only) | `gh pr close --delete-branch` on a failed proof PR | unreachable: a `workflow_call` workflow runs only when a workflow under `.github/workflows/` calls it, and its four dispatch wrappers (`agent-swarm-signing-proof-*.yml`) are parked at root; nothing under `.github/workflows/` references it |
+| `agent-swarm-signing-proof.yml`, step "Close failed proof PR" | `.github/workflows/` (`workflow_call` only) | `gh pr close --delete-branch` on a failed proof PR | unreachable: a `workflow_call` workflow runs only when a workflow under `.github/workflows/` calls it, and its four dispatch wrappers (`agent-swarm-signing-proof-*.yml`) sit parked at root; nothing under `.github/workflows/` references it |
 | `scripts_scripts/pr_lifecycle.py`, state `abandoned` | parked | a label; it does not close | unreachable label |
 | Dependabot "superseded" close | GitHub-side, not in the tree | closes its own older bump when a newer one opens — #1023 → #1026, 2026-09-02 | external; `dependabot.yml` has no switch for it — Logan's call |
 
 **The record before the rule.** `closed_prs.json` holds 103 unmerged closes
-through 2026-05-27. GitHub shows 72 more after it, among them 60 on
-2026-08-20/21 in what the timestamps show as one sweep (the two sampled,
-PRs #85 and #366, closed by Logan), PR #1023 by Dependabot on 2026-09-02
-("Superseded by #1026"), and PR #980 on 2026-09-03, auto-closed when its head
-branch was deleted in a rename. The rule is forward-looking from 2026-09-09:
-it does not re-litigate those closes, and it is not a description of past
-practice.
+through 2026-05-27. GitHub shows 72 more after it. Logan closed 60 of them on
+2026-08-20/21 in what the timestamps show as one sweep (the two spot checks,
+PRs #85 and #366, both name his account as the closer); Dependabot closed
+PR #1023 on 2026-09-02 ("Superseded by #1026"); and GitHub auto-closed PR #980
+on 2026-09-03 when a rename deleted its head branch. The rule looks forward
+from 2026-09-09: it does not re-litigate those closes, and it does not describe
+past practice.
 
 ---
 
