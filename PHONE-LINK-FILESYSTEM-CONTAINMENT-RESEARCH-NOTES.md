@@ -24,7 +24,7 @@ This note records a narrow research review of filesystem-containment concerns re
 
 ## Design observations
 
-The merged Phone Link implementation uses resolved paths and a component-aware containment rule for the autosweep utility. This is a stronger boundary than a `startswith` comparison because same-prefix siblings, such as `C:\vaultx` versus `C:\vault`, do not represent the same directory relationship. The current implementation also maintains a fixed repository-root destination model rather than accepting arbitrary destination roots.
+The merged Phone Link implementation's Python watcher and intake script use resolved paths and a component-aware containment rule. That claim covers the Python code only: the retained PowerShell compatibility path (`!/PHONE-LINK/phone-link-auto-sweep.ps1`) still builds its destination with `Join-Path` and calls `Move-Item` with no canonical destination validation, and this note records it as an unresolved security gap rather than as covered. This is a stronger boundary than a `startswith` comparison because same-prefix siblings, such as `C:\vaultx` versus `C:\vault`, do not represent the same directory relationship. The current implementation also maintains a fixed repository-root destination model rather than accepting arbitrary destination roots.
 
 Microsoft’s reparse-point documentation is a useful caution for this design: a path can carry behavior that is not obvious from its name alone. The current Python-level approach is appropriate for a small local tool because it resolves paths before evaluating containment. If the tool’s privilege, automation scope, or deployment surface expands, a Windows-native wrapper should consider handle-bound verification of the final opened object as a further hardening measure.[3] [5]
 
@@ -37,7 +37,7 @@ The following questions are intentionally recorded rather than answered by this 
 | Question | Why it remains open |
 |---|---|
 | How should the tool behave when a configured source crosses a junction or network share? | Reparse and SMB behavior depends on the final filesystem/provider and the chosen API surface.[3] [5] |
-| Does the local Windows launch path need a handle-bound final-path check? | The present code is Python-based and local; a native-handle policy would need a separate design and test plan. |
+| Does the local Windows launch path need a handle-bound final-path check? | The Python code is local and resolves paths before comparing; the PowerShell compatibility path performs no destination validation today (see Design observations), so any answer applies to it first. A native-handle policy would need a separate design and test plan. |
 | Which long-path and UNC forms are supported by the actual Phone Link folder configuration? | Microsoft documents distinct normalization and extended-path behavior; the repository should test the configurations it intends to support.[2] |
 
 ## References
