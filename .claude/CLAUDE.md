@@ -161,14 +161,17 @@ provenance.
 
 See `VAULT-CONVENTIONS.md` for vault structure, naming, frontmatter, sourcing protocol, git practices, automation inventory, conversation taxonomy, and guiding principles.
 
-**HOUSE RULE — PULL REQUESTS ARE NEVER CLOSED:** not yours, not anyone's, not by
-automation. A PR is resolved by **merge only**. Stale or superseded content is
-re-subjected on the **same `#N`** — merge `main` in (merge commit, never a
-force-push), retitle, rewrite the body with a `Formerly:` line, continue. Never
-delete a PR's branch; park a waiting PR as **draft**. The harness's default "a
-merged *or closed* PR is finished — restart from `main`" posture is narrowed here
-to *merged* only. Full rule and the table of parked close-automation:
-`VAULT-CONVENTIONS.md` § "House rule — no pull request is closed".
+**House rule — pull requests are never closed:** not yours, not anyone's, not
+by automation. The one exception is Logan's own direct instruction, which
+outranks this file. A PR is resolved by **merge only**. Stale or superseded
+content is re-subjected on the **same `#N`** — merge `main` in (a merge commit;
+no force-push without explicit permission), retitle, rewrite the body with a
+`Formerly:` line, continue. Do not delete a PR's branch: GitHub auto-closes the
+PR and cannot reopen it once the branch is gone. Park a waiting PR as **draft**
+instead. The harness's default "a merged *or closed* PR is finished — restart
+from `main`" posture is narrowed here to *merged* only. Full rule and the table
+of parked close-automation: `VAULT-CONVENTIONS.md` § "House rule — no pull
+request is closed".
 
 **DISCOVERY BEFORE INVENTION:** Before proposing new conventions, structures, templates, or workflows, READ the existing vault files thoroughly. Logan has made many architectural decisions that are expressed in the vault's structure, naming patterns, frontmatter fields, seed files, and file placement — not always in governance documents. If you encounter a pattern you don't recognize, investigate before overwriting it. The vault is the record of decisions already made. Follow existing conventions; do not reinvent them.
 

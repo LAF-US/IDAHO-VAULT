@@ -878,11 +878,12 @@ new automation without Logan's explicit direction:
 
 **The record before the rule.** `closed_prs.json` holds 103 unmerged closes
 through 2026-05-27. GitHub shows 72 more after it, among them 60 on
-2026-08-20/21 in what the timestamps show as one sweep (the two sampled, #85 and
-#366, closed by Logan), #1023 by Dependabot on 2026-09-02 ("Superseded by
-#1026"), and #980 on 2026-09-03, auto-closed when its head branch was deleted in
-a rename. The rule is forward-looking from 2026-09-09: it does not re-litigate
-those closes, and it is not a description of past practice.
+2026-08-20/21 in what the timestamps show as one sweep (the two sampled,
+PRs #85 and #366, closed by Logan), PR #1023 by Dependabot on 2026-09-02
+("Superseded by #1026"), and PR #980 on 2026-09-03, auto-closed when its head
+branch was deleted in a rename. The rule is forward-looking from 2026-09-09:
+it does not re-litigate those closes, and it is not a description of past
+practice.
 
 ---
 
