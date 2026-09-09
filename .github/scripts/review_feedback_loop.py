@@ -391,6 +391,7 @@ def _arm_auto_merge(owner: str, repo: str, pr_number: int) -> tuple[bool, str | 
             if updated
             else f"branch update (BEHIND) failed: {update_error}"
         )
+    not_ready = False
     if not enabled:
         try:
             # Norm set 2026-07-06: the merge QUEUE's configured method is the
@@ -405,27 +406,47 @@ def _arm_auto_merge(owner: str, repo: str, pr_number: int) -> tuple[bool, str | 
         except RuntimeError as exc:
             message = str(exc)
             if any(fragment in message for fragment in AUTO_MERGE_NOT_READY_FRAGMENTS):
+                # enablePullRequestAutoMerge itself rejects a not-CLEAN PR, but
+                # VAULT-CONVENTIONS.md § "Two different gates" documents mergeStateStatus
+                # UNSTABLE (only a non-required check red) as still queue-entry-eligible —
+                # the same case auto-merge-engage.yml's enqueue step explicitly accepts
+                # (`case "$state" in CLEAN|UNSTABLE) ;;`). Returning here unconditionally
+                # would leave a UNSTABLE-but-otherwise-eligible PR permanently unqueued on
+                # every retry if that one non-required check never turns green. Fall
+                # through to the direct enqueue attempt instead of bailing out.
                 notes.insert(0, AUTO_MERGE_NOT_READY_NOTE)
-                return (False, "; ".join(notes))
-            if not any(fragment in message for fragment in AUTO_MERGE_AUTHZ_FRAGMENTS):
+                not_ready = True
+            elif not any(fragment in message for fragment in AUTO_MERGE_AUTHZ_FRAGMENTS):
                 raise
-            notes.insert(
-                0,
-                "GitHub Actions is not authorized to enable auto-merge "
-                "on the protected base branch.",
-            )
-            return (False, "; ".join(notes))
-    # Arming is only half the job — explicitly add it to the merge queue now.
+            else:
+                notes.insert(
+                    0,
+                    "GitHub Actions is not authorized to enable auto-merge "
+                    "on the protected base branch.",
+                )
+                return (False, "; ".join(notes))
+    # Arming is only half the job — explicitly add it to the merge queue now. Attempted even
+    # when the arm itself was rejected as not-ready (see above): enqueuePullRequest is a
+    # separate GraphQL mutation, gated on mergeStateStatus rather than on auto-merge already
+    # being enabled, so a not-ready arm doesn't preclude a successful direct enqueue.
     node_id = _pr_node_id(owner, repo, pr_number)
+    enqueued = False
     if node_id:
         enqueued, enqueue_error = _enqueue_pr(node_id)
         if not enqueued and enqueue_error:
-            # Armed, but the explicit enqueue hit a REAL error (auth/API) — distinct from the
-            # benign "not queue-ready yet" case (which returns no error and is left for the
-            # armed auto-merge to enqueue when green). Surface it so the "armed but never
-            # queued" failure this PR fixes can't recur silently. Still armed=True.
+            # A REAL error (auth/API) enqueuing — distinct from the benign "not queue-ready
+            # yet" case (which returns no error). Surface it so the "armed but never queued"
+            # failure this PR fixes can't recur silently.
             notes.append(f"enqueue was rejected: {enqueue_error}")
-    # node_id None (fail-open) or benign not-ready: armed; auto-merge enqueues it when green.
+    if not_ready:
+        if not enqueued:
+            # Still not ready even for a direct enqueue attempt — genuinely transient.
+            return (False, "; ".join(notes))
+        # The arm attempt was rejected, but the direct enqueue succeeded anyway (UNSTABLE
+        # was still queue-entry-eligible) — replace the stale not-ready sentinel so the
+        # note doesn't read as a rejection when this pass actually queued the PR.
+        notes[0] = "enqueued directly (arm attempt rejected as unstable, but UNSTABLE is queue-entry-eligible)"
+    # node_id None (fail-open), benign not-ready-but-now-enqueued, or a clean arm: armed.
     return (True, "; ".join(notes)) if notes else (True, None)
 
 
