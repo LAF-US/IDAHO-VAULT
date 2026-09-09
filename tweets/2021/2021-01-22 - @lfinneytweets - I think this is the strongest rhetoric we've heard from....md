@@ -1,4 +1,5 @@
 ---
+title: "I think this is the strongest rhetoric we've heard from..."
 date: 2021-01-22
 time: 19:06:59
 tweet_id: "1352694264879140865"

@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Moyle ignites partisan..."
 date: 2022-12-02
 time: 04:17:34
 tweet_id: "1598531799512416256"

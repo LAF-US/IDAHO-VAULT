@@ -1,4 +1,5 @@
 ---
+title: "RT @apalermotweets The University of Idaho this week..."
 date: 2023-09-15
 time: 02:48:27
 tweet_id: "1702514690163912943"

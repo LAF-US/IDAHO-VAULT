@@ -4,4 +4,4 @@ related:
 - construction
 ---
 
-construction 
+construction

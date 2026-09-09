@@ -1,4 +1,5 @@
 ---
+title: "Idaho senators SPOTTED The state pairs walking together is..."
 date: 2024-07-24
 time: 19:16:25
 tweet_id: "1816190721935978802"
@@ -13,11 +14,12 @@ related:
   - lfinneytweets
 ---
 
-Idaho senators SPOTTED 
+Idaho senators SPOTTED
 
-The state pairs walking together is too cute. https://t.co/fV7OHSyh0p
+The state pairs walking together is too cute. <https://t.co/fV7OHSyh0p>
 
 ## Links
-- https://x.com/rbeggin/status/1816167810839531937
+
+- <https://x.com/rbeggin/status/1816167810839531937>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1816190721935978802)

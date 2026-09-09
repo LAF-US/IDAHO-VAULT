@@ -218,26 +218,26 @@ For a VisionClaw-style local experiment on Logan's Wayfarer Gen I pair:
 ## Sources
 
 - Meta Wearables DAT iOS repository, public README and AGENTS guidance:
-  https://github.com/facebook/meta-wearables-dat-ios and
-  https://raw.githubusercontent.com/facebook/meta-wearables-dat-ios/main/AGENTS.md
+  <https://github.com/facebook/meta-wearables-dat-ios> and
+  <https://raw.githubusercontent.com/facebook/meta-wearables-dat-ios/main/AGENTS.md>
 - Meta Wearables DAT Android repository, public README and AGENTS guidance:
-  https://github.com/facebook/meta-wearables-dat-android and
-  https://raw.githubusercontent.com/facebook/meta-wearables-dat-android/main/AGENTS.md
+  <https://github.com/facebook/meta-wearables-dat-android> and
+  <https://raw.githubusercontent.com/facebook/meta-wearables-dat-android/main/AGENTS.md>
 - VisionClaw repository:
-  https://github.com/Intent-Lab/VisionClaw
+  <https://github.com/Intent-Lab/VisionClaw>
 - VisionClaw paper:
-  https://arxiv.org/abs/2604.03486
+  <https://arxiv.org/abs/2604.03486>
 - Android Central, "Meta's Ray-Ban Display build for the future, opens its
   doors to developers," 2026-05-15:
-  https://www.androidcentral.com/gaming/virtual-reality/metas-ray-ban-display-build-for-the-future-opens-its-doors-to-developers
+  <https://www.androidcentral.com/gaming/virtual-reality/metas-ray-ban-display-build-for-the-future-opens-its-doors-to-developers>
 - The Verge, "Meta brings virtual writing to everyone with Meta Ray-Ban Display
   glasses," 2026-05-14:
-  https://www.theverge.com/tech/930941/meta-ray-ban-display-virtual-neural-handwriting-apps-developer
+  <https://www.theverge.com/tech/930941/meta-ray-ban-display-virtual-neural-handwriting-apps-developer>
 - Tom's Hardware, "Resourceful runner 'can race my own ghost' using homemade
   Meta Ray-Ban Display app," 2026-06-01:
-  https://www.tomshardware.com/peripherals/wearable-tech/resourceful-runner-can-race-my-own-ghost-using-homemade-meta-ray-ban-display-app-also-adds-bonus-coins-mini-leaderboard-and-more
+  <https://www.tomshardware.com/peripherals/wearable-tech/resourceful-runner-can-race-my-own-ghost-using-homemade-meta-ray-ban-display-app-also-adds-bonus-coins-mini-leaderboard-and-more>
 - TechRadar, "Modders are turning Meta Ray-Bans into spy glasses," 2026-06-12:
-  https://www.techradar.com/computing/virtual-reality-augmented-reality/modders-are-turning-meta-ray-bans-into-spy-glasses-its-not-cool-its-creepy-and-i-hate-it
+  <https://www.techradar.com/computing/virtual-reality-augmented-reality/modders-are-turning-meta-ray-bans-into-spy-glasses-its-not-cool-its-creepy-and-i-hate-it>
 - Wired, "Meta Tapped a Pentagon Supplier to Prototype Face Recognition for Its
   Glasses," 2026-06-16:
-  https://www.wired.com/story/meta-rank-one-computing-face-recognition-smart-glasses
+  <https://www.wired.com/story/meta-rank-one-computing-face-recognition-smart-glasses>

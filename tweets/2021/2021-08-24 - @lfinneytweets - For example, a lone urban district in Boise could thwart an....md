@@ -1,4 +1,5 @@
 ---
+title: "For example, a lone urban district in Boise could thwart an..."
 date: 2021-08-24
 time: 01:01:11
 tweet_id: "1429972020477927427"

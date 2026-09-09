@@ -1,4 +1,5 @@
 ---
+title: "Cynthia Dowsing, a retired nurse practitioner in Sandpoint,..."
 date: 2021-02-17
 time: 17:06:19
 tweet_id: "1362085982640594949"

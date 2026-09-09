@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio Idaho Governor Little processes final..."
 date: 2020-04-03
 time: 19:41:42
 tweet_id: "1246160968310116352"
@@ -16,9 +17,10 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoPubRadio: Idaho Governor Little processes final bills. @lfinneytweets has that story from Boise: https://t.co/TY1zcg6rW9
+RT @IdahoPubRadio: Idaho Governor Little processes final bills. @lfinneytweets has that story from Boise: <https://t.co/TY1zcg6rW9>
 
 ## Links
-- https://idahopublicradio.wordpress.com/2020/04/03/governor-little-processes-final-bills/
+
+- <https://idahopublicradio.wordpress.com/2020/04/03/governor-little-processes-final-bills/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1246160968310116352)

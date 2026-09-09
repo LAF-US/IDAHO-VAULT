@@ -30,7 +30,7 @@ This tool generates clean, minimalist HTML pages showing user prompts and assist
 
 TL;DR: run the command below and browse the pages generated from your entire Claude Code archives:
 
-```
+```bash
 uvx claude-code-log@latest --open-browser
 ```
 
@@ -74,7 +74,7 @@ This tool helps you answer questions like:
 
 The TUI provides an interactive interface for browsing and managing Claude Code sessions with real-time navigation, session summaries, and quick actions.
 
-```
+```bash
 # Launch TUI for all projects (default behavior)
 claude-code-log --tui
 
@@ -91,13 +91,13 @@ claude-code-log my-project --tui  # Automatically converts to ~/.claude/projects
 - **Smart Summaries**: Prioritizes Claude-generated summaries over first user messages for better session identification
 - **Working Directory Matching**: Automatically finds and opens projects matching your current working directory
 - **Quick Actions**:
-	- `h`: Generate and open session HTML in browser
-		- `m`: Generate and open session Markdown in browser
-		- `v`: View session Markdown in embedded viewer (with table of contents)
-		- `c`: Resume session in Claude Code with `claude -r <sessionId>`
-		- `r`: Reload session data from files
-		- `p`: Switch to project selector view
-		- `H` / `M` / `V`: Force regenerate HTML/Markdown (hidden shortcuts for development)
+  - `h`: Generate and open session HTML in browser
+    - `m`: Generate and open session Markdown in browser
+    - `v`: View session Markdown in embedded viewer (with table of contents)
+    - `c`: Resume session in Claude Code with `claude -r <sessionId>`
+    - `r`: Reload session data from files
+    - `p`: Switch to project selector view
+    - `H` / `M` / `V`: Force regenerate HTML/Markdown (hidden shortcuts for development)
 - **Project Statistics**: Real-time display of total sessions, messages, tokens, and date range
 - **Cache Integration**: Leverages existing cache system for fast loading with automatic cache validation
 - **Keyboard Navigation**: Arrow keys to navigate, Enter to expand row details, `q` to quit
@@ -105,7 +105,7 @@ claude-code-log my-project --tui  # Automatically converts to ~/.claude/projects
 
 ### Default Behavior (Process All Projects)
 
-```
+```bash
 # Process all projects in ~/.claude/projects/ (default behavior)
 claude-code-log
 
@@ -132,7 +132,7 @@ This creates:
 
 ### Single File or Directory Processing
 
-```
+```bash
 # Single file
 claude-code-log transcript.jsonl
 
@@ -154,7 +154,7 @@ claude-code-log /path/to/directory --from-date "3 days ago" --to-date "yesterday
 
 The combination `--detail low --format md --compact` produces condensed Markdown suitable as context for an LLM to review or distill patterns from past work:
 
-```
+```bash
 # Session → compact Markdown for LLM review
 claude-code-log transcript.jsonl --detail low --format md --compact -o session.md
 
@@ -176,7 +176,7 @@ claude-code-log /path/to/project --detail low --format md --compact
 
 Plain `7c2e6f6` -shaped tokens in transcript prose get turned into clickable commit links when the SHA is reachable from a local remote-tracking branch. **github.com**, **gitlab.com**, and **bitbucket.org** work out of the box. For self-hosted forges (in-house GitLab, Gitea, Forgejo, …), supply a URL template via `--git-link`:
 
-```
+```bash
 # Self-hosted GitLab
 claude-code-log /path/to/transcript --git-link 'https://{host}/{path}/-/commit/{sha}'
 
@@ -191,7 +191,7 @@ Placeholders: `{host}`, `{path}`, `{sha}`. The template fires only when the stat
 
 When processing all projects, the tool generates:
 
-```
+```text
 ~/.claude/projects/
 ├── index.html                           # Master index with project cards
 ├── project1/
@@ -233,10 +233,10 @@ When processing all projects, the tool generates:
 - **Token Usage Display**: Individual message and session-level token consumption tracking
 - **Syntax Highlighting**: Code blocks properly formatted with markdown rendering
 - **Markdown Support**: Server-side rendering with mistune including:
-	- Headers, lists, emphasis, strikethrough
-		- Code blocks and inline code
-		- Links, images, and tables
-		- GitHub Flavored Markdown features
+  - Headers, lists, emphasis, strikethrough
+    - Code blocks and inline code
+    - Links, images, and tables
+    - GitHub Flavored Markdown features
 - **Collapsible Content**: Tool use, system commands, and long content in expandable sections
 - **Floating Controls**: Always-available filter button, details toggle, and back-to-top navigation
 - **Cross-Session Features**: Summaries properly matched across async sessions
@@ -257,19 +257,19 @@ Markdown export provides a lightweight, portable alternative to HTML:
 
 Install using pip:
 
-```
+```bash
 pip install claude-code-log
 ```
 
 Or run directly with uvx (no separate installation step required):
 
-```
+```text
 uvx claude-code-log@latest
 ```
 
 Or install from source:
 
-```
+```bash
 git clone https://github.com/daaain/claude-code-log.git
 cd claude-code-log
 uv sync
@@ -285,9 +285,9 @@ See [CONTRIBUTING.md](https://pypi.org/project/claude-code-log/CONTRIBUTING.md) 
 Projects built on top of `claude-code-log`:
 
 - **[archive-session](https://github.com/lifeinchords/claude-code-skills#archive-session-skill--slash-command--optional-hook)** by [@lifeinchords](https://github.com/lifeinchords). Wraps the CLI as three integration surfaces:
-	- a Claude Code [Skill](https://github.com/lifeinchords/claude-code-skills/blob/main/.claude/skills/archive-session/SKILL.md)
-		- a Claude Code slash [Command](https://github.com/lifeinchords/claude-code-skills/blob/main/.claude/commands/archive-session.md) `/archive-session` for explicit in-chat invocation
-		- a Claude Code PreCompact [Hook](https://github.com/lifeinchords/claude-code-skills/blob/main/.claude/hooks/pre-compact-archive.sh) that auto-archives transcripts and subagent logs right before context compaction
+  - a Claude Code [Skill](https://github.com/lifeinchords/claude-code-skills/blob/main/.claude/skills/archive-session/SKILL.md)
+    - a Claude Code slash [Command](https://github.com/lifeinchords/claude-code-skills/blob/main/.claude/commands/archive-session.md) `/archive-session` for explicit in-chat invocation
+    - a Claude Code PreCompact [Hook](https://github.com/lifeinchords/claude-code-skills/blob/main/.claude/hooks/pre-compact-archive.sh) that auto-archives transcripts and subagent logs right before context compaction
 
 Cross-platform (macOS and Windows/MSYS).
 

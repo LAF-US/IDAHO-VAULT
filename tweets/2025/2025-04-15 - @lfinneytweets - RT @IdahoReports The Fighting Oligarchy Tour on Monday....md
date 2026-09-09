@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports The Fighting Oligarchy Tour on Monday..."
 date: 2025-04-15
 time: 18:44:50
 tweet_id: "1912215556977283529"

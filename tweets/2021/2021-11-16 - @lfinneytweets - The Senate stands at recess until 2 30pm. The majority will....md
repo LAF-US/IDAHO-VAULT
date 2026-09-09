@@ -1,4 +1,5 @@
 ---
+title: "The Senate stands at recess until 2 30pm. The majority will..."
 date: 2021-11-16
 time: 18:22:34
 tweet_id: "1460674670106189829"

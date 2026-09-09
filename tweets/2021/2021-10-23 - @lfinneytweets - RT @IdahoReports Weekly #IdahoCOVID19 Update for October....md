@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Weekly #IdahoCOVID19 Update for October..."
 date: 2021-10-23
 time: 00:38:30
 tweet_id: "1451709581290213376"
@@ -19,10 +20,11 @@ related:
   - IdahoCOVID19
 ---
 
-RT @IdahoReports: Weekly #IdahoCOVID19 Update for October 22, 2021 | @IdahoPTV 
-https://t.co/7PqSxgL153
+RT @IdahoReports: Weekly #IdahoCOVID19 Update for October 22, 2021 | @IdahoPTV
+<https://t.co/7PqSxgL153>
 
 ## Links
-- https://youtu.be/Fa3mn0wQe0Q
+
+- <https://youtu.be/Fa3mn0wQe0Q>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1451709581290213376)

@@ -1,4 +1,5 @@
 ---
+title: "In at least one instance, they put your face on the $20 note"
 date: 2024-09-26
 time: 01:04:18
 tweet_id: "1839108701531386275"

@@ -1,4 +1,5 @@
 ---
+title: "ah, the good ol Ketchum tent city proposal news cycle"
 date: 2022-04-20
 time: 22:06:42
 tweet_id: "1516901194920493056"
@@ -16,10 +17,11 @@ related:
   - lfinneytweets
 ---
 
-@ryannoyance ah, the good ol Ketchum tent city proposal news cycle https://t.co/ll7tKypOQ2
+@ryannoyance ah, the good ol Ketchum tent city proposal news cycle <https://t.co/ll7tKypOQ2>
 
 ## Media
-- ![](https://pbs.twimg.com/tweet_video_thumb/FQ0dl41VUAAhBYx.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/FQ0dl41VUAAhBYx.jpg)
 
 *In reply to [@ryannoyance](https://twitter.com/ryannoyance)*
 

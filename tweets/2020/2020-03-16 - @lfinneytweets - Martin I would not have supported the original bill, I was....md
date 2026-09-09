@@ -1,4 +1,5 @@
 ---
+title: "Martin I would not have supported the original bill, I was..."
 date: 2020-03-16
 time: 23:25:24
 tweet_id: "1239694283059286016"
@@ -14,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-Martin: I would not have supported the original bill, I was critical of it in fact. 
+Martin: I would not have supported the original bill, I was critical of it in fact.
 I had daughters who played sports, now I have granddaughters who do. I don’t want boys on their teams.
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

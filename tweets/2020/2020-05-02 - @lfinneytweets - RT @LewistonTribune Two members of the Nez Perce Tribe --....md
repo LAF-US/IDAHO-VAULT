@@ -1,4 +1,5 @@
 ---
+title: "RT @LewistonTribune Two members of the Nez Perce Tribe --..."
 date: 2020-05-02
 time: 08:46:54
 tweet_id: "1256505434556362752"

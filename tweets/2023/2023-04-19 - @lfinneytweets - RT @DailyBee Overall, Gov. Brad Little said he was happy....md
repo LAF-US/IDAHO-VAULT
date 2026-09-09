@@ -1,4 +1,5 @@
 ---
+title: "RT @DailyBee Overall, Gov. Brad Little said he was happy..."
 date: 2023-04-19
 time: 22:52:46
 tweet_id: "1648821972762263552"

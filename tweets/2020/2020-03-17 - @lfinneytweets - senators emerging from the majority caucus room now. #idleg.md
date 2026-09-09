@@ -1,4 +1,5 @@
 ---
+title: "senators emerging from the majority caucus room now. #idleg"
 date: 2020-03-17
 time: 20:28:46
 tweet_id: "1240012222677434368"

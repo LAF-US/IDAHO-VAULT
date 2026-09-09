@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports An estimated vaccine timeline has been..."
 date: 2020-12-30
 time: 00:45:08
 tweet_id: "1344082056725204992"

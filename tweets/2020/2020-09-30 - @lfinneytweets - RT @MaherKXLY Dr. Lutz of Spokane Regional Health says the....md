@@ -1,4 +1,5 @@
 ---
+title: "RT @MaherKXLY Dr. Lutz of Spokane Regional Health says the..."
 date: 2020-09-30
 time: 17:59:32
 tweet_id: "1311365075987390464"

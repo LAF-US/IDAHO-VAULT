@@ -159,6 +159,7 @@ The cub generalized about Voltaire's project and the Enlightenment campaign; ser
 ## Sources
 
 ### External
+
 - Bishop Jacques-Bénigne Bossuet, *Politique tirée des propres paroles de l'Écriture sainte* (posthumous, 1709)
 - James VI of Scotland / I of England, *The True Law of Free Monarchies* (1598); *Basilikon Doron* (1599)
 - Voltaire, *Lettres philosophiques* (1733); *Essai sur les mœurs* (1756); *Candide* (1759); *Traité sur la tolérance* (1763); *Dictionnaire philosophique* (1764)
@@ -171,6 +172,7 @@ The cub generalized about Voltaire's project and the Enlightenment campaign; ser
 - [Cult of the Supreme Being — Wikipedia](https://en.wikipedia.org/wiki/Cult_of_the_Supreme_Being)
 
 ### Vault internal
+
 - [[TREATY-MAKING-A-READING-2026-06-08]] — the larger frame
 - [[VOLTAIRE-HRE-READING-2026-06-08]] — the puncturing of the textbook suzerain that invoked this doctrine
 - [[ICEMARK-DEEP-CUT-2026-06-07]] — Hill's treaty-rather-than-slaughter ethic as the fictional analogue

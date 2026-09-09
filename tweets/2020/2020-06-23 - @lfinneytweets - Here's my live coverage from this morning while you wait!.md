@@ -1,4 +1,5 @@
 ---
+title: "Here's my live coverage from this morning while you wait!"
 date: 2020-06-23
 time: 20:40:03
 tweet_id: "1275529072244740096"
@@ -14,11 +15,12 @@ related:
   - lfinneytweets
 ---
 
-Here's my live coverage from this morning while you wait! 
-https://t.co/aqHWiu93dc
+Here's my live coverage from this morning while you wait!
+<https://t.co/aqHWiu93dc>
 
 ## Links
-- https://threadreaderapp.com/thread/1275442380049547266.html
+
+- <https://threadreaderapp.com/thread/1275442380049547266.html>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

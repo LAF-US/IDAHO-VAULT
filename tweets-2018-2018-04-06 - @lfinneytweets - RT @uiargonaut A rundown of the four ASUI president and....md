@@ -16,9 +16,10 @@ related:
 ---
 
 RT @uiargonaut: A rundown of the four ASUI president and vice president tickets for the 2018-19 school year
-https://t.co/Yr4pEpOM4S https:/…
+<https://t.co/Yr4pEpOM4S> https:/…
 
 ## Links
-- https://www.uiargonaut.com/2018/04/04/candidates-for-asui/
+
+- <https://www.uiargonaut.com/2018/04/04/candidates-for-asui/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/982063524963803141)

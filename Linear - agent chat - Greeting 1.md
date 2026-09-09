@@ -976,7 +976,7 @@ If you want, I can turn this into:
 
 ## User
 
-I'd like to commit agent review suggestions at https://github.com/loganfinney27/IDAHO-VAULT/pull/96#pullrequestreview-4026464896
+I'd like to commit agent review suggestions at <https://github.com/loganfinney27/IDAHO-VAULT/pull/96#pullrequestreview-4026464896>
 
 ## Assistant
 
@@ -1013,7 +1013,7 @@ If you want, I can turn that into:
 
 ## User
 
-PR Synch workflow confirmed failing 
+PR Synch workflow confirmed failing
 
 ## Assistant
 
@@ -1113,7 +1113,7 @@ Do not duplicate implementation work unless you find a clearly separate fix that
 Optimize for diagnosis, validation, and merge safety.
 ```
 
-2. **Claude 2 → project triage / secretary support**
+1. **Claude 2 → project triage / secretary support**
    * keep the rest of the board from drifting while others code
 
 ```text
@@ -1319,8 +1319,8 @@ Agent signatures — already convention; reinforced as the fastest triage signal
 
 of this failing)
 
-6. PRs as the handoff unit — branch-only work is invisible
-7. Sequence-sensitive issues blocked in Linear, not just described in prose
+1. PRs as the handoff unit — branch-only work is invisible
+2. Sequence-sensitive issues blocked in Linear, not just described in prose
 
 The LAF-9/LAF-11 overlap is called out by name as a live example of 7.
 

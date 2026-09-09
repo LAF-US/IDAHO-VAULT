@@ -1,4 +1,5 @@
 ---
+title: TEST-CONFLICT
 authority: LOGAN
 related:
   - TEST-CONFLICT

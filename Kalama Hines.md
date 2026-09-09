@@ -4,4 +4,4 @@ related:
 - Idaho
 authority: LOGAN
 ---
-East Idaho News reporter 
+East Idaho News reporter

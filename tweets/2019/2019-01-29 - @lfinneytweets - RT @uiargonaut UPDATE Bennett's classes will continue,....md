@@ -1,4 +1,5 @@
 ---
+title: "RT @uiargonaut UPDATE Bennett's classes will continue,..."
 date: 2019-01-29
 time: 01:44:52
 tweet_id: "1090063194003890177"

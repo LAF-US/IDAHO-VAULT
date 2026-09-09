@@ -296,7 +296,7 @@ Component.Explorer({
 
 For reference, this is how the quartz explorer window would look like with that example:
 
-```
+```text
 📖 Poetry Folder
 📑 Essay Folder
     ⚗️ Research Paper File
@@ -306,7 +306,7 @@ For reference, this is how the quartz explorer window would look like with that 
 
 And this is how the file structure would look like:
 
-```
+```text
 index.md
 poetry-folder
     index.md

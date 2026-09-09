@@ -1,1 +1,1 @@
-legal mechanism 
+legal mechanism

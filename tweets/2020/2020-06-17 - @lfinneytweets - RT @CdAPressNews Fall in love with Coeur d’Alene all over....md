@@ -1,4 +1,5 @@
 ---
+title: "RT @CdAPressNews Fall in love with Coeur d\u2019Alene all over..."
 date: 2020-06-17
 time: 16:44:08
 tweet_id: "1273295371993616385"
@@ -15,6 +16,6 @@ related:
   - lfinneytweets
 ---
 
-RT @CdAPressNews: Fall in love with Coeur d’Alene all over again this summer on a Museum of North Idaho walking tour. https://t.co/eVMArrVA…
+RT @CdAPressNews: Fall in love with Coeur d’Alene all over again this summer on a Museum of North Idaho walking tour. <https://t.co/eVMArrVA…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1273295371993616385)

@@ -1,4 +1,5 @@
 ---
+title: "RT @NateNewsNow Around 40-50 people spent the night at the..."
 date: 2023-07-31
 time: 15:44:41
 tweet_id: "1686040191042301952"

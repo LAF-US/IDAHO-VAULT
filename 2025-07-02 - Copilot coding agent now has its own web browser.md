@@ -5,18 +5,25 @@ author:
   - "[[Allison]]"
 published: 2025-07-02
 created: 2026-06-03
-description: "GitHub Copilot coding agent, available in public preview, now has access to a web browser out of the box, powered by the Playwright MCP server. This feature is in public…"
-date created: Wednesday, June 3rd 2026, 2:28:15 pm
-date modified: Wednesday, June 3rd 2026, 2:30:43 pm
+description: >
+  GitHub Copilot coding agent, available in public preview, now has access to a web
+  browser out of the box, powered by the Playwright MCP server. This feature is in public…
+updated: 2026-06-03
 ---
+
+> **SOURCE ATTRIBUTION**  
+> This content is a web-clipped excerpt from GitHub's official changelog: "Copilot coding agent now has its own web browser" (https://github.blog/changelog/2025-07-02-copilot-coding-agent-now-has-its-own-web-browser/).  
+> Clipped for reference and internal documentation purposes. Original changelog is maintained by GitHub; refer to the source for licensing details.
 
 [GitHub Copilot coding agent](https://docs.github.com/copilot/using-github-copilot/coding-agent), available in public preview, now has access to a web browser out of the box, powered by the [Playwright MCP server](https://github.com/microsoft/playwright-mcp). This feature is in public preview.
 
-When you delegate a task to Copilot, the agent starts work in the background in its own development environment.
+When you delegate a task to Copilot, the agent starts work in the background in its own development
+environment.
 
 Model Context Protocol (MCP) servers allow extending Copilot’s capabilities with new tools. You can [configure your own](https://docs.github.com/enterprise-cloud@latest/copilot/how-tos/agents/copilot-coding-agent/extending-copilot-coding-agent-with-mcp), but the GitHub MCP server and Playwright are enabled by default.
 
-Thanks to the power of Playwright, Copilot can interact with a web app while it makes changes. This allows Copilot to reproduce bugs and validate its work.
+Thanks to the power of Playwright, Copilot can interact with a web app while it makes changes. This
+allows Copilot to reproduce bugs and validate its work.
 
 ![Example of session logs showing Copilot validating its work](https://github.com/user-attachments/assets/d2fac9aa-8dfc-4682-8071-b26ad2400ceb)
 

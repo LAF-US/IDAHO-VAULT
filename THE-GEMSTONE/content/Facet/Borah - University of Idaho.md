@@ -15,6 +15,7 @@ Senator Borah was instrumental in the passage of the Pact of Paris Treaty (also 
 [^1] "[Senator William Borah](https://www.uidaho.edu/class/borah/about/borah)". *The Borah Foundation & Symposium*, University of Idaho.
 
 ---
+
 # The Foundation
 
 In 1929 Salmon Levinson established the William Edgar Borah Outlawry of War Foundation at the University of Idaho to honor and continue the work of Idaho Senator William Borah on behalf of peace. In 1931 the Borah Foundation was officially inaugurated at the [[University of Idaho]] by Senator Borah himself and by Dr. Manley Hudson, Professor of International Law at Harvard University. In 1938, the Borah Foundation sponsored its first program, [[1938 E Roosevelt - University of Idaho|an address by Eleanor Roosevelt]], a well known advocate for peace and human rights. To commemorate her visit to the campus, [[1938 E Roosevelt - My Day|she planted a Douglas fir tree]] which can still be seen across from the main entrance to the U of I Administration Building.
@@ -39,4 +40,4 @@ In keeping with the tradition established by [[Eleanor Roosevelt]] during the fi
 
 [^2] "[About the Borah Foundation](https://www.uidaho.edu/class/borah/about)". *The Borah Foundation & Symposium*, University of Idaho.
 
---- 
+---

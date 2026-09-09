@@ -1,4 +1,5 @@
 ---
+title: "Thread"
 date: 2020-06-03
 time: 06:30:05
 tweet_id: "1268067413616029696"
@@ -13,9 +14,10 @@ related:
   - lfinneytweets
 ---
 
-Thread https://t.co/MKCylDrwF6
+Thread <https://t.co/MKCylDrwF6>
 
 ## Links
-- https://t.co/MKCylDrwF6
+
+- <https://t.co/MKCylDrwF6>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1268067413616029696)

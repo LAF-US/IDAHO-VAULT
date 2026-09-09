@@ -1,4 +1,5 @@
 ---
+title: "RT @madisonhardy05 Senate State Affairs is also hearing..."
 date: 2020-03-09
 time: 14:08:35
 tweet_id: "1237017442427097090"

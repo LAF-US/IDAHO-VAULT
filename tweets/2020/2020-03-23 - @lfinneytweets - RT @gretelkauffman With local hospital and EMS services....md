@@ -1,4 +1,5 @@
 ---
+title: "RT @gretelkauffman With local hospital and EMS services..."
 date: 2020-03-23
 time: 05:18:07
 tweet_id: "1241957377819029505"

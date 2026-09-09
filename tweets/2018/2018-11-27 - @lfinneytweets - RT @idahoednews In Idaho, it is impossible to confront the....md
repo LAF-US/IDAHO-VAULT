@@ -1,4 +1,5 @@
 ---
+title: "RT @idahoednews In Idaho, it is impossible to confront the..."
 date: 2018-11-27
 time: 18:17:50
 tweet_id: "1067482646085689344"

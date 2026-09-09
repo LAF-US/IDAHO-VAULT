@@ -1,4 +1,5 @@
 ---
+title: "RT @spj_tweets Putting a 'The' in there evokes a kind of..."
 date: 2020-06-20
 time: 18:55:37
 tweet_id: "1274415628078612481"

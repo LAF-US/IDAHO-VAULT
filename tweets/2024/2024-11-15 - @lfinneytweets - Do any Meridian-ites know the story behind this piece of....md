@@ -1,4 +1,5 @@
 ---
+title: "Do any Meridian-ites know the story behind this piece of..."
 date: 2024-11-15
 time: 00:52:01
 tweet_id: "1857225004913672305"
@@ -18,9 +19,10 @@ related:
   - idpol
 ---
 
-Do any Meridian-ites know the story behind this piece of land, which is listed in my notes as "Everett Property" belonging to Idaho State University? #idleg #idpol https://t.co/sOosX8mTjK
+Do any Meridian-ites know the story behind this piece of land, which is listed in my notes as "Everett Property" belonging to Idaho State University? #idleg #idpol <https://t.co/sOosX8mTjK>
 
 ## Media
-- ![](https://pbs.twimg.com/media/GcYwLAtbYAAkSR5.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/GcYwLAtbYAAkSR5.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1857225004913672305)

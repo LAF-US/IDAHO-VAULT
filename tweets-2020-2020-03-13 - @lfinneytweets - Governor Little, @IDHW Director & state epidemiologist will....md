@@ -18,9 +18,10 @@ related:
   - COVID19
 ---
 
-Governor Little, @IDHW Director & state epidemiologist will host a statewide AARP telephone town hall on #COVID19 Tuesday at 12pm MST. Anyone can participate. Participants can join by dialing toll-free at 866-767-0637 or register in advance at https://t.co/b0ZKyAXtcD
+Governor Little, @IDHW Director & state epidemiologist will host a statewide AARP telephone town hall on #COVID19 Tuesday at 12pm MST. Anyone can participate. Participants can join by dialing toll-free at 866-767-0637 or register in advance at <https://t.co/b0ZKyAXtcD>
 
 ## Links
-- https://vekeo.com/event/aarpidaho-51646/
+
+- <https://vekeo.com/event/aarpidaho-51646/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1238603127248453632)

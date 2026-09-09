@@ -1,4 +1,5 @@
 ---
+title: "RT @ScottMcIntosh12 That moment a state legislator tried to..."
 date: 2020-06-23
 time: 18:50:04
 tweet_id: "1275501392623329280"

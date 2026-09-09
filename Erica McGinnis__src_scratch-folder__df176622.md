@@ -8,7 +8,7 @@ source: commit
 
 ## Contact
 
-- **Email:** hclerk@house.idaho.gov
+- **Email:** <hclerk@house.idaho.gov>
 - **Phone:** (208) 332-1141
 - Also: Cyrus Vore, Acting Chief Clerk (same contact); Michelle Wonacott, Assistant Chief Clerk, (208) 332-1143
 

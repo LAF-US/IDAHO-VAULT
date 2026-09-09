@@ -1,4 +1,5 @@
 ---
+title: "Being a state politics reporter, I asked why he got..."
 date: 2024-07-29
 time: 18:00:56
 tweet_id: "1817983663944172001"

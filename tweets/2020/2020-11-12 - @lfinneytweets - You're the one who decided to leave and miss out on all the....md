@@ -1,4 +1,5 @@
 ---
+title: "You're the one who decided to leave and miss out on all the..."
 date: 2020-11-12
 time: 01:02:29
 tweet_id: "1326691804171829248"
@@ -16,11 +17,12 @@ related:
   - lfinneytweets
 ---
 
-@AngryNIdaho You're the one who decided to leave and miss out on all the fun. 
-https://t.co/I8iKJVjoVH
+@AngryNIdaho You're the one who decided to leave and miss out on all the fun.
+<https://t.co/I8iKJVjoVH>
 
 ## Links
-- https://x.com/davlinnews/status/1326687091141439488
+
+- <https://x.com/davlinnews/status/1326687091141439488>
 
 *In reply to [@AngryNIdaho](https://twitter.com/AngryNIdaho)*
 

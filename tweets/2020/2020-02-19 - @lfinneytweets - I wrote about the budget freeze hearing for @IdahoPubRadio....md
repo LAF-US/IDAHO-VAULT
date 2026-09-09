@@ -1,4 +1,5 @@
 ---
+title: "I wrote about the budget freeze hearing for @IdahoPubRadio..."
 date: 2020-02-19
 time: 21:40:07
 tweet_id: "1230245706494922752"
@@ -23,11 +24,12 @@ related:
   - idleg
 ---
 
-@IlanaRubel @IdahoDems I wrote about the budget freeze hearing for @IdahoPubRadio here. #idpol #idleg 
-https://t.co/X0rIW2VtK8
+@IlanaRubel @IdahoDems I wrote about the budget freeze hearing for @IdahoPubRadio here. #idpol #idleg
+<https://t.co/X0rIW2VtK8>
 
 ## Links
-- https://idahopublicradio.wordpress.com/2020/02/16/idaho-house-mulls-tax-freeze-and-more/
+
+- <https://idahopublicradio.wordpress.com/2020/02/16/idaho-house-mulls-tax-freeze-and-more/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

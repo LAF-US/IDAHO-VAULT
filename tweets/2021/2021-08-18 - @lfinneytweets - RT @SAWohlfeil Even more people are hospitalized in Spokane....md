@@ -1,4 +1,5 @@
 ---
+title: "RT @SAWohlfeil Even more people are hospitalized in Spokane..."
 date: 2021-08-18
 time: 23:27:09
 tweet_id: "1428136413090836484"

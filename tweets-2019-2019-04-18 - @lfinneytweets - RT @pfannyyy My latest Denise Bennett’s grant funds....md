@@ -17,9 +17,10 @@ related:
 
 RT @pfannyyy: My latest: Denise Bennett’s grant funds returned; email records show internal deliberations
 
-https://t.co/cdDxZ3bMaW
+<https://t.co/cdDxZ3bMaW>
 
 ## Links
-- https://www.uiargonaut.com/2019/04/17/the-core-of-the-issue/
+
+- <https://www.uiargonaut.com/2019/04/17/the-core-of-the-issue/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1118958935812108289)

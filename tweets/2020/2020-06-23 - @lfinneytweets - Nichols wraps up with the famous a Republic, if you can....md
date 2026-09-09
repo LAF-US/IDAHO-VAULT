@@ -1,4 +1,5 @@
 ---
+title: "Nichols wraps up with the famous a Republic, if you can..."
 date: 2020-06-23
 time: 16:06:17
 tweet_id: "1275460177123147776"

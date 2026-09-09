@@ -1,4 +1,5 @@
 ---
+title: "Elections tidbit Nine candidates for #idleg are the only..."
 date: 2022-05-11
 time: 00:58:02
 tweet_id: "1524192069274652672"

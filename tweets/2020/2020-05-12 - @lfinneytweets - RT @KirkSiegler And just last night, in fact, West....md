@@ -1,4 +1,5 @@
 ---
+title: "RT @KirkSiegler And just last night, in fact, West..."
 date: 2020-05-12
 time: 18:03:33
 tweet_id: "1260269398549344257"

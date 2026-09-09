@@ -1,4 +1,4 @@
-# Skeptical system-wide verification
+﻿# Skeptical system-wide verification
 # Don't assume anything works - verify everything
 
 $results = @{

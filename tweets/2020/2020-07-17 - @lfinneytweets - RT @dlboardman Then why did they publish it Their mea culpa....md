@@ -1,4 +1,5 @@
 ---
+title: "RT @dlboardman Then why did they publish it Their mea culpa..."
 date: 2020-07-17
 time: 04:02:01
 tweet_id: "1283975216826216448"

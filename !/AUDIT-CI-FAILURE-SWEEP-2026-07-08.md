@@ -20,7 +20,7 @@ One finding (PR #463's CENSUS doctrine + unresolved review threads) was carried 
 ## 5W Summary
 
 | | |
-|---|---|
+| --- | --- |
 | **Who** | No human-caused breakage. Failures are: 1 third-party GitHub Action bug (Codacy), 2 doctrine-drift checks on Logan's own `logan/obsidian` live-edit branch, 1 file-size policy hit on an in-progress agent branch, 1 unpinned-action lint hit on draft PR #450 (already a known TODO there), 1 known corruption-signature hit on a Codex branch (issue #739 pattern). |
 | **What** | 35 failing runs across 6 workflows: Codacy Security Scan (29), Sync Plugin Registry (9, pre-existing — not counted in the 35), Sync Agent Discovery Index (2), Validate Agent Content (1), Action Pin Policy (1), Redaction Damage Policy (1), plus one anomalous `claude-sign.yml` failure with no retrievable job logs. |
 | **When** | 2026-07-07T09:00Z – 2026-07-08T09:15Z (rolling 24h). Sync Plugin Registry has been failing since at least 2026-07-03 — a 5-day-old unaddressed chronic failure. |
@@ -38,7 +38,7 @@ One finding (PR #463's CENSUS doctrine + unresolved review threads) was carried 
 
 Every push/PR/merge_group against `main` in the window failed identically. Root cause is not the repo's code — `max-allowed-issues: 2147483647` in `.github/workflows/codacy.yml` already forces the analysis step itself to exit 0 regardless of findings. The crash happens *after* analysis, while `codacy/codacy-analysis-cli-action` builds the SARIF report:
 
-```
+```text
 Exception in thread "main" java.nio.charset.MalformedInputException: Input length = 1
     at ... better.files.File.lines(File.scala:282)
     at com.codacy.analysis.cli.formatter.Sarif.$anonfun$createResults$3(Sarif.scala:146)
@@ -63,7 +63,7 @@ Both SARIF crashes are now gone (confirmed: no `Exception in thread` anywhere in
 
 `.github/workflows/sync-plugin-registry.yml` runs `sync_obsidian_plugin_registry.py --check` on every push touching `.obsidian/*` config or `manifest.json`/`swarm.json`, and fails closed on drift. Every failure in the window is the same message:
 
-```
+```text
 Obsidian plugin registry drift detected:
   manifest.json
   swarm.json

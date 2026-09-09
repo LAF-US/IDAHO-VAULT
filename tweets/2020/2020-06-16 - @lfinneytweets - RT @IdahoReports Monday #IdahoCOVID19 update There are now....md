@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Monday #IdahoCOVID19 update There are now..."
 date: 2020-06-16
 time: 03:40:19
 tweet_id: "1272735732273016832"

@@ -1,4 +1,5 @@
 ---
+title: "RT @wweek A frozen french fry plant in Hermiston has an..."
 date: 2020-07-09
 time: 15:57:26
 tweet_id: "1281256154912354306"

@@ -1,4 +1,5 @@
 ---
+title: "RT @TheIdahoPress Two large parcels of state-owned..."
 date: 2021-06-12
 time: 03:51:27
 tweet_id: "1403560553025458177"

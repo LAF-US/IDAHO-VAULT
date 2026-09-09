@@ -5,4 +5,4 @@ related:
 - magistrate court
 ---
 
-magistrate court Madison County courthouse 
+magistrate court Madison County courthouse

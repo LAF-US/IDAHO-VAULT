@@ -6,4 +6,4 @@ related:
 - Podcast
 authority: LOGAN
 ---
-Google AI Language Model + Podcast Voice Generator 
+Google AI Language Model + Podcast Voice Generator

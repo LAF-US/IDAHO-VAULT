@@ -1,4 +1,5 @@
 ---
+title: "RT @nytimes Aug. 6 marks the 75th anniversary of the atomic..."
 date: 2020-08-07
 time: 01:49:32
 tweet_id: "1291552021615538177"

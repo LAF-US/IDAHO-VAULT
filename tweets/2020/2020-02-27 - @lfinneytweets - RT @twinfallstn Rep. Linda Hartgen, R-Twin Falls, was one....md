@@ -1,4 +1,5 @@
 ---
+title: "RT @twinfallstn Rep. Linda Hartgen, R-Twin Falls, was one..."
 date: 2020-02-27
 time: 23:30:38
 tweet_id: "1233172621442699264"

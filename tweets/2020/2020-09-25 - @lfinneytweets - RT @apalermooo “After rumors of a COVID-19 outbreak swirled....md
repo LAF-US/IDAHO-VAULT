@@ -1,4 +1,5 @@
 ---
+title: "RT @apalermooo \u201cAfter rumors of a COVID-19 outbreak swirled..."
 date: 2020-09-25
 time: 21:54:47
 tweet_id: "1309612336487964672"

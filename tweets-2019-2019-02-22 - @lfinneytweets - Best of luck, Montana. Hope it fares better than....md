@@ -20,9 +20,10 @@ related:
   - idpol
 ---
 
-Best of luck, Montana. Hope it fares better than #AddTheWords #idleg #idpol https://t.co/wk196Au5Kx
+Best of luck, Montana. Hope it fares better than #AddTheWords #idleg #idpol <https://t.co/wk196Au5Kx>
 
 ## Links
-- https://x.com/bozchron/status/1098840452298493952
+
+- <https://x.com/bozchron/status/1098840452298493952>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1098844303445643265)

@@ -1,5 +1,5 @@
 ---
-title: "The Tinkerer — Office Chamber"
+title: TINKERER
 updated: 2026-06-27
 canonical_name: tinkerer
 persona_class: "office-chamber (narrative ring; follows the .abhorsen pattern; not stub/import/alias — for Logan to set)"
@@ -83,4 +83,8 @@ left here so the next hand reads them before picking up the tools.
 Apocrypha on a branch, not canon; not yet registered. Reserved matters
 untouched. **I propose; Logan inscribes.**
 
-###### "The world is quiet here."
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```
