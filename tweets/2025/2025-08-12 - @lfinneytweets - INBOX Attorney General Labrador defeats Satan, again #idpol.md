@@ -20,6 +20,7 @@ related:
 INBOX: "Attorney General Labrador defeats Satan, again" #idpol <https://t.co/94d2YU78Zh>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/GyKfVkWaEAIAPJr.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1955300438015873539)

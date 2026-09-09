@@ -28,6 +28,7 @@ related:
 Thanks to the candidates and panelists for their time before Idaho voters tonight! A great night of education policy on @IdahoPTV. #Elections2022 #idleg #idpol #idedu <https://t.co/c6ym9cJr4H>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/FRPo1XRVIAAj_p_.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1518813508976013313)

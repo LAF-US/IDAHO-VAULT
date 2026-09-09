@@ -101,7 +101,6 @@ def main() -> int:
         return 0
 
     message = build_message(event)
-    alias = os.environ.get("JANITOR_ALIAS", "janitor-bot")
 
     reporters: list[Reporter] = []
     setup_failures: list[dict[str, str | bool]] = []

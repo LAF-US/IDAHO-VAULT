@@ -55,4 +55,3 @@ Would you like me to pull a specific summary of your recent notes from the IDAHO
 Gemini is AI and can make mistakes.
 
 1Password menu is available. Press down arrow to select.
-

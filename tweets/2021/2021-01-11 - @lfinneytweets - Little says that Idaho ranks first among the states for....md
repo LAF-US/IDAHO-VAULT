@@ -23,7 +23,7 @@ related:
   - idleg
 ---
 
-@IdahoPTV @GovernorLittle Little says that Idaho ranks first among the states for economic recovery momentum. 
+@IdahoPTV @GovernorLittle Little says that Idaho ranks first among the states for economic recovery momentum.
 "Together, the Legislature and I laid the groundwork before the pandemic to rebound quickly during tough times.” #idpol #idleg
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

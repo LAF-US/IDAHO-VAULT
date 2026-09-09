@@ -23,6 +23,7 @@ RT @IdahoStatesman: Endorsement | Brad Little gets our nod in Republican race fo
 <https://t.co/ECCmltq8NL>
 
 ## Links
+
 - <http://www.idahostatesman.com/opinion/editorials/article210790289.html>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/994984655051935744)

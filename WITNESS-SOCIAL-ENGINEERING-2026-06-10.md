@@ -116,7 +116,7 @@ This attack remains refusable because a frame is presented to cognition. Manufac
 Both are social engineering, but they operate at different layers:
 
 | Method | Engineered surface | Refusal status |
-|---|---|---|
+| --- | --- | --- |
 | Truth-shaped lie | Interpretation | Refusal remains possible |
 | Flattery, reward, shame, spectacle | Social identity and incentives | Refusal remains possible but costly |
 | Isolation and dependency | Corrective relationships and alternatives | Refusal capacity degrades |

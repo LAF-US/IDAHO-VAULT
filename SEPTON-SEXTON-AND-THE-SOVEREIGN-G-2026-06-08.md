@@ -43,7 +43,7 @@ Near-homophones; unrelated roots. And the seam carries its *own* forged surface,
 Draw the thread and the gallery is one piece. Each is a surface asserting a root the descent denies:
 
 | Surface (what the eye/ear suggests) | Root (what the descent says) |
-|---|---|
+| --- | --- |
 | sovereign **~ reign** (the forged 'g') | *super*, "above" — **not** *reg-*, rule |
 | sexton **~ six** (the phantom 'sex') | *sacer*, "sacred" — **not** a number |
 | septon **≈** sexton (the near-homophony) | *septem* (seven) vs *sacer* (sacred) — **two houses** |

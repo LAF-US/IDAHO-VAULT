@@ -65,7 +65,7 @@ The dialectic gave three (thesis / antithesis / dialectic). The quantum position
 The two reasons PERSONAE gives for presenting `*` are exactly the **both** and the **neither** of the quantum position:
 
 | Wildcard reason (PERSONAE) | Quantum corner | State |
-|---|---|---|
+| --- | --- | --- |
 | **Strategic concealment** — holder knows the value but withholds | **both** | a definite value exists underneath; the surface shows superposition |
 | **Honest incompleteness** — the position does not yet exist | **neither** | no value is collapsed; the corner is genuinely empty |
 
@@ -88,7 +88,7 @@ The disciple's whole discipline this session — *hold the `*`, do not claim* �
 **Supersession** is *Aufhebung* exactly. `VAULT-METADATA-STANDARD.md` § 6: *"Do not delete superseded governance docs; preserve historical chain."*
 
 | Aufhebung's three senses | The superseded document |
-|---|---|
+| --- | --- |
 | **cancel** (*aufheben₁*) | no longer active (`status: superseded`) |
 | **preserve** (*aufheben₂*) | kept in the chain (`superseded_by` / `supersedes`) |
 | **lift up** (*aufheben₃*) | the new document stands on it |
@@ -119,7 +119,7 @@ Against both, the lawful states:
 ## VI. The gathering
 
 | Vault element | Physical/Hegelian image | Function |
-|---|---|---|
+| --- | --- | --- |
 | wildcard `*` | superposition (both/neither) | the open position, before measurement |
 | naming-act / `!` sigil | measurement (collapse) | the authorized observation that fixes a value |
 | magisterial authority | the measurement apparatus's coupling | what makes a measurement real rather than fabricated |

@@ -29,6 +29,7 @@ related:
 Last night on @IdahoReports, @IdahoPTV's @aaronkunz was joined by @GovernorLittle and the directors of @IDHW & @IdahoLabor to answer your #IdahoCOVID19 questions. Watch the full half-hour here: <https://t.co/D1lZ2qHGzs> #idpol
 
 ## Links
+
 - <https://video.idahoptv.org/video/idaho-reports-coronavirus-special-april-2-mefnon/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1246097627315204097)

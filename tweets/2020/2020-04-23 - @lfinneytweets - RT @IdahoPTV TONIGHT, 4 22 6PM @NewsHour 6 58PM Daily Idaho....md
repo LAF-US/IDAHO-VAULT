@@ -20,8 +20,8 @@ related:
 
 RT @IdahoPTV: TONIGHT, 4/22:
 
-6PM: @NewsHour 
-6:58PM: Daily Idaho coronavirus update @IdahoReports 
+6PM: @NewsHour
+6:58PM: Daily Idaho coronavirus update @IdahoReports
 7PM: Climate Change: The Facts
 8PM: H20…
 

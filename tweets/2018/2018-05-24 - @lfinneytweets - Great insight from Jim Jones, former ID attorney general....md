@@ -20,6 +20,7 @@ related:
 Great insight from Jim Jones, former ID attorney general and ID Supreme Court chief justice. #idpol <https://t.co/gG70pnFsML>
 
 ## Links
+
 - <https://x.com/Idaho_Politics/status/999470977904852995>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/999533697375264770)

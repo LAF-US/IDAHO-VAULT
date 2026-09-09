@@ -25,10 +25,11 @@ related:
   - PNWER
 ---
 
-My first dispatch from @PNWER 2023: State and provincial leaders from the northwest gathered in Boise this week and kicked off their summit with the challenges and opportunities of decarbonizing the energy system. #IDLEG #IDPOL #PNWER @sejorg @agwaterdesk 
+My first dispatch from @PNWER 2023: State and provincial leaders from the northwest gathered in Boise this week and kicked off their summit with the challenges and opportunities of decarbonizing the energy system. #IDLEG #IDPOL #PNWER @sejorg @agwaterdesk
 <https://t.co/RGxqc6EaAD>
 
 ## Links
+
 - <https://blog.idahoreports.idahoptv.org/2023/07/18/northwest-leaders-look-toward-decarbonization-energy-transition/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1681381961489874944)

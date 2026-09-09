@@ -19,9 +19,9 @@ related:
   - idleg
 ---
 
-Moyle: We’re waiting on some bills from the Senate. No need to keep pushing, we’re going to be here in the morning anyway. 
+Moyle: We’re waiting on some bills from the Senate. No need to keep pushing, we’re going to be here in the morning anyway.
 
-Bedke: Tomorrow will just be concurring with the remaining Senate amendments to House bills. 
+Bedke: Tomorrow will just be concurring with the remaining Senate amendments to House bills.
 
 House adjourned until 10am. #idpol #idleg
 

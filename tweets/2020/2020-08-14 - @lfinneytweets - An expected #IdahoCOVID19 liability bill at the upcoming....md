@@ -29,6 +29,7 @@ related:
 An expected #IdahoCOVID19 liability bill at the upcoming #idleg special session sees opposition from both teachers' union @IdahoEA and conservative group @idahofreedom. #idpol (@RadioDawson @KBSX915) <https://t.co/5kw8iqgeTB>
 
 ## Links
+
 - <https://x.com/KBSX915/status/1294288166887632896>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1294309794937896960)

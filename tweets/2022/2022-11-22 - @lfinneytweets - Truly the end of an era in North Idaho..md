@@ -18,6 +18,7 @@ related:
 Truly the end of an era in North Idaho. <https://t.co/89vDmvIbzJ>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/FiMFhr-VEAAQYXc.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

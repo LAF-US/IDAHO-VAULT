@@ -17,9 +17,11 @@ related:
 "Road cut into the barren hills which lead into Emmett, Idaho" by Russell Lee, July 1941 (Farm Securities Administration/Office of War Information collection) <https://t.co/N5cO21RlHh> <https://t.co/l2vsLGoV1R>
 
 ## Links
+
 - <https://www.loc.gov/item/2017877582/>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/GwkdRr8aYAAk5dN.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1948121078481444920)

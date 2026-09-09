@@ -24,6 +24,7 @@ RT @IdahoPTV: April 2nd - Idaho COVID19 update from @IdahoReports. <https://t.co
 Like | Follow | Share
 
 ## Links
+
 - <https://youtu.be/IgH0X-yeXBA>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1245939982310584320)

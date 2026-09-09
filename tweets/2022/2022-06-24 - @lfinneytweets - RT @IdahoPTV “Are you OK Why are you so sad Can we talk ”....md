@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoPTV: “Are you OK? Why are you so sad? Can we talk?” 
+RT @IdahoPTV: “Are you OK? Why are you so sad? Can we talk?”
 
 Join IdahoPTV for a special discussion to learn how to have those difficult…
 

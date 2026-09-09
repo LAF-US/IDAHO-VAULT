@@ -22,6 +22,7 @@ related:
 Sen. Johnson was also the one who originally objected to waiving the 26-page bill reading. #idleg #idpol <https://t.co/MQgaKl9fnO>
 
 ## Links
+
 - <https://t.co/MQgaKl9fnO>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1390052198281662467)

@@ -30,7 +30,7 @@ Corporate Governance: Legally, GitHub, Inc. is the entity you contract with when
 
 Internal Governance (for Users): GitHub provides tools for "Minimum Viable Governance" (MVG) for open-source projects, allowing maintainers to set up technical steering committees and decision-making frameworks within their own repositories.
 
-2. Data Ownership: "What’s Yours is Yours"
+1. Data Ownership: "What’s Yours is Yours"
 
 GitHub is very explicit about intellectual property (IP) in its Terms of Service:
 
@@ -40,7 +40,7 @@ The License You Grant GitHub: By using the service, you grant GitHub a non-exclu
 
 Private vs. Public: In private repositories, GitHub’s access is strictly limited to what is necessary for service maintenance or legal compliance. In public repositories, you agree to allow others to view and fork your content.
 
-3. Copyright Rules
+1. Copyright Rules
 
 The "No License" Default: If you upload code without a license (like MIT or GPL), it is "all rights reserved" by default. While people can view and fork it on GitHub, they do not have the legal right to use, modify, or distribute it elsewhere without your permission.
 
@@ -48,7 +48,7 @@ DMCA Process: GitHub follows the Digital Millennium Copyright Act (DMCA). If som
 
 Standardized Licenses: GitHub encourages using LICENSE files to make your intentions clear. They even maintain choosealicense.com to help users navigate this.
 
-4. Permanence: The "Arctic Code Vault"
+1. Permanence: The "Arctic Code Vault"
 
 One of the most unique aspects of GitHub is its commitment to "long-termism."
 
@@ -75,4 +75,3 @@ Would you like me to look up the specific procedures for filing a DMCA takedown 
 Gemini is AI and can make mistakes.
 
 1Password menu is available. Press down arrow to select.
-

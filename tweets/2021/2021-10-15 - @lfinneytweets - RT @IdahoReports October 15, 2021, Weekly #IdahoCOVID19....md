@@ -23,6 +23,7 @@ related:
 RT @IdahoReports: October 15, 2021, Weekly #IdahoCOVID19 Update | @IdahoPTV <https://t.co/6pxpL7mIhy>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/amplify_video_thumb/1449122726149443584/img/LFDtVJdT4PGqeiS9.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1449123588305420290)

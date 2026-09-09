@@ -12,7 +12,7 @@ owner: Logan Finney
 ## 5W Summary
 
 | | |
-|---|---|
+| --- | --- |
 | **Who** | GitHub Actions runners on `laf-us/idaho-vault` (64 workflows per `list_workflows`). No new human-caused breakage. One genuinely new, fixable workflow bug found and fixed in this same PR (Incident D below); everything else is either benign (gate-holds), transient (self-healed credential blip), already-tracked (Codacy), or branch-local drift on PRs already flagged in prior sweeps. |
 | **What** | Swept all 64 workflows individually (not a single all-workflows call — that call's payload is too large to read reliably at this run volume). Found 7 distinct incidents, detailed below; the "unclear" item from the raw sweep was tracked down to a specific, verified root cause (see Incident H). |
 | **When** | 2026-08-02T07:00Z – 2026-08-03T07:30Z. |

@@ -56,7 +56,7 @@ The Multi-Part Soul: Many traditions, such as the Navajo (Diné) or Lakota, view
 
 Capturing the Essence: If an outsider possesses your "shadow," they possess a vital part of your being. In a traditional context, having control over a person’s image or name could be used for "medicine" (both healing and harm). Therefore, allowing a stranger to "catch" your shadow was a significant spiritual risk.
 
-2. Taboos Surrounding the Deceased
+1. Taboos Surrounding the Deceased
 
 A primary source of the "photography superstition" stems from strict cultural protocols regarding the dead.
 
@@ -64,7 +64,7 @@ The Spirit’s Journey: For many tribes, once a person passes, their name is no 
 
 The Photographic Trap: A photograph creates a permanent, unchanging image of a person who is no longer living. This was viewed by some as a "trap" that could prevent the soul from completing its journey or cause the spirit to linger and haunt the living.
 
-3. The "Theft" as a Socio-Political Reality
+1. The "Theft" as a Socio-Political Reality
 
 Research into early photography—specifically the work of Edward S. Curtis—reveals that the "theft" was often more literal than metaphysical.
 
@@ -72,7 +72,7 @@ Loss of Agency: Photographers often staged portraits, forced subjects to wear "t
 
 Canonical Source Note: Academic critiques (e.g., Visual Anthropology of North American Indians) point out that Indigenous resistance to photography was often a rational response to commodity fetishism. Their images were being taken, sold, and used to define them by a government that was simultaneously stripping them of their land and rights.
 
-4. Comparison of Belief Systems
+1. Comparison of Belief Systems
 
 Concept Indigenous Perspective Colonial Misinterpretation
 
@@ -84,7 +84,7 @@ The Image A powerful object that must be handled with ritual care. A "souvenir" 
 
 The Soul Can be fragmented or tethered by physical likeness. Indivisible; unaffected by physical representation.
 
-5. Modern Perspectives: The "New Aesthetic"
+1. Modern Perspectives: The "New Aesthetic"
 
 Contemporary Indigenous scholars and artists, such as Leslie Marmon Silko (Laguna Pueblo), have reframed this history. In her work Storyteller, she suggests that photography has been reclaimed as a "modern alternative to the oral tradition."
 
@@ -141,4 +141,3 @@ Shall I proceed with the first "Whistle" scan to update the IDAHO-VAULT? Give th
 Gemini is AI and can make mistakes.
 
 1Password menu is available. Press down arrow to select.
-

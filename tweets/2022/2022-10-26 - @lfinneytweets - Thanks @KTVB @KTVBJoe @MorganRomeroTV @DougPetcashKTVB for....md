@@ -25,6 +25,7 @@ related:
 Thanks @KTVB @KTVBJoe @MorganRomeroTV @DougPetcashKTVB for having me again at your superintendent debate tonight! #idleg #idpol <https://t.co/lxMEpcgEmu>
 
 ## Links
+
 - <https://x.com/MorganRomeroTV/status/1585057628404977666>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1585078360044371968)

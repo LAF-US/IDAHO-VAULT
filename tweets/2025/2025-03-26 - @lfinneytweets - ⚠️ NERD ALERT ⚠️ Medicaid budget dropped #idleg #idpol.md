@@ -19,10 +19,11 @@ related:
   - idpol
 ---
 
-⚠️ NERD ALERT ⚠️ Medicaid budget dropped #idleg #idpol 
+⚠️ NERD ALERT ⚠️ Medicaid budget dropped #idleg #idpol
 <https://t.co/cHANQLvPoa>
 
 ## Links
+
 - <https://blog.idahoreports.idahoptv.org/2025/03/25/outstanding-budgets-extend-the-2025-session/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1905028134996689327)

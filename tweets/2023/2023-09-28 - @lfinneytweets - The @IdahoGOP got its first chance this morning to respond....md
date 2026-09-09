@@ -21,10 +21,11 @@ related:
   - idpol
 ---
 
-The @IdahoGOP got its first chance this morning to respond in court to allegations that chairwoman Dorothy Moon has been manipulating local officer elections. #idleg #idpol 
+The @IdahoGOP got its first chance this morning to respond in court to allegations that chairwoman Dorothy Moon has been manipulating local officer elections. #idleg #idpol
 <https://t.co/EcA0ulVPRG>
 
 ## Links
+
 - <https://blog.idahoreports.idahoptv.org/2023/09/28/dispute-continues-between-state-and-county-gop/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1707520704223285714)

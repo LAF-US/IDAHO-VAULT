@@ -23,10 +23,11 @@ related:
   - idedu
 ---
 
-@BetsyZRussell .@clarkcorbin explained the increased pay for veteran teachers here. #idleg #idedu 
+@BetsyZRussell .@clarkcorbin explained the increased pay for veteran teachers here. #idleg #idedu
 <https://t.co/XLFYkvVXpG>
 
 ## Links
+
 - <https://www.idahoednews.org/top-news/little-unveils-225-million-plan-to-increase-pay-for-veteran-teachers/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

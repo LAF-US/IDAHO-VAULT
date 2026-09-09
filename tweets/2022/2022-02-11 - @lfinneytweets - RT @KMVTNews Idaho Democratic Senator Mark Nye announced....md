@@ -20,6 +20,7 @@ RT @KMVTNews: Idaho Democratic Senator Mark Nye announced Thursday he will not s
  <https://t.co/vMcRJluyjS>
 
 ## Links
+
 - <https://www.kmvt.com/2022/02/10/idaho-senator-mark-nye-will-not-seek-reelection/?utm_source=twitter&utm_medium=social&utm_campaign=snd&utm_content=kmvt>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1492043078386864129)

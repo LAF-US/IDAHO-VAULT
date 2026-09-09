@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @CarrollDoherty: NEW Sizable increase in share of young adults with negative views of of impact of billionaires. 
+RT @CarrollDoherty: NEW Sizable increase in share of young adults with negative views of of impact of billionaires.
 50% of those under age…
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1420464144860344323)

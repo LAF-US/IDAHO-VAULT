@@ -20,6 +20,7 @@ related:
 BREAKING: all hail breaks loose at GOP convention #idpol *ba dum pssh* <https://t.co/CmQOLTGzCO>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/GQIk__fbwAAUIAH.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1802043485174010347)

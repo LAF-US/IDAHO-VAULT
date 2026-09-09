@@ -57,4 +57,3 @@ Would you like to dive deeper into Camus’s specific arguments, or are you look
 Gemini is AI and can make mistakes.
 
 1Password menu is available. Press down arrow to select.
-

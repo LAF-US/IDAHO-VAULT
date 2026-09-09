@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @mlcarmel: The Boise Police Department has shot more people this year in Boise than we’ve had murders. 
+RT @mlcarmel: The Boise Police Department has shot more people this year in Boise than we’ve had murders.
 
 I talked to the three major may…
 

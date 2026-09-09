@@ -22,6 +22,7 @@ related:
 Do any Meridian-ites know the story behind this piece of land, which is listed in my notes as "Everett Property" belonging to Idaho State University? #idleg #idpol <https://t.co/sOosX8mTjK>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/GcYwLAtbYAAkSR5.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1857225004913672305)

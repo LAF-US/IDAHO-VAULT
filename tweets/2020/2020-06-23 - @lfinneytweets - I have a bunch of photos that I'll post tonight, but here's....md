@@ -24,6 +24,7 @@ related:
 I have a bunch of photos that I'll post tonight, but here's my favorite so far. #idleg #idpol #SpecialSession2020 <https://t.co/piAo2no3Bg>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/EbOMR4-UYAAxwBy.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1275517387169689600)

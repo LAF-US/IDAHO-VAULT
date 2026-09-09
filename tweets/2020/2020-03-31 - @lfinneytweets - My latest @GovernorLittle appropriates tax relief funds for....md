@@ -24,10 +24,11 @@ related:
   - idpol
 ---
 
-My latest: @GovernorLittle appropriates tax relief funds for #IdahoCOVID19 response. #idleg #idpol @IdahoPubRadio 
+My latest: @GovernorLittle appropriates tax relief funds for #IdahoCOVID19 response. #idleg #idpol @IdahoPubRadio
 <https://t.co/qcaCfFMFhZ>
 
 ## Links
+
 - <https://www.loganfinney.com/idaho-legislature-2020/3/30/tax-relief-fund-covid-19>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1244778127907147776)

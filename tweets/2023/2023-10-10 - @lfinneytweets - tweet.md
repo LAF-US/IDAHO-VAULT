@@ -17,9 +17,11 @@ related:
 <https://t.co/ltVsrVBrkx> <https://t.co/QQXS7WrgVc>
 
 ## Links
+
 - <https://x.com/NBCNews/status/1711815143607152939>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/F8G5y0VbgAAuf53.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1711853617953841180)

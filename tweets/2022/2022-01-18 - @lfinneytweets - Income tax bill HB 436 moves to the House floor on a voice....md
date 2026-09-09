@@ -22,6 +22,7 @@ related:
 Income tax bill HB 436 moves to the House floor on a voice vote. #idleg #idpol <https://t.co/3dDQLMyNHF>
 
 ## Links
+
 - <https://t.co/3dDQLMyNHF>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1483488723798876162)

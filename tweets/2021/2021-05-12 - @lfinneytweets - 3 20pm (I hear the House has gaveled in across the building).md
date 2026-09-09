@@ -18,6 +18,7 @@ related:
 3:20pm (I hear the House has gaveled in across the building) <https://t.co/6H3kWXlczK>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/E1N6AGIUcAIyARw.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

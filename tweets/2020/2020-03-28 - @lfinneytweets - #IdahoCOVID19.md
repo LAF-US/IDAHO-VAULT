@@ -20,6 +20,7 @@ related:
 \#IdahoCOVID19 <https://t.co/A7kSvyZHEv>
 
 ## Links
+
 - <https://x.com/ByRachelRoberts/status/1243966814146584577>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1244002175090446341)

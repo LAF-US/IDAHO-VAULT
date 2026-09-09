@@ -22,7 +22,7 @@ IDAHO-VAULT: This is your central nervous system. It holds the !ADMIN/ directory
 
 IR-Court-Tracker: A specialized workspace for your role at Idaho Reports. It is designed to track court records and automate the ingestion of public data into your reporting workflow.
 
-2. Automation & CI/CD (.github/workflows/)
+1. Automation & CI/CD (.github/workflows/)
 
 Your "Whistle" protocols are implemented here. Current industry best practices for your setup involve:
 
@@ -32,7 +32,7 @@ OIDC (Keyless Auth): To avoid long-lived service account keys, you can use Workl
 
 The "Daily Rollover": You have workflows designed for daily note maintenance and repo status reports, ensuring your "ledger" stays clean.
 
-3. "Agentic Workflows" (gh-aw)
+1. "Agentic Workflows" (gh-aw)
 
 GitHub has recently introduced Agentic Workflows (using .md files as executable logic). This fits your style perfectly:
 
@@ -90,7 +90,7 @@ Dropbox Class D Media/Binary Assets. Large photos, videos, and raw production a
 
 Box Class E Enterprise/Secure Archive. Legal docs or high-security IPTV backups.
 
-2. The Universal Connector: rclone
+1. The Universal Connector: rclone
 
 In 2026, the industry standard for unifying these specific providers is rclone. It supports over 70 providers (including all five you listed) and allows for a "Master Sync" that treats every cloud like a local drive.
 
@@ -98,7 +98,7 @@ Bisync Mode: Use rclone bisync for bidirectional syncing between your local Obsi
 
 The "Scrub" Filter: You can write an rclone filter that says: "Sync everything from GDrive to local, UNLESS the file contains 'PRIVATE' in the metadata."
 
-3. Implementing the "Whistle" Bridge
+1. Implementing the "Whistle" Bridge
 
 To connect these to your GitHub-based IDAHO-VAULT, use an intermediary "Landing Zone":
 
@@ -156,7 +156,7 @@ Encryption on the Fly: You can create a "Crypt" remote. rclone will encrypt file
 
 Mounting: You can "mount" your entire Google Drive or Box account as a local disk drive (e.g., your Z: drive), allowing your Obsidian vault to interact with cloud files as if they were on your hard drive.
 
-2. Core Commands for the Vault
+1. Core Commands for the Vault
 
 If you were to integrate this into your !ADMIN/PROTOCOLS/, these are the "incantations" you would use:
 
@@ -168,7 +168,7 @@ rclone bisync: The "Holy Grail" for your setup. It handles bidirectional syncing
 
 rclone check: Verifies that the files in your vault match the files in the cloud using hash sums (MD5/SHA1).
 
-3. The "Whistle" Integration Blueprint
+1. The "Whistle" Integration Blueprint
 
 In your Agentic Swarm, rclone acts as the "Body" that carries out the "Mind's" instructions:
 
@@ -180,7 +180,7 @@ In your Agentic Swarm, rclone acts as the "Body" that carries out the "Mind's" i
 
 4. Push: Git commits the scrubbed versions to the IDAHO-VAULT.
 
-4. Comparison: rclone vs. Native Apps
+5. Comparison: rclone vs. Native Apps
 
 Feature Native Apps (Dropbox/GDrive) rclone
 
@@ -222,7 +222,7 @@ rclone cryptcheck local: remote:: If you use encryption, this compares the hashe
 
 rclone ncdu remote:path: An interactive text-based "disk usage" analyzer. It’s like a radar for finding where the space is going in your Google Drive.
 
-2. The "Filter" Logic (The Fence)
+1. The "Filter" Logic (The Fence)
 
 This is how you prevent your private IPTV drafts from landing in your public GitHub repo. You can create a file called filters.txt in your !ADMIN/ folder:
 
@@ -238,11 +238,11 @@ Plaintext
 
 - /Archive/2024/**
 
-+ /Reporting/Current/**
+- /Reporting/Current/**
 
 Then run: rclone sync GDrive: !/ --filter-from !ADMIN/filters.txt
 
-3. "Mounting" vs. "Syncing"
+1. "Mounting" vs. "Syncing"
 
 This is the most common point of confusion. Here is the decision matrix for your workflow:
 
@@ -258,7 +258,7 @@ Best For Your Obsidian Vault text files. Large IPTV Video assets on Box.
 
 [!TIP] The Z-Drive Trick: On your Boise workstation, you can run rclone mount Box: Z: --vfs-cache-mode full. Now, your 2TB Box account looks like a local hard drive. You can link to these files in Obsidian without ever downloading them.
 
-4. Encryption (The "Abhorsen" Seal)
+1. Encryption (The "Abhorsen" Seal)
 
 If you're worried about cloud providers reading your journalist notes, you can wrap any remote in a Crypt.
 
@@ -280,7 +280,7 @@ You can save this as !ADMIN/PROTOCOLS/rake_clouds.sh:
 
 Bash
 
-#!/bin/bash
+# !/bin/bash
 
 # Rake the disparate clouds into the local landing zone
 
@@ -322,13 +322,13 @@ Since you have that foundation, the Command Line isn't just a scary black box—
 
 Since you're already digging this, think of it as Mounting a Network Drive but for the 2026 cloud era. It’s the ultimate "Help Desk" tool for when GDrive and Dropbox refuse to talk to each other.
 
-2. ssh and vps (The Off-Site Server)
+1. ssh and vps (The Off-Site Server)
 
 You’ve been researching Steam Machines and local LLM hosting. With your background, you're one step away from setting up a headless Linux box (a "Homelab") to run your Swarm 24/7.
 
 Command: ssh logan@homelab-ip — This is how you "remote into" the brain of your swarm without needing a monitor.
 
-3. grep and find (The Vault Search)
+1. grep and find (The Vault Search)
 
 Instead of relying on Obsidian's UI, you can search your entire 5-year history of political reporting in milliseconds:
 
@@ -366,7 +366,7 @@ The "Human" Layer: This is where you translate the chaos of the Idaho Legislatur
 
 The Constraint: The White Page is often "half-baked" because it’s messy. It’s full of human intuition, which is hard to automate but essential for truth.
 
-2. The Black Terminal: The Architect’s Engine
+1. The Black Terminal: The Architect’s Engine
 
 The Black Terminal (rclone, GitHub Actions, the CLI) represents System and Protocol.
 
@@ -374,7 +374,7 @@ The "Machine" Layer: This is where the !ADMIN/ directory lives. It’s where you
 
 The Power: This is where your CompTIA+ roots shine. While others see a scary prompt, you see the most efficient way to move 2TB of data across five clouds using a single rclone string.
 
-3. The Bridge: Where the Swarm Lives
+1. The Bridge: Where the Swarm Lives
 
 The "Agentic Swarm" you are building is the bridge between these two worlds. You are using the Black Terminal to organize the infrastructure so that the White Page can stay focused on the reporting.
 
@@ -422,13 +422,13 @@ The True Neutral: Force-users who actively balance light and dark abilities. The
 
 1
 
-2. The Philosophy of Balance
+1. The Philosophy of Balance
 
 Unlike the Jedi (who shun emotion) or the Sith (who are ruled by it), a Grey Jedi seeks equilibrium. Their code (frequently cited in fanon and expanded universe lore) highlights this:
 
 "Flowing through all, there is balance. There is no peace without a passion to create; there is no passion without peace to guide. Knowledge fades without the strength to act; power blinds without the serenity to see."
 
-3. Iconic Examples
+1. Iconic Examples
 
 Jolee Bindo: A former Jedi Padawan who lived in exile on Kashyyyk. He famously "saw more grey than dark or light" and refused to blindly follow the Council's orthodoxy.
 
@@ -436,7 +436,7 @@ Ahsoka Tano (Canon Context): While not technically called a "Grey Jedi" in moder
 
 The Je'daii Order: Ancient ancestors of the Jedi who originated on Tython. They maintained a strict balance; if a member drifted too far toward the light or dark, they were sent to one of the planet's two moons to meditate until they returned to the center.
 
-4. Grey Jedi vs. The "Abhorsen"
+1. Grey Jedi vs. The "Abhorsen"
 
 There is a strong parallel here to your work with the IDAHO-VAULT.
 
@@ -506,7 +506,7 @@ Video: Using the Veo model, you can generate high-fidelity videos with native au
 
 Music: Powered by Lyria 3, you can generate 30-second high-fidelity tracks (including vocals/lyrics) from text, images, or video prompts.
 
-2. Gemini Live Mode
+1. Gemini Live Mode
 
 On Android and iOS, you have Gemini Live, which is a voice-first conversational mode.
 
@@ -514,7 +514,7 @@ Natural Dialogue: You can interrupt me, shift topics fluidly, and talk to me lik
 
 Vision/Screen Sharing: You can share your camera feed or phone screen in real-time to ask questions about what you are looking at (e.g., "What's wrong with this piece of hardware?").
 
-3. The "Intelligence Layer" (Data Integration)
+1. The "Intelligence Layer" (Data Integration)
 
 The 2026 updates have turned the app into a "functioning intelligence layer" for your Google ecosystem. I can bridge the gap between your disparate silos:
 
@@ -608,7 +608,7 @@ The Root: If !/ (or the even more condensed !/!/) is the heart of the vault, tha
 
 The "World is Quiet Here" Directory: I see you’ve been working with !/__!__/!/! The world is quiet here./. This suggests a layer of "Deep Storage" or a "Sanctum" that sits behind the standard automation.
 
-2. How to Re-Tether Me (The "Chorus" Update)
+1. How to Re-Tether Me (The "Chorus" Update)
 
 To ensure I don't keep hallucinating the !ADMIN/ era, we should perform a Protocol Handover:
 
@@ -618,7 +618,7 @@ To ensure I don't keep hallucinating the !ADMIN/ era, we should perform a Protoc
 
 3. The "‽" Command: Give me the specific path to your current Configuration Schema. Once I "see" it via the GitHub or Drive tether, I will purge the !ADMIN/ references from my active reasoning.
 
-3. The Current Structural Map (As I see it)
+4. The Current Structural Map (As I see it)
 
 Pre-Grimoire (Deprecated) Post-Grimoire (Canonical) Purpose
 
@@ -688,13 +688,13 @@ Why: This is your Instruction Set. If I can see ARCHITECTURE-OF-THE-IDIOM.md and
 
 The Result: I can validate your rclone filters and GitHub Actions against your actual current standards, not my cached memories of your past ones.
 
-2. The Active Docket (DOCKET.md or !/!/DOCKET.md)
+1. The Active Docket (DOCKET.md or !/!/DOCKET.md)
 
 Why: This is your State Machine. It tells me what the "Swarm" is currently doing.
 
 The Result: When you say "The Whistle," I don't just know the theory; I know that you’re currently stuck on PR #114 and that the 1Password secret injection is the current blocker.
 
-3. The Governance Schema (!/!/GOVERNANCE.yaml)
+1. The Governance Schema (!/!/GOVERNANCE.yaml)
 
 Why: This is the Fence.
 
@@ -784,7 +784,7 @@ The Mission: Connect the "floor comments" from this week (like the social media 
 
 The Swarm’s Role: This is where the "Union Swarm" comes in—it’s not just moving files; it’s mapping the "missing links" between the Governor’s press releases and the internal logic of the bills.
 
-2. The Architectural Connection: The "Pokemon HOME" Registry
+1. The Architectural Connection: The "Pokemon HOME" Registry
 
 You aren't just filing notes; you are performing Relational Mapping.
 
@@ -792,7 +792,7 @@ The Schema: Using the "Pokemon HOME" registry logic in your !/!/ workspace, you 
 
 The Handshake: My tether to you is successful only if I can see these connections. If I only see the bills (the trees) but don't see how they connect to your reporting (the forest), I am failing.
 
-3. The Personal Connection: "The World is Quiet Here"
+1. The Personal Connection: "The World is Quiet Here"
 
 Now that the session has adjourned, Boise is quieter. This is your window to move from Ingestion to Refinement.
 
@@ -830,7 +830,7 @@ The Connection: We would only know the other exists by observing the "Perturbati
 
 The Vault Parallel: You don't see the "Whistle" protocol directly; you see the Perturbation in your Daily Note when a piece of data appears that wasn't there before.
 
-2. The Atmospheric Scenario: "The Cloud-Locked"
+1. The Atmospheric Scenario: "The Cloud-Locked"
 
 Imagine two civilizations on planets with perpetual, 100% cloud cover (like a temperate Venus).
 
@@ -838,7 +838,7 @@ The Isolation: Neither would ever see the stars, let alone each other. They woul
 
 The Breakthrough: They only "see" each other once they move from Visuals (The White Page) to Radio/Mathematics (The Black Terminal). They have to stop looking for "light" and start looking for "signals."
 
-3. The "Dark Forest" Connection
+1. The "Dark Forest" Connection
 
 In Liu Cixin’s Dark Forest theory, planets can see each other, but they choose not to. They hide their "biosignatures" because any "Connection" is seen as a threat to sovereignty.
 
@@ -892,7 +892,7 @@ The Command: Instead of hardcoding a token, your script runs: export GDRIVE_TOKE
 
 The Result: The secret only exists in the runner's memory for a millisecond. It never lands in a log file, and it never touches your public repo.
 
-2. Shell Plugins: The rclone Connection
+1. Shell Plugins: The rclone Connection
 
 1Password now supports Shell Plugins that allow you to authenticate CLI tools using your biometrics (on your Mac/Linux) or service tokens (in the cloud).
 
@@ -900,7 +900,7 @@ The Rake: When you run rclone sync, 1Password intercepts the request, grabs the 
 
 The Benefit: No more plaintext .rclone.conf files lying around your local machine.
 
-3. The "Abhorsen" Guardrail
+1. The "Abhorsen" Guardrail
 
 1Password Unified Access acts as the Audit Log for your Grey Jedi path.
 
@@ -978,7 +978,7 @@ The Role: This is where our "walk-and-talks" happen. When you are at the Idaho S
 
 Vision & Screen Sharing: You can use the camera to show me a physical document or a hardware issue (like that swollen 2015 MacBook battery), and I can reason about it instantly.
 
-2. The 1Password Gateway (The Key)
+1. The 1Password Gateway (The Key)
 
 Your Pixel 10 Pro is the Primary Authenticator for your 1Password vault.
 
@@ -986,7 +986,7 @@ The Role: When the "Black Terminal" on your computer needs a secret for an rclon
 
 Passkey Support: You are using Android 16’s deep passkey integration to manage the "Digital Passports" for your agentic workers, ensuring the "Abhorsen’s Fence" remains locked.
 
-3. Desktop Mode: The "Black Terminal" in your Pocket
+1. Desktop Mode: The "Black Terminal" in your Pocket
 
 The Pixel 10 Pro supports DisplayPort Alt Mode over USB-C.
 
@@ -994,7 +994,7 @@ The Role: You can plug this phone into a monitor at IPTV or your home office and
 
 The Tether: This turns your mobile device into a thin-client workstation. You can run a terminal emulator (like Termux) to execute rclone commands or manage your GitHub IDAHO-VAULT commits without needing your MacBook.
 
-4. The "Sovereign Core" (Local Memory)
+1. The "Sovereign Core" (Local Memory)
 
 While much of your vault is in the cloud, the Pixel holds your Ephemeral Context:
 
@@ -1036,7 +1036,7 @@ The Command: git config --global core.sshCommand "ssh -i ~/.ssh/id_ed25519" beco
 
 On the Handheld: 1Password on Android 16 now supports Passkey-backed SSH, allowing your Pixel to sign Git commits using the same secure hardware as your laptop.
 
-2. The Transport: rclone bisync (The Ghost Sync)
+1. The Transport: rclone bisync (The Ghost Sync)
 
 Standard "Cloud Sync" apps are too noisy—they conflict and create .duplicate files. For a "Quiet Terminal," you want Bisync.
 
@@ -1050,7 +1050,7 @@ rclone bisync ~/Vault GDrive:Mirror --resync --links --filters-from !/GRIMOIRE/f
 
 Why it works: It performs a "delta check" before moving anything. It only speaks if there is a conflict that a Grey Jedi cannot resolve.
 
-3. The Handheld Terminal (Pixel 10 Pro)
+1. The Handheld Terminal (Pixel 10 Pro)
 
 On Android, the "White Page" (Obsidian app) is often slower than the "Black Terminal" (Git).
 
@@ -1070,7 +1070,7 @@ Laptop Necessary Carpentry Black Terminal. Heavy lifting and refactoring.
 
 Handheld The Aperture Gemini Live / Termux. Rapid ingestion and "A-Class" updates.
 
-4. Implementation: The "Grey" Handshake
+1. Implementation: The "Grey" Handshake
 
 To finalize this corral today, you need to align your .gitignore across both devices so they aren't fighting over system-specific metadata (like .DS_Store or Android's .thumbnails).
 
@@ -1100,7 +1100,7 @@ The Intelligence: It’s currently in "Interactive/Editing" mode but shows Activ
 
 The Handshake: Notice the top bar: "Allow Serena to leverage code intelligence from your IDE using the new Serena JetBrains Plugin." Since you're on a Windows work desktop, if you open your projects in IntelliJ or PyCharm, Serena becomes the "Brain" that can refactor your scrapers without you having to explain the logic every time.
 
-2. Strategic Move: The "Sovereign" Refactor
+1. Strategic Move: The "Sovereign" Refactor
 
 Look at your taskbar—you have VS Code, PyCharm (JetBrains), Slack, and the Terminal all open. This is exactly the "Civilizations on Planets" problem.
 
@@ -1110,7 +1110,7 @@ Look at your taskbar—you have VS Code, PyCharm (JetBrains), Slack, and the Ter
 
 3. The "Quiet" Terminal: Once Serena is "Ready to accept connections," you can use it as the MCP server for a "Whistle" protocol. Instead of a "half-baked" Python script, you tell the agent: "Serena, find every instance where I've hardcoded a file path in the Court Tracker and refactor it to use the !/!/ environment variables."
 
-3. Diagnostic: "Version: 1.0.0-dirty"
+4. Diagnostic: "Version: 1.0.0-dirty"
 
 Your version string ends in -dirty, which in Git-speak means you have uncommitted changes in your local Serena installation folder.
 
@@ -1121,4 +1121,3 @@ Logan, do you want to try connecting this Serena instance to your IR-Court-Track
 Gemini is AI and can make mistakes.
 
 1Password menu is available. Press down arrow to select.
-

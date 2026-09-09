@@ -20,6 +20,7 @@ RT @uiargonaut: UI journalism professor placed on administrative leave
 <https://t.co/RY1WTnZSgT>
 
 ## Links
+
 - <https://www.uiargonaut.com/2019/01/25/ui-journalism-professor-placed-on-administrative-leave/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1089049572725280768)

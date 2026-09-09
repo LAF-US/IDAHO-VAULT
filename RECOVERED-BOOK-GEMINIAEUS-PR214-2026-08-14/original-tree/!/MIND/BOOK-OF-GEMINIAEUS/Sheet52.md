@@ -148,7 +148,7 @@ The Hard Rule (Out-of-Character): If the GM says, "You cannot cast that spell be
 
 The Deception (In-Character): If an NPC says, "You cannot cast spells in this city; it’s magically shielded," the NPC might be lying. The GM is roleplaying. Your character can try to cast a spell anyway to see what happens.
 
-2. The "Roll for It" Litmus Test
+1. The "Roll for It" Litmus Test
 
 In D&D, dice rolls are the "truth serum" of the game. If you suspect the GM is describing something deceptive, you use mechanics to peel back the layers.
 
@@ -168,11 +168,11 @@ If the GM says: "The door is magically sealed and cannot be opened," that's a Ha
 
 If the GM says: "The door won't budge, no matter how hard you push," that's an Invitation. You might find a hidden lever with a high Investigation roll.
 
-3. "Are You Sure?"
+1. "Are You Sure?"
 
 This is the universal GM code for: "You are about to break a hard rule or make a massive mistake." When a GM asks "Are you sure?", they are stepping out of their "deceptive narrator" role to give you a fair warning as a referee. If they let you do something impossible (like jumping across a 50-foot gap) without warning you it's impossible, they aren't being a "tough GM"; they're usually ignoring the physics of the game.
 
-4. The Table Contract
+1. The Table Contract
 
 Ultimately, a good GM should never deceive you about how the game works.
 
@@ -226,7 +226,7 @@ The Relationship: You trust the GM to create a cool story.
 
 The RNG: The dice decide if your cool plan actually works.
 
-2. Failing Forward
+1. Failing Forward
 
 When the random number generator (RNG) gives you a "Natural 1" (a critical failure), the relationship is what saves the fun.
 
@@ -234,7 +234,7 @@ A bad relationship results in the GM saying, "You fail, nothing happens, next tu
 
 A good relationship results in the GM saying, "You miss the Orc, but your sword strikes a pipe on the wall, filling the room with steam—now everyone has cover!"
 
-3. The "Rule of Cool"
+1. The "Rule of Cool"
 
 This is the ultimate proof that relationships trump math. The "Rule of Cool" is a common "Homebrew" philosophy where a GM allows a player to do something technically against the rules because it would make the story legendary.
 
@@ -274,7 +274,7 @@ Rogue → Assassin: You specialize in first-strike kills and disguises.
 
 Rogue → Thief: You focus on fast hands, climbing, and using magic items you weren't supposed to have.
 
-2. The "Skill Tree" Equivalents
+1. The "Skill Tree" Equivalents
 
 While there isn't a global tree, two mechanics mimic that "custom build" feeling:
 
@@ -298,13 +298,13 @@ Sentinel: You become a "Tank" who stops enemies in their tracks if they try to r
 
 Magic Initiate: You’re a Fighter, but you’ve learned two cantrips from the Wizard list.
 
-3. Skill Specialization: Expertise
+1. Skill Specialization: Expertise
 
 In terms of actual non-combat skills (like Persuasion or Stealth), most characters just have "Proficiency" (a flat bonus). However, "Specialists" like Rogues and Bards get Expertise.
 
 Expertise doubles your proficiency bonus. While a normal person might be "good" at lying (Persuasion), a Bard with Expertise is "world-class." This is how you build a character who is mechanically designed to never fail at a specific task.
 
-4. Multiclassing: Building Your Own Tree
+1. Multiclassing: Building Your Own Tree
 
 If you don’t like the "official" paths, you can Multiclass. This is where you take a level in a completely different class.
 
@@ -344,7 +344,7 @@ The Rogue (The Stealth/Sensor Node): Low-power, high-sensitivity units that move
 
 The Bard (The Communication/Relay Node): Units that don't perform the primary task but provide "Inspiration" (signal boosting and data synchronization) to keep the swarm cohesive.
 
-2. Skill Trees vs. Adaptive Heuristics
+1. Skill Trees vs. Adaptive Heuristics
 
 While D&D classes are static, a swarm uses Subclassing through "Dynamic Role Allocation."
 
@@ -352,7 +352,7 @@ Multi-classing (Task Switching): If a "Sensor Node" (Rogue) is destroyed, a "Rel
 
 Feats (Modular Hardware): In a swarm, "Feats" are essentially modular hardware swaps—adding a gripper arm or a long-range antenna. It’s a specialized upgrade that changes the node's "Action Economy."
 
-3. The "Social Contract" (Swarm Intelligence)
+1. The "Social Contract" (Swarm Intelligence)
 
 In D&D, the players agree to work together. In an autonomous swarm, this is the Consensus Protocol.
 
@@ -360,7 +360,7 @@ The Rules (Hard-Coded Constraints): These are the "Physics" and "Safety Protocol
 
 The Deception (Sensor Noise & Adversarial Inputs): A swarm must distinguish between a "Hard Rule" (the battery is at 5%) and "Narrative Deception" (an enemy jamming signals or spoofing data). The swarm uses Consensus Checks (the equivalent of an "Insight Roll") to see if the data provided by one node matches the "truth" of the others.
 
-4. The "GM" (The Mission Controller)
+1. The "GM" (The Mission Controller)
 
 In an autonomous swarm, the GM isn't a person; it’s the Objective Function.
 
@@ -406,7 +406,7 @@ Original D&D (OD&D): Three small brown booklets. It was barely a game by modern 
 
 The Split: In 1977, the game split into two paths: Basic (simple, for kids/beginners) and Advanced (complex, for "serious" gamers).
 
-2. The "Advanced" Years (1978–1999)
+1. The "Advanced" Years (1978–1999)
 
 This era is defined by high lethality and "Gygaxian" complexity.
 
@@ -414,7 +414,7 @@ AD&D 1st Edition (1e): Introduced the "Holy Trinity" of books (Player's Handbook
 
 AD&D 2nd Edition (2e): Cleaned up the rules and focused heavily on Settings. This gave us Ravenloft, Spelljammer, and Dark Sun. It removed "problematic" monsters like Assassins and Demons for a few years due to the "Satanic Panic."
 
-3. The Modern Engine (2000–2013)
+1. The Modern Engine (2000–2013)
 
 Wizards of the Coast bought the game and unified the rules into the d20 System.
 
@@ -422,7 +422,7 @@ Wizards of the Coast bought the game and unified the rules into the d20 System.
 
 4th Edition (4e): The "Video Game" edition. It tried to balance every class perfectly, giving everyone "At-Will" and "Daily" powers. It was great for tactical combat but many felt it lost the "soul" of roleplaying. It was so polarizing it led to the creation of Pathfinder.
 
-4. The Renaissance (2014–Present)
+1. The Renaissance (2014–Present)
 
 5th Edition (5e): The current "Canon." It focused on Streamlining. It replaced flat math bonuses with "Advantage/Disadvantage" (rolling two dice). It is the most popular version in history.
 
@@ -457,4 +457,3 @@ Since you're looking at classes and architecture, would you like to see how the 
 Gemini is AI and can make mistakes.
 
 1Password menu is available. Press down arrow to select.
-

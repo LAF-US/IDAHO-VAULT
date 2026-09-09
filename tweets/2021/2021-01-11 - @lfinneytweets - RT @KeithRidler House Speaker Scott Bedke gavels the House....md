@@ -24,6 +24,7 @@ related:
 RT @KeithRidler: House Speaker Scott Bedke gavels the House into session. #idpol #idleg <https://t.co/nmiFdraShh>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/EreRnHcU0AAuxhc.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1348707541853720576)

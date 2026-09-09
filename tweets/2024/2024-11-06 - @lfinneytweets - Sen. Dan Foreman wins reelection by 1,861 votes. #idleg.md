@@ -20,6 +20,7 @@ related:
 Sen. Dan Foreman wins reelection by 1,861 votes. #idleg <https://t.co/vQUO7RBlH2>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/Gbsc2BPawAABfQz.png)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1854107541770539127)

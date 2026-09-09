@@ -23,6 +23,7 @@ related:
 RT @IdahoPubRadio: Reminder from @IDHW— the #COVID19 hotline is now available. <https://t.co/2fRGaapOVk>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/EUznMUgU8AIvePN.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1246627417696829440)

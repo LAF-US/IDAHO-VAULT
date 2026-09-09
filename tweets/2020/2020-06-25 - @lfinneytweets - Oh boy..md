@@ -17,6 +17,7 @@ related:
 Oh boy. <https://t.co/Uo0pdAK1oA>
 
 ## Links
+
 - <https://x.com/DailyBee/status/1276183370586783747>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1276184751150264320)

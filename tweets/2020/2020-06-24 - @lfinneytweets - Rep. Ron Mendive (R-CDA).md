@@ -18,6 +18,7 @@ related:
 Rep. Ron Mendive (R-CDA) <https://t.co/BUrkX8KMCA>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/EbQE092XYAMkSVw.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

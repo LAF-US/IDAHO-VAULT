@@ -22,6 +22,7 @@ related:
 Perks of the state handing off #IdahoCOVID19 response to locals: Eastern health district has mandated masks in multiple counties, Southwest health district doesn't believe it has the authority to do so. #idpol <https://t.co/7xJMOazcx4>
 
 ## Links
+
 - <https://x.com/racheld_cohen/status/1286334051683459072>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1286337156861120518)

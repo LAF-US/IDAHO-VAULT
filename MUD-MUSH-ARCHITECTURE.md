@@ -21,7 +21,7 @@ The system should support both human and artificial participants. It should make
 ## 2. Design principles
 
 | Principle | Meaning |
-|---|---|
+| --- | --- |
 | **Place before prose** | Every interaction occurs somewhere: a room, passage, workshop, archive, court, garden, or other named location with an explicit state. |
 | **Objects have state** | Characters, documents, tools, doors, keys, and signals are objects with discoverable properties and histories. |
 | **Verbs have consequences** | Commands are not decorative prompt text. A verb either reports information, proposes a change, or changes recorded state under an explicit rule. |
@@ -35,7 +35,7 @@ The system should support both human and artificial participants. It should make
 The three traditions overlap, but each contributes a different emphasis to the design.
 
 | Tradition | Primary contribution | Architectural implication |
-|---|---|---|
+| --- | --- | --- |
 | **MUD** | Rooms, movement, game-like mechanics, and persistent state. | The world needs a durable location graph, explicit verbs, event processing, and a clear lifecycle for state changes. |
 | **MUSH** | Social role-play, expressive scenes, collaborative worldbuilding, and staff-mediated norms. | The world needs communication channels, scene controls, consent-aware interaction, and a distinction between in-character action and out-of-character administration. |
 | **MOO** | Object-oriented world extension through reusable objects and verbs. | Rooms, items, characters, and systems should expose stable interfaces and inherit behavior from well-defined archetypes. |
@@ -119,7 +119,7 @@ When a connector or MCP command produces a vault audit artifact, its immutable `
 The system separates **hard code** from **soft code** without treating either as inferior.
 
 | Layer | Contents | Change posture |
-|---|---|---|
+| --- | --- | --- |
 | **Hard code** | Session handling, authentication, permissions, event storage, state-transition rules, object schemas, tool boundaries, rate limits, and audit hooks. | Deliberate engineering change, reviewed and tested. |
 | **Soft code** | Room descriptions, object behavior, scene scripts, actor role cards, world lore, quest logic, dialogue patterns, and local rules. | Worldbuilding change, inspectable and versioned. |
 
@@ -151,7 +151,7 @@ COMMAND
 Commands fall into three categories:
 
 | Category | Examples | State effect |
-|---|---|---|
+| --- | --- | --- |
 | **Observe** | `look`, `examine`, `inventory`, `read`, `whereis` | No world-state change; creates optional access telemetry. |
 | **Interact** | `say`, `ask`, `give`, `take`, `open`, `move`, `use` | May alter location, inventory, relationship state, or a scene. |
 | **Administer** | `build`, `create`, `set`, `grant`, `archive`, `approve` | Alters world structure or permissions; always requires an explicit capability and durable record. |
@@ -165,7 +165,7 @@ A **Key** is a capability-bearing object or token. It can unlock a room, authori
 Keys should be scoped, inspectable, and revocable. A Key is not synonymous with a person, office, or permanent superiority. It is an explicit grant with an identified boundary.
 
 | Capability pattern | Example |
-|---|---|
+| --- | --- |
 | **Access Key** | Enter a protected chamber or inspect a restricted artifact. |
 | **Action Key** | Create a room, move an object, initiate a scheduled event, or open a hearing. |
 | **Delegation Key** | Permit a named actor to carry out one task on behalf of a steward. |
@@ -207,7 +207,7 @@ Every state-changing command binds to an active `AgentSession`. Before authoriza
 Multiple agent frameworks can coexist because they can serve different functions:
 
 | Concern | Suitable mechanism |
-|---|---|
+| --- | --- |
 | Role definitions, assignments, and task composition | Crew-style orchestration. |
 | Explicit state, branching, parallel activity, pauses, and resumability | Graph-based orchestration. |
 | Bounded dialogue, debate, cross-examination, and scene interaction | Conversation-oriented orchestration. |
@@ -241,7 +241,7 @@ A useful rule is: **fictional action is expressive; consequential action is expl
 The world should preserve three related but distinct records:
 
 | Record | Purpose |
-|---|---|
+| --- | --- |
 | **Current state** | Answers what exists and where it is now. |
 | **Event ledger** | Answers what happened, in what order, and under which command or rule. |
 | **Narrative record** | Preserves descriptions, scenes, reports, and interpretation without confusing them with state. |
@@ -253,7 +253,7 @@ Time may be real-time, turn-based, scheduled, or event-driven. The architecture 
 A persistent multi-user world requires tools for inspection and repair.
 
 | Need | Required facility |
-|---|---|
+| --- | --- |
 | **Inspection** | Object examination, room contents, actor location, provenance, event history, and capability queries. |
 | **Debugging** | Command traces, failed validation reasons, tool-call logs, and replayable state transitions. |
 | **Moderation** | Consent controls, communication visibility, mute/block functions, conflict escalation, and access revocation. |
@@ -267,7 +267,7 @@ A Wizard role may be responsible for maintaining the engine, but wizardry is ope
 The first playable slice should be small enough to understand end-to-end.
 
 | Component | Initial implementation |
-|---|---|
+| --- | --- |
 | Rooms | An entry hall, one workroom, one archive, and one gated chamber. |
 | Actors | One human player, one bounded assistant actor, and one maintenance role. |
 | Objects | A map, a ledger, a key, a door, and one source artifact. |

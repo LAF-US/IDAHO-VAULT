@@ -15,10 +15,11 @@ related:
   - lfinneytweets
 ---
 
-Broken link. 
+Broken link.
 <https://t.co/5pNd0NGZMS>
 
 ## Links
+
 - <https://s3.us-west-2.amazonaws.com/isc.coi/CR29-22-2805/2024/090624-Order-Granting-Defendants-Motion-Change-Venue.pdf>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

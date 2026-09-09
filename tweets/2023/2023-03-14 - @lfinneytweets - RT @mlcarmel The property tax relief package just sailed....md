@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @mlcarmel: The property tax relief package just sailed through the House of Representatives. 
+RT @mlcarmel: The property tax relief package just sailed through the House of Representatives.
 
 We'll see how it fares in the Senate. htt…
 

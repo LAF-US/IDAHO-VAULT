@@ -24,6 +24,7 @@ RT @BoiseDev: Senate shoots down budget that kills ITD campus sale, sets up stan
 <https://t.co/anQrl7WENd>
 
 ## Links
+
 - <https://boisedev.com/news/2024/03/28/itd-budget-senate/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1773539746372833644)

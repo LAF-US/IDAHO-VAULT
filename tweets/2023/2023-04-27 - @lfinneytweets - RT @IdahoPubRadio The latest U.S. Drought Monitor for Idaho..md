@@ -19,6 +19,7 @@ related:
 RT @IdahoPubRadio: The latest U.S. Drought Monitor for Idaho. <https://t.co/Di2ylCsCJD>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/Fuusbt8acAAfeHe.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1651616401940168704)

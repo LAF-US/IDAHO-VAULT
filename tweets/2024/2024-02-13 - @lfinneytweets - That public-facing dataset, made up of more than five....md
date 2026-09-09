@@ -18,10 +18,11 @@ related:
   - lfinneytweets
 ---
 
-That public-facing dataset, "made up of more than five billion links to images scraped from the open web," was taken down by the nonprofit behind it, as @404mediaco's @samleecole reported. 
+That public-facing dataset, "made up of more than five billion links to images scraped from the open web," was taken down by the nonprofit behind it, as @404mediaco's @samleecole reported.
 <https://t.co/s2ADsC9sBj>
 
 ## Links
+
 - <https://www.404media.co/laion-datasets-removed-stanford-csam-child-abuse/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

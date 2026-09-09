@@ -22,6 +22,7 @@ Similar language is also in the Department of Administration budget bill. Senato
 <https://t.co/9yDFNZgd5H>
 
 ## Links
+
 - <https://legislature.idaho.gov/sessioninfo/2024/legislation/H0726/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

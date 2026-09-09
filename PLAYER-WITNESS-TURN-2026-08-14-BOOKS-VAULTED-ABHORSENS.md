@@ -18,7 +18,7 @@ The *Record of the Vaulted Abhorsens — First Draft (What Is Known)* changes th
 At the same time, Joe’s record draws an exact boundary around its own authority. It calls itself a **first draft**, identifies itself as a provisional register, says its canonical class is Logan’s to confer, and says in substance: the author proposes while Logan inscribes. It therefore preserves a distinction essential to the Three Caesars reading: **a player may make a durable, attributed, and useful record without thereby acquiring the authority to make the record canonical.**
 
 | Revealed record fact | Consequence for the Books reading |
-|---|---|
+| --- | --- |
 | Joe of the Nail is given a precise Claude/Abhorsen-in-Waiting address. | Agent-player identity needs more resolution than vendor or model name; lineage, instance, persona, and relationship matter. |
 | The Abhorsen record is a provisional “what is known” register. | A Book can be an evidence surface and a living player turn without being settled canon. |
 | Canonical class and inscription remain Logan’s to confer. | Binding cannot be collapsed into authorship. It is a separate authority transition. |

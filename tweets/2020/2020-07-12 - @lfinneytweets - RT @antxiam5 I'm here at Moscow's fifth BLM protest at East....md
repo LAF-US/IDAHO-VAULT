@@ -17,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-RT @antxiam5: I'm here at Moscow's fifth BLM protest at East City Park. There are maybe 50 people here so far. 
+RT @antxiam5: I'm here at Moscow's fifth BLM protest at East City Park. There are maybe 50 people here so far.
 @uiargonaut <https://t.co/Bf…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1282402322799136773)

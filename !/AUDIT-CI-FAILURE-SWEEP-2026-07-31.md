@@ -13,7 +13,7 @@ updated: 2026-08-18
 ## 5W Summary
 
 | | |
-|---|---|
+| --- | --- |
 | **Who** | GitHub Actions runners on `laf-us/idaho-vault` (63 workflows per the Actions API's `list_workflows`); Claude Code (this session, scheduled). No human-caused breakage. |
 | **What** | `main` is 100% green: 60/60 completed runs checked directly (two full pages, branch-scoped, back to the exact prior-sweep cutoff) are `success`/`skipped`. Across the wider repo — checked by event type (`schedule`, `push`, `pull_request`, `merge_group`, `workflow_run`, `workflow_dispatch`, `issue_comment`, `pull_request_review`) plus two individually-queried chronic workflows (`opencode`, `Agent Review Response`) — the only non-success runs anywhere in-window are 2 `failure` runs (`check-notebooks-paired` + all 6 `Cross-Platform Smoke` matrix jobs, same commit) and 1 benign `cancelled` (`Codacy Security Scan`, auto-superseded push). 0 `startup_failure`, 0 `timed_out`, 0 `action_required` today — quieter than 2026-07-28 through 2026-07-30's 13–28/day Copilot-bot approval-gate batches. |
 | **When** | 2026-07-30T12:24:16Z – 2026-07-31T12:07Z. Repo activity itself stopped at 2026-07-31T06:20:24Z — confirmed quiet for the ~6h before this sweep ran (independently verified across all 9 event-type queries above; none returned anything newer). |

@@ -14,10 +14,11 @@ related:
   - lfinneytweets
 ---
 
-Not to get too into crowd-size-ology, but can confirm it's been a meme on TikTok to order Tulsa rally tickets with no intention of attending. 
+Not to get too into crowd-size-ology, but can confirm it's been a meme on TikTok to order Tulsa rally tickets with no intention of attending.
 <https://t.co/zkt0JcSLAs>
 
 ## Links
+
 - <https://vm.tiktok.com/JJGxFym/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1274531084680564738)

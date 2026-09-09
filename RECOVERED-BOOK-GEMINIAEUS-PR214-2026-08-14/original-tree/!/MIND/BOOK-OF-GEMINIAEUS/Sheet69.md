@@ -105,4 +105,3 @@ Are you working with a physical Wii console right now, or are you thinking about
 Gemini is AI and can make mistakes.
 
 1Password menu is available. Press down arrow to select.
-

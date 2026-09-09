@@ -19,6 +19,7 @@ related:
 RT @qz: How to find out how much Facebook thinks it knows about you <https://t.co/hgdhnLJVai>
 
 ## Links
+
 - <http://ow.ly/J8SB30nn1nS>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1087173382020296704)

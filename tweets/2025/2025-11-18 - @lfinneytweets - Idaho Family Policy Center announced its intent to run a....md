@@ -19,13 +19,15 @@ related:
   - idpol
 ---
 
-Idaho Family Policy Center announced its intent to run a bill designating State Highway 16, from Emmett to Star, as the Charlie Kirk Memorial Highway. #idleg #idpol 
+Idaho Family Policy Center announced its intent to run a bill designating State Highway 16, from Emmett to Star, as the Charlie Kirk Memorial Highway. #idleg #idpol
 <https://t.co/wuKrFUSn9L> <https://t.co/fkPf7Dt0d2>
 
 ## Links
+
 - <https://idahofamily.org/petition-charlie-kirk-memorial-highway/>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/G6Eii_4agAERKaR.jpg)
 - ![alt text needed](https://pbs.twimg.com/media/G6EilSubMAIyvFn.jpg)
 - ![alt text needed](https://pbs.twimg.com/media/G6EimvObMAAooJ-.jpg)

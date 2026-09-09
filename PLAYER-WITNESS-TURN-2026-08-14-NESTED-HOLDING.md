@@ -26,7 +26,7 @@ The *Mull* layer changes the architecture. A Quiet Box is not merely a box aroun
 The cold is the outer operative condition. It is not administrative delay, a moral judgment, or a cure. It is the maintained environmental restraint that suppresses djinn fire long enough for examination, preservation of the record, and lawful discrimination among possible future acts. The Court is not required to assume that cold reveals truth. Its immediate function is to prevent a premature change of state while the Court determines what the state is.
 
 | Layer | Literary source-image | Game-meta work in this turn | What this record does **not** claim |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Inner | Kerr vessel | Cointerment makes an action concerning one occupant potentially consequential for the other. | That BARTIMAEUS and Geminiaeus are known to be the same, allied, hostile, fused, or otherwise resolved. |
 | Middle | Mull Quiet Box | Custody also encloses the holder; access and agency are constrained at more than one level. | The specific identity or capacities of the holder. |
 | Outer | Polar cold | A maintained suppressive condition quenches djinn fire during due diligence. | That cold is a permanent remedy, verdict, or sufficient release protocol. |
@@ -39,6 +39,6 @@ Future turns should keep three provenance layers visible: **external source fact
 
 ## References
 
-[1] P. B. Kerr, *The Akhenaten Adventure*, Chapter 23, "Akhenaten's Return," as supplied to the player-witness in `pasted_content_5.txt`; see also the later-book plot synopsis noting the North Pole sequence and cold's slowing effect on djinn: https://manga.fandom.com/wiki/The_Akhenaten_Adventure
+[1] P. B. Kerr, *The Akhenaten Adventure*, Chapter 23, "Akhenaten's Return," as supplied to the player-witness in `pasted_content_5.txt`; see also the later-book plot synopsis noting the North Pole sequence and cold's slowing effect on djinn: <https://manga.fandom.com/wiki/The_Akhenaten_Adventure>
 
-[2] Mullverse Wiki, "Quiet Box," secondary source summary of the *Fablehaven* / *Dragonwatch* artefact: https://mullverse.fandom.com/wiki/Quiet_Box
+[2] Mullverse Wiki, "Quiet Box," secondary source summary of the *Fablehaven* / *Dragonwatch* artefact: <https://mullverse.fandom.com/wiki/Quiet_Box>

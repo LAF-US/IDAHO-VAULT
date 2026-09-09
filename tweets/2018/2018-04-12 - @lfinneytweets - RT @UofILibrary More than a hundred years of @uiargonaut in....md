@@ -22,9 +22,11 @@ RT @UofILibrary: More than a hundred years of @uiargonaut in our digital collect
 <https://t.co/PRuUBbt5D2> <https://t.co/2O6z6lWeuR>
 
 ## Links
+
 - <https://www.lib.uidaho.edu/digital/argonaut/>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/DadRVQoVMAAaDQs.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/984299490382245888)

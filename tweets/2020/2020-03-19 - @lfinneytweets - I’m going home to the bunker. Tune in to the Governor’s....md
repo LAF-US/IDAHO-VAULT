@@ -22,6 +22,7 @@ related:
 I’m going home to the bunker. Tune in to the Governor’s press conference. See y’all on the other side. #idleg #idpol <https://t.co/Irm2Sk3IBV>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/ETgf3pCU8AATQRF.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1240776945140240384)

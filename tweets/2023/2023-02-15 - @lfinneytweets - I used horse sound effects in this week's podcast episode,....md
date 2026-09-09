@@ -22,6 +22,7 @@ related:
 I used horse sound effects in this week's podcast episode, so... check that out I guess? #idleg #idpol <https://t.co/yQ1hinA2qU>
 
 ## Links
+
 - <https://x.com/IdahoReports/status/1625953198555992065>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1625979317728735234)

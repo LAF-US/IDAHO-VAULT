@@ -20,6 +20,7 @@ related:
 Meanwhile, out west #idleg <https://t.co/zHS1veeS7F>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/FEQCKQOVIAIA8Rl.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1460294556595867654)

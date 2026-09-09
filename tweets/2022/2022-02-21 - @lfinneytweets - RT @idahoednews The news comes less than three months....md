@@ -24,6 +24,7 @@ related:
 RT @idahoednews: The news comes less than three months before the Republican primary. #idedu #idpol <https://t.co/F6a6lc7Vhr>
 
 ## Links
+
 - <https://idahoednews.org/i1ed9>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1495807185783246850)

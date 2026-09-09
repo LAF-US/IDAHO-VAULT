@@ -18,6 +18,7 @@ related:
 <https://t.co/gR57UN35TZ>
 
 ## Links
+
 - <https://cdapress.com/news/2024/may/23/drag-performance-defamation-trial-continues/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

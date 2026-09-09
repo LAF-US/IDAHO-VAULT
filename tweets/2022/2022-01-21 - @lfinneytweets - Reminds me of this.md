@@ -20,6 +20,7 @@ related:
 @nicoleMfoy Reminds me of this <https://t.co/O3aFGqU9TF>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/media/FJo0t2mVUAIMOfr.jpg)
 - ![alt text needed](https://pbs.twimg.com/media/FJo0uCCVQAYFOl3.jpg)
 

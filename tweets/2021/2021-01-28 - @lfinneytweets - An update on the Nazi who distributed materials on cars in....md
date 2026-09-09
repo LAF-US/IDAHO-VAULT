@@ -22,6 +22,7 @@ related:
 An update on the Nazi who distributed materials on cars in the Sandpoint High School parking lot and feuded with the @sndpnt_reader, among *many* other things. #idpol <https://t.co/eWEJLubDfa>
 
 ## Links
+
 - <https://t.co/eWEJLubDfa>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1354601840843788296)

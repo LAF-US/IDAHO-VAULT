@@ -17,6 +17,7 @@ related:
 Go Bulldogs! <https://t.co/vWSZqsx3or>
 
 ## Links
+
 - <https://x.com/hampjazz/status/967244499943505920>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/967246528715702274)

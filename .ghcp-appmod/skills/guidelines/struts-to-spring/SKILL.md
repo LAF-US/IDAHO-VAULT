@@ -52,14 +52,14 @@ Execute skills in this order:
 
 ### Phase 5: View Layer
 
- 1. [ ] `convert-result-types` - Handle result mappings ([SKILL-view.md](SKILL-view.md))
- 2. [ ] `convert-jsp-tags` - Update JSP files ([SKILL-view.md](SKILL-view.md))
- 3. [ ] `convert-ognl-to-el` - Fix expressions ([SKILL-view.md](SKILL-view.md))
+1. [ ] `convert-result-types` - Handle result mappings ([SKILL-view.md](SKILL-view.md))
+2. [ ] `convert-jsp-tags` - Update JSP files ([SKILL-view.md](SKILL-view.md))
+3. [ ] `convert-ognl-to-el` - Fix expressions ([SKILL-view.md](SKILL-view.md))
 
 ### Phase 6: Testing & Polish
 
- 1. [ ] `convert-test-classes` - Update tests ([SKILL-test.md](SKILL-test.md))
- 2. [ ] `create-exception-handler` - Global exception handling ([SKILL-test.md](SKILL-test.md))
+1. [ ] `convert-test-classes` - Update tests ([SKILL-test.md](SKILL-test.md))
+2. [ ] `create-exception-handler` - Global exception handling ([SKILL-test.md](SKILL-test.md))
 
 ---
 

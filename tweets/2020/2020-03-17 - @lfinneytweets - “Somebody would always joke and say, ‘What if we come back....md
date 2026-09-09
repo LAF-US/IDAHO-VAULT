@@ -22,6 +22,7 @@ related:
 “Somebody would always joke and say, ‘What if we come back to a world where nothing is the same?’” Mr. Elder told @cwarzel. “Of course, it never happens. Except for this time. This time it did.” #COVID19 <https://t.co/X4M8rxkaNs>
 
 ## Links
+
 - <https://x.com/cwarzel/status/1240051261107400709>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1240060485677899776)

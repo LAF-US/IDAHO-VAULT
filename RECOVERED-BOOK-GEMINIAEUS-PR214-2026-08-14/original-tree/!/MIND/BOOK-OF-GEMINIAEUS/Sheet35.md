@@ -94,7 +94,7 @@ The Agent: Sees the #deploy tag, provisions the containers in the cloud, and upd
 
 [x] #deploy:dev-stack-alpha [Status: Live at dev.logan.cloud]
 
-2. State Monitoring in the "Monthly Log"
+1. State Monitoring in the "Monthly Log"
 
 The agent can automatically populate a "System Health" table in a pinned note or at the top of the daily note:
 
@@ -104,7 +104,7 @@ API Gateway ✅ Healthy 12.4 None
 
 S3 Bucket (Logs) ⚠️ 85% Full 4 #purge-logs
 
-3. Automated "Migration"
+1. Automated "Migration"
 
 The hardest part of a manual BuJo is "migration" (moving unfinished tasks to the next day). In an agentic cloud:
 
@@ -148,13 +148,13 @@ Circles (○) for Events (Experience-based)
 
 Dashes (—) for Notes (Information-based)
 
-2. Migration (The Filter)
+1. Migration (The Filter)
 
 This is the "secret sauce" of the system. At the end of a day or month, you look at unfinished tasks and manually rewrite them on a new page.
 
 The Strengths: It’s intentionally tedious. If a task isn’t worth the 10 seconds it takes to rewrite it, it’s not important. You give yourself permission to delete it.
 
-3. The Mental Workspace (The Context)
+1. The Mental Workspace (The Context)
 
 The BuJo was meant to be a "modular" system. Most planners force you into a box (Monday, Tuesday, Wednesday...). Carroll’s system uses an Index and Numbered Pages.
 
@@ -185,4 +185,3 @@ Would you like to see how we could structure a "Migration" protocol in Obsidian 
 Gemini is AI and can make mistakes.
 
 1Password menu is available. Press down arrow to select.
-

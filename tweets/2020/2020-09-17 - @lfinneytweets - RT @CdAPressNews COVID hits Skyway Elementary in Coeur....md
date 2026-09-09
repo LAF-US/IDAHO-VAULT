@@ -16,10 +16,11 @@ related:
   - lfinneytweets
 ---
 
-RT @CdAPressNews: COVID hits Skyway Elementary in Coeur d'Alene 
+RT @CdAPressNews: COVID hits Skyway Elementary in Coeur d'Alene
 <https://t.co/dNVAIVjWzq>
 
 ## Links
+
 - <http://cdapress.com/news/2020/sep/16/covid-hits-skyway-elementary/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1306687453386780672)

@@ -24,6 +24,7 @@ RT @CKomatsoulis: Private schools file suit to challenge ‘government interfere
 <https://t.co/6EYZRuQTDJ>
 
 ## Links
+
 - <https://www.idahostatesman.com/news/politics-government/state-politics/article290422804.html#storylink=cpy>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1816631208631238820)

@@ -17,6 +17,7 @@ related:
 Happy Memorial Day <https://t.co/IqarncFsPu>
 
 ## Links
+
 - <https://x.com/IdahoStatesman/status/1001100788297601024>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1001109892084580353)

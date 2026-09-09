@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @mlcarmel: The Highway 16 extension is going to bring more connectivity, and cars, to western Ada County. 
+RT @mlcarmel: The Highway 16 extension is going to bring more connectivity, and cars, to western Ada County.
 
 To cope, the state gave ACHD…
 

@@ -16,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @Haleaziz: Chair of the House Homeland Security Committee Rep. Thompson: 
+RT @Haleaziz: Chair of the House Homeland Security Committee Rep. Thompson:
 
 “Department of Homeland Security’s involvement in the Trump A…
 

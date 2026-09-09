@@ -23,6 +23,7 @@ related:
 RT @IdahoReports: September 17, 2021, Weekly #IdahoCOVID19 Update | @IdahoPTV <https://t.co/9nZygrTFA7>
 
 ## Media
+
 - ![alt text needed](https://pbs.twimg.com/amplify_video_thumb/1439010024387342338/img/EcmLiZ-CgbD_19_m.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1439012135950958598)

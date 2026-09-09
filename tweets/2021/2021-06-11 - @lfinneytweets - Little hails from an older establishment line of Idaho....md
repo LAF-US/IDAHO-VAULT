@@ -26,6 +26,7 @@ Little hails from an older establishment line of Idaho Republicans. By contrast,
 <https://t.co/rNlL5nhDTD>
 
 ## Links
+
 - <https://politi.co/3vc8iHO>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1403428780933189635)

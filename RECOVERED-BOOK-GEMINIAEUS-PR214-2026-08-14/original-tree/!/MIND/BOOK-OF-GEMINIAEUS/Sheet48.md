@@ -124,7 +124,7 @@ Logan's files are spread across:
 
 | Multiple AI conversation contexts | Handoffs, outputs, zips |
 
-| Outlook (logan.finney@idahoptv.org) | Work email, attachments |
+| Outlook (<logan.finney@idahoptv.org>) | Work email, attachments |
 
 | Google Drive | Unknown scope |
 
@@ -231,4 +231,3 @@ Would you like me to draft the "Gemini ADMIN scope and vault access boundaries" 
 Gemini is AI and can make mistakes.
 
 1Password menu is available. Press down arrow to select.
-

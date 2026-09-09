@@ -14,10 +14,11 @@ related:
   - lfinneytweets
 ---
 
-Any Idaho taxpayers out there who want to buy me $400 of LEGO and a PS5? 
+Any Idaho taxpayers out there who want to buy me $400 of LEGO and a PS5?
 <https://t.co/slLihBZMPT>
 
 ## Links
+
 - <https://popular.info/p/disney-tickets-ps5s-and-big-screen>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1699190098049519874)
