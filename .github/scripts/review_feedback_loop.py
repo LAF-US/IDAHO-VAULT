@@ -156,9 +156,11 @@ AUTO_MERGE_NOT_READY_FRAGMENTS = (
 )
 
 # Single source of truth for the not-ready sentinel note, so the producer
-# (_arm_auto_merge) and the consumer (_build_reconciliation_report, matching
-# on arm_error.startswith(...)) can't silently drift apart if one is edited
-# without the other.
+# (_arm_auto_merge) and the consumer (_build_reconciliation_report, testing
+# `AUTO_MERGE_NOT_READY_NOTE in arm_error`) can't silently drift apart if one is
+# edited without the other. The test is membership, not position: a producer
+# branch withholds the not-ready classification by removing this note from the
+# list, never by arranging for some other note to sort ahead of it.
 AUTO_MERGE_NOT_READY_NOTE = "not yet ready to arm (PR checks unstable); retried next pass"
 
 # _enqueue_pr reports every outright-rejected mutation as (False, str), and those are not
@@ -392,7 +394,19 @@ def _arm_auto_merge(owner: str, repo: str, pr_number: int) -> tuple[bool, str | 
     enabled, queued = _auto_merge_state(owner, repo, pr_number)
     if queued:
         # Already in the queue — re-enqueuing would be a no-op (or an unwanted jump); leave it.
-        return (True, None)
+        if enabled:
+            return (True, None)
+        # Queued WITHOUT auto-merge enabled — the direct-enqueue outcome below, seen again
+        # on a later pass. `queued` alone must not be reported as armed: returning True
+        # here would undo that fix one pass after it applied, because _maybe_arm_auto_merge
+        # then writes `merge/auto`, a state label whose whole purpose is to let the disable
+        # path un-arm the PR, while _disable_auto_merge has no autoMergeRequest to turn
+        # off. Classify it exactly as the in-pass case does, so the same real state reads
+        # the same way whenever it is discovered.
+        return (
+            False,
+            f"{AUTO_MERGE_NOT_READY_NOTE}; already in the merge queue without auto-merge",
+        )
     notes: list[str] = []
     if _merge_state_status(owner, repo, pr_number) == "BEHIND":
         # DIRTY (a real conflict) is a different state and never reaches here, so update-branch
