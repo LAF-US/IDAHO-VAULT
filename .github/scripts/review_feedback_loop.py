@@ -283,7 +283,21 @@ def _auto_merge_state(
         if strict:
             raise
         return (False, False)
-    pull = (data.get("repository") or {}).get("pullRequest") or {}
+    pull = (data.get("repository") or {}).get("pullRequest")
+    if pull is None:
+        # A response with no `pullRequest` node is not an answer about the PR. `_graphql`
+        # raises on GraphQL `errors`, but a payload carrying neither errors nor data
+        # reaches here as `{}` -- `gh` exiting 0 with empty stdout is enough, since
+        # `_run` only raises on a non-zero exit or a timeout. Coercing that to an empty
+        # dict makes `enabled` False, so a strict caller would publish "auto-merge is
+        # now disabled" for a PR whose state was never read: the false state claim
+        # strict mode exists to prevent, reached without any exception being raised.
+        # The default still fails open, unchanged.
+        if strict:
+            raise ValueError(
+                f"GraphQL response carried no pullRequest node for #{pr_number}"
+            )
+        return (False, False)
     enabled = bool((pull.get("autoMergeRequest") or {}).get("enabledAt"))
     queued = bool((pull.get("mergeQueueEntry") or {}).get("id"))
     return (enabled, queued)
@@ -1473,6 +1487,11 @@ def _build_reconciliation_report(
                         # if the process cannot be spawned at all. Uncaught, that aborts
                         # the sweep from inside the handler meant to keep it alive.
                         rollback = f"AND the rollback disable was refused: {rollback_exc}"
+                    # Bound before the try: on the except path the tuple unpack never
+                    # runs, and this name is function-scoped inside a per-PR loop, so
+                    # without this it would hold the PREVIOUS PR's queue state. Nothing
+                    # reads it there today; this keeps that true for the next edit.
+                    still_queued = False
                     try:
                         auto_merge_enabled, still_queued = _auto_merge_state(
                             owner, repo, pr_number, strict=True
@@ -1528,6 +1547,11 @@ def _build_reconciliation_report(
                         # OSError as well as RuntimeError: gh_cli.pr_comment carries the
                         # body through a tempfile.TemporaryDirectory, so a filesystem
                         # failure raises out of this call too and would abort the same way.
+                        # Breadcrumb in `actions` for the same reason the rollback path
+                        # has one: `add:merge/auto` alone would make a promotion that was
+                        # announced nowhere look identical to one that was. The promotion
+                        # itself still stands, and `promoted` still records it.
+                        actions.append("promotion-comment-failed")
                         print(
                             f"::warning::promotion comment failed for #{pr_number}: "
                             f"{comment_exc}",
