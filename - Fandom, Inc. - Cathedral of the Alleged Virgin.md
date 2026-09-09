@@ -31,11 +31,11 @@ When [Lemony Snicket](https://snicket.fandom.com/wiki/Lemony_Snicket "Lemony Sni
 
 - The Cathedral is likely a Catholic Cathedral dedicated to [Mary, mother of Jesus](https://en.wikipedia.org/wiki/Mary,_mother_of_Jesus "wikipedia:Mary, mother of Jesus"), a patron saint in the Catholic religion. Mary is believed by Catholics and Christians to be a virgin who miraculously gave birth to the son of God; the name of "Alleged Virgin" is a skeptical crack at this belief, along with beliefs for alleged "virgin" saints.
 - On the map, footsteps are drawn near the cathedral.
-- A sign pointing to the Cathedral of the Alleged Virgin can be seen in the [V.F.D. tunnels](https://snicket.fandom.com/wiki/V.F.D._tunnels "V.F.D. tunnels") in the Netflix adaptation in (at least) [A Bad Beginning: Part One](https://snicket.fandom.com/wiki/A_Bad_Beginning:_Pa***REMOVED***One "A Bad Beginning: Part One").
+- A sign pointing to the Cathedral of the Alleged Virgin can be seen in the [V.F.D. tunnels](https://snicket.fandom.com/wiki/V.F.D._tunnels "V.F.D. tunnels") in the Netflix adaptation in (at least) [A Bad Beginning: Part One](https://snicket.fandom.com/wiki/A_Bad_Beginning:_Part_One "A Bad Beginning: Part One").
 
 ## Gallery
 
-[![](https://static.wikia.nocookie.net/snicket/images/e/e8/Tuamap.PNG/revision/latest/scale-to-width-down/200?cb=20190912161506 "Tuamap.PNG (6.18 MB)")](https://snicket.fandom.com/wiki/File:Tuamap.PNG "Tuamap.PNG (6.18 MB)")
+[![alt text needed](https://static.wikia.nocookie.net/snicket/images/e/e8/Tuamap.PNG/revision/latest/scale-to-width-down/200?cb=20190912161506 "Tuamap.PNG (6.18 MB)")](https://snicket.fandom.com/wiki/File:Tuamap.PNG "Tuamap.PNG (6.18 MB)")
 
 [![Sign visible on right (S1E01)](https://static.wikia.nocookie.net/snicket/images/b/b6/Vlcsnap-2017-01-22-22h27m47s522.jpg/revision/latest/scale-to-width-down/200?cb=20210208190435 "Vlcsnap-2017-01-22-22h27m47s522.jpg (1.22 MB)")](https://snicket.fandom.com/wiki/File:Vlcsnap-2017-01-22-22h27m47s522.jpg "Vlcsnap-2017-01-22-22h27m47s522.jpg (1.22 MB)")
 

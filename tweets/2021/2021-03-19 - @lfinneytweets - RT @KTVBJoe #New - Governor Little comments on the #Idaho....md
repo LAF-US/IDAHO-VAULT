@@ -1,4 +1,5 @@
 ---
+title: "RT @KTVBJoe #New - Governor Little comments on the #Idaho..."
 date: 2021-03-19
 time: 23:32:12
 tweet_id: "1373054729324879872"

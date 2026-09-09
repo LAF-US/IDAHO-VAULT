@@ -33,7 +33,7 @@ authority: LOGAN
 Six resources returned across three servers. No resource templates returned (empty).
 
 | URI | Name | Server | MIME Type |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | `ui://canva/search-designs` | search-designs-claude | claude.ai Canva | — |
 | `ui://canva/generate-designs` | generate-designs-claude | claude.ai Canva | — |
 | `ui://canva/generate-designs-structured` | generate-designs-structured | claude.ai Canva | — |
@@ -54,7 +54,7 @@ Six resources returned across three servers. No resource templates returned (emp
 Full CRUD available.
 
 | Category | Tools |
-|---|---|
+| --- | --- |
 | Issues | `get_issue`, `list_issues`, `save_issue`, `get_issue_status`, `list_issue_statuses`, `list_issue_labels`, `create_issue_label` |
 | Projects | `get_project`, `list_projects`, `save_project`, `list_project_labels` |
 | Teams | `get_team`, `list_teams` |
@@ -77,7 +77,7 @@ Full CRUD available.
 Read + write.
 
 | Category | Tools |
-|---|---|
+| --- | --- |
 | Read | `slack_read_channel`, `slack_read_thread`, `slack_read_user_profile`, `slack_read_canvas` |
 | Search | `slack_search_channels`, `slack_search_users`, `slack_search_public`, `slack_search_public_and_private` |
 | Write | `slack_send_message`, `slack_send_message_draft`, `slack_schedule_message` |
@@ -90,7 +90,7 @@ Read + write.
 Read-heavy; limited write (draft creation only — no direct send).
 
 | Category | Tools |
-|---|---|
+| --- | --- |
 | Read | `gmail_read_message`, `gmail_read_thread`, `gmail_search_messages`, `gmail_list_labels`, `gmail_list_drafts`, `gmail_get_profile` |
 | Write | `gmail_create_draft` |
 
@@ -101,7 +101,7 @@ Read-heavy; limited write (draft creation only — no direct send).
 Full CRUD.
 
 | Category | Tools |
-|---|---|
+| --- | --- |
 | Read | `gcal_list_calendars`, `gcal_list_events`, `gcal_get_event`, `gcal_find_my_free_time`, `gcal_find_meeting_times` |
 | Write | `gcal_create_event`, `gcal_update_event`, `gcal_delete_event`, `gcal_respond_to_event` |
 
@@ -112,7 +112,7 @@ Full CRUD.
 Full CRUD for files and folders.
 
 | Category | Tools |
-|---|---|
+| --- | --- |
 | Read | `get_file_content`, `get_file_details`, `get_file_preview`, `get_folder_details`, `list_folder_content_by_folder_id`, `list_file_comments`, `list_item_collaborations`, `list_tasks`, `list_metadata_templates`, `get_metadata_template_schema`, `search_files_keyword`, `search_files_metadata`, `search_folders_by_name`, `get_preview_page`, `who_am_i` |
 | Write | `upload_file`, `upload_file_version`, `update_file_properties`, `create_folder`, `update_folder_properties`, `create_file_comment` |
 
@@ -123,7 +123,7 @@ Full CRUD for files and folders.
 Read-only. No write tools.
 
 | Category | Tools |
-|---|---|
+| --- | --- |
 | Identity | `hf_whoami` |
 | Hub | `hf_hub_query`, `hub_repo_search`, `hub_repo_details` |
 | Docs | `hf_doc_search`, `hf_doc_fetch` |
@@ -137,16 +137,16 @@ Read-only. No write tools.
 Full creative CRUD.
 
 | Category | Tools |
-|---|---|
-| Read | `get_design`, `get_design_content`, `get_design_pages`, `get_design_thumbnail`, `get_assets`, `get_expo***REMOVED***formats`, `get_presenter_notes`, `list_comments`, `list_replies`, `list_brand_kits`, `list_folder_items`, `search_designs`, `search_folders`, `resolve_shortlink`, `expo***REMOVED***design` |
-| Write | `generate_design`, `generate_design_structured`, `create_design_from_candidate`, `resize_design`, `impo***REMOVED***design_from_url`, `create_folder`, `move_item_to_folder`, `upload_asset_from_url`, `comment_on_design`, `reply_to_comment`, `sta***REMOVED***editing_transaction`, `commit_editing_transaction`, `cancel_editing_transaction`, `perform_editing_operations`, `request_outline_review` |
+| --- | --- |
+| Read | `get_design`, `get_design_content`, `get_design_pages`, `get_design_thumbnail`, `get_assets`, `get_export_formats`, `get_presenter_notes`, `list_comments`, `list_replies`, `list_brand_kits`, `list_folder_items`, `search_designs`, `search_folders`, `resolve_shortlink`, `export_design` |
+| Write | `generate_design`, `generate_design_structured`, `create_design_from_candidate`, `resize_design`, `import_design_from_url`, `create_folder`, `move_item_to_folder`, `upload_asset_from_url`, `comment_on_design`, `reply_to_comment`, `start_editing_transaction`, `commit_editing_transaction`, `cancel_editing_transaction`, `perform_editing_operations`, `request_outline_review` |
 
 ---
 
 ## Workflow Mapping
 
 | Server | Target IDAHO-VAULT workflow | Support status | Notes |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **Linear** | SWARM task management, issue tracking, agent coordination | ✅ Supported | Full CRUD; cleanest idempotency path via `id` fields; already the coordination backbone |
 | **Slack** | Agent breadcrumbs, Logan notifications, status updates | ✅ Supported | Read + write; `send_message_draft` allows dry-run equivalent |
 | **Gmail** | Source outreach tracking, press release ingestion, tip intake | ⚠️ Partial | Read + search fully supported; write limited to draft creation (no direct send — appropriate for Phase 1 safety) |
@@ -160,7 +160,7 @@ Full creative CRUD.
 ## Capability Gap Register
 
 | Gap | Impact | Provisional mitigation | Priority |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | MCP resource layer is UI-only (no data resources exposed) | Low — all actual capability is in tools, not resources | Treat tool inventory as the functional surface; resource layer is irrelevant for IDAHO-VAULT workflows | Low |
 | Gmail: no direct send (draft-only) | Low for Phase 1 — draft creation is sufficient and safer | Create drafts; Logan reviews and sends manually | Low |
 | Canva: no identified workflow | Low | Defer; no active story graphics automation in scope | Low |
@@ -173,7 +173,7 @@ Full creative CRUD.
 ## Phase 0 Exit Criteria — Status
 
 | Criterion | Status |
-|---|---|
+| --- | --- |
 | Resource inventory completed and stored | ✅ Complete (this document) |
 | Template inventory completed and stored | ✅ Complete (none returned) |
 | Capability gap register created and reviewed | ✅ Complete |
@@ -195,6 +195,7 @@ Full creative CRUD.
 5. **Clear scope boundary** — Phase 1 scope: issue creation, status updates, and comment saves on SWARM-labeled issues only. No project/initiative writes until Phase 2.
 
 **Phase 1 entry criteria items to resolve before Gate 0→1:**
+
 - Define idempotency key strategy: generate `idempotency_key = hash(agent_id + task_scope + timestamp_day)`, store in vault, replay behavior = skip if key already used
 - Validate dry-run behavior: dry-run = log the intended operation to vault without calling `save_issue`/`save_comment`
 - Document operator checklist for enabling/disabling live writes
@@ -209,4 +210,6 @@ Recommend proceeding to Phase 1 planning once Logan reviews this document and ap
 
 ---
 
-###### "The world is quiet here."
+```text
+The world is quiet here．Esto Perpetua!
+```

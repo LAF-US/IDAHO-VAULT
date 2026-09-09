@@ -1,4 +1,5 @@
 ---
+title: "RT @TheIdahoPress As a reporter, it is certainly unusual..."
 date: 2021-07-18
 time: 05:25:56
 tweet_id: "1416630293713154052"

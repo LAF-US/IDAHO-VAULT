@@ -13,9 +13,10 @@ related:
   - lfinneytweets
 ---
 
-“I’m not familiar with any other tree that exists in the United States that can trace its provenance to being germinated in an internment camp during the war,” the museum’s curator says. https://t.co/RGm6TFJ5ZO
+“I’m not familiar with any other tree that exists in the United States that can trace its provenance to being germinated in an internment camp during the war,” the museum’s curator says. <https://t.co/RGm6TFJ5ZO>
 
 ## Links
-- https://x.com/OPB/status/1227663912272830465
+
+- <https://x.com/OPB/status/1227663912272830465>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1227665028368814085)

@@ -1,4 +1,5 @@
 ---
+title: "Rep. Hartgen says despite the virus, life is slowly..."
 date: 2020-08-25
 time: 01:19:12
 tweet_id: "1298067370800345088"

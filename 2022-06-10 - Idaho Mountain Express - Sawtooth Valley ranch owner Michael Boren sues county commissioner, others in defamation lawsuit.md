@@ -76,7 +76,7 @@ Boren has also requested a jury trial to recover damages “equal to the amounts
 “Left with no options, Boren has resolved to repair his reputation in the courts," Banducci wrote.
 
 Boren doubles down on previous claims
-Since last spring, Boren has asserted that he has a right through Idaho’s Right to Farm Act to use his landing strip for agricultural purposes and that his opponents have no proof that his helicopter use was for other than agricultural purposes. He has also repeatedly stressed that the pasture on his property could be useful in emergency circumstances for ailing planes or air ambulance landings. 
+Since last spring, Boren has asserted that he has a right through Idaho’s Right to Farm Act to use his landing strip for agricultural purposes and that his opponents have no proof that his helicopter use was for other than agricultural purposes. He has also repeatedly stressed that the pasture on his property could be useful in emergency circumstances for ailing planes or air ambulance landings.
 
 Over a year ago—on May 6, 2021—the Custer County Planning and Zoning commissioners approved Boren’s permit for his private airstrip under the condition that it would be used for “limited” personal and emergency flights and would not expand in the future. The Custer County Commissioners later upheld that decision in a 3-0 vote in August.
 
@@ -92,10 +92,10 @@ Boren also refuted claims made in letters to the commission that his pasture lan
 
 “But I’m not one of those people. The way I do (ranching), I need (the helicopter),” he said.
 
-According to flight-tracking site FlightAware, the landing area on Boren's property—listed as “ID39” “Hell Roaring Ranch Airport”—was used for a round-trip between Hailey and Hell Roaring Ranch on June 2. 
+According to flight-tracking site FlightAware, the landing area on Boren's property—listed as “ID39” “Hell Roaring Ranch Airport”—was used for a round-trip between Hailey and Hell Roaring Ranch on June 2.
 
 Op-ed, livestream targeted in lawsuit
-According to the lawsuit, Boren is also suing Gadwa, the commander of Sawtooth Search and Rescue and former president of the Sawtooth Interpretive and Historical Association, for his role in the opposition group. 
+According to the lawsuit, Boren is also suing Gadwa, the commander of Sawtooth Search and Rescue and former president of the Sawtooth Interpretive and Historical Association, for his role in the opposition group.
 
 In August 2021, Gadwa wrote in an opinion piece published in the Idaho Falls Post Register that Boren had lied to regulators about fixing irrigation on his pasture “when it was obvious that he had graded an airstrip.”
 
@@ -103,13 +103,13 @@ The piece, “Speak Up to Save Sawtooths from Illegal Airport"—co-authored by 
 
 “Michael Boren, a multi-millionaire from Boise, is illegally operating an airport in the Sawtooth Valley without permits. Under Custer County Code, an airstrip is defined as an airport,” they wrote. "Not only is he out of compliance with his scenic easement, but he also neglected to register with the Federal Aviation Administration 90 days before beginning construction of a private airstrip. He failed to meet the requirements of the Clean Water Act for 2,000 gallons of fuel stored in proximity to the Salmon River, and never filed a notice of intent or underwent evaluation and proper mitigation necessary before bulldozing potential wetlands."
 
-Gadwa also noted in the piece that public airports are located in Stanley to the north and Smiley Creek, within 15 miles of Boren’s property, and Boren's landing strip had little benefit to the public. 
+Gadwa also noted in the piece that public airports are located in Stanley to the north and Smiley Creek, within 15 miles of Boren’s property, and Boren's landing strip had little benefit to the public.
 
 “Air ambulance helicopters can land just about anywhere … arguments that [the airstrip] is needed for public safety are moot,” the piece stated.
 
 Boren is partly suing Conti for defamation over comments made during a livestream of his YouTube video, according to the lawsuit.
 
-“In advance of his presentation, Conti promised his viewers that their ‘blood [would] boil’ upon hearing what Conti had to say about the ‘billionaire a--hole’ who had ‘illegally’ constructed an airport on his ranch property. Conti also advertised the presentation with a picture of Boren with the word ‘hole’ in bold red letters and a bold red arrow pointing at Boren," Banducci stated. 
+“In advance of his presentation, Conti promised his viewers that their ‘blood [would] boil’ upon hearing what Conti had to say about the ‘billionaire a--hole’ who had ‘illegally’ constructed an airport on his ranch property. Conti also advertised the presentation with a picture of Boren with the word ‘hole’ in bold red letters and a bold red arrow pointing at Boren," Banducci stated.
 
 The suit further claims that Conti also falsely stated in his video that Boren had flown his helicopter "illegally" and "intimidated" construction workers who were building a public Forest Service trail.
 
@@ -117,4 +117,4 @@ The suit further claims that Conti also falsely stated in his video that Boren h
 
 Boren "graciously" invited Conti to his airstrip "to get the other side of the story," the lawsuit continues, but Conti refused "and threatened ... that if Boren did not pay him $100,000, Conti would continue to circulate the defamatory YouTube presentation."
 
-“This, perhaps more than anything else, demonstrates Conti’s malice," Banducci stated. 
+“This, perhaps more than anything else, demonstrates Conti’s malice," Banducci stated.

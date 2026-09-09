@@ -1,4 +1,5 @@
 ---
+title: "A House committee has printed a resolution that would..."
 date: 2020-08-24
 time: 17:31:13
 tweet_id: "1297949597273174016"

@@ -1,4 +1,5 @@
 ---
+title: "RT @nytimes Voting machine companies are threatening..."
 date: 2020-12-21
 time: 03:27:20
 tweet_id: "1340861382774779904"

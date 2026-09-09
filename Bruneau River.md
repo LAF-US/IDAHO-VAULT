@@ -4,4 +4,4 @@ related:
 - Owyhee County
 authority: LOGAN
 ---
-river in Owyhee County 
+river in Owyhee County

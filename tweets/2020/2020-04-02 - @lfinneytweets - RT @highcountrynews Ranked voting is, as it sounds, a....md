@@ -1,4 +1,5 @@
 ---
+title: "RT @highcountrynews Ranked voting is, as it sounds, a..."
 date: 2020-04-02
 time: 16:40:27
 tweet_id: "1245752971335356417"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @highcountrynews: Ranked voting is, as it sounds, a voting system in which people rank their choices for the best candidate. 
+RT @highcountrynews: Ranked voting is, as it sounds, a voting system in which people rank their choices for the best candidate.
 
 Benton Co…
 

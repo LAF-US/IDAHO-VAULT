@@ -15,6 +15,6 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoStatesman: "Since no state has been designated as the gold standard of public defense, it makes it even more difficult.” https://t…
+RT @IdahoStatesman: "Since no state has been designated as the gold standard of public defense, it makes it even more difficult.” <https://t…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/982017521787158528)

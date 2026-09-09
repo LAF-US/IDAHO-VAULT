@@ -1,4 +1,5 @@
 ---
+title: "RT @uiargonaut The University of Idaho and the Latah County..."
 date: 2020-02-24
 time: 00:14:30
 tweet_id: "1231734108696371201"

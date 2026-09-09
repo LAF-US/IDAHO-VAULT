@@ -150,9 +150,10 @@ related:
 - courthouses
 authority: LOGAN
 ---
-counties courthouses 
+counties courthouses
 
 # Counties - Cities
+
 - Ada County Courthouse - Boise
 - Adams County Courthouse - Council
 - Bannock County Courthouse - Pocatello
@@ -196,4 +197,4 @@ counties courthouses
 - Teton County Courthouse - Driggs
 - Twin Falls County Courthouse - Twin Falls
 - Valley County Courthouse - Cascade
-- Washington County Courthouse - Weiser 
+- Washington County Courthouse - Weiser

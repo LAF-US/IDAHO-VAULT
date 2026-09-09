@@ -1,4 +1,5 @@
 ---
+title: "RT @pewresearch NEW Republicans and Democrats increasingly..."
 date: 2020-06-25
 time: 19:26:37
 tweet_id: "1276235366907826176"

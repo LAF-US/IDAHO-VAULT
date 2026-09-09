@@ -2,11 +2,11 @@
 jupyter:
   jupytext:
     formats: ipynb,md
+    notebook_metadata_filter: -jupytext.text_representation.jupytext_version
     text_representation:
       extension: .md
       format_name: markdown
       format_version: '1.3'
-      jupytext_version: 1.19.4
   kernelspec:
     display_name: Python 3
     language: python

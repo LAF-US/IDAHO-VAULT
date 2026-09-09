@@ -1,4 +1,5 @@
 ---
+title: "RT @SCOTUSblog Here\u2019s the statement from President Carter,..."
 date: 2020-09-19
 time: 18:00:27
 tweet_id: "1307379037623316481"

@@ -1,4 +1,5 @@
 ---
+title: "RT @westgov All across the West, Governors are working..."
 date: 2020-05-26
 time: 21:31:00
 tweet_id: "1265395033290620930"

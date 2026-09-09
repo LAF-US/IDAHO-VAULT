@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoStatesman Boise Pride Festival responds to their..."
 date: 2021-06-19
 time: 03:36:13
 tweet_id: "1406093433542897665"

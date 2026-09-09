@@ -69,5 +69,3 @@ Cadaverous Gant takes control of the abandoned Midnight Hotel and turns into a v
 ## References
 
 [^1]: [https://twitter.com/DerekLandy/status/971542821277708289](https://twitter.com/DerekLandy/status/971542821277708289)
-
-[^2]: The Skulduggery Pleasant Grimoire

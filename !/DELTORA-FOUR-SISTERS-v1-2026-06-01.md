@@ -76,6 +76,7 @@ the instrument of its death, and made the cure into the catastrophe.
 ## The Doctrine
 
 ### 1. The defeated adversary's distributed slow-kill long game
+
 You won. You drove the enemy out. The land starts dying later — because the
 evicted adversary did **not** stop at defeat: he ran a **post-defeat long game**,
 returning to plant the payload as a fresh campaign against the realm he had lost.
@@ -89,6 +90,7 @@ this harm was **introduced after your victory**, not before it. Ask, after every
 eviction, *what are they doing now to re-enter and re-seed?*
 
 ### 2. The harm is ambient, gradual, and misattributed
+
 The song does not strike; it **withers.** Crops fail a little more each season;
 people blame weather, blight, bad luck — anything but a hidden artifact singing
 in the corners. The damage is everywhere and attributable to nothing.
@@ -100,6 +102,7 @@ or quality bleeding out — experienced as "things are just getting worse," not 
 failing" to "the system is **being failed**, on purpose, from seeded sources."
 
 ### 3. All-or-nothing for *full* eradication — three of four is still famine
+
 Destroy three Sisters and the land is **not yet saved**; the remaining one keeps
 the kingdom in blight. Each removal *does* heal its own land (see #7), so partial
 clearing reduces the blast radius — but the **complete** cure, and the safety to
@@ -113,6 +116,7 @@ remediated most of them" is not *full* remediation. Enumerate the full set
 finished job, and remember the final clearing is also the trap (see #5).
 
 ### 4. Matched counters — the right instrument per node
+
 Each Sister falls only to **its** dragon — Topaz, Ruby, Emerald, Amethyst, each
 in its own territory. A generic blade does not work; the heterogeneous nodes
 need heterogeneous, **matched** remediations.
@@ -123,6 +127,7 @@ specialist tool. Inventory not just *where* the nodes are but *what each one
 specifically requires* to clear.
 
 ### 5. THE TRAP — the remediation is the trigger
+
 This is the heart of the node. The enemy **anticipated that you would destroy
 the Sisters**, and made their destruction the **activation** of the real doom.
 The thing poisoning you was *also* the thing keeping something worse asleep.
@@ -138,6 +143,7 @@ what does un-sealing release?) fused into one object — **the poison and the se
 are the same artifact.**
 
 ### 6. Escalate the moment the payload appears — and have a vault-hardening rule to stage it earlier
+
 In canon the order is **post-trigger**: the last Sister falls, the Grey Death
 rises, and only *then* is the final dragon awakened and **all seven** brought to
 bear. The secondary payload **summons its own response after the detonator
@@ -154,6 +160,7 @@ full force *before* the last clearing step so that "remove the artifact" and
 trigger and response is where the system dies.
 
 ### 7. The mercy — clearing the source reverses the harm
+
 Each Sister destroyed, the land heals at once. The blight was **maintained, not
 permanent** — sustained damage, not a scar. Find and clear the source and the
 recovery is immediate.
@@ -204,4 +211,8 @@ your cure unseals, and be ready to escalate to full force the moment it triggers
 7. **Maintained or permanent?** If clearing a node heals instantly, the harm was
    being held in place — keep going. If it scars, plan aftercare.
 
-###### [["The world is quiet here."]]
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

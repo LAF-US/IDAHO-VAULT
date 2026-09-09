@@ -1,4 +1,5 @@
 ---
+title: "The advertisements on this story..."
 date: 2022-05-16
 time: 20:32:33
 tweet_id: "1526299586452631552"
@@ -13,10 +14,11 @@ related:
   - lfinneytweets
 ---
 
-@salsuppe The advertisements on this story... https://t.co/d9VwQX7X1t
+@salsuppe The advertisements on this story... <https://t.co/d9VwQX7X1t>
 
 ## Media
-- ![](https://pbs.twimg.com/media/FS6BO35UEAAioWv.jpg)
-- ![](https://pbs.twimg.com/media/FS6BO36UsAA0lHT.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/FS6BO35UEAAioWv.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/FS6BO36UsAA0lHT.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1526299586452631552)

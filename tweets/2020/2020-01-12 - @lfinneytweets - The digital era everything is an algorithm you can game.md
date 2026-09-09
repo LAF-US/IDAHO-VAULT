@@ -1,4 +1,5 @@
 ---
+title: "The digital era everything is an algorithm you can game"
 date: 2020-01-12
 time: 20:32:54
 tweet_id: "1216458050900353025"

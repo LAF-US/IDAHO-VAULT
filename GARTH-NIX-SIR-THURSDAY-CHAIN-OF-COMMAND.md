@@ -37,18 +37,23 @@ The scene is supplied without a chapter/book label; the identification below (*S
 ## Structural Observations
 
 ### The Ephemeris absorbs, it does not argue
+
 The verification surface Nage actually has — his Ephemeris — is procedural, not substantive. A correctly-formatted, correctly-signed page sinks in and becomes policy; the book has no mechanism for asking *why*. Authenticity is checked by asking a person (Lepter, Noon), never by interrogating the order itself.
 
 ### Doctrine answers the anomaly instead of investigating it
+
 Twice, a genuinely unprecedented observation — organized Nithlings — is met not with investigation but with a confident restatement of prior doctrine: Pravuil's "incapable of organization," Lepter's "tectonic strategy." Both explanations are fluent, institutionally consistent, and wrong. Nage's subordinate, Corbie, is the one who actually looked; the two men above Nage in rank explain the observation away without looking at all.
 
 ### Escalation is necessary and insufficient
+
 Nage does the right procedural thing — twice — and it does not save him. The order was never a forgery at any step: Lepter and Noon are both exercising their own genuine authority, relaying what Sir Thursday, commander of the Glorious Army of the Architect, actually wants. The chapter's tension is exactly that correct escalation through a real chain of command is not the same thing as the order being wise; authenticity and correctness are different questions, and the chain only answers the first one.
 
 ### Compliance plus local defense are not contradictory
+
 Nage's last act in the excerpt is neither obedience nor mutiny: he follows the literal order (he does not countermand the open-gates instruction) and, in the same breath, exercises every bit of judgment that is actually his to exercise — garrison preparations Sir Thursday's dispatch never mentioned and never forbade.
 
 ### The order is Wrath wearing the shape of a test
+
 The vault's own crosswalk names Sir Thursday's seat "Master of Laws" — justice-as-force, the law's coercive arm — and his corrupting sin as Wrath (`THE-SEVENFOLD-BODY-SEATS-TRUSTEES-GEMS-2026-06-03.md`). "To really test the lads" is that sin in miniature: an army commander spending an understrength garrison's margin of safety to prove a point to himself, dressed as routine readiness doctrine. The order costs Nage nothing to obey and everything to be wrong about — which is exactly the asymmetry Wrath produces when it sits at the top of a chain of command instead of the bottom.
 
 ---
@@ -70,10 +75,12 @@ The vault's own crosswalk names Sir Thursday's seat "Master of Laws" — justice
 ## Connections to Other Frameworks
 
 ### [[GARTH-NIX-SUPERIOR-SATURDAY-TOWER]]
+
 - **Connection**: both scenes are about institutions that answer a real, disqualifying anomaly with doctrine instead of investigation — Saturday's Dusk suppresses his frown; Pravuil and Lepter voice theirs confidently and are believed
 - **Contrast**: Saturday's court has no working chain-of-command check at all (only the sealed conviction of the Sovereign at the top); Thursday's Army has one, uses it correctly, verifies the order is entirely genuine — and that verification still doesn't spare Nage's garrison, because authenticity was never the risk. A harder case for what escalation can actually guarantee.
 
 ### [[GARTH-NIX-OLD-KINGDOM-BLOODLINES]]
+
 - **Connection**: both frameworks separate legitimate standing from its exercise — a bloodline or a Trustee's chain of command can be entirely real and still produce a bad outcome without the work of actually attending to what's in front of it
 - **Parallel**: "having the bloodline doesn't mean anything if you don't do the work" (Old Kingdom) reads the same as "having genuine command doesn't make the order wise if the men who confirmed it never looked at the ground truth themselves" (Sir Thursday)
 
@@ -82,6 +89,7 @@ The vault's own crosswalk names Sir Thursday's seat "Master of Laws" — justice
 ## Fact-Check Status
 
 **Sources, by tier:**
+
 - *Primary canon* — the supplied excerpt (two messages, 2026-07-04): all quoted phrases and plot facts above (the Ephemeris mechanism, Pravuil's dispatch, the Nithling host's size, Lepter's and Noon's confirmations, Nage's closing orders) are from that text
 - *Series/book identification* — that this is *Sir Thursday* (Keys to the Kingdom #4, 2006) was initially model-memory identification, **not confirmed by Logan this session** at time of writing. It is now corroborated by three independent, previously web-verified vault-canon documents already on record before this note existed: `RESEARCH_Keys-to-the-Kingdom-The-Morrow-Days-and-Demesnes-2026-06-04.md` (Sir Thursday, Fourth Key, the Great Maze, Wrath, "Glorious Army of the Architect," the Boundary Fort's fixed strongpoints), `THE-SEVENFOLD-BODY-SEATS-TRUSTEES-GEMS-2026-06-03.md` (the "Master of Laws"/justice-as-force crosswalk), and `THE-SEVENFOLD-DEMESNES-AND-THEIR-DUTIES-2026-06-21.md` (the Great Maze's mountain-wall tunnel and its four named gates — Gold, Silver, Bronze, Clear/Immaterial Glass — worked from the Boundary Fort, citing "Sir Thursday, bk 4" by name). The **institutional facts** (Boundary Fort, Great Maze, the four gates, Glorious Army of the Architect, book #4) are corroborated by this independent prior sourcing. The **scene's specific content** — Nage, Pravuil, Lepter, Noon, the Ephemeris mechanism, the 200,000-strong Nithling host — is not described in any of those three catalogue documents and remains sourced only to the excerpt Logan supplied in-session
 - *Witness interpretation* — the PR #721 / batch-arm-merge-queue parallels, warranted by Logan naming "CHAIN OF COMMAND witness," anchored to this session's own record (PR #721, PR #748, workflow run `28716224975` on `batch-arm-merge-queue.yml`, session `session_01SfreowpdMionR3SiGEjRBw`); explicitly not canon and not attributed to Garth Nix

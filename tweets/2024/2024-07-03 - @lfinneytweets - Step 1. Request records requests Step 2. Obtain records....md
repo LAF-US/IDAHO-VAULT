@@ -1,4 +1,5 @@
 ---
+title: "Step 1. Request records requests Step 2. Obtain records..."
 date: 2024-07-03
 time: 05:31:40
 tweet_id: "1808373019263619232"
@@ -18,13 +19,14 @@ related:
 ---
 
 @gookin_pol @danielwinvw Step 1. Request records requests
-Step 2. Obtain records requests 
+Step 2. Obtain records requests
 Step 3. ?????
-Step 4. Profit 
-https://t.co/DEFVEQGHPk
+Step 4. Profit
+<https://t.co/DEFVEQGHPk>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2021/08/12/analysis-are-ethics-complaint-responses-subject-to-public-disclosure/
+
+- <https://blog.idahoreports.idahoptv.org/2021/08/12/analysis-are-ethics-complaint-responses-subject-to-public-disclosure/>
 
 *In reply to [@gookin_pol](https://twitter.com/gookin_pol)*
 

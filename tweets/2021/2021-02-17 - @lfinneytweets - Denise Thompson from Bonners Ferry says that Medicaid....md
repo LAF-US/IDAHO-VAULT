@@ -1,4 +1,5 @@
 ---
+title: "Denise Thompson from Bonners Ferry says that Medicaid..."
 date: 2021-02-17
 time: 16:49:02
 tweet_id: "1362081634242060289"

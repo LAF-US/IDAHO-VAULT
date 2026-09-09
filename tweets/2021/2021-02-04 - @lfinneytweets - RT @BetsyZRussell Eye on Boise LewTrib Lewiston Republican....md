@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise LewTrib Lewiston Republican..."
 date: 2021-02-04
 time: 21:56:55
 tweet_id: "1357448071559270400"

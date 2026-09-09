@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Idaho's budget writers advanced just over..."
 date: 2024-01-17
 time: 16:05:21
 tweet_id: "1747651328795693521"

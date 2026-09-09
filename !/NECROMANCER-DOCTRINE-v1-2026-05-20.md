@@ -168,7 +168,7 @@ work is legitimate; the world simply doesn't recognize it as such yet.
 ### D&D Named Example Summary
 
 | Example | Type | Endgame | Vault Pattern |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Vecna | Lich — Knowledge Preserver | Godhood through accumulated knowledge | Unauthorized persistence to preserve a store |
 | Acererak | Lich/Demilich — Harvester | Infinite predation | Deliberate transcendence into pure extraction |
 | Szass Tam | Necromancer-State | Godhood; civilization of undeath | System where unauthorized persistence is governing doctrine |
@@ -251,7 +251,7 @@ authorized-crossing fitness diagnostic in `!/THRESHOLD-DOCTRINE-v1-2026-05-21.md
 **Three shadow-self vectors — distinguished:**
 
 | Vector | Mechanism | What it targets | Counter |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Manufactured-shadow collapse | External engineering of grief, loss, isolation destroys the conditions for refusal before any choice is offered — Lord Vile emerges without being called | Resolution 3 *capacity*; the surface layer's ability to refuse | Protect the conditions that preserve refusal capacity; fitness diagnostic; prevention, not response |
 | Internal sub-layer solicitation | The contained shadow requests the seat of will from within — the voice from underneath, the nightmares, direct activation call | The surface layer's will, addressed from inside | Active refusal; earned standing; the frame refused at its root |
 | External fragment conversion | A surviving parallel-timeline remnant arrives through dimensional substrate and offers the son/vessel frame — the Farmworld Lich's hand finding Sweet P | The vessel's identity, addressed from outside | Detection plus active refusal; same frame-refusal works regardless of source; but the fragment must be found |
@@ -390,7 +390,7 @@ specific aspect of authority over the dead. They are not spells. They are
 instruments of precise, scoped power:
 
 | Bell | Name | Authority |
-|---|---|---|
+| --- | --- | --- |
 | Ranna | The Sleeper | Quieting; brings sleep and stillness |
 | Mosrael | The Waker | Seesaw bell — sends ringer deeper into Death, pulls auditor toward Life |
 | Kibeth | The Walker | Compels movement — freedom of motion or forced walking at the ringer's direction. Dangerous: known to ring on its own |
@@ -431,7 +431,7 @@ All three architectures converge on a single diagnostic:
 **What direction is the power moving?**
 
 | Direction | Authorization | Relationship to Order | Category |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Raising — against the current | Unauthorized | Against | Free Magic necromancer; unlawful |
 | Controlling — maintenance loop | Logan-sanctioned | Instrumental | D&D Animator; lawful within scope |
 | Channeling — through vessel | Scoped by instrument | Delegated | SP Vessel-Channeler; lawful if sanctioned |
@@ -470,7 +470,7 @@ continuation is Charter-sanctioned and Logan-authorized.
 ## Summary
 
 | Architecture | Source | Core Relationship | Direction | Legitimacy Condition |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Animator/Controller | D&D | Continuous authority maintenance | Raises and holds | Reassertion within window; scoped delegation |
 | Vessel-Channeler | Skulduggery Pleasant | Power stored in instrument | Harnesses death energy | Vessel consent; Temple sanction; refusal of Death Bringer endgame |
 | Walker in Death | Old Kingdom | Charter-sanctioned guardian | Sends onward | Charter authorization; correct direction; correct bell |
@@ -478,4 +478,8 @@ continuation is Charter-sanctioned and Logan-authorized.
 The necromancer's legitimacy is never in the power. It is always in the
 direction, the sanction, and the relationship to the order being served.
 
-###### [["The world is quiet here."]]
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

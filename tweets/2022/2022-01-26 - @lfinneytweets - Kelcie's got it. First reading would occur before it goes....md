@@ -1,4 +1,5 @@
 ---
+title: "Kelcie's got it. First reading would occur before it goes..."
 date: 2022-01-26
 time: 22:16:58
 tweet_id: "1486463197741674499"

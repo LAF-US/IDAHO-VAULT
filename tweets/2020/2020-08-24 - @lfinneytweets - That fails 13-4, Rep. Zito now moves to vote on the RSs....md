@@ -1,4 +1,5 @@
 ---
+title: "That fails 13-4, Rep. Zito now moves to vote on the RSs..."
 date: 2020-08-24
 time: 18:03:34
 tweet_id: "1297957738681524224"

@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio .@IdahoLabor says new initial claims for..."
 date: 2020-08-06
 time: 16:07:33
 tweet_id: "1291405560256970754"

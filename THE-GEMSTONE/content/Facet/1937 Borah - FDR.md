@@ -7,5 +7,5 @@ date: 1937-09-27
 
 ---
 
-- [[1937 FDR - Boise Motorcade]] 
-- [[1937 FDR - Boise Speech]] 
+- [[1937 FDR - Boise Motorcade]]
+- [[1937 FDR - Boise Speech]]

@@ -1,4 +1,5 @@
 ---
+title: "RT @jjsaldana Census worker's family files complaint after..."
 date: 2020-08-08
 time: 06:07:30
 tweet_id: "1291979329627250688"
@@ -15,6 +16,6 @@ related:
   - lfinneytweets
 ---
 
-RT @jjsaldana: Census worker's family files complaint after 'intimidating' encounter with Canyon County homeowner, deputies https://t.co/4i…
+RT @jjsaldana: Census worker's family files complaint after 'intimidating' encounter with Canyon County homeowner, deputies <https://t.co/4i…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1291979329627250688)

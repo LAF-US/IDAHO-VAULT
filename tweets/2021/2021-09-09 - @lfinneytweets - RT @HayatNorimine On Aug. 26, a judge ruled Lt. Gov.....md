@@ -1,4 +1,5 @@
 ---
+title: "RT @HayatNorimine On Aug. 26, a judge ruled Lt. Gov...."
 date: 2021-09-09
 time: 21:13:08
 tweet_id: "1436075222772322306"

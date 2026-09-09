@@ -1,4 +1,5 @@
 ---
+title: "RT @CongMikeSimpson I enjoyed visiting with the Idaho Grain..."
 date: 2023-02-02
 time: 22:26:26
 tweet_id: "1621273867342979072"

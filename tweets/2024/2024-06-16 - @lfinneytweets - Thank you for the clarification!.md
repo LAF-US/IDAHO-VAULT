@@ -1,4 +1,5 @@
 ---
+title: "Thank you for the clarification!"
 date: 2024-06-16
 time: 07:48:03
 tweet_id: "1802246748787949781"

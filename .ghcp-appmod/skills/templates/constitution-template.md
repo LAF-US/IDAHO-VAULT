@@ -50,7 +50,7 @@ REWRITE: New project with business logic extraction
 <!-- REWRITE mode only - Remove this section if using UPGRADE mode -->
 
 | Component | Target Version | Notes |
-|-----------|---------------|-------|
+| ----------- | --------------- | ------- |
 | JDK | [JDK_VERSION] | e.g., 21 |
 | Framework | [FRAMEWORK_VERSION] | e.g., Spring Boot 3.2.x |
 | Build Tool | [BUILD_TOOL] | e.g., Maven 3.9.x |

@@ -1,4 +1,5 @@
 ---
+title: "RT @CynthiaSewell .@SenatorRisch office statement on family..."
 date: 2018-06-20
 time: 01:14:38
 tweet_id: "1009243089813233664"

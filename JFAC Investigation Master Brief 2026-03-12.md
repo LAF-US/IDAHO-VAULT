@@ -42,6 +42,7 @@ This is the compiled master research brief for the JFAC Working Groups open-meet
 ## Open Items as of March 12, 2026
 
 ### Interviews Still Needed
+
 - Scott Grow and Josh Tanner — co-chairs; CCA letter recipients; which rule authorizes working groups; whether public can attend; joint rule adoption status
 - Denise Woodward — procedural objections pattern; March 7, 2025 near-challenge; Herndon primary context
 - Mark Harris — elaborate on March 9 dissolution call; legal concerns; others sharing his view privately
@@ -54,14 +55,17 @@ This is the compiled master research brief for the JFAC Working Groups open-meet
 - Judy Boyle — as floor member, how does she find out what working groups decided before the public vote
 
 ### Records Requests Pending
+
 - Pre-removal JFAC rules — request from Keith Bybee / LSO as public records
 - Lent's 2026 status — named as working group co-chair on official schedule but not on voting roster [UNVERIFIED]
 - H753 (ACT bill) sponsor list — confirm Fuhriman's specific role
 
 ### Deadline
+
 ~March 18, 2026 — statutory response deadline for CCA letter. Silence = denial.
 
 ### Factual Gaps [UNVERIFIED]
+
 - Dustin Manwaring title transition: did he formally move to Asst. Majority Leader after Dixon's September 2024 departure, or return directly to rank-and-file?
 - Whether any joint rule resolution was introduced in the 2026 session proper (beyond December 2025 non-adoption)
 - "Moyle's Loyals" — not a documented published term; treat as informal until sourced or retire

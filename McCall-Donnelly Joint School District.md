@@ -5,4 +5,4 @@ related:
 - Valley County
 authority: LOGAN
 ---
-McCall/Donnelly, Valley County 
+McCall/Donnelly, Valley County

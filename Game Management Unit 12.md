@@ -4,4 +4,4 @@ related:
 - Idaho County
 authority: LOGAN
 ---
-northeastern Idaho County 
+northeastern Idaho County

@@ -1,4 +1,5 @@
 ---
+title: "Redoing link in case that one's broken"
 date: 2021-02-06
 time: 07:29:26
 tweet_id: "1357954541543596032"
@@ -18,11 +19,12 @@ related:
   - lfinneytweets
 ---
 
-@SurelySherly6 @hmaboi @IdahoReports Redoing link in case that one's broken 
-https://t.co/0yAfYaTpcx
+@SurelySherly6 @hmaboi @IdahoReports Redoing link in case that one's broken
+<https://t.co/0yAfYaTpcx>
 
 ## Links
-- https://lso.legislature.idaho.gov/MediaArchive/MainMenu.do
+
+- <https://lso.legislature.idaho.gov/MediaArchive/MainMenu.do>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

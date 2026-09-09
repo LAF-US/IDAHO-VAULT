@@ -1,4 +1,5 @@
 ---
+title: "Per a spokesperson, capacity limits apply to spectators but..."
 date: 2020-10-27
 time: 19:10:59
 tweet_id: "1321167526789672961"

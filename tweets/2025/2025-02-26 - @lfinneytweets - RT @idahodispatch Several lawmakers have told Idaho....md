@@ -1,4 +1,5 @@
 ---
+title: "RT @idahodispatch Several lawmakers have told Idaho..."
 date: 2025-02-26
 time: 21:35:24
 tweet_id: "1894863862010388971"

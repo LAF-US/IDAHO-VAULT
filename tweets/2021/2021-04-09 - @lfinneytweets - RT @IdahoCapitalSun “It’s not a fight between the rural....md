@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoCapitalSun \u201cIt\u2019s not a fight between the rural..."
 date: 2021-04-09
 time: 01:55:12
 tweet_id: "1380338474490810369"

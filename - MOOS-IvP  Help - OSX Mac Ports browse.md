@@ -10,7 +10,7 @@ description:
 
 ---
 
-Maintained by: mikerb@mit.edu [Get PDF](https://oceanai.mit.edu/ivpman/pdfs/help_osx_macports.pdf)
+Maintained by: <mikerb@mit.edu> [Get PDF](https://oceanai.mit.edu/ivpman/pdfs/help_osx_macports.pdf)
 
 ---
 
@@ -61,13 +61,14 @@ MacPorts packages are installed in /opt/local/. The port command line tool shoul
 
 Once the MacPorts base is installed, we need to use MacPorts package manager to download and install common open source software packages used in this course. This part is relatively easy and is all done from the command line in a terminal window. Again make sure the port command is in your shell path and then:
 
+```bash
+sudo port install cmake
+sudo port install subversion
+sudo port install wget
+sudo port install libtiff
+sudo port install fltk-devel
 ```
-$ sudo port install cmake
-$ sudo port install subversion
-$ sudo port install wget
-$ sudo port install libtiff
-$ sudo port install fltk-devel
-```
+
 - Note: Not all of the above packages result in an executable, i.e., *program*, installed on your machine. Some do, like cmake, wget, and svn from the subversion package. The others install libraries that other programs need later in the course.
 - Hint: The port install command accepts a list of packages on the command line like the last entry above. This obviates the need for re-typing your password each time.
 - Hint: The port installed command, with no arguments, returns a list of already installed packages. You may notice a number of packages installed that you didn't request. The MacPorts package manager will also down dependency packages as-needed, to build the ones you did explicitly request.
@@ -75,5 +76,5 @@ $ sudo port install fltk-devel
 
 ---
 
-Document Maintained by: mikerb@mit.edu  
-Page built from LaTeX source using *texwiki*, developed at MIT. Errata to issues@moos-ivp.org. [Get PDF](https://oceanai.mit.edu/ivpman/pdfs/help_osx_macports.pdf)
+Document Maintained by: <mikerb@mit.edu>  
+Page built from LaTeX source using *texwiki*, developed at MIT. Errata to <issues@moos-ivp.org>. [Get PDF](https://oceanai.mit.edu/ivpman/pdfs/help_osx_macports.pdf)

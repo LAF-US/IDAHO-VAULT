@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Dr. Steven Nemerson of St. Alphonsus joins..."
 date: 2020-07-18
 time: 03:38:54
 tweet_id: "1284331786542055424"

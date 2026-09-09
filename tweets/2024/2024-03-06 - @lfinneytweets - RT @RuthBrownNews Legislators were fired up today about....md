@@ -1,4 +1,5 @@
 ---
+title: "RT @RuthBrownNews Legislators were fired up today about..."
 date: 2024-03-06
 time: 01:01:29
 tweet_id: "1765180869290168546"

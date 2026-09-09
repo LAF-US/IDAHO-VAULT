@@ -1,4 +1,5 @@
 ---
+title: "RT @CynthiaSewell The Idaho House just voted 55-12 to..."
 date: 2020-02-24
 time: 19:17:11
 tweet_id: "1232021674138062849"

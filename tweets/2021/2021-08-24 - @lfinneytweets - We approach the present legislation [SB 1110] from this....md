@@ -1,4 +1,5 @@
 ---
+title: "We approach the present legislation [SB 1110] from this..."
 date: 2021-08-24
 time: 01:01:08
 tweet_id: "1429972006766669829"
