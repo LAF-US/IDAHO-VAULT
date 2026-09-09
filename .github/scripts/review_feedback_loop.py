@@ -1489,6 +1489,11 @@ def _build_reconciliation_report(
                         auto_merge_enabled = True
                         state_note = f"UNKNOWN, state read-back failed ({read_exc})"
                     promotion_publish_failed = True
+                    # Leave a breadcrumb in `actions`. A successful promotion records
+                    # `add:merge/auto`; without this the failure path records nothing, so
+                    # an operator diffing actions against real GitHub state sees "nothing
+                    # happened" for a pass that may have left the PR armed or queued.
+                    actions.append(f"promotion-rollback:{state_note}")
                     arm_error = (
                         f"auto-merge armed but `{DEFAULT_AUTO_MERGE_LABEL}` label write "
                         f"failed ({exc}); {rollback}; auto-merge is now {state_note}"
