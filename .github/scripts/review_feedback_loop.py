@@ -161,6 +161,19 @@ AUTO_MERGE_NOT_READY_FRAGMENTS = (
 # without the other.
 AUTO_MERGE_NOT_READY_NOTE = "not yet ready to arm (PR checks unstable); retried next pass"
 
+# _enqueue_pr reports every outright-rejected mutation as (False, str), and those are not
+# all real failures: GitHub returns queue-readiness refusals ("not mergeable", and the
+# like) through the same GraphQL error channel as authorization failures. Only a rejection
+# carrying one of these signatures is treated as genuine; everything else keeps the
+# not-ready classification, so an unrecognized readiness refusal cannot reach
+# auto_merge_authorization_blocked and re-create the false drift finding. These are the
+# authorization cores of AUTO_MERGE_AUTHZ_FRAGMENTS above, with the mutation-name suffix
+# dropped so the match holds whichever mutation reported it.
+ENQUEUE_AUTHZ_FRAGMENTS = (
+    "User is not authorized for this protected branch",
+    "Resource not accessible by integration",
+)
+
 # Protected-path gating is no longer done here. A hand-maintained glob list was one of
 # three drifting, fail-open re-implementations of "these paths need a human".
 # The single source of that truth is now CODEOWNERS, enforced as a HARD GATE by
@@ -441,20 +454,26 @@ def _arm_auto_merge(owner: str, repo: str, pr_number: int) -> tuple[bool, str | 
             notes.append(f"enqueue was rejected: {enqueue_error}")
     if not_ready:
         if not enqueued:
-            if enqueue_error:
+            if enqueue_error and any(
+                fragment in enqueue_error for fragment in ENQUEUE_AUTHZ_FRAGMENTS
+            ):
                 # Half transient, half not: the arm was rejected as not-ready AND the
-                # direct enqueue hit a REAL error (auth/API). Only the first half is
-                # transient, so drop the not-ready sentinel and let the real rejection
-                # lead. _build_reconciliation_report files a PR under auto_merge_not_ready
-                # by matching that sentinel as the message's prefix, so leaving it in front
-                # would file a genuine authorization failure as "expected to clear on a
-                # later pass" — suppressing exactly the branch-protection drift report
+                # direct enqueue failed for a reason that is not going to clear on its own.
+                # Withdraw the not-ready sentinel so _build_reconciliation_report stops
+                # classifying it as transient and files the drift report instead; leaving
+                # the sentinel in would bury a genuine authorization failure as "expected
+                # to clear on a later pass," suppressing exactly the report
                 # pr_loop_watchdog exists to make.
-                if notes and notes[0] == AUTO_MERGE_NOT_READY_NOTE:
-                    notes.pop(0)
+                if AUTO_MERGE_NOT_READY_NOTE in notes:
+                    notes.remove(AUTO_MERGE_NOT_READY_NOTE)
                 return (False, "; ".join(notes))
-            # Not ready for a direct enqueue either, and nothing rejected it outright —
-            # genuinely transient.
+            # Either nothing rejected the enqueue outright, or it was rejected for a reason
+            # that is not a recognized authorization failure. _enqueue_pr reports both
+            # queue-readiness refusals and authorization failures through the same string
+            # channel, so an unrecognized rejection keeps the not-ready classification: a
+            # PR that merely cannot queue yet must never reach the drift bucket, which is
+            # the false finding this whole change exists to prevent. The rejection text is
+            # still carried in the notes either way.
             return (False, "; ".join(notes))
         # The arm attempt was rejected, but the direct enqueue succeeded anyway (UNSTABLE
         # was still queue-entry-eligible). Report truthfully: enablePullRequestAutoMerge
