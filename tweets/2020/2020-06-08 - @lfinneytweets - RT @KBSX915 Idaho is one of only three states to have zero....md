@@ -1,4 +1,5 @@
 ---
+title: "RT @KBSX915 Idaho is one of only three states to have zero..."
 date: 2020-06-08
 time: 03:25:45
 tweet_id: "1269832964138926081"

@@ -1,4 +1,5 @@
 ---
+title: "The Idaho Senate gavels in to order. It's officially..."
 date: 2022-09-01
 time: 14:11:28
 tweet_id: "1565341575789494272"

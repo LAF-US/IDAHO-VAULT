@@ -1,4 +1,5 @@
 ---
+title: SSH
 authority: LOGAN
 related:
   - SSH

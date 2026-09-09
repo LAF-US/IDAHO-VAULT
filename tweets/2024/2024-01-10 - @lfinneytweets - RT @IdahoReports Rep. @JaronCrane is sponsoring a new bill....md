@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Rep. @JaronCrane is sponsoring a new bill..."
 date: 2024-01-10
 time: 17:45:16
 tweet_id: "1745139758605697384"

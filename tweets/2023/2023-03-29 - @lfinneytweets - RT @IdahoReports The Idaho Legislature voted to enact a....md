@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports The Idaho Legislature voted to enact a..."
 date: 2023-03-29
 time: 23:53:47
 tweet_id: "1641227181115289610"

@@ -7,4 +7,4 @@ related:
 - The Hagadone Corporation
 authority: LOGAN
 ---
-Shoshone County newspaper owned by The Hagadone Corporation 
+Shoshone County newspaper owned by The Hagadone Corporation

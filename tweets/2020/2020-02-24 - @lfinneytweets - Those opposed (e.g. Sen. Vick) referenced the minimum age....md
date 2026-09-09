@@ -1,4 +1,5 @@
 ---
+title: "Those opposed (e.g. Sen. Vick) referenced the minimum age..."
 date: 2020-02-24
 time: 15:40:36
 tweet_id: "1231967167668580352"

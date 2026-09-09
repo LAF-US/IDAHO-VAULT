@@ -5,4 +5,4 @@ related:
 - Lemhi County
 authority: LOGAN
 ---
-Leadore, Lemhi County 
+Leadore, Lemhi County

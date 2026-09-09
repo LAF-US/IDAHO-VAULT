@@ -1,4 +1,5 @@
 ---
+title: "Which Idaho Republican candidates got the highest vote..."
 date: 2024-05-22
 time: 19:22:31
 tweet_id: "1793361820360859771"
@@ -18,7 +19,7 @@ related:
   - idpol
 ---
 
-Which Idaho Republican candidates got the highest vote counts? #idleg #idpol 
+Which Idaho Republican candidates got the highest vote counts? #idleg #idpol
 -Jim Woodward 8,219
 -Cornel Rasor 7,623
 -Mark Sauter 7,622

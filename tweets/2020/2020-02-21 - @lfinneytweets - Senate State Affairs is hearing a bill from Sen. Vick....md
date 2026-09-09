@@ -1,4 +1,5 @@
 ---
+title: "Senate State Affairs is hearing a bill from Sen. Vick..."
 date: 2020-02-21
 time: 15:33:36
 tweet_id: "1230878241562316800"
@@ -18,9 +19,10 @@ related:
   - idpol
 ---
 
-Senate State Affairs is hearing a bill from Sen. Vick (R-Dalton Gardens) that would shift the Pacific Time portion of the panhandle onto permanent daylight saving time, if the neighboring state of Washington also does so. #idleg #idpol https://t.co/nQ9f57JVIQ
+Senate State Affairs is hearing a bill from Sen. Vick (R-Dalton Gardens) that would shift the Pacific Time portion of the panhandle onto permanent daylight saving time, if the neighboring state of Washington also does so. #idleg #idpol <https://t.co/nQ9f57JVIQ>
 
 ## Media
-- ![](https://pbs.twimg.com/media/ERT1HFAUEAEmPws.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/ERT1HFAUEAEmPws.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1230878241562316800)

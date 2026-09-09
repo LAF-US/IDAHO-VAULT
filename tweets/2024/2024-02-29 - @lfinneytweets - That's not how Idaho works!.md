@@ -1,4 +1,5 @@
 ---
+title: "That's not how Idaho works!"
 date: 2024-02-29
 time: 22:28:22
 tweet_id: "1763330398388699232"
@@ -17,11 +18,12 @@ related:
   - lfinneytweets
 ---
 
-@MissJeanine_77 @JaronCrane That's not how Idaho works! 
-https://t.co/km9SNlK4TP
+@MissJeanine_77 @JaronCrane That's not how Idaho works!
+<https://t.co/km9SNlK4TP>
 
 ## Links
-- https://www.spokesman.com/stories/2014/mar/16/idahos-substitute-law-unique/
+
+- <https://www.spokesman.com/stories/2014/mar/16/idahos-substitute-law-unique/>
 
 *In reply to [@MissJeanine_77](https://twitter.com/MissJeanine_77)*
 

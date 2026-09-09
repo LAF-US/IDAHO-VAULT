@@ -1,4 +1,5 @@
 ---
+title: "RT @RadioDawson BREAKING A federal judge has temporarily..."
 date: 2020-08-17
 time: 22:09:47
 tweet_id: "1295482984380784640"

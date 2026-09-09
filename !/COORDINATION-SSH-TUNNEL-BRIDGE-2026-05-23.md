@@ -22,7 +22,7 @@ Tailscale.
 
 The simplest path: **Windows SSHes directly to the Mac** over the LAN.
 
-```
+```text
 Windows (LOGAN-ZBFURY, 192.168.0.121)
   → ssh logan@192.168.0.95
   → Mac (192.168.0.95, SSH server)
@@ -42,7 +42,7 @@ macOS — enable in System Settings → General → Sharing → Remote Login.
 Windows has an existing SSH key pair. Add the public key below to
 `~/.ssh/authorized_keys` on the Mac:
 
-```
+```bash
 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIH9BphCewWNJ3x59PBbcb0kX6CxcBo75rqq+mnYMxn3s
 ```
 

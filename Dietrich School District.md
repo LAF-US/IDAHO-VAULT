@@ -5,4 +5,4 @@ related:
 - Lincoln County
 authority: LOGAN
 ---
-Dietrich, Lincoln County 
+Dietrich, Lincoln County

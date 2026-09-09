@@ -1,4 +1,5 @@
 ---
+title: SBX-DENYBIN
 authority: LOGAN
 related:
   - SBX-DENYBIN

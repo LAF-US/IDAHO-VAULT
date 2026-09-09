@@ -1,4 +1,5 @@
 ---
+title: "Little emphasizes support for the Idaho State Police,..."
 date: 2021-01-11
 time: 20:27:51
 tweet_id: "1348728352190861317"
@@ -23,7 +24,7 @@ related:
   - idleg
 ---
 
-@IdahoPTV @GovernorLittle Little emphasizes support for the Idaho State Police, implementing training and building strong community relationships. #idpol #idleg 
+@IdahoPTV @GovernorLittle Little emphasizes support for the Idaho State Police, implementing training and building strong community relationships. #idpol #idleg
 “When other places seek to defund the police, I am proud to say that Idaho defends the police. Idaho backs the blue.”
 -@GovernorLittle
 

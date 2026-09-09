@@ -4,4 +4,4 @@ related:
 - Irwin
 authority: LOGAN
 ---
-Irwin, Bonneville County 
+Irwin, Bonneville County

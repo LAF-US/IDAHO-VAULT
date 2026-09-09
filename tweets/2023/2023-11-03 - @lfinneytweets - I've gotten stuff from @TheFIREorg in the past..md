@@ -1,4 +1,5 @@
 ---
+title: "I've gotten stuff from @TheFIREorg in the past."
 date: 2023-11-03
 time: 14:58:08
 tweet_id: "1720455325265142015"

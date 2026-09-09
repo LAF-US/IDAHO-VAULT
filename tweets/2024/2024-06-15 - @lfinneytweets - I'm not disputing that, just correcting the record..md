@@ -1,4 +1,5 @@
 ---
+title: "I'm not disputing that, just correcting the record."
 date: 2024-06-15
 time: 23:08:39
 tweet_id: "1802116038173343834"

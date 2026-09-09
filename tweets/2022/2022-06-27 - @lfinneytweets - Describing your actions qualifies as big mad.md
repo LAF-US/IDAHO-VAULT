@@ -1,4 +1,5 @@
 ---
+title: "Describing your actions qualifies as big mad"
 date: 2022-06-27
 time: 18:21:23
 tweet_id: "1541486869426319360"

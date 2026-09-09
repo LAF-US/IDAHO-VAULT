@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Tonight Attorney General Ra\u00fal Labrador..."
 date: 2024-04-26
 time: 18:51:03
 tweet_id: "1783931816472355114"

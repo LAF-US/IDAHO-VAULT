@@ -15,7 +15,7 @@ Trustees voted 4-1 Thursday night to adopt the four-day week.
 
 Johnson, now in his second year as superintendent, took over after former superintendent Pat Charlton retired in 2024. Earlier that year, dozens of [teachers staged a walkout to protest](https://www.idahoednews.org/top-news/jerome-teachers-walk-out-after-trustees-vote-against-four-day-week-leading-to-district-closure/) the board’s decision to stick with the five-day week.
 
-![](https://www.idahoednews.org/wp-content/uploads/2026/04/Johnson.jpg)
+![alt text needed](https://www.idahoednews.org/wp-content/uploads/2026/04/Johnson.jpg)
 
 Jerome Superintendent Brent Johnson
 

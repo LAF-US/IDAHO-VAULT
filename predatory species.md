@@ -13,11 +13,12 @@ related:
 - weasel
 ---
 
-predatory species for mammals and birds hunting 
+predatory species for mammals and birds hunting
+
 - coyote
 - skunk
 - weasel
 - raccoon
 - ermine
-- rabbit 
+- rabbit
 - starling

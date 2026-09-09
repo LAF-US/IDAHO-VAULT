@@ -1,4 +1,5 @@
 ---
+title: "Addressing a camera directly, she asks the governor not to..."
 date: 2020-06-23
 time: 15:44:38
 tweet_id: "1275454729514967045"

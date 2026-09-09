@@ -32,11 +32,11 @@ Once you go from a handful of chats to hundreds, several patterns start to fail:
 - **DOM‑scraping scripts only see what’s on screen.**  
   Tools like `claude-chat-exporter` work by copying visible messages via the web UI, and explicitly document that they only export what’s currently in the DOM, miss attachments, and depend on CSS selectors that can break when Claude’s interface changes. [github](https://github.com/agarwalvishal/claude-chat-exporter)
 - **Share‑link / print workflows silently truncate conversations.**  
-  Users report that a previously working “shareable link then download” method stopped functioning and only exported part of long threads, forcing them to fall back to raw JSON because it was the only complete source. [reddit](https://www.reddit.com/r/ClaudeAI/comments/1qvdnru/how_to_expo***REMOVED***an_entire_chat/)
+  Users report that a previously working “shareable link then download” method stopped functioning and only exported part of long threads, forcing them to fall back to raw JSON because it was the only complete source. [reddit](https://www.reddit.com/r/ClaudeAI/comments/1qvdnru/how_to_export_an_entire_chat/)
 - **Terminal‑style exports don’t capture full sessions.**  
   For Claude Code, devs note that `/export` only includes context since the last compaction and omits earlier content and summaries, making it useless as a full log for long debugging or REPL sessions. [github](https://github.com/anthropics/claude-code/issues/4483)
 - **Manual per‑chat exports don’t scale.**  
-  Bookmarklets and print/export helpers that you trigger on each individual tab are fine for a dozen conversations, but become unmanageable when you’ve got hundreds spread across projects. [reddit](https://www.reddit.com/r/ClaudeAI/comments/1e9e3m0/print_expo***REMOVED***your_chat_on_claudeaichat/)
+  Bookmarklets and print/export helpers that you trigger on each individual tab are fine for a dozen conversations, but become unmanageable when you’ve got hundreds spread across projects. [reddit](https://www.reddit.com/r/ClaudeAI/comments/1e9e3m0/print_export_your_chat_on_claudeaichat/)
 - **Using Claude itself to “reconstruct” logs burns limits.**  
   Some people try to paste partial logs back into Claude and have it regenerate structured transcripts, but they report this wastes message quota, hits rate limits, and still loses context in long projects. [reddit](https://www.reddit.com/r/ClaudeAI/comments/1fhcm4h/claudes_unreasonable_message_limitations_even_for/)
 
@@ -69,7 +69,7 @@ Once people hit serious scale, you see a few recurring architectures.
   - Unpacks the ZIP and parses the JSON or JSONL into normalized structures: `conversations`, `messages`, `attachments`, `artifacts`, `memory`.  
   - Loads that into a database (SQLite/Postgres) or a document store where you can query by date, project, tag, or model.  
 
-People who started with ad‑hoc scraping often end up re‑anchoring on the official export because it consistently contains **all** chats and is less likely to break without warning. [reddit](https://www.reddit.com/r/ClaudeAI/comments/1qvdnru/how_to_expo***REMOVED***an_entire_chat/)
+People who started with ad‑hoc scraping often end up re‑anchoring on the official export because it consistently contains **all** chats and is less likely to break without warning. [reddit](https://www.reddit.com/r/ClaudeAI/comments/1qvdnru/how_to_export_an_entire_chat/)
 
 ### 2. Bulk‑export extensions that output JSON + Markdown
 
@@ -127,7 +127,7 @@ These choices minimize the pain that made the original one‑off tools regrettab
 If you’re staring down hundreds of Claude chats and don’t want to end up in the regret bucket:
 
 1. **Stop relying on per‑chat hacks.**  
-   Treat bookmarklets, print‑to‑PDF, and manual share links as emergency tools, not your archive strategy. [reddit](https://www.reddit.com/r/ClaudeAI/comments/1e9e3m0/print_expo***REMOVED***your_chat_on_claudeaichat/)
+   Treat bookmarklets, print‑to‑PDF, and manual share links as emergency tools, not your archive strategy. [reddit](https://www.reddit.com/r/ClaudeAI/comments/1e9e3m0/print_export_your_chat_on_claudeaichat/)
 2. **Pick a canonical export path:**
    - If you’re fine with periodic snapshots of *everything*, use Claude’s official data export and build scripts on top of that ZIP. [youtube](https://www.youtube.com/watch?v=2p3zrMcda_4)
    - If you need finer control and more frequent updates, adopt a bulk‑capable extension that outputs JSON (plus Markdown for humans). [claudexporter](https://www.claudexporter.com)

@@ -1,4 +1,5 @@
 ---
+title: OPENGRAPH
 authority: LOGAN
 related:
   - OPENGRAPH

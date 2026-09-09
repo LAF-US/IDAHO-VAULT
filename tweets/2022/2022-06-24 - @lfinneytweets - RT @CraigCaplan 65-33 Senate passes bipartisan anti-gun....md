@@ -1,4 +1,5 @@
 ---
+title: "RT @CraigCaplan 65-33 Senate passes bipartisan anti-gun..."
 date: 2022-06-24
 time: 03:42:51
 tweet_id: "1540178613873455104"

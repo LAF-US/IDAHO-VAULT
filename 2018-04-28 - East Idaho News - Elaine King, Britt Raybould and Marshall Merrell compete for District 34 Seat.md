@@ -39,7 +39,8 @@ authority: LOGAN
 ---
 The current holder of District 34 seat B has chosen not to run for re-election leading to three candidates competing for the soon to be vacant seat. Get to know each of the three candidates by checking out our interviews with them below.
 
-# Britt Raybould 
+# Britt Raybould
+
 Britt Raybould is one of three contenders for the soon to be open legislative district 34 seat B.
 
 “I believe if you live in a community you need to be prepared serve that community,” Britt told EastIdahoNews.com. “I think it’s time for me to step up and serve the families of District 34.”
@@ -59,6 +60,7 @@ Britt began her public service career when she interned for former Idaho Governo
 “I am dedicated to going over to Boise and forming strong working relationships with the other legislators so that District 34’s needs and concerns are addressed,” she said.
 
 # Marshall H. Merrell
+
 Marshall Merrell said he feels some things need to change. That is why he decided to run for the Idaho legislature.
 
 Merrell said one of the biggest issues he is concerned about is health care and insurance costs.
@@ -78,6 +80,7 @@ Merrell is an optometrist with offices in Idaho Falls and Rexburg. He and his wi
 “I’ve had a lot of life experience running a business, being involved in healthcare, doing some farming, doing some property development. I understand a lot of people’s plights,” he said.
 
 # Elaine King
+
 After years of volunteer work, teaching and tutoring, Elaine King has decided to run for the Idaho Legislature.
 
 King said she worked on an election law bill that ended up being sponsored by and taken before the Idaho House by Representative Ron Nate. After the bill went to committee for debate, King said she never saw the bill again until another representative asked the committee chair about the bill.

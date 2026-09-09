@@ -6,4 +6,5 @@ related:
 authority: LOGAN
 ---
 Residence: Boise
-- Idaho Capital Sun 
+
+- Idaho Capital Sun

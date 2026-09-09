@@ -5,4 +5,4 @@ related:
 - Weiser
 authority: LOGAN
 ---
-Weiser, Washington County 
+Weiser, Washington County

@@ -18,6 +18,6 @@ authority: LOGAN
 ---
 Seat: Preston
 Municipalities: Clifton, Dayton, Franklin, Oxford, Weston
-Communities: Mink Creek, Thatcher, Whitney, Fairview, Riverdale 
+Communities: Mink Creek, Thatcher, Whitney, Fairview, Riverdale
 
-Cache Valley 
+Cache Valley

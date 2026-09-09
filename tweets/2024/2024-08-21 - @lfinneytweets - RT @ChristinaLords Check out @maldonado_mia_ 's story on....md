@@ -1,4 +1,5 @@
 ---
+title: "RT @ChristinaLords Check out @maldonado_mia_ 's story on..."
 date: 2024-08-21
 time: 15:23:59
 tweet_id: "1826279085401882739"

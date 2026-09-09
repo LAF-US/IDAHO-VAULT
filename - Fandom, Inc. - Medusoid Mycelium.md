@@ -86,6 +86,6 @@ The Medusoid seems to be a neon green color instead of the gray-and-black as des
 
 [^5]: [PROSE](https://snicket.fandom.com/wiki/PROSE "PROSE"): *[The Beatrice Letters](https://snicket.fandom.com/wiki/The_Beatrice_Letters "The Beatrice Letters")*
 
-[^6]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Bad Beginning: Part One](https://snicket.fandom.com/wiki/The_Bad_Beginning:_Pa***REMOVED***One "The Bad Beginning: Part One")*
+[^6]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Bad Beginning: Part One](https://snicket.fandom.com/wiki/The_Bad_Beginning:_Part_One "The Bad Beginning: Part One")*
 
 [^7]: [PROSE](https://snicket.fandom.com/wiki/PROSE "PROSE"): *[Lemony Snicket: The Unauthorized Autobiography](https://snicket.fandom.com/wiki/Lemony_Snicket:_The_Unauthorized_Autobiography "Lemony Snicket: The Unauthorized Autobiography")*

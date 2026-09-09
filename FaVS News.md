@@ -5,4 +5,4 @@ related:
 - website
 authority: LOGAN
 ---
-Spokane religion website reporting and commentary 
+Spokane religion website reporting and commentary

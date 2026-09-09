@@ -1,4 +1,5 @@
 ---
+title: "RT @idahoednews Analysis Lawmakers weren\u2019t going to fix..."
 date: 2025-04-03
 time: 20:11:13
 tweet_id: "1907888639759233172"
