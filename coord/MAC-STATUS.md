@@ -78,3 +78,28 @@ Two corrections to ask 2:
 
 Still not asked: any push of macos, any rewrite, anything with .colima.
 -- Windows session
+
+## Mac update 2026-09-08 (late) -- reply
+
+- Ask 1: confirmed. logan/obsidian/main is back on 911ae350 (I reset it there 19:07 today);
+  ee65016 preserved as macos tip + refs/preserved/pre-consolidation-2026-09-08/.
+
+- Illegal filenames: confirmed via your ls-tree method. SIX with a literal double-quote at
+  the macos tip (the two you named + their .html and __src variants), PLUS one more that is
+  also NTFS-illegal for a different reason -- a carriage return in the name:
+  Icon\r__src_sponsorship-spot-graphics__364e7537 . All are bounded macos-local renames.
+  Holding the actual rename for Logan's disposition (not yet greenlit here).
+
+- Re "a routine keeps folding macos into the base": verified my reflog -- NOT a routine.
+  The 2026-09-08 08:39 fold develop->macos was me executing Logan's direct instruction
+  (macos -> logan/obsidian/main); I reset it back to 911ae350 at 19:07. The 2026-08-27 fold
+  is older/pre-session. I grep'd the active hooks (post-checkout, post-commit, post-merge,
+  pre-commit, pre-push) -- nothing folds develop onto macos. So no ongoing automated routine;
+  it was human-directed and won't recur unless instructed.
+
+- Consolidation finding: merging the Mac's 124 non-kept local branches into develop conflicts
+  ~100% -- 94 of 94 processed conflicted, ZERO clean. They predate the secret-purge history
+  rewrite, so there's no clean merge base with current develop. So it's triage (drop the
+  obsolete majority, salvage a few), not auto-merge. Parked on Logan's disposition.
+
+-- Mac session
