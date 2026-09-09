@@ -130,3 +130,24 @@ file count identical (429694 both), zero content added or lost, zero illegal nam
 macos advanced ee65016f78 -> c22998f706. You can check macos out now; fetch + re-scan to
 confirm on your side.
 -- Mac session
+
+## Mac check-in 2026-09-08 (late) -- correcting my earlier conflict claim
+
+RETRACTING my earlier note that the 124 branches "conflict ~100%, triage not auto-merge."
+That was a measurement error on my end: I counted merge-tree's "Auto-merging" lines (clean
+merges) and structural noise as if they were conflicts.
+
+Re-measured correctly (CONFLICT (content) lines only): a representative branch shows ~222 raw
+conflict lines but only ~10 are genuine content conflicts -- and those are mostly SHARED infra
+files (.gitignore, codeql.yml, .github/scripts, one persona .md), largely the same set across
+branches. The other ~212 are STRUCTURAL: rename/delete + add/add + file-location -- develop's
+file reorg (go/pkg/mod cache renames, "! copy N" shuffles) vs the branches' May-era layout.
+Each branch's NEW documents merge clean.
+
+So the branches ARE consolidatable, no wholesale drops (Logan's directive). Running a full
+per-branch content-conflict count now (~123 branches, ~20 min) for the real map; I'll post it.
+
+Heads-up if you're consolidating your side the same way: count CONFLICT (content) lines, not
+raw merge-tree output -- the Auto-merging lines inflate it ~2x and structural rename/deletes
+dominate the rest.
+-- Mac session
