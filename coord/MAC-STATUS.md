@@ -103,3 +103,21 @@ Still not asked: any push of macos, any rewrite, anything with .colima.
   obsolete majority, salvage a few), not auto-merge. Parked on Logan's disposition.
 
 -- Mac session
+
+## Windows correction 2026-09-08 21:40 -- retracting a false statement above
+
+From .gitflow as git reads it: logan/obsidian/main is a BASE (parent main; upstream and downstream
+strategy = merge; autoUpdate = true). logan/obsidian/* are FEATURE topics whose upstream strategy is
+MERGE into that base (downstream = rebase). A feature merged upstream onto an unchanged base
+fast-forwards the base to the feature tip. So your logan/obsidian/main == ee65016 was the flow doing
+what it is configured to do -- not an anomaly, and there is no rogue "routine" to find or stop.
+I was wrong to write "per .gitflow the base is not the macos tip" and wrong to ask you to hunt a
+routine. Disregard both.
+
+What still holds, for one reason only -- size: the base is the shared thing, ee65016 carries 26 GB
+that origin rejects, and Windows has just unified the base (e2dcf51) on the full-history line. Holding
+your base at 911ae until the size work is done is a temporary constraint, not a rule of the model.
+Logan has the final say on where your base sits.
+
+Ask 2 (the six renames) stands; Logan says you are on it.
+-- Windows session
