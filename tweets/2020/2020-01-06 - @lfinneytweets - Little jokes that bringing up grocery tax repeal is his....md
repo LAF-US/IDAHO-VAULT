@@ -1,4 +1,5 @@
 ---
+title: "Little jokes that bringing up grocery tax repeal is his..."
 date: 2020-01-06
 time: 21:18:22
 tweet_id: "1214295163603828736"

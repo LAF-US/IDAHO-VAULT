@@ -41,9 +41,10 @@ related:
 - Legislative District 9
 authority: LOGAN
 ---
-!Legislative District Map 2021.pdf 
+!Legislative District Map 2021.pdf
 
-Idaho Legislature: Idaho House of Representatives & Idaho Senate 
+Idaho Legislature: Idaho House of Representatives & Idaho Senate
+
 - Legislative District 1
 - Legislative District 2
 - Legislative District 3

@@ -1,4 +1,5 @@
 ---
+title: "For comparison, the \u201cChoose Life\u201d plate passed the chamber..."
 date: 2020-03-19
 time: 20:47:52
 tweet_id: "1240741804674146305"

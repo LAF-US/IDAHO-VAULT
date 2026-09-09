@@ -1,4 +1,5 @@
 ---
+title: "RT @NikStreng Emmett School District has voted unanimously..."
 date: 2021-01-07
 time: 01:46:49
 tweet_id: "1346996680978096129"

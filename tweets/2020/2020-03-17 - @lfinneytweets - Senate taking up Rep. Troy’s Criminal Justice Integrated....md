@@ -1,4 +1,5 @@
 ---
+title: "Senate taking up Rep. Troy\u2019s Criminal Justice Integrated..."
 date: 2020-03-17
 time: 22:40:10
 tweet_id: "1240045289085399040"

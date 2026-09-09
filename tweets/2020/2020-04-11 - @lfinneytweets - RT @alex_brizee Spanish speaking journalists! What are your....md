@@ -1,4 +1,5 @@
 ---
+title: "RT @alex_brizee Spanish speaking journalists! What are your..."
 date: 2020-04-11
 time: 23:44:34
 tweet_id: "1249121190729433088"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @alex_brizee: Spanish speaking journalists! 
+RT @alex_brizee: Spanish speaking journalists!
 What are your favorite resources for AP Style in Spanish?
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1249121190729433088)

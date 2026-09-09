@@ -1,4 +1,5 @@
 ---
+title: "Giddings If a contact tracer finds that I'm infected, they..."
 date: 2020-06-23
 time: 16:18:22
 tweet_id: "1275463218371026945"

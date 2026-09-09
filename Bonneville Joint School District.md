@@ -7,4 +7,4 @@ related:
 - Ucon
 authority: LOGAN
 ---
-Ammon/Iona/Ucon/Lincoln, Bonneville County 
+Ammon/Iona/Ucon/Lincoln, Bonneville County

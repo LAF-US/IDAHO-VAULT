@@ -1,4 +1,5 @@
 ---
+title: "RT @CNN News outlets are publishing more videos, photos and..."
 date: 2021-01-10
 time: 16:04:52
 tweet_id: "1348299779818754050"

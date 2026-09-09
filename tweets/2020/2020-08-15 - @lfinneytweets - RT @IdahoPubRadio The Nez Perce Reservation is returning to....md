@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio The Nez Perce Reservation is returning to..."
 date: 2020-08-15
 time: 17:23:32
 tweet_id: "1294686172250173441"

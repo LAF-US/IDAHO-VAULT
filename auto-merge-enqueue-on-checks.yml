@@ -1,0 +1,184 @@
+name: Enqueue on checks complete
+
+# Closes the TIMING gap left by "Auto-merge on PR events" (auto-merge-engage.yml). That
+# workflow fires on pull_request_target [opened, reopened, ready_for_review, synchronize] —
+# i.e. the moment a PR opens or is pushed to, BEFORE its checks finish — so its enqueue step
+# correctly sees a not-yet-CLEAN PR and skips. Nothing re-fires when the checks LATER go
+# green, so an armed PR sits unqueued and the line stalls. That gap is exactly why the queue
+# had to be hand-cranked via batch-arm-merge-queue. This workflow re-fires WHEN the slow
+# required CI workflows finish, re-evaluates each associated PR, and — for PRs that were
+# already armed for auto-merge — enqueues it the instant it is mergeable (mergeStateStatus
+# CLEAN or UNSTABLE). Idempotent: an already-queued PR is skipped; a not-yet-ready PR waits
+# for the next completion. Branch protection still decides what actually merges; the queue
+# re-runs the required checks.
+#
+# Why workflow_run, not check_suite:
+#   - A check_suite.completed trigger would re-fire on THIS workflow's OWN GitHub Actions
+#     check suite completing — a recursion hazard. workflow_run targets NAMED OTHER workflows
+#     (never this one), so it provably cannot self-trigger.
+#   - "Cross-Platform Smoke" is the slow, late-finishing CI workflow whose completion is the
+#     "checks settled" signal. The fast vault-gate checks finish well before it, so by the time
+#     it completes the PR's real mergeStateStatus is known. (This list previously also named
+#     "CodeQL Advanced"; that workflow was deleted in #726 in favor of GitHub's default-setup
+#     CodeQL scanning, which isn't a workflow in this repo and so can't be targeted by
+#     workflow_run — the reference was dead from #726 onward and is removed here, not replaced.)
+#   - auto-merge-engage.yml's pull_request_target trigger is deliberately left UNTOUCHED: it
+#     owns the open/sync moment (resolve outdated bot threads + arm + first enqueue attempt).
+#     This workflow owns the checks-complete moment. The two compose; neither is downstream of
+#     the other.
+#
+# Security / threat model: workflow_run runs from the TRUSTED default branch with repo secrets
+# + write permissions (including the workflows-scoped MERGE_QUEUE_TOKEN PAT), and never checks
+# out or executes PR-authored code — it acts purely via the API. But the upstream CI runs on
+# `pull_request`, so a FORK PR's checks complete in the base repo and CAN trigger this workflow
+# with that elevated context. Two guards, defense-in-depth:
+#   1. JOB-LEVEL: the job runs only when github.event.workflow_run.head_repository.full_name ==
+#      github.repository, so the privileged token is never even exposed for a fork-origin run.
+#   2. PER-PR: the loop additionally skips any cross-repository (fork) PR via isCrossRepository
+#      before the enqueue mutation — belt-and-suspenders for the head-sha fallback, which would
+#      otherwise resurface a fork PR by its commit (GitHub leaves workflow_run.pull_requests
+#      empty for forks).
+# Branch protection would still gate the real merge, but we refuse to enqueue a fork PR at all;
+# those take human review and a manual merge.
+
+on:
+  workflow_run:
+    workflows: ["Cross-Platform Smoke"]
+    types: [completed]
+
+permissions:
+  # contents: write — enablePullRequestAutoMerge + enqueuePullRequest (the #546 gate family).
+  # pull-requests: write — reading PR state and arming auto-merge.
+  contents: write
+  pull-requests: write
+
+concurrency:
+  # Collapse multiple runs of the same commit's checks-complete signal into a single pass.
+  group: enqueue-on-checks-${{ github.event.workflow_run.head_sha }}
+  cancel-in-progress: false
+
+jobs:
+  enqueue:
+    # Same-repo guard (defense-in-depth layer 1): never expose the privileged token to a run
+    # that originated from a fork PR's checks. head_repository is the repo the upstream run's
+    # head branch lives in; for our agents' same-repo branches it equals github.repository.
+    if: github.event.workflow_run.head_repository.full_name == github.repository
+    runs-on: ubuntu-latest
+    steps:
+      - name: Enqueue every armed, ready PR on this commit
+        # Mirrors the proven batch-arm-merge-queue / auto-merge-engage enqueue logic, scoped to
+        # the PR(s) whose checks just completed. Uses MERGE_QUEUE_TOKEN (a workflows-scoped PAT)
+        # when present so workflow-touching PRs can enqueue; falls back to GITHUB_TOKEN.
+        env:
+          GH_TOKEN: ${{ secrets.MERGE_QUEUE_TOKEN || secrets.GITHUB_TOKEN }}
+          OWNER: ${{ github.repository_owner }}
+          NAME: ${{ github.event.repository.name }}
+          HEAD_SHA: ${{ github.event.workflow_run.head_sha }}
+          PRS_JSON: ${{ toJSON(github.event.workflow_run.pull_requests.*.number) }}
+          # Tunable without editing the workflow (same knobs as batch-arm-merge-queue);
+          # unset/empty falls to the defaults below.
+          MERGE_STATE_RETRIES: ${{ vars.MERGE_STATE_RETRIES }}
+          MERGE_STATE_DELAY: ${{ vars.MERGE_STATE_DELAY }}
+        run: |
+          MERGE_STATE_RETRIES="${MERGE_STATE_RETRIES:-3}"
+          MERGE_STATE_DELAY="${MERGE_STATE_DELAY:-2}"
+
+          # PR numbers from the event payload; fall back to resolving open PRs by head sha when
+          # workflow_run.pull_requests is empty (a known gap for some runs — and the norm for
+          # fork PRs, which the per-PR cross-repository guard below then refuses).
+          prs=$(printf '%s' "$PRS_JSON" | jq -r '.[]?' 2>/dev/null || true)
+          if [ -z "$prs" ]; then
+            prs=$(gh pr list --repo "$OWNER/$NAME" --state open --search "$HEAD_SHA" \
+              --json number,headRefOid \
+              -q ".[] | select(.headRefOid==\"$HEAD_SHA\") | .number" 2>/dev/null || true)
+          fi
+          if [ -z "$prs" ]; then
+            echo "no open PR for $HEAD_SHA — nothing to enqueue"
+            exit 0
+          fi
+
+          read_total=0
+          read_failed=0
+          err=$(mktemp)
+
+          for PR in $prs; do
+            case "$PR" in ''|*[!0-9]*) echo "skip non-numeric PR id '$PR'"; continue;; esac
+            read_total=$((read_total + 1))
+
+            # mergeStateStatus is computed lazily: a cold read returns UNKNOWN and only
+            # *triggers* the computation (documented in batch-arm-merge-queue.yml). Re-poll a
+            # bounded number of times so a freshly-green PR is seen as CLEAN/UNSTABLE and
+            # actually enqueued — without this, a single workflow_run firing on an UNKNOWN
+            # window would skip and reintroduce the very gap this workflow closes. A genuine
+            # `gh` failure (auth / permission / schema / API) is NOT swallowed as a benign
+            # skip: it is surfaced and, if EVERY PR read fails, the job fails closed (a shared
+            # auth/API problem is far likelier than every PR being un-readable — the #549 guard).
+            info=""; mss=""; i=1; read_ok=0
+            while [ "$i" -le "$MERGE_STATE_RETRIES" ]; do
+              if info=$(gh api graphql \
+                -f query='query($o:String!,$n:String!,$p:Int!){repository(owner:$o,name:$n){pullRequest(number:$p){id state isDraft isCrossRepository mergeStateStatus autoMergeRequest{enabledAt} mergeQueueEntry{id}}}}' \
+                -f o="$OWNER" -f n="$NAME" -F p="$PR" 2>"$err"); then
+                read_ok=1
+                mss=$(printf '%s' "$info" | jq -r '.data.repository.pullRequest.mergeStateStatus // empty' 2>/dev/null || true)
+                { [ -n "$mss" ] && [ "$mss" != "UNKNOWN" ]; } && break
+              fi
+              [ "$i" -lt "$MERGE_STATE_RETRIES" ] && sleep "$MERGE_STATE_DELAY"
+              i=$((i + 1))
+            done
+            if [ "$read_ok" != 1 ]; then
+              echo "::error::failed to read PR #$PR (mergeStateStatus query): $(tr '\n' ' ' <"$err")"
+              read_failed=$((read_failed + 1))
+              continue
+            fi
+
+            state=$(printf '%s' "$info" | jq -r '.data.repository.pullRequest.state // empty' 2>/dev/null || true)
+            draft=$(printf '%s' "$info" | jq -r '.data.repository.pullRequest.isDraft // empty' 2>/dev/null || true)
+            cross=$(printf '%s' "$info" | jq -r '.data.repository.pullRequest.isCrossRepository // empty' 2>/dev/null || true)
+            armed=$(printf '%s' "$info" | jq -r '.data.repository.pullRequest.autoMergeRequest.enabledAt // empty' 2>/dev/null || true)
+            node=$(printf '%s' "$info" | jq -r '.data.repository.pullRequest.id // empty' 2>/dev/null || true)
+            queued=$(printf '%s' "$info" | jq -r '.data.repository.pullRequest.mergeQueueEntry.id // empty' 2>/dev/null || true)
+
+            if [ "$state" != "OPEN" ]; then echo "#$PR not open ($state) — skip"; continue; fi
+            if [ "$draft" = "true" ]; then echo "#$PR draft — skip"; continue; fi
+            # Cross-repo guard (defense-in-depth layer 2 — see header threat model).
+            if [ "$cross" = "true" ]; then echo "#$PR is cross-repository (fork) — refusing to enqueue"; continue; fi
+
+            echo "#$PR mergeStateStatus=$mss"
+            case "$mss" in
+              CLEAN|UNSTABLE) ;;
+              *) echo "  not enqueue-ready ($mss) — a later checks-complete re-attempts"; continue ;;
+            esac
+            if [ -n "$queued" ]; then echo "  already queued #$PR ($queued)"; continue; fi
+            # Only RECOVER PRs that were explicitly opted into auto-merge (armed by engage on
+            # open/sync). This workflow re-queues armed-but-unqueued PRs; it must not be the
+            # thing that decides to merge a PR nobody opted in.
+            if [ -z "$armed" ]; then echo "  auto-merge not armed for #$PR — skip (recover opted-in PRs only)"; continue; fi
+            if [ -z "$node" ]; then echo "  no node id for #$PR — skip"; continue; fi
+
+            # Enqueue is tolerant by design: enqueuePullRequest returns non-zero for BENIGN
+            # races too (PR went BLOCKED, or was queued, between the read and the mutation), so
+            # a hard exit here would false-red the run. Branch protection is the real gate and a
+            # later checks-complete re-attempts. The actual error text is surfaced as a warning
+            # (never hidden) so a real PAT/permission/schema regression stays visible.
+            if entry_json=$(gh api graphql \
+              -f query='mutation($pr:ID!){enqueuePullRequest(input:{pullRequestId:$pr}){mergeQueueEntry{id}}}' \
+              -f pr="$node" 2>"$err"); then
+              entry=$(printf '%s' "$entry_json" | jq -r '.data.enqueuePullRequest.mergeQueueEntry.id // empty' 2>/dev/null || true)
+              if [ -n "$entry" ] && [ "$entry" != "null" ]; then
+                echo "  enqueued #$PR (merge-queue entry $entry)"
+              else
+                echo "  enqueue returned no entry for #$PR — branch protection gates the merge"
+              fi
+            else
+              echo "::warning::enqueue rejected for #$PR (often benign — became BLOCKED/queued mid-race): $(tr '\n' ' ' <"$err")"
+            fi
+          done
+
+          rm -f "$err"
+
+          # Fail closed only when EVERY read failed (systemic auth/API problem), never on
+          # per-PR gating or benign enqueue rejections.
+          if [ "$read_total" -gt 0 ] && [ "$read_failed" -eq "$read_total" ]; then
+            echo "::error::all $read_total PR read(s) failed — likely a systemic auth/API problem, not per-PR state"
+            exit 1
+          fi

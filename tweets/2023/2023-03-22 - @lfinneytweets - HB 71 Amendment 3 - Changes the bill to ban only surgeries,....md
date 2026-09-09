@@ -1,4 +1,5 @@
 ---
+title: "HB 71 Amendment 3 - Changes the bill to ban only surgeries,..."
 date: 2023-03-22
 time: 23:28:35
 tweet_id: "1638684125086519298"

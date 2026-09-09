@@ -1,4 +1,5 @@
 ---
+title: "Shaw-Tulloch For every first dose of the vaccine sent to..."
 date: 2021-01-05
 time: 22:01:05
 tweet_id: "1346577487178813441"

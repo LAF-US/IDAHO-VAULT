@@ -1,4 +1,5 @@
 ---
+title: "RT @HDruzin Here's my full story on the bizarre..."
 date: 2020-06-24
 time: 03:07:38
 tweet_id: "1275626610662633472"

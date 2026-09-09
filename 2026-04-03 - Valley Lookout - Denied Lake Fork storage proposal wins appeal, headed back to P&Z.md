@@ -7,7 +7,7 @@ created: 2026-04-07
 ---
 ## ‘We knew this was going to happen’: Valley Co. sends denied Lake Fork storage proposal back to P&Z
 
-![](https://valleylookout.com/wp-content/uploads/sites/2/2025/11/valleylookout.com-valley-co-delays-lake-fork-storage-complex-decision-awaits-idaho-55-traffic-study-dsc-2727.jpeg)
+![alt text needed](https://valleylookout.com/wp-content/uploads/sites/2/2025/11/valleylookout.com-valley-co-delays-lake-fork-storage-complex-decision-awaits-idaho-55-traffic-study-dsc-2727.jpeg)
 
 A personal storage building at 14014 Idaho 55 in Lake Fork that Dusty Bitton received approval to build in 2023. Photo: Drew Dodson/Valley Lookout
 
@@ -35,7 +35,7 @@ Thompson was joined in voting to approve the appeal and send the application bac
 
 Matthew Parks, a Boise attorney representing Bitton, said in [an appeal letter](https://twistcms-shared.s3.us-west-2.amazonaws.com/meetings/110/attachments/1821.pdf) submitted to the county that the P&Z’s denial “was not supported by substantial evidence” and relied on “speculation.”
 
-![](https://valleylookout.com/wp-content/uploads/sites/2/2025/11/valleylookout.com-valley-co-delays-lake-fork-storage-complex-decision-awaits-idaho-55-traffic-study-screenshot-2025-11-17-at-2.35.21-pm.jpeg)
+![alt text needed](https://valleylookout.com/wp-content/uploads/sites/2/2025/11/valleylookout.com-valley-co-delays-lake-fork-storage-complex-decision-awaits-idaho-55-traffic-study-screenshot-2025-11-17-at-2.35.21-pm.jpeg)
 
 A rendering of the Rocky Mountain Storage complex proposed at 14014 Idaho 55 in Lake Fork. Rendering: Via Chuck B. Edwards Landscape Architecture
 

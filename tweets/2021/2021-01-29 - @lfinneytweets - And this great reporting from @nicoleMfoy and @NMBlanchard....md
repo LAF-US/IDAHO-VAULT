@@ -1,4 +1,5 @@
 ---
+title: "And this great reporting from @nicoleMfoy and @NMBlanchard..."
 date: 2021-01-29
 time: 18:28:47
 tweet_id: "1355221369512837121"
@@ -18,11 +19,12 @@ related:
   - lfinneytweets
 ---
 
-And this great reporting from @nicoleMfoy and @NMBlanchard @IdahoStatesman. 
-https://t.co/nLUP0W8sDI
+And this great reporting from @nicoleMfoy and @NMBlanchard @IdahoStatesman.
+<https://t.co/nLUP0W8sDI>
 
 ## Links
-- https://www.idahostatesman.com/news/northwest/idaho/article244065002.html
+
+- <https://www.idahostatesman.com/news/northwest/idaho/article244065002.html>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

@@ -6,4 +6,4 @@ related:
 - Twin Falls
 authority: LOGAN
 ---
-Magic Valley newspaper based in Twin Falls 
+Magic Valley newspaper based in Twin Falls

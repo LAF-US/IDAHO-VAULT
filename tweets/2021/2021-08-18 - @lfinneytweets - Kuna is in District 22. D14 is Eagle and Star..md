@@ -1,4 +1,5 @@
 ---
+title: "Kuna is in District 22. D14 is Eagle and Star."
 date: 2021-08-18
 time: 18:32:01
 tweet_id: "1428062141441994756"

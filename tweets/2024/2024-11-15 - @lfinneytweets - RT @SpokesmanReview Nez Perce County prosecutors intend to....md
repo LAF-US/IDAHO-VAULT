@@ -1,4 +1,5 @@
 ---
+title: "RT @SpokesmanReview Nez Perce County prosecutors intend to..."
 date: 2024-11-15
 time: 18:04:36
 tweet_id: "1857484864620298726"

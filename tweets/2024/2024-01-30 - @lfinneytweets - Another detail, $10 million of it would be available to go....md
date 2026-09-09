@@ -1,4 +1,5 @@
 ---
+title: "Another detail, $10 million of it would be available to go..."
 date: 2024-01-30
 time: 16:45:06
 tweet_id: "1752372376346689790"

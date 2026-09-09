@@ -6,7 +6,7 @@ created: 2026-04-07
 ---
 ## University of Montana president finalist ‘a fit’ for UM, Commissioner says
 
-## Jeremiah Shinn will be on campus in Missoula on Monday and Tuesday, April 6 and 7.
+## Jeremiah Shinn will be on campus in Missoula on Monday and Tuesday, April 6 and 7
 
 ![The M on Mt. Sentinel stands above Main Hall on the University of Montana campus. (Provided by the University of Montana)](https://idahocapitalsun.com/wp-content/uploads/2026/04/Main_Hall_Kei-1024x678-1.jpg)
 
@@ -26,7 +26,7 @@ More than 60 candidates applied for the job in a search Christian described Frid
 
 He said they like his focus on students, his experience at Boise State, and his interest in helping UM move forward and build on its successes — versus wanting to reshape it.
 
-![](https://idahocapitalsun.com/wp-content/uploads/2026/04/Jeremiah_Shinn.jpg)
+![alt text needed](https://idahocapitalsun.com/wp-content/uploads/2026/04/Jeremiah_Shinn.jpg)
 
 Jeremiah Shinn, finalist for University of Montana president. (Provided photo by Priscilla Grover and the University of Montana)
 

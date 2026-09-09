@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports The Idaho Senate denounces acts of racism..."
 date: 2024-03-29
 time: 02:13:10
 tweet_id: "1773533829946315153"

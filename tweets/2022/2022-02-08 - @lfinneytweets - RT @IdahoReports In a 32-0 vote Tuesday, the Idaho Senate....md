@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports In a 32-0 vote Tuesday, the Idaho Senate..."
 date: 2022-02-08
 time: 19:20:43
 tweet_id: "1491129887394246656"

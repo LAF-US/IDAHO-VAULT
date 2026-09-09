@@ -1,4 +1,5 @@
 ---
+title: "Senate Local Government has printed a bill from Sen. Rice..."
 date: 2021-01-20
 time: 22:10:42
 tweet_id: "1352015725662093312"

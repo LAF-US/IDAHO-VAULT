@@ -1,4 +1,5 @@
 ---
+title: "The Idaho Senate is positioned to take up the $253 million..."
 date: 2025-03-04
 time: 01:25:31
 tweet_id: "1896733713565876736"

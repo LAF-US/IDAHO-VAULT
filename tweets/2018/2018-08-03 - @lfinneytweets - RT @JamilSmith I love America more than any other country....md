@@ -1,4 +1,5 @@
 ---
+title: "RT @JamilSmith I love America more than any other country..."
 date: 2018-08-03
 time: 06:21:09
 tweet_id: "1025265294766354432"

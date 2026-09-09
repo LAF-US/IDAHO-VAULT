@@ -7,7 +7,7 @@ created: 2026-04-14
 ---
 | “ | *Some parents. They wouldn't even pay the ransom.* | ” |
 | --- | --- | --- |
-|  |  |
+| | | |
 
 The **Spats Family** is a rich family that includes the relatives of [Carmelita Spats](https://snicket.fandom.com/wiki/Carmelita_Spats "Carmelita Spats"). Most or all of them may be deceased.
 
@@ -52,8 +52,8 @@ In the Netflix adaptation, Carmelita says that her parents let her do whatever s
 
 [^4]: [PROSE](https://snicket.fandom.com/wiki/PROSE "PROSE"): *[The Penultimate Peril](https://snicket.fandom.com/wiki/The_Penultimate_Peril "The Penultimate Peril")*
 
-[^5]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Penultimate Peril: Part One](https://snicket.fandom.com/wiki/The_Penultimate_Peril:_Pa***REMOVED***One "The Penultimate Peril: Part One")*
+[^5]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Penultimate Peril: Part One](https://snicket.fandom.com/wiki/The_Penultimate_Peril:_Part_One "The Penultimate Peril: Part One")*
 
-[^6]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Slippery Slope: Part One](https://snicket.fandom.com/wiki/The_Slippery_Slope:_Pa***REMOVED***One "The Slippery Slope: Part One")*
+[^6]: [TV](https://snicket.fandom.com/wiki/TV "TV"): *[The Slippery Slope: Part One](https://snicket.fandom.com/wiki/The_Slippery_Slope:_Part_One "The Slippery Slope: Part One")*
 
 [^7]: [Oxford Learners Dictionaries](https://www.oxfordlearnersdictionaries.com/us/definition/english/spat)

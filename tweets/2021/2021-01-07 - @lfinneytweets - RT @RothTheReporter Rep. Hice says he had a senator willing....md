@@ -1,4 +1,5 @@
 ---
+title: "RT @RothTheReporter Rep. Hice says he had a senator willing..."
 date: 2021-01-07
 time: 04:57:02
 tweet_id: "1347044549965672450"

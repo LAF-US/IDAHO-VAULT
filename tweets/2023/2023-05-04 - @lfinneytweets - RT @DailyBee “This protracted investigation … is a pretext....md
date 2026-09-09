@@ -1,4 +1,5 @@
 ---
+title: "RT @DailyBee \u201cThis protracted investigation \u2026 is a pretext..."
 date: 2023-05-04
 time: 16:01:35
 tweet_id: "1654154314368290816"

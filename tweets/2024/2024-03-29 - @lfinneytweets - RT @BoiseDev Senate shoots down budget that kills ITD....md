@@ -1,4 +1,5 @@
 ---
+title: "RT @BoiseDev Senate shoots down budget that kills ITD..."
 date: 2024-03-29
 time: 02:36:40
 tweet_id: "1773539746372833644"
@@ -18,13 +19,12 @@ related:
   - idpol
 ---
 
-RT @BoiseDev: Senate shoots down budget that kills ITD campus sale, sets up standoff with House
+RT @BoiseDev: Senate shoots down budget that kills ITD campus sale, sets up standoff with House #idpol
 
-#idpol
-
-https://t.co/anQrl7WENd
+<https://t.co/anQrl7WENd>
 
 ## Links
-- https://boisedev.com/news/2024/03/28/itd-budget-senate/
+
+- <https://boisedev.com/news/2024/03/28/itd-budget-senate/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1773539746372833644)

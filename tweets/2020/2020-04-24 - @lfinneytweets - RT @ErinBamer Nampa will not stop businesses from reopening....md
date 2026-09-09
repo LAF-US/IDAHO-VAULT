@@ -1,4 +1,5 @@
 ---
+title: "RT @ErinBamer Nampa will not stop businesses from reopening..."
 date: 2020-04-24
 time: 20:24:53
 tweet_id: "1253781984540651520"

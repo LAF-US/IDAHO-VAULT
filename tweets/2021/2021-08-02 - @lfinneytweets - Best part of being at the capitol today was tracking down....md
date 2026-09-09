@@ -1,4 +1,5 @@
 ---
+title: "Best part of being at the capitol today was tracking down..."
 date: 2021-08-02
 time: 22:46:10
 tweet_id: "1422327894089494559"
@@ -16,9 +17,10 @@ related:
   - idleg
 ---
 
-Best part of being at the capitol today was tracking down these folks for a fun story in the works. #idleg https://t.co/RkaIeUryyb
+Best part of being at the capitol today was tracking down these folks for a fun story in the works. #idleg <https://t.co/RkaIeUryyb>
 
 ## Media
-- ![](https://pbs.twimg.com/media/E70froLVcAYD6DF.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/E70froLVcAYD6DF.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1422327894089494559)

@@ -22,8 +22,6 @@ For harvest-time and mowing,
 
          A sleepy world of streams.  
 
-  
-
 I am tired of tears and laughter,  
 
          And men that laugh and weep;  
@@ -39,8 +37,6 @@ Blown buds of barren flowers,
 Desires and dreams and powers  
 
          And everything but sleep.  
-
-  
 
 Here life has death for neighbour,  
 
@@ -58,8 +54,6 @@ But no such winds blow hither,
 
          And no such things grow here.  
 
-  
-
 No growth of moor or coppice,  
 
          No heather-flower or vine,  
@@ -75,8 +69,6 @@ Where no leaf blooms or blushes
 Save this whereout she crushes  
 
          For dead men deadly wine.  
-
-  
 
 Pale, without name or number,  
 
@@ -94,8 +86,6 @@ By cloud and mist abated
 
          Comes out of darkness morn.  
 
-  
-
 Though one were strong as seven,  
 
          He too with death shall dwell,  
@@ -111,8 +101,6 @@ His beauty clouds and closes;
 And well though love reposes,  
 
          In the end it is not well.  
-
-  
 
 Pale, beyond porch and portal,  
 
@@ -130,8 +118,6 @@ To men that mix and meet her
 
          From many times and lands.  
 
-  
-
 She waits for each and other,  
 
          She waits for all men born;  
@@ -147,8 +133,6 @@ Take wing for her and follow
 Where summer song rings hollow  
 
          And flowers are put to scorn.  
-
-  
 
 There go the loves that wither,  
 
@@ -166,8 +150,6 @@ Wild leaves that winds have taken,
 
          Red strays of ruined springs.  
 
-  
-
 We are not sure of sorrow,  
 
          And joy was never sure;  
@@ -184,8 +166,6 @@ Sighs, and with eyes forgetful
 
          Weeps that no loves endure.  
 
-  
-
 From too much love of living,  
 
          From hope and fear set free,  
@@ -201,8 +181,6 @@ That dead men rise up never;
 That even the weariest river  
 
          Winds somewhere safe to sea.  
-
-  
 
 Then star nor sun shall waken,  
 
@@ -221,4 +199,7 @@ Only the sleep eternal
          In an eternal night.
 
 ---
-###### "The world is quiet here."
+
+```text
+The world is quiet here．Esto Perpetua!
+```

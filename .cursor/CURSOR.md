@@ -1,4 +1,5 @@
 ---
+title: CURSOR
 authority: LOGAN
 related:
   - CURSOR
@@ -6,6 +7,6 @@ related:
   - runtime
 ---
 
-**.cursor** — Imported software runtime persona.
+**.cursor** â€” Imported software runtime persona.
 
 cursor runtime and configuration.

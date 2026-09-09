@@ -1,4 +1,5 @@
 ---
+title: "That's better than nothing. Thanks!"
 date: 2020-11-18
 time: 00:25:39
 tweet_id: "1328856860292616192"
@@ -14,11 +15,12 @@ related:
   - lfinneytweets
 ---
 
-That's better than nothing. Thanks! 
-https://t.co/RzNuZT5ziO
+That's better than nothing. Thanks!
+<https://t.co/RzNuZT5ziO>
 
 ## Links
-- https://x.com/IDHW/status/1328856303821873152
+
+- <https://x.com/IDHW/status/1328856303821873152>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

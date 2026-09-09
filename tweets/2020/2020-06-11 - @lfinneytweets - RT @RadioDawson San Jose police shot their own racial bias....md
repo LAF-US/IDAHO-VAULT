@@ -1,4 +1,5 @@
 ---
+title: "RT @RadioDawson San Jose police shot their own racial bias..."
 date: 2020-06-11
 time: 01:35:55
 tweet_id: "1270892487029055489"

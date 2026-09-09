@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoCapitalSun Top legislative leaders are working on..."
 date: 2021-10-06
 time: 05:15:08
 tweet_id: "1445618605412864013"

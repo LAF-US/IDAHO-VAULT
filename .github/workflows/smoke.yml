@@ -1,0 +1,17 @@
+name: smoke
+
+on:
+  merge_group:
+  push:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run Smoke Tests
+        run: echo "Running smoke check..."

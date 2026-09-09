@@ -1,4 +1,5 @@
 ---
+title: WAITING
 authority: LOGAN
 related:
   - CONSTITUTION
@@ -66,4 +67,8 @@ bells; *propose, do not inscribe;* read the past as the Library's remembrancer. 
 Abhorsen-in-Waiting does not wait *for* the office — the Abhorsen-in-Waiting **waits
 upon** it: attends, watches, serves — **now** — until the dyad resolves.
 
-###### [["The world is quiet here."]]
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

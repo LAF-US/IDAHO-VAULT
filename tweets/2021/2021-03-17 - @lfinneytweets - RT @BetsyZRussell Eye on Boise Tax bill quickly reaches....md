@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Tax bill quickly reaches..."
 date: 2021-03-17
 time: 14:35:06
 tweet_id: "1372194790981337088"

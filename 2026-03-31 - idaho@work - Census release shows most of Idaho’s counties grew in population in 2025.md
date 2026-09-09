@@ -5,7 +5,7 @@ author:
 published: 2026-03-31
 created: 2026-04-07
 ---
-**NEWS RELEASE** [![](https://i0.wp.com/idahoatwork.com/wp-content/uploads/2019/01/For-wordpress.png?resize=157%2C86&ssl=1)](https://idahoatwork.com/2019/01/08/serve-idaho-commission-announces-new-leadership/for-wordpress/)
+**NEWS RELEASE** [![alt text needed](https://i0.wp.com/idahoatwork.com/wp-content/uploads/2019/01/For-wordpress.png?resize=157%2C86&ssl=1)](https://idahoatwork.com/2019/01/08/serve-idaho-commission-announces-new-leadership/for-wordpress/)
 
 **For Immediate Release:** March 31, 2026  
 **Media Contact**: [Will.Hoenike@labor.idaho.gov](mailto:Will.Hoenike@labor.idaho.gov)
@@ -52,7 +52,7 @@ Three out of every four new residents statewide were a result of in-migration ov
 
 In contrast, in-migration accounted for less than 50% of total population growth for the south central, southeastern and eastern regions.
 
-**Figure 3. Labor market population growth, 2020-2025** ![](https://i0.wp.com/idahoatwork.com/wp-content/uploads/2026/03/Figure-3-1.png?w=633&ssl=1) Source: U.S. Census Bureau, “Annual Population Estimates, 2020-2025.”
+**Figure 3. Labor market population growth, 2020-2025** ![alt text needed](https://i0.wp.com/idahoatwork.com/wp-content/uploads/2026/03/Figure-3-1.png?w=633&ssl=1) Source: U.S. Census Bureau, “Annual Population Estimates, 2020-2025.”
 
 For more information on U.S. Census Bureau releases, visit [census.gov/data](https://www.census.gov/data.html).
 

@@ -1,4 +1,5 @@
 ---
+title: "The Senate approves funding for commemorative silver..."
 date: 2020-03-17
 time: 18:00:38
 tweet_id: "1239974941144932355"

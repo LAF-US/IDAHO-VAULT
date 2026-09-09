@@ -50,6 +50,7 @@ Cross-references in this document point to the **Google product** unless otherwi
 Google I/O 2026 ran **May 19–20, 2026** at Shoreline Amphitheatre with a free global livestream at `io.google`. Sundar Pichai's keynote framed the event as "the agentic Gemini era" — the through-line was a shift from AI that assists to **agents that act autonomously**.
 
 Three product spines:
+
 1. **Gemini 3.5 Flash** — shipped day-one as the default model across Google's surfaces; beats Gemini 3.1 Pro on coding / agentic / multimodal benchmarks at Flash-tier speed and price.
 2. **Antigravity 2.0** — Google's agent-first developer platform got a desktop app + CLI + SDK + Managed Agents tier in the Gemini API + enterprise deployment path. Default model: 3.5 Flash.
 3. **Hardware** — first consumer "intelligent eyewear" (audio glasses, this fall), Xreal Project Aura display glasses on Android XR (before end of 2026), and 8th-gen TPUs (split training / inference).
@@ -61,7 +62,7 @@ Adjacent: **Gemini Omni** (any-input-to-any-output model, starting with video); 
 ## SECTION 1 — CONFERENCE BASICS
 
 | | |
-|---|---|
+| --- | --- |
 | **Dates** | May 19–20, 2026 |
 | **Venue** | Shoreline Amphitheatre, Mountain View, CA |
 | **Livestream** | `io.google` (free, global) |
@@ -78,7 +79,7 @@ Adjacent: **Gemini Omni** (any-input-to-any-output model, starting with video); 
 GA on May 19, 2026. Pitched as "frontier intelligence + action."
 
 | Field | Value |
-|---|---|
+| --- | --- |
 | Input context | 1,048,576 tokens (~1M) |
 | Output context | 65,536 tokens |
 | Modalities in | text, image, audio, video |
@@ -92,6 +93,7 @@ GA on May 19, 2026. Pitched as "frontier intelligence + action."
 | Default location | Set as default across AI Mode, Antigravity, and Gemini app |
 
 **Benchmarks (beating Gemini 3.1 Pro):**
+
 - Terminal-Bench 2.1: 76.2%
 - MCP Atlas: 83.6%
 - CharXiv Reasoning: 84.2%
@@ -121,6 +123,7 @@ A new "any-input-to-any-output" model family — reasoning across modalities rat
 ### 3.1 Gemini App Overhaul
 
 **"Neural Expressive"** — new design language:
+
 - Fluid animations, vibrant color, haptics, new typography
 - Responses no longer walls of text — key info bolded at top, inline images, narrated videos, timelines, interactive visualizations
 - **Gemini Live** — moved from fullscreen to inline; can now generate NotebookLM-style podcast conversations (two AI hosts) from your docs, slides, Deep Research reports
@@ -145,6 +148,7 @@ A 24/7 personal AI agent.
 ### 3.3 Project Mariner — Folded In
 
 Worth recording for context: Google quietly **shut down Project Mariner on May 4, 2026** (two weeks before I/O). Its autonomous-browsing tech was absorbed into:
+
 - **Gemini Agent**
 - New Chrome **"auto-browse"** feature (multi-step tasks like researching flight costs)
 
@@ -194,6 +198,7 @@ Google announced the **Gemini CLI is being transitioned to the Antigravity CLI**
 ### 4.4 Managed Agents in the Gemini API
 
 A new API tier — single call spins up an agent with:
+
 - Reasoning
 - Tool use
 - Code execution in an **isolated Linux environment** (remote sandbox provisioned by Google)
@@ -214,6 +219,7 @@ Positioning: "fully provisioned agent + remote sandbox in one API call." Compare
 ### 4.7 Strategic Read (from coverage)
 
 Multiple recaps frame Antigravity 2.0 as Google's challenger move against:
+
 - **Anthropic's Claude Code** (CLI + agent-first dev)
 - **OpenAI's Codex / Assistants**
 - **Cursor / Windsurf** class of AI IDEs
@@ -235,7 +241,7 @@ Distinguishing claim: Google is shipping all four layers (desktop IDE + CLI + SD
 Google's first consumer "intelligent eyewear," shipping **this fall in the US**.
 
 | Field | Value |
-|---|---|
+| --- | --- |
 | Form | Audio glasses (no in-lens display) |
 | Platform partner | Samsung |
 | Design partners | Warby Parker, Gentle Monster (sold within their own collections) |
@@ -256,7 +262,7 @@ Google's first consumer "intelligent eyewear," shipping **this fall in the US**.
 The "real AR" showcase — distinct from the audio glasses.
 
 | Field | Value |
-|---|---|
+| --- | --- |
 | Display | Optical see-through, **70° field of view**, OLED (birdbath optics) |
 | Lens | Electrochromic dimming |
 | Compute | Split architecture: Xreal X1S spatial chip + Qualcomm Snapdragon XR platform |
@@ -298,6 +304,7 @@ Broader Android XR ecosystem partners announced at I/O: Samsung, Warby Parker, G
 ### 5.4 Samsung Galaxy XR (Context, NOT new at I/O)
 
 Cited in I/O roundups but launched **October 21, 2025** at **$1,799**.
+
 - Dual 3,552 × 3,840 micro-OLED, 90Hz
 - Snapdragon XR2+ Gen 2
 - 16 GB RAM
@@ -339,7 +346,8 @@ For journalism use. Verify each before publication.
 ## SECTION 8 — SOURCES
 
 ### Conference & Overview
-- Google Developers Blog — All the news from the I/O 2026 Developer keynote — https://developers.googleblog.com/
+
+- Google Developers Blog — All the news from the I/O 2026 Developer keynote — <https://developers.googleblog.com/>
 - blog.google — Sundar Pichai's opening keynote / "the agentic Gemini era"
 - blog.google — 100 things we announced at Google I/O 2026
 - 9to5Google — Everything Google announced at I/O 2026
@@ -348,10 +356,11 @@ For journalism use. Verify each before publication.
 - Tom's Guide — Biggest Google I/O 2026 announcements
 
 ### Gemini
+
 - llm-stats — Gemini 3.5 Flash launch specs/benchmarks
 - MarkTechPost — Gemini 3.5 Flash at I/O 2026
 - pricepertoken — Gemini 3.5 Flash API pricing
-- TechCrunch — Gemini Omni — https://techcrunch.com/
+- TechCrunch — Gemini Omni — <https://techcrunch.com/>
 - blog.google — Introducing Gemini Omni
 - 9to5Google — Gemini app: Neural Expressive, 3.5 Flash, Spark, Daily Brief
 - TechCrunch — Google introduces Gemini Spark
@@ -360,22 +369,24 @@ For journalism use. Verify each before publication.
 - AndroidHeadlines — Project Mariner shut down
 
 ### Antigravity
-- blog.google — I/O 2026 developer highlights: Antigravity, Gemini API, AI Studio — https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-developer-highlights/
-- Google Developers Blog — An important update: Transitioning Gemini CLI to Antigravity CLI — https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/
-- Google Developers Blog — Build with Google Antigravity, our new agentic development platform — https://developers.googleblog.com/build-with-google-antigravity-our-new-agentic-development-platform/
-- MarkTechPost — Google Launches Antigravity 2.0 at I/O 2026 — https://www.marktechpost.com/2026/05/19/google-launches-antigravity-2-0-at-i-o-2026-a-standalone-agent-first-platform-with-cli-sdk-managed-execution-and-enterprise-support/
-- ofox.ai — Google Antigravity 2.0: Gemini's Agent-First Desktop Platform Explained — https://ofox.ai/blog/google-antigravity-2-explained-gemini-desktop-agent-platform-2026/
-- jangwook.net — Google I/O 2026 Antigravity 2.0 — Gemini CLI Shutdown and Agent IDE War — https://jangwook.net/en/blog/en/google-io-2026-antigravity-2-agent-platform-analysis/
-- apidog — Google Antigravity 2.0: Agent-First Dev Platform Has Landed — https://apidog.com/blog/google-antigravity-2/
-- BrightCoding — Google AntiGravity 2.0: The AI IDE That Defies Development Gravity — https://www.blog.brightcoding.dev/2026/05/20/google-antigravity-20-the-ai-ide-that-defies-development-gravity-complete-guide-2026
-- Nerd Level Tech — Google Antigravity 2.0: Agentic Coding Platform 2026 — https://nerdleveltech.com/google-antigravity-2-agentic-coding-platform
-- The Next Web — Antigravity turns into a full agentic development platform with desktop app, CLI, and SDK — https://thenextweb.com/news/google-antigravity-2-desktop-cli-sdk-io-2026
-- Memeburn — New Google Antigravity 2.0: All-in-one AI Agentic DEV Suite — https://memeburn.com/new-google-antigravity-2-0-at-google-i-o-2026/
+
+- blog.google — I/O 2026 developer highlights: Antigravity, Gemini API, AI Studio — <https://blog.google/innovation-and-ai/technology/developers-tools/google-io-2026-developer-highlights/>
+- Google Developers Blog — An important update: Transitioning Gemini CLI to Antigravity CLI — <https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/>
+- Google Developers Blog — Build with Google Antigravity, our new agentic development platform — <https://developers.googleblog.com/build-with-google-antigravity-our-new-agentic-development-platform/>
+- MarkTechPost — Google Launches Antigravity 2.0 at I/O 2026 — <https://www.marktechpost.com/2026/05/19/google-launches-antigravity-2-0-at-i-o-2026-a-standalone-agent-first-platform-with-cli-sdk-managed-execution-and-enterprise-support/>
+- ofox.ai — Google Antigravity 2.0: Gemini's Agent-First Desktop Platform Explained — <https://ofox.ai/blog/google-antigravity-2-explained-gemini-desktop-agent-platform-2026/>
+- jangwook.net — Google I/O 2026 Antigravity 2.0 — Gemini CLI Shutdown and Agent IDE War — <https://jangwook.net/en/blog/en/google-io-2026-antigravity-2-agent-platform-analysis/>
+- apidog — Google Antigravity 2.0: Agent-First Dev Platform Has Landed — <https://apidog.com/blog/google-antigravity-2/>
+- BrightCoding — Google AntiGravity 2.0: The AI IDE That Defies Development Gravity — <https://www.blog.brightcoding.dev/2026/05/20/google-antigravity-20-the-ai-ide-that-defies-development-gravity-complete-guide-2026>
+- Nerd Level Tech — Google Antigravity 2.0: Agentic Coding Platform 2026 — <https://nerdleveltech.com/google-antigravity-2-agentic-coding-platform>
+- The Next Web — Antigravity turns into a full agentic development platform with desktop app, CLI, and SDK — <https://thenextweb.com/news/google-antigravity-2-desktop-cli-sdk-io-2026>
+- Memeburn — New Google Antigravity 2.0: All-in-one AI Agentic DEV Suite — <https://memeburn.com/new-google-antigravity-2-0-at-google-i-o-2026/>
 - Gadget Hacks (Android) — What Google Antigravity 2.0 and Managed Agents Mean for Devs
 - BigGo Finance — Google Antigravity 2.0 Launch: $100/Month AI Ultra Plan, New CLI, and SDK Challenge OpenAI and Anthropic
 - Uncrowned Addiction — Google I/O 2026 Unveils Antigravity 2.0, Gemini 3.5 Flash and Agent Tools
 
 ### Hardware
+
 - blog.google — Intelligent eyewear with Gemini this fall
 - Digital Trends — audio glasses by Gentle Monster & Warby Parker
 - 9to5Google — Xreal Project Aura launch 2026
@@ -387,4 +398,6 @@ For journalism use. Verify each before publication.
 
 ---
 
-###### [["The world is quiet here."]]
+```text
+The world is quiet here．Esto Perpetua!
+```

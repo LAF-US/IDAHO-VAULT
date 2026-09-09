@@ -1,4 +1,5 @@
 ---
+title: "RT @JasonLeopold I had filed a #FOIA with EPA for any..."
 date: 2018-04-08
 time: 08:18:00
 tweet_id: "982895322438352901"
@@ -18,7 +19,7 @@ related:
   - FOIA
 ---
 
-RT @JasonLeopold: I had filed a #FOIA with EPA for any records of death threats made against Scott Pruitt. 
+RT @JasonLeopold: I had filed a #FOIA with EPA for any records of death threats made against Scott Pruitt.
 
 EPA said it had zero recorss.…
 

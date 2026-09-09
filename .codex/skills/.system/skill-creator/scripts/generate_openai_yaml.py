@@ -39,7 +39,7 @@ SMALL_WORDS = {"and", "or", "to", "up", "with"}
 
 ALLOWED_INTERFACE_KEYS = {
     "display_name",
-    "sho***REMOVED***description",
+    "short_description",
     "icon_small",
     "icon_large",
     "brand_color",
@@ -71,7 +71,7 @@ def format_display_name(skill_name):
     return " ".join(formatted)
 
 
-def generate_sho***REMOVED***description(display_name):
+def generate_short_description(display_name):
     description = f"Help with {display_name} tasks"
 
     if len(description) < 25:
@@ -148,7 +148,7 @@ def parse_interface_overrides(raw_overrides):
             print(f"[ERROR] Unknown interface field '{key}'. Allowed: {allowed}")
             return None, None
         overrides[key] = value
-        if key not in ("display_name", "sho***REMOVED***description") and key not in optional_order:
+        if key not in ("display_name", "short_description") and key not in optional_order:
             optional_order.append(key)
     return overrides, optional_order
 
@@ -159,19 +159,19 @@ def write_openai_yaml(skill_dir, skill_name, raw_overrides):
         return None
 
     display_name = overrides.get("display_name") or format_display_name(skill_name)
-    sho***REMOVED***description = overrides.get("sho***REMOVED***description") or generate_sho***REMOVED***description(display_name)
+    short_description = overrides.get("short_description") or generate_short_description(display_name)
 
-    if not (25 <= len(sho***REMOVED***description) <= 64):
+    if not (25 <= len(short_description) <= 64):
         print(
-            "[ERROR] sho***REMOVED***description must be 25-64 characters "
-            f"(got {len(sho***REMOVED***description)})."
+            "[ERROR] short_description must be 25-64 characters "
+            f"(got {len(short_description)})."
         )
         return None
 
     interface_lines = [
         "interface:",
         f"  display_name: {yaml_quote(display_name)}",
-        f"  sho***REMOVED***description: {yaml_quote(sho***REMOVED***description)}",
+        f"  short_description: {yaml_quote(short_description)}",
     ]
 
     for key in optional_order:

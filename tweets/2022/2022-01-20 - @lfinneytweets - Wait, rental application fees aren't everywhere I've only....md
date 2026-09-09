@@ -1,4 +1,5 @@
 ---
+title: "Wait, rental application fees aren't everywhere I've only..."
 date: 2022-01-20
 time: 21:25:39
 tweet_id: "1484275956290232320"

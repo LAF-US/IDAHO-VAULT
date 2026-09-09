@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise @idahoednews Idaho's 2..."
 date: 2020-04-13
 time: 04:43:17
 tweet_id: "1249558752866349059"

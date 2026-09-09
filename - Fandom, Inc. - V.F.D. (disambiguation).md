@@ -115,51 +115,51 @@ This list only includes instances of V.F.D. found in the [Netflix TV series](htt
 - **Vastly Frightening Decision** – within [a miserable message](https://snicket.fandom.com/wiki/File:A_Series_of_Unfortunate_Events_A_Miserable_Message_Netflix "File:A Series of Unfortunate Events A Miserable Message Netflix") from Netflix.
 - **Vastly Frightening Debut** – in a Facebook message of season 2 trailer.[^2]
 - Netflix created numerous [secret websites](https://snicket.fandom.com/wiki/A_Series_of_Unfortunate_Events_\(TV_series\)#Secret_websites "A Series of Unfortunate Events (TV series)") using V.F.D. terms. Most of these terms are already listed on this page but a couple have not been otherwise mentioned:
-	- VarietiesForDrugs.com [^3]
-		- VariousFosteringDenouement.com [^4]
+  - VarietiesForDrugs.com [^3]
+    - VariousFosteringDenouement.com [^4]
 
 ### Season 1
 
-- **Volunteer Fire Department** – said by Lemony Snicket in " [The Bad Beginning: Part One](https://snicket.fandom.com/wiki/The_Bad_Beginning:_Pa***REMOVED***One "The Bad Beginning: Part One") ". (The term is mentioned fairly early on in the tv series compared to the books; the first mention in the books is in *[The Slippery Slope](https://snicket.fandom.com/wiki/The_Slippery_Slope "The Slippery Slope")*.)
-- **Vigorously Fixed Destination** – said by Jacquelyn to the Baudelaires in " [The Bad Beginning: Part Two](https://snicket.fandom.com/wiki/The_Bad_Beginning:_Pa***REMOVED***Two "The Bad Beginning: Part Two") " and later repeated by [Count Olaf](https://snicket.fandom.com/wiki/Count_Olaf "Count Olaf") to his troupe.
-- **Very Fitting Definition** – said in " [The Reptile Room: Part One](https://snicket.fandom.com/wiki/The_Reptile_Room:_Pa***REMOVED***One "The Reptile Room: Part One") " by Uncle Monty describing Klaus' definition of the word "misnomer".
-- **Verified Film Discount** – mentioned in " [The Reptile Room: Part One](https://snicket.fandom.com/wiki/The_Reptile_Room:_Pa***REMOVED***One "The Reptile Room: Part One") " when Uncle Monty goes to buy tickets.
+- **Volunteer Fire Department** – said by Lemony Snicket in " [The Bad Beginning: Part One](https://snicket.fandom.com/wiki/The_Bad_Beginning:_Part_One "The Bad Beginning: Part One") ". (The term is mentioned fairly early on in the tv series compared to the books; the first mention in the books is in *[The Slippery Slope](https://snicket.fandom.com/wiki/The_Slippery_Slope "The Slippery Slope")*.)
+- **Vigorously Fixed Destination** – said by Jacquelyn to the Baudelaires in " [The Bad Beginning: Part Two](https://snicket.fandom.com/wiki/The_Bad_Beginning:_Part_Two "The Bad Beginning: Part Two") " and later repeated by [Count Olaf](https://snicket.fandom.com/wiki/Count_Olaf "Count Olaf") to his troupe.
+- **Very Fitting Definition** – said in " [The Reptile Room: Part One](https://snicket.fandom.com/wiki/The_Reptile_Room:_Part_One "The Reptile Room: Part One") " by Uncle Monty describing Klaus' definition of the word "misnomer".
+- **Verified Film Discount** – mentioned in " [The Reptile Room: Part One](https://snicket.fandom.com/wiki/The_Reptile_Room:_Part_One "The Reptile Room: Part One") " when Uncle Monty goes to buy tickets.
 - **Vitiated Film Distribution** – in the intro credits to *[Zombies in the Snow](https://snicket.fandom.com/wiki/Zombies_in_the_Snow "Zombies in the Snow")* and on the film's poster in "The Reptile Room: Part One".
-- **Vincent Fig Demetrios** – a female news reporter mentioned in the beginning of " [The Wide Window: Part One](https://snicket.fandom.com/wiki/The_Wide_Window:_Pa***REMOVED***One "The Wide Window: Part One") " along with a man named Veronica, possibly also a V.F.D.
-- **Very Flavorful Desserts** – on shop window from which Larry gets a stack of pies from in " [The Wide Window: Part One](https://snicket.fandom.com/wiki/The_Wide_Window:_Pa***REMOVED***One "The Wide Window: Part One") ".
-- **Very Fresh Dill** – mentioned in " [The Wide Window: Part One](https://snicket.fandom.com/wiki/The_Wide_Window:_Pa***REMOVED***One "The Wide Window: Part One") " by a merchant trying to sell it. (It was also mentioned in the books in *The Slippery Slope* where it is used to signify a message in [Verbal Fridge Dialogue](https://snicket.fandom.com/wiki/Verbal_Fridge_Dialogue "Verbal Fridge Dialogue").)
-- **Very Far Distant** – a telegram company used for the message the Quagmire parents are seen decoding near the end of " [The Wide Window: Part One](https://snicket.fandom.com/wiki/The_Wide_Window:_Pa***REMOVED***One "The Wide Window: Part One") ".
-- **Vastly Frightening Decision** – said by Aunt Josephine to the Baudelaires in " [The Wide Window: Part Two](https://snicket.fandom.com/wiki/The_Wide_Window:_Pa***REMOVED***Two "The Wide Window: Part Two") ".
-- **Verified Functional Dictionary** – book found by Sunny in " [The Miserable Mill: Part One](https://snicket.fandom.com/wiki/The_Miserable_Mill:_Pa***REMOVED***One "The Miserable Mill: Part One") " which Violet and Klaus used in " [The Miserable Mill: Part Two](https://snicket.fandom.com/wiki/The_Miserable_Mill:_Pa***REMOVED***Two "The Miserable Mill: Part Two") " to try and find the key word that reverses the mill workers' hypnosis.
-- **Very Fancy Door** - said by Foreman Flacutono and Charles in " [The Miserable Mill: Part One](https://snicket.fandom.com/wiki/The_Miserable_Mill:_Pa***REMOVED***One "The Miserable Mill: Part One") ".
-- **Vigorous Fire Defense** - Mrs. Quagmire talks about mounting one in " [The Miserable Mill: Part Two](https://snicket.fandom.com/wiki/The_Miserable_Mill:_Pa***REMOVED***Two "The Miserable Mill: Part Two") ".
+- **Vincent Fig Demetrios** – a female news reporter mentioned in the beginning of " [The Wide Window: Part One](https://snicket.fandom.com/wiki/The_Wide_Window:_Part_One "The Wide Window: Part One") " along with a man named Veronica, possibly also a V.F.D.
+- **Very Flavorful Desserts** – on shop window from which Larry gets a stack of pies from in " [The Wide Window: Part One](https://snicket.fandom.com/wiki/The_Wide_Window:_Part_One "The Wide Window: Part One") ".
+- **Very Fresh Dill** – mentioned in " [The Wide Window: Part One](https://snicket.fandom.com/wiki/The_Wide_Window:_Part_One "The Wide Window: Part One") " by a merchant trying to sell it. (It was also mentioned in the books in *The Slippery Slope* where it is used to signify a message in [Verbal Fridge Dialogue](https://snicket.fandom.com/wiki/Verbal_Fridge_Dialogue "Verbal Fridge Dialogue").)
+- **Very Far Distant** – a telegram company used for the message the Quagmire parents are seen decoding near the end of " [The Wide Window: Part One](https://snicket.fandom.com/wiki/The_Wide_Window:_Part_One "The Wide Window: Part One") ".
+- **Vastly Frightening Decision** – said by Aunt Josephine to the Baudelaires in " [The Wide Window: Part Two](https://snicket.fandom.com/wiki/The_Wide_Window:_Part_Two "The Wide Window: Part Two") ".
+- **Verified Functional Dictionary** – book found by Sunny in " [The Miserable Mill: Part One](https://snicket.fandom.com/wiki/The_Miserable_Mill:_Part_One "The Miserable Mill: Part One") " which Violet and Klaus used in " [The Miserable Mill: Part Two](https://snicket.fandom.com/wiki/The_Miserable_Mill:_Part_Two "The Miserable Mill: Part Two") " to try and find the key word that reverses the mill workers' hypnosis.
+- **Very Fancy Door** - said by Foreman Flacutono and Charles in " [The Miserable Mill: Part One](https://snicket.fandom.com/wiki/The_Miserable_Mill:_Part_One "The Miserable Mill: Part One") ".
+- **Vigorous Fire Defense** - Mrs. Quagmire talks about mounting one in " [The Miserable Mill: Part Two](https://snicket.fandom.com/wiki/The_Miserable_Mill:_Part_Two "The Miserable Mill: Part Two") ".
 
 ### Season 2
 
-- **Victoriously Final Days** – Carmelita Spats says this to Larry the Waiter near the end of " [The Austere Academy: Part One](https://snicket.fandom.com/wiki/The_Austere_Academy:_Pa***REMOVED***One "The Austere Academy: Part One") ".
-- **Very Flavorable Dew** - seen on a page about [Ike Anwhistle](https://snicket.fandom.com/wiki/Ike_Anwhistle "Ike Anwhistle") in [The Incomplete History of Secret Organizations](https://snicket.fandom.com/wiki/The_Incomplete_History_of_Secret_Organizations "The Incomplete History of Secret Organizations") in " [The Austere Academy: Part Two](https://snicket.fandom.com/wiki/The_Austere_Academy:_Pa***REMOVED***Two "The Austere Academy: Part Two") ".
+- **Victoriously Final Days** – Carmelita Spats says this to Larry the Waiter near the end of " [The Austere Academy: Part One](https://snicket.fandom.com/wiki/The_Austere_Academy:_Part_One "The Austere Academy: Part One") ".
+- **Very Flavorable Dew** - seen on a page about [Ike Anwhistle](https://snicket.fandom.com/wiki/Ike_Anwhistle "Ike Anwhistle") in [The Incomplete History of Secret Organizations](https://snicket.fandom.com/wiki/The_Incomplete_History_of_Secret_Organizations "The Incomplete History of Secret Organizations") in " [The Austere Academy: Part Two](https://snicket.fandom.com/wiki/The_Austere_Academy:_Part_Two "The Austere Academy: Part Two") ".
 - **Verified Functional Draft** - seen on a page about [Ike Anwhistle](https://snicket.fandom.com/wiki/Ike_Anwhistle "Ike Anwhistle") in [The Incomplete History of Secret Organizations](https://snicket.fandom.com/wiki/The_Incomplete_History_of_Secret_Organizations "The Incomplete History of Secret Organizations") in "The Austere Academy: Part Two".
-- **Virulently Fishy Decor** – said by Larry in " [The Ersatz Elevator: Part One](https://snicket.fandom.com/wiki/The_Ersatz_Elevator:_Pa***REMOVED***One "The Ersatz Elevator: Part One") ".
+- **Virulently Fishy Decor** – said by Larry in " [The Ersatz Elevator: Part One](https://snicket.fandom.com/wiki/The_Ersatz_Elevator:_Part_One "The Ersatz Elevator: Part One") ".
 - **Vigorously Fancy Dining** – Jacquelyn says this in "The Ersatz Elevator: Part One".
-- **Very Fond Dates** – from description of [lot 49](https://snicket.fandom.com/wiki/Very_Fancy_Doilies "Very Fancy Doilies") in [In Auction](https://snicket.fandom.com/wiki/In_Auction "In Auction") catalog in " [The Ersatz Elevator: Part Two](https://snicket.fandom.com/wiki/The_Ersatz_Elevator:_Pa***REMOVED***Two "The Ersatz Elevator: Part Two") ".
+- **Very Fond Dates** – from description of [lot 49](https://snicket.fandom.com/wiki/Very_Fancy_Doilies "Very Fancy Doilies") in [In Auction](https://snicket.fandom.com/wiki/In_Auction "In Auction") catalog in " [The Ersatz Elevator: Part Two](https://snicket.fandom.com/wiki/The_Ersatz_Elevator:_Part_Two "The Ersatz Elevator: Part Two") ".
 - **Very Fancy Dinner** – from description of lot 49 in In Auction catalog in "The Ersatz Elevator: Part Two".
 - **Very Fast Dialogue** – from description of lot 49 in In Auction catalog in "The Ersatz Elevator: Part Two".
 - **Very Fancy Doilies** - said Gunther when the Baudelaires open the V.F.D. box in "The Ersatz Elevator: Part Two".
 - **Village of Fowl Devotees** - said by Hector to the Baudelaires when they ask what V.F.D. stands for in "The Vile Village: Part One".
 - **Volunteers Fighting Disease** - said by one of the volunteers in "The Hostile Hospital: Part One".
-- **Vicious Feline Display** – on poster at [Caligari Carnival](https://snicket.fandom.com/wiki/Caligari_Carnival "Caligari Carnival") in " [The Carnivorous Carnival: Part One](https://snicket.fandom.com/wiki/The_Carnivorous_Carnival:_Pa***REMOVED***One "The Carnivorous Carnival: Part One") ".
+- **Vicious Feline Display** – on poster at [Caligari Carnival](https://snicket.fandom.com/wiki/Caligari_Carnival "Caligari Carnival") in " [The Carnivorous Carnival: Part One](https://snicket.fandom.com/wiki/The_Carnivorous_Carnival:_Part_One "The Carnivorous Carnival: Part One") ".
 - **Various Fakery Disguises** – sign on [Madame Lulu](https://snicket.fandom.com/wiki/Madame_Lulu "Madame Lulu") 's closet in "The Carnivorous Carnival: Part One". In the books, a similar term, "Various Finery Disguises", is used.
 
 ### Season 3
 
-- **Very Furtive Disguise** – said by Quigley Quagmire in " [The Slippery Slope: Part One](https://snicket.fandom.com/wiki/The_Slippery_Slope:_Pa***REMOVED***One "The Slippery Slope: Part One") ".
+- **Very Furtive Disguise** – said by Quigley Quagmire in " [The Slippery Slope: Part One](https://snicket.fandom.com/wiki/The_Slippery_Slope:_Part_One "The Slippery Slope: Part One") ".
 - **Vastly Frightening Danger** – said by Klaus in "The Slippery Slope: Part One".
 - **Vain Fashionable Divas** - said by Violet in "The Slippery Slope: Part One".
 - **Veritable Fake Death** – Appears on a V.F.D. award in "The Slippery Slope: Part Two".
 - **Very Fine Dramatists** – Appears on a V.F.D. award in "The Slippery Slope: Part Two".
 - **Volunteer Farmers Delight** – Appears on V.F.D. jam bottles in "The Slippery Slope: Part Two".
 - **Viciously Fraught Dilemma** - said by Kit in "The Grim Grotto: Part One'".
-- **Very Fancy Doctors** - read by Klaus in " [The Grim Grotto: Part Two](https://snicket.fandom.com/wiki/The_Grim_Grotto:_Pa***REMOVED***Two "The Grim Grotto: Part Two") ".
+- **Very Fancy Doctors** - read by Klaus in " [The Grim Grotto: Part Two](https://snicket.fandom.com/wiki/The_Grim_Grotto:_Part_Two "The Grim Grotto: Part Two") ".
 - **Vernacularly Fastened Door** - said by Lemony in "Penultimate Peril: Part One".
 
 ## Video game

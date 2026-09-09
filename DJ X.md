@@ -4,4 +4,4 @@ related:
 - Spotify
 ---
 
-Spotify 
+Spotify
