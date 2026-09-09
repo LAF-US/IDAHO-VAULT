@@ -26,17 +26,19 @@ Master index for Alola's Island Kahunas, Trial Captains, Elite Four, and Champio
 ## Island Kahunas (4)
 
 | # | Kahuna | Island | Type | Z-Crystal | E1 | E2 |
-|---|--------|--------|------|-----------|----|----|
+| --- | -------- | -------- | ------ | ----------- | ---- | ---- |
 | 1 | **Hala** | Melemele Island | Fighting | Fightinium Z | Yes | Yes |
 | 2 | **Olivia** | Akala Island | Rock | Rockium Z | Yes | Yes |
 | 3 | **Nanu** | Ula'ula Island | Dark | Darkinium Z | Yes | Yes |
 | 4 | **Hapu** | Poni Island | Ground | Groundium Z | Yes | Yes |
 
 ### Notes
+
 - Each of Alola's four islands has exactly one Island Kahuna: Hala (Melemele), Olivia (Akala), Nanu (Ula'ula), Hapu (Poni).
 - Nanu specializes in **Dark** types on **Ula'ula** Island (not Ice/Poni).
 
 ### Individual Files
+
 - [ ] Hala
 - [ ] Olivia
 - [ ] Nanu
@@ -49,7 +51,7 @@ Master index for Alola's Island Kahunas, Trial Captains, Elite Four, and Champio
 These characters run Island Trials; they are **not** Island Kahunas.
 
 | Captain | Island | Type |
-|---------|--------|------|
+| --------- | -------- | ------ |
 | **Ilima** | Melemele | Normal |
 | **Lana** | Akala | Water |
 | **Kiawe** | Akala | Fire |
@@ -59,6 +61,7 @@ These characters run Island Trials; they are **not** Island Kahunas.
 | **Mina** | Poni | Fairy |
 
 ### Individual Files
+
 - [ ] Ilima
 - [ ] Lana
 - [ ] Kiawe
@@ -72,17 +75,19 @@ These characters run Island Trials; they are **not** Island Kahunas.
 ## Elite Four (4)
 
 | # | Member | Type | E1 (SM) | E2 (USUM) |
-|---|--------|------|---------|-----------|
+| --- | -------- | ------ | --------- | ----------- |
 | 1 | **Hala** (SM) / **Molayne** (USUM) | Fighting (Hala) / Steel (Molayne) | Yes (Hala) | Yes (Molayne) |
 | 2 | **Olivia** | Rock | Yes | Yes |
 | 3 | **Acerola** | Ghost | Yes | Yes |
 | 4 | **Kahili** | Flying | Yes | Yes |
 
 ### Notes
+
 - Sun/Moon Elite Four: Hala, Olivia, Acerola, Kahili.
 - Ultra Sun/Ultra Moon: Molayne (Steel) replaces Hala; Olivia, Acerola, and Kahili remain.
 
 ### Individual Files
+
 - [ ] Hala
 - [ ] Molayne
 - [ ] Olivia
@@ -98,10 +103,12 @@ These characters run Island Trials; they are **not** Island Kahunas.
 | **Hau** | Mixed | No | Yes |
 
 ### Notes
+
 - Sun/Moon: No traditional Champion; player becomes Champion
 - Ultra Sun/Ultra Moon: Hau serves as Champion
 
 ### Individual Files
+
 - [ ] Hau
 
 ---
@@ -109,7 +116,7 @@ These characters run Island Trials; they are **not** Island Kahunas.
 ## Research Status
 
 | Category | Total | Completed | Remaining | % |
-|----------|-------|-----------|-----------|---|
+| ---------- | ------- | ----------- | ----------- | --- |
 | Island Kahunas | 4 | 0 | 4 | 0% |
 | Trial Captains | 7 | 0 | 7 | 0% |
 | Elite Four | 5 | 0 | 5 | 0% |
@@ -119,6 +126,7 @@ These characters run Island Trials; they are **not** Island Kahunas.
 ---
 
 ## Next Steps
+
 1. Start with **Hala** (Melemele Island Kahuna)
 2. Use adapted template for Island Kahunas
 

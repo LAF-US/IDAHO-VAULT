@@ -1,4 +1,5 @@
 ---
+title: "RT @kiphillreporter To longtime observers of the court,..."
 date: 2022-06-26
 time: 19:07:25
 tweet_id: "1541136066865876992"

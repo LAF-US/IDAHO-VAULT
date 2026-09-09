@@ -11,7 +11,7 @@ is a novel by Alexandre Dumas.
 
 ## Films
 
-- *The Count of Monte Cristo*, a 1908 silent film starring [Hobart Bosworth](https://en.wikipedia.org/wiki/Hoba***REMOVED***Bosworth#Selected_filmography "Hobart Bosworth")
+- *The Count of Monte Cristo*, a 1908 silent film starring [Hobart Bosworth](https://en.wikipedia.org/wiki/Hobart_Bosworth#Selected_filmography "Hobart Bosworth")
 - [*The Count of Monte Cristo* (1913 film)](https://en.wikipedia.org/wiki/The_Count_of_Monte_Cristo_\(1913_film\) "The Count of Monte Cristo (1913 film)"), a silent film starring James O'Neill
 - [*The Count of Monte Cristo* (1918 series)](https://en.wikipedia.org/wiki/The_Count_of_Monte_Cristo_\(1918_series\) "The Count of Monte Cristo (1918 series)"), a silent-film serial starring Léon Mathot
 - [*Monte Cristo* (1922 film)](https://en.wikipedia.org/wiki/Monte_Cristo_\(1922_film\) "Monte Cristo (1922 film)"), a silent film starring John Gilbert

@@ -63,7 +63,7 @@ partly in how they blur:
 
 ## The map
 
-```
+```text
 ESOTERIC CORE (correspondence: "as above, so below")
     Hermeticism ── the root
       ├─ Alchemy ── Alchemical symbols
@@ -140,4 +140,8 @@ concern made concrete across twelve historical systems (see [[GRIMOIRE]] and
 `VAULT-CONVENTIONS.md`). It is filed here as the cluster's front door, on the
 record per [[VAULT-CONVENTIONS]].
 
-###### [["The world is quiet here."]]
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

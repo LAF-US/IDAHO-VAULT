@@ -1,4 +1,5 @@
 ---
+title: "RT @ndrew_lawrence in an attempt to distract from..."
 date: 2024-08-01
 time: 03:34:53
 tweet_id: "1818852878406369387"

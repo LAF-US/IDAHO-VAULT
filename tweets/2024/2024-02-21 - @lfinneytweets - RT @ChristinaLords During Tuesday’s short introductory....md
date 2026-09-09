@@ -1,4 +1,5 @@
 ---
+title: "RT @ChristinaLords During Tuesday\u2019s short introductory..."
 date: 2024-02-21
 time: 00:33:34
 tweet_id: "1760100414727573616"

@@ -5,4 +5,4 @@ related:
 - House member
 authority: LOGAN
 ---
-- House member for LD19 
+- House member for LD19

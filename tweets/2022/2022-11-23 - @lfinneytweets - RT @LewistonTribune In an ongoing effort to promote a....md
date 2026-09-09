@@ -1,4 +1,5 @@
 ---
+title: "RT @LewistonTribune In an ongoing effort to promote a..."
 date: 2022-11-23
 time: 03:20:36
 tweet_id: "1595255971387166720"

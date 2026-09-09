@@ -4,4 +4,4 @@ related:
 - morphine
 authority: LOGAN
 ---
-morphine heroin painkillers fentanyl 
+morphine heroin painkillers fentanyl

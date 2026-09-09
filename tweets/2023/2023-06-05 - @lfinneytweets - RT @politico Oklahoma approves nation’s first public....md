@@ -1,4 +1,5 @@
 ---
+title: "RT @politico Oklahoma approves nation\u2019s first public..."
 date: 2023-06-05
 time: 22:39:50
 tweet_id: "1665850947887853568"
@@ -15,9 +16,10 @@ related:
   - lfinneytweets
 ---
 
-RT @politico: Oklahoma approves nation’s first public religious charter school https://t.co/ZYcfVL8COJ
+RT @politico: Oklahoma approves nation’s first public religious charter school <https://t.co/ZYcfVL8COJ>
 
 ## Links
-- http://ow.ly/Ryqh104Jxcv
+
+- <http://ow.ly/Ryqh104Jxcv>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1665850947887853568)

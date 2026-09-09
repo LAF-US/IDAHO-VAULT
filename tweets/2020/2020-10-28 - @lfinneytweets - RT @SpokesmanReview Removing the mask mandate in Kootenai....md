@@ -1,4 +1,5 @@
 ---
+title: "RT @SpokesmanReview Removing the mask mandate in Kootenai..."
 date: 2020-10-28
 time: 00:06:58
 tweet_id: "1321242012922736640"

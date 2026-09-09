@@ -1,4 +1,5 @@
 ---
+title: "The job of journalism isn't to convince both sides that..."
 date: 2018-05-01
 time: 18:37:43
 tweet_id: "991386199313956864"

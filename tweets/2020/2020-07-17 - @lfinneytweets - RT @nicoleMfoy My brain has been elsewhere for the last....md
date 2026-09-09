@@ -1,4 +1,5 @@
 ---
+title: "RT @nicoleMfoy My brain has been elsewhere for the last..."
 date: 2020-07-17
 time: 02:57:14
 tweet_id: "1283958915328180230"

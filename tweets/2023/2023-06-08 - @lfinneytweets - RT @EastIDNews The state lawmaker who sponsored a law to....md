@@ -1,4 +1,5 @@
 ---
+title: "RT @EastIDNews The state lawmaker who sponsored a law to..."
 date: 2023-06-08
 time: 16:51:47
 tweet_id: "1666850520584290304"

@@ -1,4 +1,5 @@
 ---
+title: "One of my grandfather's friends. Small world."
 date: 2021-08-06
 time: 00:35:03
 tweet_id: "1423442461662203905"

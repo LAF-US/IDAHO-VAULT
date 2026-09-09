@@ -1,4 +1,5 @@
 ---
+title: "RT @OPB The Oregon House voted Tuesday to cut the Oregon..."
 date: 2021-06-09
 time: 02:15:01
 tweet_id: "1402449120669827073"

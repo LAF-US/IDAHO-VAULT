@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports A new Idaho law requiring proof of..."
 date: 2023-07-06
 time: 21:39:27
 tweet_id: "1677069776429150208"

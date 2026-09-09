@@ -1,4 +1,5 @@
 ---
+title: "at last, our long statewide nightmare is over (i'm in)"
 date: 2024-10-16
 time: 01:07:00
 tweet_id: "1846357138593202518"

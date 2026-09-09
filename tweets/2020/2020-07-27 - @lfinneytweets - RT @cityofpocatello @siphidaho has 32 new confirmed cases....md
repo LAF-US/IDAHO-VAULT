@@ -1,4 +1,5 @@
 ---
+title: "RT @cityofpocatello @siphidaho has 32 new confirmed cases..."
 date: 2020-07-27
 time: 23:50:29
 tweet_id: "1287898182655946756"

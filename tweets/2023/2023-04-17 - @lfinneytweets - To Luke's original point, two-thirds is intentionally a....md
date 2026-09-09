@@ -1,4 +1,5 @@
 ---
+title: "To Luke's original point, two-thirds is intentionally a..."
 date: 2023-04-17
 time: 18:32:07
 tweet_id: "1648031601023139840"

@@ -1,4 +1,5 @@
 ---
+title: "Those maps will decide legislative and congressional..."
 date: 2021-10-13
 time: 04:06:54
 tweet_id: "1448138150539264001"

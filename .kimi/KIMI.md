@@ -1,4 +1,5 @@
 ---
+title: KIMI
 authority: LOGAN
 related:
   - KIMI

@@ -51,7 +51,7 @@ An Idaho bill would require graduates of the state’s WWAMI program to practice
 
 WWAMI is part of the University of Washington’s School of Medicine, but every applicant who joins the Idaho branch is an Idaho resident. The school admits about 40 students per year. Some seats are reserved for Idaho students at the University of Utah.
 
-The Idaho Legislature has also passed a resolution [stating its intentions to fund](https://legislature.idaho.gov/sessioninfo/2022/legislation/HCR038/)  10 more seats for Idaho students in the WWAMI program beginning in 2025. 
+The Idaho Legislature has also passed a resolution [stating its intentions to fund](https://legislature.idaho.gov/sessioninfo/2022/legislation/HCR038/)  10 more seats for Idaho students in the WWAMI program beginning in 2025.
 
 The program costs about $80,000 per year at the University of Idaho, with state support covering roughly half of tuition.
 

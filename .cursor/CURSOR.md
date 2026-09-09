@@ -1,4 +1,5 @@
 ---
+title: CURSOR
 authority: LOGAN
 related:
   - CURSOR

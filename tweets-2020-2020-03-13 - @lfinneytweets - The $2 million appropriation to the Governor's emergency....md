@@ -18,9 +18,10 @@ related:
   - COVID19
 ---
 
-The $2 million appropriation to the Governor's emergency fund was approved unanimously by both houses of the legislature. An additional $4.5 million is expected from the federal coronavirus response package. #idleg #COVID19 https://t.co/j7lCOXEc0z
+The $2 million appropriation to the Governor's emergency fund was approved unanimously by both houses of the legislature. An additional $4.5 million is expected from the federal coronavirus response package. #idleg #COVID19 <https://t.co/j7lCOXEc0z>
 
 ## Links
-- https://x.com/GovernorLittle/status/1238545842870423558
+
+- <https://x.com/GovernorLittle/status/1238545842870423558>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1238568888305979392)

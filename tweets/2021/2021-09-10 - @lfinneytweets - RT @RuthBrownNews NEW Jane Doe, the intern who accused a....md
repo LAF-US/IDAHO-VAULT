@@ -1,4 +1,5 @@
 ---
+title: "RT @RuthBrownNews NEW Jane Doe, the intern who accused a..."
 date: 2021-09-10
 time: 18:50:33
 tweet_id: "1436401725863120896"

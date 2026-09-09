@@ -1,4 +1,5 @@
 ---
+title: "Today was... #idleg #idpol"
 date: 2022-09-02
 time: 02:08:18
 tweet_id: "1565521972104024064"

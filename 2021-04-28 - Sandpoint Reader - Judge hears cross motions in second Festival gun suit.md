@@ -46,7 +46,7 @@ Attorney and guns rights advocate Alexandria Kincaid, representing the plaintiff
 
 Upon filing the case, Herndon et al. alleged that in being denied entry to the Festival while in possession of firearms, their Second, Fourth and 14th Amendment rights had been violated. Kincaid shared at the April 26 hearing that the plaintiffs would no longer be making the Fourth Amendment argument, which deals with searches and seizures.
 
-In a series of back-and-forth rebuttals peppered with questions from Haynes, Kincaid and Peter Erbland — of Coeur d’Alene-based Lake City Law, representing the city of Sandpoint — along with Festival attorney Arthur Bistline debated the application of Idaho’s concealed weapons code, which states: “The Legislature hereby finds that the people of Idaho have reserved for themselves the right to keep and bear arms while granting the Legislature the authority to regulate the carrying of weapons concealed.” 
+In a series of back-and-forth rebuttals peppered with questions from Haynes, Kincaid and Peter Erbland — of Coeur d’Alene-based Lake City Law, representing the city of Sandpoint — along with Festival attorney Arthur Bistline debated the application of Idaho’s concealed weapons code, which states: “The Legislature hereby finds that the people of Idaho have reserved for themselves the right to keep and bear arms while granting the Legislature the authority to regulate the carrying of weapons concealed.”
 
 Because War Memorial Field is public land, plaintiffs argue the right to carry can’t be abridged. However, defendants argue that in leasing the property for two weeks each summer, the Festival assumes all rule-making ability, and the city has played no part in restricting firearms.
 

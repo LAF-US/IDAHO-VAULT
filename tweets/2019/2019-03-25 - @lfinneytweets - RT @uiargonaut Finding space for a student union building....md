@@ -1,4 +1,5 @@
 ---
+title: "RT @uiargonaut Finding space for a student union building..."
 date: 2019-03-25
 time: 01:12:20
 tweet_id: "1109986340987269120"
@@ -16,6 +17,6 @@ related:
 ---
 
 RT @uiargonaut: Finding space for a student union building should be a priority at UI
-Read Lindsay's full opinion here. https://t.co/yF5vZE…
+Read Lindsay's full opinion here. <https://t.co/yF5vZE…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1109986340987269120)

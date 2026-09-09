@@ -1,9 +1,18 @@
 #!/usr/bin/env sh
 set -eu
 
-python .github/scripts/sync_obsidian_plugin_registry.py --write
-git add manifest.json swarm.json
-python .github/scripts/sync_obsidian_plugin_registry.py --check
+# Only regenerate/stage the plugin registry when it's actually out of sync.
+# Previously this unconditionally wrote+staged manifest.json/swarm.json on
+# every commit; combined with the old filesystem-glob-based generator, a
+# linked worktree missing a main-checkout-only gitignored plugin dir would
+# see "drift" and silently stage a destructive registry rewrite on commits
+# that never touched plugin state. The generator is now git-tracked-index
+# based (see #514), so this should only fire on genuine tracked-input drift.
+if ! python .github/scripts/sync_obsidian_plugin_registry.py --check; then
+  python .github/scripts/sync_obsidian_plugin_registry.py --write
+  git add manifest.json swarm.json
+  python .github/scripts/sync_obsidian_plugin_registry.py --check
+fi
 python .github/scripts/laf_usb_manifest.py LAF-USB-OBJECT-MANIFEST*.json
 python .github/scripts/check_secret_patterns.py --staged
 python .github/scripts/check_large_files.py --staged

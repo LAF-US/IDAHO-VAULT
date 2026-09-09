@@ -11,7 +11,7 @@ created: 2026-04-17
 
 New Python content every day. Follow to join our 3.5M+ monthly readers.
 
-![](https://miro.medium.com/v2/resize:fit:1400/format:webp/0*h3zuv2gr6OBa8lgl)
+![alt text needed](https://miro.medium.com/v2/resize:fit:1400/format:webp/0*h3zuv2gr6OBa8lgl)
 
 Photo by Owen Beard on Unsplash
 
@@ -49,7 +49,7 @@ I wired up an FAQ bot in two hours, but when I tried adding dynamic data fetchin
 
 Dialogflow CX is slick if you’re already deep in Google Cloud. Intents, entities, and flows are easy to define. Plus, its built-in…
 
-## Logan, become a member to read this story, and all of Medium.
+## Logan, become a member to read this story, and all of Medium
 
 Muhummad Zaki put this story behind our paywall, so it’s only available to read with a paid Medium membership, which comes with a host of benefits:
 

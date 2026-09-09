@@ -18,7 +18,7 @@ Other existing approaches frequently use smaller, more closely paired audio-text
 
 About a third of Whisper’s audio dataset is non-English, and it is alternately given the task of transcribing in the original language or translating to English. We find this approach is particularly effective at learning speech to text translation and outperforms the supervised SOTA on CoVoST2 to English translation zero-shot.
 
-![](https://images.ctfassets.net/kftzwdyauwt9/29f82291-67a2-491f-3cf6180c16fd/d0d5a05fa5d3f801db92285328bda70e/asr-training-data-mobile.svg)
+![alt text needed](https://images.ctfassets.net/kftzwdyauwt9/29f82291-67a2-491f-3cf6180c16fd/d0d5a05fa5d3f801db92285328bda70e/asr-training-data-mobile.svg)
 
 ASR training data inputs and outputs
 
@@ -32,18 +32,12 @@ Chan, W., Park, D., Lee, C., Zhang, Y., Le, Q., and Norouzi, M. SpeechStew: Simp
 
 Galvez, D., Diamos, G., Torres, J. M. C., Achorn, K., Gopi, A., Kanter, D., Lam, M., Mazumder, M., and Reddi, V. J. The people’s speech: A large-scale diverse english speech recognition dataset for commercial usage. [arXiv preprint arXiv:2111.09344, 2021⁠](https://arxiv.org/abs/2111.09344).
 
-[^3]: 3
-
 Chen, G., Chai, S., Wang, G., Du, J., Zhang, W.-Q., Weng, C., Su, D., Povey, D., Trmal, J., Zhang, J., et al. Gigaspeech: An evolving, multi-domain asr corpus with 10,000 hours of transcribed audio. [arXiv preprint arXiv:2106.06909, 2021⁠](https://arxiv.org/abs/2106.06909).
 
 [^4]: 4
 
 Baevski, A., Zhou, H., Mohamed, A., and Auli, M. wav2vec 2.0: A framework for self-supervised learning of speech representations. [arXiv preprint arXiv:2006.11477, 2020⁠](https://arxiv.org/abs/2006.11477).
 
-[^5]: 5
-
 Baevski, A., Hsu, W.N., Conneau, A., and Auli, M. Unsu pervised speech recognition. Advances in Neural Information Processing Systems, 34:27826–27839, 2021.
-
-[^6]: 6
 
 Zhang, Y., Park, D. S., Han, W., Qin, J., Gulati, A., Shor, J., Jansen, A., Xu, Y., Huang, Y., Wang, S., et al. BigSSL: Exploring the frontier of large-scale semi-supervised learning for automatic speech recognition. [arXiv preprint arXiv:2109.13226, 2021⁠](https://arxiv.org/abs/2109.13226).

@@ -101,4 +101,8 @@ useless at the one that counts. The work is not to speak more. It is to keep the
 - **Author:** `*.claude.*` (Claude Code, branch `claude/self-asterisk`)
 - **Scope:** root general witness — Time Was (the Brazen Head; the watcher who missed the hour) as a self-witness of this session
 
-###### [["The world is quiet here."]]
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

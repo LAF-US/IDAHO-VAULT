@@ -1,4 +1,5 @@
 ---
+title: "Higher education budget (HB 644) sails through the Senate..."
 date: 2020-03-18
 time: 23:23:54
 tweet_id: "1240418681982611456"

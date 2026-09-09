@@ -1,4 +1,5 @@
 ---
+title: BIGPICKLE
 authority: LOGAN
 related:
   - BIGPICKLE

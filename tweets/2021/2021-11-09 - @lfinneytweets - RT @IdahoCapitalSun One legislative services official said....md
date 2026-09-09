@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoCapitalSun One legislative services official said..."
 date: 2021-11-09
 time: 23:02:52
 tweet_id: "1458208498475409414"

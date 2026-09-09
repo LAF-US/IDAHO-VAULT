@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Friday update @IDHW reports 523 new cases..."
 date: 2020-09-25
 time: 23:42:07
 tweet_id: "1309639347579154433"

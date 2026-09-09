@@ -1,4 +1,5 @@
 ---
+title: "Senate State Affairs is in the Lincoln Auditorium. They..."
 date: 2020-03-13
 time: 14:02:08
 tweet_id: "1238465369339080711"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-@oc515 @RadioDawson Senate State Affairs is in the Lincoln Auditorium. They started at 7:45. 
+@oc515 @RadioDawson Senate State Affairs is in the Lincoln Auditorium. They started at 7:45.
 
 The full Senate and House go onto the floor at 10.
 

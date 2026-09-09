@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports @RuthBrownNews @gregchaneyidaho..."
 date: 2022-04-03
 time: 22:56:09
 tweet_id: "1510753045939843081"
@@ -24,7 +25,7 @@ related:
   - idpol
 ---
 
-RT @IdahoReports: @RuthBrownNews @gregchaneyidaho @colinmnash @lfinneytweets Season 50 Episode 21: Sine Die… #idleg #idpol 
-https://t.co/ZA…
+RT @IdahoReports: @RuthBrownNews @gregchaneyidaho @colinmnash @lfinneytweets Season 50 Episode 21: Sine Die… #idleg #idpol
+<https://t.co/ZA…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1510753045939843081)

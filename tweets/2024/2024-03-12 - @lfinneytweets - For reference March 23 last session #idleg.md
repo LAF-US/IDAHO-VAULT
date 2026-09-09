@@ -1,4 +1,5 @@
 ---
+title: "For reference March 23 last session #idleg"
 date: 2024-03-12
 time: 19:54:44
 tweet_id: "1767640387076653273"
@@ -17,11 +18,12 @@ related:
   - idleg
 ---
 
-For reference: March 23 last session #idleg 
-https://t.co/wGPhcOdiJN
+For reference: March 23 last session #idleg
+<https://t.co/wGPhcOdiJN>
 
 ## Links
-- https://x.com/lfinneytweets/status/1639011560877326336?t=8GEQczgfqUURtcZjsztyaQ
+
+- <https://x.com/lfinneytweets/status/1639011560877326336?t=8GEQczgfqUURtcZjsztyaQ>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

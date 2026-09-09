@@ -20,9 +20,10 @@ related:
   - idpol
 ---
 
-RT @BetsyZRussell: Eye on Boise: 3rd time's the charm? JFAC passes new higher ed budget on 16-3 vote #idleg #idpol https://t.co/l2ALg5DhSu…
+RT @BetsyZRussell: Eye on Boise: 3rd time's the charm? JFAC passes new higher ed budget on 16-3 vote #idleg #idpol <https://t.co/l2ALg5DhSu…>
 
 ## Links
-- https://www.idahopress.com/eyeonboise/rd-time-s-the-charm-jfac-passes-new-higher-ed/article_c94db84c-7c1b-53aa-95ee-14ab0511224f.html
+
+- <https://www.idahopress.com/eyeonboise/rd-time-s-the-charm-jfac-passes-new-higher-ed/article_c94db84c-7c1b-53aa-95ee-14ab0511224f.html>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1239644997101563904)

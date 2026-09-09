@@ -60,12 +60,13 @@ Family Law – presentation by Magistrate judges
 
 parental custody litigation
 
-Court Assistance Offices in most courthouses for pro se litigants 
- - Parenting education & information
- - Rosters of mediators
- - Supervision for high conflict families, handoffs, visitations
- - Therapeutic supervision
- - D5 has bilingual services
+Court Assistance Offices in most courthouses for pro se litigants
+
+- Parenting education & information
+- Rosters of mediators
+- Supervision for high conflict families, handoffs, visitations
+- Therapeutic supervision
+- D5 has bilingual services
 
 Idaho Legislature does provide some sliding scale funds through the courts for service access
 
@@ -80,6 +81,7 @@ Shared/Split custody – circumstances where both of the parents use resources f
 Court is required to consider all factors in the child’s best interest, decision made by magistrate
 
 7 factors – no one weighted above the others (not clearly delineated by judge….)
+
 - Wishes of Parents – conflict between, distance
 - Wishes of Child – age, emotional development, behavior all impact. Clinical interviews are primary method. Attorney may be appointed for a child if they are mature enough to engage with the proceedings.
 - Interaction/interrelation of parents and siblings – absence of a parent, trust and attachment
@@ -101,8 +103,8 @@ FAMILY LAW RULES – (24:20) previously in rules of civil procedures, self-repre
 
 Deference to the mother – Barbara Ehardt question (26:40) Judge: old “tender years” doctrine. Not legal deference, but our societal expectations of parenting expects nurturing from mothers and work from fathers.
 
-“Process is the punishment” – one party is out to get the other in cases, filing in the courts forces the other party to respond and engage. 
-Judge: those with resources can create problems for those without. The Court is becoming aware of that fact. 
+“Process is the punishment” – one party is out to get the other in cases, filing in the courts forces the other party to respond and engage.
+Judge: those with resources can create problems for those without. The Court is becoming aware of that fact.
 Self rep litigants are entitled to their time. Family law rules have some factors to help level the field, but resources do equal power.
 
 Greg Chaney – new judges have different experience coming to the bench. Training or onboarding? (32:00) Judge: when you begin, you’re a full judge. There are mentor judges who can aid, but other than existing judges making themselves available to newbies there isn’t much else.
@@ -110,7 +112,6 @@ Greg Chaney – new judges have different experience coming to the bench. Traini
 Idaho Supreme Court has training, new judges have general training. Comradery of the family law court division is the main thing.
 
 Similar presentation from Child Protection Services to come next Thurs
-
 
 **Rules: Public Defense Commission (34:00)**
 
@@ -136,24 +137,23 @@ LSO analysis is linked, or the Office has side-by-side analysis available
 
 Rules concluded (51:30)
 
-
 **Melissa Wintrow RS**
 
 Office of the State Appellate Public Defender agency bill allowing them to take cases directly from the counties.
 
 Now: If there is an indigent appeal, Attorney General vs. county with SAPD consults
 
-Julianne Young (58): is this significantly expanding what gets defending? 
+Julianne Young (58): is this significantly expanding what gets defending?
 Wintrow: case numbers will be reviewed in hearing.
 
 John McCrostie: motion to introduce RS. No debate. Unanimous to print.
-
 
 **Caroline Nilsson Troy RS (1:00:00)**
 
 Agency bill – State Appellate Public Defender (SAPD)
 
 This bill creates a unified criminal justice data system. Review what’s working. Reducing recidivism.
+
 - Creates legal framework to link existing systems through controller’s office, protect individual identities, foster agreement between relevant parties, etc.
 - Creates data oversight council
 - Elaborates on records exempt from public records requests. Agencies still own their data. Controller is compiling, but things remain exempt.
@@ -170,6 +170,5 @@ Zollinger (1:10:00) - “Contributing agency” ?
 SAPD Director Eric Fredericksen: all voluntary for now. Governor’s Office may issue an order later for specific agencies.
 Idaho Criminal Justice Commission (Wintrow is a member)
 Motion to print RS passes.
-
 
 Idaho State Police administrative rules docket next

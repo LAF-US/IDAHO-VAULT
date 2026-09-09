@@ -13,9 +13,10 @@ related:
   - lfinneytweets
 ---
 
-North Idaho Women's March in Sandpoint https://t.co/iTew8aNpZD
+North Idaho Women's March in Sandpoint <https://t.co/iTew8aNpZD>
 
 ## Links
-- https://x.com/lyndsie_kiebert/status/1086720210759954432
+
+- <https://x.com/lyndsie_kiebert/status/1086720210759954432>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1086774786183708672)

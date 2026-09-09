@@ -116,22 +116,22 @@ The guard reports only file path, line number, and rule name. It must not print 
 
 Python:
 
-- Python downloads and active releases: https://www.python.org/downloads/
-- Python 3.13 release notes: https://docs.python.org/3/whatsnew/3.13.html
-- Python 3.14 and 3.13 maintenance release announcement: https://blog.python.org/2026/02/python-3143-and-31312-are-now-available/
+- Python downloads and active releases: <https://www.python.org/downloads/>
+- Python 3.13 release notes: <https://docs.python.org/3/whatsnew/3.13.html>
+- Python 3.14 and 3.13 maintenance release announcement: <https://blog.python.org/2026/02/python-3143-and-31312-are-now-available/>
 
 Jupyter:
 
-- Project Jupyter install page: https://jupyter.org/install
-- Project Jupyter documentation: https://docs.jupyter.org/en/latest/index.html
-- JupyterLab installation docs: https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html
+- Project Jupyter install page: <https://jupyter.org/install>
+- Project Jupyter documentation: <https://docs.jupyter.org/en/latest/index.html>
+- JupyterLab installation docs: <https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html>
 
 Windows storage and disk tools:
 
-- `Get-Disk`: https://learn.microsoft.com/en-us/powershell/module/storage/get-disk
-- `Get-Volume`: https://learn.microsoft.com/en-us/powershell/module/storage/get-volume
-- `Get-PhysicalDisk`: https://learn.microsoft.com/en-us/powershell/module/storage/get-physicaldisk
-- `Repair-Volume`: https://learn.microsoft.com/en-us/powershell/module/storage/repair-volume
-- `Optimize-Volume`: https://learn.microsoft.com/en-us/powershell/module/storage/optimize-volume
-- `diskpart`: https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/diskpart
-- `chkdsk`: https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/chkdsk
+- `Get-Disk`: <https://learn.microsoft.com/en-us/powershell/module/storage/get-disk>
+- `Get-Volume`: <https://learn.microsoft.com/en-us/powershell/module/storage/get-volume>
+- `Get-PhysicalDisk`: <https://learn.microsoft.com/en-us/powershell/module/storage/get-physicaldisk>
+- `Repair-Volume`: <https://learn.microsoft.com/en-us/powershell/module/storage/repair-volume>
+- `Optimize-Volume`: <https://learn.microsoft.com/en-us/powershell/module/storage/optimize-volume>
+- `diskpart`: <https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/diskpart>
+- `chkdsk`: <https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/chkdsk>

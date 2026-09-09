@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Lt. Gov. McGeachin, at..."
 date: 2021-01-20
 time: 23:13:21
 tweet_id: "1352031488812847105"

@@ -1,4 +1,5 @@
 ---
+title: "So goes Trump, so goes America! Bryan Smith for National..."
 date: 2024-06-15
 time: 23:21:16
 tweet_id: "1802119213831835810"

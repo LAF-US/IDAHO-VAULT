@@ -10,11 +10,11 @@ created: 2026-04-23
 
 Flipper Zero is a tiny piece of hardware with a curious personality of a cyber-dolphin. It can interact with digital systems in real life and grow while you use it. Explore any kind of access control system, RFID, radio protocols, and debug hardware using GPIO pins.
 
-![](https://cdn.flipper.net/zero_landing_what-is_illustration_1.png) ![](https://cdn.flipper.net/zero_landing_what-is_illustration_2.png) ![](https://cdn.flipper.net/zero_landing_what-is_illustration_3.png)
+![alt text needed](https://cdn.flipper.net/zero_landing_what-is_illustration_1.png) ![alt text needed](https://cdn.flipper.net/zero_landing_what-is_illustration_2.png) ![alt text needed](https://cdn.flipper.net/zero_landing_what-is_illustration_3.png)
 
 The idea of Flipper Zero is to combine all the hardware tools you'd need for exploration and development on the go. Flipper was inspired by the pwnagotchi project, but unlike other DIY boards, Flipper is designed with the convenience of everyday usage in mind — it has a robust case, handy buttons, and shape, so there are no dirty PCBs or scratchy pins. Flipper turns your projects into a game, reminding you that development should always be fun.
 
-![](https://cdn.flipper.net/zero_landing_what-is_inhand.png) ![](https://cdn.flipper.net/zero_landing_what-is_flipper.gif)
+![alt text needed](https://cdn.flipper.net/zero_landing_what-is_inhand.png) ![alt text needed](https://cdn.flipper.net/zero_landing_what-is_flipper.gif)
 
 ![Flipper Zero top view](https://cdn.flipper.net/zero-landing-features_1.png)
 
@@ -40,15 +40,15 @@ This is the operating range for a wide class of wireless devices and access cont
   
 Flipper has an integrated multi-band antenna, and a CC1101 chip, making it a powerful transceiver **with a range of up to 50 meters**.
 
-![](https://cdn.flipper.net/zero_landing_subghz_barrier.jpg) ![](https://cdn.flipper.net/zero_landing_subghz_icon_1.png)
+![alt text needed](https://cdn.flipper.net/zero_landing_subghz_barrier.jpg) ![alt text needed](https://cdn.flipper.net/zero_landing_subghz_icon_1.png)
 
 Smart sockets and bulbs
 
-![](https://cdn.flipper.net/zero_landing_subghz_icon_2.png)
+![alt text needed](https://cdn.flipper.net/zero_landing_subghz_icon_2.png)
 
 IoT sensors and doorbells
 
-![](https://cdn.flipper.net/zero_landing_subghz_icon_3.png)
+![alt text needed](https://cdn.flipper.net/zero_landing_subghz_icon_3.png)
 
 Garage doors and barriers
 
@@ -56,7 +56,7 @@ Garage doors and barriers
 
 CC1101 is a universal transceiver designed for very low-power wireless applications. It supports various types of digital modulations such as 2-FSK, 4-FSK, GFSK and MSK, as well as OOK and flexible ASK shaping. You can perform any digital communication in your applications such as connecting to IoT devices and access control systems.
 
-![](https://cdn.flipper.net/zero_landing_subghz_flipper.jpg)
+![alt text needed](https://cdn.flipper.net/zero_landing_subghz_flipper.jpg)
 
 ## 125 kHz RFID
 
@@ -67,7 +67,7 @@ This type of card is widely used in old access control systems around the world.
 You can also emulate cards by entering their IDs manually.  
 Moreover, Flipper Zero owners can share card IDs remotely with other Flipper Zero users.
 
-![](https://cdn.flipper.net/zero_landing_rfid_writing.png) ![](https://cdn.flipper.net/zero_landing_rfid_emulating.jpg)
+![alt text needed](https://cdn.flipper.net/zero_landing_rfid_writing.png) ![alt text needed](https://cdn.flipper.net/zero_landing_rfid_emulating.jpg)
 
 ## NFC
 
@@ -77,11 +77,11 @@ Flipper Zero has a built-in NFC module (13.56 MHz). Along with the 125 kHz RFID 
   
 It works pretty much the same as the 125 kHz module, allowing you to interact with NFC-enabled devices — read, write and emulate HF tags.
 
-![](https://cdn.flipper.net/zero_landing_nfc_writing.png)
+![alt text needed](https://cdn.flipper.net/zero_landing_nfc_writing.png)
 
 ## Bluetooth
 
-![](https://cdn.flipper.net/zero_landing_bluetooth_showcase.jpg)
+![alt text needed](https://cdn.flipper.net/zero_landing_bluetooth_showcase.jpg)
 
 Full Bluetooth Low Energy (BLE) support allows Flipper Zero to act as a peripheral device, allowing you to connect your Flipper Zero to 3rd-party devices and smartphones.  
   
@@ -99,13 +99,13 @@ The infrared transmitter can transmit signals to control electronics such as TVs
   
 Flipper Zero has a built-in library of signals for common TVs, ACs, projectors, and stereo systems brands. This library is regularly updated with new signals, thanks to the Flipper Zero community's active contributions to the IR Remote database.
 
-![](https://cdn.flipper.net/zero_landing_infrared_schematic.jpg)
+![alt text needed](https://cdn.flipper.net/zero_landing_infrared_schematic.jpg)
 
 ### Infrared learning feature
 
 Flipper Zero also has an IR receiver that can receive signals and save them to the library, so you can store any of your existing remotes to transmit commands later, and add them to the public IR Remote database to share with other Flipper Zero users.
 
-![](https://cdn.flipper.net/zero_landing_infrared_learning.jpg)
+![alt text needed](https://cdn.flipper.net/zero_landing_infrared_learning.jpg)
 
 ## MicroSD card
 
@@ -135,7 +135,7 @@ Communicate with any hardware from your desktop application.
 **Fuzzing tool**  
 Test any protocols and signals.
 
-![](https://cdn.flipper.net/zero_landing_tool-for_oscilloscope.jpg)
+![alt text needed](https://cdn.flipper.net/zero_landing_tool-for_oscilloscope.jpg)
 
 ## iButton
 
@@ -145,4 +145,4 @@ Flipper Zero has a built-in 1-Wire connector to read iButton contact keys. This 
   
 Flipper Zero has a unique iButton contact pad design — its shape works both as a reader and a probe to connect to iButton sockets.
 
-![](https://cdn.flipper.net/zero_landing_ibutton_emulating.jpg) ![](https://cdn.flipper.net/zero_landing_ibutton_pins.png) ![](https://cdn.flipper.net/zero_landing_whats-inside.jpg)
+![alt text needed](https://cdn.flipper.net/zero_landing_ibutton_emulating.jpg) ![alt text needed](https://cdn.flipper.net/zero_landing_ibutton_pins.png) ![alt text needed](https://cdn.flipper.net/zero_landing_whats-inside.jpg)

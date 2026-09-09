@@ -1,4 +1,5 @@
 ---
+title: "Smylie was a Republican! As was his successor Samuelson,..."
 date: 2024-11-23
 time: 02:08:50
 tweet_id: "1860143438337048794"

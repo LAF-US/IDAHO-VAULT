@@ -1,4 +1,5 @@
 ---
+title: "RT @lyndsie_kiebert I\u2019ll write more about Little\u2019s visit in..."
 date: 2021-01-29
 time: 22:24:44
 tweet_id: "1355280745200148484"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @lyndsie_kiebert: I’ll write more about Little’s visit in my weekly COVID update in the Reader next week. 
+RT @lyndsie_kiebert: I’ll write more about Little’s visit in my weekly COVID update in the Reader next week.
 
 Here’s this week’s: “BGH pau…
 

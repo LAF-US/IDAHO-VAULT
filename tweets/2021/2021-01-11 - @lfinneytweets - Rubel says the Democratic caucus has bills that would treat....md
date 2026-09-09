@@ -1,4 +1,5 @@
 ---
+title: "Rubel says the Democratic caucus has bills that would treat..."
 date: 2021-01-11
 time: 22:35:45
 tweet_id: "1348760538705104899"

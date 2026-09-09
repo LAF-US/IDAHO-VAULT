@@ -4,4 +4,4 @@ related:
 - taxes
 authority: LOGAN
 ---
-Appointed by the Governor. Sets administrative policy for taxes. 
+Appointed by the Governor. Sets administrative policy for taxes.

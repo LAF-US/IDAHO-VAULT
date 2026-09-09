@@ -1,4 +1,5 @@
 ---
+title: "RT @idahoednews Rep. Barbara Ehardt added a definition of..."
 date: 2020-02-21
 time: 22:05:28
 tweet_id: "1230976859216568320"

@@ -1,4 +1,5 @@
 ---
+title: "From one of the founders"
 date: 2020-06-08
 time: 17:16:41
 tweet_id: "1270042073496875009"
@@ -14,11 +15,12 @@ related:
   - lfinneytweets
 ---
 
-From one of the founders: 
-https://t.co/pDdUSxsmKb
+From one of the founders:
+<https://t.co/pDdUSxsmKb>
 
 ## Links
-- https://x.com/lukemayville/status/1270023192703143936
+
+- <https://x.com/lukemayville/status/1270023192703143936>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

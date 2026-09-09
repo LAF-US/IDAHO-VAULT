@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports A number of Idaho legislative candidates \u2013..."
 date: 2022-05-12
 time: 23:00:41
 tweet_id: "1524887316682010625"

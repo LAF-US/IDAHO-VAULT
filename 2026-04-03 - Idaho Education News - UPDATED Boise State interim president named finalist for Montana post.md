@@ -13,7 +13,7 @@ On Friday, [the University of Montana announced](https://www.umt.edu/news/2026/0
 
 It does not appear that Shinn’s departure would affect the stop-and-go Boise State president’s search — which began more than a year ago, but went dormant for five months [before resuming last month](https://www.idahoednews.org/top-news/a-very-compressed-and-mostly-closed-search-resumes-at-boise-state/).
 
-![](https://www.idahoednews.org/wp-content/uploads/2026/02/capitol_shinn_broncoday2.jpg)
+![alt text needed](https://www.idahoednews.org/wp-content/uploads/2026/02/capitol_shinn_broncoday2.jpg)
 
 Boise State Interim President Jeremiah Shinn speaks in the Idaho Capitol building on “Bronco Day,” Feb. 2. (Kaeden Lincoln/Idaho EdNews)
 

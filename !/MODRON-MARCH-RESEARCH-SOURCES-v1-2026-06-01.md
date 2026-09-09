@@ -10,15 +10,15 @@ topic: Great Modron March
 ## Sources Consulted
 
 - D&D Beyond, "The 5 Hierarch Modrons of Planescape: Adventures in the Multiverse"
-  - https://www.dndbeyond.com/posts/1596-the-5-hierarch-modrons-of-planescape-adventures-in
+  - <https://www.dndbeyond.com/posts/1596-the-5-hierarch-modrons-of-planescape-adventures-in>
 - D&D Beyond, "How to Play a Modron like a Wind-Up Soldier"
-  - https://www.dndbeyond.com/posts/310-how-to-play-a-modron-like-a-wind-up-soldier
+  - <https://www.dndbeyond.com/posts/310-how-to-play-a-modron-like-a-wind-up-soldier>
 - Planescape Wiki, "Great Modron March"
-  - https://planescape.fandom.com/wiki/Great_Modron_March
+  - <https://planescape.fandom.com/wiki/Great_Modron_March>
 - Timaresh Planescape Wiki, "Great Modron March"
-  - https://rilmani.org/timaresh/Modron_March
+  - <https://rilmani.org/timaresh/Modron_March>
 - DMsGuild product reference, "The Great Modron March (2e)"
-  - https://www.dmsguild.com/product/17302/The-Great-Modron-March-2e
+  - <https://www.dmsguild.com/product/17302/The-Great-Modron-March-2e>
 
 ## Working Findings
 

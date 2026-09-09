@@ -1,4 +1,5 @@
 ---
+title: "It will be here in the digital media archive. The debate..."
 date: 2021-02-06
 time: 06:24:33
 tweet_id: "1357938211259969537"
@@ -19,10 +20,11 @@ related:
 ---
 
 @SurelySherly6 @hmaboi @IdahoReports It will be here in the digital media archive. The debate and vote was in the Senate Chambers on Feb 3.
-https://t.co/JMrdRyApon
+<https://t.co/JMrdRyApon>
 
 ## Links
-- http://lso.legislature.idaho.gov/MediaArchive
+
+- <http://lso.legislature.idaho.gov/MediaArchive>
 
 *In reply to [@SurelySherly6](https://twitter.com/SurelySherly6)*
 

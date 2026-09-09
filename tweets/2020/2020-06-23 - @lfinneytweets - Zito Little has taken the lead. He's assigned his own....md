@@ -1,4 +1,5 @@
 ---
+title: "Zito Little has taken the lead. He's assigned his own..."
 date: 2020-06-23
 time: 15:49:44
 tweet_id: "1275456011822751750"
@@ -14,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-Zito: Little has taken the lead. He's assigned his own committees to oversee funds. The buck stops with him. 
+Zito: Little has taken the lead. He's assigned his own committees to oversee funds. The buck stops with him.
 We [the Reps] have done everything we can to make our voices heard.
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
