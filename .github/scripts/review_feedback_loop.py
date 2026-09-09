@@ -245,8 +245,15 @@ LABEL_SPECS: dict[str, tuple[str, str]] = {
 RETIRED_LABELS: tuple[str, ...] = ("auto-merge",)
 
 
-def _auto_merge_state(owner: str, repo: str, pr_number: int) -> tuple[bool, bool]:
-    """Return ``(auto_merge_enabled, in_merge_queue)`` for the PR."""
+def _auto_merge_state(
+    owner: str, repo: str, pr_number: int, *, strict: bool = False
+) -> tuple[bool, bool]:
+    """Return ``(auto_merge_enabled, in_merge_queue)`` for the PR.
+
+    ``strict=True`` re-raises instead of failing open, for the one caller that has to
+    tell "disabled" from "could not read" — see the rollback path in
+    ``_build_reconciliation_report``.
+    """
     # Fail-open to ``(False, False)``: if the state can't be read, the caller behaves
     # exactly as it did before this guard existed (a plain ``--auto`` enable) — never
     # worse than the old code, and a transient read error never evicts a queued PR.
@@ -269,7 +276,12 @@ def _auto_merge_state(owner: str, repo: str, pr_number: int) -> tuple[bool, bool
     except (RuntimeError, ValueError):
         # RuntimeError: gh/_graphql failure or GraphQL errors.
         # ValueError: a malformed JSON payload (json.JSONDecodeError subclasses it).
-        # Both fail open so the arming path keeps its pre-guard behavior.
+        # Both fail open so the arming path keeps its pre-guard behavior — except for a
+        # strict caller, which cannot use a fail-open answer: `(False, False)` there
+        # would be indistinguishable from a genuine "auto-merge is off" and would
+        # publish exactly the false state claim the caller is trying to avoid.
+        if strict:
+            raise
         return (False, False)
     pull = (data.get("repository") or {}).get("pullRequest") or {}
     enabled = bool((pull.get("autoMergeRequest") or {}).get("enabledAt"))
@@ -1452,12 +1464,22 @@ def _build_reconciliation_report(
                         rollback = "disabled the auto-merge it had just enabled"
                     except RuntimeError as rollback_exc:
                         rollback = f"AND the rollback disable was refused: {rollback_exc}"
-                    auto_merge_enabled, _ = _auto_merge_state(owner, repo, pr_number)
+                    try:
+                        auto_merge_enabled, _ = _auto_merge_state(
+                            owner, repo, pr_number, strict=True
+                        )
+                        state_note = "STILL ENABLED" if auto_merge_enabled else "disabled"
+                    except (RuntimeError, ValueError) as read_exc:
+                        # Unknown is not disabled. Reporting "disabled" off an unreadable
+                        # read would be the false state claim this path exists to prevent,
+                        # so say so and assume the unsafe side: something may still be
+                        # armed with no label to disarm it by.
+                        auto_merge_enabled = True
+                        state_note = f"UNKNOWN, state read-back failed ({read_exc})"
                     promotion_publish_failed = True
                     arm_error = (
                         f"auto-merge armed but `{DEFAULT_AUTO_MERGE_LABEL}` label write "
-                        f"failed ({exc}); {rollback}; auto-merge is now "
-                        f"{'STILL ENABLED' if auto_merge_enabled else 'disabled'}"
+                        f"failed ({exc}); {rollback}; auto-merge is now {state_note}"
                     )
                 else:
                     if DEFAULT_REVIEW_PENDING_LABEL in current_labels:
