@@ -1492,11 +1492,14 @@ def _build_reconciliation_report(
                             f"⏱️ Agent review grace period ({grace_minutes} min) elapsed "
                             f"with no blocking feedback. Promoting to `auto-merge`.",
                         )
-                    except RuntimeError as comment_exc:
+                    except (RuntimeError, OSError) as comment_exc:
                         # The announcement is the least important part of the promotion,
                         # and it runs after the arm and the label have both landed. Letting
                         # it raise aborts the whole sweep mid-PR, so every remaining open PR
                         # goes unreconciled because one comment could not be posted.
+                        # OSError as well as RuntimeError: gh_cli.pr_comment carries the
+                        # body through a tempfile.TemporaryDirectory, so a filesystem
+                        # failure raises out of this call too and would abort the same way.
                         print(
                             f"::warning::promotion comment failed for #{pr_number}: "
                             f"{comment_exc}",
