@@ -457,10 +457,19 @@ def _arm_auto_merge(owner: str, repo: str, pr_number: int) -> tuple[bool, str | 
             # genuinely transient.
             return (False, "; ".join(notes))
         # The arm attempt was rejected, but the direct enqueue succeeded anyway (UNSTABLE
-        # was still queue-entry-eligible) — replace the stale not-ready sentinel so the
-        # note doesn't read as a rejection when this pass actually queued the PR.
-        notes[0] = "enqueued directly (arm attempt rejected as unstable, but UNSTABLE is queue-entry-eligible)"
-    # node_id None (fail-open), benign not-ready-but-now-enqueued, or a clean arm: armed.
+        # was still queue-entry-eligible). Report truthfully: enablePullRequestAutoMerge
+        # never actually succeeded here, only the direct enqueue did, so `armed` must stay
+        # False (per this function's own contract: "armed is True once auto-merge is on").
+        # Returning True would have callers add this PR to rearmed_prs / auto_merge_enabled
+        # =True, and if the queue later ejects it, nothing would re-arm it — the reconcile
+        # pass would believe it's already armed. Leave notes[0] as AUTO_MERGE_NOT_READY_NOTE
+        # (append rather than overwrite) so this still lands in auto_merge_not_ready, not
+        # auto_merge_authorization_blocked — pr_loop_watchdog would otherwise report a
+        # false "branch protection drift" for a PR that just successfully queued. The next
+        # pass sees queued=True at the top of this function and short-circuits cleanly.
+        notes.append("enqueued directly despite the arm rejection (UNSTABLE is queue-entry-eligible)")
+        return (False, "; ".join(notes))
+    # node_id None (fail-open) or a clean arm: armed.
     return (True, "; ".join(notes)) if notes else (True, None)
 
 
