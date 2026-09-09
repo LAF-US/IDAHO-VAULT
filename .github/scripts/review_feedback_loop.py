@@ -245,8 +245,15 @@ LABEL_SPECS: dict[str, tuple[str, str]] = {
 RETIRED_LABELS: tuple[str, ...] = ("auto-merge",)
 
 
-def _auto_merge_state(owner: str, repo: str, pr_number: int) -> tuple[bool, bool]:
-    """Return ``(auto_merge_enabled, in_merge_queue)`` for the PR."""
+def _auto_merge_state(
+    owner: str, repo: str, pr_number: int, *, strict: bool = False
+) -> tuple[bool, bool]:
+    """Return ``(auto_merge_enabled, in_merge_queue)`` for the PR.
+
+    ``strict=True`` re-raises instead of failing open, for the one caller that has to
+    tell "disabled" from "could not read" — see the rollback path in
+    ``_build_reconciliation_report``.
+    """
     # Fail-open to ``(False, False)``: if the state can't be read, the caller behaves
     # exactly as it did before this guard existed (a plain ``--auto`` enable) — never
     # worse than the old code, and a transient read error never evicts a queued PR.
@@ -269,9 +276,28 @@ def _auto_merge_state(owner: str, repo: str, pr_number: int) -> tuple[bool, bool
     except (RuntimeError, ValueError):
         # RuntimeError: gh/_graphql failure or GraphQL errors.
         # ValueError: a malformed JSON payload (json.JSONDecodeError subclasses it).
-        # Both fail open so the arming path keeps its pre-guard behavior.
+        # Both fail open so the arming path keeps its pre-guard behavior — except for a
+        # strict caller, which cannot use a fail-open answer: `(False, False)` there
+        # would be indistinguishable from a genuine "auto-merge is off" and would
+        # publish exactly the false state claim the caller is trying to avoid.
+        if strict:
+            raise
         return (False, False)
-    pull = (data.get("repository") or {}).get("pullRequest") or {}
+    pull = (data.get("repository") or {}).get("pullRequest")
+    if pull is None:
+        # A response with no `pullRequest` node is not an answer about the PR. `_graphql`
+        # raises on GraphQL `errors`, but a payload carrying neither errors nor data
+        # reaches here as `{}` -- `gh` exiting 0 with empty stdout is enough, since
+        # `_run` only raises on a non-zero exit or a timeout. Coercing that to an empty
+        # dict makes `enabled` False, so a strict caller would publish "auto-merge is
+        # now disabled" for a PR whose state was never read: the false state claim
+        # strict mode exists to prevent, reached without any exception being raised.
+        # The default still fails open, unchanged.
+        if strict:
+            raise ValueError(
+                f"GraphQL response carried no pullRequest node for #{pr_number}"
+            )
+        return (False, False)
     enabled = bool((pull.get("autoMergeRequest") or {}).get("enabledAt"))
     queued = bool((pull.get("mergeQueueEntry") or {}).get("id"))
     return (enabled, queued)
@@ -1420,6 +1446,7 @@ def _build_reconciliation_report(
         )
         if promoting:
             auto_merge_enabled = False
+        promotion_publish_failed = False
 
         if (
             AGENT_AUTO_MERGE_ENABLED
@@ -1440,26 +1467,136 @@ def _build_reconciliation_report(
                 # _maybe_arm_auto_merge already fails closed exactly this way.
                 try:
                     gh_cli.pr_edit(pr_number, add_label=DEFAULT_AUTO_MERGE_LABEL)
-                except RuntimeError as exc:
-                    _disable_auto_merge(pr_number)
-                    auto_merge_enabled = False
+                except (RuntimeError, OSError) as exc:
+                    # OSError alongside RuntimeError, and this is the site where it costs
+                    # the most: uncaught, the label write's own OSError skips the rollback
+                    # entirely and kills the sweep with the PR armed and unlabeled — the
+                    # exact end state this block exists to prevent, reached by the one
+                    # error class the handler did not name.
+                    # Roll back with a CHECKED disable. The default is check=False, which
+                    # would swallow a refused rollback and let the lines below report the
+                    # PR disarmed while it is still armed — the same false state claim,
+                    # one level down. Then read the state back from GitHub rather than
+                    # assuming either outcome, so what gets published is what is true.
+                    try:
+                        _disable_auto_merge(pr_number, check=True)
+                        # Describes the COMMAND, not the state. A zero exit says the
+                        # disable was accepted, not that auto-merge is off: the read-back
+                        # below is the only authority on that, and it can legitimately
+                        # come back STILL ENABLED -- a concurrent actor re-enabling in the
+                        # window is the case argued on this PR's own race thread. Claiming
+                        # "disabled the auto-merge" here produced a note that contradicted
+                        # itself in the same sentence: "disabled the auto-merge it had just
+                        # enabled; auto-merge is now STILL ENABLED". `state_note` makes the
+                        # state claim; this half only reports what the command returned.
+                        rollback = "the rollback disable was accepted"
+                    except (RuntimeError, OSError) as rollback_exc:
+                        # OSError as well: gh_cli._run converts non-zero exits and timeouts
+                        # to RuntimeError, but subprocess.run itself still raises OSError
+                        # if the process cannot be spawned at all. Uncaught, that aborts
+                        # the sweep from inside the handler meant to keep it alive.
+                        rollback = f"AND the rollback disable was refused: {rollback_exc}"
+                    # A guard, not a signal: on the except path the tuple unpack never
+                    # runs, and this name is function-scoped inside a per-PR loop, so
+                    # without this it would hold the PREVIOUS PR's queue state. Nothing
+                    # reads it there today — the unknown branch carries its own queue
+                    # caveat — and this keeps that safe for the next edit.
+                    #
+                    # None, not False: "the read never happened" is not "there is no queue
+                    # entry", and this whole change exists to stop encoding unknown as a
+                    # definite answer. Both are falsy, so the one live read below behaves
+                    # identically; the difference is that a future reader moving that read
+                    # outside the try cannot mistake the guard for a negative result.
+                    still_queued: bool | None = None
+                    try:
+                        auto_merge_enabled, still_queued = _auto_merge_state(
+                            owner, repo, pr_number, strict=True
+                        )
+                        state_note = "STILL ENABLED" if auto_merge_enabled else "disabled"
+                        if still_queued:
+                            # _arm_auto_merge enqueues as well as arming, so by the time
+                            # the label write failed the PR may already hold a merge-queue
+                            # entry — and disabling auto-merge does not remove one.
+                            # VAULT-CONVENTIONS.md § supersession: "do not count on the
+                            # auto-merge toggle or the push to do that for you." Without a
+                            # dequeue this rollback cannot fully undo the promotion, so say
+                            # so rather than let "disabled" imply the PR is stood down.
+                            #
+                            # No dequeue is attempted here, deliberately. `dequeuePullRequest`
+                            # is not used anywhere in this module, so completing the rollback
+                            # means giving the engine a write capability it does not have —
+                            # a wider decision than a rollback fix. Until that is taken, the
+                            # contract is: this pass reports the surviving queue entry and a
+                            # human removes it. Reporting it truthfully is the part that
+                            # belongs here; silently implying it was stood down is not.
+                            state_note += (
+                                "; PR IS STILL IN THE MERGE QUEUE and can merge without "
+                                "`merge/auto` — disabling auto-merge does not dequeue"
+                            )
+                    except (RuntimeError, ValueError, OSError) as read_exc:
+                        # Unknown is not disabled. Reporting "disabled" off an unreadable
+                        # read would be the false state claim this path exists to prevent,
+                        # so say so and assume the unsafe side: something may still be
+                        # armed with no label to disarm it by. OSError for the same reason
+                        # as the rollback above: the read is another gh subprocess, and an
+                        # unspawnable one must read as UNKNOWN, not abort the sweep.
+                        auto_merge_enabled = True
+                        # The queue caveat belongs here MORE than on the readable path,
+                        # not less: there we at least know whether an entry survived,
+                        # here we do not, and `_arm_auto_merge` enqueues as well as
+                        # arming. Saying only "UNKNOWN" would leave the one state that
+                        # can merge the PR without `merge/auto` unmentioned.
+                        state_note = (
+                            f"UNKNOWN, state read-back failed ({read_exc}); PR MAY ALSO "
+                            "STILL BE IN THE MERGE QUEUE and able to merge without "
+                            "`merge/auto` — that could not be read either"
+                        )
+                    promotion_publish_failed = True
+                    # Leave a breadcrumb in `actions`. A successful promotion records
+                    # `add:merge/auto`; without this the failure path records nothing, so
+                    # an operator diffing actions against real GitHub state sees "nothing
+                    # happened" for a pass that may have left the PR armed or queued.
+                    actions.append(f"promotion-rollback:{state_note}")
                     arm_error = (
                         f"auto-merge armed but `{DEFAULT_AUTO_MERGE_LABEL}` label write "
-                        f"failed; disabled auto-merge to avoid an un-trackable armed PR: "
-                        f"{exc}"
+                        f"failed ({exc}); {rollback}; auto-merge is now {state_note}"
                     )
                 else:
                     if DEFAULT_REVIEW_PENDING_LABEL in current_labels:
                         current_labels.discard(DEFAULT_REVIEW_PENDING_LABEL)
                     current_labels.add(DEFAULT_AUTO_MERGE_LABEL)
                     actions.append(f"add:{DEFAULT_AUTO_MERGE_LABEL}")
-                    _comment(
-                        pr_number,
-                        f"⏱️ Agent review grace period ({grace_minutes} min) elapsed "
-                        f"with no blocking feedback. Promoting to `auto-merge`.",
-                    )
+                    try:
+                        _comment(
+                            pr_number,
+                            f"⏱️ Agent review grace period ({grace_minutes} min) elapsed "
+                            f"with no blocking feedback. Promoting to `auto-merge`.",
+                        )
+                    except (RuntimeError, OSError) as comment_exc:
+                        # The announcement is the least important part of the promotion,
+                        # and it runs after the arm and the label have both landed. Letting
+                        # it raise aborts the whole sweep mid-PR, so every remaining open PR
+                        # goes unreconciled because one comment could not be posted.
+                        # OSError as well as RuntimeError: gh_cli.pr_comment carries the
+                        # body through a tempfile.TemporaryDirectory, so a filesystem
+                        # failure raises out of this call too and would abort the same way.
+                        # Breadcrumb in `actions` for the same reason the rollback path
+                        # has one: `add:merge/auto` alone would make a promotion that was
+                        # announced nowhere look identical to one that was. The promotion
+                        # itself still stands, and `promoted` still records it.
+                        actions.append("promotion-comment-failed")
+                        print(
+                            f"::warning::promotion comment failed for #{pr_number}: "
+                            f"{comment_exc}",
+                            file=sys.stderr,
+                        )
                     promoted.append(pr_number)
-            if auto_merge_enabled:
+            if promotion_publish_failed:
+                # GitHub refused a write mid-promotion. That is drift whichever way the
+                # rollback went, so it belongs in the bucket pr_loop_watchdog reads —
+                # never in `rearmed`, even when the read-back says auto-merge is still on.
+                auto_merge_authorization_blocked.append(pr_number)
+            elif auto_merge_enabled:
                 rearmed.append(pr_number)
             elif arm_error and AUTO_MERGE_NOT_READY_NOTE in arm_error:
                 # Transient — PR checks are still unstable, expected to clear on a later
