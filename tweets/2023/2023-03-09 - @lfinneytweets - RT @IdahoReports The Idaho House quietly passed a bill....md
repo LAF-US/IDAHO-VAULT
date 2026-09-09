@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports The Idaho House quietly passed a bill..."
 date: 2023-03-09
 time: 23:51:20
 tweet_id: "1633978807727308803"

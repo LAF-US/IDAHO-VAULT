@@ -1,4 +1,5 @@
 ---
+title: "RT @HayatNorimine Senate Republicans on the attempt to..."
 date: 2021-09-13
 time: 20:50:58
 tweet_id: "1437519193918689280"

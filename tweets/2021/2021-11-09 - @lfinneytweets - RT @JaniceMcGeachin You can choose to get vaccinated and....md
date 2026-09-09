@@ -1,4 +1,5 @@
 ---
+title: "RT @JaniceMcGeachin You can choose to get vaccinated and..."
 date: 2021-11-09
 time: 23:06:23
 tweet_id: "1458209383804850177"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @JaniceMcGeachin: You can choose to get vaccinated and still be against mandates. These positions are not mutually exclusive. 
+RT @JaniceMcGeachin: You can choose to get vaccinated and still be against mandates. These positions are not mutually exclusive.
 
 https://…
 

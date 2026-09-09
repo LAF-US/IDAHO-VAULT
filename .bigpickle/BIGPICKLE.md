@@ -1,4 +1,5 @@
 ---
+title: BIGPICKLE
 authority: LOGAN
 related:
   - BIGPICKLE
@@ -6,6 +7,6 @@ related:
   - runtime
 ---
 
-**.bigpickle** — Imported software runtime persona.
+**.bigpickle** â€” Imported software runtime persona.
 
 bigpickle runtime and configuration.

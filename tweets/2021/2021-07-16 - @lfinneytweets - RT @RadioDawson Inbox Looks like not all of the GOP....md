@@ -1,4 +1,5 @@
 ---
+title: "RT @RadioDawson Inbox Looks like not all of the GOP..."
 date: 2021-07-16
 time: 18:48:41
 tweet_id: "1416107538206978048"

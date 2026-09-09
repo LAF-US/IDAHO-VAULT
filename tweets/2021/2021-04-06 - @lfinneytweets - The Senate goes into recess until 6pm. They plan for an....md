@@ -1,4 +1,5 @@
 ---
+title: "The Senate goes into recess until 6pm. They plan for an..."
 date: 2021-04-06
 time: 22:57:27
 tweet_id: "1379568965324693504"

@@ -1,4 +1,5 @@
 ---
+title: "Nearly 6,000 medical masks sent to Alabama had dry rot and..."
 date: 2020-04-05
 time: 00:22:21
 tweet_id: "1246593987139358720"

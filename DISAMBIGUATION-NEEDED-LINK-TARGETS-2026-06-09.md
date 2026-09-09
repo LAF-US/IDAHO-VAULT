@@ -33,7 +33,7 @@ The discipline node (`[[THE-SWARM-AS-BOIDS-ANCHORING-AND-THE-GRAPH-2026-06-08]]`
 A bare `[[AGENTS]]` is ambiguous across **six** on-disk files:
 
 | # | Path | What governance says |
-|---|---|---|
+| --- | --- | --- |
 | 1 | `!/AGENTS.md` | **[fact]** `.claude/CLAUDE.md` names it: *"Full agent registry, capability tiers, and boundary rules."* |
 | 2 | `AGENTS.md` (root) | **[fact]** `.claude/CLAUDE.md` names it: *"Root cross-tool pointer (auto-loaded by Codex CLI, Copilot, Qodo)."* |
 | 3 | `.codex/AGENTS.md` | Codex chamber's local copy. |
@@ -46,7 +46,7 @@ A bare `[[AGENTS]]` is ambiguous across **six** on-disk files:
 ## 2. `DOCKET` — four files
 
 | # | Path | Note |
-|---|---|---|
+| --- | --- | --- |
 | 1 | `!/!/__!__/!/! The world is quiet here/DOCKET.md` | **[fact]** The **live** board: `.claude/CLAUDE.md` § Swarm Coordination points here verbatim — *"Read THE DOCKET to orient: `!/!/__!__/!/! The world is quiet here/DOCKET.md`."* |
 | 2 | `!/!/__!__/!/! The world is quiet here/DOCKET-ARCHIVE.md` | Archive sibling, in the live folder. |
 | 3 | `!-!-__!__-!-! The world is quiet here-DOCKET.md` | **Flattened-alias** (NETWEB `_PREFIX`-style path-portability copy). |
@@ -54,12 +54,15 @@ A bare `[[AGENTS]]` is ambiguous across **six** on-disk files:
 
 **Observed (not decided):** governance fixes the **live** DOCKET as #1. #3 is its portable-path mirror; #2/#4 are archives. A bare `[[DOCKET]]` does not distinguish live from archive from mirror. **Architect's call:** confirm #1 as the canonical link target and the status (mirror? superseded?) of the flattened/archive copies.
 
+> [!check] Resolved 2026-06-29 (consolidation, PR #694)
+> #2 `DOCKET-ARCHIVE.md` and #4 its flat-alias were **consolidated into root `ADJUDICATED.md`** and removed. #3 the `DOCKET.md` flat-alias — a stale *illegal-docket* holdover from the Caesar Geminiaeus era — was **drained into `ADJUDICATED.md` § "The Old Illegal Docket — fossil (Caesar Geminiaeus era)" and cleared**. Only **#1 (the live `DOCKET.md`)** remains, so a bare `[[DOCKET]]` is now unambiguous. Historical mentions of the removed copies in dated snapshots/witnesses are **left as-witnessed** (rewriting them would falsify those records).
+
 ## 3. `TOPOLOGY-CENSUS` — seven files, one timestamp
 
 All share the census stamp **`20260525T095704Z`** (a UTC **timestamp**, not a bare date):
 
 | Stem | `.md` | `.json` |
-|---|---|---|
+| --- | --- | --- |
 | `TOPOLOGY-CENSUS-INDEX-…` | `!/TOPOLOGY-CENSUS-INDEX-20260525T095704Z.md` | — |
 | `TOPOLOGY-CENSUS-nest-…` | `!/TOPOLOGY-CENSUS-nest-20260525T095704Z.md` | `…nest-20260525T095704Z.json` |
 | `TOPOLOGY-CENSUS-root-…` | `!/TOPOLOGY-CENSUS-root-20260525T095704Z.md` | `…root-20260525T095704Z.json` |
@@ -77,4 +80,6 @@ All share the census stamp **`20260525T095704Z`** (a UTC **timestamp**, not a ba
 
 ---
 
-###### [["The world is quiet here."]]
+```text
+The world is quiet here．Esto Perpetua!
+```

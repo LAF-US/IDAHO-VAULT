@@ -1,4 +1,5 @@
 ---
+title: "RT @TheAdvocateMag You can choose between the Patriot Front..."
 date: 2022-06-14
 time: 21:45:06
 tweet_id: "1536827094985953280"
@@ -15,6 +16,6 @@ related:
   - lfinneytweets
 ---
 
-RT @TheAdvocateMag: "You can choose between the Patriot Front and your family," Jared Michael Boyce's mother told him. https://t.co/IKzL2yo…
+RT @TheAdvocateMag: "You can choose between the Patriot Front and your family," Jared Michael Boyce's mother told him. <https://t.co/IKzL2yo…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1536827094985953280)

@@ -1,4 +1,5 @@
 ---
+title: "RT @LewistonTribune More Idahoans have access to..."
 date: 2022-07-24
 time: 14:16:39
 tweet_id: "1551209753207926785"

@@ -4,4 +4,4 @@ related:
 - Idaho Dispatch
 authority: LOGAN
 ---
-Idaho Dispatch 
+Idaho Dispatch

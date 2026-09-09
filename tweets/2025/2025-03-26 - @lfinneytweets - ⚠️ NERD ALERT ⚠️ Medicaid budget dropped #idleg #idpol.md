@@ -1,4 +1,5 @@
 ---
+title: "\u26a0\ufe0f NERD ALERT \u26a0\ufe0f Medicaid budget dropped #idleg #idpol"
 date: 2025-03-26
 time: 22:44:35
 tweet_id: "1905028134996689327"
@@ -18,10 +19,11 @@ related:
   - idpol
 ---
 
-⚠️ NERD ALERT ⚠️ Medicaid budget dropped #idleg #idpol 
-https://t.co/cHANQLvPoa
+⚠️ NERD ALERT ⚠️ Medicaid budget dropped #idleg #idpol
+<https://t.co/cHANQLvPoa>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2025/03/25/outstanding-budgets-extend-the-2025-session/
+
+- <https://blog.idahoreports.idahoptv.org/2025/03/25/outstanding-budgets-extend-the-2025-session/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1905028134996689327)

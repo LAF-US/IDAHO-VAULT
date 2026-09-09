@@ -35,8 +35,6 @@ Our Sponsors
 
 Priest blessing parishioners sitting on benches during church service / Photo by pressmaster (DepositPhotos)
 
-  
-
 **By Emma Maple | FāVS News Reporter**
 
 Foreign-born religious workers, who have been hoping for changes to the temporary visa process so they can establish permanent residency and serve their congregations, recently celebrated a small win.

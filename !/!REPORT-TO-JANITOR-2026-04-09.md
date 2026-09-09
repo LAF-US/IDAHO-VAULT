@@ -258,4 +258,8 @@ The vault appears to be building toward a system where:
 - `SPIRIT` preserves coherence
 - `!` routes the living traffic around all three
 
-The world is quiet here.
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

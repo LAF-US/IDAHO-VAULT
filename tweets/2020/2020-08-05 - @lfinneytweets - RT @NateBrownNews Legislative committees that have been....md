@@ -1,4 +1,5 @@
 ---
+title: "RT @NateBrownNews Legislative committees that have been..."
 date: 2020-08-05
 time: 17:39:32
 tweet_id: "1291066321107484672"

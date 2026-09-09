@@ -101,7 +101,7 @@ Why, I ask myself at this point, does so much tech insist on being so shitty?
 
 Unless there's something truly urgent, I'm not pedal to the metal all weekend. It's more casual, and I'm less connected to the day-to-day heartbeat of business.
 
-![headshot of Meredith Whittaker in a black convertible](data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'/%3E)
+![headshot of Meredith Whittaker in a black convertible](data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg xmlns='<http://www.w3.org/2000/svg>' width='1' height='1'/%3E)
 
 Whittaker in the backseat of a convertible. Signal
 

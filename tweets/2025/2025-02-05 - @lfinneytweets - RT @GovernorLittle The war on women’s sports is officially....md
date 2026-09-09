@@ -1,4 +1,5 @@
 ---
+title: "RT @GovernorLittle The war on women\u2019s sports is officially..."
 date: 2025-02-05
 time: 23:13:47
 tweet_id: "1887278477323514193"

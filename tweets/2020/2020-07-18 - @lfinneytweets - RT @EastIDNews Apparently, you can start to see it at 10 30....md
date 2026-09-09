@@ -1,4 +1,5 @@
 ---
+title: "RT @EastIDNews Apparently, you can start to see it at 10 30..."
 date: 2020-07-18
 time: 04:33:54
 tweet_id: "1284345628336640002"

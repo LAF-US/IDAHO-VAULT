@@ -1,4 +1,5 @@
 ---
+title: "RT @pfannyyy ICYMI Several Idaho schools are shutting down..."
 date: 2022-01-19
 time: 16:11:13
 tweet_id: "1483834440455311363"

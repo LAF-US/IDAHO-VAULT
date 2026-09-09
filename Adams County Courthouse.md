@@ -5,4 +5,4 @@ related:
 - magistrate court
 ---
 
-magistrate court Adams County courthouse 
+magistrate court Adams County courthouse

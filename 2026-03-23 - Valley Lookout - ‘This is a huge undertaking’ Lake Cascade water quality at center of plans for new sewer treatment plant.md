@@ -5,7 +5,7 @@ author:
 published: 2026-03-23
 created: 2026-04-07
 ---
-![](https://valleylookout.com/wp-content/uploads/sites/2/2025/08/valleylookout.com-health-advisory-issued-for-lake-cascade-boat-ramp-dsc-2517.jpeg)
+![alt text needed](https://valleylookout.com/wp-content/uploads/sites/2/2025/08/valleylookout.com-health-advisory-issued-for-lake-cascade-boat-ramp-dsc-2517.jpeg)
 
 Beachgoers enjoying Lake Cascade last summer at the Van Wyck Boat Ramp despite a cyanobacteria health advisory issued for the area by the Idaho Department of Health and Welfare. Photo: Drew Dodson/Valley Lookout
 
@@ -29,7 +29,7 @@ The warm temperatures and high phosphorus make the reservoir ripe for toxic alga
 
 St. Luke's Health Plan - 2026 2:1
 
-![](https://valleylookout.com/wp-content/uploads/sites/2/2026/03/valleylookout.com-this-is-a-huge-undertaking-lake-cascade-water-quality-at-center-of-plans-for-new-sewer-treatment-plant-screenshot-2026-03-23-at-5.09.02-pm.jpeg)
+![alt text needed](https://valleylookout.com/wp-content/uploads/sites/2/2026/03/valleylookout.com-this-is-a-huge-undertaking-lake-cascade-water-quality-at-center-of-plans-for-new-sewer-treatment-plant-screenshot-2026-03-23-at-5.09.02-pm.jpeg)
 
 A 2019 cyanobacteria bloom on Lake Cascade in 2019. Photo: Courtesy Friends of Lake Cascade.
 
@@ -61,7 +61,7 @@ Other options under consideration include building a lagoon system or connecting
 
 ## West Mountain focus
 
-![](https://valleylookout.com/wp-content/uploads/sites/2/2026/03/valleylookout.com-this-is-a-huge-undertaking-lake-cascade-water-quality-at-center-of-plans-for-new-sewer-treatment-plant-screenshot-2026-03-23-at-5.00.35-pm.png)
+![alt text needed](https://valleylookout.com/wp-content/uploads/sites/2/2026/03/valleylookout.com-this-is-a-huge-undertaking-lake-cascade-water-quality-at-center-of-plans-for-new-sewer-treatment-plant-screenshot-2026-03-23-at-5.00.35-pm.png)
 
 The West Mountain district proposed by U.S. Environmental Protection Agency consultants. Map: via West Mountain Onsite Area Wastewater Report
 

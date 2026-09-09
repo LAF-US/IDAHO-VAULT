@@ -1,4 +1,5 @@
 ---
+title: "Grammar is collaborative, not scripture."
 date: 2020-05-07
 time: 22:09:03
 tweet_id: "1258519237909286912"

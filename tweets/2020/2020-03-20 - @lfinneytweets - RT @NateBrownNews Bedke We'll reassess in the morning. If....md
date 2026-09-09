@@ -1,4 +1,5 @@
 ---
+title: "RT @NateBrownNews Bedke We'll reassess in the morning. If..."
 date: 2020-03-20
 time: 01:04:25
 tweet_id: "1240806368300257281"

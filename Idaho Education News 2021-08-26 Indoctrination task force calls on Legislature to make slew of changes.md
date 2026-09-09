@@ -39,9 +39,9 @@ related:
 - voiced
 authority: LOGAN
 ---
-https://www.idahoednews.org/news/indoctrination-task-force-calls-on-legislature-to-make-slew-of-changes/
+<https://www.idahoednews.org/news/indoctrination-task-force-calls-on-legislature-to-make-slew-of-changes/>
 
-Blake Jones, Idaho Education News 
+Blake Jones, Idaho Education News
 
 _PHOTO: After her public testimony, Kayla Dunn listens to a question from a member of the task force during the meeting on Thursday, Aug. 26, 2021. Nik Streng/Idaho Education News_
 
@@ -52,6 +52,7 @@ Thursday afternoon marked the first time the committee made recommendations or a
 After hearing four-plus hours of testimony split on whether indoctrination is a problem in public schools, the task force unveiled and approved six proposals, which were not published ahead of the meeting or the testimony period.
 
 Recommendations included:
+
 - Repealing and replacing Idaho’s new law dealing with critical race theory, which prohibits forcing students to “affirm, adopt, or adhere” to certain teachings, including that one race or sex is superior or that people are responsible for the actions of their ancestors because of their race. McGeachin suggested a new version that defines critical race theory, which is not defined in the current law.
 - Recommending the State Board of Education and State Department of Education identify and resolve conflicts between their own administrative rules and a piece of the Idaho Constitution dealing with religious and sectarian teachings in schools, Article 9, Section 6. It’s unclear which rules the task force was referring to.
 - Banning the use of federal grant money “which promotes the practice of Critical Theories, or any educational model which promotes race-based stereotypes and biases, or makes claims that any particular race or American system is inherently racist.” The proposal identifies a Biden administration rule, which is not itself a grant, that prioritizes culturally responsive teaching and information literacy when awarding some federal dollars.
@@ -94,7 +95,7 @@ McGeachin said Thursday that the recommendations hadn’t even been typed up unt
 
 An EdNews public records request for the proposals made Monday was granted less than an hour before the meeting began, but no McGeachin staffers were available to provide the records until after the meeting.
 
-Boise High School student Shiva Rajbhandari criticized the task force for only accepting public comments now that most teachers and students were back in classrooms and pointed out that remote testimony wasn’t allowed. (However, board member Laura Van Vorhees read pro-task force testimony on one person’s behalf.) Local students had been protesting at some of the task force meetings over the summer, but few were in attendance at the early afternoon meeting on Thursday, which started during school hours. 
+Boise High School student Shiva Rajbhandari criticized the task force for only accepting public comments now that most teachers and students were back in classrooms and pointed out that remote testimony wasn’t allowed. (However, board member Laura Van Vorhees read pro-task force testimony on one person’s behalf.) Local students had been protesting at some of the task force meetings over the summer, but few were in attendance at the early afternoon meeting on Thursday, which started during school hours.
 
 “If it weren’t for that … I can guarantee you that this room would be packed just as it was in the summer with empowered young people working to defend their constitutionally protected rights to freedom of expression,” Rajbhandari said, before condemning the task force for attempts at “bringing Idaho back to the 1800s” with restrictions on race education.
 

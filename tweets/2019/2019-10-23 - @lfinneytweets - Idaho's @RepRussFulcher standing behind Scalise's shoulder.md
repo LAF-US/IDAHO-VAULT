@@ -1,4 +1,5 @@
 ---
+title: "Idaho's @RepRussFulcher standing behind Scalise's shoulder"
 date: 2019-10-23
 time: 21:01:57
 tweet_id: "1187111942059511809"
@@ -15,9 +16,10 @@ related:
   - lfinneytweets
 ---
 
-Idaho's @RepRussFulcher standing behind Scalise's shoulder https://t.co/XoS12LZbjq
+Idaho's @RepRussFulcher standing behind Scalise's shoulder <https://t.co/XoS12LZbjq>
 
 ## Links
-- https://x.com/SteveScalise/status/1187100490888335360
+
+- <https://x.com/SteveScalise/status/1187100490888335360>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1187111942059511809)

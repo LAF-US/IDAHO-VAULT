@@ -40,6 +40,7 @@ FROM "projects/brainstorming"
 You can select from a specific file by specifying it's full path: `"folder/File"`.
 
 - If you have both a file and a folder with the exact same path, Dataview will prefer the folder. You can force it to read from the file by specifying an extension: `folder/File.md`.
+
 ```js
 \`\`\`dataview
 LIST WITHOUT ID next-in-line
@@ -54,6 +55,7 @@ You can either select links **to** a file, or all links **from** a file.
 - To obtain all pages which link **to** `[[note]]`, use `[[note]]`.
 - To obtain all pages which link **from** `[[note]]` (i.e., all the links in that file), use `outgoing([[note]])`.
 - You can implicitly reference the current file via `[[#]]` or `[[]]`, i.e. `[[]]` lets you query from all files linking to the current file.
+
 ```js
 \`\`\`dataview
 LIST

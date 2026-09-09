@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio .@PullmanRegional says it \u201chas..."
 date: 2020-10-15
 time: 19:24:17
 tweet_id: "1316822219893301248"

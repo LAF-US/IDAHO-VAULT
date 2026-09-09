@@ -1,4 +1,5 @@
 ---
+title: "RT @danielwinlander If Biden wins, will armed right-wing..."
 date: 2020-10-24
 time: 01:53:30
 tweet_id: "1319819273276026880"

@@ -1,4 +1,5 @@
 ---
+title: "RT @DonLDay BREAKING @MicronTech says it will cut 10% of..."
 date: 2022-12-21
 time: 22:57:59
 tweet_id: "1605699128335683585"

@@ -1,4 +1,5 @@
 ---
+title: "HB 269 - Career exploration courses - this amendment would..."
 date: 2023-03-22
 time: 23:02:52
 tweet_id: "1638677651824185345"

@@ -3,4 +3,4 @@ related:
 - Department of Correction
 authority: LOGAN
 ---
-Department of Correction 
+Department of Correction

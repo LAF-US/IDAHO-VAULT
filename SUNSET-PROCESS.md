@@ -31,6 +31,7 @@ Formal workflow for identifying, flagging, synthesizing, and deleting ephemeral 
 This document defines the structured process for managing the lifecycle of non-persistent agents (Story-type and Task-type conversations) in IDAHO-VAULT. Persistent agents (marked PERSISTENT, PERMANENT, PUBLIC, ADMIN) are excluded from this process.
 
 **Goals:**
+
 - Maintain audit trail of all agent work via LEVELSET reports
 - Preserve git history while enabling agent cleanup
 - Require explicit authorization from Logan before deletion
@@ -41,11 +42,13 @@ This document defines the structured process for managing the lifecycle of non-p
 ## Sunset Phases
 
 ### Phase 1: Flagging
+
 **Goal:** Identify and mark non-persistent agents for sunset
 
 **Steps:**
+
 1. Agent completes its assigned work (deliverables complete, no pending tasks)
-2. Agent creates final LEVELSET-SUNSET-<agent-name>.md synthesis report (see template below)
+2. Agent creates final `LEVELSET-SUNSET-<agent-name>.md` synthesis report (see template below)
 3. Agent updates AGENT-REGISTRY.md to mark status as "FLAGGED_FOR_SUNSET"
 4. Agent commits with session URL and clear message
 5. Agent pushes to its branch
@@ -54,16 +57,19 @@ This document defines the structured process for managing the lifecycle of non-p
 **Responsible:** Individual agent
 
 **Output:**
-- LEVELSET-SUNSET-<agent-name>.md synthesis document
+
+- `LEVELSET-SUNSET-<agent-name>.md` synthesis document
 - Updated AGENT-REGISTRY.md entry
 - Commit in git history with session tracking
 
 ---
 
 ### Phase 2: Synthesis
+
 **Goal:** Create comprehensive final documentation for flagged agents
 
 **Steps:**
+
 1. Logan reviews LEVELSET-SUNSET-*.md synthesis reports
 2. Logan verifies:
    - All artifacts are documented
@@ -75,40 +81,48 @@ This document defines the structured process for managing the lifecycle of non-p
 **Responsible:** Logan (human operator)
 
 **Input:**
-- LEVELSET-SUNSET-<agent-name>.md reports
+
+- `LEVELSET-SUNSET-<agent-name>.md` reports
 - AGENT-REGISTRY.md
 - Git history and branch state
 
 **Output:**
+
 - Approval decision for each agent
 - Deletion checklist (below)
 
 ---
 
 ### Phase 3: Deletion Authorization
+
 **Goal:** Obtain explicit deletion order from Logan
 
 **Steps:**
+
 1. Logan reviews all flagged agents in AGENT-REGISTRY.md
 2. Logan issues deletion order in format:
-   ```
+
+   ```text
    DELETE: <Agent Name>
    Reason: [brief rationale]
    Approved: Logan
    Date: YYYY-MM-DD
    ```
+
 3. Logan provides list of agents to delete with authorization
 4. Deletion executor updates AGENT-REGISTRY.md to "DELETION_PENDING"
 
 **Responsible:** Logan
 
 **Output:**
+
 - Explicit deletion orders for each agent
 - Updated AGENT-REGISTRY.md with DELETION_PENDING status
 
 ---
 
 ### Phase 4: Artifact Cleanup
+
 **Goal:** Remove agent artifacts per deletion order while preserving git history
 
 **Deletion Checklist (per agent):**
@@ -120,24 +134,27 @@ This document defines the structured process for managing the lifecycle of non-p
 - [ ] Remove agent entries from configuration files (`.gitignore`, etc.) if safe
 - [ ] Update AGENT-REGISTRY.md to "DELETION_PENDING_ARTIFACTS_REMOVED"
 - [ ] Commit deletion cleanup
-- [ ] Create LEVELSET-DELETE-<agent>.md final report (see template below)
+- [ ] Create `LEVELSET-DELETE-<agent>.md` final report (see template below)
 - [ ] Update AGENT-REGISTRY.md to "DELETED"
 - [ ] Push final commit
 
 **Responsible:** Deletion executor (typically same as current operator)
 
 **Output:**
+
 - Removed branches and artifacts
-- LEVELSET-DELETE-<agent>.md final report
+- `LEVELSET-DELETE-<agent>.md` final report
 - Clean AGENT-REGISTRY.md
 
 ---
 
 ### Phase 5: Archive
+
 **Goal:** Create permanent audit record of deleted agent
 
 **Steps:**
-1. Create LEVELSET-DELETE-<agent>.md report (template provided below)
+
+1. Create `LEVELSET-DELETE-<agent>.md` report (template provided below)
 2. Document:
    - Agent identity and dates of operation
    - All commits/branches created
@@ -151,7 +168,8 @@ This document defines the structured process for managing the lifecycle of non-p
 **Responsible:** Deletion executor
 
 **Output:**
-- LEVELSET-DELETE-<agent>.md report in git history
+
+- `LEVELSET-DELETE-<agent>.md` report in git history
 - AGENT-REGISTRY.md marked DELETED
 - Immutable audit trail
 
@@ -159,7 +177,7 @@ This document defines the structured process for managing the lifecycle of non-p
 
 ## Document Templates
 
-### LEVELSET-SUNSET-<agent-name>.md Template
+### `LEVELSET-SUNSET-<agent-name>.md` Template
 
 ```markdown
 ---
@@ -210,7 +228,7 @@ This agent is ready for sunset. All work is complete and committed.
 Authorization to delete this agent's artifacts upon completion of other pending synthesis tasks.
 ```
 
-### LEVELSET-DELETE-<agent-name>.md Template
+### `LEVELSET-DELETE-<agent-name>.md` Template
 
 ```markdown
 ---

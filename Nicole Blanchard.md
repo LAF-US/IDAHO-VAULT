@@ -5,5 +5,6 @@ related:
 - Idaho Statesman
 authority: LOGAN
 ---
-Residence: Boise 
-- Idaho Statesman reporter 
+Residence: Boise
+
+- Idaho Statesman reporter

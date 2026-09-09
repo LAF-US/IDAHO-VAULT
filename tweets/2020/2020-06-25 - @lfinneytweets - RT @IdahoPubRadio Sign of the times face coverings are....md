@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio Sign of the times face coverings are..."
 date: 2020-06-25
 time: 18:36:56
 tweet_id: "1276222864291557377"

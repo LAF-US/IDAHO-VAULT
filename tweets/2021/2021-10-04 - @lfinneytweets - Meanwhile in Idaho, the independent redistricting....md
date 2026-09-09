@@ -1,4 +1,5 @@
 ---
+title: "Meanwhile in Idaho, the independent redistricting..."
 date: 2021-10-04
 time: 20:00:46
 tweet_id: "1445116706569867268"
@@ -19,11 +20,12 @@ related:
   - idpol
 ---
 
-@danielwinlander Meanwhile in Idaho, the independent redistricting commission is actively inviting people to submit their own maps (and actually finding them helpful). #idpol 
-https://t.co/peI55ANC29
+@danielwinlander Meanwhile in Idaho, the independent redistricting commission is actively inviting people to submit their own maps (and actually finding them helpful). #idpol
+<https://t.co/peI55ANC29>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2021/09/30/we-dont-want-to-be-with-them-wed-like-to-be-with-these-folks-instead/
+
+- <https://blog.idahoreports.idahoptv.org/2021/09/30/we-dont-want-to-be-with-them-wed-like-to-be-with-these-folks-instead/>
 
 *In reply to [@danielwreporter](https://twitter.com/danielwreporter)*
 

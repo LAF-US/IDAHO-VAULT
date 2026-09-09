@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio The Idaho Senate this afternoon has..."
 date: 2021-11-17
 time: 22:50:51
 tweet_id: "1461104577026138112"

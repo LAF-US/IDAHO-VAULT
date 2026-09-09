@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Governor, pressed on why no..."
 date: 2020-12-10
 time: 21:01:06
 tweet_id: "1337140306274263040"

@@ -40,12 +40,12 @@
     "scope_note": "GitHub, Linear, and Slack here describe the repo-local operating posture of IDAHO-VAULT, not the whole LAF-US world model."
   },
   "crewai_layer": {
-    "status": "refoundation",
+    "status": "retired",
     "manifest": ".crewai/manifest.json",
     "manifest_doc": ".crewai/MANIFEST.md",
     "output_dir": "!/CREWAI/",
-    "runtime_class": "vault-contained local runtime slice",
-    "authority_boundary": "swarm.json registers the layer; canonical CrewAI topology and promotion rules are documented in .crewai/MANIFEST.md."
+    "runtime_class": "none",
+    "authority_boundary": "Historical CrewAI material does not establish active topology, runtime authority, or a promotion path; see .crewai/MANIFEST.md."
   },
   "agents": {
     "antigravity": {

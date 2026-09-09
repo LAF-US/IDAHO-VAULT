@@ -1,4 +1,5 @@
 ---
+title: "RT @DailyBee County clerks throughout Idaho are calling for..."
 date: 2020-08-12
 time: 17:07:49
 tweet_id: "1293595052959125505"

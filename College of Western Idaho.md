@@ -6,4 +6,4 @@ related:
 - Canyon County
 authority: LOGAN
 ---
-Ada County and Canyon County-based community college overseen by Board of Trustees - CWI 
+Ada County and Canyon County-based community college overseen by Board of Trustees - CWI

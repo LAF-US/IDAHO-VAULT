@@ -1,4 +1,5 @@
 ---
+title: "RT @kxly4news The Grant County Health District has detected..."
 date: 2020-06-27
 time: 02:28:57
 tweet_id: "1276704040672362497"

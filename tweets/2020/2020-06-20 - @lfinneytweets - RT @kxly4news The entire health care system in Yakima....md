@@ -1,4 +1,5 @@
 ---
+title: "RT @kxly4news The entire health care system in Yakima..."
 date: 2020-06-20
 time: 01:35:21
 tweet_id: "1274153835951296512"
@@ -15,6 +16,6 @@ related:
   - lfinneytweets
 ---
 
-RT @kxly4news: The entire health care system in Yakima County is exceeding capacity, health officials announced Friday. https://t.co/cN1YYb…
+RT @kxly4news: The entire health care system in Yakima County is exceeding capacity, health officials announced Friday. <https://t.co/cN1YYb…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1274153835951296512)

@@ -1,4 +1,5 @@
 ---
+title: "INBOX @IDHouseCaucus responds to @GovernorLittle. #idpol..."
 date: 2021-01-22
 time: 19:54:33
 tweet_id: "1352706237058621440"
@@ -23,9 +24,10 @@ related:
   - IdahoCOVID19
 ---
 
-INBOX: @IDHouseCaucus responds to @GovernorLittle. #idpol #idleg #IdahoCOVID19 https://t.co/CCyMBLqwpS
+INBOX: @IDHouseCaucus responds to @GovernorLittle. #idpol #idleg #IdahoCOVID19 <https://t.co/CCyMBLqwpS>
 
 ## Media
-- ![](https://pbs.twimg.com/media/EsXHHalU4AA2Gb_.png)
+
+- ![alt text needed](https://pbs.twimg.com/media/EsXHHalU4AA2Gb_.png)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1352706237058621440)

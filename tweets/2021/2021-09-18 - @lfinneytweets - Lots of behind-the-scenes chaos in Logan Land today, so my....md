@@ -1,4 +1,5 @@
 ---
+title: "Lots of behind-the-scenes chaos in Logan Land today, so my..."
 date: 2021-09-18
 time: 02:22:01
 tweet_id: "1439052058234015744"

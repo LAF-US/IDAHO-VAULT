@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Giddings decries ethics..."
 date: 2021-07-21
 time: 19:42:27
 tweet_id: "1417933005717311488"

@@ -4,4 +4,4 @@ related:
 - Valley County
 authority: LOGAN
 ---
-Cascade, Valley County 
+Cascade, Valley County

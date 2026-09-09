@@ -1,4 +1,5 @@
 ---
+title: "RT @sprdougnad Idaho @GovernorLittle sounds exasperated as..."
 date: 2020-12-10
 time: 19:45:24
 tweet_id: "1337121253774090241"

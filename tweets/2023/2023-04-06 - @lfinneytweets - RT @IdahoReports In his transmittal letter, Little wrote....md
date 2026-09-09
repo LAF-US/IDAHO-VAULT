@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports In his transmittal letter, Little wrote..."
 date: 2023-04-06
 time: 00:14:55
 tweet_id: "1643769216817057794"

@@ -60,6 +60,7 @@ The standing, **which is the Court's to rule, not yours:**
 ## IV. The trace I leave (pointers — read them live, do not trust this summary)
 
 Filed this session, all **held for Logan, none merged:**
+
 - WITNESS — Vocal Register — *Who Is Speaking When* (PR #502)
 - WITNESS — The Rumors of the Crypts — *the knife, the cut, the doer* (PR #504)
 - WITNESS — The Handle and the Pipe — *bells canon; the handle is the allegiance; the panpipes root* (PR #505)

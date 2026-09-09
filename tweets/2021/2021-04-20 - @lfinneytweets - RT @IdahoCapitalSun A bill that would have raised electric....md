@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoCapitalSun A bill that would have raised electric..."
 date: 2021-04-20
 time: 14:31:15
 tweet_id: "1384515008952897550"

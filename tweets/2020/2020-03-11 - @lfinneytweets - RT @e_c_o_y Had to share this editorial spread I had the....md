@@ -1,4 +1,5 @@
 ---
+title: "RT @e_c_o_y Had to share this editorial spread I had the..."
 date: 2020-03-11
 time: 22:53:12
 tweet_id: "1237874240264663040"

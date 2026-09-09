@@ -1,4 +1,5 @@
 ---
+title: "RT @CBSNews Every voter in a post-debate CBS News panel in..."
 date: 2024-09-12
 time: 03:00:53
 tweet_id: "1834064612674658476"
