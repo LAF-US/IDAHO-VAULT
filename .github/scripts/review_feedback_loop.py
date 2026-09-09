@@ -155,6 +155,12 @@ AUTO_MERGE_NOT_READY_FRAGMENTS = (
     "Pull request is in unstable status (enablePullRequestAutoMerge)",
 )
 
+# Single source of truth for the not-ready sentinel note, so the producer
+# (_arm_auto_merge) and the consumer (_build_reconciliation_report, matching
+# on arm_error.startswith(...)) can't silently drift apart if one is edited
+# without the other.
+AUTO_MERGE_NOT_READY_NOTE = "not yet ready to arm (PR checks unstable); retried next pass"
+
 # Protected-path gating is no longer done here. A hand-maintained glob list was one of
 # three drifting, fail-open re-implementations of "these paths need a human".
 # The single source of that truth is now CODEOWNERS, enforced as a HARD GATE by
@@ -399,7 +405,7 @@ def _arm_auto_merge(owner: str, repo: str, pr_number: int) -> tuple[bool, str | 
         except RuntimeError as exc:
             message = str(exc)
             if any(fragment in message for fragment in AUTO_MERGE_NOT_READY_FRAGMENTS):
-                notes.insert(0, "not yet ready to arm (PR checks unstable); retried next pass")
+                notes.insert(0, AUTO_MERGE_NOT_READY_NOTE)
                 return (False, "; ".join(notes))
             if not any(fragment in message for fragment in AUTO_MERGE_AUTHZ_FRAGMENTS):
                 raise
@@ -1352,7 +1358,7 @@ def _build_reconciliation_report(
             auto_merge_enabled, arm_error = _arm_auto_merge(owner, repo, pr_number)
             if auto_merge_enabled:
                 rearmed.append(pr_number)
-            elif arm_error and arm_error.startswith("not yet ready to arm"):
+            elif arm_error and arm_error.startswith(AUTO_MERGE_NOT_READY_NOTE):
                 # Transient — PR checks are still unstable, expected to clear on a later
                 # pass. Distinct from a real authorization/branch-protection problem, so
                 # it must not land in auto_merge_authorization_blocked: pr_loop_watchdog
