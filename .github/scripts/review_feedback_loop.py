@@ -1487,10 +1487,11 @@ def _build_reconciliation_report(
                         # if the process cannot be spawned at all. Uncaught, that aborts
                         # the sweep from inside the handler meant to keep it alive.
                         rollback = f"AND the rollback disable was refused: {rollback_exc}"
-                    # Bound before the try: on the except path the tuple unpack never
+                    # A guard, not a signal: on the except path the tuple unpack never
                     # runs, and this name is function-scoped inside a per-PR loop, so
                     # without this it would hold the PREVIOUS PR's queue state. Nothing
-                    # reads it there today; this keeps that true for the next edit.
+                    # reads it there today — the unknown branch carries its own queue
+                    # caveat — and this keeps that safe for the next edit.
                     still_queued = False
                     try:
                         auto_merge_enabled, still_queued = _auto_merge_state(
@@ -1505,6 +1506,14 @@ def _build_reconciliation_report(
                             # auto-merge toggle or the push to do that for you." Without a
                             # dequeue this rollback cannot fully undo the promotion, so say
                             # so rather than let "disabled" imply the PR is stood down.
+                            #
+                            # No dequeue is attempted here, deliberately. `dequeuePullRequest`
+                            # is not used anywhere in this module, so completing the rollback
+                            # means giving the engine a write capability it does not have —
+                            # a wider decision than a rollback fix. Until that is taken, the
+                            # contract is: this pass reports the surviving queue entry and a
+                            # human removes it. Reporting it truthfully is the part that
+                            # belongs here; silently implying it was stood down is not.
                             state_note += (
                                 "; PR IS STILL IN THE MERGE QUEUE and can merge without "
                                 "`merge/auto` — disabling auto-merge does not dequeue"
@@ -1517,7 +1526,16 @@ def _build_reconciliation_report(
                         # as the rollback above: the read is another gh subprocess, and an
                         # unspawnable one must read as UNKNOWN, not abort the sweep.
                         auto_merge_enabled = True
-                        state_note = f"UNKNOWN, state read-back failed ({read_exc})"
+                        # The queue caveat belongs here MORE than on the readable path,
+                        # not less: there we at least know whether an entry survived,
+                        # here we do not, and `_arm_auto_merge` enqueues as well as
+                        # arming. Saying only "UNKNOWN" would leave the one state that
+                        # can merge the PR without `merge/auto` unmentioned.
+                        state_note = (
+                            f"UNKNOWN, state read-back failed ({read_exc}); PR MAY ALSO "
+                            "STILL BE IN THE MERGE QUEUE and able to merge without "
+                            "`merge/auto` — that could not be read either"
+                        )
                     promotion_publish_failed = True
                     # Leave a breadcrumb in `actions`. A successful promotion records
                     # `add:merge/auto`; without this the failure path records nothing, so
