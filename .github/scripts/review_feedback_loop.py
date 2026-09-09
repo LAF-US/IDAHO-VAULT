@@ -431,6 +431,7 @@ def _arm_auto_merge(owner: str, repo: str, pr_number: int) -> tuple[bool, str | 
     # being enabled, so a not-ready arm doesn't preclude a successful direct enqueue.
     node_id = _pr_node_id(owner, repo, pr_number)
     enqueued = False
+    enqueue_error: str | None = None
     if node_id:
         enqueued, enqueue_error = _enqueue_pr(node_id)
         if not enqueued and enqueue_error:
@@ -440,7 +441,20 @@ def _arm_auto_merge(owner: str, repo: str, pr_number: int) -> tuple[bool, str | 
             notes.append(f"enqueue was rejected: {enqueue_error}")
     if not_ready:
         if not enqueued:
-            # Still not ready even for a direct enqueue attempt — genuinely transient.
+            if enqueue_error:
+                # Half transient, half not: the arm was rejected as not-ready AND the
+                # direct enqueue hit a REAL error (auth/API). Only the first half is
+                # transient, so drop the not-ready sentinel and let the real rejection
+                # lead. _build_reconciliation_report files a PR under auto_merge_not_ready
+                # by matching that sentinel as the message's prefix, so leaving it in front
+                # would file a genuine authorization failure as "expected to clear on a
+                # later pass" — suppressing exactly the branch-protection drift report
+                # pr_loop_watchdog exists to make.
+                if notes and notes[0] == AUTO_MERGE_NOT_READY_NOTE:
+                    notes.pop(0)
+                return (False, "; ".join(notes))
+            # Not ready for a direct enqueue either, and nothing rejected it outright —
+            # genuinely transient.
             return (False, "; ".join(notes))
         # The arm attempt was rejected, but the direct enqueue succeeded anyway (UNSTABLE
         # was still queue-entry-eligible) — replace the stale not-ready sentinel so the
