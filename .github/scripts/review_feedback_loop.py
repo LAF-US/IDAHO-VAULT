@@ -1238,6 +1238,7 @@ def _build_reconciliation_report(
     promoted: list[int] = []
     rearmed: list[int] = []
     auto_merge_authorization_blocked: list[int] = []
+    auto_merge_not_ready: list[int] = []
     invariant_violations: list[dict[str, object]] = []
     total_resolved_outdated_threads = 0
     # Resolve the looker once for the whole batch walk (the engage-outdated pattern): the
@@ -1351,6 +1352,13 @@ def _build_reconciliation_report(
             auto_merge_enabled, arm_error = _arm_auto_merge(owner, repo, pr_number)
             if auto_merge_enabled:
                 rearmed.append(pr_number)
+            elif arm_error and arm_error.startswith("not yet ready to arm"):
+                # Transient — PR checks are still unstable, expected to clear on a later
+                # pass. Distinct from a real authorization/branch-protection problem, so
+                # it must not land in auto_merge_authorization_blocked: pr_loop_watchdog
+                # reports that bucket as "repository settings or branch protection drift,"
+                # and every merely-in-flight PR would otherwise false-positive there.
+                auto_merge_not_ready.append(pr_number)
             else:
                 auto_merge_authorization_blocked.append(pr_number)
 
@@ -1373,6 +1381,7 @@ def _build_reconciliation_report(
         "promoted_prs": promoted,
         "rearmed_prs": rearmed,
         "auto_merge_authorization_blocked": auto_merge_authorization_blocked,
+        "auto_merge_not_ready": auto_merge_not_ready,
         "invariant_violations": invariant_violations,
         "resolved_outdated_threads": total_resolved_outdated_threads,
         "evaluated": evaluated,
