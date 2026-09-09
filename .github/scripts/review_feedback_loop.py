@@ -1480,7 +1480,16 @@ def _build_reconciliation_report(
                     # assuming either outcome, so what gets published is what is true.
                     try:
                         _disable_auto_merge(pr_number, check=True)
-                        rollback = "disabled the auto-merge it had just enabled"
+                        # Describes the COMMAND, not the state. A zero exit says the
+                        # disable was accepted, not that auto-merge is off: the read-back
+                        # below is the only authority on that, and it can legitimately
+                        # come back STILL ENABLED -- a concurrent actor re-enabling in the
+                        # window is the case argued on this PR's own race thread. Claiming
+                        # "disabled the auto-merge" here produced a note that contradicted
+                        # itself in the same sentence: "disabled the auto-merge it had just
+                        # enabled; auto-merge is now STILL ENABLED". `state_note` makes the
+                        # state claim; this half only reports what the command returned.
+                        rollback = "the rollback disable was accepted"
                     except (RuntimeError, OSError) as rollback_exc:
                         # OSError as well: gh_cli._run converts non-zero exits and timeouts
                         # to RuntimeError, but subprocess.run itself still raises OSError
