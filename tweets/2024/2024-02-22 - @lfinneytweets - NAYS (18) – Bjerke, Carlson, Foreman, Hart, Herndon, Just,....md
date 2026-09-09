@@ -1,4 +1,5 @@
 ---
+title: "NAYS (18) \u2013 Bjerke, Carlson, Foreman, Hart, Herndon, Just,..."
 date: 2024-02-22
 time: 23:30:37
 tweet_id: "1760809347318468715"

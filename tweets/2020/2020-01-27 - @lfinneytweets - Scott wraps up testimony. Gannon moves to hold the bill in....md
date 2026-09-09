@@ -1,4 +1,5 @@
 ---
+title: "Scott wraps up testimony. Gannon moves to hold the bill in..."
 date: 2020-01-27
 time: 17:26:46
 tweet_id: "1221847026817613824"

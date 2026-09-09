@@ -5,6 +5,6 @@ related:
 - Moscow
 authority: LOGAN
 ---
-House member 
+House member
 
-foster care 
+foster care

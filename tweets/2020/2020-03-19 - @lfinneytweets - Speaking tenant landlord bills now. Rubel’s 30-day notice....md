@@ -1,4 +1,5 @@
 ---
+title: "Speaking tenant landlord bills now. Rubel\u2019s 30-day notice..."
 date: 2020-03-19
 time: 22:57:10
 tweet_id: "1240774344080363521"

@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2020-04-21
 time: 23:07:18
 tweet_id: "1252735693765242880"
@@ -14,10 +15,11 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/hPIQXLZTQr
+<https://t.co/hPIQXLZTQr>
 
 ## Media
-- ![](https://pbs.twimg.com/media/EWKcYwRUcAEcCIC.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/EWKcYwRUcAEcCIC.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

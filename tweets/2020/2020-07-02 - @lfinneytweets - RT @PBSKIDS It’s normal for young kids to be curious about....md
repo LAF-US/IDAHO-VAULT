@@ -1,4 +1,5 @@
 ---
+title: "RT @PBSKIDS It\u2019s normal for young kids to be curious about..."
 date: 2020-07-02
 time: 04:17:55
 tweet_id: "1278543399784574978"

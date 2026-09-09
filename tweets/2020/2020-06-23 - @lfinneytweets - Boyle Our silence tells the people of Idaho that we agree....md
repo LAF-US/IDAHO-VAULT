@@ -1,4 +1,5 @@
 ---
+title: "Boyle Our silence tells the people of Idaho that we agree..."
 date: 2020-06-23
 time: 15:23:00
 tweet_id: "1275449284129730560"

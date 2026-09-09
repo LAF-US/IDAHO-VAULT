@@ -1,4 +1,5 @@
 ---
+title: "RT @TheIdahoPress As people and companies seek ways to..."
 date: 2021-06-12
 time: 18:47:44
 tweet_id: "1403786109381873664"

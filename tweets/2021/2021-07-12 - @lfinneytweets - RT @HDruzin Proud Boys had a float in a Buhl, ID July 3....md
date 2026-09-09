@@ -1,4 +1,5 @@
 ---
+title: "RT @HDruzin Proud Boys had a float in a Buhl, ID July 3..."
 date: 2021-07-12
 time: 16:10:16
 tweet_id: "1414618117284581378"

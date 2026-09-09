@@ -17,11 +17,11 @@ related:
 - voice vote
 authority: LOGAN
 ---
-2 RS from Bruce Skaug 
+2 RS from Bruce Skaug
 
 ---
 
-artificial intelligence and child pornography 
+artificial intelligence and child pornography
 
 “There is a problem with artificial intelligence where you can now look at an image and it looks like a real child.”
 
@@ -36,10 +36,10 @@ Joe Alfieri - Question on how much of the person has to be depicted?
 
 Skaug is working on another bill - “If it appears to be an actual child, this bill covers that.”
 
-Unanimous voice vote 
+Unanimous voice vote
 
 ---
 
-Medical liens - bill will be printed here but heard in House Health and Welfare 
+Medical liens - bill will be printed here but heard in House Health and Welfare
 
 Extends time after a medical claim for insurance companies to pay before it goes to collections

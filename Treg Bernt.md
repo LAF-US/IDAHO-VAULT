@@ -5,4 +5,5 @@ related:
 authority: LOGAN
 ---
 Residence: Meridian
-- former Meridian city council member 
+
+- former Meridian city council member

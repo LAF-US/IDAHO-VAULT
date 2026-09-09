@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise AP Bill would bar Idaho's..."
 date: 2022-02-16
 time: 03:20:26
 tweet_id: "1493787328472436736"

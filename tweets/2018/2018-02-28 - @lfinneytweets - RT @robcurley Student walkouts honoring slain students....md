@@ -1,4 +1,5 @@
 ---
+title: "RT @robcurley Student walkouts honoring slain students..."
 date: 2018-02-28
 time: 20:17:29
 tweet_id: "968943259572580352"
@@ -15,6 +16,6 @@ related:
   - lfinneytweets
 ---
 
-RT @robcurley: Student walkouts honoring slain students prompting much differing responses in Spokane and Coeur d’Alene https://t.co/WaIPHk…
+RT @robcurley: Student walkouts honoring slain students prompting much differing responses in Spokane and Coeur d’Alene <https://t.co/WaIPHk…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/968943259572580352)

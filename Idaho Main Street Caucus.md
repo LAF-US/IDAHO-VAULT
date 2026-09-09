@@ -27,7 +27,8 @@ related:
 authority: LOGAN
 ---
 Podcast Appearances
-- Sen. Mark Harris 
+
+- Sen. Mark Harris
 - Rep. Julie Yamamoto
 - Rep. Marco Erickson
 - Sen. Geoff Schroeder
@@ -44,6 +45,7 @@ Podcast Appearances
 - Sen. Kevin Cook
 
 ### Policy
+
 OUR PRINCIPLES
 
 _Economic Prosperity_

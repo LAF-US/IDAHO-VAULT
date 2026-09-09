@@ -5,4 +5,4 @@ related:
 - Benewah
 authority: LOGAN
 ---
-> disamb: Riverdale (Benewah) 
+> disamb: Riverdale (Benewah)

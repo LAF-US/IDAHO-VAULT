@@ -1,4 +1,5 @@
 ---
+title: "Ten maintenance budget bills moved out of JFAC this..."
 date: 2024-01-17
 time: 02:58:27
 tweet_id: "1747453299027259692"
@@ -20,13 +21,15 @@ related:
   - idpol
 ---
 
-Ten "maintenance budget" bills moved out of JFAC this morning. Democrats are concerned about the process. Story coming at @IdahoReports in the morning. #idleg #idpol 
-https://t.co/ywWCrrM6Q5 https://t.co/nj7PGD6itv
+Ten "maintenance budget" bills moved out of JFAC this morning. Democrats are concerned about the process. Story coming at @IdahoReports in the morning. #idleg #idpol
+<https://t.co/ywWCrrM6Q5> <https://t.co/nj7PGD6itv>
 
 ## Links
-- https://public.flourish.studio/visualisation/16478092/
+
+- <https://public.flourish.studio/visualisation/16478092/>
 
 ## Media
-- ![](https://pbs.twimg.com/media/GEAzTgQaMAE34TX.png)
+
+- ![alt text needed](https://pbs.twimg.com/media/GEAzTgQaMAE34TX.png)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1747453299027259692)

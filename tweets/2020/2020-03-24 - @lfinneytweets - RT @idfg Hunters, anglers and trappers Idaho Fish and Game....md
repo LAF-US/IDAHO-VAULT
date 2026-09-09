@@ -1,4 +1,5 @@
 ---
+title: "RT @idfg Hunters, anglers and trappers Idaho Fish and Game..."
 date: 2020-03-24
 time: 19:12:08
 tweet_id: "1242529648916877312"

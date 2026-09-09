@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise LewTrib #idleg looks at..."
 date: 2020-06-08
 time: 19:01:11
 tweet_id: "1270068372265263104"

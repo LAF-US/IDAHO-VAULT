@@ -5,4 +5,4 @@ related:
 - Shoshone
 authority: LOGAN
 ---
-Shoshone, Lincoln County 
+Shoshone, Lincoln County

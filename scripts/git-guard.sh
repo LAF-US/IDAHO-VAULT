@@ -16,7 +16,9 @@ REPO_URL="https://github.com/LAF-US/IDAHO-VAULT.git"
 # guaranteed to be an absolute, dereferenced path across every shell - so
 # comparing paths can under- or over-match. Grepping each PATH candidate for
 # this script's own marker line is shell-agnostic and unambiguous: the real
-# git binary will never contain it.
+# git binary will never contain it. `-q` alone (no `-a`) is enough: `-a` is a
+# GNU/BSD extension, not POSIX, and may be rejected by a minimal grep; we
+# only need the match/no-match exit status, not the printed output.
 real_git=""
 old_ifs=$IFS
 IFS=:
@@ -25,7 +27,7 @@ for dir in $PATH; do
   candidate="$dir/git"
   [ -x "$candidate" ] || continue
   [ -f "$candidate" ] || continue
-  grep -qa "GIT_GUARD_MARKER=idaho-vault-git-guard-v1" "$candidate" 2>/dev/null && continue
+  grep -q "GIT_GUARD_MARKER=idaho-vault-git-guard-v1" "$candidate" >/dev/null 2>&1 && continue
   real_git=$candidate
   break
 done

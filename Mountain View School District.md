@@ -7,4 +7,4 @@ related:
 - Kooskia
 authority: LOGAN
 ---
-Grangeville/Kooskia/Elk City, Idaho County 
+Grangeville/Kooskia/Elk City, Idaho County

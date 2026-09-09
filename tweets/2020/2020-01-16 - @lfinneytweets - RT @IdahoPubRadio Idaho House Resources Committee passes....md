@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio Idaho House Resources Committee passes..."
 date: 2020-01-16
 time: 06:42:31
 tweet_id: "1217698627704905728"
@@ -15,6 +16,6 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoPubRadio: Idaho House Resources Committee passes rules affecting hunting, trapping. @RHaunID filed this report:  https://t.co/O4bM…
+RT @IdahoPubRadio: Idaho House Resources Committee passes rules affecting hunting, trapping. @RHaunID filed this report:  <https://t.co/O4bM…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1217698627704905728)

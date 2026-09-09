@@ -1,4 +1,5 @@
 ---
+title: "Burgoyne is in favor of the bill. Says Idaho ranks low for..."
 date: 2020-03-17
 time: 22:32:18
 tweet_id: "1240043307830398976"

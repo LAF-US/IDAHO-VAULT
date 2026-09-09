@@ -1,4 +1,5 @@
 ---
+title: "I love a hot mic after adjournment. I was in an interview..."
 date: 2023-01-17
 time: 18:33:03
 tweet_id: "1615416929312989184"
@@ -16,7 +17,7 @@ related:
   - idleg
 ---
 
-I love a hot mic after adjournment. 
+I love a hot mic after adjournment.
 
 "I was in an interview that ran long," Lt. Gov. Scott Bedke remarked, explaining his absence at the beginning of the Senate's floor session. #idleg
 

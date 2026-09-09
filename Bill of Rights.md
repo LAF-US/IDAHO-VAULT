@@ -7,6 +7,7 @@ related:
 ---
 
 U.S. Constitution
+
 - First Amendment
 - Second Amendment
 - Third Amendment
@@ -16,4 +17,4 @@ U.S. Constitution
 - Seventh Amendment
 - Eighth Amendment
 - Ninth Amendment
-- Tenth Amendment 
+- Tenth Amendment

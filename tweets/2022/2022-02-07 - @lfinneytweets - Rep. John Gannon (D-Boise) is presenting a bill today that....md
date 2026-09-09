@@ -1,4 +1,5 @@
 ---
+title: "Rep. John Gannon (D-Boise) is presenting a bill today that..."
 date: 2022-02-07
 time: 16:10:14
 tweet_id: "1490719560462323715"

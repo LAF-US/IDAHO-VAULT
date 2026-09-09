@@ -13,9 +13,10 @@ related:
   - lfinneytweets
 ---
 
-What To Do When One has Captured a Hog at Large: A Memoir https://t.co/rX1k3WkeQf
+What To Do When One has Captured a Hog at Large: A Memoir <https://t.co/rX1k3WkeQf>
 
 ## Links
-- https://t.co/rX1k3WkeQf
+
+- <https://t.co/rX1k3WkeQf>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1224799797464317953)

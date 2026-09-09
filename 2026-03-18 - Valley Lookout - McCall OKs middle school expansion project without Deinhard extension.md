@@ -5,7 +5,7 @@ author:
 published: 2026-03-18
 created: 2026-04-07
 ---
-![](https://valleylookout.com/wp-content/uploads/sites/2/2026/03/valleylookout.com-mccall-oks-middle-school-expansion-project-without-deinhard-extension-img-0591.jpeg)
+![alt text needed](https://valleylookout.com/wp-content/uploads/sites/2/2026/03/valleylookout.com-mccall-oks-middle-school-expansion-project-without-deinhard-extension-img-0591.jpeg)
 
 Payette Lakes Middle School. Photo: Drew Dodson/Valley Lookout
 
@@ -39,7 +39,7 @@ However, the district is committing nearly $400,000 to future improvements at th
 
 St. Luke's Health Plan - 2026 2:1
 
-![](https://valleylookout.com/wp-content/uploads/sites/2/2026/03/valleylookout.com-mccall-oks-middle-school-expansion-project-without-deinhard-extension-img-0598.jpeg)
+![alt text needed](https://valleylookout.com/wp-content/uploads/sites/2/2026/03/valleylookout.com-mccall-oks-middle-school-expansion-project-without-deinhard-extension-img-0598.jpeg)
 
 The intersection of Deinhard Lane and Samson Trail, as seen from corner of the Payette Lakes Middle School Campus. Photo: Drew Dodson/Valley Lookout
 
@@ -57,7 +57,7 @@ Meanwhile, Olson said the multi-purpose room expansion would enable the school t
 
 “The delay has impacted kids, and the delay is impacting kids right now,” he said. “It’s important to know that.”
 
-![](https://valleylookout.com/wp-content/uploads/sites/2/2025/07/valleylookout.com-mccall-donnelly-submits-scaled-back-plan-for-middle-school-expansion-screenshot-2025-07-10-at-2.38.48pm.jpeg)
+![alt text needed](https://valleylookout.com/wp-content/uploads/sites/2/2025/07/valleylookout.com-mccall-donnelly-submits-scaled-back-plan-for-middle-school-expansion-screenshot-2025-07-10-at-2.38.48pm.jpeg)
 
 A floor plan for the scaled back expansion of Payette Lakes Middle School. Map: Via Design West Architects
 
@@ -97,7 +97,7 @@ The previous middle school expansion approved by the city required the district 
 
 The original expansion project sought to increase the capacity of the middle school by 125 students by adding 12,000 square feet of new space.
 
-![](https://valleylookout.com/wp-content/uploads/sites/2/2025/04/valleylookout.com-valley-lookout-junior-hockey-cascade-geothermal-plms-expansion0.jpeg)
+![alt text needed](https://valleylookout.com/wp-content/uploads/sites/2/2025/04/valleylookout.com-valley-lookout-junior-hockey-cascade-geothermal-plms-expansion0.jpeg)
 
 An aerial view of the campus containing Payette Lakes Middle School and Barbara Morgan Elementary School. Photo: Chelsea Tuttle/Special to Valley Lookout
 

@@ -1,4 +1,5 @@
 ---
+title: "RT @gretelkauffman Now that I\u2019m back in cell service \u2014 some..."
 date: 2020-09-16
 time: 18:19:06
 tweet_id: "1306296568199348224"

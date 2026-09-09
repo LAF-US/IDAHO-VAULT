@@ -1,4 +1,5 @@
 ---
+title: "\u201c\u2026will allow clinics to set up vaccination appointments by..."
 date: 2021-01-05
 time: 22:44:53
 tweet_id: "1346588507704180737"

@@ -1,4 +1,5 @@
 ---
+title: "RT @danielwinlander We're trained to ask exactly these sort..."
 date: 2021-04-23
 time: 00:55:45
 tweet_id: "1385396943011008512"

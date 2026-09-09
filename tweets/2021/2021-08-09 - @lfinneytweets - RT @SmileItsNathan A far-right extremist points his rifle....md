@@ -1,4 +1,5 @@
 ---
+title: "RT @SmileItsNathan A far-right extremist points his rifle..."
 date: 2021-08-09
 time: 16:57:32
 tweet_id: "1424776875109273601"

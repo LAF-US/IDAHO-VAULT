@@ -8,6 +8,7 @@ related:
 - SIGNALS
 - swarm.json
 - coordination
+
 ---
 
 # SBP INTEGRATION ANALYSIS — 2026-04-22
@@ -17,7 +18,7 @@ related:
 ### Coordination Layers
 
 | Layer | Mechanism | Latency | Scope |
-|-------|-----------|---------|-------|
+| ------- | ----------- | --------- | ------- |
 | **SIGNALS** | Git files (`!/SIGNALS/SIG-*.md`) | Commit/push | Durable async |
 | **DOCKET** | Markdown board (`DOCKET.md`) | Manual update | Logan-facing |
 | **swarm.json** | JSON registry | Static | Agent definitions |
@@ -41,10 +42,12 @@ related:
 **Current:** File-based signals committed to git. Status: OPEN → ACKNOWLEDGED → CLOSED.
 
 **SBP Enhancement:**
-```
+
+```text
 EMIT vault.signal.new      intensity=1.0  payload={sig_id, from, to, subject}
 EMIT vault.signal.pending   intensity=N    payload={count}
 ```
+
 - Scent condition: "Wake when vault.signal.pending > 3"
 - Agents sense pending signals without polling DOCKET
 - Git commits remain durable record; SBP provides real-time awareness layer
@@ -54,9 +57,11 @@ EMIT vault.signal.pending   intensity=N    payload={count}
 **Current:** Manual Markdown updates. Logan reads at session start.
 
 **SBP Enhancement:**
-```
+
+```text
 REGISTER_SCENT vault.docket.pending >= 1 → wake_agent
 ```
+
 - Agents register conditions and go dormant
 - Blackboard triggers them when thresholds met
 - DOCKET remains human-facing summary; SBP handles machine triggers
@@ -66,10 +71,12 @@ REGISTER_SCENT vault.docket.pending >= 1 → wake_agent
 **Current:** No liveness detection.
 
 **SBP Enhancement:**
-```
+
+```text
 Every 5 min: EMIT vault.agent.claude.heartbeat intensity=0.8
 If no reinforcement for 15 min: evaporation → agent presumed dead
 ```
+
 - Agents sense each other's presence through decaying signals
 - Graceful degradation: one agent dies, pheromones decay, others adapt
 
@@ -80,7 +87,7 @@ If no reinforcement for 15 min: evaporation → agent presumed dead
 ### Core Trails
 
 | Trail | Type | Intensity Logic | Trigger |
-|-------|------|-----------------|---------|
+| ------- | ------ | ----------------- | --------- |
 | `vault.agent.{name}.heartbeat` | Heartbeat | 0.8 per ping, decay 5min | Liveness check |
 | `vault.signal.new` | Event | 1.0 per signal | New signal created |
 | `vault.signal.pending` | Count | N = count of OPEN | Agents checking inbox |
@@ -94,7 +101,7 @@ If no reinforcement for 15 min: evaporation → agent presumed dead
 
 ### Aggregation Patterns
 
-```
+```text
 vault.branch.orchard.count          → MAX of all branch signals
 vault.security.any                  → MAX of any security signal
 vault.signal.all.urgent             → MAX of critical signals
@@ -131,7 +138,7 @@ vault.daily.rollover.stage          → Current stage (1, 2, 3)
 ## Comparison: Current vs. SBP-Enhanced
 
 | Aspect | Current | SBP-Enhanced |
-|--------|---------|--------------|
+| -------- | --------- | -------------- |
 | Agent communication | Git files + Logan relay | Environmental signaling |
 | Liveness | Manual check | Pheromone decay |
 | Task triggers | Explicit Linear assignment | Threshold conditions |
@@ -162,7 +169,10 @@ The vault already has the **blackboard concept** — it's the file system + git 
 4. **Maintain DOCKET/SIGNALS** as human-facing surfaces
 5. **Iterate** based on what actually helps coordination
 
+###### [ Maiden : Mother : Crone ]
+
 ---
 
-###### [["The world is quiet here."]]
-###### [ Maiden : Mother : Crone ]
+```text
+The world is quiet here．Esto Perpetua!
+```

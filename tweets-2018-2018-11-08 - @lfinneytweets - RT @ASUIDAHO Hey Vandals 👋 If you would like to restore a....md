@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-RT @ASUIDAHO: Hey Vandals 👋 
+RT @ASUIDAHO: Hey Vandals 👋
 If you would like to restore a campus polling location for the next election we urge you to sign this petition…
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1060679826246266880)

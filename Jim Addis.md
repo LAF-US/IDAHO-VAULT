@@ -4,5 +4,6 @@ related:
 - House member
 authority: LOGAN
 ---
-Residence: Coeur d'Alene 
-- former House member 
+Residence: Coeur d'Alene
+
+- former House member

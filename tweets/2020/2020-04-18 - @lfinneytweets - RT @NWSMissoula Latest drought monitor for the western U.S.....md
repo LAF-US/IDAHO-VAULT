@@ -1,4 +1,5 @@
 ---
+title: "RT @NWSMissoula Latest drought monitor for the western U.S...."
 date: 2020-04-18
 time: 16:53:51
 tweet_id: "1251554546460921857"

@@ -1,4 +1,5 @@
 ---
+title: "Thanks, chairman. I appreciate the effort you put into..."
 date: 2020-07-25
 time: 02:03:48
 tweet_id: "1286844569829613568"

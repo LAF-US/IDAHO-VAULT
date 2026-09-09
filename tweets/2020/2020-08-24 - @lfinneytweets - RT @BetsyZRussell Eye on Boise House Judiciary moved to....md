@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise House Judiciary moved to..."
 date: 2020-08-24
 time: 18:31:34
 tweet_id: "1297964784713789442"

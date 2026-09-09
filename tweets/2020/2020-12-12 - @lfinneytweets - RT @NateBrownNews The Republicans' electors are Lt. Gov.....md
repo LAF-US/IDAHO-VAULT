@@ -1,4 +1,5 @@
 ---
+title: "RT @NateBrownNews The Republicans' electors are Lt. Gov...."
 date: 2020-12-12
 time: 00:30:20
 tweet_id: "1337555349126049792"

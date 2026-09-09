@@ -1,0 +1,66 @@
+VEVENT count: 42
+STRICT FINDINGS: 64
+File uses no CRLF delimiters.
+File contains bare LF delimiters.
+Line 12: DTSTAMP must be a UTC date-time ending in Z.
+Line 14: RRULE part 'INTERVAL:100' requires an equals sign.
+Line 18: PRIORITY requires an integer value or omission.
+Line 23: DTSTAMP must be a UTC date-time ending in Z.
+Line 25: RRULE part 'INTERVAL:10' requires an equals sign.
+Line 29: PRIORITY requires an integer value or omission.
+Line 34: DTSTAMP must be a UTC date-time ending in Z.
+Line 40: PRIORITY requires an integer value or omission.
+Line 45: DTSTAMP must be a UTC date-time ending in Z.
+Line 51: PRIORITY requires an integer value or omission.
+Line 56: DTSTAMP must be a UTC date-time ending in Z.
+Line 62: PRIORITY requires an integer value or omission.
+Line 67: DTSTAMP must be a UTC date-time ending in Z.
+Line 73: PRIORITY requires an integer value or omission.
+Line 78: DTSTAMP must be a UTC date-time ending in Z.
+Line 84: PRIORITY requires an integer value or omission.
+Line 89: DTSTAMP must be a UTC date-time ending in Z.
+Line 95: PRIORITY requires an integer value or omission.
+Line 100: DTSTAMP must be a UTC date-time ending in Z.
+Line 106: PRIORITY requires an integer value or omission.
+Line 111: DTSTAMP must be a UTC date-time ending in Z.
+Line 117: PRIORITY requires an integer value or omission.
+Line 122: DTSTAMP must be a UTC date-time ending in Z.
+Line 128: PRIORITY requires an integer value or omission.
+Line 133: DTSTAMP must be a UTC date-time ending in Z.
+Line 139: PRIORITY requires an integer value or omission.
+Line 144: DTSTAMP must be a UTC date-time ending in Z.
+Line 150: PRIORITY requires an integer value or omission.
+Line 155: DTSTAMP must be a UTC date-time ending in Z.
+Line 161: PRIORITY requires an integer value or omission.
+Line 166: DTSTAMP must be a UTC date-time ending in Z.
+Line 172: PRIORITY requires an integer value or omission.
+Line 177: DTSTAMP must be a UTC date-time ending in Z.
+Line 183: PRIORITY requires an integer value or omission.
+Line 188: DTSTAMP must be a UTC date-time ending in Z.
+Line 194: PRIORITY requires an integer value or omission.
+Line 199: DTSTAMP must be a UTC date-time ending in Z.
+Line 205: PRIORITY requires an integer value or omission.
+Line 210: DTSTAMP must be a UTC date-time ending in Z.
+Line 216: PRIORITY requires an integer value or omission.
+Line 221: DTSTAMP must be a UTC date-time ending in Z.
+Line 227: PRIORITY requires an integer value or omission.
+Line 232: DTSTAMP must be a UTC date-time ending in Z.
+Line 239: PRIORITY requires an integer value or omission.
+Line 244: DTSTAMP must be a UTC date-time ending in Z.
+Line 251: PRIORITY requires an integer value or omission.
+Line 254: blank line is not an iCalendar content line.
+Line 255: blank line is not an iCalendar content line.
+Line 256: blank line is not an iCalendar content line.
+Line 259: DTSTAMP must be a UTC date-time ending in Z.
+Line 348: blank line is not an iCalendar content line.
+Line 349: blank line is not an iCalendar content line.
+Line 350: blank line is not an iCalendar content line.
+Line 351: blank line is not an iCalendar content line.
+Line 352: blank line is not an iCalendar content line.
+Line 472: DTSTAMP must be a UTC date-time ending in Z.
+Line 478: PRIORITY requires an integer value or omission.
+Line 484: DTSTAMP must be a UTC date-time ending in Z.
+Line 490: PRIORITY requires an integer value or omission.
+Line 495: DTSTAMP must be a UTC date-time ending in Z.
+Line 501: PRIORITY requires an integer value or omission.
+Line 506: DTSTAMP must be a UTC date-time ending in Z.

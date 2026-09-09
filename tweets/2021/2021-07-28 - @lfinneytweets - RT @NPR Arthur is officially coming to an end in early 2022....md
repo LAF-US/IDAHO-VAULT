@@ -1,4 +1,5 @@
 ---
+title: "RT @NPR Arthur is officially coming to an end in early 2022..."
 date: 2021-07-28
 time: 19:21:18
 tweet_id: "1420464399303643139"

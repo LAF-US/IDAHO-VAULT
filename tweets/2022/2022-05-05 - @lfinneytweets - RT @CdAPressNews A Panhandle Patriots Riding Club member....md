@@ -1,4 +1,5 @@
 ---
+title: "RT @CdAPressNews A Panhandle Patriots Riding Club member..."
 date: 2022-05-05
 time: 17:25:44
 tweet_id: "1522266304706596864"

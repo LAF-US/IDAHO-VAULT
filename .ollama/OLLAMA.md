@@ -1,4 +1,5 @@
 ---
+title: OLLAMA
 authority: LOGAN
 related:
   - OLLAMA
@@ -6,6 +7,6 @@ related:
   - runtime
 ---
 
-**.ollama** — Imported software runtime persona.
+**.ollama** â€” Imported software runtime persona.
 
 ollama runtime and configuration.

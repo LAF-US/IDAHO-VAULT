@@ -17,6 +17,6 @@ related:
   - lfinneytweets
 ---
 
-RT @GovernorLittle: Ready to go live with @Varneyco from Capital for a Day in Parma! Check out @FoxBusiness for the interview. https://t.co…
+RT @GovernorLittle: Ready to go live with @Varneyco from Capital for a Day in Parma! Check out @FoxBusiness for the interview. <https://t.co…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1223305136698613761)

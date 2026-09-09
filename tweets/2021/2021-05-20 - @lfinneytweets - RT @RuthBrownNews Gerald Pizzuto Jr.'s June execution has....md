@@ -1,4 +1,5 @@
 ---
+title: "RT @RuthBrownNews Gerald Pizzuto Jr.'s June execution has..."
 date: 2021-05-20
 time: 04:03:43
 tweet_id: "1395228719082393601"

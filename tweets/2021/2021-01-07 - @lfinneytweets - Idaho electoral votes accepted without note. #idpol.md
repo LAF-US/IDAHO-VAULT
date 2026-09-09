@@ -1,4 +1,5 @@
 ---
+title: "Idaho electoral votes accepted without note. #idpol"
 date: 2021-01-07
 time: 04:55:22
 tweet_id: "1347044129503469568"

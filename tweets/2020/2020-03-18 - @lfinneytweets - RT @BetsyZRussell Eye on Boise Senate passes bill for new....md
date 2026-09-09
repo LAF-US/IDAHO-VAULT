@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Senate passes bill for new..."
 date: 2020-03-18
 time: 18:35:30
 tweet_id: "1240346102932500480"

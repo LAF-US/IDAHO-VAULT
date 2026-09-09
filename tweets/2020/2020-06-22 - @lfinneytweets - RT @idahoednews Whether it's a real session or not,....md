@@ -1,4 +1,5 @@
 ---
+title: "RT @idahoednews Whether it's a real session or not,..."
 date: 2020-06-22
 time: 21:45:50
 tweet_id: "1275183237665419264"

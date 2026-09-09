@@ -1,4 +1,5 @@
 ---
+title: "Now Rep. Palmer is debating in favor of the committee..."
 date: 2020-02-28
 time: 17:27:14
 tweet_id: "1233443555919593472"
