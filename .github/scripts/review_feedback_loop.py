@@ -1420,6 +1420,7 @@ def _build_reconciliation_report(
         )
         if promoting:
             auto_merge_enabled = False
+        promotion_publish_failed = False
 
         if (
             AGENT_AUTO_MERGE_ENABLED
@@ -1441,25 +1442,51 @@ def _build_reconciliation_report(
                 try:
                     gh_cli.pr_edit(pr_number, add_label=DEFAULT_AUTO_MERGE_LABEL)
                 except RuntimeError as exc:
-                    _disable_auto_merge(pr_number)
-                    auto_merge_enabled = False
+                    # Roll back with a CHECKED disable. The default is check=False, which
+                    # would swallow a refused rollback and let the lines below report the
+                    # PR disarmed while it is still armed — the same false state claim,
+                    # one level down. Then read the state back from GitHub rather than
+                    # assuming either outcome, so what gets published is what is true.
+                    try:
+                        _disable_auto_merge(pr_number, check=True)
+                        rollback = "disabled the auto-merge it had just enabled"
+                    except RuntimeError as rollback_exc:
+                        rollback = f"AND the rollback disable was refused: {rollback_exc}"
+                    auto_merge_enabled, _ = _auto_merge_state(owner, repo, pr_number)
+                    promotion_publish_failed = True
                     arm_error = (
                         f"auto-merge armed but `{DEFAULT_AUTO_MERGE_LABEL}` label write "
-                        f"failed; disabled auto-merge to avoid an un-trackable armed PR: "
-                        f"{exc}"
+                        f"failed ({exc}); {rollback}; auto-merge is now "
+                        f"{'STILL ENABLED' if auto_merge_enabled else 'disabled'}"
                     )
                 else:
                     if DEFAULT_REVIEW_PENDING_LABEL in current_labels:
                         current_labels.discard(DEFAULT_REVIEW_PENDING_LABEL)
                     current_labels.add(DEFAULT_AUTO_MERGE_LABEL)
                     actions.append(f"add:{DEFAULT_AUTO_MERGE_LABEL}")
-                    _comment(
-                        pr_number,
-                        f"⏱️ Agent review grace period ({grace_minutes} min) elapsed "
-                        f"with no blocking feedback. Promoting to `auto-merge`.",
-                    )
+                    try:
+                        _comment(
+                            pr_number,
+                            f"⏱️ Agent review grace period ({grace_minutes} min) elapsed "
+                            f"with no blocking feedback. Promoting to `auto-merge`.",
+                        )
+                    except RuntimeError as comment_exc:
+                        # The announcement is the least important part of the promotion,
+                        # and it runs after the arm and the label have both landed. Letting
+                        # it raise aborts the whole sweep mid-PR, so every remaining open PR
+                        # goes unreconciled because one comment could not be posted.
+                        print(
+                            f"::warning::promotion comment failed for #{pr_number}: "
+                            f"{comment_exc}",
+                            file=sys.stderr,
+                        )
                     promoted.append(pr_number)
-            if auto_merge_enabled:
+            if promotion_publish_failed:
+                # GitHub refused a write mid-promotion. That is drift whichever way the
+                # rollback went, so it belongs in the bucket pr_loop_watchdog reads —
+                # never in `rearmed`, even when the read-back says auto-merge is still on.
+                auto_merge_authorization_blocked.append(pr_number)
+            elif auto_merge_enabled:
                 rearmed.append(pr_number)
             elif arm_error and AUTO_MERGE_NOT_READY_NOTE in arm_error:
                 # Transient — PR checks are still unstable, expected to clear on a later
