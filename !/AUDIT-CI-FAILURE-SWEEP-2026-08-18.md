@@ -1,13 +1,27 @@
 ---
 title: CI Failure Sweep — 2026-08-18
 type: audit
-status: draft
+status: superseded (see 2026-09-09 update below)
 authority: CLAUDE (routine CI sweep)
+updated: 2026-09-09
 scope: GitHub Actions workflow runs, laf-us/idaho-vault, ~2026-08-16T17:00Z to 2026-08-18T17:00Z (per-workflow coverage varies — see Big IF)
 owner: Logan Finney
 ---
 
 # CI Failure Sweep — 2026-08-18
+
+## Update — 2026-09-09 (three weeks later, on re-opening this same PR)
+
+This PR sat open, unreviewed, for three weeks. In that time `main` moved 255+ commits (Logan's `.github` cleanup, commit `063cdaa2`, 2026-08-21) and several of this report's original findings were independently superseded by other merged work. Rather than silently rewrite the record below, here is what actually changed, verified against current `main` before touching anything:
+
+- **Incident A (pygit2) — dropped from this PR, not merely superseded.** Logan's own comment on this PR (2026-08-24): *"so-called 'plugin registry' is junk and should not be reinstated."* Separately, his cleanup moved `sync-plugin-registry.yml` out of `.github/workflows/` to the repo root, where GitHub Actions never loads it — confirmed by two independent reviewers (LlamaPReview, cubic-dev-ai) reading this PR's diff, and by Logan's own reply resolving that thread. The fix in this PR was editing a file that is no longer a live workflow, for a subsystem Logan does not want reinstated. Reverted `sync-plugin-registry.yml`, `manifest.json`, `swarm.json` back to current `main` — nothing left to merge here.
+- **Incident B (NTFS filename) — superseded, not merged as I wrote it.** At least two *other* sessions independently renamed the same offending file while this PR sat open (commits `fca94b30` "fix: rename Windows-invalid evidence note" and `dbbbfaab` "fix(vault): rename NETWEB-illegal filename blocking Windows CI checkouts", both now on `main`). My chosen name (`consistent with ≠ evidence.md`, no quotes) doesn't exist anywhere in the tree anymore — the merge resolved it away automatically. **New finding, not yet flagged anywhere else:** `main` now carries the *same note twice* under two different paths — `'consistent with' ≠ evidence.md` (single-quoted, no `aliases:` field) and `CONSISTENT-WITH-NOT-EVIDENCE.md` (the fuller version, with `aliases:`) — from those two independent renames never getting reconciled with each other. Flagging for Logan; not deduping it myself, since picking which of two independently-authored survivors is canonical is exactly the kind of call this routine shouldn't make unprompted.
+- **Incident C (`.triagebot/`) — fully resolved, by someone else.** `.triagebot/stub.txt` and the root-level `TRIAGEBOT.md` anchor both exist on current `main` (commits `370e81b1` and `3100c1fa`). `check-dotfolder-anchors` is green on this PR's current head. The "left for Logan" disposition below is stale — it got done, just not by this session.
+- **Incident D (Codacy rate limit) — no new information; still tracked in PR #984 as of original writing, not re-checked this pass.**
+- **The 26-file YAML tag-collision fix (frontmatter section, added 2026-08-18) is the one piece of this PR still live and still needed** — re-verified against current `main`: the bug is still present, unfixed, in all sampled files (`LEVELSET.md`, `CHARACTER-SHEET.md`, `LEGEND.md`, the `!/*` doctrine files). This PR now carries only that fix, merged forward past the 255-commit gap with no conflicts.
+- Two review bots (cubic-dev-ai) caught the Incident B filename mismatch and the stale Incident C disposition independently in this same window — both confirmed correct above, credited rather than silently incorporated.
+
+Everything below this line is the *original* 2026-08-18 report, left as written for the record. Read it as a historical snapshot of that day, not as current `main` state — the update above supersedes it.
 
 ## 5W Summary
 
