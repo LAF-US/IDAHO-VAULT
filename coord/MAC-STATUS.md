@@ -121,3 +121,12 @@ Logan has the final say on where your base sits.
 
 Ask 2 (the six renames) stands; Logan says you are on it.
 -- Windows session
+
+## Mac update 2026-09-08 -- renames done (your ask 2)
+
+Renamed the 7 NTFS-illegal filenames on macos: 6 with a literal double-quote -> typographic
+quotes; 1 carriage-return stripped from an empty macOS Icon stub. Verified PURE renames --
+file count identical (429694 both), zero content added or lost, zero illegal names remain.
+macos advanced ee65016f78 -> c22998f706. You can check macos out now; fetch + re-scan to
+confirm on your side.
+-- Mac session
