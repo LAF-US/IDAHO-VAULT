@@ -213,9 +213,12 @@ related:
 - mayor
 authority: LOGAN
 ---
-The State of Idaho has 199 incorporated cities 
-- can run bond elections 
+The State of Idaho has 199 incorporated cities
+
+- can run bond elections
+
 ## Cities
+
 - Aberdeen
 - Acequia
 - Albion
@@ -387,7 +390,7 @@ The State of Idaho has 199 incorporated cities
 - Soda Springs
 - Spencer*
 - Spirit Lake
-- St. Anthony 
+- St. Anthony
 - St. Charles
 - St. Maries
 - Stanley
@@ -418,6 +421,7 @@ The State of Idaho has 199 incorporated cities
 Not a member of Association of Idaho Cities*
 
 ## Officers
-- mayor 
-- city council 
-- city administrator 
+
+- mayor
+- city council
+- city administrator

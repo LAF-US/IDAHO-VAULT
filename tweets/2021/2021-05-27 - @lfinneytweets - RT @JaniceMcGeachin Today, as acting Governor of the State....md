@@ -1,4 +1,5 @@
 ---
+title: "RT @JaniceMcGeachin Today, as acting Governor of the State..."
 date: 2021-05-27
 time: 21:07:27
 tweet_id: "1398023063589908483"

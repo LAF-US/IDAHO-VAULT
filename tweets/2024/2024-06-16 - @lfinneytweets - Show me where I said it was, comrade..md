@@ -1,4 +1,5 @@
 ---
+title: "Show me where I said it was, comrade."
 date: 2024-06-16
 time: 22:15:13
 tweet_id: "1802464978429161636"

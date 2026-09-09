@@ -34,9 +34,9 @@ Early Wednesday morning, before any county employees had arrived at the election
 
 Law enforcement responded to a second fracas Wednesday, when a woman reported that a person she had been recording outside the elections office touched her cell phone. When police arrived, the person told them she didn’t touch the phone and instead put her hand up to block its view.
 
-The woman’s video appears to show the cell phone moving as the subject of the recording lifts her hand. Police cited the person for battery at the request of the complaining party, according to public records obtained by The Press. The name of the individual cited was redacted in the report. 
+The woman’s video appears to show the cell phone moving as the subject of the recording lifts her hand. Police cited the person for battery at the request of the complaining party, according to public records obtained by The Press. The name of the individual cited was redacted in the report.
 
-The Coeur d’Alene Police Department confirmed Saturday the citation has been voided. 
+The Coeur d’Alene Police Department confirmed Saturday the citation has been voided.
 
 A video showing a side view of the incident circulated on social media this week. It appears to show the person who was cited extend her hand toward the phone without touching it.
 

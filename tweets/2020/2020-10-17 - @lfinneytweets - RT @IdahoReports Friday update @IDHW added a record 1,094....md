@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Friday update @IDHW added a record 1,094..."
 date: 2020-10-17
 time: 00:05:15
 tweet_id: "1317255317525180418"

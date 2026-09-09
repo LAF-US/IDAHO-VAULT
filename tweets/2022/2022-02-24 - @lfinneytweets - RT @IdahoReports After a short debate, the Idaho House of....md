@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports After a short debate, the Idaho House of..."
 date: 2022-02-24
 time: 22:02:55
 tweet_id: "1496968912419778585"

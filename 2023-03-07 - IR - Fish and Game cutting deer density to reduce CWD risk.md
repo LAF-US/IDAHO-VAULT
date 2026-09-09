@@ -45,13 +45,13 @@ More than 150 deer were harvested in the first week of the project, which is exp
 
 “Animals that test negative for CWD will be processed and donated to local food banks or directly (to) folks that could use the meat,” according to an IDFG press release. “Landowners can retain their deer but may also provide carcasses to Fish and Game for processing and donation.”  
 
-Although there is no evidence that the disease can occur in humans, the U.S. Centers for Disease Control and Prevention recommends against eating meat from an animal that tests positive for CWD.   
+Although there is no evidence that the disease can occur in humans, the U.S. Centers for Disease Control and Prevention recommends against eating meat from an animal that tests positive for CWD.
 
-The area, northeast of Riggins, “encompasses the Slate Creek watershed from the Salmon River east to Nut Basin Road and the southern portion of the McKinzie Creek watershed south to the northern portion of the John Day Creek watershed… less than 9 percent of Unit 14,” the release said. 
+The area, northeast of Riggins, “encompasses the Slate Creek watershed from the Salmon River east to Nut Basin Road and the southern portion of the McKinzie Creek watershed south to the northern portion of the John Day Creek watershed… less than 9 percent of Unit 14,” the release said.
 
-In 2022, IDFG detected 15 positive cases of CWD in the Slate Creek drainage out of 3,171 deer, elk and moose sampled statewide. The department tested more than 2,500 animals for CWD in 2021 – when the first positive cases were discovered in the state – and has sampled more than 20,000 animals since 1997. 
+In 2022, IDFG detected 15 positive cases of CWD in the Slate Creek drainage out of 3,171 deer, elk and moose sampled statewide. The department tested more than 2,500 animals for CWD in 2021 – when the first positive cases were discovered in the state – and has sampled more than 20,000 animals since 1997.
 
-“There will be hunter harvest opportunities across Unit 14 this fall as part of our ongoing CWD harvest management strategies,” the release said. 
+“There will be hunter harvest opportunities across Unit 14 this fall as part of our ongoing CWD harvest management strategies,” the release said.
 
 _Idaho Fish and Game:
-CWD is a contagious and fatal neurological disease that affects deer, elk and moose. There is no cure, vaccine, or efficient and reliable CWD test for live, wild animals. CWD is long lived in the environment and can be contracted by animals simply foraging in an area with CWD in the soil. If left unchecked, the disease poses a long-term risk to deer and elk herds and hunting opportunities._ 
+CWD is a contagious and fatal neurological disease that affects deer, elk and moose. There is no cure, vaccine, or efficient and reliable CWD test for live, wild animals. CWD is long lived in the environment and can be contracted by animals simply foraging in an area with CWD in the soil. If left unchecked, the disease poses a long-term risk to deer and elk herds and hunting opportunities._

@@ -1,4 +1,5 @@
 ---
+title: "RT @NateNewsNow \u201cToday we filed our Notice of Intention to..."
 date: 2021-08-06
 time: 03:40:33
 tweet_id: "1423489144278245379"

@@ -1,4 +1,5 @@
 ---
+title: "RT @starsandstripes Idaho didn't initially itemize how much..."
 date: 2020-12-20
 time: 15:40:03
 tweet_id: "1340683390752706560"

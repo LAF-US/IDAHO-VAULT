@@ -1,4 +1,5 @@
 ---
+title: "RT @fabarnhill Double oof. #idwx #wildfire #Drought21"
 date: 2021-07-01
 time: 19:56:08
 tweet_id: "1410688693166231552"
@@ -22,9 +23,10 @@ related:
   - Drought21
 ---
 
-RT @fabarnhill: Double oof. #idwx #wildfire #Drought21 https://t.co/3Djkv6zCEM
+RT @fabarnhill: Double oof. #idwx #wildfire #Drought21 <https://t.co/3Djkv6zCEM>
 
 ## Media
-- ![](https://pbs.twimg.com/media/E5OfYy2VkAUTKQR.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/E5OfYy2VkAUTKQR.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1410688693166231552)

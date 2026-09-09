@@ -1,4 +1,5 @@
 ---
+title: "Meridian Mayor @robertsimison #idleg #idpol"
 date: 2020-06-22
 time: 22:27:43
 tweet_id: "1275193778488266753"
@@ -20,9 +21,10 @@ related:
   - idpol
 ---
 
-Meridian Mayor @robertsimison #idleg #idpol https://t.co/rwtAdGJAX1
+Meridian Mayor @robertsimison #idleg #idpol <https://t.co/rwtAdGJAX1>
 
 ## Links
-- https://x.com/k_talerico/status/1275190950600470529
+
+- <https://x.com/k_talerico/status/1275190950600470529>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1275193778488266753)

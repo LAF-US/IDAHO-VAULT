@@ -16,7 +16,7 @@ Simply add the GitHub repository path for the beta Obsidian plugin to the list f
 
 ## How to and use BRAT by community educator Ric Raftis
 
-![](https://www.youtube.com/watch?v=b8pLFnMKsSY)
+![alt text needed](https://www.youtube.com/watch?v=b8pLFnMKsSY)
 
 ## Say Thank You
 

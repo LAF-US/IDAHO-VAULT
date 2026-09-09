@@ -1,4 +1,5 @@
 ---
+title: "RT @KTVBJoe The #Idaho Senate has passed an emergency..."
 date: 2020-08-27
 time: 01:22:12
 tweet_id: "1298792900235411459"

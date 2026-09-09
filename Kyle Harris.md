@@ -4,5 +4,5 @@ related:
 - Mike Kingsley
 authority: LOGAN
 ---
-Legislative District 7 Representative 
-succeeded Mike Kingsley 
+Legislative District 7 Representative
+succeeded Mike Kingsley

@@ -1,4 +1,5 @@
 ---
+title: "RT @WeAreSinclair After further review, we have decided to..."
 date: 2020-07-25
 time: 20:30:21
 tweet_id: "1287123040489230336"

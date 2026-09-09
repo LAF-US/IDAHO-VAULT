@@ -1,4 +1,5 @@
 ---
+title: "I\u2019m also living with a teacher! The spare bedroom has..."
 date: 2020-04-13
 time: 21:51:07
 tweet_id: "1249817416973955073"

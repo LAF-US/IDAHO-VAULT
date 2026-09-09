@@ -1,4 +1,5 @@
 ---
+title: "RT @theintercept Surprise! It was a crypto exchange."
 date: 2025-04-03
 time: 20:08:35
 tweet_id: "1907887979844218971"
@@ -15,12 +16,14 @@ related:
   - lfinneytweets
 ---
 
-RT @theintercept: Surprise! It was a crypto exchange. https://t.co/uJKh5gGF08 https://t.co/nMQ1iCVa0D
+RT @theintercept: Surprise! It was a crypto exchange. <https://t.co/uJKh5gGF08> <https://t.co/nMQ1iCVa0D>
 
 ## Links
-- https://interc.pt/3XI5gMw
+
+- <https://interc.pt/3XI5gMw>
 
 ## Media
-- ![](https://pbs.twimg.com/media/Gnkk9NqWUAAsZvf.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/Gnkk9NqWUAAsZvf.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1907887979844218971)

@@ -1,4 +1,5 @@
 ---
+title: "The Board of Canvassers certified Idaho's election results..."
 date: 2022-11-24
 time: 20:27:21
 tweet_id: "1595876749065478144"

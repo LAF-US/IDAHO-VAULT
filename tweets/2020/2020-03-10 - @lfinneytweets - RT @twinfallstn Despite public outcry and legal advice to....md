@@ -1,4 +1,5 @@
 ---
+title: "RT @twinfallstn Despite public outcry and legal advice to..."
 date: 2020-03-10
 time: 02:09:37
 tweet_id: "1237198895609868288"

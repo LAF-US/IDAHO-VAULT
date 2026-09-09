@@ -4,4 +4,4 @@ related:
 - Idaho Education News
 authority: LOGAN
 ---
-Idaho Education News 
+Idaho Education News

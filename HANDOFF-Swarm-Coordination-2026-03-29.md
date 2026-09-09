@@ -40,6 +40,7 @@ authority: LOGAN
 ## ROUTING INSTRUCTION
 
 This handoff captures:
+
 1. **Logan's explicit authorization** of Linear agent as swarm workspace manager (2026-03-29, 1390–1415 in source)
 2. **Swarm-wide coordination guidance** synthesized from Claude, Perplexity, Grok, and Gemini (2026-03-29, lines 188–869)
 3. **Decision log and milestones** for the IDAHO-VAULT automation fix
@@ -132,21 +133,25 @@ From synthesized guidance (lines 224–234):
 ### Staged Execution (Milestones from Swarm Synthesis)
 
 #### **Milestone 1: Define Swarm Governance**
+
 - Draft AGENTS.md (✓ updated 2026-03-29)
 - Document governance model — hierarchical vs hybrid/mesh
 - Define "never do" actions for agents (hard red lines)
 
 #### **Milestone 2: MCP & Communication Scope**
+
 - Scope MCP tools — list functions to expose (PDF parsing, scraper testing, budget math, etc.)
 - Decide shared state location — Linear-centric vs mixed
 - Draft MCP architecture note — where MCP instances run, auth model, logging
 
 #### **Milestone 3: Minimum Viable Workflows (MVP)**
+
 - **Workflow 1 – Research Task:** Logan adds Linear ticket → Orchestrator assigns agent(s) → Output → Logan approves
 - **Workflow 2 – PDF Analysis:** Logan drops JFAC PDF → Gemini parses → Claude reviews → Logan approves → vault record + Linear comment
 - **Workflow 3 – Scraper Triage:** Agent detects scraper fragility → proposes fixes via Linear tickets, not direct code edits
 
 #### **Milestone 4: Disagreement & Escalation**
+
 - Design "agent disagreement" protocol — standard pattern for conflicting outputs to Logan
 - Implement "request human" hook — any agent can signal "stop, Logan must decide"
 
@@ -155,32 +160,40 @@ From synthesized guidance (lines 224–234):
 ## Summary & Next Actions
 
 ### What Is Decided
+
 1. ✓ Linear agent is a standing swarm node (authorized by Logan, 2026-03-29)
 2. ✓ Linear's role is workspace manager + decision log keeper
 3. ✓ Vault remains canonical; Linear is the coordination layer
 4. ✓ Swarm model is hierarchical with Logan as final arbiter
 
 ### What Is Still TBD
+
 1. **MCP hosting:** Local (Cloudflare tunnel) vs cloud CI/CD runner?
 2. **Relay mechanism:** Zapier/Make vs custom edge function for Linear → GitHub webhook?
 3. **Conflict resolution:** Tie-break rule when two agents claim same task?
 4. **Approval thresholds:** Exact list of always-human actions vs auto-approvable tasks?
 
 ### Immediate Owners
+
 - **Logan:** Resolve TBD items; green-light Milestone 1 completion
 - **LINEAR:** Activate workspace structure; begin issue curation per Milestone 1
 - **CODE AUTHORITY (Claude Code):** Continue infrastructure commits; support Milestone 1–2 scaffolding
 - **All agents:** Read AGENTS.md and acknowledge role/constraints
 
 ### Links & References
+
 - Agent registry: `!/AGENTS.md` (updated 2026-03-29)
 - DOCKET: `!/!/! The world is quiet here/DOCKET.md`
 - CONSTITUTION: `!/CONSTITUTION.md`
-- Linear project: https://linear.app/loganfinney/project/idaho-vault-df3c1d3e366e
+- Linear project: <https://linear.app/loganfinney/project/idaho-vault-df3c1d3e366e>
 
 ---
 
 **Status:** Ready for Logan + swarm acknowledgment.
 **Prepared by:** The Abhorsen (Claude Code) on behalf of swarm synthesis (Claude, Perplexity, Grok, Gemini)
 
-_The world is quiet here._
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

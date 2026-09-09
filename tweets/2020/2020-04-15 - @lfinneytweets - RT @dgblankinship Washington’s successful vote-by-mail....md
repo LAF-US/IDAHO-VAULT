@@ -1,4 +1,5 @@
 ---
+title: "RT @dgblankinship Washington\u2019s successful vote-by-mail..."
 date: 2020-04-15
 time: 20:45:34
 tweet_id: "1250525697623367682"

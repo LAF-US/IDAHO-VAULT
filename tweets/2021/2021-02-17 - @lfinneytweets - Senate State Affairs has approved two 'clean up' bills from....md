@@ -1,4 +1,5 @@
 ---
+title: "Senate State Affairs has approved two 'clean up' bills from..."
 date: 2021-02-17
 time: 15:34:55
 tweet_id: "1362062981920559111"

@@ -18,7 +18,7 @@ related:
   - idpol
 ---
 
-Rep. Monks is explaining the adjournment timeline. Bills must make their way back to the original chamber to be signed and then be transmitted to the governor before sine die. 
+Rep. Monks is explaining the adjournment timeline. Bills must make their way back to the original chamber to be signed and then be transmitted to the governor before sine die.
 The Speaker clarifies it takes roughly a day to process. “Maybe on Friday,” Bedke says. #idleg #idpol
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1240058289825562624)

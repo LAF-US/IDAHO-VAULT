@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Idaho @GovernorLittle joins @davlinnews to..."
 date: 2022-08-02
 time: 22:31:33
 tweet_id: "1554595786163228672"

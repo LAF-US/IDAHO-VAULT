@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2020-10-06
 time: 19:42:56
 tweet_id: "1313565425045659648"
@@ -14,10 +15,11 @@ related:
   - lfinneytweets
 ---
 
-@Aminboise https://t.co/U7ZKnky5EL
+@Aminboise <https://t.co/U7ZKnky5EL>
 
 ## Media
-- ![](https://pbs.twimg.com/media/Ejq4yv0U8AA0vSK.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/Ejq4yv0U8AA0vSK.jpg)
 
 *In reply to [@am_reports](https://twitter.com/am_reports)*
 

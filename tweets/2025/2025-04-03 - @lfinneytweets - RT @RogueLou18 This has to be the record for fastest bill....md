@@ -1,4 +1,5 @@
 ---
+title: "RT @RogueLou18 This has to be the record for fastest bill..."
 date: 2025-04-03
 time: 23:13:07
 tweet_id: "1907934418825785558"

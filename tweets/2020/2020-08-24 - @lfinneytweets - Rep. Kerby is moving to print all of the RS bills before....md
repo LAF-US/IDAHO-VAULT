@@ -1,4 +1,5 @@
 ---
+title: "Rep. Kerby is moving to print all of the RS bills before..."
 date: 2020-08-24
 time: 17:52:42
 tweet_id: "1297955003877879808"

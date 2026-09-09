@@ -9,7 +9,7 @@ An **Isthmus Anchor** is an object used to open a portal to another dimension. I
 
 ## The Grotesquery
 
-![](https://skulduggery.fandom.com/wiki/477px-Grotesquery.jpg)
+![alt text needed](https://skulduggery.fandom.com/wiki/477px-Grotesquery.jpg)
 
 The Grotesquery
 

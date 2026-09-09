@@ -1,4 +1,5 @@
 ---
+title: "Little voices approval of Trump's trade agreement with..."
 date: 2020-01-06
 time: 20:28:03
 tweet_id: "1214282502468067330"

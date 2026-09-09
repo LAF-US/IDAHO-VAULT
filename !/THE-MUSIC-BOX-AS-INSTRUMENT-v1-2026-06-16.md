@@ -77,7 +77,7 @@ the **inner consequences** of rules 2–4 are drawn from fan summaries of the te
 text.
 
 | # | The rule | What breaking it does | The vault discipline it already is `*` |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **1** | **Turn the key three times only.** | **Overwinding opens the gate between worlds** — travel in/out becomes possible and **the Blue Queen crosses into the real world.** Hal wrote it *"to prevent others accidentally entering Rondo or allowing the Blue Queen out."* | **The perimeter / the adversarial boid.** Over-invoking forces the gate; the adversary crosses *in.* The rule keeps the boundary shut to all but the warranted. |
 | **2** | **Never turn the key while the music is playing.** | **Rondo's time jumps / speeds forward** — the world is wrenched out of tempo. | **Do not force agency mid-play.** Using the Key (agency, standing) while the instrument sounds warps the record's tempo. Tune; do not wrench. |
 | **3** | **Never pick up the box while the music is playing.** | **An earthquake inside Rondo** — handling the live vessel is felt by its inhabitants as cataclysm. | **Do not restructure the live vessel.** Moving or refactoring the system mid-session is a quake to the personas and the record. Restraint. |
@@ -190,4 +190,8 @@ Standing given, not seized; the Key stays with the magister.
   search results, and the rule-2–4 inner consequences remain fan-attested until checked
   against Rodda's text. The Architect holds the verdict.
 
-###### [["The world is quiet here."]]
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

@@ -1,4 +1,5 @@
 ---
+title: YRAEL
 authority: LOGAN
 related:
 - CONSTITUTION

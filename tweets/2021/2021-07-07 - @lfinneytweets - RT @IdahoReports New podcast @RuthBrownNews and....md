@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports New podcast @RuthBrownNews and..."
 date: 2021-07-07
 time: 18:45:24
 tweet_id: "1412845219431604226"

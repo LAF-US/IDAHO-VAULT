@@ -14,10 +14,11 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/dSGFKFF8lo
+<https://t.co/dSGFKFF8lo>
 
 ## Media
-- ![](https://pbs.twimg.com/media/D4VRZGTWAAUy65e.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/D4VRZGTWAAUy65e.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

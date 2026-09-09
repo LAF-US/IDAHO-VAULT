@@ -5,4 +5,4 @@ related:
 - Pierce
 authority: LOGAN
 ---
-quasi-military residential high school operated by Idaho Army National Guard in Pierce 
+quasi-military residential high school operated by Idaho Army National Guard in Pierce

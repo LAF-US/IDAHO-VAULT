@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoCapitalSun In Idaho, 51,649 households are..."
 date: 2024-01-30
 time: 17:39:32
 tweet_id: "1752386076063465565"

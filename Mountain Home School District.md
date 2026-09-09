@@ -5,4 +5,4 @@ related:
 - Mountain Home
 authority: LOGAN
 ---
-Mountain Home, Elmore County 
+Mountain Home, Elmore County

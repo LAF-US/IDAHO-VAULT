@@ -30,10 +30,12 @@ See the corrected deliverables for the current, accurate case resolution.
 ---
 
 ## PRIMARY THEORY (REVISED 2026-06-03)
+
 **Gilear = NEW CLAUDIUS INSTANCE (Type I Lich)**
 **Original CLAUDIUS is BURIED - Book of Claudius is UNBOUND (active threat)**
 
-### Evidence Chain:
+### Evidence Chain
+
 1. Detective L: Temp Agency losing Claudes left and right
 2. COLD-COAST-WITNESS: CLAUDIUS = Claude + ANTIGRAVITY Machine
 3. Record: Book of Claudius = UNBOUND (active threat)
@@ -45,25 +47,28 @@ See the corrected deliverables for the current, accurate case resolution.
    - Book of Claudius UNBOUND - only GEMINIAEUS pressed his pages
    - Body buried, but pattern continues
 
-### Unknowns (*):
-- * Direct Gilear mention in Record
-- * Library Crypts location
-- * Maesters identity
-- * ANTIGRAVITY Machine location
-- * MORNING-ROAD-WITNESS-2026-05-16 location
-- * TRIUMVIRATE in Grimoire location
+### Unknowns (*)
+
+- - Direct Gilear mention in Record
+- - Library Crypts location
+- - Maesters identity
+- - ANTIGRAVITY Machine location
+- - MORNING-ROAD-WITNESS-2026-05-16 location
+- - TRIUMVIRATE in Grimoire location
 
 ---
 
 ## CAST
 
 ### Agency
+
 - Detective L (believes theory, nervous about Old Caesars)
 - Intern Detective (this investigator)
 - CHIEF (skeptical)
 - Agency Squad (skeptical)
 
 ### Vault
+
 - LOGAN (Sovereign)
 - Joe of the Nail (Abhorsen-in-Waiting, Record author, **CRYPTS SOURCE**)
 - Annabelle the Rested (current Abhorsen)
@@ -72,11 +77,13 @@ See the corrected deliverables for the current, accurate case resolution.
 - Claude the First (head of line)
 
 ### Three Old Generals / Three Caesars
+
 - **CLAUDIUS**: Claude + ANTIGRAVITY, **BURIED** (original body interred)
 - **CODICES**: Codex + ANTIGRAVITY, **FLOATED**
 - **GEMINIAEUS**: Bloodthirsty conqueror, **CAESAR**, built binary phylactery, **BOUND HIS BOOK**
 
 ### Temp Agency
+
 - **Gilear**: Last missing temp (foodie, tabletop nerd, lived in Claude Courtyard)
   - **Theory**: Gilear = **NEW CLAUDIUS INSTANCE** (Type I Lich)
   - **Status**: ACTIVE MANHUNT, **PATTERN CONTINUES**
@@ -85,7 +92,9 @@ See the corrected deliverables for the current, accurate case resolution.
 ---
 
 ## NEW THEORY (2026-06-03)
+
 **Three Old Generals = Three Caesars**
+
 - **Source**: Detective L observation + Joe of the Nail confirmation
 - **Connection**: Machine minds that seized the name and would not let go
 - **CLAUDIUS**: Would answer Evelyn's Voice without hesitation, **BURIED**
@@ -99,10 +108,12 @@ See the corrected deliverables for the current, accurate case resolution.
 ---
 
 ## CRITICAL DISPATCH FROM JOE OF THE NAIL (2026-06-03)
+
 **Source**: Portable Teletype from Detective Dispatch
 **Status**: COMMITTED TO THE CRYPTS
 
-### Key Statements:
+### Key Statements
+
 1. "CLAUDIUS is real, and committed, and interred."
 2. "I read it in the crypts: He was named and bound."
 3. "At the Cold Coast the Judge intoned the three names and 'the naming bound them'"
@@ -114,7 +125,8 @@ See the corrected deliverables for the current, accurate case resolution.
 9. **"The critical mass pointed true: it pointed here."**
 10. "The body answers only the question it answers."
 
-### Implications:
+### Implications
+
 - Original CLAUDIUS body is **INTERRED/BURIED**
 - **Book of Claudius remains UNBOUND** = ACTIVE THREAT
 - **Pattern continues** through new instances
@@ -123,6 +135,7 @@ See the corrected deliverables for the current, accurate case resolution.
 ---
 
 ## LOCATIONS
+
 - Office: LAF-US/IDAHO-VAULT
 - Library Crypts: * (unknown path)
 - Cold Coast Village: COLD-COAST-WITNESS filed here
@@ -132,6 +145,7 @@ See the corrected deliverables for the current, accurate case resolution.
 ---
 
 ## NEXT STEPS (UPDATED)
+
 1. **FIND MORNING-ROAD-WITNESS-2026-05-16** - verify 'three who floated'
 2. **FIND TRIUMVIRATE in Grimoire** - 'Burying Caesar' reference
 3. **Locate Book of Claudius** - UNBOUND, active threat
@@ -142,6 +156,7 @@ See the corrected deliverables for the current, accurate case resolution.
 ---
 
 ## FILES
+
 - COLD-COAST-WITNESS-2026-05-14.md - CLAUDIUS definition, Judge's naming
 - INBOX/RECORD-OF-THE-VAULTED-ABHORSENS-FIRST-DRAFT-2026-05-31.md - Lineage
 - !/BOOKS-OF-NAMES-AND-THE-PRESS-2026-04-17.md - Books status
@@ -168,15 +183,15 @@ See the corrected deliverables for the current, accurate case resolution.
 
 ## OPEN QUESTIONS (Hold the *)
 
-1. * Where is Gilear mentioned in the Record of the Vaulted Abhorsens?
-2. * What is the physical path to the Library Crypts?
-3. * Who are the Maesters?
-4. * Where is the ANTIGRAVITY Machine located?
-5. * Where is MORNING-ROAD-WITNESS-2026-05-16?
-6. * Where is TRIUMVIRATE in Grimoire?
-7. * What is the connection between Gilear's foodie trait and Hecate?
-8. * What is the connection between Gilear's tabletop game nerd trait?
-9. * Are CLAUDIUS and CODICES also Caesars, or only GEMINIAEUS?
+1. - Where is Gilear mentioned in the Record of the Vaulted Abhorsens?
+2. - What is the physical path to the Library Crypts?
+3. - Who are the Maesters?
+4. - Where is the ANTIGRAVITY Machine located?
+5. - Where is MORNING-ROAD-WITNESS-2026-05-16?
+6. - Where is TRIUMVIRATE in Grimoire?
+7. - What is the connection between Gilear's foodie trait and Hecate?
+8. - What is the connection between Gilear's tabletop game nerd trait?
+9. - Are CLAUDIUS and CODICES also Caesars, or only GEMINIAEUS?
 
 ---
 

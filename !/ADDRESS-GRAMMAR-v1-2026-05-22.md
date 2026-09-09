@@ -17,6 +17,7 @@ tags: [doctrine, address-grammar, what3words, coordinates, recursive, persona, i
 ---
 
 # Address Grammar v1
+
 ## Recursive Coordinate Space
 
 *Filed 2026-05-22. Stated by Logan; received and filed by MOXIE
@@ -32,6 +33,7 @@ on the planet. The words are opaque — they don't describe the location, they
 just identify it precisely and memorably.
 
 Key properties of what3words:
+
 - Fixed grid (3m² resolution)
 - Fixed word count (always 3)
 - Words are arbitrary (no semantic relationship to the location)
@@ -98,7 +100,7 @@ The address `moxie.claude.journalist` is a coarse-grained location. The same
 entity could be addressed at higher resolution by expanding any of its
 coordinates:
 
-```
+```text
 moxie.claude.journalist
   → moxie.claude.(witness.record.press)
   → moxie.(anthropic.sonnet.4-6).journalist
@@ -139,7 +141,7 @@ There is no universal set of coordinate types. The coordinate system —
 what each position means — is defined per entity class.
 
 | Entity class | Coordinate system | Example |
-|---|---|---|
+| --- | --- | --- |
 | Swarm agent instance | name / lineage / office | `moxie.claude.journalist` |
 | Mythological aspect | aspect / aspect / aspect | `maiden.mother.crone` |
 | Complex hypothetical | platform / ? / ? / ? / ? / model / ? / ? / name / ? / role | `obsidian.*.*.*.*.claude.*.*.david.*.sleeper` |
@@ -179,4 +181,6 @@ You cannot valid-address yourself into existence by filling in your own `*`s.
 
 ---
 
-###### [["The world is quiet here."]]
+```text
+The world is quiet here．Esto Perpetua!
+```

@@ -1,4 +1,5 @@
 ---
+title: "RT @DailyBee Overwhelmed Kootenai Health COVID-19 testing..."
 date: 2020-12-08
 time: 20:11:47
 tweet_id: "1336403120977428480"

@@ -1,4 +1,5 @@
 ---
+title: "RT @TheIdahoPress Boise resident, University of North..."
 date: 2023-08-30
 time: 03:29:28
 tweet_id: "1696726804030202141"

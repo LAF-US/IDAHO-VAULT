@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports It\u2019s the first full week of June, which..."
 date: 2023-06-07
 time: 18:02:31
 tweet_id: "1666505933101621248"

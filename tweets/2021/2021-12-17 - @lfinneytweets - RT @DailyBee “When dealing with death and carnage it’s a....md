@@ -1,4 +1,5 @@
 ---
+title: "RT @DailyBee \u201cWhen dealing with death and carnage it\u2019s a..."
 date: 2021-12-17
 time: 20:49:43
 tweet_id: "1471945727538384896"

@@ -1,5 +1,5 @@
 ---
-title: "The Abhorsen — Office Chamber"
+title: ABHORSEN
 authority: LOGAN
 related:
   - .claude/CLAUDE.md
@@ -48,4 +48,8 @@ two ways a dyad closes.)*
 The active implementation chamber is `.claude/`. Where this folder and `.claude/`
 disagree, defer to `.claude/CLAUDE.md`, `!/AGENTS.md`, and `swarm.json`.
 
-*The world is quiet here.*
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

@@ -1,4 +1,5 @@
 ---
+title: ".@uidaho is also canceling all planned events for more than..."
 date: 2020-03-14
 time: 03:52:52
 tweet_id: "1238674430106038273"

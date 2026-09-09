@@ -1,4 +1,5 @@
 ---
+title: "RT @KTVBJoe #Breaking - Here is the court order in the..."
 date: 2022-04-08
 time: 22:50:27
 tweet_id: "1512563552015380482"

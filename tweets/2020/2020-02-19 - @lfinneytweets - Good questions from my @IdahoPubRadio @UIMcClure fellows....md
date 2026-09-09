@@ -1,4 +1,5 @@
 ---
+title: "Good questions from my @IdahoPubRadio @UIMcClure fellows..."
 date: 2020-02-19
 time: 15:52:36
 tweet_id: "1230158248189149190"

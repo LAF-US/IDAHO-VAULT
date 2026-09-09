@@ -1,4 +1,5 @@
 ---
+title: "Maybe it was the same guy. He had two clipboards with both..."
 date: 2024-01-09
 time: 00:58:45
 tweet_id: "1744524072976093479"

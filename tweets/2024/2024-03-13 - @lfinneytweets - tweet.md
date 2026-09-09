@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2024-03-13
 time: 00:23:20
 tweet_id: "1767707982111052167"
@@ -16,10 +17,11 @@ related:
   - lfinneytweets
 ---
 
-@Dub__A https://t.co/IaRsBfO5Ef
+@Dub__A <https://t.co/IaRsBfO5Ef>
 
 ## Media
-- ![](https://pbs.twimg.com/media/GIgpCrjaMAABisr.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/GIgpCrjaMAABisr.jpg)
 
 *In reply to [@Dub__A](https://twitter.com/Dub__A)*
 

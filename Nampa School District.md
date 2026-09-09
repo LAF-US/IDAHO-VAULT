@@ -4,4 +4,4 @@ related:
 - Nampa
 authority: LOGAN
 ---
-Nampa, Canyon County 
+Nampa, Canyon County

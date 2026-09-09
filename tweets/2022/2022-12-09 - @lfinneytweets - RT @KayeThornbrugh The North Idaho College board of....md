@@ -1,4 +1,5 @@
 ---
+title: "RT @KayeThornbrugh The North Idaho College board of..."
 date: 2022-12-09
 time: 23:57:22
 tweet_id: "1601365418764967937"

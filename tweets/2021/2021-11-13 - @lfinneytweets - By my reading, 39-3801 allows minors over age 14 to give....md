@@ -1,4 +1,5 @@
 ---
+title: "By my reading, 39-3801 allows minors over age 14 to give..."
 date: 2021-11-13
 time: 04:36:04
 tweet_id: "1459379512106381312"

@@ -1,4 +1,5 @@
 ---
+title: "RT @motherboard Discord determined the server violates..."
 date: 2020-06-25
 time: 19:39:16
 tweet_id: "1276238551479271424"

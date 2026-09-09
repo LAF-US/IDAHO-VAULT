@@ -1,4 +1,5 @@
 ---
+title: "RT @twinfallstn Legislative leaders are requesting $1.24..."
 date: 2020-07-14
 time: 22:50:28
 tweet_id: "1283172038715117568"

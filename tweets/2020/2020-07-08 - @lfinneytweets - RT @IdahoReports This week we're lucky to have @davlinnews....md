@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports This week we're lucky to have @davlinnews..."
 date: 2020-07-08
 time: 00:28:24
 tweet_id: "1280659968673280000"

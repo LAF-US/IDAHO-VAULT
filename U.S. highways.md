@@ -24,7 +24,8 @@ related:
 - highways
 authority: LOGAN
 ---
-American highways owned and maintained by Idaho Transportation Department 
+American highways owned and maintained by Idaho Transportation Department
+
 - US 2
 - US 10
 - US 12

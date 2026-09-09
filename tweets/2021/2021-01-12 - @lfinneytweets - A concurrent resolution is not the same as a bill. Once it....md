@@ -1,4 +1,5 @@
 ---
+title: "A concurrent resolution is not the same as a bill. Once it..."
 date: 2021-01-12
 time: 23:05:35
 tweet_id: "1349130432726540288"

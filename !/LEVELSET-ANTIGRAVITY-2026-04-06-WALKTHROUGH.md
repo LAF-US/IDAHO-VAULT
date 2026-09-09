@@ -1,6 +1,6 @@
 # Workflow & Plugin Stabilization
 
-The execution of our proposed stabilization plan has been successfully completed! All tasks outlined in the `implementation_plan.md` have been implemented. 
+The execution of our proposed stabilization plan has been successfully completed! All tasks outlined in the `implementation_plan.md` have been implemented.
 
 ### What Was Modified
 
@@ -23,6 +23,7 @@ The execution of our proposed stabilization plan has been successfully completed
         - Found root cause for the HTTP 400 Bad Request being emitted during `cmd_link_pr_context`. Replaced raw `attachmentCreate` execution schema to using `attachmentLinkCreate(input...)` matching Linear's internal definitions.
 
 ### How to Validate
+
 - The Linear Webhooks should no longer return an HTTP Bad Request warning when assigning Branch PR URL Contexts to their target issues.
 - GitHub should natively aggregate PR queues for automated bots whenever they parse new content to `GOVERNMENTS/` directories. Check your PR tab to evaluate future scraping pushes!
 - Hop onto Obsidian and toggle across multiple documents (some without the `weekday` frontmatter block) — the visual interface will remain seamlessly anchored to the color associated with the most recently worked daily note.

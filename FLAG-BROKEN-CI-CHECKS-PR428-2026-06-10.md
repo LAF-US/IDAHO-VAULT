@@ -26,7 +26,7 @@ Both checks now **pass.** After the Architect updated the base branch (`main` me
 ## The two failing checks (historical — as of `bff5439`)
 
 | Check | Conclusion | Root cause (from logs) |
-|---|---|---|
+| --- | --- | --- |
 | `Analyze (python)` (CodeQL) | failure | `codeql-action/init` aborted: `HttpError: Requires authentication` while determining feature enablement. A **parallel** `Analyze (python)` and `Analyze (actions)` on the same commit **passed** — so this is one workflow's credential issue, not a code defect. |
 | `auto-merge-maintainer` | failure | `gh pr merge --auto` returned **`401 Unauthorized` — "Requires authentication."** The auto-merge automation's token lacks merge permission. |
 
