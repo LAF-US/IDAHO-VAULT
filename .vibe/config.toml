@@ -1,4 +1,4 @@
-active_model = "devstral-2"
+active_model = "mistral-medium-3.5"
 vim_keybindings = false
 disable_welcome_banner_animation = false
 autocopy_to_clipboard = true
@@ -32,6 +32,20 @@ installed_agents = []
 skill_paths = []
 enabled_skills = []
 disabled_skills = []
+connectors = [
+    { name = "github_app", disabled = false },
+    { name = "linear", disabled = false },
+    { name = "notion", disabled = false },
+    { name = "slack", disabled = false },
+    { name = "gmail", disabled = true },
+    { name = "box", disabled = false },
+    { name = "atlassian", disabled = false },
+    { name = "google_calendar", disabled = true },
+    { name = "outlook", disabled = true },
+    { name = "outlook_calendar", disabled = true },
+    { name = "sharepoint_online", disabled = true },
+    { name = "stripe", disabled = true },
+]
 
 [[providers]]
 name = "mistral"
@@ -58,11 +72,11 @@ region = ""
 [[models]]
 name = "mistral-vibe-cli-latest"
 provider = "mistral"
-alias = "devstral-2"
-temperature = 0.2
-input_price = 0.4
-output_price = 2.0
-thinking = "off"
+alias = "mistral-medium-3.5"
+temperature = 1.0
+input_price = 1.5
+output_price = 7.5
+thinking = "high"
 auto_compact_threshold = 200000
 
 [[models]]
@@ -132,18 +146,33 @@ sensitive_patterns = []
 permission = "ask"
 allowlist = [
     "cd",
+    "dir",
     "echo",
+    "find",
+    "findstr",
+    "git add",
+    "git branch",
+    "git checkout",
+    "git commit",
     "git diff",
     "git log",
+    "git ls-files",
+    "git ls-remote",
+    "git ls-tree",
+    "git merge-base",
+    "git push",
+    "git rev-parse",
+    "git show",
     "git status",
-    "tree",
-    "whoami",
-    "dir",
-    "findstr",
+    "grep",
+    "ls",
     "more",
+    "sort",
+    "tree",
     "type",
     "ver",
     "where",
+    "whoami",
 ]
 denylist = [
     "gdb",
@@ -267,7 +296,7 @@ max_content_bytes = 120000
 user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 
 [tools.web_search]
-permission = "ask"
+permission = "always"
 allowlist = []
 denylist = []
 sensitive_patterns = []
@@ -275,7 +304,7 @@ timeout = 120
 model = "mistral-vibe-cli-with-tools"
 
 [tools.write_file]
-permission = "ask"
+permission = "always"
 allowlist = []
 denylist = []
 sensitive_patterns = [

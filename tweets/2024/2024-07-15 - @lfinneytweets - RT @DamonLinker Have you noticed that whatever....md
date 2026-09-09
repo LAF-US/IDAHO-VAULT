@@ -1,4 +1,5 @@
 ---
+title: "RT @DamonLinker Have you noticed that whatever..."
 date: 2024-07-15
 time: 14:44:56
 tweet_id: "1812860910148702327"

@@ -1,4 +1,5 @@
 ---
+title: "Minority Leader @IlanaRubel to @the208KTVB \u201cWell, I think..."
 date: 2020-05-02
 time: 01:23:47
 tweet_id: "1256393918519767041"
@@ -24,7 +25,7 @@ related:
   - IdahoCOVID19
 ---
 
-Minority Leader @IlanaRubel to @the208KTVB: “Well, I think the Legislature kinda blew it, frankly. 
+Minority Leader @IlanaRubel to @the208KTVB: “Well, I think the Legislature kinda blew it, frankly.
 Unfortunately, that time [in March] was totally squandered on divisive social issues.” #idleg #idpol #IdahoCOVID19
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

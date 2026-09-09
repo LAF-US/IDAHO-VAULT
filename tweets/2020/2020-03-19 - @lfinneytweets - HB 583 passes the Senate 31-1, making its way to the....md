@@ -1,4 +1,5 @@
 ---
+title: "HB 583 passes the Senate 31-1, making its way to the..."
 date: 2020-03-19
 time: 02:46:46
 tweet_id: "1240469737504559105"

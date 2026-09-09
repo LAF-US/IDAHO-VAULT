@@ -1,4 +1,5 @@
 ---
+title: "Guthrie Some kids struggle to pay for tennis shoes, much..."
 date: 2020-03-16
 time: 23:18:42
 tweet_id: "1239692598287036417"

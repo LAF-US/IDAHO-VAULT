@@ -23,20 +23,6 @@ doc_class: court-docket
 | `CROSSFRAMING-US` | Referred outside [[!/GEMINIAEUS\|GEMINIAEUS]] | Substantive review remains independent of the admitted Lexicographer provenance records. |
 | `HEXAGONAL` coordination-hub claim | Referred outside [[!/GEMINIAEUS\|GEMINIAEUS]] | `LAF-25` claims a canonical coordination hub; independent review ordered on 2026-05-25. |
 
-## Entered Orders And Rulings
-
-| Date | Order Or Ruling |
-| --- | --- |
-| 2026-05-23 | Selective marginalia approved in the [[!/GEMINIAEUS\|GEMINIAEUS]] matter with the ordered Judge addendum. |
-| 2026-05-24 | The Touchstones are proper; the challenged act is selective triad-fusion into a liturgical weapon. |
-| 2026-05-24 | Antigravity-file marginalia ordered; `CROSSFRAMING-US` referred for independent review. |
-| 2026-05-24 | SPACE protection approved; ARBORSCAPE PR Expansion recognized as legitimate A&I directive. |
-| 2026-05-25 | Linear `LAF-17 - SIGNAL: BARTIMAEUS` admitted in [[!/GEMINIAEUS\|GEMINIAEUS]] as evidence bearing on the alleged Gemini/Bartimaeus/Clerk overrelation. |
-| 2026-05-25 | Linear `LAF-25 - COORDINATION: HEXAGONAL` referred outside [[!/GEMINIAEUS\|GEMINIAEUS]] for independent review of its coordination-hub claim. |
-| 2026-05-25 | The Investigator temporarily ordained as **Court Marshal** to execute required orders in [[!/GEMINIAEUS\|GEMINIAEUS]] and related matters. |
-| 2026-05-25 | Closure clarified: only the Court's own investigatory pass through this Investigator/Marshal is closed after the ordered entries; the evidentiary and discovery phase remains open to further parties. |
-| 2026-05-25 | This session of Court adjourned; the Judge reserves jurisdiction of [[!/GEMINIAEUS\|GEMINIAEUS]]. |
-
 ## Matters Awaiting Disposition
 
 | Matter | Question Reserved |

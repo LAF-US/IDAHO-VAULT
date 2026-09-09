@@ -4,4 +4,4 @@ related:
 - law enforcement
 authority: LOGAN
 ---
-cities law enforcement 
+cities law enforcement

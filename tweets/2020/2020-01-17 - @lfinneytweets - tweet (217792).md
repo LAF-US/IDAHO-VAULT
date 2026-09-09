@@ -1,4 +1,5 @@
 ---
+title: "tweet (217792)"
 date: 2020-01-17
 time: 04:14:47
 tweet_id: "1218023840397217792"
@@ -17,10 +18,11 @@ related:
   - lfinneytweets
 ---
 
-@Johnson_DavidW @OneFatCatsMom https://t.co/XviI1r6GIS
+@Johnson_DavidW @OneFatCatsMom <https://t.co/XviI1r6GIS>
 
 ## Links
-- https://x.com/lfinneytweets/status/1217885430223261696?s=19
+
+- <https://x.com/lfinneytweets/status/1217885430223261696?s=19>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

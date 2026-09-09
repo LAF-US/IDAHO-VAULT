@@ -1,4 +1,5 @@
 ---
+title: "L to R Moon, Scott, Wisniewski, Christensen"
 date: 2020-06-24
 time: 04:50:44
 tweet_id: "1275652555813670912"
@@ -14,10 +15,11 @@ related:
   - lfinneytweets
 ---
 
-L to R: Moon, Scott, Wisniewski, Christensen https://t.co/sx4ZPMrVZo
+L to R: Moon, Scott, Wisniewski, Christensen <https://t.co/sx4ZPMrVZo>
 
 ## Media
-- ![](https://pbs.twimg.com/media/EbQFuDwXgAAsG_M.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/EbQFuDwXgAAsG_M.jpg)
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

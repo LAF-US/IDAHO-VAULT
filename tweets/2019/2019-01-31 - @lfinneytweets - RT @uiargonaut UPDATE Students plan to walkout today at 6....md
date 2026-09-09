@@ -1,4 +1,5 @@
 ---
+title: "RT @uiargonaut UPDATE Students plan to walkout today at 6..."
 date: 2019-01-31
 time: 00:55:43
 tweet_id: "1090775602120912897"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @uiargonaut: UPDATE: 
+RT @uiargonaut: UPDATE:
 Students plan to walkout today at 6 p.m. to protest the recent treatment of UI professor Denise Bennett.
 Students…
 

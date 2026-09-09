@@ -39,7 +39,7 @@ Visit us at our new home: [**Monarch.com**](https://www.monarch.com/)
 
 ### About the contributor
 
-![](https://cdn.sanity.io/images/mdewiujj/production/c334d28cced68bc00b4678beab6f43e6a7691f6a-664x662.png?auto=format&crop=entropy&fit=crop&h=160&q=90&w=160)
+![alt text needed](https://cdn.sanity.io/images/mdewiujj/production/c334d28cced68bc00b4678beab6f43e6a7691f6a-664x662.png?auto=format&crop=entropy&fit=crop&h=160&q=90&w=160)
 
 Val Agostino
 
@@ -49,9 +49,9 @@ Val Agostino is the CEO and co-founder of Monarch. With a strong background in e
 
 [See more on LinkedIn](https://linkedin.com/in/valagostino)
 
-## You might also like...
+## You might also like
 
-![](https://cdn.sanity.io/images/mdewiujj/production/de2b2fc826e8c21b053d848b995f502a040b10b7-1628x1078.png?auto=format&fit=max&q=90&w=1628)
+![alt text needed](https://cdn.sanity.io/images/mdewiujj/production/de2b2fc826e8c21b053d848b995f502a040b10b7-1628x1078.png?auto=format&fit=max&q=90&w=1628)
 
 April 13, 2026
 
@@ -61,7 +61,7 @@ Stop guessing about retirement, home buying, or career breaks. Monarch Forecasti
 
 Feature
 
-![](https://cdn.sanity.io/images/mdewiujj/production/22fcca824c4e84dfb25d780aa6147e3747b59a37-2400x1350.png?auto=format&fit=max&q=90&w=2400)
+![alt text needed](https://cdn.sanity.io/images/mdewiujj/production/22fcca824c4e84dfb25d780aa6147e3747b59a37-2400x1350.png?auto=format&fit=max&q=90&w=2400)
 
 March 31, 2026
 
@@ -71,7 +71,7 @@ The first year of having a baby can cost between $16,000 and $31,000 depending o
 
 Budgeting
 
-![](https://cdn.sanity.io/images/mdewiujj/production/e12a62e2f6404619e2ecaa08c65de1262d0d3a14-2400x1350.png?auto=format&fit=max&q=90&w=2400)
+![alt text needed](https://cdn.sanity.io/images/mdewiujj/production/e12a62e2f6404619e2ecaa08c65de1262d0d3a14-2400x1350.png?auto=format&fit=max&q=90&w=2400)
 
 March 31, 2026
 

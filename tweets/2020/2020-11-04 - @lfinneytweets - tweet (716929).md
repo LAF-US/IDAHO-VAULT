@@ -1,4 +1,5 @@
 ---
+title: "tweet (716929)"
 date: 2020-11-04
 time: 08:00:12
 tweet_id: "1323897821070716929"
@@ -14,10 +15,11 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/dzo8jS1WHJ
+<https://t.co/dzo8jS1WHJ>
 
 ## Links
-- https://x.com/apalermooo/status/1323897199353241600
+
+- <https://x.com/apalermooo/status/1323897199353241600>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

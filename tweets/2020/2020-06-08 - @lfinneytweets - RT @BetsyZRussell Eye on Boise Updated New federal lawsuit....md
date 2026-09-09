@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Updated New federal lawsuit..."
 date: 2020-06-08
 time: 17:03:43
 tweet_id: "1270038813440536592"

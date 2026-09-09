@@ -8,4 +8,4 @@ related:
 - Snake River
 authority: LOGAN
 ---
-Idaho Power dam on the Snake River near Bruneau and the Bruneau River; creates CJ Strike reservoir 
+Idaho Power dam on the Snake River near Bruneau and the Bruneau River; creates CJ Strike reservoir

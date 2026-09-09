@@ -54,11 +54,11 @@ While more than 30 states have enacted anti-SLAPP legislation, Idaho isn’t one
 
 “SLAPPs force speakers into an impossible choice: Either self-censor, or face financial ruin defending your rights in a lawsuit,” said FIRE attorney Gabe Walters. “Either way, free expression loses.”
 
-COURTESY PHOTOS OF GARY FOR MEDIA USE: https://www.thefire.org/research-learn/courtesy-photos-gary-gadwa 
+COURTESY PHOTOS OF GARY FOR MEDIA USE: <https://www.thefire.org/research-learn/courtesy-photos-gary-gadwa>
 
 FIRE is working on the case with local counsel |Nicholas WardenNicholas A. Warden, a partner at Bailey & Glasser LLP. Gary’s co-defendant is former Blaine County commissioner Sarah Michael, represented by attorney Deborah Ferguson.
 
 The Foundation for Individual Rights and Expression (FIRE) is a nonpartisan, nonprofits organization dedicated to defending and sustaining the individual rights of all Americans to free speech and free thought — the most essential qualities of liberty. FIRE educates Americans about the importance of these inalienable rights, promotes a culture of respect for these rights, and provides the means to preserve them.
 
 CONTACT:
-Alex Griswold, Communications Campaign Manager, FIRE: 215-717-3473; media@thefire.org
+Alex Griswold, Communications Campaign Manager, FIRE: 215-717-3473; <media@thefire.org>

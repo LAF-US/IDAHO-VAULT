@@ -1,4 +1,5 @@
 ---
+title: "Important to keep in mind that Senate Education is taking..."
 date: 2020-02-05
 time: 17:25:47
 tweet_id: "1225108270181842945"
@@ -14,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-Important to keep in mind that Senate Education is taking up these rules soon. Yesterday was the soft deadline they gave the House to wrap up. 
+Important to keep in mind that Senate Education is taking up these rules soon. Yesterday was the soft deadline they gave the House to wrap up.
 In theory they could simply approve everything (like past years) without considering the days of House meetings leading up to this vote.
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

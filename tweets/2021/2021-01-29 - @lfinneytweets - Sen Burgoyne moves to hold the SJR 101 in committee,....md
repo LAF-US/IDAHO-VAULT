@@ -1,4 +1,5 @@
 ---
+title: "Sen Burgoyne moves to hold the SJR 101 in committee,..."
 date: 2021-01-29
 time: 15:40:02
 tweet_id: "1355178901182373890"

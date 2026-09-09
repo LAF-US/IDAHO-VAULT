@@ -68,7 +68,7 @@ an automatic one.
 ## Field classes
 
 | Ring / overlap | Source of truth | Sync rule |
-|---|---|---|
+| --- | --- | --- |
 | Narrative personality | Vault | Promote only through explicit review |
 | System runtime | Local machine | Do not promote by default |
 | System tooling | Vault unless explicitly local-only | Keep aligned through explicit diff or regen |

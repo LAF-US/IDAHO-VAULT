@@ -1,4 +1,5 @@
 ---
+title: "Sandpoint company Percussionaire (founded by late Dr...."
 date: 2020-04-02
 time: 03:49:11
 tweet_id: "1245558872871301120"
@@ -20,10 +21,11 @@ related:
   - IdahoCOVID19
 ---
 
-Sandpoint company Percussionaire (founded by late Dr. Forrest Bird, an incredible man & inventor credited with helping end the iron lung era) gets @US_FDA clearance for compact ventilator system w/ help from @RepRussFulcher and @BrentFRegan #IdahoCOVID19 
-https://t.co/hMW2UYAZfN
+Sandpoint company Percussionaire (founded by late Dr. Forrest Bird, an incredible man & inventor credited with helping end the iron lung era) gets @US_FDA clearance for compact ventilator system w/ help from @RepRussFulcher and @BrentFRegan #IdahoCOVID19
+<https://t.co/hMW2UYAZfN>
 
 ## Links
-- https://cdapress.com/news/2020/mar/31/5bef84c1/
+
+- <https://cdapress.com/news/2020/mar/31/5bef84c1/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1245558872871301120)

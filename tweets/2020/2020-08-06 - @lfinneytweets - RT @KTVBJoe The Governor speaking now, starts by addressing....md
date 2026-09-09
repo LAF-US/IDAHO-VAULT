@@ -1,4 +1,5 @@
 ---
+title: "RT @KTVBJoe The Governor speaking now, starts by addressing..."
 date: 2020-08-06
 time: 18:07:20
 tweet_id: "1291435704875024385"

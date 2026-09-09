@@ -4,4 +4,4 @@ related:
 - Terreton
 authority: LOGAN
 ---
-Terreton, Jefferson County 
+Terreton, Jefferson County

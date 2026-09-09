@@ -1,4 +1,5 @@
 ---
+title: "RT @NateBrownNews Party Chairman Labrador is talking about..."
 date: 2020-06-27
 time: 01:11:52
 tweet_id: "1276684641978605568"

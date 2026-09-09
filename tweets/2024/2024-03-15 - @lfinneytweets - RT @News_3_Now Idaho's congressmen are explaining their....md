@@ -1,4 +1,5 @@
 ---
+title: "RT @News_3_Now Idaho's congressmen are explaining their..."
 date: 2024-03-15
 time: 00:35:07
 tweet_id: "1768435727099179170"

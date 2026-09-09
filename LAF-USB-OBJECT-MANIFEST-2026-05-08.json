@@ -3,7 +3,7 @@
   "updated": "2026-05-17",
   "authority": "LOGAN",
   "status": "staged",
-  "purpose": "Complete registry of 38 files that exceed GitHub's 2 GB Git LFS per-file limit. All objects confirmed present locally in .git/lfs/objects/ (323 GB total). Routing classifications are provisional â€” Logan must approve before any carrier transfer executes.",
+  "purpose": "Complete registry of 40 files that exceed GitHub's 2 GB Git LFS per-file limit (originally 38 at the 2026-05-08 block; grew to 40 as ghost OIDs were retired and entries added). All objects confirmed present locally in .git/lfs/objects/ (323 GB total). Routing classifications are provisional — Logan must approve before any carrier transfer executes.",
   "routing_notes": {
     "public-record": "Legislature chamber sessions, committee hearings, press conferences, public rallies. Routed to Internet Archive as the immutable/public ledger lane. Logan must confirm each item before upload.",
     "production-private": "Idaho Reports / IPTV production originals, raw camera footage (MXF/MOV), internal production files. Routed to GCS the-ledger-bucket (cold) pending Logan decision between GCS and THE-CITY 5TB drive.",
@@ -119,7 +119,7 @@
       "verification_state": "pending",
       "sensitivity": "unknown",
       "routing_class": "staging-pending",
-      "notes": "Camera-format filename (device timestamp). Date: 2024-01-16 14:03. Contents unknown â€” Logan must identify before routing.",
+      "notes": "Camera-format filename (device timestamp). Date: 2024-01-16 14:03. Contents unknown — Logan must identify before routing.",
       "related": [
         "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
       ],
@@ -303,7 +303,7 @@
       "verification_state": "pending",
       "sensitivity": "unknown",
       "routing_class": "staging-pending",
-      "notes": "Named for subject 'Woodward'. Could be interview or press conference. Logan must identify â€” public-record or private production?",
+      "notes": "Named for subject 'Woodward'. Could be interview or press conference. Logan must identify — public-record or private production?",
       "related": [
         "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
       ],
@@ -464,7 +464,7 @@
       "verification_state": "pending",
       "sensitivity": "publishable",
       "routing_class": "public-record",
-      "notes": "JFAC panel recording, version 2. Public record. Note: JFAC_Panel_Full.mp4 is near-duplicate â€” verify before uploading both.",
+      "notes": "JFAC panel recording, version 2. Public record. Note: JFAC_Panel_Full.mp4 is near-duplicate — verify before uploading both.",
       "related": [
         "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
       ],
@@ -487,7 +487,7 @@
       "verification_state": "pending",
       "sensitivity": "publishable",
       "routing_class": "public-record",
-      "notes": "JFAC panel recording. Identical size to JFAC_Panel_Fullv2 â€” SHA256 comparison recommended before uploading both to IA.",
+      "notes": "JFAC panel recording. Identical size to JFAC_Panel_Fullv2 — SHA256 comparison recommended before uploading both to IA.",
       "related": [
         "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
       ],
@@ -763,7 +763,7 @@
       "verification_state": "pending",
       "sensitivity": "private",
       "routing_class": "production-private",
-      "notes": "Idaho Reports Episode production file v2 (IDRE series). Identical size to v1 â€” SHA256 comparison recommended.",
+      "notes": "Idaho Reports Episode production file v2 (IDRE series). Identical size to v1 — SHA256 comparison recommended.",
       "related": [
         "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
       ],
@@ -809,7 +809,7 @@
       "verification_state": "pending",
       "sensitivity": "private",
       "routing_class": "production-private",
-      "notes": "Stock/B-roll footage (UTC timestamp in filename is stock site format). Licensed stock â€” do NOT upload to Internet Archive. GCS cold storage.",
+      "notes": "Stock/B-roll footage (UTC timestamp in filename is stock site format). Licensed stock — do NOT upload to Internet Archive. GCS cold storage.",
       "related": [
         "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
       ],
@@ -832,7 +832,7 @@
       "verification_state": "pending",
       "sensitivity": "unknown",
       "routing_class": "staging-pending",
-      "notes": "Medicaid panel recording. Could be public legislative hearing (â†’ Internet Archive) or private production panel (â†’ GCS). Logan must confirm.",
+      "notes": "Medicaid panel recording. Could be public legislative hearing (→ Internet Archive) or private production panel (→ GCS). Logan must confirm.",
       "related": [
         "HANDOFF-LFS-2GB-BLOCK-2026-05-08.md"
       ],
@@ -936,12 +936,12 @@
     "total": 40
   },
   "items_requiring_logan_review": [
-    "20240116_140342.mp4 â€” device timestamp, contents unknown",
-    "Woodward-Full.mp4 â€” subject name only, public or private?",
-    "MVI_1487.MOV â€” Canon camera clip, content unknown",
-    "MVI_1486.MOV â€” Canon camera clip, content unknown",
-    "MVI_1484.MOV â€” Canon camera clip, content unknown",
-    "Medicaid Panel Full.mp4 â€” hearing or production panel?"
+    "20240116_140342.mp4 — device timestamp, contents unknown",
+    "Woodward-Full.mp4 — subject name only, public or private?",
+    "MVI_1487.MOV — Canon camera clip, content unknown",
+    "MVI_1486.MOV — Canon camera clip, content unknown",
+    "MVI_1484.MOV — Canon camera clip, content unknown",
+    "Medicaid Panel Full.mp4 — hearing or production panel?"
   ],
   "first_transfer_candidates": [
     "Any publishable file once Logan approves routing and rclone internetarchive remote is configured."

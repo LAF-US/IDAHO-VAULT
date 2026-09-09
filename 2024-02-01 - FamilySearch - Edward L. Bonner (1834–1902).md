@@ -80,11 +80,11 @@ Bessie Mary Adele Bonner
 
 ## Sources (39)
 
-- ![](https://ancestors.familysearch.org/service/tree/tree-data/published/sources/KZ6L-63V/images/t/0/image.jpg)
-	Edward L Bonner, "United States Census, 1860"
+- ![alt text needed](https://ancestors.familysearch.org/service/tree/tree-data/published/sources/KZ6L-63V/images/t/0/image.jpg)
+ Edward L Bonner, "United States Census, 1860"
 - Montana, U.S., Birth Records, 1897-1988
-- ![](https://ancestors.familysearch.org/service/tree/tree-data/published/sources/KZ6L-63V/images/t/2/image.jpg)
-	E L Bonner, "Idaho, County Marriages, 1864-1962"
+- ![alt text needed](https://ancestors.familysearch.org/service/tree/tree-data/published/sources/KZ6L-63V/images/t/2/image.jpg)
+ E L Bonner, "Idaho, County Marriages, 1864-1962"
 
 ## Name Meaning
 

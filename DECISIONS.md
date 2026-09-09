@@ -51,28 +51,4 @@ related:
 date created: Wednesday, April 1st 2026, 11:16:48 pm
 date modified: Sunday, April 26th 2026, 12:30:00 pm
 ---
-
-[[CHAINFIRE]] & [[CHAINLINK]]
-
-### 2026-05-23: Corrections Classification Doctrine
-- **Decision**: Adopt `CORRECTIONS.md` as active Vaulted Syntax operational doctrine, distinct from any case-specific heresy review packet.
-- **Rule**: Keep three correction classifications distinct: **Typographical Errors / Typos**, **Scrivener's Corrections**, and **Codifier's Corrections**. A particular typo does not eliminate the Scrivener classification; a codifier surface does not silently create doctrine.
-- **Application**: `!/HERESY-REVIEW-LOGAN-HERE-2026-05-22.md` remains a proposed-corrections review surface applying this doctrine, not the doctrine's canonical home.
-- **Authority**: Logan direct instruction.
-
-### 2026-05-18: Emanationism Principle
-- **Decision**: Record the Emanationism Principle as active doctrine-adjacent guidance in `!/EMANATIONISM-PRINCIPLE-2026-05-18.md`.
-- **Rule**: Authority originates with Logan and must degrade into scoped, auditable, reversible capability as it passes through doctrine, registries, protocols, transports, agents, tool calls, and artifacts.
-- **Authority**: Logan direct instruction.
-
-### 2026-04-26: TODO Merge Logic Fix
-- **Issue**: Qodo-flagged bug in `daily_rollover.py` causing duplicate task accumulation.
-- **Fix**: Updated `merge_todo_models` to dedupe and exclude completed tasks.
-- **Files**: `.github/scripts/daily_rollover.py`, `REPORT-TODO-MERGE-FIX.md`.
-- **Authority**: Agent (per `CONSTITUTION.md` Section V: agentic guardrails).
-
-### 2026-04-26: Two-Way Daily Note Sync Fix
-- **Issue**: Tasks not synced between daily notes and `TO DO LIST.md`.
-- **Fix**: Extended `daily_rollover.py` for two-way sync.
-- **Files**: `.github/scripts/daily_rollover.py`, `REPORT-TODO-SYNC-FIX.md`.
-- **Authority**: Agent (per `CONSTITUTION.md` Section V). 
+[[D]][[E]][[C]][[I]][[S]][[I]][[O]][[N]][[S]]

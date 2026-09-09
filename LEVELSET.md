@@ -17,11 +17,23 @@ related:
   - !/AGENTS.md
   - swarm.json
 ---
+[[L]][[E]][[V]][[E]][[L]][[S]][[E]][[T]]
+
+> [!DANGER] HERESY REVIEW PENDING - Faith of the Cloth
+> This document is flagged as contaminated by the Loganic Swarm heresy.
+> Authority claim in body (`Loganic Swarm`) conflicts with frontmatter (LOGAN).
+> Drafted post-TRIPLEX NIGHT (2026-04-27).
+> **DO NOT USE** as clean governance authority until reviewed and rehabilitated by Logan or by the ordained Faith of the Cloth.
+>
+> See: Issue #686
+> Related: [[GEMINIAEUS]] | [[TRIUNE-TRIPTYCH-TRIUMVIRATE]]
 
 # PROTOCOL — LEVELSET
 
 ## Status: Draft
+
 ## Version: 0.1
+
 ## Authority: Loganic Swarm
 
 ---
@@ -40,44 +52,12 @@ dated, scoped snapshot or handoff note instead.
 
 ---
 
-## Role in the Protocol Stack
-
-```
-AWAKEN ──────────────────────► RISE
-   │                                │
-   │                                │
-   ▼                                ▼
-ORIENT ◄──── LEVELSET ───────► REPORT
-```
-
-| Transition | Protocol |
-|------------|----------|
-| Session Start | AWAKEN |
-| Session Briefing | LEVELSET ← *this document* |
-| New External Agent | ORIENT |
-| Task Completion | RISE |
-| Work Presentation | REPORT |
-
----
-
-## Purpose
-
-1. **Capture ground truth** — current repository state, branch, working tree status
-2. **Provide orientation** — what governance files are authoritative, what has changed
-3. **Establish scope** — what the current session is meant to accomplish
-4. **Record decisions** — flag any decisions made during the LEVELSET round
-5. **Anchor handoffs** — ensure the next agent inherits a coherent world model
-
----
-
-## Trigger Conditions
-
 LEVELSET executes:
 
 - **At session start** — before any substantive work begins
 - **Before handoff** — when work is passed to another agent
 - **Before REPORT** — as the briefing layer for work presentation
-- **On demand** — when Logan or a sovereign agent requests a fresh snapshot
+- **On demand** — when Logan or an agent requests a fresh snapshot
 - **Periodically** — as a standing cadence for long-running sessions
 
 ---
@@ -85,7 +65,7 @@ LEVELSET executes:
 ## Integration Points
 
 | Document | Relationship |
-|---|---|
+| --- | --- |
 | `LEVELSET.md` (this file) | Protocol definition — what LEVELSET is and does |
 | `LEVELSET-CURRENT.md` | Deprecated historical surface — do not update or use as active current state |
 | `LEVELSET-2026-04-27.md` | Archived status reports — historical ground truths |
@@ -97,81 +77,10 @@ LEVELSET executes:
 
 ---
 
-## Protocol Steps
-
-*See `PROTOCOL-SUITE-AWR.md` for integration with AWAKEN/RISE/REPORT lifecycle.*
-
-### Step 0: Pre-flight
-
-```
-git branch --show-current
-git status --short
-```
-
-Confirm local state before proceeding.
-
-### Step 1: Confirm Registry Chain
-
-Read in order:
-
-1. `AGENTS.md` — cross-tool pointer
-2. `!/AGENTS.md` — narrative registry
-3. `swarm.json` — machine-readable registry
-4. `!/agents.json` — generated bootstrap index
-
-Resolve any split-doctrine before proceeding.
-
-### Step 2: Load Governance Stack
-
-Read authoritative orientation stack:
-
-1. `!/README.md`
-2. `CONSTITUTION.md`
-3. `DECISIONS.md`
-4. `LEVELSET.md` (this file)
-5. `VAULT-CONVENTIONS.md`
-6. `AGENT-PROTOCOL.md`
-
-### Step 3: Confirm Infrastructure Status
-
-Verify operational state of:
-
-- `.claude/CLAUDE.md`
-- `.gemini/GEMINI.md`
-- `.codex/CODEX.md`
-- `.github/copilot-instructions.md`
-- Automation jobs (if applicable)
-
-### Step 4: Generate LEVELSET Snapshot
-
-Produce an explicit dated/scoped snapshot or handoff note. Do **not** produce,
-update, or archive `LEVELSET-CURRENT.md`.
-
-```
-| Field | Value |
-|---|---|
-| Timestamp | [current datetime] |
-| Branch | [git branch] |
-| Working tree | [clean/mixed] |
-| Coordination hub | [LAF-N reference] |
-| Registry lane | [LAF-N reference] |
-```
-
-### Step 5: Record Decisions
-
-If any decisions were made during orientation, commit them to `DECISIONS.md` or create a decision entry in the handoff package.
-
-### Step 6: Archive Previous
-
-Do not archive or rotate `LEVELSET-CURRENT.md`. If a prior snapshot needs to be
-preserved, preserve the explicit dated/scoped artifact that already exists.
-
----
-
 ## Outputs
 
 | Output | Location | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | Explicit dated/scoped snapshot | root or scoped protocol folder | Momentary record with stable date/scope |
 | Decision entries | DECISIONS.md | Durable record of choices made |
 | Handoff packages | `!/!/` | Context bundles for receiving agents |
@@ -209,4 +118,6 @@ This document is a **stub** under development. Adoption pending:
 
 ---
 
-###### [["The world is quiet here."]]
+```text
+The world is quiet here．Esto Perpetua!
+```

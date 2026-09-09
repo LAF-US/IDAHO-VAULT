@@ -1,4 +1,5 @@
 ---
+title: "RT @clarkcorbin Full story Here's what House Speaker Scott..."
 date: 2020-03-12
 time: 22:40:52
 tweet_id: "1238233523825172480"

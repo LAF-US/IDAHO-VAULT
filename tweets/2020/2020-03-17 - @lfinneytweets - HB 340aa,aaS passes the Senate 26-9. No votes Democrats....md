@@ -1,4 +1,5 @@
 ---
+title: "HB 340aa,aaS passes the Senate 26-9. No votes Democrats..."
 date: 2020-03-17
 time: 00:36:08
 tweet_id: "1239712084322955265"
@@ -19,7 +20,7 @@ related:
   - idpol
 ---
 
-HB 340aa,aaS passes the Senate 26-9. 
+HB 340aa,aaS passes the Senate 26-9.
 No votes: Democrats (7), Crabtree, Martin. #idleg #idpol
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

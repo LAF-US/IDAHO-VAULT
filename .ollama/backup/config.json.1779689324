@@ -1,0 +1,37 @@
+{
+  "integrations": {
+    "claude": {
+      "models": [
+        "qwen3.5:cloud"
+      ]
+    },
+    "codex": {
+      "models": [
+        "kimi-k2.5:cloud"
+      ]
+    },
+    "copilot": {
+      "models": [
+        "kimi-k2.5:cloud"
+      ]
+    },
+    "openclaw": {
+      "models": [
+        "kimi-k2.5:cloud",
+        "minimax-m2.7:cloud",
+        "qwen3.5:cloud"
+      ]
+    },
+    "opencode": {
+      "models": [
+        "kimi-k2.5:cloud"
+      ]
+    },
+    "pi": {
+      "models": [
+        "gemma4"
+      ]
+    }
+  },
+  "last_selection": "openclaw"
+}

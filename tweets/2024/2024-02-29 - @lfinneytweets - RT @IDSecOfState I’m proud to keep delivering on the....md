@@ -1,4 +1,5 @@
 ---
+title: "RT @IDSecOfState I\u2019m proud to keep delivering on the..."
 date: 2024-02-29
 time: 17:46:11
 tweet_id: "1763259382782202333"

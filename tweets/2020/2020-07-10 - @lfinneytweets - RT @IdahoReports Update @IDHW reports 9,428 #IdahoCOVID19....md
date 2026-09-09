@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Update @IDHW reports 9,428 #IdahoCOVID19..."
 date: 2020-07-10
 time: 00:16:29
 tweet_id: "1281381745552551936"

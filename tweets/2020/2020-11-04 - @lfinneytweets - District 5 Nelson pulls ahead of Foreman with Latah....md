@@ -1,4 +1,5 @@
 ---
+title: "District 5 Nelson pulls ahead of Foreman with Latah..."
 date: 2020-11-04
 time: 08:33:36
 tweet_id: "1323906226732765184"

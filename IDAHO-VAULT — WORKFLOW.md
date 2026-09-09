@@ -18,6 +18,7 @@ authority: LOGAN
 Notebook LM 2026-03-28
 
 ---
+
 # IDAHO-VAULT — WORKFLOW (STRUCTURE-AGNOSTIC, v0.2)
 
 ---
@@ -29,11 +30,10 @@ This document defines a **practical, evolving workflow** for using IDAHO-VAULT a
 It is intentionally:
 
 - **structure-agnostic**
-    
+
 - **metadata-driven**
-    
+
 - **incrementally implementable**
-    
 
 This is not a fixed pipeline.  
 It is a **set of transformations on information over time**.
@@ -85,13 +85,12 @@ One document / record / note
 Examples:
 
 - a bill
-    
+
 - a fiscal note
-    
+
 - a transcript
-    
+
 - a dataset entry
-    
 
 Each unit progresses independently.
 
@@ -122,20 +121,18 @@ The manifest is the **coordination layer**.
 It tracks:
 
 - file identity
-    
+
 - current status
-    
+
 - last agent
-    
+
 - processing history (optional)
-    
 
 Agents MUST:
 
 1. read manifest before acting
-    
+
 2. update manifest after acting
-    
 
 ---
 
@@ -150,22 +147,20 @@ Bring external information into the Vault.
 ### Input
 
 - URLs
-    
+
 - PDFs
-    
+
 - transcripts
-    
+
 - manual notes
-    
 
 ---
 
 ### Action
 
 - create a new unit
-    
+
 - attach raw content or reference
-    
 
 ---
 
@@ -190,11 +185,10 @@ Make raw data usable.
 ### Actions
 
 - extract text
-    
+
 - normalize formatting
-    
+
 - identify key fields
-    
 
 ---
 
@@ -219,13 +213,12 @@ Generate insight from structured data.
 ### Actions
 
 - summarize
-    
+
 - compare
-    
+
 - link related units
-    
+
 - identify patterns
-    
 
 ---
 
@@ -250,11 +243,10 @@ Create narrative-ready content.
 ### Actions
 
 - assemble arguments
-    
+
 - draft story structure
-    
+
 - connect multiple units
-    
 
 ---
 
@@ -279,11 +271,10 @@ Ensure accuracy and accountability.
 ### Actions
 
 - check sources
-    
+
 - validate claims
-    
+
 - confirm interpretation
-    
 
 ---
 
@@ -302,25 +293,22 @@ status: verified
 ### Router
 
 - determines next action for a unit
-    
 
 ---
 
 ### Worker (Executor)
 
 - performs transformation
-    
+
 - updates metadata + manifest
-    
 
 ---
 
 ### Human (Logan)
 
 - final authority
-    
+
 - verification + publication
-    
 
 ---
 
@@ -331,9 +319,8 @@ status: verified
 All progress must be visible in:
 
 - file metadata
-    
+
 - manifest
-    
 
 ---
 
@@ -342,9 +329,8 @@ All progress must be visible in:
 Do NOT assume:
 
 - location determines meaning
-    
+
 - movement = progress
-    
 
 ---
 
@@ -353,9 +339,8 @@ Do NOT assume:
 Re-running a step should:
 
 - not corrupt state
-    
+
 - not duplicate work
-    
 
 ---
 
@@ -364,9 +349,8 @@ Re-running a step should:
 Every claim must:
 
 - link back to a source
-    
+
 - be recoverable from Vault
-    
 
 ---
 
@@ -375,13 +359,12 @@ Every claim must:
 The system is functional when:
 
 1. A unit is created (capture)
-    
+
 2. It is transformed once (structure)
-    
+
 3. Metadata is updated
-    
+
 4. Manifest reflects change
-    
 
 That is enough.
 
@@ -390,15 +373,14 @@ That is enough.
 ## FAILURE MODES
 
 - stale metadata
-    
+
 - manifest mismatch
-    
+
 - duplicate processing
-    
+
 - skipped stages
-    
+
 - over-processing (unnecessary steps)
-    
 
 ---
 
@@ -407,11 +389,10 @@ That is enough.
 This is NOT:
 
 - a fixed pipeline
-    
+
 - a strict sequence
-    
+
 - a required architecture
-    
 
 It is a **framework for evolution**.
 
@@ -435,13 +416,12 @@ Single-step processing
 IDAHO-VAULT workflow is:
 
 - unit-based
-    
+
 - metadata-driven
-    
+
 - manifest-coordinated
-    
+
 - human-verified
-    
 
 The priority is not complexity.
 

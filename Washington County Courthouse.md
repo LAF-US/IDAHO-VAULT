@@ -6,4 +6,4 @@ related:
 - magistrate court
 ---
 
-magistrate court Washington County courthouse 
+magistrate court Washington County courthouse

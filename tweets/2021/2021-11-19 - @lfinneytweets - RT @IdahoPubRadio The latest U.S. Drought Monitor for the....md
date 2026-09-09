@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio The latest U.S. Drought Monitor for the..."
 date: 2021-11-19
 time: 22:44:09
 tweet_id: "1461827666701553668"
@@ -15,9 +16,10 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoPubRadio: The latest U.S. Drought Monitor for the West. https://t.co/lwlnCJdP0e
+RT @IdahoPubRadio: The latest U.S. Drought Monitor for the West. <https://t.co/lwlnCJdP0e>
 
 ## Media
-- ![](https://pbs.twimg.com/media/FEl0bzbVQAE2GAK.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/FEl0bzbVQAE2GAK.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1461827666701553668)

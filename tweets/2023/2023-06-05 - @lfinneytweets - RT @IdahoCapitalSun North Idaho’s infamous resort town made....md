@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoCapitalSun North Idaho\u2019s infamous resort town made..."
 date: 2023-06-05
 time: 17:18:55
 tweet_id: "1665770185528348672"

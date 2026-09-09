@@ -1,4 +1,5 @@
 ---
+title: "RT @Kash_Patel Idaho is lucky to have Senator James Risch..."
 date: 2024-12-19
 time: 01:16:41
 tweet_id: "1869552398852874286"

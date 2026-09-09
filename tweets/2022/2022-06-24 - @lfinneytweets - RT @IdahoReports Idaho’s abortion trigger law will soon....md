@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Idaho\u2019s abortion trigger law will soon..."
 date: 2022-06-24
 time: 21:58:25
 tweet_id: "1540454323124989952"

@@ -1,4 +1,5 @@
 ---
+title: "RT @apalermooo More than 30 Idahoans gathered in Lewiston..."
 date: 2020-04-18
 time: 21:33:32
 tweet_id: "1251624933391622144"

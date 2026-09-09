@@ -1,4 +1,5 @@
 ---
+title: "RT @clarkcorbin In normal years, Gov. Brad Little would..."
 date: 2021-01-11
 time: 19:47:37
 tweet_id: "1348718224913829888"

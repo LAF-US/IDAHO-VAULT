@@ -1,4 +1,5 @@
 ---
+title: "RT @LukeMalek I am leaving the race to be Idaho's next..."
 date: 2021-11-22
 time: 01:41:37
 tweet_id: "1462597099942416388"

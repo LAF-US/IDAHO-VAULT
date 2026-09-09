@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Monday @IDHW added 697 cases and 7 deaths..."
 date: 2020-10-27
 time: 01:22:37
 tweet_id: "1320898665083334657"

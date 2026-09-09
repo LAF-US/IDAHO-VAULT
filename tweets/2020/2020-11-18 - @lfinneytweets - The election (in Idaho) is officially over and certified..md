@@ -1,4 +1,5 @@
 ---
+title: "The election (in Idaho) is officially over and certified."
 date: 2020-11-18
 time: 21:08:29
 tweet_id: "1329169631622221825"
@@ -13,9 +14,10 @@ related:
   - lfinneytweets
 ---
 
-The election (in Idaho) is officially over and certified. https://t.co/JJ7mBAwGgH
+The election (in Idaho) is officially over and certified. <https://t.co/JJ7mBAwGgH>
 
 ## Links
-- https://x.com/BetsyZRussell/status/1329168383040864256
+
+- <https://x.com/BetsyZRussell/status/1329168383040864256>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1329169631622221825)

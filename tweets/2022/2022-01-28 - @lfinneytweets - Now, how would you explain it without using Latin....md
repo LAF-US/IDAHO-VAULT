@@ -1,4 +1,5 @@
 ---
+title: "Now, how would you explain it without using Latin..."
 date: 2022-01-28
 time: 01:20:26
 tweet_id: "1486871756761534468"
@@ -16,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-"Now, how would you explain it without using Latin?" ~@BetsyZRussell to a source 
+"Now, how would you explain it without using Latin?" ~@BetsyZRussell to a source
 
 @OHnewsroom
 

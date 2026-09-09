@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio Both the Idaho House and Senate have now..."
 date: 2021-11-17
 time: 00:37:57
 tweet_id: "1460769141007081475"

@@ -1,4 +1,5 @@
 ---
+title: "RT @ChristinaLords On a call w reporters, @IDSecOfState..."
 date: 2024-11-05
 time: 18:12:22
 tweet_id: "1853862937271972054"
