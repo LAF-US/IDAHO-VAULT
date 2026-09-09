@@ -1501,7 +1501,13 @@ def _build_reconciliation_report(
                     # without this it would hold the PREVIOUS PR's queue state. Nothing
                     # reads it there today — the unknown branch carries its own queue
                     # caveat — and this keeps that safe for the next edit.
-                    still_queued = False
+                    #
+                    # None, not False: "the read never happened" is not "there is no queue
+                    # entry", and this whole change exists to stop encoding unknown as a
+                    # definite answer. Both are falsy, so the one live read below behaves
+                    # identically; the difference is that a future reader moving that read
+                    # outside the try cannot mistake the guard for a negative result.
+                    still_queued: bool | None = None
                     try:
                         auto_merge_enabled, still_queued = _auto_merge_state(
                             owner, repo, pr_number, strict=True
