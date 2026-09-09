@@ -405,7 +405,8 @@ def _arm_auto_merge(owner: str, repo: str, pr_number: int) -> tuple[bool, str | 
         # the same way whenever it is discovered.
         return (
             False,
-            f"{AUTO_MERGE_NOT_READY_NOTE}; already in the merge queue without auto-merge",
+            f"{AUTO_MERGE_NOT_READY_NOTE}; already in the merge queue without auto-merge, so"
+            " no further arm attempt is made while the queue entry stands",
         )
     notes: list[str] = []
     if _merge_state_status(owner, repo, pr_number) == "BEHIND":
@@ -1402,30 +1403,27 @@ def _build_reconciliation_report(
         # Protected paths are not vetoed here anymore — the CODEOWNERS hard gate blocks
         # their merge regardless of label/arm (the per-engine glob lists were retired in
         # favor of the single, enforced source). Promotion keys only on eligibility + no merge block.
-        if (
+        # Promotion is DECIDED here and PUBLISHED below, only once arming actually
+        # succeeds. `merge/auto` declares "auto-merge armed on this PR; the engine removes
+        # it on disarm", so writing it ahead of the attempt asserted a state the engine
+        # could not retract when the attempt came back False: the label stayed, while
+        # _disable_auto_merge had no autoMergeRequest to turn off. _maybe_arm_auto_merge,
+        # the other caller, already labels only after a True; this puts the reconcile path
+        # on that same contract. Deferring the announcement cannot strand a PR: an
+        # unlabeled but still-eligible PR re-enters this branch on the next pass, so the
+        # attempt repeats and the comment fires once, when the promotion is real.
+        promoting = bool(
             AGENT_AUTO_MERGE_ENABLED
-            and
-            state["eligible_for_auto_merge"]
+            and state["eligible_for_auto_merge"]
             and not bool(state["merge_blocked"])
             and DEFAULT_AUTO_MERGE_LABEL not in current_labels
-        ):
-            if DEFAULT_REVIEW_PENDING_LABEL in current_labels:
-                current_labels.discard(DEFAULT_REVIEW_PENDING_LABEL)
-            current_labels.add(DEFAULT_AUTO_MERGE_LABEL)
-            _edit_label(pr_number, add=DEFAULT_AUTO_MERGE_LABEL)
-            actions.append(f"add:{DEFAULT_AUTO_MERGE_LABEL}")
-            _comment(
-                pr_number,
-                f"⏱️ Agent review grace period ({grace_minutes} min) elapsed "
-                f"with no blocking feedback. Promoting to `auto-merge`.",
-            )
-            promoted.append(pr_number)
+        )
+        if promoting:
             auto_merge_enabled = False
 
         if (
             AGENT_AUTO_MERGE_ENABLED
-            and
-            DEFAULT_AUTO_MERGE_LABEL in current_labels
+            and (DEFAULT_AUTO_MERGE_LABEL in current_labels or promoting)
             and bool(state["eligible_for_auto_merge"])
             and not bool(state["merge_blocked"])
         ):
@@ -1433,6 +1431,19 @@ def _build_reconciliation_report(
             # armed-but-not-queued (the stuck case), and _arm_auto_merge is
             # state-aware — it no-ops a queued PR and toggles a stuck one.
             auto_merge_enabled, arm_error = _arm_auto_merge(owner, repo, pr_number)
+            if auto_merge_enabled and promoting:
+                # The attempt succeeded, so the promotion is real — publish it now.
+                if DEFAULT_REVIEW_PENDING_LABEL in current_labels:
+                    current_labels.discard(DEFAULT_REVIEW_PENDING_LABEL)
+                current_labels.add(DEFAULT_AUTO_MERGE_LABEL)
+                _edit_label(pr_number, add=DEFAULT_AUTO_MERGE_LABEL)
+                actions.append(f"add:{DEFAULT_AUTO_MERGE_LABEL}")
+                _comment(
+                    pr_number,
+                    f"⏱️ Agent review grace period ({grace_minutes} min) elapsed "
+                    f"with no blocking feedback. Promoting to `auto-merge`.",
+                )
+                promoted.append(pr_number)
             if auto_merge_enabled:
                 rearmed.append(pr_number)
             elif arm_error and AUTO_MERGE_NOT_READY_NOTE in arm_error:
