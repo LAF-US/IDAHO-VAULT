@@ -6,9 +6,11 @@
 # Parked because no one asked for this check. Unlike the other five parked
 # alongside it, this one was never swept by 063cdaa24 ("`.github` cleaned",
 # 2026-08-21) — it postdates the sweep and was simply never subjected to it. It
-# calls scripts_scripts/phone_link_intake.py through a stale .github/scripts/
-# path, so it has been failing rather than measuring anything. A red check is
-# not a request. Do not move this file back without Logan saying so.
+# was calling scripts_scripts/phone_link_intake.py through a stale
+# .github/scripts/ path and failing rather than measuring anything; that path
+# has since been repointed (PR #1011), but parked is still parked — a fixed
+# path is not a request either. Do not move this file back without Logan
+# saying so.
 
 name: Code Coverage
 
@@ -45,7 +47,7 @@ jobs:
         run: |
           python -m coverage run \
             --branch \
-            --include='.github/scripts/phone_link_auto_sweep.py,.github/scripts/phone_link_intake.py' \
+            --include='.github/scripts/phone_link_auto_sweep.py,scripts_scripts/phone_link_intake.py' \
             -m unittest tests/test_phone_link_contract.py -v
           python -m coverage xml --skip-empty -o coverage.xml
 

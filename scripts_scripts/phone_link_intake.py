@@ -4,7 +4,7 @@ Phone Link Intake - moves files from the Phone Link download folder
 directly into the vault root.
 
 Usage:
-    python .github/scripts/phone_link_intake.py [OPTIONS]
+    python scripts_scripts/phone_link_intake.py [OPTIONS]
 
 Options:
     --source PATH      Override the Phone Link folder path
@@ -30,7 +30,10 @@ from pathlib import Path
 
 DEFAULT_SOURCE = Path.home() / "Downloads" / "Phone Link"
 TRUSTED_SOURCE_ROOT = DEFAULT_SOURCE.parent
-TRUSTED_VAULT_ROOT = Path(__file__).resolve().parents[2]
+# This file lives at <repository>/scripts_scripts/phone_link_intake.py, so the
+# repository is parents[1]. parents[2] was right only at the old
+# .github/scripts/ location and resolved one directory above the repository.
+TRUSTED_VAULT_ROOT = Path(__file__).resolve().parents[1]
 
 
 def normalized_path(path: Path) -> str:
