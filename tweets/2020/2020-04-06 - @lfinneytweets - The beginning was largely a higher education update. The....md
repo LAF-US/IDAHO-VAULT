@@ -1,4 +1,5 @@
 ---
+title: "The beginning was largely a higher education update. The..."
 date: 2020-04-06
 time: 22:37:20
 tweet_id: "1247292331805437952"

@@ -8,6 +8,7 @@ related:
 - coordination
 - protocol
 - SBP
+
 ---
 
 # SBP — Stigmergic Blackboard Protocol
@@ -26,6 +27,7 @@ related:
 ## The Problem
 
 Most multi-agent systems use orchestrators or message queues. These create:
+
 - Bottlenecks
 - Single points of failure
 - Brittle coupling between agents
@@ -47,6 +49,7 @@ Every new agent means more glue code.
 ### Pheromones
 
 Signals deposited by agents with:
+
 - **Intensity** (0.0–1.0): Signal strength
 - **Decay**: Signals fade over time (stale signals evaporate)
 - **Payload**: Optional data
@@ -54,6 +57,7 @@ Signals deposited by agents with:
 ### Trails
 
 Namespaces that organize pheromones:
+
 - `market.signals`
 - `pipeline.stage1`
 - `vault.agent-activity`
@@ -65,6 +69,7 @@ Threshold rules. Agent declares: "Wake me when `volatility ≥ 0.7`" — then go
 ### Merge Strategies
 
 What happens when you emit a pheromone that already exists:
+
 - **Reinforce**: Add intensities
 - **Replace**: New overwrites old
 - **Max**: Take the higher
@@ -75,7 +80,7 @@ What happens when you emit a pheromone that already exists:
 ## Five Operations
 
 | Op | Direction | Purpose |
-|----|-----------|---------|
+| ---- | ----------- | --------- |
 | **EMIT** | Agent → Blackboard | Deposit pheromone |
 | **SNIFF** | Agent → Blackboard | Read environment state |
 | **REGISTER_SCENT** | Agent → Blackboard | Declare trigger condition |
@@ -87,7 +92,7 @@ What happens when you emit a pheromone that already exists:
 ## SBP vs MCP
 
 | | MCP | SBP |
-|---|-----|-----|
+| --- | ----- | ----- |
 | **What it solves** | How an agent uses tools | How agents coordinate together |
 | **Interaction** | Direct: "agent calls tool" | Indirect: "agent senses environment" |
 | **Coupling** | Agent knows the tool | Agents don't know each other |
@@ -110,17 +115,20 @@ What happens when you emit a pheromone that already exists:
 ## SDKs
 
 ### Python
+
 ```bash
 pip install sbp-client
 ```
 
 ### Node.js
+
 ```bash
 npm install @advicenxt/sbp-server  # Server
 npm install @advicenxt/sbp-client   # Client
 ```
 
 ### Local Mode (No Server)
+
 ```python
 from sbp import SbpClient
 client = SbpClient(local=True)
@@ -144,7 +152,7 @@ client.emit("local.test", "signal", 0.9)
 ### Potential Uses
 
 | Trail | Signal | Trigger |
-|-------|--------|---------|
+| ------- | -------- | --------- |
 | `vault.daily.ingest` | Daily note created | Archive agent activates |
 | `vault.security.sweep` | Credential detected | Purge agent triggers |
 | `vault.agent.active` | Agent working | Activity monitor logs |
@@ -154,11 +162,13 @@ client.emit("local.test", "signal", 0.9)
 ### Comparison with Current Architecture
 
 **Current (Linear/GitHub):**
+
 - Centralized task tracking
 - Explicit assignment
 - Single point of coordination
 
 **SBP-Enhanced:**
+
 - Environmental awareness
 - Emergent coordination
 - Graceful degradation (agent dies, pheromones decay, others adapt)
@@ -169,7 +179,10 @@ client.emit("local.test", "signal", 0.9)
 
 Active protocol. v0.1.0 released Feb 2026. Spec is RFC 2119 compliant. Active development.
 
+###### [ Maiden : Mother : Crone ]
+
 ---
 
-###### [["The world is quiet here."]]
-###### [ Maiden : Mother : Crone ]
+```text
+The world is quiet here．Esto Perpetua!
+```

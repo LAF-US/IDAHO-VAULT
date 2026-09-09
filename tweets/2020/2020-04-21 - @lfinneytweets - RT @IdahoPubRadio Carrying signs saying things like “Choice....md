@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio Carrying signs saying things like \u201cChoice..."
 date: 2020-04-21
 time: 01:36:42
 tweet_id: "1252410903074533377"

@@ -1,4 +1,5 @@
 ---
+title: "The House is now taking up the $2 million appropriation to..."
 date: 2020-03-12
 time: 17:34:34
 tweet_id: "1238156443141857280"

@@ -1,4 +1,5 @@
 ---
+title: "RT @BFHerald In response to the Governor\u2019s modified Stage 2..."
 date: 2020-05-15
 time: 21:28:44
 tweet_id: "1261408195798396930"

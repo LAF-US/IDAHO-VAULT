@@ -4,4 +4,4 @@ related:
 - Sandpoint Reader
 authority: LOGAN
 ---
-Sandpoint Reader publisher 
+Sandpoint Reader publisher

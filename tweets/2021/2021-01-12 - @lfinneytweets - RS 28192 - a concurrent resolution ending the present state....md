@@ -1,4 +1,5 @@
 ---
+title: "RS 28192 - a concurrent resolution ending the present state..."
 date: 2021-01-12
 time: 17:58:41
 tweet_id: "1349053199559266305"

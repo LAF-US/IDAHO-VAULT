@@ -1,4 +1,5 @@
 ---
+title: "Idaho's Place A New History of the Gem State is a great..."
 date: 2023-04-11
 time: 18:16:55
 tweet_id: "1645853449907732480"

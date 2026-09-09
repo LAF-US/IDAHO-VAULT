@@ -15,6 +15,6 @@ related:
   - lfinneytweets
 ---
 
-RT @CBS2Boise: The child has to be present to get a meal, but does NOT have to be a Caldwell School District student. https://t.co/dvIQr3AK…
+RT @CBS2Boise: The child has to be present to get a meal, but does NOT have to be a Caldwell School District student. <https://t.co/dvIQr3AK…>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1240028176643842049)

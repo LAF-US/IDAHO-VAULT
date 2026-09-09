@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Much-amended local..."
 date: 2021-03-17
 time: 14:31:24
 tweet_id: "1372193857895428100"
@@ -20,9 +21,10 @@ related:
   - idpol
 ---
 
-RT @BetsyZRussell: Eye on Boise: Much-amended local government budget-limits bill amended again... #idleg #idpol  https://t.co/Y2tIrVtiNO h…
+RT @BetsyZRussell: Eye on Boise: Much-amended local government budget-limits bill amended again... #idleg #idpol  <https://t.co/Y2tIrVtiNO> h…
 
 ## Links
-- https://www.idahopress.com/eyeonboise/much-amended-local-government-budget-limits-bill-amended-again/article_5c840774-f4b8-54de-b35b-62202a828fde.html
+
+- <https://www.idahopress.com/eyeonboise/much-amended-local-government-budget-limits-bill-amended-again/article_5c840774-f4b8-54de-b35b-62202a828fde.html>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1372193857895428100)

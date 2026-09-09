@@ -20,11 +20,12 @@ related:
   - idleg
 ---
 
-@bananawikoff @naswidaho @nasw They’ll be taking testimony on H465 today, which would make it a felony to provide gender-affirming treatment for a transgender minor. #idleg 
-https://t.co/0QyqkPiwIU
+@bananawikoff @naswidaho @nasw They’ll be taking testimony on H465 today, which would make it a felony to provide gender-affirming treatment for a transgender minor. #idleg
+<https://t.co/0QyqkPiwIU>
 
 ## Links
-- https://legislature.idaho.gov/sessioninfo/2020/legislation/H0465/
+
+- <https://legislature.idaho.gov/sessioninfo/2020/legislation/H0465/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

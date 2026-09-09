@@ -1,4 +1,5 @@
 ---
+title: "[The Idaho Constitution] establishes the people\u2019s..."
 date: 2021-08-24
 time: 01:01:07
 tweet_id: "1429972002442420235"

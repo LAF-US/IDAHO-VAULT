@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Idaho Supreme Court justices came from..."
 date: 2026-01-29
 time: 22:13:36
 tweet_id: "2016998189149409761"

@@ -1,4 +1,5 @@
 ---
+title: "RT @ChristinaLords I've attended two of these workshops in..."
 date: 2021-12-09
 time: 06:15:15
 tweet_id: "1468826559389650945"

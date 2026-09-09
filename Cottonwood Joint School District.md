@@ -7,4 +7,4 @@ related:
 - Idaho County
 authority: LOGAN
 ---
-Cottonwood/Ferdinand/Greencreek, Idaho County 
+Cottonwood/Ferdinand/Greencreek, Idaho County

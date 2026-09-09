@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoCapitalSun The pipeline sends billions of cubic..."
 date: 2023-07-30
 time: 02:43:48
 tweet_id: "1685481287258124288"

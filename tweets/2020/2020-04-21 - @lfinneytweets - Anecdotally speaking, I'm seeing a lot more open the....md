@@ -1,4 +1,5 @@
 ---
+title: "Anecdotally speaking, I'm seeing a lot more open the..."
 date: 2020-04-21
 time: 23:12:43
 tweet_id: "1252737057790681088"

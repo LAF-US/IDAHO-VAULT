@@ -1,4 +1,5 @@
 ---
+title: "RT @NWPBroadcasting Across WA, sheriffs are pushing back on..."
 date: 2020-06-25
 time: 19:41:20
 tweet_id: "1276239069702287360"

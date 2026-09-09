@@ -1,4 +1,5 @@
 ---
+title: "RT @NWSBoise Smoke outlook today through Sunday from the..."
 date: 2021-07-24
 time: 23:12:28
 tweet_id: "1419073023408099330"

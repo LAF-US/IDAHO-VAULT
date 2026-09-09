@@ -1,4 +1,5 @@
 ---
+title: "I ran into Rep. Giddings while grabbing lunch. She declined..."
 date: 2021-08-02
 time: 18:43:41
 tweet_id: "1422266873882812426"

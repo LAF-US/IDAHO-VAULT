@@ -1,4 +1,5 @@
 ---
+title: "Rep. Syme is now reading his Chicken Dinner Road resolution..."
 date: 2020-01-27
 time: 18:26:01
 tweet_id: "1221861937580892160"

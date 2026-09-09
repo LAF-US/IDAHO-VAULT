@@ -1,4 +1,5 @@
 ---
+title: "RT @IF_reporter Local Republicans exercised their..."
 date: 2024-03-05
 time: 01:41:16
 tweet_id: "1764828494796669069"

@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Newly elected Superintendent of Public..."
 date: 2023-01-26
 time: 22:44:21
 tweet_id: "1618741663014486019"

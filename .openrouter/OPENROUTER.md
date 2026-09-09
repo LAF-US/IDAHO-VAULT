@@ -1,4 +1,5 @@
 ---
+title: OPENROUTER
 authority: LOGAN
 related:
   - OPENROUTER
@@ -6,6 +7,6 @@ related:
   - runtime
 ---
 
-**.openrouter** — Imported software runtime persona.
+**.openrouter** â€” Imported software runtime persona.
 
 openrouter runtime and configuration.

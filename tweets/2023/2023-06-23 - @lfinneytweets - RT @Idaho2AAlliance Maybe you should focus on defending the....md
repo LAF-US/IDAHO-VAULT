@@ -1,4 +1,5 @@
 ---
+title: "RT @Idaho2AAlliance Maybe you should focus on defending the..."
 date: 2023-06-23
 time: 22:08:17
 tweet_id: "1672365990116741123"

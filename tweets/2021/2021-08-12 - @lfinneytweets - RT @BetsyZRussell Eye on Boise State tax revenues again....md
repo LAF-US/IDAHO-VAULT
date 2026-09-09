@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise State tax revenues again..."
 date: 2021-08-12
 time: 00:11:07
 tweet_id: "1425610764463722496"

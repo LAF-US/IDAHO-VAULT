@@ -1,4 +1,5 @@
 ---
+title: "Rep. Moyle places some blame for the property tax increases..."
 date: 2020-01-06
 time: 21:57:28
 tweet_id: "1214305002908372993"

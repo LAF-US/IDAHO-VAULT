@@ -1,4 +1,5 @@
 ---
+title: "RT @NinaRobin7 A bill requiring suicide prevention training..."
 date: 2018-03-17
 time: 04:17:23
 tweet_id: "974862234957496321"

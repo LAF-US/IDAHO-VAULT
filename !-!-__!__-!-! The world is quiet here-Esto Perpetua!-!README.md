@@ -7,7 +7,7 @@ date updated: 2026-04-13
 authority: "[[ADMIN]][[LOGAN]]"
 ---
 
-# Esto Perpetua!
+# Esto Perpetua
 
 *"Let it be perpetual."* — Idaho State Motto
 
@@ -35,11 +35,11 @@ The canon core holds documents that must endure. Not operational. Not ephemeral.
 
 This location is the innermost triangle — the one that remains when you recurse all the way down.
 
-```
+```text
 LAF-US (main root)
 └─ !
    └─ !
-      └─ __!__
+      └─ `__!__`
          └─ !
             └─ ! The world is quiet here.
                └─ Esto Perpetua!
@@ -49,4 +49,8 @@ LAF-US (main root)
                            └─ [ ? ]
 ```
 
-*The world is quiet here.*
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

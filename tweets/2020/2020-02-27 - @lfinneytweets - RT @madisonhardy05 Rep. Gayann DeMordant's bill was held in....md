@@ -1,4 +1,5 @@
 ---
+title: "RT @madisonhardy05 Rep. Gayann DeMordant's bill was held in..."
 date: 2020-02-27
 time: 17:52:10
 tweet_id: "1233087440451031040"

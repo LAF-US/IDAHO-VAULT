@@ -3,9 +3,20 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import os
 from collections import Counter, defaultdict
 from datetime import date
 from pathlib import Path
+
+
+def resolve_repo_path(repo_root: Path, raw_path: str, label: str) -> Path:
+    """Resolve a CLI path and reject any path outside the repository root."""
+    root_path = os.path.realpath(os.fspath(repo_root))
+    resolved_path = os.path.realpath(os.path.join(root_path, raw_path))
+    safe_prefix = os.path.join(root_path, "")
+    if not resolved_path.startswith(safe_prefix):
+        raise ValueError(f"{label} must stay within the repository root: {raw_path}")
+    return Path(resolved_path)
 
 
 def load_manifest(path: Path) -> list[dict[str, object]]:
@@ -97,9 +108,9 @@ def main() -> int:
     args = parser.parse_args()
 
     repo_root = Path(".").resolve()
-    manifest_path = repo_root / args.manifest
-    csv_path = repo_root / args.csv
-    markdown_path = repo_root / args.markdown
+    manifest_path = resolve_repo_path(repo_root, args.manifest, "manifest path")
+    csv_path = resolve_repo_path(repo_root, args.csv, "CSV path")
+    markdown_path = resolve_repo_path(repo_root, args.markdown, "Markdown path")
 
     entries = load_manifest(manifest_path)
     write_csv(csv_path, entries)

@@ -1,4 +1,5 @@
 ---
+title: "While there's no dancing unfortunately, we did manage to..."
 date: 2021-12-18
 time: 00:45:58
 tweet_id: "1472005181306855424"
@@ -13,9 +14,10 @@ related:
   - lfinneytweets
 ---
 
-While there's no dancing unfortunately, we did manage to put together a really good show tonight. Be sure to tune in! https://t.co/F0XyF0kFti
+While there's no dancing unfortunately, we did manage to put together a really good show tonight. Be sure to tune in! <https://t.co/F0XyF0kFti>
 
 ## Links
-- https://t.co/F0XyF0kFti
+
+- <https://t.co/F0XyF0kFti>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1472005181306855424)

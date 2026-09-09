@@ -1,4 +1,4 @@
-<#
+﻿<#
 .VAULT STABILIZATION MODULE
 Governance: CONSTITUTION.md § I, § III
 Protocol: LEVELSET-compliant

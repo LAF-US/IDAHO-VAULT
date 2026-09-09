@@ -1,4 +1,5 @@
 ---
+title: "RT @KeithRidler I wouldn\u2019t be surprised to see Idaho..."
 date: 2020-06-03
 time: 00:26:38
 tweet_id: "1267975949078810627"

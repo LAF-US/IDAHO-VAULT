@@ -1,4 +1,5 @@
 ---
+title: "RT @madisonhardy05 Over the next 20 days, \u2066@GovernorLittle\u2069..."
 date: 2020-11-13
 time: 17:56:35
 tweet_id: "1327309397882597376"

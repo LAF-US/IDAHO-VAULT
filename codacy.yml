@@ -1,0 +1,479 @@
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+# This workflow checks out code, performs a Codacy security scan
+# and integrates the results with the
+# GitHub Advanced Security code scanning feature. For more information on
+# Codacy CLI v2, see https://github.com/codacy/codacy-cli-v2.
+
+name: Codacy Security Scan
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    # The branches below must be a subset of the branches above
+    branches: ["main"]
+
+permissions:
+  contents: read
+
+jobs:
+  codacy-security-scan:
+    permissions:
+      contents: read # for actions/checkout to fetch code
+      security-events: write # for github/codeql-action/upload-sarif to upload SARIF results
+      actions: read # only required for a private repository by github/codeql-action/upload-sarif to get the Action run status
+    name: Codacy Security Scan
+    runs-on: ubuntu-latest
+    # The old Scala CLI needed 25 minutes because it ran ~39 dockerised tools.
+    # Codacy CLI v2 runs the tools named in .codacy/codacy.yaml as native
+    # processes; measured end to end on this repository (38,492 tracked files)
+    # at well under a minute. 10 leaves generous headroom without parking a
+    # runner for a quarter of an hour when something wedges.
+    timeout-minutes: 10
+    steps:
+      # Checkout the repository to the GitHub Actions runner
+      - name: Checkout code
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      # WHY THIS IS CODACY CLI v2 AND NOT codacy-analysis-cli.
+      #
+      # codacy-analysis-cli is Codacy's legacy analyser and is no longer the
+      # actively developed one. Every run of it against this repository died
+      # after analysis had already succeeded:
+      #
+      #   java.nio.charset.MalformedInputException: Input length = 1
+      #     at java.nio.file.Files.readAllLines(Files.java:3205)
+      #     at ...formatter.Sarif.$anonfun$createResults$3(Sarif.scala:149)
+      #
+      # Sarif.scala:149 is `executionDirectory./(fileName).lines` — it reads
+      # every file an issue was reported on, purely to compute a location
+      # hash, and better.files routes that through the no-charset overload of
+      # Files.readAllLines, which decodes as UTF-8 unconditionally. This
+      # repository has 21 tracked files that are not valid UTF-8 (13 true
+      # binaries, plus cp1252/utf-16 text; re-counted against 38,492 tracked
+      # files). One undecodable byte killed the run, the JVM exited without
+      # reaping its docker child, and the job hung until the timeout cancelled
+      # it. A cancelled check is not a passing one, which is why every PR sat
+      # un-mergeable.
+      #
+      # Verified, not assumed: Sarif.scala is byte-identical between tags
+      # 7.9.25 and 7.10.1 (`git diff` between the tags is empty), which is why
+      # bumping the version could not have helped — and CI proved it did not
+      # (job 93687391765 on 7.9.25, job 93967219019 on 7.10.1: same stack).
+      # Nor was it reachable by locale or -Dfile.encoding, for the same
+      # hardcoded-UTF-8 reason.
+      #
+      # CLI v2 is a Go program. Go's encoding/json substitutes U+FFFD for
+      # invalid UTF-8 rather than raising, so this entire failure class is
+      # structurally absent. Measured on this repository before this workflow
+      # was written: exit 0, a valid 9.2 MB SARIF 2.1.0 document, 13,284
+      # results — on the same tree, with the same 21 files present.
+      #
+      # It is invoked directly rather than through codacy/codacy-cli-v2-action
+      # for one reason: that action installs the CLI with
+      # `curl -Ls .../main/codacy-cli.sh`, unpinned and unverified. Pinning the
+      # installer to a commit (tags are retaggable; commits are not) and
+      # checking its SHA-256 before making it executable is the standard this
+      # repository already holds `uses:` references to, and dropping to the
+      # action would give that up. Note the action needs no `uses:` of its own,
+      # so the old objection to codacy-analysis-cli-action — it pulled an
+      # unpinned actions/setup-go@v3 — does not apply to v2.
+      - name: Download Codacy CLI v2 installer
+        shell: bash
+        run: |
+          wget -O codacy-cli.sh "https://raw.githubusercontent.com/codacy/codacy-cli-v2/5448b2421762757edd08a66df6d5b1904081f087/codacy-cli.sh"
+          echo "1bb82234e74e5385ae6a6e93cb61cbc3356fdffdeb36f907686b88679c0cd82c  codacy-cli.sh" | sha256sum -c -
+          chmod +x codacy-cli.sh
+
+      # The installer resolves "latest" through api.github.com; pinning
+      # CODACY_CLI_V2_VERSION skips that lookup, so the analyser version is
+      # fixed here rather than being whatever shipped this morning.
+      #
+      # No token is passed. `analyze` and `init` accept only --api-token (an
+      # account-level token, with --provider/--organization/--repository) to
+      # fetch remote configuration; --project-token belongs to `upload`, which
+      # this workflow does not call — results go to GitHub code scanning, not
+      # back to Codacy, and the hosted "Codacy Static Code Analysis" check
+      # already reports independently. So the tool set comes from
+      # .codacy/codacy.yaml in this repository.
+      - name: Install Codacy CLI v2 and its tools
+        env:
+          CODACY_CLI_V2_VERSION: "1.0.0-main.380.sha.27e119a"
+        shell: bash
+        run: ./codacy-cli.sh install
+
+      - name: Run Codacy analysis
+        env:
+          CODACY_CLI_V2_VERSION: "1.0.0-main.380.sha.27e119a"
+        shell: bash
+        run: ./codacy-cli.sh analyze --format sarif -o results.sarif
+
+      # Two fixes, both measured against a real local run of the command above.
+      #
+      # 1. PATHS. CLI v2 emits absolute artifact URIs
+      #    (file:///home/runner/work/.../file.js). Code scanning needs
+      #    repo-relative paths or nothing maps to a file in the diff; all 47
+      #    result URIs in the local run were absolute. Codacy's own action does
+      #    the same rewrite, but only on the branch that uploads to Codacy —
+      #    doing it unconditionally is the point here.
+      #
+      # 2. EXCLUSIONS. The analyser does not apply the root .codacy.yaml, which
+      #    is Codacy Cloud's config file, not CLI v2's. Unfiltered, 13,195 of
+      #    the 13,284 results — 99% — were vendored plugin bundles under
+      #    .obsidian/plugins/, which that file exists to exclude. Uploading
+      #    those would bury ~50 real findings under thirteen thousand alerts.
+      #
+      #    The exclusion list is READ FROM .codacy.yaml rather than restated
+      #    here. That file is the single place this repository declares what is
+      #    excluded; a second hand-maintained copy in this workflow is exactly
+      #    the thing 846472e34 forbade, and it would drift. If .codacy.yaml is
+      #    absent or declares nothing, nothing is filtered and the count is
+      #    reported as-is — this never silently drops findings.
+      - name: Normalise SARIF for code scanning
+        shell: bash
+        run: |
+          python3 - <<'EOF'
+          import json, os, re, sys
+
+          MAX_RUNS = 20
+          root = os.getcwd()
+
+          def glob_to_re(pattern):
+              # Java/Codacy glob semantics: ** crosses directory separators,
+              # a single * does not. fnmatch cannot express that distinction.
+              out, i = [], 0
+              while i < len(pattern):
+                  c = pattern[i]
+                  if c == "*":
+                      if pattern[i:i + 2] == "**":
+                          out.append(".*")
+                          i += 2
+                          continue
+                      out.append("[^/]*")
+                  elif c == "?":
+                      out.append("[^/]")
+                  else:
+                      out.append(re.escape(c))
+                  i += 1
+              return re.compile("^" + "".join(out) + "$")
+
+          excludes = []
+          try:
+              import yaml
+              with open(".codacy.yaml") as fh:
+                  cfg = yaml.safe_load(fh) or {}
+              excludes = [glob_to_re(p) for p in (cfg.get("exclude_paths") or [])]
+              print(f"exclude_paths from .codacy.yaml: {cfg.get('exclude_paths') or []}")
+          except FileNotFoundError:
+              print("no .codacy.yaml — nothing excluded")
+          except Exception as exc:                       # noqa: BLE001
+              print(f"could not read .codacy.yaml ({exc}) — nothing excluded")
+
+          with open("results.sarif") as fh:
+              sarif = json.load(fh)
+
+          def relativise(uri):
+              for prefix in (f"file://{root}/", f"file://{root}", "file://"):
+                  if uri.startswith(prefix):
+                      uri = uri[len(prefix):]
+                      break
+              return uri.lstrip("/")
+
+          kept_total = dropped_total = 0
+          repairs = []
+
+          def _object(container, key, label):
+              """Return container[key] as a dict, replacing a non-object value.
+
+              `setdefault` is the wrong tool here and was the bug: for an
+              EXISTING key it returns the existing value untouched, so
+              `tool.setdefault("driver", {})` hands back None when the analyser
+              emitted `"driver": null` -- and the very next `.get("rules")`
+              raises AttributeError and takes the whole workflow down. A block
+              whose entire job is repairing malformed values must not itself
+              assume they are well-formed.
+              """
+              value = container.get(key)
+              if isinstance(value, dict):
+                  return value
+              if key in container:
+                  repairs.append(f"{label} was {type(value).__name__}, replaced with an empty object")
+              container[key] = {}
+              return container[key]
+
+          def _sub(container, key, label=None):
+              """A nested object, never something `.get` cannot be called on.
+
+              `loc.get("physicalLocation", {})` defaults only when the key is
+              ABSENT. A present-but-non-object value comes straight back, and
+              the chained `.get("artifactLocation")` raises on it.
+
+              With a label, a present-but-invalid value is REPAIRED in place and
+              recorded — returning `{}` while leaving `"location": null` in the
+              document is the `rules: null` failure again, read smoothly here
+              and rejected at the uploader. Without a label the container is
+              only read, which is what the pre-upload validator needs: it must
+              judge the document, not quietly mend it.
+              """
+              value = container.get(key)
+              if isinstance(value, dict):
+                  return value
+              if label and key in container:
+                  repairs.append(f"{label} was {type(value).__name__}, replaced with an empty object")
+                  container[key] = {}
+                  return container[key]
+              return {}
+
+          def _objects(container, key, label):
+              """The objects in container[key], dropping whatever is not one.
+
+              `x.get(k, []) or []` looks defensive and is not: a present dict or
+              string is truthy, so it survives, gets iterated -- yielding keys
+              or characters -- and the `.get` inside the loop raises. Every
+              array this script walks goes through here instead.
+              """
+              value = container.get(key)
+              if value is None:
+                  # An ABSENT key is fine and must stay absent -- adding
+                  # `artifacts: []` to a document that never had it is not a
+                  # repair. A key present with an explicit null is the `rules:
+                  # null` failure exactly: iterating treats it as empty, and
+                  # the null ships to an uploader that rejects the document.
+                  if key in container:
+                      repairs.append(f"{label} was None, coerced to []")
+                      container[key] = []
+                  return []
+              if not isinstance(value, list):
+                  repairs.append(f"{label} was {type(value).__name__}, treated as empty")
+                  container[key] = []
+                  return []
+              usable = [item for item in value if isinstance(item, dict)]
+              if len(usable) != len(value):
+                  repairs.append(f"{label} dropped {len(value) - len(usable)} non-object entries")
+                  # Write back, not just filter: returning a clean list while
+                  # leaving the junk in the document means the uploader still
+                  # rejects it, and anything downstream that re-reads the key
+                  # gets the junk again.
+                  container[key] = usable
+              return usable
+
+          # Same reasoning one level up: `runs` itself, and each entry in it,
+          # are read with `.get`/`.setdefault` below and would crash on a
+          # non-object just as surely.
+          raw_runs = sarif.get("runs")
+          if not isinstance(raw_runs, list):
+              if "runs" in sarif:
+                  repairs.append(f"runs was {type(raw_runs).__name__}, coerced to []")
+              raw_runs = []
+          usable_runs = [r for r in raw_runs if isinstance(r, dict)]
+          if len(usable_runs) != len(raw_runs):
+              repairs.append(f"runs dropped {len(raw_runs) - len(usable_runs)} non-object entries")
+          sarif["runs"] = usable_runs
+
+          for i, run in enumerate(usable_runs):
+              # CLI v2 emits "rules": null when it has no rule metadata, and
+              # code scanning rejects the whole document for it:
+              #   instance.runs[0].tool.driver.rules is not of a type(s) array
+              # The SARIF schema makes the property optional but typed, so an
+              # explicit null is invalid where an absent key is fine.
+              #
+              # The raw value is recorded before it is overwritten, and printed
+              # below. Without that, this repair is invisible: the validation
+              # pass further down runs AFTER this line, so it can only ever see
+              # the coerced value and could never report what was actually
+              # wrong. A silent repair of a null is how the null got shipped in
+              # the first place.
+              # driver and extensions are both toolComponent and the schema
+              # types `rules` identically for each, so both are repaired here.
+              tool = _object(run, "tool", f"runs[{i}].tool")
+              driver = _object(tool, "driver", f"runs[{i}].tool.driver")
+              # `name` is REQUIRED on driver, so a driver we just replaced (or
+              # one that arrived without a usable name) would be rejected by
+              # the uploader and, before that, by the tripwire below. Default
+              # it to the same "codacy" this file already falls back to when
+              # naming automationDetails, so a repairable document gets
+              # repaired instead of failing the whole scan.
+              if not isinstance(driver.get("name"), str) or not driver["name"]:
+                  repairs.append(
+                      f"runs[{i}].tool.driver.name was "
+                      f"{type(driver.get('name')).__name__}, defaulted to 'codacy'"
+                  )
+                  driver["name"] = "codacy"
+              components = [("driver", driver)]
+              # `extensions` is optional but typed as an array of toolComponent,
+              # so the container is exactly as rejectable as the `rules` inside
+              # it. Reading it with `or []` treated a null as empty and left the
+              # null in the document -- the uploader then failed the WHOLE
+              # document on `tool.extensions is not of a type(s) array`, the
+              # same class of error this block exists to prevent, and the
+              # tripwire below (driver only) never saw it. Repair the container
+              # before its contents, and drop entries that are not objects.
+              if "extensions" in tool:
+                  raw_ext = tool["extensions"]
+                  if not isinstance(raw_ext, list):
+                      repairs.append(
+                          f"runs[{i}].tool.extensions was {type(raw_ext).__name__}, dropped"
+                      )
+                      del tool["extensions"]
+                  else:
+                      usable = [ext for ext in raw_ext if isinstance(ext, dict)]
+                      if len(usable) != len(raw_ext):
+                          repairs.append(
+                              f"runs[{i}].tool.extensions dropped "
+                              f"{len(raw_ext) - len(usable)} non-object entr"
+                              f"{'y' if len(raw_ext) - len(usable) == 1 else 'ies'}"
+                          )
+                      tool["extensions"] = usable
+              components += [
+                  (f"extensions[{k}]", ext)
+                  for k, ext in enumerate(tool.get("extensions", []))
+              ]
+              for label, comp in components:
+                  raw_rules = comp.get("rules")
+                  if not isinstance(raw_rules, list):
+                      repairs.append(
+                          f"runs[{i}].tool.{label}.rules was {type(raw_rules).__name__}, coerced to []"
+                      )
+                      comp["rules"] = []
+              kept = []
+              for res in _objects(run, "results", f"runs[{i}].results"):
+                  excluded = False
+                  for loc in _objects(res, "locations", f"runs[{i}].results[].locations"):
+                      art = _sub(
+                          _sub(loc, "physicalLocation", f"runs[{i}].results[].physicalLocation"),
+                          "artifactLocation",
+                          f"runs[{i}].results[].artifactLocation",
+                      )
+                      # isinstance, not `in`: `"uri": null` reaches
+                      # relativise() and raises on uri.startswith(), which is
+                      # the traceback these helpers exist to prevent. The
+                      # validator already guards with isinstance, so a
+                      # non-string uri is reachable input, not a hypothetical.
+                      if not isinstance(art.get("uri"), str) and "uri" in art:
+                          repairs.append(
+                              f"runs[{i}].results[].artifactLocation.uri was "
+                              f"{type(art['uri']).__name__}, dropped"
+                          )
+                          del art["uri"]
+                      if "uri" in art:
+                          art["uri"] = relativise(art["uri"])
+                          # index points into run.artifacts, which is not
+                          # rewritten here; drop it rather than leave it wrong.
+                          art.pop("index", None)
+                          if any(rx.match(art["uri"]) for rx in excludes):
+                              excluded = True
+                  if excluded:
+                      dropped_total += 1
+                  else:
+                      kept.append(res)
+              # Only write back a key the document actually had, matching
+              # _objects: inventing `results: []` on a run that never reported
+              # one is not a repair.
+              if kept or "results" in run:
+                  run["results"] = kept
+              kept_total += len(kept)
+              for art in _objects(run, "artifacts", f"runs[{i}].artifacts"):
+                  loc = _sub(art, "location", f"runs[{i}].artifacts[].location")
+                  if not isinstance(loc.get("uri"), str) and "uri" in loc:
+                      repairs.append(
+                          f"runs[{i}].artifacts[].location.uri was "
+                          f"{type(loc['uri']).__name__}, dropped"
+                      )
+                      del loc["uri"]
+                  if "uri" in loc:
+                      loc["uri"] = relativise(loc["uri"])
+
+          runs = sarif.get("runs", [])
+          if len(runs) > MAX_RUNS:
+              runs.sort(key=lambda r: len(r.get("results", [])), reverse=True)
+              print(f"WARNING: {len(runs)} runs exceeds the {MAX_RUNS} code-scanning cap; "
+                    f"folding the {len(runs) - MAX_RUNS + 1} smallest into one")
+              base = runs[MAX_RUNS - 1]
+              base["tool"]["driver"]["name"] = "codacy-other"
+              for extra in runs[MAX_RUNS:]:
+                  base.setdefault("results", []).extend(extra.get("results", []))
+              runs = runs[: MAX_RUNS - 1] + [base]
+          for run in runs:
+              name = run.get("tool", {}).get("driver", {}).get("name", "codacy")
+              run.setdefault("automationDetails", {})["id"] = f"codacy-{name}/"
+          sarif["runs"] = runs
+
+          for r in repairs:
+              print(f"repaired: {r}")
+
+          # Fail here rather than letting upload-sarif reject the document.
+          # The first run of this workflow died at the uploader on
+          # `"rules": null`; the local check that was supposed to catch it
+          # printed len(rules or []) and reported "0", so the instrumentation
+          # hid the very defect it was watching for.
+          #
+          # These assert the POST-normalisation state -- they are a tripwire
+          # for the normalisation above being reordered or removed, not a
+          # detector of what the analyser emitted. The rules check in
+          # particular cannot fire while the coercion above stands; what
+          # surfaces an emitted null is the "repaired:" line, not this. Said
+          # plainly because the earlier version of this comment claimed these
+          # "read the raw values", which was false and would have made a dead
+          # assertion look like live cover.
+          # Reached via _sub, so a malformed document that slipped the
+          # normalisation is REPORTED here rather than raising. A validator
+          # that crashes on the input it exists to judge tells you nothing
+          # about the input.
+          problems = []
+          for i, run in enumerate(runs):
+              driver = _sub(_sub(run, "tool"), "driver")
+              rules = driver.get("rules")
+              if not isinstance(rules, list):
+                  problems.append(f"runs[{i}].tool.driver.rules is {type(rules).__name__}, not list")
+              if not driver.get("name"):
+                  problems.append(f"runs[{i}].tool.driver.name is missing")
+              # `results` is optional on a run, so ABSENT is valid and only a
+              # present-but-wrong value is a problem. Flagging the absence made
+              # a clean document fail.
+              results = run.get("results")
+              if "results" in run and not isinstance(results, list):
+                  problems.append(f"runs[{i}].results is {type(results).__name__}, not list")
+              if not isinstance(results, list):
+                  results = []
+              for j, res in enumerate(results):
+                  if not isinstance(res, dict):
+                      problems.append(f"runs[{i}].results[{j}] is {type(res).__name__}, not object")
+                      continue
+                  # No `is not None` tolerance: normalisation coerces a null
+                  # away, so a null still here means normalisation did not run
+                  # -- exactly what this tripwire exists to catch.
+                  locations = res.get("locations")
+                  if "locations" in res and not isinstance(locations, list):
+                      problems.append(f"runs[{i}].results[{j}].locations is {type(locations).__name__}, not list")
+                      continue
+                  # Not `locations or []`: that leaves the loop's safety
+                  # resting on the `continue` above rather than on structure.
+                  for loc in (locations if isinstance(locations, list) else []):
+                      if not isinstance(loc, dict):
+                          problems.append(f"runs[{i}].results[{j}].locations has a {type(loc).__name__}")
+                          continue
+                      uri = _sub(_sub(loc, "physicalLocation"), "artifactLocation").get("uri", "")
+                      if isinstance(uri, str) and uri.startswith(("/", "file:")):
+                          problems.append(f"runs[{i}].results[{j}] still absolute: {uri}")
+          if problems:
+              print("SARIF failed pre-upload validation:", file=sys.stderr)
+              for p in problems[:20]:
+                  print(f"  {p}", file=sys.stderr)
+              raise SystemExit(1)
+
+          with open("results-normalised.sarif", "w") as fh:
+              json.dump(sarif, fh)
+          print(f"runs: {len(runs)}  kept: {kept_total}  excluded: {dropped_total}")
+          if kept_total == 0 and dropped_total == 0:
+              print("no results at all — check the analyse step", file=sys.stderr)
+          EOF
+
+      # Upload the SARIF file generated in the previous step
+      - name: Upload SARIF results file
+        uses: github/codeql-action/upload-sarif@5595ccaf912efad79be6eef63a5619ff05969be3 # v4.37.6
+        with:
+          sarif_file: results-normalised.sarif

@@ -1,4 +1,5 @@
 ---
+title: "RT @ChuckGrassley Getting ready for Pres Trump 2b sworn in..."
 date: 2025-01-20
 time: 19:10:56
 tweet_id: "1881419156098261124"
@@ -15,11 +16,12 @@ related:
   - lfinneytweets
 ---
 
-RT @ChuckGrassley: Getting ready for Pres Trump 2b sworn in 
+RT @ChuckGrassley: Getting ready for Pres Trump 2b sworn in
 
-Thx Booker for photo https://t.co/Zve5nTFUl0
+Thx Booker for photo <https://t.co/Zve5nTFUl0>
 
 ## Media
-- ![](https://pbs.twimg.com/media/Ghv50ymWEAA9E5m.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/Ghv50ymWEAA9E5m.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1881419156098261124)

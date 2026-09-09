@@ -1,4 +1,5 @@
 ---
+title: "Senate passes HB 420 \u2014 would allow contractors to move to..."
 date: 2020-03-17
 time: 21:27:41
 tweet_id: "1240027048644493312"

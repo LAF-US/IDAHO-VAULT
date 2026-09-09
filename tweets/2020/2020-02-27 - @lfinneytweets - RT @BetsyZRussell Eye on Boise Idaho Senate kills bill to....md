@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Idaho Senate kills bill to..."
 date: 2020-02-27
 time: 19:31:00
 tweet_id: "1233112313684606978"

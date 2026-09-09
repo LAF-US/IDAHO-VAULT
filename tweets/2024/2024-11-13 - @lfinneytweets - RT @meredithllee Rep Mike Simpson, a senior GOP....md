@@ -1,4 +1,5 @@
 ---
+title: "RT @meredithllee Rep Mike Simpson, a senior GOP..."
 date: 2024-11-13
 time: 22:52:40
 tweet_id: "1856832580211151108"

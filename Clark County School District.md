@@ -4,4 +4,4 @@ related:
 - Dubois
 authority: LOGAN
 ---
-Dubois, Clark County 
+Dubois, Clark County

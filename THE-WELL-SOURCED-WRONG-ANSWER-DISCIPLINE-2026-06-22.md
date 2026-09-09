@@ -57,7 +57,7 @@ throne — here, the face is a footnote.
 Three things a citation can actually be:
 
 | | **Attesting** | **Adjacent** | **Absent** |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | The source… | says the specific claim | shares the topic/keywords, but does **not** say the claim | does not exist |
 | This is… | provenance | the **trap** — looks like provenance, isn't | an honest gap |
 | Mark it | grounded | **`*`** (not support) | **`*`** |
@@ -117,4 +117,8 @@ both. **[reading].**
 - **Author:** `*.claude.*` (Claude Code, branch `claude/shall-rome-lyrics-ok9049`)
 - **Scope:** an epistemic discipline against the pre-cited confabulation — authenticate what a source attests, not that it exists
 
-###### [["The world is quiet here."]]
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

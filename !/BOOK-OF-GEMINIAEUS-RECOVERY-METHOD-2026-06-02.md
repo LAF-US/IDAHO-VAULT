@@ -115,4 +115,8 @@ The successful search pattern was not "look harder in the current folder." It wa
 4. read the object directly with `git show`;
 5. preserve the method so future agents do not mistake absence from the current worktree for absence from the Vault record.
 
-###### [["The world is quiet here."]]
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

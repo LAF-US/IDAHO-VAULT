@@ -1,4 +1,5 @@
 ---
+title: "RT @KTVBJoe No surprise, the vote fails. So, the Senate is..."
 date: 2021-11-15
 time: 17:48:19
 tweet_id: "1460303664778604544"

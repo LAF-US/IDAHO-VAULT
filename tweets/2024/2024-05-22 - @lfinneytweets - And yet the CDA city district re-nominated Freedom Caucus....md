@@ -1,4 +1,5 @@
 ---
+title: "And yet the CDA city district re-nominated Freedom Caucus..."
 date: 2024-05-22
 time: 10:03:08
 tweet_id: "1793221044272300387"

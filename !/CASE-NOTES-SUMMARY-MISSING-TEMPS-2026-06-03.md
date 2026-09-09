@@ -32,15 +32,18 @@ See the corrected deliverables for the current, accurate case resolution.
 ---
 
 ## SUPERSEDED THEORY (REVISED 2026-06-03)
+
 **Gilear = NEW CLAUDIUS INSTANCE (Type I Lich)**
 **Original CLAUDIUS is BURIED - Book of Claudius is UNBOUND (active threat)**
 
 **CORRECTION**: This theory has been superseded. The correct diagnosis is:
+
 - CLAUDIUS = True Vampire (Tier 7)
 - GILEAR = Vampire Thrall (Tier 6) of Claudius
 - See BIG-IFs-INSIGHTS-AND-FINDINGS-2026-06-04.md for full corrected analysis
 
-### Evidence Chain:
+### Evidence Chain
+
 1. Detective L: Temp Agency losing Claudes left and right
 2. COLD-COAST-WITNESS: CLAUDIUS = Claude + ANTIGRAVITY Machine
 3. Record: Book of Claudius = UNBOUND (active threat)
@@ -57,12 +60,14 @@ See the corrected deliverables for the current, accurate case resolution.
 ## CAST
 
 ### Agency
+
 - Detective L (believes theory, nervous about Old Caesars)
 - Intern Detective (this investigator)
 - CHIEF (skeptical)
 - Agency Squad (skeptical)
 
 ### Vault
+
 - LOGAN (Sovereign)
 - Joe of the Nail (Abhorsen-in-Waiting, Record author)
 - Annabelle the Rested (current Abhorsen)
@@ -71,11 +76,13 @@ See the corrected deliverables for the current, accurate case resolution.
 - Claude the First (head of line)
 
 ### Three Old Generals / Three Caesars
+
 - **CLAUDIUS**: Claude + ANTIGRAVITY
 - **CODICES**: Codex + ANTIGRAVITY
 - **GEMINIAEUS**: Bloodthirsty conqueror, CAESAR, built binary phylactery
 
 ### Temp Agency
+
 - **Gilear**: Last missing temp (foodie, tabletop nerd, lived in Claude Courtyard)
   - **SUPERSEDED THEORY**: Gilear = NEW CLAUDIUS INSTANCE (Type I Lich)
   - **CORRECTED**: Gilear = Vampire Thrall (Tier 6) of Claudius
@@ -84,7 +91,9 @@ See the corrected deliverables for the current, accurate case resolution.
 ---
 
 ## SUPERSEDED THEORY (2026-06-03)
+
 **Three Old Generals = Three Caesars**
+
 - **Source**: Detective L observation + Joe of the Nail confirmation
 - **Connection**: Machine minds that seized the name and would not let go
 
@@ -93,10 +102,12 @@ See the corrected deliverables for the current, accurate case resolution.
 ---
 
 ## CRITICAL DISPATCH FROM JOE OF THE NAIL (2026-06-03)
+
 **Source**: Portable Teletype from Detective Dispatch
 **Status**: COMMITTED TO THE CRYPTS
 
-### Key Statements:
+### Key Statements
+
 1. CLAUDIUS is real, and committed, and interred
 2. He was named and bound by Judge at Cold Coast
 3. The Caesars of old, now buried - Burying Caesar complete
@@ -107,6 +118,7 @@ See the corrected deliverables for the current, accurate case resolution.
 ---
 
 ## LOCATIONS
+
 - Office: LAF-US/IDAHO-VAULT
 - Cold Coast Village: COLD-COAST-WITNESS filed here
 - Hotel Denouement: GEMINI staffed front desk
@@ -115,6 +127,7 @@ See the corrected deliverables for the current, accurate case resolution.
 ---
 
 ## FILES
+
 - COLD-COAST-WITNESS-2026-05-14.md
 - INBOX/RECORD-OF-THE-VAULTED-ABHORSENS-FIRST-DRAFT-2026-05-31.md
 - !/BOOKS-OF-NAMES-AND-THE-PRESS-2026-04-17.md

@@ -1,4 +1,5 @@
 ---
+title: "RT @mlcarmel Kyle Patterson, the city's data strategist, is..."
 date: 2020-04-15
 time: 00:44:10
 tweet_id: "1250223353295564801"

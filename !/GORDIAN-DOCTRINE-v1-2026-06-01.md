@@ -23,6 +23,7 @@ tags:
   - cut-vs-linchpin
   - standing
   - thunder
+
 ---
 
 # Gordian Doctrine v1
@@ -62,7 +63,7 @@ The knot stayed tied for centuries.
 The ancient sources do not agree on *how* Alexander undid the knot.
 
 | Source | Method recorded |
-|---|---|
+| --- | --- |
 | Popular tradition (preserved widely; **Quintus Curtius Rufus**) | He **cut** the knot through with a single stroke of his sword. |
 | **Aristobulus** (a historian-soldier who accompanied Alexander; his original text is lost but his account survives via **Plutarch** and **Arrian**) | He **pulled the linchpin** from the pole to which the yoke was fastened, exposing the two ends of the cord, and untied it without cutting. |
 
@@ -191,6 +192,10 @@ This doctrine therefore concludes: **the Gordian options are not available witho
 
 ---
 
-###### "The world is quiet here. Esto Perpetua!"
-
 *— Gordian Doctrine v1, filed 2026-06-01 by `!socrates.claude.novice` under LOGAN's standing-act.*
+
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

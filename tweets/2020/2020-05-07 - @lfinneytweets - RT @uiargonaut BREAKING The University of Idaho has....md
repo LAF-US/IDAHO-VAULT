@@ -1,4 +1,5 @@
 ---
+title: "RT @uiargonaut BREAKING The University of Idaho has..."
 date: 2020-05-07
 time: 03:09:49
 tweet_id: "1258232540617293824"

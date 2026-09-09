@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Instead of #idleg reception,..."
 date: 2021-01-11
 time: 16:06:39
 tweet_id: "1348662617162788865"

@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Rep. Priscilla Giddings, R-White Bird, has..."
 date: 2021-11-15
 time: 18:25:00
 tweet_id: "1460312896630493188"

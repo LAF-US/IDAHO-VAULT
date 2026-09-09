@@ -1,4 +1,5 @@
 ---
+title: "Senate approves Criminal Justice Integrated Data System..."
 date: 2020-03-17
 time: 22:46:59
 tweet_id: "1240047005033852929"
@@ -17,7 +18,7 @@ related:
   - idleg
 ---
 
-Senate approves Criminal Justice Integrated Data System 26-2-7. 
+Senate approves Criminal Justice Integrated Data System 26-2-7.
 
 That’s all my attention span can take in a row without more caffeine. Plenty more to consider today, including minimum marriage age, birth certificates, and ballot initiatives. #idleg
 

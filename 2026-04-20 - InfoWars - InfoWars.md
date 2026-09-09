@@ -5,7 +5,7 @@ author:
 published: 2026-04-20
 created: 2026-04-20
 ---
-![](https://theonion.info/wp-content/uploads/2026/04/IW_Flags_Announcement_IHA_GR_16x9.jpg)
+![alt text needed](https://theonion.info/wp-content/uploads/2026/04/IW_Flags_Announcement_IHA_GR_16x9.jpg)
 
 Let me tell you a story. When I was a child, I suffered from night terrors. It was always the same dream: I could hear my family and neighbors wailing in the street outside as they were pursued and then destroyed by a nameless malevolent force, something neither I nor anyone else could control, a great darkness that was, somehow, all my fault.
 

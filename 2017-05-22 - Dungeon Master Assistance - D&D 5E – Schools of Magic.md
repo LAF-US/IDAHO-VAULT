@@ -7,7 +7,7 @@ created: 2026-04-17
 ---
 27 Votes
 
-![](https://olddungeonmaster.com/wp-content/uploads/2017/05/schools-of-magic.jpg)
+![alt text needed](https://olddungeonmaster.com/wp-content/uploads/2017/05/schools-of-magic.jpg)
 
 ## Schools of Magic
 

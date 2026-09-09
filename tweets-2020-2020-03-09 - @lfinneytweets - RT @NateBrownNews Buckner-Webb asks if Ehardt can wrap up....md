@@ -15,7 +15,7 @@ related:
   - lfinneytweets
 ---
 
-RT @NateBrownNews: Buckner-Webb asks if Ehardt can wrap up so people signed up can testify. 
+RT @NateBrownNews: Buckner-Webb asks if Ehardt can wrap up so people signed up can testify.
 
 Lodge: There are 12 pages of people still sig…
 

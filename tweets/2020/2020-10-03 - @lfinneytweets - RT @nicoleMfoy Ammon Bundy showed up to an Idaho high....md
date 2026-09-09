@@ -1,4 +1,5 @@
 ---
+title: "RT @nicoleMfoy Ammon Bundy showed up to an Idaho high..."
 date: 2020-10-03
 time: 15:55:36
 tweet_id: "1312421048785137664"
@@ -18,7 +19,7 @@ related:
   - idpol
 ---
 
-RT @nicoleMfoy: Ammon Bundy showed up to an Idaho high school football game. Here's what happened next. #idpol 
+RT @nicoleMfoy: Ammon Bundy showed up to an Idaho high school football game. Here's what happened next. #idpol
 
 “Our parents have been fol…
 

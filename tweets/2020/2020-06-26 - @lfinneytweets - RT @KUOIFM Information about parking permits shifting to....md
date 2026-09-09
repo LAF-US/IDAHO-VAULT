@@ -1,4 +1,5 @@
 ---
+title: "RT @KUOIFM Information about parking permits shifting to..."
 date: 2020-06-26
 time: 17:06:47
 tweet_id: "1276562563451326464"

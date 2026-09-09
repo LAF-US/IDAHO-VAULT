@@ -1,4 +1,5 @@
 ---
+title: "RT @Noahpinion You read about the Trail of Tears, the..."
 date: 2018-06-13
 time: 05:08:19
 tweet_id: "1006765186127196161"

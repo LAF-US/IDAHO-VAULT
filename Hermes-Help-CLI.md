@@ -1,5 +1,6 @@
-#  hermes --help
+# hermes --help
 
+```console
 logan@Logans-MBP ~ % hermes -h
 usage: hermes [-h] [--version] [-z PROMPT] [-m MODEL] [--provider PROVIDER] [-t TOOLSETS]
               [--resume SESSION] [--continue [SESSION_NAME]] [--worktree] [--accept-hooks]
@@ -124,4 +125,5 @@ Examples:
 
 For more help on a command:
     hermes <command> --help
-logan@Logans-MBP ~ % 
+logan@Logans-MBP ~ %
+```

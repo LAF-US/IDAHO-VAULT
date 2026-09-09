@@ -29,7 +29,7 @@ related:
 - word
 authority: LOGAN
 ---
-## _State legislative candidate says he avoided serving sentence out of principle_ 
+## _State legislative candidate says he avoided serving sentence out of principle_
 
 For 10 years, Hari Heath was a fugitive from the law and on the run.
 
