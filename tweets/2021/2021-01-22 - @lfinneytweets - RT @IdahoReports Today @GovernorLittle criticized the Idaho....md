@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Today @GovernorLittle criticized the Idaho..."
 date: 2021-01-22
 time: 20:09:22
 tweet_id: "1352709964800815104"

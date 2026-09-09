@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio .@idfg staff on July 26 trapped the first..."
 date: 2023-07-29
 time: 19:07:12
 tweet_id: "1685366381733429249"

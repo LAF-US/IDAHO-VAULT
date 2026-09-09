@@ -1,4 +1,5 @@
 ---
+title: "RT @CynthiaSewell Idaho @SenatorRisch I know evidence when..."
 date: 2019-09-29
 time: 04:39:02
 tweet_id: "1178167275003641857"

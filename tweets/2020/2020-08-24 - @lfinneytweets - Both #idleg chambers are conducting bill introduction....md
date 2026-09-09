@@ -1,4 +1,5 @@
 ---
+title: "Both #idleg chambers are conducting bill introduction..."
 date: 2020-08-24
 time: 16:53:20
 tweet_id: "1297940062869393409"

@@ -32,7 +32,7 @@ Area voters will have to sign off first, however.
 
 The public safety building in Wallace, which also contains the Shoshone County jail, was built in the early 1970s and has been showing increasing symptoms of wear and tear in recent years, according to Sheriff Mike Gunderson. Crowded jail cells and pods may also cause the jail to lose certification from the state’s sheriffs association.
 
-“The building is just deteriorating and falling apart,” said Gunderson on Thursday. 
+“The building is just deteriorating and falling apart,” said Gunderson on Thursday.
 
 Notable issues with the building have included exposed wires, heating challenges, and leaking pipes in the structure’s basement. In one instance, human waste leaked from a pipe near a patrol vehicle, said the sheriff.
 
@@ -46,11 +46,11 @@ The facility was originally designed to house 4 to 6 female inmates, but typical
 
 “I think it’s cramped. Obviously, you’re overpopulating pods,” the sheriff said. “Overpopulation creates turmoil. And turmoil creates fights and in turn you have employee safety issues in those pods with overpopulation.”
 
-While the jail is currently certified by the Idaho Sheriff’s Association, Gunderson said the agency recently notified his office that continued overcrowding could force SCSO’s certification to be pulled. 
+While the jail is currently certified by the Idaho Sheriff’s Association, Gunderson said the agency recently notified his office that continued overcrowding could force SCSO’s certification to be pulled.
 
 “Our insurance rates go up, and our insurance coverage goes down,” said Gunderson of potentially losing certification. “So it’s really a hit to the taxpayers.”
 
-Overcrowding could also lead to the sheriff’s office paying to transport and house inmates in the Nez Perce County jail, Gunderson said. 
+Overcrowding could also lead to the sheriff’s office paying to transport and house inmates in the Nez Perce County jail, Gunderson said.
 
 “It’s just a large fee that our taxpayers can’t afford to do,” he said.
 
@@ -60,6 +60,6 @@ To alleviate the problem, the county is proposing a $22 million bond on the Nove
 
 With the additional cells, Gunderson said that the county would then be able to accept state contracts and house Idaho Department of Corrections inmates. According to Gunderson, IDOC has already expressed interest in paying the sheriff’s office to house at least 30 convicted prisoners at the proposed facility, which would result in over $800,000 of additional revenue to the county. That money would then be put back towards the bond, Gunderson said.
 
-With a supermajority of roughly 67% of votes needed to pass, Gunderson remained hopeful that Silver Valley voters would respond to the bond request. The sheriff indicated that the county’s habit of continuing to kick the can could have expensive implications down the road. 
+With a supermajority of roughly 67% of votes needed to pass, Gunderson remained hopeful that Silver Valley voters would respond to the bond request. The sheriff indicated that the county’s habit of continuing to kick the can could have expensive implications down the road.
 
 “The band-aid fix mentality is not working anymore,” he said.

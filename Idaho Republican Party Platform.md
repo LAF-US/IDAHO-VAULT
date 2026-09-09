@@ -5,4 +5,4 @@ related:
 - party platform
 authority: LOGAN
 ---
-party platform of the Idaho Republican Party 
+party platform of the Idaho Republican Party

@@ -40,6 +40,7 @@ Please acknowledge receipt, state what you can actually see, and confirm what ad
 ## ROLE CONTEXT
 
 Per `AGENTS.md` and `GEMINI.md`, Gemini is positioned as **"The Vault Advisor"**:
+
 - advisory / narrative lens
 - political context and strategic framing
 - no direct code touch
@@ -77,6 +78,7 @@ Recommended minimum briefing set:
 ## WHAT GEMINI IS BEST POSITIONED TO DO NEXT
 
 Gemini is most useful for:
+
 - narrative framing
 - beat mapping
 - political context synthesis

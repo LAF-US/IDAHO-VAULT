@@ -1,4 +1,5 @@
 ---
+title: "RT @NateBrownNews The House and Senate State Affairs..."
 date: 2020-08-05
 time: 17:39:30
 tweet_id: "1291066310911303681"

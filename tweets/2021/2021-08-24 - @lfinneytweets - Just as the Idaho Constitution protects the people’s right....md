@@ -1,4 +1,5 @@
 ---
+title: "Just as the Idaho Constitution protects the people\u2019s right..."
 date: 2021-08-24
 time: 01:01:12
 tweet_id: "1429972023946608641"

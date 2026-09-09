@@ -1,4 +1,5 @@
 ---
+title: "\u201cThese [emergency] laws have been have been on the books..."
 date: 2021-01-11
 time: 22:03:04
 tweet_id: "1348752314115391489"
@@ -19,7 +20,7 @@ related:
   - idpol
 ---
 
-“These [emergency] laws have been have been on the books for decades, and they’ve never been stress tested until this last year… I think that during times of crisis is when you need the checks and balances the most.” 
+“These [emergency] laws have been have been on the books for decades, and they’ve never been stress tested until this last year… I think that during times of crisis is when you need the checks and balances the most.”
 -Speaker Bedke #idleg #idpol
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

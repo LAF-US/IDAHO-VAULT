@@ -1,4 +1,5 @@
 ---
+title: "RT @CamardaNicole #INBOX Speaker of the House, Scott Bedke..."
 date: 2021-10-05
 time: 23:23:36
 tweet_id: "1445530139664678914"

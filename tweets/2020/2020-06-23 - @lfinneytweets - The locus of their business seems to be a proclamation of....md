@@ -1,4 +1,5 @@
 ---
+title: "The locus of their business seems to be a proclamation of..."
 date: 2020-06-23
 time: 15:14:14
 tweet_id: "1275447078160719873"

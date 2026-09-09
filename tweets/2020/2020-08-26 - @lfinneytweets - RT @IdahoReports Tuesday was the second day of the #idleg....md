@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Tuesday was the second day of the #idleg..."
 date: 2020-08-26
 time: 01:59:54
 tweet_id: "1298440001990975488"

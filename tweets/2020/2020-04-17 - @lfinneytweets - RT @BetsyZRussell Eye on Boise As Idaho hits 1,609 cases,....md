@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise As Idaho hits 1,609 cases,..."
 date: 2020-04-17
 time: 00:44:21
 tweet_id: "1250948177064148992"

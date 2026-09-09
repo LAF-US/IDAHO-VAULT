@@ -6,5 +6,5 @@ related:
 - Senate member
 authority: LOGAN
 ---
-- Senate member for LD4 
-- Senate Education vice chair 
+- Senate member for LD4
+- Senate Education vice chair

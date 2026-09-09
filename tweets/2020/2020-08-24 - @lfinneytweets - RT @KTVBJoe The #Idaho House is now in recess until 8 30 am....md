@@ -1,4 +1,5 @@
 ---
+title: "RT @KTVBJoe The #Idaho House is now in recess until 8 30 am..."
 date: 2020-08-24
 time: 20:34:28
 tweet_id: "1297995715205926912"

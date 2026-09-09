@@ -7,6 +7,10 @@ authority: "[[LOGAN]]"
 
 # REPO SLIMMING PROTOCOL
 
+> **Marginalia — 2026-07-24:** `audit_repo_payloads.py` has been **deleted** — an unwired, untested
+> one-shot slimming auditor riddled with dated hardcoded exceptions. The commands below that invoke it
+> no longer run. See PR #854.
+
 The root GitHub repo is the swarm control plane and canonical text/code layer.
 It is not a permanent trash bin for old media, binaries, or tool payloads.
 

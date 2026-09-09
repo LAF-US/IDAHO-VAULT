@@ -1,4 +1,5 @@
 ---
+title: "RT @LewistonTribune Here are the covers of Thursday's..."
 date: 2021-02-04
 time: 21:20:02
 tweet_id: "1357438789396832256"

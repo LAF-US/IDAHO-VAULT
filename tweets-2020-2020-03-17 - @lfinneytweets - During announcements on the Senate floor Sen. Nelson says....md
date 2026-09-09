@@ -20,7 +20,7 @@ related:
   - idpol
 ---
 
-During announcements on the Senate floor Sen. Nelson says he will be leaving for the session, intending to follow the @CDCgov guideline not to meet in groups of 10 or more. #idleg #idpol 
+During announcements on the Senate floor Sen. Nelson says he will be leaving for the session, intending to follow the @CDCgov guideline not to meet in groups of 10 or more. #idleg #idpol
 He cites the Senate’s duty to lead by example and an outbreak's stress on rural healthcare.
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1239980987838169095)

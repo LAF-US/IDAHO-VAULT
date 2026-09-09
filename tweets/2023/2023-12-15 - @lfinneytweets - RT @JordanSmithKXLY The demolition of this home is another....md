@@ -1,4 +1,5 @@
 ---
+title: "RT @JordanSmithKXLY The demolition of this home is another..."
 date: 2023-12-15
 time: 15:22:23
 tweet_id: "1735681717221171444"

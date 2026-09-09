@@ -1,4 +1,5 @@
 ---
+title: "Speaker Bedke takes the podium to deliver the @IdahoGOP..."
 date: 2020-01-06
 time: 21:43:02
 tweet_id: "1214301373057003520"

@@ -1,4 +1,5 @@
 ---
+title: ".@GovernorLittle begins by condemning the event at the U.S...."
 date: 2021-01-11
 time: 20:02:22
 tweet_id: "1348721938521227265"
@@ -22,7 +23,7 @@ related:
   - idleg
 ---
 
-@IdahoPTV .@GovernorLittle begins by condemning the event at the U.S. Capitol last week. 
+@IdahoPTV .@GovernorLittle begins by condemning the event at the U.S. Capitol last week.
 “The riots tarnished the shining values America stands for. This is not who we are. Hostility and violence are not an expression of your rights; they are a violation of everyone else’s.” #idpol #idleg
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*

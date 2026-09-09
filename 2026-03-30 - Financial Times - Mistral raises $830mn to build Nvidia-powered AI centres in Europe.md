@@ -7,7 +7,7 @@ created: 2026-04-17
 ---
 French company’s debut debt financing follows rising demand for alternatives to US groups
 
-![](https://images.ft.com/v3/image/raw/ftcms%3Ace10e8dc-2787-4a51-aac7-78031cb7c1f8?source=next-article&fit=scale-down&quality=highest&width=700&dpr=1)
+![alt text needed](https://images.ft.com/v3/image/raw/ftcms%3Ace10e8dc-2787-4a51-aac7-78031cb7c1f8?source=next-article&fit=scale-down&quality=highest&width=700&dpr=1)
 
 Mistral was valued at almost €12bn last year in a €1.7bn equity financing © Bloomberg
 
@@ -53,6 +53,6 @@ While the scale of its financing and infrastructure build-out lags far behind Si
 
 This month, Meta’s former chief AI scientist [Yann LeCun raised](https://www.ft.com/content/e5245ec3-1a58-4eff-ab58-480b6259aaf1?syn-25a6b1a6=1) more than $1bn for his new start-up, Advanced Machine Intelligence Labs, which is also based in Paris.
 
-![](https://images.ft.com/v3/image/raw/https%3A%2F%2Fnext-video-editor-images.s3.ap-northeast-1.amazonaws.com%2F17dc8c1f-75f5-4f73-bda5-76e3163f9b96?source=next-article&quality=low&fit=scale-down&width=700)
+![alt text needed](https://images.ft.com/v3/image/raw/https%3A%2F%2Fnext-video-editor-images.s3.ap-northeast-1.amazonaws.com%2F17dc8c1f-75f5-4f73-bda5-76e3163f9b96?source=next-article&quality=low&fit=scale-down&width=700)
 
 Nvidia's rise in the age of AI | FT Film

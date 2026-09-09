@@ -1,4 +1,5 @@
 ---
+title: "RT @NWSBoise Smoke from wildfires north of Redding, CA may..."
 date: 2021-07-01
 time: 03:08:47
 tweet_id: "1410435186135764992"

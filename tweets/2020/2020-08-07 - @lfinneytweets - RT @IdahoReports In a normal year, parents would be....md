@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports In a normal year, parents would be..."
 date: 2020-08-07
 time: 22:42:07
 tweet_id: "1291867245153406976"

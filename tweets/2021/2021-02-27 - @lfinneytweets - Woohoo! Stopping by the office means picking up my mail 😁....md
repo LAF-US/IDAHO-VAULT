@@ -1,4 +1,5 @@
 ---
+title: "Woohoo! Stopping by the office means picking up my mail \ud83d\ude01..."
 date: 2021-02-27
 time: 21:22:56
 tweet_id: "1365774440156463106"
@@ -16,9 +17,10 @@ related:
 ---
 
 Woohoo! Stopping by the office means picking up my mail 😁
-Thanks @jjsaldana https://t.co/ooxoGQu1r7
+Thanks @jjsaldana <https://t.co/ooxoGQu1r7>
 
 ## Media
-- ![](https://pbs.twimg.com/media/EvQ0nWdVgAAotmB.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/EvQ0nWdVgAAotmB.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1365774440156463106)

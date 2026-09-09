@@ -1,4 +1,5 @@
 ---
+title: "Bedke has qualms with the third rung of the career ladder...."
 date: 2020-01-06
 time: 21:47:25
 tweet_id: "1214302475525603329"

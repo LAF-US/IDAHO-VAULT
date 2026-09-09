@@ -4,4 +4,4 @@ related:
 - Middleton
 authority: LOGAN
 ---
-Middleton, Canyon County 
+Middleton, Canyon County

@@ -1,4 +1,5 @@
 ---
+title: "Those Idaho code references @IdSBOE wants to suspend are..."
 date: 2020-04-06
 time: 22:29:17
 tweet_id: "1247290307856621570"

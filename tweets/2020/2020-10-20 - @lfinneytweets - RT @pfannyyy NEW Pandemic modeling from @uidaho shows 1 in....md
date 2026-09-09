@@ -1,4 +1,5 @@
 ---
+title: "RT @pfannyyy NEW Pandemic modeling from @uidaho shows 1 in..."
 date: 2020-10-20
 time: 21:17:16
 tweet_id: "1318662591418310656"

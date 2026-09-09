@@ -1,4 +1,5 @@
 ---
+title: "In August, @GovernorLittle made $30 million available for..."
 date: 2021-10-12
 time: 22:08:42
 tweet_id: "1448048006452834307"
@@ -23,11 +24,12 @@ related:
   - idahoCOVID19
 ---
 
-In August, @GovernorLittle made $30 million available for coronavirus testing in K-12 schools. I wonder if a similar option would be beneficial for the state's universities. #idleg #idpol #idahoCOVID19 
-https://t.co/0HKsz0MITm
+In August, @GovernorLittle made $30 million available for coronavirus testing in K-12 schools. I wonder if a similar option would be beneficial for the state's universities. #idleg #idpol #idahoCOVID19
+<https://t.co/0HKsz0MITm>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2021/08/12/little-urges-vaccinations-as-delta-threatens-normal-school-year-for-idaho-kids/
+
+- <https://blog.idahoreports.idahoptv.org/2021/08/12/little-urges-vaccinations-as-delta-threatens-normal-school-year-for-idaho-kids/>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

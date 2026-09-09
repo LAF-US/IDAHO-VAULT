@@ -1,4 +1,5 @@
 ---
+title: "RT @madisonhardy05 The House passed Rep. Barbara Ehardt\u2019s..."
 date: 2020-03-18
 time: 17:12:44
 tweet_id: "1240325277399437312"

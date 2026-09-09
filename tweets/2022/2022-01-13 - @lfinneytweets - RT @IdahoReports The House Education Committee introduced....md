@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports The House Education Committee introduced..."
 date: 2022-01-13
 time: 21:28:53
 tweet_id: "1481740054632415233"

@@ -1,4 +1,5 @@
 ---
+title: "RT @MtnStatesPolicy #idpol #idleg #waleg"
 date: 2023-02-03
 time: 18:40:09
 tweet_id: "1621579307578691585"
@@ -22,14 +23,14 @@ related:
   - waleg
 ---
 
-RT @MtnStatesPolicy: https://t.co/e8MoL2xNWb
-
-#idpol #idleg #waleg https://t.co/K5qcVQnUox
+RT @MtnStatesPolicy: <https://t.co/e8MoL2xNWb> #idpol #idleg #waleg <https://t.co/K5qcVQnUox>
 
 ## Links
-- https://www.mountainstatespolicy.org/post/which-state-esa-proposal-is-best
+
+- <https://www.mountainstatespolicy.org/post/which-state-esa-proposal-is-best>
 
 ## Media
-- ![](https://pbs.twimg.com/media/FoAMgZuacAA3x-5.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/FoAMgZuacAA3x-5.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1621579307578691585)

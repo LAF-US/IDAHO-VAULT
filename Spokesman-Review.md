@@ -6,4 +6,4 @@ related:
 - Washington
 authority: LOGAN
 ---
-Spokane, Washington newspaper - owned by Cowles Company 
+Spokane, Washington newspaper - owned by Cowles Company

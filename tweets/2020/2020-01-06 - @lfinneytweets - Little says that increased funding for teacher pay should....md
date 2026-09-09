@@ -1,4 +1,5 @@
 ---
+title: "Little says that increased funding for teacher pay should..."
 date: 2020-01-06
 time: 21:17:47
 tweet_id: "1214295016455061504"

@@ -1,4 +1,5 @@
 ---
+title: "Souza The bill doesn\u2019t mandate all the details of the..."
 date: 2020-03-17
 time: 00:05:43
 tweet_id: "1239704430259220481"

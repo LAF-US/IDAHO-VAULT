@@ -1,4 +1,5 @@
 ---
+title: "By early I apparently mean Thursday."
 date: 2021-09-30
 time: 18:53:59
 tweet_id: "1443650347478618123"
@@ -14,10 +15,11 @@ related:
   - lfinneytweets
 ---
 
-@KelcieMMorris @davlinnews By "early" I apparently mean Thursday.  https://t.co/OZoCFxbf6I
+@KelcieMMorris @davlinnews By "early" I apparently mean Thursday.  <https://t.co/OZoCFxbf6I>
 
 ## Links
-- https://x.com/lfinneytweets/status/1443648108768858128
+
+- <https://x.com/lfinneytweets/status/1443648108768858128>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

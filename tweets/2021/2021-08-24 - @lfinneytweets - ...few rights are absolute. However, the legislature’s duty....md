@@ -1,4 +1,5 @@
 ---
+title: "...few rights are absolute. However, the legislature\u2019s duty..."
 date: 2021-08-24
 time: 01:01:08
 tweet_id: "1429972005701386243"

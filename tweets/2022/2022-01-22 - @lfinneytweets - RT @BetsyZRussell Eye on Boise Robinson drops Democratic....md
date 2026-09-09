@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Robinson drops Democratic..."
 date: 2022-01-22
 time: 00:14:03
 tweet_id: "1484680725945151488"

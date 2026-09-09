@@ -1,4 +1,5 @@
 ---
+title: "RT @NateBrownNews @HDruzin One thing I've often found..."
 date: 2021-01-25
 time: 15:10:53
 tweet_id: "1353722014763077635"

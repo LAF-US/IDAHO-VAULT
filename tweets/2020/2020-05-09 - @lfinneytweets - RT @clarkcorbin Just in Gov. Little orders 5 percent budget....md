@@ -1,4 +1,5 @@
 ---
+title: "RT @clarkcorbin Just in Gov. Little orders 5 percent budget..."
 date: 2020-05-09
 time: 00:20:23
 tweet_id: "1258914680057151489"

@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise After 18 public hearings,..."
 date: 2021-10-13
 time: 23:58:42
 tweet_id: "1448438073537171463"

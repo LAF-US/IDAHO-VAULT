@@ -7,6 +7,7 @@ superseded_by: ".crewai/MANIFEST.md"
 ---
 
 # NETWEB-CrewAI Alignment Protocol
+
 ## *Historical Ignition Sequence*
 
 > [!IMPORTANT]
@@ -30,7 +31,7 @@ superseded_by: ".crewai/MANIFEST.md"
 ### What Exists
 
 | Component | Status | Location |
-|---|---|---|
+| --- | --- | --- |
 | CrewAI 1.12.2 | **Installed** | `.venv/` |
 | Python 3.13.3 + venv | Active | `.venv/` |
 | GCP Nest Bridge (Flask stub) | Phase III | `main.py`, `requirements.txt` |
@@ -51,7 +52,7 @@ superseded_by: ".crewai/MANIFEST.md"
 
 ### The TRIUNE Mapping
 
-```
+```text
 TRIUNE COVENANT          CrewAI EQUIVALENT
 ─────────────────────    ──────────────────
 Logan (directs)      →   Human-in-the-Loop / Kickoff inputs
@@ -62,6 +63,7 @@ Vault (witnesses)    →   Output → Obsidian .md files (the permanent record)
 ### LINUX }!{ — The Execution Principle
 
 Linux is the connective tissue. Every automated process runs on Linux:
+
 - GitHub Actions CI = Ubuntu runners
 - GCP Cloud Run = Linux containers
 - CrewAI Enterprise = Linux servers
@@ -75,7 +77,7 @@ All tooling targets Linux-native execution: bash, POSIX paths, `#!/usr/bin/env p
 ### The Swarm Registry Mapping
 
 | Vault Agent | CrewAI Role | Crew Assignment |
-|---|---|---|
+| --- | --- | --- |
 | The Abhorsen (Claude Code) | Bootstrap / Executor | Infrastructure Crew |
 | The Concierge (Gemini) | Analyst / Advisor | Research Crew |
 | The Librarian (Codex) | Indexer / Cataloger | Research Crew |
@@ -92,7 +94,7 @@ All tooling targets Linux-native execution: bash, POSIX paths, `#!/usr/bin/env p
 Scorched-earth wipe of Obsidian-specific syntax. Executed 2026-04-04.
 
 | Target | Action | Scale |
-|---|---|---|
+| --- | --- | --- |
 | `tags:` frontmatter | Removed | 2,735 files |
 | `aliases:` frontmatter | Removed | 830 files |
 | `[[ ]]` wikilinks | Stripped (kept display text) | ~19,750 instances |
@@ -108,11 +110,13 @@ Building on the clean slate.
 ---
 
 ## 4. JFAC Crew — MAP 3:5 ; ATT to 5Ws
+
 to clarify: ATT = CrewAI's "Agent-Tool-Task" -L
+
 ### Three Agents → Five Tasks
 
 | Agent | 5W | Task |
-|---|---|---|
+| --- | --- | --- |
 | Budget Scout | **WHO** | Identify agencies, sponsors, committees for each bill |
 | Budget Scout | **WHAT** | Analyze what each bill proposes (appropriations, scope) |
 | Legislative Tracker | **WHEN** | Build timeline of bill progression through chambers |
@@ -121,7 +125,7 @@ to clarify: ATT = CrewAI's "Agent-Tool-Task" -L
 
 ### Crew Flow
 
-```
+```text
 Budget Scout → Legislative Tracker → H911 Parser → !/CREWAI/ output
    (WHO/WHAT)      (WHEN/WHERE)         (WHY)        (.md files)
 ```
@@ -129,7 +133,7 @@ Budget Scout → Legislative Tracker → H911 Parser → !/CREWAI/ output
 ### Tools
 
 | Tool | Wraps | Function |
-|---|---|---|
+| --- | --- | --- |
 | `minidata_reader` | `normalize_budget_data.py` | Read/filter minidata CSV |
 | `appropriations_timeline` | `minidata_appropriations_timeline.py` | Build status timeline from snapshots |
 | `bill_status_checker` | `idaho_leg_scraper.py` | Live bill status from legislature.idaho.gov |
@@ -141,7 +145,7 @@ Budget Scout → Legislative Tracker → H911 Parser → !/CREWAI/ output
 
 The 19,533 empty stubs are a **content-addressable memory system**:
 
-```
+```text
 NUMBERS (0-999)    = Crew state memory (neurons)
 LETTERS (A-ZZZ)    = Entity nodes (discovered by Crawler Crew)
 TOGETHER           = Machine-maintained knowledge graph
@@ -152,7 +156,7 @@ TOGETHER           = Machine-maintained knowledge graph
 **Number neurons (100-109):**
 
 | Neuron | Assignment |
-|---|---|
+| --- | --- |
 | 100 | JFAC Crew — Run Index |
 | 101 | Budget Scout — State |
 | 102 | Legislative Tracker — State |
@@ -169,6 +173,7 @@ TOGETHER           = Machine-maintained knowledge graph
 ### Voyager Records
 
 Stubs 7929 and 7930 are GIF files (not .md). They contain:
+
 - **7929.gif** — An inverted triangle. The simplest geometric message.
 - **7930.gif** — A Sierpinski triangle. Recursive self-similarity. The pattern at every scale.
 
@@ -181,7 +186,7 @@ These are the vault's Voyager Records — permanent, intentional, waiting to be 
 All five gates open. Decided by Logan, 2026-04-04.
 
 | # | Question | Decision | Rationale |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | 1 | Local-first or Enterprise-first? | **Local-first (OSS)** | `pip install crewai` in .venv, Linux-native |
 | 2 | Output staging directory? | **`!/CREWAI/`** | Under the `!` administrative layer |
 | 3 | H 911 scope? | **Both, phased** | Minidata CSV first, then bill text parsing |
@@ -193,18 +198,22 @@ All five gates open. Decided by Logan, 2026-04-04.
 ## 7. Guardrails
 
 ### NETWEB Compliance
+
 All CrewAI output files must respect the Portable Path Standard:
+
 - No reserved device names
 - Case-unique filenames
 - Paths under 218 characters
 - No trailing periods or illegal characters
 
 ### Vault Authority
+
 - CrewAI agents are **instruments** (per TRIUNE). They cannot modify governance files.
 - Output goes to staging (`!/CREWAI/`), not directly to the corpus.
 - Logan reviews and integrates. The `-L` layer is the final gate.
 
 ### Data Residency
+
 - The vault is **public**. All CrewAI outputs are **on the record** and **publishable**.
 - No API keys, credentials, or private data in crew outputs.
 - CrewAI Enterprise data residency — acceptable for now, revisit at Phase 3.
@@ -214,7 +223,7 @@ All CrewAI output files must respect the Portable Path Standard:
 ## 8. Future Crews
 
 | Crew | Purpose | Status |
-|---|---|---|
+| --- | --- | --- |
 | **JFAC Crew** | Budget/appropriations analysis pipeline | Active |
 | **Crawler Crew** | Post-CHAINFIRE vault mapping and connection discovery | Planned |
 | **[TBD — Logan's casting call]** | Additional crews per Logan's direction | Awaiting |

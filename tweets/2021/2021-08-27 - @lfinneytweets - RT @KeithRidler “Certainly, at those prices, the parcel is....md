@@ -1,4 +1,5 @@
 ---
+title: "RT @KeithRidler \u201cCertainly, at those prices, the parcel is..."
 date: 2021-08-27
 time: 22:45:48
 tweet_id: "1431387500048642053"

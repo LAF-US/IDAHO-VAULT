@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise As cases, health care worker..."
 date: 2020-06-10
 time: 15:07:52
 tweet_id: "1270734434271031296"

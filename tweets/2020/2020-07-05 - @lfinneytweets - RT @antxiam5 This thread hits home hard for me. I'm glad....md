@@ -1,4 +1,5 @@
 ---
+title: "RT @antxiam5 This thread hits home hard for me. I'm glad..."
 date: 2020-07-05
 time: 23:09:10
 tweet_id: "1279915252092551169"

@@ -1,4 +1,5 @@
 ---
+title: "RT @EastIDNews Rep. Barbara Ehardt is part of the Take Back..."
 date: 2024-06-13
 time: 06:05:41
 tweet_id: "1801133823834603617"
