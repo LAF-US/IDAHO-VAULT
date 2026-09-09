@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoCapitalSun As of Nov. 18, there are 393 registered..."
 date: 2022-11-22
 time: 18:35:39
 tweet_id: "1595123861795704833"

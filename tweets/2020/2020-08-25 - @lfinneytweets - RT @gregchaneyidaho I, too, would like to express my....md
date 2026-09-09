@@ -1,4 +1,5 @@
 ---
+title: "RT @gregchaneyidaho I, too, would like to express my..."
 date: 2020-08-25
 time: 03:07:18
 tweet_id: "1298094572451446784"

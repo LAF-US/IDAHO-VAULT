@@ -98,6 +98,7 @@ stretching the span between sunrise (Virgo on the horizon) and Scorpio reaching 
 ---
 
 ## See also
+
 [[Logan Finney]] · [[DRIVE-REGISTRY]] (the Double Scorpio drive) · [[WITNESS-PENDING-NOT-DONE-2026-06-21]] (sibling witness)
 
 *Provenance key: `[GIVEN]` = Logan firsthand · `[EVIDENCE]` = public record/verifiable ·

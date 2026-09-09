@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Attorney General Merrick Garland announced..."
 date: 2022-08-02
 time: 19:52:11
 tweet_id: "1554555684108111873"

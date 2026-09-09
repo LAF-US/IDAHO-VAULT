@@ -1,4 +1,5 @@
 ---
+title: "RT @NWSBoise If you felt a 'bump' around 810 pm MDT, it was..."
 date: 2020-08-08
 time: 02:35:46
 tweet_id: "1291926044639813634"

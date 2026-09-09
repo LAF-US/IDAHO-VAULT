@@ -1,4 +1,5 @@
 ---
+title: "RT @Poynter \u201cWe\u2019re ultimately doing this because we want to..."
 date: 2020-12-17
 time: 18:30:15
 tweet_id: "1339639060348821504"

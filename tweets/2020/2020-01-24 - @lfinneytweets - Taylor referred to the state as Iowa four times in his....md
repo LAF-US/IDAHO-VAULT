@@ -1,4 +1,5 @@
 ---
+title: "Taylor referred to the state as Iowa four times in his..."
 date: 2020-01-24
 time: 01:06:58
 tweet_id: "1220513286371758081"
@@ -16,9 +17,10 @@ related:
   - idpol
 ---
 
-Taylor referred to the state as "Iowa" four times in his presentation. #idpol https://t.co/wcbPAxbWvy
+Taylor referred to the state as "Iowa" four times in his presentation. #idpol <https://t.co/wcbPAxbWvy>
 
 ## Links
-- https://x.com/KeithRidler/status/1220492688702599169
+
+- <https://x.com/KeithRidler/status/1220492688702599169>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1220513286371758081)

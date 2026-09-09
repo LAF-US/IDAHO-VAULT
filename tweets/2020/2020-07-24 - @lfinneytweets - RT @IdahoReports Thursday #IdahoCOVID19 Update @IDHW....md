@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Thursday #IdahoCOVID19 Update @IDHW..."
 date: 2020-07-24
 time: 00:16:43
 tweet_id: "1286455234579988480"

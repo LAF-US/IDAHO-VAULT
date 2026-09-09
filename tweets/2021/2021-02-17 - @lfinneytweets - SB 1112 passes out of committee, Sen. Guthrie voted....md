@@ -1,4 +1,5 @@
 ---
+title: "SB 1112 passes out of committee, Sen. Guthrie voted..."
 date: 2021-02-17
 time: 15:55:21
 tweet_id: "1362068125617778688"

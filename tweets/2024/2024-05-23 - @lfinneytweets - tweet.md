@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2024-05-23
 time: 04:00:37
 tweet_id: "1793492205421899954"
@@ -16,10 +17,11 @@ related:
   - lfinneytweets
 ---
 
-@currevive https://t.co/CoKGsSfVXM
+@currevive <https://t.co/CoKGsSfVXM>
 
 ## Links
-- https://x.com/lfinneytweets/status/1793428477099843676?t=pOuogu3pgZFGE9xvHkzlIA
+
+- <https://x.com/lfinneytweets/status/1793428477099843676?t=pOuogu3pgZFGE9xvHkzlIA>
 
 *In reply to [@currevive](https://twitter.com/currevive)*
 

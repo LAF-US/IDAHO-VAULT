@@ -5,4 +5,4 @@ related:
 - Rathdrum
 authority: LOGAN
 ---
-Rathdrum, Kootenai County 
+Rathdrum, Kootenai County

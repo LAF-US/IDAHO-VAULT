@@ -4,4 +4,4 @@ related:
 - Latah County
 authority: LOGAN
 ---
-Genesee, Latah County 
+Genesee, Latah County

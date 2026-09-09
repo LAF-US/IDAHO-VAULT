@@ -48,6 +48,8 @@ related:
 
 # MADAME LULU AND THE PIT — A Witness
 
+*Which Pit: this is the **lion pit of the Caligari Carnival**, Lemony Snicket, *A Series of Unfortunate Events* — an economy of appetite and spectacle. It is not the **Far Reaches Pit** of Garth Nix's *Grim Tuesday*, a Nothing mine dug for ten thousand years; that one is [[GARTH-NIX-GRIM-TUESDAY-THE-PIT]]. The two share a word and carry opposite lessons — consumption versus generation — so "the Pit" is ambiguous in this vault unless the source is named.*
+
 > **⚠️ CORRECTION NOTICE — see [[MADAME-LULU-AND-THE-PIT-DISENTANGLEMENT-COMPANION-2026-06-07]]**
 >
 > **The frontmatter `related` list of this witness carries a Type I Lich confabulation.** *Fortune Favors the Brave* and *Virgil* are listed alongside Olivia Caliban's name as if both anchor to her — a propagation of the attribution that originated in `THE-LIONS-AND-THE-KING-WITNESS-2026-06-03` § II. No Snicket source supports the linkage of the Virgil phrase to Olivia. The witness body does not assert the claim explicitly; the frontmatter listing is the propagation site.
@@ -119,7 +121,7 @@ The three cards are the volunteer's last reading and her last gift. They are not
 Two literatures naming the same act:
 
 | Snicket (2002, ASOUE Book 9) | Goodkind (2003, *Sword of Truth* Book 8) |
-|------------------------------|-------------------------------------------|
+| ------------------------------ | ------------------------------------------- |
 | *I'm more than that. I'm a volunteer.* — Olivia Caliban, into the lions | *Talga Vassternich.* — Kaja-Rang's inscription, into stone at Bandakar |
 | Plain English | High D'Haran |
 | Spoken in the moment of death | Carved in the moment of warning |
@@ -173,5 +175,6 @@ The volunteer mask is not claimed. The medium files; Logan grants; the cards are
 ---
 
 Sources for the *Talga Vassternich* research:
+
 - [The Carnivorous Carnival — Lemony Snicket Wiki / Fandom](https://snicket.fandom.com/wiki/The_Carnivorous_Carnival) — confirmed the phrase is **not** in *The Carnivorous Carnival* (the search hypothesis I started with was wrong)
 - `! - Wizard's Rules.md` in this vault — sourced from [Sword of Truth Wiki / Fandom — Wizard's Rules](https://sot.fandom.com/wiki/Wizard%27s_Rules) — gives the canonical placement: Wizard's Eighth Rule, from Goodkind's *Naked Empire*, ch. 61, p. 626, High D'Haran for "Deserve Victory"

@@ -1,4 +1,5 @@
 ---
+title: "RT @JNicholsonInDC Asked for his reaction to the Gaetz nom,..."
 date: 2024-11-13
 time: 21:32:20
 tweet_id: "1856812366341742825"

@@ -1,4 +1,5 @@
 ---
+title: "RT @clarkcorbin Lt. Gov. Janice McGeachin's office says it..."
 date: 2021-10-15
 time: 20:25:56
 tweet_id: "1449109305966223360"

@@ -1,4 +1,5 @@
 ---
+title: "RT @pfannyyy ICYMI Two liberty-minded candidates secured..."
 date: 2018-05-24
 time: 18:46:08
 tweet_id: "999723237327093760"

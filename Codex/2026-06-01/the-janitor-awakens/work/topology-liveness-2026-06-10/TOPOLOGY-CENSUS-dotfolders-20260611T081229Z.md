@@ -14,7 +14,7 @@ authority: github-actions
 ## Summary
 
 | Measure | Count |
-|---|---:|
+| --- | ---: |
 | entry count | 326 |
 | registered surface count | 16 |
 | historical recovery count | 6 |
@@ -23,7 +23,7 @@ authority: github-actions
 ### authority state counts
 
 | Value | Count |
-|---|---:|
+| --- | ---: |
 | `explicit_doctrine_reference` | 28 |
 | `no_discernible_authority` | 298 |
 
@@ -953,11 +953,11 @@ authority: github-actions
 - Obvious authority: canonical doctrine reference
 - Git state: tracked=yes, ignored=no
 - Structure: `2` dirs, `7` files
-- Sample children: DIR crews; DIR tools; FILE 5WIZARDS-DRAFT.md; FILE __init__.py; FILE CREWAI.md; FILE manifest.json; FILE MANIFEST.md; FILE stub.txt; ... +1 more
+- Sample children: DIR crews; DIR tools; FILE 5WIZARDS-DRAFT.md; FILE **init**.py; FILE CREWAI.md; FILE manifest.json; FILE MANIFEST.md; FILE stub.txt; ... +1 more
 - Registered discovery surface: `no`
 - Historical recovery layer: `no`
 - Tracked MEMORY: `no`
-- Surface signals: OWNER=['5WIZARDS-DRAFT.md', '__init__.py', 'CREWAI.md', 'crews', 'manifest.json', 'MANIFEST.md', 'stub.txt', 'tools', 'TRAINING.md']; SHARED=[]; ARCHIVE=[]
+- Surface signals: OWNER=['5WIZARDS-DRAFT.md', '**init**.py', 'CREWAI.md', 'crews', 'manifest.json', 'MANIFEST.md', 'stub.txt', 'tools', 'TRAINING.md']; SHARED=[]; ARCHIVE=[]
 - Local governing surface: `.crewai/MANIFEST.md`
 - Notes:
   - Dotfolder does not appear in the registered discovery or recovery surfaces.
@@ -1557,7 +1557,7 @@ authority: github-actions
 
 - Authority state: `explicit_doctrine_reference`
 - Obvious authority: canonical doctrine reference
-- Git state: tracked=yes, ignored=no, status= M .github/scripts/topology_census.py; !! .github/scripts/__pycache__/
+- Git state: tracked=yes, ignored=no, status= M .github/scripts/topology_census.py; !! .github/scripts/**pycache**/
 - Structure: `7` dirs, `10` files
 - Sample children: DIR actions; DIR codeql; DIR ISSUE_TEMPLATE; DIR probes; DIR scripts; DIR swarm; DIR workflows; FILE CODEOWNERS; ... +9 more
 - Registered discovery surface: `yes`

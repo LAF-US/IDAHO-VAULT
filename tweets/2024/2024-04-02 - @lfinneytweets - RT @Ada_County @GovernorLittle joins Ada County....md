@@ -1,4 +1,5 @@
 ---
+title: "RT @Ada_County @GovernorLittle joins Ada County..."
 date: 2024-04-02
 time: 20:55:58
 tweet_id: "1775265944509780131"

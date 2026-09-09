@@ -1,4 +1,5 @@
 ---
+title: "RT @madisonhardy05 Rep. Ehardts House Bill 500 passes House..."
 date: 2020-02-20
 time: 16:40:23
 tweet_id: "1230532662491672577"

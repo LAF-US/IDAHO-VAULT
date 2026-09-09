@@ -1,4 +1,5 @@
 ---
+title: "Dodging the question, again. Are you implying your actions..."
 date: 2022-06-27
 time: 18:31:34
 tweet_id: "1541489429117751296"

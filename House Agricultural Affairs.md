@@ -18,7 +18,9 @@ related:
 authority: LOGAN
 ---
 # Roster
+
 ## 2023 Members
+
 - Kevin Andrus Chair
 - Jerald Raymond Vice Chair
 - Judy Boyle

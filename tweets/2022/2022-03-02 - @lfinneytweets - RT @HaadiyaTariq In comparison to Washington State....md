@@ -1,4 +1,5 @@
 ---
+title: "RT @HaadiyaTariq In comparison to Washington State..."
 date: 2022-03-02
 time: 23:52:01
 tweet_id: "1499170693564358657"

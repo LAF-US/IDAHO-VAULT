@@ -1,4 +1,5 @@
 ---
+title: "RT @uiargonaut In a new plan recently approved by the Idaho..."
 date: 2021-10-24
 time: 04:09:32
 tweet_id: "1452125079748296711"

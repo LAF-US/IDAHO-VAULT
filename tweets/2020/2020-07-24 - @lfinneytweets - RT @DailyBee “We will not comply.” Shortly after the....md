@@ -1,4 +1,5 @@
 ---
+title: "RT @DailyBee \u201cWe will not comply.\u201d Shortly after the..."
 date: 2020-07-24
 time: 15:37:38
 tweet_id: "1286686987970211845"

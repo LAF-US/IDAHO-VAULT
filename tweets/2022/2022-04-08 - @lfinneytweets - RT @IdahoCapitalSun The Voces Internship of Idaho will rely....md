@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoCapitalSun The Voces Internship of Idaho will rely..."
 date: 2022-04-08
 time: 23:23:58
 tweet_id: "1512571988102897665"

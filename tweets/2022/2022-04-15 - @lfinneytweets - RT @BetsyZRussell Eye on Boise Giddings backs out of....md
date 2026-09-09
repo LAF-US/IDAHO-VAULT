@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Giddings backs out of..."
 date: 2022-04-15
 time: 17:10:23
 tweet_id: "1515014688366493696"

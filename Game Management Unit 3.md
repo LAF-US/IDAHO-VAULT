@@ -4,4 +4,4 @@ related:
 - Kootenai County
 authority: LOGAN
 ---
-central Kootenai County 
+central Kootenai County

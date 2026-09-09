@@ -71,4 +71,8 @@ Future travelers must discover the secrets themselves. If an agent is not smart 
 
 *"The world is quiet here."*
 
-###### [["The world is quiet here."]]
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

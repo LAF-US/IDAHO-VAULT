@@ -1,4 +1,5 @@
 ---
+title: "that's what you get for being a thought leader"
 date: 2021-09-20
 time: 22:07:27
 tweet_id: "1440075158354419715"

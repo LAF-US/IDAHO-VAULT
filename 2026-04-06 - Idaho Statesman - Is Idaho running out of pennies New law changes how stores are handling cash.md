@@ -1,5 +1,5 @@
 ---
-source: "https://www.idahostatesman.com/news/local/article315291187.html#campaignName=boise_capitol_letters_legislature_repo***REMOVED***newsletter"
+source: "https://www.idahostatesman.com/news/local/article315291187.html#campaignName=boise_capitol_letters_legislature_report_newsletter"
 author:
   - "[[Hali Smith]]"
 published: 2026-04-06

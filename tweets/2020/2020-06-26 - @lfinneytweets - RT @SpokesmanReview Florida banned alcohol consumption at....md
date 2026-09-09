@@ -1,4 +1,5 @@
 ---
+title: "RT @SpokesmanReview Florida banned alcohol consumption at..."
 date: 2020-06-26
 time: 22:06:29
 tweet_id: "1276637985790767104"

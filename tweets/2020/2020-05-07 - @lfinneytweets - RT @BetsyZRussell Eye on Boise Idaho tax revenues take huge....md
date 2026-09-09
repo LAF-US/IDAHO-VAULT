@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Idaho tax revenues take huge..."
 date: 2020-05-07
 time: 20:19:05
 tweet_id: "1258491566563311617"

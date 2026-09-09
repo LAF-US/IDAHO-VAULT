@@ -1,4 +1,5 @@
 ---
+title: "Former Follower of Christ (the faith healing religious..."
 date: 2020-01-17
 time: 00:20:30
 tweet_id: "1217964877307760640"

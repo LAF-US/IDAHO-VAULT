@@ -1,4 +1,5 @@
 ---
+title: "RT @adndotcom Plan to add Alaska spots to WWAMI medical..."
 date: 2022-02-22
 time: 01:20:24
 tweet_id: "1495931446107717633"

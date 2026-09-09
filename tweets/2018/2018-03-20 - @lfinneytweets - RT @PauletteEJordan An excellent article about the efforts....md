@@ -1,4 +1,5 @@
 ---
+title: "RT @PauletteEJordan An excellent article about the efforts..."
 date: 2018-03-20
 time: 03:16:14
 tweet_id: "975934011200516098"

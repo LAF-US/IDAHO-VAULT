@@ -24,10 +24,12 @@ related:
 - newspapers
 authority: LOGAN
 ---
-Kootenai County business conglomerate founded by Duane Hagadone 
+Kootenai County business conglomerate founded by Duane Hagadone
 
 ### newspapers
+
 **Idaho**
+
 - Coeur d'Alene Press
 - North Idaho Business Journal
 - Post Falls Press
@@ -41,8 +43,8 @@ Kootenai County business conglomerate founded by Duane Hagadone
 - Hungry Horse News
 - Bigfork Eagle
 - Lake County Leader & Advertiser
-- Mineral Independent 
+- Mineral Independent
 - Clark Fork Valley Press
 **Washington**
-- Columbia Basin Herald 
+- Columbia Basin Herald
 - Basin Business Journal Farm News

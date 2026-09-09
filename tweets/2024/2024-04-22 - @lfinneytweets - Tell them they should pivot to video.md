@@ -1,4 +1,5 @@
 ---
+title: "Tell them they should pivot to video"
 date: 2024-04-22
 time: 21:39:02
 tweet_id: "1782524539039301739"

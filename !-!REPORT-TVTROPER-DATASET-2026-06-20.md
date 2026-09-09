@@ -39,10 +39,10 @@ invented certainty.
 ## I. Identification
 
 | Field | Value |
-|---|---|
+| --- | --- |
 | Repo ID | `RyokoExtra/TvTroper` |
 | Type | Hugging Face **dataset** |
-| URL | https://huggingface.co/datasets/RyokoExtra/TvTroper |
+| URL | <https://huggingface.co/datasets/RyokoExtra/TvTroper> |
 | Author (uploader) | `RyokoExtra` |
 | Created | 28 Jun 2023 |
 | Last updated | 29 Jun 2023 |
@@ -94,7 +94,7 @@ The same underlying scrape exists in several forms. Confirmed to exist via
 search/Hub on 2026-06-20:
 
 | Repo | Note |
-|---|---|
+| --- | --- |
 | `RyokoExtra/TvTroper` | Raw dump (this note). ≤651,522 pages. |
 | `RyokoExtra/TvTroper-Cleaned` | A cleaned variant of the same ≤651,522-page corpus.\* |
 | `KaraKaraWitch/TvTroper-2025` | Updated snapshot, **≈708,000 pages** (namespaces / date-grouped pages excluded).\* |
@@ -299,30 +299,30 @@ Grounded where stated; flagged — by kind — where not.
 ## References
 
 1. RyokoExtra. (2023). *TvTroper* [Dataset]. Hugging Face.
-   https://huggingface.co/datasets/RyokoExtra/TvTroper
+   <https://huggingface.co/datasets/RyokoExtra/TvTroper>
 2. RyokoExtra. (2023). *TvTroper-Cleaned* [Dataset]. Hugging Face.
-   https://huggingface.co/datasets/RyokoExtra/TvTroper-Cleaned
+   <https://huggingface.co/datasets/RyokoExtra/TvTroper-Cleaned>
 3. KaraKaraWitch. (2025). *TvTroper-2025* [Dataset]. Hugging Face.
-   https://huggingface.co/datasets/KaraKaraWitch/TvTroper-2025
+   <https://huggingface.co/datasets/KaraKaraWitch/TvTroper-2025>
 4. TVTropes. *tvtropes.org* — source wiki for the scraped content.
-   https://tvtropes.org/
+   <https://tvtropes.org/>
 5. Wikipedia. *TV Tropes* — license history (CC BY-SA → CC BY-NC-SA, July 2012)
-   and relicensing controversy. https://en.wikipedia.org/wiki/TV_Tropes
+   and relicensing controversy. <https://en.wikipedia.org/wiki/TV_Tropes>
 6. SoylentNews. (2014, May 15). *TV Tropes Relicensed its Content - Without Permit.*
-   https://soylentnews.org/article.pl?sid=14/05/15/1938243
+   <https://soylentnews.org/article.pl?sid=14/05/15/1938243>
 7. Creative Commons. *Attribution-NonCommercial-ShareAlike 4.0 International
    (CC BY-NC-SA) — Legal Code.*
-   https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.en
+   <https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.en>
 8. TVTropes. *MediaNotes/ApplicationProgrammingInterface* — community page on the
    long-requested, never-shipped API.
-   https://tvtropes.org/pmwiki/pmwiki.php/MediaNotes/ApplicationProgrammingInterface
+   <https://tvtropes.org/pmwiki/pmwiki.php/MediaNotes/ApplicationProgrammingInterface>
 9. DBTropes — Linked-Data (RDF/NTriples) wrapper for TVTropes (Kiesel & Grimnes,
    DFKI), built on the Skipforward/Skipinions ontology; the closest structured
    derivative, itself a parsing-scrape. Last timestamped snapshot 2015-04-30
    (≈20M statements, ≈58k items, ≈27k feature types, ≈3.55M feature instances);
    passes the source's per-page CC license through to its triples.
-   Project: http://skipforward.opendfki.de/wiki/DBTropes — catalog entry:
-   http://linkeddatacatalog.dws.informatik.uni-mannheim.de/dataset/dbtropes
+   Project: <http://skipforward.opendfki.de/wiki/DBTropes> — catalog entry:
+   <http://linkeddatacatalog.dws.informatik.uni-mannheim.de/dataset/dbtropes>
 10. Research provenance (2026-06-21): API-absence, the no-public-dump stance, and
     the DBTropes derivative surfaced via Hugging Face MCP re-pull + web search.
     A direct fetch of TVTropes `robots.txt` returned **HTTP 403** (TVTropes'

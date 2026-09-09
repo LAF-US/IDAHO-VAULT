@@ -1,4 +1,5 @@
 ---
+title: "RT @KeithRidler Republican Sen. Jim Rice, chairman of the..."
 date: 2022-02-22
 time: 17:27:37
 tweet_id: "1496174855271555075"

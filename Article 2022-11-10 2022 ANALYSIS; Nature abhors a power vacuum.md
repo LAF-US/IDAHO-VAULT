@@ -100,6 +100,7 @@ Notable senior members no longer serving in the Senate include committee chairs 
 Senate Republicans left with highest seniority: Chuck Winder, Todd Lakey, Jim Guthrie, Lori Den Hartog, Abby Lee, Kelly Anthon, and Mark Harris.
 
 Will newly elected Republican senators — some of them former House members looking to change the moderate temperament of the chamber across the rotunda — have the political muscle to shake up the incoming majority leadership team?
+
 ## The New Legislature
 
 Whomever the caucuses elect to majority leadership will have a shorter roster of veteran lawmakers to appoint to key committee positions, and freshman lawmakers will have a smaller group of mentors to show them the ropes.

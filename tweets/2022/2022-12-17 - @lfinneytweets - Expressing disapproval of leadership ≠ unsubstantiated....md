@@ -1,4 +1,5 @@
 ---
+title: "Expressing disapproval of leadership \u2260 unsubstantiated..."
 date: 2022-12-17
 time: 20:42:28
 tweet_id: "1604215473012617216"

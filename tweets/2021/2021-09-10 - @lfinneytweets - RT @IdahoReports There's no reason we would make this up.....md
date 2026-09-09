@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports There's no reason we would make this up...."
 date: 2021-09-10
 time: 16:46:52
 tweet_id: "1436370599832522757"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoReports: "There's no reason we would make this up." 
+RT @IdahoReports: "There's no reason we would make this up."
 Hear from Idaho's health care providers as COVID-19 cases flood regional hosp…
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1436370599832522757)

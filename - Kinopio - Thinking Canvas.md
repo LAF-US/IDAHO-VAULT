@@ -38,7 +38,7 @@ Kagi
 
 Fastmail
 
-![](https://img.kinopio.club/_/rs:fit:3000:3000:0/f:webp/plain/https%3A%2F%2Fcdn.kinopio.club%2FgbOdmTYjZQ4ZTVfQXlTlO%2Fimage.jpeg)
+![alt text needed](https://img.kinopio.club/_/rs:fit:3000:3000:0/f:webp/plain/https%3A%2F%2Fcdn.kinopio.club%2FgbOdmTYjZQ4ZTVfQXlTlO%2Fimage.jpeg)
 
 Apple XDR `4 years old`
 
@@ -52,7 +52,7 @@ hardware
 
 Using a desktop computer makes you feel better and more expressive, optimize for good feel
 
-![](https://cdn.kinopio.club/GzlizaEUb4i2J2jc37TtQ/image.gif)
+![alt text needed](https://cdn.kinopio.club/GzlizaEUb4i2J2jc37TtQ/image.gif)
 
 Sublime Text and Sublime Merge
 
@@ -62,7 +62,7 @@ IA Writer
 
 Over the years I’ve slowly found my favorite things. Maybe it’s just me, but it feels good to use something for a long time and know you may never need another
 
-![](https://img.kinopio.club/_/rs:fit:3000:3000:0/f:webp/plain/https%3A%2F%2Fcdn.kinopio.club%2F2Ot2ixV1J0gjhdQ_weukM%2Fimage.png) ![](https://img.kinopio.club/_/rs:fit:3000:3000:0/f:webp/plain/https%3A%2F%2Fcdn.kinopio.club%2FHGeDsadD4PNx-6nVSAaii%2Fimage.png)
+![alt text needed](https://img.kinopio.club/_/rs:fit:3000:3000:0/f:webp/plain/https%3A%2F%2Fcdn.kinopio.club%2F2Ot2ixV1J0gjhdQ_weukM%2Fimage.png) ![alt text needed](https://img.kinopio.club/_/rs:fit:3000:3000:0/f:webp/plain/https%3A%2F%2Fcdn.kinopio.club%2FHGeDsadD4PNx-6nVSAaii%2Fimage.png)
 
 Cleanshot
 

@@ -1,4 +1,5 @@
 ---
+title: "RT @jonesblakej I\u2019m in Twin Falls where the four candidates..."
 date: 2022-04-07
 time: 19:48:58
 tweet_id: "1512155491996090370"

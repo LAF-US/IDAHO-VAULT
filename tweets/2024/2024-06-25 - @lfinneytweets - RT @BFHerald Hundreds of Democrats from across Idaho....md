@@ -1,4 +1,5 @@
 ---
+title: "RT @BFHerald Hundreds of Democrats from across Idaho..."
 date: 2024-06-25
 time: 07:17:39
 tweet_id: "1805500590187069579"

@@ -19,9 +19,9 @@ related:
 - meeting
 authority: LOGAN
 ---
-https://www.eastidahonews.com/2023/10/judge-sides-with-bingham-county-republicans-in-ongoing-legal-battle/
+<https://www.eastidahonews.com/2023/10/judge-sides-with-bingham-county-republicans-in-ongoing-legal-battle/>
 
-Mary Boyle, East Idaho News 
+Mary Boyle, East Idaho News
 
 BLACKFOOT — A 7th Court District judge has blocked the Idaho Republican Party from holding a special meeting to elect a new chair of the Bingham County Republican Central Committee. It’s the latest in the legal battle between local party leaders and the Idaho Republican Party Chairwoman Dorothy Moon and state GOP leaders.
 

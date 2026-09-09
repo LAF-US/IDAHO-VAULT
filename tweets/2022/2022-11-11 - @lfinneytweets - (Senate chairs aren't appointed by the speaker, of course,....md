@@ -1,4 +1,5 @@
 ---
+title: "(Senate chairs aren't appointed by the speaker, of course,..."
 date: 2022-11-11
 time: 04:08:16
 tweet_id: "1590919314043207680"

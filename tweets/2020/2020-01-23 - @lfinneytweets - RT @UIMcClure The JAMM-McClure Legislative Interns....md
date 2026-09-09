@@ -1,4 +1,5 @@
 ---
+title: "RT @UIMcClure The JAMM-McClure Legislative Interns..."
 date: 2020-01-23
 time: 22:52:32
 tweet_id: "1220479455950331904"

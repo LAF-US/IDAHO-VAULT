@@ -1,4 +1,5 @@
 ---
+title: "RT @joeja Idaho Democratic candidate for governor..."
 date: 2018-05-16
 time: 05:35:16
 tweet_id: "996625104976068608"

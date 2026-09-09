@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Ruth Brown sits down with House Judiciary,..."
 date: 2023-01-18
 time: 19:29:53
 tweet_id: "1615793620564742144"

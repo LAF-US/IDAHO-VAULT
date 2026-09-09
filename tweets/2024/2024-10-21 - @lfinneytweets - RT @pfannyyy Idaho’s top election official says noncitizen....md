@@ -1,4 +1,5 @@
 ---
+title: "RT @pfannyyy Idaho\u2019s top election official says noncitizen..."
 date: 2024-10-21
 time: 16:45:19
 tweet_id: "1848405213398638709"

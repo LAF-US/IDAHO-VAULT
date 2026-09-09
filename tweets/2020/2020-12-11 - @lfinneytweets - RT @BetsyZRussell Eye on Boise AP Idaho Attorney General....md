@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise AP Idaho Attorney General..."
 date: 2020-12-11
 time: 01:49:19
 tweet_id: "1337212836955578369"

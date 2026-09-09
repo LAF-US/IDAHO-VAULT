@@ -1,4 +1,5 @@
 ---
+title: "RT @Pfannyyy He previously was one of two opposers on the..."
 date: 2018-03-15
 time: 22:40:15
 tweet_id: "974415003380953088"

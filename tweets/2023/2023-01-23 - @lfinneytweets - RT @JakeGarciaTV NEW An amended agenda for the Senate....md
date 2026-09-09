@@ -1,4 +1,5 @@
 ---
+title: "RT @JakeGarciaTV NEW An amended agenda for the Senate..."
 date: 2023-01-23
 time: 18:05:04
 tweet_id: "1617584212730851334"

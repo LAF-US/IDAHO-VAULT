@@ -1,4 +1,5 @@
 ---
+title: "RT @danielwinlander Lisa Brown condemns McMorris Rodgers..."
 date: 2018-06-20
 time: 01:20:35
 tweet_id: "1009244589025255424"

@@ -1,4 +1,5 @@
 ---
+title: "Folks over on Instagram are NOT buying Bayer's pesticide..."
 date: 2025-03-12
 time: 06:07:22
 tweet_id: "1899703745157759395"
@@ -18,12 +19,13 @@ related:
   - idpol
 ---
 
-Folks over on Instagram are NOT buying Bayer's pesticide messaging. #idleg #idpol https://t.co/lFRcZW8ZlY
+Folks over on Instagram are NOT buying Bayer's pesticide messaging. #idleg #idpol <https://t.co/lFRcZW8ZlY>
 
 ## Media
-- ![](https://pbs.twimg.com/media/Gl0afHWXgAAtDXR.jpg)
-- ![](https://pbs.twimg.com/media/Gl0afBTbYAAqrOo.jpg)
-- ![](https://pbs.twimg.com/media/Gl0ae_gbwAA0PGR.jpg)
-- ![](https://pbs.twimg.com/media/Gl0afA7aMAAMleF.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/media/Gl0afHWXgAAtDXR.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/Gl0afBTbYAAqrOo.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/Gl0ae_gbwAA0PGR.jpg)
+- ![alt text needed](https://pbs.twimg.com/media/Gl0afA7aMAAMleF.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1899703745157759395)

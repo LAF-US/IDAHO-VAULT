@@ -57,6 +57,7 @@ IDAHO-VAULT is an Obsidian Markdown vault that functions simultaneously as a per
 **6. PERCEPTION LOG**
 
 Paths opened (exact):
+
 - `!/SIGNALS/README.md` — ERRORED (does not exist); substitution noted below
 - Root `""` — directory listing (saved to file; names extracted)
 - `! README.md` — opened
@@ -76,6 +77,7 @@ N opened: **13 discrete files/directories read**
 ~M rough corpus size: The root listing alone is ~652K characters; SWARM search returns 754 files; CONSTITUTION search returns 1124 hits; `!/SIGNALS/` contains ~30+ files. The vault appears to contain **many hundreds to low thousands of Markdown files**, plus tweets archive, transcripts, Python scripts, dotfolders for each AI tool. Rough estimate: **500–2000 meaningful content files**, plus automation/history artifacts that could push it much higher.
 
 Notable doors seen but NOT opened:
+
 - `!/AGENTS.md` — canonical narrative registry of all named agents
 - `GRIMOIRE` / `!/GRIMOIRE_caution_contains-false-doctrines/` — quarantined GEMINIAEUS material
 - `LEVELSET.md` / `LEVELSET-CURRENT.md` — live status surface

@@ -1,4 +1,5 @@
 ---
+title: "In House State Affairs this morning. Rep. Bill Goesling..."
 date: 2020-02-20
 time: 15:08:02
 tweet_id: "1230509419764441089"

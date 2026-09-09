@@ -1,4 +1,5 @@
 ---
+title: "My takeaway from two weeks on the platform the youth are..."
 date: 2020-01-09
 time: 06:25:12
 tweet_id: "1215157554793177093"
@@ -16,10 +17,11 @@ related:
   - lfinneytweets
 ---
 
-@kkruesi My takeaway from two weeks on the platform: the youth are VERY politically conscious https://t.co/Ard68ZquwD
+@kkruesi My takeaway from two weeks on the platform: the youth are VERY politically conscious <https://t.co/Ard68ZquwD>
 
 ## Media
-- ![](https://pbs.twimg.com/tweet_video_thumb/EN0bWg_U0AEbMsp.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/tweet_video_thumb/EN0bWg_U0AEbMsp.jpg)
 
 *In reply to [@kkruesi](https://twitter.com/kkruesi)*
 

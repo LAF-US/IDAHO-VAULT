@@ -1,4 +1,5 @@
 ---
+title: "But yeah, observing 400 deaths seems like it would take a..."
 date: 2020-07-17
 time: 16:54:25
 tweet_id: "1284169599303290881"

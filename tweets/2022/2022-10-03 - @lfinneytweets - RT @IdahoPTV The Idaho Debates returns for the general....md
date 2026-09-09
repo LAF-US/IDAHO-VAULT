@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPTV The Idaho Debates returns for the general..."
 date: 2022-10-03
 time: 18:36:36
 tweet_id: "1577004710279593984"
