@@ -1,0 +1,23 @@
+{
+  "d03aa0ad-4039-47df-8baf-38b46a85efc0": {
+    "requestId": "d03aa0ad-4039-47df-8baf-38b46a85efc0",
+    "nodeId": "45280bd682ac5c7a692c38e69ae48508db75607394f88f6465a250888c6cf348",
+    "displayName": "Windows-ZBFURY",
+    "platform": "windows",
+    "version": "2026.5.16-beta.3",
+    "deviceFamily": "Windows",
+    "caps": [
+      "system",
+      "browser",
+      "file"
+    ],
+    "commands": [
+      "system.run.prepare",
+      "system.run",
+      "system.which",
+      "browser.proxy"
+    ],
+    "silent": false,
+    "ts": 1778993664355
+  }
+}

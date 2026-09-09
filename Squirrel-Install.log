@@ -1,0 +1,105 @@
+﻿[17/12/24 09:15:37] info: Program: Starting Squirrel Updater: --install .
+[17/12/24 09:15:37] info: Program: Starting install, writing to C:\Users\loganf\AppData\Local\SquirrelTemp
+[17/12/24 09:15:37] info: Program: About to install to: C:\Users\loganf\AppData\Local\GitHubDesktop
+[17/12/24 09:15:37] info: CheckForUpdateImpl: Reading RELEASES file from C:\Users\loganf\AppData\Local\SquirrelTemp
+[17/12/24 09:15:37] info: CheckForUpdateImpl: First run, starting from scratch
+[17/12/24 09:15:38] info: ApplyReleasesImpl: Writing files to app directory: C:\Users\loganf\AppData\Local\GitHubDesktop\app-3.4.12
+[17/12/24 09:15:39] info: LogHost: Rigging execution stub for GitHubDesktop_ExecutionStub.exe to C:\Users\loganf\AppData\Local\GitHubDesktop\GitHubDesktop.exe
+[17/12/24 09:15:44] info: ApplyReleasesImpl: Squirrel Enabled Apps: [C:\Users\loganf\AppData\Local\GitHubDesktop\app-3.4.12\GitHubDesktop.exe]
+[17/12/24 09:16:01] info: ApplyReleasesImpl: Starting fixPinnedExecutables
+[17/12/24 09:16:01] info: ApplyReleasesImpl: Fixing up tray icons
+[17/12/24 09:16:01] info: ApplyReleasesImpl: cleanDeadVersions: checking for version 3.4.12
+[17/12/24 09:16:01] info: ApplyReleasesImpl: cleanDeadVersions: exclude new version folder app-3.4.12
+[17/12/24 09:16:01] info: Program: Finished Squirrel Updater
+[29/11/25 20:41:28] info: Program: Starting Squirrel Updater: --install .
+[29/11/25 20:41:28] info: Program: Starting install, writing to C:\Users\loganf\AppData\Local\SquirrelTemp
+[29/11/25 20:41:28] info: Program: About to install to: C:\Users\loganf\AppData\Local\horse
+[29/11/25 20:41:28] info: CheckForUpdateImpl: Reading RELEASES file from C:\Users\loganf\AppData\Local\SquirrelTemp
+[29/11/25 20:41:28] info: CheckForUpdateImpl: First run, starting from scratch
+[29/11/25 20:41:29] info: ApplyReleasesImpl: Writing files to app directory: C:\Users\loganf\AppData\Local\horse\app-0.74.1
+[29/11/25 20:41:33] info: LogHost: Rigging execution stub for Horse_ExecutionStub.exe to C:\Users\loganf\AppData\Local\horse\Horse.exe
+[29/11/25 20:41:36] info: ApplyReleasesImpl: Squirrel Enabled Apps: [C:\Users\loganf\AppData\Local\horse\app-0.74.1\Horse.exe]
+[29/11/25 20:41:46] info: ApplyReleasesImpl: Starting fixPinnedExecutables
+[29/11/25 20:41:46] info: ApplyReleasesImpl: Fixing up tray icons
+[29/11/25 20:41:46] info: ApplyReleasesImpl: cleanDeadVersions: checking for version 0.74.1
+[29/11/25 20:41:46] info: ApplyReleasesImpl: cleanDeadVersions: exclude new version folder app-0.74.1
+[29/11/25 20:41:48] info: Program: Finished Squirrel Updater
+[02/04/26 19:42:44] info: Program: Starting Squirrel Updater: --install . --silent
+[02/04/26 19:42:44] info: Program: Starting install, writing to C:\Users\loganf\AppData\Local\SquirrelTemp
+[02/04/26 19:42:44] info: Program: About to install to: C:\Users\loganf\AppData\Local\AnthropicClaude
+[02/04/26 19:42:44] info: CheckForUpdateImpl: Reading RELEASES file from C:\Users\loganf\AppData\Local\SquirrelTemp
+[02/04/26 19:42:44] info: CheckForUpdateImpl: First run, starting from scratch
+[02/04/26 19:42:45] info: ApplyReleasesImpl: Writing files to app directory: C:\Users\loganf\AppData\Local\AnthropicClaude\app-1.1.9669
+[02/04/26 19:42:47] info: LogHost: Rigging execution stub for claude_ExecutionStub.exe to C:\Users\loganf\AppData\Local\AnthropicClaude\claude.exe
+[02/04/26 19:42:50] info: ApplyReleasesImpl: Squirrel Enabled Apps: [C:\Users\loganf\AppData\Local\AnthropicClaude\app-1.1.9669\claude.exe]
+[02/04/26 19:42:56] info: ApplyReleasesImpl: Starting fixPinnedExecutables
+[02/04/26 19:42:57] info: ApplyReleasesImpl: Fixing up tray icons
+[02/04/26 19:42:57] info: ApplyReleasesImpl: cleanDeadVersions: checking for version 1.1.9669
+[02/04/26 19:42:57] info: ApplyReleasesImpl: cleanDeadVersions: exclude new version folder app-1.1.9669
+[02/04/26 19:42:57] info: Program: Finished Squirrel Updater
+[02/04/26 19:46:42] info: Program: Starting Squirrel Updater: --install . --silent
+[02/04/26 19:46:42] info: Program: Starting install, writing to C:\Users\loganf\AppData\Local\SquirrelTemp
+[02/04/26 19:46:42] info: Program: About to install to: C:\Users\loganf\AppData\Local\AnthropicClaude
+[02/04/26 19:46:42] warn: Program: Install path C:\Users\loganf\AppData\Local\AnthropicClaude already exists, burning it to the ground
+[02/04/26 19:46:45] info: CheckForUpdateImpl: Reading RELEASES file from C:\Users\loganf\AppData\Local\SquirrelTemp
+[02/04/26 19:46:45] info: CheckForUpdateImpl: First run, starting from scratch
+[02/04/26 19:46:46] info: ApplyReleasesImpl: Writing files to app directory: C:\Users\loganf\AppData\Local\AnthropicClaude\app-1.1.9669
+[02/04/26 19:46:48] info: LogHost: Rigging execution stub for claude_ExecutionStub.exe to C:\Users\loganf\AppData\Local\AnthropicClaude\claude.exe
+[02/04/26 19:46:51] info: ApplyReleasesImpl: Squirrel Enabled Apps: [C:\Users\loganf\AppData\Local\AnthropicClaude\app-1.1.9669\claude.exe]
+[02/04/26 19:46:54] info: ApplyReleasesImpl: Starting fixPinnedExecutables
+[02/04/26 19:46:54] info: ApplyReleasesImpl: Fixing up tray icons
+[02/04/26 19:46:54] info: ApplyReleasesImpl: cleanDeadVersions: checking for version 1.1.9669
+[02/04/26 19:46:54] info: ApplyReleasesImpl: cleanDeadVersions: exclude new version folder app-1.1.9669
+[02/04/26 19:46:55] info: Program: Finished Squirrel Updater
+[03/04/26 03:28:21] info: Program: Starting Squirrel Updater: --install .
+[03/04/26 03:28:21] info: Program: Starting install, writing to C:\Users\loganf\AppData\Local\SquirrelTemp
+[03/04/26 03:28:21] info: Program: About to install to: C:\Users\loganf\AppData\Local\horse
+[03/04/26 03:28:21] info: CheckForUpdateImpl: Reading RELEASES file from C:\Users\loganf\AppData\Local\SquirrelTemp
+[03/04/26 03:28:21] info: CheckForUpdateImpl: First run, starting from scratch
+[03/04/26 03:28:22] info: ApplyReleasesImpl: Writing files to app directory: C:\Users\loganf\AppData\Local\horse\app-0.75.2
+[03/04/26 03:28:24] info: LogHost: Rigging execution stub for Horse_ExecutionStub.exe to C:\Users\loganf\AppData\Local\horse\Horse.exe
+[03/04/26 03:28:27] info: ApplyReleasesImpl: Squirrel Enabled Apps: [C:\Users\loganf\AppData\Local\horse\app-0.75.2\Horse.exe]
+[03/04/26 03:28:30] info: ApplyReleasesImpl: Starting fixPinnedExecutables
+[03/04/26 03:28:30] info: ApplyReleasesImpl: Fixing up tray icons
+[03/04/26 03:28:30] info: ApplyReleasesImpl: cleanDeadVersions: checking for version 0.75.2
+[03/04/26 03:28:30] info: ApplyReleasesImpl: cleanDeadVersions: exclude new version folder app-0.75.2
+[03/04/26 03:28:31] info: Program: Finished Squirrel Updater
+[27/06/26 14:53:00] info: Program: Starting Squirrel Updater: --install . --silent
+[27/06/26 14:53:00] info: Program: Starting install, writing to C:\Users\loganf\AppData\Local\SquirrelTemp
+[27/06/26 14:53:00] info: Program: About to install to: C:\Users\loganf\AppData\Local\AnthropicClaude
+[27/06/26 14:53:00] info: CheckForUpdateImpl: Reading RELEASES file from C:\Users\loganf\AppData\Local\SquirrelTemp
+[27/06/26 14:53:01] info: CheckForUpdateImpl: First run, starting from scratch
+[27/06/26 14:53:01] info: ApplyReleasesImpl: Writing files to app directory: C:\Users\loganf\AppData\Local\AnthropicClaude\app-1.15962.1
+[27/06/26 14:53:03] info: LogHost: Rigging execution stub for claude_ExecutionStub.exe to C:\Users\loganf\AppData\Local\AnthropicClaude\claude.exe
+[27/06/26 14:53:08] info: ApplyReleasesImpl: Squirrel Enabled Apps: [C:\Users\loganf\AppData\Local\AnthropicClaude\app-1.15962.1\claude.exe]
+[27/06/26 14:53:15] info: ApplyReleasesImpl: Starting fixPinnedExecutables
+[27/06/26 14:53:15] info: ApplyReleasesImpl: Fixing up tray icons
+[27/06/26 14:53:15] info: ApplyReleasesImpl: cleanDeadVersions: checking for version 1.15962.1
+[27/06/26 14:53:15] info: ApplyReleasesImpl: cleanDeadVersions: exclude new version folder app-1.15962.1
+[27/06/26 14:53:16] info: Program: Finished Squirrel Updater
+[27/07/26 10:53:14] info: Program: Starting Squirrel Updater: --install . --silent
+[27/07/26 10:53:14] info: Program: Starting install, writing to C:\Users\loganf\AppData\Local\SquirrelTemp
+[27/07/26 10:53:14] info: Program: About to install to: C:\Users\loganf\AppData\Local\AnthropicClaude
+[27/07/26 10:53:15] info: CheckForUpdateImpl: Reading RELEASES file from C:\Users\loganf\AppData\Local\SquirrelTemp
+[27/07/26 10:53:15] info: CheckForUpdateImpl: First run, starting from scratch
+[27/07/26 10:53:15] info: ApplyReleasesImpl: Writing files to app directory: C:\Users\loganf\AppData\Local\AnthropicClaude\app-1.24012.1
+[27/07/26 10:53:22] info: LogHost: Rigging execution stub for claude_ExecutionStub.exe to C:\Users\loganf\AppData\Local\AnthropicClaude\claude.exe
+[27/07/26 10:53:51] info: ApplyReleasesImpl: Squirrel Enabled Apps: [C:\Users\loganf\AppData\Local\AnthropicClaude\app-1.24012.1\claude.exe]
+[27/07/26 10:54:10] error: ApplyReleasesImpl: Couldn't run Squirrel hook, continuing: C:\Users\loganf\AppData\Local\AnthropicClaude\app-1.24012.1\claude.exe: System.OperationCanceledException: The operation was canceled.
+   at System.Threading.CancellationToken.ThrowOperationCanceledException()
+   at Squirrel.Utility.<>c__DisplayClass11_0.<InvokeProcessAsync>b__0()
+   at System.Threading.Tasks.Task.Execute()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.Utility.<InvokeProcessAsync>d__11.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Squirrel.UpdateManager.ApplyReleasesImpl.<>c__DisplayClass10_0.<<invokePostInstall>b__0>d.MoveNext()
+[27/07/26 10:54:10] info: ApplyReleasesImpl: Starting fixPinnedExecutables
+[27/07/26 10:54:11] info: ApplyReleasesImpl: Fixing up tray icons
+[27/07/26 10:54:11] info: ApplyReleasesImpl: cleanDeadVersions: checking for version 1.24012.1
+[27/07/26 10:54:11] info: ApplyReleasesImpl: cleanDeadVersions: exclude new version folder app-1.24012.1
+[27/07/26 10:54:15] info: Program: Finished Squirrel Updater

@@ -1,0 +1,21 @@
+#!/usr/bin/env sh
+# .githooks/pre-commit — block secrets from entering a commit. Fails CLOSED.
+#
+# Detection engine: gitleaks (third-party, per-machine dependency).
+# Trust model: the engine must be present AND must catch a planted secret
+# (proven via positive control) before it is believed. Absence BLOCKS —
+# a silently-skipped secret gate is worse than no gate at all.
+set -eu
+
+if ! command -v gitleaks >/dev/null 2>&1; then
+  printf >&2 '%s\n' 'pre-commit: gitleaks not on PATH — install it (scoop/brew/apt) before committing.'
+  printf >&2 '%s\n' '            a secret gate fails closed; commit blocked.'
+  exit 1
+fi
+
+# Scan only what is staged. gitleaks exits non-zero when it finds secrets.
+if ! gitleaks git --staged --redact --no-banner; then
+  printf >&2 '%s\n' 'pre-commit: secrets detected in staged changes — commit blocked.'
+  printf >&2 '%s\n' '            remove them, or annotate a false positive with a gitleaks:allow comment.'
+  exit 1
+fi

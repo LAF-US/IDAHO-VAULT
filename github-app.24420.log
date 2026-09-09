@@ -1,0 +1,26 @@
+2026-06-24T02:02:59.576342Z  INFO github_app: GitHub Copilot app started pid=24420 version=1.0.5 log_file=/Users/logan/.copilot/logs/github-app.24420.log
+2026-06-24T02:02:59.576451Z  INFO github_app: raised file descriptor soft limit previous=256 current=61440
+2026-06-24T02:02:59.576669Z  INFO github_app::database: opening database db_path="/Users/logan/.copilot/data.db"
+2026-06-24T02:02:59.587305Z DEBUG github_app::telemetry: Runtime telemetry service initialized
+2026-06-24T02:02:59.588445Z  INFO github_app: Skipping git credential trampoline broker (bundled_git experiment off)
+2026-06-24T02:03:00.008275Z  INFO github_app::shell_env: spawning shell to probe environment shell=/bin/zsh name=zsh
+2026-06-24T02:03:10.020923Z  WARN github_app::shell_env: shell env probe failed error=shell env probe timed out
+2026-06-24T02:03:10.021341Z  INFO github_app: Resolved app skills directory path=/Users/logan/Library/Application Support/com.github.githubapp/app-skills
+2026-06-24T02:03:10.029827Z  INFO github_app::platform::impeccable: Finalized bundled impeccable skill node_available=false skill_dir=/Users/logan/Library/Application Support/com.github.githubapp/app-skills/impeccable
+2026-06-24T02:03:10.029952Z  INFO github_app: Resolved terminal integration directory path=/Applications/GitHub Copilot.app/Contents/Resources/terminal-integration
+2026-06-24T02:03:10.030008Z  INFO github_app: Resolved Foundry native library directory path=/Applications/GitHub Copilot.app/Contents/Frameworks
+2026-06-24T02:03:10.030104Z  INFO github_app: Discovered bundled Copilot SDK directory (will be passed to the CLI as extensionSdkPath once the SDK exposes that option; until then the CLI uses its built-in SDK) path=/Applications/GitHub Copilot.app/Contents/Resources/copilot-sdk
+2026-06-24T02:03:10.030589Z  INFO github_app::git: resolved git env binary=git embedded_git_in_use=false path=/usr/bin:/bin:/usr/sbin:/sbin
+2026-06-24T02:03:10.030648Z DEBUG github_app::git: trampoline env not attached to git_command; using system git's own credential helpers global_present=false sidecar_present=false
+2026-06-24T02:03:10.030654Z  INFO github_app::notification_macos: macOS notification delegate registered
+2026-06-24T02:03:10.034500Z  WARN task_spawn{task="warm_canvas_catalog_user"}: github_app::session::manager::canvas_catalog: user canvas catalog probe failed error=GitHub authentication required
+2026-06-24T02:03:10.065978Z  INFO github_app::websocket: WebSocket server listening on ws://127.0.0.1:52346
+2026-06-24T02:03:10.075559Z  INFO github_app::websocket: wrote run file value=52346 path=/Users/logan/.copilot/run/ws.port
+2026-06-24T02:03:10.075589Z  INFO github_app::scheduler: Scheduler starting for workflows and session automations...
+2026-06-24T02:03:10.076762Z  INFO github_app::websocket: wrote WebSocket auth token path=/Users/logan/.copilot/run/ws.token
+2026-06-24T02:03:10.076800Z DEBUG github_app::platform::keep_awake: Keep-awake manager initialised
+2026-06-24T02:03:10.137327Z  INFO github_app::git: Detected git version at startup version=git version 2.37.1 (Apple Git-137.1) binary=git embedded_git_in_use=false bundled_version="2.53.0-3"
+2026-06-24T02:03:10.289765Z ERROR github_app::notification_macos: Notification authorization error error=Notifications are not allowed for this application
+2026-06-24T02:03:10.289800Z  INFO github_app::notification_macos: Notification authorization result granted=false
+2026-06-24T02:03:10.712591Z  INFO github_app::platform::health: Detected Copilot CLI version at startup version=Copilot binary version: 1.0.64-1 source=Some(Bundled) path="/Users/logan/Library/Caches/github-copilot-sdk/cli/1.0.64-1/copilot" bundled_version="1.0.64-1"
+2026-06-24T04:03:16.125239Z  WARN github_app: Dropping queued telemetry events because authentication is still unavailable at shutdown queued_events=1

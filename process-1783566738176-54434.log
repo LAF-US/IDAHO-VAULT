@@ -1,0 +1,94 @@
+2026-07-09T03:12:18.192Z [INFO] Shell completions: no supported shell detected, skipping
+2026-07-09T03:12:18.193Z [INFO] Starting CLI in server mode (stdio)
+2026-07-09T03:12:18.195Z [INFO] Starting CLI in stdio mode (Rust JSON-RPC engine)
+2026-07-09T03:12:18.220Z [INFO] CLI server ready (stdio mode, Rust JSON-RPC engine)
+2026-07-09T03:12:18.220Z [INFO] Server started, waiting for requests
+2026-07-09T03:12:19.211Z [INFO] Workspace initialized: 1ad3a4a9-747e-452b-8a39-486e406e7ceb (checkpoints: 0)
+2026-07-09T03:12:19.341Z [INFO] Created session: 1ad3a4a9-747e-452b-8a39-486e406e7ceb
+2026-07-09T03:12:21.564Z [INFO]  
+2026-07-09T03:12:21.564Z [INFO] --- Start of group: configured settings: ---
+2026-07-09T03:12:21.565Z [INFO] --- End of group ---
+2026-07-09T03:12:22.346Z [INFO]  
+2026-07-09T03:12:22.346Z [INFO] --- Start of group: configured settings: ---
+2026-07-09T03:12:22.349Z [INFO] --- End of group ---
+2026-07-09T03:12:22.413Z [INFO] --- Start of group: Completion request configuration:  ---
+2026-07-09T03:12:22.414Z [INFO] --- End of group ---
+2026-07-09T03:12:22.563Z [INFO] CompactionProcessor: Utilization 40.5% (80905/200000 tokens) below threshold 80%
+2026-07-09T03:12:23.100Z [INFO] --- Start of group: Sending request to the AI model ---
+2026-07-09T03:12:23.557Z [ERROR] error (Request-ID EE16:CDA55:3DFD873:43D3B55:6A4F1195)
+2026-07-09T03:12:23.559Z [ERROR] {
+  "status": 402,
+  "headers": {},
+  "error": {
+    "error": {
+      "message": "You have exceeded your monthly quota",
+      "code": "quota_exceeded"
+    }
+  },
+  "requestID": "00000-073e31e3-b309-4ff4-bb3b-43f6fb433588",
+  "request_id": "00000-073e31e3-b309-4ff4-bb3b-43f6fb433588",
+  "ghRequestId": "EE16:CDA55:3DFD873:43D3B55:6A4F1195",
+  "serviceRequestId": "78efdfd5-d36e-478f-9083-b3619df166dd",
+  "name": "CAPIError",
+  "cause": {
+    "status": 402,
+    "headers": {},
+    "error": {
+      "error": {
+        "message": "You have exceeded your monthly quota",
+        "code": "quota_exceeded"
+      }
+    },
+    "requestID": null,
+    "type": null,
+    "name": "Error",
+    "message": "402 {\"error\":{\"message\":\"You have exceeded your monthly quota\",\"code\":\"quota_exceeded\"}}",
+    "stack": "Error: 402 {\"error\":{\"message\":\"You have exceeded your monthly quota\",\"code\":\"quota_exceeded\"}}\n    at t.generate (file:///Applications/GitHub%20Desktop.app/Contents/Resources/app/copilot/app.js:374:32951)\n    at Object.K3 [as createApiError] (file:///Applications/GitHub%20Desktop.app/Contents/Resources/app/copilot/app.js:374:33431)\n    at T_t (file:///Applications/GitHub%20Desktop.app/Contents/Resources/app/copilot/app.js:375:4856)\n    at b_ (file:///Applications/GitHub%20Desktop.app/Contents/Resources/app/copilot/app.js:375:856)\n    at async Hme.dispatchRequest (file:///Applications/GitHub%20Desktop.app/Contents/Resources/app/copilot/app.js:377:8064)\n    at async Hme.makeAnthropicRequest (file:///Applications/GitHub%20Desktop.app/Contents/Resources/app/copilot/app.js:377:38858)\n    at async Hme.makeRequest (file:///Applications/GitHub%20Desktop.app/Contents/Resources/app/copilot/app.js:377:37858)\n    at async Se (file:///Applications/GitHub%20Desktop.app/Contents/Resources/app/copilot/app.js:377:14927)\n    at async file:///Applications/GitHub%20Desktop.app/Contents/Resources/app/copilot/app.js:377:27154"
+  },
+  "message": "402 {\"error\":{\"message\":\"You have exceeded your monthly quota\",\"code\":\"quota_exceeded\"}}",
+  "stack": "CAPIError: 402 {\"error\":{\"message\":\"You have exceeded your monthly quota\",\"code\":\"quota_exceeded\"}}\n    at t.fromAPIError (file:///Applications/GitHub%20Desktop.app/Contents/Resources/app/copilot/app.js:377:1324)\n    at Se (file:///Applications/GitHub%20Desktop.app/Contents/Resources/app/copilot/app.js:377:16590)\n    at async file:///Applications/GitHub%20Desktop.app/Contents/Resources/app/copilot/app.js:377:27154"
+}
+2026-07-09T03:12:23.560Z [ERROR] Retry after is not set. Giving up.
+2026-07-09T03:12:23.560Z [ERROR] error
+2026-07-09T03:12:23.561Z [ERROR] {
+  "status": 402,
+  "headers": {},
+  "error": {
+    "error": {
+      "message": "You have exceeded your monthly quota",
+      "code": "quota_exceeded"
+    }
+  },
+  "requestID": "00000-073e31e3-b309-4ff4-bb3b-43f6fb433588",
+  "request_id": "00000-073e31e3-b309-4ff4-bb3b-43f6fb433588",
+  "ghRequestId": "EE16:CDA55:3DFD873:43D3B55:6A4F1195",
+  "serviceRequestId": "78efdfd5-d36e-478f-9083-b3619df166dd",
+  "name": "CAPIError",
+  "cause": {
+    "status": 402,
+    "headers": {},
+    "error": {
+      "error": {
+        "message": "You have exceeded your monthly quota",
+        "code": "quota_exceeded"
+      }
+    },
+    "requestID": null,
+    "type": null,
+    "name": "Error",
+    "message": "402 {\"error\":{\"message\":\"You have exceeded your monthly quota\",\"code\":\"quota_exceeded\"}}",
+    "stack": "Error: 402 {\"error\":{\"message\":\"You have exceeded your monthly quota\",\"code\":\"quota_exceeded\"}}\n    at t.generate (file:///Applications/GitHub%20Desktop.app/Contents/Resources/app/copilot/app.js:374:32951)\n    at Object.K3 [as createApiError] (file:///Applications/GitHub%20Desktop.app/Contents/Resources/app/copilot/app.js:374:33431)\n    at T_t (file:///Applications/GitHub%20Desktop.app/Contents/Resources/app/copilot/app.js:375:4856)\n    at b_ (file:///Applications/GitHub%20Desktop.app/Contents/Resources/app/copilot/app.js:375:856)\n    at async Hme.dispatchRequest (file:///Applications/GitHub%20Desktop.app/Contents/Resources/app/copilot/app.js:377:8064)\n    at async Hme.makeAnthropicRequest (file:///Applications/GitHub%20Desktop.app/Contents/Resources/app/copilot/app.js:377:38858)\n    at async Hme.makeRequest (file:///Applications/GitHub%20Desktop.app/Contents/Resources/app/copilot/app.js:377:37858)\n    at async Se (file:///Applications/GitHub%20Desktop.app/Contents/Resources/app/copilot/app.js:377:14927)\n    at async file:///Applications/GitHub%20Desktop.app/Contents/Resources/app/copilot/app.js:377:27154"
+  },
+  "message": "402 {\"error\":{\"message\":\"You have exceeded your monthly quota\",\"code\":\"quota_exceeded\"}}",
+  "stack": "CAPIError: 402 {\"error\":{\"message\":\"You have exceeded your monthly quota\",\"code\":\"quota_exceeded\"}}\n    at t.fromAPIError (file:///Applications/GitHub%20Desktop.app/Contents/Resources/app/copilot/app.js:377:1324)\n    at Se (file:///Applications/GitHub%20Desktop.app/Contents/Resources/app/copilot/app.js:377:16590)\n    at async file:///Applications/GitHub%20Desktop.app/Contents/Resources/app/copilot/app.js:377:27154"
+}
+2026-07-09T03:12:23.561Z [INFO] --- End of group ---
+2026-07-09T03:12:23.565Z [ERROR] Payment required error: CAPIError: 402 {"error":{"message":"You have exceeded your monthly quota","code":"quota_exceeded"}}
+2026-07-09T03:12:24.655Z [INFO] Closing session 1ad3a4a9-747e-452b-8a39-486e406e7ceb
+2026-07-09T03:12:24.980Z [INFO] Destroyed session: 1ad3a4a9-747e-452b-8a39-486e406e7ceb
+2026-07-09T03:12:24.982Z [INFO] Closing session 1ad3a4a9-747e-452b-8a39-486e406e7ceb
+2026-07-09T03:12:24.982Z [INFO] Destroyed session: 1ad3a4a9-747e-452b-8a39-486e406e7ceb
+2026-07-09T03:12:24.983Z [INFO] Preparing runtime for graceful shutdown
+2026-07-09T03:12:24.984Z [INFO] Starting graceful shutdown of CLI server
+2026-07-09T03:12:24.984Z [INFO] Destroying 0 active sessions
+2026-07-09T03:12:24.984Z [INFO] CLI server prepared for shutdown; transport remains open for RPC response

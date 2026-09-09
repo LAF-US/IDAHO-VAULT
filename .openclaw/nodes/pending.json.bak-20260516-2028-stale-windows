@@ -1,0 +1,24 @@
+{
+  "75652f2a-f322-466d-a93a-eb232b4254aa": {
+    "requestId": "75652f2a-f322-466d-a93a-eb232b4254aa",
+    "nodeId": "45280bd682ac5c7a692c38e69ae48508db75607394f88f6465a250888c6cf348",
+    "displayName": "Windows-ZBFURY",
+    "platform": "windows",
+    "version": "2026.5.14-beta.2",
+    "deviceFamily": "Windows",
+    "caps": [
+      "system",
+      "browser",
+      "codex-cli-sessions",
+      "file"
+    ],
+    "commands": [
+      "system.run.prepare",
+      "system.run",
+      "system.which",
+      "browser.proxy"
+    ],
+    "silent": false,
+    "ts": 1778961166521
+  }
+}
