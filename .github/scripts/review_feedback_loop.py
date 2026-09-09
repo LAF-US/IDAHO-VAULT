@@ -1432,18 +1432,33 @@ def _build_reconciliation_report(
             # state-aware — it no-ops a queued PR and toggles a stuck one.
             auto_merge_enabled, arm_error = _arm_auto_merge(owner, repo, pr_number)
             if auto_merge_enabled and promoting:
-                # The attempt succeeded, so the promotion is real — publish it now.
-                if DEFAULT_REVIEW_PENDING_LABEL in current_labels:
-                    current_labels.discard(DEFAULT_REVIEW_PENDING_LABEL)
-                current_labels.add(DEFAULT_AUTO_MERGE_LABEL)
-                _edit_label(pr_number, add=DEFAULT_AUTO_MERGE_LABEL)
-                actions.append(f"add:{DEFAULT_AUTO_MERGE_LABEL}")
-                _comment(
-                    pr_number,
-                    f"⏱️ Agent review grace period ({grace_minutes} min) elapsed "
-                    f"with no blocking feedback. Promoting to `auto-merge`.",
-                )
-                promoted.append(pr_number)
+                # The attempt succeeded, so the promotion is real — publish it, with a
+                # CHECKED write. _edit_label swallows failures (`check=False`), and a
+                # swallowed one here leaves the PR armed with no `merge/auto` for
+                # apply_review_state_projection to key its disarm on: armed state nothing
+                # can retract, the same hazard this whole change exists to remove.
+                # _maybe_arm_auto_merge already fails closed exactly this way.
+                try:
+                    gh_cli.pr_edit(pr_number, add_label=DEFAULT_AUTO_MERGE_LABEL)
+                except RuntimeError as exc:
+                    _disable_auto_merge(pr_number)
+                    auto_merge_enabled = False
+                    arm_error = (
+                        f"auto-merge armed but `{DEFAULT_AUTO_MERGE_LABEL}` label write "
+                        f"failed; disabled auto-merge to avoid an un-trackable armed PR: "
+                        f"{exc}"
+                    )
+                else:
+                    if DEFAULT_REVIEW_PENDING_LABEL in current_labels:
+                        current_labels.discard(DEFAULT_REVIEW_PENDING_LABEL)
+                    current_labels.add(DEFAULT_AUTO_MERGE_LABEL)
+                    actions.append(f"add:{DEFAULT_AUTO_MERGE_LABEL}")
+                    _comment(
+                        pr_number,
+                        f"⏱️ Agent review grace period ({grace_minutes} min) elapsed "
+                        f"with no blocking feedback. Promoting to `auto-merge`.",
+                    )
+                    promoted.append(pr_number)
             if auto_merge_enabled:
                 rearmed.append(pr_number)
             elif arm_error and AUTO_MERGE_NOT_READY_NOTE in arm_error:
