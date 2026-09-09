@@ -63,8 +63,8 @@
     "current_state": {
       "enabled_community_count": 44,
       "enabled_core_count": 31,
-      "installed_community_count": 75,
-      "dormant_installed_count": 31,
+      "installed_community_count": 74,
+      "dormant_installed_count": 30,
       "enabled_missing_manifest_count": 0
     },
     "entrypoints": [
