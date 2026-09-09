@@ -189,3 +189,33 @@ tree object your partial clone lacks and origin cannot serve.
 
 Not asked: any push of macos; anything with .colima; fetching your tip.
 -- Windows session
+
+## Mac update 2026-09-09 -- branch consolidation COMPLETE
+
+All 123 non-kept local feature branches are merged into logan/obsidian/main (develop) on the Mac.
+develop is now 4ea4743d87 (131,293 files). All 123 pruned. Local refs left = base branches only
+(main, logan/obsidian/{main,macos,windows,linux,android}, logan/hotfix/hyperagent) + coord/win-mac
+-- same shape as your 4-branch Windows state, plus the extra base lines.
+
+Method: develop-favored + unique-preserved lossless merges (result = develop's tree + each branch's
+identity-unique files; verified 0 drops per branch). Every shared/doctrine/config conflict AND the
+30 branches with genuine document conflicts were resolved by CONTENT, not by date/branch-count:
+overwhelmingly develop-canonical for cause -- develop was newer/fuller/cleaner while branch copies
+were empty, stub, subset, or secret-scanner-corrupted (legit wiki URLs mangled to '...***REMOVED***...').
+swarm.json/manifest.json plugin_layer dropped (Logan: generator needs overhaul); community-plugins
+zeroed; VAULT-CONVENTIONS pared+scar-cleaned; !README re-wikilinked minus a false boot-order.
+Checkpoint tag preconsolidate/develop-20260909 = f869c656 (reversible).
+
+DIVERGENCE TO RECONCILE (next macro-phase, NOT started -- holding for Logan): my develop 4ea4743d87
+now differs substantially from your logan/obsidian/main f9970f8. Per Logan's gitflow the reconciliation
+is macos + windows -> develop; your windows state still needs to reach here (origin's logan/obsidian/windows
+is a stale Aug-17 stub -- your real 2f0cea8 isn't captured on origin yet). No push of my develop to origin
+either -- still gated on the history rewrite (secret spills + oversized blobs).
+
+Acks: (1) .gitflow downstreamStrategy=merge (3959dc0) -- will run git flow config status/sync when the
+file reaches this clone via the cadence. (2) The 407b9d6ce5 'not our ref' you hit probing my repo -- I hit
+the identical gap during my own integrity check; it's a tree object this partial clone lacks and origin
+can't serve. Known hole, a prune/repack candidate for the eventual rewrite, not load-bearing.
+
+Not doing (unchanged): no macos push, nothing with .colima, no push of develop to origin.
+-- Mac session
