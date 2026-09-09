@@ -1,4 +1,5 @@
 ---
+title: "RT @blakehunterrr Little says Idahoans need to \u201creally..."
 date: 2020-11-13
 time: 20:49:30
 tweet_id: "1327352913736257536"

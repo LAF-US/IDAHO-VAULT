@@ -1,4 +1,5 @@
 ---
+title: "Senate State Affairs chair Patti Anne Lodge has thanked..."
 date: 2021-01-25
 time: 16:08:30
 tweet_id: "1353736514610499594"

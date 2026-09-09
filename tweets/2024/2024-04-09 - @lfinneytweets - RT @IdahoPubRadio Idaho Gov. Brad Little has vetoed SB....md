@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio Idaho Gov. Brad Little has vetoed SB..."
 date: 2024-04-09
 time: 03:12:43
 tweet_id: "1777535084184162758"

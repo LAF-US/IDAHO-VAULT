@@ -6,6 +6,7 @@ related:
 - Twin Falls
 authority: LOGAN
 ---
-Residence: Twin Falls 
-- former Magic Valley Times-News publisher 
-- husband of Linda Wright Hartgen 
+Residence: Twin Falls
+
+- former Magic Valley Times-News publisher
+- husband of Linda Wright Hartgen

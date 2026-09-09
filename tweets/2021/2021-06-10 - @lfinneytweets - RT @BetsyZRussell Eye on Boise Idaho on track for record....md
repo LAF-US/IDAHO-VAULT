@@ -1,4 +1,5 @@
 ---
+title: "RT @BetsyZRussell Eye on Boise Idaho on track for record..."
 date: 2021-06-10
 time: 01:09:34
 tweet_id: "1402795036492779529"

@@ -1,4 +1,5 @@
 ---
+title: "RT @clarkcorbin Idaho Supreme Court Chief Justice G...."
 date: 2022-01-14
 time: 21:18:50
 tweet_id: "1482099915622735872"

@@ -1,4 +1,5 @@
 ---
+title: "Trump will make a deal with Mexico. And if they don't like..."
 date: 2018-06-09
 time: 18:06:45
 tweet_id: "1005511530757087232"

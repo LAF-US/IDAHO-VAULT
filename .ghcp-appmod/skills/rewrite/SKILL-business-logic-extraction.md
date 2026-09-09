@@ -191,12 +191,13 @@ graph TD
 ## Rewrite Priority
 
 | Priority | Business Logic | Reason |
-|----------|---------------|--------|
+| ---------- | --------------- | -------- |
 | P1 | Core workflows | Essential for MVP |
 | P2 | Calculations | Business critical |
 | P3 | Validations | Can use framework defaults initially |
 | P4 | Integrations | Can be stubbed initially |
-```
+
+```markdown
 
 ## Output Artifacts
 

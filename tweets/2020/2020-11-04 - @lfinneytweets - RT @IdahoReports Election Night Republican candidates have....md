@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Election Night Republican candidates have..."
 date: 2020-11-04
 time: 08:15:48
 tweet_id: "1323901747207659521"

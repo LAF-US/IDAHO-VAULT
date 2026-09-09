@@ -105,7 +105,7 @@ Tarot's history is the cluster's clearest case of an ordinary object being
   (mid-19th c.) bound tarot to the **Hebrew alphabet and the Kabbalah**. The
   terms **"Major" and "Minor Arcana"** came slightly later, with **Jean-Baptiste
   Pitois ("Paul Christian")**, not with Etteilla or Lévi.
-- **The Golden Dawn (1888– ).** The London **Hermetic Order of the Golden Dawn**
+- **The Golden Dawn (founded 1888).** The London **Hermetic Order of the Golden Dawn**
   produced the full correspondence system — each card tied to a Hebrew letter, a
   path on the Tree of Life, and an astrological assignment — fusing tarot to
   [[Hermeticism|Hermetic Qabalah]].
@@ -175,4 +175,8 @@ cultural and historical reference, on the record per [[VAULT-CONVENTIONS]].
 - [A history of tarot cards — Victoria & Albert Museum](https://www.vam.ac.uk/articles/tarot-cards) (15th-c. Italian game origins; Visconti-Sforza)
 - [Carl Jung and Jungian Archetypes in the Tarot — Labyrinthos](https://labyrinthos.co/blogs/learn-tarot-with-labyrinthos-academy/carl-jung-and-jungian-archetypes-in-the-tarot-the-various-aspects-of-our-selves) (archetypes, individuation, the Fool's Journey)
 
-###### [["The world is quiet here."]]
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

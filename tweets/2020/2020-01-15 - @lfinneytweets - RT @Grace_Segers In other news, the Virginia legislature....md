@@ -1,4 +1,5 @@
 ---
+title: "RT @Grace_Segers In other news, the Virginia legislature..."
 date: 2020-01-15
 time: 18:59:09
 tweet_id: "1217521619159015424"

@@ -1,0 +1,72 @@
+name: Issue Triage
+
+on:
+  issues:
+    types: [opened, reopened, closed]
+  issue_comment:
+    types: [created]
+
+permissions: {}
+
+concurrency:
+  # Coerce GitHub's issue number to a JSON number before using it in the
+  # concurrency key. This preserves per-issue serialization without allowing
+  # event-provided text to shape CI configuration.
+  group: issue-triage-${{ fromJSON(toJSON(github.event.issue.number)) }}
+  cancel-in-progress: false
+
+jobs:
+  triage:
+    # Stay inert until a fine-grained TRIAGEBOT_TOKEN with Issues: Read and
+    # Write is provisioned and the repository variable is explicitly enabled.
+    # TRIAGEBOT_ENABLED prevents accidental activation only; it is not a
+    # security boundary and must be enabled by an administrator who has also
+    # provisioned the dedicated token and TRIAGEBOT_LOGIN. The latter identifies
+    # the token's GitHub actor for loop prevention.
+    # For issue-comment events, accept trusted human comments on issues only;
+    # exclude pull-request chatter and bot replies to prevent loops.
+    if: >-
+      vars.TRIAGEBOT_ENABLED == 'true' && vars.TRIAGEBOT_LOGIN != '' && (
+        github.event_name != 'issue_comment' ||
+        (github.event.issue.pull_request == null &&
+         github.event.comment.user.type != 'Bot' &&
+         github.event.comment.user.login != vars.TRIAGEBOT_LOGIN &&
+         contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'),
+                  github.event.comment.author_association))
+      )
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    permissions:
+      contents: read
+      issues: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - uses: withastro/triagebot-action@0e37f3db18d8f5b3e8b310c52cdcc9cf2b5d22b1 # v0.4.0
+        with:
+          # TRIAGEBOT_TOKEN must be a dedicated fine-grained token limited to
+          # this repository's Issues: Read and Write permission. It is separate
+          # from MERGE_QUEUE_TOKEN, whose scope is for merge-queue operations.
+          read-token: ${{ secrets.GITHUB_TOKEN }}
+          write-token: ${{ secrets.TRIAGEBOT_TOKEN }}
+          anthropic-api-key: ${{ secrets.ANTHROPIC_API_KEY }}
+          triage-skill: .triagebot/skills/triage
+          pr-skill: .triagebot/skills/pr-writer
+          auto-pr-on-fix: false
+          bot-logins: ${{ vars.TRIAGEBOT_LOGIN }}
+
+          # Label customization - using defaults for now
+          label-needs-triage: 'triage: needs triage'
+          label-not-actionable: 'triage: not actionable'
+          label-needs-reproduction: 'triage: needs reproduction'
+          label-skipped: 'triage: skipped'
+          label-unable-to-reproduce: 'triage: unable to reproduce'
+          label-unable-to-fix: 'triage: unable to fix'
+          label-failed: 'triage: failed'
+          label-fix-pending: 'triage: fix pending'
+          label-fix-rejected: 'triage: fix rejected'
+          label-fix-verified: 'triage: fix verified'
+          pr-label-fix-verified: 'fix verified'

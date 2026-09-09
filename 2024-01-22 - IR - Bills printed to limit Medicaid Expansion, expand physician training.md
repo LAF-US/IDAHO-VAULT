@@ -34,6 +34,7 @@ Lawmakers on the House Health and Welfare Committee introduced legislation on Mo
 Another bill would create a direct pathway for medical school graduates in Idaho to earn a license without entering a medical residency program.
 
 # Medicaid Expansion
+
 Lawmakers are keen to get a handle on the state’s Medicaid budget this session.
 
 “We all are very well aware that our Medicaid budget last year was the largest budget that the state has ever passed,” said Rep. Jordan Redman, R-Coeur d’Alene. “This bill is geared to offer both oversight and accountability and curb fraud, waste and abuse within our Medicaid system.”
@@ -48,7 +49,7 @@ The bill would also require the Idaho Department of Health and Welfare to mainta
 
 Gov. Brad Little’s budget proposal this year includes work requirements for able-bodied adults on Medicaid Expansion, which would need a federal waiver, according to reporting by the Idaho Capital Sun.
 
-The bill also forbids use of Medicaid funds to pay for “any gender reassignment procedures, including treatments or surgeries” whether for adults or minors. 
+The bill also forbids use of Medicaid funds to pay for “any gender reassignment procedures, including treatments or surgeries” whether for adults or minors.
 
 If the conditions in the bill were not met, the legislation would require the Department of Health and Welfare to terminate expanded Medicaid eligibility within 90 days.
 
@@ -57,6 +58,7 @@ If the conditions in the bill were not met, the legislation would require the De
 The bill’s fiscal note estimates about $163 million in savings – about $136 million from reducing improper payments and $27 million from capping total enrollment – or $109 million in savings if the requirements were not met and Medicaid Expansion was effectively repealed.
 
 # Physician Licensure
+
 Lawmakers also introduced House Bill 418 that would expand the “bridge year physician” program.
 
 House Bill 153 last session established a one-year limited medical license for first-year medical school graduates who have applied to but not been accepted to a medical residency program. By allowing graduates to practice under the supervision of a licensed physician, the law was intended to help address the state’s physician shortage.

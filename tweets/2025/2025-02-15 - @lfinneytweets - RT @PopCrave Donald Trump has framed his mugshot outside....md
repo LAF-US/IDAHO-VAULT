@@ -1,4 +1,5 @@
 ---
+title: "RT @PopCrave Donald Trump has framed his mugshot outside..."
 date: 2025-02-15
 time: 00:14:41
 tweet_id: "1890555292011655465"

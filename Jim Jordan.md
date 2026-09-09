@@ -5,4 +5,4 @@ related:
 - U.S. House
 authority: LOGAN
 ---
-U.S. House member from Ohio 
+U.S. House member from Ohio

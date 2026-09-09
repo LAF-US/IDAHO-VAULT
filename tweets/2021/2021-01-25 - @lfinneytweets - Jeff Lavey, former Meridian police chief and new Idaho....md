@@ -1,4 +1,5 @@
 ---
+title: "Jeff Lavey, former Meridian police chief and new Idaho..."
 date: 2021-01-25
 time: 16:34:43
 tweet_id: "1353743108362571787"

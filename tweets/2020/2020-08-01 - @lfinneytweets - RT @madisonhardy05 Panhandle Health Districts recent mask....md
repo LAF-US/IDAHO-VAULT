@@ -1,4 +1,5 @@
 ---
+title: "RT @madisonhardy05 Panhandle Health Districts recent mask..."
 date: 2020-08-01
 time: 20:56:57
 tweet_id: "1289666451838611457"

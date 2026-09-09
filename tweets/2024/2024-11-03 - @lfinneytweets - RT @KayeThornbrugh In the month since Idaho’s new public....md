@@ -1,4 +1,5 @@
 ---
+title: "RT @KayeThornbrugh In the month since Idaho\u2019s new public..."
 date: 2024-11-03
 time: 18:18:42
 tweet_id: "1853139755430805543"

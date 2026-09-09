@@ -1,4 +1,5 @@
 ---
+title: "RT @MaherKXLY Inslee says Washington, Oregon, and..."
 date: 2020-04-15
 time: 00:07:46
 tweet_id: "1250214194906984449"
@@ -15,7 +16,7 @@ related:
   - lfinneytweets
 ---
 
-RT @MaherKXLY: Inslee says Washington, Oregon, and California have been working together since the beginning of this outbreak. 
+RT @MaherKXLY: Inslee says Washington, Oregon, and California have been working together since the beginning of this outbreak.
 
 "We hope I…
 

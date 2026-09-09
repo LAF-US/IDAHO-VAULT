@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports August 20, 2021, Weekly #IdahoCOVID19..."
 date: 2021-08-21
 time: 00:02:29
 tweet_id: "1428870082621366274"
@@ -19,9 +20,10 @@ related:
   - IdahoCOVID19
 ---
 
-RT @IdahoReports: August 20, 2021, Weekly #IdahoCOVID19 Update | @IdahoPTV https://t.co/MkrLBNrCE3
+RT @IdahoReports: August 20, 2021, Weekly #IdahoCOVID19 Update | @IdahoPTV <https://t.co/MkrLBNrCE3>
 
 ## Media
-- ![](https://pbs.twimg.com/amplify_video_thumb/1428863574332477445/img/JxiI9IX-wVNVuVL-.jpg)
+
+- ![alt text needed](https://pbs.twimg.com/amplify_video_thumb/1428863574332477445/img/JxiI9IX-wVNVuVL-.jpg)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1428870082621366274)

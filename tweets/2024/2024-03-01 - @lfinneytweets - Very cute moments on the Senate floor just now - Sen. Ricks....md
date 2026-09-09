@@ -1,4 +1,5 @@
 ---
+title: "Very cute moments on the Senate floor just now - Sen. Ricks..."
 date: 2024-03-01
 time: 00:18:38
 tweet_id: "1763358146536562775"

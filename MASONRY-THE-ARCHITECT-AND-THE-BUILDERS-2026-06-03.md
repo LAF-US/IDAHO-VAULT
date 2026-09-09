@@ -76,6 +76,7 @@ This is what makes Brunelleschi's dome interesting beyond its art-historical fam
 The vault already names the Architect role. From `VAULT-CONVENTIONS.md` § "Blessed Working Surfaces":
 
 > The Architect's blessed working set for durable vault labor is:
+>
 > - `.md` for humans and agents
 > - `.yaml` / `.yml` for robots and agents
 > - `.json` for robots and agents
@@ -120,6 +121,7 @@ Within the vault's own grammar, the "Architect" is partially codified at `VAULT-
 ## Sources
 
 ### Historical and craft
+
 - *Cathedral, Forge, and Waterwheel* — Frances and Joseph Gies (1994) — on medieval master masons and building lodges
 - *The Master Builders* — David Macaulay (1973) and *Cathedral* (1973) — on medieval cathedral construction
 - Mason's marks: see catalogues at e.g. [Mason's marks — Wikipedia](https://en.wikipedia.org/wiki/Mason%27s_mark)
@@ -127,5 +129,6 @@ Within the vault's own grammar, the "Architect" is partially codified at `VAULT-
 - Florence Cathedral / Santa Maria del Fiore: [Wikipedia](https://en.wikipedia.org/wiki/Florence_Cathedral)
 
 ### Vault internal
+
 - [[VAULT-CONVENTIONS]] §"Blessed Working Surfaces" — the "Architect" role in vault grammar
 - [[!-AGENTS.md]] — the agents/Builders registry

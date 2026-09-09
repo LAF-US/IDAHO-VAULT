@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPubRadio .@IdahoITD says food trucks will serve..."
 date: 2020-04-16
 time: 01:36:37
 tweet_id: "1250598941072056321"

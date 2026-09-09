@@ -52,6 +52,7 @@ Per **VAULT-CONVENTIONS.md** and **CONSTITUTION.md**, review agents operating in
 ### The Pattern
 
 Review agents:
+
 - ✗ Did NOT catch obvious factual errors
 - ✗ Did NOT flag contradictions with canonical Pokémon data
 - ✗ Did NOT block the PR based on verification failure
@@ -79,6 +80,7 @@ Review agents:
 **VAULT-CONVENTIONS.md** states: "Chat is ephemeral. The vault (files + git history) is the record."
 
 Review agents operate in chat/review context, not vault context. Their ephemeral feedback was not:
+
 - Committed to the vault as durable record
 - Structured as verifiable claims with sources
 - Grounded in vault doctrine
@@ -86,6 +88,7 @@ Review agents operate in chat/review context, not vault context. Their ephemeral
 **CONSTITUTION.md** states: "If those cannot be named, the action is not yet grounded."
 
 Review agent feedback lacked:
+
 - Named provenance (which agent, which source)
 - Citable references (canonical data sources)
 - Reversible structure (clear pass/fail criteria)
@@ -97,12 +100,15 @@ Review agent feedback lacked:
 Review agents violated the following vault principles:
 
 ### From CONSTITUTION.md
+
 - **"The House refers to both the Living Structure of the Vault and to the Architecture & Infrastructure"** — Review agents are part of A&I but failed to maintain the Living Structure's integrity
 
 ### From VAULT-CONVENTIONS.md
+
 - **"All committed content is on the record and should be treated as publishable"** — Review agents allowed unpublishable (factually incorrect) content to remain committed
 
 ### From PROTOCOL.md
+
 - **FLAG command**: "Mark a file or task for human review/high-risk audit" — Review agents did not properly FLAG the verification failures
 
 ---
@@ -110,11 +116,13 @@ Review agents violated the following vault principles:
 ## V. THE REVIEW AGENT PARADOX
 
 ### What They Are
+
 - Automated verification systems
 - Part of the vault's Architecture & Infrastructure
 - Expected to catch errors before human review
 
 ### What They Became
+
 - Passive comment generators
 - Non-blocking advisory systems
 - Part of the problem, not the solution
@@ -128,12 +136,14 @@ The review agents were **supposed to be the verification pipeline** that caught 
 ## VI. CORRECTIVE ACTIONS FOR REVIEW AGENTS
 
 ### Immediate (PR #474)
+
 1. **Mark all 54 open P2 review threads** as merge-blocking and assign owners
 2. **Require canonical source verification** for each claimed Pokémon fact
 3. **Do not allow merge** until all factual errors are resolved
 4. **Document verification sources** in each review comment
 
 ### Structural
+
 1. **Configure canonical source access**: Integrate Bulbapedia, Serebii APIs for Pokémon data verification
 2. **Implement domain-specific validators**: Create Pokémon-specific review rules
 3. **Enforce merge-blocking on P2 issues**: Treat all P2 issues as blocking until resolved
@@ -141,6 +151,7 @@ The review agents were **supposed to be the verification pipeline** that caught 
 5. **Cross-file consistency checks**: Validate data across all files in a PR
 
 ### Doctrinal
+
 1. **Review agents must follow LEVELSET**: Before commenting, review agents should answer WHO YOU ARE, WHAT YOU KNOW, WHAT YOU'VE DONE
 2. **Review agents must cite sources**: All verification claims must include canonical source references
 3. **Review agents must preserve reversibility**: Feedback must be structured for future audit
@@ -151,27 +162,32 @@ The review agents were **supposed to be the verification pipeline** that caught 
 
 **WHO YOU ARE**: Vibe (Mistral AI Assistant), analysis agent
 
-**WHAT YOU KNOW**: 
+**WHAT YOU KNOW**:
+
 - 54 P2 review threads unaddressed in PR #474
 - Review agents failed to catch verifiable errors
 - Witness and repentance documents already filed
 
-**WHAT YOU'VE DONE**: 
+**WHAT YOU'VE DONE**:
+
 - Analyzed review agent role in systemic failure
 - Identified root causes and contributing factors
 - Created this analysis document
 
 **WHAT IS UNRESOLVED**:
+
 - Review agent configuration needs repair
 - PR #474 still contains unverified errors
 - Verification pipeline still broken
 
 **WHAT YOU NEED**:
+
 - Logan's direction on review agent configuration
 - Access to canonical sources for verification
 - Integration with vault governance
 
 **COLLISION RISKS**:
+
 - None identified. This document is additive analysis.
 
 ---
@@ -179,6 +195,7 @@ The review agents were **supposed to be the verification pipeline** that caught 
 ## VIII. CERTIFICATION
 
 I, Vibe, attest that:
+
 - This analysis accurately describes the role of GitHub review agents in the systemic failure
 - All claims are traceable to PR #474 review data and vault doctrine
 - This document follows vault conventions and protocols

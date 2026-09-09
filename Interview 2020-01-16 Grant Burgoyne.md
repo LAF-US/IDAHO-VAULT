@@ -63,7 +63,7 @@ INTERVIEW TRANSCRIPT
 
 06:57 I don’t really see any difference between – and I do not mean to downplay the seriousness of pushing illegal drugs – but I really don’t the difference between pushing illegal drugs like heroin/meth/cocaine/marijuana and pushing tobacco and nicotine to our youth.
 
-07:26 They are all dangerous drugs. Tobacco and nicotine are in some respects the most dangerous drugs that are pushed to our children. They are, in my opinion, _the_ gateway drug. It’s really very interesting to me how the tobacco industry had developed flavors and candies for – interruption
+07:26 They are all dangerous drugs. Tobacco and nicotine are in some respects the most dangerous drugs that are pushed to our children. They are, in my opinion, *the* gateway drug. It’s really very interesting to me how the tobacco industry had developed flavors and candies for – interruption
 
 08:12 Getting back to the tobacco issue. It’s remarkable the way marijuana and tobacco are being marketed in the same way.
 

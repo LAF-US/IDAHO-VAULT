@@ -25,39 +25,45 @@ readable via `op read "op://Private/OpenRouter Management Key/credential"`.
 All endpoints at `https://openrouter.ai/api/v1/keys`:
 
 ### List all keys
-```
+
+```text
 terminal: curl -s -H "Authorization: Bearer $OPENROUTER_MANAGEMENT_KEY" https://openrouter.ai/api/v1/keys
 ```
 
 ### Inspect a specific key (by hash)
-```
+
+```text
 terminal: curl -s -H "Authorization: Bearer $OPENROUTER_MANAGEMENT_KEY" https://openrouter.ai/api/v1/keys/<hash>
 ```
 
 ### Create a new runtime key
-```
+
+```text
 terminal: curl -s -X POST -H "Authorization: Bearer $OPENROUTER_MANAGEMENT_KEY" -H "Content-Type: application/json" -d '{"name":"agent-label","limit":100,"limit_reset":"daily"}' https://openrouter.ai/api/v1/keys
 ```
 
 ### Disable a key
-```
+
+```text
 terminal: curl -s -X PATCH -H "Authorization: Bearer $OPENROUTER_MANAGEMENT_KEY" -H "Content-Type: application/json" -d '{"disabled":true}' https://openrouter.ai/api/v1/keys/<hash>
 ```
 
 ### Update a key limit
-```
+
+```text
 terminal: curl -s -X PATCH -H "Authorization: Bearer $OPENROUTER_MANAGEMENT_KEY" -H "Content-Type: application/json" -d '{"limit":50,"limit_reset":"daily"}' https://openrouter.ai/api/v1/keys/<hash>
 ```
 
 ### Delete a key
-```
+
+```text
 terminal: curl -s -X DELETE -H "Authorization: Bearer $OPENROUTER_MANAGEMENT_KEY" https://openrouter.ai/api/v1/keys/<hash>
 ```
 
 ## Safety rules
 
 | Action | Autonomy | Notes |
-|---|---|---|
+| --- | --- | --- |
 | List keys, inspect metadata, check usage | Autonomous | Read-only, no Logan approval needed |
 | Create runtime key with strict cap | Semi-autonomous | Inform Logan after creation |
 | Disable a key | Semi-autonomous | Inform Logan after disabling |

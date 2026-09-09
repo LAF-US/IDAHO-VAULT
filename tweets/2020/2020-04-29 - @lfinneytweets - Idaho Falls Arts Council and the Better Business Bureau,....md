@@ -1,4 +1,5 @@
 ---
+title: "Idaho Falls Arts Council and the Better Business Bureau,..."
 date: 2020-04-29
 time: 00:18:30
 tweet_id: "1255290325649801216"

@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports The state is poised to spend roughly $2..."
 date: 2023-06-02
 time: 18:21:30
 tweet_id: "1664698773392576518"

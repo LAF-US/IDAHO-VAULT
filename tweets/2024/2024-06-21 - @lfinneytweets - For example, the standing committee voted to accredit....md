@@ -1,4 +1,5 @@
 ---
+title: "For example, the standing committee voted to accredit..."
 date: 2024-06-21
 time: 21:13:18
 tweet_id: "1804261335355789704"

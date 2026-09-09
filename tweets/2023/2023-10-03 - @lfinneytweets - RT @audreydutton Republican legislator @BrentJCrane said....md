@@ -1,4 +1,5 @@
 ---
+title: "RT @audreydutton Republican legislator @BrentJCrane said..."
 date: 2023-10-03
 time: 22:44:53
 tweet_id: "1709338763590300089"

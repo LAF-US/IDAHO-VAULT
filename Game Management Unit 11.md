@@ -6,4 +6,4 @@ related:
 - Nez Perce County
 authority: LOGAN
 ---
-southern Nez Perce County, southern Lewis County, northwestern Idaho County 
+southern Nez Perce County, southern Lewis County, northwestern Idaho County

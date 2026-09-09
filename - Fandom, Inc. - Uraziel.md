@@ -5,7 +5,7 @@ author:
 published:
 created: 2026-04-14
 ---
-<table><tbody><tr><th colspan="2"><img src="https://bartimaeus.fandom.com/wiki/Uraziel.jpg" width="275" height="349"></th></tr><tr><th colspan="2">Uraziel</th></tr><tr><td>Type</td><td><p><a href="https://bartimaeus.fandom.com/wiki/Greater_spirit">Greater spirit</a></p></td></tr><tr><td>Masters</td><td><p><a href="https://bartimaeus.fandom.com/wiki/Solomon">Solomon</a></p></td></tr></tbody></table>
+<table><tbody><tr><th colspan="2"><img alt="alt text needed" src="https://bartimaeus.fandom.com/wiki/Uraziel.jpg" width="275" height="349"></th></tr><tr><th colspan="2">Uraziel</th></tr><tr><td>Type</td><td><p><a href="https://bartimaeus.fandom.com/wiki/Greater_spirit">Greater spirit</a></p></td></tr><tr><td>Masters</td><td><p><a href="https://bartimaeus.fandom.com/wiki/Solomon">Solomon</a></p></td></tr></tbody></table>
 
 **Uraziel** is a [greater spirit](https://bartimaeus.fandom.com/wiki/Greater_spirits "Greater spirits") that inhabits the [Ring of Solomon](https://bartimaeus.fandom.com/wiki/Ring_of_Solomon "Ring of Solomon"). He is the only one known to hold the power to actually act as a gate to [the Other Place](https://bartimaeus.fandom.com/wiki/The_Other_Place "The Other Place").
 

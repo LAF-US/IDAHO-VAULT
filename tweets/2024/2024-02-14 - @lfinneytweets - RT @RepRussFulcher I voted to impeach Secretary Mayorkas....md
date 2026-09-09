@@ -1,4 +1,5 @@
 ---
+title: "RT @RepRussFulcher I voted to impeach Secretary Mayorkas..."
 date: 2024-02-14
 time: 00:29:21
 tweet_id: "1757562638362648965"

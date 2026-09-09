@@ -1,4 +1,5 @@
 ---
+title: "I see"
 date: 2020-06-25
 time: 19:32:52
 tweet_id: "1276236938240946177"
@@ -13,9 +14,10 @@ related:
   - lfinneytweets
 ---
 
-I see https://t.co/fCitpfkUrz
+I see <https://t.co/fCitpfkUrz>
 
 ## Media
-- ![](https://pbs.twimg.com/media/EbYatzlUYAA0amI.png)
+
+- ![alt text needed](https://pbs.twimg.com/media/EbYatzlUYAA0amI.png)
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1276236938240946177)

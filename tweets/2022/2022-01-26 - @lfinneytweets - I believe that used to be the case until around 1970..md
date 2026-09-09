@@ -1,4 +1,5 @@
 ---
+title: "I believe that used to be the case until around 1970."
 date: 2022-01-26
 time: 19:24:21
 tweet_id: "1486419758614343681"

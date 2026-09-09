@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoWheat 98.8% of Idaho is considered to be..."
 date: 2021-06-24
 time: 23:12:47
 tweet_id: "1408201467295526913"

@@ -1,4 +1,5 @@
 ---
+title: "RT @apalermotweets Lobbyists for pesticide manufacturer..."
 date: 2024-06-08
 time: 01:13:12
 tweet_id: "1799248276660929012"

@@ -16,9 +16,10 @@ related:
   - lfinneytweets
 ---
 
-RT @ryannoyance: .@uidaho wish you could learn how to communicate this level of detail. https://t.co/hfFBDXwEpp
+RT @ryannoyance: .@uidaho wish you could learn how to communicate this level of detail. <https://t.co/hfFBDXwEpp>
 
 ## Links
-- https://x.com/DevinTrubeyTV/status/1092580311836184576
+
+- <https://x.com/DevinTrubeyTV/status/1092580311836184576>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1094406879835344896)

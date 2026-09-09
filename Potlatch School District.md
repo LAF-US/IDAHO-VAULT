@@ -4,4 +4,4 @@ related:
 - Potlatch
 authority: LOGAN
 ---
-Potlatch, Latah County 
+Potlatch, Latah County

@@ -6,5 +6,6 @@ related:
 authority: LOGAN
 ---
 Residence: Dover
+
 - elected mayor of Dover
-- former House member 
+- former House member

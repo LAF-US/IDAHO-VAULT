@@ -1,4 +1,5 @@
 ---
+title: "Lobbying organizations aren't individuals."
 date: 2019-02-23
 time: 20:46:41
 tweet_id: "1099410238397046784"

@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports We examine Idaho\u2019s energy grid resilience..."
 date: 2023-06-15
 time: 20:54:17
 tweet_id: "1669448264209534977"

@@ -1,4 +1,5 @@
 ---
+title: "RT @boiseboone The Idaho Supreme Court considers the..."
 date: 2020-06-06
 time: 01:41:04
 tweet_id: "1269081841677373440"

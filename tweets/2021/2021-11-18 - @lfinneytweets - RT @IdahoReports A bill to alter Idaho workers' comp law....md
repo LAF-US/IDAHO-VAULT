@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports A bill to alter Idaho workers' comp law..."
 date: 2021-11-18
 time: 02:06:37
 tweet_id: "1461153843161432065"

@@ -30,30 +30,30 @@ City leaders said opportunities for the community to meet and visit with Mayor-a
 
 Meridian police are asking for the public’s help identifying two men after a reported battery in the parking lot of the Walmart on Ten Mile Road.The Meridian Po
 
-](https://idahonews.com/news/local/meridian-police-seek-help-identifying-2-men-in-walmart-parking-lot-battery-case)[![](https://idahonews.com/resources/media2/16x9/835/648/183x0/90/b2d27bdc-353f-4993-8165-a18d6fde8fff-DroughtconditionsandsummerheatcanbeabadcombinationforIdahofisheriescourtesyIdahoFishandGame.jpg)
+](<https://idahonews.com/news/local/meridian-police-seek-help-identifying-2-men-in-walmart-parking-lot-battery-case)[![>](<https://idahonews.com/resources/media2/16x9/835/648/183x0/90/b2d27bdc-353f-4993-8165-a18d6fde8fff-DroughtconditionsandsummerheatcanbeabadcombinationforIdahofisheriescourtesyIdahoFishandGame.jpg>)
 
 Idaho drought, summer heat may limit fishing opportunities, Fish and Game says
 
 Idaho anglers may see fewer fishing opportunities this summer as drought and rising temperatures strain fisheries across the state, according to Idaho Fish and
 
-](https://idahonews.com/news/local/idaho-drought-summer-heat-may-limit-fishing-opportunities-fish-and-game-says)[![](https://idahonews.com/resources/media2/16x9/616/648/0x237/90/e2ab9cb9-a88e-412d-83c3-39e94dc2dced-Screenshot20260614100246.png)
+](<https://idahonews.com/news/local/idaho-drought-summer-heat-may-limit-fishing-opportunities-fish-and-game-says)[![>](<https://idahonews.com/resources/media2/16x9/616/648/0x237/90/e2ab9cb9-a88e-412d-83c3-39e94dc2dced-Screenshot20260614100246.png>)
 
 Marsing Search and Rescue carries patient to safety from Jump Creek Upper Falls trail
 
 Marsing Search and Rescue safely brought a patient down from the Jump Creek Upper Falls trail after a rescue operation in extreme terrain.The team used a new st
 
-](https://idahonews.com/news/local/marsing-search-and-rescue-carries-patient-to-safety-from-jump-creek-upper-falls-trail)[![](https://idahonews.com/resources/media2/16x9/720/648/0x52/90/34f4b8c4-76ef-4fd4-bc15-64b054a13a5b-OwyheeCounty.jpg)
+](<https://idahonews.com/news/local/marsing-search-and-rescue-carries-patient-to-safety-from-jump-creek-upper-falls-trail)[![>](<https://idahonews.com/resources/media2/16x9/720/648/0x52/90/34f4b8c4-76ef-4fd4-bc15-64b054a13a5b-OwyheeCounty.jpg>)
 
 Owyhee County deputies investigate Marsing fight involving stabbing, gunfire
 
 The Owyhee County Sheriff’s Office is investigating a fight in Marsing that left people with stab wounds and involved gunfire.Deputies responded to reports of a
 
-](https://idahonews.com/news/local/owyhee-county-deputies-investigate-marsing-fight-involving-stabbing-gunfire)[![](https://idahonews.com/resources/media2/16x9/2448/648/0x256/90/7c7c19cb-8015-4c53-bbfe-b81aef9f03ef-GettyImages2281622315.jpg)
+](<https://idahonews.com/news/local/owyhee-county-deputies-investigate-marsing-fight-involving-stabbing-gunfire)[![>](<https://idahonews.com/resources/media2/16x9/2448/648/0x256/90/7c7c19cb-8015-4c53-bbfe-b81aef9f03ef-GettyImages2281622315.jpg>)
 
 UFC fighter says 'Michelle Obama is a man' after winning White House match
 
 At UFC Freedom 250, heavyweight fighter Josh Hokit saidafter winning his match at the White House, "Michelle Obama is a man."
 
-](https://idahonews.com/news/nation-world/ufc-fighter-says-michelle-obama-is-a-man-after-winning-white-house-match-joe-rogan-josh-hokit-derrick-lewis-president-trump-dana-white)
+](<https://idahonews.com/news/nation-world/ufc-fighter-says-michelle-obama-is-a-man-after-winning-white-house-match-joe-rogan-josh-hokit-derrick-lewis-president-trump-dana-white>)
 
 Page address saved
