@@ -1,4 +1,5 @@
 ---
+title: "New & future farming tech advances will cause rural job..."
 date: 2018-03-10
 time: 23:17:10
 tweet_id: "972612356608946176"

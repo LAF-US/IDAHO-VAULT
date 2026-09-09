@@ -16,9 +16,10 @@ related:
   - lfinneytweets
 ---
 
-This thread about weird family tents finally got me to start watching @netflix's @wildwildcountry. It's quite the ride, to say the least. https://t.co/GIwiMyea77
+This thread about weird family tents finally got me to start watching @netflix's @wildwildcountry. It's quite the ride, to say the least. <https://t.co/GIwiMyea77>
 
 ## Links
-- https://x.com/annehelen/status/1003283060056440832
+
+- <https://x.com/annehelen/status/1003283060056440832>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1003535175731404801)

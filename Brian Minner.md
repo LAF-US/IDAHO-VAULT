@@ -5,4 +5,4 @@ related:
 - assistant
 authority: LOGAN
 ---
-Bonneville County Republican Central Committee assistant precinct committee officer 
+Bonneville County Republican Central Committee assistant precinct committee officer

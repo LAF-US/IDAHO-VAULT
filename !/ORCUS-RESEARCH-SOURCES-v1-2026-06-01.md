@@ -10,17 +10,17 @@ topic: Orcus, Prince of Undeath, Wand of Orcus, Tenebrous
 ## Sources Consulted
 
 - Dungeons & Dragons Lore Wiki, "Orcus (Dungeons & Dragons)"
-  - https://dungeonsdragons.fandom.com/wiki/Orcus_%28Dungeons_%26_Dragons%29
+  - <https://dungeonsdragons.fandom.com/wiki/Orcus_%28Dungeons_%26_Dragons%29>
 - Dungeons & Dragons Lore Wiki, "Cult of Orcus"
-  - https://dungeonsdragons.fandom.com/wiki/Cult_of_Orcus
+  - <https://dungeonsdragons.fandom.com/wiki/Cult_of_Orcus>
 - Wikipedia, "Wand of Orcus"
-  - https://en.wikipedia.org/wiki/Wand_of_Orcus
+  - <https://en.wikipedia.org/wiki/Wand_of_Orcus>
 - Wikipedia, "Dead Gods"
-  - https://en.wikipedia.org/wiki/Dead_Gods
+  - <https://en.wikipedia.org/wiki/Dead_Gods>
 - D&D Beyond forum lore discussion, "Orcus / God of Undead?"
-  - https://www.dndbeyond.com/forums/dungeons-dragons-discussion/story-lore/219029-orcus-god-of-undead
+  - <https://www.dndbeyond.com/forums/dungeons-dragons-discussion/story-lore/219029-orcus-god-of-undead>
 - TheGamer, "Who Is Orcus In D&D?"
-  - https://www.thegamer.com/dungeons-dragons-orcus-lore-story-explained/
+  - <https://www.thegamer.com/dungeons-dragons-orcus-lore-story-explained/>
 
 ## Working Findings
 

@@ -1,4 +1,5 @@
 ---
+title: "RT @motherboard The CEO of data broker Mobilewalla, which..."
 date: 2020-06-26
 time: 23:06:34
 tweet_id: "1276653107955392512"

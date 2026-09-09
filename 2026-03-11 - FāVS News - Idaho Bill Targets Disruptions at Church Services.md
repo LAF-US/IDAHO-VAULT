@@ -66,7 +66,7 @@ Cathedral of St. John the Evangelist in Boise (Logan Finney).
 
 **By Logan Finney | **FāVS News Reporter****
 
-![](https://www.youtube.com/watch?v=gt4HSgcFKFw)
+![alt text needed](https://www.youtube.com/watch?v=gt4HSgcFKFw)
 
 Idaho lawmakers advanced a bill on Monday that would establish specific criminal penalties for people who trespass to disrupt church services or religious worship.
 

@@ -64,7 +64,7 @@ Most of the time they had 60+ support. Those communities have elected board memb
 
 Florida just has to get a simple majority. Idaho needs 2/3 supermajority.
 
-28:30 Ryan Kerby 
+28:30 Ryan Kerby
 
 I would call them outliers. It concerns me when … We’re a local control state, except when we’re not local control. Big Brother has to go in and fix something an outlier of people are doing.
 
@@ -80,7 +80,7 @@ I think it is our responsibility to take care of taxpayers when boards aren’t 
 
 Elections are not free. Voter turnout is usually lower in second attempt.
 
-34:30 Julianne Young 
+34:30 Julianne Young
 
 Local control or state control. Nothing more local than a vote by the people
 

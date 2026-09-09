@@ -102,4 +102,8 @@ metaphor; it is the **etymology**:
 - **Status:** active
 - **Authority:** LOGAN
 
-###### [["The world is quiet here."]]
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports A bill introduced Monday would temporarily..."
 date: 2024-02-13
 time: 00:30:32
 tweet_id: "1757200546174496962"

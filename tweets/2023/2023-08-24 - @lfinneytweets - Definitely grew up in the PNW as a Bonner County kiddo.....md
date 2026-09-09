@@ -1,4 +1,5 @@
 ---
+title: "Definitely grew up in the PNW as a Bonner County kiddo...."
 date: 2023-08-24
 time: 20:55:08
 tweet_id: "1694815626391658551"

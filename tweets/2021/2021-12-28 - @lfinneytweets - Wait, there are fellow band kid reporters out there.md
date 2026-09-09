@@ -1,4 +1,5 @@
 ---
+title: "Wait, there are fellow band kid reporters out there"
 date: 2021-12-28
 time: 04:55:30
 tweet_id: "1475691855476314118"

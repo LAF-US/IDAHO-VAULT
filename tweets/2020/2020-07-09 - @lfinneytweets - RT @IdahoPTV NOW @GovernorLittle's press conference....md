@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoPTV NOW @GovernorLittle's press conference..."
 date: 2020-07-09
 time: 17:57:48
 tweet_id: "1281286444409999362"
@@ -16,7 +17,7 @@ related:
   - lfinneytweets
 ---
 
-RT @IdahoPTV: NOW: @GovernorLittle's press conference regarding Idaho’s K-12 Reopening Plan and Stage 4 of Idaho Rebounds. 
+RT @IdahoPTV: NOW: @GovernorLittle's press conference regarding Idaho’s K-12 Reopening Plan and Stage 4 of Idaho Rebounds.
 
 Watch LIVE on…
 

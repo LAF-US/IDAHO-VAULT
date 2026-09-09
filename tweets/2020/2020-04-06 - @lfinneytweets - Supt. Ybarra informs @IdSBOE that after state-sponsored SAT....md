@@ -1,4 +1,5 @@
 ---
+title: "Supt. Ybarra informs @IdSBOE that after state-sponsored SAT..."
 date: 2020-04-06
 time: 22:42:50
 tweet_id: "1247293716680675328"

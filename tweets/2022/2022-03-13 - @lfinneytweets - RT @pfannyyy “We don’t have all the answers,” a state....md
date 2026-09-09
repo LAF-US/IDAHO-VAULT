@@ -1,4 +1,5 @@
 ---
+title: "RT @pfannyyy \u201cWe don\u2019t have all the answers,\u201d a state..."
 date: 2022-03-13
 time: 17:47:18
 tweet_id: "1503065177650049037"

@@ -1,4 +1,5 @@
 ---
+title: "RT @kkruesi MORE Little's win comes as no surprise in the..."
 date: 2018-11-07
 time: 06:29:03
 tweet_id: "1060056519431966721"

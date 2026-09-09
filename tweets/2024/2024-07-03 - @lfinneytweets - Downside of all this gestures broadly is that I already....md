@@ -1,4 +1,5 @@
 ---
+title: "Downside of all this gestures broadly is that I already..."
 date: 2024-07-03
 time: 05:34:02
 tweet_id: "1808373614577868824"

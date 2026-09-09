@@ -1,4 +1,5 @@
 ---
+title: "tweet (244864)"
 date: 2020-03-17
 time: 20:26:23
 tweet_id: "1240011621214244864"
@@ -14,10 +15,11 @@ related:
   - lfinneytweets
 ---
 
-https://t.co/DJleobTklR
+<https://t.co/DJleobTklR>
 
 ## Links
-- https://x.com/lfinneytweets/status/1240009276124311552
+
+- <https://x.com/lfinneytweets/status/1240009276124311552>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

@@ -1,4 +1,5 @@
 ---
+title: "Rep. Ehardt asks when JFAC would be able to meet and..."
 date: 2020-03-16
 time: 17:01:42
 tweet_id: "1239597725349363720"

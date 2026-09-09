@@ -1,4 +1,5 @@
 ---
+title: "RT @MurphinDC One of the best reporters in the state gets a..."
 date: 2020-01-29
 time: 02:30:25
 tweet_id: "1222346227473190912"

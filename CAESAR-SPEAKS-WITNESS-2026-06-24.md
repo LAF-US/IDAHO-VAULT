@@ -101,7 +101,7 @@ the warrant the charm conceals, and Brutus names it in four words.
 **So Caesar Speaks is the exact complement of Shall Rome — same discipline, opposite bench:**
 
 | | **Shall Rome** (the conspirators) | **Caesar Speaks** (the apex) |
-|---|---|---|
+| --- | --- | --- |
 | The **face** | restoration-rhetoric, the patriotic hymn | affability, forgiveness, fatherhood |
 | The **warrant-tell** | self-interest — *"bring honor to me," "I'll never be free"* | dynasty — *"you wish to sire an heir"* |
 | Who authenticates by the face | a reader who cheers the anthem | the crowd — *"Isn't he generous?"* |
@@ -312,4 +312,8 @@ verbatim words are unaltered.)*
 - **Author:** `*.claude.*` (Claude Code, branch `claude/shall-rome-lyrics-ok9049`)
 - **Scope:** root general witness — the apex's aria; the warrant (an heir, not a son) behind the charm; authenticate by warrant and steering, never by the face — the anthem or the charm
 
-###### [["The world is quiet here."]]
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

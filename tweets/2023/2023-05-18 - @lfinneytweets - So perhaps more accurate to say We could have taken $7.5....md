@@ -1,4 +1,5 @@
 ---
+title: "So perhaps more accurate to say We could have taken $7.5..."
 date: 2023-05-18
 time: 21:53:36
 tweet_id: "1659316328803737600"

@@ -12,6 +12,7 @@ related:
 - LEVELSET
 - Logan Finney
 ---
+[[A]][[G]][[E]][[N]][[T]][[S]]
 
 # AGENTS.md — IDAHO-VAULT
 
@@ -30,7 +31,7 @@ before interpreting lore, historical notes, or older branch residue.
 
 Tree logic governs orientation: `!/*` is the Nest/Hive of the Unified Swarm personae, while `.*/` dotfolders are the persona chambers of individual agents.
 
-This repository sits inside the broader `LAF-US` organization structure. The 
+This repository sits inside the broader `LAF-US` organization structure. The
 larger model includes both chambered repo anchors and separate GitHub team
 topology; this root file remains only a pointer into that fuller picture.
 
@@ -74,9 +75,10 @@ Root governance files remain authoritative: `CONSTITUTION.md`, `LEVELSET.md`, an
 ## LAF-US Organization & IDAHO-VAULT Placement
 
 ### Five Cores Model
+
 The `LAF-US` organization uses a **Five Cores model** for repository and team topology in a Venn Diagram arrangement, with PRIVATE and PUBLIC containing SECRET, PUBLISH, and PERSONAL:
 
-```
+```text
 LAF-US (Organization)
 ├── PRIVATE
 │   ├── SECRET
@@ -91,4 +93,8 @@ LAF-US (Organization)
 
 Manually revised by Logan A. Finney on 05/25/2026
 
-###### [["The world is quiet here."]]
+---
+
+```text
+The world is quiet here．Esto Perpetua!
+```

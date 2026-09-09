@@ -1,4 +1,5 @@
 ---
+title: "Majority Leader Anthon encourages Idaho Senate members to..."
 date: 2022-09-01
 time: 14:24:36
 tweet_id: "1565344878845775873"

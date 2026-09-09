@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports After the primary election, @IDSecOfState..."
 date: 2022-06-01
 time: 19:41:04
 tweet_id: "1532084837909008384"

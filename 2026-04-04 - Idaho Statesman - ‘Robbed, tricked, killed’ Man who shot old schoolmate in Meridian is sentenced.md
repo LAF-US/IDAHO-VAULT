@@ -7,7 +7,7 @@ created: 2026-04-06
 ---
 ![Ada County Courthouse at 200 W Front St. in Boise, Tuesday, Nov. 11, 2025.](https://www.idahostatesman.com/public/latest-news/r0zojl/picture312887988/alternates/LANDSCAPE_1140/BOI_1111adacountycourthouse01.JPG)
 
-Daniel Alaniz Pineda was sentenced to up to life in prison for the killing of a fellow 19-year-old last year, and won’t be eligibile for parole until after 23.5 years. doswald@idahostatesman.com
+Daniel Alaniz Pineda was sentenced to up to life in prison for the killing of a fellow 19-year-old last year, and won’t be eligibile for parole until after 23.5 years. <doswald@idahostatesman.com>
 
 Listen to this article
 

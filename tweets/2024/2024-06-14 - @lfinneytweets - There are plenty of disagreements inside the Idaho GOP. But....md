@@ -1,4 +1,5 @@
 ---
+title: "There are plenty of disagreements inside the Idaho GOP. But..."
 date: 2024-06-14
 time: 22:08:55
 tweet_id: "1801738615258841388"
@@ -18,10 +19,11 @@ related:
   - idpol
 ---
 
-There are plenty of disagreements inside the Idaho GOP. But at least one topic unites the dominant party’s base: Opposition to a proposed ballot initiative that would rewrite the state’s election laws. #idleg #idpol 
-https://t.co/1PaiJBrpcj
+There are plenty of disagreements inside the Idaho GOP. But at least one topic unites the dominant party’s base: Opposition to a proposed ballot initiative that would rewrite the state’s election laws. #idleg #idpol
+<https://t.co/1PaiJBrpcj>
 
 ## Links
-- https://blog.idahoreports.idahoptv.org/2024/06/14/ballot-initiative-colors-gop-debate-on-candidate-nominations/
+
+- <https://blog.idahoreports.idahoptv.org/2024/06/14/ballot-initiative-colors-gop-debate-on-candidate-nominations/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1801738615258841388)

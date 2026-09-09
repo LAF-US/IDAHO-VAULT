@@ -15,9 +15,10 @@ related:
   - lfinneytweets
 ---
 
-RT @elijah_nicholas: Idaho angler catches massive 8-foot sturgeon from his kayak https://t.co/gY1gtlJkvj
+RT @elijah_nicholas: Idaho angler catches massive 8-foot sturgeon from his kayak <https://t.co/gY1gtlJkvj>
 
 ## Links
-- http://www.spokesman.com/stories/2018/apr/06/idaho-angler-catches-massive-8-foot-sturgeon-from-/
+
+- <http://www.spokesman.com/stories/2018/apr/06/idaho-angler-catches-massive-8-foot-sturgeon-from-/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/982355875674316805)

@@ -1,4 +1,5 @@
 ---
+title: "House is caucusing until about 11 45. Even-day committees..."
 date: 2020-03-16
 time: 17:15:28
 tweet_id: "1239601185717272577"
@@ -18,7 +19,7 @@ related:
   - idpol
 ---
 
-House is caucusing until about 11:45. 
+House is caucusing until about 11:45.
 
 Even-day committees will be granted privilege status to introduce resolutions to approve their administrative rules. #idleg #idpol
 

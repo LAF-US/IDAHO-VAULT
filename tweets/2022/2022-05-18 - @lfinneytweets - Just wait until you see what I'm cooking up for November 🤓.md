@@ -1,4 +1,5 @@
 ---
+title: "Just wait until you see what I'm cooking up for November \ud83e\udd13"
 date: 2022-05-18
 time: 00:08:51
 tweet_id: "1526716407391477760"

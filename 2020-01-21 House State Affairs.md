@@ -16,7 +16,7 @@ authority: LOGAN
 ---
 House State Affairs - Jan 21, 2020
 
-Chair: Steven Harris 
+Chair: Steven Harris
 
 Omnibus Rules - Office of State Treasurer
 
@@ -40,4 +40,4 @@ TWEET DRAFT:
 
 The House State Affairs Committee is printing a bill that would require taxing districts to wait 11 months after a failed bond election before bringing another bond question of the same type or subject.
 
-The bill does not address levies, but Rep. Scott indicated she may be bringing such a bill later in the session “depending on the mood of the body.” 
+The bill does not address levies, but Rep. Scott indicated she may be bringing such a bill later in the session “depending on the mood of the body.”

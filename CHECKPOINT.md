@@ -26,7 +26,7 @@ authority: LOGAN
 **Usage:** Fill in the template below. Paste the same payload to both destinations:
 
 | Destination | Purpose | Expected response |
-|---|---|---|
+| --- | --- | --- |
 | **Linear** — comment on the active issue | Durable planning record | No action required from Linear |
 | **GitHub coding agent** (Copilot, Claude Code, Codex) | Re-orient execution mid-session | See required response contract below |
 
@@ -48,26 +48,33 @@ Reporting agent / session: [e.g., GitHub Copilot / Claude Code / Codex]
 ---
 
 DONE THIS SESSION
+
 - [item]
 - [item]
 
 IN PROGRESS
+
 - [item — describe current state]
 
 BLOCKED ON
+
 - [what is blocking, and what is needed to unblock] OR: None
 
 SCOPE CHANGES
+
 - [describe any drift from the original issue scope] OR: None
 
 NEXT STEPS
+
 - [item]
 - [item]
 
 DECISION NEEDED
+
 - [open approvals or choices Logan must make before work can continue] OR: None
 
 NEEDS FROM LOGAN (other)
+
 - [input, context, or clarification needed that is not a binary decision] OR: None
 
 RESUME POINT

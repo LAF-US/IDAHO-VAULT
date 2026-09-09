@@ -7,7 +7,7 @@ created: 2026-04-07
 ---
 ## Caldwell’s mayor issues rare municipal vetoes on quiet zone. It might not be the end
 
-![](https://boisedev.com/wp-content/uploads/2025/03/caldwell-residents-launch-effort-to-recall-mayor-several-city-council-members-IMG-9574-Large.jpeg)
+![alt text needed](https://boisedev.com/wp-content/uploads/2025/03/caldwell-residents-launch-effort-to-recall-mayor-several-city-council-members-IMG-9574-Large.jpeg)
 
 Caldwell City Hall. Photo: Erin Banks Rusby/BoiseDev
 

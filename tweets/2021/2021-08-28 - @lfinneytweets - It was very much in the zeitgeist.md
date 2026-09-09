@@ -1,4 +1,5 @@
 ---
+title: "It was very much in the zeitgeist"
 date: 2021-08-28
 time: 06:32:04
 tweet_id: "1431504837665964034"

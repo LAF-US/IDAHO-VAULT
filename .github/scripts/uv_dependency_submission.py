@@ -24,8 +24,9 @@ Settings -> Code security -> "Automatic dependency submission" to **Disabled**.
 DESIGN
 ------
 - stdlib only (`tomllib` needs Python >= 3.11; the workflow pins setup-python 3.12).
-- `build_snapshot(...)` is pure and offline (no network), so it is unit-tested
-  against the real lockfile in tests/test_uv_dependency_submission.py.
+- `build_snapshot(...)` is pure and offline (no network), so it can be exercised
+  directly against the real lockfile without a network or a token. It is not
+  currently covered by any test; the suite that made that claim was deleted.
 - The `resolved` map is keyed by **purl** (`pkg:pypi/<name>@<version>`), NOT by
   name, so packages locked at multiple versions (numpy, onnxruntime) are both
   kept rather than colliding.

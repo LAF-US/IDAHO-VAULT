@@ -1,4 +1,5 @@
 ---
+title: "RT @ASUIDAHO Hey-o! We are thinking of partnering with..."
 date: 2018-09-10
 time: 06:21:13
 tweet_id: "1039036051736559616"

@@ -53,6 +53,7 @@ This is a **personal journalism research vault that has been colonized and gover
 ## 6. PERCEPTION LOG
 
 **Paths opened:**
+
 - `!README.md` (Touchstone Tree / symbolic entry door)
 - root directory listing (saved file; parsed as JSON)
 - `CONSTITUTION.md`
@@ -74,6 +75,7 @@ This is a **personal journalism research vault that has been colonized and gover
 **~M rough estimate of total corpus size:** Root directory has 1,000 entries (669 files, 331 dirs), most dirs are deep agent chambers. Conservatively 5,000–15,000 total files; the repo likely contains tens of thousands of notes given the scale of the agent apparatus and journalism corpus.
 
 **Notable doors seen but NOT opened:**
+
 - `swarm.json` (machine-readable swarm registry)
 - `.claude/CLAUDE.md` (primary Claude persona spec)
 - any individual content notes (bills, hearings, legislative articles)

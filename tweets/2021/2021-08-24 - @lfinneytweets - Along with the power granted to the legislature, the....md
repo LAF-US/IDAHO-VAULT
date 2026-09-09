@@ -1,4 +1,5 @@
 ---
+title: "Along with the power granted to the legislature, the..."
 date: 2021-08-24
 time: 01:01:07
 tweet_id: "1429972003520335873"

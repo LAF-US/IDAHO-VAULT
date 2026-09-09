@@ -1,4 +1,5 @@
 ---
+title: "RT @pfannyyy I profiled east Idaho ICU doc Kenneth Krell,..."
 date: 2020-11-20
 time: 03:15:40
 tweet_id: "1329624425398820865"

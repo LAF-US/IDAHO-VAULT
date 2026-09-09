@@ -5,6 +5,7 @@
 Logan's requirement (from 2026-04-05 daily note): "REMEMBER, AGENTS - I want the dailynote to auto-generate, with a smart-updated template, and the display appearance color synced to today's daily note's weekday field."
 
 Full 140-plugin audit completed. Logan approved the following decisions:
+
 - **YES:** Enable `roygbiv-day-accent` (Logan+Copilot plugin), retire Templater startup script
 - **YES:** Enable `tag-wrangler`, `nldates-obsidian`, `periodic-notes`, `graph-nested-tags`
 - **KEEP:** `calendarium` stays enabled (back pocket)
@@ -28,6 +29,7 @@ Logan no longer needs to configure Templater's "Startup Templates" setting.
 ### Step 3: Enable 4 high-value dormant plugins
 
 Add to `.obsidian/community-plugins.json`:
+
 - `tag-wrangler` — rename/merge/search tags (pre-CHAINFIRE essential)
 - `nldates-obsidian` — natural language dates in notes
 - `periodic-notes` — enhanced daily/weekly/monthly note management
@@ -68,9 +70,11 @@ obsidian://open?vault=IDAHO-VAULT&file={{date:YYYY-MM-DD}}
 With `roygbiv-day-accent` handling color and pure core tokens in the template, Logan's remaining manual steps shrink to:
 
 **Core Daily Notes** (Settings → Core Plugins → Daily Notes):
+
 - ✅ "Open daily note on startup" → ON (already done by Logan)
 
 **Templater** (Settings → Community Plugins → Templater):
+
 - Template folder location → `_templates` (already done by Logan)
 - ✅ "Trigger Templater on new file creation" → ON (already done by Logan)
 - ~~Startup Templates~~ → **REMOVE `_templates/roygbiv-startup`** (no longer needed)
@@ -82,7 +86,7 @@ Stage: `.obsidian/community-plugins.json`, `DAILY NOTE TEMPLATE.md`, deletion of
 ### Files modified
 
 | File | Action |
-|------|--------|
+| ------ | -------- |
 | `.obsidian/community-plugins.json` | MODIFY — add 5 plugins (roygbiv-day-accent, tag-wrangler, nldates-obsidian, periodic-notes, graph-nested-tags) |
 | `DAILY NOTE TEMPLATE.md` | REWRITE — pure core tokens, no Templater |
 | `_templates/roygbiv-startup.md` | DELETE — superseded by roygbiv-day-accent plugin |

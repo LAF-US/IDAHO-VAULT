@@ -1,4 +1,5 @@
 ---
+title: COPILOT
 authority: LOGAN
 related:
   - COPILOT

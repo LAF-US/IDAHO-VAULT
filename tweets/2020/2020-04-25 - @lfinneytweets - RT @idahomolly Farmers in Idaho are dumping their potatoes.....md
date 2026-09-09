@@ -1,4 +1,5 @@
 ---
+title: "RT @idahomolly Farmers in Idaho are dumping their potatoes...."
 date: 2020-04-25
 time: 19:27:01
 tweet_id: "1254129808981688321"

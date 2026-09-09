@@ -1,4 +1,5 @@
 ---
+title: "Idaho #idleg #idpol budget poll. No replies, no nuance. Go!"
 date: 2026-01-28
 time: 01:45:04
 tweet_id: "2016326628289478696"

@@ -1,4 +1,5 @@
 ---
+title: "RT @KristenMcPeekTV North Idaho voters are seeing lines too..."
 date: 2020-11-03
 time: 17:58:10
 tweet_id: "1323685919346495488"

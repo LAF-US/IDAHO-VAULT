@@ -1,4 +1,5 @@
 ---
+title: "tweet"
 date: 2020-01-15
 time: 16:55:43
 tweet_id: "1217490556311367688"
@@ -16,10 +17,11 @@ related:
   - lfinneytweets
 ---
 
-@VandalBand https://t.co/NWwY4eJfLm
+@VandalBand <https://t.co/NWwY4eJfLm>
 
 ## Links
-- https://x.com/SpokesmanReview/status/1217268916902420483
+
+- <https://x.com/SpokesmanReview/status/1217268916902420483>
 
 *In reply to [@lfinneytweets](https://twitter.com/lfinneytweets)*
 

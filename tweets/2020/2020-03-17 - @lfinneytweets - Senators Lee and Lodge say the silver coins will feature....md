@@ -1,4 +1,5 @@
 ---
+title: "Senators Lee and Lodge say the silver coins will feature..."
 date: 2020-03-17
 time: 18:01:19
 tweet_id: "1239975113421774850"

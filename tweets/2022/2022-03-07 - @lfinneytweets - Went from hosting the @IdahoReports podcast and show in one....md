@@ -1,4 +1,5 @@
 ---
+title: "Went from hosting the @IdahoReports podcast and show in one..."
 date: 2022-03-07
 time: 21:47:41
 tweet_id: "1500951345687265287"

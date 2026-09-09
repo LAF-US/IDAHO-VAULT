@@ -17,7 +17,7 @@ related:
   - idleg
 ---
 
-Now Winder says the engrossed copy the Senators have in their packet is incorrect. Bill is being held on the calendar for a day. 
+Now Winder says the engrossed copy the Senators have in their packet is incorrect. Bill is being held on the calendar for a day.
 
 Now we’re at ease again. #idleg
 

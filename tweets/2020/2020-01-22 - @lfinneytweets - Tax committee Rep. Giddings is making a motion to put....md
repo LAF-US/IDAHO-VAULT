@@ -1,4 +1,5 @@
 ---
+title: "Tax committee Rep. Giddings is making a motion to put..."
 date: 2020-01-22
 time: 16:27:34
 tweet_id: "1220020188432592896"

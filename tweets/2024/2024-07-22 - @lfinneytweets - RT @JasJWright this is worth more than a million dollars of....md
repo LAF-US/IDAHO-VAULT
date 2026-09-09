@@ -1,4 +1,5 @@
 ---
+title: "RT @JasJWright this is worth more than a million dollars of..."
 date: 2024-07-22
 time: 01:10:05
 tweet_id: "1815192558731231504"

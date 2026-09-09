@@ -25,7 +25,7 @@ Master index for Hoenn's Gym Leaders, Elite Four, and Champion across all epochs
 ## Gym Leaders (8)
 
 | # | Gym Leader | City | Type | Badge | E1 | E2 |
-|---|------------|------|------|-------|----|----|
+| --- | ------------ | ------ | ------ | ------- | ---- | ---- |
 | 1 | **Roxanne** | Rustboro City | Rock | Stone Badge | Yes | Yes |
 | 2 | **Brawly** | Dewford Town | Fighting | Knuckle Badge | Yes | Yes |
 | 3 | **Wattson** | Mauville City | Electric | Dynamo Badge | Yes | Yes |
@@ -37,11 +37,13 @@ Master index for Hoenn's Gym Leaders, Elite Four, and Champion across all epochs
 | 8 | **Wallace** | Sootopolis City | Water | Rain Badge | Ruby/Sapphire | Yes |
 
 ### Notes
+
 - Ruby/Sapphire: 8th Gym Leader is Wallace
 - Emerald: 8th Gym Leader is Juan, Wallace is Champion
 - Omega Ruby/Alpha Sapphire: 8th Gym Leader is **Wallace** (Steven is the Champion). Juan is Emerald-only and does **not** provide the ORAS Rain Badge battle.
 
 ### Individual Files
+
 - [ ] Roxanne
 - [ ] Brawly
 - [ ] Wattson
@@ -57,16 +59,18 @@ Master index for Hoenn's Gym Leaders, Elite Four, and Champion across all epochs
 ## Elite Four (4)
 
 | # | Member | Type | E1 | E2 |
-|---|--------|------|----|----|
+| --- | -------- | ------ | ---- | ---- |
 | 1 | **Sidney** | Dark | Yes | Yes |
 | 2 | **Phoebe** | Ghost | Yes | Yes |
 | 3 | **Glacia** | Ice | Yes | Yes |
 | 4 | **Drake** | Dragon | Yes | Yes |
 
 ### Notes
+
 - Steven is **not** an Elite Four member. He is the Champion in Ruby/Sapphire and Omega Ruby/Alpha Sapphire, and a postgame superboss in Emerald.
 
 ### Individual Files
+
 - [ ] Sidney
 - [ ] Phoebe
 - [ ] Glacia
@@ -82,10 +86,12 @@ Master index for Hoenn's Gym Leaders, Elite Four, and Champion across all epochs
 | **Wallace** | Water | Emerald | No |
 
 ### Notes
+
 - **Steven** is the Champion in Ruby/Sapphire **and** in Omega Ruby/Alpha Sapphire (E2).
 - **Wallace** is the Champion only in Emerald; he is **not** the ORAS Champion.
 
 ### Individual Files
+
 - [ ] Steven
 - [ ] Wallace
 
@@ -94,7 +100,7 @@ Master index for Hoenn's Gym Leaders, Elite Four, and Champion across all epochs
 ## Research Status
 
 | Category | Total | Completed | Remaining | % |
-|----------|-------|-----------|-----------|---|
+| ---------- | ------- | ----------- | ----------- | --- |
 | Gym Leaders | 9 | 0 | 9 | 0% |
 | Elite Four | 4 | 0 | 4 | 0% |
 | Champion | 2 | 0 | 2 | 0% |
@@ -103,6 +109,7 @@ Master index for Hoenn's Gym Leaders, Elite Four, and Champion across all epochs
 ---
 
 ## Next Steps
+
 1. Start with **Roxanne** (Rustboro City Gym Leader)
 2. Use Misty template
 

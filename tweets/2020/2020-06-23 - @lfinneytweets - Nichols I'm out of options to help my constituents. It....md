@@ -1,4 +1,5 @@
 ---
+title: "Nichols I'm out of options to help my constituents. It..."
 date: 2020-06-23
 time: 16:02:56
 tweet_id: "1275459333833162752"

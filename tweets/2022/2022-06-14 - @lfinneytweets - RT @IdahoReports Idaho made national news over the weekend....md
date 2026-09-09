@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Idaho made national news over the weekend..."
 date: 2022-06-14
 time: 18:52:47
 tweet_id: "1536783728646664192"

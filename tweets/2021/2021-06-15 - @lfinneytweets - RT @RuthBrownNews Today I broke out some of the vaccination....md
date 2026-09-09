@@ -1,4 +1,5 @@
 ---
+title: "RT @RuthBrownNews Today I broke out some of the vaccination..."
 date: 2021-06-15
 time: 23:34:39
 tweet_id: "1404945481063538694"

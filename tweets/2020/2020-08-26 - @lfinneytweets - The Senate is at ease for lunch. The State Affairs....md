@@ -1,4 +1,5 @@
 ---
+title: "The Senate is at ease for lunch. The State Affairs..."
 date: 2020-08-26
 time: 17:14:50
 tweet_id: "1298670252222328833"

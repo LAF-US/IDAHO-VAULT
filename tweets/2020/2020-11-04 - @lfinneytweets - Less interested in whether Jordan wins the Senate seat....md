@@ -1,4 +1,5 @@
 ---
+title: "Less interested in whether Jordan wins the Senate seat..."
 date: 2020-11-04
 time: 04:56:30
 tweet_id: "1323851595088474112"

@@ -1,4 +1,5 @@
 ---
+title: "RT @IdahoReports Season 50, Episode 10 Talking Taxes......"
 date: 2022-01-15
 time: 03:50:06
 tweet_id: "1482198380432429056"
@@ -21,10 +22,11 @@ related:
   - idpol
 ---
 
-RT @IdahoReports: Season 50, Episode 10: Talking Taxes... #idleg #idpol @IdahoPTV 
-https://t.co/hbraFtsa9A
+RT @IdahoReports: Season 50, Episode 10: Talking Taxes... #idleg #idpol @IdahoPTV
+<https://t.co/hbraFtsa9A>
 
 ## Links
-- https://video.idahoptv.org/video/talking-taxes-hgwrrp/
+
+- <https://video.idahoptv.org/video/talking-taxes-hgwrrp/>
 
 [View on Twitter](https://twitter.com/lfinneytweets/status/1482198380432429056)

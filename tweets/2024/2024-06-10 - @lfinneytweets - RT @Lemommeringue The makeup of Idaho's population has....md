@@ -1,4 +1,5 @@
 ---
+title: "RT @Lemommeringue The makeup of Idaho's population has..."
 date: 2024-06-10
 time: 20:46:23
 tweet_id: "1800268294152159410"

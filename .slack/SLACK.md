@@ -1,3 +1,6 @@
+---
+title: SLACK
+---
 # SLACK.md — IDAHO-VAULT
 
 **Load mechanism:** Slack CLI reads `.slack/hooks.json` and `.slack/config.json` (official CLI auto-load). This governance shim covers Slack AI and any Slack-based agent coordination.

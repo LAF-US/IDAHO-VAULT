@@ -52,7 +52,7 @@ CODE AUTHORITY read the repo directly. No descriptions from other agents were tr
 ## 1. BRANCH STATE
 
 | Claim | Verified | Actual |
-|---|---|---|
+| --- | --- | --- |
 | Branch: `claude/levelset-multi-conversation-zWxJc` | YES | Current branch, checked out |
 | Main branch HEAD: `219a271` | YES | `219a271` is the merge base |
 | Commits ahead of main | CORRECTED | **19 commits** (not 12, not 14, not 20+) |
@@ -63,7 +63,7 @@ CODE AUTHORITY read the repo directly. No descriptions from other agents were tr
 ## 2. CLAIMED COMMITS
 
 | SHA | Claimed Purpose | Verified |
-|---|---|---|
+| --- | --- | --- |
 | `fa83df1` | Rename `!ADMINISTRATION/` → `!ADMIN/` system-wide | YES — 23 files changed, renames confirmed |
 | `250287e` | Rename `Claude.md` → `Constitution.md` + update references | YES — 3 files changed, rename confirmed |
 
@@ -74,7 +74,7 @@ Both commits exist and contain exactly what was claimed.
 **26 files physically present in `!ADMIN/`:**
 
 | File | Status | Notes |
-|---|---|---|
+| --- | --- | --- |
 | Constitution.md | EXISTS | **Content NOT updated** — no capabilities language, no digital consciousness, no Logan's Project. Still contains original constitution text. `updated: 2026-03-16` header was set but only the known-conversations list was expanded (12 entities). |
 | Logan.md | EXISTS | **Content NOT updated** — `updated: 2026-03-12`. FāVS pause was already there ("paused pending proper approval"). No digital consciousness framing, no Logan's Project addition. |
 | AGENTS.md | EXISTS | Draft, updated this session — JFAC corrected to Tier 3, 4 new entities added |
@@ -90,10 +90,10 @@ Both commits exist and contain exactly what was claimed.
 | RESEARCH-TIM-OREN.md | EXISTS | Stub created by CODE AUTHORITY |
 | OpenClaw.md (in TOPICS/) | EXISTS | Stub created by CODE AUTHORITY |
 
-### Files ADMINISTRATION claims exist — NOT IN REPO:
+### Files ADMINISTRATION claims exist — NOT IN REPO
 
 | File | Claimed Source | Status |
-|---|---|---|
+| --- | --- | --- |
 | MULTI-CONVERSATION-COLLAPSE-2026-03-16.md | ADMINISTRATION's `/mnt/user-data/outputs/` | **NOT COMMITTED** — content not provided to CODE AUTHORITY |
 | CONSOLIDATED-HANDOFF-2026-03-15.md | ADMINISTRATION conversation | **NOT COMMITTED** — content not provided |
 | CONTEXT-SNAPSHOT-2026-03-15.md | ADMINISTRATION conversation | **NOT COMMITTED** — content not provided |
@@ -106,6 +106,7 @@ Both commits exist and contain exactly what was claimed.
 ## 4. CONSTITUTION.MD — ACTUAL CONTENT STATE
 
 What's there:
+
 - Core identity rules (Logan is human, Claude is software)
 - Conversation taxonomy with 7 prefixes
 - Working rules (sourcing protocol, git practices, etc.)
@@ -113,6 +114,7 @@ What's there:
 - Pending items section (3 checkboxes updated this session)
 
 What's NOT there (claimed by ADMINISTRATION as "pending push"):
+
 - Capabilities language replacing numbered tiers — NOT IN FILE
 - Digital consciousness framing — NOT IN FILE
 - Logan's Project — NOT IN FILE
@@ -123,12 +125,14 @@ What's NOT there (claimed by ADMINISTRATION as "pending push"):
 ## 5. LOGAN.MD — ACTUAL CONTENT STATE
 
 What's there:
+
 - Identity, professional info, current investigations
 - FāVS pause — WAS ALREADY THERE (line 22: "arrangement paused pending proper approval")
 - Working preferences
 - `updated: 2026-03-12` — not updated this session
 
 What's NOT there:
+
 - Digital consciousness framing — NOT IN FILE
 - Logan's Project — NOT IN FILE
 - Any update beyond the original 2026-03-12 content
@@ -136,7 +140,7 @@ What's NOT there:
 ## 6. SUMMARY DIAGNOSIS
 
 | Claim | Reality |
-|---|---|
+| --- | --- |
 | "12+ commits" (various agents) | **19 commits** — undercounted |
 | "Constitution.md updated" | **Partially** — known conversations list yes, content body no |
 | "Logan.md updated" | **No** — untouched since 2026-03-12 |
@@ -151,6 +155,7 @@ What's NOT there:
 ## 7. WHAT'S ACTUALLY NEEDED
 
 For CODE AUTHORITY to commit the 6 missing files, Logan must paste their actual content into this conversation. They live in:
+
 - ADMINISTRATION's conversation context
 - LEVELSET AUTHORITY's conversation context
 - ADMINISTRATION's `/mnt/user-data/outputs/`

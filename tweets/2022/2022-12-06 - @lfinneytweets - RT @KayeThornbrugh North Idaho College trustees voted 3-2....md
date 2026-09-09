@@ -1,4 +1,5 @@
 ---
+title: "RT @KayeThornbrugh North Idaho College trustees voted 3-2..."
 date: 2022-12-06
 time: 23:32:59
 tweet_id: "1600272117710192640"

@@ -4,4 +4,4 @@ related:
 - occupational and professional licensing
 ---
 
-occupational and professional licensing board for accountants 
+occupational and professional licensing board for accountants

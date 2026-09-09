@@ -1,4 +1,5 @@
 ---
+title: "Andrus was absent the first time, voted no on the second"
 date: 2020-03-16
 time: 21:43:38
 tweet_id: "1239668673482067968"
