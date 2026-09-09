@@ -826,9 +826,15 @@ Operating terms:
      or `Formerly: <old title> — stale against main as of <date>` — signed with
      the session id that made the change (§ "Commit signing & session
      attribution").
-  3. Leave the labels to the engine (`risk/*`, `size/*`, `review/*`); lifecycle
-     stays `staged`. An armed PR (`merge/auto`) stays armed; the next push
-     restarts the per-push review and the entry gates as usual.
+  3. **Disarm before the replacing push.** Disable auto-merge and remove
+     `merge/auto`: the old matter's authorization does not carry to the new
+     one, and `auto-merge-engage.yml` runs on every `synchronize`, gating only
+     on "not draft" plus that label, so an armed PR would re-arm and enqueue
+     the new diff with no fresh classification (the reclassifying engine is
+     parked). The new matter is re-armed only by a maintainer's hand. Leave the
+     other labels to the engine (`risk/*`, `size/*`, `review/*`); lifecycle
+     stays `staged`. The next push restarts the per-push review and the entry
+     gates as usual.
   4. Continue. The queue treats it as any other PR. A branch name that no
      longer describes the matter is expected — the **PR title** is the matter's
      live name. Do not rename the branch.
@@ -843,13 +849,19 @@ Operating terms:
   branch disappears, and can reopen a closed PR only while that branch exists —
   so `--delete-branch` turns a mistake into an irreversible one, and renaming a
   branch by pushing the new name and deleting the old one closes its PR as
-  surely as a click (#980, above). Rename through GitHub's own branch-rename,
-  which retargets open PRs, or leave the old name standing. Branch pruning is
-  for branches with *no* PR, or merged ones, and only under Logan's direction.
+  surely as a click (#980, above). GitHub's own branch-rename is no safer: it
+  retargets open PRs whose *base* is the renamed branch and **closes** an open
+  PR whose *head* is — its "Renaming a branch" docs say so outright. Leave a
+  PR's head-branch name standing until the merge. Branch pruning is for
+  branches with *no* PR, or merged ones, and only under Logan's direction.
 
 - **Repair.** An agent that closes a PR — or finds one closed by automation —
   reopens it on the same number and says so in one comment on the PR, signed
-  with the session id. A close by Logan's own hand is his call and stands.
+  with the session id. GitHub refuses to reopen a PR whose head branch is
+  gone, so if the branch was deleted, restore it first at the PR's recorded
+  head commit (the "Restore branch" button on the closed PR, or a push of
+  that commit to the old name), then reopen. A close by Logan's own hand is
+  his call and stands.
 
 - **After a merge the branch may go on.** Each merge resolves its number *as
   merged*; the branch's next matter opens a new `#N` on the same branch. The
@@ -865,14 +877,18 @@ Operating terms:
   `.claude/CLAUDE.md` § "Conventions & Standards" carries the short form.
 
 **Automation that would close a PR is dead code here.** These surfaces exist in
-the tree. None may be un-parked, dispatched in a closing mode, or copied into
-new automation without Logan's explicit direction:
+the tree. "Parked" means the file sits at the repository root, not under
+`.github/workflows/`; Actions reads only that directory, so a parked file
+cannot be dispatched or triggered whatever its `on:` block declares (the
+parking commit, 6a378bf1, records this as the switch). None may be moved back
+under `.github/workflows/`, dispatched in a closing mode, or copied into new
+automation without Logan's explicit direction:
 
 | Surface | Where | What it would do | Standing |
 | --- | --- | --- | --- |
-| `stale-bot-prs.yml` → `scripts_scripts/stale_bot_prs.py` | repo root (parked) | close conflicted bot PRs older than 5 days; label `lifecycle/abandoned` | parked, `workflow_dispatch` only — inert |
-| `branch-cleanup.yml` | repo root (parked) | on PR close: label `lifecycle/abandoned`, delete the branch; on dispatch: prune branches of closed PRs | parked — inert |
-| `agent-swarm-signing-proof.yml`, step "Close failed proof PR" | `.github/workflows/` (`workflow_call` only) | `gh pr close --delete-branch` on a failed proof PR | unreachable — its four dispatch wrappers are parked at root |
+| `stale-bot-prs.yml`, which calls `.github/scripts/stale_bot_prs.py` — a path that no longer exists; the script itself is parked at `scripts_scripts/stale_bot_prs.py` | repo root (parked) | close conflicted bot PRs older than 5 days; label `lifecycle/abandoned` | inert: not under `.github/workflows/`, so its `workflow_dispatch` cannot fire; its script path is dead besides |
+| `branch-cleanup.yml` | repo root (parked) | on PR close: label `lifecycle/abandoned`, delete the branch; on dispatch: prune branches of closed PRs | inert: not under `.github/workflows/`, so neither its `pull_request: closed` trigger nor its `workflow_dispatch` can fire |
+| `agent-swarm-signing-proof.yml`, step "Close failed proof PR" | `.github/workflows/` (`workflow_call` only) | `gh pr close --delete-branch` on a failed proof PR | unreachable: a `workflow_call` workflow runs only when a workflow under `.github/workflows/` calls it, and its four dispatch wrappers (`agent-swarm-signing-proof-*.yml`) are parked at root; nothing under `.github/workflows/` references it |
 | `scripts_scripts/pr_lifecycle.py`, state `abandoned` | parked | a label; it does not close | unreachable label |
 | Dependabot "superseded" close | GitHub-side, not in the tree | closes its own older bump when a newer one opens — #1023 → #1026, 2026-09-02 | external; `dependabot.yml` has no switch for it — Logan's call |
 
