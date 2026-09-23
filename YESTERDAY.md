@@ -1,6 +1,10 @@
 ---
-date created: Thursday, April 9th 2026, 9:30:34 pm
-date modified: Thursday, April 9th 2026, 9:30:43 pm
+title: YESTERDAY
+linter-yaml-title-alias: YESTERDAY
+related:
+  - DAILY NOTE
+  - TO DO LIST
+authority: LOGAN
 ---
 
-the day before [[TODAY]] 
+*Concept placeholder for yesterday's incomplete tasks.*
