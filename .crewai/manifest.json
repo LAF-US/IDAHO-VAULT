@@ -1,7 +1,7 @@
 {
-  "// note": "Machine-readable registry for the CrewAI layer in IDAHO-VAULT.",
-  "// status": "CrewAI is active as a re-foundation with a live bootstrap-validation shard. Internal topology and doctrine live in .crewai/MANIFEST.md.",
-  "version": "0.3.0",
+  "// note": "Historical registry for the retired CrewAI layer in IDAHO-VAULT.",
+  "// status": "No CrewAI package, runner, or crew is active. See .crewai/MANIFEST.md for the dependency-removal decision.",
+  "version": "0.5.0",
   "vault": "github.com/LAF-US/IDAHO-VAULT",
   "status": "retired",
   "manifest_path": ".crewai/MANIFEST.md",

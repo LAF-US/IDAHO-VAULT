@@ -59,12 +59,12 @@
   "plugin_layer": {
     "manifest_doc": "!-PLUGIN-REGISTRY.md",
     "status": "active",
-    "authority_boundary": "Tracked Obsidian config defines the committed interface inventory; the plugin registry document defines doctrine and promotion rules; device-local runtime presence must be observed separately.",
+    "authority_boundary": "Obsidian config files define interface state; the plugin registry document defines doctrine and promotion rules.",
     "current_state": {
       "enabled_community_count": 44,
       "enabled_core_count": 31,
-      "installed_community_count": 75,
-      "dormant_installed_count": 31,
+      "installed_community_count": 74,
+      "dormant_installed_count": 30,
       "enabled_missing_manifest_count": 0
     },
     "entrypoints": [
@@ -833,9 +833,7 @@
       "taskbone-ocr-plugin",
       "text-extractor"
     ],
-    "enabled_plugins_missing_manifest": [],
-    "inventory_scope": "git_index",
-    "runtime_claim": "none"
+    "enabled_plugins_missing_manifest": []
   },
   "cross_swarm_sync": {
     "protocol_doc": "!/SIGNALS/README.md",

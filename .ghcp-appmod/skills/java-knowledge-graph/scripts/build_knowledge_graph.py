@@ -384,7 +384,6 @@ def parse_ant_build(build_path: Path) -> BuildModule:
 def parse_ivy_xml(ivy_path: Path) -> List[Dependency]:
     """Parse Ivy ivy.xml (inline XML parsing)"""
     try:
-        import xml.etree.ElementTree as ET
         import defusedxml.ElementTree as DefusedET
         tree = DefusedET.parse(ivy_path)
         root = tree.getroot()
