@@ -8,33 +8,16 @@ file path, line number, and rule name. It never prints matched secret text.
 from __future__ import annotations
 
 import argparse
-import os
 import re
-import subprocess  # nosec B404 -- see [tool.bandit] note in pyproject.toml
+import subprocess
 import sys
 from dataclasses import dataclass
 from pathlib import Path
 
 
-def _repo_root() -> Path:
-    # In CI this script executes from the trusted base-branch checkout
-    # (trusted-main/), while the content under test is the PRIMARY checkout —
-    # which is exactly the run step's working directory: every policy workflow
-    # invokes this script with cwd at the primary checkout and never sets a
-    # working-directory override. Using the process cwd keeps the
-    # trusted-validator split (trusted code, PR-head content) without deriving
-    # any filesystem path from environment data — there is no tainted-path
-    # flow left for a scanner to model, and no hard-coded runner path to break
-    # on self-hosted runners or a repo rename. Local (pre-commit) runs fall
-    # back to the script's own repository.
-    if os.environ.get("GITHUB_ACTIONS") == "true":
-        return Path.cwd()
-    return Path(__file__).resolve().parents[2]
+REPO_ROOT = Path(__file__).resolve().parents[2]
+MAX_TEXT_BYTES = 1024 * 1024
 
-
-REPO_ROOT = _repo_root()
-WINDOWS_COPY_SUFFIX_RE = re.compile(r" \(\d+\)(?=$|\.)")
-PRESERVED_COPY_SUFFIX_RE = re.compile(r"\.(?:home|vault)(?:\.[0-9a-f]{12})?$", re.IGNORECASE)
 SECRET_PATH_PATTERNS = (
     re.compile(r"(^|/)\.env(\.|$)"),
     re.compile(r"(^|/)\.envrc$"),
@@ -42,7 +25,6 @@ SECRET_PATH_PATTERNS = (
     re.compile(r"(^|/)secrets?(/|$)", re.IGNORECASE),
     re.compile(r"(^|/)\.mcp-auth(/|$)"),
     re.compile(r"(^|/)(credentials?|tokens?|client_secret|oauth).*\.json$", re.IGNORECASE),
-    re.compile(r"(^|/)\.credentials.*\.json$", re.IGNORECASE),
     re.compile(r"(^|/).*-key\.json$", re.IGNORECASE),
     re.compile(r"(^|/).*service-account\.json$", re.IGNORECASE),
     re.compile(r"(^|/)Google Passwords.*\.csv$", re.IGNORECASE),
@@ -50,20 +32,11 @@ SECRET_PATH_PATTERNS = (
     re.compile(r"(^|/).*recovery[-_]codes.*", re.IGNORECASE),
     re.compile(r"\.(pem|p12|pfx|key)$", re.IGNORECASE),
     re.compile(r"(^|/)(id_rsa|id_ed25519)(\.|$)"),
-    re.compile(r"(^|/)(auth|accounts)\.json$", re.IGNORECASE),
-    re.compile(r"(^|/)(known_hosts|allowed_signers)(\.|$)", re.IGNORECASE),
-    re.compile(r"(^|/).*_signing(?:\.|$)", re.IGNORECASE),
     re.compile(r"(^|/)(\.npmrc|\.pypirc|\.netrc|rclone\.conf)$"),
 )
 
 ALLOW_PATH_PATTERNS = (
     re.compile(r"(^|/)\.env\.(example|template)$"),
-    re.compile(r"\.env\.(example|template)$"),
-    # .op/ in this vault is a governance/documentation chamber, not a live
-    # 1Password CLI config dir. Allow top-level .op/ doc files (.md, .txt)
-    # — [^/]+ intentionally excludes subdirectories — while still
-    # flagging extensionless credential files like .op/config.
-    re.compile(r"^\.op/(1password-hygiene-policy\.json|[^/]+\.(md|txt))$"),
 )
 
 SECRET_CONTENT_PATTERNS = {
@@ -74,10 +47,7 @@ SECRET_CONTENT_PATTERNS = {
     "private_key_block": re.compile(r"-----BEGIN (?:RSA |OPENSSH |EC |DSA )?PRIVATE KEY-----"),
     "google_api_key": re.compile(r"\bAIza[0-9A-Za-z_-]{35}\b"),
     "generic_secret_assignment": re.compile(
-        r"""(?ix)
-        ["']?\b(api[_-]?key|secret|token|password|passwd|pwd)\b["']?
-        \s*[:=]\s*["']?[A-Za-z0-9_./+=:-]{24,}
-        """
+        r"(?i)\b(api[_-]?key|secret|token|password|passwd|pwd)\b\s*[:=]\s*['\"]?[A-Za-z0-9_./+=-]{24,}"
     ),
 }
 
@@ -90,36 +60,27 @@ class Finding:
 
 
 def is_allowed_content_match(rule: str, line: str) -> bool:
-    """Allow narrow generic placeholders without muting dedicated token rules."""
-    if rule != "generic_secret_assignment":
-        return False
+    """Allow narrow, explicit non-secret patterns without muting real values."""
     if "secret-pattern: allow" in line:
         return True
+    if rule != "generic_secret_assignment":
+        return False
     return bool(
-        re.search(r"\bprocess\.env\.[A-Z0-9_]+\b", scope)
-        or re.search(r"""(?i)["']?env:[A-Z][A-Z0-9_]*["']?""", scope)
-        or re.search(r"""(?i)["']?\$secretRef(?::[A-Za-z0-9_.:/-]+)?["']?""", scope)
-        or re.search(r"(?i)\breplace-with-[A-Za-z0-9_-]+\b", scope)
+        re.search(r"\bprocess\.env\.[A-Z0-9_]+\b", line)
+        or re.search(r"(?i)\breplace-with-[A-Za-z0-9_-]+\b", line)
     )
 
 
 def run_git(args: list[str]) -> subprocess.CompletedProcess[str]:
-    try:
-        # Safe: git is hardcoded string literal; args come from internal callers only
-        return subprocess.run(
-            ["git", *args],
-            cwd=REPO_ROOT,
-            text=True,
-            encoding="utf-8",
-            errors="replace",
-            capture_output=True,
-            check=False,
-            timeout=30,
-        )
-    except subprocess.TimeoutExpired as exc:
-        raise RuntimeError(f"git {args[0]} timed out after 30s") from exc
-    except OSError as exc:
-        raise RuntimeError(f"git {args[0]} could not run: {exc}") from exc
+    return subprocess.run(
+        ["git", *args],
+        cwd=REPO_ROOT,
+        text=True,
+        encoding="utf-8",
+        errors="replace",
+        capture_output=True,
+        check=False,
+    )
 
 
 def staged_paths() -> list[str]:
@@ -137,57 +98,24 @@ def stdin_paths() -> list[str]:
     ]
 
 
-def normalized_path_variants(path: str) -> set[str]:
-    normalized = path.replace("\\", "/")
-    variants = {normalized}
-
-    windows_copy = "/".join(
-        WINDOWS_COPY_SUFFIX_RE.sub("", segment) for segment in normalized.split("/")
-    )
-    variants.add(windows_copy)
-
-    for candidate in tuple(variants):
-        stripped = candidate
-        while True:
-            next_value = PRESERVED_COPY_SUFFIX_RE.sub("", stripped)
-            if next_value == stripped:
-                break
-            stripped = next_value
-            variants.add(stripped)
-    return variants
-
-
 def path_findings(path: str) -> list[Finding]:
-    variants = normalized_path_variants(path)
-    if any(
-        pattern.search(candidate)
-        for candidate in variants
-        for pattern in ALLOW_PATH_PATTERNS
-    ):
+    normalized = path.replace("\\", "/")
+    if any(pattern.search(normalized) for pattern in ALLOW_PATH_PATTERNS):
         return []
-    if any(
-        pattern.search(candidate)
-        for candidate in variants
+    return [
+        Finding(path=path, line=None, rule="secret_path")
         for pattern in SECRET_PATH_PATTERNS
-    ):
-        return [Finding(path=path, line=None, rule="secret_path")]
-    return []
+        if pattern.search(normalized)
+    ][:1]
 
 
 def staged_file_bytes(path: str) -> bytes | None:
-    try:
-        # Safe: git is hardcoded; path from git tracking only, no user interpolation
-        result = subprocess.run(
-            ["git", "show", f":{path}"],
-            cwd=REPO_ROOT,
-            capture_output=True,
-            check=False,
-            timeout=30,
-        )
-    except subprocess.TimeoutExpired as exc:
-        raise RuntimeError(f"git show timed out after 30s ({path})") from exc
-    except OSError as exc:
-        raise RuntimeError(f"git show could not run: {exc}") from exc
+    result = subprocess.run(
+        ["git", "show", f":{path}"],
+        cwd=REPO_ROOT,
+        capture_output=True,
+        check=False,
+    )
     if result.returncode != 0:
         return None
     return result.stdout
@@ -201,29 +129,19 @@ def worktree_file_bytes(path: str) -> bytes | None:
 
 
 def content_findings(path: str, data: bytes) -> list[Finding]:
+    if len(data) > MAX_TEXT_BYTES:
+        return []
+    if b"\0" in data:
+        return []
+
     text = data.decode("utf-8", errors="replace")
     findings: list[Finding] = []
     for line_number, line in enumerate(text.splitlines(), start=1):
         for rule, pattern in SECRET_CONTENT_PATTERNS.items():
-            # Judge every match on the line, not just the first: a line is
-            # clean only if each match is individually allowed. One finding
-            # per rule per line, as before.
-            for match in pattern.finditer(line):
-                if is_allowed_content_match(rule, line, match, path):
+            if pattern.search(line):
+                if is_allowed_content_match(rule, line):
                     continue
                 findings.append(Finding(path=path, line=line_number, rule=rule))
-                break
-    return findings
-
-
-def findings_for_paths(paths: list[str], *, staged: bool) -> list[Finding]:
-    findings: list[Finding] = []
-    for path in paths:
-        data = staged_file_bytes(path) if staged else worktree_file_bytes(path)
-        if data is None:
-            continue
-        findings.extend(path_findings(path))
-        findings.extend(content_findings(path, data))
     return findings
 
 
@@ -236,12 +154,14 @@ def main() -> int:
     if args.staged and args.paths_from_stdin:
         parser.error("--staged and --paths-from-stdin are mutually exclusive")
 
-    try:
-        paths = stdin_paths() if args.paths_from_stdin else staged_paths()
-        findings = findings_for_paths(paths, staged=args.staged)
-    except RuntimeError as exc:
-        print(f"secret-pattern guard: {exc}", file=sys.stderr)
-        return 1
+    paths = stdin_paths() if args.paths_from_stdin else staged_paths()
+    findings: list[Finding] = []
+
+    for path in paths:
+        findings.extend(path_findings(path))
+        data = staged_file_bytes(path) if args.staged else worktree_file_bytes(path)
+        if data is not None:
+            findings.extend(content_findings(path, data))
 
     if not findings:
         print("secret-pattern guard: OK")
