@@ -2,10 +2,11 @@ name: Dependabot Rhythm
 
 on:
   pull_request_target:
-    types: [opened, reopened, synchronize, ready_for_review]
+    types: [opened, reopened, ready_for_review]
 
 permissions:
   contents: write
+  issues: write
   pull-requests: write
 
 jobs:
@@ -15,7 +16,7 @@ jobs:
     steps:
       - name: Fetch Dependabot metadata
         id: metadata
-        uses: dependabot/fetch-metadata@v2
+        uses: dependabot/fetch-metadata@ffa630c65fa7e0ecfa0625b5ceda64399aea1b36 # v3
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -31,11 +32,16 @@ jobs:
 
       - name: Approve and enable auto-merge
         if: |
-          (steps.metadata.outputs.package-ecosystem == 'pip' || steps.metadata.outputs.package-ecosystem == 'github-actions' || steps.metadata.outputs.package-ecosystem == 'github_actions') &&
+          (steps.metadata.outputs.package-ecosystem == 'pip' || steps.metadata.outputs.package-ecosystem == 'uv' || steps.metadata.outputs.package-ecosystem == 'github-actions' || steps.metadata.outputs.package-ecosystem == 'github_actions') &&
           (steps.metadata.outputs.update-type == 'version-update:semver-patch' || steps.metadata.outputs.update-type == 'version-update:semver-minor')
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PR_URL: ${{ github.event.pull_request.html_url }}
         run: |
           gh pr review --approve "$PR_URL" || true
+          gh label create "dependabot/low-risk-auto" \
+            --description "Dependabot metadata proved semver patch/minor low-risk automation eligibility" \
+            --color "0E8A16" \
+            --force
+          gh pr edit "$PR_URL" --add-label "dependabot/low-risk-auto" || true
           gh pr merge --auto --squash --delete-branch "$PR_URL"

@@ -7,6 +7,13 @@ updates:
     open-pull-requests-limit: 5
     allow:
       - dependency-type: "all"
+    ignore:
+      - dependency-name: "pydantic"
+        versions: [">=2.12.0"]
+      - dependency-name: "opentelemetry-exporter-otlp-proto-grpc"
+        versions: [">=1.35.0"]
+      - dependency-name: "opentelemetry-proto"
+        versions: [">=1.35.0"]
 
   - package-ecosystem: "github-actions"
     directory: "/"
