@@ -1,0 +1,48 @@
+name: NETWEB Path Portability Check
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  check-paths:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+        with:
+          fetch-depth: 0
+      - name: Checkout trusted validator code
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+        with:
+          ref: ${{ github.event_name == 'pull_request' && github.event.pull_request.base.sha || github.event.repository.default_branch }}
+          path: trusted-main
+
+      - name: Check for cross-platform path violations
+        shell: bash
+        run: |
+          set +H  # Disable bash history expansion (paths contain !)
+          VALIDATOR="trusted-main/.github/scripts/check_portable_paths.py"
+          if [ ! -f "$VALIDATOR" ]; then
+            echo "::notice::Trusted portability helper not present on base yet; using candidate helper for bootstrap."
+            VALIDATOR=".github/scripts/check_portable_paths.py"
+          fi
+
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            git -c core.quotePath=false diff --name-only \
+              "${{ github.event.pull_request.base.sha }}" \
+              "${{ github.event.pull_request.head.sha }}" |
+              python "$VALIDATOR" --paths-from-stdin
+          else
+            before="${{ github.event.before }}"
+            after="${{ github.sha }}"
+            if [[ "$before" == "0000000000000000000000000000000000000000" ]]; then
+              git -c core.quotePath=false ls-tree -r --name-only "$after" |
+                python "$VALIDATOR" --paths-from-stdin
+            else
+              git -c core.quotePath=false diff --name-only "$before" "$after" |
+                python "$VALIDATOR" --paths-from-stdin
+            fi
+          fi

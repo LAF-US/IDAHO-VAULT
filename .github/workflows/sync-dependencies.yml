@@ -1,0 +1,60 @@
+name: Sync Dependencies
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - pyproject.toml
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: sync-dependencies-main
+      cancel-in-progress: false
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: "3.13"
+
+      - name: Install pip-tools
+        run: pip install pip-tools
+
+      - name: Generate requirements.txt
+        id: compile
+        continue-on-error: true
+        run: pip-compile pyproject.toml -o requirements.txt --upgrade
+
+      - name: Commit changes
+        if: steps.compile.outcome == 'success'
+        run: |
+          # Temporary direct-main emergency corridor: retained only while the
+          # dependency lane is being repaired after PR automation softlock.
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add requirements.txt
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: sync requirements.txt from pyproject.toml"
+            git fetch origin main
+            git rebase origin/main
+            git push origin main
+          fi
+
+      - name: Report dependency resolver conflict
+        if: steps.compile.outcome != 'success'
+        run: |
+          {
+            echo "## Sync Dependencies"
+            echo ""
+            echo "Dependency resolution failed; no direct-main commit was attempted."
+            echo "Treat this as Python dependency triage, not a Git push failure."
+          } >> "$GITHUB_STEP_SUMMARY"
+          exit 1

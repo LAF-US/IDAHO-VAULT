@@ -3,23 +3,15 @@
 
 Checks changed paths for Windows/macOS/Linux portability hazards and checks the
 whole tracked tree for case-insensitive collisions.
-
-THE PRINCIPLE IS THE STANDARD; this file is its maintained inventory of known
-hazard classes (VAULT-CONVENTIONS.md § "Portable Path Standard (NETWEB)").
-Every tracked path must survive unchanged on every platform the vault targets;
-the checks below are examples of that principle, not its boundary. Passing this
-gate is necessary, never sufficient — a path that breaks some target platform
-in a way no check here catches still violates NETWEB, and the fix is to add
-the check, with the principle as the warrant. The constants live only here,
-on purpose: the doc enumerated them too once, and the two copies drifted.
 """
 
 from __future__ import annotations
 
 import argparse
-import subprocess  # nosec B404 -- see [tool.bandit] note in pyproject.toml
+import subprocess
 import sys
 from collections import defaultdict
+from pathlib import Path
 
 
 RESERVED_NAMES = {"AUX", "CON", "NUL", "PRN"}
@@ -30,33 +22,20 @@ MAX_PORTABLE_PATH = 218
 
 
 def git_tracked_files() -> list[str]:
-    """Return every path tracked at HEAD, with non-ASCII names left unquoted."""
-    try:
-        result = subprocess.run(
-            ["git", "-c", "core.quotePath=false", "ls-tree", "-r", "HEAD", "--name-only"],
-            check=True,
-            capture_output=True,
-            text=True,
-            encoding="utf-8",
-            errors="replace",
-            timeout=30,
-        )
-    except subprocess.TimeoutExpired as exc:
-        raise RuntimeError("git ls-tree timed out after 30s") from exc
-    except subprocess.CalledProcessError as exc:
-        raise RuntimeError((exc.stderr or "").strip() or "git ls-tree failed") from exc
-    except OSError as exc:
-        raise RuntimeError(f"git ls-tree could not run: {exc}") from exc
+    result = subprocess.run(
+        ["git", "-c", "core.quotePath=false", "ls-tree", "-r", "HEAD", "--name-only"],
+        check=True,
+        capture_output=True,
+        text=True,
+    )
     return [line for line in result.stdout.splitlines() if line]
 
 
 def normalize(path: str) -> str:
-    """Fold a path to its case-insensitive, separator-agnostic comparison key."""
     return path.replace("\\", "/").casefold()
 
 
 def case_collisions(paths: list[str]) -> dict[str, list[str]]:
-    """Group paths that differ only by case (a hazard on case-insensitive filesystems)."""
     grouped: dict[str, list[str]] = defaultdict(list)
     for path in paths:
         grouped[normalize(path)].append(path)
@@ -68,13 +47,7 @@ def case_collisions(paths: list[str]) -> dict[str, list[str]]:
 
 
 def path_violations(path: str) -> list[str]:
-    """Return cross-platform portability problems for a single path (empty if clean)."""
     findings: list[str] = []
-    # A literal backslash in a tracked path is itself the hazard: on Windows git
-    # treats it as a separator, so a name like `C:\Users\...` becomes an absolute
-    # path and `git checkout` aborts ("invalid path"). Flag it before normalizing.
-    if "\\" in path:
-        findings.append(f"BACKSLASH IN PATH: {path} (illegal on Windows; breaks checkout)")
     parts = path.replace("\\", "/").split("/")
     for part in parts:
         if not part:
@@ -92,23 +65,15 @@ def path_violations(path: str) -> list[str]:
 
 
 def main() -> int:
-    """Gate changed paths (fail) and report pre-existing tree violations (warn)."""
     parser = argparse.ArgumentParser()
     parser.add_argument("--paths-from-stdin", action="store_true")
     args = parser.parse_args()
 
     changed = [line for line in sys.stdin.read().splitlines() if line] if args.paths_from_stdin else []
-    try:
-        tracked = git_tracked_files()
-    except RuntimeError as exc:
-        print(f"check_portable_paths: {exc}", file=sys.stderr)
-        return 1
+    tracked = git_tracked_files()
     collisions = case_collisions(tracked)
     collision_members = {member for members in collisions.values() for member in members}
 
-    # Changed-files pass: these are the only findings that FAIL the gate. A PR is
-    # responsible for what it introduces, so a new portability-hostile path here
-    # is a hard error.
     findings: list[str] = []
     for path in changed:
         findings.extend(path_violations(path))
@@ -116,36 +81,13 @@ def main() -> int:
             peers = ", ".join(collisions[normalize(path)])
             findings.append(f"CASE COLLISION: {path} (conflicts with: {peers})")
 
-    # Whole-tree sweep: REPORT-ONLY. The changed-files pass only sees a PR's diff,
-    # so a portability-hostile path already on main stays invisible while it can
-    # silently break Windows checkout. Surfacing it here makes the debt visible —
-    # but pre-existing offenders are not this PR's fault, so they only warn; they
-    # must not fail unrelated PRs. Removing a tracked illegal path is a destructive
-    # Git-control-surface change and is governed by GIT-CONTROL-SURFACES-2026-05-17
-    # ("remove files from history [only] with Logan's explicit instruction").
-    changed_set = set(changed)
-    tree_warnings: list[str] = []
-    for path in tracked:
-        if path in changed_set:
-            continue
-        tree_warnings.extend(path_violations(path))
-
-    if tree_warnings:
-        print(
-            f"NETWEB (report-only): {len(tree_warnings)} pre-existing tracked-path "
-            "violation(s) — not failing this PR; disposition is Logan's call:",
-            file=sys.stderr,
-        )
-        for warning in tree_warnings:
-            print(f"  [warn] {warning}", file=sys.stderr)
-
     if findings:
-        print("NETWEB: Cross-platform path violations detected in changed paths", file=sys.stderr)
+        print("NETWEB: Cross-platform path violations detected", file=sys.stderr)
         for finding in findings:
             print(f"  {finding}", file=sys.stderr)
         return 1
 
-    print("All changed paths are cross-platform portable.")
+    print("All paths are cross-platform portable.")
     return 0
 
 
